@@ -746,37 +746,6 @@
     ]
   },
   {
-    "id": "cig-guantanamera-cristales",
-    "brand": "Guantanamera",
-    "line": "Cristales / Minutos",
-    "vitola": "Cristales (corona, tubos)",
-    "format": "41 x 150mm",
-    "country": "Kuba",
-    "wrapper": "Habano (claro)",
-    "strength": 1,
-    "body": 1,
-    "flavorTags": [
-      "trava-slatka",
-      "drvo",
-      "kremasto"
-    ],
-    "smokeTimeMin": 40,
-    "priceEUR": 7,
-    "priceApprox": true,
-    "availabilityHR": [
-      "Havana Shop"
-    ],
-    "notes": {
-      "hr": "Ultra blaga value kubanka — za potpune početnike ili uz espresso bez pretenzija.",
-      "en": "Ultra-mild value Cuban — for complete beginners or a no-pretense espresso."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "WW"
-    ]
-  },
-  {
     "id": "cig-davidoff-signature",
     "brand": "Davidoff",
     "line": "Signature",
@@ -2921,34 +2890,6 @@
     "notes": {
       "hr": "Nizozemski premium (Royal Agio) — odležani blend, EU specijalitet.",
       "en": "Dutch premium (Royal Agio) — aged blend, an EU speciality."
-    }
-  },
-  {
-    "id": "cig-leon-jimenes",
-    "brand": "León Jimenes",
-    "line": "Petit Corona",
-    "vitola": "Petit Corona",
-    "format": "38 x 121mm",
-    "country": "Dominikana",
-    "wrapper": "Connecticut Shade",
-    "strength": 1,
-    "body": 2,
-    "flavorTags": [
-      "kremasto",
-      "trava-slatka",
-      "med"
-    ],
-    "smokeTimeMin": 30,
-    "priceEUR": 6,
-    "priceApprox": true,
-    "markets": [
-      "EU",
-      "WW"
-    ],
-    "availabilityHR": [],
-    "notes": {
-      "hr": "La Aurora klasika — blagi mali dominikanac za uz kavu.",
-      "en": "La Aurora classic — a mild little Dominican for coffee."
     }
   },
   {
