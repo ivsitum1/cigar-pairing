@@ -1,0 +1,278 @@
+# -*- coding: utf-8 -*-
+"""Ekstrakcija Rum_Kolekcija_Checklist.xlsx -> JSON za pairing aplikaciju.
+
+Cita MASTER Ocjene, Serviranje + Cigare i Kolekcija (plan) sheetove i generira:
+  - src/data/rums.json      (kurirani rumovi s pairing atributima)
+  - src/data/shopping.json  (tier plan kolekcije + ducani + preporuke)
+
+Pokretanje:  python scripts/excel-to-json.py
+Ponovno pokreni nakon svake izmjene Excela — JSON se generira ispocetka.
+"""
+import json
+import re
+import unicodedata
+from pathlib import Path
+
+import openpyxl
+
+ROOT = Path(__file__).resolve().parent.parent          # app/
+XLSX = ROOT.parent / "Rum_Kolekcija_Checklist.xlsx"
+OUT = ROOT / "src" / "data"
+
+# ---------------------------------------------------------------- helpers
+
+def slugify(text: str) -> str:
+    text = unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode()
+    text = re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")
+    return text
+
+
+def parse_price(raw):
+    """'163-304 €' -> {min,max}; '82,80' -> {min:82.8,max:82.8}; inace None."""
+    if not raw:
+        return None
+    s = str(raw).replace("€", "").strip()
+    nums = re.findall(r"\d+(?:[.,]\d+)?", s)
+    if not nums:
+        return None
+    vals = [float(n.replace(",", ".")) for n in nums]
+    return {"min": min(vals), "max": max(vals)}
+
+
+# ---------------------------------------------------------------- style model
+# Stil se izvodi iz kolone 'Tip / Regija'; daje default body/sweetness/tagove.
+# body: 1 (lagano) - 5 (puno tijelo) | sweetness: 1 (suho) - 5 (desertno)
+STYLES = [
+    # (regex na Tip/Regija, style id, body, sweetness, flavorTags)
+    (r"SPICED|aromatiz", "spiced", 2, 5, ["vanilija", "zacini"]),
+    (r"NIJE RUM|liker", "liqueur", 1, 5, ["slatko"]),
+    (r"MIXING|NIJE SIPPING", "mixing", 1, 2, []),
+    (r"Jamajka", "jamaica", 4, 1, ["ester-funk", "tropsko-voce", "hrast"]),
+    (r"Agricole", "agricole", 2, 1, ["travnato", "vegetalno", "citrus"]),
+    (r"Barbados", "barbados", 3, 1, ["suho-voce", "hrast", "vanilija"]),
+    (r"Kuba", "cuba", 3, 1, ["zacini", "duhan", "citrus"]),
+    (r"Demerara", "demerara", 4, 3, ["melasa", "tamno-voce", "karamela"]),
+    (r"solera", "solera", 3, 3, ["karamela", "vanilija", "hrast"]),
+    (r"Nikaragva", "nicaragua-dry", 3, 1, ["hrast", "suho-voce"]),
+    (r"Kolumbija", "colombia", 3, 2, ["suho-voce", "vanilija"]),
+    (r"Sv\. Lucija", "st-lucia", 3, 1, ["vanilija", "duhan", "hrast"]),
+    (r"Trinidad", "trinidad", 3, 2, ["karamela", "hrast"]),
+    (r"Puerto Rico", "puerto-rico", 3, 1, ["hrast", "vanilija"]),
+    (r"Venezuela", "venezuela", 3, 2, ["karamela", "suho-voce"]),
+    (r"Dominikana", "dominican", 3, 3, ["karamela", "vanilija"]),
+    (r"Navy", "navy", 4, 2, ["melasa", "dim", "zacini"]),
+    (r"Blend", "blend", 3, 2, ["suho-voce", "hrast"]),
+    (r"Panama", "panama", 3, 3, ["karamela", "vanilija"]),
+    (r"Reunion|Mauricijus|Fiji|Japan|Meksiko|Paragvaj|El Salvador|Peru|Kostarika|Gvatemala|Bermuda|Danska",
+     "other", 3, 3, ["karamela"]),
+]
+
+ADDITIVE_MAP = [
+    (r"aromatiz|spiced|kokos|naranca|elixir|liker", "flavored"),
+    (r"doslazen|slazen|sladak|dodatak secera|visok", "sweetened"),
+    (r"umjeren", "moderate"),
+    (r"blag|nizak \(sherry\)", "light"),
+    (r"cist|bez adit|bez dod|aoc|~bez|vrlo nis|nizak|0", "clean"),
+]
+
+# spiced/mixing/likeri nisu za pairing s cigarom
+NON_PAIRABLE = {"spiced", "liqueur", "mixing"}
+
+
+def detect_style(region: str):
+    for pattern, style, body, sweet, tags in STYLES:
+        if re.search(pattern, region, re.IGNORECASE):
+            return style, body, sweet, list(tags)
+    return "other", 3, 2, []
+
+
+def normalize_additive(raw: str) -> str:
+    low = (raw or "").lower()
+    for pattern, norm in ADDITIVE_MAP:
+        if re.search(pattern, low):
+            return norm
+    return "unknown"
+
+
+# ---------------------------------------------------------------- serviranje
+
+SERVE_SCORE = {"++": 3, "+": 2, "~": 1, "x": 0}
+
+# default serviranje po stilu (iz sheeta Serviranje + Cigare, redovi profila)
+SERVING_DEFAULTS = {
+    "purist": {"neat": 3, "water": 3, "rocks": 1, "highball": 0, "cola": 0, "best": "Cisto / kap vode"},
+    "jamaica": {"neat": 3, "water": 3, "rocks": 1, "highball": 1, "cola": 0, "best": "Kap vode (otvara estere)"},
+    "agricole": {"neat": 3, "water": 3, "rocks": 1, "highball": 2, "cola": 0, "best": "Cisto / Ti' Punch"},
+    "rich": {"neat": 2, "water": 2, "rocks": 3, "highball": 1, "cola": 0, "best": "On the rocks (velika kocka)"},
+    "sweet": {"neat": 2, "water": 3, "rocks": 3, "highball": 1, "cola": 0, "best": "Velika kocka leda ili kap vode"},
+    "mix": {"neat": 1, "water": 0, "rocks": 2, "highball": 3, "cola": 3, "best": "Koktel / highball"},
+}
+
+STYLE_TO_SERVING = {
+    "jamaica": "jamaica", "agricole": "agricole",
+    "demerara": "rich", "solera": "rich", "panama": "rich", "dominican": "rich",
+    "navy": "rich", "other": "rich",
+    "spiced": "mix", "liqueur": "mix", "mixing": "mix",
+}  # sve ostalo -> purist
+
+
+def serving_for(style: str, additive: str):
+    if additive in ("sweetened", "flavored") and style not in NON_PAIRABLE:
+        key = "sweet"
+    else:
+        key = STYLE_TO_SERVING.get(style, "purist")
+    return dict(SERVING_DEFAULTS[key])
+
+
+def match_tokens(name: str) -> set:
+    stop = {"the", "de", "of", "and", "rum", "ron", "estate", "reserve", "reserva", "yo"}
+    toks = set(re.findall(r"[a-z0-9]+", unicodedata.normalize("NFKD", name.lower())
+                          .encode("ascii", "ignore").decode()))
+    return {t for t in toks if t not in stop and not t.isdigit()}
+
+
+# ---------------------------------------------------------------- extraction
+
+def extract_rums(wb):
+    ws = wb["MASTER Ocjene"]
+    # serviranje redovi za name-match
+    serve_rows = []
+    for row in wb["Serviranje + Cigare"].iter_rows(min_row=3, values_only=True):
+        name = row[0]
+        if not name or not row[1]:  # header/prazno
+            continue
+        serve_rows.append({
+            "tokens": match_tokens(str(name)),
+            "serving": {
+                "neat": SERVE_SCORE.get(str(row[1]).strip(), None),
+                "water": SERVE_SCORE.get(str(row[2]).strip(), None),
+                "rocks": SERVE_SCORE.get(str(row[3]).strip(), None),
+                "highball": SERVE_SCORE.get(str(row[4]).strip(), None),
+                "cola": SERVE_SCORE.get(str(row[5]).strip(), None),
+                "best": row[6],
+            },
+            "cigarHint": row[7],
+        })
+
+    rums = []
+    for row in ws.iter_rows(min_row=3, values_only=True):
+        name, quality, region = row[0], row[1], row[2]
+        if not name or quality is None:  # sekcijski headeri / prazni redovi
+            continue
+        region = str(region or "")
+        style, body, sweetness, tags = detect_style(region)
+        additive = normalize_additive(str(row[3] or ""))
+        comment = str(row[8] or "")
+
+        # korekcije iz komentara / imena
+        text = f"{name} {comment}".lower()
+        if re.search(r"overproof|cask strength|\b6[0-9]\s?%|navy strength", text):
+            body = min(5, body + 1)
+            if "snaga" not in tags:
+                tags.append("overproof")
+        if additive in ("sweetened", "flavored"):
+            sweetness = max(sweetness, 4)
+        elif additive in ("light", "moderate"):
+            sweetness = max(sweetness, 3)
+
+        # match sa serviranje sheetom (token overlap >= 2 ili potpuno ime)
+        my_tokens = match_tokens(str(name))
+        best_match, best_score = None, 0
+        for sr in serve_rows:
+            overlap = len(my_tokens & sr["tokens"])
+            if overlap > best_score:
+                best_match, best_score = sr, overlap
+        matched = best_match if best_score >= 2 else None
+
+        serving = serving_for(style, additive)
+        cigar_hint = None
+        if matched:
+            for k, v in matched["serving"].items():
+                if v is not None:
+                    serving[k if k != "best" else "best"] = v
+            cigar_hint = matched["cigarHint"]
+
+        rums.append({
+            "id": "rum-" + slugify(str(name)),
+            "category": "rum",
+            "name": str(name),
+            "style": style,
+            "region": region,
+            "body": body,
+            "sweetness": sweetness,
+            "flavorTags": tags,
+            "additiveStatus": additive,
+            "additiveDetail": str(row[3] or ""),
+            "additiveSource": str(row[4] or ""),
+            "qualityScore": float(quality),
+            "priceEUR": parse_price(row[5]),
+            "shopHR": str(row[6] or ""),
+            "status": (str(row[7]).strip() if row[7] and str(row[7]).strip() not in ("-", "") else None),
+            "pairable": style not in NON_PAIRABLE and float(quality) >= 4,
+            "serving": serving,
+            "cigarHint": cigar_hint,
+            "notes": {"hr": comment, "en": ""},
+        })
+    return rums
+
+
+def extract_shopping(wb):
+    tiers, current_tier = [], None
+    for row in wb["Kolekcija (plan)"].iter_rows(min_row=3, values_only=True):
+        first, level = row[0], row[1]
+        if first and str(first).startswith("TIER"):
+            continue
+        if not level:
+            continue
+        tiers.append({
+            "tier": str(level).strip(),
+            "owned": str(first or "").strip() == "✓",
+            "styleTarget": str(row[2] or ""),
+            "bottleTarget": str(row[3] or ""),
+            "profile": str(row[4] or ""),
+            "priceSource": str(row[5] or ""),
+            "myRating": row[6],
+            "notes": str(row[7] or ""),
+        })
+
+    shops = [
+        {"name": "allez.hr", "location": "Nova Ves 19, Zagreb / online", "note": {"hr": "Primarni HR izvor za rum i whisky, osobno preuzimanje", "en": "Primary Croatian source for rum & whisky, in-store pickup"}},
+        {"name": "ecuga.com", "location": "online", "note": {"hr": "Sirok katalog rumova i zestica", "en": "Wide catalogue of rums and spirits"}},
+        {"name": "Miva Galerija Vina", "location": "Zagreb", "note": {"hr": "Eminente, Dictador, Diplomatico", "en": "Eminente, Dictador, Diplomatico"}},
+        {"name": "Cooltura To Go", "location": "Zagreb", "note": {"hr": "Botran linija (cesto rasprodano)", "en": "Botran range (often sold out)"}},
+        {"name": "Roto Svijet Pica", "location": "Tkalciceva / Planinska, Zagreb", "note": {"hr": "Siroka ponuda", "en": "Wide selection"}},
+        {"name": "Lidl", "location": "HR", "note": {"hr": "Planteray, Havana Club, Dos Maderas, La Hechicera — akcije", "en": "Planteray, Havana Club, Dos Maderas, La Hechicera — good deals"}},
+        {"name": "Vivat Finavina", "location": "Zagreb", "note": {"hr": "Vise dessert/spiced; cisti: El Dorado 12, Pampero", "en": "Leans dessert/spiced; clean picks: El Dorado 12, Pampero"}},
+        {"name": "Vrutak", "location": "Zagreb", "note": {"hr": "Premium/limited izdanja", "en": "Premium/limited releases"}},
+        {"name": "Havana Shop (Camelot)", "location": "Zagreb, Split, Dubrovnik...", "note": {"hr": "Ekskluzivni uvoznik Habanos i Davidoff cigara za HR", "en": "Exclusive Habanos & Davidoff cigar importer for Croatia"}},
+        {"name": "The Humidor", "location": "Zagreb", "note": {"hr": "Premium cigare (kubanske + New World) i zestice", "en": "Premium cigars (Cuban + New World) and spirits"}},
+    ]
+
+    recommendations = [
+        {"title": {"hr": "Najvise kvalitete po euru", "en": "Best quality per euro"}, "pick": "La Hechicera Solera 21", "detail": {"hr": "40,48 € Lidl — cist, suh-vocni", "en": "€40.48 at Lidl — clean, dry-fruity"}},
+        {"title": {"hr": "Najbolji value sipper uz cigaru", "en": "Best value cigar sipper"}, "pick": "Havana Club 7 / Eminente 7", "detail": {"hr": "30,89 € Lidl / 55,20 € Miva", "en": "€30.89 Lidl / €55.20 Miva"}},
+        {"title": {"hr": "Jeftin koktel rum", "en": "Cheap cocktail rum"}, "pick": "Planteray 3 Stars", "detail": {"hr": "13,79 € Lidl — ne trosi dobre boce na mixere", "en": "€13.79 Lidl — don't waste good bottles on mixers"}},
+        {"title": {"hr": "Sljedeca purist meta", "en": "Next purist target"}, "pick": "Hampden Estate 8", "detail": {"hr": "75,55 € allez.hr — jamajcanski funk uz jacu cigaru", "en": "€75.55 allez.hr — Jamaican funk for a stronger cigar"}},
+    ]
+
+    return {"tiers": tiers, "shops": shops, "recommendations": recommendations,
+            "miniPath": ["Doorly's XO", "Hampden 8", "Flor de Cana 12", "El Dorado 12", "Clement VSOP"]}
+
+
+def main():
+    wb = openpyxl.load_workbook(XLSX, data_only=True)
+    OUT.mkdir(parents=True, exist_ok=True)
+
+    rums = extract_rums(wb)
+    (OUT / "rums.json").write_text(
+        json.dumps(rums, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"rums.json: {len(rums)} rumova")
+
+    shopping = extract_shopping(wb)
+    (OUT / "shopping.json").write_text(
+        json.dumps(shopping, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"shopping.json: {len(shopping['tiers'])} tier stavki, {len(shopping['shops'])} ducana")
+
+
+if __name__ == "__main__":
+    main()
