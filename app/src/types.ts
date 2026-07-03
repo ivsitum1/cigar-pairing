@@ -4,6 +4,8 @@ export type Lang = "hr" | "en";
 
 export type DrinkCategory = "rum" | "whisky" | "brandy" | "coffee";
 
+export type Market = "HR" | "EU" | "USA" | "WW";
+
 export interface LocalizedText {
   hr: string;
   en: string;
@@ -62,6 +64,7 @@ export interface Cigar {
   smokeTimeMin: number;
   priceEUR: number | null;
   priceApprox?: boolean;
+  markets: Market[]; // gdje se moze kupiti
   availabilityHR: string[];
   notes: LocalizedText;
 }

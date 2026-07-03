@@ -18,6 +18,14 @@ const STRINGS = {
   "pair.onlyMine": { hr: "Samo moja kolekcija", en: "My collection only" },
   "pair.noResults": { hr: "Nema rezultata za odabrane filtere.", en: "No results for the selected filters." },
   "pair.excelHint": { hr: "Preporuka iz tvoje tablice", en: "Recommendation from your spreadsheet" },
+  "pair.suggestions": { hr: "Prijedlozi", en: "Suggestions" },
+  "pair.next": { hr: "Sljedeći prijedlog", en: "Next suggestion" },
+  "pair.coffeeAlt": { hr: "Bezalkoholna opcija — kava", en: "Non-alcoholic option — coffee" },
+  "pair.market": { hr: "Gdje kupuješ cigare?", en: "Where do you buy cigars?" },
+  "market.HR": { hr: "Hrvatska", en: "Croatia" },
+  "market.EU": { hr: "EU", en: "EU" },
+  "market.USA": { hr: "USA", en: "USA" },
+  "market.WW": { hr: "Svijet", en: "Worldwide" },
   // opće
   "common.body": { hr: "Tijelo", en: "Body" },
   "common.strength": { hr: "Snaga", en: "Strength" },
@@ -35,6 +43,7 @@ const STRINGS = {
   "common.close": { hr: "Zatvori", en: "Close" },
   "common.time": { hr: "Vrijeme", en: "Time" },
   "common.shop": { hr: "Dućan", en: "Shop" },
+  "common.markets": { hr: "Dostupnost", en: "Availability" },
   // kategorije
   "cat.rum": { hr: "Rum", en: "Rum" },
   "cat.whisky": { hr: "Whisky", en: "Whisky" },

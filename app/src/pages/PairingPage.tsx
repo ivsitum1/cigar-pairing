@@ -1,14 +1,16 @@
 import { useMemo, useState } from "react";
-import type { Cigar, Drink, DrinkCategory, PairingResult } from "../types";
+import type { Cigar, Drink, DrinkCategory, Market, PairingResult } from "../types";
 import { ALL_DRINKS, CIGARS, formatPrice } from "../data";
 import { pairCigarsForDrink, pairDrinksForCigar } from "../engine/pairing";
-import { useI18n, STYLE_LABELS } from "../i18n";
+import { useI18n, STYLE_LABELS, type StringKey } from "../i18n";
 import { Chip, Meter, ScoreBand, SearchInput, SectionTitle } from "../components/ui";
 import { getItemState, useCollection } from "../store/collection";
 import { DetailSheet } from "../components/DetailSheet";
 
 type Mode = "cigarToDrink" | "drinkToCigar";
-const CATEGORIES: (DrinkCategory | "all")[] = ["all", "rum", "whisky", "brandy", "coffee"];
+const MARKETS: Market[] = ["HR", "EU", "USA", "WW"];
+// cigara -> tocno 3 kategorije pica (po jedan prijedlog iz svake)
+const SUGGEST_CATEGORIES: DrinkCategory[] = ["rum", "whisky", "brandy"];
 
 export function PairingPage() {
   const { t, lx } = useI18n();
@@ -17,47 +19,74 @@ export function PairingPage() {
   const [query, setQuery] = useState("");
   const [selectedCigar, setSelectedCigar] = useState<Cigar | null>(null);
   const [selectedDrink, setSelectedDrink] = useState<Drink | null>(null);
-  const [category, setCategory] = useState<DrinkCategory | "all">("all");
   const [onlyMine, setOnlyMine] = useState(false);
+  const [market, setMarket] = useState<Market>(
+    () => (localStorage.getItem("market") as Market) || "HR",
+  );
+  // indeks "sljedeceg prijedloga" po kategoriji (cigara->pice) ili offset (pice->cigare)
+  const [cycle, setCycle] = useState<Record<string, number>>({});
   const [detail, setDetail] = useState<
     { kind: "cigar"; item: Cigar } | { kind: "drink"; item: Drink } | null
   >(null);
 
   const selected = mode === "cigarToDrink" ? selectedCigar : selectedDrink;
 
+  const setMarketPersist = (m: Market) => {
+    localStorage.setItem("market", m);
+    setMarket(m);
+  };
+
+  const marketCigars = useMemo(
+    () => CIGARS.filter((c) => c.markets.includes(market)),
+    [market],
+  );
+
   const pickList = useMemo(() => {
     const q = query.toLowerCase();
     if (mode === "cigarToDrink") {
-      return CIGARS.filter(
-        (c) =>
-          !q ||
-          `${c.brand} ${c.line} ${c.vitola}`.toLowerCase().includes(q),
-      ).slice(0, 30);
+      return marketCigars
+        .filter((c) => !q || `${c.brand} ${c.line} ${c.vitola}`.toLowerCase().includes(q))
+        .slice(0, 30);
     }
     return ALL_DRINKS.filter(
       (d) => d.pairable && (!q || d.name.toLowerCase().includes(q)),
     ).slice(0, 30);
-  }, [mode, query]);
+  }, [mode, query, marketCigars]);
 
-  const results = useMemo(() => {
-    if (mode === "cigarToDrink" && selectedCigar) {
-      let drinks = ALL_DRINKS;
-      if (category !== "all") drinks = drinks.filter((d) => d.category === category);
-      if (onlyMine) drinks = drinks.filter((d) => getItemState(d.id).owned);
-      return pairDrinksForCigar(selectedCigar, drinks).slice(0, 12);
-    }
-    if (mode === "drinkToCigar" && selectedDrink) {
-      let cigars = CIGARS;
-      if (onlyMine) cigars = cigars.filter((c) => getItemState(c.id).owned);
-      return pairCigarsForDrink(selectedDrink, cigars).slice(0, 12);
-    }
-    return null;
-  }, [mode, selectedCigar, selectedDrink, category, onlyMine]);
+  // cigara -> po jedan najbolji prijedlog iz rum / whisky / brandy (+ kava bonus)
+  const drinkSuggestions = useMemo(() => {
+    if (mode !== "cigarToDrink" || !selectedCigar) return null;
+    let drinks = ALL_DRINKS;
+    if (onlyMine) drinks = drinks.filter((d) => getItemState(d.id).owned);
+    const ranked = pairDrinksForCigar(selectedCigar, drinks);
+    const perCategory = (cat: DrinkCategory) =>
+      ranked.filter((r) => r.item.category === cat);
+    return {
+      cards: SUGGEST_CATEGORIES.map((cat) => {
+        const list = perCategory(cat);
+        const idx = list.length ? (cycle[cat] ?? 0) % list.length : 0;
+        return { category: cat, result: list[idx], total: list.length };
+      }),
+      coffee: perCategory("coffee")[0] ?? null,
+    };
+  }, [mode, selectedCigar, onlyMine, cycle]);
+
+  // pice -> tocno 3 cigare (cycle pomice prozor za 3)
+  const cigarSuggestions = useMemo(() => {
+    if (mode !== "drinkToCigar" || !selectedDrink) return null;
+    let cigars = marketCigars;
+    if (onlyMine) cigars = cigars.filter((c) => getItemState(c.id).owned);
+    const ranked = pairCigarsForDrink(selectedDrink, cigars);
+    if (ranked.length === 0) return { window: [], total: 0 };
+    const offset = ((cycle["cigars"] ?? 0) * 3) % Math.max(ranked.length, 1);
+    return { window: ranked.slice(offset, offset + 3), total: ranked.length };
+  }, [mode, selectedDrink, onlyMine, cycle, marketCigars]);
 
   const reset = () => {
     setSelectedCigar(null);
     setSelectedDrink(null);
     setQuery("");
+    setCycle({});
   };
 
   return (
@@ -82,10 +111,22 @@ export function PairingPage() {
         ))}
       </div>
 
+      {/* market birac — bitan kad biras cigare */}
+      <div className="no-scrollbar mt-3 flex items-center gap-2 overflow-x-auto">
+        <span className="shrink-0 text-[10px] uppercase tracking-widest text-dim">
+          {t("pair.market")}
+        </span>
+        {MARKETS.map((m) => (
+          <Chip key={m} active={market === m} onClick={() => setMarketPersist(m)}>
+            {t(`market.${m}` as StringKey)}
+          </Chip>
+        ))}
+      </div>
+
       {/* picker */}
       {!selected && (
         <>
-          <div className="mt-4">
+          <div className="mt-3">
             <SearchInput
               value={query}
               onChange={setQuery}
@@ -114,7 +155,7 @@ export function PairingPage() {
         </>
       )}
 
-      {/* selected + results */}
+      {/* odabrano + 3 prijedloga */}
       {selected && (
         <>
           <div className="mt-4 rounded-xl border border-zlato/40 bg-cedar p-3">
@@ -122,7 +163,7 @@ export function PairingPage() {
               <div>
                 <div className="font-display text-base text-papir">
                   {mode === "cigarToDrink"
-                    ? `${(selected as Cigar).brand} ${(selected as Cigar).line}`
+                    ? `${(selected as Cigar).brand} ${(selected as Cigar).vitola}`
                     : (selected as Drink).name}
                 </div>
                 <div className="mt-1.5 flex gap-4">
@@ -148,48 +189,99 @@ export function PairingPage() {
             </div>
           </div>
 
-          {/* filteri rezultata */}
           <div className="no-scrollbar mt-3 flex gap-2 overflow-x-auto">
-            {mode === "cigarToDrink" &&
-              CATEGORIES.map((c) => (
-                <Chip key={c} active={category === c} onClick={() => setCategory(c)}>
-                  {c === "all" ? t("common.all") : t(`cat.${c}` as const)}
-                </Chip>
-              ))}
             <Chip active={onlyMine} onClick={() => setOnlyMine(!onlyMine)}>
               {t("pair.onlyMine")}
             </Chip>
           </div>
 
-          <SectionTitle>{t("pair.why")}</SectionTitle>
-          {results && results.length === 0 && (
-            <p className="text-sm text-dim">{t("pair.noResults")}</p>
+          <SectionTitle>{t("pair.suggestions")}</SectionTitle>
+
+          {/* CIGARA -> 3 pica (rum / whisky / konjak) */}
+          {drinkSuggestions && (
+            <div className="space-y-3">
+              {drinkSuggestions.cards.map(({ category, result, total }) => (
+                <div key={category}>
+                  <div className="mb-1 flex items-center justify-between">
+                    <span className="font-display text-[11px] uppercase tracking-[0.2em] text-oxblood">
+                      {t(`cat.${category}` as StringKey)}
+                    </span>
+                    {total > 1 && (
+                      <button
+                        onClick={() =>
+                          setCycle((c) => ({ ...c, [category]: (c[category] ?? 0) + 1 }))
+                        }
+                        className="text-[11px] text-dim hover:text-zlato-2"
+                      >
+                        ↻ {t("pair.next")}
+                      </button>
+                    )}
+                  </div>
+                  {result ? (
+                    <ResultCard
+                      result={result}
+                      title={result.item.name}
+                      sub={lx(STYLE_LABELS[result.item.style]) || result.item.style}
+                      price={formatPrice(result.item.priceEUR)}
+                      excelHint={result.item.cigarHint}
+                      onOpen={() => setDetail({ kind: "drink", item: result.item })}
+                    />
+                  ) : (
+                    <p className="rounded-xl border border-dim/15 bg-cedar p-3 text-xs text-dim">
+                      {t("pair.noResults")}
+                    </p>
+                  )}
+                </div>
+              ))}
+              {drinkSuggestions.coffee && (
+                <button
+                  onClick={() =>
+                    setDetail({ kind: "drink", item: drinkSuggestions.coffee!.item })
+                  }
+                  className="flex w-full items-center gap-2 rounded-lg border border-dim/20 bg-cedar/60 px-3 py-2 text-left text-xs text-dim hover:border-zlato/40"
+                >
+                  <span className="text-zlato">☕</span>
+                  <span>
+                    {t("pair.coffeeAlt")}:{" "}
+                    <span className="text-papir/90">{drinkSuggestions.coffee.item.name}</span>
+                  </span>
+                  <span className="ml-auto shrink-0 font-display text-zlato-2">
+                    {drinkSuggestions.coffee.score}
+                  </span>
+                </button>
+              )}
+            </div>
           )}
-          <div className="space-y-2">
-            {results?.map((r) =>
-              mode === "cigarToDrink" ? (
+
+          {/* PICE -> 3 cigare */}
+          {cigarSuggestions && (
+            <div className="space-y-3">
+              {cigarSuggestions.total > 3 && (
+                <div className="flex justify-end">
+                  <button
+                    onClick={() => setCycle((c) => ({ ...c, cigars: (c["cigars"] ?? 0) + 1 }))}
+                    className="text-[11px] text-dim hover:text-zlato-2"
+                  >
+                    ↻ {t("pair.next")}
+                  </button>
+                </div>
+              )}
+              {cigarSuggestions.window.length === 0 && (
+                <p className="text-sm text-dim">{t("pair.noResults")}</p>
+              )}
+              {cigarSuggestions.window.map((r) => (
                 <ResultCard
                   key={r.item.id}
-                  result={r as PairingResult<Drink>}
-                  title={(r.item as Drink).name}
-                  sub={lx(STYLE_LABELS[(r.item as Drink).style]) || ""}
-                  price={formatPrice((r.item as Drink).priceEUR)}
-                  excelHint={(r.item as Drink).cigarHint}
-                  onOpen={() => setDetail({ kind: "drink", item: r.item as Drink })}
-                />
-              ) : (
-                <ResultCard
-                  key={r.item.id}
-                  result={r as PairingResult<Cigar>}
-                  title={`${(r.item as Cigar).brand} ${(r.item as Cigar).line}`}
-                  sub={`${(r.item as Cigar).wrapper} · ${(r.item as Cigar).vitola}`}
-                  price={formatPrice((r.item as Cigar).priceEUR)}
+                  result={r}
+                  title={`${r.item.brand} ${r.item.line}`}
+                  sub={`${r.item.vitola} · ${r.item.wrapper}`}
+                  price={formatPrice(r.item.priceEUR)}
                   excelHint={null}
-                  onOpen={() => setDetail({ kind: "cigar", item: r.item as Cigar })}
+                  onOpen={() => setDetail({ kind: "cigar", item: r.item })}
                 />
-              ),
-            )}
-          </div>
+              ))}
+            </div>
+          )}
         </>
       )}
 
@@ -233,8 +325,7 @@ function ResultCard<T>({
   excelHint: string | null | undefined;
   onOpen: () => void;
 }) {
-  const { t } = useI18n();
-  const { lx } = useI18n();
+  const { t, lx } = useI18n();
   const [open, setOpen] = useState(false);
   const positive = result.reasons.filter((r) => r.score > 0);
   const negative = result.reasons.filter((r) => r.score < 0);
@@ -252,6 +343,7 @@ function ResultCard<T>({
           onClick={() => setOpen(!open)}
           className="shrink-0 rounded-md border border-dim/25 px-2 py-1 text-xs text-dim hover:border-zlato/50"
           aria-expanded={open}
+          aria-label={t("pair.why")}
         >
           {open ? "▴" : "▾"}
         </button>

@@ -1,13 +1,14 @@
 import { useMemo, useState } from "react";
-import type { Cigar, Drink, DrinkCategory } from "../types";
+import type { Cigar, Drink, DrinkCategory, Market } from "../types";
 import { CIGARS, DRINKS } from "../data";
-import { useI18n, STYLE_LABELS } from "../i18n";
+import { useI18n, STYLE_LABELS, type StringKey } from "../i18n";
 import { Chip, SearchInput } from "../components/ui";
 import { CigarRow, DrinkRow } from "../components/cards";
 import { DetailSheet } from "../components/DetailSheet";
 
 type Tab = "cigars" | DrinkCategory;
 const TABS: Tab[] = ["cigars", "rum", "whisky", "brandy", "coffee"];
+const MARKETS: Market[] = ["HR", "EU", "USA", "WW"];
 
 export function CatalogPage() {
   const { t, lx } = useI18n();
@@ -16,6 +17,9 @@ export function CatalogPage() {
   const [styleFilter, setStyleFilter] = useState<string | null>(null);
   const [strengthFilter, setStrengthFilter] = useState<number | null>(null);
   const [cleanOnly, setCleanOnly] = useState(false);
+  const [market, setMarket] = useState<Market>(
+    () => (localStorage.getItem("market") as Market) || "HR",
+  );
   const [detail, setDetail] = useState<
     { kind: "cigar"; item: Cigar } | { kind: "drink"; item: Drink } | null
   >(null);
@@ -45,22 +49,26 @@ export function CatalogPage() {
         ? []
         : CIGARS.filter(
             (c) =>
+              c.markets.includes(market) &&
               (!q || `${c.brand} ${c.line} ${c.vitola} ${c.wrapper}`.toLowerCase().includes(q)) &&
               (strengthFilter == null || c.strength === strengthFilter),
           ),
-    [tab, q, strengthFilter],
+    [tab, q, strengthFilter, market],
   );
 
+  // rangirano po kvaliteti, kao MASTER sheet u Excelu
   const drinks = useMemo(
     () =>
       tab === "cigars"
         ? []
-        : DRINKS[tab].filter(
-            (d) =>
-              (!q || `${d.name} ${d.region}`.toLowerCase().includes(q)) &&
-              (styleFilter == null || d.style === styleFilter) &&
-              (!cleanOnly || d.additiveStatus === "clean" || d.additiveStatus === "low"),
-          ),
+        : DRINKS[tab]
+            .filter(
+              (d) =>
+                (!q || `${d.name} ${d.region}`.toLowerCase().includes(q)) &&
+                (styleFilter == null || d.style === styleFilter) &&
+                (!cleanOnly || d.additiveStatus === "clean" || d.additiveStatus === "low"),
+            )
+            .sort((a, b) => (b.qualityScore ?? 0) - (a.qualityScore ?? 0)),
     [tab, q, styleFilter, cleanOnly],
   );
 
@@ -80,6 +88,19 @@ export function CatalogPage() {
 
       {/* filteri */}
       <div className="no-scrollbar mt-2 flex gap-2 overflow-x-auto">
+        {tab === "cigars" &&
+          MARKETS.map((m) => (
+            <Chip
+              key={m}
+              active={market === m}
+              onClick={() => {
+                localStorage.setItem("market", m);
+                setMarket(m);
+              }}
+            >
+              {t(`market.${m}` as StringKey)}
+            </Chip>
+          ))}
         {tab === "cigars" &&
           [1, 2, 3, 4, 5].map((s) => (
             <Chip
@@ -115,8 +136,13 @@ export function CatalogPage() {
         {cigars.map((c) => (
           <CigarRow key={c.id} cigar={c} onClick={() => setDetail({ kind: "cigar", item: c })} />
         ))}
-        {drinks.map((d) => (
-          <DrinkRow key={d.id} drink={d} onClick={() => setDetail({ kind: "drink", item: d })} />
+        {drinks.map((d, i) => (
+          <DrinkRow
+            key={d.id}
+            drink={d}
+            rank={i + 1}
+            onClick={() => setDetail({ kind: "drink", item: d })}
+          />
         ))}
       </div>
 

@@ -56,9 +56,11 @@ export function CigarRow({
 
 export function DrinkRow({
   drink,
+  rank,
   onClick,
 }: {
   drink: Drink;
+  rank?: number;
   onClick?: () => void;
 }) {
   const { t, lx } = useI18n();
@@ -70,6 +72,7 @@ export function DrinkRow({
     >
       <div className="flex items-baseline justify-between gap-2">
         <span className="font-display text-[15px] text-papir">
+          {rank != null && <span className="mr-1.5 text-xs text-dim">#{rank}</span>}
           {drink.name}
           <OwnedDot id={drink.id} />
         </span>

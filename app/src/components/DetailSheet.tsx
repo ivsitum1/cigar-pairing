@@ -128,7 +128,13 @@ function CigarDetails({ cigar }: { cigar: Cigar }) {
           v={`${cigar.priceApprox ? t("common.approx") + " " : ""}${formatPrice(cigar.priceEUR)}`}
         />
         <Row k={t("common.time")} v={`~${cigar.smokeTimeMin} ${t("common.minutes")}`} />
-        <Row k={t("common.shop")} v={cigar.availabilityHR.join(", ")} />
+        {cigar.availabilityHR.length > 0 && (
+          <Row k={t("common.shop")} v={cigar.availabilityHR.join(", ")} />
+        )}
+        <Row
+          k={t("common.markets")}
+          v={cigar.markets.map((m) => t(`market.${m}` as Parameters<typeof t>[0])).join(", ")}
+        />
       </dl>
       <div className="mt-2 flex flex-wrap gap-1.5">
         {cigar.flavorTags.map((tag) => (
