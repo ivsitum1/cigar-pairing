@@ -1,0 +1,72 @@
+@import "tailwindcss";
+@import "@fontsource/marcellus";
+@import "@fontsource-variable/manrope";
+
+@theme {
+  /* Humidor paleta */
+  --color-humidor: #201812; /* pozadina — duboka duhanska smeđa */
+  --color-cedar: #2c211a; /* površine kartica */
+  --color-cedar-2: #382a20; /* podignute površine / hover */
+  --color-papir: #ede0c8; /* primarni tekst — stari label papir */
+  --color-dim: #a98f72; /* sekundarni tekst */
+  --color-zlato: #c9a35c; /* band zlato — akcenti */
+  --color-zlato-2: #e3c68b; /* svjetlije zlato */
+  --color-oxblood: #9c4433; /* snaga / upozorenja */
+  --color-lista: #6f8757; /* zelena lista duhana — pozitivno */
+
+  --font-display: "Marcellus", serif;
+  --font-sans: "Manrope Variable", system-ui, sans-serif;
+}
+
+html {
+  background: var(--color-humidor);
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  color: var(--color-papir);
+  background:
+    radial-gradient(1200px 500px at 50% -10%, #33241a55, transparent),
+    var(--color-humidor);
+  min-height: 100vh;
+}
+
+.font-display {
+  font-family: var(--font-display);
+  letter-spacing: 0.08em;
+}
+
+/* tanka zlatna linija kao na cigar bandu */
+.band-rule {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--color-zlato) 20%,
+    var(--color-zlato) 80%,
+    transparent
+  );
+  opacity: 0.5;
+}
+
+::selection {
+  background: #c9a35c55;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* skrol bez vidljivih trakica u horizontalnim listama */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  scrollbar-width: none;
+}
