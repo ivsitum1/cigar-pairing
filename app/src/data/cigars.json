@@ -1,3012 +1,5101 @@
 [
-  {
-    "id": "cig-cohiba-siglo-i-ii",
-    "brand": "Cohiba",
-    "line": "Siglo I / II",
-    "vitola": "Siglo II (petit corona)",
-    "format": "42 x 129mm",
-    "country": "Kuba",
-    "wrapper": "Habano",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [
-      "kremasto",
-      "trava-slatka",
-      "med",
-      "cedar",
-      "zacini"
-    ],
-    "smokeTimeMin": 40,
-    "priceEUR": 28,
-    "priceApprox": true,
-    "availabilityHR": [
-      "Havana Shop"
-    ],
-    "notes": {
-      "hr": "Elegantan uvod u Cohibu — kremast, travnat, medene slatkoće. Kraći format za 40-ak minuta.",
-      "en": "Elegant entry to Cohiba — creamy, grassy, honeyed sweetness. Shorter format for ~40 minutes."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "WW"
-    ]
+ {
+  "id": "cig-cohiba-siglo-i-ii",
+  "brand": "Cohiba",
+  "line": "Siglo I / II",
+  "vitola": "Siglo II",
+  "format": "42 x 129mm",
+  "country": "Kuba",
+  "wrapper": "Habano",
+  "strength": 3,
+  "body": 3,
+  "flavorTags": [
+   "kremasto",
+   "trava-slatka",
+   "med",
+   "cedar",
+   "zacini"
+  ],
+  "smokeTimeMin": 45,
+  "priceEUR": 28,
+  "priceApprox": true,
+  "availabilityHR": [
+   "Havana Shop"
+  ],
+  "notes": {
+   "hr": "Elegantan uvod u Cohibu — kremast, travnat, medene slatkoće. Kraći format za 40-ak minuta.",
+   "en": "Elegant entry to Cohiba — creamy, grassy, honeyed sweetness. Shorter format for ~40 minutes."
   },
-  {
-    "id": "cig-cohiba-siglo-iv-vi",
-    "brand": "Cohiba",
-    "line": "Siglo IV / VI",
-    "vitola": "Siglo VI (cañonazo)",
+  "markets": [
+   "HR",
+   "EU",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "Siglo I",
+    "format": "40 x 102mm",
+    "smokeTimeMin": 35,
+    "priceEUR": null,
+    "url": null
+   },
+   {
+    "name": "Siglo II",
+    "format": "42 x 129mm",
+    "smokeTimeMin": 45,
+    "priceEUR": null,
+    "url": null
+   },
+   {
+    "name": "Siglo III",
+    "format": "42 x 155mm",
+    "smokeTimeMin": 55,
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceUrl": "https://havana-cigar-shop.com/en/product-brand/cohiba/"
+ },
+ {
+  "id": "cig-cohiba-siglo-iv-vi",
+  "brand": "Cohiba",
+  "line": "Siglo IV / VI",
+  "vitola": "Siglo VI",
+  "format": "52 x 150mm",
+  "country": "Kuba",
+  "wrapper": "Habano",
+  "strength": 3,
+  "body": 4,
+  "flavorTags": [
+   "kremasto",
+   "cedar",
+   "med",
+   "zacini",
+   "duhan"
+  ],
+  "smokeTimeMin": 55,
+  "priceEUR": 55,
+  "priceApprox": true,
+  "availabilityHR": [
+   "Havana Shop"
+  ],
+  "notes": {
+   "hr": "Vrh redovne Cohiba linije — kompleksan, kremast, srednje-puno tijelo. Special occasion.",
+   "en": "Top of the regular Cohiba line — complex, creamy, medium-full body. Special occasion."
+  },
+  "markets": [
+   "HR",
+   "EU",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "Siglo IV",
+    "format": "46 x 143mm",
+    "smokeTimeMin": 50,
+    "priceEUR": null,
+    "url": null
+   },
+   {
+    "name": "Siglo VI",
     "format": "52 x 150mm",
-    "country": "Kuba",
-    "wrapper": "Habano",
-    "strength": 3,
-    "body": 4,
-    "flavorTags": [
-      "kremasto",
-      "cedar",
-      "med",
-      "zacini",
-      "duhan"
-    ],
-    "smokeTimeMin": 75,
-    "priceEUR": 55,
-    "priceApprox": true,
-    "availabilityHR": [
-      "Havana Shop"
-    ],
-    "notes": {
-      "hr": "Vrh redovne Cohiba linije — kompleksan, kremast, srednje-puno tijelo. Special occasion.",
-      "en": "Top of the regular Cohiba line — complex, creamy, medium-full body. Special occasion."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "WW"
-    ]
-  },
-  {
-    "id": "cig-cohiba-robustos",
-    "brand": "Cohiba",
-    "line": "Línea Clásica Robustos",
-    "vitola": "Robusto",
-    "format": "50 x 124mm",
-    "country": "Kuba",
-    "wrapper": "Habano",
-    "strength": 4,
-    "body": 4,
-    "flavorTags": [
-      "cedar",
-      "zacini",
-      "duhan",
-      "koza",
-      "kremasto"
-    ],
     "smokeTimeMin": 55,
-    "priceEUR": 42,
-    "priceApprox": true,
-    "availabilityHR": [
-      "Havana Shop"
-    ],
-    "notes": {
-      "hr": "Snažniji od Sigla — klasični kubanski robusto s dubinom.",
-      "en": "Stronger than Siglo — classic Cuban robusto with depth."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "WW"
-    ]
+    "priceEUR": null,
+    "url": null
+   },
+   {
+    "name": "Siglo V",
+    "format": "43 x 170mm",
+    "smokeTimeMin": 60,
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceUrl": "https://havana-cigar-shop.com/en/product-brand/cohiba/"
+ },
+ {
+  "id": "cig-cohiba-robustos",
+  "brand": "Cohiba",
+  "line": "Línea Clásica Robustos",
+  "vitola": "Robusto",
+  "format": "50 x 124mm",
+  "country": "Kuba",
+  "wrapper": "Habano",
+  "strength": 4,
+  "body": 4,
+  "flavorTags": [
+   "cedar",
+   "zacini",
+   "duhan",
+   "koza",
+   "kremasto"
+  ],
+  "smokeTimeMin": 45,
+  "priceEUR": 42,
+  "priceApprox": true,
+  "availabilityHR": [
+   "Havana Shop"
+  ],
+  "notes": {
+   "hr": "Snažniji od Sigla — klasični kubanski robusto s dubinom.",
+   "en": "Stronger than Siglo — classic Cuban robusto with depth."
   },
-  {
-    "id": "cig-montecristo-no4",
-    "brand": "Montecristo",
-    "line": "Clásica",
-    "vitola": "No.4 (mareva)",
+  "markets": [
+   "HR",
+   "EU",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "Robusto",
+    "format": "50 x 124mm",
+    "smokeTimeMin": 45,
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceUrl": "https://havana-cigar-shop.com/en/product-brand/cohiba/"
+ },
+ {
+  "id": "cig-montecristo-no4",
+  "brand": "Montecristo",
+  "line": "Clásica",
+  "vitola": "No.4 (mareva)",
+  "format": "42 x 129mm",
+  "country": "Kuba",
+  "wrapper": "Habano",
+  "strength": 3,
+  "body": 3,
+  "flavorTags": [
+   "kakao",
+   "kava",
+   "cedar",
+   "zacini"
+  ],
+  "smokeTimeMin": 45,
+  "priceEUR": 20.2,
+  "availabilityHR": [
+   "Havana Shop",
+   "The Humidor"
+  ],
+  "notes": {
+   "hr": "Najprodavanija habanos cigara na svijetu — kakao, kava, srednje tijelo. Pouzdan izbor.",
+   "en": "The world's best-selling habano — cocoa, coffee, medium body. A reliable pick."
+  },
+  "markets": [
+   "HR",
+   "EU",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "No.5",
+    "format": "40 x 102mm",
+    "smokeTimeMin": 35,
+    "priceEUR": null,
+    "url": null
+   },
+   {
+    "name": "No.4 (mareva)",
     "format": "42 x 129mm",
-    "country": "Kuba",
-    "wrapper": "Habano",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [
-      "kakao",
-      "kava",
-      "cedar",
-      "zacini"
-    ],
-    "smokeTimeMin": 40,
+    "smokeTimeMin": 45,
     "priceEUR": 20.2,
-    "availabilityHR": [
-      "Havana Shop",
-      "The Humidor"
-    ],
-    "notes": {
-      "hr": "Najprodavanija habanos cigara na svijetu — kakao, kava, srednje tijelo. Pouzdan izbor.",
-      "en": "The world's best-selling habano — cocoa, coffee, medium body. A reliable pick."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "WW"
-    ]
+    "url": "https://humidor.hr/en/proizvod/montecristo-no-4-5-x-42/"
+   },
+   {
+    "name": "No.3 (corona)",
+    "format": "42 x 155mm",
+    "smokeTimeMin": 55,
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceApprox": false,
+  "priceUrl": "https://humidor.hr/en/proizvod/montecristo-no-4-5-x-42/"
+ },
+ {
+  "id": "cig-montecristo-no2",
+  "brand": "Montecristo",
+  "line": "Clásica",
+  "vitola": "No.2 (pirámide)",
+  "format": "52 x 156mm",
+  "country": "Kuba",
+  "wrapper": "Habano",
+  "strength": 4,
+  "body": 4,
+  "flavorTags": [
+   "kakao",
+   "kava",
+   "cedar",
+   "zacini",
+   "zemljano"
+  ],
+  "smokeTimeMin": 60,
+  "priceEUR": 32.0,
+  "availabilityHR": [
+   "Havana Shop",
+   "The Humidor"
+  ],
+  "notes": {
+   "hr": "Legendarna piramida — bogatija i jača od No.4, sat i pol užitka.",
+   "en": "The legendary pirámide — richer and stronger than No.4, ninety minutes of pleasure."
   },
-  {
-    "id": "cig-montecristo-no2",
-    "brand": "Montecristo",
-    "line": "Clásica",
-    "vitola": "No.2 (pirámide)",
+  "markets": [
+   "HR",
+   "EU",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "Petit No.2",
+    "format": "52 x 120mm",
+    "smokeTimeMin": 45,
+    "priceEUR": null,
+    "url": null
+   },
+   {
+    "name": "No.2 (pirámide)",
     "format": "52 x 156mm",
-    "country": "Kuba",
-    "wrapper": "Habano",
-    "strength": 4,
-    "body": 4,
-    "flavorTags": [
-      "kakao",
-      "kava",
-      "cedar",
-      "zacini",
-      "zemljano"
-    ],
-    "smokeTimeMin": 80,
-    "priceEUR": 32,
-    "availabilityHR": [
-      "Havana Shop",
-      "The Humidor"
-    ],
-    "notes": {
-      "hr": "Legendarna piramida — bogatija i jača od No.4, sat i pol užitka.",
-      "en": "The legendary pirámide — richer and stronger than No.4, ninety minutes of pleasure."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "WW"
-    ]
+    "smokeTimeMin": 60,
+    "priceEUR": 32.0,
+    "url": "https://humidor.hr/en/proizvod/montecristo-no-2-6-1-8-x-52/"
+   }
+  ],
+  "priceApprox": false,
+  "priceUrl": "https://humidor.hr/en/proizvod/montecristo-no-2-6-1-8-x-52/"
+ },
+ {
+  "id": "cig-montecristo-edmundo",
+  "brand": "Montecristo",
+  "line": "Edmundo / Open",
+  "vitola": "Edmundo",
+  "format": "52 x 135mm",
+  "country": "Kuba",
+  "wrapper": "Habano",
+  "strength": 3,
+  "body": 4,
+  "flavorTags": [
+   "kakao",
+   "kremasto",
+   "cedar",
+   "orasasti"
+  ],
+  "smokeTimeMin": 50,
+  "priceEUR": 27,
+  "priceApprox": true,
+  "availabilityHR": [
+   "Havana Shop"
+  ],
+  "notes": {
+   "hr": "Moderniji, širi format — mekši i kremastiji od klasične linije.",
+   "en": "Modern wider format — softer and creamier than the classic line."
   },
-  {
-    "id": "cig-montecristo-edmundo",
-    "brand": "Montecristo",
-    "line": "Edmundo / Open",
-    "vitola": "Edmundo",
+  "markets": [
+   "HR",
+   "EU",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "Petit Edmundo",
+    "format": "52 x 110mm",
+    "smokeTimeMin": 40,
+    "priceEUR": null,
+    "url": null
+   },
+   {
+    "name": "Edmundo",
     "format": "52 x 135mm",
-    "country": "Kuba",
-    "wrapper": "Habano",
-    "strength": 3,
-    "body": 4,
-    "flavorTags": [
-      "kakao",
-      "kremasto",
-      "cedar",
-      "orasasti"
-    ],
+    "smokeTimeMin": 50,
+    "priceEUR": null,
+    "url": null
+   },
+   {
+    "name": "Open Eagle",
+    "format": "54 x 150mm",
     "smokeTimeMin": 60,
-    "priceEUR": 27,
-    "priceApprox": true,
-    "availabilityHR": [
-      "Havana Shop"
-    ],
-    "notes": {
-      "hr": "Moderniji, širi format — mekši i kremastiji od klasične linije.",
-      "en": "Modern wider format — softer and creamier than the classic line."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "WW"
-    ]
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceUrl": "https://havana-cigar-shop.com/en/product-brand/montecristo/"
+ },
+ {
+  "id": "cig-partagas-serie-d4",
+  "brand": "Partagás",
+  "line": "Serie D",
+  "vitola": "Serie D No.4",
+  "format": "50 x 124mm",
+  "country": "Kuba",
+  "wrapper": "Habano",
+  "strength": 4,
+  "body": 5,
+  "flavorTags": [
+   "zemljano",
+   "papar",
+   "koza",
+   "kava",
+   "drvo"
+  ],
+  "smokeTimeMin": 45,
+  "priceEUR": 26.0,
+  "availabilityHR": [
+   "Havana Shop",
+   "The Humidor"
+  ],
+  "notes": {
+   "hr": "Kubanski klasik punog tijela — zemljano, papreno, intenzivno. Traži ozbiljno piće.",
+   "en": "Full-bodied Cuban classic — earthy, peppery, intense. Demands a serious drink."
   },
-  {
-    "id": "cig-partagas-serie-d4",
-    "brand": "Partagás",
-    "line": "Serie D",
-    "vitola": "Serie D No.4 (robusto)",
+  "markets": [
+   "HR",
+   "EU",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "Serie D No.6",
+    "format": "50 x 90mm",
+    "smokeTimeMin": 35,
+    "priceEUR": null,
+    "url": null
+   },
+   {
+    "name": "Serie D No.5",
+    "format": "50 x 110mm",
+    "smokeTimeMin": 40,
+    "priceEUR": null,
+    "url": null
+   },
+   {
+    "name": "Serie D No.4",
     "format": "50 x 124mm",
-    "country": "Kuba",
-    "wrapper": "Habano",
-    "strength": 4,
-    "body": 5,
-    "flavorTags": [
-      "zemljano",
-      "papar",
-      "koza",
-      "kava",
-      "drvo"
-    ],
+    "smokeTimeMin": 45,
+    "priceEUR": 26.0,
+    "url": "https://humidor.hr/en/proizvod/partagas-serie-d-no-4-4-7-8-x-50/"
+   },
+   {
+    "name": "Serie E No.2",
+    "format": "54 x 140mm",
     "smokeTimeMin": 55,
-    "priceEUR": 26,
-    "availabilityHR": [
-      "Havana Shop",
-      "The Humidor"
-    ],
-    "notes": {
-      "hr": "Kubanski klasik punog tijela — zemljano, papreno, intenzivno. Traži ozbiljno piće.",
-      "en": "Full-bodied Cuban classic — earthy, peppery, intense. Demands a serious drink."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "WW"
-    ]
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceApprox": false,
+  "priceUrl": "https://humidor.hr/en/proizvod/partagas-serie-d-no-4-4-7-8-x-50/"
+ },
+ {
+  "id": "cig-partagas-shorts",
+  "brand": "Partagás",
+  "line": "Shorts / Serie E",
+  "vitola": "Mille Fleurs",
+  "format": "42 x 129mm",
+  "country": "Kuba",
+  "wrapper": "Habano",
+  "strength": 4,
+  "body": 4,
+  "flavorTags": [
+   "zemljano",
+   "papar",
+   "kava",
+   "drvo"
+  ],
+  "smokeTimeMin": 45,
+  "priceEUR": 15.2,
+  "availabilityHR": [
+   "Havana Shop",
+   "The Humidor"
+  ],
+  "notes": {
+   "hr": "Puno Partagás iskustvo u pola sata — odličan uz jutarnju kavu.",
+   "en": "The full Partagás experience in half an hour — excellent with morning coffee."
   },
-  {
-    "id": "cig-partagas-shorts",
-    "brand": "Partagás",
-    "line": "Shorts / Serie E",
-    "vitola": "Short (petit corona)",
+  "markets": [
+   "HR",
+   "EU",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "Short",
     "format": "42 x 110mm",
-    "country": "Kuba",
-    "wrapper": "Habano",
-    "strength": 4,
-    "body": 4,
-    "flavorTags": [
-      "zemljano",
-      "papar",
-      "kava",
-      "drvo"
-    ],
-    "smokeTimeMin": 30,
+    "smokeTimeMin": 40,
     "priceEUR": 15.2,
-    "availabilityHR": [
-      "Havana Shop",
-      "The Humidor"
-    ],
-    "notes": {
-      "hr": "Puno Partagás iskustvo u pola sata — odličan uz jutarnju kavu.",
-      "en": "The full Partagás experience in half an hour — excellent with morning coffee."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "WW"
-    ]
-  },
-  {
-    "id": "cig-romeo-y-julieta-no2",
-    "brand": "Romeo y Julieta",
-    "line": "Clásica",
-    "vitola": "No.2 (petit corona, tubos)",
+    "url": "https://humidor.hr/en/proizvod/partagas-shorts-4-1-2-x-42/"
+   },
+   {
+    "name": "Mille Fleurs",
     "format": "42 x 129mm",
-    "country": "Kuba",
-    "wrapper": "Habano",
-    "strength": 2,
-    "body": 3,
-    "flavorTags": [
-      "cedar",
-      "cvjetno",
-      "med",
-      "orasasti"
-    ],
+    "smokeTimeMin": 45,
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceApprox": false,
+  "priceUrl": "https://humidor.hr/en/proizvod/partagas-shorts-4-1-2-x-42/"
+ },
+ {
+  "id": "cig-romeo-y-julieta-no2",
+  "brand": "Romeo y Julieta",
+  "line": "Clásica",
+  "vitola": "No.2",
+  "format": "42 x 129mm",
+  "country": "Kuba",
+  "wrapper": "Habano",
+  "strength": 2,
+  "body": 3,
+  "flavorTags": [
+   "cedar",
+   "cvjetno",
+   "med",
+   "orasasti"
+  ],
+  "smokeTimeMin": 45,
+  "priceEUR": 14.2,
+  "availabilityHR": [
+   "Havana Shop",
+   "The Humidor"
+  ],
+  "notes": {
+   "hr": "Blaži kubanski klasik — cedar, cvjetne note, uravnotežen. Dobar za početnike u habanosima.",
+   "en": "Milder Cuban classic — cedar, floral notes, balanced. Good habanos starting point."
+  },
+  "markets": [
+   "HR",
+   "EU",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "No.3",
+    "format": "40 x 117mm",
     "smokeTimeMin": 40,
+    "priceEUR": null,
+    "url": null
+   },
+   {
+    "name": "No.2",
+    "format": "42 x 129mm",
+    "smokeTimeMin": 45,
     "priceEUR": 14.2,
-    "availabilityHR": [
-      "Havana Shop",
-      "The Humidor"
-    ],
-    "notes": {
-      "hr": "Blaži kubanski klasik — cedar, cvjetne note, uravnotežen. Dobar za početnike u habanosima.",
-      "en": "Milder Cuban classic — cedar, floral notes, balanced. Good habanos starting point."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "WW"
-    ]
-  },
-  {
-    "id": "cig-romeo-y-julieta-short-churchills",
-    "brand": "Romeo y Julieta",
-    "line": "Churchills",
-    "vitola": "Short Churchill (robusto)",
-    "format": "50 x 124mm",
-    "country": "Kuba",
-    "wrapper": "Habano",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [
-      "cedar",
-      "med",
-      "kremasto",
-      "orasasti",
-      "zacini"
-    ],
+    "url": "https://humidor.hr/en/proizvod/romeo-y-julieta-no-2-tubos-5-x-42/"
+   },
+   {
+    "name": "No.1",
+    "format": "40 x 140mm",
     "smokeTimeMin": 50,
-    "priceEUR": 24,
-    "priceApprox": true,
-    "availabilityHR": [
-      "Havana Shop"
-    ],
-    "notes": {
-      "hr": "Robusto verzija slavne Churchill linije — aromatičan, srednje tijelo.",
-      "en": "Robusto version of the famous Churchill line — aromatic, medium body."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "WW"
-    ]
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceApprox": false,
+  "priceUrl": "https://humidor.hr/en/proizvod/romeo-y-julieta-no-2-tubos-5-x-42/"
+ },
+ {
+  "id": "cig-romeo-y-julieta-short-churchills",
+  "brand": "Romeo y Julieta",
+  "line": "Churchills",
+  "vitola": "Wide Churchill",
+  "format": "55 x 130mm",
+  "country": "Kuba",
+  "wrapper": "Habano",
+  "strength": 3,
+  "body": 3,
+  "flavorTags": [
+   "cedar",
+   "med",
+   "kremasto",
+   "orasasti",
+   "zacini"
+  ],
+  "smokeTimeMin": 50,
+  "priceEUR": 24,
+  "priceApprox": true,
+  "availabilityHR": [
+   "Havana Shop"
+  ],
+  "notes": {
+   "hr": "Robusto verzija slavne Churchill linije — aromatičan, srednje tijelo.",
+   "en": "Robusto version of the famous Churchill line — aromatic, medium body."
   },
-  {
-    "id": "cig-hoyo-epicure-no2",
-    "brand": "Hoyo de Monterrey",
-    "line": "Epicure",
-    "vitola": "Epicure No.2 (robusto)",
-    "format": "50 x 124mm",
-    "country": "Kuba",
-    "wrapper": "Habano",
-    "strength": 2,
-    "body": 3,
-    "flavorTags": [
-      "kremasto",
-      "trava-slatka",
-      "orasasti",
-      "cedar"
-    ],
-    "smokeTimeMin": 50,
-    "priceEUR": 23,
-    "priceApprox": true,
-    "availabilityHR": [
-      "Havana Shop"
-    ],
-    "notes": {
-      "hr": "Najelegantniji kubanski robusto — blag, kremast, aromatičan. Idealan uz laganija pića.",
-      "en": "The most elegant Cuban robusto — mild, creamy, aromatic. Ideal with lighter drinks."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "WW"
-    ]
-  },
-  {
-    "id": "cig-hoyo-petit-robusto",
-    "brand": "Hoyo de Monterrey",
-    "line": "Petit Robustos",
-    "vitola": "Petit Robusto",
+  "markets": [
+   "HR",
+   "EU",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "Petit Churchill",
     "format": "50 x 102mm",
-    "country": "Kuba",
-    "wrapper": "Habano",
-    "strength": 2,
-    "body": 3,
-    "flavorTags": [
-      "kremasto",
-      "orasasti",
-      "cedar",
-      "med"
-    ],
-    "smokeTimeMin": 30,
-    "priceEUR": 16,
-    "priceApprox": true,
-    "availabilityHR": [
-      "Havana Shop"
-    ],
-    "notes": {
-      "hr": "Kratka verzija Epicure profila — blaga i kremasta, za pola sata.",
-      "en": "Short version of the Epicure profile — mild and creamy, for half an hour."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "WW"
-    ]
+    "smokeTimeMin": 40,
+    "priceEUR": null,
+    "url": null
+   },
+   {
+    "name": "Short Churchill",
+    "format": "50 x 124mm",
+    "smokeTimeMin": 45,
+    "priceEUR": null,
+    "url": null
+   },
+   {
+    "name": "Wide Churchill",
+    "format": "55 x 130mm",
+    "smokeTimeMin": 50,
+    "priceEUR": null,
+    "url": null
+   },
+   {
+    "name": "Churchill",
+    "format": "47 x 178mm",
+    "smokeTimeMin": 65,
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceUrl": "https://havana-cigar-shop.com/en/product-brand/romeo-y-julieta/"
+ },
+ {
+  "id": "cig-hoyo-epicure-no2",
+  "brand": "Hoyo de Monterrey",
+  "line": "Epicure",
+  "vitola": "Epicure No.1",
+  "format": "46 x 143mm",
+  "country": "Kuba",
+  "wrapper": "Habano",
+  "strength": 2,
+  "body": 3,
+  "flavorTags": [
+   "kremasto",
+   "trava-slatka",
+   "orasasti",
+   "cedar"
+  ],
+  "smokeTimeMin": 50,
+  "priceEUR": 23,
+  "priceApprox": true,
+  "availabilityHR": [
+   "Havana Shop"
+  ],
+  "notes": {
+   "hr": "Najelegantniji kubanski robusto — blag, kremast, aromatičan. Idealan uz laganija pića.",
+   "en": "The most elegant Cuban robusto — mild, creamy, aromatic. Ideal with lighter drinks."
   },
-  {
-    "id": "cig-hupmann-half-corona",
-    "brand": "H. Upmann",
-    "line": "Half Corona",
-    "vitola": "Half Corona",
+  "markets": [
+   "HR",
+   "EU",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "Epicure No.2",
+    "format": "50 x 124mm",
+    "smokeTimeMin": 45,
+    "priceEUR": null,
+    "url": null
+   },
+   {
+    "name": "Epicure No.1",
+    "format": "46 x 143mm",
+    "smokeTimeMin": 50,
+    "priceEUR": null,
+    "url": null
+   },
+   {
+    "name": "Epicure Especial",
+    "format": "50 x 141mm",
+    "smokeTimeMin": 55,
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceUrl": "https://havana-cigar-shop.com/en/product-brand/hoyo-de-monterrey/"
+ },
+ {
+  "id": "cig-hoyo-petit-robusto",
+  "brand": "Hoyo de Monterrey",
+  "line": "Petit Robustos",
+  "vitola": "Petit Robusto",
+  "format": "50 x 102mm",
+  "country": "Kuba",
+  "wrapper": "Habano",
+  "strength": 2,
+  "body": 3,
+  "flavorTags": [
+   "kremasto",
+   "orasasti",
+   "cedar",
+   "med"
+  ],
+  "smokeTimeMin": 40,
+  "priceEUR": 16,
+  "priceApprox": true,
+  "availabilityHR": [
+   "Havana Shop"
+  ],
+  "notes": {
+   "hr": "Kratka verzija Epicure profila — blaga i kremasta, za pola sata.",
+   "en": "Short version of the Epicure profile — mild and creamy, for half an hour."
+  },
+  "markets": [
+   "HR",
+   "EU",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "Petit Robusto",
+    "format": "50 x 102mm",
+    "smokeTimeMin": 40,
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceUrl": "https://havana-cigar-shop.com/en/product-brand/hoyo-de-monterrey/"
+ },
+ {
+  "id": "cig-hupmann-half-corona",
+  "brand": "H. Upmann",
+  "line": "Half Corona",
+  "vitola": "Half Corona",
+  "format": "44 x 90mm",
+  "country": "Kuba",
+  "wrapper": "Habano",
+  "strength": 2,
+  "body": 2,
+  "flavorTags": [
+   "kremasto",
+   "cedar",
+   "med",
+   "orasasti"
+  ],
+  "smokeTimeMin": 30,
+  "priceEUR": 11.5,
+  "availabilityHR": [
+   "Havana Shop",
+   "The Humidor"
+  ],
+  "notes": {
+   "hr": "Savršena 'kava cigara' — 25 minuta, blaga i uglađena. Najbolji mali habanos.",
+   "en": "The perfect 'coffee cigar' — 25 minutes, mild and refined. Best small habano."
+  },
+  "markets": [
+   "HR",
+   "EU",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "Half Corona",
     "format": "44 x 90mm",
-    "country": "Kuba",
-    "wrapper": "Habano",
-    "strength": 2,
-    "body": 2,
-    "flavorTags": [
-      "kremasto",
-      "cedar",
-      "med",
-      "orasasti"
-    ],
-    "smokeTimeMin": 25,
+    "smokeTimeMin": 30,
     "priceEUR": 11.5,
-    "availabilityHR": [
-      "Havana Shop",
-      "The Humidor"
-    ],
-    "notes": {
-      "hr": "Savršena 'kava cigara' — 25 minuta, blaga i uglađena. Najbolji mali habanos.",
-      "en": "The perfect 'coffee cigar' — 25 minutes, mild and refined. Best small habano."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "WW"
-    ]
+    "url": "https://humidor.hr/en/proizvod/h-upmann-half-corona-3-1-2-x-44/"
+   }
+  ],
+  "priceApprox": false,
+  "priceUrl": "https://humidor.hr/en/proizvod/h-upmann-half-corona-3-1-2-x-44/"
+ },
+ {
+  "id": "cig-hupmann-magnum",
+  "brand": "H. Upmann",
+  "line": "Magnum",
+  "vitola": "Magnum 46",
+  "format": "46 x 143mm",
+  "country": "Kuba",
+  "wrapper": "Habano",
+  "strength": 3,
+  "body": 3,
+  "flavorTags": [
+   "kremasto",
+   "cedar",
+   "kava",
+   "med",
+   "zacini"
+  ],
+  "smokeTimeMin": 50,
+  "priceEUR": 25,
+  "priceApprox": true,
+  "availabilityHR": [
+   "Havana Shop"
+  ],
+  "notes": {
+   "hr": "Uglađena srednja linija — kava s mlijekom, cedar, blaga slatkoća.",
+   "en": "Polished medium line — café au lait, cedar, gentle sweetness."
   },
-  {
-    "id": "cig-hupmann-magnum",
-    "brand": "H. Upmann",
-    "line": "Magnum",
-    "vitola": "Magnum 46 / 50 / 54",
-    "format": "46-54 x 120-143mm",
-    "country": "Kuba",
-    "wrapper": "Habano",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [
-      "kremasto",
-      "cedar",
-      "kava",
-      "med",
-      "zacini"
-    ],
+  "markets": [
+   "HR",
+   "EU",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "Magnum 54",
+    "format": "54 x 120mm",
+    "smokeTimeMin": 45,
+    "priceEUR": null,
+    "url": null
+   },
+   {
+    "name": "Magnum 46",
+    "format": "46 x 143mm",
+    "smokeTimeMin": 50,
+    "priceEUR": null,
+    "url": null
+   },
+   {
+    "name": "Magnum 50",
+    "format": "50 x 160mm",
     "smokeTimeMin": 60,
-    "priceEUR": 25,
-    "priceApprox": true,
-    "availabilityHR": [
-      "Havana Shop"
-    ],
-    "notes": {
-      "hr": "Uglađena srednja linija — kava s mlijekom, cedar, blaga slatkoća.",
-      "en": "Polished medium line — café au lait, cedar, gentle sweetness."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "WW"
-    ]
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceUrl": "https://havana-cigar-shop.com/en/product-brand/h-upmann/"
+ },
+ {
+  "id": "cig-trinidad-reyes",
+  "brand": "Trinidad",
+  "line": "Reyes",
+  "vitola": "Coloniales",
+  "format": "44 x 132mm",
+  "country": "Kuba",
+  "wrapper": "Habano",
+  "strength": 3,
+  "body": 3,
+  "flavorTags": [
+   "kremasto",
+   "med",
+   "cedar",
+   "zacini",
+   "citrus"
+  ],
+  "smokeTimeMin": 50,
+  "priceEUR": 18,
+  "priceApprox": true,
+  "availabilityHR": [
+   "Havana Shop"
+  ],
+  "notes": {
+   "hr": "Mala luksuzna cigara — rafinirana, medena, s finim začinima.",
+   "en": "Small luxury cigar — refined, honeyed, finely spiced."
   },
-  {
-    "id": "cig-trinidad-reyes",
-    "brand": "Trinidad",
-    "line": "Reyes",
-    "vitola": "Reyes (petit corona)",
+  "markets": [
+   "HR",
+   "EU",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "Reyes",
     "format": "40 x 110mm",
-    "country": "Kuba",
-    "wrapper": "Habano",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [
-      "kremasto",
-      "med",
-      "cedar",
-      "zacini",
-      "citrus"
-    ],
-    "smokeTimeMin": 30,
-    "priceEUR": 18,
-    "priceApprox": true,
-    "availabilityHR": [
-      "Havana Shop"
-    ],
-    "notes": {
-      "hr": "Mala luksuzna cigara — rafinirana, medena, s finim začinima.",
-      "en": "Small luxury cigar — refined, honeyed, finely spiced."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "WW"
-    ]
+    "smokeTimeMin": 40,
+    "priceEUR": null,
+    "url": null
+   },
+   {
+    "name": "Coloniales",
+    "format": "44 x 132mm",
+    "smokeTimeMin": 50,
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceUrl": "https://havana-cigar-shop.com/en/product-brand/trinidad/"
+ },
+ {
+  "id": "cig-trinidad-vigia",
+  "brand": "Trinidad",
+  "line": "Vigía / Esmeralda",
+  "vitola": "Esmeralda",
+  "format": "53 x 145mm",
+  "country": "Kuba",
+  "wrapper": "Habano",
+  "strength": 3,
+  "body": 4,
+  "flavorTags": [
+   "kremasto",
+   "kava",
+   "med",
+   "zacini",
+   "drvo"
+  ],
+  "smokeTimeMin": 55,
+  "priceEUR": 28,
+  "priceApprox": true,
+  "availabilityHR": [
+   "Havana Shop"
+  ],
+  "notes": {
+   "hr": "Deblji format Trinidada — bogatiji, i dalje uglađen.",
+   "en": "Thicker Trinidad format — richer, still refined."
   },
-  {
-    "id": "cig-trinidad-vigia",
-    "brand": "Trinidad",
-    "line": "Vigía / Esmeralda",
-    "vitola": "Vigía (petit robusto gordo)",
+  "markets": [
+   "HR",
+   "EU",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "Vigía",
     "format": "54 x 110mm",
-    "country": "Kuba",
-    "wrapper": "Habano",
-    "strength": 3,
-    "body": 4,
-    "flavorTags": [
-      "kremasto",
-      "kava",
-      "med",
-      "zacini",
-      "drvo"
-    ],
     "smokeTimeMin": 45,
-    "priceEUR": 28,
-    "priceApprox": true,
-    "availabilityHR": [
-      "Havana Shop"
-    ],
-    "notes": {
-      "hr": "Deblji format Trinidada — bogatiji, i dalje uglađen.",
-      "en": "Thicker Trinidad format — richer, still refined."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "WW"
-    ]
-  },
-  {
-    "id": "cig-quai-dorsay-50-54",
-    "brand": "Quai d'Orsay",
-    "line": "No.50 / No.54",
-    "vitola": "No.50 (petit robusto)",
-    "format": "50 x 110mm",
-    "country": "Kuba",
-    "wrapper": "Habano (claro)",
-    "strength": 2,
-    "body": 2,
-    "flavorTags": [
-      "kremasto",
-      "trava-slatka",
-      "cvjetno",
-      "med",
-      "citrus"
-    ],
-    "smokeTimeMin": 35,
-    "priceEUR": 17,
-    "priceApprox": true,
-    "availabilityHR": [
-      "Havana Shop"
-    ],
-    "notes": {
-      "hr": "Najlaganiji moderni habanos — svijetao, svjež, elegantan. Za agricole i lagana pića.",
-      "en": "The lightest modern habano — bright, fresh, elegant. For agricole and light drinks."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "WW"
-    ]
-  },
-  {
-    "id": "cig-ramon-allones-specially-selected",
-    "brand": "Ramón Allones",
-    "line": "Specially Selected",
-    "vitola": "Specially Selected (robusto)",
-    "format": "50 x 124mm",
-    "country": "Kuba",
-    "wrapper": "Habano (colorado)",
-    "strength": 4,
-    "body": 5,
-    "flavorTags": [
-      "tamno-voce",
-      "kakao",
-      "zemljano",
-      "zacini",
-      "koza"
-    ],
+    "priceEUR": null,
+    "url": null
+   },
+   {
+    "name": "Esmeralda",
+    "format": "53 x 145mm",
     "smokeTimeMin": 55,
-    "priceEUR": 22,
-    "priceApprox": true,
-    "availabilityHR": [
-      "Havana Shop"
-    ],
-    "notes": {
-      "hr": "Insajderski favorit — tamno voće, kakao, puno tijelo. Sjajan uz demerara/sherry profile.",
-      "en": "Insider favourite — dark fruit, cocoa, full body. Great with demerara/sherry profiles."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "WW"
-    ]
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceUrl": "https://havana-cigar-shop.com/en/product-brand/trinidad/"
+ },
+ {
+  "id": "cig-quai-dorsay-50-54",
+  "brand": "Quai d'Orsay",
+  "line": "No.50 / No.54",
+  "vitola": "No.54",
+  "format": "54 x 135mm",
+  "country": "Kuba",
+  "wrapper": "Habano (claro)",
+  "strength": 2,
+  "body": 2,
+  "flavorTags": [
+   "kremasto",
+   "trava-slatka",
+   "cvjetno",
+   "med",
+   "citrus"
+  ],
+  "smokeTimeMin": 50,
+  "priceEUR": 17,
+  "priceApprox": true,
+  "availabilityHR": [
+   "Havana Shop"
+  ],
+  "notes": {
+   "hr": "Najlaganiji moderni habanos — svijetao, svjež, elegantan. Za agricole i lagana pića.",
+   "en": "The lightest modern habano — bright, fresh, elegant. For agricole and light drinks."
   },
-  {
-    "id": "cig-juan-lopez-seleccion-no2",
-    "brand": "Juan López",
-    "line": "Selección",
-    "vitola": "Selección No.2 (robusto)",
-    "format": "50 x 124mm",
-    "country": "Kuba",
-    "wrapper": "Habano",
-    "strength": 3,
-    "body": 4,
-    "flavorTags": [
-      "zemljano",
-      "med",
-      "kava",
-      "drvo"
-    ],
+  "markets": [
+   "HR",
+   "EU",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "No.50",
+    "format": "50 x 110mm",
+    "smokeTimeMin": 40,
+    "priceEUR": null,
+    "url": null
+   },
+   {
+    "name": "No.54",
+    "format": "54 x 135mm",
     "smokeTimeMin": 50,
-    "priceEUR": 20,
-    "priceApprox": true,
-    "availabilityHR": [
-      "Havana Shop"
-    ],
-    "notes": {
-      "hr": "Mala marka, velika cigara — zemljano-medena, srednje-puno tijelo.",
-      "en": "Small marque, big cigar — earthy-honeyed, medium-full body."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "WW"
-    ]
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceUrl": "https://havana-cigar-shop.com/en/product-brand/quai-dorsai/"
+ },
+ {
+  "id": "cig-ramon-allones-specially-selected",
+  "brand": "Ramón Allones",
+  "line": "Specially Selected",
+  "vitola": "Specially Selected",
+  "format": "50 x 124mm",
+  "country": "Kuba",
+  "wrapper": "Habano (colorado)",
+  "strength": 4,
+  "body": 5,
+  "flavorTags": [
+   "tamno-voce",
+   "kakao",
+   "zemljano",
+   "zacini",
+   "koza"
+  ],
+  "smokeTimeMin": 45,
+  "priceEUR": 22,
+  "priceApprox": true,
+  "availabilityHR": [
+   "Havana Shop"
+  ],
+  "notes": {
+   "hr": "Insajderski favorit — tamno voće, kakao, puno tijelo. Sjajan uz demerara/sherry profile.",
+   "en": "Insider favourite — dark fruit, cocoa, full body. Great with demerara/sherry profiles."
   },
-  {
-    "id": "cig-fonseca-delicias",
-    "brand": "Fonseca",
-    "line": "Delicias / KDT Cadetes",
-    "vitola": "KDT Cadetes",
+  "markets": [
+   "HR",
+   "EU",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "Small Club Coronas",
+    "format": "42 x 110mm",
+    "smokeTimeMin": 40,
+    "priceEUR": null,
+    "url": null
+   },
+   {
+    "name": "Specially Selected",
+    "format": "50 x 124mm",
+    "smokeTimeMin": 45,
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceUrl": "https://havana-cigar-shop.com/en/product-brand/ramon-allones/"
+ },
+ {
+  "id": "cig-juan-lopez-seleccion-no2",
+  "brand": "Juan López",
+  "line": "Selección",
+  "vitola": "Selección No.1",
+  "format": "46 x 143mm",
+  "country": "Kuba",
+  "wrapper": "Habano",
+  "strength": 3,
+  "body": 4,
+  "flavorTags": [
+   "zemljano",
+   "med",
+   "kava",
+   "drvo"
+  ],
+  "smokeTimeMin": 50,
+  "priceEUR": 20,
+  "priceApprox": true,
+  "availabilityHR": [
+   "Havana Shop"
+  ],
+  "notes": {
+   "hr": "Mala marka, velika cigara — zemljano-medena, srednje-puno tijelo.",
+   "en": "Small marque, big cigar — earthy-honeyed, medium-full body."
+  },
+  "markets": [
+   "HR",
+   "EU",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "Selección No.2",
+    "format": "50 x 124mm",
+    "smokeTimeMin": 45,
+    "priceEUR": null,
+    "url": null
+   },
+   {
+    "name": "Selección No.1",
+    "format": "46 x 143mm",
+    "smokeTimeMin": 50,
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceUrl": "https://havana-cigar-shop.com/en/product-brand/juan-lopez/"
+ },
+ {
+  "id": "cig-fonseca-delicias",
+  "brand": "Fonseca",
+  "line": "Delicias / KDT Cadetes",
+  "vitola": "Delicias",
+  "format": "40 x 123mm",
+  "country": "Kuba",
+  "wrapper": "Habano (claro)",
+  "strength": 1,
+  "body": 2,
+  "flavorTags": [
+   "kremasto",
+   "cvjetno",
+   "orasasti",
+   "trava-slatka"
+  ],
+  "smokeTimeMin": 45,
+  "priceEUR": 10,
+  "priceApprox": true,
+  "availabilityHR": [
+   "Havana Shop"
+  ],
+  "notes": {
+   "hr": "Najblaži habanos — lagan, cvjetni, diskretan. Uz kavu ili lagani agricole.",
+   "en": "The mildest habano — light, floral, discreet. With coffee or a light agricole."
+  },
+  "markets": [
+   "HR",
+   "EU",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "KDT Cadetes",
     "format": "36 x 115mm",
-    "country": "Kuba",
-    "wrapper": "Habano (claro)",
-    "strength": 1,
-    "body": 2,
-    "flavorTags": [
-      "kremasto",
-      "cvjetno",
-      "orasasti",
-      "trava-slatka"
-    ],
-    "smokeTimeMin": 30,
-    "priceEUR": 10,
-    "priceApprox": true,
-    "availabilityHR": [
-      "Havana Shop"
-    ],
-    "notes": {
-      "hr": "Najblaži habanos — lagan, cvjetni, diskretan. Uz kavu ili lagani agricole.",
-      "en": "The mildest habano — light, floral, discreet. With coffee or a light agricole."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "WW"
-    ]
+    "smokeTimeMin": 40,
+    "priceEUR": null,
+    "url": null
+   },
+   {
+    "name": "Delicias",
+    "format": "40 x 123mm",
+    "smokeTimeMin": 45,
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceUrl": "https://havana-cigar-shop.com/en/product-brand/fonseca/"
+ },
+ {
+  "id": "cig-quintero-favoritos",
+  "brand": "Quintero",
+  "line": "Favoritos",
+  "vitola": "Favoritos",
+  "format": "50 x 110mm",
+  "country": "Kuba",
+  "wrapper": "Habano",
+  "strength": 3,
+  "body": 3,
+  "flavorTags": [
+   "zemljano",
+   "duhan",
+   "drvo",
+   "karamela"
+  ],
+  "smokeTimeMin": 40,
+  "priceEUR": 9,
+  "priceApprox": true,
+  "availabilityHR": [
+   "Havana Shop"
+  ],
+  "notes": {
+   "hr": "Value kubanka (short filler) — rustikalna, zemljana, svakodnevna.",
+   "en": "Value Cuban (short filler) — rustic, earthy, an everyday smoke."
   },
-  {
-    "id": "cig-quintero-favoritos",
-    "brand": "Quintero",
-    "line": "Favoritos",
-    "vitola": "Favoritos (petit robusto)",
+  "markets": [
+   "HR",
+   "EU",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "Petit Quintero",
+    "format": "33 x 110mm",
+    "smokeTimeMin": 35,
+    "priceEUR": null,
+    "url": null
+   },
+   {
+    "name": "Favoritos",
     "format": "50 x 110mm",
-    "country": "Kuba",
-    "wrapper": "Habano",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [
-      "zemljano",
-      "duhan",
-      "drvo",
-      "karamela"
-    ],
-    "smokeTimeMin": 35,
-    "priceEUR": 9,
-    "priceApprox": true,
-    "availabilityHR": [
-      "Havana Shop"
-    ],
-    "notes": {
-      "hr": "Value kubanka (short filler) — rustikalna, zemljana, svakodnevna.",
-      "en": "Value Cuban (short filler) — rustic, earthy, an everyday smoke."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "WW"
-    ]
+    "smokeTimeMin": 40,
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceUrl": "https://havana-cigar-shop.com/en/product-brand/quintero/"
+ },
+ {
+  "id": "cig-jose-l-piedra-petit-caballeros",
+  "brand": "José L. Piedra",
+  "line": "Petit Caballeros",
+  "vitola": "Cazadores",
+  "format": "43 x 152mm",
+  "country": "Kuba",
+  "wrapper": "Habano (rustikalan)",
+  "strength": 3,
+  "body": 3,
+  "flavorTags": [
+   "zemljano",
+   "duhan",
+   "drvo"
+  ],
+  "smokeTimeMin": 55,
+  "priceEUR": 6,
+  "priceApprox": true,
+  "availabilityHR": [
+   "Havana Shop"
+  ],
+  "notes": {
+   "hr": "Najjeftiniji pravi kubanac — grublji, ali pošten dnevni dim.",
+   "en": "Cheapest real Cuban — rougher, but an honest daily smoke."
   },
-  {
-    "id": "cig-jose-l-piedra-petit-caballeros",
-    "brand": "José L. Piedra",
-    "line": "Petit Caballeros",
-    "vitola": "Petit Caballeros",
+  "markets": [
+   "HR",
+   "EU",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "Petit Caballeros",
     "format": "44 x 105mm",
-    "country": "Kuba",
-    "wrapper": "Habano (rustikalan)",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [
-      "zemljano",
-      "duhan",
-      "drvo"
-    ],
-    "smokeTimeMin": 30,
-    "priceEUR": 6,
-    "priceApprox": true,
-    "availabilityHR": [
-      "Havana Shop"
-    ],
-    "notes": {
-      "hr": "Najjeftiniji pravi kubanac — grublji, ali pošten dnevni dim.",
-      "en": "Cheapest real Cuban — rougher, but an honest daily smoke."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "WW"
-    ]
+    "smokeTimeMin": 40,
+    "priceEUR": null,
+    "url": null
+   },
+   {
+    "name": "Cazadores",
+    "format": "43 x 152mm",
+    "smokeTimeMin": 55,
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceUrl": "https://havana-cigar-shop.com/en/product-brand/jose-piedra/"
+ },
+ {
+  "id": "cig-cuaba-divinos",
+  "brand": "Cuaba",
+  "line": "Divinos",
+  "vitola": "Tradicionales",
+  "format": "42 x 120mm",
+  "country": "Kuba",
+  "wrapper": "Habano",
+  "strength": 3,
+  "body": 3,
+  "flavorTags": [
+   "drvo",
+   "med",
+   "zacini",
+   "zemljano"
+  ],
+  "smokeTimeMin": 45,
+  "priceEUR": 14,
+  "priceApprox": true,
+  "availabilityHR": [
+   "Havana Shop"
+  ],
+  "notes": {
+   "hr": "Jedina potpuno perfecto marka — kuriozitet s medeno-drvenim profilom.",
+   "en": "The only all-perfecto marque — a curiosity with a honey-woody profile."
   },
-  {
-    "id": "cig-cuaba-divinos",
-    "brand": "Cuaba",
-    "line": "Divinos",
-    "vitola": "Divinos (perfecto)",
+  "markets": [
+   "HR",
+   "EU",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "Divinos",
     "format": "43 x 101mm",
-    "country": "Kuba",
-    "wrapper": "Habano",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [
-      "drvo",
-      "med",
-      "zacini",
-      "zemljano"
-    ],
     "smokeTimeMin": 35,
-    "priceEUR": 14,
-    "priceApprox": true,
-    "availabilityHR": [
-      "Havana Shop"
-    ],
-    "notes": {
-      "hr": "Jedina potpuno perfecto marka — kuriozitet s medeno-drvenim profilom.",
-      "en": "The only all-perfecto marque — a curiosity with a honey-woody profile."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "WW"
-    ]
+    "priceEUR": null,
+    "url": null
+   },
+   {
+    "name": "Tradicionales",
+    "format": "42 x 120mm",
+    "smokeTimeMin": 45,
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceUrl": "https://havana-cigar-shop.com/en/product-brand/cuaba/"
+ },
+ {
+  "id": "cig-davidoff-signature",
+  "brand": "Davidoff",
+  "line": "Signature",
+  "vitola": "2000",
+  "format": "43 x 127mm",
+  "country": "Dominikana",
+  "wrapper": "Ecuador Connecticut",
+  "strength": 1,
+  "body": 2,
+  "flavorTags": [
+   "kremasto",
+   "orasasti",
+   "cedar",
+   "citrus"
+  ],
+  "smokeTimeMin": 45,
+  "priceEUR": 11.8,
+  "priceApprox": false,
+  "availabilityHR": [
+   "Havana Shop",
+   "The Humidor"
+  ],
+  "notes": {
+   "hr": "Klasični blagi Davidoff — besprijekorna izrada, kremast i čist.",
+   "en": "Classic mild Davidoff — flawless construction, creamy and clean."
   },
-  {
-    "id": "cig-davidoff-signature",
-    "brand": "Davidoff",
-    "line": "Signature",
-    "vitola": "Signature 2000 (corona)",
-    "format": "43 x 128mm",
-    "country": "Dominikana",
-    "wrapper": "Ecuador Connecticut",
-    "strength": 1,
-    "body": 2,
-    "flavorTags": [
-      "kremasto",
-      "orasasti",
-      "cedar",
-      "citrus"
-    ],
+  "markets": [
+   "HR",
+   "EU",
+   "USA",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "Ambassadrice",
+    "format": "26 x 114mm",
+    "smokeTimeMin": 35,
+    "priceEUR": 11.8,
+    "url": "https://humidor.hr/en/proizvod/davidoff-signature-ambassadrice-4-1-2-x-26/"
+   },
+   {
+    "name": "1000",
+    "format": "34 x 114mm",
     "smokeTimeMin": 40,
-    "priceEUR": 18,
-    "priceApprox": true,
-    "availabilityHR": [
-      "Havana Shop"
-    ],
-    "notes": {
-      "hr": "Klasični blagi Davidoff — besprijekorna izrada, kremast i čist.",
-      "en": "Classic mild Davidoff — flawless construction, creamy and clean."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ]
+    "priceEUR": 13.2,
+    "url": "https://humidor.hr/en/proizvod/davidoff-signature-1000-4-1-2-x-34/"
+   },
+   {
+    "name": "2000",
+    "format": "43 x 127mm",
+    "smokeTimeMin": 45,
+    "priceEUR": 18.0,
+    "url": "https://humidor.hr/en/proizvod/davidoff-signature-2000-5-x-43/"
+   },
+   {
+    "name": "2000 Tubos",
+    "format": "43 x 127mm",
+    "smokeTimeMin": 45,
+    "priceEUR": 21.6,
+    "url": "https://humidor.hr/en/proizvod/davidoff-signature-2000-tubos/"
+   }
+  ],
+  "priceUrl": "https://humidor.hr/en/proizvod/davidoff-signature-ambassadrice-4-1-2-x-26/"
+ },
+ {
+  "id": "cig-davidoff-grand-cru",
+  "brand": "Davidoff",
+  "line": "Grand Cru",
+  "vitola": "No.2",
+  "format": "43 x 143mm",
+  "country": "Dominikana",
+  "wrapper": "Ecuador Connecticut",
+  "strength": 2,
+  "body": 2,
+  "flavorTags": [
+   "kremasto",
+   "orasasti",
+   "med",
+   "drvo"
+  ],
+  "smokeTimeMin": 50,
+  "priceEUR": 20,
+  "priceApprox": true,
+  "availabilityHR": [
+   "Havana Shop"
+  ],
+  "notes": {
+   "hr": "Sofisticirana blaga linija — orašasti plemeniti profil.",
+   "en": "Sophisticated mild line — noble nutty profile."
   },
-  {
-    "id": "cig-davidoff-grand-cru",
-    "brand": "Davidoff",
-    "line": "Grand Cru",
-    "vitola": "Grand Cru No.3 (petit corona)",
+  "markets": [
+   "HR",
+   "EU",
+   "USA",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "No.3",
     "format": "42 x 127mm",
-    "country": "Dominikana",
-    "wrapper": "Ecuador Connecticut",
-    "strength": 2,
-    "body": 2,
-    "flavorTags": [
-      "kremasto",
-      "orasasti",
-      "med",
-      "drvo"
-    ],
-    "smokeTimeMin": 40,
-    "priceEUR": 20,
-    "priceApprox": true,
-    "availabilityHR": [
-      "Havana Shop"
-    ],
-    "notes": {
-      "hr": "Sofisticirana blaga linija — orašasti plemeniti profil.",
-      "en": "Sophisticated mild line — noble nutty profile."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ]
+    "smokeTimeMin": 45,
+    "priceEUR": null,
+    "url": null
+   },
+   {
+    "name": "No.2",
+    "format": "43 x 143mm",
+    "smokeTimeMin": 50,
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceUrl": "https://havana-cigar-shop.com/en/product-brand/davidoff/"
+ },
+ {
+  "id": "cig-davidoff-aniversario",
+  "brand": "Davidoff",
+  "line": "Aniversario",
+  "vitola": "Special R",
+  "format": "50 x 124mm",
+  "country": "Dominikana",
+  "wrapper": "Ecuador Connecticut",
+  "strength": 2,
+  "body": 3,
+  "flavorTags": [
+   "kremasto",
+   "med",
+   "orasasti",
+   "cedar",
+   "kava"
+  ],
+  "smokeTimeMin": 45,
+  "priceEUR": 32,
+  "priceApprox": true,
+  "availabilityHR": [
+   "Havana Shop"
+  ],
+  "notes": {
+   "hr": "Luksuzni blagi robusto — klasičan pairing s konjakom i starijim rumom.",
+   "en": "Luxury mild robusto — classic pairing with cognac and aged rum."
   },
-  {
-    "id": "cig-davidoff-aniversario",
-    "brand": "Davidoff",
-    "line": "Aniversario",
-    "vitola": "Special R (robusto)",
+  "markets": [
+   "HR",
+   "EU",
+   "USA",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "Entreacto",
+    "format": "43 x 89mm",
+    "smokeTimeMin": 30,
+    "priceEUR": null,
+    "url": null
+   },
+   {
+    "name": "Special R",
     "format": "50 x 124mm",
-    "country": "Dominikana",
-    "wrapper": "Ecuador Connecticut",
-    "strength": 2,
-    "body": 3,
-    "flavorTags": [
-      "kremasto",
-      "med",
-      "orasasti",
-      "cedar",
-      "kava"
-    ],
-    "smokeTimeMin": 55,
-    "priceEUR": 32,
-    "priceApprox": true,
-    "availabilityHR": [
-      "Havana Shop"
-    ],
-    "notes": {
-      "hr": "Luksuzni blagi robusto — klasičan pairing s konjakom i starijim rumom.",
-      "en": "Luxury mild robusto — classic pairing with cognac and aged rum."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ]
-  },
-  {
-    "id": "cig-davidoff-nicaragua",
-    "brand": "Davidoff",
-    "line": "Nicaragua",
-    "vitola": "Robusto",
-    "format": "50 x 127mm",
-    "country": "Nikaragva",
-    "wrapper": "Habano Ecuador (rosado)",
-    "strength": 3,
-    "body": 4,
-    "flavorTags": [
-      "kakao",
-      "kava",
-      "papar",
-      "citrus",
-      "zemljano"
-    ],
-    "smokeTimeMin": 55,
-    "priceEUR": 25,
-    "priceApprox": true,
-    "availabilityHR": [
-      "Havana Shop"
-    ],
-    "notes": {
-      "hr": "Davidoff preciznost + nikaragvanski temperament — kakao, papar, slatko-gorka kava.",
-      "en": "Davidoff precision + Nicaraguan temperament — cocoa, pepper, bittersweet coffee."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ]
-  },
-  {
-    "id": "cig-davidoff-winston-churchill",
-    "brand": "Davidoff",
-    "line": "Winston Churchill / Late Hour",
-    "vitola": "The Late Hour Robusto",
-    "format": "52 x 124mm",
-    "country": "Dominikana",
-    "wrapper": "Habano Ecuador (Late Hour: scotch-cask fermentiran duhan)",
-    "strength": 3,
-    "body": 4,
-    "flavorTags": [
-      "kava",
-      "tamno-voce",
-      "zacini",
-      "dim",
-      "kakao"
-    ],
-    "smokeTimeMin": 55,
-    "priceEUR": 28,
-    "priceApprox": true,
-    "availabilityHR": [
-      "Havana Shop"
-    ],
-    "notes": {
-      "hr": "Late Hour koristi duhan odležan u scotch bačvama — rođen za pairing s whiskyjem.",
-      "en": "Late Hour uses scotch-cask-aged tobacco — born for whisky pairing."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ]
-  },
-  {
-    "id": "cig-zino-nicaragua",
-    "brand": "Zino",
-    "line": "Nicaragua",
-    "vitola": "Toro",
-    "format": "50 x 152mm",
-    "country": "Nikaragva",
-    "wrapper": "Habano Ecuador",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [
-      "kakao",
-      "zacini",
-      "drvo",
-      "karamela"
-    ],
-    "smokeTimeMin": 65,
-    "priceEUR": 12,
-    "priceApprox": true,
-    "availabilityHR": [
-      "Havana Shop"
-    ],
-    "notes": {
-      "hr": "Pristupačniji Davidoff brend — moderan nikaragvanski profil po razumnoj cijeni.",
-      "en": "Davidoff's accessible brand — modern Nicaraguan profile at a fair price."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ]
-  },
-  {
-    "id": "cig-arturo-fuente-gran-reserva",
-    "brand": "Arturo Fuente",
-    "line": "Gran Reserva",
-    "vitola": "Flor Fina 8-5-8",
-    "format": "47 x 152mm",
-    "country": "Dominikana",
-    "wrapper": "Cameroon",
-    "strength": 2,
-    "body": 3,
-    "flavorTags": [
-      "cedar",
-      "zacini-slatki",
-      "orasasti",
-      "koza",
-      "karamela"
-    ],
-    "smokeTimeMin": 60,
-    "priceEUR": 14,
-    "priceApprox": true,
-    "availabilityHR": [
-      "Havana Shop"
-    ],
-    "notes": {
-      "hr": "Dominikanski klasik s Cameroon wrapperom — slatkasti začini, cedar, elegancija.",
-      "en": "Dominican classic with Cameroon wrapper — sweet spice, cedar, elegance."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ]
-  },
-  {
-    "id": "cig-arturo-fuente-hemingway",
-    "brand": "Arturo Fuente",
-    "line": "Hemingway",
-    "vitola": "Short Story (perfecto)",
-    "format": "49 x 102mm",
-    "country": "Dominikana",
-    "wrapper": "Cameroon",
-    "strength": 2,
-    "body": 3,
-    "flavorTags": [
-      "cedar",
-      "zacini-slatki",
-      "karamela",
-      "orasasti",
-      "kava"
-    ],
-    "smokeTimeMin": 35,
-    "priceEUR": 15,
-    "priceApprox": true,
-    "availabilityHR": [
-      "Havana Shop"
-    ],
-    "notes": {
-      "hr": "Kultni mali perfecto — koncentrirana slatkoća Cameroon wrappera u 35 minuta.",
-      "en": "Cult small perfecto — concentrated Cameroon sweetness in 35 minutes."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ]
-  },
-  {
-    "id": "cig-oliva-serie-g",
-    "brand": "Oliva",
-    "line": "Serie G",
-    "vitola": "Robusto",
-    "format": "50 x 114mm",
-    "country": "Nikaragva",
-    "wrapper": "Cameroon",
-    "strength": 2,
-    "body": 3,
-    "flavorTags": [
-      "kava",
-      "orasasti",
-      "karamela",
-      "cedar"
-    ],
     "smokeTimeMin": 45,
-    "priceEUR": 9,
-    "priceApprox": true,
-    "availabilityHR": [
-      "Havana Shop"
-    ],
-    "notes": {
-      "hr": "Value legenda — blaga-srednja, kava i lješnjak, uvijek konzistentna.",
-      "en": "Value legend — mild-medium, coffee and hazelnut, always consistent."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ]
-  },
-  {
-    "id": "cig-oliva-serie-o",
-    "brand": "Oliva",
-    "line": "Serie O",
-    "vitola": "Robusto",
-    "format": "50 x 127mm",
-    "country": "Nikaragva",
-    "wrapper": "Habano (sun grown)",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [
-      "zemljano",
-      "zacini",
-      "kakao",
-      "drvo"
-    ],
-    "smokeTimeMin": 50,
-    "priceEUR": 10,
-    "priceApprox": true,
-    "availabilityHR": [
-      "Havana Shop"
-    ],
-    "notes": {
-      "hr": "Čisti nikaragvanski puro — zemljano-začinski, srednje tijelo.",
-      "en": "Pure Nicaraguan puro — earthy-spicy, medium body."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ]
-  },
-  {
-    "id": "cig-oliva-serie-v",
-    "brand": "Oliva",
-    "line": "Serie V / Melanio",
-    "vitola": "Melanio Robusto",
-    "format": "52 x 127mm",
-    "country": "Nikaragva",
-    "wrapper": "Sumatra (Melanio) / Habano (V)",
-    "strength": 4,
-    "body": 4,
-    "flavorTags": [
-      "kakao",
-      "kava",
-      "karamela",
-      "zacini",
-      "koza"
-    ],
+    "priceEUR": null,
+    "url": null
+   },
+   {
+    "name": "No.3",
+    "format": "50 x 152mm",
     "smokeTimeMin": 55,
-    "priceEUR": 16,
-    "priceApprox": true,
-    "availabilityHR": [
-      "Havana Shop"
-    ],
-    "notes": {
-      "hr": "Nagrađivana puna linija — Melanio je bio Cigar of the Year. Bogato, slatko-začinsko.",
-      "en": "Awarded full line — Melanio was Cigar of the Year. Rich, sweet-spicy."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ]
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceUrl": "https://havana-cigar-shop.com/en/product-brand/davidoff/"
+ },
+ {
+  "id": "cig-davidoff-nicaragua",
+  "brand": "Davidoff",
+  "line": "Nicaragua",
+  "vitola": "Toro",
+  "format": "54 x 140mm",
+  "country": "Nikaragva",
+  "wrapper": "Habano Ecuador (rosado)",
+  "strength": 3,
+  "body": 4,
+  "flavorTags": [
+   "kakao",
+   "kava",
+   "papar",
+   "citrus",
+   "zemljano"
+  ],
+  "smokeTimeMin": 55,
+  "priceEUR": 26.0,
+  "priceApprox": false,
+  "availabilityHR": [
+   "Havana Shop",
+   "The Humidor"
+  ],
+  "notes": {
+   "hr": "Davidoff preciznost + nikaragvanski temperament — kakao, papar, slatko-gorka kava.",
+   "en": "Davidoff precision + Nicaraguan temperament — cocoa, pepper, bittersweet coffee."
   },
-  {
-    "id": "cig-joya-de-nicaragua-antano",
-    "brand": "Joya de Nicaragua",
-    "line": "Antaño 1970",
-    "vitola": "Robusto Grande",
+  "markets": [
+   "HR",
+   "EU",
+   "USA",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "Robusto Tubos",
+    "format": "50 x 127mm",
+    "smokeTimeMin": 50,
+    "priceEUR": 26.1,
+    "url": "https://humidor.hr/en/proizvod/davidoff-nicaragua-robusto-tubos-5-x-50/"
+   },
+   {
+    "name": "Toro",
+    "format": "54 x 140mm",
+    "smokeTimeMin": 55,
+    "priceEUR": 26.0,
+    "url": "https://humidor.hr/en/proizvod/davidoff-nicaragua-toro-5-1-2-x-54/"
+   }
+  ],
+  "priceUrl": "https://humidor.hr/en/proizvod/davidoff-nicaragua-toro-5-1-2-x-54/"
+ },
+ {
+  "id": "cig-davidoff-winston-churchill",
+  "brand": "Davidoff",
+  "line": "Winston Churchill / Late Hour",
+  "vitola": "Churchill",
+  "format": "48 x 178mm",
+  "country": "Dominikana",
+  "wrapper": "Habano Ecuador (Late Hour: scotch-cask fermentiran duhan)",
+  "strength": 3,
+  "body": 4,
+  "flavorTags": [
+   "kava",
+   "tamno-voce",
+   "zacini",
+   "dim",
+   "kakao"
+  ],
+  "smokeTimeMin": 65,
+  "priceEUR": 28.6,
+  "priceApprox": false,
+  "availabilityHR": [
+   "Havana Shop",
+   "The Humidor"
+  ],
+  "notes": {
+   "hr": "Late Hour koristi duhan odležan u scotch bačvama — rođen za pairing s whiskyjem.",
+   "en": "Late Hour uses scotch-cask-aged tobacco — born for whisky pairing."
+  },
+  "markets": [
+   "HR",
+   "EU",
+   "USA",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "Robusto",
+    "format": "52 x 127mm",
+    "smokeTimeMin": 50,
+    "priceEUR": 28.6,
+    "url": "https://humidor.hr/en/proizvod/davidoff-wsc-the-late-hour-robusto-5-x-52/"
+   },
+   {
+    "name": "Churchill",
+    "format": "48 x 178mm",
+    "smokeTimeMin": 65,
+    "priceEUR": 31.8,
+    "url": "https://humidor.hr/en/proizvod/davidoff-wsc-the-late-hour-churchill-7-x-48/"
+   }
+  ],
+  "priceUrl": "https://humidor.hr/en/proizvod/davidoff-wsc-the-late-hour-robusto-5-x-52/"
+ },
+ {
+  "id": "cig-zino-nicaragua",
+  "brand": "Zino",
+  "line": "Nicaragua",
+  "vitola": "Toro",
+  "format": "50 x 152mm",
+  "country": "Nikaragva",
+  "wrapper": "Habano Ecuador",
+  "strength": 3,
+  "body": 3,
+  "flavorTags": [
+   "kakao",
+   "zacini",
+   "drvo",
+   "karamela"
+  ],
+  "smokeTimeMin": 65,
+  "priceEUR": 12,
+  "priceApprox": true,
+  "availabilityHR": [
+   "Havana Shop"
+  ],
+  "notes": {
+   "hr": "Pristupačniji Davidoff brend — moderan nikaragvanski profil po razumnoj cijeni.",
+   "en": "Davidoff's accessible brand — modern Nicaraguan profile at a fair price."
+  },
+  "markets": [
+   "HR",
+   "EU",
+   "USA",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "Toro",
+    "format": "50 x 152mm",
+    "smokeTimeMin": 65,
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceUrl": "https://havana-cigar-shop.com/en/product-brand/zino/"
+ },
+ {
+  "id": "cig-arturo-fuente-gran-reserva",
+  "brand": "Arturo Fuente",
+  "line": "Gran Reserva",
+  "vitola": "Cuban Corona",
+  "format": "45 x 133mm",
+  "country": "Dominikana",
+  "wrapper": "Cameroon",
+  "strength": 2,
+  "body": 3,
+  "flavorTags": [
+   "cedar",
+   "zacini-slatki",
+   "orasasti",
+   "koza",
+   "karamela"
+  ],
+  "smokeTimeMin": 50,
+  "priceEUR": 12.3,
+  "priceApprox": false,
+  "availabilityHR": [
+   "Havana Shop",
+   "The Humidor"
+  ],
+  "notes": {
+   "hr": "Dominikanski klasik s Cameroon wrapperom — slatkasti začini, cedar, elegancija.",
+   "en": "Dominican classic with Cameroon wrapper — sweet spice, cedar, elegance."
+  },
+  "markets": [
+   "HR",
+   "EU",
+   "USA",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "Cuban Corona",
+    "format": "45 x 133mm",
+    "smokeTimeMin": 50,
+    "priceEUR": 12.3,
+    "url": "https://humidor.hr/en/proizvod/arturo-fuente-cuban-corona-25/"
+   }
+  ],
+  "priceUrl": "https://humidor.hr/en/proizvod/arturo-fuente-cuban-corona-25/"
+ },
+ {
+  "id": "cig-arturo-fuente-hemingway",
+  "brand": "Arturo Fuente",
+  "line": "Hemingway",
+  "vitola": "Signature",
+  "format": "46 x 152mm",
+  "country": "Dominikana",
+  "wrapper": "Cameroon",
+  "strength": 2,
+  "body": 3,
+  "flavorTags": [
+   "cedar",
+   "zacini-slatki",
+   "karamela",
+   "orasasti",
+   "kava"
+  ],
+  "smokeTimeMin": 55,
+  "priceEUR": 20.5,
+  "priceApprox": false,
+  "availabilityHR": [
+   "Havana Shop",
+   "The Humidor"
+  ],
+  "notes": {
+   "hr": "Kultni mali perfecto — koncentrirana slatkoća Cameroon wrappera u 35 minuta.",
+   "en": "Cult small perfecto — concentrated Cameroon sweetness in 35 minutes."
+  },
+  "markets": [
+   "HR",
+   "EU",
+   "USA",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "Signature",
+    "format": "46 x 152mm",
+    "smokeTimeMin": 55,
+    "priceEUR": 20.5,
+    "url": "https://humidor.hr/en/proizvod/arturo-fuente-hemingway-signuture-25/"
+   }
+  ],
+  "priceUrl": "https://humidor.hr/en/proizvod/arturo-fuente-hemingway-signuture-25/"
+ },
+ {
+  "id": "cig-oliva-serie-g",
+  "brand": "Oliva",
+  "line": "Serie G",
+  "vitola": "Double Robusto",
+  "format": "54 x 127mm",
+  "country": "Nikaragva",
+  "wrapper": "Cameroon",
+  "strength": 2,
+  "body": 3,
+  "flavorTags": [
+   "kava",
+   "orasasti",
+   "karamela",
+   "cedar"
+  ],
+  "smokeTimeMin": 50,
+  "priceEUR": 8.3,
+  "priceApprox": false,
+  "availabilityHR": [
+   "Havana Shop",
+   "The Humidor"
+  ],
+  "notes": {
+   "hr": "Value legenda — blaga-srednja, kava i lješnjak, uvijek konzistentna.",
+   "en": "Value legend — mild-medium, coffee and hazelnut, always consistent."
+  },
+  "markets": [
+   "HR",
+   "EU",
+   "USA",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "Double Robusto",
+    "format": "54 x 127mm",
+    "smokeTimeMin": 50,
+    "priceEUR": 8.3,
+    "url": "https://humidor.hr/en/proizvod/oliva-serie-g-double-robusto-5-x-54/"
+   }
+  ],
+  "priceUrl": "https://humidor.hr/en/proizvod/oliva-serie-g-double-robusto-5-x-54/"
+ },
+ {
+  "id": "cig-oliva-serie-o",
+  "brand": "Oliva",
+  "line": "Serie O",
+  "vitola": "Tubos",
+  "format": "50 x 152mm",
+  "country": "Nikaragva",
+  "wrapper": "Habano (sun grown)",
+  "strength": 3,
+  "body": 3,
+  "flavorTags": [
+   "zemljano",
+   "zacini",
+   "kakao",
+   "drvo"
+  ],
+  "smokeTimeMin": 55,
+  "priceEUR": 9.2,
+  "priceApprox": false,
+  "availabilityHR": [
+   "Havana Shop",
+   "The Humidor"
+  ],
+  "notes": {
+   "hr": "Čisti nikaragvanski puro — zemljano-začinski, srednje tijelo.",
+   "en": "Pure Nicaraguan puro — earthy-spicy, medium body."
+  },
+  "markets": [
+   "HR",
+   "EU",
+   "USA",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "Robusto",
+    "format": "50 x 127mm",
+    "smokeTimeMin": 50,
+    "priceEUR": 9.2,
+    "url": "https://humidor.hr/en/proizvod/oliva-serie-o-robusto-5-x-50/"
+   },
+   {
+    "name": "Tubos",
+    "format": "50 x 152mm",
+    "smokeTimeMin": 55,
+    "priceEUR": 13.4,
+    "url": "https://humidor.hr/en/proizvod/oliva-serie-o-tubos-6-x-50/"
+   }
+  ],
+  "priceUrl": "https://humidor.hr/en/proizvod/oliva-serie-o-robusto-5-x-50/"
+ },
+ {
+  "id": "cig-oliva-serie-v",
+  "brand": "Oliva",
+  "line": "Serie V / Melanio",
+  "vitola": "Torpedo",
+  "format": "56 x 152mm",
+  "country": "Nikaragva",
+  "wrapper": "Sumatra (Melanio) / Habano (V)",
+  "strength": 4,
+  "body": 4,
+  "flavorTags": [
+   "kakao",
+   "kava",
+   "karamela",
+   "zacini",
+   "koza"
+  ],
+  "smokeTimeMin": 60,
+  "priceEUR": 15.2,
+  "priceApprox": false,
+  "availabilityHR": [
+   "Havana Shop",
+   "The Humidor"
+  ],
+  "notes": {
+   "hr": "Nagrađivana puna linija — Melanio je bio Cigar of the Year. Bogato, slatko-začinsko.",
+   "en": "Awarded full line — Melanio was Cigar of the Year. Rich, sweet-spicy."
+  },
+  "markets": [
+   "HR",
+   "EU",
+   "USA",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "Torpedo",
+    "format": "56 x 152mm",
+    "smokeTimeMin": 60,
+    "priceEUR": 15.2,
+    "url": "https://humidor.hr/en/proizvod/oliva-serie-v-torpedo-6-x-56/"
+   }
+  ],
+  "priceUrl": "https://humidor.hr/en/proizvod/oliva-serie-v-torpedo-6-x-56/"
+ },
+ {
+  "id": "cig-joya-de-nicaragua-antano",
+  "brand": "Joya de Nicaragua",
+  "line": "Antaño 1970",
+  "vitola": "Robusto Grande",
+  "format": "52 x 121mm",
+  "country": "Nikaragva",
+  "wrapper": "Habano (criollo)",
+  "strength": 5,
+  "body": 5,
+  "flavorTags": [
+   "papar",
+   "zemljano",
+   "koza",
+   "kakao",
+   "dim"
+  ],
+  "smokeTimeMin": 45,
+  "priceEUR": 12,
+  "priceApprox": true,
+  "availabilityHR": [
+   "Havana Shop"
+  ],
+  "notes": {
+   "hr": "Nikaragvanska snaga stare škole — papar i zemlja, ne za početnike. Traži overproof rum.",
+   "en": "Old-school Nicaraguan power — pepper and earth, not for beginners. Demands overproof rum."
+  },
+  "markets": [
+   "HR",
+   "EU",
+   "USA",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "Machito",
+    "format": "50 x 121mm",
+    "smokeTimeMin": 45,
+    "priceEUR": null,
+    "url": null
+   },
+   {
+    "name": "Robusto Grande",
     "format": "52 x 121mm",
-    "country": "Nikaragva",
-    "wrapper": "Habano (criollo)",
-    "strength": 5,
-    "body": 5,
-    "flavorTags": [
-      "papar",
-      "zemljano",
-      "koza",
-      "kakao",
-      "dim"
-    ],
-    "smokeTimeMin": 55,
-    "priceEUR": 12,
-    "priceApprox": true,
-    "availabilityHR": [
-      "Havana Shop"
-    ],
-    "notes": {
-      "hr": "Nikaragvanska snaga stare škole — papar i zemlja, ne za početnike. Traži overproof rum.",
-      "en": "Old-school Nicaraguan power — pepper and earth, not for beginners. Demands overproof rum."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ]
-  },
-  {
-    "id": "cig-joya-red",
-    "brand": "Joya de Nicaragua",
-    "line": "JOYA Red / Cabinetta",
-    "vitola": "Red Robusto",
-    "format": "50 x 127mm",
-    "country": "Nikaragva",
-    "wrapper": "Habano Ecuador",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [
-      "zacini",
-      "kremasto",
-      "citrus",
-      "drvo"
-    ],
+    "smokeTimeMin": 45,
+    "priceEUR": null,
+    "url": null
+   },
+   {
+    "name": "Gran Cónsul",
+    "format": "60 x 121mm",
     "smokeTimeMin": 50,
-    "priceEUR": 9,
-    "priceApprox": true,
-    "availabilityHR": [
-      "Havana Shop"
-    ],
-    "notes": {
-      "hr": "Moderniji, pitkiji JdN — začinsko-kremast, pristupačan.",
-      "en": "Modern, approachable JdN — spicy-creamy, easy-going."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ]
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceUrl": "https://havana-cigar-shop.com/en/product-brand/joya-de-nicaragua/"
+ },
+ {
+  "id": "cig-joya-red",
+  "brand": "Joya de Nicaragua",
+  "line": "JOYA Red / Cabinetta",
+  "vitola": "Toro",
+  "format": "52 x 152mm",
+  "country": "Nikaragva",
+  "wrapper": "Habano Ecuador",
+  "strength": 3,
+  "body": 3,
+  "flavorTags": [
+   "zacini",
+   "kremasto",
+   "citrus",
+   "drvo"
+  ],
+  "smokeTimeMin": 60,
+  "priceEUR": 9,
+  "priceApprox": true,
+  "availabilityHR": [
+   "Havana Shop"
+  ],
+  "notes": {
+   "hr": "Moderniji, pitkiji JdN — začinsko-kremast, pristupačan.",
+   "en": "Modern, approachable JdN — spicy-creamy, easy-going."
   },
-  {
-    "id": "cig-camacho-corojo",
-    "brand": "Camacho",
-    "line": "Corojo",
-    "vitola": "Robusto",
+  "markets": [
+   "HR",
+   "EU",
+   "USA",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "Robusto",
     "format": "50 x 127mm",
-    "country": "Honduras",
-    "wrapper": "Corojo (Honduras)",
-    "strength": 4,
-    "body": 4,
-    "flavorTags": [
-      "papar",
-      "zemljano",
-      "drvo",
-      "citrus"
-    ],
     "smokeTimeMin": 50,
-    "priceEUR": 12,
-    "priceApprox": true,
-    "availabilityHR": [
-      "Havana Shop"
-    ],
-    "notes": {
-      "hr": "Honduraška snaga — papreno, intenzivno, bold brend Davidoff grupe.",
-      "en": "Honduran punch — peppery, intense, Davidoff group's bold brand."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ]
-  },
-  {
-    "id": "cig-camacho-connecticut",
-    "brand": "Camacho",
-    "line": "Connecticut",
-    "vitola": "Robusto",
-    "format": "50 x 127mm",
-    "country": "Honduras",
-    "wrapper": "Ecuador Connecticut",
-    "strength": 2,
-    "body": 3,
-    "flavorTags": [
-      "kremasto",
-      "cedar",
-      "med",
-      "papar"
-    ],
-    "smokeTimeMin": 50,
-    "priceEUR": 11,
-    "priceApprox": true,
-    "availabilityHR": [
-      "Havana Shop"
-    ],
-    "notes": {
-      "hr": "Blaža strana Camacha — kremasto s laganim paprom u pozadini.",
-      "en": "Camacho's milder side — creamy with light background pepper."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ]
-  },
-  {
-    "id": "cig-plasencia-alma-fuerte",
-    "brand": "Plasencia",
-    "line": "Alma Fuerte",
-    "vitola": "Sixto I (hexagon)",
-    "format": "54 x 152mm",
-    "country": "Nikaragva",
-    "wrapper": "Nicaragua (Colorado Claro)",
-    "strength": 4,
-    "body": 5,
-    "flavorTags": [
-      "kakao",
-      "tamno-voce",
-      "zacini",
-      "zemljano",
-      "karamela"
-    ],
-    "smokeTimeMin": 75,
-    "priceEUR": 25,
-    "priceApprox": true,
-    "availabilityHR": [
-      "Havana Shop"
-    ],
-    "notes": {
-      "hr": "Premium nikaragvanski puro obitelji Plasencia — bogat, taman, kompleksan.",
-      "en": "Premium Nicaraguan puro from the Plasencia family — rich, dark, complex."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ]
-  },
-  {
-    "id": "cig-plasencia-alma-del-campo",
-    "brand": "Plasencia",
-    "line": "Alma del Campo / Reserva Original",
-    "vitola": "Tribu (toro)",
+    "priceEUR": null,
+    "url": null
+   },
+   {
+    "name": "Toro",
     "format": "52 x 152mm",
-    "country": "Nikaragva",
-    "wrapper": "Nicaragua",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [
-      "zemljano",
-      "citrus",
-      "drvo",
-      "kremasto"
-    ],
-    "smokeTimeMin": 65,
-    "priceEUR": 18,
-    "priceApprox": true,
-    "availabilityHR": [
-      "Havana Shop"
-    ],
-    "notes": {
-      "hr": "Srednja Plasencia linija — organski duhan, svjetliji zemljani profil.",
-      "en": "Plasencia's medium line — organic tobacco, brighter earthy profile."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ]
+    "smokeTimeMin": 60,
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceUrl": "https://havana-cigar-shop.com/en/product-brand/joya-de-nicaragua/"
+ },
+ {
+  "id": "cig-camacho-corojo",
+  "brand": "Camacho",
+  "line": "Corojo",
+  "vitola": "Machitos",
+  "format": "32 x 102mm",
+  "country": "Honduras",
+  "wrapper": "Corojo (Honduras)",
+  "strength": 4,
+  "body": 4,
+  "flavorTags": [
+   "papar",
+   "zemljano",
+   "drvo",
+   "citrus"
+  ],
+  "smokeTimeMin": 35,
+  "priceEUR": 4.6,
+  "priceApprox": false,
+  "availabilityHR": [
+   "Havana Shop",
+   "The Humidor"
+  ],
+  "notes": {
+   "hr": "Honduraška snaga — papreno, intenzivno, bold brend Davidoff grupe.",
+   "en": "Honduran punch — peppery, intense, Davidoff group's bold brand."
   },
-  {
-    "id": "cig-ep-carrillo-new-wave",
-    "brand": "E.P. Carrillo",
-    "line": "New Wave Connecticut",
-    "vitola": "Divinos",
-    "format": "52 x 127mm",
-    "country": "Dominikana",
-    "wrapper": "Ecuador Connecticut",
-    "strength": 2,
-    "body": 2,
-    "flavorTags": [
-      "kremasto",
-      "orasasti",
-      "trava-slatka",
-      "med"
-    ],
-    "smokeTimeMin": 50,
-    "priceEUR": 10,
-    "priceApprox": true,
-    "availabilityHR": [
-      "Havana Shop"
-    ],
-    "notes": {
-      "hr": "Uglađena blaga linija majstora Ernesta Pereza-Carrilla.",
-      "en": "Polished mild line from master blender Ernesto Perez-Carrillo."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ]
-  },
-  {
-    "id": "cig-ep-carrillo-pledge",
-    "brand": "E.P. Carrillo",
-    "line": "Pledge / Encore",
-    "vitola": "Pledge Prequel (robusto)",
-    "format": "50 x 127mm",
-    "country": "SAD/Nikaragva",
-    "wrapper": "Connecticut Broadleaf (Pledge)",
-    "strength": 4,
-    "body": 4,
-    "flavorTags": [
-      "kakao",
-      "zacini-slatki",
-      "zemljano",
-      "kava",
-      "tamno-voce"
-    ],
-    "smokeTimeMin": 55,
-    "priceEUR": 16,
-    "priceApprox": true,
-    "availabilityHR": [
-      "Havana Shop"
-    ],
-    "notes": {
-      "hr": "Pledge = Cigar of the Year 2020 — tamna slatkoća broadleafa, punije tijelo.",
-      "en": "Pledge = Cigar of the Year 2020 — dark broadleaf sweetness, fuller body."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ]
-  },
-  {
-    "id": "cig-nub-connecticut",
-    "brand": "Nub",
-    "line": "Connecticut 460",
-    "vitola": "460",
-    "format": "60 x 102mm",
-    "country": "Nikaragva",
-    "wrapper": "Ecuador Connecticut",
-    "strength": 2,
-    "body": 3,
-    "flavorTags": [
-      "kremasto",
-      "orasasti",
-      "kava",
-      "med"
-    ],
-    "smokeTimeMin": 45,
-    "priceEUR": 10,
-    "priceApprox": true,
-    "availabilityHR": [
-      "Havana Shop"
-    ],
-    "notes": {
-      "hr": "Kratko i debelo — 'sweet spot' cigare od prve minute. Kremasta verzija.",
-      "en": "Short and fat — the cigar's sweet spot from minute one. Creamy version."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ]
-  },
-  {
-    "id": "cig-nub-maduro",
-    "brand": "Nub",
-    "line": "Maduro 460",
-    "vitola": "460",
-    "format": "60 x 102mm",
-    "country": "Nikaragva",
-    "wrapper": "Brazil Maduro",
-    "strength": 3,
-    "body": 4,
-    "flavorTags": [
-      "kakao",
-      "kava",
-      "slatko",
-      "zemljano"
-    ],
-    "smokeTimeMin": 45,
-    "priceEUR": 11,
-    "priceApprox": true,
-    "availabilityHR": [
-      "Havana Shop"
-    ],
-    "notes": {
-      "hr": "Maduro verzija — čokolada i espresso, prirodna slatkoća.",
-      "en": "Maduro version — chocolate and espresso, natural sweetness."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ]
-  },
-  {
-    "id": "cig-oscar-valladares-2012",
-    "brand": "Oscar Valladares",
-    "line": "2012 / The Oscar",
-    "vitola": "Toro",
-    "format": "52 x 152mm",
-    "country": "Honduras",
-    "wrapper": "Corojo / Maduro",
-    "strength": 3,
-    "body": 4,
-    "flavorTags": [
-      "zacini-slatki",
-      "kakao",
-      "zemljano",
-      "kava"
-    ],
-    "smokeTimeMin": 65,
-    "priceEUR": 14,
-    "priceApprox": true,
-    "availabilityHR": [
-      "Havana Shop"
-    ],
-    "notes": {
-      "hr": "Honduraška boutique zvijezda — slatko-začinski, moderan profil.",
-      "en": "Honduran boutique star — sweet-spicy, modern profile."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ]
-  },
-  {
-    "id": "cig-flor-de-selva",
-    "brand": "Flor de Selva",
-    "line": "Clásica",
-    "vitola": "Robusto",
-    "format": "50 x 120mm",
-    "country": "Honduras",
-    "wrapper": "Habano (Honduras)",
-    "strength": 2,
-    "body": 3,
-    "flavorTags": [
-      "cedar",
-      "med",
-      "orasasti",
-      "cvjetno"
-    ],
-    "smokeTimeMin": 50,
-    "priceEUR": 11,
-    "priceApprox": true,
-    "availabilityHR": [
-      "Havana Shop"
-    ],
-    "notes": {
-      "hr": "Honduraška elegancija (Maya Selva) — mekana, medena, francuski stil.",
-      "en": "Honduran elegance (Maya Selva) — soft, honeyed, French style."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ]
-  },
-  {
-    "id": "cig-villa-zamorano",
-    "brand": "Villa Zamorano",
-    "line": "Reserva",
-    "vitola": "Robusto",
-    "format": "50 x 127mm",
-    "country": "Honduras",
-    "wrapper": "Habano (Honduras)",
-    "strength": 2,
-    "body": 3,
-    "flavorTags": [
-      "drvo",
-      "zemljano",
-      "karamela"
-    ],
-    "smokeTimeMin": 45,
-    "priceEUR": 7,
-    "priceApprox": true,
-    "availabilityHR": [
-      "Havana Shop"
-    ],
-    "notes": {
-      "hr": "Honduraški value — pošten, blag-srednji dnevni dim.",
-      "en": "Honduran value — honest mild-medium daily smoke."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ]
-  },
-  {
-    "id": "cig-cumpay",
-    "brand": "Cumpay",
-    "line": "Cumpay",
-    "vitola": "Short (robusto)",
-    "format": "50 x 102mm",
-    "country": "Nikaragva",
-    "wrapper": "Nicaragua",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [
-      "zemljano",
-      "kakao",
-      "drvo"
-    ],
+  "markets": [
+   "HR",
+   "EU",
+   "USA",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "Machitos",
+    "format": "32 x 102mm",
     "smokeTimeMin": 35,
-    "priceEUR": 8,
-    "priceApprox": true,
-    "availabilityHR": [
-      "Havana Shop"
-    ],
-    "notes": {
-      "hr": "Nikaragvanski brend Maye Selve — tamniji, zemljaniji od Flor de Selve.",
-      "en": "Maya Selva's Nicaraguan brand — darker, earthier than Flor de Selva."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ]
+    "priceEUR": 4.6,
+    "url": "https://humidor.hr/en/proizvod/camacho-corojo-machitos-4-x-32/"
+   }
+  ],
+  "priceUrl": "https://humidor.hr/en/proizvod/camacho-corojo-machitos-4-x-32/"
+ },
+ {
+  "id": "cig-camacho-connecticut",
+  "brand": "Camacho",
+  "line": "Connecticut",
+  "vitola": "Toro",
+  "format": "60 x 152mm",
+  "country": "Honduras",
+  "wrapper": "Ecuador Connecticut",
+  "strength": 2,
+  "body": 3,
+  "flavorTags": [
+   "kremasto",
+   "cedar",
+   "med",
+   "papar"
+  ],
+  "smokeTimeMin": 60,
+  "priceEUR": 11.4,
+  "priceApprox": false,
+  "availabilityHR": [
+   "Havana Shop",
+   "The Humidor"
+  ],
+  "notes": {
+   "hr": "Blaža strana Camacha — kremasto s laganim paprom u pozadini.",
+   "en": "Camacho's milder side — creamy with light background pepper."
   },
-  {
-    "id": "cig-cusano",
-    "brand": "Cusano",
-    "line": "18 / Dominican",
-    "vitola": "Robusto",
+  "markets": [
+   "HR",
+   "EU",
+   "USA",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "Robusto",
     "format": "50 x 127mm",
-    "country": "Dominikana",
-    "wrapper": "Connecticut Shade",
-    "strength": 1,
-    "body": 2,
-    "flavorTags": [
-      "kremasto",
-      "orasasti",
-      "trava-slatka"
-    ],
-    "smokeTimeMin": 45,
-    "priceEUR": 8,
-    "priceApprox": true,
-    "availabilityHR": [
-      "Havana Shop"
-    ],
-    "notes": {
-      "hr": "Blagi dominikanac — mekan, kremast, bez drame.",
-      "en": "Mild Dominican — soft, creamy, drama-free."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ]
-  },
-  {
-    "id": "cig-casa-1910",
-    "brand": "Casa 1910",
-    "line": "Cuchillo Parado",
-    "vitola": "Toro",
-    "format": "50 x 152mm",
-    "country": "Meksiko",
-    "wrapper": "San Andrés (Meksiko)",
-    "strength": 3,
-    "body": 4,
-    "flavorTags": [
-      "kakao",
-      "zemljano",
-      "zacini",
-      "kava",
-      "koza"
-    ],
-    "smokeTimeMin": 65,
-    "priceEUR": 16,
-    "priceApprox": true,
-    "availabilityHR": [
-      "Havana Shop"
-    ],
-    "notes": {
-      "hr": "Meksički puro sa San Andrés duhanom — tamno, zemljano-čokoladno.",
-      "en": "Mexican puro with San Andrés tobacco — dark, earthy-chocolatey."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ]
-  },
-  {
-    "id": "cig-aj-fernandez-new-world",
-    "brand": "AJ Fernandez",
-    "line": "New World",
-    "vitola": "Robusto / Decenio",
-    "format": "50 x 140mm",
-    "country": "Nikaragva",
-    "wrapper": "Nicaragua Oscuro",
-    "strength": 4,
-    "body": 4,
-    "flavorTags": [
-      "kakao",
-      "papar",
-      "zemljano",
-      "karamela",
-      "kava"
-    ],
-    "smokeTimeMin": 55,
-    "priceEUR": 13,
-    "priceApprox": true,
-    "availabilityHR": [
-      "The Humidor"
-    ],
-    "notes": {
-      "hr": "Nagrađivani value blend — oscuro wrapper, tamno i bogato za male novce.",
-      "en": "Awarded value blend — oscuro wrapper, dark and rich for little money."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ]
-  },
-  {
-    "id": "cig-aj-fernandez-dias-de-gloria",
-    "brand": "AJ Fernandez",
-    "line": "Días de Gloria",
-    "vitola": "Robusto",
-    "format": "52 x 127mm",
-    "country": "Nikaragva",
-    "wrapper": "Habano (Nicaragua)",
-    "strength": 4,
-    "body": 5,
-    "flavorTags": [
-      "zemljano",
-      "papar",
-      "kakao",
-      "koza",
-      "dim"
-    ],
-    "smokeTimeMin": 55,
-    "priceEUR": 17,
-    "priceApprox": true,
-    "availabilityHR": [
-      "The Humidor"
-    ],
-    "notes": {
-      "hr": "Punokrvni nikaragvanski puro — snaga i dubina, za jaka pića.",
-      "en": "Full-blooded Nicaraguan puro — power and depth, for strong drinks."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ]
-  },
-  {
-    "id": "cig-eiroa-cbt-maduro",
-    "brand": "Eiroa",
-    "line": "CBT Maduro / 20 Years",
-    "vitola": "Robusto",
-    "format": "50 x 127mm",
-    "country": "Honduras",
-    "wrapper": "Honduras Maduro (Capa-Binder-Tripa maduro)",
-    "strength": 4,
-    "body": 5,
-    "flavorTags": [
-      "kakao",
-      "kava",
-      "slatko",
-      "zemljano",
-      "tamno-voce"
-    ],
-    "smokeTimeMin": 55,
-    "priceEUR": 20,
-    "priceApprox": true,
-    "availabilityHR": [
-      "The Humidor"
-    ],
-    "notes": {
-      "hr": "All-maduro puro obitelji Eiroa (Camacho osnivači) — desertno taman, moćan.",
-      "en": "All-maduro puro from the Eiroa family (Camacho founders) — dessert-dark, mighty."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ]
-  },
-  {
-    "id": "cig-eiroa-classic",
-    "brand": "Eiroa",
-    "line": "Classic / Colorado",
-    "vitola": "Robusto",
-    "format": "50 x 127mm",
-    "country": "Honduras",
-    "wrapper": "Honduras Colorado",
-    "strength": 3,
-    "body": 4,
-    "flavorTags": [
-      "karamela",
-      "cedar",
-      "zacini",
-      "kremasto"
-    ],
-    "smokeTimeMin": 55,
-    "priceEUR": 18,
-    "priceApprox": true,
-    "availabilityHR": [
-      "The Humidor"
-    ],
-    "notes": {
-      "hr": "Svjetlija Eiroa — karamelno-začinska, honduraška klasika.",
-      "en": "Brighter Eiroa — caramel-spice, Honduran classic."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ]
-  },
-  {
-    "id": "cig-la-galera-85th",
-    "brand": "La Galera",
-    "line": "85th Anniversary / Habano",
-    "vitola": "Robusto",
-    "format": "50 x 127mm",
-    "country": "Dominikana",
-    "wrapper": "Habano Ecuador",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [
-      "cedar",
-      "zacini",
-      "med",
-      "orasasti"
-    ],
     "smokeTimeMin": 50,
-    "priceEUR": 13,
-    "priceApprox": true,
-    "availabilityHR": [
-      "The Humidor"
-    ],
-    "notes": {
-      "hr": "Tradicionalna dominikanska fabrika (Tabacalera Palma) — uravnotežen, aromatičan.",
-      "en": "Traditional Dominican factory (Tabacalera Palma) — balanced, aromatic."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ]
+    "priceEUR": 11.4,
+    "url": "https://humidor.hr/en/proizvod/camacho-connecticut-robusto-5-x-50/"
+   },
+   {
+    "name": "Toro",
+    "format": "60 x 152mm",
+    "smokeTimeMin": 60,
+    "priceEUR": 15.4,
+    "url": "https://humidor.hr/en/proizvod/camacho-connecticut-6-x-60/"
+   }
+  ],
+  "priceUrl": "https://humidor.hr/en/proizvod/camacho-connecticut-robusto-5-x-50/"
+ },
+ {
+  "id": "cig-plasencia-alma-fuerte",
+  "brand": "Plasencia",
+  "line": "Alma Fuerte",
+  "vitola": "Sixto II Hexagon",
+  "format": "60 x 152mm",
+  "country": "Nikaragva",
+  "wrapper": "Nicaragua (Colorado Claro)",
+  "strength": 4,
+  "body": 5,
+  "flavorTags": [
+   "kakao",
+   "tamno-voce",
+   "zacini",
+   "zemljano",
+   "karamela"
+  ],
+  "smokeTimeMin": 60,
+  "priceEUR": 21.5,
+  "priceApprox": false,
+  "availabilityHR": [
+   "Havana Shop",
+   "The Humidor"
+  ],
+  "notes": {
+   "hr": "Premium nikaragvanski puro obitelji Plasencia — bogat, taman, kompleksan.",
+   "en": "Premium Nicaraguan puro from the Plasencia family — rich, dark, complex."
   },
-  {
-    "id": "cig-eladio-diaz",
-    "brand": "Eladio Diaz",
-    "line": "La Diana / Anniversary",
-    "vitola": "Toro",
-    "format": "52 x 152mm",
-    "country": "Dominikana",
-    "wrapper": "Habano / Maduro",
-    "strength": 3,
-    "body": 4,
-    "flavorTags": [
-      "kakao",
-      "zacini",
-      "suho-voce",
-      "kava"
-    ],
-    "smokeTimeMin": 65,
-    "priceEUR": 20,
-    "priceApprox": true,
-    "availabilityHR": [
-      "The Humidor"
-    ],
-    "notes": {
-      "hr": "Blendovi legendarnog Davidoff majstora — dominikanska dubina.",
-      "en": "Blends from the legendary Davidoff master blender — Dominican depth."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ]
+  "markets": [
+   "HR",
+   "EU",
+   "USA",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "Sixto II Hexagon",
+    "format": "60 x 152mm",
+    "smokeTimeMin": 60,
+    "priceEUR": 21.5,
+    "url": "https://humidor.hr/en/proizvod/plasencia-alma-fuerte-sixto-ii-hexagon-6-x-60/"
+   }
+  ],
+  "priceUrl": "https://humidor.hr/en/proizvod/plasencia-alma-fuerte-sixto-ii-hexagon-6-x-60/"
+ },
+ {
+  "id": "cig-plasencia-alma-del-campo",
+  "brand": "Plasencia",
+  "line": "Alma del Campo / Reserva Original",
+  "vitola": "Sendero Toro Gordo",
+  "format": "56 x 152mm",
+  "country": "Nikaragva",
+  "wrapper": "Nicaragua",
+  "strength": 3,
+  "body": 3,
+  "flavorTags": [
+   "zemljano",
+   "citrus",
+   "drvo",
+   "kremasto"
+  ],
+  "smokeTimeMin": 60,
+  "priceEUR": 16.6,
+  "priceApprox": false,
+  "availabilityHR": [
+   "Havana Shop",
+   "The Humidor"
+  ],
+  "notes": {
+   "hr": "Srednja Plasencia linija — organski duhan, svjetliji zemljani profil.",
+   "en": "Plasencia's medium line — organic tobacco, brighter earthy profile."
   },
-  {
-    "id": "cig-viva-la-vida-connecticut",
-    "brand": "Viva La Vida",
-    "line": "Connecticut",
-    "vitola": "Robusto",
-    "format": "50 x 127mm",
-    "country": "Nikaragva",
-    "wrapper": "Ecuador Connecticut",
-    "strength": 2,
-    "body": 3,
-    "flavorTags": [
-      "kremasto",
-      "med",
-      "cedar",
-      "kava"
-    ],
+  "markets": [
+   "HR",
+   "EU",
+   "USA",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "Guajiro Robusto Gordo",
+    "format": "54 x 140mm",
+    "smokeTimeMin": 55,
+    "priceEUR": 16.6,
+    "url": "https://humidor.hr/en/proizvod/plasencia-alma-del-campo-guajiro-robusto-gordo-5-1-2-x-54/"
+   },
+   {
+    "name": "Sendero Toro Gordo",
+    "format": "56 x 152mm",
+    "smokeTimeMin": 60,
+    "priceEUR": 17.7,
+    "url": "https://humidor.hr/en/proizvod/plasencia-alma-del-campo-sendero-toro-gordo-6-x-56/"
+   }
+  ],
+  "priceUrl": "https://humidor.hr/en/proizvod/plasencia-alma-del-campo-guajiro-robusto-gordo-5-1-2-x-54/"
+ },
+ {
+  "id": "cig-ep-carrillo-new-wave",
+  "brand": "E.P. Carrillo",
+  "line": "New Wave Connecticut",
+  "vitola": "Divinos",
+  "format": "52 x 127mm",
+  "country": "Dominikana",
+  "wrapper": "Ecuador Connecticut",
+  "strength": 2,
+  "body": 2,
+  "flavorTags": [
+   "kremasto",
+   "orasasti",
+   "trava-slatka",
+   "med"
+  ],
+  "smokeTimeMin": 50,
+  "priceEUR": 10,
+  "priceApprox": true,
+  "availabilityHR": [
+   "Havana Shop"
+  ],
+  "notes": {
+   "hr": "Uglađena blaga linija majstora Ernesta Pereza-Carrilla.",
+   "en": "Polished mild line from master blender Ernesto Perez-Carrillo."
+  },
+  "markets": [
+   "HR",
+   "EU",
+   "USA",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "Divinos",
+    "format": "52 x 127mm",
     "smokeTimeMin": 50,
-    "priceEUR": 13,
-    "priceApprox": true,
-    "availabilityHR": [
-      "The Humidor"
-    ],
-    "notes": {
-      "hr": "Blaža verzija boutique brenda (Artesano del Tobacco).",
-      "en": "Milder version of the boutique brand (Artesano del Tobacco)."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ]
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceUrl": "https://havana-cigar-shop.com/en/product-brand/e-p-carrillo/"
+ },
+ {
+  "id": "cig-ep-carrillo-pledge",
+  "brand": "E.P. Carrillo",
+  "line": "Pledge / Encore",
+  "vitola": "Pledge Prequel (robusto)",
+  "format": "50 x 127mm",
+  "country": "SAD/Nikaragva",
+  "wrapper": "Connecticut Broadleaf (Pledge)",
+  "strength": 4,
+  "body": 4,
+  "flavorTags": [
+   "kakao",
+   "zacini-slatki",
+   "zemljano",
+   "kava",
+   "tamno-voce"
+  ],
+  "smokeTimeMin": 55,
+  "priceEUR": 16,
+  "priceApprox": true,
+  "availabilityHR": [
+   "Havana Shop"
+  ],
+  "notes": {
+   "hr": "Pledge = Cigar of the Year 2020 — tamna slatkoća broadleafa, punije tijelo.",
+   "en": "Pledge = Cigar of the Year 2020 — dark broadleaf sweetness, fuller body."
   },
-  {
-    "id": "cig-viva-la-vida",
-    "brand": "Viva La Vida",
-    "line": "Original",
-    "vitola": "Robusto",
-    "format": "52 x 127mm",
-    "country": "Nikaragva",
-    "wrapper": "Habano Oscuro",
-    "strength": 4,
-    "body": 4,
-    "flavorTags": [
-      "papar",
-      "kakao",
-      "zemljano",
-      "karamela"
-    ],
-    "smokeTimeMin": 55,
-    "priceEUR": 15,
-    "priceApprox": true,
-    "availabilityHR": [
-      "The Humidor"
-    ],
-    "notes": {
-      "hr": "Punija nikaragvanska boutique cigara — papreno-slatka.",
-      "en": "Fuller Nicaraguan boutique smoke — peppery-sweet."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ]
-  },
-  {
-    "id": "cig-el-pulpo",
-    "brand": "El Pulpo",
-    "line": "El Pulpo",
-    "vitola": "Robusto Grande / Toro Grande",
-    "format": "52-56 x 127-152mm",
-    "country": "Nikaragva",
-    "wrapper": "Habano Maduro",
-    "strength": 4,
-    "body": 4,
-    "flavorTags": [
-      "kakao",
-      "zemljano",
-      "zacini",
-      "kava"
-    ],
-    "smokeTimeMin": 60,
-    "priceEUR": 16,
-    "priceApprox": true,
-    "availabilityHR": [
-      "The Humidor"
-    ],
-    "notes": {
-      "hr": "Boutique linija u više formata (uklj. culebra kuriozitet) — tamna i bogata.",
-      "en": "Boutique line in many formats (incl. culebra curiosity) — dark and rich."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ]
-  },
-  {
-    "id": "cig-padron-2000",
-    "brand": "Padrón",
-    "line": "Core (2000/3000)",
-    "vitola": "3000 (robusto ext.)",
-    "format": "52 x 140mm",
-    "country": "Nikaragva",
-    "wrapper": "Maduro / Natural",
-    "strength": 3,
-    "body": 4,
-    "flavorTags": [
-      "kakao",
-      "kava",
-      "zemljano",
-      "orasasti"
-    ],
-    "smokeTimeMin": 60,
-    "priceEUR": 9,
-    "priceApprox": true,
-    "markets": [
-      "USA",
-      "EU",
-      "WW"
-    ],
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Legendarni value — nikaragvanski kakao i kava, uvijek savršena izrada.",
-      "en": "Legendary value — Nicaraguan cocoa and coffee, flawless construction every time."
-    }
-  },
-  {
-    "id": "cig-padron-1964",
-    "brand": "Padrón",
-    "line": "1964 Anniversary",
-    "vitola": "Exclusivo (robusto)",
-    "format": "50 x 140mm",
-    "country": "Nikaragva",
-    "wrapper": "Maduro (sun grown)",
-    "strength": 4,
-    "body": 4,
-    "flavorTags": [
-      "kakao",
-      "kava",
-      "karamela",
-      "zacini",
-      "zemljano"
-    ],
-    "smokeTimeMin": 65,
-    "priceEUR": 22,
-    "priceApprox": true,
-    "markets": [
-      "USA",
-      "EU",
-      "WW"
-    ],
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Mjerilo za maduro kategoriju — kakao, espresso, savršena ravnoteža.",
-      "en": "The benchmark maduro — cocoa, espresso, perfect balance."
-    }
-  },
-  {
-    "id": "cig-padron-1926",
-    "brand": "Padrón",
-    "line": "1926 Serie",
-    "vitola": "No.9 (robusto ext.)",
-    "format": "56 x 133mm",
-    "country": "Nikaragva",
-    "wrapper": "Maduro",
-    "strength": 5,
-    "body": 5,
-    "flavorTags": [
-      "kakao",
-      "kava",
-      "papar",
-      "tamno-voce",
-      "koza"
-    ],
-    "smokeTimeMin": 70,
-    "priceEUR": 30,
-    "priceApprox": true,
-    "markets": [
-      "USA",
-      "WW"
-    ],
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Vrh Padróna — puna snaga i dubina, cigara za najjača pića.",
-      "en": "Padrón's summit — full power and depth, a cigar for the strongest drinks."
-    }
-  },
-  {
-    "id": "cig-my-father-le-bijou",
-    "brand": "My Father",
-    "line": "Le Bijou 1922",
-    "vitola": "Toro",
-    "format": "54 x 152mm",
-    "country": "Nikaragva",
-    "wrapper": "Habano Oscuro",
-    "strength": 4,
-    "body": 5,
-    "flavorTags": [
-      "kakao",
-      "papar",
-      "zemljano",
-      "karamela"
-    ],
-    "smokeTimeMin": 70,
-    "priceEUR": 15,
-    "priceApprox": true,
-    "markets": [
-      "USA",
-      "EU",
-      "WW"
-    ],
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Cigar of the Year 2015 — tamna, moćna, slatko-paprena.",
-      "en": "Cigar of the Year 2015 — dark, mighty, sweet-peppery."
-    }
-  },
-  {
-    "id": "cig-my-father-flor-antillas",
-    "brand": "My Father",
-    "line": "Flor de las Antillas",
-    "vitola": "Toro",
-    "format": "52 x 152mm",
-    "country": "Nikaragva",
-    "wrapper": "Habano (sun grown rosado)",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [
-      "zacini-slatki",
-      "cedar",
-      "karamela",
-      "cvjetno"
-    ],
-    "smokeTimeMin": 65,
-    "priceEUR": 11,
-    "priceApprox": true,
-    "markets": [
-      "USA",
-      "EU",
-      "WW"
-    ],
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Cigar of the Year 2012 — uglađena srednja snaga, slatki začini.",
-      "en": "Cigar of the Year 2012 — polished medium strength, sweet spice."
-    }
-  },
-  {
-    "id": "cig-liga-privada-no9",
-    "brand": "Drew Estate",
-    "line": "Liga Privada No.9",
-    "vitola": "Robusto",
-    "format": "52 x 127mm",
-    "country": "Nikaragva",
-    "wrapper": "Connecticut Broadleaf Oscuro",
-    "strength": 4,
-    "body": 5,
-    "flavorTags": [
-      "kakao",
-      "kava",
-      "zemljano",
-      "koza",
-      "dim"
-    ],
-    "smokeTimeMin": 60,
-    "priceEUR": 18,
-    "priceApprox": true,
-    "markets": [
-      "USA",
-      "WW"
-    ],
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Kultni tamni broadleaf — gust, uljast dim; traži espresso ili tamni rum.",
-      "en": "Cult dark broadleaf — dense oily smoke; calls for espresso or dark rum."
-    }
-  },
-  {
-    "id": "cig-undercrown-maduro",
-    "brand": "Drew Estate",
-    "line": "Undercrown Maduro",
-    "vitola": "Robusto",
-    "format": "52 x 127mm",
-    "country": "Nikaragva",
-    "wrapper": "Mexican San Andrés Maduro",
-    "strength": 3,
-    "body": 4,
-    "flavorTags": [
-      "kakao",
-      "kava",
-      "slatko",
-      "zemljano"
-    ],
-    "smokeTimeMin": 55,
-    "priceEUR": 10,
-    "priceApprox": true,
-    "markets": [
-      "USA",
-      "EU",
-      "WW"
-    ],
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Pristupačnija Liga alternativa — čokoladni San Andrés.",
-      "en": "The accessible Liga alternative — chocolatey San Andrés."
-    }
-  },
-  {
-    "id": "cig-undercrown-shade",
-    "brand": "Drew Estate",
-    "line": "Undercrown Shade",
-    "vitola": "Robusto",
-    "format": "52 x 127mm",
-    "country": "Nikaragva",
-    "wrapper": "Ecuador Connecticut",
-    "strength": 2,
-    "body": 3,
-    "flavorTags": [
-      "kremasto",
-      "med",
-      "cedar",
-      "citrus"
-    ],
-    "smokeTimeMin": 55,
-    "priceEUR": 10,
-    "priceApprox": true,
-    "markets": [
-      "USA",
-      "EU",
-      "WW"
-    ],
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Kremasta shade verzija — blaga ali s karakterom.",
-      "en": "Creamy shade version — mild but with character."
-    }
-  },
-  {
-    "id": "cig-tatuaje-havana-vi",
-    "brand": "Tatuaje",
-    "line": "Havana VI / Miami",
-    "vitola": "Nobles (robusto)",
+  "markets": [
+   "HR",
+   "EU",
+   "USA",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "Pledge Prequel (robusto)",
     "format": "50 x 127mm",
-    "country": "Nikaragva",
-    "wrapper": "Ecuador Habano",
-    "strength": 3,
-    "body": 4,
-    "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "zemljano"
-    ],
     "smokeTimeMin": 55,
-    "priceEUR": 12,
-    "priceApprox": true,
-    "markets": [
-      "USA",
-      "WW"
-    ],
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Kubanski stil iz Nikaragve — boutique klasik Petea Johnsona.",
-      "en": "Cuban style from Nicaragua — Pete Johnson's boutique classic."
-    }
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceUrl": "https://havana-cigar-shop.com/en/product-brand/e-p-carrillo/"
+ },
+ {
+  "id": "cig-nub-connecticut",
+  "brand": "Nub",
+  "line": "Connecticut 460",
+  "vitola": "60 RG",
+  "format": "60 x 102mm",
+  "country": "Nikaragva",
+  "wrapper": "Ecuador Connecticut",
+  "strength": 2,
+  "body": 3,
+  "flavorTags": [
+   "kremasto",
+   "orasasti",
+   "kava",
+   "med"
+  ],
+  "smokeTimeMin": 40,
+  "priceEUR": 10.2,
+  "priceApprox": false,
+  "availabilityHR": [
+   "Havana Shop",
+   "The Humidor"
+  ],
+  "notes": {
+   "hr": "Kratko i debelo — 'sweet spot' cigare od prve minute. Kremasta verzija.",
+   "en": "Short and fat — the cigar's sweet spot from minute one. Creamy version."
   },
-  {
-    "id": "cig-ashton-classic",
-    "brand": "Ashton",
-    "line": "Classic",
-    "vitola": "Magnum (robusto)",
-    "format": "50 x 127mm",
-    "country": "Dominikana",
-    "wrapper": "Connecticut Shade",
-    "strength": 1,
-    "body": 2,
-    "flavorTags": [
-      "kremasto",
-      "orasasti",
-      "med",
-      "cedar"
-    ],
-    "smokeTimeMin": 55,
-    "priceEUR": 12,
-    "priceApprox": true,
-    "markets": [
-      "USA",
-      "EU",
-      "WW"
-    ],
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Američki Connecticut standard (radi Fuente) — maslac i orasi.",
-      "en": "The American Connecticut standard (made by Fuente) — butter and nuts."
-    }
-  },
-  {
-    "id": "cig-ashton-vsg",
-    "brand": "Ashton",
-    "line": "VSG (Virgin Sun Grown)",
-    "vitola": "Robusto",
-    "format": "50 x 140mm",
-    "country": "Dominikana",
-    "wrapper": "Ecuador Sun Grown",
-    "strength": 4,
-    "body": 5,
-    "flavorTags": [
-      "zemljano",
-      "zacini",
-      "koza",
-      "tamno-voce"
-    ],
-    "smokeTimeMin": 60,
-    "priceEUR": 16,
-    "priceApprox": true,
-    "markets": [
-      "USA",
-      "WW"
-    ],
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Puna snaga Ashtona — zemljano-začinska bomba.",
-      "en": "Ashton at full power — an earthy-spicy bomb."
-    }
-  },
-  {
-    "id": "cig-fuente-opus-x",
-    "brand": "Arturo Fuente",
-    "line": "Opus X",
-    "vitola": "Robusto",
-    "format": "50 x 133mm",
-    "country": "Dominikana",
-    "wrapper": "Dominican Rosado (Chateau de la Fuente)",
-    "strength": 5,
-    "body": 5,
-    "flavorTags": [
-      "zacini",
-      "cedar",
-      "citrus",
-      "koza",
-      "cvjetno"
-    ],
-    "smokeTimeMin": 65,
-    "priceEUR": 35,
-    "priceApprox": true,
-    "markets": [
-      "USA",
-      "WW"
-    ],
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Prvi dominikanski puro — kultni, začinski, teško nabavljiv.",
-      "en": "The first Dominican puro — cult status, spicy, hard to find."
-    }
-  },
-  {
-    "id": "cig-perdomo-20th-maduro",
-    "brand": "Perdomo",
-    "line": "20th Anniversary Maduro",
-    "vitola": "Epicure (toro)",
-    "format": "54 x 152mm",
-    "country": "Nikaragva",
-    "wrapper": "Nicaragua Maduro (bourbon barrel aged)",
-    "strength": 3,
-    "body": 4,
-    "flavorTags": [
-      "kakao",
-      "karamela",
-      "kava",
-      "hrast"
-    ],
-    "smokeTimeMin": 70,
-    "priceEUR": 12,
-    "priceApprox": true,
-    "markets": [
-      "USA",
-      "EU",
-      "WW"
-    ],
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Wrapper odležan u bourbon bačvama — rođen za bourbon pairing.",
-      "en": "Wrapper aged in bourbon barrels — born for bourbon pairing."
-    }
-  },
-  {
-    "id": "cig-perdomo-champagne",
-    "brand": "Perdomo",
-    "line": "10th Anniversary Champagne",
-    "vitola": "Robusto",
-    "format": "50 x 127mm",
-    "country": "Nikaragva",
-    "wrapper": "Ecuador Connecticut",
-    "strength": 2,
-    "body": 3,
-    "flavorTags": [
-      "kremasto",
-      "med",
-      "vanilija",
-      "orasasti"
-    ],
-    "smokeTimeMin": 55,
-    "priceEUR": 10,
-    "priceApprox": true,
-    "markets": [
-      "USA",
-      "EU",
-      "WW"
-    ],
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Kremasto-medeni value Connecticut.",
-      "en": "Creamy-honeyed value Connecticut."
-    }
-  },
-  {
-    "id": "cig-rocky-patel-decade",
-    "brand": "Rocky Patel",
-    "line": "Decade",
-    "vitola": "Robusto",
-    "format": "50 x 127mm",
-    "country": "Honduras",
-    "wrapper": "Ecuador Sumatra",
-    "strength": 4,
-    "body": 4,
-    "flavorTags": [
-      "zemljano",
-      "kakao",
-      "zacini",
-      "koza"
-    ],
-    "smokeTimeMin": 55,
-    "priceEUR": 13,
-    "priceApprox": true,
-    "markets": [
-      "USA",
-      "EU",
-      "WW"
-    ],
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Najbolji RP blend — bogat, tamno-začinski.",
-      "en": "Rocky Patel's best blend — rich, dark-spiced."
-    }
-  },
-  {
-    "id": "cig-rocky-patel-vintage-1990",
-    "brand": "Rocky Patel",
-    "line": "Vintage 1990/1992",
-    "vitola": "Robusto",
-    "format": "50 x 140mm",
-    "country": "Honduras",
-    "wrapper": "Broadleaf (1990) / Sumatra (1992)",
-    "strength": 2,
-    "body": 3,
-    "flavorTags": [
-      "cedar",
-      "karamela",
-      "orasasti",
-      "kava"
-    ],
-    "smokeTimeMin": 55,
-    "priceEUR": 11,
-    "priceApprox": true,
-    "markets": [
-      "USA",
-      "EU",
-      "WW"
-    ],
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Odležani wrapper (12+ god) — mekano, zaobljeno iskustvo.",
-      "en": "Aged wrapper (12+ yrs) — a soft, rounded experience."
-    }
-  },
-  {
-    "id": "cig-cao-brazilia",
-    "brand": "CAO",
-    "line": "Brazilia",
-    "vitola": "Gol! (robusto ext.)",
-    "format": "56 x 127mm",
-    "country": "Nikaragva",
-    "wrapper": "Brazil Arapiraca Maduro",
-    "strength": 3,
-    "body": 4,
-    "flavorTags": [
-      "kakao",
-      "zemljano",
-      "slatko",
-      "kava"
-    ],
-    "smokeTimeMin": 60,
-    "priceEUR": 9,
-    "priceApprox": true,
-    "markets": [
-      "USA",
-      "EU",
-      "WW"
-    ],
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Brazilski maduro wrapper — tamno i slatkasto, odličan value.",
-      "en": "Brazilian maduro wrapper — dark and sweetish, great value."
-    }
-  },
-  {
-    "id": "cig-alec-bradley-prensado",
-    "brand": "Alec Bradley",
-    "line": "Prensado",
-    "vitola": "Robusto",
-    "format": "50 x 127mm",
-    "country": "Honduras",
-    "wrapper": "Honduras Corojo 2006",
-    "strength": 4,
-    "body": 4,
-    "flavorTags": [
-      "kakao",
-      "zacini",
-      "koza",
-      "zemljano"
-    ],
-    "smokeTimeMin": 55,
-    "priceEUR": 13,
-    "priceApprox": true,
-    "markets": [
-      "USA",
-      "EU",
-      "WW"
-    ],
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Cigar of the Year 2011 — honduraška dubina, box-pressed.",
-      "en": "Cigar of the Year 2011 — Honduran depth, box-pressed."
-    }
-  },
-  {
-    "id": "cig-crowned-heads-le-careme",
-    "brand": "Crowned Heads",
-    "line": "Le Carême",
-    "vitola": "Robusto",
-    "format": "50 x 127mm",
-    "country": "Nikaragva",
-    "wrapper": "Connecticut Broadleaf",
-    "strength": 3,
-    "body": 4,
-    "flavorTags": [
-      "kakao",
-      "slatko",
-      "kava",
-      "karamela"
-    ],
-    "smokeTimeMin": 55,
-    "priceEUR": 13,
-    "priceApprox": true,
-    "markets": [
-      "USA",
-      "WW"
-    ],
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Inspirirana čokoladnim sufleom — desertna maduro cigara.",
-      "en": "Inspired by chocolate soufflé — a dessert maduro."
-    }
-  },
-  {
-    "id": "cig-foundation-tabernacle",
-    "brand": "Foundation",
-    "line": "Tabernacle",
-    "vitola": "Robusto",
-    "format": "50 x 127mm",
-    "country": "Nikaragva",
-    "wrapper": "Connecticut Broadleaf",
-    "strength": 5,
-    "body": 5,
-    "flavorTags": [
-      "zemljano",
-      "kakao",
-      "papar",
-      "koza",
-      "dim"
-    ],
-    "smokeTimeMin": 60,
-    "priceEUR": 14,
-    "priceApprox": true,
-    "markets": [
-      "USA",
-      "WW"
-    ],
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Tamna snaga Nicholasa Meloa — za overproof rum i Islay.",
-      "en": "Nicholas Melillo's dark power — for overproof rum and Islay."
-    }
-  },
-  {
-    "id": "cig-foundation-charter-oak",
-    "brand": "Foundation",
-    "line": "Charter Oak Shade",
-    "vitola": "Rothschild",
-    "format": "50 x 114mm",
-    "country": "Nikaragva",
-    "wrapper": "Connecticut Shade",
-    "strength": 2,
-    "body": 2,
-    "flavorTags": [
-      "kremasto",
-      "trava-slatka",
-      "med",
-      "orasasti"
-    ],
-    "smokeTimeMin": 45,
-    "priceEUR": 6,
-    "priceApprox": true,
-    "markets": [
-      "USA",
-      "WW"
-    ],
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Najbolji budget Connecticut u USA — blag, sladak, pošten.",
-      "en": "Best budget Connecticut in the USA — mild, sweet, honest."
-    }
-  },
-  {
-    "id": "cig-aganorsa-la-validacion",
-    "brand": "Aganorsa Leaf",
-    "line": "La Validación Corojo",
-    "vitola": "Robusto",
-    "format": "52 x 127mm",
-    "country": "Nikaragva",
-    "wrapper": "Corojo 99 (Aganorsa)",
-    "strength": 4,
-    "body": 4,
-    "flavorTags": [
-      "zacini-slatki",
-      "kremasto",
-      "cedar",
-      "papar"
-    ],
-    "smokeTimeMin": 55,
-    "priceEUR": 13,
-    "priceApprox": true,
-    "markets": [
-      "USA",
-      "WW"
-    ],
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Slavni Aganorsa duhan — slatko-začinski, kremast dim.",
-      "en": "Famed Aganorsa tobacco — sweet-spiced, creamy smoke."
-    }
-  },
-  {
-    "id": "cig-illusione-epernay",
-    "brand": "Illusione",
-    "line": "Epernay",
-    "vitola": "Le Petit (corona)",
-    "format": "44 x 114mm",
-    "country": "Nikaragva",
-    "wrapper": "Café Colorado (Corojo)",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [
-      "cedar",
-      "cvjetno",
-      "med",
-      "zacini"
-    ],
+  "markets": [
+   "HR",
+   "EU",
+   "USA",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "Tubos",
+    "format": "60 x 102mm",
     "smokeTimeMin": 40,
-    "priceEUR": 12,
-    "priceApprox": true,
-    "markets": [
-      "USA",
-      "WW"
-    ],
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Elegancija po uzoru na šampanjac — rafinirana, aromatična.",
-      "en": "Champagne-inspired elegance — refined, aromatic."
-    }
+    "priceEUR": 13.4,
+    "url": "https://humidor.hr/en/proizvod/nub-connecticut-tubos-4-x-60/"
+   },
+   {
+    "name": "60 RG",
+    "format": "60 x 102mm",
+    "smokeTimeMin": 40,
+    "priceEUR": 10.2,
+    "url": "https://humidor.hr/en/proizvod/nub-connecticut-24-1-4-x-60/"
+   }
+  ],
+  "priceUrl": "https://humidor.hr/en/proizvod/nub-connecticut-24-1-4-x-60/"
+ },
+ {
+  "id": "cig-nub-maduro",
+  "brand": "Nub",
+  "line": "Maduro 460",
+  "vitola": "460",
+  "format": "60 x 102mm",
+  "country": "Nikaragva",
+  "wrapper": "Brazil Maduro",
+  "strength": 3,
+  "body": 4,
+  "flavorTags": [
+   "kakao",
+   "kava",
+   "slatko",
+   "zemljano"
+  ],
+  "smokeTimeMin": 45,
+  "priceEUR": 11,
+  "priceApprox": true,
+  "availabilityHR": [
+   "Havana Shop"
+  ],
+  "notes": {
+   "hr": "Maduro verzija — čokolada i espresso, prirodna slatkoća.",
+   "en": "Maduro version — chocolate and espresso, natural sweetness."
   },
-  {
-    "id": "cig-warped-flor-del-valle",
-    "brand": "Warped",
-    "line": "Flor del Valle",
-    "vitola": "Gran Valle (robusto)",
-    "format": "52 x 127mm",
-    "country": "Nikaragva",
-    "wrapper": "Corojo 99",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [
-      "kremasto",
-      "citrus",
-      "cedar",
-      "med"
-    ],
-    "smokeTimeMin": 50,
-    "priceEUR": 12,
-    "priceApprox": true,
-    "markets": [
-      "USA",
-      "WW"
-    ],
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Kubanski stil stare škole — svijetao, kremast, boutique.",
-      "en": "Old-school Cuban style — bright, creamy, boutique."
-    }
-  },
-  {
-    "id": "cig-sobremesa",
-    "brand": "Dunbarton T&T",
-    "line": "Sobremesa",
-    "vitola": "Robusto Largo",
-    "format": "52 x 133mm",
-    "country": "Nikaragva",
-    "wrapper": "Ecuador Habano Rosado",
-    "strength": 3,
-    "body": 4,
-    "flavorTags": [
-      "karamela",
-      "zacini",
-      "kava",
-      "cedar"
-    ],
-    "smokeTimeMin": 60,
-    "priceEUR": 14,
-    "priceApprox": true,
-    "markets": [
-      "USA",
-      "WW"
-    ],
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Steve Saka remek-djelo — 'razgovor poslije večere' u cigari.",
-      "en": "Steve Saka's masterpiece — after-dinner conversation in a cigar."
-    }
-  },
-  {
-    "id": "cig-mi-querida",
-    "brand": "Dunbarton T&T",
-    "line": "Mi Querida",
-    "vitola": "Ancho Corta (robusto)",
-    "format": "52 x 121mm",
-    "country": "Nikaragva",
-    "wrapper": "Connecticut Broadleaf",
-    "strength": 4,
-    "body": 5,
-    "flavorTags": [
-      "kakao",
-      "zemljano",
-      "slatko",
-      "koza"
-    ],
-    "smokeTimeMin": 55,
-    "priceEUR": 12,
-    "priceApprox": true,
-    "markets": [
-      "USA",
-      "WW"
-    ],
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Broadleaf punog tijela — tamna slatkoća i zemlja.",
-      "en": "Full-bodied broadleaf — dark sweetness and earth."
-    }
-  },
-  {
-    "id": "cig-la-flor-dominicana-andalusian",
-    "brand": "La Flor Dominicana",
-    "line": "Andalusian Bull",
-    "vitola": "Figurado",
-    "format": "64 x 165mm",
-    "country": "Dominikana",
-    "wrapper": "Ecuador Corojo",
-    "strength": 5,
-    "body": 5,
-    "flavorTags": [
-      "papar",
-      "zacini",
-      "koza",
-      "kakao"
-    ],
-    "smokeTimeMin": 90,
-    "priceEUR": 18,
-    "priceApprox": true,
-    "markets": [
-      "USA",
-      "WW"
-    ],
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Cigar of the Year 2016 — golemi figurado pune snage.",
-      "en": "Cigar of the Year 2016 — a huge full-power figurado."
-    }
-  },
-  {
-    "id": "cig-macanudo-cafe",
-    "brand": "Macanudo",
-    "line": "Café",
-    "vitola": "Hyde Park (robusto)",
-    "format": "49 x 140mm",
-    "country": "Dominikana",
-    "wrapper": "Connecticut Shade (US)",
-    "strength": 1,
-    "body": 1,
-    "flavorTags": [
-      "kremasto",
-      "trava-slatka",
-      "orasasti"
-    ],
-    "smokeTimeMin": 50,
-    "priceEUR": 8,
-    "priceApprox": true,
-    "markets": [
-      "USA",
-      "EU",
-      "WW"
-    ],
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Najblaža poznata cigara — uz prvu jutarnju kavu.",
-      "en": "The mildest famous cigar — with the first morning coffee."
-    }
-  },
-  {
-    "id": "cig-romeo-1875",
-    "brand": "Romeo y Julieta (NW)",
-    "line": "1875 (Dominikana)",
-    "vitola": "Bully (robusto)",
-    "format": "50 x 127mm",
-    "country": "Dominikana",
-    "wrapper": "Indonesia TBN Shade",
-    "strength": 2,
-    "body": 2,
-    "flavorTags": [
-      "cedar",
-      "orasasti",
-      "med",
-      "zacini"
-    ],
-    "smokeTimeMin": 50,
-    "priceEUR": 8,
-    "priceApprox": true,
-    "markets": [
-      "USA",
-      "WW"
-    ],
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Ne-kubanska RyJ za američko tržište — blaga i pouzdana.",
-      "en": "The non-Cuban RyJ for the US market — mild and dependable."
-    }
-  },
-  {
-    "id": "cig-montecristo-white",
-    "brand": "Montecristo (NW)",
-    "line": "White Series (Dominikana)",
-    "vitola": "Robusto Grande",
-    "format": "52 x 127mm",
-    "country": "Dominikana",
-    "wrapper": "Ecuador Connecticut",
-    "strength": 2,
-    "body": 2,
-    "flavorTags": [
-      "kremasto",
-      "orasasti",
-      "vanilija",
-      "cedar"
-    ],
-    "smokeTimeMin": 55,
-    "priceEUR": 12,
-    "priceApprox": true,
-    "markets": [
-      "USA",
-      "WW"
-    ],
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Dominikanska Montecristo verzija — glatka, blaga, premium izrada.",
-      "en": "The Dominican Montecristo — smooth, mild, premium construction."
-    }
-  },
-  {
-    "id": "cig-vegafina-classic",
-    "brand": "VegaFina",
-    "line": "Classic / Fortaleza 2",
-    "vitola": "Robusto",
-    "format": "50 x 127mm",
-    "country": "Dominikana",
-    "wrapper": "Ecuador Connecticut",
-    "strength": 2,
-    "body": 2,
-    "flavorTags": [
-      "kremasto",
-      "cedar",
-      "orasasti",
-      "trava-slatka"
-    ],
-    "smokeTimeMin": 50,
-    "priceEUR": 7,
-    "priceApprox": true,
-    "markets": [
-      "HR",
-      "EU",
-      "WW"
-    ],
-    "availabilityHR": [
-      "trafike/iCigara"
-    ],
-    "notes": {
-      "hr": "Najrasprostranjenija blaga cigara u EU — dostupna i u HR trafikama.",
-      "en": "The most widespread mild cigar in the EU — available in Croatian tobacco shops."
-    }
-  },
-  {
-    "id": "cig-balmoral-anejo-xo",
-    "brand": "Balmoral",
-    "line": "Añejo XO",
-    "vitola": "Rothschild Masivo",
-    "format": "55 x 120mm",
-    "country": "Dominikana",
-    "wrapper": "Brazil Arapiraca",
-    "strength": 3,
-    "body": 4,
-    "flavorTags": [
-      "kakao",
-      "zacini",
-      "karamela",
-      "hrast"
-    ],
-    "smokeTimeMin": 55,
-    "priceEUR": 11,
-    "priceApprox": true,
-    "markets": [
-      "EU",
-      "WW"
-    ],
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Nizozemski premium (Royal Agio) — odležani blend, EU specijalitet.",
-      "en": "Dutch premium (Royal Agio) — aged blend, an EU speciality."
-    }
-  },
-  {
-    "id": "cig-flor-de-copan",
-    "brand": "Flor de Copán",
-    "line": "Classic",
-    "vitola": "Rothschild",
-    "format": "50 x 114mm",
-    "country": "Honduras",
-    "wrapper": "Habano (Honduras)",
-    "strength": 2,
-    "body": 3,
-    "flavorTags": [
-      "zemljano",
-      "cedar",
-      "karamela"
-    ],
+  "markets": [
+   "HR",
+   "EU",
+   "USA",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "460",
+    "format": "60 x 102mm",
     "smokeTimeMin": 45,
-    "priceEUR": 8,
-    "priceApprox": true,
-    "markets": [
-      "EU",
-      "WW"
-    ],
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Honduraška tradicija (Villiger) — blago-srednja, dostupna u EU.",
-      "en": "Honduran tradition (Villiger) — mild-medium, EU-available."
-    }
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceUrl": "https://havana-cigar-shop.com/en/product-brand/nub/"
+ },
+ {
+  "id": "cig-oscar-valladares-2012",
+  "brand": "Oscar Valladares",
+  "line": "2012 / The Oscar",
+  "vitola": "Toro",
+  "format": "52 x 152mm",
+  "country": "Honduras",
+  "wrapper": "Corojo / Maduro",
+  "strength": 3,
+  "body": 4,
+  "flavorTags": [
+   "zacini-slatki",
+   "kakao",
+   "zemljano",
+   "kava"
+  ],
+  "smokeTimeMin": 65,
+  "priceEUR": 14,
+  "priceApprox": true,
+  "availabilityHR": [
+   "Havana Shop"
+  ],
+  "notes": {
+   "hr": "Honduraška boutique zvijezda — slatko-začinski, moderan profil.",
+   "en": "Honduran boutique star — sweet-spicy, modern profile."
   },
-  {
-    "id": "cig-villiger-la-libertad",
-    "brand": "Villiger",
-    "line": "La Libertad",
-    "vitola": "Robusto",
-    "format": "50 x 127mm",
-    "country": "Dominikana",
-    "wrapper": "Ecuador Habano",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [
-      "zacini",
-      "cedar",
-      "kava",
-      "zemljano"
-    ],
-    "smokeTimeMin": 50,
-    "priceEUR": 7,
-    "priceApprox": true,
-    "markets": [
-      "EU",
-      "WW"
-    ],
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Švicarski brend, dominikanska izrada — value za EU tržište.",
-      "en": "Swiss brand, Dominican make — value for the EU market."
-    }
-  },
-  {
-    "id": "cig-joya-antano-gran-reserva",
-    "brand": "Joya de Nicaragua",
-    "line": "Antaño Gran Reserva",
-    "vitola": "Robusto Grande",
-    "format": "52 x 121mm",
-    "country": "Nikaragva",
-    "wrapper": "Habano (odležan 5 god)",
-    "strength": 4,
-    "body": 4,
-    "flavorTags": [
-      "kakao",
-      "koza",
-      "zemljano",
-      "karamela"
-    ],
-    "smokeTimeMin": 55,
-    "priceEUR": 14,
-    "priceApprox": true,
-    "markets": [
-      "USA",
-      "EU",
-      "WW"
-    ],
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Odležana verzija Antaña — zaobljenija snaga.",
-      "en": "The aged Antaño — power with rounder edges."
-    }
-  },
-  {
-    "id": "cig-oliva-serie-v-135",
-    "brand": "Oliva",
-    "line": "Serie V 135th Anniversary",
-    "vitola": "Perfecto",
+  "markets": [
+   "HR",
+   "EU",
+   "USA",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "Toro",
     "format": "52 x 152mm",
-    "country": "Nikaragva",
-    "wrapper": "Ecuador Sumatra",
-    "strength": 4,
-    "body": 4,
-    "flavorTags": [
-      "kakao",
-      "karamela",
-      "zacini",
-      "hrast"
-    ],
+    "smokeTimeMin": 65,
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceUrl": "https://havana-cigar-shop.com/en/product-brand/oscar-valladares/"
+ },
+ {
+  "id": "cig-flor-de-selva",
+  "brand": "Flor de Selva",
+  "line": "Clásica",
+  "vitola": "Robusto",
+  "format": "50 x 120mm",
+  "country": "Honduras",
+  "wrapper": "Habano (Honduras)",
+  "strength": 2,
+  "body": 3,
+  "flavorTags": [
+   "cedar",
+   "med",
+   "orasasti",
+   "cvjetno"
+  ],
+  "smokeTimeMin": 50,
+  "priceEUR": 11,
+  "priceApprox": true,
+  "availabilityHR": [
+   "Havana Shop"
+  ],
+  "notes": {
+   "hr": "Honduraška elegancija (Maya Selva) — mekana, medena, francuski stil.",
+   "en": "Honduran elegance (Maya Selva) — soft, honeyed, French style."
+  },
+  "markets": [
+   "HR",
+   "EU",
+   "USA",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "Robusto",
+    "format": "50 x 120mm",
+    "smokeTimeMin": 50,
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceUrl": "https://havana-cigar-shop.com/en/product-brand/flor-de-selva/"
+ },
+ {
+  "id": "cig-villa-zamorano",
+  "brand": "Villa Zamorano",
+  "line": "Reserva",
+  "vitola": "Robusto",
+  "format": "50 x 127mm",
+  "country": "Honduras",
+  "wrapper": "Habano (Honduras)",
+  "strength": 2,
+  "body": 3,
+  "flavorTags": [
+   "drvo",
+   "zemljano",
+   "karamela"
+  ],
+  "smokeTimeMin": 45,
+  "priceEUR": 7,
+  "priceApprox": true,
+  "availabilityHR": [
+   "Havana Shop"
+  ],
+  "notes": {
+   "hr": "Honduraški value — pošten, blag-srednji dnevni dim.",
+   "en": "Honduran value — honest mild-medium daily smoke."
+  },
+  "markets": [
+   "HR",
+   "EU",
+   "USA",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "Robusto",
+    "format": "50 x 127mm",
+    "smokeTimeMin": 45,
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceUrl": "https://havana-cigar-shop.com/en/product-brand/villa-zamorano/"
+ },
+ {
+  "id": "cig-cumpay",
+  "brand": "Cumpay",
+  "line": "Cumpay",
+  "vitola": "Short (robusto)",
+  "format": "50 x 102mm",
+  "country": "Nikaragva",
+  "wrapper": "Nicaragua",
+  "strength": 3,
+  "body": 3,
+  "flavorTags": [
+   "zemljano",
+   "kakao",
+   "drvo"
+  ],
+  "smokeTimeMin": 35,
+  "priceEUR": 8,
+  "priceApprox": true,
+  "availabilityHR": [
+   "Havana Shop"
+  ],
+  "notes": {
+   "hr": "Nikaragvanski brend Maye Selve — tamniji, zemljaniji od Flor de Selve.",
+   "en": "Maya Selva's Nicaraguan brand — darker, earthier than Flor de Selva."
+  },
+  "markets": [
+   "HR",
+   "EU",
+   "USA",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "Short (robusto)",
+    "format": "50 x 102mm",
+    "smokeTimeMin": 35,
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceUrl": "https://havana-cigar-shop.com/en/product-brand/cumpay/"
+ },
+ {
+  "id": "cig-cusano",
+  "brand": "Cusano",
+  "line": "18 / Dominican",
+  "vitola": "Robusto",
+  "format": "50 x 127mm",
+  "country": "Dominikana",
+  "wrapper": "Connecticut Shade",
+  "strength": 1,
+  "body": 2,
+  "flavorTags": [
+   "kremasto",
+   "orasasti",
+   "trava-slatka"
+  ],
+  "smokeTimeMin": 45,
+  "priceEUR": 8,
+  "priceApprox": true,
+  "availabilityHR": [
+   "Havana Shop"
+  ],
+  "notes": {
+   "hr": "Blagi dominikanac — mekan, kremast, bez drame.",
+   "en": "Mild Dominican — soft, creamy, drama-free."
+  },
+  "markets": [
+   "HR",
+   "EU",
+   "USA",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "Robusto",
+    "format": "50 x 127mm",
+    "smokeTimeMin": 45,
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceUrl": "https://havana-cigar-shop.com/en/product-brand/cusano/"
+ },
+ {
+  "id": "cig-casa-1910",
+  "brand": "Casa 1910",
+  "line": "Cuchillo Parado",
+  "vitola": "Toro",
+  "format": "50 x 152mm",
+  "country": "Meksiko",
+  "wrapper": "San Andrés (Meksiko)",
+  "strength": 3,
+  "body": 4,
+  "flavorTags": [
+   "kakao",
+   "zemljano",
+   "zacini",
+   "kava",
+   "koza"
+  ],
+  "smokeTimeMin": 65,
+  "priceEUR": 16,
+  "priceApprox": true,
+  "availabilityHR": [
+   "Havana Shop"
+  ],
+  "notes": {
+   "hr": "Meksički puro sa San Andrés duhanom — tamno, zemljano-čokoladno.",
+   "en": "Mexican puro with San Andrés tobacco — dark, earthy-chocolatey."
+  },
+  "markets": [
+   "HR",
+   "EU",
+   "USA",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "Toro",
+    "format": "50 x 152mm",
+    "smokeTimeMin": 65,
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceUrl": "https://havana-cigar-shop.com/en/product-brand/casa-1910/"
+ },
+ {
+  "id": "cig-aj-fernandez-new-world",
+  "brand": "AJ Fernandez",
+  "line": "New World",
+  "vitola": "Dorado Robusto",
+  "format": "52 x 140mm",
+  "country": "Nikaragva",
+  "wrapper": "Nicaragua Oscuro",
+  "strength": 4,
+  "body": 4,
+  "flavorTags": [
+   "kakao",
+   "papar",
+   "zemljano",
+   "karamela",
+   "kava"
+  ],
+  "smokeTimeMin": 55,
+  "priceEUR": 9.9,
+  "priceApprox": false,
+  "availabilityHR": [
+   "The Humidor"
+  ],
+  "notes": {
+   "hr": "Nagrađivani value blend — oscuro wrapper, tamno i bogato za male novce.",
+   "en": "Awarded value blend — oscuro wrapper, dark and rich for little money."
+  },
+  "markets": [
+   "HR",
+   "EU",
+   "USA",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "Petit Corona 5 Pack",
+    "format": "36 x 102mm",
+    "smokeTimeMin": 35,
+    "priceEUR": 32.5,
+    "url": "https://humidor.hr/en/proizvod/aj-fernandez-new-world-petit-corona-6-pack-4-x-36/"
+   },
+   {
+    "name": "Cameroon Short Robusto",
+    "format": "48 x 102mm",
+    "smokeTimeMin": 40,
+    "priceEUR": 10.4,
+    "url": "https://humidor.hr/en/proizvod/new-world-cameroon-short-robusto-4-x-48/"
+   },
+   {
+    "name": "Connecticut Robusto",
+    "format": "50 x 127mm",
+    "smokeTimeMin": 50,
+    "priceEUR": 9.9,
+    "url": "https://humidor.hr/en/proizvod/new-world-connecticut-robusto-5-x-50/"
+   },
+   {
+    "name": "Cameroon Double Robusto",
+    "format": "48 x 140mm",
+    "smokeTimeMin": 50,
+    "priceEUR": 10.9,
+    "url": "https://humidor.hr/en/proizvod/new-world-cameroon-double-robusto-5-1-2-x-48/"
+   },
+   {
+    "name": "Decenio Robusto",
+    "format": "54 x 140mm",
+    "smokeTimeMin": 55,
+    "priceEUR": 18.5,
+    "url": "https://humidor.hr/en/proizvod/new-world-decenio-robusto-5-%c2%bd-x-54/"
+   },
+   {
+    "name": "Oscuro Almirante Belicoso",
+    "format": "55 x 140mm",
+    "smokeTimeMin": 55,
+    "priceEUR": 10.9,
+    "url": "https://humidor.hr/en/proizvod/new-world-oscuro-almirante-belicoso-5-1-2-x-55/"
+   },
+   {
+    "name": "Dorado Robusto",
+    "format": "52 x 140mm",
+    "smokeTimeMin": 55,
+    "priceEUR": 18.5,
+    "url": "https://humidor.hr/en/proizvod/new-world-dorado-robusto-5-1-2-x-52/"
+   },
+   {
+    "name": "Puro Especial Robusto",
+    "format": "52 x 140mm",
+    "smokeTimeMin": 55,
+    "priceEUR": 12.0,
+    "url": "https://humidor.hr/en/proizvod/new-world-puro-especial-robusto-5-1-2-x-52/"
+   },
+   {
+    "name": "Puro Especial Short Churchill",
+    "format": "48 x 152mm",
+    "smokeTimeMin": 55,
+    "priceEUR": 12.0,
+    "url": "https://humidor.hr/en/proizvod/new-world-puro-especial-short-churchill-6-x-48/"
+   },
+   {
+    "name": "Dorado Figurado",
+    "format": "56 x 152mm",
+    "smokeTimeMin": 60,
+    "priceEUR": 19.5,
+    "url": "https://humidor.hr/en/proizvod/new-world-dorado-figurado-6-x-56/"
+   },
+   {
+    "name": "Decenio Toro",
+    "format": "54 x 165mm",
+    "smokeTimeMin": 65,
+    "priceEUR": 20.0,
+    "url": "https://humidor.hr/en/proizvod/new-world-decenio-toro-6-%c2%bd-x-54/"
+   },
+   {
+    "name": "Oscuro Toro Redondo",
+    "format": "55 x 165mm",
+    "smokeTimeMin": 65,
+    "priceEUR": 11.3,
+    "url": "https://humidor.hr/en/proizvod/new-world-oscuro-toro-redondo-6-1-2-x-55/"
+   }
+  ],
+  "priceUrl": "https://humidor.hr/en/proizvod/new-world-connecticut-robusto-5-x-50/"
+ },
+ {
+  "id": "cig-aj-fernandez-dias-de-gloria",
+  "brand": "AJ Fernandez",
+  "line": "Días de Gloria",
+  "vitola": "Short Churchill",
+  "format": "48 x 165mm",
+  "country": "Nikaragva",
+  "wrapper": "Habano (Nicaragua)",
+  "strength": 4,
+  "body": 5,
+  "flavorTags": [
+   "zemljano",
+   "papar",
+   "kakao",
+   "koza",
+   "dim"
+  ],
+  "smokeTimeMin": 60,
+  "priceEUR": 14.4,
+  "priceApprox": false,
+  "availabilityHR": [
+   "The Humidor"
+  ],
+  "notes": {
+   "hr": "Punokrvni nikaragvanski puro — snaga i dubina, za jaka pića.",
+   "en": "Full-blooded Nicaraguan puro — power and depth, for strong drinks."
+  },
+  "markets": [
+   "HR",
+   "EU",
+   "USA",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "Robusto",
+    "format": "52 x 140mm",
+    "smokeTimeMin": 55,
+    "priceEUR": 14.4,
+    "url": "https://humidor.hr/en/proizvod/dias-de-gloria-robusto-5-1-2-x-52/"
+   },
+   {
+    "name": "Gordo",
+    "format": "58 x 152mm",
+    "smokeTimeMin": 60,
+    "priceEUR": 15.4,
+    "url": "https://humidor.hr/en/proizvod/dias-de-gloria-gordo-6-x-58/"
+   },
+   {
+    "name": "Short Churchill",
+    "format": "48 x 165mm",
+    "smokeTimeMin": 60,
+    "priceEUR": 14.5,
+    "url": "https://humidor.hr/en/proizvod/dias-de-gloria-short-churchill-6-1-2-x-48/"
+   },
+   {
+    "name": "Brazil Toro",
+    "format": "54 x 165mm",
+    "smokeTimeMin": 65,
+    "priceEUR": 17.9,
+    "url": "https://humidor.hr/en/proizvod/dias-de-gloria-brazil-toro-6-%c2%bd-x-54/"
+   }
+  ],
+  "priceUrl": "https://humidor.hr/en/proizvod/dias-de-gloria-robusto-5-1-2-x-52/"
+ },
+ {
+  "id": "cig-eiroa-cbt-maduro",
+  "brand": "Eiroa",
+  "line": "CBT Maduro / 20 Years",
+  "vitola": "Limitada 2025 Toro",
+  "format": "54 x 152mm",
+  "country": "Honduras",
+  "wrapper": "Honduras Maduro (Capa-Binder-Tripa maduro)",
+  "strength": 4,
+  "body": 5,
+  "flavorTags": [
+   "kakao",
+   "kava",
+   "slatko",
+   "zemljano",
+   "tamno-voce"
+  ],
+  "smokeTimeMin": 60,
+  "priceEUR": 14.5,
+  "priceApprox": false,
+  "availabilityHR": [
+   "The Humidor"
+  ],
+  "notes": {
+   "hr": "All-maduro puro obitelji Eiroa (Camacho osnivači) — desertno taman, moćan.",
+   "en": "All-maduro puro from the Eiroa family (Camacho founders) — dessert-dark, mighty."
+  },
+  "markets": [
+   "HR",
+   "EU",
+   "USA",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "20 Years Colorado Robusto Prensado",
+    "format": "50 x 127mm",
+    "smokeTimeMin": 50,
+    "priceEUR": 15.9,
+    "url": "https://humidor.hr/en/proizvod/eiroa-20-years-colorado-robusto-prensado-5-x-50/"
+   },
+   {
+    "name": "20 Years Maduro Robusto Prensado",
+    "format": "50 x 127mm",
+    "smokeTimeMin": 50,
+    "priceEUR": 15.9,
+    "url": "https://humidor.hr/en/proizvod/eiroa-20-years-robusto-prensado-5-x-50/"
+   },
+   {
+    "name": "CBT Robusto",
+    "format": "50 x 127mm",
+    "smokeTimeMin": 50,
+    "priceEUR": 14.5,
+    "url": "https://humidor.hr/en/proizvod/eiroa-cbt-robusto-5-x-50/"
+   },
+   {
+    "name": "Limitada 2025 Toro",
+    "format": "54 x 152mm",
+    "smokeTimeMin": 60,
+    "priceEUR": 24.5,
+    "url": "https://humidor.hr/en/proizvod/eiroa-limitada-2025/"
+   },
+   {
+    "name": "20 Years Colorado Toro",
+    "format": "54 x 152mm",
+    "smokeTimeMin": 60,
+    "priceEUR": 17.9,
+    "url": "https://humidor.hr/en/proizvod/eiroa-20-years-colorado-toro-6-x-54/"
+   },
+   {
+    "name": "20 Years Maduro Toro Prensado",
+    "format": "54 x 152mm",
+    "smokeTimeMin": 60,
+    "priceEUR": 17.9,
+    "url": "https://humidor.hr/en/proizvod/eiroa-20-years-toro-prensado-6-x-54/"
+   },
+   {
+    "name": "CBT Toro",
+    "format": "54 x 152mm",
+    "smokeTimeMin": 60,
+    "priceEUR": 16.5,
+    "url": "https://humidor.hr/en/proizvod/eiroa-cbt-toro-6-x-54/"
+   }
+  ],
+  "priceUrl": "https://humidor.hr/en/proizvod/eiroa-cbt-robusto-5-x-50/"
+ },
+ {
+  "id": "cig-eiroa-classic",
+  "brand": "Eiroa",
+  "line": "Classic / Colorado",
+  "vitola": "Toro",
+  "format": "54 x 152mm",
+  "country": "Honduras",
+  "wrapper": "Honduras Colorado",
+  "strength": 3,
+  "body": 4,
+  "flavorTags": [
+   "karamela",
+   "cedar",
+   "zacini",
+   "kremasto"
+  ],
+  "smokeTimeMin": 60,
+  "priceEUR": 12.2,
+  "priceApprox": false,
+  "availabilityHR": [
+   "The Humidor"
+  ],
+  "notes": {
+   "hr": "Svjetlija Eiroa — karamelno-začinska, honduraška klasika.",
+   "en": "Brighter Eiroa — caramel-spice, Honduran classic."
+  },
+  "markets": [
+   "HR",
+   "EU",
+   "USA",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "Corona Prensado",
+    "format": "48 x 102mm",
+    "smokeTimeMin": 40,
+    "priceEUR": 12.2,
+    "url": "https://humidor.hr/en/proizvod/eiroa-classic-corona-prensado-4-x-48/"
+   },
+   {
+    "name": "Robusto",
+    "format": "50 x 127mm",
+    "smokeTimeMin": 50,
+    "priceEUR": 14.9,
+    "url": "https://humidor.hr/en/proizvod/eiroa-classic-robusto-5-x-50/"
+   },
+   {
+    "name": "Toro",
+    "format": "54 x 152mm",
+    "smokeTimeMin": 60,
+    "priceEUR": 16.5,
+    "url": "https://humidor.hr/en/proizvod/eiroa-classic-toro-6-x-54/"
+   },
+   {
+    "name": "50 RG",
+    "format": "50 x 254mm",
+    "smokeTimeMin": 95,
+    "priceEUR": 45.0,
+    "url": "https://humidor.hr/en/proizvod/eiroa-classic-10-x-50/"
+   }
+  ],
+  "priceUrl": "https://humidor.hr/en/proizvod/eiroa-classic-corona-prensado-4-x-48/"
+ },
+ {
+  "id": "cig-la-galera-85th",
+  "brand": "La Galera",
+  "line": "85th Anniversary / Habano",
+  "vitola": "Anniversary Toro",
+  "format": "52 x 152mm",
+  "country": "Dominikana",
+  "wrapper": "Habano Ecuador",
+  "strength": 3,
+  "body": 3,
+  "flavorTags": [
+   "cedar",
+   "zacini",
+   "med",
+   "orasasti"
+  ],
+  "smokeTimeMin": 60,
+  "priceEUR": 6.4,
+  "priceApprox": false,
+  "availabilityHR": [
+   "The Humidor"
+  ],
+  "notes": {
+   "hr": "Tradicionalna dominikanska fabrika (Tabacalera Palma) — uravnotežen, aromatičan.",
+   "en": "Traditional Dominican factory (Tabacalera Palma) — balanced, aromatic."
+  },
+  "markets": [
+   "HR",
+   "EU",
+   "USA",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "Half Corona",
+    "format": "46 x 89mm",
+    "smokeTimeMin": 30,
+    "priceEUR": 6.4,
+    "url": "https://humidor.hr/en/proizvod/la-galera-habano-half-corona-3-%c2%bd-x-46/"
+   },
+   {
+    "name": "Robusto Chaveta",
+    "format": "50 x 127mm",
+    "smokeTimeMin": 50,
+    "priceEUR": 11.2,
+    "url": "https://humidor.hr/en/proizvod/la-galera-habano-robusto-chaveta-5-x-50-2/"
+   },
+   {
+    "name": "Bonchero No.4",
+    "format": "42 x 140mm",
+    "smokeTimeMin": 50,
+    "priceEUR": 9.5,
+    "url": "https://humidor.hr/en/proizvod/la-galera-habano-bonchero-no-4-5-5-x-42/"
+   },
+   {
+    "name": "Anniversary Toro",
+    "format": "52 x 152mm",
+    "smokeTimeMin": 60,
+    "priceEUR": 19.5,
+    "url": "https://humidor.hr/en/proizvod/la-galera-85th-anniversary-toro/"
+   },
+   {
+    "name": "Toro",
+    "format": "54 x 152mm",
+    "smokeTimeMin": 60,
+    "priceEUR": 11.9,
+    "url": "https://humidor.hr/en/proizvod/la-galera-habano-toro-el-lector-6-x-54/"
+   },
+   {
+    "name": "Lancero",
+    "format": "38 x 184mm",
+    "smokeTimeMin": 65,
+    "priceEUR": 12.5,
+    "url": "https://humidor.hr/en/proizvod/la-galera-habano-lancero-7-25-x-38/"
+   },
+   {
+    "name": "Cabeza Caracol Churchill",
+    "format": "47 x 178mm",
+    "smokeTimeMin": 65,
+    "priceEUR": 13.3,
+    "url": "https://humidor.hr/en/proizvod/la-galera-habano-cabeza-caracol-7-x-47/"
+   }
+  ],
+  "priceUrl": "https://humidor.hr/en/proizvod/la-galera-habano-half-corona-3-%c2%bd-x-46/"
+ },
+ {
+  "id": "cig-eladio-diaz",
+  "brand": "Eladio Diaz",
+  "line": "La Diana / Anniversary",
+  "vitola": "71st Aniversario Toro",
+  "format": "54 x 152mm",
+  "country": "Dominikana",
+  "wrapper": "Habano / Maduro",
+  "strength": 3,
+  "body": 4,
+  "flavorTags": [
+   "kakao",
+   "zacini",
+   "suho-voce",
+   "kava"
+  ],
+  "smokeTimeMin": 60,
+  "priceEUR": 12.9,
+  "priceApprox": false,
+  "availabilityHR": [
+   "The Humidor"
+  ],
+  "notes": {
+   "hr": "Blendovi legendarnog Davidoff majstora — dominikanska dubina.",
+   "en": "Blends from the legendary Davidoff master blender — Dominican depth."
+  },
+  "markets": [
+   "HR",
+   "EU",
+   "USA",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "La Diana Robusto",
+    "format": "52 x 127mm",
+    "smokeTimeMin": 50,
+    "priceEUR": 12.9,
+    "url": "https://humidor.hr/en/proizvod/eladio-diaz-la-diana-robusto-5-x-52/"
+   },
+   {
+    "name": "Before and After Mi Familia Robusto",
+    "format": "50 x 127mm",
+    "smokeTimeMin": 50,
+    "priceEUR": 13.5,
+    "url": "https://humidor.hr/en/proizvod/eladio-diaz-before-and-after-mi-familia-robusto-5-x-50/"
+   },
+   {
+    "name": "Before and After Legado",
+    "format": "54 x 146mm",
+    "smokeTimeMin": 55,
+    "priceEUR": 14.9,
+    "url": "https://humidor.hr/en/proizvod/eladio-diaz-before-and-after-legado-5-%c2%be-x-54/"
+   },
+   {
+    "name": "71st Aniversario Toro",
+    "format": "54 x 152mm",
+    "smokeTimeMin": 60,
+    "priceEUR": 18.7,
+    "url": "https://humidor.hr/en/proizvod/eladio-diaz-71st-aniversario-toro-6-x-54/"
+   },
+   {
+    "name": "Before and After Pasion Toro",
+    "format": "52 x 152mm",
+    "smokeTimeMin": 60,
+    "priceEUR": 14.5,
+    "url": "https://humidor.hr/en/proizvod/eladio-diaz-before-and-after-pasion-toro-6-x-52/"
+   },
+   {
+    "name": "72nd Aniversario Churchill",
+    "format": "52 x 165mm",
+    "smokeTimeMin": 65,
+    "priceEUR": 21.5,
+    "url": "https://humidor.hr/en/proizvod/eladio-diaz-72nd-aniversario-churchill-6-%c2%bd-x-52/"
+   }
+  ],
+  "priceUrl": "https://humidor.hr/en/proizvod/eladio-diaz-la-diana-robusto-5-x-52/"
+ },
+ {
+  "id": "cig-viva-la-vida-connecticut",
+  "brand": "Viva La Vida",
+  "line": "Connecticut",
+  "vitola": "Toro",
+  "format": "54 x 152mm",
+  "country": "Nikaragva",
+  "wrapper": "Ecuador Connecticut",
+  "strength": 2,
+  "body": 3,
+  "flavorTags": [
+   "kremasto",
+   "med",
+   "cedar",
+   "kava"
+  ],
+  "smokeTimeMin": 60,
+  "priceEUR": 16.4,
+  "priceApprox": false,
+  "availabilityHR": [
+   "The Humidor"
+  ],
+  "notes": {
+   "hr": "Blaža verzija boutique brenda (Artesano del Tobacco).",
+   "en": "Milder version of the boutique brand (Artesano del Tobacco)."
+  },
+  "markets": [
+   "HR",
+   "EU",
+   "USA",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "Robusto",
+    "format": "54 x 127mm",
+    "smokeTimeMin": 50,
+    "priceEUR": 16.4,
+    "url": "https://humidor.hr/en/proizvod/viva-la-vida-connecticut-robusto-5-x-54/"
+   },
+   {
+    "name": "Toro",
+    "format": "54 x 152mm",
+    "smokeTimeMin": 60,
+    "priceEUR": 17.3,
+    "url": "https://humidor.hr/en/proizvod/viva-la-vida-connecticut-toro-6-x-54/"
+   }
+  ],
+  "priceUrl": "https://humidor.hr/en/proizvod/viva-la-vida-connecticut-robusto-5-x-54/"
+ },
+ {
+  "id": "cig-viva-la-vida",
+  "brand": "Viva La Vida",
+  "line": "Original",
+  "vitola": "Toro",
+  "format": "54 x 152mm",
+  "country": "Nikaragva",
+  "wrapper": "Habano Oscuro",
+  "strength": 4,
+  "body": 4,
+  "flavorTags": [
+   "papar",
+   "kakao",
+   "zemljano",
+   "karamela"
+  ],
+  "smokeTimeMin": 60,
+  "priceEUR": 12.5,
+  "priceApprox": false,
+  "availabilityHR": [
+   "The Humidor"
+  ],
+  "notes": {
+   "hr": "Punija nikaragvanska boutique cigara — papreno-slatka.",
+   "en": "Fuller Nicaraguan boutique smoke — peppery-sweet."
+  },
+  "markets": [
+   "HR",
+   "EU",
+   "USA",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "Robusto",
+    "format": "54 x 127mm",
+    "smokeTimeMin": 50,
+    "priceEUR": 12.5,
+    "url": "https://humidor.hr/en/proizvod/viva-la-vida-robusto-5-x-54/"
+   },
+   {
+    "name": "5th Anniversario Club 500",
+    "format": "58 x 133mm",
+    "smokeTimeMin": 55,
+    "priceEUR": 17.9,
+    "url": "https://humidor.hr/en/proizvod/viva-la-vida-5th-anniversario-club-500-5%c2%bc-x-58/"
+   },
+   {
+    "name": "5th Anniversario Jester",
+    "format": "56 x 140mm",
+    "smokeTimeMin": 55,
+    "priceEUR": 18.4,
+    "url": "https://humidor.hr/en/proizvod/viva-la-vida-5th-anniversario-jester-5-1-2-x-56/"
+   },
+   {
+    "name": "Toro",
+    "format": "54 x 152mm",
+    "smokeTimeMin": 60,
+    "priceEUR": 13.5,
+    "url": "https://humidor.hr/en/proizvod/viva-la-vida-toro-6-x-54/"
+   },
+   {
+    "name": "Club 500",
+    "format": "60 x 152mm",
+    "smokeTimeMin": 60,
+    "priceEUR": 16.0,
+    "url": "https://humidor.hr/en/proizvod/viva-la-vida-club-500-6-x-60/"
+   },
+   {
+    "name": "Diadema",
+    "format": "52 x 165mm",
+    "smokeTimeMin": 65,
+    "priceEUR": 16.5,
+    "url": "https://humidor.hr/en/proizvod/viva-la-vida-diadema-6-1-2-x-52/"
+   }
+  ],
+  "priceUrl": "https://humidor.hr/en/proizvod/viva-la-vida-robusto-5-x-54/"
+ },
+ {
+  "id": "cig-el-pulpo",
+  "brand": "El Pulpo",
+  "line": "El Pulpo",
+  "vitola": "Toro Grande",
+  "format": "56 x 152mm",
+  "country": "Nikaragva",
+  "wrapper": "Habano Maduro",
+  "strength": 4,
+  "body": 4,
+  "flavorTags": [
+   "kakao",
+   "zemljano",
+   "zacini",
+   "kava"
+  ],
+  "smokeTimeMin": 60,
+  "priceEUR": 13.7,
+  "priceApprox": false,
+  "availabilityHR": [
+   "The Humidor"
+  ],
+  "notes": {
+   "hr": "Boutique linija u više formata (uklj. culebra kuriozitet) — tamna i bogata.",
+   "en": "Boutique line in many formats (incl. culebra curiosity) — dark and rich."
+  },
+  "markets": [
+   "HR",
+   "EU",
+   "USA",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "Gordita",
+    "format": "48 x 102mm",
+    "smokeTimeMin": 40,
+    "priceEUR": 13.7,
+    "url": "https://humidor.hr/en/proizvod/el-pulpo-gordita-4-x-48/"
+   },
+   {
+    "name": "Robusto Grande",
+    "format": "56 x 127mm",
+    "smokeTimeMin": 50,
+    "priceEUR": 16.4,
+    "url": "https://humidor.hr/en/proizvod/el-pulpo-robusto-grande-5-x-56/"
+   },
+   {
+    "name": "Belicoso Grande",
+    "format": "58 x 146mm",
+    "smokeTimeMin": 60,
+    "priceEUR": 17.5,
+    "url": "https://humidor.hr/en/proizvod/el-pulpo-belicoso-grande-5-%c2%be-x-58/"
+   },
+   {
+    "name": "Toro Grande",
+    "format": "56 x 152mm",
+    "smokeTimeMin": 60,
+    "priceEUR": 16.9,
+    "url": "https://humidor.hr/en/proizvod/el-pulpo-toro-grande-6-x-56/"
+   },
+   {
+    "name": "Lancero",
+    "format": "38 x 178mm",
+    "smokeTimeMin": 60,
+    "priceEUR": 17.9,
+    "url": "https://humidor.hr/en/proizvod/el-pulpo-lancero-7-x-38/"
+   },
+   {
+    "name": "Culebra",
+    "format": "38 x 178mm",
+    "smokeTimeMin": 60,
+    "priceEUR": 45.0,
+    "url": "https://humidor.hr/en/proizvod/el-pulpo-culebra-7-x-38-x-3/"
+   }
+  ],
+  "priceUrl": "https://humidor.hr/en/proizvod/el-pulpo-gordita-4-x-48/"
+ },
+ {
+  "id": "cig-padron-2000",
+  "brand": "Padrón",
+  "line": "Core (2000/3000)",
+  "vitola": "3000",
+  "format": "52 x 140mm",
+  "country": "Nikaragva",
+  "wrapper": "Maduro / Natural",
+  "strength": 3,
+  "body": 4,
+  "flavorTags": [
+   "kakao",
+   "kava",
+   "zemljano",
+   "orasasti"
+  ],
+  "smokeTimeMin": 55,
+  "priceEUR": 9,
+  "priceApprox": true,
+  "markets": [
+   "USA",
+   "EU",
+   "WW"
+  ],
+  "availabilityHR": [],
+  "notes": {
+   "hr": "Legendarni value — nikaragvanski kakao i kava, uvijek savršena izrada.",
+   "en": "Legendary value — Nicaraguan cocoa and coffee, flawless construction every time."
+  },
+  "vitolas": [
+   {
+    "name": "2000 (robusto)",
+    "format": "50 x 127mm",
+    "smokeTimeMin": 50,
+    "priceEUR": null,
+    "url": null
+   },
+   {
+    "name": "3000",
+    "format": "52 x 140mm",
+    "smokeTimeMin": 55,
+    "priceEUR": null,
+    "url": null
+   },
+   {
+    "name": "4000",
+    "format": "54 x 165mm",
+    "smokeTimeMin": 65,
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceUrl": null
+ },
+ {
+  "id": "cig-padron-1964",
+  "brand": "Padrón",
+  "line": "1964 Anniversary",
+  "vitola": "Exclusivo",
+  "format": "50 x 140mm",
+  "country": "Nikaragva",
+  "wrapper": "Maduro (sun grown)",
+  "strength": 4,
+  "body": 4,
+  "flavorTags": [
+   "kakao",
+   "kava",
+   "karamela",
+   "zacini",
+   "zemljano"
+  ],
+  "smokeTimeMin": 55,
+  "priceEUR": 22,
+  "priceApprox": true,
+  "markets": [
+   "USA",
+   "EU",
+   "WW"
+  ],
+  "availabilityHR": [],
+  "notes": {
+   "hr": "Mjerilo za maduro kategoriju — kakao, espresso, savršena ravnoteža.",
+   "en": "The benchmark maduro — cocoa, espresso, perfect balance."
+  },
+  "vitolas": [
+   {
+    "name": "Principe",
+    "format": "46 x 114mm",
+    "smokeTimeMin": 40,
+    "priceEUR": null,
+    "url": null
+   },
+   {
+    "name": "Exclusivo",
+    "format": "50 x 140mm",
+    "smokeTimeMin": 55,
+    "priceEUR": null,
+    "url": null
+   },
+   {
+    "name": "Imperial",
+    "format": "54 x 152mm",
+    "smokeTimeMin": 60,
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceUrl": null
+ },
+ {
+  "id": "cig-padron-1926",
+  "brand": "Padrón",
+  "line": "1926 Serie",
+  "vitola": "No.9",
+  "format": "56 x 133mm",
+  "country": "Nikaragva",
+  "wrapper": "Maduro",
+  "strength": 5,
+  "body": 5,
+  "flavorTags": [
+   "kakao",
+   "kava",
+   "papar",
+   "tamno-voce",
+   "koza"
+  ],
+  "smokeTimeMin": 50,
+  "priceEUR": 30,
+  "priceApprox": true,
+  "markets": [
+   "USA",
+   "WW"
+  ],
+  "availabilityHR": [],
+  "notes": {
+   "hr": "Vrh Padróna — puna snaga i dubina, cigara za najjača pića.",
+   "en": "Padrón's summit — full power and depth, a cigar for the strongest drinks."
+  },
+  "vitolas": [
+   {
+    "name": "No.6",
+    "format": "52 x 121mm",
+    "smokeTimeMin": 45,
+    "priceEUR": null,
+    "url": null
+   },
+   {
+    "name": "No.9",
+    "format": "56 x 133mm",
+    "smokeTimeMin": 50,
+    "priceEUR": null,
+    "url": null
+   },
+   {
+    "name": "No.2 (belicoso)",
+    "format": "52 x 140mm",
+    "smokeTimeMin": 55,
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceUrl": null
+ },
+ {
+  "id": "cig-my-father-le-bijou",
+  "brand": "My Father",
+  "line": "Le Bijou 1922",
+  "vitola": "Toro",
+  "format": "54 x 152mm",
+  "country": "Nikaragva",
+  "wrapper": "Habano Oscuro",
+  "strength": 4,
+  "body": 5,
+  "flavorTags": [
+   "kakao",
+   "papar",
+   "zemljano",
+   "karamela"
+  ],
+  "smokeTimeMin": 60,
+  "priceEUR": 15,
+  "priceApprox": true,
+  "markets": [
+   "USA",
+   "EU",
+   "WW"
+  ],
+  "availabilityHR": [],
+  "notes": {
+   "hr": "Cigar of the Year 2015 — tamna, moćna, slatko-paprena.",
+   "en": "Cigar of the Year 2015 — dark, mighty, sweet-peppery."
+  },
+  "vitolas": [
+   {
+    "name": "Petit Robusto",
+    "format": "50 x 114mm",
+    "smokeTimeMin": 45,
+    "priceEUR": null,
+    "url": null
+   },
+   {
+    "name": "Toro",
+    "format": "54 x 152mm",
+    "smokeTimeMin": 60,
+    "priceEUR": null,
+    "url": null
+   },
+   {
+    "name": "Torpedo Box Press",
+    "format": "52 x 156mm",
+    "smokeTimeMin": 60,
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceUrl": null
+ },
+ {
+  "id": "cig-my-father-flor-antillas",
+  "brand": "My Father",
+  "line": "Flor de las Antillas",
+  "vitola": "Belicoso",
+  "format": "52 x 140mm",
+  "country": "Nikaragva",
+  "wrapper": "Habano (sun grown rosado)",
+  "strength": 3,
+  "body": 3,
+  "flavorTags": [
+   "zacini-slatki",
+   "cedar",
+   "karamela",
+   "cvjetno"
+  ],
+  "smokeTimeMin": 55,
+  "priceEUR": 11,
+  "priceApprox": true,
+  "markets": [
+   "USA",
+   "EU",
+   "WW"
+  ],
+  "availabilityHR": [],
+  "notes": {
+   "hr": "Cigar of the Year 2012 — uglađena srednja snaga, slatki začini.",
+   "en": "Cigar of the Year 2012 — polished medium strength, sweet spice."
+  },
+  "vitolas": [
+   {
+    "name": "Robusto",
+    "format": "50 x 127mm",
+    "smokeTimeMin": 50,
+    "priceEUR": null,
+    "url": null
+   },
+   {
+    "name": "Belicoso",
+    "format": "52 x 140mm",
+    "smokeTimeMin": 55,
+    "priceEUR": null,
+    "url": null
+   },
+   {
+    "name": "Toro",
+    "format": "52 x 152mm",
+    "smokeTimeMin": 60,
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceUrl": null
+ },
+ {
+  "id": "cig-liga-privada-no9",
+  "brand": "Drew Estate",
+  "line": "Liga Privada No.9",
+  "vitola": "Toro",
+  "format": "52 x 152mm",
+  "country": "Nikaragva",
+  "wrapper": "Connecticut Broadleaf Oscuro",
+  "strength": 4,
+  "body": 5,
+  "flavorTags": [
+   "kakao",
+   "kava",
+   "zemljano",
+   "koza",
+   "dim"
+  ],
+  "smokeTimeMin": 60,
+  "priceEUR": 23.0,
+  "priceApprox": false,
+  "markets": [
+   "USA",
+   "WW"
+  ],
+  "availabilityHR": [
+   "The Humidor"
+  ],
+  "notes": {
+   "hr": "Kultni tamni broadleaf — gust, uljast dim; traži espresso ili tamni rum.",
+   "en": "Cult dark broadleaf — dense oily smoke; calls for espresso or dark rum."
+  },
+  "vitolas": [
+   {
+    "name": "Toro",
+    "format": "52 x 152mm",
+    "smokeTimeMin": 60,
+    "priceEUR": 23.0,
+    "url": "https://humidor.hr/en/proizvod/liga-privada-no-9-toro-6-x-52/"
+   }
+  ],
+  "priceUrl": "https://humidor.hr/en/proizvod/liga-privada-no-9-toro-6-x-52/"
+ },
+ {
+  "id": "cig-undercrown-maduro",
+  "brand": "Drew Estate",
+  "line": "Undercrown Maduro",
+  "vitola": "Gran Toro",
+  "format": "52 x 152mm",
+  "country": "Nikaragva",
+  "wrapper": "Mexican San Andrés Maduro",
+  "strength": 3,
+  "body": 4,
+  "flavorTags": [
+   "kakao",
+   "kava",
+   "slatko",
+   "zemljano"
+  ],
+  "smokeTimeMin": 60,
+  "priceEUR": 10,
+  "priceApprox": true,
+  "markets": [
+   "USA",
+   "EU",
+   "WW"
+  ],
+  "availabilityHR": [],
+  "notes": {
+   "hr": "Pristupačnija Liga alternativa — čokoladni San Andrés.",
+   "en": "The accessible Liga alternative — chocolatey San Andrés."
+  },
+  "vitolas": [
+   {
+    "name": "Robusto",
+    "format": "52 x 127mm",
+    "smokeTimeMin": 50,
+    "priceEUR": null,
+    "url": null
+   },
+   {
+    "name": "Gran Toro",
+    "format": "52 x 152mm",
+    "smokeTimeMin": 60,
+    "priceEUR": null,
+    "url": null
+   },
+   {
+    "name": "Corona Doble",
+    "format": "54 x 178mm",
     "smokeTimeMin": 70,
-    "priceEUR": 20,
-    "priceApprox": true,
-    "markets": [
-      "USA",
-      "EU",
-      "WW"
-    ],
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Jubilarna edicija Serie V — svečana verzija nagrađivanog blenda.",
-      "en": "Anniversary edition of Serie V — the celebratory take on the awarded blend."
-    }
-  }
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceUrl": null
+ },
+ {
+  "id": "cig-undercrown-shade",
+  "brand": "Drew Estate",
+  "line": "Undercrown Shade",
+  "vitola": "Gran Toro",
+  "format": "52 x 152mm",
+  "country": "Nikaragva",
+  "wrapper": "Ecuador Connecticut",
+  "strength": 2,
+  "body": 3,
+  "flavorTags": [
+   "kremasto",
+   "med",
+   "cedar",
+   "citrus"
+  ],
+  "smokeTimeMin": 60,
+  "priceEUR": 10,
+  "priceApprox": true,
+  "markets": [
+   "USA",
+   "EU",
+   "WW"
+  ],
+  "availabilityHR": [],
+  "notes": {
+   "hr": "Kremasta shade verzija — blaga ali s karakterom.",
+   "en": "Creamy shade version — mild but with character."
+  },
+  "vitolas": [
+   {
+    "name": "Robusto",
+    "format": "52 x 127mm",
+    "smokeTimeMin": 50,
+    "priceEUR": null,
+    "url": null
+   },
+   {
+    "name": "Gran Toro",
+    "format": "52 x 152mm",
+    "smokeTimeMin": 60,
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceUrl": null
+ },
+ {
+  "id": "cig-tatuaje-havana-vi",
+  "brand": "Tatuaje",
+  "line": "Havana VI / Miami",
+  "vitola": "Nobles (robusto)",
+  "format": "50 x 127mm",
+  "country": "Nikaragva",
+  "wrapper": "Ecuador Habano",
+  "strength": 3,
+  "body": 4,
+  "flavorTags": [
+   "cedar",
+   "zacini",
+   "koza",
+   "zemljano"
+  ],
+  "smokeTimeMin": 55,
+  "priceEUR": 12,
+  "priceApprox": true,
+  "markets": [
+   "USA",
+   "WW"
+  ],
+  "availabilityHR": [],
+  "notes": {
+   "hr": "Kubanski stil iz Nikaragve — boutique klasik Petea Johnsona.",
+   "en": "Cuban style from Nicaragua — Pete Johnson's boutique classic."
+  },
+  "vitolas": [
+   {
+    "name": "Nobles (robusto)",
+    "format": "50 x 127mm",
+    "smokeTimeMin": 55,
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceUrl": null
+ },
+ {
+  "id": "cig-ashton-classic",
+  "brand": "Ashton",
+  "line": "Classic",
+  "vitola": "Corona",
+  "format": "44 x 140mm",
+  "country": "Dominikana",
+  "wrapper": "Connecticut Shade",
+  "strength": 1,
+  "body": 2,
+  "flavorTags": [
+   "kremasto",
+   "orasasti",
+   "med",
+   "cedar"
+  ],
+  "smokeTimeMin": 50,
+  "priceEUR": 11.0,
+  "priceApprox": false,
+  "markets": [
+   "USA",
+   "EU",
+   "WW"
+  ],
+  "availabilityHR": [
+   "The Humidor"
+  ],
+  "notes": {
+   "hr": "Američki Connecticut standard (radi Fuente) — maslac i orasi.",
+   "en": "The American Connecticut standard (made by Fuente) — butter and nuts."
+  },
+  "vitolas": [
+   {
+    "name": "Corona",
+    "format": "44 x 140mm",
+    "smokeTimeMin": 50,
+    "priceEUR": 11.0,
+    "url": "https://humidor.hr/en/proizvod/ashton-classic-corona-5-1-2-x-44/"
+   }
+  ],
+  "priceUrl": "https://humidor.hr/en/proizvod/ashton-classic-corona-5-1-2-x-44/"
+ },
+ {
+  "id": "cig-ashton-vsg",
+  "brand": "Ashton",
+  "line": "VSG (Virgin Sun Grown)",
+  "vitola": "Robusto",
+  "format": "50 x 140mm",
+  "country": "Dominikana",
+  "wrapper": "Ecuador Sun Grown",
+  "strength": 4,
+  "body": 5,
+  "flavorTags": [
+   "zemljano",
+   "zacini",
+   "koza",
+   "tamno-voce"
+  ],
+  "smokeTimeMin": 60,
+  "priceEUR": 16,
+  "priceApprox": true,
+  "markets": [
+   "USA",
+   "WW"
+  ],
+  "availabilityHR": [],
+  "notes": {
+   "hr": "Puna snaga Ashtona — zemljano-začinska bomba.",
+   "en": "Ashton at full power — an earthy-spicy bomb."
+  },
+  "vitolas": [
+   {
+    "name": "Robusto",
+    "format": "50 x 140mm",
+    "smokeTimeMin": 60,
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceUrl": null
+ },
+ {
+  "id": "cig-fuente-opus-x",
+  "brand": "Arturo Fuente",
+  "line": "Opus X",
+  "vitola": "PerfecXion X",
+  "format": "48 x 159mm",
+  "country": "Dominikana",
+  "wrapper": "Dominican Rosado (Chateau de la Fuente)",
+  "strength": 5,
+  "body": 5,
+  "flavorTags": [
+   "zacini",
+   "cedar",
+   "citrus",
+   "koza",
+   "cvjetno"
+  ],
+  "smokeTimeMin": 60,
+  "priceEUR": 55.0,
+  "priceApprox": false,
+  "markets": [
+   "USA",
+   "WW"
+  ],
+  "availabilityHR": [
+   "The Humidor"
+  ],
+  "notes": {
+   "hr": "Prvi dominikanski puro — kultni, začinski, teško nabavljiv.",
+   "en": "The first Dominican puro — cult status, spicy, hard to find."
+  },
+  "vitolas": [
+   {
+    "name": "PerfecXion X",
+    "format": "48 x 159mm",
+    "smokeTimeMin": 60,
+    "priceEUR": 55.0,
+    "url": "https://humidor.hr/en/proizvod/arturo-fuente-fuente-fuente-opusx-perfecxion-x-3/"
+   }
+  ],
+  "priceUrl": "https://humidor.hr/en/proizvod/arturo-fuente-fuente-fuente-opusx-perfecxion-x-3/"
+ },
+ {
+  "id": "cig-perdomo-20th-maduro",
+  "brand": "Perdomo",
+  "line": "20th Anniversary Maduro",
+  "vitola": "Sungrown Gordo",
+  "format": "60 x 152mm",
+  "country": "Nikaragva",
+  "wrapper": "Nicaragua Maduro (bourbon barrel aged)",
+  "strength": 3,
+  "body": 4,
+  "flavorTags": [
+   "kakao",
+   "karamela",
+   "kava",
+   "hrast"
+  ],
+  "smokeTimeMin": 60,
+  "priceEUR": 14.0,
+  "priceApprox": false,
+  "markets": [
+   "USA",
+   "EU",
+   "WW"
+  ],
+  "availabilityHR": [
+   "The Humidor"
+  ],
+  "notes": {
+   "hr": "Wrapper odležan u bourbon bačvama — rođen za bourbon pairing.",
+   "en": "Wrapper aged in bourbon barrels — born for bourbon pairing."
+  },
+  "vitolas": [
+   {
+    "name": "Sungrown Robusto",
+    "format": "56 x 127mm",
+    "smokeTimeMin": 50,
+    "priceEUR": 14.0,
+    "url": "https://humidor.hr/en/proizvod/perdomo-20th-anniversary-sungrown-robusto-5-x-56/"
+   },
+   {
+    "name": "Sungrown Gordo",
+    "format": "60 x 152mm",
+    "smokeTimeMin": 60,
+    "priceEUR": 16.0,
+    "url": "https://humidor.hr/en/proizvod/perdomo-20th-anniversary-sungrown-gordo-6-x-60/"
+   }
+  ],
+  "priceUrl": "https://humidor.hr/en/proizvod/perdomo-20th-anniversary-sungrown-robusto-5-x-56/"
+ },
+ {
+  "id": "cig-perdomo-champagne",
+  "brand": "Perdomo",
+  "line": "10th Anniversary Champagne",
+  "vitola": "Robusto",
+  "format": "50 x 127mm",
+  "country": "Nikaragva",
+  "wrapper": "Ecuador Connecticut",
+  "strength": 2,
+  "body": 3,
+  "flavorTags": [
+   "kremasto",
+   "med",
+   "vanilija",
+   "orasasti"
+  ],
+  "smokeTimeMin": 55,
+  "priceEUR": 10,
+  "priceApprox": true,
+  "markets": [
+   "USA",
+   "EU",
+   "WW"
+  ],
+  "availabilityHR": [],
+  "notes": {
+   "hr": "Kremasto-medeni value Connecticut.",
+   "en": "Creamy-honeyed value Connecticut."
+  },
+  "vitolas": [
+   {
+    "name": "Robusto",
+    "format": "50 x 127mm",
+    "smokeTimeMin": 55,
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceUrl": null
+ },
+ {
+  "id": "cig-rocky-patel-decade",
+  "brand": "Rocky Patel",
+  "line": "Decade",
+  "vitola": "Robusto",
+  "format": "50 x 127mm",
+  "country": "Honduras",
+  "wrapper": "Ecuador Sumatra",
+  "strength": 4,
+  "body": 4,
+  "flavorTags": [
+   "zemljano",
+   "kakao",
+   "zacini",
+   "koza"
+  ],
+  "smokeTimeMin": 55,
+  "priceEUR": 13,
+  "priceApprox": true,
+  "markets": [
+   "USA",
+   "EU",
+   "WW"
+  ],
+  "availabilityHR": [],
+  "notes": {
+   "hr": "Najbolji RP blend — bogat, tamno-začinski.",
+   "en": "Rocky Patel's best blend — rich, dark-spiced."
+  },
+  "vitolas": [
+   {
+    "name": "Robusto",
+    "format": "50 x 127mm",
+    "smokeTimeMin": 55,
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceUrl": null
+ },
+ {
+  "id": "cig-rocky-patel-vintage-1990",
+  "brand": "Rocky Patel",
+  "line": "Vintage 1990/1992",
+  "vitola": "Robusto",
+  "format": "50 x 140mm",
+  "country": "Honduras",
+  "wrapper": "Broadleaf (1990) / Sumatra (1992)",
+  "strength": 2,
+  "body": 3,
+  "flavorTags": [
+   "cedar",
+   "karamela",
+   "orasasti",
+   "kava"
+  ],
+  "smokeTimeMin": 55,
+  "priceEUR": 11,
+  "priceApprox": true,
+  "markets": [
+   "USA",
+   "EU",
+   "WW"
+  ],
+  "availabilityHR": [],
+  "notes": {
+   "hr": "Odležani wrapper (12+ god) — mekano, zaobljeno iskustvo.",
+   "en": "Aged wrapper (12+ yrs) — a soft, rounded experience."
+  },
+  "vitolas": [
+   {
+    "name": "Robusto",
+    "format": "50 x 140mm",
+    "smokeTimeMin": 55,
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceUrl": null
+ },
+ {
+  "id": "cig-cao-brazilia",
+  "brand": "CAO",
+  "line": "Brazilia",
+  "vitola": "Gol! (robusto ext.)",
+  "format": "56 x 127mm",
+  "country": "Nikaragva",
+  "wrapper": "Brazil Arapiraca Maduro",
+  "strength": 3,
+  "body": 4,
+  "flavorTags": [
+   "kakao",
+   "zemljano",
+   "slatko",
+   "kava"
+  ],
+  "smokeTimeMin": 60,
+  "priceEUR": 9,
+  "priceApprox": true,
+  "markets": [
+   "USA",
+   "EU",
+   "WW"
+  ],
+  "availabilityHR": [],
+  "notes": {
+   "hr": "Brazilski maduro wrapper — tamno i slatkasto, odličan value.",
+   "en": "Brazilian maduro wrapper — dark and sweetish, great value."
+  },
+  "vitolas": [
+   {
+    "name": "Gol! (robusto ext.)",
+    "format": "56 x 127mm",
+    "smokeTimeMin": 60,
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceUrl": null
+ },
+ {
+  "id": "cig-alec-bradley-prensado",
+  "brand": "Alec Bradley",
+  "line": "Prensado",
+  "vitola": "Robusto",
+  "format": "50 x 127mm",
+  "country": "Honduras",
+  "wrapper": "Honduras Corojo 2006",
+  "strength": 4,
+  "body": 4,
+  "flavorTags": [
+   "kakao",
+   "zacini",
+   "koza",
+   "zemljano"
+  ],
+  "smokeTimeMin": 55,
+  "priceEUR": 13,
+  "priceApprox": true,
+  "markets": [
+   "USA",
+   "EU",
+   "WW"
+  ],
+  "availabilityHR": [],
+  "notes": {
+   "hr": "Cigar of the Year 2011 — honduraška dubina, box-pressed.",
+   "en": "Cigar of the Year 2011 — Honduran depth, box-pressed."
+  },
+  "vitolas": [
+   {
+    "name": "Robusto",
+    "format": "50 x 127mm",
+    "smokeTimeMin": 55,
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceUrl": null
+ },
+ {
+  "id": "cig-crowned-heads-le-careme",
+  "brand": "Crowned Heads",
+  "line": "Le Carême",
+  "vitola": "Robusto",
+  "format": "50 x 127mm",
+  "country": "Nikaragva",
+  "wrapper": "Connecticut Broadleaf",
+  "strength": 3,
+  "body": 4,
+  "flavorTags": [
+   "kakao",
+   "slatko",
+   "kava",
+   "karamela"
+  ],
+  "smokeTimeMin": 55,
+  "priceEUR": 13,
+  "priceApprox": true,
+  "markets": [
+   "USA",
+   "WW"
+  ],
+  "availabilityHR": [],
+  "notes": {
+   "hr": "Inspirirana čokoladnim sufleom — desertna maduro cigara.",
+   "en": "Inspired by chocolate soufflé — a dessert maduro."
+  },
+  "vitolas": [
+   {
+    "name": "Robusto",
+    "format": "50 x 127mm",
+    "smokeTimeMin": 55,
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceUrl": null
+ },
+ {
+  "id": "cig-foundation-tabernacle",
+  "brand": "Foundation",
+  "line": "Tabernacle",
+  "vitola": "Robusto",
+  "format": "50 x 127mm",
+  "country": "Nikaragva",
+  "wrapper": "Connecticut Broadleaf",
+  "strength": 5,
+  "body": 5,
+  "flavorTags": [
+   "zemljano",
+   "kakao",
+   "papar",
+   "koza",
+   "dim"
+  ],
+  "smokeTimeMin": 50,
+  "priceEUR": 14,
+  "priceApprox": true,
+  "markets": [
+   "USA",
+   "WW"
+  ],
+  "availabilityHR": [],
+  "notes": {
+   "hr": "Tamna snaga Nicholasa Meloa — za overproof rum i Islay.",
+   "en": "Nicholas Melillo's dark power — for overproof rum and Islay."
+  },
+  "vitolas": [
+   {
+    "name": "Corona",
+    "format": "46 x 133mm",
+    "smokeTimeMin": 50,
+    "priceEUR": null,
+    "url": null
+   },
+   {
+    "name": "Robusto",
+    "format": "50 x 127mm",
+    "smokeTimeMin": 50,
+    "priceEUR": null,
+    "url": null
+   },
+   {
+    "name": "Toro",
+    "format": "52 x 152mm",
+    "smokeTimeMin": 60,
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceUrl": null
+ },
+ {
+  "id": "cig-foundation-charter-oak",
+  "brand": "Foundation",
+  "line": "Charter Oak Shade",
+  "vitola": "Toro",
+  "format": "52 x 152mm",
+  "country": "Nikaragva",
+  "wrapper": "Connecticut Shade",
+  "strength": 2,
+  "body": 2,
+  "flavorTags": [
+   "kremasto",
+   "trava-slatka",
+   "med",
+   "orasasti"
+  ],
+  "smokeTimeMin": 60,
+  "priceEUR": 6,
+  "priceApprox": true,
+  "markets": [
+   "USA",
+   "WW"
+  ],
+  "availabilityHR": [],
+  "notes": {
+   "hr": "Najbolji budget Connecticut u USA — blag, sladak, pošten.",
+   "en": "Best budget Connecticut in the USA — mild, sweet, honest."
+  },
+  "vitolas": [
+   {
+    "name": "Rothschild",
+    "format": "50 x 114mm",
+    "smokeTimeMin": 45,
+    "priceEUR": null,
+    "url": null
+   },
+   {
+    "name": "Toro",
+    "format": "52 x 152mm",
+    "smokeTimeMin": 60,
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceUrl": null
+ },
+ {
+  "id": "cig-aganorsa-la-validacion",
+  "brand": "Aganorsa Leaf",
+  "line": "La Validación Corojo",
+  "vitola": "Corojo Gran Robusto",
+  "format": "54 x 127mm",
+  "country": "Nikaragva",
+  "wrapper": "Corojo 99 (Aganorsa)",
+  "strength": 4,
+  "body": 4,
+  "flavorTags": [
+   "zacini-slatki",
+   "kremasto",
+   "cedar",
+   "papar"
+  ],
+  "smokeTimeMin": 50,
+  "priceEUR": 10.0,
+  "priceApprox": false,
+  "markets": [
+   "USA",
+   "WW"
+  ],
+  "availabilityHR": [
+   "The Humidor"
+  ],
+  "notes": {
+   "hr": "Slavni Aganorsa duhan — slatko-začinski, kremast dim.",
+   "en": "Famed Aganorsa tobacco — sweet-spiced, creamy smoke."
+  },
+  "vitolas": [
+   {
+    "name": "Connecticut Gran Robusto",
+    "format": "54 x 127mm",
+    "smokeTimeMin": 50,
+    "priceEUR": 10.0,
+    "url": "https://humidor.hr/en/proizvod/aganorsa-leaf-la-validacion-connecticut-gran-robusto-5-x-54/"
+   },
+   {
+    "name": "Habano Gran Robusto",
+    "format": "54 x 127mm",
+    "smokeTimeMin": 50,
+    "priceEUR": 10.0,
+    "url": "https://humidor.hr/en/proizvod/aganorsa-leaf-la-validacion-habano-gran-robusto-5-x-54/"
+   },
+   {
+    "name": "Corojo Gran Robusto",
+    "format": "54 x 127mm",
+    "smokeTimeMin": 50,
+    "priceEUR": 10.0,
+    "url": "https://humidor.hr/en/proizvod/aganorsa-leaf-la-validacion-corojo-gran-robusto-5-x-54/"
+   },
+   {
+    "name": "Maduro Gran Robusto",
+    "format": "54 x 127mm",
+    "smokeTimeMin": 50,
+    "priceEUR": 10.0,
+    "url": "https://humidor.hr/en/proizvod/aganorsa-leaf-la-validacion-maduro-gran-robusto-5-x-54/"
+   }
+  ],
+  "priceUrl": "https://humidor.hr/en/proizvod/aganorsa-leaf-la-validacion-connecticut-gran-robusto-5-x-54/"
+ },
+ {
+  "id": "cig-illusione-epernay",
+  "brand": "Illusione",
+  "line": "Epernay",
+  "vitola": "Le Petit (corona)",
+  "format": "44 x 114mm",
+  "country": "Nikaragva",
+  "wrapper": "Café Colorado (Corojo)",
+  "strength": 3,
+  "body": 3,
+  "flavorTags": [
+   "cedar",
+   "cvjetno",
+   "med",
+   "zacini"
+  ],
+  "smokeTimeMin": 40,
+  "priceEUR": 12,
+  "priceApprox": true,
+  "markets": [
+   "USA",
+   "WW"
+  ],
+  "availabilityHR": [],
+  "notes": {
+   "hr": "Elegancija po uzoru na šampanjac — rafinirana, aromatična.",
+   "en": "Champagne-inspired elegance — refined, aromatic."
+  },
+  "vitolas": [
+   {
+    "name": "Le Petit (corona)",
+    "format": "44 x 114mm",
+    "smokeTimeMin": 40,
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceUrl": null
+ },
+ {
+  "id": "cig-warped-flor-del-valle",
+  "brand": "Warped",
+  "line": "Flor del Valle",
+  "vitola": "Gran Valle (robusto)",
+  "format": "52 x 127mm",
+  "country": "Nikaragva",
+  "wrapper": "Corojo 99",
+  "strength": 3,
+  "body": 3,
+  "flavorTags": [
+   "kremasto",
+   "citrus",
+   "cedar",
+   "med"
+  ],
+  "smokeTimeMin": 50,
+  "priceEUR": 12,
+  "priceApprox": true,
+  "markets": [
+   "USA",
+   "WW"
+  ],
+  "availabilityHR": [],
+  "notes": {
+   "hr": "Kubanski stil stare škole — svijetao, kremast, boutique.",
+   "en": "Old-school Cuban style — bright, creamy, boutique."
+  },
+  "vitolas": [
+   {
+    "name": "Gran Valle (robusto)",
+    "format": "52 x 127mm",
+    "smokeTimeMin": 50,
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceUrl": null
+ },
+ {
+  "id": "cig-sobremesa",
+  "brand": "Dunbarton T&T",
+  "line": "Sobremesa",
+  "vitola": "El Americano",
+  "format": "52 x 152mm",
+  "country": "Nikaragva",
+  "wrapper": "Ecuador Habano Rosado",
+  "strength": 3,
+  "body": 4,
+  "flavorTags": [
+   "karamela",
+   "zacini",
+   "kava",
+   "cedar"
+  ],
+  "smokeTimeMin": 60,
+  "priceEUR": 13.5,
+  "priceApprox": false,
+  "markets": [
+   "USA",
+   "WW"
+  ],
+  "availabilityHR": [
+   "The Humidor"
+  ],
+  "notes": {
+   "hr": "Steve Saka remek-djelo — 'razgovor poslije večere' u cigari.",
+   "en": "Steve Saka's masterpiece — after-dinner conversation in a cigar."
+  },
+  "vitolas": [
+   {
+    "name": "Cervantes Fino",
+    "format": "46 x 159mm",
+    "smokeTimeMin": 60,
+    "priceEUR": 13.5,
+    "url": "https://humidor.hr/en/proizvod/sobremesa-cervantes-fino-6-1-4-x-46/"
+   },
+   {
+    "name": "El Americano",
+    "format": "52 x 152mm",
+    "smokeTimeMin": 60,
+    "priceEUR": 14.5,
+    "url": "https://humidor.hr/en/proizvod/sobremesa-el-americano-6-x-52/"
+   }
+  ],
+  "priceUrl": "https://humidor.hr/en/proizvod/sobremesa-cervantes-fino-6-1-4-x-46/"
+ },
+ {
+  "id": "cig-mi-querida",
+  "brand": "Dunbarton T&T",
+  "line": "Mi Querida",
+  "vitola": "Red Triqui Traca No. 552",
+  "format": "52 x 127mm",
+  "country": "Nikaragva",
+  "wrapper": "Connecticut Broadleaf",
+  "strength": 4,
+  "body": 5,
+  "flavorTags": [
+   "kakao",
+   "zemljano",
+   "slatko",
+   "koza"
+  ],
+  "smokeTimeMin": 50,
+  "priceEUR": 11.9,
+  "priceApprox": false,
+  "markets": [
+   "USA",
+   "WW"
+  ],
+  "availabilityHR": [
+   "The Humidor"
+  ],
+  "notes": {
+   "hr": "Broadleaf punog tijela — tamna slatkoća i zemlja.",
+   "en": "Full-bodied broadleaf — dark sweetness and earth."
+  },
+  "vitolas": [
+   {
+    "name": "Blue Ancho Corto",
+    "format": "52 x 127mm",
+    "smokeTimeMin": 50,
+    "priceEUR": 11.9,
+    "url": "https://humidor.hr/en/proizvod/mi-querida-blue-ancho-corto-5-x-52/"
+   },
+   {
+    "name": "Red Triqui Traca No. 552",
+    "format": "52 x 127mm",
+    "smokeTimeMin": 50,
+    "priceEUR": 12.9,
+    "url": "https://humidor.hr/en/proizvod/mi-querida-red-triqui-traca-no-552-5-x-52/"
+   }
+  ],
+  "priceUrl": "https://humidor.hr/en/proizvod/mi-querida-blue-ancho-corto-5-x-52/"
+ },
+ {
+  "id": "cig-la-flor-dominicana-andalusian",
+  "brand": "La Flor Dominicana",
+  "line": "Andalusian Bull",
+  "vitola": "Figurado",
+  "format": "64 x 165mm",
+  "country": "Dominikana",
+  "wrapper": "Ecuador Corojo",
+  "strength": 5,
+  "body": 5,
+  "flavorTags": [
+   "papar",
+   "zacini",
+   "koza",
+   "kakao"
+  ],
+  "smokeTimeMin": 90,
+  "priceEUR": 18,
+  "priceApprox": true,
+  "markets": [
+   "USA",
+   "WW"
+  ],
+  "availabilityHR": [],
+  "notes": {
+   "hr": "Cigar of the Year 2016 — golemi figurado pune snage.",
+   "en": "Cigar of the Year 2016 — a huge full-power figurado."
+  },
+  "vitolas": [
+   {
+    "name": "Figurado",
+    "format": "64 x 165mm",
+    "smokeTimeMin": 90,
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceUrl": null
+ },
+ {
+  "id": "cig-macanudo-cafe",
+  "brand": "Macanudo",
+  "line": "Café",
+  "vitola": "Crystal",
+  "format": "50 x 140mm",
+  "country": "Dominikana",
+  "wrapper": "Connecticut Shade (US)",
+  "strength": 1,
+  "body": 1,
+  "flavorTags": [
+   "kremasto",
+   "trava-slatka",
+   "orasasti"
+  ],
+  "smokeTimeMin": 55,
+  "priceEUR": 14.0,
+  "priceApprox": false,
+  "markets": [
+   "USA",
+   "EU",
+   "WW"
+  ],
+  "availabilityHR": [
+   "The Humidor"
+  ],
+  "notes": {
+   "hr": "Najblaža poznata cigara — uz prvu jutarnju kavu.",
+   "en": "The mildest famous cigar — with the first morning coffee."
+  },
+  "vitolas": [
+   {
+    "name": "Crystal",
+    "format": "50 x 140mm",
+    "smokeTimeMin": 55,
+    "priceEUR": 14.0,
+    "url": "https://humidor.hr/en/proizvod/macanudo-cafe-crystal-5%c2%bd-x-50/"
+   }
+  ],
+  "priceUrl": "https://humidor.hr/en/proizvod/macanudo-cafe-crystal-5%c2%bd-x-50/"
+ },
+ {
+  "id": "cig-romeo-1875",
+  "brand": "Romeo y Julieta (NW)",
+  "line": "1875 (Dominikana)",
+  "vitola": "Bully (robusto)",
+  "format": "50 x 127mm",
+  "country": "Dominikana",
+  "wrapper": "Indonesia TBN Shade",
+  "strength": 2,
+  "body": 2,
+  "flavorTags": [
+   "cedar",
+   "orasasti",
+   "med",
+   "zacini"
+  ],
+  "smokeTimeMin": 50,
+  "priceEUR": 8,
+  "priceApprox": true,
+  "markets": [
+   "USA",
+   "WW"
+  ],
+  "availabilityHR": [],
+  "notes": {
+   "hr": "Ne-kubanska RyJ za američko tržište — blaga i pouzdana.",
+   "en": "The non-Cuban RyJ for the US market — mild and dependable."
+  },
+  "vitolas": [
+   {
+    "name": "Bully (robusto)",
+    "format": "50 x 127mm",
+    "smokeTimeMin": 50,
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceUrl": null
+ },
+ {
+  "id": "cig-montecristo-white",
+  "brand": "Montecristo (NW)",
+  "line": "White Series (Dominikana)",
+  "vitola": "Robusto Grande",
+  "format": "52 x 127mm",
+  "country": "Dominikana",
+  "wrapper": "Ecuador Connecticut",
+  "strength": 2,
+  "body": 2,
+  "flavorTags": [
+   "kremasto",
+   "orasasti",
+   "vanilija",
+   "cedar"
+  ],
+  "smokeTimeMin": 55,
+  "priceEUR": 12,
+  "priceApprox": true,
+  "markets": [
+   "USA",
+   "WW"
+  ],
+  "availabilityHR": [],
+  "notes": {
+   "hr": "Dominikanska Montecristo verzija — glatka, blaga, premium izrada.",
+   "en": "The Dominican Montecristo — smooth, mild, premium construction."
+  },
+  "vitolas": [
+   {
+    "name": "Robusto Grande",
+    "format": "52 x 127mm",
+    "smokeTimeMin": 55,
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceUrl": null
+ },
+ {
+  "id": "cig-vegafina-classic",
+  "brand": "VegaFina",
+  "line": "Classic / Fortaleza 2",
+  "vitola": "Robusto",
+  "format": "50 x 127mm",
+  "country": "Dominikana",
+  "wrapper": "Ecuador Connecticut",
+  "strength": 2,
+  "body": 2,
+  "flavorTags": [
+   "kremasto",
+   "cedar",
+   "orasasti",
+   "trava-slatka"
+  ],
+  "smokeTimeMin": 50,
+  "priceEUR": 7,
+  "priceApprox": true,
+  "markets": [
+   "HR",
+   "EU",
+   "WW"
+  ],
+  "availabilityHR": [
+   "trafike/iCigara"
+  ],
+  "notes": {
+   "hr": "Najrasprostranjenija blaga cigara u EU — dostupna i u HR trafikama.",
+   "en": "The most widespread mild cigar in the EU — available in Croatian tobacco shops."
+  },
+  "vitolas": [
+   {
+    "name": "Corona",
+    "format": "42 x 142mm",
+    "smokeTimeMin": 50,
+    "priceEUR": null,
+    "url": null
+   },
+   {
+    "name": "Robusto",
+    "format": "50 x 127mm",
+    "smokeTimeMin": 50,
+    "priceEUR": null,
+    "url": null
+   },
+   {
+    "name": "Fortaleza 2 Toro",
+    "format": "52 x 152mm",
+    "smokeTimeMin": 60,
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceUrl": null
+ },
+ {
+  "id": "cig-balmoral-anejo-xo",
+  "brand": "Balmoral",
+  "line": "Añejo XO",
+  "vitola": "Rothschild Masivo",
+  "format": "55 x 120mm",
+  "country": "Dominikana",
+  "wrapper": "Brazil Arapiraca",
+  "strength": 3,
+  "body": 4,
+  "flavorTags": [
+   "kakao",
+   "zacini",
+   "karamela",
+   "hrast"
+  ],
+  "smokeTimeMin": 55,
+  "priceEUR": 11,
+  "priceApprox": true,
+  "markets": [
+   "EU",
+   "WW"
+  ],
+  "availabilityHR": [],
+  "notes": {
+   "hr": "Nizozemski premium (Royal Agio) — odležani blend, EU specijalitet.",
+   "en": "Dutch premium (Royal Agio) — aged blend, an EU speciality."
+  },
+  "vitolas": [
+   {
+    "name": "Rothschild Masivo",
+    "format": "55 x 120mm",
+    "smokeTimeMin": 55,
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceUrl": null
+ },
+ {
+  "id": "cig-flor-de-copan",
+  "brand": "Flor de Copán",
+  "line": "Classic",
+  "vitola": "Rothschild",
+  "format": "50 x 114mm",
+  "country": "Honduras",
+  "wrapper": "Habano (Honduras)",
+  "strength": 2,
+  "body": 3,
+  "flavorTags": [
+   "zemljano",
+   "cedar",
+   "karamela"
+  ],
+  "smokeTimeMin": 45,
+  "priceEUR": 8,
+  "priceApprox": true,
+  "markets": [
+   "EU",
+   "WW"
+  ],
+  "availabilityHR": [],
+  "notes": {
+   "hr": "Honduraška tradicija (Villiger) — blago-srednja, dostupna u EU.",
+   "en": "Honduran tradition (Villiger) — mild-medium, EU-available."
+  },
+  "vitolas": [
+   {
+    "name": "Rothschild",
+    "format": "50 x 114mm",
+    "smokeTimeMin": 45,
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceUrl": null
+ },
+ {
+  "id": "cig-villiger-la-libertad",
+  "brand": "Villiger",
+  "line": "La Libertad",
+  "vitola": "Robusto",
+  "format": "50 x 127mm",
+  "country": "Dominikana",
+  "wrapper": "Ecuador Habano",
+  "strength": 3,
+  "body": 3,
+  "flavorTags": [
+   "zacini",
+   "cedar",
+   "kava",
+   "zemljano"
+  ],
+  "smokeTimeMin": 50,
+  "priceEUR": 7,
+  "priceApprox": true,
+  "markets": [
+   "EU",
+   "WW"
+  ],
+  "availabilityHR": [],
+  "notes": {
+   "hr": "Švicarski brend, dominikanska izrada — value za EU tržište.",
+   "en": "Swiss brand, Dominican make — value for the EU market."
+  },
+  "vitolas": [
+   {
+    "name": "Robusto",
+    "format": "50 x 127mm",
+    "smokeTimeMin": 50,
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceUrl": null
+ },
+ {
+  "id": "cig-joya-antano-gran-reserva",
+  "brand": "Joya de Nicaragua",
+  "line": "Antaño Gran Reserva",
+  "vitola": "Robusto Grande",
+  "format": "52 x 121mm",
+  "country": "Nikaragva",
+  "wrapper": "Habano (odležan 5 god)",
+  "strength": 4,
+  "body": 4,
+  "flavorTags": [
+   "kakao",
+   "koza",
+   "zemljano",
+   "karamela"
+  ],
+  "smokeTimeMin": 55,
+  "priceEUR": 14,
+  "priceApprox": true,
+  "markets": [
+   "USA",
+   "EU",
+   "WW"
+  ],
+  "availabilityHR": [],
+  "notes": {
+   "hr": "Odležana verzija Antaña — zaobljenija snaga.",
+   "en": "The aged Antaño — power with rounder edges."
+  },
+  "vitolas": [
+   {
+    "name": "Robusto Grande",
+    "format": "52 x 121mm",
+    "smokeTimeMin": 55,
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceUrl": null
+ },
+ {
+  "id": "cig-oliva-serie-v-135",
+  "brand": "Oliva",
+  "line": "Serie V 135th Anniversary",
+  "vitola": "Perfecto",
+  "format": "52 x 152mm",
+  "country": "Nikaragva",
+  "wrapper": "Ecuador Sumatra",
+  "strength": 4,
+  "body": 4,
+  "flavorTags": [
+   "kakao",
+   "karamela",
+   "zacini",
+   "hrast"
+  ],
+  "smokeTimeMin": 70,
+  "priceEUR": 20,
+  "priceApprox": true,
+  "markets": [
+   "USA",
+   "EU",
+   "WW"
+  ],
+  "availabilityHR": [],
+  "notes": {
+   "hr": "Jubilarna edicija Serie V — svečana verzija nagrađivanog blenda.",
+   "en": "Anniversary edition of Serie V — the celebratory take on the awarded blend."
+  },
+  "vitolas": [
+   {
+    "name": "Perfecto",
+    "format": "52 x 152mm",
+    "smokeTimeMin": 70,
+    "priceEUR": null,
+    "url": null
+   }
+  ],
+  "priceUrl": null
+ },
+ {
+  "id": "cig-oliva-connecticut-reserve",
+  "brand": "Oliva",
+  "line": "Connecticut Reserve",
+  "vitola": "Robusto",
+  "format": "50 x 127mm",
+  "country": "Nikaragva",
+  "wrapper": "Ecuador Connecticut",
+  "strength": 2,
+  "body": 3,
+  "flavorTags": [
+   "kremasto",
+   "orasasti",
+   "med",
+   "cedar"
+  ],
+  "smokeTimeMin": 50,
+  "priceEUR": 9.1,
+  "priceApprox": false,
+  "markets": [
+   "HR",
+   "EU",
+   "USA",
+   "WW"
+  ],
+  "availabilityHR": [
+   "The Humidor"
+  ],
+  "notes": {
+   "hr": "Blaga Oliva — kremasti Connecticut na nikaragvanskoj bazi.",
+   "en": "Mild Oliva — creamy Connecticut on a Nicaraguan base."
+  },
+  "vitolas": [
+   {
+    "name": "Robusto",
+    "format": "50 x 127mm",
+    "smokeTimeMin": 50,
+    "priceEUR": 9.1,
+    "url": "https://humidor.hr/en/proizvod/oliva-connecticut-reserve-robusto-5-x-50/"
+   }
+  ],
+  "priceUrl": "https://humidor.hr/en/proizvod/oliva-connecticut-reserve-robusto-5-x-50/"
+ },
+ {
+  "id": "cig-la-galera-connecticut",
+  "brand": "La Galera",
+  "line": "Connecticut",
+  "vitola": "Robusto",
+  "format": "50 x 130mm",
+  "country": "Dominikana",
+  "wrapper": "Ecuador Connecticut",
+  "strength": 2,
+  "body": 2,
+  "flavorTags": [
+   "kremasto",
+   "med",
+   "cedar",
+   "trava-slatka"
+  ],
+  "smokeTimeMin": 50,
+  "priceEUR": 6.4,
+  "priceApprox": false,
+  "markets": [
+   "HR",
+   "EU",
+   "USA",
+   "WW"
+  ],
+  "availabilityHR": [
+   "The Humidor"
+  ],
+  "notes": {
+   "hr": "Blaga dominikanska linija — value Connecticut u puno formata.",
+   "en": "Mild Dominican line — value Connecticut in many formats."
+  },
+  "vitolas": [
+   {
+    "name": "Half Corona",
+    "format": "46 x 89mm",
+    "smokeTimeMin": 30,
+    "priceEUR": 6.4,
+    "url": "https://humidor.hr/en/proizvod/la-galera-connecticut-half-corona-3-%c2%bd-x-46/"
+   },
+   {
+    "name": "No.4",
+    "format": "42 x 140mm",
+    "smokeTimeMin": 50,
+    "priceEUR": 8.9,
+    "url": "https://humidor.hr/en/proizvod/la-galera-connecticut-bonchero-no-4-5-5-x-42/"
+   },
+   {
+    "name": "Robusto",
+    "format": "50 x 130mm",
+    "smokeTimeMin": 50,
+    "priceEUR": 9.9,
+    "url": "https://humidor.hr/en/proizvod/la-galera-connecticut-robusto-chaveta-5-1-8-x-50/"
+   },
+   {
+    "name": "Pegador",
+    "format": "46 x 152mm",
+    "smokeTimeMin": 55,
+    "priceEUR": 9.3,
+    "url": "https://humidor.hr/en/proizvod/la-galera-connecticut-pegador/"
+   },
+   {
+    "name": "Churchill Tabaquero Presidente",
+    "format": "50 x 184mm",
+    "smokeTimeMin": 70,
+    "priceEUR": 12.0,
+    "url": "https://humidor.hr/en/proizvod/la-galera-connecticut-churchill-tabaquero-presidente-7%c2%bc-x-50/"
+   }
+  ],
+  "priceUrl": "https://humidor.hr/en/proizvod/la-galera-connecticut-half-corona-3-%c2%bd-x-46/"
+ },
+ {
+  "id": "cig-la-aurora-107",
+  "brand": "La Aurora",
+  "line": "107 / 107 Nicaragua",
+  "vitola": "Nicaragua Robusto",
+  "format": "50 x 127mm",
+  "country": "Dominikana",
+  "wrapper": "Ecuador Sun Grown / Nicaragua",
+  "strength": 3,
+  "body": 3,
+  "flavorTags": [
+   "cedar",
+   "zacini",
+   "kakao",
+   "zemljano"
+  ],
+  "smokeTimeMin": 50,
+  "priceEUR": 9.2,
+  "priceApprox": false,
+  "markets": [
+   "HR",
+   "EU",
+   "USA",
+   "WW"
+  ],
+  "availabilityHR": [
+   "The Humidor"
+  ],
+  "notes": {
+   "hr": "Najstarija dominikanska fabrika (1903) — uravnotežena moderna linija.",
+   "en": "The oldest Dominican factory (1903) — a balanced modern line."
+  },
+  "vitolas": [
+   {
+    "name": "Zeppelin",
+    "format": "64 x 102mm",
+    "smokeTimeMin": 40,
+    "priceEUR": 9.8,
+    "url": "https://humidor.hr/en/proizvod/la-aurora-107-zeppelin-4-x-64/"
+   },
+   {
+    "name": "Nicaragua Zepelin",
+    "format": "64 x 102mm",
+    "smokeTimeMin": 40,
+    "priceEUR": 10.7,
+    "url": "https://humidor.hr/en/proizvod/la-aurora-107-nicaragua-zepelin-4-x-64/"
+   },
+   {
+    "name": "Nicaragua Robusto",
+    "format": "50 x 127mm",
+    "smokeTimeMin": 50,
+    "priceEUR": 9.2,
+    "url": "https://humidor.hr/en/proizvod/la-aurora-107-nicaragua-robusto-5-x-50-2/"
+   },
+   {
+    "name": "Belicoso",
+    "format": "52 x 159mm",
+    "smokeTimeMin": 60,
+    "priceEUR": 11.2,
+    "url": "https://humidor.hr/en/proizvod/la-aurora-107-belicoso-6-1-4-x-52-2/"
+   }
+  ],
+  "priceUrl": "https://humidor.hr/en/proizvod/la-aurora-107-nicaragua-robusto-5-x-50-2/"
+ },
+ {
+  "id": "cig-aganorsa-aniversario",
+  "brand": "Aganorsa Leaf",
+  "line": "Aniversario",
+  "vitola": "Maduro Robusto",
+  "format": "54 x 127mm",
+  "country": "Nikaragva",
+  "wrapper": "Corojo / Connecticut / Maduro",
+  "strength": 3,
+  "body": 4,
+  "flavorTags": [
+   "kremasto",
+   "zacini-slatki",
+   "kakao",
+   "cedar"
+  ],
+  "smokeTimeMin": 50,
+  "priceEUR": 13.5,
+  "priceApprox": false,
+  "markets": [
+   "HR",
+   "EU",
+   "USA",
+   "WW"
+  ],
+  "availabilityHR": [
+   "The Humidor"
+  ],
+  "notes": {
+   "hr": "Jubilarna Aganorsa linija u tri wrappera — svilenkast dim.",
+   "en": "Aganorsa's anniversary line in three wrappers — silky smoke."
+  },
+  "vitolas": [
+   {
+    "name": "Connecticut Robusto",
+    "format": "54 x 127mm",
+    "smokeTimeMin": 50,
+    "priceEUR": 13.5,
+    "url": "https://humidor.hr/en/proizvod/aganorsa-leaf-aniversario-connecticut-robusto-5-x-54/"
+   },
+   {
+    "name": "Corojo Robusto",
+    "format": "54 x 127mm",
+    "smokeTimeMin": 50,
+    "priceEUR": 13.5,
+    "url": "https://humidor.hr/en/proizvod/aganorsa-leaf-aniversario-corojo-robusto-5-x-54/"
+   },
+   {
+    "name": "Maduro Robusto",
+    "format": "54 x 127mm",
+    "smokeTimeMin": 50,
+    "priceEUR": 13.5,
+    "url": "https://humidor.hr/en/proizvod/aganorsa-leaf-aniversario-maduro-robusto-5-x-54/"
+   },
+   {
+    "name": "Corojo Toro",
+    "format": "58 x 152mm",
+    "smokeTimeMin": 60,
+    "priceEUR": 15.0,
+    "url": "https://humidor.hr/en/proizvod/aganorsa-leaf-aniversario-corojo-toro-6-x-58/"
+   }
+  ],
+  "priceUrl": "https://humidor.hr/en/proizvod/aganorsa-leaf-aniversario-connecticut-robusto-5-x-54/"
+ },
+ {
+  "id": "cig-sobremesa-brulee",
+  "brand": "Dunbarton T&T",
+  "line": "Sobremesa Brulée",
+  "vitola": "Blue",
+  "format": "46 x 159mm",
+  "country": "Nikaragva",
+  "wrapper": "Ecuador Connecticut",
+  "strength": 2,
+  "body": 3,
+  "flavorTags": [
+   "kremasto",
+   "med",
+   "vanilija",
+   "slatko"
+  ],
+  "smokeTimeMin": 60,
+  "priceEUR": 13.9,
+  "priceApprox": false,
+  "markets": [
+   "HR",
+   "EU",
+   "USA",
+   "WW"
+  ],
+  "availabilityHR": [
+   "The Humidor"
+  ],
+  "notes": {
+   "hr": "'Crème brûlée' cigara — slatka blaga strana Steve Sake.",
+   "en": "The 'crème brûlée' cigar — Steve Saka's sweet mild side."
+  },
+  "vitolas": [
+   {
+    "name": "Robusto",
+    "format": "52 x 133mm",
+    "smokeTimeMin": 50,
+    "priceEUR": 13.9,
+    "url": "https://humidor.hr/en/proizvod/sobremesa-brulee-blue-6-1-4-x-46/"
+   },
+   {
+    "name": "Blue",
+    "format": "46 x 159mm",
+    "smokeTimeMin": 60,
+    "priceEUR": 14.5,
+    "url": "https://humidor.hr/en/proizvod/sobremesa-brulee-blue-6-1-4-x-46/"
+   },
+   {
+    "name": "Double Corona",
+    "format": "54 x 178mm",
+    "smokeTimeMin": 70,
+    "priceEUR": 17.9,
+    "url": "https://humidor.hr/en/proizvod/sobremesa-brulee-double-corono-7-x-54/"
+   }
+  ],
+  "priceUrl": "https://humidor.hr/en/proizvod/sobremesa-brulee-blue-6-1-4-x-46/"
+ }
 ]

@@ -84,26 +84,29 @@ def export_cigars():
     ws.title = "Cigare (geo dostupnost)"
     ws.append(["CIGARE — indeks po dostupnosti: filtriraj stupce HR/EU/USA/Svijet"])
     ws.cell(row=1, column=1).font = TITLE_FONT
-    cols = ["Brand", "Linija", "Vitola", "Format", "Zemlja", "Wrapper",
-            "Snaga 1-5", "Tijelo 1-5", "Min", "Cijena €", "HR", "EU", "USA",
+    cols = ["Brand", "Linija", "Vitole (⏱ min)", "Zemlja", "Wrapper",
+            "Snaga 1-5", "Tijelo 1-5", "Cijena €", "HR", "EU", "USA",
             "Svijet", "Note", "Komentar"]
     ws.append(cols)
     style_header(ws, 2, len(cols))
     for c in items:
         m = c["markets"]
+        vitole = "; ".join(
+            f"{v['name']} ({v['smokeTimeMin']}min{', ' + str(v['priceEUR']) + '€' if v.get('priceEUR') else ''})"
+            for v in c.get("vitolas", []))
         ws.append([
-            c["brand"], c["line"], c["vitola"], c["format"], c["country"],
-            c["wrapper"], c["strength"], c["body"], c["smokeTimeMin"],
+            c["brand"], c["line"], vitole, c["country"],
+            c["wrapper"], c["strength"], c["body"],
             price_str(c.get("priceEUR")),
             "✓" if "HR" in m else "", "✓" if "EU" in m else "",
             "✓" if "USA" in m else "", "✓" if "WW" in m else "",
             ", ".join(c["flavorTags"]), c["notes"]["hr"],
         ])
-    widths = [16, 26, 22, 16, 12, 26, 9, 9, 6, 10, 5, 5, 6, 7, 28, 55]
-    for col, w in zip(["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P"], widths):
+    widths = [16, 26, 55, 12, 26, 9, 9, 10, 5, 5, 6, 7, 28, 55]
+    for col, w in zip(["A","B","C","D","E","F","G","H","I","J","K","L","M","N"], widths):
         ws.column_dimensions[col].width = w
     ws.freeze_panes = "A3"
-    ws.auto_filter.ref = f"A2:P{ws.max_row}"
+    ws.auto_filter.ref = f"A2:N{ws.max_row}"
     wb.save(OUT / "Cigare_Index.xlsx")
     print(f"Cigare_Index.xlsx: {len(items)} stavki")
 

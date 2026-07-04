@@ -25,6 +25,26 @@ export function PairingPage() {
   );
   // indeks "sljedeceg prijedloga" po kategoriji (cigara->pice) ili offset (pice->cigare)
   const [cycle, setCycle] = useState<Record<string, number>>({});
+  const [showPrefs, setShowPrefs] = useState(false);
+  const [excludedCountries, setExcludedCountries] = useState<string[]>(
+    () => JSON.parse(localStorage.getItem("prefs-excluded-countries") ?? "[]"),
+  );
+  const [excludedBrands, setExcludedBrands] = useState<string[]>(
+    () => JSON.parse(localStorage.getItem("prefs-excluded-brands") ?? "[]"),
+  );
+
+  const toggleExcluded = (
+    value: string,
+    list: string[],
+    set: (v: string[]) => void,
+    key: string,
+  ) => {
+    const next = list.includes(value)
+      ? list.filter((x) => x !== value)
+      : [...list, value];
+    localStorage.setItem(key, JSON.stringify(next));
+    set(next);
+  };
   const [detail, setDetail] = useState<
     { kind: "cigar"; item: Cigar } | { kind: "drink"; item: Drink } | null
   >(null);
@@ -37,8 +57,23 @@ export function PairingPage() {
   };
 
   const marketCigars = useMemo(
-    () => CIGARS.filter((c) => c.markets.includes(market)),
-    [market],
+    () =>
+      CIGARS.filter(
+        (c) =>
+          c.markets.includes(market) &&
+          !excludedCountries.includes(c.country) &&
+          !excludedBrands.includes(c.brand),
+      ),
+    [market, excludedCountries, excludedBrands],
+  );
+
+  const allCountries = useMemo(
+    () => [...new Set(CIGARS.map((c) => c.country))].sort(),
+    [],
+  );
+  const allBrands = useMemo(
+    () => [...new Set(CIGARS.map((c) => c.brand))].sort(),
+    [],
   );
 
   const pickList = useMemo(() => {
@@ -71,15 +106,23 @@ export function PairingPage() {
     };
   }, [mode, selectedCigar, onlyMine, cycle]);
 
-  // pice -> tocno 3 cigare (cycle pomice prozor za 3)
+  // pice -> tocno 3 cigare RAZLICITIH brendova (cycle pomice prozor za 3)
   const cigarSuggestions = useMemo(() => {
     if (mode !== "drinkToCigar" || !selectedDrink) return null;
     let cigars = marketCigars;
     if (onlyMine) cigars = cigars.filter((c) => getItemState(c.id).owned);
     const ranked = pairCigarsForDrink(selectedDrink, cigars);
     if (ranked.length === 0) return { window: [], total: 0 };
-    const offset = ((cycle["cigars"] ?? 0) * 3) % Math.max(ranked.length, 1);
-    return { window: ranked.slice(offset, offset + 3), total: ranked.length };
+    // diversity: po jedna najbolja cigara svakog brenda
+    const seen = new Set<string>();
+    const diverse = ranked.filter((r) => {
+      if (seen.has(r.item.brand)) return false;
+      seen.add(r.item.brand);
+      return true;
+    });
+    const pool = diverse.length >= 3 ? diverse : ranked;
+    const offset = ((cycle["cigars"] ?? 0) * 3) % Math.max(pool.length, 1);
+    return { window: pool.slice(offset, offset + 3), total: pool.length };
   }, [mode, selectedDrink, onlyMine, cycle, marketCigars]);
 
   const reset = () => {
@@ -121,7 +164,50 @@ export function PairingPage() {
             {t(`market.${m}` as StringKey)}
           </Chip>
         ))}
+        <Chip
+          active={showPrefs || excludedCountries.length > 0 || excludedBrands.length > 0}
+          onClick={() => setShowPrefs(!showPrefs)}
+        >
+          ⚙ {excludedCountries.length + excludedBrands.length || ""}
+        </Chip>
       </div>
+
+      {/* preferencije: zemlje/brendovi koje NE zelis u prijedlozima */}
+      {showPrefs && (
+        <div className="mt-2 rounded-xl border border-dim/20 bg-cedar p-3">
+          <div className="mb-1 font-display text-[11px] uppercase tracking-[0.2em] text-zlato">
+            {t("pair.prefs")}
+          </div>
+          <div className="mb-2 text-[11px] text-dim">{t("pair.prefsHint")}</div>
+          <div className="flex flex-wrap gap-1.5">
+            {allCountries.map((cty) => (
+              <Chip
+                key={cty}
+                active={!excludedCountries.includes(cty)}
+                onClick={() =>
+                  toggleExcluded(cty, excludedCountries, setExcludedCountries, "prefs-excluded-countries")
+                }
+              >
+                {excludedCountries.includes(cty) ? "✕ " : ""}{cty}
+              </Chip>
+            ))}
+          </div>
+          <div className="band-rule my-2" />
+          <div className="flex max-h-32 flex-wrap gap-1.5 overflow-y-auto">
+            {allBrands.map((b) => (
+              <Chip
+                key={b}
+                active={!excludedBrands.includes(b)}
+                onClick={() =>
+                  toggleExcluded(b, excludedBrands, setExcludedBrands, "prefs-excluded-brands")
+                }
+              >
+                {excludedBrands.includes(b) ? "✕ " : ""}{b}
+              </Chip>
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* picker */}
       {!selected && (
@@ -223,6 +309,7 @@ export function PairingPage() {
                       title={result.item.name}
                       sub={lx(STYLE_LABELS[result.item.style]) || result.item.style}
                       price={formatPrice(result.item.priceEUR)}
+                      priceUrl={result.item.priceUrl}
                       excelHint={result.item.cigarHint}
                       onOpen={() => setDetail({ kind: "drink", item: result.item })}
                     />
@@ -274,8 +361,10 @@ export function PairingPage() {
                   key={r.item.id}
                   result={r}
                   title={`${r.item.brand} ${r.item.line}`}
-                  sub={`${r.item.vitola} · ${r.item.wrapper}`}
+                  sub={r.item.wrapper}
                   price={formatPrice(r.item.priceEUR)}
+                  priceUrl={r.item.priceUrl}
+                  vitolas={r.item.vitolas}
                   excelHint={null}
                   onOpen={() => setDetail({ kind: "cigar", item: r.item })}
                 />
@@ -315,6 +404,8 @@ function ResultCard<T>({
   title,
   sub,
   price,
+  priceUrl,
+  vitolas,
   excelHint,
   onOpen,
 }: {
@@ -322,6 +413,8 @@ function ResultCard<T>({
   title: string;
   sub: string;
   price: string;
+  priceUrl?: string | null;
+  vitolas?: import("../types").Vitola[];
   excelHint: string | null | undefined;
   onOpen: () => void;
 }) {
@@ -333,12 +426,31 @@ function ResultCard<T>({
     <div className="rounded-xl border border-dim/15 bg-cedar p-3">
       <div className="flex items-center gap-3">
         <ScoreBand score={result.score} />
-        <button onClick={onOpen} className="min-w-0 flex-1 text-left">
+        <div
+          onClick={onOpen}
+          role="button"
+          tabIndex={0}
+          onKeyDown={(e) => e.key === "Enter" && onOpen()}
+          className="min-w-0 flex-1 cursor-pointer text-left"
+        >
           <div className="truncate font-display text-[15px] text-papir">{title}</div>
           <div className="truncate text-xs text-dim">
-            {sub} · {price}
+            {sub} ·{" "}
+            {priceUrl ? (
+              <a
+                href={priceUrl}
+                target="_blank"
+                rel="noreferrer"
+                onClick={(e) => e.stopPropagation()}
+                className="text-zlato-2 underline decoration-zlato/40 underline-offset-2"
+              >
+                {price} ↗
+              </a>
+            ) : (
+              price
+            )}
           </div>
-        </button>
+        </div>
         <button
           onClick={() => setOpen(!open)}
           className="shrink-0 rounded-md border border-dim/25 px-2 py-1 text-xs text-dim hover:border-zlato/50"
@@ -348,6 +460,24 @@ function ResultCard<T>({
           {open ? "▴" : "▾"}
         </button>
       </div>
+      {vitolas && vitolas.length > 0 && (
+        <div className="no-scrollbar mt-2 flex gap-1.5 overflow-x-auto">
+          {vitolas.map((v) => (
+            <span
+              key={v.name}
+              className="inline-flex shrink-0 items-center gap-1 rounded-md border border-dim/25 px-2 py-1 text-[11px] text-papir/85"
+            >
+              {v.name}
+              {v.smokeTimeMin != null && (
+                <span className="text-dim">⏱{v.smokeTimeMin}′</span>
+              )}
+              {v.priceEUR != null && (
+                <span className="text-zlato-2">{v.priceEUR.toFixed(1)}€</span>
+              )}
+            </span>
+          ))}
+        </div>
+      )}
       {excelHint && (
         <div className="mt-2 rounded-md border border-zlato/25 bg-zlato/10 px-2.5 py-1.5 text-xs text-zlato-2">
           ★ {t("pair.excelHint")}: {excelHint}

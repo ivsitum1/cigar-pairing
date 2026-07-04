@@ -133,8 +133,32 @@ def match_tokens(name: str) -> set:
 
 # ---------------------------------------------------------------- extraction
 
+def build_catalog_index(wb):
+    """Katalog allez+ecuga sheet -> [(tokens, url, cijena)] za povezivanje linkova."""
+    index = []
+    for row in wb["Katalog allez+ecuga"].iter_rows(min_row=3, values_only=True):
+        name, price, shop, url = row[0], row[1], row[2], row[3]
+        if not name or not url:
+            continue
+        index.append({"tokens": match_tokens(str(name)), "url": str(url),
+                      "name": str(name)})
+    return index
+
+
+def find_catalog_url(name: str, catalog) -> str | None:
+    """Najbolji match po broju zajednickih tokena; prag >= 2."""
+    tokens = match_tokens(name)
+    best, best_score = None, 0
+    for entry in catalog:
+        score = len(tokens & entry["tokens"])
+        if score > best_score:
+            best, best_score = entry, score
+    return best["url"] if best and best_score >= 2 else None
+
+
 def extract_rums(wb):
     ws = wb["MASTER Ocjene"]
+    catalog = build_catalog_index(wb)
     # serviranje redovi za name-match
     serve_rows = []
     for row in wb["Serviranje + Cigare"].iter_rows(min_row=3, values_only=True):
@@ -211,6 +235,7 @@ def extract_rums(wb):
             "pairable": style not in NON_PAIRABLE and float(quality) >= 4,
             "serving": serving,
             "cigarHint": cigar_hint,
+            "priceUrl": find_catalog_url(str(name), catalog),
             "notes": {"hr": comment, "en": ""},
         })
     return rums
@@ -244,8 +269,9 @@ def extract_shopping(wb):
         {"name": "Lidl", "location": "HR", "note": {"hr": "Planteray, Havana Club, Dos Maderas, La Hechicera — akcije", "en": "Planteray, Havana Club, Dos Maderas, La Hechicera — good deals"}},
         {"name": "Vivat Finavina", "location": "Zagreb", "note": {"hr": "Vise dessert/spiced; cisti: El Dorado 12, Pampero", "en": "Leans dessert/spiced; clean picks: El Dorado 12, Pampero"}},
         {"name": "Vrutak", "location": "Zagreb", "note": {"hr": "Premium/limited izdanja", "en": "Premium/limited releases"}},
-        {"name": "Havana Shop (Camelot)", "location": "Zagreb, Split, Dubrovnik...", "note": {"hr": "Ekskluzivni uvoznik Habanos i Davidoff cigara za HR", "en": "Exclusive Habanos & Davidoff cigar importer for Croatia"}},
-        {"name": "The Humidor", "location": "Zagreb", "note": {"hr": "Premium cigare (kubanske + New World) i zestice", "en": "Premium cigars (Cuban + New World) and spirits"}},
+        {"name": "Havana Shop (Camelot)", "location": "Zagreb, Split, Rovinj (+ Ljubljana)", "note": {"hr": "Ekskluzivni uvoznik Habanos i Davidoff cigara za HR/SLO — havana-cigar-shop.com", "en": "Exclusive Habanos & Davidoff cigar importer for Croatia/Slovenia — havana-cigar-shop.com"}},
+        {"name": "The Humidor / Premium Cigars", "location": "Petrinjska 5 + Centar Kaptol, Zagreb", "note": {"hr": "Ista firma, 2 lokacije — New World boutique + kubanke, humidor.hr (cijene po vitoli)", "en": "Same company, 2 locations — New World boutique + Cubans, humidor.hr (per-vitola prices)"}},
+        {"name": "Trafike / iCigara", "location": "HR", "note": {"hr": "VegaFina i cigarilosi u boljim trafikama; online prodaja duhana u HR nije dozvoljena", "en": "VegaFina and cigarillos in better tobacco kiosks; online tobacco sales are not allowed in Croatia"}},
     ]
 
     recommendations = [

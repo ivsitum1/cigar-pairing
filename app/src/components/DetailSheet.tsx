@@ -115,19 +115,43 @@ function CigarDetails({ cigar }: { cigar: Cigar }) {
         {cigar.brand} <span className="text-zlato-2">{cigar.line}</span>
       </div>
       <div className="mt-1 text-sm text-dim">
-        {cigar.vitola} · {cigar.format} · {cigar.country}
+        {cigar.country} · {cigar.wrapper}
       </div>
       <div className="mt-3 flex flex-wrap gap-x-5 gap-y-2">
         <Meter value={cigar.strength} label={t("common.strength")} accent="var(--color-oxblood)" />
         <Meter value={cigar.body} label={t("common.body")} />
       </div>
+
+      {/* vitole s vremenom pusenja i cijenom */}
+      <div className="mt-3">
+        <div className="mb-1 text-[10px] uppercase tracking-widest text-dim">
+          {t("common.vitolas")}
+        </div>
+        <div className="space-y-1">
+          {cigar.vitolas.map((v) => (
+            <div
+              key={v.name}
+              className="flex items-baseline justify-between gap-2 rounded-md border border-dim/15 px-2.5 py-1.5 text-sm"
+            >
+              <span className="text-papir/90">{v.name}</span>
+              <span className="shrink-0 text-xs text-dim">
+                {v.format ? `${v.format} · ` : ""}
+                {v.smokeTimeMin != null ? `⏱ ~${v.smokeTimeMin} min` : ""}
+                {v.priceEUR != null &&
+                  (v.url ? (
+                    <a href={v.url} target="_blank" rel="noreferrer" className="ml-1.5 text-zlato-2 underline decoration-zlato/40 underline-offset-2">
+                      {v.priceEUR.toFixed(2)} € ↗
+                    </a>
+                  ) : (
+                    <span className="ml-1.5 text-zlato-2">{v.priceEUR.toFixed(2)} €</span>
+                  ))}
+              </span>
+            </div>
+          ))}
+        </div>
+      </div>
+
       <dl className="mt-3 space-y-1 text-sm">
-        <Row k={t("common.wrapper")} v={cigar.wrapper} />
-        <Row
-          k={t("common.price")}
-          v={`${cigar.priceApprox ? t("common.approx") + " " : ""}${formatPrice(cigar.priceEUR)}`}
-        />
-        <Row k={t("common.time")} v={`~${cigar.smokeTimeMin} ${t("common.minutes")}`} />
         {cigar.availabilityHR.length > 0 && (
           <Row k={t("common.shop")} v={cigar.availabilityHR.join(", ")} />
         )}
@@ -136,6 +160,7 @@ function CigarDetails({ cigar }: { cigar: Cigar }) {
           v={cigar.markets.map((m) => t(`market.${m}` as Parameters<typeof t>[0])).join(", ")}
         />
       </dl>
+      <BuyLink url={cigar.priceUrl} name={`${cigar.brand} ${cigar.line} cigar`} />
       <div className="mt-2 flex flex-wrap gap-1.5">
         {cigar.flavorTags.map((tag) => (
           <Chip key={tag}>{tag}</Chip>
@@ -194,7 +219,26 @@ function DrinkDetails({ drink }: { drink: Drink }) {
           🚬 {drink.cigarHint}
         </p>
       )}
+      <BuyLink url={drink.priceUrl} name={drink.name} />
     </>
+  );
+}
+
+// "Gdje kupiti" — direktan link ili fallback na pretragu
+function BuyLink({ url, name }: { url?: string | null; name: string }) {
+  const { t } = useI18n();
+  const href =
+    url ??
+    `https://www.google.com/search?q=${encodeURIComponent(`"${name}" cijena kupnja`)}`;
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noreferrer"
+      className="mt-3 block w-full rounded-lg border border-zlato/40 bg-zlato/10 py-2.5 text-center font-display text-sm uppercase tracking-widest text-zlato-2 hover:bg-zlato/20"
+    >
+      {url ? t("common.buy") : t("common.searchOnline")} ↗
+    </a>
   );
 }
 

@@ -82,6 +82,26 @@ describe("pairing engine — API", () => {
     expect(results.some((r) => r.item.name.includes("Malibu"))).toBe(false);
   });
 
+  it("svaka cigara ima barem jednu vitolu s imenom", () => {
+    for (const c of cigars) {
+      expect(c.vitolas.length).toBeGreaterThan(0);
+      expect(c.vitolas[0].name.length).toBeGreaterThan(0);
+    }
+  });
+
+  it("diversity: top cigare razlicitih brendova se mogu izdvojiti za svako pice", () => {
+    const hampden = byId(rums, "rum-hampden-estate-8");
+    const ranked = pairCigarsForDrink(hampden, cigars);
+    const seen = new Set<string>();
+    const diverse = ranked.filter((r) => {
+      if (seen.has(r.item.brand)) return false;
+      seen.add(r.item.brand);
+      return true;
+    });
+    const top3 = diverse.slice(0, 3);
+    expect(new Set(top3.map((r) => r.item.brand)).size).toBe(3);
+  });
+
   it("score je u rasponu 0-100", () => {
     for (const c of cigars.slice(0, 10)) {
       for (const d of [...rums.slice(0, 15), ...coffees.slice(0, 5)]) {

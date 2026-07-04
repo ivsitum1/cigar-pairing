@@ -47,14 +47,23 @@ export interface Drink {
   pairable: boolean;
   serving: Serving;
   cigarHint?: string | null;
+  priceUrl?: string | null; // izvor cijene / gdje kupiti
   notes: LocalizedText;
+}
+
+export interface Vitola {
+  name: string;
+  format: string | null; // "50 x 127mm"
+  smokeTimeMin: number | null;
+  priceEUR: number | null;
+  url: string | null; // link na proizvod (humidor.hr)
 }
 
 export interface Cigar {
   id: string;
   brand: string;
   line: string;
-  vitola: string;
+  vitola: string; // default vitola
   format: string;
   country: string;
   wrapper: string;
@@ -64,6 +73,8 @@ export interface Cigar {
   smokeTimeMin: number;
   priceEUR: number | null;
   priceApprox?: boolean;
+  priceUrl?: string | null; // izvor cijene / gdje kupiti
+  vitolas: Vitola[];
   markets: Market[]; // gdje se moze kupiti
   availabilityHR: string[];
   notes: LocalizedText;
