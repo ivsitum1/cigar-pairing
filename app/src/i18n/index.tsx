@@ -60,6 +60,7 @@ const STRINGS = {
   "cat.rum": { hr: "Rum", en: "Rum" },
   "cat.whisky": { hr: "Whisky", en: "Whisky" },
   "cat.brandy": { hr: "Konjak / Brandy", en: "Cognac / Brandy" },
+  "cat.gin": { hr: "Gin", en: "Gin" },
   "cat.coffee": { hr: "Kava", en: "Coffee" },
   "cat.cigars": { hr: "Cigare", en: "Cigars" },
   // kolekcija
@@ -155,6 +156,15 @@ export const STYLE_LABELS: Record<string, LocalizedText> = {
   cold: { hr: "Cold brew", en: "Cold brew" },
   milk: { hr: "S mlijekom", en: "With milk" },
   spiked: { hr: "S alkoholom", en: "Spiked" },
+  "london-dry": { hr: "London Dry", en: "London Dry" },
+  "premium-dry": { hr: "Premium dry gin", en: "Premium dry gin" },
+  contemporary: { hr: "Contemporary / New Western", en: "Contemporary / New Western" },
+  "navy-strength": { hr: "Navy Strength", en: "Navy Strength" },
+  "old-tom": { hr: "Old Tom", en: "Old Tom" },
+  genever: { hr: "Genever", en: "Genever" },
+  croatian: { hr: "HR craft gin", en: "Croatian craft gin" },
+  plymouth: { hr: "Plymouth", en: "Plymouth" },
+  flavored: { hr: "Aromatiziran (ne za cigaru)", en: "Flavoured (not for cigars)" },
 };
 
 export const ADDITIVE_LABELS: Record<string, LocalizedText> = {

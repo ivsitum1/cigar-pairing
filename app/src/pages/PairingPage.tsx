@@ -11,7 +11,7 @@ import { OcrScan } from "../components/OcrScan";
 type Mode = "cigarToDrink" | "drinkToCigar";
 const MARKETS: Market[] = ["HR", "EU", "USA", "WW"];
 // cigara -> tocno 3 kategorije pica (po jedan prijedlog iz svake)
-const SUGGEST_CATEGORIES: DrinkCategory[] = ["rum", "whisky", "brandy"];
+const SUGGEST_CATEGORIES: DrinkCategory[] = ["rum", "whisky", "brandy", "gin"];
 
 export function PairingPage() {
   const { t, lx } = useI18n();
@@ -96,7 +96,7 @@ export function PairingPage() {
     );
   }, [mode, query, marketCigars]);
 
-  // cigara -> po jedan najbolji prijedlog iz rum / whisky / brandy (+ kava bonus)
+  // cigara -> po jedan najbolji prijedlog iz rum / whisky / brandy / gin (+ kava bonus)
   const drinkSuggestions = useMemo(() => {
     if (mode !== "cigarToDrink" || !selectedCigar) return null;
     let drinks = ALL_DRINKS;
@@ -282,9 +282,14 @@ export function PairingPage() {
               <div>
                 <div className="font-display text-base text-papir">
                   {mode === "cigarToDrink"
-                    ? `${(selected as Cigar).brand} ${(selected as Cigar).vitola}`
+                    ? `${(selected as Cigar).brand} ${(selected as Cigar).line}`
                     : (selected as Drink).name}
                 </div>
+                {mode === "cigarToDrink" && (
+                  <div className="mt-0.5 text-xs text-dim">
+                    {(selected as Cigar).wrapper} · {(selected as Cigar).country}
+                  </div>
+                )}
                 <div className="mt-1.5 flex gap-4">
                   {mode === "cigarToDrink" ? (
                     <>
@@ -316,7 +321,7 @@ export function PairingPage() {
 
           <SectionTitle>{t("pair.suggestions")}</SectionTitle>
 
-          {/* CIGARA -> 3 pica (rum / whisky / konjak) */}
+          {/* CIGARA -> 4 pica (rum / whisky / konjak / gin) */}
           {drinkSuggestions && (
             <div className="space-y-3">
               {drinkSuggestions.cards.map(({ category, result, total }) => (

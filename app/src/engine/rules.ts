@@ -52,21 +52,21 @@ export const WRAPPER_AFFINITY: {
 }[] = [
   {
     wrapper: /connecticut|claro/i,
-    styles: ["agricole", "filter-light", "cognac-vs", "cognac-vsop", "irish-blend", "milk", "vinjak", "speyside-fruity", "japanese"],
+    styles: ["agricole", "filter-light", "cognac-vs", "cognac-vsop", "irish-blend", "milk", "vinjak", "speyside-fruity", "japanese", "contemporary", "london-dry", "premium-dry", "plymouth"],
     tags: ["travnato", "cvjetno", "kremasto", "med", "citrus"],
     labelHr: "Connecticut wrapper voli lagana, svježa i kremasta pića",
     labelEn: "Connecticut wrappers love light, fresh and creamy drinks",
   },
   {
     wrapper: /maduro|oscuro|san andr|broadleaf|brazil/i,
-    styles: ["demerara", "solera", "espresso-dark", "espresso-medium", "filter-dark", "brandy-de-jerez", "turkish", "moka", "bourbon"],
+    styles: ["demerara", "solera", "espresso-dark", "espresso-medium", "filter-dark", "brandy-de-jerez", "turkish", "moka", "bourbon", "navy-strength"],
     tags: ["melasa", "kakao", "kava", "karamela", "tamno-voce", "slatko"],
     labelHr: "Maduro/oscuro wrapper (kakao, kava) traži tamna i bogata pića",
     labelEn: "Maduro/oscuro wrappers (cocoa, coffee) call for dark, rich drinks",
   },
   {
     wrapper: /habano|corojo|sumatra|cameroon/i,
-    styles: ["jamaica", "islay-peated", "speyside-sherry", "espresso-dark", "cognac-xo", "armagnac", "rye", "campbeltown"],
+    styles: ["jamaica", "islay-peated", "speyside-sherry", "espresso-dark", "cognac-xo", "armagnac", "rye", "campbeltown", "croatian"],
     tags: ["zacini", "dim", "suho-voce", "hrast", "ester-funk"],
     labelHr: "Habano/corojo wrapper podnosi začinska i dimna pića",
     labelEn: "Habano/corojo wrappers stand up to spicy and smoky drinks",

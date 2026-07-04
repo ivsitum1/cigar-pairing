@@ -7,7 +7,7 @@ import { CigarRow, DrinkRow } from "../components/cards";
 import { DetailSheet } from "../components/DetailSheet";
 
 type Tab = "cigars" | DrinkCategory;
-const TABS: Tab[] = ["cigars", "rum", "whisky", "brandy", "coffee"];
+const TABS: Tab[] = ["cigars", "rum", "whisky", "brandy", "gin", "coffee"];
 const MARKETS: Market[] = ["HR", "EU", "USA", "WW"];
 
 export function CatalogPage() {
