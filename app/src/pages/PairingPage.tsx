@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 import type { Cigar, Drink, DrinkCategory, Market, PairingResult } from "../types";
-import { ALL_DRINKS, CIGARS, formatPrice } from "../data";
+import { ALL_DRINKS, CIGARS, cigarById, formatPrice } from "../data";
 import { pairCigarsForDrink, pairDrinksForCigar } from "../engine/pairing";
 import { useI18n, STYLE_LABELS, type StringKey } from "../i18n";
 import { Chip, Meter, ScoreBand, SearchInput, SectionTitle } from "../components/ui";
@@ -256,10 +256,13 @@ export function PairingPage() {
             {pickList.map((item) =>
               mode === "cigarToDrink" ? (
                 <PickRow
-                  key={item.id}
+                  key={`${item.id}::${(item as Cigar).line}`}
                   title={`${(item as Cigar).brand} ${(item as Cigar).line}`}
                   sub={`${(item as Cigar).vitolas.length > 1 ? `${(item as Cigar).vitolas.length} vitola · ` : `${(item as Cigar).vitola} · `}${(item as Cigar).wrapper} · ${(item as Cigar).country}`}
-                  onPick={() => setSelectedCigar(item as Cigar)}
+                  onPick={() => {
+                    const picked = cigarById((item as Cigar).id) ?? (item as Cigar);
+                    setSelectedCigar(picked);
+                  }}
                 />
               ) : (
                 <PickRow

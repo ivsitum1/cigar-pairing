@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 import type { Cigar, Drink, DrinkCategory, Market } from "../types";
-import { CIGARS, DRINKS } from "../data";
+import { CIGARS, DRINKS, cigarById } from "../data";
 import { useI18n, STYLE_LABELS, type StringKey } from "../i18n";
 import { Chip, SearchInput } from "../components/ui";
 import { CigarRow, DrinkRow } from "../components/cards";
@@ -134,7 +134,11 @@ export function CatalogPage() {
 
       <div className="mt-2 space-y-2">
         {cigars.map((c) => (
-          <CigarRow key={c.id} cigar={c} onClick={() => setDetail({ kind: "cigar", item: c })} />
+          <CigarRow
+            key={`${c.id}::${c.line}`}
+            cigar={c}
+            onClick={() => setDetail({ kind: "cigar", item: cigarById(c.id) ?? c })}
+          />
         ))}
         {drinks.map((d, i) => (
           <DrinkRow
