@@ -28,6 +28,20 @@ describe("cigars.json integrity", () => {
     expect(names.length).toBeGreaterThanOrEqual(4);
   });
 
+  it("Oliva Serie V / Melanio — Melanio vitole, ne Double Robusto", () => {
+    const melanio = CIGARS.find((c) => c.id === "cig-oliva-serie-v");
+    expect(melanio).toBeDefined();
+    expect(melanio!.line).toBe("Serie V / Melanio");
+    const names = (melanio!.vitolas ?? []).map((v) => v.name);
+    expect(names.some((n) => n.toLowerCase().includes("melanio"))).toBe(true);
+    expect(names).not.toContain("Double Robusto");
+  });
+
+  it("nema ugniježđenih vitola-duplikata (Serie G Double Robusto)", () => {
+    expect(CIGARS.find((c) => c.id === "cig-oliva-serie-g-double-robusto-5-x-54")).toBeUndefined();
+    expect(CIGARS.find((c) => c.id === "cig-oliva-serie-g-special-g")).toBeUndefined();
+  });
+
   it("Oliva Serie G — odabir po id-u vraća istu liniju", () => {
     const serieG = CIGARS.find((c) => c.id === "cig-oliva-serie-g");
     expect(serieG).toBeDefined();
