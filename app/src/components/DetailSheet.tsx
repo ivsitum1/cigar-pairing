@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import type { Cigar, Drink } from "../types";
 import { useI18n, STYLE_LABELS, ADDITIVE_LABELS } from "../i18n";
-import { formatPrice } from "../data";
+import { cigarMarketLinks, formatPrice } from "../data";
 import { Chip, Meter } from "./ui";
 import {
   getItemState,
@@ -160,7 +160,26 @@ function CigarDetails({ cigar }: { cigar: Cigar }) {
           v={cigar.markets.map((m) => t(`market.${m}` as Parameters<typeof t>[0])).join(", ")}
         />
       </dl>
-      <BuyLink url={cigar.priceUrl} name={`${cigar.brand} ${cigar.line} cigar`} />
+
+      {/* kupnja po trzistu */}
+      <div className="mt-3">
+        <div className="mb-1 text-[10px] uppercase tracking-widest text-dim">
+          {t("common.buyIn")}
+        </div>
+        <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
+          {cigarMarketLinks(cigar).map((l) => (
+            <a
+              key={l.market}
+              href={l.url}
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-lg border border-zlato/40 bg-zlato/10 py-2 text-center font-display text-xs uppercase tracking-widest text-zlato-2 hover:bg-zlato/20"
+            >
+              {t(`market.${l.market}` as Parameters<typeof t>[0])} ↗
+            </a>
+          ))}
+        </div>
+      </div>
       <div className="mt-2 flex flex-wrap gap-1.5">
         {cigar.flavorTags.map((tag) => (
           <Chip key={tag}>{tag}</Chip>

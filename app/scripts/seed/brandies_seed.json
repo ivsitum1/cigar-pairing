@@ -1,0 +1,1345 @@
+﻿[
+ {
+  "id": "br-hennessy-vs",
+  "category": "brandy",
+  "name": "Hennessy VS",
+  "style": "cognac-vs",
+  "region": "Cognac, Francuska",
+  "country": "Francuska",
+  "abv": 40,
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "voce",
+   "vanilija",
+   "hrast",
+   "karamela"
+  ],
+  "qualityScore": 6,
+  "priceEUR": {
+   "min": 35,
+   "max": 45
+  },
+  "priceApprox": true,
+  "shopHR": "svugdje",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / on the rocks"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Mladi standard ÔÇö o┼ítriji, vi┼íe za koktele nego finu cigaru.",
+   "en": "The young standard ÔÇö sharper, more for cocktails than a fine cigar."
+  }
+ },
+ {
+  "id": "br-hennessy-vsop",
+  "category": "brandy",
+  "name": "Hennessy VSOP",
+  "style": "cognac-vsop",
+  "region": "Cognac, Francuska",
+  "country": "Francuska",
+  "abv": 40,
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "voce",
+   "vanilija",
+   "zacini",
+   "hrast"
+  ],
+  "qualityScore": 7,
+  "priceEUR": {
+   "min": 55,
+   "max": 68
+  },
+  "priceApprox": true,
+  "shopHR": "svugdje",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Pouzdani VSOP ÔÇö uravnote┼żen uz srednje cigare.",
+   "en": "The dependable VSOP ÔÇö balanced with medium cigars."
+  }
+ },
+ {
+  "id": "br-hennessy-xo",
+  "category": "brandy",
+  "name": "Hennessy XO",
+  "style": "cognac-xo",
+  "region": "Cognac, Francuska",
+  "country": "Francuska",
+  "abv": 40,
+  "body": 4,
+  "sweetness": 3,
+  "flavorTags": [
+   "suho-voce",
+   "kakao",
+   "zacini",
+   "koza",
+   "hrast"
+  ],
+  "qualityScore": 8,
+  "priceEUR": {
+   "min": 170,
+   "max": 210
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto (snifter)"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Arhetip XO kategorije ÔÇö bogat, ─Źokoladno-za─Źinski, stvoren za cigaru.",
+   "en": "The XO archetype ÔÇö rich, chocolate-spice, made for a cigar."
+  }
+ },
+ {
+  "id": "br-remy-martin-vsop",
+  "category": "brandy",
+  "name": "R├ęmy Martin VSOP",
+  "style": "cognac-vsop",
+  "region": "Cognac (Fine Champagne), Francuska",
+  "country": "Francuska",
+  "abv": 40,
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "voce",
+   "vanilija",
+   "cvjetno",
+   "hrast"
+  ],
+  "qualityScore": 7,
+  "priceEUR": {
+   "min": 48,
+   "max": 60
+  },
+  "priceApprox": true,
+  "shopHR": "svugdje",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Fine Champagne elegancija ÔÇö vo─çniji i mek┼íi stil.",
+   "en": "Fine Champagne elegance ÔÇö a fruitier, softer style."
+  }
+ },
+ {
+  "id": "br-remy-martin-1738",
+  "category": "brandy",
+  "name": "R├ęmy Martin 1738 Accord Royal",
+  "style": "cognac-vsop",
+  "region": "Cognac, Francuska",
+  "country": "Francuska",
+  "abv": 40,
+  "body": 4,
+  "sweetness": 3,
+  "flavorTags": [
+   "karamela",
+   "kakao",
+   "hrast",
+   "med"
+  ],
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 60,
+   "max": 75
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Bogatiji, tamniji R├ęmy ÔÇö karamelno-─Źokoladni, odli─Źan value za cigaru.",
+   "en": "Richer, darker R├ęmy ÔÇö caramel-chocolate, great cigar value."
+  }
+ },
+ {
+  "id": "br-remy-martin-xo",
+  "category": "brandy",
+  "name": "R├ęmy Martin XO",
+  "style": "cognac-xo",
+  "region": "Cognac (Fine Champagne), Francuska",
+  "country": "Francuska",
+  "abv": 40,
+  "body": 4,
+  "sweetness": 3,
+  "flavorTags": [
+   "suho-voce",
+   "cvjetno",
+   "kakao",
+   "hrast"
+  ],
+  "qualityScore": 8,
+  "priceEUR": {
+   "min": 160,
+   "max": 200
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto (snifter)"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Rasko┼ían, svilenkast XO ÔÇö cvjetno-vo─çna dubina.",
+   "en": "Opulent, silky XO ÔÇö floral-fruity depth."
+  }
+ },
+ {
+  "id": "br-martell-vsop",
+  "category": "brandy",
+  "name": "Martell VSOP / Cordon Bleu",
+  "style": "cognac-vsop",
+  "region": "Cognac, Francuska",
+  "country": "Francuska",
+  "abv": 40,
+  "body": 3,
+  "sweetness": 2,
+  "flavorTags": [
+   "voce",
+   "orasasti",
+   "hrast",
+   "zacini"
+  ],
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 50,
+   "max": 180
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Suhlji, ora┼íastiji stil (bez borderies slatko─çe u VSOP-u; Cordon Bleu = klasik za cigare).",
+   "en": "Drier, nuttier style (Cordon Bleu is a cigar classic)."
+  }
+ },
+ {
+  "id": "br-courvoisier-vsop",
+  "category": "brandy",
+  "name": "Courvoisier VSOP / XO",
+  "style": "cognac-vsop",
+  "region": "Cognac, Francuska",
+  "country": "Francuska",
+  "abv": 40,
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "voce",
+   "vanilija",
+   "cvjetno"
+  ],
+  "qualityScore": 7,
+  "priceEUR": {
+   "min": 45,
+   "max": 160
+  },
+  "priceApprox": true,
+  "shopHR": "svugdje",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Mekan i pristupa─Źan ÔÇö jasmin i vo─çe.",
+   "en": "Soft and approachable ÔÇö jasmine and fruit."
+  }
+ },
+ {
+  "id": "br-frapin-vsop",
+  "category": "brandy",
+  "name": "Frapin VSOP Grande Champagne",
+  "style": "cognac-vsop",
+  "region": "Grande Champagne, Francuska",
+  "country": "Francuska",
+  "abv": 40,
+  "body": 3,
+  "sweetness": 2,
+  "flavorTags": [
+   "cvjetno",
+   "med",
+   "voce",
+   "hrast"
+  ],
+  "qualityScore": 8,
+  "priceEUR": {
+   "min": 55,
+   "max": 65
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Obiteljska ku─ça, 100% Grande Champagne ÔÇö rafiniran value.",
+   "en": "Family house, 100% Grande Champagne ÔÇö refined value."
+  }
+ },
+ {
+  "id": "br-frapin-fontpinot-xo",
+  "category": "brandy",
+  "name": "Frapin Ch├óteau de Fontpinot XO",
+  "style": "cognac-xo",
+  "region": "Grande Champagne, Francuska",
+  "country": "Francuska",
+  "abv": 41,
+  "body": 4,
+  "sweetness": 2,
+  "flavorTags": [
+   "suho-voce",
+   "med",
+   "hrast",
+   "koza"
+  ],
+  "qualityScore": 8.5,
+  "priceEUR": {
+   "min": 95,
+   "max": 115
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto (snifter)"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Single-estate XO ÔÇö suhlji, ozbiljan konjak za ozbiljnu cigaru.",
+   "en": "Single-estate XO ÔÇö drier, a serious cognac for a serious cigar."
+  }
+ },
+ {
+  "id": "br-delamain-pale-dry",
+  "category": "brandy",
+  "name": "Delamain Pale & Dry XO",
+  "style": "cognac-xo",
+  "region": "Grande Champagne, Francuska",
+  "country": "Francuska",
+  "abv": 42,
+  "body": 3,
+  "sweetness": 1,
+  "flavorTags": [
+   "cvjetno",
+   "citrus",
+   "med",
+   "orasasti"
+  ],
+  "qualityScore": 8.5,
+  "priceEUR": {
+   "min": 110,
+   "max": 130
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Najelegantniji suhi XO ÔÇö bez dosladjivanja i bojenja. Purist izbor uz Connecticut.",
+   "en": "The most elegant dry XO ÔÇö no sweetening or colouring. Purist pick with Connecticut."
+  }
+ },
+ {
+  "id": "br-pierre-ferrand-1840",
+  "category": "brandy",
+  "name": "Pierre Ferrand 1840 / R├ęserve",
+  "style": "cognac-vsop",
+  "region": "Grande Champagne, Francuska",
+  "country": "Francuska",
+  "abv": 45,
+  "body": 4,
+  "sweetness": 2,
+  "flavorTags": [
+   "voce",
+   "zacini",
+   "hrast",
+   "med"
+  ],
+  "qualityScore": 8,
+  "priceEUR": {
+   "min": 45,
+   "max": 75
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / Old Fashioned"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Craft pristup, vi┼íi proof ÔÇö konjak s karakterom.",
+   "en": "Craft approach, higher proof ÔÇö cognac with character."
+  }
+ },
+ {
+  "id": "br-hine-rare-vsop",
+  "category": "brandy",
+  "name": "Hine Rare VSOP",
+  "style": "cognac-vsop",
+  "region": "Cognac, Francuska",
+  "country": "Francuska",
+  "abv": 40,
+  "body": 3,
+  "sweetness": 2,
+  "flavorTags": [
+   "voce",
+   "cvjetno",
+   "vanilija"
+  ],
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 55,
+   "max": 65
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Britanski dvorski dobavlja─Ź ÔÇö svje┼ż, vo─çni stil.",
+   "en": "The British court's supplier ÔÇö fresh, fruity style."
+  }
+ },
+ {
+  "id": "br-camus-vsop",
+  "category": "brandy",
+  "name": "Camus VSOP Borderies",
+  "style": "cognac-vsop",
+  "region": "Borderies, Francuska",
+  "country": "Francuska",
+  "abv": 40,
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "cvjetno",
+   "med",
+   "vanilija",
+   "orasasti"
+  ],
+  "qualityScore": 7,
+  "priceEUR": {
+   "min": 45,
+   "max": 55
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Borderies cvjetnost ÔÇö mekan, mirisan konjak.",
+   "en": "Borderies florality ÔÇö a soft, perfumed cognac."
+  }
+ },
+ {
+  "id": "br-tariquet-vsop",
+  "category": "brandy",
+  "name": "Ch├óteau du Tariquet VSOP Bas-Armagnac",
+  "style": "armagnac",
+  "region": "Bas-Armagnac, Francuska",
+  "country": "Francuska",
+  "abv": 40,
+  "body": 3,
+  "sweetness": 2,
+  "flavorTags": [
+   "suho-voce",
+   "vanilija",
+   "hrast",
+   "zacini"
+  ],
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 38,
+   "max": 48
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Pristupa─Źan armagnac ÔÇö rustikalniji i suhlji od konjaka.",
+   "en": "Approachable armagnac ÔÇö more rustic and drier than cognac."
+  }
+ },
+ {
+  "id": "br-darroze-8",
+  "category": "brandy",
+  "name": "Darroze Les Grands Assemblages 8",
+  "style": "armagnac",
+  "region": "Bas-Armagnac, Francuska",
+  "country": "Francuska",
+  "abv": 43,
+  "body": 4,
+  "sweetness": 2,
+  "flavorTags": [
+   "suho-voce",
+   "koza",
+   "hrast",
+   "zemljano"
+  ],
+  "qualityScore": 8,
+  "priceEUR": {
+   "min": 48,
+   "max": 58
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Specijalist za armagnac ÔÇö zemljana dubina, sjajno uz punije cigare.",
+   "en": "The armagnac specialist ÔÇö earthy depth, great with fuller cigars."
+  }
+ },
+ {
+  "id": "br-delord-15",
+  "category": "brandy",
+  "name": "Delord 15 Ans Bas-Armagnac",
+  "style": "armagnac",
+  "region": "Bas-Armagnac, Francuska",
+  "country": "Francuska",
+  "abv": 40,
+  "body": 4,
+  "sweetness": 2,
+  "flavorTags": [
+   "suho-voce",
+   "karamela",
+   "hrast",
+   "koza"
+  ],
+  "qualityScore": 8,
+  "priceEUR": {
+   "min": 45,
+   "max": 55
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Najbolji omjer starosti i cijene u kategoriji ÔÇö 15 godina ispod 55 ÔéČ.",
+   "en": "Best age-to-price in the category ÔÇö 15 years under ÔéČ55."
+  }
+ },
+ {
+  "id": "br-laubade-xo",
+  "category": "brandy",
+  "name": "Ch├óteau de Laubade XO",
+  "style": "armagnac",
+  "region": "Bas-Armagnac, Francuska",
+  "country": "Francuska",
+  "abv": 40,
+  "body": 4,
+  "sweetness": 2,
+  "flavorTags": [
+   "suho-voce",
+   "kakao",
+   "hrast",
+   "zacini"
+  ],
+  "qualityScore": 8,
+  "priceEUR": {
+   "min": 60,
+   "max": 75
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto (snifter)"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Single-estate XO armagnac ÔÇö ozbiljna alternativa XO konjaku uz cigaru.",
+   "en": "Single-estate XO armagnac ÔÇö a serious alternative to XO cognac with a cigar."
+  }
+ },
+ {
+  "id": "br-cardenal-mendoza",
+  "category": "brandy",
+  "name": "Cardenal Mendoza Solera Gran Reserva",
+  "style": "brandy-de-jerez",
+  "region": "Jerez, ┼ápanjolska",
+  "country": "┼ápanjolska",
+  "abv": 40,
+  "body": 4,
+  "sweetness": 4,
+  "flavorTags": [
+   "suho-voce",
+   "kakao",
+   "karamela",
+   "koza"
+  ],
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 38,
+   "max": 48
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto (snifter)"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "┼ápanjolski sherry-solera brandy ÔÇö tamna slatko─ça, klasik uz maduro cigaru.",
+   "en": "Spanish sherry-solera brandy ÔÇö dark sweetness, a maduro-cigar classic."
+  }
+ },
+ {
+  "id": "br-lepanto",
+  "category": "brandy",
+  "name": "Lepanto Solera Gran Reserva",
+  "style": "brandy-de-jerez",
+  "region": "Jerez, ┼ápanjolska",
+  "country": "┼ápanjolska",
+  "abv": 36,
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "suho-voce",
+   "med",
+   "vanilija"
+  ],
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 40,
+   "max": 50
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Elegantniji Jerez (Gonz├ílez Byass) ÔÇö svjetliji od Mendoze.",
+   "en": "The more elegant Jerez (Gonz├ílez Byass) ÔÇö brighter than Mendoza."
+  }
+ },
+ {
+  "id": "br-gran-duque-alba",
+  "category": "brandy",
+  "name": "Gran Duque d'Alba Solera Gran Reserva",
+  "style": "brandy-de-jerez",
+  "region": "Jerez, ┼ápanjolska",
+  "country": "┼ápanjolska",
+  "abv": 40,
+  "body": 4,
+  "sweetness": 4,
+  "flavorTags": [
+   "suho-voce",
+   "kakao",
+   "karamela",
+   "hrast"
+  ],
+  "qualityScore": 7,
+  "priceEUR": {
+   "min": 35,
+   "max": 45
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Bogat i bar┼íunast ÔÇö desertni kraj brandy spektra.",
+   "en": "Rich and velvety ÔÇö the dessert end of the brandy spectrum."
+  }
+ },
+ {
+  "id": "br-torres-15",
+  "category": "brandy",
+  "name": "Torres 15 / 20 Imperial",
+  "style": "brandy-spanish",
+  "region": "Katalonija, ┼ápanjolska",
+  "country": "┼ápanjolska",
+  "abv": 40,
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "karamela",
+   "vanilija",
+   "hrast",
+   "suho-voce"
+  ],
+  "qualityScore": 7,
+  "priceEUR": {
+   "min": 25,
+   "max": 45
+  },
+  "priceApprox": true,
+  "shopHR": "svugdje",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / on the rocks"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Katalonski value ÔÇö pouzdan, mekan, dostupan.",
+   "en": "Catalan value ÔÇö reliable, soft, widely available."
+  }
+ },
+ {
+  "id": "br-metaxa-12",
+  "category": "brandy",
+  "name": "Metaxa 12 Stars",
+  "style": "brandy-greek",
+  "region": "Gr─Źka",
+  "country": "Gr─Źka",
+  "abv": 40,
+  "body": 3,
+  "sweetness": 4,
+  "flavorTags": [
+   "med",
+   "voce",
+   "cvjetno",
+   "zacini"
+  ],
+  "qualityScore": 6.5,
+  "priceEUR": {
+   "min": 30,
+   "max": 38
+  },
+  "priceApprox": true,
+  "shopHR": "svugdje",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / on the rocks"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Gr─Źki specifikum (brandy + mu┼íkat vino) ÔÇö medeno, mekano.",
+   "en": "The Greek special (brandy + muscat wine) ÔÇö honeyed, soft."
+  }
+ },
+ {
+  "id": "br-vecchia-romagna",
+  "category": "brandy",
+  "name": "Vecchia Romagna Etichetta Nera",
+  "style": "brandy-italian",
+  "region": "Italija",
+  "country": "Italija",
+  "abv": 38,
+  "body": 2,
+  "sweetness": 3,
+  "flavorTags": [
+   "vanilija",
+   "voce",
+   "karamela"
+  ],
+  "qualityScore": 6,
+  "priceEUR": {
+   "min": 18,
+   "max": 25
+  },
+  "priceApprox": true,
+  "shopHR": "svugdje",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / uz kavu"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Talijanski klasik uz espresso ÔÇö lagan, jednostavan.",
+   "en": "Italian espresso companion ÔÇö light, simple."
+  }
+ },
+ {
+  "id": "br-badel-vinjak",
+  "category": "brandy",
+  "name": "Badel Vinjak XO / Prima",
+  "style": "vinjak",
+  "region": "Hrvatska",
+  "country": "Hrvatska",
+  "abv": 40,
+  "body": 2,
+  "sweetness": 3,
+  "flavorTags": [
+   "voce",
+   "karamela",
+   "hrast"
+  ],
+  "qualityScore": 5.5,
+  "priceEUR": {
+   "min": 15,
+   "max": 25
+  },
+  "priceApprox": true,
+  "shopHR": "svugdje",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / uz kavu"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Doma─çi vinjak ÔÇö nostalgija i pristupa─Źnost, uz blagu cigarilu.",
+   "en": "The local vinjak ÔÇö nostalgia and accessibility, with a mild cigarillo."
+  }
+ },
+ {
+  "id": "br-zvecevo-brandy",
+  "category": "brandy",
+  "name": "Hrvatski lozova─Źa / vinjak (craft)",
+  "style": "vinjak",
+  "region": "Hrvatska",
+  "country": "Hrvatska",
+  "abv": 40,
+  "body": 2,
+  "sweetness": 2,
+  "flavorTags": [
+   "voce",
+   "cvjetno"
+  ],
+  "qualityScore": 6,
+  "priceEUR": {
+   "min": 20,
+   "max": 40
+  },
+  "priceApprox": true,
+  "shopHR": "lokalni proizvo─Ĺa─Źi",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Craft doma─çe rakije od gro┼ż─Ĺa ÔÇö svje┼że i vo─çno, uz laganu cigaru na terasi.",
+   "en": "Croatian craft grape brandies ÔÇö fresh and fruity, with a light cigar on the terrace."
+  }
+ },
+ {
+  "id": "br-calvados-drouin",
+  "category": "brandy",
+  "name": "Christian Drouin Calvados VSOP",
+  "style": "calvados",
+  "region": "Normandija, Francuska",
+  "country": "Francuska",
+  "abv": 40,
+  "body": 3,
+  "sweetness": 2,
+  "flavorTags": [
+   "jabuka",
+   "voce",
+   "hrast",
+   "zacini"
+  ],
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 45,
+   "max": 55
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Jabu─Źna rakija iz Normandije ÔÇö svje┼ż kontrast uz kremaste cigare.",
+   "en": "Norman apple brandy ÔÇö a fresh contrast to creamy cigars."
+  }
+ },
+ {
+  "id": "br-boulard-vsop",
+  "category": "brandy",
+  "name": "Boulard Calvados VSOP",
+  "style": "calvados",
+  "region": "Pays d'Auge, Francuska",
+  "country": "Francuska",
+  "abv": 40,
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "jabuka",
+   "karamela",
+   "vanilija"
+  ],
+  "qualityScore": 7,
+  "priceEUR": {
+   "min": 35,
+   "max": 45
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / on the rocks"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Dostupniji calvados ÔÇö pe─Źena jabuka i karamela.",
+   "en": "The accessible calvados ÔÇö baked apple and caramel."
+  }
+ },
+ {
+  "id": "br-martell-xo",
+  "category": "brandy",
+  "name": "Martell XO",
+  "style": "cognac-xo",
+  "region": "Cognac, Francuska",
+  "country": "Francuska",
+  "abv": 40,
+  "body": 4,
+  "sweetness": 2,
+  "flavorTags": [
+   "orasasti",
+   "suho-voce",
+   "zacini",
+   "hrast"
+  ],
+  "qualityScore": 8,
+  "priceEUR": {
+   "min": 150,
+   "max": 190
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto (snifter)"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Suhi, borderies-bogat XO ÔÇö ora┼íasta elegancija uz srednju cigaru.",
+   "en": "Dry, Borderies-rich XO ÔÇö nutty elegance with a medium cigar."
+  }
+ },
+ {
+  "id": "br-camus-xo",
+  "category": "brandy",
+  "name": "Camus XO Intensely Aromatic",
+  "style": "cognac-xo",
+  "region": "Borderies, Francuska",
+  "country": "Francuska",
+  "abv": 40,
+  "body": 4,
+  "sweetness": 3,
+  "flavorTags": [
+   "cvjetno",
+   "med",
+   "suho-voce",
+   "vanilija"
+  ],
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 110,
+   "max": 140
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto (snifter)"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Mirisni XO ÔÇö cvjetno-medena rasko┼í.",
+   "en": "The perfumed XO ÔÇö floral-honeyed opulence."
+  }
+ },
+ {
+  "id": "br-baron-sigognac-10",
+  "category": "brandy",
+  "name": "Baron de Sigognac 10 Ans",
+  "style": "armagnac",
+  "region": "Bas-Armagnac, Francuska",
+  "country": "Francuska",
+  "abv": 40,
+  "body": 4,
+  "sweetness": 2,
+  "flavorTags": [
+   "suho-voce",
+   "hrast",
+   "vanilija",
+   "koza"
+  ],
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 40,
+   "max": 50
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Po┼íten 10-godi┼ínji armagnac ÔÇö suho vo─çe i ko┼ża za male novce.",
+   "en": "Honest 10-year armagnac ÔÇö dried fruit and leather for little money."
+  }
+ },
+ {
+  "id": "br-janneau-xo",
+  "category": "brandy",
+  "name": "Janneau XO Royal",
+  "style": "armagnac",
+  "region": "Armagnac, Francuska",
+  "country": "Francuska",
+  "abv": 40,
+  "body": 4,
+  "sweetness": 3,
+  "flavorTags": [
+   "suho-voce",
+   "karamela",
+   "hrast",
+   "zacini"
+  ],
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 55,
+   "max": 70
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto (snifter)"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Pristupa─Źni XO armagnac ÔÇö mek┼íi, karamelni stil.",
+   "en": "Accessible XO armagnac ÔÇö a softer caramel style."
+  }
+ },
+ {
+  "id": "br-carlos-i",
+  "category": "brandy",
+  "name": "Osborne Carlos I Solera Gran Reserva",
+  "style": "brandy-de-jerez",
+  "region": "Jerez, ┼ápanjolska",
+  "country": "┼ápanjolska",
+  "abv": 40,
+  "body": 4,
+  "sweetness": 3,
+  "flavorTags": [
+   "suho-voce",
+   "orasasti",
+   "karamela",
+   "koza"
+  ],
+  "qualityScore": 8,
+  "priceEUR": {
+   "min": 45,
+   "max": 60
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto (snifter)"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Vrh Jerez brandyja ÔÇö amontillado dubina, manje sladak od Mendoze.",
+   "en": "The peak of Jerez brandy ÔÇö amontillado depth, less sweet than Mendoza."
+  }
+ },
+ {
+  "id": "br-fundador-supremo",
+  "category": "brandy",
+  "name": "Fundador Supremo 12 / Sherry Cask",
+  "style": "brandy-de-jerez",
+  "region": "Jerez, ┼ápanjolska",
+  "country": "┼ápanjolska",
+  "abv": 40,
+  "body": 3,
+  "sweetness": 4,
+  "flavorTags": [
+   "karamela",
+   "suho-voce",
+   "vanilija"
+  ],
+  "qualityScore": 6.5,
+  "priceEUR": {
+   "min": 25,
+   "max": 35
+  },
+  "priceApprox": true,
+  "shopHR": "svugdje",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / on the rocks"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Budget Jerez ÔÇö sladak, jednostavan, uz opu┼ítenu ve─Źer.",
+   "en": "Budget Jerez ÔÇö sweet, simple, for a relaxed evening."
+  }
+ },
+ {
+  "id": "br-ararat-10",
+  "category": "brandy",
+  "name": "Ararat 10 Akhtamar",
+  "style": "brandy-armenian",
+  "region": "Armenija",
+  "country": "Armenija",
+  "abv": 40,
+  "body": 4,
+  "sweetness": 3,
+  "flavorTags": [
+   "suho-voce",
+   "kakao",
+   "karamela",
+   "duhan"
+  ],
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 30,
+   "max": 40
+  },
+  "priceApprox": true,
+  "shopHR": "Roto/Vrutak",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Armenski klasik (Churchillov favorit) ÔÇö duhansko-kakao profil, izvrstan uz cigaru za tu cijenu.",
+   "en": "The Armenian classic (Churchill's favourite) ÔÇö tobacco-cocoa profile, superb with a cigar at this price."
+  }
+ },
+ {
+  "id": "br-ararat-nairi-20",
+  "category": "brandy",
+  "name": "Ararat Nairi 20",
+  "style": "brandy-armenian",
+  "region": "Armenija",
+  "country": "Armenija",
+  "abv": 40,
+  "body": 4,
+  "sweetness": 3,
+  "flavorTags": [
+   "suho-voce",
+   "kakao",
+   "koza",
+   "hrast"
+  ],
+  "qualityScore": 8,
+  "priceEUR": {
+   "min": 70,
+   "max": 90
+  },
+  "priceApprox": true,
+  "shopHR": "specijalist",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto (snifter)"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Stariji Ararat ÔÇö dubina uz ozbiljnu cigaru.",
+   "en": "The older Ararat ÔÇö depth for a serious cigar."
+  }
+ },
+ {
+  "id": "br-asbach-8",
+  "category": "brandy",
+  "name": "Asbach 8 Privatbrand",
+  "style": "brandy-german",
+  "region": "R├╝desheim, Njema─Źka",
+  "country": "Njema─Źka",
+  "abv": 40,
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "voce",
+   "vanilija",
+   "hrast"
+  ],
+  "qualityScore": 6.5,
+  "priceEUR": {
+   "min": 25,
+   "max": 35
+  },
+  "priceApprox": true,
+  "shopHR": "svugdje",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / uz kavu"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Njema─Źki weinbrand ÔÇö mekan, uz kavu i cigarilu.",
+   "en": "German Weinbrand ÔÇö soft, with coffee and a cigarillo."
+  }
+ },
+ {
+  "id": "br-stock-84-xo",
+  "category": "brandy",
+  "name": "Stock 84 XO",
+  "style": "brandy-italian",
+  "region": "Italija/regija",
+  "country": "Italija",
+  "abv": 40,
+  "body": 2,
+  "sweetness": 3,
+  "flavorTags": [
+   "vanilija",
+   "karamela",
+   "voce"
+  ],
+  "qualityScore": 5.5,
+  "priceEUR": {
+   "min": 15,
+   "max": 22
+  },
+  "priceApprox": true,
+  "shopHR": "svugdje",
+  "pairable": true,
+  "serving": {
+   "best": "Uz kavu"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Regionalni klasik uz espresso ÔÇö nostalgija vi┼íe nego fino─ça.",
+   "en": "The regional espresso companion ÔÇö more nostalgia than finesse."
+  }
+ },
+ {
+  "id": "br-hine-antique-xo",
+  "category": "brandy",
+  "name": "Hine Antique XO",
+  "style": "cognac-xo",
+  "region": "Grande Champagne, Francuska",
+  "country": "Francuska",
+  "abv": 40,
+  "body": 4,
+  "sweetness": 2,
+  "flavorTags": [
+   "cvjetno",
+   "suho-voce",
+   "med",
+   "hrast"
+  ],
+  "qualityScore": 8.5,
+  "priceEUR": {
+   "min": 160,
+   "max": 200
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto (snifter)"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Rafinirani first-growth XO ÔÇö svila u ─Źa┼íi.",
+   "en": "Refined first-growth XO ÔÇö silk in a glass."
+  }
+ },
+ {
+  "id": "br-drouin-xo",
+  "category": "brandy",
+  "name": "Christian Drouin XO Calvados",
+  "style": "calvados",
+  "region": "Pays d'Auge, Francuska",
+  "country": "Francuska",
+  "abv": 40,
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "jabuka",
+   "karamela",
+   "hrast",
+   "zacini"
+  ],
+  "qualityScore": 8,
+  "priceEUR": {
+   "min": 70,
+   "max": 85
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto (snifter)"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Zreli calvados ÔÇö pe─Źena jabuka, karamela, hrast; druga─Źiji cigar par.",
+   "en": "Mature calvados ÔÇö baked apple, caramel, oak; a different cigar partner."
+  }
+ },
+ {
+  "id": "br-metaxa-private-reserve",
+  "category": "brandy",
+  "name": "Metaxa Private Reserve",
+  "style": "brandy-greek",
+  "region": "Gr─Źka",
+  "country": "Gr─Źka",
+  "abv": 40,
+  "body": 3,
+  "sweetness": 4,
+  "flavorTags": [
+   "med",
+   "suho-voce",
+   "cvjetno",
+   "zacini"
+  ],
+  "qualityScore": 7,
+  "priceEUR": {
+   "min": 55,
+   "max": 70
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto (snifter)"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Vrh Metaxe ÔÇö medena rasko┼í uz bla┼żu maduro cigaru.",
+   "en": "Metaxa's peak ÔÇö honeyed opulence with a milder maduro."
+  }
+ }
+]

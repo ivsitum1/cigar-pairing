@@ -1,5 +1,7 @@
 # izvorni Excel ostaje samo lokalno (svi podaci za app su u app/src/data/*.json)
 Rum_Kolekcija_Checklist.xlsx
+Whisky_Kolekcija_Checklist.xlsx
+Konjak_Brandy_Checklist.xlsx
 ~$*.xlsx
 # generirani indeksi (python app/scripts/export-indexes.py)
 *_Index.xlsx

@@ -6,6 +6,7 @@ import { useI18n, STYLE_LABELS, type StringKey } from "../i18n";
 import { Chip, Meter, ScoreBand, SearchInput, SectionTitle } from "../components/ui";
 import { getItemState, useCollection } from "../store/collection";
 import { DetailSheet } from "../components/DetailSheet";
+import { OcrScan } from "../components/OcrScan";
 
 type Mode = "cigarToDrink" | "drinkToCigar";
 const MARKETS: Market[] = ["HR", "EU", "USA", "WW"];
@@ -76,16 +77,23 @@ export function PairingPage() {
     [],
   );
 
+  // PUNI popis — identican onome iz kojeg engine predlaze (bez skracivanja)
   const pickList = useMemo(() => {
     const q = query.toLowerCase();
     if (mode === "cigarToDrink") {
-      return marketCigars
-        .filter((c) => !q || `${c.brand} ${c.line} ${c.vitola}`.toLowerCase().includes(q))
-        .slice(0, 30);
+      return marketCigars.filter(
+        (c) =>
+          !q ||
+          `${c.brand} ${c.line} ${c.country} ${c.wrapper} ${c.vitolas
+            .map((v) => v.name)
+            .join(" ")}`
+            .toLowerCase()
+            .includes(q),
+      );
     }
     return ALL_DRINKS.filter(
-      (d) => d.pairable && (!q || d.name.toLowerCase().includes(q)),
-    ).slice(0, 30);
+      (d) => d.pairable && (!q || `${d.name} ${d.style} ${d.region}`.toLowerCase().includes(q)),
+    );
   }, [mode, query, marketCigars]);
 
   // cigara -> po jedan najbolji prijedlog iz rum / whisky / brandy (+ kava bonus)
@@ -209,14 +217,39 @@ export function PairingPage() {
         </div>
       )}
 
-      {/* picker */}
+      {/* picker + OCR (fotografiraj bocu/cigaru) */}
       {!selected && (
         <>
-          <div className="mt-3">
-            <SearchInput
-              value={query}
-              onChange={setQuery}
-              placeholder={`${t(mode === "cigarToDrink" ? "pair.pickCigar" : "pair.pickDrink")} — ${t("pair.search")}`}
+          <div className="mt-3 flex items-stretch gap-2">
+            <div className="flex-1">
+              <SearchInput
+                value={query}
+                onChange={setQuery}
+                placeholder={`${t(mode === "cigarToDrink" ? "pair.pickCigar" : "pair.pickDrink")} — ${t("pair.search")}`}
+              />
+            </div>
+            <OcrScan
+              candidates={
+                mode === "cigarToDrink"
+                  ? marketCigars.map((c) => ({
+                      id: c.id,
+                      label: `${c.brand} ${c.line}`,
+                    }))
+                  : ALL_DRINKS.filter((d) => d.pairable).map((d) => ({
+                      id: d.id,
+                      label: d.name,
+                    }))
+              }
+              onMatch={(id) => {
+                if (mode === "cigarToDrink") {
+                  const c = marketCigars.find((x) => x.id === id);
+                  if (c) setSelectedCigar(c);
+                } else {
+                  const d = ALL_DRINKS.find((x) => x.id === id);
+                  if (d) setSelectedDrink(d);
+                }
+              }}
+              onText={setQuery}
             />
           </div>
           <div className="mt-3 space-y-1.5">
@@ -224,8 +257,8 @@ export function PairingPage() {
               mode === "cigarToDrink" ? (
                 <PickRow
                   key={item.id}
-                  title={`${(item as Cigar).brand} ${(item as Cigar).vitola}`}
-                  sub={`${(item as Cigar).wrapper} · ${(item as Cigar).country}`}
+                  title={`${(item as Cigar).brand} ${(item as Cigar).line}`}
+                  sub={`${(item as Cigar).vitolas.length > 1 ? `${(item as Cigar).vitolas.length} vitola · ` : `${(item as Cigar).vitola} · `}${(item as Cigar).wrapper} · ${(item as Cigar).country}`}
                   onPick={() => setSelectedCigar(item as Cigar)}
                 />
               ) : (

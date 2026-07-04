@@ -58,6 +58,30 @@ export const drinkById = (id: string): Drink | undefined =>
 export const cigarById = (id: string): Cigar | undefined =>
   CIGARS.find((c) => c.id === id);
 
+// linkovi za kupnju po tržištu — HR izravno (humidor/havana), EU cigarworld.de,
+// USA/Svijet pouzdana pretraga (trgovine blokiraju izravne bot-provjere URL-ova)
+export function cigarMarketLinks(c: Cigar): { market: string; url: string }[] {
+  const q = encodeURIComponent(`${c.brand} ${c.line}`);
+  const links: { market: string; url: string }[] = [];
+  if (c.markets.includes("HR") && c.priceUrl) {
+    links.push({ market: "HR", url: c.priceUrl });
+  }
+  if (c.markets.includes("EU")) {
+    links.push({ market: "EU", url: `https://www.cigarworld.de/search?q=${q}` });
+  }
+  if (c.markets.includes("USA")) {
+    links.push({
+      market: "USA",
+      url: `https://www.google.com/search?q=site%3Acigarsinternational.com+${q}`,
+    });
+  }
+  links.push({
+    market: "WW",
+    url: `https://www.google.com/search?q=${q}+cigar+buy+online`,
+  });
+  return links;
+}
+
 export const formatPrice = (
   p: { min: number; max: number } | number | null | undefined,
 ): string => {
