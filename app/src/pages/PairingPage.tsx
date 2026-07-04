@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import type { Cigar, Drink, DrinkCategory, Market, PairingResult } from "../types";
+import type { Cigar, Drink, DrinkCategory, Market, PairingResult, Vitola } from "../types";
 import { ALL_DRINKS, CIGARS, cigarById, formatPrice } from "../data";
 import { pairCigarsForDrink, pairDrinksForCigar } from "../engine/pairing";
 import { useI18n, STYLE_LABELS, type StringKey } from "../i18n";
@@ -7,6 +7,8 @@ import { Chip, Meter, ScoreBand, SearchInput, SectionTitle } from "../components
 import { getItemState, useCollection } from "../store/collection";
 import { DetailSheet } from "../components/DetailSheet";
 import { OcrScan } from "../components/OcrScan";
+import { VitolaPicker } from "../components/VitolaPicker";
+import { applyVitola, needsVitolaPick, uniqueVitolas } from "../lib/cigarVitola";
 
 type Mode = "cigarToDrink" | "drinkToCigar";
 const MARKETS: Market[] = ["HR", "EU", "USA", "WW"];
@@ -19,6 +21,7 @@ export function PairingPage() {
   const [mode, setMode] = useState<Mode>("cigarToDrink");
   const [query, setQuery] = useState("");
   const [selectedCigar, setSelectedCigar] = useState<Cigar | null>(null);
+  const [pendingCigar, setPendingCigar] = useState<Cigar | null>(null);
   const [selectedDrink, setSelectedDrink] = useState<Drink | null>(null);
   const [onlyMine, setOnlyMine] = useState(false);
   const [market, setMarket] = useState<Market>(
@@ -135,9 +138,26 @@ export function PairingPage() {
 
   const reset = () => {
     setSelectedCigar(null);
+    setPendingCigar(null);
     setSelectedDrink(null);
     setQuery("");
     setCycle({});
+  };
+
+  const pickCigar = (raw: Cigar) => {
+    const cigar = cigarById(raw.id) ?? raw;
+    if (needsVitolaPick(cigar)) {
+      setPendingCigar(cigar);
+      return;
+    }
+    const vitolas = uniqueVitolas(cigar);
+    setSelectedCigar(vitolas.length === 1 ? applyVitola(cigar, vitolas[0]) : cigar);
+  };
+
+  const confirmVitola = (vitola: Vitola) => {
+    if (!pendingCigar) return;
+    setSelectedCigar(applyVitola(pendingCigar, vitola));
+    setPendingCigar(null);
   };
 
   return (
@@ -218,7 +238,7 @@ export function PairingPage() {
       )}
 
       {/* picker + OCR (fotografiraj bocu/cigaru) */}
-      {!selected && (
+      {!selected && !pendingCigar && (
         <>
           <div className="mt-3 flex items-stretch gap-2">
             <div className="flex-1">
@@ -242,8 +262,8 @@ export function PairingPage() {
               }
               onMatch={(id) => {
                 if (mode === "cigarToDrink") {
-                  const c = marketCigars.find((x) => x.id === id);
-                  if (c) setSelectedCigar(c);
+                  const c = cigarById(id) ?? marketCigars.find((x) => x.id === id);
+                  if (c) pickCigar(c);
                 } else {
                   const d = ALL_DRINKS.find((x) => x.id === id);
                   if (d) setSelectedDrink(d);
@@ -259,10 +279,7 @@ export function PairingPage() {
                   key={`${item.id}::${(item as Cigar).line}`}
                   title={`${(item as Cigar).brand} ${(item as Cigar).line}`}
                   sub={`${(item as Cigar).vitolas.length > 1 ? `${(item as Cigar).vitolas.length} vitola · ` : `${(item as Cigar).vitola} · `}${(item as Cigar).wrapper} · ${(item as Cigar).country}`}
-                  onPick={() => {
-                    const picked = cigarById((item as Cigar).id) ?? (item as Cigar);
-                    setSelectedCigar(picked);
-                  }}
+                  onPick={() => pickCigar((item as Cigar))}
                 />
               ) : (
                 <PickRow
@@ -275,6 +292,14 @@ export function PairingPage() {
             )}
           </div>
         </>
+      )}
+
+      {pendingCigar && !selected && (
+        <VitolaPicker
+          cigar={pendingCigar}
+          onPick={confirmVitola}
+          onBack={() => setPendingCigar(null)}
+        />
       )}
 
       {/* odabrano + 3 prijedloga */}
@@ -290,7 +315,7 @@ export function PairingPage() {
                 </div>
                 {mode === "cigarToDrink" && (
                   <div className="mt-0.5 text-xs text-dim">
-                    {(selected as Cigar).wrapper} · {(selected as Cigar).country}
+                    {(selected as Cigar).vitola} · {(selected as Cigar).wrapper} · {(selected as Cigar).country}
                   </div>
                 )}
                 <div className="mt-1.5 flex gap-4">

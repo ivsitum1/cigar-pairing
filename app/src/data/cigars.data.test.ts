@@ -15,11 +15,17 @@ describe("cigars.json integrity", () => {
     expect(new Set(ids).size).toBe(ids.length);
   });
 
-  it("Oliva Serie O — odabir po id-u vraća istu liniju", () => {
+  it("Oliva Serie O — ima više vitola i traži odabir", () => {
     const serieO = CIGARS.find((c) => c.id === "cig-oliva-serie-o");
     expect(serieO).toBeDefined();
     expect(serieO!.line).toBe("Serie O");
     expect(serieO!.vitola.toLowerCase()).not.toContain("tubos");
+    const names = (serieO!.vitolas ?? []).map((v) => v.name);
+    expect(names).toContain("Serie O Robusto");
+    expect(names).toContain("Tubos");
+    expect(names).toContain("Serie O Puro");
+    expect(names).toContain("Serie O Churchill");
+    expect(names.length).toBeGreaterThanOrEqual(4);
   });
 
   it("Oliva Serie G — odabir po id-u vraća istu liniju", () => {
