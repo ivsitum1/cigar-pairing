@@ -79,6 +79,7 @@ const STRINGS = {
   "coll.importOk": { hr: "Podaci uvezeni.", en: "Data imported." },
   "coll.importErr": { hr: "Neispravna datoteka.", en: "Invalid file." },
   "coll.stats": { hr: "boca/cigara u kolekciji", en: "bottles/cigars in collection" },
+  "coll.historySection": { hr: "Probano / bilješke (nemam)", en: "Tried / notes (not owned)" },
   // shopping
   "shop.tiers": { hr: "Plan kolekcije (tierovi)", en: "Collection plan (tiers)" },
   "shop.tierDone": { hr: "Nabavljeno", en: "Acquired" },

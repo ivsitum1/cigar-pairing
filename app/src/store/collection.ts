@@ -61,7 +61,7 @@ export const getItemState = (id: string): ItemState =>
 
 export function updateItem(id: string, patch: Partial<ItemState>) {
   const current = getItemState(id);
-  const next = { ...current, ...patch };
+  const next = { ...current, ...patch, note: (patch.note ?? current.note).trim() };
   const items = { ...cache.items };
   if (!next.owned && !next.tried && next.rating == null && !next.note) {
     delete items[id]; // ne cuvamo prazna stanja
