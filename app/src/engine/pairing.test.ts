@@ -26,28 +26,28 @@ describe("pairing engine — poznati parovi iz Excela", () => {
     );
   });
 
-  it("agricole (travnat, lagan) preferira Connecticut/laganu cigaru nad punom", () => {
+  it("agricole (travnat, lagan) preferira laganu cigaru nad punom", () => {
     const clement = byId(rums, "rum-clement-vsop-neisson-agricole");
-    const quaidorsay = byId(cigars, "cig-quai-dorsay-50-54");
-    const antano = byId(cigars, "cig-joya-de-nicaragua-antano");
-    expect(scorePairing(quaidorsay, clement).score).toBeGreaterThan(
+    const macanudo = byId(cigars, "cig-macanudo-cafe"); // 1/1, blag
+    const antano = byId(cigars, "cig-joya-de-nicaragua-antano"); // 5/5, pun
+    expect(scorePairing(macanudo, clement).score).toBeGreaterThan(
       scorePairing(antano, clement).score,
     );
   });
 
   it("dosladjeni rum + puna maduro cigara dobiva kontrast bonus (slatkoca presijece gorcinu)", () => {
     const onyx = byId(rums, "rum-barcelo-imperial-onyx");
-    const eiroaMaduro = byId(cigars, "cig-eiroa-cbt-maduro");
-    const { reasons } = scorePairing(eiroaMaduro, onyx);
+    const padronMaduro = byId(cigars, "cig-padron-1964"); // Maduro wrapper, body 4
+    const { reasons } = scorePairing(padronMaduro, onyx);
     expect(reasons.some((r) => r.rule === "contrast-sweet-maduro")).toBe(true);
   });
 
   it("tamni espresso preferira maduro nad blagim Connecticutom", () => {
     const espresso = byId(coffees, "cf-espresso-italian-dark");
-    const nubMaduro = byId(cigars, "cig-nub-maduro");
-    const cusano = byId(cigars, "cig-cusano");
-    expect(scorePairing(nubMaduro, espresso).score).toBeGreaterThan(
-      scorePairing(cusano, espresso).score,
+    const padronMaduro = byId(cigars, "cig-padron-1964"); // Maduro, body 4
+    const macanudo = byId(cigars, "cig-macanudo-cafe"); // Connecticut, body 1
+    expect(scorePairing(padronMaduro, espresso).score).toBeGreaterThan(
+      scorePairing(macanudo, espresso).score,
     );
   });
 
@@ -76,7 +76,7 @@ describe("pairing engine — API", () => {
   });
 
   it("pairDrinksForCigar preskace nepairable (spiced/mixing) pica", () => {
-    const cohiba = byId(cigars, "cig-cohiba-siglo-iv-vi");
+    const cohiba = byId(cigars, "cig-cohiba-robustos");
     const results = pairDrinksForCigar(cohiba, rums);
     expect(results.every((r) => r.item.pairable)).toBe(true);
     expect(results.some((r) => r.item.name.includes("Malibu"))).toBe(false);

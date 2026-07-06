@@ -8,7 +8,7 @@ rangiranim po kvaliteti za sipping uz cigaru.
 ## Struktura
 
 - `app/` — Vite + React + TS + Tailwind PWA
-  - `src/data/*.json` — indeksi (136 rumova, 170 whiskyja, 81 brandy, 23 kave, 100 cigara)
+  - `src/data/*.json` — indeksi (136 rumova, 170 whiskyja, 76 brandy, 21 gin, 23 kave, 410 cigara)
   - `src/engine/` — rule-based pairing engine s objašnjenjima (kalibracija u `rules.ts`)
   - `scripts/excel-to-json.py` — regenerira rums.json + shopping.json iz lokalnog Excela
   - `scripts/scrape-whisky-catalog.py` — scrape allez.hr + ecuga.com → whisky_catalog_raw.json
@@ -18,7 +18,12 @@ rangiranim po kvaliteti za sipping uz cigaru.
   - `scripts/build-brandy-excel.py` — gradi Konjak_Brandy_Checklist.xlsx iz raw kataloga
   - `scripts/excel-to-brandy-json.py` — regenerira brandies.json iz brandy Excela
   - `scripts/enrich-cigars.py` — vitole/cijene/linkovi iz humidor.hr scrape podataka
+  - `scripts/profile-cigars.py` — obogaćuje cigare bez profila (prazan flavorTags →
+    izvodi snagu/tijelo/wrapper/okuse iz wrappera, marke i bilješki)
+  - `scripts/dedupe-data.py` — uklanja duple ID-jeve nakon regeneracije (pokreni zadnje)
   - `scripts/export-indexes.py` — generira `*_Index.xlsx` u root (git-ignorirano)
+  - **Redoslijed nakon regeneracije cigara:** `enrich-cigars.py` → `profile-cigars.py`
+    → `dedupe-data.py` → `npm test`
 - Deploy: push na `master` → GitHub Actions → GitHub Pages
 
 ## Podaci o kolekciji (imam / probao / ocjene / dnevnik)
