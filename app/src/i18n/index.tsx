@@ -24,6 +24,8 @@ const STRINGS = {
   "pair.market": { hr: "Gdje kupuješ cigare?", en: "Where do you buy cigars?" },
   "pair.prefs": { hr: "Preferencije (zemlje / brendovi)", en: "Preferences (countries / brands)" },
   "pair.prefsHint": { hr: "Klikni da isključiš iz prijedloga", en: "Click to exclude from suggestions" },
+  "pair.pickVitola": { hr: "Odaberi vitolu", en: "Pick a vitola" },
+  "pair.pickVitolaHint": { hr: "Ova linija ima više formata — odaberi vitolu.", en: "This line has multiple sizes — pick a vitola." },
   "common.vitolas": { hr: "Vitole", en: "Vitolas" },
   "ocr.scan": { hr: "Fotografiraj etiketu", en: "Photograph the label" },
   "ocr.working": { hr: "Prepoznajem…", en: "Recognizing…" },

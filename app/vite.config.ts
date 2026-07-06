@@ -16,7 +16,7 @@ export default defineConfig({
         name: "Cigar & Drink Pairing",
         short_name: "Pairing",
         description:
-          "Pairing vodič za cigare i pića — rum, whisky, konjak, kava",
+          "Pairing vodič za cigare i pića — rum, whisky, konjak, gin, kava",
         theme_color: "#1a1512",
         background_color: "#1a1512",
         display: "standalone",

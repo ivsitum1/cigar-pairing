@@ -15,6 +15,28 @@ export const DRINKS: Record<DrinkCategory, Drink[]> = {
   coffee: coffees as unknown as Drink[],
 };
 
+function cigarRichness(c: Cigar): number {
+  return (
+    (c.vitolas?.length ?? 0) * 10 +
+    (c.flavorTags?.length ?? 0) +
+    (c.notes?.hr ? 1 : 0)
+  );
+}
+
+/** Jedan zapis po id — sprječava pogrešan klik kad export ima duplikate. */
+function dedupeCigars(cigars: Cigar[]): Cigar[] {
+  const best = new Map<string, Cigar>();
+  for (const c of cigars) {
+    const prev = best.get(c.id);
+    if (!prev || cigarRichness(c) > cigarRichness(prev)) {
+      best.set(c.id, c);
+    }
+  }
+  return [...best.values()].sort(
+    (a, b) => a.brand.localeCompare(b.brand) || a.line.localeCompare(b.line),
+  );
+}
+
 export const ALL_DRINKS: Drink[] = [
   ...DRINKS.rum,
   ...DRINKS.whisky,
@@ -23,7 +45,7 @@ export const ALL_DRINKS: Drink[] = [
   ...DRINKS.coffee,
 ];
 
-export const CIGARS: Cigar[] = cigarsJson as Cigar[];
+export const CIGARS: Cigar[] = dedupeCigars(cigarsJson as Cigar[]);
 
 export interface ShoppingTier {
   tier: string;

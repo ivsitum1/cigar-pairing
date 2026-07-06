@@ -1,10 +1,12 @@
 import { useMemo, useState } from "react";
 import type { Cigar, Drink, DrinkCategory, Market } from "../types";
-import { CIGARS, DRINKS } from "../data";
+import { CIGARS, DRINKS, cigarById } from "../data";
 import { useI18n, STYLE_LABELS, type StringKey } from "../i18n";
 import { Chip, SearchInput } from "../components/ui";
 import { CigarRow, DrinkRow } from "../components/cards";
 import { DetailSheet } from "../components/DetailSheet";
+import { VitolaPicker } from "../components/VitolaPicker";
+import { applyVitola, needsVitolaPick, uniqueVitolas } from "../lib/cigarVitola";
 
 type Tab = "cigars" | DrinkCategory;
 const TABS: Tab[] = ["cigars", "rum", "whisky", "brandy", "gin", "coffee"];
@@ -23,6 +25,20 @@ export function CatalogPage() {
   const [detail, setDetail] = useState<
     { kind: "cigar"; item: Cigar } | { kind: "drink"; item: Drink } | null
   >(null);
+  const [pendingCigar, setPendingCigar] = useState<Cigar | null>(null);
+
+  const openCigar = (raw: Cigar) => {
+    const cigar = cigarById(raw.id) ?? raw;
+    if (needsVitolaPick(cigar)) {
+      setPendingCigar(cigar);
+      return;
+    }
+    const vitolas = uniqueVitolas(cigar);
+    setDetail({
+      kind: "cigar",
+      item: vitolas.length === 1 ? applyVitola(cigar, vitolas[0]) : cigar,
+    });
+  };
 
   const switchTab = (next: Tab) => {
     setTab(next);
@@ -134,7 +150,11 @@ export function CatalogPage() {
 
       <div className="mt-2 space-y-2">
         {cigars.map((c) => (
-          <CigarRow key={c.id} cigar={c} onClick={() => setDetail({ kind: "cigar", item: c })} />
+          <CigarRow
+            key={`${c.id}::${c.line}`}
+            cigar={c}
+            onClick={() => openCigar(c)}
+          />
         ))}
         {drinks.map((d, i) => (
           <DrinkRow
@@ -145,6 +165,17 @@ export function CatalogPage() {
           />
         ))}
       </div>
+
+      {pendingCigar && (
+        <VitolaPicker
+          cigar={pendingCigar}
+          onPick={(v) => {
+            setDetail({ kind: "cigar", item: applyVitola(pendingCigar, v) });
+            setPendingCigar(null);
+          }}
+          onBack={() => setPendingCigar(null)}
+        />
+      )}
 
       <DetailSheet target={detail} onClose={() => setDetail(null)} />
     </div>
