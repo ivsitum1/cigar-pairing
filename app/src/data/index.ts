@@ -6,6 +6,7 @@ import gins from "./gins.json";
 import coffees from "./coffees.json";
 import cigarsJson from "./cigars.json";
 import shoppingJson from "./shopping.json";
+import brandsJson from "./brands.json";
 
 export const DRINKS: Record<DrinkCategory, Drink[]> = {
   rum: rums as unknown as Drink[],
@@ -83,6 +84,24 @@ export const drinkById = (id: string): Drink | undefined =>
 export const cigarById = (id: string): Cigar | undefined =>
   CIGARS.find((c) => c.id === id);
 
+export interface BrandInfo {
+  country: string;
+  founded: string;
+  blurb: { hr: string; en: string };
+}
+
+const BRANDS = brandsJson as Record<string, BrandInfo>;
+
+export const brandInfo = (brand: string): BrandInfo | undefined => BRANDS[brand];
+
+export const cigarsByBrand = (brand: string): Cigar[] =>
+  CIGARS.filter((c) => c.brand === brand);
+
+// sve marke koje imaju barem jednu cigaru, sortirano
+export const ALL_BRANDS: string[] = [
+  ...new Set(CIGARS.map((c) => c.brand)),
+].sort((a, b) => a.localeCompare(b));
+
 // linkovi za kupnju po tržištu — HR izravno (humidor/havana), EU cigarworld.de,
 // USA/Svijet pouzdana pretraga (trgovine blokiraju izravne bot-provjere URL-ova)
 export function cigarMarketLinks(c: Cigar): { market: string; url: string }[] {
@@ -105,6 +124,29 @@ export function cigarMarketLinks(c: Cigar): { market: string; url: string }[] {
     url: `https://www.google.com/search?q=${q}+cigar+buy+online`,
   });
   return links;
+}
+
+// URL trgovine za odabrano tržište (za taj market, ne bilo koji)
+export function cigarLinkForMarket(c: Cigar, market: string): string {
+  const links = cigarMarketLinks(c);
+  return (links.find((l) => l.market === market) ?? links[links.length - 1]).url;
+}
+
+// Cijena SAMO kad je pouzdana za odabrano tržište (HR = humidor po vitoli).
+// Za EU/USA/WW nemamo scrape cijenu -> vraćamo null (ne izmišljamo broj).
+// "fromMany" = ima više vitola s cijenama pa je ovo najniža ("od X €").
+export function cigarPriceForMarket(
+  c: Cigar,
+  market: string,
+): { price: number | null; fromMany: boolean } {
+  if (market !== "HR") return { price: null, fromMany: false };
+  const priced = (c.vitolas ?? []).filter((v) => v.priceEUR != null);
+  if (priced.length === 0) {
+    return { price: c.priceEUR ?? null, fromMany: false };
+  }
+  const min = Math.min(...priced.map((v) => v.priceEUR as number));
+  const max = Math.max(...priced.map((v) => v.priceEUR as number));
+  return { price: min, fromMany: max - min > 0.01 };
 }
 
 export const formatPrice = (

@@ -35,8 +35,8 @@ export function Meter({
   );
 }
 
-// Score medaljon u stilu cigar banda
-export function ScoreBand({ score }: { score: number }) {
+// Score medaljon u stilu cigar banda — prikazuje % SLAGANJA (ne ocjenu kvalitete)
+export function ScoreBand({ score, title }: { score: number; title?: string }) {
   const tone =
     score >= 75
       ? "var(--color-zlato-2)"
@@ -45,15 +45,17 @@ export function ScoreBand({ score }: { score: number }) {
         : "var(--color-dim)";
   return (
     <div
-      className="relative flex h-12 w-12 shrink-0 items-center justify-center rounded-full"
+      title={title}
+      className="relative flex h-12 w-12 shrink-0 flex-col items-center justify-center rounded-full"
       style={{
         border: `1.5px solid ${tone}`,
         boxShadow: `inset 0 0 0 3px var(--color-humidor), inset 0 0 0 4px ${tone}44`,
       }}
     >
-      <span className="font-display text-base" style={{ color: tone }}>
+      <span className="font-display text-base leading-none" style={{ color: tone }}>
         {score}
       </span>
+      <span className="text-[7px] uppercase tracking-wider text-dim">%</span>
     </div>
   );
 }

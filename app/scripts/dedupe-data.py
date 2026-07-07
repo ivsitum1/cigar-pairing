@@ -81,7 +81,32 @@ def dedupe_cigars(path: Path):
     return changed
 
 
+# UTF-8 interpunkcija/dijakritici pogresno dekodirani kao OEM codepage
+MOJIBAKE = {
+    "ÔÇö": "—", "ÔÇô": "–", "ÔÇť": "“", "ÔÇŁ": "”", "ÔÇÖ": "’",
+    "ÔÇś": "‘", "ÔÇŽ": "…", "┬á": " ", "┬░": "°",
+    "├í": "á", "├ę": "é", "├ş": "í", "├│": "ó", "├║": "ú", "├▒": "ñ",
+    "├╝": "ü", "├ó": "â", "┼ż": "ž", "┼í": "š", "─ç": "ć", "─Ź": "č",
+}
+
+
+def fix_encoding_pass():
+    """Globalni popravak mojibake sekvenci u svim data JSON-ovima."""
+    total = 0
+    for p in DATA.glob("*.json"):
+        s = p.read_text(encoding="utf-8")
+        orig = s
+        for k, v in MOJIBAKE.items():
+            s = s.replace(k, v)
+        if s != orig:
+            p.write_text(s, encoding="utf-8")
+            total += sum(orig.count(k) for k in MOJIBAKE)
+    if total:
+        print(f"encoding: popravljeno {total} mojibake sekvenci")
+
+
 def main():
+    fix_encoding_pass()
     for name in ["rums", "whiskies", "brandies", "gins", "coffees"]:
         p = DATA / f"{name}.json"
         if p.exists():

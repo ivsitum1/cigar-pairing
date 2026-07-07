@@ -1,10 +1,28 @@
 import type { Cigar, Drink } from "../types";
 import { useI18n, STYLE_LABELS, ADDITIVE_LABELS } from "../i18n";
-import { formatPrice } from "../data";
+import { cigarPriceForMarket, formatPrice } from "../data";
 import { Meter } from "./ui";
 import { getItemState, useCollection } from "../store/collection";
+import { useMarket } from "../store/market";
+
+// Cijena cigare koja odgovara odabranom tržištu (HR = konkretna, ostalo = "provjeri")
+export function CigarPrice({ cigar }: { cigar: Cigar }) {
+  const { t } = useI18n();
+  const market = useMarket();
+  const { price, fromMany } = cigarPriceForMarket(cigar, market);
+  if (price == null) {
+    return <span className="text-dim/70">{t("price.check")}</span>;
+  }
+  return (
+    <span>
+      {fromMany ? `${t("price.from")} ` : ""}
+      {price.toFixed(price % 1 ? 2 : 0)} €
+    </span>
+  );
+}
 
 function OwnedDot({ id }: { id: string }) {
+  const { t } = useI18n();
   useCollection();
   const s = getItemState(id);
   if (!s.owned && !s.tried) return null;
@@ -12,7 +30,7 @@ function OwnedDot({ id }: { id: string }) {
     <span
       className="ml-1 inline-block h-2 w-2 rounded-full"
       style={{ background: s.owned ? "var(--color-lista)" : "var(--color-dim)" }}
-      title={s.owned ? "U kolekciji" : "Probano"}
+      title={s.owned ? t("coll.inCollection") : t("coll.triedTitle")}
     />
   );
 }
@@ -24,7 +42,7 @@ export function CigarRow({
   cigar: Cigar;
   onClick?: () => void;
 }) {
-  const { t, lx } = useI18n();
+  const { t, lx, cn } = useI18n();
   return (
     <button
       onClick={onClick}
@@ -36,11 +54,11 @@ export function CigarRow({
           <OwnedDot id={cigar.id} />
         </span>
         <span className="shrink-0 text-xs text-dim">
-          {formatPrice(cigar.priceEUR)}
+          <CigarPrice cigar={cigar} />
         </span>
       </div>
       <div className="mt-1 text-xs text-dim">
-        {cigar.vitola} · {cigar.wrapper} · {cigar.country} ·{" "}
+        {cigar.vitola} · {cigar.wrapper} · {cn(cigar.country)} ·{" "}
         {cigar.smokeTimeMin} {t("common.minutes")}
       </div>
       <div className="mt-2 flex flex-wrap items-center gap-x-4 gap-y-1">

@@ -1,12 +1,17 @@
 import { useMemo, useState } from "react";
 import type { Cigar, Drink, DrinkCategory, Market } from "../types";
-import { CIGARS, DRINKS, cigarById } from "../data";
+import { CIGARS, DRINKS, cigarById, ALL_BRANDS } from "../data";
 import { useI18n, STYLE_LABELS, type StringKey } from "../i18n";
 import { Chip, SearchInput } from "../components/ui";
 import { CigarRow, DrinkRow } from "../components/cards";
 import { DetailSheet } from "../components/DetailSheet";
+import { BrandSheet } from "../components/BrandSheet";
 import { VitolaPicker } from "../components/VitolaPicker";
 import { applyVitola, needsVitolaPick, uniqueVitolas } from "../lib/cigarVitola";
+import { useMarket, setMarket } from "../store/market";
+
+const norm = (s: string) =>
+  s.normalize("NFKD").replace(/[̀-ͯ]/g, "").toLowerCase();
 
 type Tab = "cigars" | DrinkCategory;
 const TABS: Tab[] = ["cigars", "rum", "whisky", "brandy", "gin", "coffee"];
@@ -19,13 +24,19 @@ export function CatalogPage() {
   const [styleFilter, setStyleFilter] = useState<string | null>(null);
   const [strengthFilter, setStrengthFilter] = useState<number | null>(null);
   const [cleanOnly, setCleanOnly] = useState(false);
-  const [market, setMarket] = useState<Market>(
-    () => (localStorage.getItem("market") as Market) || "HR",
-  );
+  const market = useMarket();
   const [detail, setDetail] = useState<
     { kind: "cigar"; item: Cigar } | { kind: "drink"; item: Drink } | null
   >(null);
   const [pendingCigar, setPendingCigar] = useState<Cigar | null>(null);
+  const [brand, setBrand] = useState<string | null>(null);
+
+  // marke koje odgovaraju pretrazi (za "Otvori brend")
+  const matchedBrands = useMemo(() => {
+    const nq = norm(query.trim());
+    if (tab !== "cigars" || nq.length < 2) return [];
+    return ALL_BRANDS.filter((b) => norm(b).includes(nq)).slice(0, 4);
+  }, [tab, query]);
 
   const openCigar = (raw: Cigar) => {
     const cigar = cigarById(raw.id) ?? raw;
@@ -102,6 +113,21 @@ export function CatalogPage() {
         <SearchInput value={query} onChange={setQuery} placeholder={t("pair.search")} />
       </div>
 
+      {/* pretraga pogodila marku -> otvori brend stranicu */}
+      {matchedBrands.length > 0 && (
+        <div className="no-scrollbar mt-2 flex gap-2 overflow-x-auto">
+          {matchedBrands.map((b) => (
+            <button
+              key={b}
+              onClick={() => setBrand(b)}
+              className="inline-flex shrink-0 items-center gap-1.5 rounded-full border border-zlato/50 bg-zlato/10 px-3 py-1.5 text-xs text-zlato-2 hover:bg-zlato/20"
+            >
+              {t("brand.open")}: {b} →
+            </button>
+          ))}
+        </div>
+      )}
+
       {/* filteri */}
       <div className="no-scrollbar mt-2 flex gap-2 overflow-x-auto">
         {tab === "cigars" &&
@@ -109,10 +135,7 @@ export function CatalogPage() {
             <Chip
               key={m}
               active={market === m}
-              onClick={() => {
-                localStorage.setItem("market", m);
-                setMarket(m);
-              }}
+              onClick={() => setMarket(m)}
             >
               {t(`market.${m}` as StringKey)}
             </Chip>
@@ -177,7 +200,25 @@ export function CatalogPage() {
         />
       )}
 
-      <DetailSheet target={detail} onClose={() => setDetail(null)} />
+      {brand && (
+        <BrandSheet
+          brand={brand}
+          onClose={() => setBrand(null)}
+          onOpenCigar={(c) => {
+            setBrand(null);
+            openCigar(c);
+          }}
+        />
+      )}
+
+      <DetailSheet
+        target={detail}
+        onClose={() => setDetail(null)}
+        onOpenBrand={(b) => {
+          setDetail(null);
+          setBrand(b);
+        }}
+      />
     </div>
   );
 }

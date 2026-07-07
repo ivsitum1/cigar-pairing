@@ -10,6 +10,16 @@ const STRINGS = {
   // pairing
   "pair.cigarToDrink": { hr: "Cigara → Piće", en: "Cigar → Drink" },
   "pair.drinkToCigar": { hr: "Piće → Cigara", en: "Drink → Cigar" },
+  "pair.custom": { hr: "Kombiniraj", en: "Combine" },
+  "pair.customTitle": { hr: "Izaberi cigaru i piće", en: "Pick a cigar and a drink" },
+  "pair.customHint": { hr: "Odaberi jedno i drugo pa vidi koliko se slažu.", en: "Pick both and see how well they match." },
+  "pair.changeCigar": { hr: "Promijeni cigaru", en: "Change cigar" },
+  "pair.changeDrink": { hr: "Promijeni piće", en: "Change drink" },
+  "pair.verdict5": { hr: "Savršen spoj", en: "Perfect match" },
+  "pair.verdict4": { hr: "Odličan spoj", en: "Excellent match" },
+  "pair.verdict3": { hr: "Dobar spoj", en: "Good match" },
+  "pair.verdict2": { hr: "Osrednje", en: "So-so" },
+  "pair.verdict1": { hr: "Slab spoj", en: "Poor match" },
   "pair.pickCigar": { hr: "Odaberi cigaru", en: "Pick a cigar" },
   "pair.pickDrink": { hr: "Odaberi piće", en: "Pick a drink" },
   "pair.search": { hr: "Pretraži…", en: "Search…" },
@@ -27,6 +37,9 @@ const STRINGS = {
   "pair.pickVitola": { hr: "Odaberi vitolu", en: "Pick a vitola" },
   "pair.pickVitolaHint": { hr: "Ova linija ima više formata — odaberi vitolu.", en: "This line has multiple sizes — pick a vitola." },
   "common.vitolas": { hr: "Vitole", en: "Vitolas" },
+  "coll.inCollection": { hr: "U kolekciji", en: "In collection" },
+  "common.vitolaCountSuffix": { hr: "vitola", en: "vitolas" },
+  "coll.triedTitle": { hr: "Probano", en: "Tried" },
   "ocr.scan": { hr: "Fotografiraj etiketu", en: "Photograph the label" },
   "ocr.working": { hr: "Prepoznajem…", en: "Recognizing…" },
   "ocr.partial": { hr: "Nisam siguran — pogledaj rezultate pretrage", en: "Not sure — check the search results" },
@@ -34,6 +47,22 @@ const STRINGS = {
   "ocr.error": { hr: "Prepoznavanje nije uspjelo (treba internet za prvi put).", en: "Recognition failed (first use needs internet)." },
   "common.buy": { hr: "Gdje kupiti", en: "Where to buy" },
   "common.searchOnline": { hr: "Traži online", en: "Search online" },
+  "price.from": { hr: "od", en: "from" },
+  "price.check": { hr: "provjeri cijenu", en: "check price" },
+  "price.marketNote": {
+    hr: "Cijena vrijedi za odabrano tržište. Za druga tržišta koristi gumbe za kupnju.",
+    en: "Price applies to the selected market. For other markets use the buy buttons.",
+  },
+  "rate.qualityWhat": {
+    hr: "Urednička procjena kvalitete (1–10) — kurirano iz recenzija i vlastitih bilješki, nije korisnička ocjena.",
+    en: "Editorial quality estimate (1–10) — curated from reviews and notes, not a user rating.",
+  },
+  "rate.matchWhat": {
+    hr: "Postotak slaganja — koliko se ovo piće i cigara slažu prema pravilima uparivanja (tijelo, okusi, wrapper).",
+    en: "Match percentage — how well this drink and cigar fit per the pairing rules (body, flavours, wrapper).",
+  },
+  "rate.match": { hr: "% slaganja", en: "% match" },
+  "rate.editorial": { hr: "urednička ocjena", en: "editorial score" },
   "market.HR": { hr: "Hrvatska", en: "Croatia" },
   "market.EU": { hr: "EU", en: "EU" },
   "market.USA": { hr: "USA", en: "USA" },
@@ -65,6 +94,10 @@ const STRINGS = {
   "cat.gin": { hr: "Gin", en: "Gin" },
   "cat.coffee": { hr: "Kava", en: "Coffee" },
   "cat.cigars": { hr: "Cigare", en: "Cigars" },
+  "brand.open": { hr: "Otvori brend", en: "Open brand" },
+  "brand.byStrength": { hr: "Po snazi", en: "By strength" },
+  "brand.byPrice": { hr: "Po cijeni", en: "By price" },
+  "brand.viewAll": { hr: "Sve cigare marke", en: "All cigars by brand" },
   // kolekcija
   "coll.owned": { hr: "Imam", en: "Owned" },
   "coll.tried": { hr: "Probao", en: "Tried" },
@@ -169,6 +202,49 @@ export const STYLE_LABELS: Record<string, LocalizedText> = {
   flavored: { hr: "Aromatiziran (ne za cigaru)", en: "Flavoured (not for cigars)" },
 };
 
+// hrvatska imena zemalja u podacima -> engleski prikaz
+export const COUNTRY_LABELS: Record<string, string> = {
+  Kuba: "Cuba",
+  Nikaragva: "Nicaragua",
+  Dominikana: "Dominican Republic",
+  Meksiko: "Mexico",
+  "SAD/Nikaragva": "USA/Nicaragua",
+  Škotska: "Scotland",
+  Francuska: "France",
+  Španjolska: "Spain",
+  Irska: "Ireland",
+  Njemačka: "Germany",
+  Grčka: "Greece",
+  Italija: "Italy",
+  Hrvatska: "Croatia",
+  Armenija: "Armenia",
+  Indija: "India",
+  Australija: "Australia",
+  Tajvan: "Taiwan",
+  Švicarska: "Switzerland",
+  Nizozemska: "Netherlands",
+};
+
+// ceste "najbolji nacin" serviranja iz podataka -> engleski prikaz
+export const SERVING_LABELS: Record<string, string> = {
+  "Cisto": "Neat",
+  "Cisto / kap vode": "Neat / drop of water",
+  "Kap vode": "Drop of water",
+  "Kap vode (otvara estere)": "Drop of water (opens the esters)",
+  "Kap vode (cask strength)": "Drop of water (cask strength)",
+  "Cisto / Ti' Punch": "Neat / Ti' Punch",
+  "On the rocks (velika kocka)": "On the rocks (big cube)",
+  "On the rocks / kap vode": "On the rocks / drop of water",
+  "On the rocks / cisto": "On the rocks / neat",
+  "Velika kocka leda ili kap vode": "Big ice cube or a drop of water",
+  "Koktel / highball": "Cocktail / highball",
+  "Cisto (snifter)": "Neat (snifter)",
+  "Cisto / on the rocks": "Neat / on the rocks",
+  "Cisto / Old Fashioned": "Neat / Old Fashioned",
+  "Cisto / highball": "Neat / highball",
+  "Uz kavu": "With coffee",
+};
+
 export const ADDITIVE_LABELS: Record<string, LocalizedText> = {
   clean: { hr: "Čist", en: "Clean" },
   low: { hr: "Vrlo nizak", en: "Very low" },
@@ -184,6 +260,8 @@ interface I18nCtx {
   setLang: (l: Lang) => void;
   t: (key: StringKey) => string;
   lx: (text: LocalizedText | undefined | null) => string;
+  cn: (country: string) => string; // ime zemlje u aktivnom jeziku
+  sv: (serving: string) => string; // nacin serviranja u aktivnom jeziku
 }
 
 const Ctx = createContext<I18nCtx>(null!);
@@ -201,7 +279,14 @@ export function I18nProvider({ children }: { children: ReactNode }) {
     if (!text) return "";
     return text[lang] || text.hr || text.en;
   };
-  return <Ctx.Provider value={{ lang, setLang, t, lx }}>{children}</Ctx.Provider>;
+  // imena zemalja i serviranja u podacima su hrvatska; na EN prevedi mapom
+  const cn = (country: string) =>
+    lang === "en" ? (COUNTRY_LABELS[country] ?? country) : country;
+  const sv = (serving: string) =>
+    lang === "en" ? (SERVING_LABELS[serving] ?? serving) : serving;
+  return (
+    <Ctx.Provider value={{ lang, setLang, t, lx, cn, sv }}>{children}</Ctx.Provider>
+  );
 }
 
 export const useI18n = () => useContext(Ctx);

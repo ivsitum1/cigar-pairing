@@ -1,800 +1,762 @@
 [
-  {
-    "id": "gin-monkey-47-schwarzwald-dry-gin-47-vol-0-5l",
-    "name": "Monkey 47 Schwarzwald Dry Gin 47% Vol. 0,5l",
-    "style": "contemporary",
-    "region": "Schwarzwald, Njemačka",
-    "botanicalProfile": "botanical",
-    "body": 3,
-    "sweetness": 2,
-    "flavorTags": [
-      "cvjetno",
-      "citrus",
-      "začini"
-    ],
-    "qualityScore": 9.2,
-    "abv": 47.0,
-    "priceEUR": {
-      "min": 51.99,
-      "max": 51.99
-    },
-    "shopHR": "allez.hr",
-    "priceUrl": "https://allez.hr/shop/svi-proizvodi/monkey-47-gin-47-05-l",
-    "pairable": true,
-    "serving": {
-      "neat": 3,
-      "tonic": 2,
-      "martini": 3,
-      "best": "Cisti ili martini",
-      "highball": 2
-    },
-    "cigarHint": "Connecticut/claro — cvjetni profil",
-    "notes": {
-      "hr": "Referentni contemporary gin — složen botanički profil, odličan čist ili u martiniu.",
-      "en": ""
-    },
-    "meta": true,
-    "category": "gin",
-    "status": "META"
+ {
+  "id": "gin-monkey-47-schwarzwald-dry-gin-47-vol-0-5l",
+  "name": "Monkey 47 Schwarzwald",
+  "style": "contemporary",
+  "region": "Schwarzwald, Njemačka",
+  "botanicalProfile": "botanical",
+  "body": 3,
+  "sweetness": 2,
+  "flavorTags": [
+   "cvjetno",
+   "citrus",
+   "začini"
+  ],
+  "qualityScore": 9.2,
+  "abv": 47.0,
+  "priceEUR": {
+   "min": 51.99,
+   "max": 51.99
   },
-  {
-    "id": "gin-monkey-47-schwarzwald-dry-gin-barrel-cut-47-vol-0-5l-u-poklon-kutiji",
-    "name": "Monkey 47 Schwarzwald Dry Gin Barrel Cut 47% Vol. 0,5l u poklon kutiji",
-    "style": "contemporary",
-    "region": "Schwarzwald, Njemačka",
-    "botanicalProfile": "botanical",
-    "body": 3,
-    "sweetness": 2,
-    "flavorTags": [
-      "cvjetno",
-      "citrus",
-      "začini"
-    ],
-    "qualityScore": 9.2,
-    "abv": 47.0,
-    "priceEUR": {
-      "min": 61.0,
-      "max": 61.0
-    },
-    "shopHR": "allez.hr",
-    "priceUrl": "https://allez.hr/shop/svi-proizvodi/monkey-47-schwarzwald-dry-gin-barrel-cut-47-vol-05l-u-poklon-kutiji",
-    "pairable": true,
-    "serving": {
-      "neat": 3,
-      "tonic": 2,
-      "martini": 3,
-      "best": "Cisti ili martini",
-      "highball": 2
-    },
-    "cigarHint": "Connecticut/claro — cvjetni profil",
-    "notes": {
-      "hr": "Referentni contemporary gin — složen botanički profil, odličan čist ili u martiniu.",
-      "en": ""
-    },
-    "meta": true,
-    "category": "gin",
-    "status": "META"
+  "shopHR": "allez.hr",
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/monkey-47-gin-47-05-l",
+  "pairable": true,
+  "serving": {
+   "neat": 3,
+   "tonic": 2,
+   "martini": 3,
+   "best": "Cisti ili martini",
+   "highball": 2
   },
-  {
-    "id": "gin-the-botanist-islay-dry-gin-46-vol-0-7l",
-    "name": "The Botanist Islay Dry Gin 46% Vol. 0,7l",
-    "style": "contemporary",
-    "region": "Islay, Škotska",
-    "botanicalProfile": "botanical",
-    "body": 3,
-    "sweetness": 2,
-    "flavorTags": [
-      "cvjetno",
-      "citrus",
-      "začini"
-    ],
-    "qualityScore": 8.8,
-    "abv": 46.0,
-    "priceEUR": {
-      "min": 38.0,
-      "max": 38.0
-    },
-    "shopHR": "allez.hr",
-    "priceUrl": "https://allez.hr/shop/svi-proizvodi/the-botanist-07-l",
-    "pairable": true,
-    "serving": {
-      "neat": 3,
-      "tonic": 2,
-      "martini": 3,
-      "best": "Cisti ili martini",
-      "highball": 2
-    },
-    "cigarHint": "Connecticut/claro — cvjetni profil",
-    "notes": {
-      "hr": "Islay bilje + juniper — kompleksan čist sipper.",
-      "en": ""
-    },
-    "meta": true,
-    "category": "gin",
-    "status": "META"
+  "cigarHint": "Connecticut/claro — cvjetni profil",
+  "notes": {
+   "hr": "Referentni contemporary gin — složen botanički profil, odličan čist ili u martiniu.",
+   "en": ""
   },
-  {
-    "id": "gin-four-pillars-rare-dry-gin-41-8-vol-0-7l",
-    "name": "Four Pillars Rare Dry Gin 41,8% Vol. 0,7l",
-    "style": "contemporary",
-    "region": "Yarra Valley, Australija",
-    "botanicalProfile": "botanical",
-    "body": 3,
-    "sweetness": 2,
-    "flavorTags": [
-      "cvjetno",
-      "citrus",
-      "začini"
-    ],
-    "qualityScore": 8.6,
-    "abv": 41.8,
-    "priceEUR": {
-      "min": 49.8,
-      "max": 49.8
-    },
-    "shopHR": "allez.hr",
-    "priceUrl": "https://allez.hr/shop/svi-proizvodi/silent-pool-rare-citrus-gin-43-vol-07l",
-    "pairable": true,
-    "serving": {
-      "neat": 3,
-      "tonic": 2,
-      "martini": 3,
-      "best": "Cisti ili martini",
-      "highball": 2
-    },
-    "cigarHint": "Connecticut/claro — cvjetni profil",
-    "notes": {
-      "hr": "Australijski premium — složen, odličan čist.",
-      "en": ""
-    },
-    "meta": true,
-    "category": "gin",
-    "status": "META"
+  "meta": true,
+  "category": "gin",
+  "status": "META"
+ },
+ {
+  "id": "gin-monkey-47-schwarzwald-dry-gin-barrel-cut-47-vol-0-5l-u-poklon-kutiji",
+  "name": "Monkey 47 Schwarzwald Barrel Cut",
+  "style": "contemporary",
+  "region": "Schwarzwald, Njemačka",
+  "botanicalProfile": "botanical",
+  "body": 3,
+  "sweetness": 2,
+  "flavorTags": [
+   "cvjetno",
+   "citrus",
+   "začini"
+  ],
+  "qualityScore": 9.2,
+  "abv": 47.0,
+  "priceEUR": {
+   "min": 61.0,
+   "max": 61.0
   },
-  {
-    "id": "gin-hendrick-s-gin-41-4-vol-0-7l",
-    "name": "Hendrick's Gin 41,4% Vol. 0,7l",
-    "style": "contemporary",
-    "region": "Škotska",
-    "botanicalProfile": "botanical",
-    "body": 3,
-    "sweetness": 2,
-    "flavorTags": [
-      "cvjetno",
-      "citrus",
-      "začini"
-    ],
-    "qualityScore": 8.5,
-    "abv": 41.4,
-    "priceEUR": {
-      "min": 32.0,
-      "max": 32.0
-    },
-    "shopHR": "allez.hr",
-    "priceUrl": "https://allez.hr/shop/svi-proizvodi/bathtub-gin",
-    "pairable": true,
-    "serving": {
-      "neat": 3,
-      "tonic": 2,
-      "martini": 3,
-      "best": "Cisti ili martini",
-      "highball": 2
-    },
-    "cigarHint": "Connecticut/claro — cvjetni profil",
-    "notes": {
-      "hr": "Klasičan cvjetni profil — pairing s blažom Connecticut cigaretom.",
-      "en": ""
-    },
-    "meta": true,
-    "category": "gin",
-    "status": "META"
+  "shopHR": "allez.hr",
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/monkey-47-schwarzwald-dry-gin-barrel-cut-47-vol-05l-u-poklon-kutiji",
+  "pairable": true,
+  "serving": {
+   "neat": 3,
+   "tonic": 2,
+   "martini": 3,
+   "best": "Cisti ili martini",
+   "highball": 2
   },
-  {
-    "id": "gin-nikka-coffey-gin-47-vol-0-7l",
-    "name": "Nikka Coffey Gin 47% Vol. 0,7l",
-    "style": "contemporary",
-    "region": "Japan",
-    "botanicalProfile": "botanical",
-    "body": 3,
-    "sweetness": 2,
-    "flavorTags": [
-      "cvjetno",
-      "citrus",
-      "začini"
-    ],
-    "qualityScore": 8.5,
-    "abv": 47.0,
-    "priceEUR": {
-      "min": 46.0,
-      "max": 46.0
-    },
-    "shopHR": "allez.hr",
-    "priceUrl": "https://allez.hr/shop/svi-proizvodi/nikka-coffey-gin-gb-47-vol-07-l",
-    "pairable": true,
-    "serving": {
-      "neat": 3,
-      "tonic": 2,
-      "martini": 3,
-      "best": "Cisti ili martini",
-      "highball": 2
-    },
-    "cigarHint": "Connecticut/claro — cvjetni profil",
-    "notes": {
-      "hr": "Japanski citrus gin — čist ili martini.",
-      "en": ""
-    },
-    "meta": true,
-    "category": "gin",
-    "status": "META"
+  "cigarHint": "Connecticut/claro — cvjetni profil",
+  "notes": {
+   "hr": "Referentni contemporary gin — složen botanički profil, odličan čist ili u martiniu.",
+   "en": ""
   },
-  {
-    "id": "gin-tanqueray-no-ten-47-3-vol-0-7l",
-    "name": "Tanqueray No. TEN 47,3% Vol. 0,7l",
-    "style": "premium-dry",
-    "region": "London, UK",
-    "botanicalProfile": "classic-juniper",
-    "body": 3,
-    "sweetness": 2,
-    "flavorTags": [
-      "juniper",
-      "citrus",
-      "koriander"
-    ],
-    "qualityScore": 8.4,
-    "abv": 47.3,
-    "priceEUR": {
-      "min": 37.5,
-      "max": 37.5
-    },
-    "shopHR": "allez.hr",
-    "priceUrl": "https://allez.hr/shop/svi-proizvodi/tanqueray-ten-london-gin-473-07-l",
-    "pairable": true,
-    "serving": {
-      "neat": 3,
-      "tonic": 2,
-      "martini": 3,
-      "best": "Cisti ili martini",
-      "highball": 2
-    },
-    "cigarHint": "Connecticut srednje snage",
-    "notes": {
-      "hr": "Premium London dry — citrus-forward, martini klasik.",
-      "en": ""
-    },
-    "meta": true,
-    "category": "gin",
-    "status": "META"
+  "meta": true,
+  "category": "gin",
+  "status": "META"
+ },
+ {
+  "id": "gin-the-botanist-islay-dry-gin-46-vol-0-7l",
+  "name": "The Botanist Islay",
+  "style": "contemporary",
+  "region": "Islay, Škotska",
+  "botanicalProfile": "botanical",
+  "body": 3,
+  "sweetness": 2,
+  "flavorTags": [
+   "cvjetno",
+   "citrus",
+   "začini"
+  ],
+  "qualityScore": 8.8,
+  "abv": 46.0,
+  "priceEUR": {
+   "min": 38.0,
+   "max": 38.0
   },
-  {
-    "id": "gin-tanqueray-n-ten-distilled-gin-47-3-vol-0-7l",
-    "name": "Tanqueray N° TEN Distilled Gin 47,3% Vol. 0,7l",
-    "style": "premium-dry",
-    "region": "London, UK",
-    "botanicalProfile": "classic-juniper",
-    "body": 3,
-    "sweetness": 2,
-    "flavorTags": [
-      "juniper",
-      "citrus",
-      "koriander"
-    ],
-    "qualityScore": 8.4,
-    "abv": 47.3,
-    "priceEUR": {
-      "min": 37.5,
-      "max": 37.5
-    },
-    "shopHR": "allez.hr",
-    "priceUrl": "https://allez.hr/shop/svi-proizvodi/tanqueray-ten-london-gin-473-07-l",
-    "pairable": true,
-    "serving": {
-      "neat": 3,
-      "tonic": 2,
-      "martini": 3,
-      "best": "Cisti ili martini",
-      "highball": 2
-    },
-    "cigarHint": "Connecticut srednje snage",
-    "notes": {
-      "hr": "Premium London dry — citrus-forward, martini klasik.",
-      "en": ""
-    },
-    "meta": true,
-    "category": "gin",
-    "status": "META"
+  "shopHR": "allez.hr",
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/the-botanist-07-l",
+  "pairable": true,
+  "serving": {
+   "neat": 3,
+   "tonic": 2,
+   "martini": 3,
+   "best": "Cisti ili martini",
+   "highball": 2
   },
-  {
-    "id": "gin-old-pilot-s-dalmatian-dry-gin-45-vol-0-7l",
-    "name": "Old Pilot's Dalmatian Dry Gin 45% Vol. 0,7l",
-    "style": "croatian",
-    "region": "Hrvatska",
-    "botanicalProfile": "mediterranean",
-    "body": 3,
-    "sweetness": 2,
-    "flavorTags": [
-      "juniper",
-      "mediterran",
-      "začini"
-    ],
-    "qualityScore": 8.3,
-    "abv": 45.0,
-    "priceEUR": {
-      "min": 35.0,
-      "max": 35.0
-    },
-    "shopHR": "lokalno",
-    "priceUrl": "https://allez.hr/shop/svi-proizvodi/bathtub-gin",
-    "pairable": true,
-    "serving": {
-      "neat": 2,
-      "tonic": 3,
-      "martini": 3,
-      "best": "G&T ili martini",
-      "highball": 3
-    },
-    "cigarHint": "Connecticut do Habano mediteranskog profila",
-    "notes": {
-      "hr": "HR premium gin — mediteranski botanički karakter.",
-      "en": ""
-    },
-    "meta": true,
-    "category": "gin",
-    "status": "META"
+  "cigarHint": "Connecticut/claro — cvjetni profil",
+  "notes": {
+   "hr": "Islay bilje + juniper — kompleksan čist sipper.",
+   "en": ""
   },
-  {
-    "id": "gin-plymouth-gin-41-2-vol-0-7l",
-    "name": "Plymouth Gin 41,2% Vol. 0,7l",
-    "style": "plymouth",
-    "region": "Plymouth, UK",
-    "botanicalProfile": "classic-juniper",
-    "body": 3,
-    "sweetness": 2,
-    "flavorTags": [
-      "juniper",
-      "citrus",
-      "koriander"
-    ],
-    "qualityScore": 8.0,
-    "abv": 41.2,
-    "priceEUR": {
-      "min": 28.0,
-      "max": 28.0
-    },
-    "shopHR": "allez.hr",
-    "priceUrl": "",
-    "pairable": true,
-    "serving": {
-      "neat": 2,
-      "tonic": 3,
-      "martini": 3,
-      "best": "G&T ili martini",
-      "highball": 3
-    },
-    "cigarHint": "Connecticut srednje snage",
-    "notes": {
-      "hr": "Mekši od klasičnog London dry — dobar G&T uz srednju cigaru.",
-      "en": ""
-    },
-    "meta": true,
-    "category": "gin",
-    "status": "META"
+  "meta": true,
+  "category": "gin",
+  "status": "META"
+ },
+ {
+  "id": "gin-four-pillars-rare-dry-gin-41-8-vol-0-7l",
+  "name": "Four Pillars Rare",
+  "style": "contemporary",
+  "region": "Yarra Valley, Australija",
+  "botanicalProfile": "botanical",
+  "body": 3,
+  "sweetness": 2,
+  "flavorTags": [
+   "cvjetno",
+   "citrus",
+   "začini"
+  ],
+  "qualityScore": 8.6,
+  "abv": 41.8,
+  "priceEUR": {
+   "min": 49.8,
+   "max": 49.8
   },
-  {
-    "id": "gin-dugave-gin-45-vol-0-7l",
-    "name": "Dugave Gin 45% Vol. 0,7l",
-    "style": "croatian",
-    "region": "Hrvatska",
-    "botanicalProfile": "mediterranean",
-    "body": 3,
-    "sweetness": 2,
-    "flavorTags": [
-      "juniper",
-      "mediterran",
-      "začini"
-    ],
-    "qualityScore": 7.9,
-    "abv": 45.0,
-    "priceEUR": {
-      "min": 30.0,
-      "max": 30.0
-    },
-    "shopHR": "lokalno",
-    "priceUrl": "",
-    "pairable": true,
-    "serving": {
-      "neat": 2,
-      "tonic": 3,
-      "martini": 3,
-      "best": "G&T ili martini",
-      "highball": 3
-    },
-    "cigarHint": "Connecticut do Habano mediteranskog profila",
-    "notes": {
-      "hr": "Lokalni craft gin — dobar uz blažu Habano.",
-      "en": ""
-    },
-    "meta": true,
-    "category": "gin",
-    "status": "META"
+  "shopHR": "allez.hr",
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/silent-pool-rare-citrus-gin-43-vol-07l",
+  "pairable": true,
+  "serving": {
+   "neat": 3,
+   "tonic": 2,
+   "martini": 3,
+   "best": "Cisti ili martini",
+   "highball": 2
   },
-  {
-    "id": "gin-sipsmith-london-dry-gin-41-6-vol-0-7l",
-    "name": "Sipsmith London Dry Gin 41,6% Vol. 0,7l",
-    "style": "london-dry",
-    "region": "London, UK",
-    "botanicalProfile": "classic-juniper",
-    "body": 3,
-    "sweetness": 2,
-    "flavorTags": [
-      "juniper",
-      "citrus",
-      "koriander"
-    ],
-    "qualityScore": 7.8,
-    "abv": 41.6,
-    "priceEUR": {
-      "min": 45.4,
-      "max": 45.4
-    },
-    "shopHR": "allez.hr",
-    "priceUrl": "https://allez.hr/shop/svi-proizvodi/sipsmith-zesty-orange-gin-40-vol-07l",
-    "pairable": true,
-    "serving": {
-      "neat": 2,
-      "tonic": 3,
-      "martini": 3,
-      "best": "G&T ili martini",
-      "highball": 3
-    },
-    "cigarHint": "Connecticut do Habano blage — juniper nosi blažu cigaru",
-    "notes": {
-      "hr": "Čist London dry profil — pouzdan za martini.",
-      "en": ""
-    },
-    "meta": true,
-    "category": "gin",
-    "status": "META"
+  "cigarHint": "Connecticut/claro — cvjetni profil",
+  "notes": {
+   "hr": "Australijski premium — složen, odličan čist.",
+   "en": ""
   },
-  {
-    "id": "gin-beefeater-24-london-dry-gin-45-vol-0-7l",
-    "name": "Beefeater 24 London Dry Gin 45% Vol. 0,7l",
-    "style": "london-dry",
-    "region": "London, UK",
-    "botanicalProfile": "classic-juniper",
-    "body": 3,
-    "sweetness": 2,
-    "flavorTags": [
-      "juniper",
-      "citrus",
-      "koriander"
-    ],
-    "qualityScore": 7.7,
-    "abv": 45.0,
-    "priceEUR": {
-      "min": 32.38,
-      "max": 32.38
-    },
-    "shopHR": "allez.hr",
-    "priceUrl": "https://allez.hr/shop/svi-proizvodi/beefeater-24-dry-gin-45-07-l",
-    "pairable": true,
-    "serving": {
-      "neat": 2,
-      "tonic": 3,
-      "martini": 3,
-      "best": "G&T ili martini",
-      "highball": 3
-    },
-    "cigarHint": "Connecticut do Habano blage — juniper nosi blažu cigaru",
-    "notes": {
-      "hr": "Tea & citrus twist na London dry.",
-      "en": ""
-    },
-    "meta": true,
-    "category": "gin",
-    "status": "META"
+  "meta": true,
+  "category": "gin",
+  "status": "META"
+ },
+ {
+  "id": "gin-hendrick-s-gin-41-4-vol-0-7l",
+  "name": "Hendrick's Gin",
+  "style": "contemporary",
+  "region": "Škotska",
+  "botanicalProfile": "botanical",
+  "body": 3,
+  "sweetness": 2,
+  "flavorTags": [
+   "cvjetno",
+   "citrus",
+   "začini"
+  ],
+  "qualityScore": 8.5,
+  "abv": 41.4,
+  "priceEUR": {
+   "min": 32.0,
+   "max": 32.0
   },
-  {
-    "id": "gin-aviation-gin-42-vol-0-7l",
-    "name": "Aviation Gin 42% Vol. 0,7l",
-    "style": "premium-dry",
-    "region": "SAD",
-    "botanicalProfile": "classic-juniper",
-    "body": 3,
-    "sweetness": 2,
-    "flavorTags": [
-      "juniper",
-      "citrus",
-      "cvjetno"
-    ],
-    "qualityScore": 7.6,
-    "abv": 42.0,
-    "priceEUR": {
-      "min": 34.0,
-      "max": 34.0
-    },
-    "shopHR": "allez.hr",
-    "priceUrl": "",
-    "pairable": true,
-    "serving": {
-      "neat": 3,
-      "tonic": 2,
-      "martini": 3,
-      "best": "Cisti ili martini",
-      "highball": 2
-    },
-    "cigarHint": "Connecticut srednje snage",
-    "notes": {
-      "hr": "American dry — cvjetno-anis profil, martini.",
-      "en": ""
-    },
-    "meta": true,
-    "category": "gin",
-    "status": "META"
+  "shopHR": "allez.hr",
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/bathtub-gin",
+  "pairable": true,
+  "serving": {
+   "neat": 3,
+   "tonic": 2,
+   "martini": 3,
+   "best": "Cisti ili martini",
+   "highball": 2
   },
-  {
-    "id": "gin-sipsmith-v-j-o-p-gin-57-7-vol-0-7-l",
-    "name": "Sipsmith V.J.O.P. Gin 57,7% Vol. 0,7 l",
-    "style": "contemporary",
-    "region": "Contemporary / New Western",
-    "botanicalProfile": "botanical",
-    "body": 3,
-    "sweetness": 2,
-    "flavorTags": [
-      "cvjetno",
-      "citrus",
-      "začini"
-    ],
-    "qualityScore": 7.5,
-    "abv": 57.7,
-    "priceEUR": {
-      "min": 61.4,
-      "max": 61.4
-    },
-    "shopHR": "allez.hr",
-    "priceUrl": "https://allez.hr/shop/svi-proizvodi/sipsmith-vjop-gin-577-vol-07-l",
-    "pairable": true,
-    "serving": {
-      "neat": 3,
-      "tonic": 2,
-      "martini": 3,
-      "best": "Cisti ili martini",
-      "highball": 2
-    },
-    "cigarHint": "Connecticut/claro — cvjetni profil",
-    "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
-    },
-    "meta": false,
-    "category": "gin",
-    "status": null
+  "cigarHint": "Connecticut/claro — cvjetni profil",
+  "notes": {
+   "hr": "Klasičan cvjetni profil — pairing s blažom Connecticut cigaretom.",
+   "en": ""
   },
-  {
-    "id": "gin-ki-no-bi-kyoto-dry-gin-45-7-vol-0-7-l-u-poklon-kutiji",
-    "name": "KI NO BI Kyoto Dry Gin 45,7% Vol. 0,7 l u poklon kutiji",
-    "style": "contemporary",
-    "region": "Contemporary / New Western",
-    "botanicalProfile": "botanical",
-    "body": 3,
-    "sweetness": 2,
-    "flavorTags": [
-      "cvjetno",
-      "citrus",
-      "začini"
-    ],
-    "qualityScore": 7.3,
-    "abv": 45.7,
-    "priceEUR": {
-      "min": 61.99,
-      "max": 61.99
-    },
-    "shopHR": "allez.hr",
-    "priceUrl": "https://allez.hr/shop/svi-proizvodi/ki-no-bi-kyoto-dry-gin-457-vol-07-l-u-poklon-kutiji",
-    "pairable": true,
-    "serving": {
-      "neat": 3,
-      "tonic": 2,
-      "martini": 3,
-      "best": "Cisti ili martini",
-      "highball": 2
-    },
-    "cigarHint": "Connecticut/claro — cvjetni profil",
-    "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
-    },
-    "meta": false,
-    "category": "gin",
-    "status": null
+  "meta": true,
+  "category": "gin",
+  "status": "META"
+ },
+ {
+  "id": "gin-nikka-coffey-gin-47-vol-0-7l",
+  "name": "Nikka Coffey Gin",
+  "style": "contemporary",
+  "region": "Japan",
+  "botanicalProfile": "botanical",
+  "body": 3,
+  "sweetness": 2,
+  "flavorTags": [
+   "cvjetno",
+   "citrus",
+   "začini"
+  ],
+  "qualityScore": 8.5,
+  "abv": 47.0,
+  "priceEUR": {
+   "min": 46.0,
+   "max": 46.0
   },
-  {
-    "id": "gin-ki-no-bi-kyoto-dry-gin-tasting-set-3-x-0-2-l-u-poklon-kutiji",
-    "name": "KI NO BI Kyoto Dry Gin TASTING SET  3 x 0,2 l u poklon kutiji",
-    "style": "contemporary",
-    "region": "Contemporary / New Western",
-    "botanicalProfile": "botanical",
-    "body": 3,
-    "sweetness": 2,
-    "flavorTags": [
-      "cvjetno",
-      "citrus",
-      "začini"
-    ],
-    "qualityScore": 7.3,
-    "abv": null,
-    "priceEUR": {
-      "min": 68.38,
-      "max": 68.38
-    },
-    "shopHR": "allez.hr",
-    "priceUrl": "https://allez.hr/shop/svi-proizvodi/ki-no-bi-kyoto-dry-gin-tasting-set-3x-02-l-gb",
-    "pairable": true,
-    "serving": {
-      "neat": 3,
-      "tonic": 2,
-      "martini": 3,
-      "best": "Cisti ili martini",
-      "highball": 2
-    },
-    "cigarHint": "Connecticut/claro — cvjetni profil",
-    "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
-    },
-    "meta": false,
-    "category": "gin",
-    "status": null
+  "shopHR": "allez.hr",
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/nikka-coffey-gin-gb-47-vol-07-l",
+  "pairable": true,
+  "serving": {
+   "neat": 3,
+   "tonic": 2,
+   "martini": 3,
+   "best": "Cisti ili martini",
+   "highball": 2
   },
-  {
-    "id": "gin-ki-no-bi-sei-kyoto-dry-gin-54-5-vol-0-7l-u-poklon-kutiji",
-    "name": "KI NO BI SEI Kyoto Dry Gin 54,5% Vol. 0,7l u poklon kutiji",
-    "style": "contemporary",
-    "region": "Contemporary / New Western",
-    "botanicalProfile": "botanical",
-    "body": 3,
-    "sweetness": 2,
-    "flavorTags": [
-      "cvjetno",
-      "citrus",
-      "začini"
-    ],
-    "qualityScore": 7.3,
-    "abv": 54.5,
-    "priceEUR": {
-      "min": 67.78,
-      "max": 67.78
-    },
-    "shopHR": "allez.hr",
-    "priceUrl": "https://allez.hr/shop/svi-proizvodi/ki-no-bi-sei-kyoto-dry-gin-545-vol-07l-u-poklon-kutiji",
-    "pairable": true,
-    "serving": {
-      "neat": 3,
-      "tonic": 2,
-      "martini": 3,
-      "best": "Cisti ili martini",
-      "highball": 2
-    },
-    "cigarHint": "Connecticut/claro — cvjetni profil",
-    "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
-    },
-    "meta": false,
-    "category": "gin",
-    "status": null
+  "cigarHint": "Connecticut/claro — cvjetni profil",
+  "notes": {
+   "hr": "Japanski citrus gin — čist ili martini.",
+   "en": ""
   },
-  {
-    "id": "gin-plymouth-navy-strength-57-0-7-l",
-    "name": "Plymouth Navy Strength 57% 0,7 l",
-    "style": "london-dry",
-    "region": "London Dry, UK",
-    "botanicalProfile": "classic-juniper",
-    "body": 3,
-    "sweetness": 2,
-    "flavorTags": [
-      "juniper",
-      "citrus",
-      "koriander"
-    ],
-    "qualityScore": 7.3,
-    "abv": 57.0,
-    "priceEUR": {
-      "min": 55.4,
-      "max": 55.4
-    },
-    "shopHR": "allez.hr",
-    "priceUrl": "https://allez.hr/shop/svi-proizvodi/plymouth-navy-strength-57-07-l",
-    "pairable": true,
-    "serving": {
-      "neat": 2,
-      "tonic": 3,
-      "martini": 3,
-      "best": "G&T ili martini",
-      "highball": 3
-    },
-    "cigarHint": "Connecticut do Habano blage — juniper nosi blažu cigaru",
-    "notes": {
-      "hr": "Heuristika — london-dry, classic-juniper",
-      "en": ""
-    },
-    "meta": false,
-    "category": "gin",
-    "status": null
+  "meta": true,
+  "category": "gin",
+  "status": "META"
+ },
+ {
+  "id": "gin-tanqueray-no-ten-47-3-vol-0-7l",
+  "name": "Tanqueray No. TEN",
+  "style": "premium-dry",
+  "region": "London, UK",
+  "botanicalProfile": "classic-juniper",
+  "body": 3,
+  "sweetness": 2,
+  "flavorTags": [
+   "juniper",
+   "citrus",
+   "koriander"
+  ],
+  "qualityScore": 8.4,
+  "abv": 47.3,
+  "priceEUR": {
+   "min": 37.5,
+   "max": 37.5
   },
-  {
-    "id": "gin-nikka-coffey-gin-47-vol-0-7-l-u-poklon-kutiji",
-    "name": "Nikka Coffey Gin 47% Vol. 0,7 l u poklon kutiji",
-    "style": "contemporary",
-    "region": "Contemporary / New Western",
-    "botanicalProfile": "botanical",
-    "body": 3,
-    "sweetness": 2,
-    "flavorTags": [
-      "cvjetno",
-      "citrus",
-      "začini"
-    ],
-    "qualityScore": 7.0,
-    "abv": 47.0,
-    "priceEUR": {
-      "min": 46.0,
-      "max": 46.0
-    },
-    "shopHR": "allez.hr",
-    "priceUrl": "https://allez.hr/shop/svi-proizvodi/nikka-coffey-gin-gb-47-vol-07-l",
-    "pairable": true,
-    "serving": {
-      "neat": 3,
-      "tonic": 2,
-      "martini": 3,
-      "best": "Cisti ili martini",
-      "highball": 2
-    },
-    "cigarHint": "Connecticut/claro — cvjetni profil",
-    "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
-    },
-    "meta": false,
-    "category": "gin",
-    "status": null
+  "shopHR": "allez.hr",
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/tanqueray-ten-london-gin-473-07-l",
+  "pairable": true,
+  "serving": {
+   "neat": 3,
+   "tonic": 2,
+   "martini": 3,
+   "best": "Cisti ili martini",
+   "highball": 2
   },
-  {
-    "id": "gin-roku-gin-the-japanese-craft-gin-43-vol-0-7l-u-poklon-kutiji-sa-casom",
-    "name": "Roku Gin The Japanese Craft Gin 43% Vol. 0,7l u poklon kutiji sa čašom",
-    "style": "contemporary",
-    "region": "Contemporary / New Western",
-    "botanicalProfile": "botanical",
-    "body": 3,
-    "sweetness": 2,
-    "flavorTags": [
-      "cvjetno",
-      "citrus",
-      "začini"
-    ],
-    "qualityScore": 7.0,
-    "abv": 43.0,
-    "priceEUR": {
-      "min": 41.0,
-      "max": 41.0
-    },
-    "shopHR": "allez.hr",
-    "priceUrl": "https://allez.hr/shop/svi-proizvodi/roku-gin-the-japanese-craft-gin-43-vol-07l-u-poklon-kutiji-sa-casom",
-    "pairable": true,
-    "serving": {
-      "neat": 3,
-      "tonic": 2,
-      "martini": 3,
-      "best": "Cisti ili martini",
-      "highball": 2
-    },
-    "cigarHint": "Connecticut/claro — cvjetni profil",
-    "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
-    },
-    "meta": false,
-    "category": "gin",
-    "status": null
-  }
+  "cigarHint": "Connecticut srednje snage",
+  "notes": {
+   "hr": "Premium London dry — citrus-forward, martini klasik.",
+   "en": ""
+  },
+  "meta": true,
+  "category": "gin",
+  "status": "META"
+ },
+ {
+  "id": "gin-tanqueray-n-ten-distilled-gin-47-3-vol-0-7l",
+  "name": "Tanqueray No. TEN Distilled Gin",
+  "style": "premium-dry",
+  "region": "London, UK",
+  "botanicalProfile": "classic-juniper",
+  "body": 3,
+  "sweetness": 2,
+  "flavorTags": [
+   "juniper",
+   "citrus",
+   "koriander"
+  ],
+  "qualityScore": 8.4,
+  "abv": 47.3,
+  "priceEUR": {
+   "min": 37.5,
+   "max": 37.5
+  },
+  "shopHR": "allez.hr",
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/tanqueray-ten-london-gin-473-07-l",
+  "pairable": true,
+  "serving": {
+   "neat": 3,
+   "tonic": 2,
+   "martini": 3,
+   "best": "Cisti ili martini",
+   "highball": 2
+  },
+  "cigarHint": "Connecticut srednje snage",
+  "notes": {
+   "hr": "Premium London dry — citrus-forward, martini klasik.",
+   "en": ""
+  },
+  "meta": true,
+  "category": "gin",
+  "status": "META"
+ },
+ {
+  "id": "gin-old-pilot-s-dalmatian-dry-gin-45-vol-0-7l",
+  "name": "Old Pilot's Dalmatian",
+  "style": "croatian",
+  "region": "Hrvatska",
+  "botanicalProfile": "mediterranean",
+  "body": 3,
+  "sweetness": 2,
+  "flavorTags": [
+   "juniper",
+   "mediterran",
+   "začini"
+  ],
+  "qualityScore": 8.3,
+  "abv": 45.0,
+  "priceEUR": {
+   "min": 35.0,
+   "max": 35.0
+  },
+  "shopHR": "lokalno",
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/bathtub-gin",
+  "pairable": true,
+  "serving": {
+   "neat": 2,
+   "tonic": 3,
+   "martini": 3,
+   "best": "G&T ili martini",
+   "highball": 3
+  },
+  "cigarHint": "Connecticut do Habano mediteranskog profila",
+  "notes": {
+   "hr": "HR premium gin — mediteranski botanički karakter.",
+   "en": ""
+  },
+  "meta": true,
+  "category": "gin",
+  "status": "META"
+ },
+ {
+  "id": "gin-plymouth-gin-41-2-vol-0-7l",
+  "name": "Plymouth Gin",
+  "style": "plymouth",
+  "region": "Plymouth, UK",
+  "botanicalProfile": "classic-juniper",
+  "body": 3,
+  "sweetness": 2,
+  "flavorTags": [
+   "juniper",
+   "citrus",
+   "koriander"
+  ],
+  "qualityScore": 8.0,
+  "abv": 41.2,
+  "priceEUR": {
+   "min": 28.0,
+   "max": 28.0
+  },
+  "shopHR": "allez.hr",
+  "priceUrl": "",
+  "pairable": true,
+  "serving": {
+   "neat": 2,
+   "tonic": 3,
+   "martini": 3,
+   "best": "G&T ili martini",
+   "highball": 3
+  },
+  "cigarHint": "Connecticut srednje snage",
+  "notes": {
+   "hr": "Mekši od klasičnog London dry — dobar G&T uz srednju cigaru.",
+   "en": ""
+  },
+  "meta": true,
+  "category": "gin",
+  "status": "META"
+ },
+ {
+  "id": "gin-dugave-gin-45-vol-0-7l",
+  "name": "Dugave Gin",
+  "style": "croatian",
+  "region": "Hrvatska",
+  "botanicalProfile": "mediterranean",
+  "body": 3,
+  "sweetness": 2,
+  "flavorTags": [
+   "juniper",
+   "mediterran",
+   "začini"
+  ],
+  "qualityScore": 7.9,
+  "abv": 45.0,
+  "priceEUR": {
+   "min": 30.0,
+   "max": 30.0
+  },
+  "shopHR": "lokalno",
+  "priceUrl": "",
+  "pairable": true,
+  "serving": {
+   "neat": 2,
+   "tonic": 3,
+   "martini": 3,
+   "best": "G&T ili martini",
+   "highball": 3
+  },
+  "cigarHint": "Connecticut do Habano mediteranskog profila",
+  "notes": {
+   "hr": "Lokalni craft gin — dobar uz blažu Habano.",
+   "en": ""
+  },
+  "meta": true,
+  "category": "gin",
+  "status": "META"
+ },
+ {
+  "id": "gin-sipsmith-london-dry-gin-41-6-vol-0-7l",
+  "name": "Sipsmith",
+  "style": "london-dry",
+  "region": "London, UK",
+  "botanicalProfile": "classic-juniper",
+  "body": 3,
+  "sweetness": 2,
+  "flavorTags": [
+   "juniper",
+   "citrus",
+   "koriander"
+  ],
+  "qualityScore": 7.8,
+  "abv": 41.6,
+  "priceEUR": {
+   "min": 45.4,
+   "max": 45.4
+  },
+  "shopHR": "allez.hr",
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/sipsmith-zesty-orange-gin-40-vol-07l",
+  "pairable": true,
+  "serving": {
+   "neat": 2,
+   "tonic": 3,
+   "martini": 3,
+   "best": "G&T ili martini",
+   "highball": 3
+  },
+  "cigarHint": "Connecticut do Habano blage — juniper nosi blažu cigaru",
+  "notes": {
+   "hr": "Čist London dry profil — pouzdan za martini.",
+   "en": ""
+  },
+  "meta": true,
+  "category": "gin",
+  "status": "META"
+ },
+ {
+  "id": "gin-beefeater-24-london-dry-gin-45-vol-0-7l",
+  "name": "Beefeater 24",
+  "style": "london-dry",
+  "region": "London, UK",
+  "botanicalProfile": "classic-juniper",
+  "body": 3,
+  "sweetness": 2,
+  "flavorTags": [
+   "juniper",
+   "citrus",
+   "koriander"
+  ],
+  "qualityScore": 7.7,
+  "abv": 45.0,
+  "priceEUR": {
+   "min": 32.38,
+   "max": 32.38
+  },
+  "shopHR": "allez.hr",
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/beefeater-24-dry-gin-45-07-l",
+  "pairable": true,
+  "serving": {
+   "neat": 2,
+   "tonic": 3,
+   "martini": 3,
+   "best": "G&T ili martini",
+   "highball": 3
+  },
+  "cigarHint": "Connecticut do Habano blage — juniper nosi blažu cigaru",
+  "notes": {
+   "hr": "Tea & citrus twist na London dry.",
+   "en": ""
+  },
+  "meta": true,
+  "category": "gin",
+  "status": "META"
+ },
+ {
+  "id": "gin-aviation-gin-42-vol-0-7l",
+  "name": "Aviation Gin",
+  "style": "premium-dry",
+  "region": "SAD",
+  "botanicalProfile": "classic-juniper",
+  "body": 3,
+  "sweetness": 2,
+  "flavorTags": [
+   "juniper",
+   "citrus",
+   "cvjetno"
+  ],
+  "qualityScore": 7.6,
+  "abv": 42.0,
+  "priceEUR": {
+   "min": 34.0,
+   "max": 34.0
+  },
+  "shopHR": "allez.hr",
+  "priceUrl": "",
+  "pairable": true,
+  "serving": {
+   "neat": 3,
+   "tonic": 2,
+   "martini": 3,
+   "best": "Cisti ili martini",
+   "highball": 2
+  },
+  "cigarHint": "Connecticut srednje snage",
+  "notes": {
+   "hr": "American dry — cvjetno-anis profil, martini.",
+   "en": ""
+  },
+  "meta": true,
+  "category": "gin",
+  "status": "META"
+ },
+ {
+  "id": "gin-sipsmith-v-j-o-p-gin-57-7-vol-0-7-l",
+  "name": "Sipsmith V.J.O.P. Gin",
+  "style": "contemporary",
+  "region": "Contemporary / New Western",
+  "botanicalProfile": "botanical",
+  "body": 3,
+  "sweetness": 2,
+  "flavorTags": [
+   "cvjetno",
+   "citrus",
+   "začini"
+  ],
+  "qualityScore": 7.5,
+  "abv": 57.7,
+  "priceEUR": {
+   "min": 61.4,
+   "max": 61.4
+  },
+  "shopHR": "allez.hr",
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/sipsmith-vjop-gin-577-vol-07-l",
+  "pairable": true,
+  "serving": {
+   "neat": 3,
+   "tonic": 2,
+   "martini": 3,
+   "best": "Cisti ili martini",
+   "highball": 2
+  },
+  "cigarHint": "Connecticut/claro — cvjetni profil",
+  "notes": {
+   "hr": "Heuristika — contemporary, botanical",
+   "en": ""
+  },
+  "meta": false,
+  "category": "gin",
+  "status": null
+ },
+ {
+  "id": "gin-ki-no-bi-kyoto-dry-gin-45-7-vol-0-7-l-u-poklon-kutiji",
+  "name": "KI NO BI Kyoto",
+  "style": "contemporary",
+  "region": "Contemporary / New Western",
+  "botanicalProfile": "botanical",
+  "body": 3,
+  "sweetness": 2,
+  "flavorTags": [
+   "cvjetno",
+   "citrus",
+   "začini"
+  ],
+  "qualityScore": 7.3,
+  "abv": 45.7,
+  "priceEUR": {
+   "min": 61.99,
+   "max": 61.99
+  },
+  "shopHR": "allez.hr",
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/ki-no-bi-kyoto-dry-gin-457-vol-07-l-u-poklon-kutiji",
+  "pairable": true,
+  "serving": {
+   "neat": 3,
+   "tonic": 2,
+   "martini": 3,
+   "best": "Cisti ili martini",
+   "highball": 2
+  },
+  "cigarHint": "Connecticut/claro — cvjetni profil",
+  "notes": {
+   "hr": "Heuristika — contemporary, botanical",
+   "en": ""
+  },
+  "meta": false,
+  "category": "gin",
+  "status": null
+ },
+ {
+  "id": "gin-ki-no-bi-kyoto-dry-gin-tasting-set-3-x-0-2-l-u-poklon-kutiji",
+  "name": "KI NO BI Kyoto TASTING SET",
+  "style": "contemporary",
+  "region": "Contemporary / New Western",
+  "botanicalProfile": "botanical",
+  "body": 3,
+  "sweetness": 2,
+  "flavorTags": [
+   "cvjetno",
+   "citrus",
+   "začini"
+  ],
+  "qualityScore": 7.3,
+  "abv": null,
+  "priceEUR": {
+   "min": 68.38,
+   "max": 68.38
+  },
+  "shopHR": "allez.hr",
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/ki-no-bi-kyoto-dry-gin-tasting-set-3x-02-l-gb",
+  "pairable": true,
+  "serving": {
+   "neat": 3,
+   "tonic": 2,
+   "martini": 3,
+   "best": "Cisti ili martini",
+   "highball": 2
+  },
+  "cigarHint": "Connecticut/claro — cvjetni profil",
+  "notes": {
+   "hr": "Heuristika — contemporary, botanical",
+   "en": ""
+  },
+  "meta": false,
+  "category": "gin",
+  "status": null
+ },
+ {
+  "id": "gin-ki-no-bi-sei-kyoto-dry-gin-54-5-vol-0-7l-u-poklon-kutiji",
+  "name": "KI NO BI SEI Kyoto",
+  "style": "contemporary",
+  "region": "Contemporary / New Western",
+  "botanicalProfile": "botanical",
+  "body": 3,
+  "sweetness": 2,
+  "flavorTags": [
+   "cvjetno",
+   "citrus",
+   "začini"
+  ],
+  "qualityScore": 7.3,
+  "abv": 54.5,
+  "priceEUR": {
+   "min": 67.78,
+   "max": 67.78
+  },
+  "shopHR": "allez.hr",
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/ki-no-bi-sei-kyoto-dry-gin-545-vol-07l-u-poklon-kutiji",
+  "pairable": true,
+  "serving": {
+   "neat": 3,
+   "tonic": 2,
+   "martini": 3,
+   "best": "Cisti ili martini",
+   "highball": 2
+  },
+  "cigarHint": "Connecticut/claro — cvjetni profil",
+  "notes": {
+   "hr": "Heuristika — contemporary, botanical",
+   "en": ""
+  },
+  "meta": false,
+  "category": "gin",
+  "status": null
+ },
+ {
+  "id": "gin-plymouth-navy-strength-57-0-7-l",
+  "name": "Plymouth Navy Strength 57%",
+  "style": "london-dry",
+  "region": "London Dry, UK",
+  "botanicalProfile": "classic-juniper",
+  "body": 3,
+  "sweetness": 2,
+  "flavorTags": [
+   "juniper",
+   "citrus",
+   "koriander"
+  ],
+  "qualityScore": 7.3,
+  "abv": 57.0,
+  "priceEUR": {
+   "min": 55.4,
+   "max": 55.4
+  },
+  "shopHR": "allez.hr",
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/plymouth-navy-strength-57-07-l",
+  "pairable": true,
+  "serving": {
+   "neat": 2,
+   "tonic": 3,
+   "martini": 3,
+   "best": "G&T ili martini",
+   "highball": 3
+  },
+  "cigarHint": "Connecticut do Habano blage — juniper nosi blažu cigaru",
+  "notes": {
+   "hr": "Heuristika — london-dry, classic-juniper",
+   "en": ""
+  },
+  "meta": false,
+  "category": "gin",
+  "status": null
+ },
+ {
+  "id": "gin-roku-gin-the-japanese-craft-gin-43-vol-0-7l-u-poklon-kutiji-sa-casom",
+  "name": "Roku Gin The Japanese Craft Gin",
+  "style": "contemporary",
+  "region": "Contemporary / New Western",
+  "botanicalProfile": "botanical",
+  "body": 3,
+  "sweetness": 2,
+  "flavorTags": [
+   "cvjetno",
+   "citrus",
+   "začini"
+  ],
+  "qualityScore": 7.0,
+  "abv": 43.0,
+  "priceEUR": {
+   "min": 41.0,
+   "max": 41.0
+  },
+  "shopHR": "allez.hr",
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/roku-gin-the-japanese-craft-gin-43-vol-07l-u-poklon-kutiji-sa-casom",
+  "pairable": true,
+  "serving": {
+   "neat": 3,
+   "tonic": 2,
+   "martini": 3,
+   "best": "Cisti ili martini",
+   "highball": 2
+  },
+  "cigarHint": "Connecticut/claro — cvjetni profil",
+  "notes": {
+   "hr": "Heuristika — contemporary, botanical",
+   "en": ""
+  },
+  "meta": false,
+  "category": "gin",
+  "status": null
+ }
 ]

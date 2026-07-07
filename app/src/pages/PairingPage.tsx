@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 import type { Cigar, Drink, DrinkCategory, Market, PairingResult, Vitola } from "../types";
-import { ALL_DRINKS, CIGARS, cigarById, formatPrice } from "../data";
+import { ALL_DRINKS, CIGARS, cigarById, cigarLinkForMarket, cigarPriceForMarket, formatPrice } from "../data";
 import { pairCigarsForDrink, pairDrinksForCigar } from "../engine/pairing";
 import { useI18n, STYLE_LABELS, type StringKey } from "../i18n";
 import { Chip, Meter, ScoreBand, SearchInput, SectionTitle } from "../components/ui";
@@ -9,8 +9,10 @@ import { DetailSheet } from "../components/DetailSheet";
 import { OcrScan } from "../components/OcrScan";
 import { VitolaPicker } from "../components/VitolaPicker";
 import { applyVitola, needsVitolaPick, uniqueVitolas } from "../lib/cigarVitola";
+import { useMarket, setMarket } from "../store/market";
+import { CustomPairing } from "./CustomPairing";
 
-type Mode = "cigarToDrink" | "drinkToCigar";
+type Mode = "cigarToDrink" | "drinkToCigar" | "custom";
 const MARKETS: Market[] = ["HR", "EU", "USA", "WW"];
 
 // pretraga neosjetljiva na naglaske i velika/mala slova
@@ -20,7 +22,7 @@ const norm = (s: string) =>
 const SUGGEST_CATEGORIES: DrinkCategory[] = ["rum", "whisky", "brandy", "gin"];
 
 export function PairingPage() {
-  const { t, lx } = useI18n();
+  const { t, lx, cn } = useI18n();
   useCollection();
   const [mode, setMode] = useState<Mode>("cigarToDrink");
   const [query, setQuery] = useState("");
@@ -28,9 +30,7 @@ export function PairingPage() {
   const [pendingCigar, setPendingCigar] = useState<Cigar | null>(null);
   const [selectedDrink, setSelectedDrink] = useState<Drink | null>(null);
   const [onlyMine, setOnlyMine] = useState(false);
-  const [market, setMarket] = useState<Market>(
-    () => (localStorage.getItem("market") as Market) || "HR",
-  );
+  const market = useMarket();
   // indeks "sljedeceg prijedloga" po kategoriji (cigara->pice) ili offset (pice->cigare)
   const [cycle, setCycle] = useState<Record<string, number>>({});
   const [showPrefs, setShowPrefs] = useState(false);
@@ -58,11 +58,6 @@ export function PairingPage() {
   >(null);
 
   const selected = mode === "cigarToDrink" ? selectedCigar : selectedDrink;
-
-  const setMarketPersist = (m: Market) => {
-    localStorage.setItem("market", m);
-    setMarket(m);
-  };
 
   const marketCigars = useMemo(
     () =>
@@ -168,32 +163,41 @@ export function PairingPage() {
   return (
     <div className="pb-4">
       {/* mode toggle */}
-      <div className="mt-4 grid grid-cols-2 gap-2">
-        {(["cigarToDrink", "drinkToCigar"] as Mode[]).map((m) => (
+      <div className="mt-4 grid grid-cols-3 gap-2">
+        {(["cigarToDrink", "drinkToCigar", "custom"] as Mode[]).map((m) => (
           <button
             key={m}
             onClick={() => {
               setMode(m);
               reset();
             }}
-            className={`rounded-lg border py-2.5 font-display text-xs uppercase tracking-[0.15em] transition-colors ${
+            className={`rounded-lg border py-2.5 font-display text-[11px] uppercase tracking-[0.12em] transition-colors ${
               mode === m
                 ? "border-zlato bg-zlato/15 text-zlato-2"
                 : "border-dim/25 text-dim hover:border-zlato/40"
             }`}
           >
-            {t(m === "cigarToDrink" ? "pair.cigarToDrink" : "pair.drinkToCigar")}
+            {t(
+              m === "cigarToDrink"
+                ? "pair.cigarToDrink"
+                : m === "drinkToCigar"
+                  ? "pair.drinkToCigar"
+                  : "pair.custom",
+            )}
           </button>
         ))}
       </div>
 
+      {mode === "custom" && <CustomPairing onOpenDetail={setDetail} />}
+
       {/* market birac — bitan kad biras cigare */}
+      {mode !== "custom" && (
       <div className="no-scrollbar mt-3 flex items-center gap-2 overflow-x-auto">
         <span className="shrink-0 text-[10px] uppercase tracking-widest text-dim">
           {t("pair.market")}
         </span>
         {MARKETS.map((m) => (
-          <Chip key={m} active={market === m} onClick={() => setMarketPersist(m)}>
+          <Chip key={m} active={market === m} onClick={() => setMarket(m)}>
             {t(`market.${m}` as StringKey)}
           </Chip>
         ))}
@@ -204,9 +208,10 @@ export function PairingPage() {
           ⚙ {excludedCountries.length + excludedBrands.length || ""}
         </Chip>
       </div>
+      )}
 
       {/* preferencije: zemlje/brendovi koje NE zelis u prijedlozima */}
-      {showPrefs && (
+      {mode !== "custom" && showPrefs && (
         <div className="mt-2 rounded-xl border border-dim/20 bg-cedar p-3">
           <div className="mb-1 font-display text-[11px] uppercase tracking-[0.2em] text-zlato">
             {t("pair.prefs")}
@@ -243,7 +248,7 @@ export function PairingPage() {
       )}
 
       {/* picker + OCR (fotografiraj bocu/cigaru) */}
-      {!selected && !pendingCigar && (
+      {mode !== "custom" && !selected && !pendingCigar && (
         <>
           <div className="mt-3 flex items-stretch gap-2">
             <div className="flex-1">
@@ -266,12 +271,13 @@ export function PairingPage() {
                     }))
               }
               onMatch={(id) => {
+                // OCR prepoznato -> otvori karticu (može se odmah označiti u kolekciju)
                 if (mode === "cigarToDrink") {
                   const c = cigarById(id) ?? marketCigars.find((x) => x.id === id);
-                  if (c) pickCigar(c);
+                  if (c) setDetail({ kind: "cigar", item: c });
                 } else {
                   const d = ALL_DRINKS.find((x) => x.id === id);
-                  if (d) setSelectedDrink(d);
+                  if (d) setDetail({ kind: "drink", item: d });
                 }
               }}
               onText={setQuery}
@@ -283,7 +289,7 @@ export function PairingPage() {
                 <PickRow
                   key={`${item.id}::${(item as Cigar).line}`}
                   title={`${(item as Cigar).brand} ${(item as Cigar).line}`}
-                  sub={`${(item as Cigar).vitolas.length > 1 ? `${(item as Cigar).vitolas.length} vitola · ` : `${(item as Cigar).vitola} · `}${(item as Cigar).wrapper} · ${(item as Cigar).country}`}
+                  sub={`${(item as Cigar).vitolas.length > 1 ? `${(item as Cigar).vitolas.length} ${t("common.vitolaCountSuffix")} · ` : `${(item as Cigar).vitola} · `}${(item as Cigar).wrapper} · ${cn((item as Cigar).country)}`}
                   onPick={() => pickCigar((item as Cigar))}
                 />
               ) : (
@@ -320,7 +326,7 @@ export function PairingPage() {
                 </div>
                 {mode === "cigarToDrink" && (
                   <div className="mt-0.5 text-xs text-dim">
-                    {(selected as Cigar).vitola} · {(selected as Cigar).wrapper} · {(selected as Cigar).country}
+                    {(selected as Cigar).vitola} · {(selected as Cigar).wrapper} · {cn((selected as Cigar).country)}
                   </div>
                 )}
                 <div className="mt-1.5 flex gap-4">
@@ -427,19 +433,26 @@ export function PairingPage() {
               {cigarSuggestions.window.length === 0 && (
                 <p className="text-sm text-dim">{t("pair.noResults")}</p>
               )}
-              {cigarSuggestions.window.map((r) => (
-                <ResultCard
-                  key={r.item.id}
-                  result={r}
-                  title={`${r.item.brand} ${r.item.line}`}
-                  sub={r.item.wrapper}
-                  price={formatPrice(r.item.priceEUR)}
-                  priceUrl={r.item.priceUrl}
-                  vitolas={r.item.vitolas}
-                  excelHint={null}
-                  onOpen={() => setDetail({ kind: "cigar", item: r.item })}
-                />
-              ))}
+              {cigarSuggestions.window.map((r) => {
+                const mp = cigarPriceForMarket(r.item, market);
+                const priceStr =
+                  mp.price != null
+                    ? `${mp.fromMany ? t("price.from") + " " : ""}${mp.price.toFixed(mp.price % 1 ? 2 : 0)} €`
+                    : t("price.check");
+                return (
+                  <ResultCard
+                    key={r.item.id}
+                    result={r}
+                    title={`${r.item.brand} ${r.item.line}`}
+                    sub={r.item.wrapper}
+                    price={priceStr}
+                    priceUrl={cigarLinkForMarket(r.item, market)}
+                    vitolas={r.item.vitolas}
+                    excelHint={null}
+                    onOpen={() => setDetail({ kind: "cigar", item: r.item })}
+                  />
+                );
+              })}
             </div>
           )}
         </>
@@ -496,7 +509,7 @@ function ResultCard<T>({
   return (
     <div className="rounded-xl border border-dim/15 bg-cedar p-3">
       <div className="flex items-center gap-3">
-        <ScoreBand score={result.score} />
+        <ScoreBand score={result.score} title={t("rate.matchWhat")} />
         <div
           onClick={onOpen}
           role="button"

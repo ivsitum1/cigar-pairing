@@ -14,9 +14,11 @@ type Item = { kind: "cigar"; item: Cigar } | { kind: "drink"; item: Drink };
 export function DetailSheet({
   target,
   onClose,
+  onOpenBrand,
 }: {
   target: Item | null;
   onClose: () => void;
+  onOpenBrand?: (brand: string) => void;
 }) {
   const { t } = useI18n();
   useCollection();
@@ -44,7 +46,7 @@ export function DetailSheet({
         <div className="mx-auto mb-4 h-1 w-10 rounded-full bg-dim/40 sm:hidden" />
 
         {target.kind === "cigar" ? (
-          <CigarDetails cigar={target.item} />
+          <CigarDetails cigar={target.item} onOpenBrand={onOpenBrand} />
         ) : (
           <DrinkDetails drink={target.item} />
         )}
@@ -107,15 +109,42 @@ export function DetailSheet({
   );
 }
 
-function CigarDetails({ cigar }: { cigar: Cigar }) {
-  const { t, lx } = useI18n();
+function CigarDetails({
+  cigar,
+  onOpenBrand,
+}: {
+  cigar: Cigar;
+  onOpenBrand?: (brand: string) => void;
+}) {
+  const { t, lx, cn } = useI18n();
   return (
     <>
       <div className="font-display text-xl text-papir">
-        {cigar.brand} <span className="text-zlato-2">{cigar.line}</span>
+        {onOpenBrand ? (
+          <button
+            onClick={() => onOpenBrand(cigar.brand)}
+            className="underline decoration-zlato/40 underline-offset-2 hover:text-zlato-2"
+          >
+            {cigar.brand}
+          </button>
+        ) : (
+          cigar.brand
+        )}{" "}
+        <span className="text-zlato-2">{cigar.line}</span>
       </div>
       <div className="mt-1 text-sm text-dim">
-        {cigar.country} · {cigar.wrapper}
+        {cn(cigar.country)} · {cigar.wrapper}
+        {onOpenBrand && (
+          <>
+            {" · "}
+            <button
+              onClick={() => onOpenBrand(cigar.brand)}
+              className="text-zlato hover:text-zlato-2"
+            >
+              {t("brand.viewAll")} →
+            </button>
+          </>
+        )}
       </div>
       <div className="mt-3 flex flex-wrap gap-x-5 gap-y-2">
         <Meter value={cigar.strength} label={t("common.strength")} accent="var(--color-oxblood)" />
@@ -193,7 +222,7 @@ function CigarDetails({ cigar }: { cigar: Cigar }) {
 }
 
 function DrinkDetails({ drink }: { drink: Drink }) {
-  const { t, lx } = useI18n();
+  const { t, lx, sv } = useI18n();
   const style = STYLE_LABELS[drink.style];
   return (
     <>
@@ -208,7 +237,10 @@ function DrinkDetails({ drink }: { drink: Drink }) {
       </div>
       <dl className="mt-3 space-y-1 text-sm">
         {drink.qualityScore != null && (
-          <Row k={t("common.quality")} v={`${drink.qualityScore}/10`} />
+          <Row
+            k={t("common.quality")}
+            v={`${drink.qualityScore}/10 · ${t("rate.editorial")}`}
+          />
         )}
         {drink.additiveStatus && (
           <Row
@@ -221,13 +253,18 @@ function DrinkDetails({ drink }: { drink: Drink }) {
           v={`${drink.priceApprox ? t("common.approx") + " " : ""}${formatPrice(drink.priceEUR)}`}
         />
         {drink.shopHR && <Row k={t("common.shop")} v={drink.shopHR} />}
-        {drink.serving?.best && <Row k={t("common.serving")} v={drink.serving.best} />}
+        {drink.serving?.best && <Row k={t("common.serving")} v={sv(drink.serving.best)} />}
       </dl>
       <div className="mt-2 flex flex-wrap gap-1.5">
         {drink.flavorTags.map((tag) => (
           <Chip key={tag}>{tag}</Chip>
         ))}
       </div>
+      {drink.qualityScore != null && (
+        <p className="mt-1 text-[11px] leading-snug text-dim/70">
+          {t("rate.qualityWhat")}
+        </p>
+      )}
       {lx(drink.notes) && (
         <p className="mt-3 text-sm leading-relaxed text-papir/85">
           {lx(drink.notes)}
