@@ -2,49 +2,9 @@
 // Koristi tesseract.js (radi u pregledniku; ucitava se tek na prvu upotrebu).
 import { useRef, useState } from "react";
 import { useI18n } from "../i18n";
+import { matchOcrText, tokenize, STOP, type OcrCandidate } from "../lib/ocrMatch";
 
-export interface OcrCandidate {
-  id: string;
-  label: string;
-}
-
-const normalize = (s: string) =>
-  s
-    .normalize("NFKD")
-    .replace(/[̀-ͯ]/g, "")
-    .toLowerCase();
-
-const tokenize = (s: string) =>
-  normalize(s)
-    .split(/[^a-z0-9]+/)
-    .filter((t) => t.length >= 3);
-
-const STOP = new Set(["rum", "ron", "rhum", "whisky", "whiskey", "cigar", "cigars",
-  "anos", "years", "old", "aged", "vol", "70cl", "700ml", "product", "the"]);
-
-/** Nadji kandidata s najvise zajednickih tokena s prepoznatim tekstom. */
-export function matchOcrText(
-  text: string,
-  candidates: OcrCandidate[],
-): { candidate: OcrCandidate; score: number } | null {
-  const tokens = new Set(tokenize(text).filter((t) => !STOP.has(t)));
-  if (tokens.size === 0) return null;
-  let best: OcrCandidate | null = null;
-  let bestScore = 0;
-  for (const c of candidates) {
-    const cand = tokenize(c.label).filter((t) => !STOP.has(t));
-    if (cand.length === 0) continue;
-    let score = 0;
-    for (const t of cand) {
-      if (tokens.has(t)) score += t.length >= 5 ? 2 : 1;
-    }
-    if (score > bestScore) {
-      best = c;
-      bestScore = score;
-    }
-  }
-  return best && bestScore >= 2 ? { candidate: best, score: bestScore } : null;
-}
+export type { OcrCandidate };
 
 export function OcrScan({
   candidates,
