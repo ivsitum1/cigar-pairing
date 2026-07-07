@@ -1,121 +1,94 @@
-# AI prepoznavanje cigara i ruma sa slike — dizajn
+# Poboljšano OCR prepoznavanje cigara i ruma — dizajn (v2, bez backenda)
 
 Datum: 2026-07-07
 Status: prijedlog (čeka odobrenje)
+
+> v1 ovog dokumenta predlagala je Cloudflare Worker + Claude vision API.
+> Odbačeno na zahtjev korisnika — bez vanjskih servisa. Ova verzija je u
+> potpunosti klijentska: nema računa, nema troška, nema backenda.
 
 ## Kontekst i problem
 
 Aplikacija (React PWA, statički hostana na GitHub Pages) ima OCR skeniranje preko
 tesseract.js (`app/src/components/OcrScan.tsx`): fotografija → tekst → token-matching
-na katalog. U praksi Tesseract s prstenova cigara ne izvuče upotrebljiv tekst
+na katalog. U praksi Tesseract s prstenova cigara često ne izvuče upotrebljiv tekst
 (ukrasni fontovi, zakrivljen tekst, zlatotisak, španjolski nazivi), pa matching nema
 s čime raditi.
 
-Aplikaciju koristi više ljudi, pa mora raditi bez da itko unosi API ključ.
-
 ## Cilj
 
-Fotografiraš cigaru (prsten) ili bocu ruma → aplikacija pouzdano prepozna brend i
-liniju → otvori odgovarajući artikl iz kataloga, ili ubaci prepoznati naziv u
-tražilicu ako artikla nema.
+Znatno podići postotak uspješnih prepoznavanja **bez ikakvog backenda ili vanjskog
+API-ja**, kombinacijom tri zahvata: predobrada slike, OCR podešen za prstenove, i
+matching tolerantan na OCR greške. Realno očekivanje: osjetno bolje nego sad, ali
+neće biti savršeno na najtežim prstenovima — to je svjesni kompromis ove verzije.
 
 ## Arhitektura
 
+Sve ostaje u browseru; mijenja se samo unutrašnjost postojeće OCR komponente:
+
 ```
-Browser (GitHub Pages)                Cloudflare Worker              Anthropic API
-┌─────────────────────┐   POST       ┌──────────────────┐           ┌────────────┐
-│ ScanButton           │ /recognize   │ - CORS provjera   │  vision   │ Claude     │
-│ - fotka → canvas     │ ───────────► │ - rate limit      │ ────────► │ Haiku 4.5  │
-│   downscale ~1024px  │              │ - veličina/tip    │           │ structured │
-│ - base64 JPEG        │ ◄─────────── │ - API ključ (tajna)│ ◄──────── │ output     │
-│ - fuzzy match na     │   JSON       └──────────────────┘           └────────────┘
-│   katalog            │
-└─────────────────────┘
+fotka ──► predobrada (canvas) ──► tesseract.js (eng+spa) ──► fuzzy matching ──► artikl / tražilica
 ```
 
-- API ključ živi isključivo kao Worker secret; nikad ne dolazi u browser.
-- Tesseract.js se **uklanja** (manji bundle, jednostavniji kod). Nema offline
-  fallbacka — ako Worker nije dostupan, prikazuje se poruka o grešci.
+## Zahvat 1: predobrada slike (canvas)
 
-## Worker (`worker/`)
+Prije slanja Tesseractu, slika se u canvasu obradi:
 
-Novi TypeScript Cloudflare Worker u folderu `worker/` unutar repoa, deploy preko
-`npx wrangler deploy`. Besplatni tier (100.000 zahtjeva/dan) je višestruko dovoljan.
+- **skaliranje**: duža stranica na ~1600 px (premale slike su glavni uzrok praznog
+  OCR-a; prevelike su spore),
+- **grayscale + rastezanje kontrasta**: zlatotisak na tamnoj podlozi postaje
+  čitljiviji; jednostavna linearna normalizacija histograma (bez teških algoritama),
+- **druga prolaz s invertiranim tonovima**: prstenovi su često svijetli tekst na
+  tamnoj podlozi — OCR se pokrene na normalnoj i invertiranoj verziji, tokeni se
+  spoje (unija).
 
-### API ugovor
+## Zahvat 2: OCR podešavanje
 
-`POST /recognize`
+- **Jezici: `eng+spa`** — kubanski i nikaragvanski nazivi (Partagás, Hoyo de
+  Monterrey, Flor de Cañas…) sadrže španjolske riječi i dijakritike koje engleski
+  model krivo čita. Jezični podaci se i dalje lijeno učitavaju na prvu upotrebu.
+- **PSM mod za raspršeni tekst** (`sparse text`): tekst na prstenu nije uredan
+  odlomak nego razbacane riječi — default mod ga često odbaci.
+- **Whitelist znakova nije opcija** (nazivi sadrže brojeve, točke, crtice), ali se
+  odbacuju tokeni kraći od 3 znaka i tokeni s manje od 50 % slova.
 
-Zahtjev:
-```json
-{ "image": "<base64 JPEG/PNG/WebP>", "media_type": "image/jpeg" }
-```
+## Zahvat 3: matching tolerantan na OCR greške
 
-Odgovor (200):
-```json
-{
-  "type": "cigar" | "rum" | "unknown",
-  "brand": "Partagás",
-  "line": "Serie D No. 4",
-  "confidence": "high" | "medium" | "low"
-}
-```
+Postojeći `matchOcrText` traži **egzaktno** poklapanje tokena — jedna kriva OCR
+zamjena (npr. „Partaqas") znači promašaj. Novi matching:
 
-Greške: 400 (neispravan zahtjev / prevelika slika), 403 (nedopušten origin),
-429 (rate limit), 502 (greška prema Anthropic API-ju).
-
-### Poziv modela
-
-- Model: **`claude-haiku-4-5`** (~0,2 centa po skenu), konfigurabilan kroz
-  env varijablu Workera da se lako promijeni.
-- Službeni `@anthropic-ai/sdk` (podržava Cloudflare Workers).
-- Vision: slika kao base64 content block + kratki prompt („prepoznaj brend i
-  liniju cigare s prstena / ruma s etikete").
-- Strukturirani izlaz preko `output_config.format` (json_schema) — zajamčen
-  parsabilan JSON, bez parsiranja slobodnog teksta.
-- `max_tokens` malen (~500); odgovor je sitan JSON.
-
-### Zaštita
-
-- **CORS**: dopušten samo GitHub Pages origin (npr. `https://ivsitum1.github.io`)
-  + `http://localhost:5173` za razvoj.
-- **Rate limit**: ~10 zahtjeva/min po IP-u (Cloudflare rate-limiting binding ili
-  jednostavan KV brojač — odluka u planu implementacije).
-- **Validacija**: max ~2 MB base64, samo `image/jpeg|png|webp` media type.
+1. **Fuzzy usporedba tokena**: Levenshteinova udaljenost ≤ 1 za tokene do 6 znakova,
+   ≤ 2 za dulje (vlastita ~20-redna implementacija, bez novih ovisnosti).
+2. **Dvofazni matching: prvo brend, pa linija.** Katalog ima ~69 brendova cigara i
+   manji broj rum brendova — prepozna li se brend, kandidati se sužavaju na njegove
+   linije, pa i slabiji ostatak teksta često dovoljan za pogodak.
+3. **Bodovanje**: egzaktan token 2 boda (5+ znakova) / 1 bod, fuzzy pogodak pola
+   boda; prag pogotka se kalibrira testovima.
+4. **Fallback nepromijenjen**: bez pouzdanog pogotka, najdulja prepoznata riječ ide
+   u tražilicu.
 
 ## Klijentske izmjene (`app/`)
 
-1. `OcrScan.tsx` → preimenovati u `ScanButton.tsx`:
-   - ista UX površina (gumb 📷, `capture="environment"`, statusni toast),
-   - fotka se u canvasu smanji na max 1024 px duže stranice, JPEG kvaliteta ~0.8,
-   - POST na Worker URL (konstanta iz `import.meta.env.VITE_RECOGNIZE_URL` s
-     defaultom na produkcijski Worker),
-   - i18n poruke prilagoditi (postojeći `ocr.*` ključevi se prenamjenjuju).
-2. **Matching na katalog**: strukturirani `brand` + `line` matchaju se na kandidate
-   postojećom normalize/tokenize logikom, uz prioritet poklapanja brenda; prag
-   pogotka može biti stroži jer je ulaz čist tekst. `type` sužava kandidate
-   (cigare vs. rum).
-3. Ako nema pogotka: `"{brand} {line}"` ide u tražilicu (postojeće ponašanje).
-4. `tesseract.js` se briše iz `package.json`.
+- `OcrScan.tsx`: dodaje se korak predobrade (nova pomoćna funkcija, npr.
+  `preprocessImage` u istoj datoteci ili `lib/ocrPreprocess.ts`), Tesseract poziv
+  prelazi na `eng+spa` + PSM opciju, dva prolaza (normalno + invertirano).
+- `matchOcrText` se proširuje fuzzy logikom i dvofaznim brend→linija matchingom;
+  potpis ostaje kompatibilan s pozivateljima (CatalogPage/CollectionPage).
+- Nema novih npm ovisnosti; tesseract.js ostaje.
 
 ## Testiranje
 
-- Vitest unit testovi za novu matching funkciju (strukturirani odgovor → artikl
-  iz kataloga): točan pogodak, pogodak samo brenda, unknown, rum vs. cigara.
-- Worker: ručna provjera kroz `wrangler dev` + curl prije deploya.
-- Postojeći CI (test + build na push) pokriva klijentski dio.
-
-## Deploy koraci (jednokratno, ručno)
-
-1. Otvoriti besplatni Cloudflare račun.
-2. Otvoriti Anthropic Console račun i kupiti početni kredit (~$5 ≈ više tisuća
-   skenova s Haiku 4.5).
-3. `npx wrangler secret put ANTHROPIC_API_KEY` + `npx wrangler deploy` iz `worker/`.
-4. Upisati produkcijski Worker URL u konfiguraciju aplikacije.
+- Vitest unit testovi za fuzzy matching: OCR-tipične greške („Partaqas",
+  „C0hiba", „MONTECRIST0"), dvofazni brend→linija, prag odbijanja smeća,
+  rum vs. cigara.
+- Testovi za predobradu se ne pišu (canvas u jsdom-u nije reprezentativan);
+  predobrada se provjerava ručno na stvarnim fotkama.
+- Postojeći CI (test + build na push) pokriva sve.
 
 ## Izvan opsega
 
-- Offline prepoznavanje / lokalni model.
-- Korisnički uneseni API ključevi.
-- Povijest skenova, spremanje slika (slike se ne pohranjuju nigdje).
-- Prepoznavanje vitole/formata sa slike (samo brend + linija).
+- Bilo kakav backend, vanjski API ili korisnički API ključevi.
+- Offline ML modeli (TF.js klasifikacija prstenova — nema dataseta).
+- Prepoznavanje vitole/formata sa slike.
+- Savršena točnost na najtežim prstenovima (ukrasna kaligrafija na zlatu) —
+  granica onoga što OCR u browseru može.
