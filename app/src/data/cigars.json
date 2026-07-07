@@ -421,58 +421,6 @@
   "priceUrl": "https://humidor.hr/hr/proizvod/dias-de-gloria-brazil-toro-6-%c2%bd-x-54/"
  },
  {
-  "id": "cig-aj-fernandez-aj-dias-blue",
-  "brand": "AJ Fernandez",
-  "line": "Dias de Gloria",
-  "vitola": "Dias de Gloria Robusto",
-  "format": "52 x 127mm",
-  "country": "Nikaragva",
-  "wrapper": "Brazilian habano",
-  "strength": 4,
-  "body": 4,
-  "flavorTags": [
-   "kakao",
-   "kava",
-   "karamela",
-   "slatko",
-   "zemljano"
-  ],
-  "smokeTimeMin": 50,
-  "priceEUR": 14.4,
-  "priceApprox": false,
-  "availabilityHR": [
-   "The Humidor",
-   "Havana Shop"
-  ],
-  "notes": {
-   "hr": "Días de Gloria ('dani slave') vraća AJ-a korijenima — punokrvni nikaragvanski puro, zemlja, papar i tamni kakao.",
-   "en": "Días de Gloria ('days of glory') returns AJ to his roots — a full-blooded Nicaraguan puro of earth, pepper and dark cocoa."
-  },
-  "markets": [
-   "HR",
-   "EU",
-   "USA",
-   "WW"
-  ],
-  "vitolas": [
-   {
-    "name": "Dias de Gloria Robusto",
-    "format": "52 x 127mm",
-    "smokeTimeMin": 50,
-    "priceEUR": 14.4,
-    "url": "https://humidor.hr/hr/proizvod/dias-de-gloria-robusto-5-1-2-x-52/"
-   },
-   {
-    "name": "Dias de Gloria Brazil",
-    "format": "52 x 152mm",
-    "smokeTimeMin": 65,
-    "priceEUR": 17.9,
-    "url": "https://humidor.hr/hr/proizvod/dias-de-gloria-brazil-toro-6-%c2%bd-x-54/"
-   }
-  ],
-  "priceUrl": "https://humidor.hr/hr/proizvod/dias-de-gloria-robusto-5-1-2-x-52/"
- },
- {
   "id": "cig-aj-fernandez-dias-de-gloria",
   "brand": "AJ Fernandez",
   "line": "Días de Gloria",
@@ -496,8 +444,8 @@
    "The Humidor"
   ],
   "notes": {
-   "hr": "Punokrvni nikaragvanski puro — snaga i dubina, za jaka pića.",
-   "en": "Full-blooded Nicaraguan puro — power and depth, for strong drinks."
+   "hr": "Días de Gloria ('dani slave') vraća AJ-a korijenima — punokrvni nikaragvanski puro, zemlja, papar i tamni kakao.",
+   "en": "Días de Gloria ('days of glory') returns AJ to his roots — a full-blooded Nicaraguan puro of earth, pepper and dark cocoa."
   },
   "markets": [
    "HR",
@@ -533,6 +481,20 @@
     "smokeTimeMin": 65,
     "priceEUR": 17.9,
     "url": "https://humidor.hr/en/proizvod/dias-de-gloria-brazil-toro-6-%c2%bd-x-54/"
+   },
+   {
+    "name": "Dias de Gloria Robusto",
+    "format": "52 x 127mm",
+    "smokeTimeMin": 50,
+    "priceEUR": 14.4,
+    "url": "https://humidor.hr/hr/proizvod/dias-de-gloria-robusto-5-1-2-x-52/"
+   },
+   {
+    "name": "Dias de Gloria Brazil",
+    "format": "52 x 152mm",
+    "smokeTimeMin": 65,
+    "priceEUR": 17.9,
+    "url": "https://humidor.hr/hr/proizvod/dias-de-gloria-brazil-toro-6-%c2%bd-x-54/"
    }
   ],
   "priceUrl": "https://humidor.hr/en/proizvod/dias-de-gloria-robusto-5-1-2-x-52/"
@@ -12155,73 +12117,6 @@
   "priceUrl": "https://havana-cigar-shop.com/en/product-brand/jose-piedra/"
  },
  {
-  "id": "cig-joya-de-nicaragua-jdn-antano",
-  "brand": "Joya de Nicaragua",
-  "line": "Antaño 1970",
-  "vitola": "Robusto",
-  "format": "52 x 140mm",
-  "country": "Nikaragva",
-  "wrapper": "Nicaraguan Habano",
-  "strength": 5,
-  "body": 5,
-  "flavorTags": [
-   "cedar",
-   "zacini",
-   "koza",
-   "kava",
-   "papar",
-   "zemljano"
-  ],
-  "smokeTimeMin": 50,
-  "priceEUR": 14.0,
-  "priceApprox": false,
-  "availabilityHR": [
-   "The Humidor",
-   "Havana Shop"
-  ],
-  "notes": {
-   "hr": "Nicaraguan Habano wrapper (Nikaragva); snažna, za iskusne pušače. Note: cedar, zacini, koza.",
-   "en": "Nicaraguan Habano wrapper (Nikaragva); powerful, for seasoned smokers. Notes of cedar, spice, leather. Full-bodied classic; pepper, earth, and leather."
-  },
-  "markets": [
-   "HR",
-   "EU",
-   "USA",
-   "WW"
-  ],
-  "vitolas": [
-   {
-    "name": "Robusto",
-    "format": "52 x 140mm",
-    "smokeTimeMin": 50,
-    "priceEUR": 14.0,
-    "url": "https://humidor.hr/hr/proizvod/1502-nicaragua-robusto-5-x-50/"
-   },
-   {
-    "name": "Gran Consul",
-    "format": "—",
-    "smokeTimeMin": 50,
-    "priceEUR": 15.2,
-    "url": "https://havana-cigar-shop.com/proizvod/joya-de-nicaragua-antano-1970-gran-consul-20/"
-   },
-   {
-    "name": "Robusto Grande",
-    "format": "—",
-    "smokeTimeMin": 60,
-    "priceEUR": 14.0,
-    "url": "https://havana-cigar-shop.com/proizvod/joya-de-nicaragua-antano-1970-robusto-grande-20/"
-   },
-   {
-    "name": "Churchill",
-    "format": "52 x 178mm",
-    "smokeTimeMin": 70,
-    "priceEUR": 16.5,
-    "url": "https://humidor.hr/hr/proizvod/1502-nicaragua-churchill-7-x48/"
-   }
-  ],
-  "priceUrl": "https://humidor.hr/hr/proizvod/1502-nicaragua-robusto-5-x-50/"
- },
- {
   "id": "cig-joya-de-nicaragua-antano",
   "brand": "Joya de Nicaragua",
   "line": "Antaño 1970",
@@ -12239,15 +12134,15 @@
    "dim"
   ],
   "smokeTimeMin": 45,
-  "priceEUR": 14.3,
+  "priceEUR": 14.0,
   "priceApprox": false,
   "availabilityHR": [
    "Havana Shop",
    "The Humidor"
   ],
   "notes": {
-   "hr": "Nikaragvanska snaga stare škole — papar i zemlja, ne za početnike. Traži overproof rum.",
-   "en": "Old-school Nicaraguan power — pepper and earth, not for beginners. Demands overproof rum."
+   "hr": "Nicaraguan Habano wrapper (Nikaragva); snažna, za iskusne pušače. Note: cedar, zacini, koza.",
+   "en": "Nicaraguan Habano wrapper (Nikaragva); powerful, for seasoned smokers. Notes of cedar, spice, leather. Full-bodied classic; pepper, earth, and leather."
   },
   "markets": [
    "HR",
@@ -12297,6 +12192,20 @@
     "smokeTimeMin": 45,
     "priceEUR": 15.2,
     "url": "https://havana-cigar-shop.com/proizvod/joya-de-nicaragua-antano-1970-gran-consul-20/"
+   },
+   {
+    "name": "Robusto",
+    "format": "52 x 140mm",
+    "smokeTimeMin": 50,
+    "priceEUR": 14.0,
+    "url": "https://humidor.hr/hr/proizvod/1502-nicaragua-robusto-5-x-50/"
+   },
+   {
+    "name": "Churchill",
+    "format": "52 x 178mm",
+    "smokeTimeMin": 70,
+    "priceEUR": 16.5,
+    "url": "https://humidor.hr/hr/proizvod/1502-nicaragua-churchill-7-x48/"
    }
   ],
   "priceUrl": "https://havana-cigar-shop.com/proizvod/joya-de-nicaragua-antano-1970-robusto-grande-20/"
@@ -13072,7 +12981,7 @@
  {
   "id": "cig-juan-lopez-seleccion-no2",
   "brand": "Juan López",
-  "line": "Selección",
+  "line": "Selección No. 2",
   "vitola": "Especial (Cdh)",
   "format": "—",
   "country": "Kuba",
@@ -14791,7 +14700,7 @@
   "priceUrl": "https://humidor.hr/hr/?s=macanudo+Caf%C3%A9+Petit+Corona&post_type=product"
  },
  {
-  "id": "cig-macanudo-macanudo-cafe",
+  "id": "cig-macanudo-cafe",
   "brand": "Macanudo",
   "line": "Café",
   "vitola": "Café Hyde Park",
@@ -14845,58 +14754,16 @@
     "smokeTimeMin": 70,
     "priceEUR": 14.0,
     "url": "https://humidor.hr/hr/proizvod/macanudo-cafe-crystal-5%c2%bd-x-50/"
-   }
-  ],
-  "priceUrl": "https://humidor.hr/hr/proizvod/macanudo-cafe-crystal-5%c2%bd-x-50/"
- },
- {
-  "id": "cig-macanudo-cafe",
-  "brand": "Macanudo",
-  "line": "Café",
-  "vitola": "Cafe Crystal",
-  "format": "50 x 140mm",
-  "country": "Dominikana",
-  "wrapper": "Connecticut Shade (US)",
-  "strength": 1,
-  "body": 1,
-  "flavorTags": [
-   "kremasto",
-   "trava-slatka",
-   "orasasti"
-  ],
-  "smokeTimeMin": 55,
-  "priceEUR": 14.0,
-  "priceApprox": false,
-  "markets": [
-   "USA",
-   "EU",
-   "WW"
-  ],
-  "availabilityHR": [
-   "The Humidor",
-   "Havana Shop"
-  ],
-  "notes": {
-   "hr": "Najblaža poznata cigara — uz prvu jutarnju kavu.",
-   "en": "The mildest famous cigar — with the first morning coffee."
-  },
-  "vitolas": [
+   },
    {
     "name": "Crystal",
     "format": "50 x 140mm",
     "smokeTimeMin": 55,
     "priceEUR": 14.0,
     "url": "https://humidor.hr/en/proizvod/macanudo-cafe-crystal-5%c2%bd-x-50/"
-   },
-   {
-    "name": "Cafe Crystal",
-    "format": "50 x 140mm",
-    "smokeTimeMin": 55,
-    "priceEUR": 14.0,
-    "url": "https://humidor.hr/hr/proizvod/macanudo-cafe-crystal-5%c2%bd-x-50/"
    }
   ],
-  "priceUrl": "https://humidor.hr/en/proizvod/macanudo-cafe-crystal-5%c2%bd-x-50/"
+  "priceUrl": "https://humidor.hr/hr/proizvod/macanudo-cafe-crystal-5%c2%bd-x-50/"
  },
  {
   "id": "cig-macanudo-macanudo-gold",
@@ -15227,7 +15094,7 @@
  {
   "id": "cig-montecristo-no4",
   "brand": "Montecristo",
-  "line": "Clásica",
+  "line": "No. 4",
   "vitola": "No.3 (corona)",
   "format": "42 x 155mm",
   "country": "Kuba",
@@ -15276,6 +15143,20 @@
     "smokeTimeMin": 55,
     "priceEUR": null,
     "url": null
+   },
+   {
+    "name": "No.4",
+    "format": "—",
+    "smokeTimeMin": 50,
+    "priceEUR": 26.8,
+    "url": "https://havana-cigar-shop.com/proizvod/montecristo-no-4-25/"
+   },
+   {
+    "name": "X 42",
+    "format": "—",
+    "smokeTimeMin": 50,
+    "priceEUR": 20.2,
+    "url": "https://humidor.hr/hr/proizvod/montecristo-no-4-5-x-42/"
    }
   ],
   "priceApprox": false,
@@ -15284,7 +15165,7 @@
  {
   "id": "cig-montecristo-no2",
   "brand": "Montecristo",
-  "line": "Clásica",
+  "line": "No. 2",
   "vitola": "No.2 (pirámide)",
   "format": "52 x 156mm",
   "country": "Kuba",
@@ -15916,55 +15797,6 @@
    }
   ],
   "priceUrl": "https://humidor.hr/hr/proizvod/montecristo-no-2-6-1-8-x-52/"
- },
- {
-  "id": "cig-montecristo-no-4",
-  "brand": "Montecristo",
-  "line": "No.4",
-  "vitola": "No.4",
-  "format": "—",
-  "country": "Kuba",
-  "wrapper": "Habano",
-  "strength": 3,
-  "body": 3,
-  "flavorTags": [
-   "cedar",
-   "zacini",
-   "koza",
-   "kava"
-  ],
-  "smokeTimeMin": 50,
-  "priceEUR": 20.2,
-  "priceApprox": false,
-  "availabilityHR": [
-   "The Humidor",
-   "Havana Shop"
-  ],
-  "notes": {
-   "hr": "Habano wrapper (Kuba); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Kuba); balanced, medium in strength. Notes of cedar, spice, leather."
-  },
-  "markets": [
-   "HR",
-   "WW"
-  ],
-  "vitolas": [
-   {
-    "name": "No.4",
-    "format": "—",
-    "smokeTimeMin": 50,
-    "priceEUR": 26.8,
-    "url": "https://havana-cigar-shop.com/proizvod/montecristo-no-4-25/"
-   },
-   {
-    "name": "X 42",
-    "format": "—",
-    "smokeTimeMin": 50,
-    "priceEUR": 20.2,
-    "url": "https://humidor.hr/hr/proizvod/montecristo-no-4-5-x-42/"
-   }
-  ],
-  "priceUrl": "https://humidor.hr/hr/proizvod/montecristo-no-4-5-x-42/"
  },
  {
   "id": "cig-montecristo-no-5",
@@ -18005,7 +17837,7 @@
   "priceUrl": "https://havana-cigar-shop.com/proizvod/oscar-valladares-sampler-toro-6/"
  },
  {
-  "id": "cig-padron-padron-1926",
+  "id": "cig-padron-1926",
   "brand": "Padrón",
   "line": "1926 Serie",
   "vitola": "No. 35 Maduro",
@@ -18059,6 +17891,27 @@
     "smokeTimeMin": 70,
     "priceEUR": null,
     "url": "https://humidor.hr/hr/?s=padron+No.+48+Maduro&post_type=product"
+   },
+   {
+    "name": "No.6",
+    "format": "52 x 121mm",
+    "smokeTimeMin": 45,
+    "priceEUR": null,
+    "url": null
+   },
+   {
+    "name": "No.9",
+    "format": "56 x 133mm",
+    "smokeTimeMin": 50,
+    "priceEUR": null,
+    "url": null
+   },
+   {
+    "name": "No.2 (belicoso)",
+    "format": "52 x 140mm",
+    "smokeTimeMin": 55,
+    "priceEUR": null,
+    "url": null
    }
   ],
   "priceUrl": "https://humidor.hr/hr/?s=padron+No.+35+Maduro&post_type=product"
@@ -18339,60 +18192,6 @@
    }
   ],
   "priceUrl": "https://humidor.hr/hr/proizvod/eiroa-20-years-colorado-robusto-prensado-5-x-50/"
- },
- {
-  "id": "cig-padron-1926",
-  "brand": "Padrón",
-  "line": "1926 Serie",
-  "vitola": "No.2 (belicoso)",
-  "format": "52 x 140mm",
-  "country": "Nikaragva",
-  "wrapper": "Maduro",
-  "strength": 5,
-  "body": 5,
-  "flavorTags": [
-   "kakao",
-   "kava",
-   "papar",
-   "tamno-voce",
-   "koza"
-  ],
-  "smokeTimeMin": 50,
-  "priceEUR": 30,
-  "priceApprox": true,
-  "markets": [
-   "USA",
-   "WW"
-  ],
-  "availabilityHR": [],
-  "notes": {
-   "hr": "Vrh Padróna — puna snaga i dubina, cigara za najjača pića.",
-   "en": "Padrón's summit — full power and depth, a cigar for the strongest drinks."
-  },
-  "vitolas": [
-   {
-    "name": "No.6",
-    "format": "52 x 121mm",
-    "smokeTimeMin": 45,
-    "priceEUR": null,
-    "url": null
-   },
-   {
-    "name": "No.9",
-    "format": "56 x 133mm",
-    "smokeTimeMin": 50,
-    "priceEUR": null,
-    "url": null
-   },
-   {
-    "name": "No.2 (belicoso)",
-    "format": "52 x 140mm",
-    "smokeTimeMin": 55,
-    "priceEUR": null,
-    "url": null
-   }
-  ],
-  "priceUrl": null
  },
  {
   "id": "cig-padron-1964",
@@ -19017,84 +18816,6 @@
    }
   ],
   "priceUrl": "https://havana-cigar-shop.com/proizvod/partagas-rito-20/"
- },
- {
-  "id": "cig-partagas-partagas-serie-d",
-  "brand": "Partagás",
-  "line": "Serie D",
-  "vitola": "D No.5",
-  "format": "—",
-  "country": "Kuba",
-  "wrapper": "Cuban seed wrapper",
-  "strength": 4,
-  "body": 5,
-  "flavorTags": [
-   "zemljano",
-   "papar",
-   "koza",
-   "kava"
-  ],
-  "smokeTimeMin": 50,
-  "priceEUR": 25.85,
-  "priceApprox": false,
-  "availabilityHR": [
-   "The Humidor",
-   "Havana Shop"
-  ],
-  "notes": {
-   "hr": "Classic robusto; earthy Partagás power with pepper and leather.",
-   "en": "Classic robusto; earthy Partagás power with pepper and leather."
-  },
-  "markets": [
-   "HR",
-   "EU",
-   "WW"
-  ],
-  "vitolas": [
-   {
-    "name": "Serie D No. 6",
-    "format": "52 x 90mm",
-    "smokeTimeMin": 30,
-    "priceEUR": 26.0,
-    "url": "https://humidor.hr/hr/proizvod/partagas-serie-d-no-4-4-7-8-x-50/"
-   },
-   {
-    "name": "Serie D No. 5",
-    "format": "50 x 110mm",
-    "smokeTimeMin": 40,
-    "priceEUR": 26.0,
-    "url": "https://humidor.hr/hr/proizvod/partagas-serie-d-no-4-4-7-8-x-50/"
-   },
-   {
-    "name": "Serie D No. 4",
-    "format": "50 x 124mm",
-    "smokeTimeMin": 50,
-    "priceEUR": 26.0,
-    "url": "https://humidor.hr/hr/proizvod/partagas-serie-d-no-4-4-7-8-x-50/"
-   },
-   {
-    "name": "D No.6",
-    "format": "—",
-    "smokeTimeMin": 50,
-    "priceEUR": 25.85,
-    "url": "https://havana-cigar-shop.com/proizvod/partagas-serie-d-no-6-20/"
-   },
-   {
-    "name": "D No.5",
-    "format": "—",
-    "smokeTimeMin": 50,
-    "priceEUR": 31.0,
-    "url": "https://havana-cigar-shop.com/proizvod/partagas-serie-d-no-5-25/"
-   },
-   {
-    "name": "X 50",
-    "format": "—",
-    "smokeTimeMin": 50,
-    "priceEUR": 26.0,
-    "url": "https://humidor.hr/hr/proizvod/partagas-serie-d-no-4-4-7-8-x-50/"
-   }
-  ],
-  "priceUrl": "https://havana-cigar-shop.com/proizvod/partagas-serie-d-no-6-20/"
  },
  {
   "id": "cig-partagas-serie-e-no-2",

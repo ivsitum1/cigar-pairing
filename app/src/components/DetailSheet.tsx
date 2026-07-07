@@ -16,10 +16,12 @@ export function DetailSheet({
   target,
   onClose,
   onOpenBrand,
+  onPair,
 }: {
   target: Item | null;
   onClose: () => void;
   onOpenBrand?: (brand: string) => void;
+  onPair?: (target: Item) => void;
 }) {
   const { t } = useI18n();
   useCollection();
@@ -98,6 +100,16 @@ export function DetailSheet({
           rows={2}
           className="mt-3 w-full rounded-lg border border-dim/25 bg-cedar px-3 py-2 text-sm text-papir placeholder:text-dim/60 focus:border-zlato/60 focus:outline-none"
         />
+
+        {onPair && (
+          <button
+            type="button"
+            onClick={() => onPair(target)}
+            className="mt-4 w-full rounded-lg border border-oxblood/50 bg-oxblood/15 py-2.5 font-display text-sm uppercase tracking-widest text-zlato-2 hover:bg-oxblood/25"
+          >
+            {target.kind === "cigar" ? t("cat.pairWithDrink") : t("cat.pairWithCigar")}
+          </button>
+        )}
 
         <button
           onClick={onClose}

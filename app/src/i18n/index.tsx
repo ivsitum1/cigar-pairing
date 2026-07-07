@@ -94,6 +94,8 @@ const STRINGS = {
   "cat.gin": { hr: "Gin", en: "Gin" },
   "cat.coffee": { hr: "Kava", en: "Coffee" },
   "cat.cigars": { hr: "Cigare", en: "Cigars" },
+  "cat.pairWithDrink": { hr: "Upari s pićem →", en: "Pair with a drink →" },
+  "cat.pairWithCigar": { hr: "Upari s cigarama →", en: "Pair with cigars →" },
   "brand.open": { hr: "Otvori brend", en: "Open brand" },
   "brand.byStrength": { hr: "Po snazi", en: "By strength" },
   "brand.byPrice": { hr: "Po cijeni", en: "By price" },

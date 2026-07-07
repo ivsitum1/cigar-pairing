@@ -17,7 +17,11 @@ type Tab = "cigars" | DrinkCategory;
 const TABS: Tab[] = ["cigars", "rum", "whisky", "brandy", "gin", "coffee"];
 const MARKETS: Market[] = ["HR", "EU", "USA", "WW"];
 
-export function CatalogPage() {
+export function CatalogPage({
+  onPair,
+}: {
+  onPair?: (target: { kind: "cigar"; item: Cigar } | { kind: "drink"; item: Drink }) => void;
+}) {
   const { t, lx } = useI18n();
   const [tab, setTab] = useState<Tab>("cigars");
   const [query, setQuery] = useState("");
@@ -218,6 +222,14 @@ export function CatalogPage() {
           setDetail(null);
           setBrand(b);
         }}
+        onPair={
+          onPair
+            ? (target) => {
+                setDetail(null);
+                onPair(target);
+              }
+            : undefined
+        }
       />
     </div>
   );

@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import type { Cigar, Drink, DrinkCategory, Market, PairingResult, Vitola } from "../types";
 import { ALL_DRINKS, CIGARS, cigarById, cigarLinkForMarket, cigarPriceForMarket, formatPrice } from "../data";
 import { pairCigarsForDrink, pairDrinksForCigar } from "../engine/pairing";
@@ -10,6 +10,7 @@ import { OcrScan } from "../components/OcrScan";
 import { VitolaPicker } from "../components/VitolaPicker";
 import { applyVitola, needsVitolaPick, uniqueVitolas } from "../lib/cigarVitola";
 import { useMarket, setMarket } from "../store/market";
+import { consumePairingIntent, usePairingNavVersion } from "../store/pairingNav";
 import { CustomPairing } from "./CustomPairing";
 
 type Mode = "cigarToDrink" | "drinkToCigar" | "custom";
@@ -56,6 +57,7 @@ export function PairingPage() {
   const [detail, setDetail] = useState<
     { kind: "cigar"; item: Cigar } | { kind: "drink"; item: Drink } | null
   >(null);
+  const pairingNavVersion = usePairingNavVersion();
 
   const selected = mode === "cigarToDrink" ? selectedCigar : selectedDrink;
 
@@ -159,6 +161,33 @@ export function PairingPage() {
     setSelectedCigar(applyVitola(pendingCigar, vitola));
     setPendingCigar(null);
   };
+
+  useEffect(() => {
+    const intent = consumePairingIntent();
+    if (!intent) return;
+    setCycle({});
+    setDetail(null);
+    if (intent.mode === "cigarToDrink") {
+      setMode("cigarToDrink");
+      setSelectedDrink(null);
+      setQuery(`${intent.cigar.brand} ${intent.cigar.line}`);
+      const cigar = cigarById(intent.cigar.id) ?? intent.cigar;
+      if (needsVitolaPick(cigar)) {
+        setPendingCigar(cigar);
+        setSelectedCigar(null);
+      } else {
+        const vitolas = uniqueVitolas(cigar);
+        setSelectedCigar(vitolas.length === 1 ? applyVitola(cigar, vitolas[0]) : cigar);
+        setPendingCigar(null);
+      }
+    } else {
+      setMode("drinkToCigar");
+      setSelectedCigar(null);
+      setPendingCigar(null);
+      setSelectedDrink(intent.drink);
+      setQuery(intent.drink.name);
+    }
+  }, [pairingNavVersion]);
 
   return (
     <div className="pb-4">

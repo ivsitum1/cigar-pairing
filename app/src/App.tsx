@@ -4,6 +4,8 @@ import { PairingPage } from "./pages/PairingPage";
 import { CatalogPage } from "./pages/CatalogPage";
 import { CollectionPage } from "./pages/CollectionPage";
 import { ShoppingPage } from "./pages/ShoppingPage";
+import { requestPairing } from "./store/pairingNav";
+import type { Cigar, Drink } from "./types";
 
 type Page = "pairing" | "catalog" | "collection" | "shopping";
 
@@ -17,6 +19,15 @@ const NAV: { id: Page; icon: string; key: "nav.pairing" | "nav.catalog" | "nav.c
 export default function App() {
   const { t, lang, setLang } = useI18n();
   const [page, setPage] = useState<Page>("pairing");
+
+  const goToPairing = (target: { kind: "cigar"; item: Cigar } | { kind: "drink"; item: Drink }) => {
+    requestPairing(
+      target.kind === "cigar"
+        ? { mode: "cigarToDrink", cigar: target.item }
+        : { mode: "drinkToCigar", drink: target.item },
+    );
+    setPage("pairing");
+  };
 
   return (
     <div className="mx-auto flex min-h-screen max-w-2xl flex-col px-4">
@@ -39,7 +50,7 @@ export default function App() {
 
       <main className="flex-1 pb-24">
         {page === "pairing" && <PairingPage />}
-        {page === "catalog" && <CatalogPage />}
+        {page === "catalog" && <CatalogPage onPair={goToPairing} />}
         {page === "collection" && <CollectionPage />}
         {page === "shopping" && <ShoppingPage />}
       </main>
