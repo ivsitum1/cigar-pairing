@@ -5,8 +5,8 @@
       "owned": true,
       "styleTarget": "Barbados purist",
       "bottleTarget": "Foursquare Doorly's XO / ECS",
-      "profile": "Suho-vocni zlatni standard",
-      "priceSource": "allez.hr / provjeriti",
+      "profile": "Suho-voćni zlatni standard",
+      "priceSource": "allez.hr",
       "myRating": null,
       "notes": ""
     },
@@ -25,7 +25,7 @@
       "owned": false,
       "styleTarget": "Jamajka pitkiji",
       "bottleTarget": "Worthy Park SER / Appleton 12",
-      "profile": "Esterski, gladi",
+      "profile": "Esterski, glađi",
       "priceSource": "allez.hr",
       "myRating": null,
       "notes": ""
@@ -65,7 +65,7 @@
       "owned": false,
       "styleTarget": "Demerara (Gvajana)",
       "bottleTarget": "El Dorado 12",
-      "profile": "Bogat, melasa, tamno voce",
+      "profile": "Bogat, melasa, tamno voće",
       "priceSource": "42,53 allez.hr",
       "myRating": null,
       "notes": ""
@@ -75,7 +75,7 @@
       "owned": false,
       "styleTarget": "Kuba (suh)",
       "bottleTarget": "Eminente 7 / Havana Club 7",
-      "profile": "Suh, zacinski",
+      "profile": "Suh, začinski",
       "priceSource": "55,20 Miva / 30,89 Lidl",
       "myRating": null,
       "notes": ""
@@ -85,7 +85,7 @@
       "owned": false,
       "styleTarget": "Kolumbija (cist)",
       "bottleTarget": "La Hechicera Solera 21",
-      "profile": "Suh-vocni",
+      "profile": "Suh-voćni",
       "priceSource": "40,48 Lidl",
       "myRating": null,
       "notes": ""
@@ -115,8 +115,8 @@
       "owned": false,
       "styleTarget": "Plantation cisti (iznimke)",
       "bottleTarget": "Planteray Xaymaca / Doctor Bird",
-      "profile": "Esterski BEZ dod. secera",
-      "priceSource": "provjeriti",
+      "profile": "Esterski bez dod. secera",
+      "priceSource": "",
       "myRating": null,
       "notes": ""
     },
@@ -125,7 +125,7 @@
       "owned": false,
       "styleTarget": "Venezuela (suh-ish)",
       "bottleTarget": "Pampero Aniversario",
-      "profile": "Lagan value cistac",
+      "profile": "Lagan value čistač",
       "priceSource": "27,50 Vivat",
       "myRating": null,
       "notes": ""
@@ -146,7 +146,7 @@
       "styleTarget": "Vrhunska Jamajka",
       "bottleTarget": "Appleton 21 / Hampden Great House",
       "profile": "Special occasion",
-      "priceSource": "provjeriti",
+      "priceSource": "",
       "myRating": null,
       "notes": ""
     },
@@ -156,7 +156,7 @@
       "styleTarget": "Odlezani agricole",
       "bottleTarget": "Rhum JM XO / HSE",
       "profile": "Drugaciji od mladog",
-      "priceSource": "provjeriti",
+      "priceSource": "",
       "myRating": null,
       "notes": ""
     },
@@ -176,7 +176,7 @@
       "styleTarget": "Latam suh",
       "bottleTarget": "Diplomatico Mantuano",
       "profile": "Mekan ali ne preslad",
-      "priceSource": "provjeriti",
+      "priceSource": "",
       "myRating": null,
       "notes": ""
     },
@@ -314,46 +314,46 @@
   "recommendations": [
     {
       "title": {
-        "hr": "Najvise kvalitete po euru",
+        "hr": "Najviše kvalitete po euru",
         "en": "Best quality per euro"
       },
       "pick": "La Hechicera Solera 21",
       "detail": {
-        "hr": "40,48 € Lidl — cist, suh-vocni",
-        "en": "€40.48 at Lidl — clean, dry-fruity"
+        "hr": "40,48 € (Lidl) — čist, suho-voćni profil",
+        "en": "€40.48 (Lidl) — clean, dry-fruity profile"
       }
     },
     {
       "title": {
-        "hr": "Najbolji value sipper uz cigaru",
-        "en": "Best value cigar sipper"
+        "hr": "Najbolji omjer cijene i užitka uz cigaru",
+        "en": "Best value alongside a cigar"
       },
       "pick": "Havana Club 7 / Eminente 7",
       "detail": {
-        "hr": "30,89 € Lidl / 55,20 € Miva",
-        "en": "€30.89 Lidl / €55.20 Miva"
+        "hr": "30,89 € (Lidl) / 55,20 € (Miva) — suhi kubanski stil",
+        "en": "€30.89 (Lidl) / €55.20 (Miva) — dry Cuban style"
       }
     },
     {
       "title": {
-        "hr": "Jeftin koktel rum",
-        "en": "Cheap cocktail rum"
+        "hr": "Pouzdana baza za koktele",
+        "en": "Reliable cocktail base"
       },
       "pick": "Planteray 3 Stars",
       "detail": {
-        "hr": "13,79 € Lidl — ne trosi dobre boce na mixere",
-        "en": "€13.79 Lidl — don't waste good bottles on mixers"
+        "hr": "13,79 € (Lidl) — vrhunske boce sačuvajte za čistu degustaciju",
+        "en": "€13.79 (Lidl) — save the finest bottles for neat sipping"
       }
     },
     {
       "title": {
-        "hr": "Sljedeca purist meta",
-        "en": "Next purist target"
+        "hr": "Preporuka za proširenje kolekcije",
+        "en": "Next addition to the collection"
       },
       "pick": "Hampden Estate 8",
       "detail": {
-        "hr": "75,55 € allez.hr — jamajcanski funk uz jacu cigaru",
-        "en": "€75.55 allez.hr — Jamaican funk for a stronger cigar"
+        "hr": "75,55 € (allez.hr) — jamajčanski esterski karakter uz puniju cigaru",
+        "en": "€75.55 (allez.hr) — Jamaican ester character for a fuller cigar"
       }
     }
   ],

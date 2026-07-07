@@ -27,7 +27,7 @@ const STRINGS = {
   "pair.match": { hr: "match", en: "match" },
   "pair.onlyMine": { hr: "Samo moja kolekcija", en: "My collection only" },
   "pair.noResults": { hr: "Nema rezultata za odabrane filtere.", en: "No results for the selected filters." },
-  "pair.excelHint": { hr: "Preporuka iz tvoje tablice", en: "Recommendation from your spreadsheet" },
+  "pair.excelHint": { hr: "Kurirana preporuka", en: "Curated recommendation" },
   "pair.suggestions": { hr: "Prijedlozi", en: "Suggestions" },
   "pair.next": { hr: "Sljedeći prijedlog", en: "Next suggestion" },
   "pair.coffeeAlt": { hr: "Bezalkoholna opcija — kava", en: "Non-alcoholic option — coffee" },
@@ -117,11 +117,11 @@ const STRINGS = {
   "coll.stats": { hr: "boca/cigara u kolekciji", en: "bottles/cigars in collection" },
   "coll.historySection": { hr: "Probano / bilješke (nemam)", en: "Tried / notes (not owned)" },
   // shopping
-  "shop.tiers": { hr: "Plan kolekcije (tierovi)", en: "Collection plan (tiers)" },
+  "shop.tiers": { hr: "Plan kolekcije (razine)", en: "Collection plan (tiers)" },
   "shop.tierDone": { hr: "Nabavljeno", en: "Acquired" },
   "shop.shops": { hr: "Trgovine", en: "Shops" },
-  "shop.recs": { hr: "Najbolji potezi", en: "Best moves" },
-  "shop.miniPath": { hr: "Mini-put: 5 boca = prava širina", en: "Mini path: 5 bottles = real breadth" },
+  "shop.recs": { hr: "Preporuke sommeliera", en: "Sommelier recommendations" },
+  "shop.miniPath": { hr: "Temeljna petorka — pet boca koje pokrivaju cijeli spektar", en: "The essential five — five bottles covering the full spectrum" },
   "shop.legalNote": { hr: "Internetska prodaja duhana u Hrvatskoj nije dozvoljena — cijene cigara su referentne, kupnja u trgovini.", en: "Online tobacco sales are not allowed in Croatia — cigar prices are reference only, buy in store." },
   // filteri
   "filter.style": { hr: "Stil", en: "Style" },

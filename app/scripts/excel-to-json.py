@@ -21,6 +21,48 @@ OUT = ROOT / "src" / "data"
 
 # ---------------------------------------------------------------- helpers
 
+# radni markeri iz Excela koji ne pripadaju u aplikaciju
+WORK_MARKERS = re.compile(
+    r"\s*\(?REKALIBRIRANO\s*\+?\)?\s*|\s*\[?(?:IMAS|META|PROBAO)\]?\s*|^NOVO\.\s*",
+    re.IGNORECASE,
+)
+
+# Excel komentari su pisani bez dijakritika — vrati ih (cesti izrazi, cijela rijec)
+DIACRITICS = {
+    "cist": "čist", "cisti": "čisti", "cista": "čista", "cistac": "čistač",
+    "najcisci": "najčišći", "cisci": "čišći",
+    "suho-vocni": "suho-voćni", "vocni": "voćni", "voce": "voće",
+    "jaca": "jača", "jacu": "jaču", "jace": "jače", "jaci": "jači",
+    "laganija": "laganija", "blaza": "blaža", "slade": "slađe",
+    "zacinski": "začinski", "zacini": "začini",
+    "vise": "više", "trosi": "troši", "trosis": "trošiš",
+    "presjece": "presiječe", "presijece": "presiječe", "gorcinu": "gorčinu",
+    "snazna": "snažna", "snaznu": "snažnu", "ozbiljnu": "ozbiljnu",
+    "cesto": "često", "ducan": "trgovina", "ducani": "trgovine",
+    "jamajcanski": "jamajčanski", "jamajcanac": "jamajčanac",
+    "kupis": "kupiš", "kvaris": "kvariš", "gladi": "glađi", "gladak": "gladak",
+    "sarza": "šarža", "przeni": "prženi", "susi": "suši",
+    "pise": "piše", "namjerno": "namjerno", "moze": "može",
+}
+_DIA_RE = re.compile(r"\b(" + "|".join(map(re.escape, DIACRITICS)) + r")\b")
+
+
+def polish(text: str) -> str:
+    """Ocisti radne markere, vikanje velikim slovima i vrati dijakritike."""
+    if not text:
+        return text
+    s = WORK_MARKERS.sub(" ", text)
+    # ALL-CAPS rijeci (3+ slova) -> normalno pisanje (JACA -> jaca, MADURO -> maduro)
+    s = re.sub(r"\b[A-ZČĆŽŠĐ]{3,}\b",
+               lambda m: m.group(0).lower() if m.group(0) not in
+               ("AOC", "ECS", "HLCF", "OFTD", "VSOP", "XO") else m.group(0), s)
+    s = _DIA_RE.sub(lambda m: DIACRITICS[m.group(1)], s)
+    s = re.sub(r"\s{2,}", " ", s).strip(" .-–")
+    if s and s[0].islower():
+        s = s[0].upper() + s[1:]
+    return s
+
+
 def slugify(text: str) -> str:
     text = unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode()
     text = re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")
@@ -234,9 +276,9 @@ def extract_rums(wb):
             "status": (str(row[7]).strip() if row[7] and str(row[7]).strip() not in ("-", "") else None),
             "pairable": style not in NON_PAIRABLE and float(quality) >= 4,
             "serving": serving,
-            "cigarHint": cigar_hint,
+            "cigarHint": polish(cigar_hint) if cigar_hint else None,
             "priceUrl": find_catalog_url(str(name), catalog),
-            "notes": {"hr": comment, "en": ""},
+            "notes": {"hr": polish(comment), "en": ""},
         })
     return rums
 
@@ -254,10 +296,10 @@ def extract_shopping(wb):
             "owned": str(first or "").strip() == "✓",
             "styleTarget": str(row[2] or ""),
             "bottleTarget": str(row[3] or ""),
-            "profile": str(row[4] or ""),
-            "priceSource": str(row[5] or ""),
+            "profile": polish(str(row[4] or "")),
+            "priceSource": str(row[5] or "").replace("provjeriti", "").strip(" /"),
             "myRating": row[6],
-            "notes": str(row[7] or ""),
+            "notes": polish(str(row[7] or "")),
         })
 
     shops = [
@@ -275,10 +317,10 @@ def extract_shopping(wb):
     ]
 
     recommendations = [
-        {"title": {"hr": "Najvise kvalitete po euru", "en": "Best quality per euro"}, "pick": "La Hechicera Solera 21", "detail": {"hr": "40,48 € Lidl — cist, suh-vocni", "en": "€40.48 at Lidl — clean, dry-fruity"}},
-        {"title": {"hr": "Najbolji value sipper uz cigaru", "en": "Best value cigar sipper"}, "pick": "Havana Club 7 / Eminente 7", "detail": {"hr": "30,89 € Lidl / 55,20 € Miva", "en": "€30.89 Lidl / €55.20 Miva"}},
-        {"title": {"hr": "Jeftin koktel rum", "en": "Cheap cocktail rum"}, "pick": "Planteray 3 Stars", "detail": {"hr": "13,79 € Lidl — ne trosi dobre boce na mixere", "en": "€13.79 Lidl — don't waste good bottles on mixers"}},
-        {"title": {"hr": "Sljedeca purist meta", "en": "Next purist target"}, "pick": "Hampden Estate 8", "detail": {"hr": "75,55 € allez.hr — jamajcanski funk uz jacu cigaru", "en": "€75.55 allez.hr — Jamaican funk for a stronger cigar"}},
+        {"title": {"hr": "Najviše kvalitete po euru", "en": "Best quality per euro"}, "pick": "La Hechicera Solera 21", "detail": {"hr": "40,48 € (Lidl) — čist, suho-voćni profil", "en": "€40.48 (Lidl) — clean, dry-fruity profile"}},
+        {"title": {"hr": "Najbolji omjer cijene i užitka uz cigaru", "en": "Best value alongside a cigar"}, "pick": "Havana Club 7 / Eminente 7", "detail": {"hr": "30,89 € (Lidl) / 55,20 € (Miva) — suhi kubanski stil", "en": "€30.89 (Lidl) / €55.20 (Miva) — dry Cuban style"}},
+        {"title": {"hr": "Pouzdana baza za koktele", "en": "Reliable cocktail base"}, "pick": "Planteray 3 Stars", "detail": {"hr": "13,79 € (Lidl) — vrhunske boce sačuvajte za čistu degustaciju", "en": "€13.79 (Lidl) — save the finest bottles for neat sipping"}},
+        {"title": {"hr": "Preporuka za proširenje kolekcije", "en": "Next addition to the collection"}, "pick": "Hampden Estate 8", "detail": {"hr": "75,55 € (allez.hr) — jamajčanski esterski karakter uz puniju cigaru", "en": "€75.55 (allez.hr) — Jamaican ester character for a fuller cigar"}},
     ]
 
     return {"tiers": tiers, "shops": shops, "recommendations": recommendations,
