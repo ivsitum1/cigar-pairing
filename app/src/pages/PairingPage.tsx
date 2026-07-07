@@ -293,6 +293,7 @@ export function PairingPage() {
                   ? marketCigars.map((c) => ({
                       id: c.id,
                       label: `${c.brand} ${c.line}`,
+                      brand: c.brand,
                     }))
                   : ALL_DRINKS.filter((d) => d.pairable).map((d) => ({
                       id: d.id,

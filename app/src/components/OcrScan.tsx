@@ -3,6 +3,7 @@
 import { useRef, useState } from "react";
 import { useI18n } from "../i18n";
 import { matchOcrText, tokenize, STOP, type OcrCandidate } from "../lib/ocrMatch";
+import { preprocessImage } from "../lib/ocrPreprocess";
 
 export type { OcrCandidate };
 
@@ -24,15 +25,29 @@ export function OcrScan({
     setBusy(true);
     setStatus(t("ocr.working"));
     try {
-      const Tesseract = await import("tesseract.js");
-      const result = await Tesseract.recognize(file, "eng", {
+      // paralelno: ucitaj tesseract i predobradi sliku (2 varijante)
+      const [{ createWorker, PSM }, variants] = await Promise.all([
+        import("tesseract.js"),
+        preprocessImage(file),
+      ]);
+      const worker = await createWorker(["eng", "spa"], undefined, {
         logger: (m) => {
           if (m.status === "recognizing text") {
             setStatus(`${t("ocr.working")} ${Math.round(m.progress * 100)}%`);
           }
         },
       });
-      const text = result.data.text ?? "";
+      let text = "";
+      try {
+        // tekst na prstenu/etiketi je rasprsen, ne uredan odlomak
+        await worker.setParameters({ tessedit_pageseg_mode: PSM.SPARSE_TEXT });
+        for (const v of variants) {
+          const r = await worker.recognize(v);
+          text += (r.data.text ?? "") + "\n";
+        }
+      } finally {
+        await worker.terminate();
+      }
       const match = matchOcrText(text, candidates);
       if (match) {
         setStatus(`✓ ${match.candidate.label}`);
