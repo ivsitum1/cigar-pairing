@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import type { Cigar, Drink } from "../types";
 import { useI18n, STYLE_LABELS, ADDITIVE_LABELS } from "../i18n";
-import { cigarMarketLinks, formatPrice } from "../data";
+import { brandInfo, cigarMarketLinks, formatPrice } from "../data";
+import { vitolaBlurb } from "../lib/vitolaInfo";
 import { Chip, Meter } from "./ui";
 import {
   getItemState,
@@ -116,7 +117,8 @@ function CigarDetails({
   cigar: Cigar;
   onOpenBrand?: (brand: string) => void;
 }) {
-  const { t, lx, cn } = useI18n();
+  const { t, lx, cn, lang } = useI18n();
+  const brand = brandInfo(cigar.brand);
   return (
     <>
       <div className="font-display text-xl text-papir">
@@ -157,26 +159,34 @@ function CigarDetails({
           {t("common.vitolas")}
         </div>
         <div className="space-y-1">
-          {cigar.vitolas.map((v) => (
-            <div
-              key={v.name}
-              className="flex items-baseline justify-between gap-2 rounded-md border border-dim/15 px-2.5 py-1.5 text-sm"
-            >
-              <span className="text-papir/90">{v.name}</span>
-              <span className="shrink-0 text-xs text-dim">
-                {v.format ? `${v.format} · ` : ""}
-                {v.smokeTimeMin != null ? `⏱ ~${v.smokeTimeMin} min` : ""}
-                {v.priceEUR != null &&
-                  (v.url ? (
-                    <a href={v.url} target="_blank" rel="noreferrer" className="ml-1.5 text-zlato-2 underline decoration-zlato/40 underline-offset-2">
-                      {v.priceEUR.toFixed(2)} € ↗
-                    </a>
-                  ) : (
-                    <span className="ml-1.5 text-zlato-2">{v.priceEUR.toFixed(2)} €</span>
-                  ))}
-              </span>
-            </div>
-          ))}
+          {cigar.vitolas.map((v) => {
+            const blurb = vitolaBlurb(v.name, lang);
+            return (
+              <div
+                key={v.name}
+                className="rounded-md border border-dim/15 px-2.5 py-1.5 text-sm"
+              >
+                <div className="flex items-baseline justify-between gap-2">
+                  <span className="text-papir/90">{v.name}</span>
+                  <span className="shrink-0 text-xs text-dim">
+                    {v.format && v.format !== "—" ? `${v.format} · ` : ""}
+                    {v.smokeTimeMin != null ? `⏱ ~${v.smokeTimeMin} min` : ""}
+                    {v.priceEUR != null &&
+                      (v.url ? (
+                        <a href={v.url} target="_blank" rel="noreferrer" className="ml-1.5 text-zlato-2 underline decoration-zlato/40 underline-offset-2">
+                          {v.priceEUR.toFixed(2)} € ↗
+                        </a>
+                      ) : (
+                        <span className="ml-1.5 text-zlato-2">{v.priceEUR.toFixed(2)} €</span>
+                      ))}
+                  </span>
+                </div>
+                {blurb && (
+                  <div className="mt-0.5 text-[11px] leading-snug text-dim/85">{blurb}</div>
+                )}
+              </div>
+            );
+          })}
         </div>
       </div>
 
@@ -217,6 +227,17 @@ function CigarDetails({
       <p className="mt-3 text-sm leading-relaxed text-papir/85">
         {lx(cigar.notes)}
       </p>
+      {/* o brendu — kratka povijest odmah u kartici */}
+      {brand && (
+        <div className="mt-3 rounded-lg border border-dim/20 bg-cedar/60 p-3">
+          <div className="text-[10px] uppercase tracking-widest text-dim">
+            {cigar.brand} · {cn(brand.country)} · {brand.founded}
+          </div>
+          <p className="mt-1 text-xs leading-relaxed text-papir/80">
+            {lx(brand.blurb)}
+          </p>
+        </div>
+      )}
     </>
   );
 }

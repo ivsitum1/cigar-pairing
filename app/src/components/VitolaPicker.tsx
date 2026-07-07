@@ -1,6 +1,7 @@
 import type { Cigar, Vitola } from "../types";
 import { useI18n } from "../i18n";
 import { uniqueVitolas } from "../lib/cigarVitola";
+import { vitolaBlurb } from "../lib/vitolaInfo";
 
 // Modal: linija ima više formata -> odaberi vitolu.
 // Overlay (ne inline) da se uvijek otvori odmah, i kod dugih popisa.
@@ -13,7 +14,7 @@ export function VitolaPicker({
   onPick: (vitola: Vitola) => void;
   onBack: () => void;
 }) {
-  const { t } = useI18n();
+  const { t, lang } = useI18n();
   const vitolas = uniqueVitolas(cigar);
 
   return (
@@ -42,21 +43,29 @@ export function VitolaPicker({
           </button>
         </div>
         <div className="mt-3 space-y-1.5">
-          {vitolas.map((v) => (
-            <button
-              key={v.name}
-              type="button"
-              onClick={() => onPick(v)}
-              className="flex w-full items-baseline justify-between gap-2 rounded-lg border border-dim/15 bg-cedar px-3 py-2.5 text-left hover:border-zlato/40"
-            >
-              <span className="text-sm text-papir">{v.name}</span>
-              <span className="shrink-0 text-xs text-dim">
-                {v.format && v.format !== "—" ? `${v.format} · ` : ""}
-                {v.smokeTimeMin != null ? `⏱ ${v.smokeTimeMin}′` : ""}
-                {v.priceEUR != null ? ` · ${v.priceEUR.toFixed(2)} €` : ""}
-              </span>
-            </button>
-          ))}
+          {vitolas.map((v) => {
+            const blurb = vitolaBlurb(v.name, lang);
+            return (
+              <button
+                key={v.name}
+                type="button"
+                onClick={() => onPick(v)}
+                className="w-full rounded-lg border border-dim/15 bg-cedar px-3 py-2.5 text-left hover:border-zlato/40"
+              >
+                <div className="flex items-baseline justify-between gap-2">
+                  <span className="text-sm text-papir">{v.name}</span>
+                  <span className="shrink-0 text-xs text-dim">
+                    {v.format && v.format !== "—" ? `${v.format} · ` : ""}
+                    {v.smokeTimeMin != null ? `⏱ ${v.smokeTimeMin}′` : ""}
+                    {v.priceEUR != null ? ` · ${v.priceEUR.toFixed(2)} €` : ""}
+                  </span>
+                </div>
+                {blurb && (
+                  <div className="mt-1 text-[11px] leading-snug text-dim/85">{blurb}</div>
+                )}
+              </button>
+            );
+          })}
         </div>
       </div>
     </div>
