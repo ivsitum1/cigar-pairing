@@ -24,6 +24,21 @@ describe("integritet podataka", () => {
     }
   });
 
+  // neutralna uredjivacka politika: deklaracija umjesto osude
+  it("nema pezorativnih izraza u notes/region — sve neutralno", () => {
+    const banned = /ne za cigaru|jeftin|precijenjen|purist|apsurdn/i;
+    for (const d of ALL_DRINKS) {
+      const txt = `${d.notes?.hr ?? ""} ${d.notes?.en ?? ""} ${d.region ?? ""} ${d.additiveDetail ?? ""}`;
+      expect(banned.test(txt), `${d.id}: ${txt}`).toBe(false);
+    }
+  });
+
+  it("sva pica su pairable — engine posteno boduje, ne cenzurira", () => {
+    for (const d of ALL_DRINKS) {
+      expect(d.pairable, d.id).toBe(true);
+    }
+  });
+
   it("svaka cigara ima barem jednu vitolu i markets", () => {
     for (const c of CIGARS) {
       expect(c.vitolas.length, c.id).toBeGreaterThan(0);

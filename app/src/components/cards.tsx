@@ -103,7 +103,7 @@ export function DrinkRow({
         {drink.qualityScore != null && (
           <span className="text-zlato-2"> · {drink.qualityScore}/10</span>
         )}
-        {drink.additiveStatus && drink.category === "rum" && (
+        {drink.additiveStatus && (
           <span> · {lx(ADDITIVE_LABELS[drink.additiveStatus])}</span>
         )}
       </div>

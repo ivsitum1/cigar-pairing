@@ -20,7 +20,7 @@ const MARKETS: Market[] = ["HR", "EU", "USA", "WW"];
 const norm = (s: string) =>
   s.normalize("NFKD").replace(/[̀-ͯ]/g, "").toLowerCase();
 // cigara -> tocno 3 kategorije pica (po jedan prijedlog iz svake)
-const SUGGEST_CATEGORIES: DrinkCategory[] = ["rum", "whisky", "brandy", "gin"];
+const SUGGEST_CATEGORIES: DrinkCategory[] = ["rum", "whisky", "brandy", "gin", "wine"];
 
 export function PairingPage() {
   const { t, lx, cn } = useI18n();
@@ -101,7 +101,7 @@ export function PairingPage() {
     );
   }, [mode, query, marketCigars]);
 
-  // cigara -> po jedan najbolji prijedlog iz rum / whisky / brandy / gin (+ kava bonus)
+  // cigara -> po jedan najbolji prijedlog iz rum / whisky / brandy / gin / vino (+ kava bonus)
   const drinkSuggestions = useMemo(() => {
     if (mode !== "cigarToDrink" || !selectedCigar) return null;
     let drinks = ALL_DRINKS;
@@ -390,7 +390,7 @@ export function PairingPage() {
 
           <SectionTitle>{t("pair.suggestions")}</SectionTitle>
 
-          {/* CIGARA -> 4 pica (rum / whisky / konjak / gin) */}
+          {/* CIGARA -> 5 pica (rum / whisky / konjak / gin / vino) */}
           {drinkSuggestions && (
             <div className="space-y-3">
               {drinkSuggestions.cards.map(({ category, result, total }) => (

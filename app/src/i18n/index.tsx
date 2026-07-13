@@ -54,15 +54,15 @@ const STRINGS = {
     en: "Price applies to the selected market. For other markets use the buy buttons.",
   },
   "rate.qualityWhat": {
-    hr: "Urednička procjena kvalitete (1–10) — kurirano iz recenzija i vlastitih bilješki, nije korisnička ocjena.",
-    en: "Editorial quality estimate (1–10) — curated from reviews and notes, not a user rating.",
+    hr: "Neovisna procjena kvalitete (1–10) unutar vlastitog stila — agregat javnih ocjena i recenzija. Dodaci se ne kažnjavaju u ocjeni, nego se zasebno deklariraju.",
+    en: "Independent quality estimate (1–10) within its own style — aggregated from public ratings and reviews. Additives are not penalized in the score; they are declared separately.",
   },
   "rate.matchWhat": {
     hr: "Postotak slaganja — koliko se ovo piće i cigara slažu prema pravilima uparivanja (tijelo, okusi, wrapper).",
     en: "Match percentage — how well this drink and cigar fit per the pairing rules (body, flavours, wrapper).",
   },
   "rate.match": { hr: "% slaganja", en: "% match" },
-  "rate.editorial": { hr: "urednička ocjena", en: "editorial score" },
+  "rate.editorial": { hr: "neovisna procjena", en: "independent estimate" },
   "market.HR": { hr: "Hrvatska", en: "Croatia" },
   "market.EU": { hr: "EU", en: "EU" },
   "market.USA": { hr: "USA", en: "USA" },
@@ -92,6 +92,7 @@ const STRINGS = {
   "cat.whisky": { hr: "Whisky", en: "Whisky" },
   "cat.brandy": { hr: "Konjak / Brandy", en: "Cognac / Brandy" },
   "cat.gin": { hr: "Gin", en: "Gin" },
+  "cat.wine": { hr: "Vino", en: "Wine" },
   "cat.coffee": { hr: "Kava", en: "Coffee" },
   "cat.cigars": { hr: "Cigare", en: "Cigars" },
   "cat.pairWithDrink": { hr: "Upari s pićem →", en: "Pair with a drink →" },
@@ -153,8 +154,8 @@ export const STYLE_LABELS: Record<string, LocalizedText> = {
   blend: { hr: "Blend (više regija)", en: "Multi-region blend" },
   panama: { hr: "Panama", en: "Panama" },
   other: { hr: "Ostalo", en: "Other" },
-  spiced: { hr: "Spiced (ne za cigaru)", en: "Spiced (not for cigars)" },
-  liqueur: { hr: "Liker (ne za cigaru)", en: "Liqueur (not for cigars)" },
+  spiced: { hr: "Spiced / aromatiziran", en: "Spiced / flavoured" },
+  liqueur: { hr: "Liker", en: "Liqueur" },
   mixing: { hr: "Mixing", en: "Mixing" },
   "speyside-sherry": { hr: "Speyside/sherry", en: "Speyside/sherry" },
   "speyside-fruity": { hr: "Speyside (voćni)", en: "Speyside (fruity)" },
@@ -201,7 +202,20 @@ export const STYLE_LABELS: Record<string, LocalizedText> = {
   genever: { hr: "Genever", en: "Genever" },
   croatian: { hr: "HR craft gin", en: "Croatian craft gin" },
   plymouth: { hr: "Plymouth", en: "Plymouth" },
-  flavored: { hr: "Aromatiziran (ne za cigaru)", en: "Flavoured (not for cigars)" },
+  flavored: { hr: "Aromatiziran", en: "Flavoured" },
+  // vino
+  "port-ruby": { hr: "Porto (ruby / LBV / vintage)", en: "Port (ruby / LBV / vintage)" },
+  "port-tawny": { hr: "Porto (tawny)", en: "Port (tawny)" },
+  "sherry-dry": { hr: "Sherry (fino / amontillado / oloroso)", en: "Sherry (fino / amontillado / oloroso)" },
+  "sherry-sweet": { hr: "Sherry (PX / cream)", en: "Sherry (PX / cream)" },
+  madeira: { hr: "Madeira", en: "Madeira" },
+  prosek: { hr: "Prošek / desertno (HR)", en: "Prošek / dessert (HR)" },
+  "red-full": { hr: "Crno — puno tijelo", en: "Red — full body" },
+  "red-medium": { hr: "Crno — srednje tijelo", en: "Red — medium body" },
+  "white-fresh": { hr: "Bijelo — svježe", en: "White — fresh" },
+  "white-rich": { hr: "Bijelo — bogato (barrique)", en: "White — rich (barrique)" },
+  sparkling: { hr: "Pjenušavo", en: "Sparkling" },
+  "dessert-wine": { hr: "Desertno / botritis", en: "Dessert / botrytis" },
 };
 
 // hrvatska imena zemalja u podacima -> engleski prikaz
@@ -245,6 +259,13 @@ export const SERVING_LABELS: Record<string, string> = {
   "Cisto / Old Fashioned": "Neat / Old Fashioned",
   "Cisto / highball": "Neat / highball",
   "Uz kavu": "With coffee",
+  "Velika casa, 16-18 C": "Large glass, 16–18 °C",
+  "Casa za porto, 14-16 C": "Port glass, 14–16 °C",
+  "Casa za sherry, 12-14 C": "Sherry glass, 12–14 °C",
+  "Blago ohladjeno, 12-14 C": "Lightly chilled, 12–14 °C",
+  "Ohladjeno, 8-10 C": "Chilled, 8–10 °C",
+  "Dobro ohladjeno, 6-8 C": "Well chilled, 6–8 °C",
+  "Mala casa, 10-12 C": "Small glass, 10–12 °C",
 };
 
 export const ADDITIVE_LABELS: Record<string, LocalizedText> = {
@@ -254,7 +275,33 @@ export const ADDITIVE_LABELS: Record<string, LocalizedText> = {
   moderate: { hr: "Umjeren dodatak", en: "Moderate addition" },
   sweetened: { hr: "Dosladjen", en: "Sweetened" },
   flavored: { hr: "Aromatiziran", en: "Flavoured" },
+  fortified: { hr: "Fortificirano", en: "Fortified" },
   unknown: { hr: "Nepoznato", en: "Unknown" },
+};
+
+// Neutralna pravila po kategoriji — što je zakonski dopušteno dodati.
+// Informacija, ne osuda: svatko bira svoje piće, app deklarira što je unutra.
+export const ADDITIVE_RULES: Record<string, LocalizedText> = {
+  rum: {
+    hr: "EU pravila: rum smije imati do 20 g/L dodanog šećera; iznad toga se u EU označava kao 'spirit drink'. Izmjerene vrijednosti (Systembolaget / hidrometrija / lab) navodimo kad postoje.",
+    en: "EU rules: rum may contain up to 20 g/L added sugar; above that it is labelled 'spirit drink' in the EU. Measured values (Systembolaget / hydrometer / lab) are listed where available.",
+  },
+  whisky: {
+    hr: "Whisky (EU/Scotch) ne smije biti doslađen ni aromatiziran — dopušten je samo karamel E150a za ujednačavanje boje. Aromatizirane varijante (med, jabuka…) zakonski su likeri/spirit drink, ne whisky.",
+    en: "Whisky (EU/Scotch) may not be sweetened or flavoured — only E150a caramel for colour consistency is allowed. Flavoured variants (honey, apple…) are legally liqueurs/spirit drinks, not whisky.",
+  },
+  brandy: {
+    hr: "Konjak i armagnac tradicionalno smiju sadržavati šećer, karamel E150a i boisé (infuziju hrasta), ukupno do 4% obskuracije (~15 g/L), bez obveze deklaracije na etiketi. To je dio stila, ne mana.",
+    en: "Cognac and armagnac may traditionally contain sugar, E150a caramel and boisé (oak infusion), up to 4% obscuration total (~15 g/L), with no labelling requirement. It is part of the style, not a flaw.",
+  },
+  gin: {
+    hr: "London Dry gin ne smije ništa dodati nakon destilacije (šećer ≤0,1 g/L). Ostali stilovi gina smiju biti slađeni ili aromatizirani — to se ovdje deklarira.",
+    en: "London Dry gin may add nothing after distillation (sugar ≤0.1 g/L). Other gin styles may be sweetened or flavoured — declared here.",
+  },
+  wine: {
+    hr: "Sulfiti su standardni dio vinarstva. Fortificirana vina (porto, sherry, madeira, prošek) imaju dodani vinski destilat; slatkoća dolazi iz grožđa ili zaustavljene fermentacije — deklariramo neutralno.",
+    en: "Sulphites are a standard part of winemaking. Fortified wines (port, sherry, madeira, prošek) contain added grape spirit; sweetness comes from grapes or arrested fermentation — declared neutrally.",
+  },
 };
 
 interface I18nCtx {

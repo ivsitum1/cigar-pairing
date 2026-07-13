@@ -1,0 +1,508 @@
+{
+  "_comment": "Neutralne izmjene tona i neovisne ocjene — primjenjuje apply-neutral-overrides.py. Nacela: deklaracija umjesto osude; ocjena unutar vlastitog stila (agregat javnih ocjena/recenzija); sve je pairable — engine posteno boduje spoj. Izvori mjerenja: Systembolaget/Alko lab liste, javni hidrometrijski testovi (rumrevelations.com, thefatrumpirate.com).",
+  "rums": {
+    "rum-foursquare-ecs-detente-2005": {
+      "notes": {
+        "hr": "Referentna točka Barbadosa — destilerija deklarira bez aditiva. Suho voće i hrast; odličan i uz cigaru.",
+        "en": "A Barbados benchmark — the distillery declares no additives. Dried fruit and oak; excellent with a cigar too."
+      }
+    },
+    "rum-foursquare-sovereignty-covenant-ecs": {
+      "notes": {
+        "hr": "Vrh ECS serije, cask strength, bez aditiva (deklaracija destilerije).",
+        "en": "Top of the ECS series, cask strength, no additives (distillery declaration)."
+      }
+    },
+    "rum-eminente-reserva-7": {
+      "notes": {
+        "hr": "Suh, začinski; izvrstan omjer cijene i kvalitete, bez dodanog šećera (deklaracija).",
+        "en": "Dry, spicy; excellent value, no added sugar (declared)."
+      }
+    },
+    "rum-bocatheva-barbados-jamaica-3-yo": {
+      "notes": {
+        "hr": "Blend Barbadosa i Jamajke; mlad, bez dodanog šećera (procjena, nije mjereno).",
+        "en": "Barbados & Jamaica blend; young, no added sugar (estimate, not measured)."
+      }
+    },
+    "rum-diplomatico-reserva-exclusiva": {
+      "qualityScore": 7.5,
+      "additiveDetail": "Dodani secer ~15-20 g/L",
+      "additiveSource": "Alko/Systembolaget lab (novije boce ispod 20 g/L radi EU pravila)",
+      "notes": {
+        "hr": "Doslađen (~15–20 g/L, lab mjerenja); bogat i mekan profil karamele. Jedan od najpopularnijih rumova uz maduro cigare.",
+        "en": "Sweetened (~15–20 g/L, lab measured); rich, soft caramel profile. One of the most popular rums with maduro cigars."
+      }
+    },
+    "rum-ron-millonario-15-xo-solera": {
+      "qualityScore": 7.0,
+      "additiveDetail": "Doslazen (solera stil)",
+      "notes": {
+        "hr": "Peruanska solera; doslađen, baršunast profil vanilije i karamele — desertni stil koji uz punu cigaru radi kontrast.",
+        "en": "Peruvian solera; sweetened, velvety vanilla-caramel profile — a dessert style that contrasts nicely with a full cigar."
+      }
+    },
+    "rum-havana-club-especial": {
+      "notes": {
+        "hr": "Mlad kubanski rum; najčešće u koktelima i highballu.",
+        "en": "Young Cuban rum; most at home in cocktails and highballs."
+      }
+    },
+    "rum-havana-club-original-3": {
+      "qualityScore": 5.5,
+      "notes": {
+        "hr": "Standard za daiquiri — mlad, svjež, suh.",
+        "en": "The daiquiri standard — young, fresh, dry."
+      }
+    },
+    "rum-pyrat-xo-anguilla-blend": {
+      "qualityScore": 4.5,
+      "additiveDetail": "Aroma narance, doslazen",
+      "notes": {
+        "hr": "Izražena naranča i slatkoća — desertni/liker profil; podijeljene ocjene zajednice.",
+        "en": "Pronounced orange and sweetness — dessert/liqueur profile; divisive among reviewers."
+      }
+    },
+    "rum-a-h-riise-xo-family-reserve": {
+      "qualityScore": 5.5,
+      "additiveDetail": "Dodani secer (hidrometrija)",
+      "notes": {
+        "hr": "Slađen spirit drink (EU oznaka zbog šećera); mekan desertni profil karamele — publika ga voli, kritika manje.",
+        "en": "Sweetened spirit drink (EU label due to sugar); soft caramel dessert profile — loved by the public, less by critics."
+      }
+    },
+    "rum-capitan-bucanero-anejo-reserva": {
+      "qualityScore": 4.0,
+      "additiveDetail": "Doslazen/aromatiziran (procjena)",
+      "notes": {
+        "hr": "Slatki, pristupačni profil vanilije i karamele u nižem cjenovnom razredu.",
+        "en": "Sweet, approachable vanilla-caramel profile in the budget range."
+      }
+    },
+    "rum-zacapa-xo-25-royal": {
+      "style": "solera",
+      "region": "Gvatemala (solera)",
+      "qualityScore": 6.5,
+      "flavorTags": ["karamela", "suho-voce", "hrast"],
+      "additiveDetail": "Dodani secer (Alko lab; novije boce ispod 20 g/L)",
+      "additiveSource": "Alko/Systembolaget lab",
+      "notes": {
+        "hr": "Solera sistem, doslađen (lab mjerenja); bogat, mekan, s notama suhog voća i hrasta. Visoka cijena za kategoriju — navedeno radi informacije.",
+        "en": "Solera system, sweetened (lab measured); rich and soft with dried fruit and oak. Priced at the top of its category — noted for information."
+      }
+    },
+    "rum-ableforth-s-rumbullion": {
+      "pairable": true,
+      "region": "Spiced / aromatizirano (UK)",
+      "qualityScore": 7.0,
+      "flavorTags": ["vanilija", "zacini", "citrus", "slatko"],
+      "additiveDetail": "Dodani: vanilija, cimet, naranca, klincic, kardamom",
+      "additiveSource": "Deklaracija proizvodjaca (recept naveden na etiketi)",
+      "notes": {
+        "hr": "Craft spiced na bazi karipskog ruma; dodani madagaskarska vanilija, naranča i začini (deklarirano). Među najbolje ocijenjenim spiced rumovima.",
+        "en": "Craft spiced rum on a Caribbean base; Madagascan vanilla, orange and spices added (declared). Among the best-rated spiced rums."
+      }
+    },
+    "rum-legendario-elixir-anejo-9-kuba": {
+      "pairable": true,
+      "region": "Kuba (elixir / liker)",
+      "qualityScore": 6.0,
+      "additiveDetail": "Dodani secer i suho grozdje (elixir kategorija)",
+      "additiveSource": "Deklaracija proizvodjaca",
+      "notes": {
+        "hr": "Kubanski 'elixir' — kategorija s dodanim šećerom i suhim grožđem (deklarirano). Vrlo sladak, popularan desertni stil.",
+        "en": "Cuban 'elixir' — a category with added sugar and raisins (declared). Very sweet, popular dessert style."
+      }
+    },
+    "rum-canerock-jamajka": {
+      "pairable": true,
+      "region": "Spiced / aromatizirano (Jamajka)",
+      "qualityScore": 6.0,
+      "additiveDetail": "Dodane arome: vanilija, kokos, zacini",
+      "additiveSource": "Deklaracija proizvodjaca (Ferrand grupa)",
+      "notes": {
+        "hr": "Jamajčanska baza s dodanom vanilijom, kokosom i začinima (deklarirano). Uredno napravljen spiced iz Ferrand grupe.",
+        "en": "Jamaican base with added vanilla, coconut and spices (declared). A well-made spiced rum from the Ferrand group."
+      }
+    },
+    "rum-companero-elixir-orange-jamajka": {
+      "pairable": true,
+      "region": "Spiced / liker (Jamajka)",
+      "qualityScore": 5.5,
+      "additiveDetail": "Dodana aroma narance i secer",
+      "notes": {
+        "hr": "Jamajčanska baza s dodanom narančom i šećerom — liker-profil (deklarirano na kategoriji).",
+        "en": "Jamaican base with added orange and sugar — liqueur profile (category-declared)."
+      }
+    },
+    "rum-maraboo-brown": {
+      "pairable": true,
+      "region": "Bijeli / za mijesanje",
+      "qualityScore": 3.5,
+      "additiveDetail": "Sastav nepoznat (nije mjereno)",
+      "notes": {
+        "hr": "Jednostavan smeđi rum nižeg cjenovnog razreda; najčešće za miješanje.",
+        "en": "Simple budget brown rum; mostly for mixing."
+      }
+    },
+    "rum-professore-rum-carib-elixir": {
+      "pairable": true,
+      "region": "Za mijesanje (elixir)",
+      "qualityScore": 3.5,
+      "additiveDetail": "Dodani secer/arome (kategorija elixir)",
+      "notes": {
+        "hr": "Slađeni 'elixir' iz diskonta; jednostavan profil za miješanje.",
+        "en": "Discount 'elixir' with added sugar; simple mixing profile."
+      }
+    },
+    "rum-takamaka-dark-spiced": {
+      "pairable": true,
+      "region": "Spiced / aromatizirano (Sejseli)",
+      "qualityScore": 5.0,
+      "additiveDetail": "Dodane arome i secer (38%, spirit drink)",
+      "additiveSource": "EU etiketa: spirit drink",
+      "notes": {
+        "hr": "Sejšelski spiced (38%); dodane arome i šećer — na EU etiketi 'spirit drink'.",
+        "en": "Seychelles spiced (38%); added flavours and sugar — labelled 'spirit drink' in the EU."
+      }
+    },
+    "rum-the-kraken-black-spiced": {
+      "pairable": true,
+      "region": "Spiced / aromatizirano (Trinidad baza)",
+      "qualityScore": 5.5,
+      "additiveDetail": "Dodane arome (klincic, cimet, vanilija) i karamel boja; secer ~26 g/L",
+      "additiveSource": "Hidrometrijska mjerenja ~26 g/L",
+      "notes": {
+        "hr": "Tamni spiced s dodanim začinima i karamel bojom; mjerenja pokazuju ~26 g/L šećera. Vrlo popularan u svojoj kategoriji.",
+        "en": "Dark spiced with added spices and caramel colour; measurements show ~26 g/L sugar. Very popular in its category."
+      }
+    },
+    "rum-bacardi-carta-blanca-oro-negra": {
+      "pairable": true,
+      "region": "Bijeli / za mijesanje",
+      "qualityScore": 4.5,
+      "additiveDetail": "Filtriran; bez podataka o dodacima",
+      "notes": {
+        "hr": "Globalni standard za koktele (mojito, daiquiri, cuba libre).",
+        "en": "The global cocktail standard (mojito, daiquiri, cuba libre)."
+      }
+    },
+    "rum-barcelo-blanco": {
+      "pairable": true,
+      "region": "Bijeli / za mijesanje",
+      "qualityScore": 4.0,
+      "additiveDetail": "Bez podataka o dodacima (nije mjereno)",
+      "notes": {
+        "hr": "Dominikanski bijeli rum za koktele.",
+        "en": "Dominican white rum for cocktails."
+      }
+    },
+    "rum-barcelo-dorado-blanco": {
+      "pairable": true,
+      "qualityScore": 4.0,
+      "additiveDetail": "Bez podataka o dodacima (nije mjereno)",
+      "notes": {
+        "hr": "Pristupačni dominikanski rum; zlatna varijanta ima blagu karamelu.",
+        "en": "Approachable Dominican rum; the gold variant shows light caramel."
+      }
+    },
+    "rum-marama-origins-indonezija": {
+      "pairable": true,
+      "region": "Spiced / aromatizirano (Indonezija)",
+      "qualityScore": 5.0,
+      "additiveDetail": "Dodane arome (vanilija, zacini)",
+      "notes": {
+        "hr": "Indonezijska baza (šećerna trska s Jave) s dodanim aromama; slatki spiced profil.",
+        "en": "Indonesian base (Java cane) with added flavours; sweet spiced profile."
+      }
+    },
+    "rum-pampero-blanco": {
+      "pairable": true,
+      "region": "Bijeli / za mijesanje",
+      "qualityScore": 4.0,
+      "additiveDetail": "Bez podataka o dodacima (nije mjereno)",
+      "notes": {
+        "hr": "Venezuelanski bijeli rum za koktele.",
+        "en": "Venezuelan white rum for cocktails."
+      }
+    },
+    "rum-remedy-spiced": {
+      "pairable": true,
+      "region": "Spiced / aromatizirano",
+      "qualityScore": 4.5,
+      "additiveDetail": "Dodane arome i secer",
+      "notes": {
+        "hr": "Njemački brend spiced ruma; slatki profil vanilije i začina.",
+        "en": "German spiced rum brand; sweet vanilla-spice profile."
+      }
+    },
+    "rum-rom-club-classic-sherry-spiced": {
+      "pairable": true,
+      "region": "Spiced / aromatizirano",
+      "qualityScore": 4.0,
+      "additiveDetail": "Dodane arome i secer",
+      "notes": {
+        "hr": "Pristupačne spiced varijante; sherry verzija ima note suhog voća.",
+        "en": "Approachable spiced variants; the sherry version shows dried-fruit notes."
+      }
+    },
+    "rum-a-h-riise-xo-thin-blue-line": {
+      "pairable": true,
+      "region": "Spiced / spirit drink (Danska)",
+      "qualityScore": 5.0,
+      "additiveDetail": "Dodani secer i arome",
+      "notes": {
+        "hr": "Slađeni spirit drink iz A.H. Riise linije; mekan, desertni profil.",
+        "en": "Sweetened spirit drink from the A.H. Riise range; soft dessert profile."
+      }
+    },
+    "rum-bacardi-spiced": {
+      "pairable": true,
+      "region": "Spiced / aromatizirano",
+      "qualityScore": 4.0,
+      "additiveDetail": "Dodane arome i secer",
+      "notes": {
+        "hr": "Pristupačni spiced za koktele s colom.",
+        "en": "Approachable spiced for rum-and-cola serves."
+      }
+    },
+    "rum-captain-morgan-spiced-white-black": {
+      "pairable": true,
+      "region": "Spiced / aromatizirano",
+      "qualityScore": 4.5,
+      "additiveDetail": "Dodane arome (vanilija, zacini) i secer",
+      "notes": {
+        "hr": "Najprodavaniji spiced brend na svijetu; vanilija i začini, najčešće s colom.",
+        "en": "The world's best-selling spiced brand; vanilla and spice, usually with cola."
+      }
+    },
+    "rum-ron-cana-del-caribe-white": {
+      "pairable": true,
+      "region": "Bijeli / za mijesanje",
+      "qualityScore": 3.0,
+      "additiveDetail": "Bez podataka o dodacima (nije mjereno)",
+      "notes": {
+        "hr": "Osnovni bijeli rum za koktele.",
+        "en": "Basic white rum for cocktails."
+      }
+    },
+    "rum-sailor-jerry": {
+      "pairable": true,
+      "region": "Spiced / aromatizirano",
+      "qualityScore": 5.0,
+      "additiveDetail": "Dodane arome (vanilija, cimet) i secer",
+      "notes": {
+        "hr": "Karipska baza na 46% s dodanom vanilijom i cimetom; jači spiced standard.",
+        "en": "Caribbean base at 46% with added vanilla and cinnamon; a stronger spiced standard."
+      }
+    },
+    "rum-stroh-80-austrija": {
+      "pairable": true,
+      "region": "Austrija (Inlander rum)",
+      "qualityScore": 5.0,
+      "additiveDetail": "Aromatiziran (Inlander stil), 80%",
+      "notes": {
+        "hr": "Austrijski Inländer rum, 80% — tradicionalno za kuhanje, punč i kolače; kao piće se jako razrjeđuje.",
+        "en": "Austrian Inländer rum, 80% — traditionally for baking, punch and cakes; heavily diluted as a drink."
+      }
+    },
+    "rum-the-bush-rum-pass-fr-spiced": {
+      "pairable": true,
+      "region": "Spiced / aromatizirano",
+      "qualityScore": 4.0,
+      "additiveDetail": "Dodane vocne arome i secer",
+      "notes": {
+        "hr": "Voćno aromatizirane varijante (marakuja, spiced); slatki liker-profil.",
+        "en": "Fruit-flavoured variants (passionfruit, spiced); sweet liqueur profile."
+      }
+    },
+    "rum-bumbu-cream-liker": {
+      "pairable": true,
+      "region": "Liker (krem, na bazi ruma)",
+      "qualityScore": 4.5,
+      "additiveDetail": "Krem liker 15% (mlijecna baza, secer, arome)",
+      "notes": {
+        "hr": "Krem liker na rum bazi (15%); desertni stil poput irish creama — uz kavu ili desert.",
+        "en": "Rum-based cream liqueur (15%); dessert style akin to Irish cream — with coffee or dessert."
+      }
+    },
+    "rum-malibu": {
+      "pairable": true,
+      "region": "Liker (kokos, na bazi ruma)",
+      "qualityScore": 5.0,
+      "additiveDetail": "Kokosov liker 21% (secer i aroma kokosa)",
+      "notes": {
+        "hr": "Referentni kokosov liker na rum bazi (21%); pina colada standard.",
+        "en": "The reference coconut rum liqueur (21%); the piña colada standard."
+      }
+    }
+  },
+  "rum_splits": {
+    "rum-don-papa-7-baroko-masskara": [
+      {
+        "id": "rum-don-papa-7",
+        "category": "rum",
+        "name": "Don Papa 7",
+        "style": "spiced",
+        "region": "Filipini (Negros)",
+        "abv": 40.0,
+        "body": 2,
+        "sweetness": 5,
+        "flavorTags": ["vanilija", "suho-voce", "slatko"],
+        "additiveStatus": "flavored",
+        "additiveDetail": "Lab: ~29 g/L secera + 2,4 g/L glicerola + vanilin ~360 mg/L",
+        "additiveSource": "Objavljeni lab/hidrometrijski testovi; Systembolaget",
+        "qualityScore": 5.5,
+        "priceEUR": { "min": 49.9, "max": 49.9 },
+        "shopHR": "allez.hr",
+        "status": null,
+        "pairable": true,
+        "serving": { "neat": 2, "water": 1, "rocks": 3, "highball": 2, "cola": 2, "best": "Cisto / on the rocks" },
+        "cigarHint": "Puna maduro cigara za kontrast slatkoci",
+        "priceUrl": "https://allez.hr/shop/svi-proizvodi/don-papa-baroko-40-vol-07l",
+        "notes": {
+          "hr": "Filipinski rum s otoka Negros. Neovisna mjerenja: ~29 g/L dodanog šećera, glicerol i vanilin — izražena vanilija i suho voće, desertni profil. U EU iznad 20 g/L nosi oznaku 'spirit drink'. Popularan kod publike; kritika ga smatra slatkim — ovdje samo deklariramo činjenice.",
+          "en": "Filipino rum from Negros island. Independent measurements: ~29 g/L added sugar plus glycerol and vanillin — pronounced vanilla and dried fruit, dessert profile. Above 20 g/L it is labelled 'spirit drink' in the EU. Popular with the public; critics find it sweet — we simply declare the facts."
+        }
+      },
+      {
+        "id": "rum-don-papa-baroko",
+        "category": "rum",
+        "name": "Don Papa Baroko",
+        "style": "spiced",
+        "region": "Filipini (Negros)",
+        "abv": 40.0,
+        "body": 2,
+        "sweetness": 5,
+        "flavorTags": ["vanilija", "kakao", "slatko"],
+        "additiveStatus": "flavored",
+        "additiveDetail": "Doslazen/aromatiziran (intenzivnije od Don Pape 7)",
+        "additiveSource": "Systembolaget: visok secer; EU etiketa 'spirit drink'",
+        "qualityScore": 5.5,
+        "priceEUR": { "min": 57.5, "max": 57.5 },
+        "shopHR": "allez.hr",
+        "status": null,
+        "pairable": true,
+        "serving": { "neat": 2, "water": 1, "rocks": 3, "highball": 2, "cola": 2, "best": "Cisto / on the rocks" },
+        "cigarHint": "Puna maduro cigara za kontrast slatkoci",
+        "priceUrl": "https://allez.hr/shop/svi-proizvodi/don-papa-baroko-40-vol-07l",
+        "notes": {
+          "hr": "Intenzivnija, tamnija verzija Don Pape — kakao, vanilija, suho voće; izrazito sladak desertni stil. U EU deklariran kao 'spirit drink' zbog razine dodanog šećera.",
+          "en": "A more intense, darker Don Papa — cocoa, vanilla, dried fruit; distinctly sweet dessert style. Declared 'spirit drink' in the EU due to added-sugar level."
+        }
+      }
+    ],
+    "rum-bumbu-original-xo": [
+      {
+        "id": "rum-bumbu-original",
+        "category": "rum",
+        "name": "Bumbu Original",
+        "style": "spiced",
+        "region": "Barbados (spirit drink)",
+        "abv": 40.0,
+        "body": 2,
+        "sweetness": 5,
+        "flavorTags": ["vanilija", "karamela", "slatko"],
+        "additiveStatus": "flavored",
+        "additiveDetail": "Systembolaget: ~51 g/L secera; hidrometrija ~40 g/L; arome vanilije/banane",
+        "additiveSource": "Systembolaget lab lista; javni hidrometrijski testovi",
+        "qualityScore": 5.5,
+        "priceEUR": { "min": 44.35, "max": 44.35 },
+        "shopHR": "allez.hr",
+        "status": null,
+        "pairable": true,
+        "serving": { "neat": 2, "water": 1, "rocks": 3, "highball": 2, "cola": 2, "best": "Cisto / on the rocks" },
+        "cigarHint": "Puna maduro cigara za kontrast slatkoci",
+        "priceUrl": "https://allez.hr/shop/svi-proizvodi/bumbu-the-original-40-vol-07l",
+        "notes": {
+          "hr": "Barbadoška baza s dodanim šećerom (~40–51 g/L po neovisnim mjerenjima) i aromama — vanilija, karamela, banana. U SAD-u se puni na 35% (kategorija 'rum specialty'), u EU na 40% uz oznaku 'spirit drink'. Vrlo popularan desertni profil.",
+          "en": "Barbados base with added sugar (~40–51 g/L per independent measurements) and flavourings — vanilla, caramel, banana. Bottled at 35% in the US ('rum specialty' category) and 40% in the EU as a 'spirit drink'. A very popular dessert profile."
+        }
+      },
+      {
+        "id": "rum-bumbu-xo",
+        "category": "rum",
+        "name": "Bumbu XO",
+        "style": "spiced",
+        "region": "Panama (solera)",
+        "abv": 40.0,
+        "body": 3,
+        "sweetness": 4,
+        "flavorTags": ["vanilija", "karamela", "hrast"],
+        "additiveStatus": "sweetened",
+        "additiveDetail": "Hidrometrija: ~19 g/L dodataka (znatno manje od Originala)",
+        "additiveSource": "Javni hidrometrijski testovi (thefatrumpirate)",
+        "qualityScore": 6.0,
+        "priceEUR": { "min": 49.89, "max": 49.89 },
+        "shopHR": "allez.hr",
+        "status": null,
+        "pairable": true,
+        "serving": { "neat": 2, "water": 2, "rocks": 3, "highball": 1, "cola": 1, "best": "Cisto / on the rocks" },
+        "cigarHint": "Srednja do puna cigara, maduro",
+        "priceUrl": "https://allez.hr/shop/svi-proizvodi/bumbu-the-original-40-vol-07l",
+        "notes": {
+          "hr": "Panamski rum dozrijevan u ex-bourbon i sherry bačvama, dovršen u andaluzijskim sherry bačvama. Mjerenja pokazuju ~19 g/L dodataka — unutar EU granice za rum. Mekan profil vanilije, karamele i hrasta.",
+          "en": "Panamanian rum aged in ex-bourbon and sherry casks, finished in Andalusian sherry casks. Measurements show ~19 g/L additives — within the EU limit for rum. Soft vanilla, caramel and oak profile."
+        }
+      }
+    ]
+  },
+  "whiskies": {
+    "wh-jack-daniel-s-apple": {
+      "pairable": true,
+      "style": "tennessee",
+      "body": 2,
+      "sweetness": 5,
+      "flavorTags": ["jabuka", "vanilija", "slatko"],
+      "additiveDetail": "Liker: dodana aroma jabuke i secer (35%)",
+      "additiveSource": "Etiketa: whiskey specialty / liker",
+      "qualityScore": 5.0,
+      "cigarHint": null,
+      "notes": {
+        "hr": "Liker na bazi Tennessee whiskeyja s aromom zelene jabuke (35%). Po EU pravilima liker, ne whisky — deklariramo neutralno.",
+        "en": "A Tennessee-whiskey-based liqueur with green apple flavour (35%). Legally a liqueur, not whisky, under EU rules — declared neutrally."
+      }
+    },
+    "wh-jack-daniel-s-honey": {
+      "pairable": true,
+      "style": "tennessee",
+      "body": 2,
+      "sweetness": 5,
+      "flavorTags": ["med", "vanilija", "slatko"],
+      "additiveDetail": "Liker: dodani med/aroma i secer (35%)",
+      "additiveSource": "Etiketa: whiskey specialty / liker",
+      "qualityScore": 5.5,
+      "cigarHint": null,
+      "notes": {
+        "hr": "Liker na bazi Tennessee whiskeyja s medom (35%). Po EU pravilima liker, ne whisky. Vrlo popularan desertni profil.",
+        "en": "A Tennessee-whiskey-based honey liqueur (35%). Legally a liqueur, not whisky, under EU rules. A very popular dessert profile."
+      }
+    },
+    "wh-jack-daniel-039-s-honey-liqueur-35-vol-0-7l": {
+      "pairable": true,
+      "body": 2,
+      "sweetness": 5,
+      "flavorTags": ["med", "vanilija", "slatko"],
+      "additiveDetail": "Liker: dodani med/aroma i secer (35%)",
+      "additiveSource": "Etiketa: liker",
+      "qualityScore": 5.5,
+      "cigarHint": null,
+      "notes": {
+        "hr": "Ista bočica kao JD Honey — liker s medom na bazi Tennessee whiskeyja (35%).",
+        "en": "Same liquid as JD Honey — a honey liqueur on a Tennessee whiskey base (35%)."
+      }
+    },
+    "wh-teeling-whiskey-pineapple-rum-cask-irish-whiskey-49-2-vol-0-7l-u-poklon-kutiji": {
+      "pairable": true,
+      "sweetness": 4,
+      "flavorTags": ["tropsko-voce", "vanilija", "kremasto"],
+      "additiveDetail": "Aromatizirana edicija (ananas) uz rum-cask dozrijevanje",
+      "additiveSource": "Deklaracija proizvodjaca (limitirana edicija)",
+      "qualityScore": 6.0,
+      "notes": {
+        "hr": "Limitirana Teeling edicija: irski whiskey s ananasom i dozrijevanjem u rum bačvama (49,2%). Aromatizirano — deklarirano na etiketi.",
+        "en": "Limited Teeling release: Irish whiskey with pineapple and rum-cask maturation (49.2%). Flavoured — declared on the label."
+      }
+    }
+  }
+}

@@ -1,14 +1,35 @@
 # Cigar & Drink Pairing
 
-PWA za sparivanje cigara i pića (rum, whisky, konjak/brandy, kava) s indeksima
-rangiranim po kvaliteti za sipping uz cigaru.
+PWA za sparivanje cigara i pića (rum, whisky, konjak/brandy, gin, vino, kava) s
+indeksima rangiranim po kvaliteti za sipping uz cigaru.
 
 **Live:** https://ivsitum1.github.io/cigar-pairing/ (instalabilno na mobitel, radi offline)
+
+## Uređivačka politika: neutralno i informativno
+
+- **Deklaracija umjesto osude.** Sve što ima dodatke ostaje na popisu; app
+  jasno navodi *što* je dodano i *koliko* (izmjerene vrijednosti g/L gdje
+  postoji javni izvor: Systembolaget/Alko lab, hidrometrijski testovi).
+- **Ocjena unutar stila.** `qualityScore` je neovisna procjena unutar vlastite
+  kategorije (agregat javnih ocjena i recenzija) — dodaci se ne kažnjavaju u
+  ocjeni, nego se transparentno deklariraju.
+- **Sve je pairable.** Engine pošteno boduje spoj po tijelu/slatkoći/okusima;
+  korisnik bira što voli.
+- **Različita pravila po kategoriji** (prikazano u appu): rum EU ≤20 g/L
+  šećera; whisky bez doslađivanja (samo E150a); konjak/armagnac šećer + E150a
+  + boisé do 4% obskuracije; London Dry gin ništa nakon destilacije; vino
+  sulfiti standard, fortificirana vina dodani destilat.
+- Neutralne izmjene tona čuvaju se u `app/scripts/neutral_overrides.json` i
+  primjenjuju s `python scripts/apply-neutral-overrides.py` (pokrenuti nakon
+  svake regeneracije iz Excela).
 
 ## Struktura
 
 - `app/` — Vite + React + TS + Tailwind PWA
-  - `src/data/*.json` — indeksi (136 rumova, 170 whiskyja, 76 brandy, 21 gin, 23 kave, 410 cigara)
+  - `src/data/*.json` — indeksi (138 rumova, 164 whiskyja, 75 brandy, 20 gin, 44 vina, 23 kave, 480 cigara)
+  - `src/data/wines.json` — vino po istom principu punoće (porto, sherry,
+    madeira, prošek, puna/srednja crna, bijela, pjenušava, desertna); HR cijene
+    (Vivat/Miva/Vrutak/vinoteke), približne označene `priceApprox`
   - `src/engine/` — rule-based pairing engine s objašnjenjima (kalibracija u `rules.ts`)
   - `scripts/excel-to-json.py` — regenerira rums.json + shopping.json iz lokalnog Excela
   - `scripts/scrape-whisky-catalog.py` — scrape allez.hr + ecuga.com → whisky_catalog_raw.json
@@ -76,7 +97,8 @@ npm test
 
 Izvori: [allez.hr/shop/whiskey](https://allez.hr/shop/whiskey),
 [ecuga.com/katalog/whisky](https://ecuga.com/katalog/whisky) (+ podkategorije).
-Flavoured/RTD stavke ostaju u katalogu, ali ne ulaze u MASTER/app (`pairable: false`).
+Flavoured stavke ulaze u app s jasnom deklaracijom (liker/spirit drink) i
+ocjenom unutar vlastitog stila — vidi Uređivačka politika.
 
 ## Brandy indeks (pipeline)
 
@@ -106,5 +128,6 @@ npm test
 Izvori: [allez.hr/shop/cognac-calvados-armagnac](https://allez.hr/shop/cognac-calvados-armagnac),
 [allez.hr/shop/absinthe-brandy-grappa-sake](https://allez.hr/shop/absinthe-brandy-grappa-sake),
 [ecuga.com/katalog/spirits-and-liqueurs/cognac](https://ecuga.com/katalog/spirits-and-liqueurs/cognac).
-Grappa/pisco/absinthe/likeri ostaju u katalogu, ali ne ulaze u MASTER/app (`pairable: false`).
+Grappa/pisco/absinthe/likeri koji uđu u app nose jasnu deklaraciju kategorije
+i neutralnu ocjenu unutar vlastitog stila.
 HR vinjak (Badel itd.) zadržava se iz seed datoteke i može ostati bez shop linka.
