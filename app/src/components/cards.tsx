@@ -25,14 +25,23 @@ function OwnedDot({ id }: { id: string }) {
   const { t } = useI18n();
   useCollection();
   const s = getItemState(id);
-  if (!s.owned && !s.tried) return null;
-  return (
-    <span
-      className="ml-1 inline-block h-2 w-2 rounded-full"
-      style={{ background: s.owned ? "var(--color-lista)" : "var(--color-dim)" }}
-      title={s.owned ? t("coll.inCollection") : t("coll.triedTitle")}
-    />
-  );
+  if (s.owned || s.tried) {
+    return (
+      <span
+        className="ml-1 inline-block h-2 w-2 rounded-full"
+        style={{ background: s.owned ? "var(--color-lista)" : "var(--color-dim)" }}
+        title={s.owned ? t("coll.inCollection") : t("coll.triedTitle")}
+      />
+    );
+  }
+  if (s.wishlist) {
+    return (
+      <span className="ml-1 text-xs text-zlato-2" title={t("coll.onWishlist")}>
+        ☆
+      </span>
+    );
+  }
+  return null;
 }
 
 export function CigarRow({

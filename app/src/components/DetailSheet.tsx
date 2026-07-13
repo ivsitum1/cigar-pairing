@@ -60,7 +60,10 @@ export function DetailSheet({
         <div className="flex flex-wrap items-center gap-2">
           <Chip
             active={state.owned}
-            onClick={() => updateItem(id, { owned: !state.owned })}
+            onClick={() =>
+              // kupljeno -> makni s liste zelja
+              updateItem(id, { owned: !state.owned, wishlist: false })
+            }
           >
             ✓ {t("coll.owned")}
           </Chip>
@@ -69,6 +72,12 @@ export function DetailSheet({
             onClick={() => updateItem(id, { tried: !state.tried })}
           >
             {t("coll.tried")}
+          </Chip>
+          <Chip
+            active={state.wishlist}
+            onClick={() => updateItem(id, { wishlist: !state.wishlist })}
+          >
+            ☆ {t("coll.wishlist")}
           </Chip>
           <div className="ml-auto flex items-center gap-2">
             <span className="text-xs text-dim">{t("coll.myRating")}</span>

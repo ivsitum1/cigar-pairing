@@ -31,11 +31,16 @@ export function CollectionPage() {
   const historyIds = Object.entries(data.items)
     .filter(([, s]) => !s.owned && (s.tried || s.rating != null || s.note))
     .map(([id]) => id);
+  const wishlistIds = Object.entries(data.items)
+    .filter(([, s]) => s.wishlist && !s.owned)
+    .map(([id]) => id);
 
   const myCigars = CIGARS.filter((c) => ownedIds.includes(c.id));
   const myDrinks = ALL_DRINKS.filter((d) => ownedIds.includes(d.id));
   const historyCigars = CIGARS.filter((c) => historyIds.includes(c.id));
   const historyDrinks = ALL_DRINKS.filter((d) => historyIds.includes(d.id));
+  const wishlistCigars = CIGARS.filter((c) => wishlistIds.includes(c.id));
+  const wishlistDrinks = ALL_DRINKS.filter((d) => wishlistIds.includes(d.id));
 
   const doExport = () => {
     const blob = new Blob([exportData()], { type: "application/json" });
@@ -74,7 +79,7 @@ export function CollectionPage() {
       </div>
       {importMsg && <p className="mt-2 text-xs text-zlato-2">{importMsg}</p>}
 
-      {ownedIds.length === 0 && historyIds.length === 0 && (
+      {ownedIds.length === 0 && historyIds.length === 0 && wishlistIds.length === 0 && (
         <p className="mt-6 rounded-xl border border-dim/20 bg-cedar p-4 text-sm leading-relaxed text-dim">
           {t("coll.empty")}
         </p>
@@ -98,6 +103,21 @@ export function CollectionPage() {
           </SectionTitle>
           <div className="space-y-2">
             {myDrinks.map((d) => (
+              <DrinkRow key={d.id} drink={d} onClick={() => setDetail({ kind: "drink", item: d })} />
+            ))}
+          </div>
+        </>
+      )}
+
+      {/* lista zelja — zelim kupiti, jos nemam */}
+      {(wishlistCigars.length > 0 || wishlistDrinks.length > 0) && (
+        <>
+          <SectionTitle>☆ {t("coll.wishlistTitle")}</SectionTitle>
+          <div className="space-y-2">
+            {wishlistCigars.map((c) => (
+              <CigarRow key={c.id} cigar={c} onClick={() => setDetail({ kind: "cigar", item: c })} />
+            ))}
+            {wishlistDrinks.map((d) => (
               <DrinkRow key={d.id} drink={d} onClick={() => setDetail({ kind: "drink", item: d })} />
             ))}
           </div>
