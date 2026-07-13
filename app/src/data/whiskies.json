@@ -6721,5 +6721,2510 @@
    "hr": "Standard blenda s daškom dima — pouzdan dnevni izbor uz cigaru.",
    "en": ""
   }
+ },
+ {
+  "id": "wh-glendronach-12",
+  "category": "whisky",
+  "name": "GlenDronach 12 Original",
+  "style": "speyside-sherry",
+  "region": "Highlands, Škotska",
+  "country": "Škotska",
+  "abv": 43,
+  "body": 4,
+  "sweetness": 3,
+  "flavorTags": [
+   "tamno-voce",
+   "kakao",
+   "koza",
+   "hrast",
+   "zacini"
+  ],
+  "qualityScore": 8,
+  "priceEUR": {
+   "min": 50,
+   "max": 62
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Klasik sherry odležavanja — tamno voće i koža, sjajan uz maduro.",
+   "en": "Sherry-maturation classic — dark fruit and leather, great with maduro."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a"
+ },
+ {
+  "id": "wh-glendronach-15",
+  "category": "whisky",
+  "name": "GlenDronach 15 Revival",
+  "style": "speyside-sherry",
+  "region": "Highlands, Škotska",
+  "country": "Škotska",
+  "abv": 46,
+  "body": 4,
+  "sweetness": 3,
+  "flavorTags": [
+   "tamno-voce",
+   "kakao",
+   "koza",
+   "hrast",
+   "kava"
+  ],
+  "qualityScore": 8.5,
+  "priceEUR": {
+   "min": 75,
+   "max": 95
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Dublja, bogatija verzija 12-ice — jedan od najboljih sherry malt-eva za cigaru.",
+   "en": "Deeper, richer than the 12 — one of the best sherried malts for a cigar."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a"
+ },
+ {
+  "id": "wh-glenfarclas-15",
+  "category": "whisky",
+  "name": "Glenfarclas 15",
+  "style": "speyside-sherry",
+  "region": "Speyside, Škotska",
+  "country": "Škotska",
+  "abv": 46,
+  "body": 4,
+  "sweetness": 3,
+  "flavorTags": [
+   "suho-voce",
+   "med",
+   "hrast",
+   "dim"
+  ],
+  "qualityScore": 8,
+  "priceEUR": {
+   "min": 60,
+   "max": 75
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Staromodni sherry profil s natruhom dima — klasičan cigar malt.",
+   "en": "Old-school sherry profile with a wisp of smoke — a classic cigar malt."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "clean",
+  "additiveDetail": "Prirodna boja, bez dosladjivanja (deklaracija destilerije)",
+  "additiveSource": "Deklaracija destilerije"
+ },
+ {
+  "id": "wh-glenallachie-12",
+  "category": "whisky",
+  "name": "GlenAllachie 12",
+  "style": "speyside-sherry",
+  "region": "Speyside, Škotska",
+  "country": "Škotska",
+  "abv": 46,
+  "body": 4,
+  "sweetness": 3,
+  "flavorTags": [
+   "tamno-voce",
+   "kakao",
+   "zacini",
+   "med"
+  ],
+  "qualityScore": 8.5,
+  "priceEUR": {
+   "min": 55,
+   "max": 65
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Billy Walker blend-majstorija — moderni sherry favorit zajednice.",
+   "en": "Billy Walker's blending craft — the community's modern sherry favourite."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "clean",
+  "additiveDetail": "Prirodna boja, bez dosladjivanja (deklaracija destilerije)",
+  "additiveSource": "Deklaracija destilerije"
+ },
+ {
+  "id": "wh-tamdhu-12",
+  "category": "whisky",
+  "name": "Tamdhu 12",
+  "style": "speyside-sherry",
+  "region": "Speyside, Škotska",
+  "country": "Škotska",
+  "abv": 43,
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "suho-voce",
+   "citrus",
+   "med",
+   "hrast"
+  ],
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 50,
+   "max": 60
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "100% sherry bačve, svjetliji izraz — elegantan sipper.",
+   "en": "100% sherry casks, brighter expression — an elegant sipper."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "clean",
+  "additiveDetail": "Prirodna boja, bez dosladjivanja (deklaracija destilerije)",
+  "additiveSource": "Deklaracija destilerije"
+ },
+ {
+  "id": "wh-balvenie-doublewood-12",
+  "category": "whisky",
+  "name": "Balvenie DoubleWood 12",
+  "style": "speyside-fruity",
+  "region": "Speyside, Škotska",
+  "country": "Škotska",
+  "abv": 40,
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "med",
+   "vanilija",
+   "suho-voce",
+   "orasasti"
+  ],
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 55,
+   "max": 65
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Medeno-orašasti klasik — mekan, uz blažu cigaru.",
+   "en": "Honey-nutty classic — soft, with a milder cigar."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a"
+ },
+ {
+  "id": "wh-glenfiddich-15",
+  "category": "whisky",
+  "name": "Glenfiddich 15 Solera",
+  "style": "speyside-fruity",
+  "region": "Speyside, Škotska",
+  "country": "Škotska",
+  "abv": 40,
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "med",
+   "voce",
+   "hrast",
+   "zacini"
+  ],
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 50,
+   "max": 60
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Solera sustav daje dubinu — pitki all-rounder.",
+   "en": "Solera vatting adds depth — an easy all-rounder."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a"
+ },
+ {
+  "id": "wh-benromach-10",
+  "category": "whisky",
+  "name": "Benromach 10",
+  "style": "speyside-sherry",
+  "region": "Speyside, Škotska",
+  "country": "Škotska",
+  "abv": 43,
+  "body": 4,
+  "sweetness": 2,
+  "flavorTags": [
+   "dim",
+   "suho-voce",
+   "zacini",
+   "hrast"
+  ],
+  "qualityScore": 8,
+  "priceEUR": {
+   "min": 42,
+   "max": 52
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Speyside starog stila s laganim dimom — odličan svestrani cigar malt.",
+   "en": "Old-style Speyside with light smoke — an excellent versatile cigar malt."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "clean",
+  "additiveDetail": "Prirodna boja, bez dosladjivanja (deklaracija destilerije)",
+  "additiveSource": "Deklaracija destilerije"
+ },
+ {
+  "id": "wh-mortlach-12",
+  "category": "whisky",
+  "name": "Mortlach 12 Wee Witchie",
+  "style": "speyside-sherry",
+  "region": "Speyside, Škotska",
+  "country": "Škotska",
+  "abv": 43.4,
+  "body": 4,
+  "sweetness": 2,
+  "flavorTags": [
+   "mesnato",
+   "tamno-voce",
+   "zacini",
+   "hrast"
+  ],
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 55,
+   "max": 65
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "'Zvijer iz Dufftowna' — mesnat, robustan profil za jače cigare.",
+   "en": "'The Beast of Dufftown' — meaty, robust profile for stronger cigars."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a"
+ },
+ {
+  "id": "wh-craigellachie-13",
+  "category": "whisky",
+  "name": "Craigellachie 13",
+  "style": "speyside-fruity",
+  "region": "Speyside, Škotska",
+  "country": "Škotska",
+  "abv": 46,
+  "body": 4,
+  "sweetness": 2,
+  "flavorTags": [
+   "voce",
+   "mesnato",
+   "vanilija",
+   "zacini"
+  ],
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 48,
+   "max": 58
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Sumporasto-voćni karakter starog kova — za one koji žele karakter.",
+   "en": "Sulphury-fruity old-school character — for those who want personality."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a"
+ },
+ {
+  "id": "wh-glenmorangie-lasanta",
+  "category": "whisky",
+  "name": "Glenmorangie Lasanta 12",
+  "style": "highland",
+  "region": "Highlands, Škotska",
+  "country": "Škotska",
+  "abv": 43,
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "med",
+   "suho-voce",
+   "karamela",
+   "orasasti"
+  ],
+  "qualityScore": 7,
+  "priceEUR": {
+   "min": 45,
+   "max": 55
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Sherry finish na elegantnoj bazi — mekan pratitelj blažih cigara.",
+   "en": "Sherry finish on an elegant base — a soft companion for milder cigars."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a"
+ },
+ {
+  "id": "wh-oban-14",
+  "category": "whisky",
+  "name": "Oban 14",
+  "style": "highland",
+  "region": "West Highlands, Škotska",
+  "country": "Škotska",
+  "abv": 43,
+  "body": 3,
+  "sweetness": 2,
+  "flavorTags": [
+   "citrus",
+   "med",
+   "dim",
+   "mineralno"
+  ],
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 75,
+   "max": 90
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Obalni Highland — citrus, sol i tek naznaka dima.",
+   "en": "Coastal Highland — citrus, salt and just a hint of smoke."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a"
+ },
+ {
+  "id": "wh-dalmore-12",
+  "category": "whisky",
+  "name": "Dalmore 12",
+  "style": "highland",
+  "region": "Highlands, Škotska",
+  "country": "Škotska",
+  "abv": 40,
+  "body": 4,
+  "sweetness": 3,
+  "flavorTags": [
+   "naranca",
+   "kakao",
+   "suho-voce",
+   "hrast"
+  ],
+  "qualityScore": 7,
+  "priceEUR": {
+   "min": 60,
+   "max": 70
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Naranča i čokolada — dizajniran za fotelju i cigaru.",
+   "en": "Orange and chocolate — built for an armchair and a cigar."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a"
+ },
+ {
+  "id": "wh-glengoyne-12",
+  "category": "whisky",
+  "name": "Glengoyne 12",
+  "style": "highland",
+  "region": "Highlands, Škotska",
+  "country": "Škotska",
+  "abv": 43,
+  "body": 3,
+  "sweetness": 2,
+  "flavorTags": [
+   "voce",
+   "med",
+   "orasasti",
+   "hrast"
+  ],
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 48,
+   "max": 58
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Potpuno nedimljeni Highland — čist, voćan, poštena izrada.",
+   "en": "Completely unpeated Highland — clean, fruity, honest make."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a"
+ },
+ {
+  "id": "wh-tomatin-12",
+  "category": "whisky",
+  "name": "Tomatin 12",
+  "style": "highland",
+  "region": "Highlands, Škotska",
+  "country": "Škotska",
+  "abv": 43,
+  "body": 3,
+  "sweetness": 2,
+  "flavorTags": [
+   "voce",
+   "med",
+   "vanilija"
+  ],
+  "qualityScore": 7,
+  "priceEUR": {
+   "min": 40,
+   "max": 50
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Pouzdani value Highland — mekan i pristupačan.",
+   "en": "Reliable value Highland — soft and approachable."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a"
+ },
+ {
+  "id": "wh-talisker-10",
+  "category": "whisky",
+  "name": "Talisker 10",
+  "style": "island",
+  "region": "Skye, Škotska",
+  "country": "Škotska",
+  "abv": 45.8,
+  "body": 4,
+  "sweetness": 2,
+  "flavorTags": [
+   "dim",
+   "papar",
+   "mineralno",
+   "citrus"
+  ],
+  "qualityScore": 8,
+  "priceEUR": {
+   "min": 50,
+   "max": 60
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / kap vode"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Paprena morska sol i dim — voli začinske Habano cigare.",
+   "en": "Peppery sea salt and smoke — loves spicy Habano cigars."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a"
+ },
+ {
+  "id": "wh-springbank-10",
+  "category": "whisky",
+  "name": "Springbank 10",
+  "style": "campbeltown",
+  "region": "Campbeltown, Škotska",
+  "country": "Škotska",
+  "abv": 46,
+  "body": 4,
+  "sweetness": 2,
+  "flavorTags": [
+   "dim",
+   "mineralno",
+   "voce",
+   "koza"
+  ],
+  "qualityScore": 8.5,
+  "priceEUR": {
+   "min": 75,
+   "max": 110
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr (rijetko)",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Kultna funky destilerija — teško nabavljiv, ali vrhunski uz cigaru.",
+   "en": "Cult funky distillery — hard to find, but superb with a cigar."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "clean",
+  "additiveDetail": "Prirodna boja, bez dosladjivanja (deklaracija destilerije)",
+  "additiveSource": "Deklaracija destilerije"
+ },
+ {
+  "id": "wh-glen-scotia-victoriana",
+  "category": "whisky",
+  "name": "Glen Scotia Victoriana",
+  "style": "campbeltown",
+  "region": "Campbeltown, Škotska",
+  "country": "Škotska",
+  "abv": 54.2,
+  "body": 4,
+  "sweetness": 2,
+  "flavorTags": [
+   "dim",
+   "karamela",
+   "mineralno",
+   "tamno-voce",
+   "overproof"
+  ],
+  "qualityScore": 8,
+  "priceEUR": {
+   "min": 75,
+   "max": 90
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Kap vode"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Dostupnija Campbeltown alternativa — tamna, obalna, cask strength.",
+   "en": "The accessible Campbeltown alternative — dark, coastal, cask strength."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a"
+ },
+ {
+  "id": "wh-arran-10",
+  "category": "whisky",
+  "name": "Arran 10",
+  "style": "island",
+  "region": "Arran, Škotska",
+  "country": "Škotska",
+  "abv": 46,
+  "body": 3,
+  "sweetness": 2,
+  "flavorTags": [
+   "citrus",
+   "vanilija",
+   "med"
+  ],
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 42,
+   "max": 52
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Svjež citrusni otočni malt — uz lagane cigare i jutarnju kavu.",
+   "en": "Fresh citrusy island malt — with light cigars and morning coffee."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a"
+ },
+ {
+  "id": "wh-laphroaig-10",
+  "category": "whisky",
+  "name": "Laphroaig 10",
+  "style": "islay-peated",
+  "region": "Islay, Škotska",
+  "country": "Škotska",
+  "abv": 40,
+  "body": 5,
+  "sweetness": 1,
+  "flavorTags": [
+   "dim",
+   "jod",
+   "mineralno",
+   "koza"
+  ],
+  "qualityScore": 8,
+  "priceEUR": {
+   "min": 40,
+   "max": 50
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / kap vode"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Medicinski treset i jod — traži punu, zemljanu cigaru koja ga prati.",
+   "en": "Medicinal peat and iodine — needs a full, earthy cigar to keep up."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a"
+ },
+ {
+  "id": "wh-ardbeg-10",
+  "category": "whisky",
+  "name": "Ardbeg 10",
+  "style": "islay-peated",
+  "region": "Islay, Škotska",
+  "country": "Škotska",
+  "abv": 46,
+  "body": 5,
+  "sweetness": 1,
+  "flavorTags": [
+   "dim",
+   "citrus",
+   "mineralno",
+   "papar"
+  ],
+  "qualityScore": 8,
+  "priceEUR": {
+   "min": 48,
+   "max": 58
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Dimno-citrusni balans — najelegantniji od velikih Islay tresetara.",
+   "en": "Smoke-citrus balance — the most elegant of the big Islay peaters."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "clean",
+  "additiveDetail": "Prirodna boja, bez dosladjivanja (deklaracija destilerije)",
+  "additiveSource": "Deklaracija destilerije"
+ },
+ {
+  "id": "wh-ardbeg-uigeadail",
+  "category": "whisky",
+  "name": "Ardbeg Uigeadail",
+  "style": "islay-peated",
+  "region": "Islay, Škotska",
+  "country": "Škotska",
+  "abv": 54.2,
+  "body": 5,
+  "sweetness": 3,
+  "flavorTags": [
+   "dim",
+   "tamno-voce",
+   "kakao",
+   "overproof",
+   "koza"
+  ],
+  "qualityScore": 9,
+  "priceEUR": {
+   "min": 90,
+   "max": 105
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Kap vode"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Treset + sherry na cask strengthu — kralj pairinga uz najjače maduro cigare.",
+   "en": "Peat + sherry at cask strength — pairing king with the strongest maduros."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "clean",
+  "additiveDetail": "Prirodna boja, bez dosladjivanja (deklaracija destilerije)",
+  "additiveSource": "Deklaracija destilerije"
+ },
+ {
+  "id": "wh-lagavulin-8",
+  "category": "whisky",
+  "name": "Lagavulin 8",
+  "style": "islay-peated",
+  "region": "Islay, Škotska",
+  "country": "Škotska",
+  "abv": 48,
+  "body": 4,
+  "sweetness": 1,
+  "flavorTags": [
+   "dim",
+   "citrus",
+   "mineralno"
+  ],
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 55,
+   "max": 65
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Mlađi, oštriji Lagavulin — više vatre, manje zaobljenosti.",
+   "en": "Younger, sharper Lagavulin — more fire, less roundness."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a"
+ },
+ {
+  "id": "wh-caol-ila-12",
+  "category": "whisky",
+  "name": "Caol Ila 12",
+  "style": "islay-peated",
+  "region": "Islay, Škotska",
+  "country": "Škotska",
+  "abv": 43,
+  "body": 4,
+  "sweetness": 1,
+  "flavorTags": [
+   "dim",
+   "citrus",
+   "mineralno",
+   "trava-slatka"
+  ],
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 50,
+   "max": 60
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Čisti, uljasti dim s limunom — elegantan tresetar.",
+   "en": "Clean oily smoke with lemon — an elegant peater."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a"
+ },
+ {
+  "id": "wh-bunnahabhain-12",
+  "category": "whisky",
+  "name": "Bunnahabhain 12",
+  "style": "island",
+  "region": "Islay, Škotska",
+  "country": "Škotska",
+  "abv": 46.3,
+  "body": 4,
+  "sweetness": 3,
+  "flavorTags": [
+   "suho-voce",
+   "orasasti",
+   "mineralno",
+   "karamela"
+  ],
+  "qualityScore": 8,
+  "priceEUR": {
+   "min": 50,
+   "max": 60
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Nedimljeni Islay — sherry, orasi, morska sol. Potajni cigar favorit.",
+   "en": "Unpeated Islay — sherry, nuts, sea salt. A secret cigar favourite."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a"
+ },
+ {
+  "id": "wh-port-charlotte-10",
+  "category": "whisky",
+  "name": "Port Charlotte 10 (Bruichladdich)",
+  "style": "islay-peated",
+  "region": "Islay, Škotska",
+  "country": "Škotska",
+  "abv": 50,
+  "body": 5,
+  "sweetness": 2,
+  "flavorTags": [
+   "dim",
+   "karamela",
+   "mineralno",
+   "citrus"
+  ],
+  "qualityScore": 8.5,
+  "priceEUR": {
+   "min": 65,
+   "max": 75
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / kap vode"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Teški treset s uglađenom teksturom — moderan Islay vrh.",
+   "en": "Heavy peat with a polished texture — a modern Islay peak."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "clean",
+  "additiveDetail": "Prirodna boja, bez dosladjivanja (deklaracija destilerije)",
+  "additiveSource": "Deklaracija destilerije"
+ },
+ {
+  "id": "wh-makers-mark",
+  "category": "whisky",
+  "name": "Maker's Mark",
+  "style": "bourbon",
+  "region": "Kentucky, SAD",
+  "country": "SAD",
+  "abv": 45,
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "karamela",
+   "vanilija",
+   "psenica",
+   "hrast"
+  ],
+  "qualityScore": 7,
+  "priceEUR": {
+   "min": 30,
+   "max": 38
+  },
+  "priceApprox": true,
+  "shopHR": "svugdje",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / on the rocks"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Pšenični bourbon — mekan, sladak, bez oštrine. Uz blaže cigare.",
+   "en": "Wheated bourbon — soft, sweet, no bite. With milder cigars."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "clean",
+  "additiveDetail": "Bez aditiva (US \"straight\" pravila ne dopustaju dodatke)",
+  "additiveSource": "US regulativa (straight whiskey)"
+ },
+ {
+  "id": "wh-woodford-reserve",
+  "category": "whisky",
+  "name": "Woodford Reserve",
+  "style": "bourbon",
+  "region": "Kentucky, SAD",
+  "country": "SAD",
+  "abv": 43.2,
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "karamela",
+   "vanilija",
+   "zacini",
+   "orasasti"
+  ],
+  "qualityScore": 7,
+  "priceEUR": {
+   "min": 33,
+   "max": 42
+  },
+  "priceApprox": true,
+  "shopHR": "svugdje",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / Old Fashioned"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Uglađen svestrani bourbon — sef izbor uz srednju cigaru.",
+   "en": "Polished all-round bourbon — safe pick with a medium cigar."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "clean",
+  "additiveDetail": "Bez aditiva (US \"straight\" pravila ne dopustaju dodatke)",
+  "additiveSource": "US regulativa (straight whiskey)"
+ },
+ {
+  "id": "wh-buffalo-trace",
+  "category": "whisky",
+  "name": "Buffalo Trace",
+  "style": "bourbon",
+  "region": "Kentucky, SAD",
+  "country": "SAD",
+  "abv": 40,
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "karamela",
+   "vanilija",
+   "med",
+   "hrast"
+  ],
+  "qualityScore": 7,
+  "priceEUR": {
+   "min": 28,
+   "max": 35
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Value klasik — čist bourbon profil bez kompromisa.",
+   "en": "Value classic — clean bourbon profile, no compromise."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "clean",
+  "additiveDetail": "Bez aditiva (US \"straight\" pravila ne dopustaju dodatke)",
+  "additiveSource": "US regulativa (straight whiskey)"
+ },
+ {
+  "id": "wh-eagle-rare-10",
+  "category": "whisky",
+  "name": "Eagle Rare 10",
+  "style": "bourbon",
+  "region": "Kentucky, SAD",
+  "country": "SAD",
+  "abv": 45,
+  "body": 4,
+  "sweetness": 3,
+  "flavorTags": [
+   "karamela",
+   "hrast",
+   "koza",
+   "suho-voce"
+  ],
+  "qualityScore": 8,
+  "priceEUR": {
+   "min": 45,
+   "max": 60
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Stariji Buffalo Trace destilat — hrast i koža, ozbiljniji uz cigaru.",
+   "en": "Older Buffalo Trace distillate — oak and leather, more serious with a cigar."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "clean",
+  "additiveDetail": "Bez aditiva (US \"straight\" pravila ne dopustaju dodatke)",
+  "additiveSource": "US regulativa (straight whiskey)"
+ },
+ {
+  "id": "wh-wild-turkey-101",
+  "category": "whisky",
+  "name": "Wild Turkey 101",
+  "style": "bourbon",
+  "region": "Kentucky, SAD",
+  "country": "SAD",
+  "abv": 50.5,
+  "body": 4,
+  "sweetness": 2,
+  "flavorTags": [
+   "karamela",
+   "zacini",
+   "hrast",
+   "papar"
+  ],
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 30,
+   "max": 38
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / kap vode"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Više proofa, više karaktera — value snaga za punije cigare.",
+   "en": "More proof, more character — value power for fuller cigars."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "clean",
+  "additiveDetail": "Bez aditiva (US \"straight\" pravila ne dopustaju dodatke)",
+  "additiveSource": "US regulativa (straight whiskey)"
+ },
+ {
+  "id": "wh-wild-turkey-rare-breed",
+  "category": "whisky",
+  "name": "Wild Turkey Rare Breed",
+  "style": "bourbon",
+  "region": "Kentucky, SAD",
+  "country": "SAD",
+  "abv": 58.4,
+  "body": 5,
+  "sweetness": 3,
+  "flavorTags": [
+   "karamela",
+   "zacini",
+   "hrast",
+   "overproof",
+   "koza"
+  ],
+  "qualityScore": 8.5,
+  "priceEUR": {
+   "min": 50,
+   "max": 60
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Kap vode"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Barrel proof bez razvodnjavanja — bourbon ekvivalent Hampdenu uz cigaru.",
+   "en": "Barrel proof, undiluted — the bourbon equivalent of Hampden with a cigar."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "clean",
+  "additiveDetail": "Bez aditiva (US \"straight\" pravila ne dopustaju dodatke)",
+  "additiveSource": "US regulativa (straight whiskey)"
+ },
+ {
+  "id": "wh-knob-creek-9",
+  "category": "whisky",
+  "name": "Knob Creek 9 Small Batch",
+  "style": "bourbon",
+  "region": "Kentucky, SAD",
+  "country": "SAD",
+  "abv": 50,
+  "body": 4,
+  "sweetness": 3,
+  "flavorTags": [
+   "karamela",
+   "hrast",
+   "orasasti",
+   "kakao"
+  ],
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 38,
+   "max": 46
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Punije tijelo, 9 godina — bourbon koji drži korak s maduro cigarom.",
+   "en": "Fuller body, 9 years — a bourbon that keeps pace with a maduro."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "clean",
+  "additiveDetail": "Bez aditiva (US \"straight\" pravila ne dopustaju dodatke)",
+  "additiveSource": "US regulativa (straight whiskey)"
+ },
+ {
+  "id": "wh-jack-daniels-single-barrel",
+  "category": "whisky",
+  "name": "Jack Daniel's Single Barrel Select",
+  "style": "tennessee",
+  "region": "Tennessee, SAD",
+  "country": "SAD",
+  "abv": 45,
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "karamela",
+   "vanilija",
+   "hrast",
+   "med"
+  ],
+  "qualityScore": 7,
+  "priceEUR": {
+   "min": 40,
+   "max": 48
+  },
+  "priceApprox": true,
+  "shopHR": "svugdje",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Ozbiljna strana JD-a — single barrel dubina.",
+   "en": "The serious side of JD — single barrel depth."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "clean",
+  "additiveDetail": "Bez aditiva (US \"straight\" pravila ne dopustaju dodatke)",
+  "additiveSource": "US regulativa (straight whiskey)"
+ },
+ {
+  "id": "wh-rittenhouse-rye",
+  "category": "whisky",
+  "name": "Rittenhouse Rye Bottled-in-Bond",
+  "style": "rye",
+  "region": "Kentucky, SAD",
+  "country": "SAD",
+  "abv": 50,
+  "body": 4,
+  "sweetness": 2,
+  "flavorTags": [
+   "zacini",
+   "papar",
+   "karamela",
+   "citrus"
+  ],
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 35,
+   "max": 45
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / Old Fashioned"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Začinski rye — reže kroz dim, sjajan kontrast kremastim cigarama.",
+   "en": "Spicy rye — cuts through smoke, great contrast to creamy cigars."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "clean",
+  "additiveDetail": "Bez aditiva (US \"straight\" pravila ne dopustaju dodatke)",
+  "additiveSource": "US regulativa (straight whiskey)"
+ },
+ {
+  "id": "wh-bulleit-rye",
+  "category": "whisky",
+  "name": "Bulleit Rye 95",
+  "style": "rye",
+  "region": "Indiana, SAD",
+  "country": "SAD",
+  "abv": 45,
+  "body": 3,
+  "sweetness": 2,
+  "flavorTags": [
+   "zacini",
+   "menta",
+   "vanilija",
+   "papar"
+  ],
+  "qualityScore": 7,
+  "priceEUR": {
+   "min": 30,
+   "max": 38
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / koktel"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "95% raži — mentol-začinska svježina.",
+   "en": "95% rye — menthol-spice freshness."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "clean",
+  "additiveDetail": "Bez aditiva (US \"straight\" pravila ne dopustaju dodatke)",
+  "additiveSource": "US regulativa (straight whiskey)"
+ },
+ {
+  "id": "wh-redbreast-12",
+  "category": "whisky",
+  "name": "Redbreast 12",
+  "style": "irish-pot-still",
+  "region": "Irska",
+  "country": "Irska",
+  "abv": 40,
+  "body": 4,
+  "sweetness": 3,
+  "flavorTags": [
+   "suho-voce",
+   "zacini",
+   "med",
+   "orasasti"
+  ],
+  "qualityScore": 8,
+  "priceEUR": {
+   "min": 55,
+   "max": 65
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Single pot still klasik — uljast, voćan, kremast. Izvrstan cigar viski.",
+   "en": "Single pot still classic — oily, fruity, creamy. An excellent cigar whiskey."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a"
+ },
+ {
+  "id": "wh-green-spot",
+  "category": "whisky",
+  "name": "Green Spot",
+  "style": "irish-pot-still",
+  "region": "Irska",
+  "country": "Irska",
+  "abv": 40,
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "voce",
+   "med",
+   "vanilija",
+   "trava-slatka"
+  ],
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 48,
+   "max": 58
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Svjež pot still — zelena jabuka i med, uz blage cigare.",
+   "en": "Fresh pot still — green apple and honey, with mild cigars."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a"
+ },
+ {
+  "id": "wh-connemara-peated",
+  "category": "whisky",
+  "name": "Connemara Peated Single Malt",
+  "style": "irish-single-malt",
+  "region": "Irska",
+  "country": "Irska",
+  "abv": 40,
+  "body": 3,
+  "sweetness": 2,
+  "flavorTags": [
+   "dim",
+   "med",
+   "voce"
+  ],
+  "qualityScore": 7,
+  "priceEUR": {
+   "min": 35,
+   "max": 45
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Rijetki dimljeni irac — nježniji treset od Islaya.",
+   "en": "The rare peated Irish — gentler peat than Islay."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a"
+ },
+ {
+  "id": "wh-yamazaki-12",
+  "category": "whisky",
+  "name": "Yamazaki 12",
+  "style": "japanese",
+  "region": "Japan",
+  "country": "Japan",
+  "abv": 43,
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "voce",
+   "med",
+   "mizunara",
+   "zacini"
+  ],
+  "qualityScore": 8,
+  "priceEUR": {
+   "min": 150,
+   "max": 190
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr (rijetko)",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Japanski original s mizunara notom — kolekcionarska cijena.",
+   "en": "The Japanese original with mizunara notes — collector pricing."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a"
+ },
+ {
+  "id": "wh-kavalan-classic",
+  "category": "whisky",
+  "name": "Kavalan Classic / Concertmaster",
+  "style": "world",
+  "region": "Tajvan",
+  "country": "Tajvan",
+  "abv": 40,
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "tropsko-voce",
+   "med",
+   "vanilija"
+  ],
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 55,
+   "max": 70
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Tropsko odležavanje — mango i med, brzo sazrijevanje na vrućini.",
+   "en": "Tropical maturation — mango and honey, fast-aged in the heat."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a"
+ },
+ {
+  "id": "wh-amrut-fusion",
+  "category": "whisky",
+  "name": "Amrut Fusion",
+  "style": "world",
+  "region": "Indija",
+  "country": "Indija",
+  "abv": 50,
+  "body": 4,
+  "sweetness": 2,
+  "flavorTags": [
+   "voce",
+   "dim",
+   "zacini",
+   "hrast"
+  ],
+  "qualityScore": 8,
+  "priceEUR": {
+   "min": 55,
+   "max": 65
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / kap vode"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Indijski single malt s dimom — intenzivan, tropski ubrzan.",
+   "en": "Indian single malt with smoke — intense, tropically accelerated."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a"
+ },
+ {
+  "id": "wh-glendronach-18",
+  "category": "whisky",
+  "name": "GlenDronach 18 Allardice",
+  "style": "speyside-sherry",
+  "region": "Highlands, Škotska",
+  "country": "Škotska",
+  "abv": 46,
+  "body": 5,
+  "sweetness": 3,
+  "flavorTags": [
+   "tamno-voce",
+   "kakao",
+   "koza",
+   "hrast",
+   "kava"
+  ],
+  "qualityScore": 9,
+  "priceEUR": {
+   "min": 130,
+   "max": 160
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto (snifter)"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Duboki oloroso — special occasion uz najbolju maduro cigaru.",
+   "en": "Deep oloroso — special occasion with your best maduro."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a"
+ },
+ {
+  "id": "wh-glenfarclas-25",
+  "category": "whisky",
+  "name": "Glenfarclas 25",
+  "style": "speyside-sherry",
+  "region": "Speyside, Škotska",
+  "country": "Škotska",
+  "abv": 43,
+  "body": 4,
+  "sweetness": 3,
+  "flavorTags": [
+   "suho-voce",
+   "hrast",
+   "koza",
+   "orasasti"
+  ],
+  "qualityScore": 8.5,
+  "priceEUR": {
+   "min": 150,
+   "max": 190
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Stari sherry po još razumnoj cijeni za godine.",
+   "en": "Old sherry at a still-reasonable price for the age."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "clean",
+  "additiveDetail": "Prirodna boja, bez dosladjivanja (deklaracija destilerije)",
+  "additiveSource": "Deklaracija destilerije"
+ },
+ {
+  "id": "wh-tamdhu-batch-strength",
+  "category": "whisky",
+  "name": "Tamdhu Batch Strength",
+  "style": "speyside-sherry",
+  "region": "Speyside, Škotska",
+  "country": "Škotska",
+  "abv": 57,
+  "body": 5,
+  "sweetness": 3,
+  "flavorTags": [
+   "suho-voce",
+   "kakao",
+   "zacini",
+   "overproof"
+  ],
+  "qualityScore": 8.5,
+  "priceEUR": {
+   "min": 75,
+   "max": 90
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Kap vode"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Sherry bomba na batch strengthu — konkurencija A'bunadhu.",
+   "en": "Batch-strength sherry bomb — rivals A'bunadh."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "clean",
+  "additiveDetail": "Prirodna boja, bez dosladjivanja (deklaracija destilerije)",
+  "additiveSource": "Deklaracija destilerije"
+ },
+ {
+  "id": "wh-glenfiddich-18",
+  "category": "whisky",
+  "name": "Glenfiddich 18",
+  "style": "speyside-fruity",
+  "region": "Speyside, Škotska",
+  "country": "Škotska",
+  "abv": 40,
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "voce",
+   "hrast",
+   "med",
+   "orasasti"
+  ],
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 85,
+   "max": 100
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Pouzdan stariji Speyside — pečena jabuka i hrast.",
+   "en": "Dependable older Speyside — baked apple and oak."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a"
+ },
+ {
+  "id": "wh-edradour-10",
+  "category": "whisky",
+  "name": "Edradour 10",
+  "style": "highland",
+  "region": "Highlands, Škotska",
+  "country": "Škotska",
+  "abv": 40,
+  "body": 4,
+  "sweetness": 3,
+  "flavorTags": [
+   "suho-voce",
+   "med",
+   "orasasti",
+   "vino"
+  ],
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 48,
+   "max": 58
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Najmanja škotska destilerija — bogat, staromodan stil.",
+   "en": "Scotland's smallest distillery — rich, old-fashioned style."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a"
+ },
+ {
+  "id": "wh-deanston-12",
+  "category": "whisky",
+  "name": "Deanston 12",
+  "style": "highland",
+  "region": "Highlands, Škotska",
+  "country": "Škotska",
+  "abv": 46.3,
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "med",
+   "vanilija",
+   "citrus",
+   "psenica"
+  ],
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 45,
+   "max": 55
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Medeno-voskast Highland — potcijenjen value.",
+   "en": "Honeyed, waxy Highland — underrated value."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a"
+ },
+ {
+  "id": "wh-ardbeg-corryvreckan",
+  "category": "whisky",
+  "name": "Ardbeg Corryvreckan",
+  "style": "islay-peated",
+  "region": "Islay, Škotska",
+  "country": "Škotska",
+  "abv": 57.1,
+  "body": 5,
+  "sweetness": 2,
+  "flavorTags": [
+   "dim",
+   "papar",
+   "tamno-voce",
+   "overproof",
+   "mineralno"
+  ],
+  "qualityScore": 8.5,
+  "priceEUR": {
+   "min": 95,
+   "max": 110
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Kap vode"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Vrtlog dima i papra — samo za najjače cigare.",
+   "en": "A whirlpool of smoke and pepper — only for the strongest cigars."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "clean",
+  "additiveDetail": "Prirodna boja, bez dosladjivanja (deklaracija destilerije)",
+  "additiveSource": "Deklaracija destilerije"
+ },
+ {
+  "id": "wh-laphroaig-lore",
+  "category": "whisky",
+  "name": "Laphroaig Lore",
+  "style": "islay-peated",
+  "region": "Islay, Škotska",
+  "country": "Škotska",
+  "abv": 48,
+  "body": 5,
+  "sweetness": 2,
+  "flavorTags": [
+   "dim",
+   "jod",
+   "suho-voce",
+   "koza"
+  ],
+  "qualityScore": 8,
+  "priceEUR": {
+   "min": 90,
+   "max": 110
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / kap vode"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "'Najbogatiji Laphroaig' — dim + sherry dubina.",
+   "en": "'The richest Laphroaig' — smoke + sherry depth."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a"
+ },
+ {
+  "id": "wh-octomore",
+  "category": "whisky",
+  "name": "Octomore (Bruichladdich)",
+  "style": "islay-peated",
+  "region": "Islay, Škotska",
+  "country": "Škotska",
+  "abv": 57,
+  "body": 5,
+  "sweetness": 2,
+  "flavorTags": [
+   "dim",
+   "overproof",
+   "citrus",
+   "mineralno"
+  ],
+  "qualityScore": 8.5,
+  "priceEUR": {
+   "min": 170,
+   "max": 220
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr (rijetko)",
+  "pairable": true,
+  "serving": {
+   "best": "Kap vode"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Najtresetniji viski na svijetu — ekstremni eksperiment.",
+   "en": "The peatiest whisky on earth — the extreme experiment."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "clean",
+  "additiveDetail": "Prirodna boja, bez dosladjivanja (deklaracija destilerije)",
+  "additiveSource": "Deklaracija destilerije"
+ },
+ {
+  "id": "wh-bunnahabhain-18",
+  "category": "whisky",
+  "name": "Bunnahabhain 18",
+  "style": "island",
+  "region": "Islay, Škotska",
+  "country": "Škotska",
+  "abv": 46.3,
+  "body": 4,
+  "sweetness": 3,
+  "flavorTags": [
+   "suho-voce",
+   "karamela",
+   "orasasti",
+   "mineralno"
+  ],
+  "qualityScore": 8.5,
+  "priceEUR": {
+   "min": 130,
+   "max": 160
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Zreli nedimljeni Islay — sherry elegancija uz more.",
+   "en": "Mature unpeated Islay — sherry elegance by the sea."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a"
+ },
+ {
+  "id": "wh-kilkerran-12",
+  "category": "whisky",
+  "name": "Kilkerran 12 (Glengyle)",
+  "style": "campbeltown",
+  "region": "Campbeltown, Škotska",
+  "country": "Škotska",
+  "abv": 46,
+  "body": 4,
+  "sweetness": 2,
+  "flavorTags": [
+   "dim",
+   "citrus",
+   "med",
+   "mineralno"
+  ],
+  "qualityScore": 8.5,
+  "priceEUR": {
+   "min": 60,
+   "max": 80
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr (rijetko)",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Springbank sestra — funky obalni stil, teško uloviti.",
+   "en": "Springbank's sibling — funky coastal style, hard to catch."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "clean",
+  "additiveDetail": "Prirodna boja, bez dosladjivanja (deklaracija destilerije)",
+  "additiveSource": "Deklaracija destilerije"
+ },
+ {
+  "id": "wh-bookers",
+  "category": "whisky",
+  "name": "Booker's Small Batch",
+  "style": "bourbon",
+  "region": "Kentucky, SAD",
+  "country": "SAD",
+  "abv": 63,
+  "body": 5,
+  "sweetness": 3,
+  "flavorTags": [
+   "karamela",
+   "hrast",
+   "overproof",
+   "vanilija",
+   "orasasti"
+  ],
+  "qualityScore": 8,
+  "priceEUR": {
+   "min": 80,
+   "max": 95
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Kap vode"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Nefiltriran barrel proof — bourbon u najsirovijem izdanju.",
+   "en": "Unfiltered barrel proof — bourbon at its rawest."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "clean",
+  "additiveDetail": "Bez aditiva (US \"straight\" pravila ne dopustaju dodatke)",
+  "additiveSource": "US regulativa (straight whiskey)"
+ },
+ {
+  "id": "wh-stagg-jr",
+  "category": "whisky",
+  "name": "Stagg (Jr.)",
+  "style": "bourbon",
+  "region": "Kentucky, SAD",
+  "country": "SAD",
+  "abv": 64,
+  "body": 5,
+  "sweetness": 3,
+  "flavorTags": [
+   "karamela",
+   "kakao",
+   "overproof",
+   "hrast",
+   "tamno-voce"
+  ],
+  "qualityScore": 8.5,
+  "priceEUR": {
+   "min": 90,
+   "max": 120
+  },
+  "priceApprox": true,
+  "shopHR": "specijalist/rijetko",
+  "pairable": true,
+  "serving": {
+   "best": "Kap vode"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Buffalo Trace čekić — čokolada i višnja na 64%.",
+   "en": "The Buffalo Trace hammer — chocolate and cherry at 64%."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "clean",
+  "additiveDetail": "Bez aditiva (US \"straight\" pravila ne dopustaju dodatke)",
+  "additiveSource": "US regulativa (straight whiskey)"
+ },
+ {
+  "id": "wh-old-forester-1920",
+  "category": "whisky",
+  "name": "Old Forester 1920 Prohibition Style",
+  "style": "bourbon",
+  "region": "Kentucky, SAD",
+  "country": "SAD",
+  "abv": 57.5,
+  "body": 5,
+  "sweetness": 3,
+  "flavorTags": [
+   "karamela",
+   "kakao",
+   "zacini",
+   "hrast"
+  ],
+  "qualityScore": 8,
+  "priceEUR": {
+   "min": 60,
+   "max": 75
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / kap vode"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Gusti, tamni bourbon — omiljen u cigar zajednici.",
+   "en": "Dense dark bourbon — a cigar-community favourite."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "clean",
+  "additiveDetail": "Bez aditiva (US \"straight\" pravila ne dopustaju dodatke)",
+  "additiveSource": "US regulativa (straight whiskey)"
+ },
+ {
+  "id": "wh-sazerac-rye",
+  "category": "whisky",
+  "name": "Sazerac Rye",
+  "style": "rye",
+  "region": "Kentucky, SAD",
+  "country": "SAD",
+  "abv": 45,
+  "body": 3,
+  "sweetness": 2,
+  "flavorTags": [
+   "zacini",
+   "citrus",
+   "karamela",
+   "papar"
+  ],
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 40,
+   "max": 50
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / Sazerac koktel"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "New Orleans klasik — začinski, elegantan rye.",
+   "en": "The New Orleans classic — spicy, elegant rye."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "clean",
+  "additiveDetail": "Bez aditiva (US \"straight\" pravila ne dopustaju dodatke)",
+  "additiveSource": "US regulativa (straight whiskey)"
+ },
+ {
+  "id": "wh-whistlepig-10",
+  "category": "whisky",
+  "name": "WhistlePig 10 Rye",
+  "style": "rye",
+  "region": "Vermont, SAD",
+  "country": "SAD",
+  "abv": 50,
+  "body": 4,
+  "sweetness": 2,
+  "flavorTags": [
+   "zacini",
+   "menta",
+   "karamela",
+   "hrast"
+  ],
+  "qualityScore": 8,
+  "priceEUR": {
+   "min": 80,
+   "max": 95
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Premium rye — 100% raž, zrela i moćna.",
+   "en": "Premium rye — 100% rye grain, mature and mighty."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "clean",
+  "additiveDetail": "Bez aditiva (US \"straight\" pravila ne dopustaju dodatke)",
+  "additiveSource": "US regulativa (straight whiskey)"
+ },
+ {
+  "id": "wh-redbreast-lustau",
+  "category": "whisky",
+  "name": "Redbreast Lustau Edition",
+  "style": "irish-pot-still",
+  "region": "Irska",
+  "country": "Irska",
+  "abv": 46,
+  "body": 4,
+  "sweetness": 3,
+  "flavorTags": [
+   "suho-voce",
+   "orasasti",
+   "vino",
+   "zacini"
+  ],
+  "qualityScore": 8,
+  "priceEUR": {
+   "min": 65,
+   "max": 80
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Finish u Lustau sherry bačvama — pot still + Jerez.",
+   "en": "Finished in Lustau sherry butts — pot still meets Jerez."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a"
+ },
+ {
+  "id": "wh-writers-tears",
+  "category": "whisky",
+  "name": "Writers' Tears Copper Pot",
+  "style": "irish-blend",
+  "region": "Irska",
+  "country": "Irska",
+  "abv": 40,
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "med",
+   "voce",
+   "vanilija"
+  ],
+  "qualityScore": 7,
+  "priceEUR": {
+   "min": 35,
+   "max": 45
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Mekani irski blend s pot still udjelom — svileno uz blage cigare.",
+   "en": "Soft Irish blend with pot-still content — silky with mild cigars."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a"
+ },
+ {
+  "id": "wh-hakushu-12",
+  "category": "whisky",
+  "name": "Hakushu 12",
+  "style": "japanese",
+  "region": "Japan",
+  "country": "Japan",
+  "abv": 43,
+  "body": 3,
+  "sweetness": 2,
+  "flavorTags": [
+   "trava-slatka",
+   "dim",
+   "citrus",
+   "voce"
+  ],
+  "qualityScore": 8,
+  "priceEUR": {
+   "min": 140,
+   "max": 180
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr (rijetko)",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / highball"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Šumski, svjež, lagano dimljen — japanski kontrast cigari.",
+   "en": "Forest-fresh, lightly smoky — the Japanese contrast to a cigar."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a"
+ },
+ {
+  "id": "wh-paul-john-brilliance",
+  "category": "whisky",
+  "name": "Paul John Brilliance / Bold",
+  "style": "world",
+  "region": "Goa, Indija",
+  "country": "Indija",
+  "abv": 46,
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "med",
+   "voce",
+   "zacini",
+   "dim"
+  ],
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 45,
+   "max": 60
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Indijski single malt — medeni (Brilliance) ili dimni (Bold).",
+   "en": "Indian single malt — honeyed (Brilliance) or smoky (Bold)."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a"
+ },
+ {
+  "id": "wh-starward-nova",
+  "category": "whisky",
+  "name": "Starward Nova",
+  "style": "world",
+  "region": "Melbourne, Australija",
+  "country": "Australija",
+  "abv": 41,
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "vino",
+   "voce",
+   "karamela"
+  ],
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 50,
+   "max": 60
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Odležan u bačvama crnog vina — voćno-vinski australski stil.",
+   "en": "Aged in red-wine barrels — fruity, vinous Australian style."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a"
+ },
+ {
+  "id": "wh-penderyn-madeira",
+  "category": "whisky",
+  "name": "Penderyn Madeira",
+  "style": "world",
+  "region": "Wales",
+  "country": "Wales",
+  "abv": 46,
+  "body": 2,
+  "sweetness": 3,
+  "flavorTags": [
+   "voce",
+   "med",
+   "vanilija"
+  ],
+  "qualityScore": 7,
+  "priceEUR": {
+   "min": 45,
+   "max": 55
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "pairable": true,
+  "serving": {
+   "best": "Cisto"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Velški malt s madeira finishem — lagan, zlatan, uz blagu cigaru.",
+   "en": "Welsh malt with a Madeira finish — light, golden, for a mild cigar."
+  },
+  "status": null,
+  "priceUrl": null,
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a"
+ },
+ {
+  "id": "wh-starward-ginger-beer-cask",
+  "category": "whisky",
+  "name": "Starward Ginger Beer Cask",
+  "style": "world",
+  "region": "Melbourne, Australija",
+  "abv": 48.0,
+  "body": 3,
+  "sweetness": 2,
+  "flavorTags": [
+   "zacini",
+   "voce",
+   "vanilija"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": "Pravi single malt — dozrijevan u ginger beer bacvama, nista dodano",
+  "additiveSource": "Deklaracija destilerije (cask finish, ne aroma)",
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 55.0,
+   "max": 70.0
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / kap vode"
+  },
+  "cigarHint": "Srednja cigara, zacinska",
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/starward-ginger-beer-cask-single-malt-australian-whisky-48-vol-05l",
+  "notes": {
+   "hr": "Australski single malt dovršen u bačvama od ginger beera (48%, 0,5 l) — začin đumbira iz bačve, ne iz arome. Limitirano izdanje.",
+   "en": "Australian single malt finished in ginger beer casks (48%, 0.5 l) — the ginger spice comes from the cask, not flavouring. Limited release."
+  }
+ },
+ {
+  "id": "wh-edradour-cream-liqueur",
+  "category": "whisky",
+  "name": "Edradour Cream Liqueur",
+  "style": "liqueur",
+  "region": "Highland, Skotska (liker)",
+  "abv": 17.0,
+  "body": 2,
+  "sweetness": 5,
+  "flavorTags": [
+   "kremasto",
+   "slatko",
+   "med"
+  ],
+  "additiveStatus": "flavored",
+  "additiveDetail": "Krem liker: vrhnje, secer i arome na bazi Edradour single malta (17%)",
+  "additiveSource": "Etiketa: liker",
+  "qualityScore": 6.0,
+  "priceEUR": {
+   "min": 25.0,
+   "max": 35.0
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / on the rocks"
+  },
+  "cigarHint": null,
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/edradour-cream-liqueur-17-vol-07l",
+  "notes": {
+   "hr": "Krem liker male Highland destilerije — desertni stil poput irish creama, na bazi single malta. Po EU pravilima liker, ne whisky.",
+   "en": "A cream liqueur from the small Highland distillery — Irish-cream-style dessert profile on a single malt base. Legally a liqueur, not whisky, under EU rules."
+  }
  }
 ]
