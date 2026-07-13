@@ -8,16 +8,26 @@
   "abv": 20.0,
   "body": 3,
   "sweetness": 4,
-  "flavorTags": ["orasasti", "karamela", "suho-voce", "med"],
+  "flavorTags": [
+   "orasasti",
+   "karamela",
+   "suho-voce",
+   "med"
+  ],
   "additiveStatus": "fortified",
   "additiveDetail": "Fortificirano vinskim destilatom (77%); slatkoca iz zaustavljene fermentacije",
   "additiveSource": "Standard kategorije porto",
   "qualityScore": 8.0,
-  "priceEUR": { "min": 36.3, "max": 36.3 },
+  "priceEUR": {
+   "min": 36.3,
+   "max": 36.3
+  },
   "shopHR": "Vivat fina vina",
   "status": null,
   "pairable": true,
-  "serving": { "best": "Casa za porto, 14-16 C" },
+  "serving": {
+   "best": "Casa za porto, 14-16 C"
+  },
   "cigarHint": "Srednja cigara, Habano ili blazi maduro",
   "priceUrl": "https://www.vivat-finavina.hr/vrsta/port/",
   "notes": {
@@ -34,16 +44,26 @@
   "abv": 20.0,
   "body": 4,
   "sweetness": 4,
-  "flavorTags": ["orasasti", "karamela", "suho-voce", "hrast"],
+  "flavorTags": [
+   "orasasti",
+   "karamela",
+   "suho-voce",
+   "hrast"
+  ],
   "additiveStatus": "fortified",
   "additiveDetail": "Fortificirano vinskim destilatom; slatkoca iz zaustavljene fermentacije",
   "additiveSource": "Standard kategorije porto",
   "qualityScore": 8.5,
-  "priceEUR": { "min": 63.9, "max": 63.9 },
+  "priceEUR": {
+   "min": 63.9,
+   "max": 63.9
+  },
   "shopHR": "Vivat fina vina",
   "status": null,
   "pairable": true,
-  "serving": { "best": "Casa za porto, 14-16 C" },
+  "serving": {
+   "best": "Casa za porto, 14-16 C"
+  },
   "cigarHint": "Srednja-puna cigara, maduro ili Habano",
   "priceUrl": "https://www.vivat-finavina.hr/proizvod/grahams-tawny-port-20-y-o/",
   "notes": {
@@ -60,16 +80,25 @@
   "abv": 20.0,
   "body": 4,
   "sweetness": 4,
-  "flavorTags": ["orasasti", "karamela", "suho-voce"],
+  "flavorTags": [
+   "orasasti",
+   "karamela",
+   "suho-voce"
+  ],
   "additiveStatus": "fortified",
   "additiveDetail": "Fortificirano vinskim destilatom; slatkoca iz zaustavljene fermentacije",
   "additiveSource": "Standard kategorije porto",
   "qualityScore": 8.0,
-  "priceEUR": { "min": 55.79, "max": 55.79 },
+  "priceEUR": {
+   "min": 55.79,
+   "max": 55.79
+  },
   "shopHR": "Roto / Miva",
   "status": null,
   "pairable": true,
-  "serving": { "best": "Casa za porto, 14-16 C" },
+  "serving": {
+   "best": "Casa za porto, 14-16 C"
+  },
   "cigarHint": "Srednja-puna cigara, maduro ili Habano",
   "priceUrl": "https://webshop.rotodinamic.hr/en/sandeman-tawny-20-yo-porto",
   "notes": {
@@ -86,17 +115,26 @@
   "abv": 20.0,
   "body": 4,
   "sweetness": 4,
-  "flavorTags": ["tamno-voce", "kakao", "zacini"],
+  "flavorTags": [
+   "tamno-voce",
+   "kakao",
+   "zacini"
+  ],
   "additiveStatus": "fortified",
   "additiveDetail": "Fortificirano vinskim destilatom; slatkoca iz zaustavljene fermentacije",
   "additiveSource": "Standard kategorije porto",
   "qualityScore": 7.5,
-  "priceEUR": { "min": 20.0, "max": 28.0 },
+  "priceEUR": {
+   "min": 20.0,
+   "max": 28.0
+  },
   "priceApprox": true,
   "shopHR": "Miva / Vrutak / vinoteke",
   "status": null,
   "pairable": true,
-  "serving": { "best": "Casa za porto, 14-16 C" },
+  "serving": {
+   "best": "Casa za porto, 14-16 C"
+  },
   "cigarHint": "Puna maduro cigara — klasika",
   "priceUrl": null,
   "notes": {
@@ -113,17 +151,26 @@
   "abv": 20.0,
   "body": 4,
   "sweetness": 4,
-  "flavorTags": ["tamno-voce", "kakao", "slatko"],
+  "flavorTags": [
+   "tamno-voce",
+   "kakao",
+   "slatko"
+  ],
   "additiveStatus": "fortified",
   "additiveDetail": "Fortificirano vinskim destilatom; slatkoca iz zaustavljene fermentacije",
   "additiveSource": "Standard kategorije porto",
   "qualityScore": 7.5,
-  "priceEUR": { "min": 18.0, "max": 24.0 },
+  "priceEUR": {
+   "min": 18.0,
+   "max": 24.0
+  },
   "priceApprox": true,
   "shopHR": "Vrutak",
   "status": null,
   "pairable": true,
-  "serving": { "best": "Casa za porto, 14-16 C" },
+  "serving": {
+   "best": "Casa za porto, 14-16 C"
+  },
   "cigarHint": "Puna maduro cigara",
   "priceUrl": "https://www.vrutak.hr/fonseca-porto",
   "notes": {
@@ -140,17 +187,26 @@
   "abv": 20.0,
   "body": 4,
   "sweetness": 4,
-  "flavorTags": ["tamno-voce", "kakao", "zacini"],
+  "flavorTags": [
+   "tamno-voce",
+   "kakao",
+   "zacini"
+  ],
   "additiveStatus": "fortified",
   "additiveDetail": "Fortificirano vinskim destilatom; slatkoca iz zaustavljene fermentacije",
   "additiveSource": "Standard kategorije porto",
   "qualityScore": 7.5,
-  "priceEUR": { "min": 20.0, "max": 27.0 },
+  "priceEUR": {
+   "min": 20.0,
+   "max": 27.0
+  },
   "priceApprox": true,
   "shopHR": "Vivat fina vina / vinoteke",
   "status": null,
   "pairable": true,
-  "serving": { "best": "Casa za porto, 14-16 C" },
+  "serving": {
+   "best": "Casa za porto, 14-16 C"
+  },
   "cigarHint": "Puna maduro cigara",
   "priceUrl": "https://www.vivat-finavina.hr/vrsta/port/",
   "notes": {
@@ -167,17 +223,27 @@
   "abv": 20.0,
   "body": 5,
   "sweetness": 4,
-  "flavorTags": ["tamno-voce", "kakao", "zacini", "hrast"],
+  "flavorTags": [
+   "tamno-voce",
+   "kakao",
+   "zacini",
+   "hrast"
+  ],
   "additiveStatus": "fortified",
   "additiveDetail": "Fortificirano vinskim destilatom; slatkoca iz zaustavljene fermentacije",
   "additiveSource": "Standard kategorije porto",
   "qualityScore": 9.0,
-  "priceEUR": { "min": 90.0, "max": 180.0 },
+  "priceEUR": {
+   "min": 90.0,
+   "max": 180.0
+  },
   "priceApprox": true,
   "shopHR": "Vinoteke (Acrobat, Vivat) — po godistu",
   "status": null,
   "pairable": true,
-  "serving": { "best": "Casa za porto, 14-16 C" },
+  "serving": {
+   "best": "Casa za porto, 14-16 C"
+  },
   "cigarHint": "Najpunije cigare — maduro/oscuro",
   "priceUrl": null,
   "notes": {
@@ -194,17 +260,26 @@
   "abv": 15.0,
   "body": 2,
   "sweetness": 1,
-  "flavorTags": ["mineralno", "citrus", "orasasti"],
+  "flavorTags": [
+   "mineralno",
+   "citrus",
+   "orasasti"
+  ],
   "additiveStatus": "fortified",
   "additiveDetail": "Fortificirano vinskim destilatom; potpuno suho",
   "additiveSource": "Standard kategorije sherry",
   "qualityScore": 7.5,
-  "priceEUR": { "min": 13.0, "max": 18.0 },
+  "priceEUR": {
+   "min": 13.0,
+   "max": 18.0
+  },
   "priceApprox": true,
   "shopHR": "Miva / vinoteke",
   "status": null,
   "pairable": true,
-  "serving": { "best": "Dobro ohladjeno, 6-8 C" },
+  "serving": {
+   "best": "Dobro ohladjeno, 6-8 C"
+  },
   "cigarHint": "Blaga Connecticut cigara",
   "priceUrl": null,
   "notes": {
@@ -221,17 +296,26 @@
   "abv": 18.5,
   "body": 3,
   "sweetness": 2,
-  "flavorTags": ["orasasti", "hrast", "suho-voce"],
+  "flavorTags": [
+   "orasasti",
+   "hrast",
+   "suho-voce"
+  ],
   "additiveStatus": "fortified",
   "additiveDetail": "Fortificirano vinskim destilatom; suho",
   "additiveSource": "Standard kategorije sherry",
   "qualityScore": 8.0,
-  "priceEUR": { "min": 18.0, "max": 25.0 },
+  "priceEUR": {
+   "min": 18.0,
+   "max": 25.0
+  },
   "priceApprox": true,
   "shopHR": "Vinoteke / Miva",
   "status": null,
   "pairable": true,
-  "serving": { "best": "Casa za sherry, 12-14 C" },
+  "serving": {
+   "best": "Casa za sherry, 12-14 C"
+  },
   "cigarHint": "Srednja Habano cigara",
   "priceUrl": null,
   "notes": {
@@ -248,17 +332,27 @@
   "abv": 20.0,
   "body": 4,
   "sweetness": 2,
-  "flavorTags": ["orasasti", "hrast", "suho-voce", "koza"],
+  "flavorTags": [
+   "orasasti",
+   "hrast",
+   "suho-voce",
+   "koza"
+  ],
   "additiveStatus": "fortified",
   "additiveDetail": "Fortificirano vinskim destilatom; suho",
   "additiveSource": "Standard kategorije sherry",
   "qualityScore": 8.0,
-  "priceEUR": { "min": 20.0, "max": 28.0 },
+  "priceEUR": {
+   "min": 20.0,
+   "max": 28.0
+  },
   "priceApprox": true,
   "shopHR": "Vinoteke / Miva",
   "status": null,
   "pairable": true,
-  "serving": { "best": "Casa za sherry, 12-14 C" },
+  "serving": {
+   "best": "Casa za sherry, 12-14 C"
+  },
   "cigarHint": "Puna Habano/maduro cigara",
   "priceUrl": null,
   "notes": {
@@ -275,17 +369,27 @@
   "abv": 17.0,
   "body": 5,
   "sweetness": 5,
-  "flavorTags": ["suho-voce", "melasa", "kava", "slatko"],
+  "flavorTags": [
+   "suho-voce",
+   "melasa",
+   "kava",
+   "slatko"
+  ],
   "additiveStatus": "fortified",
   "additiveDetail": "Fortificirano; slatkoca iz prosusenog grozdja (PX)",
   "additiveSource": "Standard kategorije sherry",
   "qualityScore": 8.5,
-  "priceEUR": { "min": 22.0, "max": 30.0 },
+  "priceEUR": {
+   "min": 22.0,
+   "max": 30.0
+  },
   "priceApprox": true,
   "shopHR": "Vinoteke / Miva",
   "status": null,
   "pairable": true,
-  "serving": { "best": "Casa za sherry, 12-14 C" },
+  "serving": {
+   "best": "Casa za sherry, 12-14 C"
+  },
   "cigarHint": "Najpunije maduro/oscuro cigare",
   "priceUrl": null,
   "notes": {
@@ -302,17 +406,27 @@
   "abv": 19.0,
   "body": 4,
   "sweetness": 4,
-  "flavorTags": ["karamela", "suho-voce", "orasasti", "citrus"],
+  "flavorTags": [
+   "karamela",
+   "suho-voce",
+   "orasasti",
+   "citrus"
+  ],
   "additiveStatus": "fortified",
   "additiveDetail": "Fortificirano vinskim destilatom; slatkoca ovisi o sorti (Bual/Malmsey)",
   "additiveSource": "Standard kategorije madeira",
   "qualityScore": 8.0,
-  "priceEUR": { "min": 30.0, "max": 40.0 },
+  "priceEUR": {
+   "min": 30.0,
+   "max": 40.0
+  },
   "priceApprox": true,
   "shopHR": "Vinoteke",
   "status": null,
   "pairable": true,
-  "serving": { "best": "Casa za porto, 14-16 C" },
+  "serving": {
+   "best": "Casa za porto, 14-16 C"
+  },
   "cigarHint": "Srednja-puna cigara",
   "priceUrl": null,
   "notes": {
@@ -329,17 +443,27 @@
   "abv": 15.0,
   "body": 4,
   "sweetness": 5,
-  "flavorTags": ["suho-voce", "med", "karamela", "slatko"],
+  "flavorTags": [
+   "suho-voce",
+   "med",
+   "karamela",
+   "slatko"
+  ],
   "additiveStatus": "clean",
   "additiveDetail": "Prirodna slatkoca iz prosusenog grozdja (passito), bez fortifikacije",
   "additiveSource": "Tradicionalna metoda",
   "qualityScore": 7.5,
-  "priceEUR": { "min": 18.0, "max": 35.0 },
+  "priceEUR": {
+   "min": 18.0,
+   "max": 35.0
+  },
   "priceApprox": true,
   "shopHR": "Vinoteke / OPG (Hvar, Pelješac)",
   "status": null,
   "pairable": true,
-  "serving": { "best": "Mala casa, 10-12 C" },
+  "serving": {
+   "best": "Mala casa, 10-12 C"
+  },
   "cigarHint": "Srednja-puna maduro cigara",
   "priceUrl": null,
   "notes": {
@@ -356,16 +480,26 @@
   "abv": 14.5,
   "body": 5,
   "sweetness": 2,
-  "flavorTags": ["tamno-voce", "suho-voce", "zacini", "zemljano"],
+  "flavorTags": [
+   "tamno-voce",
+   "suho-voce",
+   "zacini",
+   "zemljano"
+  ],
   "additiveStatus": "clean",
   "additiveDetail": "Standardno vinarstvo (sulfiti)",
   "additiveSource": "Standard kategorije vino",
   "qualityScore": 8.5,
-  "priceEUR": { "min": 29.0, "max": 52.0 },
+  "priceEUR": {
+   "min": 29.0,
+   "max": 52.0
+  },
   "shopHR": "Madirazza webshop / Konzum / vinoteke",
   "status": null,
   "pairable": true,
-  "serving": { "best": "Velika casa, 16-18 C" },
+  "serving": {
+   "best": "Velika casa, 16-18 C"
+  },
   "cigarHint": "Puna Habano/maduro cigara",
   "priceUrl": "https://dingac.hr/webshop/",
   "notes": {
@@ -382,17 +516,26 @@
   "abv": 13.5,
   "body": 4,
   "sweetness": 2,
-  "flavorTags": ["tamno-voce", "zacini", "zemljano"],
+  "flavorTags": [
+   "tamno-voce",
+   "zacini",
+   "zemljano"
+  ],
   "additiveStatus": "clean",
   "additiveDetail": "Standardno vinarstvo (sulfiti)",
   "additiveSource": "Standard kategorije vino",
   "qualityScore": 7.5,
-  "priceEUR": { "min": 10.0, "max": 20.0 },
+  "priceEUR": {
+   "min": 10.0,
+   "max": 20.0
+  },
   "priceApprox": true,
   "shopHR": "Konzum / vinoteke",
   "status": null,
   "pairable": true,
-  "serving": { "best": "Velika casa, 16-18 C" },
+  "serving": {
+   "best": "Velika casa, 16-18 C"
+  },
   "cigarHint": "Srednja-puna cigara",
   "priceUrl": null,
   "notes": {
@@ -409,17 +552,26 @@
   "abv": 14.0,
   "body": 4,
   "sweetness": 2,
-  "flavorTags": ["tamno-voce", "suho-voce", "zacini"],
+  "flavorTags": [
+   "tamno-voce",
+   "suho-voce",
+   "zacini"
+  ],
   "additiveStatus": "clean",
   "additiveDetail": "Standardno vinarstvo (sulfiti)",
   "additiveSource": "Standard kategorije vino",
   "qualityScore": 8.0,
-  "priceEUR": { "min": 18.0, "max": 35.0 },
+  "priceEUR": {
+   "min": 18.0,
+   "max": 35.0
+  },
   "priceApprox": true,
   "shopHR": "Vinoteke / Konzum",
   "status": null,
   "pairable": true,
-  "serving": { "best": "Velika casa, 16-18 C" },
+  "serving": {
+   "best": "Velika casa, 16-18 C"
+  },
   "cigarHint": "Puna Habano cigara",
   "priceUrl": null,
   "notes": {
@@ -436,17 +588,27 @@
   "abv": 14.0,
   "body": 4,
   "sweetness": 1,
-  "flavorTags": ["tamno-voce", "zemljano", "mineralno", "zacini"],
+  "flavorTags": [
+   "tamno-voce",
+   "zemljano",
+   "mineralno",
+   "zacini"
+  ],
   "additiveStatus": "clean",
   "additiveDetail": "Standardno vinarstvo (sulfiti)",
   "additiveSource": "Standard kategorije vino",
   "qualityScore": 8.0,
-  "priceEUR": { "min": 15.0, "max": 25.0 },
+  "priceEUR": {
+   "min": 15.0,
+   "max": 25.0
+  },
   "priceApprox": true,
   "shopHR": "Vinoteke / Konzum",
   "status": null,
   "pairable": true,
-  "serving": { "best": "Velika casa, 16-18 C" },
+  "serving": {
+   "best": "Velika casa, 16-18 C"
+  },
   "cigarHint": "Puna Habano cigara",
   "priceUrl": null,
   "notes": {
@@ -463,17 +625,26 @@
   "abv": 13.5,
   "body": 3,
   "sweetness": 1,
-  "flavorTags": ["tamno-voce", "zemljano", "mineralno"],
+  "flavorTags": [
+   "tamno-voce",
+   "zemljano",
+   "mineralno"
+  ],
   "additiveStatus": "clean",
   "additiveDetail": "Standardno vinarstvo (sulfiti)",
   "additiveSource": "Standard kategorije vino",
   "qualityScore": 8.0,
-  "priceEUR": { "min": 20.0, "max": 30.0 },
+  "priceEUR": {
+   "min": 20.0,
+   "max": 30.0
+  },
   "priceApprox": true,
   "shopHR": "Vinoteke / Miva",
   "status": null,
   "pairable": true,
-  "serving": { "best": "Velika casa, 16-18 C" },
+  "serving": {
+   "best": "Velika casa, 16-18 C"
+  },
   "cigarHint": "Srednja Habano cigara",
   "priceUrl": null,
   "notes": {
@@ -490,17 +661,27 @@
   "abv": 15.5,
   "body": 5,
   "sweetness": 2,
-  "flavorTags": ["suho-voce", "tamno-voce", "kakao", "zacini"],
+  "flavorTags": [
+   "suho-voce",
+   "tamno-voce",
+   "kakao",
+   "zacini"
+  ],
   "additiveStatus": "clean",
   "additiveDetail": "Standardno vinarstvo (sulfiti); appassimento (prosuseno grozdje)",
   "additiveSource": "Standard kategorije vino",
   "qualityScore": 8.5,
-  "priceEUR": { "min": 45.0, "max": 75.0 },
+  "priceEUR": {
+   "min": 45.0,
+   "max": 75.0
+  },
   "priceApprox": true,
   "shopHR": "Vivat fina vina / Miva / vinoteke",
   "status": null,
   "pairable": true,
-  "serving": { "best": "Velika casa, 16-18 C" },
+  "serving": {
+   "best": "Velika casa, 16-18 C"
+  },
   "cigarHint": "Najpunije cigare — nosi i oscuro",
   "priceUrl": "https://www.vivat-finavina.hr/proizvod/masi-amarone-costasera-della-valpolicella-classico-docg/",
   "notes": {
@@ -517,17 +698,26 @@
   "abv": 13.5,
   "body": 3,
   "sweetness": 2,
-  "flavorTags": ["tamno-voce", "suho-voce", "zacini"],
+  "flavorTags": [
+   "tamno-voce",
+   "suho-voce",
+   "zacini"
+  ],
   "additiveStatus": "clean",
   "additiveDetail": "Standardno vinarstvo (sulfiti)",
   "additiveSource": "Standard kategorije vino",
   "qualityScore": 7.5,
-  "priceEUR": { "min": 18.0, "max": 28.0 },
+  "priceEUR": {
+   "min": 18.0,
+   "max": 28.0
+  },
   "priceApprox": true,
   "shopHR": "Vrutak / Miva",
   "status": null,
   "pairable": true,
-  "serving": { "best": "Velika casa, 16-18 C" },
+  "serving": {
+   "best": "Velika casa, 16-18 C"
+  },
   "cigarHint": "Srednja cigara",
   "priceUrl": "https://www.vrutak.hr/VALPOLICELLA-CLASSICO-CESARI-0-75L-16504",
   "notes": {
@@ -544,17 +734,27 @@
   "abv": 14.0,
   "body": 4,
   "sweetness": 1,
-  "flavorTags": ["cvjetno", "tamno-voce", "koza", "zemljano"],
+  "flavorTags": [
+   "cvjetno",
+   "tamno-voce",
+   "koza",
+   "zemljano"
+  ],
   "additiveStatus": "clean",
   "additiveDetail": "Standardno vinarstvo (sulfiti)",
   "additiveSource": "Standard kategorije vino",
   "qualityScore": 8.5,
-  "priceEUR": { "min": 35.0, "max": 70.0 },
+  "priceEUR": {
+   "min": 35.0,
+   "max": 70.0
+  },
   "priceApprox": true,
   "shopHR": "Vivat fina vina / vinoteke",
   "status": null,
   "pairable": true,
-  "serving": { "best": "Velika casa, 16-18 C" },
+  "serving": {
+   "best": "Velika casa, 16-18 C"
+  },
   "cigarHint": "Srednja-puna Habano cigara",
   "priceUrl": null,
   "notes": {
@@ -571,17 +771,27 @@
   "abv": 14.0,
   "body": 4,
   "sweetness": 1,
-  "flavorTags": ["tamno-voce", "koza", "zemljano", "hrast"],
+  "flavorTags": [
+   "tamno-voce",
+   "koza",
+   "zemljano",
+   "hrast"
+  ],
   "additiveStatus": "clean",
   "additiveDetail": "Standardno vinarstvo (sulfiti)",
   "additiveSource": "Standard kategorije vino",
   "qualityScore": 8.5,
-  "priceEUR": { "min": 45.0, "max": 90.0 },
+  "priceEUR": {
+   "min": 45.0,
+   "max": 90.0
+  },
   "priceApprox": true,
   "shopHR": "Vinoteke",
   "status": null,
   "pairable": true,
-  "serving": { "best": "Velika casa, 16-18 C" },
+  "serving": {
+   "best": "Velika casa, 16-18 C"
+  },
   "cigarHint": "Srednja-puna Habano cigara",
   "priceUrl": null,
   "notes": {
@@ -598,17 +808,27 @@
   "abv": 13.5,
   "body": 4,
   "sweetness": 1,
-  "flavorTags": ["suho-voce", "vanilija", "koza", "hrast"],
+  "flavorTags": [
+   "suho-voce",
+   "vanilija",
+   "koza",
+   "hrast"
+  ],
   "additiveStatus": "clean",
   "additiveDetail": "Standardno vinarstvo (sulfiti)",
   "additiveSource": "Standard kategorije vino",
   "qualityScore": 8.0,
-  "priceEUR": { "min": 25.0, "max": 40.0 },
+  "priceEUR": {
+   "min": 25.0,
+   "max": 40.0
+  },
   "priceApprox": true,
   "shopHR": "Miva / Vrutak / vinoteke",
   "status": null,
   "pairable": true,
-  "serving": { "best": "Velika casa, 16-18 C" },
+  "serving": {
+   "best": "Velika casa, 16-18 C"
+  },
   "cigarHint": "Srednja-puna cigara, Habano",
   "priceUrl": null,
   "notes": {
@@ -625,17 +845,27 @@
   "abv": 14.5,
   "body": 5,
   "sweetness": 3,
-  "flavorTags": ["tamno-voce", "suho-voce", "vanilija", "kakao"],
+  "flavorTags": [
+   "tamno-voce",
+   "suho-voce",
+   "vanilija",
+   "kakao"
+  ],
   "additiveStatus": "clean",
   "additiveDetail": "Standardno vinarstvo (sulfiti); zaostali secer daje mekocu",
   "additiveSource": "Standard kategorije vino",
   "qualityScore": 8.0,
-  "priceEUR": { "min": 22.0, "max": 30.0 },
+  "priceEUR": {
+   "min": 22.0,
+   "max": 30.0
+  },
   "priceApprox": true,
   "shopHR": "Miva / Vrutak",
   "status": null,
   "pairable": true,
-  "serving": { "best": "Velika casa, 16-18 C" },
+  "serving": {
+   "best": "Velika casa, 16-18 C"
+  },
   "cigarHint": "Puna maduro cigara — sladak kontrast",
   "priceUrl": null,
   "notes": {
@@ -652,17 +882,26 @@
   "abv": 14.5,
   "body": 4,
   "sweetness": 2,
-  "flavorTags": ["tamno-voce", "zacini", "vanilija"],
+  "flavorTags": [
+   "tamno-voce",
+   "zacini",
+   "vanilija"
+  ],
   "additiveStatus": "clean",
   "additiveDetail": "Standardno vinarstvo (sulfiti)",
   "additiveSource": "Standard kategorije vino",
   "qualityScore": 7.5,
-  "priceEUR": { "min": 18.0, "max": 30.0 },
+  "priceEUR": {
+   "min": 18.0,
+   "max": 30.0
+  },
   "priceApprox": true,
   "shopHR": "Vinoteke",
   "status": null,
   "pairable": true,
-  "serving": { "best": "Velika casa, 16-18 C" },
+  "serving": {
+   "best": "Velika casa, 16-18 C"
+  },
   "cigarHint": "Srednja-puna cigara",
   "priceUrl": null,
   "notes": {
@@ -679,17 +918,27 @@
   "abv": 14.0,
   "body": 4,
   "sweetness": 1,
-  "flavorTags": ["tamno-voce", "cedar", "hrast", "zacini"],
+  "flavorTags": [
+   "tamno-voce",
+   "cedar",
+   "hrast",
+   "zacini"
+  ],
   "additiveStatus": "clean",
   "additiveDetail": "Standardno vinarstvo (sulfiti)",
   "additiveSource": "Standard kategorije vino",
   "qualityScore": 7.5,
-  "priceEUR": { "min": 15.0, "max": 35.0 },
+  "priceEUR": {
+   "min": 15.0,
+   "max": 35.0
+  },
   "priceApprox": true,
   "shopHR": "Siroka dostupnost",
   "status": null,
   "pairable": true,
-  "serving": { "best": "Velika casa, 16-18 C" },
+  "serving": {
+   "best": "Velika casa, 16-18 C"
+  },
   "cigarHint": "Puna cigara, cedar note",
   "priceUrl": null,
   "notes": {
@@ -706,17 +955,26 @@
   "abv": 14.0,
   "body": 4,
   "sweetness": 2,
-  "flavorTags": ["tamno-voce", "vanilija", "kakao"],
+  "flavorTags": [
+   "tamno-voce",
+   "vanilija",
+   "kakao"
+  ],
   "additiveStatus": "clean",
   "additiveDetail": "Standardno vinarstvo (sulfiti)",
   "additiveSource": "Standard kategorije vino",
   "qualityScore": 7.5,
-  "priceEUR": { "min": 15.0, "max": 25.0 },
+  "priceEUR": {
+   "min": 15.0,
+   "max": 25.0
+  },
   "priceApprox": true,
   "shopHR": "Miva / Vrutak / Konzum",
   "status": null,
   "pairable": true,
-  "serving": { "best": "Velika casa, 16-18 C" },
+  "serving": {
+   "best": "Velika casa, 16-18 C"
+  },
   "cigarHint": "Srednja-puna cigara",
   "priceUrl": null,
   "notes": {
@@ -733,17 +991,27 @@
   "abv": 14.0,
   "body": 4,
   "sweetness": 1,
-  "flavorTags": ["tamno-voce", "papar", "dim", "zacini"],
+  "flavorTags": [
+   "tamno-voce",
+   "papar",
+   "dim",
+   "zacini"
+  ],
   "additiveStatus": "clean",
   "additiveDetail": "Standardno vinarstvo (sulfiti)",
   "additiveSource": "Standard kategorije vino",
   "qualityScore": 8.0,
-  "priceEUR": { "min": 20.0, "max": 40.0 },
+  "priceEUR": {
+   "min": 20.0,
+   "max": 40.0
+  },
   "priceApprox": true,
   "shopHR": "Vinoteke / Miva",
   "status": null,
   "pairable": true,
-  "serving": { "best": "Velika casa, 16-18 C" },
+  "serving": {
+   "best": "Velika casa, 16-18 C"
+  },
   "cigarHint": "Puna, zacinska cigara",
   "priceUrl": null,
   "notes": {
@@ -760,17 +1028,27 @@
   "abv": 14.5,
   "body": 4,
   "sweetness": 2,
-  "flavorTags": ["tamno-voce", "zacini", "vanilija", "slatko"],
+  "flavorTags": [
+   "tamno-voce",
+   "zacini",
+   "vanilija",
+   "slatko"
+  ],
   "additiveStatus": "clean",
   "additiveDetail": "Standardno vinarstvo (sulfiti)",
   "additiveSource": "Standard kategorije vino",
   "qualityScore": 7.5,
-  "priceEUR": { "min": 20.0, "max": 35.0 },
+  "priceEUR": {
+   "min": 20.0,
+   "max": 35.0
+  },
   "priceApprox": true,
   "shopHR": "Vinoteke",
   "status": null,
   "pairable": true,
-  "serving": { "best": "Velika casa, 16-18 C" },
+  "serving": {
+   "best": "Velika casa, 16-18 C"
+  },
   "cigarHint": "Puna maduro cigara",
   "priceUrl": null,
   "notes": {
@@ -787,17 +1065,27 @@
   "abv": 14.5,
   "body": 4,
   "sweetness": 1,
-  "flavorTags": ["tamno-voce", "zacini", "zemljano", "koza"],
+  "flavorTags": [
+   "tamno-voce",
+   "zacini",
+   "zemljano",
+   "koza"
+  ],
   "additiveStatus": "clean",
   "additiveDetail": "Standardno vinarstvo (sulfiti)",
   "additiveSource": "Standard kategorije vino",
   "qualityScore": 8.5,
-  "priceEUR": { "min": 40.0, "max": 70.0 },
+  "priceEUR": {
+   "min": 40.0,
+   "max": 70.0
+  },
   "priceApprox": true,
   "shopHR": "Vivat fina vina / vinoteke",
   "status": null,
   "pairable": true,
-  "serving": { "best": "Velika casa, 16-18 C" },
+  "serving": {
+   "best": "Velika casa, 16-18 C"
+  },
   "cigarHint": "Puna Habano cigara",
   "priceUrl": null,
   "notes": {
@@ -814,17 +1102,26 @@
   "abv": 13.5,
   "body": 3,
   "sweetness": 1,
-  "flavorTags": ["voce", "koza", "zemljano"],
+  "flavorTags": [
+   "voce",
+   "koza",
+   "zemljano"
+  ],
   "additiveStatus": "clean",
   "additiveDetail": "Standardno vinarstvo (sulfiti)",
   "additiveSource": "Standard kategorije vino",
   "qualityScore": 7.5,
-  "priceEUR": { "min": 18.0, "max": 30.0 },
+  "priceEUR": {
+   "min": 18.0,
+   "max": 30.0
+  },
   "priceApprox": true,
   "shopHR": "Miva / Vrutak / vinoteke",
   "status": null,
   "pairable": true,
-  "serving": { "best": "Velika casa, 16-18 C" },
+  "serving": {
+   "best": "Velika casa, 16-18 C"
+  },
   "cigarHint": "Srednja Habano cigara",
   "priceUrl": null,
   "notes": {
@@ -841,17 +1138,26 @@
   "abv": 13.0,
   "body": 2,
   "sweetness": 1,
-  "flavorTags": ["voce", "cvjetno", "zemljano"],
+  "flavorTags": [
+   "voce",
+   "cvjetno",
+   "zemljano"
+  ],
   "additiveStatus": "clean",
   "additiveDetail": "Standardno vinarstvo (sulfiti)",
   "additiveSource": "Standard kategorije vino",
   "qualityScore": 8.0,
-  "priceEUR": { "min": 20.0, "max": 45.0 },
+  "priceEUR": {
+   "min": 20.0,
+   "max": 45.0
+  },
   "priceApprox": true,
   "shopHR": "Vinoteke",
   "status": null,
   "pairable": true,
-  "serving": { "best": "Blago ohladjeno, 12-14 C" },
+  "serving": {
+   "best": "Blago ohladjeno, 12-14 C"
+  },
   "cigarHint": "Blaga-srednja Connecticut cigara",
   "priceUrl": null,
   "notes": {
@@ -868,17 +1174,26 @@
   "abv": 13.5,
   "body": 3,
   "sweetness": 1,
-  "flavorTags": ["tamno-voce", "voce", "kakao"],
+  "flavorTags": [
+   "tamno-voce",
+   "voce",
+   "kakao"
+  ],
   "additiveStatus": "clean",
   "additiveDetail": "Standardno vinarstvo (sulfiti)",
   "additiveSource": "Standard kategorije vino",
   "qualityScore": 7.0,
-  "priceEUR": { "min": 10.0, "max": 20.0 },
+  "priceEUR": {
+   "min": 10.0,
+   "max": 20.0
+  },
   "priceApprox": true,
   "shopHR": "Konzum / vinoteke",
   "status": null,
   "pairable": true,
-  "serving": { "best": "Velika casa, 16-18 C" },
+  "serving": {
+   "best": "Velika casa, 16-18 C"
+  },
   "cigarHint": "Srednja cigara",
   "priceUrl": null,
   "notes": {
@@ -895,17 +1210,26 @@
   "abv": 12.5,
   "body": 2,
   "sweetness": 1,
-  "flavorTags": ["voce", "zacini", "mineralno"],
+  "flavorTags": [
+   "voce",
+   "zacini",
+   "mineralno"
+  ],
   "additiveStatus": "clean",
   "additiveDetail": "Standardno vinarstvo (sulfiti)",
   "additiveSource": "Standard kategorije vino",
   "qualityScore": 7.0,
-  "priceEUR": { "min": 8.0, "max": 15.0 },
+  "priceEUR": {
+   "min": 8.0,
+   "max": 15.0
+  },
   "priceApprox": true,
   "shopHR": "Konzum / vinoteke",
   "status": null,
   "pairable": true,
-  "serving": { "best": "Blago ohladjeno, 12-14 C" },
+  "serving": {
+   "best": "Blago ohladjeno, 12-14 C"
+  },
   "cigarHint": "Blaga-srednja cigara",
   "priceUrl": null,
   "notes": {
@@ -922,17 +1246,26 @@
   "abv": 12.5,
   "body": 2,
   "sweetness": 1,
-  "flavorTags": ["voce", "citrus", "cvjetno"],
+  "flavorTags": [
+   "voce",
+   "citrus",
+   "cvjetno"
+  ],
   "additiveStatus": "clean",
   "additiveDetail": "Standardno vinarstvo (sulfiti)",
   "additiveSource": "Standard kategorije vino",
   "qualityScore": 7.5,
-  "priceEUR": { "min": 8.0, "max": 15.0 },
+  "priceEUR": {
+   "min": 8.0,
+   "max": 15.0
+  },
   "priceApprox": true,
   "shopHR": "Konzum / vinoteke",
   "status": null,
   "pairable": true,
-  "serving": { "best": "Ohladjeno, 8-10 C" },
+  "serving": {
+   "best": "Ohladjeno, 8-10 C"
+  },
   "cigarHint": "Blaga Connecticut cigara",
   "priceUrl": null,
   "notes": {
@@ -949,17 +1282,26 @@
   "abv": 13.5,
   "body": 3,
   "sweetness": 1,
-  "flavorTags": ["voce", "med", "mineralno"],
+  "flavorTags": [
+   "voce",
+   "med",
+   "mineralno"
+  ],
   "additiveStatus": "clean",
   "additiveDetail": "Standardno vinarstvo (sulfiti)",
   "additiveSource": "Standard kategorije vino",
   "qualityScore": 8.0,
-  "priceEUR": { "min": 15.0, "max": 25.0 },
+  "priceEUR": {
+   "min": 15.0,
+   "max": 25.0
+  },
   "priceApprox": true,
   "shopHR": "Vinoteke / Konzum",
   "status": null,
   "pairable": true,
-  "serving": { "best": "Ohladjeno, 8-10 C" },
+  "serving": {
+   "best": "Ohladjeno, 8-10 C"
+  },
   "cigarHint": "Blaga-srednja cigara",
   "priceUrl": null,
   "notes": {
@@ -976,17 +1318,26 @@
   "abv": 13.0,
   "body": 2,
   "sweetness": 1,
-  "flavorTags": ["voce", "cvjetno", "mineralno"],
+  "flavorTags": [
+   "voce",
+   "cvjetno",
+   "mineralno"
+  ],
   "additiveStatus": "clean",
   "additiveDetail": "Standardno vinarstvo (sulfiti)",
   "additiveSource": "Standard kategorije vino",
   "qualityScore": 7.5,
-  "priceEUR": { "min": 10.0, "max": 18.0 },
+  "priceEUR": {
+   "min": 10.0,
+   "max": 18.0
+  },
   "priceApprox": true,
   "shopHR": "Konzum / vinoteke",
   "status": null,
   "pairable": true,
-  "serving": { "best": "Ohladjeno, 8-10 C" },
+  "serving": {
+   "best": "Ohladjeno, 8-10 C"
+  },
   "cigarHint": "Blaga Connecticut cigara",
   "priceUrl": null,
   "notes": {
@@ -1003,17 +1354,27 @@
   "abv": 13.5,
   "body": 3,
   "sweetness": 1,
-  "flavorTags": ["vanilija", "kremasto", "voce", "hrast"],
+  "flavorTags": [
+   "vanilija",
+   "kremasto",
+   "voce",
+   "hrast"
+  ],
   "additiveStatus": "clean",
   "additiveDetail": "Standardno vinarstvo (sulfiti); barrique dozrijevanje",
   "additiveSource": "Standard kategorije vino",
   "qualityScore": 7.5,
-  "priceEUR": { "min": 18.0, "max": 40.0 },
+  "priceEUR": {
+   "min": 18.0,
+   "max": 40.0
+  },
   "priceApprox": true,
   "shopHR": "Vinoteke",
   "status": null,
   "pairable": true,
-  "serving": { "best": "Blago ohladjeno, 12-14 C" },
+  "serving": {
+   "best": "Blago ohladjeno, 12-14 C"
+  },
   "cigarHint": "Blaga-srednja Connecticut cigara",
   "priceUrl": null,
   "notes": {
@@ -1030,17 +1391,27 @@
   "abv": 9.5,
   "body": 2,
   "sweetness": 3,
-  "flavorTags": ["citrus", "jabuka", "mineralno", "med"],
+  "flavorTags": [
+   "citrus",
+   "jabuka",
+   "mineralno",
+   "med"
+  ],
   "additiveStatus": "clean",
   "additiveDetail": "Standardno vinarstvo (sulfiti); prirodni zaostali secer",
   "additiveSource": "Standard kategorije vino",
   "qualityScore": 8.0,
-  "priceEUR": { "min": 15.0, "max": 25.0 },
+  "priceEUR": {
+   "min": 15.0,
+   "max": 25.0
+  },
   "priceApprox": true,
   "shopHR": "Vinoteke",
   "status": null,
   "pairable": true,
-  "serving": { "best": "Dobro ohladjeno, 6-8 C" },
+  "serving": {
+   "best": "Dobro ohladjeno, 6-8 C"
+  },
   "cigarHint": "Blaga cigara",
   "priceUrl": null,
   "notes": {
@@ -1057,17 +1428,27 @@
   "abv": 12.0,
   "body": 2,
   "sweetness": 1,
-  "flavorTags": ["citrus", "kremasto", "orasasti", "mineralno"],
+  "flavorTags": [
+   "citrus",
+   "kremasto",
+   "orasasti",
+   "mineralno"
+  ],
   "additiveStatus": "clean",
   "additiveDetail": "Standardno vinarstvo (sulfiti); dozaza secera u brut razini (<12 g/L)",
   "additiveSource": "Standard kategorije champagne",
   "qualityScore": 8.0,
-  "priceEUR": { "min": 45.0, "max": 65.0 },
+  "priceEUR": {
+   "min": 45.0,
+   "max": 65.0
+  },
   "priceApprox": true,
   "shopHR": "Siroka dostupnost",
   "status": null,
   "pairable": true,
-  "serving": { "best": "Dobro ohladjeno, 6-8 C" },
+  "serving": {
+   "best": "Dobro ohladjeno, 6-8 C"
+  },
   "cigarHint": "Blaga-srednja Connecticut cigara",
   "priceUrl": null,
   "notes": {
@@ -1078,28 +1459,37 @@
  {
   "id": "wine-prosecco-docg",
   "category": "wine",
-  "name": "Prosecco Superiore DOCG",
+  "name": "Valdobbiadene Prosecco Superiore DOCG (Valdo / Villa Sandi)",
   "style": "sparkling",
   "region": "Veneto, Italija",
   "abv": 11.0,
   "body": 1,
   "sweetness": 2,
-  "flavorTags": ["voce", "cvjetno", "citrus"],
+  "flavorTags": [
+   "voce",
+   "cvjetno",
+   "citrus"
+  ],
   "additiveStatus": "clean",
   "additiveDetail": "Standardno vinarstvo (sulfiti); brut/extra dry dozaza",
   "additiveSource": "Standard kategorije pjenusac",
   "qualityScore": 7.0,
-  "priceEUR": { "min": 12.0, "max": 18.0 },
+  "priceEUR": {
+   "min": 13.0,
+   "max": 18.0
+  },
   "priceApprox": true,
-  "shopHR": "Siroka dostupnost",
+  "shopHR": "Konzum / Miva / vinoteke",
   "status": null,
   "pairable": true,
-  "serving": { "best": "Dobro ohladjeno, 6-8 C" },
+  "serving": {
+   "best": "Dobro ohladjeno, 6-8 C"
+  },
   "cigarHint": "Vrlo blaga cigara",
   "priceUrl": null,
   "notes": {
-   "hr": "Kruška, cvijet, lagane perlice — lepršav aperitiv uz najblaže cigare.",
-   "en": "Pear, blossom, light bubbles — a breezy aperitif for the mildest cigars."
+   "hr": "Ulazna DOCG razina s brežuljaka Valdobbiadenea — kruška, cvijet, lagane perlice; pouzdan aperitiv uz najblaže cigare.",
+   "en": "Entry DOCG level from the Valdobbiadene hills — pear, blossom, light bubbles; a dependable aperitif with the mildest cigars."
   }
  },
  {
@@ -1111,17 +1501,27 @@
   "abv": 11.0,
   "body": 4,
   "sweetness": 5,
-  "flavorTags": ["med", "suho-voce", "citrus", "slatko"],
+  "flavorTags": [
+   "med",
+   "suho-voce",
+   "citrus",
+   "slatko"
+  ],
   "additiveStatus": "clean",
   "additiveDetail": "Prirodna slatkoca iz botritiziranog grozdja",
   "additiveSource": "Standard kategorije aszu",
   "qualityScore": 8.5,
-  "priceEUR": { "min": 35.0, "max": 55.0 },
+  "priceEUR": {
+   "min": 35.0,
+   "max": 55.0
+  },
   "priceApprox": true,
   "shopHR": "Vinoteke",
   "status": null,
   "pairable": true,
-  "serving": { "best": "Ohladjeno, 8-10 C" },
+  "serving": {
+   "best": "Ohladjeno, 8-10 C"
+  },
   "cigarHint": "Srednja-puna cigara, maduro kontrast",
   "priceUrl": null,
   "notes": {
@@ -1138,17 +1538,27 @@
   "abv": 13.5,
   "body": 4,
   "sweetness": 5,
-  "flavorTags": ["med", "suho-voce", "vanilija", "slatko"],
+  "flavorTags": [
+   "med",
+   "suho-voce",
+   "vanilija",
+   "slatko"
+  ],
   "additiveStatus": "clean",
   "additiveDetail": "Prirodna slatkoca iz botritiziranog grozdja",
   "additiveSource": "Standard kategorije sauternes",
   "qualityScore": 8.0,
-  "priceEUR": { "min": 25.0, "max": 45.0 },
+  "priceEUR": {
+   "min": 25.0,
+   "max": 45.0
+  },
   "priceApprox": true,
   "shopHR": "Vinoteke",
   "status": null,
   "pairable": true,
-  "serving": { "best": "Ohladjeno, 8-10 C" },
+  "serving": {
+   "best": "Ohladjeno, 8-10 C"
+  },
   "cigarHint": "Srednja-puna cigara",
   "priceUrl": null,
   "notes": {
@@ -1165,22 +1575,321 @@
   "abv": 12.0,
   "body": 3,
   "sweetness": 4,
-  "flavorTags": ["cvjetno", "med", "voce", "slatko"],
+  "flavorTags": [
+   "cvjetno",
+   "med",
+   "voce",
+   "slatko"
+  ],
   "additiveStatus": "clean",
   "additiveDetail": "Prirodna slatkoca (kasna berba)",
   "additiveSource": "Standard kategorije vino",
   "qualityScore": 7.5,
-  "priceEUR": { "min": 18.0, "max": 28.0 },
+  "priceEUR": {
+   "min": 18.0,
+   "max": 28.0
+  },
   "priceApprox": true,
   "shopHR": "Vinoteke / Kozlović webshop",
   "status": null,
   "pairable": true,
-  "serving": { "best": "Ohladjeno, 8-10 C" },
+  "serving": {
+   "best": "Ohladjeno, 8-10 C"
+  },
   "cigarHint": "Blaga-srednja cigara",
   "priceUrl": null,
   "notes": {
    "hr": "Istarski aromatski dragulj — ruža, med, muškatni orah; slatko ali živo.",
    "en": "An Istrian aromatic gem — rose, honey, nutmeg; sweet but lively."
+  }
+ },
+ {
+  "id": "wine-mionetto-prosecco-doc",
+  "category": "wine",
+  "name": "Mionetto Prosecco DOC Treviso",
+  "style": "sparkling",
+  "region": "Veneto, Italija",
+  "abv": 11.0,
+  "body": 1,
+  "sweetness": 2,
+  "flavorTags": [
+   "voce",
+   "cvjetno",
+   "citrus"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": "Standardno vinarstvo (sulfiti); brut dozaza",
+  "additiveSource": "Standard kategorije pjenusac",
+  "qualityScore": 6.5,
+  "priceEUR": {
+   "min": 11.0,
+   "max": 14.0
+  },
+  "priceApprox": true,
+  "shopHR": "Konzum / siroka dostupnost",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Dobro ohladjeno, 6-8 C"
+  },
+  "cigarHint": "Vrlo blaga cigara",
+  "priceUrl": null,
+  "notes": {
+   "hr": "Najrasireniji prosecco u HR trgovinama — jednostavan, voćan, svjež; ulaz u kategoriju.",
+   "en": "The most widely available prosecco in Croatian stores — simple, fruity, fresh; the category entry point."
+  }
+ },
+ {
+  "id": "wine-nino-franco-rustico",
+  "category": "wine",
+  "name": "Nino Franco Rustico Valdobbiadene DOCG",
+  "style": "sparkling",
+  "region": "Veneto, Italija",
+  "abv": 11.0,
+  "body": 2,
+  "sweetness": 2,
+  "flavorTags": [
+   "voce",
+   "cvjetno",
+   "mineralno"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": "Standardno vinarstvo (sulfiti); brut dozaza",
+  "additiveSource": "Standard kategorije pjenusac",
+  "qualityScore": 8.0,
+  "priceEUR": {
+   "min": 20.0,
+   "max": 26.0
+  },
+  "priceApprox": true,
+  "shopHR": "Vinoteke",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Dobro ohladjeno, 6-8 C"
+  },
+  "cigarHint": "Blaga Connecticut cigara",
+  "priceUrl": null,
+  "notes": {
+   "hr": "Referentna kuća Valdobbiadenea — zrela jabuka, glicinija, fina perlica; prosecco koji se ozbiljno shvaća.",
+   "en": "The benchmark Valdobbiadene house — ripe apple, wisteria, fine mousse; prosecco taken seriously."
+  }
+ },
+ {
+  "id": "wine-bottega-gold",
+  "category": "wine",
+  "name": "Bottega Gold Prosecco DOC Brut",
+  "style": "sparkling",
+  "region": "Veneto, Italija",
+  "abv": 11.0,
+  "body": 1,
+  "sweetness": 2,
+  "flavorTags": [
+   "voce",
+   "cvjetno",
+   "citrus"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": "Standardno vinarstvo (sulfiti); brut dozaza",
+  "additiveSource": "Standard kategorije pjenusac",
+  "qualityScore": 6.5,
+  "priceEUR": {
+   "min": 22.0,
+   "max": 28.0
+  },
+  "priceApprox": true,
+  "shopHR": "Miva / duty free / vinoteke",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Dobro ohladjeno, 6-8 C"
+  },
+  "cigarHint": "Vrlo blaga cigara",
+  "priceUrl": null,
+  "notes": {
+   "hr": "Prepoznatljiva zlatna boca; korektan brut voćnog profila — dio cijene je ambalaža, navodimo radi informacije.",
+   "en": "The recognizable gold bottle; a decent fruity brut — part of the price is the packaging, noted for information."
+  }
+ },
+ {
+  "id": "wine-cartizze",
+  "category": "wine",
+  "name": "Valdobbiadene Superiore di Cartizze DOCG (Villa Sandi / Bisol)",
+  "style": "sparkling",
+  "region": "Veneto, Italija",
+  "abv": 11.5,
+  "body": 2,
+  "sweetness": 3,
+  "flavorTags": [
+   "voce",
+   "cvjetno",
+   "med"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": "Standardno vinarstvo (sulfiti); brut dozaza",
+  "additiveSource": "Standard kategorije pjenusac",
+  "qualityScore": 8.5,
+  "priceEUR": {
+   "min": 35.0,
+   "max": 48.0
+  },
+  "priceApprox": true,
+  "shopHR": "Vinoteke",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Dobro ohladjeno, 6-8 C"
+  },
+  "cigarHint": "Blaga Connecticut cigara",
+  "priceUrl": null,
+  "notes": {
+   "hr": "Vrh prosecco piramide — grand cru brežuljak Cartizze: kremasta perlica, breskva, med. Najozbiljniji izraz sorte glera.",
+   "en": "The top of the prosecco pyramid — the Cartizze grand cru hill: creamy mousse, peach, honey. Glera at its most serious."
+  }
+ },
+ {
+  "id": "wine-franciacorta-ca-del-bosco",
+  "category": "wine",
+  "name": "Franciacorta Ca' del Bosco Cuvée Prestige",
+  "style": "sparkling",
+  "region": "Lombardija, Italija",
+  "abv": 12.5,
+  "body": 2,
+  "sweetness": 1,
+  "flavorTags": [
+   "kremasto",
+   "orasasti",
+   "citrus",
+   "mineralno"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": "Standardno vinarstvo (sulfiti); klasicna metoda, brut dozaza",
+  "additiveSource": "Standard kategorije pjenusac",
+  "qualityScore": 8.5,
+  "priceEUR": {
+   "min": 48.0,
+   "max": 60.0
+  },
+  "priceApprox": true,
+  "shopHR": "Vinoteke",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Dobro ohladjeno, 6-8 C"
+  },
+  "cigarHint": "Blaga Connecticut cigara",
+  "priceUrl": null,
+  "notes": {
+   "hr": "Talijanski odgovor šampanjcu — klasična metoda, brioche i lješnjak; ozbiljna alternativa uz blagu cigaru.",
+   "en": "Italy's answer to Champagne — classic method, brioche and hazelnut; a serious option with a mild cigar."
+  }
+ },
+ {
+  "id": "wine-cava-juve-y-camps",
+  "category": "wine",
+  "name": "Cava Brut Nature Reserva (Juvé & Camps / Gramona)",
+  "style": "sparkling",
+  "region": "Penedes, Spanjolska",
+  "abv": 12.0,
+  "body": 2,
+  "sweetness": 1,
+  "flavorTags": [
+   "citrus",
+   "orasasti",
+   "mineralno"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": "Standardno vinarstvo (sulfiti); brut nature (bez dozaze)",
+  "additiveSource": "Standard kategorije pjenusac",
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 16.0,
+   "max": 24.0
+  },
+  "priceApprox": true,
+  "shopHR": "Vinoteke / Miva",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Dobro ohladjeno, 6-8 C"
+  },
+  "cigarHint": "Blaga Connecticut cigara",
+  "priceUrl": null,
+  "notes": {
+   "hr": "Klasična metoda bez dozaže — suh, zreo, orašast; najbolji omjer cijene i ozbiljnosti među pjenušcima.",
+   "en": "Classic method with no dosage — dry, mature, nutty; the best value-to-seriousness ratio in sparkling."
+  }
+ },
+ {
+  "id": "wine-tomac-pjenusac",
+  "category": "wine",
+  "name": "Tomac pjenušac (Klasik / Amfora)",
+  "style": "sparkling",
+  "region": "Plesivica, Hrvatska",
+  "abv": 12.0,
+  "body": 2,
+  "sweetness": 1,
+  "flavorTags": [
+   "jabuka",
+   "mineralno",
+   "kremasto"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": "Standardno vinarstvo (sulfiti); klasicna metoda",
+  "additiveSource": "Standard kategorije pjenusac",
+  "qualityScore": 8.0,
+  "priceEUR": {
+   "min": 25.0,
+   "max": 42.0
+  },
+  "priceApprox": true,
+  "shopHR": "Vinoteke (Vinoteka Terra, Wine&Friends)",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Dobro ohladjeno, 6-8 C"
+  },
+  "cigarHint": "Blaga Connecticut cigara",
+  "priceUrl": null,
+  "notes": {
+   "hr": "Plešivički pionir klasične metode; Amfora verzija fermentira u amforama — hrvatski pjenušac svjetske razine.",
+   "en": "The Plešivica pioneer of the classic method; the Amfora version ferments in clay — a world-class Croatian sparkling."
+  }
+ },
+ {
+  "id": "wine-misal-persuric",
+  "category": "wine",
+  "name": "Misal Peršurić (Brut / Prestige)",
+  "style": "sparkling",
+  "region": "Istra, Hrvatska",
+  "abv": 12.0,
+  "body": 2,
+  "sweetness": 1,
+  "flavorTags": [
+   "citrus",
+   "jabuka",
+   "cvjetno"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": "Standardno vinarstvo (sulfiti); klasicna metoda",
+  "additiveSource": "Standard kategorije pjenusac",
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 18.0,
+   "max": 28.0
+  },
+  "priceApprox": true,
+  "shopHR": "Vrutak / Roto",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Dobro ohladjeno, 6-8 C"
+  },
+  "cigarHint": "Blaga Connecticut cigara",
+  "priceUrl": null,
+  "notes": {
+   "hr": "Prvi hrvatski pjenušac klasičnom metodom (Višnjan) — svjež, citrusni brut; Prestige odležava 18+ mjeseci na kvascima.",
+   "en": "Croatia's first classic-method sparkling (Višnjan) — a fresh, citrusy brut; Prestige spends 18+ months on lees."
   }
  }
 ]
