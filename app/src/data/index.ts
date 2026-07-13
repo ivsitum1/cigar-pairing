@@ -3,6 +3,7 @@ import rums from "./rums.json";
 import whiskies from "./whiskies.json";
 import brandies from "./brandies.json";
 import gins from "./gins.json";
+import wines from "./wines.json";
 import coffees from "./coffees.json";
 import cigarsJson from "./cigars.json";
 import shoppingJson from "./shopping.json";
@@ -13,6 +14,7 @@ export const DRINKS: Record<DrinkCategory, Drink[]> = {
   whisky: whiskies as unknown as Drink[],
   brandy: brandies as unknown as Drink[],
   gin: gins as unknown as Drink[],
+  wine: wines as unknown as Drink[],
   coffee: coffees as unknown as Drink[],
 };
 
@@ -43,6 +45,7 @@ export const ALL_DRINKS: Drink[] = [
   ...DRINKS.whisky,
   ...DRINKS.brandy,
   ...DRINKS.gin,
+  ...DRINKS.wine,
   ...DRINKS.coffee,
 ];
 
