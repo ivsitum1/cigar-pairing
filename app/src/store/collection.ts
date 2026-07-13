@@ -4,6 +4,7 @@ import { useSyncExternalStore } from "react";
 export interface ItemState {
   owned: boolean;
   tried: boolean;
+  wishlist: boolean; // lista zelja — zelim kupiti
   rating: number | null; // 1-10
   note: string;
 }
@@ -56,14 +57,23 @@ export function useCollection(): CollectionData {
   );
 }
 
-export const getItemState = (id: string): ItemState =>
-  cache.items[id] ?? { owned: false, tried: false, rating: null, note: "" };
+// stariji zapisi u localStorage nemaju wishlist polje — defaulti po polju
+export const getItemState = (id: string): ItemState => {
+  const s = cache.items[id] as Partial<ItemState> | undefined;
+  return {
+    owned: s?.owned ?? false,
+    tried: s?.tried ?? false,
+    wishlist: s?.wishlist ?? false,
+    rating: s?.rating ?? null,
+    note: s?.note ?? "",
+  };
+};
 
 export function updateItem(id: string, patch: Partial<ItemState>) {
   const current = getItemState(id);
   const next = { ...current, ...patch, note: (patch.note ?? current.note).trim() };
   const items = { ...cache.items };
-  if (!next.owned && !next.tried && next.rating == null && !next.note) {
+  if (!next.owned && !next.tried && !next.wishlist && next.rating == null && !next.note) {
     delete items[id]; // ne cuvamo prazna stanja
   } else {
     items[id] = next;

@@ -104,6 +104,9 @@ const STRINGS = {
   // kolekcija
   "coll.owned": { hr: "Imam", en: "Owned" },
   "coll.tried": { hr: "Probao", en: "Tried" },
+  "coll.wishlist": { hr: "Lista želja", en: "Wishlist" },
+  "coll.wishlistTitle": { hr: "Lista želja (za kupiti)", en: "Wishlist (to buy)" },
+  "coll.onWishlist": { hr: "Na listi želja", en: "On wishlist" },
   "coll.myRating": { hr: "Moja ocjena", en: "My rating" },
   "coll.note": { hr: "Bilješka", en: "Note" },
   "coll.notePlaceholder": { hr: "Dojmovi, uz što je pasalo…", en: "Impressions, what it paired with…" },
