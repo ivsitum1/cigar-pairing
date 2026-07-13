@@ -4629,17 +4629,17 @@
   "region": "Tennessee, SAD",
   "country": "SAD",
   "abv": null,
-  "body": 4,
-  "sweetness": 3,
+  "body": 2,
+  "sweetness": 5,
   "flavorTags": [
-   "karamela",
+   "jabuka",
    "vanilija",
-   "maple"
+   "slatko"
   ],
   "additiveStatus": "flavored",
-  "additiveDetail": "unknown / unknown",
-  "additiveSource": "Excel MASTER",
-  "qualityScore": 7.0,
+  "additiveDetail": "Liker: dodana aroma jabuke i secer (35%)",
+  "additiveSource": "Etiketa: whiskey specialty / liker",
+  "qualityScore": 5.0,
   "priceEUR": {
    "min": 24.0,
    "max": 24.0
@@ -4647,7 +4647,7 @@
   "priceApprox": false,
   "shopHR": "ecuga.com",
   "status": "META",
-  "pairable": false,
+  "pairable": true,
   "serving": {
    "neat": 1,
    "water": 0,
@@ -4656,11 +4656,11 @@
    "cola": 0,
    "best": "Koktel / RTD"
   },
-  "cigarHint": "Srednja cigara, balans snage",
+  "cigarHint": null,
   "priceUrl": "https://ecuga.com/katalog/whisky/americki-bourbon-whiskey/jack-daniels-apple",
   "notes": {
-   "hr": "Ozbiljna strana JD-a — single barrel dubina.",
-   "en": ""
+   "hr": "Liker na bazi Tennessee whiskeyja s aromom zelene jabuke (35%). Po EU pravilima liker, ne whisky — deklariramo neutralno.",
+   "en": "A Tennessee-whiskey-based liqueur with green apple flavour (35%). Legally a liqueur, not whisky, under EU rules — declared neutrally."
   }
  },
  {
@@ -4965,17 +4965,17 @@
   "region": "Tennessee, SAD",
   "country": "SAD",
   "abv": null,
-  "body": 4,
-  "sweetness": 3,
+  "body": 2,
+  "sweetness": 5,
   "flavorTags": [
-   "karamela",
+   "med",
    "vanilija",
-   "maple"
+   "slatko"
   ],
   "additiveStatus": "flavored",
-  "additiveDetail": "unknown / unknown",
-  "additiveSource": "Excel MASTER",
-  "qualityScore": 7.0,
+  "additiveDetail": "Liker: dodani med/aroma i secer (35%)",
+  "additiveSource": "Etiketa: whiskey specialty / liker",
+  "qualityScore": 5.5,
   "priceEUR": {
    "min": 24.0,
    "max": 24.0
@@ -4983,7 +4983,7 @@
   "priceApprox": false,
   "shopHR": "ecuga.com",
   "status": "META",
-  "pairable": false,
+  "pairable": true,
   "serving": {
    "neat": 1,
    "water": 0,
@@ -4992,11 +4992,11 @@
    "cola": 0,
    "best": "Koktel / RTD"
   },
-  "cigarHint": "Srednja cigara, balans snage",
+  "cigarHint": null,
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/jack-daniels-honey-liqueur-35-vol-07l",
   "notes": {
-   "hr": "Ozbiljna strana JD-a — single barrel dubina.",
-   "en": ""
+   "hr": "Liker na bazi Tennessee whiskeyja s medom (35%). Po EU pravilima liker, ne whisky. Vrlo popularan desertni profil.",
+   "en": "A Tennessee-whiskey-based honey liqueur (35%). Legally a liqueur, not whisky, under EU rules. A very popular dessert profile."
   }
  },
  {
@@ -5133,17 +5133,17 @@
   "region": "Tennessee, SAD",
   "country": "SAD",
   "abv": 35.0,
-  "body": 4,
-  "sweetness": 3,
+  "body": 2,
+  "sweetness": 5,
   "flavorTags": [
-   "karamela",
+   "med",
    "vanilija",
-   "maple"
+   "slatko"
   ],
   "additiveStatus": "flavored",
-  "additiveDetail": "unknown / unknown",
-  "additiveSource": "Excel MASTER",
-  "qualityScore": 7.0,
+  "additiveDetail": "Liker: dodani med/aroma i secer (35%)",
+  "additiveSource": "Etiketa: liker",
+  "qualityScore": 5.5,
   "priceEUR": {
    "min": 40.0,
    "max": 40.0
@@ -5151,7 +5151,7 @@
   "priceApprox": false,
   "shopHR": "allez.hr",
   "status": "META",
-  "pairable": false,
+  "pairable": true,
   "serving": {
    "neat": 3,
    "water": 2,
@@ -5160,11 +5160,11 @@
    "cola": 0,
    "best": "Cisto"
   },
-  "cigarHint": "Connecticut do Habano blage-srednje",
+  "cigarHint": null,
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/jack-daniels-honey-liqueur-35-vol-07l",
   "notes": {
-   "hr": "Ozbiljna strana JD-a — single barrel dubina.",
-   "en": ""
+   "hr": "Ista bočica kao JD Honey — liker s medom na bazi Tennessee whiskeyja (35%).",
+   "en": "Same liquid as JD Honey — a honey liqueur on a Tennessee whiskey base (35%)."
   }
  },
  {
@@ -5344,16 +5344,16 @@
   "country": "Irska",
   "abv": 49.2,
   "body": 3,
-  "sweetness": 3,
+  "sweetness": 4,
   "flavorTags": [
-   "med",
+   "tropsko-voce",
    "vanilija",
    "kremasto"
   ],
   "additiveStatus": "flavored",
-  "additiveDetail": "unknown / unknown",
-  "additiveSource": "Excel MASTER",
-  "qualityScore": 7.0,
+  "additiveDetail": "Aromatizirana edicija (ananas) uz rum-cask dozrijevanje",
+  "additiveSource": "Deklaracija proizvodjaca (limitirana edicija)",
+  "qualityScore": 6.0,
   "priceEUR": {
    "min": 32.0,
    "max": 32.0
@@ -5361,7 +5361,7 @@
   "priceApprox": false,
   "shopHR": "allez.hr",
   "status": "META",
-  "pairable": false,
+  "pairable": true,
   "serving": {
    "neat": 3,
    "water": 2,
@@ -5373,8 +5373,8 @@
   "cigarHint": "Connecticut do Habano blage-srednje",
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/teeling-whiskey-pineapple-rum-cask-irish-whiskey",
   "notes": {
-   "hr": "Rum-cask finish — most između tvog rum svijeta i viskija.",
-   "en": ""
+   "hr": "Limitirana Teeling edicija: irski whiskey s ananasom i dozrijevanjem u rum bačvama (49,2%). Aromatizirano — deklarirano na etiketi.",
+   "en": "Limited Teeling release: Irish whiskey with pineapple and rum-cask maturation (49.2%). Flavoured — declared on the label."
   }
  },
  {

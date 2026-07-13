@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import type { Cigar, Drink } from "../types";
-import { useI18n, STYLE_LABELS, ADDITIVE_LABELS } from "../i18n";
+import { useI18n, STYLE_LABELS, ADDITIVE_LABELS, ADDITIVE_RULES } from "../i18n";
 import { brandInfo, cigarMarketLinks, formatPrice } from "../data";
 import { vitolaBlurb } from "../lib/vitolaInfo";
 import { Chip, Meter } from "./ui";
@@ -296,6 +296,12 @@ function DrinkDetails({ drink }: { drink: Drink }) {
       {drink.qualityScore != null && (
         <p className="mt-1 text-[11px] leading-snug text-dim/70">
           {t("rate.qualityWhat")}
+        </p>
+      )}
+      {/* neutralna pravila kategorije — što je zakonski dopušteno dodati */}
+      {drink.additiveStatus && ADDITIVE_RULES[drink.category] && (
+        <p className="mt-1 text-[11px] leading-snug text-dim/70">
+          {lx(ADDITIVE_RULES[drink.category])}
         </p>
       )}
       {lx(drink.notes) && (
