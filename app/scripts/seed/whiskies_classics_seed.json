@@ -2431,5 +2431,1991 @@
   "additiveStatus": "unknown",
   "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
   "additiveSource": "EU pravila: whisky smije samo E150a"
+ },
+ {
+  "id": "wh-chivas-regal-12",
+  "category": "whisky",
+  "name": "Chivas Regal 12",
+  "style": "blended-scotch",
+  "region": "Skotska",
+  "country": "Skotska",
+  "abv": 40,
+  "body": 2,
+  "sweetness": 3,
+  "flavorTags": [
+   "med",
+   "voce",
+   "vanilija"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a",
+  "qualityScore": 6.5,
+  "priceEUR": {
+   "min": 27.0,
+   "max": 27.0
+  },
+  "priceApprox": false,
+  "shopHR": "ecuga.com",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / highball"
+  },
+  "cigarHint": "Blaga-srednja cigara",
+  "priceUrl": "https://ecuga.com/katalog/whisky/skotski-blended-whisky/chivas-regal-12",
+  "notes": {
+   "hr": "Najprodavaniji premium blend — med, zrela jabuka, vanilija; mekan i pristupačan.",
+   "en": "The best-selling premium blend — honey, ripe apple, vanilla; soft and approachable."
+  }
+ },
+ {
+  "id": "wh-chivas-regal-13-sherry-cask",
+  "category": "whisky",
+  "name": "Chivas Regal 13 Sherry Cask",
+  "style": "blended-scotch",
+  "region": "Skotska",
+  "country": "Skotska",
+  "abv": 40,
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "suho-voce",
+   "med",
+   "zacini"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a",
+  "qualityScore": 6.5,
+  "priceEUR": {
+   "min": 41.0,
+   "max": 41.0
+  },
+  "priceApprox": false,
+  "shopHR": "ecuga.com",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / highball"
+  },
+  "cigarHint": "Srednja cigara",
+  "priceUrl": "https://ecuga.com/katalog/whisky/skotski-blended-whisky/chivas-regal-13-sherry-cask",
+  "notes": {
+   "hr": "Sherry cask finish — suho voće i začini povrh kućnog mednog profila.",
+   "en": "Sherry cask finish — dried fruit and spice over the house honey profile."
+  }
+ },
+ {
+  "id": "wh-chivas-regal-xv",
+  "category": "whisky",
+  "name": "Chivas Regal XV",
+  "style": "blended-scotch",
+  "region": "Skotska",
+  "country": "Skotska",
+  "abv": 40,
+  "body": 2,
+  "sweetness": 3,
+  "flavorTags": [
+   "med",
+   "karamela",
+   "voce"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a",
+  "qualityScore": 7.0,
+  "priceEUR": {
+   "min": 53.0,
+   "max": 53.0
+  },
+  "priceApprox": false,
+  "shopHR": "ecuga.com",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / highball"
+  },
+  "cigarHint": "Blaga-srednja cigara",
+  "priceUrl": "https://ecuga.com/katalog/whisky/skotski-blended-whisky/chivas-regal-xv",
+  "notes": {
+   "hr": "15 godina, dio dozrijeva u cognac bačvama — karamela i kandirano voće.",
+   "en": "15 years, partly finished in cognac casks — caramel and candied fruit."
+  }
+ },
+ {
+  "id": "wh-chivas-regal-18",
+  "category": "whisky",
+  "name": "Chivas Regal 18",
+  "style": "blended-scotch",
+  "region": "Skotska",
+  "country": "Skotska",
+  "abv": 40,
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "suho-voce",
+   "kakao",
+   "med"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a",
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 64.0,
+   "max": 64.0
+  },
+  "priceApprox": false,
+  "shopHR": "ecuga.com",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / highball"
+  },
+  "cigarHint": "Srednja cigara, Habano",
+  "priceUrl": "https://ecuga.com/katalog/whisky/skotski-blended-whisky/chivas-regal-18",
+  "notes": {
+   "hr": "Zreliji, dublji blend — tamna čokolada, suho voće; klasik uz cigaru srednje punoće.",
+   "en": "A riper, deeper blend — dark chocolate, dried fruit; a classic with a medium cigar."
+  }
+ },
+ {
+  "id": "wh-chivas-regal-mizunara",
+  "category": "whisky",
+  "name": "Chivas Regal Mizunara",
+  "style": "blended-scotch",
+  "region": "Skotska",
+  "country": "Skotska",
+  "abv": 40,
+  "body": 2,
+  "sweetness": 3,
+  "flavorTags": [
+   "med",
+   "zacini",
+   "cvjetno"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a",
+  "qualityScore": 7.0,
+  "priceEUR": {
+   "min": 57.0,
+   "max": 57.0
+  },
+  "priceApprox": false,
+  "shopHR": "ecuga.com",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / highball"
+  },
+  "cigarHint": "Blaga-srednja cigara",
+  "priceUrl": "https://ecuga.com/katalog/whisky/skotski-blended-whisky/chivas-regal-mizunara",
+  "notes": {
+   "hr": "Završna obrada u japanskom mizunara hrastu — sandalovina i začin.",
+   "en": "Finished in Japanese mizunara oak — sandalwood and spice."
+  }
+ },
+ {
+  "id": "wh-chivas-regal-25",
+  "category": "whisky",
+  "name": "Chivas Regal 25",
+  "style": "blended-scotch",
+  "region": "Skotska",
+  "country": "Skotska",
+  "abv": 40,
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "suho-voce",
+   "kakao",
+   "hrast"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a",
+  "qualityScore": 8.5,
+  "priceEUR": {
+   "min": 351.0,
+   "max": 351.0
+  },
+  "priceApprox": false,
+  "shopHR": "ecuga.com",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / highball"
+  },
+  "cigarHint": "Srednja-puna cigara",
+  "priceUrl": "https://ecuga.com/katalog/whisky/skotski-blended-whisky/chivas-regal-25",
+  "notes": {
+   "hr": "Luksuzni vrh linije — marcipan, naranča, čokolada; svilenkasta tekstura.",
+   "en": "The luxury top of the range — marzipan, orange, chocolate; silky texture."
+  }
+ },
+ {
+  "id": "wh-chivas-regal-ultis",
+  "category": "whisky",
+  "name": "Chivas Regal Ultis",
+  "style": "blended-scotch",
+  "region": "Skotska",
+  "country": "Skotska",
+  "abv": 40,
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "med",
+   "voce",
+   "hrast"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a",
+  "qualityScore": 8.0,
+  "priceEUR": {
+   "min": 249.0,
+   "max": 249.0
+  },
+  "priceApprox": false,
+  "shopHR": "ecuga.com",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / highball"
+  },
+  "cigarHint": "Srednja cigara",
+  "priceUrl": "https://ecuga.com/katalog/whisky/skotski-blended-whisky/chivas-regal-ultis",
+  "notes": {
+   "hr": "Blended malt od pet Speyside destilerija — bez grain whiskyja.",
+   "en": "A blended malt from five Speyside distilleries — no grain whisky."
+  }
+ },
+ {
+  "id": "wh-royal-salute-21-chivas",
+  "category": "whisky",
+  "name": "Royal Salute 21 (Chivas)",
+  "style": "blended-scotch",
+  "region": "Skotska",
+  "country": "Skotska",
+  "abv": 40,
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "suho-voce",
+   "med",
+   "hrast"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a",
+  "qualityScore": 8.0,
+  "priceEUR": {
+   "min": 159.0,
+   "max": 159.0
+  },
+  "priceApprox": false,
+  "shopHR": "ecuga.com",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / highball"
+  },
+  "cigarHint": "Srednja-puna cigara",
+  "priceUrl": "https://ecuga.com/katalog/whisky/skotski-blended-whisky/chivas-regal-royal-salute-21",
+  "notes": {
+   "hr": "21 godina minimalno — raskošan svečani blend u porculanskoj boci.",
+   "en": "A minimum of 21 years — an opulent ceremonial blend in a porcelain flagon."
+  }
+ },
+ {
+  "id": "wh-ballantine-s-finest",
+  "category": "whisky",
+  "name": "Ballantine's Finest",
+  "style": "blended-scotch",
+  "region": "Skotska",
+  "country": "Skotska",
+  "abv": 40,
+  "body": 2,
+  "sweetness": 3,
+  "flavorTags": [
+   "med",
+   "voce"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a",
+  "qualityScore": 5.5,
+  "priceEUR": {
+   "min": 15.0,
+   "max": 15.0
+  },
+  "priceApprox": false,
+  "shopHR": "ecuga.com",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / highball"
+  },
+  "cigarHint": "Blaga cigara",
+  "priceUrl": "https://ecuga.com/katalog/whisky/skotski-blended-whisky/ballantines-finest",
+  "notes": {
+   "hr": "Drugi najprodavaniji scotch na svijetu — lagan, medan, uredan za highball.",
+   "en": "The world's second best-selling scotch — light, honeyed, tidy in a highball."
+  }
+ },
+ {
+  "id": "wh-grant-s-triple-wood",
+  "category": "whisky",
+  "name": "Grant's Triple Wood",
+  "style": "blended-scotch",
+  "region": "Skotska",
+  "country": "Skotska",
+  "abv": 40,
+  "body": 2,
+  "sweetness": 3,
+  "flavorTags": [
+   "vanilija",
+   "voce"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a",
+  "qualityScore": 5.5,
+  "priceEUR": {
+   "min": 19.0,
+   "max": 19.0
+  },
+  "priceApprox": false,
+  "shopHR": "ecuga.com",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / highball"
+  },
+  "cigarHint": "Blaga cigara",
+  "priceUrl": "https://ecuga.com/katalog/whisky/skotski-blended-whisky/grants",
+  "notes": {
+   "hr": "Tri vrste bačvi — vanilija i banana; pošten svakodnevni blend.",
+   "en": "Three cask types — vanilla and banana; an honest everyday blend."
+  }
+ },
+ {
+  "id": "wh-dewar-s-white-label",
+  "category": "whisky",
+  "name": "Dewar's White Label",
+  "style": "blended-scotch",
+  "region": "Skotska",
+  "country": "Skotska",
+  "abv": 40,
+  "body": 2,
+  "sweetness": 3,
+  "flavorTags": [
+   "med",
+   "cvjetno"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a",
+  "qualityScore": 5.5,
+  "priceEUR": {
+   "min": 21.0,
+   "max": 21.0
+  },
+  "priceApprox": false,
+  "shopHR": "ecuga.com",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / highball"
+  },
+  "cigarHint": "Blaga cigara",
+  "priceUrl": "https://ecuga.com/katalog/whisky/skotski-blended-whisky/dewars-white-label",
+  "notes": {
+   "hr": "Najprodavaniji scotch u SAD-u — medno-cvjetni, gladak.",
+   "en": "America's best-selling scotch — honeyed, floral, smooth."
+  }
+ },
+ {
+  "id": "wh-dewar-s-12",
+  "category": "whisky",
+  "name": "Dewar's 12",
+  "style": "blended-scotch",
+  "region": "Skotska",
+  "country": "Skotska",
+  "abv": 40,
+  "body": 2,
+  "sweetness": 3,
+  "flavorTags": [
+   "med",
+   "voce",
+   "hrast"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a",
+  "qualityScore": 6.5,
+  "priceEUR": {
+   "min": 29.0,
+   "max": 29.0
+  },
+  "priceApprox": false,
+  "shopHR": "ecuga.com",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / highball"
+  },
+  "cigarHint": "Blaga-srednja cigara",
+  "priceUrl": "https://ecuga.com/katalog/whisky/skotski-blended-whisky/dewars-12",
+  "notes": {
+   "hr": "Dvostruko dozrijevanje — puniji med i marcipan.",
+   "en": "Double-aged — fuller honey and marzipan."
+  }
+ },
+ {
+  "id": "wh-dewar-s-8-portuguese-smooth",
+  "category": "whisky",
+  "name": "Dewar's 8 Portuguese Smooth",
+  "style": "blended-scotch",
+  "region": "Skotska",
+  "country": "Skotska",
+  "abv": 40,
+  "body": 2,
+  "sweetness": 4,
+  "flavorTags": [
+   "med",
+   "suho-voce"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a",
+  "qualityScore": 6.0,
+  "priceEUR": {
+   "min": 26.0,
+   "max": 26.0
+  },
+  "priceApprox": false,
+  "shopHR": "ecuga.com",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / highball"
+  },
+  "cigarHint": "Blaga cigara",
+  "priceUrl": "https://ecuga.com/katalog/whisky/skotski-blended-whisky/dewars-8-portuguese-smooth",
+  "notes": {
+   "hr": "Port cask finish — slađi profil crvenog voća (pravi whisky, cask finish).",
+   "en": "Port cask finish — a sweeter red-fruit profile (real whisky, cask finished)."
+  }
+ },
+ {
+  "id": "wh-black-bottle",
+  "category": "whisky",
+  "name": "Black Bottle",
+  "style": "blended-scotch",
+  "region": "Skotska",
+  "country": "Skotska",
+  "abv": 40,
+  "body": 3,
+  "sweetness": 2,
+  "flavorTags": [
+   "dim",
+   "med",
+   "voce"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a",
+  "qualityScore": 6.5,
+  "priceEUR": {
+   "min": 23.0,
+   "max": 23.0
+  },
+  "priceApprox": false,
+  "shopHR": "ecuga.com",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / highball"
+  },
+  "cigarHint": "Srednja cigara",
+  "priceUrl": "https://ecuga.com/katalog/whisky/skotski-blended-whisky/black-bottle",
+  "notes": {
+   "hr": "Blend s islayskim srcem — dašak dima za male novce.",
+   "en": "A blend with an Islay heart — a whiff of smoke for little money."
+  }
+ },
+ {
+  "id": "wh-paddy",
+  "category": "whisky",
+  "name": "Paddy",
+  "style": "irish-blend",
+  "region": "Irska",
+  "country": "Irska",
+  "abv": 40,
+  "body": 1,
+  "sweetness": 2,
+  "flavorTags": [
+   "voce",
+   "travnato"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a",
+  "qualityScore": 5.0,
+  "priceEUR": {
+   "min": 16.0,
+   "max": 16.0
+  },
+  "priceApprox": false,
+  "shopHR": "ecuga.com",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / highball"
+  },
+  "cigarHint": "Vrlo blaga cigara",
+  "priceUrl": "https://ecuga.com/katalog/whisky/irski-whiskey/paddy",
+  "notes": {
+   "hr": "Lagani irski blend iz Corka — mekan i pitak.",
+   "en": "A light Irish blend from Cork — soft and easy."
+  }
+ },
+ {
+  "id": "wh-jameson-original",
+  "category": "whisky",
+  "name": "Jameson Original",
+  "style": "irish-blend",
+  "region": "Irska",
+  "country": "Irska",
+  "abv": 40,
+  "body": 2,
+  "sweetness": 3,
+  "flavorTags": [
+   "voce",
+   "vanilija",
+   "kremasto"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a",
+  "qualityScore": 6.0,
+  "priceEUR": {
+   "min": 23.0,
+   "max": 23.0
+  },
+  "priceApprox": false,
+  "shopHR": "ecuga.com",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / highball"
+  },
+  "cigarHint": "Blaga cigara",
+  "priceUrl": "https://ecuga.com/katalog/whisky/irski-whiskey/jameson-case",
+  "notes": {
+   "hr": "Najprodavaniji irski whiskey na svijetu — trostruka destilacija, mekan.",
+   "en": "The world's best-selling Irish whiskey — triple distilled, soft."
+  }
+ },
+ {
+  "id": "wh-jameson-caskmates-stout",
+  "category": "whisky",
+  "name": "Jameson Caskmates Stout",
+  "style": "irish-blend",
+  "region": "Irska",
+  "country": "Irska",
+  "abv": 40,
+  "body": 2,
+  "sweetness": 3,
+  "flavorTags": [
+   "kakao",
+   "kava",
+   "kremasto"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a",
+  "qualityScore": 6.5,
+  "priceEUR": {
+   "min": 28.0,
+   "max": 28.0
+  },
+  "priceApprox": false,
+  "shopHR": "ecuga.com",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / highball"
+  },
+  "cigarHint": "Blaga-srednja cigara",
+  "priceUrl": "https://ecuga.com/katalog/whisky/irski-whiskey/jameson-caskmates-stout",
+  "notes": {
+   "hr": "Dozrijevan u stout pivskim bačvama — kakao i kava povrh Jamesona.",
+   "en": "Finished in stout beer casks — cocoa and coffee over the Jameson base."
+  }
+ },
+ {
+  "id": "wh-jameson-crested",
+  "category": "whisky",
+  "name": "Jameson Crested",
+  "style": "irish-blend",
+  "region": "Irska",
+  "country": "Irska",
+  "abv": 40,
+  "body": 2,
+  "sweetness": 3,
+  "flavorTags": [
+   "suho-voce",
+   "vanilija"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a",
+  "qualityScore": 7.0,
+  "priceEUR": {
+   "min": 36.0,
+   "max": 36.0
+  },
+  "priceApprox": false,
+  "shopHR": "ecuga.com",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / highball"
+  },
+  "cigarHint": "Blaga-srednja cigara",
+  "priceUrl": "https://ecuga.com/katalog/whisky/irski-whiskey/jameson-crested",
+  "notes": {
+   "hr": "Više sherry bačvi i pot stilla — ozbiljniji Jameson.",
+   "en": "More sherry casks and pot still — a more serious Jameson."
+  }
+ },
+ {
+  "id": "wh-jameson-18",
+  "category": "whisky",
+  "name": "Jameson 18",
+  "style": "irish-blend",
+  "region": "Irska",
+  "country": "Irska",
+  "abv": 40,
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "suho-voce",
+   "vanilija",
+   "hrast"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a",
+  "qualityScore": 8.0,
+  "priceEUR": {
+   "min": 129.0,
+   "max": 129.0
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / highball"
+  },
+  "cigarHint": "Srednja cigara",
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/jameson-bow-street-18-years-old-triple-distilled-irish-whiskey-cask-strength-551-vol-07l-in-giftbox",
+  "notes": {
+   "hr": "Vrh Jameson linije — 18 godina, duboko i svileno.",
+   "en": "The top of the Jameson range — 18 years, deep and silky."
+  }
+ },
+ {
+  "id": "wh-aberfeldy-12",
+  "category": "whisky",
+  "name": "Aberfeldy 12",
+  "style": "highland",
+  "region": "Skotska",
+  "country": "Skotska",
+  "abv": 40,
+  "body": 2,
+  "sweetness": 3,
+  "flavorTags": [
+   "med",
+   "voce"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a",
+  "qualityScore": 7.0,
+  "priceEUR": {
+   "min": 43.0,
+   "max": 43.0
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / kap vode"
+  },
+  "cigarHint": "Blaga-srednja cigara",
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/aberfeldy-12-yo-highland-single-malt-40-vol-07l-u-poklon-kutiji",
+  "notes": {
+   "hr": "Medeni Highland klasik — srce Dewar'sa kao single malt.",
+   "en": "The honeyed Highland classic — the heart of Dewar's as a single malt."
+  }
+ },
+ {
+  "id": "wh-aberfeldy-16",
+  "category": "whisky",
+  "name": "Aberfeldy 16",
+  "style": "highland",
+  "region": "Skotska",
+  "country": "Skotska",
+  "abv": 40,
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "med",
+   "suho-voce",
+   "hrast"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a",
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 89.0,
+   "max": 89.0
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / kap vode"
+  },
+  "cigarHint": "Srednja cigara",
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/aberfeldy-16-yo-highland-single-malt-40-vol-07l-u-poklon-kutiji",
+  "notes": {
+   "hr": "Zreliji med i naranča; oloroso finiš.",
+   "en": "Riper honey and orange; oloroso finish."
+  }
+ },
+ {
+  "id": "wh-aberfeldy-21",
+  "category": "whisky",
+  "name": "Aberfeldy 21",
+  "style": "highland",
+  "region": "Skotska",
+  "country": "Skotska",
+  "abv": 40,
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "med",
+   "suho-voce",
+   "hrast"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a",
+  "qualityScore": 8.0,
+  "priceEUR": {
+   "min": 199.0,
+   "max": 199.0
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / kap vode"
+  },
+  "cigarHint": "Srednja cigara",
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/aberfeldy-21-yo-highland-single-malt-40-vol-07l-gb",
+  "notes": {
+   "hr": "Duga, medena elegancija — 21 godina.",
+   "en": "Long, honeyed elegance — 21 years."
+  }
+ },
+ {
+  "id": "wh-auchentoshan-american-oak",
+  "category": "whisky",
+  "name": "Auchentoshan American Oak",
+  "style": "lowland",
+  "region": "Skotska",
+  "country": "Skotska",
+  "abv": 40,
+  "body": 1,
+  "sweetness": 3,
+  "flavorTags": [
+   "vanilija",
+   "citrus",
+   "kremasto"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a",
+  "qualityScore": 6.5,
+  "priceEUR": {
+   "min": 31.0,
+   "max": 31.0
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / kap vode"
+  },
+  "cigarHint": "Vrlo blaga cigara",
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/auchentoshan-american-oak-single-malt-scotch-whisky-40-vol-1l-u-poklon-kutiji",
+  "notes": {
+   "hr": "Trostruko destiliran Lowland — vanilija i citrus, izrazito lagan.",
+   "en": "Triple-distilled Lowland — vanilla and citrus, distinctly light."
+  }
+ },
+ {
+  "id": "wh-auchentoshan-12",
+  "category": "whisky",
+  "name": "Auchentoshan 12",
+  "style": "lowland",
+  "region": "Skotska",
+  "country": "Skotska",
+  "abv": 40,
+  "body": 2,
+  "sweetness": 3,
+  "flavorTags": [
+   "orasasti",
+   "citrus",
+   "kremasto"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a",
+  "qualityScore": 7.0,
+  "priceEUR": {
+   "min": 39.0,
+   "max": 39.0
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / kap vode"
+  },
+  "cigarHint": "Blaga cigara",
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/auchentoshan-12-years-old-40-vol-07-l-u-poklon-kutiji",
+  "notes": {
+   "hr": "Pržen badem i citrus; uredna trostruka destilacija.",
+   "en": "Toasted almond and citrus; tidy triple distillation."
+  }
+ },
+ {
+  "id": "wh-auchentoshan-three-wood",
+  "category": "whisky",
+  "name": "Auchentoshan Three Wood",
+  "style": "lowland",
+  "region": "Skotska",
+  "country": "Skotska",
+  "abv": 43,
+  "body": 3,
+  "sweetness": 4,
+  "flavorTags": [
+   "suho-voce",
+   "karamela",
+   "kakao"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a",
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 55.0,
+   "max": 55.0
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / kap vode"
+  },
+  "cigarHint": "Srednja cigara, maduro",
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/auchentoshan-three-wood-single-malt-scotch-whisky-43-vol-07l-u-poklon-kutiji",
+  "notes": {
+   "hr": "Tri bačve (bourbon, oloroso, PX) — sladak, tamno voće; lowland u maduro stilu.",
+   "en": "Three casks (bourbon, oloroso, PX) — sweet dark fruit; a Lowland in maduro style."
+  }
+ },
+ {
+  "id": "wh-ancnoc-12",
+  "category": "whisky",
+  "name": "AnCnoc 12",
+  "style": "highland",
+  "region": "Skotska",
+  "country": "Skotska",
+  "abv": 40,
+  "body": 2,
+  "sweetness": 2,
+  "flavorTags": [
+   "citrus",
+   "med",
+   "travnato"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a",
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 40.0,
+   "max": 40.0
+  },
+  "priceApprox": false,
+  "shopHR": "ecuga.com",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / kap vode"
+  },
+  "cigarHint": "Blaga cigara",
+  "priceUrl": "https://ecuga.com/katalog/whisky/skotski-maltgrain-whisky/ancnoc-12",
+  "notes": {
+   "hr": "Svjež, citrusni Highland — podcijenjen među znalcima.",
+   "en": "A fresh, citrusy Highland — underrated among enthusiasts."
+  }
+ },
+ {
+  "id": "wh-nikka-days",
+  "category": "whisky",
+  "name": "Nikka Days",
+  "style": "japanese",
+  "region": "Japan",
+  "country": "Japan",
+  "abv": 40,
+  "body": 2,
+  "sweetness": 3,
+  "flavorTags": [
+   "voce",
+   "med",
+   "kremasto"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a",
+  "qualityScore": 6.5,
+  "priceEUR": {
+   "min": 30.0,
+   "max": 30.0
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / kap vode"
+  },
+  "cigarHint": "Blaga cigara",
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/nikka-days-smooth-delicate-blended-whisky-40-vol-07l-in-giftbox",
+  "notes": {
+   "hr": "Lagani dnevni blend iz Nikke — voćan i gladak.",
+   "en": "Nikka's light daily blend — fruity and smooth."
+  }
+ },
+ {
+  "id": "wh-nikka-coffey-malt",
+  "category": "whisky",
+  "name": "Nikka Coffey Malt",
+  "style": "japanese",
+  "region": "Japan",
+  "country": "Japan",
+  "abv": 45,
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "vanilija",
+   "kremasto",
+   "karamela"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a",
+  "qualityScore": 8.0,
+  "priceEUR": {
+   "min": 50.0,
+   "max": 50.0
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / kap vode"
+  },
+  "cigarHint": "Blaga-srednja cigara",
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/nikka-coffey-malt-whisky-45-vol-07l-gb",
+  "notes": {
+   "hr": "Malt kroz Coffey kolonu — kremasta vanilija, jedinstven stil.",
+   "en": "Malt through a Coffey column still — creamy vanilla, a unique style."
+  }
+ },
+ {
+  "id": "wh-nikka-taketsuru-pure-malt",
+  "category": "whisky",
+  "name": "Nikka Taketsuru Pure Malt",
+  "style": "japanese",
+  "region": "Japan",
+  "country": "Japan",
+  "abv": 43,
+  "body": 3,
+  "sweetness": 2,
+  "flavorTags": [
+   "voce",
+   "hrast",
+   "dim"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a",
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 59.0,
+   "max": 59.0
+  },
+  "priceApprox": false,
+  "shopHR": "ecuga.com",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / kap vode"
+  },
+  "cigarHint": "Srednja cigara",
+  "priceUrl": "https://ecuga.com/katalog/whisky/azijski-whisky/nikka-taketsuru-pure-malt",
+  "notes": {
+   "hr": "Blended malt obiju Nikka destilerija — voće s daškom dima.",
+   "en": "A blended malt of both Nikka distilleries — fruit with a whisper of smoke."
+  }
+ },
+ {
+  "id": "wh-nikka-miyagikyo-single-malt",
+  "category": "whisky",
+  "name": "Nikka Miyagikyo Single Malt",
+  "style": "japanese",
+  "region": "Japan",
+  "country": "Japan",
+  "abv": 45,
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "voce",
+   "cvjetno",
+   "suho-voce"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a",
+  "qualityScore": 8.0,
+  "priceEUR": {
+   "min": 75.0,
+   "max": 75.0
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / kap vode"
+  },
+  "cigarHint": "Srednja cigara",
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/nikka-miyagikyo-peated-single-malt-whisky-2021-48-vol-07l-u-poklon-kutiji",
+  "notes": {
+   "hr": "Elegantni, voćni single malt iz Sendaija.",
+   "en": "The elegant, fruity single malt from Sendai."
+  }
+ },
+ {
+  "id": "wh-nikka-yoichi-single-malt",
+  "category": "whisky",
+  "name": "Nikka Yoichi Single Malt",
+  "style": "japanese",
+  "region": "Japan",
+  "country": "Japan",
+  "abv": 45,
+  "body": 4,
+  "sweetness": 2,
+  "flavorTags": [
+   "dim",
+   "voce",
+   "zacini"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a",
+  "qualityScore": 8.0,
+  "priceEUR": {
+   "min": 75.0,
+   "max": 90.0
+  },
+  "priceApprox": true,
+  "shopHR": "Siroka dostupnost",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / kap vode"
+  },
+  "cigarHint": "Srednja-puna cigara",
+  "priceUrl": null,
+  "notes": {
+   "hr": "Robusniji, blago dimljeni single malt s Hokkaida.",
+   "en": "The more robust, lightly smoky single malt from Hokkaido."
+  }
+ },
+ {
+  "id": "wh-togouchi-premium",
+  "category": "whisky",
+  "name": "Togouchi Premium",
+  "style": "japanese",
+  "region": "Japan",
+  "country": "Japan",
+  "abv": 40,
+  "body": 2,
+  "sweetness": 3,
+  "flavorTags": [
+   "voce",
+   "med"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a",
+  "qualityScore": 6.0,
+  "priceEUR": {
+   "min": 40.0,
+   "max": 48.0
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / kap vode"
+  },
+  "cigarHint": "Blaga cigara",
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/togouchi-premium-japanese-blended-whisky-40-vol-07-l-gb",
+  "notes": {
+   "hr": "Japanski blend dozrijevan u tunelu — lagan i mekan.",
+   "en": "A Japanese blend aged in a tunnel — light and soft."
+  }
+ },
+ {
+  "id": "wh-hatozaki-pure-malt",
+  "category": "whisky",
+  "name": "Hatozaki Pure Malt",
+  "style": "japanese",
+  "region": "Japan",
+  "country": "Japan",
+  "abv": 46,
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "voce",
+   "med",
+   "hrast"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a",
+  "qualityScore": 6.5,
+  "priceEUR": {
+   "min": 45.0,
+   "max": 52.0
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / kap vode"
+  },
+  "cigarHint": "Blaga-srednja cigara",
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/hatozaki-pure-malt-japanese-blended-whisky-46-vol-07l-u-poklon-kutiji",
+  "notes": {
+   "hr": "Pure malt iz Akashija — voćan, s mizunara udjelom.",
+   "en": "Pure malt from Akashi — fruity, with a mizunara component."
+  }
+ },
+ {
+  "id": "wh-four-roses-bourbon",
+  "category": "whisky",
+  "name": "Four Roses Bourbon",
+  "style": "bourbon",
+  "region": "Kentucky, SAD",
+  "country": "SAD",
+  "abv": 40,
+  "body": 2,
+  "sweetness": 3,
+  "flavorTags": [
+   "karamela",
+   "vanilija",
+   "cvjetno"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": "Bez aditiva (US \"straight\" pravila ne dopustaju dodatke)",
+  "additiveSource": "US regulativa (straight whiskey)",
+  "qualityScore": 6.0,
+  "priceEUR": {
+   "min": 24.0,
+   "max": 28.0
+  },
+  "priceApprox": true,
+  "shopHR": "Siroka dostupnost",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / Old Fashioned"
+  },
+  "cigarHint": "Blaga-srednja cigara",
+  "priceUrl": null,
+  "notes": {
+   "hr": "Cvjetni, lagani ulazni bourbon — 10 recepata u blendu.",
+   "en": "A floral, light entry bourbon — ten recipes in the blend."
+  }
+ },
+ {
+  "id": "wh-four-roses-single-barrel",
+  "category": "whisky",
+  "name": "Four Roses Single Barrel",
+  "style": "bourbon",
+  "region": "Kentucky, SAD",
+  "country": "SAD",
+  "abv": 50,
+  "body": 4,
+  "sweetness": 3,
+  "flavorTags": [
+   "karamela",
+   "zacini",
+   "hrast"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": "Bez aditiva (US \"straight\" pravila ne dopustaju dodatke)",
+  "additiveSource": "US regulativa (straight whiskey)",
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 37.0,
+   "max": 37.0
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / Old Fashioned"
+  },
+  "cigarHint": "Srednja-puna cigara",
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/four-roses-single-barrel-bourbon-50-vol-07-l",
+  "notes": {
+   "hr": "100 proof single barrel — začinjen, pun; izvrstan omjer.",
+   "en": "A 100-proof single barrel — spicy, full; excellent value."
+  }
+ },
+ {
+  "id": "wh-evan-williams-black-label",
+  "category": "whisky",
+  "name": "Evan Williams Black Label",
+  "style": "bourbon",
+  "region": "Kentucky, SAD",
+  "country": "SAD",
+  "abv": 43,
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "karamela",
+   "vanilija"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": "Bez aditiva (US \"straight\" pravila ne dopustaju dodatke)",
+  "additiveSource": "US regulativa (straight whiskey)",
+  "qualityScore": 5.5,
+  "priceEUR": {
+   "min": 18.0,
+   "max": 18.0
+  },
+  "priceApprox": false,
+  "shopHR": "ecuga.com",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / Old Fashioned"
+  },
+  "cigarHint": "Srednja cigara",
+  "priceUrl": "https://ecuga.com/katalog/whisky/americki-bourbon-whiskey/evan-williams-black-label-2",
+  "notes": {
+   "hr": "Budžetni bourbon standard — karamela i hrast bez komplikacija.",
+   "en": "The budget bourbon standard — caramel and oak, no fuss."
+  }
+ },
+ {
+  "id": "wh-evan-williams-single-barrel",
+  "category": "whisky",
+  "name": "Evan Williams Single Barrel",
+  "style": "bourbon",
+  "region": "Kentucky, SAD",
+  "country": "SAD",
+  "abv": 43.3,
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "karamela",
+   "vanilija",
+   "hrast"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": "Bez aditiva (US \"straight\" pravila ne dopustaju dodatke)",
+  "additiveSource": "US regulativa (straight whiskey)",
+  "qualityScore": 7.0,
+  "priceEUR": {
+   "min": 40.0,
+   "max": 40.0
+  },
+  "priceApprox": false,
+  "shopHR": "ecuga.com",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / Old Fashioned"
+  },
+  "cigarHint": "Srednja cigara",
+  "priceUrl": "https://ecuga.com/katalog/whisky/americki-bourbon-whiskey/evan-williams-single-barrel",
+  "notes": {
+   "hr": "Vintage-datiran single barrel — ozbiljan korak iznad Black Labela.",
+   "en": "A vintage-dated single barrel — a serious step above Black Label."
+  }
+ },
+ {
+  "id": "wh-elijah-craig-straight-rye",
+  "category": "whisky",
+  "name": "Elijah Craig Straight Rye",
+  "style": "rye",
+  "region": "Kentucky, SAD",
+  "country": "SAD",
+  "abv": 47,
+  "body": 3,
+  "sweetness": 2,
+  "flavorTags": [
+   "zacini",
+   "papar",
+   "vanilija"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": "Bez aditiva (US \"straight\" pravila ne dopustaju dodatke)",
+  "additiveSource": "US regulativa (straight whiskey)",
+  "qualityScore": 7.0,
+  "priceEUR": {
+   "min": 45.0,
+   "max": 45.0
+  },
+  "priceApprox": false,
+  "shopHR": "ecuga.com",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / Old Fashioned"
+  },
+  "cigarHint": "Srednja-puna cigara",
+  "priceUrl": "https://ecuga.com/katalog/whisky/americki-bourbon-whiskey/elijah-craig-straight-rye",
+  "notes": {
+   "hr": "Začinski rye iz Heaven Hilla — papar i menta.",
+   "en": "A spicy rye from Heaven Hill — pepper and mint."
+  }
+ },
+ {
+  "id": "wh-canadian-club-1858",
+  "category": "whisky",
+  "name": "Canadian Club 1858",
+  "style": "world",
+  "region": "Kanada",
+  "country": "Kanada",
+  "abv": 40,
+  "body": 1,
+  "sweetness": 3,
+  "flavorTags": [
+   "vanilija",
+   "karamela"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a",
+  "qualityScore": 5.0,
+  "priceEUR": {
+   "min": 17.0,
+   "max": 17.0
+  },
+  "priceApprox": false,
+  "shopHR": "ecuga.com",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / highball"
+  },
+  "cigarHint": "Vrlo blaga cigara",
+  "priceUrl": "https://ecuga.com/katalog/whisky/kanadski-whisky/canadian-club-1858",
+  "notes": {
+   "hr": "Lagani kanadski blend — highball teritorij.",
+   "en": "A light Canadian blend — highball territory."
+  }
+ },
+ {
+  "id": "wh-crown-royal",
+  "category": "whisky",
+  "name": "Crown Royal",
+  "style": "world",
+  "region": "Kanada",
+  "country": "Kanada",
+  "abv": 40,
+  "body": 2,
+  "sweetness": 3,
+  "flavorTags": [
+   "vanilija",
+   "karamela",
+   "voce"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a",
+  "qualityScore": 6.0,
+  "priceEUR": {
+   "min": 38.0,
+   "max": 38.0
+  },
+  "priceApprox": false,
+  "shopHR": "ecuga.com",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / highball"
+  },
+  "cigarHint": "Blaga cigara",
+  "priceUrl": "https://ecuga.com/katalog/whisky/kanadski-whisky/crown-royal",
+  "notes": {
+   "hr": "Kanadski kraljevski blend u baršunastoj vrećici — mekan i sladak.",
+   "en": "Canada's royal blend in the velvet bag — soft and sweet."
+  }
+ },
+ {
+  "id": "wh-glenfiddich-12",
+  "category": "whisky",
+  "name": "Glenfiddich 12",
+  "style": "speyside-fruity",
+  "region": "Skotska",
+  "country": "Skotska",
+  "abv": 40,
+  "body": 2,
+  "sweetness": 3,
+  "flavorTags": [
+   "voce",
+   "cvjetno",
+   "vanilija"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a",
+  "qualityScore": 7.0,
+  "priceEUR": {
+   "min": 35.0,
+   "max": 42.0
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / kap vode"
+  },
+  "cigarHint": "Blaga cigara",
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/glenfiddich-12-yo-single-malt-scotch-whisky-40-vol-1l-u-poklon-kutiji",
+  "notes": {
+   "hr": "Najprodavaniji single malt na svijetu — kruška i svježina.",
+   "en": "The world's best-selling single malt — pear and freshness."
+  }
+ },
+ {
+  "id": "wh-the-glenlivet-12",
+  "category": "whisky",
+  "name": "The Glenlivet 12",
+  "style": "speyside-fruity",
+  "region": "Skotska",
+  "country": "Skotska",
+  "abv": 40,
+  "body": 2,
+  "sweetness": 3,
+  "flavorTags": [
+   "voce",
+   "med",
+   "cvjetno"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a",
+  "qualityScore": 7.0,
+  "priceEUR": {
+   "min": 38.0,
+   "max": 45.0
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / kap vode"
+  },
+  "cigarHint": "Blaga cigara",
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/the-glenlivet-12-yo-first-fill-single-malt-scotch-whisky-40-vol-07l-u-poklon-kutiji",
+  "notes": {
+   "hr": "Speyside arhetip — voćan, cvjetan, gladak.",
+   "en": "The Speyside archetype — fruity, floral, smooth."
+  }
+ },
+ {
+  "id": "wh-the-glenlivet-founder-s-reserve",
+  "category": "whisky",
+  "name": "The Glenlivet Founder's Reserve",
+  "style": "speyside-fruity",
+  "region": "Skotska",
+  "country": "Skotska",
+  "abv": 40,
+  "body": 2,
+  "sweetness": 3,
+  "flavorTags": [
+   "voce",
+   "citrus",
+   "vanilija"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a",
+  "qualityScore": 6.5,
+  "priceEUR": {
+   "min": 30.0,
+   "max": 35.0
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / kap vode"
+  },
+  "cigarHint": "Blaga cigara",
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/the-glenlivet-founders-reserve-single-malt-scotch-whisky-40-vol-07l-u-poklon-kutiji",
+  "notes": {
+   "hr": "Ulaz u Glenlivet — američki hrast, citrus i vanilija.",
+   "en": "The Glenlivet entry point — American oak, citrus and vanilla."
+  }
+ },
+ {
+  "id": "wh-monkey-shoulder",
+  "category": "whisky",
+  "name": "Monkey Shoulder",
+  "style": "blended-scotch",
+  "region": "Skotska",
+  "country": "Skotska",
+  "abv": 40,
+  "body": 2,
+  "sweetness": 3,
+  "flavorTags": [
+   "med",
+   "vanilija",
+   "voce"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a",
+  "qualityScore": 6.5,
+  "priceEUR": {
+   "min": 28.0,
+   "max": 34.0
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / highball"
+  },
+  "cigarHint": "Blaga-srednja cigara",
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/monkey-shoulder-the-original-blended-malt-batch-27-40-vol-07l",
+  "notes": {
+   "hr": "Blended malt tri Speyside destilerije — rođen za koktele, uredan i čist.",
+   "en": "A blended malt of three Speyside distilleries — born for cocktails, tidy neat too."
+  }
+ },
+ {
+  "id": "wh-tullamore-d-e-w-original",
+  "category": "whisky",
+  "name": "Tullamore D.E.W. Original",
+  "style": "irish-blend",
+  "region": "Irska",
+  "country": "Irska",
+  "abv": 40,
+  "body": 1,
+  "sweetness": 3,
+  "flavorTags": [
+   "voce",
+   "kremasto"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a",
+  "qualityScore": 5.5,
+  "priceEUR": {
+   "min": 17.0,
+   "max": 21.0
+  },
+  "priceApprox": true,
+  "shopHR": "Siroka dostupnost",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / highball"
+  },
+  "cigarHint": "Vrlo blaga cigara",
+  "priceUrl": null,
+  "notes": {
+   "hr": "Trostruki blend, trostruka destilacija — lagan i pitak.",
+   "en": "Triple blend, triple distilled — light and easy."
+  }
+ },
+ {
+  "id": "wh-tullamore-d-e-w-12-special-reserve",
+  "category": "whisky",
+  "name": "Tullamore D.E.W. 12 Special Reserve",
+  "style": "irish-blend",
+  "region": "Irska",
+  "country": "Irska",
+  "abv": 40,
+  "body": 2,
+  "sweetness": 3,
+  "flavorTags": [
+   "voce",
+   "suho-voce",
+   "vanilija"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a",
+  "qualityScore": 6.5,
+  "priceEUR": {
+   "min": 30.0,
+   "max": 36.0
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / highball"
+  },
+  "cigarHint": "Blaga cigara",
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/tullamore-dew-12-years-old-irish-whiskey-special-reserve-40-vol-07l-in-giftbox",
+  "notes": {
+   "hr": "Više pot stilla i sherry bačvi — ozbiljniji Tullamore.",
+   "en": "More pot still and sherry casks — a more serious Tullamore."
+  }
+ },
+ {
+  "id": "wh-tullamore-d-e-w-14-single-malt",
+  "category": "whisky",
+  "name": "Tullamore D.E.W. 14 Single Malt",
+  "style": "irish-single-malt",
+  "region": "Irska",
+  "country": "Irska",
+  "abv": 41.3,
+  "body": 2,
+  "sweetness": 3,
+  "flavorTags": [
+   "voce",
+   "med",
+   "hrast"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a",
+  "qualityScore": 7.0,
+  "priceEUR": {
+   "min": 40.0,
+   "max": 48.0
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / kap vode"
+  },
+  "cigarHint": "Blaga-srednja cigara",
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/tullamore-dew-14-yo-single-malt-irish-whiskey-413-vol-07l-u-poklon-kutiji",
+  "notes": {
+   "hr": "Single malt u četiri vrste bačvi.",
+   "en": "A single malt across four cask types."
+  }
+ },
+ {
+  "id": "wh-the-singleton-dufftown-12",
+  "category": "whisky",
+  "name": "The Singleton Dufftown 12",
+  "style": "speyside-fruity",
+  "region": "Skotska",
+  "country": "Skotska",
+  "abv": 40,
+  "body": 2,
+  "sweetness": 3,
+  "flavorTags": [
+   "voce",
+   "med",
+   "kremasto"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a",
+  "qualityScore": 6.5,
+  "priceEUR": {
+   "min": 33.0,
+   "max": 40.0
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / kap vode"
+  },
+  "cigarHint": "Blaga cigara",
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/singleton-of-dufftown-12-years-old-gb-40-vol-07-l",
+  "notes": {
+   "hr": "Pristupačan, sladak Speyside — kruh s medom.",
+   "en": "An approachable, sweet Speyside — honey on toast."
+  }
+ },
+ {
+  "id": "wh-jura-10",
+  "category": "whisky",
+  "name": "Jura 10",
+  "style": "island",
+  "region": "Skotska",
+  "country": "Skotska",
+  "abv": 40,
+  "body": 2,
+  "sweetness": 3,
+  "flavorTags": [
+   "med",
+   "voce",
+   "dim"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a",
+  "qualityScore": 6.5,
+  "priceEUR": {
+   "min": 35.0,
+   "max": 42.0
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / kap vode"
+  },
+  "cigarHint": "Blaga-srednja cigara",
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/jura-10-years-old-40-vol-07l",
+  "notes": {
+   "hr": "Otočni malt s najblažim daškom dima.",
+   "en": "An island malt with the gentlest whisper of smoke."
+  }
+ },
+ {
+  "id": "wh-jura-seven-wood",
+  "category": "whisky",
+  "name": "Jura Seven Wood",
+  "style": "island",
+  "region": "Skotska",
+  "country": "Skotska",
+  "abv": 42,
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "hrast",
+   "voce",
+   "kakao"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a",
+  "qualityScore": 7.0,
+  "priceEUR": {
+   "min": 48.0,
+   "max": 58.0
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / kap vode"
+  },
+  "cigarHint": "Srednja cigara",
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/jura-seven-wood-single-malt-scotch-whisky-42-vol-07l-u-poklon-kutiji",
+  "notes": {
+   "hr": "Sedam vrsta bačvi — bogatiji otočni profil.",
+   "en": "Seven cask types — a richer island profile."
+  }
+ },
+ {
+  "id": "wh-dalwhinnie-15",
+  "category": "whisky",
+  "name": "Dalwhinnie 15",
+  "style": "highland",
+  "region": "Skotska",
+  "country": "Skotska",
+  "abv": 43,
+  "body": 2,
+  "sweetness": 3,
+  "flavorTags": [
+   "med",
+   "cvjetno",
+   "dim"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a",
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 48.0,
+   "max": 58.0
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / kap vode"
+  },
+  "cigarHint": "Blaga-srednja cigara",
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/dalwhinnie-15-years-old-highland-single-malt-scotch-whisky",
+  "notes": {
+   "hr": "Najviša destilerija Škotske — med, vrijesak i trag dima.",
+   "en": "Scotland's highest distillery — honey, heather and a trace of smoke."
+  }
+ },
+ {
+  "id": "wh-tobermory-10",
+  "category": "whisky",
+  "name": "Tobermory 10",
+  "style": "island",
+  "region": "Skotska",
+  "country": "Skotska",
+  "abv": 46.3,
+  "body": 3,
+  "sweetness": 2,
+  "flavorTags": [
+   "citrus",
+   "travnato",
+   "mineralno"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a",
+  "qualityScore": 7.0,
+  "priceEUR": {
+   "min": 45.0,
+   "max": 52.0
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / kap vode"
+  },
+  "cigarHint": "Blaga-srednja cigara",
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/tobermory-10-years-old-gb-463-vol-07-l",
+  "notes": {
+   "hr": "Nedimljeni malt s otoka Mull — svjež i primorski.",
+   "en": "The unpeated malt from Mull — fresh and coastal."
+  }
+ },
+ {
+  "id": "wh-glenmorangie-original-10",
+  "category": "whisky",
+  "name": "Glenmorangie Original 10",
+  "style": "highland",
+  "region": "Skotska",
+  "country": "Skotska",
+  "abv": 40,
+  "body": 2,
+  "sweetness": 3,
+  "flavorTags": [
+   "citrus",
+   "vanilija",
+   "cvjetno"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a",
+  "qualityScore": 7.0,
+  "priceEUR": {
+   "min": 35.0,
+   "max": 42.0
+  },
+  "priceApprox": true,
+  "shopHR": "Siroka dostupnost",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / kap vode"
+  },
+  "cigarHint": "Blaga cigara",
+  "priceUrl": null,
+  "notes": {
+   "hr": "Visoki still, citrus i vanilija — Highland klasik za početak večeri.",
+   "en": "Tall stills, citrus and vanilla — a Highland classic to open the evening."
+  }
+ },
+ {
+  "id": "wh-the-famous-grouse",
+  "category": "whisky",
+  "name": "The Famous Grouse",
+  "style": "blended-scotch",
+  "region": "Skotska",
+  "country": "Skotska",
+  "abv": 40,
+  "body": 2,
+  "sweetness": 3,
+  "flavorTags": [
+   "med",
+   "voce"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
+  "additiveSource": "EU pravila: whisky smije samo E150a",
+  "qualityScore": 5.5,
+  "priceEUR": {
+   "min": 13.0,
+   "max": 16.0
+  },
+  "priceApprox": true,
+  "shopHR": "Siroka dostupnost",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / highball"
+  },
+  "cigarHint": "Blaga cigara",
+  "priceUrl": null,
+  "notes": {
+   "hr": "Najprodavaniji blend u Škotskoj — pouzdan svakodnevni standard.",
+   "en": "Scotland's best-selling blend — a dependable daily standard."
+  }
  }
 ]
