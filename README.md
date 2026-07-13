@@ -26,7 +26,10 @@ indeksima rangiranim po kvaliteti za sipping uz cigaru.
 ## Struktura
 
 - `app/` — Vite + React + TS + Tailwind PWA
-  - `src/data/*.json` — indeksi (138 rumova, 164 whiskyja, 75 brandy, 20 gin, 44 vina, 23 kave, 480 cigara)
+  - `src/data/*.json` — indeksi (138 rumova, 230 whiskyja, 84 brandy/grappa, 20 gin, 44 vina, 23 kave, 480 cigara)
+  - `scripts/seed/whiskies_classics_seed.json` — klasici koje allez/ecuga ne drže
+    (Talisker 10, Ardbeg 10, Springbank 10, bourboni…); nakon regeneracije iz
+    Excela vrati ih s `python scripts/merge-whisky-classics.py`
   - `src/data/wines.json` — vino po istom principu punoće (porto, sherry,
     madeira, prošek, puna/srednja crna, bijela, pjenušava, desertna); HR cijene
     (Vivat/Miva/Vrutak/vinoteke), približne označene `priceApprox`
