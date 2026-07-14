@@ -507,8 +507,8 @@ function PickRow({
       onClick={onPick}
       className="flex w-full items-baseline justify-between gap-2 rounded-lg border border-dim/15 bg-cedar px-3 py-2.5 text-left hover:border-zlato/40"
     >
-      <span className="text-sm text-papir">{title}</span>
-      <span className="shrink-0 text-xs text-dim">{sub}</span>
+      <span className="min-w-0 truncate text-sm text-papir">{title}</span>
+      <span className="min-w-0 shrink truncate text-right text-xs text-dim">{sub}</span>
     </button>
   );
 }
