@@ -82,7 +82,8 @@ export function DetailSheet({
           <div className="ml-auto flex items-center gap-2">
             <span className="text-xs text-dim">{t("coll.myRating")}</span>
             <select
-              value={state.rating ?? ""}
+              // opcije su "10.0","9.5"... — broj 10 mora postati "10.0" da se prikaže
+              value={state.rating != null ? state.rating.toFixed(1) : ""}
               onChange={(e) =>
                 updateItem(id, {
                   rating: e.target.value ? Number(e.target.value) : null,
