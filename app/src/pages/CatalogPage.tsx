@@ -81,7 +81,12 @@ export function CatalogPage({
         : CIGARS.filter(
             (c) =>
               c.markets.includes(market) &&
-              (!q || `${c.brand} ${c.line} ${c.vitola} ${c.wrapper}`.toLowerCase().includes(q)) &&
+              (!q ||
+                norm(
+                  `${c.brand} ${c.line} ${c.vitola} ${c.wrapper} ${c.country} ${(c.vitolas ?? [])
+                    .map((v) => v.name)
+                    .join(" ")}`,
+                ).includes(norm(q))) &&
               (strengthFilter == null || c.strength === strengthFilter),
           ),
     [tab, q, strengthFilter, market],
