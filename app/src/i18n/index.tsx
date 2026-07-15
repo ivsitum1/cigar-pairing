@@ -226,6 +226,7 @@ export const STYLE_LABELS: Record<string, LocalizedText> = {
   "brandy-italian": { hr: "Talijanski brandy", en: "Italian brandy" },
   "brandy-armenian": { hr: "Armenski brandy", en: "Armenian brandy" },
   "brandy-german": { hr: "Njemački brandy", en: "German brandy" },
+  "brandy-other": { hr: "Brandy", en: "Brandy" },
   vinjak: { hr: "Vinjak (HR)", en: "Vinjak (HR)" },
   calvados: { hr: "Calvados", en: "Calvados" },
   grappa: { hr: "Grappa (odležana)", en: "Grappa (aged)" },
