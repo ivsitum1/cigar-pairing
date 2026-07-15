@@ -39,7 +39,8 @@ function ringFromArcRefs(arcRefs) {
 }
 
 const round1 = (v) => Math.round(v * 10) / 10;
-const TOLERANCE = 0.25; // stupnjeva — na world pogledu ~0.25° je ispod pixela
+const TOLERANCE = 0.1; // stupnjeva — ispod pixela na world pogledu, a dovoljno
+// fino da kontinentalna obala u zoom pogledima (Jadran, Iberija) ne bude kockasta
 
 // Douglas-Peucker po udaljenosti točke od segmenta
 function dpSimplify(pts, tol) {
@@ -120,11 +121,18 @@ const bboxOf = (ring) => {
   return { minLon, maxLon, minLat, maxLat };
 };
 
-// karipski zoom pogled: tu čuvamo i male otoke (Sv. Lucija, Barbados...)
-const CARIB = { minLon: -108, maxLon: -50, minLat: 1, maxLat: 37 };
-const inCarib = (b) =>
-  b.maxLon >= CARIB.minLon && b.minLon <= CARIB.maxLon &&
-  b.maxLat >= CARIB.minLat && b.minLat <= CARIB.maxLat;
+// zoom pogledi: u njima čuvamo i male otoke u finoj rezoluciji
+// (Karibi: Sv. Lucija, Barbados...; Europa: Jadran, Balearidi, Egej...)
+const ZOOMS = [
+  { minLon: -108, maxLon: -50, minLat: 1, maxLat: 37 },  // Karibi
+  { minLon: -12, maxLon: 48, minLat: 34, maxLat: 62 },   // Europa
+];
+const inZoom = (b) =>
+  ZOOMS.some(
+    (z) =>
+      b.maxLon >= z.minLon && b.minLon <= z.maxLon &&
+      b.maxLat >= z.minLat && b.minLat <= z.maxLat,
+  );
 
 // otoci s markerima na karti izvan Kariba — uvijek ih zadrži
 const KEEP_POINTS = [
@@ -153,10 +161,10 @@ for (const geom of topo.objects.land.geometries) {
       const size = Math.max(b.maxLon - b.minLon, b.maxLat - b.minLat);
       // sitni otočići bez markera na karti su nevidljivi na world pogledu;
       // otoci s markerima (Bermuda, Sejšeli...) čuvaju se preko KEEP liste
-      const kept = inCarib(b) || nearKeepPoint(b);
+      const kept = inZoom(b) || nearKeepPoint(b);
       if (size < 0.4 && !kept) continue;
-      // fina rezolucija samo za otoke u zoom pogledu / s markerom;
-      // kontinentalne mase (i kad sijeku karipski bbox) idu grubo
+      // fina rezolucija samo za otoke u zoom pogledima / s markerom;
+      // kontinentalne mase (i kad sijeku zoom bbox) idu grubo
       const fine = kept && size < 12;
       for (const chain of splitAntimeridian(raw)) {
         const ring = dedupeRounded(

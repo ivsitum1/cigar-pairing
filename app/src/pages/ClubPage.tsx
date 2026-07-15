@@ -78,7 +78,7 @@ export function ClubPage() {
   };
 
   // karta
-  const [view, setView] = useState<"world" | "carib">("world");
+  const [view, setView] = useState<"world" | "carib" | "europe">("world");
   const [country, setCountry] = useState<CountryInfo | null>(null);
   const [detail, setDetail] = useState<
     { kind: "cigar"; item: Cigar } | { kind: "drink"; item: Drink } | null
@@ -109,7 +109,13 @@ export function ClubPage() {
   // projekcija: x = lon+180, y = 75-lat (viewBox pokriva lat -45..75)
   const X = (lon: number) => lon + 180;
   const Y = (lat: number) => 75 - lat;
-  const viewBox = view === "world" ? "0 0 360 120" : "72 38 58 36";
+  // zoom pogledi: Karibi lon -108..-50 / lat 1..37; Europa lon -12..48 / lat 34..62
+  const VIEWBOXES: Record<typeof view, string> = {
+    world: "0 0 360 120",
+    carib: "72 38 58 36",
+    europe: "168 13 60 28",
+  };
+  const viewBox = VIEWBOXES[view];
   const markerSize = view === "world" ? 7 : 3.2;
 
   // Atlas: Natural Earth obrisi kopna (world_outline.json generira
@@ -218,6 +224,9 @@ export function ClubPage() {
         </Chip>
         <Chip active={view === "carib"} onClick={() => setView("carib")}>
           🏝 {t("club.mapCarib")}
+        </Chip>
+        <Chip active={view === "europe"} onClick={() => setView("europe")}>
+          🏛 {t("club.mapEurope")}
         </Chip>
       </div>
       <div className="overflow-hidden rounded-xl border border-dim/15 bg-humidor/80">
