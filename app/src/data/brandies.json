@@ -414,11 +414,11 @@
   "additiveSource": "Excel MASTER",
   "qualityScore": 8.0,
   "priceEUR": {
-   "min": 70.0,
-   "max": 70.0
+   "min": 152.5,
+   "max": 152.5
   },
   "priceApprox": false,
-  "shopHR": "specijalist",
+  "shopHR": "allez.hr",
   "status": "META",
   "pairable": true,
   "serving": {
@@ -1306,6 +1306,102 @@
   }
  },
  {
+  "id": "br-ararat-5-stars",
+  "category": "brandy",
+  "name": "Ararat 5 Stars",
+  "style": "brandy-armenian",
+  "region": "Armenija",
+  "country": "Armenija",
+  "abv": 40,
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "suho-voce",
+   "cokolada",
+   "zacini"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": {
+   "hr": "Nije deklarirano",
+   "en": "Not declared"
+  },
+  "additiveSource": "web provjera 2026-07",
+  "qualityScore": 6.5,
+  "priceEUR": {
+   "min": 21.39,
+   "max": 21.99
+  },
+  "priceApprox": false,
+  "shopHR": "Roto/Fumar",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "neat": 3,
+   "water": 2,
+   "rocks": 2,
+   "highball": 0,
+   "cola": 0,
+   "best": "Cisto"
+  },
+  "cigarHint": {
+   "hr": "Blaga do srednja cigara",
+   "en": "A mild-to-medium cigar"
+  },
+  "priceUrl": "https://webshop.rotodinamic.hr/ararat-5-stars-brandy-gift-box",
+  "notes": {
+   "hr": "Ulaz u Ararat asortiman (5 g.) — vedar, voćan, pun okusa za tu cijenu.",
+   "en": "The entry to the Ararat range (5 y) — bright, fruity, full-flavoured for the price."
+  }
+ },
+ {
+  "id": "br-ararat-ani-7",
+  "category": "brandy",
+  "name": "Ararat Ani 7",
+  "style": "brandy-armenian",
+  "region": "Armenija",
+  "country": "Armenija",
+  "abv": 40,
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "suho-voce",
+   "cokolada",
+   "zacini"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": {
+   "hr": "Nije deklarirano",
+   "en": "Not declared"
+  },
+  "additiveSource": "web provjera 2026-07",
+  "qualityScore": 7.0,
+  "priceEUR": {
+   "min": 46.2,
+   "max": 46.2
+  },
+  "priceApprox": false,
+  "shopHR": "Kavijar+Riba (Vasilisa, ZG)",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "neat": 3,
+   "water": 2,
+   "rocks": 2,
+   "highball": 0,
+   "cola": 0,
+   "best": "Cisto"
+  },
+  "cigarHint": {
+   "hr": "Blaga do srednja cigara",
+   "en": "A mild-to-medium cigar"
+  },
+  "priceUrl": "https://kavijarshop.com/proizvod/konjak-ararat-7-godina-ani/",
+  "notes": {
+   "hr": "Sedmogodišnji međukorak (0,5 l u HR ponudi) — mekši od Akhtamara, suho voće i vanilija.",
+   "en": "The seven-year middle step (0.5 l in the Croatian offer) — softer than Akhtamar, dried fruit and vanilla."
+  }
+ },
+ {
   "id": "br-ararat-10-akhtamar",
   "category": "brandy",
   "name": "Ararat 10 Akhtamar",
@@ -1349,8 +1445,200 @@
   },
   "priceUrl": null,
   "notes": {
-   "hr": "Armenski klasik (Churchillov favorit) — duhansko-kakao profil, izvrstan uz cigaru za tu cijenu.",
-   "en": "The Armenian classic (Churchill's favourite) — tobacco-cocoa profile, superb with a cigar at this price."
+   "hr": "Armenski klasik — duhansko-kakao profil, izvrstan uz cigaru za tu cijenu.",
+   "en": "The Armenian classic — tobacco-cocoa profile, superb with a cigar at this price."
+  }
+ },
+ {
+  "id": "br-ararat-vaspurakan-15",
+  "category": "brandy",
+  "name": "Ararat Vaspurakan 15",
+  "style": "brandy-armenian",
+  "region": "Armenija",
+  "country": "Armenija",
+  "abv": 40,
+  "body": 4,
+  "sweetness": 3,
+  "flavorTags": [
+   "suho-voce",
+   "cokolada",
+   "zacini"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": {
+   "hr": "Nije deklarirano",
+   "en": "Not declared"
+  },
+  "additiveSource": "web provjera 2026-07",
+  "qualityScore": 8.0,
+  "priceEUR": {
+   "min": 88.5,
+   "max": 88.5
+  },
+  "priceApprox": false,
+  "shopHR": "allez.hr",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "neat": 3,
+   "water": 2,
+   "rocks": 2,
+   "highball": 0,
+   "cola": 0,
+   "best": "Cisto"
+  },
+  "cigarHint": {
+   "hr": "Habano srednje-jake",
+   "en": "A medium-to-strong Habano"
+  },
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/ararat-vaspurakan-15-yo-40-vol-07l-u-poklon-kutiji",
+  "notes": {
+   "hr": "15 godina kavkaskog hrasta — duhan, orah i tamna čokolada; ozbiljna dubina.",
+   "en": "Fifteen years in Caucasian oak — tobacco, walnut and dark chocolate; serious depth."
+  }
+ },
+ {
+  "id": "br-ararat-dvin-50",
+  "category": "brandy",
+  "name": "Ararat Dvin Collection Reserve",
+  "style": "brandy-armenian",
+  "region": "Armenija",
+  "country": "Armenija",
+  "abv": 50,
+  "body": 5,
+  "sweetness": 3,
+  "flavorTags": [
+   "suho-voce",
+   "cokolada",
+   "zacini"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": {
+   "hr": "Nije deklarirano",
+   "en": "Not declared"
+  },
+  "additiveSource": "web provjera 2026-07",
+  "qualityScore": 8.5,
+  "priceEUR": {
+   "min": 87.2,
+   "max": 87.2
+  },
+  "priceApprox": false,
+  "shopHR": "allez.hr",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "neat": 3,
+   "water": 2,
+   "rocks": 2,
+   "highball": 0,
+   "cola": 0,
+   "best": "Cisto"
+  },
+  "cigarHint": {
+   "hr": "Punija, jača cigara",
+   "en": "A fuller, stronger cigar"
+  },
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/ararat-dvin-collection-reserve-50-vol-07l-u-poklon-kutiji",
+  "notes": {
+   "hr": "Legendarni Dvin na 50 % — stil koji je Staljin slao Churchillu; gust, uljast, dugačak finiš.",
+   "en": "The legendary Dvin at 50% — the style Stalin famously sent Churchill; dense, oily, long finish."
+  }
+ },
+ {
+  "id": "br-ararat-aznavour-25",
+  "category": "brandy",
+  "name": "Ararat 25 Charles Aznavour",
+  "style": "brandy-armenian",
+  "region": "Armenija",
+  "country": "Armenija",
+  "abv": 40,
+  "body": 4,
+  "sweetness": 3,
+  "flavorTags": [
+   "suho-voce",
+   "cokolada",
+   "zacini"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": {
+   "hr": "Nije deklarirano",
+   "en": "Not declared"
+  },
+  "additiveSource": "web provjera 2026-07",
+  "qualityScore": 8.5,
+  "priceEUR": {
+   "min": 241.5,
+   "max": 241.5
+  },
+  "priceApprox": false,
+  "shopHR": "allez.hr",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "neat": 3,
+   "water": 2,
+   "rocks": 2,
+   "highball": 0,
+   "cola": 0,
+   "best": "Cisto"
+  },
+  "cigarHint": {
+   "hr": "Habano srednje-jake",
+   "en": "A medium-to-strong Habano"
+  },
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/ararat-25-yo-charles-aznavour-signature-blend-40-vol-07l-u-poklon-kutiji",
+  "notes": {
+   "hr": "Signature blend od 25 godina posvećen Aznavouru — svila i suho voće, kolekcionarski format.",
+   "en": "A 25-year signature blend dedicated to Aznavour — silk and dried fruit, a collector's format."
+  }
+ },
+ {
+  "id": "br-ararat-erebuni-30",
+  "category": "brandy",
+  "name": "Ararat Erebuni 30",
+  "style": "brandy-armenian",
+  "region": "Armenija",
+  "country": "Armenija",
+  "abv": 40,
+  "body": 4,
+  "sweetness": 3,
+  "flavorTags": [
+   "suho-voce",
+   "cokolada",
+   "zacini"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": {
+   "hr": "Nije deklarirano",
+   "en": "Not declared"
+  },
+  "additiveSource": "web provjera 2026-07",
+  "qualityScore": 9.0,
+  "priceEUR": {
+   "min": 876.0,
+   "max": 876.0
+  },
+  "priceApprox": false,
+  "shopHR": "allez.hr",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "neat": 3,
+   "water": 2,
+   "rocks": 2,
+   "highball": 0,
+   "cola": 0,
+   "best": "Cisto"
+  },
+  "cigarHint": {
+   "hr": "Habano srednje-jake",
+   "en": "A medium-to-strong Habano"
+  },
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/ararat-erebuni-30-years-old",
+  "notes": {
+   "hr": "Vrh asortimana (30 g.) — rezervni destilati iz najstarijih bačvi; cijena kolekcionarska.",
+   "en": "The top of the range (30 y) — reserve distillates from the oldest casks; collector-level price."
   }
  },
  {

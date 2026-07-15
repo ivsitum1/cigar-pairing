@@ -7,6 +7,7 @@ import { CigarRow, DrinkRow } from "../components/cards";
 import { DetailSheet } from "../components/DetailSheet";
 import { COUNTRIES, cigarCountries, drinkCountries, type CountryInfo } from "../lib/geo";
 import club from "../data/club.json";
+import WORLD_OUTLINE from "../data/world_outline.json";
 
 interface Quote { text: LocalizedText; author: string; note?: LocalizedText }
 interface Fact { hr: string; en: string }
@@ -77,7 +78,7 @@ export function ClubPage() {
   };
 
   // karta
-  const [view, setView] = useState<"world" | "carib">("world");
+  const [view, setView] = useState<"world" | "carib" | "europe">("world");
   const [country, setCountry] = useState<CountryInfo | null>(null);
   const [detail, setDetail] = useState<
     { kind: "cigar"; item: Cigar } | { kind: "drink"; item: Drink } | null
@@ -108,8 +109,35 @@ export function ClubPage() {
   // projekcija: x = lon+180, y = 75-lat (viewBox pokriva lat -45..75)
   const X = (lon: number) => lon + 180;
   const Y = (lat: number) => 75 - lat;
-  const viewBox = view === "world" ? "0 0 360 120" : "72 38 58 36";
+  // zoom pogledi: Karibi lon -108..-50 / lat 1..37; Europa lon -12..48 / lat 34..62
+  const VIEWBOXES: Record<typeof view, string> = {
+    world: "0 0 360 120",
+    carib: "72 38 58 36",
+    europe: "168 13 60 28",
+  };
+  const viewBox = VIEWBOXES[view];
   const markerSize = view === "world" ? 7 : 3.2;
+
+  // Atlas: Natural Earth obrisi kopna (world_outline.json generira
+  // scripts/build-world-outline.mjs). Jedan <path> s evenodd popunom —
+  // rupe (jezera/unutarnji prsteni) ostaju "ocean".
+  const landPath = useMemo(() => {
+    const polygons = WORLD_OUTLINE as Array<Array<Array<[number, number]>>>;
+    const parts: string[] = [];
+    for (const rings of polygons) {
+      for (const ring of rings) {
+        const [lon0, lat0] = ring[0];
+        let d = `M${X(lon0)} ${Y(lat0)}`;
+        for (let i = 1; i < ring.length; i++) {
+          const [lon, lat] = ring[i];
+          d += `L${X(lon)} ${Y(lat)}`;
+        }
+        parts.push(d + "Z");
+      }
+    }
+    return parts.join("");
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <div className="pb-4">
@@ -197,9 +225,26 @@ export function ClubPage() {
         <Chip active={view === "carib"} onClick={() => setView("carib")}>
           🏝 {t("club.mapCarib")}
         </Chip>
+        <Chip active={view === "europe"} onClick={() => setView("europe")}>
+          🏛 {t("club.mapEurope")}
+        </Chip>
       </div>
       <div className="overflow-hidden rounded-xl border border-dim/15 bg-humidor/80">
         <svg viewBox={viewBox} className="block w-full" role="img" aria-label={t("club.map")}>
+          {/* ocean = tamna pozadina; kopno = monokromna ispuna + tanka obala.
+              Eksplicitne opacity vrijednosti — currentColor s alpha klasom bi
+              se množio sa strokeOpacity i obala bi postala nevidljiva. */}
+          <path
+            d={landPath}
+            fillRule="evenodd"
+            fill="var(--color-papir)"
+            fillOpacity={0.1}
+            stroke="var(--color-papir)"
+            strokeOpacity={0.35}
+            strokeWidth={0.5}
+            vectorEffect="non-scaling-stroke"
+            strokeLinejoin="round"
+          />
           {/* graticule */}
           {Array.from({ length: 11 }, (_, i) => i * 36).map((x) => (
             <line key={`v${x}`} x1={x} y1={0} x2={x} y2={120} stroke="currentColor" strokeWidth={0.15} className="text-dim/30" />

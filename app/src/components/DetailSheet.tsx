@@ -270,6 +270,7 @@ function CigarDetails({
 function DrinkDetails({ drink }: { drink: Drink }) {
   const { t, lx, sv, rgn } = useI18n();
   const style = STYLE_LABELS[drink.style];
+  const buy = drinkBuyLink(drink);
   return (
     <>
       <div className="font-display text-xl text-papir">{drink.name}</div>
@@ -327,17 +328,43 @@ function DrinkDetails({ drink }: { drink: Drink }) {
           🚬 {lx(drink.cigarHint)}
         </p>
       )}
-      <BuyLink url={drink.priceUrl} name={drink.name} />
+      <BuyLink href={buy.href} label={buy.label} />
     </>
   );
 }
 
+function drinkBuyLink(drink: Drink): { href: string; label: "buy" | "search" } {
+  const url = drink.priceUrl ?? null;
+  if (!url) {
+    return { href: drinkSearchHref(drink), label: "search" };
+  }
+
+  const shop = (drink.shopHR ?? "").toLowerCase();
+  const isEcuga = url.includes("ecuga.com");
+  const isAllez = url.includes("allez.hr");
+  const shopMatchesDomain =
+    (isEcuga && shop.includes("ecuga")) || (isAllez && shop.includes("allez"));
+
+  // Ako link nije na isti izvor koji se navodi kao HR shop, korisniku je to
+  // praktično "pretraga" (inače cijena i link djeluju kao kontradikcija).
+  if ((isEcuga || isAllez) && !shopMatchesDomain) {
+    return { href: drinkSearchHref(drink), label: "search" };
+  }
+
+  return { href: url, label: "buy" };
+}
+
+function drinkSearchHref(drink: Drink): string {
+  const shop = (drink.shopHR ?? "").trim();
+  const hint =
+    shop && shop.toLowerCase() !== "razno" ? ` ${shop}` : "";
+  const q = `"${drink.name}" cijena kupnja${hint}`;
+  return `https://www.google.com/search?q=${encodeURIComponent(q)}`;
+}
+
 // "Gdje kupiti" — direktan link ili fallback na pretragu
-function BuyLink({ url, name }: { url?: string | null; name: string }) {
+function BuyLink({ href, label }: { href: string; label: "buy" | "search" }) {
   const { t } = useI18n();
-  const href =
-    url ??
-    `https://www.google.com/search?q=${encodeURIComponent(`"${name}" cijena kupnja`)}`;
   return (
     <a
       href={href}
@@ -345,7 +372,7 @@ function BuyLink({ url, name }: { url?: string | null; name: string }) {
       rel="noreferrer"
       className="mt-3 block w-full rounded-lg border border-zlato/40 bg-zlato/10 py-2.5 text-center font-display text-sm uppercase tracking-widest text-zlato-2 hover:bg-zlato/20"
     >
-      {url ? t("common.buy") : t("common.searchOnline")} ↗
+      {label === "buy" ? t("common.buy") : t("common.searchOnline")} ↗
     </a>
   );
 }

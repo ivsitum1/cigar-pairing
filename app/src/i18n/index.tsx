@@ -23,6 +23,7 @@ const STRINGS = {
   "club.mapHint": { hr: "Dodirni zastavicu ili zemlju na popisu — prikazat će se sve cigare i pića iz te zemlje.", en: "Tap a flag or a country in the list — every cigar and drink from that country will appear." },
   "club.mapWorld": { hr: "Svijet", en: "World" },
   "club.mapCarib": { hr: "Karibi i Srednja Amerika", en: "Caribbean & Central America" },
+  "club.mapEurope": { hr: "Europa", en: "Europe" },
   "club.products": { hr: "proizvoda", en: "products" },
   // pairing
   "pair.cigarToDrink": { hr: "Cigara → Piće", en: "Cigar → Drink" },

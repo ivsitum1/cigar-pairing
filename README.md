@@ -45,6 +45,8 @@ indeksima rangiranim po kvaliteti za sipping uz cigaru.
   - `scripts/profile-cigars.py` — obogaćuje cigare bez profila (prazan flavorTags →
     izvodi snagu/tijelo/wrapper/okuse iz wrappera, marke i bilješki)
   - `scripts/dedupe-data.py` — uklanja duple ID-jeve nakon regeneracije (pokreni zadnje)
+  - `scripts/build-world-outline.mjs` — generira `src/data/world_outline.json`
+    (monokromni atlas za Club kartu) iz Natural Earth land TopoJSON-a
   - `scripts/export-indexes.py` — generira `*_Index.xlsx` u root (git-ignorirano)
   - **Redoslijed nakon regeneracije cigara:** `enrich-cigars.py` → `profile-cigars.py`
     → `dedupe-data.py` → `npm test`

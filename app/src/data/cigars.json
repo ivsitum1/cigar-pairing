@@ -3373,7 +3373,7 @@
    "kava"
   ],
   "smokeTimeMin": 80,
-  "priceEUR": 16.7,
+  "priceEUR": null,
   "priceApprox": false,
   "availabilityHR": [
    "The Humidor",
@@ -3407,8 +3407,8 @@
     "name": "Belicoso Extra",
     "format": "52 x 140mm",
     "smokeTimeMin": 60,
-    "priceEUR": 16.7,
-    "url": "https://humidor.hr/hr/proizvod/la-instructora-perfection-belicoso-extra-6-x-57/"
+    "priceEUR": null,
+    "url": "https://humidor.hr/hr/?s=bolivar+Belicoso+Extra&post_type=product"
    },
    {
     "name": "3rd Millennium",
@@ -3446,7 +3446,7 @@
     "url": "https://humidor.hr/hr/?s=bolivar+Inmensas&post_type=product"
    }
   ],
-  "priceUrl": "https://humidor.hr/hr/proizvod/la-instructora-perfection-belicoso-extra-6-x-57/"
+  "priceUrl": "https://humidor.hr/hr/?s=bolivar+Corona+Gigante+Extra&post_type=product"
  },
  {
   "id": "cig-bolivar-bolivar-core",
@@ -3640,7 +3640,7 @@
    "zemljano"
   ],
   "smokeTimeMin": 65,
-  "priceEUR": 12.5,
+  "priceEUR": null,
   "priceApprox": false,
   "availabilityHR": [
    "The Humidor",
@@ -3675,8 +3675,8 @@
     "name": "Gold Toro",
     "format": "52 x 152mm",
     "smokeTimeMin": 65,
-    "priceEUR": 12.5,
-    "url": "https://humidor.hr/hr/proizvod/don-kiki-gold-label-toro-6-x-56/"
+    "priceEUR": null,
+    "url": "https://humidor.hr/hr/?s=cao+Gold+Toro&post_type=product"
    },
    {
     "name": "Consigliere",
@@ -3714,7 +3714,7 @@
     "url": "https://humidor.hr/hr/?s=cao+Vision+Churchill&post_type=product"
    }
   ],
-  "priceUrl": "https://humidor.hr/hr/proizvod/don-kiki-gold-label-toro-6-x-56/"
+  "priceUrl": "https://humidor.hr/hr/?s=cao+Gold+Toro&post_type=product"
  },
  {
   "id": "cig-cao-brazilia",
@@ -16329,7 +16329,7 @@
   "id": "cig-nub-connecticut",
   "brand": "Nub",
   "line": "Connecticut",
-  "vitola": "Connecticut",
+  "vitola": "460",
   "format": "60 x 102mm",
   "country": "Nikaragva",
   "wrapper": "Natural",
@@ -16341,7 +16341,7 @@
    "kava",
    "med"
   ],
-  "smokeTimeMin": 50,
+  "smokeTimeMin": 40,
   "priceEUR": 10.2,
   "priceApprox": false,
   "availabilityHR": [
@@ -16349,8 +16349,8 @@
    "Havana Shop"
   ],
   "notes": {
-   "hr": "Kratko i debelo — 'sweet spot' cigare od prve minute. Kremasta verzija.",
-   "en": "Short and fat — the cigar's sweet spot from minute one. Creamy version."
+   "hr": "Kratko i debelo — 'sweet spot' cigare od prve minute; kremasta Connecticut verzija. Nub je Olivin brend: koncept Sama Leccije, proizvodi se u Olivinoj fabrici u Estelíju.",
+   "en": "Short and fat — the cigar's sweet spot from minute one; the creamy Connecticut version. Nub is an Oliva brand: Sam Leccia's concept, made at Oliva's factory in Estelí."
   },
   "markets": [
    "HR",
@@ -16365,9 +16365,9 @@
     "url": "https://havana-cigar-shop.com/proizvod/nub-connecticut-tubos-12/"
    },
    {
-    "name": "X 60",
-    "format": "—",
-    "smokeTimeMin": 50,
+    "name": "460",
+    "format": "60 x 102mm",
+    "smokeTimeMin": 40,
     "priceEUR": 10.2,
     "url": "https://humidor.hr/hr/proizvod/nub-connecticut-24-1-4-x-60/"
    }
@@ -16532,7 +16532,7 @@
    "papar"
   ],
   "smokeTimeMin": 50,
-  "priceEUR": 4.5,
+  "priceEUR": 8.3,
   "priceApprox": false,
   "availabilityHR": [
    "The Humidor",
@@ -16549,20 +16549,6 @@
    "WW"
   ],
   "vitolas": [
-   {
-    "name": "Connecticut Petit Corona",
-    "format": "38 x 102mm",
-    "smokeTimeMin": 30,
-    "priceEUR": 4.5,
-    "url": "https://humidor.hr/hr/proizvod/paperboy-petite-corona-8-ct-connecticut-4-x-44/"
-   },
-   {
-    "name": "Nub 460 Connecticut",
-    "format": "60 x 102mm",
-    "smokeTimeMin": 40,
-    "priceEUR": null,
-    "url": "https://humidor.hr/hr/?s=oliva+Nub+460+Connecticut&post_type=product"
-   },
    {
     "name": "Serie G Robusto",
     "format": "50 x 127mm",
@@ -16599,7 +16585,7 @@
     "url": "https://humidor.hr/hr/?s=oliva+Melanio+Churchill&post_type=product"
    }
   ],
-  "priceUrl": "https://humidor.hr/hr/proizvod/paperboy-petite-corona-8-ct-connecticut-4-x-44/"
+  "priceUrl": "https://humidor.hr/hr/proizvod/oliva-serie-g-double-robusto-5-x-54/"
  },
  {
   "id": "cig-oliva-connecticut-reserve",
@@ -17744,6 +17730,48 @@
   "priceUrl": "https://havana-cigar-shop.com/proizvod/oscar-valladares-sampler-toro-6/"
  },
  {
+  "id": "cig-paperboy-connecticut",
+  "brand": "Paperboy",
+  "line": "Connecticut",
+  "vitola": "Petit Corona",
+  "format": "44 x 102mm",
+  "country": "Dominikana",
+  "wrapper": "Connecticut shade",
+  "strength": 2,
+  "body": 2,
+  "flavorTags": [
+   "kremasto",
+   "med",
+   "papar",
+   "cedar"
+  ],
+  "smokeTimeMin": 30,
+  "priceEUR": 4.5,
+  "priceApprox": false,
+  "availabilityHR": [
+   "The Humidor"
+  ],
+  "notes": {
+   "hr": "ASW (Artista Studio Works) brend iz Tabacalera El Artista, Tamboril — snop od 8 cigara umotan u „novine”. Note bijelog papra i meda s tonovima cedra; izravan value konkurent Cusanu i Don Tomasu.",
+   "en": "An ASW (Artista Studio Works) brand from Tabacalera El Artista, Tamboril — bundles of 8 wrapped in faux newspaper. Notes of white pepper and honey with cedar undertones; a direct value rival to Cusano and Don Tomas."
+  },
+  "markets": [
+   "HR",
+   "USA",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "Petit Corona",
+    "format": "44 x 102mm",
+    "smokeTimeMin": 30,
+    "priceEUR": 4.5,
+    "url": "https://humidor.hr/hr/proizvod/paperboy-petite-corona-8-ct-connecticut-4-x-44/"
+   }
+  ],
+  "priceUrl": "https://humidor.hr/hr/proizvod/paperboy-petite-corona-8-ct-connecticut-4-x-44/"
+ },
+ {
   "id": "cig-padron-1926",
   "brand": "Padrón",
   "line": "1926 Serie",
@@ -18008,7 +18036,7 @@
    "trava-slatka"
   ],
   "smokeTimeMin": 50,
-  "priceEUR": 26.0,
+  "priceEUR": null,
   "priceApprox": false,
   "availabilityHR": [
    "The Humidor",
@@ -18029,8 +18057,8 @@
     "name": "No. 8",
     "format": "50 x 114mm",
     "smokeTimeMin": 40,
-    "priceEUR": 26.0,
-    "url": "https://humidor.hr/hr/proizvod/partagas-serie-d-no-4-4-7-8-x-50/"
+    "priceEUR": null,
+    "url": "https://humidor.hr/hr/?s=padron+No.+8&post_type=product"
    },
    {
     "name": "No. 17",
@@ -18040,7 +18068,7 @@
     "url": "https://humidor.hr/hr/?s=padron+No.+17&post_type=product"
    }
   ],
-  "priceUrl": "https://humidor.hr/hr/proizvod/partagas-serie-d-no-4-4-7-8-x-50/"
+  "priceUrl": "https://humidor.hr/hr/?s=padron+No.+17&post_type=product"
  },
  {
   "id": "cig-padron-padron-family-reserve",
@@ -18059,7 +18087,7 @@
    "kava"
   ],
   "smokeTimeMin": 65,
-  "priceEUR": 15.9,
+  "priceEUR": null,
   "priceApprox": false,
   "availabilityHR": [
    "The Humidor",
@@ -18087,8 +18115,8 @@
     "name": "50 Years",
     "format": "54 x 140mm",
     "smokeTimeMin": 65,
-    "priceEUR": 15.9,
-    "url": "https://humidor.hr/hr/proizvod/eiroa-20-years-colorado-robusto-prensado-5-x-50/"
+    "priceEUR": null,
+    "url": "https://humidor.hr/hr/?s=padron+50+Years&post_type=product"
    },
    {
     "name": "46 Years",
@@ -18098,7 +18126,7 @@
     "url": "https://humidor.hr/hr/?s=padron+46+Years&post_type=product"
    }
   ],
-  "priceUrl": "https://humidor.hr/hr/proizvod/eiroa-20-years-colorado-robusto-prensado-5-x-50/"
+  "priceUrl": "https://humidor.hr/hr/?s=padron+46+Years&post_type=product"
  },
  {
   "id": "cig-padron-1964",
@@ -20677,7 +20705,7 @@
    "kava"
   ],
   "smokeTimeMin": 50,
-  "priceEUR": 14.4,
+  "priceEUR": null,
   "priceApprox": false,
   "availabilityHR": [
    "The Humidor",
@@ -20725,8 +20753,8 @@
     "name": "Robusto de Punch",
     "format": "50 x 124mm",
     "smokeTimeMin": 50,
-    "priceEUR": 14.4,
-    "url": "https://humidor.hr/hr/proizvod/dias-de-gloria-robusto-5-1-2-x-52/"
+    "priceEUR": null,
+    "url": "https://humidor.hr/hr/?s=punch+Robusto+de+Punch&post_type=product"
    },
    {
     "name": "Triumph",
@@ -20750,7 +20778,7 @@
     "url": "https://humidor.hr/hr/?s=punch+Super+Punch&post_type=product"
    }
   ],
-  "priceUrl": "https://humidor.hr/hr/proizvod/dias-de-gloria-robusto-5-1-2-x-52/"
+  "priceUrl": "https://humidor.hr/hr/?s=punch+Robusto+de+Punch&post_type=product"
  },
  {
   "id": "cig-punch-punch-classic",
@@ -20769,7 +20797,7 @@
    "kava"
   ],
   "smokeTimeMin": 90,
-  "priceEUR": 14.5,
+  "priceEUR": null,
   "priceApprox": false,
   "availabilityHR": [
    "The Humidor",
@@ -20796,8 +20824,8 @@
     "name": "Short de Punch",
     "format": "50 x 120mm",
     "smokeTimeMin": 40,
-    "priceEUR": 14.5,
-    "url": "https://humidor.hr/hr/proizvod/dias-de-gloria-short-churchill-6-1-2-x-48/"
+    "priceEUR": null,
+    "url": "https://humidor.hr/hr/?s=punch+Short+de+Punch&post_type=product"
    },
    {
     "name": "Punch Punch",
@@ -20814,7 +20842,7 @@
     "url": "https://humidor.hr/hr/?s=punch+Double+Corona&post_type=product"
    }
   ],
-  "priceUrl": "https://humidor.hr/hr/proizvod/dias-de-gloria-short-churchill-6-1-2-x-48/"
+  "priceUrl": "https://humidor.hr/hr/?s=punch+Double+Corona&post_type=product"
  },
  {
   "id": "cig-punch-punch-modern",
@@ -21064,7 +21092,7 @@
    "kava"
   ],
   "smokeTimeMin": 70,
-  "priceEUR": 26.0,
+  "priceEUR": null,
   "priceApprox": false,
   "availabilityHR": [
    "The Humidor",
@@ -21084,8 +21112,8 @@
     "name": "No. 50",
     "format": "50 x 110mm",
     "smokeTimeMin": 40,
-    "priceEUR": 26.0,
-    "url": "https://humidor.hr/hr/proizvod/partagas-serie-d-no-4-4-7-8-x-50/"
+    "priceEUR": null,
+    "url": "https://humidor.hr/hr/?s=quai+dorsay+No.+50&post_type=product"
    },
    {
     "name": "No. 54",
@@ -21109,7 +21137,7 @@
     "url": "https://humidor.hr/hr/?s=quai+dorsay+Senadores&post_type=product"
    }
   ],
-  "priceUrl": "https://humidor.hr/hr/proizvod/partagas-serie-d-no-4-4-7-8-x-50/"
+  "priceUrl": "https://humidor.hr/hr/?s=quai+dorsay+Imperiales&post_type=product"
  },
  {
   "id": "cig-quai-dorsay-50-54",
