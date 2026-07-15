@@ -3429,7 +3429,7 @@
    "hr": "Srednja cigara",
    "en": "A medium cigar"
   },
-  "priceUrl": "https://allez.hr/shop/svi-proizvodi/jameson-bow-street-18-years-old-triple-distilled-irish-whiskey-cask-strength-551-vol-07l-in-giftbox",
+  "priceUrl": "https://ecuga.com/katalog/whisky/irski-whiskey/jameson-18",
   "notes": {
    "hr": "Vrh Jameson linije — 18 godina, duboko i svileno.",
    "en": "The top of the Jameson range — 18 years, deep and silky."
@@ -3901,7 +3901,7 @@
    "hr": "Srednja cigara",
    "en": "A medium cigar"
   },
-  "priceUrl": "https://allez.hr/shop/svi-proizvodi/nikka-miyagikyo-peated-single-malt-whisky-2021-48-vol-07l-u-poklon-kutiji",
+  "priceUrl": "https://ecuga.com/katalog/whisky/azijski-whisky/nikka-miyagikyo",
   "notes": {
    "hr": "Elegantni, voćni single malt iz Sendaija.",
    "en": "The elegant, fruity single malt from Sendai."
@@ -4932,6 +4932,87 @@
   "notes": {
    "hr": "Najprodavaniji blend u Škotskoj — pouzdan svakodnevni standard.",
    "en": "Scotland's best-selling blend — a dependable daily standard."
+  }
+ },
+ {
+  "id": "wh-starward-ginger-beer-cask",
+  "category": "whisky",
+  "name": "Starward Ginger Beer Cask",
+  "style": "world",
+  "region": "Melbourne, Australija",
+  "abv": 48.0,
+  "body": 3,
+  "sweetness": 2,
+  "flavorTags": [
+   "zacini",
+   "voce",
+   "vanilija"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": {
+   "hr": "Pravi single malt — dozrijevan u ginger beer bacvama, nista dodano",
+   "en": "A true single malt — matured in ginger beer casks, nothing added"
+  },
+  "additiveSource": "Deklaracija destilerije (cask finish, ne aroma)",
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 55.0,
+   "max": 70.0
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / kap vode"
+  },
+  "cigarHint": {
+   "hr": "Srednja cigara, zacinska",
+   "en": "A medium, spicy cigar"
+  },
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/starward-ginger-beer-cask-single-malt-australian-whisky-48-vol-05l",
+  "notes": {
+   "hr": "Australski single malt dovršen u bačvama od ginger beera (48%, 0,5 l) — začin đumbira iz bačve, ne iz arome. Limitirano izdanje.",
+   "en": "Australian single malt finished in ginger beer casks (48%, 0.5 l) — the ginger spice comes from the cask, not flavouring. Limited release."
+  }
+ },
+ {
+  "id": "wh-edradour-cream-liqueur",
+  "category": "whisky",
+  "name": "Edradour Cream Liqueur",
+  "style": "liqueur",
+  "region": "Highland, Škotska (liker)",
+  "abv": 17.0,
+  "body": 2,
+  "sweetness": 5,
+  "flavorTags": [
+   "kremasto",
+   "slatko",
+   "med"
+  ],
+  "additiveStatus": "flavored",
+  "additiveDetail": {
+   "hr": "Krem liker: vrhnje, secer i arome na bazi Edradour single malta (17%)",
+   "en": "Cream liqueur: cream, sugar and flavourings on an Edradour single malt base (17%)"
+  },
+  "additiveSource": "Etiketa: liker",
+  "qualityScore": 6.0,
+  "priceEUR": {
+   "min": 25.0,
+   "max": 35.0
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / on the rocks"
+  },
+  "cigarHint": null,
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/edradour-cream-liqueur-17-vol-07l",
+  "notes": {
+   "hr": "Krem liker male Highland destilerije — desertni stil poput irish creama, na bazi single malta. Po EU pravilima liker, ne whisky.",
+   "en": "A cream liqueur from the small Highland distillery — Irish-cream-style dessert profile on a single malt base. Legally a liqueur, not whisky, under EU rules."
   }
  }
 ]

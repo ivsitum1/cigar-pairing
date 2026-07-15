@@ -28,6 +28,8 @@ export function CatalogPage({
   const [styleFilter, setStyleFilter] = useState<string | null>(null);
   const [strengthFilter, setStrengthFilter] = useState<number | null>(null);
   const [cleanOnly, setCleanOnly] = useState(false);
+  // sortiranje: pica kvaliteta|cijena|tijelo|slatkoca; cigare naziv|cijena|tijelo|snaga
+  const [sortBy, setSortBy] = useState<"quality" | "price" | "body" | "sweetness" | "strength" | "name">("quality");
   const market = useMarket();
   const [detail, setDetail] = useState<
     { kind: "cigar"; item: Cigar } | { kind: "drink"; item: Drink } | null
@@ -60,6 +62,7 @@ export function CatalogPage({
     setStyleFilter(null);
     setStrengthFilter(null);
     setCleanOnly(false);
+    setSortBy(next === "cigars" ? "name" : "quality");
   };
 
   const styles = useMemo(() => {
@@ -74,39 +77,58 @@ export function CatalogPage({
 
   const q = query.toLowerCase();
 
+  // cijena cigare za sortiranje: najniza vitola ili cijena linije
+  const cigarPrice = (c: Cigar): number => {
+    const priced = (c.vitolas ?? []).map((v) => v.priceEUR).filter((p): p is number => p != null);
+    if (priced.length) return Math.min(...priced);
+    return c.priceEUR ?? Number.MAX_SAFE_INTEGER;
+  };
+
   const cigars = useMemo(
-    () =>
-      tab !== "cigars"
-        ? []
-        : CIGARS.filter(
-            (c) =>
-              c.markets.includes(market) &&
-              (!q ||
-                norm(
-                  `${c.brand} ${c.line} ${c.vitola} ${c.wrapper} ${c.country} ${(c.vitolas ?? [])
-                    .map((v) => v.name)
-                    .join(" ")}`,
-                ).includes(norm(q))) &&
-              (strengthFilter == null || c.strength === strengthFilter),
-          ),
-    [tab, q, strengthFilter, market],
+    () => {
+      if (tab !== "cigars") return [];
+      const list = CIGARS.filter(
+        (c) =>
+          c.markets.includes(market) &&
+          (!q ||
+            norm(
+              `${c.brand} ${c.line} ${c.vitola} ${c.wrapper} ${c.country} ${(c.vitolas ?? [])
+                .map((v) => v.name)
+                .join(" ")}`,
+            ).includes(norm(q))) &&
+          (strengthFilter == null || c.strength === strengthFilter),
+      );
+      const by: Record<string, (a: Cigar, b: Cigar) => number> = {
+        name: (a, b) => a.brand.localeCompare(b.brand) || a.line.localeCompare(b.line),
+        price: (a, b) => cigarPrice(a) - cigarPrice(b),
+        body: (a, b) => b.body - a.body,
+        strength: (a, b) => b.strength - a.strength,
+      };
+      return [...list].sort(by[sortBy] ?? by.name);
+    },
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [tab, q, strengthFilter, market, sortBy],
   );
 
-  // rangirano po kvaliteti, kao MASTER sheet u Excelu
-  const drinks = useMemo(
-    () =>
-      tab === "cigars"
-        ? []
-        : DRINKS[tab]
-            .filter(
-              (d) =>
-                (!q || `${d.name} ${d.region}`.toLowerCase().includes(q)) &&
-                (styleFilter == null || d.style === styleFilter) &&
-                (!cleanOnly || d.additiveStatus === "clean" || d.additiveStatus === "low"),
-            )
-            .sort((a, b) => (b.qualityScore ?? 0) - (a.qualityScore ?? 0)),
-    [tab, q, styleFilter, cleanOnly],
-  );
+  // zadano rangirano po kvaliteti; ostala sortiranja preko chipova
+  const drinks = useMemo(() => {
+    if (tab === "cigars") return [];
+    const list = DRINKS[tab].filter(
+      (d) =>
+        (!q || `${d.name} ${d.region}`.toLowerCase().includes(q)) &&
+        (styleFilter == null || d.style === styleFilter) &&
+        (!cleanOnly || d.additiveStatus === "clean" || d.additiveStatus === "low"),
+    );
+    const mid = (d: Drink) =>
+      d.priceEUR ? (d.priceEUR.min + d.priceEUR.max) / 2 : Number.MAX_SAFE_INTEGER;
+    const by: Record<string, (a: Drink, b: Drink) => number> = {
+      quality: (a, b) => (b.qualityScore ?? 0) - (a.qualityScore ?? 0),
+      price: (a, b) => mid(a) - mid(b),
+      body: (a, b) => b.body - a.body || (b.qualityScore ?? 0) - (a.qualityScore ?? 0),
+      sweetness: (a, b) => b.sweetness - a.sweetness || (b.qualityScore ?? 0) - (a.qualityScore ?? 0),
+    };
+    return [...list].sort(by[sortBy] ?? by.quality);
+  }, [tab, q, styleFilter, cleanOnly, sortBy]);
 
   return (
     <div className="pb-4">
@@ -171,6 +193,22 @@ export function CatalogPage({
             onClick={() => setStyleFilter(styleFilter === s ? null : s)}
           >
             {lx(STYLE_LABELS[s]) || s}
+          </Chip>
+        ))}
+      </div>
+
+      {/* sortiranje */}
+      <div className="no-scrollbar mt-2 flex items-center gap-2 overflow-x-auto">
+        <span className="shrink-0 text-[10px] uppercase tracking-widest text-dim">
+          {t("sort.label")}
+        </span>
+        {(tab === "cigars"
+          ? (["name", "price", "body", "strength"] as const)
+          : (["quality", "price", "body", "sweetness"] as const)
+        ).map((s) => (
+          <Chip key={s} active={sortBy === s} onClick={() => setSortBy(s)}>
+            {t(`sort.${s}` as StringKey)}
+            {sortBy === s ? (s === "price" || s === "name" ? " ↑" : " ↓") : ""}
           </Chip>
         ))}
       </div>

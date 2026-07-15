@@ -28,8 +28,9 @@ export function CollectionPage() {
   const ownedIds = Object.entries(data.items)
     .filter(([, s]) => s.owned)
     .map(([id]) => id);
+  // stavke s liste zelja idu u svoju sekciju — ne dupliciraj ih u povijesti
   const historyIds = Object.entries(data.items)
-    .filter(([, s]) => !s.owned && (s.tried || s.rating != null || s.note))
+    .filter(([, s]) => !s.owned && !s.wishlist && (s.tried || s.rating != null || s.note))
     .map(([id]) => id);
   const wishlistIds = Object.entries(data.items)
     .filter(([, s]) => s.wishlist && !s.owned)

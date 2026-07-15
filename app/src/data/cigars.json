@@ -2404,6 +2404,13 @@
     "smokeTimeMin": 45,
     "priceEUR": 27.3,
     "url": "https://havana-cigar-shop.com/proizvod/arturo-fuente-chateau-fuente-king-t-rosado-24/"
+   },
+   {
+    "name": "Chateau Churchill",
+    "format": "48 x 178mm",
+    "smokeTimeMin": 85,
+    "priceEUR": null,
+    "url": "https://humidor.hr/hr/?s=arturo+fuente+Chateau+Churchill&post_type=product"
    }
   ],
   "priceUrl": "https://havana-cigar-shop.com/proizvod/arturo-fuente-chateau-fuente-10/"
@@ -2525,6 +2532,20 @@
     "name": "Don Carlos Personal Robusto",
     "format": "50 x 140mm",
     "smokeTimeMin": 60,
+    "priceEUR": 28.2,
+    "url": "https://humidor.hr/hr/proizvod/arturo-fuente-don-carlos-presidente-25/"
+   },
+   {
+    "name": "Don Carlos Robusto",
+    "format": "50 x 140mm",
+    "smokeTimeMin": 60,
+    "priceEUR": 28.2,
+    "url": "https://humidor.hr/hr/proizvod/arturo-fuente-don-carlos-presidente-25/"
+   },
+   {
+    "name": "Don Carlos Toro",
+    "format": "50 x 152mm",
+    "smokeTimeMin": 65,
     "priceEUR": 28.2,
     "url": "https://humidor.hr/hr/proizvod/arturo-fuente-don-carlos-presidente-25/"
    }
@@ -2846,6 +2867,20 @@
     "smokeTimeMin": 85,
     "priceEUR": 12.3,
     "url": "https://humidor.hr/hr/proizvod/arturo-fuente-cuban-corona-25/"
+   },
+   {
+    "name": "Opus X Angel's Share",
+    "format": "48 x 140mm",
+    "smokeTimeMin": 60,
+    "priceEUR": null,
+    "url": "https://humidor.hr/hr/?s=arturo+fuente+Opus+X+Angel%27s+Share&post_type=product"
+   },
+   {
+    "name": "Opus X Double Corona",
+    "format": "48 x 194mm",
+    "smokeTimeMin": 95,
+    "priceEUR": null,
+    "url": "https://humidor.hr/hr/?s=arturo+fuente+Opus+X+Double+Corona&post_type=product"
    }
   ],
   "priceUrl": "https://humidor.hr/hr/proizvod/arturo-fuente-cuban-corona-25/"
@@ -24639,28 +24674,28 @@
     "name": "Rothschild",
     "format": "50 x 114mm",
     "smokeTimeMin": 45,
-    "priceEUR": 6.5,
+    "priceEUR": null,
     "url": null
    },
    {
     "name": "Robusto",
     "format": "50 x 140mm",
     "smokeTimeMin": 60,
-    "priceEUR": 7.5,
+    "priceEUR": null,
     "url": null
    },
    {
     "name": "Corona",
     "format": "44 x 140mm",
     "smokeTimeMin": 55,
-    "priceEUR": 7.0,
+    "priceEUR": null,
     "url": null
    },
    {
     "name": "Presidente",
     "format": "50 x 190mm",
     "smokeTimeMin": 90,
-    "priceEUR": 9.0,
+    "priceEUR": null,
     "url": null
    }
   ],
@@ -24702,28 +24737,28 @@
     "name": "Corona",
     "format": "42 x 140mm",
     "smokeTimeMin": 50,
-    "priceEUR": 5.0,
+    "priceEUR": null,
     "url": null
    },
    {
     "name": "Robusto",
     "format": "50 x 127mm",
     "smokeTimeMin": 50,
-    "priceEUR": 5.5,
+    "priceEUR": null,
     "url": null
    },
    {
     "name": "Toro",
     "format": "50 x 152mm",
     "smokeTimeMin": 65,
-    "priceEUR": 6.0,
+    "priceEUR": null,
     "url": null
    },
    {
     "name": "Churchill",
     "format": "48 x 178mm",
     "smokeTimeMin": 80,
-    "priceEUR": 6.5,
+    "priceEUR": null,
     "url": null
    }
   ],
@@ -24740,5 +24775,48 @@
    "hr": "Bundle izdanje bez kutije — ista tvornica, jednostavnije pakiranje. Blaži, zemljano-drvenast profil za svakodnevno pušenje po nižoj cijeni.",
    "en": "The bundle release without the box — same factory, simpler packaging. A milder, earthy-woody everyday smoke at a lower price."
   }
+ },
+ {
+  "id": "cig-arturo-fuente-rosado-sungrown",
+  "brand": "Arturo Fuente",
+  "line": "Rosado Sungrown",
+  "vitola": "R 52",
+  "format": "—",
+  "country": "Dominikana",
+  "wrapper": "Rosado Sungrown",
+  "strength": 3,
+  "body": 4,
+  "flavorTags": [
+   "zacini",
+   "cedar",
+   "koza"
+  ],
+  "smokeTimeMin": 50,
+  "priceEUR": 16.8,
+  "priceApprox": true,
+  "availabilityHR": [
+   "Havana Shop",
+   "The Humidor"
+  ],
+  "notes": {
+   "hr": "Rosado Sungrown serija — začinskiji, puniji Fuente s rosado wrapperom.",
+   "en": "The Rosado Sungrown series — a spicier, fuller Fuente with a rosado wrapper."
+  },
+  "markets": [
+   "HR",
+   "EU",
+   "USA",
+   "WW"
+  ],
+  "vitolas": [
+   {
+    "name": "R 52",
+    "format": "—",
+    "smokeTimeMin": 50,
+    "priceEUR": 16.8,
+    "url": "https://havana-cigar-shop.com/proizvod/a-fuente-rosado-magnum-r-52-25/"
+   }
+  ],
+  "priceUrl": "https://havana-cigar-shop.com/proizvod/a-fuente-rosado-magnum-r-52-25/"
  }
 ]

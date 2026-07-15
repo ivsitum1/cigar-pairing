@@ -8,6 +8,22 @@ const STRINGS = {
   "nav.catalog": { hr: "Katalozi", en: "Catalogs" },
   "nav.collection": { hr: "Kolekcija", en: "Collection" },
   "nav.shopping": { hr: "Kupovina", en: "Shopping" },
+  "nav.club": { hr: "Klub", en: "Club" },
+  // klub
+  "club.quote": { hr: "Citat dana", en: "Quote of the day" },
+  "club.fact": { hr: "Znaš li…?", en: "Did you know…?" },
+  "club.factNext": { hr: "Još jedna", en: "Another one" },
+  "club.quiz": { hr: "Kviz", en: "Quiz" },
+  "club.quizNext": { hr: "Sljedeće pitanje", en: "Next question" },
+  "club.quizScore": { hr: "Rezultat", en: "Score" },
+  "club.quizStreak": { hr: "Niz", en: "Streak" },
+  "club.correct": { hr: "Točno", en: "Correct" },
+  "club.wrong": { hr: "Netočno", en: "Incorrect" },
+  "club.map": { hr: "Karta podrijetla", en: "Map of origins" },
+  "club.mapHint": { hr: "Dodirni zastavicu ili zemlju na popisu — prikazat će se sve cigare i pića iz te zemlje.", en: "Tap a flag or a country in the list — every cigar and drink from that country will appear." },
+  "club.mapWorld": { hr: "Svijet", en: "World" },
+  "club.mapCarib": { hr: "Karibi i Srednja Amerika", en: "Caribbean & Central America" },
+  "club.products": { hr: "proizvoda", en: "products" },
   // pairing
   "pair.cigarToDrink": { hr: "Cigara → Piće", en: "Cigar → Drink" },
   "pair.drinkToCigar": { hr: "Piće → Cigara", en: "Drink → Cigar" },
@@ -149,6 +165,14 @@ const STRINGS = {
   "filter.strength": { hr: "Snaga", en: "Strength" },
   "filter.maxPrice": { hr: "Cijena do", en: "Price up to" },
   "filter.clean": { hr: "Samo čisti (bez aditiva)", en: "Clean only (no additives)" },
+  // sortiranje
+  "sort.label": { hr: "Poredaj", en: "Sort" },
+  "sort.quality": { hr: "Kvaliteta", en: "Quality" },
+  "sort.price": { hr: "Cijena", en: "Price" },
+  "sort.body": { hr: "Tijelo", en: "Body" },
+  "sort.sweetness": { hr: "Slatkoća", en: "Sweetness" },
+  "sort.strength": { hr: "Snaga", en: "Strength" },
+  "sort.name": { hr: "Naziv", en: "Name" },
 } satisfies Record<string, LocalizedText>;
 
 export type StringKey = keyof typeof STRINGS;
@@ -365,7 +389,7 @@ interface I18nCtx {
   lang: Lang;
   setLang: (l: Lang) => void;
   t: (key: StringKey) => string;
-  lx: (text: LocalizedText | undefined | null) => string;
+  lx: (text: LocalizedText | string | undefined | null) => string;
   cn: (country: string) => string; // ime zemlje u aktivnom jeziku
   sv: (serving: string) => string; // nacin serviranja u aktivnom jeziku
   rgn: (region: string) => string; // regija pica u aktivnom jeziku
@@ -382,8 +406,10 @@ export function I18nProvider({ children }: { children: ReactNode }) {
     setLangState(l);
   };
   const t = (key: StringKey) => STRINGS[key][lang];
-  const lx = (text: LocalizedText | undefined | null) => {
+  // tolerira i obicni string — regenerirani podaci iz Excela mogu jos biti jednojezicni
+  const lx = (text: LocalizedText | string | undefined | null) => {
     if (!text) return "";
+    if (typeof text === "string") return text;
     return text[lang] || text.hr || text.en;
   };
   // imena zemalja i serviranja u podacima su hrvatska; na EN prevedi mapom

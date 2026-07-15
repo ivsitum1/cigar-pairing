@@ -4,16 +4,18 @@ import { PairingPage } from "./pages/PairingPage";
 import { CatalogPage } from "./pages/CatalogPage";
 import { CollectionPage } from "./pages/CollectionPage";
 import { ShoppingPage } from "./pages/ShoppingPage";
+import { ClubPage } from "./pages/ClubPage";
 import { requestPairing } from "./store/pairingNav";
 import type { Cigar, Drink } from "./types";
 
-type Page = "pairing" | "catalog" | "collection" | "shopping";
+type Page = "pairing" | "catalog" | "collection" | "shopping" | "club";
 
-const NAV: { id: Page; icon: string; key: "nav.pairing" | "nav.catalog" | "nav.collection" | "nav.shopping" }[] = [
+const NAV: { id: Page; icon: string; key: "nav.pairing" | "nav.catalog" | "nav.collection" | "nav.shopping" | "nav.club" }[] = [
   { id: "pairing", icon: "◈", key: "nav.pairing" },
   { id: "catalog", icon: "☰", key: "nav.catalog" },
   { id: "collection", icon: "✓", key: "nav.collection" },
   { id: "shopping", icon: "€", key: "nav.shopping" },
+  { id: "club", icon: "✦", key: "nav.club" },
 ];
 
 export default function App() {
@@ -53,11 +55,12 @@ export default function App() {
         {page === "catalog" && <CatalogPage onPair={goToPairing} />}
         {page === "collection" && <CollectionPage />}
         {page === "shopping" && <ShoppingPage />}
+        {page === "club" && <ClubPage />}
       </main>
 
       {/* donja navigacija */}
       <nav className="fixed inset-x-0 bottom-0 z-40 border-t border-zlato/20 bg-humidor/95 backdrop-blur">
-        <div className="mx-auto grid max-w-2xl grid-cols-4">
+        <div className="mx-auto grid max-w-2xl grid-cols-5">
           {NAV.map((n) => (
             <button
               key={n.id}
