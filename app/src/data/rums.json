@@ -1217,13 +1217,13 @@
   }
  },
  {
-  "id": "rum-depaz-vieux-xo-agricole",
+  "id": "rum-depaz-vieux",
   "category": "rum",
-  "name": "Depaz Vieux / XO (agricole)",
+  "name": "Depaz Vieux Plantation (agricole)",
   "style": "agricole",
   "region": "Agricole (Martinique)",
   "body": 2,
-  "sweetness": 1,
+  "sweetness": 2,
   "flavorTags": [
    "travnato",
    "vegetalno",
@@ -1235,9 +1235,51 @@
    "en": "No additives (AOC)"
   },
   "additiveSource": "AOC zakon",
-  "qualityScore": 8.0,
+  "qualityScore": 7.5,
   "priceEUR": {
-   "min": 49.46,
+   "min": 49.0,
+   "max": 49.0
+  },
+  "shopHR": "allez.hr",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "neat": 3,
+   "water": 3,
+   "rocks": 1,
+   "highball": 2,
+   "cola": 0,
+   "best": "Cisto / Ti' Punch"
+  },
+  "cigarHint": null,
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/depaz-rhum-tres-agricole-vieux-vsop-45-vol-07l-u-poklon-kutiji",
+  "notes": {
+   "hr": "Martinique agricole s vulkanskog tla — vegetalan i začinski.",
+   "en": "Martinique agricole from volcanic soil — vegetal and spicy."
+  }
+ },
+ {
+  "id": "rum-depaz-xo",
+  "category": "rum",
+  "name": "Depaz XO Grande Réserve (agricole)",
+  "style": "agricole",
+  "region": "Agricole (Martinique)",
+  "body": 2,
+  "sweetness": 2,
+  "flavorTags": [
+   "travnato",
+   "vegetalno",
+   "citrus"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": {
+   "hr": "Bez aditiva (AOC)",
+   "en": "No additives (AOC)"
+  },
+  "additiveSource": "AOC zakon",
+  "qualityScore": 8.5,
+  "priceEUR": {
+   "min": 113.0,
    "max": 113.0
   },
   "shopHR": "allez.hr",
@@ -1254,8 +1296,8 @@
   "cigarHint": null,
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/depaz-rhum-tres-agricole-vieux-vsop-45-vol-07l-u-poklon-kutiji",
   "notes": {
-   "hr": "Bogat agricole, vulkansko tlo",
-   "en": "A rich agricole from volcanic soil"
+   "hr": "Odležani vrh Depaza — dubok, kompleksan agricole.",
+   "en": "Depaz's aged flagship — a deep, complex agricole."
   }
  },
  {
@@ -2203,9 +2245,9 @@
   }
  },
  {
-  "id": "rum-zafra-21-30-panama-solera",
+  "id": "rum-zafra-21",
   "category": "rum",
-  "name": "Zafra 21 / 30 (Panama solera)",
+  "name": "Zafra Master Reserve 21",
   "style": "solera",
   "region": "Panama (solera)",
   "body": 3,
@@ -2223,7 +2265,49 @@
   "additiveSource": "Procjena",
   "qualityScore": 7.5,
   "priceEUR": {
-   "min": 101.8,
+   "min": 102.0,
+   "max": 102.0
+  },
+  "shopHR": "allez.hr",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "neat": 2,
+   "water": 2,
+   "rocks": 3,
+   "highball": 1,
+   "cola": 0,
+   "best": "On the rocks (velika kocka)"
+  },
+  "cigarHint": null,
+  "priceUrl": null,
+  "notes": {
+   "hr": "Panamski 21-godišnjak — mekan, hrastov, cigar-friendly.",
+   "en": "The Panamanian 21-year — soft, oaky, cigar-friendly."
+  }
+ },
+ {
+  "id": "rum-zafra-30",
+  "category": "rum",
+  "name": "Zafra Master Series 30",
+  "style": "solera",
+  "region": "Panama (solera)",
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "karamela",
+   "vanilija",
+   "hrast"
+  ],
+  "additiveStatus": "light",
+  "additiveDetail": {
+   "hr": "Blagi dodatak",
+   "en": "Light addition"
+  },
+  "additiveSource": "Procjena",
+  "qualityScore": 8.0,
+  "priceEUR": {
+   "min": 296.0,
    "max": 296.0
   },
   "shopHR": "allez.hr",
@@ -2240,8 +2324,8 @@
   "cigarHint": null,
   "priceUrl": null,
   "notes": {
-   "hr": "Panamski solera, kvalitetan",
-   "en": "A quality Panamanian solera"
+   "hr": "Starija, dublja verzija za posebne prigode.",
+   "en": "The older, deeper version for special occasions."
   }
  },
  {
@@ -3688,13 +3772,13 @@
   }
  },
  {
-  "id": "rum-ron-millonario-15-xo-solera",
+  "id": "rum-ron-millonario-15",
   "category": "rum",
-  "name": "Ron Millonario 15 / XO (solera)",
+  "name": "Ron Millonario 15 Reserva Especial",
   "style": "solera",
   "region": "Peru (solera)",
   "body": 3,
-  "sweetness": 4,
+  "sweetness": 5,
   "flavorTags": [
    "karamela",
    "vanilija",
@@ -3706,9 +3790,51 @@
    "en": "Sweetened (solera style)"
   },
   "additiveSource": "Procjena (solera)",
-  "qualityScore": 7.0,
+  "qualityScore": 6.5,
   "priceEUR": {
-   "min": 60.45,
+   "min": 60.0,
+   "max": 60.0
+  },
+  "shopHR": "allez.hr",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "neat": 2,
+   "water": 3,
+   "rocks": 3,
+   "highball": 1,
+   "cola": 0,
+   "best": "Velika kocka leda ili kap vode"
+  },
+  "cigarHint": null,
+  "priceUrl": null,
+  "notes": {
+   "hr": "Peruanska solera, izrazito doslađena — baršunasti desertni stil koji publika voli.",
+   "en": "A Peruvian solera, distinctly sweetened — a velvety dessert style the public loves."
+  }
+ },
+ {
+  "id": "rum-ron-millonario-xo",
+  "category": "rum",
+  "name": "Ron Millonario XO Reserva Especial",
+  "style": "solera",
+  "region": "Peru (solera)",
+  "body": 3,
+  "sweetness": 5,
+  "flavorTags": [
+   "karamela",
+   "vanilija",
+   "hrast"
+  ],
+  "additiveStatus": "sweetened",
+  "additiveDetail": {
+   "hr": "Doslazen (solera stil)",
+   "en": "Sweetened (solera style)"
+  },
+  "additiveSource": "Procjena (solera)",
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 145.0,
    "max": 145.0
   },
   "shopHR": "allez.hr",
@@ -3725,8 +3851,8 @@
   "cigarHint": null,
   "priceUrl": null,
   "notes": {
-   "hr": "Peruanska solera; doslađen, baršunast profil vanilije i karamele — desertni stil koji uz punu cigaru radi kontrast.",
-   "en": "Peruvian solera; sweetened, velvety vanilla-caramel profile — a dessert style that contrasts nicely with a full cigar."
+   "hr": "Raskošniji XO — gust, sladak, kompleksan; kontrast punoj maduro cigari.",
+   "en": "The more opulent XO — dense, sweet, complex; a contrast to a full maduro cigar."
   }
  },
  {
@@ -4366,9 +4492,9 @@
   }
  },
  {
-  "id": "rum-ron-zacapa-ambar-12-negra",
+  "id": "rum-zacapa-ambar",
   "category": "rum",
-  "name": "Ron Zacapa Ambar 12 / Negra",
+  "name": "Zacapa Ambar 12",
   "style": "solera",
   "region": "Gvatemala (solera)",
   "body": 3,
@@ -4387,6 +4513,48 @@
   "qualityScore": 5.5,
   "priceEUR": {
    "min": 53.0,
+   "max": 53.0
+  },
+  "shopHR": "allez.hr",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "neat": 2,
+   "water": 3,
+   "rocks": 3,
+   "highball": 1,
+   "cola": 0,
+   "best": "Velika kocka leda ili kap vode"
+  },
+  "cigarHint": null,
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/ron-zacapa-centenario-edicion-negra-sistema-solera-gran-reserva-43-vol-07l-u-poklon-kutiji",
+  "notes": {
+   "hr": "Mlađa Zacapa — karamela i vanilija, doslađena.",
+   "en": "The younger Zacapa — caramel and vanilla, sweetened."
+  }
+ },
+ {
+  "id": "rum-zacapa-edicion-negra",
+  "category": "rum",
+  "name": "Zacapa Edición Negra",
+  "style": "solera",
+  "region": "Gvatemala (solera)",
+  "body": 3,
+  "sweetness": 4,
+  "flavorTags": [
+   "karamela",
+   "vanilija",
+   "hrast"
+  ],
+  "additiveStatus": "sweetened",
+  "additiveDetail": {
+   "hr": "Doslazen",
+   "en": "Sweetened"
+  },
+  "additiveSource": "Alko: doslazen",
+  "qualityScore": 6.0,
+  "priceEUR": {
+   "min": 102.0,
    "max": 102.0
   },
   "shopHR": "allez.hr",
@@ -4403,8 +4571,8 @@
   "cigarHint": null,
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/ron-zacapa-centenario-edicion-negra-sistema-solera-gran-reserva-43-vol-07l-u-poklon-kutiji",
   "notes": {
-   "hr": "Zacapa linija, slazeni",
-   "en": "The Zacapa range, sweetened"
+   "hr": "Tamnija, dimljenija verzija solere; doslađena.",
+   "en": "The darker, smokier take on the solera; sweetened."
   }
  },
  {
@@ -4492,9 +4660,9 @@
   }
  },
  {
-  "id": "rum-ron-centenario-20-25-30",
+  "id": "rum-ron-centenario-20",
   "category": "rum",
-  "name": "Ron Centenario 20 / 25 / 30",
+  "name": "Ron Centenario 20 Fundación",
   "style": "other",
   "region": "Kostarika",
   "body": 3,
@@ -4510,8 +4678,8 @@
   "additiveSource": "Sugar list: doslazen",
   "qualityScore": 5.0,
   "priceEUR": {
-   "min": 44.99,
-   "max": 99.99
+   "min": 45.0,
+   "max": 45.0
   },
   "shopHR": "Vrutak",
   "status": null,
@@ -4527,8 +4695,48 @@
   "cigarHint": null,
   "priceUrl": null,
   "notes": {
-   "hr": "Slazeni, skupi",
-   "en": "Sweetened and expensive"
+   "hr": "Solera 20 — gladak, sladak, jednostavan.",
+   "en": "The solera 20 — smooth, sweet, uncomplicated."
+  }
+ },
+ {
+  "id": "rum-ron-centenario-25-30",
+  "category": "rum",
+  "name": "Ron Centenario 25 / 30",
+  "style": "other",
+  "region": "Kostarika",
+  "body": 3,
+  "sweetness": 4,
+  "flavorTags": [
+   "karamela"
+  ],
+  "additiveStatus": "sweetened",
+  "additiveDetail": {
+   "hr": "Doslazen",
+   "en": "Sweetened"
+  },
+  "additiveSource": "Sugar list: doslazen",
+  "qualityScore": 5.5,
+  "priceEUR": {
+   "min": 60.0,
+   "max": 100.0
+  },
+  "shopHR": "Vrutak",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "neat": 2,
+   "water": 3,
+   "rocks": 3,
+   "highball": 1,
+   "cola": 0,
+   "best": "Velika kocka leda ili kap vode"
+  },
+  "cigarHint": null,
+  "priceUrl": null,
+  "notes": {
+   "hr": "Starije solere istog mekanog profila.",
+   "en": "The older soleras with the same soft profile."
   }
  },
  {
@@ -4577,13 +4785,13 @@
   }
  },
  {
-  "id": "rum-ron-centenario-5-7-1985",
+  "id": "rum-ron-centenario-5-7",
   "category": "rum",
-  "name": "Ron Centenario 5 / 7 / 1985",
+  "name": "Ron Centenario 5 / 7",
   "style": "other",
   "region": "Kostarika",
   "body": 3,
-  "sweetness": 4,
+  "sweetness": 3,
   "flavorTags": [
    "karamela"
   ],
@@ -4595,8 +4803,8 @@
   "additiveSource": "Sugar list: doslazen",
   "qualityScore": 4.5,
   "priceEUR": {
-   "min": 16.99,
-   "max": 39.99
+   "min": 17.0,
+   "max": 25.0
   },
   "shopHR": "Vrutak",
   "status": null,
@@ -4612,8 +4820,48 @@
   "cigarHint": null,
   "priceUrl": null,
   "notes": {
-   "hr": "Slazeni mladi",
-   "en": "Sweetened and young"
+   "hr": "Kostarikanski ulazni rumovi — mekani, za miješanje.",
+   "en": "Costa Rican entry rums — soft, for mixing."
+  }
+ },
+ {
+  "id": "rum-ron-centenario-1985",
+  "category": "rum",
+  "name": "Ron Centenario 1985 (20 YO)",
+  "style": "other",
+  "region": "Kostarika",
+  "body": 3,
+  "sweetness": 4,
+  "flavorTags": [
+   "karamela"
+  ],
+  "additiveStatus": "sweetened",
+  "additiveDetail": {
+   "hr": "Doslazen",
+   "en": "Sweetened"
+  },
+  "additiveSource": "Sugar list: doslazen",
+  "qualityScore": 5.0,
+  "priceEUR": {
+   "min": 40.0,
+   "max": 40.0
+  },
+  "shopHR": "Vrutak",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "neat": 2,
+   "water": 3,
+   "rocks": 3,
+   "highball": 1,
+   "cola": 0,
+   "best": "Velika kocka leda ili kap vode"
+  },
+  "cigarHint": null,
+  "priceUrl": null,
+  "notes": {
+   "hr": "Starija solera, mekana i slatkasta.",
+   "en": "An older solera, soft and sweetish."
   }
  },
  {
@@ -4745,9 +4993,9 @@
   }
  },
  {
-  "id": "rum-zacapa-xo-25-royal",
+  "id": "rum-zacapa-xo",
   "category": "rum",
-  "name": "Zacapa XO 25 / Royal",
+  "name": "Zacapa Centenario XO",
   "style": "solera",
   "region": "Gvatemala (solera)",
   "body": 3,
@@ -4766,6 +5014,48 @@
   "qualityScore": 6.5,
   "priceEUR": {
    "min": 129.0,
+   "max": 129.0
+  },
+  "shopHR": "razno",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "neat": 2,
+   "water": 3,
+   "rocks": 3,
+   "highball": 1,
+   "cola": 0,
+   "best": "Velika kocka leda ili kap vode"
+  },
+  "cigarHint": null,
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/ron-zacapa-centenario-royal-solera-gran-reserva-especial-45-vol-07l-u-poklon-kutiji",
+  "notes": {
+   "hr": "Vrh redovne Zacapa linije — solera s cognac bačvama; doslađen (lab), bogat i mekan.",
+   "en": "The top of the regular Zacapa range — a solera finished in cognac casks; sweetened (lab), rich and soft."
+  }
+ },
+ {
+  "id": "rum-zacapa-royal",
+  "category": "rum",
+  "name": "Zacapa Royal",
+  "style": "solera",
+  "region": "Gvatemala (solera)",
+  "body": 3,
+  "sweetness": 4,
+  "flavorTags": [
+   "karamela",
+   "suho-voce",
+   "hrast"
+  ],
+  "additiveStatus": "sweetened",
+  "additiveDetail": {
+   "hr": "Dodani secer (Alko lab; novije boce ispod 20 g/L)",
+   "en": "Added sugar (Alko lab; recent bottlings under 20 g/L)"
+  },
+  "additiveSource": "Alko/Systembolaget lab",
+  "qualityScore": 7.0,
+  "priceEUR": {
+   "min": 485.0,
    "max": 485.0
   },
   "shopHR": "razno",
@@ -4782,8 +5072,8 @@
   "cigarHint": null,
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/ron-zacapa-centenario-royal-solera-gran-reserva-especial-45-vol-07l-u-poklon-kutiji",
   "notes": {
-   "hr": "Solera sistem, doslađen (lab mjerenja); bogat, mekan, s notama suhog voća i hrasta. Visoka cijena za kategoriju — navedeno radi informacije.",
-   "en": "Solera system, sweetened (lab measured); rich and soft with dried fruit and oak. Priced at the top of its category — noted for information."
+   "hr": "Luksuzno izdanje solere; doslađen. Cijena je kolekcionarska — navedeno radi informacije.",
+   "en": "The luxury solera release; sweetened. Collector pricing — noted for information."
   }
  },
  {
