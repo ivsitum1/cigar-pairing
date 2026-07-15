@@ -6,6 +6,7 @@ import { Chip, SectionTitle } from "../components/ui";
 import { CigarRow, DrinkRow } from "../components/cards";
 import { DetailSheet } from "../components/DetailSheet";
 import { COUNTRIES, cigarCountries, drinkCountries, type CountryInfo } from "../lib/geo";
+import { LANDMASS_PATHS } from "../lib/worldCoastline";
 import club from "../data/club.json";
 
 interface Quote { text: LocalizedText; author: string; note?: LocalizedText }
@@ -209,6 +210,10 @@ export function ClubPage() {
           ))}
           {/* ekvator */}
           <line x1={0} y1={Y(0)} x2={360} y2={Y(0)} stroke="currentColor" strokeWidth={0.3} className="text-zlato/30" />
+          {/* landmasses */}
+          {LANDMASS_PATHS.map((d, i) => (
+            <path key={`land${i}`} d={d} fill="rgba(200,160,60,0.07)" stroke="rgba(200,160,60,0.25)" strokeWidth={0.4} strokeLinejoin="round" />
+          ))}
           {active.map((c) => (
             <g
               key={c.hr}

@@ -340,7 +340,7 @@
    "hr": "Srednja, suha",
    "en": "Medium and dry"
   },
-  "priceUrl": "https://allez.hr/shop/svi-proizvodi/havana-club-gran-reserva-anejo-15-anos-40-vol-07l-u-poklon-kutiji",
+  "priceUrl": null,
   "notes": {
    "hr": "Vrhunski limited; kolekcionarska cijena",
    "en": "A superb limited release; collector pricing"
@@ -820,7 +820,7 @@
    "hr": "Srednja, suha",
    "en": "Medium and dry"
   },
-  "priceUrl": "https://allez.hr/shop/svi-proizvodi/havana-club-gran-reserva-anejo-15-anos-40-vol-07l-u-poklon-kutiji",
+  "priceUrl": null,
   "notes": {
    "hr": "Premium kubanac, eksplicitno za cigare",
    "en": "A premium Cuban, made explicitly for cigars"
@@ -2405,7 +2405,7 @@
    "best": "On the rocks (velika kocka)"
   },
   "cigarHint": null,
-  "priceUrl": "https://allez.hr/shop/svi-proizvodi/black-tot-master-blenders-reserve-rum-limited-edition-2022-545-vol-07l-u-poklon-kutiji",
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/black-tot-rum-462-vol-07l-u-poklon-kutiji",
   "notes": {
    "hr": "Navy blend, kompleksan",
    "en": "A complex navy blend"
@@ -3504,52 +3504,10 @@
    "best": "On the rocks (velika kocka)"
   },
   "cigarHint": null,
-  "priceUrl": "https://allez.hr/shop/svi-proizvodi/goslings-black-seal-151-proof-bermuda-black-rum-755-vol-07l",
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/goslings-black-seal-80-proof-bermuda-black-rum-40-vol-07-l",
   "notes": {
    "hr": "Klasik za Dark'n'Stormy, OK sipper",
    "en": "The Dark'n'Stormy classic, a passable sipper"
-  }
- },
- {
-  "id": "rum-goslings-black-tot-navy",
-  "category": "rum",
-  "name": "Goslings/Black Tot Navy",
-  "style": "navy",
-  "region": "Blend (Navy)",
-  "body": 4,
-  "sweetness": 3,
-  "flavorTags": [
-   "melasa",
-   "dim",
-   "zacini"
-  ],
-  "additiveStatus": "light",
-  "additiveDetail": {
-   "hr": "Blagi dodatak",
-   "en": "Light addition"
-  },
-  "additiveSource": "Procjena",
-  "qualityScore": 6.5,
-  "priceEUR": {
-   "min": 54.8,
-   "max": 54.8
-  },
-  "shopHR": "allez.hr",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "neat": 2,
-   "water": 2,
-   "rocks": 3,
-   "highball": 1,
-   "cola": 0,
-   "best": "On the rocks (velika kocka)"
-  },
-  "cigarHint": null,
-  "priceUrl": "https://allez.hr/shop/svi-proizvodi/ah-riise-black-barrel-navy-spiced-spirit-drink-40-vol-07l",
-  "notes": {
-   "hr": "Navy blend, za highball/sipping",
-   "en": "A navy blend for highballs or sipping"
   }
  },
  {
@@ -4942,7 +4900,7 @@
    "hr": "Uz koktel ili highball",
    "en": "With a cocktail or highball"
   },
-  "priceUrl": "https://allez.hr/shop/svi-proizvodi/havana-club-gran-reserva-anejo-15-anos-40-vol-07l-u-poklon-kutiji",
+  "priceUrl": "https://webshop.rotodinamic.hr/barcelo-gran-anejo-rum-1",
   "notes": {
    "hr": "Mixing rum",
    "en": "A mixing rum"
