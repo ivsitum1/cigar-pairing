@@ -45,6 +45,16 @@ describe("cigars.json integrity", () => {
     expect((extra!.priceUrl ?? "").toLowerCase()).not.toContain("paperboy");
   });
 
+  it("Nub vitole žive pod Nub brendom, ne pod Olivom", () => {
+    for (const c of CIGARS.filter((x) => x.brand === "Oliva")) {
+      const nubVitolas = (c.vitolas ?? []).filter((v) => v.name.toLowerCase().includes("nub"));
+      expect(nubVitolas).toEqual([]);
+    }
+    const nubCt = CIGARS.find((c) => c.id === "cig-nub-connecticut");
+    expect(nubCt).toBeDefined();
+    expect((nubCt!.vitolas ?? []).map((v) => v.name)).toContain("460");
+  });
+
   it("Paperboy — zaseban unos s humidor cijenom", () => {
     const pb = CIGARS.find((c) => c.id === "cig-paperboy-connecticut");
     expect(pb).toBeDefined();

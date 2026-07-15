@@ -16329,7 +16329,7 @@
   "id": "cig-nub-connecticut",
   "brand": "Nub",
   "line": "Connecticut",
-  "vitola": "Connecticut",
+  "vitola": "460",
   "format": "60 x 102mm",
   "country": "Nikaragva",
   "wrapper": "Natural",
@@ -16341,7 +16341,7 @@
    "kava",
    "med"
   ],
-  "smokeTimeMin": 50,
+  "smokeTimeMin": 40,
   "priceEUR": 10.2,
   "priceApprox": false,
   "availabilityHR": [
@@ -16349,8 +16349,8 @@
    "Havana Shop"
   ],
   "notes": {
-   "hr": "Kratko i debelo — 'sweet spot' cigare od prve minute. Kremasta verzija.",
-   "en": "Short and fat — the cigar's sweet spot from minute one. Creamy version."
+   "hr": "Kratko i debelo — 'sweet spot' cigare od prve minute; kremasta Connecticut verzija. Nub je Olivin brend: koncept Sama Leccije, proizvodi se u Olivinoj fabrici u Estelíju.",
+   "en": "Short and fat — the cigar's sweet spot from minute one; the creamy Connecticut version. Nub is an Oliva brand: Sam Leccia's concept, made at Oliva's factory in Estelí."
   },
   "markets": [
    "HR",
@@ -16365,9 +16365,9 @@
     "url": "https://havana-cigar-shop.com/proizvod/nub-connecticut-tubos-12/"
    },
    {
-    "name": "X 60",
-    "format": "—",
-    "smokeTimeMin": 50,
+    "name": "460",
+    "format": "60 x 102mm",
+    "smokeTimeMin": 40,
     "priceEUR": 10.2,
     "url": "https://humidor.hr/hr/proizvod/nub-connecticut-24-1-4-x-60/"
    }
@@ -16549,13 +16549,6 @@
    "WW"
   ],
   "vitolas": [
-   {
-    "name": "Nub 460 Connecticut",
-    "format": "60 x 102mm",
-    "smokeTimeMin": 40,
-    "priceEUR": null,
-    "url": "https://humidor.hr/hr/?s=oliva+Nub+460+Connecticut&post_type=product"
-   },
    {
     "name": "Serie G Robusto",
     "format": "50 x 127mm",
