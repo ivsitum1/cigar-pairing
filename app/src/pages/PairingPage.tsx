@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import type { Cigar, Drink, DrinkCategory, Market, PairingResult, Vitola } from "../types";
 import { ALL_DRINKS, CIGARS, cigarById, cigarLinkForMarket, cigarPriceForMarket, formatPrice } from "../data";
 import { pairCigarsForDrink, pairDrinksForCigar } from "../engine/pairing";
+import { WEIGHTS } from "../engine/rules";
 import { useI18n, STYLE_LABELS, type StringKey } from "../i18n";
 import { Chip, Meter, ScoreBand, SearchInput, SectionTitle } from "../components/ui";
 import { getItemState, useCollection } from "../store/collection";
@@ -592,7 +593,7 @@ function ResultCard<T>({
           ))}
         </div>
       )}
-      {excelHint && (
+      {excelHint && result.score >= WEIGHTS.curatedHintMinScore && (
         <div className="mt-2 rounded-md border border-zlato/25 bg-zlato/10 px-2.5 py-1.5 text-xs text-zlato-2">
           ★ {t("pair.excelHint")}: {lx(excelHint)}
         </div>
