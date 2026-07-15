@@ -37,6 +37,14 @@ describe("cigars.json integrity", () => {
     expect(names).not.toContain("Double Robusto");
   });
 
+  it("Oliva Additional Vitolas — nema Paperboy vitole ni Paperboy link", () => {
+    const extra = CIGARS.find((c) => c.id === "cig-oliva-oliva-extra");
+    expect(extra).toBeDefined();
+    const urls = (extra!.vitolas ?? []).map((v) => v.url).filter((u): u is string => Boolean(u));
+    expect(urls.some((u) => u.toLowerCase().includes("paperboy"))).toBe(false);
+    expect((extra!.priceUrl ?? "").toLowerCase()).not.toContain("paperboy");
+  });
+
   it("nema ugniježđenih vitola-duplikata (Serie G Double Robusto)", () => {
     expect(CIGARS.find((c) => c.id === "cig-oliva-serie-g-double-robusto-5-x-54")).toBeUndefined();
     expect(CIGARS.find((c) => c.id === "cig-oliva-serie-g-special-g")).toBeUndefined();

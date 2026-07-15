@@ -111,6 +111,43 @@ export function ClubPage() {
   const viewBox = view === "world" ? "0 0 360 120" : "72 38 58 36";
   const markerSize = view === "world" ? 7 : 3.2;
 
+  // Vrlo grube konture kopna (stylized), u lon/lat parovima.
+  // Namjerno low-res: dovoljno za orijentaciju, bez teškog GIS stacka.
+  const LAND: Array<Array<[number, number]>> = useMemo(
+    () => [
+      // Sjeverna Amerika (uklj. Meksiko)
+      [
+        [-168, 72], [-140, 70], [-125, 55], [-110, 45], [-100, 35], [-95, 25],
+        [-85, 18], [-80, 10], [-70, 12], [-60, 25], [-52, 45], [-60, 60],
+        [-90, 72], [-130, 72], [-168, 72],
+      ],
+      // Grenland
+      [[-60, 72], [-20, 72], [-20, 60], [-60, 60], [-60, 72]],
+      // Južna Amerika (do -45 zbog viewBoxa)
+      [[-82, 12], [-78, 2], [-72, -10], [-65, -20], [-60, -35], [-54, -45], [-72, -45], [-78, -30], [-82, -10], [-82, 12]],
+      // Europa + zapadna Azija (vrlo pojednostavljeno)
+      [[-10, 72], [10, 72], [35, 68], [60, 62], [90, 60], [120, 55], [150, 50], [179, 45], [179, 10], [120, 5], [80, 10], [60, 20], [40, 35], [20, 45], [0, 55], [-10, 60], [-10, 72]],
+      // Afrika
+      [[-20, 35], [0, 37], [20, 35], [35, 20], [45, 5], [40, -20], [30, -35], [10, -35], [-5, -25], [-15, -5], [-20, 20], [-20, 35]],
+      // Australija
+      [[110, -10], [155, -10], [155, -45], [110, -45], [110, -10]],
+      // Karibi (lanac otoka)
+      [[-85, 22], [-80, 21], [-75, 20], [-72, 19], [-68, 18], [-66, 18], [-64, 17], [-62, 16], [-61, 15]],
+    ],
+    [],
+  );
+
+  const polyToPath = (poly: Array<[number, number]>): string => {
+    if (poly.length === 0) return "";
+    const [lon0, lat0] = poly[0];
+    const parts: string[] = [`M ${X(lon0)} ${Y(lat0)}`];
+    for (let i = 1; i < poly.length; i++) {
+      const [lon, lat] = poly[i];
+      parts.push(`L ${X(lon)} ${Y(lat)}`);
+    }
+    return parts.join(" ");
+  };
+
   return (
     <div className="pb-4">
       {/* citat dana */}
@@ -206,6 +243,18 @@ export function ClubPage() {
           ))}
           {Array.from({ length: 5 }, (_, i) => i * 30).map((y) => (
             <line key={`h${y}`} x1={0} y1={y} x2={360} y2={y} stroke="currentColor" strokeWidth={0.15} className="text-dim/30" />
+          ))}
+          {/* obris kopna */}
+          {LAND.map((poly, i) => (
+            <path
+              key={`land${i}`}
+              d={polyToPath(poly)}
+              fill="none"
+              stroke="currentColor"
+              className="text-dim/35"
+              strokeWidth={0.5}
+              vectorEffect="non-scaling-stroke"
+            />
           ))}
           {/* ekvator */}
           <line x1={0} y1={Y(0)} x2={360} y2={Y(0)} stroke="currentColor" strokeWidth={0.3} className="text-zlato/30" />
