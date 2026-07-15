@@ -12,6 +12,7 @@ from pathlib import Path
 import openpyxl
 from openpyxl.styles import Alignment, Font, PatternFill
 
+from serve_shared import load_corrections, resolve_serve_hint
 from brandy_shared import (
     catalog_index,
     cigar_hint_for_style,
@@ -311,7 +312,7 @@ def write_workbook(catalog: list[dict], seeds: dict[str, dict]) -> None:
             serve_map.get(str(s["water"]), "+"),
             serve_map.get(str(s["rocks"]), "~"),
             s["best"],
-            cigar_hint_for_style(style),
+            resolve_serve_hint(label, style, cigar_hint_for_style),
         ])
     for row in master_rows[:35]:
         s = serving_for_style(row["style"], row.get("abv"), row["category"])
@@ -321,7 +322,7 @@ def write_workbook(catalog: list[dict], seeds: dict[str, dict]) -> None:
             serve_map.get(str(s["water"]), "+"),
             serve_map.get(str(s["rocks"]), "~"),
             s["best"],
-            cigar_hint_for_style(row["style"]),
+            resolve_serve_hint(row["name"], row["style"], cigar_hint_for_style),
         ])
 
     ws_p = wb.create_sheet("Kolekcija (plan)")
@@ -336,7 +337,8 @@ def write_workbook(catalog: list[dict], seeds: dict[str, dict]) -> None:
         ("TIER 2 — core", "Cognac XO", "Hennessy XO / Remy XO", "Bogat uz Habano", "allez.hr", "8+"),
         ("TIER 2 — core", "Armagnac", "Janéau VSOP / Dartigalongue", "Rustikalniji profil", "allez.hr", "7.5+"),
         ("TIER 3 — explore", "Calvados", "Boulard VSOP / XO", "Jabuka + blaza cigara", "allez.hr", "7+"),
-        ("TIER 3 — explore", "HR vinjak", "Badel 5* / Stock XO", "Lokalni klasik", "lokalno", "7+"),
+        ("TIER 3 — explore", "HR vinjak", "Badel Vinjak / Maraska", "Lokalni klasik", "lokalno", "7+"),
+        ("TIER 3 — explore", "Talijanski brandy", "Stock 84 XO", "Trieste — brandy, ne konjak", "lokalno", "7+"),
         ("TIER 4 — luxury", "Cognac XO+", "Camus XO / Delamain", "Luksuzni sipper", "allez.hr", "8.5+"),
     ]
     for t in tiers:

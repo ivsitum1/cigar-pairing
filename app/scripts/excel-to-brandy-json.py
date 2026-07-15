@@ -27,6 +27,7 @@ from brandy_shared import (
     sweetening_to_additive,
     token_overlap,
 )
+from serve_shared import find_correction, load_corrections
 from whisky_shared import normalize_region
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -111,6 +112,7 @@ def find_seed_notes(name: str, seeds: list[dict]) -> dict | None:
 def extract_brandies(wb, seeds: list[dict]) -> list[dict]:
     catalog = build_catalog_index(wb)
     serve_rows = build_serve_index(wb)
+    corrections = load_corrections()
     ws = wb["MASTER Ocjene"]
     items = []
 
@@ -146,6 +148,14 @@ def extract_brandies(wb, seeds: list[dict]) -> list[dict]:
             serving = dict(best_match["serving"])
         else:
             serving = serving_for_style(style, abv, category)
+        corr = find_correction(name_str, corrections)
+        if corr:
+            score_map = {"++": 3, "+": 2, "~": 1, "x": 0}
+            for key in ("neat", "water", "rocks", "highball", "cola"):
+                if corr.get(key) is not None:
+                    serving[key] = score_map.get(str(corr[key]).strip(), serving.get(key, 0))
+            if corr.get("best"):
+                serving["best"] = corr["best"]
 
         cat = find_best_catalog_match(name_str, catalog)
         price_eur = parse_price_eur(price_raw)

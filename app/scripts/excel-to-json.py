@@ -7,6 +7,8 @@ Cita MASTER Ocjene, Serviranje + Cigare i Kolekcija (plan) sheetove i generira:
 
 Pokretanje:  python scripts/excel-to-json.py
 Ponovno pokreni nakon svake izmjene Excela — JSON se generira ispocetka.
+Prije exporta iz Excela: python scripts/export-serve-corrections.py (izvor istine)
+Popravi lokalni Excel: python scripts/fix-excel-data.py
 """
 import json
 import re
@@ -14,6 +16,8 @@ import unicodedata
 from pathlib import Path
 
 import openpyxl
+
+from serve_shared import find_correction, load_corrections
 
 ROOT = Path(__file__).resolve().parent.parent          # app/
 XLSX = ROOT.parent / "Rum_Kolekcija_Checklist.xlsx"
@@ -201,6 +205,7 @@ def find_catalog_url(name: str, catalog) -> str | None:
 def extract_rums(wb):
     ws = wb["MASTER Ocjene"]
     catalog = build_catalog_index(wb)
+    corrections = load_corrections()
     # serviranje redovi za name-match
     serve_rows = []
     for row in wb["Serviranje + Cigare"].iter_rows(min_row=3, values_only=True):
@@ -251,7 +256,15 @@ def extract_rums(wb):
         matched = best_match if best_score >= 2 else None
 
         serving = serving_for(style, additive)
-        if matched:
+        corr = find_correction(str(name), corrections)
+        if corr:
+            score_map = {"++": 3, "+": 2, "~": 1, "x": 0}
+            for key in ("neat", "water", "rocks", "highball", "cola"):
+                if corr.get(key) is not None:
+                    serving[key] = score_map.get(str(corr[key]).strip(), serving.get(key, 0))
+            if corr.get("best"):
+                serving["best"] = corr["best"]
+        elif matched:
             for k, v in matched["serving"].items():
                 if v is not None:
                     serving[k if k != "best" else "best"] = v

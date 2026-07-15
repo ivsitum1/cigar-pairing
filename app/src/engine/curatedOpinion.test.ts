@@ -40,11 +40,10 @@ describe("curatedPairingOpinion", () => {
     expect(opinion?.en).toContain("Doorly");
   });
 
-  it("mišljenje se ne generira ispod praga — nema statičkog Excel hinta", () => {
+  it("mišljenje se ne generira ispod praga — app ne koristi legacy cigarHint", () => {
     const macanudo = byId(cigars, "cig-macanudo-cafe");
-    const { reasons, score } = scorePairing(macanudo, doorly);
+    const { score } = scorePairing(macanudo, doorly);
     expect(score).toBeLessThan(WEIGHTS.curatedHintMinScore);
-    // UI ne prikazuje mišljenje ispod praga; generator ipak može vratiti tekst
-    expect(doorly.cigarHint).toBeTruthy(); // legacy polje u JSON-u, app ga više ne koristi
+    expect(doorly.cigarHint).toBeNull();
   });
 });

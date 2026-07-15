@@ -35,6 +35,7 @@ indeksima rangiranim po kvaliteti za sipping uz cigaru.
     (Vivat/Miva/Vrutak/vinoteke), približne označene `priceApprox`
   - `src/engine/` — rule-based pairing engine s objašnjenjima (kalibracija u `rules.ts`)
   - `scripts/excel-to-json.py` — regenerira rums.json + shopping.json iz lokalnog Excela
+  - `scripts/export-serve-corrections.py` + `scripts/fix-excel-data.py` — ispravni podaci za Excel Serviranje + Cigare
   - `scripts/scrape-whisky-catalog.py` — scrape allez.hr + ecuga.com → whisky_catalog_raw.json
   - `scripts/build-whisky-excel.py` — gradi Whisky_Kolekcija_Checklist.xlsx iz raw kataloga
   - `scripts/excel-to-whisky-json.py` — regenerira whiskies.json iz whisky Excela

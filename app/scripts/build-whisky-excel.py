@@ -12,6 +12,7 @@ from pathlib import Path
 import openpyxl
 from openpyxl.styles import Alignment, Font, PatternFill
 
+from serve_shared import load_corrections, resolve_serve_hint
 from whisky_shared import (
     additive_status,
     catalog_index,
@@ -300,7 +301,7 @@ def write_workbook(catalog: list[dict], seeds: dict[str, dict]) -> None:
             serve_map.get(str(s["water"]), "+"),
             serve_map.get(str(s["rocks"]), "~"),
             s["best"],
-            cigar_hint_for_style(style),
+            resolve_serve_hint(label, style, cigar_hint_for_style),
         ])
     for row in master_rows[:40]:
         s = serving_for_style(row["style"], row.get("abv"), row["expr"])
@@ -310,7 +311,7 @@ def write_workbook(catalog: list[dict], seeds: dict[str, dict]) -> None:
             serve_map.get(str(s["water"]), "+"),
             serve_map.get(str(s["rocks"]), "~"),
             s["best"],
-            cigar_hint_for_style(row["style"]),
+            resolve_serve_hint(row["name"], row["style"], cigar_hint_for_style),
         ])
 
     # Kolekcija plan

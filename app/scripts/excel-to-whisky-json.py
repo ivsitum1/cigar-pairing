@@ -13,6 +13,7 @@ from pathlib import Path
 
 import openpyxl
 
+from serve_shared import find_correction, load_corrections
 from whisky_shared import (
     additive_status,
     catalog_index,
@@ -90,6 +91,7 @@ def country_from_region(region: str) -> str:
 def extract_whiskies(wb) -> list[dict]:
     catalog = build_catalog_index(wb)
     serve_rows = build_serve_index(wb)
+    corrections = load_corrections()
     ws = wb["MASTER Ocjene"]
     items = []
 
@@ -125,6 +127,14 @@ def extract_whiskies(wb) -> list[dict]:
             serving = dict(best_match["serving"])
         else:
             serving = serving_for_style(style, abv, expr)
+        corr = find_correction(str(name), corrections)
+        if corr:
+            score_map = {"++": 3, "+": 2, "~": 1, "x": 0}
+            for key in ("neat", "water", "rocks", "highball", "cola"):
+                if corr.get(key) is not None:
+                    serving[key] = score_map.get(str(corr[key]).strip(), serving.get(key, 0))
+            if corr.get("best"):
+                serving["best"] = corr["best"]
 
         cat = find_best_catalog_match(str(name), catalog)
         price_eur = parse_price_eur(price_raw)
