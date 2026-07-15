@@ -16,6 +16,7 @@ export const COUNTRIES: CountryInfo[] = [
   { hr: "Dominikana", en: "Dominican Republic", flag: "🇩🇴", lat: 18.9, lon: -70.2 },
   { hr: "Jamajka", en: "Jamaica", flag: "🇯🇲", lat: 18.1, lon: -77.3 },
   { hr: "Barbados", en: "Barbados", flag: "🇧🇧", lat: 13.2, lon: -59.5 },
+  { hr: "Anguilla", en: "Anguilla", flag: "🇦🇮", lat: 18.2, lon: -63.1 },
   { hr: "Trinidad", en: "Trinidad", flag: "🇹🇹", lat: 10.5, lon: -61.3 },
   { hr: "Sv. Lucija", en: "St Lucia", flag: "🇱🇨", lat: 13.9, lon: -61.0 },
   { hr: "Martinique", en: "Martinique", flag: "🇲🇶", lat: 14.6, lon: -61.0 },
@@ -89,7 +90,7 @@ const ALIASES: Record<string, string> = {
   Highlands: "Škotska", Campbeltown: "Škotska", Orkney: "Škotska", Skye: "Škotska",
   Arran: "Škotska", Dublin: "Irska", Melbourne: "Australija", "Yarra Valley": "Australija",
   Barossa: "Australija", Goa: "Indija", Malabar: "Indija", Sumatra: "Indonezija",
-  Jamajka: "Jamajka", Antigua: "Gvatemala", Demerara: "Gvajana", Anguilla: "Sv. Lucija",
+  Jamajka: "Jamajka", Antigua: "Gvatemala", Demerara: "Gvajana",
 };
 
 const byHr = new Map(COUNTRIES.map((c) => [c.hr, c]));
@@ -107,7 +108,13 @@ export function drinkCountries(d: Drink): CountryInfo[] {
       if (c) hits.add(c);
     }
   }
-  return [...hits];
+  const matched = [...hits];
+  return matched.filter(
+    (c) =>
+      !matched.some(
+        (other) => other !== c && other.hr.includes(c.hr) && region.includes(other.hr),
+      ),
+  );
 }
 
 /** Zemlje jedne cigare (country moze biti "SAD/Nikaragva"). */
