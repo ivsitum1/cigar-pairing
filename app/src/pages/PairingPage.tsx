@@ -415,7 +415,7 @@ export function PairingPage() {
                     <ResultCard
                       result={result}
                       title={result.item.name}
-                      sub={lx(STYLE_LABELS[result.item.style]) || result.item.style}
+                      sub={`${t(`cat.${category}` as StringKey)} · ${lx(STYLE_LABELS[result.item.style]) || result.item.style}`}
                       price={formatPrice(result.item.priceEUR)}
                       priceUrl={result.item.priceUrl}
                       excelHint={result.item.cigarHint}

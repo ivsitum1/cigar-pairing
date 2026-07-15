@@ -6,7 +6,7 @@
   "style": "cognac-xo",
   "region": "Grande Champagne, Francuska",
   "country": "Francuska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 4,
   "sweetness": 3,
   "flavorTags": [
@@ -23,8 +23,8 @@
   "additiveSource": "Excel MASTER",
   "qualityScore": 8.5,
   "priceEUR": {
-   "min": 110.0,
-   "max": 110.0
+   "min": 110,
+   "max": 110
   },
   "priceApprox": false,
   "shopHR": "allez.hr",
@@ -55,7 +55,7 @@
   "style": "cognac-xo",
   "region": "Grande Champagne, Francuska",
   "country": "Francuska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 4,
   "sweetness": 3,
   "flavorTags": [
@@ -72,8 +72,8 @@
   "additiveSource": "Excel MASTER",
   "qualityScore": 8.5,
   "priceEUR": {
-   "min": 95.0,
-   "max": 95.0
+   "min": 95,
+   "max": 95
   },
   "priceApprox": false,
   "shopHR": "allez.hr",
@@ -104,7 +104,7 @@
   "style": "cognac-xo",
   "region": "Grande Champagne, Francuska",
   "country": "Francuska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 4,
   "sweetness": 3,
   "flavorTags": [
@@ -121,8 +121,8 @@
   "additiveSource": "Excel MASTER",
   "qualityScore": 8.5,
   "priceEUR": {
-   "min": 160.0,
-   "max": 160.0
+   "min": 160,
+   "max": 160
   },
   "priceApprox": false,
   "shopHR": "allez.hr",
@@ -150,10 +150,10 @@
   "id": "br-boulard-calvados-xo",
   "category": "brandy",
   "name": "Boulard Calvados XO",
-  "style": "cognac-xo",
-  "region": "Cognac, Francuska",
+  "style": "calvados",
+  "region": "Pays d'Auge, Normandija",
   "country": "Francuska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 4,
   "sweetness": 3,
   "flavorTags": [
@@ -170,8 +170,8 @@
   "additiveSource": "Excel MASTER",
   "qualityScore": 8.2,
   "priceEUR": {
-   "min": 55.0,
-   "max": 55.0
+   "min": 55,
+   "max": 55
   },
   "priceApprox": false,
   "shopHR": "ecuga.com",
@@ -199,10 +199,10 @@
   "id": "br-carlos-i-imperial-xo",
   "category": "brandy",
   "name": "Carlos I Imperial XO",
-  "style": "cognac-xo",
-  "region": "Cognac, Francuska",
+  "style": "brandy-de-jerez",
+  "region": "Jerez, Španjolska",
   "country": "Francuska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 4,
   "sweetness": 3,
   "flavorTags": [
@@ -219,8 +219,8 @@
   "additiveSource": "Excel MASTER",
   "qualityScore": 8.2,
   "priceEUR": {
-   "min": 53.0,
-   "max": 53.0
+   "min": 53,
+   "max": 53
   },
   "priceApprox": false,
   "shopHR": "ecuga.com",
@@ -251,7 +251,7 @@
   "style": "cognac-xo",
   "region": "Cognac, Francuska",
   "country": "Francuska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 4,
   "sweetness": 3,
   "flavorTags": [
@@ -268,8 +268,8 @@
   "additiveSource": "Excel MASTER",
   "qualityScore": 8.1,
   "priceEUR": {
-   "min": 169.0,
-   "max": 169.0
+   "min": 169,
+   "max": 169
   },
   "priceApprox": false,
   "shopHR": "ecuga.com",
@@ -300,7 +300,7 @@
   "style": "cognac-xo",
   "region": "Cognac, Francuska",
   "country": "Francuska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 4,
   "sweetness": 3,
   "flavorTags": [
@@ -317,8 +317,8 @@
   "additiveSource": "Excel MASTER",
   "qualityScore": 8.1,
   "priceEUR": {
-   "min": 199.0,
-   "max": 199.0
+   "min": 199,
+   "max": 199
   },
   "priceApprox": false,
   "shopHR": "ecuga.com",
@@ -349,7 +349,7 @@
   "style": "cognac-xo",
   "region": "Cognac, Francuska",
   "country": "Francuska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 4,
   "sweetness": 3,
   "flavorTags": [
@@ -366,8 +366,8 @@
   "additiveSource": "Excel MASTER",
   "qualityScore": 8.1,
   "priceEUR": {
-   "min": 125.0,
-   "max": 125.0
+   "min": 125,
+   "max": 125
   },
   "priceApprox": false,
   "shopHR": "ecuga.com",
@@ -398,7 +398,7 @@
   "style": "brandy-armenian",
   "region": "Armenija",
   "country": "Armenija",
-  "abv": 40.0,
+  "abv": 40,
   "body": 4,
   "sweetness": 3,
   "flavorTags": [
@@ -412,7 +412,7 @@
    "en": "Not declared"
   },
   "additiveSource": "Excel MASTER",
-  "qualityScore": 8.0,
+  "qualityScore": 8,
   "priceEUR": {
    "min": 152.5,
    "max": 152.5
@@ -443,10 +443,10 @@
   "id": "br-boulard-calvados-pays-d-039-auge-xo-40-vol-0-7l-u-poklon-kutiji",
   "category": "brandy",
   "name": "Boulard Calvados Pays d'Auge XO",
-  "style": "cognac-xo",
-  "region": "Cognac, Francuska",
+  "style": "calvados",
+  "region": "Pays d'Auge, Normandija",
   "country": "Francuska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 4,
   "sweetness": 3,
   "flavorTags": [
@@ -461,7 +461,7 @@
    "en": "No known additives"
   },
   "additiveSource": "Excel MASTER",
-  "qualityScore": 8.0,
+  "qualityScore": 8,
   "priceEUR": null,
   "priceApprox": true,
   "shopHR": "allez.hr",
@@ -489,10 +489,10 @@
   "id": "br-christian-drouin-xo-calvados",
   "category": "brandy",
   "name": "Christian Drouin XO Calvados",
-  "style": "cognac-xo",
-  "region": "Pays d'Auge, Francuska",
+  "style": "calvados",
+  "region": "Pays d'Auge, Normandija",
   "country": "Francuska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 4,
   "sweetness": 3,
   "flavorTags": [
@@ -507,10 +507,10 @@
    "en": "No known additives"
   },
   "additiveSource": "Excel MASTER",
-  "qualityScore": 8.0,
+  "qualityScore": 8,
   "priceEUR": {
-   "min": 81.0,
-   "max": 81.0
+   "min": 81,
+   "max": 81
   },
   "priceApprox": false,
   "shopHR": "ecuga.com",
@@ -538,10 +538,10 @@
   "id": "br-choteau-de-laubade-xo",
   "category": "brandy",
   "name": "Château de Laubade XO",
-  "style": "cognac-xo",
+  "style": "armagnac",
   "region": "Bas-Armagnac, Francuska",
   "country": "Francuska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 4,
   "sweetness": 3,
   "flavorTags": [
@@ -556,10 +556,10 @@
    "en": "Not declared"
   },
   "additiveSource": "Excel MASTER",
-  "qualityScore": 8.0,
+  "qualityScore": 8,
   "priceEUR": {
-   "min": 60.0,
-   "max": 60.0
+   "min": 60,
+   "max": 60
   },
   "priceApprox": false,
   "shopHR": "allez.hr",
@@ -590,7 +590,7 @@
   "style": "brandy-spanish",
   "region": "Bas-Armagnac, Francuska",
   "country": "Francuska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 3,
   "sweetness": 3,
   "flavorTags": [
@@ -603,10 +603,10 @@
    "en": "Not declared"
   },
   "additiveSource": "Excel MASTER",
-  "qualityScore": 8.0,
+  "qualityScore": 8,
   "priceEUR": {
-   "min": 48.0,
-   "max": 48.0
+   "min": 48,
+   "max": 48
   },
   "priceApprox": false,
   "shopHR": "allez.hr",
@@ -637,7 +637,7 @@
   "style": "cognac-xo",
   "region": "Cognac, Francuska",
   "country": "Francuska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 4,
   "sweetness": 3,
   "flavorTags": [
@@ -652,7 +652,7 @@
    "en": "No known additives"
   },
   "additiveSource": "Excel MASTER",
-  "qualityScore": 8.0,
+  "qualityScore": 8,
   "priceEUR": null,
   "priceApprox": true,
   "shopHR": "allez.hr",
@@ -683,7 +683,7 @@
   "style": "armagnac",
   "region": "Bas-Armagnac, Francuska",
   "country": "Francuska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 4,
   "sweetness": 3,
   "flavorTags": [
@@ -698,10 +698,10 @@
    "en": "No known additives"
   },
   "additiveSource": "Excel MASTER",
-  "qualityScore": 8.0,
+  "qualityScore": 8,
   "priceEUR": {
-   "min": 45.0,
-   "max": 45.0
+   "min": 45,
+   "max": 45
   },
   "priceApprox": false,
   "shopHR": "allez.hr",
@@ -732,7 +732,7 @@
   "style": "cognac-vsop",
   "region": "Grande Champagne, Francuska",
   "country": "Francuska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 3,
   "sweetness": 3,
   "flavorTags": [
@@ -747,10 +747,10 @@
    "en": "No known additives"
   },
   "additiveSource": "Excel MASTER",
-  "qualityScore": 8.0,
+  "qualityScore": 8,
   "priceEUR": {
-   "min": 68.0,
-   "max": 68.0
+   "min": 68,
+   "max": 68
   },
   "priceApprox": false,
   "shopHR": "ecuga.com",
@@ -781,7 +781,7 @@
   "style": "cognac-vsop",
   "region": "Grande Champagne, Francuska",
   "country": "Francuska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 3,
   "sweetness": 3,
   "flavorTags": [
@@ -796,10 +796,10 @@
    "en": "Not declared"
   },
   "additiveSource": "Excel MASTER",
-  "qualityScore": 8.0,
+  "qualityScore": 8,
   "priceEUR": {
-   "min": 55.0,
-   "max": 55.0
+   "min": 55,
+   "max": 55
   },
   "priceApprox": false,
   "shopHR": "allez.hr",
@@ -830,7 +830,7 @@
   "style": "cognac-xo",
   "region": "Cognac, Francuska",
   "country": "Francuska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 4,
   "sweetness": 3,
   "flavorTags": [
@@ -845,7 +845,7 @@
    "en": "No known additives"
   },
   "additiveSource": "Excel MASTER",
-  "qualityScore": 8.0,
+  "qualityScore": 8,
   "priceEUR": null,
   "priceApprox": true,
   "shopHR": "allez.hr",
@@ -876,7 +876,7 @@
   "style": "cognac-xo",
   "region": "Cognac, Francuska",
   "country": "Francuska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 4,
   "sweetness": 3,
   "flavorTags": [
@@ -891,10 +891,10 @@
    "en": "No known additives"
   },
   "additiveSource": "Excel MASTER",
-  "qualityScore": 8.0,
+  "qualityScore": 8,
   "priceEUR": {
-   "min": 170.0,
-   "max": 170.0
+   "min": 170,
+   "max": 170
   },
   "priceApprox": false,
   "shopHR": "allez.hr",
@@ -922,10 +922,10 @@
   "id": "br-janneau-xo-grand-armagnac-40-vol-0-7l-gb",
   "category": "brandy",
   "name": "Janneau XO Grand Armagnac +",
-  "style": "cognac-xo",
-  "region": "Cognac, Francuska",
+  "style": "armagnac",
+  "region": "Armagnac, Francuska",
   "country": "Francuska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 4,
   "sweetness": 3,
   "flavorTags": [
@@ -940,7 +940,7 @@
    "en": "No known additives"
   },
   "additiveSource": "Excel MASTER",
-  "qualityScore": 8.0,
+  "qualityScore": 8,
   "priceEUR": null,
   "priceApprox": true,
   "shopHR": "allez.hr",
@@ -971,7 +971,7 @@
   "style": "cognac-xo",
   "region": "Cognac, Francuska",
   "country": "Francuska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 4,
   "sweetness": 3,
   "flavorTags": [
@@ -986,10 +986,10 @@
    "en": "No known additives"
   },
   "additiveSource": "Excel MASTER",
-  "qualityScore": 8.0,
+  "qualityScore": 8,
   "priceEUR": {
-   "min": 150.0,
-   "max": 150.0
+   "min": 150,
+   "max": 150
   },
   "priceApprox": false,
   "shopHR": "allez.hr",
@@ -1020,7 +1020,7 @@
   "style": "brandy-de-jerez",
   "region": "Jerez, Španjolska",
   "country": "┼ápanjolska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 4,
   "sweetness": 3,
   "flavorTags": [
@@ -1035,10 +1035,10 @@
    "en": "Sweetened (within permitted obscuration)"
   },
   "additiveSource": "Excel MASTER",
-  "qualityScore": 8.0,
+  "qualityScore": 8,
   "priceEUR": {
-   "min": 45.0,
-   "max": 45.0
+   "min": 45,
+   "max": 45
   },
   "priceApprox": false,
   "shopHR": "allez.hr",
@@ -1069,7 +1069,7 @@
   "style": "brandy-spanish",
   "region": "Grande Champagne, Francuska",
   "country": "Francuska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 3,
   "sweetness": 3,
   "flavorTags": [
@@ -1082,10 +1082,10 @@
    "en": "Not declared"
   },
   "additiveSource": "Excel MASTER",
-  "qualityScore": 8.0,
+  "qualityScore": 8,
   "priceEUR": {
-   "min": 45.0,
-   "max": 45.0
+   "min": 45,
+   "max": 45
   },
   "priceApprox": false,
   "shopHR": "allez.hr",
@@ -1116,7 +1116,7 @@
   "style": "cognac-xo",
   "region": "Cognac (Fine Champagne), Francuska",
   "country": "Francuska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 4,
   "sweetness": 3,
   "flavorTags": [
@@ -1131,10 +1131,10 @@
    "en": "No known additives"
   },
   "additiveSource": "Excel MASTER",
-  "qualityScore": 8.0,
+  "qualityScore": 8,
   "priceEUR": {
-   "min": 160.0,
-   "max": 160.0
+   "min": 160,
+   "max": 160
   },
   "priceApprox": false,
   "shopHR": "allez.hr",
@@ -1165,7 +1165,7 @@
   "style": "cognac-xo",
   "region": "Cognac (Fine Champagne), Francuska",
   "country": "Francuska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 4,
   "sweetness": 3,
   "flavorTags": [
@@ -1180,10 +1180,10 @@
    "en": "Not declared"
   },
   "additiveSource": "Excel MASTER",
-  "qualityScore": 8.0,
+  "qualityScore": 8,
   "priceEUR": {
-   "min": 160.0,
-   "max": 160.0
+   "min": 160,
+   "max": 160
   },
   "priceApprox": false,
   "shopHR": "allez.hr",
@@ -1214,7 +1214,7 @@
   "style": "cognac-xo",
   "region": "Cognac, Francuska",
   "country": "Francuska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 4,
   "sweetness": 3,
   "flavorTags": [
@@ -1231,8 +1231,8 @@
   "additiveSource": "Excel MASTER",
   "qualityScore": 7.8,
   "priceEUR": {
-   "min": 119.0,
-   "max": 119.0
+   "min": 119,
+   "max": 119
   },
   "priceApprox": false,
   "shopHR": "ecuga.com",
@@ -1260,10 +1260,10 @@
   "id": "br-alfonso-xo-solera-gran-reserva",
   "category": "brandy",
   "name": "Alfonso XO Solera Gran Reserva",
-  "style": "cognac-xo",
+  "style": "brandy-de-jerez",
   "region": "Jerez, Španjolska",
   "country": "┼ápanjolska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 4,
   "sweetness": 3,
   "flavorTags": [
@@ -1280,8 +1280,8 @@
   "additiveSource": "Excel MASTER",
   "qualityScore": 7.5,
   "priceEUR": {
-   "min": 26.0,
-   "max": 26.0
+   "min": 26,
+   "max": 26
   },
   "priceApprox": false,
   "shopHR": "ecuga.com",
@@ -1374,7 +1374,7 @@
    "en": "Not declared"
   },
   "additiveSource": "web provjera 2026-07",
-  "qualityScore": 7.0,
+  "qualityScore": 7,
   "priceEUR": {
    "min": 46.2,
    "max": 46.2
@@ -1408,7 +1408,7 @@
   "style": "brandy-armenian",
   "region": "Armenija",
   "country": "Armenija",
-  "abv": 40.0,
+  "abv": 40,
   "body": 4,
   "sweetness": 3,
   "flavorTags": [
@@ -1424,8 +1424,8 @@
   "additiveSource": "Excel MASTER",
   "qualityScore": 7.5,
   "priceEUR": {
-   "min": 30.0,
-   "max": 30.0
+   "min": 30,
+   "max": 30
   },
   "priceApprox": false,
   "shopHR": "Roto/Vrutak",
@@ -1470,7 +1470,7 @@
    "en": "Not declared"
   },
   "additiveSource": "web provjera 2026-07",
-  "qualityScore": 8.0,
+  "qualityScore": 8,
   "priceEUR": {
    "min": 88.5,
    "max": 88.5
@@ -1614,10 +1614,10 @@
    "en": "Not declared"
   },
   "additiveSource": "web provjera 2026-07",
-  "qualityScore": 9.0,
+  "qualityScore": 9,
   "priceEUR": {
-   "min": 876.0,
-   "max": 876.0
+   "min": 876,
+   "max": 876
   },
   "priceApprox": false,
   "shopHR": "allez.hr",
@@ -1648,7 +1648,7 @@
   "style": "brandy-spanish",
   "region": "Bas-Armagnac, Francuska",
   "country": "Francuska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 3,
   "sweetness": 3,
   "flavorTags": [
@@ -1663,8 +1663,8 @@
   "additiveSource": "Excel MASTER",
   "qualityScore": 7.5,
   "priceEUR": {
-   "min": 40.0,
-   "max": 40.0
+   "min": 40,
+   "max": 40
   },
   "priceApprox": false,
   "shopHR": "allez.hr",
@@ -1695,7 +1695,7 @@
   "style": "cognac-vsop",
   "region": "Borderies, Francuska",
   "country": "Francuska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 3,
   "sweetness": 3,
   "flavorTags": [
@@ -1711,8 +1711,8 @@
   "additiveSource": "Excel MASTER",
   "qualityScore": 7.5,
   "priceEUR": {
-   "min": 39.0,
-   "max": 39.0
+   "min": 39,
+   "max": 39
   },
   "priceApprox": false,
   "shopHR": "ecuga.com",
@@ -1743,7 +1743,7 @@
   "style": "cognac-vsop",
   "region": "Borderies, Francuska",
   "country": "Francuska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 3,
   "sweetness": 3,
   "flavorTags": [
@@ -1760,8 +1760,8 @@
   "additiveSource": "Excel MASTER",
   "qualityScore": 7.5,
   "priceEUR": {
-   "min": 59.0,
-   "max": 59.0
+   "min": 59,
+   "max": 59
   },
   "priceApprox": false,
   "shopHR": "ecuga.com",
@@ -1792,7 +1792,7 @@
   "style": "cognac-vsop",
   "region": "Borderies, Francuska",
   "country": "Francuska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 3,
   "sweetness": 3,
   "flavorTags": [
@@ -1808,8 +1808,8 @@
   "additiveSource": "Excel MASTER",
   "qualityScore": 7.5,
   "priceEUR": {
-   "min": 110.0,
-   "max": 110.0
+   "min": 110,
+   "max": 110
   },
   "priceApprox": false,
   "shopHR": "allez.hr",
@@ -1840,7 +1840,7 @@
   "style": "cognac-xo",
   "region": "Borderies, Francuska",
   "country": "Francuska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 4,
   "sweetness": 3,
   "flavorTags": [
@@ -1857,8 +1857,8 @@
   "additiveSource": "Excel MASTER",
   "qualityScore": 7.5,
   "priceEUR": {
-   "min": 110.0,
-   "max": 110.0
+   "min": 110,
+   "max": 110
   },
   "priceApprox": false,
   "shopHR": "allez.hr",
@@ -1889,7 +1889,7 @@
   "style": "brandy-de-jerez",
   "region": "Jerez, Španjolska",
   "country": "┼ápanjolska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 4,
   "sweetness": 3,
   "flavorTags": [
@@ -1906,8 +1906,8 @@
   "additiveSource": "Excel MASTER",
   "qualityScore": 7.5,
   "priceEUR": {
-   "min": 38.0,
-   "max": 38.0
+   "min": 38,
+   "max": 38
   },
   "priceApprox": false,
   "shopHR": "allez.hr",
@@ -1935,10 +1935,10 @@
   "id": "br-christian-drouin-calvados-vsop",
   "category": "brandy",
   "name": "Christian Drouin Calvados VSOP",
-  "style": "cognac-vsop",
+  "style": "calvados",
   "region": "Normandija, Francuska",
   "country": "Francuska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 3,
   "sweetness": 3,
   "flavorTags": [
@@ -1955,8 +1955,8 @@
   "additiveSource": "Excel MASTER",
   "qualityScore": 7.5,
   "priceEUR": {
-   "min": 45.0,
-   "max": 45.0
+   "min": 45,
+   "max": 45
   },
   "priceApprox": false,
   "shopHR": "allez.hr",
@@ -1984,10 +1984,10 @@
   "id": "br-choteau-du-tariquet-vsop-bas-armagnac",
   "category": "brandy",
   "name": "Château du Tariquet VSOP Bas-Armagnac",
-  "style": "cognac-vsop",
+  "style": "armagnac",
   "region": "Bas-Armagnac, Francuska",
   "country": "Francuska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 3,
   "sweetness": 3,
   "flavorTags": [
@@ -2004,8 +2004,8 @@
   "additiveSource": "Excel MASTER",
   "qualityScore": 7.5,
   "priceEUR": {
-   "min": 38.0,
-   "max": 38.0
+   "min": 38,
+   "max": 38
   },
   "priceApprox": false,
   "shopHR": "allez.hr",
@@ -2036,7 +2036,7 @@
   "style": "cognac-vsop",
   "region": "Cognac, Francuska",
   "country": "Francuska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 3,
   "sweetness": 3,
   "flavorTags": [
@@ -2053,8 +2053,8 @@
   "additiveSource": "Excel MASTER",
   "qualityScore": 7.5,
   "priceEUR": {
-   "min": 55.0,
-   "max": 55.0
+   "min": 55,
+   "max": 55
   },
   "priceApprox": false,
   "shopHR": "allez.hr",
@@ -2085,7 +2085,7 @@
   "style": "cognac-vsop",
   "region": "Cognac, Francuska",
   "country": "Francuska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 3,
   "sweetness": 3,
   "flavorTags": [
@@ -2102,8 +2102,8 @@
   "additiveSource": "Excel MASTER",
   "qualityScore": 7.5,
   "priceEUR": {
-   "min": 55.0,
-   "max": 55.0
+   "min": 55,
+   "max": 55
   },
   "priceApprox": false,
   "shopHR": "allez.hr",
@@ -2131,10 +2131,10 @@
   "id": "br-janneau-xo-royal-grand-armagnac",
   "category": "brandy",
   "name": "Janneau XO Royal Grand Armagnac",
-  "style": "cognac-xo",
+  "style": "armagnac",
   "region": "Armagnac, Francuska",
   "country": "Francuska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 4,
   "sweetness": 3,
   "flavorTags": [
@@ -2151,8 +2151,8 @@
   "additiveSource": "Excel MASTER",
   "qualityScore": 7.5,
   "priceEUR": {
-   "min": 53.0,
-   "max": 53.0
+   "min": 53,
+   "max": 53
   },
   "priceApprox": false,
   "shopHR": "ecuga.com",
@@ -2180,10 +2180,10 @@
   "id": "br-janneau-xo-royal",
   "category": "brandy",
   "name": "Janneau XO Royal",
-  "style": "cognac-xo",
+  "style": "armagnac",
   "region": "Armagnac, Francuska",
   "country": "Francuska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 4,
   "sweetness": 3,
   "flavorTags": [
@@ -2200,8 +2200,8 @@
   "additiveSource": "Excel MASTER",
   "qualityScore": 7.5,
   "priceEUR": {
-   "min": 55.0,
-   "max": 55.0
+   "min": 55,
+   "max": 55
   },
   "priceApprox": false,
   "shopHR": "allez.hr",
@@ -2232,7 +2232,7 @@
   "style": "brandy-de-jerez",
   "region": "Jerez, Španjolska",
   "country": "┼ápanjolska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 4,
   "sweetness": 3,
   "flavorTags": [
@@ -2249,8 +2249,8 @@
   "additiveSource": "Excel MASTER",
   "qualityScore": 7.5,
   "priceEUR": {
-   "min": 40.0,
-   "max": 40.0
+   "min": 40,
+   "max": 40
   },
   "priceApprox": false,
   "shopHR": "allez.hr",
@@ -2281,7 +2281,7 @@
   "style": "cognac-xo",
   "region": "Cognac, Francuska",
   "country": "Francuska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 3,
   "sweetness": 3,
   "flavorTags": [
@@ -2295,10 +2295,10 @@
    "en": "No known additives"
   },
   "additiveSource": "Excel MASTER",
-  "qualityScore": 8.0,
+  "qualityScore": 8,
   "priceEUR": {
-   "min": 195.0,
-   "max": 195.0
+   "min": 195,
+   "max": 195
   },
   "priceApprox": false,
   "shopHR": "ecuga.com",
@@ -2329,7 +2329,7 @@
   "style": "cognac-vsop",
   "region": "Cognac, Francuska",
   "country": "Francuska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 3,
   "sweetness": 3,
   "flavorTags": [
@@ -2346,8 +2346,8 @@
   "additiveSource": "Excel MASTER",
   "qualityScore": 6.5,
   "priceEUR": {
-   "min": 50.0,
-   "max": 50.0
+   "min": 50,
+   "max": 50
   },
   "priceApprox": false,
   "shopHR": "allez.hr",
@@ -2378,7 +2378,7 @@
   "style": "cognac-vsop",
   "region": "Cognac, Francuska",
   "country": "Francuska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 3,
   "sweetness": 3,
   "flavorTags": [
@@ -2395,8 +2395,8 @@
   "additiveSource": "Excel MASTER",
   "qualityScore": 7.5,
   "priceEUR": {
-   "min": 60.0,
-   "max": 60.0
+   "min": 60,
+   "max": 60
   },
   "priceApprox": false,
   "shopHR": "allez.hr",
@@ -2424,10 +2424,10 @@
   "id": "br-tariquet-armagnac-vsop-40-vol-0-5l-u-poklon-kutiji",
   "category": "brandy",
   "name": "Tariquet Armagnac VSOP",
-  "style": "cognac-vsop",
+  "style": "armagnac",
   "region": "Bas-Armagnac, Francuska",
   "country": "Francuska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 3,
   "sweetness": 3,
   "flavorTags": [
@@ -2444,8 +2444,8 @@
   "additiveSource": "Excel MASTER",
   "qualityScore": 7.5,
   "priceEUR": {
-   "min": 38.0,
-   "max": 38.0
+   "min": 38,
+   "max": 38
   },
   "priceApprox": false,
   "shopHR": "allez.hr",
@@ -2473,10 +2473,10 @@
   "id": "br-asbach-selection-extra-old-21-jears-40-vol-0-7l-u-poklon-kutiji",
   "category": "brandy",
   "name": "Asbach Selection Extra Old 21 Jears",
-  "style": "cognac-xo",
-  "region": "Cognac, Francuska",
+  "style": "brandy-german",
+  "region": "Rüdesheim, Njemačka",
   "country": "Francuska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 4,
   "sweetness": 3,
   "flavorTags": [
@@ -2522,7 +2522,7 @@
   "style": "cognac-xo",
   "region": "Cognac, Francuska",
   "country": "Francuska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 4,
   "sweetness": 3,
   "flavorTags": [
@@ -2568,7 +2568,7 @@
   "style": "cognac-xo",
   "region": "Cognac, Francuska",
   "country": "Francuska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 4,
   "sweetness": 3,
   "flavorTags": [
@@ -2614,7 +2614,7 @@
   "style": "cognac-xo",
   "region": "Cognac, Francuska",
   "country": "Francuska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 3,
   "sweetness": 3,
   "flavorTags": [
@@ -2630,8 +2630,8 @@
   "additiveSource": "Excel MASTER",
   "qualityScore": 7.1,
   "priceEUR": {
-   "min": 649.0,
-   "max": 649.0
+   "min": 649,
+   "max": 649
   },
   "priceApprox": false,
   "shopHR": "ecuga.com",
@@ -2662,7 +2662,7 @@
   "style": "cognac-xo",
   "region": "Cognac, Francuska",
   "country": "Francuska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 3,
   "sweetness": 3,
   "flavorTags": [
@@ -2678,8 +2678,8 @@
   "additiveSource": "Excel MASTER",
   "qualityScore": 7.1,
   "priceEUR": {
-   "min": 509.0,
-   "max": 509.0
+   "min": 509,
+   "max": 509
   },
   "priceApprox": false,
   "shopHR": "ecuga.com",
@@ -2710,7 +2710,7 @@
   "style": "cognac-xo",
   "region": "Cognac, Francuska",
   "country": "Francuska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 3,
   "sweetness": 3,
   "flavorTags": [
@@ -2726,8 +2726,8 @@
   "additiveSource": "Excel MASTER",
   "qualityScore": 7.1,
   "priceEUR": {
-   "min": 949.0,
-   "max": 949.0
+   "min": 949,
+   "max": 949
   },
   "priceApprox": false,
   "shopHR": "ecuga.com",
@@ -2755,10 +2755,10 @@
   "id": "br-boulard-calvados-vsop",
   "category": "brandy",
   "name": "Boulard Calvados VSOP",
-  "style": "cognac-vsop",
-  "region": "Pays d'Auge, Francuska",
+  "style": "calvados",
+  "region": "Pays d'Auge, Normandija",
   "country": "Francuska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 3,
   "sweetness": 3,
   "flavorTags": [
@@ -2773,10 +2773,10 @@
    "en": "No known additives"
   },
   "additiveSource": "Excel MASTER",
-  "qualityScore": 7.0,
+  "qualityScore": 7,
   "priceEUR": {
-   "min": 35.0,
-   "max": 35.0
+   "min": 35,
+   "max": 35
   },
   "priceApprox": false,
   "shopHR": "allez.hr",
@@ -2807,7 +2807,7 @@
   "style": "cognac-vsop",
   "region": "Borderies, Francuska",
   "country": "Francuska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 3,
   "sweetness": 3,
   "flavorTags": [
@@ -2822,10 +2822,10 @@
    "en": "No known additives"
   },
   "additiveSource": "Excel MASTER",
-  "qualityScore": 7.0,
+  "qualityScore": 7,
   "priceEUR": {
-   "min": 45.0,
-   "max": 45.0
+   "min": 45,
+   "max": 45
   },
   "priceApprox": false,
   "shopHR": "allez.hr",
@@ -2856,7 +2856,7 @@
   "style": "cognac-vsop",
   "region": "Borderies, Francuska",
   "country": "Francuska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 3,
   "sweetness": 3,
   "flavorTags": [
@@ -2871,10 +2871,10 @@
    "en": "No known additives"
   },
   "additiveSource": "Excel MASTER",
-  "qualityScore": 7.0,
+  "qualityScore": 7,
   "priceEUR": {
-   "min": 45.0,
-   "max": 45.0
+   "min": 45,
+   "max": 45
   },
   "priceApprox": false,
   "shopHR": "allez.hr",
@@ -2905,7 +2905,7 @@
   "style": "cognac-vsop",
   "region": "Cognac, Francuska",
   "country": "Francuska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 3,
   "sweetness": 3,
   "flavorTags": [
@@ -2920,10 +2920,10 @@
    "en": "Not declared"
   },
   "additiveSource": "Excel MASTER",
-  "qualityScore": 7.0,
+  "qualityScore": 7,
   "priceEUR": {
-   "min": 45.0,
-   "max": 45.0
+   "min": 45,
+   "max": 45
   },
   "priceApprox": false,
   "shopHR": "svugdje",
@@ -2954,7 +2954,7 @@
   "style": "brandy-de-jerez",
   "region": "Jerez, Španjolska",
   "country": "┼ápanjolska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 4,
   "sweetness": 3,
   "flavorTags": [
@@ -2969,10 +2969,10 @@
    "en": "Sweetened (within permitted obscuration)"
   },
   "additiveSource": "Excel MASTER",
-  "qualityScore": 7.0,
+  "qualityScore": 7,
   "priceEUR": {
-   "min": 35.0,
-   "max": 35.0
+   "min": 35,
+   "max": 35
   },
   "priceApprox": false,
   "shopHR": "allez.hr",
@@ -3003,7 +3003,7 @@
   "style": "cognac-vsop",
   "region": "Cognac, Francuska",
   "country": "Francuska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 3,
   "sweetness": 3,
   "flavorTags": [
@@ -3018,10 +3018,10 @@
    "en": "No known additives"
   },
   "additiveSource": "Excel MASTER",
-  "qualityScore": 7.0,
+  "qualityScore": 7,
   "priceEUR": {
-   "min": 55.0,
-   "max": 55.0
+   "min": 55,
+   "max": 55
   },
   "priceApprox": false,
   "shopHR": "svugdje",
@@ -3052,7 +3052,7 @@
   "style": "brandy-greek",
   "region": "Grčka",
   "country": "Grčka",
-  "abv": 40.0,
+  "abv": 40,
   "body": 3,
   "sweetness": 4,
   "flavorTags": [
@@ -3066,10 +3066,10 @@
    "en": "Sweetened (within permitted obscuration)"
   },
   "additiveSource": "Excel MASTER",
-  "qualityScore": 7.0,
+  "qualityScore": 7,
   "priceEUR": {
-   "min": 55.0,
-   "max": 55.0
+   "min": 55,
+   "max": 55
   },
   "priceApprox": false,
   "shopHR": "allez.hr",
@@ -3100,7 +3100,7 @@
   "style": "cognac-vsop",
   "region": "Cognac (Fine Champagne), Francuska",
   "country": "Francuska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 3,
   "sweetness": 3,
   "flavorTags": [
@@ -3115,10 +3115,10 @@
    "en": "Not declared"
   },
   "additiveSource": "Excel MASTER",
-  "qualityScore": 7.0,
+  "qualityScore": 7,
   "priceEUR": {
-   "min": 48.0,
-   "max": 48.0
+   "min": 48,
+   "max": 48
   },
   "priceApprox": false,
   "shopHR": "svugdje",
@@ -3149,7 +3149,7 @@
   "style": "brandy-spanish",
   "region": "Katalonija, Španjolska",
   "country": "┼ápanjolska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 3,
   "sweetness": 3,
   "flavorTags": [
@@ -3165,8 +3165,8 @@
   "additiveSource": "Excel MASTER",
   "qualityScore": 6.5,
   "priceEUR": {
-   "min": 25.0,
-   "max": 25.0
+   "min": 25,
+   "max": 25
   },
   "priceApprox": false,
   "shopHR": "svugdje",
@@ -3197,7 +3197,7 @@
   "style": "brandy-spanish",
   "region": "Katalonija, Španjolska",
   "country": "┼ápanjolska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 3,
   "sweetness": 3,
   "flavorTags": [
@@ -3211,10 +3211,10 @@
    "en": "Not declared"
   },
   "additiveSource": "Excel MASTER",
-  "qualityScore": 7.0,
+  "qualityScore": 7,
   "priceEUR": {
-   "min": 33.0,
-   "max": 40.0
+   "min": 33,
+   "max": 40
   },
   "priceApprox": true,
   "shopHR": "svugdje",
@@ -3245,7 +3245,7 @@
   "style": "brandy-german",
   "region": "Rüdesheim, Njemačka",
   "country": "Njemačka",
-  "abv": 40.0,
+  "abv": 40,
   "body": 3,
   "sweetness": 3,
   "flavorTags": [
@@ -3261,8 +3261,8 @@
   "additiveSource": "Excel MASTER",
   "qualityScore": 6.5,
   "priceEUR": {
-   "min": 25.0,
-   "max": 25.0
+   "min": 25,
+   "max": 25
   },
   "priceApprox": false,
   "shopHR": "svugdje",
@@ -3293,7 +3293,7 @@
   "style": "brandy-de-jerez",
   "region": "Jerez, Španjolska",
   "country": "┼ápanjolska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 4,
   "sweetness": 3,
   "flavorTags": [
@@ -3310,8 +3310,8 @@
   "additiveSource": "Excel MASTER",
   "qualityScore": 6.5,
   "priceEUR": {
-   "min": 25.0,
-   "max": 25.0
+   "min": 25,
+   "max": 25
   },
   "priceApprox": false,
   "shopHR": "svugdje",
@@ -3342,7 +3342,7 @@
   "style": "brandy-greek",
   "region": "Grčka",
   "country": "Grčka",
-  "abv": 40.0,
+  "abv": 40,
   "body": 3,
   "sweetness": 4,
   "flavorTags": [
@@ -3358,8 +3358,8 @@
   "additiveSource": "Excel MASTER",
   "qualityScore": 6.5,
   "priceEUR": {
-   "min": 30.0,
-   "max": 30.0
+   "min": 30,
+   "max": 30
   },
   "priceApprox": false,
   "shopHR": "svugdje",
@@ -3390,7 +3390,7 @@
   "style": "cognac-vs",
   "region": "Cognac, Francuska",
   "country": "Francuska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 3,
   "sweetness": 3,
   "flavorTags": [
@@ -3404,10 +3404,10 @@
    "en": "No known additives"
   },
   "additiveSource": "Excel MASTER",
-  "qualityScore": 6.0,
+  "qualityScore": 6,
   "priceEUR": {
-   "min": 35.0,
-   "max": 35.0
+   "min": 35,
+   "max": 35
   },
   "priceApprox": false,
   "shopHR": "svugdje",
@@ -3438,7 +3438,7 @@
   "style": "vinjak",
   "region": "Hrvatska",
   "country": "Hrvatska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 3,
   "sweetness": 3,
   "flavorTags": [
@@ -3452,10 +3452,10 @@
    "en": "Not declared"
   },
   "additiveSource": "Excel MASTER",
-  "qualityScore": 6.0,
+  "qualityScore": 6,
   "priceEUR": {
-   "min": 20.0,
-   "max": 20.0
+   "min": 20,
+   "max": 20
   },
   "priceApprox": false,
   "shopHR": "lokalni proizvođači",
@@ -3486,7 +3486,7 @@
   "style": "brandy-italian",
   "region": "Italija",
   "country": "Italija",
-  "abv": 40.0,
+  "abv": 40,
   "body": 3,
   "sweetness": 2,
   "flavorTags": [
@@ -3499,10 +3499,10 @@
    "en": "Not declared"
   },
   "additiveSource": "Excel MASTER",
-  "qualityScore": 6.0,
+  "qualityScore": 6,
   "priceEUR": {
-   "min": 18.0,
-   "max": 18.0
+   "min": 18,
+   "max": 18
   },
   "priceApprox": false,
   "shopHR": "svugdje",
@@ -3530,10 +3530,10 @@
   "id": "br-badel-vinjak-xo-prima",
   "category": "brandy",
   "name": "Badel Vinjak XO / Prima",
-  "style": "cognac-xo",
+  "style": "vinjak",
   "region": "Hrvatska",
   "country": "Hrvatska",
-  "abv": 40.0,
+  "abv": 40,
   "body": 4,
   "sweetness": 3,
   "flavorTags": [
@@ -3550,8 +3550,8 @@
   "additiveSource": "Excel MASTER",
   "qualityScore": 5.5,
   "priceEUR": {
-   "min": 15.0,
-   "max": 15.0
+   "min": 15,
+   "max": 15
   },
   "priceApprox": false,
   "shopHR": "svugdje",
@@ -3579,10 +3579,10 @@
   "id": "br-stock-84-xo",
   "category": "brandy",
   "name": "Stock 84 XO",
-  "style": "cognac-xo",
-  "region": "Italija/regija",
+  "style": "brandy-italian",
+  "region": "Trieste, Italija",
   "country": "Italija",
-  "abv": 40.0,
+  "abv": 40,
   "body": 4,
   "sweetness": 3,
   "flavorTags": [
@@ -3599,8 +3599,8 @@
   "additiveSource": "Excel MASTER",
   "qualityScore": 5.5,
   "priceEUR": {
-   "min": 15.0,
-   "max": 15.0
+   "min": 15,
+   "max": 15
   },
   "priceApprox": false,
   "shopHR": "svugdje",
@@ -3630,7 +3630,7 @@
   "name": "Berta Grappa Elisi",
   "style": "grappa",
   "region": "Italija (grappa)",
-  "abv": 43.0,
+  "abv": 43,
   "body": 3,
   "sweetness": 3,
   "flavorTags": [
@@ -3645,10 +3645,10 @@
    "en": "The EU permits caramel and sweetening up to 20 g/L for grappa; undeclared"
   },
   "additiveSource": "EU pravila za grappu (2019/787)",
-  "qualityScore": 8.0,
+  "qualityScore": 8,
   "priceEUR": {
-   "min": 65.0,
-   "max": 80.0
+   "min": 65,
+   "max": 80
   },
   "priceApprox": true,
   "shopHR": "allez.hr",
@@ -3673,7 +3673,7 @@
   "name": "Berta Grappa Tre Soli Tre",
   "style": "grappa",
   "region": "Italija (grappa)",
-  "abv": 43.0,
+  "abv": 43,
   "body": 4,
   "sweetness": 3,
   "flavorTags": [
@@ -3690,8 +3690,8 @@
   "additiveSource": "EU pravila za grappu (2019/787)",
   "qualityScore": 8.5,
   "priceEUR": {
-   "min": 110.0,
-   "max": 140.0
+   "min": 110,
+   "max": 140
   },
   "priceApprox": true,
   "shopHR": "allez.hr",
@@ -3716,7 +3716,7 @@
   "name": "Nonino Grappa Riserva 8 YO",
   "style": "grappa",
   "region": "Italija (grappa)",
-  "abv": 43.0,
+  "abv": 43,
   "body": 3,
   "sweetness": 2,
   "flavorTags": [
@@ -3730,10 +3730,10 @@
    "en": "The EU permits caramel and sweetening up to 20 g/L for grappa; undeclared"
   },
   "additiveSource": "EU pravila za grappu (2019/787)",
-  "qualityScore": 8.0,
+  "qualityScore": 8,
   "priceEUR": {
-   "min": 55.0,
-   "max": 70.0
+   "min": 55,
+   "max": 70
   },
   "priceApprox": true,
   "shopHR": "allez.hr",
@@ -3758,7 +3758,7 @@
   "name": "Nonino Grappa Riserva Antica Cuvée 5 YO",
   "style": "grappa",
   "region": "Italija (grappa)",
-  "abv": 43.0,
+  "abv": 43,
   "body": 3,
   "sweetness": 2,
   "flavorTags": [
@@ -3774,8 +3774,8 @@
   "additiveSource": "EU pravila za grappu (2019/787)",
   "qualityScore": 7.5,
   "priceEUR": {
-   "min": 45.0,
-   "max": 60.0
+   "min": 45,
+   "max": 60
   },
   "priceApprox": true,
   "shopHR": "allez.hr",
@@ -3800,7 +3800,7 @@
   "name": "Poli Grappa Barrique Solera di Famiglia",
   "style": "grappa",
   "region": "Italija (grappa)",
-  "abv": 55.0,
+  "abv": 55,
   "body": 4,
   "sweetness": 2,
   "flavorTags": [
@@ -3817,8 +3817,8 @@
   "additiveSource": "EU pravila za grappu (2019/787)",
   "qualityScore": 7.5,
   "priceEUR": {
-   "min": 45.0,
-   "max": 60.0
+   "min": 45,
+   "max": 60
   },
   "priceApprox": true,
   "shopHR": "allez.hr",
@@ -3843,7 +3843,7 @@
   "name": "Poli Grappa Cleopatra Amarone Oro",
   "style": "grappa",
   "region": "Italija (grappa)",
-  "abv": 40.0,
+  "abv": 40,
   "body": 3,
   "sweetness": 3,
   "flavorTags": [
@@ -3859,8 +3859,8 @@
   "additiveSource": "EU pravila za grappu (2019/787)",
   "qualityScore": 7.5,
   "priceEUR": {
-   "min": 40.0,
-   "max": 55.0
+   "min": 40,
+   "max": 55
   },
   "priceApprox": true,
   "shopHR": "allez.hr",
@@ -3885,7 +3885,7 @@
   "name": "Gaja Grappa di Barolo",
   "style": "grappa",
   "region": "Italija (grappa)",
-  "abv": 42.0,
+  "abv": 42,
   "body": 3,
   "sweetness": 2,
   "flavorTags": [
@@ -3899,10 +3899,10 @@
    "en": "The EU permits caramel and sweetening up to 20 g/L for grappa; undeclared"
   },
   "additiveSource": "EU pravila za grappu (2019/787)",
-  "qualityScore": 8.0,
+  "qualityScore": 8,
   "priceEUR": {
-   "min": 85.0,
-   "max": 110.0
+   "min": 85,
+   "max": 110
   },
   "priceApprox": true,
   "shopHR": "allez.hr",
@@ -3927,7 +3927,7 @@
   "name": "Antinori Grappa Tignanello",
   "style": "grappa",
   "region": "Italija (grappa)",
-  "abv": 42.0,
+  "abv": 42,
   "body": 3,
   "sweetness": 2,
   "flavorTags": [
@@ -3943,8 +3943,8 @@
   "additiveSource": "EU pravila za grappu (2019/787)",
   "qualityScore": 7.5,
   "priceEUR": {
-   "min": 45.0,
-   "max": 60.0
+   "min": 45,
+   "max": 60
   },
   "priceApprox": true,
   "shopHR": "allez.hr",
@@ -3969,7 +3969,7 @@
   "name": "Grand Marnier Cordon Rouge",
   "style": "liqueur",
   "region": "Francuska (liker na bazi konjaka)",
-  "abv": 40.0,
+  "abv": 40,
   "body": 3,
   "sweetness": 5,
   "flavorTags": [
@@ -3983,10 +3983,10 @@
    "en": "Liqueur: cognac base + bitter-orange distillate + sugar (declared)"
   },
   "additiveSource": "Etiketa: liker",
-  "qualityScore": 7.0,
+  "qualityScore": 7,
   "priceEUR": {
-   "min": 28.0,
-   "max": 38.0
+   "min": 28,
+   "max": 38
   },
   "priceApprox": true,
   "shopHR": "Siroka dostupnost / allez.hr",

@@ -1,5 +1,5 @@
 import type { Cigar, Drink } from "../types";
-import { useI18n, STYLE_LABELS, ADDITIVE_LABELS } from "../i18n";
+import { useI18n, STYLE_LABELS, ADDITIVE_LABELS, type StringKey } from "../i18n";
 import { cigarPriceForMarket, formatPrice } from "../data";
 import { Meter } from "./ui";
 import { getItemState, useCollection } from "../store/collection";
@@ -108,6 +108,8 @@ export function DrinkRow({
         </span>
       </div>
       <div className="mt-1 text-xs text-dim">
+        <span className="text-zlato/70">{t(`cat.${drink.category}` as StringKey)}</span>
+        {" · "}
         {style ? lx(style) : drink.style}
         {drink.qualityScore != null && (
           <span className="text-zlato-2"> · {drink.qualityScore}/10</span>

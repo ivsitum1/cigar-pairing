@@ -215,6 +215,7 @@ export const STYLE_LABELS: Record<string, LocalizedText> = {
   "irish-single-malt": { hr: "Irski single malt", en: "Irish single malt" },
   japanese: { hr: "Japan", en: "Japan" },
   world: { hr: "Svijet", en: "World" },
+  lowland: { hr: "Lowland", en: "Lowland" },
   "cognac-vs": { hr: "Cognac VS", en: "Cognac VS" },
   "cognac-vsop": { hr: "Cognac VSOP", en: "Cognac VSOP" },
   "cognac-xo": { hr: "Cognac XO", en: "Cognac XO" },

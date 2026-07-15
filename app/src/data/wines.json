@@ -1782,6 +1782,223 @@
   }
  },
  {
+  "id": "wine-tokaji-aszu-6",
+  "category": "wine",
+  "name": "Tokaji Aszú 6 Puttonyos",
+  "style": "dessert-wine",
+  "region": "Tokaj, Mađarska",
+  "abv": 10.5,
+  "body": 5,
+  "sweetness": 5,
+  "flavorTags": [
+   "med",
+   "suho-voce",
+   "citrus",
+   "karamela",
+   "slatko"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": {
+   "hr": "Prirodna slatkoca iz botritiziranog grozdja",
+   "en": "Natural sweetness from botrytised grapes"
+  },
+  "additiveSource": "Standard kategorije aszu",
+  "qualityScore": 9.0,
+  "priceEUR": {
+   "min": 50.0,
+   "max": 90.0
+  },
+  "priceApprox": true,
+  "shopHR": "Vinoteke",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Ohladjeno, 8-10 C"
+  },
+  "cigarHint": {
+   "hr": "Srednja-jaka, maduro — slatkoca traži strukturu",
+   "en": "Medium-strong, Maduro — sweetness needs structure"
+  },
+  "priceUrl": null,
+  "notes": {
+   "hr": "Gušći i bogatiji od 5 puttonyosa — med, datule, naranča, šafran; dugi završetak.",
+   "en": "Thicker and richer than 5 puttonyos — honey, dates, orange, saffron; long finish."
+  }
+ },
+ {
+  "id": "wine-tokaji-aszu-3",
+  "category": "wine",
+  "name": "Tokaji Aszú 3 Puttonyos",
+  "style": "dessert-wine",
+  "region": "Tokaj, Mađarska",
+  "abv": 12.0,
+  "body": 3,
+  "sweetness": 4,
+  "flavorTags": [
+   "med",
+   "citrus",
+   "voce",
+   "cvjetno"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": {
+   "hr": "Prirodna slatkoca iz botritiziranog grozdja",
+   "en": "Natural sweetness from botrytised grapes"
+  },
+  "additiveSource": "Standard kategorije aszu",
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 18.0,
+   "max": 30.0
+  },
+  "priceApprox": true,
+  "shopHR": "Vinoteke",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Ohladjeno, 8-10 C"
+  },
+  "cigarHint": {
+   "hr": "Lagana-srednja, Connecticut shade",
+   "en": "Mild-medium, Connecticut Shade"
+  },
+  "priceUrl": null,
+  "notes": {
+   "hr": "Najlakša aszu kategorija — cvjetna, svježa, s umjerenom slatkoćom i živom kiselinom.",
+   "en": "The lightest aszú category — floral, fresh, with moderate sweetness and lively acidity."
+  }
+ },
+ {
+  "id": "wine-tokaji-essencia",
+  "category": "wine",
+  "name": "Tokaji Essencia",
+  "style": "dessert-wine",
+  "region": "Tokaj, Mađarska",
+  "abv": 5.0,
+  "body": 5,
+  "sweetness": 5,
+  "flavorTags": [
+   "med",
+   "suho-voce",
+   "karamela",
+   "citrus",
+   "slatko"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": {
+   "hr": "Čisti sok botritiziranog groždja, bez dodanog šećera",
+   "en": "Pure free-run juice of botrytised grapes, no added sugar"
+  },
+  "additiveSource": "Standard kategorije essencia",
+  "qualityScore": 9.5,
+  "priceEUR": {
+   "min": 150.0,
+   "max": 500.0
+  },
+  "priceApprox": true,
+  "shopHR": "Rijetko u HR; specijalist vinoteke",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Mala casa, 10-12 C"
+  },
+  "cigarHint": {
+   "hr": "Lagana-srednja — essencia dominira, cigara prati",
+   "en": "Mild-medium — essencia dominates, the cigar follows"
+  },
+  "priceUrl": null,
+  "notes": {
+   "hr": "Najrjeđe i najskuplje vino Tokaja — sirupasta konzistencija, 450+ g/L šećera. Med, ružina latice, suho voće.",
+   "en": "The rarest and most precious Tokaj wine — syrupy texture, 450+ g/L sugar. Honey, rose petals, dried fruit."
+  }
+ },
+ {
+  "id": "wine-tokaji-szamorodni-edes",
+  "category": "wine",
+  "name": "Tokaji Szamorodni Édes (slatki)",
+  "style": "dessert-wine",
+  "region": "Tokaj, Mađarska",
+  "abv": 13.0,
+  "body": 3,
+  "sweetness": 4,
+  "flavorTags": [
+   "med",
+   "voce",
+   "hrast",
+   "citrus"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": {
+   "hr": "Prirodna slatkoca iz mješavine botritiziranog i zdravog groždja",
+   "en": "Natural sweetness from a mix of botrytised and healthy grapes"
+  },
+  "additiveSource": "Standard kategorije szamorodni",
+  "qualityScore": 7.0,
+  "priceEUR": {
+   "min": 12.0,
+   "max": 22.0
+  },
+  "priceApprox": true,
+  "shopHR": "Vinoteke",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Ohladjeno, 8-10 C"
+  },
+  "cigarHint": {
+   "hr": "Srednja, Habano ili Cameroon",
+   "en": "Medium, Habano or Cameroon"
+  },
+  "priceUrl": null,
+  "notes": {
+   "hr": "Pristupačniji od aszúa — grozdje se bere neovisno o botritisu, mješavina daje karakter.",
+   "en": "More approachable than aszú — grapes harvested regardless of botrytis, the blend gives character."
+  }
+ },
+ {
+  "id": "wine-tokaji-furmint-dry",
+  "category": "wine",
+  "name": "Tokaji Furmint (suhi)",
+  "style": "white-rich",
+  "region": "Tokaj, Mađarska",
+  "abv": 13.0,
+  "body": 3,
+  "sweetness": 1,
+  "flavorTags": [
+   "citrus",
+   "mineralno",
+   "jabuka",
+   "cvjetno"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": {
+   "hr": "Standardna vinifikacija",
+   "en": "Standard vinification"
+  },
+  "additiveSource": "Standard",
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 10.0,
+   "max": 20.0
+  },
+  "priceApprox": true,
+  "shopHR": "Vinoteke",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Ohladjeno, 8-10 C"
+  },
+  "cigarHint": {
+   "hr": "Lagana, Connecticut shade — svježe i mineralno",
+   "en": "Mild, Connecticut Shade — fresh and mineral"
+  },
+  "priceUrl": null,
+  "notes": {
+   "hr": "Suhi furmint iz Tokaja — vulkanska mineralnost, jabuka, limun, bijeli cvijet. Odličan aperitiv.",
+   "en": "Dry Furmint from Tokaj — volcanic minerality, apple, lemon, white blossom. Excellent as an aperitif."
+  }
+ },
+ {
   "id": "wine-sauternes",
   "category": "wine",
   "name": "Sauternes",
