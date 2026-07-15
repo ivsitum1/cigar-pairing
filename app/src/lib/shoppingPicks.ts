@@ -91,7 +91,8 @@ export function segmentPicks(drinks: Drink[], isOwned: (id: string) => boolean):
     [...priced].sort((a, b) => valueScore(b) - valueScore(a)).find((d) => d.id !== top?.id) ?? null;
   const budget =
     [...priced]
-      .filter((d) => (price(d) as number) <= 30)
+      // i gornja granica raspona mora biti unutar 30 EUR — etiketa "do 30" ne smije lagati
+      .filter((d) => (d.priceEUR as { max: number }).max <= 30)
       .sort(byQuality)
       .find((d) => d.id !== top?.id && d.id !== value?.id) ?? null;
   return { top, value, budget };

@@ -61,8 +61,11 @@ export function DetailSheet({
           <Chip
             active={state.owned}
             onClick={() =>
-              // kupljeno -> makni s liste zelja
-              updateItem(id, { owned: !state.owned, wishlist: false })
+              // kupljeno -> makni s liste zelja; skidanje "Imam" ne dira listu
+              updateItem(
+                id,
+                state.owned ? { owned: false } : { owned: true, wishlist: false },
+              )
             }
           >
             ✓ {t("coll.owned")}

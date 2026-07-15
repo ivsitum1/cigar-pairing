@@ -61,7 +61,7 @@ export function ShoppingPage() {
     );
     try {
       if (navigator.share) {
-        await navigator.share({ title: "Lista želja", text });
+        await navigator.share({ title: t("coll.wishlist"), text });
         return;
       }
     } catch {

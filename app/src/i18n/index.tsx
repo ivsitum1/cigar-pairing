@@ -365,7 +365,7 @@ interface I18nCtx {
   lang: Lang;
   setLang: (l: Lang) => void;
   t: (key: StringKey) => string;
-  lx: (text: LocalizedText | undefined | null) => string;
+  lx: (text: LocalizedText | string | undefined | null) => string;
   cn: (country: string) => string; // ime zemlje u aktivnom jeziku
   sv: (serving: string) => string; // nacin serviranja u aktivnom jeziku
   rgn: (region: string) => string; // regija pica u aktivnom jeziku
@@ -382,8 +382,10 @@ export function I18nProvider({ children }: { children: ReactNode }) {
     setLangState(l);
   };
   const t = (key: StringKey) => STRINGS[key][lang];
-  const lx = (text: LocalizedText | undefined | null) => {
+  // tolerira i obicni string — regenerirani podaci iz Excela mogu jos biti jednojezicni
+  const lx = (text: LocalizedText | string | undefined | null) => {
     if (!text) return "";
+    if (typeof text === "string") return text;
     return text[lang] || text.hr || text.en;
   };
   // imena zemalja i serviranja u podacima su hrvatska; na EN prevedi mapom

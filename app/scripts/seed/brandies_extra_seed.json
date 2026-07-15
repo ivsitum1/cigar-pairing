@@ -1,0 +1,479 @@
+[
+ {
+  "id": "br-torres-15",
+  "category": "brandy",
+  "name": "Torres 15 Reserva Privada",
+  "style": "brandy-spanish",
+  "region": "Katalonija, Španjolska",
+  "country": "┼ápanjolska",
+  "abv": 40.0,
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "karamela",
+   "suho-voce",
+   "hrast"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": {
+   "hr": "Nije deklarirano",
+   "en": "Not declared"
+  },
+  "additiveSource": "Excel MASTER",
+  "qualityScore": 6.5,
+  "priceEUR": {
+   "min": 25.0,
+   "max": 25.0
+  },
+  "priceApprox": false,
+  "shopHR": "svugdje",
+  "status": "META",
+  "pairable": true,
+  "serving": {
+   "neat": 3,
+   "water": 2,
+   "rocks": 2,
+   "highball": 0,
+   "cola": 0,
+   "best": "Cisto"
+  },
+  "cigarHint": {
+   "hr": "Maduro srednje snage",
+   "en": "A medium-strength maduro"
+  },
+  "priceUrl": null,
+  "notes": {
+   "hr": "Katalonski brandy solera — mekan, hrastov, izvrstan omjer.",
+   "en": "A Catalan solera brandy — soft, oaky, excellent value."
+  }
+ },
+ {
+  "id": "br-torres-20",
+  "category": "brandy",
+  "name": "Torres 20 Hors d’Âge Imperial",
+  "style": "brandy-spanish",
+  "region": "Katalonija, Španjolska",
+  "country": "┼ápanjolska",
+  "abv": 40.0,
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "karamela",
+   "suho-voce",
+   "hrast"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": {
+   "hr": "Nije deklarirano",
+   "en": "Not declared"
+  },
+  "additiveSource": "Excel MASTER",
+  "qualityScore": 7.0,
+  "priceEUR": {
+   "min": 33.0,
+   "max": 40.0
+  },
+  "priceApprox": true,
+  "shopHR": "svugdje",
+  "status": "META",
+  "pairable": true,
+  "serving": {
+   "neat": 3,
+   "water": 2,
+   "rocks": 2,
+   "highball": 0,
+   "cola": 0,
+   "best": "Cisto"
+  },
+  "cigarHint": {
+   "hr": "Maduro srednje snage",
+   "en": "A medium-strength maduro"
+  },
+  "priceUrl": null,
+  "notes": {
+   "hr": "Stariji Imperial — dublji i suši od 15-ice.",
+   "en": "The older Imperial — deeper and drier than the 15."
+  }
+ },
+ {
+  "id": "br-berta-grappa-elisi",
+  "category": "brandy",
+  "name": "Berta Grappa Elisi",
+  "style": "grappa",
+  "region": "Italija (grappa)",
+  "abv": 43.0,
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "voce",
+   "vanilija",
+   "cvjetno",
+   "karamela"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": {
+   "hr": "EU dopusta karamel i dosladjivanje do 20 g/L za grappu; nije deklarirano",
+   "en": "The EU permits caramel and sweetening up to 20 g/L for grappa; undeclared"
+  },
+  "additiveSource": "EU pravila za grappu (2019/787)",
+  "qualityScore": 8.0,
+  "priceEUR": {
+   "min": 65.0,
+   "max": 80.0
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto (snifter)"
+  },
+  "cigarHint": {
+   "hr": "Srednja cigara; odlezana grappa podnosi i puniju",
+   "en": "A medium cigar; aged grappa can take a fuller one"
+  },
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/berta-grappa-elisi-43-vol-05l-gb",
+  "notes": {
+   "hr": "Odlezana grappa (0,5 l) iz barrique bacvi — vanilija, suho voce, mekoca. Vrh Piemonta.",
+   "en": "Aged grappa (0.5 l) from barrique casks — vanilla, dried fruit, softness. Piedmont's finest."
+  }
+ },
+ {
+  "id": "br-berta-grappa-tre-soli-tre",
+  "category": "brandy",
+  "name": "Berta Grappa Tre Soli Tre",
+  "style": "grappa",
+  "region": "Italija (grappa)",
+  "abv": 43.0,
+  "body": 4,
+  "sweetness": 3,
+  "flavorTags": [
+   "suho-voce",
+   "vanilija",
+   "kakao",
+   "hrast"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": {
+   "hr": "EU dopusta karamel i dosladjivanje do 20 g/L za grappu; nije deklarirano",
+   "en": "The EU permits caramel and sweetening up to 20 g/L for grappa; undeclared"
+  },
+  "additiveSource": "EU pravila za grappu (2019/787)",
+  "qualityScore": 8.5,
+  "priceEUR": {
+   "min": 110.0,
+   "max": 140.0
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto (snifter)"
+  },
+  "cigarHint": {
+   "hr": "Srednja cigara; odlezana grappa podnosi i puniju",
+   "en": "A medium cigar; aged grappa can take a fuller one"
+  },
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/berta-grappa-tre-soli-tre-2012-43-vol-07l-in-wooden-case",
+  "notes": {
+   "hr": "Dugo odlezana prestizna grappa od nebbiola — kakao, suho voce, duga zavrsnica.",
+   "en": "Long-aged prestige nebbiolo grappa — cocoa, dried fruit, long finish."
+  }
+ },
+ {
+  "id": "br-nonino-grappa-riserva-8",
+  "category": "brandy",
+  "name": "Nonino Grappa Riserva 8 YO",
+  "style": "grappa",
+  "region": "Italija (grappa)",
+  "abv": 43.0,
+  "body": 3,
+  "sweetness": 2,
+  "flavorTags": [
+   "vanilija",
+   "hrast",
+   "voce"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": {
+   "hr": "EU dopusta karamel i dosladjivanje do 20 g/L za grappu; nije deklarirano",
+   "en": "The EU permits caramel and sweetening up to 20 g/L for grappa; undeclared"
+  },
+  "additiveSource": "EU pravila za grappu (2019/787)",
+  "qualityScore": 8.0,
+  "priceEUR": {
+   "min": 55.0,
+   "max": 70.0
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto (snifter)"
+  },
+  "cigarHint": {
+   "hr": "Srednja cigara; odlezana grappa podnosi i puniju",
+   "en": "A medium cigar; aged grappa can take a fuller one"
+  },
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/nonino-grappa-riserva-8-years-old-43-vol-07l-u-poklon-kutiji",
+  "notes": {
+   "hr": "8 godina u bacvama — elegantna, suha, s notama vanilije i hrasta.",
+   "en": "Eight years in cask — elegant, dry, with vanilla and oak."
+  }
+ },
+ {
+  "id": "br-nonino-grappa-antica-cuvee-5",
+  "category": "brandy",
+  "name": "Nonino Grappa Riserva Antica Cuvée 5 YO",
+  "style": "grappa",
+  "region": "Italija (grappa)",
+  "abv": 43.0,
+  "body": 3,
+  "sweetness": 2,
+  "flavorTags": [
+   "vanilija",
+   "voce",
+   "med"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": {
+   "hr": "EU dopusta karamel i dosladjivanje do 20 g/L za grappu; nije deklarirano",
+   "en": "The EU permits caramel and sweetening up to 20 g/L for grappa; undeclared"
+  },
+  "additiveSource": "EU pravila za grappu (2019/787)",
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 45.0,
+   "max": 60.0
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto (snifter)"
+  },
+  "cigarHint": {
+   "hr": "Srednja cigara; odlezana grappa podnosi i puniju",
+   "en": "A medium cigar; aged grappa can take a fuller one"
+  },
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/nonino-grappa-riserva-antica-cuvee-5-yo-43-vol-07l-u-poklon-kutiji",
+  "notes": {
+   "hr": "5 godina odlezana cuvée — mekana, medna, pristupacna riserva.",
+   "en": "Five-year-aged cuvée — soft, honeyed, an approachable riserva."
+  }
+ },
+ {
+  "id": "br-poli-grappa-solera-di-famiglia",
+  "category": "brandy",
+  "name": "Poli Grappa Barrique Solera di Famiglia",
+  "style": "grappa",
+  "region": "Italija (grappa)",
+  "abv": 55.0,
+  "body": 4,
+  "sweetness": 2,
+  "flavorTags": [
+   "hrast",
+   "vanilija",
+   "zacini",
+   "overproof"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": {
+   "hr": "EU dopusta karamel i dosladjivanje do 20 g/L za grappu; nije deklarirano",
+   "en": "The EU permits caramel and sweetening up to 20 g/L for grappa; undeclared"
+  },
+  "additiveSource": "EU pravila za grappu (2019/787)",
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 45.0,
+   "max": 60.0
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto (snifter)"
+  },
+  "cigarHint": {
+   "hr": "Srednja cigara; odlezana grappa podnosi i puniju",
+   "en": "A medium cigar; aged grappa can take a fuller one"
+  },
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/poli-grappa-barrique-solera-di-famiglia-55-vol-07l-u-drvenoj-poklon-kutiji",
+  "notes": {
+   "hr": "Solera sistem na 55% — snazna, hrastova, za jaku cigaru.",
+   "en": "Solera system at 55% — powerful and oaky, for a strong cigar."
+  }
+ },
+ {
+  "id": "br-poli-grappa-cleopatra-amarone",
+  "category": "brandy",
+  "name": "Poli Grappa Cleopatra Amarone Oro",
+  "style": "grappa",
+  "region": "Italija (grappa)",
+  "abv": 40.0,
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "suho-voce",
+   "tamno-voce",
+   "vanilija"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": {
+   "hr": "EU dopusta karamel i dosladjivanje do 20 g/L za grappu; nije deklarirano",
+   "en": "The EU permits caramel and sweetening up to 20 g/L for grappa; undeclared"
+  },
+  "additiveSource": "EU pravila za grappu (2019/787)",
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 40.0,
+   "max": 55.0
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto (snifter)"
+  },
+  "cigarHint": {
+   "hr": "Srednja cigara; odlezana grappa podnosi i puniju",
+   "en": "A medium cigar; aged grappa can take a fuller one"
+  },
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/poli-grappa-cleopatra-amarone-oro-40-vol-07l-u-limenoj-poklon-kutiji",
+  "notes": {
+   "hr": "Od amarone komine — suho voce i toplina appassimenta.",
+   "en": "From amarone pomace — dried fruit and appassimento warmth."
+  }
+ },
+ {
+  "id": "br-gaja-grappa-di-barolo",
+  "category": "brandy",
+  "name": "Gaja Grappa di Barolo",
+  "style": "grappa",
+  "region": "Italija (grappa)",
+  "abv": 42.0,
+  "body": 3,
+  "sweetness": 2,
+  "flavorTags": [
+   "voce",
+   "hrast",
+   "cvjetno"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": {
+   "hr": "EU dopusta karamel i dosladjivanje do 20 g/L za grappu; nije deklarirano",
+   "en": "The EU permits caramel and sweetening up to 20 g/L for grappa; undeclared"
+  },
+  "additiveSource": "EU pravila za grappu (2019/787)",
+  "qualityScore": 8.0,
+  "priceEUR": {
+   "min": 85.0,
+   "max": 110.0
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto (snifter)"
+  },
+  "cigarHint": {
+   "hr": "Srednja cigara; odlezana grappa podnosi i puniju",
+   "en": "A medium cigar; aged grappa can take a fuller one"
+  },
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/gaja-grappa-di-barolo-42-vol-05l",
+  "notes": {
+   "hr": "Grappa od barolo komine kultne kuce Gaja (0,5 l) — fina, cvjetna, precizna.",
+   "en": "Barolo-pomace grappa from the iconic Gaja house (0.5 l) — fine, floral, precise."
+  }
+ },
+ {
+  "id": "br-antinori-grappa-tignanello",
+  "category": "brandy",
+  "name": "Antinori Grappa Tignanello",
+  "style": "grappa",
+  "region": "Italija (grappa)",
+  "abv": 42.0,
+  "body": 3,
+  "sweetness": 2,
+  "flavorTags": [
+   "voce",
+   "vanilija",
+   "hrast"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": {
+   "hr": "EU dopusta karamel i dosladjivanje do 20 g/L za grappu; nije deklarirano",
+   "en": "The EU permits caramel and sweetening up to 20 g/L for grappa; undeclared"
+  },
+  "additiveSource": "EU pravila za grappu (2019/787)",
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 45.0,
+   "max": 60.0
+  },
+  "priceApprox": true,
+  "shopHR": "allez.hr",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto (snifter)"
+  },
+  "cigarHint": {
+   "hr": "Srednja cigara; odlezana grappa podnosi i puniju",
+   "en": "A medium cigar; aged grappa can take a fuller one"
+  },
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/antinori-grappa-tignanello-42-vol-05l-u-poklon-kutiji",
+  "notes": {
+   "hr": "Grappa od komine kultnog Tignanella (0,5 l) — voce i fini hrast.",
+   "en": "Grappa from the pomace of the iconic Tignanello (0.5 l) — fruit and fine oak."
+  }
+ },
+ {
+  "id": "br-grand-marnier-cordon-rouge",
+  "category": "brandy",
+  "name": "Grand Marnier Cordon Rouge",
+  "style": "liqueur",
+  "region": "Francuska (liker na bazi konjaka)",
+  "abv": 40.0,
+  "body": 3,
+  "sweetness": 5,
+  "flavorTags": [
+   "citrus",
+   "slatko",
+   "karamela"
+  ],
+  "additiveStatus": "flavored",
+  "additiveDetail": {
+   "hr": "Liker: cognac baza + destilat gorke narance + secer (deklarirano)",
+   "en": "Liqueur: cognac base + bitter-orange distillate + sugar (declared)"
+  },
+  "additiveSource": "Etiketa: liker",
+  "qualityScore": 7.0,
+  "priceEUR": {
+   "min": 28.0,
+   "max": 38.0
+  },
+  "priceApprox": true,
+  "shopHR": "Siroka dostupnost / allez.hr",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Cisto / on the rocks"
+  },
+  "cigarHint": {
+   "hr": "Puna maduro cigara za kontrast slatkoci",
+   "en": "A full maduro cigar to contrast the sweetness"
+  },
+  "priceUrl": null,
+  "notes": {
+   "hr": "Klasik od 1880. — cognac i gorka naranca. Po EU pravilima liker; uz cigaru radi kao desertni kontrast.",
+   "en": "The classic since 1880 — cognac and bitter orange. Legally a liqueur under EU rules; works as a dessert contrast with a cigar."
+  }
+ }
+]

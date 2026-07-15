@@ -29,7 +29,7 @@ indeksima rangiranim po kvaliteti za sipping uz cigaru.
   - `src/data/*.json` — indeksi (147 rumova, 278 whiskyja, 78 brandy/grappa, 20 gin, 52 vina, 23 kave, 480 cigara)
   - `scripts/seed/whiskies_classics_seed.json` — klasici koje allez/ecuga ne drže
     (Talisker 10, Ardbeg 10, Springbank 10, bourboni…); nakon regeneracije iz
-    Excela vrati ih s `python scripts/merge-whisky-classics.py`
+    Excela vrati ih s `python scripts/merge-extras.py`
   - `src/data/wines.json` — vino po istom principu punoće (porto, sherry,
     madeira, prošek, puna/srednja crna, bijela, pjenušava, desertna); HR cijene
     (Vivat/Miva/Vrutak/vinoteke), približne označene `priceApprox`
@@ -94,6 +94,9 @@ python scripts/scrape-whisky-catalog.py    # osvježi allez + ecuga katalog
 python scripts/build-whisky-excel.py       # gradi/ažurira Whisky_Kolekcija_Checklist.xlsx
 # ručna kalibracija MASTER / Po tipu u Excelu (po potrebi)
 python scripts/excel-to-whisky-json.py     # regenerira whiskies.json
+python scripts/merge-extras.py             # vrati seed dodatke (klasici, grappe)
+python scripts/apply-neutral-overrides.py  # neutralni ton + splitovi
+python scripts/localize-detail-fields.py   # dvojezicni additiveDetail/cigarHint
 python scripts/export-indexes.py           # Whisky_Index.xlsx
 npm test
 ```
