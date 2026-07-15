@@ -76,7 +76,17 @@ STYLE_RULES: list[tuple[str, str, str, int, int, list[str]]] = [
         3,
         ["suho-voce", "kakao", "zacini", "koza"],
     ),
-    (r"vsop|v\.s\.o\.p|1738|accord royal", "cognac-vsop", "Cognac, Francuska", 3, 3, ["voce", "vanilija", "zacini", "hrast"]),
+    (
+        r"(?:cognac|hennessy|martell|remy|camus|hine|delamain|courvoisier|davidoff|frapin|leyrat)"
+        r".*(?:vsop|v\.s\.o\.p)"
+        r"|(?:vsop|v\.s\.o\.p).*(?:cognac|hennessy|martell|remy|camus|hine|delamain|courvoisier|davidoff|frapin|leyrat)"
+        r"|\b1738\b|accord royal",
+        "cognac-vsop",
+        "Cognac, Francuska",
+        3,
+        3,
+        ["voce", "vanilija", "zacini", "hrast"],
+    ),
     (r"martell|remy|hennessy|camus|hine|delamain|davidoff|courvoisier", "cognac-vsop", "Cognac, Francuska", 3, 3, ["voce", "vanilija", "hrast"]),
 ]
 

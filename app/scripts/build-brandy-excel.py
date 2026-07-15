@@ -97,7 +97,7 @@ def enrich_row(item: dict, seed: dict | None) -> dict:
     )
     note = (seed or {}).get("notes", {}).get("hr", "")
     if not note:
-        note = f"Heuristika — {style}, {category}, {age_tier}"
+        note = ""
     return {
         "name": name,
         "quality": quality,

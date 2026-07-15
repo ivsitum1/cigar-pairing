@@ -409,10 +409,15 @@ export function I18nProvider({ children }: { children: ReactNode }) {
   };
   const t = (key: StringKey) => STRINGS[key][lang];
   // tolerira i obicni string — regenerirani podaci iz Excela mogu jos biti jednojezicni
+  const isHeuristicPlaceholder = (s: string) =>
+    s.startsWith("Heuristika —") || s.startsWith("Heuristic profile —");
   const lx = (text: LocalizedText | string | undefined | null) => {
     if (!text) return "";
-    if (typeof text === "string") return text;
-    return text[lang] || text.hr || text.en;
+    const s = typeof text === "string" ? text : text[lang] || text.hr || text.en;
+    if (!s) return "";
+    // Ukloni interne placeholder opise koji nisu edukativni (heuristika iz pipeline-a).
+    if (isHeuristicPlaceholder(s)) return "";
+    return s;
   };
   // imena zemalja i serviranja u podacima su hrvatska; na EN prevedi mapom
   const cn = (country: string) =>
