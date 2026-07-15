@@ -222,15 +222,17 @@ export function ClubPage() {
       </div>
       <div className="overflow-hidden rounded-xl border border-dim/15 bg-humidor/80">
         <svg viewBox={viewBox} className="block w-full" role="img" aria-label={t("club.map")}>
-          {/* ocean = tamna pozadina; kopno = monokromna ispuna + tanka obala */}
+          {/* ocean = tamna pozadina; kopno = monokromna ispuna + tanka obala.
+              Eksplicitne opacity vrijednosti — currentColor s alpha klasom bi
+              se množio sa strokeOpacity i obala bi postala nevidljiva. */}
           <path
             d={landPath}
             fillRule="evenodd"
-            fill="currentColor"
-            className="text-papir/10"
-            stroke="currentColor"
+            fill="var(--color-papir)"
+            fillOpacity={0.1}
+            stroke="var(--color-papir)"
+            strokeOpacity={0.35}
             strokeWidth={0.5}
-            strokeOpacity={0.4}
             vectorEffect="non-scaling-stroke"
             strokeLinejoin="round"
           />
