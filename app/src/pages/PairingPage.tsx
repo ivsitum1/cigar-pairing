@@ -544,7 +544,7 @@ function ResultCard({
   const negative = result.reasons.filter((r) => r.score < 0);
   const pairingOpinion =
     result.score >= WEIGHTS.curatedHintMinScore
-      ? curatedPairingOpinion(cigar, drink, result.reasons)
+      ? curatedPairingOpinion(cigar, drink, result.reasons, result.score)
       : null;
   return (
     <div className="rounded-xl border border-dim/15 bg-cedar p-3">

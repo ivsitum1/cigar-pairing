@@ -3,6 +3,8 @@ import { useMemo, useState } from "react";
 import type { Cigar, Drink } from "../types";
 import { ALL_DRINKS, CIGARS, formatPrice } from "../data";
 import { scorePairing } from "../engine/pairing";
+import { curatedPairingOpinion } from "../engine/curatedOpinion";
+import { WEIGHTS } from "../engine/rules";
 import { useI18n, STYLE_LABELS, type StringKey } from "../i18n";
 import { Meter, ScoreBand, SearchInput } from "../components/ui";
 import { useMarket } from "../store/market";
@@ -32,6 +34,10 @@ export function CustomPairing({
   const drinks = useMemo(() => ALL_DRINKS.filter((d) => d.pairable), []);
 
   const result = cigar && drink ? scorePairing(cigar, drink) : null;
+  const pairingOpinion =
+    result && result.score >= WEIGHTS.curatedHintMinScore
+      ? curatedPairingOpinion(cigar!, drink!, result.reasons, result.score)
+      : null;
 
   const verdictKey = (score: number): StringKey =>
     score >= 82
@@ -102,6 +108,12 @@ export function CustomPairing({
               </div>
             </button>
           </div>
+
+          {pairingOpinion && (
+            <div className="mt-3 rounded-md border border-zlato/25 bg-zlato/10 px-2.5 py-1.5 text-xs text-zlato-2">
+              ★ {t("pair.excelHint")}: {lx(pairingOpinion)}
+            </div>
+          )}
 
           <ul className="mt-3 space-y-1 border-t border-dim/15 pt-3">
             {result.reasons

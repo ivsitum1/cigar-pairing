@@ -5,6 +5,7 @@ import { WEIGHTS } from "./rules";
 import type { Cigar, Drink } from "../types";
 import cigarsData from "../data/cigars.json";
 import rumsData from "../data/rums.json";
+import { ALL_DRINKS } from "../data";
 
 const cigars = cigarsData as Cigar[];
 const rums = rumsData as unknown as Drink[];
@@ -34,7 +35,7 @@ describe("curatedPairingOpinion", () => {
     expect(habano).toBeTruthy();
     const { reasons, score } = scorePairing(habano!, doorly);
     expect(score).toBeGreaterThanOrEqual(WEIGHTS.curatedHintMinScore);
-    const opinion = curatedPairingOpinion(habano!, doorly, reasons);
+    const opinion = curatedPairingOpinion(habano!, doorly, reasons, score);
     expect(opinion?.hr).toContain("Doorly");
     expect(opinion?.hr).toMatch(/Habano|tijela|struktur/i);
     expect(opinion?.en).toContain("Doorly");
@@ -45,5 +46,27 @@ describe("curatedPairingOpinion", () => {
     const { score } = scorePairing(macanudo, doorly);
     expect(score).toBeLessThan(WEIGHTS.curatedHintMinScore);
     expect(doorly.cigarHint).toBeNull();
+    const { reasons } = scorePairing(macanudo, doorly);
+    expect(curatedPairingOpinion(macanudo, doorly, reasons, score)).toBeNull();
+  });
+
+  it("svi parovi iznad praga dobivaju jedinstveno mišljenje", () => {
+    const cigars = cigarsData as Cigar[];
+    const drinks = ALL_DRINKS.filter((d) => d.pairable);
+    const hrTexts = new Set<string>();
+
+    for (const cigar of cigars) {
+      for (const drink of drinks) {
+        const { score, reasons } = scorePairing(cigar, drink);
+        if (score < WEIGHTS.curatedHintMinScore) continue;
+
+        const opinion = curatedPairingOpinion(cigar, drink, reasons, score);
+        expect(opinion).not.toBeNull();
+        expect(opinion!.hr.length).toBeGreaterThan(20);
+        expect(opinion!.en.length).toBeGreaterThan(20);
+        expect(hrTexts.has(opinion!.hr)).toBe(false);
+        hrTexts.add(opinion!.hr);
+      }
+    }
   });
 });
