@@ -870,52 +870,6 @@
   }
  },
  {
-  "id": "br-hennessy-x-x-o-cognac-hors-d-039-age-40-vol-1l-u-poklon-kutiji",
-  "category": "brandy",
-  "name": "Hennessy X.X.O Cognac Hors D'Âge",
-  "style": "cognac-xo",
-  "region": "Cognac, Francuska",
-  "country": "Francuska",
-  "abv": 40.0,
-  "body": 4,
-  "sweetness": 3,
-  "flavorTags": [
-   "suho-voce",
-   "kakao",
-   "zacini",
-   "koza"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Bez poznatih dodataka",
-   "en": "No known additives"
-  },
-  "additiveSource": "Excel MASTER",
-  "qualityScore": 8.0,
-  "priceEUR": null,
-  "priceApprox": true,
-  "shopHR": "allez.hr",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "neat": 3,
-   "water": 2,
-   "rocks": 1,
-   "highball": 0,
-   "cola": 0,
-   "best": "Cisto (snifter)"
-  },
-  "cigarHint": {
-   "hr": "Habano/oscuro — XO nosi jaču cigaru",
-   "en": "Habano/oscuro — an XO carries a stronger cigar"
-  },
-  "priceUrl": "https://allez.hr/shop/svi-proizvodi/hennessy-xxo-cognac-hors-dage-40-vol-1l-u-poklon-kutiji",
-  "notes": {
-   "hr": "Heuristika — cognac-xo, cognac, xo",
-   "en": "Heuristic profile — cognac-xo, cognac, xo"
-  }
- },
- {
   "id": "br-hennessy-xo",
   "category": "brandy",
   "name": "Hennessy XO",
@@ -959,144 +913,6 @@
    "en": "Habano/oscuro — an XO carries a stronger cigar"
   },
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/hennessy-xo-40-07-l-u-poklon-kutiji",
-  "notes": {
-   "hr": "Arhetip XO kategorije — bogat, čokoladno-začinski, stvoren za cigaru.",
-   "en": "The XO archetype — rich, chocolate-spice, made for a cigar."
-  }
- },
- {
-  "id": "br-hennessy-xo-cognac-40-vol-0-7l-u-poklon-kutiji",
-  "category": "brandy",
-  "name": "Hennessy XO Cognac",
-  "style": "cognac-xo",
-  "region": "Cognac, Francuska",
-  "country": "Francuska",
-  "abv": 40.0,
-  "body": 4,
-  "sweetness": 3,
-  "flavorTags": [
-   "suho-voce",
-   "kakao",
-   "zacini",
-   "koza"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Bez poznatih dodataka",
-   "en": "No known additives"
-  },
-  "additiveSource": "Excel MASTER",
-  "qualityScore": 8.0,
-  "priceEUR": null,
-  "priceApprox": true,
-  "shopHR": "allez.hr",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "neat": 3,
-   "water": 2,
-   "rocks": 1,
-   "highball": 0,
-   "cola": 0,
-   "best": "Cisto (snifter)"
-  },
-  "cigarHint": {
-   "hr": "Habano/oscuro — XO nosi jaču cigaru",
-   "en": "Habano/oscuro — an XO carries a stronger cigar"
-  },
-  "priceUrl": "https://allez.hr/shop/svi-proizvodi/hennessy-xo-40-07-l-u-poklon-kutiji",
-  "notes": {
-   "hr": "Arhetip XO kategorije — bogat, čokoladno-začinski, stvoren za cigaru.",
-   "en": "The XO archetype — rich, chocolate-spice, made for a cigar."
-  }
- },
- {
-  "id": "br-hennessy-xo-cognac-festive-experience-40-vol-0-7l-u-poklon-kutiji-posudi-za-led-s-2-case-i-hvataljkom-za-led",
-  "category": "brandy",
-  "name": "Hennessy XO Cognac Festive Experience / posudi za led i hvataljkom za led",
-  "style": "cognac-xo",
-  "region": "Cognac, Francuska",
-  "country": "Francuska",
-  "abv": 40.0,
-  "body": 4,
-  "sweetness": 3,
-  "flavorTags": [
-   "suho-voce",
-   "kakao",
-   "zacini",
-   "koza"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Bez poznatih dodataka",
-   "en": "No known additives"
-  },
-  "additiveSource": "Excel MASTER",
-  "qualityScore": 8.0,
-  "priceEUR": null,
-  "priceApprox": true,
-  "shopHR": "allez.hr",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "neat": 3,
-   "water": 2,
-   "rocks": 1,
-   "highball": 0,
-   "cola": 0,
-   "best": "Cisto (snifter)"
-  },
-  "cigarHint": {
-   "hr": "Habano/oscuro — XO nosi jaču cigaru",
-   "en": "Habano/oscuro — an XO carries a stronger cigar"
-  },
-  "priceUrl": "https://allez.hr/shop/svi-proizvodi/hennessy-xo-cognac-festive-experience-40-vol-07l-u-poklon-kutiji-posudi-za-led-s-2-case-i-hvataljkom-za-led",
-  "notes": {
-   "hr": "Arhetip XO kategorije — bogat, čokoladno-začinski, stvoren za cigaru.",
-   "en": "The XO archetype — rich, chocolate-spice, made for a cigar."
-  }
- },
- {
-  "id": "br-hennessy-xo-cognac-ice-ritual-set-40-vol-0-7l-u-poklon-kutiji-s-posudom-za-led",
-  "category": "brandy",
-  "name": "Hennessy XO Cognac Ice Ritual Set s posudom za led",
-  "style": "cognac-xo",
-  "region": "Cognac, Francuska",
-  "country": "Francuska",
-  "abv": 40.0,
-  "body": 4,
-  "sweetness": 3,
-  "flavorTags": [
-   "suho-voce",
-   "kakao",
-   "zacini",
-   "koza"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Bez poznatih dodataka",
-   "en": "No known additives"
-  },
-  "additiveSource": "Excel MASTER",
-  "qualityScore": 8.0,
-  "priceEUR": null,
-  "priceApprox": true,
-  "shopHR": "allez.hr",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "neat": 3,
-   "water": 2,
-   "rocks": 1,
-   "highball": 0,
-   "cola": 0,
-   "best": "Cisto (snifter)"
-  },
-  "cigarHint": {
-   "hr": "Habano/oscuro — XO nosi jaču cigaru",
-   "en": "Habano/oscuro — an XO carries a stronger cigar"
-  },
-  "priceUrl": "https://allez.hr/shop/svi-proizvodi/hennessy-xo-cognac-ice-ritual-set-40-vol-07l-u-poklon-kutiji-s-posudom-za-led",
   "notes": {
    "hr": "Arhetip XO kategorije — bogat, čokoladno-začinski, stvoren za cigaru.",
    "en": "The XO archetype — rich, chocolate-spice, made for a cigar."
@@ -1178,52 +994,6 @@
   "priceApprox": false,
   "shopHR": "allez.hr",
   "status": "META",
-  "pairable": true,
-  "serving": {
-   "neat": 3,
-   "water": 2,
-   "rocks": 1,
-   "highball": 0,
-   "cola": 0,
-   "best": "Cisto (snifter)"
-  },
-  "cigarHint": {
-   "hr": "Habano/oscuro — XO nosi jaču cigaru",
-   "en": "Habano/oscuro — an XO carries a stronger cigar"
-  },
-  "priceUrl": "https://allez.hr/shop/svi-proizvodi/martell-xo-extra-old-cognac-40-07-l-gb",
-  "notes": {
-   "hr": "Suhi, borderies-bogat XO — orašasta elegancija uz srednju cigaru.",
-   "en": "Dry, Borderies-rich XO — nutty elegance with a medium cigar."
-  }
- },
- {
-  "id": "br-martell-xo-extra-old-cognac-40-vol-0-7l-u-poklon-kutiji",
-  "category": "brandy",
-  "name": "Martell XO Extra Old Cognac",
-  "style": "cognac-xo",
-  "region": "Cognac, Francuska",
-  "country": "Francuska",
-  "abv": 40.0,
-  "body": 4,
-  "sweetness": 3,
-  "flavorTags": [
-   "suho-voce",
-   "kakao",
-   "zacini",
-   "koza"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Bez poznatih dodataka",
-   "en": "No known additives"
-  },
-  "additiveSource": "Excel MASTER",
-  "qualityScore": 8.0,
-  "priceEUR": null,
-  "priceApprox": true,
-  "shopHR": "allez.hr",
-  "status": null,
   "pairable": true,
   "serving": {
    "neat": 3,
@@ -1776,55 +1546,6 @@
   }
  },
  {
-  "id": "br-camus-vsop-intensely-aromatic-cognac-40-vol-0-7l-u-poklon-kutiji",
-  "category": "brandy",
-  "name": "Camus VSOP Intensely Aromatic Cognac",
-  "style": "cognac-vsop",
-  "region": "Borderies, Francuska",
-  "country": "Francuska",
-  "abv": 40.0,
-  "body": 3,
-  "sweetness": 3,
-  "flavorTags": [
-   "voce",
-   "vanilija",
-   "zacini",
-   "hrast"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Bez poznatih dodataka",
-   "en": "No known additives"
-  },
-  "additiveSource": "Excel MASTER",
-  "qualityScore": 7.5,
-  "priceEUR": {
-   "min": 110.0,
-   "max": 110.0
-  },
-  "priceApprox": false,
-  "shopHR": "allez.hr",
-  "status": "META",
-  "pairable": true,
-  "serving": {
-   "neat": 3,
-   "water": 2,
-   "rocks": 2,
-   "highball": 0,
-   "cola": 0,
-   "best": "Cisto ili velika kocka leda"
-  },
-  "cigarHint": {
-   "hr": "Connecticut do Habano srednje snage",
-   "en": "Connecticut to medium-strength Habano"
-  },
-  "priceUrl": "https://allez.hr/shop/svi-proizvodi/camus-vsop-intensely-aromatic-cognac-40-vol-07l-u-poklon-kutiji",
-  "notes": {
-   "hr": "Mirisni XO — cvjetno-medena raskoš.",
-   "en": "The perfumed XO — floral-honeyed opulence."
-  }
- },
- {
   "id": "br-camus-xo-intensely-aromatic-cognac-40-vol-0-7l-u-poklon-kutiji",
   "category": "brandy",
   "name": "Camus XO Intensely Aromatic Cognac",
@@ -2269,7 +1990,7 @@
   "id": "br-martell-cordon-bleu",
   "category": "brandy",
   "name": "Martell Cordon Bleu",
-  "style": "cognac-vsop",
+  "style": "cognac-xo",
   "region": "Cognac, Francuska",
   "country": "Francuska",
   "abv": 40.0,
@@ -2286,7 +2007,7 @@
    "en": "No known additives"
   },
   "additiveSource": "Excel MASTER",
-  "qualityScore": 7.5,
+  "qualityScore": 8.0,
   "priceEUR": {
    "min": 195.0,
    "max": 195.0
@@ -2314,58 +2035,9 @@
   }
  },
  {
-  "id": "br-martell-cognac-cordon-bleu-extra-old-cognac-40-vol-0-7l-u-poklon-kutiji",
-  "category": "brandy",
-  "name": "Martell Cognac Cordon Bleu Extra Old Cognac",
-  "style": "cognac-xo",
-  "region": "Cognac, Francuska",
-  "country": "Francuska",
-  "abv": 40.0,
-  "body": 4,
-  "sweetness": 3,
-  "flavorTags": [
-   "suho-voce",
-   "kakao",
-   "zacini",
-   "koza"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Bez poznatih dodataka",
-   "en": "No known additives"
-  },
-  "additiveSource": "Excel MASTER",
-  "qualityScore": 7.5,
-  "priceEUR": {
-   "min": 50.0,
-   "max": 50.0
-  },
-  "priceApprox": false,
-  "shopHR": "allez.hr",
-  "status": "META",
-  "pairable": true,
-  "serving": {
-   "neat": 3,
-   "water": 2,
-   "rocks": 1,
-   "highball": 0,
-   "cola": 0,
-   "best": "Cisto (snifter)"
-  },
-  "cigarHint": {
-   "hr": "Habano/oscuro — XO nosi jaču cigaru",
-   "en": "Habano/oscuro — an XO carries a stronger cigar"
-  },
-  "priceUrl": "https://allez.hr/shop/svi-proizvodi/martell-cognac-cordon-bleu",
-  "notes": {
-   "hr": "Suhlji, orašastiji stil (bez borderies slatkoće u VSOP-u; Cordon Bleu = klasik za cigare).",
-   "en": "Drier, nuttier style (Cordon Bleu is a cigar classic)."
-  }
- },
- {
   "id": "br-martell-vsop-cordon-bleu",
   "category": "brandy",
-  "name": "Martell VSOP / Cordon Bleu",
+  "name": "Martell VSOP",
   "style": "cognac-vsop",
   "region": "Cognac, Francuska",
   "country": "Francuska",
@@ -2384,7 +2056,7 @@
    "en": "No known additives"
   },
   "additiveSource": "Excel MASTER",
-  "qualityScore": 7.5,
+  "qualityScore": 6.5,
   "priceEUR": {
    "min": 50.0,
    "max": 50.0
@@ -2407,8 +2079,8 @@
   },
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/martell-cognac-cordon-bleu",
   "notes": {
-   "hr": "Suhlji, orašastiji stil (bez borderies slatkoće u VSOP-u; Cordon Bleu = klasik za cigare).",
-   "en": "Drier, nuttier style (Cordon Bleu is a cigar classic)."
+   "hr": "Martellov VSOP — suši, borderies stil; Cordon Bleu je zaseban zapis.",
+   "en": "Martell's VSOP — drier, Borderies style; Cordon Bleu is a separate entry."
   }
  },
  {
@@ -2650,8 +2322,8 @@
  {
   "id": "br-hennessy-xxo",
   "category": "brandy",
-  "name": "Hennessy Xxo",
-  "style": "cognac-vsop",
+  "name": "Hennessy XXO Hors d’Âge",
+  "style": "cognac-xo",
   "region": "Cognac, Francuska",
   "country": "Francuska",
   "abv": 40.0,
@@ -2699,7 +2371,7 @@
   "id": "br-martell-chanteloup-xxo",
   "category": "brandy",
   "name": "Martell Chanteloup Xxo",
-  "style": "cognac-vsop",
+  "style": "cognac-xo",
   "region": "Cognac, Francuska",
   "country": "Francuska",
   "abv": 40.0,
@@ -2747,7 +2419,7 @@
   "id": "br-martell-cohiba",
   "category": "brandy",
   "name": "Martell Cohiba",
-  "style": "cognac-vsop",
+  "style": "cognac-xo",
   "region": "Cognac, Francuska",
   "country": "Francuska",
   "abv": 40.0,
@@ -2941,8 +2613,8 @@
  {
   "id": "br-courvoisier-vsop-xo",
   "category": "brandy",
-  "name": "Courvoisier VSOP / XO",
-  "style": "cognac-xo",
+  "name": "Courvoisier VSOP",
+  "style": "cognac-vsop",
   "region": "Cognac, Francuska",
   "country": "Francuska",
   "abv": 40.0,
@@ -2983,8 +2655,8 @@
   },
   "priceUrl": "https://ecuga.com/proizvod/courvoisier-vsop",
   "notes": {
-   "hr": "Mekan i pristupačan — jasmin i voće.",
-   "en": "Soft and approachable — jasmine and fruit."
+   "hr": "Kućni VSOP — mekan, voćan; XO postoji kao zaseban zapis.",
+   "en": "The house VSOP — soft and fruity; the XO is a separate entry."
   }
  },
  {
@@ -3183,9 +2855,9 @@
   }
  },
  {
-  "id": "br-torres-15-20-imperial",
+  "id": "br-torres-15",
   "category": "brandy",
-  "name": "Torres 15 / 20 Imperial",
+  "name": "Torres 15 Reserva Privada",
   "style": "brandy-spanish",
   "region": "Katalonija, Španjolska",
   "country": "┼ápanjolska",
@@ -3203,7 +2875,7 @@
    "en": "Not declared"
   },
   "additiveSource": "Excel MASTER",
-  "qualityScore": 7.0,
+  "qualityScore": 6.5,
   "priceEUR": {
    "min": 25.0,
    "max": 25.0
@@ -3226,8 +2898,56 @@
   },
   "priceUrl": null,
   "notes": {
-   "hr": "Katalonski value — pouzdan, mekan, dostupan.",
-   "en": "Catalan value — reliable, soft, widely available."
+   "hr": "Katalonski brandy solera — mekan, hrastov, izvrstan omjer.",
+   "en": "A Catalan solera brandy — soft, oaky, excellent value."
+  }
+ },
+ {
+  "id": "br-torres-20",
+  "category": "brandy",
+  "name": "Torres 20 Hors d’Âge Imperial",
+  "style": "brandy-spanish",
+  "region": "Katalonija, Španjolska",
+  "country": "┼ápanjolska",
+  "abv": 40.0,
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "karamela",
+   "suho-voce",
+   "hrast"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": {
+   "hr": "Nije deklarirano",
+   "en": "Not declared"
+  },
+  "additiveSource": "Excel MASTER",
+  "qualityScore": 7.0,
+  "priceEUR": {
+   "min": 33.0,
+   "max": 40.0
+  },
+  "priceApprox": true,
+  "shopHR": "svugdje",
+  "status": "META",
+  "pairable": true,
+  "serving": {
+   "neat": 3,
+   "water": 2,
+   "rocks": 2,
+   "highball": 0,
+   "cola": 0,
+   "best": "Cisto"
+  },
+  "cigarHint": {
+   "hr": "Maduro srednje snage",
+   "en": "A medium-strength maduro"
+  },
+  "priceUrl": null,
+  "notes": {
+   "hr": "Stariji Imperial — dublji i suši od 15-ice.",
+   "en": "The older Imperial — deeper and drier than the 15."
   }
  },
  {

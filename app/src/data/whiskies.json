@@ -3204,102 +3204,6 @@
   }
  },
  {
-  "id": "wh-the-balvenie-14-yo-caribbean-cask-43-vol-0-7l-u-poklon-kutiji",
-  "category": "whisky",
-  "name": "The Balvenie 14 YO Caribbean Cask",
-  "style": "speyside-fruity",
-  "region": "Speyside, Škotska",
-  "country": "Škotska",
-  "abv": 43.0,
-  "body": 3,
-  "sweetness": 2,
-  "flavorTags": [
-   "suho-voce",
-   "med",
-   "cvjetno"
-  ],
-  "additiveStatus": "unknown",
-  "additiveDetail": {
-   "hr": "Nije deklarirano",
-   "en": "Not declared"
-  },
-  "additiveSource": "Excel MASTER",
-  "qualityScore": 8.0,
-  "priceEUR": {
-   "min": 75.0,
-   "max": 75.0
-  },
-  "priceApprox": false,
-  "shopHR": "allez.hr",
-  "status": "META",
-  "pairable": true,
-  "serving": {
-   "neat": 3,
-   "water": 3,
-   "rocks": 2,
-   "highball": 0,
-   "cola": 0,
-   "best": "Kap vode (cask strength)"
-  },
-  "cigarHint": {
-   "hr": "Maduro/oscuro — sherry + kakao",
-   "en": "Maduro/oscuro — sherry and cocoa"
-  },
-  "priceUrl": "https://allez.hr/shop/svi-proizvodi/the-balvenie-14-yo-caribbean-cask-43-vol-07l-u-poklon-kutiji",
-  "notes": {
-   "hr": "Finish u rum bačvama — most između tvog rum svijeta i malta.",
-   "en": "A rum-cask finish — the bridge between your rum world and malt."
-  }
- },
- {
-  "id": "wh-the-balvenie-14-yo-caribbean-cask-finish-43-vol-0-7l-u-poklon-kutiji-sa-2-case",
-  "category": "whisky",
-  "name": "The Balvenie 14 YO Caribbean Cask Finish",
-  "style": "speyside-fruity",
-  "region": "Speyside, Škotska",
-  "country": "Škotska",
-  "abv": 43.0,
-  "body": 3,
-  "sweetness": 2,
-  "flavorTags": [
-   "suho-voce",
-   "med",
-   "cvjetno"
-  ],
-  "additiveStatus": "unknown",
-  "additiveDetail": {
-   "hr": "Nije deklarirano",
-   "en": "Not declared"
-  },
-  "additiveSource": "Excel MASTER",
-  "qualityScore": 8.0,
-  "priceEUR": {
-   "min": 75.0,
-   "max": 75.0
-  },
-  "priceApprox": false,
-  "shopHR": "allez.hr",
-  "status": "META",
-  "pairable": true,
-  "serving": {
-   "neat": 3,
-   "water": 2,
-   "rocks": 2,
-   "highball": 0,
-   "cola": 0,
-   "best": "Cisto"
-  },
-  "cigarHint": {
-   "hr": "Habano srednje snage",
-   "en": "A medium-strength Habano"
-  },
-  "priceUrl": "https://allez.hr/shop/svi-proizvodi/the-balvenie-14-yo-caribbean-cask-43-vol-07l-u-poklon-kutiji",
-  "notes": {
-   "hr": "Finish u rum bačvama — most između tvog rum svijeta i malta.",
-   "en": "A rum-cask finish — the bridge between your rum world and malt."
-  }
- },
- {
   "id": "wh-aberlour-12-double-cask",
   "category": "whisky",
   "name": "Aberlour 12 Double Cask",
@@ -3630,54 +3534,6 @@
    "en": "A medium cigar, balanced strength"
   },
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/aberlour-16-years-old-double-cask-matured-speyside-single-malt-scotch-whisky-40-vol-07l-in-giftbox",
-  "notes": {
-   "hr": "Pitki sherry-bourbon balans — dobar ulaz u sherry stil.",
-   "en": "A drinkable sherry-bourbon balance — a good entry into the sherry style."
-  }
- },
- {
-  "id": "wh-aberlour-18-yo-double-sherry-cask-finish-43-vol-0-7l-u-poklon-kutiji",
-  "category": "whisky",
-  "name": "Aberlour 18 YO Double Sherry Cask Finish",
-  "style": "speyside-fruity",
-  "region": "Speyside, Škotska",
-  "country": "Škotska",
-  "abv": 43.0,
-  "body": 3,
-  "sweetness": 2,
-  "flavorTags": [
-   "suho-voce",
-   "med",
-   "cvjetno"
-  ],
-  "additiveStatus": "unknown",
-  "additiveDetail": {
-   "hr": "Nije deklarirano",
-   "en": "Not declared"
-  },
-  "additiveSource": "Excel MASTER",
-  "qualityScore": 7.5,
-  "priceEUR": {
-   "min": 143.0,
-   "max": 143.0
-  },
-  "priceApprox": false,
-  "shopHR": "allez.hr",
-  "status": "META",
-  "pairable": true,
-  "serving": {
-   "neat": 3,
-   "water": 3,
-   "rocks": 2,
-   "highball": 0,
-   "cola": 0,
-   "best": "Kap vode (cask strength)"
-  },
-  "cigarHint": {
-   "hr": "Maduro/oscuro — sherry + kakao",
-   "en": "Maduro/oscuro — sherry and cocoa"
-  },
-  "priceUrl": "https://ecuga.com/katalog/whisky/skotski-maltgrain-whisky/aberlour-18-double-sherry-cask-finish",
   "notes": {
    "hr": "Pitki sherry-bourbon balans — dobar ulaz u sherry stil.",
    "en": "A drinkable sherry-bourbon balance — a good entry into the sherry style."
@@ -4379,54 +4235,6 @@
   },
   "priceApprox": false,
   "shopHR": "ecuga.com",
-  "status": "META",
-  "pairable": true,
-  "serving": {
-   "neat": 3,
-   "water": 2,
-   "rocks": 2,
-   "highball": 0,
-   "cola": 0,
-   "best": "Cisto / mala kocka leda"
-  },
-  "cigarHint": {
-   "hr": "Connecticut/claro — elegantno",
-   "en": "Connecticut/claro — elegant"
-  },
-  "priceUrl": "https://ecuga.com/katalog/whisky/azijski-whisky/nikka-coffey-grain",
-  "notes": {
-   "hr": "Slatki grain — gotovo bourbon-desertni, uz blage kremaste cigare.",
-   "en": "A sweet grain — almost bourbon-dessert-like; with mild, creamy cigars."
-  }
- },
- {
-  "id": "wh-nikka-coffey-grain-whisky-45-vol-0-7l-u-poklon-kutiji",
-  "category": "whisky",
-  "name": "Nikka Coffey Grain Whisky",
-  "style": "japanese",
-  "region": "Japan",
-  "country": "Japan",
-  "abv": 45.0,
-  "body": 3,
-  "sweetness": 2,
-  "flavorTags": [
-   "cvjetno",
-   "citrus",
-   "hrast"
-  ],
-  "additiveStatus": "unknown",
-  "additiveDetail": {
-   "hr": "Nije deklarirano",
-   "en": "Not declared"
-  },
-  "additiveSource": "Excel MASTER",
-  "qualityScore": 7.5,
-  "priceEUR": {
-   "min": 55.0,
-   "max": 55.0
-  },
-  "priceApprox": false,
-  "shopHR": "allez.hr",
   "status": "META",
   "pairable": true,
   "serving": {
@@ -6548,54 +6356,6 @@
   }
  },
  {
-  "id": "wh-johnnie-walker-black-label-triple-cask",
-  "category": "whisky",
-  "name": "Johnnie Walker Black Label Triple Cask",
-  "style": "blended-scotch",
-  "region": "Škotska (blend)",
-  "country": "Škotska",
-  "abv": null,
-  "body": 3,
-  "sweetness": 2,
-  "flavorTags": [
-   "karamela",
-   "med",
-   "vanilija"
-  ],
-  "additiveStatus": "moderate",
-  "additiveDetail": {
-   "hr": "E150a karamel boja moguca",
-   "en": "E150a caramel colouring possible"
-  },
-  "additiveSource": "Excel MASTER",
-  "qualityScore": 6.5,
-  "priceEUR": {
-   "min": 55.0,
-   "max": 55.0
-  },
-  "priceApprox": false,
-  "shopHR": "ecuga.com",
-  "status": "META",
-  "pairable": true,
-  "serving": {
-   "neat": 3,
-   "water": 2,
-   "rocks": 2,
-   "highball": 0,
-   "cola": 0,
-   "best": "Cisto"
-  },
-  "cigarHint": {
-   "hr": "Srednja cigara, balans snage",
-   "en": "A medium cigar, balanced strength"
-  },
-  "priceUrl": "https://ecuga.com/katalog/whisky/skotski-blended-whisky/johnnie-walker-black-label-triple-cask",
-  "notes": {
-   "hr": "Standard blenda s daškom dima — pouzdan dnevni izbor uz cigaru.",
-   "en": "The blend standard with a whiff of smoke — a dependable daily choice with a cigar."
-  }
- },
- {
   "id": "wh-johnnie-walker-black-ruby",
   "category": "whisky",
   "name": "Johnnie Walker Black Ruby",
@@ -6881,54 +6641,6 @@
   "notes": {
    "hr": "Standard blenda s daškom dima — pouzdan dnevni izbor uz cigaru.",
    "en": "The blend standard with a whiff of smoke — a dependable daily choice with a cigar."
-  }
- },
- {
-  "id": "wh-jameson-black-barrel-triple-distilled-irish-whiskey-40-vol-0-7l-u-poklon-kutiji",
-  "category": "whisky",
-  "name": "Jameson BLACK BARREL Triple Distilled",
-  "style": "irish-pot-still",
-  "region": "Irska",
-  "country": "Irska",
-  "abv": 40.0,
-  "body": 3,
-  "sweetness": 3,
-  "flavorTags": [
-   "med",
-   "vanilija",
-   "kremasto"
-  ],
-  "additiveStatus": "unknown",
-  "additiveDetail": {
-   "hr": "Nije deklarirano",
-   "en": "Not declared"
-  },
-  "additiveSource": "Excel MASTER",
-  "qualityScore": 6.5,
-  "priceEUR": {
-   "min": 28.0,
-   "max": 28.0
-  },
-  "priceApprox": false,
-  "shopHR": "allez.hr",
-  "status": "META",
-  "pairable": true,
-  "serving": {
-   "neat": 3,
-   "water": 2,
-   "rocks": 2,
-   "highball": 0,
-   "cola": 0,
-   "best": "Cisto"
-  },
-  "cigarHint": {
-   "hr": "Srednja cigara, balans snage",
-   "en": "A medium cigar, balanced strength"
-  },
-  "priceUrl": "https://allez.hr/shop/svi-proizvodi/jameson-black-barrel-triple-distilled-irish-whiskey-40-vol-07l",
-  "notes": {
-   "hr": "Nadograđeni Jameson — pojačan char bačve, mekan i sladak.",
-   "en": "An upgraded Jameson — heavier cask char, soft and sweet."
   }
  },
  {
@@ -10124,46 +9836,6 @@
   "additiveSource": "EU pravila: whisky smije samo E150a"
  },
  {
-  "id": "wh-writers-tears",
-  "category": "whisky",
-  "name": "Writers' Tears Copper Pot",
-  "style": "irish-blend",
-  "region": "Irska",
-  "country": "Irska",
-  "abv": 40,
-  "body": 3,
-  "sweetness": 3,
-  "flavorTags": [
-   "med",
-   "voce",
-   "vanilija"
-  ],
-  "qualityScore": 7,
-  "priceEUR": {
-   "min": 35,
-   "max": 45
-  },
-  "priceApprox": true,
-  "shopHR": "allez.hr",
-  "pairable": true,
-  "serving": {
-   "best": "Cisto"
-  },
-  "cigarHint": null,
-  "notes": {
-   "hr": "Mekani irski blend s pot still udjelom — svileno uz blage cigare.",
-   "en": "Soft Irish blend with pot-still content — silky with mild cigars."
-  },
-  "status": null,
-  "priceUrl": null,
-  "additiveStatus": "unknown",
-  "additiveDetail": {
-   "hr": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
-   "en": "E150a colouring / chill filtration undeclared (the EU does not require it)"
-  },
-  "additiveSource": "EU pravila: whisky smije samo E150a"
- },
- {
   "id": "wh-hakushu-12",
   "category": "whisky",
   "name": "Hakushu 12",
@@ -12714,6 +12386,54 @@
   "notes": {
    "hr": "Najprodavaniji blend u Škotskoj — pouzdan svakodnevni standard.",
    "en": "Scotland's best-selling blend — a dependable daily standard."
+  }
+ },
+ {
+  "id": "wh-johnnie-walker-black-label-triple-cask",
+  "category": "whisky",
+  "name": "Johnnie Walker Black Label Triple Cask",
+  "style": "blended-scotch",
+  "region": "Škotska (blend)",
+  "country": "Škotska",
+  "abv": null,
+  "body": 3,
+  "sweetness": 2,
+  "flavorTags": [
+   "karamela",
+   "med",
+   "vanilija"
+  ],
+  "additiveStatus": "moderate",
+  "additiveDetail": {
+   "hr": "E150a karamel boja moguca",
+   "en": "E150a caramel colouring possible"
+  },
+  "additiveSource": "Excel MASTER",
+  "qualityScore": 6.5,
+  "priceEUR": {
+   "min": 55.0,
+   "max": 55.0
+  },
+  "priceApprox": false,
+  "shopHR": "ecuga.com",
+  "status": "META",
+  "pairable": true,
+  "serving": {
+   "neat": 3,
+   "water": 2,
+   "rocks": 2,
+   "highball": 0,
+   "cola": 0,
+   "best": "Cisto"
+  },
+  "cigarHint": {
+   "hr": "Srednja cigara, balans snage",
+   "en": "A medium cigar, balanced strength"
+  },
+  "priceUrl": "https://ecuga.com/katalog/whisky/skotski-blended-whisky/johnnie-walker-black-label-triple-cask",
+  "notes": {
+   "hr": "Standard blenda s daškom dima — pouzdan dnevni izbor uz cigaru.",
+   "en": "The blend standard with a whiff of smoke — a dependable daily choice with a cigar."
   }
  }
 ]
