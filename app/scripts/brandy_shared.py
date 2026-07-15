@@ -51,19 +51,32 @@ ALLEZ_LISTS = [
 ]
 
 STYLE_RULES: list[tuple[str, str, str, int, int, list[str]]] = [
-    (r"hennessy\s+vs\b|\bvs cognac|\bcognac vs\b|\bvs\b.*cognac", "cognac-vs", "Cognac, Francuska", 3, 3, ["voce", "vanilija", "hrast"]),
-    (r"\bxo\b|extra old|hors d|paradis|louis xiii|richard hennessy", "cognac-xo", "Cognac, Francuska", 4, 3, ["suho-voce", "kakao", "zacini", "koza"]),
-    (r"vsop|v\.s\.o\.p|1738|accord royal", "cognac-vsop", "Cognac, Francuska", 3, 3, ["voce", "vanilija", "zacini", "hrast"]),
+    # Geographic / category rules first — before age-tier tokens (XO, VSOP, Extra Old).
     (r"armagnac|dartigalongue|janneau|chateau de laubade|domaine du tarriquet", "armagnac", "Armagnac, Francuska", 4, 3, ["suho-voce", "prune", "zacini", "hrast"]),
-    (r"calvados|boulard|dupont|christian drouin", "calvados", "Normandija, Francuska", 3, 3, ["jabuka", "cimet", "hrast"]),
+    (r"calvados|boulard|dupont|christian drouin|pere magloire", "calvados", "Normandija, Francuska", 3, 3, ["jabuka", "cimet", "hrast"]),
     (r"carlos i|fundador|magnifico|gran reserva|brandy de jerez|lepanto|soberano", "brandy-de-jerez", "Jerez, Španjolska", 4, 3, ["orah", "karamela", "suho-voce", "hrast"]),
-    (r"torres|gran duque|reserva|spanish brandy|magnifico", "brandy-spanish", "Španjolska", 3, 3, ["karamela", "suho-voce", "hrast"]),
+    (r"torres|gran duque|reserva|spanish brandy", "brandy-spanish", "Španjolska", 3, 3, ["karamela", "suho-voce", "hrast"]),
     (r"metaxa|tsipouro|ouzo|brandy greek", "brandy-greek", "Grčka", 3, 4, ["med", "voce", "zacini"]),
-    (r"vecchia romagna|grappa|nonino|berta|poli|marchesi", "brandy-italian", "Italija", 3, 2, ["grozdje", "hrast"]),
+    (r"grappa|nonino|berta|poli|vecchia romagna|marchesi|\bstock\b", "brandy-italian", "Italija", 3, 2, ["grozdje", "hrast"]),
     (r"ararat|armenian|noah", "brandy-armenian", "Armenija", 4, 3, ["suho-voce", "cokolada", "zacini"]),
     (r"asbach|weinbrand|german brandy", "brandy-german", "Njemačka", 3, 3, ["voce", "hrast", "karamela"]),
-    (r"badel|vinjak|stock|maraska|lozovaca|rakija", "vinjak", "Hrvatska", 3, 3, ["grozdje", "med", "hrast"]),
+    (r"badel|vinjak|maraska|lozovaca|rakija", "vinjak", "Hrvatska", 3, 3, ["grozdje", "med", "hrast"]),
     (r"jameson|irish|bushmills|paddy", "brandy-irish", "Irska", 3, 3, ["voce", "vanilija", "med"]),
+    # Cognac age tiers — XO / Extra Old only when cognac context is present.
+    (r"hennessy\s+vs\b|\bvs cognac|\bcognac vs\b|\bvs\b.*cognac", "cognac-vs", "Cognac, Francuska", 3, 3, ["voce", "vanilija", "hrast"]),
+    (
+        r"(?:cognac|hennessy|martell|remy|camus|hine|delamain|courvoisier|davidoff|frapin|leyrat)"
+        r".*(?:\bxo\b|x\.o\.|extra old|hors d)"
+        r"|(?:\bxo\b|x\.o\.|extra old|hors d)"
+        r".*(?:cognac|hennessy|martell|remy|camus|hine|delamain|courvoisier|davidoff|frapin|leyrat)"
+        r"|paradis|louis xiii|richard hennessy",
+        "cognac-xo",
+        "Cognac, Francuska",
+        4,
+        3,
+        ["suho-voce", "kakao", "zacini", "koza"],
+    ),
+    (r"vsop|v\.s\.o\.p|1738|accord royal", "cognac-vsop", "Cognac, Francuska", 3, 3, ["voce", "vanilija", "zacini", "hrast"]),
     (r"martell|remy|hennessy|camus|hine|delamain|davidoff|courvoisier", "cognac-vsop", "Cognac, Francuska", 3, 3, ["voce", "vanilija", "hrast"]),
 ]
 
