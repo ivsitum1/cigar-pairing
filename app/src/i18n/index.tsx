@@ -45,7 +45,7 @@ const STRINGS = {
   "pair.match": { hr: "match", en: "match" },
   "pair.onlyMine": { hr: "Samo moja kolekcija", en: "My collection only" },
   "pair.noResults": { hr: "Nema rezultata za odabrane filtere.", en: "No results for the selected filters." },
-  "pair.excelHint": { hr: "Mišljenje o paru", en: "Pairing opinion" },
+  "pair.excelHint": { hr: "Kurirana preporuka", en: "Curated recommendation" },
   "pair.suggestions": { hr: "Prijedlozi", en: "Suggestions" },
   "pair.next": { hr: "Sljedeći prijedlog", en: "Next suggestion" },
   "pair.coffeeAlt": { hr: "Bezalkoholna opcija — kava", en: "Non-alcoholic option — coffee" },

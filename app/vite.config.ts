@@ -36,7 +36,11 @@ export default defineConfig({
         ],
       },
       workbox: {
+        // bump cache — forsira osvježavanje nakon ispravka kurirane poruke
+        cacheId: "cigar-pairing-v2026-07-15-curated",
         globPatterns: ["**/*.{js,css,html,svg,png,json,woff2}"],
+        clientsClaim: true,
+        skipWaiting: true,
       },
     }),
   ],

@@ -4,7 +4,6 @@ import type { Cigar, Drink } from "../types";
 import { ALL_DRINKS, CIGARS, formatPrice } from "../data";
 import { scorePairing } from "../engine/pairing";
 import { curatedPairingOpinion } from "../engine/curatedOpinion";
-import { WEIGHTS } from "../engine/rules";
 import { useI18n, STYLE_LABELS, type StringKey } from "../i18n";
 import { Meter, ScoreBand, SearchInput } from "../components/ui";
 import { useMarket } from "../store/market";
@@ -34,10 +33,9 @@ export function CustomPairing({
   const drinks = useMemo(() => ALL_DRINKS.filter((d) => d.pairable), []);
 
   const result = cigar && drink ? scorePairing(cigar, drink) : null;
-  const pairingOpinion =
-    result && result.score >= WEIGHTS.curatedHintMinScore
-      ? curatedPairingOpinion(cigar!, drink!, result.reasons, result.score)
-      : null;
+  const pairingOpinion = result
+    ? curatedPairingOpinion(cigar!, drink!, result.reasons, result.score)
+    : null;
 
   const verdictKey = (score: number): StringKey =>
     score >= 82

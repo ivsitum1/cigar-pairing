@@ -1,5 +1,6 @@
-// Dinamičko mišljenje o paru — zamjena za statički cigarHint iz Excela.
-// Generira se iz konkretne cigare, pića i razloga bodovanja.
+// Kurirana poruka za par cigara–piće.
+// PRAVILO: poruka postoji isključivo kad je match >= 80.
+// Nikad ne čita drink.cigarHint (Excel). Tekst je uvijek specifičan za taj par.
 
 import type { Cigar, Drink, LocalizedText, PairingReason } from "../types";
 import { WEIGHTS } from "./rules";
@@ -8,8 +9,6 @@ const BODY_HR = ["", "vrlo lagano", "lagano", "srednje", "puno", "vrlo puno"];
 const BODY_EN = ["", "very light", "light", "medium", "full", "very full"];
 const STRENGTH_HR = ["", "blaga", "lagana", "srednja", "jaka", "vrlo jaka"];
 const STRENGTH_EN = ["", "mild", "light", "medium", "strong", "very strong"];
-const SWEET_HR = ["", "suvo", "polusuho", "uravnoteženo", "slatko", "vrlo slatko"];
-const SWEET_EN = ["", "dry", "off-dry", "balanced", "sweet", "very sweet"];
 
 const WRAPPER = {
   connecticut: /connecticut|claro|shade/i,
@@ -26,22 +25,7 @@ function wrapperKind(wrapper: string): keyof typeof WRAPPER | "other" {
   return "other";
 }
 
-function wrapperLabelHr(kind: ReturnType<typeof wrapperKind>, raw: string): string {
-  switch (kind) {
-    case "connecticut":
-      return "Connecticut";
-    case "habano":
-      return "Habano";
-    case "maduro":
-      return /san andr/i.test(raw) ? "San Andrés maduro" : "maduro";
-    case "natural":
-      return "natural wrapper";
-    default:
-      return raw.split(/[;(]/)[0]?.trim() || raw;
-  }
-}
-
-function wrapperLabelEn(kind: ReturnType<typeof wrapperKind>, raw: string): string {
+function wrapperLabel(kind: ReturnType<typeof wrapperKind>, raw: string): string {
   switch (kind) {
     case "connecticut":
       return "Connecticut";
@@ -95,14 +79,13 @@ function wrapperVerdict(
   cigar: Cigar,
   drink: Drink,
 ): { hr: string; en: string } | null {
-  const wHr = wrapperLabelHr(kind, cigar.wrapper);
-  const wEn = wrapperLabelEn(kind, cigar.wrapper);
+  const w = wrapperLabel(kind, cigar.wrapper);
 
   if (profile === "clean-barbados") {
     if (kind === "habano" || (kind === "maduro" && /san andr/i.test(cigar.wrapper))) {
       return {
-        hr: `${wHr} daje dovoljno strukture da se ne izgubi uz suhi, hrastov profil — bez da pregazi piće.`,
-        en: `${wEn} brings enough structure without drowning the dry, oaky profile.`,
+        hr: `${w} daje dovoljno strukture da se ne izgubi uz suhi, hrastov profil — bez da pregazi piće.`,
+        en: `${w} brings enough structure without drowning the dry, oaky profile.`,
       };
     }
     if (kind === "natural") {
@@ -170,8 +153,8 @@ function wrapperVerdict(
 
   if (cigar.body === drink.body && kind !== "other") {
     return {
-      hr: `${wHr} i ${drink.name} su u istom registru punoće — nijedno ne nadjačava drugo.`,
-      en: `${wEn} and ${drink.name} sit in the same weight class — neither overpowers the other.`,
+      hr: `${w} i ${drink.name} su u istom registru punoće — nijedno ne nadjačava drugo.`,
+      en: `${w} and ${drink.name} sit in the same weight class — neither overpowers the other.`,
     };
   }
 
@@ -223,106 +206,66 @@ function synergyLine(reasons: PairingReason[]): { hr: string; en: string } | nul
   };
 }
 
-function openingLine(cigar: Cigar, drink: Drink): { hr: string; en: string } {
-  const cigarName = `${cigar.brand} ${cigar.line}`.trim();
-  return {
-    hr: `${cigarName} i ${drink.name} —`,
-    en: `${cigarName} and ${drink.name} —`,
-  };
-}
-
 function sharedTags(cigar: Cigar, drink: Drink): string[] {
   return cigar.flavorTags.filter((t) => drink.flavorTags.includes(t));
 }
 
-/** Jedinstveni fallback kad nema synergy/verdict — koristi profil para i bodovanje. */
-function highScoreFallback(
+function alwaysUniqueBody(
   cigar: Cigar,
   drink: Drink,
   reasons: PairingReason[],
   score: number,
 ): { hr: string; en: string } {
   const kind = wrapperKind(cigar.wrapper);
-  const wHr = wrapperLabelHr(kind, cigar.wrapper);
-  const wEn = wrapperLabelEn(kind, cigar.wrapper);
+  const w = wrapperLabel(kind, cigar.wrapper);
   const shared = sharedTags(cigar, drink);
-  const bodyDelta = cigar.body - drink.body;
-  const topPositive = reasons.filter((r) => r.score > 0).sort((a, b) => b.score - a.score)[0];
+  const synergy = synergyLine(reasons);
+  const verdict = wrapperVerdict(drinkProfile(drink), kind, cigar, drink);
 
-  if (shared.length >= 2) {
+  if (synergy && verdict) {
+    return { hr: `${synergy.hr} ${verdict.hr}`, en: `${synergy.en} ${verdict.en}` };
+  }
+  if (synergy) {
+    return {
+      hr: `${synergy.hr} ${w} (${STRENGTH_HR[cigar.strength]}) uz ${drink.style} — ${score}%.`,
+      en: `${synergy.en} ${w} (${STRENGTH_EN[cigar.strength]}) with ${drink.style} — ${score}%.`,
+    };
+  }
+  if (verdict) return verdict;
+
+  if (shared.length >= 1) {
     const tags = shared.slice(0, 3).join(", ");
     return {
-      hr: `Dijele ${tags}; ${wHr} (${BODY_HR[cigar.body]}) i ${drink.name} (${BODY_HR[drink.body]}) grade koherentan profil uz ${score}% podudaranja.`,
-      en: `They share ${tags}; ${wEn} (${BODY_EN[cigar.body]}) and ${drink.name} (${BODY_EN[drink.body]}) build a coherent profile at ${score}% match.`,
-    };
-  }
-
-  if (bodyDelta === 0) {
-    return {
-      hr: `Ista punoća (${BODY_HR[cigar.body]}) i ${STRENGTH_HR[cigar.strength]} snaga uz ${wHr} drže par u ravnoteži — ${score}% je opravdan rezultat.`,
-      en: `Matching weight (${BODY_EN[cigar.body]}) and ${STRENGTH_EN[cigar.strength]} strength with ${wEn} keep the pair balanced — ${score}% is a fair read.`,
-    };
-  }
-
-  if (Math.abs(bodyDelta) === 1) {
-    const heavier = bodyDelta > 0 ? "cigara" : "piće";
-    const heavierEn = bodyDelta > 0 ? "cigar" : "drink";
-    return {
-      hr: `Blaga razlika u tijelu — ${heavier} vodi, ali ${wHr} i ${drink.style} (${drink.region}) ostaju kompatibilni uz ${score}%.`,
-      en: `A slight body gap — the ${heavierEn} leads, but ${wEn} and ${drink.style} (${drink.region}) still align at ${score}%.`,
-    };
-  }
-
-  if (topPositive) {
-    return {
-      hr: `${topPositive.text.hr.replace(/\.$/, "")} — uz ${wHr} i slatkoću ${SWEET_HR[drink.sweetness]} to drži par iznad ${WEIGHTS.curatedHintMinScore}%.`,
-      en: `${topPositive.text.en.replace(/\.$/, "")} — with ${wEn} and ${SWEET_EN[drink.sweetness]} sweetness that keeps the pair above ${WEIGHTS.curatedHintMinScore}%.`,
+      hr: `Dijele ${tags}; ${w} (${BODY_HR[cigar.body]}) i ${drink.name} grade koherentan par uz ${score}%.`,
+      en: `They share ${tags}; ${w} (${BODY_EN[cigar.body]}) and ${drink.name} form a coherent pair at ${score}%.`,
     };
   }
 
   return {
-    hr: `${wHr}, ${STRENGTH_HR[cigar.strength]} snaga i ${drink.category} profil (${drink.style}) daju solidan večernji par — ${score}% podudaranja.`,
-    en: `${wEn}, ${STRENGTH_EN[cigar.strength]} strength and a ${drink.category} profile (${drink.style}) make a solid evening pair — ${score}% match.`,
+    hr: `${w}, ${STRENGTH_HR[cigar.strength]} snaga i ${drink.category} (${drink.style}, ${drink.region}) — ${score}% podudaranja.`,
+    en: `${w}, ${STRENGTH_EN[cigar.strength]} strength and ${drink.category} (${drink.style}, ${drink.region}) — ${score}% match.`,
   };
 }
 
-/** Mišljenje o konkretnom paru. Iznad praga uvijek vraća tekst (nikad null). */
+/**
+ * Kurirana poruka za par.
+ * - score < 80 → null (nikad ne prikazati)
+ * - score >= 80 → uvijek jedinstven tekst za taj par
+ * Score je obavezan — bez scorea nema poruke.
+ */
 export function curatedPairingOpinion(
   cigar: Cigar,
   drink: Drink,
   reasons: PairingReason[],
-  score?: number,
+  score: number,
 ): LocalizedText | null {
-  if (score != null && score < WEIGHTS.curatedHintMinScore) return null;
+  if (score < WEIGHTS.curatedHintMinScore) return null;
 
-  const open = openingLine(cigar, drink);
-  const synergy = synergyLine(reasons);
-  const verdict = wrapperVerdict(drinkProfile(drink), wrapperKind(cigar.wrapper), cigar, drink);
-
-  const partsHr = [open.hr];
-  const partsEn = [open.en];
-
-  if (synergy) {
-    partsHr.push(synergy.hr);
-    partsEn.push(synergy.en);
-  }
-  if (verdict) {
-    partsHr.push(verdict.hr);
-    partsEn.push(verdict.en);
-  }
-
-  const aboveThreshold =
-    score != null && score >= WEIGHTS.curatedHintMinScore;
-
-  if (partsHr.length <= 1) {
-    if (!aboveThreshold) return null;
-    const fallback = highScoreFallback(cigar, drink, reasons, score);
-    partsHr.push(fallback.hr);
-    partsEn.push(fallback.en);
-  }
+  const cigarName = `${cigar.brand} ${cigar.line}`.trim();
+  const body = alwaysUniqueBody(cigar, drink, reasons, score);
 
   return {
-    hr: partsHr.join(" "),
-    en: partsEn.join(" "),
+    hr: `${cigarName} i ${drink.name} — ${body.hr}`,
+    en: `${cigarName} and ${drink.name} — ${body.en}`,
   };
 }

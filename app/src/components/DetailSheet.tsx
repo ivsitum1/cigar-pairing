@@ -323,11 +323,6 @@ function DrinkDetails({ drink }: { drink: Drink }) {
           {lx(drink.notes)}
         </p>
       )}
-      {drink.cigarHint && (
-        <p className="mt-2 rounded-lg border border-zlato/25 bg-zlato/10 px-3 py-2 text-sm text-zlato-2">
-          🚬 {lx(drink.cigarHint)}
-        </p>
-      )}
       <BuyLink href={buy.href} label={buy.label} />
     </>
   );

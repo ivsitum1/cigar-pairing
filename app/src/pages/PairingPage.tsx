@@ -3,7 +3,6 @@ import type { Cigar, Drink, DrinkCategory, Market, PairingResult, Vitola } from 
 import { ALL_DRINKS, CIGARS, cigarById, cigarLinkForMarket, cigarPriceForMarket, formatPrice } from "../data";
 import { pairCigarsForDrink, pairDrinksForCigar } from "../engine/pairing";
 import { curatedPairingOpinion } from "../engine/curatedOpinion";
-import { WEIGHTS } from "../engine/rules";
 import { useI18n, STYLE_LABELS, type StringKey } from "../i18n";
 import { Chip, Meter, ScoreBand, SearchInput, SectionTitle } from "../components/ui";
 import { getItemState, useCollection } from "../store/collection";
@@ -542,10 +541,12 @@ function ResultCard({
   const [open, setOpen] = useState(false);
   const positive = result.reasons.filter((r) => r.score > 0);
   const negative = result.reasons.filter((r) => r.score < 0);
-  const pairingOpinion =
-    result.score >= WEIGHTS.curatedHintMinScore
-      ? curatedPairingOpinion(cigar, drink, result.reasons, result.score)
-      : null;
+  const pairingOpinion = curatedPairingOpinion(
+    cigar,
+    drink,
+    result.reasons,
+    result.score,
+  );
   return (
     <div className="rounded-xl border border-dim/15 bg-cedar p-3">
       <div className="flex items-center gap-3">
