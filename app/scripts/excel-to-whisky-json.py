@@ -16,7 +16,6 @@ import openpyxl
 from whisky_shared import (
     additive_status,
     catalog_index,
-    cigar_hint_for_style,
     detect_expression_type,
     detect_style_region,
     extract_abv,
@@ -124,10 +123,8 @@ def extract_whiskies(wb) -> list[dict]:
                 best_match, best_score = sr, overlap
         if best_match and best_score >= 2:
             serving = dict(best_match["serving"])
-            cigar_hint = best_match["cigarHint"]
         else:
             serving = serving_for_style(style, abv, expr)
-            cigar_hint = cigar_hint_for_style(style)
 
         cat = find_best_catalog_match(str(name), catalog)
         price_eur = parse_price_eur(price_raw)
@@ -161,7 +158,7 @@ def extract_whiskies(wb) -> list[dict]:
             "status": str(row[8]).strip() if row[8] and str(row[8]).strip() not in ("-", "") else None,
             "pairable": is_pairable(expr, style, quality_f),
             "serving": serving,
-            "cigarHint": cigar_hint,
+            "cigarHint": None,
             "priceUrl": price_url,
             "notes": {"hr": comment, "en": ""},
         })

@@ -13,7 +13,7 @@ export const WEIGHTS = {
   strengthPowerMatch: 8, // overproof/dim pice + jaka cigara
   strengthPowerMismatch: 10, // overproof pice + blaga cigara (kazna)
   qualityNudge: 2, // * (qualityScore - 7)
-  curatedHintMinScore: 40,
+  curatedHintMinScore: 80,
 };
 
 // cigar tag -> komplementarni tagovi u picu

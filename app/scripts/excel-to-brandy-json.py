@@ -13,7 +13,6 @@ from pathlib import Path
 import openpyxl
 
 from brandy_shared import (
-    cigar_hint_for_style,
     detect_age_tier,
     detect_category_type,
     detect_style_region,
@@ -145,10 +144,8 @@ def extract_brandies(wb, seeds: list[dict]) -> list[dict]:
                 best_match, best_score = sr, overlap
         if best_match and best_score >= 2:
             serving = dict(best_match["serving"])
-            cigar_hint = best_match["cigarHint"]
         else:
             serving = serving_for_style(style, abv, category)
-            cigar_hint = cigar_hint_for_style(style)
 
         cat = find_best_catalog_match(name_str, catalog)
         price_eur = parse_price_eur(price_raw)
@@ -185,7 +182,7 @@ def extract_brandies(wb, seeds: list[dict]) -> list[dict]:
             "status": str(row[8]).strip() if row[8] and str(row[8]).strip() not in ("-", "") else None,
             "pairable": is_pairable(category, style, quality_f),
             "serving": serving,
-            "cigarHint": cigar_hint,
+            "cigarHint": None,
             "priceUrl": price_url,
             "notes": {"hr": hr_note, "en": seed_notes.get("en", "")},
         })

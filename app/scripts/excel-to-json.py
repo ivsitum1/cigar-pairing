@@ -251,12 +251,10 @@ def extract_rums(wb):
         matched = best_match if best_score >= 2 else None
 
         serving = serving_for(style, additive)
-        cigar_hint = None
         if matched:
             for k, v in matched["serving"].items():
                 if v is not None:
                     serving[k if k != "best" else "best"] = v
-            cigar_hint = matched["cigarHint"]
 
         rums.append({
             "id": "rum-" + slugify(str(name)),
@@ -276,7 +274,7 @@ def extract_rums(wb):
             "status": (str(row[7]).strip() if row[7] and str(row[7]).strip() not in ("-", "") else None),
             "pairable": style not in NON_PAIRABLE and float(quality) >= 4,
             "serving": serving,
-            "cigarHint": polish(cigar_hint) if cigar_hint else None,
+            "cigarHint": None,
             "priceUrl": find_catalog_url(str(name), catalog),
             "notes": {"hr": polish(comment), "en": ""},
         })

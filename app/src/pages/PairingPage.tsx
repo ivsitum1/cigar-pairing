@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import type { Cigar, Drink, DrinkCategory, Market, PairingResult, Vitola } from "../types";
 import { ALL_DRINKS, CIGARS, cigarById, cigarLinkForMarket, cigarPriceForMarket, formatPrice } from "../data";
 import { pairCigarsForDrink, pairDrinksForCigar } from "../engine/pairing";
+import { curatedPairingOpinion } from "../engine/curatedOpinion";
 import { WEIGHTS } from "../engine/rules";
 import { useI18n, STYLE_LABELS, type StringKey } from "../i18n";
 import { Chip, Meter, ScoreBand, SearchInput, SectionTitle } from "../components/ui";
@@ -414,11 +415,12 @@ export function PairingPage() {
                   {result ? (
                     <ResultCard
                       result={result}
+                      cigar={selectedCigar}
+                      drink={result.item}
                       title={result.item.name}
                       sub={`${t(`cat.${category}` as StringKey)} · ${lx(STYLE_LABELS[result.item.style]) || result.item.style}`}
                       price={formatPrice(result.item.priceEUR)}
                       priceUrl={result.item.priceUrl}
-                      excelHint={result.item.cigarHint}
                       onOpen={() => setDetail({ kind: "drink", item: result.item })}
                     />
                   ) : (
@@ -474,12 +476,13 @@ export function PairingPage() {
                   <ResultCard
                     key={r.item.id}
                     result={r}
+                    cigar={r.item}
+                    drink={selectedDrink}
                     title={`${r.item.brand} ${r.item.line}`}
                     sub={r.item.wrapper}
                     price={priceStr}
                     priceUrl={cigarLinkForMarket(r.item, market)}
                     vitolas={r.item.vitolas}
-                    excelHint={null}
                     onOpen={() => setDetail({ kind: "cigar", item: r.item })}
                   />
                 );
@@ -514,29 +517,35 @@ function PickRow({
   );
 }
 
-function ResultCard<T>({
+function ResultCard({
   result,
+  cigar,
+  drink,
   title,
   sub,
   price,
   priceUrl,
   vitolas,
-  excelHint,
   onOpen,
 }: {
-  result: PairingResult<T>;
+  result: PairingResult<Cigar> | PairingResult<Drink>;
+  cigar: Cigar;
+  drink: Drink;
   title: string;
   sub: string;
   price: string;
   priceUrl?: string | null;
   vitolas?: import("../types").Vitola[];
-  excelHint: import("../types").LocalizedText | null | undefined;
   onOpen: () => void;
 }) {
   const { t, lx } = useI18n();
   const [open, setOpen] = useState(false);
   const positive = result.reasons.filter((r) => r.score > 0);
   const negative = result.reasons.filter((r) => r.score < 0);
+  const pairingOpinion =
+    result.score >= WEIGHTS.curatedHintMinScore
+      ? curatedPairingOpinion(cigar, drink, result.reasons)
+      : null;
   return (
     <div className="rounded-xl border border-dim/15 bg-cedar p-3">
       <div className="flex items-center gap-3">
@@ -593,9 +602,9 @@ function ResultCard<T>({
           ))}
         </div>
       )}
-      {excelHint && result.score >= WEIGHTS.curatedHintMinScore && (
+      {pairingOpinion && (
         <div className="mt-2 rounded-md border border-zlato/25 bg-zlato/10 px-2.5 py-1.5 text-xs text-zlato-2">
-          ★ {t("pair.excelHint")}: {lx(excelHint)}
+          ★ {t("pair.excelHint")}: {lx(pairingOpinion)}
         </div>
       )}
       {open && (
