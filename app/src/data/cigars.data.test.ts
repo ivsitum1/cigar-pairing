@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
 import cigarsData from "./cigars.json";
-import { CIGARS } from "./index";
+import { CIGARS, cigarLinkForMarket, cigarPriceForMarket } from "./index";
 import type { Cigar } from "../types";
 
 describe("cigars.json integrity", () => {
@@ -107,5 +107,36 @@ describe("cigars.json integrity", () => {
     expect(serieG).toBeDefined();
     expect(serieG!.line).toBe("Serie G");
     expect(serieG!.vitola.toLowerCase()).toBe("special g");
+  });
+
+  it("Arturo Fuente Gran Reserva — zadana vitola, ~12 €, Cuban Corona na Humidoru", () => {
+    const gr = CIGARS.find((c) => c.id === "cig-arturo-fuente-gran-reserva");
+    expect(gr).toBeDefined();
+    const mp = cigarPriceForMarket(gr!, "HR");
+    expect(mp.price).toBeGreaterThanOrEqual(12);
+    expect(mp.price).toBeLessThanOrEqual(13);
+    const link = cigarLinkForMarket(gr!, "HR");
+    expect(link).toContain("arturo-fuente-cuban-corona");
+    expect(link).toContain("humidor.hr");
+    expect(link).not.toContain("cubanitos");
+    expect(gr!.priceUrl).toContain("arturo-fuente-cuban-corona");
+  });
+
+  it("zadana vitola priceUrl nije najjeftinija vitola kad se razlikuju", () => {
+    const mismatches: string[] = [];
+    for (const c of CIGARS) {
+      const priced = (c.vitolas ?? []).filter((v) => v.priceEUR != null);
+      if (priced.length < 2 || !c.priceUrl) continue;
+      const cheapest = Math.min(...priced.map((v) => v.priceEUR as number));
+      if (c.priceEUR != null && c.priceEUR > cheapest + 0.5) continue;
+      const mp = cigarPriceForMarket(c, "HR");
+      if (mp.price != null && mp.price <= cheapest + 0.5 && priced.some((v) => (v.priceEUR as number) > cheapest + 2)) {
+        const defaultNamed = c.vitolas?.find((v) => v.name === c.vitola || v.name === c.line);
+        if (defaultNamed && (defaultNamed.priceEUR as number) > cheapest + 2) {
+          mismatches.push(c.id);
+        }
+      }
+    }
+    expect(mismatches).toEqual([]);
   });
 });

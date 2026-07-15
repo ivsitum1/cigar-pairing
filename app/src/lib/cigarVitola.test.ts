@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { applyVitola, needsVitolaPick, uniqueVitolas } from "./cigarVitola";
+import { applyVitola, needsVitolaPick, resolveDefaultVitola, uniqueVitolas } from "./cigarVitola";
 import type { Cigar } from "../types";
 
 const serieO: Cigar = {
@@ -46,5 +46,21 @@ describe("cigarVitola", () => {
     expect(applied.vitola).toBe("Tubos");
     expect(applied.priceEUR).toBe(13.4);
     expect(applied.format).toBe("50 x 152mm");
+  });
+
+  it("resolveDefaultVitola preferira vitolu istog imena kao linija", () => {
+    const cigar: Cigar = {
+      ...serieO,
+      line: "Gran Reserva",
+      vitola: "Corona",
+      vitolas: [
+        { name: "Cubanitos", format: "—", smokeTimeMin: 30, priceEUR: 5, url: "https://shop/cubanitos" },
+        { name: "Gran Reserva", format: "45 x 133mm", smokeTimeMin: 50, priceEUR: 12.3, url: "https://humidor.hr/hr/proizvod/cuban-corona" },
+        { name: "Corona", format: "—", smokeTimeMin: 45, priceEUR: 12.3, url: "https://havana/cuban-corona" },
+      ],
+    };
+    const picked = resolveDefaultVitola(cigar);
+    expect(picked?.name).toBe("Gran Reserva");
+    expect(picked?.url).toContain("humidor.hr");
   });
 });

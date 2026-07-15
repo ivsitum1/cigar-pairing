@@ -379,22 +379,63 @@ def upsert_vitola(cigar: dict, vitola_entry: dict) -> None:
     vitolas.append(vitola_entry)
 
 
+def pick_default_vitola(cigar: dict) -> dict | None:
+    vitolas = cigar.get("vitolas") or []
+    if not vitolas:
+        return None
+    if len(vitolas) == 1:
+        return vitolas[0]
+
+    line = norm(cigar.get("line", ""))
+    for v in vitolas:
+        if norm(v.get("name", "")) == line:
+            return v
+
+    target = norm(cigar.get("vitola", ""))
+    for v in vitolas:
+        if norm(v.get("name", "")) == target:
+            return v
+
+    for v in vitolas:
+        name = norm(v.get("name", ""))
+        if line in name or name in line:
+            return v
+
+    product = [v for v in vitolas if v.get("url") and "?s=" not in v["url"]]
+    priced = [v for v in product if v.get("priceEUR") is not None]
+    if priced:
+        humidor = [v for v in priced if "humidor.hr" in (v.get("url") or "")]
+        return humidor[0] if humidor else priced[0]
+    if product:
+        humidor = [v for v in product if "humidor.hr" in (v.get("url") or "")]
+        return humidor[0] if humidor else product[0]
+    return vitolas[0]
+
+
 def finalize_cigar(cigar: dict) -> None:
     vitolas = cigar.get("vitolas") or []
     if not vitolas:
         return
     vitolas.sort(key=lambda v: v.get("smokeTimeMin") or 999)
-    priced = [v for v in vitolas if v.get("priceEUR")]
-    if priced:
-        cheapest = min(priced, key=lambda v: v["priceEUR"])
-        cigar["priceEUR"] = cheapest["priceEUR"]
+    default = pick_default_vitola(cigar)
+    if default:
+        if default.get("priceEUR") is not None:
+            cigar["priceEUR"] = default["priceEUR"]
+            cigar["priceApprox"] = False
+        if default.get("url"):
+            cigar["priceUrl"] = default["url"]
+    elif any(v.get("priceEUR") for v in vitolas):
+        priced = [v for v in vitolas if v.get("priceEUR")]
+        fallback = min(priced, key=lambda v: v["priceEUR"])
+        cigar["priceEUR"] = fallback["priceEUR"]
         cigar["priceApprox"] = False
-        cigar["priceUrl"] = cheapest.get("url") or cigar.get("priceUrl")
+        cigar["priceUrl"] = fallback.get("url") or cigar.get("priceUrl")
     mid = vitolas[len(vitolas) // 2]
-    cigar["vitola"] = mid["name"]
-    if mid.get("format") and mid["format"] != "—":
-        cigar["format"] = mid["format"]
-    cigar["smokeTimeMin"] = mid.get("smokeTimeMin") or cigar.get("smokeTimeMin", 45)
+    cigar["vitola"] = default["name"] if default else mid["name"]
+    ref = default or mid
+    if ref.get("format") and ref["format"] != "—":
+        cigar["format"] = ref["format"]
+    cigar["smokeTimeMin"] = ref.get("smokeTimeMin") or cigar.get("smokeTimeMin", 45)
     if "Havana Shop" not in cigar.get("availabilityHR", []):
         cigar.setdefault("availabilityHR", []).append("Havana Shop")
     if "The Humidor" not in cigar.get("availabilityHR", []):

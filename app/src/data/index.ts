@@ -8,6 +8,7 @@ import coffees from "./coffees.json";
 import cigarsJson from "./cigars.json";
 import shoppingJson from "./shopping.json";
 import brandsJson from "./brands.json";
+import { resolveDefaultVitola } from "../lib/cigarVitola";
 
 export const DRINKS: Record<DrinkCategory, Drink[]> = {
   rum: rums as unknown as Drink[],
@@ -110,8 +111,10 @@ export const ALL_BRANDS: string[] = [
 export function cigarMarketLinks(c: Cigar): { market: string; url: string }[] {
   const q = encodeURIComponent(`${c.brand} ${c.line}`);
   const links: { market: string; url: string }[] = [];
-  if (c.markets.includes("HR") && c.priceUrl) {
-    links.push({ market: "HR", url: c.priceUrl });
+  const defaultVitola = resolveDefaultVitola(c);
+  const hrUrl = defaultVitola?.url ?? c.priceUrl;
+  if (c.markets.includes("HR") && hrUrl) {
+    links.push({ market: "HR", url: hrUrl });
   }
   if (c.markets.includes("EU")) {
     links.push({ market: "EU", url: `https://www.cigarworld.de/search?q=${q}` });
@@ -143,6 +146,18 @@ export function cigarPriceForMarket(
   market: string,
 ): { price: number | null; fromMany: boolean } {
   if (market !== "HR") return { price: null, fromMany: false };
+
+  const defaultVitola = resolveDefaultVitola(c);
+  if (defaultVitola?.priceEUR != null) {
+    const priced = (c.vitolas ?? []).filter((v) => v.priceEUR != null);
+    const min = priced.length ? Math.min(...priced.map((v) => v.priceEUR as number)) : defaultVitola.priceEUR;
+    const max = priced.length ? Math.max(...priced.map((v) => v.priceEUR as number)) : defaultVitola.priceEUR;
+    return {
+      price: defaultVitola.priceEUR,
+      fromMany: priced.length > 1 && max - min > 0.01,
+    };
+  }
+
   const priced = (c.vitolas ?? []).filter((v) => v.priceEUR != null);
   if (priced.length === 0) {
     return { price: c.priceEUR ?? null, fromMany: false };
