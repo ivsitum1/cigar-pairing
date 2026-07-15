@@ -49,7 +49,10 @@ export const BUCKETS: Partial<Record<DrinkCategory, StyleBucket[]>> = {
   ],
 };
 
-const price = (d: Drink): number | null => d.priceEUR?.min ?? null;
+// za rangiranje koristimo SREDINU raspona — kombinirani zapisi (min jeftine
+// boce + ocjena skupe) inace nepravedno pobjedjuju sve ostale
+const price = (d: Drink): number | null =>
+  d.priceEUR ? (d.priceEUR.min + d.priceEUR.max) / 2 : null;
 
 const byQuality = (a: Drink, b: Drink) =>
   (b.qualityScore ?? 0) - (a.qualityScore ?? 0) ||

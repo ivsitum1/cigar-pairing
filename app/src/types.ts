@@ -37,7 +37,7 @@ export interface Drink {
   sweetness: number; // 1-5
   flavorTags: string[];
   additiveStatus?: string;
-  additiveDetail?: string;
+  additiveDetail?: LocalizedText;
   additiveSource?: string;
   qualityScore: number | null;
   priceEUR: PriceRange | null;
@@ -46,7 +46,7 @@ export interface Drink {
   status?: string | null; // META / IMAS / PROBAO iz Excela
   pairable: boolean;
   serving: Serving;
-  cigarHint?: string | null;
+  cigarHint?: LocalizedText | null;
   priceUrl?: string | null; // izvor cijene / gdje kupiti
   notes: LocalizedText;
 }

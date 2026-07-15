@@ -13,7 +13,10 @@
    "vanilija"
   ],
   "additiveStatus": "clean",
-  "additiveDetail": "Cist",
+  "additiveDetail": {
+   "hr": "Cist",
+   "en": "Clean"
+  },
   "additiveSource": "Dekl. (R.Seale anti-aditiv)",
   "qualityScore": 9.5,
   "priceEUR": {
@@ -31,7 +34,10 @@
    "cola": 0,
    "best": "Cisto"
   },
-  "cigarHint": "Srednja-jaka, Habano wrapper",
+  "cigarHint": {
+   "hr": "Srednja-jaka, Habano wrapper",
+   "en": "Medium-strong, Habano wrapper"
+  },
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/foursquare-10-yo-detente-single-blended-rum-51-vol-07l",
   "notes": {
    "hr": "Referentna točka Barbadosa — destilerija deklarira bez aditiva. Suho voće i hrast; odličan i uz cigaru.",
@@ -53,7 +59,10 @@
    "overproof"
   ],
   "additiveStatus": "clean",
-  "additiveDetail": "Cist",
+  "additiveDetail": {
+   "hr": "Cist",
+   "en": "Clean"
+  },
   "additiveSource": "Dekl. (R.Seale)",
   "qualityScore": 9.5,
   "priceEUR": {
@@ -71,7 +80,10 @@
    "cola": 0,
    "best": "Cisto"
   },
-  "cigarHint": "Srednja-jaka, Habano wrapper",
+  "cigarHint": {
+   "hr": "Srednja-jaka, Habano wrapper",
+   "en": "Medium-strong, Habano wrapper"
+  },
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/foursquare-14-yo-sovereignty-single-blended-rum-62-vol-07l",
   "notes": {
    "hr": "Vrh ECS serije, cask strength, bez aditiva (deklaracija destilerije).",
@@ -92,7 +104,10 @@
    "citrus"
   ],
   "additiveStatus": "clean",
-  "additiveDetail": "Cist/vrlo nizak",
+  "additiveDetail": {
+   "hr": "Cist/vrlo nizak",
+   "en": "Clean / very low"
+  },
   "additiveSource": "Proizvodjac dekl.",
   "qualityScore": 9.0,
   "priceEUR": {
@@ -114,7 +129,7 @@
   "priceUrl": null,
   "notes": {
    "hr": "Kompleksan vrh ponude",
-   "en": ""
+   "en": "A complex top-of-the-range pick"
   }
  },
  {
@@ -131,7 +146,10 @@
    "vanilija"
   ],
   "additiveStatus": "clean",
-  "additiveDetail": "Cist",
+  "additiveDetail": {
+   "hr": "Cist",
+   "en": "Clean"
+  },
   "additiveSource": "Dekl. (R.Seale)",
   "qualityScore": 9.0,
   "priceEUR": {
@@ -153,7 +171,7 @@
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/foursquare-10-yo-detente-single-blended-rum-51-vol-07l",
   "notes": {
    "hr": "ECS, single blended, vrhunski",
-   "en": ""
+   "en": "ECS, single blended, outstanding"
   }
  },
  {
@@ -170,7 +188,10 @@
    "vanilija"
   ],
   "additiveStatus": "clean",
-  "additiveDetail": "Cist",
+  "additiveDetail": {
+   "hr": "Cist",
+   "en": "Clean"
+  },
   "additiveSource": "Dekl. (R.Seale)",
   "qualityScore": 9.0,
   "priceEUR": null,
@@ -185,11 +206,14 @@
    "cola": 0,
    "best": "Cisto"
   },
-  "cigarHint": "Srednja-jaka, Habano",
+  "cigarHint": {
+   "hr": "Srednja-jaka, Habano",
+   "en": "Medium-strong, Habano"
+  },
   "priceUrl": null,
   "notes": {
    "hr": "ECS ekspresije, hvaljene za cigare",
-   "en": ""
+   "en": "ECS expressions, praised alongside cigars"
   }
  },
  {
@@ -206,7 +230,10 @@
    "hrast"
   ],
   "additiveStatus": "clean",
-  "additiveDetail": "Cist",
+  "additiveDetail": {
+   "hr": "Cist",
+   "en": "Clean"
+  },
   "additiveSource": "Pravilo regije + dekl. (Jamajka)",
   "qualityScore": 9.0,
   "priceEUR": {
@@ -228,7 +255,7 @@
   "priceUrl": null,
   "notes": {
    "hr": "Visoki esteri, funk, nosi najjacu cigaru",
-   "en": ""
+   "en": "High esters and funk — carries the strongest cigar"
   }
  },
  {
@@ -246,7 +273,10 @@
    "overproof"
   ],
   "additiveStatus": "clean",
-  "additiveDetail": "Cist",
+  "additiveDetail": {
+   "hr": "Cist",
+   "en": "Clean"
+  },
   "additiveSource": "Pravilo regije",
   "qualityScore": 9.0,
   "priceEUR": {
@@ -268,7 +298,7 @@
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/hampden-hlcf-classic-estate-pure-single-jamaican-rum-60-vol-07l-u-poklon-kutiji",
   "notes": {
    "hr": "Visoki esteri overproof, snažna cigara",
-   "en": ""
+   "en": "High-ester overproof — calls for a strong cigar"
   }
  },
  {
@@ -285,7 +315,10 @@
    "citrus"
   ],
   "additiveStatus": "clean",
-  "additiveDetail": "Cist",
+  "additiveDetail": {
+   "hr": "Cist",
+   "en": "Clean"
+  },
   "additiveSource": "Proizvodjac dekl.",
   "qualityScore": 9.0,
   "priceEUR": {
@@ -303,11 +336,14 @@
    "cola": 0,
    "best": "Cisto / kap vode"
   },
-  "cigarHint": "Srednja, suha",
+  "cigarHint": {
+   "hr": "Srednja, suha",
+   "en": "Medium and dry"
+  },
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/havana-club-gran-reserva-anejo-15-anos-40-vol-07l-u-poklon-kutiji",
   "notes": {
    "hr": "Vrhunski limited; kolekcionarska cijena",
-   "en": ""
+   "en": "A superb limited release; collector pricing"
   }
  },
  {
@@ -324,7 +360,10 @@
    "vanilija"
   ],
   "additiveStatus": "clean",
-  "additiveDetail": "Cist",
+  "additiveDetail": {
+   "hr": "Cist",
+   "en": "Clean"
+  },
   "additiveSource": "Dekl.",
   "qualityScore": 9.0,
   "priceEUR": {
@@ -342,11 +381,14 @@
    "cola": 0,
    "best": "Cisto / kap vode"
   },
-  "cigarHint": "Srednja, elegantna",
+  "cigarHint": {
+   "hr": "Srednja, elegantna",
+   "en": "Medium and elegant"
+  },
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/mount-gay-1703-master-select-43-vol-07-l-u-pokon-kutiji",
   "notes": {
    "hr": "1703 vrh Mount Gay linije",
-   "en": ""
+   "en": "1703, the top of the Mount Gay range"
   }
  },
  {
@@ -363,7 +405,10 @@
    "hrast"
   ],
   "additiveStatus": "clean",
-  "additiveDetail": "Cist/vrlo nizak",
+  "additiveDetail": {
+   "hr": "Cist/vrlo nizak",
+   "en": "Clean / very low"
+  },
   "additiveSource": "Procjena (nije lab/hydro)",
   "qualityScore": 8.5,
   "priceEUR": null,
@@ -378,11 +423,14 @@
    "cola": 0,
    "best": "Cisto / kap vode"
   },
-  "cigarHint": "Laganija-srednja, Connecticut - vanilija/duhan",
+  "cigarHint": {
+   "hr": "Laganija-srednja, Connecticut - vanilija/duhan",
+   "en": "Light-to-medium, Connecticut — vanilla/tobacco"
+  },
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/admiral-rodney-hms-formidable-rare-saint-lucia-rum-40-vol-07l-u-poklon-kutiji",
   "notes": {
    "hr": "English-style, vanilija/duhan, ZA cigare",
-   "en": ""
+   "en": "English style, vanilla and tobacco — made for cigars"
   }
  },
  {
@@ -399,7 +447,10 @@
    "hrast"
   ],
   "additiveStatus": "clean",
-  "additiveDetail": "Cist",
+  "additiveDetail": {
+   "hr": "Cist",
+   "en": "Clean"
+  },
   "additiveSource": "Pravilo regije",
   "qualityScore": 8.5,
   "priceEUR": {
@@ -421,7 +472,7 @@
   "priceUrl": "https://ecuga.com/katalog/rum",
   "notes": {
    "hr": "Stariji Appleton, kompleksan",
-   "en": ""
+   "en": "An older Appleton, complex"
   }
  },
  {
@@ -438,7 +489,10 @@
    "hrast"
   ],
   "additiveStatus": "clean",
-  "additiveDetail": "Cist",
+  "additiveDetail": {
+   "hr": "Cist",
+   "en": "Clean"
+  },
   "additiveSource": "Pravilo regije",
   "qualityScore": 8.5,
   "priceEUR": {
@@ -460,7 +514,7 @@
   "priceUrl": null,
   "notes": {
    "hr": "Vrhunski, kompleksan (skup)",
-   "en": ""
+   "en": "Outstanding and complex (expensive)"
   }
  },
  {
@@ -477,7 +531,10 @@
    "hrast"
   ],
   "additiveStatus": "clean",
-  "additiveDetail": "Cist",
+  "additiveDetail": {
+   "hr": "Cist",
+   "en": "Clean"
+  },
   "additiveSource": "Dekl./regija",
   "qualityScore": 8.5,
   "priceEUR": {
@@ -499,7 +556,7 @@
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/chairmans-reserve-masters-selection-coffey-still-rum-462-vol-07l-u-poklon-kutiji",
   "notes": {
    "hr": "Vrhunski Chairman's, kompleksan",
-   "en": ""
+   "en": "Top-tier Chairman's, complex"
   }
  },
  {
@@ -516,7 +573,10 @@
    "citrus"
   ],
   "additiveStatus": "clean",
-  "additiveDetail": "Bez aditiva (AOC)",
+  "additiveDetail": {
+   "hr": "Bez aditiva (AOC)",
+   "en": "No additives (AOC)"
+  },
   "additiveSource": "AOC zakon (zabranjeni aditivi)",
   "qualityScore": 8.5,
   "priceEUR": {
@@ -534,11 +594,14 @@
    "cola": 0,
    "best": "Cisto / Ti' Punch"
   },
-  "cigarHint": "Laganija, Connecticut shade",
+  "cigarHint": {
+   "hr": "Laganija, Connecticut shade",
+   "en": "Lighter, Connecticut shade"
+  },
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/clement-rhum-agricole-ambre-40-vol-07l",
   "notes": {
    "hr": "Travnato; laganija cigara/Connecticut",
-   "en": ""
+   "en": "Grassy; suits a lighter cigar or Connecticut"
   }
  },
  {
@@ -555,7 +618,10 @@
    "vanilija"
   ],
   "additiveStatus": "clean",
-  "additiveDetail": "Cist",
+  "additiveDetail": {
+   "hr": "Cist",
+   "en": "Clean"
+  },
   "additiveSource": "Dekl. (Foursquare)",
   "qualityScore": 8.5,
   "priceEUR": {
@@ -573,11 +639,14 @@
    "cola": 0,
    "best": "Cisto / kap vode"
   },
-  "cigarHint": "Srednja, Barbados/Dom., natural wrapper",
+  "cigarHint": {
+   "hr": "Srednja, Barbados/Dom., natural wrapper",
+   "en": "Medium; Barbados/Dominican, natural wrapper"
+  },
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/doorlys-12-yo-fine-old-barbados-rum-43-vol-07l-u-poklon-kutiji",
   "notes": {
    "hr": "Stariji Doorly's, isti čist dnk",
-   "en": ""
+   "en": "An older Doorly's, the same clean DNA"
   }
  },
  {
@@ -594,7 +663,10 @@
    "vanilija"
   ],
   "additiveStatus": "clean",
-  "additiveDetail": "Cist",
+  "additiveDetail": {
+   "hr": "Cist",
+   "en": "Clean"
+  },
   "additiveSource": "Dekl. (Foursquare)",
   "qualityScore": 8.5,
   "priceEUR": {
@@ -612,11 +684,14 @@
    "cola": 0,
    "best": "Cisto / kap vode"
   },
-  "cigarHint": "Srednja, Barbados/Dom., natural wrapper",
+  "cigarHint": {
+   "hr": "Srednja, Barbados/Dom., natural wrapper",
+   "en": "Medium; Barbados/Dominican, natural wrapper"
+  },
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/doorlys-xo-fine-old-barbados-rum-43-vol-07l-u-poklon-kutiji",
   "notes": {
    "hr": "Suho-voćni, Foursquare destilat",
-   "en": ""
+   "en": "Dry-fruited, Foursquare distillate"
   }
  },
  {
@@ -633,7 +708,10 @@
    "citrus"
   ],
   "additiveStatus": "clean",
-  "additiveDetail": "Bez dod. secera",
+  "additiveDetail": {
+   "hr": "Bez dod. secera",
+   "en": "No added sugar"
+  },
   "additiveSource": "Proizvodjac dekl. (bez dod.)",
   "qualityScore": 8.5,
   "priceEUR": {
@@ -672,7 +750,10 @@
    "citrus"
   ],
   "additiveStatus": "clean",
-  "additiveDetail": "Cist",
+  "additiveDetail": {
+   "hr": "Cist",
+   "en": "Clean"
+  },
   "additiveSource": "Proizvodjac dekl. (kubanski)",
   "qualityScore": 8.5,
   "priceEUR": {
@@ -690,11 +771,14 @@
    "cola": 0,
    "best": "Cisto / kap vode"
   },
-  "cigarHint": "Srednja, suha",
+  "cigarHint": {
+   "hr": "Srednja, suha",
+   "en": "Medium and dry"
+  },
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/havana-club-gran-reserva-anejo-15-anos-40-vol-07l-u-poklon-kutiji",
   "notes": {
    "hr": "Vrhunski kubanac za cigaru",
-   "en": ""
+   "en": "A top Cuban for a cigar"
   }
  },
  {
@@ -711,7 +795,10 @@
    "citrus"
   ],
   "additiveStatus": "clean",
-  "additiveDetail": "Cist",
+  "additiveDetail": {
+   "hr": "Cist",
+   "en": "Clean"
+  },
   "additiveSource": "Proizvodjac dekl.",
   "qualityScore": 8.5,
   "priceEUR": {
@@ -729,11 +816,14 @@
    "cola": 0,
    "best": "Cisto / kap vode"
   },
-  "cigarHint": "Srednja, suha",
+  "cigarHint": {
+   "hr": "Srednja, suha",
+   "en": "Medium and dry"
+  },
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/havana-club-gran-reserva-anejo-15-anos-40-vol-07l-u-poklon-kutiji",
   "notes": {
    "hr": "Premium kubanac, eksplicitno za cigare",
-   "en": ""
+   "en": "A premium Cuban, made explicitly for cigars"
   }
  },
  {
@@ -750,7 +840,10 @@
    "vanilija"
   ],
   "additiveStatus": "clean",
-  "additiveDetail": "Cist",
+  "additiveDetail": {
+   "hr": "Cist",
+   "en": "Clean"
+  },
   "additiveSource": "Alko lab (nizak/0)",
   "qualityScore": 8.5,
   "priceEUR": {
@@ -768,11 +861,14 @@
    "cola": 0,
    "best": "Cisto / kap vode"
   },
-  "cigarHint": "Srednja, elegantna",
+  "cigarHint": {
+   "hr": "Srednja, elegantna",
+   "en": "Medium and elegant"
+  },
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/mount-gay-1703-xo-triple-cask-blend-43-vol-07-l-u-poklon-kutiji",
   "notes": {
    "hr": "Elegantan, suh sipping",
-   "en": ""
+   "en": "Elegant, dry sipping"
   }
  },
  {
@@ -789,7 +885,10 @@
    "citrus"
   ],
   "additiveStatus": "clean",
-  "additiveDetail": "Bez aditiva (AOC)",
+  "additiveDetail": {
+   "hr": "Bez aditiva (AOC)",
+   "en": "No additives (AOC)"
+  },
   "additiveSource": "AOC zakon",
   "qualityScore": 8.5,
   "priceEUR": {
@@ -807,11 +906,14 @@
    "cola": 0,
    "best": "Cisto / Ti' Punch"
   },
-  "cigarHint": "Laganija, Connecticut shade",
+  "cigarHint": {
+   "hr": "Laganija, Connecticut shade",
+   "en": "Lighter, Connecticut shade"
+  },
   "priceUrl": null,
   "notes": {
    "hr": "Vrhunski agricole, vegetalni/začinski",
-   "en": ""
+   "en": "Top agricole, vegetal and spicy"
   }
  },
  {
@@ -828,7 +930,10 @@
    "citrus"
   ],
   "additiveStatus": "clean",
-  "additiveDetail": "Bez aditiva (AOC)",
+  "additiveDetail": {
+   "hr": "Bez aditiva (AOC)",
+   "en": "No additives (AOC)"
+  },
   "additiveSource": "AOC zakon",
   "qualityScore": 8.5,
   "priceEUR": {
@@ -850,7 +955,7 @@
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/saint-james-xo-rhum-vieux-agricole-43-vol-07l-u-poklon-kutiji",
   "notes": {
    "hr": "Martinique agricole, kompleksan",
-   "en": ""
+   "en": "Martinique agricole, complex"
   }
  },
  {
@@ -867,7 +972,10 @@
    "vanilija"
   ],
   "additiveStatus": "clean",
-  "additiveDetail": "Cist",
+  "additiveDetail": {
+   "hr": "Cist",
+   "en": "Clean"
+  },
   "additiveSource": "Dekl. (Foursquare)",
   "qualityScore": 8.5,
   "priceEUR": null,
@@ -882,11 +990,14 @@
    "cola": 0,
    "best": "Cisto / kap vode"
   },
-  "cigarHint": "Srednja maduro, kao Doorly's",
+  "cigarHint": {
+   "hr": "Srednja maduro, kao Doorly's",
+   "en": "A medium maduro, as with Doorly's"
+  },
   "priceUrl": null,
   "notes": {
    "hr": "Foursquare destilat, kao Doorly's",
-   "en": ""
+   "en": "Foursquare distillate, like Doorly's"
   }
  },
  {
@@ -904,7 +1015,10 @@
    "overproof"
   ],
   "additiveStatus": "clean",
-  "additiveDetail": "Cist",
+  "additiveDetail": {
+   "hr": "Cist",
+   "en": "Clean"
+  },
   "additiveSource": "Pravilo regije",
   "qualityScore": 8.5,
   "priceEUR": {
@@ -922,11 +1036,14 @@
    "cola": 0,
    "best": "Kap vode (otvara estere)"
   },
-  "cigarHint": "Jača, full-bodied, maduro/oscuro",
+  "cigarHint": {
+   "hr": "Jača, full-bodied, maduro/oscuro",
+   "en": "Stronger, full-bodied, maduro/oscuro"
+  },
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/rum-exchange-jamaica-worthy-park-5-yo-pure-single-rum-002-2013-59-vol-07l",
   "notes": {
    "hr": "109 cask strength, izvrstan uz cigaru",
-   "en": ""
+   "en": "The 109 at cask strength — excellent with a cigar"
   }
  },
  {
@@ -943,7 +1060,10 @@
    "hrast"
   ],
   "additiveStatus": "clean",
-  "additiveDetail": "Cist",
+  "additiveDetail": {
+   "hr": "Cist",
+   "en": "Clean"
+  },
   "additiveSource": "Pravilo regije (Jamajka)",
   "qualityScore": 8.5,
   "priceEUR": {
@@ -961,11 +1081,14 @@
    "cola": 0,
    "best": "Kap vode (otvara estere)"
   },
-  "cigarHint": "Jača, full-bodied, maduro/oscuro",
+  "cigarHint": {
+   "hr": "Jača, full-bodied, maduro/oscuro",
+   "en": "Stronger, full-bodied, maduro/oscuro"
+  },
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/rum-exchange-jamaica-worthy-park-5-yo-pure-single-rum-002-2013-59-vol-07l",
   "notes": {
    "hr": "Esterski, glađi od Hampdena",
-   "en": ""
+   "en": "Estery, smoother than Hampden"
   }
  },
  {
@@ -982,7 +1105,10 @@
    "hrast"
   ],
   "additiveStatus": "clean",
-  "additiveDetail": "Cist",
+  "additiveDetail": {
+   "hr": "Cist",
+   "en": "Clean"
+  },
   "additiveSource": "Pravilo regije (Jamajka)",
   "qualityScore": 8.0,
   "priceEUR": {
@@ -1004,7 +1130,7 @@
   "priceUrl": null,
   "notes": {
    "hr": "Naranca, hrast, prženi secer",
-   "en": ""
+   "en": "Orange, oak, toasted sugar"
   }
  },
  {
@@ -1021,7 +1147,10 @@
    "hrast"
   ],
   "additiveStatus": "clean",
-  "additiveDetail": "Cist",
+  "additiveDetail": {
+   "hr": "Cist",
+   "en": "Clean"
+  },
   "additiveSource": "Procjena (nije lab/hydro)",
   "qualityScore": 8.0,
   "priceEUR": {
@@ -1043,7 +1172,7 @@
   "priceUrl": null,
   "notes": {
    "hr": "Kompleksan, suh",
-   "en": ""
+   "en": "Complex and dry"
   }
  },
  {
@@ -1059,7 +1188,10 @@
    "hrast"
   ],
   "additiveStatus": "clean",
-  "additiveDetail": "Cist (bottler)",
+  "additiveDetail": {
+   "hr": "Cist (bottler)",
+   "en": "Clean (bottler)"
+  },
   "additiveSource": "Dekl. (bottler)",
   "qualityScore": 8.0,
   "priceEUR": {
@@ -1081,7 +1213,7 @@
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/compagnie-des-indes-caraibes-rum-40-vol-07l",
   "notes": {
    "hr": "Nezavisni bottler, čisti single/blended",
-   "en": ""
+   "en": "An independent bottler; clean single and blended casks"
   }
  },
  {
@@ -1098,7 +1230,10 @@
    "citrus"
   ],
   "additiveStatus": "clean",
-  "additiveDetail": "Bez aditiva (AOC)",
+  "additiveDetail": {
+   "hr": "Bez aditiva (AOC)",
+   "en": "No additives (AOC)"
+  },
   "additiveSource": "AOC zakon",
   "qualityScore": 8.0,
   "priceEUR": {
@@ -1120,7 +1255,7 @@
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/depaz-rhum-tres-agricole-vieux-vsop-45-vol-07l-u-poklon-kutiji",
   "notes": {
    "hr": "Bogat agricole, vulkansko tlo",
-   "en": ""
+   "en": "A rich agricole from volcanic soil"
   }
  },
  {
@@ -1137,7 +1272,10 @@
    "karamela"
   ],
   "additiveStatus": "light",
-  "additiveDetail": "Blagi dodatak",
+  "additiveDetail": {
+   "hr": "Blagi dodatak",
+   "en": "Light addition"
+  },
   "additiveSource": "Alko/hydro: blagi",
   "qualityScore": 8.0,
   "priceEUR": {
@@ -1155,11 +1293,14 @@
    "cola": 0,
    "best": "On the rocks"
   },
-  "cigarHint": "Srednja-jaka maduro",
+  "cigarHint": {
+   "hr": "Srednja-jaka maduro",
+   "en": "A medium-strong maduro"
+  },
   "priceUrl": null,
   "notes": {
    "hr": "Bogat ali slađe od 12/15",
-   "en": ""
+   "en": "Rich, but sweeter than the 12/15"
   }
  },
  {
@@ -1175,7 +1316,10 @@
    "suho-voce"
   ],
   "additiveStatus": "clean",
-  "additiveDetail": "Cist (dekl. 0)",
+  "additiveDetail": {
+   "hr": "Cist (dekl. 0)",
+   "en": "Clean (declared 0)"
+  },
   "additiveSource": "Proizvodjac dekl. (0)",
   "qualityScore": 8.0,
   "priceEUR": {
@@ -1193,11 +1337,14 @@
    "cola": 0,
    "best": "Cisto / kap vode"
   },
-  "cigarHint": "Srednja suha; Connecticut ili sredni maduro",
+  "cigarHint": {
+   "hr": "Srednja suha; Connecticut ili sredni maduro",
+   "en": "Medium and dry; Connecticut or a medium maduro"
+  },
   "priceUrl": null,
   "notes": {
    "hr": "Suho, whiskey-nalik",
-   "en": ""
+   "en": "Dry, whisky-like"
   }
  },
  {
@@ -1214,7 +1361,10 @@
    "citrus"
   ],
   "additiveStatus": "clean",
-  "additiveDetail": "Bez aditiva (AOC)",
+  "additiveDetail": {
+   "hr": "Bez aditiva (AOC)",
+   "en": "No additives (AOC)"
+  },
   "additiveSource": "AOC zakon",
   "qualityScore": 8.0,
   "priceEUR": {
@@ -1236,7 +1386,7 @@
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/hse-tres-vieux-rhum-agricole-vsop-45-vol-07l-u-poklon-kutiji",
   "notes": {
    "hr": "Agricole, sherry/port finishevi",
-   "en": ""
+   "en": "Agricole with sherry and port finishes"
   }
  },
  {
@@ -1253,7 +1403,10 @@
    "citrus"
   ],
   "additiveStatus": "clean",
-  "additiveDetail": "Cist/vrlo nizak",
+  "additiveDetail": {
+   "hr": "Cist/vrlo nizak",
+   "en": "Clean / very low"
+  },
   "additiveSource": "Alko lab: 4 g/L (bez dod.)",
   "qualityScore": 8.0,
   "priceEUR": {
@@ -1271,11 +1424,14 @@
    "cola": 0,
    "best": "Cisto / kap vode"
   },
-  "cigarHint": "Srednja, suha",
+  "cigarHint": {
+   "hr": "Srednja, suha",
+   "en": "Medium and dry"
+  },
   "priceUrl": null,
   "notes": {
    "hr": "Najbolji value cigar-sipper",
-   "en": ""
+   "en": "The best-value cigar sipper"
   }
  },
  {
@@ -1292,7 +1448,10 @@
    "citrus"
   ],
   "additiveStatus": "clean",
-  "additiveDetail": "Bez aditiva",
+  "additiveDetail": {
+   "hr": "Bez aditiva",
+   "en": "No additives"
+  },
   "additiveSource": "Pravilo regije",
   "qualityScore": 8.0,
   "priceEUR": {
@@ -1314,7 +1473,7 @@
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/karukera-black-edition-alligator-rhum-vieux-agricole-45-vol-1l",
   "notes": {
    "hr": "Guadeloupe agricole, kompleksan",
-   "en": ""
+   "en": "Guadeloupe agricole, complex"
   }
  },
  {
@@ -1330,7 +1489,10 @@
    "vanilija"
   ],
   "additiveStatus": "clean",
-  "additiveDetail": "~Bez dodatka",
+  "additiveDetail": {
+   "hr": "~Bez dodatka",
+   "en": "~No additions"
+  },
   "additiveSource": "Proizvodjac dekl. (~bez dod.)",
   "qualityScore": 8.0,
   "priceEUR": {
@@ -1348,11 +1510,14 @@
    "cola": 0,
    "best": "Cisto / kap vode"
   },
-  "cigarHint": "Srednja maduro",
+  "cigarHint": {
+   "hr": "Srednja maduro",
+   "en": "A medium maduro"
+  },
   "priceUrl": null,
   "notes": {
    "hr": "Suh-voćni, najbolja cijena/kvaliteta",
-   "en": ""
+   "en": "Dry-fruited, the best price-to-quality ratio"
   }
  },
  {
@@ -1368,7 +1533,10 @@
    "vanilija"
   ],
   "additiveStatus": "clean",
-  "additiveDetail": "~Bez dodatka",
+  "additiveDetail": {
+   "hr": "~Bez dodatka",
+   "en": "~No additions"
+  },
   "additiveSource": "Proizvodjac dekl.",
   "qualityScore": 8.0,
   "priceEUR": {
@@ -1386,11 +1554,14 @@
    "cola": 0,
    "best": "Cisto / kap vode"
   },
-  "cigarHint": "Srednja maduro",
+  "cigarHint": {
+   "hr": "Srednja maduro",
+   "en": "A medium maduro"
+  },
   "priceUrl": null,
   "notes": {
    "hr": "Serie Experimental",
-   "en": ""
+   "en": "The Serie Experimental"
   }
  },
  {
@@ -1407,7 +1578,10 @@
    "hrast"
   ],
   "additiveStatus": "clean",
-  "additiveDetail": "Cist",
+  "additiveDetail": {
+   "hr": "Cist",
+   "en": "Clean"
+  },
   "additiveSource": "Pravilo regije",
   "qualityScore": 7.5,
   "priceEUR": {
@@ -1429,7 +1603,7 @@
   "priceUrl": null,
   "notes": {
    "hr": "Pristupacni Appleton, dobar value",
-   "en": ""
+   "en": "The approachable Appleton, good value"
   }
  },
  {
@@ -1445,7 +1619,10 @@
    "hrast"
   ],
   "additiveStatus": "clean",
-  "additiveDetail": "Cist-ish",
+  "additiveDetail": {
+   "hr": "Cist-ish",
+   "en": "Essentially clean"
+  },
   "additiveSource": "Procjena",
   "qualityScore": 7.5,
   "priceEUR": {
@@ -1467,7 +1644,7 @@
   "priceUrl": null,
   "notes": {
    "hr": "Viseregijski blend, suh-ish",
-   "en": ""
+   "en": "A multi-region blend, on the dry side"
   }
  },
  {
@@ -1484,7 +1661,10 @@
    "hrast"
   ],
   "additiveStatus": "light",
-  "additiveDetail": "Blaga slatkoca",
+  "additiveDetail": {
+   "hr": "Blaga slatkoca",
+   "en": "Light sweetness"
+  },
   "additiveSource": "Hydrometer: blaga slatkoca (solera)",
   "qualityScore": 7.5,
   "priceEUR": {
@@ -1502,11 +1682,14 @@
    "cola": 0,
    "best": "On the rocks / cisto"
   },
-  "cigarHint": "Srednja-jaka maduro, zemljana",
+  "cigarHint": {
+   "hr": "Srednja-jaka maduro, zemljana",
+   "en": "A medium-strong, earthy maduro"
+  },
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/botran-anejo-18-sistema-solera-1893-40-vol-07-l",
   "notes": {
    "hr": "Vrlo dobar uz cigaru",
-   "en": ""
+   "en": "Very good with a cigar"
   }
  },
  {
@@ -1522,7 +1705,10 @@
    "vanilija"
   ],
   "additiveStatus": "light",
-  "additiveDetail": "Nizak (sherry)",
+  "additiveDetail": {
+   "hr": "Nizak (sherry)",
+   "en": "Low (sherry)"
+  },
   "additiveSource": "Izvor: vrlo nizak (sherry, malo dosage)",
   "qualityScore": 7.5,
   "priceEUR": {
@@ -1544,7 +1730,7 @@
   "priceUrl": null,
   "notes": {
    "hr": "Suh za DR, double-aged sherry, ZA cigare",
-   "en": ""
+   "en": "Dry for a Dominican, double-aged in sherry — made for cigars"
   }
  },
  {
@@ -1561,7 +1747,10 @@
    "hrast"
   ],
   "additiveStatus": "clean",
-  "additiveDetail": "Cist-ish",
+  "additiveDetail": {
+   "hr": "Cist-ish",
+   "en": "Essentially clean"
+  },
   "additiveSource": "Pravilo regije",
   "qualityScore": 7.5,
   "priceEUR": {
@@ -1583,7 +1772,7 @@
   "priceUrl": null,
   "notes": {
    "hr": "Namjenski za cigare, Global Spirits Masters gold",
-   "en": ""
+   "en": "Purpose-made for cigars; Global Spirits Masters gold"
   }
  },
  {
@@ -1600,7 +1789,10 @@
    "hrast"
   ],
   "additiveStatus": "clean",
-  "additiveDetail": "Cist-ish",
+  "additiveDetail": {
+   "hr": "Cist-ish",
+   "en": "Essentially clean"
+  },
   "additiveSource": "Pravilo regije",
   "qualityScore": 7.5,
   "priceEUR": {
@@ -1622,7 +1814,7 @@
   "priceUrl": null,
   "notes": {
    "hr": "Stariji kompleksan jamajčanac",
-   "en": ""
+   "en": "An older, complex Jamaican"
   }
  },
  {
@@ -1638,7 +1830,10 @@
    "vanilija"
   ],
   "additiveStatus": "clean",
-  "additiveDetail": "Cist-ish",
+  "additiveDetail": {
+   "hr": "Cist-ish",
+   "en": "Essentially clean"
+  },
   "additiveSource": "Hydrometer: nizak",
   "qualityScore": 7.5,
   "priceEUR": null,
@@ -1653,11 +1848,14 @@
    "cola": 0,
    "best": "Cisto / kap vode"
   },
-  "cigarHint": "Srednja, suh-ish",
+  "cigarHint": {
+   "hr": "Srednja, suh-ish",
+   "en": "Medium, dry-leaning"
+  },
   "priceUrl": null,
   "notes": {
    "hr": "Klasik, suh-ish, cijenjen",
-   "en": ""
+   "en": "A classic, dry-leaning and well regarded"
   }
  },
  {
@@ -1674,7 +1872,10 @@
    "karamela"
   ],
   "additiveStatus": "light",
-  "additiveDetail": "Blagi dodatak",
+  "additiveDetail": {
+   "hr": "Blagi dodatak",
+   "en": "Light addition"
+  },
   "additiveSource": "Alko/hydro: blagi dodatak",
   "qualityScore": 7.5,
   "priceEUR": {
@@ -1692,35 +1893,41 @@
    "cola": 0,
    "best": "On the rocks"
   },
-  "cigarHint": "Srednja-jaka maduro",
+  "cigarHint": {
+   "hr": "Srednja-jaka maduro",
+   "en": "A medium-strong maduro"
+  },
   "priceUrl": null,
   "notes": {
    "hr": "Bogat, melasa, tamno voće, sjajan uz cigaru",
-   "en": ""
+   "en": "Rich — molasses and dark fruit; superb with a cigar"
   }
  },
  {
-  "id": "rum-ron-abuelo-12-xv-panama",
+  "id": "rum-ron-abuelo-12",
   "category": "rum",
-  "name": "Ron Abuelo 12 / XV (Panama)",
+  "name": "Ron Abuelo 12 Años",
   "style": "panama",
   "region": "Panama",
   "body": 3,
-  "sweetness": 3,
+  "sweetness": 4,
   "flavorTags": [
    "karamela",
    "vanilija"
   ],
   "additiveStatus": "light",
-  "additiveDetail": "Blagi dodatak (solera)",
-  "additiveSource": "Hydrometer: blagi",
-  "qualityScore": 7.5,
+  "additiveDetail": {
+   "hr": "Dodani secer ~20 g/L (hidrometrija)",
+   "en": "Added sugar ~20 g/L (hydrometer)"
+  },
+  "additiveSource": "Javni hidrometrijski testovi",
+  "qualityScore": 6.5,
   "priceEUR": {
    "min": 32.3,
-   "max": 68.0
+   "max": 32.3
   },
   "shopHR": "ecuga.com",
-  "status": "META",
+  "status": null,
   "pairable": true,
   "serving": {
    "neat": 2,
@@ -1730,11 +1937,58 @@
    "cola": 0,
    "best": "On the rocks / kap vode"
   },
-  "cigarHint": "Srednja maduro - dodaje tijelo cigari",
+  "cigarHint": {
+   "hr": "Srednja maduro - dodaje tijelo cigari",
+   "en": "A medium maduro — adds body to the cigar"
+  },
   "priceUrl": "https://ecuga.com/katalog/rum",
   "notes": {
-   "hr": "Stariji Abuelo, dobar cigar-sipper",
-   "en": ""
+   "hr": "Panamska solera — karamela i vanilija, mekan i sladak. Solidan value sipper, razred ispod El Dorada 15 i Diplomática.",
+   "en": "Panamanian solera — caramel and vanilla, soft and sweet. A solid value sipper, a class below El Dorado 15 and Diplomático."
+  }
+ },
+ {
+  "id": "rum-ron-abuelo-xv",
+  "category": "rum",
+  "name": "Ron Abuelo XV Finish Collection",
+  "style": "panama",
+  "region": "Panama",
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "karamela",
+   "vanilija"
+  ],
+  "additiveStatus": "light",
+  "additiveDetail": {
+   "hr": "Blagi dodatak (solera); finish bacve",
+   "en": "Light addition (solera); finishing casks"
+  },
+  "additiveSource": "Procjena",
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 68.0,
+   "max": 68.0
+  },
+  "shopHR": "ecuga.com",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "neat": 2,
+   "water": 2,
+   "rocks": 3,
+   "highball": 1,
+   "cola": 0,
+   "best": "On the rocks / kap vode"
+  },
+  "cigarHint": {
+   "hr": "Srednja maduro - dodaje tijelo cigari",
+   "en": "A medium maduro — adds body to the cigar"
+  },
+  "priceUrl": "https://ecuga.com/katalog/rum",
+  "notes": {
+   "hr": "XV kolekcija završena u oloroso, napoleon ili tawny bačvama — ozbiljniji, kompleksniji Abuelo.",
+   "en": "The XV collection finished in oloroso, Napoleon or tawny casks — the more serious, complex Abuelo."
   }
  },
  {
@@ -1750,7 +2004,10 @@
    "hrast"
   ],
   "additiveStatus": "clean",
-  "additiveDetail": "Cist-ish",
+  "additiveDetail": {
+   "hr": "Cist-ish",
+   "en": "Essentially clean"
+  },
   "additiveSource": "Procjena",
   "qualityScore": 7.5,
   "priceEUR": {
@@ -1772,7 +2029,7 @@
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/rum-nation-10-yo-barbados-limited-edition-40-vol-07l-u-poklon-kutiji",
   "notes": {
    "hr": "Italijanski bottler, kvalitetne serije",
-   "en": ""
+   "en": "An Italian bottler with quality series"
   }
  },
  {
@@ -1787,7 +2044,10 @@
    "karamela"
   ],
   "additiveStatus": "clean",
-  "additiveDetail": "Cist-ish",
+  "additiveDetail": {
+   "hr": "Cist-ish",
+   "en": "Essentially clean"
+  },
   "additiveSource": "Procjena",
   "qualityScore": 7.5,
   "priceEUR": {
@@ -1809,7 +2069,7 @@
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/savanna-5-yo-traditionnel-reunion-island-rum-43-vol-07l-u-poklon-kutiji",
   "notes": {
    "hr": "Reunion otok, poseban profil",
-   "en": ""
+   "en": "Réunion island, a distinctive profile"
   }
  },
  {
@@ -1827,7 +2087,10 @@
    "overproof"
   ],
   "additiveStatus": "clean",
-  "additiveDetail": "Cist",
+  "additiveDetail": {
+   "hr": "Cist",
+   "en": "Clean"
+  },
   "additiveSource": "Pravilo regije (Jamajka)",
   "qualityScore": 7.5,
   "priceEUR": {
@@ -1845,11 +2108,14 @@
    "cola": 1,
    "best": "Kap vode ILI highball"
   },
-  "cigarHint": "Jaka, robusna; ili koktel",
+  "cigarHint": {
+   "hr": "Jaka, robusna; ili koktel",
+   "en": "Strong and robust; or a cocktail"
+  },
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/smith-cross-traditional-jamaica-rum-57-vol-07l",
   "notes": {
    "hr": "Overproof, snaga+ester, kap vode",
-   "en": ""
+   "en": "Overproof — power and esters; add a drop of water"
   }
  },
  {
@@ -1866,7 +2132,10 @@
    "citrus"
   ],
   "additiveStatus": "clean",
-  "additiveDetail": "Bez aditiva (AOC)",
+  "additiveDetail": {
+   "hr": "Bez aditiva (AOC)",
+   "en": "No additives (AOC)"
+  },
   "additiveSource": "AOC zakon",
   "qualityScore": 7.5,
   "priceEUR": {
@@ -1888,7 +2157,7 @@
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/trois-rivieres-cannes-brulees-rhum-43-vol-07l",
   "notes": {
    "hr": "Pristupacni agricole, dobar value",
-   "en": ""
+   "en": "An approachable agricole, good value"
   }
  },
  {
@@ -1905,7 +2174,10 @@
    "vanilija"
   ],
   "additiveStatus": "clean",
-  "additiveDetail": "Cist",
+  "additiveDetail": {
+   "hr": "Cist",
+   "en": "Clean"
+  },
   "additiveSource": "Dekl. (Foursquare)",
   "qualityScore": 7.5,
   "priceEUR": {
@@ -1927,7 +2199,7 @@
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/veritas-foursquare-white-blended-rum-47-vol-07l",
   "notes": {
    "hr": "Cist bijeli Foursquare/Hampden blend",
-   "en": ""
+   "en": "A clean white Foursquare/Hampden blend"
   }
  },
  {
@@ -1944,7 +2216,10 @@
    "hrast"
   ],
   "additiveStatus": "light",
-  "additiveDetail": "Blagi dodatak",
+  "additiveDetail": {
+   "hr": "Blagi dodatak",
+   "en": "Light addition"
+  },
   "additiveSource": "Procjena",
   "qualityScore": 7.5,
   "priceEUR": {
@@ -1966,7 +2241,7 @@
   "priceUrl": null,
   "notes": {
    "hr": "Panamski solera, kvalitetan",
-   "en": ""
+   "en": "A quality Panamanian solera"
   }
  },
  {
@@ -1982,7 +2257,10 @@
    "hrast"
   ],
   "additiveStatus": "clean",
-  "additiveDetail": "Nizak (reformuliran)",
+  "additiveDetail": {
+   "hr": "Nizak (reformuliran)",
+   "en": "Low (reformulated)"
+  },
   "additiveSource": "Alko: nizak",
   "qualityScore": 7.0,
   "priceEUR": {
@@ -2004,7 +2282,7 @@
   "priceUrl": null,
   "notes": {
    "hr": "1919 suh-ish, dobra vrijednost",
-   "en": ""
+   "en": "The 1919, dry-leaning, good value"
   }
  },
  {
@@ -2021,7 +2299,10 @@
    "zacini"
   ],
   "additiveStatus": "clean",
-  "additiveDetail": "Cist-ish",
+  "additiveDetail": {
+   "hr": "Cist-ish",
+   "en": "Essentially clean"
+  },
   "additiveSource": "Procjena",
   "qualityScore": 7.0,
   "priceEUR": {
@@ -2043,7 +2324,7 @@
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/black-tot-master-blenders-reserve-rum-limited-edition-2022-545-vol-07l-u-poklon-kutiji",
   "notes": {
    "hr": "Navy blend, kompleksan",
-   "en": ""
+   "en": "A complex navy blend"
   }
  },
  {
@@ -2059,7 +2340,10 @@
    "suho-voce"
   ],
   "additiveStatus": "light",
-  "additiveDetail": "Blagi dodatak",
+  "additiveDetail": {
+   "hr": "Blagi dodatak",
+   "en": "Light addition"
+  },
   "additiveSource": "Procjena (nije lab/hydro)",
   "qualityScore": 7.0,
   "priceEUR": {
@@ -2077,11 +2361,14 @@
    "cola": 0,
    "best": "Cisto / kap vode"
   },
-  "cigarHint": "Srednja, blaža",
+  "cigarHint": {
+   "hr": "Srednja, blaža",
+   "en": "Medium, on the milder side"
+  },
   "priceUrl": null,
   "notes": {
    "hr": "Stariji venezuelanac, malo poznat",
-   "en": ""
+   "en": "An older Venezuelan, little known"
   }
  },
  {
@@ -2098,7 +2385,10 @@
    "hrast"
   ],
   "additiveStatus": "light",
-  "additiveDetail": "Blaga slatkoca",
+  "additiveDetail": {
+   "hr": "Blaga slatkoca",
+   "en": "Light sweetness"
+  },
   "additiveSource": "Hydrometer: blaga slatkoca",
   "qualityScore": 7.0,
   "priceEUR": {
@@ -2120,7 +2410,7 @@
   "priceUrl": null,
   "notes": {
    "hr": "Mladi 18",
-   "en": ""
+   "en": "A young 18"
   }
  },
  {
@@ -2137,7 +2427,10 @@
    "hrast"
   ],
   "additiveStatus": "light",
-  "additiveDetail": "Blaga slatkoca",
+  "additiveDetail": {
+   "hr": "Blaga slatkoca",
+   "en": "Light sweetness"
+  },
   "additiveSource": "Procjena (solera)",
   "qualityScore": 7.0,
   "priceEUR": {
@@ -2159,7 +2452,7 @@
   "priceUrl": null,
   "notes": {
    "hr": "Premium Botran",
-   "en": ""
+   "en": "The premium Botran"
   }
  },
  {
@@ -2175,7 +2468,10 @@
    "vanilija"
   ],
   "additiveStatus": "moderate",
-  "additiveDetail": "Umjeren dodatak",
+  "additiveDetail": {
+   "hr": "Umjeren dodatak",
+   "en": "Moderate addition"
+  },
   "additiveSource": "Systembolaget: doslazen",
   "qualityScore": 7.0,
   "priceEUR": {
@@ -2197,7 +2493,7 @@
   "priceUrl": null,
   "notes": {
    "hr": "Slazen ali ozbiljna baza, dobar uz cigaru",
-   "en": ""
+   "en": "Sweetened but with a serious base; good with a cigar"
   }
  },
  {
@@ -2214,7 +2510,10 @@
    "karamela"
   ],
   "additiveStatus": "light",
-  "additiveDetail": "Blagi dodatak",
+  "additiveDetail": {
+   "hr": "Blagi dodatak",
+   "en": "Light addition"
+  },
   "additiveSource": "Alko/hydro: blagi dodatak",
   "qualityScore": 7.0,
   "priceEUR": {
@@ -2232,11 +2531,14 @@
    "cola": 0,
    "best": "On the rocks"
   },
-  "cigarHint": "Srednja-jaka maduro",
+  "cigarHint": {
+   "hr": "Srednja-jaka maduro",
+   "en": "A medium-strong maduro"
+  },
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/el-dorado-12-years-old-gb-40-07-l",
   "notes": {
    "hr": "Bogat, prirodna slatkoca",
-   "en": ""
+   "en": "Rich, with natural sweetness"
   }
  },
  {
@@ -2252,7 +2554,10 @@
    "vanilija"
   ],
   "additiveStatus": "sweetened",
-  "additiveDetail": "Umjereno slazen",
+  "additiveDetail": {
+   "hr": "Umjereno slazen",
+   "en": "Moderately sweetened"
+  },
   "additiveSource": "Procjena (nije lab/hydro)",
   "qualityScore": 7.0,
   "priceEUR": {
@@ -2274,7 +2579,7 @@
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/kirk-and-sweeney-xo-dominican-rum-edicion-limitada-no-1-655-vol-07l-u-poklon-kutiji",
   "notes": {
    "hr": "Gladi profil, dobar uz cigaru",
-   "en": ""
+   "en": "A smoother profile, good with a cigar"
   }
  },
  {
@@ -2290,7 +2595,10 @@
    "vanilija"
   ],
   "additiveStatus": "sweetened",
-  "additiveDetail": "Blago slazen",
+  "additiveDetail": {
+   "hr": "Blago slazen",
+   "en": "Lightly sweetened"
+  },
   "additiveSource": "Procjena (solera)",
   "qualityScore": 7.0,
   "priceEUR": {
@@ -2312,7 +2620,7 @@
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/opthimus-15-anos-solera-oporto-43-vol-07l-u-poklon-kutiji",
   "notes": {
    "hr": "DR solera, port/whisky finishevi",
-   "en": ""
+   "en": "A Dominican solera with port and whisky finishes"
   }
  },
  {
@@ -2328,7 +2636,10 @@
    "suho-voce"
   ],
   "additiveStatus": "clean",
-  "additiveDetail": "Vrlo nisko/0",
+  "additiveDetail": {
+   "hr": "Vrlo nisko/0",
+   "en": "Very low / none"
+  },
   "additiveSource": "Hydrometer: vrlo nizak/0",
   "qualityScore": 7.0,
   "priceEUR": {
@@ -2346,11 +2657,14 @@
    "cola": 0,
    "best": "On the rocks / cisto"
   },
-  "cigarHint": "Srednja, blaža",
+  "cigarHint": {
+   "hr": "Srednja, blaža",
+   "en": "Medium, on the milder side"
+  },
   "priceUrl": null,
   "notes": {
    "hr": "Lagan, suh-ish, value",
-   "en": ""
+   "en": "Light, dry-leaning, good value"
   }
  },
  {
@@ -2367,7 +2681,10 @@
    "vanilija"
   ],
   "additiveStatus": "sweetened",
-  "additiveDetail": "Doslazen (~12-20 g/L)",
+  "additiveDetail": {
+   "hr": "Doslazen (~12-20 g/L)",
+   "en": "Sweetened (~12–20 g/L)"
+  },
   "additiveSource": "Hydrometer: doslazen (~12-20 g/L)",
   "qualityScore": 7.0,
   "priceEUR": {
@@ -2385,17 +2702,20 @@
    "cola": 0,
    "best": "On the rocks / kap vode"
   },
-  "cigarHint": "Srednja maduro, ugodna",
+  "cigarHint": {
+   "hr": "Srednja maduro, ugodna",
+   "en": "A medium, pleasant maduro"
+  },
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/plantation-xo-20th-anniversary-rum-40-vol-07l-u-poklon-kutiji",
   "notes": {
    "hr": "Doslazen (~12-20 g/L) ali ugodan cigar-sipper",
-   "en": ""
+   "en": "Sweetened (~12–20 g/L) yet a pleasant cigar sipper"
   }
  },
  {
-  "id": "rum-ron-abuelo-anejo-centuria",
+  "id": "rum-ron-abuelo-anejo",
   "category": "rum",
-  "name": "Ron Abuelo Anejo / Centuria",
+  "name": "Ron Abuelo Añejo",
   "style": "panama",
   "region": "Panama",
   "body": 3,
@@ -2405,11 +2725,58 @@
    "vanilija"
   ],
   "additiveStatus": "light",
-  "additiveDetail": "Blagi dodatak (solera)",
+  "additiveDetail": {
+   "hr": "Blagi dodatak (solera)",
+   "en": "Light addition (solera)"
+  },
   "additiveSource": "Procjena (nije lab/hydro)",
-  "qualityScore": 7.0,
+  "qualityScore": 5.5,
   "priceEUR": {
    "min": 16.15,
+   "max": 16.15
+  },
+  "shopHR": "ecuga.com",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "neat": 2,
+   "water": 2,
+   "rocks": 3,
+   "highball": 1,
+   "cola": 0,
+   "best": "On the rocks / kap vode"
+  },
+  "cigarHint": {
+   "hr": "Srednja maduro - dodaje tijelo cigari",
+   "en": "A medium maduro — adds body to the cigar"
+  },
+  "priceUrl": "https://ecuga.com/katalog/rum",
+  "notes": {
+   "hr": "Ulazni Abuelo — mekan, karamelast, najčešće za miješanje ili opušteni highball.",
+   "en": "The entry Abuelo — soft and caramelly, most often for mixing or an easy highball."
+  }
+ },
+ {
+  "id": "rum-ron-abuelo-centuria",
+  "category": "rum",
+  "name": "Ron Abuelo Centuria",
+  "style": "panama",
+  "region": "Panama",
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "karamela",
+   "vanilija"
+  ],
+  "additiveStatus": "light",
+  "additiveDetail": {
+   "hr": "Blagi dodatak (solera)",
+   "en": "Light addition (solera)"
+  },
+  "additiveSource": "Procjena",
+  "qualityScore": 8.0,
+  "priceEUR": {
+   "min": 147.0,
    "max": 147.0
   },
   "shopHR": "ecuga.com",
@@ -2423,11 +2790,14 @@
    "cola": 0,
    "best": "On the rocks / kap vode"
   },
-  "cigarHint": "Srednja maduro - dodaje tijelo cigari",
+  "cigarHint": {
+   "hr": "Srednja maduro - dodaje tijelo cigari",
+   "en": "A medium maduro — adds body to the cigar"
+  },
   "priceUrl": "https://ecuga.com/katalog/rum",
   "notes": {
-   "hr": "Panamski solera, dodaje tijelo cigari",
-   "en": ""
+   "hr": "Vrh kuće Varela Hermanos — solera do 30 godina; duboko, baršunasto, za posebne prigode.",
+   "en": "The pinnacle of Varela Hermanos — a solera of up to 30 years; deep, velvety, for special occasions."
   }
  },
  {
@@ -2444,7 +2814,10 @@
    "hrast"
   ],
   "additiveStatus": "light",
-  "additiveDetail": "Blagi dodatak",
+  "additiveDetail": {
+   "hr": "Blagi dodatak",
+   "en": "Light addition"
+  },
   "additiveSource": "Procjena",
   "qualityScore": 7.0,
   "priceEUR": {
@@ -2466,7 +2839,7 @@
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/ron-cartavio-xo-40-07l-u-poklon-kutiji",
   "notes": {
    "hr": "Peruanski, kompleksan",
-   "en": ""
+   "en": "Peruvian and complex"
   }
  },
  {
@@ -2483,7 +2856,10 @@
    "hrast"
   ],
   "additiveStatus": "sweetened",
-  "additiveDetail": "Blago slazen",
+  "additiveDetail": {
+   "hr": "Blago slazen",
+   "en": "Lightly sweetened"
+  },
   "additiveSource": "Systembolaget: slazen",
   "qualityScore": 7.0,
   "priceEUR": {
@@ -2505,7 +2881,7 @@
   "priceUrl": null,
   "notes": {
    "hr": "Stariji Matusalem, gladak",
-   "en": ""
+   "en": "An older Matusalem, smooth"
   }
  },
  {
@@ -2521,7 +2897,10 @@
    "vanilija"
   ],
   "additiveStatus": "light",
-  "additiveDetail": "Blagi dodatak",
+  "additiveDetail": {
+   "hr": "Blagi dodatak",
+   "en": "Light addition"
+  },
   "additiveSource": "Procjena",
   "qualityScore": 7.0,
   "priceEUR": {
@@ -2543,7 +2922,7 @@
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/vizcaya-cuban-formula-rum-vxop-cask-no-21-40-vol-07-l",
   "notes": {
    "hr": "Cuban-style DR, bogat",
-   "en": ""
+   "en": "Cuban-style Dominican, rich"
   }
  },
  {
@@ -2561,7 +2940,10 @@
    "overproof"
   ],
   "additiveStatus": "clean",
-  "additiveDetail": "Cist",
+  "additiveDetail": {
+   "hr": "Cist",
+   "en": "Clean"
+  },
   "additiveSource": "Pravilo regije",
   "qualityScore": 7.0,
   "priceEUR": {
@@ -2583,7 +2965,7 @@
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/wray-nephew-overproof-rum-63-vol-07-l",
   "notes": {
    "hr": "Kultni overproof, esterski (jak)",
-   "en": ""
+   "en": "The cult overproof, estery (strong)"
   }
  },
  {
@@ -2599,7 +2981,10 @@
    "hrast"
   ],
   "additiveStatus": "clean",
-  "additiveDetail": "Cist-ish",
+  "additiveDetail": {
+   "hr": "Cist-ish",
+   "en": "Essentially clean"
+  },
   "additiveSource": "Alko (reformuliran, nizak)",
   "qualityScore": 6.5,
   "priceEUR": {
@@ -2621,7 +3006,7 @@
   "priceUrl": null,
   "notes": {
    "hr": "Suh-ish dnevni sipper",
-   "en": ""
+   "en": "A dry-leaning everyday sipper"
   }
  },
  {
@@ -2637,7 +3022,10 @@
    "vanilija"
   ],
   "additiveStatus": "clean",
-  "additiveDetail": "Cist-ish",
+  "additiveDetail": {
+   "hr": "Cist-ish",
+   "en": "Essentially clean"
+  },
   "additiveSource": "Dekl.",
   "qualityScore": 6.5,
   "priceEUR": {
@@ -2655,11 +3043,14 @@
    "cola": 3,
    "best": "Koktel / cola"
   },
-  "cigarHint": "Nije za cigaru",
+  "cigarHint": {
+   "hr": "Uz koktel ili highball",
+   "en": "With a cocktail or highball"
+  },
   "priceUrl": "https://ecuga.com/katalog/rum",
   "notes": {
    "hr": "Stariji Bacardi, suh-ish, pristojan",
-   "en": ""
+   "en": "An older Bacardí, dry-leaning and decent"
   }
  },
  {
@@ -2675,7 +3066,10 @@
    "vanilija"
   ],
   "additiveStatus": "sweetened",
-  "additiveDetail": "Doslazen",
+  "additiveDetail": {
+   "hr": "Doslazen",
+   "en": "Sweetened"
+  },
   "additiveSource": "Procjena (Imperial linija doslazena)",
   "qualityScore": 6.5,
   "priceEUR": {
@@ -2693,11 +3087,14 @@
    "cola": 0,
    "best": "Velika kocka leda ILI kap vode"
   },
-  "cigarHint": "Srednja-jaka maduro (slatkoca presiječe gorčinu)",
+  "cigarHint": {
+   "hr": "Srednja-jaka maduro (slatkoca presiječe gorčinu)",
+   "en": "A medium-strong maduro (sweetness cuts the bitterness)"
+  },
   "priceUrl": null,
   "notes": {
    "hr": "Doslazen ali ugodan uz jaču/maduro cigaru",
-   "en": ""
+   "en": "Sweetened, yet pleasant with a stronger or maduro cigar"
   }
  },
  {
@@ -2713,7 +3110,10 @@
    "hrast"
   ],
   "additiveStatus": "clean",
-  "additiveDetail": "Cist-ish",
+  "additiveDetail": {
+   "hr": "Cist-ish",
+   "en": "Essentially clean"
+  },
   "additiveSource": "Procjena (nije lab/hydro)",
   "qualityScore": 6.5,
   "priceEUR": {
@@ -2731,7 +3131,10 @@
    "cola": 0,
    "best": "Cisto / daiquiri"
   },
-  "cigarHint": "Srednja; mlad ali čist",
+  "cigarHint": {
+   "hr": "Srednja; mlad ali čist",
+   "en": "Medium; young but clean"
+  },
   "priceUrl": null,
   "notes": {
    "hr": "Blend Barbadosa i Jamajke; mlad, bez dodanog šećera (procjena, nije mjereno).",
@@ -2752,7 +3155,10 @@
    "hrast"
   ],
   "additiveStatus": "light",
-  "additiveDetail": "Blaga slatkoca",
+  "additiveDetail": {
+   "hr": "Blaga slatkoca",
+   "en": "Light sweetness"
+  },
   "additiveSource": "Hydrometer: blaga slatkoca",
   "qualityScore": 6.5,
   "priceEUR": {
@@ -2774,7 +3180,7 @@
   "priceUrl": null,
   "notes": {
    "hr": "Solidan dnevni",
-   "en": ""
+   "en": "A solid daily pour"
   }
  },
  {
@@ -2789,7 +3195,10 @@
    "karamela"
   ],
   "additiveStatus": "unknown",
-  "additiveDetail": "Relativno cisci",
+  "additiveDetail": {
+   "hr": "Relativno cisci",
+   "en": "Relatively cleaner"
+  },
   "additiveSource": "Procjena (nije lab/hydro)",
   "qualityScore": 6.5,
   "priceEUR": {
@@ -2811,7 +3220,7 @@
   "priceUrl": null,
   "notes": {
    "hr": "Cisci od vecine solera",
-   "en": ""
+   "en": "Cleaner than most soleras"
   }
  },
  {
@@ -2827,7 +3236,10 @@
    "vanilija"
   ],
   "additiveStatus": "light",
-  "additiveDetail": "Blagi dodatak (spirit drink)",
+  "additiveDetail": {
+   "hr": "Blagi dodatak (spirit drink)",
+   "en": "Light addition (spirit drink)"
+  },
   "additiveSource": "Procjena",
   "qualityScore": 6.5,
   "priceEUR": {
@@ -2849,7 +3261,7 @@
   "priceUrl": null,
   "notes": {
    "hr": "Solera 8-12, pristojan",
-   "en": ""
+   "en": "A solera of 8–12 years, decent"
   }
  },
  {
@@ -2865,7 +3277,10 @@
    "vanilija"
   ],
   "additiveStatus": "moderate",
-  "additiveDetail": "Umjeren dodatak",
+  "additiveDetail": {
+   "hr": "Umjeren dodatak",
+   "en": "Moderate addition"
+  },
   "additiveSource": "Systembolaget: doslazen",
   "qualityScore": 6.5,
   "priceEUR": {
@@ -2887,7 +3302,7 @@
   "priceUrl": null,
   "notes": {
    "hr": "Mladi 20, OK uz cigaru",
-   "en": ""
+   "en": "A young 20, fine with a cigar"
   }
  },
  {
@@ -2903,7 +3318,10 @@
    "suho-voce"
   ],
   "additiveStatus": "sweetened",
-  "additiveDetail": "Dodani secer ~15-20 g/L",
+  "additiveDetail": {
+   "hr": "Dodani secer ~15-20 g/L",
+   "en": "Added sugar ~15–20 g/L"
+  },
   "additiveSource": "Alko/Systembolaget lab (novije boce ispod 20 g/L radi EU pravila)",
   "qualityScore": 7.5,
   "priceEUR": {
@@ -2940,7 +3358,10 @@
    "karamela"
   ],
   "additiveStatus": "light",
-  "additiveDetail": "Blagi dodatak (solera)",
+  "additiveDetail": {
+   "hr": "Blagi dodatak (solera)",
+   "en": "Light addition (solera)"
+  },
   "additiveSource": "Procjena",
   "qualityScore": 6.5,
   "priceEUR": {
@@ -2962,7 +3383,7 @@
   "priceUrl": null,
   "notes": {
    "hr": "Rijetko porijeklo, solera, kuriozitet",
-   "en": ""
+   "en": "Rare origin, solera, a curiosity"
   }
  },
  {
@@ -2977,7 +3398,10 @@
    "karamela"
   ],
   "additiveStatus": "light",
-  "additiveDetail": "Blagi dodatak",
+  "additiveDetail": {
+   "hr": "Blagi dodatak",
+   "en": "Light addition"
+  },
   "additiveSource": "Procjena",
   "qualityScore": 6.5,
   "priceEUR": {
@@ -2999,7 +3423,7 @@
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/goslings-black-seal-151-proof-bermuda-black-rum-755-vol-07l",
   "notes": {
    "hr": "Klasik za Dark'n'Stormy, OK sipper",
-   "en": ""
+   "en": "The Dark'n'Stormy classic, a passable sipper"
   }
  },
  {
@@ -3016,7 +3440,10 @@
    "zacini"
   ],
   "additiveStatus": "light",
-  "additiveDetail": "Blagi dodatak",
+  "additiveDetail": {
+   "hr": "Blagi dodatak",
+   "en": "Light addition"
+  },
   "additiveSource": "Procjena",
   "qualityScore": 6.5,
   "priceEUR": {
@@ -3038,7 +3465,7 @@
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/ah-riise-black-barrel-navy-spiced-spirit-drink-40-vol-07l",
   "notes": {
    "hr": "Navy blend, za highball/sipping",
-   "en": ""
+   "en": "A navy blend for highballs or sipping"
   }
  },
  {
@@ -3053,7 +3480,10 @@
    "karamela"
   ],
   "additiveStatus": "light",
-  "additiveDetail": "Blagi dodatak",
+  "additiveDetail": {
+   "hr": "Blagi dodatak",
+   "en": "Light addition"
+  },
   "additiveSource": "Procjena",
   "qualityScore": 6.5,
   "priceEUR": {
@@ -3075,7 +3505,7 @@
   "priceUrl": null,
   "notes": {
    "hr": "Single estate, suh-ish, zanimljiv",
-   "en": ""
+   "en": "Single estate, dry-leaning, interesting"
   }
  },
  {
@@ -3092,7 +3522,10 @@
    "hrast"
   ],
   "additiveStatus": "sweetened",
-  "additiveDetail": "Blago slazen",
+  "additiveDetail": {
+   "hr": "Blago slazen",
+   "en": "Lightly sweetened"
+  },
   "additiveSource": "Systembolaget: slazen",
   "qualityScore": 6.5,
   "priceEUR": {
@@ -3110,11 +3543,14 @@
    "cola": 0,
    "best": "On the rocks"
   },
-  "cigarHint": "Srednja maduro, glađi solera",
+  "cigarHint": {
+   "hr": "Srednja maduro, glađi solera",
+   "en": "A medium maduro; a smoother solera"
+  },
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/ron-matusalem-gran-reserva-15-anos-40-07-l-gb",
   "notes": {
    "hr": "Favorit cigar-zajednice",
-   "en": ""
+   "en": "A favourite of the cigar community"
   }
  },
  {
@@ -3131,7 +3567,10 @@
    "vanilija"
   ],
   "additiveStatus": "clean",
-  "additiveDetail": "Cist",
+  "additiveDetail": {
+   "hr": "Cist",
+   "en": "Clean"
+  },
   "additiveSource": "Procjena (nije lab/hydro)",
   "qualityScore": 6.5,
   "priceEUR": {
@@ -3149,11 +3588,14 @@
    "cola": 2,
    "best": "Daiquiri / Dark'n'Stormy"
   },
-  "cigarHint": "Nije za cigaru (mixing)",
+  "cigarHint": {
+   "hr": "Uz koktel ili highball",
+   "en": "With a cocktail or highball"
+  },
   "priceUrl": null,
   "notes": {
    "hr": "Cist bijeli, više mixing/light cigar",
-   "en": ""
+   "en": "A clean white — mostly for mixing or a light cigar"
   }
  },
  {
@@ -3170,7 +3612,10 @@
    "vanilija"
   ],
   "additiveStatus": "light",
-  "additiveDetail": "Blagi dodatak",
+  "additiveDetail": {
+   "hr": "Blagi dodatak",
+   "en": "Light addition"
+  },
   "additiveSource": "Procjena (nije lab/hydro)",
   "qualityScore": 6.5,
   "priceEUR": {
@@ -3188,11 +3633,14 @@
    "cola": 2,
    "best": "Daiquiri / Dark'n'Stormy"
   },
-  "cigarHint": "Nije za cigaru (mixing)",
+  "cigarHint": {
+   "hr": "Uz koktel ili highball",
+   "en": "With a cocktail or highball"
+  },
   "priceUrl": null,
   "notes": {
    "hr": "Tamni, koktel/light cigar",
-   "en": ""
+   "en": "Dark; for cocktails or a light cigar"
   }
  },
  {
@@ -3208,7 +3656,10 @@
    "hrast"
   ],
   "additiveStatus": "light",
-  "additiveDetail": "Blagi dodatak (sherry)",
+  "additiveDetail": {
+   "hr": "Blagi dodatak (sherry)",
+   "en": "Light addition (sherry)"
+  },
   "additiveSource": "Hydrometer: blagi dodatak (sherry)",
   "qualityScore": 6.5,
   "priceEUR": {
@@ -3226,11 +3677,14 @@
    "cola": 0,
    "best": "On the rocks"
   },
-  "cigarHint": "Srednja maduro",
+  "cigarHint": {
+   "hr": "Srednja maduro",
+   "en": "A medium maduro"
+  },
   "priceUrl": null,
   "notes": {
    "hr": "Barbados/Gvajana, sherry finish",
-   "en": ""
+   "en": "Barbados/Guyana with a sherry finish"
   }
  },
  {
@@ -3247,7 +3701,10 @@
    "hrast"
   ],
   "additiveStatus": "sweetened",
-  "additiveDetail": "Doslazen (solera stil)",
+  "additiveDetail": {
+   "hr": "Doslazen (solera stil)",
+   "en": "Sweetened (solera style)"
+  },
   "additiveSource": "Procjena (solera)",
   "qualityScore": 7.0,
   "priceEUR": {
@@ -3285,7 +3742,10 @@
    "vanilija"
   ],
   "additiveStatus": "light",
-  "additiveDetail": "Blagi dodatak",
+  "additiveDetail": {
+   "hr": "Blagi dodatak",
+   "en": "Light addition"
+  },
   "additiveSource": "Procjena (nije lab/hydro)",
   "qualityScore": 6.5,
   "priceEUR": {
@@ -3307,7 +3767,7 @@
   "priceUrl": null,
   "notes": {
    "hr": "OK sipper",
-   "en": ""
+   "en": "A passable sipper"
   }
  },
  {
@@ -3324,7 +3784,10 @@
    "hrast"
   ],
   "additiveStatus": "sweetened",
-  "additiveDetail": "Doslazen",
+  "additiveDetail": {
+   "hr": "Doslazen",
+   "en": "Sweetened"
+  },
   "additiveSource": "Alko/Systemb.: doslazen (~12-20 g/L)",
   "qualityScore": 6.5,
   "priceEUR": {
@@ -3346,7 +3809,7 @@
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/ron-zacapa-centenario-23-anos-black-label",
   "notes": {
    "hr": "Slazen ali klasican cigar-sipper, maduro",
-   "en": ""
+   "en": "Sweetened, but a classic cigar sipper — maduro"
   }
  },
  {
@@ -3362,7 +3825,10 @@
    "vanilija"
   ],
   "additiveStatus": "sweetened",
-  "additiveDetail": "Blago slazen",
+  "additiveDetail": {
+   "hr": "Blago slazen",
+   "en": "Lightly sweetened"
+  },
   "additiveSource": "Hydrometer: blago slazen",
   "qualityScore": 6.0,
   "priceEUR": {
@@ -3380,11 +3846,14 @@
    "cola": 0,
    "best": "Velika kocka leda ILI kap vode"
   },
-  "cigarHint": "Srednja-jaka maduro (slatkoca presiječe gorčinu)",
+  "cigarHint": {
+   "hr": "Srednja-jaka maduro (slatkoca presiječe gorčinu)",
+   "en": "A medium-strong maduro (sweetness cuts the bitterness)"
+  },
   "priceUrl": null,
   "notes": {
    "hr": "Pristojan cigar-sipper, value",
-   "en": ""
+   "en": "A decent cigar sipper, good value"
   }
  },
  {
@@ -3400,7 +3869,10 @@
    "suho-voce"
   ],
   "additiveStatus": "sweetened",
-  "additiveDetail": "Blago slazen",
+  "additiveDetail": {
+   "hr": "Blago slazen",
+   "en": "Lightly sweetened"
+  },
   "additiveSource": "Hydrometer: blago slazen",
   "qualityScore": 6.0,
   "priceEUR": {
@@ -3418,11 +3890,14 @@
    "cola": 0,
    "best": "On the rocks / cisto"
   },
-  "cigarHint": "Srednja maduro",
+  "cigarHint": {
+   "hr": "Srednja maduro",
+   "en": "A medium maduro"
+  },
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/diplomatico-mantuano-ron-extra-anejo-40-vol-07l",
   "notes": {
    "hr": "Susi od Reserve",
-   "en": ""
+   "en": "Drier than the Reserva"
   }
  },
  {
@@ -3437,7 +3912,10 @@
    "karamela"
   ],
   "additiveStatus": "sweetened",
-  "additiveDetail": "Blago slazen (solera)",
+  "additiveDetail": {
+   "hr": "Blago slazen (solera)",
+   "en": "Lightly sweetened (solera)"
+  },
   "additiveSource": "Procjena (nije lab/hydro)",
   "qualityScore": 6.0,
   "priceEUR": {
@@ -3455,11 +3933,14 @@
    "cola": 0,
    "best": "On the rocks"
   },
-  "cigarHint": "Srednja maduro",
+  "cigarHint": {
+   "hr": "Srednja maduro",
+   "en": "A medium maduro"
+  },
   "priceUrl": null,
   "notes": {
    "hr": "Solera, pristojan cigar-sipper",
-   "en": ""
+   "en": "A solera, a decent cigar sipper"
   }
  },
  {
@@ -3475,7 +3956,10 @@
    "vanilija"
   ],
   "additiveStatus": "sweetened",
-  "additiveDetail": "Blago slazen (solera)",
+  "additiveDetail": {
+   "hr": "Blago slazen (solera)",
+   "en": "Lightly sweetened (solera)"
+  },
   "additiveSource": "Procjena",
   "qualityScore": 6.0,
   "priceEUR": {
@@ -3497,7 +3981,7 @@
   "priceUrl": null,
   "notes": {
    "hr": "Oliver&Oliver solera",
-   "en": ""
+   "en": "An Oliver & Oliver solera"
   }
  },
  {
@@ -3513,7 +3997,10 @@
    "vanilija"
   ],
   "additiveStatus": "sweetened",
-  "additiveDetail": "Doslazen",
+  "additiveDetail": {
+   "hr": "Doslazen",
+   "en": "Sweetened"
+  },
   "additiveSource": "Procjena",
   "qualityScore": 6.0,
   "priceEUR": {
@@ -3535,7 +4022,7 @@
   "priceUrl": null,
   "notes": {
    "hr": "Mekan ron dominicano, OK uz maduro",
-   "en": ""
+   "en": "A soft Dominican ron, fine with a maduro"
   }
  },
  {
@@ -3550,7 +4037,10 @@
    "karamela"
   ],
   "additiveStatus": "clean",
-  "additiveDetail": "Cist-ish",
+  "additiveDetail": {
+   "hr": "Cist-ish",
+   "en": "Essentially clean"
+  },
   "additiveSource": "Procjena",
   "qualityScore": 6.0,
   "priceEUR": {
@@ -3572,7 +4062,7 @@
   "priceUrl": null,
   "notes": {
    "hr": "Japanski rum od trske, lagan, poseban",
-   "en": ""
+   "en": "A Japanese cane rum — light and distinctive"
   }
  },
  {
@@ -3587,7 +4077,10 @@
    "karamela"
   ],
   "additiveStatus": "clean",
-  "additiveDetail": "Cist-ish",
+  "additiveDetail": {
+   "hr": "Cist-ish",
+   "en": "Essentially clean"
+  },
   "additiveSource": "Procjena (nije lab/hydro)",
   "qualityScore": 6.0,
   "priceEUR": {
@@ -3605,11 +4098,14 @@
    "cola": 0,
    "best": "Cisto / kap vode"
   },
-  "cigarHint": "Laganija; kuriozitet",
+  "cigarHint": {
+   "hr": "Laganija; kuriozitet",
+   "en": "Lighter; a curiosity"
+  },
   "priceUrl": null,
   "notes": {
    "hr": "Charanda kuriozitet, čist-ish",
-   "en": ""
+   "en": "A charanda curiosity, essentially clean"
   }
  },
  {
@@ -3625,7 +4121,10 @@
    "vanilija"
   ],
   "additiveStatus": "clean",
-  "additiveDetail": "Cist",
+  "additiveDetail": {
+   "hr": "Cist",
+   "en": "Clean"
+  },
   "additiveSource": "Proizvodjac dekl. (cist)",
   "qualityScore": 5.5,
   "priceEUR": {
@@ -3643,11 +4142,14 @@
    "cola": 2,
    "best": "Koktel / highball"
   },
-  "cigarHint": "Nije za cigaru",
+  "cigarHint": {
+   "hr": "Uz koktel ili highball",
+   "en": "With a cocktail or highball"
+  },
   "priceUrl": "https://ecuga.com/katalog/rum",
   "notes": {
    "hr": "Suh čist ali obican",
-   "en": ""
+   "en": "Dry and clean, but plain"
   }
  },
  {
@@ -3663,7 +4165,10 @@
    "vanilija"
   ],
   "additiveStatus": "sweetened",
-  "additiveDetail": "Doslazen",
+  "additiveDetail": {
+   "hr": "Doslazen",
+   "en": "Sweetened"
+  },
   "additiveSource": "Procjena (nije lab/hydro)",
   "qualityScore": 5.5,
   "priceEUR": {
@@ -3681,11 +4186,14 @@
    "cola": 0,
    "best": "Velika kocka leda ILI kap vode"
   },
-  "cigarHint": "Srednja-jaka maduro (slatkoca presiječe gorčinu)",
+  "cigarHint": {
+   "hr": "Srednja-jaka maduro (slatkoca presiječe gorčinu)",
+   "en": "A medium-strong maduro (sweetness cuts the bitterness)"
+  },
   "priceUrl": null,
   "notes": {
    "hr": "Maple finish, slađe",
-   "en": ""
+   "en": "Maple finish, sweeter"
   }
  },
  {
@@ -3701,7 +4209,10 @@
    "vanilija"
   ],
   "additiveStatus": "sweetened",
-  "additiveDetail": "Doslazen",
+  "additiveDetail": {
+   "hr": "Doslazen",
+   "en": "Sweetened"
+  },
   "additiveSource": "Procjena (nije lab/hydro)",
   "qualityScore": 5.5,
   "priceEUR": {
@@ -3719,11 +4230,14 @@
    "cola": 0,
    "best": "Velika kocka leda ILI kap vode"
   },
-  "cigarHint": "Srednja-jaka maduro (slatkoca presiječe gorčinu)",
+  "cigarHint": {
+   "hr": "Srednja-jaka maduro (slatkoca presiječe gorčinu)",
+   "en": "A medium-strong maduro (sweetness cuts the bitterness)"
+  },
   "priceUrl": null,
   "notes": {
    "hr": "Mizunara finish, slađe",
-   "en": ""
+   "en": "Mizunara finish, sweeter"
   }
  },
  {
@@ -3740,7 +4254,10 @@
    "citrus"
   ],
   "additiveStatus": "clean",
-  "additiveDetail": "Cist (mlad)",
+  "additiveDetail": {
+   "hr": "Cist (mlad)",
+   "en": "Clean (young)"
+  },
   "additiveSource": "Proizvodjac dekl. (mlad)",
   "qualityScore": 5.5,
   "priceEUR": {
@@ -3758,7 +4275,10 @@
    "cola": 2,
    "best": "Koktel / highball"
   },
-  "cigarHint": "Nije za cigaru",
+  "cigarHint": {
+   "hr": "Uz koktel ili highball",
+   "en": "With a cocktail or highball"
+  },
   "priceUrl": null,
   "notes": {
    "hr": "Mlad kubanski rum; najčešće u koktelima i highballu.",
@@ -3777,7 +4297,10 @@
    "karamela"
   ],
   "additiveStatus": "sweetened",
-  "additiveDetail": "Blago slazen",
+  "additiveDetail": {
+   "hr": "Blago slazen",
+   "en": "Lightly sweetened"
+  },
   "additiveSource": "Procjena",
   "qualityScore": 5.5,
   "priceEUR": {
@@ -3799,7 +4322,7 @@
   "priceUrl": null,
   "notes": {
    "hr": "Egzoticno porijeklo, blago slazen",
-   "en": ""
+   "en": "Exotic origin, lightly sweetened"
   }
  },
  {
@@ -3814,7 +4337,10 @@
    "karamela"
   ],
   "additiveStatus": "sweetened",
-  "additiveDetail": "Dodatak secera",
+  "additiveDetail": {
+   "hr": "Dodatak secera",
+   "en": "Added sugar"
+  },
   "additiveSource": "Sugar list: dodatak secera",
   "qualityScore": 5.5,
   "priceEUR": {
@@ -3836,7 +4362,7 @@
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/ron-centenario-gran-legado-rum-no-12-40-vol-07l",
   "notes": {
    "hr": "Slazen",
-   "en": ""
+   "en": "Sweetened"
   }
  },
  {
@@ -3853,7 +4379,10 @@
    "hrast"
   ],
   "additiveStatus": "sweetened",
-  "additiveDetail": "Doslazen",
+  "additiveDetail": {
+   "hr": "Doslazen",
+   "en": "Sweetened"
+  },
   "additiveSource": "Alko: doslazen",
   "qualityScore": 5.5,
   "priceEUR": {
@@ -3875,7 +4404,7 @@
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/ron-zacapa-centenario-edicion-negra-sistema-solera-gran-reserva-43-vol-07l-u-poklon-kutiji",
   "notes": {
    "hr": "Zacapa linija, slazeni",
-   "en": ""
+   "en": "The Zacapa range, sweetened"
   }
  },
  {
@@ -3891,7 +4420,10 @@
    "hrast"
   ],
   "additiveStatus": "flavored",
-  "additiveDetail": "Aroma narance, doslazen",
+  "additiveDetail": {
+   "hr": "Aroma narance, doslazen",
+   "en": "Orange flavouring, sweetened"
+  },
   "additiveSource": "Procjena",
   "qualityScore": 4.5,
   "priceEUR": {
@@ -3928,7 +4460,10 @@
    "karamela"
   ],
   "additiveStatus": "clean",
-  "additiveDetail": "Cist-ish bijeli",
+  "additiveDetail": {
+   "hr": "Cist-ish bijeli",
+   "en": "Essentially clean white"
+  },
   "additiveSource": "Procjena (nije lab/hydro)",
   "qualityScore": 5.0,
   "priceEUR": {
@@ -3946,11 +4481,14 @@
    "cola": 3,
    "best": "Koktel / cola"
   },
-  "cigarHint": "Nije za cigaru (aromatizirano)",
+  "cigarHint": {
+   "hr": "Uz koktel ili desert",
+   "en": "With a cocktail or dessert"
+  },
   "priceUrl": null,
   "notes": {
    "hr": "Bijeli, koktel",
-   "en": ""
+   "en": "White, for cocktails"
   }
  },
  {
@@ -3965,7 +4503,10 @@
    "karamela"
   ],
   "additiveStatus": "sweetened",
-  "additiveDetail": "Doslazen",
+  "additiveDetail": {
+   "hr": "Doslazen",
+   "en": "Sweetened"
+  },
   "additiveSource": "Sugar list: doslazen",
   "qualityScore": 5.0,
   "priceEUR": {
@@ -3987,7 +4528,7 @@
   "priceUrl": null,
   "notes": {
    "hr": "Slazeni, skupi",
-   "en": ""
+   "en": "Sweetened and expensive"
   }
  },
  {
@@ -4004,7 +4545,10 @@
    "citrus"
   ],
   "additiveStatus": "clean",
-  "additiveDetail": "Cist (mlad)",
+  "additiveDetail": {
+   "hr": "Cist (mlad)",
+   "en": "Clean (young)"
+  },
   "additiveSource": "Proizvodjac dekl. (mlad)",
   "qualityScore": 5.5,
   "priceEUR": {
@@ -4022,7 +4566,10 @@
    "cola": 0,
    "best": "Cisto / kap vode"
   },
-  "cigarHint": "Srednja, suha",
+  "cigarHint": {
+   "hr": "Srednja, suha",
+   "en": "Medium and dry"
+  },
   "priceUrl": null,
   "notes": {
    "hr": "Standard za daiquiri — mlad, svjež, suh.",
@@ -4041,7 +4588,10 @@
    "karamela"
   ],
   "additiveStatus": "sweetened",
-  "additiveDetail": "Doslazen",
+  "additiveDetail": {
+   "hr": "Doslazen",
+   "en": "Sweetened"
+  },
   "additiveSource": "Sugar list: doslazen",
   "qualityScore": 4.5,
   "priceEUR": {
@@ -4063,7 +4613,7 @@
   "priceUrl": null,
   "notes": {
    "hr": "Slazeni mladi",
-   "en": ""
+   "en": "Sweetened and young"
   }
  },
  {
@@ -4078,7 +4628,10 @@
    "karamela"
   ],
   "additiveStatus": "sweetened",
-  "additiveDetail": "Dodani secer (hidrometrija)",
+  "additiveDetail": {
+   "hr": "Dodani secer (hidrometrija)",
+   "en": "Added sugar (hydrometer)"
+  },
   "additiveSource": "Hydrometer: slazen",
   "qualityScore": 5.5,
   "priceEUR": {
@@ -4116,7 +4669,10 @@
    "vanilija"
   ],
   "additiveStatus": "unknown",
-  "additiveDetail": "Mladi/mixing",
+  "additiveDetail": {
+   "hr": "Mladi/mixing",
+   "en": "Young / for mixing"
+  },
   "additiveSource": "Procjena (nije lab/hydro)",
   "qualityScore": 4.0,
   "priceEUR": {
@@ -4134,11 +4690,14 @@
    "cola": 3,
    "best": "Koktel / cola"
   },
-  "cigarHint": "Nije za cigaru",
+  "cigarHint": {
+   "hr": "Uz koktel ili highball",
+   "en": "With a cocktail or highball"
+  },
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/havana-club-gran-reserva-anejo-15-anos-40-vol-07l-u-poklon-kutiji",
   "notes": {
    "hr": "Mixing rum",
-   "en": ""
+   "en": "A mixing rum"
   }
  },
  {
@@ -4154,7 +4713,10 @@
    "vanilija"
   ],
   "additiveStatus": "flavored",
-  "additiveDetail": "Doslazen/aromatiziran (procjena)",
+  "additiveDetail": {
+   "hr": "Doslazen/aromatiziran (procjena)",
+   "en": "Sweetened/flavoured (estimate)"
+  },
   "additiveSource": "Procjena (nije lab/hydro)",
   "qualityScore": 4.0,
   "priceEUR": {
@@ -4172,7 +4734,10 @@
    "cola": 2,
    "best": "On the rocks"
   },
-  "cigarHint": "Slatko; gusi finije cigare",
+  "cigarHint": {
+   "hr": "Slatko; gusi finije cigare",
+   "en": "Sweet; smothers finer cigars"
+  },
   "priceUrl": null,
   "notes": {
    "hr": "Slatki, pristupačni profil vanilije i karamele u nižem cjenovnom razredu.",
@@ -4193,7 +4758,10 @@
    "hrast"
   ],
   "additiveStatus": "sweetened",
-  "additiveDetail": "Dodani secer (Alko lab; novije boce ispod 20 g/L)",
+  "additiveDetail": {
+   "hr": "Dodani secer (Alko lab; novije boce ispod 20 g/L)",
+   "en": "Added sugar (Alko lab; recent bottlings under 20 g/L)"
+  },
   "additiveSource": "Alko/Systembolaget lab",
   "qualityScore": 6.5,
   "priceEUR": {
@@ -4233,7 +4801,10 @@
    "slatko"
   ],
   "additiveStatus": "flavored",
-  "additiveDetail": "Dodani: vanilija, cimet, naranca, klincic, kardamom",
+  "additiveDetail": {
+   "hr": "Dodani: vanilija, cimet, naranca, klincic, kardamom",
+   "en": "Added: vanilla, cinnamon, orange, clove, cardamom"
+  },
   "additiveSource": "Deklaracija proizvodjaca (recept naveden na etiketi)",
   "qualityScore": 7.0,
   "priceEUR": {
@@ -4271,7 +4842,10 @@
    "zacini"
   ],
   "additiveStatus": "flavored",
-  "additiveDetail": "Dodani secer i suho grozdje (elixir kategorija)",
+  "additiveDetail": {
+   "hr": "Dodani secer i suho grozdje (elixir kategorija)",
+   "en": "Added sugar and raisins (elixir category)"
+  },
   "additiveSource": "Deklaracija proizvodjaca",
   "qualityScore": 6.0,
   "priceEUR": {
@@ -4309,7 +4883,10 @@
    "zacini"
   ],
   "additiveStatus": "flavored",
-  "additiveDetail": "Dodane arome: vanilija, kokos, zacini",
+  "additiveDetail": {
+   "hr": "Dodane arome: vanilija, kokos, zacini",
+   "en": "Added flavourings: vanilla, coconut, spices"
+  },
   "additiveSource": "Deklaracija proizvodjaca (Ferrand grupa)",
   "qualityScore": 6.0,
   "priceEUR": {
@@ -4347,7 +4924,10 @@
    "zacini"
   ],
   "additiveStatus": "flavored",
-  "additiveDetail": "Dodana aroma narance i secer",
+  "additiveDetail": {
+   "hr": "Dodana aroma narance i secer",
+   "en": "Added orange flavouring and sugar"
+  },
   "additiveSource": "Procjena",
   "qualityScore": 5.5,
   "priceEUR": {
@@ -4387,7 +4967,10 @@
    "slatko"
   ],
   "additiveStatus": "flavored",
-  "additiveDetail": "Lab: ~29 g/L secera + 2,4 g/L glicerola + vanilin ~360 mg/L",
+  "additiveDetail": {
+   "hr": "Lab: ~29 g/L secera + 2,4 g/L glicerola + vanilin ~360 mg/L",
+   "en": "Lab: ~29 g/L sugar + 2.4 g/L glycerol + vanillin ~360 mg/L"
+  },
   "additiveSource": "Objavljeni lab/hidrometrijski testovi; Systembolaget",
   "qualityScore": 5.5,
   "priceEUR": {
@@ -4405,7 +4988,10 @@
    "cola": 2,
    "best": "Cisto / on the rocks"
   },
-  "cigarHint": "Puna maduro cigara za kontrast slatkoci",
+  "cigarHint": {
+   "hr": "Puna maduro cigara za kontrast slatkoci",
+   "en": "A full maduro cigar to contrast the sweetness"
+  },
   "priceUrl": null,
   "notes": {
    "hr": "Filipinski rum s otoka Negros. Neovisna mjerenja: ~29 g/L dodanog šećera, glicerol i vanilin — izražena vanilija i suho voće, desertni profil. U EU iznad 20 g/L nosi oznaku 'spirit drink'. Popularan kod publike; kritika ga smatra slatkim — ovdje samo deklariramo činjenice.",
@@ -4427,7 +5013,10 @@
    "slatko"
   ],
   "additiveStatus": "flavored",
-  "additiveDetail": "Doslazen/aromatiziran (intenzivnije od Don Pape 7)",
+  "additiveDetail": {
+   "hr": "Doslazen/aromatiziran (intenzivnije od Don Pape 7)",
+   "en": "Sweetened/flavoured (more intense than Don Papa 7)"
+  },
   "additiveSource": "Systembolaget: visok secer; EU etiketa 'spirit drink'",
   "qualityScore": 5.5,
   "priceEUR": {
@@ -4445,7 +5034,10 @@
    "cola": 2,
    "best": "Cisto / on the rocks"
   },
-  "cigarHint": "Puna maduro cigara za kontrast slatkoci",
+  "cigarHint": {
+   "hr": "Puna maduro cigara za kontrast slatkoci",
+   "en": "A full maduro cigar to contrast the sweetness"
+  },
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/don-papa-baroko-40-vol-07l",
   "notes": {
    "hr": "Intenzivnija, tamnija verzija Don Pape — kakao, vanilija, suho voće; izrazito sladak desertni stil. U EU deklariran kao 'spirit drink' zbog razine dodanog šećera.",
@@ -4462,7 +5054,10 @@
   "sweetness": 2,
   "flavorTags": [],
   "additiveStatus": "unknown",
-  "additiveDetail": "Sastav nepoznat (nije mjereno)",
+  "additiveDetail": {
+   "hr": "Sastav nepoznat (nije mjereno)",
+   "en": "Composition unknown (not measured)"
+  },
   "additiveSource": "Procjena (nije lab/hydro)",
   "qualityScore": 3.5,
   "priceEUR": {
@@ -4497,7 +5092,10 @@
   "sweetness": 4,
   "flavorTags": [],
   "additiveStatus": "flavored",
-  "additiveDetail": "Dodani secer/arome (kategorija elixir)",
+  "additiveDetail": {
+   "hr": "Dodani secer/arome (kategorija elixir)",
+   "en": "Added sugar/flavourings (elixir category)"
+  },
   "additiveSource": "Procjena (nije lab/hydro)",
   "qualityScore": 3.5,
   "priceEUR": {
@@ -4527,7 +5125,7 @@
   "category": "rum",
   "name": "Takamaka Dark Spiced",
   "style": "spiced",
-  "region": "Spiced / aromatizirano (Sejseli)",
+  "region": "Spiced / aromatizirano (Sejšeli)",
   "body": 2,
   "sweetness": 5,
   "flavorTags": [
@@ -4535,7 +5133,10 @@
    "zacini"
   ],
   "additiveStatus": "flavored",
-  "additiveDetail": "Dodane arome i secer (38%, spirit drink)",
+  "additiveDetail": {
+   "hr": "Dodane arome i secer (38%, spirit drink)",
+   "en": "Added flavourings and sugar (38%, spirit drink)"
+  },
   "additiveSource": "EU etiketa: spirit drink",
   "qualityScore": 5.0,
   "priceEUR": {
@@ -4573,7 +5174,10 @@
    "zacini"
   ],
   "additiveStatus": "flavored",
-  "additiveDetail": "Dodane arome (klincic, cimet, vanilija) i karamel boja; secer ~26 g/L",
+  "additiveDetail": {
+   "hr": "Dodane arome (klincic, cimet, vanilija) i karamel boja; secer ~26 g/L",
+   "en": "Added flavourings (clove, cinnamon, vanilla) and caramel colour; sugar ~26 g/L"
+  },
   "additiveSource": "Hidrometrijska mjerenja ~26 g/L",
   "qualityScore": 5.5,
   "priceEUR": {
@@ -4608,7 +5212,10 @@
   "sweetness": 2,
   "flavorTags": [],
   "additiveStatus": "unknown",
-  "additiveDetail": "Filtriran; bez podataka o dodacima",
+  "additiveDetail": {
+   "hr": "Filtriran; bez podataka o dodacima",
+   "en": "Filtered; no additive data"
+  },
   "additiveSource": "Procjena (nije lab/hydro)",
   "qualityScore": 4.5,
   "priceEUR": {
@@ -4626,7 +5233,10 @@
    "cola": 3,
    "best": "Koktel / cola"
   },
-  "cigarHint": "Nije za cigaru",
+  "cigarHint": {
+   "hr": "Uz koktel ili highball",
+   "en": "With a cocktail or highball"
+  },
   "priceUrl": "https://ecuga.com/katalog/rum",
   "notes": {
    "hr": "Globalni standard za koktele (mojito, daiquiri, cuba libre).",
@@ -4643,7 +5253,10 @@
   "sweetness": 2,
   "flavorTags": [],
   "additiveStatus": "unknown",
-  "additiveDetail": "Bez podataka o dodacima (nije mjereno)",
+  "additiveDetail": {
+   "hr": "Bez podataka o dodacima (nije mjereno)",
+   "en": "No additive data (not measured)"
+  },
   "additiveSource": "Procjena (nije lab/hydro)",
   "qualityScore": 4.0,
   "priceEUR": {
@@ -4661,7 +5274,10 @@
    "cola": 3,
    "best": "Koktel / cola"
   },
-  "cigarHint": "Nije za cigaru",
+  "cigarHint": {
+   "hr": "Uz koktel ili highball",
+   "en": "With a cocktail or highball"
+  },
   "priceUrl": null,
   "notes": {
    "hr": "Dominikanski bijeli rum za koktele.",
@@ -4681,7 +5297,10 @@
    "vanilija"
   ],
   "additiveStatus": "unknown",
-  "additiveDetail": "Bez podataka o dodacima (nije mjereno)",
+  "additiveDetail": {
+   "hr": "Bez podataka o dodacima (nije mjereno)",
+   "en": "No additive data (not measured)"
+  },
   "additiveSource": "Procjena (nije lab/hydro)",
   "qualityScore": 4.0,
   "priceEUR": {
@@ -4699,7 +5318,10 @@
    "cola": 3,
    "best": "Koktel / cola"
   },
-  "cigarHint": "Nije za cigaru",
+  "cigarHint": {
+   "hr": "Uz koktel ili highball",
+   "en": "With a cocktail or highball"
+  },
   "priceUrl": null,
   "notes": {
    "hr": "Pristupačni dominikanski rum; zlatna varijanta ima blagu karamelu.",
@@ -4721,7 +5343,10 @@
    "slatko"
   ],
   "additiveStatus": "flavored",
-  "additiveDetail": "Systembolaget: ~51 g/L secera; hidrometrija ~40 g/L; arome vanilije/banane",
+  "additiveDetail": {
+   "hr": "Systembolaget: ~51 g/L secera; hidrometrija ~40 g/L; arome vanilije/banane",
+   "en": "Systembolaget: ~51 g/L sugar; hydrometer ~40 g/L; vanilla/banana flavourings"
+  },
   "additiveSource": "Systembolaget lab lista; javni hidrometrijski testovi",
   "qualityScore": 5.5,
   "priceEUR": {
@@ -4739,7 +5364,10 @@
    "cola": 2,
    "best": "Cisto / on the rocks"
   },
-  "cigarHint": "Puna maduro cigara za kontrast slatkoci",
+  "cigarHint": {
+   "hr": "Puna maduro cigara za kontrast slatkoci",
+   "en": "A full maduro cigar to contrast the sweetness"
+  },
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/bumbu-the-original-40-vol-07l",
   "notes": {
    "hr": "Barbadoška baza s dodanim šećerom (~40–51 g/L po neovisnim mjerenjima) i aromama — vanilija, karamela, banana. U SAD-u se puni na 35% (kategorija 'rum specialty'), u EU na 40% uz oznaku 'spirit drink'. Vrlo popularan desertni profil.",
@@ -4761,7 +5389,10 @@
    "hrast"
   ],
   "additiveStatus": "sweetened",
-  "additiveDetail": "Hidrometrija: ~19 g/L dodataka (znatno manje od Originala)",
+  "additiveDetail": {
+   "hr": "Hidrometrija: ~19 g/L dodataka (znatno manje od Originala)",
+   "en": "Hydrometer: ~19 g/L additives (far less than the Original)"
+  },
   "additiveSource": "Javni hidrometrijski testovi (thefatrumpirate)",
   "qualityScore": 6.0,
   "priceEUR": {
@@ -4779,7 +5410,10 @@
    "cola": 1,
    "best": "Cisto / on the rocks"
   },
-  "cigarHint": "Srednja do puna cigara, maduro",
+  "cigarHint": {
+   "hr": "Srednja do puna cigara, maduro",
+   "en": "A medium-to-full cigar, maduro"
+  },
   "priceUrl": null,
   "notes": {
    "hr": "Panamski rum dozrijevan u ex-bourbon i sherry bačvama, dovršen u andaluzijskim sherry bačvama. Mjerenja pokazuju ~19 g/L dodataka — unutar EU granice za rum. Mekan profil vanilije, karamele i hrasta.",
@@ -4799,7 +5433,10 @@
    "zacini"
   ],
   "additiveStatus": "flavored",
-  "additiveDetail": "Dodane arome (vanilija, zacini)",
+  "additiveDetail": {
+   "hr": "Dodane arome (vanilija, zacini)",
+   "en": "Added flavourings (vanilla, spices)"
+  },
   "additiveSource": "Procjena",
   "qualityScore": 5.0,
   "priceEUR": {
@@ -4834,7 +5471,10 @@
   "sweetness": 2,
   "flavorTags": [],
   "additiveStatus": "unknown",
-  "additiveDetail": "Bez podataka o dodacima (nije mjereno)",
+  "additiveDetail": {
+   "hr": "Bez podataka o dodacima (nije mjereno)",
+   "en": "No additive data (not measured)"
+  },
   "additiveSource": "Procjena (nije lab/hydro)",
   "qualityScore": 4.0,
   "priceEUR": {
@@ -4872,7 +5512,10 @@
    "zacini"
   ],
   "additiveStatus": "flavored",
-  "additiveDetail": "Dodane arome i secer",
+  "additiveDetail": {
+   "hr": "Dodane arome i secer",
+   "en": "Added flavourings and sugar"
+  },
   "additiveSource": "Procjena (nije lab/hydro)",
   "qualityScore": 4.5,
   "priceEUR": {
@@ -4890,7 +5533,10 @@
    "cola": 3,
    "best": "Koktel / cola"
   },
-  "cigarHint": "Nije za cigaru (aromatizirano)",
+  "cigarHint": {
+   "hr": "Uz koktel ili desert",
+   "en": "With a cocktail or dessert"
+  },
   "priceUrl": null,
   "notes": {
    "hr": "Njemački brend spiced ruma; slatki profil vanilije i začina.",
@@ -4910,7 +5556,10 @@
    "zacini"
   ],
   "additiveStatus": "flavored",
-  "additiveDetail": "Dodane arome i secer",
+  "additiveDetail": {
+   "hr": "Dodane arome i secer",
+   "en": "Added flavourings and sugar"
+  },
   "additiveSource": "Procjena (nije lab/hydro)",
   "qualityScore": 4.0,
   "priceEUR": {
@@ -4928,7 +5577,10 @@
    "cola": 3,
    "best": "Koktel / cola"
   },
-  "cigarHint": "Nije za cigaru (aromatizirano)",
+  "cigarHint": {
+   "hr": "Uz koktel ili desert",
+   "en": "With a cocktail or dessert"
+  },
   "priceUrl": null,
   "notes": {
    "hr": "Pristupačne spiced varijante; sherry verzija ima note suhog voća.",
@@ -4948,7 +5600,10 @@
    "zacini"
   ],
   "additiveStatus": "sweetened",
-  "additiveDetail": "Dodani secer i arome",
+  "additiveDetail": {
+   "hr": "Dodani secer i arome",
+   "en": "Added sugar and flavourings"
+  },
   "additiveSource": "Procjena (nije lab/hydro)",
   "qualityScore": 5.0,
   "priceEUR": null,
@@ -4983,7 +5638,10 @@
    "zacini"
   ],
   "additiveStatus": "flavored",
-  "additiveDetail": "Dodane arome i secer",
+  "additiveDetail": {
+   "hr": "Dodane arome i secer",
+   "en": "Added flavourings and sugar"
+  },
   "additiveSource": "Procjena (nije lab/hydro)",
   "qualityScore": 4.0,
   "priceEUR": {
@@ -5021,7 +5679,10 @@
    "zacini"
   ],
   "additiveStatus": "flavored",
-  "additiveDetail": "Dodane arome (vanilija, zacini) i secer",
+  "additiveDetail": {
+   "hr": "Dodane arome (vanilija, zacini) i secer",
+   "en": "Added flavourings (vanilla, spices) and sugar"
+  },
   "additiveSource": "Procjena (nije lab/hydro)",
   "qualityScore": 4.5,
   "priceEUR": {
@@ -5039,7 +5700,10 @@
    "cola": 3,
    "best": "Koktel / cola"
   },
-  "cigarHint": "Nije za cigaru (aromatizirano)",
+  "cigarHint": {
+   "hr": "Uz koktel ili desert",
+   "en": "With a cocktail or dessert"
+  },
   "priceUrl": null,
   "notes": {
    "hr": "Najprodavaniji spiced brend na svijetu; vanilija i začini, najčešće s colom.",
@@ -5056,7 +5720,10 @@
   "sweetness": 2,
   "flavorTags": [],
   "additiveStatus": "unknown",
-  "additiveDetail": "Bez podataka o dodacima (nije mjereno)",
+  "additiveDetail": {
+   "hr": "Bez podataka o dodacima (nije mjereno)",
+   "en": "No additive data (not measured)"
+  },
   "additiveSource": "Procjena (nije lab/hydro)",
   "qualityScore": 3.0,
   "priceEUR": {
@@ -5094,7 +5761,10 @@
    "zacini"
   ],
   "additiveStatus": "flavored",
-  "additiveDetail": "Dodane arome (vanilija, cimet) i secer",
+  "additiveDetail": {
+   "hr": "Dodane arome (vanilija, cimet) i secer",
+   "en": "Added flavourings (vanilla, cinnamon) and sugar"
+  },
   "additiveSource": "Procjena (nije lab/hydro)",
   "qualityScore": 5.0,
   "priceEUR": {
@@ -5112,7 +5782,10 @@
    "cola": 3,
    "best": "Koktel / cola"
   },
-  "cigarHint": "Nije za cigaru (aromatizirano)",
+  "cigarHint": {
+   "hr": "Uz koktel ili desert",
+   "en": "With a cocktail or dessert"
+  },
   "priceUrl": null,
   "notes": {
    "hr": "Karipska baza na 46% s dodanom vanilijom i cimetom; jači spiced standard.",
@@ -5124,12 +5797,15 @@
   "category": "rum",
   "name": "Stroh 80 (Austrija)",
   "style": "mixing",
-  "region": "Austrija (Inlander rum)",
+  "region": "Austrija (Inländer rum)",
   "body": 1,
   "sweetness": 4,
   "flavorTags": [],
   "additiveStatus": "sweetened",
-  "additiveDetail": "Aromatiziran (Inlander stil), 80%",
+  "additiveDetail": {
+   "hr": "Aromatiziran (Inlander stil), 80%",
+   "en": "Flavoured (Inländer style), 80%"
+  },
   "additiveSource": "Procjena (nije lab/hydro)",
   "qualityScore": 5.0,
   "priceEUR": {
@@ -5167,7 +5843,10 @@
    "zacini"
   ],
   "additiveStatus": "flavored",
-  "additiveDetail": "Dodane vocne arome i secer",
+  "additiveDetail": {
+   "hr": "Dodane vocne arome i secer",
+   "en": "Added fruit flavourings and sugar"
+  },
   "additiveSource": "Procjena (nije lab/hydro)",
   "qualityScore": 4.0,
   "priceEUR": {
@@ -5204,7 +5883,10 @@
    "slatko"
   ],
   "additiveStatus": "flavored",
-  "additiveDetail": "Krem liker 15% (mlijecna baza, secer, arome)",
+  "additiveDetail": {
+   "hr": "Krem liker 15% (mlijecna baza, secer, arome)",
+   "en": "Cream liqueur, 15% (dairy base, sugar, flavourings)"
+  },
   "additiveSource": "Procjena (nije lab/hydro)",
   "qualityScore": 4.5,
   "priceEUR": {
@@ -5241,7 +5923,10 @@
    "slatko"
   ],
   "additiveStatus": "flavored",
-  "additiveDetail": "Kokosov liker 21% (secer i aroma kokosa)",
+  "additiveDetail": {
+   "hr": "Kokosov liker 21% (secer i aroma kokosa)",
+   "en": "Coconut liqueur, 21% (sugar and coconut flavouring)"
+  },
   "additiveSource": "Procjena (nije lab/hydro)",
   "qualityScore": 5.0,
   "priceEUR": {
