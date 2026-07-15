@@ -1,5 +1,6 @@
 import { createContext, useContext, useState, type ReactNode } from "react";
 import type { Lang, LocalizedText } from "../types";
+import { REGION_LABELS } from "./regions";
 
 const STRINGS = {
   // navigacija
@@ -284,6 +285,44 @@ export const SERVING_LABELS: Record<string, string> = {
   "Ohladjeno, 8-10 C": "Chilled, 8–10 °C",
   "Dobro ohladjeno, 6-8 C": "Well chilled, 6–8 °C",
   "Mala casa, 10-12 C": "Small glass, 10–12 °C",
+  "Cisti ili martini": "Neat or a martini",
+  "Cisto / Sazerac koktel": "Neat / a Sazerac",
+  "Cisto / daiquiri": "Neat / a daiquiri",
+  "Cisto / kap vode (otvara dim)": "Neat / a drop of water (opens the smoke)",
+  "Cisto / koktel": "Neat / a cocktail",
+  "Cisto / lagano ohlađeno": "Neat / lightly chilled",
+  "Cisto / mala kocka leda": "Neat / a small ice cube",
+  "Cisto ili velika kocka leda": "Neat or a large ice cube",
+  "Daiquiri / Dark'n'Stormy": "Daiquiri / Dark'n'Stormy",
+  "Doppio (60 ml)": "Doppio (60 ml)",
+  "Džezva, polako, uz rahat-lokum": "Cezve, slowly, with Turkish delight",
+  "Espresso": "Espresso",
+  "Espresso (30 ml)": "Espresso (30 ml)",
+  "Espresso (30-36 ml)": "Espresso (30–36 ml)",
+  "Espresso + 43/Licor, brandy ili rum": "Espresso + Licor 43, brandy or rum",
+  "Espresso / cafecito sa šećerom": "Espresso / cafecito with sugar",
+  "Espresso / moka / filter": "Espresso / moka / filter",
+  "Filter / aeropress": "Filter / AeroPress",
+  "Filter / espresso": "Filter / espresso",
+  "Filter / espresso, večer": "Filter / espresso, evening",
+  "Filter / french press": "Filter / French press",
+  "Filter, bez mlijeka": "Filter, no milk",
+  "French press / filter": "French press / filter",
+  "French press, 4 min": "French press, 4 min",
+  "G&T ili martini": "G&T or a martini",
+  "Hladno, velika kocka leda": "Cold, a large ice cube",
+  "Jutro, uz laganu cigaru": "Morning, with a mild cigar",
+  "Kap vode ILI highball": "A drop of water OR a highball",
+  "Koktel / RTD": "Cocktail / RTD",
+  "Koktel / cola": "Cocktail / cola",
+  "Macchiato": "Macchiato",
+  "Moka, kućni ritual": "Moka pot, the home ritual",
+  "On the rocks": "On the rocks",
+  "Ristretto (20 ml)": "Ristretto (20 ml)",
+  "Topao, sa šlagom": "Warm, with whipped cream",
+  "V60 / aeropress": "V60 / AeroPress",
+  "V60 / pour-over": "V60 / pour-over",
+  "Velika kocka leda ILI kap vode": "A large ice cube OR a drop of water",
 };
 
 export const ADDITIVE_LABELS: Record<string, LocalizedText> = {
@@ -329,6 +368,7 @@ interface I18nCtx {
   lx: (text: LocalizedText | undefined | null) => string;
   cn: (country: string) => string; // ime zemlje u aktivnom jeziku
   sv: (serving: string) => string; // nacin serviranja u aktivnom jeziku
+  rgn: (region: string) => string; // regija pica u aktivnom jeziku
 }
 
 const Ctx = createContext<I18nCtx>(null!);
@@ -351,8 +391,10 @@ export function I18nProvider({ children }: { children: ReactNode }) {
     lang === "en" ? (COUNTRY_LABELS[country] ?? country) : country;
   const sv = (serving: string) =>
     lang === "en" ? (SERVING_LABELS[serving] ?? serving) : serving;
+  const rgn = (region: string) =>
+    lang === "en" ? (REGION_LABELS[region] ?? region) : region;
   return (
-    <Ctx.Provider value={{ lang, setLang, t, lx, cn, sv }}>{children}</Ctx.Provider>
+    <Ctx.Provider value={{ lang, setLang, t, lx, cn, sv, rgn }}>{children}</Ctx.Provider>
   );
 }
 

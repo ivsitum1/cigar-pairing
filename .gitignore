@@ -5,3 +5,6 @@ Konjak_Brandy_Checklist.xlsx
 ~$*.xlsx
 # generirani indeksi (python app/scripts/export-indexes.py)
 *_Index.xlsx
+
+# python cache
+__pycache__/

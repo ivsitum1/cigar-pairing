@@ -1,25 +1,662 @@
 [
-  {"id": "cf-espresso-italian-dark", "category": "coffee", "name": "Espresso — talijanska tamna mješavina (80/20)", "style": "espresso-dark", "region": "Italija (blend)", "country": "—", "abv": null, "body": 5, "sweetness": 2, "flavorTags": ["kakao", "dim", "zemljano", "karamela", "gorko"], "qualityScore": 7, "priceEUR": null, "shopHR": "svugdje", "pairable": true, "serving": {"best": "Espresso (30 ml)"}, "cigarHint": null, "notes": {"hr": "Klasični bar espresso s robustom — gust, gorak, intenzivan. Nosi maduro i punu cigaru.", "en": "Classic bar espresso with robusta — dense, bitter, intense. Carries maduro and full cigars."}},
-  {"id": "cf-espresso-arabica-medium", "category": "coffee", "name": "Espresso — 100% arabica, medium roast", "style": "espresso-medium", "region": "specialty blend", "country": "—", "abv": null, "body": 4, "sweetness": 3, "flavorTags": ["kakao", "karamela", "orasasti", "voce"], "qualityScore": 8, "priceEUR": null, "shopHR": "Cogito / Quahwa (Zagreb specialty)", "pairable": true, "serving": {"best": "Espresso (30-36 ml)"}, "cigarHint": null, "notes": {"hr": "Specialty espresso — slađi i voćniji od bar mješavine, uz srednje cigare.", "en": "Specialty espresso — sweeter and fruitier than bar blends, with medium cigars."}},
-  {"id": "cf-ristretto", "category": "coffee", "name": "Ristretto", "style": "espresso-dark", "region": "—", "country": "—", "abv": null, "body": 5, "sweetness": 2, "flavorTags": ["kakao", "karamela", "gorko"], "qualityScore": 7, "priceEUR": null, "shopHR": "svugdje", "pairable": true, "serving": {"best": "Ristretto (20 ml)"}, "cigarHint": null, "notes": {"hr": "Koncentriraniji, slađi ekstrakt — mali gutljaji uz jaku, kratku cigaru.", "en": "More concentrated, sweeter extraction — small sips with a strong short cigar."}},
-  {"id": "cf-doppio", "category": "coffee", "name": "Doppio espresso", "style": "espresso-dark", "region": "—", "country": "—", "abv": null, "body": 5, "sweetness": 1, "flavorTags": ["kakao", "gorko", "zemljano", "dim"], "qualityScore": 7, "priceEUR": null, "shopHR": "svugdje", "pairable": true, "serving": {"best": "Doppio (60 ml)"}, "cigarHint": null, "notes": {"hr": "Dupla doza za dugu, punu cigaru — standard cigar-lounge kombinacija.", "en": "Double dose for a long full cigar — the standard cigar-lounge combination."}},
-  {"id": "cf-turska", "category": "coffee", "name": "Turska / domaća kava (džezva)", "style": "turkish", "region": "Balkan / Turska", "country": "—", "abv": null, "body": 5, "sweetness": 2, "flavorTags": ["zemljano", "kakao", "gorko", "zacini"], "qualityScore": 7.5, "priceEUR": null, "shopHR": "svugdje", "pairable": true, "serving": {"best": "Džezva, polako, uz rahat-lokum"}, "cigarHint": null, "notes": {"hr": "Gusta, mutna, meditativna — tradicionalni par snažnim i zemljanim cigarama. Sa šećerom postaje most prema maduru.", "en": "Thick, muddy, meditative — the traditional partner of strong earthy cigars. With sugar it bridges to maduro."}},
-  {"id": "cf-moka-pot", "category": "coffee", "name": "Moka pot (Bialetti)", "style": "moka", "region": "Italija", "country": "—", "abv": null, "body": 4, "sweetness": 2, "flavorTags": ["kakao", "karamela", "zemljano"], "qualityScore": 7, "priceEUR": null, "shopHR": "svugdje", "pairable": true, "serving": {"best": "Moka, kućni ritual"}, "cigarHint": null, "notes": {"hr": "Kućni talijanski standard — jači od filtera, mekši od espressa.", "en": "The Italian home standard — stronger than filter, softer than espresso."}},
-  {"id": "cf-v60-ethiopia", "category": "coffee", "name": "V60 filter — Etiopija Yirgacheffe (light roast)", "style": "filter-light", "region": "Yirgacheffe, Etiopija", "country": "Etiopija", "abv": null, "body": 1, "sweetness": 3, "flavorTags": ["cvjetno", "citrus", "voce", "caj"], "qualityScore": 8.5, "priceEUR": null, "shopHR": "Cogito / Quahwa", "pairable": true, "serving": {"best": "V60 / pour-over"}, "cigarHint": null, "notes": {"hr": "Cvjetno-citrusna, čajna — samo uz najblaže Connecticut cigare, inače je dim pregazi.", "en": "Floral-citrus, tea-like — only with the mildest Connecticut cigars or the smoke drowns it."}},
-  {"id": "cf-v60-kenya", "category": "coffee", "name": "Filter — Kenija AA (light-medium)", "style": "filter-light", "region": "Nyeri, Kenija", "country": "Kenija", "abv": null, "body": 2, "sweetness": 3, "flavorTags": ["citrus", "ribiz", "voce", "vino"], "qualityScore": 8.5, "priceEUR": null, "shopHR": "Cogito / Quahwa", "pairable": true, "serving": {"best": "V60 / aeropress"}, "cigarHint": null, "notes": {"hr": "Svijetla kiselost crnog ribiza — uz blage, svježe cigare.", "en": "Bright blackcurrant acidity — with mild fresh cigars."}},
-  {"id": "cf-colombia-medium", "category": "coffee", "name": "Filter — Kolumbija (medium roast)", "style": "filter-medium", "region": "Huila, Kolumbija", "country": "Kolumbija", "abv": null, "body": 3, "sweetness": 3, "flavorTags": ["karamela", "voce", "orasasti", "kakao"], "qualityScore": 8, "priceEUR": null, "shopHR": "Cogito / Quahwa", "pairable": true, "serving": {"best": "Filter / french press"}, "cigarHint": null, "notes": {"hr": "Uravnotežena klasika — karamela i jabuka, svestrana uz srednje cigare.", "en": "The balanced classic — caramel and apple, versatile with medium cigars."}},
-  {"id": "cf-brazil-santos", "category": "coffee", "name": "Brazil Santos / Cerrado (medium)", "style": "filter-medium", "region": "Minas Gerais, Brazil", "country": "Brazil", "abv": null, "body": 4, "sweetness": 3, "flavorTags": ["orasasti", "kakao", "karamela"], "qualityScore": 7.5, "priceEUR": null, "shopHR": "svugdje / specialty", "pairable": true, "serving": {"best": "Espresso / moka / filter"}, "cigarHint": null, "notes": {"hr": "Orašasto-čokoladni, niska kiselost — najsigurniji pairing default za većinu cigara.", "en": "Nutty-chocolatey, low acidity — the safest pairing default for most cigars."}},
-  {"id": "cf-guatemala-antigua", "category": "coffee", "name": "Gvatemala Antigua (medium)", "style": "filter-medium", "region": "Antigua, Gvatemala", "country": "Gvatemala", "abv": null, "body": 3, "sweetness": 3, "flavorTags": ["kakao", "zacini", "voce", "dim"], "qualityScore": 8, "priceEUR": null, "shopHR": "Cogito / Quahwa", "pairable": true, "serving": {"best": "Filter / espresso"}, "cigarHint": null, "notes": {"hr": "Vulkanska kava — kakao sa začinima i daškom dima, voli Habano wrapper.", "en": "Volcanic coffee — cocoa with spice and a whiff of smoke, loves Habano wrappers."}},
-  {"id": "cf-sumatra-mandheling", "category": "coffee", "name": "Sumatra Mandheling (dark)", "style": "filter-dark", "region": "Sumatra, Indonezija", "country": "Indonezija", "abv": null, "body": 5, "sweetness": 2, "flavorTags": ["zemljano", "koza", "kakao", "zacini"], "qualityScore": 8, "priceEUR": null, "shopHR": "specialty", "pairable": true, "serving": {"best": "French press / filter"}, "cigarHint": null, "notes": {"hr": "Zemljana, teška, sirupasta — kava koja izgleda i ponaša se kao maduro cigara.", "en": "Earthy, heavy, syrupy — the coffee that looks and acts like a maduro cigar."}},
-  {"id": "cf-monsooned-malabar", "category": "coffee", "name": "India Monsooned Malabar (espresso)", "style": "espresso-dark", "region": "Malabar, Indija", "country": "Indija", "abv": null, "body": 5, "sweetness": 2, "flavorTags": ["zemljano", "zacini", "duhan", "kakao"], "qualityScore": 7.5, "priceEUR": null, "shopHR": "specialty", "pairable": true, "serving": {"best": "Espresso"}, "cigarHint": null, "notes": {"hr": "Monsunska obrada daje duhansko-zemljani profil bez kiselosti — prirodan srodnik cigare.", "en": "Monsooning gives a tobacco-earth profile with no acidity — the cigar's natural relative."}},
-  {"id": "cf-cuba-serrano", "category": "coffee", "name": "Cubita / Cuba Serrano (dark)", "style": "espresso-dark", "region": "Sierra Maestra, Kuba", "country": "Kuba", "abv": null, "body": 4, "sweetness": 3, "flavorTags": ["kakao", "duhan", "karamela", "zemljano"], "qualityScore": 7.5, "priceEUR": null, "shopHR": "specialty / havana shop", "pairable": true, "serving": {"best": "Espresso / cafecito sa šećerom"}, "cigarHint": null, "notes": {"hr": "Kubanska kava uz kubansku cigaru — logičan teritorijalni spoj; cafecito sa šećerom klasika.", "en": "Cuban coffee with a Cuban cigar — the logical terroir match; sweet cafecito is the classic."}},
-  {"id": "cf-jamaica-blue-mountain", "category": "coffee", "name": "Jamaica Blue Mountain (medium)", "style": "filter-medium", "region": "Blue Mountains, Jamajka", "country": "Jamajka", "abv": null, "body": 3, "sweetness": 4, "flavorTags": ["med", "orasasti", "cvjetno", "kakao"], "qualityScore": 8.5, "priceEUR": null, "shopHR": "specialty (skupo)", "pairable": true, "serving": {"best": "Filter, bez mlijeka"}, "cigarHint": null, "notes": {"hr": "Luksuzno glatka, bez gorčine — special occasion uz Davidoff ili Cohibu.", "en": "Luxuriously smooth, no bitterness — special occasion with a Davidoff or Cohiba."}},
-  {"id": "cf-ethiopia-natural", "category": "coffee", "name": "Etiopija natural process (medium-light)", "style": "filter-light", "region": "Sidamo/Guji, Etiopija", "country": "Etiopija", "abv": null, "body": 3, "sweetness": 4, "flavorTags": ["voce", "borovnica", "cvjetno", "vino"], "qualityScore": 8, "priceEUR": null, "shopHR": "Cogito / Quahwa", "pairable": true, "serving": {"best": "Filter / aeropress"}, "cigarHint": null, "notes": {"hr": "Voćna bomba (borovnica, vino) — kontrast-pairing uz začinsku cigaru.", "en": "A fruit bomb (blueberry, wine) — contrast pairing with a spicy cigar."}},
-  {"id": "cf-french-press-dark", "category": "coffee", "name": "French press — tamna mješavina", "style": "filter-dark", "region": "blend", "country": "—", "abv": null, "body": 4, "sweetness": 2, "flavorTags": ["kakao", "zemljano", "karamela"], "qualityScore": 7, "priceEUR": null, "shopHR": "svugdje", "pairable": true, "serving": {"best": "French press, 4 min"}, "cigarHint": null, "notes": {"hr": "Puna tekstura s taloškom — duga šalica za dugu cigaru.", "en": "Full texture with sediment — a long cup for a long cigar."}},
-  {"id": "cf-cold-brew", "category": "coffee", "name": "Cold brew", "style": "cold", "region": "—", "country": "—", "abv": null, "body": 3, "sweetness": 3, "flavorTags": ["kakao", "karamela", "gladak"], "qualityScore": 7, "priceEUR": null, "shopHR": "svugdje / doma", "pairable": true, "serving": {"best": "Hladno, velika kocka leda"}, "cigarHint": null, "notes": {"hr": "Niska kiselost, čokoladna glatkoća — ljetni pairing uz srednju cigaru na terasi.", "en": "Low acidity, chocolate smoothness — the summer terrace pairing with a medium cigar."}},
-  {"id": "cf-cappuccino", "category": "coffee", "name": "Cappuccino / flat white", "style": "milk", "region": "—", "country": "—", "abv": null, "body": 3, "sweetness": 4, "flavorTags": ["kremasto", "karamela", "kakao", "mlijeko"], "qualityScore": 7, "priceEUR": null, "shopHR": "svugdje", "pairable": true, "serving": {"best": "Jutro, uz laganu cigaru"}, "cigarHint": null, "notes": {"hr": "Mliječna kremastost prigušuje gorčinu — omekšava pairing, ide uz Connecticut.", "en": "Milk creaminess mutes bitterness — softens the pairing, goes with Connecticut."}},
-  {"id": "cf-espresso-macchiato", "category": "coffee", "name": "Espresso macchiato", "style": "milk", "region": "—", "country": "—", "abv": null, "body": 4, "sweetness": 3, "flavorTags": ["kakao", "kremasto", "karamela"], "qualityScore": 7, "priceEUR": null, "shopHR": "svugdje", "pairable": true, "serving": {"best": "Macchiato"}, "cigarHint": null, "notes": {"hr": "Espresso s kapi mlijeka — zadržava snagu, dodaje mekoću.", "en": "Espresso with a dash of milk — keeps the power, adds softness."}},
-  {"id": "cf-irish-coffee", "category": "coffee", "name": "Irish coffee", "style": "spiked", "region": "Irska", "country": "—", "abv": 8, "body": 4, "sweetness": 4, "flavorTags": ["kremasto", "karamela", "viski", "slatko"], "qualityScore": 7, "priceEUR": null, "shopHR": "doma", "pairable": true, "serving": {"best": "Topao, sa šlagom"}, "cigarHint": null, "notes": {"hr": "Kava + irski viski + šlag — dvostruki pairing u jednoj čaši, uz srednju cigaru.", "en": "Coffee + Irish whiskey + cream — a double pairing in one glass, with a medium cigar."}},
-  {"id": "cf-carajillo", "category": "coffee", "name": "Carajillo / caffè corretto (s rumom ili brandyjem)", "style": "spiked", "region": "Španjolska / Italija", "country": "—", "abv": 12, "body": 4, "sweetness": 3, "flavorTags": ["kakao", "karamela", "slatko"], "qualityScore": 7, "priceEUR": null, "shopHR": "doma", "pairable": true, "serving": {"best": "Espresso + 43/Licor, brandy ili rum"}, "cigarHint": null, "notes": {"hr": "'Popravljena' kava — espresso ojačan žesticom; mediteranska cigar tradicija.", "en": "'Corrected' coffee — espresso fortified with spirit; a Mediterranean cigar tradition."}},
-  {"id": "cf-decaf-quality", "category": "coffee", "name": "Specialty decaf (sugarcane process)", "style": "filter-medium", "region": "Kolumbija (EA decaf)", "country": "Kolumbija", "abv": null, "body": 3, "sweetness": 3, "flavorTags": ["karamela", "kakao", "voce"], "qualityScore": 7, "priceEUR": null, "shopHR": "Cogito / Quahwa", "pairable": true, "serving": {"best": "Filter / espresso, večer"}, "cigarHint": null, "notes": {"hr": "Večernja cigara bez kofeina — moderna decaf obrada čuva okus.", "en": "An evening cigar without caffeine — modern decaf processing keeps the flavour."}}
+ {
+  "id": "cf-espresso-italian-dark",
+  "category": "coffee",
+  "name": "Espresso — talijanska tamna mješavina (80/20)",
+  "style": "espresso-dark",
+  "region": "Italija (blend)",
+  "country": "—",
+  "abv": null,
+  "body": 5,
+  "sweetness": 2,
+  "flavorTags": [
+   "kakao",
+   "dim",
+   "zemljano",
+   "karamela",
+   "gorko"
+  ],
+  "qualityScore": 7,
+  "priceEUR": null,
+  "shopHR": "svugdje",
+  "pairable": true,
+  "serving": {
+   "best": "Espresso (30 ml)"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Klasični bar espresso s robustom — gust, gorak, intenzivan. Nosi maduro i punu cigaru.",
+   "en": "Classic bar espresso with robusta — dense, bitter, intense. Carries maduro and full cigars."
+  }
+ },
+ {
+  "id": "cf-espresso-arabica-medium",
+  "category": "coffee",
+  "name": "Espresso — 100% arabica, medium roast",
+  "style": "espresso-medium",
+  "region": "specialty blend",
+  "country": "—",
+  "abv": null,
+  "body": 4,
+  "sweetness": 3,
+  "flavorTags": [
+   "kakao",
+   "karamela",
+   "orasasti",
+   "voce"
+  ],
+  "qualityScore": 8,
+  "priceEUR": null,
+  "shopHR": "Cogito / Quahwa (Zagreb specialty)",
+  "pairable": true,
+  "serving": {
+   "best": "Espresso (30-36 ml)"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Specialty espresso — slađi i voćniji od bar mješavine, uz srednje cigare.",
+   "en": "Specialty espresso — sweeter and fruitier than bar blends, with medium cigars."
+  }
+ },
+ {
+  "id": "cf-ristretto",
+  "category": "coffee",
+  "name": "Ristretto",
+  "style": "espresso-dark",
+  "region": "—",
+  "country": "—",
+  "abv": null,
+  "body": 5,
+  "sweetness": 2,
+  "flavorTags": [
+   "kakao",
+   "karamela",
+   "gorko"
+  ],
+  "qualityScore": 7,
+  "priceEUR": null,
+  "shopHR": "svugdje",
+  "pairable": true,
+  "serving": {
+   "best": "Ristretto (20 ml)"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Koncentriraniji, slađi ekstrakt — mali gutljaji uz jaku, kratku cigaru.",
+   "en": "More concentrated, sweeter extraction — small sips with a strong short cigar."
+  }
+ },
+ {
+  "id": "cf-doppio",
+  "category": "coffee",
+  "name": "Doppio espresso",
+  "style": "espresso-dark",
+  "region": "—",
+  "country": "—",
+  "abv": null,
+  "body": 5,
+  "sweetness": 1,
+  "flavorTags": [
+   "kakao",
+   "gorko",
+   "zemljano",
+   "dim"
+  ],
+  "qualityScore": 7,
+  "priceEUR": null,
+  "shopHR": "svugdje",
+  "pairable": true,
+  "serving": {
+   "best": "Doppio (60 ml)"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Dupla doza za dugu, punu cigaru — standard cigar-lounge kombinacija.",
+   "en": "Double dose for a long full cigar — the standard cigar-lounge combination."
+  }
+ },
+ {
+  "id": "cf-turska",
+  "category": "coffee",
+  "name": "Turska / domaća kava (džezva)",
+  "style": "turkish",
+  "region": "Balkan / Turska",
+  "country": "—",
+  "abv": null,
+  "body": 5,
+  "sweetness": 2,
+  "flavorTags": [
+   "zemljano",
+   "kakao",
+   "gorko",
+   "zacini"
+  ],
+  "qualityScore": 7.5,
+  "priceEUR": null,
+  "shopHR": "svugdje",
+  "pairable": true,
+  "serving": {
+   "best": "Džezva, polako, uz rahat-lokum"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Gusta, mutna, meditativna — tradicionalni par snažnim i zemljanim cigarama. Sa šećerom postaje most prema maduru.",
+   "en": "Thick, muddy, meditative — the traditional partner of strong earthy cigars. With sugar it bridges to maduro."
+  }
+ },
+ {
+  "id": "cf-moka-pot",
+  "category": "coffee",
+  "name": "Moka pot (Bialetti)",
+  "style": "moka",
+  "region": "Italija",
+  "country": "—",
+  "abv": null,
+  "body": 4,
+  "sweetness": 2,
+  "flavorTags": [
+   "kakao",
+   "karamela",
+   "zemljano"
+  ],
+  "qualityScore": 7,
+  "priceEUR": null,
+  "shopHR": "svugdje",
+  "pairable": true,
+  "serving": {
+   "best": "Moka, kućni ritual"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Kućni talijanski standard — jači od filtera, mekši od espressa.",
+   "en": "The Italian home standard — stronger than filter, softer than espresso."
+  }
+ },
+ {
+  "id": "cf-v60-ethiopia",
+  "category": "coffee",
+  "name": "V60 filter — Etiopija Yirgacheffe (light roast)",
+  "style": "filter-light",
+  "region": "Yirgacheffe, Etiopija",
+  "country": "Etiopija",
+  "abv": null,
+  "body": 1,
+  "sweetness": 3,
+  "flavorTags": [
+   "cvjetno",
+   "citrus",
+   "voce",
+   "caj"
+  ],
+  "qualityScore": 8.5,
+  "priceEUR": null,
+  "shopHR": "Cogito / Quahwa",
+  "pairable": true,
+  "serving": {
+   "best": "V60 / pour-over"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Cvjetno-citrusna, čajna — samo uz najblaže Connecticut cigare, inače je dim pregazi.",
+   "en": "Floral-citrus, tea-like — only with the mildest Connecticut cigars or the smoke drowns it."
+  }
+ },
+ {
+  "id": "cf-v60-kenya",
+  "category": "coffee",
+  "name": "Filter — Kenija AA (light-medium)",
+  "style": "filter-light",
+  "region": "Nyeri, Kenija",
+  "country": "Kenija",
+  "abv": null,
+  "body": 2,
+  "sweetness": 3,
+  "flavorTags": [
+   "citrus",
+   "ribiz",
+   "voce",
+   "vino"
+  ],
+  "qualityScore": 8.5,
+  "priceEUR": null,
+  "shopHR": "Cogito / Quahwa",
+  "pairable": true,
+  "serving": {
+   "best": "V60 / aeropress"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Svijetla kiselost crnog ribiza — uz blage, svježe cigare.",
+   "en": "Bright blackcurrant acidity — with mild fresh cigars."
+  }
+ },
+ {
+  "id": "cf-colombia-medium",
+  "category": "coffee",
+  "name": "Filter — Kolumbija (medium roast)",
+  "style": "filter-medium",
+  "region": "Huila, Kolumbija",
+  "country": "Kolumbija",
+  "abv": null,
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "karamela",
+   "voce",
+   "orasasti",
+   "kakao"
+  ],
+  "qualityScore": 8,
+  "priceEUR": null,
+  "shopHR": "Cogito / Quahwa",
+  "pairable": true,
+  "serving": {
+   "best": "Filter / french press"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Uravnotežena klasika — karamela i jabuka, svestrana uz srednje cigare.",
+   "en": "The balanced classic — caramel and apple, versatile with medium cigars."
+  }
+ },
+ {
+  "id": "cf-brazil-santos",
+  "category": "coffee",
+  "name": "Brazil Santos / Cerrado (medium)",
+  "style": "filter-medium",
+  "region": "Minas Gerais, Brazil",
+  "country": "Brazil",
+  "abv": null,
+  "body": 4,
+  "sweetness": 3,
+  "flavorTags": [
+   "orasasti",
+   "kakao",
+   "karamela"
+  ],
+  "qualityScore": 7.5,
+  "priceEUR": null,
+  "shopHR": "svugdje / specialty",
+  "pairable": true,
+  "serving": {
+   "best": "Espresso / moka / filter"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Orašasto-čokoladni, niska kiselost — najsigurniji pairing default za većinu cigara.",
+   "en": "Nutty-chocolatey, low acidity — the safest pairing default for most cigars."
+  }
+ },
+ {
+  "id": "cf-guatemala-antigua",
+  "category": "coffee",
+  "name": "Gvatemala Antigua (medium)",
+  "style": "filter-medium",
+  "region": "Antigua, Gvatemala",
+  "country": "Gvatemala",
+  "abv": null,
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "kakao",
+   "zacini",
+   "voce",
+   "dim"
+  ],
+  "qualityScore": 8,
+  "priceEUR": null,
+  "shopHR": "Cogito / Quahwa",
+  "pairable": true,
+  "serving": {
+   "best": "Filter / espresso"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Vulkanska kava — kakao sa začinima i daškom dima, voli Habano wrapper.",
+   "en": "Volcanic coffee — cocoa with spice and a whiff of smoke, loves Habano wrappers."
+  }
+ },
+ {
+  "id": "cf-sumatra-mandheling",
+  "category": "coffee",
+  "name": "Sumatra Mandheling (dark)",
+  "style": "filter-dark",
+  "region": "Sumatra, Indonezija",
+  "country": "Indonezija",
+  "abv": null,
+  "body": 5,
+  "sweetness": 2,
+  "flavorTags": [
+   "zemljano",
+   "koza",
+   "kakao",
+   "zacini"
+  ],
+  "qualityScore": 8,
+  "priceEUR": null,
+  "shopHR": "specialty",
+  "pairable": true,
+  "serving": {
+   "best": "French press / filter"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Zemljana, teška, sirupasta — kava koja izgleda i ponaša se kao maduro cigara.",
+   "en": "Earthy, heavy, syrupy — the coffee that looks and acts like a maduro cigar."
+  }
+ },
+ {
+  "id": "cf-monsooned-malabar",
+  "category": "coffee",
+  "name": "India Monsooned Malabar (espresso)",
+  "style": "espresso-dark",
+  "region": "Malabar, Indija",
+  "country": "Indija",
+  "abv": null,
+  "body": 5,
+  "sweetness": 2,
+  "flavorTags": [
+   "zemljano",
+   "zacini",
+   "duhan",
+   "kakao"
+  ],
+  "qualityScore": 7.5,
+  "priceEUR": null,
+  "shopHR": "specialty",
+  "pairable": true,
+  "serving": {
+   "best": "Espresso"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Monsunska obrada daje duhansko-zemljani profil bez kiselosti — prirodan srodnik cigare.",
+   "en": "Monsooning gives a tobacco-earth profile with no acidity — the cigar's natural relative."
+  }
+ },
+ {
+  "id": "cf-cuba-serrano",
+  "category": "coffee",
+  "name": "Cubita / Cuba Serrano (dark)",
+  "style": "espresso-dark",
+  "region": "Sierra Maestra, Kuba",
+  "country": "Kuba",
+  "abv": null,
+  "body": 4,
+  "sweetness": 3,
+  "flavorTags": [
+   "kakao",
+   "duhan",
+   "karamela",
+   "zemljano"
+  ],
+  "qualityScore": 7.5,
+  "priceEUR": null,
+  "shopHR": "specialty / havana shop",
+  "pairable": true,
+  "serving": {
+   "best": "Espresso / cafecito sa šećerom"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Kubanska kava uz kubansku cigaru — logičan teritorijalni spoj; cafecito sa šećerom klasika.",
+   "en": "Cuban coffee with a Cuban cigar — the logical terroir match; sweet cafecito is the classic."
+  }
+ },
+ {
+  "id": "cf-jamaica-blue-mountain",
+  "category": "coffee",
+  "name": "Jamaica Blue Mountain (medium)",
+  "style": "filter-medium",
+  "region": "Blue Mountains, Jamajka",
+  "country": "Jamajka",
+  "abv": null,
+  "body": 3,
+  "sweetness": 4,
+  "flavorTags": [
+   "med",
+   "orasasti",
+   "cvjetno",
+   "kakao"
+  ],
+  "qualityScore": 8.5,
+  "priceEUR": null,
+  "shopHR": "specialty (skupo)",
+  "pairable": true,
+  "serving": {
+   "best": "Filter, bez mlijeka"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Luksuzno glatka, bez gorčine — special occasion uz Davidoff ili Cohibu.",
+   "en": "Luxuriously smooth, no bitterness — special occasion with a Davidoff or Cohiba."
+  }
+ },
+ {
+  "id": "cf-ethiopia-natural",
+  "category": "coffee",
+  "name": "Etiopija natural process (medium-light)",
+  "style": "filter-light",
+  "region": "Sidamo/Guji, Etiopija",
+  "country": "Etiopija",
+  "abv": null,
+  "body": 3,
+  "sweetness": 4,
+  "flavorTags": [
+   "voce",
+   "borovnica",
+   "cvjetno",
+   "vino"
+  ],
+  "qualityScore": 8,
+  "priceEUR": null,
+  "shopHR": "Cogito / Quahwa",
+  "pairable": true,
+  "serving": {
+   "best": "Filter / aeropress"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Voćna bomba (borovnica, vino) — kontrast-pairing uz začinsku cigaru.",
+   "en": "A fruit bomb (blueberry, wine) — contrast pairing with a spicy cigar."
+  }
+ },
+ {
+  "id": "cf-french-press-dark",
+  "category": "coffee",
+  "name": "French press — tamna mješavina",
+  "style": "filter-dark",
+  "region": "blend",
+  "country": "—",
+  "abv": null,
+  "body": 4,
+  "sweetness": 2,
+  "flavorTags": [
+   "kakao",
+   "zemljano",
+   "karamela"
+  ],
+  "qualityScore": 7,
+  "priceEUR": null,
+  "shopHR": "svugdje",
+  "pairable": true,
+  "serving": {
+   "best": "French press, 4 min"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Puna tekstura s taloškom — duga šalica za dugu cigaru.",
+   "en": "Full texture with sediment — a long cup for a long cigar."
+  }
+ },
+ {
+  "id": "cf-cold-brew",
+  "category": "coffee",
+  "name": "Cold brew",
+  "style": "cold",
+  "region": "—",
+  "country": "—",
+  "abv": null,
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "kakao",
+   "karamela",
+   "gladak"
+  ],
+  "qualityScore": 7,
+  "priceEUR": null,
+  "shopHR": "svugdje / doma",
+  "pairable": true,
+  "serving": {
+   "best": "Hladno, velika kocka leda"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Niska kiselost, čokoladna glatkoća — ljetni pairing uz srednju cigaru na terasi.",
+   "en": "Low acidity, chocolate smoothness — the summer terrace pairing with a medium cigar."
+  }
+ },
+ {
+  "id": "cf-cappuccino",
+  "category": "coffee",
+  "name": "Cappuccino / flat white",
+  "style": "milk",
+  "region": "—",
+  "country": "—",
+  "abv": null,
+  "body": 3,
+  "sweetness": 4,
+  "flavorTags": [
+   "kremasto",
+   "karamela",
+   "kakao",
+   "mlijeko"
+  ],
+  "qualityScore": 7,
+  "priceEUR": null,
+  "shopHR": "svugdje",
+  "pairable": true,
+  "serving": {
+   "best": "Jutro, uz laganu cigaru"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Mliječna kremastost prigušuje gorčinu — omekšava pairing, ide uz Connecticut.",
+   "en": "Milk creaminess mutes bitterness — softens the pairing, goes with Connecticut."
+  }
+ },
+ {
+  "id": "cf-espresso-macchiato",
+  "category": "coffee",
+  "name": "Espresso macchiato",
+  "style": "milk",
+  "region": "—",
+  "country": "—",
+  "abv": null,
+  "body": 4,
+  "sweetness": 3,
+  "flavorTags": [
+   "kakao",
+   "kremasto",
+   "karamela"
+  ],
+  "qualityScore": 7,
+  "priceEUR": null,
+  "shopHR": "svugdje",
+  "pairable": true,
+  "serving": {
+   "best": "Macchiato"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Espresso s kapi mlijeka — zadržava snagu, dodaje mekoću.",
+   "en": "Espresso with a dash of milk — keeps the power, adds softness."
+  }
+ },
+ {
+  "id": "cf-irish-coffee",
+  "category": "coffee",
+  "name": "Irish coffee",
+  "style": "spiked",
+  "region": "Irska",
+  "country": "—",
+  "abv": 8,
+  "body": 4,
+  "sweetness": 4,
+  "flavorTags": [
+   "kremasto",
+   "karamela",
+   "viski",
+   "slatko"
+  ],
+  "qualityScore": 7,
+  "priceEUR": null,
+  "shopHR": "doma",
+  "pairable": true,
+  "serving": {
+   "best": "Topao, sa šlagom"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Kava + irski viski + šlag — dvostruki pairing u jednoj čaši, uz srednju cigaru.",
+   "en": "Coffee + Irish whiskey + cream — a double pairing in one glass, with a medium cigar."
+  }
+ },
+ {
+  "id": "cf-carajillo",
+  "category": "coffee",
+  "name": "Carajillo / caffè corretto (s rumom ili brandyjem)",
+  "style": "spiked",
+  "region": "Španjolska / Italija",
+  "country": "—",
+  "abv": 12,
+  "body": 4,
+  "sweetness": 3,
+  "flavorTags": [
+   "kakao",
+   "karamela",
+   "slatko"
+  ],
+  "qualityScore": 7,
+  "priceEUR": null,
+  "shopHR": "doma",
+  "pairable": true,
+  "serving": {
+   "best": "Espresso + 43/Licor, brandy ili rum"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "'Popravljena' kava — espresso ojačan žesticom; mediteranska cigar tradicija.",
+   "en": "'Corrected' coffee — espresso fortified with spirit; a Mediterranean cigar tradition."
+  }
+ },
+ {
+  "id": "cf-decaf-quality",
+  "category": "coffee",
+  "name": "Specialty decaf (sugarcane process)",
+  "style": "filter-medium",
+  "region": "Kolumbija (EA decaf)",
+  "country": "Kolumbija",
+  "abv": null,
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "karamela",
+   "kakao",
+   "voce"
+  ],
+  "qualityScore": 7,
+  "priceEUR": null,
+  "shopHR": "Cogito / Quahwa",
+  "pairable": true,
+  "serving": {
+   "best": "Filter / espresso, večer"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Večernja cigara bez kofeina — moderna decaf obrada čuva okus.",
+   "en": "An evening cigar without caffeine — modern decaf processing keeps the flavour."
+  }
+ }
 ]

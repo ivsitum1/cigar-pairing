@@ -265,13 +265,13 @@ function CigarDetails({
 }
 
 function DrinkDetails({ drink }: { drink: Drink }) {
-  const { t, lx, sv } = useI18n();
+  const { t, lx, sv, rgn } = useI18n();
   const style = STYLE_LABELS[drink.style];
   return (
     <>
       <div className="font-display text-xl text-papir">{drink.name}</div>
       <div className="mt-1 text-sm text-dim">
-        {style ? lx(style) : drink.style} · {drink.region}
+        {style ? lx(style) : drink.style} · {rgn(drink.region)}
         {drink.abv ? ` · ${drink.abv}%` : ""}
       </div>
       <div className="mt-3 flex flex-wrap gap-x-5 gap-y-2">
@@ -288,7 +288,7 @@ function DrinkDetails({ drink }: { drink: Drink }) {
         {drink.additiveStatus && (
           <Row
             k={t("common.additives")}
-            v={`${lx(ADDITIVE_LABELS[drink.additiveStatus])}${drink.additiveDetail ? ` (${drink.additiveDetail})` : ""}`}
+            v={`${lx(ADDITIVE_LABELS[drink.additiveStatus])}${drink.additiveDetail ? ` (${lx(drink.additiveDetail)})` : ""}`}
           />
         )}
         <Row
@@ -321,7 +321,7 @@ function DrinkDetails({ drink }: { drink: Drink }) {
       )}
       {drink.cigarHint && (
         <p className="mt-2 rounded-lg border border-zlato/25 bg-zlato/10 px-3 py-2 text-sm text-zlato-2">
-          🚬 {drink.cigarHint}
+          🚬 {lx(drink.cigarHint)}
         </p>
       )}
       <BuyLink url={drink.priceUrl} name={drink.name} />

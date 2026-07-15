@@ -529,7 +529,7 @@ function ResultCard<T>({
   price: string;
   priceUrl?: string | null;
   vitolas?: import("../types").Vitola[];
-  excelHint: string | null | undefined;
+  excelHint: import("../types").LocalizedText | null | undefined;
   onOpen: () => void;
 }) {
   const { t, lx } = useI18n();
@@ -594,7 +594,7 @@ function ResultCard<T>({
       )}
       {excelHint && (
         <div className="mt-2 rounded-md border border-zlato/25 bg-zlato/10 px-2.5 py-1.5 text-xs text-zlato-2">
-          ★ {t("pair.excelHint")}: {excelHint}
+          ★ {t("pair.excelHint")}: {lx(excelHint)}
         </div>
       )}
       {open && (
