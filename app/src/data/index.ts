@@ -54,9 +54,9 @@ export const CIGARS: Cigar[] = dedupeCigars(cigarsJson as Cigar[]);
 export interface ShoppingTier {
   tier: string;
   owned: boolean;
-  styleTarget: string;
+  styleTarget: { hr: string; en: string };
   bottleTarget: string;
-  profile: string;
+  profile: { hr: string; en: string };
   priceSource: string;
   myRating: number | null;
   notes: string;

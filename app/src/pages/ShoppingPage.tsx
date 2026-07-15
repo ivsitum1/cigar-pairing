@@ -27,6 +27,8 @@ export function ShoppingPage() {
   const [copied, setCopied] = useState(false);
 
   const isOwned = (id: string) => getItemState(id).owned;
+  // ☆ uz preporuku = vec je na tvojoj listi zelja (liste su neovisne)
+  const wishMark = (id: string) => (getItemState(id).wishlist ? "☆ " : "");
 
   // ☆ lista zelja — pice + cigare, s ukupnim troskom
   const wishlistDrinks = ALL_DRINKS.filter((d) => {
@@ -42,18 +44,21 @@ export function ShoppingPage() {
     wishlistCigars.reduce((s, c) => s + (c.priceEUR ?? 0), 0);
 
   const shareWishlist = async () => {
-    const text = wishlistText([
-      ...wishlistCigars.map((c) => ({
-        name: `${c.brand} ${c.line}`,
-        price: c.priceEUR,
-        shop: c.availabilityHR?.[0],
-      })),
-      ...wishlistDrinks.map((d) => ({
-        name: d.name,
-        price: d.priceEUR?.min ?? null,
-        shop: d.shopHR,
-      })),
-    ]);
+    const text = wishlistText(
+      [
+        ...wishlistCigars.map((c) => ({
+          name: `${c.brand} ${c.line}`,
+          price: c.priceEUR,
+          shop: c.availabilityHR?.[0],
+        })),
+        ...wishlistDrinks.map((d) => ({
+          name: d.name,
+          price: d.priceEUR?.min ?? null,
+          shop: d.shopHR,
+        })),
+      ],
+      t("shop.total"),
+    );
     try {
       if (navigator.share) {
         await navigator.share({ title: "Lista želja", text });
@@ -139,8 +144,9 @@ export function ShoppingPage() {
           </div>
         </>
       )}
+      <p className="mt-2 text-xs leading-relaxed text-dim">{t("shop.wishlistNote")}</p>
 
-      {/* 2) rupe u kolekciji — zivi plan */}
+      {/* 2) praznine u kolekciji — zivi plan */}
       <SectionTitle>{t("shop.gaps")}</SectionTitle>
       <p className="mb-2 text-xs leading-relaxed text-dim">
         {t("shop.gapsHint")} · {coveredBuckets}/{totalBuckets}
@@ -168,7 +174,7 @@ export function ShoppingPage() {
                         {lx(bucket.label)}
                       </span>
                       <span className="block truncate text-sm text-papir">
-                        {suggestion ? suggestion.name : "—"}
+                        {suggestion ? `${wishMark(suggestion.id)}${suggestion.name}` : "—"}
                       </span>
                     </span>
                     {suggestion && (
@@ -213,7 +219,7 @@ export function ShoppingPage() {
                         <span className="text-[10px] uppercase tracking-widest text-dim">
                           {t(key)}
                         </span>
-                        <span className="block truncate text-sm text-papir">{d.name}</span>
+                        <span className="block truncate text-sm text-papir">{wishMark(d.id)}{d.name}</span>
                       </span>
                       <span className="shrink-0 text-xs text-dim">
                         <span className="text-zlato-2">{d.qualityScore}/10</span>
@@ -249,7 +255,7 @@ export function ShoppingPage() {
               <span className="text-[10px] uppercase tracking-widest text-zlato">
                 {lx(bucket.label)}
               </span>
-              <span className="block truncate text-sm text-papir">{drink.name}</span>
+              <span className="block truncate text-sm text-papir">{wishMark(drink.id)}{drink.name}</span>
               <span className="block truncate text-xs text-dim">
                 {lx(STYLE_LABELS[drink.style]) || drink.style}
               </span>
@@ -281,7 +287,7 @@ export function ShoppingPage() {
           {tierGroups.map(({ tier, rows }) => (
             <div key={tier}>
               <div className="mb-1.5 font-display text-sm tracking-widest text-zlato">
-                TIER {tier}
+                {t("shop.tier")} {tier}
               </div>
               <div className="space-y-1.5">
                 {rows.map((row, i) => (
@@ -300,10 +306,10 @@ export function ShoppingPage() {
                     </span>
                     <div className="min-w-0">
                       <div className="text-sm text-papir">
-                        <span className="text-dim">{row.styleTarget}:</span> {row.bottleTarget}
+                        <span className="text-dim">{lx(row.styleTarget)}:</span> {row.bottleTarget}
                       </div>
                       <div className="mt-0.5 text-xs text-dim">
-                        {row.profile}
+                        {lx(row.profile)}
                         {row.priceSource && ` · ${row.priceSource}`}
                       </div>
                     </div>
