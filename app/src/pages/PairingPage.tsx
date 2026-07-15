@@ -411,10 +411,10 @@ export function PairingPage() {
                       </button>
                     )}
                   </div>
-                  {result ? (
+                  {result && selectedCigar ? (
                     <ResultCard
                       result={result}
-                      cigar={selectedCigar}
+                      cigar={selectedCigar as Cigar}
                       drink={result.item}
                       title={result.item.name}
                       sub={`${t(`cat.${category}` as StringKey)} · ${lx(STYLE_LABELS[result.item.style]) || result.item.style}`}
@@ -466,6 +466,7 @@ export function PairingPage() {
                 <p className="text-sm text-dim">{t("pair.noResults")}</p>
               )}
               {cigarSuggestions.window.map((r) => {
+                if (!selectedDrink) return null;
                 const mp = cigarPriceForMarket(r.item, market);
                 const priceStr =
                   mp.price != null
