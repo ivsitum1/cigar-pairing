@@ -149,6 +149,14 @@ const STRINGS = {
   "filter.strength": { hr: "Snaga", en: "Strength" },
   "filter.maxPrice": { hr: "Cijena do", en: "Price up to" },
   "filter.clean": { hr: "Samo čisti (bez aditiva)", en: "Clean only (no additives)" },
+  // sortiranje
+  "sort.label": { hr: "Poredaj", en: "Sort" },
+  "sort.quality": { hr: "Kvaliteta", en: "Quality" },
+  "sort.price": { hr: "Cijena", en: "Price" },
+  "sort.body": { hr: "Tijelo", en: "Body" },
+  "sort.sweetness": { hr: "Slatkoća", en: "Sweetness" },
+  "sort.strength": { hr: "Snaga", en: "Strength" },
+  "sort.name": { hr: "Naziv", en: "Name" },
 } satisfies Record<string, LocalizedText>;
 
 export type StringKey = keyof typeof STRINGS;
