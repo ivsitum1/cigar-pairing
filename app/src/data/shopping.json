@@ -3,9 +3,15 @@
   {
    "tier": "S",
    "owned": true,
-   "styleTarget": "Barbados (bez aditiva)",
+   "styleTarget": {
+    "hr": "Barbados (bez aditiva)",
+    "en": "Barbados (no additives)"
+   },
    "bottleTarget": "Foursquare Doorly's XO / ECS",
-   "profile": "Suho-voćni zlatni standard",
+   "profile": {
+    "hr": "Suho-voćni zlatni standard",
+    "en": "The dry-fruited gold standard"
+   },
    "priceSource": "allez.hr",
    "myRating": null,
    "notes": ""
@@ -13,9 +19,15 @@
   {
    "tier": "S",
    "owned": false,
-   "styleTarget": "Jamajka funky",
+   "styleTarget": {
+    "hr": "Jamajka (funk)",
+    "en": "Jamaica (funk)"
+   },
    "bottleTarget": "Hampden Estate 8",
-   "profile": "Visoki esteri, funk, cigara",
+   "profile": {
+    "hr": "Visoki esteri i funk, izvrsno uz cigaru",
+    "en": "High esters and funk, excellent with a cigar"
+   },
    "priceSource": "75,55 allez.hr",
    "myRating": null,
    "notes": ""
@@ -23,9 +35,15 @@
   {
    "tier": "S",
    "owned": false,
-   "styleTarget": "Jamajka pitkiji",
+   "styleTarget": {
+    "hr": "Jamajka (pitkija)",
+    "en": "Jamaica (easier-going)"
+   },
    "bottleTarget": "Worthy Park SER / Appleton 12",
-   "profile": "Esterski, glađi",
+   "profile": {
+    "hr": "Esterska, ali glađa",
+    "en": "Estery yet smoother"
+   },
    "priceSource": "allez.hr",
    "myRating": null,
    "notes": ""
@@ -33,9 +51,15 @@
   {
    "tier": "S",
    "owned": false,
-   "styleTarget": "Agricole (Martinique AOC)",
+   "styleTarget": {
+    "hr": "Agricole (Martinique AOC)",
+    "en": "Agricole (Martinique AOC)"
+   },
    "bottleTarget": "Clement VSOP / Neisson",
-   "profile": "Travnato, svjezi sok trske",
+   "profile": {
+    "hr": "Travnat okus svježega soka šećerne trske",
+    "en": "The grassy taste of fresh cane juice"
+   },
    "priceSource": "allez.hr",
    "myRating": null,
    "notes": ""
@@ -43,9 +67,15 @@
   {
    "tier": "S",
    "owned": false,
-   "styleTarget": "Premium Barbados",
+   "styleTarget": {
+    "hr": "Vrhunski Barbados",
+    "en": "Premium Barbados"
+   },
    "bottleTarget": "Mount Gay XO / 1703",
-   "profile": "Elegantan, suh",
+   "profile": {
+    "hr": "Elegantan i suh",
+    "en": "Elegant and dry"
+   },
    "priceSource": "allez.hr",
    "myRating": null,
    "notes": ""
@@ -53,9 +83,15 @@
   {
    "tier": "A",
    "owned": true,
-   "styleTarget": "Spanjolski suhi",
+   "styleTarget": {
+    "hr": "Španjolski suhi stil",
+    "en": "Spanish dry style"
+   },
    "bottleTarget": "Flor de Cana 12 / 18",
-   "profile": "Whiskey-nalik, suho",
+   "profile": {
+    "hr": "Suh, nalik whiskyju",
+    "en": "Dry, whisky-like"
+   },
    "priceSource": "allez.hr",
    "myRating": null,
    "notes": ""
@@ -63,9 +99,15 @@
   {
    "tier": "A",
    "owned": false,
-   "styleTarget": "Demerara (Gvajana)",
+   "styleTarget": {
+    "hr": "Demerara (Gvajana)",
+    "en": "Demerara (Guyana)"
+   },
    "bottleTarget": "El Dorado 12",
-   "profile": "Bogat, melasa, tamno voće",
+   "profile": {
+    "hr": "Bogat: melasa i tamno voće",
+    "en": "Rich: molasses and dark fruit"
+   },
    "priceSource": "42,53 allez.hr",
    "myRating": null,
    "notes": ""
@@ -73,9 +115,15 @@
   {
    "tier": "A",
    "owned": false,
-   "styleTarget": "Kuba (suh)",
+   "styleTarget": {
+    "hr": "Kuba (suho)",
+    "en": "Cuba (dry)"
+   },
    "bottleTarget": "Eminente 7 / Havana Club 7",
-   "profile": "Suh, začinski",
+   "profile": {
+    "hr": "Suh i začinski",
+    "en": "Dry and spicy"
+   },
    "priceSource": "55,20 Miva / 30,89 Lidl",
    "myRating": null,
    "notes": ""
@@ -83,9 +131,15 @@
   {
    "tier": "A",
    "owned": false,
-   "styleTarget": "Kolumbija (cist)",
+   "styleTarget": {
+    "hr": "Kolumbija (čist)",
+    "en": "Colombia (clean)"
+   },
    "bottleTarget": "La Hechicera Solera 21",
-   "profile": "Suh-voćni",
+   "profile": {
+    "hr": "Suho-voćni profil",
+    "en": "A dry-fruited profile"
+   },
    "priceSource": "40,48 Lidl",
    "myRating": null,
    "notes": ""
@@ -93,9 +147,15 @@
   {
    "tier": "A",
    "owned": false,
-   "styleTarget": "Sv. Lucija blend",
+   "styleTarget": {
+    "hr": "Sveta Lucija (blend)",
+    "en": "St Lucia (blend)"
+   },
    "bottleTarget": "Chairman's Reserve",
-   "profile": "Kompleksan, suh",
+   "profile": {
+    "hr": "Kompleksan i suh",
+    "en": "Complex and dry"
+   },
    "priceSource": "allez.hr",
    "myRating": null,
    "notes": ""
@@ -103,9 +163,15 @@
   {
    "tier": "A",
    "owned": false,
-   "styleTarget": "Overproof / Navy",
+   "styleTarget": {
+    "hr": "Overproof / navy",
+    "en": "Overproof / navy"
+   },
    "bottleTarget": "Smith & Cross / OFTD",
-   "profile": "Snaga+ester",
+   "profile": {
+    "hr": "Snaga i esteri",
+    "en": "Power and esters"
+   },
    "priceSource": "allez.hr",
    "myRating": null,
    "notes": ""
@@ -113,9 +179,15 @@
   {
    "tier": "A",
    "owned": false,
-   "styleTarget": "Plantation cisti (iznimke)",
+   "styleTarget": {
+    "hr": "Plantation — čiste iznimke",
+    "en": "Plantation — the clean exceptions"
+   },
    "bottleTarget": "Planteray Xaymaca / Doctor Bird",
-   "profile": "Esterski bez dod. secera",
+   "profile": {
+    "hr": "Esterski, bez dodanoga šećera",
+    "en": "Estery, with no added sugar"
+   },
    "priceSource": "",
    "myRating": null,
    "notes": ""
@@ -123,9 +195,15 @@
   {
    "tier": "A",
    "owned": false,
-   "styleTarget": "Venezuela (suh-ish)",
+   "styleTarget": {
+    "hr": "Venezuela (suši stil)",
+    "en": "Venezuela (drier style)"
+   },
    "bottleTarget": "Pampero Aniversario",
-   "profile": "Lagan value čistač",
+   "profile": {
+    "hr": "Lagan, dobar omjer cijene i kvalitete",
+    "en": "Light, good value for money"
+   },
    "priceSource": "27,50 Vivat",
    "myRating": null,
    "notes": ""
@@ -133,9 +211,15 @@
   {
    "tier": "B",
    "owned": false,
-   "styleTarget": "Premium Barbados",
+   "styleTarget": {
+    "hr": "Vrhunski Barbados",
+    "en": "Premium Barbados"
+   },
    "bottleTarget": "Mount Gay 1703",
-   "profile": "Special occasion",
+   "profile": {
+    "hr": "Za posebne prigode",
+    "en": "For special occasions"
+   },
    "priceSource": "allez.hr",
    "myRating": null,
    "notes": ""
@@ -143,9 +227,15 @@
   {
    "tier": "B",
    "owned": false,
-   "styleTarget": "Vrhunska Jamajka",
+   "styleTarget": {
+    "hr": "Vrhunska Jamajka",
+    "en": "Top-tier Jamaica"
+   },
    "bottleTarget": "Appleton 21 / Hampden Great House",
-   "profile": "Special occasion",
+   "profile": {
+    "hr": "Za posebne prigode",
+    "en": "For special occasions"
+   },
    "priceSource": "",
    "myRating": null,
    "notes": ""
@@ -153,9 +243,15 @@
   {
    "tier": "B",
    "owned": false,
-   "styleTarget": "Odlezani agricole",
+   "styleTarget": {
+    "hr": "Odležani agricole",
+    "en": "Aged agricole"
+   },
    "bottleTarget": "Rhum JM XO / HSE",
-   "profile": "Drugaciji od mladog",
+   "profile": {
+    "hr": "Posve drukčiji od mladog stila",
+    "en": "A different animal from the young style"
+   },
    "priceSource": "",
    "myRating": null,
    "notes": ""
@@ -163,9 +259,15 @@
   {
    "tier": "B",
    "owned": false,
-   "styleTarget": "Cachaca (Brazil)",
+   "styleTarget": {
+    "hr": "Cachaça (Brazil)",
+    "en": "Cachaça (Brazil)"
+   },
    "bottleTarget": "Avua Amburana / Novo Fogo",
-   "profile": "Amburana = prirodni cimet/vanilija",
+   "profile": {
+    "hr": "Amburana drvo daje prirodni cimet i vaniliju",
+    "en": "Amburana wood lends natural cinnamon and vanilla"
+   },
    "priceSource": "specijalist import",
    "myRating": null,
    "notes": ""
@@ -173,9 +275,15 @@
   {
    "tier": "B",
    "owned": false,
-   "styleTarget": "Latam suh",
+   "styleTarget": {
+    "hr": "Latinoamerički suhi",
+    "en": "Latin American dry"
+   },
    "bottleTarget": "Diplomatico Mantuano",
-   "profile": "Mekan ali ne preslad",
+   "profile": {
+    "hr": "Mekan, ali ne presladak",
+    "en": "Soft, but not oversweet"
+   },
    "priceSource": "",
    "myRating": null,
    "notes": ""
@@ -183,9 +291,15 @@
   {
    "tier": "C",
    "owned": false,
-   "styleTarget": "Independent bottler",
+   "styleTarget": {
+    "hr": "Nezavisni punioci",
+    "en": "Independent bottlers"
+   },
    "bottleTarget": "Velier / Kill Devil / Berry Bros",
-   "profile": "Single cask dubina",
+   "profile": {
+    "hr": "Dubina pojedinačne bačve",
+    "en": "Single-cask depth"
+   },
    "priceSource": "specijalist",
    "myRating": null,
    "notes": ""
@@ -193,9 +307,15 @@
   {
    "tier": "C",
    "owned": false,
-   "styleTarget": "Caroni (Trinidad, ugasen)",
+   "styleTarget": {
+    "hr": "Caroni (Trinidad, zatvorena destilerija)",
+    "en": "Caroni (Trinidad, closed distillery)"
+   },
    "bottleTarget": "Velier Caroni",
-   "profile": "Kultni petrol/smolasti",
+   "profile": {
+    "hr": "Kultni petrolejsko-smolasti profil",
+    "en": "The cult petrol-and-tar profile"
+   },
    "priceSource": "rijetko/skupo",
    "myRating": null,
    "notes": ""
@@ -203,9 +323,15 @@
   {
    "tier": "C",
    "owned": false,
-   "styleTarget": "Cuban stil",
+   "styleTarget": {
+    "hr": "Kubanski stil",
+    "en": "Cuban style"
+   },
    "bottleTarget": "Havana Club Seleccion / 15",
-   "profile": "Suh kubanski",
+   "profile": {
+    "hr": "Suh, kubanski",
+    "en": "Dry, Cuban"
+   },
    "priceSource": "169,69 Roto",
    "myRating": null,
    "notes": ""
@@ -213,9 +339,15 @@
   {
    "tier": "C",
    "owned": false,
-   "styleTarget": "Neobicno",
+   "styleTarget": {
+    "hr": "Neobično",
+    "en": "Off the beaten path"
+   },
    "bottleTarget": "Grogue / single-origin",
-   "profile": "Po izboru",
+   "profile": {
+    "hr": "Po vlastitu izboru",
+    "en": "Your own pick"
+   },
    "priceSource": "import",
    "myRating": null,
    "notes": ""
@@ -226,88 +358,88 @@
    "name": "allez.hr",
    "location": "Nova Ves 19, Zagreb / online",
    "note": {
-    "hr": "Primarni HR izvor za rum i whisky, osobno preuzimanje",
-    "en": "Primary Croatian source for rum & whisky, in-store pickup"
+    "hr": "Primarni hrvatski izvor za rum i whisky; osobno preuzimanje.",
+    "en": "The primary Croatian source for rum and whisky; in-store collection."
    }
   },
   {
    "name": "ecuga.com",
    "location": "online",
    "note": {
-    "hr": "Sirok katalog rumova i zestica",
-    "en": "Wide catalogue of rums and spirits"
+    "hr": "Širok katalog rumova i žestica.",
+    "en": "A wide catalogue of rums and spirits."
    }
   },
   {
    "name": "Miva Galerija Vina",
    "location": "Zagreb",
    "note": {
-    "hr": "Eminente, Dictador, Diplomatico",
-    "en": "Eminente, Dictador, Diplomatico"
+    "hr": "Eminente, Dictador, Diplomático.",
+    "en": "Eminente, Dictador, Diplomático."
    }
   },
   {
    "name": "Cooltura To Go",
    "location": "Zagreb",
    "note": {
-    "hr": "Botran linija (cesto rasprodano)",
-    "en": "Botran range (often sold out)"
+    "hr": "Botranova linija (često rasprodana).",
+    "en": "The Botran range (often sold out)."
    }
   },
   {
    "name": "Roto Svijet Pica",
    "location": "Tkalciceva / Planinska, Zagreb",
    "note": {
-    "hr": "Siroka ponuda",
-    "en": "Wide selection"
+    "hr": "Široka ponuda.",
+    "en": "A wide selection."
    }
   },
   {
    "name": "Lidl",
    "location": "HR",
    "note": {
-    "hr": "Planteray, Havana Club, Dos Maderas, La Hechicera — akcije",
-    "en": "Planteray, Havana Club, Dos Maderas, La Hechicera — good deals"
+    "hr": "Planteray, Havana Club, Dos Maderas, La Hechicera — povoljne akcije.",
+    "en": "Planteray, Havana Club, Dos Maderas, La Hechicera — good offers."
    }
   },
   {
    "name": "Vivat Finavina",
    "location": "Zagreb",
    "note": {
-    "hr": "Vise dessert/spiced; cisti: El Dorado 12, Pampero",
-    "en": "Leans dessert/spiced; clean picks: El Dorado 12, Pampero"
+    "hr": "Pretežno desertni i spiced stilovi; od čistih: El Dorado 12, Pampero.",
+    "en": "Leans towards dessert and spiced styles; clean picks: El Dorado 12, Pampero."
    }
   },
   {
    "name": "Vrutak",
    "location": "Zagreb",
    "note": {
-    "hr": "Premium/limited izdanja",
-    "en": "Premium/limited releases"
+    "hr": "Vrhunska i limitirana izdanja.",
+    "en": "Premium and limited releases."
    }
   },
   {
    "name": "Havana Shop (Camelot)",
    "location": "Zagreb, Split, Rovinj (+ Ljubljana)",
    "note": {
-    "hr": "Ekskluzivni uvoznik Habanos i Davidoff cigara za HR/SLO — havana-cigar-shop.com",
-    "en": "Exclusive Habanos & Davidoff cigar importer for Croatia/Slovenia — havana-cigar-shop.com"
+    "hr": "Ekskluzivni uvoznik Habanosa i Davidoffa za Hrvatsku i Sloveniju — havana-cigar-shop.com.",
+    "en": "The exclusive Habanos and Davidoff importer for Croatia and Slovenia — havana-cigar-shop.com."
    }
   },
   {
    "name": "The Humidor / Premium Cigars",
    "location": "Petrinjska 5 + Centar Kaptol, Zagreb",
    "note": {
-    "hr": "Ista firma, 2 lokacije — New World boutique + kubanke, humidor.hr (cijene po vitoli)",
-    "en": "Same company, 2 locations — New World boutique + Cubans, humidor.hr (per-vitola prices)"
+    "hr": "Ista tvrtka, dvije lokacije: butik New World cigara i kubanke; humidor.hr objavljuje cijene po vitoli.",
+    "en": "The same company, two locations: a New World boutique plus Cubans; humidor.hr lists prices per vitola."
    }
   },
   {
    "name": "Trafike / iCigara",
    "location": "HR",
    "note": {
-    "hr": "VegaFina i cigarilosi u boljim trafikama; online prodaja duhana u HR nije dozvoljena",
-    "en": "VegaFina and cigarillos in better tobacco kiosks; online tobacco sales are not allowed in Croatia"
+    "hr": "VegaFina i cigarilosi u bolje opskrbljenim trafikama; internetska prodaja duhana u Hrvatskoj nije dopuštena.",
+    "en": "VegaFina and cigarillos in better-stocked tobacco kiosks; online tobacco sales are not permitted in Croatia."
    }
   }
  ],

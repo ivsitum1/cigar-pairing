@@ -59,6 +59,20 @@ const byQuality = (a: Drink, b: Drink) =>
 const valueScore = (d: Drink) =>
   (d.qualityScore ?? 0) - (price(d) ?? 100) * 0.02;
 
+// bife petorka: najbolja ocjena uz razuman strop cijene po boci
+const BUFFET_PRICE_CAP = 120;
+
+/** "Najbolji, ali isplativ": najvisa ocjena medu bocama do stropa cijene;
+ *  kod izjednacenja pobjedjuje jeftinija. Ako nijedna nije unutar stropa,
+ *  pada na omjer kvalitete i cijene. */
+const bestWorthPick = (candidates: Drink[]): Drink | undefined => {
+  const capped = candidates.filter(
+    (d) => price(d) != null && (price(d) as number) <= BUFFET_PRICE_CAP,
+  );
+  if (capped.length > 0) return [...capped].sort(byQuality)[0];
+  return [...candidates].sort((a, b) => valueScore(b) - valueScore(a))[0];
+};
+
 export interface SegmentPicks {
   top: Drink | null;
   value: Drink | null;
@@ -80,7 +94,9 @@ export function segmentPicks(drinks: Drink[], isOwned: (id: string) => boolean):
   return { top, value, budget };
 }
 
-/** Buffet petorka: iz svakog segmenta kategorije po jedna boca (najbolji omjer). */
+/** Bife petorka: iz svakog segmenta po jedna boca — najbolja ocjena uz
+ *  razuman strop cijene. Namjerno NE gleda listu zelja (neovisne liste);
+ *  preskace samo boce oznacene kao "Imam". */
 export function buffetFive(
   category: DrinkCategory,
   drinks: Drink[],
@@ -90,15 +106,15 @@ export function buffetFive(
   const used = new Set<string>();
   const out: { bucket: StyleBucket; drink: Drink }[] = [];
   for (const bucket of buckets) {
-    const pick = drinks
-      .filter(
+    const pick = bestWorthPick(
+      drinks.filter(
         (d) =>
           d.pairable &&
           bucket.styles.includes(d.style) &&
           !isOwned(d.id) &&
           !used.has(d.id),
-      )
-      .sort((a, b) => valueScore(b) - valueScore(a))[0];
+      ),
+    );
     if (pick) {
       used.add(pick.id);
       out.push({ bucket, drink: pick });
@@ -134,11 +150,12 @@ export function collectionGaps(
 /** Tekst liste zelja za kopiranje/share — ponijeti u ducan. */
 export function wishlistText(
   items: { name: string; price: number | null; shop?: string }[],
+  totalLabel = "Ukupno",
 ): string {
   const lines = items.map(
     (it) =>
       `• ${it.name}${it.price != null ? ` — ~${it.price.toFixed(0)} €` : ""}${it.shop ? ` (${it.shop})` : ""}`,
   );
   const total = items.reduce((s, it) => s + (it.price ?? 0), 0);
-  return [...lines, `Ukupno: ~${total.toFixed(0)} €`].join("\n");
+  return [...lines, `${totalLabel}: ~${total.toFixed(0)} €`].join("\n");
 }
