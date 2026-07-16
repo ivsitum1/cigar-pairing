@@ -44,6 +44,26 @@ export default defineConfig({
       },
     }),
   ],
+  build: {
+    rollupOptions: {
+      output: {
+        // podaci i vendor odvojeni od app koda: izmjena koda ne rusi kes
+        // podataka (i obrnuto); world_outline/club ostaju u lazy Club chunku
+        manualChunks(id: string) {
+          if (/\/src\/data\/.*\.json$/.test(id)) {
+            if (id.includes("world_outline") || id.includes("club.json")) {
+              return undefined;
+            }
+            return "data";
+          }
+          if (/node_modules\/(react|react-dom|scheduler)\//.test(id)) {
+            return "vendor";
+          }
+          return undefined;
+        },
+      },
+    },
+  },
   test: {
     environment: "node",
     include: ["src/**/*.test.ts"],

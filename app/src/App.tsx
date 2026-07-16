@@ -1,12 +1,23 @@
-import { useState } from "react";
+import { Suspense, lazy, useState } from "react";
 import { useI18n } from "./i18n";
 import { PairingPage } from "./pages/PairingPage";
-import { CatalogPage } from "./pages/CatalogPage";
-import { CollectionPage } from "./pages/CollectionPage";
-import { ShoppingPage } from "./pages/ShoppingPage";
-import { ClubPage } from "./pages/ClubPage";
 import { requestPairing } from "./store/pairingNav";
 import type { Cigar, Drink } from "./types";
+
+// pairing je pocetni ekran i ostaje u glavnom chunku; ostale stranice
+// (posebno Club s atlasom od ~280 KB) dolaze tek na prvi klik
+const CatalogPage = lazy(() =>
+  import("./pages/CatalogPage").then((m) => ({ default: m.CatalogPage })),
+);
+const CollectionPage = lazy(() =>
+  import("./pages/CollectionPage").then((m) => ({ default: m.CollectionPage })),
+);
+const ShoppingPage = lazy(() =>
+  import("./pages/ShoppingPage").then((m) => ({ default: m.ShoppingPage })),
+);
+const ClubPage = lazy(() =>
+  import("./pages/ClubPage").then((m) => ({ default: m.ClubPage })),
+);
 
 type Page = "pairing" | "catalog" | "collection" | "shopping" | "club";
 
@@ -51,11 +62,15 @@ export default function App() {
       </header>
 
       <main className="flex-1 pb-24">
-        {page === "pairing" && <PairingPage />}
-        {page === "catalog" && <CatalogPage onPair={goToPairing} />}
-        {page === "collection" && <CollectionPage />}
-        {page === "shopping" && <ShoppingPage />}
-        {page === "club" && <ClubPage />}
+        <Suspense
+          fallback={<div className="pt-16 text-center text-sm text-dim">…</div>}
+        >
+          {page === "pairing" && <PairingPage />}
+          {page === "catalog" && <CatalogPage onPair={goToPairing} />}
+          {page === "collection" && <CollectionPage />}
+          {page === "shopping" && <ShoppingPage />}
+          {page === "club" && <ClubPage />}
+        </Suspense>
       </main>
 
       {/* donja navigacija */}
