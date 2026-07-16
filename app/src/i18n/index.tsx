@@ -9,6 +9,13 @@ const STRINGS = {
   "nav.collection": { hr: "Kolekcija", en: "Collection" },
   "nav.shopping": { hr: "Kupovina", en: "Shopping" },
   "nav.club": { hr: "Klub", en: "Club" },
+  // sustav
+  "sys.updateReady": { hr: "Nova verzija je spremna.", en: "A new version is ready." },
+  "sys.reload": { hr: "Osvježi", en: "Reload" },
+  "sys.storageFail": {
+    hr: "Spremanje nije uspjelo (pun ili blokiran storage) — promjene vrijede samo do zatvaranja. Izvezi backup u Kolekciji.",
+    en: "Saving failed (storage full or blocked) — changes last only until you close the app. Export a backup from Collection.",
+  },
   // klub
   "club.quote": { hr: "Citat dana", en: "Quote of the day" },
   "club.fact": { hr: "Znaš li…?", en: "Did you know…?" },

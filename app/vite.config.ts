@@ -10,7 +10,9 @@ export default defineConfig({
     react(),
     tailwindcss(),
     VitePWA({
-      registerType: "autoUpdate",
+      // prompt: korisnik dobije "nova verzija" traku umjesto tihe zamjene
+      // usred koristenja; hashirani asseti cine rucni cacheId bump nepotrebnim
+      registerType: "prompt",
       includeAssets: ["icon.svg"],
       manifest: {
         name: "Cigar & Drink Pairing",
@@ -36,11 +38,7 @@ export default defineConfig({
         ],
       },
       workbox: {
-        // bump cache — forsira osvježavanje nakon ispravka kurirane poruke
-        cacheId: "cigar-pairing-v2026-07-15-curated",
         globPatterns: ["**/*.{js,css,html,svg,png,json,woff2}"],
-        clientsClaim: true,
-        skipWaiting: true,
       },
     }),
   ],

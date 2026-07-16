@@ -3,6 +3,7 @@ import { useI18n } from "./i18n";
 import { PairingPage } from "./pages/PairingPage";
 import { requestPairing } from "./store/pairingNav";
 import { navigate, useRoute, type Page } from "./store/route";
+import { SystemBanners } from "./components/SystemBanners";
 import type { Cigar, Drink } from "./types";
 
 // pairing je pocetni ekran i ostaje u glavnom chunku; ostale stranice
@@ -71,6 +72,8 @@ export default function App() {
           {page === "club" && <ClubPage />}
         </Suspense>
       </main>
+
+      <SystemBanners />
 
       {/* donja navigacija */}
       <nav className="fixed inset-x-0 bottom-0 z-40 border-t border-zlato/20 bg-humidor/95 backdrop-blur">

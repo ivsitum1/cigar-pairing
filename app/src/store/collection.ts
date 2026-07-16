@@ -41,10 +41,29 @@ function load(): CollectionData {
   return { items: {}, journal: [] };
 }
 
+// zapis moze puknuti (pun storage, Safari private mode) — promjene tada zive
+// samo u memoriji, a UI preko useStorageHealth pokazuje upozorenje
+let storageFailed = false;
+
 function persist(next: CollectionData) {
   cache = next;
-  localStorage.setItem(KEY, JSON.stringify(next));
+  try {
+    localStorage.setItem(KEY, JSON.stringify(next));
+    storageFailed = false;
+  } catch {
+    storageFailed = true;
+  }
   listeners.forEach((l) => l());
+}
+
+export function useStorageHealth(): boolean {
+  return useSyncExternalStore(
+    (cb) => {
+      listeners.add(cb);
+      return () => listeners.delete(cb);
+    },
+    () => storageFailed,
+  );
 }
 
 export function useCollection(): CollectionData {
