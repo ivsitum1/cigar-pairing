@@ -56,10 +56,11 @@ export function ClubPage() {
   const { t, lx } = useI18n();
   const day = dayOfYear();
 
-  // citat i zanimljivost dana (+ rucno listanje zanimljivosti)
+  // citat dana; zanimljivosti u dnevno promijesanom redoslijedu
   const quote = QUOTES[day % QUOTES.length];
+  const factOrder = useMemo(() => shuffledOrder(FACTS.length, day * 1597334677), [day]);
   const [factOffset, setFactOffset] = useState(0);
-  const fact = FACTS[(day + factOffset) % FACTS.length];
+  const fact = FACTS[factOrder[factOffset % factOrder.length]];
 
   // 101 vodic
   const [guideTrack, setGuideTrack] = useState<GuideTrack>("cigars");
