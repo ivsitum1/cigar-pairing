@@ -18,6 +18,7 @@ export const COUNTRIES: CountryInfo[] = [
   { hr: "Barbados", en: "Barbados", flag: "🇧🇧", lat: 13.2, lon: -59.5 },
   { hr: "Trinidad", en: "Trinidad", flag: "🇹🇹", lat: 10.5, lon: -61.3 },
   { hr: "Sv. Lucija", en: "St Lucia", flag: "🇱🇨", lat: 13.9, lon: -61.0 },
+  { hr: "Anguilla", en: "Anguilla", flag: "🇦🇮", lat: 18.2, lon: -63.1 },
   { hr: "Martinique", en: "Martinique", flag: "🇲🇶", lat: 14.6, lon: -61.0 },
   { hr: "Guadeloupe", en: "Guadeloupe", flag: "🇬🇵", lat: 16.2, lon: -61.5 },
   { hr: "Puerto Rico", en: "Puerto Rico", flag: "🇵🇷", lat: 18.2, lon: -66.4 },
@@ -89,7 +90,7 @@ const ALIASES: Record<string, string> = {
   Highlands: "Škotska", Campbeltown: "Škotska", Orkney: "Škotska", Skye: "Škotska",
   Arran: "Škotska", Dublin: "Irska", Melbourne: "Australija", "Yarra Valley": "Australija",
   Barossa: "Australija", Goa: "Indija", Malabar: "Indija", Sumatra: "Indonezija",
-  Jamajka: "Jamajka", Antigua: "Gvatemala", Demerara: "Gvajana", Anguilla: "Sv. Lucija",
+  Jamajka: "Jamajka", Antigua: "Gvatemala", Demerara: "Gvajana",
 };
 
 const byHr = new Map(COUNTRIES.map((c) => [c.hr, c]));
