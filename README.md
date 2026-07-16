@@ -26,6 +26,11 @@ indeksima rangiranim po kvaliteti za sipping uz cigaru.
 ## Struktura
 
 - `app/` — Vite + React + TS + Tailwind PWA
+  - Hash-routing s deep-linkovima: `#/pairing/cigar/<id>` i `#/pairing/drink/<id>`
+    otvaraju pairing s odabranom stavkom (dijeljivi linkovi, back tipka radi)
+  - Personalizacija: ocjene iz dnevnika lokalno naginju prijedloge (±5 bodova,
+    s objašnjenjem); filter prilike (jutro/poslijepodne/večer); cigare s
+    heuristički izvedenim profilom nose oznaku "procijenjeni profil"
   - `src/data/*.json` — indeksi (147 rumova, 278 whiskyja, 78 brandy/grappa, 20 gin, 52 vina, 23 kave, 480 cigara)
   - `scripts/seed/whiskies_classics_seed.json` — klasici koje allez/ecuga ne drže
     (Talisker 10, Ardbeg 10, Springbank 10, bourboni…); nakon regeneracije iz
