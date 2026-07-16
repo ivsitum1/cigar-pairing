@@ -14,7 +14,42 @@ export const WEIGHTS = {
   strengthPowerMismatch: 10, // overproof pice + blaga cigara (kazna)
   qualityNudge: 2, // * (qualityScore - 7)
   curatedHintMinScore: 80,
+  curatedWarnMaxScore: 45, // ispod ovoga kurirana poruka smije biti negativna
+  personal: 5, // max nudge iz dnevnika (stil pica / brend cigare), po smjeru
 };
+
+// sinonimi/varijante iz scrape podataka -> kanonski tag koji engine boduje
+// (podaci se regeneriraju iz Excela pa se normalizacija radi ovdje, ne u JSON-u)
+export const TAG_ALIASES: Record<string, string> = {
+  "začini": "zacini",
+  cokolada: "kakao",
+  jod: "dim",
+  iodin: "dim",
+  medicinski: "dim",
+  slane: "mineralno",
+  sol: "mineralno",
+  juniper: "travnato",
+  koriander: "zacini",
+  maple: "karamela",
+  orah: "orasasti",
+  naranca: "citrus",
+  grozdje: "voce",
+  menta: "travnato",
+  mediterran: "travnato",
+  mesnato: "zemljano",
+  mizunara: "hrast",
+  prune: "suho-voce",
+  borovnica: "tamno-voce",
+  ribiz: "voce",
+  gladak: "kremasto",
+  viski: "hrast",
+};
+
+export const normalizeTag = (t: string): string => TAG_ALIASES[t] ?? t;
+
+export const normalizeTags = (tags: string[]): string[] => [
+  ...new Set(tags.map(normalizeTag)),
+];
 
 // cigar tag -> komplementarni tagovi u picu
 export const COMPLEMENTS: Record<string, string[]> = {
@@ -73,3 +108,15 @@ export const WRAPPER_AFFINITY: {
     labelEn: "Habano/corojo wrappers stand up to spicy and smoky drinks",
   },
 ];
+
+// tagovi koje engine posebno boduje u pravilu snage (pairing.ts, pravilo 5)
+export const POWER_TAGS = ["overproof", "dim", "ester-funk"] as const;
+
+// puni vokabular tagova koje engine boduje — integrity test provjerava da
+// svaki tag u podacima (nakon normalizacije) pripada ovom skupu
+export const KNOWN_TAGS: Set<string> = new Set([
+  ...Object.keys(COMPLEMENTS),
+  ...Object.values(COMPLEMENTS).flat(),
+  ...WRAPPER_AFFINITY.flatMap((w) => w.tags),
+  ...POWER_TAGS,
+]);

@@ -1,7 +1,8 @@
 import { useEffect, useMemo, useState } from "react";
 import type { Cigar, Drink, DrinkCategory, Market, PairingResult, Vitola } from "../types";
-import { ALL_DRINKS, CIGARS, cigarById, cigarLinkForMarket, cigarPriceForMarket, formatPrice } from "../data";
+import { ALL_DRINKS, CIGARS, cigarById, cigarLinkForMarket, cigarPriceForMarket, drinkById, formatPrice } from "../data";
 import { pairCigarsForDrink, pairDrinksForCigar } from "../engine/pairing";
+import { buildPrefs } from "../engine/personal";
 import { curatedPairingOpinion } from "../engine/curatedOpinion";
 import { useI18n, STYLE_LABELS, type StringKey } from "../i18n";
 import { Chip, Meter, ScoreBand, SearchInput, SectionTitle } from "../components/ui";
@@ -12,10 +13,20 @@ import { VitolaPicker } from "../components/VitolaPicker";
 import { applyVitola, needsVitolaPick, uniqueVitolas } from "../lib/cigarVitola";
 import { useMarket, setMarket } from "../store/market";
 import { consumePairingIntent, usePairingNavVersion } from "../store/pairingNav";
+import { navigate, useRoute } from "../store/route";
 import { CustomPairing } from "./CustomPairing";
 
 type Mode = "cigarToDrink" | "drinkToCigar" | "custom";
+type Occasion = "any" | "morning" | "afternoon" | "evening";
 const MARKETS: Market[] = ["HR", "EU", "USA", "WW"];
+
+// prilika filtrira pica po punoci: jutro uz kavu/lagane sippere, vecer uz bogate
+const OCCASION_KEEP: Record<Occasion, (d: Drink) => boolean> = {
+  any: () => true,
+  morning: (d) => d.category === "coffee" || d.body <= 2,
+  afternoon: (d) => d.category === "coffee" || d.body <= 3,
+  evening: (d) => d.category === "coffee" || d.body >= 3,
+};
 
 // pretraga neosjetljiva na naglaske i velika/mala slova
 const norm = (s: string) =>
@@ -25,8 +36,20 @@ const SUGGEST_CATEGORIES: DrinkCategory[] = ["rum", "whisky", "brandy", "gin", "
 
 export function PairingPage() {
   const { t, lx, cn } = useI18n();
-  useCollection();
+  const collection = useCollection();
   const [mode, setMode] = useState<Mode>("cigarToDrink");
+  const [occasion, setOccasion] = useState<Occasion>("any");
+
+  // osobni afiniteti iz ocijenjenih zapisa dnevnika (sve lokalno)
+  const prefs = useMemo(() => {
+    const rated = collection.journal.map((j) => ({
+      rating: j.rating,
+      drinkStyle: drinkById(j.drinkId)?.style,
+      cigarBrand: cigarById(j.cigarId)?.brand,
+    }));
+    const built = buildPrefs(rated);
+    return built.entries > 0 ? built : undefined;
+  }, [collection.journal]);
   const [query, setQuery] = useState("");
   const [selectedCigar, setSelectedCigar] = useState<Cigar | null>(null);
   const [pendingCigar, setPendingCigar] = useState<Cigar | null>(null);
@@ -59,6 +82,7 @@ export function PairingPage() {
     { kind: "cigar"; item: Cigar } | { kind: "drink"; item: Drink } | null
   >(null);
   const pairingNavVersion = usePairingNavVersion();
+  const route = useRoute();
 
   const selected = mode === "cigarToDrink" ? selectedCigar : selectedDrink;
 
@@ -107,7 +131,8 @@ export function PairingPage() {
     if (mode !== "cigarToDrink" || !selectedCigar) return null;
     let drinks = ALL_DRINKS;
     if (onlyMine) drinks = drinks.filter((d) => getItemState(d.id).owned);
-    const ranked = pairDrinksForCigar(selectedCigar, drinks);
+    if (occasion !== "any") drinks = drinks.filter(OCCASION_KEEP[occasion]);
+    const ranked = pairDrinksForCigar(selectedCigar, drinks, prefs);
     const perCategory = (cat: DrinkCategory) =>
       ranked.filter((r) => r.item.category === cat);
     return {
@@ -118,14 +143,14 @@ export function PairingPage() {
       }),
       coffee: perCategory("coffee")[0] ?? null,
     };
-  }, [mode, selectedCigar, onlyMine, cycle]);
+  }, [mode, selectedCigar, onlyMine, cycle, occasion, prefs]);
 
   // pice -> tocno 3 cigare RAZLICITIH brendova (cycle pomice prozor za 3)
   const cigarSuggestions = useMemo(() => {
     if (mode !== "drinkToCigar" || !selectedDrink) return null;
     let cigars = marketCigars;
     if (onlyMine) cigars = cigars.filter((c) => getItemState(c.id).owned);
-    const ranked = pairCigarsForDrink(selectedDrink, cigars);
+    const ranked = pairCigarsForDrink(selectedDrink, cigars, prefs);
     if (ranked.length === 0) return { window: [], total: 0 };
     // diversity: po jedna najbolja cigara svakog brenda
     const seen = new Set<string>();
@@ -137,7 +162,7 @@ export function PairingPage() {
     const pool = diverse.length >= 3 ? diverse : ranked;
     const offset = ((cycle["cigars"] ?? 0) * 3) % Math.max(pool.length, 1);
     return { window: pool.slice(offset, offset + 3), total: pool.length };
-  }, [mode, selectedDrink, onlyMine, cycle, marketCigars]);
+  }, [mode, selectedDrink, onlyMine, cycle, marketCigars, prefs]);
 
   const reset = () => {
     setSelectedCigar(null);
@@ -145,6 +170,7 @@ export function PairingPage() {
     setSelectedDrink(null);
     setQuery("");
     setCycle({});
+    navigate({ page: "pairing" }, { replace: true });
   };
 
   const pickCigar = (raw: Cigar) => {
@@ -155,12 +181,19 @@ export function PairingPage() {
     }
     const vitolas = uniqueVitolas(cigar);
     setSelectedCigar(vitolas.length === 1 ? applyVitola(cigar, vitolas[0]) : cigar);
+    navigate({ page: "pairing", pair: { kind: "cigar", id: cigar.id } });
   };
 
   const confirmVitola = (vitola: Vitola) => {
     if (!pendingCigar) return;
     setSelectedCigar(applyVitola(pendingCigar, vitola));
+    navigate({ page: "pairing", pair: { kind: "cigar", id: pendingCigar.id } });
     setPendingCigar(null);
+  };
+
+  const pickDrink = (drink: Drink) => {
+    setSelectedDrink(drink);
+    navigate({ page: "pairing", pair: { kind: "drink", id: drink.id } });
   };
 
   useEffect(() => {
@@ -189,6 +222,46 @@ export function PairingPage() {
       setQuery(intent.drink.name);
     }
   }, [pairingNavVersion]);
+
+  // deep-link i back tipka: hash je izvor istine za ODABRANU stavku.
+  // Odabir kroz UI zove navigate(), pa se ovdje samo uskladjujemo kad se
+  // hash promijeni izvana (podijeljeni link, back/forward).
+  useEffect(() => {
+    if (route.page !== "pairing") return;
+    const pair = route.pair;
+    if (!pair) {
+      if (selectedCigar || selectedDrink || pendingCigar) {
+        setSelectedCigar(null);
+        setPendingCigar(null);
+        setSelectedDrink(null);
+        setQuery("");
+        setCycle({});
+      }
+      return;
+    }
+    if (pair.kind === "cigar") {
+      if (selectedCigar?.id === pair.id || pendingCigar?.id === pair.id) return;
+      const cigar = cigarById(pair.id);
+      if (!cigar) return;
+      setMode("cigarToDrink");
+      setSelectedDrink(null);
+      setCycle({});
+      setQuery(`${cigar.brand} ${cigar.line}`);
+      const vitolas = uniqueVitolas(cigar);
+      setSelectedCigar(vitolas.length === 1 ? applyVitola(cigar, vitolas[0]) : cigar);
+    } else {
+      if (selectedDrink?.id === pair.id) return;
+      const drink = drinkById(pair.id);
+      if (!drink) return;
+      setMode("drinkToCigar");
+      setSelectedCigar(null);
+      setPendingCigar(null);
+      setCycle({});
+      setQuery(drink.name);
+      setSelectedDrink(drink);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [route]);
 
   return (
     <div className="pb-4">
@@ -328,7 +401,7 @@ export function PairingPage() {
                   key={item.id}
                   title={(item as Drink).name}
                   sub={lx(STYLE_LABELS[(item as Drink).style]) || (item as Drink).style}
-                  onPick={() => setSelectedDrink(item as Drink)}
+                  onPick={() => pickDrink(item as Drink)}
                 />
               ),
             )}
@@ -360,6 +433,16 @@ export function PairingPage() {
                     {(selected as Cigar).vitola} · {(selected as Cigar).wrapper} · {cn((selected as Cigar).country)}
                   </div>
                 )}
+                {mode === "cigarToDrink" &&
+                  ((selected as Cigar).profileEstimated ||
+                    (selected as Cigar).flavorTags.length === 0) && (
+                    <div
+                      className="mt-1 text-[10px] uppercase tracking-wider text-dim/80"
+                      title={t("common.estimatedProfile")}
+                    >
+                      ≈ {t("common.estimatedProfile")}
+                    </div>
+                  )}
                 <div className="mt-1.5 flex gap-4">
                   {mode === "cigarToDrink" ? (
                     <>
@@ -387,6 +470,16 @@ export function PairingPage() {
             <Chip active={onlyMine} onClick={() => setOnlyMine(!onlyMine)}>
               {t("pair.onlyMine")}
             </Chip>
+            {mode === "cigarToDrink" &&
+              (["morning", "afternoon", "evening"] as const).map((o) => (
+                <Chip
+                  key={o}
+                  active={occasion === o}
+                  onClick={() => setOccasion(occasion === o ? "any" : o)}
+                >
+                  {t(`occ.${o}` as StringKey)}
+                </Chip>
+              ))}
           </div>
 
           <SectionTitle>{t("pair.suggestions")}</SectionTitle>
@@ -479,7 +572,11 @@ export function PairingPage() {
                     cigar={r.item}
                     drink={selectedDrink}
                     title={`${r.item.brand} ${r.item.line}`}
-                    sub={r.item.wrapper}
+                    sub={`${r.item.wrapper}${
+                      r.item.profileEstimated || r.item.flavorTags.length === 0
+                        ? ` · ≈ ${t("common.estimatedShort")}`
+                        : ""
+                    }`}
                     price={priceStr}
                     priceUrl={cigarLinkForMarket(r.item, market)}
                     vitolas={r.item.vitolas}
@@ -605,8 +702,17 @@ function ResultCard({
         </div>
       )}
       {pairingOpinion && (
-        <div className="mt-2 rounded-md border border-zlato/25 bg-zlato/10 px-2.5 py-1.5 text-xs text-zlato-2">
-          ★ {t("pair.excelHint")}: {lx(pairingOpinion)}
+        <div
+          className={`mt-2 rounded-md border px-2.5 py-1.5 text-xs ${
+            pairingOpinion.tone === "praise"
+              ? "border-zlato/25 bg-zlato/10 text-zlato-2"
+              : "border-oxblood/50 bg-oxblood/10 text-papir/90"
+          }`}
+        >
+          {pairingOpinion.tone === "praise"
+            ? `★ ${t("pair.excelHint")}`
+            : `⚠ ${t("pair.curatedWarn")}`}
+          : {lx(pairingOpinion.text)}
         </div>
       )}
       {open && (

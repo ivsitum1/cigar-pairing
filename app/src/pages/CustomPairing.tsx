@@ -108,8 +108,17 @@ export function CustomPairing({
           </div>
 
           {pairingOpinion && (
-            <div className="mt-3 rounded-md border border-zlato/25 bg-zlato/10 px-2.5 py-1.5 text-xs text-zlato-2">
-              ★ {t("pair.excelHint")}: {lx(pairingOpinion)}
+            <div
+              className={`mt-3 rounded-md border px-2.5 py-1.5 text-xs ${
+                pairingOpinion.tone === "praise"
+                  ? "border-zlato/25 bg-zlato/10 text-zlato-2"
+                  : "border-oxblood/50 bg-oxblood/10 text-papir/90"
+              }`}
+            >
+              {pairingOpinion.tone === "praise"
+                ? `★ ${t("pair.excelHint")}`
+                : `⚠ ${t("pair.curatedWarn")}`}
+              : {lx(pairingOpinion.text)}
             </div>
           )}
 

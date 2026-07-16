@@ -1,14 +1,25 @@
-import { useState } from "react";
+import { Suspense, lazy } from "react";
 import { useI18n } from "./i18n";
 import { PairingPage } from "./pages/PairingPage";
-import { CatalogPage } from "./pages/CatalogPage";
-import { CollectionPage } from "./pages/CollectionPage";
-import { ShoppingPage } from "./pages/ShoppingPage";
-import { ClubPage } from "./pages/ClubPage";
 import { requestPairing } from "./store/pairingNav";
+import { navigate, useRoute, type Page } from "./store/route";
+import { SystemBanners } from "./components/SystemBanners";
 import type { Cigar, Drink } from "./types";
 
-type Page = "pairing" | "catalog" | "collection" | "shopping" | "club";
+// pairing je pocetni ekran i ostaje u glavnom chunku; ostale stranice
+// (posebno Club s atlasom od ~280 KB) dolaze tek na prvi klik
+const CatalogPage = lazy(() =>
+  import("./pages/CatalogPage").then((m) => ({ default: m.CatalogPage })),
+);
+const CollectionPage = lazy(() =>
+  import("./pages/CollectionPage").then((m) => ({ default: m.CollectionPage })),
+);
+const ShoppingPage = lazy(() =>
+  import("./pages/ShoppingPage").then((m) => ({ default: m.ShoppingPage })),
+);
+const ClubPage = lazy(() =>
+  import("./pages/ClubPage").then((m) => ({ default: m.ClubPage })),
+);
 
 const NAV: { id: Page; icon: string; key: "nav.pairing" | "nav.catalog" | "nav.collection" | "nav.shopping" | "nav.club" }[] = [
   { id: "pairing", icon: "◈", key: "nav.pairing" },
@@ -20,7 +31,7 @@ const NAV: { id: Page; icon: string; key: "nav.pairing" | "nav.catalog" | "nav.c
 
 export default function App() {
   const { t, lang, setLang } = useI18n();
-  const [page, setPage] = useState<Page>("pairing");
+  const { page } = useRoute();
 
   const goToPairing = (target: { kind: "cigar"; item: Cigar } | { kind: "drink"; item: Drink }) => {
     requestPairing(
@@ -28,7 +39,7 @@ export default function App() {
         ? { mode: "cigarToDrink", cigar: target.item }
         : { mode: "drinkToCigar", drink: target.item },
     );
-    setPage("pairing");
+    navigate({ page: "pairing", pair: { kind: target.kind, id: target.item.id } });
   };
 
   return (
@@ -51,12 +62,18 @@ export default function App() {
       </header>
 
       <main className="flex-1 pb-24">
-        {page === "pairing" && <PairingPage />}
-        {page === "catalog" && <CatalogPage onPair={goToPairing} />}
-        {page === "collection" && <CollectionPage />}
-        {page === "shopping" && <ShoppingPage />}
-        {page === "club" && <ClubPage />}
+        <Suspense
+          fallback={<div className="pt-16 text-center text-sm text-dim">…</div>}
+        >
+          {page === "pairing" && <PairingPage />}
+          {page === "catalog" && <CatalogPage onPair={goToPairing} />}
+          {page === "collection" && <CollectionPage />}
+          {page === "shopping" && <ShoppingPage />}
+          {page === "club" && <ClubPage />}
+        </Suspense>
       </main>
+
+      <SystemBanners />
 
       {/* donja navigacija */}
       <nav className="fixed inset-x-0 bottom-0 z-40 border-t border-zlato/20 bg-humidor/95 backdrop-blur">
@@ -64,7 +81,7 @@ export default function App() {
           {NAV.map((n) => (
             <button
               key={n.id}
-              onClick={() => setPage(n.id)}
+              onClick={() => navigate({ page: n.id })}
               className={`flex flex-col items-center gap-0.5 py-2.5 pb-[max(0.625rem,env(safe-area-inset-bottom))] text-[11px] transition-colors ${
                 page === n.id ? "text-zlato-2" : "text-dim hover:text-papir"
               }`}

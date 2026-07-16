@@ -70,6 +70,7 @@ export interface Cigar {
   strength: number; // 1-5 (nikotin)
   body: number; // 1-5 (punoca dima)
   flavorTags: string[];
+  profileEstimated?: boolean; // profil izveden heuristikom (profile-cigars.py), ne degustacijom
   smokeTimeMin: number;
   priceEUR: number | null;
   priceApprox?: boolean;

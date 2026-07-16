@@ -1,9 +1,12 @@
-// Kurirana poruka za par cigara–piće.
-// PRAVILO: poruka postoji isključivo kad je match >= 80.
+// Kurirana poruka za par cigara–piće. Tri zone:
+//   score >= curatedHintMinScore (80)  -> pozitivna preporuka (tone: praise)
+//   score <= curatedWarnMaxScore (45)  -> negativno misljenje (tone: warning)
+//   izmedju                            -> null (nista posebno za reci)
+// Ton UVIJEK prati score — pohvala uz visok match, upozorenje uz los.
 // Nikad ne čita drink.cigarHint (Excel). Tekst je uvijek specifičan za taj par.
 
 import type { Cigar, Drink, LocalizedText, PairingReason } from "../types";
-import { WEIGHTS } from "./rules";
+import { WEIGHTS, normalizeTags } from "./rules";
 
 const BODY_HR = ["", "vrlo lagano", "lagano", "srednje", "puno", "vrlo puno"];
 const BODY_EN = ["", "very light", "light", "medium", "full", "very full"];
@@ -73,6 +76,10 @@ function drinkProfile(drink: Drink): string {
   return body >= 4 ? "full-spirit" : body <= 2 ? "light-spirit" : "balanced-spirit";
 }
 
+// Verdikt uz kuriranu poruku. Poruka se prikazuje ISKLJUCIVO kod matcha
+// >= 80, pa ovdje smiju zivjeti samo pozitivna/neutralna objasnjenja —
+// upozorenja ("wrapper nije idealan", "pregazio bi") uz visok match su
+// kontradikcija i takve kombinacije ionako obaraju score ispod praga.
 function wrapperVerdict(
   profile: string,
   kind: ReturnType<typeof wrapperKind>,
@@ -84,49 +91,16 @@ function wrapperVerdict(
   if (profile === "clean-barbados") {
     if (kind === "habano" || (kind === "maduro" && /san andr/i.test(cigar.wrapper))) {
       return {
-        hr: `${w} daje dovoljno strukture da se ne izgubi uz suhi, hrastov profil — bez da pregazi piće.`,
-        en: `${w} brings enough structure without drowning the dry, oaky profile.`,
+        hr: `${w} daje dovoljno strukture za suhi, hrastov profil, a piću ostavlja prostora.`,
+        en: `${w} brings enough structure for the dry, oaky profile while leaving the drink room to breathe.`,
       };
     }
-    if (kind === "natural") {
-      return {
-        hr: `Natural wrapper nije idealan uz čisti Barbados rum — Habano ili San Andrés maduro bolje nose suho voće i hrast.`,
-        en: `Natural wrapper is not ideal with a clean Barbados rum — Habano or San Andrés maduro carry the dry fruit and oak better.`,
-      };
-    }
-    if (kind === "connecticut" && cigar.body <= 2) {
-      return {
-        hr: `Blagi Connecticut može raditi uz laganiji tretman, ali Habano daje puniji balans uz Foursquare stil.`,
-        en: `A mild Connecticut can work if treated gently, but Habano gives a fuller balance with the Foursquare style.`,
-      };
-    }
-  }
-
-  if (profile === "jamaica-funk" && kind === "connecticut" && cigar.strength <= 2) {
-    return {
-      hr: `Esterski, puni rum traži jaču cigaru — Connecticut bi se brzo izgubio.`,
-      en: `This estery, full rum needs a stronger cigar — Connecticut would disappear quickly.`,
-    };
-  }
-
-  if (profile === "agricole" && (kind === "maduro" || cigar.body >= 4)) {
-    return {
-      hr: `Travnati agricole voli laganiju do srednje cigare — puna maduro bi pregazila vegetalne note.`,
-      en: `Grassy agricole prefers a mild-to-medium cigar — a full maduro would swamp the vegetal notes.`,
-    };
   }
 
   if (profile === "sweet-rum" && kind === "maduro" && drink.sweetness >= 4) {
     return {
       hr: `Slatkoća ruma i tamni wrapper grade klasičan kontrast — karamela i dim u ravnoteži.`,
       en: `The rum's sweetness and a dark wrapper form a classic contrast — caramel and smoke in balance.`,
-    };
-  }
-
-  if (profile === "peated-whisky" && kind === "connecticut") {
-    return {
-      hr: `Dimljeni whisky pregazio bi blagi Connecticut — Habano ili maduro podnose dim.`,
-      en: `Peated whisky would steamroll a mild Connecticut — Habano or maduro can handle the smoke.`,
     };
   }
 
@@ -137,10 +111,17 @@ function wrapperVerdict(
     };
   }
 
-  if (profile === "sparkling" && cigar.body >= 4) {
+  if (profile === "peated-whisky" && (kind === "habano" || kind === "maduro")) {
     return {
-      hr: `Pjenusac traži laganiju cigaru — ova punina može pregaziti mjehuriće i kiselinu.`,
-      en: `Sparkling wine wants a lighter cigar — this much body can overwhelm the bubbles and acidity.`,
+      hr: `${w} podnosi treset i dim — cigara i whisky ostaju ravnopravni.`,
+      en: `${w} stands up to peat and smoke — cigar and whisky stay on equal footing.`,
+    };
+  }
+
+  if (profile === "agricole" && kind === "connecticut") {
+    return {
+      hr: `Travnati agricole i svijetli Connecticut dijele svježi, vegetalni registar.`,
+      en: `Grassy agricole and a light Connecticut share the same fresh, vegetal register.`,
     };
   }
 
@@ -158,6 +139,52 @@ function wrapperVerdict(
     };
   }
 
+  return null;
+}
+
+// Negativan verdikt za parove koji se zaista ne poklapaju (score <= 45) —
+// konkretan razlog zasto kombinaciju ne preporucujemo.
+function wrapperWarning(
+  profile: string,
+  kind: ReturnType<typeof wrapperKind>,
+  cigar: Cigar,
+): { hr: string; en: string } | null {
+  if (profile === "clean-barbados" && kind === "natural") {
+    return {
+      hr: `natural wrapper nije idealan uz čisti Barbados rum — Habano ili San Andrés maduro bolje nose suho voće i hrast.`,
+      en: `a natural wrapper is not ideal with a clean Barbados rum — Habano or San Andrés maduro carry the dry fruit and oak better.`,
+    };
+  }
+  if (profile === "jamaica-funk" && kind === "connecticut" && cigar.strength <= 2) {
+    return {
+      hr: `esterski, puni rum traži jaču cigaru — blagi Connecticut bi se brzo izgubio.`,
+      en: `this estery, full rum needs a stronger cigar — a mild Connecticut would disappear quickly.`,
+    };
+  }
+  if (profile === "agricole" && (kind === "maduro" || cigar.body >= 4)) {
+    return {
+      hr: `travnati agricole voli laganu do srednju cigaru — ovako puna pregazila bi vegetalne note.`,
+      en: `grassy agricole prefers a mild-to-medium cigar — this much body would swamp the vegetal notes.`,
+    };
+  }
+  if (profile === "peated-whisky" && kind === "connecticut") {
+    return {
+      hr: `dimljeni whisky pregazio bi blagi Connecticut — Habano ili maduro podnose treset.`,
+      en: `peated whisky would steamroll a mild Connecticut — Habano or maduro can handle the peat.`,
+    };
+  }
+  if (profile === "sparkling" && cigar.body >= 4) {
+    return {
+      hr: `pjenušac traži laganiju cigaru — ova punina gazi mjehuriće i kiselinu.`,
+      en: `sparkling wine wants a lighter cigar — this much body tramples the bubbles and acidity.`,
+    };
+  }
+  if ((profile === "light-coffee" || profile === "gin") && cigar.body >= 4) {
+    return {
+      hr: `ovako delikatno piće traži laganiju cigaru — puni dim ostaje sam na sceni.`,
+      en: `such a delicate drink needs a lighter cigar — the full smoke ends up alone on stage.`,
+    };
+  }
   return null;
 }
 
@@ -206,8 +233,10 @@ function synergyLine(reasons: PairingReason[]): { hr: string; en: string } | nul
   };
 }
 
+// isti sinonimi kao u scorePairing — poruka mora vidjeti iste note kao engine
 function sharedTags(cigar: Cigar, drink: Drink): string[] {
-  return cigar.flavorTags.filter((t) => drink.flavorTags.includes(t));
+  const drinkTags = normalizeTags(drink.flavorTags);
+  return normalizeTags(cigar.flavorTags).filter((t) => drinkTags.includes(t));
 }
 
 function alwaysUniqueBody(
@@ -247,10 +276,37 @@ function alwaysUniqueBody(
   };
 }
 
+export interface CuratedOpinion {
+  tone: "praise" | "warning";
+  text: LocalizedText;
+}
+
+function warningBody(
+  cigar: Cigar,
+  drink: Drink,
+  reasons: PairingReason[],
+): { hr: string; en: string } {
+  const specific = wrapperWarning(drinkProfile(drink), wrapperKind(cigar.wrapper), cigar);
+  if (specific) return specific;
+  // najteza kazna iz enginea vec nosi objasnjenje (body-mismatch, overwhelm...)
+  const worst = reasons.filter((r) => r.score < 0).sort((a, b) => a.score - b.score)[0];
+  if (worst) {
+    return {
+      hr: `${worst.text.hr.replace(/\.$/, "")} — radije potraži drugi par.`,
+      en: `${worst.text.en.replace(/\.$/, "")} — better to look for a different pairing.`,
+    };
+  }
+  return {
+    hr: `profili se razilaze (${BODY_HR[cigar.body]} dim uz ${BODY_HR[drink.body]} piće) — ovu kombinaciju ne preporučujemo.`,
+    en: `the profiles diverge (${BODY_EN[cigar.body]} smoke with a ${BODY_EN[drink.body]} drink) — we would not recommend this combination.`,
+  };
+}
+
 /**
  * Kurirana poruka za par.
- * - score < 80 → null (nikad ne prikazati)
- * - score >= 80 → uvijek jedinstven tekst za taj par
+ * - score >= 80 → pozitivna preporuka (tone: praise), jedinstvena za par
+ * - score <= 45 → negativno mišljenje (tone: warning) s konkretnim razlogom
+ * - između → null
  * Score je obavezan — bez scorea nema poruke.
  */
 export function curatedPairingOpinion(
@@ -258,14 +314,30 @@ export function curatedPairingOpinion(
   drink: Drink,
   reasons: PairingReason[],
   score: number,
-): LocalizedText | null {
-  if (score < WEIGHTS.curatedHintMinScore) return null;
-
+): CuratedOpinion | null {
   const cigarName = `${cigar.brand} ${cigar.line}`.trim();
-  const body = alwaysUniqueBody(cigar, drink, reasons, score);
 
-  return {
-    hr: `${cigarName} i ${drink.name} — ${body.hr}`,
-    en: `${cigarName} and ${drink.name} — ${body.en}`,
-  };
+  if (score >= WEIGHTS.curatedHintMinScore) {
+    const body = alwaysUniqueBody(cigar, drink, reasons, score);
+    return {
+      tone: "praise",
+      text: {
+        hr: `${cigarName} i ${drink.name} — ${body.hr}`,
+        en: `${cigarName} and ${drink.name} — ${body.en}`,
+      },
+    };
+  }
+
+  if (score <= WEIGHTS.curatedWarnMaxScore) {
+    const body = warningBody(cigar, drink, reasons);
+    return {
+      tone: "warning",
+      text: {
+        hr: `${cigarName} i ${drink.name} — ${body.hr}`,
+        en: `${cigarName} and ${drink.name} — ${body.en}`,
+      },
+    };
+  }
+
+  return null;
 }

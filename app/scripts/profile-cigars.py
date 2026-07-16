@@ -184,6 +184,10 @@ def enrich(c: dict) -> None:
     c["strength"] = clamp(s)
     c["body"] = clamp(b)
     c["flavorTags"] = tags[:6]
+    # KNOWN tablica je istrazena rucno; sve ostalo je heuristika koju app
+    # oznacava kao "procijenjeni profil"
+    if not known:
+        c["profileEstimated"] = True
 
 
 def main():

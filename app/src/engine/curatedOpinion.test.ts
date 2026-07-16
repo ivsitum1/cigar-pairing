@@ -16,13 +16,33 @@ const byId = <T extends { id: string }>(arr: T[], id: string): T => {
   return found;
 };
 
-describe("curatedPairingOpinion — strogo pravilo 80%", () => {
-  it("ispod 80% → null (npr. Doorly 41%)", () => {
+describe("curatedPairingOpinion — tri zone (pohvala / null / upozorenje)", () => {
+  it("srednja zona → null; niska zona → upozorenje (npr. Doorly 41%)", () => {
     const doorly = byId(rums, "rum-doorly-s-xo-foursquare");
     const macanudo = byId(cigars, "cig-macanudo-cafe");
     const { score, reasons } = scorePairing(macanudo, doorly);
     expect(score).toBeLessThan(WEIGHTS.curatedHintMinScore);
-    expect(curatedPairingOpinion(macanudo, doorly, reasons, score)).toBeNull();
+    const op = curatedPairingOpinion(macanudo, doorly, reasons, score);
+    if (score <= WEIGHTS.curatedWarnMaxScore) {
+      expect(op).not.toBeNull();
+      expect(op!.tone).toBe("warning");
+      expect(op!.text.hr).toMatch(/Macanudo/);
+    } else {
+      expect(op).toBeNull();
+    }
+  });
+
+  it("izraziti promašaj → upozorenje s konkretnim razlogom", () => {
+    // najjaca cigara + pjenusac: klasican sudar punoce
+    const tabernacle = byId(cigars, "cig-foundation-tabernacle");
+    const sparkling = ALL_DRINKS.find((d) => d.style === "sparkling")!;
+    const { score, reasons } = scorePairing(tabernacle, sparkling);
+    expect(score).toBeLessThanOrEqual(WEIGHTS.curatedWarnMaxScore);
+    const op = curatedPairingOpinion(tabernacle, sparkling, reasons, score);
+    expect(op).not.toBeNull();
+    expect(op!.tone).toBe("warning");
+    expect(op!.text.hr.length).toBeGreaterThan(25);
+    expect(op!.text.hr).toMatch(/Tabernacle/);
   });
 
   it("nikad ne čita drink.cigarHint", () => {
@@ -39,8 +59,9 @@ describe("curatedPairingOpinion — strogo pravilo 80%", () => {
     expect(rum.score).toBeGreaterThanOrEqual(80);
     const op = curatedPairingOpinion(cigar, rum.item, rum.reasons, rum.score);
     expect(op).not.toBeNull();
-    expect(op!.hr).toMatch(/San Lotano/i);
-    expect(op!.hr).toMatch(/Eminente/i);
+    expect(op!.tone).toBe("praise");
+    expect(op!.text.hr).toMatch(/San Lotano/i);
+    expect(op!.text.hr).toMatch(/Eminente/i);
   });
 
   it("New World top rum/whisky/brandy iznad 80 → svi imaju poruku; gin ispod → null", () => {
@@ -51,16 +72,20 @@ describe("curatedPairingOpinion — strogo pravilo 80%", () => {
       expect(top.score).toBeGreaterThanOrEqual(80);
       const op = curatedPairingOpinion(cigar, top.item, top.reasons, top.score);
       expect(op, `${cat} ${top.score}%`).not.toBeNull();
-      expect(op!.hr).toContain(cigar.line);
-      expect(op!.hr).toContain(top.item.name.split(" ")[0]);
+      expect(op!.tone).toBe("praise");
+      expect(op!.text.hr).toContain(cigar.line);
+      expect(op!.text.hr).toContain(top.item.name.split(" ")[0]);
     }
     const gin = ranked.find((r) => r.item.category === "gin");
     if (gin && gin.score < 80) {
-      expect(curatedPairingOpinion(cigar, gin.item, gin.reasons, gin.score)).toBeNull();
+      const ginOp = curatedPairingOpinion(cigar, gin.item, gin.reasons, gin.score);
+      // srednja zona nema poruku; niska zona nosi upozorenje
+      if (gin.score > WEIGHTS.curatedWarnMaxScore) expect(ginOp).toBeNull();
+      else expect(ginOp!.tone).toBe("warning");
     }
   });
 
-  it("svaki par >= 80 ima jedinstvenu ne-praznu poruku", () => {
+  it("zone su dosljedne: >=80 jedinstvena pohvala, sredina null, <=45 upozorenje", () => {
     const sampleCigars = CIGARS.filter((c) =>
       /aj fernandez|oliva|arturo fuente|davidoff/i.test(c.brand),
     ).slice(0, 25);
@@ -71,13 +96,18 @@ describe("curatedPairingOpinion — strogo pravilo 80%", () => {
       for (const drink of drinks) {
         const { score, reasons } = scorePairing(cigar, drink);
         const op = curatedPairingOpinion(cigar, drink, reasons, score);
-        if (score < WEIGHTS.curatedHintMinScore) {
-          expect(op).toBeNull();
-        } else {
+        if (score >= WEIGHTS.curatedHintMinScore) {
           expect(op).not.toBeNull();
-          expect(op!.hr.length).toBeGreaterThan(25);
-          expect(seen.has(op!.hr)).toBe(false);
-          seen.add(op!.hr);
+          expect(op!.tone).toBe("praise");
+          expect(op!.text.hr.length).toBeGreaterThan(25);
+          expect(seen.has(op!.text.hr)).toBe(false);
+          seen.add(op!.text.hr);
+        } else if (score <= WEIGHTS.curatedWarnMaxScore) {
+          expect(op).not.toBeNull();
+          expect(op!.tone).toBe("warning");
+          expect(op!.text.hr.length).toBeGreaterThan(25);
+        } else {
+          expect(op).toBeNull();
         }
       }
     }
