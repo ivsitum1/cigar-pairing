@@ -9,6 +9,7 @@ import { COUNTRIES, cigarCountries, drinkCountries, type CountryInfo } from "../
 import club from "../data/club.json";
 import WORLD_OUTLINE from "../data/world_outline.json";
 import { Club101Page } from "./Club101Page";
+import { BontonPage } from "./BontonPage";
 
 interface Quote { text: LocalizedText; author: string; note?: LocalizedText }
 interface Fact { hr: string; en: string }
@@ -47,6 +48,7 @@ export function ClubPage() {
   const { t, lx } = useI18n();
   const day = dayOfYear();
   const [show101, setShow101] = useState(false);
+  const [showBonton, setShowBonton] = useState(false);
 
   // citat dana; zanimljivosti u dnevno promijesanom redoslijedu
   const quote = QUOTES[day % QUOTES.length];
@@ -145,6 +147,9 @@ export function ClubPage() {
   if (show101) {
     return <Club101Page onBack={() => setShow101(false)} />;
   }
+  if (showBonton) {
+    return <BontonPage onBack={() => setShowBonton(false)} />;
+  }
 
   return (
     <div className="pb-4">
@@ -182,6 +187,19 @@ export function ClubPage() {
           className="mt-3 w-full rounded-lg border border-zlato/40 py-2.5 font-display text-xs uppercase tracking-widest text-zlato hover:bg-zlato/10"
         >
           {t("club.101Open")} →
+        </button>
+      </div>
+
+      {/* bonton — mala knjiga manira */}
+      <SectionTitle>{t("club.bonton")}</SectionTitle>
+      <div className="rounded-xl border border-zlato/25 bg-cedar p-4">
+        <p className="text-sm leading-relaxed text-papir/90">{t("club.bontonTeaser")}</p>
+        <button
+          type="button"
+          onClick={() => setShowBonton(true)}
+          className="mt-3 w-full rounded-lg border border-zlato/40 py-2.5 font-display text-xs uppercase tracking-widest text-zlato hover:bg-zlato/10"
+        >
+          {t("club.bontonOpen")} →
         </button>
       </div>
 
