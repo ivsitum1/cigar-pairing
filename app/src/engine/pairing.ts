@@ -3,6 +3,7 @@
 
 import type { Cigar, Drink, PairingReason, PairingResult } from "../types";
 import { COMPLEMENTS, POWER_TAGS, WEIGHTS, WRAPPER_AFFINITY, normalizeTags } from "./rules";
+import { personalBrandReason, personalStyleReason, type PersonalPrefs } from "./personal";
 
 const clamp = (v: number, lo: number, hi: number) =>
   Math.max(lo, Math.min(hi, v));
@@ -13,6 +14,7 @@ const BODY_LABEL_EN = ["", "very light", "light", "medium", "full", "very full"]
 export function scorePairing(
   cigar: Cigar,
   drink: Drink,
+  prefs?: PersonalPrefs,
 ): { score: number; reasons: PairingReason[] } {
   const reasons: PairingReason[] = [];
   let score = WEIGHTS.base;
@@ -165,24 +167,39 @@ export function scorePairing(
     score += (drink.qualityScore - 7) * WEIGHTS.qualityNudge;
   }
 
+  // 7) Osobni nudge iz dnevnika (lokalno, s objasnjenjem) — nikad presudan
+  if (prefs) {
+    for (const reason of [
+      personalStyleReason(prefs, drink.style),
+      personalBrandReason(prefs, cigar.brand),
+    ]) {
+      if (reason) {
+        score += reason.score;
+        reasons.push(reason);
+      }
+    }
+  }
+
   return { score: clamp(Math.round(score), 0, 100), reasons };
 }
 
 export function pairDrinksForCigar(
   cigar: Cigar,
   drinks: Drink[],
+  prefs?: PersonalPrefs,
 ): PairingResult<Drink>[] {
   return drinks
     .filter((d) => d.pairable)
-    .map((item) => ({ item, ...scorePairing(cigar, item) }))
+    .map((item) => ({ item, ...scorePairing(cigar, item, prefs) }))
     .sort((a, b) => b.score - a.score);
 }
 
 export function pairCigarsForDrink(
   drink: Drink,
   cigars: Cigar[],
+  prefs?: PersonalPrefs,
 ): PairingResult<Cigar>[] {
   return cigars
-    .map((item) => ({ item, ...scorePairing(item, drink) }))
+    .map((item) => ({ item, ...scorePairing(item, drink, prefs) }))
     .sort((a, b) => b.score - a.score);
 }

@@ -14,6 +14,7 @@ export const WEIGHTS = {
   strengthPowerMismatch: 10, // overproof pice + blaga cigara (kazna)
   qualityNudge: 2, // * (qualityScore - 7)
   curatedHintMinScore: 80,
+  personal: 5, // max nudge iz dnevnika (stil pica / brend cigare), po smjeru
 };
 
 // sinonimi/varijante iz scrape podataka -> kanonski tag koji engine boduje
