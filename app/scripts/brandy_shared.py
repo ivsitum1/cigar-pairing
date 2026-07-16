@@ -52,7 +52,7 @@ ALLEZ_LISTS = [
 
 STYLE_RULES: list[tuple[str, str, str, int, int, list[str]]] = [
     # Geographic / category rules first — before age-tier tokens (XO, VSOP, Extra Old).
-    (r"armagnac|dartigalongue|janneau|chateau de laubade|domaine du tarriquet", "armagnac", "Armagnac, Francuska", 4, 3, ["suho-voce", "prune", "zacini", "hrast"]),
+    (r"armagnac|dartigalongue|janneau|chateau de laubade|domaine du tarriquet|darroze|delord|sigognac|samalens|laberdolive", "armagnac", "Armagnac, Francuska", 4, 3, ["suho-voce", "prune", "zacini", "hrast"]),
     (r"calvados|boulard|dupont|christian drouin|pere magloire", "calvados", "Normandija, Francuska", 3, 3, ["jabuka", "cimet", "hrast"]),
     (r"carlos i|fundador|magnifico|gran reserva|brandy de jerez|lepanto|soberano", "brandy-de-jerez", "Jerez, Španjolska", 4, 3, ["orah", "karamela", "suho-voce", "hrast"]),
     (r"torres|gran duque|reserva|spanish brandy", "brandy-spanish", "Španjolska", 3, 3, ["karamela", "suho-voce", "hrast"]),
@@ -63,12 +63,12 @@ STYLE_RULES: list[tuple[str, str, str, int, int, list[str]]] = [
     (r"badel|vinjak|maraska|lozovaca|rakija", "vinjak", "Hrvatska", 3, 3, ["grozdje", "med", "hrast"]),
     (r"jameson|irish|bushmills|paddy", "brandy-irish", "Irska", 3, 3, ["voce", "vanilija", "med"]),
     # Cognac age tiers — XO / Extra Old only when cognac context is present.
-    (r"hennessy\s+vs\b|\bvs cognac|\bcognac vs\b|\bvs\b.*cognac", "cognac-vs", "Cognac, Francuska", 3, 3, ["voce", "vanilija", "hrast"]),
+    (r"hennessy\s+vs\b|\bvs cognac|\bcognac vs\b|\bvs\b.*cognac|\bvery special\b.*cognac|\bcognac.*\bvery special\b", "cognac-vs", "Cognac, Francuska", 3, 3, ["voce", "vanilija", "hrast"]),
     (
-        r"(?:cognac|hennessy|martell|remy|camus|hine|delamain|courvoisier|davidoff|frapin|leyrat)"
+        r"(?:cognac|hennessy|martell|remy|camus|hine|delamain|courvoisier|davidoff|frapin|leyrat|gautier|ferrand)"
         r".*(?:\bxo\b|x\.o\.|extra old|hors d)"
         r"|(?:\bxo\b|x\.o\.|extra old|hors d)"
-        r".*(?:cognac|hennessy|martell|remy|camus|hine|delamain|courvoisier|davidoff|frapin|leyrat)"
+        r".*(?:cognac|hennessy|martell|remy|camus|hine|delamain|courvoisier|davidoff|frapin|leyrat|gautier|ferrand)"
         r"|paradis|louis xiii|richard hennessy",
         "cognac-xo",
         "Cognac, Francuska",
@@ -77,7 +77,7 @@ STYLE_RULES: list[tuple[str, str, str, int, int, list[str]]] = [
         ["suho-voce", "kakao", "zacini", "koza"],
     ),
     (r"vsop|v\.s\.o\.p|1738|accord royal", "cognac-vsop", "Cognac, Francuska", 3, 3, ["voce", "vanilija", "zacini", "hrast"]),
-    (r"martell|remy|hennessy|camus|hine|delamain|davidoff|courvoisier", "cognac-vsop", "Cognac, Francuska", 3, 3, ["voce", "vanilija", "hrast"]),
+    (r"martell|remy|hennessy|camus|hine|delamain|davidoff|courvoisier|gautier|ferrand|frapin|leyrat", "cognac-vsop", "Cognac, Francuska", 3, 3, ["voce", "vanilija", "hrast"]),
 ]
 
 NON_PAIRABLE_CATEGORIES = {"grappa", "pisco", "absinthe", "sake", "liqueur", "other-spirit"}
@@ -178,7 +178,7 @@ def detect_style_region(name: str, ecuga_category: str = "") -> tuple[str, str, 
     if cat in cat_map:
         st, reg, body, sweet, tags = cat_map[cat]
         return st, reg, body, sweet, tags
-    return "brandy-spanish", "World", 3, 3, ["hrast", "voce"]
+    return "brandy-other", "World", 3, 3, ["hrast", "voce"]
 
 
 def detect_sweetening(name: str, category: str) -> str:
@@ -287,6 +287,7 @@ def cigar_hint_for_style(style: str) -> str:
         "brandy-armenian": "Habano srednje-jake",
         "brandy-italian": "Srednja cigara",
         "brandy-german": "Connecticut srednje snage",
+        "brandy-other": "Srednja cigara, balans snage",
     }
     return hints.get(style, "Srednja cigara, balans snage")
 

@@ -4,6 +4,7 @@ import type { Cigar } from "../types";
 import { brandInfo, cigarsByBrand, cigarPriceForMarket } from "../data";
 import { useI18n } from "../i18n";
 import { Meter } from "./ui";
+import { BackButton } from "./BackButton";
 import { useMarket } from "../store/market";
 
 type Sort = "strength" | "price";
@@ -44,6 +45,10 @@ export function BrandSheet({
         onClick={(e) => e.stopPropagation()}
       >
         <div className="mx-auto mb-4 h-1 w-10 rounded-full bg-dim/40 sm:hidden" />
+
+        <div className="mb-3">
+          <BackButton onClick={onClose}>{t("common.back")}</BackButton>
+        </div>
 
         <div className="font-display text-2xl tracking-wide text-zlato-2">{brand}</div>
         {info && (

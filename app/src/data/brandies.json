@@ -189,7 +189,7 @@
   "name": "Carlos I Imperial XO",
   "style": "brandy-de-jerez",
   "region": "Jerez, Španjolska",
-  "country": "Francuska",
+  "country": "Španjolska",
   "abv": 40,
   "body": 4,
   "sweetness": 3,
@@ -551,7 +551,7 @@
   "id": "br-darroze-les-grands-assemblages-8",
   "category": "brandy",
   "name": "Darroze Les Grands Assemblages 8",
-  "style": "brandy-spanish",
+  "style": "armagnac",
   "region": "Bas-Armagnac, Francuska",
   "country": "Francuska",
   "abv": 40,
@@ -811,8 +811,8 @@
   "cigarHint": null,
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/hennessy-paradis-rare-cognac-40-vol-07l-u-poklon-kutiji",
   "notes": {
-   "hr": "Heuristika — cognac-xo, cognac, xo",
-   "en": "Heuristic profile — cognac-xo, cognac, xo"
+   "hr": "Prestiž iznad XO-a — rijetke eau-de-vie, svila i suho voće, za najsvečanije prilike.",
+   "en": "Prestige above XO — rare eaux-de-vie, silk and dried fruit, for the most special occasions."
   }
  },
  {
@@ -1000,7 +1000,7 @@
   "id": "br-pierre-ferrand-1840-reserve",
   "category": "brandy",
   "name": "Pierre Ferrand 1840 / Réserve",
-  "style": "brandy-spanish",
+  "style": "cognac-vsop",
   "region": "Grande Champagne, Francuska",
   "country": "Francuska",
   "abv": 40,
@@ -1174,8 +1174,8 @@
   "cigarHint": null,
   "priceUrl": "https://ecuga.com/proizvod/gautier-xo",
   "notes": {
-   "hr": "Heuristika — cognac-xo, cognac, xo",
-   "en": "Heuristic profile — cognac-xo, cognac, xo"
+   "hr": "Manji konjački dom s karakterom — elegantan XO, cvjetne note i dugačak finiš.",
+   "en": "A smaller cognac house with character — elegant XO, floral notes and a long finish."
   }
  },
  {
@@ -1543,7 +1543,7 @@
   "id": "br-baron-de-sigognac-10-ans",
   "category": "brandy",
   "name": "Baron de Sigognac 10 Ans",
-  "style": "brandy-spanish",
+  "style": "armagnac",
   "region": "Bas-Armagnac, Francuska",
   "country": "Francuska",
   "abv": 40,
@@ -1587,7 +1587,7 @@
   "id": "br-camus-vs-intensely-aromatic",
   "category": "brandy",
   "name": "Camus VS Intensely Aromatic",
-  "style": "cognac-vsop",
+  "style": "cognac-vs",
   "region": "Borderies, Francuska",
   "country": "Francuska",
   "abv": 40,
@@ -1624,8 +1624,8 @@
   "cigarHint": null,
   "priceUrl": "https://ecuga.com/proizvod/camus-vs-intensely-aromatic",
   "notes": {
-   "hr": "Mirisni XO — cvjetno-medena raskoš.",
-   "en": "The perfumed XO — floral-honeyed opulence."
+   "hr": "Borderies cvjetnost u VS kategoriji — pristupačan ulaz u Camus.",
+   "en": "Borderies florality in the VS category — an accessible entry to Camus."
   }
  },
  {
@@ -1670,15 +1670,15 @@
   "cigarHint": null,
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/camus-vsop-intensely-aromatic-cognac-40-vol-07l-u-poklon-kutiji",
   "notes": {
-   "hr": "Mirisni XO — cvjetno-medena raskoš.",
-   "en": "The perfumed XO — floral-honeyed opulence."
+   "hr": "Borderies cvjetnost u VSOP kategoriji — mekan, mirisan konjak.",
+   "en": "Borderies florality in the VSOP category — a soft, perfumed cognac."
   }
  },
  {
   "id": "br-camus-very-special-intensely-aromatic-cognac-40-vol-0-7l",
   "category": "brandy",
   "name": "Camus VERY SPECIAL Intensely Aromatic Cognac",
-  "style": "cognac-vsop",
+  "style": "cognac-vs",
   "region": "Borderies, Francuska",
   "country": "Francuska",
   "abv": 40,
@@ -1715,8 +1715,8 @@
   "cigarHint": null,
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/camus-very-special-intensely-aromatic-cognac-40-vol-07l",
   "notes": {
-   "hr": "Mirisni XO — cvjetno-medena raskoš.",
-   "en": "The perfumed XO — floral-honeyed opulence."
+   "hr": "Borderies cvjetnost u VS kategoriji — pristupačan Camus za upoznavanje.",
+   "en": "Borderies florality in the VS category — an approachable introduction to Camus."
   }
  },
  {
@@ -2355,8 +2355,8 @@
   "cigarHint": null,
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/asbach-selection-extra-old-21-jears-40-vol-07l-gb",
   "notes": {
-   "hr": "Heuristika — cognac-xo, brandy-other, xo",
-   "en": "Heuristic profile — cognac-xo, brandy-other, xo"
+   "hr": "Njemački weinbrand odležan 21 godinu — suho voće, vanilija i dubina.",
+   "en": "German Weinbrand aged 21 years — dried fruit, vanilla and depth."
   }
  },
  {
@@ -2398,8 +2398,8 @@
   "cigarHint": null,
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/davidoff-xo-premium-cognac-40-07-l-in-giftbox",
   "notes": {
-   "hr": "Heuristika — cognac-xo, cognac, xo",
-   "en": "Heuristic profile — cognac-xo, cognac, xo"
+   "hr": "Davidoffov XO — elegancija i cigarski DNA u čaši.",
+   "en": "Davidoff's XO — elegance and cigar-house DNA in a glass."
   }
  },
  {
@@ -2486,8 +2486,8 @@
   "cigarHint": null,
   "priceUrl": "https://ecuga.com/proizvod/hennessy-xxo",
   "notes": {
-   "hr": "Heuristika — cognac-vsop, cognac, unknown",
-   "en": "Heuristic profile — cognac-vsop, cognac, unknown"
+   "hr": "Iznad XO-a — dugo odležane eau-de-vie, zaokružen i bogat.",
+   "en": "Above XO — long-aged eaux-de-vie, rounded and rich."
   }
  },
  {
@@ -2531,8 +2531,8 @@
   "cigarHint": null,
   "priceUrl": "https://ecuga.com/proizvod/martell-chanteloup-xxo",
   "notes": {
-   "hr": "Heuristika — cognac-vsop, cognac, unknown",
-   "en": "Heuristic profile — cognac-vsop, cognac, unknown"
+   "hr": "Iznad XO-a — elegantni Martellov stil s Borderies dubinom.",
+   "en": "Above XO — Martell's elegant style with Borderies depth."
   }
  },
  {
@@ -2576,8 +2576,8 @@
   "cigarHint": null,
   "priceUrl": "https://allez.hr/shop/svi-proizvodi/martell-cohiba-grande-champagne-cognac-43-vol-07l",
   "notes": {
-   "hr": "Heuristika — cognac-vsop, cognac, unknown",
-   "en": "Heuristic profile — cognac-vsop, cognac, unknown"
+   "hr": "Limitirano izdanje za cigarske entuzijaste — konjak blendiran za Cohiba cigaru.",
+   "en": "Limited edition for cigar enthusiasts — cognac blended for the Cohiba cigar."
   }
  },
  {

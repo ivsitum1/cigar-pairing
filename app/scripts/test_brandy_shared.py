@@ -37,6 +37,29 @@ class DetectStyleRegionTests(unittest.TestCase):
         style, *_ = detect_style_region("Carlos I Solera Gran Reserva")
         self.assertEqual(style, "brandy-de-jerez")
 
+    def test_armagnac_producers_detected(self) -> None:
+        cases = {
+            "Darroze Les Grands Assemblages 8": "armagnac",
+            "Delord 15 Ans Bas-Armagnac": "armagnac",
+            "Baron de Sigognac 10 Ans": "armagnac",
+        }
+        for name, expected_style in cases.items():
+            style, *_ = detect_style_region(name)
+            self.assertEqual(style, expected_style, msg=name)
+
+    def test_cognac_producers_detected(self) -> None:
+        cases = {
+            "Pierre Ferrand 1840 Réserve": "cognac-vsop",
+            "Gautier XO": "cognac-xo",
+        }
+        for name, expected_style in cases.items():
+            style, *_ = detect_style_region(name)
+            self.assertEqual(style, expected_style, msg=name)
+
+    def test_vs_not_confused_with_vsop(self) -> None:
+        style, *_ = detect_style_region("Camus VERY SPECIAL Intensely Aromatic Cognac")
+        self.assertEqual(style, "cognac-vs")
+
 
 if __name__ == "__main__":
     unittest.main()

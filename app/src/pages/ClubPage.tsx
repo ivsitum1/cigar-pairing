@@ -8,6 +8,8 @@ import { DetailSheet } from "../components/DetailSheet";
 import { COUNTRIES, cigarCountries, drinkCountries, type CountryInfo } from "../lib/geo";
 import club from "../data/club.json";
 import WORLD_OUTLINE from "../data/world_outline.json";
+import { Club101Page } from "./Club101Page";
+import { BontonPage } from "./BontonPage";
 
 interface Quote { text: LocalizedText; author: string; note?: LocalizedText }
 interface Fact { hr: string; en: string }
@@ -45,11 +47,14 @@ const BEST_KEY = "club-quiz-best-streak";
 export function ClubPage() {
   const { t, lx } = useI18n();
   const day = dayOfYear();
+  const [show101, setShow101] = useState(false);
+  const [showBonton, setShowBonton] = useState(false);
 
-  // citat i zanimljivost dana (+ rucno listanje zanimljivosti)
+  // citat dana; zanimljivosti u dnevno promijesanom redoslijedu
   const quote = QUOTES[day % QUOTES.length];
+  const factOrder = useMemo(() => shuffledOrder(FACTS.length, day * 1597334677), [day]);
   const [factOffset, setFactOffset] = useState(0);
-  const fact = FACTS[(day + factOffset) % FACTS.length];
+  const fact = FACTS[factOrder[factOffset % factOrder.length]];
 
   // kviz: dnevno promijesan redoslijed, sekvencijalno kroz pitanja
   const order = useMemo(() => shuffledOrder(QUIZ.length, day * 2654435761), [day]);
@@ -139,6 +144,13 @@ export function ClubPage() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  if (show101) {
+    return <Club101Page onBack={() => setShow101(false)} />;
+  }
+  if (showBonton) {
+    return <BontonPage onBack={() => setShowBonton(false)} />;
+  }
+
   return (
     <div className="pb-4">
       {/* citat dana */}
@@ -162,6 +174,32 @@ export function ClubPage() {
           className="mt-3 rounded-full border border-zlato/40 px-3 py-1.5 font-display text-xs uppercase tracking-widest text-zlato hover:bg-zlato/10"
         >
           {t("club.factNext")} →
+        </button>
+      </div>
+
+      {/* 101 — otvara zaseban tečaj */}
+      <SectionTitle>{t("club.101")}</SectionTitle>
+      <div className="rounded-xl border border-zlato/25 bg-cedar p-4">
+        <p className="text-sm leading-relaxed text-papir/90">{t("club.101Teaser")}</p>
+        <button
+          type="button"
+          onClick={() => setShow101(true)}
+          className="mt-3 w-full rounded-lg border border-zlato/40 py-2.5 font-display text-xs uppercase tracking-widest text-zlato hover:bg-zlato/10"
+        >
+          {t("club.101Open")} →
+        </button>
+      </div>
+
+      {/* bonton — mala knjiga manira */}
+      <SectionTitle>{t("club.bonton")}</SectionTitle>
+      <div className="rounded-xl border border-zlato/25 bg-cedar p-4">
+        <p className="text-sm leading-relaxed text-papir/90">{t("club.bontonTeaser")}</p>
+        <button
+          type="button"
+          onClick={() => setShowBonton(true)}
+          className="mt-3 w-full rounded-lg border border-zlato/40 py-2.5 font-display text-xs uppercase tracking-widest text-zlato hover:bg-zlato/10"
+        >
+          {t("club.bontonOpen")} →
         </button>
       </div>
 
@@ -231,9 +269,6 @@ export function ClubPage() {
       </div>
       <div className="overflow-hidden rounded-xl border border-dim/15 bg-humidor/80">
         <svg viewBox={viewBox} className="block w-full" role="img" aria-label={t("club.map")}>
-          {/* ocean = tamna pozadina; kopno = monokromna ispuna + tanka obala.
-              Eksplicitne opacity vrijednosti — currentColor s alpha klasom bi
-              se množio sa strokeOpacity i obala bi postala nevidljiva. */}
           <path
             d={landPath}
             fillRule="evenodd"
@@ -245,14 +280,12 @@ export function ClubPage() {
             vectorEffect="non-scaling-stroke"
             strokeLinejoin="round"
           />
-          {/* graticule */}
           {Array.from({ length: 11 }, (_, i) => i * 36).map((x) => (
             <line key={`v${x}`} x1={x} y1={0} x2={x} y2={120} stroke="currentColor" strokeWidth={0.15} className="text-dim/30" />
           ))}
           {Array.from({ length: 5 }, (_, i) => i * 30).map((y) => (
             <line key={`h${y}`} x1={0} y1={y} x2={360} y2={y} stroke="currentColor" strokeWidth={0.15} className="text-dim/30" />
           ))}
-          {/* ekvator */}
           <line x1={0} y1={Y(0)} x2={360} y2={Y(0)} stroke="currentColor" strokeWidth={0.3} className="text-zlato/30" />
           {active.map((c) => (
             <g
@@ -282,7 +315,6 @@ export function ClubPage() {
         </svg>
       </div>
 
-      {/* zemlje kao chipovi (i za one koji ne vole kartu) */}
       <div className="no-scrollbar mt-2 flex gap-1.5 overflow-x-auto">
         {active.map((c) => (
           <Chip key={c.hr} active={country?.hr === c.hr} onClick={() => setCountry(country?.hr === c.hr ? null : c)}>

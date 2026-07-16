@@ -5,6 +5,7 @@ import { useI18n } from "../i18n";
 import { Chip, SectionTitle } from "../components/ui";
 import { CigarRow, DrinkRow } from "../components/cards";
 import { DetailSheet } from "../components/DetailSheet";
+import { BackButton } from "../components/BackButton";
 import {
   addJournalEntry,
   exportData,
@@ -214,6 +215,9 @@ function AddPairingSheet({ onClose }: { onClose: () => void }) {
         className="w-full max-w-lg rounded-t-2xl border border-zlato/25 bg-humidor p-5 pb-8 sm:rounded-2xl"
         onClick={(e) => e.stopPropagation()}
       >
+        <div className="mb-3">
+          <BackButton onClick={onClose}>{t("common.back")}</BackButton>
+        </div>
         <h3 className="font-display text-lg text-papir">{t("coll.addPairing")}</h3>
         <div className="mt-4 space-y-3">
           <label className="block text-xs uppercase tracking-widest text-dim">
