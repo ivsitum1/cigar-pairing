@@ -50,4 +50,19 @@ describe("club 101 vodici", () => {
   it("trikovitraka postoji", () => {
     expect(club101.tracks.tips.length).toBeGreaterThanOrEqual(6);
   });
+
+  it("lekcije imaju katalog-dubinu (liste tipova / karakteristike)", () => {
+    for (const track of TRACKS) {
+      for (const card of club101.tracks[track]) {
+        const min = track === "tips" ? 350 : 650;
+        expect(card.body.hr.length, `${card.id} hr`).toBeGreaterThanOrEqual(min);
+        expect(card.body.en.length, `${card.id} en`).toBeGreaterThanOrEqual(min);
+        // bullet katalog ili numerirane tocke
+        expect(
+          /•|\n\d+\./.test(card.body.hr) && /•|\n\d+\./.test(card.body.en),
+          card.id,
+        ).toBe(true);
+      }
+    }
+  });
 });
