@@ -1,29 +1,14 @@
-# 
-	Smoking Rooms of the Gilded Age | Cigar Aficionado
-	
-Source: https://www.cigaraficionado.com/article/smoking-rooms-of-the-gilded-age-7425
+# Smoking Rooms of the Gilded Age | Cigar Aficionado
 
-[Rafael Nodal Joins Us On The Newest Cigar Aficionado Podcast. Watch It Now!](https://www.cigaraficionado.com/video/nqFCndLY/the-cigar-aficionado-podcast-episode-no-5-rafael-nodal) ×
+- Source: https://www.cigaraficionado.com/article/smoking-rooms-of-the-gilded-age-7425
+- Accessed: 2026-07-16
+- Note: full-page extract captured during research harvest
 
-# Cigar Aficionado
+Smoking Rooms of the Gilded Age | Cigar Aficionado
 
-skip to navigation skip to content
+Collect And Smoke A Special Selection Of The Top 25 Cigars of 2025 At Big Smoke Florida—May 8th! Buy Tickets Today.×
 
-Subscribe site search
-
-Search Search
-
-Share [](http://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.cigaraficionado.com/article/smoking-rooms-of-the-gilded-age-7425 "Share on Facebook") [](https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.cigaraficionado.com/article/smoking-rooms-of-the-gilded-age-7425&text=Smoking Rooms of the Gilded Age "Share on Twitter") 
-
-## Smoking Rooms of the Gilded Age
-
-Gilded Rooms Smoking Parlors Set a Style of Their Own in America's Great Age of Palaces
-
-| By Jack Bettridge | From Michael Douglas, May/Jun 98
-
-Share [](http://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.cigaraficionado.com/article/smoking-rooms-of-the-gilded-age-7425 "Share on Facebook") [](https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.cigaraficionado.com/article/smoking-rooms-of-the-gilded-age-7425&text=Smoking Rooms of the Gilded Age "Share on Twitter") 
-
-Share [](http://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.cigaraficionado.com/article/smoking-rooms-of-the-gilded-age-7425 "Share on Facebook") [](https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.cigaraficionado.com/article/smoking-rooms-of-the-gilded-age-7425&text=Smoking Rooms of the Gilded Age "Share on Twitter") 
+Share
 
 Grandeur was not the standard in American homes when Ruggles Sylvester Morse planned his Portland, Maine, show house in the late 1850s. Still Morse, a successful hotelier in New Orleans, was quite familiar with the closest things to palaces that the country had: the grand hotels of the day. From this model he cribbed the notions that his house should be filled with public spaces, utilize central heating, running water and toilets, and include a smoking room to which gentleman could repair to enjoy cigars.
 
@@ -73,7 +58,7 @@ More modest, but still breathtaking, are two houses from the middle part of the 
 
 The Gothic-style Kingscote, which was built in 1839, was sold to William Henry King, a trader with China, in 1863. Though King was committed to a mental hospital in 1866 (where he enjoyed imported cigars), his nephew, David, continued his uncle's tradition of decorating with pieces and artwork imported from China. He began upgrading the rustic house to the new formality of Newport, adding a parlor-full of overstuffed Turkish furniture from the New York design firm of Léon Marcotte in 1878. He later commissioned a three-story addition by Stanford White, the architect who, with his partners McKim and Meade, would do much to define the Gilded Age.
 
-Newport's preservation society is also custodian to Chateau-Sur-Mer, a Victorian home built in 1852 for William S. Wetmore, who also made his fortune in the China trade. His son, George Peabody Wetmore, who would later be governor of Rhode Island, commissioned Richard Morris Hunt in 1871 to renovate the house, reflecting fashionable European design. Hunt would go on to design 25 mansions and cottages in Newport and several along New York's Fifth Avenue. Among the added rooms was a French salon designed by Ogden Codman, a cousin of William Wetmore's, who wrote, with novelist Edith Wharton, The _Decoration of Houses,_ a treatise on interior design that laid out the precepts of Gilded Age decor with its notions of restrained elegance, echoing European styles. In the mansion there are two pieces of particular interest to smokers: a Chinese-style lacquer cigar box made in the 1840s, emblazoned with the Wetmore coat of arms, and an owl-shaped humidor.
+Newport's preservation society is also custodian to Chateau-Sur-Mer, a Victorian home built in 1852 for William S. Wetmore, who also made his fortune in the China trade. His son, George Peabody Wetmore, who would later be governor of Rhode Island, commissioned Richard Morris Hunt in 1871 to renovate the house, reflecting fashionable European design. Hunt would go on to design 25 mansions and cottages in Newport and several along New York's Fifth Avenue. Among the added rooms was a French salon designed by Ogden Codman, a cousin of William Wetmore's, who wrote, with novelist Edith Wharton, The Decoration of Houses, a treatise on interior design that laid out the precepts of Gilded Age decor with its notions of restrained elegance, echoing European styles. In the mansion there are two pieces of particular interest to smokers: a Chinese-style lacquer cigar box made in the 1840s, emblazoned with the Wetmore coat of arms, and an owl-shaped humidor.
 
 Given the scale of the truly great mansions of Newport, only a few architects were up to the task of designing them. Miller calls the change in American homes "a transformation so radical you wonder how one could have achieved it." They did it, in part, by employing the same designers over and over. Hunt became almost the family architect to the Vanderbilts, and McKim, Meade and White, cigar smokers all, picked up much of the rest of the business. White would play another role in the history of U.S. society when he was shot dead in 1906 by a jealous husband. The trial for the murder would provide pages and pages of scandal fodder to the yellow press of the era.
 
@@ -123,6 +108,56 @@ Jessica Johnston, public affairs director of the Flagler Museum, which incorpora
 
 Flagler's cigar retreat would be passed on to a niece, who sold it, and then a group of investors turned the estate into a hotel that ran until 1959, when the building was recovered as a museum. As the Gilded Age ran its course, most of the grander homes would, alas, suffer similar fates as income and inheritance taxes and the cost of maintaining servant staffs had their considerable impact. Henry James coined the term "white elephant" to describe just such unmaintainable jewels. Newport, which once had 50 comparable mansions, now has just a half dozen that are kept as residences. We can only take solace that some remain as museums where one can gaze upon the rooms where men once went to smoke fine cigars in a style that will probably never be enjoyed again.
 
+## Channels
+
+### Cuba
+
+### A Cuban Juan Lopez Exclusively For Mexico
+
+April 6, 2026
+
+### Cigar News
+
+### La Gloria Cubana Intención Arrives At Retail
+
+April 27, 2026
+
+### The Good Life
+
+### American Roots
+
+April 28, 2026
+
+### Where to Smoke
+
+### Buffalo Cigars, Orchard Park, New York
+
+April 16, 2026
+
+### Legislation
+
+### D.C. Justice Rules For Premium Cigars—Again
+
+April 16, 2026
+
+### Cigar Gear
+
+### J.C. Newman Celebrates America’s 250th Birthday with Patriotic Humidor
+
+April 20, 2026
+
+### Celebrities
+
+### My Favorite Cigar
+
+February 20, 2026
+
+### Timepieces
+
+### Classic Dress Watches
+
+October 27, 2025
+
 ## Blogs
 
 ### Marvin Shanken
@@ -138,43 +173,5 @@ Flagler's cigar retreat would be passed on to a niece, who sold it, and then a g
 CIGAR AFICIONADO NEWSLETTERS
 
 Check out Cigar Aficionado's newsletters, bringing you our latest ratings & reviews, cigar news and our guide to the good life.
-
-Follow Us On:
-
-[](https://www.facebook.com/CigarAficionado/ "Visit us on Facebook")
-
-[](https://www.instagram.com/cigaraficionado/ "Check us out on Instagram")
-
-[](http://twitter.com/CigarAficMag "Follow us on Twitter")
-
-[](http://www.youtube.com/user/cigaraficionadovideo "Check us out on YouTube")
-
-## M. Shanken Communications
-
-* [Wine Spectator](http://www.winespectator.com/ "Wine Spectator")
-* [Whisky Advocate](http://whiskyadvocate.com/ "Whisky Advocate")
-* [Market Watch](http://marketwatchmag.com/ "Market Watch")
-* [Impact / Impact Databank](http://winespectator.com/display/show?id=impact_databank_report "Impact")
-* [Shanken News Daily](http://www.shankennewsdaily.com/ "Shanken News Daily")
-
-## Subscriptions
-
-* [Print Subscription](https://sub.cigaraficionado.com/pubs/M5/CGA/AMG-designed-page_CGA-ISO_1-Year-for-2995.jsp?cds_page_id=278585&cds_mag_code=CGA&id=1716925537034&lsid=41491433150030260&vid=7 "Print Subscription")
-* Digital Subscription
-* [Gift Subscription](https://giftcenter.winespectator.com/ "Gift Subscription")
-* Cigar Insider
-* [Cigar Watch](http://newsletters.cigaraficionado.com/ "Get Cigar Watch")
-
-## Follow Us On:
-
-[](http://www.facebook.com/home.php#/pages/New-York-NY/Cigar-Aficionado/177909070299 "Visit us on Facebook")
-
-[](https://www.instagram.com/cigaraficionado/ "Check us out on Instagram")
-
-[](http://twitter.com/CigarAficMag "Follow us on Twitter")
-
-[](http://www.youtube.com/user/cigaraficionadovideo "Check us out on YouTube")
-
-© Cigar Aficionado Online, M. Shanken Communications, Inc. All rights reserved. Return to top .
 
 ×

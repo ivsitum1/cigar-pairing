@@ -27,11 +27,11 @@ docs/bonton/
 
 ## Parallel deep research
 
-Ultra deep research je završen (2026-07-16). Rezultat je u:
+Ultra deep research (round 1 + round 2) završen je 2026-07-16; deduplikacija je u `notes/dedup-round2.md`.
 
-- `notes/parallel-ultra-bonton.md`
-- `notes/parallel-ultra-bonton.json`
-- `sources/parallel-ultra-bonton-extracts.json`
+- Round 1: `notes/parallel-ultra-bonton.md`
+- Round 2: `notes/parallel-ultra-bonton-round2.md` (LoC/Europeana, HR/regional, Emily Post full, Davidoff licence status)
+- Aktivni extracti: `extracts/` (51); arhiva duplikata: `extracts/_deduped/`
 
 Ako treba novi krug, koristi:
 
