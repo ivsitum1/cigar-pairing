@@ -1,10 +1,28 @@
 import { describe, it, expect } from "vitest";
-import { BUCKETS, buffetFive, collectionGaps, segmentPicks, wishlistText } from "./shoppingPicks";
+import { BUCKETS, buffetFive, collectionGaps, groupWishlistByShop, segmentPicks, wishlistText } from "./shoppingPicks";
 import { DRINKS } from "../data";
 import type { DrinkCategory } from "../types";
 
 const CATS: DrinkCategory[] = ["rum", "whisky", "brandy", "gin", "wine"];
 const nitko = () => false;
+
+describe("grupiranje liste zelja po trgovini", () => {
+  it("grupira, cisti sufikse u zagradi i sortira po trosku", () => {
+    const groups = groupWishlistByShop(
+      [
+        { shop: "allez.hr", price: 40 },
+        { shop: "allez.hr (rijetko)", price: 60 },
+        { shop: "The Humidor", price: 12 },
+        { shop: "", price: 9 },
+        { shop: null, price: null },
+      ],
+      "ostalo",
+    );
+    expect(groups[0]).toEqual({ shop: "allez.hr", count: 2, total: 100 });
+    expect(groups[1]).toEqual({ shop: "The Humidor", count: 1, total: 12 });
+    expect(groups[2]).toEqual({ shop: "ostalo", count: 2, total: 9 });
+  });
+});
 
 describe("shopping picks", () => {
   it("buffet petorka: 5 razlicitih boca po kategoriji, po jedna iz svakog segmenta", () => {

@@ -152,6 +152,31 @@ export function collectionGaps(
 }
 
 /** Tekst liste zelja za kopiranje/share — ponijeti u ducan. */
+// ☆ lista zelja grupirana po trgovini — jedan odlazak u ducan = jedna grupa.
+// Sitni dobavljaci ("Vrutak", "Lidl", "svugdje"...) padaju pod "ostalo".
+export interface ShopGroup {
+  shop: string;
+  count: number;
+  total: number; // zbroj poznatih cijena (min za pica)
+}
+
+export function groupWishlistByShop(
+  items: { shop?: string | null; price: number | null }[],
+  otherLabel: string,
+): ShopGroup[] {
+  const groups = new Map<string, ShopGroup>();
+  for (const it of items) {
+    const raw = (it.shop ?? "").trim();
+    // "allez.hr (rijetko)" -> "allez.hr"
+    const shop = raw ? raw.replace(/\s*\(.*\)$/, "") : otherLabel;
+    const g = groups.get(shop) ?? { shop, count: 0, total: 0 };
+    g.count += 1;
+    g.total += it.price ?? 0;
+    groups.set(shop, g);
+  }
+  return [...groups.values()].sort((a, b) => b.total - a.total || b.count - a.count);
+}
+
 export function wishlistText(
   items: { name: string; price: number | null; shop?: string }[],
   totalLabel = "Ukupno",

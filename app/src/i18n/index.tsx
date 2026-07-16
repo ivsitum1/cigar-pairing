@@ -59,6 +59,7 @@ const STRINGS = {
   "pair.market": { hr: "Gdje kupuješ cigare?", en: "Where do you buy cigars?" },
   "pair.prefs": { hr: "Preferencije (zemlje / brendovi)", en: "Preferences (countries / brands)" },
   "pair.prefsHint": { hr: "Klikni da isključiš iz prijedloga", en: "Click to exclude from suggestions" },
+  "shop.otherShops": { hr: "ostalo", en: "other" },
   "pair.occasion": { hr: "Prilika", en: "Occasion" },
   "occ.morning": { hr: "☀ Jutro", en: "☀ Morning" },
   "occ.afternoon": { hr: "🌤 Poslijepodne", en: "🌤 Afternoon" },

@@ -10,6 +10,7 @@ import {
   buffetFive,
   buffetTotal,
   collectionGaps,
+  groupWishlistByShop,
   segmentPicks,
   wishlistText,
 } from "../lib/shoppingPicks";
@@ -42,6 +43,21 @@ export function ShoppingPage() {
   const wishlistTotal =
     wishlistDrinks.reduce((s, d) => s + (d.priceEUR?.min ?? 0), 0) +
     wishlistCigars.reduce((s, c) => s + (c.priceEUR ?? 0), 0);
+
+  // razrada liste zelja po trgovini — jedan odlazak = jedna grupa
+  const wishlistShops = groupWishlistByShop(
+    [
+      ...wishlistCigars.map((c) => ({
+        shop: c.availabilityHR?.[0],
+        price: c.priceEUR,
+      })),
+      ...wishlistDrinks.map((d) => ({
+        shop: d.shopHR,
+        price: d.priceEUR?.min ?? null,
+      })),
+    ],
+    t("shop.otherShops"),
+  );
 
   const shareWishlist = async () => {
     const text = wishlistText(
@@ -142,6 +158,18 @@ export function ShoppingPage() {
               </span>
             )}
           </div>
+          {wishlistShops.length > 1 && (
+            <div className="mt-2 flex flex-wrap gap-1.5">
+              {wishlistShops.map((g) => (
+                <span
+                  key={g.shop}
+                  className="rounded-full border border-dim/25 bg-cedar px-2.5 py-1 text-[11px] text-dim"
+                >
+                  {g.shop}: {g.count}×{g.total > 0 ? ` · ~${g.total.toFixed(0)} €` : ""}
+                </span>
+              ))}
+            </div>
+          )}
         </>
       )}
       <p className="mt-2 text-xs leading-relaxed text-dim">{t("shop.wishlistNote")}</p>
