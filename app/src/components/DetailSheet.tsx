@@ -4,6 +4,7 @@ import { useI18n, STYLE_LABELS, ADDITIVE_LABELS, ADDITIVE_RULES } from "../i18n"
 import { brandInfo, cigarMarketLinks, formatPrice } from "../data";
 import { vitolaBlurb } from "../lib/vitolaInfo";
 import { Chip, Meter } from "./ui";
+import { BackButton } from "./BackButton";
 import {
   getItemState,
   updateItem,
@@ -47,6 +48,10 @@ export function DetailSheet({
         onClick={(e) => e.stopPropagation()}
       >
         <div className="mx-auto mb-4 h-1 w-10 rounded-full bg-dim/40 sm:hidden" />
+
+        <div className="mb-3">
+          <BackButton onClick={onClose}>{t("common.back")}</BackButton>
+        </div>
 
         {target.kind === "cigar" ? (
           <CigarDetails cigar={target.item} onOpenBrand={onOpenBrand} />
