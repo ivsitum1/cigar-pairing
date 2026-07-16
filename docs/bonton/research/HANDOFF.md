@@ -9,28 +9,21 @@
 - Rukopis: `docs/bonton/mala-knjiga-pusackog-bontona.md`
 - App bonton: `app/src/data/bonton.json` (na masteru, već deployano)
 - Korisnik je dodao Cursor Secret: `PARALLEL_API_KEY` (Runtime Secret)
-- Prethodna sesija **nije** imala ključ (agent pokrenut prije secreta) — zato deep research nije krenuo
+- Deep research (ultra) je završen; vidi `notes/parallel-ultra-bonton.md`
+
+## Update (2026-07-16)
+
+- Run ID: `trun_ba7dd13b06a5491d9a482024cf4b2c32`
+- Rezultat: `notes/parallel-ultra-bonton.md` + `notes/parallel-ultra-bonton.json`
+- URL-ovi: `notes/parallel-ultra-bonton-urls.txt` (40)
+- Extract metadata: `sources/parallel-ultra-bonton-extracts.json`
+- Extracti: `extracts/parallel-ultra-bonton-*.md` (31)
 
 ## Što napraviti odmah
 
-1. `git checkout cursor/bonton-book-research-9b19`
-2. Provjeri auth **bez ispisivanja ključa**:
-   ```bash
-   export PATH="$HOME/.local/bin:$PATH"
-   [ -n "$PARALLEL_API_KEY" ] && echo "key present" || echo "key MISSING"
-   parallel-cli auth
-   ```
-3. Ako ključ postoji, pokreni **opsežno** deep research (korisnik tražio: polako, u pozadini, sva građa, notirati izvore, preuzimati tekst):
-   ```bash
-   cd /workspace/docs/bonton/research
-   parallel-cli research run "Exhaustive source corpus for a book on cigar and smoking etiquette (pušački bonton): British and Victorian/Edwardian gentleman manners and smoking-room customs; classic etiquette manuals (Hartley, Young, Wells, Emily Post, Beeton); Zino Davidoff cigar etiquette; contemporary cigar lounge hospitality norms; scholarly literature on tobacco, gender, and social space; cultural history of gentlemen's clubs and smoking jackets; hospitality rules for offering cigars and pairing drinks; public-domain texts and repository holdings (Internet Archive, Gutenberg, libraries). Prefer citable primary and secondary sources; list URLs/DOIs; extract usable excerpts for manuscript writing." \
-     --processor ultra --no-wait --json
-   ```
-4. Poll u pozadini (`--timeout 540`), spremi output u:
-   - `notes/parallel-ultra-bonton.md`
-   - `notes/parallel-ultra-bonton.json`
-5. Iz rezultata izvuci URL-ove → `parallel-cli extract` u `extracts/`
-6. Ažuriraj `CATALOG.md` + commit + push **samo** na research branch
+1. Pregledaj `notes/parallel-ultra-bonton.md` i odaberi relevantne izvore za rukopis.
+2. Po potrebi očisti duplicirane izvore i ažuriraj `CATALOG.md`.
+3. Ako treba novi krug deep researcha, koristi `parallel-cli research run` uz precizniji upit i `--processor ultra`.
 
 ## Dodatni research krugovi (ako ultra uspije)
 

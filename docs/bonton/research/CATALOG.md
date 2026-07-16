@@ -15,7 +15,7 @@ _Generated: 2026-07-16_
 | Open Library hits | 54 |
 | Wikipedia pages | 8 |
 | Curated web sources | 13 |
-| Text extracts on disk | 33 |
+| Text extracts on disk | 64 |
 
 ## How to use
 
@@ -253,7 +253,46 @@ northern region of Thailand](https://doi.org/10.37473/dac/10.18332/tid/140138) Â
 - `extracts/wikipedia-Smoking_room.md` (2763 bytes)
 - `extracts/wikipedia-Tobacco.md` (50166 bytes)
 
-## Parallel Deep Research (pending)
+### Parallel deep research (ultra, 2026-07-16)
 
-`parallel-cli` is installed but **not authenticated** in this environment.
-When `PARALLEL_API_KEY` is available, run ultra research into `notes/parallel-ultra-*.md`.
+- `extracts/parallel-ultra-bonton-01-internet-archive-digital-library-of-free-borrowable-texts-movies-music-wayback-machine.md` (219 bytes)
+- `extracts/parallel-ultra-bonton-02-jstor-daily-homepage-jstor-daily.md` (23698 bytes)
+- `extracts/parallel-ultra-bonton-03-smoking-ban-wikipedia.md` (117648 bytes)
+- `extracts/parallel-ultra-bonton-04-home-cigar-aficionado.md` (12223 bytes)
+- `extracts/parallel-ultra-bonton-05-smoking-wikipedia.md` (123522 bytes)
+- `extracts/parallel-ultra-bonton-06-wellcome-collection-a-free-museum-and-library-exploring-health-and-human-experience.md` (4491 bytes)
+- `extracts/parallel-ultra-bonton-07-women-and-smoking-wikipedia.md` (26664 bytes)
+- `extracts/parallel-ultra-bonton-08-the-ever-lengthening-history-of-tobacco-jstor-daily.md` (11738 bytes)
+- `extracts/parallel-ultra-bonton-09-davidoff-wikipedia.md` (11001 bytes)
+- `extracts/parallel-ultra-bonton-10-home-search-the-archive-british-newspaper-archive.md` (114788 bytes)
+- `extracts/parallel-ultra-bonton-11-smoking-health-risks-addiction-history-britannica.md` (15678 bytes)
+- `extracts/parallel-ultra-bonton-12-smoking-rooms-of-the-gilded-age-cigar-aficionado.md` (28169 bytes)
+- `extracts/parallel-ultra-bonton-13-cigar-wikipedia.md` (85230 bytes)
+- `extracts/parallel-ultra-bonton-14-gentlemen-s-club-wikipedia.md` (67552 bytes)
+- `extracts/parallel-ultra-bonton-15-zino-davidoff-wikipedia.md` (21539 bytes)
+- `extracts/parallel-ultra-bonton-16-smoking-jacket-wikipedia.md` (13991 bytes)
+- `extracts/parallel-ultra-bonton-17-smoking-room-wikipedia.md` (10847 bytes)
+- `extracts/parallel-ultra-bonton-18-smoking-etiquette-edwardian-promenade.md` (23352 bytes)
+- `extracts/parallel-ultra-bonton-19-etiquette-by-emily-post-project-gutenberg.md` (3814 bytes)
+- `extracts/parallel-ultra-bonton-20-the-gentlemen-s-book-of-etiquette-and-manual-of-politeness-by-cecil-b-hartley-project-gutenberg.md` (4076 bytes)
+- `extracts/parallel-ultra-bonton-21-smokingpipes-com-tobacco-pipes-pipe-tobacco.md` (3300 bytes)
+- `extracts/parallel-ultra-bonton-22-the-etiquette-of-the-true-gentleman-toscano-cigars.md` (6122 bytes)
+- `extracts/parallel-ultra-bonton-23-cigar-etiquette-101-your-local-cigar-lounge.md` (18182 bytes)
+- `extracts/parallel-ultra-bonton-24-hathitrust-digital-library-millions-of-books-online.md` (6359 bytes)
+- `extracts/parallel-ultra-bonton-25-a-k-nyv-t-rt-nete-2-r-sz-by-k-roly-steinhofer-project-gutenberg.md` (3958 bytes)
+- `extracts/parallel-ultra-bonton-26-the-rider-of-golden-bar-by-william-patterson-white-project-gutenberg.md` (3698 bytes)
+- `extracts/parallel-ultra-bonton-27-home-library-of-congress.md` (20970 bytes)
+- `extracts/parallel-ultra-bonton-28-free-ebooks-project-gutenberg.md` (4704 bytes)
+- `extracts/parallel-ultra-bonton-29-the-ladies-book-of-etiquette-and-manual-of-politeness-by-florence-hartley-project-gutenberg.md` (4161 bytes)
+- `extracts/parallel-ultra-bonton-30-routledge-s-manual-of-etiquette-by-george-routledge-project-gutenberg.md` (4006 bytes)
+- `extracts/parallel-ultra-bonton-31-cigar-pairings-wine-rum-coffee-spirits-la-aurora.md` (4668 bytes)
+
+## Parallel Deep Research (ultra, complete)
+
+- Run ID: `trun_ba7dd13b06a5491d9a482024cf4b2c32`
+- Result URL: https://platform.parallel.ai/play/deep-research/trun_ba7dd13b06a5491d9a482024cf4b2c32
+- Notes: `notes/parallel-ultra-bonton.md` (derived from `notes/parallel-ultra-bonton.json`)
+- URL list: `notes/parallel-ultra-bonton-urls.txt` (40 URLs)
+- Extract metadata: `sources/parallel-ultra-bonton-extracts.json` (31 results)
+- Extract batches: `sources/parallel-ultra-bonton-extracts-batch-1.json`, `sources/parallel-ultra-bonton-extracts-batch-2.json`
+- Extract files: `extracts/parallel-ultra-bonton-*.md` (31 files)

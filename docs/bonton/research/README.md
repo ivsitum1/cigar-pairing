@@ -27,11 +27,17 @@ docs/bonton/
 
 ## Parallel deep research
 
-`parallel-cli` is installed in the agent environment but requires `PARALLEL_API_KEY` / `parallel-cli login` for Deep Research (`ultra`). When a key is available, re-run:
+Ultra deep research je završen (2026-07-16). Rezultat je u:
+
+- `notes/parallel-ultra-bonton.md`
+- `notes/parallel-ultra-bonton.json`
+- `sources/parallel-ultra-bonton-extracts.json`
+
+Ako treba novi krug, koristi:
 
 ```bash
 export PATH="$HOME/.local/bin:$PATH"
 parallel-cli research run "…" --processor ultra --no-wait --json
 ```
 
-Until then, harvesting continues via open APIs and web extraction.
+Zatim pokreni poll i ekstrakcije kao u `HANDOFF.md`.
