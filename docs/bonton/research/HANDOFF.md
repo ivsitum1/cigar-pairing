@@ -40,6 +40,13 @@
 - Raw search JSON: `notes/youtube-bonton-candidates.json`, `notes/youtube-bonton-candidates-hist.json`
 - Agent **ne** ekstrahira pouzdane YouTube transcripte; korisnik uvozi Priority linkove u NotebookLM, pa exporta bilješke u `extracts/youtube-*.md`
 
+## NotebookLM notebookovi (korisnik share)
+
+1. https://notebooklm.google.com/notebook/5b8ae55e-d6bf-4cde-afb2-33492c1b241b
+2. https://notebooklm.google.com/notebook/2707d3fe-73d1-4879-8e8d-b7538d1cb3f2
+- Grill prompti: `notes/notebooklm-grill-pack.md`
+- Status: agent ne može čitati bez Google login-a; čeka export odgovora
+
 ## Što napraviti odmah (sljedeći agent)
 
 1. Kad stignu NotebookLM exporti, katalogizirati ih u `extracts/` + `CATALOG.md`.
