@@ -54,16 +54,23 @@ describe("sanity logike matchanja", () => {
     expect(share100).toBeLessThan(0.02);
   });
 
-  // poruka postoji samo uz match >= 80 — upozorenja u njoj su kontradikcija
-  it("kurirane poruke (>= 80) nemaju negativne verdikte", () => {
-    const NEG = /nije idealan|izgubio bi|bi se izgubi|pregazi|steamroll|swamp|not ideal|disappear quickly|overwhelm/i;
+  // ton poruke mora pratiti score: pohvala (>=80) bez negativnih verdikta,
+  // upozorenje (<=45) bez pohvala — negativno misljenje je dozvoljeno i
+  // pozeljno, ali samo uz par koji se zaista ne poklapa
+  it("ton kurirane poruke prati score", () => {
+    const NEG = /nije idealan|izgubio bi|bi se izgubi|pregazi|steamroll|swamp|not ideal|disappear quickly|overwhelm|ne preporučujemo|radije potraži/i;
+    const POS = /klasičan (kontrast|večernji par)|prirodan, desertni|isti registar punoće|same weight class/i;
     const offenders: string[] = [];
     for (const c of CIGARS.filter((_, i) => i % 3 === 0)) {
       for (const d of ALL_DRINKS.filter((_, i) => i % 3 === 0)) {
         const { score, reasons } = scorePairing(c, d);
         const op = curatedPairingOpinion(c, d, reasons, score);
-        if (op && (NEG.test(op.hr) || NEG.test(op.en))) {
-          offenders.push(`${c.id} + ${d.id} @${score}: ${op.hr.slice(0, 90)}`);
+        if (!op) continue;
+        if (op.tone === "praise" && (NEG.test(op.text.hr) || NEG.test(op.text.en))) {
+          offenders.push(`pohvala s upozorenjem @${score}: ${op.text.hr.slice(0, 90)}`);
+        }
+        if (op.tone === "warning" && (POS.test(op.text.hr) || POS.test(op.text.en))) {
+          offenders.push(`upozorenje s pohvalom @${score}: ${op.text.hr.slice(0, 90)}`);
         }
       }
     }
