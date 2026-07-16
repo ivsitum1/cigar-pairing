@@ -130,6 +130,27 @@ describe("integritet podataka", () => {
     }
   });
 
+  // regresija za klasu gresaka: shop product URL zalijepljen na krivi proizvod
+  // (Barcelo -> Havana Club 15, Zacapa Ambar -> Edicion Negra, krnji "/4"...)
+  it("product URL-ovi pica dijele barem jedan token s imenom", () => {
+    const strip = (s: string) =>
+      s.normalize("NFKD").replace(/[̀-ͯ]/g, "").toLowerCase();
+    const violations: string[] = [];
+    for (const d of ALL_DRINKS) {
+      const url = d.priceUrl ?? "";
+      const m = url.match(/allez\.hr\/shop\/svi-proizvodi\/([^/?]+)/);
+      if (!m) continue; // kataloske/search stranice ne provjeravamo
+      const slug = strip(decodeURIComponent(m[1]));
+      const tokens = strip(d.name)
+        .split(/[^a-z0-9]+/)
+        .filter((t) => t.length >= 4);
+      if (tokens.length && !tokens.some((t) => slug.includes(t))) {
+        violations.push(`${d.id}: ${d.name} -> ${slug.slice(0, 60)}`);
+      }
+    }
+    expect(violations).toEqual([]);
+  });
+
   // svaki tag u podacima mora (nakon normalizacije u rules.ts) biti poznat
   // engineu — inace tiho ne donosi bodove; novi tag = svjesno dodati u
   // COMPLEMENTS/TAG_ALIASES, ne pustiti ga da propadne

@@ -342,12 +342,13 @@ function drinkBuyLink(drink: Drink): { href: string; label: "buy" | "search" } {
   const shop = (drink.shopHR ?? "").toLowerCase();
   const isEcuga = url.includes("ecuga.com");
   const isAllez = url.includes("allez.hr");
-  const shopMatchesDomain =
-    (isEcuga && shop.includes("ecuga")) || (isAllez && shop.includes("allez"));
+  const shopContradictsDomain =
+    (isEcuga && shop.includes("allez")) || (isAllez && shop.includes("ecuga"));
 
-  // Ako link nije na isti izvor koji se navodi kao HR shop, korisniku je to
+  // Ako shop eksplicitno upućuje na drugi izvor od URL-a, korisniku je to
   // praktično "pretraga" (inače cijena i link djeluju kao kontradikcija).
-  if ((isEcuga || isAllez) && !shopMatchesDomain) {
+  // Neutralni shopovi (Vrutak, Lidl, "razno") zadržavaju izravan link.
+  if ((isEcuga || isAllez) && shopContradictsDomain) {
     return { href: drinkSearchHref(drink), label: "search" };
   }
 
