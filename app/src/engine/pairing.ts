@@ -2,7 +2,7 @@
 // Svako pravilo koje pridonese rezultatu generira dvojezicno objasnjenje.
 
 import type { Cigar, Drink, PairingReason, PairingResult } from "../types";
-import { COMPLEMENTS, WEIGHTS, WRAPPER_AFFINITY } from "./rules";
+import { COMPLEMENTS, POWER_TAGS, WEIGHTS, WRAPPER_AFFINITY, normalizeTags } from "./rules";
 
 const clamp = (v: number, lo: number, hi: number) =>
   Math.max(lo, Math.min(hi, v));
@@ -16,6 +16,11 @@ export function scorePairing(
 ): { score: number; reasons: PairingReason[] } {
   const reasons: PairingReason[] = [];
   let score = WEIGHTS.base;
+
+  // sinonimi iz scrape podataka (npr. "začini", "cokolada", "mizunara")
+  // svode se na kanonske tagove da bi pravila 2, 2b i 5 vidjela sve note
+  const cigarTags = normalizeTags(cigar.flavorTags);
+  const drinkTags = normalizeTags(drink.flavorTags);
 
   // 1) Body match — zlatno pravilo
   const bodyDiff = Math.abs(cigar.body - drink.body);
@@ -63,7 +68,7 @@ export function scorePairing(
   }
 
   // 2) Zajednicki tagovi (komplementarno — slicni profili)
-  const shared = cigar.flavorTags.filter((t) => drink.flavorTags.includes(t));
+  const shared = cigarTags.filter((t) => drinkTags.includes(t));
   if (shared.length > 0) {
     const pts = Math.min(shared.length, 3) * WEIGHTS.tagOverlap;
     score += pts;
@@ -79,10 +84,10 @@ export function scorePairing(
 
   // 2b) Komplementarni parovi (razliciti ali se nadopunjuju)
   const complemented: string[] = [];
-  for (const ct of cigar.flavorTags) {
+  for (const ct of cigarTags) {
     const comp = COMPLEMENTS[ct];
     if (!comp) continue;
-    for (const dt of drink.flavorTags) {
+    for (const dt of drinkTags) {
       if (dt !== ct && comp.includes(dt)) complemented.push(`${ct}↔${dt}`);
     }
   }
@@ -117,7 +122,7 @@ export function scorePairing(
   for (const wa of WRAPPER_AFFINITY) {
     if (!wa.wrapper.test(cigar.wrapper)) continue;
     const styleHit = wa.styles.includes(drink.style);
-    const tagHit = drink.flavorTags.some((t) => wa.tags.includes(t));
+    const tagHit = drinkTags.some((t) => wa.tags.includes(t));
     if (styleHit || tagHit) {
       score += WEIGHTS.wrapperMatch;
       reasons.push({
@@ -130,8 +135,8 @@ export function scorePairing(
   }
 
   // 5) Snaga: overproof/dimna pica vole jaku cigaru, gaze blagu
-  const powerDrink = drink.flavorTags.some((t) =>
-    ["overproof", "dim", "ester-funk"].includes(t),
+  const powerDrink = drinkTags.some((t) =>
+    (POWER_TAGS as readonly string[]).includes(t),
   );
   if (powerDrink && cigar.strength >= 4) {
     score += WEIGHTS.strengthPowerMatch;

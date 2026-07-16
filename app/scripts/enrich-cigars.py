@@ -198,7 +198,14 @@ def parse_catalog(path: Path):
             rows.append({"name": name_part, "len": None, "ring": None,
                          "price": float(price), "url": url})
             continue
-        rows.append({"name": m.group(1).strip(), "len": parse_len(m.group(2)),
+        length = parse_len(m.group(2))
+        if not (3 <= length <= 12):
+            # broj iz imena proizvoda (npr. "Club 500") pogresno uhvacen kao
+            # duljina — tretiraj kao proizvod bez dimenzija
+            rows.append({"name": name_part, "len": None, "ring": None,
+                         "price": float(price), "url": url})
+            continue
+        rows.append({"name": m.group(1).strip(), "len": length,
                      "ring": int(m.group(3)), "price": float(price), "url": url})
     return rows
 
