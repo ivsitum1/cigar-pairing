@@ -111,6 +111,25 @@ describe("integritet podataka", () => {
     }
   });
 
+  // regresija revizije kuriranih unosa: Habanos (kubanske) marke nose
+  // country=Kuba — ne-kubanske verzije zive pod zasebnim "(NW)" brendovima
+  it("Habanos brendovi imaju country Kuba i kubanski wrapper", () => {
+    const habanos = new Set([
+      "Cohiba", "Montecristo", "Partagás", "Romeo y Julieta", "Hoyo de Monterrey",
+      "H. Upmann", "Bolívar", "Punch", "Trinidad", "Ramón Allones", "Quintero",
+      "Cuaba", "San Cristóbal de la Habana", "Vegas Robaina", "Juan López",
+      "Fonseca", "Quai d'Orsay", "José L. Piedra", "Vegueros",
+    ]);
+    for (const c of CIGARS) {
+      if (!habanos.has(c.brand)) continue;
+      expect(c.country, `${c.id} country`).toBe("Kuba");
+      expect(
+        /connecticut|ecuador|sumatra|cameroon|san andr|brazil|nicarag/i.test(c.wrapper),
+        `${c.id}: kubanska cigara s ne-kubanskim wrapperom '${c.wrapper}'`,
+      ).toBe(false);
+    }
+  });
+
   // svaki tag u podacima mora (nakon normalizacije u rules.ts) biti poznat
   // engineu — inace tiho ne donosi bodove; novi tag = svjesno dodati u
   // COMPLEMENTS/TAG_ALIASES, ne pustiti ga da propadne
