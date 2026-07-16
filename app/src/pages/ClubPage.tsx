@@ -7,15 +7,25 @@ import { CigarRow, DrinkRow } from "../components/cards";
 import { DetailSheet } from "../components/DetailSheet";
 import { COUNTRIES, cigarCountries, drinkCountries, type CountryInfo } from "../lib/geo";
 import club from "../data/club.json";
+import club101 from "../data/club101.json";
 import WORLD_OUTLINE from "../data/world_outline.json";
 
 interface Quote { text: LocalizedText; author: string; note?: LocalizedText }
 interface Fact { hr: string; en: string }
 interface QuizQ { q: LocalizedText; a: LocalizedText[]; correct: number; why: LocalizedText }
+interface ShopLink { label: LocalizedText; url: string }
+interface GuideCard {
+  id: string;
+  title: LocalizedText;
+  body: LocalizedText;
+  shopLinks?: ShopLink[];
+}
+type GuideTrack = "cigars" | "drinks" | "accessories";
 
 const QUOTES = club.quotes as Quote[];
 const FACTS = club.facts as Fact[];
 const QUIZ = club.quiz as QuizQ[];
+const GUIDE_TRACKS = club101.tracks as Record<GuideTrack, GuideCard[]>;
 
 // dan u godini — deterministicki "dnevni" izbor
 const dayOfYear = () => {
@@ -46,10 +56,15 @@ export function ClubPage() {
   const { t, lx } = useI18n();
   const day = dayOfYear();
 
-  // citat i zanimljivost dana (+ rucno listanje zanimljivosti)
+  // citat dana; zanimljivosti u dnevno promijesanom redoslijedu
   const quote = QUOTES[day % QUOTES.length];
+  const factOrder = useMemo(() => shuffledOrder(FACTS.length, day * 1597334677), [day]);
   const [factOffset, setFactOffset] = useState(0);
-  const fact = FACTS[(day + factOffset) % FACTS.length];
+  const fact = FACTS[factOrder[factOffset % factOrder.length]];
+
+  // 101 vodic
+  const [guideTrack, setGuideTrack] = useState<GuideTrack>("cigars");
+  const guideCards = GUIDE_TRACKS[guideTrack];
 
   // kviz: dnevno promijesan redoslijed, sekvencijalno kroz pitanja
   const order = useMemo(() => shuffledOrder(QUIZ.length, day * 2654435761), [day]);
@@ -163,6 +178,44 @@ export function ClubPage() {
         >
           {t("club.factNext")} →
         </button>
+      </div>
+
+      {/* 101 vodic */}
+      <SectionTitle>{t("club.101")}</SectionTitle>
+      <p className="mb-2 text-xs leading-relaxed text-dim">{t("club.101Hint")}</p>
+      <div className="mb-2 flex gap-2">
+        <Chip active={guideTrack === "cigars"} onClick={() => setGuideTrack("cigars")}>
+          {t("club.trackCigars")}
+        </Chip>
+        <Chip active={guideTrack === "drinks"} onClick={() => setGuideTrack("drinks")}>
+          {t("club.trackDrinks")}
+        </Chip>
+        <Chip active={guideTrack === "accessories"} onClick={() => setGuideTrack("accessories")}>
+          {t("club.trackAccessories")}
+        </Chip>
+      </div>
+      <div className="space-y-2">
+        {guideCards.map((card) => (
+          <article key={card.id} className="rounded-xl border border-dim/15 bg-cedar p-4">
+            <h3 className="font-display text-sm text-zlato-2">{lx(card.title)}</h3>
+            <p className="mt-2 text-sm leading-relaxed text-papir/90">{lx(card.body)}</p>
+            {card.shopLinks && card.shopLinks.length > 0 && (
+              <div className="mt-3 flex flex-wrap gap-2">
+                {card.shopLinks.map((link) => (
+                  <a
+                    key={link.url + link.label.hr}
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="rounded-full border border-zlato/40 px-3 py-1 font-display text-[10px] uppercase tracking-widest text-zlato hover:bg-zlato/10"
+                  >
+                    {t("club.shopLink")}: {lx(link.label)} ↗
+                  </a>
+                ))}
+              </div>
+            )}
+          </article>
+        ))}
       </div>
 
       {/* kviz */}

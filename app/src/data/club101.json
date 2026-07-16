@@ -1,0 +1,210 @@
+{
+  "tracks": {
+    "cigars": [
+      {
+        "id": "c-vitola",
+        "title": {
+          "hr": "Vitola: oblik određuje tempo",
+          "en": "Vitola: shape sets the pace"
+        },
+        "body": {
+          "hr": "Duljina × ring gauge (64-ine inča) govore koliko dugo pušiš i kako se dim hladi. Uži format (lancero, corona) hladi se brže i ističe nijanse; debeli robusto/toro drži toplinu i tijelo. Smoke time na kartici je orijentir, ne sat.",
+          "en": "Length × ring gauge (64ths of an inch) tell you how long you smoke and how the smoke cools. Narrow formats (lancero, corona) cool faster and show nuance; fat robusto/toro hold heat and body. The listed smoke time is a guide, not a clock."
+        }
+      },
+      {
+        "id": "c-strength-body",
+        "title": {
+          "hr": "Snaga i tijelo nisu isto",
+          "en": "Strength and body are different"
+        },
+        "body": {
+          "hr": "Snaga = nikotin (koliko »udara«). Tijelo = punoća okusa i gustoća dima. Cigara može biti puna okusa, a blaga nikotinom — i obrnuto. Za pairing gledaj tijelo uz tijelo pića; snagu biraj prema vlastitom ritmu.",
+          "en": "Strength = nicotine (how hard it hits). Body = flavour fullness and smoke density. A cigar can be full-flavoured yet mild in nicotine — and vice versa. For pairing, match body to drink body; pick strength for your own pace."
+        }
+      },
+      {
+        "id": "c-humidor",
+        "title": {
+          "hr": "Humidor: 65–72 % RH, oko 20 °C",
+          "en": "Humidor: 65–72% RH, about 20 °C"
+        },
+        "body": {
+          "hr": "Španjolski cedar (ili cedar ploče) pomaže stabilizirati vlagu i miris. Digihigrometar je pouzdaniji od analognih. Presuha cigara gori vruće i gorko; prevlažna teško vuče i može pljesniviti. Novi humidor treba »začiniti« — navlažiti cedar prije nego staviš cigare.",
+          "en": "Spanish cedar (or cedar trays) helps stabilise humidity and aroma. A digital hygrometer beats analogue dials. Too dry burns hot and bitter; too damp draws poorly and can mould. Season a new humidor — humidify the cedar — before you store cigars."
+        }
+      },
+      {
+        "id": "c-cut",
+        "title": {
+          "hr": "Rez: ravni, V ili punch",
+          "en": "Cut: straight, V, or punch"
+        },
+        "body": {
+          "hr": "Ravni (guillotine) reže kapu ravno — najčešći izbor. V-cut otvara klin i usmjerava dim. Punch buši mali otvor — manje otpada, uži vučni kanal. Cilj: otvoriti kapu bez kidanja omotača. Oštar rezač i jedan čist rez vrijede više od tri oklijevanja.",
+          "en": "A straight (guillotine) cut opens the cap cleanly — the usual choice. A V-cut makes a wedge that channels smoke. A punch drills a small hole — less waste, a tighter draw. Goal: open the cap without tearing the wrapper. A sharp cutter and one clean cut beat three hesitant ones."
+        }
+      },
+      {
+        "id": "c-light",
+        "title": {
+          "hr": "Paljenje bez mirisa",
+          "en": "Lighting without taint"
+        },
+        "body": {
+          "hr": "Butan upaljač ili duge šibice / cedar spill. Drži plamen ispod stopala, vrti cigaru dok se rub ravnomjerno užari, pa tek onda povuci. Benzinski upaljač ostavlja miris u prvim dimovima. Ne »peč« omotač bočno.",
+          "en": "Butane lighter or long matches / a cedar spill. Hold the flame under the foot, rotate until the rim glows evenly, then draw. Petrol lighters taint the first puffs. Do not scorch the wrapper from the side."
+        }
+      }
+    ],
+    "drinks": [
+      {
+        "id": "d-label",
+        "title": {
+          "hr": "Kako čitati etiketu brandyja",
+          "en": "How to read a brandy label"
+        },
+        "body": {
+          "hr": "Redoslijed: 1) kategorija (Cognac, Armagnac, Calvados, Brandy de Jerez, vinjak…), 2) dob (VS / VSOP / XO ili godine), 3) cru ili podregija ako postoji (Grande Champagne, Pays d'Auge, Bas-Armagnac). Kategorija govori što piješ; dob i cru daju detalj.",
+          "en": "Order: 1) category (Cognac, Armagnac, Calvados, Brandy de Jerez, vinjak…), 2) age (VS / VSOP / XO or years), 3) cru or sub-region if stated (Grande Champagne, Pays d'Auge, Bas-Armagnac). Category tells you what you are drinking; age and cru add detail."
+        }
+      },
+      {
+        "id": "d-age-tiers",
+        "title": {
+          "hr": "VS, VSOP, XO = starost",
+          "en": "VS, VSOP, XO = age"
+        },
+        "body": {
+          "hr": "Na konjaku (i često na calvadosu/armagnacu) oznake govore o najmlađoj komponenti u blendu: VS ≥ 2 godine, VSOP ≥ 4, XO ≥ 10 (od 2018.). To je sustav dozrijevanja, jednako kao godine na scotch etiketi.",
+          "en": "On cognac (and often on calvados/armagnac) the marks refer to the youngest component in the blend: VS ≥ 2 years, VSOP ≥ 4, XO ≥ 10 (since 2018). It is an ageing system, just like the years on a scotch label."
+        }
+      },
+      {
+        "id": "d-distill",
+        "title": {
+          "hr": "Destilacija oblikuje karakter",
+          "en": "Distillation shapes character"
+        },
+        "body": {
+          "hr": "Konjak: dvaput u bakrenom Charentais pot stillu (~70 % ulaza u bačvu). Armagnac: jednom u kolonskom alambiku (52–60 %) — više kongenera, rustikalniji profil. Calvados Pays d'Auge: jabukovača dvaput kroz pot still. Ista »obitelj« brandyja, različiti alati.",
+          "en": "Cognac: twice in a copper Charentais pot still (~70% into cask). Armagnac: once in a column alambic (52–60%) — more congeners, a rustic profile. Calvados Pays d'Auge: cider twice through a pot still. Same brandy family, different tools."
+        }
+      },
+      {
+        "id": "d-oak",
+        "title": {
+          "hr": "Bačva i skladište",
+          "en": "Cask and warehouse"
+        },
+        "body": {
+          "hr": "Limousin hrast (širi godovi) daje konjaku više tanina; Tronçais finije zrno i eleganciju. Vlažan chai gubi više alkohola i mekša stil; suh koncentrira okus. Bourbon mora u NOVE opaljene bačve; scotch često u rabljene bourbon ili sherry butts. Brandy de Jerez: solera u bivšim sherry butts.",
+          "en": "Limousin oak (wider grain) lends cognac more tannin; Tronçais finer grain and elegance. A damp chai loses more alcohol and softens style; a dry one concentrates flavour. Bourbon must use NEW charred barrels; scotch often uses ex-bourbon or sherry butts. Brandy de Jerez: solera in former sherry butts."
+        }
+      },
+      {
+        "id": "d-rum-whisky",
+        "title": {
+          "hr": "Rum i whisky — brzi orijentir",
+          "en": "Rum and whisky — a quick compass"
+        },
+        "body": {
+          "hr": "Rum: melasa vs agricole (sok trske); EU limit 20 g/L dodanog šećera za naziv »rum«. Scotch: dob = najmlađa komponenta, min. 3 godine u Škotskoj. Bourbon: ≥51 % kukuruza, SAD, nove opaljene bačve. Single malt = jedna destilerija + 100 % ječmeni slad — ne nužno jedna bačva.",
+          "en": "Rum: molasses vs agricole (cane juice); EU cap 20 g/L added sugar to still be called 'rum'. Scotch: age = youngest component, min. 3 years in Scotland. Bourbon: ≥51% corn, USA, new charred barrels. Single malt = one distillery + 100% malted barley — not necessarily one cask."
+        }
+      }
+    ],
+    "accessories": [
+      {
+        "id": "a-glasses",
+        "title": {
+          "hr": "Čaše: oblik prati piće",
+          "en": "Glasses: shape follows the drink"
+        },
+        "body": {
+          "hr": "Snifter (balon) skuplja arome konjaka/armagnaca — drži ga za zdjelu, ne za stopalo, samo ako želiš zagrijati. Glencairn ili tulipan za whisky usmjerava nos. Tumbler/rocks za highball ili led. Za fino sherry — uža čaša (copita). Jedna dobra čaša vrijedi više od seta koji ne koristiš.",
+          "en": "A snifter gathers cognac/armagnac aromas — hold the bowl only if you want to warm it. A Glencairn or tulip focuses a whisky nose. Tumbler/rocks for highballs or ice. Fino sherry prefers a narrower glass (copita). One good glass beats a set you never use."
+        },
+        "shopLinks": [
+          {
+            "label": { "hr": "allez.hr — čaše i bar", "en": "allez.hr — glassware & bar" },
+            "url": "https://allez.hr"
+          }
+        ]
+      },
+      {
+        "id": "a-humidor",
+        "title": {
+          "hr": "Humidor: veličina i cedar",
+          "en": "Humidor: size and cedar"
+        },
+        "body": {
+          "hr": "Kupi veći nego što misliš — cigare trebaju zrak, ne zbijanje. Španjolski cedar unutra; pouzdan digihigrometar; Boveda ili slični paketi olakšavaju održavanje RH. Putni humidor (5–10 cigara) za večer vani; kućni za zalihu. Drži dalje od sunca i grijanja.",
+          "en": "Buy larger than you think — cigars need air, not cramming. Spanish cedar inside; a reliable digital hygrometer; Boveda-style packs ease RH upkeep. A travel humidor (5–10 cigars) for evenings out; a home box for stock. Keep away from sun and radiators."
+        },
+        "shopLinks": [
+          {
+            "label": { "hr": "humidor.hr — The Humidor", "en": "humidor.hr — The Humidor" },
+            "url": "https://humidor.hr"
+          }
+        ]
+      },
+      {
+        "id": "a-cutter",
+        "title": {
+          "hr": "Rezač: oštrina je sve",
+          "en": "Cutter: sharpness is everything"
+        },
+        "body": {
+          "hr": "Dvostruki guillotine pokriva većinu vitola. V-cut dobro sjeda na figurado i veće ring gauge. Punch za ravne parejo kad želiš uži vučni kanal. Jeftin tupi rezač kidati će omotač — bolje jedan solidan alat. Čisti oštrice od ulja duhana.",
+          "en": "A double guillotine covers most vitolas. A V-cut suits figurados and larger ring gauges. A punch suits straight parejos when you want a tighter draw. A cheap dull cutter will tear wrappers — one solid tool is better. Clean blades of tobacco oils."
+        },
+        "shopLinks": [
+          {
+            "label": { "hr": "humidor.hr — rezači", "en": "humidor.hr — cutters" },
+            "url": "https://humidor.hr"
+          }
+        ]
+      },
+      {
+        "id": "a-ashtray",
+        "title": {
+          "hr": "Pepeljara s utorom",
+          "en": "Ashtray with a rest"
+        },
+        "body": {
+          "hr": "Cigarska pepeljara ima duboki utor ili nosač — cigara leži stabilno i pepeo pada unutra. Velika površina; lako se čisti. Staklo, keramika ili metal bez jakog mirisa. Kava ili vino pepeo ne zamjenjuju.",
+          "en": "A cigar ashtray has a deep notch or rest — the cigar sits steady and ash falls inside. Generous surface; easy to clean. Glass, ceramic or metal without a strong smell. A coffee cup is not a substitute."
+        }
+      },
+      {
+        "id": "a-decanter",
+        "title": {
+          "hr": "Dekanteri: kad ima smisla",
+          "en": "Decanters: when they help"
+        },
+        "body": {
+          "hr": "Dekantera čuva whisky/brandy ljepše na polici i olakšava posluživanje. Staklo treba biti neprozirno ili u ormariću — svjetlost i toplina kvare destilat. Označi što je unutra; bez etikete gubiš dob i stil. Za svakodnevno pijenje boca s dobrim čepom često je dovoljna.",
+          "en": "A decanter looks better on the shelf and eases pouring. Glass should stay out of strong light — light and heat spoil spirit. Label what is inside; without a label you lose age and style. For daily drinking, the bottle with a good cork is often enough."
+        },
+        "shopLinks": [
+          {
+            "label": { "hr": "allez.hr — dekanteri", "en": "allez.hr — decanters" },
+            "url": "https://allez.hr"
+          }
+        ]
+      },
+      {
+        "id": "a-lighter",
+        "title": {
+          "hr": "Upaljač i cedar spill",
+          "en": "Lighter and cedar spill"
+        },
+        "body": {
+          "hr": "Butan torch ili soft flame bez mirisa. Cedar spill (tanki cedar štapić) zapaljen od upaljača daje kontroliran, »duhanski« plamen za rub. Soft flame manje peče omotač od agresivnog torcha na blizu. Drži rezervni plin — prazan upaljač usred večeri kvari ritam.",
+          "en": "Odourless butane torch or soft flame. A cedar spill lit from the lighter gives a controlled, tobacco-friendly flame for the rim. Soft flame scorches the wrapper less than a torch held too close. Keep spare fuel — an empty lighter mid-evening breaks the rhythm."
+        }
+      }
+    ]
+  }
+}
