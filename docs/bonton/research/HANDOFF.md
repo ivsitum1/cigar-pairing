@@ -34,11 +34,17 @@
 - Aktivni extracti: **51** (šum/duplikati u `extracts/_deduped/`)
 - Politika: kurirana imena (`wikipedia-*`, `gutenberg-*`, `web-*`, `loc-*`); Parallel landing pageovi arhivirani
 
+## YouTube → NotebookLM
+
+- Lista kandidata: `notes/youtube-bonton-notebooklm.md`
+- Raw search JSON: `notes/youtube-bonton-candidates.json`, `notes/youtube-bonton-candidates-hist.json`
+- Agent **ne** ekstrahira pouzdane YouTube transcripte; korisnik uvozi Priority linkove u NotebookLM, pa exporta bilješke u `extracts/youtube-*.md`
+
 ## Što napraviti odmah (sljedeći agent)
 
-1. Ugraditi citate iz round2 (Post, Morton, LOC, Davidoff paraphrase) u rukopis.
-2. Po želji: Europeana/Wellcome item-level dig — round2 je dao search hubove; treba item permalinke.
-3. Ako treba treći research krug, fokusiraj se na item-level Europeana/Rijksmuseum/Gallica, ne na homepageove.
+1. Kad stignu NotebookLM exporti, katalogizirati ih u `extracts/` + `CATALOG.md`.
+2. Ugraditi citate iz round2 (Post, Morton, LOC, Davidoff paraphrase) u rukopis.
+3. Po želji: Europeana/Wellcome item-level dig — round2 je dao search hubove; treba item permalinke.
 
 ## Ne raditi
 
