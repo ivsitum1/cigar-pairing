@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import type { Cigar, Drink, DrinkCategory, Market, PairingResult, Vitola } from "../types";
-import { ALL_DRINKS, CIGARS, cigarById, cigarLinkForMarket, cigarPriceForMarket, formatPrice } from "../data";
+import { ALL_DRINKS, CIGARS, cigarById, cigarLinkForMarket, cigarPriceForMarket, drinkById, formatPrice } from "../data";
 import { pairCigarsForDrink, pairDrinksForCigar } from "../engine/pairing";
 import { curatedPairingOpinion } from "../engine/curatedOpinion";
 import { useI18n, STYLE_LABELS, type StringKey } from "../i18n";
@@ -12,6 +12,7 @@ import { VitolaPicker } from "../components/VitolaPicker";
 import { applyVitola, needsVitolaPick, uniqueVitolas } from "../lib/cigarVitola";
 import { useMarket, setMarket } from "../store/market";
 import { consumePairingIntent, usePairingNavVersion } from "../store/pairingNav";
+import { navigate, useRoute } from "../store/route";
 import { CustomPairing } from "./CustomPairing";
 
 type Mode = "cigarToDrink" | "drinkToCigar" | "custom";
@@ -59,6 +60,7 @@ export function PairingPage() {
     { kind: "cigar"; item: Cigar } | { kind: "drink"; item: Drink } | null
   >(null);
   const pairingNavVersion = usePairingNavVersion();
+  const route = useRoute();
 
   const selected = mode === "cigarToDrink" ? selectedCigar : selectedDrink;
 
@@ -145,6 +147,7 @@ export function PairingPage() {
     setSelectedDrink(null);
     setQuery("");
     setCycle({});
+    navigate({ page: "pairing" }, { replace: true });
   };
 
   const pickCigar = (raw: Cigar) => {
@@ -155,12 +158,19 @@ export function PairingPage() {
     }
     const vitolas = uniqueVitolas(cigar);
     setSelectedCigar(vitolas.length === 1 ? applyVitola(cigar, vitolas[0]) : cigar);
+    navigate({ page: "pairing", pair: { kind: "cigar", id: cigar.id } });
   };
 
   const confirmVitola = (vitola: Vitola) => {
     if (!pendingCigar) return;
     setSelectedCigar(applyVitola(pendingCigar, vitola));
+    navigate({ page: "pairing", pair: { kind: "cigar", id: pendingCigar.id } });
     setPendingCigar(null);
+  };
+
+  const pickDrink = (drink: Drink) => {
+    setSelectedDrink(drink);
+    navigate({ page: "pairing", pair: { kind: "drink", id: drink.id } });
   };
 
   useEffect(() => {
@@ -189,6 +199,46 @@ export function PairingPage() {
       setQuery(intent.drink.name);
     }
   }, [pairingNavVersion]);
+
+  // deep-link i back tipka: hash je izvor istine za ODABRANU stavku.
+  // Odabir kroz UI zove navigate(), pa se ovdje samo uskladjujemo kad se
+  // hash promijeni izvana (podijeljeni link, back/forward).
+  useEffect(() => {
+    if (route.page !== "pairing") return;
+    const pair = route.pair;
+    if (!pair) {
+      if (selectedCigar || selectedDrink || pendingCigar) {
+        setSelectedCigar(null);
+        setPendingCigar(null);
+        setSelectedDrink(null);
+        setQuery("");
+        setCycle({});
+      }
+      return;
+    }
+    if (pair.kind === "cigar") {
+      if (selectedCigar?.id === pair.id || pendingCigar?.id === pair.id) return;
+      const cigar = cigarById(pair.id);
+      if (!cigar) return;
+      setMode("cigarToDrink");
+      setSelectedDrink(null);
+      setCycle({});
+      setQuery(`${cigar.brand} ${cigar.line}`);
+      const vitolas = uniqueVitolas(cigar);
+      setSelectedCigar(vitolas.length === 1 ? applyVitola(cigar, vitolas[0]) : cigar);
+    } else {
+      if (selectedDrink?.id === pair.id) return;
+      const drink = drinkById(pair.id);
+      if (!drink) return;
+      setMode("drinkToCigar");
+      setSelectedCigar(null);
+      setPendingCigar(null);
+      setCycle({});
+      setQuery(drink.name);
+      setSelectedDrink(drink);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [route]);
 
   return (
     <div className="pb-4">
@@ -328,7 +378,7 @@ export function PairingPage() {
                   key={item.id}
                   title={(item as Drink).name}
                   sub={lx(STYLE_LABELS[(item as Drink).style]) || (item as Drink).style}
-                  onPick={() => setSelectedDrink(item as Drink)}
+                  onPick={() => pickDrink(item as Drink)}
                 />
               ),
             )}
