@@ -34,6 +34,11 @@ indeksima rangiranim po kvaliteti za sipping uz cigaru.
     madeira, prošek, puna/srednja crna, bijela, pjenušava, desertna); HR cijene
     (Vivat/Miva/Vrutak/vinoteke), približne označene `priceApprox`
   - `src/engine/` — rule-based pairing engine s objašnjenjima (kalibracija u `rules.ts`)
+  - **`scripts/pipeline.py` — orkestrator: vrti korake regeneracije ispravnim
+    redoslijedom i staje na prvoj grešci** (`--category rum|whisky|brandy|cigars|all`,
+    `--scrape` za osvježenje kataloga, `--from <skripta>` za nastavak nakon ručne
+    kalibracije Excela, `--list` za pregled koraka); ručno nabrajanje ispod ostaje
+    kao referenca
   - `scripts/excel-to-json.py` — regenerira rums.json + shopping.json iz lokalnog Excela
   - `scripts/export-serve-corrections.py` + `scripts/fix-excel-data.py` — ispravni podaci za Excel Serviranje + Cigare
   - `scripts/scrape-whisky-catalog.py` — scrape allez.hr + ecuga.com → whisky_catalog_raw.json
