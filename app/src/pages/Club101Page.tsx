@@ -3,6 +3,7 @@ import type { LocalizedText } from "../types";
 import { useI18n } from "../i18n";
 import { Chip, SectionTitle } from "../components/ui";
 import { BackButton } from "../components/BackButton";
+import { LessonBody } from "../components/LessonBody";
 import club101 from "../data/club101.json";
 
 interface ShopLink { label: LocalizedText; url: string }
@@ -43,27 +44,26 @@ export function Club101Page({ onBack }: { onBack: () => void }) {
           <BackButton onClick={() => setLessonId(null)}>{t("club.101BackTrack")}</BackButton>
         </div>
         <SectionTitle>{lx(lesson.title)}</SectionTitle>
-        <article className="rounded-xl border border-dim/15 bg-cedar p-4">
-          {lx(lesson.body)
-            .split("\n\n")
-            .map((para, i) => (
-              <p key={i} className={`text-sm leading-relaxed text-papir/90 ${i > 0 ? "mt-3" : ""}`}>
-                {para}
-              </p>
-            ))}
+        <article className="rounded-xl border border-dim/15 bg-cedar px-4 py-5 sm:px-5">
+          <LessonBody text={lx(lesson.body)} />
           {lesson.shopLinks && lesson.shopLinks.length > 0 && (
-            <div className="mt-4 flex flex-wrap gap-2">
-              {lesson.shopLinks.map((link) => (
-                <a
-                  key={link.url + link.label.hr}
-                  href={link.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="rounded-full border border-zlato/40 px-3 py-1.5 font-display text-[10px] uppercase tracking-widest text-zlato hover:bg-zlato/10"
-                >
-                  {t("club.shopLink")}: {lx(link.label)} ↗
-                </a>
-              ))}
+            <div className="mt-6 border-t border-dim/15 pt-4">
+              <p className="mb-2.5 font-display text-[10px] uppercase tracking-[0.18em] text-dim">
+                {t("club.shopLink")}
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {lesson.shopLinks.map((link) => (
+                  <a
+                    key={link.url + link.label.hr}
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="rounded-full border border-zlato/40 px-3 py-1.5 font-display text-[10px] uppercase tracking-widest text-zlato hover:bg-zlato/10"
+                  >
+                    {lx(link.label)} ↗
+                  </a>
+                ))}
+              </div>
             </div>
           )}
         </article>
@@ -96,12 +96,14 @@ export function Club101Page({ onBack }: { onBack: () => void }) {
             onClick={() => setLessonId(card.id)}
             className="block w-full rounded-xl border border-dim/15 bg-cedar p-4 text-left transition-colors hover:border-zlato/40"
           >
-            <div className="flex items-baseline gap-2">
-              <span className="font-display text-[10px] text-zlato/70">{String(index + 1).padStart(2, "0")}</span>
-              <h3 className="font-display text-sm text-zlato-2">{lx(card.title)}</h3>
+            <div className="flex items-baseline gap-2.5">
+              <span className="font-display text-[10px] tabular-nums text-zlato/60">
+                {String(index + 1).padStart(2, "0")}
+              </span>
+              <h3 className="font-display text-sm tracking-wide text-zlato-2">{lx(card.title)}</h3>
             </div>
-            <p className="mt-1.5 text-xs leading-relaxed text-papir/70">{preview(card.body, lang)}</p>
-            <span className="mt-2 inline-block font-display text-[10px] uppercase tracking-widest text-zlato">
+            <p className="mt-2 text-xs leading-relaxed text-papir/65">{preview(card.body, lang)}</p>
+            <span className="mt-3 inline-block font-display text-[10px] uppercase tracking-widest text-zlato">
               {t("club.101OpenLesson")} →
             </span>
           </button>
