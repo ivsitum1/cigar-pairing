@@ -11,6 +11,7 @@ import WORLD_OUTLINE from "../data/world_outline.json";
 import { Club101Page } from "./Club101Page";
 import { BontonPage } from "./BontonPage";
 import { LexiconPage } from "./LexiconPage";
+import { HrGuidePage } from "./HrGuidePage";
 import { navigate, useRoute } from "../store/route";
 
 interface Quote { text: LocalizedText; author: string; note?: LocalizedText }
@@ -154,6 +155,9 @@ export function ClubPage() {
   if (clubView === "lexicon") {
     return <LexiconPage onBack={() => navigate({ page: "club" })} />;
   }
+  if (clubView === "hr-guide") {
+    return <HrGuidePage onBack={() => navigate({ page: "club" })} />;
+  }
 
   return (
     <div className="pb-4">
@@ -217,6 +221,19 @@ export function ClubPage() {
           className="mt-3 w-full rounded-lg border border-zlato/40 py-2.5 font-display text-xs uppercase tracking-widest text-zlato hover:bg-zlato/10"
         >
           {t("club.lexiconOpen")} →
+        </button>
+      </div>
+
+      {/* HR vodič kupnje — praktična lokalna pravila */}
+      <SectionTitle>{t("club.hrGuide")}</SectionTitle>
+      <div className="rounded-xl border border-zlato/25 bg-cedar p-4">
+        <p className="text-sm leading-relaxed text-papir/90">{t("club.hrGuideTeaser")}</p>
+        <button
+          type="button"
+          onClick={() => navigate({ page: "club", club: "hr-guide" })}
+          className="mt-3 w-full rounded-lg border border-zlato/40 py-2.5 font-display text-xs uppercase tracking-widest text-zlato hover:bg-zlato/10"
+        >
+          {t("club.hrGuideOpen")} →
         </button>
       </div>
 
