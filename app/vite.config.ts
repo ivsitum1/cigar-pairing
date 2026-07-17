@@ -45,14 +45,33 @@ export default defineConfig({
   build: {
     rollupOptions: {
       output: {
-        // podaci i vendor odvojeni od app koda: izmjena koda ne rusi kes
-        // podataka (i obrnuto); world_outline/club ostaju u lazy Club chunku
+        // Indeksi po kategoriji (paralelni download + granularni cache).
+        // Club atlas / club.json / 101 / bonton ostaju uz svoje lazy stranice.
         manualChunks(id: string) {
           if (/\/src\/data\/.*\.json$/.test(id)) {
-            if (id.includes("world_outline") || id.includes("club.json")) {
+            if (
+              id.includes("world_outline") ||
+              id.includes("club.json") ||
+              id.includes("club101") ||
+              id.includes("bonton")
+            ) {
               return undefined;
             }
-            return "data";
+            if (id.includes("cigars.json")) return "data-cigars";
+            if (id.includes("whiskies.json")) return "data-whiskies";
+            if (id.includes("rums.json")) return "data-rums";
+            if (id.includes("brandies.json")) return "data-brandies";
+            if (
+              id.includes("wines.json") ||
+              id.includes("gins.json") ||
+              id.includes("coffees.json")
+            ) {
+              return "data-drinks-small";
+            }
+            if (id.includes("shopping.json") || id.includes("brands.json")) {
+              return "data-meta";
+            }
+            return "data-misc";
           }
           if (/node_modules\/(react|react-dom|scheduler)\//.test(id)) {
             return "vendor";

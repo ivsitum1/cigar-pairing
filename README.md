@@ -28,16 +28,19 @@ indeksima rangiranim po kvaliteti za sipping uz cigaru.
 - `app/` — Vite + React + TS + Tailwind PWA
   - Hash-routing s deep-linkovima: `#/pairing/cigar/<id>` i `#/pairing/drink/<id>`
     otvaraju pairing s odabranom stavkom (dijeljivi linkovi, back tipka radi)
+  - `src/data/*.json` — indeksi (147 rumova, 278 whiskyja, 84 brandy/grappa, 20 gin, 57 vina, 23 kave, 525 cigara);
+    build ih dijeli u odvojene chunkove (`data-cigars`, `data-whiskies`, `data-rums`…) radi
+    paralelnog downloada i boljeg cachea
   - Personalizacija: ocjene iz dnevnika lokalno naginju prijedloge (±5 bodova,
-    s objašnjenjem); filter prilike (jutro/poslijepodne/večer); cigare s
-    heuristički izvedenim profilom nose oznaku "procijenjeni profil"
-  - `src/data/*.json` — indeksi (147 rumova, 278 whiskyja, 78 brandy/grappa, 20 gin, 52 vina, 23 kave, 480 cigara)
+    s objašnjenjem); filter prilike (jutro/poslijepodne/večer); s pairing rezultata
+    **Zabilježi večer** sprema spoj u dnevnik i može označiti stavke kao probane;
+    cigare s heuristički izvedenim profilom nose oznaku "procijenjeni profil"
   - `scripts/seed/whiskies_classics_seed.json` — klasici koje allez/ecuga ne drže
     (Talisker 10, Ardbeg 10, Springbank 10, bourboni…); nakon regeneracije iz
     Excela vrati ih s `python scripts/merge-extras.py`
   - `src/data/wines.json` — vino po istom principu punoće (porto, sherry,
     madeira, prošek, puna/srednja crna, bijela, pjenušava, desertna); HR cijene
-    (Vivat/Miva/Vrutak/vinoteke), približne označene `priceApprox`
+    (Vivat/Miva/Vrutak/vinoteke), približne označene `priceApprox` (57 zapisa)
   - `src/engine/` — rule-based pairing engine s objašnjenjima (kalibracija u `rules.ts`)
   - **`scripts/pipeline.py` — orkestrator: vrti korake regeneracije ispravnim
     redoslijedom i staje na prvoj grešci** (`--category rum|whisky|brandy|cigars|all`,
@@ -95,8 +98,8 @@ Isti model kao rum: puni shop katalog u Excelu + kurirani **MASTER Ocjene** za a
 |----------|----------|-------------|
 | Raw scrape | `app/scripts/output/whisky_catalog_raw.json` | ~1098 |
 | Excel (lokalno, git-ignorirano) | `Whisky_Kolekcija_Checklist.xlsx` | 7 sheetova |
-| App JSON | `app/src/data/whiskies.json` | 170 (MASTER) |
-| Export | `Whisky_Index.xlsx` | 170 |
+| App JSON | `app/src/data/whiskies.json` | 278 (MASTER) |
+| Export | `Whisky_Index.xlsx` | 278 |
 
 **Sheetovi u Excelu:** Katalog allez+ecuga, Svi viskiji (rang), MASTER Ocjene,
 Po tipu (kupnja), Serviranje + Cigare, Kolekcija (plan), Vodič (sažetak).
@@ -128,8 +131,8 @@ Isti model kao rum/whisky: puni shop katalog u Excelu + kurirani **MASTER Ocjene
 | Raw scrape | `app/scripts/output/brandy_catalog_raw.json` | ~128 |
 | Excel (lokalno, git-ignorirano) | `Konjak_Brandy_Checklist.xlsx` | 7 sheetova |
 | Seed (ručne ocjene) | `app/scripts/seed/brandies_seed.json` | 41 |
-| App JSON | `app/src/data/brandies.json` | 81 (MASTER) |
-| Export | `Konjak_Brandy_Index.xlsx` | 81 |
+| App JSON | `app/src/data/brandies.json` | 84 (MASTER) |
+| Export | `Konjak_Brandy_Index.xlsx` | 84 |
 
 **Sheetovi u Excelu:** Katalog allez+ecuga, Svi brendiji (rang), MASTER Ocjene,
 Po tipu (kupnja), Serviranje + Cigare, Kolekcija (plan), Vodič (sažetak).
