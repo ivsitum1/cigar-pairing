@@ -4,7 +4,8 @@ from __future__ import annotations
 
 import re
 import unicodedata
-from typing import Any
+from typing import Any, Callable
+from urllib.parse import urlparse
 
 WHISKY_STOP = {
     "the", "of", "and", "yo", "vol", "old", "years", "year", "single", "malt",
@@ -301,14 +302,53 @@ def token_overlap(a: str, b: str) -> int:
     return len(match_tokens(a) & match_tokens(b))
 
 
+def numeric_age_tokens(name: str) -> set[str]:
+    norm = unicodedata.normalize("NFKD", name.lower()).encode("ascii", "ignore").decode()
+    return {t for t in re.findall(r"[a-z0-9]+", norm) if t.isdigit() and 1 <= len(t) <= 4}
+
+
+def is_bare_category_url(url: str) -> bool:
+    try:
+        path = urlparse(url).path.lower().rstrip("/")
+    except Exception:
+        return True
+    if "/svi-proizvodi/" in path or "/proizvod/" in path:
+        return False
+    if "/vrsta/" in path:
+        after = path.split("/vrsta/", 1)[-1]
+        return len([s for s in after.split("/") if s]) <= 1
+    if "/katalog/" in path:
+        after = path.split("/katalog/", 1)[-1]
+        return len([s for s in after.split("/") if s]) <= 1
+    return False
+
+
+def catalog_entry_tokens(entry: dict, tokenize: Callable[[str], set[str]]) -> set[str]:
+    tokens = set(entry.get("tokens") or ())
+    url = entry.get("url", "")
+    if not url:
+        return tokens
+    slug = urlparse(url).path.rstrip("/").split("/")[-1]
+    tokens |= tokenize(slug)
+    tokens |= {t for t in re.findall(r"[a-z0-9]+", slug.lower()) if t.isdigit()}
+    return tokens
+
+
 def find_best_catalog_match(name: str, catalog: list[dict]) -> dict | None:
     tokens = match_tokens(name)
+    age_nums = numeric_age_tokens(name)
     best, best_score = None, 0
     for entry in catalog:
+        url = entry.get("url", "")
+        if is_bare_category_url(url):
+            continue
         score = len(tokens & entry["tokens"])
-        if score > best_score:
-            best, best_score = entry, score
-    return best if best and best_score >= 2 else None
+        if score <= best_score:
+            continue
+        if age_nums and not age_nums.issubset(catalog_entry_tokens(entry, match_tokens)):
+            continue
+        best, best_score = entry, score
+    return best if best and best_score >= 3 else None
 
 
 def catalog_index(entries: list[dict]) -> list[dict]:
