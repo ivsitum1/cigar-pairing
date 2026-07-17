@@ -2580,14 +2580,14 @@
   "vitola": "Chateau Fuente",
   "format": "—",
   "country": "Dominikana",
-  "wrapper": "—",
-  "strength": 3,
+  "wrapper": "Connecticut shade",
+  "strength": 2,
   "body": 3,
   "flavorTags": [
+   "kremasto",
    "cedar",
-   "zacini",
-   "koza",
-   "kava"
+   "orasasti",
+   "med"
   ],
   "smokeTimeMin": 45,
   "priceEUR": 15.5,
@@ -2597,8 +2597,8 @@
    "The Humidor"
   ],
   "notes": {
-   "hr": "— wrapper (Dominikana); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
-   "en": "— wrapper (Dominikana); balanced, medium in strength. Notes of cedar, spice, leather."
+   "hr": "Chateau Fuente — CT shade klasik omotan cedrovim listom, blaga dominikanska svila.",
+   "en": "Chateau Fuente — the CT shade classic wrapped in a cedar sleeve, mild Dominican silk."
   },
   "markets": [
    "HR",
@@ -2643,8 +2643,7 @@
     "url": "https://humidor.hr/hr/?s=arturo+fuente+Chateau+Churchill&post_type=product"
    }
   ],
-  "priceUrl": "https://havana-cigar-shop.com/proizvod/arturo-fuente-chateau-fuente-10/",
-  "profileEstimated": true
+  "priceUrl": "https://havana-cigar-shop.com/proizvod/arturo-fuente-chateau-fuente-10/"
  },
  {
   "id": "cig-arturo-fuente-curly-head-deluxe",
@@ -4137,14 +4136,14 @@
   "vitola": "Vision Robusto",
   "format": "50 x 127mm",
   "country": "Nikaragva",
-  "wrapper": "Habano",
+  "wrapper": "Habano (Honduras, Jamastran)",
   "strength": 4,
   "body": 4,
   "flavorTags": [
    "cedar",
    "zacini",
-   "koza",
-   "kava"
+   "zemljano",
+   "papar"
   ],
   "smokeTimeMin": 50,
   "priceEUR": null,
@@ -4154,8 +4153,8 @@
    "Havana Shop"
   ],
   "notes": {
-   "hr": "Habano wrapper (Nikaragva); punija i izražajna. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Nikaragva); fuller and expressive. Notes of cedar, spice, leather. Vision robusto; medium-full spice."
+   "hr": "Vision (2022): honduraški Jamastran habano preko nikaragvanskih duhana — snaga raste do punog finiša; kultna svjetleća humidor kutija.",
+   "en": "Vision (2022): Honduran Jamastran habano over Nicaraguan tobaccos — strength builds to a full finish; the glowing humidor box is iconic."
   },
   "markets": [
    "HR",
@@ -4179,8 +4178,7 @@
     "url": "https://humidor.hr/hr/?s=cao+Vision+Toro&post_type=product"
    }
   ],
-  "priceUrl": "https://humidor.hr/hr/?s=cao+Vision+Robusto&post_type=product",
-  "profileEstimated": true
+  "priceUrl": "https://humidor.hr/hr/?s=cao+Vision+Robusto&post_type=product"
  },
  {
   "id": "cig-camacho-camacho-extra",
@@ -4459,10 +4457,10 @@
   "strength": 5,
   "body": 4,
   "flavorTags": [
-   "cedar",
-   "zacini",
+   "papar",
+   "zemljano",
    "koza",
-   "kava"
+   "kakao"
   ],
   "smokeTimeMin": 50,
   "priceEUR": 11.4,
@@ -4472,8 +4470,8 @@
    "Havana Shop"
   ],
   "notes": {
-   "hr": "Habano wrapper (Honduras); snažna, za iskusne pušače. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Honduras); powerful, for seasoned smokers. Notes of cedar, spice, leather. Diploma series; medium-full balance."
+   "hr": "Diploma — najjači redovni Camacho, autentično honduraško corojo nasljeđe.",
+   "en": "Diploma — the strongest regular Camacho, true Honduran corojo heritage."
   },
   "markets": [
    "HR",
@@ -4497,8 +4495,7 @@
     "url": "https://humidor.hr/hr/?s=camacho+Diploma+Toro&post_type=product"
    }
   ],
-  "priceUrl": "https://humidor.hr/hr/proizvod/camacho-connecticut-robusto-5-x-50/",
-  "profileEstimated": true
+  "priceUrl": "https://humidor.hr/hr/proizvod/camacho-connecticut-robusto-5-x-50/"
  },
  {
   "id": "cig-camacho-nicaragua",
@@ -4509,12 +4506,12 @@
   "country": "Honduras",
   "wrapper": "Habano",
   "strength": 4,
-  "body": 3,
+  "body": 4,
   "flavorTags": [
-   "cedar",
-   "zacini",
-   "koza",
-   "kava"
+   "papar",
+   "zemljano",
+   "kakao",
+   "cedar"
   ],
   "smokeTimeMin": 45,
   "priceEUR": 11.4,
@@ -4524,8 +4521,8 @@
    "The Humidor"
   ],
   "notes": {
-   "hr": "Habano wrapper (Honduras); punija i izražajna. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Honduras); fuller and expressive. Notes of cedar, spice, leather."
+   "hr": "Camacho Nicaragua — kućna žestina preseljena na nikaragvanski duhan.",
+   "en": "Camacho Nicaragua — the house's boldness moved onto Nicaraguan tobacco."
   },
   "markets": [
    "HR",
@@ -4547,8 +4544,7 @@
     "url": "https://havana-cigar-shop.com/proizvod/camacho-nicaragua-robusto-20/"
    }
   ],
-  "priceUrl": "https://havana-cigar-shop.com/proizvod/camacho-nicaragua-robusto-20/",
-  "profileEstimated": true
+  "priceUrl": "https://havana-cigar-shop.com/proizvod/camacho-nicaragua-robusto-20/"
  },
  {
   "id": "cig-camacho-camacho-triple",
@@ -4610,14 +4606,14 @@
   "vitola": "De Oro",
   "format": "—",
   "country": "Meksiko",
-  "wrapper": "Habano",
+  "wrapper": "Habano (Ecuador)",
   "strength": 3,
   "body": 4,
   "flavorTags": [
    "cedar",
    "zacini",
-   "koza",
-   "kava"
+   "zemljano",
+   "kakao"
   ],
   "smokeTimeMin": 45,
   "priceEUR": 14.0,
@@ -4627,8 +4623,8 @@
    "The Humidor"
   ],
   "notes": {
-   "hr": "Habano wrapper (Meksiko); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Meksiko); balanced, medium in strength. Notes of cedar, spice, leather."
+   "hr": "Cavalry Edition — imena po konjima Zapate i Ville; Ecuador Habano, meksičko vezivo, nikaragvanska punila.",
+   "en": "Cavalry Edition — named after Zapata's and Villa's horses; Ecuador Habano, Mexican binder, Nicaraguan fillers."
   },
   "markets": [
    "HR",
@@ -4643,8 +4639,7 @@
     "url": "https://havana-cigar-shop.com/proizvod/casa-1910-as-de-oro-10/"
    }
   ],
-  "priceUrl": "https://havana-cigar-shop.com/proizvod/casa-1910-as-de-oro-10/",
-  "profileEstimated": true
+  "priceUrl": "https://havana-cigar-shop.com/proizvod/casa-1910-as-de-oro-10/"
  },
  {
   "id": "cig-casa-1910-cuchillo-parado",
@@ -4695,14 +4690,14 @@
   "vitola": "Jilguero",
   "format": "—",
   "country": "Meksiko",
-  "wrapper": "Habano",
+  "wrapper": "San Andrés maduro",
   "strength": 3,
   "body": 4,
   "flavorTags": [
-   "cedar",
-   "zacini",
-   "koza",
-   "kava"
+   "kakao",
+   "zemljano",
+   "papar",
+   "slatko"
   ],
   "smokeTimeMin": 50,
   "priceEUR": 14.5,
@@ -4712,8 +4707,8 @@
    "The Humidor"
   ],
   "notes": {
-   "hr": "Habano wrapper (Meksiko); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Meksiko); balanced, medium in strength. Notes of cedar, spice, leather."
+   "hr": "Cavalry Edition u maduru: San Andrés wrapper preko Estelí veziva — Jilguero je bio Villin tamni pastuh.",
+   "en": "The maduro of the Cavalry Edition: San Andrés wrapper over an Estelí binder — Jilguero was Villa's dark stallion."
   },
   "markets": [
    "HR",
@@ -4735,8 +4730,7 @@
     "url": "https://havana-cigar-shop.com/proizvod/casa-1910-jilguero-10/"
    }
   ],
-  "priceUrl": "https://havana-cigar-shop.com/proizvod/casa-1910-jilguero-10/",
-  "profileEstimated": true
+  "priceUrl": "https://havana-cigar-shop.com/proizvod/casa-1910-jilguero-10/"
  },
  {
   "id": "cig-casa-1910-la-coronela",
@@ -4745,14 +4739,14 @@
   "vitola": "La Coronela",
   "format": "—",
   "country": "Meksiko",
-  "wrapper": "Habano",
+  "wrapper": "Habano (Ecuador)",
   "strength": 3,
   "body": 4,
   "flavorTags": [
    "cedar",
    "zacini",
-   "koza",
-   "kava"
+   "kakao",
+   "zemljano"
   ],
   "smokeTimeMin": 45,
   "priceEUR": 20.5,
@@ -4762,8 +4756,8 @@
    "The Humidor"
   ],
   "notes": {
-   "hr": "Habano wrapper (Meksiko); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Meksiko); balanced, medium in strength. Notes of cedar, spice, leather."
+   "hr": "Soldadera Edition — posveta ženama meksičke revolucije; Ecuador Habano preko brazilskog Arapiraca veziva.",
+   "en": "The Soldadera Edition honours the women of the Mexican Revolution; Ecuador Habano over Brazilian Arapiraca binder."
   },
   "markets": [
    "HR",
@@ -4778,8 +4772,7 @@
     "url": "https://havana-cigar-shop.com/proizvod/casa-1910-la-coronela-10/"
    }
   ],
-  "priceUrl": "https://havana-cigar-shop.com/proizvod/casa-1910-la-coronela-10/",
-  "profileEstimated": true
+  "priceUrl": "https://havana-cigar-shop.com/proizvod/casa-1910-la-coronela-10/"
  },
  {
   "id": "cig-casa-1910-lucero",
@@ -4788,14 +4781,14 @@
   "vitola": "Lucero",
   "format": "—",
   "country": "Meksiko",
-  "wrapper": "Habano",
+  "wrapper": "Habano (Ecuador)",
   "strength": 3,
   "body": 4,
   "flavorTags": [
    "cedar",
    "zacini",
-   "koza",
-   "kava"
+   "zemljano",
+   "kakao"
   ],
   "smokeTimeMin": 50,
   "priceEUR": 18.0,
@@ -4805,8 +4798,8 @@
    "The Humidor"
   ],
   "notes": {
-   "hr": "Habano wrapper (Meksiko); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Meksiko); balanced, medium in strength. Notes of cedar, spice, leather."
+   "hr": "Cavalry Edition — imena po konjima Zapate i Ville; Ecuador Habano, meksičko vezivo, nikaragvanska punila.",
+   "en": "Cavalry Edition — named after Zapata's and Villa's horses; Ecuador Habano, Mexican binder, Nicaraguan fillers."
   },
   "markets": [
    "HR",
@@ -4828,8 +4821,7 @@
     "url": "https://havana-cigar-shop.com/proizvod/casa-1910-lucero-10/"
    }
   ],
-  "priceUrl": "https://havana-cigar-shop.com/proizvod/casa-1910-lucero-10/",
-  "profileEstimated": true
+  "priceUrl": "https://havana-cigar-shop.com/proizvod/casa-1910-lucero-10/"
  },
  {
   "id": "cig-casa-1910-sampetrina",
@@ -4838,14 +4830,14 @@
   "vitola": "Sampetrina",
   "format": "—",
   "country": "Meksiko",
-  "wrapper": "Habano",
+  "wrapper": "Habano (Ecuador)",
   "strength": 3,
   "body": 4,
   "flavorTags": [
    "cedar",
    "zacini",
-   "koza",
-   "kava"
+   "kakao",
+   "zemljano"
   ],
   "smokeTimeMin": 50,
   "priceEUR": 16.0,
@@ -4855,8 +4847,8 @@
    "The Humidor"
   ],
   "notes": {
-   "hr": "Habano wrapper (Meksiko); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Meksiko); balanced, medium in strength. Notes of cedar, spice, leather."
+   "hr": "Soldadera Edition — posveta ženama meksičke revolucije; Ecuador Habano preko brazilskog Arapiraca veziva.",
+   "en": "The Soldadera Edition honours the women of the Mexican Revolution; Ecuador Habano over Brazilian Arapiraca binder."
   },
   "markets": [
    "HR",
@@ -4878,8 +4870,7 @@
     "url": "https://havana-cigar-shop.com/proizvod/casa-1910-sampetrina-10/"
    }
   ],
-  "priceUrl": "https://havana-cigar-shop.com/proizvod/casa-1910-sampetrina-10/",
-  "profileEstimated": true
+  "priceUrl": "https://havana-cigar-shop.com/proizvod/casa-1910-sampetrina-10/"
  },
  {
   "id": "cig-casa-1910-teniente-angela",
@@ -4888,14 +4879,14 @@
   "vitola": "Teniente Angela",
   "format": "—",
   "country": "Meksiko",
-  "wrapper": "Habano",
+  "wrapper": "Habano (Ecuador)",
   "strength": 3,
   "body": 4,
   "flavorTags": [
    "cedar",
    "zacini",
-   "koza",
-   "kava"
+   "kakao",
+   "zemljano"
   ],
   "smokeTimeMin": 45,
   "priceEUR": 14.5,
@@ -4905,8 +4896,8 @@
    "The Humidor"
   ],
   "notes": {
-   "hr": "Habano wrapper (Meksiko); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Meksiko); balanced, medium in strength. Notes of cedar, spice, leather."
+   "hr": "Soldadera Edition — posveta ženama meksičke revolucije; Ecuador Habano preko brazilskog Arapiraca veziva.",
+   "en": "The Soldadera Edition honours the women of the Mexican Revolution; Ecuador Habano over Brazilian Arapiraca binder."
   },
   "markets": [
    "HR",
@@ -4921,8 +4912,7 @@
     "url": "https://havana-cigar-shop.com/proizvod/casa-1910-teniente-angela-10/"
    }
   ],
-  "priceUrl": "https://havana-cigar-shop.com/proizvod/casa-1910-teniente-angela-10/",
-  "profileEstimated": true
+  "priceUrl": "https://havana-cigar-shop.com/proizvod/casa-1910-teniente-angela-10/"
  },
  {
   "id": "cig-casa-1910-tierra-blanca",
@@ -5182,10 +5172,10 @@
   "strength": 3,
   "body": 3,
   "flavorTags": [
+   "kremasto",
+   "med",
    "cedar",
-   "zacini",
-   "koza",
-   "kava"
+   "trava-slatka"
   ],
   "smokeTimeMin": 50,
   "priceEUR": 87.5,
@@ -5195,8 +5185,8 @@
    "The Humidor"
   ],
   "notes": {
-   "hr": "Habano wrapper (Kuba); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Kuba); balanced, medium in strength. Notes of cedar, spice, leather."
+   "hr": "Cohiba u manjem formatu — med, trava i cedar tipični za Línea 1492/Clásica.",
+   "en": "Cohiba in a smaller format — the honey, grass and cedar typical of Línea 1492/Clásica."
   },
   "markets": [
    "HR",
@@ -5218,8 +5208,7 @@
     "url": "https://havana-cigar-shop.com/proizvod/cohiba-coronas-especiales-25/"
    }
   ],
-  "priceUrl": "https://havana-cigar-shop.com/proizvod/cohiba-coronas-especiales-25/",
-  "profileEstimated": true
+  "priceUrl": "https://havana-cigar-shop.com/proizvod/cohiba-coronas-especiales-25/"
  },
  {
   "id": "cig-cohiba-esplendidos",
@@ -5230,12 +5219,12 @@
   "country": "Kuba",
   "wrapper": "Habano",
   "strength": 3,
-  "body": 3,
+  "body": 4,
   "flavorTags": [
+   "kremasto",
+   "med",
    "cedar",
-   "zacini",
-   "koza",
-   "kava"
+   "trava-slatka"
   ],
   "smokeTimeMin": 50,
   "priceEUR": 150.0,
@@ -5245,8 +5234,8 @@
    "The Humidor"
   ],
   "notes": {
-   "hr": "Habano wrapper (Kuba); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Kuba); balanced, medium in strength. Notes of cedar, spice, leather."
+   "hr": "Cohiba flagship formati — kremasto-travnata slatkoća El Laguito fermentacije, srednje-puno tijelo.",
+   "en": "Cohiba flagship formats — the creamy, grassy sweetness of El Laguito fermentation, medium-full body."
   },
   "markets": [
    "HR",
@@ -5268,8 +5257,7 @@
     "url": "https://havana-cigar-shop.com/proizvod/cohiba-esplendidos-3/"
    }
   ],
-  "priceUrl": "https://havana-cigar-shop.com/proizvod/cohiba-esplendidos-3/",
-  "profileEstimated": true
+  "priceUrl": "https://havana-cigar-shop.com/proizvod/cohiba-esplendidos-3/"
  },
  {
   "id": "cig-cohiba-exquisitos-25",
@@ -5282,10 +5270,10 @@
   "strength": 3,
   "body": 3,
   "flavorTags": [
+   "kremasto",
+   "med",
    "cedar",
-   "zacini",
-   "koza",
-   "kava"
+   "trava-slatka"
   ],
   "smokeTimeMin": 50,
   "priceEUR": 52.0,
@@ -5295,8 +5283,8 @@
    "The Humidor"
   ],
   "notes": {
-   "hr": "Habano wrapper (Kuba); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Kuba); balanced, medium in strength. Notes of cedar, spice, leather."
+   "hr": "Cohiba u manjem formatu — med, trava i cedar tipični za Línea 1492/Clásica.",
+   "en": "Cohiba in a smaller format — the honey, grass and cedar typical of Línea 1492/Clásica."
   },
   "markets": [
    "HR",
@@ -5318,8 +5306,7 @@
     "url": "https://havana-cigar-shop.com/proizvod/cohiba-exquisitos-25/"
    }
   ],
-  "priceUrl": "https://havana-cigar-shop.com/proizvod/cohiba-exquisitos-25/",
-  "profileEstimated": true
+  "priceUrl": "https://havana-cigar-shop.com/proizvod/cohiba-exquisitos-25/"
  },
  {
   "id": "cig-cohiba-cohiba-linea-clasica",
@@ -5551,10 +5538,10 @@
   "strength": 3,
   "body": 3,
   "flavorTags": [
+   "kremasto",
+   "med",
    "cedar",
-   "zacini",
-   "koza",
-   "kava"
+   "trava-slatka"
   ],
   "smokeTimeMin": 45,
   "priceEUR": 94.5,
@@ -5564,8 +5551,8 @@
    "The Humidor"
   ],
   "notes": {
-   "hr": "— wrapper (Kuba); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
-   "en": "— wrapper (Kuba); balanced, medium in strength. Notes of cedar, spice, leather."
+   "hr": "Cohiba u manjem formatu — med, trava i cedar tipični za Línea 1492/Clásica.",
+   "en": "Cohiba in a smaller format — the honey, grass and cedar typical of Línea 1492/Clásica."
   },
   "markets": [
    "HR",
@@ -5589,8 +5576,7 @@
     "url": "https://havana-cigar-shop.com/proizvod/cohiba-medio-siglo-25/"
    }
   ],
-  "priceUrl": "https://havana-cigar-shop.com/proizvod/cohiba-medio-siglo-tubos-3/",
-  "profileEstimated": true
+  "priceUrl": "https://havana-cigar-shop.com/proizvod/cohiba-medio-siglo-tubos-3/"
  },
  {
   "id": "cig-cohiba-panetelas-25",
@@ -5603,10 +5589,10 @@
   "strength": 3,
   "body": 3,
   "flavorTags": [
+   "kremasto",
+   "med",
    "cedar",
-   "zacini",
-   "koza",
-   "kava"
+   "trava-slatka"
   ],
   "smokeTimeMin": 50,
   "priceEUR": 43.0,
@@ -5616,8 +5602,8 @@
    "The Humidor"
   ],
   "notes": {
-   "hr": "Habano wrapper (Kuba); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Kuba); balanced, medium in strength. Notes of cedar, spice, leather."
+   "hr": "Cohiba u manjem formatu — med, trava i cedar tipični za Línea 1492/Clásica.",
+   "en": "Cohiba in a smaller format — the honey, grass and cedar typical of Línea 1492/Clásica."
   },
   "markets": [
    "HR",
@@ -5646,8 +5632,7 @@
     "url": "https://havana-cigar-shop.com/proizvod/cohiba-panetelas-25/"
    }
   ],
-  "priceUrl": "https://havana-cigar-shop.com/proizvod/cohiba-panetelas-25/",
-  "profileEstimated": true
+  "priceUrl": "https://havana-cigar-shop.com/proizvod/cohiba-panetelas-25/"
  },
  {
   "id": "cig-cohiba-piramides-extra",
@@ -5658,12 +5643,12 @@
   "country": "Kuba",
   "wrapper": "Habano",
   "strength": 3,
-  "body": 3,
+  "body": 4,
   "flavorTags": [
+   "kremasto",
+   "med",
    "cedar",
-   "zacini",
-   "koza",
-   "kava"
+   "trava-slatka"
   ],
   "smokeTimeMin": 45,
   "priceEUR": 147.0,
@@ -5673,8 +5658,8 @@
    "The Humidor"
   ],
   "notes": {
-   "hr": "Habano wrapper (Kuba); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Kuba); balanced, medium in strength. Notes of cedar, spice, leather."
+   "hr": "Cohiba flagship formati — kremasto-travnata slatkoća El Laguito fermentacije, srednje-puno tijelo.",
+   "en": "Cohiba flagship formats — the creamy, grassy sweetness of El Laguito fermentation, medium-full body."
   },
   "markets": [
    "HR",
@@ -5696,8 +5681,7 @@
     "url": "https://havana-cigar-shop.com/proizvod/cohiba-piramides-extra-tubos-3/"
    }
   ],
-  "priceUrl": "https://havana-cigar-shop.com/proizvod/cohiba-piramides-extra-10/",
-  "profileEstimated": true
+  "priceUrl": "https://havana-cigar-shop.com/proizvod/cohiba-piramides-extra-10/"
  },
  {
   "id": "cig-cohiba-robusto",
@@ -5793,13 +5777,13 @@
   "format": "40 x 102mm",
   "country": "Kuba",
   "wrapper": "Habano",
-  "strength": 2,
-  "body": 2,
+  "strength": 3,
+  "body": 3,
   "flavorTags": [
+   "kremasto",
+   "med",
    "cedar",
-   "zacini",
-   "koza",
-   "kava"
+   "trava-slatka"
   ],
   "smokeTimeMin": 45,
   "priceEUR": 46.8,
@@ -5809,8 +5793,8 @@
    "Havana Shop"
   ],
   "notes": {
-   "hr": "Habano wrapper (Kuba); blaga prema srednjoj. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Kuba); mild-to-medium. Notes of cedar, spice, leather. Petite corona Siglo; mild-medium coffee and cedar."
+   "hr": "Cohiba u manjem formatu — med, trava i cedar tipični za Línea 1492/Clásica.",
+   "en": "Cohiba in a smaller format — the honey, grass and cedar typical of Línea 1492/Clásica."
   },
   "markets": [
    "HR",
@@ -5875,8 +5859,7 @@
     "url": "https://humidor.hr/hr/?s=cohiba+Siglo+V&post_type=product"
    }
   ],
-  "priceUrl": "https://havana-cigar-shop.com/proizvod/cohiba-siglo-i-25/",
-  "profileEstimated": true
+  "priceUrl": "https://havana-cigar-shop.com/proizvod/cohiba-siglo-i-25/"
  },
  {
   "id": "cig-cohiba-siglo-i-ii",
@@ -5890,10 +5873,9 @@
   "body": 3,
   "flavorTags": [
    "kremasto",
-   "trava-slatka",
    "med",
    "cedar",
-   "zacini"
+   "trava-slatka"
   ],
   "smokeTimeMin": 45,
   "priceEUR": 46.8,
@@ -5903,8 +5885,8 @@
    "The Humidor"
   ],
   "notes": {
-   "hr": "Elegantan uvod u Cohibu — kremast, travnat, medene slatkoće. Kraći format za 40-ak minuta.",
-   "en": "Elegant entry to Cohiba — creamy, grassy, honeyed sweetness. Shorter format for ~40 minutes."
+   "hr": "Cohiba u manjem formatu — med, trava i cedar tipični za Línea 1492/Clásica.",
+   "en": "Cohiba in a smaller format — the honey, grass and cedar typical of Línea 1492/Clásica."
   },
   "markets": [
    "HR",
@@ -5947,10 +5929,10 @@
   "strength": 3,
   "body": 3,
   "flavorTags": [
+   "kremasto",
+   "med",
    "cedar",
-   "zacini",
-   "koza",
-   "kava"
+   "trava-slatka"
   ],
   "smokeTimeMin": 45,
   "priceEUR": 50.0,
@@ -5960,8 +5942,8 @@
    "The Humidor"
   ],
   "notes": {
-   "hr": "— wrapper (Kuba); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
-   "en": "— wrapper (Kuba); balanced, medium in strength. Notes of cedar, spice, leather."
+   "hr": "Cohiba u manjem formatu — med, trava i cedar tipični za Línea 1492/Clásica.",
+   "en": "Cohiba in a smaller format — the honey, grass and cedar typical of Línea 1492/Clásica."
   },
   "markets": [
    "HR",
@@ -5978,8 +5960,7 @@
     "url": "https://havana-cigar-shop.com/proizvod/cohiba-siglo-i-tubos-3/"
    }
   ],
-  "priceUrl": "https://havana-cigar-shop.com/proizvod/cohiba-siglo-i-tubos-3/",
-  "profileEstimated": true
+  "priceUrl": "https://havana-cigar-shop.com/proizvod/cohiba-siglo-i-tubos-3/"
  },
  {
   "id": "cig-cohiba-siglo-iv-vi",
@@ -5990,13 +5971,12 @@
   "country": "Kuba",
   "wrapper": "Habano",
   "strength": 3,
-  "body": 4,
+  "body": 3,
   "flavorTags": [
    "kremasto",
-   "cedar",
    "med",
-   "zacini",
-   "duhan"
+   "cedar",
+   "trava-slatka"
   ],
   "smokeTimeMin": 45,
   "priceEUR": 92.5,
@@ -6006,8 +5986,8 @@
    "The Humidor"
   ],
   "notes": {
-   "hr": "Vrh redovne Cohiba linije — kompleksan, kremast, srednje-puno tijelo. Special occasion.",
-   "en": "Top of the regular Cohiba line — complex, creamy, medium-full body. Special occasion."
+   "hr": "Cohiba u manjem formatu — med, trava i cedar tipični za Línea 1492/Clásica.",
+   "en": "Cohiba in a smaller format — the honey, grass and cedar typical of Línea 1492/Clásica."
   },
   "markets": [
    "HR",
@@ -6050,10 +6030,10 @@
   "strength": 3,
   "body": 3,
   "flavorTags": [
+   "kremasto",
+   "med",
    "cedar",
-   "zacini",
-   "koza",
-   "kava"
+   "trava-slatka"
   ],
   "smokeTimeMin": 45,
   "priceEUR": 82.0,
@@ -6063,8 +6043,8 @@
    "The Humidor"
   ],
   "notes": {
-   "hr": "— wrapper (Kuba); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
-   "en": "— wrapper (Kuba); balanced, medium in strength. Notes of cedar, spice, leather."
+   "hr": "Cohiba u manjem formatu — med, trava i cedar tipični za Línea 1492/Clásica.",
+   "en": "Cohiba in a smaller format — the honey, grass and cedar typical of Línea 1492/Clásica."
   },
   "markets": [
    "HR",
@@ -6095,8 +6075,7 @@
     "url": "https://havana-cigar-shop.com/proizvod/cohiba-siglo-ii-25/"
    }
   ],
-  "priceUrl": "https://havana-cigar-shop.com/proizvod/cohiba-siglo-iii-5/",
-  "profileEstimated": true
+  "priceUrl": "https://havana-cigar-shop.com/proizvod/cohiba-siglo-iii-5/"
  },
  {
   "id": "cig-crowned-heads-le-careme",
@@ -6839,13 +6818,13 @@
   "format": "25 x 102mm",
   "country": "Dominikana",
   "wrapper": "Habano",
-  "strength": 3,
-  "body": 3,
+  "strength": 2,
+  "body": 2,
   "flavorTags": [
+   "kremasto",
    "cedar",
-   "zacini",
-   "koza",
-   "kava"
+   "orasasti",
+   "med"
   ],
   "smokeTimeMin": 50,
   "priceEUR": 36.5,
@@ -6855,8 +6834,8 @@
    "Havana Shop"
   ],
   "notes": {
-   "hr": "Habano wrapper (Dominikana); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Dominikana); balanced, medium in strength. Notes of cedar, spice, leather."
+   "hr": "Mali Davidoff formati — kratka, uglađena stanka u bijelom stilu kuće.",
+   "en": "Davidoff's small formats — a short, polished pause in the house's white-label style."
   },
   "markets": [
    "HR",
@@ -6878,8 +6857,7 @@
     "url": "https://humidor.hr/hr/proizvod/davidoff-demi-tasse-4-x-25/"
    }
   ],
-  "priceUrl": "https://humidor.hr/hr/proizvod/davidoff-demi-tasse-4-x-25/",
-  "profileEstimated": true
+  "priceUrl": "https://humidor.hr/hr/proizvod/davidoff-demi-tasse-4-x-25/"
  },
  {
   "id": "cig-davidoff-discovery-le-2022",
@@ -7195,12 +7173,12 @@
   "country": "Dominikana",
   "wrapper": "Habano",
   "strength": 3,
-  "body": 3,
+  "body": 4,
   "flavorTags": [
+   "kakao",
+   "zemljano",
    "cedar",
-   "zacini",
-   "koza",
-   "kava"
+   "karamela"
   ],
   "smokeTimeMin": 45,
   "priceEUR": 23.4,
@@ -7210,8 +7188,8 @@
    "The Humidor"
   ],
   "notes": {
-   "hr": "Habano wrapper (Dominikana); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Dominikana); balanced, medium in strength. Notes of cedar, spice, leather."
+   "hr": "Millennium — tamniji Davidoff s Ecuador Habano wrapperom, dublji i zemljaniji od bijele etikete.",
+   "en": "Millennium — the darker Davidoff with an Ecuador Habano wrapper, deeper and earthier than the white label."
   },
   "markets": [
    "HR",
@@ -7254,8 +7232,7 @@
     "url": "https://havana-cigar-shop.com/proizvod/davidoff-millenium-robusto-tubos-3/"
    }
   ],
-  "priceUrl": "https://havana-cigar-shop.com/proizvod/davidoff-millenium-short-robusto-4/",
-  "profileEstimated": true
+  "priceUrl": "https://havana-cigar-shop.com/proizvod/davidoff-millenium-short-robusto-4/"
  },
  {
   "id": "cig-davidoff-davidoff-millennium",
@@ -7265,13 +7242,13 @@
   "format": "50 x 127mm",
   "country": "Dominikana",
   "wrapper": "Ecuadorian habano",
-  "strength": 4,
+  "strength": 3,
   "body": 4,
   "flavorTags": [
+   "kakao",
+   "zemljano",
    "cedar",
-   "zacini",
-   "koza",
-   "kava"
+   "karamela"
   ],
   "smokeTimeMin": 50,
   "priceEUR": null,
@@ -7281,8 +7258,8 @@
    "Havana Shop"
   ],
   "notes": {
-   "hr": "Ecuadorian habano wrapper (Dominikana); punija i izražajna. Note: cedar, zacini, koza.",
-   "en": "Ecuadorian habano wrapper (Dominikana); fuller and expressive. Notes of cedar, spice, leather. Millennium robusto; classic Davidoff balance."
+   "hr": "Millennium — tamniji Davidoff s Ecuador Habano wrapperom, dublji i zemljaniji od bijele etikete.",
+   "en": "Millennium — the darker Davidoff with an Ecuador Habano wrapper, deeper and earthier than the white label."
   },
   "markets": [
    "HR",
@@ -7306,8 +7283,7 @@
     "url": "https://humidor.hr/hr/?s=davidoff+Millennium+Piramides&post_type=product"
    }
   ],
-  "priceUrl": "https://humidor.hr/hr/?s=davidoff+Millennium+Robusto&post_type=product",
-  "profileEstimated": true
+  "priceUrl": "https://humidor.hr/hr/?s=davidoff+Millennium+Robusto&post_type=product"
  },
  {
   "id": "cig-davidoff-nicaragua",
@@ -7439,13 +7415,13 @@
   "format": "—",
   "country": "Dominikana",
   "wrapper": "Habano",
-  "strength": 3,
-  "body": 3,
+  "strength": 2,
+  "body": 2,
   "flavorTags": [
+   "kremasto",
    "cedar",
-   "zacini",
-   "koza",
-   "kava"
+   "orasasti",
+   "med"
   ],
   "smokeTimeMin": 45,
   "priceEUR": 7.35,
@@ -7455,8 +7431,8 @@
    "The Humidor"
   ],
   "notes": {
-   "hr": "Habano wrapper (Dominikana); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Dominikana); balanced, medium in strength. Notes of cedar, spice, leather."
+   "hr": "Mali Davidoff formati — kratka, uglađena stanka u bijelom stilu kuće.",
+   "en": "Davidoff's small formats — a short, polished pause in the house's white-label style."
   },
   "markets": [
    "HR",
@@ -7478,8 +7454,7 @@
     "url": "https://havana-cigar-shop.com/proizvod/primeros-by-davidoff-dominican-maduro-6/"
    }
   ],
-  "priceUrl": "https://havana-cigar-shop.com/proizvod/primeros-by-davidoff-dominican-6/",
-  "profileEstimated": true
+  "priceUrl": "https://havana-cigar-shop.com/proizvod/primeros-by-davidoff-dominican-6/"
  },
  {
   "id": "cig-davidoff-primeros-by-davidoff-escurio",
@@ -7790,13 +7765,13 @@
   "format": "—",
   "country": "Dominikana",
   "wrapper": "Habano",
-  "strength": 3,
-  "body": 3,
+  "strength": 1,
+  "body": 2,
   "flavorTags": [
+   "kremasto",
+   "orasasti",
    "cedar",
-   "zacini",
-   "koza",
-   "kava"
+   "citrus"
   ],
   "smokeTimeMin": 45,
   "priceEUR": 74.4,
@@ -7806,8 +7781,8 @@
    "The Humidor"
   ],
   "notes": {
-   "hr": "Habano wrapper (Dominikana); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Dominikana); balanced, medium in strength. Notes of cedar, spice, leather."
+   "hr": "Bijela etiketa u tubosu — najblaži, najuglađeniji Davidoff registar.",
+   "en": "The white label in a tubo — Davidoff's mildest, most polished register."
   },
   "markets": [
    "HR",
@@ -7822,8 +7797,7 @@
     "url": "https://havana-cigar-shop.com/proizvod/davidoff-tubos-selection-white-3/"
    }
   ],
-  "priceUrl": "https://havana-cigar-shop.com/proizvod/davidoff-tubos-selection-white-3/",
-  "profileEstimated": true
+  "priceUrl": "https://havana-cigar-shop.com/proizvod/davidoff-tubos-selection-white-3/"
  },
  {
   "id": "cig-davidoff-davidoff-winston",
@@ -7937,12 +7911,12 @@
   "country": "Nikaragva",
   "wrapper": "—",
   "strength": 3,
-  "body": 3,
+  "body": 4,
   "flavorTags": [
-   "cedar",
+   "kava",
+   "tamno-voce",
    "zacini",
-   "koza",
-   "kava"
+   "dim"
   ],
   "smokeTimeMin": 45,
   "priceEUR": 11.3,
@@ -7952,8 +7926,8 @@
    "The Humidor"
   ],
   "notes": {
-   "hr": "— wrapper (Nikaragva); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
-   "en": "— wrapper (Nikaragva); balanced, medium in strength. Notes of cedar, spice, leather."
+   "hr": "Winston Churchill serija — bogatiji Davidoff s notama kave i tamnog voća.",
+   "en": "The Winston Churchill series — a richer Davidoff with coffee and dark-fruit notes."
   },
   "markets": [
    "HR",
@@ -7970,8 +7944,7 @@
     "url": "https://havana-cigar-shop.com/proizvod/davidoff-wsc-belicoso-4/"
    }
   ],
-  "priceUrl": "https://havana-cigar-shop.com/proizvod/davidoff-wsc-belicoso-4/",
-  "profileEstimated": true
+  "priceUrl": "https://havana-cigar-shop.com/proizvod/davidoff-wsc-belicoso-4/"
  },
  {
   "id": "cig-davidoff-wsc-le-2025",
@@ -7982,12 +7955,12 @@
   "country": "Dominikana",
   "wrapper": "Habano",
   "strength": 3,
-  "body": 3,
+  "body": 4,
   "flavorTags": [
-   "cedar",
+   "kava",
+   "tamno-voce",
    "zacini",
-   "koza",
-   "kava"
+   "dim"
   ],
   "smokeTimeMin": 45,
   "priceEUR": 47.0,
@@ -7997,8 +7970,8 @@
    "The Humidor"
   ],
   "notes": {
-   "hr": "Habano wrapper (Dominikana); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Dominikana); balanced, medium in strength. Notes of cedar, spice, leather."
+   "hr": "Winston Churchill serija — bogatiji Davidoff s notama kave i tamnog voća.",
+   "en": "The Winston Churchill series — a richer Davidoff with coffee and dark-fruit notes."
   },
   "markets": [
    "HR",
@@ -8013,8 +7986,7 @@
     "url": "https://havana-cigar-shop.com/proizvod/davidoff-wsc-le-2025-10/"
    }
   ],
-  "priceUrl": "https://havana-cigar-shop.com/proizvod/davidoff-wsc-le-2025-10/",
-  "profileEstimated": true
+  "priceUrl": "https://havana-cigar-shop.com/proizvod/davidoff-wsc-le-2025-10/"
  },
  {
   "id": "cig-davidoff-wsc-petit-panetela",
@@ -8025,12 +7997,12 @@
   "country": "Dominikana",
   "wrapper": "Habano",
   "strength": 3,
-  "body": 3,
+  "body": 4,
   "flavorTags": [
-   "cedar",
+   "kava",
+   "tamno-voce",
    "zacini",
-   "koza",
-   "kava"
+   "dim"
   ],
   "smokeTimeMin": 45,
   "priceEUR": 9.7,
@@ -8040,8 +8012,8 @@
    "The Humidor"
   ],
   "notes": {
-   "hr": "Habano wrapper (Dominikana); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Dominikana); balanced, medium in strength. Notes of cedar, spice, leather."
+   "hr": "Winston Churchill serija — bogatiji Davidoff s notama kave i tamnog voća.",
+   "en": "The Winston Churchill series — a richer Davidoff with coffee and dark-fruit notes."
   },
   "markets": [
    "HR",
@@ -8056,8 +8028,7 @@
     "url": "https://havana-cigar-shop.com/proizvod/davidoff-wsc-petit-panetela-5/"
    }
   ],
-  "priceUrl": "https://havana-cigar-shop.com/proizvod/davidoff-wsc-petit-panetela-5/",
-  "profileEstimated": true
+  "priceUrl": "https://havana-cigar-shop.com/proizvod/davidoff-wsc-petit-panetela-5/"
  },
  {
   "id": "cig-davidoff-wsc-the-late-hour",
@@ -8068,12 +8039,12 @@
   "country": "Dominikana",
   "wrapper": "Habano",
   "strength": 3,
-  "body": 3,
+  "body": 4,
   "flavorTags": [
-   "cedar",
+   "kava",
+   "tamno-voce",
    "zacini",
-   "koza",
-   "kava"
+   "dim"
   ],
   "smokeTimeMin": 50,
   "priceEUR": 28.6,
@@ -8083,8 +8054,8 @@
    "The Humidor"
   ],
   "notes": {
-   "hr": "Habano wrapper (Dominikana); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Dominikana); balanced, medium in strength. Notes of cedar, spice, leather."
+   "hr": "Winston Churchill serija — bogatiji Davidoff s notama kave i tamnog voća.",
+   "en": "The Winston Churchill series — a richer Davidoff with coffee and dark-fruit notes."
   },
   "markets": [
    "HR",
@@ -8113,8 +8084,7 @@
     "url": "https://humidor.hr/hr/proizvod/davidoff-wsc-the-late-hour-churchill-7-x-48/"
    }
   ],
-  "priceUrl": "https://humidor.hr/hr/proizvod/davidoff-wsc-the-late-hour-robusto-5-x-52/",
-  "profileEstimated": true
+  "priceUrl": "https://humidor.hr/hr/proizvod/davidoff-wsc-the-late-hour-robusto-5-x-52/"
  },
  {
   "id": "cig-davidoff-yamasa",
@@ -8188,12 +8158,12 @@
   "country": "Dominikana",
   "wrapper": "Habano",
   "strength": 3,
-  "body": 3,
+  "body": 4,
   "flavorTags": [
-   "cedar",
+   "kakao",
    "zacini",
-   "koza",
-   "kava"
+   "cedar",
+   "karamela"
   ],
   "smokeTimeMin": 45,
   "priceEUR": 71.5,
@@ -8203,8 +8173,8 @@
    "The Humidor"
   ],
   "notes": {
-   "hr": "Habano wrapper (Dominikana); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Dominikana); balanced, medium in strength. Notes of cedar, spice, leather."
+   "hr": "Zodiac limitirana izdanja — svečaniji, puniji Davidoff blend za lunarnu novu godinu.",
+   "en": "The Zodiac limited editions — a more festive, fuller Davidoff blend for the Lunar New Year."
   },
   "markets": [
    "HR",
@@ -8219,8 +8189,7 @@
     "url": "https://havana-cigar-shop.com/proizvod/davidoff-year-of-the-dragon-2024-10/"
    }
   ],
-  "priceUrl": "https://havana-cigar-shop.com/proizvod/davidoff-year-of-the-dragon-2024-10/",
-  "profileEstimated": true
+  "priceUrl": "https://havana-cigar-shop.com/proizvod/davidoff-year-of-the-dragon-2024-10/"
  },
  {
   "id": "cig-davidoff-year-of-the-rabbit-2023",
@@ -8231,12 +8200,12 @@
   "country": "Dominikana",
   "wrapper": "Habano",
   "strength": 3,
-  "body": 3,
+  "body": 4,
   "flavorTags": [
-   "cedar",
+   "kakao",
    "zacini",
-   "koza",
-   "kava"
+   "cedar",
+   "karamela"
   ],
   "smokeTimeMin": 45,
   "priceEUR": 58.5,
@@ -8246,8 +8215,8 @@
    "The Humidor"
   ],
   "notes": {
-   "hr": "Habano wrapper (Dominikana); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Dominikana); balanced, medium in strength. Notes of cedar, spice, leather."
+   "hr": "Zodiac limitirana izdanja — svečaniji, puniji Davidoff blend za lunarnu novu godinu.",
+   "en": "The Zodiac limited editions — a more festive, fuller Davidoff blend for the Lunar New Year."
   },
   "markets": [
    "HR",
@@ -8262,8 +8231,7 @@
     "url": "https://havana-cigar-shop.com/proizvod/davidoff-year-of-the-rabbit-2023-10/"
    }
   ],
-  "priceUrl": "https://havana-cigar-shop.com/proizvod/davidoff-year-of-the-rabbit-2023-10/",
-  "profileEstimated": true
+  "priceUrl": "https://havana-cigar-shop.com/proizvod/davidoff-year-of-the-rabbit-2023-10/"
  },
  {
   "id": "cig-davidoff-year-of-the-snake-2025",
@@ -8274,12 +8242,12 @@
   "country": "Dominikana",
   "wrapper": "Habano",
   "strength": 3,
-  "body": 3,
+  "body": 4,
   "flavorTags": [
-   "cedar",
+   "kakao",
    "zacini",
-   "koza",
-   "kava"
+   "cedar",
+   "karamela"
   ],
   "smokeTimeMin": 45,
   "priceEUR": 59.0,
@@ -8289,8 +8257,8 @@
    "The Humidor"
   ],
   "notes": {
-   "hr": "Habano wrapper (Dominikana); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Dominikana); balanced, medium in strength. Notes of cedar, spice, leather."
+   "hr": "Zodiac limitirana izdanja — svečaniji, puniji Davidoff blend za lunarnu novu godinu.",
+   "en": "The Zodiac limited editions — a more festive, fuller Davidoff blend for the Lunar New Year."
   },
   "markets": [
    "HR",
@@ -8305,8 +8273,7 @@
     "url": "https://havana-cigar-shop.com/proizvod/davidoff-year-of-the-snake-2025-10/"
    }
   ],
-  "priceUrl": "https://havana-cigar-shop.com/proizvod/davidoff-year-of-the-snake-2025-10/",
-  "profileEstimated": true
+  "priceUrl": "https://havana-cigar-shop.com/proizvod/davidoff-year-of-the-snake-2025-10/"
  },
  {
   "id": "cig-drew-estate-de-acid",
@@ -12889,12 +12856,12 @@
   "country": "Nikaragva",
   "wrapper": "Habano",
   "strength": 4,
-  "body": 4,
+  "body": 5,
   "flavorTags": [
-   "cedar",
-   "zacini",
+   "kakao",
    "koza",
-   "kava"
+   "zemljano",
+   "karamela"
   ],
   "smokeTimeMin": 45,
   "priceEUR": 32.0,
@@ -12904,8 +12871,8 @@
    "The Humidor"
   ],
   "notes": {
-   "hr": "Habano wrapper (Nikaragva); punija i izražajna. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Nikaragva); fuller and expressive. Notes of cedar, spice, leather."
+   "hr": "Cinco Décadas — jubilarna linija za 50 godina najstarije nikaragvanske tvornice.",
+   "en": "Cinco Décadas — the anniversary line marking 50 years of Nicaragua's oldest factory."
   },
   "markets": [
    "HR",
@@ -12920,8 +12887,7 @@
     "url": "https://havana-cigar-shop.com/proizvod/joya-de-nicaragua-cinco-decadas-diadema-10/"
    }
   ],
-  "priceUrl": "https://havana-cigar-shop.com/proizvod/joya-de-nicaragua-cinco-decadas-diadema-10/",
-  "profileEstimated": true
+  "priceUrl": "https://havana-cigar-shop.com/proizvod/joya-de-nicaragua-cinco-decadas-diadema-10/"
  },
  {
   "id": "cig-joya-de-nicaragua-clasico-medio-siglo",
@@ -12991,10 +12957,10 @@
   "strength": 4,
   "body": 4,
   "flavorTags": [
-   "cedar",
+   "kakao",
+   "hrast",
    "zacini",
-   "koza",
-   "kava"
+   "koza"
   ],
   "smokeTimeMin": 45,
   "priceEUR": 18.6,
@@ -13004,8 +12970,8 @@
    "The Humidor"
   ],
   "notes": {
-   "hr": "Habano wrapper (Nikaragva); punija i izražajna. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Nikaragva); fuller and expressive. Notes of cedar, spice, leather."
+   "hr": "Cuatro Cinco (4-5): dio duhana odležan u hrastovim bačvama — kakao i hrast u punom registru.",
+   "en": "Cuatro Cinco (4-5): part of the tobacco rests in oak barrels — cocoa and oak in a full register."
   },
   "markets": [
    "HR",
@@ -13034,8 +13000,7 @@
     "url": "https://havana-cigar-shop.com/proizvod/joya-de-nicaragua-cuatro-cinco-reserva-especial-doble-robusto-10/"
    }
   ],
-  "priceUrl": "https://havana-cigar-shop.com/proizvod/joya-de-nicaragua-cuatro-cinco-reserva-especial-doble-robusto-10/",
-  "profileEstimated": true
+  "priceUrl": "https://havana-cigar-shop.com/proizvod/joya-de-nicaragua-cuatro-cinco-reserva-especial-doble-robusto-10/"
  },
  {
   "id": "cig-joya-red",
@@ -13095,13 +13060,13 @@
   "vitola": "Robusto",
   "format": "—",
   "country": "Nikaragva",
-  "wrapper": "Habano",
-  "strength": 4,
+  "wrapper": "San Andrés Negro",
+  "strength": 3,
   "body": 4,
   "flavorTags": [
-   "cedar",
-   "zacini",
-   "koza",
+   "kakao",
+   "zemljano",
+   "papar",
    "kava"
   ],
   "smokeTimeMin": 45,
@@ -13112,8 +13077,8 @@
    "The Humidor"
   ],
   "notes": {
-   "hr": "Habano wrapper (Nikaragva); punija i izražajna. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Nikaragva); fuller and expressive. Notes of cedar, spice, leather."
+   "hr": "Box-pressed moderna JdN linija: San Andrés Negro wrapper, puna aroma uz srednju snagu.",
+   "en": "JdN's modern box-pressed line: San Andrés Negro wrapper, full flavour at medium strength."
   },
   "markets": [
    "HR",
@@ -13128,8 +13093,7 @@
     "url": "https://havana-cigar-shop.com/proizvod/joya-de-nicaragua-joya-black-robusto-20/"
    }
   ],
-  "priceUrl": "https://havana-cigar-shop.com/proizvod/joya-de-nicaragua-joya-black-robusto-20/",
-  "profileEstimated": true
+  "priceUrl": "https://havana-cigar-shop.com/proizvod/joya-de-nicaragua-joya-black-robusto-20/"
  },
  {
   "id": "cig-joya-de-nicaragua-joya-red",
@@ -13179,14 +13143,14 @@
   "vitola": "Robusto",
   "format": "—",
   "country": "Nikaragva",
-  "wrapper": "Habano",
-  "strength": 4,
+  "wrapper": "Ecuador Oscuro",
+  "strength": 3,
   "body": 4,
   "flavorTags": [
-   "cedar",
+   "kakao",
+   "karamela",
    "zacini",
-   "koza",
-   "kava"
+   "kremasto"
   ],
   "smokeTimeMin": 45,
   "priceEUR": 13.0,
@@ -13196,8 +13160,8 @@
    "The Humidor"
   ],
   "notes": {
-   "hr": "Habano wrapper (Nikaragva); punija i izražajna. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Nikaragva); fuller and expressive. Notes of cedar, spice, leather."
+   "hr": "Između Joye Red i Black: Ecuador Oscuro wrapper visokih prime pozicija, box-pressed.",
+   "en": "Sits between Joya Red and Black: high-priming Ecuador Oscuro wrapper, box-pressed."
   },
   "markets": [
    "HR",
@@ -13212,8 +13176,7 @@
     "url": "https://havana-cigar-shop.com/proizvod/joya-de-nicaragua-joya-silver-robusto-20/"
    }
   ],
-  "priceUrl": "https://havana-cigar-shop.com/proizvod/joya-de-nicaragua-joya-silver-robusto-20/",
-  "profileEstimated": true
+  "priceUrl": "https://havana-cigar-shop.com/proizvod/joya-de-nicaragua-joya-silver-robusto-20/"
  },
  {
   "id": "cig-joya-de-nicaragua-jdn-numero-uno",
@@ -13223,15 +13186,13 @@
   "format": "52 x 140mm",
   "country": "Nikaragva",
   "wrapper": "Ecuador Connecticut",
-  "strength": 3,
+  "strength": 2,
   "body": 3,
   "flavorTags": [
    "kremasto",
    "cedar",
-   "orasasti",
-   "med",
-   "trava-slatka",
-   "zacini"
+   "citrus",
+   "med"
   ],
   "smokeTimeMin": 50,
   "priceEUR": 14.0,
@@ -13241,8 +13202,8 @@
    "Havana Shop"
   ],
   "notes": {
-   "hr": "Ecuador Connecticut wrapper (Nikaragva); uravnotežena, srednje snage. Note: kremasto, cedar, orasasti.",
-   "en": "Ecuador Connecticut wrapper (Nikaragva); balanced, medium in strength. Notes of cream, cedar, nuts. Refined Connecticut; cream and subtle spice."
+   "hr": "Número Uno — najelegantniji JdN, dugo dostupan samo diplomatima; kremast i citrusan.",
+   "en": "Número Uno — JdN's most elegant line, long reserved for diplomats; creamy and citrusy."
   },
   "markets": [
    "HR",
@@ -13266,8 +13227,7 @@
     "url": "https://havana-cigar-shop.com/proizvod/joya-de-nicaragua-numero-uno-le-premier-25/"
    }
   ],
-  "priceUrl": "https://humidor.hr/hr/proizvod/1502-nicaragua-robusto-5-x-50/",
-  "profileEstimated": true
+  "priceUrl": "https://humidor.hr/hr/proizvod/1502-nicaragua-robusto-5-x-50/"
  },
  {
   "id": "cig-joya-de-nicaragua-numero-uno-le-premier",
@@ -13277,13 +13237,13 @@
   "format": "—",
   "country": "Nikaragva",
   "wrapper": "—",
-  "strength": 4,
-  "body": 4,
+  "strength": 2,
+  "body": 3,
   "flavorTags": [
+   "kremasto",
    "cedar",
-   "zacini",
-   "koza",
-   "kava"
+   "citrus",
+   "med"
   ],
   "smokeTimeMin": 45,
   "priceEUR": 22.8,
@@ -13293,8 +13253,8 @@
    "The Humidor"
   ],
   "notes": {
-   "hr": "— wrapper (Nikaragva); punija i izražajna. Note: cedar, zacini, koza.",
-   "en": "— wrapper (Nikaragva); fuller and expressive. Notes of cedar, spice, leather."
+   "hr": "Número Uno — najelegantniji JdN, dugo dostupan samo diplomatima; kremast i citrusan.",
+   "en": "Número Uno — JdN's most elegant line, long reserved for diplomats; creamy and citrusy."
   },
   "markets": [
    "HR",
@@ -13311,8 +13271,7 @@
     "url": "https://havana-cigar-shop.com/proizvod/joya-de-nicaragua-numero-uno-le-premier-25/"
    }
   ],
-  "priceUrl": "https://havana-cigar-shop.com/proizvod/joya-de-nicaragua-numero-uno-le-premier-25/",
-  "profileEstimated": true
+  "priceUrl": "https://havana-cigar-shop.com/proizvod/joya-de-nicaragua-numero-uno-le-premier-25/"
  },
  {
   "id": "cig-joya-de-nicaragua-rosalones-autenticos-460",
@@ -14304,14 +14263,14 @@
   "vitola": "X 50",
   "format": "50 x 127mm",
   "country": "Dominikana",
-  "wrapper": "Habano",
-  "strength": 4,
+  "wrapper": "Habano Ecuador",
+  "strength": 3,
   "body": 4,
   "flavorTags": [
    "cedar",
    "zacini",
-   "koza",
-   "kava"
+   "orasasti",
+   "koza"
   ],
   "smokeTimeMin": 50,
   "priceEUR": 12.5,
@@ -14321,8 +14280,8 @@
    "Havana Shop"
   ],
   "notes": {
-   "hr": "Habano wrapper (Dominikana); punija i izražajna. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Dominikana); fuller and expressive. Notes of cedar, spice, leather."
+   "hr": "1936 slavi godinu osnutka Tabacalere Palma — box-pressed, srednje-puno tijelo.",
+   "en": "1936 marks Tabacalera Palma's founding year — box-pressed, medium-full body."
   },
   "markets": [
    "HR",
@@ -14344,8 +14303,7 @@
     "url": "https://humidor.hr/hr/proizvod/la-galera-1936-box-pressed-robusto-chaveta-5-x-50/"
    }
   ],
-  "priceUrl": "https://humidor.hr/hr/proizvod/la-galera-1936-box-pressed-robusto-chaveta-5-x-50/",
-  "profileEstimated": true
+  "priceUrl": "https://humidor.hr/hr/proizvod/la-galera-1936-box-pressed-robusto-chaveta-5-x-50/"
  },
  {
   "id": "cig-la-galera-1936-box-pressed-torpedo-6-1-8-x-52",
@@ -14354,14 +14312,14 @@
   "vitola": "X 52",
   "format": "52 x 156mm",
   "country": "Dominikana",
-  "wrapper": "Habano",
+  "wrapper": "Habano Ecuador",
   "strength": 3,
-  "body": 3,
+  "body": 4,
   "flavorTags": [
    "cedar",
    "zacini",
-   "koza",
-   "kava"
+   "orasasti",
+   "koza"
   ],
   "smokeTimeMin": 50,
   "priceEUR": 13.9,
@@ -14371,8 +14329,8 @@
    "Havana Shop"
   ],
   "notes": {
-   "hr": "Habano wrapper (Dominikana); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Dominikana); balanced, medium in strength. Notes of cedar, spice, leather."
+   "hr": "1936 slavi godinu osnutka Tabacalere Palma — box-pressed, srednje-puno tijelo.",
+   "en": "1936 marks Tabacalera Palma's founding year — box-pressed, medium-full body."
   },
   "markets": [
    "HR",
@@ -14394,8 +14352,7 @@
     "url": "https://humidor.hr/hr/proizvod/la-galera-1936-box-pressed-torpedo-cortador-6-1-8-x-52/"
    }
   ],
-  "priceUrl": "https://humidor.hr/hr/proizvod/la-galera-1936-box-pressed-torpedo-cortador-6-1-8-x-52/",
-  "profileEstimated": true
+  "priceUrl": "https://humidor.hr/hr/proizvod/la-galera-1936-box-pressed-torpedo-cortador-6-1-8-x-52/"
  },
  {
   "id": "cig-la-galera-85th",
@@ -14489,14 +14446,14 @@
   "vitola": "X 52",
   "format": "52 x 162mm",
   "country": "Dominikana",
-  "wrapper": "Habano",
-  "strength": 3,
-  "body": 3,
+  "wrapper": "Connecticut Broadleaf",
+  "strength": 4,
+  "body": 4,
   "flavorTags": [
-   "cedar",
-   "zacini",
-   "koza",
-   "kava"
+   "kakao",
+   "zemljano",
+   "papar",
+   "slatko"
   ],
   "smokeTimeMin": 50,
   "priceEUR": 17.5,
@@ -14506,8 +14463,8 @@
    "Havana Shop"
   ],
   "notes": {
-   "hr": "Habano wrapper (Dominikana); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Dominikana); balanced, medium in strength. Notes of cedar, spice, leather."
+   "hr": "Anemoi (grčki vjetrovi): Connecticut Broadleaf preko dominikanskog corojo veziva — puna linija Tabacalere Palma.",
+   "en": "Anemoi (the Greek wind gods): Connecticut Broadleaf over Dominican corojo binder — Tabacalera Palma's full-bodied line."
   },
   "markets": [
    "HR",
@@ -14529,8 +14486,7 @@
     "url": "https://humidor.hr/hr/proizvod/la-galera-anemoi-anemoi-6-3-8-x-52/"
    }
   ],
-  "priceUrl": "https://humidor.hr/hr/proizvod/la-galera-anemoi-anemoi-6-3-8-x-52/",
-  "profileEstimated": true
+  "priceUrl": "https://humidor.hr/hr/proizvod/la-galera-anemoi-anemoi-6-3-8-x-52/"
  },
  {
   "id": "cig-la-galera-connecticut",
@@ -14646,14 +14602,14 @@
   "vitola": "X 48",
   "format": "48 x 140mm",
   "country": "Dominikana",
-  "wrapper": "Habano",
-  "strength": 3,
-  "body": 3,
+  "wrapper": "Connecticut Broadleaf",
+  "strength": 4,
+  "body": 4,
   "flavorTags": [
-   "cedar",
-   "zacini",
-   "koza",
-   "kava"
+   "kakao",
+   "zemljano",
+   "papar",
+   "slatko"
   ],
   "smokeTimeMin": 50,
   "priceEUR": 14.0,
@@ -14663,8 +14619,8 @@
    "Havana Shop"
   ],
   "notes": {
-   "hr": "Habano wrapper (Dominikana); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Dominikana); balanced, medium in strength. Notes of cedar, spice, leather."
+   "hr": "Anemoi (grčki vjetrovi): Connecticut Broadleaf preko dominikanskog corojo veziva — puna linija Tabacalere Palma.",
+   "en": "Anemoi (the Greek wind gods): Connecticut Broadleaf over Dominican corojo binder — Tabacalera Palma's full-bodied line."
   },
   "markets": [
    "HR",
@@ -14686,8 +14642,7 @@
     "url": "https://humidor.hr/hr/proizvod/la-galera-anemoi-eurus-5%c2%bd-x-48/"
    }
   ],
-  "priceUrl": "https://humidor.hr/hr/proizvod/la-galera-anemoi-eurus-5%c2%bd-x-48/",
-  "profileEstimated": true
+  "priceUrl": "https://humidor.hr/hr/proizvod/la-galera-anemoi-eurus-5%c2%bd-x-48/"
  },
  {
   "id": "cig-la-galera-fresh-pack-connecticut-chaveta",
@@ -14701,9 +14656,8 @@
   "body": 2,
   "flavorTags": [
    "kremasto",
-   "cedar",
-   "orasasti",
    "med",
+   "cedar",
    "trava-slatka"
   ],
   "smokeTimeMin": 45,
@@ -14714,8 +14668,8 @@
    "Havana Shop"
   ],
   "notes": {
-   "hr": "Fresh Pack donosi La Galera kvalitetu u pakiranju koje čuva vlagu — ista dominikanska izrada, spremna za put.",
-   "en": "Fresh Pack brings La Galera quality in humidity-sealed packs — the same Dominican craft, travel-ready."
+   "hr": "Pristupačni Connecticut u fresh packu — blag, kremast svakodnevni dim.",
+   "en": "An affordable fresh-pack Connecticut — mild, creamy everyday smoke."
   },
   "markets": [
    "HR",
@@ -14730,8 +14684,7 @@
     "url": "https://humidor.hr/hr/proizvod/la-galera-fresh-pack-connecticut-chaveta/"
    }
   ],
-  "priceUrl": "https://humidor.hr/hr/proizvod/la-galera-fresh-pack-connecticut-chaveta/",
-  "profileEstimated": true
+  "priceUrl": "https://humidor.hr/hr/proizvod/la-galera-fresh-pack-connecticut-chaveta/"
  },
  {
   "id": "cig-la-galera-habano-bonchero-no-4-5-1-2-x-42",
@@ -14740,14 +14693,14 @@
   "vitola": "X 42",
   "format": "42 x 140mm",
   "country": "Dominikana",
-  "wrapper": "Habano",
+  "wrapper": "Habano Ecuador",
   "strength": 3,
   "body": 3,
   "flavorTags": [
    "cedar",
    "zacini",
-   "koza",
-   "kava"
+   "med",
+   "orasasti"
   ],
   "smokeTimeMin": 50,
   "priceEUR": 9.5,
@@ -14757,8 +14710,8 @@
    "Havana Shop"
   ],
   "notes": {
-   "hr": "Habano wrapper (Dominikana); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Dominikana); balanced, medium in strength. Notes of cedar, spice, leather."
+   "hr": "Glavna Habano linija Tabacalere Palma (Jochy Blanco) — aromatična dominikanska klasika odličnog omjera.",
+   "en": "Tabacalera Palma's core Habano line (Jochy Blanco) — an aromatic Dominican classic and great value."
   },
   "markets": [
    "HR",
@@ -14780,8 +14733,7 @@
     "url": "https://humidor.hr/hr/proizvod/la-galera-habano-bonchero-no-4-5-5-x-42/"
    }
   ],
-  "priceUrl": "https://humidor.hr/hr/proizvod/la-galera-habano-bonchero-no-4-5-5-x-42/",
-  "profileEstimated": true
+  "priceUrl": "https://humidor.hr/hr/proizvod/la-galera-habano-bonchero-no-4-5-5-x-42/"
  },
  {
   "id": "cig-la-galera-habano-cabeza-caracol-churchill-7-x-47",
@@ -14790,14 +14742,14 @@
   "vitola": "X 47",
   "format": "47 x 178mm",
   "country": "Dominikana",
-  "wrapper": "Habano",
+  "wrapper": "Habano Ecuador",
   "strength": 3,
   "body": 3,
   "flavorTags": [
    "cedar",
    "zacini",
-   "koza",
-   "kava"
+   "med",
+   "orasasti"
   ],
   "smokeTimeMin": 50,
   "priceEUR": 13.3,
@@ -14807,8 +14759,8 @@
    "Havana Shop"
   ],
   "notes": {
-   "hr": "Habano wrapper (Dominikana); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Dominikana); balanced, medium in strength. Notes of cedar, spice, leather."
+   "hr": "Glavna Habano linija Tabacalere Palma (Jochy Blanco) — aromatična dominikanska klasika odličnog omjera.",
+   "en": "Tabacalera Palma's core Habano line (Jochy Blanco) — an aromatic Dominican classic and great value."
   },
   "markets": [
    "HR",
@@ -14830,8 +14782,7 @@
     "url": "https://humidor.hr/hr/proizvod/la-galera-habano-cabeza-caracol-7-x-47/"
    }
   ],
-  "priceUrl": "https://humidor.hr/hr/proizvod/la-galera-habano-cabeza-caracol-7-x-47/",
-  "profileEstimated": true
+  "priceUrl": "https://humidor.hr/hr/proizvod/la-galera-habano-cabeza-caracol-7-x-47/"
  },
  {
   "id": "cig-la-galera-habano-half-corona-3-1-2-x-46",
@@ -14840,14 +14791,14 @@
   "vitola": "X 46",
   "format": "46 x 89mm",
   "country": "Dominikana",
-  "wrapper": "Habano",
+  "wrapper": "Habano Ecuador",
   "strength": 3,
   "body": 3,
   "flavorTags": [
    "cedar",
    "zacini",
-   "koza",
-   "kava"
+   "med",
+   "orasasti"
   ],
   "smokeTimeMin": 50,
   "priceEUR": 6.4,
@@ -14857,8 +14808,8 @@
    "Havana Shop"
   ],
   "notes": {
-   "hr": "Habano wrapper (Dominikana); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Dominikana); balanced, medium in strength. Notes of cedar, spice, leather."
+   "hr": "Glavna Habano linija Tabacalere Palma (Jochy Blanco) — aromatična dominikanska klasika odličnog omjera.",
+   "en": "Tabacalera Palma's core Habano line (Jochy Blanco) — an aromatic Dominican classic and great value."
   },
   "markets": [
    "HR",
@@ -14880,8 +14831,7 @@
     "url": "https://humidor.hr/hr/proizvod/la-galera-habano-half-corona-3-%c2%bd-x-46/"
    }
   ],
-  "priceUrl": "https://humidor.hr/hr/proizvod/la-galera-habano-half-corona-3-%c2%bd-x-46/",
-  "profileEstimated": true
+  "priceUrl": "https://humidor.hr/hr/proizvod/la-galera-habano-half-corona-3-%c2%bd-x-46/"
  },
  {
   "id": "cig-la-galera-habano-lancero-7-1-4-x-38",
@@ -14890,14 +14840,14 @@
   "vitola": "X 38",
   "format": "38 x 184mm",
   "country": "Dominikana",
-  "wrapper": "Habano",
+  "wrapper": "Habano Ecuador",
   "strength": 3,
   "body": 3,
   "flavorTags": [
    "cedar",
    "zacini",
-   "koza",
-   "kava"
+   "med",
+   "orasasti"
   ],
   "smokeTimeMin": 50,
   "priceEUR": 12.5,
@@ -14907,8 +14857,8 @@
    "Havana Shop"
   ],
   "notes": {
-   "hr": "Habano wrapper (Dominikana); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Dominikana); balanced, medium in strength. Notes of cedar, spice, leather."
+   "hr": "Glavna Habano linija Tabacalere Palma (Jochy Blanco) — aromatična dominikanska klasika odličnog omjera.",
+   "en": "Tabacalera Palma's core Habano line (Jochy Blanco) — an aromatic Dominican classic and great value."
   },
   "markets": [
    "HR",
@@ -14930,8 +14880,7 @@
     "url": "https://humidor.hr/hr/proizvod/la-galera-habano-lancero-7-25-x-38/"
    }
   ],
-  "priceUrl": "https://humidor.hr/hr/proizvod/la-galera-habano-lancero-7-25-x-38/",
-  "profileEstimated": true
+  "priceUrl": "https://humidor.hr/hr/proizvod/la-galera-habano-lancero-7-25-x-38/"
  },
  {
   "id": "cig-la-galera-habano-robusto-chaveta-5-x-50",
@@ -14940,14 +14889,14 @@
   "vitola": "X 50",
   "format": "50 x 127mm",
   "country": "Dominikana",
-  "wrapper": "Habano",
-  "strength": 4,
-  "body": 4,
+  "wrapper": "Habano Ecuador",
+  "strength": 3,
+  "body": 3,
   "flavorTags": [
    "cedar",
    "zacini",
-   "koza",
-   "kava"
+   "med",
+   "orasasti"
   ],
   "smokeTimeMin": 50,
   "priceEUR": 11.2,
@@ -14957,8 +14906,8 @@
    "Havana Shop"
   ],
   "notes": {
-   "hr": "Habano wrapper (Dominikana); punija i izražajna. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Dominikana); fuller and expressive. Notes of cedar, spice, leather."
+   "hr": "Glavna Habano linija Tabacalere Palma (Jochy Blanco) — aromatična dominikanska klasika odličnog omjera.",
+   "en": "Tabacalera Palma's core Habano line (Jochy Blanco) — an aromatic Dominican classic and great value."
   },
   "markets": [
    "HR",
@@ -14980,8 +14929,7 @@
     "url": "https://humidor.hr/hr/proizvod/la-galera-habano-robusto-chaveta-5-x-50/"
    }
   ],
-  "priceUrl": "https://humidor.hr/hr/proizvod/la-galera-habano-robusto-chaveta-5-x-50/",
-  "profileEstimated": true
+  "priceUrl": "https://humidor.hr/hr/proizvod/la-galera-habano-robusto-chaveta-5-x-50/"
  },
  {
   "id": "cig-la-galera-habano-toro-6-x-54",
@@ -14990,14 +14938,14 @@
   "vitola": "X 54",
   "format": "54 x 152mm",
   "country": "Dominikana",
-  "wrapper": "Habano",
+  "wrapper": "Habano Ecuador",
   "strength": 3,
   "body": 3,
   "flavorTags": [
    "cedar",
    "zacini",
-   "koza",
-   "kava"
+   "med",
+   "orasasti"
   ],
   "smokeTimeMin": 50,
   "priceEUR": 11.9,
@@ -15007,8 +14955,8 @@
    "Havana Shop"
   ],
   "notes": {
-   "hr": "Habano wrapper (Dominikana); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Dominikana); balanced, medium in strength. Notes of cedar, spice, leather."
+   "hr": "Glavna Habano linija Tabacalere Palma (Jochy Blanco) — aromatična dominikanska klasika odličnog omjera.",
+   "en": "Tabacalera Palma's core Habano line (Jochy Blanco) — an aromatic Dominican classic and great value."
   },
   "markets": [
    "HR",
@@ -15030,8 +14978,7 @@
     "url": "https://humidor.hr/hr/proizvod/la-galera-habano-toro-el-lector-6-x-54/"
    }
   ],
-  "priceUrl": "https://humidor.hr/hr/proizvod/la-galera-habano-toro-el-lector-6-x-54/",
-  "profileEstimated": true
+  "priceUrl": "https://humidor.hr/hr/proizvod/la-galera-habano-toro-el-lector-6-x-54/"
  },
  {
   "id": "cig-la-galera-imperial-jade-perfecto-4-x-52",
@@ -15040,14 +14987,14 @@
   "vitola": "X 52",
   "format": "52 x 102mm",
   "country": "Dominikana",
-  "wrapper": "Habano",
+  "wrapper": "Cameroon",
   "strength": 3,
   "body": 3,
   "flavorTags": [
+   "zacini-slatki",
    "cedar",
-   "zacini",
-   "koza",
-   "kava"
+   "orasasti",
+   "kakao"
   ],
   "smokeTimeMin": 50,
   "priceEUR": 9.9,
@@ -15057,8 +15004,8 @@
    "Havana Shop"
   ],
   "notes": {
-   "hr": "Habano wrapper (Dominikana); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Dominikana); balanced, medium in strength. Notes of cedar, spice, leather."
+   "hr": "Šesto izdanje La Galere — prvi put da Jochy Blanco koristi rijedak afrički Cameroon wrapper.",
+   "en": "La Galera's sixth release — the first time Jochy Blanco used the hard-to-get African Cameroon wrapper."
   },
   "markets": [
    "HR",
@@ -15080,8 +15027,7 @@
     "url": "https://humidor.hr/hr/proizvod/la-galera-imperial-jade-chiquito-perfecto-4-x-52-x-40/"
    }
   ],
-  "priceUrl": "https://humidor.hr/hr/proizvod/la-galera-imperial-jade-chiquito-perfecto-4-x-52-x-40/",
-  "profileEstimated": true
+  "priceUrl": "https://humidor.hr/hr/proizvod/la-galera-imperial-jade-chiquito-perfecto-4-x-52-x-40/"
  },
  {
   "id": "cig-la-galera-imperial-jade-piramide-6-x-52",
@@ -15090,14 +15036,14 @@
   "vitola": "X 52",
   "format": "52 x 152mm",
   "country": "Dominikana",
-  "wrapper": "Habano",
+  "wrapper": "Cameroon",
   "strength": 3,
   "body": 3,
   "flavorTags": [
+   "zacini-slatki",
    "cedar",
-   "zacini",
-   "koza",
-   "kava"
+   "orasasti",
+   "kakao"
   ],
   "smokeTimeMin": 50,
   "priceEUR": 13.9,
@@ -15107,8 +15053,8 @@
    "Havana Shop"
   ],
   "notes": {
-   "hr": "Habano wrapper (Dominikana); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Dominikana); balanced, medium in strength. Notes of cedar, spice, leather."
+   "hr": "Šesto izdanje La Galere — prvi put da Jochy Blanco koristi rijedak afrički Cameroon wrapper.",
+   "en": "La Galera's sixth release — the first time Jochy Blanco used the hard-to-get African Cameroon wrapper."
   },
   "markets": [
    "HR",
@@ -15130,8 +15076,7 @@
     "url": "https://humidor.hr/hr/proizvod/la-galera-imperial-jade-piramide-6-x-52/"
    }
   ],
-  "priceUrl": "https://humidor.hr/hr/proizvod/la-galera-imperial-jade-piramide-6-x-52/",
-  "profileEstimated": true
+  "priceUrl": "https://humidor.hr/hr/proizvod/la-galera-imperial-jade-piramide-6-x-52/"
  },
  {
   "id": "cig-la-galera-imperial-jade-robusto-5-1-8-x-50",
@@ -15140,14 +15085,14 @@
   "vitola": "X 50",
   "format": "50 x 130mm",
   "country": "Dominikana",
-  "wrapper": "Habano",
-  "strength": 4,
-  "body": 4,
+  "wrapper": "Cameroon",
+  "strength": 3,
+  "body": 3,
   "flavorTags": [
+   "zacini-slatki",
    "cedar",
-   "zacini",
-   "koza",
-   "kava"
+   "orasasti",
+   "kakao"
   ],
   "smokeTimeMin": 50,
   "priceEUR": 11.9,
@@ -15157,8 +15102,8 @@
    "Havana Shop"
   ],
   "notes": {
-   "hr": "Habano wrapper (Dominikana); punija i izražajna. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Dominikana); fuller and expressive. Notes of cedar, spice, leather."
+   "hr": "Šesto izdanje La Galere — prvi put da Jochy Blanco koristi rijedak afrički Cameroon wrapper.",
+   "en": "La Galera's sixth release — the first time Jochy Blanco used the hard-to-get African Cameroon wrapper."
   },
   "markets": [
    "HR",
@@ -15180,8 +15125,7 @@
     "url": "https://humidor.hr/hr/proizvod/la-galera-imperial-jade-robusto-5-1-8-x-50/"
    }
   ],
-  "priceUrl": "https://humidor.hr/hr/proizvod/la-galera-imperial-jade-robusto-5-1-8-x-50/",
-  "profileEstimated": true
+  "priceUrl": "https://humidor.hr/hr/proizvod/la-galera-imperial-jade-robusto-5-1-8-x-50/"
  },
  {
   "id": "cig-la-galera-maduro-no-1-short-robusto-3-1-4-x-50",
@@ -15191,12 +15135,11 @@
   "format": "50 x 83mm",
   "country": "Dominikana",
   "wrapper": "Maduro",
-  "strength": 4,
-  "body": 5,
+  "strength": 3,
+  "body": 4,
   "flavorTags": [
    "kakao",
    "kava",
-   "karamela",
    "slatko",
    "zemljano"
   ],
@@ -15208,8 +15151,8 @@
    "Havana Shop"
   ],
   "notes": {
-   "hr": "Maduro wrapper (Dominikana); punija i izražajna. Note: kakao, kava, karamela.",
-   "en": "Maduro wrapper (Dominikana); fuller and expressive. Notes of cocoa, coffee, caramel."
+   "hr": "Maduro izraz kuće — tamniji, slađi profil uz zadržanu dominikansku eleganciju.",
+   "en": "The house's maduro expression — darker and sweeter while keeping its Dominican elegance."
   },
   "markets": [
    "HR",
@@ -15231,8 +15174,7 @@
     "url": "https://humidor.hr/hr/proizvod/la-galera-maduro-vitola-no-1-3%c2%bc-x-50/"
    }
   ],
-  "priceUrl": "https://humidor.hr/hr/proizvod/la-galera-maduro-vitola-no-1-3%c2%bc-x-50/",
-  "profileEstimated": true
+  "priceUrl": "https://humidor.hr/hr/proizvod/la-galera-maduro-vitola-no-1-3%c2%bc-x-50/"
  },
  {
   "id": "cig-la-galera-maduro-toro-6-x-54",
@@ -15247,7 +15189,6 @@
   "flavorTags": [
    "kakao",
    "kava",
-   "karamela",
    "slatko",
    "zemljano"
   ],
@@ -15259,8 +15200,8 @@
    "Havana Shop"
   ],
   "notes": {
-   "hr": "Maduro wrapper (Dominikana); uravnotežena, srednje snage. Note: kakao, kava, karamela.",
-   "en": "Maduro wrapper (Dominikana); balanced, medium in strength. Notes of cocoa, coffee, caramel."
+   "hr": "Maduro izraz kuće — tamniji, slađi profil uz zadržanu dominikansku eleganciju.",
+   "en": "The house's maduro expression — darker and sweeter while keeping its Dominican elegance."
   },
   "markets": [
    "HR",
@@ -15282,8 +15223,7 @@
     "url": "https://humidor.hr/hr/proizvod/la-galera-maduro-toro-el-lector-6-x-54/"
    }
   ],
-  "priceUrl": "https://humidor.hr/hr/proizvod/la-galera-maduro-toro-el-lector-6-x-54/",
-  "profileEstimated": true
+  "priceUrl": "https://humidor.hr/hr/proizvod/la-galera-maduro-toro-el-lector-6-x-54/"
  },
  {
   "id": "cig-la-galera-robusto-sampler",
@@ -16104,10 +16044,10 @@
   "strength": 3,
   "body": 3,
   "flavorTags": [
+   "kakao",
+   "kava",
    "cedar",
-   "zacini",
-   "koza",
-   "kava"
+   "zacini"
   ],
   "smokeTimeMin": 50,
   "priceEUR": 67.0,
@@ -16117,8 +16057,8 @@
    "The Humidor"
   ],
   "notes": {
-   "hr": "Habano wrapper (Kuba); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Kuba); balanced, medium in strength. Notes of cedar, spice, leather."
+   "hr": "Montecristo kućni profil: kakao, kava i cedar u srednjem registru.",
+   "en": "The Montecristo house profile: cocoa, coffee and cedar in the middle register."
   },
   "markets": [
    "HR",
@@ -16140,8 +16080,7 @@
     "url": "https://havana-cigar-shop.com/proizvod/montecristo-dumas-20/"
    }
   ],
-  "priceUrl": "https://havana-cigar-shop.com/proizvod/montecristo-dumas-20/",
-  "profileEstimated": true
+  "priceUrl": "https://havana-cigar-shop.com/proizvod/montecristo-dumas-20/"
  },
  {
   "id": "cig-montecristo-montecristo-edmundo",
@@ -16273,13 +16212,13 @@
   "format": "—",
   "country": "Kuba",
   "wrapper": "Habano",
-  "strength": 3,
-  "body": 3,
+  "strength": 4,
+  "body": 4,
   "flavorTags": [
+   "kakao",
+   "kava",
    "cedar",
-   "zacini",
-   "koza",
-   "kava"
+   "zacini"
   ],
   "smokeTimeMin": 45,
   "priceEUR": 38.2,
@@ -16289,8 +16228,8 @@
    "The Humidor"
   ],
   "notes": {
-   "hr": "Habano wrapper (Kuba); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Kuba); balanced, medium in strength. Notes of cedar, spice, leather."
+   "hr": "Puniji Montecristo formati (No.2 obitelj / Línea 1935) — više snage uz isti kakao-cedar profil.",
+   "en": "Fuller Montecristo formats (the No.2 family / Línea 1935) — more strength on the same cocoa-cedar profile."
   },
   "markets": [
    "HR",
@@ -16312,8 +16251,7 @@
     "url": "https://havana-cigar-shop.com/proizvod/montecristo-especial-no-2-25/"
    }
   ],
-  "priceUrl": "https://havana-cigar-shop.com/proizvod/montecristo-especial-no-2-25/",
-  "profileEstimated": true
+  "priceUrl": "https://havana-cigar-shop.com/proizvod/montecristo-especial-no-2-25/"
  },
  {
   "id": "cig-montecristo-joyitas",
@@ -16326,10 +16264,10 @@
   "strength": 3,
   "body": 3,
   "flavorTags": [
+   "kakao",
+   "kava",
    "cedar",
-   "zacini",
-   "koza",
-   "kava"
+   "zacini"
   ],
   "smokeTimeMin": 50,
   "priceEUR": 20.8,
@@ -16339,8 +16277,8 @@
    "The Humidor"
   ],
   "notes": {
-   "hr": "Habano wrapper (Kuba); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Kuba); balanced, medium in strength. Notes of cedar, spice, leather."
+   "hr": "Montecristo kućni profil: kakao, kava i cedar u srednjem registru.",
+   "en": "The Montecristo house profile: cocoa, coffee and cedar in the middle register."
   },
   "markets": [
    "HR",
@@ -16362,8 +16300,7 @@
     "url": "https://havana-cigar-shop.com/proizvod/montecristo-joyitas-25/"
    }
   ],
-  "priceUrl": "https://havana-cigar-shop.com/proizvod/montecristo-joyitas-25/",
-  "profileEstimated": true
+  "priceUrl": "https://havana-cigar-shop.com/proizvod/montecristo-joyitas-25/"
  },
  {
   "id": "cig-montecristo-junior",
@@ -16376,10 +16313,10 @@
   "strength": 3,
   "body": 3,
   "flavorTags": [
+   "kakao",
+   "kava",
    "cedar",
-   "zacini",
-   "koza",
-   "kava"
+   "zacini"
   ],
   "smokeTimeMin": 50,
   "priceEUR": 21.95,
@@ -16389,8 +16326,8 @@
    "The Humidor"
   ],
   "notes": {
-   "hr": "Habano wrapper (Kuba); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Kuba); balanced, medium in strength. Notes of cedar, spice, leather."
+   "hr": "Montecristo kućni profil: kakao, kava i cedar u srednjem registru.",
+   "en": "The Montecristo house profile: cocoa, coffee and cedar in the middle register."
   },
   "markets": [
    "HR",
@@ -16412,8 +16349,7 @@
     "url": "https://havana-cigar-shop.com/proizvod/montecristo-junior-20/"
    }
   ],
-  "priceUrl": "https://havana-cigar-shop.com/proizvod/montecristo-junior-20/",
-  "profileEstimated": true
+  "priceUrl": "https://havana-cigar-shop.com/proizvod/montecristo-junior-20/"
  },
  {
   "id": "cig-montecristo-leyenda",
@@ -16423,13 +16359,13 @@
   "format": "—",
   "country": "Kuba",
   "wrapper": "Habano",
-  "strength": 3,
-  "body": 3,
+  "strength": 4,
+  "body": 4,
   "flavorTags": [
+   "kakao",
+   "kava",
    "cedar",
-   "zacini",
-   "koza",
-   "kava"
+   "zacini"
   ],
   "smokeTimeMin": 50,
   "priceEUR": 98.0,
@@ -16439,8 +16375,8 @@
    "The Humidor"
   ],
   "notes": {
-   "hr": "Habano wrapper (Kuba); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Kuba); balanced, medium in strength. Notes of cedar, spice, leather."
+   "hr": "Puniji Montecristo formati (No.2 obitelj / Línea 1935) — više snage uz isti kakao-cedar profil.",
+   "en": "Fuller Montecristo formats (the No.2 family / Línea 1935) — more strength on the same cocoa-cedar profile."
   },
   "markets": [
    "HR",
@@ -16462,8 +16398,7 @@
     "url": "https://havana-cigar-shop.com/proizvod/montecristo-leyenda-20/"
    }
   ],
-  "priceUrl": "https://havana-cigar-shop.com/proizvod/montecristo-leyenda-20/",
-  "profileEstimated": true
+  "priceUrl": "https://havana-cigar-shop.com/proizvod/montecristo-leyenda-20/"
  },
  {
   "id": "cig-montecristo-montecristo-linea-1935",
@@ -16476,10 +16411,10 @@
   "strength": 4,
   "body": 4,
   "flavorTags": [
+   "kakao",
+   "kava",
    "cedar",
-   "zacini",
-   "koza",
-   "kava"
+   "zacini"
   ],
   "smokeTimeMin": 50,
   "priceEUR": null,
@@ -16489,8 +16424,8 @@
    "Havana Shop"
   ],
   "notes": {
-   "hr": "Habano wrapper (Kuba); punija i izražajna. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Kuba); fuller and expressive. Notes of cedar, spice, leather. 1935 series robusto; modern fuller Montecristo profile."
+   "hr": "Puniji Montecristo formati (No.2 obitelj / Línea 1935) — više snage uz isti kakao-cedar profil.",
+   "en": "Fuller Montecristo formats (the No.2 family / Línea 1935) — more strength on the same cocoa-cedar profile."
   },
   "markets": [
    "HR",
@@ -16520,8 +16455,7 @@
     "url": "https://humidor.hr/hr/?s=montecristo+Leyenda&post_type=product"
    }
   ],
-  "priceUrl": "https://humidor.hr/hr/?s=montecristo+Dumas&post_type=product",
-  "profileEstimated": true
+  "priceUrl": "https://humidor.hr/hr/?s=montecristo+Dumas&post_type=product"
  },
  {
   "id": "cig-montecristo-maltes",
@@ -16534,10 +16468,10 @@
   "strength": 3,
   "body": 3,
   "flavorTags": [
+   "kakao",
+   "kava",
    "cedar",
-   "zacini",
-   "koza",
-   "kava"
+   "zacini"
   ],
   "smokeTimeMin": 50,
   "priceEUR": 85.0,
@@ -16547,8 +16481,8 @@
    "The Humidor"
   ],
   "notes": {
-   "hr": "Habano wrapper (Kuba); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Kuba); balanced, medium in strength. Notes of cedar, spice, leather."
+   "hr": "Montecristo kućni profil: kakao, kava i cedar u srednjem registru.",
+   "en": "The Montecristo house profile: cocoa, coffee and cedar in the middle register."
   },
   "markets": [
    "HR",
@@ -16570,8 +16504,7 @@
     "url": "https://havana-cigar-shop.com/proizvod/montecristo-maltes-20/"
    }
   ],
-  "priceUrl": "https://havana-cigar-shop.com/proizvod/montecristo-maltes-20/",
-  "profileEstimated": true
+  "priceUrl": "https://havana-cigar-shop.com/proizvod/montecristo-maltes-20/"
  },
  {
   "id": "cig-montecristo-master-tubos",
@@ -16581,13 +16514,13 @@
   "format": "—",
   "country": "Kuba",
   "wrapper": "Habano",
-  "strength": 3,
-  "body": 3,
+  "strength": 4,
+  "body": 4,
   "flavorTags": [
+   "kakao",
+   "kava",
    "cedar",
-   "zacini",
-   "koza",
-   "kava"
+   "zacini"
   ],
   "smokeTimeMin": 45,
   "priceEUR": 42.85,
@@ -16597,8 +16530,8 @@
    "The Humidor"
   ],
   "notes": {
-   "hr": "Habano wrapper (Kuba); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Kuba); balanced, medium in strength. Notes of cedar, spice, leather."
+   "hr": "Puniji Montecristo formati (No.2 obitelj / Línea 1935) — više snage uz isti kakao-cedar profil.",
+   "en": "Fuller Montecristo formats (the No.2 family / Línea 1935) — more strength on the same cocoa-cedar profile."
   },
   "markets": [
    "HR",
@@ -16613,8 +16546,7 @@
     "url": "https://havana-cigar-shop.com/proizvod/montecristo-master-tubos-3/"
    }
   ],
-  "priceUrl": "https://havana-cigar-shop.com/proizvod/montecristo-master-tubos-3/",
-  "profileEstimated": true
+  "priceUrl": "https://havana-cigar-shop.com/proizvod/montecristo-master-tubos-3/"
  },
  {
   "id": "cig-montecristo-media",
@@ -16627,10 +16559,10 @@
   "strength": 3,
   "body": 3,
   "flavorTags": [
+   "kakao",
+   "kava",
    "cedar",
-   "zacini",
-   "koza",
-   "kava"
+   "zacini"
   ],
   "smokeTimeMin": 45,
   "priceEUR": 23.0,
@@ -16640,8 +16572,8 @@
    "The Humidor"
   ],
   "notes": {
-   "hr": "Habano wrapper (Kuba); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Kuba); balanced, medium in strength. Notes of cedar, spice, leather."
+   "hr": "Montecristo kućni profil: kakao, kava i cedar u srednjem registru.",
+   "en": "The Montecristo house profile: cocoa, coffee and cedar in the middle register."
   },
   "markets": [
    "HR",
@@ -16656,8 +16588,7 @@
     "url": "https://havana-cigar-shop.com/proizvod/montecristo-media-corona-25/"
    }
   ],
-  "priceUrl": "https://havana-cigar-shop.com/proizvod/montecristo-media-corona-25/",
-  "profileEstimated": true
+  "priceUrl": "https://havana-cigar-shop.com/proizvod/montecristo-media-corona-25/"
  },
  {
   "id": "cig-montecristo-no-2-6-1-8-x-52",
@@ -16667,13 +16598,13 @@
   "format": "52 x 156mm",
   "country": "Kuba",
   "wrapper": "Habano",
-  "strength": 3,
-  "body": 3,
+  "strength": 4,
+  "body": 4,
   "flavorTags": [
+   "kakao",
+   "kava",
    "cedar",
-   "zacini",
-   "koza",
-   "kava"
+   "zacini"
   ],
   "smokeTimeMin": 50,
   "priceEUR": 32.0,
@@ -16683,8 +16614,8 @@
    "Havana Shop"
   ],
   "notes": {
-   "hr": "Habano wrapper (Kuba); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Kuba); balanced, medium in strength. Notes of cedar, spice, leather."
+   "hr": "Puniji Montecristo formati (No.2 obitelj / Línea 1935) — više snage uz isti kakao-cedar profil.",
+   "en": "Fuller Montecristo formats (the No.2 family / Línea 1935) — more strength on the same cocoa-cedar profile."
   },
   "markets": [
    "HR",
@@ -16706,8 +16637,7 @@
     "url": "https://humidor.hr/hr/proizvod/montecristo-no-2-6-1-8-x-52/"
    }
   ],
-  "priceUrl": "https://humidor.hr/hr/proizvod/montecristo-no-2-6-1-8-x-52/",
-  "profileEstimated": true
+  "priceUrl": "https://humidor.hr/hr/proizvod/montecristo-no-2-6-1-8-x-52/"
  },
  {
   "id": "cig-montecristo-no-5",
@@ -16720,10 +16650,10 @@
   "strength": 3,
   "body": 3,
   "flavorTags": [
+   "kakao",
+   "kava",
    "cedar",
-   "zacini",
-   "koza",
-   "kava"
+   "zacini"
   ],
   "smokeTimeMin": 50,
   "priceEUR": 22.15,
@@ -16733,8 +16663,8 @@
    "The Humidor"
   ],
   "notes": {
-   "hr": "Habano wrapper (Kuba); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Kuba); balanced, medium in strength. Notes of cedar, spice, leather."
+   "hr": "Montecristo kućni profil: kakao, kava i cedar u srednjem registru.",
+   "en": "The Montecristo house profile: cocoa, coffee and cedar in the middle register."
   },
   "markets": [
    "HR",
@@ -16756,8 +16686,7 @@
     "url": "https://havana-cigar-shop.com/proizvod/montecristo-no-5-10/"
    }
   ],
-  "priceUrl": "https://havana-cigar-shop.com/proizvod/montecristo-no-5-10/",
-  "profileEstimated": true
+  "priceUrl": "https://havana-cigar-shop.com/proizvod/montecristo-no-5-10/"
  },
  {
   "id": "cig-montecristo-montecristo-open",
@@ -16767,13 +16696,12 @@
   "format": "54 x 150mm",
   "country": "Kuba",
   "wrapper": "Habano",
-  "strength": 4,
-  "body": 4,
+  "strength": 2,
+  "body": 3,
   "flavorTags": [
+   "trava-slatka",
    "cedar",
-   "zacini",
-   "koza",
-   "kava",
+   "med",
    "citrus"
   ],
   "smokeTimeMin": 70,
@@ -16784,8 +16712,8 @@
    "Havana Shop"
   ],
   "notes": {
-   "hr": "Habano wrapper (Kuba); punija i izražajna. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Kuba); fuller and expressive. Notes of cedar, spice, leather. Outdoor line robusto; lighter body with citrus and cedar."
+   "hr": "Open serija — svjetliji, svježiji Montecristo namijenjen opuštenom dnevnom pušenju.",
+   "en": "The Open series — a brighter, fresher Montecristo aimed at relaxed daytime smoking."
   },
   "markets": [
    "HR",
@@ -16822,8 +16750,7 @@
     "url": "https://humidor.hr/hr/?s=montecristo+Open+Eagle&post_type=product"
    }
   ],
-  "priceUrl": "https://humidor.hr/hr/?s=montecristo+Open+Eagle&post_type=product",
-  "profileEstimated": true
+  "priceUrl": "https://humidor.hr/hr/?s=montecristo+Open+Eagle&post_type=product"
  },
  {
   "id": "cig-montecristo-petit-edmundo",
@@ -16877,13 +16804,13 @@
   "format": "—",
   "country": "Kuba",
   "wrapper": "Habano",
-  "strength": 3,
-  "body": 3,
+  "strength": 4,
+  "body": 4,
   "flavorTags": [
+   "kakao",
+   "kava",
    "cedar",
-   "zacini",
-   "koza",
-   "kava"
+   "zacini"
   ],
   "smokeTimeMin": 45,
   "priceEUR": 34.9,
@@ -16893,8 +16820,8 @@
    "The Humidor"
   ],
   "notes": {
-   "hr": "Habano wrapper (Kuba); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Kuba); balanced, medium in strength. Notes of cedar, spice, leather."
+   "hr": "Puniji Montecristo formati (No.2 obitelj / Línea 1935) — više snage uz isti kakao-cedar profil.",
+   "en": "Fuller Montecristo formats (the No.2 family / Línea 1935) — more strength on the same cocoa-cedar profile."
   },
   "markets": [
    "HR",
@@ -16909,8 +16836,7 @@
     "url": "https://havana-cigar-shop.com/proizvod/montecristo-petit-no-2-25/"
    }
   ],
-  "priceUrl": "https://havana-cigar-shop.com/proizvod/montecristo-petit-no-2-25/",
-  "profileEstimated": true
+  "priceUrl": "https://havana-cigar-shop.com/proizvod/montecristo-petit-no-2-25/"
  },
  {
   "id": "cig-montecristo-wide-edmundo",
@@ -19465,8 +19391,8 @@
   "strength": 4,
   "body": 4,
   "flavorTags": [
-   "cedar",
-   "zacini",
+   "zemljano",
+   "papar",
    "koza",
    "kava"
   ],
@@ -19478,8 +19404,8 @@
    "The Humidor"
   ],
   "notes": {
-   "hr": "Habano wrapper (Kuba); punija i izražajna. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Kuba); fuller and expressive. Notes of cedar, spice, leather."
+   "hr": "Noviji premium Partagás izrazi (Legado / Línea Maestra) — kućna zemljano-paprena srž, dotjeranija izrada.",
+   "en": "Newer premium Partagás expressions (Legado / Línea Maestra) — the house's earthy-peppery core, refined execution."
   },
   "markets": [
    "HR",
@@ -19494,8 +19420,7 @@
     "url": "https://havana-cigar-shop.com/proizvod/partagas-aliados-cdhhs-20/"
    }
   ],
-  "priceUrl": "https://havana-cigar-shop.com/proizvod/partagas-aliados-cdhhs-20/",
-  "profileEstimated": true
+  "priceUrl": "https://havana-cigar-shop.com/proizvod/partagas-aliados-cdhhs-20/"
  },
  {
   "id": "cig-partagas-partagas-classic",
@@ -19587,8 +19512,8 @@
   "strength": 4,
   "body": 4,
   "flavorTags": [
-   "cedar",
-   "zacini",
+   "zemljano",
+   "papar",
    "koza",
    "kava"
   ],
@@ -19600,8 +19525,8 @@
    "The Humidor"
   ],
   "notes": {
-   "hr": "Habano wrapper (Kuba); punija i izražajna. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Kuba); fuller and expressive. Notes of cedar, spice, leather."
+   "hr": "Noviji premium Partagás izrazi (Legado / Línea Maestra) — kućna zemljano-paprena srž, dotjeranija izrada.",
+   "en": "Newer premium Partagás expressions (Legado / Línea Maestra) — the house's earthy-peppery core, refined execution."
   },
   "markets": [
    "HR",
@@ -19623,8 +19548,7 @@
     "url": "https://havana-cigar-shop.com/proizvod/partagas-legado-25/"
    }
   ],
-  "priceUrl": "https://havana-cigar-shop.com/proizvod/partagas-legado-25/",
-  "profileEstimated": true
+  "priceUrl": "https://havana-cigar-shop.com/proizvod/partagas-legado-25/"
  },
  {
   "id": "cig-partagas-lusitanias",
@@ -19686,11 +19610,10 @@
   "strength": 4,
   "body": 4,
   "flavorTags": [
-   "cedar",
-   "zacini",
+   "zemljano",
+   "papar",
    "koza",
-   "kava",
-   "suho-voce"
+   "kava"
   ],
   "smokeTimeMin": 60,
   "priceEUR": null,
@@ -19700,8 +19623,8 @@
    "Havana Shop"
   ],
   "notes": {
-   "hr": "Habano wrapper (Kuba); punija i izražajna. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Kuba); fuller and expressive. Notes of cedar, spice, leather. Maestra line; refined spice and dark fruit."
+   "hr": "Noviji premium Partagás izrazi (Legado / Línea Maestra) — kućna zemljano-paprena srž, dotjeranija izrada.",
+   "en": "Newer premium Partagás expressions (Legado / Línea Maestra) — the house's earthy-peppery core, refined execution."
   },
   "markets": [
    "HR",
@@ -19731,8 +19654,7 @@
     "url": "https://humidor.hr/hr/?s=partagas+Tiempo&post_type=product"
    }
   ],
-  "priceUrl": "https://humidor.hr/hr/?s=partagas+Origen&post_type=product",
-  "profileEstimated": true
+  "priceUrl": "https://humidor.hr/hr/?s=partagas+Origen&post_type=product"
  },
  {
   "id": "cig-partagas-maestro",
@@ -19745,8 +19667,8 @@
   "strength": 4,
   "body": 4,
   "flavorTags": [
-   "cedar",
-   "zacini",
+   "zemljano",
+   "papar",
    "koza",
    "kava"
   ],
@@ -19758,8 +19680,8 @@
    "The Humidor"
   ],
   "notes": {
-   "hr": "Habano wrapper (Kuba); punija i izražajna. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Kuba); fuller and expressive. Notes of cedar, spice, leather."
+   "hr": "Noviji premium Partagás izrazi (Legado / Línea Maestra) — kućna zemljano-paprena srž, dotjeranija izrada.",
+   "en": "Newer premium Partagás expressions (Legado / Línea Maestra) — the house's earthy-peppery core, refined execution."
   },
   "markets": [
    "HR",
@@ -19781,8 +19703,7 @@
     "url": "https://havana-cigar-shop.com/proizvod/partagas-maestro-20/"
    }
   ],
-  "priceUrl": "https://havana-cigar-shop.com/proizvod/partagas-maestro-20/",
-  "profileEstimated": true
+  "priceUrl": "https://havana-cigar-shop.com/proizvod/partagas-maestro-20/"
  },
  {
   "id": "cig-partagas-mille-fleurs",
@@ -19792,8 +19713,8 @@
   "format": "—",
   "country": "Kuba",
   "wrapper": "Habano",
-  "strength": 4,
-  "body": 4,
+  "strength": 3,
+  "body": 3,
   "flavorTags": [
    "cedar",
    "zacini",
@@ -19808,8 +19729,8 @@
    "The Humidor"
   ],
   "notes": {
-   "hr": "Habano wrapper (Kuba); punija i izražajna. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Kuba); fuller and expressive. Notes of cedar, spice, leather."
+   "hr": "Pristupačni Partagás — blaži ulaz u zemljano-začinski stil kuće.",
+   "en": "The approachable Partagás — a gentler entry into the house's earthy, spicy style."
   },
   "markets": [
    "HR",
@@ -19824,8 +19745,7 @@
     "url": "https://havana-cigar-shop.com/proizvod/partagas-mille-fleurs-25/"
    }
   ],
-  "priceUrl": "https://havana-cigar-shop.com/proizvod/partagas-mille-fleurs-25/",
-  "profileEstimated": true
+  "priceUrl": "https://havana-cigar-shop.com/proizvod/partagas-mille-fleurs-25/"
  },
  {
   "id": "cig-partagas-origen",
@@ -19838,8 +19758,8 @@
   "strength": 4,
   "body": 4,
   "flavorTags": [
-   "cedar",
-   "zacini",
+   "zemljano",
+   "papar",
    "koza",
    "kava"
   ],
@@ -19851,8 +19771,8 @@
    "The Humidor"
   ],
   "notes": {
-   "hr": "Habano wrapper (Kuba); punija i izražajna. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Kuba); fuller and expressive. Notes of cedar, spice, leather."
+   "hr": "Noviji premium Partagás izrazi (Legado / Línea Maestra) — kućna zemljano-paprena srž, dotjeranija izrada.",
+   "en": "Newer premium Partagás expressions (Legado / Línea Maestra) — the house's earthy-peppery core, refined execution."
   },
   "markets": [
    "HR",
@@ -19874,8 +19794,7 @@
     "url": "https://havana-cigar-shop.com/proizvod/partagas-origen-20/"
    }
   ],
-  "priceUrl": "https://havana-cigar-shop.com/proizvod/partagas-origen-20/",
-  "profileEstimated": true
+  "priceUrl": "https://havana-cigar-shop.com/proizvod/partagas-origen-20/"
  },
  {
   "id": "cig-partagas-rito",
@@ -19888,8 +19807,8 @@
   "strength": 4,
   "body": 4,
   "flavorTags": [
-   "cedar",
-   "zacini",
+   "zemljano",
+   "papar",
    "koza",
    "kava"
   ],
@@ -19901,8 +19820,8 @@
    "The Humidor"
   ],
   "notes": {
-   "hr": "Habano wrapper (Kuba); punija i izražajna. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Kuba); fuller and expressive. Notes of cedar, spice, leather."
+   "hr": "Noviji premium Partagás izrazi (Legado / Línea Maestra) — kućna zemljano-paprena srž, dotjeranija izrada.",
+   "en": "Newer premium Partagás expressions (Legado / Línea Maestra) — the house's earthy-peppery core, refined execution."
   },
   "markets": [
    "HR",
@@ -19924,8 +19843,7 @@
     "url": "https://havana-cigar-shop.com/proizvod/partagas-rito-20/"
    }
   ],
-  "priceUrl": "https://havana-cigar-shop.com/proizvod/partagas-rito-20/",
-  "profileEstimated": true
+  "priceUrl": "https://havana-cigar-shop.com/proizvod/partagas-rito-20/"
  },
  {
   "id": "cig-partagas-serie-e-no-2",
@@ -19936,10 +19854,10 @@
   "country": "Kuba",
   "wrapper": "Habano",
   "strength": 4,
-  "body": 4,
+  "body": 5,
   "flavorTags": [
-   "cedar",
-   "zacini",
+   "zemljano",
+   "papar",
    "koza",
    "kava"
   ],
@@ -19951,8 +19869,8 @@
    "The Humidor"
   ],
   "notes": {
-   "hr": "Habano wrapper (Kuba); punija i izražajna. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Kuba); fuller and expressive. Notes of cedar, spice, leather."
+   "hr": "Najpuniji Partagás formati — zemlja, papar i koža bez kompromisa.",
+   "en": "Partagás at its fullest — earth, pepper and leather without compromise."
   },
   "markets": [
    "HR",
@@ -19967,8 +19885,7 @@
     "url": "https://havana-cigar-shop.com/proizvod/partagas-serie-e-no-2-25/"
    }
   ],
-  "priceUrl": "https://havana-cigar-shop.com/proizvod/partagas-serie-e-no-2-25/",
-  "profileEstimated": true
+  "priceUrl": "https://havana-cigar-shop.com/proizvod/partagas-serie-e-no-2-25/"
  },
  {
   "id": "cig-partagas-partagas-serie-p",
@@ -19978,14 +19895,13 @@
   "format": "52 x 156mm",
   "country": "Kuba",
   "wrapper": "Habano",
-  "strength": 5,
+  "strength": 4,
   "body": 5,
   "flavorTags": [
-   "cedar",
-   "zacini",
+   "zemljano",
+   "papar",
    "koza",
-   "kava",
-   "drvo"
+   "kava"
   ],
   "smokeTimeMin": 50,
   "priceEUR": 40.5,
@@ -19995,8 +19911,8 @@
    "Havana Shop"
   ],
   "notes": {
-   "hr": "Habano wrapper (Kuba); snažna, za iskusne pušače. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Kuba); powerful, for seasoned smokers. Notes of cedar, spice, leather. Serie P torpedo; full-bodied with charred wood."
+   "hr": "Najpuniji Partagás formati — zemlja, papar i koža bez kompromisa.",
+   "en": "Partagás at its fullest — earth, pepper and leather without compromise."
   },
   "markets": [
    "HR",
@@ -20019,8 +19935,7 @@
     "url": "https://humidor.hr/hr/proizvod/partagas-serie-d-no-4-4-7-8-x-50/"
    }
   ],
-  "priceUrl": "https://havana-cigar-shop.com/proizvod/partagas-serie-p-no-2-25/",
-  "profileEstimated": true
+  "priceUrl": "https://havana-cigar-shop.com/proizvod/partagas-serie-p-no-2-25/"
  },
  {
   "id": "cig-partagas-short",
@@ -22831,14 +22746,14 @@
   "vitola": "A.L.B. Robusto",
   "format": "52 x 127mm",
   "country": "Honduras",
-  "wrapper": "Habano",
+  "wrapper": "San Andrés maduro",
   "strength": 4,
   "body": 4,
   "flavorTags": [
-   "cedar",
-   "zacini",
-   "koza",
-   "kava"
+   "papar",
+   "kakao",
+   "orasasti",
+   "zemljano"
   ],
   "smokeTimeMin": 50,
   "priceEUR": 20.0,
@@ -22848,8 +22763,8 @@
    "Havana Shop"
   ],
   "notes": {
-   "hr": "Habano wrapper (Honduras); punija i izražajna. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Honduras); fuller and expressive. Notes of cedar, spice, leather. Second-generation blend; medium-full."
+   "hr": "A.L.R. (Aged, Limited & Rare): motano pa odležano još 2 godine u My Father fabrici — crni papar u kremasto-orašasti finiš.",
+   "en": "A.L.R. (Aged, Limited & Rare): rolled then rested 2 more years at My Father — black pepper into a creamy, nutty finish."
   },
   "markets": [
    "HR",
@@ -22873,8 +22788,7 @@
     "url": "https://humidor.hr/hr/proizvod/rocky-patel-alr-2nd-toro-6-1-2-x-52/"
    }
   ],
-  "priceUrl": "https://humidor.hr/hr/?s=rocky+patel+A.L.B.+Robusto&post_type=product",
-  "profileEstimated": true
+  "priceUrl": "https://humidor.hr/hr/?s=rocky+patel+A.L.B.+Robusto&post_type=product"
  },
  {
   "id": "cig-rocky-patel-rp-extra",
@@ -22978,14 +22892,14 @@
   "vitola": "X 52",
   "format": "52 x 165mm",
   "country": "Honduras",
-  "wrapper": "Habano",
-  "strength": 3,
-  "body": 3,
+  "wrapper": "San Andrés maduro",
+  "strength": 4,
+  "body": 4,
   "flavorTags": [
-   "cedar",
-   "zacini",
-   "koza",
-   "kava"
+   "papar",
+   "kakao",
+   "orasasti",
+   "zemljano"
   ],
   "smokeTimeMin": 50,
   "priceEUR": 20.0,
@@ -22995,8 +22909,8 @@
    "Havana Shop"
   ],
   "notes": {
-   "hr": "Habano wrapper (Honduras); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Honduras); balanced, medium in strength. Notes of cedar, spice, leather."
+   "hr": "A.L.R. (Aged, Limited & Rare): motano pa odležano još 2 godine u My Father fabrici — crni papar u kremasto-orašasti finiš.",
+   "en": "A.L.R. (Aged, Limited & Rare): rolled then rested 2 more years at My Father — black pepper into a creamy, nutty finish."
   },
   "markets": [
    "HR",
@@ -23018,8 +22932,7 @@
     "url": "https://humidor.hr/hr/proizvod/rocky-patel-alr-2nd-toro-6-1-2-x-52/"
    }
   ],
-  "priceUrl": "https://humidor.hr/hr/proizvod/rocky-patel-alr-2nd-toro-6-1-2-x-52/",
-  "profileEstimated": true
+  "priceUrl": "https://humidor.hr/hr/proizvod/rocky-patel-alr-2nd-toro-6-1-2-x-52/"
  },
  {
   "id": "cig-rocky-patel-conviction-toro-6-1-2-x-52",
@@ -25212,13 +25125,13 @@
   "format": "—",
   "country": "Kuba",
   "wrapper": "Habano",
-  "strength": 3,
-  "body": 3,
+  "strength": 4,
+  "body": 4,
   "flavorTags": [
+   "kremasto",
+   "med",
    "cedar",
-   "zacini",
-   "koza",
-   "kava"
+   "zacini"
   ],
   "smokeTimeMin": 45,
   "priceEUR": 93.5,
@@ -25228,8 +25141,8 @@
    "The Humidor"
   ],
   "notes": {
-   "hr": "Habano wrapper (Kuba); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Kuba); balanced, medium in strength. Notes of cedar, spice, leather."
+   "hr": "Puniji Trinidadi (La Trova je LCDH ekskluziva) — medeno-cedrasta elegancija s više tijela.",
+   "en": "The fuller Trinidads (La Trova is an LCDH exclusive) — honeyed cedar elegance with more body."
   },
   "markets": [
    "HR",
@@ -25244,8 +25157,7 @@
     "url": "https://havana-cigar-shop.com/proizvod/trinidad-la-trova-cdh-12/"
    }
   ],
-  "priceUrl": "https://havana-cigar-shop.com/proizvod/trinidad-la-trova-cdh-12/",
-  "profileEstimated": true
+  "priceUrl": "https://havana-cigar-shop.com/proizvod/trinidad-la-trova-cdh-12/"
  },
  {
   "id": "cig-trinidad-trinidad-limited",
@@ -25309,10 +25221,10 @@
   "strength": 3,
   "body": 3,
   "flavorTags": [
+   "kremasto",
+   "med",
    "cedar",
-   "zacini",
-   "koza",
-   "kava"
+   "zacini"
   ],
   "smokeTimeMin": 45,
   "priceEUR": 63.0,
@@ -25322,8 +25234,8 @@
    "The Humidor"
   ],
   "notes": {
-   "hr": "Habano wrapper (Kuba); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Kuba); balanced, medium in strength. Notes of cedar, spice, leather."
+   "hr": "Media Luna — moderni mali Trinidad, fin i medeno-cedrast.",
+   "en": "Media Luna — the modern small Trinidad, refined and honey-cedar."
   },
   "markets": [
    "HR",
@@ -25338,8 +25250,7 @@
     "url": "https://havana-cigar-shop.com/proizvod/trinidad-media-luna-12/"
    }
   ],
-  "priceUrl": "https://havana-cigar-shop.com/proizvod/trinidad-media-luna-12/",
-  "profileEstimated": true
+  "priceUrl": "https://havana-cigar-shop.com/proizvod/trinidad-media-luna-12/"
  },
  {
   "id": "cig-trinidad-reyes",
@@ -25399,13 +25310,13 @@
   "format": "—",
   "country": "Kuba",
   "wrapper": "Habano",
-  "strength": 3,
-  "body": 3,
+  "strength": 4,
+  "body": 4,
   "flavorTags": [
+   "kremasto",
+   "med",
    "cedar",
-   "zacini",
-   "koza",
-   "kava"
+   "zacini"
   ],
   "smokeTimeMin": 50,
   "priceEUR": 83.8,
@@ -25415,8 +25326,8 @@
    "The Humidor"
   ],
   "notes": {
-   "hr": "Habano wrapper (Kuba); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
-   "en": "Habano wrapper (Kuba); balanced, medium in strength. Notes of cedar, spice, leather."
+   "hr": "Puniji Trinidadi (La Trova je LCDH ekskluziva) — medeno-cedrasta elegancija s više tijela.",
+   "en": "The fuller Trinidads (La Trova is an LCDH exclusive) — honeyed cedar elegance with more body."
   },
   "markets": [
    "HR",
@@ -25438,8 +25349,7 @@
     "url": "https://havana-cigar-shop.com/proizvod/trinidad-topes-12/"
    }
   ],
-  "priceUrl": "https://havana-cigar-shop.com/proizvod/trinidad-topes-12/",
-  "profileEstimated": true
+  "priceUrl": "https://havana-cigar-shop.com/proizvod/trinidad-topes-12/"
  },
  {
   "id": "cig-trinidad-vigia",
