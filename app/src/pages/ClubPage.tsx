@@ -10,6 +10,8 @@ import club from "../data/club.json";
 import WORLD_OUTLINE from "../data/world_outline.json";
 import { Club101Page } from "./Club101Page";
 import { BontonPage } from "./BontonPage";
+import { LexiconPage } from "./LexiconPage";
+import { navigate, useRoute } from "../store/route";
 
 interface Quote { text: LocalizedText; author: string; note?: LocalizedText }
 interface Fact { hr: string; en: string }
@@ -46,9 +48,8 @@ const BEST_KEY = "club-quiz-best-streak";
 
 export function ClubPage() {
   const { t, lx } = useI18n();
+  const { club: clubView } = useRoute();
   const day = dayOfYear();
-  const [show101, setShow101] = useState(false);
-  const [showBonton, setShowBonton] = useState(false);
 
   // citat dana; zanimljivosti u dnevno promijesanom redoslijedu
   const quote = QUOTES[day % QUOTES.length];
@@ -144,11 +145,14 @@ export function ClubPage() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  if (show101) {
-    return <Club101Page onBack={() => setShow101(false)} />;
+  if (clubView === "101") {
+    return <Club101Page onBack={() => navigate({ page: "club" })} />;
   }
-  if (showBonton) {
-    return <BontonPage onBack={() => setShowBonton(false)} />;
+  if (clubView === "bonton") {
+    return <BontonPage onBack={() => navigate({ page: "club" })} />;
+  }
+  if (clubView === "lexicon") {
+    return <LexiconPage onBack={() => navigate({ page: "club" })} />;
   }
 
   return (
@@ -183,7 +187,7 @@ export function ClubPage() {
         <p className="text-sm leading-relaxed text-papir/90">{t("club.101Teaser")}</p>
         <button
           type="button"
-          onClick={() => setShow101(true)}
+          onClick={() => navigate({ page: "club", club: "101" })}
           className="mt-3 w-full rounded-lg border border-zlato/40 py-2.5 font-display text-xs uppercase tracking-widest text-zlato hover:bg-zlato/10"
         >
           {t("club.101Open")} →
@@ -196,10 +200,23 @@ export function ClubPage() {
         <p className="text-sm leading-relaxed text-papir/90">{t("club.bontonTeaser")}</p>
         <button
           type="button"
-          onClick={() => setShowBonton(true)}
+          onClick={() => navigate({ page: "club", club: "bonton" })}
           className="mt-3 w-full rounded-lg border border-zlato/40 py-2.5 font-display text-xs uppercase tracking-widest text-zlato hover:bg-zlato/10"
         >
           {t("club.bontonOpen")} →
+        </button>
+      </div>
+
+      {/* leksikon — jezik za pairing */}
+      <SectionTitle>{t("club.lexicon")}</SectionTitle>
+      <div className="rounded-xl border border-zlato/25 bg-cedar p-4">
+        <p className="text-sm leading-relaxed text-papir/90">{t("club.lexiconTeaser")}</p>
+        <button
+          type="button"
+          onClick={() => navigate({ page: "club", club: "lexicon" })}
+          className="mt-3 w-full rounded-lg border border-zlato/40 py-2.5 font-display text-xs uppercase tracking-widest text-zlato hover:bg-zlato/10"
+        >
+          {t("club.lexiconOpen")} →
         </button>
       </div>
 
