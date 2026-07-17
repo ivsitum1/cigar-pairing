@@ -27938,7 +27938,7 @@
    "orasasti"
   ],
   "smokeTimeMin": 65,
-  "priceEUR": 14.0,
+  "priceEUR": 17.7,
   "priceApprox": true,
   "priceUrl": null,
   "availabilityHR": [],
@@ -28138,7 +28138,7 @@
    "karamela"
   ],
   "smokeTimeMin": 55,
-  "priceEUR": 10.0,
+  "priceEUR": 9.5,
   "priceApprox": true,
   "priceUrl": null,
   "availabilityHR": [],
@@ -28178,7 +28178,7 @@
    "citrus"
   ],
   "smokeTimeMin": 55,
-  "priceEUR": 11.0,
+  "priceEUR": 12.0,
   "priceApprox": true,
   "priceUrl": null,
   "availabilityHR": [],
@@ -28658,7 +28658,7 @@
    "karamela"
   ],
   "smokeTimeMin": 60,
-  "priceEUR": 17.0,
+  "priceEUR": 22.0,
   "priceApprox": true,
   "priceUrl": null,
   "availabilityHR": [],
@@ -28698,7 +28698,7 @@
    "koza"
   ],
   "smokeTimeMin": 60,
-  "priceEUR": 10.0,
+  "priceEUR": 9.0,
   "priceApprox": true,
   "priceUrl": null,
   "availabilityHR": [],
@@ -28738,7 +28738,7 @@
    "duhan"
   ],
   "smokeTimeMin": 40,
-  "priceEUR": 9.0,
+  "priceEUR": 9.4,
   "priceApprox": true,
   "priceUrl": null,
   "availabilityHR": [],
@@ -28777,7 +28777,7 @@
    "drvo"
   ],
   "smokeTimeMin": 40,
-  "priceEUR": 7.0,
+  "priceEUR": 8.9,
   "priceApprox": true,
   "priceUrl": null,
   "availabilityHR": [],
@@ -28834,6 +28834,46 @@
     "name": "Toro",
     "format": "54 x 152mm",
     "smokeTimeMin": 75,
+    "priceEUR": null,
+    "url": null
+   }
+  ]
+ },
+ {
+  "id": "cig-cavalier-geneve-white-series",
+  "brand": "Cavalier Genève",
+  "line": "White Series",
+  "vitola": "Robusto",
+  "format": "50 x 127mm",
+  "country": "Honduras",
+  "wrapper": "Habano (karamelni)",
+  "strength": 2,
+  "body": 3,
+  "flavorTags": [
+   "kremasto",
+   "citrus",
+   "cedar",
+   "slatko"
+  ],
+  "smokeTimeMin": 55,
+  "priceEUR": 11.0,
+  "priceApprox": true,
+  "priceUrl": null,
+  "availabilityHR": [],
+  "markets": [
+   "EU",
+   "USA",
+   "WW"
+  ],
+  "notes": {
+   "hr": "Švicarski brend s zlatnim rombom utisnutim u wrapper — blaga-srednja mješavina Nikaragve, Paragvaja i Dominikane; limunova korica, cedar i krema.",
+   "en": "The Swiss brand with a genuine gold diamond on the wrapper — a mellow-medium Nicaragua/Paraguay/DR blend; lemon zest, cedar and cream."
+  },
+  "vitolas": [
+   {
+    "name": "Robusto",
+    "format": "50 x 127mm",
+    "smokeTimeMin": 55,
     "priceEUR": null,
     "url": null
    }
