@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import type { Cigar, Drink } from "../types";
 import { useI18n, STYLE_LABELS, ADDITIVE_LABELS, ADDITIVE_RULES } from "../i18n";
-import { brandInfo, cigarMarketLinks, formatPrice } from "../data";
+import { ALL_DRINKS, brandInfo, cigarById, cigarMarketLinks, formatPrice } from "../data";
+import { pairDrinksForCigar } from "../engine/pairing";
 import { vitolaBlurb } from "../lib/vitolaInfo";
 import { Chip, Meter } from "./ui";
 import { BackButton } from "./BackButton";
@@ -257,6 +258,52 @@ function CigarDetails({
       <p className="mt-3 text-sm leading-relaxed text-papir/85">
         {lx(cigar.notes)}
       </p>
+
+      {/* sampler vodic: sastav, kome ce sjesti, pice po cigari (zivi engine) */}
+      {cigar.sampler && (
+        <div className="mt-3 rounded-lg border border-zlato/30 bg-zlato/5 p-3">
+          <div className="font-display text-[11px] uppercase tracking-[0.2em] text-zlato">
+            {t("detail.samplerTitle")}
+          </div>
+          <p className="mt-1 text-xs leading-relaxed text-papir/80">
+            {lx(cigar.sampler.hostNote)}
+          </p>
+          <div className="mt-2 space-y-2">
+            {cigar.sampler.items
+              .map((it) => ({ it, c: cigarById(it.cigarId) }))
+              .filter((x): x is { it: typeof x.it; c: Cigar } => Boolean(x.c))
+              .sort((a, b) => a.c.strength - b.c.strength || a.c.body - b.c.body)
+              .map(({ it, c }) => {
+                const top = pairDrinksForCigar(c, ALL_DRINKS)[0];
+                return (
+                  <div key={it.cigarId} className="rounded-md border border-dim/20 bg-humidor/50 p-2.5">
+                    <div className="flex items-baseline justify-between gap-2">
+                      <span className="min-w-0 truncate text-sm text-papir">
+                        {c.brand} {c.line}
+                      </span>
+                      <span className="shrink-0 text-[11px] text-dim">
+                        {t("common.strength")} {c.strength}/5 · {t("common.body")} {c.body}/5
+                      </span>
+                    </div>
+                    <div className="mt-0.5 text-[11px] leading-snug text-dim/90">
+                      {c.wrapper} · {c.flavorTags.slice(0, 3).join(", ")}
+                    </div>
+                    <div className="mt-1 text-xs leading-snug text-papir/80">
+                      {lx(it.smokerType)}
+                    </div>
+                    {top && (
+                      <div className="mt-1 text-xs text-zlato-2">
+                        ▸ {t("detail.samplerDrink")}: {top.item.name}{" "}
+                        <span className="text-dim">({top.score}%)</span>
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
+          </div>
+        </div>
+      )}
+
       {/* o brendu — kratka povijest odmah u kartici */}
       {brand && (
         <div className="mt-3 rounded-lg border border-dim/20 bg-cedar/60 p-3">

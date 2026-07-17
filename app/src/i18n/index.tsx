@@ -104,6 +104,8 @@ const STRINGS = {
     en: "Estimated profile — flavours inferred from wrapper and brand, not from tasting",
   },
   "common.estimatedShort": { hr: "procijenjeno", en: "estimated" },
+  "detail.samplerTitle": { hr: "Sampler vodič — za svakoga po nešto", en: "Sampler guide — something for everyone" },
+  "detail.samplerDrink": { hr: "Uz čašu", en: "With a glass of" },
   "pair.pickVitola": { hr: "Odaberi vitolu", en: "Pick a vitola" },
   "pair.pickVitolaHint": { hr: "Ova linija ima više formata — odaberi vitolu.", en: "This line has multiple sizes — pick a vitola." },
   "common.vitolas": { hr: "Vitole", en: "Vitolas" },

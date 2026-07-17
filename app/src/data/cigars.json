@@ -767,7 +767,44 @@
    }
   ],
   "priceUrl": "https://humidor.hr/hr/proizvod/aj-fernandez-premium-sampler/",
-  "profileEstimated": true
+  "profileEstimated": true,
+  "sampler": {
+   "hostNote": {
+    "hr": "Sampler je idealan za večer s gostima — raznolikost bez pogađanja: za svakoga po nešto, ovisno o ukusu. Vodič dolje vodi od najblaže prema najjačoj. Sastav pakiranja zna varirati — provjeri popis na kutiji.",
+    "en": "A sampler is ideal for an evening with guests — variety without guesswork: something for everyone. The guide below runs mildest to fullest. Box contents can vary — check the list on the packaging."
+   },
+   "confirmed": false,
+   "items": [
+    {
+     "cigarId": "cig-aj-fernandez-aj-enclave",
+     "smokerType": {
+      "hr": "Za ljubitelja tamnijih, slatkastih dimova.",
+      "en": "For the fan of darker, sweetish smokes."
+     }
+    },
+    {
+     "cigarId": "cig-aj-fernandez-new-world",
+     "smokerType": {
+      "hr": "Za gosta koji voli pun, papren klasik.",
+      "en": "For the guest who likes a full, peppery classic."
+     }
+    },
+    {
+     "cigarId": "cig-aj-fernandez-aj-san-lotano",
+     "smokerType": {
+      "hr": "Za iskusnog pušača — jak i izravan.",
+      "en": "For the experienced smoker — strong and direct."
+     }
+    },
+    {
+     "cigarId": "cig-aj-fernandez-dias-de-gloria",
+     "smokerType": {
+      "hr": "Za svečani trenutak — najbogatiji AJ blend.",
+      "en": "For the festive moment — the richest AJ blend."
+     }
+    }
+   ]
+  }
  },
  {
   "id": "cig-aj-fernandez-aj-san-lotano",
@@ -860,13 +897,6 @@
   ],
   "vitolas": [
    {
-    "name": "Toro",
-    "format": "—",
-    "smokeTimeMin": 45,
-    "priceEUR": 57.5,
-    "url": "https://humidor.hr/hr/proizvod/aj-fernandez-toro-sampler/"
-   },
-   {
     "name": "Toro Sampler",
     "format": "—",
     "smokeTimeMin": 50,
@@ -875,7 +905,51 @@
    }
   ],
   "priceUrl": "https://humidor.hr/hr/proizvod/aj-fernandez-toro-sampler/",
-  "profileEstimated": true
+  "profileEstimated": true,
+  "sampler": {
+   "hostNote": {
+    "hr": "Sampler je idealan za večer s gostima — raznolikost bez pogađanja: za svakoga po nešto, ovisno o ukusu. Vodič dolje vodi od najblaže prema najjačoj.",
+    "en": "A sampler is ideal for an evening with guests — variety without guesswork: something for everyone. The guide below runs mildest to fullest."
+   },
+   "confirmed": true,
+   "items": [
+    {
+     "cigarId": "cig-aj-fernandez-bellas-artes",
+     "smokerType": {
+      "hr": "Za gosta koji voli uglađeno i aromatično — najpristupačniji u kutiji.",
+      "en": "For the guest who likes polished and aromatic — the most approachable in the box."
+     }
+    },
+    {
+     "cigarId": "cig-aj-fernandez-aj-enclave",
+     "smokerType": {
+      "hr": "Za ljubitelja tamnijih, slatkastih dimova uz kavu ili rum.",
+      "en": "For the fan of darker, sweetish smokes with coffee or rum."
+     }
+    },
+    {
+     "cigarId": "cig-aj-fernandez-new-world",
+     "smokerType": {
+      "hr": "Za gosta koji traži puni, papreni klasik — i New World i Puro Especial verzija.",
+      "en": "For the guest after a full, peppery classic — covers both New World and the Puro Especial."
+     }
+    },
+    {
+     "cigarId": "cig-aj-fernandez-aj-san-lotano",
+     "smokerType": {
+      "hr": "Za iskusnog pušača — najjači u kutiji, ostavi ga za kraj večeri.",
+      "en": "For the experienced smoker — the strongest in the box, save it for last."
+     }
+    },
+    {
+     "cigarId": "cig-aj-fernandez-dias-de-gloria",
+     "smokerType": {
+      "hr": "Vrhunac večeri: puno tijelo i bogat finiš za onoga tko želi \"sve\".",
+      "en": "The evening's peak: full body and a rich finish for whoever wants it all."
+     }
+    }
+   ]
+  }
  },
  {
   "id": "cig-aganorsa-aniversario",
@@ -15133,13 +15207,6 @@
   ],
   "vitolas": [
    {
-    "name": "Robusto",
-    "format": "—",
-    "smokeTimeMin": 45,
-    "priceEUR": 99.0,
-    "url": "https://humidor.hr/hr/proizvod/la-galera-robusto-sampler/"
-   },
-   {
     "name": "Robusto Sampler",
     "format": "—",
     "smokeTimeMin": 50,
@@ -15148,7 +15215,44 @@
    }
   ],
   "priceUrl": "https://humidor.hr/hr/proizvod/la-galera-robusto-sampler/",
-  "profileEstimated": true
+  "profileEstimated": true,
+  "sampler": {
+   "hostNote": {
+    "hr": "Sampler je idealan za večer s gostima — raznolikost bez pogađanja: za svakoga po nešto, ovisno o ukusu. Vodič dolje vodi od najblaže prema najjačoj. Sastav pakiranja zna varirati — provjeri popis na kutiji.",
+    "en": "A sampler is ideal for an evening with guests — variety without guesswork: something for everyone. The guide below runs mildest to fullest. Box contents can vary — check the list on the packaging."
+   },
+   "confirmed": false,
+   "items": [
+    {
+     "cigarId": "cig-la-galera-habano-robusto-chaveta-5-x-50",
+     "smokerType": {
+      "hr": "Za gosta koji voli aromatičnu dominikansku klasiku.",
+      "en": "For the guest who likes aromatic Dominican classics."
+     }
+    },
+    {
+     "cigarId": "cig-la-galera-imperial-jade-robusto-5-1-8-x-50",
+     "smokerType": {
+      "hr": "Za znatiželjnog — rijedak Cameroon wrapper.",
+      "en": "For the curious — a rare Cameroon wrapper."
+     }
+    },
+    {
+     "cigarId": "cig-la-galera-1936-box-pressed-robusto-5-x-50",
+     "smokerType": {
+      "hr": "Za ljubitelja box-pressed formata i punijeg tijela.",
+      "en": "For the box-pressed fan and fuller body."
+     }
+    },
+    {
+     "cigarId": "cig-la-galera-maduro-no-1-short-robusto-3-1-4-x-50",
+     "smokerType": {
+      "hr": "Za kratku, tamnu stanku — maduro u malom formatu.",
+      "en": "For a short, dark pause — maduro in a small format."
+     }
+    }
+   ]
+  }
  },
  {
   "id": "cig-la-galera-rojo-gift-pack",
@@ -15191,7 +15295,37 @@
    }
   ],
   "priceUrl": "https://humidor.hr/hr/proizvod/la-galera-rojo-gift-pack/",
-  "profileEstimated": true
+  "profileEstimated": true,
+  "sampler": {
+   "hostNote": {
+    "hr": "Sampler je idealan za večer s gostima — raznolikost bez pogađanja: za svakoga po nešto, ovisno o ukusu. Vodič dolje vodi od najblaže prema najjačoj. Sastav pakiranja zna varirati — provjeri popis na kutiji.",
+    "en": "A sampler is ideal for an evening with guests — variety without guesswork: something for everyone. The guide below runs mildest to fullest. Box contents can vary — check the list on the packaging."
+   },
+   "confirmed": false,
+   "items": [
+    {
+     "cigarId": "cig-la-galera-habano-bonchero-no-4-5-1-2-x-42",
+     "smokerType": {
+      "hr": "Za klasičara — corona format stare škole.",
+      "en": "For the classicist — an old-school corona format."
+     }
+    },
+    {
+     "cigarId": "cig-la-galera-habano-robusto-chaveta-5-x-50",
+     "smokerType": {
+      "hr": "Za standardnu večernju rundu.",
+      "en": "For the standard evening round."
+     }
+    },
+    {
+     "cigarId": "cig-la-galera-1936-box-pressed-torpedo-6-1-8-x-52",
+     "smokerType": {
+      "hr": "Za svečaniji trenutak — torpedo vrh pakiranja.",
+      "en": "For the more festive moment — the torpedo top of the pack."
+     }
+    }
+   ]
+  }
  },
  {
   "id": "cig-la-galera-toro-sampler",
@@ -15226,13 +15360,6 @@
   ],
   "vitolas": [
    {
-    "name": "Toro",
-    "format": "—",
-    "smokeTimeMin": 45,
-    "priceEUR": 115.0,
-    "url": "https://humidor.hr/hr/proizvod/la-galera-toro-sampler/"
-   },
-   {
     "name": "Toro Sampler",
     "format": "—",
     "smokeTimeMin": 50,
@@ -15241,7 +15368,44 @@
    }
   ],
   "priceUrl": "https://humidor.hr/hr/proizvod/la-galera-toro-sampler/",
-  "profileEstimated": true
+  "profileEstimated": true,
+  "sampler": {
+   "hostNote": {
+    "hr": "Sampler je idealan za večer s gostima — raznolikost bez pogađanja: za svakoga po nešto, ovisno o ukusu. Vodič dolje vodi od najblaže prema najjačoj. Sastav pakiranja zna varirati — provjeri popis na kutiji.",
+    "en": "A sampler is ideal for an evening with guests — variety without guesswork: something for everyone. The guide below runs mildest to fullest. Box contents can vary — check the list on the packaging."
+   },
+   "confirmed": false,
+   "items": [
+    {
+     "cigarId": "cig-la-galera-habano-toro-6-x-54",
+     "smokerType": {
+      "hr": "Za dulju večer uz aromatični Habano.",
+      "en": "For a longer evening with the aromatic Habano."
+     }
+    },
+    {
+     "cigarId": "cig-la-galera-maduro-toro-6-x-54",
+     "smokerType": {
+      "hr": "Za ljubitelja kakaa i tamne slatkoće.",
+      "en": "For the cocoa and dark-sweetness lover."
+     }
+    },
+    {
+     "cigarId": "cig-la-galera-anemoi-6-3-8-x-52",
+     "smokerType": {
+      "hr": "Za najjačeg u društvu — puni broadleaf.",
+      "en": "For the strongest in the company — the full broadleaf."
+     }
+    },
+    {
+     "cigarId": "cig-la-galera-eurus-5-1-2-x-48",
+     "smokerType": {
+      "hr": "Za istog karaktera u kraćem izdanju.",
+      "en": "For the same character in a shorter run."
+     }
+    }
+   ]
+  }
  },
  {
   "id": "cig-macanudo-macanudo-extra",
@@ -17293,7 +17457,44 @@
    }
   ],
   "priceUrl": "https://havana-cigar-shop.com/proizvod/nub-sampler-tubos-4/",
-  "profileEstimated": true
+  "profileEstimated": true,
+  "sampler": {
+   "hostNote": {
+    "hr": "Sampler je idealan za večer s gostima — raznolikost bez pogađanja: za svakoga po nešto, ovisno o ukusu. Vodič dolje vodi od najblaže prema najjačoj. Sastav pakiranja zna varirati — provjeri popis na kutiji.",
+    "en": "A sampler is ideal for an evening with guests — variety without guesswork: something for everyone. The guide below runs mildest to fullest. Box contents can vary — check the list on the packaging."
+   },
+   "confirmed": false,
+   "items": [
+    {
+     "cigarId": "cig-nub-connecticut",
+     "smokerType": {
+      "hr": "Za početnika ili jutarnju kavu — kremast i blag.",
+      "en": "For the beginner or the morning coffee — creamy and mild."
+     }
+    },
+    {
+     "cigarId": "cig-nub-cameroon",
+     "smokerType": {
+      "hr": "Za gosta koji voli slatkasti začin bez težine.",
+      "en": "For the guest who likes sweet spice without weight."
+     }
+    },
+    {
+     "cigarId": "cig-nub-sun-grown",
+     "smokerType": {
+      "hr": "Za ljubitelja zemljano-začinskog srednjeg registra.",
+      "en": "For the fan of the earthy-spicy middle register."
+     }
+    },
+    {
+     "cigarId": "cig-nub-maduro",
+     "smokerType": {
+      "hr": "Za desertni kraj — kakao i slatkoća uz tamniji rum.",
+      "en": "For the dessert finish — cocoa and sweetness with a darker rum."
+     }
+    }
+   ]
+  }
  },
  {
   "id": "cig-nub-sun-grown",
@@ -17579,13 +17780,6 @@
   ],
   "vitolas": [
    {
-    "name": "Robusto",
-    "format": "—",
-    "smokeTimeMin": 45,
-    "priceEUR": 83.0,
-    "url": "https://havana-cigar-shop.com/proizvod/oliva-robusto-sampler-5/"
-   },
-   {
     "name": "Robusto Sampler",
     "format": "—",
     "smokeTimeMin": 50,
@@ -17594,7 +17788,44 @@
    }
   ],
   "priceUrl": "https://havana-cigar-shop.com/proizvod/oliva-robusto-sampler-5/",
-  "profileEstimated": true
+  "profileEstimated": true,
+  "sampler": {
+   "hostNote": {
+    "hr": "Sampler je idealan za večer s gostima — raznolikost bez pogađanja: za svakoga po nešto, ovisno o ukusu. Vodič dolje vodi od najblaže prema najjačoj. Sastav pakiranja zna varirati — provjeri popis na kutiji.",
+    "en": "A sampler is ideal for an evening with guests — variety without guesswork: something for everyone. The guide below runs mildest to fullest. Box contents can vary — check the list on the packaging."
+   },
+   "confirmed": false,
+   "items": [
+    {
+     "cigarId": "cig-oliva-connecticut-reserve",
+     "smokerType": {
+      "hr": "Za najblažeg gosta — maslac i orah.",
+      "en": "For the mildest guest — butter and nut."
+     }
+    },
+    {
+     "cigarId": "cig-oliva-serie-g",
+     "smokerType": {
+      "hr": "Za ljubitelja kave i karamele — Cameroon šarm.",
+      "en": "For the coffee-and-caramel lover — Cameroon charm."
+     }
+    },
+    {
+     "cigarId": "cig-oliva-serie-o",
+     "smokerType": {
+      "hr": "Za gosta koji želi nikaragvanski standard — zemlja i začin.",
+      "en": "For the guest wanting the Nicaraguan standard — earth and spice."
+     }
+    },
+    {
+     "cigarId": "cig-oliva-serie-v",
+     "smokerType": {
+      "hr": "Za iskusnijeg — puni, nagrađivani vrh kuće.",
+      "en": "For the more experienced — the full, award-winning top of the house."
+     }
+    }
+   ]
+  }
  },
  {
   "id": "cig-oliva-serie-g",
@@ -18622,7 +18853,44 @@
    }
   ],
   "priceUrl": "https://havana-cigar-shop.com/proizvod/oscar-valladares-sampler-toro-6/",
-  "profileEstimated": true
+  "profileEstimated": true,
+  "sampler": {
+   "hostNote": {
+    "hr": "Sampler je idealan za večer s gostima — raznolikost bez pogađanja: za svakoga po nešto, ovisno o ukusu. Vodič dolje vodi od najblaže prema najjačoj. Sastav pakiranja zna varirati — provjeri popis na kutiji.",
+    "en": "A sampler is ideal for an evening with guests — variety without guesswork: something for everyone. The guide below runs mildest to fullest. Box contents can vary — check the list on the packaging."
+   },
+   "confirmed": false,
+   "items": [
+    {
+     "cigarId": "cig-oscar-valladares-connecticut-robusto-round",
+     "smokerType": {
+      "hr": "Za najblažeg gosta — kremasti Connecticut početak.",
+      "en": "For the mildest guest — a creamy Connecticut start."
+     }
+    },
+    {
+     "cigarId": "cig-oscar-valladares-edition-toro-black",
+     "smokerType": {
+      "hr": "Za gosta koji voli začinski Habano standard.",
+      "en": "For the guest who likes the spicy Habano standard."
+     }
+    },
+    {
+     "cigarId": "cig-oscar-valladares-2012",
+     "smokerType": {
+      "hr": "Za znatiželjnog — slatko-začinski potpis Oscara.",
+      "en": "For the curious — Oscar's sweet-spiced signature."
+     }
+    },
+    {
+     "cigarId": "cig-oscar-valladares-corojo-robusto-round",
+     "smokerType": {
+      "hr": "Za iskusnog pušača — najjači honduraški corojo u kutiji.",
+      "en": "For the experienced smoker — the strongest Honduran corojo in the box."
+     }
+    }
+   ]
+  }
  },
  {
   "id": "cig-paperboy-connecticut",
@@ -28874,6 +29142,46 @@
     "name": "Robusto",
     "format": "50 x 127mm",
     "smokeTimeMin": 55,
+    "priceEUR": null,
+    "url": null
+   }
+  ]
+ },
+ {
+  "id": "cig-aj-fernandez-bellas-artes",
+  "brand": "AJ Fernandez",
+  "line": "Bellas Artes",
+  "vitola": "Toro",
+  "format": "54 x 152mm",
+  "country": "Nikaragva",
+  "wrapper": "Habano Rosado (hibrid)",
+  "strength": 3,
+  "body": 4,
+  "flavorTags": [
+   "karamela",
+   "kakao",
+   "zacini",
+   "orasasti"
+  ],
+  "smokeTimeMin": 65,
+  "priceEUR": 10.0,
+  "priceApprox": true,
+  "priceUrl": null,
+  "availabilityHR": [],
+  "markets": [
+   "EU",
+   "USA",
+   "WW"
+  ],
+  "notes": {
+   "hr": "Bellas Artes — hibridni Habano Rosado wrapper (criollo 98 × corojo 99 × sumatra); karamelno-začinska \"lijepa umjetnost\" kuće.",
+   "en": "Bellas Artes — the hybrid Habano Rosado wrapper (criollo 98 × corojo 99 × sumatra); the house's caramel-spiced \"fine art\"."
+  },
+  "vitolas": [
+   {
+    "name": "Toro",
+    "format": "54 x 152mm",
+    "smokeTimeMin": 65,
     "priceEUR": null,
     "url": null
    }

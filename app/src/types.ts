@@ -59,6 +59,18 @@ export interface Vitola {
   url: string | null; // link na proizvod (humidor.hr)
 }
 
+// stavka sampler pakiranja — referencira cigaru iz kataloga
+export interface SamplerItem {
+  cigarId: string;
+  smokerType: LocalizedText; // kojem tipu pusaca ce sjesti
+}
+
+export interface SamplerInfo {
+  hostNote: LocalizedText; // uvod za domacina (npr. veceri s gostima)
+  confirmed: boolean; // sastav potvrdjen iz shopa; false = tipican sastav kuce
+  items: SamplerItem[];
+}
+
 export interface Cigar {
   id: string;
   brand: string;
@@ -71,6 +83,7 @@ export interface Cigar {
   body: number; // 1-5 (punoca dima)
   flavorTags: string[];
   profileEstimated?: boolean; // profil izveden heuristikom (profile-cigars.py), ne degustacijom
+  sampler?: SamplerInfo; // sampler pakiranje: vodic po stavkama
   smokeTimeMin: number;
   priceEUR: number | null;
   priceApprox?: boolean;
