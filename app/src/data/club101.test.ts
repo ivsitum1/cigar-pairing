@@ -51,6 +51,14 @@ describe("club 101 vodici", () => {
     expect(club101.tracks.tips.length).toBeGreaterThanOrEqual(6);
   });
 
+  it("inicijative G i H imaju gin/kava kut i prosireni predlozak biljeske", () => {
+    expect(club101.tracks.drinks.map((c) => c.id)).toContain("d-gin-pairing");
+    expect(club101.tracks.tips.map((c) => c.id)).toContain("t-coffee-espresso");
+    expect(club101.tracks.tips.find((c) => c.id === "t-notebook")?.body.hr).toContain(
+      "Predložak bilješke",
+    );
+  });
+
   it("lekcije imaju katalog-dubinu (liste tipova / karakteristike)", () => {
     for (const track of TRACKS) {
       for (const card of club101.tracks[track]) {
