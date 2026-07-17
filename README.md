@@ -88,7 +88,9 @@ Kad zatreba sync mobitel ↔ računalo:
 - Online prodaja duhana u HR nije dozvoljena — linkovi na cigare su referentni
   (humidor.hr prikazuje cijene po vitoli; havana-cigar-shop.com ima age-gate).
 - Cijene pića: točni linkovi na allez.hr/ecuga.com gdje postoje (rum, whisky i brandy iz Excel
-  kataloga), inače fallback na pretragu.
+  kataloga), inače fallback na pretragu. **„Gdje kupiti”** prikazuje izravni shop link samo kad
+  URL izgleda kao stranica *tog* proizvoda; inače „Traži online” (fuzzy match kataloga inače
+  često veže krivi SKU ili kategoriju — to je posebno vidljivo u Shopping → Praznine).
 
 ## Whisky indeks (pipeline)
 
