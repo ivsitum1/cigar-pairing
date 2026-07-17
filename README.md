@@ -64,6 +64,15 @@ indeksima rangiranim po kvaliteti za sipping uz cigaru.
   - `scripts/export-indexes.py` — generira `*_Index.xlsx` u root (git-ignorirano)
   - **Redoslijed nakon regeneracije cigara:** `enrich-cigars.py` → `profile-cigars.py`
     → `dedupe-data.py` → `npm test`
+  - **Club** (`src/pages/ClubPage.tsx`) — citat dana, činjenice, kviz, karta zemalja + urednički slojevi (redoslijed na indexu):
+    1. **101** (`club101.json`) — kurikulum: cigare, pića, pribor, savjeti (33 lekcije u 4 trake)
+    2. **Leksikon** (`lexicon.json`) — jezik degustacije i pairing mostova (8 unosa)
+    3. **HR vodič** (`hrGuide.json`) — kupnja i dostupnost u HR (7 poglavlja)
+    4. **Arhetipovi** (`eveningArchetypes.json`) — stilske slike večeri (6 eseja)
+    5. **Bonton** (`bonton.json`) — manire za stol (10 poglavlja; rukopis se ne rewrita u rolloutu)
+    - Rotirajući sadržaj: `club.json` (83 činjenice, 80 kviz pitanja)
+    - **Kupi vs Traži online:** `src/lib/drinkBuyLink.ts` prikazuje **Kupi** samo kad URL izgleda kao stranica *tog* proizvoda (slug↔ime, bez kategorijskih `/katalog/` linkova); inače **Traži online**. Root cause fuzzy matcha u pipelineu dokumentiran u `docs/superpowers/plans/2026-07-17-content-rollout.md` (Task 0 runtime safeguard; Task 1b stroži match kasnije).
+    - **Redoslijed content valova** (kurirane bilješke + `cigarHint` u katalogu): rum MASTER → whisky klasici → fortificirana vina/sherry → brandy/XO i HR vinjak → cigare s `profileEstimated` (vidi brainstorm spec).
 - Deploy: push na `master` → GitHub Actions → GitHub Pages
 
 ## Podaci o kolekciji (imam / probao / ocjene / dnevnik)
