@@ -2650,12 +2650,12 @@
    },
    "a": [
     {
-     "hr": "Najjača nota u čaši",
-     "en": "The loudest note in the glass"
-    },
-    {
      "hr": "Zajednička nota koja povezuje cigaru i piće",
      "en": "A shared note linking cigar and drink"
+    },
+    {
+     "hr": "Najjača nota u čaši",
+     "en": "The loudest note in the glass"
     },
     {
      "hr": "Razlika u cijeni između pića",
@@ -2666,7 +2666,7 @@
      "en": "A bridge between two casks"
     }
    ],
-   "correct": 1,
+   "correct": 0,
    "why": {
     "hr": "Most je često tih (karamela, orah, citrus) — ne mora biti dominantna aroma.",
     "en": "A bridge is often quiet (caramel, nut, citrus) — it need not be the dominant aroma."
@@ -2712,19 +2712,19 @@
      "en": "Smoke before the drink"
     },
     {
-     "hr": "Mirom pića prije prvog dima",
-     "en": "Nosing the drink before the first draw"
-    },
-    {
      "hr": "Kavom prije cigare",
      "en": "Coffee before the cigar"
+    },
+    {
+     "hr": "Mirom pića prije prvog dima",
+     "en": "Nosing the drink before the first draw"
     },
     {
      "hr": "Vodom nakon zadnje trećine",
      "en": "Water after the final third"
     }
    ],
-   "correct": 1,
+   "correct": 2,
    "why": {
     "hr": "Znaš odakle krećeš; druga trećina je često srce mosta.",
     "en": "You know where you start; the second third is often the heart of the bridge."
@@ -2741,19 +2741,19 @@
      "en": "an online cart like drinks"
     },
     {
-     "hr": "u ovlaštenoj fizičkoj trgovini",
-     "en": "in an authorised physical shop"
+     "hr": "bez ikakvih ograničenja",
+     "en": "without any restrictions"
     },
     {
      "hr": "samo na carini",
      "en": "only at customs"
     },
     {
-     "hr": "bez ikakvih ograničenja",
-     "en": "without any restrictions"
+     "hr": "u ovlaštenoj fizičkoj trgovini",
+     "en": "in an authorised physical shop"
     }
    ],
-   "correct": 1,
+   "correct": 3,
    "why": {
     "hr": "Prodaja duhana na daljinu nije kanal na koji se treba oslanjati.",
     "en": "Distance sales of tobacco are not a channel to rely on."
@@ -2766,12 +2766,12 @@
    },
    "a": [
     {
-     "hr": "Proizvod je rasprodan zauvijek",
-     "en": "The product is permanently sold out"
-    },
-    {
      "hr": "Nema pouzdan product URL — pretraži sam",
      "en": "No trusted product URL — search yourself"
+    },
+    {
+     "hr": "Proizvod je rasprodan zauvijek",
+     "en": "The product is permanently sold out"
     },
     {
      "hr": "Kupnja je ilegalna",
@@ -2782,7 +2782,7 @@
      "en": "The price is wrong"
     }
    ],
-   "correct": 1,
+   "correct": 0,
    "why": {
     "hr": "»Kupi« = pouzdan link; inače app ne lažira precizan SKU.",
     "en": "Buy = trusted link; otherwise the app does not fake a precise SKU."
@@ -2828,19 +2828,19 @@
      "en": "coffee boosts nicotine"
     },
     {
-     "hr": "svježina kave i botanika suprotstavlja kremastom dimu",
-     "en": "coffee freshness and botanicals contrast creamy smoke"
-    },
-    {
      "hr": "gin mora biti iz Londona",
      "en": "gin must be from London"
+    },
+    {
+     "hr": "svježina kave i botanika suprotstavlja kremastom dimu",
+     "en": "coffee freshness and botanicals contrast creamy smoke"
     },
     {
      "hr": "kava zamjenjuje humidor",
      "en": "coffee replaces a humidor"
     }
    ],
-   "correct": 1,
+   "correct": 2,
    "why": {
     "hr": "Citrusni i zeleni botanici + blaga kava = most, ne natjecanje.",
     "en": "Citrus and green botanicals + mild coffee = a bridge, not a contest."
@@ -2857,19 +2857,19 @@
      "en": "the first sip before lighting"
     },
     {
-     "hr": "treći akt nakon pairing pića i cigare",
-     "en": "a third act after the pairing drink and cigar"
+     "hr": "zabranjen uz maduro",
+     "en": "forbidden with maduro"
     },
     {
      "hr": "zamjena za vodu tijekom dima",
      "en": "a substitute for water during smoke"
     },
     {
-     "hr": "zabranjen uz maduro",
-     "en": "forbidden with maduro"
+     "hr": "treći akt nakon pairing pića i cigare",
+     "en": "a third act after the pairing drink and cigar"
     }
    ],
-   "correct": 1,
+   "correct": 3,
    "why": {
     "hr": "Tamna čokolada i borovica nose karamel madura — nakon glavnog stola.",
     "en": "Dark chocolate and juniper carry maduro caramel — after the main table."
@@ -2882,12 +2882,12 @@
    },
    "a": [
     {
-     "hr": "Connecticut Shade (krem)",
-     "en": "Connecticut Shade (cream)"
-    },
-    {
      "hr": "Habano wrapperom (začin)",
      "en": "Habano wrapper (spice)"
+    },
+    {
+     "hr": "Connecticut Shade (krem)",
+     "en": "Connecticut Shade (cream)"
     },
     {
      "hr": "Candela (trava)",
@@ -2898,7 +2898,7 @@
      "en": "PX sherry (sweetness)"
     }
    ],
-   "correct": 1,
+   "correct": 0,
    "why": {
     "hr": "Začinska obitelj — kratki gin tonic može most prije jačeg destilata.",
     "en": "The spice family — a short gin and tonic can bridge before a stronger spirit."
