@@ -4,7 +4,7 @@
 import { useSyncExternalStore } from "react";
 
 export type Page = "pairing" | "catalog" | "collection" | "shopping" | "club";
-export type ClubView = "101" | "bonton" | "lexicon" | "hr-guide";
+export type ClubView = "101" | "bonton" | "lexicon" | "hr-guide" | "archetypes";
 
 export interface Route {
   page: Page;
@@ -13,7 +13,7 @@ export interface Route {
 }
 
 const PAGES: readonly string[] = ["pairing", "catalog", "collection", "shopping", "club"];
-const CLUB_VIEWS: readonly string[] = ["101", "bonton", "lexicon", "hr-guide"];
+const CLUB_VIEWS: readonly string[] = ["101", "bonton", "lexicon", "hr-guide", "archetypes"];
 
 export function parseHash(hash: string): Route {
   const parts = hash.replace(/^#\/?/, "").split("/").filter(Boolean);
