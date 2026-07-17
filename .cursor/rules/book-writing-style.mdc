@@ -1,0 +1,69 @@
+---
+description: Writing style rules for the bonton book manuscript (pušački bonton)
+globs: ["docs/bonton/**/*.md"]
+alwaysApply: false
+---
+
+# Pravila pisanja — Mala knjiga pušačkog bontona
+
+Based on **agent-style** (yzhao062/agent-style, CC BY 4.0), adapted for
+Croatian book-manuscript work. Full English reference: `docs/bonton/research/notes/agent-style-RULES.md`.
+
+## Canonical Rules (Strunk & White, Orwell, Pinker, Gopen & Swan)
+
+1. **RULE-01 — Ne pretpostavljaj da čitatelj dijeli tvoje tacitno znanje.**
+   Definiraj pojmove prije nego ih koristiš. Imenuj čitatelja: entuzijast koji tek ulazi u svijet cigara.
+
+2. **RULE-02 — Ne koristi pasiv kad je agens poznat.**
+   "Pepeljaru stavi na stol" umjesto "Pepeljara se stavlja na stol."
+
+3. **RULE-03 — Koristi konkretan, specifičan jezik umjesto apstraktnog.**
+   "Pepeo duljine 2 cm" umjesto "primjerena količina pepela."
+
+4. **RULE-04 — Izostavi suvišne riječi.**
+   "Zarezati" umjesto "izvršiti postupak rezanja."
+
+5. **RULE-05 — Ne koristi umrtvljene metafore i gotove fraze.**
+   Izbjegavaj "revolucionira", "podiže na novu razinu", "paradigma".
+
+6. **RULE-06 — Ne koristi žargon gdje postoji svakodnevna riječ.**
+   "Koristiti" umjesto "aplicirati"; ali stručni pojmovi (vitola, wrapper, binder) ostaju jer nose distinktivno značenje.
+
+7. **RULE-07 — Koristi potvrdni oblik za potvrdne tvrdnje.**
+   "Cigara gori polagano" umjesto "Cigara ne gori brzo."
+
+8. **RULE-08 — Ne preuveličavaj ni ne umanjuj tvrdnje u odnosu na dokaze.**
+   Kalibriraj glagole: "sugerira", "pokazuje", "dokazuje" prema jačini izvora.
+
+9. **RULE-09 — Koordinirane ideje u istoj formi (paralelna struktura).**
+   Popisi s istom gramatičkom strukturom svake stavke.
+
+10. **RULE-10 — Drži povezane riječi zajedno.**
+    Subjekt blizu glagola; omeđivači blizu onoga što omeđuju.
+
+11. **RULE-11 — Novu ili važnu informaciju stavi na kraj rečenice (stress position).**
+
+12. **RULE-12 — Razbij duge rečenice; variraj duljinu.**
+    Razdvoji rečenice dulje od 30 riječi. Miješaj kratke i duge.
+
+## Field-Observed Rules (AI-specifični obrasci)
+
+A. Ne pretvaraj prozu u nabrajanja osim ako sadržaj nije pravi popis.
+B. Ne koristi em dash (—) kao ležernu interpunkciju. Koristi zareze, dvotočke, zagrade.
+C. Ne počinji uzastopne rečenice istom riječju.
+D. Ne pretjeruj s prijelaznim riječima ("Nadalje", "Također", "Štoviše").
+E. Ne završavaj svaki odlomak rečenicom sažetka.
+F. Koristi dosljedne pojmove; ne redefiniraj kratice unutar dokumenta.
+G. Naslovi poglavlja i potpoglavlja u title-case obliku.
+H. **Podupri činjenične tvrdnje citatom ili konkretnim dokazom — nikad handwavy.** (critical)
+I. Preferiraj pune oblike umjesto kontrakcija u formalnoj prozi.
+
+## Knjiga-specifična pravila
+
+- **Jezik:** Hrvatski (HR) kao kanonski tekst. Engleski samo u stručnim pojmovima bez adekvatnog prijevoda.
+- **Ton:** Elegantno neformalan — kao razgovor uz cigaru. Nikad ne zvuči kao AI, nikad ne zvuči kao instrukcija za uporabu.
+- **Epigraf stil:** Po uzoru na klasične britanske knjige bontona — kratka pravila ljubaznosti.
+- **Duljina precepta:** Jedno pravilo = jedna do tri rečenice. Objašnjenje ispod, nikad više od jednog odlomka.
+- **Izvor:** Svako pravilo mora imati atribuciju (historijski izvor, lounge praksa, ili autorovo iskustvo — jasno označeno).
+- **Copyright:** Parafraziraj, ne citiraj doslovno iz izvora pod copyright-om. Gutenberg i PD izvori mogu se citirati.
+- **Escape hatch (Orwell):** "Prekrši bilo koje od ovih pravila prije nego kažeš nešto barbarsko."
