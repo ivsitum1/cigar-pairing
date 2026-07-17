@@ -537,6 +537,50 @@
   {
    "hr": "Kako čitati etiketu brandyja: 1) kategorija (Cognac, Armagnac, Calvados, Brandy de Jerez, vinjak…), 2) dob (VS / VSOP / XO ili godine), 3) cru ili podregija ako je navedena (npr. Grande Champagne, Pays d'Auge, Bas-Armagnac).",
    "en": "How to read a brandy label: 1) category (Cognac, Armagnac, Calvados, Brandy de Jerez, vinjak…), 2) age (VS / VSOP / XO or years), 3) cru or sub-region if stated (e.g. Grande Champagne, Pays d'Auge, Bas-Armagnac)."
+  },
+  {
+   "hr": "»Most« u pairing jeziku označava zajedničku notu koja povezuje cigaru i piće — često tihu (karamela, orah, citrus), ne nužno najjaču aromu u čaši.",
+   "en": "In pairing language, a bridge is the shared note linking cigar and drink — often a quiet one (caramel, nut, citrus), not necessarily the loudest aroma in the glass."
+  },
+  {
+   "hr": "Finish (završetak) je ono što ostane na nepću nakon gutljaja ili zadnjeg dima; dug, suh finish često traži drugu trećinu cigare ili kap vode.",
+   "en": "Finish is what lingers on the palate after a sip or last draw; a long, dry finish often calls for another third of the cigar or a drop of water."
+  },
+  {
+   "hr": "Nos (miris) i nepce (okus) nisu isti organ: miris pića može obećavati slatkoću koju dim zatim zategne taninima ili začinom.",
+   "en": "Nose and palate are not the same: a drink's aroma can promise sweetness that smoke then tightens with tannin or spice."
+  },
+  {
+   "hr": "Degustacijski ritam tripel gutljaja: miris pića prije dima, gutljaj nakon prve trećine, usklađenje u drugoj — zadnja trećina često traži punije piće ili kavu.",
+   "en": "A tasting triple-sip rhythm: nose the drink before smoke, sip after the first third, align in the second — the final third often wants a fuller drink or coffee."
+  },
+  {
+   "hr": "U Hrvatskoj prodaju duhanskih proizvoda na daljinu ne treba smatrati normalnim kanalom — cigare planiraj u ovlaštenoj fizičkoj trgovini.",
+   "en": "In Croatia, distance sales of tobacco products should not be treated as the normal channel — plan to buy cigars in an authorised physical shop."
+  },
+  {
+   "hr": "Specializirane HR trgovine poput allez.hr i ecuga.com nude legalnu online kupnju pića; duhan u appu ostaje referenca i fizička kupnja.",
+   "en": "Specialist Croatian retailers such as allez.hr and ecuga.com offer legal online drinks sales; tobacco in the app remains reference and in-person purchase."
+  },
+  {
+   "hr": "U appu »Kupi« znači pouzdan product URL; »Traži online« znači da link nije dovoljno precizan — cijenu i zalihu uvijek potvrdi na stranici trgovine.",
+   "en": "In the app, Buy means a trusted product URL; Search online means the link is not precise enough — always confirm price and stock on the retailer page."
+  },
+  {
+   "hr": "Don Papa (~29 g/L dodanog šećera) u EU prelazi rum prag od 20 g/L i na etiketi mora biti 'spirit drink', ne 'rum'.",
+   "en": "Don Papa (~29 g/L added sugar) exceeds the EU rum cap of 20 g/L and must be labelled 'spirit drink', not 'rum'."
+  },
+  {
+   "hr": "London Dry gin s citrusnim i zelenim botanicima često pravi most uz laganu cigaru i filter kavu — svježina suprotstavlja kremastom dimu.",
+   "en": "London Dry gin with citrus and green botanicals often bridges a light cigar and filter coffee — freshness against creamy smoke."
+  },
+  {
+   "hr": "Espresso nakon jela s ginom ili Navy Strength ginom klasičan je 'treći akt' — tamna čokolada i borovica nose karamel maduro wrapera.",
+   "en": "Espresso after a meal with gin or Navy Strength gin is a classic 'third act' — dark chocolate and juniper carry maduro wrapper caramel."
+  },
+  {
+   "hr": "Gin botanici poput korijandra i kardamoma dijele začinsku obitelj s Habano wrapperom — kratki gin tonic može poslužiti kao most prije jačeg destilata.",
+   "en": "Gin botanicals such as coriander and cardamom share the spice family with Habano wrappers — a short gin and tonic can bridge before a stronger spirit."
   }
  ],
  "quiz": [
@@ -2597,6 +2641,267 @@
    "why": {
     "hr": "Kategorija govori što piješ; tek onda dob (VS/VSOP/XO) i cru/podregija daju detalj.",
     "en": "Category tells you what you are drinking; only then do age (VS/VSOP/XO) and cru/sub-region add detail."
+   }
+  },
+  {
+   "q": {
+    "hr": "Što u pairing jeziku znači »most«?",
+    "en": "What does 'bridge' mean in pairing language?"
+   },
+   "a": [
+    {
+     "hr": "Najjača nota u čaši",
+     "en": "The loudest note in the glass"
+    },
+    {
+     "hr": "Zajednička nota koja povezuje cigaru i piće",
+     "en": "A shared note linking cigar and drink"
+    },
+    {
+     "hr": "Razlika u cijeni između pića",
+     "en": "The price gap between drinks"
+    },
+    {
+     "hr": "Most između dvije bačve",
+     "en": "A bridge between two casks"
+    }
+   ],
+   "correct": 1,
+   "why": {
+    "hr": "Most je često tih (karamela, orah, citrus) — ne mora biti dominantna aroma.",
+    "en": "A bridge is often quiet (caramel, nut, citrus) — it need not be the dominant aroma."
+   }
+  },
+  {
+   "q": {
+    "hr": "Finish u degustaciji označava…",
+    "en": "In tasting, finish means…"
+   },
+   "a": [
+    {
+     "hr": "Vrijeme paljenja cigare",
+     "en": "Cigar lighting time"
+    },
+    {
+     "hr": "Ono što ostane na nepću nakon gutljaja ili dima",
+     "en": "What lingers on the palate after a sip or draw"
+    },
+    {
+     "hr": "Godinu punjenja boce",
+     "en": "The bottling year"
+    },
+    {
+     "hr": "Zadnji gutljaj večeri",
+     "en": "The last sip of the evening"
+    }
+   ],
+   "correct": 1,
+   "why": {
+    "hr": "Dug, suh finish često traži drugu trećinu ili kap vode.",
+    "en": "A long, dry finish often calls for another third or a drop of water."
+   }
+  },
+  {
+   "q": {
+    "hr": "Degustacijski ritam »miris → gutljaj → dim« najčešće počinje…",
+    "en": "The tasting rhythm 'nose → sip → smoke' usually starts with…"
+   },
+   "a": [
+    {
+     "hr": "Dimom prije pića",
+     "en": "Smoke before the drink"
+    },
+    {
+     "hr": "Mirom pića prije prvog dima",
+     "en": "Nosing the drink before the first draw"
+    },
+    {
+     "hr": "Kavom prije cigare",
+     "en": "Coffee before the cigar"
+    },
+    {
+     "hr": "Vodom nakon zadnje trećine",
+     "en": "Water after the final third"
+    }
+   ],
+   "correct": 1,
+   "why": {
+    "hr": "Znaš odakle krećeš; druga trećina je često srce mosta.",
+    "en": "You know where you start; the second third is often the heart of the bridge."
+   }
+  },
+  {
+   "q": {
+    "hr": "Kupnja cigare u Hrvatskoj normalno je…",
+    "en": "Buying cigars in Croatia is normally…"
+   },
+   "a": [
+    {
+     "hr": "online košarica kao kod pića",
+     "en": "an online cart like drinks"
+    },
+    {
+     "hr": "u ovlaštenoj fizičkoj trgovini",
+     "en": "in an authorised physical shop"
+    },
+    {
+     "hr": "samo na carini",
+     "en": "only at customs"
+    },
+    {
+     "hr": "bez ikakvih ograničenja",
+     "en": "without any restrictions"
+    }
+   ],
+   "correct": 1,
+   "why": {
+    "hr": "Prodaja duhana na daljinu nije kanal na koji se treba oslanjati.",
+    "en": "Distance sales of tobacco are not a channel to rely on."
+   }
+  },
+  {
+   "q": {
+    "hr": "Gumb »Traži online« u appu za piće znači…",
+    "en": "The 'Search online' button in the app for a drink means…"
+   },
+   "a": [
+    {
+     "hr": "Proizvod je rasprodan zauvijek",
+     "en": "The product is permanently sold out"
+    },
+    {
+     "hr": "Nema pouzdan product URL — pretraži sam",
+     "en": "No trusted product URL — search yourself"
+    },
+    {
+     "hr": "Kupnja je ilegalna",
+     "en": "Purchase is illegal"
+    },
+    {
+     "hr": "Cijena je pogrešna",
+     "en": "The price is wrong"
+    }
+   ],
+   "correct": 1,
+   "why": {
+    "hr": "»Kupi« = pouzdan link; inače app ne lažira precizan SKU.",
+    "en": "Buy = trusted link; otherwise the app does not fake a precise SKU."
+   }
+  },
+  {
+   "q": {
+    "hr": "Don Papa u EU zbog šećera na etiketi često nosi oznaku…",
+    "en": "Don Papa in the EU often carries the label… because of sugar"
+   },
+   "a": [
+    {
+     "hr": "rum",
+     "en": "rum"
+    },
+    {
+     "hr": "spirit drink",
+     "en": "spirit drink"
+    },
+    {
+     "hr": "liker",
+     "en": "liqueur"
+    },
+    {
+     "hr": "vinjak",
+     "en": "vinjak"
+    }
+   ],
+   "correct": 1,
+   "why": {
+    "hr": "~29 g/L prelazi EU prag od 20 g/L za naziv 'rum'.",
+    "en": "~29 g/L exceeds the EU 20 g/L cap for the name 'rum'."
+   }
+  },
+  {
+   "q": {
+    "hr": "Filter kava uz laganu cigaru i London Dry gin često radi jer…",
+    "en": "Filter coffee with a light cigar and London Dry gin often works because…"
+   },
+   "a": [
+    {
+     "hr": "kava pojačava nikotin",
+     "en": "coffee boosts nicotine"
+    },
+    {
+     "hr": "svježina kave i botanika suprotstavlja kremastom dimu",
+     "en": "coffee freshness and botanicals contrast creamy smoke"
+    },
+    {
+     "hr": "gin mora biti iz Londona",
+     "en": "gin must be from London"
+    },
+    {
+     "hr": "kava zamjenjuje humidor",
+     "en": "coffee replaces a humidor"
+    }
+   ],
+   "correct": 1,
+   "why": {
+    "hr": "Citrusni i zeleni botanici + blaga kava = most, ne natjecanje.",
+    "en": "Citrus and green botanicals + mild coffee = a bridge, not a contest."
+   }
+  },
+  {
+   "q": {
+    "hr": "Espresso nakon jela s ginom klasično je…",
+    "en": "Espresso after a meal with gin is classically…"
+   },
+   "a": [
+    {
+     "hr": "prvi gutljaj prije paljenja",
+     "en": "the first sip before lighting"
+    },
+    {
+     "hr": "treći akt nakon pairing pića i cigare",
+     "en": "a third act after the pairing drink and cigar"
+    },
+    {
+     "hr": "zamjena za vodu tijekom dima",
+     "en": "a substitute for water during smoke"
+    },
+    {
+     "hr": "zabranjen uz maduro",
+     "en": "forbidden with maduro"
+    }
+   ],
+   "correct": 1,
+   "why": {
+    "hr": "Tamna čokolada i borovica nose karamel madura — nakon glavnog stola.",
+    "en": "Dark chocolate and juniper carry maduro caramel — after the main table."
+   }
+  },
+  {
+   "q": {
+    "hr": "Korijandar u ginu dijeli obitelj nota s…",
+    "en": "Coriander in gin shares a note family with…"
+   },
+   "a": [
+    {
+     "hr": "Connecticut Shade (krem)",
+     "en": "Connecticut Shade (cream)"
+    },
+    {
+     "hr": "Habano wrapperom (začin)",
+     "en": "Habano wrapper (spice)"
+    },
+    {
+     "hr": "Candela (trava)",
+     "en": "Candela (grass)"
+    },
+    {
+     "hr": "PX sherryjem (slatkoća)",
+     "en": "PX sherry (sweetness)"
+    }
+   ],
+   "correct": 1,
+   "why": {
+    "hr": "Začinska obitelj — kratki gin tonic može most prije jačeg destilata.",
+    "en": "The spice family — a short gin and tonic can bridge before a stronger spirit."
    }
   }
  ]
