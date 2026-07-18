@@ -11,3 +11,8 @@ __pycache__/
 
 # agent / SDD working files
 .superpowers/
+
+# NotebookLM full grill dumps → commit on cursor/bonton-book-research-9b19
+# (see docs/bonton/CROSSWALK.md). Keep only README on master.
+docs/bonton/notebooklm-grill/*
+!docs/bonton/notebooklm-grill/README.md

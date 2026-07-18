@@ -77,4 +77,33 @@
 
 ---
 
-*Zadnje ažuriranje inboxa: 2026-07-17. Dodavati bullet po bullet — ne prepisivati kanonski rukopis.*
+---
+
+## NotebookLM grill 2026-07-18 (sažetak)
+
+| Projekt | Dokument | Grana |
+|---------|----------|-------|
+| **App** | [`APP-FROM-NOTEBOOKLM.md`](./APP-FROM-NOTEBOOKLM.md) | `master` |
+| **Knjiga** | `BOOK-FROM-NOTEBOOKLM.md` + `research/notebooklm-grill/` | `cursor/bonton-book-research-9b19` |
+| **Most** | [`CROSSWALK.md`](./CROSSWALK.md) | obje |
+
+**Refresh:** Cigar 101 **56→100**, Drink 101 **51→100**, Family Story **22→99**.
+
+**Lounge precepts (za novo poglavlje / HR adaptacija):**
+- Ne vlaži cap prije *zajedničkog* rezača („stick licker”).
+- Podrži kuću (kupnja / cut fee) — u HR: trgovina ili klub, ne US tip protokol doslovno; na privatnoj terasi vrijedi gostoprimstvo.
+- Dim gore / od lica; telefon kratko ili vani; bez zvučnika.
+- Ne stubati cigar; ne tražiti puff tuđe cigare; savjet samo kad pitaju.
+- BYOB: dijeli što doneseš.
+
+**Piće (Drink/Rum 101):**
+- Glencairn/copita u dimu; voda je alat, ne sramota.
+- Ne čuvaj bocu do „fotokopije” — podijeli zadnju četvrtinu.
+- „Smooth” često signal dodataka — u knjizi oprez s rječnikom (usklađeno s uređivačkom politikom appa).
+- Tequila (reposado/añejo) kao kandidat uz cigar; peat = klasika *ili* clash.
+
+**Pairing kandidati:** body↔intenzitet/ABV; ABV≈46%+ vs puni dim; Maduro↔slatkoća (deklaracija); CT≠doslađeni rum; nic-sick hint (slatko, ne double espresso).
+
+**Vanjski linkovi:** [CigarLounges](https://www.cigarlounges.co/blog/cigar-lounge-etiquette) · [VDG](https://vdg-cigars.com/cigar-lounge-etiquette-the-complete-rules-guide/) · [The Manual](https://www.themanual.com/culture/cigar-etiquette-101/)
+
+*Zadnje ažuriranje inboxa: 2026-07-18. Dodavati bullet po bullet — ne prepisivati kanonski rukopis.*
