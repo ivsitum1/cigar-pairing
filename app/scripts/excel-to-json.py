@@ -18,6 +18,7 @@ from pathlib import Path
 import openpyxl
 
 from serve_shared import find_correction, load_corrections
+from whisky_shared import catalog_entry_tokens, is_bare_category_url, numeric_age_tokens
 
 ROOT = Path(__file__).resolve().parent.parent          # app/
 XLSX = ROOT.parent / "Rum_Kolekcija_Checklist.xlsx"
@@ -192,14 +193,21 @@ def build_catalog_index(wb):
 
 
 def find_catalog_url(name: str, catalog) -> str | None:
-    """Najbolji match po broju zajednickih tokena; prag >= 2."""
+    """Najbolji match po broju zajednickih tokena; prag >= 3, bez kategorijskih URL-ova."""
     tokens = match_tokens(name)
+    age_nums = numeric_age_tokens(name)
     best, best_score = None, 0
     for entry in catalog:
+        url = entry.get("url", "")
+        if is_bare_category_url(url):
+            continue
         score = len(tokens & entry["tokens"])
-        if score > best_score:
-            best, best_score = entry, score
-    return best["url"] if best and best_score >= 2 else None
+        if score <= best_score:
+            continue
+        if age_nums and not age_nums.issubset(catalog_entry_tokens(entry, match_tokens)):
+            continue
+        best, best_score = entry, score
+    return best["url"] if best and best_score >= 3 else None
 
 
 def extract_rums(wb):

@@ -6,7 +6,14 @@ import re
 import unicodedata
 from typing import Any
 
-from whisky_shared import format_price_eur, parse_price_eur, slugify
+from whisky_shared import (
+    catalog_entry_tokens,
+    format_price_eur,
+    is_bare_category_url,
+    numeric_age_tokens,
+    parse_price_eur,
+    slugify,
+)
 
 __all__ = [
     "BRANDY_STOP",
@@ -294,12 +301,19 @@ def cigar_hint_for_style(style: str) -> str:
 
 def find_best_catalog_match(name: str, catalog: list[dict]) -> dict | None:
     tokens = match_tokens(name)
+    age_nums = numeric_age_tokens(name)
     best, best_score = None, 0
     for entry in catalog:
+        url = entry.get("url", "")
+        if is_bare_category_url(url):
+            continue
         score = len(tokens & entry["tokens"])
-        if score > best_score:
-            best, best_score = entry, score
-    return best if best and best_score >= 2 else None
+        if score <= best_score:
+            continue
+        if age_nums and not age_nums.issubset(catalog_entry_tokens(entry, match_tokens)):
+            continue
+        best, best_score = entry, score
+    return best if best and best_score >= 3 else None
 
 
 def catalog_index(entries: list[dict]) -> list[dict]:

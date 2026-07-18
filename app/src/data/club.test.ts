@@ -3,7 +3,7 @@ import club from "./club.json";
 
 describe("klub sadrzaj", () => {
   it("kviz ima 50+ pitanja, svako s 4 odgovora, tocnim indeksom i objasnjenjem", () => {
-    expect(club.quiz.length).toBeGreaterThanOrEqual(50);
+    expect(club.quiz.length).toBeGreaterThanOrEqual(79);
     for (const q of club.quiz) {
       expect(q.a.length, q.q.hr).toBe(4);
       expect(q.correct, q.q.hr).toBeGreaterThanOrEqual(0);
@@ -15,7 +15,7 @@ describe("klub sadrzaj", () => {
   });
 
   it("zanimljivosti: 45+ dvojezicnih", () => {
-    expect(club.facts.length).toBeGreaterThanOrEqual(45);
+    expect(club.facts.length).toBeGreaterThanOrEqual(80);
     for (const f of club.facts) expect(f.hr.length && f.en.length).toBeTruthy();
   });
 

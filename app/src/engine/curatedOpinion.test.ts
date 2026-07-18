@@ -46,9 +46,24 @@ describe("curatedPairingOpinion — tri zone (pohvala / null / upozorenje)", () 
   });
 
   it("nikad ne čita drink.cigarHint", () => {
-    for (const d of ALL_DRINKS.slice(0, 50)) {
-      expect(d.cigarHint == null || d.cigarHint === null).toBe(true);
-    }
+    const cigar = CIGARS.find((c) => /san lotano/i.test(c.line))!;
+    const ranked = pairDrinksForCigar(cigar, ALL_DRINKS);
+    const topRum = ranked.find((r) => r.item.category === "rum")!;
+    const drinkWithoutHint = { ...topRum.item, cigarHint: null };
+    const drinkWithHint = {
+      ...topRum.item,
+      cigarHint: {
+        hr: "SENTINEL HR cigarHint se ne smije pojaviti",
+        en: "SENTINEL EN cigarHint must not appear",
+      },
+    };
+
+    expect(topRum.score).toBeGreaterThanOrEqual(80);
+    const withoutHint = curatedPairingOpinion(cigar, drinkWithoutHint, topRum.reasons, topRum.score);
+    const withHint = curatedPairingOpinion(cigar, drinkWithHint, topRum.reasons, topRum.score);
+
+    expect(withHint).toEqual(withoutHint);
+    expect(withHint?.text.hr).not.toContain("SENTINEL");
   });
 
   it("San Lotano + Eminente (85%) → ima kuriranu poruku s imenima", () => {

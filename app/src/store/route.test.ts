@@ -1,0 +1,14 @@
+import { describe, expect, it } from "vitest";
+import { parseHash, routeToHash } from "./route";
+
+describe("hash route helpers", () => {
+  it("round-trips the HR guide club subroute", () => {
+    expect(parseHash("#/club/hr-guide")).toEqual({ page: "club", club: "hr-guide" });
+    expect(routeToHash({ page: "club", club: "hr-guide" })).toBe("#/club/hr-guide");
+  });
+
+  it("round-trips the evening archetypes club subroute", () => {
+    expect(parseHash("#/club/archetypes")).toEqual({ page: "club", club: "archetypes" });
+    expect(routeToHash({ page: "club", club: "archetypes" })).toBe("#/club/archetypes");
+  });
+});

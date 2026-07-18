@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import type { Cigar, Drink } from "../types";
 import { useI18n, STYLE_LABELS, ADDITIVE_LABELS, ADDITIVE_RULES } from "../i18n";
 import { brandInfo, cigarMarketLinks, formatPrice } from "../data";
+import { drinkBuyLink } from "../lib/drinkBuyLink";
 import { vitolaBlurb } from "../lib/vitolaInfo";
 import { Chip, Meter } from "./ui";
 import { BackButton } from "./BackButton";
@@ -331,35 +332,6 @@ function DrinkDetails({ drink }: { drink: Drink }) {
       <BuyLink href={buy.href} label={buy.label} />
     </>
   );
-}
-
-function drinkBuyLink(drink: Drink): { href: string; label: "buy" | "search" } {
-  const url = drink.priceUrl ?? null;
-  if (!url) {
-    return { href: drinkSearchHref(drink), label: "search" };
-  }
-
-  const shop = (drink.shopHR ?? "").toLowerCase();
-  const isEcuga = url.includes("ecuga.com");
-  const isAllez = url.includes("allez.hr");
-  const shopMatchesDomain =
-    (isEcuga && shop.includes("ecuga")) || (isAllez && shop.includes("allez"));
-
-  // Ako link nije na isti izvor koji se navodi kao HR shop, korisniku je to
-  // praktično "pretraga" (inače cijena i link djeluju kao kontradikcija).
-  if ((isEcuga || isAllez) && !shopMatchesDomain) {
-    return { href: drinkSearchHref(drink), label: "search" };
-  }
-
-  return { href: url, label: "buy" };
-}
-
-function drinkSearchHref(drink: Drink): string {
-  const shop = (drink.shopHR ?? "").trim();
-  const hint =
-    shop && shop.toLowerCase() !== "razno" ? ` ${shop}` : "";
-  const q = `"${drink.name}" cijena kupnja${hint}`;
-  return `https://www.google.com/search?q=${encodeURIComponent(q)}`;
 }
 
 // "Gdje kupiti" — direktan link ili fallback na pretragu

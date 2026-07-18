@@ -8,6 +8,7 @@ import { useI18n, STYLE_LABELS, type StringKey } from "../i18n";
 import { Chip, Meter, ScoreBand, SearchInput, SectionTitle } from "../components/ui";
 import { getItemState, useCollection } from "../store/collection";
 import { DetailSheet } from "../components/DetailSheet";
+import { EveningSessionSheet } from "../components/EveningSessionSheet";
 import { OcrScan } from "../components/OcrScan";
 import { VitolaPicker } from "../components/VitolaPicker";
 import { applyVitola, needsVitolaPick, uniqueVitolas } from "../lib/cigarVitola";
@@ -81,6 +82,8 @@ export function PairingPage() {
   const [detail, setDetail] = useState<
     { kind: "cigar"; item: Cigar } | { kind: "drink"; item: Drink } | null
   >(null);
+  const [sessionOpen, setSessionOpen] = useState(false);
+  const [sessionFlash, setSessionFlash] = useState<string | null>(null);
   const pairingNavVersion = usePairingNavVersion();
   const route = useRoute();
 
@@ -163,6 +166,25 @@ export function PairingPage() {
     const offset = ((cycle["cigars"] ?? 0) * 3) % Math.max(pool.length, 1);
     return { window: pool.slice(offset, offset + 3), total: pool.length };
   }, [mode, selectedDrink, onlyMine, cycle, marketCigars, prefs]);
+
+  // kandidati za večernji zapis: trenutno vidljivi prijedlozi
+  const sessionDrinks: Drink[] = useMemo(() => {
+    if (mode === "drinkToCigar" && selectedDrink) return [selectedDrink];
+    const fromCards =
+      drinkSuggestions?.cards
+        .map((c) => c.result?.item)
+        .filter((d): d is Drink => !!d) ?? [];
+    const coffee = drinkSuggestions?.coffee?.item;
+    return coffee ? [...fromCards, coffee] : fromCards;
+  }, [mode, selectedDrink, drinkSuggestions]);
+
+  const sessionCigars: Cigar[] = useMemo(() => {
+    if (mode === "cigarToDrink" && selectedCigar) return [selectedCigar];
+    return cigarSuggestions?.window.map((r) => r.item) ?? [];
+  }, [mode, selectedCigar, cigarSuggestions]);
+
+  const canLogEvening =
+    selected != null && sessionCigars.length > 0 && sessionDrinks.length > 0;
 
   const reset = () => {
     setSelectedCigar(null);
@@ -586,7 +608,33 @@ export function PairingPage() {
               })}
             </div>
           )}
+
+          {canLogEvening && (
+            <button
+              onClick={() => setSessionOpen(true)}
+              className="mt-4 w-full rounded-lg border border-zlato/40 py-2.5 font-display text-xs uppercase tracking-widest text-zlato hover:bg-zlato/10"
+            >
+              {t("session.log")}
+            </button>
+          )}
+          {sessionFlash && (
+            <p className="mt-2 text-center text-xs text-zlato-2">{sessionFlash}</p>
+          )}
         </>
+      )}
+
+      {sessionOpen && (
+        <EveningSessionSheet
+          cigars={sessionCigars}
+          drinks={sessionDrinks}
+          initialCigarId={sessionCigars[0]?.id}
+          initialDrinkId={sessionDrinks[0]?.id}
+          onClose={() => setSessionOpen(false)}
+          onSaved={() => {
+            setSessionFlash(t("session.saved"));
+            setTimeout(() => setSessionFlash(null), 2500);
+          }}
+        />
       )}
 
       <DetailSheet target={detail} onClose={() => setDetail(null)} />
