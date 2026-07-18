@@ -20,7 +20,7 @@ Bonton nije policija ukusa. To je način da drugi udišu lakše dok ti uživaš.
 ### Temelji
 
 - Pažnja — gledaš tko sjedi pokraj tebe prije nego zapališ.
-- Umjerenost — ritam koji ne greje duhan i ne greje društvo.
+- Umjerenost — ritam koji ne grije duhan i ne grije društvo.
 - Domišljenost — rezač, pepeljara i voda već na stolu, bez improvizacije.
 - Skromnost — tvoja najdraža maduro nije obvezan ispit za gosta.
 
@@ -91,7 +91,7 @@ Gospodin (i dobra družbenica) ne žuri dimom da dokaže snagu. Žuri rijetko �
 
 - Gledaj u oči kad nudiš čašu ili cigaru.
 - Slušaj više nego što predaješ lekciju o XO-u.
-- Ako moraš otići sredinom, ugasi uctivo i zahvali — ne ostavljaj goreći stub kao spomenik.
+- Ako moraš otići sredinom, ugasi učtivo i zahvali — ne ostavljaj goreći stub kao spomenik.
 
 
 ---
@@ -104,7 +104,7 @@ Ono što ostane iza tebe govori glasnije od branda na bandu.
 ### Pepeo
 
 - Pepeljara s utorom — ne šalica za kavu, ne podni rub biljke.
-- Ne treperi; pusti pepeo da padne. Podrži cigar kad treba.
+- Ne treperi; pusti pepeo da padne. Podrži cigaru kad treba.
 - Na kraju: ugasi potpuno, isprazni pepeljaru ako si gost koji ostaje do kraja večeri — ili pitaj domaćina.
 
 ### Miris
