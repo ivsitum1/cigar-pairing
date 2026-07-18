@@ -7,7 +7,7 @@
 
 ## Epigraf
 
-Po uzoru na klasične britanske knjige bontona — kratka pravila ljubaznosti, napisana za stol s cigarom i čašom.
+Po uzoru na klasične britanske knjige bontona — kratka pravila uljudnosti, pisana za stol uz cigaru i čašu.
 
 
 ---
@@ -15,18 +15,18 @@ Po uzoru na klasične britanske knjige bontona — kratka pravila ljubaznosti, n
 ## I. Duh bontona
 
 
-Bonton nije policija ukusa. To je način da drugi udišu lakše dok ti uživaš.
+Bonton nije policija ukusa. Bonton je način da svi za stolom dišu lakše dok ti uživaš.
 
 ### Temelji
 
-- Pažnja — gledaš tko sjedi pokraj tebe prije nego zapališ.
-- Umjerenost — ritam koji ne greje duhan i ne greje društvo.
-- Domišljenost — rezač, pepeljara i voda već na stolu, bez improvizacije.
-- Skromnost — tvoja najdraža maduro nije obvezan ispit za gosta.
+- Pažnja — prije nego što zapališ, pogledaj tko sjedi pokraj tebe.
+- Umjerenost — ritam koji ne pregrijava ni cigaru ni društvo.
+- Promišljenost — rezač, pepeljara i voda već su na stolu, bez improvizacije.
+- Skromnost — tvoja najdraža maduro cigara nije ispit koji gost mora položiti.
 
 ### Zlatno pravilo
 
-- Ako bi gestu primio kao ljubaznost, ponudi je. Ako bi je osjetio kao pritisak, odustani.
+- Ako bi gestu i sam primio kao ljubaznost, ponudi je. Ako bi je osjetio kao pritisak, odustani.
 
 
 ---
@@ -34,19 +34,19 @@ Bonton nije policija ukusa. To je način da drugi udišu lakše dok ti uživaš.
 ## II. Prostor i suglasnost
 
 
-Dim putuje dalje od tvoje dobre namjere. Prostor biraš prije plamena.
+Dim putuje dalje od tvoje dobre namjere. Prostor zato biraj prije plamena.
 
 ### Prije paljenja
 
-- Pitaj — osobito u tuđem domu, na terasi blizu prolaznika, uz djecu ili netipično društvo.
-- Poštuj zabranu i znak — bez pregovora „samo jedan dim”.
-- Odmakni se od hrane koja nije tvoja degustacija — kuhinja, buffet, tuđi desert.
-- Zatvorena soba bez ventilacije traži kraću sesiju ili drugi trenutak.
+- Pitaj — osobito u tuđem domu, na terasi uz prolaznike, u blizini djece ili u društvu koje ne poznaješ dobro.
+- Poštuj zabranu i istaknuti znak — bez cjenkanja oko „samo jednog dima”.
+- Drži se podalje od hrane koja nije dio tvoje degustacije — od kuhinje, švedskog stola, tuđeg deserta.
+- Zatvorena prostorija bez prozračivanja traži kraću cigaru — ili neki drugi trenutak.
 
 ### U društvu
 
-- Jedan „ne, hvala” zatvara temu bez komentara.
-- Ne ispravljanje tuđeg ritma ili izbora pića naglas — savjet tek ako ga traže.
+- Jedno „ne, hvala” zatvara temu; komentar nije potreban.
+- Tuđi ritam i izbor pića ne ispravljaj naglas — savjet daj tek kad ga netko zatraži.
 
 
 ---
@@ -54,24 +54,24 @@ Dim putuje dalje od tvoje dobre namjere. Prostor biraš prije plamena.
 ## III. Nuditi i dijeliti
 
 
-Nuditi cigaru znači nuditi vrijeme — ne samo list.
+Ponuditi cigaru znači ponuditi vrijeme — ne samo duhan.
 
 ### Kako nuditi
 
-- Ponudi izbor: blaga i srednja, ne samo svoju najjaču.
-- Reci otprilike duljinu (30 / 60 / 90 min) da gost zna što prihvaća.
-- Rezač i upaljač idu uz ponudu; gost ne treba tražiti alat.
-- Ako gost odbije, ostavi cigaru mirno — bez nagovaranja.
+- Ponudi izbor: blagu i srednje jaku, a ne samo svoju najjaču.
+- Spomeni koliko otprilike traje (30, 60 ili 90 minuta), da gost zna na što pristaje.
+- Rezač i upaljač idu uz ponudu; gost ne bi smio moliti za pribor.
+- Ako gost odbije, primi to mirno — bez nagovaranja.
 
 ### Što ne raditi
 
-- Ne paliti tuđu cigaru bez pitanja (osim ako su rekli „upali mi”).
-- Ne ocjenjivati naglas tuđi draw ili pepeo.
-- Ne uzimati zadnju iz kutije domaćina bez ponude.
+- Ne pali tuđu cigaru nepitan (osim ako te za to izričito zamole).
+- Ne komentiraj naglas kako tuđa cigara vuče ni kakav joj je pepeo.
+- Posljednju cigaru iz domaćinove kutije ne uzimaj dok ti je sam ne ponudi.
 
 ### Dijeljenje boce
 
-- Prvo natoči gostu. Označi što je u dekanteru. Voda uz stol nije opcija — standard je.
+- Prvo natoči gostu. Reci što je u dekanteru. Voda na stolu nije opcija — ona je standard.
 
 
 ---
@@ -79,19 +79,19 @@ Nuditi cigaru znači nuditi vrijeme — ne samo list.
 ## IV. Tempo i prisutnost
 
 
-Gospodin (i dobra družbenica) ne žuri dimom da dokaže snagu. Žuri rijetko — i samo ako mora otići.
+Gospodin — i svaka dobra družica — ne žuri s dimom da bi dokazao snagu. Žuri se rijetko, i to samo onda kad doista mora otići.
 
 ### Ritam
 
-- Kratka povlačenja, pauze između. Crni vrući pepeo = upozorenje, ne trofej.
-- Razgovor ima prednost pred „još jednim gutljajem dima” dok netko priča.
-- Mobitel licem dolje ili dalje — bonton stoljeća nije scroll.
+- Kratki dimovi, stanke između njih. Vruć, crn pepeo upozorenje je, a ne trofej.
+- Dok netko govori, razgovor ima prednost pred „još jednim dimom”.
+- Mobitel okrenut ekranom prema dolje ili spremljen — bonton se ne mjeri skrolanjem.
 
 ### Prisutnost
 
-- Gledaj u oči kad nudiš čašu ili cigaru.
-- Slušaj više nego što predaješ lekciju o XO-u.
-- Ako moraš otići sredinom, ugasi uctivo i zahvali — ne ostavljaj goreći stub kao spomenik.
+- Pogledaj čovjeka u oči kad mu nudiš čašu ili cigaru.
+- Više slušaj, a manje drži predavanja o XO-u.
+- Ako moraš otići usred cigare, uljudno je ugasi i zahvali se — ne ostavljaj tinjajući ostatak kao spomenik.
 
 
 ---
@@ -99,23 +99,23 @@ Gospodin (i dobra družbenica) ne žuri dimom da dokaže snagu. Žuri rijetko �
 ## V. Pepeo, miris, trag
 
 
-Ono što ostane iza tebe govori glasnije od branda na bandu.
+Ono što ostaviš za sobom govori glasnije od imena na prstenu cigare.
 
 ### Pepeo
 
-- Pepeljara s utorom — ne šalica za kavu, ne podni rub biljke.
-- Ne treperi; pusti pepeo da padne. Podrži cigar kad treba.
-- Na kraju: ugasi potpuno, isprazni pepeljaru ako si gost koji ostaje do kraja večeri — ili pitaj domaćina.
+- Pepeljara s ležištem za cigaru — ne šalica za kavu ni rub tegle s biljkom.
+- Pepeo ne otresaj kao s cigarete; pusti ga da sam padne, a cigaru pridrži kad zatreba.
+- Na kraju cigaru potpuno ugasi. Ako si gost koji ostaje do kraja večeri, isprazni pepeljaru — ili pitaj domaćina.
 
 ### Miris
 
-- Jako peated piće i teški dim u maloj sobi — najavi ili biraj vani.
-- Parfem i cologne u mjeri; nepce drugih također degustira.
-- Odjeća prima dim — u zatvorenom prostoru biraj kraće formate.
+- Jako tresetno piće i gust dim u maloj prostoriji — najavi to unaprijed ili izađi van.
+- Parfem i kolonjska voda s mjerom; večeras kušaju i tuđa nepca.
+- Odjeća upija dim — u zatvorenom prostoru biraj kraće formate.
 
 ### Trag
 
-- Band i celofan ne idu pod stolicu. Upaljač ne ostaje otvoren na vjetru uz papir.
+- Prsten i celofan ne završavaju pod stolicom. Upaljač ne ostavljaj upaljen na vjetru pokraj papira.
 
 
 ---
@@ -123,23 +123,23 @@ Ono što ostane iza tebe govori glasnije od branda na bandu.
 ## VI. Stol: čaša, voda, redoslijed
 
 
-Pairing stol je mali ritual — ne pozornica za egom.
+Stol za pairing mali je ritual — a ne pozornica za ego.
 
 ### Postavljanje
 
 - Čaša primjerena piću (snifter, Glencairn, copita), voda, pepeljara, rezač.
-- Ne grij brandy nad plamenom. Led biraj svjesno, ne iz navike.
-- Natoči umjereno; nadopuni kad gostov čaša padne nisko, bez ispitivanja.
+- Brandy ne grij nad plamenom. Led stavljaj promišljeno, a ne iz navike.
+- Toči umjereno; dolij kad gostova čaša ostane gotovo prazna, bez zapitkivanja.
 
 ### Redoslijed
 
-- Miris pića → gutljaj → dim → gutljaj. Traži most, ne pobjedu.
-- Prvo blže, zatim snažnije — i u cigari i u čaši, kad vodiš večer.
-- Ako gost zaostaje, uspori svoj ritam; ne „vuči” naprijed sam.
+- Pomiriši piće → gutljaj → dim → gutljaj. Traži most, a ne pobjedu.
+- Prvo blaže, zatim jače — i u cigari i u čaši, kad ti vodiš večer.
+- Ako gost zaostaje, uspori i ti; nemoj sam odmicati naprijed.
 
 ### Riječi za stolom
 
-- Pohvala tuđeg izbora je bonton. Uspoređivanje „moje je bolje” nije.
+- Pohvaliti tuđi izbor jest bonton. Natjecati se čije je bolje — nije.
 
 
 ---
@@ -147,25 +147,25 @@ Pairing stol je mali ritual — ne pozornica za egom.
 ## VII. Domaćin i gost
 
 
-Dobar domaćin nudi ljestvicu. Dobar gost zna sići s nje bez srama.
+Dobar domaćin ponudi ljestvicu. Dobar gost zna s nje sići bez srama.
 
 ### Domaćin
 
-- Pitaj za snagu, dimljenost i vrijeme prije nego otvoriš kutiju.
-- Drži blagu i srednju cigaru + pristupačno piće (VSOP, tawny, ne peated bombu na startu).
-- Pokaži gdje je pepeljara i WC — sitnice koje spašavaju večer.
-- Ne forsiraj „još jednu” kad je gost sati sit.
+- Prije nego što otvoriš kutiju, pitaj gosta kakvu snagu, koliko dima i koliko vremena želi.
+- Imaj pri ruci blagu i srednje jaku cigaru te pristupačno piće (VSOP, tawny porto — ne tresetnu bombu za početak).
+- Pokaži gdje su pepeljara i toalet — sitnice koje spašavaju večer.
+- Ne nutkaj „još jednu” kad je gostu bilo dosta.
 
 ### Gost
 
-- Donesi mali dar ako je običaj (bocu, kutiju, ništa pretjerano).
-- Poštuj RH i red u humidoru — ne prekapaj tuđe zalihe.
-- Zahvali konkretno („taj amontillado uz Connecticut…”).
-- Skraćivanje zadnje trećine nije slabost — to je mjera.
+- Ponesi malen dar ako je takav običaj (bocu, kutijicu — ništa pretjerano).
+- Poštuj vlagu i red u humidoru — ne prekapaj po tuđim zalihama.
+- Zahvali konkretno („onaj amontillado uz Connecticut…”).
+- Odložiti cigaru prije zadnje trećine nije slabost — to je mjera.
 
 ### Kad nešto pođe po zlu
 
-- Canoeing, preljev, krivi rez — nasmiješi se, popravi tiho, nastavi razgovor.
+- Cigara gori ukoso, piće se prolilo, rez nije uspio — nasmiješi se, popravi to tiho i nastavi razgovor.
 
 
 ---
@@ -173,24 +173,24 @@ Dobar domaćin nudi ljestvicu. Dobar gost zna sići s nje bez srama.
 ## VIII. Vani i u prolazu
 
 
-Vjetar i prolaznici mijenjaju pravila brže od humidora.
+Na otvorenom pravila diktiraju vjetar i prolaznici — brže nego ijedan humidor.
 
 ### Vani
 
-- Leđa vjetru; dim ne šalji u lica za stolom.
-- Jet torch pažljivo — daleko od kose, salveta, suhog bilja.
-- Putna pepeljara ili limenka; pepeo ne na travnjak restorana.
-- Panatela na vjetru traži zaklon; ne krivi format — prilagodi mjesto.
+- Okreni leđa vjetru; dim ne puštaj u lica ljudi za stolom.
+- S jet upaljačem oprezno — dalje od kose, salveta i suhog raslinja.
+- Nosi džepnu pepeljaru ili limenku; pepeo ne ide na restoranski travnjak.
+- Panatela na vjetru traži zaklon; nemoj kriviti format — promijeni mjesto.
 
 ### U prolazu
 
-- Na ulici: širok luk oko vrata zgrada i redova koji čekaju.
-- U taksiju / autu tuđeg vlasnika — samo uz jasan pristanak.
-- Balkoni iznad tuđih prozora: dim ide gore; biraj sat i smjer.
+- Na ulici širokim lukom zaobiđi ulaze u zgrade i redove ljudi koji čekaju.
+- U taksiju ili tuđem automobilu — samo uz izričit pristanak.
+- Na balkonu misli na prozore iznad sebe: dim se diže. Biraj doba dana i smjer vjetra.
 
 ### Javni prostor
 
-- Gdje je dopušteno pušenje, i dalje vrijedi mjera. Gdje nije — gotovo je.
+- Gdje je pušenje dopušteno, i dalje vrijedi mjera. Gdje nije — nema rasprave.
 
 
 ---
@@ -198,23 +198,23 @@ Vjetar i prolaznici mijenjaju pravila brže od humidora.
 ## IX. Poklon, zahvala, sjećanje
 
 
-Dobar poklon otvara razgovor; ne zatvara ga cijenom.
+Dobar poklon otvara razgovor — ne zatvara ga cijenom.
 
 ### Poklanjanje
 
-- Cigare: nekoliko komada u tubi ili small box — s bilješkom o formatu i snazi.
-- Piće: boca koju bi i sam pio; izbjegavaj „najskuplje bez konteksta”.
-- Pribor: rezač ili čaša koje će koristiti, ne ukras koji skuplja prašinu.
+- Cigare: nekoliko komada u tubosima ili manja kutija, uz bilješku o formatu i snazi.
+- Piće: boca koju bi i sam rado popio; „najskuplje u trgovini” bez konteksta nije kompliment.
+- Pribor: rezač ili čaša koje će netko doista koristiti, a ne ukras koji skuplja prašinu.
 
 ### Zahvala
 
-- Poruka sutradan — kratka, konkretna.
-- Uzvrati pozivom kad možeš; bonton je kružnica, ne račun.
+- Pošalji poruku sutradan — kratku i konkretnu.
+- Uzvrati pozivom kad budeš mogao; bonton je krug, a ne račun.
 
 ### Sjećanje
 
-- Zapiši što je sjelo (vitola, piće, most). Kolekcija u appu služi i tome.
-- Ne razotkrivaj tuđe slabosti za stolom kao anegdotu vani.
+- Zabilježi što je dobro sjelo (vitolu, piće, most). I tome služi Kolekcija u aplikaciji.
+- Tuđa slabost za stolom nije anegdota za prepričavanje drugdje.
 
 
 ---
@@ -222,18 +222,18 @@ Dobar poklon otvara razgovor; ne zatvara ga cijenom.
 ## X. Zadnja riječ
 
 
-Ako zapamtiš samo troje, neka bude ovo.
+Ako ćeš zapamtiti samo tri stvari, neka budu ove.
 
 ### Tri zapovijedi stola
 
 - Pitaj prije plamena.
-- Ostavi prostor — u dimu, u čaši, u razgovoru.
-- Završi čistije nego si zatekao: pepeo, čaša, zahvala.
+- Ostavi prostora — u dimu, u čaši, u razgovoru.
+- Ostavi za sobom urednije nego što si zatekao: pepeo, čašu, zahvalu.
 
 ### Za kraj
 
-- Bonton se uči kao pairing: bilješkom, ponavljanjem, bez glume.
-- Najbolji kompliment nije „znaš pravila” — nego „ugodno mi je bilo s tobom”.
+- Bonton se uči kao i pairing: bilješkama, ponavljanjem, bez glume.
+- Najbolji kompliment nije „znaš pravila”, nego „bilo mi je ugodno s tobom”.
 
 
 ---
@@ -241,29 +241,29 @@ Ako zapamtiš samo troje, neka bude ovo.
 # English reference (app copy)
 
 
-*A short book of smoking manners*
+*A little book of smoking manners*
 
 
 ## Epigraph
 
-In the spirit of classic British etiquette books — short rules of courtesy, written for a table with a cigar and a glass.
+In the spirit of the classic British etiquette books — short rules of courtesy, written for a table with a cigar and a glass.
 
 
 ## I. The spirit of manners
 
 
-Manners are not the police of taste. They are how others can breathe easier while you enjoy yourself.
+Manners are not the taste police. They are what lets everyone at the table breathe easy while you enjoy yourself.
 
 ### Foundations
 
-- Attention — notice who sits beside you before you light up.
-- Moderation — a pace that does not scorch the leaf or the company.
-- Foresight — cutter, ashtray and water already on the table, no improvising.
-- Modesty — your favourite maduro is not an exam for the guest.
+- Attention — see who is sitting beside you before you light up.
+- Moderation — a pace that overheats neither the cigar nor the company.
+- Forethought — cutter, ashtray and water already on the table, no improvising.
+- Modesty — your favourite maduro is not an exam the guest has to pass.
 
 ### Golden rule
 
-- If you would receive the gesture as kindness, offer it. If it would feel like pressure, let it go.
+- If you would receive the gesture as a kindness, offer it. If it would feel like pressure, let it go.
 
 
 ---
@@ -275,15 +275,15 @@ Smoke travels farther than good intentions. Choose the space before the flame.
 
 ### Before lighting
 
-- Ask — especially in someone else's home, on a terrace near passers-by, around children or mixed company.
-- Honour a ban and a sign — no bargaining for 'just one puff'.
-- Keep clear of food that is not your tasting — kitchen, buffet, someone else's dessert.
-- A closed room without ventilation wants a shorter session or another moment.
+- Ask — especially in someone else's home, on a terrace near passers-by, around children or in mixed company.
+- Honour a ban and a posted sign — no bargaining over 'just one puff'.
+- Keep clear of food that is not part of your tasting — the kitchen, the buffet, someone else's dessert.
+- A closed room without ventilation calls for a shorter smoke — or another moment.
 
 ### In company
 
-- One 'no, thank you' closes the subject without commentary.
-- Do not correct another's pace or drink choice aloud — advise only if asked.
+- One 'no, thank you' closes the subject; no commentary needed.
+- Do not correct another's pace or choice of drink aloud — advise only when asked.
 
 
 ---
@@ -291,24 +291,24 @@ Smoke travels farther than good intentions. Choose the space before the flame.
 ## III. Offering and sharing
 
 
-To offer a cigar is to offer time — not only leaf.
+To offer a cigar is to offer time — not just tobacco.
 
 ### How to offer
 
-- Offer a choice: mild and medium, not only your strongest.
-- Name the rough length (30 / 60 / 90 min) so the guest knows what they accept.
-- Cutter and lighter travel with the offer; the guest should not hunt for tools.
-- If declined, leave it be — no coaxing.
+- Offer a choice: a mild and a medium, not only your strongest.
+- Mention roughly how long it lasts (30, 60 or 90 minutes), so the guest knows what they are agreeing to.
+- Cutter and lighter travel with the offer; a guest should never have to ask for tools.
+- If the guest declines, take it calmly — no coaxing.
 
-### What to avoid
+### What not to do
 
-- Lighting another's cigar unasked (unless they said 'light me').
-- Judging their draw or ash out loud.
-- Taking the last from the host's box without an offer.
+- Do not light another person's cigar unasked (unless they expressly invite you to).
+- Do not comment aloud on how their cigar draws or what its ash looks like.
+- Do not take the last cigar from the host's box until it is offered.
 
 ### Sharing a bottle
 
-- Pour for the guest first. Label what is in the decanter. Water at the table is not optional — it is standard.
+- Pour for the guest first. Say what is in the decanter. Water on the table is not an option — it is the standard.
 
 
 ---
@@ -316,19 +316,19 @@ To offer a cigar is to offer time — not only leaf.
 ## IV. Pace and presence
 
 
-A gentleman (and a good companion) does not rush the smoke to prove strength. They hurry rarely — and only when they must leave.
+A gentleman — and any good companion — does not rush the smoke to prove strength. They hurry rarely, and only when they truly have to leave.
 
 ### Pace
 
-- Short draws, pauses between. Black hot ash is a warning, not a trophy.
-- Conversation outranks 'one more puff' while someone is speaking.
-- Phone face-down or away — the manners of the century are not a scroll.
+- Short draws, with pauses in between. Hot black ash is a warning, not a trophy.
+- While someone is speaking, conversation outranks 'one more puff'.
+- Phone face-down or put away — no one's manners were ever improved by scrolling.
 
 ### Presence
 
-- Meet the eye when you offer a glass or a cigar.
-- Listen more than you lecture on XO.
-- If you must leave mid-smoke, extinguish courteously and thank — do not leave a burning stub as a monument.
+- Meet the other person's eyes when you offer a glass or a cigar.
+- Listen more than you lecture about XO.
+- If you must leave mid-cigar, put it out courteously and say thank you — do not leave a smouldering stub behind as a monument.
 
 
 ---
@@ -336,23 +336,23 @@ A gentleman (and a good companion) does not rush the smoke to prove strength. Th
 ## V. Ash, scent, and trace
 
 
-What you leave behind speaks louder than the brand on the band.
+What you leave behind speaks louder than the name on the band.
 
 ### Ash
 
-- A notched ashtray — not a coffee cup, not the rim of a plant pot.
-- Do not tap; let ash fall. Support the cigar when needed.
-- At the end: extinguish fully; empty the tray if you are a guest staying through — or ask the host.
+- An ashtray with a cigar rest — not a coffee cup, not the rim of a plant pot.
+- Do not flick ash as you would from a cigarette; let it fall on its own, and support the cigar when needed.
+- At the end, extinguish the cigar completely. If you are a guest staying for the evening, empty the ashtray — or ask the host.
 
 ### Scent
 
-- Heavy peat and dense smoke in a small room — announce it or take it outside.
-- Perfume and cologne in measure; other palates are tasting too.
-- Clothes hold smoke — in closed rooms prefer shorter formats.
+- A heavily peated drink and dense smoke in a small room — announce it in advance or take it outside.
+- Perfume and cologne in moderation; other palates are tasting tonight too.
+- Clothes absorb smoke — indoors, prefer shorter formats.
 
 ### Trace
 
-- Band and cellophane do not go under the chair. Do not leave a lighter open in the wind near paper.
+- The band and the cellophane do not end up under the chair. Do not leave a lighter burning in the wind next to paper.
 
 
 ---
@@ -360,23 +360,23 @@ What you leave behind speaks louder than the brand on the band.
 ## VI. The table: glass, water, order
 
 
-A pairing table is a small ritual — not a stage for ego.
+A pairing table is a small ritual — not a stage for the ego.
 
 ### Setting
 
-- A glass fit for the drink (snifter, Glencairn, copita), water, ashtray, cutter.
-- Do not warm brandy over a flame. Choose ice deliberately, not by habit.
-- Pour modestly; top up when the guest's glass runs low, without interrogation.
+- A glass suited to the drink (snifter, Glencairn, copita), water, an ashtray, a cutter.
+- Do not warm brandy over a flame. Use ice deliberately, not out of habit.
+- Pour modestly; top up when the guest's glass is nearly empty, without interrogation.
 
 ### Order
 
 - Nose the drink → sip → smoke → sip. Look for a bridge, not a victory.
-- Milder first, then stronger — in both cigar and glass when you lead the evening.
-- If a guest lags, slow your pace; do not pull ahead alone.
+- Milder first, then stronger — in the cigar and in the glass alike, when you are leading the evening.
+- If a guest falls behind, slow down too; do not pull ahead on your own.
 
 ### Words at the table
 
-- Praising another's choice is manners. Ranking 'mine is better' is not.
+- Praising another's choice is good manners. Competing over whose is better is not.
 
 
 ---
@@ -388,21 +388,21 @@ A good host offers a ladder. A good guest knows how to step off it without shame
 
 ### Host
 
-- Ask about strength, smoke and time before you open the box.
-- Keep a mild and a medium cigar + an approachable drink (VSOP, tawny — not a peat bomb at the start).
+- Before you open the box, ask the guest what strength, how much smoke and how much time they want.
+- Keep a mild and a medium cigar on hand, plus an approachable drink (VSOP, tawny port — not a peat bomb to start).
 - Show where the ashtray and the washroom are — small things that save an evening.
-- Do not force 'one more' when the guest is full.
+- Do not press 'one more' on a guest who has had enough.
 
 ### Guest
 
-- Bring a small gift if custom invites it (a bottle, a box — nothing excessive).
-- Respect RH and order in the humidor — do not rummage the host's stock.
-- Thank specifically ('that amontillado with the Connecticut…').
-- Shortening the final third is not weakness — it is measure.
+- Bring a small gift if custom invites it (a bottle, a small box — nothing excessive).
+- Respect the humidity and the order in the humidor — do not rummage through the host's stock.
+- Say thank you in specifics ('that amontillado with the Connecticut…').
+- Setting a cigar down before the final third is not weakness — it is measure.
 
 ### When something goes wrong
 
-- Canoeing, a spill, a bad cut — smile, fix it quietly, keep the conversation.
+- A cigar burning crooked, a spilled drink, a failed cut — smile, fix it quietly and keep the conversation going.
 
 
 ---
@@ -410,24 +410,24 @@ A good host offers a ladder. A good guest knows how to step off it without shame
 ## VIII. Outdoors and in passing
 
 
-Wind and passers-by change the rules faster than a humidor.
+Outdoors, the rules are set by the wind and the passers-by — faster than any humidor.
 
 ### Outdoors
 
-- Back to the wind; do not send smoke into faces at the table.
-- Jet torch carefully — clear of hair, napkins, dry plants.
-- Travel ashtray or tin; ash not on the restaurant lawn.
-- A panatela in wind wants shelter; do not blame the format — adjust the place.
+- Keep your back to the wind; do not send smoke into the faces at the table.
+- Be careful with a jet torch — away from hair, napkins and dry plants.
+- Carry a travel ashtray or a tin; ash does not belong on the restaurant lawn.
+- A panatela in the wind needs shelter; do not blame the format — change the spot.
 
 ### In passing
 
-- On the street: a wide berth from doorways and waiting queues.
-- In a taxi / someone else's car — only with clear consent.
-- Balconies above others' windows: smoke rises; choose hour and direction.
+- On the street, give doorways and waiting queues a wide berth.
+- In a taxi or someone else's car — only with clear consent.
+- On a balcony, think of the windows above you: smoke rises. Choose your hour and the wind's direction.
 
 ### Public space
 
-- Where smoking is allowed, measure still applies. Where it is not — it is finished.
+- Where smoking is allowed, moderation still applies. Where it is not — there is nothing to discuss.
 
 
 ---
@@ -435,23 +435,23 @@ Wind and passers-by change the rules faster than a humidor.
 ## IX. Gift, thanks, remembrance
 
 
-A good gift opens conversation; it does not close it with a price tag.
+A good gift opens a conversation — it does not close it with a price tag.
 
 ### Giving
 
-- Cigars: a few in tubes or a small box — with a note on format and strength.
-- Drink: a bottle you would drink yourself; avoid 'most expensive without context'.
-- Tools: a cutter or glass they will use, not decor that gathers dust.
+- Cigars: a few in tubes or a small box, with a note on format and strength.
+- Drink: a bottle you would happily drink yourself; 'the most expensive in the shop' without context is not a compliment.
+- Accessories: a cutter or a glass they will actually use, not an ornament that gathers dust.
 
 ### Thanks
 
-- A message the next day — short, specific.
+- Send a message the next day — short and specific.
 - Return the invitation when you can; manners are a circle, not an invoice.
 
 ### Remembrance
 
-- Note what worked (vitola, drink, bridge). The app Collection serves that too.
-- Do not retell another's table weakness as an anecdote outside.
+- Note down what worked (the vitola, the drink, the bridge). The Collection in the app serves that too.
+- Another person's weak moment at the table is not an anecdote to retell elsewhere.
 
 
 ---
@@ -461,17 +461,16 @@ A good gift opens conversation; it does not close it with a price tag.
 
 If you remember only three things, let them be these.
 
-### Three table commandments
+### Three commandments of the table
 
 - Ask before the flame.
-- Leave room — in the smoke, in the glass, in the talk.
-- Leave cleaner than you found it: ash, glass, thanks.
+- Leave room — in the smoke, in the glass, in the conversation.
+- Leave things tidier than you found them: the ash, the glass, the thanks.
 
 ### Closing
 
-- Manners are learned like pairing: by notes, by repetition, without theatre.
-- The best compliment is not 'you know the rules' — it is 'I was at ease with you'.
+- Manners are learned the way pairing is: through notes, through repetition, without theatre.
+- The best compliment is not 'you know the rules' — it is 'I felt at ease with you'.
 
 
 ---
-
