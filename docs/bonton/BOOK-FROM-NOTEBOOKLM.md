@@ -12,18 +12,19 @@
 
 ## 1. Stanje korpusa
 
-| Bilježnica | Izvora (refresh) | Dump |
+| Bilježnica | Izvora (refresh) | Dump (mapa: `answer.md` + `sources-NN.md`) |
 |------------|-----------------:|------|
-| Cigar 101 | 100 | `2707d3fe-cigar-101-refresh-2026-07-18.md` (+ stariji discovery) |
-| Drink 101 | 100 | `e4921359-drink-101-refresh-2026-07-18.md` |
-| Family Story | 99 | `7d62a4d2-cigar-family-refresh-2026-07-18.md` |
-| Rum 101 | ~40+ | `18ea7df7-rum-101-discovery.md` |
+| Cigar 101 | 100 | `2707d3fe-cigar-101-refresh-2026-07-18/` (+ `…-discovery/`) |
+| Drink 101 | 100 | `e4921359-drink-101-refresh-2026-07-18/` |
+| Family Story | 99 | `7d62a4d2-cigar-family-refresh-2026-07-18/` |
+| Rum 101 | ~40+ | `18ea7df7-rum-101-discovery/` |
 | Black Gold | 47 | (u SYNTHESIS; dump ako treba re-export) |
-| Holt's | 61 | `5b8ae55e-holts-discovery.md` |
-| Value / old school | 28 | `c4044fbd-discovery.md` |
-| Oliva / heritage | 99 | `5d9870a0-discovery.md` |
+| Holt's | 61 | `5b8ae55e-holts-discovery/` |
+| Value / old school | 28 | `c4044fbd-discovery/` |
+| Oliva / heritage | 99 | `5d9870a0-discovery/` |
 
-Delta refresh: `REFRESH-DELTA-2026-07-18.md` · prva sinteza: `SYNTHESIS-2026-07-18.md`
+Delta refresh: `REFRESH-DELTA-2026-07-18.md` · prva sinteza: `SYNTHESIS-2026-07-18.md`  
+Monoliti su razbijeni skriptom `_split_dumps.py` (max ~18 KB po datoteci).
 
 ---
 

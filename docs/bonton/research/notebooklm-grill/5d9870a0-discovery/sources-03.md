@@ -1,0 +1,19 @@
+# Sources (part 3/3)
+
+Parent: `5d9870a0-discovery/answer.md`
+
+Sources:
+
+[123] Top 10 Documentaries About Cigars | by All Things Cigars - Medium — "CrazyEgg 6 Learn more about this provideropens in a new window _ce.clock_data Collects data on the user's navigation and behavior on the website. This is used to compile statistical reports and heatmaps for the website owner. Maximum Stora…"
+[124] Achieving the Ideal Cigar Humidor Temperature: Key to Perfect Puffing - Uboze Appliances — "Setting Up and Maintaining a Cigar Humidor Humidor Setup Techniques Managing Temperature Fluctuations Seasonal Considerations: Adjusting Temperature and Humidity Expert Insights and Recommendations Importance of Temperature Control Recomme…"
+[127] A Tale of 2 Cigar Families — "Setting Up and Maintaining a Cigar Humidor Humidor Setup Techniques Managing Temperature Fluctuations Seasonal Considerations: Adjusting Temperature and Humidity Expert Insights and Recommendations Importance of Temperature Control Recomme…"
+[128] Best Handmade Cigars Online | Cigars.com — "All Accessories Cigar Cutters Cigar Cases Cigar Lighters Butane Cigar Humidors Cigar Humidifying Devices Cigar Ashtrays Cigar Odor Eliminator Gifts Gifts Father's Day Gift Guide Gift Cards Wedding & Groomsmen Gifts Birthday Gifts It's a Bo…"
+[129] Humidity & Storage Mastery: The Guide to Keeping Your Cigars Alive - Robert Graham 1874 — "Browse Our Full Range of Boveda Products → Share this A Gift For You The perfect present: Give the gift of exploration, flavour and luxury. Buy A GIFT CARD Subscribe to our newsletter Stay up to date NEW CUSTOMER EXCLUSIVE 5% OFF YOUR NEXT…"
+[130] Cigar Sizes Explained Vitola Guide: Robusto vs Toro vs Churchill etc — "Pairing cigars with drinks and occasions is an art that makes both more enjoyable. Different sizes and shapes of cigars match well with various drinks and settings. This creates a better experience for those who love cigars. When pairing c…"
+[133] 127 Years in Business - J.C. Newman Cigar Co. — "Longtime friend Carlos Fuente, Sr. called Stanford to ask if he would be interested in making cigars for him in Tampa so that he could focus on his Dominican cigar factory. Stanford agreed but asked Carlos if he would make cigars for the N…"
+[140] A History and Tour of Romeo y Julieta Cigars - Smoke Inn Blog — "© Copyright 2026 Smoke Inn Cigars, All Rights Reserved wpDiscuz Insert"
+[141] Cutting and Lighting | Cigar Aficionado — "Then, raise the unlit end of the cigar to your mouth and take the first puff. The question is, which way to puff? Many aficionados blow the first puff out through the cigar in order to avoid unsavory flavors such as sulfur from matches or…"
+[143] A History and Tour of Romeo y Julieta Cigars - Smoke Inn Blog — "I'm sure everyone was spellbound watching the Spurs vs Knicks Finals. I couldn't believe how … 0 0 votes Article Rating Subscribe Login Notify of new follow-up comments new replies to my comments › Label {} [+] Name* Email* Website [-] com…"
+[146] Rolling By the Book | Cigar Aficionado — "I'm sure everyone was spellbound watching the Spurs vs Knicks Finals. I couldn't believe how … 0 0 votes Article Rating Subscribe Login Notify of new follow-up comments new replies to my comments › Label {} [+] Name* Email* Website [-] com…"
+[147] Humidity & Storage Mastery: The Guide to Keeping Your Cigars Alive - Robert Graham 1874 — "I'm sure everyone was spellbound watching the Spurs vs Knicks Finals. I couldn't believe how … 0 0 votes Article Rating Subscribe Login Notify of new follow-up comments new replies to my comments › Label {} [+] Name* Email* Website [-] com…"
+[148] Toro vs Robusto Cigars: Size, Burn & Flavor Comparison Guide — "Cigar Strength = The internal tobacco blend properties Flavor Intensity = The physical burn rate + your mouth's distance from the ember Which One Is Better for Beginners? Robusto cigars are typically recommended for beginners because they…"

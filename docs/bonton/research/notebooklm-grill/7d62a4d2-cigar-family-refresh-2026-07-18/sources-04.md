@@ -1,0 +1,17 @@
+# Sources (part 4/4)
+
+Parent: `7d62a4d2-cigar-family-refresh-2026-07-18/answer.md`
+
+Sources:
+
+[179] Shop Talk: Whiskey & Cigar Pairing at The Cigar Box Douglasville — "good people welcome back Listen I know you guys have noticed my backdrops a little different than my patio Well today I decided to take the show on the road and visit my guy Greg down here at the Cigar Box in Douglasville and he's brought…"
+[180] Shop Talk: Whiskey & Cigar Pairing at The Cigar Box Douglasville — "good people welcome back Listen I know you guys have noticed my backdrops a little different than my patio Well today I decided to take the show on the road and visit my guy Greg down here at the Cigar Box in Douglasville and he's brought…"
+[181] Cigar Real Talk Episode #3: Introducing William Marante of La Aurora Cigars — "good people welcome back Listen I know you guys have noticed my backdrops a little different than my patio Well today I decided to take the show on the road and visit my guy Greg down here at the Cigar Box in Douglasville and he's brought…"
+[182] What's In A Brand Name? - Cigar Aficionado — "Share [](https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.cigaraficionado.com/article/what-s-in-a-brand-name&text=What’s In A Brand Name?) [](mailto:?subject=What’s In A Brand Name?&body=https%3A%2F%2Fwww.cigaraficionado.com/article/…"
+[183] Behind the Smoke: A Real Conversation with a Cigar Rep — "yo welcome welcome good people welcome back for another installment of the Cigar Life Banks YouTube channel podcast i don't know what you call it just just me talking i'm trying not to do it i'm going to stay monetized this week y'all list…"
+[184] Shop Talk: Whiskey & Cigar Pairing at The Cigar Box Douglasville — "yo welcome welcome good people welcome back for another installment of the Cigar Life Banks YouTube channel podcast i don't know what you call it just just me talking i'm trying not to do it i'm going to stay monetized this week y'all list…"
+[185] Shop Talk: Whiskey & Cigar Pairing at The Cigar Box Douglasville — "yo welcome welcome good people welcome back for another installment of the Cigar Life Banks YouTube channel podcast i don't know what you call it just just me talking i'm trying not to do it i'm going to stay monetized this week y'all list…"
+[186] Shop Talk: Whiskey & Cigar Pairing at The Cigar Box Douglasville — "good people welcome back Listen I know you guys have noticed my backdrops a little different than my patio Well today I decided to take the show on the road and visit my guy Greg down here at the Cigar Box in Douglasville and he's brought…"
+[187] Shop Talk: Whiskey & Cigar Pairing at The Cigar Box Douglasville — "good people welcome back Listen I know you guys have noticed my backdrops a little different than my patio Well today I decided to take the show on the road and visit my guy Greg down here at the Cigar Box in Douglasville and he's brought…"
+[188] Chataeu Diadem at Davidoff of London - Emily, Edward and Eddie Sahakian. — "good evening cigar lovers here we are David off of London with a very special guest it's not every day you get not two but three Sahakians having a cigar emily welcome to our shop what an honor to have you here of course you're my dear cou…"
+[189] Chataeu Diadem at Davidoff of London - Emily, Edward and Eddie Sahakian. — "good evening cigar lovers here we are David off of London with a very special guest it's not every day you get not two but three Sahakians having a cigar emily welcome to our shop what an honor to have you here of course you're my dear cou…"

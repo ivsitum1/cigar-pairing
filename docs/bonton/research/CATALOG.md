@@ -20,7 +20,7 @@ _Generated: 2026-07-16_
 
 ## NotebookLM (2026-07-18)
 
-Puni MCP dumpovi: `notebooklm-grill/`. Sinteze:
+Puni MCP dumpovi: `notebooklm-grill/<slug>/` (`answer.md` + `sources-NN.md`). Sinteze:
 
 - `notebooklm-grill/SYNTHESIS-2026-07-18.md` — prvi val (8 bilježnica)
 - `notebooklm-grill/REFRESH-DELTA-2026-07-18.md` — Cigar 101 / Drink 101 / Family Story

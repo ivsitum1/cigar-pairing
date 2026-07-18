@@ -19,7 +19,7 @@
 | `30d6a797-…` | **Black Gold / rum tasting** | 47 | Hosting degustacije, redoslijed, čišćenje nepca, swirl kontroverza |
 | `5d9870a0-…` | **Oliva / heritage** | 99 | Povijest, zanati, klubovi/fabrike — Club 101 / arhetipovi, manje bonton |
 
-Sirovi discovery MD: `docs/bonton/notebooklm-grill/*-discovery.md`.
+Sirovi dumpovi (razbijeni): `docs/bonton/research/notebooklm-grill/<slug>/answer.md` + `sources-NN.md`.
 
 ---
 
