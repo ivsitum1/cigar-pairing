@@ -16,13 +16,25 @@ _Generated: 2026-07-16_
 | Wikipedia pages | 14 |
 | Curated web sources | 20 |
 | Text extracts on disk | 51 |
+| NotebookLM grill dumps (2026-07-18) | 8 notebooks; Cigar/Drink/Family refreshed to ~100 sources each |
+
+## NotebookLM (2026-07-18)
+
+Puni MCP dumpovi: `notebooklm-grill/`. Sinteze:
+
+- `notebooklm-grill/SYNTHESIS-2026-07-18.md` — prvi val (8 bilježnica)
+- `notebooklm-grill/REFRESH-DELTA-2026-07-18.md` — Cigar 101 / Drink 101 / Family Story
+- `../BOOK-FROM-NOTEBOOKLM.md` — poglavlja, vinjete, što ne stavljati u knjigu
+- `../APP-FROM-NOTEBOOKLM.md` — Club / `bonton.json` / pairing (master sync)
 
 ## How to use
 
 1. Browse `sources/*.json` for bibliographic leads (DOI, IA identifier, Gutenberg id).
 2. Read `extracts/*.md` for captured text (public-domain books, wiki, web articles).
-3. Draft from `../mala-knjiga-pusackog-bontona.md`; cite sources by URL/DOI.
-4. Copyrighted works (e.g. Bridges) are listed for reference only — paraphrase form, do not copy.
+3. Read `notebooklm-grill/*-refresh*.md` for contemporary lounge / pairing / family material.
+4. Draft from `../mala-knjiga-pusackog-bontona.md` + `../BOOK-FROM-NOTEBOOKLM.md`; cite sources by URL/DOI.
+5. Copyrighted works (e.g. Bridges) are listed for reference only — paraphrase form, do not copy.
+6. When a chapter is stable, port original HR/EN into `app/src/data/bonton.json` on **`master`** (not this research folder).
 
 ## Thematic buckets for the book
 

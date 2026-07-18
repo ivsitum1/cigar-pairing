@@ -10,13 +10,20 @@ This branch collects source material for *Mala knjiga pušačkog bontona* / a lo
 ```
 docs/bonton/
   mala-knjiga-pusackog-bontona.md   # working manuscript (from app)
+  BOOK-FROM-NOTEBOOKLM.md          # knjižna sinteza grill 2026-07-18
+  APP-FROM-NOTEBOOKLM.md           # isti grill → Club/pairing (i na master)
+  CROSSWALK.md                     # most knjiga ↔ app
   research/
     README.md                       # this file
     CATALOG.md                      # master index of sources
     notes/                          # thematic synthesis notes
     sources/                        # bibliographic records (JSON/MD)
     extracts/                       # downloaded / extracted text
+    notebooklm-grill/               # MCP dumpovi (8 bilježnica + refresh)
 ```
+
+**App na `master`:** lean backlog u `docs/bonton/APP-FROM-NOTEBOOKLM.md` — bez teških dumpova.  
+Lokalni worktree: `git worktree add ../cigar-pairing-book cursor/bonton-book-research-9b19`
 
 ## Method
 
