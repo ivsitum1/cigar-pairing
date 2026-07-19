@@ -56,6 +56,9 @@ export interface Drink {
   cigarHint?: LocalizedText | null;
   priceUrl?: string | null; // izvor cijene / gdje kupiti
   notes: LocalizedText;
+  // Za unose koji predstavljaju seriju/raspon (npr. Foursquare ECS), a ne
+  // jednu bocu: popis izdanja koji se prikaze kad se detalj otvori.
+  lineup?: string[];
 }
 
 export interface Vitola {

@@ -2,7 +2,7 @@
  {
   "id": "rum-foursquare-ecs-detente-2005",
   "category": "rum",
-  "name": "Foursquare ECS / Detente / 2005",
+  "name": "Foursquare ECS (Exceptional Cask Selection)",
   "style": "barbados",
   "region": "Barbados",
   "body": 3,
@@ -23,7 +23,7 @@
    "min": 163,
    "max": 304
   },
-  "shopHR": "allez.hr (ECS/Detente)",
+  "shopHR": "razno",
   "status": "META",
   "pairable": true,
   "serving": {
@@ -38,11 +38,27 @@
    "hr": "Most prema cigari je suhi hrast i suho voće; kontrast radi s kremastim ili orašastim dimom.",
    "en": "The bridge to a cigar is dry oak and dried fruit; the contrast works with creamy or nutty smoke."
   },
-  "priceUrl": "https://allez.hr/shop/svi-proizvodi/foursquare-10-yo-detente-single-blended-rum-51-vol-07l",
+  "priceUrl": null,
   "notes": {
-   "hr": "Barbados single blended rum u suhom Foursquare profilu nosi hrast, suho voće i mirnu vaniliju. U čaši očekuj srednje tijelo, čist završetak i malo vode ako želiš otvoriti začine.",
-   "en": "A dry Barbados single blended rum in the Foursquare profile, carrying oak, dried fruit and calm vanilla. In the glass expect medium body, a clean finish and a little water if you want the spice to open."
-  }
+   "hr": "Foursquare ECS (Exceptional Cask Selection) je serija numeriranih izdanja s Barbadosa u prepoznatljivom suhom stilu: hrast, suho voće i mirna vanilija bez dodane slatkoce. Izdanja se razlikuju po starosti, bacvi i jakosti, ali dijele isti potpis. Popis boca je nize; svaka se trazi zasebno po imenu izdanja.",
+   "en": "Foursquare ECS (Exceptional Cask Selection) is a series of numbered Barbados releases in the house dry style: oak, dried fruit and calm vanilla with no added sugar. Releases differ by age, cask and strength but share one signature. The bottle list is below; search each by its release name."
+  },
+  "lineup": [
+   "Criterion",
+   "Zinfandel Cask Blend",
+   "Dominus",
+   "Empery",
+   "Premise",
+   "Sagacity",
+   "Nobiliary",
+   "Patrimony",
+   "Detente",
+   "Sovereignty",
+   "Covenant",
+   "Redoubtable",
+   "Plenipotenziario",
+   "Vintage 2004 / 2005 / 2006 / 2007 / 2008"
+  ]
  },
  {
   "id": "rum-foursquare-sovereignty-covenant-ecs",

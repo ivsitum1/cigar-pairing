@@ -329,6 +329,20 @@ function DrinkDetails({ drink }: { drink: Drink }) {
           {lx(drink.notes)}
         </p>
       )}
+      {drink.lineup && drink.lineup.length > 0 && (
+        <div className="mt-3 rounded-lg border border-dim/20 bg-cedar/60 p-3">
+          <div className="text-[10px] uppercase tracking-widest text-dim">
+            {t("common.lineup")}
+          </div>
+          <ul className="mt-1.5 flex flex-wrap gap-1.5">
+            {drink.lineup.map((b) => (
+              <li key={b}>
+                <Chip>{b}</Chip>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
       <BuyLink href={buy.href} label={buy.label} />
     </>
   );
