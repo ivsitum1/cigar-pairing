@@ -101,7 +101,8 @@ export function CollectionPage() {
       {myDrinks.length > 0 && (
         <>
           <SectionTitle>
-            {t("cat.rum")} / {t("cat.whisky")} / {t("cat.brandy")} / {t("cat.wine")} / {t("cat.coffee")}
+            {t("cat.rum")} / {t("cat.whisky")} / {t("cat.brandy")} / {t("cat.wine")} /{" "}
+            {t("cat.coffee")} / {t("cat.tequila")} / {t("cat.gin")}
           </SectionTitle>
           <div className="space-y-2">
             {myDrinks.map((d) => (

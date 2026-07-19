@@ -12,6 +12,7 @@ import { EveningSessionSheet } from "../components/EveningSessionSheet";
 import { OcrScan } from "../components/OcrScan";
 import { VitolaPicker } from "../components/VitolaPicker";
 import { applyVitola, needsVitolaPick, uniqueVitolas } from "../lib/cigarVitola";
+import { drinkBuyLink } from "../lib/drinkBuyLink";
 import { useMarket, setMarket } from "../store/market";
 import { consumePairingIntent, usePairingNavVersion } from "../store/pairingNav";
 import { navigate, useRoute } from "../store/route";
@@ -32,8 +33,16 @@ const OCCASION_KEEP: Record<Occasion, (d: Drink) => boolean> = {
 // pretraga neosjetljiva na naglaske i velika/mala slova
 const norm = (s: string) =>
   s.normalize("NFKD").replace(/[̀-ͯ]/g, "").toLowerCase();
-// cigara -> tocno 3 kategorije pica (po jedan prijedlog iz svake)
-const SUGGEST_CATEGORIES: DrinkCategory[] = ["rum", "whisky", "brandy", "gin", "wine"];
+// cigara -> po jedan prijedlog; gin zadnji; kava i tequila pune kartice
+const SUGGEST_CATEGORIES: DrinkCategory[] = [
+  "rum",
+  "whisky",
+  "brandy",
+  "wine",
+  "coffee",
+  "tequila",
+  "gin",
+];
 
 export function PairingPage() {
   const { t, lx, cn } = useI18n();
@@ -129,7 +138,7 @@ export function PairingPage() {
     );
   }, [mode, query, marketCigars]);
 
-  // cigara -> po jedan najbolji prijedlog iz rum / whisky / brandy / gin / vino (+ kava bonus)
+  // cigara -> po jedan najbolji prijedlog po kategoriji (gin zadnji)
   const drinkSuggestions = useMemo(() => {
     if (mode !== "cigarToDrink" || !selectedCigar) return null;
     let drinks = ALL_DRINKS;
@@ -144,7 +153,6 @@ export function PairingPage() {
         const idx = list.length ? (cycle[cat] ?? 0) % list.length : 0;
         return { category: cat, result: list[idx], total: list.length };
       }),
-      coffee: perCategory("coffee")[0] ?? null,
     };
   }, [mode, selectedCigar, onlyMine, cycle, occasion, prefs]);
 
@@ -170,12 +178,11 @@ export function PairingPage() {
   // kandidati za večernji zapis: trenutno vidljivi prijedlozi
   const sessionDrinks: Drink[] = useMemo(() => {
     if (mode === "drinkToCigar" && selectedDrink) return [selectedDrink];
-    const fromCards =
+    return (
       drinkSuggestions?.cards
         .map((c) => c.result?.item)
-        .filter((d): d is Drink => !!d) ?? [];
-    const coffee = drinkSuggestions?.coffee?.item;
-    return coffee ? [...fromCards, coffee] : fromCards;
+        .filter((d): d is Drink => !!d) ?? []
+    );
   }, [mode, selectedDrink, drinkSuggestions]);
 
   const sessionCigars: Cigar[] = useMemo(() => {
@@ -506,7 +513,7 @@ export function PairingPage() {
 
           <SectionTitle>{t("pair.suggestions")}</SectionTitle>
 
-          {/* CIGARA -> 5 pica (rum / whisky / konjak / gin / vino) */}
+          {/* CIGARA -> kategorije (gin zadnji) */}
           {drinkSuggestions && (
             <div className="space-y-3">
               {drinkSuggestions.cards.map(({ category, result, total }) => (
@@ -534,7 +541,7 @@ export function PairingPage() {
                       title={result.item.name}
                       sub={`${t(`cat.${category}` as StringKey)} · ${lx(STYLE_LABELS[result.item.style]) || result.item.style}`}
                       price={formatPrice(result.item.priceEUR)}
-                      priceUrl={result.item.priceUrl}
+                      priceUrl={drinkBuyLink(result.item).href}
                       onOpen={() => setDetail({ kind: "drink", item: result.item })}
                     />
                   ) : (
@@ -544,23 +551,6 @@ export function PairingPage() {
                   )}
                 </div>
               ))}
-              {drinkSuggestions.coffee && (
-                <button
-                  onClick={() =>
-                    setDetail({ kind: "drink", item: drinkSuggestions.coffee!.item })
-                  }
-                  className="flex w-full items-center gap-2 rounded-lg border border-dim/20 bg-cedar/60 px-3 py-2 text-left text-xs text-dim hover:border-zlato/40"
-                >
-                  <span className="text-zlato">☕</span>
-                  <span>
-                    {t("pair.coffeeAlt")}:{" "}
-                    <span className="text-papir/90">{drinkSuggestions.coffee.item.name}</span>
-                  </span>
-                  <span className="ml-auto shrink-0 font-display text-zlato-2">
-                    {drinkSuggestions.coffee.score}
-                  </span>
-                </button>
-              )}
             </div>
           )}
 

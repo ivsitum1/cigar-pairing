@@ -2,7 +2,14 @@
 
 export type Lang = "hr" | "en";
 
-export type DrinkCategory = "rum" | "whisky" | "brandy" | "gin" | "wine" | "coffee";
+export type DrinkCategory =
+  | "rum"
+  | "whisky"
+  | "brandy"
+  | "wine"
+  | "coffee"
+  | "tequila"
+  | "gin";
 
 export type Market = "HR" | "EU" | "USA" | "WW";
 

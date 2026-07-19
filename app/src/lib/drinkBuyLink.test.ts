@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import {
   drinkBuyLink,
+  drinkSearchHref,
   isDrinkProductUrl,
   urlMatchesDrinkName,
 } from "./drinkBuyLink";
@@ -30,10 +31,18 @@ describe("isDrinkProductUrl", () => {
       ),
     ).toBe(true);
     expect(isDrinkProductUrl("https://ecuga.com/proizvod/courvoisier-xo")).toBe(true);
+    expect(
+      isDrinkProductUrl(
+        "https://ecuga.com/katalog/whisky/americki-bourbon-whiskey/blantons-original",
+      ),
+    ).toBe(true);
   });
 
   it("odbija katalog / kategoriju", () => {
     expect(isDrinkProductUrl("https://ecuga.com/katalog/rum")).toBe(false);
+    expect(
+      isDrinkProductUrl("https://ecuga.com/katalog/whisky/skotski-maltgrain-whisky"),
+    ).toBe(false);
     expect(isDrinkProductUrl("https://www.vivat-finavina.hr/vrsta/port/")).toBe(false);
     expect(isDrinkProductUrl("https://dingac.hr/webshop/")).toBe(false);
   });
@@ -45,6 +54,15 @@ describe("urlMatchesDrinkName", () => {
       urlMatchesDrinkName(
         "Hampden HLCF Classic 60%",
         "https://allez.hr/shop/svi-proizvodi/hampden-hlcf-classic-estate-pure-single-jamaican-rum-60-vol-07l-u-poklon-kutiji",
+      ),
+    ).toBe(true);
+  });
+
+  it("prihvaca ecuga katalog product slug", () => {
+    expect(
+      urlMatchesDrinkName(
+        "Blanton's Original",
+        "https://ecuga.com/katalog/whisky/americki-bourbon-whiskey/blantons-original",
       ),
     ).toBe(true);
   });
@@ -80,6 +98,20 @@ describe("urlMatchesDrinkName", () => {
   });
 });
 
+describe("drinkSearchHref", () => {
+  it("ne koristi exact-phrase navodnike", () => {
+    const d = base({
+      name: "Appleton Estate 15 Black River",
+      shopHR: "ecuga.com",
+    });
+    const href = drinkSearchHref(d);
+    const q = decodeURIComponent(href.split("q=")[1] ?? "");
+    expect(q).not.toMatch(/^"/);
+    expect(q).toContain("site:ecuga.com");
+    expect(q).toContain("appleton");
+  });
+});
+
 describe("drinkBuyLink", () => {
   it("pada na search kad je priceUrl kategorija", () => {
     const d = base({
@@ -90,7 +122,8 @@ describe("drinkBuyLink", () => {
     const link = drinkBuyLink(d);
     expect(link.label).toBe("search");
     expect(link.href).toContain("google.com/search");
-    expect(link.href).toContain(encodeURIComponent("Appleton Estate 15 Black River"));
+    const q = decodeURIComponent(link.href.split("q=")[1] ?? "");
+    expect(q).not.toMatch(/^"/);
   });
 
   it("pada na search kad slug ne odgovara imenu", () => {
@@ -115,13 +148,27 @@ describe("drinkBuyLink", () => {
     expect(link.href).toContain("hampden-hlcf-classic");
   });
 
-  it("pada na search kad shopHR nije isti domain kao URL", () => {
+  it("zadrzava buy kad je product URL dobar iako shopHR nije isti domain", () => {
     const d = base({
       name: "Hampden HLCF Classic 60%",
       priceUrl:
         "https://allez.hr/shop/svi-proizvodi/hampden-hlcf-classic-estate-pure-single-jamaican-rum-60-vol-07l-u-poklon-kutiji",
       shopHR: "Lidl",
     });
-    expect(drinkBuyLink(d).label).toBe("search");
+    expect(drinkBuyLink(d).label).toBe("buy");
+  });
+
+  it("zadrzava buy za ecuga katalog product path", () => {
+    const d = base({
+      category: "whisky",
+      name: "Blanton's Original",
+      style: "bourbon",
+      priceUrl:
+        "https://ecuga.com/katalog/whisky/americki-bourbon-whiskey/blantons-original",
+      shopHR: "ecuga.com",
+    });
+    const link = drinkBuyLink(d);
+    expect(link.label).toBe("buy");
+    expect(link.href).toContain("blantons-original");
   });
 });

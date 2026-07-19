@@ -15,7 +15,15 @@ import {
   wishlistText,
 } from "../lib/shoppingPicks";
 
-const CATEGORIES: DrinkCategory[] = ["rum", "whisky", "brandy", "gin", "wine"];
+const CATEGORIES: DrinkCategory[] = [
+  "rum",
+  "whisky",
+  "brandy",
+  "wine",
+  "coffee",
+  "tequila",
+  "gin",
+];
 
 export function ShoppingPage() {
   const { t, lx } = useI18n();

@@ -3,7 +3,15 @@ import { BUCKETS, buffetFive, collectionGaps, groupWishlistByShop, segmentPicks,
 import { DRINKS } from "../data";
 import type { DrinkCategory } from "../types";
 
-const CATS: DrinkCategory[] = ["rum", "whisky", "brandy", "gin", "wine"];
+const CATS: DrinkCategory[] = [
+  "rum",
+  "whisky",
+  "brandy",
+  "wine",
+  "coffee",
+  "tequila",
+  "gin",
+];
 const nitko = () => false;
 
 describe("grupiranje liste zelja po trgovini", () => {

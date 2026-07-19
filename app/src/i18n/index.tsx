@@ -206,6 +206,7 @@ const STRINGS = {
   "cat.gin": { hr: "Gin", en: "Gin" },
   "cat.wine": { hr: "Vino", en: "Wine" },
   "cat.coffee": { hr: "Kava", en: "Coffee" },
+  "cat.tequila": { hr: "Tekila", en: "Tequila" },
   "cat.cigars": { hr: "Cigare", en: "Cigars" },
   "cat.pairWithDrink": { hr: "Upari s pićem →", en: "Pair with a drink →" },
   "cat.pairWithCigar": { hr: "Upari s cigarama →", en: "Pair with cigars →" },
@@ -356,6 +357,10 @@ export const STYLE_LABELS: Record<string, LocalizedText> = {
   "white-rich": { hr: "Bijelo — bogato (barrique)", en: "White — rich (barrique)" },
   sparkling: { hr: "Pjenušavo", en: "Sparkling" },
   "dessert-wine": { hr: "Desertno / botritis", en: "Dessert / botrytis" },
+  blanco: { hr: "Blanco / plata", en: "Blanco / silver" },
+  reposado: { hr: "Reposado", en: "Reposado" },
+  anejo: { hr: "Añejo", en: "Añejo" },
+  "extra-anejo": { hr: "Extra añejo", en: "Extra añejo" },
 };
 
 // hrvatska imena zemalja u podacima -> engleski prikaz
@@ -475,6 +480,10 @@ export const ADDITIVE_RULES: Record<string, LocalizedText> = {
   gin: {
     hr: "London Dry gin ne smije ništa dodati nakon destilacije (šećer ≤0,1 g/L). Ostali stilovi gina smiju biti slađeni ili aromatizirani — to se ovdje deklarira.",
     en: "London Dry gin may add nothing after distillation (sugar ≤0.1 g/L). Other gin styles may be sweetened or flavoured — declared here.",
+  },
+  tequila: {
+    hr: "100% agave tequila ne smije biti miješana s drugim šećerima (mixto je druga kategorija). Odležavanje: blanco (neodležana/kratko), reposado (2–12 mj.), añejo (1–3 g.), extra añejo (3+ g.).",
+    en: "100% agave tequila may not be blended with other sugars (mixto is a different category). Aging: blanco (unaged/brief), reposado (2–12 mo.), añejo (1–3 yr), extra añejo (3+ yr).",
   },
   wine: {
     hr: "Sulfiti su standardni dio vinarstva. Fortificirana vina (porto, sherry, madeira, prošek) imaju dodani vinski destilat; slatkoća dolazi iz grožđa ili zaustavljene fermentacije — deklariramo neutralno.",

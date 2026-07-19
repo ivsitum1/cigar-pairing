@@ -76,6 +76,9 @@ export const COMPLEMENTS: Record<string, string[]> = {
   voce: ["voce", "suho-voce", "citrus", "tropsko-voce"],
   mineralno: ["mineralno", "citrus", "dim"],
   jabuka: ["jabuka", "voce", "med"],
+  agava: ["agava", "citrus", "papar", "biljno", "zemljano", "vanilija"],
+  biljno: ["biljno", "agava", "travnato", "citrus", "vegetalno"],
+  mlijeko: ["mlijeko", "kremasto", "vanilija", "kakao", "slatko"],
 };
 
 // wrapper (regex) -> drink stilovi/tagovi koji mu prirodno pasu

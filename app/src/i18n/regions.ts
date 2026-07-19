@@ -56,6 +56,7 @@ export const REGION_LABELS: Record<string, string> = {
   "Lombardija, Italija": "Lombardy, Italy",
   "Malabar, Indija": "Malabar, India",
   "Mauricijus": "Mauritius",
+  "Jalisco, Meksiko": "Jalisco, Mexico",
   "Meksiko (charanda)": "Mexico (charanda)",
   "Melbourne, Australija": "Melbourne, Australia",
   "Mosel, Njemačka": "Mosel, Germany",

@@ -19,6 +19,7 @@ const STOP = new Set([
   "calvados",
   "brandy",
   "gin",
+  "tequila",
   "port",
   "porto",
   "sherry",
@@ -53,6 +54,7 @@ export function drinkLinkTokens(s: string): Set<string> {
       .normalize("NFKD")
       .replace(/[\u0300-\u036f]/g, "")
       .toLowerCase()
+      .replace(/[''`´]/g, "")
       .replace(/[^a-z0-9]+/g, " ")
       .split(/\s+/)
       .filter((t) => t.length > 0)
@@ -71,6 +73,20 @@ function slugFromUrl(url: string): string {
   }
 }
 
+/**
+ * Ecuga: /katalog/rum ili /katalog/whisky/skotski-maltgrain-whisky = kategorija;
+ * /katalog/whisky/.../blantons-original = proizvod (slug na kraju).
+ */
+function isEcugaKatalogProduct(path: string): boolean {
+  const m = path.match(/^\/katalog\/(.+)$/);
+  if (!m) return false;
+  const segs = m[1]!.split("/").filter(Boolean);
+  // kategorija: 1–2 segmenta; proizvod: ≥3 (kat / podkat / slug)
+  if (segs.length < 3) return false;
+  const slug = segs[segs.length - 1]!;
+  return slug.length >= 4;
+}
+
 /** Je li URL stranica proizvoda, a ne katalog/kategorija/pretraga. */
 export function isDrinkProductUrl(url: string): boolean {
   let u: URL;
@@ -81,9 +97,15 @@ export function isDrinkProductUrl(url: string): boolean {
   }
   const path = u.pathname.toLowerCase();
   if (path.includes("/svi-proizvodi/") || path.includes("/proizvod/")) return true;
-  // Vivat / Roto / Vrutak: proizvodni pathovi obicno imaju slug dulji od kategorije
-  if (/\/vrsta\//.test(path) || /\/katalog\//.test(path)) return false;
-  if (/\/search/.test(path) || /\/shop\/(?:rum|whiskey|whisky|gin|cognac)\/?$/.test(path)) {
+
+  // Ecuga proizvodne stranice žive pod /katalog/.../<slug>
+  if (path.includes("/katalog/")) {
+    return isEcugaKatalogProduct(path);
+  }
+
+  // Vivat kategorije
+  if (/\/vrsta\//.test(path)) return false;
+  if (/\/search/.test(path) || /\/shop\/(?:rum|whiskey|whisky|gin|cognac|tequila)\/?$/.test(path)) {
     return false;
   }
   if (/\/webshop\/?$/.test(path)) return false;
@@ -127,10 +149,17 @@ export function urlMatchesDrinkName(name: string, url: string): boolean {
 
 export type DrinkBuyLink = { href: string; label: "buy" | "search" };
 
+/** Kraći upit bez exact-phrase; site: kad znamo HR shop. */
 export function drinkSearchHref(drink: Drink): string {
-  const shop = (drink.shopHR ?? "").trim();
-  const hint = shop && shop.toLowerCase() !== "razno" ? ` ${shop}` : "";
-  const q = `"${drink.name}" cijena kupnja${hint}`;
+  const toks = [...drinkLinkTokens(drink.name)].slice(0, 6);
+  const nameQ = toks.length >= 2 ? toks.join(" ") : drink.name;
+  const shop = (drink.shopHR ?? "").trim().toLowerCase();
+  let site = "";
+  if (shop.includes("allez")) site = " site:allez.hr";
+  else if (shop.includes("ecuga")) site = " site:ecuga.com";
+  else if (drink.priceUrl?.includes("allez.hr")) site = " site:allez.hr";
+  else if (drink.priceUrl?.includes("ecuga.com")) site = " site:ecuga.com";
+  const q = `${nameQ} kupnja${site}`;
   return `https://www.google.com/search?q=${encodeURIComponent(q)}`;
 }
 
@@ -138,20 +167,10 @@ export function drinkBuyLink(drink: Drink): DrinkBuyLink {
   const url = drink.priceUrl ?? null;
   if (!url) return { href: drinkSearchHref(drink), label: "search" };
 
-  const shop = (drink.shopHR ?? "").toLowerCase();
-  const isEcuga = url.includes("ecuga.com");
-  const isAllez = url.includes("allez.hr");
-  const shopMatchesDomain =
-    (isEcuga && shop.includes("ecuga")) || (isAllez && shop.includes("allez"));
-
-  // Ako link nije na isti izvor koji se navodi kao HR shop, to je praktično pretraga.
-  if ((isEcuga || isAllez) && shop && !shopMatchesDomain) {
-    return { href: drinkSearchHref(drink), label: "search" };
+  // Validan proizvodni URL ima prednost nad neslaganjem shopHR (npr. Lidl + allez link).
+  if (urlMatchesDrinkName(drink.name, url)) {
+    return { href: url, label: "buy" };
   }
 
-  if (!urlMatchesDrinkName(drink.name, url)) {
-    return { href: drinkSearchHref(drink), label: "search" };
-  }
-
-  return { href: url, label: "buy" };
+  return { href: drinkSearchHref(drink), label: "search" };
 }

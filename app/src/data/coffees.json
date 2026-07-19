@@ -658,5 +658,228 @@
    "hr": "Večernja cigara bez kofeina — moderna decaf obrada čuva okus.",
    "en": "An evening cigar without caffeine — modern decaf processing keeps the flavour."
   }
+ },
+ {
+  "id": "cf-cubano-sweet",
+  "category": "coffee",
+  "name": "Café Cubano (zaslađeni espresso)",
+  "style": "espresso-dark",
+  "region": "Kuba / diaspora",
+  "country": "Kuba",
+  "abv": null,
+  "body": 5,
+  "sweetness": 4,
+  "flavorTags": ["kakao", "karamela", "slatko", "dim"],
+  "qualityScore": 7,
+  "priceEUR": null,
+  "shopHR": "doma / bar",
+  "pairable": true,
+  "serving": { "best": "Espresso + demerara u cremi" },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Kubanska tradicija — gorčina i šećer u istoj šalici. Uz kratku maduro ili cuban-style cigaru.",
+   "en": "Cuban tradition — bitterness and sugar in the same cup. With a short maduro or Cuban-style cigar."
+  }
+ },
+ {
+  "id": "cf-aeropress-brazil",
+  "category": "coffee",
+  "name": "AeroPress — Brazil (chocolate nut)",
+  "style": "filter-medium",
+  "region": "Brazil",
+  "country": "Brazil",
+  "abv": null,
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": ["kakao", "orasasti", "karamela"],
+  "qualityScore": 7.5,
+  "priceEUR": { "min": 12, "max": 18 },
+  "priceApprox": true,
+  "shopHR": "Cogito / specialty",
+  "pairable": true,
+  "serving": { "best": "AeroPress, 200–220 ml" },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Čokoladno-orasasti Brazil — miran most uz srednju Connecticut / Habano cigaru.",
+   "en": "Chocolate-nut Brazil — a calm bridge with a medium Connecticut / Habano cigar."
+  }
+ },
+ {
+  "id": "cf-pour-over-costa-rica",
+  "category": "coffee",
+  "name": "Pour-over — Costa Rica honey process",
+  "style": "filter-light",
+  "region": "Costa Rica",
+  "country": "Costa Rica",
+  "abv": null,
+  "body": 2,
+  "sweetness": 3,
+  "flavorTags": ["voce", "med", "citrus"],
+  "qualityScore": 8,
+  "priceEUR": { "min": 14, "max": 22 },
+  "priceApprox": true,
+  "shopHR": "Quahwa / specialty",
+  "pairable": true,
+  "serving": { "best": "V60 / Kalita, jutro–popodne" },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Medena slatkoća i voće — uz laganu cigaru, ne uz peaty ili maduro ekstrem.",
+   "en": "Honeyed sweetness and fruit — with a light cigar, not a peaty or maduro extreme."
+  }
+ },
+ {
+  "id": "cf-yemen-mocha",
+  "category": "coffee",
+  "name": "Yemen Mocha (natural)",
+  "style": "filter-dark",
+  "region": "Jemen",
+  "country": "Jemen",
+  "abv": null,
+  "body": 4,
+  "sweetness": 3,
+  "flavorTags": ["kakao", "suho-voce", "zacini", "dim"],
+  "qualityScore": 8.5,
+  "priceEUR": { "min": 25, "max": 40 },
+  "priceApprox": true,
+  "shopHR": "specialty (ograničeno)",
+  "pairable": true,
+  "serving": { "best": "Filter / espresso blend" },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Gusti, začinski mocha profil — prirodan most uz maduro i tamne note cigare.",
+   "en": "A dense, spicy mocha profile — a natural bridge with maduro and dark cigar notes."
+  }
+ },
+ {
+  "id": "cf-lungo",
+  "category": "coffee",
+  "name": "Lungo (duži espresso)",
+  "style": "espresso-medium",
+  "region": "Italija (stil)",
+  "country": "—",
+  "abv": null,
+  "body": 3,
+  "sweetness": 2,
+  "flavorTags": ["kakao", "gorko", "orasasti"],
+  "qualityScore": 6.5,
+  "priceEUR": null,
+  "shopHR": "svugdje",
+  "pairable": true,
+  "serving": { "best": "Lungo 60–90 ml" },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Razvodnjeniji od espressa — manje intenziteta, duže praćenje uz srednju cigaru.",
+   "en": "More diluted than espresso — less intensity, longer pacing with a medium cigar."
+  }
+ },
+ {
+  "id": "cf-cortado",
+  "category": "coffee",
+  "name": "Cortado",
+  "style": "milk",
+  "region": "Španjolska / specialty",
+  "country": "—",
+  "abv": null,
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": ["kakao", "mlijeko", "karamela"],
+  "qualityScore": 7,
+  "priceEUR": null,
+  "shopHR": "bar / specialty",
+  "pairable": true,
+  "serving": { "best": "Espresso + malo mlijeka 1:1" },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Mlijeko ublažava gorčinu — uz blagu do srednju cigaru poslijepodne.",
+   "en": "Milk softens bitterness — with a mild to medium afternoon cigar."
+  }
+ },
+ {
+  "id": "cf-flat-white",
+  "category": "coffee",
+  "name": "Flat white",
+  "style": "milk",
+  "region": "ANZ / specialty",
+  "country": "—",
+  "abv": null,
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": ["mlijeko", "kakao", "orasasti"],
+  "qualityScore": 7,
+  "priceEUR": null,
+  "shopHR": "specialty",
+  "pairable": true,
+  "serving": { "best": "Doppio + mikro-pjena" },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Više kave nego cappuccino — kremasti most uz Connecticut ili blagi natural.",
+   "en": "More coffee than a cappuccino — a creamy bridge with Connecticut or a mild natural."
+  }
+ },
+ {
+  "id": "cf-vietnamese-iced",
+  "category": "coffee",
+  "name": "Vijetnamska ledena kava (cà phê sữa đá)",
+  "style": "cold",
+  "region": "Vijetnam",
+  "country": "Vijetnam",
+  "abv": null,
+  "body": 4,
+  "sweetness": 4,
+  "flavorTags": ["kakao", "slatko", "karamela"],
+  "qualityScore": 7,
+  "priceEUR": null,
+  "shopHR": "doma / azijski bar",
+  "pairable": true,
+  "serving": { "best": "Phin + kondenzirano mlijeko, led" },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Gusti, slatki hladni profil — kontrast uz kratku, začinsku cigaru po vrućini.",
+   "en": "A dense, sweet cold profile — contrast with a short, spicy cigar in the heat."
+  }
+ },
+ {
+  "id": "cf-espresso-cognac",
+  "category": "coffee",
+  "name": "Espresso + cognac (francuski corretto)",
+  "style": "spiked",
+  "region": "Francuska / Italija",
+  "country": "—",
+  "abv": 12,
+  "body": 4,
+  "sweetness": 2,
+  "flavorTags": ["kakao", "hrast", "karamela"],
+  "qualityScore": 8,
+  "priceEUR": null,
+  "shopHR": "doma",
+  "pairable": true,
+  "serving": { "best": "Espresso + 10–15 ml VSOP" },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Kava i konjak u istoj šalici — dvostruki most uz srednju do punu cigaru.",
+   "en": "Coffee and cognac in the same cup — a double bridge with a medium to full cigar."
+  }
+ },
+ {
+  "id": "cf-batch-brew-dark",
+  "category": "coffee",
+  "name": "Batch brew — tamna prženica (filter)",
+  "style": "filter-dark",
+  "region": "blend",
+  "country": "—",
+  "abv": null,
+  "body": 4,
+  "sweetness": 2,
+  "flavorTags": ["kakao", "dim", "gorko", "orasasti"],
+  "qualityScore": 6.5,
+  "priceEUR": null,
+  "shopHR": "bar / ured",
+  "pairable": true,
+  "serving": { "best": "Filter 200–250 ml" },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Jednostavna tamna filter kava — pouzdan most uz srednju cigaru.",
+   "en": "Simple dark filter coffee — a reliable bridge with a medium cigar."
+  }
  }
 ]

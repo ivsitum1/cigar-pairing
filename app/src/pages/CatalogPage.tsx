@@ -14,7 +14,16 @@ const norm = (s: string) =>
   s.normalize("NFKD").replace(/[̀-ͯ]/g, "").toLowerCase();
 
 type Tab = "cigars" | DrinkCategory;
-const TABS: Tab[] = ["cigars", "rum", "whisky", "brandy", "gin", "wine", "coffee"];
+const TABS: Tab[] = [
+  "cigars",
+  "rum",
+  "whisky",
+  "brandy",
+  "wine",
+  "coffee",
+  "tequila",
+  "gin",
+];
 const MARKETS: Market[] = ["HR", "EU", "USA", "WW"];
 
 export function CatalogPage({
@@ -181,7 +190,7 @@ export function CatalogPage({
               {t("filter.strength")} {s}
             </Chip>
           ))}
-        {tab !== "cigars" && tab !== "coffee" && (
+        {tab !== "cigars" && tab !== "coffee" && tab !== "tequila" && (
           <Chip active={cleanOnly} onClick={() => setCleanOnly(!cleanOnly)}>
             {t("filter.clean")}
           </Chip>

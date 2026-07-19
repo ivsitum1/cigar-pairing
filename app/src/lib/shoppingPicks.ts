@@ -33,19 +33,33 @@ export const BUCKETS: Partial<Record<DrinkCategory, StyleBucket[]>> = {
     { id: "mediteran", label: { hr: "Grappa / mediteran", en: "Grappa / Mediterranean" }, styles: ["grappa", "brandy-italian", "brandy-greek", "vinjak", "brandy-armenian", "brandy-german"] },
     { id: "liqueur", label: { hr: "Liker", en: "Liqueur" }, styles: ["liqueur"] },
   ],
-  gin: [
-    { id: "london", label: { hr: "London Dry", en: "London Dry" }, styles: ["london-dry"] },
-    { id: "premium", label: { hr: "Premium dry", en: "Premium dry" }, styles: ["premium-dry"] },
-    { id: "plymouth", label: { hr: "Plymouth / meki stil", en: "Plymouth / soft style" }, styles: ["plymouth", "navy-strength", "old-tom", "genever"] },
-    { id: "contemporary", label: { hr: "Contemporary", en: "Contemporary" }, styles: ["contemporary"] },
-    { id: "croatian", label: { hr: "HR craft", en: "Croatian craft" }, styles: ["croatian"] },
-  ],
   wine: [
     { id: "port", label: { hr: "Porto / fortificirano", en: "Port / fortified" }, styles: ["port-ruby", "port-tawny", "madeira", "prosek"] },
     { id: "sherry", label: { hr: "Sherry", en: "Sherry" }, styles: ["sherry-dry", "sherry-sweet"] },
     { id: "red", label: { hr: "Crno", en: "Red" }, styles: ["red-full", "red-medium"] },
     { id: "white", label: { hr: "Bijelo / pjenušavo", en: "White / sparkling" }, styles: ["white-fresh", "white-rich", "sparkling"] },
     { id: "dessert", label: { hr: "Desertno", en: "Dessert" }, styles: ["dessert-wine"] },
+  ],
+  coffee: [
+    { id: "espresso", label: { hr: "Espresso", en: "Espresso" }, styles: ["espresso-dark", "espresso-medium"] },
+    { id: "filter", label: { hr: "Filter", en: "Filter" }, styles: ["filter-light", "filter-medium", "filter-dark"] },
+    { id: "classic", label: { hr: "Klasika / turska", en: "Classic / Turkish" }, styles: ["turkish", "moka"] },
+    { id: "milk", label: { hr: "S mlijekom / hladno", en: "With milk / cold" }, styles: ["milk", "cold"] },
+    { id: "spiked", label: { hr: "S alkoholom", en: "Spiked" }, styles: ["spiked"] },
+  ],
+  tequila: [
+    { id: "blanco", label: { hr: "Blanco", en: "Blanco" }, styles: ["blanco"] },
+    { id: "reposado", label: { hr: "Reposado", en: "Reposado" }, styles: ["reposado"] },
+    { id: "anejo", label: { hr: "Añejo", en: "Añejo" }, styles: ["anejo"] },
+    { id: "extra", label: { hr: "Extra añejo", en: "Extra añejo" }, styles: ["extra-anejo"] },
+    { id: "entry", label: { hr: "Pristupačno", en: "Approachable" }, styles: ["blanco", "reposado"] },
+  ],
+  gin: [
+    { id: "london", label: { hr: "London Dry", en: "London Dry" }, styles: ["london-dry"] },
+    { id: "premium", label: { hr: "Premium dry", en: "Premium dry" }, styles: ["premium-dry"] },
+    { id: "plymouth", label: { hr: "Plymouth / meki stil", en: "Plymouth / soft style" }, styles: ["plymouth", "navy-strength", "old-tom", "genever"] },
+    { id: "contemporary", label: { hr: "Contemporary", en: "Contemporary" }, styles: ["contemporary"] },
+    { id: "croatian", label: { hr: "HR craft", en: "Croatian craft" }, styles: ["croatian"] },
   ],
 };
 

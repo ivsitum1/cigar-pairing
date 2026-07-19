@@ -64,6 +64,11 @@ function drinkProfile(drink: Drink): string {
     if (/vinjak/i.test(style)) return "vinjak";
   }
   if (category === "gin") return "gin";
+  if (category === "tequila") {
+    if (/extra-anejo|anejo/i.test(style)) return "aged-tequila";
+    if (/reposado/i.test(style)) return "reposado-tequila";
+    return "blanco-tequila";
+  }
   if (category === "wine") {
     if (sweetness >= 4) return "sweet-wine";
     if (/sparkling|champagne|prosecco/i.test(style)) return "sparkling";
@@ -132,6 +137,20 @@ function wrapperVerdict(
     };
   }
 
+  if (profile === "aged-tequila" && kind === "maduro") {
+    return {
+      hr: `Odležana tequila i maduro dijele hrast, kakao i začine — čest sipping spoj.`,
+      en: `Aged tequila and maduro share oak, cocoa and spice — a common sipping match.`,
+    };
+  }
+
+  if (profile === "reposado-tequila" && (kind === "habano" || kind === "natural")) {
+    return {
+      hr: `Reposado i ${w} dijele srednju težinu — agava i hrast uz duhan bez borbe.`,
+      en: `Reposado and ${w} share medium weight — agave and oak with tobacco without a fight.`,
+    };
+  }
+
   if (cigar.body === drink.body && kind !== "other") {
     return {
       hr: `${w} i ${drink.name} su u istom registru punoće — nijedno ne nadjačava drugo.`,
@@ -179,7 +198,7 @@ function wrapperWarning(
       en: `sparkling wine wants a lighter cigar — this much body tramples the bubbles and acidity.`,
     };
   }
-  if ((profile === "light-coffee" || profile === "gin") && cigar.body >= 4) {
+  if ((profile === "light-coffee" || profile === "gin" || profile === "blanco-tequila") && cigar.body >= 4) {
     return {
       hr: `ovako delikatno piće traži laganiju cigaru — puni dim ostaje sam na sceni.`,
       en: `such a delicate drink needs a lighter cigar — the full smoke ends up alone on stage.`,
