@@ -4,6 +4,7 @@ import { PairingPage } from "./pages/PairingPage";
 import { requestPairing } from "./store/pairingNav";
 import { navigate, useRoute, type Page } from "./store/route";
 import { SystemBanners } from "./components/SystemBanners";
+import { MusicToggle } from "./components/MusicToggle";
 import type { Cigar, Drink } from "./types";
 
 // pairing je pocetni ekran i ostaje u glavnom chunku; ostale stranice
@@ -52,13 +53,16 @@ export default function App() {
           </div>
           <div className="band-rule mt-1.5" />
         </div>
-        <button
-          onClick={() => setLang(lang === "hr" ? "en" : "hr")}
-          className="rounded-full border border-zlato/40 px-3 py-1.5 font-display text-xs uppercase tracking-widest text-zlato hover:bg-zlato/10"
-          aria-label="Language"
-        >
-          {lang === "hr" ? "EN" : "HR"}
-        </button>
+        <div className="flex items-center gap-2">
+          <MusicToggle />
+          <button
+            onClick={() => setLang(lang === "hr" ? "en" : "hr")}
+            className="rounded-full border border-zlato/40 px-3 py-1.5 font-display text-xs uppercase tracking-widest text-zlato hover:bg-zlato/10"
+            aria-label="Language"
+          >
+            {lang === "hr" ? "EN" : "HR"}
+          </button>
+        </div>
       </header>
 
       <main className="flex-1 pb-24">
