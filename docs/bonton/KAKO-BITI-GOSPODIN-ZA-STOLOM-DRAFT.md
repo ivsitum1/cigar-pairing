@@ -371,6 +371,10 @@ Svjetliji omoti (često Connecticut u razgovoru za stolom) često nose blaži do
 
 Gospodin ne kaže „Maduro je za prave”. Kaže: „Ova je tamnija i sporija — želiš li to večeras?”
 
+![Raspon omota od svijetlog do madura](images/notebooklm-studio/slides/04-page.png)
+
+*Slika: spektrum omota (NotebookLM Studio nacrt; engleski tekst). Za tisak: prerisati ili prepustiti lekturi vizuala.*
+
 ### Povlačenje, ne drama
 
 Dobro povlačenje olakšava večer. Loše povlačenje nije moralni pad. To je tehnički trenutak. Gospodin to rješava tiho — ili pita domaćina — bez javne dijagnoze tuđe cigare.
@@ -395,6 +399,10 @@ Gost uzme svjetliju. Netko kaže: „Ah, početnička.” Treći odgovori: „Ve
 
 Ovdje bonton i tehnika sjede jedno uz drugo — jer loša higijena i loš pepeo kvare tuđu večer brže od lošeg ukusa.
 
+![Cigar Pro 101: rez, toast, dim, pepeo](images/notebooklm-studio/Mastering-Cigar-Smoking-Etiquette.png)
+
+*Slika: sažetak tehnike i mjere (NotebookLM Studio infografika). Engleski nacrt; sadržaj se slaže s preceptima ovog poglavlja.*
+
 ### Rez
 
 Gospodin reže dovoljno da otvori kapu, ne dovoljno da otvori raspravu o katastrofi.
@@ -403,6 +411,10 @@ Ako dijeliš rezač, ne vlaži kapu ustima prije reza. To nije „trik”. To je
 
 Ako nisi siguran u tuđi rezač, pitaj za čisti ili koristi svoj. Tiho. Bez najave epidemije.
 
+![Pravilo reza kape](images/notebooklm-studio/slides/07-page.png)
+
+*Slika: rez kape, ne „cijela katastrofa” (Studio nacrt).*
+
 ### Paljenje
 
 Gospodin pali strpljivo. Ne žuri plamenom kao da dokazuje da zna.
@@ -410,6 +422,10 @@ Gospodin pali strpljivo. Ne žuri plamenom kao da dokazuje da zna.
 Mlazni upaljač je koristan alat i potencijalna drama: daleko od kose, salveta, suhog bilja, papira. Vani još više.
 
 Ne grij brandy nad plamenom upaljača „jer tako izgleda u filmu”. Izgleda kao film. Miris često izgleda kao pogreška.
+
+![Paljenje: kut i tempo](images/notebooklm-studio/slides/08-page.png)
+
+*Slika: strpljivo paljenje (Studio nacrt).*
 
 ### Pepeo
 
@@ -426,6 +442,10 @@ Na kraju: ugasi dostojanstveno. Ne stubaj cigaru kao cigaretu u pepeo s bijesom 
 Oko prstena postoje škole: skidati rano, skidati kasnije, ostaviti. Gospodin ne rješava to dogmom. Rješava to kontekstom — i time da prsten i celofan ne završe pod stolom.
 
 Ako te pitaju što radiš ti, reci svoju praksu. Ne kao zakon.
+
+![Prsten: anatomija i skidanje](images/notebooklm-studio/slides/06-page.png)
+
+*Slika: prsten bez dogme (Studio nacrt).*
 
 ### Precepti
 
@@ -452,6 +472,10 @@ Gost navlaži kapu, uzme kućni rezač. Domaćin ne drži govor. Tiho nudi svoj 
 ## 9. Tempo i crni pepeo
 
 Tempo je bonton pretvoren u ritam disanja.
+
+![Početnik naspram mjere](images/notebooklm-studio/slides/09-page.png)
+
+*Slika: „noob” potezi naspram mirne prakse (Studio nacrt; ton je američki lounge, ne naš rječnik).*
 
 ### Pauze
 
@@ -495,6 +519,10 @@ Netko puše u trzajima. Pepeo pada crn. Domaćin ne kaže „krivo”. Kaže: �
 
 Humidor nije vitrina za taštinu. To je ostava povjerenja.
 
+![Skladištenje i granice](images/notebooklm-studio/slides/11-page.png)
+
+*Slika: pravila spremanja (Studio nacrt). Bonton ovdje je granica ruku, ne udžbenik RH.*
+
 ### Sveti prostor (bez patetike)
 
 Gospodin ne prekapa tuđi humidor kao buvljak.
@@ -532,6 +560,10 @@ Gost u trgovini cijedi cigare „da vidi”. Prodavač se smiješi ukočeno. Lju
 ## 11. Pet maherskih savjeta koje gospodin ne nameće
 
 Ovo su savjeti za vlastitu praksu. Nude se samo ako te pitaju. Inače su tihi.
+
+![Mitovi koje stol ne treba](images/notebooklm-studio/slides/10-page.png)
+
+*Slika: mitovi (plume, boja, ponovno paljenje, cijena). Studio nacrt; u knjizi vrijedi samo što služi uljudnosti.*
 
 ### 1. Rez malo manje nego misliš
 

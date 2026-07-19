@@ -371,6 +371,10 @@ Lighter wrappers (often Connecticut in table talk) often carry a milder impressi
 
 A gentleman does not say "Maduro is for real men". He says: "This one is darker and slower — do you want that tonight?"
 
+![Wrapper spectrum from mild green to maduro](images/notebooklm-studio/slides/04-page.png)
+
+*Figure: wrapper spectrum (NotebookLM Studio draft; English UI). For print: redraw or hand to visual edit.*
+
 ### The draw, not the drama
 
 A good draw makes the evening easier. A bad draw is not a moral failing. It is a technical moment. A gentleman handles it quietly — or asks the host — without a public diagnosis of someone else's cigar.
@@ -395,6 +399,10 @@ The guest takes a lighter one. Someone says: "Ah, a beginner's." A third replies
 
 Here etiquette and technique sit side by side — because poor hygiene and bad ash ruin someone else's evening faster than bad taste.
 
+![Cigar Pro 101: cut, toast, smoke, ash](images/notebooklm-studio/Mastering-Cigar-Smoking-Etiquette.png)
+
+*Figure: technique and measure in one sheet (NotebookLM Studio infographic). Draft English; content aligns with this chapter's precepts.*
+
 ### The cut
 
 A gentleman cuts enough to open the cap, not enough to open a debate about a catastrophe.
@@ -403,6 +411,10 @@ If you share a cutter, don't wet the cap with your mouth before cutting. That is
 
 If you are unsure about someone else's cutter, ask for a clean one or use your own. Quietly. Without announcing an epidemic.
 
+![The cap cut rule](images/notebooklm-studio/slides/07-page.png)
+
+*Figure: cut the cap, not a catastrophe (Studio draft).*
+
 ### Lighting
 
 A gentleman lights patiently. He doesn't rush the flame as if proving he knows.
@@ -410,6 +422,10 @@ A gentleman lights patiently. He doesn't rush the flame as if proving he knows.
 The torch lighter is a useful tool and a potential drama: keep it away from hair, napkins, dry herbs, paper. Outdoors, even more so.
 
 Don't warm brandy over a lighter's flame "because that's how it looks in the film". It looks like a film. The smell often looks like a mistake.
+
+![Lighting: angle and pace](images/notebooklm-studio/slides/08-page.png)
+
+*Figure: patient lighting (Studio draft).*
 
 ### The ash
 
@@ -426,6 +442,10 @@ At the end: put it out with dignity. Don't stub the cigar out like a cigarette, 
 There are schools around the band: take it off early, take it off later, leave it on. A gentleman does not settle this with dogma. He settles it with context — and by making sure the band and the cellophane don't end up under the table.
 
 If you are asked what you do, state your practice. Not as a law.
+
+![The band: anatomy and removal](images/notebooklm-studio/slides/06-page.png)
+
+*Figure: the band without dogma (Studio draft).*
 
 ### Precepts
 
@@ -452,6 +472,10 @@ A guest wets the cap and picks up the house cutter. The host does not give a spe
 ## 9. Tempo and black ash
 
 Tempo is etiquette turned into the rhythm of breathing.
+
+![Beginner haste versus measure](images/notebooklm-studio/slides/09-page.png)
+
+*Figure: "noob" moves versus calm practice (Studio draft; US lounge tone, not our house diction).*
 
 ### Pauses
 
@@ -495,6 +519,10 @@ Someone smokes in jerks. The ash falls black. The host does not say "wrong". He 
 
 The humidor is not a display case for vanity. It is a pantry of trust.
 
+![Storage and boundaries](images/notebooklm-studio/slides/11-page.png)
+
+*Figure: storage rules (Studio draft). Etiquette here is the boundary of hands, not a humidity textbook.*
+
 ### Sacred space (without pathos)
 
 A gentleman does not rummage through someone else's humidor like a flea market.
@@ -532,6 +560,10 @@ A guest in a shop squeezes the cigars "to see". The salesman smiles stiffly. A m
 ## 11. Five master's tips a gentleman does not impose
 
 These are tips for your own practice. They are offered only if you are asked. Otherwise they stay silent.
+
+![Myths the table does not need](images/notebooklm-studio/slides/10-page.png)
+
+*Figure: myths (plume, colour, relight, price). Studio draft; in the book only what serves courtesy stays.*
 
 ### 1. Cut a little less than you think
 
