@@ -303,7 +303,7 @@ export function PairingPage() {
               setMode(m);
               reset();
             }}
-            className={`rounded-lg border py-2.5 font-display text-[11px] uppercase tracking-[0.12em] transition-colors ${
+            className={`rounded-lg border py-2.5 font-display text-micro uppercase tracking-[0.12em] transition-colors ${
               mode === m
                 ? "border-zlato bg-zlato/15 text-zlato-2"
                 : "border-dim/25 text-dim hover:border-zlato/40"
@@ -325,7 +325,7 @@ export function PairingPage() {
       {/* market birac — bitan kad biras cigare */}
       {mode !== "custom" && (
       <div className="no-scrollbar mt-3 flex items-center gap-2 overflow-x-auto">
-        <span className="shrink-0 text-[10px] uppercase tracking-widest text-dim">
+        <span className="shrink-0 text-micro uppercase tracking-widest text-dim">
           {t("pair.market")}
         </span>
         {MARKETS.map((m) => (
@@ -345,10 +345,10 @@ export function PairingPage() {
       {/* preferencije: zemlje/brendovi koje NE zelis u prijedlozima */}
       {mode !== "custom" && showPrefs && (
         <div className="mt-2 rounded-xl border border-dim/20 bg-cedar p-3">
-          <div className="mb-1 font-display text-[11px] uppercase tracking-[0.2em] text-zlato">
+          <div className="mb-1 font-display text-micro uppercase tracking-[0.2em] text-zlato">
             {t("pair.prefs")}
           </div>
-          <div className="mb-2 text-[11px] text-dim">{t("pair.prefsHint")}</div>
+          <div className="mb-2 text-micro text-dim">{t("pair.prefsHint")}</div>
           <div className="flex flex-wrap gap-1.5">
             {allCountries.map((cty) => (
               <Chip
@@ -466,7 +466,7 @@ export function PairingPage() {
                   ((selected as Cigar).profileEstimated ||
                     (selected as Cigar).flavorTags.length === 0) && (
                     <div
-                      className="mt-1 text-[10px] uppercase tracking-wider text-dim/80"
+                      className="mt-1 text-micro uppercase tracking-wider text-dim/80"
                       title={t("common.estimatedProfile")}
                     >
                       ≈ {t("common.estimatedProfile")}
@@ -519,7 +519,7 @@ export function PairingPage() {
               {drinkSuggestions.cards.map(({ category, result, total }) => (
                 <div key={category}>
                   <div className="mb-1 flex items-center justify-between">
-                    <span className="font-display text-[11px] uppercase tracking-[0.2em] text-oxblood">
+                    <span className="font-display text-micro uppercase tracking-[0.2em] text-oxblood">
                       {t(`cat.${category}` as StringKey)}
                     </span>
                     {total > 1 && (
@@ -527,7 +527,7 @@ export function PairingPage() {
                         onClick={() =>
                           setCycle((c) => ({ ...c, [category]: (c[category] ?? 0) + 1 }))
                         }
-                        className="text-[11px] text-dim hover:text-zlato-2"
+                        className="text-micro text-dim hover:text-zlato-2"
                       >
                         ↻ {t("pair.next")}
                       </button>
@@ -561,7 +561,7 @@ export function PairingPage() {
                 <div className="flex justify-end">
                   <button
                     onClick={() => setCycle((c) => ({ ...c, cigars: (c["cigars"] ?? 0) + 1 }))}
-                    className="text-[11px] text-dim hover:text-zlato-2"
+                    className="text-micro text-dim hover:text-zlato-2"
                   >
                     ↻ {t("pair.next")}
                   </button>
@@ -694,7 +694,7 @@ function ResultCard({
           onKeyDown={(e) => e.key === "Enter" && onOpen()}
           className="min-w-0 flex-1 cursor-pointer text-left"
         >
-          <div className="truncate font-display text-[15px] text-papir">{title}</div>
+          <div className="truncate font-display text-base text-papir">{title}</div>
           <div className="truncate text-xs text-dim">
             {sub} ·{" "}
             {priceUrl ? (
@@ -726,7 +726,7 @@ function ResultCard({
           {vitolas.map((v) => (
             <span
               key={v.name}
-              className="inline-flex shrink-0 items-center gap-1 rounded-md border border-dim/25 px-2 py-1 text-[11px] text-papir/85"
+              className="inline-flex shrink-0 items-center gap-1 rounded-md border border-dim/25 px-2 py-1 text-micro text-papir/85"
             >
               {v.name}
               {v.smokeTimeMin != null && (

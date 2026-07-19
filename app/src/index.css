@@ -16,6 +16,16 @@
 
   --font-display: "Marcellus", serif;
   --font-sans: "Manrope Variable", system-ui, sans-serif;
+
+  /* Tipografska skala (samo ove veličine u UI):
+     micro 10px — eyebrow / meta labeli
+     xs     12px — sekundarni tekst, CTA uppercase
+     sm     14px — body, liste, forme
+     base   16px — naslovi kartica
+     lg     18px — naglasci
+     xl/2xl — sheet / brand naslovi */
+  --text-micro: 0.625rem;
+  --text-micro--line-height: 1rem;
 }
 
 html {

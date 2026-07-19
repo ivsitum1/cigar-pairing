@@ -171,7 +171,7 @@ export function ShoppingPage() {
               {wishlistShops.map((g) => (
                 <span
                   key={g.shop}
-                  className="rounded-full border border-dim/25 bg-cedar px-2.5 py-1 text-[11px] text-dim"
+                  className="rounded-full border border-dim/25 bg-cedar px-2.5 py-1 text-micro text-dim"
                 >
                   {g.shop}: {g.count}×{g.total > 0 ? ` · ~${g.total.toFixed(0)} €` : ""}
                 </span>
@@ -206,7 +206,7 @@ export function ShoppingPage() {
                     className="flex w-full items-baseline justify-between gap-2 rounded-lg border border-dim/15 bg-humidor/60 px-2.5 py-2 text-left hover:border-zlato/40"
                   >
                     <span className="min-w-0">
-                      <span className="text-[10px] uppercase tracking-widest text-oxblood">
+                      <span className="text-micro uppercase tracking-widest text-oxblood">
                         {lx(bucket.label)}
                       </span>
                       <span className="block truncate text-sm text-papir">
@@ -252,7 +252,7 @@ export function ShoppingPage() {
                       className="flex w-full items-baseline justify-between gap-2 rounded-lg border border-dim/15 bg-humidor/60 px-2.5 py-2 text-left hover:border-zlato/40"
                     >
                       <span className="min-w-0">
-                        <span className="text-[10px] uppercase tracking-widest text-dim">
+                        <span className="text-micro uppercase tracking-widest text-dim">
                           {t(key)}
                         </span>
                         <span className="block truncate text-sm text-papir">{wishMark(d.id)}{d.name}</span>
@@ -288,7 +288,7 @@ export function ShoppingPage() {
             className="flex w-full items-baseline justify-between gap-2 rounded-lg border border-dim/15 bg-cedar px-3 py-2.5 text-left hover:border-zlato/40"
           >
             <span className="min-w-0">
-              <span className="text-[10px] uppercase tracking-widest text-zlato">
+              <span className="text-micro uppercase tracking-widest text-zlato">
                 {lx(bucket.label)}
               </span>
               <span className="block truncate text-sm text-papir">{wishMark(drink.id)}{drink.name}</span>
@@ -362,7 +362,7 @@ export function ShoppingPage() {
       <div className="grid gap-2 sm:grid-cols-2">
         {SHOPPING.shops.map((s) => (
           <div key={s.name} className="rounded-xl border border-dim/15 bg-cedar p-3">
-            <div className="font-display text-[15px] text-papir">{s.name}</div>
+            <div className="font-display text-base text-papir">{s.name}</div>
             <div className="text-xs text-dim">{s.location}</div>
             <div className="mt-1 text-xs leading-relaxed text-dim/90">{lx(s.note)}</div>
           </div>

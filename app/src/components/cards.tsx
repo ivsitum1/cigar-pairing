@@ -58,7 +58,7 @@ export function CigarRow({
       className="w-full rounded-xl border border-dim/15 bg-cedar p-3 text-left transition-colors hover:border-zlato/40"
     >
       <div className="flex items-baseline justify-between gap-2">
-        <span className="font-display text-[15px] text-papir">
+        <span className="font-display text-base text-papir">
           {cigar.brand} <span className="text-zlato-2">{cigar.line}</span>
           <OwnedDot id={cigar.id} />
         </span>
@@ -98,7 +98,7 @@ export function DrinkRow({
       className="w-full rounded-xl border border-dim/15 bg-cedar p-3 text-left transition-colors hover:border-zlato/40"
     >
       <div className="flex items-baseline justify-between gap-2">
-        <span className="font-display text-[15px] text-papir">
+        <span className="font-display text-base text-papir">
           {rank != null && <span className="mr-1.5 text-xs text-dim">#{rank}</span>}
           {drink.name}
           <OwnedDot id={drink.id} />

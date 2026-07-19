@@ -48,7 +48,7 @@ export function Club101Page({ onBack }: { onBack: () => void }) {
           <LessonBody text={lx(lesson.body)} />
           {lesson.shopLinks && lesson.shopLinks.length > 0 && (
             <div className="mt-6 border-t border-dim/15 pt-4">
-              <p className="mb-2.5 font-display text-[10px] uppercase tracking-[0.18em] text-dim">
+              <p className="mb-2.5 font-display text-micro uppercase tracking-[0.18em] text-dim">
                 {t("club.shopLink")}
               </p>
               <div className="flex flex-wrap gap-2">
@@ -58,7 +58,7 @@ export function Club101Page({ onBack }: { onBack: () => void }) {
                     href={link.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="rounded-full border border-zlato/40 px-3 py-1.5 font-display text-[10px] uppercase tracking-widest text-zlato hover:bg-zlato/10"
+                    className="rounded-full border border-zlato/40 px-3 py-1.5 font-display text-micro uppercase tracking-widest text-zlato hover:bg-zlato/10"
                   >
                     {lx(link.label)} ↗
                   </a>
@@ -85,7 +85,7 @@ export function Club101Page({ onBack }: { onBack: () => void }) {
           </Chip>
         ))}
       </div>
-      <p className="mb-2 text-[10px] uppercase tracking-widest text-dim">
+      <p className="mb-2 text-micro uppercase tracking-widest text-dim">
         {cards.length} {t("club.101Lessons")}
       </p>
       <div className="space-y-2">
@@ -97,13 +97,13 @@ export function Club101Page({ onBack }: { onBack: () => void }) {
             className="block w-full rounded-xl border border-dim/15 bg-cedar p-4 text-left transition-colors hover:border-zlato/40"
           >
             <div className="flex items-baseline gap-2.5">
-              <span className="font-display text-[10px] tabular-nums text-zlato/60">
+              <span className="font-display text-micro tabular-nums text-zlato/60">
                 {String(index + 1).padStart(2, "0")}
               </span>
               <h3 className="font-display text-sm tracking-wide text-zlato-2">{lx(card.title)}</h3>
             </div>
             <p className="mt-2 text-xs leading-relaxed text-papir/65">{preview(card.body, lang)}</p>
-            <span className="mt-3 inline-block font-display text-[10px] uppercase tracking-widest text-zlato">
+            <span className="mt-3 inline-block font-display text-micro uppercase tracking-widest text-zlato">
               {t("club.101OpenLesson")} →
             </span>
           </button>

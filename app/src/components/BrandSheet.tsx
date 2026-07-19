@@ -128,7 +128,7 @@ function SortChip({
   return (
     <button
       onClick={onClick}
-      className={`rounded-full border px-2.5 py-1 text-[11px] ${
+      className={`rounded-full border px-2.5 py-1 text-micro ${
         active ? "border-zlato bg-zlato/15 text-zlato-2" : "border-dim/30 text-dim"
       }`}
     >

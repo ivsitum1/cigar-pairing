@@ -26,7 +26,7 @@ export function SystemBanners() {
           <span>{t("sys.updateReady")}</span>
           <button
             onClick={() => updateServiceWorker(true)}
-            className="shrink-0 rounded-md border border-zlato/60 px-3 py-1.5 font-display text-[11px] uppercase tracking-widest text-zlato hover:bg-zlato/10"
+            className="shrink-0 rounded-md border border-zlato/60 px-3 py-1.5 font-display text-micro uppercase tracking-widest text-zlato hover:bg-zlato/10"
           >
             {t("sys.reload")}
           </button>

@@ -82,7 +82,7 @@ export default function App() {
             <button
               key={n.id}
               onClick={() => navigate({ page: n.id })}
-              className={`flex flex-col items-center gap-0.5 py-2.5 pb-[max(0.625rem,env(safe-area-inset-bottom))] text-[11px] transition-colors ${
+              className={`flex flex-col items-center gap-0.5 py-2.5 pb-[max(0.625rem,env(safe-area-inset-bottom))] text-micro transition-colors ${
                 page === n.id ? "text-zlato-2" : "text-dim hover:text-papir"
               }`}
               aria-current={page === n.id ? "page" : undefined}

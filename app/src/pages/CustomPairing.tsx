@@ -195,7 +195,7 @@ function Slot({
         active ? "border-zlato bg-zlato/10" : "border-dim/25 bg-cedar hover:border-zlato/40"
       }`}
     >
-      <div className="text-[10px] uppercase tracking-widest text-dim">{label}</div>
+      <div className="text-micro uppercase tracking-widest text-dim">{label}</div>
       <div className={`mt-1 font-display text-sm ${filled ? "text-papir" : "text-dim/60"}`}>
         {filled ?? "—"}
       </div>

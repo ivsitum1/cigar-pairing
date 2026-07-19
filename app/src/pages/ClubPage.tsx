@@ -168,7 +168,7 @@ export function ClubPage() {
       {/* citat dana */}
       <SectionTitle>{t("club.quote")}</SectionTitle>
       <figure className="rounded-xl border border-zlato/25 bg-cedar p-4">
-        <blockquote className="font-display text-[15px] leading-relaxed text-papir">
+        <blockquote className="font-display text-base leading-relaxed text-papir">
           „{lx(quote.text)}”
         </blockquote>
         <figcaption className="mt-2 text-xs text-zlato-2">

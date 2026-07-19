@@ -61,7 +61,7 @@ export function VitolaPicker({
                   </span>
                 </div>
                 {blurb && (
-                  <div className="mt-1 text-[11px] leading-snug text-dim/85">{blurb}</div>
+                  <div className="mt-1 text-micro leading-snug text-dim/85">{blurb}</div>
                 )}
               </button>
             );

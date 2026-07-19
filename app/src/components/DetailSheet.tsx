@@ -186,7 +186,7 @@ function CigarDetails({
 
       {/* vitole s vremenom pusenja i cijenom */}
       <div className="mt-3">
-        <div className="mb-1 text-[10px] uppercase tracking-widest text-dim">
+        <div className="mb-1 text-micro uppercase tracking-widest text-dim">
           {t("common.vitolas")}
         </div>
         <div className="space-y-1">
@@ -213,7 +213,7 @@ function CigarDetails({
                   </span>
                 </div>
                 {blurb && (
-                  <div className="mt-0.5 text-[11px] leading-snug text-dim/85">{blurb}</div>
+                  <div className="mt-0.5 text-micro leading-snug text-dim/85">{blurb}</div>
                 )}
               </div>
             );
@@ -233,7 +233,7 @@ function CigarDetails({
 
       {/* kupnja po trzistu */}
       <div className="mt-3">
-        <div className="mb-1 text-[10px] uppercase tracking-widest text-dim">
+        <div className="mb-1 text-micro uppercase tracking-widest text-dim">
           {t("common.buyIn")}
         </div>
         <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
@@ -261,7 +261,7 @@ function CigarDetails({
       {/* o brendu — kratka povijest odmah u kartici */}
       {brand && (
         <div className="mt-3 rounded-lg border border-dim/20 bg-cedar/60 p-3">
-          <div className="text-[10px] uppercase tracking-widest text-dim">
+          <div className="text-micro uppercase tracking-widest text-dim">
             {cigar.brand} · {cn(brand.country)} · {brand.founded}
           </div>
           <p className="mt-1 text-xs leading-relaxed text-papir/80">
@@ -314,13 +314,13 @@ function DrinkDetails({ drink }: { drink: Drink }) {
         ))}
       </div>
       {drink.qualityScore != null && (
-        <p className="mt-1 text-[11px] leading-snug text-dim/70">
+        <p className="mt-1 text-micro leading-snug text-dim/70">
           {t("rate.qualityWhat")}
         </p>
       )}
       {/* neutralna pravila kategorije — što je zakonski dopušteno dodati */}
       {drink.additiveStatus && ADDITIVE_RULES[drink.category] && (
-        <p className="mt-1 text-[11px] leading-snug text-dim/70">
+        <p className="mt-1 text-micro leading-snug text-dim/70">
           {lx(ADDITIVE_RULES[drink.category])}
         </p>
       )}

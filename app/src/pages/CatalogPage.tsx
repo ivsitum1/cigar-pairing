@@ -208,7 +208,7 @@ export function CatalogPage({
 
       {/* sortiranje */}
       <div className="no-scrollbar mt-2 flex items-center gap-2 overflow-x-auto">
-        <span className="shrink-0 text-[10px] uppercase tracking-widest text-dim">
+        <span className="shrink-0 text-micro uppercase tracking-widest text-dim">
           {t("sort.label")}
         </span>
         {(tab === "cigars"

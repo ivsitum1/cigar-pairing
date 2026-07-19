@@ -15,7 +15,7 @@ export function Meter({
   return (
     <span className="inline-flex items-center gap-1.5">
       {label && (
-        <span className="text-[10px] uppercase tracking-widest text-dim">
+        <span className="text-micro uppercase tracking-widest text-dim">
           {label}
         </span>
       )}
@@ -55,7 +55,7 @@ export function ScoreBand({ score, title }: { score: number; title?: string }) {
       <span className="font-display text-base leading-none" style={{ color: tone }}>
         {score}
       </span>
-      <span className="text-[7px] uppercase tracking-wider text-dim">%</span>
+      <span className="text-micro uppercase tracking-wider text-dim">%</span>
     </div>
   );
 }

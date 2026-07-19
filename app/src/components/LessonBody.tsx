@@ -26,7 +26,7 @@ function SectionBlock({
   return (
     <section className={index > 0 ? "mt-5 border-t border-dim/15 pt-4" : "mt-4"}>
       {block.title ? (
-        <h3 className="mb-2.5 font-display text-[11px] uppercase tracking-[0.18em] text-zlato">
+        <h3 className="mb-2.5 font-display text-micro uppercase tracking-[0.18em] text-zlato">
           {block.title}
         </h3>
       ) : null}
@@ -37,7 +37,7 @@ function SectionBlock({
         {block.items.map((item, i) => {
           const marker =
             item.kind === "number" ? (
-              <span className="mt-0.5 font-display text-[10px] tabular-nums text-zlato/70">
+              <span className="mt-0.5 font-display text-micro tabular-nums text-zlato/70">
                 {String(++numberCounter).padStart(2, "0")}
               </span>
             ) : (
@@ -69,7 +69,7 @@ export function LessonBody({ text }: { text: string }) {
             <p
               key={i}
               className={`leading-relaxed ${
-                isLead ? "text-[15px] text-papir" : "mt-4 text-sm text-papir/80"
+                isLead ? "text-base text-papir" : "mt-4 text-sm text-papir/80"
               }`}
             >
               {block.text}
