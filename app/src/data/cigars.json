@@ -7834,7 +7834,12 @@
    }
   ],
   "priceUrl": "https://havana-cigar-shop.com/proizvod/davidoff-tubos-selection-white-3/",
-  "profileEstimated": true
+  "profileEstimated": true,
+  "lineup": [
+   "Signature No. 2",
+   "Signature 2000",
+   "Aniversario Special R"
+  ]
  },
  {
   "id": "cig-davidoff-davidoff-winston",
@@ -14533,7 +14538,7 @@
     "url": "https://humidor.hr/hr/proizvod/la-galera-anemoi-anemoi-6-3-8-x-52/"
    },
    {
-    "name": "Galera Anemoi",
+    "name": "Anemoi Toro",
     "format": "52 x 162mm",
     "smokeTimeMin": 60,
     "priceEUR": 17.5,
@@ -14653,7 +14658,7 @@
  {
   "id": "cig-la-galera-eurus-5-1-2-x-48",
   "brand": "La Galera",
-  "line": "Eurus 5 1⁄2 X 48",
+  "line": "Anemoi Eurus 5 1⁄2 X 48",
   "vitola": "X 48",
   "format": "48 x 140mm",
   "country": "Dominikana",
@@ -14690,7 +14695,7 @@
     "url": "https://humidor.hr/hr/proizvod/la-galera-anemoi-eurus-5%c2%bd-x-48/"
    },
    {
-    "name": "Galera Eurus",
+    "name": "Anemoi Eurus Robusto",
     "format": "48 x 140mm",
     "smokeTimeMin": 50,
     "priceEUR": 14.0,
@@ -15344,7 +15349,15 @@
    }
   ],
   "priceUrl": "https://humidor.hr/hr/proizvod/la-galera-robusto-sampler/",
-  "profileEstimated": true
+  "profileEstimated": true,
+  "lineup": [
+   "Habano Robusto ×2",
+   "Maduro Robusto ×2",
+   "Connecticut Robusto ×2",
+   "1936 Box Pressed Robusto ×2",
+   "Imperial Jade Robusto ×1",
+   "Anemoi Eurus ×1"
+  ]
  },
  {
   "id": "cig-la-galera-rojo-gift-pack",
@@ -15387,7 +15400,14 @@
    }
   ],
   "priceUrl": "https://humidor.hr/hr/proizvod/la-galera-rojo-gift-pack/",
-  "profileEstimated": true
+  "profileEstimated": true,
+  "lineup": [
+   "1936 Box Pressed",
+   "Anemoi",
+   "Connecticut",
+   "Habano",
+   "Maduro"
+  ]
  },
  {
   "id": "cig-la-galera-toro-sampler",
@@ -15437,7 +15457,15 @@
    }
   ],
   "priceUrl": "https://humidor.hr/hr/proizvod/la-galera-toro-sampler/",
-  "profileEstimated": true
+  "profileEstimated": true,
+  "lineup": [
+   "Habano El Lector Toro ×2",
+   "Maduro El Lector Toro ×2",
+   "Connecticut El Lector Toro ×2",
+   "1936 Box Pressed El Lector Toro ×2",
+   "Imperial Jade Toro ×1",
+   "Anemoi Toro ×1"
+  ]
  },
  {
   "id": "cig-macanudo-macanudo-extra",
@@ -17517,7 +17545,13 @@
    }
   ],
   "priceUrl": "https://havana-cigar-shop.com/proizvod/nub-sampler-tubos-4/",
-  "profileEstimated": true
+  "profileEstimated": true,
+  "lineup": [
+   "Nub 460 Cameroon",
+   "Nub 460 Habano",
+   "Nub 460 Connecticut",
+   "Nub 460 Maduro"
+  ]
  },
  {
   "id": "cig-nub-sun-grown",
@@ -17823,7 +17857,14 @@
    }
   ],
   "priceUrl": "https://havana-cigar-shop.com/proizvod/oliva-robusto-sampler-5/",
-  "profileEstimated": true
+  "profileEstimated": true,
+  "lineup": [
+   "Connecticut Reserve Robusto",
+   "Serie G Robusto",
+   "Serie O Robusto",
+   "Serie V Robusto",
+   "Serie V Melanio Robusto"
+  ]
  },
  {
   "id": "cig-oliva-serie-g",
@@ -26767,7 +26808,15 @@
     "url": "https://havana-cigar-shop.com/proizvod/davidoff-figurado-selection-6/"
    }
   ],
-  "priceUrl": "https://havana-cigar-shop.com/proizvod/davidoff-figurado-selection-6/"
+  "priceUrl": "https://havana-cigar-shop.com/proizvod/davidoff-figurado-selection-6/",
+  "lineup": [
+   "Aniversario Short Perfecto",
+   "Aniversario Special T",
+   "Millennium Piramides",
+   "Escurio Gran Perfecto",
+   "Nicaragua Diadema",
+   "Yamasa Piramides"
+  ]
  },
  {
   "id": "cig-cohiba-maduro-secretos",
