@@ -1,7 +1,6 @@
 import { describe, expect, it } from "vitest";
 import {
   drinkBuyLink,
-  drinkSearchHref,
   isDrinkProductUrl,
   urlMatchesDrinkName,
 } from "./drinkBuyLink";
@@ -31,20 +30,23 @@ describe("isDrinkProductUrl", () => {
       ),
     ).toBe(true);
     expect(isDrinkProductUrl("https://ecuga.com/proizvod/courvoisier-xo")).toBe(true);
-    expect(
-      isDrinkProductUrl(
-        "https://ecuga.com/katalog/whisky/americki-bourbon-whiskey/blantons-original",
-      ),
-    ).toBe(true);
   });
 
   it("odbija katalog / kategoriju", () => {
     expect(isDrinkProductUrl("https://ecuga.com/katalog/rum")).toBe(false);
     expect(
-      isDrinkProductUrl("https://ecuga.com/katalog/whisky/skotski-maltgrain-whisky"),
+      isDrinkProductUrl("https://ecuga.com/katalog/whisky/irski-whiskey"),
     ).toBe(false);
     expect(isDrinkProductUrl("https://www.vivat-finavina.hr/vrsta/port/")).toBe(false);
     expect(isDrinkProductUrl("https://dingac.hr/webshop/")).toBe(false);
+  });
+
+  it("prihvaca ecuga katalog stranicu PROIZVODA (4 segmenta)", () => {
+    expect(
+      isDrinkProductUrl(
+        "https://ecuga.com/katalog/whisky/skotski-maltgrain-whisky/aberlour-abunadh-alba",
+      ),
+    ).toBe(true);
   });
 });
 
@@ -54,15 +56,6 @@ describe("urlMatchesDrinkName", () => {
       urlMatchesDrinkName(
         "Hampden HLCF Classic 60%",
         "https://allez.hr/shop/svi-proizvodi/hampden-hlcf-classic-estate-pure-single-jamaican-rum-60-vol-07l-u-poklon-kutiji",
-      ),
-    ).toBe(true);
-  });
-
-  it("prihvaca ecuga katalog product slug", () => {
-    expect(
-      urlMatchesDrinkName(
-        "Blanton's Original",
-        "https://ecuga.com/katalog/whisky/americki-bourbon-whiskey/blantons-original",
       ),
     ).toBe(true);
   });
@@ -78,6 +71,51 @@ describe("urlMatchesDrinkName", () => {
       urlMatchesDrinkName(
         "Frapin Château de Fontpinot XO",
         "https://ecuga.com/proizvod/frapin-vip-xo",
+      ),
+    ).toBe(false);
+  });
+
+  it("prihvaca apostrofe i spojene rijeci u slugu", () => {
+    expect(
+      urlMatchesDrinkName(
+        "Blanton's STRAIGHT FROM THE BARREL BOURBON",
+        "https://allez.hr/shop/svi-proizvodi/blantons-straight-from-the-barrel-bourbon-659-vol-07l-in-giftbox",
+      ),
+    ).toBe(true);
+    expect(
+      urlMatchesDrinkName(
+        "Aberlour A'BUNADH ALBA Original Cask Strength Batch No. 007",
+        "https://allez.hr/shop/svi-proizvodi/aberlour-abunadh-alba-original-cask-strength-batch-no-007-589-vol-07l-u-poklon-kutiji",
+      ),
+    ).toBe(true);
+    expect(
+      urlMatchesDrinkName(
+        "Bruichladdich 18 YO RE/DEFINE EIGHTEEN Islay Single Malt",
+        "https://allez.hr/shop/svi-proizvodi/bruichladdich-18-yo-redefine-eighteen-islay-single-malt-50-vol-07l",
+      ),
+    ).toBe(true);
+  });
+
+  it("tolerira godiste iz imena kad ga slug uopce nema", () => {
+    expect(
+      urlMatchesDrinkName(
+        "Benriach 27 YO Smoky CASK EDITION Oloroso Sherry Vintage 1994",
+        "https://allez.hr/shop/svi-proizvodi/benriach-27-yo",
+      ),
+    ).toBe(true);
+  });
+
+  it("odbija drugu VS/VSOP/XO oznaku i tudje godiste u slugu", () => {
+    expect(
+      urlMatchesDrinkName(
+        "Christian Drouin Calvados VSOP",
+        "https://ecuga.com/proizvod/christian-drouin-xo-calvados",
+      ),
+    ).toBe(false);
+    expect(
+      urlMatchesDrinkName(
+        "Rémy Martin VSOP",
+        "https://allez.hr/shop/svi-proizvodi/remy-martin-1738-accord-royal-cognac-fine-champagne-40-vol-07l-u-poklon-kutiji",
       ),
     ).toBe(false);
   });
@@ -98,20 +136,6 @@ describe("urlMatchesDrinkName", () => {
   });
 });
 
-describe("drinkSearchHref", () => {
-  it("ne koristi exact-phrase navodnike", () => {
-    const d = base({
-      name: "Appleton Estate 15 Black River",
-      shopHR: "ecuga.com",
-    });
-    const href = drinkSearchHref(d);
-    const q = decodeURIComponent(href.split("q=")[1] ?? "");
-    expect(q).not.toMatch(/^"/);
-    expect(q).toContain("site:ecuga.com");
-    expect(q).toContain("appleton");
-  });
-});
-
 describe("drinkBuyLink", () => {
   it("pada na search kad je priceUrl kategorija", () => {
     const d = base({
@@ -122,8 +146,7 @@ describe("drinkBuyLink", () => {
     const link = drinkBuyLink(d);
     expect(link.label).toBe("search");
     expect(link.href).toContain("google.com/search");
-    const q = decodeURIComponent(link.href.split("q=")[1] ?? "");
-    expect(q).not.toMatch(/^"/);
+    expect(link.href).toContain(encodeURIComponent("Appleton Estate 15 Black River"));
   });
 
   it("pada na search kad slug ne odgovara imenu", () => {
@@ -148,7 +171,7 @@ describe("drinkBuyLink", () => {
     expect(link.href).toContain("hampden-hlcf-classic");
   });
 
-  it("zadrzava buy kad je product URL dobar iako shopHR nije isti domain", () => {
+  it("provjereni product URL vrijedi i kad se shopHR tekst ne slaze s domenom", () => {
     const d = base({
       name: "Hampden HLCF Classic 60%",
       priceUrl:
@@ -158,17 +181,12 @@ describe("drinkBuyLink", () => {
     expect(drinkBuyLink(d).label).toBe("buy");
   });
 
-  it("zadrzava buy za ecuga katalog product path", () => {
-    const d = base({
-      category: "whisky",
-      name: "Blanton's Original",
-      style: "bourbon",
-      priceUrl:
-        "https://ecuga.com/katalog/whisky/americki-bourbon-whiskey/blantons-original",
-      shopHR: "ecuga.com",
-    });
-    const link = drinkBuyLink(d);
-    expect(link.label).toBe("buy");
-    expect(link.href).toContain("blantons-original");
+  it("search link je bez navodnika i uvijek sadrzi 'cijena'", () => {
+    const d = base({ name: "Laphroaig 25 YO 2019", category: "whisky" });
+    const href = drinkBuyLink(d).href;
+    expect(href).toContain("google.com/search");
+    expect(href).not.toContain("%22"); // fraza pod navodnicima zna vratiti 0 rezultata
+    expect(href).toContain("cijena");
+    expect(decodeURIComponent(href)).toContain("Laphroaig 25 YO 2019 whisky cijena");
   });
 });
