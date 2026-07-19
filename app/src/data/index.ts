@@ -110,9 +110,11 @@ export const ALL_BRANDS: string[] = [
 ].sort((a, b) => a.localeCompare(b));
 
 // linkovi za kupnju po tržištu — HR izravno (humidor/havana), EU cigarworld.de,
-// USA/Svijet pouzdana pretraga (trgovine blokiraju izravne bot-provjere URL-ova)
+// USA izravna pretraga US trgovine (Google site:ci… često 0 pogodaka),
+// WW otvorena Google pretraga bez site: ograničenja
 export function cigarMarketLinks(c: Cigar): { market: string; url: string }[] {
-  const q = encodeURIComponent(`${c.brand} ${c.line}`);
+  const label = `${c.brand} ${c.line}`.trim();
+  const q = encodeURIComponent(label);
   const links: { market: string; url: string }[] = [];
   const defaultVitola = resolveDefaultVitola(c);
   const hrUrl = defaultVitola?.url ?? c.priceUrl;
@@ -123,14 +125,15 @@ export function cigarMarketLinks(c: Cigar): { market: string; url: string }[] {
     links.push({ market: "EU", url: `https://www.cigarworld.de/search?q=${q}` });
   }
   if (c.markets.includes("USA")) {
+    // Famous Smoke prihvaća search URL iz EU; CI često blokira / GDPR redirect
     links.push({
       market: "USA",
-      url: `https://www.google.com/search?q=site%3Acigarsinternational.com+${q}`,
+      url: `https://www.famous-smoke.com/search?q=${q}`,
     });
   }
   links.push({
     market: "WW",
-    url: `https://www.google.com/search?q=${q}+cigar+buy+online`,
+    url: `https://www.google.com/search?q=${encodeURIComponent(`${label} cigar buy online`)}`,
   });
   return links;
 }

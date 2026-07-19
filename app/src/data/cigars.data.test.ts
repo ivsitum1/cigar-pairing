@@ -122,6 +122,16 @@ describe("cigars.json integrity", () => {
     expect(gr!.priceUrl).toContain("arturo-fuente-cuban-corona");
   });
 
+  it("USA kupnja ide na Famous Smoke search, ne na Google site: (0 pogodaka)", () => {
+    const withUsa = CIGARS.find((c) => c.markets.includes("USA"));
+    expect(withUsa).toBeDefined();
+    const usa = cigarLinkForMarket(withUsa!, "USA");
+    expect(usa).toContain("famous-smoke.com/search");
+    expect(usa).toContain(encodeURIComponent(`${withUsa!.brand} ${withUsa!.line}`.trim()));
+    expect(usa).not.toContain("google.com");
+    expect(usa).not.toContain("site%3A");
+  });
+
   it("zadana vitola priceUrl nije najjeftinija vitola kad se razlikuju", () => {
     const mismatches: string[] = [];
     for (const c of CIGARS) {
