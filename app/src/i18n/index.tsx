@@ -45,8 +45,8 @@ const STRINGS = {
   "club.shopLink": { hr: "Trgovina", en: "Shop" },
   "club.bonton": { hr: "Pušački bonton", en: "Smoking manners" },
   "club.bontonTeaser": {
-    hr: "Mala knjiga manira za stol s cigarom i čašom — deset kratkih poglavlja u duhu klasičnog britanskog bontona.",
-    en: "A short book of manners for a table with cigar and glass — ten brief chapters in the spirit of classic British etiquette.",
+    hr: "Mala knjiga manira za stol s cigarom i čašom — jedanaest kratkih poglavlja u duhu klasičnog britanskog bontona.",
+    en: "A short book of manners for a table with cigar and glass — eleven brief chapters in the spirit of classic British etiquette.",
   },
   "club.bontonOpen": { hr: "Otvori knjigu", en: "Open the book" },
   "club.bontonSubtitle": { hr: "Kratka knjiga manira", en: "A short book of manners" },
@@ -55,8 +55,8 @@ const STRINGS = {
   "club.bontonBackList": { hr: "Natrag na sadržaj", en: "Back to contents" },
   "club.lexicon": { hr: "Leksikon pairing jezika", en: "Pairing language lexicon" },
   "club.lexiconTeaser": {
-    hr: "Kratak rječnik za precizniji razgovor o mostovima, tijelu, snazi, trećinama i ritmu pairinga.",
-    en: "A short vocabulary for speaking more clearly about bridges, body, strength, thirds and pairing rhythm.",
+    hr: "Kratak rječnik pairinga: kako opisati što spaja cigaru i piće — most (zajednička točka), tijelo, snaga, trećine i ritam.",
+    en: "A short pairing vocabulary: how to describe what connects a cigar and a drink — the bridge (a shared point), body, strength, thirds and rhythm.",
   },
   "club.lexiconOpen": { hr: "Otvori leksikon", en: "Open the lexicon" },
   "club.lexiconSubtitle": { hr: "Rječnik za stol", en: "Vocabulary for the table" },

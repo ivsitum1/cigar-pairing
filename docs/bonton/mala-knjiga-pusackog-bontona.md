@@ -2,7 +2,7 @@
 
 > Radni rukopis za kasnije proširenje u pravu knjigu.
 
-> Izvor u appu: `app/src/data/bonton.json` (HR/EN). Ovaj MD je hrvatski kanonski tekst za pisanje.
+> Izvor u aplikaciji: `app/src/data/bonton.json` (HR/EN). Ovaj MD je hrvatski kanonski tekst za pisanje.
 
 
 ## Epigraf
@@ -20,7 +20,7 @@ Bonton nije policija ukusa. To je način da drugi udišu lakše dok ti uživaš.
 ### Temelji
 
 - Pažnja — gledaš tko sjedi pokraj tebe prije nego zapališ.
-- Umjerenost — ritam koji ne greje duhan i ne greje društvo.
+- Umjerenost — ritam koji ne grije duhan i ne grije društvo.
 - Domišljenost — rezač, pepeljara i voda već na stolu, bez improvizacije.
 - Skromnost — tvoja najdraža maduro nije obvezan ispit za gosta.
 
@@ -40,7 +40,7 @@ Dim putuje dalje od tvoje dobre namjere. Prostor biraš prije plamena.
 
 - Pitaj — osobito u tuđem domu, na terasi blizu prolaznika, uz djecu ili netipično društvo.
 - Poštuj zabranu i znak — bez pregovora „samo jedan dim”.
-- Odmakni se od hrane koja nije tvoja degustacija — kuhinja, buffet, tuđi desert.
+- Odmakni se od hrane koja nije tvoja degustacija — kuhinja, švedski stol, tuđi desert.
 - Zatvorena soba bez ventilacije traži kraću sesiju ili drugi trenutak.
 
 ### U društvu
@@ -66,7 +66,7 @@ Nuditi cigaru znači nuditi vrijeme — ne samo list.
 ### Što ne raditi
 
 - Ne paliti tuđu cigaru bez pitanja (osim ako su rekli „upali mi”).
-- Ne ocjenjivati naglas tuđi draw ili pepeo.
+- Ne ocjenjivati naglas tuđe povlačenje ili pepeo.
 - Ne uzimati zadnju iz kutije domaćina bez ponude.
 
 ### Dijeljenje boce
@@ -85,13 +85,13 @@ Gospodin (i dobra družbenica) ne žuri dimom da dokaže snagu. Žuri rijetko �
 
 - Kratka povlačenja, pauze između. Crni vrući pepeo = upozorenje, ne trofej.
 - Razgovor ima prednost pred „još jednim gutljajem dima” dok netko priča.
-- Mobitel licem dolje ili dalje — bonton stoljeća nije scroll.
+- Mobitel licem dolje ili dalje — bonton stoljeća nije listanje ekrana.
 
 ### Prisutnost
 
 - Gledaj u oči kad nudiš čašu ili cigaru.
 - Slušaj više nego što predaješ lekciju o XO-u.
-- Ako moraš otići sredinom, ugasi uctivo i zahvali — ne ostavljaj goreći stub kao spomenik.
+- Ako moraš otići sredinom, ugasi učtivo i zahvali — ne ostavljaj goreći stub kao spomenik.
 
 
 ---
@@ -99,23 +99,25 @@ Gospodin (i dobra družbenica) ne žuri dimom da dokaže snagu. Žuri rijetko �
 ## V. Pepeo, miris, trag
 
 
-Ono što ostane iza tebe govori glasnije od branda na bandu.
+Ono što ostane iza tebe govori glasnije od imena na prstenu.
 
 ### Pepeo
 
 - Pepeljara s utorom — ne šalica za kavu, ne podni rub biljke.
-- Ne treperi; pusti pepeo da padne. Podrži cigar kad treba.
+- Pepeljara nije kanta: celofan, prsten i žvakaća idu u smeće.
+- Ne treperi; pusti pepeo da padne. Podrži cigaru kad treba.
 - Na kraju: ugasi potpuno, isprazni pepeljaru ako si gost koji ostaje do kraja večeri — ili pitaj domaćina.
+- Ako pepeo padne na pod ili stolac, očisti bez drame. Ne stubaj list poput cigarete.
 
 ### Miris
 
-- Jako peated piće i teški dim u maloj sobi — najavi ili biraj vani.
-- Parfem i cologne u mjeri; nepce drugih također degustira.
+- Jako dimljeno piće i teški dim u maloj sobi — najavi ili biraj vani.
+- Parfem i kolonjska voda u mjeri; nepce drugih također degustira.
 - Odjeća prima dim — u zatvorenom prostoru biraj kraće formate.
 
 ### Trag
 
-- Band i celofan ne idu pod stolicu. Upaljač ne ostaje otvoren na vjetru uz papir.
+- Prsten i celofan ne idu pod stolicu. Upaljač ne ostaje otvoren na vjetru uz papir.
 
 
 ---
@@ -123,7 +125,7 @@ Ono što ostane iza tebe govori glasnije od branda na bandu.
 ## VI. Stol: čaša, voda, redoslijed
 
 
-Pairing stol je mali ritual — ne pozornica za egom.
+Uparivanje za stolom mali je ritual — ne pozornica za taštinu.
 
 ### Postavljanje
 
@@ -134,7 +136,7 @@ Pairing stol je mali ritual — ne pozornica za egom.
 ### Redoslijed
 
 - Miris pića → gutljaj → dim → gutljaj. Traži most, ne pobjedu.
-- Prvo blže, zatim snažnije — i u cigari i u čaši, kad vodiš večer.
+- Prvo blaže, zatim snažnije — i u cigari i u čaši, kad vodiš večer.
 - Ako gost zaostaje, uspori svoj ritam; ne „vuči” naprijed sam.
 
 ### Riječi za stolom
@@ -152,25 +154,55 @@ Dobar domaćin nudi ljestvicu. Dobar gost zna sići s nje bez srama.
 ### Domaćin
 
 - Pitaj za snagu, dimljenost i vrijeme prije nego otvoriš kutiju.
-- Drži blagu i srednju cigaru + pristupačno piće (VSOP, tawny, ne peated bombu na startu).
+- Drži blagu i srednju cigaru + pristupačno piće (VSOP, tawny, ne dimljenu bombu na startu).
 - Pokaži gdje je pepeljara i WC — sitnice koje spašavaju večer.
-- Ne forsiraj „još jednu” kad je gost sati sit.
+- Ne forsiraj „još jednu” kad je gost sit.
 
 ### Gost
 
 - Donesi mali dar ako je običaj (bocu, kutiju, ništa pretjerano).
-- Poštuj RH i red u humidoru — ne prekapaj tuđe zalihe.
+- Poštuj vlagu i red u humidoru — ne prekapaj tuđe zalihe.
 - Zahvali konkretno („taj amontillado uz Connecticut…”).
 - Skraćivanje zadnje trećine nije slabost — to je mjera.
 
 ### Kad nešto pođe po zlu
 
-- Canoeing, preljev, krivi rez — nasmiješi se, popravi tiho, nastavi razgovor.
+- Neujednačeno gorenje, preljev, krivi rez — nasmiješi se, popravi tiho, nastavi razgovor.
 
 
 ---
 
-## VIII. Vani i u prolazu
+## VIII. Salon i klub
+
+
+Javna pušionica nije tvoja dnevna soba. Privatna terasa nije salon s cjenikom.
+
+### Ulazak i mjesto
+
+- Pozdravi sobu kratko. Pitaj je li mjesto slobodno — pepeljara ili čaša mogu čuvati stol dok je netko vani.
+- Čitaj kućna pravila na ulazu. Ne pregovaraj s njima naglas.
+
+### Higijena i trag
+
+- Ne liži kapu prije zajedničkog rezača. Vlastiti rezač ili čisti kućni — pitaj.
+- Pepeljara nije kanta: celofan, prsten i žvakaća idu u smeće, ne u pepeo.
+- Ako pepeo padne, očisti bez drame. Ne stubaj — pusti list da se ugasi.
+
+### Društvo
+
+- Dim od lica / prema gore. Telefon kratko ili vani; bez zvučnika.
+- Ne traži gutljaj tuđe cigare. Savjet samo na upit. Ne rangiraj tuđi izbor po cijeni.
+- Ne pretvaraj svaku priču u svoju veću. Prvo slušaj ritam sobe.
+
+### Kuća
+
+- U javnoj pušionici i trgovini podrži kuću kupnjom ili jasnim pravilom mjesta. Na privatnoj terasi vrijedi gostoprimstvo, ne uvozna naplata reza.
+- Ne sjedi satima kao da je stol besplatni ured. Cigareta i vape: pitaj kuću.
+
+
+---
+
+## IX. Vani i u prolazu
 
 
 Vjetar i prolaznici mijenjaju pravila brže od humidora.
@@ -178,7 +210,7 @@ Vjetar i prolaznici mijenjaju pravila brže od humidora.
 ### Vani
 
 - Leđa vjetru; dim ne šalji u lica za stolom.
-- Jet torch pažljivo — daleko od kose, salveta, suhog bilja.
+- Mlazni upaljač pažljivo — daleko od kose, salveta, suhog bilja.
 - Putna pepeljara ili limenka; pepeo ne na travnjak restorana.
 - Panatela na vjetru traži zaklon; ne krivi format — prilagodi mjesto.
 
@@ -195,14 +227,14 @@ Vjetar i prolaznici mijenjaju pravila brže od humidora.
 
 ---
 
-## IX. Poklon, zahvala, sjećanje
+## X. Poklon, zahvala, sjećanje
 
 
 Dobar poklon otvara razgovor; ne zatvara ga cijenom.
 
 ### Poklanjanje
 
-- Cigare: nekoliko komada u tubi ili small box — s bilješkom o formatu i snazi.
+- Cigare: nekoliko komada u tubi ili maloj kutiji — s bilješkom o formatu i snazi.
 - Piće: boca koju bi i sam pio; izbjegavaj „najskuplje bez konteksta”.
 - Pribor: rezač ili čaša koje će koristiti, ne ukras koji skuplja prašinu.
 
@@ -213,13 +245,13 @@ Dobar poklon otvara razgovor; ne zatvara ga cijenom.
 
 ### Sjećanje
 
-- Zapiši što je sjelo (vitola, piće, most). Kolekcija u appu služi i tome.
+- Zapiši što je sjelo (vitola, piće, most). Kolekcija u aplikaciji služi i tome.
 - Ne razotkrivaj tuđe slabosti za stolom kao anegdotu vani.
 
 
 ---
 
-## X. Zadnja riječ
+## XI. Zadnja riječ
 
 
 Ako zapamtiš samo troje, neka bude ovo.
@@ -232,7 +264,7 @@ Ako zapamtiš samo troje, neka bude ovo.
 
 ### Za kraj
 
-- Bonton se uči kao pairing: bilješkom, ponavljanjem, bez glume.
+- Bonton se uči kao uparivanje: bilješkom, ponavljanjem, bez glume.
 - Najbolji kompliment nije „znaš pravila” — nego „ugodno mi je bilo s tobom”.
 
 
@@ -341,8 +373,10 @@ What you leave behind speaks louder than the brand on the band.
 ### Ash
 
 - A notched ashtray — not a coffee cup, not the rim of a plant pot.
+- The ashtray is not a bin: cellophane, band and gum go in the rubbish.
 - Do not tap; let ash fall. Support the cigar when needed.
 - At the end: extinguish fully; empty the tray if you are a guest staying through — or ask the host.
+- If ash falls on the floor or chair, clean it without drama. Do not stub the leaf like a cigarette.
 
 ### Scent
 
@@ -407,7 +441,37 @@ A good host offers a ladder. A good guest knows how to step off it without shame
 
 ---
 
-## VIII. Outdoors and in passing
+## VIII. Lounge and club
+
+
+A public smoking room is not your living room. A private terrace is not a lounge with a price list.
+
+### Arrival and seat
+
+- Greet the room briefly. Ask if the seat is free — an ashtray or glass may be holding a place while someone stepped out.
+- Read the house rules at the door. Do not negotiate them aloud.
+
+### Hygiene and trace
+
+- Do not lick the cap before a shared cutter. Use your own, or ask for a clean house one.
+- The ashtray is not a bin: cellophane, band and gum go in the rubbish, not the ash.
+- If ash falls, clean it without drama. Do not stub — let the leaf go out.
+
+### Company
+
+- Smoke away from faces / upward. Phone short or outside; no speakerphone.
+- Do not ask for a puff of another's cigar. Advise only if asked. Do not rank another's choice by price.
+- Do not turn every story into your bigger one. Listen to the room's pace first.
+
+### The house
+
+- In a public lounge or shop, support the house by buying or following the place's clear rule. On a private terrace, hospitality applies — not an imported cut fee as local custom.
+- Do not camp for hours as if the seat were a free office. Cigarettes and vapes: ask the house.
+
+
+---
+
+## IX. Outdoors and in passing
 
 
 Wind and passers-by change the rules faster than a humidor.
@@ -432,7 +496,7 @@ Wind and passers-by change the rules faster than a humidor.
 
 ---
 
-## IX. Gift, thanks, remembrance
+## X. Gift, thanks, remembrance
 
 
 A good gift opens conversation; it does not close it with a price tag.
@@ -456,7 +520,7 @@ A good gift opens conversation; it does not close it with a price tag.
 
 ---
 
-## X. Last word
+## XI. Last word
 
 
 If you remember only three things, let them be these.

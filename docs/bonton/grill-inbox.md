@@ -107,3 +107,21 @@
 **Vanjski linkovi:** [CigarLounges](https://www.cigarlounges.co/blog/cigar-lounge-etiquette) · [VDG](https://vdg-cigars.com/cigar-lounge-etiquette-the-complete-rules-guide/) · [The Manual](https://www.themanual.com/culture/cigar-etiquette-101/)
 
 *Zadnje ažuriranje inboxa: 2026-07-18. Dodavati bullet po bullet — ne prepisivati kanonski rukopis.*
+
+---
+
+## NotebookLM grill 2026-07-19 (`adfe8fc8`)
+
+**Bilježnica:** [Bonton / etiquette](https://notebooklm.google.com/notebook/adfe8fc8-de29-4919-a308-8284de395a3e) (~25 izvora)  
+**Dump:** `notebooklm-grill/adfe8fc8-SYNTHESIS-2026-07-19.md`
+
+**Ugrađeno u kanon (ne inbox-only):**
+- Novo gl. VIII *Salon i klub* u `bonton.json` + `mala-knjiga-pusackog-bontona.md` (IX–XI pomaknuti)
+- Pepeljara ≠ kanta; očisti pepeo; ne kampiraj (HR ton)
+- Vinjete: „ja još veće”, miris celofana; fraze salona
+- Maherski: tempo; mirniji želudac (autor liječnik — **nije** medicinski savjet)
+
+**Ostaje u inboxu / kasnije:**
+- Plume vs plijesan — Club 101, ne bonton precept
+- Band on/off kontradikcija — već „bez dogme” u gl. 8
+- US tip/dress — fusnota, ne HR norma

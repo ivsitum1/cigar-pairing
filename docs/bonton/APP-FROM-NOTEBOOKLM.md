@@ -12,13 +12,12 @@ Stanje korpusa nakon refresha (3 ključne bilježnice): Cigar 101 **100**, Drink
 
 ## 1. `bonton.json` — novi chapter *Lounge i klub*
 
-**Prioritet:** visok · **Datoteka:** `app/src/data/bonton.json` (+ sync rukopisa `mala-knjiga-pusackog-bontona.md`)
+**Status:** DONE 2026-07-19 · `id`: `b-lounge` = **VIII. Salon i klub** (Zadnja riječ = XI) · grill [`adfe8fc8`](https://notebooklm.google.com/notebook/adfe8fc8-de29-4919-a308-8284de395a3e)  
+**Datoteka:** `app/src/data/bonton.json` (+ sync `mala-knjiga-pusackog-bontona.md`)
 
-Predloženi `id`: `b-lounge`
+### HR body (skica precepta — zadržano za povijest backloga; kanon je u JSON-u)
 
-### HR body (skica precepta — preradi u app stil)
-
-Naslov: *X. Lounge i klub* / EN: *X. Lounge and club*
+Naslov (stara skica): *X. Lounge i klub* → implementirano kao *VIII. Salon i klub* / EN: *VIII. Lounge and club*
 
 Uvod: Javna pušionica nije tvoja terasa — ali ista pažnja prema tuđem zraku.
 
@@ -134,7 +133,7 @@ Family Story: preferirati obiteljske / pouzdane izvore — već djelomično pokr
 
 ## 8. Redoslijed implementacije (app)
 
-1. `bonton.json` chapter Lounge (+ test snapshot ako postoji)  
+1. ~~`bonton.json` chapter Lounge~~ DONE 2026-07-19 (`b-lounge`)  
 2. Club 101: Higijena alata + Čaša/voda  
 3. Quiz 3 pitanja  
 4. Engine P1–P2 + testovi  
@@ -151,4 +150,4 @@ Family Story: preferirati obiteljske / pouzdane izvore — već djelomično pokr
 
 ---
 
-*Zadnji sync s NotebookLM grillom: 2026-07-18. Book dumpovi: `cursor/bonton-book-research-9b19`.*
+*Zadnji sync s NotebookLM grillom: 2026-07-19 (`adfe8fc8` salon). Book dumpovi: `cursor/bonton-book-research-9b19` + lokalni `notebooklm-grill/adfe8fc8-*`.*

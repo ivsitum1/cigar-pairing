@@ -29,8 +29,8 @@ Zatim:
 
 | Tema iz NotebookLM | Knjiga (book branch) | App (`master`) |
 |--------------------|----------------------|----------------|
-| Lounge precepts | rukopis + `BOOK-FROM-NOTEBOOKLM.md` | `bonton.json` chapter *Lounge*; Club quiz |
-| Higijena rezača / pepeo / telefon | vignette u knjizi | Club 101 lekcija; bonton V–VII |
+| Lounge precepts | rukopis + `BOOK-FROM-NOTEBOOKLM.md` | `bonton.json` **VIII. Salon i klub** (`b-lounge`); Club quiz |
+| Higijena rezača / pepeo / telefon | vignette u knjizi | Club 101 lekcija; bonton V–VIII |
 | Čaša, voda, led, tempo gutljaja | stol / piće poglavlja | Club 101; pairing UI hints |
 | Body / ABV / Maduro–slatkoća | bilješke, ne engine | `app/src/engine/rules.ts` |
 | Obiteljske priče / arhetipovi | eseji / ton | `eveningArchetypes.json` |
@@ -48,9 +48,12 @@ Zatim:
 | Holt's | `5b8ae55e-d6bf-4cde-afb2-33492c1b241b` |
 | Cigar value & old school | `c4044fbd-39dd-47aa-b48a-24a9c2e41c23` |
 | Oliva / heritage | `5d9870a0-c12c-4ecf-98b4-f1c9243bcca4` |
+| **Bonton / etiquette** (grill 2026-07-19) | `adfe8fc8-de29-4919-a308-8284de395a3e` |
 
 Puni grill dumpovi (2026-07-18 + refresh):  
-`cursor/bonton-book-research-9b19` → `docs/bonton/research/notebooklm-grill/`
+`cursor/bonton-book-research-9b19` → `docs/bonton/research/notebooklm-grill/`  
+
+Lokalni dump 2026-07-19: `docs/bonton/notebooklm-grill/adfe8fc8-*`
 
 ## Pravilo mergea
 
