@@ -89,6 +89,8 @@ export interface Cigar {
   markets: Market[]; // gdje se moze kupiti
   availabilityHR: string[];
   notes: LocalizedText;
+  // Za samplere/gift-packove: popis linija cigara koje pakiranje sadrzi.
+  lineup?: string[];
 }
 
 export interface PairingReason {

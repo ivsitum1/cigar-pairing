@@ -193,6 +193,7 @@ const STRINGS = {
   "common.all": { hr: "Sve", en: "All" },
   "common.serving": { hr: "Serviranje", en: "Serving" },
   "common.lineup": { hr: "Boce u seriji", en: "Bottles in the series" },
+  "common.samplerContents": { hr: "Cigare u pakiranju", en: "Cigars in the pack" },
   "common.additives": { hr: "Aditivi", en: "Additives" },
   "common.close": { hr: "Zatvori", en: "Close" },
   "common.time": { hr: "Vrijeme", en: "Time" },
