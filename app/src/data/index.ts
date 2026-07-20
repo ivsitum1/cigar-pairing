@@ -109,6 +109,45 @@ export const ALL_BRANDS: string[] = [
   ...new Set(CIGARS.map((c) => c.brand)),
 ].sort((a, b) => a.localeCompare(b));
 
+/** Indeks brenda za katalog / Brand Index (derivacija iz cigars + brands.json). */
+export interface BrandCatalogStats {
+  brand: string;
+  info?: BrandInfo;
+  lineCount: number;
+  vitolaCount: number;
+  hasAdditionalVitolas: boolean;
+  minPriceEUR: number | null;
+}
+
+export function brandCatalogStats(brand: string): BrandCatalogStats {
+  const lines = cigarsByBrand(brand);
+  let vitolaCount = 0;
+  let minPrice: number | null = null;
+  let hasAdditional = false;
+  for (const c of lines) {
+    if (c.line === "Additional Vitolas") hasAdditional = true;
+    for (const v of c.vitolas ?? []) {
+      vitolaCount += 1;
+      if (v.priceEUR != null && (minPrice == null || v.priceEUR < minPrice)) {
+        minPrice = v.priceEUR;
+      }
+    }
+    if (c.priceEUR != null && (minPrice == null || c.priceEUR < minPrice)) {
+      minPrice = c.priceEUR;
+    }
+  }
+  return {
+    brand,
+    info: brandInfo(brand),
+    lineCount: lines.filter((c) => c.line !== "Additional Vitolas").length,
+    vitolaCount,
+    hasAdditionalVitolas: hasAdditional,
+    minPriceEUR: minPrice,
+  };
+}
+
+export const BRAND_CATALOG: BrandCatalogStats[] = ALL_BRANDS.map(brandCatalogStats);
+
 // linkovi za kupnju po tržištu — HR izravno (humidor/havana), EU cigarworld.de,
 // USA izravna pretraga US trgovine (Google site:ci… često 0 pogodaka),
 // WW otvorena Google pretraga bez site: ograničenja

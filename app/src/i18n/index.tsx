@@ -216,6 +216,9 @@ const STRINGS = {
   "brand.byStrength": { hr: "Po snazi", en: "By strength" },
   "brand.byPrice": { hr: "Po cijeni", en: "By price" },
   "brand.viewAll": { hr: "Sve cigare marke", en: "All cigars by brand" },
+  "brand.index": { hr: "Brendovi", en: "Brands" },
+  "brand.lines": { hr: "linija", en: "lines" },
+  "brand.from": { hr: "od", en: "from" },
   // kolekcija
   "coll.owned": { hr: "Imam", en: "Owned" },
   "coll.tried": { hr: "Probao", en: "Tried" },

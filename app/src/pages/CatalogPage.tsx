@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 import type { Cigar, Drink, DrinkCategory, Market } from "../types";
-import { CIGARS, DRINKS, cigarById, ALL_BRANDS } from "../data";
+import { CIGARS, DRINKS, cigarById, ALL_BRANDS, BRAND_CATALOG } from "../data";
 import { useI18n, STYLE_LABELS, type StringKey } from "../i18n";
 import { Chip, SearchInput } from "../components/ui";
 import { CigarRow, DrinkRow } from "../components/cards";
@@ -31,12 +31,13 @@ export function CatalogPage({
 }: {
   onPair?: (target: { kind: "cigar"; item: Cigar } | { kind: "drink"; item: Drink }) => void;
 }) {
-  const { t, lx } = useI18n();
+  const { t, lx, cn } = useI18n();
   const [tab, setTab] = useState<Tab>("cigars");
   const [query, setQuery] = useState("");
   const [styleFilter, setStyleFilter] = useState<string | null>(null);
   const [strengthFilter, setStrengthFilter] = useState<number | null>(null);
   const [cleanOnly, setCleanOnly] = useState(false);
+  const [browseBrands, setBrowseBrands] = useState(false);
   // sortiranje: pica kvaliteta|cijena|tijelo|slatkoca; cigare naziv|cijena|tijelo|snaga
   const [sortBy, setSortBy] = useState<"quality" | "price" | "body" | "sweetness" | "strength" | "name">("quality");
   const market = useMarket();
@@ -49,9 +50,17 @@ export function CatalogPage({
   // marke koje odgovaraju pretrazi (za "Otvori brend")
   const matchedBrands = useMemo(() => {
     const nq = norm(query.trim());
-    if (tab !== "cigars" || nq.length < 2) return [];
+    if (tab !== "cigars" || nq.length < 2 || browseBrands) return [];
     return ALL_BRANDS.filter((b) => norm(b).includes(nq)).slice(0, 4);
-  }, [tab, query]);
+  }, [tab, query, browseBrands]);
+
+  const brandRows = useMemo(() => {
+    if (tab !== "cigars" || !browseBrands) return [];
+    const nq = norm(query.trim());
+    return BRAND_CATALOG.filter(
+      (b) => !nq || norm(b.brand).includes(nq) || norm(b.info?.country ?? "").includes(nq),
+    );
+  }, [tab, browseBrands, query]);
 
   const openCigar = (raw: Cigar) => {
     const cigar = cigarById(raw.id) ?? raw;
@@ -71,6 +80,7 @@ export function CatalogPage({
     setStyleFilter(null);
     setStrengthFilter(null);
     setCleanOnly(false);
+    setBrowseBrands(false);
     setSortBy(next === "cigars" ? "name" : "quality");
   };
 
@@ -95,7 +105,7 @@ export function CatalogPage({
 
   const cigars = useMemo(
     () => {
-      if (tab !== "cigars") return [];
+      if (tab !== "cigars" || browseBrands) return [];
       const list = CIGARS.filter(
         (c) =>
           c.markets.includes(market) &&
@@ -116,7 +126,7 @@ export function CatalogPage({
       return [...list].sort(by[sortBy] ?? by.name);
     },
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [tab, q, strengthFilter, market, sortBy],
+    [tab, q, strengthFilter, market, sortBy, browseBrands],
   );
 
   // zadano rangirano po kvaliteti; ostala sortiranja preko chipova
@@ -170,17 +180,20 @@ export function CatalogPage({
 
       {/* filteri */}
       <div className="no-scrollbar mt-2 flex gap-2 overflow-x-auto">
+        {tab === "cigars" && (
+          <Chip active={browseBrands} onClick={() => setBrowseBrands(!browseBrands)}>
+            {t("brand.index")}
+          </Chip>
+        )}
         {tab === "cigars" &&
+          !browseBrands &&
           MARKETS.map((m) => (
-            <Chip
-              key={m}
-              active={market === m}
-              onClick={() => setMarket(m)}
-            >
+            <Chip key={m} active={market === m} onClick={() => setMarket(m)}>
               {t(`market.${m}` as StringKey)}
             </Chip>
           ))}
         {tab === "cigars" &&
+          !browseBrands &&
           [1, 2, 3, 4, 5].map((s) => (
             <Chip
               key={s}
@@ -207,34 +220,69 @@ export function CatalogPage({
       </div>
 
       {/* sortiranje */}
-      <div className="no-scrollbar mt-2 flex items-center gap-2 overflow-x-auto">
-        <span className="shrink-0 text-micro uppercase tracking-widest text-dim">
-          {t("sort.label")}
-        </span>
-        {(tab === "cigars"
-          ? (["name", "price", "body", "strength"] as const)
-          : (["quality", "price", "body", "sweetness"] as const)
-        ).map((s) => (
-          <Chip key={s} active={sortBy === s} onClick={() => setSortBy(s)}>
-            {t(`sort.${s}` as StringKey)}
-            {sortBy === s ? (s === "price" || s === "name" ? " ↑" : " ↓") : ""}
-          </Chip>
-        ))}
-      </div>
+      {!browseBrands && (
+        <div className="no-scrollbar mt-2 flex items-center gap-2 overflow-x-auto">
+          <span className="shrink-0 text-micro uppercase tracking-widest text-dim">
+            {t("sort.label")}
+          </span>
+          {(tab === "cigars"
+            ? (["name", "price", "body", "strength"] as const)
+            : (["quality", "price", "body", "sweetness"] as const)
+          ).map((s) => (
+            <Chip key={s} active={sortBy === s} onClick={() => setSortBy(s)}>
+              {t(`sort.${s}` as StringKey)}
+              {sortBy === s ? (s === "price" || s === "name" ? " ↑" : " ↓") : ""}
+            </Chip>
+          ))}
+        </div>
+      )}
 
       <div className="mt-3 text-xs text-dim">
-        {tab === "cigars" ? cigars.length : drinks.length} ·{" "}
-        {tab === "cigars" ? t("cat.cigars") : t(`cat.${tab}` as const)}
+        {browseBrands
+          ? `${brandRows.length} · ${t("brand.index")}`
+          : `${tab === "cigars" ? cigars.length : drinks.length} · ${
+              tab === "cigars" ? t("cat.cigars") : t(`cat.${tab}` as const)
+            }`}
       </div>
 
       <div className="mt-2 space-y-2">
-        {cigars.map((c) => (
-          <CigarRow
-            key={`${c.id}::${c.line}`}
-            cigar={c}
-            onClick={() => openCigar(c)}
-          />
-        ))}
+        {browseBrands &&
+          brandRows.map((b) => (
+            <button
+              key={b.brand}
+              onClick={() => setBrand(b.brand)}
+              className="w-full rounded-xl border border-dim/15 bg-cedar p-3 text-left transition-colors hover:border-zlato/40"
+            >
+              <div className="flex items-baseline justify-between gap-2">
+                <span className="font-display text-base text-papir">{b.brand}</span>
+                {b.minPriceEUR != null && (
+                  <span className="shrink-0 text-xs text-dim">
+                    {t("brand.from")} {b.minPriceEUR.toFixed(b.minPriceEUR % 1 ? 2 : 0)} €
+                  </span>
+                )}
+              </div>
+              <div className="mt-1 text-xs text-dim">
+                {b.info ? cn(b.info.country) : ""}
+                {b.info?.founded ? ` · ${b.info.founded}` : ""}
+                {" · "}
+                {b.lineCount} {t("brand.lines")}
+                {b.hasAdditionalVitolas ? " · +" : ""}
+              </div>
+              {b.info && (
+                <div className="mt-1.5 line-clamp-2 text-xs leading-relaxed text-dim/90">
+                  {lx(b.info.blurb)}
+                </div>
+              )}
+            </button>
+          ))}
+        {!browseBrands &&
+          cigars.map((c) => (
+            <CigarRow
+              key={`${c.id}::${c.line}`}
+              cigar={c}
+              onClick={() => openCigar(c)}
+            />
+          ))}
         {drinks.map((d, i) => (
           <DrinkRow
             key={d.id}

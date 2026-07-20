@@ -1,6 +1,7 @@
 import { describe, it, expect } from "vitest";
 import cigarsData from "./cigars.json";
-import { CIGARS, cigarLinkForMarket, cigarPriceForMarket } from "./index";
+import brandsData from "./brands.json";
+import { CIGARS, cigarLinkForMarket, cigarPriceForMarket, ALL_BRANDS, BRAND_CATALOG } from "./index";
 import type { Cigar } from "../types";
 
 describe("cigars.json integrity", () => {
@@ -37,12 +38,16 @@ describe("cigars.json integrity", () => {
     expect(names).not.toContain("Double Robusto");
   });
 
-  it("Oliva Additional Vitolas — nema Paperboy vitole ni Paperboy link", () => {
-    const extra = CIGARS.find((c) => c.id === "cig-oliva-oliva-extra");
-    expect(extra).toBeDefined();
-    const urls = (extra!.vitolas ?? []).map((v) => v.url).filter((u): u is string => Boolean(u));
-    expect(urls.some((u) => u.toLowerCase().includes("paperboy"))).toBe(false);
-    expect((extra!.priceUrl ?? "").toLowerCase()).not.toContain("paperboy");
+  it("Oliva — nema Paperboy vitole/URL-a; Additional Vitolas uklonjen", () => {
+    expect(CIGARS.find((c) => c.id === "cig-oliva-oliva-extra")).toBeUndefined();
+    expect(CIGARS.find((c) => c.brand === "Oliva" && c.line === "Additional Vitolas")).toBeUndefined();
+    for (const c of CIGARS.filter((x) => x.brand === "Oliva")) {
+      expect((c.priceUrl ?? "").toLowerCase()).not.toContain("paperboy");
+      for (const v of c.vitolas ?? []) {
+        expect((v.url ?? "").toLowerCase()).not.toContain("paperboy");
+        expect(v.name.toLowerCase()).not.toContain("paperboy");
+      }
+    }
   });
 
   it("Nub vitole žive pod Nub brendom, ne pod Olivom", () => {
@@ -66,6 +71,23 @@ describe("cigars.json integrity", () => {
 
   // regresija za klasu grešaka: shop product URL zalijepljen na krivi brend
   // (Paperboy->Oliva, La Instructora->Bolívar, Don Kiki->CAO, Partagás->Padrón...)
+  it("nema search-only Humidor URL-ova (?s= / post_type=product)", () => {
+    const bad: string[] = [];
+    for (const c of CIGARS) {
+      const urls: { where: string; url: string }[] = [];
+      if (c.priceUrl) urls.push({ where: "priceUrl", url: c.priceUrl });
+      for (const v of c.vitolas ?? []) {
+        if (v.url) urls.push({ where: `vitola:${v.name}`, url: v.url });
+      }
+      for (const { where, url } of urls) {
+        if (url.includes("?s=") || url.includes("post_type=product")) {
+          bad.push(`${c.id} ${where}: ${url}`);
+        }
+      }
+    }
+    expect(bad).toEqual([]);
+  });
+
   it("shop product URL-ovi dijele barem jedan token s brendom/linijom/vitolama", () => {
     const strip = (s: string) =>
       s.normalize("NFKD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
@@ -130,6 +152,188 @@ describe("cigars.json integrity", () => {
     expect(usa).toContain(encodeURIComponent(`${withUsa!.brand} ${withUsa!.line}`.trim()));
     expect(usa).not.toContain("google.com");
     expect(usa).not.toContain("site%3A");
+  });
+
+  it("brands.json i cigars.json — 1:1 pokrivenost brendova", () => {
+    const cigarBrands = new Set(CIGARS.map((c) => c.brand));
+    const brandKeys = new Set(Object.keys(brandsData as Record<string, unknown>));
+    const missing = [...cigarBrands].filter((b) => !brandKeys.has(b));
+    const orphan = [...brandKeys].filter((b) => !cigarBrands.has(b));
+    expect(missing).toEqual([]);
+    expect(orphan).toEqual([]);
+    expect(BRAND_CATALOG.length).toBe(ALL_BRANDS.length);
+    expect(BRAND_CATALOG.every((b) => b.lineCount >= 0 && b.vitolaCount >= 0)).toBe(true);
+  });
+
+  it("Padrón i Drew Estate — Additional Vitolas remapkan u imenovane linije", () => {
+    expect(CIGARS.find((c) => c.id === "cig-padron-padron-extra")).toBeUndefined();
+    expect(CIGARS.find((c) => c.id === "cig-drew-estate-de-extra")).toBeUndefined();
+
+    const s1926 = CIGARS.find((c) => c.id === "cig-padron-1926");
+    expect(s1926).toBeDefined();
+    const n1926 = (s1926!.vitolas ?? []).map((v) => v.name.toLowerCase());
+    expect(n1926.some((n) => n.includes("no. 6") || n.includes("no.6"))).toBe(true);
+
+    const family = CIGARS.find((c) => c.id === "cig-padron-padron-family-reserve");
+    expect((family!.vitolas ?? []).map((v) => v.name).join(" ")).toMatch(/45|44/);
+
+    const liga = CIGARS.find((c) => c.id === "cig-drew-estate-de-liga-privada");
+    expect(liga).toBeDefined();
+    const ligaNames = (liga!.vitolas ?? []).map((v) => v.name.toLowerCase()).join(" ");
+    expect(ligaNames).toMatch(/papas|fritas|seleccion|no\.9|no\. 9/);
+    expect(
+      (liga!.vitolas ?? []).some(
+        (v) => v.url?.includes("liga-privada-10-seleccion") || v.url?.includes("liga-privada-no-9"),
+      ),
+    ).toBe(true);
+
+    const liga9 = CIGARS.find((c) => c.id === "cig-liga-privada-no9");
+    expect(liga9!.priceEUR).toBe(23);
+    expect(liga9!.priceUrl).toContain("liga-privada-no-9-toro");
+  });
+
+  it("Batch B — Additional Vitolas uklonjen za 7 brendova", () => {
+    const brands = [
+      "Macanudo",
+      "Foundation Cigar Company",
+      "E.P. Carrillo",
+      "Davidoff",
+      "Camacho",
+      "CAO",
+      "Alec Bradley",
+    ];
+    for (const brand of brands) {
+      const extra = CIGARS.find((c) => c.brand === brand && c.line === "Additional Vitolas");
+      expect(extra, brand).toBeUndefined();
+    }
+    expect(CIGARS.some((c) => c.brand === "Macanudo" && /inspirado/i.test(c.line))).toBe(true);
+    expect(CIGARS.some((c) => c.brand === "Alec Bradley" && /kintsugi/i.test(c.line))).toBe(true);
+    expect(CIGARS.some((c) => c.brand === "Camacho" && /escuro/i.test(c.line))).toBe(true);
+  });
+
+  it("Batch C — Rocky Patel, My Father, Tatuaje bez Additional Vitolas", () => {
+    for (const brand of ["Rocky Patel", "My Father", "Tatuaje"]) {
+      expect(
+        CIGARS.find((c) => c.brand === brand && c.line === "Additional Vitolas"),
+        brand,
+      ).toBeUndefined();
+    }
+    const decade = CIGARS.find((c) => c.brand === "Rocky Patel" && /decade/i.test(c.line));
+    expect(decade).toBeDefined();
+    expect((decade!.vitolas ?? []).length).toBeGreaterThanOrEqual(3);
+
+    expect(CIGARS.some((c) => c.brand === "My Father" && /le bijou/i.test(c.line))).toBe(true);
+    expect(CIGARS.some((c) => c.brand === "My Father" && /centurion/i.test(c.line))).toBe(true);
+    expect(CIGARS.some((c) => c.brand === "Tatuaje" && /cabaiguan/i.test(c.line))).toBe(true);
+    expect(CIGARS.some((c) => c.brand === "Tatuaje" && /fausto/i.test(c.line))).toBe(true);
+
+    const sixty = CIGARS.find((c) => c.id === "cig-rocky-patel-sixty-toro-6-1-2-x-52");
+    expect(sixty?.priceEUR).toBe(26);
+    expect(sixty?.priceUrl).toContain("rocky-patel-sixty");
+  });
+
+  it("Batch D — kubanke bez Additional Vitolas", () => {
+    const brands = [
+      "Trinidad",
+      "Punch",
+      "Hoyo de Monterrey",
+      "Cohiba",
+      "Partagás",
+      "Montecristo",
+      "Quai d'Orsay",
+      "Juan López",
+      "Bolívar",
+    ];
+    for (const brand of brands) {
+      expect(
+        CIGARS.find((c) => c.brand === brand && c.line === "Additional Vitolas"),
+        brand,
+      ).toBeUndefined();
+    }
+    expect(CIGARS.some((c) => c.brand === "Trinidad" && /reyes/i.test(c.line))).toBe(true);
+    expect(CIGARS.some((c) => c.brand === "Cohiba" && /siglo/i.test(c.line))).toBe(true);
+    expect(CIGARS.some((c) => c.brand === "Montecristo" && /edmundo/i.test(c.line))).toBe(true);
+    expect(CIGARS.some((c) => c.brand === "Partagás" && /serie d/i.test(c.line))).toBe(true);
+    expect(CIGARS.some((c) => c.brand === "Bolívar" && /belicoso/i.test(c.line))).toBe(true);
+  });
+
+  it("Batch E — preostali brendovi bez Additional Vitolas", () => {
+    const brands = [
+      "Perdomo",
+      "Ashton",
+      "Plasencia",
+      "La Aurora",
+      "Oliva",
+      "H. Upmann",
+      "Romeo y Julieta",
+    ];
+    for (const brand of brands) {
+      expect(
+        CIGARS.find((c) => c.brand === brand && c.line === "Additional Vitolas"),
+        brand,
+      ).toBeUndefined();
+    }
+    expect(CIGARS.some((c) => c.brand === "Perdomo" && /lot 23/i.test(c.line))).toBe(true);
+    expect(CIGARS.some((c) => c.brand === "Perdomo" && /esteli/i.test(c.line))).toBe(true);
+    expect(CIGARS.some((c) => c.brand === "Ashton" && /symmetry/i.test(c.line))).toBe(true);
+    expect(CIGARS.some((c) => c.brand === "Plasencia" && /alma del cielo/i.test(c.line))).toBe(true);
+    expect(CIGARS.some((c) => c.brand === "La Aurora" && /preferidos/i.test(c.line))).toBe(true);
+    expect(CIGARS.some((c) => c.brand === "Oliva" && /serie g/i.test(c.line))).toBe(true);
+
+    const magnum = CIGARS.find((c) => c.id === "cig-hupmann-magnum");
+    expect(magnum).toBeDefined();
+    expect((magnum!.vitolas ?? []).some((v) => /magnum 54/i.test(v.name))).toBe(true);
+
+    const classic = CIGARS.find((c) => c.id === "cig-romeo-y-julieta-ryj-classic");
+    expect(classic).toBeDefined();
+    expect((classic!.vitolas ?? []).some((v) => /puritos/i.test(v.name))).toBe(true);
+  });
+
+  it("AJ Fernandez — Blend 15, Last Call, Enclave, New World točne linije", () => {
+    const ajf = CIGARS.filter((c) => c.brand === "AJ Fernandez");
+    const byLine = Object.fromEntries(ajf.map((c) => [c.line, c]));
+
+    expect(byLine["Blend 15"]).toBeDefined();
+    expect((byLine["Blend 15"].vitolas ?? []).map((v) => v.name)).toEqual(
+      expect.arrayContaining(["Short Robusto", "Robusto", "Toro"]),
+    );
+
+    const lastCall = byLine["Last Call"];
+    expect(lastCall).toBeDefined();
+    const lcNames = (lastCall.vitolas ?? []).map((v) => v.name);
+    expect(lcNames).toEqual(expect.arrayContaining(["Habano Geniales", "Maduro Chiquitas"]));
+    expect(lcNames.some((n) => n.toLowerCase().includes("pequenas"))).toBe(false);
+
+    const enclave = byLine["Enclave"];
+    expect(enclave).toBeDefined();
+    const encNames = (enclave.vitolas ?? []).map((v) => v.name);
+    expect(encNames.some((n) => n.toLowerCase().includes("churchill"))).toBe(false);
+    expect(encNames).toEqual(
+      expect.arrayContaining([
+        "Broadleaf Robusto",
+        "Broadleaf Toro",
+        "Habano Robusto",
+        "Habano Figurado",
+        "Connecticut Robusto",
+        "Connecticut Figurado",
+      ]),
+    );
+
+    const nw = byLine["New World"];
+    expect(nw).toBeDefined();
+    expect((nw.vitolas ?? []).length).toBeGreaterThanOrEqual(10);
+    const nwUrls = new Set((nw.vitolas ?? []).map((v) => v.url).filter(Boolean));
+    expect(nwUrls.size).toBeGreaterThan(1);
+    expect(
+      [...nwUrls].every((u) => (u as string).includes("petit-corona-6-pack")),
+    ).toBe(false);
+
+    expect(CIGARS.find((c) => c.id === "cig-aj-fernandez-aj-extra")).toBeUndefined();
+    for (const c of ajf) {
+      if (c.line !== "Additional Vitolas") continue;
+      const names = (c.vitolas ?? []).map((v) => v.name.toLowerCase()).join(" ");
+      expect(names).not.toMatch(/last call|new world|enclave|dias|bellas artes/);
+    }
   });
 
   it("zadana vitola priceUrl nije najjeftinija vitola kad se razlikuju", () => {

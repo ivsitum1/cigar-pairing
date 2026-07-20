@@ -76,6 +76,7 @@ def export_drinks(json_name, xlsx_name, title, sheet_title):
 
 def export_cigars():
     items = json.loads((DATA / "cigars.json").read_text(encoding="utf-8"))
+    brands = json.loads((DATA / "brands.json").read_text(encoding="utf-8"))
     # sortiraj po snazi pa brendu — geografski stupci za filtriranje
     items.sort(key=lambda c: (c["strength"], c["brand"]))
 
@@ -107,8 +108,58 @@ def export_cigars():
         ws.column_dimensions[col].width = w
     ws.freeze_panes = "A3"
     ws.auto_filter.ref = f"A2:N{ws.max_row}"
+
+    # Sheet: Brand Index
+    by_brand: dict[str, list] = {}
+    for c in items:
+        by_brand.setdefault(c["brand"], []).append(c)
+
+    bcols = ["Brand", "Zemlja", "Founded", "# linija", "# vitola",
+             "Additional Vitolas", "# search-only URL", "Najjeftinija €", "Blurb HR"]
+    wb2 = wb.create_sheet("Brendovi")
+    wb2.append(["CIGARE — indeks brendova (iz brands.json + cigars.json)"])
+    wb2.cell(row=1, column=1).font = TITLE_FONT
+    wb2.append(bcols)
+    style_header(wb2, 2, len(bcols))
+    for brand in sorted(by_brand.keys(), key=lambda s: s.casefold()):
+        lines = by_brand[brand]
+        info = brands.get(brand, {})
+        named = [c for c in lines if c.get("line") != "Additional Vitolas"]
+        vitola_n = sum(len(c.get("vitolas") or []) for c in lines)
+        has_extra = any(c.get("line") == "Additional Vitolas" for c in lines)
+        search_n = 0
+        prices = []
+        for c in lines:
+            if c.get("priceEUR") is not None:
+                prices.append(c["priceEUR"])
+            for v in c.get("vitolas") or []:
+                if v.get("priceEUR") is not None:
+                    prices.append(v["priceEUR"])
+                url = v.get("url") or ""
+                if "?s=" in url or "post_type=product" in url:
+                    search_n += 1
+        blurb = (info.get("blurb") or {}).get("hr", "")
+        if len(blurb) > 120:
+            blurb = blurb[:117] + "..."
+        wb2.append([
+            brand,
+            info.get("country", ""),
+            info.get("founded", ""),
+            len(named),
+            vitola_n,
+            "da" if has_extra else "",
+            search_n,
+            min(prices) if prices else "",
+            blurb,
+        ])
+    bwidths = [22, 16, 12, 10, 10, 16, 16, 14, 60]
+    for col, w in zip("ABCDEFGHI", bwidths):
+        wb2.column_dimensions[col].width = w
+    wb2.freeze_panes = "A3"
+    wb2.auto_filter.ref = f"A2:I{wb2.max_row}"
+
     wb.save(OUT / "Cigare_Index.xlsx")
-    print(f"Cigare_Index.xlsx: {len(items)} stavki")
+    print(f"Cigare_Index.xlsx: {len(items)} linija, {len(by_brand)} brendova")
 
 
 if __name__ == "__main__":
