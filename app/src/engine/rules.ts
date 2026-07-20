@@ -30,6 +30,7 @@ export const TAG_ALIASES: Record<string, string> = {
   sol: "mineralno",
   juniper: "travnato",
   koriander: "zacini",
+  cimet: "zacini-slatki",
   maple: "karamela",
   orah: "orasasti",
   naranca: "citrus",
