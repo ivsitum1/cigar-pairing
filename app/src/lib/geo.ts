@@ -13,7 +13,7 @@ export interface CountryInfo {
 
 export const COUNTRIES: CountryInfo[] = [
   { hr: "Kuba", en: "Cuba", flag: "🇨🇺", lat: 22.0, lon: -79.5 },
-  { hr: "Dominikana", en: "Dominican Republic", flag: "🇩🇴", lat: 18.9, lon: -70.2 },
+  { hr: "Dominikanska Republika", en: "Dominican Republic", flag: "🇩🇴", lat: 18.9, lon: -70.2 },
   { hr: "Jamajka", en: "Jamaica", flag: "🇯🇲", lat: 18.1, lon: -77.3 },
   { hr: "Barbados", en: "Barbados", flag: "🇧🇧", lat: 13.2, lon: -59.5 },
   { hr: "Trinidad", en: "Trinidad", flag: "🇹🇹", lat: 10.5, lon: -61.3 },

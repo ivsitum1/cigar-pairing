@@ -289,7 +289,7 @@ export const STYLE_LABELS: Record<string, LocalizedText> = {
   trinidad: { hr: "Trinidad", en: "Trinidad" },
   "puerto-rico": { hr: "Puerto Rico", en: "Puerto Rico" },
   venezuela: { hr: "Venezuela", en: "Venezuela" },
-  dominican: { hr: "Dominikana", en: "Dominican" },
+  dominican: { hr: "Dominikanska Republika", en: "Dominican Republic" },
   navy: { hr: "Navy blend", en: "Navy blend" },
   blend: { hr: "Blend (više regija)", en: "Multi-region blend" },
   panama: { hr: "Panama", en: "Panama" },
@@ -369,7 +369,8 @@ export const STYLE_LABELS: Record<string, LocalizedText> = {
 export const COUNTRY_LABELS: Record<string, string> = {
   Kuba: "Cuba",
   Nikaragva: "Nicaragua",
-  Dominikana: "Dominican Republic",
+  "Dominikanska Republika": "Dominican Republic",
+  "Dominikanska Republika / Švicarska": "Dominican Republic / Switzerland",
   Meksiko: "Mexico",
   "SAD/Nikaragva": "USA/Nicaragua",
   Škotska: "Scotland",
