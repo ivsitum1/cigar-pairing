@@ -59,7 +59,7 @@ describe("cigars.json integrity", () => {
     const pb = CIGARS.find((c) => c.id === "cig-paperboy-connecticut");
     expect(pb).toBeDefined();
     expect(pb!.brand).toBe("Paperboy");
-    expect(pb!.country).toBe("Dominikana");
+    expect(pb!.country).toBe("Dominikanska Republika");
     expect(pb!.priceEUR).toBe(4.5);
     expect(pb!.priceUrl).toContain("paperboy");
   });
