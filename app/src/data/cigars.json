@@ -7907,11 +7907,11 @@
   {
     "id": "cig-drew-estate-de-liga-privada",
     "brand": "Drew Estate",
-    "line": "Liga Privada",
-    "vitola": "Liga Privada H99 Toro",
+    "line": "Liga Privada Único Serie",
+    "vitola": "10 Seleccion de Mercado Toro",
     "format": "52 x 152mm",
     "country": "Nikaragva",
-    "wrapper": "Connecticut broadleaf maduro",
+    "wrapper": "Connecticut broadleaf",
     "strength": 3,
     "body": 4,
     "flavorTags": [
@@ -7923,7 +7923,7 @@
       "suho-voce"
     ],
     "smokeTimeMin": 70,
-    "priceEUR": 23.0,
+    "priceEUR": 22.2,
     "priceApprox": false,
     "availabilityHR": [
       "The Humidor",
@@ -7941,76 +7941,48 @@
     ],
     "vitolas": [
       {
-        "name": "Liga Privada Único Feral Flying Pig",
+        "name": "Feral Flying Pig",
         "format": "60 x 108mm",
-        "smokeTimeMin": 50,
+        "smokeTimeMin": 60,
         "priceEUR": null,
-        "url": null
-      },
-      {
-        "name": "Liga Privada T52 Toro",
-        "format": "52 x 152mm",
-        "smokeTimeMin": 70,
-        "priceEUR": null,
-        "url": null
-      },
-      {
-        "name": "Liga Privada H99 Toro",
-        "format": "52 x 152mm",
-        "smokeTimeMin": 70,
-        "priceEUR": null,
-        "url": null
-      },
-      {
-        "name": "No.9 Toro",
-        "format": "52 x 152mm",
-        "smokeTimeMin": 75,
-        "priceEUR": 23.0,
-        "url": "https://humidor.hr/en/proizvod/liga-privada-no-9-toro-6-x-52/"
-      },
-      {
-        "name": "No.9 Coronet Tin 10",
-        "format": "32 x 102mm",
-        "smokeTimeMin": 20,
-        "priceEUR": 24.0,
         "url": null
       },
       {
         "name": "10 Seleccion de Mercado Toro",
         "format": "52 x 152mm",
-        "smokeTimeMin": 75,
+        "smokeTimeMin": 70,
         "priceEUR": 22.2,
         "url": "https://humidor.hr/en/proizvod/liga-privada-10-seleccion-de-mercado-toro-6-x-52/"
       },
       {
         "name": "Papas Fritas",
         "format": "44 x 108mm",
-        "smokeTimeMin": 40,
+        "smokeTimeMin": 35,
         "priceEUR": null,
         "url": null
       },
       {
         "name": "Nasty Fritas",
         "format": "44 x 108mm",
-        "smokeTimeMin": 40,
+        "smokeTimeMin": 35,
         "priceEUR": null,
         "url": null
       },
       {
         "name": "No. 44",
         "format": "52 x 127mm",
-        "smokeTimeMin": 50,
+        "smokeTimeMin": 60,
         "priceEUR": null,
         "url": null
       }
     ],
-    "priceUrl": "https://humidor.hr/hr/proizvod/liga-privada-no-9-toro-6-x-52/",
+    "priceUrl": "https://humidor.hr/en/proizvod/liga-privada-10-seleccion-de-mercado-toro-6-x-52/",
     "profileEstimated": true
   },
   {
     "id": "cig-liga-privada-no9",
     "brand": "Drew Estate",
-    "line": "Liga Privada No.9",
+    "line": "Liga Privada No. 9",
     "vitola": "Toro",
     "format": "52 x 152mm",
     "country": "Nikaragva",
@@ -8042,72 +8014,19 @@
       {
         "name": "Toro",
         "format": "52 x 152mm",
-        "smokeTimeMin": 60,
+        "smokeTimeMin": 75,
         "priceEUR": 23.0,
         "url": "https://humidor.hr/en/proizvod/liga-privada-no-9-toro-6-x-52/"
+      },
+      {
+        "name": "Coronet Tin 10",
+        "format": "32 x 102mm",
+        "smokeTimeMin": 20,
+        "priceEUR": 24.0,
+        "url": null
       }
     ],
     "priceUrl": "https://humidor.hr/en/proizvod/liga-privada-no-9-toro-6-x-52/"
-  },
-  {
-    "id": "cig-drew-estate-de-undercrown",
-    "brand": "Drew Estate",
-    "line": "Undercrown",
-    "vitola": "Undercrown Maduro Robusto",
-    "format": "52 x 127mm",
-    "country": "Nikaragva",
-    "wrapper": "San Andrés maduro",
-    "strength": 3,
-    "body": 4,
-    "flavorTags": [
-      "kakao",
-      "kava",
-      "karamela",
-      "slatko",
-      "zemljano"
-    ],
-    "smokeTimeMin": 50,
-    "priceEUR": null,
-    "priceApprox": false,
-    "availabilityHR": [
-      "The Humidor",
-      "Havana Shop"
-    ],
-    "notes": {
-      "hr": "San Andrés maduro wrapper (Nikaragva); uravnotežena, srednje snage. Note: kakao, kava, karamela.",
-      "en": "San Andrés maduro wrapper (Nikaragva); balanced, medium in strength. Notes of cocoa, coffee, caramel. Value Liga sibling; chocolate and earth."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Undercrown Maduro Robusto",
-        "format": "52 x 127mm",
-        "smokeTimeMin": 50,
-        "priceEUR": null,
-        "url": null
-      },
-      {
-        "name": "Undercrown Shade Gran Corona",
-        "format": "46 x 152mm",
-        "smokeTimeMin": 60,
-        "priceEUR": null,
-        "url": null
-      },
-      {
-        "name": "Sungrown Robusto",
-        "format": "52 x 127mm",
-        "smokeTimeMin": 50,
-        "priceEUR": null,
-        "url": null
-      }
-    ],
-    "priceUrl": null,
-    "profileEstimated": true
   },
   {
     "id": "cig-undercrown-maduro",
@@ -8211,6 +8130,13 @@
         "name": "Gran Toro",
         "format": "52 x 152mm",
         "smokeTimeMin": 60,
+        "priceEUR": null,
+        "url": null
+      },
+      {
+        "name": "Gran Corona",
+        "format": "46 x 152mm",
+        "smokeTimeMin": 55,
         "priceEUR": null,
         "url": null
       }
@@ -26656,5 +26582,570 @@
       }
     ],
     "priceUrl": "https://humidor.hr/hr/proizvod/1502-black-gold-toro-6-x-50/"
+  },
+  {
+    "id": "cig-drew-estate-liga-privada-t52",
+    "brand": "Drew Estate",
+    "line": "Liga Privada T52",
+    "vitola": "Toro",
+    "format": "52 x 152mm",
+    "country": "Nikaragva",
+    "wrapper": "Stalk-cut Habano",
+    "strength": 4,
+    "body": 4,
+    "flavorTags": [
+      "kakao",
+      "kava",
+      "zemljano",
+      "koza",
+      "papar"
+    ],
+    "smokeTimeMin": 70,
+    "priceEUR": null,
+    "priceApprox": false,
+    "markets": [
+      "USA",
+      "EU",
+      "WW"
+    ],
+    "availabilityHR": [
+      "The Humidor"
+    ],
+    "notes": {
+      "hr": "Stalk-cut habano — papreno, hrast i koža, jače tijelo.",
+      "en": "Stalk-cut Habano — peppery, oak and leather, fuller body."
+    },
+    "priceUrl": null,
+    "profileEstimated": true,
+    "vitolas": [
+      {
+        "name": "Toro",
+        "format": "52 x 152mm",
+        "smokeTimeMin": 70,
+        "priceEUR": null,
+        "url": null
+      }
+    ]
+  },
+  {
+    "id": "cig-drew-estate-liga-privada-h99",
+    "brand": "Drew Estate",
+    "line": "Liga Privada H99",
+    "vitola": "Toro",
+    "format": "52 x 152mm",
+    "country": "Nikaragva",
+    "wrapper": "Connecticut Corojo",
+    "strength": 3,
+    "body": 4,
+    "flavorTags": [
+      "kakao",
+      "cimet",
+      "papar",
+      "slatko",
+      "kava"
+    ],
+    "smokeTimeMin": 70,
+    "priceEUR": null,
+    "priceApprox": false,
+    "markets": [
+      "USA",
+      "EU",
+      "WW"
+    ],
+    "availabilityHR": [
+      "The Humidor"
+    ],
+    "notes": {
+      "hr": "Connecticut Corojo hibrid — čokolada, cimet, papar i slatkoća.",
+      "en": "Connecticut Corojo hybrid — chocolate, cinnamon, pepper and sweetness."
+    },
+    "priceUrl": null,
+    "profileEstimated": true,
+    "vitolas": [
+      {
+        "name": "Toro",
+        "format": "52 x 152mm",
+        "smokeTimeMin": 70,
+        "priceEUR": null,
+        "url": null
+      }
+    ]
+  },
+  {
+    "id": "cig-undercrown-sungrown",
+    "brand": "Drew Estate",
+    "line": "Undercrown Sun Grown",
+    "vitola": "Robusto",
+    "format": "52 x 127mm",
+    "country": "Nikaragva",
+    "wrapper": "Ecuador Sumatra",
+    "strength": 3,
+    "body": 4,
+    "flavorTags": [
+      "cedar",
+      "papar",
+      "slatko",
+      "kava"
+    ],
+    "smokeTimeMin": 70,
+    "priceEUR": null,
+    "priceApprox": false,
+    "markets": [
+      "USA",
+      "EU",
+      "WW"
+    ],
+    "availabilityHR": [
+      "The Humidor"
+    ],
+    "notes": {
+      "hr": "Sun grown verzija — začinski slađa, cedar i papar.",
+      "en": "Sun grown version — spicier-sweet, cedar and pepper."
+    },
+    "priceUrl": null,
+    "profileEstimated": true,
+    "vitolas": [
+      {
+        "name": "Robusto",
+        "format": "52 x 127mm",
+        "smokeTimeMin": 50,
+        "priceEUR": null,
+        "url": null
+      }
+    ]
+  },
+  {
+    "id": "cig-my-father-the-judge",
+    "brand": "My Father",
+    "line": "The Judge",
+    "vitola": "Grande",
+    "format": "54 x 152mm",
+    "country": "Nikaragva",
+    "wrapper": "Ecuador Sumatra Oscuro",
+    "strength": 4,
+    "body": 4,
+    "flavorTags": [
+      "papar",
+      "kakao",
+      "kava",
+      "koza",
+      "zemljano"
+    ],
+    "smokeTimeMin": 55,
+    "priceEUR": null,
+    "priceApprox": false,
+    "markets": [
+      "EU",
+      "USA",
+      "WW"
+    ],
+    "availabilityHR": [],
+    "notes": {
+      "hr": "Puniji ogranak My Fathera (2016) — Sumatra Oscuro omot, papreno i espresso, snažno tijelo.",
+      "en": "Fuller My Father offshoot (2016) — Sumatra Oscuro wrapper, peppery and espresso, strong body."
+    },
+    "priceUrl": null,
+    "profileEstimated": true,
+    "vitolas": [
+      {
+        "name": "Grande",
+        "format": "54 x 152mm",
+        "smokeTimeMin": 60,
+        "priceEUR": null,
+        "url": null
+      },
+      {
+        "name": "Toro",
+        "format": "52 x 152mm",
+        "smokeTimeMin": 60,
+        "priceEUR": null,
+        "url": null
+      },
+      {
+        "name": "Robusto",
+        "format": "52 x 127mm",
+        "smokeTimeMin": 50,
+        "priceEUR": null,
+        "url": null
+      }
+    ]
+  },
+  {
+    "id": "cig-my-father-la-opulencia",
+    "brand": "My Father",
+    "line": "La Opulencia",
+    "vitola": "Robusto",
+    "format": "52 x 127mm",
+    "country": "Nikaragva",
+    "wrapper": "Meksiko San Andrés",
+    "strength": 3,
+    "body": 4,
+    "flavorTags": [
+      "kakao",
+      "slatko",
+      "zacini",
+      "zemljano"
+    ],
+    "smokeTimeMin": 55,
+    "priceEUR": null,
+    "priceApprox": false,
+    "markets": [
+      "HR",
+      "EU",
+      "USA",
+      "WW"
+    ],
+    "availabilityHR": [],
+    "notes": {
+      "hr": "Oživljena kubanska marka (2017) — meksički San Andrés omot, čokoladno-slatko i začinski.",
+      "en": "Revived Cuban brand (2017) — Mexican San Andrés wrapper, chocolate-sweet and spicy."
+    },
+    "priceUrl": null,
+    "profileEstimated": true,
+    "vitolas": [
+      {
+        "name": "Robusto",
+        "format": "52 x 127mm",
+        "smokeTimeMin": 50,
+        "priceEUR": null,
+        "url": null
+      },
+      {
+        "name": "Toro",
+        "format": "54 x 152mm",
+        "smokeTimeMin": 60,
+        "priceEUR": null,
+        "url": null
+      },
+      {
+        "name": "Petit",
+        "format": "48 x 102mm",
+        "smokeTimeMin": 35,
+        "priceEUR": null,
+        "url": null
+      }
+    ]
+  },
+  {
+    "id": "cig-my-father-la-antiguedad",
+    "brand": "My Father",
+    "line": "La Antiguedad",
+    "vitola": "Robusto",
+    "format": "52 x 127mm",
+    "country": "Nikaragva",
+    "wrapper": "Ecuador Habano Rosado Oscuro",
+    "strength": 4,
+    "body": 4,
+    "flavorTags": [
+      "papar",
+      "kakao",
+      "cedar",
+      "koza"
+    ],
+    "smokeTimeMin": 55,
+    "priceEUR": null,
+    "priceApprox": false,
+    "markets": [
+      "HR",
+      "EU",
+      "USA",
+      "WW"
+    ],
+    "availabilityHR": [],
+    "notes": {
+      "hr": "Tamni Habano Rosado Oscuro omot — bogato, papreno i kožnato, puno tijelo.",
+      "en": "Dark Habano Rosado Oscuro wrapper — rich, peppery and leathery, full body."
+    },
+    "priceUrl": null,
+    "profileEstimated": true,
+    "vitolas": [
+      {
+        "name": "Robusto",
+        "format": "52 x 127mm",
+        "smokeTimeMin": 50,
+        "priceEUR": null,
+        "url": null
+      },
+      {
+        "name": "Corona Grande",
+        "format": "46 x 140mm",
+        "smokeTimeMin": 50,
+        "priceEUR": null,
+        "url": null
+      },
+      {
+        "name": "Toro",
+        "format": "54 x 152mm",
+        "smokeTimeMin": 60,
+        "priceEUR": null,
+        "url": null
+      }
+    ]
+  },
+  {
+    "id": "cig-my-father-la-promesa",
+    "brand": "My Father",
+    "line": "La Promesa",
+    "vitola": "Robusto",
+    "format": "50 x 127mm",
+    "country": "Nikaragva",
+    "wrapper": "Ecuador Habano",
+    "strength": 3,
+    "body": 4,
+    "flavorTags": [
+      "kakao",
+      "kava",
+      "cedar",
+      "zacini"
+    ],
+    "smokeTimeMin": 55,
+    "priceEUR": null,
+    "priceApprox": false,
+    "markets": [
+      "HR",
+      "EU",
+      "USA",
+      "WW"
+    ],
+    "availabilityHR": [],
+    "notes": {
+      "hr": "Ecuador Habano omot — kakao, kava i cedar, srednje-puno tijelo.",
+      "en": "Ecuador Habano wrapper — cocoa, coffee and cedar, medium-full."
+    },
+    "priceUrl": null,
+    "profileEstimated": true,
+    "vitolas": [
+      {
+        "name": "Robusto",
+        "format": "50 x 127mm",
+        "smokeTimeMin": 50,
+        "priceEUR": null,
+        "url": null
+      },
+      {
+        "name": "Toro",
+        "format": "54 x 152mm",
+        "smokeTimeMin": 60,
+        "priceEUR": null,
+        "url": null
+      },
+      {
+        "name": "Petit En Cedros",
+        "format": "48 x 114mm",
+        "smokeTimeMin": 40,
+        "priceEUR": null,
+        "url": null
+      }
+    ]
+  },
+  {
+    "id": "cig-my-father-connecticut",
+    "brand": "My Father",
+    "line": "Connecticut",
+    "vitola": "Robusto",
+    "format": "52 x 127mm",
+    "country": "Nikaragva",
+    "wrapper": "Ecuador Connecticut",
+    "strength": 2,
+    "body": 3,
+    "flavorTags": [
+      "kremasto",
+      "cedar",
+      "orasasti",
+      "med"
+    ],
+    "smokeTimeMin": 55,
+    "priceEUR": null,
+    "priceApprox": false,
+    "markets": [
+      "HR",
+      "EU",
+      "USA",
+      "WW"
+    ],
+    "availabilityHR": [],
+    "notes": {
+      "hr": "Ecuador Connecticut omot — kremasto, cedrasto i blago, jutarnja cigara.",
+      "en": "Ecuador Connecticut wrapper — creamy, cedary and mild, a morning cigar."
+    },
+    "priceUrl": null,
+    "profileEstimated": true,
+    "vitolas": [
+      {
+        "name": "Robusto",
+        "format": "52 x 127mm",
+        "smokeTimeMin": 50,
+        "priceEUR": null,
+        "url": null
+      },
+      {
+        "name": "Toro",
+        "format": "54 x 152mm",
+        "smokeTimeMin": 60,
+        "priceEUR": null,
+        "url": null
+      },
+      {
+        "name": "Corona",
+        "format": "46 x 140mm",
+        "smokeTimeMin": 50,
+        "priceEUR": null,
+        "url": null
+      }
+    ]
+  },
+  {
+    "id": "cig-my-father-cedros-deluxe",
+    "brand": "My Father",
+    "line": "Cedros Deluxe",
+    "vitola": "Eminentes",
+    "format": "46 x 140mm",
+    "country": "Nikaragva",
+    "wrapper": "Ecuador Habano",
+    "strength": 3,
+    "body": 3,
+    "flavorTags": [
+      "cedar",
+      "kava",
+      "zacini",
+      "koza"
+    ],
+    "smokeTimeMin": 55,
+    "priceEUR": null,
+    "priceApprox": false,
+    "markets": [
+      "HR",
+      "EU",
+      "USA",
+      "WW"
+    ],
+    "availabilityHR": [],
+    "notes": {
+      "hr": "U cedrovini omotana serija — cedar, kava i blagi začini.",
+      "en": "Cedar-sleeved series — cedar, coffee and gentle spice."
+    },
+    "priceUrl": null,
+    "profileEstimated": true,
+    "vitolas": [
+      {
+        "name": "Eminentes",
+        "format": "46 x 140mm",
+        "smokeTimeMin": 50,
+        "priceEUR": null,
+        "url": null
+      },
+      {
+        "name": "Cervantes",
+        "format": "52 x 165mm",
+        "smokeTimeMin": 60,
+        "priceEUR": null,
+        "url": null
+      }
+    ]
+  },
+  {
+    "id": "cig-my-father-fonseca",
+    "brand": "My Father",
+    "line": "Fonseca",
+    "vitola": "Robusto",
+    "format": "50 x 127mm",
+    "country": "Nikaragva",
+    "wrapper": "Ecuador Habano",
+    "strength": 2,
+    "body": 3,
+    "flavorTags": [
+      "kremasto",
+      "cedar",
+      "orasasti",
+      "med"
+    ],
+    "smokeTimeMin": 55,
+    "priceEUR": null,
+    "priceApprox": false,
+    "markets": [
+      "HR",
+      "EU",
+      "USA",
+      "WW"
+    ],
+    "availabilityHR": [],
+    "notes": {
+      "hr": "Fonseca by My Father — blaga, kremasta, cedar i orasi.",
+      "en": "Fonseca by My Father — mild, creamy, cedar and nuts."
+    },
+    "priceUrl": null,
+    "profileEstimated": true,
+    "vitolas": [
+      {
+        "name": "Robusto",
+        "format": "50 x 127mm",
+        "smokeTimeMin": 50,
+        "priceEUR": null,
+        "url": null
+      },
+      {
+        "name": "Cosacos",
+        "format": "43 x 135mm",
+        "smokeTimeMin": 45,
+        "priceEUR": null,
+        "url": null
+      },
+      {
+        "name": "Toro",
+        "format": "52 x 152mm",
+        "smokeTimeMin": 60,
+        "priceEUR": null,
+        "url": null
+      }
+    ]
+  },
+  {
+    "id": "cig-my-father-la-reloba",
+    "brand": "My Father",
+    "line": "La Reloba",
+    "vitola": "Robusto",
+    "format": "50 x 127mm",
+    "country": "Nikaragva",
+    "wrapper": "Ecuador Sumatra",
+    "strength": 3,
+    "body": 3,
+    "flavorTags": [
+      "kakao",
+      "cedar",
+      "zacini",
+      "slatko"
+    ],
+    "smokeTimeMin": 55,
+    "priceEUR": null,
+    "priceApprox": false,
+    "markets": [
+      "HR",
+      "EU",
+      "USA",
+      "WW"
+    ],
+    "availabilityHR": [],
+    "notes": {
+      "hr": "La Reloba (Sumatra) — kakao, cedar i blaga slatkoća, srednje tijelo.",
+      "en": "La Reloba (Sumatra) — cocoa, cedar and gentle sweetness, medium body."
+    },
+    "priceUrl": null,
+    "profileEstimated": true,
+    "vitolas": [
+      {
+        "name": "Robusto",
+        "format": "50 x 127mm",
+        "smokeTimeMin": 50,
+        "priceEUR": null,
+        "url": null
+      },
+      {
+        "name": "Toro",
+        "format": "52 x 152mm",
+        "smokeTimeMin": 60,
+        "priceEUR": null,
+        "url": null
+      }
+    ]
   }
 ]
