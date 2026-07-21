@@ -144,9 +144,14 @@ merge-shops → dedupe-data → npm test`. Staje na prvoj grešci (postojeći uz
   (regeneracija iz grane B).
   - *Poznato ograničenje:* EU/USA cijena je "od" na razini **linije** (shop nema
     uvijek točnu vitolu); link vodi na proizvod te linije u toj trgovini.
-- **Faza B — SLJEDEĆE** (batchano): 2 513 shop-only cigara pod **postojećim** 63
-  brenda → dodati kao nove vitole/linije (Additional Vitolas uzorak), po brendu,
-  vrhunska kvaliteta (čist line/vitola split, ne sirovi „Toro Box-Pressed" nazivi).
+- **Faza B — ODRAĐENO** (`app/scripts/build-market-cigars.py`, deterministički +
+  idempotentni engine): iz 2 513 shop-only pod postojećim brendovima admitirano uz
+  strogi quality gate → **271 novih linija** (514 → 785 cigara), grupirano po
+  (brend, linija) u više vitola, čist line/vitola split, embargo-safe (Habanos marke
+  preskočene), profil inline (`enrich`), `regionLinks` s EU/USA cijenama. 131/131 test
+  (+ market-invariant guard), tsc+build ✓. Dijeljeni: `scripts/data/vitola_lexicon.json`,
+  `line_map.json`; `scripts/shop_common.py`. Held ~2 000 (no_format/no_vitola) — kandidati
+  za kasniju polish preko `line_map.json`.
 - **Faza C — poslije** (batchano): 5 517 pod **novim** brendovima → svaki batch
   dodaje `brands.json` metapodatke (zemlja/founded/blurb) + guard 1:1.
 

@@ -96,6 +96,10 @@ export interface Cigar {
   // HR/EU/USA gdje postoji; EU/USA cijena je "od" na razini linije, USD->EUR
   // konverzija nosi priceApprox. Embargo: kubanke nemaju USA.
   regionLinks?: Partial<Record<Region, { shop: string; url: string; priceEUR?: number; priceApprox?: boolean }>>;
+  // "market" = generirano iz scrape-a trgovina (build-market-cigars.py), za razliku
+  // od kuriranih unosa; idempotentno regenerirano. Vidi Faza B/C playbook.
+  catalogSource?: "market";
+  sourceUrls?: string[];
   availabilityHR: string[];
   notes: LocalizedText;
   // Za samplere/gift-packove: popis linija cigara koje pakiranje sadrzi.

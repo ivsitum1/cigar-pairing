@@ -14,45 +14,14 @@ HR data stays the source of truth — HR priceUrl/vitolas are untouched; regionL
 only *adds* EU/USA (and an explicit HR product link mirror).
 """
 import json
-import re
 from pathlib import Path
+
+from shop_common import REGIONS, SHOP_LABEL, best_offer, is_cuban, to_eur
 
 HERE = Path(__file__).resolve().parent
 DATA = HERE.parent / "src" / "data"
 CIGARS = DATA / "cigars.json"
 UNIFIED = HERE / "output" / "cigar_unified_catalog.json"
-
-USD_TO_EUR = 0.92  # pinned approx rate; USD offers become priceApprox
-REGIONS = ("HR", "EU", "USA")
-SHOP_LABEL = {
-    "humidor_hr": "The Humidor",
-    "havana_hr": "Havana Cigar Shop",
-    "cigarworld_eu": "CigarWorld",
-    "holts_us": "Holt's",
-    "cigarsdaily_us": "Cigars Daily",
-}
-
-
-def is_cuban(country: str) -> bool:
-    return "kub" in (country or "").lower() or "cuba" in (country or "").lower()
-
-
-def to_eur(amount, currency):
-    if amount is None:
-        return None, False
-    if currency == "USD":
-        return round(amount * USD_TO_EUR, 2), True
-    return round(float(amount), 2), False
-
-
-def best_offer(offers):
-    """Pick the most representative single-cigar offer: in stock first, then
-    lowest sane price."""
-    def key(o):
-        pkg = (o.get("packaging") or {}).get("type") or ""
-        single = 0 if pkg in ("single", "single_equiv") else 1
-        return (0 if o.get("inStock") else 1, single, o.get("amount") or 9e9)
-    return sorted(offers, key=key)[0] if offers else None
 
 
 def region_links_from(unified_rec, cuban):

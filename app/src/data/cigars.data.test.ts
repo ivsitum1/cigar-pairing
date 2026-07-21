@@ -178,6 +178,22 @@ describe("cigars.json integrity", () => {
     }
   });
 
+  it("market unosi (catalogSource) — čist brend/linija/vitola, format, profil", () => {
+    const mkt = CIGARS.filter((c) => c.catalogSource === "market");
+    expect(mkt.length).toBeGreaterThan(0);
+    const bad: string[] = [];
+    for (const c of mkt) {
+      if (!c.brand || !c.line || !c.vitola) bad.push(`${c.id}: prazan brand/line/vitola`);
+      if (/[()\[\]{}]/.test(c.line)) bad.push(`${c.id}: zagrade u liniji '${c.line}'`);
+      if (!/\d+\s*x\s*\d+mm/.test(c.format)) bad.push(`${c.id}: format '${c.format}'`);
+      if (c.profileEstimated !== true) bad.push(`${c.id}: nije profileEstimated`);
+      if (!c.vitolas?.length) bad.push(`${c.id}: nema vitola`);
+      if (!c.regionLinks || Object.keys(c.regionLinks).length === 0)
+        bad.push(`${c.id}: nema regionLinks`);
+    }
+    expect(bad).toEqual([]);
+  });
+
   it("embargo — nijedna kubanka nema USA tržište/regionLinks", () => {
     const cuban = CIGARS.filter((c) => /kub|cuba/i.test(c.country));
     expect(cuban.length).toBeGreaterThan(0);

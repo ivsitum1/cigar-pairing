@@ -11,6 +11,32 @@ na postojećih 514). Vidi `docs/superpowers/specs/2026-07-21-all-shops-catalog-s
 
 ---
 
+## AS-BUILT (Faza B GOTOVA — čitaj prije izvršenja)
+
+Faza B je implementirana i integrirana (grana `claude/cigar-shop-links-filter-69lq6y`).
+Skripta **`app/scripts/build-market-cigars.py`** je JEDINI writer (indent=2) i radi
+sve u jednom prolazu — profiliranje je INLINE (uvozi `enrich` iz `profile-cigars.py`);
+**NE pokreće se** zasebni `profile-cigars.py` ni `dedupe-data.py` za market unose.
+
+Odstupanja od originalnog nacrta (namjerna, radi kvalitete/idempotentnosti):
+- **Habanos marke se preskaču** (`HABANOS` set = kubanske marke iz `integrity.test.ts`);
+  strane trgovine drže ne-kubanske imenjake → reason `habanos_brand_skip`.
+- **Dup-gate = (brend, linija) vs kurirane** (ne trojka): market ne dira kurirane
+  linije; poklapanje → reason `existing_line` (dodatne vitole kuriranih = kasnije).
+- **Grupiranje po (brend, linija)** → jedna cigara s više vitola (interni dedupe;
+  bez `dedupe-data.py`).
+- Čišćenje linije: makni brend gdje god se pojavi, dimenzije, vitola-sinonime,
+  zagrade/pakiranje/`by`/dangling `Gran`.
+- Rezultat Faze B: **271 novih linija** (514 → 785), 0 embargo, 131/131 test, tsc+build ✓.
+
+Komanda (Faza B, cijela, deterministički): `cd app && python scripts/build-market-cigars.py --phase b --check-input-sha && npm test && npx tsc -b`.
+Reprodukcija je bajt-identična (idempotentno). Batchanje po brendu nije nužno jer je
+gate strog; `--brands "A,B"` postoji za ciljano.
+
+Ostatak dokumenta = originalni nacrt (referenca za Fazu C).
+
+---
+
 ## 0. Zlatna pravila determinizma (OBAVEZNO)
 
 1. **Idempotentna regeneracija.** Faza B/C skripta NE dopisuje inkrementalno. Svaki
