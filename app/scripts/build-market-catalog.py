@@ -47,7 +47,7 @@ from cigar_shop_match import (  # noqa: E402
 from shop_scrape.http import iso_utc_now  # noqa: E402
 
 
-SCHEMA_VERSION = 2
+SCHEMA_VERSION = 3
 
 REGION_FILTERS = ("HR", "EU", "USA")
 
@@ -57,6 +57,31 @@ SHOP_REGION = {
     "cigarworld_eu": "EU",
     "holts_us": "USA",
     "cigarsdaily_us": "USA",
+}
+
+SHOP_LABEL = {
+    "humidor_hr": "Humidor",
+    "havana_hr": "Havana Cigar Shop",
+    "cigarworld_eu": "Cigarworld",
+    "holts_us": "Holt's",
+    "cigarsdaily_us": "Cigars Daily",
+}
+
+PROVENANCE = {
+    "policy": (
+        "Shop fields (price, product URL, wrapper/binder/filler when present) come from "
+        "live product-page scrapes. They are not invented. Pairing copy in cigars.json "
+        "(notes, flavorTags, body) is curated for the app and may be estimated when "
+        "profileEstimated is true."
+    ),
+    "verifiedMeans": (
+        "sources[].verified === true only when the row points at a real product URL "
+        "from a shop scrape (or a catalog priceUrl that is itself a shop product URL)."
+    ),
+    "howToUse": (
+        "Prefer sources where verified===true and type==='shop-scrape'. "
+        "Open sources[].url / sourceUrls[] to check the original product page."
+    ),
 }
 
 DETAIL_FIELDS = (
@@ -129,6 +154,7 @@ def offer_from_raw(row: dict) -> dict:
     details = item.get("details") if isinstance(item.get("details"), dict) else {}
     packaging = item.get("packaging") if isinstance(item.get("packaging"), dict) else {}
     attrs = item.get("attributes") if isinstance(item.get("attributes"), dict) else {}
+    details_source = item.get("detailsSource") if isinstance(item.get("detailsSource"), dict) else None
     return {
         "sourceShopId": row["sourceShopId"],
         "region": row["region"],
@@ -154,8 +180,117 @@ def offer_from_raw(row: dict) -> dict:
             None,
         ),
         "details": details or None,
+        "detailsSource": details_source,
         "scrapedAt": row.get("scrapedAt"),
     }
+
+
+def _http_url(value: object) -> str | None:
+    if not isinstance(value, str):
+        return None
+    url = value.strip()
+    if url.startswith("http://") or url.startswith("https://"):
+        return url
+    return None
+
+
+def _detail_provides(details: dict | None) -> list[str]:
+    if not isinstance(details, dict):
+        return []
+    return [f for f in DETAIL_FIELDS if details.get(f) is not None and details.get(f) != ""]
+
+
+def build_sources(
+    *,
+    offers: list[dict],
+    pairing: dict | None = None,
+    catalog_id: str | None = None,
+    in_catalog: bool = False,
+) -> tuple[list[dict], list[str], bool]:
+    """Build provenance sources + flat verified URLs.
+
+    Returns (sources, sourceUrls, hasVerifiedSource).
+    """
+    sources: list[dict] = []
+    seen: set[str] = set()
+
+    for o in offers:
+        url = _http_url(o.get("url"))
+        shop_id = o.get("sourceShopId") or ""
+        ds = o.get("detailsSource") if isinstance(o.get("detailsSource"), dict) else {}
+        detail_url = _http_url(ds.get("url")) or url
+        key = f"shop|{shop_id}|{norm_product_url(url) or norm(str(o.get('name') or ''))}"
+        if key in seen:
+            continue
+        seen.add(key)
+        provides = ["name", "price", "productUrl"]
+        provides.extend(f"details.{f}" for f in _detail_provides(o.get("details") if isinstance(o.get("details"), dict) else None))
+        sources.append(
+            {
+                "type": "shop-scrape",
+                "verified": bool(url),
+                "shopId": shop_id or None,
+                "label": SHOP_LABEL.get(shop_id) or shop_id or None,
+                "region": o.get("region"),
+                "url": url,
+                "detailsUrl": detail_url if detail_url != url else None,
+                "extractedFrom": ds.get("extractedFrom"),
+                "scrapedAt": ds.get("extractedAt") or o.get("scrapedAt"),
+                "provides": provides,
+                "note": "Extracted from live shop product page / store API — not invented.",
+            }
+        )
+
+    if in_catalog:
+        price_url = None
+        if isinstance(pairing, dict):
+            price_url = _http_url(pairing.get("priceUrl"))
+        provides = [
+            "pairing.notes",
+            "pairing.flavorTags",
+            "pairing.body",
+            "pairing.strength",
+            "pairing.smokeTimeMin",
+        ]
+        estimated = bool(isinstance(pairing, dict) and pairing.get("profileEstimated"))
+        sources.append(
+            {
+                "type": "app-catalog",
+                "verified": bool(price_url),
+                "shopId": None,
+                "label": "App catalog (cigars.json)",
+                "region": None,
+                "url": price_url,
+                "detailsUrl": None,
+                "extractedFrom": "app/src/data/cigars.json",
+                "scrapedAt": None,
+                "catalogId": catalog_id,
+                "provides": provides,
+                "profileEstimated": estimated,
+                "note": (
+                    "Curated pairing fields for the app. "
+                    + (
+                        "profileEstimated=true: strength/body/flavor may be estimated, not shop-scraped."
+                        if estimated
+                        else "Not a shop scrape; use shop-scrape sources for price/WBF verification."
+                    )
+                ),
+            }
+        )
+
+    source_urls: list[str] = []
+    seen_urls: set[str] = set()
+    for s in sources:
+        if not s.get("verified"):
+            continue
+        for u in (s.get("url"), s.get("detailsUrl")):
+            if isinstance(u, str) and u and u not in seen_urls:
+                seen_urls.add(u)
+                source_urls.append(u)
+    has_verified = any(bool(s.get("verified")) and s.get("type") == "shop-scrape" for s in sources) or (
+        any(bool(s.get("verified")) for s in sources)
+    )
+    return sources, source_urls, has_verified
 
 
 def offer_id(o: dict) -> str:
@@ -425,6 +560,19 @@ def resolve_regions(offers: list[dict], markets: list | None = None) -> list[str
     return sorted(regs)
 
 
+def _with_sources(row: dict) -> dict:
+    sources, source_urls, has_verified = build_sources(
+        offers=row.get("offers") or [],
+        pairing=row.get("pairing"),
+        catalog_id=row.get("catalogId"),
+        in_catalog=bool(row.get("inCatalog")),
+    )
+    row["sources"] = sources
+    row["sourceUrls"] = source_urls
+    row["hasVerifiedSource"] = has_verified
+    return row
+
+
 def build_products(catalog: list[dict], unmapped: list[dict]) -> list[dict]:
     """Flat unique cigar rows (catalog vitolas + unmapped shop groups)."""
     products: list[dict] = []
@@ -433,89 +581,95 @@ def build_products(catalog: list[dict], unmapped: list[dict]) -> list[dict]:
         for v in c.get("vitolas") or []:
             offers = v.get("offers") or []
             regions = resolve_regions(offers, markets)
+            pairing = {
+                "strength": c.get("strength"),
+                "body": c.get("body"),
+                "flavorTags": c.get("flavorTags") or [],
+                "smokeTimeMin": v.get("smokeTimeMin") or c.get("smokeTimeMin"),
+                "notes": c.get("notes") or {},
+                "profileEstimated": c.get("profileEstimated"),
+                "priceEUR": v.get("priceEUR") if v.get("priceEUR") is not None else c.get("priceEUR"),
+                "priceUrl": v.get("url") or c.get("priceUrl"),
+                "availabilityHR": c.get("availabilityHR") or [],
+            }
             products.append(
-                {
-                    "kind": "catalog",
-                    "id": f"{c.get('id')}::{vitola_name_key(str(v.get('name') or ''), str(c.get('brand') or ''))}",
-                    "catalogId": c.get("id"),
-                    "inCatalog": True,
-                    "brand": c.get("brand"),
-                    "line": c.get("line"),
-                    "vitola": v.get("name"),
-                    "name": f"{c.get('brand')} {c.get('line')} {v.get('name')}".strip(),
-                    "format": v.get("format"),
-                    "parsedSize": v.get("parsedSize"),
-                    "country": c.get("country"),
-                    "markets": markets,
-                    "regions": regions,
-                    "filters": {
-                        "ALL": True,
-                        "HR": "HR" in regions,
-                        "EU": "EU" in regions,
-                        "USA": "USA" in regions,
-                    },
-                    "pairing": {
-                        "strength": c.get("strength"),
-                        "body": c.get("body"),
-                        "flavorTags": c.get("flavorTags") or [],
-                        "smokeTimeMin": v.get("smokeTimeMin") or c.get("smokeTimeMin"),
-                        "notes": c.get("notes") or {},
-                        "profileEstimated": c.get("profileEstimated"),
-                        "priceEUR": v.get("priceEUR") if v.get("priceEUR") is not None else c.get("priceEUR"),
-                        "priceUrl": v.get("url") or c.get("priceUrl"),
-                        "availabilityHR": c.get("availabilityHR") or [],
-                    },
-                    "details": merge_details(v.get("details"), c.get("details")),
-                    "offers": offers,
-                    "pricesByRegion": v.get("pricesByRegion") or prices_by_region(offers),
-                    "shops": sorted({o.get("sourceShopId") for o in offers if o.get("sourceShopId")}),
-                    "isDuplicateAcrossSources": bool(v.get("isDuplicateAcrossSources")),
-                    "duplicateSources": v.get("duplicateSources") or [],
-                }
+                _with_sources(
+                    {
+                        "kind": "catalog",
+                        "id": f"{c.get('id')}::{vitola_name_key(str(v.get('name') or ''), str(c.get('brand') or ''))}",
+                        "catalogId": c.get("id"),
+                        "inCatalog": True,
+                        "brand": c.get("brand"),
+                        "line": c.get("line"),
+                        "vitola": v.get("name"),
+                        "name": f"{c.get('brand')} {c.get('line')} {v.get('name')}".strip(),
+                        "format": v.get("format"),
+                        "parsedSize": v.get("parsedSize"),
+                        "country": c.get("country"),
+                        "markets": markets,
+                        "regions": regions,
+                        "filters": {
+                            "ALL": True,
+                            "HR": "HR" in regions,
+                            "EU": "EU" in regions,
+                            "USA": "USA" in regions,
+                        },
+                        "pairing": pairing,
+                        "details": merge_details(v.get("details"), c.get("details")),
+                        "offers": offers,
+                        "pricesByRegion": v.get("pricesByRegion") or prices_by_region(offers),
+                        "shops": sorted({o.get("sourceShopId") for o in offers if o.get("sourceShopId")}),
+                        "isDuplicateAcrossSources": bool(v.get("isDuplicateAcrossSources")),
+                        "duplicateSources": v.get("duplicateSources") or [],
+                    }
+                )
             )
         if c.get("entryOffers"):
             offers = c["entryOffers"]
             regions = resolve_regions(offers, markets)
             shops = sorted({o.get("sourceShopId") for o in offers if o.get("sourceShopId")})
+            pairing = {
+                "strength": c.get("strength"),
+                "body": c.get("body"),
+                "flavorTags": c.get("flavorTags") or [],
+                "smokeTimeMin": c.get("smokeTimeMin"),
+                "notes": c.get("notes") or {},
+                "profileEstimated": c.get("profileEstimated"),
+                "priceEUR": c.get("priceEUR"),
+                "priceUrl": c.get("priceUrl"),
+                "availabilityHR": c.get("availabilityHR") or [],
+            }
             products.append(
-                {
-                    "kind": "catalog-entry",
-                    "id": f"{c.get('id')}::entry",
-                    "catalogId": c.get("id"),
-                    "inCatalog": True,
-                    "brand": c.get("brand"),
-                    "line": c.get("line"),
-                    "vitola": c.get("defaultVitola"),
-                    "name": f"{c.get('brand')} {c.get('line')}".strip(),
-                    "format": c.get("format"),
-                    "parsedSize": None,
-                    "country": c.get("country"),
-                    "markets": markets,
-                    "regions": regions,
-                    "filters": {
-                        "ALL": True,
-                        "HR": "HR" in regions,
-                        "EU": "EU" in regions,
-                        "USA": "USA" in regions,
-                    },
-                    "pairing": {
-                        "strength": c.get("strength"),
-                        "body": c.get("body"),
-                        "flavorTags": c.get("flavorTags") or [],
-                        "smokeTimeMin": c.get("smokeTimeMin"),
-                        "notes": c.get("notes") or {},
-                        "profileEstimated": c.get("profileEstimated"),
-                        "priceEUR": c.get("priceEUR"),
-                        "priceUrl": c.get("priceUrl"),
-                        "availabilityHR": c.get("availabilityHR") or [],
-                    },
-                    "details": c.get("details"),
-                    "offers": offers,
-                    "pricesByRegion": prices_by_region(offers),
-                    "shops": shops,
-                    "isDuplicateAcrossSources": len(shops) >= 2,
-                    "duplicateSources": shops if len(shops) >= 2 else [],
-                }
+                _with_sources(
+                    {
+                        "kind": "catalog-entry",
+                        "id": f"{c.get('id')}::entry",
+                        "catalogId": c.get("id"),
+                        "inCatalog": True,
+                        "brand": c.get("brand"),
+                        "line": c.get("line"),
+                        "vitola": c.get("defaultVitola"),
+                        "name": f"{c.get('brand')} {c.get('line')}".strip(),
+                        "format": c.get("format"),
+                        "parsedSize": None,
+                        "country": c.get("country"),
+                        "markets": markets,
+                        "regions": regions,
+                        "filters": {
+                            "ALL": True,
+                            "HR": "HR" in regions,
+                            "EU": "EU" in regions,
+                            "USA": "USA" in regions,
+                        },
+                        "pairing": pairing,
+                        "details": c.get("details"),
+                        "offers": offers,
+                        "pricesByRegion": prices_by_region(offers),
+                        "shops": shops,
+                        "isDuplicateAcrossSources": len(shops) >= 2,
+                        "duplicateSources": shops if len(shops) >= 2 else [],
+                    }
+                )
             )
 
     for u in unmapped:
@@ -525,35 +679,37 @@ def build_products(catalog: list[dict], unmapped: list[dict]) -> list[dict]:
             {o.get("sourceShopId") for o in offers if o.get("sourceShopId")}
         )
         products.append(
-            {
-                "kind": "shop",
-                "id": f"shop::{u.get('dedupeKey')}",
-                "catalogId": None,
-                "inCatalog": False,
-                "brand": u.get("brand"),
-                "line": u.get("line"),
-                "vitola": u.get("vitola"),
-                "name": u.get("name"),
-                "format": None,
-                "parsedSize": None,
-                "country": (u.get("details") or {}).get("origin") if isinstance(u.get("details"), dict) else None,
-                "markets": regions,
-                "regions": regions,
-                "filters": {
-                    "ALL": True,
-                    "HR": "HR" in regions,
-                    "EU": "EU" in regions,
-                    "USA": "USA" in regions,
-                },
-                "pairing": None,
-                "details": u.get("details"),
-                "offers": offers,
-                "pricesByRegion": u.get("pricesByRegion") or prices_by_region(offers),
-                "shops": shops,
-                "isDuplicateAcrossSources": bool(u.get("isDuplicateAcrossSources")),
-                "duplicateSources": u.get("duplicateSources") or [],
-                "dedupeKey": u.get("dedupeKey"),
-            }
+            _with_sources(
+                {
+                    "kind": "shop",
+                    "id": f"shop::{u.get('dedupeKey')}",
+                    "catalogId": None,
+                    "inCatalog": False,
+                    "brand": u.get("brand"),
+                    "line": u.get("line"),
+                    "vitola": u.get("vitola"),
+                    "name": u.get("name"),
+                    "format": None,
+                    "parsedSize": None,
+                    "country": (u.get("details") or {}).get("origin") if isinstance(u.get("details"), dict) else None,
+                    "markets": regions,
+                    "regions": regions,
+                    "filters": {
+                        "ALL": True,
+                        "HR": "HR" in regions,
+                        "EU": "EU" in regions,
+                        "USA": "USA" in regions,
+                    },
+                    "pairing": None,
+                    "details": u.get("details"),
+                    "offers": offers,
+                    "pricesByRegion": u.get("pricesByRegion") or prices_by_region(offers),
+                    "shops": shops,
+                    "isDuplicateAcrossSources": bool(u.get("isDuplicateAcrossSources")),
+                    "duplicateSources": u.get("duplicateSources") or [],
+                    "dedupeKey": u.get("dedupeKey"),
+                }
+            )
         )
 
     products.sort(
@@ -641,6 +797,13 @@ def summarize(catalog: list[dict], unmapped: list[dict], products: list[dict], s
         "unmappedCrossShopDuplicateGroups": sum(1 for u in unmapped if u.get("isDuplicateAcrossSources")),
         "mergedCatalogLines": meta.get("mergedCatalogLines", 0),
         "countsByFilter": counts_by_filter(products),
+        "withVerifiedSource": sum(1 for p in products if p.get("hasVerifiedSource")),
+        "withoutVerifiedSource": sum(1 for p in products if not p.get("hasVerifiedSource")),
+        "withShopScrapeUrl": sum(
+            1
+            for p in products
+            if any(s.get("type") == "shop-scrape" and s.get("verified") for s in (p.get("sources") or []))
+        ),
     }
 
 
@@ -678,6 +841,7 @@ def main() -> None:
     out = {
         "generatedAt": iso_utc_now(),
         "schemaVersion": SCHEMA_VERSION,
+        "provenance": PROVENANCE,
         "filters": {
             "values": ["ALL", "HR", "EU", "USA"],
             "description": {
@@ -702,6 +866,9 @@ def main() -> None:
             "shops": summary["shops"],
             "shopItems": summary["shopItems"],
             "countsByFilter": filter_counts,
+            "withVerifiedSource": summary["withVerifiedSource"],
+            "withoutVerifiedSource": summary["withoutVerifiedSource"],
+            "withShopScrapeUrl": summary["withShopScrapeUrl"],
         },
         "shops": shops,
         "cigars": products,
