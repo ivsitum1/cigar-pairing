@@ -10,7 +10,10 @@ from typing import Any
 from shop_scrape.details import (
     apply_details_to_item,
     parse_cigarworld_variant_info,
+    parse_holts_line_details,
+    parse_holts_vitola_rows,
     parse_humidor_product_details,
+    prefer_holts_pack,
 )
 from shop_scrape.http import HttpClient, iso_utc_now
 from shop_scrape.jsonld import extract_jsonld_products
@@ -312,25 +315,130 @@ def _normalize_jsonld_product(url: str, product: dict) -> dict | None:
     }
 
 
-def scrape_holts_us(client: HttpClient, *, limit: int | None) -> dict:
+def scrape_holts_us(
+    client: HttpClient,
+    *,
+    limit: int | None,
+    checkpoint_path: str | None = None,
+) -> dict:
+    """Scrape Holt's line pages and expand vitola rows (single-stick preferred)."""
     shop = ShopDef("holts_us", "Holt's Cigar Company", "USA", "https://www.holts.com", "USD")
     sitemap_url = "https://www.holts.com/sitemap.xml"
     locs = iter_sitemap_locs(client.get_text(sitemap_url))
 
-    candidates = [u for u in locs if u.startswith(shop.base_url) and u.endswith(".html")]
-    items: list[dict] = []
-    for url in candidates:
-        html = client.get_text(url)
-        products = extract_jsonld_products(html)
-        if not products:
-            continue
-        item = _normalize_jsonld_product(url, products[0])
-        if item:
-            items.append(item)
-        if limit is not None and len(items) >= limit:
-            break
+    candidates = [
+        u
+        for u in locs
+        if "/cigars/all-cigar-brands/" in u
+        and u.endswith(".html")
+        and not u.rstrip("/").endswith("all-cigar-brands.html")
+    ]
 
-    return _wrap_shop(shop, source_kind="sitemap+jsonld", entrypoints=[sitemap_url], items=items)
+    items: list[dict] = []
+
+    def _checkpoint() -> None:
+        if not checkpoint_path:
+            return
+        payload = _wrap_shop(
+            shop,
+            source_kind="sitemap+line-page+vitola-table",
+            entrypoints=[sitemap_url],
+            items=items,
+        )
+        path = Path(checkpoint_path)
+        path.parent.mkdir(parents=True, exist_ok=True)
+        tmp = path.with_suffix(path.suffix + ".tmp")
+        tmp.write_text(json.dumps(payload, ensure_ascii=False, indent=1), encoding="utf-8")
+        tmp.replace(path)
+
+    for url in candidates:
+        try:
+            html = client.get_text(url)
+        except urllib.error.HTTPError:
+            continue
+        if "products-list-table" not in html:
+            continue
+
+        products = extract_jsonld_products(html)
+        line_name = ""
+        if products and isinstance(products[0].get("name"), str):
+            line_name = products[0]["name"]
+        if not line_name:
+            title_m = re.search(r"<title>(.*?)</title>", html, re.IGNORECASE | re.DOTALL)
+            line_name = re.sub(r"\s*[|\-].*$", "", title_m.group(1)).strip() if title_m else url.rsplit("/", 1)[-1]
+
+        line_details = parse_holts_line_details(html)
+        vitolas = parse_holts_vitola_rows(html)
+        if not vitolas:
+            continue
+
+        for vit in vitolas:
+            pack = prefer_holts_pack(vit.get("packs") or [])
+            amount = pack.get("price") if pack else None
+            vitola_name = vit.get("name") or ""
+            full_name = f"{line_name} {vitola_name}".strip()
+            details = dict(line_details)
+            details["size"] = vitola_name or details.get("size")
+            details["lengthIn"] = vit.get("lengthIn")
+            details["ringGauge"] = vit.get("ringGauge")
+            if details.get("lengthIn") is not None:
+                details["lengthCm"] = round(float(details["lengthIn"]) * 2.54, 2)
+
+            item = {
+                "id": f"{url}#{vitola_name}",
+                "name": full_name,
+                "url": url,
+                "price": {"amount": amount, "currency": "USD"} if amount is not None else None,
+                "availability": {"inStock": True if amount is not None else None, "onSale": None},
+                "packaging": {
+                    "type": (pack or {}).get("type") or "unknown",
+                    "count": (pack or {}).get("count"),
+                    "label": (pack or {}).get("label"),
+                },
+                "attributes": {
+                    "brand": None,
+                    "vitola": vitola_name or None,
+                    "dimensions": {
+                        "lengthIn": vit.get("lengthIn"),
+                        "ringGauge": vit.get("ringGauge"),
+                    },
+                },
+                "categories": [],
+                "images": [],
+                "raw": {
+                    "lineName": line_name,
+                    "vitola": vitola_name,
+                    "packs": vit.get("packs") or [],
+                    "jsonld": {"@type": "Product", "name": line_name} if line_name else None,
+                },
+            }
+            apply_details_to_item(item, details)
+            item["detailsSource"] = {
+                "url": url,
+                "extractedFrom": "holts-line-page+vitola-table",
+                "extractedAt": iso_utc_now(),
+            }
+            items.append(item)
+            if limit is not None and len(items) >= limit:
+                _checkpoint()
+                return _wrap_shop(
+                    shop,
+                    source_kind="sitemap+line-page+vitola-table",
+                    entrypoints=[sitemap_url],
+                    items=items,
+                )
+
+        if len(items) % 100 == 0 and items:
+            print(f"  holts items {len(items)}", flush=True)
+            _checkpoint()
+
+    _checkpoint()
+    return _wrap_shop(
+        shop,
+        source_kind="sitemap+line-page+vitola-table",
+        entrypoints=[sitemap_url],
+        items=items,
+    )
 
 
 def scrape_cigarworld_eu(

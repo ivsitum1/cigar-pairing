@@ -9,12 +9,16 @@ if str(SCRIPTS_DIR) not in sys.path:
 
 from shop_scrape.details import (  # noqa: E402
     parse_cigarworld_variant_info,
+    parse_holts_line_details,
+    parse_holts_vitola_rows,
     parse_humidor_product_details,
+    parse_wc_store_attributes,
+    prefer_holts_pack,
 )
 from shop_scrape.http import _cache_key, iso_utc_now  # noqa: E402
 from shop_scrape.jsonld import extract_jsonld_products  # noqa: E402
 from shop_scrape.sitemap import iter_sitemap_locs  # noqa: E402
-from shop_scrape.woocommerce import wc_price_to_amount  # noqa: E402
+from shop_scrape.woocommerce import wc_normalize_product, wc_price_to_amount  # noqa: E402
 
 
 class TestHttpHelpers(unittest.TestCase):

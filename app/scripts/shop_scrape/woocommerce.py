@@ -4,7 +4,8 @@ import html
 from typing import Any
 from urllib.parse import urlencode
 
-from shop_scrape.http import HttpClient
+from shop_scrape.details import apply_details_to_item, parse_wc_store_attributes
+from shop_scrape.http import HttpClient, iso_utc_now
 
 
 def wc_price_to_amount(prices: dict[str, Any]) -> float | None:
@@ -124,7 +125,7 @@ def wc_normalize_product(product: dict) -> dict:
             }
         )
 
-    return {
+    item = {
         "id": str(product.get("id") or product.get("slug") or permalink),
         "name": html.unescape(name),
         "url": permalink,
@@ -147,4 +148,15 @@ def wc_normalize_product(product: dict) -> dict:
             "sku": product.get("sku"),
         },
     }
+
+    attrs = product.get("attributes") if isinstance(product.get("attributes"), list) else []
+    details = parse_wc_store_attributes(attrs)
+    if any(details.get(k) for k in ("wrapper", "binder", "filler", "origin", "ringGauge", "brandLabel", "size")):
+        apply_details_to_item(item, details)
+        item["detailsSource"] = {
+            "url": permalink,
+            "extractedFrom": "woocommerce-store-api-attributes",
+            "extractedAt": iso_utc_now(),
+        }
+    return item
 

@@ -70,8 +70,8 @@ def main() -> None:
         print(f"Scraping {shop_id} …", flush=True)
         out_path = out_dir / f"cigar_shop_{shop_id}_raw.json"
         scrape_kwargs: dict = {"limit": args.limit}
-        # Long scrapes (Cigarworld) write incremental checkpoints to the same path.
-        if shop_id == "cigarworld_eu":
+        # Long scrapes write incremental checkpoints to the same path.
+        if shop_id in ("cigarworld_eu", "holts_us"):
             scrape_kwargs["checkpoint_path"] = str(out_path)
         data = scrape_fn(client, **scrape_kwargs)
         out_path.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
