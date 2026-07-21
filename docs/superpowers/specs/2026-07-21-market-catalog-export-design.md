@@ -7,14 +7,26 @@
 ## Pristup
 
 **Hibrid:**
-- `catalog[]` — strogo mapirano na naše cigare/vitole (URL match)
+- `catalog[]` — mapirano na naše cigare/vitole (URL match + sekundarno normalizirano ime)
 - `unmappedShopItems[]` — shop artikli koji se nisu poklopili s katalogom
+- `unmappedCrossShopDuplicates[]` — unmapped artikli s istim normaliziranim imenom u ≥2 shopa
+
+## Matching
+
+1. Točan URL (normalized host+path)
+2. Normalizirano ime: `brand line vitola`, `brand vitola`, `brand line`, `vitola`
 
 ## Duplikati
 
 - `isDuplicateAcrossSources = true` kad ista catalog vitola ima `offers` iz ≥2 različita `sourceShopId`
-- Unmapped: `heuristicDuplicate` nije u v1 (samo točni URL match u catalogu)
+- Unmapped cross-shop: grupe u `unmappedCrossShopDuplicates`
 
 ## Output
 
-`app/scripts/output/cigar_market_catalog.json` (gitignored pattern već pokriva `cigar_shop_*_raw.json`; dodati i ovaj artefakt u ignore).
+`app/scripts/output/cigar_market_catalog.json` (gitignored).
+
+## Builder
+
+```bash
+python3 app/scripts/build-market-catalog.py
+```
