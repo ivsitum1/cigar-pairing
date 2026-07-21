@@ -60,6 +60,35 @@ COUNTRY_HR = {
 DIM_RE = re.compile(r"\b\d+(?:[.,]\d+)?\s*[x×]\s*\d+(?:[.,]\d+)?\b|\b\d+(?:[.,]\d+)?\s*(?:mm|cm|\")\b|\b#\d+\b", re.I)
 
 
+def brand_slug(url: str):
+    """Brand-slug kandidat iz product URL-a (za brand_dictionary lookup)."""
+    if not url:
+        return None
+    m = re.search(r"/all-cigar-brands/([^/.]+)\.html", url)   # Holt's (egzaktno)
+    if m:
+        return m.group(1)
+    m = re.search(r"/product/([^/]+)/", url)                    # Cigars Daily
+    if m:
+        return m.group(1)
+    m = re.search(r"/zigarren/[^/]+/([^/?]+)", url)             # CigarWorld
+    if m:
+        return re.sub(r"-\d{6,}.*$", "", m.group(1))            # makni završni id-blok
+    return None
+
+
+def resolve_brand(record, brand_dict, keys_by_len):
+    for o in record.get("offers") or []:
+        s = brand_slug(o.get("url"))
+        if not s:
+            continue
+        if s in brand_dict:
+            return brand_dict[s]
+        for k in keys_by_len:                                   # longest-prefix
+            if s == k or s.startswith(k + "-"):
+                return brand_dict[k]
+    return None
+
+
 def load_json(p):
     return json.loads(Path(p).read_text(encoding="utf-8"))
 
@@ -183,6 +212,7 @@ def build():
         exist_brand_line.add((c["brand"].lower(), c["line"].lower()))
 
     # pool for the phase
+    keys_by_len = sorted(brand_dict.keys(), key=len, reverse=True)
     pool = []
     for r in unified:
         if r.get("inCatalog"):
@@ -191,8 +221,10 @@ def build():
         if args.phase in ("b", "all") and b and b in known_brands:
             pool.append((b, r))
         elif args.phase in ("c", "all") and not b:
-            # phase C: resolve brand via dictionary (from any offer url slug)
-            pass  # C se radi tek kad postoji brand_dictionary (Cursor)
+            # Faza C: razriješi NOVI brend iz rječnika (slug iz product URL-a)
+            rb = resolve_brand(r, brand_dict, keys_by_len)
+            if rb:
+                pool.append((rb, r))
 
     if args.list_brands:
         import collections
@@ -308,9 +340,41 @@ def build():
     merged = base + new_entries
     merged.sort(key=sort_key)
     write_json(CIGARS, merged)
+
+    # brands.json = TOČNO brendovi prisutni u cigars.json (1:1, bez orphana,
+    # idempotentno): postojeće/kurirane zadrži, nove dodaj iz drafta (zemlja iz
+    # cigara). Rebuild svaki run da se stara Faza C stanja ne gomilaju.
+    import collections
+    draft_path = DATADIR / "new_brands_draft.json"
+    draft = {k: v for k, v in load_json(draft_path).items() if not k.startswith("_")} if draft_path.exists() else {}
+    brands_now = load_json(BRANDS)
+    country_by_brand = collections.defaultdict(collections.Counter)
+    for rec in new_entries:
+        country_by_brand[rec["brand"]][rec["country"]] += 1
+    all_used = {c["brand"] for c in merged}
+    final_brands = {}
+    added_brands = 0
+    for b in sorted(all_used, key=lambda s: s.casefold()):
+        if b in brands_now:
+            final_brands[b] = brands_now[b]          # kurirani ili već dodani
+        else:
+            d = draft.get(b, {})
+            country = country_by_brand[b].most_common(1)[0][0] if country_by_brand[b] else d.get("country", "—")
+            final_brands[b] = {
+                "country": country,
+                "founded": d.get("founded", "—"),
+                "blurb": d.get("blurb", {
+                    "hr": f"{b} — marka iz kataloga trgovina (HR/EU/USA).",
+                    "en": f"{b} — a brand listed in retail shop catalogues (HR/EU/USA).",
+                }),
+            }
+            added_brands += 1
+    Path(BRANDS).write_text(json.dumps(final_brands, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    stats["new_brands_added"] = added_brands
+
     write_json(HOLD, {"stats": stats, "hold": hold})
     print(json.dumps(stats, ensure_ascii=False, indent=2))
-    print(f"total cigars now: {len(merged)} (base {len(base)} + new {len(new_entries)})")
+    print(f"total cigars now: {len(merged)} (base {len(base)} + new {len(new_entries)}) | brands +{added_brands}")
 
 
 if __name__ == "__main__":
