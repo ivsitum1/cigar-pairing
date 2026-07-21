@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 import type { Cigar, Drink } from "../types";
 import { useI18n, STYLE_LABELS, ADDITIVE_LABELS, ADDITIVE_RULES } from "../i18n";
-import { brandInfo, cigarMarketLinks, formatPrice } from "../data";
+import { brandInfo, cigarShopLinks, formatPrice } from "../data";
+import { REGIONS } from "../data/shops";
+import { useMarket } from "../store/market";
 import { drinkBuyLink } from "../lib/drinkBuyLink";
 import { vitolaBlurb } from "../lib/vitolaInfo";
 import { Chip, Meter } from "./ui";
@@ -231,25 +233,8 @@ function CigarDetails({
         />
       </dl>
 
-      {/* kupnja po trzistu */}
-      <div className="mt-3">
-        <div className="mb-1 text-micro uppercase tracking-widest text-dim">
-          {t("common.buyIn")}
-        </div>
-        <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
-          {cigarMarketLinks(cigar).map((l) => (
-            <a
-              key={l.market}
-              href={l.url}
-              target="_blank"
-              rel="noreferrer"
-              className="rounded-lg border border-zlato/40 bg-zlato/10 py-2 text-center font-display text-xs uppercase tracking-widest text-zlato-2 hover:bg-zlato/20"
-            >
-              {t(`market.${l.market}` as Parameters<typeof t>[0])} ↗
-            </a>
-          ))}
-        </div>
-      </div>
+      {/* kupnja po regiji — kad je filter na regiji prikazi samo tu, inace sve */}
+      <CigarBuyLinks cigar={cigar} />
       <div className="mt-2 flex flex-wrap gap-1.5">
         {cigar.flavorTags.map((tag) => (
           <Chip key={tag}>{tag}</Chip>
@@ -375,6 +360,53 @@ function BuyLink({ href, label }: { href: string; label: "buy" | "search" }) {
     >
       {label === "buy" ? t("common.buy") : t("common.searchOnline")} ↗
     </a>
+  );
+}
+
+// Linkovi na trgovine grupirani po regiji. Kad je filter regije aktivan
+// prikazuje samo tu regiju; "ALL" prikazuje sve regije gdje je cigara dostupna.
+function CigarBuyLinks({ cigar }: { cigar: Cigar }) {
+  const { t } = useI18n();
+  const region = useMarket();
+  const links = cigarShopLinks(cigar);
+  const regions = REGIONS.filter(
+    (r) => (region === "ALL" || region === r) && links.some((l) => l.region === r),
+  );
+  if (regions.length === 0) return null;
+  return (
+    <div className="mt-3">
+      <div className="mb-1 text-micro uppercase tracking-widest text-dim">
+        {t("common.buyIn")}
+      </div>
+      <div className="space-y-2">
+        {regions.map((r) => (
+          <div key={r}>
+            <div className="mb-1 text-[10px] uppercase tracking-widest text-dim/80">
+              {t(`market.${r}` as Parameters<typeof t>[0])}
+            </div>
+            <div className="grid grid-cols-2 gap-2">
+              {links
+                .filter((l) => l.region === r)
+                .map((l) => (
+                  <a
+                    key={l.shop}
+                    href={l.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="rounded-lg border border-zlato/40 bg-zlato/10 px-2 py-2 text-center text-xs text-zlato-2 hover:bg-zlato/20"
+                  >
+                    {l.shop}{" "}
+                    <span className="text-[10px] text-dim">
+                      · {l.exact ? t("shops.direct") : t("shops.search")}
+                    </span>{" "}
+                    ↗
+                  </a>
+                ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
   );
 }
 

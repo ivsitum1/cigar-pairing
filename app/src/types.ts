@@ -13,6 +13,11 @@ export type DrinkCategory =
 
 export type Market = "HR" | "EU" | "USA" | "WW";
 
+// Regija za kupnju cigara (bez WW — WW je "dostupno globalno" u podacima).
+export type Region = "HR" | "EU" | "USA";
+// Filter u UI-u: "ALL" = bez filtera (prikaži sve), inače konkretna regija.
+export type RegionFilter = "ALL" | Region;
+
 export interface LocalizedText {
   hr: string;
   en: string;

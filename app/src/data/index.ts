@@ -1,4 +1,5 @@
-import type { Cigar, Drink, DrinkCategory } from "../types";
+import type { Cigar, Drink, DrinkCategory, Region, RegionFilter } from "../types";
+import { shopsForRegion, REGIONS } from "./shops";
 import rums from "./rums.json";
 import whiskies from "./whiskies.json";
 import brandies from "./brandies.json";
@@ -148,49 +149,77 @@ export function brandCatalogStats(brand: string): BrandCatalogStats {
 
 export const BRAND_CATALOG: BrandCatalogStats[] = ALL_BRANDS.map(brandCatalogStats);
 
-// linkovi za kupnju po tržištu — HR izravno (humidor/havana), EU cigarworld.de,
-// USA izravna pretraga US trgovine (Google site:ci… često 0 pogodaka),
-// WW otvorena Google pretraga bez site: ograničenja
-export function cigarMarketLinks(c: Cigar): { market: string; url: string }[] {
-  const label = `${c.brand} ${c.line}`.trim();
-  const q = encodeURIComponent(label);
-  const links: { market: string; url: string }[] = [];
-  const defaultVitola = resolveDefaultVitola(c);
-  const hrUrl = defaultVitola?.url ?? c.priceUrl;
-  if (c.markets.includes("HR") && hrUrl) {
-    links.push({ market: "HR", url: hrUrl });
-  }
-  if (c.markets.includes("EU")) {
-    links.push({ market: "EU", url: `https://www.cigarworld.de/search?q=${q}` });
-  }
-  if (c.markets.includes("USA")) {
-    // Famous Smoke prihvaća search URL iz EU; CI često blokira / GDPR redirect
-    links.push({
-      market: "USA",
-      url: `https://www.famous-smoke.com/search?q=${q}`,
-    });
-  }
-  links.push({
-    market: "WW",
-    url: `https://www.google.com/search?q=${encodeURIComponent(`${label} cigar buy online`)}`,
-  });
-  return links;
+// Je li cigara dostupna u odabranoj regiji. "ALL" = bez filtera (sve).
+export const cigarInRegion = (c: Cigar, f: RegionFilter): boolean =>
+  f === "ALL" || c.markets.includes(f);
+
+// Broj cigara dostupnih po regiji — za detaljan popis trgovina.
+export const cigarCountByRegion: Record<Region, number> = {
+  HR: CIGARS.filter((c) => c.markets.includes("HR")).length,
+  EU: CIGARS.filter((c) => c.markets.includes("EU")).length,
+  USA: CIGARS.filter((c) => c.markets.includes("USA")).length,
+};
+
+// Izravan link na proizvod za dani host (prednost zadanoj vitoli radi sklada s
+// prikazanom cijenom); inače bilo koja vitola, pa priceUrl.
+function exactProductUrl(c: Cigar, host: string): string | null {
+  const dv = resolveDefaultVitola(c);
+  if (dv?.url && dv.url.includes(host)) return dv.url;
+  for (const v of c.vitolas ?? []) if (v.url?.includes(host)) return v.url;
+  if (c.priceUrl?.includes(host)) return c.priceUrl;
+  return null;
 }
 
-// URL trgovine za odabrano tržište (za taj market, ne bilo koji)
-export function cigarLinkForMarket(c: Cigar, market: string): string {
-  const links = cigarMarketLinks(c);
-  return (links.find((l) => l.market === market) ?? links[links.length - 1]).url;
+export interface CigarShopLink {
+  region: Region;
+  shop: string;
+  url: string;
+  exact: boolean; // true = izravan link na proizvod; false = pretraga po nazivu
 }
 
-// Cijena SAMO kad je pouzdana za odabrano tržište (HR = humidor po vitoli).
-// Za EU/USA/WW nemamo scrape cijenu -> vraćamo null (ne izmišljamo broj).
+// Linkovi na trgovine za sve regije u kojima je cigara dostupna. HR koristi
+// izravan link na proizvod gdje postoji (humidor/havana), inače pretragu;
+// EU/USA uvijek pretraga po nazivu (nemamo scrapane linkove po proizvodu).
+export function cigarShopLinks(c: Cigar): CigarShopLink[] {
+  const q = encodeURIComponent(`${c.brand} ${c.line}`.trim());
+  const out: CigarShopLink[] = [];
+  for (const region of REGIONS) {
+    if (!c.markets.includes(region)) continue;
+    for (const shop of shopsForRegion(region)) {
+      const exact = shop.productHost ? exactProductUrl(c, shop.productHost) : null;
+      out.push({
+        region,
+        shop: shop.name,
+        url: exact ?? shop.search(q),
+        exact: exact != null,
+      });
+    }
+  }
+  return out;
+}
+
+// URL primarne trgovine za odabranu regiju. Za "ALL" (ili regiju bez trgovine)
+// bira HR izravni link ako postoji, pa prvo dostupno, pa Google fallback.
+export function cigarLinkForMarket(c: Cigar, region: RegionFilter): string {
+  const links = cigarShopLinks(c);
+  if (region !== "ALL") {
+    const inRegion = links.filter((l) => l.region === region);
+    if (inRegion.length) return (inRegion.find((l) => l.exact) ?? inRegion[0]).url;
+  }
+  const hr = links.filter((l) => l.region === "HR");
+  if (hr.length) return (hr.find((l) => l.exact) ?? hr[0]).url;
+  if (links.length) return links[0].url;
+  return `https://www.google.com/search?q=${encodeURIComponent(`${c.brand} ${c.line} cigar`)}`;
+}
+
+// Cijena SAMO kad je pouzdana (HR = humidor po vitoli). "ALL" prikazuje HR
+// cijenu (jedina koju stvarno imamo). EU/USA -> null (ne izmišljamo broj).
 // "fromMany" = ima više vitola s cijenama pa je ovo najniža ("od X €").
 export function cigarPriceForMarket(
   c: Cigar,
-  market: string,
+  region: RegionFilter,
 ): { price: number | null; fromMany: boolean } {
-  if (market !== "HR") return { price: null, fromMany: false };
+  if (region !== "HR" && region !== "ALL") return { price: null, fromMany: false };
 
   const defaultVitola = resolveDefaultVitola(c);
   if (defaultVitola?.priceEUR != null) {

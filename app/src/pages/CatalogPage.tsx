@@ -1,6 +1,15 @@
 import { useMemo, useState } from "react";
-import type { Cigar, Drink, DrinkCategory, Market } from "../types";
-import { CIGARS, DRINKS, cigarById, ALL_BRANDS, BRAND_CATALOG } from "../data";
+import type { Cigar, Drink, DrinkCategory, RegionFilter } from "../types";
+import {
+  CIGARS,
+  DRINKS,
+  cigarById,
+  ALL_BRANDS,
+  BRAND_CATALOG,
+  cigarInRegion,
+  cigarCountByRegion,
+} from "../data";
+import { SHOPS, REGIONS } from "../data/shops";
 import { useI18n, STYLE_LABELS, type StringKey } from "../i18n";
 import { Chip, SearchInput } from "../components/ui";
 import { CigarRow, DrinkRow } from "../components/cards";
@@ -24,7 +33,7 @@ const TABS: Tab[] = [
   "tequila",
   "gin",
 ];
-const MARKETS: Market[] = ["HR", "EU", "USA", "WW"];
+const REGION_FILTERS: RegionFilter[] = ["ALL", "HR", "EU", "USA"];
 
 export function CatalogPage({
   onPair,
@@ -38,6 +47,7 @@ export function CatalogPage({
   const [strengthFilter, setStrengthFilter] = useState<number | null>(null);
   const [cleanOnly, setCleanOnly] = useState(false);
   const [browseBrands, setBrowseBrands] = useState(false);
+  const [showShops, setShowShops] = useState(false);
   // sortiranje: pica kvaliteta|cijena|tijelo|slatkoca; cigare naziv|cijena|tijelo|snaga
   const [sortBy, setSortBy] = useState<"quality" | "price" | "body" | "sweetness" | "strength" | "name">("quality");
   const market = useMarket();
@@ -81,6 +91,7 @@ export function CatalogPage({
     setStrengthFilter(null);
     setCleanOnly(false);
     setBrowseBrands(false);
+    setShowShops(false);
     setSortBy(next === "cigars" ? "name" : "quality");
   };
 
@@ -108,7 +119,7 @@ export function CatalogPage({
       if (tab !== "cigars" || browseBrands) return [];
       const list = CIGARS.filter(
         (c) =>
-          c.markets.includes(market) &&
+          cigarInRegion(c, market) &&
           (!q ||
             norm(
               `${c.brand} ${c.line} ${c.vitola} ${c.wrapper} ${c.country} ${(c.vitolas ?? [])
@@ -185,9 +196,14 @@ export function CatalogPage({
             {t("brand.index")}
           </Chip>
         )}
+        {tab === "cigars" && (
+          <Chip active={showShops} onClick={() => setShowShops(!showShops)}>
+            {t("shops.title")}
+          </Chip>
+        )}
         {tab === "cigars" &&
           !browseBrands &&
-          MARKETS.map((m) => (
+          REGION_FILTERS.map((m) => (
             <Chip key={m} active={market === m} onClick={() => setMarket(m)}>
               {t(`market.${m}` as StringKey)}
             </Chip>
@@ -233,6 +249,50 @@ export function CatalogPage({
               {t(`sort.${s}` as StringKey)}
               {sortBy === s ? (s === "price" || s === "name" ? " ↑" : " ↓") : ""}
             </Chip>
+          ))}
+        </div>
+      )}
+
+      {/* detaljan popis trgovina po regiji */}
+      {tab === "cigars" && showShops && (
+        <div className="mt-3 space-y-3 rounded-xl border border-zlato/25 bg-cedar/60 p-3">
+          <p className="text-xs leading-relaxed text-dim">{t("shops.intro")}</p>
+          {REGIONS.map((r) => (
+            <div key={r}>
+              <button
+                onClick={() => {
+                  setMarket(r);
+                  setBrowseBrands(false);
+                }}
+                className="flex w-full items-baseline justify-between gap-2 text-left"
+              >
+                <span className="font-display text-sm uppercase tracking-widest text-zlato-2">
+                  {t(`market.${r}` as StringKey)}
+                </span>
+                <span className="shrink-0 text-micro text-dim">
+                  {cigarCountByRegion[r]} {t("shops.availableHere")} →
+                </span>
+              </button>
+              <div className="mt-1.5 space-y-1.5">
+                {SHOPS.filter((s) => s.region === r).map((s) => (
+                  <a
+                    key={s.id}
+                    href={s.home}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="block rounded-lg border border-dim/15 bg-humidor/40 px-2.5 py-1.5 hover:border-zlato/40"
+                  >
+                    <div className="flex items-baseline justify-between gap-2">
+                      <span className="text-sm text-papir/90">{s.name} ↗</span>
+                      <span className="shrink-0 text-micro text-dim">
+                        {s.productHost ? t("shops.direct") : t("shops.search")}
+                      </span>
+                    </div>
+                    <div className="text-micro text-dim/85">{lx(s.note)}</div>
+                  </a>
+                ))}
+              </div>
+            </div>
           ))}
         </div>
       )}

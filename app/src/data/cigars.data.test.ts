@@ -1,7 +1,7 @@
 import { describe, it, expect } from "vitest";
 import cigarsData from "./cigars.json";
 import brandsData from "./brands.json";
-import { CIGARS, cigarLinkForMarket, cigarPriceForMarket, ALL_BRANDS, BRAND_CATALOG } from "./index";
+import { CIGARS, cigarLinkForMarket, cigarPriceForMarket, cigarShopLinks, ALL_BRANDS, BRAND_CATALOG } from "./index";
 import type { Cigar } from "../types";
 
 describe("cigars.json integrity", () => {
@@ -144,14 +144,47 @@ describe("cigars.json integrity", () => {
     expect(gr!.priceUrl).toContain("arturo-fuente-cuban-corona");
   });
 
-  it("USA kupnja ide na Famous Smoke search, ne na Google site: (0 pogodaka)", () => {
+  it("USA kupnja ide na Holt's search po nazivu, ne na Google site: (0 pogodaka)", () => {
     const withUsa = CIGARS.find((c) => c.markets.includes("USA"));
     expect(withUsa).toBeDefined();
     const usa = cigarLinkForMarket(withUsa!, "USA");
-    expect(usa).toContain("famous-smoke.com/search");
+    expect(usa).toContain("holts.com");
     expect(usa).toContain(encodeURIComponent(`${withUsa!.brand} ${withUsa!.line}`.trim()));
     expect(usa).not.toContain("google.com");
     expect(usa).not.toContain("site%3A");
+  });
+
+  it("cigarShopLinks — po regiji tocne trgovine i izravni HR link gdje postoji", () => {
+    // HR: Humidor + Havana; EU: CigarWorld; USA: Holt's + Cigars Daily
+    const withAll = CIGARS.find(
+      (c) =>
+        c.markets.includes("HR") &&
+        c.markets.includes("EU") &&
+        c.markets.includes("USA"),
+    );
+    expect(withAll).toBeDefined();
+    const links = cigarShopLinks(withAll!);
+    const hosts = (region: string) =>
+      links.filter((l) => l.region === region).map((l) => new URL(l.url).host);
+    expect(hosts("HR").some((h) => h.includes("humidor.hr"))).toBe(true);
+    expect(hosts("HR").some((h) => h.includes("havana-cigar-shop.com"))).toBe(true);
+    expect(hosts("EU").some((h) => h.includes("cigarworld.de"))).toBe(true);
+    expect(hosts("USA").some((h) => h.includes("holts.com"))).toBe(true);
+    expect(hosts("USA").some((h) => h.includes("cigarsdaily.com"))).toBe(true);
+    // regije koje cigara ne pokriva se ne pojavljuju
+    const hrOnly = CIGARS.find((c) => !c.markets.includes("EU") && !c.markets.includes("USA"));
+    if (hrOnly) {
+      expect(cigarShopLinks(hrOnly).every((l) => l.region === "HR")).toBe(true);
+    }
+  });
+
+  it("ALL filter prikazuje HR cijenu i HR link (bez izmisljanja EU/USA cijene)", () => {
+    const gr = CIGARS.find((c) => c.id === "cig-arturo-fuente-gran-reserva")!;
+    expect(cigarPriceForMarket(gr, "ALL").price).toBe(cigarPriceForMarket(gr, "HR").price);
+    expect(cigarLinkForMarket(gr, "ALL")).toContain("humidor.hr");
+    // EU/USA nemaju scrapanu cijenu
+    expect(cigarPriceForMarket(gr, "EU").price).toBeNull();
+    expect(cigarPriceForMarket(gr, "USA").price).toBeNull();
   });
 
   it("brands.json i cigars.json — 1:1 pokrivenost brendova", () => {
