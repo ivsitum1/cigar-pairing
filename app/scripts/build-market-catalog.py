@@ -2,6 +2,11 @@
 # -*- coding: utf-8 -*-
 """Build hybrid market catalog JSON from cigars.json + raw shop scrapes.
 
+Uses the project's established cigar dedupe/match process (cigar_shop_match /
+sync-hr-shops / dedupe-data): brand aliases, LINE_RULES, fuzzy line match,
+vitola name + ring±8mm, uniqueVitolas, merge_duplicate_cigar_lines, and
+cross-shop merge_shop_rows keys.
+
 Output: app/scripts/output/cigar_market_catalog.json
 """
 
@@ -9,10 +14,8 @@ from __future__ import annotations
 
 import argparse
 import json
-import re
 import sys
 from pathlib import Path
-from urllib.parse import unquote, urlparse
 
 SCRIPTS_DIR = Path(__file__).resolve().parent
 ROOT = SCRIPTS_DIR.parent
@@ -22,6 +25,20 @@ OUT_DIR = SCRIPTS_DIR / "output"
 if str(SCRIPTS_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPTS_DIR))
 
+from cigar_shop_match import (  # noqa: E402
+    build_brand_detectors,
+    detect_brand,
+    line_name_from_product,
+    merge_duplicate_cigar_lines,
+    norm,
+    norm_product_url,
+    parse_format_size,
+    resolve_shop_product,
+    shop_dedupe_key,
+    unique_vitolas,
+    vitola_from_product,
+    vitola_name_key,
+)
 from shop_scrape.http import iso_utc_now  # noqa: E402
 
 
@@ -32,21 +49,6 @@ SHOP_REGION = {
     "holts_us": "USA",
     "cigarsdaily_us": "USA",
 }
-
-
-def normalize_url(url: str | None) -> str | None:
-    if not url or not isinstance(url, str):
-        return None
-    u = unquote(url.strip())
-    # Drop fragments/query for matching product pages.
-    parsed = urlparse(u)
-    path = parsed.path.rstrip("/")
-    if not path:
-        return None
-    host = (parsed.netloc or "").lower()
-    if host.startswith("www."):
-        host = host[4:]
-    return f"{parsed.scheme}://{host}{path}".lower()
 
 
 def load_raw_shops(out_dir: Path) -> list[dict]:
@@ -88,106 +90,73 @@ def offer_from_raw(row: dict) -> dict:
     }
 
 
-def parse_format(fmt: str | None) -> dict:
-    if not fmt or not isinstance(fmt, str) or fmt.strip() in ("", "—", "-"):
-        return {"ringGauge": None, "lengthMm": None}
-    # "50 x 152mm" or "50 x 152 mm"
-    m = re.search(r"(\d+)\s*[x×]\s*(\d+)\s*mm", fmt, re.IGNORECASE)
-    if m:
-        return {"ringGauge": int(m.group(1)), "lengthMm": int(m.group(2))}
-    return {"ringGauge": None, "lengthMm": None}
+def offer_id(o: dict) -> str:
+    return f"{o.get('sourceShopId')}|{norm_product_url(o.get('url')) or norm(str(o.get('name') or ''))}"
 
 
-def normalize_name(s: str | None) -> str:
-    if not s or not isinstance(s, str):
-        return ""
-    s = s.casefold()
-    # Drop common shop pack / size noise before tokenizing.
-    s = re.sub(r"\([^)]*\d+\s*[x×]\s*\d+[^)]*\)", " ", s)
-    s = re.sub(r"/\s*\d+\*?", " ", s)
-    s = re.sub(r"\b\d+\s*[x×]\s*\d+(\.\d+)?\b", " ", s)
-    s = re.sub(r"\bbox\s*pressed\b", " ", s)
-    s = re.sub(r"[^a-z0-9]+", " ", s)
-    return re.sub(r"\s+", " ", s).strip()
+def attach_offer(bucket: list[dict], seen: set[str], offer: dict) -> None:
+    oid = offer_id(offer)
+    if oid in seen:
+        return
+    seen.add(oid)
+    bucket.append(offer)
 
 
-def candidate_name_keys(brand: str, line: str, vitola_name: str) -> list[str]:
-    keys: list[str] = []
-    for raw in (
-        f"{brand} {line} {vitola_name}",
-        f"{brand} {vitola_name}",
-        f"{brand} {line}",
-        vitola_name,
-    ):
-        n = normalize_name(raw)
-        if n and n not in keys:
-            keys.append(n)
-    return keys
+def build_catalog(cigars: list[dict], raw_rows: list[dict]) -> tuple[list[dict], list[dict], dict]:
+    # Resolve same line under two names before attaching shop offers.
+    cigars, lines_merged = merge_duplicate_cigar_lines(cigars)
+    detectors = build_brand_detectors(cigars)
 
+    # Per vitola identity: cigarId|vitolaName
+    offers_by_vitola: dict[str, list[dict]] = {}
+    seen_by_vitola: dict[str, set[str]] = {}
+    entry_offers_by_cigar: dict[str, list[dict]] = {}
+    seen_entry: dict[str, set[str]] = {}
+    matched_offer_ids: set[str] = set()
 
-def shop_name_keys(name: str | None) -> list[str]:
-    """Index keys for a shop product title (full + stripped pack suffixes)."""
-    if not name or not isinstance(name, str):
-        return []
-    keys: list[str] = []
-    full = normalize_name(name)
-    if full:
-        keys.append(full)
-    # Also index without trailing vitola-ish last token collisions handled by full string.
-    return keys
+    unmapped_raw: list[dict] = []
 
-
-def build_catalog(cigars: list[dict], raw_rows: list[dict]) -> tuple[list[dict], list[dict]]:
-    offers_by_url: dict[str, list[dict]] = {}
-    offers_by_name: dict[str, list[dict]] = {}
     for row in raw_rows:
         item = row["item"]
         offer = offer_from_raw(row)
-        nurl = normalize_url(item.get("url"))
-        if nurl:
-            offers_by_url.setdefault(nurl, []).append(offer)
-        for nname in shop_name_keys(item.get("name") if isinstance(item.get("name"), str) else ""):
-            offers_by_name.setdefault(nname, []).append(offer)
+        details = item.get("details") if isinstance(item.get("details"), dict) else None
+        name = item.get("name") if isinstance(item.get("name"), str) else ""
+        url = item.get("url") if isinstance(item.get("url"), str) else None
 
-    matched_urls: set[str] = set()
-    matched_offer_ids: set[str] = set()
+        cigar, vitola, brand = resolve_shop_product(
+            cigars,
+            name,
+            detectors=detectors,
+            details=details,
+            url=url,
+        )
+        if cigar and vitola:
+            key = f"{cigar['id']}|{vitola_name_key(str(vitola.get('name') or ''), str(cigar.get('brand') or ''))}"
+            bucket = offers_by_vitola.setdefault(key, [])
+            seen = seen_by_vitola.setdefault(key, set())
+            attach_offer(bucket, seen, offer)
+            matched_offer_ids.add(offer_id(offer))
+            continue
+        if cigar and not vitola:
+            # Matched line but not a specific vitola — keep as entry-level offer.
+            cid = cigar["id"]
+            bucket = entry_offers_by_cigar.setdefault(cid, [])
+            seen = seen_entry.setdefault(cid, set())
+            attach_offer(bucket, seen, offer)
+            matched_offer_ids.add(offer_id(offer))
+            continue
+
+        unmapped_raw.append({**row, "_brand": brand, "_offer": offer})
+
     catalog: list[dict] = []
-
-    def offer_id(o: dict) -> str:
-        return f"{o.get('sourceShopId')}|{normalize_url(o.get('url')) or o.get('name')}"
-
     for c in cigars:
-        brand = c.get("brand") if isinstance(c.get("brand"), str) else ""
-        line = c.get("line") if isinstance(c.get("line"), str) else ""
         vitola_entries = []
-        for v in c.get("vitolas") or []:
-            if not isinstance(v, dict):
-                continue
-            nurl = normalize_url(v.get("url"))
-            offers: list[dict] = []
-            seen_local: set[str] = set()
-
-            def add_offers(cands: list[dict]) -> None:
-                for o in cands:
-                    oid = offer_id(o)
-                    if oid in seen_local:
-                        continue
-                    seen_local.add(oid)
-                    offers.append(o)
-                    matched_offer_ids.add(oid)
-                    ou = normalize_url(o.get("url"))
-                    if ou:
-                        matched_urls.add(ou)
-
-            if nurl:
-                add_offers(offers_by_url.get(nurl, []))
-            # Secondary: exact normalized name keys.
-            for key in candidate_name_keys(brand, line, v.get("name") if isinstance(v.get("name"), str) else ""):
-                add_offers(offers_by_name.get(key, []))
-
+        for v in unique_vitolas(c):
+            vkey = f"{c['id']}|{vitola_name_key(str(v.get('name') or ''), str(c.get('brand') or ''))}"
+            offers = offers_by_vitola.get(vkey, [])
             source_ids = sorted({o["sourceShopId"] for o in offers if o.get("sourceShopId")})
-            fmt = v.get("format")
-            parsed = parse_format(fmt if isinstance(fmt, str) else None)
+            ring, mm = parse_format_size(v.get("format") if isinstance(v.get("format"), str) else None)
+            parsed = {"ringGauge": ring, "lengthMm": mm}
             for o in offers:
                 d = o.get("details") or {}
                 if parsed["ringGauge"] is None and isinstance(d.get("ringGauge"), int):
@@ -198,7 +167,7 @@ def build_catalog(cigars: list[dict], raw_rows: list[dict]) -> tuple[list[dict],
             vitola_entries.append(
                 {
                     "name": v.get("name"),
-                    "format": fmt,
+                    "format": v.get("format"),
                     "parsedSize": parsed,
                     "smokeTimeMin": v.get("smokeTimeMin"),
                     "priceEUR": v.get("priceEUR"),
@@ -209,17 +178,7 @@ def build_catalog(cigars: list[dict], raw_rows: list[dict]) -> tuple[list[dict],
                 }
             )
 
-        entry_offers: list[dict] = []
-        entry_nurl = normalize_url(c.get("priceUrl"))
-        if entry_nurl and entry_nurl not in matched_urls and entry_nurl in offers_by_url:
-            for o in offers_by_url[entry_nurl]:
-                oid = offer_id(o)
-                if oid in matched_offer_ids:
-                    continue
-                entry_offers.append(o)
-                matched_offer_ids.add(oid)
-            matched_urls.add(entry_nurl)
-
+        entry_offers = entry_offers_by_cigar.get(c["id"], [])
         leaf_details = None
         for ve in vitola_entries:
             for o in ve.get("offers") or []:
@@ -260,70 +219,104 @@ def build_catalog(cigars: list[dict], raw_rows: list[dict]) -> tuple[list[dict],
             }
         )
 
-    unmapped: list[dict] = []
-    for row in raw_rows:
-        offer = offer_from_raw(row)
-        oid = f"{offer.get('sourceShopId')}|{normalize_url(offer.get('url')) or offer.get('name')}"
+    # Unmapped: collapse same cigar under two shop names via merge_shop_rows key.
+    unmapped_groups: dict[str, dict] = {}
+    for row in unmapped_raw:
+        offer = row["_offer"]
+        oid = offer_id(offer)
         if oid in matched_offer_ids:
             continue
+        name = offer.get("name") if isinstance(offer.get("name"), str) else ""
+        brand = row.get("_brand") or detect_brand(name, detectors)
+        if brand:
+            key = shop_dedupe_key(brand, name)
+            display_line = line_name_from_product(brand, name)
+            display_vitola = vitola_from_product(name, brand)
+        else:
+            key = f"?|{norm(name)}"
+            display_line = None
+            display_vitola = None
+            brand = None
+
+        group = unmapped_groups.get(key)
+        if not group:
+            unmapped_groups[key] = {
+                "dedupeKey": key,
+                "brand": brand,
+                "line": display_line,
+                "vitola": display_vitola,
+                "name": name,
+                "offers": [],
+                "_seen": set(),
+            }
+            group = unmapped_groups[key]
+        attach_offer(group["offers"], group["_seen"], offer)
+
+    unmapped: list[dict] = []
+    for g in unmapped_groups.values():
+        offers = g["offers"]
+        shops = sorted({o.get("sourceShopId") for o in offers if o.get("sourceShopId")})
+        # Prefer Humidor / first priced as display row (same preference as sync-hr-shops).
+        preferred = next((o for o in offers if o.get("sourceShopId") == "humidor_hr" and o.get("amount")), None)
+        if not preferred:
+            preferred = next((o for o in offers if o.get("amount")), None)
+        if not preferred:
+            preferred = offers[0]
         unmapped.append(
             {
-                "sourceShopId": row["sourceShopId"],
-                "region": row["region"],
-                "name": offer.get("name"),
-                "url": offer.get("url"),
-                "amount": offer.get("amount"),
-                "currency": offer.get("currency"),
-                "inStock": offer.get("inStock"),
-                "details": offer.get("details"),
-                "categories": row["item"].get("categories") or [],
-                "attributes": row["item"].get("attributes") or {},
-                "scrapedAt": row.get("scrapedAt"),
+                "dedupeKey": g["dedupeKey"],
+                "brand": g["brand"],
+                "line": g["line"],
+                "vitola": g["vitola"],
+                "name": preferred.get("name"),
+                "url": preferred.get("url"),
+                "amount": preferred.get("amount"),
+                "currency": preferred.get("currency"),
+                "inStock": preferred.get("inStock"),
+                "details": preferred.get("details"),
+                "sourceShopId": preferred.get("sourceShopId"),
+                "region": preferred.get("region"),
+                "offers": [{k: v for k, v in o.items()} for o in offers],
+                "isDuplicateAcrossSources": len(shops) >= 2,
+                "duplicateSources": shops if len(shops) >= 2 else [],
+                "scrapedAt": preferred.get("scrapedAt"),
             }
         )
 
-    unmapped.sort(key=lambda x: (x.get("sourceShopId") or "", x.get("url") or "", x.get("name") or ""))
+    unmapped.sort(key=lambda x: (x.get("brand") or "", x.get("name") or "", x.get("dedupeKey") or ""))
     catalog.sort(key=lambda x: (x.get("brand") or "", x.get("line") or "", x.get("id") or ""))
-    return catalog, unmapped
+    meta = {"mergedCatalogLines": lines_merged}
+    return catalog, unmapped, meta
 
 
 def group_unmapped_cross_shop(unmapped: list[dict]) -> list[dict]:
-    """Same normalized product name appearing in 2+ shops (not in cigars.json)."""
-    by_name: dict[str, list[dict]] = {}
-    for u in unmapped:
-        key = normalize_name(u.get("name") if isinstance(u.get("name"), str) else "")
-        if not key:
-            continue
-        by_name.setdefault(key, []).append(u)
-    groups: list[dict] = []
-    for key, items in by_name.items():
-        shops = sorted({i.get("sourceShopId") for i in items if i.get("sourceShopId")})
-        if len(shops) < 2:
-            continue
-        groups.append(
-            {
-                "normalizedName": key,
-                "displayName": items[0].get("name"),
-                "shops": shops,
-                "itemCount": len(items),
-                "items": [
-                    {
-                        "sourceShopId": i.get("sourceShopId"),
-                        "region": i.get("region"),
-                        "name": i.get("name"),
-                        "url": i.get("url"),
-                        "amount": i.get("amount"),
-                        "currency": i.get("currency"),
-                    }
-                    for i in items
-                ],
-            }
-        )
-    groups.sort(key=lambda g: (-g["itemCount"], g["normalizedName"]))
-    return groups
+    return [
+        {
+            "dedupeKey": u.get("dedupeKey"),
+            "brand": u.get("brand"),
+            "line": u.get("line"),
+            "vitola": u.get("vitola"),
+            "displayName": u.get("name"),
+            "shops": u.get("duplicateSources") or [],
+            "itemCount": len(u.get("offers") or []),
+            "items": [
+                {
+                    "sourceShopId": o.get("sourceShopId"),
+                    "region": o.get("region"),
+                    "name": o.get("name"),
+                    "url": o.get("url"),
+                    "amount": o.get("amount"),
+                    "currency": o.get("currency"),
+                }
+                for o in (u.get("offers") or [])
+            ],
+        }
+        for u in unmapped
+        if u.get("isDuplicateAcrossSources")
+    ]
 
 
-def summarize(catalog: list[dict], unmapped: list[dict], unmapped_dupes: list[dict]) -> dict:
+def summarize(catalog: list[dict], unmapped: list[dict], meta: dict) -> dict:
     vitolas = 0
     with_offers = 0
     duplicates = 0
@@ -336,16 +329,19 @@ def summarize(catalog: list[dict], unmapped: list[dict], unmapped_dupes: list[di
                 duplicates += 1
     by_region: dict[str, int] = {}
     for u in unmapped:
-        r = u.get("region") or "?"
-        by_region[r] = by_region.get(r, 0) + 1
+        for o in u.get("offers") or [u]:
+            r = o.get("region") or "?"
+            by_region[r] = by_region.get(r, 0) + 1
     return {
         "catalogLines": len(catalog),
         "catalogVitolas": vitolas,
         "vitolasWithOffers": with_offers,
         "duplicateVitolas": duplicates,
         "unmappedShopItems": len(unmapped),
+        "unmappedOfferRows": sum(len(u.get("offers") or []) for u in unmapped),
         "unmappedByRegion": by_region,
-        "unmappedCrossShopDuplicateGroups": len(unmapped_dupes),
+        "unmappedCrossShopDuplicateGroups": sum(1 for u in unmapped if u.get("isDuplicateAcrossSources")),
+        "mergedCatalogLines": meta.get("mergedCatalogLines", 0),
     }
 
 
@@ -354,16 +350,22 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--cigars", default=str(DATA / "cigars.json"))
     p.add_argument("--raw-dir", default=str(OUT_DIR))
     p.add_argument("--out", default=str(OUT_DIR / "cigar_market_catalog.json"))
+    p.add_argument(
+        "--write-merged-cigars",
+        action="store_true",
+        help="Also write merged duplicate lines back to cigars.json (dedupe-data merge)",
+    )
     return p.parse_args()
 
 
 def main() -> None:
     args = parse_args()
-    cigars = json.loads(Path(args.cigars).read_text(encoding="utf-8"))
+    cigars_path = Path(args.cigars)
+    cigars = json.loads(cigars_path.read_text(encoding="utf-8"))
     raw_rows = load_raw_shops(Path(args.raw_dir))
-    catalog, unmapped = build_catalog(cigars, raw_rows)
+    catalog, unmapped, meta = build_catalog(cigars, raw_rows)
     unmapped_dupes = group_unmapped_cross_shop(unmapped)
-    summary = summarize(catalog, unmapped, unmapped_dupes)
+    summary = summarize(catalog, unmapped, meta)
     out = {
         "generatedAt": iso_utc_now(),
         "summary": summary,
@@ -376,6 +378,16 @@ def main() -> None:
     out_path.write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
     print(json.dumps(summary, ensure_ascii=False, indent=2), flush=True)
     print(f"wrote {out_path}", flush=True)
+
+    if args.write_merged_cigars:
+        merged, n = merge_duplicate_cigar_lines(cigars)
+        if n:
+            # Preserve existing cigars.json indent (2) + trailing newline.
+            cigars_path.write_text(
+                json.dumps(merged, ensure_ascii=False, indent=2) + "\n",
+                encoding="utf-8",
+            )
+            print(f"cigars.json: merged {n} duplicate lines -> {len(merged)} entries", flush=True)
 
 
 if __name__ == "__main__":

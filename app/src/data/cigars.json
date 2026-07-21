@@ -353,7 +353,7 @@
       "slatko"
     ],
     "smokeTimeMin": 50,
-    "priceEUR": 6.3,
+    "priceEUR": 5.9,
     "priceApprox": false,
     "availabilityHR": [
       "The Humidor",
@@ -412,7 +412,7 @@
       "kakao"
     ],
     "smokeTimeMin": 40,
-    "priceEUR": 9.0,
+    "priceEUR": 8.5,
     "priceApprox": false,
     "availabilityHR": [
       "The Humidor",
@@ -467,7 +467,7 @@
       "cedar"
     ],
     "smokeTimeMin": 50,
-    "priceEUR": 11.9,
+    "priceEUR": 10.9,
     "priceApprox": false,
     "availabilityHR": [
       "The Humidor",
@@ -801,7 +801,7 @@
       "kava"
     ],
     "smokeTimeMin": 45,
-    "priceEUR": 12.5,
+    "priceEUR": 11.4,
     "priceApprox": false,
     "availabilityHR": [
       "The Humidor",
@@ -2887,7 +2887,7 @@
       "karamela"
     ],
     "smokeTimeMin": 50,
-    "priceEUR": 12.3,
+    "priceEUR": 5.0,
     "priceApprox": false,
     "availabilityHR": [
       "Havana Shop",
@@ -3061,7 +3061,7 @@
       "cvjetno"
     ],
     "smokeTimeMin": 50,
-    "priceEUR": 51.0,
+    "priceEUR": 12.3,
     "priceApprox": false,
     "availabilityHR": [
       "The Humidor",
@@ -4478,13 +4478,6 @@
         "url": "https://humidor.hr/hr/proizvod/camacho-connecticut-6-x-60/"
       },
       {
-        "name": "Connecticut Robusto",
-        "format": "50 x 127mm",
-        "smokeTimeMin": 50,
-        "priceEUR": 11.4,
-        "url": "https://humidor.hr/en/proizvod/camacho-connecticut-robusto-5-x-50/"
-      },
-      {
         "name": "Connecticut Robusto Tubos",
         "format": "50 x 127mm",
         "smokeTimeMin": 50,
@@ -4518,7 +4511,7 @@
       "citrus"
     ],
     "smokeTimeMin": 50,
-    "priceEUR": 11.5,
+    "priceEUR": 4.6,
     "priceApprox": false,
     "availabilityHR": [
       "The Humidor",
@@ -4590,13 +4583,6 @@
         "smokeTimeMin": 85,
         "priceEUR": null,
         "url": null
-      },
-      {
-        "name": "Corojo Machitos",
-        "format": "32 x 102mm",
-        "smokeTimeMin": 50,
-        "priceEUR": 4.6,
-        "url": "https://humidor.hr/en/proizvod/camacho-corojo-machitos-4-x-32/"
       }
     ],
     "priceUrl": "https://humidor.hr/hr/proizvod/cle-corojo-robusto-5-x-50/"
@@ -5479,13 +5465,6 @@
         "smokeTimeMin": 45,
         "priceEUR": 150.0,
         "url": "https://havana-cigar-shop.com/proizvod/cohiba-esplendidos-3/"
-      },
-      {
-        "name": "Esplendidos",
-        "format": "—",
-        "smokeTimeMin": 50,
-        "priceEUR": 150.0,
-        "url": "https://havana-cigar-shop.com/proizvod/cohiba-esplendidos-3/"
       }
     ],
     "priceUrl": "https://havana-cigar-shop.com/proizvod/cohiba-esplendidos-3/",
@@ -5798,7 +5777,7 @@
       "kava"
     ],
     "smokeTimeMin": 45,
-    "priceEUR": 94.5,
+    "priceEUR": 86.8,
     "priceApprox": false,
     "availabilityHR": [
       "Havana Shop",
@@ -5876,13 +5855,6 @@
         "name": "Cohiba Panetelas",
         "format": "—",
         "smokeTimeMin": 45,
-        "priceEUR": 43.0,
-        "url": "https://havana-cigar-shop.com/proizvod/cohiba-panetelas-25/"
-      },
-      {
-        "name": "Panetelas/25*",
-        "format": "—",
-        "smokeTimeMin": 50,
         "priceEUR": 43.0,
         "url": "https://havana-cigar-shop.com/proizvod/cohiba-panetelas-25/"
       }
@@ -6196,13 +6168,6 @@
         "smokeTimeMin": 45,
         "priceEUR": 36.85,
         "url": "https://havana-cigar-shop.com/proizvod/cuaba-distinguidos-10/"
-      },
-      {
-        "name": "Distinguidos",
-        "format": "—",
-        "smokeTimeMin": 50,
-        "priceEUR": 36.85,
-        "url": "https://havana-cigar-shop.com/proizvod/cuaba-distinguidos-10/"
       }
     ],
     "priceUrl": "https://havana-cigar-shop.com/proizvod/cuaba-distinguidos-10/",
@@ -6244,13 +6209,6 @@
         "name": "Cuaba Divinos",
         "format": "—",
         "smokeTimeMin": 45,
-        "priceEUR": 18.4,
-        "url": "https://havana-cigar-shop.com/proizvod/cuaba-divinos-25/"
-      },
-      {
-        "name": "Divinos",
-        "format": "43 x 101mm",
-        "smokeTimeMin": 50,
         "priceEUR": 18.4,
         "url": "https://havana-cigar-shop.com/proizvod/cuaba-divinos-25/"
       }
@@ -6295,13 +6253,6 @@
         "smokeTimeMin": 45,
         "priceEUR": 28.25,
         "url": "https://havana-cigar-shop.com/proizvod/cuaba-exclusivos-25/"
-      },
-      {
-        "name": "Exclusivos",
-        "format": "—",
-        "smokeTimeMin": 50,
-        "priceEUR": 28.25,
-        "url": "https://havana-cigar-shop.com/proizvod/cuaba-exclusivos-25/"
       }
     ],
     "priceUrl": "https://havana-cigar-shop.com/proizvod/cuaba-exclusivos-25/",
@@ -6343,13 +6294,6 @@
         "name": "Cuaba Tradicionales",
         "format": "—",
         "smokeTimeMin": 45,
-        "priceEUR": 20.9,
-        "url": "https://havana-cigar-shop.com/proizvod/cuaba-tradicionales-25/"
-      },
-      {
-        "name": "Tradicionales",
-        "format": "—",
-        "smokeTimeMin": 50,
         "priceEUR": 20.9,
         "url": "https://havana-cigar-shop.com/proizvod/cuaba-tradicionales-25/"
       }
@@ -6523,13 +6467,6 @@
         "smokeTimeMin": 45,
         "priceEUR": 11.9,
         "url": "https://havana-cigar-shop.com/proizvod/cumpay-short-4/"
-      },
-      {
-        "name": "Short",
-        "format": "—",
-        "smokeTimeMin": 50,
-        "priceEUR": 11.9,
-        "url": "https://havana-cigar-shop.com/proizvod/cumpay-short-20/"
       }
     ],
     "priceUrl": "https://havana-cigar-shop.com/proizvod/cumpay-short-20/",
@@ -6595,7 +6532,7 @@
       "trava-slatka"
     ],
     "smokeTimeMin": 45,
-    "priceEUR": 5.8,
+    "priceEUR": 4.35,
     "priceApprox": false,
     "availabilityHR": [
       "Havana Shop",
@@ -6861,7 +6798,7 @@
       "citrus"
     ],
     "smokeTimeMin": 45,
-    "priceEUR": 24.4,
+    "priceEUR": 13.6,
     "priceApprox": false,
     "availabilityHR": [
       "Havana Shop",
@@ -6974,7 +6911,7 @@
       "drvo"
     ],
     "smokeTimeMin": 45,
-    "priceEUR": 54.0,
+    "priceEUR": 14.9,
     "priceApprox": false,
     "availabilityHR": [
       "Havana Shop",
@@ -7046,7 +6983,7 @@
       "kava"
     ],
     "smokeTimeMin": 45,
-    "priceEUR": 23.4,
+    "priceEUR": 18.5,
     "priceApprox": false,
     "availabilityHR": [
       "Havana Shop",
@@ -7125,7 +7062,7 @@
       "zemljano"
     ],
     "smokeTimeMin": 50,
-    "priceEUR": 14.0,
+    "priceEUR": 15.4,
     "priceApprox": false,
     "availabilityHR": [
       "The Humidor",
@@ -7211,7 +7148,7 @@
       "kava"
     ],
     "smokeTimeMin": 45,
-    "priceEUR": 7.35,
+    "priceEUR": 7.15,
     "priceApprox": false,
     "availabilityHR": [
       "Havana Shop",
@@ -7332,7 +7269,7 @@
       "citrus"
     ],
     "smokeTimeMin": 45,
-    "priceEUR": 21.6,
+    "priceEUR": 11.8,
     "priceApprox": false,
     "availabilityHR": [
       "The Humidor",
@@ -7471,7 +7408,7 @@
       "dim"
     ],
     "smokeTimeMin": 50,
-    "priceEUR": null,
+    "priceEUR": 9.7,
     "priceApprox": false,
     "availabilityHR": [
       "The Humidor",
@@ -7600,7 +7537,7 @@
       "zacini"
     ],
     "smokeTimeMin": 45,
-    "priceEUR": 25.6,
+    "priceEUR": 17.1,
     "priceApprox": false,
     "availabilityHR": [
       "Havana Shop",
@@ -8494,7 +8431,7 @@
       "zacini"
     ],
     "smokeTimeMin": 50,
-    "priceEUR": 19.35,
+    "priceEUR": 19.1,
     "priceApprox": false,
     "availabilityHR": [
       "The Humidor",
@@ -8720,7 +8657,7 @@
       "med"
     ],
     "smokeTimeMin": 45,
-    "priceEUR": 11.3,
+    "priceEUR": 9.9,
     "priceApprox": false,
     "availabilityHR": [
       "Havana Shop",
@@ -9155,7 +9092,7 @@
       "tamno-voce"
     ],
     "smokeTimeMin": 50,
-    "priceEUR": 15.9,
+    "priceEUR": 14.5,
     "priceApprox": false,
     "availabilityHR": [
       "The Humidor"
@@ -9326,7 +9263,7 @@
       "kremasto"
     ],
     "smokeTimeMin": 50,
-    "priceEUR": 14.9,
+    "priceEUR": 12.2,
     "priceApprox": false,
     "availabilityHR": [
       "The Humidor"
@@ -9483,7 +9420,7 @@
       "kava"
     ],
     "smokeTimeMin": 50,
-    "priceEUR": 16.4,
+    "priceEUR": 13.7,
     "priceApprox": false,
     "availabilityHR": [
       "The Humidor"
@@ -9561,7 +9498,7 @@
       "kava"
     ],
     "smokeTimeMin": 50,
-    "priceEUR": 13.5,
+    "priceEUR": 12.9,
     "priceApprox": false,
     "availabilityHR": [
       "The Humidor"
@@ -10186,13 +10123,6 @@
         "smokeTimeMin": 45,
         "priceEUR": 16.45,
         "url": "https://havana-cigar-shop.com/proizvod/fonseca-cosacos-25/"
-      },
-      {
-        "name": "Cosacos",
-        "format": "—",
-        "smokeTimeMin": 50,
-        "priceEUR": 16.45,
-        "url": "https://havana-cigar-shop.com/proizvod/fonseca-cosacos-25/"
       }
     ],
     "priceUrl": "https://havana-cigar-shop.com/proizvod/fonseca-cosacos-25/"
@@ -10233,13 +10163,6 @@
         "name": "Fonseca Delicias",
         "format": "—",
         "smokeTimeMin": 45,
-        "priceEUR": 10.8,
-        "url": "https://havana-cigar-shop.com/proizvod/fonseca-delicias-25/"
-      },
-      {
-        "name": "Delicias",
-        "format": "40 x 123mm",
-        "smokeTimeMin": 50,
         "priceEUR": 10.8,
         "url": "https://havana-cigar-shop.com/proizvod/fonseca-delicias-25/"
       }
@@ -11994,7 +11917,7 @@
       "kava"
     ],
     "smokeTimeMin": 45,
-    "priceEUR": 11.9,
+    "priceEUR": 10.8,
     "priceApprox": false,
     "availabilityHR": [
       "Havana Shop",
@@ -12456,7 +12379,7 @@
       "orasasti"
     ],
     "smokeTimeMin": 45,
-    "priceEUR": 65.0,
+    "priceEUR": 24.5,
     "priceApprox": false,
     "availabilityHR": [
       "The Humidor",
@@ -12642,7 +12565,7 @@
       "zacini"
     ],
     "smokeTimeMin": 85,
-    "priceEUR": 12.5,
+    "priceEUR": 9.2,
     "priceApprox": false,
     "availabilityHR": [
       "The Humidor",
@@ -13171,7 +13094,7 @@
       "orasasti"
     ],
     "smokeTimeMin": 50,
-    "priceEUR": 11.2,
+    "priceEUR": 6.4,
     "priceApprox": false,
     "availabilityHR": [
       "The Humidor"
@@ -13299,7 +13222,7 @@
       "trava-slatka"
     ],
     "smokeTimeMin": 50,
-    "priceEUR": 9.9,
+    "priceEUR": 6.4,
     "priceApprox": false,
     "markets": [
       "HR",
@@ -14883,13 +14806,6 @@
         "smokeTimeMin": 45,
         "priceEUR": 67.0,
         "url": "https://havana-cigar-shop.com/proizvod/montecristo-dumas-20/"
-      },
-      {
-        "name": "Dumas",
-        "format": "—",
-        "smokeTimeMin": 50,
-        "priceEUR": 67.0,
-        "url": "https://havana-cigar-shop.com/proizvod/montecristo-dumas-20/"
       }
     ],
     "priceUrl": "https://havana-cigar-shop.com/proizvod/montecristo-dumas-20/",
@@ -14942,13 +14858,6 @@
         "smokeTimeMin": 45,
         "priceEUR": 43.3,
         "url": "https://havana-cigar-shop.com/proizvod/montecristo-edmundo-25/"
-      },
-      {
-        "name": "Edmundo",
-        "format": "52 x 135mm",
-        "smokeTimeMin": 50,
-        "priceEUR": null,
-        "url": null
       }
     ],
     "priceUrl": "https://havana-cigar-shop.com/proizvod/montecristo-edmundo-25/"
@@ -14970,7 +14879,7 @@
       "kava"
     ],
     "smokeTimeMin": 45,
-    "priceEUR": 38.2,
+    "priceEUR": 32.0,
     "priceApprox": false,
     "availabilityHR": [
       "Havana Shop",
@@ -15048,13 +14957,6 @@
         "smokeTimeMin": 45,
         "priceEUR": 20.8,
         "url": "https://havana-cigar-shop.com/proizvod/montecristo-joyitas-25/"
-      },
-      {
-        "name": "Joyitas",
-        "format": "—",
-        "smokeTimeMin": 50,
-        "priceEUR": 20.8,
-        "url": "https://havana-cigar-shop.com/proizvod/montecristo-joyitas-25/"
       }
     ],
     "priceUrl": "https://havana-cigar-shop.com/proizvod/montecristo-joyitas-25/",
@@ -15098,13 +15000,6 @@
         "smokeTimeMin": 45,
         "priceEUR": 21.95,
         "url": "https://havana-cigar-shop.com/proizvod/montecristo-junior-20/"
-      },
-      {
-        "name": "Junior",
-        "format": "—",
-        "smokeTimeMin": 50,
-        "priceEUR": 21.95,
-        "url": "https://havana-cigar-shop.com/proizvod/montecristo-junior-20/"
       }
     ],
     "priceUrl": "https://havana-cigar-shop.com/proizvod/montecristo-junior-20/",
@@ -15146,13 +15041,6 @@
         "name": "Montecristo Leyenda",
         "format": "—",
         "smokeTimeMin": 45,
-        "priceEUR": 98.0,
-        "url": "https://havana-cigar-shop.com/proizvod/montecristo-leyenda-20/"
-      },
-      {
-        "name": "Leyenda",
-        "format": "—",
-        "smokeTimeMin": 50,
         "priceEUR": 98.0,
         "url": "https://havana-cigar-shop.com/proizvod/montecristo-leyenda-20/"
       }
@@ -15261,13 +15149,6 @@
         "name": "Montecristo Maltes",
         "format": "—",
         "smokeTimeMin": 45,
-        "priceEUR": 85.0,
-        "url": "https://havana-cigar-shop.com/proizvod/montecristo-maltes-20/"
-      },
-      {
-        "name": "Maltes",
-        "format": "—",
-        "smokeTimeMin": 50,
         "priceEUR": 85.0,
         "url": "https://havana-cigar-shop.com/proizvod/montecristo-maltes-20/"
       }
@@ -15449,13 +15330,6 @@
         "smokeTimeMin": 45,
         "priceEUR": 22.15,
         "url": "https://havana-cigar-shop.com/proizvod/montecristo-no-5-5/"
-      },
-      {
-        "name": "No.5",
-        "format": "—",
-        "smokeTimeMin": 50,
-        "priceEUR": 22.15,
-        "url": "https://havana-cigar-shop.com/proizvod/montecristo-no-5-10/"
       }
     ],
     "priceUrl": "https://havana-cigar-shop.com/proizvod/montecristo-no-5-10/",
@@ -16097,7 +15971,7 @@
       "koza"
     ],
     "smokeTimeMin": 50,
-    "priceEUR": 12.5,
+    "priceEUR": 9.8,
     "priceApprox": false,
     "availabilityHR": [
       "Havana Shop",
@@ -16125,13 +15999,6 @@
         "smokeTimeMin": 45,
         "priceEUR": 12.5,
         "url": "https://havana-cigar-shop.com/proizvod/nub-cameroon-tubos-12/"
-      },
-      {
-        "name": "Cameroon",
-        "format": "—",
-        "smokeTimeMin": 50,
-        "priceEUR": 12.5,
-        "url": "https://havana-cigar-shop.com/proizvod/nub-cameroon-tubos-12/"
       }
     ],
     "priceUrl": "https://havana-cigar-shop.com/proizvod/nub-cameroon-tubos-12/"
@@ -16153,7 +16020,7 @@
       "med"
     ],
     "smokeTimeMin": 50,
-    "priceEUR": 13.95,
+    "priceEUR": 10.2,
     "priceApprox": false,
     "availabilityHR": [
       "The Humidor",
@@ -16188,13 +16055,6 @@
         "smokeTimeMin": 40,
         "priceEUR": 10.2,
         "url": "https://humidor.hr/hr/proizvod/nub-connecticut-24-1-4-x-60/"
-      },
-      {
-        "name": "Connecticut",
-        "format": "—",
-        "smokeTimeMin": 50,
-        "priceEUR": 13.95,
-        "url": "https://havana-cigar-shop.com/proizvod/nub-connecticut-tubos-12/"
       }
     ],
     "priceUrl": "https://havana-cigar-shop.com/proizvod/nub-connecticut-tubos-12/"
@@ -16670,7 +16530,7 @@
       "koza"
     ],
     "smokeTimeMin": 50,
-    "priceEUR": 9.2,
+    "priceEUR": 8.3,
     "priceApprox": false,
     "availabilityHR": [
       "The Humidor",
@@ -18193,7 +18053,7 @@
       "kava"
     ],
     "smokeTimeMin": 70,
-    "priceEUR": 26.0,
+    "priceEUR": 15.2,
     "priceApprox": false,
     "availabilityHR": [
       "The Humidor",
@@ -18328,13 +18188,6 @@
         "smokeTimeMin": 45,
         "priceEUR": 70.9,
         "url": "https://havana-cigar-shop.com/proizvod/partagas-legado-25/"
-      },
-      {
-        "name": "Legado",
-        "format": "—",
-        "smokeTimeMin": 50,
-        "priceEUR": 70.9,
-        "url": "https://havana-cigar-shop.com/proizvod/partagas-legado-25/"
       }
     ],
     "priceUrl": "https://havana-cigar-shop.com/proizvod/partagas-legado-25/",
@@ -18376,13 +18229,6 @@
         "name": "Partagas Lusitanias",
         "format": "—",
         "smokeTimeMin": 45,
-        "priceEUR": 50.4,
-        "url": "https://havana-cigar-shop.com/proizvod/partagas-lusitanias-10/"
-      },
-      {
-        "name": "Lusitanias",
-        "format": "—",
-        "smokeTimeMin": 50,
         "priceEUR": 50.4,
         "url": "https://havana-cigar-shop.com/proizvod/partagas-lusitanias-10/"
       }
@@ -18493,13 +18339,6 @@
         "smokeTimeMin": 45,
         "priceEUR": 125.0,
         "url": "https://havana-cigar-shop.com/proizvod/partagas-maestro-20/"
-      },
-      {
-        "name": "Maestro",
-        "format": "—",
-        "smokeTimeMin": 50,
-        "priceEUR": 125.0,
-        "url": "https://havana-cigar-shop.com/proizvod/partagas-maestro-20/"
       }
     ],
     "priceUrl": "https://havana-cigar-shop.com/proizvod/partagas-maestro-20/",
@@ -18586,13 +18425,6 @@
         "smokeTimeMin": 45,
         "priceEUR": 120.0,
         "url": "https://havana-cigar-shop.com/proizvod/partagas-origen-20/"
-      },
-      {
-        "name": "Origen",
-        "format": "—",
-        "smokeTimeMin": 50,
-        "priceEUR": 120.0,
-        "url": "https://havana-cigar-shop.com/proizvod/partagas-origen-20/"
       }
     ],
     "priceUrl": "https://havana-cigar-shop.com/proizvod/partagas-origen-20/",
@@ -18634,13 +18466,6 @@
         "name": "Partagas Rito",
         "format": "—",
         "smokeTimeMin": 45,
-        "priceEUR": 130.0,
-        "url": "https://havana-cigar-shop.com/proizvod/partagas-rito-20/"
-      },
-      {
-        "name": "Rito",
-        "format": "—",
-        "smokeTimeMin": 50,
         "priceEUR": 130.0,
         "url": "https://havana-cigar-shop.com/proizvod/partagas-rito-20/"
       }
@@ -18753,7 +18578,7 @@
       "kava"
     ],
     "smokeTimeMin": 50,
-    "priceEUR": 20.1,
+    "priceEUR": 15.2,
     "priceApprox": false,
     "availabilityHR": [
       "The Humidor",
@@ -18781,13 +18606,6 @@
         "smokeTimeMin": 45,
         "priceEUR": 20.1,
         "url": "https://havana-cigar-shop.com/proizvod/partagas-short-25/"
-      },
-      {
-        "name": "Short",
-        "format": "—",
-        "smokeTimeMin": 50,
-        "priceEUR": 20.1,
-        "url": null
       }
     ],
     "priceUrl": "https://havana-cigar-shop.com/proizvod/partagas-short-25/"
@@ -18810,7 +18628,7 @@
       "drvo"
     ],
     "smokeTimeMin": 45,
-    "priceEUR": 26.0,
+    "priceEUR": 25.85,
     "availabilityHR": [
       "Havana Shop",
       "The Humidor"
@@ -18922,13 +18740,6 @@
         "format": "42 x 129mm",
         "smokeTimeMin": 45,
         "priceEUR": null,
-        "url": null
-      },
-      {
-        "name": "Partagas Short",
-        "format": "—",
-        "smokeTimeMin": 45,
-        "priceEUR": 20.1,
         "url": null
       }
     ],
@@ -19897,7 +19708,7 @@
       "kremasto"
     ],
     "smokeTimeMin": 50,
-    "priceEUR": 16.6,
+    "priceEUR": 15.8,
     "priceApprox": false,
     "availabilityHR": [
       "The Humidor",
@@ -20119,7 +19930,7 @@
       "kremasto"
     ],
     "smokeTimeMin": 45,
-    "priceEUR": 15.7,
+    "priceEUR": 13.5,
     "priceApprox": false,
     "availabilityHR": [
       "Havana Shop",
@@ -20273,13 +20084,6 @@
         "smokeTimeMin": 45,
         "priceEUR": 47.0,
         "url": "https://havana-cigar-shop.com/proizvod/plasencia-ehtefal-10/"
-      },
-      {
-        "name": "Ehtefal",
-        "format": "—",
-        "smokeTimeMin": 50,
-        "priceEUR": 47.0,
-        "url": "https://havana-cigar-shop.com/proizvod/plasencia-ehtefal-10/"
       }
     ],
     "priceUrl": "https://havana-cigar-shop.com/proizvod/plasencia-ehtefal-10/",
@@ -20303,7 +20107,7 @@
       "trava-slatka"
     ],
     "smokeTimeMin": 50,
-    "priceEUR": 13.9,
+    "priceEUR": 11.9,
     "priceApprox": false,
     "availabilityHR": [
       "The Humidor",
@@ -20784,13 +20588,6 @@
         "url": "https://havana-cigar-shop.com/proizvod/punch-punch-25/"
       },
       {
-        "name": "Punch",
-        "format": "—",
-        "smokeTimeMin": 50,
-        "priceEUR": 31.15,
-        "url": "https://havana-cigar-shop.com/proizvod/punch-punch-25/"
-      },
-      {
         "name": "Petit Royal",
         "format": "42 x 129mm",
         "smokeTimeMin": 40,
@@ -20843,13 +20640,6 @@
         "name": "Punch Triunfos",
         "format": "—",
         "smokeTimeMin": 45,
-        "priceEUR": 25.4,
-        "url": "https://havana-cigar-shop.com/proizvod/punch-triunfos-5/"
-      },
-      {
-        "name": "Triunfos",
-        "format": "—",
-        "smokeTimeMin": 50,
         "priceEUR": 25.4,
         "url": "https://havana-cigar-shop.com/proizvod/punch-triunfos-5/"
       },
@@ -21130,13 +20920,6 @@
         "smokeTimeMin": 45,
         "priceEUR": 9.35,
         "url": "https://havana-cigar-shop.com/proizvod/quintero-favoritos-5/"
-      },
-      {
-        "name": "Favoritos",
-        "format": "50 x 110mm",
-        "smokeTimeMin": 50,
-        "priceEUR": 9.35,
-        "url": "https://havana-cigar-shop.com/proizvod/quintero-favoritos-25/"
       }
     ],
     "priceUrl": "https://havana-cigar-shop.com/proizvod/quintero-favoritos-25/"
@@ -21975,7 +21758,7 @@
       "kava"
     ],
     "smokeTimeMin": 55,
-    "priceEUR": 11,
+    "priceEUR": 26.0,
     "priceApprox": true,
     "markets": [
       "USA",
@@ -23836,13 +23619,6 @@
         "smokeTimeMin": 45,
         "priceEUR": 46.3,
         "url": "https://havana-cigar-shop.com/proizvod/trinidad-reyes-24/"
-      },
-      {
-        "name": "Reyes",
-        "format": "40 x 110mm",
-        "smokeTimeMin": 50,
-        "priceEUR": 46.3,
-        "url": "https://havana-cigar-shop.com/proizvod/trinidad-reyes-12/"
       }
     ],
     "priceUrl": "https://havana-cigar-shop.com/proizvod/trinidad-reyes-12/"
@@ -23883,13 +23659,6 @@
         "name": "Trinidad Topes",
         "format": "—",
         "smokeTimeMin": 45,
-        "priceEUR": 83.8,
-        "url": "https://havana-cigar-shop.com/proizvod/trinidad-topes-12/"
-      },
-      {
-        "name": "Topes",
-        "format": "—",
-        "smokeTimeMin": 50,
         "priceEUR": 83.8,
         "url": "https://havana-cigar-shop.com/proizvod/trinidad-topes-12/"
       },
@@ -23938,13 +23707,6 @@
       "WW"
     ],
     "vitolas": [
-      {
-        "name": "Vigía",
-        "format": "54 x 110mm",
-        "smokeTimeMin": 45,
-        "priceEUR": null,
-        "url": null
-      },
       {
         "name": "Trinidad Vigia",
         "format": "—",
@@ -24143,7 +23905,7 @@
       "kava"
     ],
     "smokeTimeMin": 45,
-    "priceEUR": 7.3,
+    "priceEUR": 6.2,
     "priceApprox": false,
     "availabilityHR": [
       "Havana Shop",
@@ -24594,7 +24356,7 @@
       "karamela"
     ],
     "smokeTimeMin": 45,
-    "priceEUR": 9.3,
+    "priceEUR": 7.45,
     "priceApprox": false,
     "availabilityHR": [
       "Havana Shop",
@@ -25020,52 +24782,6 @@
     "priceUrl": "https://havana-cigar-shop.com/proizvod/oliva-mareva-10/"
   },
   {
-    "id": "cig-montecristo-no-4",
-    "brand": "Montecristo",
-    "line": "No.4",
-    "vitola": "Montecristo No.4",
-    "format": "42 x 130mm",
-    "country": "Kuba",
-    "wrapper": "Habano",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [],
-    "smokeTimeMin": 45,
-    "priceEUR": 20.2,
-    "priceApprox": false,
-    "availabilityHR": [
-      "Havana Shop",
-      "The Humidor"
-    ],
-    "notes": {
-      "hr": "Sinkronizirano iz HR trgovina — No.4.",
-      "en": ""
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Montecristo No.4",
-        "format": "42 x 130mm",
-        "smokeTimeMin": 45,
-        "priceEUR": 20.2,
-        "url": null
-      },
-      {
-        "name": "Montecristo No.4/",
-        "format": "—",
-        "smokeTimeMin": 45,
-        "priceEUR": 26.8,
-        "url": null
-      }
-    ],
-    "priceUrl": "https://humidor.hr/hr/proizvod/montecristo-no-4-5-x-42/"
-  },
-  {
     "id": "cig-montecristo-no-3",
     "brand": "Montecristo",
     "line": "No.3",
@@ -25077,7 +24793,7 @@
     "body": 3,
     "flavorTags": [],
     "smokeTimeMin": 45,
-    "priceEUR": 33.75,
+    "priceEUR": 20.2,
     "priceApprox": false,
     "availabilityHR": [
       "Havana Shop",

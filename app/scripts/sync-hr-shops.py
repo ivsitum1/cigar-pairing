@@ -13,65 +13,29 @@ import json
 import re
 import sys
 import time
-import unicodedata
 from pathlib import Path
 
 import requests
 from bs4 import BeautifulSoup
+
+from cigar_shop_match import (
+    BRAND_ALIASES,
+    build_brand_detectors,
+    detect_brand,
+    detect_line_id,
+    line_name_from_product,
+    norm,
+    parse_humidor_dims,
+    parse_pack_suffix,
+    slugify,
+    vitola_from_product,
+)
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "src" / "data"
 CIGARS_JSON = DATA / "cigars.json"
 
 USER_AGENT = "Mozilla/5.0 (compatible; CigarRumSync/1.0)"
-FRACTIONS = {"½": 0.5, "¼": 0.25, "¾": 0.75, "⅛": 0.125, "⅜": 0.375, "⅝": 0.625, "⅞": 0.875}
-FRACTION_CHARS = "".join(FRACTIONS)
-
-
-def parse_length_inches(raw: str) -> float:
-    """Parsira '6', '6½', '6 ½', '6¼' u inče."""
-    s = raw.strip()
-    total = 0.0
-    for part in s.split():
-        if part in FRACTIONS:
-            total += FRACTIONS[part]
-            continue
-        m = re.match(rf"^(\d+(?:\.\d+)?)([{FRACTION_CHARS}])?$", part)
-        if not m:
-            raise ValueError(f"cannot parse length: {raw!r}")
-        total += float(m.group(1))
-        if m.group(2):
-            total += FRACTIONS[m.group(2)]
-    return total
-
-
-def parse_humidor_dims(name: str) -> tuple[str, int | None, int | None]:
-    """'Arturo Fuente Hemingway Signature 6 x 46' -> (base, 152mm, 46)"""
-    dim_re = re.compile(
-        rf"^(.*?)\s+([\d\s{FRACTION_CHARS}.]+)\s*[xX]\s*(\d+)\s*$"
-    )
-    m = dim_re.match(name.strip())
-    if not m:
-        return name.strip(), None, None
-    base = m.group(1).strip()
-    try:
-        length_in = parse_length_inches(m.group(2))
-    except ValueError:
-        return name.strip(), None, None
-    ring = int(m.group(3))
-    return base, int(round(length_in * 25.4)), ring
-
-
-def norm(s: str) -> str:
-    s = unicodedata.normalize("NFKD", s)
-    s = "".join(c for c in s if not unicodedata.combining(c))
-    return re.sub(r"\s+", " ", s.lower().strip())
-
-
-def slugify(s: str) -> str:
-    s = norm(s)
-    s = re.sub(r"[^a-z0-9]+", "-", s).strip("-")
-    return s
 
 
 def parse_price(text: str) -> float | None:
@@ -86,167 +50,12 @@ def wc_price(prices: dict) -> float:
     return int(prices.get("price") or 0) / (10**minor)
 
 
-def parse_pack_suffix(name: str) -> tuple[str, int | None]:
-    """'Montecristo No.2/25' -> ('Montecristo No.2', 25)"""
-    m = re.search(r"^(.+?)/(\d+)\s*$", name.strip())
-    if m:
-        return m.group(1).strip(), int(m.group(2))
-    return name.strip(), None
-
-
 def smoke_minutes(length_mm: int | None, ring: int | None) -> int:
     if not length_mm or not ring:
         return 45
     length_in = length_mm / 25.4
     est = length_in * 10 * (0.60 + ring / 140)
     return int(round(est / 5) * 5)
-
-
-# brand alias -> canonical brand name in cigars.json
-BRAND_ALIASES = {
-    "bundle selection by cusano": "Cusano",
-    "cusano": "Cusano",
-    "arturo fuente": "Arturo Fuente",
-    "joya de nicaragua": "Joya de Nicaragua",
-    "joya silver": "Joya de Nicaragua",
-    "joya red": "Joya de Nicaragua",
-    "joya black": "Joya de Nicaragua",
-    # Humidor often omits "AJ Fernandez" from product titles
-    "blend 15": "AJ Fernandez",
-    "last call": "AJ Fernandez",
-    "enclave": "AJ Fernandez",
-    "bellas artes": "AJ Fernandez",
-    "san lotano": "AJ Fernandez",
-    "dias de gloria": "AJ Fernandez",
-    "new world": "AJ Fernandez",
-    "ajf 20th": "AJ Fernandez",
-    "ajf new world": "AJ Fernandez",
-    "liga privada": "Drew Estate",
-    "undercrown": "Drew Estate",
-    "herrera esteli": "Drew Estate",
-    "padron": "Padrón",
-}
-
-# (brand_norm, line keywords in product name) -> existing id or None (create new)
-LINE_RULES: list[tuple[str, tuple[str, ...], str | None]] = [
-    ("arturo fuente", ("hemingway",), "cig-arturo-fuente-hemingway"),
-    ("arturo fuente", ("opus", "opusx"), "cig-fuente-opus-x"),
-    ("arturo fuente", ("don carlos",), None),
-    ("arturo fuente", ("anejo", "añejo"), None),
-    ("arturo fuente", ("brevas",), None),
-    ("arturo fuente", ("curly head",), None),
-    ("arturo fuente", ("chateau",), None),
-    ("arturo fuente", ("gran reserva", "exquisitos", "petit corona", "cuban corona", "cubanitos"), "cig-arturo-fuente-gran-reserva"),
-    ("joya de nicaragua", ("antano 1970", "antano gran reserva", "antano ct"), "cig-joya-de-nicaragua-antano"),
-    ("joya de nicaragua", ("joya red", "red robusto"), "cig-joya-red"),
-    ("joya de nicaragua", ("joya silver",), None),
-    ("joya de nicaragua", ("joya black",), None),
-    ("joya de nicaragua", ("numero uno", "número uno"), None),
-    ("joya de nicaragua", ("cuatro cinco",), None),
-    ("joya de nicaragua", ("cinco decadas", "cinco décadas"), None),
-    ("joya de nicaragua", ("clasico medio siglo", "clásico medio siglo"), None),
-    ("joya de nicaragua", ("rosalones",), None),
-    ("cusano", (), "cig-cusano"),
-    ("aj fernandez", ("blend 15",), "cig-aj-fernandez-blend-15"),
-    ("aj fernandez", ("last call",), "cig-aj-fernandez-last-call"),
-    ("aj fernandez", ("enclave",), "cig-aj-fernandez-aj-enclave"),
-    ("aj fernandez", ("bellas artes",), "cig-aj-fernandez-bellas-artes"),
-    ("aj fernandez", ("dias de gloria",), "cig-aj-fernandez-dias-de-gloria"),
-    ("aj fernandez", ("san lotano",), "cig-aj-fernandez-aj-san-lotano"),
-    ("aj fernandez", ("20th anniversary",), "cig-aj-fernandez-20th-anniversary"),
-    ("aj fernandez", ("dorado sampler",), "cig-aj-fernandez-new-world-dorado-sampler"),
-    ("aj fernandez", ("new world sampler",), "cig-aj-fernandez-new-world-sampler"),
-    ("aj fernandez", ("premium sampler",), "cig-aj-fernandez-premium-sampler"),
-    ("aj fernandez", ("toro sampler",), "cig-aj-fernandez-toro-sampler"),
-    ("aj fernandez", ("new world",), "cig-aj-fernandez-new-world"),
-    ("drew estate", ("liga privada",), "cig-drew-estate-de-liga-privada"),
-    ("drew estate", ("undercrown",), "cig-drew-estate-de-undercrown"),
-    ("drew estate", ("herrera",), "cig-drew-estate-de-herrera"),
-    ("drew estate", ("acid",), "cig-drew-estate-de-acid"),
-    ("padrón", ("1926",), "cig-padron-1926"),
-    ("padron", ("1926",), "cig-padron-1926"),
-    ("padrón", ("1964",), "cig-padron-padron-1964"),
-    ("padron", ("1964",), "cig-padron-padron-1964"),
-    ("padrón", ("damaso",), "cig-padron-padron-damaso"),
-    ("padron", ("damaso",), "cig-padron-padron-damaso"),
-    ("padrón", ("family reserve",), "cig-padron-padron-family-reserve"),
-    ("padron", ("family reserve",), "cig-padron-padron-family-reserve"),
-]
-
-
-def build_brand_detectors(cigars: list[dict]) -> list[tuple[str, str]]:
-    pairs: list[tuple[str, str]] = []
-    for brand in {c["brand"] for c in cigars}:
-        pairs.append((norm(brand), brand))
-    for alias, brand in BRAND_ALIASES.items():
-        pairs.append((norm(alias), brand))
-    seen: set[str] = set()
-    out: list[tuple[str, str]] = []
-    for alias, brand in sorted(pairs, key=lambda x: -len(x[0])):
-        if alias in seen:
-            continue
-        seen.add(alias)
-        out.append((alias, brand))
-    return out
-
-
-def detect_brand(product_name: str, detectors: list[tuple[str, str]]) -> str | None:
-    low = norm(product_name)
-    for alias, brand in detectors:
-        if low.startswith(alias) or f" {alias} " in f" {low} ":
-            return brand
-    return None
-
-
-def detect_line_id(brand: str, product_name: str) -> str | None:
-    bnorm = norm(brand)
-    low = norm(product_name)
-    for brand_key, keywords, cid in LINE_RULES:
-        if brand_key != bnorm:
-            continue
-        if not keywords or any(kw in low for kw in keywords if kw):
-            return cid
-    return None
-
-
-def line_name_from_product(brand: str, product_name: str) -> str:
-    low = norm(product_name)
-    b = norm(brand)
-    rest = low
-    for prefix in [b, "bundle selection by cusano", "joya de nicaragua"]:
-        if rest.startswith(prefix):
-            rest = rest[len(prefix) :].strip(" -/")
-    rest = re.sub(r"/\d+$", "", rest).strip()
-    # ukloni vitola na kraju (robusto, toro...)
-    for vit in ("robusto grande", "double robusto", "short robusto", "petit corona",
-                "robusto", "toro", "churchill", "corona", "figurado", "lonsdale",
-                "panatela", "torpedo", "gordo", "diadema", "consul", "machito"):
-        if rest.endswith(" " + vit):
-            rest = rest[: -len(vit)].strip()
-            break
-    return rest.title() if rest else brand
-
-
-def vitola_from_product(product_name: str, brand: str) -> str:
-    base, pack = parse_pack_suffix(product_name)
-    base, mm, ring = parse_humidor_dims(base)
-    low = norm(base)
-    b = norm(brand)
-    if low.startswith(b):
-        low = low[len(b) :].strip(" -/")
-    low = re.sub(r"/\d+$", "", low).strip()
-    # zadnji tokeni kao vitola
-    for vit in ("Robusto Grande", "Double Robusto", "Short Robusto", "Petit Corona",
-                "Gran Consul", "Gran Cónsul", "Robusto", "Toro", "Churchill", "Corona",
-                "Figurado", "Lonsdale", "Panatela", "Torpedo", "Gordo", "Diadema",
-                "Machito", "Signature", "Classic", "Short Story", "Best Seller",
-                "Exquisitos", "Petit Corona", "Cuban Corona", "Cubanitos", "PerfecXion X"):
-        if norm(vit) in low or low.endswith(norm(vit)):
-            return vit
-    parts = base.split()
-    if len(parts) >= 2:
-        return " ".join(parts[-2:]).title()
-    return base.title() if base else "Standard"
 
 
 def fetch_havana_catalog() -> list[dict]:
