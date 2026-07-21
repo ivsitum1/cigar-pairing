@@ -1,33 +1,23 @@
 from __future__ import annotations
 
+import re
 from dataclasses import dataclass
 from typing import Any
 
+from shop_scrape.details import (
+    apply_details_to_item,
+    parse_cigarworld_variant_info,
+    parse_humidor_product_details,
+)
+from shop_scrape.http import HttpClient, iso_utc_now
 from shop_scrape.jsonld import extract_jsonld_products
 from shop_scrape.sitemap import iter_sitemap_locs
-
-from shop_scrape.http import HttpClient, iso_utc_now
 from shop_scrape.woocommerce import (
     wc_iter_categories,
     wc_iter_products,
     wc_normalize_product,
     wc_pick_cigar_category_ids,
 )
-
-
-def _looks_like_cigar_category(text: str) -> bool:
-    t = text.lower()
-    keywords = (
-        "cigar",
-        "cigars",
-        "cigare",
-        "zigarre",
-        "zigarren",
-        "sampler",
-        "samplers",
-        "habanos",
-    )
-    return any(k in t for k in keywords)
 
 
 @dataclass(frozen=True)
@@ -52,6 +42,115 @@ def _wrap_shop(shop: ShopDef, *, source_kind: str, entrypoints: list[str], items
         "currency": shop.currency,
         "source": {"kind": source_kind, "entrypoints": entrypoints},
         "items": out_items,
+    }
+
+
+def _parse_price_eur(text: str) -> float | None:
+    if not text:
+        return None
+    m = re.search(r"([\d]+)[,\.]([\d]{2})", text.replace(" ", "").replace("\xa0", ""))
+    return float(f"{m.group(1)}.{m.group(2)}") if m else None
+
+
+def scrape_humidor_category_listing(client: HttpClient, *, limit: int | None) -> list[dict]:
+    """List cigar products from Humidor HTML category pages."""
+    base = "https://humidor.hr/hr/kategorija-proizvoda/cigare/"
+    items: list[dict] = []
+    seen: set[str] = set()
+
+    for page in range(1, 201):
+        url = base if page == 1 else f"{base}page/{page}/"
+        html = client.get_text(url)
+        # Stop on Cloudflare challenge / empty listing.
+        if "Just a moment" in html or "Attention Required" in html:
+            break
+        products = re.findall(
+            r'<li[^>]*class="[^"]*\bproduct\b[^"]*"[^>]*>(.*?)</li>',
+            html,
+            re.IGNORECASE | re.DOTALL,
+        )
+        if not products:
+            break
+
+        for block in products:
+            link_m = re.search(
+                r'href="(https?://humidor\.hr/[^"]+/proizvod/[^"]+/)"',
+                block,
+                re.IGNORECASE,
+            )
+            title_m = re.search(
+                r'class="woocommerce-loop-product__title"[^>]*>\s*<a[^>]*>(.*?)</a>',
+                block,
+                re.IGNORECASE | re.DOTALL,
+            )
+            if not title_m:
+                title_m = re.search(
+                    r'woocommerce-loop-product__title[^"]*"[^>]*>(.*?)</',
+                    block,
+                    re.IGNORECASE | re.DOTALL,
+                )
+            if not link_m or not title_m:
+                continue
+            product_url = link_m.group(1)
+            if product_url in seen:
+                continue
+            seen.add(product_url)
+
+            brand_m = re.search(
+                r'class="[^"]*product-brand-label[^"]*"[^>]*>(.*?)</span>',
+                block,
+                re.IGNORECASE | re.DOTALL,
+            )
+            price_m = re.search(r'class="price"[^>]*>(.*?)</span>\s*</span>', block, re.IGNORECASE | re.DOTALL)
+            price_text = price_m.group(1) if price_m else ""
+            amount = _parse_price_eur(re.sub(r"<[^>]+>", " ", price_text))
+
+            name = re.sub(r"<[^>]+>", " ", title_m.group(1))
+            name = re.sub(r"\s+", " ", name).strip()
+
+            item = {
+                "id": product_url.rstrip("/").split("/")[-1],
+                "name": name,
+                "url": product_url,
+                "price": {"amount": amount, "currency": "EUR"} if amount is not None else None,
+                "availability": {
+                    "inStock": "outofstock" not in block.lower(),
+                    "onSale": None,
+                },
+                "packaging": {"type": "unknown", "count": None},
+                "attributes": {
+                    "brand": re.sub(r"<[^>]+>", " ", brand_m.group(1)).strip() if brand_m else None,
+                    "vitola": None,
+                    "dimensions": {"lengthIn": None, "ringGauge": None},
+                },
+                "categories": [
+                    {
+                        "name": "Cigare",
+                        "slug": "cigare",
+                        "url": base,
+                    }
+                ],
+                "images": [],
+                "raw": {"listingPage": page},
+            }
+            items.append(item)
+            if limit is not None and len(items) >= limit:
+                return items
+
+    return items
+
+
+def enrich_humidor_item(client: HttpClient, item: dict) -> None:
+    url = item.get("url")
+    if not isinstance(url, str) or not url:
+        return
+    html = client.get_text(url)
+    details = parse_humidor_product_details(html)
+    apply_details_to_item(item, details)
+    item["detailsSource"] = {
+        "url": url,
+        "extractedFrom": "humidor-product-specs",
+        "extractedAt": iso_utc_now(),
     }
 
 
@@ -101,10 +200,16 @@ def scrape_wc_shop(
 
 
 def scrape_humidor_hr(client: HttpClient, *, limit: int | None) -> dict:
-    return scrape_wc_shop(
-        client,
-        ShopDef("humidor_hr", "The Humidor", "HR", "https://humidor.hr", "EUR"),
-        limit=limit,
+    shop = ShopDef("humidor_hr", "The Humidor", "HR", "https://humidor.hr", "EUR")
+    entry = "https://humidor.hr/hr/kategorija-proizvoda/cigare/"
+    items = scrape_humidor_category_listing(client, limit=limit)
+    for item in items:
+        enrich_humidor_item(client, item)
+    return _wrap_shop(
+        shop,
+        source_kind="html-category+product-specs",
+        entrypoints=[entry],
+        items=items,
     )
 
 
@@ -122,13 +227,6 @@ def scrape_cigarsdaily_us(client: HttpClient, *, limit: int | None) -> dict:
         ShopDef("cigarsdaily_us", "Cigars Daily", "USA", "https://cigarsdaily.com", "USD"),
         limit=limit,
     )
-
-
-SCRAPERS: dict[str, Any] = {
-    "humidor_hr": scrape_humidor_hr,
-    "havana_hr": scrape_havana_hr,
-    "cigarsdaily_us": scrape_cigarsdaily_us,
-}
 
 
 def _normalize_jsonld_offer(offer: dict) -> tuple[float | None, str | None, bool | None]:
@@ -197,7 +295,6 @@ def scrape_holts_us(client: HttpClient, *, limit: int | None) -> dict:
     sitemap_url = "https://www.holts.com/sitemap.xml"
     locs = iter_sitemap_locs(client.get_text(sitemap_url))
 
-    # Candidate URLs: keep `.html` pages and let JSON-LD decide what is a Product.
     candidates = [u for u in locs if u.startswith(shop.base_url) and u.endswith(".html")]
     items: list[dict] = []
     for url in candidates:
@@ -219,12 +316,15 @@ def scrape_cigarworld_eu(client: HttpClient, *, limit: int | None) -> dict:
     index_url = "https://www.cigarworld.de/sitemap.xml"
     index_locs = iter_sitemap_locs(client.get_text(index_url))
 
-    # Prefer English sitemap if present.
     en_sitemaps = [u for u in index_locs if u.endswith("sitemap_en.xml")]
     sitemap_url = en_sitemaps[0] if en_sitemaps else index_url
     locs = iter_sitemap_locs(client.get_text(sitemap_url))
 
-    candidates = [u for u in locs if "/en/zigarren/" in u]
+    # Prefer product-like URLs (SKU suffix) over brand/category landings.
+    candidates = [u for u in locs if "/en/zigarren/" in u and re.search(r"_\d+$", u)]
+    if not candidates:
+        candidates = [u for u in locs if "/en/zigarren/" in u]
+
     items: list[dict] = []
     for url in candidates:
         html = client.get_text(url)
@@ -232,18 +332,31 @@ def scrape_cigarworld_eu(client: HttpClient, *, limit: int | None) -> dict:
         if not products:
             continue
         item = _normalize_jsonld_product(url, products[0])
-        if item:
-            items.append(item)
+        if not item:
+            continue
+        details = parse_cigarworld_variant_info(html)
+        apply_details_to_item(item, details)
+        item["detailsSource"] = {
+            "url": url,
+            "extractedFrom": "cigarworld-variantinfo",
+            "extractedAt": iso_utc_now(),
+        }
+        items.append(item)
         if limit is not None and len(items) >= limit:
             break
 
-    return _wrap_shop(shop, source_kind="sitemap+jsonld", entrypoints=[index_url, sitemap_url], items=items)
+    return _wrap_shop(
+        shop,
+        source_kind="sitemap+jsonld+variantinfo",
+        entrypoints=[index_url, sitemap_url],
+        items=items,
+    )
 
 
-SCRAPERS.update(
-    {
-        "holts_us": scrape_holts_us,
-        "cigarworld_eu": scrape_cigarworld_eu,
-    }
-)
-
+SCRAPERS: dict[str, Any] = {
+    "humidor_hr": scrape_humidor_hr,
+    "havana_hr": scrape_havana_hr,
+    "cigarsdaily_us": scrape_cigarsdaily_us,
+    "holts_us": scrape_holts_us,
+    "cigarworld_eu": scrape_cigarworld_eu,
+}
