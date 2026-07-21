@@ -9,6 +9,9 @@ Konjak_Brandy_Checklist.xlsx
 # python cache
 __pycache__/
 
+# merge diagnostics (regenerable)
+app/scripts/output/unmatched_products.json
+
 # agent / SDD working files
 .superpowers/
 
