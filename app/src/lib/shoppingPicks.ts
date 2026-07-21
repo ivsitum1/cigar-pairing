@@ -191,14 +191,57 @@ export function groupWishlistByShop(
   return [...groups.values()].sort((a, b) => b.total - a.total || b.count - a.count);
 }
 
+/** Lista zelja: pića po kategoriji, prazne kategorije se ispuštaju. */
+export function groupWishlistDrinksByCategory(
+  drinks: Drink[],
+  categories: DrinkCategory[],
+): { category: DrinkCategory; drinks: Drink[] }[] {
+  return categories
+    .map((category) => ({
+      category,
+      drinks: drinks.filter((d) => d.category === category),
+    }))
+    .filter((g) => g.drinks.length > 0);
+}
+
+export type WishlistShareItem = {
+  name: string;
+  price: number | null;
+  shop?: string;
+};
+
+export type WishlistShareSection = {
+  title: string;
+  items: WishlistShareItem[];
+};
+
 export function wishlistText(
-  items: { name: string; price: number | null; shop?: string }[],
+  items: WishlistShareItem[],
   totalLabel = "Ukupno",
 ): string {
-  const lines = items.map(
-    (it) =>
-      `• ${it.name}${it.price != null ? ` — ~${it.price.toFixed(0)} €` : ""}${it.shop ? ` (${it.shop})` : ""}`,
-  );
-  const total = items.reduce((s, it) => s + (it.price ?? 0), 0);
-  return [...lines, `${totalLabel}: ~${total.toFixed(0)} €`].join("\n");
+  return wishlistTextSections([{ title: "", items }], totalLabel);
+}
+
+/** Share tekst s odvojenim sekcijama (cigare / vrste pića). */
+export function wishlistTextSections(
+  sections: WishlistShareSection[],
+  totalLabel = "Ukupno",
+): string {
+  const lines: string[] = [];
+  let total = 0;
+  for (const section of sections) {
+    if (section.items.length === 0) continue;
+    if (section.title) {
+      if (lines.length > 0) lines.push("");
+      lines.push(section.title);
+    }
+    for (const it of section.items) {
+      total += it.price ?? 0;
+      lines.push(
+        `• ${it.name}${it.price != null ? ` — ~${it.price.toFixed(0)} €` : ""}${it.shop ? ` (${it.shop})` : ""}`,
+      );
+    }
+  }
+  lines.push(`${totalLabel}: ~${total.toFixed(0)} €`);
+  return lines.join("\n");
 }

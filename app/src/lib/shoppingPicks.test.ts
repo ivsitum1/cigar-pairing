@@ -1,7 +1,16 @@
 import { describe, it, expect } from "vitest";
-import { BUCKETS, buffetFive, collectionGaps, groupWishlistByShop, segmentPicks, wishlistText } from "./shoppingPicks";
+import {
+  BUCKETS,
+  buffetFive,
+  collectionGaps,
+  groupWishlistByShop,
+  groupWishlistDrinksByCategory,
+  segmentPicks,
+  wishlistText,
+  wishlistTextSections,
+} from "./shoppingPicks";
 import { DRINKS } from "../data";
-import type { DrinkCategory } from "../types";
+import type { Drink, DrinkCategory } from "../types";
 
 const CATS: DrinkCategory[] = [
   "rum",
@@ -13,6 +22,24 @@ const CATS: DrinkCategory[] = [
   "gin",
 ];
 const nitko = () => false;
+
+const stubDrink = (id: string, category: DrinkCategory): Drink =>
+  ({
+    id,
+    category,
+    name: id,
+    style: "blend",
+    region: "",
+    body: 3,
+    sweetness: 3,
+    flavorTags: [],
+    qualityScore: 7,
+    priceEUR: { min: 20, max: 30 },
+    shopHR: "test",
+    pairable: true,
+    serving: { best: "neat" },
+    notes: { hr: "", en: "" },
+  }) as Drink;
 
 describe("grupiranje liste zelja po trgovini", () => {
   it("grupira, cisti sufikse u zagradi i sortira po trosku", () => {
@@ -29,6 +56,24 @@ describe("grupiranje liste zelja po trgovini", () => {
     expect(groups[0]).toEqual({ shop: "allez.hr", count: 2, total: 100 });
     expect(groups[1]).toEqual({ shop: "The Humidor", count: 1, total: 12 });
     expect(groups[2]).toEqual({ shop: "ostalo", count: 2, total: 9 });
+  });
+});
+
+describe("grupiranje liste zelja po kategoriji pica", () => {
+  it("odvaja vrste pica i ispušta prazne kategorije", () => {
+    const groups = groupWishlistDrinksByCategory(
+      [
+        stubDrink("r1", "rum"),
+        stubDrink("w1", "whisky"),
+        stubDrink("r2", "rum"),
+        stubDrink("g1", "gin"),
+      ],
+      CATS,
+    );
+    expect(groups.map((g) => g.category)).toEqual(["rum", "whisky", "gin"]);
+    expect(groups[0].drinks.map((d) => d.id)).toEqual(["r1", "r2"]);
+    expect(groups[1].drinks.map((d) => d.id)).toEqual(["w1"]);
+    expect(groups[2].drinks.map((d) => d.id)).toEqual(["g1"]);
   });
 });
 
@@ -89,5 +134,36 @@ describe("shopping picks", () => {
     expect(txt).toContain("Talisker 10");
     expect(txt).toContain("(Vrutak)");
     expect(txt).toContain("Ukupno: ~75 €");
+  });
+
+  it("wishlistTextSections odvaja cigare od vrsta pica", () => {
+    const txt = wishlistTextSections([
+      {
+        title: "Cigare",
+        items: [{ name: "Partagas Serie D No.4", price: 12, shop: "The Humidor" }],
+      },
+      {
+        title: "Rum",
+        items: [{ name: "Doorly's 12", price: 35, shop: "allez.hr" }],
+      },
+      {
+        title: "Whisky",
+        items: [{ name: "Talisker 10", price: 45 }],
+      },
+      { title: "Gin", items: [] },
+    ]);
+    expect(txt).toBe(
+      [
+        "Cigare",
+        "• Partagas Serie D No.4 — ~12 € (The Humidor)",
+        "",
+        "Rum",
+        "• Doorly's 12 — ~35 € (allez.hr)",
+        "",
+        "Whisky",
+        "• Talisker 10 — ~45 €",
+        "Ukupno: ~92 €",
+      ].join("\n"),
+    );
   });
 });
