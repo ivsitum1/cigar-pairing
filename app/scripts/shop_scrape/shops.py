@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import re
+import urllib.error
 from dataclasses import dataclass
 from typing import Any
 
@@ -60,7 +61,13 @@ def scrape_humidor_category_listing(client: HttpClient, *, limit: int | None) ->
 
     for page in range(1, 201):
         url = base if page == 1 else f"{base}page/{page}/"
-        html = client.get_text(url)
+        try:
+            html = client.get_text(url)
+        except urllib.error.HTTPError as e:
+            # WooCommerce category pagination ends with 404.
+            if e.code == 404:
+                break
+            raise
         # Stop on Cloudflare challenge / empty listing.
         if "Just a moment" in html or "Attention Required" in html:
             break
@@ -144,7 +151,17 @@ def enrich_humidor_item(client: HttpClient, item: dict) -> None:
     url = item.get("url")
     if not isinstance(url, str) or not url:
         return
-    html = client.get_text(url)
+    try:
+        html = client.get_text(url)
+    except urllib.error.HTTPError as e:
+        item["details"] = None
+        item["detailsSource"] = {
+            "url": url,
+            "extractedFrom": "humidor-product-specs",
+            "extractedAt": iso_utc_now(),
+            "error": f"HTTP {e.code}",
+        }
+        return
     details = parse_humidor_product_details(html)
     apply_details_to_item(item, details)
     item["detailsSource"] = {
@@ -203,8 +220,11 @@ def scrape_humidor_hr(client: HttpClient, *, limit: int | None) -> dict:
     shop = ShopDef("humidor_hr", "The Humidor", "HR", "https://humidor.hr", "EUR")
     entry = "https://humidor.hr/hr/kategorija-proizvoda/cigare/"
     items = scrape_humidor_category_listing(client, limit=limit)
-    for item in items:
+    print(f"  listed {len(items)} products; enriching details…", flush=True)
+    for i, item in enumerate(items, 1):
         enrich_humidor_item(client, item)
+        if i % 25 == 0 or i == len(items):
+            print(f"  enriched {i}/{len(items)}", flush=True)
     return _wrap_shop(
         shop,
         source_kind="html-category+product-specs",
@@ -327,7 +347,10 @@ def scrape_cigarworld_eu(client: HttpClient, *, limit: int | None) -> dict:
 
     items: list[dict] = []
     for url in candidates:
-        html = client.get_text(url)
+        try:
+            html = client.get_text(url)
+        except urllib.error.HTTPError:
+            continue
         products = extract_jsonld_products(html)
         if not products:
             continue
@@ -342,6 +365,8 @@ def scrape_cigarworld_eu(client: HttpClient, *, limit: int | None) -> dict:
             "extractedAt": iso_utc_now(),
         }
         items.append(item)
+        if len(items) % 50 == 0:
+            print(f"  cigarworld items {len(items)}", flush=True)
         if limit is not None and len(items) >= limit:
             break
 

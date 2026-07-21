@@ -12,6 +12,7 @@ __pycache__/
 # raw shop scrape cache + outputs (generated; do not commit by default)
 app/scripts/.cache/
 app/scripts/output/cigar_shop_*_raw.json
+app/scripts/output/cigar_market_catalog.json
 
 # agent / SDD working files
 .superpowers/
