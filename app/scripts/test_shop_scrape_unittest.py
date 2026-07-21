@@ -108,6 +108,82 @@ class TestDetailParsers(unittest.TestCase):
         self.assertEqual(d["boxPressed"], False)
         self.assertEqual(d["tabacalera"], "A. Fuente y Cia.")
 
+    def test_parse_wc_store_attributes_havana(self):
+        attrs = [
+            {"name": "Wrapper", "taxonomy": "pa_wrapper", "terms": [{"name": "Meksiko"}]},
+            {"name": "Binder", "taxonomy": "pa_binder", "terms": [{"name": "Honduras"}]},
+            {"name": "Filler", "taxonomy": "pa_filler", "terms": [{"name": "Honduras/Nikaragva"}]},
+            {"name": "Ring", "taxonomy": "pa_ring", "terms": [{"name": "52"}]},
+            {"name": "Duljina", "taxonomy": "pa_duljina", "terms": [{"name": "15,24 cm"}]},
+            {"name": "Jačina", "taxonomy": "pa_jacina", "terms": [{"name": "srednje jaka"}]},
+            {"name": "Brand", "taxonomy": "pa_brand", "terms": [{"name": "Oscar Valladares"}]},
+            {"name": "Zemlja porijekla", "taxonomy": "pa_zemlja-porijekla", "terms": [{"name": "Honduras"}]},
+            {"name": "Vitola", "taxonomy": "pa_vitola", "terms": [{"name": "Toro"}]},
+        ]
+        d = parse_wc_store_attributes(attrs)
+        self.assertEqual(d["wrapper"], "Meksiko")
+        self.assertEqual(d["binder"], "Honduras")
+        self.assertEqual(d["filler"], "Honduras/Nikaragva")
+        self.assertEqual(d["origin"], "Honduras")
+        self.assertEqual(d["ringGauge"], 52)
+        self.assertEqual(d["lengthCm"], 15.24)
+        self.assertEqual(d["strength"], 4)
+        self.assertEqual(d["brandLabel"], "Oscar Valladares")
+        self.assertEqual(d["size"], "Toro")
+
+        item = wc_normalize_product(
+            {
+                "id": 1,
+                "name": "Test",
+                "permalink": "https://havana-cigar-shop.com/proizvod/test/",
+                "prices": {"price": "1230", "currency_code": "EUR", "currency_minor_unit": 2},
+                "is_in_stock": True,
+                "on_sale": False,
+                "attributes": attrs,
+                "categories": [],
+                "images": [],
+            }
+        )
+        self.assertEqual(item["details"]["wrapper"], "Meksiko")
+        self.assertEqual(item["detailsSource"]["extractedFrom"], "woocommerce-store-api-attributes")
+
+    def test_parse_holts_line_page(self):
+        html = """
+<div class="pdp-cigar-details">
+  <ul>
+    <li><span class="label">Strength:</span>
+      <div class="strength-o-meter"><div class="strength medium"><div class="value"> Medium</div></div></div>
+    </li>
+    <li><span class="label">Country:<span class="value">Dominican Republic</span></span></li>
+    <li><span class="label">Wrapper:<span class="value"> Varies</span></span></li>
+  </ul>
+  <div class="sizes"><div class="label">shapes:</div>Robusto</div>
+</div>
+<table id="products-list-table">
+  <tr>
+    <td class="tproduct-name"><div class="name-wrapper"><div class="name">8-5-8 <span class='ring'> - 6 x 47</span></div></div></td>
+    <td class="tpacking"><span>Box of 25</span></td>
+    <td class="tprice"><span>$187.95</span></td>
+  </tr>
+  <tr class="last-row">
+    <td class="tpacking"><span>Single</span></td>
+    <td class="tprice single"><span>$8.36</span></td>
+  </tr>
+</table>
+"""
+        d = parse_holts_line_details(html)
+        self.assertEqual(d["origin"], "Dominican Republic")
+        self.assertEqual(d["wrapper"], "Varies")
+        self.assertEqual(d["strength"], 3)
+        rows = parse_holts_vitola_rows(html)
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(rows[0]["name"], "8-5-8")
+        self.assertEqual(rows[0]["ringGauge"], 47)
+        self.assertEqual(rows[0]["lengthIn"], 6.0)
+        pref = prefer_holts_pack(rows[0]["packs"])
+        self.assertEqual(pref["type"], "single")
+        self.assertEqual(pref["price"], 8.36)
+
 
 if __name__ == "__main__":
     unittest.main()

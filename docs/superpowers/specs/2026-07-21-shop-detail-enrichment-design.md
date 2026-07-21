@@ -1,73 +1,32 @@
-# Shop detail enrichment (Humidor + Cigarworld)
+# Shop detail enrichment
 
 **Datum:** 2026-07-21  
-**Status:** approved (user: “kako ti kažeš”)  
-**Cilj:** drugi krug scrape-a koji iz product pages izvlači wrapper/binder/filler (i srodne specifikacije) za Humidor i Cigarworld.
+**Status:** done for Humidor, Cigarworld, Havana, Holts  
+**Cilj:** raw shop scrape s wrapper/binder/filler (i srodnim specifikacijama) gdje shop to nudi.
 
-## Odlučeno
+## Shop strategije
 
-- **Humidor**: zamijeniti WooCommerce Store API listing s HTML kategorijom `…/kategorija-proizvoda/cigare/` + product-page `SPECIFIKACIJE` (jer WC categories API je nestabilan/Cloudflare, a WC listing je ranije vukao i pipe-ove).
-- **Cigarworld**: zadržati sitemap + JSON-LD (cijene/stock), te iz istog product HTML-a parsirati `VariantInfo` (wrapper/binder/filler origin, ring, size…).
+| Shop | Listing | Details |
+|------|---------|---------|
+| **Humidor** | HTML kategorija `…/cigare/` | product-page `SPECIFIKACIJE` |
+| **Cigarworld** | sitemap_en + JSON-LD | `VariantInfo` W/B/F |
+| **Havana** | WooCommerce Store API | API `attributes` (Wrapper/Binder/Filler/Ring/Duljina/…) — bez ekstra HTTP |
+| **Holts** | sitemap line pages (`/cigars/all-cigar-brands/*.html`) | PDP country/wrapper/strength + vitola tablica (single-stick cijena) |
+| **CigarsDaily** | WooCommerce Store API | isti WC attribute parser (ako atributi postoje) |
 
-## Polja koja se skupljaju
+## Polja
 
-### Humidor (`product-specs-grid`)
+Zajednički `item.details`:
 
-- Length (inch + cm)
-- Diameter / Ring
-- Wrapper Type
-- Binder
-- Filler
-- Origin
-- Strength (aria-label `N/5`)
-- Burning Time (min)
-- Brand label (iz listing/product pagea, ako postoji)
+- wrapper, binder, filler, origin
+- strength, burnTimeMin, size
+- ringGauge, lengthIn, lengthCm, diameterCm
+- boxPressed, flavoured, tabacalera, brandLabel
 
-### Cigarworld (`VariantInfo-item`)
++ `detailsSource: { url, extractedFrom, extractedAt }`
 
-- Size
-- Ring / Diameter
-- Wrapper origin
-- Binder origin
-- Filler origin
-- Boxpressed
-- Flavoured
-- Tabacalera
+## Napomene
 
-## Output shape
-
-Svaki raw `item` dobiva:
-
-```json
-{
-  "details": {
-    "wrapper": "…",
-    "binder": "…",
-    "filler": "…",
-    "origin": "…",
-    "strength": 3,
-    "burnTimeMin": 75,
-    "size": "Robusto",
-    "ringGauge": 50,
-    "lengthIn": 6.0,
-    "lengthCm": 15.2,
-    "diameterCm": 1.91,
-    "boxPressed": false,
-    "flavoured": false,
-    "tabacalera": "…",
-    "brandLabel": "…"
-  },
-  "detailsSource": {
-    "url": "https://…",
-    "extractedFrom": "humidor-product-specs|cigarworld-variantinfo",
-    "extractedAt": "2026-07-21T…"
-  }
-}
-```
-
-Polja koja shop ne daje ostaju `null` (ne izmišljamo).
-
-## Non-goals
-
-- Merge u `app/src/data/cigars.json` u ovom prolazu.
-- Playwright / zaobilaženje Cloudflare challenge-a.
+- Holts rijetko ima binder/filler na line pageu (često samo wrapper + country).
+- Holts item = jedna vitola na line pageu; URL ostaje line page, id je `url#vitola`.
+- Havana W/B/F dolazi iz Store API list responsea — brzo i pouzdano.
