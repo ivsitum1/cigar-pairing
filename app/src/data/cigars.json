@@ -11192,52 +11192,6 @@
     "priceUrl": "https://havana-cigar-shop.com/proizvod/fonseca-delicias-25/"
   },
   {
-    "id": "cig-foundation-charter-oak",
-    "brand": "Foundation",
-    "line": "Charter Oak Shade",
-    "vitola": "Toro",
-    "format": "52 x 152mm",
-    "country": "Nikaragva",
-    "wrapper": "Connecticut Shade",
-    "strength": 2,
-    "body": 2,
-    "flavorTags": [
-      "kremasto",
-      "trava-slatka",
-      "med",
-      "orasasti"
-    ],
-    "smokeTimeMin": 60,
-    "priceEUR": 6,
-    "priceApprox": true,
-    "markets": [
-      "USA",
-      "WW"
-    ],
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Najbolji budget Connecticut u USA — blag, sladak, pošten.",
-      "en": "Best budget Connecticut in the USA — mild, sweet, honest."
-    },
-    "vitolas": [
-      {
-        "name": "Rothschild",
-        "format": "50 x 114mm",
-        "smokeTimeMin": 45,
-        "priceEUR": null,
-        "url": null
-      },
-      {
-        "name": "Toro",
-        "format": "52 x 152mm",
-        "smokeTimeMin": 60,
-        "priceEUR": null,
-        "url": null
-      }
-    ],
-    "priceUrl": null
-  },
-  {
     "id": "cig-foundation-tabernacle",
     "brand": "Foundation",
     "line": "Tabernacle",
@@ -11293,7 +11247,7 @@
   },
   {
     "id": "cig-foundation-cigar-company-el-gueguense",
-    "brand": "Foundation Cigar Company",
+    "brand": "Foundation",
     "line": "El Güegüense",
     "vitola": "El Güegüense",
     "format": "54 x 178mm",
@@ -11338,7 +11292,7 @@
   },
   {
     "id": "cig-foundation-cigar-company-wise-man",
-    "brand": "Foundation Cigar Company",
+    "brand": "Foundation",
     "line": "Wise Man",
     "vitola": "Wise Man Maduro Toro",
     "format": "52 x 152mm",
@@ -11389,60 +11343,8 @@
     "profileEstimated": true
   },
   {
-    "id": "cig-foundation-cigar-company-tabernacle",
-    "brand": "Foundation Cigar Company",
-    "line": "Tabernacle",
-    "vitola": "Tabernacle Broadleaf",
-    "format": "52 x 127mm",
-    "country": "Nikaragva",
-    "wrapper": "—",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
-    ],
-    "smokeTimeMin": 50,
-    "priceEUR": null,
-    "priceApprox": false,
-    "availabilityHR": [
-      "The Humidor",
-      "Havana Shop"
-    ],
-    "notes": {
-      "hr": "Tabernacle: linija marke Foundation Cigar Company.",
-      "en": "Tabernacle: a Foundation Cigar Company line."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Tabernacle Broadleaf",
-        "format": "52 x 127mm",
-        "smokeTimeMin": 50,
-        "priceEUR": null,
-        "url": null
-      },
-      {
-        "name": "Broadleaf",
-        "format": "52 x 127mm",
-        "smokeTimeMin": 50,
-        "priceEUR": null,
-        "url": null
-      }
-    ],
-    "priceUrl": null,
-    "profileEstimated": true
-  },
-  {
     "id": "cig-foundation-fnd-charter-oak",
-    "brand": "Foundation Cigar Company",
+    "brand": "Foundation",
     "line": "Charter Oak",
     "vitola": "Charter Oak Maduro Robusto",
     "format": "50 x 127mm",
@@ -11502,13 +11404,27 @@
         "smokeTimeMin": 80,
         "priceEUR": null,
         "url": null
+      },
+      {
+        "name": "Charter Oak Shade Rothschild",
+        "format": "50 x 114mm",
+        "smokeTimeMin": 45,
+        "priceEUR": null,
+        "url": null
+      },
+      {
+        "name": "Charter Oak Shade Toro",
+        "format": "52 x 152mm",
+        "smokeTimeMin": 60,
+        "priceEUR": null,
+        "url": null
       }
     ],
     "priceUrl": null
   },
   {
     "id": "cig-foundation-fnd-highclere",
-    "brand": "Foundation Cigar Company",
+    "brand": "Foundation",
     "line": "Highclere Castle",
     "vitola": "Highclere Castle Corona",
     "format": "46 x 140mm",
@@ -11567,7 +11483,7 @@
   },
   {
     "id": "cig-foundation-fnd-menelik",
-    "brand": "Foundation Cigar Company",
+    "brand": "Foundation",
     "line": "Menelik",
     "vitola": "Menelik Robusto",
     "format": "52 x 127mm",
@@ -11627,7 +11543,7 @@
   },
   {
     "id": "cig-foundation-fnd-olmec",
-    "brand": "Foundation Cigar Company",
+    "brand": "Foundation",
     "line": "Olmec",
     "vitola": "Olmec Claro Robusto",
     "format": "50 x 127mm",
