@@ -76,6 +76,33 @@ def brand_slug(url: str):
     return None
 
 
+# Sigurnosni gate: odbij "brend" koji zapravo izgleda kao brend+linija
+# (obrana i kad rječnik ima zaostatke). Konzervativno — pušta prave marke.
+_VIT_WORDS = {
+    "robusto", "robustos", "toro", "toros", "corona", "coronas", "churchill",
+    "churchills", "torpedo", "belicoso", "gordo", "lancero", "perfecto", "perfectos",
+    "figurado", "piramide", "lonsdale", "panetela", "epicure", "presidente", "gigante",
+}
+_LINE_WORDS = {
+    "serie", "series", "reserva", "reserve", "edicion", "edition", "limited",
+    "vintage", "signature", "anniversary", "aniversario", "especial", "exclusivo",
+    "maduro", "connecticut", "habano", "selection", "master", "collection", "batch",
+}
+
+
+def brand_ok(b: str) -> bool:
+    toks = re.findall(r"[a-z0-9]+", b.lower())
+    if any(t in _VIT_WORDS for t in toks):
+        return False
+    if any(t in _LINE_WORDS for t in toks) and len(toks) > 2:
+        return False
+    if re.search(r"\b(19|20)\d{2}\b", b):
+        return False
+    if f" {b.lower()} ".find(" by ") >= 0:
+        return False
+    return True
+
+
 def resolve_brand(record, brand_dict, keys_by_len):
     for o in record.get("offers") or []:
         s = brand_slug(o.get("url"))
@@ -249,6 +276,8 @@ def build():
     for b, r in pool:
         if b in HABANOS:
             rej("habanos_brand_skip", r); continue
+        if b not in known_brands and not brand_ok(b):
+            rej("malformed_brand", r); continue
         det = r.get("details") or {}
         cuban = is_cuban(r.get("country") or det.get("origin"))
         vit = match_vitola(r.get("vitola") or r.get("name") or "", syns) or match_vitola(det.get("size") or "", syns)

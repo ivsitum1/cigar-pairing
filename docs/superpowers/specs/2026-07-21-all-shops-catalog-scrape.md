@@ -152,8 +152,14 @@ merge-shops → dedupe-data → npm test`. Staje na prvoj grešci (postojeći uz
   (+ market-invariant guard), tsc+build ✓. Dijeljeni: `scripts/data/vitola_lexicon.json`,
   `line_map.json`; `scripts/shop_common.py`. Held ~2 000 (no_format/no_vitola) — kandidati
   za kasniju polish preko `line_map.json`.
-- **Faza C — poslije** (batchano): 5 517 pod **novim** brendovima → svaki batch
-  dodaje `brands.json` metapodatke (zemlja/founded/blurb) + guard 1:1.
+- **Faza C — ODRAĐENO (uz recheck loop)**: novi brendovi razriješeni iz
+  `brand_dictionary.json` (Cursor) + `--phase c/all` u istom engineu. **Katalog
+  514 → 1218 cigara, +144 nova brenda**, idempotentno, 1:1 čisto, embargo 0.
+  Sigurnosni **brand-sanity gate** drži malformirane „brend+linija" mapiranja
+  (held reason `malformed_brand`); OCR matcher učinjen robusnijim (tie-break po
+  liniji). Preostali sitni stragglers (npr. „Padilla Artemis") čekaju čišćenje
+  rječnika — vidi `docs/superpowers/plans/2026-07-21-phase-c-recheck.md`. Nakon
+  čišćenja `--phase all` regenerira i vraća held cigare (deterministički).
 
 ## Deliverables
 
