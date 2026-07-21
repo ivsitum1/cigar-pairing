@@ -57,6 +57,28 @@ COUNTRY_HR = {
     "dominikanska republika": "Dominikanska Republika", "kuba": "Kuba",
 }
 
+# CigarWorld drži zemlju podrijetla u putanji URL-a — pouzdan izvor kad polje fali.
+CW_COUNTRY = {
+    "dominikanische-republik": "Dominikanska Republika", "nicaragua": "Nikaragva",
+    "honduras": "Honduras", "costa-rica": "Kostarika", "kuba": "Kuba",
+    "deutschland": "Njemačka", "brasilien": "Brazil", "spanien": "Španjolska",
+    "mexiko": "Meksiko", "indonesien": "Indonezija", "panama": "Panama",
+    "philippinen": "Filipini", "peru": "Peru", "kolumbien": "Kolumbija",
+    "ecuador": "Ekvador", "italien": "Italija", "usa": "SAD", "mosambik": "Mozambik",
+}
+
+
+def derive_country(record):
+    det = record.get("details") or {}
+    cen = (record.get("country") or det.get("origin") or "").strip()
+    if COUNTRY_HR.get(cen.lower()):
+        return COUNTRY_HR[cen.lower()]
+    for o in record.get("offers") or []:
+        m = re.search(r"cigarworld\.de/en/zigarren/([^/]+)/", o.get("url") or "")
+        if m and m.group(1) in CW_COUNTRY:
+            return CW_COUNTRY[m.group(1)]
+    return None
+
 DIM_RE = re.compile(r"\b\d+(?:[.,]\d+)?\s*[x×]\s*\d+(?:[.,]\d+)?\b|\b\d+(?:[.,]\d+)?\s*(?:mm|cm|\")\b|\b#\d+\b", re.I)
 
 
@@ -134,13 +156,16 @@ def length_mm(det):
 
 def load_vitola_lexicon():
     lex = load_json(DATADIR / "vitola_lexicon.json")["vitolas"]
-    # (canonical, synonym) sorted by synonym length desc for longest-match
     syns = []
+    mid = {}
     for canon, info in lex.items():
         for s in info["syn"]:
             syns.append((s.lower(), canon))
+        lo, hi = info.get("lenMM", [None, None])
+        if lo and hi:
+            mid[canon] = round((lo + hi) / 2)
     syns.sort(key=lambda x: -len(x[0]))
-    return syns
+    return syns, mid
 
 
 def match_vitola(text, syns):
@@ -224,7 +249,7 @@ def build():
     all_cigars = load_json(CIGARS)
     base = [c for c in all_cigars if c.get("catalogSource") != "market"]  # idempotent
     known_brands = set(load_json(BRANDS).keys())
-    syns = load_vitola_lexicon()
+    syns, vit_mid = load_vitola_lexicon()
     line_map = load_json(DATADIR / "line_map.json")["map"]
     brand_dict = {}
     bd = DATADIR / "brand_dictionary.json"
@@ -285,13 +310,16 @@ def build():
             rej("no_vitola", r); continue
         ring = det.get("ringGauge")
         lmm = length_mm(det)
+        len_est = False
+        if ring and not lmm and vit in vit_mid:
+            lmm = vit_mid[vit]          # procjena duljine iz vitole (označeno)
+            len_est = True
         if not ring or not lmm:
             rej("no_format", r); continue
         offers = [o for o in (r.get("offers") or [])]
         if not any(o.get("amount") is not None for o in offers):
             rej("no_price", r); continue
-        cen = (r.get("country") or det.get("origin") or "").strip()
-        country = COUNTRY_HR.get(cen.lower())
+        country = derive_country(r)     # polje/origin pa CigarWorld URL putanja
         if not country:
             rej("unknown_country", r); continue
         line = canon_line(b, r.get("name"), vit, syns, line_map)
@@ -302,8 +330,9 @@ def build():
         if agg is None:
             agg = {"brand": b, "line": line, "country": country, "cuban": cuban,
                    "wrappers": {}, "boxpressed": False, "offers": [], "urls": set(),
-                   "vitolas": {}}
+                   "vitolas": {}, "len_est": False}
             lines[(b, line)] = agg
+        agg["len_est"] = agg["len_est"] or len_est
         agg["boxpressed"] = agg["boxpressed"] or bool(det.get("boxPressed"))
         w = det.get("wrapper")
         if w:
@@ -359,8 +388,9 @@ def build():
             "notes": {"hr": f"Iz kataloga {shops} — {b} {line}{bp}.",
                        "en": f"From the {shops} catalogue — {b} {line}{bp}."},
             "markets": markets, "vitolas": vitolas, "regionLinks": cigar_links,
-            "sourceUrls": sorted(agg["urls"]),
         }
+        if agg["len_est"]:
+            rec["formatEstimated"] = True  # duljina procijenjena iz vitole
         enrich(rec)  # strength/body/wrapper/flavorTags heuristika
         new_entries.append(rec)
 

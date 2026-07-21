@@ -160,6 +160,12 @@ merge-shops → dedupe-data → npm test`. Staje na prvoj grešci (postojeći uz
   liniji). Preostali sitni stragglers (npr. „Padilla Artemis") čekaju čišćenje
   rječnika — vidi `docs/superpowers/plans/2026-07-21-phase-c-recheck.md`. Nakon
   čišćenja `--phase all` regenerira i vraća held cigare (deterministički).
+- **Recovery (opcionalno, odrađeno):** zemlja izvedena i iz CigarWorld URL putanje,
+  a duljina procijenjena iz vitole (lexicon midpoint) kad shop nema dimenziju —
+  označeno `formatEstimated: true`. Time katalog naraste na **3148 cigara (+2634
+  market linija, +248 brenda)**; 1941 s procijenjenom duljinom. Preostali held
+  (2255 `no_vitola`) nemaju prepoznatljivu vitolu. PWA precache limit podignut
+  (`vite.config.ts`) jer je `data-cigars` chunk narastao (~240 kB gzip na wire).
 
 ## Deliverables
 

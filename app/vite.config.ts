@@ -39,6 +39,9 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: ["**/*.{js,css,html,svg,png,json,woff2}"],
+        // data-cigars chunk narastao s market katalogom (>2 MiB uncompressed,
+        // ~240 kB gzip na wire) — podigni limit da PWA i dalje radi offline
+        maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
       },
     }),
   ],

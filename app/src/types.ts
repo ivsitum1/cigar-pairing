@@ -99,6 +99,7 @@ export interface Cigar {
   // "market" = generirano iz scrape-a trgovina (build-market-cigars.py), za razliku
   // od kuriranih unosa; idempotentno regenerirano. Vidi Faza B/C playbook.
   catalogSource?: "market";
+  formatEstimated?: boolean; // duljina procijenjena iz vitole (shop bez dimenzije)
   sourceUrls?: string[];
   availabilityHR: string[];
   notes: LocalizedText;
