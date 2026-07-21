@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import html
 from typing import Any
+from urllib.parse import urlencode
 
 from shop_scrape.http import HttpClient
 
@@ -18,16 +19,63 @@ def wc_price_to_amount(prices: dict[str, Any]) -> float | None:
 
 
 def wc_iter_products(
-    client: HttpClient, base_url: str, *, per_page: int = 100, max_pages: int = 200
+    client: HttpClient,
+    base_url: str,
+    *,
+    query: dict[str, str] | None = None,
+    per_page: int = 100,
+    max_pages: int = 200,
 ) -> list[dict]:
     out: list[dict] = []
     for page in range(1, max_pages + 1):
-        url = f"{base_url}/wp-json/wc/store/products?per_page={per_page}&page={page}"
+        q = {"per_page": str(per_page), "page": str(page)}
+        if query:
+            q.update(query)
+        url = f"{base_url}/wp-json/wc/store/products?{urlencode(q)}"
         batch = client.get_json(url)
         if not isinstance(batch, list) or not batch:
             break
         out.extend([x for x in batch if isinstance(x, dict)])
     return out
+
+
+def wc_iter_categories(
+    client: HttpClient, base_url: str, *, per_page: int = 100, max_pages: int = 20
+) -> list[dict]:
+    out: list[dict] = []
+    for page in range(1, max_pages + 1):
+        url = f"{base_url}/wp-json/wc/store/products/categories?{urlencode({'per_page': str(per_page), 'page': str(page)})}"
+        batch = client.get_json(url)
+        if not isinstance(batch, list) or not batch:
+            break
+        out.extend([x for x in batch if isinstance(x, dict)])
+    return out
+
+
+def wc_pick_cigar_category_ids(categories: list[dict]) -> list[int]:
+    """Best-effort cigar category detection by slug/name/link keywords."""
+    keywords = ("cig", "cigar", "cigare", "zigar", "zigarr", "haban")
+    picks: list[tuple[int, int]] = []
+    for c in categories:
+        cid = c.get("id")
+        if not isinstance(cid, int):
+            continue
+        name = (c.get("name") if isinstance(c.get("name"), str) else "").lower()
+        slug = (c.get("slug") if isinstance(c.get("slug"), str) else "").lower()
+        link = (c.get("link") if isinstance(c.get("link"), str) else "").lower()
+        text = " ".join([name, slug, link])
+        if not any(k in text for k in keywords):
+            continue
+        # Prefer the canonical "cigare/cigars" over brand categories.
+        score = 0
+        if slug in ("cigare", "cigars", "habanos"):
+            score += 10
+        if "/product-category/" in link or "/kategorija-proizvoda/" in link:
+            score += 2
+        picks.append((score, cid))
+    picks.sort(reverse=True)
+    # Keep a few top IDs to be safe; callers can pick first.
+    return [cid for _score, cid in picks[:5]]
 
 
 def wc_categories_text(product: dict) -> str:

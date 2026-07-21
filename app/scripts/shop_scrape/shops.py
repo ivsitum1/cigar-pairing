@@ -7,7 +7,12 @@ from shop_scrape.jsonld import extract_jsonld_products
 from shop_scrape.sitemap import iter_sitemap_locs
 
 from shop_scrape.http import HttpClient, iso_utc_now
-from shop_scrape.woocommerce import wc_categories_text, wc_iter_products, wc_normalize_product
+from shop_scrape.woocommerce import (
+    wc_iter_categories,
+    wc_iter_products,
+    wc_normalize_product,
+    wc_pick_cigar_category_ids,
+)
 
 
 def _looks_like_cigar_category(text: str) -> bool:
@@ -58,15 +63,18 @@ def scrape_wc_shop(
     per_page: int = 100,
     max_pages: int = 200,
 ) -> dict:
-    products = wc_iter_products(client, shop.base_url, per_page=per_page, max_pages=max_pages)
+    cats = wc_iter_categories(client, shop.base_url)
+    cigar_cat_ids = wc_pick_cigar_category_ids(cats)
+    query = {"category": str(cigar_cat_ids[0])} if cigar_cat_ids else None
+    products = wc_iter_products(
+        client,
+        shop.base_url,
+        query=query,
+        per_page=per_page,
+        max_pages=max_pages if query is None else min(max_pages, 50),
+    )
     items: list[dict] = []
     for p in products:
-        cat_text = wc_categories_text(p)
-        permalink = p.get("permalink") if isinstance(p.get("permalink"), str) else ""
-        if cat_text and not _looks_like_cigar_category(cat_text) and permalink:
-            # Avoid accidentally including spirits/accessories in mixed shops.
-            if not _looks_like_cigar_category(permalink):
-                continue
         items.append(wc_normalize_product(p))
         if limit is not None and len(items) >= limit:
             break
@@ -81,7 +89,15 @@ def scrape_wc_shop(
 
     shop_final = ShopDef(shop.id, shop.name, shop.region, shop.base_url, currency)
     entry = f"{shop.base_url}/wp-json/wc/store/products"
-    return _wrap_shop(shop_final, source_kind="woocommerce-store-api", entrypoints=[entry], items=items)
+    entrypoints = [entry]
+    if cigar_cat_ids:
+        entrypoints.append(f"{entry}?category={cigar_cat_ids[0]}")
+    return _wrap_shop(
+        shop_final,
+        source_kind="woocommerce-store-api",
+        entrypoints=entrypoints,
+        items=items,
+    )
 
 
 def scrape_humidor_hr(client: HttpClient, *, limit: int | None) -> dict:
