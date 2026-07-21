@@ -3,6 +3,9 @@ from __future__ import annotations
 from dataclasses import dataclass
 from typing import Any
 
+from shop_scrape.jsonld import extract_jsonld_products
+from shop_scrape.sitemap import iter_sitemap_locs
+
 from shop_scrape.http import HttpClient, iso_utc_now
 from shop_scrape.woocommerce import wc_categories_text, wc_iter_products, wc_normalize_product
 
@@ -110,4 +113,121 @@ SCRAPERS: dict[str, Any] = {
     "havana_hr": scrape_havana_hr,
     "cigarsdaily_us": scrape_cigarsdaily_us,
 }
+
+
+def _normalize_jsonld_offer(offer: dict) -> tuple[float | None, str | None, bool | None]:
+    price = offer.get("price")
+    currency = offer.get("priceCurrency")
+    availability = offer.get("availability")
+    amount: float | None = None
+    if isinstance(price, (int, float)):
+        amount = float(price)
+    elif isinstance(price, str):
+        try:
+            amount = float(price.replace(",", ".").strip())
+        except Exception:
+            amount = None
+    cur = currency if isinstance(currency, str) and currency else None
+    in_stock: bool | None = None
+    if isinstance(availability, str):
+        a = availability.lower()
+        if "instock" in a:
+            in_stock = True
+        elif "outofstock" in a:
+            in_stock = False
+    return amount, cur, in_stock
+
+
+def _normalize_jsonld_product(url: str, product: dict) -> dict | None:
+    name = product.get("name") if isinstance(product.get("name"), str) else ""
+    if not name:
+        return None
+
+    offers = product.get("offers")
+    offer_nodes: list[dict] = []
+    if isinstance(offers, dict):
+        offer_nodes = [offers]
+    elif isinstance(offers, list):
+        offer_nodes = [o for o in offers if isinstance(o, dict)]
+
+    amount = None
+    currency = None
+    in_stock = None
+    for o in offer_nodes:
+        a, c, s = _normalize_jsonld_offer(o)
+        if a is not None and amount is None:
+            amount = a
+        if c and currency is None:
+            currency = c
+        if s is not None and in_stock is None:
+            in_stock = s
+
+    return {
+        "id": url,
+        "name": name,
+        "url": url,
+        "price": {"amount": amount, "currency": currency} if amount is not None and currency else None,
+        "availability": {"inStock": in_stock, "onSale": None},
+        "packaging": {"type": "unknown", "count": None},
+        "attributes": {"brand": None, "vitola": None, "dimensions": {"lengthIn": None, "ringGauge": None}},
+        "categories": [],
+        "images": [],
+        "raw": {"jsonld": {"@type": product.get("@type"), "offers": offers}},
+    }
+
+
+def scrape_holts_us(client: HttpClient, *, limit: int | None) -> dict:
+    shop = ShopDef("holts_us", "Holt's Cigar Company", "USA", "https://www.holts.com", "USD")
+    sitemap_url = "https://www.holts.com/sitemap.xml"
+    locs = iter_sitemap_locs(client.get_text(sitemap_url))
+
+    # Candidate URLs: keep `.html` pages and let JSON-LD decide what is a Product.
+    candidates = [u for u in locs if u.startswith(shop.base_url) and u.endswith(".html")]
+    items: list[dict] = []
+    for url in candidates:
+        html = client.get_text(url)
+        products = extract_jsonld_products(html)
+        if not products:
+            continue
+        item = _normalize_jsonld_product(url, products[0])
+        if item:
+            items.append(item)
+        if limit is not None and len(items) >= limit:
+            break
+
+    return _wrap_shop(shop, source_kind="sitemap+jsonld", entrypoints=[sitemap_url], items=items)
+
+
+def scrape_cigarworld_eu(client: HttpClient, *, limit: int | None) -> dict:
+    shop = ShopDef("cigarworld_eu", "Cigarworld", "EU", "https://www.cigarworld.de", "EUR")
+    index_url = "https://www.cigarworld.de/sitemap.xml"
+    index_locs = iter_sitemap_locs(client.get_text(index_url))
+
+    # Prefer English sitemap if present.
+    en_sitemaps = [u for u in index_locs if u.endswith("sitemap_en.xml")]
+    sitemap_url = en_sitemaps[0] if en_sitemaps else index_url
+    locs = iter_sitemap_locs(client.get_text(sitemap_url))
+
+    candidates = [u for u in locs if "/en/zigarren/" in u]
+    items: list[dict] = []
+    for url in candidates:
+        html = client.get_text(url)
+        products = extract_jsonld_products(html)
+        if not products:
+            continue
+        item = _normalize_jsonld_product(url, products[0])
+        if item:
+            items.append(item)
+        if limit is not None and len(items) >= limit:
+            break
+
+    return _wrap_shop(shop, source_kind="sitemap+jsonld", entrypoints=[index_url, sitemap_url], items=items)
+
+
+SCRAPERS.update(
+    {
+        "holts_us": scrape_holts_us,
+        "cigarworld_eu": scrape_cigarworld_eu,
+    }
+)
 
