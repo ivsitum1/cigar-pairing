@@ -6979,8 +6979,8 @@
   {
     "id": "cig-davidoff-escurio-gran",
     "brand": "Davidoff",
-    "line": "Escurio Gran",
-    "vitola": "Toro",
+    "line": "Escurio",
+    "vitola": "Robusto",
     "format": "—",
     "country": "Dominikanska Republika",
     "wrapper": "Natural",
@@ -7009,11 +7009,25 @@
     ],
     "vitolas": [
       {
+        "name": "Petit Robusto",
+        "format": "—",
+        "smokeTimeMin": 45,
+        "priceEUR": 13.6,
+        "url": "https://havana-cigar-shop.com/proizvod/davidoff-escurio-petit-robusto-4/"
+      },
+      {
         "name": "Robusto",
         "format": "—",
         "smokeTimeMin": 45,
         "priceEUR": 20.2,
         "url": "https://havana-cigar-shop.com/proizvod/davidoff-escurio-robusto-12/"
+      },
+      {
+        "name": "Robusto Tubos",
+        "format": "—",
+        "smokeTimeMin": 50,
+        "priceEUR": 23.6,
+        "url": "https://havana-cigar-shop.com/proizvod/davidoff-escurio-robusto-tubos-12/"
       },
       {
         "name": "Toro",
@@ -7031,104 +7045,6 @@
       }
     ],
     "priceUrl": "https://havana-cigar-shop.com/proizvod/davidoff-escurio-gran-toro-4/"
-  },
-  {
-    "id": "cig-davidoff-escurio-petit",
-    "brand": "Davidoff",
-    "line": "Escurio Petit",
-    "vitola": "Robusto",
-    "format": "—",
-    "country": "Dominikanska Republika",
-    "wrapper": "Natural",
-    "strength": 3,
-    "body": 4,
-    "flavorTags": [
-      "kakao",
-      "karamela",
-      "zacini",
-      "citrus"
-    ],
-    "smokeTimeMin": 45,
-    "priceEUR": 13.6,
-    "priceApprox": false,
-    "availabilityHR": [
-      "Havana Shop",
-      "The Humidor"
-    ],
-    "notes": {
-      "hr": "Natural wrapper (Dominikanska Republika); uravnotežena, srednje snage. Note: kakao, karamela, zacini.",
-      "en": "Natural wrapper (Dominikanska Republika); balanced, medium in strength. Notes of cocoa, caramel, spice."
-    },
-    "markets": [
-      "HR",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Robusto",
-        "format": "—",
-        "smokeTimeMin": 45,
-        "priceEUR": 13.6,
-        "url": "https://havana-cigar-shop.com/proizvod/davidoff-escurio-petit-robusto-4/"
-      }
-    ],
-    "priceUrl": "https://havana-cigar-shop.com/proizvod/davidoff-escurio-petit-robusto-4/"
-  },
-  {
-    "id": "cig-davidoff-escurio-robusto-tubos",
-    "brand": "Davidoff",
-    "line": "Escurio Robusto Tubos",
-    "vitola": "Robusto Tubos",
-    "format": "—",
-    "country": "Dominikanska Republika",
-    "wrapper": "Natural",
-    "strength": 3,
-    "body": 4,
-    "flavorTags": [
-      "kakao",
-      "karamela",
-      "zacini",
-      "citrus"
-    ],
-    "smokeTimeMin": 50,
-    "priceEUR": 23.6,
-    "priceApprox": false,
-    "availabilityHR": [
-      "Havana Shop",
-      "The Humidor"
-    ],
-    "notes": {
-      "hr": "Natural wrapper (Dominikanska Republika); uravnotežena, srednje snage. Note: kakao, karamela, zacini.",
-      "en": "Natural wrapper (Dominikanska Republika); balanced, medium in strength. Notes of cocoa, caramel, spice."
-    },
-    "markets": [
-      "HR",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Robusto",
-        "format": "54 x 114mm",
-        "smokeTimeMin": 45,
-        "priceEUR": 22.7,
-        "url": "https://humidor.hr/hr/proizvod/davidoff-escurio-robusto-tubos-4-1-2-x-54/"
-      },
-      {
-        "name": "Robusto Tubos",
-        "format": "—",
-        "smokeTimeMin": 50,
-        "priceEUR": 23.6,
-        "url": "https://havana-cigar-shop.com/proizvod/davidoff-escurio-robusto-tubos-12/"
-      },
-      {
-        "name": "Escurio Robusto",
-        "format": "50 x 127mm",
-        "smokeTimeMin": 50,
-        "priceEUR": null,
-        "url": null
-      }
-    ],
-    "priceUrl": "https://havana-cigar-shop.com/proizvod/davidoff-escurio-robusto-tubos-12/"
   },
   {
     "id": "cig-davidoff-exclusive-croatia-2021",
@@ -7248,8 +7164,8 @@
   {
     "id": "cig-davidoff-millenium",
     "brand": "Davidoff",
-    "line": "Millenium",
-    "vitola": "Short Robusto",
+    "line": "Millennium",
+    "vitola": "Robusto Tubos",
     "format": "—",
     "country": "Dominikanska Republika",
     "wrapper": "Habano",
@@ -7285,18 +7201,18 @@
         "url": "https://havana-cigar-shop.com/proizvod/davidoff-millenium-short-robusto-4/"
       },
       {
-        "name": "Robusto",
-        "format": "—",
-        "smokeTimeMin": 45,
-        "priceEUR": 32.6,
-        "url": "https://havana-cigar-shop.com/proizvod/davidoff-millenium-robusto-tubos-3/"
-      },
-      {
         "name": "Petit Corona",
         "format": "—",
         "smokeTimeMin": 45,
         "priceEUR": 18.5,
         "url": "https://havana-cigar-shop.com/proizvod/davidoff-millenium-petit-corona-5/"
+      },
+      {
+        "name": "Robusto Tubos",
+        "format": "—",
+        "smokeTimeMin": 50,
+        "priceEUR": 32.6,
+        "url": "https://havana-cigar-shop.com/proizvod/davidoff-millenium-robusto-tubos-3/"
       },
       {
         "name": "Le 2023",
@@ -7306,73 +7222,21 @@
         "url": "https://havana-cigar-shop.com/proizvod/davidoff-millenium-lancero-le-2023-10/"
       },
       {
-        "name": "Robusto Tubos",
-        "format": "—",
-        "smokeTimeMin": 50,
-        "priceEUR": 32.6,
-        "url": "https://havana-cigar-shop.com/proizvod/davidoff-millenium-robusto-tubos-3/"
-      }
-    ],
-    "priceUrl": "https://havana-cigar-shop.com/proizvod/davidoff-millenium-short-robusto-4/",
-    "profileEstimated": true
-  },
-  {
-    "id": "cig-davidoff-davidoff-millennium",
-    "brand": "Davidoff",
-    "line": "Millennium Blend",
-    "vitola": "Millennium Robusto",
-    "format": "50 x 127mm",
-    "country": "Dominikanska Republika",
-    "wrapper": "Ecuadorian habano",
-    "strength": 4,
-    "body": 4,
-    "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
-    ],
-    "smokeTimeMin": 50,
-    "priceEUR": null,
-    "priceApprox": false,
-    "availabilityHR": [
-      "The Humidor",
-      "Havana Shop"
-    ],
-    "notes": {
-      "hr": "Ecuadorian habano wrapper (Dominikanska Republika); punija i izražajna. Note: cedar, zacini, koza.",
-      "en": "Ecuadorian habano wrapper (Dominikanska Republika); fuller and expressive. Notes of cedar, spice, leather. Millennium robusto; classic Davidoff balance."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Millennium Robusto",
-        "format": "50 x 127mm",
-        "smokeTimeMin": 50,
-        "priceEUR": null,
-        "url": null
-      },
-      {
-        "name": "Millennium Piramides",
+        "name": "Piramides",
         "format": "52 x 156mm",
         "smokeTimeMin": 70,
         "priceEUR": null,
         "url": null
       },
       {
-        "name": "Millennium Toro",
+        "name": "Toro",
         "format": "52 x 152mm",
         "smokeTimeMin": 65,
         "priceEUR": null,
         "url": null
       }
     ],
-    "priceUrl": null,
+    "priceUrl": "https://havana-cigar-shop.com/proizvod/davidoff-millenium-short-robusto-4/",
     "profileEstimated": true
   },
   {
@@ -7776,182 +7640,14 @@
         "smokeTimeMin": 85,
         "priceEUR": null,
         "url": null
-      }
-    ],
-    "priceUrl": null
-  },
-  {
-    "id": "cig-davidoff-winston-churchill",
-    "brand": "Davidoff",
-    "line": "Winston Churchill / Late Hour",
-    "vitola": "Robusto",
-    "format": "52 x 127mm",
-    "country": "Dominikanska Republika",
-    "wrapper": "Habano Ecuador (Late Hour: scotch-cask fermentiran duhan)",
-    "strength": 3,
-    "body": 4,
-    "flavorTags": [
-      "kava",
-      "tamno-voce",
-      "zacini",
-      "dim",
-      "kakao"
-    ],
-    "smokeTimeMin": 50,
-    "priceEUR": 28.6,
-    "priceApprox": false,
-    "availabilityHR": [
-      "Havana Shop",
-      "The Humidor"
-    ],
-    "notes": {
-      "hr": "Late Hour koristi duhan odležan u scotch bačvama — rođen za pairing s whiskyjem.",
-      "en": "Late Hour uses scotch-cask-aged tobacco — born for whisky pairing."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Robusto",
-        "format": "52 x 127mm",
-        "smokeTimeMin": 50,
-        "priceEUR": 28.6,
-        "url": "https://humidor.hr/en/proizvod/davidoff-wsc-the-late-hour-robusto-5-x-52/"
       },
       {
-        "name": "Churchill",
-        "format": "48 x 178mm",
-        "smokeTimeMin": 65,
-        "priceEUR": 31.8,
-        "url": "https://humidor.hr/en/proizvod/davidoff-wsc-the-late-hour-churchill-7-x-48/"
-      }
-    ],
-    "priceUrl": "https://humidor.hr/en/proizvod/davidoff-wsc-the-late-hour-robusto-5-x-52/"
-  },
-  {
-    "id": "cig-davidoff-wsc-belicoso",
-    "brand": "Davidoff",
-    "line": "Wsc Belicoso",
-    "vitola": "Wsc Belicoso",
-    "format": "—",
-    "country": "Nikaragva",
-    "wrapper": "—",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
-    ],
-    "smokeTimeMin": 45,
-    "priceEUR": 11.3,
-    "priceApprox": false,
-    "availabilityHR": [
-      "Havana Shop",
-      "The Humidor"
-    ],
-    "notes": {
-      "hr": "— wrapper (Nikaragva); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
-      "en": "— wrapper (Nikaragva); balanced, medium in strength. Notes of cedar, spice, leather."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Wsc Belicoso",
+        "name": "Belicoso",
         "format": "—",
         "smokeTimeMin": 45,
         "priceEUR": 11.3,
         "url": "https://havana-cigar-shop.com/proizvod/davidoff-wsc-belicoso-4/"
-      }
-    ],
-    "priceUrl": "https://havana-cigar-shop.com/proizvod/davidoff-wsc-belicoso-4/",
-    "profileEstimated": true
-  },
-  {
-    "id": "cig-davidoff-wsc-le-2025",
-    "brand": "Davidoff",
-    "line": "Wsc Le 2025",
-    "vitola": "Le 2025",
-    "format": "—",
-    "country": "Dominikanska Republika",
-    "wrapper": "Habano",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
-    ],
-    "smokeTimeMin": 45,
-    "priceEUR": 47.0,
-    "priceApprox": false,
-    "availabilityHR": [
-      "Havana Shop",
-      "The Humidor"
-    ],
-    "notes": {
-      "hr": "Habano wrapper (Dominikanska Republika); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
-      "en": "Habano wrapper (Dominikanska Republika); balanced, medium in strength. Notes of cedar, spice, leather."
-    },
-    "markets": [
-      "HR",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Le 2025",
-        "format": "—",
-        "smokeTimeMin": 45,
-        "priceEUR": 47.0,
-        "url": "https://havana-cigar-shop.com/proizvod/davidoff-wsc-le-2025-10/"
-      }
-    ],
-    "priceUrl": "https://havana-cigar-shop.com/proizvod/davidoff-wsc-le-2025-10/",
-    "profileEstimated": true
-  },
-  {
-    "id": "cig-davidoff-wsc-petit-panetela",
-    "brand": "Davidoff",
-    "line": "Wsc Petit Panetela",
-    "vitola": "Petit Panetela",
-    "format": "—",
-    "country": "Dominikanska Republika",
-    "wrapper": "Habano",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
-    ],
-    "smokeTimeMin": 45,
-    "priceEUR": 9.7,
-    "priceApprox": false,
-    "availabilityHR": [
-      "Havana Shop",
-      "The Humidor"
-    ],
-    "notes": {
-      "hr": "Habano wrapper (Dominikanska Republika); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
-      "en": "Habano wrapper (Dominikanska Republika); balanced, medium in strength. Notes of cedar, spice, leather."
-    },
-    "markets": [
-      "HR",
-      "WW"
-    ],
-    "vitolas": [
+      },
       {
         "name": "Petit Panetela",
         "format": "—",
@@ -7960,13 +7656,12 @@
         "url": "https://havana-cigar-shop.com/proizvod/davidoff-wsc-petit-panetela-5/"
       }
     ],
-    "priceUrl": "https://havana-cigar-shop.com/proizvod/davidoff-wsc-petit-panetela-5/",
-    "profileEstimated": true
+    "priceUrl": null
   },
   {
     "id": "cig-davidoff-wsc-the-late-hour",
     "brand": "Davidoff",
-    "line": "Wsc The Late Hour",
+    "line": "Winston Churchill The Late Hour",
     "vitola": "Robusto",
     "format": "52 x 127mm",
     "country": "Dominikanska Republika",
@@ -8003,18 +7698,18 @@
         "url": "https://humidor.hr/hr/proizvod/davidoff-wsc-the-late-hour-robusto-5-x-52/"
       },
       {
-        "name": "Belicoso",
-        "format": "—",
-        "smokeTimeMin": 50,
-        "priceEUR": 11.3,
-        "url": "https://havana-cigar-shop.com/proizvod/davidoff-wsc-belicoso-4/"
-      },
-      {
         "name": "Churchill",
         "format": "48 x 178mm",
         "smokeTimeMin": 65,
         "priceEUR": 31.8,
         "url": "https://humidor.hr/hr/proizvod/davidoff-wsc-the-late-hour-churchill-7-x-48/"
+      },
+      {
+        "name": "Le 2025",
+        "format": "—",
+        "smokeTimeMin": 45,
+        "priceEUR": 47.0,
+        "url": "https://havana-cigar-shop.com/proizvod/davidoff-wsc-le-2025-10/"
       }
     ],
     "priceUrl": "https://humidor.hr/hr/proizvod/davidoff-wsc-the-late-hour-robusto-5-x-52/",
