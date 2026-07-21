@@ -7948,13 +7948,6 @@
         "url": null
       },
       {
-        "name": "Liga Privada No. 9 Toro",
-        "format": "52 x 152mm",
-        "smokeTimeMin": 70,
-        "priceEUR": 23.0,
-        "url": "https://humidor.hr/hr/proizvod/liga-privada-no-9-toro-6-x-52/"
-      },
-      {
         "name": "Liga Privada T52 Toro",
         "format": "52 x 152mm",
         "smokeTimeMin": 70,
@@ -8610,8 +8603,8 @@
         "name": "Encore Majestic",
         "format": "52 x 152mm",
         "smokeTimeMin": 65,
-        "priceEUR": null,
-        "url": null
+        "priceEUR": 19.1,
+        "url": "https://havana-cigar-shop.com/proizvod/e-p-carrillo-encore-majestic-20/"
       },
       {
         "name": "El Primer",
@@ -8629,94 +8622,6 @@
       }
     ],
     "priceUrl": "https://havana-cigar-shop.com/proizvod/e-p-carrillo-encore-celestial-20/"
-  },
-  {
-    "id": "cig-e-p-carrillo-encore-celestial",
-    "brand": "E.P. Carrillo",
-    "line": "Encore Celestial",
-    "vitola": "Encore Celestial",
-    "format": "—",
-    "country": "Dominikanska Republika",
-    "wrapper": "—",
-    "strength": 4,
-    "body": 4,
-    "flavorTags": [
-      "kakao",
-      "zemljano",
-      "kava",
-      "koza"
-    ],
-    "smokeTimeMin": 45,
-    "priceEUR": 19.35,
-    "priceApprox": false,
-    "availabilityHR": [
-      "Havana Shop",
-      "The Humidor"
-    ],
-    "notes": {
-      "hr": "— wrapper (Dominikanska Republika); punija i izražajna. Note: kakao, zemljano, kava.",
-      "en": "— wrapper (Dominikanska Republika); fuller and expressive. Notes of cocoa, earth, coffee."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Encore Celestial",
-        "format": "—",
-        "smokeTimeMin": 45,
-        "priceEUR": 19.35,
-        "url": "https://havana-cigar-shop.com/proizvod/e-p-carrillo-encore-celestial-20/"
-      }
-    ],
-    "priceUrl": "https://havana-cigar-shop.com/proizvod/e-p-carrillo-encore-celestial-20/"
-  },
-  {
-    "id": "cig-e-p-carrillo-encore-majestic",
-    "brand": "E.P. Carrillo",
-    "line": "Encore Majestic",
-    "vitola": "Encore Majestic",
-    "format": "—",
-    "country": "Dominikanska Republika",
-    "wrapper": "—",
-    "strength": 4,
-    "body": 4,
-    "flavorTags": [
-      "kakao",
-      "zemljano",
-      "kava",
-      "koza"
-    ],
-    "smokeTimeMin": 45,
-    "priceEUR": 19.1,
-    "priceApprox": false,
-    "availabilityHR": [
-      "Havana Shop",
-      "The Humidor"
-    ],
-    "notes": {
-      "hr": "— wrapper (Dominikanska Republika); punija i izražajna. Note: kakao, zemljano, kava.",
-      "en": "— wrapper (Dominikanska Republika); fuller and expressive. Notes of cocoa, earth, coffee."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Encore Majestic",
-        "format": "—",
-        "smokeTimeMin": 45,
-        "priceEUR": 19.1,
-        "url": "https://havana-cigar-shop.com/proizvod/e-p-carrillo-encore-majestic-20/"
-      }
-    ],
-    "priceUrl": "https://havana-cigar-shop.com/proizvod/e-p-carrillo-encore-majestic-20/"
   },
   {
     "id": "cig-ep-carrillo-inch-maduro",
@@ -8867,51 +8772,6 @@
         "smokeTimeMin": 85,
         "priceEUR": null,
         "url": null
-      }
-    ],
-    "priceUrl": "https://havana-cigar-shop.com/proizvod/e-p-carrillo-la-historia-el-senador-20/",
-    "profileEstimated": true
-  },
-  {
-    "id": "cig-e-p-carrillo-la-historia-el-senador",
-    "brand": "E.P. Carrillo",
-    "line": "La Historia El Senador",
-    "vitola": "El Senador",
-    "format": "—",
-    "country": "Nikaragva",
-    "wrapper": "—",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
-    ],
-    "smokeTimeMin": 45,
-    "priceEUR": 18.7,
-    "priceApprox": false,
-    "availabilityHR": [
-      "Havana Shop",
-      "The Humidor"
-    ],
-    "notes": {
-      "hr": "— wrapper (Nikaragva); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
-      "en": "— wrapper (Nikaragva); balanced, medium in strength. Notes of cedar, spice, leather."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "El Senador",
-        "format": "—",
-        "smokeTimeMin": 45,
-        "priceEUR": 18.7,
-        "url": "https://havana-cigar-shop.com/proizvod/e-p-carrillo-la-historia-el-senador-20/"
       }
     ],
     "priceUrl": "https://havana-cigar-shop.com/proizvod/e-p-carrillo-la-historia-el-senador-20/",
@@ -11638,8 +11498,8 @@
         "name": "San Juan",
         "format": "50 x 140mm",
         "smokeTimeMin": 60,
-        "priceEUR": null,
-        "url": null
+        "priceEUR": 41.05,
+        "url": "https://havana-cigar-shop.com/proizvod/hoyo-de-monterrey-le-hoyo-de-san-juan-25/"
       },
       {
         "name": "De Rio Seco",
@@ -11658,138 +11518,6 @@
     ],
     "priceUrl": "https://havana-cigar-shop.com/proizvod/hoyo-de-monterrey-le-hoyo-du-maire-25/",
     "profileEstimated": true
-  },
-  {
-    "id": "cig-hoyo-de-monterrey-le-hoyo-de-san-juan",
-    "brand": "Hoyo de Monterrey",
-    "line": "Le Hoyo De San Juan",
-    "vitola": "San Juan",
-    "format": "—",
-    "country": "Kuba",
-    "wrapper": "Habano",
-    "strength": 2,
-    "body": 3,
-    "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
-    ],
-    "smokeTimeMin": 45,
-    "priceEUR": 41.05,
-    "priceApprox": false,
-    "availabilityHR": [
-      "Havana Shop",
-      "The Humidor"
-    ],
-    "notes": {
-      "hr": "Habano wrapper (Kuba); blaga prema srednjoj. Note: cedar, zacini, koza.",
-      "en": "Habano wrapper (Kuba); mild-to-medium. Notes of cedar, spice, leather."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "San Juan",
-        "format": "—",
-        "smokeTimeMin": 45,
-        "priceEUR": 41.05,
-        "url": "https://havana-cigar-shop.com/proizvod/hoyo-de-monterrey-le-hoyo-de-san-juan-25/"
-      }
-    ],
-    "priceUrl": "https://havana-cigar-shop.com/proizvod/hoyo-de-monterrey-le-hoyo-de-san-juan-25/"
-  },
-  {
-    "id": "cig-hoyo-de-monterrey-le-hoyo-du-depute",
-    "brand": "Hoyo de Monterrey",
-    "line": "Le Hoyo Du Depute",
-    "vitola": "Du Depute",
-    "format": "—",
-    "country": "Kuba",
-    "wrapper": "Habano",
-    "strength": 2,
-    "body": 3,
-    "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
-    ],
-    "smokeTimeMin": 45,
-    "priceEUR": 19.85,
-    "priceApprox": false,
-    "availabilityHR": [
-      "Havana Shop",
-      "The Humidor"
-    ],
-    "notes": {
-      "hr": "Habano wrapper (Kuba); blaga prema srednjoj. Note: cedar, zacini, koza.",
-      "en": "Habano wrapper (Kuba); mild-to-medium. Notes of cedar, spice, leather."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Du Depute",
-        "format": "—",
-        "smokeTimeMin": 45,
-        "priceEUR": 19.85,
-        "url": "https://havana-cigar-shop.com/proizvod/hoyo-de-monterrey-le-hoyo-du-depute-25/"
-      }
-    ],
-    "priceUrl": "https://havana-cigar-shop.com/proizvod/hoyo-de-monterrey-le-hoyo-du-depute-25/"
-  },
-  {
-    "id": "cig-hoyo-de-monterrey-le-hoyo-du-maire",
-    "brand": "Hoyo de Monterrey",
-    "line": "Le Hoyo Du Maire",
-    "vitola": "Du Maire",
-    "format": "—",
-    "country": "Kuba",
-    "wrapper": "Habano",
-    "strength": 2,
-    "body": 3,
-    "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
-    ],
-    "smokeTimeMin": 45,
-    "priceEUR": 16.1,
-    "priceApprox": false,
-    "availabilityHR": [
-      "Havana Shop",
-      "The Humidor"
-    ],
-    "notes": {
-      "hr": "Habano wrapper (Kuba); blaga prema srednjoj. Note: cedar, zacini, koza.",
-      "en": "Habano wrapper (Kuba); mild-to-medium. Notes of cedar, spice, leather."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Du Maire",
-        "format": "—",
-        "smokeTimeMin": 45,
-        "priceEUR": 16.1,
-        "url": "https://havana-cigar-shop.com/proizvod/hoyo-de-monterrey-le-hoyo-du-maire-25/"
-      }
-    ],
-    "priceUrl": "https://havana-cigar-shop.com/proizvod/hoyo-de-monterrey-le-hoyo-du-maire-25/"
   },
   {
     "id": "cig-hoyo-de-monterrey-monterreyes-no-4",
@@ -12822,8 +12550,8 @@
         "name": "Selección No. 2",
         "format": "42 x 129mm",
         "smokeTimeMin": 40,
-        "priceEUR": null,
-        "url": null
+        "priceEUR": 24.5,
+        "url": "https://havana-cigar-shop.com/proizvod/juan-lopez-seleccion-no-2-25/"
       },
       {
         "name": "Petit Coronas",
@@ -12856,70 +12584,6 @@
     ],
     "priceUrl": "https://havana-cigar-shop.com/proizvod/juan-lopez-seleccion-especial-cdh-25/",
     "profileEstimated": true
-  },
-  {
-    "id": "cig-juan-lopez-seleccion-no2",
-    "brand": "Juan López",
-    "line": "Selección No. 2",
-    "vitola": "Especial (Cdh)",
-    "format": "—",
-    "country": "Kuba",
-    "wrapper": "Habano",
-    "strength": 3,
-    "body": 4,
-    "flavorTags": [
-      "zemljano",
-      "med",
-      "kava",
-      "drvo"
-    ],
-    "smokeTimeMin": 45,
-    "priceEUR": 65.0,
-    "priceApprox": false,
-    "availabilityHR": [
-      "Havana Shop",
-      "The Humidor"
-    ],
-    "notes": {
-      "hr": "Mala marka, velika cigara — zemljano-medena, srednje-puno tijelo.",
-      "en": "Small marque, big cigar — earthy-honeyed, medium-full body."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Selección No.2",
-        "format": "50 x 124mm",
-        "smokeTimeMin": 45,
-        "priceEUR": null,
-        "url": null
-      },
-      {
-        "name": "No. 2",
-        "format": "—",
-        "smokeTimeMin": 45,
-        "priceEUR": 24.5,
-        "url": "https://havana-cigar-shop.com/proizvod/juan-lopez-seleccion-no-2-25/"
-      },
-      {
-        "name": "Especial (Cdh)",
-        "format": "—",
-        "smokeTimeMin": 45,
-        "priceEUR": 65.0,
-        "url": "https://havana-cigar-shop.com/proizvod/juan-lopez-seleccion-especial-cdh-25/"
-      },
-      {
-        "name": "Selección No.1",
-        "format": "46 x 143mm",
-        "smokeTimeMin": 50,
-        "priceEUR": null,
-        "url": null
-      }
-    ],
-    "priceUrl": "https://havana-cigar-shop.com/proizvod/juan-lopez-seleccion-especial-cdh-25/"
   },
   {
     "id": "cig-la-aurora-107",
@@ -15364,70 +15028,6 @@
     "priceUrl": "https://havana-cigar-shop.com/proizvod/montecristo-edmundo-25/"
   },
   {
-    "id": "cig-montecristo-edmundo",
-    "brand": "Montecristo",
-    "line": "Edmundo / Open",
-    "vitola": "Edmundo",
-    "format": "52 x 135mm",
-    "country": "Kuba",
-    "wrapper": "Habano",
-    "strength": 3,
-    "body": 4,
-    "flavorTags": [
-      "kakao",
-      "kremasto",
-      "cedar",
-      "orasasti"
-    ],
-    "smokeTimeMin": 50,
-    "priceEUR": 43.3,
-    "priceApprox": false,
-    "availabilityHR": [
-      "Havana Shop",
-      "The Humidor"
-    ],
-    "notes": {
-      "hr": "Moderniji, širi format — mekši i kremastiji od klasične linije.",
-      "en": "Modern wider format — softer and creamier than the classic line."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Petit Edmundo",
-        "format": "52 x 110mm",
-        "smokeTimeMin": 40,
-        "priceEUR": null,
-        "url": null
-      },
-      {
-        "name": "Montecristo Edmundo",
-        "format": "—",
-        "smokeTimeMin": 45,
-        "priceEUR": 43.3,
-        "url": "https://havana-cigar-shop.com/proizvod/montecristo-edmundo-25/"
-      },
-      {
-        "name": "Edmundo",
-        "format": "52 x 135mm",
-        "smokeTimeMin": 50,
-        "priceEUR": null,
-        "url": null
-      },
-      {
-        "name": "Open Eagle",
-        "format": "54 x 150mm",
-        "smokeTimeMin": 60,
-        "priceEUR": null,
-        "url": null
-      }
-    ],
-    "priceUrl": "https://havana-cigar-shop.com/proizvod/montecristo-edmundo-25/"
-  },
-  {
     "id": "cig-montecristo-especial-no-2",
     "brand": "Montecristo",
     "line": "Especial No.2",
@@ -17097,13 +16697,6 @@
     ],
     "vitolas": [
       {
-        "name": "Robusto",
-        "format": "50 x 127mm",
-        "smokeTimeMin": 50,
-        "priceEUR": 9.2,
-        "url": "https://humidor.hr/hr/proizvod/oliva-serie-o-robusto-5-x-50/"
-      },
-      {
         "name": "Serie O Robusto",
         "format": "50 x 127mm",
         "smokeTimeMin": 50,
@@ -17114,13 +16707,6 @@
         "name": "Tubos",
         "format": "50 x 152mm",
         "smokeTimeMin": 50,
-        "priceEUR": 13.4,
-        "url": "https://humidor.hr/hr/proizvod/oliva-serie-o-tubos-6-x-50/"
-      },
-      {
-        "name": "O Tubos",
-        "format": "50 x 152mm",
-        "smokeTimeMin": 55,
         "priceEUR": 13.4,
         "url": "https://humidor.hr/hr/proizvod/oliva-serie-o-tubos-6-x-50/"
       },
@@ -17222,14 +16808,14 @@
         "format": "50 x 127mm",
         "smokeTimeMin": 50,
         "priceEUR": 9.2,
-        "url": "https://humidor.hr/hr/proizvod/oliva-serie-o-robusto-5-x-50/"
+        "url": null
       },
       {
         "name": "Serie V Double Robusto",
         "format": "54 x 127mm",
         "smokeTimeMin": 50,
         "priceEUR": 8.3,
-        "url": "https://humidor.hr/hr/proizvod/oliva-serie-g-double-robusto-5-x-54/"
+        "url": null
       },
       {
         "name": "Belicoso",
@@ -17316,7 +16902,7 @@
         "format": "50 x 127mm",
         "smokeTimeMin": 50,
         "priceEUR": 9.2,
-        "url": "https://humidor.hr/hr/proizvod/oliva-serie-o-robusto-5-x-50/"
+        "url": null
       },
       {
         "name": "Serie V Melanio Figurado",
@@ -19219,13 +18805,6 @@
         "smokeTimeMin": 50,
         "priceEUR": 40.5,
         "url": "https://havana-cigar-shop.com/proizvod/partagas-serie-p-no-2-25/"
-      },
-      {
-        "name": "Serie P No. 2",
-        "format": "52 x 156mm",
-        "smokeTimeMin": 70,
-        "priceEUR": 26.0,
-        "url": "https://humidor.hr/hr/proizvod/partagas-serie-d-no-4-4-7-8-x-50/"
       }
     ],
     "priceUrl": "https://havana-cigar-shop.com/proizvod/partagas-serie-p-no-2-25/",
@@ -19374,50 +18953,6 @@
     "priceUrl": "https://humidor.hr/hr/proizvod/partagas-serie-d-no-4-4-7-8-x-50/"
   },
   {
-    "id": "cig-partagas-serie-p-no-2",
-    "brand": "Partagás",
-    "line": "Serie P No.2",
-    "vitola": "P No.2",
-    "format": "—",
-    "country": "Kuba",
-    "wrapper": "Habano",
-    "strength": 4,
-    "body": 5,
-    "flavorTags": [
-      "zemljano",
-      "papar",
-      "koza",
-      "kava"
-    ],
-    "smokeTimeMin": 45,
-    "priceEUR": 40.5,
-    "priceApprox": false,
-    "availabilityHR": [
-      "Havana Shop",
-      "The Humidor"
-    ],
-    "notes": {
-      "hr": "Habano wrapper (Kuba); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
-      "en": "Habano wrapper (Kuba); balanced, medium in strength. Notes of cedar, spice, leather."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "P No.2",
-        "format": "—",
-        "smokeTimeMin": 45,
-        "priceEUR": 40.5,
-        "url": "https://havana-cigar-shop.com/proizvod/partagas-serie-p-no-2-25/"
-      }
-    ],
-    "priceUrl": "https://havana-cigar-shop.com/proizvod/partagas-serie-p-no-2-25/"
-  },
-  {
     "id": "cig-partagas-shorts",
     "brand": "Partagás",
     "line": "Shorts / Serie E",
@@ -19468,7 +19003,7 @@
         "format": "—",
         "smokeTimeMin": 45,
         "priceEUR": 20.1,
-        "url": "https://havana-cigar-shop.com/proizvod/partagas-short-25/"
+        "url": null
       }
     ],
     "priceApprox": false,
@@ -20507,71 +20042,6 @@
     "profileEstimated": true
   },
   {
-    "id": "cig-plasencia-alma-del-campo",
-    "brand": "Plasencia",
-    "line": "Alma del Campo / Reserva Original",
-    "vitola": "Guajiro Robusto Gordo",
-    "format": "54 x 140mm",
-    "country": "Nikaragva",
-    "wrapper": "Nicaragua",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [
-      "zemljano",
-      "citrus",
-      "drvo",
-      "kremasto"
-    ],
-    "smokeTimeMin": 55,
-    "priceEUR": 16.6,
-    "priceApprox": false,
-    "availabilityHR": [
-      "Havana Shop",
-      "The Humidor"
-    ],
-    "notes": {
-      "hr": "Srednja Plasencia linija — organski duhan, svjetliji zemljani profil.",
-      "en": "Plasencia's medium line — organic tobacco, brighter earthy profile."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Robusto",
-        "format": "—",
-        "smokeTimeMin": 45,
-        "priceEUR": 12.1,
-        "url": "https://havana-cigar-shop.com/proizvod/plasencia-reserva-original-robusto-10/"
-      },
-      {
-        "name": "Corona",
-        "format": "—",
-        "smokeTimeMin": 45,
-        "priceEUR": 11.9,
-        "url": "https://havana-cigar-shop.com/proizvod/plasencia-reserva-original-corona-10/"
-      },
-      {
-        "name": "Guajiro Robusto Gordo",
-        "format": "54 x 140mm",
-        "smokeTimeMin": 55,
-        "priceEUR": 16.6,
-        "url": "https://humidor.hr/en/proizvod/plasencia-alma-del-campo-guajiro-robusto-gordo-5-1-2-x-54/"
-      },
-      {
-        "name": "Sendero Toro Gordo",
-        "format": "56 x 152mm",
-        "smokeTimeMin": 60,
-        "priceEUR": 17.7,
-        "url": "https://humidor.hr/en/proizvod/plasencia-alma-del-campo-sendero-toro-gordo-6-x-56/"
-      }
-    ],
-    "priceUrl": "https://humidor.hr/en/proizvod/plasencia-alma-del-campo-guajiro-robusto-gordo-5-1-2-x-54/"
-  },
-  {
     "id": "cig-plasencia-cosecha-146-san-agustin-torpedo-6-1-4-x-52",
     "brand": "Plasencia",
     "line": "Cosecha 146 San Agustin Torpedo 6 1/4 X 52",
@@ -20982,96 +20452,6 @@
       }
     ],
     "priceUrl": "https://havana-cigar-shop.com/proizvod/plasencia-reserva-original-toro-10/",
-    "profileEstimated": true
-  },
-  {
-    "id": "cig-plasencia-reserva-original-cortes",
-    "brand": "Plasencia",
-    "line": "Reserva Original Cortes",
-    "vitola": "Original Cortes",
-    "format": "—",
-    "country": "Nikaragva",
-    "wrapper": "—",
-    "strength": 3,
-    "body": 4,
-    "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
-    ],
-    "smokeTimeMin": 45,
-    "priceEUR": 14.5,
-    "priceApprox": false,
-    "availabilityHR": [
-      "Havana Shop",
-      "The Humidor"
-    ],
-    "notes": {
-      "hr": "— wrapper (Nikaragva); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
-      "en": "— wrapper (Nikaragva); balanced, medium in strength. Notes of cedar, spice, leather."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Original Cortes",
-        "format": "—",
-        "smokeTimeMin": 45,
-        "priceEUR": 14.5,
-        "url": "https://havana-cigar-shop.com/proizvod/plasencia-reserva-original-cortes-10/"
-      }
-    ],
-    "priceUrl": "https://havana-cigar-shop.com/proizvod/plasencia-reserva-original-cortes-10/",
-    "profileEstimated": true
-  },
-  {
-    "id": "cig-plasencia-reserva-original-pyramide",
-    "brand": "Plasencia",
-    "line": "Reserva Original Pyramide",
-    "vitola": "Original Pyramide",
-    "format": "—",
-    "country": "Nikaragva",
-    "wrapper": "—",
-    "strength": 3,
-    "body": 4,
-    "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
-    ],
-    "smokeTimeMin": 45,
-    "priceEUR": 13.9,
-    "priceApprox": false,
-    "availabilityHR": [
-      "Havana Shop",
-      "The Humidor"
-    ],
-    "notes": {
-      "hr": "— wrapper (Nikaragva); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
-      "en": "— wrapper (Nikaragva); balanced, medium in strength. Notes of cedar, spice, leather."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Original Pyramide",
-        "format": "—",
-        "smokeTimeMin": 45,
-        "priceEUR": 13.9,
-        "url": "https://havana-cigar-shop.com/proizvod/plasencia-reserva-original-pyramide-10/"
-      }
-    ],
-    "priceUrl": "https://havana-cigar-shop.com/proizvod/plasencia-reserva-original-pyramide-10/",
     "profileEstimated": true
   },
   {
@@ -24338,13 +23718,6 @@
     ],
     "vitolas": [
       {
-        "name": "Trinidad Esmeralda",
-        "format": "—",
-        "smokeTimeMin": 45,
-        "priceEUR": 74.0,
-        "url": "https://havana-cigar-shop.com/proizvod/trinidad-esmeralda-12/"
-      },
-      {
         "name": "Esmeralda",
         "format": "—",
         "smokeTimeMin": 50,
@@ -24608,7 +23981,7 @@
   {
     "id": "cig-trinidad-vigia",
     "brand": "Trinidad",
-    "line": "Vigía / Esmeralda",
+    "line": "Vigía",
     "vitola": "Esmeralda",
     "format": "53 x 145mm",
     "country": "Kuba",
@@ -24652,20 +24025,6 @@
         "smokeTimeMin": 45,
         "priceEUR": 65.7,
         "url": "https://havana-cigar-shop.com/proizvod/trinidad-vigia-12/"
-      },
-      {
-        "name": "Trinidad Esmeralda",
-        "format": "—",
-        "smokeTimeMin": 45,
-        "priceEUR": 74.0,
-        "url": "https://havana-cigar-shop.com/proizvod/trinidad-esmeralda-12/"
-      },
-      {
-        "name": "Esmeralda",
-        "format": "53 x 145mm",
-        "smokeTimeMin": 55,
-        "priceEUR": null,
-        "url": null
       },
       {
         "name": "Extra",
@@ -25531,45 +24890,6 @@
       }
     ],
     "priceUrl": "https://havana-cigar-shop.com/proizvod/a-fuente-rosado-magnum-r-52-25/"
-  },
-  {
-    "id": "cig-trinidad-vigia-12",
-    "brand": "Trinidad",
-    "line": "Vigia",
-    "vitola": "Trinidad Vigia/12*",
-    "format": "—",
-    "country": "Kuba",
-    "wrapper": "Habano",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [],
-    "smokeTimeMin": 45,
-    "priceEUR": 65.7,
-    "priceApprox": false,
-    "availabilityHR": [
-      "Havana Shop",
-      "The Humidor"
-    ],
-    "notes": {
-      "hr": "Sinkronizirano iz HR trgovina — Vigia/12*.",
-      "en": ""
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Trinidad Vigia/12*",
-        "format": "—",
-        "smokeTimeMin": 45,
-        "priceEUR": 65.7,
-        "url": "https://havana-cigar-shop.com/proizvod/trinidad-vigia-12-2/"
-      }
-    ],
-    "priceUrl": "https://havana-cigar-shop.com/proizvod/trinidad-vigia-12-2/"
   },
   {
     "id": "cig-trinidad-coloniales",
