@@ -368,6 +368,25 @@ def product_dims(product_name: str, details: dict | None = None) -> tuple[int | 
     return r if ring is None else ring, mm if length_mm is None else length_mm
 
 
+WRAPPER_HINTS = (
+    "habano",
+    "brazil",
+    "brazilian",
+    "connecticut",
+    "maduro",
+    "broadleaf",
+    "corojo",
+    "oscuro",
+    "claro",
+    "hybrid",
+)
+
+
+def wrapper_hints(text: str) -> set[str]:
+    low = norm(text)
+    return {h for h in WRAPPER_HINTS if h in low}
+
+
 def match_vitola_in_cigar(
     cigar: dict,
     product_name: str,
@@ -381,14 +400,37 @@ def match_vitola_in_cigar(
         return None
     want = vitola_name_key(vitola_from_product(product_name, brand), brand)
     product_low = norm(product_name)
-    for v in vitolas:
-        if vitola_name_key(str(v.get("name") or ""), brand) == want:
-            return v
-    # Substring match only when exactly one vitola qualifies (avoid Habano/Brazil collisions).
+    product_hints = wrapper_hints(product_low)
+
+    def compatible(v: dict) -> bool:
+        vn = vitola_name_key(str(v.get("name") or ""), brand)
+        vh = wrapper_hints(vn)
+        if not product_hints:
+            return True
+        if vh & product_hints:
+            return True
+        # Product has a wrapper cue the vitola contradicts (Habano vs Brazil).
+        if vh and not (vh & product_hints):
+            return False
+        return True
+
+    exact = [
+        v
+        for v in vitolas
+        if vitola_name_key(str(v.get("name") or ""), brand) == want and compatible(v)
+    ]
+    if len(exact) == 1:
+        return exact[0]
+    if len(exact) > 1:
+        hinted = [v for v in exact if wrapper_hints(str(v.get("name") or "")) & product_hints]
+        if len(hinted) == 1:
+            return hinted[0]
+
     contains_hits = [
         v
         for v in vitolas
-        if want
+        if compatible(v)
+        and want
         and (
             want in vitola_name_key(str(v.get("name") or ""), brand)
             or vitola_name_key(str(v.get("name") or ""), brand) in want
@@ -401,6 +443,8 @@ def match_vitola_in_cigar(
     if ring is not None and mm is not None:
         size_hits = []
         for v in vitolas:
+            if not compatible(v):
+                continue
             vr, vm = parse_format_size(v.get("format") if isinstance(v.get("format"), str) else None)
             if vr == ring and vm is not None and abs(vm - mm) <= 8:
                 size_hits.append(v)
@@ -410,7 +454,7 @@ def match_vitola_in_cigar(
             overlap = [v for v in size_hits if v in contains_hits]
             if len(overlap) == 1:
                 return overlap[0]
-    if len(vitolas) == 1:
+    if len(vitolas) == 1 and compatible(vitolas[0]):
         return vitolas[0]
     return None
 

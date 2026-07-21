@@ -83,6 +83,31 @@ class TestAliasesAndMatch(unittest.TestCase):
         assert v is not None
         self.assertEqual(v["name"], "Robusto")
 
+    def test_wrapper_hint_blocks_brazil_vs_habano(self) -> None:
+        cigar = {
+            "id": "cig-aj-fernandez-dias-de-gloria",
+            "brand": "AJ Fernandez",
+            "line": "Días de Gloria",
+            "vitolas": [
+                {"name": "Robusto", "format": "52 x 140mm"},
+                {"name": "Brazil Toro", "format": "54 x 165mm"},
+            ],
+        }
+        habano = match_vitola_in_cigar(
+            cigar,
+            "AJ Fernandez Dias De Gloria Habano Toro (6×56)",
+            brand="AJ Fernandez",
+        )
+        self.assertIsNone(habano)
+        brazil = match_vitola_in_cigar(
+            cigar,
+            "AJ Fernandez Dias De Gloria Brazil Toro (6.5×54)",
+            brand="AJ Fernandez",
+        )
+        self.assertIsNotNone(brazil)
+        assert brazil is not None
+        self.assertEqual(brazil["name"], "Brazil Toro")
+
     def test_unique_vitolas(self) -> None:
         cigar = {
             "vitolas": [
