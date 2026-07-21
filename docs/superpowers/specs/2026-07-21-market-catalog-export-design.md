@@ -1,7 +1,7 @@
-# Unified cigar catalog
+# Unified cigar catalog (ALL + region filters)
 
 **Datum:** 2026-07-21  
-**Cilj:** jedan JSON sa **svim info vezanim uz naše cigare** — pairing iz `cigars.json` + shop cijene/linkovi/detalji (W/B/F) iz HR/EU/USA.
+**Cilj:** jedan JSON sa **svim cigarama** (app katalog + svi shop artikli), s filterom `ALL | HR | EU | USA`.
 
 ## Output
 
@@ -9,38 +9,37 @@
 
 ```bash
 python3 app/scripts/build-market-catalog.py
-# opcionalno i unmapped shop artikle (veliki file):
-python3 app/scripts/build-market-catalog.py --include-unmapped --compact
 ```
+
+## Filter
+
+Svaka stavka u `cigars[]` ima:
+
+```json
+"regions": ["HR", "EU"],
+"filters": { "ALL": true, "HR": true, "EU": true, "USA": false }
+```
+
+Korištenje:
+
+```js
+const filter = "HR"; // ili ALL | EU | USA
+const rows = data.cigars.filter((c) => c.filters[filter]);
+```
+
+Brojevi po filteru: `filters.counts` / `summary.countsByFilter`.
 
 ## Struktura
 
-```json
-{
-  "generatedAt": "...",
-  "schemaVersion": 1,
-  "summary": { "cigars", "vitolas", "vitolasWithOffers", "vitolasWithFullWBF", "duplicateVitolas", "shops" },
-  "shops": [{ "id", "name", "region", "itemCount", "withFullWBF", "scrapedAt" }],
-  "cigars": [
-    {
-      "id", "brand", "line", "country",
-      "wrapper", "binder", "filler", "origin", "details",
-      "strength", "body", "flavorTags", "smokeTimeMin",
-      "priceEUR", "priceUrl", "markets", "availabilityHR", "notes",
-      "vitolas": [
-        {
-          "name", "format", "parsedSize", "smokeTimeMin", "priceEUR", "url",
-          "details": { "wrapper", "binder", "filler", "ringGauge", "..." },
-          "offers": [{ "sourceShopId", "region", "amount", "currency", "url", "details", "..." }],
-          "pricesByRegion": { "HR": [...], "EU": [...], "USA": [...] },
-          "isDuplicateAcrossSources", "duplicateSources"
-        }
-      ]
-    }
-  ]
-}
-```
+| Ključ | Sadržaj |
+|-------|---------|
+| `filters` | ALL/HR/EU/USA + counts + howToFilter |
+| `shops[]` | meta po shopu |
+| `cigars[]` | **sve** jedinstvene cigare/vitole |
+| `unmappedCrossShopDuplicates[]` | isti proizvod u ≥2 shopa (van kataloga) |
 
-## Matching
+`cigars[].kind`:
+- `catalog` / `catalog-entry` — u `cigars.json` (+ pairing)
+- `shop` — samo iz shop scrape-a
 
-`cigar_shop_match.py` (isti proces kao `sync-hr-shops` / `dedupe-data`).
+Svaki unos: brand/line/vitola, details (W/B/F), offers[], pricesByRegion, shops, pairing (ako postoji).

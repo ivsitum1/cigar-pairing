@@ -47,7 +47,9 @@ from cigar_shop_match import (  # noqa: E402
 from shop_scrape.http import iso_utc_now  # noqa: E402
 
 
-SCHEMA_VERSION = 1
+SCHEMA_VERSION = 2
+
+REGION_FILTERS = ("HR", "EU", "USA")
 
 SHOP_REGION = {
     "humidor_hr": "HR",
@@ -410,24 +412,48 @@ def build_catalog(cigars: list[dict], raw_rows: list[dict]) -> tuple[list[dict],
     return catalog, unmapped, meta
 
 
+def resolve_regions(offers: list[dict], markets: list | None = None) -> list[str]:
+    """Regions for HR/EU/USA filter (ALL = no region restriction)."""
+    regs: set[str] = set()
+    for o in offers:
+        r = o.get("region")
+        if r in REGION_FILTERS:
+            regs.add(r)
+    for m in markets or []:
+        if m in REGION_FILTERS:
+            regs.add(m)
+    return sorted(regs)
+
+
 def build_products(catalog: list[dict], unmapped: list[dict]) -> list[dict]:
-    """Flat unique product rows (catalog vitolas + unmapped groups)."""
+    """Flat unique cigar rows (catalog vitolas + unmapped shop groups)."""
     products: list[dict] = []
     for c in catalog:
+        markets = c.get("markets") or []
         for v in c.get("vitolas") or []:
             offers = v.get("offers") or []
+            regions = resolve_regions(offers, markets)
             products.append(
                 {
                     "kind": "catalog",
                     "id": f"{c.get('id')}::{vitola_name_key(str(v.get('name') or ''), str(c.get('brand') or ''))}",
                     "catalogId": c.get("id"),
+                    "inCatalog": True,
                     "brand": c.get("brand"),
                     "line": c.get("line"),
                     "vitola": v.get("name"),
+                    "name": f"{c.get('brand')} {c.get('line')} {v.get('name')}".strip(),
                     "format": v.get("format"),
                     "parsedSize": v.get("parsedSize"),
                     "country": c.get("country"),
-                    "markets": c.get("markets") or [],
+                    "markets": markets,
+                    "regions": regions,
+                    "filters": {
+                        "ALL": True,
+                        "HR": "HR" in regions,
+                        "EU": "EU" in regions,
+                        "USA": "USA" in regions,
+                    },
                     "pairing": {
                         "strength": c.get("strength"),
                         "body": c.get("body"),
@@ -442,27 +468,36 @@ def build_products(catalog: list[dict], unmapped: list[dict]) -> list[dict]:
                     "details": merge_details(v.get("details"), c.get("details")),
                     "offers": offers,
                     "pricesByRegion": v.get("pricesByRegion") or prices_by_region(offers),
-                    "regions": sorted({o.get("region") for o in offers if o.get("region")}),
                     "shops": sorted({o.get("sourceShopId") for o in offers if o.get("sourceShopId")}),
                     "isDuplicateAcrossSources": bool(v.get("isDuplicateAcrossSources")),
                     "duplicateSources": v.get("duplicateSources") or [],
                 }
             )
-        # entry-level offers without a specific vitola
         if c.get("entryOffers"):
             offers = c["entryOffers"]
+            regions = resolve_regions(offers, markets)
+            shops = sorted({o.get("sourceShopId") for o in offers if o.get("sourceShopId")})
             products.append(
                 {
                     "kind": "catalog-entry",
                     "id": f"{c.get('id')}::entry",
                     "catalogId": c.get("id"),
+                    "inCatalog": True,
                     "brand": c.get("brand"),
                     "line": c.get("line"),
                     "vitola": c.get("defaultVitola"),
+                    "name": f"{c.get('brand')} {c.get('line')}".strip(),
                     "format": c.get("format"),
                     "parsedSize": None,
                     "country": c.get("country"),
-                    "markets": c.get("markets") or [],
+                    "markets": markets,
+                    "regions": regions,
+                    "filters": {
+                        "ALL": True,
+                        "HR": "HR" in regions,
+                        "EU": "EU" in regions,
+                        "USA": "USA" in regions,
+                    },
                     "pairing": {
                         "strength": c.get("strength"),
                         "body": c.get("body"),
@@ -477,39 +512,46 @@ def build_products(catalog: list[dict], unmapped: list[dict]) -> list[dict]:
                     "details": c.get("details"),
                     "offers": offers,
                     "pricesByRegion": prices_by_region(offers),
-                    "regions": sorted({o.get("region") for o in offers if o.get("region")}),
-                    "shops": sorted({o.get("sourceShopId") for o in offers if o.get("sourceShopId")}),
-                    "isDuplicateAcrossSources": len({o.get("sourceShopId") for o in offers}) >= 2,
-                    "duplicateSources": sorted({o.get("sourceShopId") for o in offers if o.get("sourceShopId")})
-                    if len({o.get("sourceShopId") for o in offers}) >= 2
-                    else [],
+                    "shops": shops,
+                    "isDuplicateAcrossSources": len(shops) >= 2,
+                    "duplicateSources": shops if len(shops) >= 2 else [],
                 }
             )
 
     for u in unmapped:
         offers = u.get("offers") or []
+        regions = resolve_regions(offers)
+        shops = u.get("duplicateSources") or sorted(
+            {o.get("sourceShopId") for o in offers if o.get("sourceShopId")}
+        )
         products.append(
             {
-                "kind": "unmapped",
-                "id": f"unmapped::{u.get('dedupeKey')}",
+                "kind": "shop",
+                "id": f"shop::{u.get('dedupeKey')}",
                 "catalogId": None,
+                "inCatalog": False,
                 "brand": u.get("brand"),
                 "line": u.get("line"),
                 "vitola": u.get("vitola"),
+                "name": u.get("name"),
                 "format": None,
                 "parsedSize": None,
                 "country": (u.get("details") or {}).get("origin") if isinstance(u.get("details"), dict) else None,
-                "markets": sorted({o.get("region") for o in offers if o.get("region")}),
+                "markets": regions,
+                "regions": regions,
+                "filters": {
+                    "ALL": True,
+                    "HR": "HR" in regions,
+                    "EU": "EU" in regions,
+                    "USA": "USA" in regions,
+                },
                 "pairing": None,
                 "details": u.get("details"),
                 "offers": offers,
                 "pricesByRegion": u.get("pricesByRegion") or prices_by_region(offers),
-                "regions": sorted({o.get("region") for o in offers if o.get("region")}),
-                "shops": u.get("duplicateSources")
-                or sorted({o.get("sourceShopId") for o in offers if o.get("sourceShopId")}),
+                "shops": shops,
                 "isDuplicateAcrossSources": bool(u.get("isDuplicateAcrossSources")),
                 "duplicateSources": u.get("duplicateSources") or [],
-                "name": u.get("name"),
                 "dedupeKey": u.get("dedupeKey"),
             }
         )
@@ -519,10 +561,20 @@ def build_products(catalog: list[dict], unmapped: list[dict]) -> list[dict]:
             p.get("brand") or "",
             p.get("line") or "",
             p.get("vitola") or "",
+            p.get("name") or "",
             p.get("id") or "",
         )
     )
     return products
+
+
+def counts_by_filter(products: list[dict]) -> dict[str, int]:
+    return {
+        "ALL": len(products),
+        "HR": sum(1 for p in products if (p.get("filters") or {}).get("HR")),
+        "EU": sum(1 for p in products if (p.get("filters") or {}).get("EU")),
+        "USA": sum(1 for p in products if (p.get("filters") or {}).get("USA")),
+    }
 
 
 def group_unmapped_cross_shop(unmapped: list[dict]) -> list[dict]:
@@ -581,32 +633,28 @@ def summarize(catalog: list[dict], unmapped: list[dict], products: list[dict], s
         "vitolasWithFullWBF": with_wbf,
         "duplicateVitolas": duplicates,
         "products": len(products),
-        "productsCatalog": sum(1 for p in products if p.get("kind") == "catalog"),
-        "productsUnmapped": sum(1 for p in products if p.get("kind") == "unmapped"),
+        "productsCatalog": sum(1 for p in products if p.get("kind") in ("catalog", "catalog-entry")),
+        "productsShopOnly": sum(1 for p in products if p.get("kind") == "shop"),
         "unmappedShopItems": len(unmapped),
         "unmappedOfferRows": sum(len(u.get("offers") or []) for u in unmapped),
         "unmappedByRegion": by_region,
         "unmappedCrossShopDuplicateGroups": sum(1 for u in unmapped if u.get("isDuplicateAcrossSources")),
         "mergedCatalogLines": meta.get("mergedCatalogLines", 0),
+        "countsByFilter": counts_by_filter(products),
     }
 
 
 def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(
-        description="Build unified cigar JSON (pairing + all shop info for our cigars)"
+        description="Build unified cigar JSON (all cigars + HR/EU/USA/ALL filters)"
     )
     p.add_argument("--cigars", default=str(DATA / "cigars.json"))
     p.add_argument("--raw-dir", default=str(OUT_DIR))
     p.add_argument("--out", default=str(OUT_DIR / "cigar_unified_catalog.json"))
     p.add_argument(
-        "--include-unmapped",
+        "--pretty",
         action="store_true",
-        help="Also include shop products not in cigars.json (much larger)",
-    )
-    p.add_argument(
-        "--compact",
-        action="store_true",
-        help="Compact JSON (no indent)",
+        help="Pretty-print JSON (larger). Default is compact.",
     )
     p.add_argument(
         "--write-merged-cigars",
@@ -623,45 +671,52 @@ def main() -> None:
     raw_rows, shops = load_raw_shops(Path(args.raw_dir))
     catalog, unmapped, meta = build_catalog(cigars, raw_rows)
     products = build_products(catalog, unmapped)
-    cigar_products = [p for p in products if p.get("kind") in ("catalog", "catalog-entry")]
     unmapped_dupes = group_unmapped_cross_shop(unmapped)
     summary = summarize(catalog, unmapped, products, shops, meta)
-    summary["cigars"] = len(catalog)
-    summary["cigarProducts"] = len(cigar_products)
+    filter_counts = summary["countsByFilter"]
 
-    # Primary deliverable: our cigars with every pairing + shop field attached.
-    out: dict = {
+    out = {
         "generatedAt": iso_utc_now(),
         "schemaVersion": SCHEMA_VERSION,
+        "filters": {
+            "values": ["ALL", "HR", "EU", "USA"],
+            "description": {
+                "ALL": "Sve cigare (katalog + svi shopovi)",
+                "HR": "Dostupno u HR shopovima (Humidor, Havana) ili markets sadrži HR",
+                "EU": "Dostupno u EU (Cigarworld) ili markets sadrži EU",
+                "USA": "Dostupno u USA (Holt's, Cigars Daily) ili markets sadrži USA",
+            },
+            "howToFilter": "Uzmi cigars[] gdje filters[filter] === true. Za ALL uvijek true.",
+            "counts": filter_counts,
+        },
         "summary": {
-            "cigars": len(catalog),
-            "vitolas": summary["catalogVitolas"],
+            "totalCigars": filter_counts["ALL"],
+            "inAppCatalog": summary["productsCatalog"],
+            "shopOnly": summary["productsShopOnly"],
+            "catalogLines": summary["catalogLines"],
+            "catalogVitolas": summary["catalogVitolas"],
             "vitolasWithOffers": summary["vitolasWithOffers"],
             "vitolasWithFullWBF": summary["vitolasWithFullWBF"],
             "duplicateVitolas": summary["duplicateVitolas"],
+            "crossShopUnmappedGroups": summary["unmappedCrossShopDuplicateGroups"],
             "shops": summary["shops"],
             "shopItems": summary["shopItems"],
-            "mergedCatalogLines": summary["mergedCatalogLines"],
+            "countsByFilter": filter_counts,
         },
         "shops": shops,
-        "cigars": catalog,
+        "cigars": products,
+        "unmappedCrossShopDuplicates": unmapped_dupes,
     }
-    if args.include_unmapped:
-        out["summary"]["unmappedShopItems"] = summary["unmappedShopItems"]
-        out["summary"]["unmappedCrossShopDuplicateGroups"] = summary[
-            "unmappedCrossShopDuplicateGroups"
-        ]
-        out["unmappedShopItems"] = unmapped
-        out["unmappedCrossShopDuplicates"] = unmapped_dupes
 
     out_path = Path(args.out)
     out_path.parent.mkdir(parents=True, exist_ok=True)
-    if args.compact:
-        payload = json.dumps(out, ensure_ascii=False, separators=(",", ":"))
+    if args.pretty:
+        payload = json.dumps(out, ensure_ascii=False, indent=2) + "\n"
     else:
-        payload = json.dumps(out, ensure_ascii=False, indent=2)
-    out_path.write_text(payload + ("\n" if not args.compact else ""), encoding="utf-8")
+        payload = json.dumps(out, ensure_ascii=False, separators=(",", ":"))
+    out_path.write_text(payload, encoding="utf-8")
     print(json.dumps(out["summary"], ensure_ascii=False, indent=2), flush=True)
+    print(json.dumps(out["filters"]["counts"], ensure_ascii=False, indent=2), flush=True)
     print(f"wrote {out_path} ({out_path.stat().st_size // 1024} KiB)", flush=True)
 
     if args.write_merged_cigars:
