@@ -4,3 +4,4 @@ dev-dist
 *.local
 .DS_Store
 tsconfig.tsbuildinfo
+scripts/output/cigar_unified_catalog.json

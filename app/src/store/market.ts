@@ -1,23 +1,26 @@
-// Odabrano tržište cigara (HR/EU/USA/WW) — dijeljeno reaktivno stanje.
-// Svi prikazi cijena/linkova cigara prate ovo, da cijena i trgovina odgovaraju.
+// Odabrani filter regije za cigare (ALL/HR/EU/USA) — dijeljeno reaktivno stanje.
+// Svi prikazi cijena/linkova cigara prate ovo, da cijena i trgovina odgovaraju
+// odabranoj regiji. Zadano "ALL" = bez filtera (prikaži sve).
 import { useSyncExternalStore } from "react";
-import type { Market } from "../types";
+import type { RegionFilter } from "../types";
 
 const KEY = "market";
 const listeners = new Set<() => void>();
 
-let current: Market = ((): Market => {
+let current: RegionFilter = ((): RegionFilter => {
   const v = localStorage.getItem(KEY);
-  return v === "HR" || v === "EU" || v === "USA" || v === "WW" ? v : "HR";
+  if (v === "HR" || v === "EU" || v === "USA" || v === "ALL") return v;
+  // stara vrijednost "WW" (Svijet) = bez filtera
+  return "ALL";
 })();
 
-export function setMarket(m: Market) {
+export function setMarket(m: RegionFilter) {
   current = m;
   localStorage.setItem(KEY, m);
   listeners.forEach((l) => l());
 }
 
-export function useMarket(): Market {
+export function useMarket(): RegionFilter {
   return useSyncExternalStore(
     (cb) => {
       listeners.add(cb);

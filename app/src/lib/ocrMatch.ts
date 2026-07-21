@@ -69,35 +69,50 @@ export function matchOcrText(
   const textTokens = tokenize(text).filter((t) => !STOP.has(t));
   if (textTokens.length === 0) return null;
 
-  // faza 1: ako kandidati nose brend, suzi pool na najbolje pogodjeni brend
+  const bestIn = (list: OcrCandidate[]) => {
+    let best: OcrCandidate | null = null;
+    let bestScore = 0;
+    for (const c of list) {
+      const candTokens = tokenize(c.label).filter((t) => !STOP.has(t));
+      if (candTokens.length === 0) continue;
+      const score = scoreTokens(candTokens, textTokens);
+      if (score > bestScore) {
+        best = c;
+        bestScore = score;
+      }
+    }
+    return { best, bestScore };
+  };
+
+  // faza 1: suzi pool na najbolje pogodjeni brend. Kod IZJEDNACENJA brend-skora
+  // (npr. vise marki dijeli genericki token "habana") biraj brend cija linija
+  // najbolje poklapa — tako "Partagás Serie D" pobjedjuje "La Perla Habana".
   let pool = candidates;
   const brands = [...new Set(candidates.map((c) => c.brand).filter((b): b is string => !!b))];
   if (brands.length > 1) {
-    let bestBrand: string | null = null;
     let bestBrandScore = 0;
     for (const b of brands) {
       const s = scoreTokens(tokenize(b).filter((t) => !STOP.has(t)), textTokens);
-      if (s > bestBrandScore) {
-        bestBrand = b;
-        bestBrandScore = s;
-      }
+      if (s > bestBrandScore) bestBrandScore = s;
     }
-    if (bestBrand && bestBrandScore >= 2) {
+    if (bestBrandScore >= 2) {
+      const tied = brands.filter(
+        (b) => scoreTokens(tokenize(b).filter((t) => !STOP.has(t)), textTokens) === bestBrandScore,
+      );
+      let bestBrand = tied[0];
+      let bestBrandLine = -1;
+      for (const b of tied) {
+        const s = bestIn(candidates.filter((c) => c.brand === b)).bestScore;
+        if (s > bestBrandLine) {
+          bestBrandLine = s;
+          bestBrand = b;
+        }
+      }
       pool = candidates.filter((c) => c.brand === bestBrand);
     }
   }
 
-  // faza 2: najbolja linija unutar poola
-  let best: OcrCandidate | null = null;
-  let bestScore = 0;
-  for (const c of pool) {
-    const candTokens = tokenize(c.label).filter((t) => !STOP.has(t));
-    if (candTokens.length === 0) continue;
-    const score = scoreTokens(candTokens, textTokens);
-    if (score > bestScore) {
-      best = c;
-      bestScore = score;
-    }
-  }
+  // faza 2: najbolja linija unutar suzenog poola
+  const { best, bestScore } = bestIn(pool);
   return best && bestScore >= 2 ? { candidate: best, score: bestScore } : null;
 }

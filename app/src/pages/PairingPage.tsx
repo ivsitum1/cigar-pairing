@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
-import type { Cigar, Drink, DrinkCategory, Market, PairingResult, Vitola } from "../types";
-import { ALL_DRINKS, CIGARS, cigarById, cigarLinkForMarket, cigarPriceForMarket, drinkById, formatPrice } from "../data";
+import type { Cigar, Drink, DrinkCategory, RegionFilter, PairingResult, Vitola } from "../types";
+import { ALL_DRINKS, CIGARS, cigarById, cigarInRegion, cigarLinkForMarket, cigarPriceForMarket, drinkById, formatPrice } from "../data";
 import { pairCigarsForDrink, pairDrinksForCigar } from "../engine/pairing";
 import { buildPrefs } from "../engine/personal";
 import { curatedPairingOpinion } from "../engine/curatedOpinion";
@@ -20,7 +20,7 @@ import { CustomPairing } from "./CustomPairing";
 
 type Mode = "cigarToDrink" | "drinkToCigar" | "custom";
 type Occasion = "any" | "morning" | "afternoon" | "evening";
-const MARKETS: Market[] = ["HR", "EU", "USA", "WW"];
+const REGION_FILTERS: RegionFilter[] = ["ALL", "HR", "EU", "USA"];
 
 // prilika filtrira pica po punoci: jutro uz kavu/lagane sippere, vecer uz bogate
 const OCCASION_KEEP: Record<Occasion, (d: Drink) => boolean> = {
@@ -102,7 +102,7 @@ export function PairingPage() {
     () =>
       CIGARS.filter(
         (c) =>
-          c.markets.includes(market) &&
+          cigarInRegion(c, market) &&
           !excludedCountries.includes(c.country) &&
           !excludedBrands.includes(c.brand),
       ),
@@ -328,7 +328,7 @@ export function PairingPage() {
         <span className="shrink-0 text-micro uppercase tracking-widest text-dim">
           {t("pair.market")}
         </span>
-        {MARKETS.map((m) => (
+        {REGION_FILTERS.map((m) => (
           <Chip key={m} active={market === m} onClick={() => setMarket(m)}>
             {t(`market.${m}` as StringKey)}
           </Chip>

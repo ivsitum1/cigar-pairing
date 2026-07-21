@@ -1,7 +1,7 @@
 // Custom pairing prostor: ručno izaberi JEDNU cigaru i JEDNO piće -> % slaganja.
 import { useMemo, useState } from "react";
 import type { Cigar, Drink } from "../types";
-import { ALL_DRINKS, CIGARS, formatPrice } from "../data";
+import { ALL_DRINKS, CIGARS, cigarInRegion, formatPrice } from "../data";
 import { scorePairing } from "../engine/pairing";
 import { curatedPairingOpinion } from "../engine/curatedOpinion";
 import { useI18n, STYLE_LABELS, type StringKey } from "../i18n";
@@ -27,7 +27,7 @@ export function CustomPairing({
   const [picking, setPicking] = useState<"cigar" | "drink" | null>("cigar");
 
   const marketCigars = useMemo(
-    () => CIGARS.filter((c) => c.markets.includes(market)),
+    () => CIGARS.filter((c) => cigarInRegion(c, market)),
     [market],
   );
   const drinks = useMemo(() => ALL_DRINKS.filter((d) => d.pairable), []);

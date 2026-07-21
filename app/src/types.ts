@@ -13,6 +13,11 @@ export type DrinkCategory =
 
 export type Market = "HR" | "EU" | "USA" | "WW";
 
+// Regija za kupnju cigara (bez WW — WW je "dostupno globalno" u podacima).
+export type Region = "HR" | "EU" | "USA";
+// Filter u UI-u: "ALL" = bez filtera (prikaži sve), inače konkretna regija.
+export type RegionFilter = "ALL" | Region;
+
 export interface LocalizedText {
   hr: string;
   en: string;
@@ -87,6 +92,15 @@ export interface Cigar {
   priceUrl?: string | null; // izvor cijene / gdje kupiti
   vitolas: Vitola[];
   markets: Market[]; // gdje se moze kupiti
+  // Izravan link na proizvod + cijena po regiji (iz stvarnog scrape-a trgovina).
+  // HR/EU/USA gdje postoji; EU/USA cijena je "od" na razini linije, USD->EUR
+  // konverzija nosi priceApprox. Embargo: kubanke nemaju USA.
+  regionLinks?: Partial<Record<Region, { shop: string; url: string; priceEUR?: number; priceApprox?: boolean }>>;
+  // "market" = generirano iz scrape-a trgovina (build-market-cigars.py), za razliku
+  // od kuriranih unosa; idempotentno regenerirano. Vidi Faza B/C playbook.
+  catalogSource?: "market";
+  formatEstimated?: boolean; // duljina procijenjena iz vitole (shop bez dimenzije)
+  sourceUrls?: string[];
   availabilityHR: string[];
   notes: LocalizedText;
   // Za samplere/gift-packove: popis linija cigara koje pakiranje sadrzi.

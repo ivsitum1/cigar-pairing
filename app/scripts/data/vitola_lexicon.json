@@ -1,0 +1,28 @@
+{
+  "_doc": "Kanonske vitole + sinonimi za determinističku normalizaciju (playbook §4c). Match je case-insensitive na cijele tokene. Redoslijed nebitan; matcher bira najdulji sinonim koji se poklopi. ring/lenMM su za soft-validaciju (ne odbacuju).",
+  "vitolas": {
+    "Petit Corona": { "syn": ["petit corona", "petit coronas", "mareva", "marevas", "petit"], "ring": [40, 44], "lenMM": [110, 132] },
+    "Corona": { "syn": ["corona", "coronas", "cervantes"], "ring": [42, 46], "lenMM": [132, 152] },
+    "Corona Gorda": { "syn": ["corona gorda", "coronas gordas", "grand corona", "gran corona"], "ring": [46, 50], "lenMM": [140, 160] },
+    "Lonsdale": { "syn": ["lonsdale", "lonsdales"], "ring": [42, 44], "lenMM": [152, 175] },
+    "Panetela": { "syn": ["panetela", "panatela", "panetelas"], "ring": [34, 39], "lenMM": [140, 185] },
+    "Lancero": { "syn": ["lancero", "lanceros", "laguito no. 1", "laguito no.1"], "ring": [38, 42], "lenMM": [178, 200] },
+    "Half Corona": { "syn": ["half corona", "half coronas"], "ring": [40, 48], "lenMM": [95, 115] },
+    "Robusto": { "syn": ["robusto", "robustos"], "ring": [48, 54], "lenMM": [114, 140] },
+    "Short Robusto": { "syn": ["short robusto", "rothchild", "rothschild", "petit robusto"], "ring": [48, 54], "lenMM": [95, 118] },
+    "Double Robusto": { "syn": ["double robusto", "gran robusto"], "ring": [52, 56], "lenMM": [130, 145] },
+    "Toro": { "syn": ["toro", "toros", "corona gorda toro"], "ring": [50, 56], "lenMM": [140, 165] },
+    "Gran Toro": { "syn": ["gran toro", "toro gordo", "toro grande"], "ring": [54, 60], "lenMM": [150, 168] },
+    "Gordo": { "syn": ["gordo", "gordito", "gigante", "sixty"], "ring": [58, 70], "lenMM": [140, 178] },
+    "Churchill": { "syn": ["churchill", "churchills"], "ring": [46, 50], "lenMM": [170, 195] },
+    "Double Corona": { "syn": ["double corona", "prominente", "double coronas"], "ring": [48, 52], "lenMM": [190, 215] },
+    "Presidente": { "syn": ["presidente", "president"], "ring": [50, 60], "lenMM": [195, 230] },
+    "Torpedo": { "syn": ["torpedo", "torpedos"], "ring": [50, 56], "lenMM": [140, 168] },
+    "Belicoso": { "syn": ["belicoso", "belicosos"], "ring": [50, 54], "lenMM": [127, 152] },
+    "Piramide": { "syn": ["piramide", "pyramid", "piramides", "pyramide"], "ring": [50, 56], "lenMM": [152, 165] },
+    "Perfecto": { "syn": ["perfecto", "perfectos"], "ring": [40, 60], "lenMM": [110, 178] },
+    "Figurado": { "syn": ["figurado", "figurados", "salomon", "salomones", "diadema"], "ring": [48, 60], "lenMM": [140, 215] },
+    "Petit Panetela": { "syn": ["petit panetela", "petit panatela"], "ring": [32, 38], "lenMM": [100, 130] },
+    "Epicure": { "syn": ["epicure", "epicures"], "ring": [50, 54], "lenMM": [140, 155] }
+  }
+}

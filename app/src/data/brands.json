@@ -1,274 +1,58 @@
 {
- "Cohiba": {
-  "country": "Kuba",
-  "founded": "1966",
+ "1502": {
+  "country": "Nikaragva",
+  "founded": "2012",
   "blurb": {
-   "hr": "Najprestižnija kubanska marka, izvorno stvorena za Fidela Castra i diplomatske darove. Duhan iz odabranih vega El Laguito prolazi dodatnu treću fermentaciju, po čemu je Cohiba prepoznatljiva po kremastoj, travnato-medenoj finoći.",
-   "en": "Cuba's most prestigious marca, originally made for Fidel Castro and as diplomatic gifts. Tobacco from select El Laguito fields undergoes a third fermentation, giving Cohiba its creamy, grassy-honeyed refinement."
+   "hr": "Global Premium Cigars Enriquea Sáncheza; ime nosi po godini 1502., kada je Kolumbo pristao uz obalu Nikaragve. Nikaragvanski puro blendovi (Emerald, Ruby, Black Gold, XO) prepoznatljivi po box-pressu i zatvorenoj nozi koja čuva arome.",
+   "en": "Enrique Sánchez's Global Premium Cigars; named for 1502, the year Columbus reached Nicaragua. Nicaraguan puro blends (Emerald, Ruby, Black Gold, XO) known for their box-press and closed foot that preserves aroma."
   }
  },
- "Montecristo": {
-  "country": "Kuba",
-  "founded": "1935",
+ "5 Vegas": {
+  "country": "Nikaragva",
+  "founded": "—",
   "blurb": {
-   "hr": "Najprodavanija kubanska marka na svijetu, nazvana po romanu Grof Monte Cristo koji se čitao radnicima u tvornici. Klasičan profil kakaa, kave i cedra srednjeg tijela — mjerilo za habanose.",
-   "en": "The world's best-selling Cuban marca, named after The Count of Monte Cristo read aloud to factory rollers. A classic medium-bodied profile of cocoa, coffee and cedar — the habano benchmark."
+   "hr": "5 Vegas — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "5 Vegas — a brand listed in retail shop catalogues (HR/EU/USA)."
   }
  },
- "Montecristo (NW)": {
+ "7-20-4": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "7-20-4 — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "7-20-4 — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "A. Flores": {
   "country": "Dominikanska Republika",
-  "founded": "1990-e",
+  "founded": "—",
   "blurb": {
-   "hr": "Ne-kubanska Montecristo linija (Altadis) za američko tržište — dominikanska i nikaragvanska izdanja, glađa i blaža od kubanske.",
-   "en": "The non-Cuban Montecristo line (Altadis) for the US market — Dominican and Nicaraguan editions, smoother and milder than the Cuban."
+   "hr": "A. Flores — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "A. Flores — a brand listed in retail shop catalogues (HR/EU/USA)."
   }
  },
- "Partagás": {
-  "country": "Kuba",
-  "founded": "1845",
+ "A. Turrent": {
+  "country": "Meksiko",
+  "founded": "—",
   "blurb": {
-   "hr": "Jedna od najstarijih kubanskih marki, poznata po punom, zemljano-paprenom tijelu. Serie D No.4 je definirala moderni robusto format.",
-   "en": "One of Cuba's oldest marcas, famed for full, earthy-peppery body. The Serie D No.4 defined the modern robusto format."
+   "hr": "A. Turrent — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "A. Turrent — a brand listed in retail shop catalogues (HR/EU/USA)."
   }
  },
- "Romeo y Julieta": {
-  "country": "Kuba",
-  "founded": "1875",
-  "blurb": {
-   "hr": "Aromatična, cvjetno-cedrasta marka koju je proslavio Winston Churchill (po njemu i istoimena vitola). Uravnotežena i pristupačna.",
-   "en": "An aromatic, floral-cedar marca made famous by Winston Churchill (the Churchill vitola bears his name). Balanced and approachable."
-  }
- },
- "Romeo y Julieta (NW)": {
+ "Adrian": {
   "country": "Dominikanska Republika",
-  "founded": "1900-e",
+  "founded": "—",
   "blurb": {
-   "hr": "Ne-kubanska Romeo y Julieta za američko tržište — dominikanska izdanja, blaga i pouzdana.",
-   "en": "The non-Cuban Romeo y Julieta for the US market — Dominican editions, mild and reliable."
+   "hr": "Adrian — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Adrian — a brand listed in retail shop catalogues (HR/EU/USA)."
   }
  },
- "Hoyo de Monterrey": {
-  "country": "Kuba",
-  "founded": "1865",
-  "blurb": {
-   "hr": "Marka iz Vuelta Abajo poznata po elegantnim, blagim i kremastim cigarama. Epicure serija je klasik za mirnija poslijepodneva.",
-   "en": "A Vuelta Abajo marca known for elegant, mild, creamy cigars. The Epicure line is a classic for quieter afternoons."
-  }
- },
- "H. Upmann": {
-  "country": "Kuba",
-  "founded": "1844",
-  "blurb": {
-   "hr": "Bankarska kuća koja je postala marka — profinjeni, kremasto-cedrasti profil kave s mlijekom. Half Corona je savršena 'kava cigara'.",
-   "en": "A banking house turned marca — a refined, creamy café-au-lait cedar profile. The Half Corona is the perfect 'coffee cigar'."
-  }
- },
- "Trinidad": {
-  "country": "Kuba",
-  "founded": "1969",
-  "blurb": {
-   "hr": "Nekad ekskluzivni diplomatski dar, danas luksuzna marka finog, medeno-cedrastog profila s laganim začinima.",
-   "en": "Once an exclusive diplomatic gift, now a luxury marca with a fine, honeyed-cedar profile and gentle spice."
-  }
- },
- "Bolívar": {
-  "country": "Kuba",
-  "founded": "1902",
-  "blurb": {
-   "hr": "Nazvana po osloboditelju Simónu Bolívaru — jedna od najjačih kubanskih marki, zemljana i snažna.",
-   "en": "Named after liberator Simón Bolívar — one of Cuba's strongest marcas, earthy and powerful."
-  }
- },
- "Punch": {
-  "country": "Kuba",
-  "founded": "1840",
-  "blurb": {
-   "hr": "Jedna od najstarijih marki, srednje-punog zemljano-kožnatog karaktera i odlične vrijednosti.",
-   "en": "One of the oldest marcas, medium-full with an earthy-leather character and great value."
-  }
- },
- "Ramón Allones": {
-  "country": "Kuba",
-  "founded": "1837",
-  "blurb": {
-   "hr": "Insajderski favorit — bogato, tamno-voćno i kakao tijelo. Prva marka koja je koristila tiskane etikete i kutije.",
-   "en": "An insider favourite — rich, dark-fruited, cocoa body. The first marca to use printed labels and boxes."
-  }
- },
- "Juan López": {
-  "country": "Kuba",
-  "founded": "1876",
-  "blurb": {
-   "hr": "Mala marka s odanim krugom obožavatelja — zemljano-medena, srednje-punog tijela.",
-   "en": "A small marca with a loyal following — earthy-honeyed, medium-full body."
-  }
- },
- "Quintero": {
-  "country": "Kuba",
-  "founded": "1924",
-  "blurb": {
-   "hr": "Pristupačna kubanska marka (kratki filer) — rustikalna, zemljana, za svakodnevni užitak.",
-   "en": "An affordable Cuban marca (short filler) — rustic, earthy, for everyday enjoyment."
-  }
- },
- "Cuaba": {
-  "country": "Kuba",
-  "founded": "1996",
-  "blurb": {
-   "hr": "Jedina marka s isključivo perfecto (dvostruko šiljastim) oblicima — medeno-drveni kuriozitet.",
-   "en": "The only marca made entirely in perfecto (double-tapered) shapes — a honey-woody curiosity."
-  }
- },
- "José L. Piedra": {
-  "country": "Kuba",
-  "founded": "1880",
-  "blurb": {
-   "hr": "Najpristupačniji pravi kubanci (kratki filer) — grublji ali pošten svakodnevni dim.",
-   "en": "The most affordable real Cubans (short filler) — rougher but an honest daily smoke."
-  }
- },
- "San Cristóbal de la Habana": {
-  "country": "Kuba",
-  "founded": "1999",
-  "blurb": {
-   "hr": "Nazvana po izvornom imenu Havane — bogata, srednje-puna marka s notama kave i kože.",
-   "en": "Named after Havana's original name — a rich, medium-full marca with coffee and leather notes."
-  }
- },
- "Vegas Robaina": {
-  "country": "Kuba",
-  "founded": "1997",
-  "blurb": {
-   "hr": "Nazvana po legendarnom uzgajivaču duhana Alejandru Robaini — snažna, zemljana marka za iskusne.",
-   "en": "Named after legendary tobacco grower Alejandro Robaina — a strong, earthy marca for the experienced."
-  }
- },
- "Quai d'Orsay": {
-  "country": "Kuba",
-  "founded": "1973",
-  "blurb": {
-   "hr": "Izvorno stvorena za francusko tržište — najsvjetliji, cvjetno-travnati moderni habanos.",
-   "en": "Originally created for the French market — the brightest, floral-grassy modern habano."
-  }
- },
- "Fonseca": {
-  "country": "Kuba",
-  "founded": "1891",
-  "blurb": {
-   "hr": "Blaga kubanska marka prepoznatljiva po svilenom papiru na svakoj cigari — cvjetna i diskretna.",
-   "en": "A mild Cuban marca recognisable by the tissue paper on each cigar — floral and discreet."
-  }
- },
- "Davidoff": {
-  "country": "Dominikanska Republika / Švicarska",
-  "founded": "1968",
-  "blurb": {
-   "hr": "Zino Davidoff postavio je standard luksuza; danas dominikanske i nikaragvanske linije slove za najprecizniju izradu na svijetu — od blage Signature do snažne Nicaragua i scotch-cask Late Hour.",
-   "en": "Zino Davidoff set the luxury standard; today's Dominican and Nicaraguan lines are renowned for the world's most precise construction — from the mild Signature to the bold Nicaragua and scotch-cask Late Hour."
-  }
- },
- "Padrón": {
-  "country": "Nikaragva",
-  "founded": "1964",
-  "blurb": {
-   "hr": "Obiteljska legenda — box-pressane nikaragvanske cigare besprijekorne izrade. Serije 1964 i 1926 su mjerilo za maduro s notama kakaa i espressa.",
-   "en": "A family legend — box-pressed Nicaraguan cigars of flawless construction. The 1964 and 1926 series are the maduro benchmark, all cocoa and espresso."
-  }
- },
- "Arturo Fuente": {
+ "Adv": {
   "country": "Dominikanska Republika",
-  "founded": "1912",
+  "founded": "—",
   "blurb": {
-   "hr": "Najpoštovanija dominikanska obitelj; Cameroon-omotane Gran Reserve i kultni, gotovo nenabavljivi Opus X uzgojen na vlastitom imanju.",
-   "en": "The most respected Dominican family; Cameroon-wrapped Gran Reservas and the cult, near-unobtainable Opus X grown on their own estate."
-  }
- },
- "Oliva": {
-  "country": "Nikaragva",
-  "founded": "1995",
-  "blurb": {
-   "hr": "Value legenda iz Nikaragve — od kremaste Serie G do nagrađivane, bogate Serie V Melanio. Iz iste fabrike u Estelíju dolazi i sestrinski brend Nub.",
-   "en": "A Nicaraguan value legend — from the creamy Serie G to the awarded, rich Serie V Melanio. The sister brand Nub comes from the same Estelí factory."
-  }
- },
- "My Father": {
-  "country": "Nikaragva",
-  "founded": "2008",
-  "blurb": {
-   "hr": "Obitelj García (Don Pepín) — vlastiti duhan i vrhunska izrada. Le Bijou 1922 i Flor de las Antillas bili su Cigara godine.",
-   "en": "The García family (Don Pepín) — own-grown tobacco and top construction. Le Bijou 1922 and Flor de las Antillas were both Cigar of the Year."
-  }
- },
- "Plasencia": {
-  "country": "Nikaragva / Honduras",
-  "founded": "1865",
-  "blurb": {
-   "hr": "Peta generacija uzgajivača koja opskrbljuje pola industrije; vlastite linije (Alma Fuerte, Alma del Campo) su organske, bogate i kompleksne.",
-   "en": "Fifth-generation growers who supply half the industry; their own lines (Alma Fuerte, Alma del Campo) are organic, rich and complex."
-  }
- },
- "Joya de Nicaragua": {
-  "country": "Nikaragva",
-  "founded": "1968",
-  "blurb": {
-   "hr": "Najstarija nikaragvanska tvornica — Antaño 1970 je definicija snage stare škole, papreno i zemljano.",
-   "en": "Nicaragua's oldest factory — the Antaño 1970 defines old-school power, peppery and earthy."
-  }
- },
- "AJ Fernandez": {
-  "country": "Nikaragva",
-  "founded": "2000-e",
-  "blurb": {
-   "hr": "Abdel 'AJ' Fernández, jedan od najtraženijih majstora blendera: Blend 15, Last Call, Enclave, New World, Bellas Artes i Días de Gloria.",
-   "en": "Abdel 'AJ' Fernández, one of the most sought-after blenders: Blend 15, Last Call, Enclave, New World, Bellas Artes and Días de Gloria."
-  }
- },
- "Rocky Patel": {
-  "country": "Honduras / Nikaragva",
-  "founded": "1996",
-  "blurb": {
-   "hr": "Bivši odvjetnik koji je izgradio jedan od najprepoznatljivijih brendova; Decade i Vintage serije odlikuje odležani duhan.",
-   "en": "A former lawyer who built one of the most recognisable brands; the Decade and Vintage lines feature aged tobacco."
-  }
- },
- "Camacho": {
-  "country": "Honduras",
-  "founded": "1962",
-  "blurb": {
-   "hr": "Bold honduraški brend (Davidoff grupa) — corojo linije su paprene i intenzivne, Connecticut blaža strana.",
-   "en": "The bold Honduran brand (Davidoff group) — corojo lines are peppery and intense, Connecticut the milder side."
-  }
- },
- "E.P. Carrillo": {
-  "country": "Dominikanska Republika",
-  "founded": "2009",
-  "blurb": {
-   "hr": "Ernesto Perez-Carrillo, majstor iza La Glorije Cubane; Pledge je bio Cigara godine 2020 — tamna slatkoća broadleafa.",
-   "en": "Ernesto Perez-Carrillo, the master behind La Gloria Cubana; Pledge was Cigar of the Year 2020 — dark broadleaf sweetness."
-  }
- },
- "Drew Estate": {
-  "country": "Nikaragva",
-  "founded": "1996",
-  "blurb": {
-   "hr": "Inovatori (Liga Privada, Undercrown, Acid) — Liga Privada No.9 je kultni tamni broadleaf gusta, uljasta dima.",
-   "en": "Innovators (Liga Privada, Undercrown, Acid) — Liga Privada No.9 is the cult dark broadleaf of dense, oily smoke."
-  }
- },
- "Foundation": {
-  "country": "Nikaragva",
-  "founded": "2015",
-  "blurb": {
-   "hr": "Nicholas Melillo, bivši 'duhanski nos' Drew Estatea; Tabernacle je tamna, moćna broadleaf snaga, Charter Oak vrhunski value Connecticut.",
-   "en": "Nicholas Melillo, Drew Estate's former 'tobacco nose'; Tabernacle is dark, mighty broadleaf power, Charter Oak a top-value Connecticut."
-  }
- },
- "Tatuaje": {
-  "country": "Nikaragva",
-  "founded": "2003",
-  "blurb": {
-   "hr": "Pete Johnson — kubanski stil iz Nikaragve, boutique kultni status (Havana VI, Miami).",
-   "en": "Pete Johnson — Cuban style from Nicaragua, boutique cult status (Havana VI, Miami)."
+   "hr": "Adv — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Adv — a brand listed in retail shop catalogues (HR/EU/USA)."
   }
  },
  "Aganorsa Leaf": {
@@ -279,52 +63,44 @@
    "en": "Owners of the famed Aganorsa tobacco fields; silky, sweet-spiced smoke from premium leaf (Supreme Leaf, Aniversario, La Validación)."
   }
  },
- "La Aurora": {
-  "country": "Dominikanska Republika",
-  "founded": "1903",
-  "blurb": {
-   "hr": "Najstarija dominikanska tvornica — uravnotežene, aromatične cigare (107, 1903, Preferidos).",
-   "en": "The oldest Dominican factory — balanced, aromatic cigars (107, 1903, Preferidos)."
-  }
- },
- "La Galera": {
-  "country": "Dominikanska Republika",
-  "founded": "1936",
-  "blurb": {
-   "hr": "Tradicionalna Tabacalera Palma — široka lepeza pouzdanih, aromatičnih cigara odlične vrijednosti.",
-   "en": "Traditional Tabacalera Palma — a wide range of reliable, aromatic value cigars."
-  }
- },
- "Ashton": {
-  "country": "Dominikanska Republika",
-  "founded": "1985",
-  "blurb": {
-   "hr": "Američki brend koji izrađuje Fuente — od kremaste Classic Connecticut do snažne VSG.",
-   "en": "An American brand made by Fuente — from the creamy Classic Connecticut to the bold VSG."
-  }
- },
- "Perdomo": {
+ "Aging Room": {
   "country": "Nikaragva",
-  "founded": "1992",
+  "founded": "—",
   "blurb": {
-   "hr": "Vertikalno integriran obiteljski brend; wrapperi odležani u bourbon bačvama daju karamelno-čokoladnu notu.",
-   "en": "A vertically integrated family brand; bourbon-barrel-aged wrappers add a caramel-chocolate note."
+   "hr": "Aging Room — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Aging Room — a brand listed in retail shop catalogues (HR/EU/USA)."
   }
  },
- "Macanudo": {
-  "country": "Dominikanska Republika",
-  "founded": "1971",
-  "blurb": {
-   "hr": "Najprodavaniji blagi brend u SAD-u — kremasta, ultra-glatka Café linija idealna za jutro i početnike.",
-   "en": "The best-selling mild brand in the US — the creamy, ultra-smooth Café line, ideal for mornings and beginners."
-  }
- },
- "CAO": {
+ "Aj": {
   "country": "Nikaragva",
-  "founded": "1968",
+  "founded": "—",
   "blurb": {
-   "hr": "Brend sklon eksperimentu (Brazilia, Flathead) — bogati maduro i neobični blendovi.",
-   "en": "An experimental brand (Brazilia, Flathead) — rich maduros and unusual blends."
+   "hr": "Aj — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Aj — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "AJ Fernandez": {
+  "country": "Nikaragva",
+  "founded": "2000-e",
+  "blurb": {
+   "hr": "Abdel 'AJ' Fernández, jedan od najtraženijih majstora blendera: Blend 15, Last Call, Enclave, New World, Bellas Artes i Días de Gloria.",
+   "en": "Abdel 'AJ' Fernández, one of the most sought-after blenders: Blend 15, Last Call, Enclave, New World, Bellas Artes and Días de Gloria."
+  }
+ },
+ "Aksum": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Aksum — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Aksum — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Aladino": {
+  "country": "Honduras",
+  "founded": "—",
+  "blurb": {
+   "hr": "Aladino — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Aladino — a brand listed in retail shop catalogues (HR/EU/USA)."
   }
  },
  "Alec Bradley": {
@@ -335,84 +111,196 @@
    "en": "Prensado was Cigar of the Year 2011 — Honduran depth, cocoa and spice."
   }
  },
- "Illusione": {
-  "country": "Nikaragva",
-  "founded": "2006",
-  "blurb": {
-   "hr": "Dion Giolito — kubanski stil stare škole, rafinirane i aromatične boutique cigare (Epernay).",
-   "en": "Dion Giolito — old-school Cuban style, refined aromatic boutique cigars (Epernay)."
-  }
- },
- "Warped": {
-  "country": "Nikaragva",
-  "founded": "2009",
-  "blurb": {
-   "hr": "Kyle Gellis — povratak kubanskom stilu stare škole, svijetle i kremaste boutique cigare.",
-   "en": "Kyle Gellis — a return to old-school Cuban style, bright and creamy boutique cigars."
-  }
- },
- "Dunbarton T&T": {
-  "country": "Nikaragva",
-  "founded": "2015",
-  "blurb": {
-   "hr": "Steve Saka (bivši šef Drew Estatea) — Sobremesa i Mi Querida su remek-djela balansa i tamne slatkoće.",
-   "en": "Steve Saka (ex-Drew Estate CEO) — Sobremesa and Mi Querida are masterpieces of balance and dark sweetness."
-  }
- },
- "Casa 1910": {
-  "country": "Meksiko",
-  "founded": "2019",
-  "blurb": {
-   "hr": "Meksički puro sa San Andrés duhanom — tamno, zemljano-čokoladno, priča o meksičkoj revoluciji.",
-   "en": "A Mexican puro with San Andrés tobacco — dark, earthy-chocolatey, telling the story of the Mexican revolution."
-  }
- },
- "Eiroa": {
-  "country": "Honduras",
-  "founded": "2015",
-  "blurb": {
-   "hr": "Christian Eiroa (obitelj koja je osnovala Camacho) — CBT maduro i 20 Years serije, honduraška dubina.",
-   "en": "Christian Eiroa (the family that founded Camacho) — CBT maduro and 20 Years lines, Honduran depth."
-  }
- },
- "Flor de Selva": {
-  "country": "Honduras",
-  "founded": "1995",
-  "blurb": {
-   "hr": "Maya Selva — honduraška elegancija francuskog stila, mekana i medena.",
-   "en": "Maya Selva — Honduran elegance in the French style, soft and honeyed."
-  }
- },
- "Oscar Valladares": {
-  "country": "Honduras",
-  "founded": "2014",
-  "blurb": {
-   "hr": "Honduraška boutique zvijezda — slatko-začinski, moderni i inovativni blendovi.",
-   "en": "A Honduran boutique star — sweet-spicy, modern and innovative blends."
-  }
- },
- "Paperboy": {
+ "Alejandro": {
   "country": "Dominikanska Republika",
-  "founded": "2022",
+  "founded": "—",
   "blurb": {
-   "hr": "Artista Studio Works (Tabacalera El Artista, Tamboril) — petit corona u snopu od 8, umotana u „novine” s izmišljenim pričama iz fabrike. Pristupačan dnevni format, konkurent Cusanu i Don Tomasu.",
-   "en": "Artista Studio Works (Tabacalera El Artista, Tamboril) — a petit corona in bundles of 8, wrapped in faux newspaper with tall tales from the factory. An affordable everyday format, rivalling Cusano and Don Tomas."
+   "hr": "Alejandro — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Alejandro — a brand listed in retail shop catalogues (HR/EU/USA)."
   }
  },
- "VegaFina": {
+ "Alfambra": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Alfambra — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Alfambra — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Aliados": {
   "country": "Dominikanska Republika",
-  "founded": "1997",
+  "founded": "—",
   "blurb": {
-   "hr": "Najrasprostranjenija blaga cigara u Europi (dostupna i u HR) — kremasta i pristupačna.",
-   "en": "The most widespread mild cigar in Europe (available in Croatia too) — creamy and approachable."
+   "hr": "Aliados — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Aliados — a brand listed in retail shop catalogues (HR/EU/USA)."
   }
  },
- "Villiger": {
-  "country": "Švicarska / Dominikanska Republika",
-  "founded": "1888",
+ "Alonso": {
+  "country": "Brazil",
+  "founded": "—",
   "blurb": {
-   "hr": "Švicarska kuća sa stoljetnom tradicijom — pouzdane value cigare za europsko tržište.",
-   "en": "A Swiss house with a century of tradition — reliable value cigars for the European market."
+   "hr": "Alonso — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Alonso — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Amante": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Amante — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Amante — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Ambos Mundos": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Ambos Mundos — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Ambos Mundos — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Angel": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Angel — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Angel — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Angry Elf": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Angry Elf — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Angry Elf — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Ann Eks": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Ann Eks — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Ann Eks — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Apr": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Apr — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Apr — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Argyle": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Argyle — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Argyle — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Argyle Fumas": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Argyle Fumas — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Argyle Fumas — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Artista": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Artista — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Artista — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Arturo Fuente": {
+  "country": "Dominikanska Republika",
+  "founded": "1912",
+  "blurb": {
+   "hr": "Najpoštovanija dominikanska obitelj; Cameroon-omotane Gran Reserve i kultni, gotovo nenabavljivi Opus X uzgojen na vlastitom imanju.",
+   "en": "The most respected Dominican family; Cameroon-wrapped Gran Reservas and the cult, near-unobtainable Opus X grown on their own estate."
+  }
+ },
+ "Ashton": {
+  "country": "Dominikanska Republika",
+  "founded": "1985",
+  "blurb": {
+   "hr": "Američki brend koji izrađuje Fuente — od kremaste Classic Connecticut do snažne VSG.",
+   "en": "An American brand made by Fuente — from the creamy Classic Connecticut to the bold VSG."
+  }
+ },
+ "Astoria": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Astoria — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Astoria — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Asylum": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Asylum — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Asylum — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Asylum 13": {
+  "country": "Honduras",
+  "founded": "—",
+  "blurb": {
+   "hr": "Asylum 13 — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Asylum 13 — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Ave Maria": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Ave Maria — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Ave Maria — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Avo": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Avo — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Avo — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Babalu": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Babalu — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Babalu — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Baccarat": {
+  "country": "Honduras",
+  "founded": "—",
+  "blurb": {
+   "hr": "Baccarat — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Baccarat — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Bahia": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Bahia — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Bahia — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Bahia Blu": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Bahia Blu — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Bahia Blu — a brand listed in retail shop catalogues (HR/EU/USA)."
   }
  },
  "Balmoral": {
@@ -423,20 +311,380 @@
    "en": "Royal Agio's (Netherlands) premium line — aged blends, a European speciality."
   }
  },
- "Zino": {
-  "country": "Nikaragva",
-  "founded": "1987. (relaunch 2021.)",
+ "Baron": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
   "blurb": {
-   "hr": "Pristupačniji Davidoff brend — moderan nikaragvanski profil po razumnoj cijeni.",
-   "en": "Davidoff's accessible brand — a modern Nicaraguan profile at a fair price."
+   "hr": "Baron — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Baron — a brand listed in retail shop catalogues (HR/EU/USA)."
   }
  },
- "1502": {
-  "country": "Nikaragva",
-  "founded": "2012",
+ "Barrio": {
+  "country": "Honduras",
+  "founded": "—",
   "blurb": {
-   "hr": "Global Premium Cigars Enriquea Sáncheza; ime nosi po godini 1502., kada je Kolumbo pristao uz obalu Nikaragve. Nikaragvanski puro blendovi (Emerald, Ruby, Black Gold, XO) prepoznatljivi po box-pressu i zatvorenoj nozi koja čuva arome.",
-   "en": "Enrique Sánchez's Global Premium Cigars; named for 1502, the year Columbus reached Nicaragua. Nicaraguan puro blends (Emerald, Ruby, Black Gold, XO) known for their box-press and closed foot that preserves aroma."
+   "hr": "Barrio — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Barrio — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Bauza": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Bauza — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Bauza — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Beast": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Beast — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Beast — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Bella": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Bella — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Bella — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Bella Cuba": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Bella Cuba — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Bella Cuba — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Belleza": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Belleza — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Belleza — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Belmore": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Belmore — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Belmore — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Benchmade": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Benchmade — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Benchmade — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Bentley": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Bentley — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Bentley — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Berlincigarmen": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Berlincigarmen — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Berlincigarmen — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Black Label": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Black Label — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Black Label — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Black Tie": {
+  "country": "Kostarika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Black Tie — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Black Tie — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Black Works": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Black Works — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Black Works — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Blackbird": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Blackbird — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Blackbird — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Blanco": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Blanco — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Blanco — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Blarney Stone": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Blarney Stone — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Blarney Stone — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Blenders Clearing House": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Blenders Clearing House — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Blenders Clearing House — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Boardwalk": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Boardwalk — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Boardwalk — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Bock": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Bock — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Bock — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Bohekio": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Bohekio — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Bohekio — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Bolívar": {
+  "country": "Kuba",
+  "founded": "1902",
+  "blurb": {
+   "hr": "Nazvana po osloboditelju Simónu Bolívaru — jedna od najjačih kubanskih marki, zemljana i snažna.",
+   "en": "Named after liberator Simón Bolívar — one of Cuba's strongest marcas, earthy and powerful."
+  }
+ },
+ "Bongani": {
+  "country": "Mozambik",
+  "founded": "—",
+  "blurb": {
+   "hr": "Bongani — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Bongani — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Bossner": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Bossner — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Bossner — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Bottom Shelf": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Bottom Shelf — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Bottom Shelf — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Botucal": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Botucal — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Botucal — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Bribon": {
+  "country": "Kolumbija",
+  "founded": "—",
+  "blurb": {
+   "hr": "Bribon — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Bribon — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Brick House": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Brick House — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Brick House — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Brun": {
+  "country": "Kostarika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Brun — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Brun — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Buena": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Buena — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Buena — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Bugatti": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Bugatti — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Bugatti — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Cain": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Cain — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Cain — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Cain Black": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Cain Black — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Cain Black — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Cain Ct": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Cain Ct — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Cain Ct — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Cain Daytona": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Cain Daytona — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Cain Daytona — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Cain F. 1": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Cain F. 1 — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Cain F. 1 — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Caldwell": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Caldwell — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Caldwell — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Camacho": {
+  "country": "Honduras",
+  "founded": "1962",
+  "blurb": {
+   "hr": "Bold honduraški brend (Davidoff grupa) — corojo linije su paprene i intenzivne, Connecticut blaža strana.",
+   "en": "The bold Honduran brand (Davidoff group) — corojo lines are peppery and intense, Connecticut the milder side."
+  }
+ },
+ "Candlelight": {
+  "country": "Njemačka",
+  "founded": "—",
+  "blurb": {
+   "hr": "Candlelight — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Candlelight — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Canned": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Canned — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Canned — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "CAO": {
+  "country": "Nikaragva",
+  "founded": "1968",
+  "blurb": {
+   "hr": "Brend sklon eksperimentu (Brazilia, Flathead) — bogati maduro i neobični blendovi.",
+   "en": "An experimental brand (Brazilia, Flathead) — rich maduros and unusual blends."
+  }
+ },
+ "Capadura": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Capadura — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Capadura — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Capitol": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Capitol — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Capitol — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Carlos": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Carlos — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Carlos — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Casa": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Casa — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Casa — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Casa 1910": {
+  "country": "Meksiko",
+  "founded": "2019",
+  "blurb": {
+   "hr": "Meksički puro sa San Andrés duhanom — tamno, zemljano-čokoladno, priča o meksičkoj revoluciji.",
+   "en": "A Mexican puro with San Andrés tobacco — dark, earthy-chocolatey, telling the story of the Mexican revolution."
+  }
+ },
+ "Casa Fernández": {
+  "country": "SAD",
+  "founded": "—",
+  "blurb": {
+   "hr": "Casa Fernández — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Casa Fernández — a brand listed in retail shop catalogues (HR/EU/USA)."
   }
  },
  "Casa Magna": {
@@ -447,12 +695,260 @@
    "en": "A collaboration between Manuel Quesada and the Plasencia family — the Casa Magna Colorado was Cigar of the Year 2008. Nicaraguan tobacco with Dominican blending mastery: rich, earthy, excellent value."
   }
  },
+ "Casa Royale": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Casa Royale — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Casa Royale — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Casa Turrent": {
+  "country": "Meksiko",
+  "founded": "—",
+  "blurb": {
+   "hr": "Casa Turrent — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Casa Turrent — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Casagranda": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Casagranda — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Casagranda — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Casdagli": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Casdagli — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Casdagli — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Castano": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Castano — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Castano — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Castillo": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Castillo — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Castillo — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Cavalier": {
+  "country": "Honduras",
+  "founded": "—",
+  "blurb": {
+   "hr": "Cavalier — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Cavalier — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Centaur": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Centaur — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Centaur — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Charatan": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Charatan — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Charatan — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Charter Oak": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Charter Oak — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Charter Oak — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Chateau": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Chateau — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Chateau — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Chinchalero": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Chinchalero — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Chinchalero — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Chone": {
+  "country": "Indonezija",
+  "founded": "—",
+  "blurb": {
+   "hr": "Chone — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Chone — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Christo": {
+  "country": "Njemačka",
+  "founded": "—",
+  "blurb": {
+   "hr": "Christo — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Christo — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Cibao": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Cibao — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Cibao — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Cigarkings": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Cigarkings — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Cigarkings — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Cigarworld": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Cigarworld — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Cigarworld — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "CLE": {
+  "country": "Honduras",
+  "founded": "—",
+  "blurb": {
+   "hr": "CLE — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "CLE — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Cohiba": {
+  "country": "Kuba",
+  "founded": "1966",
+  "blurb": {
+   "hr": "Najprestižnija kubanska marka, izvorno stvorena za Fidela Castra i diplomatske darove. Duhan iz odabranih vega El Laguito prolazi dodatnu treću fermentaciju, po čemu je Cohiba prepoznatljiva po kremastoj, travnato-medenoj finoći.",
+   "en": "Cuba's most prestigious marca, originally made for Fidel Castro and as diplomatic gifts. Tobacco from select El Laguito fields undergoes a third fermentation, giving Cohiba its creamy, grassy-honeyed refinement."
+  }
+ },
+ "Colon": {
+  "country": "Panama",
+  "founded": "—",
+  "blurb": {
+   "hr": "Colon — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Colon — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Condega": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Condega — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Condega — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Confidenciaal": {
+  "country": "Honduras",
+  "founded": "—",
+  "blurb": {
+   "hr": "Confidenciaal — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Confidenciaal — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Cornelius": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Cornelius — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Cornelius — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Corrida": {
+  "country": "Brazil",
+  "founded": "—",
+  "blurb": {
+   "hr": "Corrida — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Corrida — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Cortesia": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Cortesia — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Cortesia — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
  "Crowned Heads": {
   "country": "Nikaragva / SAD",
   "founded": "2011",
   "blurb": {
    "hr": "Boutique kuća iz Nashvillea (Jon Huber) koja radi s najboljim fabrikama (My Father, Tabacalera Pichardo). Le Carême, Four Kicks i Mil Días — moderni klasici s pričom.",
    "en": "A Nashville boutique house (Jon Huber) working with top factories (My Father, Tabacalera Pichardo). Le Carême, Four Kicks and Mil Días — modern classics with a story."
+  }
+ },
+ "Csc": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Csc — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Csc — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Cuaba": {
+  "country": "Kuba",
+  "founded": "1996",
+  "blurb": {
+   "hr": "Jedina marka s isključivo perfecto (dvostruko šiljastim) oblicima — medeno-drveni kuriozitet.",
+   "en": "The only marca made entirely in perfecto (double-tapered) shapes — a honey-woody curiosity."
+  }
+ },
+ "Cuba Aliados": {
+  "country": "Honduras",
+  "founded": "—",
+  "blurb": {
+   "hr": "Cuba Aliados — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Cuba Aliados — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Cuervo": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Cuervo — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Cuervo — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Cuesta Rey": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Cuesta Rey — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Cuesta Rey — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Culture": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Culture — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Culture — a brand listed in retail shop catalogues (HR/EU/USA)."
   }
  },
  "Cumpay": {
@@ -471,12 +967,420 @@
    "en": "Founded by the Chase brothers; today part of the Davidoff group. Mild-to-medium Dominican profiles with excellent value."
   }
  },
+ "Cuvee": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Cuvee — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Cuvee — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Dalay": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Dalay — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Dalay — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Daniel": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Daniel — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Daniel — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Dapper": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Dapper — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Dapper — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Davidoff": {
+  "country": "Dominikanska Republika / Švicarska",
+  "founded": "1968",
+  "blurb": {
+   "hr": "Zino Davidoff postavio je standard luksuza; danas dominikanske i nikaragvanske linije slove za najprecizniju izradu na svijetu — od blage Signature do snažne Nicaragua i scotch-cask Late Hour.",
+   "en": "Zino Davidoff set the luxury standard; today's Dominican and Nicaraguan lines are renowned for the world's most precise construction — from the mild Signature to the bold Nicaragua and scotch-cask Late Hour."
+  }
+ },
+ "Dbl": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Dbl — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Dbl — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "De Leon": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "De Leon — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "De Leon — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Debonaire": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Debonaire — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Debonaire — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Despot": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Despot — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Despot — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Diamond Crown": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Diamond Crown — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Diamond Crown — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Dictador": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Dictador — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Dictador — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Diesel": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Diesel — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Diesel — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Dios": {
+  "country": "Honduras",
+  "founded": "—",
+  "blurb": {
+   "hr": "Dios — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Dios — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Domaine": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Domaine — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Domaine — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Domenico": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Domenico — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Domenico — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Dominican": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Dominican — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Dominican — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Dominico": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Dominico — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Dominico — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Dominus": {
+  "country": "Kostarika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Dominus — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Dominus — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Don Diego": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Don Diego — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Don Diego — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Don Duarte": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Don Duarte — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Don Duarte — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Don Fidel": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Don Fidel — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Don Fidel — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Don Jose": {
+  "country": "Kolumbija",
+  "founded": "—",
+  "blurb": {
+   "hr": "Don Jose — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Don Jose — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Don Julio": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Don Julio — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Don Julio — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Don Lino": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Don Lino — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Don Lino — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Don Lino Fumas": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Don Lino Fumas — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Don Lino Fumas — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Don Melo": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Don Melo — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Don Melo — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Don Pepin": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Don Pepin — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Don Pepin — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Don Pépin García": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Don Pépin García — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Don Pépin García — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Don Rubio": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Don Rubio — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Don Rubio — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Don Stefano": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Don Stefano — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Don Stefano — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Don Tomas": {
+  "country": "Honduras",
+  "founded": "1974",
+  "blurb": {
+   "hr": "Honduraška marka iz Danlíja, danas u portfelju Scandinavian Tobacco Groupa. Poznata po pristupačnim, zanatski rađenim cigarama srednjeg tijela — Clásico linija važi kao jedan od najboljih omjera cijene i kvalitete u premium segmentu.",
+   "en": "A Honduran brand from Danlí, today part of Scandinavian Tobacco Group. Known for affordable, well-made medium-bodied cigars — the Clásico line is regarded as one of the best values in the premium segment."
+  }
+ },
+ "Don Zuarin": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Don Zuarin — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Don Zuarin — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Dona": {
+  "country": "Brazil",
+  "founded": "—",
+  "blurb": {
+   "hr": "Dona — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Dona — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Dos": {
+  "country": "Španjolska",
+  "founded": "—",
+  "blurb": {
+   "hr": "Dos — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Dos — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Drew Estate": {
+  "country": "Nikaragva",
+  "founded": "1996",
+  "blurb": {
+   "hr": "Inovatori (Liga Privada, Undercrown, Acid) — Liga Privada No.9 je kultni tamni broadleaf gusta, uljasta dima.",
+   "en": "Innovators (Liga Privada, Undercrown, Acid) — Liga Privada No.9 is the cult dark broadleaf of dense, oily smoke."
+  }
+ },
+ "Dunbarton T&T": {
+  "country": "Nikaragva",
+  "founded": "2015",
+  "blurb": {
+   "hr": "Steve Saka (bivši šef Drew Estatea) — Sobremesa i Mi Querida su remek-djela balansa i tamne slatkoće.",
+   "en": "Steve Saka (ex-Drew Estate CEO) — Sobremesa and Mi Querida are masterpieces of balance and dark sweetness."
+  }
+ },
+ "E.P. Carrillo": {
+  "country": "Dominikanska Republika",
+  "founded": "2009",
+  "blurb": {
+   "hr": "Ernesto Perez-Carrillo, majstor iza La Glorije Cubane; Pledge je bio Cigara godine 2020 — tamna slatkoća broadleafa.",
+   "en": "Ernesto Perez-Carrillo, the master behind La Gloria Cubana; Pledge was Cigar of the Year 2020 — dark broadleaf sweetness."
+  }
+ },
+ "Eiroa": {
+  "country": "Honduras",
+  "founded": "2015",
+  "blurb": {
+   "hr": "Christian Eiroa (obitelj koja je osnovala Camacho) — CBT maduro i 20 Years serije, honduraška dubina.",
+   "en": "Christian Eiroa (the family that founded Camacho) — CBT maduro and 20 Years lines, Honduran depth."
+  }
+ },
+ "El Baton": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "El Baton — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "El Baton — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "El Centurion": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "El Centurion — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "El Centurion — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "El Copey": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "El Copey — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "El Copey — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "El Credito": {
+  "country": "SAD",
+  "founded": "—",
+  "blurb": {
+   "hr": "El Credito — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "El Credito — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "El Galan": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "El Galan — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "El Galan — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "El Gaucho": {
+  "country": "Indonezija",
+  "founded": "—",
+  "blurb": {
+   "hr": "El Gaucho — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "El Gaucho — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "El Gueguense": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "El Gueguense — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "El Gueguense — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
  "El Pulpo": {
   "country": "Nikaragva",
   "founded": "2016",
   "blurb": {
    "hr": "Artesano del Tobacco braće Fakih, izrađen u fabrici AJ Fernandeza (San Lotano, Ocotal). San Andrés maduro wrapper preko odležanog nikaragvanskog duhana; Belicoso je #10 Cigara godine 2023. (Cigar Aficionado).",
    "en": "Artesano del Tobacco by the Fakih brothers, rolled at AJ Fernandez's San Lotano factory in Ocotal. San Andrés maduro over aged Nicaraguan tobacco; the Belicoso was Cigar Aficionado's #10 Cigar of 2023."
+  }
+ },
+ "El Rey del Mundo": {
+  "country": "Honduras",
+  "founded": "—",
+  "blurb": {
+   "hr": "El Rey del Mundo — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "El Rey del Mundo — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "El Rico": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "El Rico — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "El Rico — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "El Septimo": {
+  "country": "Kostarika",
+  "founded": "—",
+  "blurb": {
+   "hr": "El Septimo — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "El Septimo — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "El Sitio": {
+  "country": "Španjolska",
+  "founded": "—",
+  "blurb": {
+   "hr": "El Sitio — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "El Sitio — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "El Titan": {
+  "country": "SAD",
+  "founded": "—",
+  "blurb": {
+   "hr": "El Titan — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "El Titan — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "El Viejo": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "El Viejo — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "El Viejo — a brand listed in retail shop catalogues (HR/EU/USA)."
   }
  },
  "Eladio Diaz": {
@@ -487,12 +1391,252 @@
    "en": "The personal line of Davidoff's legendary master blender — the man behind their most celebrated blends for decades. Dominican precision and depth, now under his own name."
   }
  },
+ "Epic": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Epic — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Epic — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Escarabin": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Escarabin — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Escarabin — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Esteban": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Esteban — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Esteban — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Excalibur": {
+  "country": "Honduras",
+  "founded": "—",
+  "blurb": {
+   "hr": "Excalibur — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Excalibur — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Factory": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Factory — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Factory — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Fausto": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Fausto — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Fausto — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Ferio": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Ferio — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Ferio — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Fine Catch": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Fine Catch — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Fine Catch — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Flor": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Flor — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Flor — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
  "Flor de Copán": {
   "country": "Honduras",
   "founded": "1975",
   "blurb": {
    "hr": "Povijesna fabrika u Santa Rosi de Copán, danas u sastavu švicarskog Villigera. Blago-srednji honduraški profili tradicionalne izrade.",
    "en": "The historic factory in Santa Rosa de Copán, today part of Switzerland's Villiger. Mild-to-medium Honduran profiles of traditional make."
+  }
+ },
+ "Flor de Jose": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Flor de Jose — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Flor de Jose — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Flor de las Antillas": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Flor de las Antillas — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Flor de las Antillas — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Flor de Selva": {
+  "country": "Honduras",
+  "founded": "1995",
+  "blurb": {
+   "hr": "Maya Selva — honduraška elegancija francuskog stila, mekana i medena.",
+   "en": "Maya Selva — Honduran elegance in the French style, soft and honeyed."
+  }
+ },
+ "Flores": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Flores — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Flores — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Fonseca": {
+  "country": "Kuba",
+  "founded": "1891",
+  "blurb": {
+   "hr": "Blaga kubanska marka prepoznatljiva po svilenom papiru na svakoj cigari — cvjetna i diskretna.",
+   "en": "A mild Cuban marca recognisable by the tissue paper on each cigar — floral and discreet."
+  }
+ },
+ "Foundation": {
+  "country": "Nikaragva",
+  "founded": "2015",
+  "blurb": {
+   "hr": "Nicholas Melillo, bivši 'duhanski nos' Drew Estatea; Tabernacle je tamna, moćna broadleaf snaga, Charter Oak vrhunski value Connecticut.",
+   "en": "Nicholas Melillo, Drew Estate's former 'tobacco nose'; Tabernacle is dark, mighty broadleaf power, Charter Oak a top-value Connecticut."
+  }
+ },
+ "Four Kicks": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Four Kicks — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Four Kicks — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Fratello": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Fratello — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Fratello — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Freud": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Freud — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Freud — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "G.": {
+  "country": "Kostarika",
+  "founded": "—",
+  "blurb": {
+   "hr": "G. — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "G. — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Gaia": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Gaia — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Gaia — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "German": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "German — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "German — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Gh": {
+  "country": "Honduras",
+  "founded": "—",
+  "blurb": {
+   "hr": "Gh — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Gh — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Gilbert": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Gilbert — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Gilbert — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Gispert": {
+  "country": "Honduras",
+  "founded": "—",
+  "blurb": {
+   "hr": "Gispert — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Gispert — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "God": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "God — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "God — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "God of Fire": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "God of Fire — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "God of Fire — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Gran": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Gran — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Gran — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Gran Habano": {
+  "country": "Honduras",
+  "founded": "—",
+  "blurb": {
+   "hr": "Gran Habano — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Gran Habano — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Graycliff Original": {
+  "country": "Honduras",
+  "founded": "—",
+  "blurb": {
+   "hr": "Graycliff Original — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Graycliff Original — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Griffin's": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Griffin's — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Griffin's — a brand listed in retail shop catalogues (HR/EU/USA)."
   }
  },
  "Gurkha": {
@@ -503,12 +1647,828 @@
    "en": "Kaizad Hansotia's brand, famous for lavish limited editions and extravagant packaging. A wide palette from mild to full blends."
   }
  },
+ "Guzman": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Guzman — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Guzman — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "H. Upmann": {
+  "country": "Kuba",
+  "founded": "1844",
+  "blurb": {
+   "hr": "Bankarska kuća koja je postala marka — profinjeni, kremasto-cedrasti profil kave s mlijekom. Half Corona je savršena 'kava cigara'.",
+   "en": "A banking house turned marca — a refined, creamy café-au-lait cedar profile. The Half Corona is the perfect 'coffee cigar'."
+  }
+ },
+ "Handelsgold": {
+  "country": "Njemačka",
+  "founded": "—",
+  "blurb": {
+   "hr": "Handelsgold — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Handelsgold — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Helvada": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Helvada — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Helvada — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Hemmys": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Hemmys — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Hemmys — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Henk": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Henk — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Henk — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Henry Clay": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Henry Clay — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Henry Clay — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Hernandez": {
+  "country": "Panama",
+  "founded": "—",
+  "blurb": {
+   "hr": "Hernandez — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Hernandez — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Herr": {
+  "country": "Njemačka",
+  "founded": "—",
+  "blurb": {
+   "hr": "Herr — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Herr — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Hiram": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Hiram — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Hiram — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Holt's": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Holt's — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Holt's — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Horacio": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Horacio — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Horacio — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Hoyo de Monterrey": {
+  "country": "Kuba",
+  "founded": "1865",
+  "blurb": {
+   "hr": "Marka iz Vuelta Abajo poznata po elegantnim, blagim i kremastim cigarama. Epicure serija je klasik za mirnija poslijepodneva.",
+   "en": "A Vuelta Abajo marca known for elegant, mild, creamy cigars. The Epicure line is a classic for quieter afternoons."
+  }
+ },
+ "Hr": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Hr — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Hr — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Ibis": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Ibis — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Ibis — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Il": {
+  "country": "Kostarika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Il — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Il — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Illusione": {
+  "country": "Nikaragva",
+  "founded": "2006",
+  "blurb": {
+   "hr": "Dion Giolito — kubanski stil stare škole, rafinirane i aromatične boutique cigare (Epernay).",
+   "en": "Dion Giolito — old-school Cuban style, refined aromatic boutique cigars (Epernay)."
+  }
+ },
+ "Inca": {
+  "country": "Peru",
+  "founded": "—",
+  "blurb": {
+   "hr": "Inca — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Inca — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Indian": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Indian — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Indian — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Isthmus": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Isthmus — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Isthmus — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Jaime García": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Jaime García — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Jaime García — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Jalopy": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Jalopy — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Jalopy — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Jamm": {
+  "country": "Brazil",
+  "founded": "—",
+  "blurb": {
+   "hr": "Jamm — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Jamm — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Jas": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Jas — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Jas — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Jesus": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Jesus — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Jesus — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "José L. Piedra": {
+  "country": "Kuba",
+  "founded": "1880",
+  "blurb": {
+   "hr": "Najpristupačniji pravi kubanci (kratki filer) — grublji ali pošten svakodnevni dim.",
+   "en": "The most affordable real Cubans (short filler) — rougher but an honest daily smoke."
+  }
+ },
+ "Joya de Nicaragua": {
+  "country": "Nikaragva",
+  "founded": "1968",
+  "blurb": {
+   "hr": "Najstarija nikaragvanska tvornica — Antaño 1970 je definicija snage stare škole, papreno i zemljano.",
+   "en": "Nicaragua's oldest factory — the Antaño 1970 defines old-school power, peppery and earthy."
+  }
+ },
+ "Juan López": {
+  "country": "Kuba",
+  "founded": "1876",
+  "blurb": {
+   "hr": "Mala marka s odanim krugom obožavatelja — zemljano-medena, srednje-punog tijela.",
+   "en": "A small marca with a loyal following — earthy-honeyed, medium-full body."
+  }
+ },
+ "Juarez": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Juarez — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Juarez — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Kafie": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Kafie — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Kafie — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Kaneda": {
+  "country": "Kostarika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Kaneda — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Kaneda — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Karen": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Karen — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Karen — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "King S. Court": {
+  "country": "Honduras",
+  "founded": "—",
+  "blurb": {
+   "hr": "King S. Court — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "King S. Court — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Kinix": {
+  "country": "Honduras",
+  "founded": "—",
+  "blurb": {
+   "hr": "Kinix — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Kinix — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Kristoff": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Kristoff — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Kristoff — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "La Antiguedad": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "La Antiguedad — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "La Antiguedad — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "La Aroma de Cuba": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "La Aroma de Cuba — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "La Aroma de Cuba — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "La Aroma del Caribe": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "La Aroma del Caribe — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "La Aroma del Caribe — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "La Aurora": {
+  "country": "Dominikanska Republika",
+  "founded": "1903",
+  "blurb": {
+   "hr": "Najstarija dominikanska tvornica — uravnotežene, aromatične cigare (107, 1903, Preferidos).",
+   "en": "The oldest Dominican factory — balanced, aromatic cigars (107, 1903, Preferidos)."
+  }
+ },
+ "La Barba": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "La Barba — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "La Barba — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "La Bavaria": {
+  "country": "Kostarika",
+  "founded": "—",
+  "blurb": {
+   "hr": "La Bavaria — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "La Bavaria — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "La Capitana": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "La Capitana — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "La Capitana — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "La Chaveta": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "La Chaveta — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "La Chaveta — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "La Coalicion": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "La Coalicion — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "La Coalicion — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "La Duena": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "La Duena — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "La Duena — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "La Estrella": {
+  "country": "Honduras",
+  "founded": "—",
+  "blurb": {
+   "hr": "La Estrella — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "La Estrella — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "La Familia": {
+  "country": "Kostarika",
+  "founded": "—",
+  "blurb": {
+   "hr": "La Familia — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "La Familia — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "La Flor": {
+  "country": "Kostarika",
+  "founded": "—",
+  "blurb": {
+   "hr": "La Flor — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "La Flor — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
  "La Flor Dominicana": {
   "country": "Dominikanska Republika",
   "founded": "1996",
   "blurb": {
    "hr": "Litto Gomez uzgaja vlastiti duhan u La Canela — dom najsnažnijih dominikanskih cigara. Andalusian Bull bila je Cigara godine 2016.",
    "en": "Litto Gomez grows his own tobacco in La Canela — home of the most powerful Dominican cigars. The Andalusian Bull was Cigar of the Year 2016."
+  }
+ },
+ "La Galana": {
+  "country": "Honduras",
+  "founded": "—",
+  "blurb": {
+   "hr": "La Galana — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "La Galana — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "La Galera": {
+  "country": "Dominikanska Republika",
+  "founded": "1936",
+  "blurb": {
+   "hr": "Tradicionalna Tabacalera Palma — široka lepeza pouzdanih, aromatičnih cigara odlične vrijednosti.",
+   "en": "Traditional Tabacalera Palma — a wide range of reliable, aromatic value cigars."
+  }
+ },
+ "La Gloria Cubana": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "La Gloria Cubana — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "La Gloria Cubana — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "La Imperiosa": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "La Imperiosa — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "La Imperiosa — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "La Ley": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "La Ley — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "La Ley — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "La Libertad": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "La Libertad — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "La Libertad — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "La Magdalena": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "La Magdalena — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "La Magdalena — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "La Palina": {
+  "country": "Honduras",
+  "founded": "—",
+  "blurb": {
+   "hr": "La Palina — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "La Palina — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "La Perla Habana": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "La Perla Habana — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "La Perla Habana — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "La Rosa": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "La Rosa — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "La Rosa — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "La Sirena": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "La Sirena — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "La Sirena — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Lampert": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Lampert — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Lampert — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Laura": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Laura — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Laura — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Le Cigar": {
+  "country": "Brazil",
+  "founded": "—",
+  "blurb": {
+   "hr": "Le Cigar — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Le Cigar — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Legado": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Legado — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Legado — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Leite": {
+  "country": "Brazil",
+  "founded": "—",
+  "blurb": {
+   "hr": "Leite — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Leite — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Leon": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Leon — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Leon — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Leonel": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Leonel — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Leonel — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Les": {
+  "country": "Kostarika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Les — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Les — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Licenciados": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Licenciados — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Licenciados — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Loaisiga": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Loaisiga — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Loaisiga — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Los Amigos": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Los Amigos — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Los Amigos — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Luciano": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Luciano — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Luciano — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Lucky Dublin": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Lucky Dublin — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Lucky Dublin — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Luminosa": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Luminosa — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Luminosa — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Lunatic": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Lunatic — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Lunatic — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Macanudo": {
+  "country": "Dominikanska Republika",
+  "founded": "1971",
+  "blurb": {
+   "hr": "Najprodavaniji blagi brend u SAD-u — kremasta, ultra-glatka Café linija idealna za jutro i početnike.",
+   "en": "The best-selling mild brand in the US — the creamy, ultra-smooth Café line, ideal for mornings and beginners."
+  }
+ },
+ "Man O. War": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Man O. War — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Man O. War — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Manuel": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Manuel — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Manuel — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Maradona": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Maradona — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Maradona — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Marca": {
+  "country": "Panama",
+  "founded": "—",
+  "blurb": {
+   "hr": "Marca — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Marca — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Maria": {
+  "country": "Honduras",
+  "founded": "—",
+  "blurb": {
+   "hr": "Maria — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Maria — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Mata": {
+  "country": "Indonezija",
+  "founded": "—",
+  "blurb": {
+   "hr": "Mata — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Mata — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Matilde": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Matilde — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Matilde — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Meerapfel": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Meerapfel — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Meerapfel — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Meine": {
+  "country": "Njemačka",
+  "founded": "—",
+  "blurb": {
+   "hr": "Meine — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Meine — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Menelik": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Menelik — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Menelik — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Mi Querida": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Mi Querida — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Mi Querida — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Micallef": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Micallef — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Micallef — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Mil Dias": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Mil Dias — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Mil Dias — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Montecristo": {
+  "country": "Kuba",
+  "founded": "1935",
+  "blurb": {
+   "hr": "Najprodavanija kubanska marka na svijetu, nazvana po romanu Grof Monte Cristo koji se čitao radnicima u tvornici. Klasičan profil kakaa, kave i cedra srednjeg tijela — mjerilo za habanose.",
+   "en": "The world's best-selling Cuban marca, named after The Count of Monte Cristo read aloud to factory rollers. A classic medium-bodied profile of cocoa, coffee and cedar — the habano benchmark."
+  }
+ },
+ "Montecristo (NW)": {
+  "country": "Dominikanska Republika",
+  "founded": "1990-e",
+  "blurb": {
+   "hr": "Ne-kubanska Montecristo linija (Altadis) za američko tržište — dominikanska i nikaragvanska izdanja, glađa i blaža od kubanske.",
+   "en": "The non-Cuban Montecristo line (Altadis) for the US market — Dominican and Nicaraguan editions, smoother and milder than the Cuban."
+  }
+ },
+ "Montes": {
+  "country": "Honduras",
+  "founded": "—",
+  "blurb": {
+   "hr": "Montes — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Montes — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Montesino": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Montesino — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Montesino — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Montosa": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Montosa — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Montosa — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Mustique": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Mustique — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Mustique — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "My Father": {
+  "country": "Nikaragva",
+  "founded": "2008",
+  "blurb": {
+   "hr": "Obitelj García (Don Pepín) — vlastiti duhan i vrhunska izrada. Le Bijou 1922 i Flor de las Antillas bili su Cigara godine.",
+   "en": "The García family (Don Pepín) — own-grown tobacco and top construction. Le Bijou 1922 and Flor de las Antillas were both Cigar of the Year."
+  }
+ },
+ "Nat Sherman": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Nat Sherman — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Nat Sherman — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Nat Sherman Host": {
+  "country": "Honduras",
+  "founded": "—",
+  "blurb": {
+   "hr": "Nat Sherman Host — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Nat Sherman Host — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Nat Sherman Metropolitan": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Nat Sherman Metropolitan — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Nat Sherman Metropolitan — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Nat Sherman Timeless": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Nat Sherman Timeless — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Nat Sherman Timeless — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Nicarao": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Nicarao — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Nicarao — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Nordlicht": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Nordlicht — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Nordlicht — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Notorious": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Notorious — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Notorious — a brand listed in retail shop catalogues (HR/EU/USA)."
   }
  },
  "Nub": {
@@ -519,12 +2479,956 @@
    "en": "Sam Leccia's concept at the Oliva factory: short and fat, dropping you straight into the cigar's sweet spot — full flavour without the hour-long commitment."
   }
  },
+ "O. Danny Boy": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "O. Danny Boy — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "O. Danny Boy — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Old Henry": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Old Henry — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Old Henry — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Oliva": {
+  "country": "Nikaragva",
+  "founded": "1995",
+  "blurb": {
+   "hr": "Value legenda iz Nikaragve — od kremaste Serie G do nagrađivane, bogate Serie V Melanio. Iz iste fabrike u Estelíju dolazi i sestrinski brend Nub.",
+   "en": "A Nicaraguan value legend — from the creamy Serie G to the awarded, rich Serie V Melanio. The sister brand Nub comes from the same Estelí factory."
+  }
+ },
+ "Olman": {
+  "country": "Kostarika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Olman — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Olman — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Olmec": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Olmec — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Olmec — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Omar": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Omar — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Omar — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Omar Ortez": {
+  "country": "Honduras",
+  "founded": "—",
+  "blurb": {
+   "hr": "Omar Ortez — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Omar Ortez — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Onyx Reserve": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Onyx Reserve — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Onyx Reserve — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Ortega": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Ortega — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Ortega — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Oscar Valladares": {
+  "country": "Honduras",
+  "founded": "2014",
+  "blurb": {
+   "hr": "Honduraška boutique zvijezda — slatko-začinski, moderni i inovativni blendovi.",
+   "en": "A Honduran boutique star — sweet-spicy, modern and innovative blends."
+  }
+ },
+ "Oz Family": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Oz Family — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Oz Family — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Padilla": {
+  "country": "Honduras",
+  "founded": "—",
+  "blurb": {
+   "hr": "Padilla — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Padilla — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Padrón": {
+  "country": "Nikaragva",
+  "founded": "1964",
+  "blurb": {
+   "hr": "Obiteljska legenda — box-pressane nikaragvanske cigare besprijekorne izrade. Serije 1964 i 1926 su mjerilo za maduro s notama kakaa i espressa.",
+   "en": "A family legend — box-pressed Nicaraguan cigars of flawless construction. The 1964 and 1926 series are the maduro benchmark, all cocoa and espresso."
+  }
+ },
+ "Palmar": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Palmar — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Palmar — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Paperboy": {
+  "country": "Dominikanska Republika",
+  "founded": "2022",
+  "blurb": {
+   "hr": "Artista Studio Works (Tabacalera El Artista, Tamboril) — petit corona u snopu od 8, umotana u „novine” s izmišljenim pričama iz fabrike. Pristupačan dnevni format, konkurent Cusanu i Don Tomasu.",
+   "en": "Artista Studio Works (Tabacalera El Artista, Tamboril) — a petit corona in bundles of 8, wrapped in faux newspaper with tall tales from the factory. An affordable everyday format, rivalling Cusano and Don Tomas."
+  }
+ },
+ "Paradiso": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Paradiso — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Paradiso — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Parcero": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Parcero — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Parcero — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Partageno": {
+  "country": "Njemačka",
+  "founded": "—",
+  "blurb": {
+   "hr": "Partageno — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Partageno — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Partagás": {
+  "country": "Kuba",
+  "founded": "1845",
+  "blurb": {
+   "hr": "Jedna od najstarijih kubanskih marki, poznata po punom, zemljano-paprenom tijelu. Serie D No.4 je definirala moderni robusto format.",
+   "en": "One of Cuba's oldest marcas, famed for full, earthy-peppery body. The Serie D No.4 defined the modern robusto format."
+  }
+ },
+ "Patoro": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Patoro — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Patoro — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "PDR": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "PDR — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "PDR — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Perdomo": {
+  "country": "Nikaragva",
+  "founded": "1992",
+  "blurb": {
+   "hr": "Vertikalno integriran obiteljski brend; wrapperi odležani u bourbon bačvama daju karamelno-čokoladnu notu.",
+   "en": "A vertically integrated family brand; bourbon-barrel-aged wrappers add a caramel-chocolate note."
+  }
+ },
+ "Perla": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Perla — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Perla — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Perla del Mar": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Perla del Mar — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Perla del Mar — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Personales": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Personales — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Personales — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Peterson Hallmark": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Peterson Hallmark — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Peterson Hallmark — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Pichardo": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Pichardo — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Pichardo — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Plasencia": {
+  "country": "Nikaragva / Honduras",
+  "founded": "1865",
+  "blurb": {
+   "hr": "Peta generacija uzgajivača koja opskrbljuje pola industrije; vlastite linije (Alma Fuerte, Alma del Campo) su organske, bogate i kompleksne.",
+   "en": "Fifth-generation growers who supply half the industry; their own lines (Alma Fuerte, Alma del Campo) are organic, rich and complex."
+  }
+ },
+ "Platinum": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Platinum — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Platinum — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Por Larranaga": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Por Larranaga — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Por Larranaga — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Premium": {
+  "country": "Njemačka",
+  "founded": "—",
+  "blurb": {
+   "hr": "Premium — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Premium — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Principle": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Principle — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Principle — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Privada": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Privada — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Privada — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Prominent": {
+  "country": "Indonezija",
+  "founded": "—",
+  "blurb": {
+   "hr": "Prominent — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Prominent — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Psyko": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Psyko — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Psyko — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Punch": {
+  "country": "Kuba",
+  "founded": "1840",
+  "blurb": {
+   "hr": "Jedna od najstarijih marki, srednje-punog zemljano-kožnatog karaktera i odlične vrijednosti.",
+   "en": "One of the oldest marcas, medium-full with an earthy-leather character and great value."
+  }
+ },
+ "Puros Indios": {
+  "country": "Honduras",
+  "founded": "—",
+  "blurb": {
+   "hr": "Puros Indios — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Puros Indios — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Quai d'Orsay": {
+  "country": "Kuba",
+  "founded": "1973",
+  "blurb": {
+   "hr": "Izvorno stvorena za francusko tržište — najsvjetliji, cvjetno-travnati moderni habanos.",
+   "en": "Originally created for the French market — the brightest, floral-grassy modern habano."
+  }
+ },
+ "Querida": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Querida — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Querida — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Quesada": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Quesada — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Quesada — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Quintero": {
+  "country": "Kuba",
+  "founded": "1924",
+  "blurb": {
+   "hr": "Pristupačna kubanska marka (kratki filer) — rustikalna, zemljana, za svakodnevni užitak.",
+   "en": "An affordable Cuban marca (short filler) — rustic, earthy, for everyday enjoyment."
+  }
+ },
+ "Quisqueya": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Quisqueya — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Quisqueya — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Quorum": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Quorum — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Quorum — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Ra": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Ra — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Ra — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Raices": {
+  "country": "Honduras",
+  "founded": "—",
+  "blurb": {
+   "hr": "Raices — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Raices — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Rainmaker": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Rainmaker — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Rainmaker — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Ramón Allones": {
+  "country": "Kuba",
+  "founded": "1837",
+  "blurb": {
+   "hr": "Insajderski favorit — bogato, tamno-voćno i kakao tijelo. Prva marka koja je koristila tiskane etikete i kutije.",
+   "en": "An insider favourite — rich, dark-fruited, cocoa body. The first marca to use printed labels and boxes."
+  }
+ },
+ "Rancho": {
+  "country": "Honduras",
+  "founded": "—",
+  "blurb": {
+   "hr": "Rancho — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Rancho — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Rebellion": {
+  "country": "Honduras",
+  "founded": "—",
+  "blurb": {
+   "hr": "Rebellion — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Rebellion — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Regalia": {
+  "country": "Brazil",
+  "founded": "—",
+  "blurb": {
+   "hr": "Regalia — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Regalia — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Regius": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Regius — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Regius — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Reposado": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Reposado — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Reposado — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Reserva": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Reserva — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Reserva — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Rocky Patel": {
+  "country": "Honduras / Nikaragva",
+  "founded": "1996",
+  "blurb": {
+   "hr": "Bivši odvjetnik koji je izgradio jedan od najprepoznatljivijih brendova; Decade i Vintage serije odlikuje odležani duhan.",
+   "en": "A former lawyer who built one of the most recognisable brands; the Decade and Vintage lines feature aged tobacco."
+  }
+ },
+ "Rodrigo": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Rodrigo — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Rodrigo — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Rojas": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Rojas — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Rojas — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Roma": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Roma — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Roma — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Romeo y Julieta": {
+  "country": "Kuba",
+  "founded": "1875",
+  "blurb": {
+   "hr": "Aromatična, cvjetno-cedrasta marka koju je proslavio Winston Churchill (po njemu i istoimena vitola). Uravnotežena i pristupačna.",
+   "en": "An aromatic, floral-cedar marca made famous by Winston Churchill (the Churchill vitola bears his name). Balanced and approachable."
+  }
+ },
+ "Romeo y Julieta (NW)": {
+  "country": "Dominikanska Republika",
+  "founded": "1900-e",
+  "blurb": {
+   "hr": "Ne-kubanska Romeo y Julieta za američko tržište — dominikanska izdanja, blaga i pouzdana.",
+   "en": "The non-Cuban Romeo y Julieta for the US market — Dominican editions, mild and reliable."
+  }
+ },
  "Room101": {
   "country": "Nikaragva / SAD",
   "founded": "2009",
   "blurb": {
    "hr": "Brend losanđeleskog dizajnera nakita Matta Bootha — urbana estetika i suradnje s vrhunskim fabrikama (AJ Fernandez, Caldwell).",
    "en": "LA jewellery designer Matt Booth's brand — urban aesthetics and collaborations with top factories (AJ Fernandez, Caldwell)."
+  }
+ },
+ "Rosa": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Rosa — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Rosa — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Rough": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Rough — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Rough — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Royal Symbols": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Royal Symbols — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Royal Symbols — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Saga": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Saga — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Saga — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Saint Luis Rey": {
+  "country": "Honduras",
+  "founded": "—",
+  "blurb": {
+   "hr": "Saint Luis Rey — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Saint Luis Rey — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Sam Leccia": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Sam Leccia — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Sam Leccia — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Samana": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Samana — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Samana — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "San Cristobal": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "San Cristobal — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "San Cristobal — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "San Cristóbal de la Habana": {
+  "country": "Kuba",
+  "founded": "1999",
+  "blurb": {
+   "hr": "Nazvana po izvornom imenu Havane — bogata, srednje-puna marka s notama kave i kože.",
+   "en": "Named after Havana's original name — a rich, medium-full marca with coffee and leather notes."
+  }
+ },
+ "San Pedro": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "San Pedro — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "San Pedro — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Sancho Panza": {
+  "country": "Honduras",
+  "founded": "—",
+  "blurb": {
+   "hr": "Sancho Panza — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Sancho Panza — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Sansibar": {
+  "country": "Honduras",
+  "founded": "—",
+  "blurb": {
+   "hr": "Sansibar — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Sansibar — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Santa Clara": {
+  "country": "Meksiko",
+  "founded": "—",
+  "blurb": {
+   "hr": "Santa Clara — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Santa Clara — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Santa Damiana": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Santa Damiana — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Santa Damiana — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Savoy": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Savoy — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Savoy — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Schumacher": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Schumacher — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Schumacher — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Segovias": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Segovias — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Segovias — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Serino Royale": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Serino Royale — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Serino Royale — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Silencio": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Silencio — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Silencio — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Simon": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Simon — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Simon — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Skelton": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Skelton — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Skelton — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Skull": {
+  "country": "Kostarika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Skull — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Skull — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Smokin Sandwich": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Smokin Sandwich — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Smokin Sandwich — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Smoking": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Smoking — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Smoking — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Sobremesa": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Sobremesa — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Sobremesa — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Sons": {
+  "country": "Honduras",
+  "founded": "—",
+  "blurb": {
+   "hr": "Sons — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Sons — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Southern Draw": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Southern Draw — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Southern Draw — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Spartanos": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Spartanos — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Spartanos — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Stauffenberg": {
+  "country": "Honduras",
+  "founded": "—",
+  "blurb": {
+   "hr": "Stauffenberg — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Stauffenberg — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Syn": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Syn — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Syn — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "T.": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "T. — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "T. — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Tabacalera": {
+  "country": "Filipini",
+  "founded": "—",
+  "blurb": {
+   "hr": "Tabacalera — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Tabacalera — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Tabacos": {
+  "country": "Brazil",
+  "founded": "—",
+  "blurb": {
+   "hr": "Tabacos — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Tabacos — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Tabacos Baez": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Tabacos Baez — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Tabacos Baez — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Tambor": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Tambor — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Tambor — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Tarusata": {
+  "country": "Indonezija",
+  "founded": "—",
+  "blurb": {
+   "hr": "Tarusata — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Tarusata — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Tatascan": {
+  "country": "Honduras",
+  "founded": "—",
+  "blurb": {
+   "hr": "Tatascan — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Tatascan — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Tatuaje": {
+  "country": "Nikaragva",
+  "founded": "2003",
+  "blurb": {
+   "hr": "Pete Johnson — kubanski stil iz Nikaragve, boutique kultni status (Havana VI, Miami).",
+   "en": "Pete Johnson — Cuban style from Nicaragua, boutique cult status (Havana VI, Miami)."
+  }
+ },
+ "Teatro": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Teatro — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Teatro — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "The Bouncer": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "The Bouncer — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "The Bouncer — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "The Tabernacle": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "The Tabernacle — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "The Tabernacle — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "The Traveler": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "The Traveler — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "The Traveler — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Timeless": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Timeless — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Timeless — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Toraño": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Toraño — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Toraño — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Tortuga": {
+  "country": "Honduras",
+  "founded": "—",
+  "blurb": {
+   "hr": "Tortuga — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Tortuga — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Toscano": {
+  "country": "Italija",
+  "founded": "—",
+  "blurb": {
+   "hr": "Toscano — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Toscano — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Total": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Total — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Total — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Trinidad": {
+  "country": "Kuba",
+  "founded": "1969",
+  "blurb": {
+   "hr": "Nekad ekskluzivni diplomatski dar, danas luksuzna marka finog, medeno-cedrastog profila s laganim začinima.",
+   "en": "Once an exclusive diplomatic gift, now a luxury marca with a fine, honeyed-cedar profile and gentle spice."
+  }
+ },
+ "Umnum": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Umnum — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Umnum — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Urtyp": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Urtyp — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Urtyp — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Utopia": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Utopia — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Utopia — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Valentino": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Valentino — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Valentino — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Vallejuelo": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Vallejuelo — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Vallejuelo — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Vedado": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Vedado — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Vedado — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "VegaFina": {
+  "country": "Dominikanska Republika",
+  "founded": "1997",
+  "blurb": {
+   "hr": "Najrasprostranjenija blaga cigara u Europi (dostupna i u HR) — kremasta i pristupačna.",
+   "en": "The most widespread mild cigar in Europe (available in Croatia too) — creamy and approachable."
+  }
+ },
+ "Vegas": {
+  "country": "Kostarika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Vegas — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Vegas — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Vegas Robaina": {
+  "country": "Kuba",
+  "founded": "1997",
+  "blurb": {
+   "hr": "Nazvana po legendarnom uzgajivaču duhana Alejandru Robaini — snažna, zemljana marka za iskusne.",
+   "en": "Named after legendary tobacco grower Alejandro Robaina — a strong, earthy marca for the experienced."
+  }
+ },
+ "Victor": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Victor — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Victor — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Villa": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Villa — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Villa — a brand listed in retail shop catalogues (HR/EU/USA)."
   }
  },
  "Villa Zamorano": {
@@ -535,6 +3439,14 @@
    "en": "Maya Selva's 'great basic' — a handmade Honduran cigar at machine-made prices. Sumatra wrapper, Jamastran habano binder, medium body."
   }
  },
+ "Villiger": {
+  "country": "Švicarska / Dominikanska Republika",
+  "founded": "1888",
+  "blurb": {
+   "hr": "Švicarska kuća sa stoljetnom tradicijom — pouzdane value cigare za europsko tržište.",
+   "en": "A Swiss house with a century of tradition — reliable value cigars for the European market."
+  }
+ },
  "Viva La Vida": {
   "country": "Nikaragva",
   "founded": "2019",
@@ -543,12 +3455,68 @@
    "en": "Artesano del Tobacco (the Fakih brothers) from AJ Fernandez's factory — rich Nicaraguan blends with striking bands; the Connecticut version covers the milder side."
   }
  },
- "Don Tomas": {
-  "country": "Honduras",
-  "founded": "1974",
+ "Warlock": {
+  "country": "Nikaragva",
+  "founded": "—",
   "blurb": {
-   "hr": "Honduraška marka iz Danlíja, danas u portfelju Scandinavian Tobacco Groupa. Poznata po pristupačnim, zanatski rađenim cigarama srednjeg tijela — Clásico linija važi kao jedan od najboljih omjera cijene i kvalitete u premium segmentu.",
-   "en": "A Honduran brand from Danlí, today part of Scandinavian Tobacco Group. Known for affordable, well-made medium-bodied cigars — the Clásico line is regarded as one of the best values in the premium segment."
+   "hr": "Warlock — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Warlock — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Warped": {
+  "country": "Nikaragva",
+  "founded": "2009",
+  "blurb": {
+   "hr": "Kyle Gellis — povratak kubanskom stilu stare škole, svijetle i kremaste boutique cigare.",
+   "en": "Kyle Gellis — a return to old-school Cuban style, bright and creamy boutique cigars."
+  }
+ },
+ "West": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "West — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "West — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Wise Man": {
+  "country": "Nikaragva",
+  "founded": "—",
+  "blurb": {
+   "hr": "Wise Man — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Wise Man — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Woermann": {
+  "country": "Njemačka",
+  "founded": "—",
+  "blurb": {
+   "hr": "Woermann — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Woermann — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Wolfertz": {
+  "country": "Honduras",
+  "founded": "—",
+  "blurb": {
+   "hr": "Wolfertz — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Wolfertz — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Xhaxhi": {
+  "country": "Dominikanska Republika",
+  "founded": "—",
+  "blurb": {
+   "hr": "Xhaxhi — marka iz kataloga trgovina (HR/EU/USA).",
+   "en": "Xhaxhi — a brand listed in retail shop catalogues (HR/EU/USA)."
+  }
+ },
+ "Zino": {
+  "country": "Nikaragva",
+  "founded": "1987. (relaunch 2021.)",
+  "blurb": {
+   "hr": "Pristupačniji Davidoff brend — moderan nikaragvanski profil po razumnoj cijeni.",
+   "en": "Davidoff's accessible brand — a modern Nicaraguan profile at a fair price."
   }
  }
 }

@@ -96,6 +96,14 @@ Kad zatreba sync mobitel ↔ računalo:
 
 - Online prodaja duhana u HR nije dozvoljena — linkovi na cigare su referentni
   (humidor.hr prikazuje cijene po vitoli; havana-cigar-shop.com ima age-gate).
+- **Trgovine po regiji** (`app/src/data/shops.ts` — jedini izvor istine):
+  HR = The Humidor + Havana Cigar Shop; EU = CigarWorld (cigarworld.de/en);
+  USA = Holt's + Cigars Daily. Filter u Katalogu/Pairingu (**Sve · HR · EU · USA**;
+  zadano **Sve** = bez filtera → sve cigare, sortirano) mijenja i popis cigara i
+  prikazane trgovine. Detalj cigare grupira linkove po regiji; HR daje izravan link
+  na proizvod gdje postoji, EU/USA vode na pretragu po nazivu. HR cijena je jedina
+  scrapana pa se prikazuje i u "Sve"; EU/USA nemaju cijenu (ne izmišlja se broj).
+  Detaljan popis: **Katalog → Trgovine** (`docs/shops-by-region.md`).
 - Cijene pića: točni linkovi na allez.hr/ecuga.com gdje postoje (rum, whisky i brandy iz Excel
   kataloga), inače fallback na pretragu. **„Gdje kupiti”** prikazuje izravni shop link samo kad
   URL izgleda kao stranica *tog* proizvoda; inače „Traži online” (fuzzy match kataloga inače
