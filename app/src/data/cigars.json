@@ -2958,50 +2958,6 @@
     "priceUrl": "https://humidor.hr/hr/proizvod/arturo-fuente-don-carlos-presidente-25/"
   },
   {
-    "id": "cig-arturo-fuente-don-carlos-6-1-2-x-50",
-    "brand": "Arturo Fuente",
-    "line": "Don Carlos 6 1/2 X 50",
-    "vitola": "Don Carlos",
-    "format": "50 x 165mm",
-    "country": "Dominikanska Republika",
-    "wrapper": "—",
-    "strength": 3,
-    "body": 4,
-    "flavorTags": [
-      "zacini",
-      "cedar",
-      "kakao",
-      "koza"
-    ],
-    "smokeTimeMin": 60,
-    "priceEUR": 28.2,
-    "priceApprox": false,
-    "availabilityHR": [
-      "Havana Shop",
-      "The Humidor"
-    ],
-    "notes": {
-      "hr": "— wrapper (Dominikanska Republika); uravnotežena, srednje snage. Note: zacini, cedar, kakao.",
-      "en": "— wrapper (Dominikanska Republika); balanced, medium in strength. Notes of spice, cedar, cocoa."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Don Carlos",
-        "format": "50 x 165mm",
-        "smokeTimeMin": 60,
-        "priceEUR": 28.2,
-        "url": "https://humidor.hr/hr/proizvod/arturo-fuente-don-carlos-presidente-25/"
-      }
-    ],
-    "priceUrl": "https://humidor.hr/hr/proizvod/arturo-fuente-don-carlos-presidente-25/"
-  },
-  {
     "id": "cig-arturo-fuente-gran-reserva",
     "brand": "Arturo Fuente",
     "line": "Gran Reserva",
@@ -12572,7 +12528,7 @@
   {
     "id": "cig-joya-red",
     "brand": "Joya de Nicaragua",
-    "line": "JOYA Red / Cabinetta",
+    "line": "Joya Red",
     "vitola": "Robusto",
     "format": "50 x 127mm",
     "country": "Nikaragva",
@@ -12662,47 +12618,6 @@
     ],
     "priceUrl": "https://havana-cigar-shop.com/proizvod/joya-de-nicaragua-joya-black-robusto-20/",
     "profileEstimated": true
-  },
-  {
-    "id": "cig-joya-de-nicaragua-joya-red",
-    "brand": "Joya de Nicaragua",
-    "line": "Joya Red",
-    "vitola": "Robusto",
-    "format": "—",
-    "country": "Nikaragva",
-    "wrapper": "Habano",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [
-      "zacini",
-      "kremasto",
-      "citrus",
-      "drvo"
-    ],
-    "smokeTimeMin": 50,
-    "priceEUR": 13.5,
-    "priceApprox": false,
-    "availabilityHR": [
-      "Havana Shop"
-    ],
-    "notes": {
-      "hr": "JOYA Red je moderna, pitkija strana najstarije nikaragvanske fabrike — sočni začini, kremasto, bez težine Antaña.",
-      "en": "JOYA Red is the modern, sessionable side of Nicaragua's oldest factory — juicy spice, creamy, without Antaño's weight."
-    },
-    "markets": [
-      "HR",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Robusto",
-        "format": "—",
-        "smokeTimeMin": 50,
-        "priceEUR": 13.5,
-        "url": "https://havana-cigar-shop.com/proizvod/joya-de-nicaragua-joya-red-robusto-20/"
-      }
-    ],
-    "priceUrl": "https://havana-cigar-shop.com/proizvod/joya-de-nicaragua-joya-red-robusto-20/"
   },
   {
     "id": "cig-joya-de-nicaragua-joya-silver",
@@ -12799,96 +12714,6 @@
       }
     ],
     "priceUrl": "https://humidor.hr/hr/proizvod/1502-nicaragua-robusto-5-x-50/",
-    "profileEstimated": true
-  },
-  {
-    "id": "cig-joya-de-nicaragua-numero-uno-le-premier",
-    "brand": "Joya de Nicaragua",
-    "line": "Numero Uno Le Premier",
-    "vitola": "Le Premier",
-    "format": "—",
-    "country": "Nikaragva",
-    "wrapper": "—",
-    "strength": 4,
-    "body": 4,
-    "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
-    ],
-    "smokeTimeMin": 45,
-    "priceEUR": 22.8,
-    "priceApprox": false,
-    "availabilityHR": [
-      "Havana Shop",
-      "The Humidor"
-    ],
-    "notes": {
-      "hr": "— wrapper (Nikaragva); punija i izražajna. Note: cedar, zacini, koza.",
-      "en": "— wrapper (Nikaragva); fuller and expressive. Notes of cedar, spice, leather."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Le Premier",
-        "format": "—",
-        "smokeTimeMin": 45,
-        "priceEUR": 22.8,
-        "url": "https://havana-cigar-shop.com/proizvod/joya-de-nicaragua-numero-uno-le-premier-25/"
-      }
-    ],
-    "priceUrl": "https://havana-cigar-shop.com/proizvod/joya-de-nicaragua-numero-uno-le-premier-25/",
-    "profileEstimated": true
-  },
-  {
-    "id": "cig-joya-de-nicaragua-rosalones-autenticos-460",
-    "brand": "Joya de Nicaragua",
-    "line": "Rosalones Autenticos 460",
-    "vitola": "Auténticos 460",
-    "format": "—",
-    "country": "Nikaragva",
-    "wrapper": "—",
-    "strength": 4,
-    "body": 4,
-    "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
-    ],
-    "smokeTimeMin": 45,
-    "priceEUR": 11.7,
-    "priceApprox": false,
-    "availabilityHR": [
-      "Havana Shop",
-      "The Humidor"
-    ],
-    "notes": {
-      "hr": "Rosalones je tradicionalna serija za europsko tržište — pošteni nikaragvanski profil izvrsnog omjera cijene i kvalitete.",
-      "en": "Rosalones is the traditional series for Europe — an honest Nicaraguan profile at excellent value."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Auténticos 460",
-        "format": "—",
-        "smokeTimeMin": 45,
-        "priceEUR": 11.7,
-        "url": "https://havana-cigar-shop.com/proizvod/joya-de-nicaragua-rosalones-autenticos-460-20/"
-      }
-    ],
-    "priceUrl": "https://havana-cigar-shop.com/proizvod/joya-de-nicaragua-rosalones-autenticos-460-20/",
     "profileEstimated": true
   },
   {
