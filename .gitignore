@@ -9,9 +9,11 @@ Konjak_Brandy_Checklist.xlsx
 # python cache
 __pycache__/
 
-# raw shop scrape cache + outputs (generated; do not commit by default)
+# raw shop scrape cache + per-shop outputs (generated; do not commit)
 app/scripts/.cache/
 app/scripts/output/cigar_shop_*_raw.json
+# keep the unified catalog commit-able as the deliverable artifact
+# app/scripts/output/cigar_unified_catalog.json
 app/scripts/output/cigar_market_catalog.json
 
 # agent / SDD working files
