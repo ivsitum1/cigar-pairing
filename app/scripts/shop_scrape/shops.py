@@ -1,8 +1,10 @@
 from __future__ import annotations
 
+import json
 import re
 import urllib.error
 from dataclasses import dataclass
+from pathlib import Path
 from typing import Any
 
 from shop_scrape.details import (
@@ -331,7 +333,12 @@ def scrape_holts_us(client: HttpClient, *, limit: int | None) -> dict:
     return _wrap_shop(shop, source_kind="sitemap+jsonld", entrypoints=[sitemap_url], items=items)
 
 
-def scrape_cigarworld_eu(client: HttpClient, *, limit: int | None) -> dict:
+def scrape_cigarworld_eu(
+    client: HttpClient,
+    *,
+    limit: int | None,
+    checkpoint_path: str | None = None,
+) -> dict:
     shop = ShopDef("cigarworld_eu", "Cigarworld", "EU", "https://www.cigarworld.de", "EUR")
     index_url = "https://www.cigarworld.de/sitemap.xml"
     index_locs = iter_sitemap_locs(client.get_text(index_url))
@@ -346,6 +353,22 @@ def scrape_cigarworld_eu(client: HttpClient, *, limit: int | None) -> dict:
         candidates = [u for u in locs if "/en/zigarren/" in u]
 
     items: list[dict] = []
+
+    def _checkpoint() -> None:
+        if not checkpoint_path:
+            return
+        payload = _wrap_shop(
+            shop,
+            source_kind="sitemap+jsonld+variantinfo",
+            entrypoints=[index_url, sitemap_url],
+            items=items,
+        )
+        path = Path(checkpoint_path)
+        path.parent.mkdir(parents=True, exist_ok=True)
+        tmp = path.with_suffix(path.suffix + ".tmp")
+        tmp.write_text(json.dumps(payload, ensure_ascii=False, indent=1), encoding="utf-8")
+        tmp.replace(path)
+
     for url in candidates:
         try:
             html = client.get_text(url)
@@ -367,9 +390,11 @@ def scrape_cigarworld_eu(client: HttpClient, *, limit: int | None) -> dict:
         items.append(item)
         if len(items) % 50 == 0:
             print(f"  cigarworld items {len(items)}", flush=True)
+            _checkpoint()
         if limit is not None and len(items) >= limit:
             break
 
+    _checkpoint()
     return _wrap_shop(
         shop,
         source_kind="sitemap+jsonld+variantinfo",

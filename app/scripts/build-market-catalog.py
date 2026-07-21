@@ -102,6 +102,11 @@ def normalize_name(s: str | None) -> str:
     if not s or not isinstance(s, str):
         return ""
     s = s.casefold()
+    # Drop common shop pack / size noise before tokenizing.
+    s = re.sub(r"\([^)]*\d+\s*[x×]\s*\d+[^)]*\)", " ", s)
+    s = re.sub(r"/\s*\d+\*?", " ", s)
+    s = re.sub(r"\b\d+\s*[x×]\s*\d+(\.\d+)?\b", " ", s)
+    s = re.sub(r"\bbox\s*pressed\b", " ", s)
     s = re.sub(r"[^a-z0-9]+", " ", s)
     return re.sub(r"\s+", " ", s).strip()
 
@@ -120,6 +125,18 @@ def candidate_name_keys(brand: str, line: str, vitola_name: str) -> list[str]:
     return keys
 
 
+def shop_name_keys(name: str | None) -> list[str]:
+    """Index keys for a shop product title (full + stripped pack suffixes)."""
+    if not name or not isinstance(name, str):
+        return []
+    keys: list[str] = []
+    full = normalize_name(name)
+    if full:
+        keys.append(full)
+    # Also index without trailing vitola-ish last token collisions handled by full string.
+    return keys
+
+
 def build_catalog(cigars: list[dict], raw_rows: list[dict]) -> tuple[list[dict], list[dict]]:
     offers_by_url: dict[str, list[dict]] = {}
     offers_by_name: dict[str, list[dict]] = {}
@@ -129,8 +146,7 @@ def build_catalog(cigars: list[dict], raw_rows: list[dict]) -> tuple[list[dict],
         nurl = normalize_url(item.get("url"))
         if nurl:
             offers_by_url.setdefault(nurl, []).append(offer)
-        nname = normalize_name(item.get("name") if isinstance(item.get("name"), str) else "")
-        if nname:
+        for nname in shop_name_keys(item.get("name") if isinstance(item.get("name"), str) else ""):
             offers_by_name.setdefault(nname, []).append(offer)
 
     matched_urls: set[str] = set()
