@@ -94,6 +94,19 @@ dupes. Davidoff is now 19 clean lines with no URL shared across lines.
 Also merged: Joya de Nicaragua dup lines (Joya Red, Numero Uno Le Premier,
 Rosalones) and the Arturo Fuente "Don Carlos 6 1/2 X 50" dimension-dup line.
 
+### DONE (later passes)
+- Arturo Fuente "Chateau & Cubans" merged away; 39 lazy fallback URLs nulled.
+- La Aurora contamination + ordinal casing (`20Th`→`20th`, `71St`→`71st`, …).
+- Shared-URL disambiguation index-wide: for any product URL used across 2+
+  lines, the URL is kept only on the vitola whose line+name best matches the
+  slug; on the others it is nulled (→ brand search). Fixes contamination
+  (Joya→1502, AF Gran Reserva→Curly Head / Cuban Corona, Cohiba Siglo Tubos→
+  Medio Siglo, etc.). **Dimension-named lines were NOT removed** — the
+  "Additional Vitolas" remap created them intentionally and `cigars.data.test.ts`
+  guards specific ids (e.g. `cig-rocky-patel-sixty-toro-6-1-2-x-52`).
+- ~18 URLs remain shared where line+name tie exactly; left as-is (safer than
+  guessing).
+
 ### Still open — needs owner judgment (not auto-fixable)
 1. **Arturo Fuente "Chateau & Cubans" vs "Chateau Fuente"** — heavy vitola
    overlap (Chateau Fuente, Fuente Pyramids, King T, T Rosado in both).
