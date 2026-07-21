@@ -11,8 +11,9 @@ import {
   buffetTotal,
   collectionGaps,
   groupWishlistByShop,
+  groupWishlistDrinksByCategory,
   segmentPicks,
-  wishlistText,
+  wishlistTextSections,
 } from "../lib/shoppingPicks";
 
 const CATEGORIES: DrinkCategory[] = [
@@ -48,6 +49,11 @@ export function ShoppingPage() {
     const s = getItemState(c.id);
     return s.wishlist && !s.owned;
   });
+  // cigare odvojeno; pića po kategoriji (rum, whisky, …)
+  const wishlistDrinkGroups = groupWishlistDrinksByCategory(
+    wishlistDrinks,
+    CATEGORIES,
+  );
   const wishlistTotal =
     wishlistDrinks.reduce((s, d) => s + (d.priceEUR?.min ?? 0), 0) +
     wishlistCigars.reduce((s, c) => s + (c.priceEUR ?? 0), 0);
@@ -68,17 +74,23 @@ export function ShoppingPage() {
   );
 
   const shareWishlist = async () => {
-    const text = wishlistText(
+    const text = wishlistTextSections(
       [
-        ...wishlistCigars.map((c) => ({
-          name: `${c.brand} ${c.line}`,
-          price: c.priceEUR,
-          shop: c.availabilityHR?.[0],
-        })),
-        ...wishlistDrinks.map((d) => ({
-          name: d.name,
-          price: d.priceEUR?.min ?? null,
-          shop: d.shopHR,
+        {
+          title: t("cat.cigars"),
+          items: wishlistCigars.map((c) => ({
+            name: `${c.brand} ${c.line}`,
+            price: c.priceEUR,
+            shop: c.availabilityHR?.[0],
+          })),
+        },
+        ...wishlistDrinkGroups.map(({ category, drinks }) => ({
+          title: t(`cat.${category}` as StringKey),
+          items: drinks.map((d) => ({
+            name: d.name,
+            price: d.priceEUR?.min ?? null,
+            shop: d.shopHR,
+          })),
         })),
       ],
       t("shop.total"),
@@ -148,12 +160,34 @@ export function ShoppingPage() {
         </p>
       ) : (
         <>
-          <div className="space-y-2">
-            {wishlistCigars.map((c) => (
-              <CigarRow key={c.id} cigar={c} onClick={() => setDetail({ kind: "cigar", item: c })} />
-            ))}
-            {wishlistDrinks.map((d) => (
-              <DrinkRow key={d.id} drink={d} onClick={() => openDrink(d)} />
+          <div className="space-y-4">
+            {wishlistCigars.length > 0 && (
+              <div>
+                <div className="mb-1.5 font-display text-xs uppercase tracking-[0.2em] text-zlato">
+                  {t("cat.cigars")}
+                </div>
+                <div className="space-y-2">
+                  {wishlistCigars.map((c) => (
+                    <CigarRow
+                      key={c.id}
+                      cigar={c}
+                      onClick={() => setDetail({ kind: "cigar", item: c })}
+                    />
+                  ))}
+                </div>
+              </div>
+            )}
+            {wishlistDrinkGroups.map(({ category, drinks }) => (
+              <div key={category}>
+                <div className="mb-1.5 font-display text-xs uppercase tracking-[0.2em] text-zlato">
+                  {t(`cat.${category}` as StringKey)}
+                </div>
+                <div className="space-y-2">
+                  {drinks.map((d) => (
+                    <DrinkRow key={d.id} drink={d} onClick={() => openDrink(d)} />
+                  ))}
+                </div>
+              </div>
             ))}
           </div>
           <div className="mt-2 flex items-center justify-between gap-2">
