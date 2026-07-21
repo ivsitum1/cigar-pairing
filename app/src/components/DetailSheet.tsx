@@ -387,21 +387,32 @@ function CigarBuyLinks({ cigar }: { cigar: Cigar }) {
             <div className="grid grid-cols-2 gap-2">
               {links
                 .filter((l) => l.region === r)
-                .map((l) => (
-                  <a
-                    key={l.shop}
-                    href={l.url}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="rounded-lg border border-zlato/40 bg-zlato/10 px-2 py-2 text-center text-xs text-zlato-2 hover:bg-zlato/20"
-                  >
-                    {l.shop}{" "}
-                    <span className="text-[10px] text-dim">
-                      · {l.exact ? t("shops.direct") : t("shops.search")}
-                    </span>{" "}
-                    ↗
-                  </a>
-                ))}
+                .map((l) => {
+                  const rl = cigar.regionLinks?.[r];
+                  const price =
+                    rl && rl.shop === l.shop && rl.priceEUR != null
+                      ? `${rl.priceApprox ? "~" : ""}${rl.priceEUR.toFixed(rl.priceEUR % 1 ? 2 : 0)} €`
+                      : null;
+                  return (
+                    <a
+                      key={l.shop}
+                      href={l.url}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="rounded-lg border border-zlato/40 bg-zlato/10 px-2 py-2 text-center text-xs text-zlato-2 hover:bg-zlato/20"
+                    >
+                      {l.shop}{" "}
+                      {price ? (
+                        <span className="text-zlato-2">· {price}</span>
+                      ) : (
+                        <span className="text-[10px] text-dim">
+                          · {l.exact ? t("shops.direct") : t("shops.search")}
+                        </span>
+                      )}{" "}
+                      ↗
+                    </a>
+                  );
+                })}
             </div>
           </div>
         ))}

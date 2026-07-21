@@ -131,6 +131,25 @@ merge-shops → dedupe-data → npm test`. Staje na prvoj grešci (postojeći uz
 - Real-time cijene / tečaj (pinnani tečaj + `priceApprox`).
 - Mijenjanje HR-centričnog modela ocjena/profila.
 
+## Napredak
+
+- **Faza A — ODRAĐENO** (`app/scripts/enrich-region-links.py`): postojećih 514
+  cigara obogaćeno stvarnim `regionLinks` (HR/EU/USA product URL + cijena) iz
+  `cigar_unified_catalog.json` (9 336 zapisa; unija scrapa 5 trgovina, generirana
+  na grani `cursor/shop-raw-catalogs-d678`). Rezultat: 402 cigare s regionLinks,
+  EU dostupnost 297→404, USA 243→266, **10 embargo prekršaja popravljeno (Cuban+USA)**.
+  UI (`cigarShopLinks`/`cigarPriceForMarket`/DetailSheet/cards) čita `regionLinks`
+  i prikazuje izravan EU/USA link + cijenu (USD→EUR `priceApprox`). Testovi: embargo
+  guard + regionLinks host guard; 130/130 zeleno. Izvor 26 MB je gitignoriran
+  (regeneracija iz grane B).
+  - *Poznato ograničenje:* EU/USA cijena je "od" na razini **linije** (shop nema
+    uvijek točnu vitolu); link vodi na proizvod te linije u toj trgovini.
+- **Faza B — SLJEDEĆE** (batchano): 2 513 shop-only cigara pod **postojećim** 63
+  brenda → dodati kao nove vitole/linije (Additional Vitolas uzorak), po brendu,
+  vrhunska kvaliteta (čist line/vitola split, ne sirovi „Toro Box-Pressed" nazivi).
+- **Faza C — poslije** (batchano): 5 517 pod **novim** brendovima → svaki batch
+  dodaje `brands.json` metapodatke (zemlja/founded/blurb) + guard 1:1.
+
 ## Deliverables
 
 1. Browser launcher + 3 scrape skripte (cigarworld, holts, cigarsdaily).

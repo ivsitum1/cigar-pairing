@@ -92,6 +92,10 @@ export interface Cigar {
   priceUrl?: string | null; // izvor cijene / gdje kupiti
   vitolas: Vitola[];
   markets: Market[]; // gdje se moze kupiti
+  // Izravan link na proizvod + cijena po regiji (iz stvarnog scrape-a trgovina).
+  // HR/EU/USA gdje postoji; EU/USA cijena je "od" na razini linije, USD->EUR
+  // konverzija nosi priceApprox. Embargo: kubanke nemaju USA.
+  regionLinks?: Partial<Record<Region, { shop: string; url: string; priceEUR?: number; priceApprox?: boolean }>>;
   availabilityHR: string[];
   notes: LocalizedText;
   // Za samplere/gift-packove: popis linija cigara koje pakiranje sadrzi.

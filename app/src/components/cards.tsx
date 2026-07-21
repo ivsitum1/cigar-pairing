@@ -9,13 +9,14 @@ import { useMarket } from "../store/market";
 export function CigarPrice({ cigar }: { cigar: Cigar }) {
   const { t } = useI18n();
   const market = useMarket();
-  const { price, fromMany } = cigarPriceForMarket(cigar, market);
+  const { price, fromMany, approx } = cigarPriceForMarket(cigar, market);
   if (price == null) {
     return <span className="text-dim/70">{t("price.check")}</span>;
   }
   return (
     <span>
       {fromMany ? `${t("price.from")} ` : ""}
+      {approx ? "~" : ""}
       {price.toFixed(price % 1 ? 2 : 0)} €
     </span>
   );

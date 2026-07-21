@@ -185,7 +185,16 @@ export function cigarShopLinks(c: Cigar): CigarShopLink[] {
   const out: CigarShopLink[] = [];
   for (const region of REGIONS) {
     if (!c.markets.includes(region)) continue;
+    // scrapani izravan link na proizvod za EU/USA (HR ostaje na vlastitim
+    // product linkovima iz vitola/priceUrl kao izvoru istine)
+    const rl = region === "HR" ? undefined : c.regionLinks?.[region];
+    let usedShop: string | null = null;
+    if (rl?.url) {
+      out.push({ region, shop: rl.shop, url: rl.url, exact: true });
+      usedShop = rl.shop;
+    }
     for (const shop of shopsForRegion(region)) {
+      if (shop.name === usedShop) continue; // vec dodan kao izravan link
       const exact = shop.productHost ? exactProductUrl(c, shop.productHost) : null;
       out.push({
         region,
@@ -218,7 +227,13 @@ export function cigarLinkForMarket(c: Cigar, region: RegionFilter): string {
 export function cigarPriceForMarket(
   c: Cigar,
   region: RegionFilter,
-): { price: number | null; fromMany: boolean } {
+): { price: number | null; fromMany: boolean; approx?: boolean } {
+  // EU/USA: scrapana "od" cijena na razini linije (USD->EUR nosi approx)
+  if (region === "EU" || region === "USA") {
+    const rl = c.regionLinks?.[region];
+    if (rl?.priceEUR != null) return { price: rl.priceEUR, fromMany: false, approx: rl.priceApprox };
+    return { price: null, fromMany: false };
+  }
   if (region !== "HR" && region !== "ALL") return { price: null, fromMany: false };
 
   const defaultVitola = resolveDefaultVitola(c);

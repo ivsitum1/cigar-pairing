@@ -178,13 +178,53 @@ describe("cigars.json integrity", () => {
     }
   });
 
-  it("ALL filter prikazuje HR cijenu i HR link (bez izmisljanja EU/USA cijene)", () => {
+  it("embargo — nijedna kubanka nema USA tržište/regionLinks", () => {
+    const cuban = CIGARS.filter((c) => /kub|cuba/i.test(c.country));
+    expect(cuban.length).toBeGreaterThan(0);
+    const bad = cuban.filter(
+      (c) => c.markets.includes("USA") || c.regionLinks?.USA,
+    );
+    expect(bad.map((c) => c.id)).toEqual([]);
+  });
+
+  it("regionLinks — host odgovara regiji i EU/USA su izravni linkovi", () => {
+    const hostByRegion: Record<string, string[]> = {
+      HR: ["humidor.hr", "havana-cigar-shop.com"],
+      EU: ["cigarworld.de"],
+      USA: ["holts.com", "cigarsdaily.com"],
+    };
+    const bad: string[] = [];
+    for (const c of CIGARS) {
+      for (const [region, link] of Object.entries(c.regionLinks ?? {})) {
+        const host = new URL(link.url).host;
+        if (!hostByRegion[region].some((h) => host.includes(h))) {
+          bad.push(`${c.id}: ${region} -> ${host}`);
+        }
+        // EU/USA regionLink mora dati izravan (exact) link u cigarShopLinks
+        if (region !== "HR") {
+          const sl = cigarShopLinks(c).find((l) => l.region === region && l.exact);
+          if (!sl) bad.push(`${c.id}: ${region} regionLink nije exact u cigarShopLinks`);
+        }
+      }
+    }
+    expect(bad).toEqual([]);
+  });
+
+  it("ALL filter prikazuje HR cijenu i HR link", () => {
     const gr = CIGARS.find((c) => c.id === "cig-arturo-fuente-gran-reserva")!;
     expect(cigarPriceForMarket(gr, "ALL").price).toBe(cigarPriceForMarket(gr, "HR").price);
     expect(cigarLinkForMarket(gr, "ALL")).toContain("humidor.hr");
-    // EU/USA nemaju scrapanu cijenu
-    expect(cigarPriceForMarket(gr, "EU").price).toBeNull();
-    expect(cigarPriceForMarket(gr, "USA").price).toBeNull();
+  });
+
+  it("EU/USA cijena dolazi iz regionLinks (scrape), null kad je nema — ne izmišlja se", () => {
+    for (const region of ["EU", "USA"] as const) {
+      const withLink = CIGARS.find((c) => c.regionLinks?.[region]?.priceEUR != null);
+      if (withLink) {
+        expect(cigarPriceForMarket(withLink, region).price).toBe(withLink.regionLinks![region]!.priceEUR);
+      }
+      const noLink = CIGARS.find((c) => !c.regionLinks?.[region]);
+      if (noLink) expect(cigarPriceForMarket(noLink, region).price).toBeNull();
+    }
   });
 
   it("brands.json i cigars.json — 1:1 pokrivenost brendova", () => {
