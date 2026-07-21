@@ -8,6 +8,7 @@ if str(SCRIPTS_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPTS_DIR))
 
 from shop_scrape.http import _cache_key, iso_utc_now  # noqa: E402
+from shop_scrape.woocommerce import wc_price_to_amount  # noqa: E402
 
 
 class TestHttpHelpers(unittest.TestCase):
@@ -18,6 +19,12 @@ class TestHttpHelpers(unittest.TestCase):
         s = iso_utc_now()
         self.assertTrue(s.endswith("Z"))
         self.assertIn("T", s)
+
+
+class TestWooCommerce(unittest.TestCase):
+    def test_wc_price_to_amount(self):
+        prices = {"price": "1200", "currency_minor_unit": 2}
+        self.assertEqual(wc_price_to_amount(prices), 12.0)
 
 
 if __name__ == "__main__":
