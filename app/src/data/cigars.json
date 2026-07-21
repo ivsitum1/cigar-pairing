@@ -2659,94 +2659,6 @@
     "profileEstimated": true
   },
   {
-    "id": "cig-arturo-fuente-af-chateau",
-    "brand": "Arturo Fuente",
-    "line": "Chateau & Cubans",
-    "vitola": "Petit Corona",
-    "format": "50 x 127mm",
-    "country": "Dominikanska Republika",
-    "wrapper": "Connecticut shade",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [
-      "kremasto",
-      "cedar",
-      "orasasti",
-      "med",
-      "trava-slatka"
-    ],
-    "smokeTimeMin": 50,
-    "priceEUR": 12.3,
-    "priceApprox": false,
-    "availabilityHR": [
-      "The Humidor",
-      "Havana Shop"
-    ],
-    "notes": {
-      "hr": "Connecticut shade wrapper (Dominikanska Republika); uravnotežena, srednje snage. Note: kremasto, cedar, orasasti.",
-      "en": "Connecticut shade wrapper (Dominikanska Republika); balanced, medium in strength. Notes of cream, cedar, nuts. Connecticut robusto; mild-medium cream."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Exquisitos",
-        "format": "33 x 114mm",
-        "smokeTimeMin": 30,
-        "priceEUR": 12.3,
-        "url": "https://humidor.hr/hr/proizvod/arturo-fuente-cuban-corona-25/"
-      },
-      {
-        "name": "Chateau Fuente",
-        "format": "50 x 127mm",
-        "smokeTimeMin": 50,
-        "priceEUR": 12.3,
-        "url": "https://humidor.hr/hr/proizvod/arturo-fuente-cuban-corona-25/"
-      },
-      {
-        "name": "Petit Corona",
-        "format": "—",
-        "smokeTimeMin": 50,
-        "priceEUR": 12.3,
-        "url": "https://havana-cigar-shop.com/proizvod/arturo-fuente-cuban-corona-25/"
-      },
-      {
-        "name": "Cubanitos",
-        "format": "—",
-        "smokeTimeMin": 50,
-        "priceEUR": 5.0,
-        "url": "https://havana-cigar-shop.com/proizvod/arturo-fuente-cubanitos-10/"
-      },
-      {
-        "name": "Fuente Pyramids",
-        "format": "—",
-        "smokeTimeMin": 50,
-        "priceEUR": 20.2,
-        "url": "https://havana-cigar-shop.com/proizvod/arturo-fuente-chateau-fuente-pyramids-25/"
-      },
-      {
-        "name": "King T",
-        "format": "—",
-        "smokeTimeMin": 50,
-        "priceEUR": 27.4,
-        "url": "https://havana-cigar-shop.com/proizvod/arturo-fuente-chateau-fuente-king-t-24/"
-      },
-      {
-        "name": "T Rosado",
-        "format": "—",
-        "smokeTimeMin": 50,
-        "priceEUR": 27.3,
-        "url": "https://havana-cigar-shop.com/proizvod/arturo-fuente-chateau-fuente-king-t-rosado-24/"
-      }
-    ],
-    "priceUrl": "https://havana-cigar-shop.com/proizvod/arturo-fuente-cuban-corona-25/",
-    "profileEstimated": true
-  },
-  {
     "id": "cig-arturo-fuente-chateau-fuente",
     "brand": "Arturo Fuente",
     "line": "Chateau Fuente",
@@ -3227,7 +3139,7 @@
         "format": "48 x 178mm",
         "smokeTimeMin": 85,
         "priceEUR": 12.3,
-        "url": "https://humidor.hr/hr/proizvod/arturo-fuente-cuban-corona-25/"
+        "url": null
       },
       {
         "name": "Opus X Double Corona",
@@ -3469,7 +3381,7 @@
         "format": "50 x 152mm",
         "smokeTimeMin": 65,
         "priceEUR": 11.0,
-        "url": "https://humidor.hr/hr/proizvod/ashton-classic-corona-5-1-2-x-44/"
+        "url": null
       },
       {
         "name": "Classic Churchill",
@@ -4728,7 +4640,7 @@
         "format": "52 x 127mm",
         "smokeTimeMin": 50,
         "priceEUR": 11.4,
-        "url": "https://humidor.hr/hr/proizvod/camacho-connecticut-robusto-5-x-50/"
+        "url": null
       },
       {
         "name": "Diploma Toro",
@@ -11086,28 +10998,28 @@
         "format": "42 x 129mm",
         "smokeTimeMin": 40,
         "priceEUR": 11.5,
-        "url": "https://humidor.hr/hr/proizvod/h-upmann-half-corona-3-1-2-x-44/"
+        "url": null
       },
       {
         "name": "Corona Major",
         "format": "42 x 140mm",
         "smokeTimeMin": 50,
         "priceEUR": 11.5,
-        "url": "https://humidor.hr/hr/proizvod/h-upmann-half-corona-3-1-2-x-44/"
+        "url": null
       },
       {
         "name": "Ashler",
         "format": "50 x 124mm",
         "smokeTimeMin": 50,
         "priceEUR": 11.5,
-        "url": "https://humidor.hr/hr/proizvod/h-upmann-half-corona-3-1-2-x-44/"
+        "url": null
       },
       {
         "name": "Propios",
         "format": "52 x 120mm",
         "smokeTimeMin": 50,
         "priceEUR": 11.5,
-        "url": "https://humidor.hr/hr/proizvod/h-upmann-half-corona-3-1-2-x-44/"
+        "url": null
       },
       {
         "name": "Robustos Extra",
@@ -11121,7 +11033,7 @@
         "format": "52 x 156mm",
         "smokeTimeMin": 70,
         "priceEUR": 11.5,
-        "url": "https://humidor.hr/hr/proizvod/h-upmann-half-corona-3-1-2-x-44/"
+        "url": null
       }
     ],
     "priceUrl": "https://humidor.hr/hr/proizvod/h-upmann-half-corona-3-1-2-x-44/",
@@ -11165,14 +11077,14 @@
         "format": "42 x 127mm",
         "smokeTimeMin": 40,
         "priceEUR": 11.5,
-        "url": "https://humidor.hr/hr/proizvod/h-upmann-half-corona-3-1-2-x-44/"
+        "url": null
       },
       {
         "name": "Majestic",
         "format": "40 x 140mm",
         "smokeTimeMin": 50,
         "priceEUR": 11.5,
-        "url": "https://humidor.hr/hr/proizvod/h-upmann-half-corona-3-1-2-x-44/"
+        "url": null
       },
       {
         "name": "Connossieur B",
@@ -11379,7 +11291,7 @@
         "format": "52 x 135mm",
         "smokeTimeMin": 60,
         "priceEUR": 11.5,
-        "url": "https://humidor.hr/hr/proizvod/h-upmann-half-corona-3-1-2-x-44/"
+        "url": null
       },
       {
         "name": "Sir Winston",
@@ -13190,7 +13102,7 @@
         "format": "50 x 127mm",
         "smokeTimeMin": 50,
         "priceEUR": 9.2,
-        "url": "https://humidor.hr/hr/proizvod/la-aurora-107-nicaragua-robusto-5-x-50/"
+        "url": null
       }
     ],
     "priceUrl": "https://humidor.hr/hr/proizvod/la-aurora-1903-edition-connecticut-toro-5-1-2-x-54/"
@@ -13278,14 +13190,14 @@
         "format": "50 x 127mm",
         "smokeTimeMin": 50,
         "priceEUR": 9.0,
-        "url": "https://humidor.hr/hr/proizvod/la-aurora-107-robusto-5-x-50/"
+        "url": null
       },
       {
         "name": "ADN Toro",
         "format": "52 x 152mm",
         "smokeTimeMin": 65,
         "priceEUR": 12.5,
-        "url": "https://humidor.hr/hr/proizvod/la-aurora-1903-edition-connecticut-toro-5-1-2-x-54/"
+        "url": null
       },
       {
         "name": "ADN Belicoso",
@@ -13344,14 +13256,14 @@
         "format": "52 x 127mm",
         "smokeTimeMin": 50,
         "priceEUR": 9.0,
-        "url": "https://humidor.hr/hr/proizvod/la-aurora-107-robusto-5-x-50/"
+        "url": null
       },
       {
         "name": "Family Reserve Toro",
         "format": "54 x 152mm",
         "smokeTimeMin": 65,
         "priceEUR": 12.5,
-        "url": "https://humidor.hr/hr/proizvod/la-aurora-1903-edition-connecticut-toro-5-1-2-x-54/"
+        "url": null
       },
       {
         "name": "Family Reserve Churchill",
@@ -14811,7 +14723,7 @@
         "format": "60 x 152mm",
         "smokeTimeMin": 70,
         "priceEUR": 14.0,
-        "url": "https://humidor.hr/hr/proizvod/macanudo-cafe-crystal-5%c2%bd-x-50/"
+        "url": null
       },
       {
         "name": "Petit Corona",
@@ -15566,7 +15478,7 @@
         "format": "52 x 152mm",
         "smokeTimeMin": 70,
         "priceEUR": 32.0,
-        "url": "https://humidor.hr/hr/proizvod/montecristo-no-2-6-1-8-x-52/"
+        "url": null
       }
     ],
     "priceUrl": "https://havana-cigar-shop.com/proizvod/montecristo-especial-no-2-25/",
@@ -16735,7 +16647,7 @@
         "format": "60 x 102mm",
         "smokeTimeMin": 40,
         "priceEUR": 10.2,
-        "url": "https://humidor.hr/hr/proizvod/nub-connecticut-24-1-4-x-60/"
+        "url": null
       },
       {
         "name": "Connecticut Tubos",
@@ -17015,7 +16927,7 @@
         "format": "50 x 127mm",
         "smokeTimeMin": 50,
         "priceEUR": 8.3,
-        "url": "https://humidor.hr/hr/proizvod/oliva-serie-g-double-robusto-5-x-54/"
+        "url": null
       },
       {
         "name": "Master Blends 3 Churchill",
@@ -18832,7 +18744,7 @@
         "format": "42 x 129mm",
         "smokeTimeMin": 40,
         "priceEUR": 15.2,
-        "url": "https://humidor.hr/hr/proizvod/partagas-shorts-4-1-2-x-42/"
+        "url": null
       },
       {
         "name": "Semicolon",
@@ -22442,14 +22354,14 @@
         "format": "50 x 127mm",
         "smokeTimeMin": 50,
         "priceEUR": 13.0,
-        "url": "https://humidor.hr/hr/proizvod/rocky-patel-grand-reserva-robusto-5%c2%bd-x-50/"
+        "url": null
       },
       {
         "name": "Decade Toro",
         "format": "52 x 152mm",
         "smokeTimeMin": 65,
         "priceEUR": 13.5,
-        "url": "https://humidor.hr/hr/proizvod/rocky-patel-grand-reserve-toro-6-x-52/"
+        "url": null
       },
       {
         "name": "Emperor",
@@ -22608,7 +22520,7 @@
         "format": "60 x 127mm",
         "smokeTimeMin": 60,
         "priceEUR": 13.0,
-        "url": "https://humidor.hr/hr/proizvod/rocky-patel-grand-reserva-robusto-5%c2%bd-x-50/"
+        "url": null
       },
       {
         "name": "Toro",
@@ -22727,7 +22639,7 @@
         "format": "50 x 127mm",
         "smokeTimeMin": 50,
         "priceEUR": 13.0,
-        "url": "https://humidor.hr/hr/proizvod/rocky-patel-grand-reserva-robusto-5%c2%bd-x-50/"
+        "url": null
       },
       {
         "name": "Vintage 1999 Connecticut Robusto",
@@ -22782,7 +22694,7 @@
         "format": "52 x 152mm",
         "smokeTimeMin": 65,
         "priceEUR": 26.0,
-        "url": "https://humidor.hr/hr/proizvod/rocky-patel-sixty-toro-6-1-2-x-52/"
+        "url": null
       }
     ],
     "priceUrl": "https://humidor.hr/hr/proizvod/rocky-patel-sixty-toro-6-1-2-x-52/"
@@ -22917,14 +22829,14 @@
         "format": "50 x 124mm",
         "smokeTimeMin": 50,
         "priceEUR": 14.2,
-        "url": "https://humidor.hr/hr/proizvod/romeo-y-julieta-no-2-tubos-5-x-42/"
+        "url": null
       },
       {
         "name": "Wide Churchill",
         "format": "55 x 130mm",
         "smokeTimeMin": 60,
         "priceEUR": 14.2,
-        "url": "https://humidor.hr/hr/proizvod/romeo-y-julieta-no-2-tubos-5-x-42/"
+        "url": null
       },
       {
         "name": "Churchill",
@@ -22997,7 +22909,7 @@
         "format": "42 x 155mm",
         "smokeTimeMin": 50,
         "priceEUR": 14.2,
-        "url": "https://humidor.hr/hr/proizvod/romeo-y-julieta-no-2-tubos-5-x-42/"
+        "url": null
       },
       {
         "name": "No. 1",
@@ -23018,21 +22930,21 @@
         "format": "29 x 126mm",
         "smokeTimeMin": 20,
         "priceEUR": 14.2,
-        "url": "https://humidor.hr/hr/proizvod/romeo-y-julieta-no-2-tubos-5-x-42/"
+        "url": null
       },
       {
         "name": "Belvederes",
         "format": "42 x 125mm",
         "smokeTimeMin": 40,
         "priceEUR": 14.2,
-        "url": "https://humidor.hr/hr/proizvod/romeo-y-julieta-no-2-tubos-5-x-42/"
+        "url": null
       },
       {
         "name": "Príncipe",
         "format": "42 x 129mm",
         "smokeTimeMin": 40,
         "priceEUR": 14.2,
-        "url": "https://humidor.hr/hr/proizvod/romeo-y-julieta-no-2-tubos-5-x-42/"
+        "url": null
       },
       {
         "name": "Tacos Extra Añejados No. 54",
@@ -23046,14 +22958,14 @@
         "format": "52 x 156mm",
         "smokeTimeMin": 70,
         "priceEUR": 14.2,
-        "url": "https://humidor.hr/hr/proizvod/romeo-y-julieta-no-2-tubos-5-x-42/"
+        "url": null
       },
       {
         "name": "Maravillas 40",
         "format": "55 x 194mm",
         "smokeTimeMin": 95,
         "priceEUR": 14.2,
-        "url": "https://humidor.hr/hr/proizvod/romeo-y-julieta-no-2-tubos-5-x-42/"
+        "url": null
       }
     ],
     "priceUrl": "https://humidor.hr/hr/proizvod/romeo-y-julieta-no-2-tubos-5-x-42/",
@@ -23337,21 +23249,21 @@
         "format": "52 x 135mm",
         "smokeTimeMin": 50,
         "priceEUR": 14.2,
-        "url": "https://humidor.hr/hr/proizvod/romeo-y-julieta-no-2-tubos-5-x-42/"
+        "url": null
       },
       {
         "name": "Hidalgos",
         "format": "53 x 150mm",
         "smokeTimeMin": 70,
         "priceEUR": 14.2,
-        "url": "https://humidor.hr/hr/proizvod/romeo-y-julieta-no-2-tubos-5-x-42/"
+        "url": null
       },
       {
         "name": "Nobles",
         "format": "55 x 165mm",
         "smokeTimeMin": 85,
         "priceEUR": 14.2,
-        "url": "https://humidor.hr/hr/proizvod/romeo-y-julieta-no-2-tubos-5-x-42/"
+        "url": null
       }
     ],
     "priceUrl": "https://humidor.hr/hr/proizvod/romeo-y-julieta-no-2-tubos-5-x-42/"
@@ -23737,14 +23649,14 @@
         "format": "49 x 100mm",
         "smokeTimeMin": 30,
         "priceEUR": 14.2,
-        "url": "https://humidor.hr/hr/proizvod/romeo-y-julieta-no-2-tubos-5-x-42/"
+        "url": null
       },
       {
         "name": "Capuletos",
         "format": "53 x 178mm",
         "smokeTimeMin": 85,
         "priceEUR": 14.2,
-        "url": "https://humidor.hr/hr/proizvod/romeo-y-julieta-no-2-tubos-5-x-42/"
+        "url": null
       }
     ],
     "priceUrl": "https://humidor.hr/hr/proizvod/romeo-y-julieta-no-2-tubos-5-x-42/"
