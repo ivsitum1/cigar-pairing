@@ -380,19 +380,36 @@ def match_vitola_in_cigar(
     if not vitolas:
         return None
     want = vitola_name_key(vitola_from_product(product_name, brand), brand)
+    product_low = norm(product_name)
     for v in vitolas:
         if vitola_name_key(str(v.get("name") or ""), brand) == want:
             return v
-    for v in vitolas:
-        vn = vitola_name_key(str(v.get("name") or ""), brand)
-        if want and (want in vn or vn in want):
-            return v
+    # Substring match only when exactly one vitola qualifies (avoid Habano/Brazil collisions).
+    contains_hits = [
+        v
+        for v in vitolas
+        if want
+        and (
+            want in vitola_name_key(str(v.get("name") or ""), brand)
+            or vitola_name_key(str(v.get("name") or ""), brand) in want
+            or vitola_name_key(str(v.get("name") or ""), brand) in product_low
+        )
+    ]
+    if len(contains_hits) == 1:
+        return contains_hits[0]
     ring, mm = product_dims(product_name, details)
     if ring is not None and mm is not None:
+        size_hits = []
         for v in vitolas:
             vr, vm = parse_format_size(v.get("format") if isinstance(v.get("format"), str) else None)
             if vr == ring and vm is not None and abs(vm - mm) <= 8:
-                return v
+                size_hits.append(v)
+        if len(size_hits) == 1:
+            return size_hits[0]
+        if len(size_hits) > 1 and contains_hits:
+            overlap = [v for v in size_hits if v in contains_hits]
+            if len(overlap) == 1:
+                return overlap[0]
     if len(vitolas) == 1:
         return vitolas[0]
     return None
