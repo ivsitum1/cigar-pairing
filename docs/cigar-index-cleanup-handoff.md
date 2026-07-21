@@ -86,6 +86,30 @@ Currently 13 vitolas. **Remove** (they belong to Primeros, already in `cig-david
 - **Aniversario** (`cig-davidoff-aniversario`): `Short Perfecto` and `Perfecto` share URL `aniversario-short-perfecto-4` → keep one; `Special R` and `R Tubos` overlap (`special-r-tubos`) → verify/dedup.
 - **Grand Cru**: `Diadema` URL is actually `grand-cru-diademas-finas-le-2024` (a Le 2024 limited) — relabel or move to a limited line.
 
+## Update — Davidoff pass DONE
+
+The whole Davidoff plan above is complete (merged): Nicaragua, Yamasa,
+Winston Churchill / The Late Hour / WSC, Escurio, Millennium, plus the small
+dupes. Davidoff is now 19 clean lines with no URL shared across lines.
+Also merged: Joya de Nicaragua dup lines (Joya Red, Numero Uno Le Premier,
+Rosalones) and the Arturo Fuente "Don Carlos 6 1/2 X 50" dimension-dup line.
+
+### Still open — needs owner judgment (not auto-fixable)
+1. **Arturo Fuente "Chateau & Cubans" vs "Chateau Fuente"** — heavy vitola
+   overlap (Chateau Fuente, Fuente Pyramids, King T, T Rosado in both).
+   Decide: merge into one "Chateau Fuente" line, or keep "& Cubans" for the
+   small cuban-sized Fuentes (Exquisitos, Petit Corona, Cubanitos)?
+2. **Lazy fallback URLs** — one shop URL reused across many distinct vitolas,
+   so clicking (say) "Petit Upmann" or "Opus X" opens the wrong product:
+   - H. Upmann: `h-upmann-half-corona` on ~13 Classic/Connossieur/Reserva vitolas.
+   - Arturo Fuente: `cuban-corona` across Chateau/Gran Reserva/Hemingway/Opus X.
+   Decision: null the URL on non-matching vitolas (they fall back to brand
+   search) vs. leave. Recommend nulling.
+3. **La Aurora dimension-named lines** (107 Robusto/Belicoso/Nicaragua…, 1903
+   Edition Toro) share URLs with base lines but the "twin" is sometimes a
+   *different* line (contamination), so they can't be removed blindly —
+   check each against its base 107/1903/ADN/Family Reserve line.
+
 ## Other brands flagged by the audit (after Davidoff)
 
 Shared fallback URLs across distinct lines — review case by case (some are
