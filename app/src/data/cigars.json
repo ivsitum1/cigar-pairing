@@ -6874,13 +6874,6 @@
         "url": "https://havana-cigar-shop.com/proizvod/davidoff-aniversario-entreacto-4/"
       },
       {
-        "name": "Perfecto",
-        "format": "—",
-        "smokeTimeMin": 50,
-        "priceEUR": 23.6,
-        "url": "https://havana-cigar-shop.com/proizvod/davidoff-aniversario-short-perfecto-4/"
-      },
-      {
         "name": "Aniversario No. 3",
         "format": "50 x 152mm",
         "smokeTimeMin": 65,
@@ -6900,7 +6893,7 @@
   {
     "id": "cig-davidoff-demi-tasse-4-x-25",
     "brand": "Davidoff",
-    "line": "Demi Tasse 4 X 25",
+    "line": "Demi Tasse",
     "vitola": "Demi Tasse",
     "format": "—",
     "country": "Dominikanska Republika",
@@ -6935,13 +6928,6 @@
         "smokeTimeMin": 30,
         "priceEUR": 36.5,
         "url": "https://humidor.hr/hr/proizvod/davidoff-demi-tasse-4-x-25/"
-      },
-      {
-        "name": "Demi Tasse",
-        "format": "25 x 102mm",
-        "smokeTimeMin": 50,
-        "priceEUR": 36.5,
-        "url": "https://humidor.hr/en/proizvod/davidoff-demi-tasse-4-x-25/"
       }
     ],
     "priceUrl": "https://humidor.hr/hr/proizvod/davidoff-demi-tasse-4-x-25/",
@@ -7393,7 +7379,7 @@
     "id": "cig-davidoff-nicaragua",
     "brand": "Davidoff",
     "line": "Nicaragua",
-    "vitola": "Nicaragua Robusto",
+    "vitola": "Robusto",
     "format": "50 x 127mm",
     "country": "Dominikanska Republika",
     "wrapper": "Habano",
@@ -7425,27 +7411,6 @@
     ],
     "vitolas": [
       {
-        "name": "Primeros Nicaragua",
-        "format": "34 x 105mm",
-        "smokeTimeMin": 35,
-        "priceEUR": 7.15,
-        "url": "https://humidor.hr/hr/proizvod/davidoff-primeros-nicaragua-4-1-8-x-34/"
-      },
-      {
-        "name": "Nicaragua Maduro",
-        "format": "34 x 105mm",
-        "smokeTimeMin": 35,
-        "priceEUR": 7.15,
-        "url": "https://humidor.hr/hr/proizvod/davidoff-primeros-nicaragua-maduro-4-%e2%85%9b-x-34/"
-      },
-      {
-        "name": "Davidoff Nicaragua",
-        "format": "—",
-        "smokeTimeMin": 45,
-        "priceEUR": 7.35,
-        "url": "https://havana-cigar-shop.com/proizvod/primeros-by-davidoff-nicaragua-6/"
-      },
-      {
         "name": "Corona",
         "format": "—",
         "smokeTimeMin": 45,
@@ -7474,13 +7439,6 @@
         "url": "https://humidor.hr/hr/proizvod/davidoff-nicaragua-robusto-tubos-5-x-50/"
       },
       {
-        "name": "Nicaragua Robusto",
-        "format": "50 x 127mm",
-        "smokeTimeMin": 50,
-        "priceEUR": 14.0,
-        "url": null
-      },
-      {
         "name": "Box Pressed",
         "format": "—",
         "smokeTimeMin": 50,
@@ -7500,20 +7458,6 @@
         "smokeTimeMin": 55,
         "priceEUR": 26.0,
         "url": "https://humidor.hr/hr/proizvod/davidoff-nicaragua-toro-5-1-2-x-54/"
-      },
-      {
-        "name": "Nicaragua Toro",
-        "format": "52 x 152mm",
-        "smokeTimeMin": 65,
-        "priceEUR": null,
-        "url": null
-      },
-      {
-        "name": "Box-Pressed",
-        "format": "50 x 127mm",
-        "smokeTimeMin": 50,
-        "priceEUR": null,
-        "url": null
       }
     ],
     "priceUrl": "https://humidor.hr/hr/proizvod/1502-nicaragua-robusto-5-x-50/"
@@ -8135,41 +8079,6 @@
         "smokeTimeMin": 45,
         "priceEUR": 17.1,
         "url": "https://havana-cigar-shop.com/proizvod/davidoff-yamasa-petit-churchill-4/"
-      },
-      {
-        "name": "Escurio Robusto Tubos 4 ½ x 54",
-        "format": "—",
-        "smokeTimeMin": 50,
-        "priceEUR": 22.7,
-        "url": "https://humidor.hr/en/proizvod/davidoff-escurio-robusto-tubos-4-1-2-x-54/"
-      },
-      {
-        "name": "Nicaragua Robusto Tubos",
-        "format": "50 x 127mm",
-        "smokeTimeMin": 50,
-        "priceEUR": 26.1,
-        "url": "https://humidor.hr/en/proizvod/davidoff-nicaragua-robusto-tubos-5-x-50/"
-      },
-      {
-        "name": "Nicaragua Toro 5 ½ x 54",
-        "format": "—",
-        "smokeTimeMin": 50,
-        "priceEUR": 26.0,
-        "url": "https://humidor.hr/en/proizvod/davidoff-nicaragua-toro-5-1-2-x-54/"
-      },
-      {
-        "name": "WSC The Late Hour Robusto",
-        "format": "52 x 127mm",
-        "smokeTimeMin": 50,
-        "priceEUR": 28.6,
-        "url": "https://humidor.hr/en/proizvod/davidoff-wsc-the-late-hour-robusto-5-x-52/"
-      },
-      {
-        "name": "WSC The Late Hour Churchill",
-        "format": "48 x 178mm",
-        "smokeTimeMin": 50,
-        "priceEUR": 31.8,
-        "url": "https://humidor.hr/en/proizvod/davidoff-wsc-the-late-hour-churchill-7-x-48/"
       }
     ],
     "priceUrl": "https://havana-cigar-shop.com/proizvod/davidoff-yamasa-robusto-4/"
