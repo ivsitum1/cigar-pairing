@@ -1,15 +1,16 @@
 {
   "stats": {
     "seen": 7912,
-    "admitted_records": 4548,
-    "lines": 2712,
-    "held": 3364,
+    "admitted_records": 4542,
+    "lines": 2600,
+    "held": 3370,
     "by_reason": {
       "malformed_brand": 8,
       "no_format": 626,
       "no_vitola": 2305,
       "unknown_country": 45,
       "habanos_brand_skip": 377,
+      "existing_line": 6,
       "no_price": 3
     },
     "recovered_offers": 25,
@@ -10892,8 +10893,18 @@
       "brand": "Ashton"
     },
     {
+      "reason": "existing_line",
+      "name": "Ashton Churchill (7.5×52)",
+      "brand": "Ashton"
+    },
+    {
       "reason": "no_vitola",
       "name": "Ashton Cordial",
+      "brand": "Ashton"
+    },
+    {
+      "reason": "existing_line",
+      "name": "Ashton Corona (5.5×44)",
       "brand": "Ashton"
     },
     {
@@ -10954,6 +10965,11 @@
     {
       "reason": "no_vitola",
       "name": "Ashton Monarch (Tube)",
+      "brand": "Ashton"
+    },
+    {
+      "reason": "existing_line",
+      "name": "Ashton Panetela",
       "brand": "Ashton"
     },
     {
@@ -11750,6 +11766,16 @@
       "reason": "habanos_brand_skip",
       "name": "Cuaba Salomones",
       "brand": "Cuaba"
+    },
+    {
+      "reason": "existing_line",
+      "name": "Cumpay Churchill",
+      "brand": "Cumpay"
+    },
+    {
+      "reason": "existing_line",
+      "name": "Cumpay Corona",
+      "brand": "Cumpay"
     },
     {
       "reason": "no_vitola",
@@ -12909,6 +12935,11 @@
     {
       "reason": "no_vitola",
       "name": "La Aurora 107 Ecuador Zeppelin",
+      "brand": "La Aurora"
+    },
+    {
+      "reason": "existing_line",
+      "name": "La Aurora 107 Nicaragua Gran Toro",
       "brand": "La Aurora"
     },
     {
