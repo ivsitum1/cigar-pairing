@@ -717,15 +717,6 @@
       "en": "Byron — a brand listed in retail shop catalogues (HR/EU/USA)."
     }
   },
-  "CLE": {
-    "country": "Honduras",
-    "founded": "2012",
-    "blurb": {
-      "hr": "CLE Cigar Co. (inicijali Christian Luis Eiroa) osnovan je 2012. nakon Eiroina odlaska iz Camacha; honduraška kuća s tvornicom El Aladino.",
-      "en": "CLE Cigar Co. (Christian Luis Eiroa’s initials) was founded in 2012 after Eiroa left Camacho; a Honduran house with the El Aladino factory."
-    },
-    "source": "https://www.cigaraficionado.com/company/cle-cigar-co"
-  },
   "Cabaiguan": {
     "country": "Nikaragva",
     "founded": "—",
@@ -1036,12 +1027,22 @@
     }
   },
   "Cigarworld": {
+    "country": "—",
     "founded": "—",
     "blurb": {
-      "hr": "Cigarworld private label — Corona de Luxe (Kleinlagel, prodaja od 2008./katalog 2010.) i Ligero Estelí/Condega/Jalapa (PRODAP, 6. 6. 2024.); nije jedna linija s jednom godinom.",
-      "en": "Cigarworld private label — Corona de Luxe (Kleinlagel, sold from 2008 / catalogued 2010) and Ligero Estelí/Condega/Jalapa (PRODAP, 6 Jun 2024); not one line with a single founding year."
+      "hr": "Cigarworld kućni label — Corona de Luxe (Kleinlagel; prodaja od ~2008., katalog 2010.) i Ligero Estelí/Condega/Jalapa (PRODAP, 6. 6. 2024.); privatni label bez jedinstvene godine osnutka.",
+      "en": "Cigarworld house label — Corona de Luxe (Kleinlagel; sold from ~2008, catalogued 2010) and Ligero Estelí/Condega/Jalapa (PRODAP, 6 Jun 2024); private label without a single founding year."
     },
     "source": "https://www.cigarworld.de/en/zigarren/deutschland/cigarworld-corona-de-luxe-90008888"
+  },
+  "CLE": {
+    "country": "Honduras",
+    "founded": "2012",
+    "blurb": {
+      "hr": "CLE Cigar Co. (inicijali Christian Luis Eiroa) osnovan je 2012. nakon Eiroina odlaska iz Camacha; honduraška kuća s tvornicom El Aladino.",
+      "en": "CLE Cigar Co. (Christian Luis Eiroa’s initials) was founded in 2012 after Eiroa left Camacho; a Honduran house with the El Aladino factory."
+    },
+    "source": "https://www.cigaraficionado.com/company/cle-cigar-co"
   },
   "Colon": {
     "country": "Panama",
@@ -1477,13 +1478,40 @@
     "country": "—"
   },
   "Dos": {
-    "country": "Španjolska",
+    "country": "—",
     "founded": "—",
     "blurb": {
-      "hr": "Katalog ključ 'Dos' — miješa Dos Amigos 87 (Llorens/Pineda, InterTabac 2025.) i Dos Jotas (Infinity/Prime, DR); nije jedna potvrđena marka s jednom godinom.",
-      "en": "Catalogue key 'Dos' — mixes Dos Amigos 87 (Llorens/Pineda, InterTabac 2025) and Dos Jotas (Infinity/Prime, DR); not one confirmed marque with a single founding year."
+      "hr": "Zastarjeli katalog-ključ 'Dos' — razriješen u Dos Amigos 87, Dos Jotas i Dos Santos (vidi brand_dictionary).",
+      "en": "Legacy catalogue key 'Dos' — resolved into Dos Amigos 87, Dos Jotas and Dos Santos (see brand_dictionary)."
     },
-    "source": "https://dosamigos87.com/"
+    "source": "https://www.cigarjournal.com/jori-llorens-and-isidre-pineda-introduce-dos-amigos/"
+  },
+  "Dos Amigos 87": {
+    "country": "Nikaragva",
+    "founded": "2025",
+    "blurb": {
+      "hr": "Dos Amigos 87 — nikaragvanska marka Jordija Llorensa i Isidrea Pinede; predstavljena na InterTabacu 2025. (vinil-estetika; Paster/Sidecar).",
+      "en": "Dos Amigos 87 — Nicaraguan marque by Jordi Llorens and Isidre Pineda; introduced at InterTabac 2025 (vinyl aesthetic; Paster/Sidecar)."
+    },
+    "source": "https://www.cigarjournal.com/jori-llorens-and-isidre-pineda-introduce-dos-amigos/"
+  },
+  "Dos Jotas": {
+    "country": "Dominikanska Republika",
+    "founded": "2018",
+    "blurb": {
+      "hr": "Dos Jotas — dominikanska boutique marka Juana Ernesta Jiméneza Oliviera (Tamboril/Santiago); službeno predstavljena 8. 11. 2018.; blendovi s Chicom Rivasom (Prime, Infinity).",
+      "en": "Dos Jotas — Dominican boutique marque of Juan Ernesto Jiménez Olivier (Tamboril/Santiago); official launch 8 Nov 2018; blends with Chico Rivas (Prime, Infinity)."
+    },
+    "source": "https://www.smokingseven.com/2020/08/conozcamos-cigarros-dos-jotas.html"
+  },
+  "Dos Santos": {
+    "country": "Španjolska",
+    "founded": "1921",
+    "blurb": {
+      "hr": "Dos Santos S.A.U. — kanarska obiteljska tvrtka (Las Palmas); tvornica La Regenta osnovana 1921.; cigare od 1940-ih (Condal, Consul, La Regenta 1921).",
+      "en": "Dos Santos S.A.U. — Canarian family firm (Las Palmas); La Regenta factory founded 1921; cigars from the 1940s (Condal, Consul, La Regenta 1921)."
+    },
+    "source": "https://dossantossa.com/en/about-us/history/"
   },
   "Dutch Masters": {
     "country": "SAD",
@@ -1703,13 +1731,22 @@
     "source": "https://www.cigaraficionado.com/article/hoyo-excalibur-celebrates-40-years-with-excalibur-black"
   },
   "Factory": {
+    "country": "—",
     "founded": "—",
     "blurb": {
-      "hr": "Factory Overrun — retaileri (npr. Cigarworld) prodaju višak/odbačene lote raznih tabakalera; nije brand s godinom.",
-      "en": "Factory Overrun — retailers (e.g. Cigarworld) sell surplus/rejected lots from various factories; not a dated brand."
+      "hr": "Zastarjeli katalog-ključ 'Factory' — zapravo Factory Overrun (ne-marka; za izbacivanje).",
+      "en": "Legacy catalogue key 'Factory' — actually Factory Overrun (non-brand; for exclusion)."
     },
-    "source": "https://www.cigarworld.de/zigarren/dominikanische-republik/dominican-cigar-selection-90017308",
-    "country": "—"
+    "source": "https://www.cigarworld.de/en/zigarren/dominikanische-republik/factory-overrun-dominikanische-republik-pdr-h-half-corona-35x46-ah03-90013941_46834"
+  },
+  "Factory Overrun": {
+    "country": "—",
+    "founded": "—",
+    "blurb": {
+      "hr": "Factory Overrun — maloprodajna kategorija viška/odbačenih lota raznih tvornica (npr. Cigarworld); nije datirana marka — kandidat za izbacivanje iz brands indeksa.",
+      "en": "Factory Overrun — retail surplus/reject-lot category from various factories (e.g. Cigarworld); not a dated marque — candidate for exclusion from the brands index."
+    },
+    "source": "https://www.cigarworld.de/en/zigarren/dominikanische-republik/factory-overrun-dominikanische-republik-pdr-h-half-corona-35x46-ah03-90013941_46834"
   },
   "Fausto": {
     "country": "Nikaragva",
@@ -1771,13 +1808,22 @@
     }
   },
   "Flor": {
-    "country": "Dominikanska Republika",
+    "country": "—",
     "founded": "—",
     "blurb": {
-      "hr": "Katalog ključ 'Flor' — miješa Flor de D'Crossier (Pure Aroma, tvrtka 2006.) i Flor del Sol (STG Honduras, Robusto od 2017.); nije jedna potvrđena marka s jednom godinom.",
-      "en": "Catalogue key 'Flor' — mixes Flor de D'Crossier (Pure Aroma, company 2006) and Flor del Sol (STG Honduras, Robusto from 2017); not one confirmed marque with a single founding year."
+      "hr": "Zastarjeli katalog-ključ 'Flor' — razriješen u Flor de D'Crossier i Flor del Sol.",
+      "en": "Legacy catalogue key 'Flor' — resolved into Flor de D'Crossier and Flor del Sol."
     },
-    "source": "https://www.cigarworld.de/zigarren/honduras/flor-del-sol-90015017"
+    "source": "https://www.cigaraficionado.com/article/espinosa-cigars-to-distribute-dcrossier-brands-18177"
+  },
+  "Flor de D'Crossier": {
+    "country": "Dominikanska Republika",
+    "founded": "2006",
+    "blurb": {
+      "hr": "Flor de D'Crossier — linija Pure Aroma Cigars (Isaias Santana Diaz, Miami; tvrtka 2006.); D'Crossier cigare u Kostariki; Selection 512/560.",
+      "en": "Flor de D'Crossier — Pure Aroma Cigars line (Isaias Santana Diaz, Miami; company est. 2006); D'Crossier cigars made in Costa Rica; Selection 512/560."
+    },
+    "source": "https://www.cigaraficionado.com/article/espinosa-cigars-to-distribute-dcrossier-brands-18177"
   },
   "Flor de Jose": {
     "country": "Dominikanska Republika",
@@ -1796,6 +1842,15 @@
       "en": "My Father Cigars’ Flor de las Antillas debuted in 2012; a Nicaraguan puro named Cigar Aficionado’s Cigar of the Year the same year."
     },
     "source": "https://www.cigarplace.biz/blog/cigar-review-flor-de-las-antillas.html"
+  },
+  "Flor del Sol": {
+    "country": "Honduras",
+    "founded": "2017",
+    "blurb": {
+      "hr": "Flor del Sol — honduraški STG mediumfiller (puro); Robusto predstavljen 2017., Churchill 2018.",
+      "en": "Flor del Sol — Honduran STG medium-filler (puro); Robusto introduced 2017, Churchill 2018."
+    },
+    "source": "https://www.cigarworld.de/zigarren/honduras/flor-del-sol-90015017"
   },
   "Flores": {
     "country": "—",
@@ -1922,12 +1977,13 @@
     "country": "Dominikanska Republika"
   },
   "Gran": {
-    "country": "Honduras",
+    "country": "Nikaragva",
     "founded": "—",
     "blurb": {
-      "hr": "Gran — marka iz kataloga trgovina (HR/EU/USA).",
-      "en": "Gran — a brand listed in retail shop catalogues (HR/EU/USA)."
-    }
+      "hr": "Zastarjeli katalog-ključ 'Gran' — u katalogu je Gran Ligero No. 3 (Paul Bugge, 2011.).",
+      "en": "Legacy catalogue key 'Gran' — catalogue item is Gran Ligero No. 3 (Paul Bugge, 2011)."
+    },
+    "source": "https://www.cigarworld.de/en/zigarren/nicaragua/gran-ligero-no-3-90011051"
   },
   "Gran Habano": {
     "country": "Honduras",
@@ -1937,6 +1993,15 @@
       "en": "Gran Habano was launched by Guillermo and George Rico in 2003 in Danlí, Honduras, after they founded G.R. Tabacaleras Unidas in 1998."
     },
     "source": "https://www.cigaraficionado.com/article/gran-habano-ships-blue-in-green-cigar"
+  },
+  "Gran Ligero": {
+    "country": "Nikaragva",
+    "founded": "2011",
+    "blurb": {
+      "hr": "Gran Ligero — vlastita marka njemačkog uvoznika Paula Buggea (Villingen-Schwenningen); No. 3 serija uvedena 6. 10. 2011. (nikaragvanski ligero puro).",
+      "en": "Gran Ligero — private marque of German importer Paul Bugge (Villingen-Schwenningen); No. 3 series introduced 6 Oct 2011 (Nicaraguan ligero puro)."
+    },
+    "source": "https://www.cigarworld.de/en/zigarren/nicaragua/gran-ligero-no-3-90011051"
   },
   "Graycliff Original": {
     "country": "Honduras",
@@ -2699,12 +2764,22 @@
     }
   },
   "Legado": {
-    "country": "—",
+    "country": "Nikaragva",
     "founded": "—",
     "blurb": {
-      "hr": "Legado — marka iz kataloga trgovina (HR/EU/USA).",
-      "en": "Legado — a brand listed in retail shop catalogues (HR/EU/USA)."
-    }
+      "hr": "Zastarjeli katalog-ključ 'Legado' — u katalogu je Legado Premium (2021.).",
+      "en": "Legacy catalogue key 'Legado' — catalogue item is Legado Premium (2021)."
+    },
+    "source": "https://www.cigarworld.de/en/zigarren/nicaragua/legado-premium-90015746"
+  },
+  "Legado Premium": {
+    "country": "Nikaragva",
+    "founded": "2021",
+    "blurb": {
+      "hr": "Legado Premium — nikaragvanska serija (American Caribbean Tobacco); na Cigarworld katalogu od 4. 2. 2021. (nije Don Fidel El Legado).",
+      "en": "Legado Premium — Nicaraguan series (American Caribbean Tobacco); on Cigarworld catalogue from 4 Feb 2021 (distinct from Don Fidel El Legado)."
+    },
+    "source": "https://www.cigarworld.de/en/zigarren/nicaragua/legado-premium-90015746"
   },
   "Leite": {
     "founded": "1854",
@@ -3214,15 +3289,6 @@
       "en": "Ozgener — a brand listed in retail shop catalogues (HR/EU/USA)."
     }
   },
-  "PDR": {
-    "country": "Dominikanska Republika",
-    "founded": "2004",
-    "blurb": {
-      "hr": "PDR Cigars (Pinar del Río / Abe Flores) otvorio je vrata u Tamborilu 2004.; dominikanska boutique tvornica poznata po entubado uvijanju.",
-      "en": "PDR Cigars (Pinar del Río / Abe Flores) opened in Tamboril in 2004; a Dominican boutique factory known for entubado bunching."
-    },
-    "source": "https://www.pdrcigars.com/"
-  },
   "Padilla": {
     "country": "Nikaragva",
     "founded": "2003",
@@ -3292,6 +3358,15 @@
       "en": "Patoro was founded in 2001 by Patrik Jonas Martin after his Davidoff tenure; a Swiss brand with Dominican production (Augusto Reyes) and the Gran Añejo Reserva line."
     },
     "source": "https://patoro.com/en/history/"
+  },
+  "PDR": {
+    "country": "Dominikanska Republika",
+    "founded": "2004",
+    "blurb": {
+      "hr": "PDR Cigars (Pinar del Río / Abe Flores) otvorio je vrata u Tamborilu 2004.; dominikanska boutique tvornica poznata po entubado uvijanju.",
+      "en": "PDR Cigars (Pinar del Río / Abe Flores) opened in Tamboril in 2004; a Dominican boutique factory known for entubado bunching."
+    },
+    "source": "https://www.pdrcigars.com/"
   },
   "Perla": {
     "country": "Nikaragva",
@@ -3607,12 +3682,22 @@
     "country": "Nikaragva"
   },
   "Reserva": {
-    "country": "—",
+    "country": "Nikaragva",
     "founded": "—",
     "blurb": {
-      "hr": "Reserva — marka iz kataloga trgovina (HR/EU/USA).",
-      "en": "Reserva — a brand listed in retail shop catalogues (HR/EU/USA)."
-    }
+      "hr": "Zastarjeli katalog-ključ 'Reserva' — URL je Reserva del Presidente (2003.).",
+      "en": "Legacy catalogue key 'Reserva' — URL is Reserva del Presidente (2003)."
+    },
+    "source": "https://it.wikipedia.org/wiki/Reserva_del_Presidente"
+  },
+  "Reserva del Presidente": {
+    "country": "Nikaragva",
+    "founded": "2003",
+    "blurb": {
+      "hr": "Reserva del Presidente — nikaragvanska marka (Jack Lang, 2003.); omot/povez lokalni, tripa i iz Meksika/DR.",
+      "en": "Reserva del Presidente — Nicaraguan marque (Jack Lang, 2003); local wrapper/binder, filler also from Mexico/DR."
+    },
+    "source": "https://it.wikipedia.org/wiki/Reserva_del_Presidente"
   },
   "Rey": {
     "country": "Kuba",
@@ -3628,14 +3713,6 @@
     "blurb": {
       "hr": "Rico — marka iz kataloga trgovina (HR/EU/USA).",
       "en": "Rico — a brand listed in retail shop catalogues (HR/EU/USA)."
-    }
-  },
-  "RoMa Craft": {
-    "country": "Nikaragva",
-    "founded": "—",
-    "blurb": {
-      "hr": "RoMa Craft — marka iz kataloga trgovina (HR/EU/USA).",
-      "en": "RoMa Craft — a brand listed in retail shop catalogues (HR/EU/USA)."
     }
   },
   "Rodrigo": {
@@ -3664,6 +3741,14 @@
       "en": "RoMa Craft Tobac was founded by Michael Rosales and Skip Martin in 2012; a Nicaraguan house known for CroMagnon and Intemperance lines."
     },
     "source": "https://halfwheel.com/press-release-rosales-martin-launch-roma-craft-tobac/23433/"
+  },
+  "RoMa Craft": {
+    "country": "Nikaragva",
+    "founded": "—",
+    "blurb": {
+      "hr": "RoMa Craft — marka iz kataloga trgovina (HR/EU/USA).",
+      "en": "RoMa Craft — a brand listed in retail shop catalogues (HR/EU/USA)."
+    }
   },
   "Rosa": {
     "founded": "2011",
@@ -3747,8 +3832,8 @@
     "country": "Dominikanska Republika",
     "founded": "—",
     "blurb": {
-      "hr": "Samana — Tabacalera Don Esteban (Santiago); classic linija na EU tržištu od kraja 1990-ih; 1756 Series uvedena 30. 10. 2013.; točna godina classic brenda nije pouzdano dokumentirana.",
-      "en": "Samana — Tabacalera Don Esteban (Santiago); classic line on EU markets since late 1990s; 1756 Series introduced 30 Oct 2013; exact classic-brand year not reliably documented."
+      "hr": "Samana — dominikanska marka Tabacalere Don Esteban (Oskar Nausch, Santiago); classic linija dugo na EU tržištu; 1756 Series uvedena 30. 10. 2013. (naziv po poluotoku/1756.); točna godina osnutka classic brenda nije pouzdano dokumentirana.",
+      "en": "Samana — Dominican marque of Tabacalera Don Esteban (Oskar Nausch, Santiago); classic line long on EU markets; 1756 Series introduced 30 Oct 2013 (named for the peninsula/1756); exact classic-brand founding year not reliably documented."
     },
     "source": "https://www.cigarworld.de/en/zigarren/dominikanische-republik/samana-1756-90013530"
   },

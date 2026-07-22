@@ -4,10 +4,10 @@
   "scope": "brands.json founded==\"—\" AND draft founded still \"—\" or missing",
   "draft_file": "app/scripts/data/new_brands_draft.json",
   "stats": {
-    "draft_dated_count": 331,
-    "still_missing_founded": 40,
+    "draft_dated_count": 340,
+    "still_missing_founded": 32,
     "by_category": {
-      "ambiguous_or_mixed_key": 8,
+      "ambiguous_or_mixed_key": 0,
       "holts_or_value_closeout": 26,
       "researched_year_unconfirmed": 6
     }
@@ -53,6 +53,46 @@
       "brand": "El Rey del Mundo",
       "founded": "1848",
       "reason": "Wikipedia: brand founded 1848; catalogue key is Honduran Villazon incarnation"
+    },
+    {
+      "brand": "Dos",
+      "founded": "—",
+      "reason": "Split identity: Dos Amigos 87 (2025 InterTabac), Dos Jotas (2018 launch), Dos Santos (1921 Canaries); brand_dictionary prefixes updated; legacy key kept as —"
+    },
+    {
+      "brand": "Flor",
+      "founded": "—",
+      "reason": "Split: Flor de D'Crossier (Pure Aroma 2006) + Flor del Sol (STG 2017); dictionary updated"
+    },
+    {
+      "brand": "Gran",
+      "founded": "2011",
+      "reason": "Resolved as Gran Ligero No. 3 (Paul Bugge private label); Cigarworld series introduced 06.10.2011"
+    },
+    {
+      "brand": "Legado",
+      "founded": "2021",
+      "reason": "Resolved as Legado Premium (American Caribbean); Cigarworld series introduced 04.02.2021"
+    },
+    {
+      "brand": "Reserva",
+      "founded": "2003",
+      "reason": "Resolved as Reserva del Presidente (Jack Lang, Nicaragua 2003; IT Wikipedia)"
+    },
+    {
+      "brand": "Factory",
+      "founded": "—",
+      "reason": "Non-brand Factory Overrun surplus lots — mark for exclusion; dictionary → Factory Overrun"
+    },
+    {
+      "brand": "Samana",
+      "founded": "—",
+      "reason": "Single marque (Tabacalera Don Esteban / Oskar Nausch); classic founding year still undocumented; 1756 line 2013; blurb improved"
+    },
+    {
+      "brand": "Cigarworld",
+      "founded": "—",
+      "reason": "House private label (Corona de Luxe + Ligero); no single founding year; blurb improved"
     }
   ],
   "missing": [
@@ -83,78 +123,6 @@
       "draft_has_source": true,
       "note_en": "Holt’s exclusive boutique franchise; hand-made in the Dominican Republic (Banquet Selection, A-Bomb, and others).",
       "source": "https://www.holts.com/cigars/all-cigar-brands/brand/argyle"
-    },
-    {
-      "brand": "Dos",
-      "cigar_count": 14,
-      "category": "ambiguous_or_mixed_key",
-      "country_draft": "Španjolska",
-      "lines": [
-        "Amigos 87 Paster",
-        "Amigos 87 Sidecar",
-        "Jotas Infinity 2020",
-        "Jotas Prime",
-        "Santos Condal",
-        "Santos Consul Maduro Vintage",
-        "Santos Consul Maduro Vintage Inmenso",
-        "Santos La Regenta",
-        "Santos La Regenta 1921",
-        "Santos La Regenta 1921 Anejo Rum Barrel Aged",
-        "Santos La Regenta 1921 Maduro",
-        "Santos La Regenta Especial Edicion Especiales Maduro",
-        "Santos La Regenta Especial Edicion Maduro",
-        "Santos La Regenta Maduro"
-      ],
-      "draft_has_blurb": true,
-      "draft_has_source": true,
-      "note_en": "Catalogue key 'Dos' — mixes Dos Amigos 87 (Llorens/Pineda, InterTabac 2025) and Dos Jotas (Infinity/Prime, DR); not one confirmed marque with a single founding year.",
-      "source": "https://dosamigos87.com/"
-    },
-    {
-      "brand": "Samana",
-      "cigar_count": 13,
-      "category": "ambiguous_or_mixed_key",
-      "country_draft": "Dominikanska Republika",
-      "lines": [
-        "1756",
-        "6er Packung",
-        "Churchill",
-        "Corona",
-        "Jeroboam",
-        "Oscuro",
-        "Panetela",
-        "Petit Corona",
-        "Robusto",
-        "Short Robusto",
-        "Special Edition Farniente",
-        "Special Edition Flair",
-        "Torpedo"
-      ],
-      "draft_has_blurb": true,
-      "draft_has_source": true,
-      "note_en": "Samana — Tabacalera Don Esteban (Santiago); classic line on EU markets since late 1990s; 1756 Series introduced 30 Oct 2013; exact classic-brand year not reliably documented.",
-      "source": "https://www.cigarworld.de/en/zigarren/dominikanische-republik/samana-1756-90013530"
-    },
-    {
-      "brand": "Factory",
-      "cigar_count": 9,
-      "category": "ambiguous_or_mixed_key",
-      "country_draft": "—",
-      "lines": [
-        "Overrun Dominikanische Republik PDR H.",
-        "Overrun Dominikanische Republik PDR Maduro Mini",
-        "Overrun Honduras Maduro",
-        "Overrun Honduras Sungrown",
-        "Overrun Mexico &quot;01&quot; Small Batch Nat. Sumatra",
-        "Overrun Nicaragua",
-        "Overrun Nicaragua Extra",
-        "Overrun Nicaragua Gordo",
-        "Overrun Nicaragua Short"
-      ],
-      "draft_has_blurb": true,
-      "draft_has_source": true,
-      "note_en": "Factory Overrun — retailers (e.g. Cigarworld) sell surplus/rejected lots from various factories; not a dated brand.",
-      "source": "https://www.cigarworld.de/zigarren/dominikanische-republik/dominican-cigar-selection-90017308"
     },
     {
       "brand": "Blenders Clearing House",
@@ -229,23 +197,6 @@
       "draft_has_source": true,
       "note_en": "Dominican value brand (cuban-sandwich / Sumatra) sold in bundles; founding year not reliably documented.",
       "source": "https://www.holts.com/cigars/all-cigar-brands/bella-cuba.html"
-    },
-    {
-      "brand": "Cigarworld",
-      "cigar_count": 5,
-      "category": "ambiguous_or_mixed_key",
-      "country_draft": "—",
-      "lines": [
-        "Ligero No. 1 Esteli",
-        "Ligero No. 2 Condega",
-        "Ligero No. 3 Jalapa",
-        "de Luxe Brasil",
-        "de Luxe Sumatra"
-      ],
-      "draft_has_blurb": true,
-      "draft_has_source": true,
-      "note_en": "Cigarworld private label — Corona de Luxe (Kleinlagel, sold from 2008 / catalogued 2010) and Ligero Estelí/Condega/Jalapa (PRODAP, 6 Jun 2024); not one line with a single founding year.",
-      "source": "https://www.cigarworld.de/en/zigarren/deutschland/cigarworld-corona-de-luxe-90008888"
     },
     {
       "brand": "Savoy",
@@ -383,20 +334,6 @@
       "source": "https://www.holts.com/cigars/all-cigar-brands/fine-catch.html"
     },
     {
-      "brand": "Flor",
-      "cigar_count": 2,
-      "category": "ambiguous_or_mixed_key",
-      "country_draft": "—",
-      "lines": [
-        "de D'Crossier Seleccion Suprema 560",
-        "del Sol"
-      ],
-      "draft_has_blurb": true,
-      "draft_has_source": true,
-      "note_en": "Catalogue key 'Flor' — mixes Flor de D'Crossier (Pure Aroma, company 2006) and Flor del Sol (STG Honduras, Robusto from 2017); not one confirmed marque with a single founding year.",
-      "source": "https://www.cigarworld.de/zigarren/honduras/flor-del-sol-90015017"
-    },
-    {
       "brand": "Amante",
       "cigar_count": 1,
       "category": "holts_or_value_closeout",
@@ -488,19 +425,6 @@
       "source": "https://www.holts.com/cigars/all-cigar-brands.html"
     },
     {
-      "brand": "Gran",
-      "cigar_count": 1,
-      "category": "ambiguous_or_mixed_key",
-      "country_draft": "Honduras",
-      "lines": [
-        "Ligero No. 3"
-      ],
-      "draft_has_blurb": true,
-      "draft_has_source": false,
-      "note_en": "Gran — a brand listed in retail shop catalogues (HR/EU/USA).",
-      "source": ""
-    },
-    {
       "brand": "Jalopy",
       "cigar_count": 1,
       "category": "holts_or_value_closeout",
@@ -525,19 +449,6 @@
       "draft_has_source": true,
       "note_en": "King’s Court — Holt’s Honduras closeout (Abbot belicoso); launch year not documented.",
       "source": "https://www.holts.com/cigars/all-cigar-brands/king-s-court.html"
-    },
-    {
-      "brand": "Legado",
-      "cigar_count": 1,
-      "category": "ambiguous_or_mixed_key",
-      "country_draft": "—",
-      "lines": [
-        "Premium"
-      ],
-      "draft_has_blurb": true,
-      "draft_has_source": false,
-      "note_en": "Legado — a brand listed in retail shop catalogues (HR/EU/USA).",
-      "source": ""
     },
     {
       "brand": "Lucky Dublin",
@@ -603,19 +514,6 @@
       "draft_has_source": true,
       "note_en": "Rainmaker — Holt’s Dominican value bundle (CT Toro); launch year not documented.",
       "source": "https://www.holts.com/cigars/all-cigar-brands.html"
-    },
-    {
-      "brand": "Reserva",
-      "cigar_count": 1,
-      "category": "ambiguous_or_mixed_key",
-      "country_draft": "—",
-      "lines": [
-        "del Robusto"
-      ],
-      "draft_has_blurb": true,
-      "draft_has_source": false,
-      "note_en": "Reserva — a brand listed in retail shop catalogues (HR/EU/USA).",
-      "source": ""
     },
     {
       "brand": "Royal Symbols",
