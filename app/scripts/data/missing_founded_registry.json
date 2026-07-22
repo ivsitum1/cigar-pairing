@@ -1,0 +1,707 @@
+{
+  "title": "Missing founded-year registry",
+  "generated": "2026-07-22",
+  "scope": "brands.json founded==\"—\" AND draft founded still \"—\" or missing",
+  "draft_file": "app/scripts/data/new_brands_draft.json",
+  "stats": {
+    "draft_dated_count": 327,
+    "still_missing_founded": 44,
+    "by_category": {
+      "holts_or_value_closeout": 26,
+      "researched_year_unconfirmed": 10,
+      "ambiguous_or_mixed_key": 8
+    }
+  },
+  "categories_legend": {
+    "ambiguous_or_mixed_key": "Catalogue key mixes multiple marques/lines or is a non-brand label (e.g. Factory Overrun); no single founding year.",
+    "holts_or_value_closeout": "Holt’s / value / closeout private labels; public founding year not documented.",
+    "researched_year_unconfirmed": "Identity researched; year remains vague or unconfirmed (no guessing).",
+    "low_signal_or_obscure": "Very little reliable public source material."
+  },
+  "rules": [
+    "Do not invent years; founded must be YYYY or \"—\".",
+    "When filling, write only to new_brands_draft.json (plus update this registry).",
+    "Prefer brand site, Wikipedia, Cigar Aficionado, halfwheel, Cigar Journal, SEC/official filings."
+  ],
+  "filled_this_pass": [
+    {
+      "brand": "Castano",
+      "founded": "1997",
+      "reason": "Holt’s SEC filing: introduced July 1997"
+    },
+    {
+      "brand": "Cuvee",
+      "founded": "2006",
+      "reason": "CA: Chiusano launched Cuvée line in 2006"
+    }
+  ],
+  "missing": [
+    {
+      "brand": "Argyle",
+      "cigar_count": 16,
+      "category": "holts_or_value_closeout",
+      "country_draft": "Dominikanska Republika",
+      "lines": [
+        "A-Bomb",
+        "Banquet Selection",
+        "Banquet Selection #2",
+        "Candela",
+        "Churchill",
+        "Conundrum",
+        "Corona",
+        "Dark Corojo",
+        "It's a Boy / It's a Girl It's a Boy",
+        "It's a Boy / It's a Girl It's a Girl",
+        "Maduro",
+        "Piramide",
+        "Robusto",
+        "Toro",
+        "Turf Club",
+        "White Glove"
+      ],
+      "draft_has_blurb": true,
+      "draft_has_source": true,
+      "note_en": "Holt’s exclusive boutique franchise; hand-made in the Dominican Republic (Banquet Selection, A-Bomb, and others).",
+      "source": "https://www.holts.com/cigars/all-cigar-brands/brand/argyle"
+    },
+    {
+      "brand": "Dos",
+      "cigar_count": 14,
+      "category": "ambiguous_or_mixed_key",
+      "country_draft": "Španjolska",
+      "lines": [
+        "Amigos 87 Paster",
+        "Amigos 87 Sidecar",
+        "Jotas Infinity 2020",
+        "Jotas Prime",
+        "Santos Condal",
+        "Santos Consul Maduro Vintage",
+        "Santos Consul Maduro Vintage Inmenso",
+        "Santos La Regenta",
+        "Santos La Regenta 1921",
+        "Santos La Regenta 1921 Anejo Rum Barrel Aged",
+        "Santos La Regenta 1921 Maduro",
+        "Santos La Regenta Especial Edicion Especiales Maduro",
+        "Santos La Regenta Especial Edicion Maduro",
+        "Santos La Regenta Maduro"
+      ],
+      "draft_has_blurb": true,
+      "draft_has_source": true,
+      "note_en": "Catalogue key 'Dos' — mixes Dos Amigos 87 (Llorens/Pineda, InterTabac 2025) and Dos Jotas (Infinity/Prime, DR); not one confirmed marque with a single founding year.",
+      "source": "https://dosamigos87.com/"
+    },
+    {
+      "brand": "Samana",
+      "cigar_count": 13,
+      "category": "ambiguous_or_mixed_key",
+      "country_draft": "Dominikanska Republika",
+      "lines": [
+        "1756",
+        "6er Packung",
+        "Churchill",
+        "Corona",
+        "Jeroboam",
+        "Oscuro",
+        "Panetela",
+        "Petit Corona",
+        "Robusto",
+        "Short Robusto",
+        "Special Edition Farniente",
+        "Special Edition Flair",
+        "Torpedo"
+      ],
+      "draft_has_blurb": true,
+      "draft_has_source": true,
+      "note_en": "Samana — Tabacalera Don Esteban (Santiago); classic line on EU markets since late 1990s; 1756 Series introduced 30 Oct 2013; exact classic-brand year not reliably documented.",
+      "source": "https://www.cigarworld.de/en/zigarren/dominikanische-republik/samana-1756-90013530"
+    },
+    {
+      "brand": "Factory",
+      "cigar_count": 9,
+      "category": "ambiguous_or_mixed_key",
+      "country_draft": "—",
+      "lines": [
+        "Overrun Dominikanische Republik PDR H.",
+        "Overrun Dominikanische Republik PDR Maduro Mini",
+        "Overrun Honduras Maduro",
+        "Overrun Honduras Sungrown",
+        "Overrun Mexico &quot;01&quot; Small Batch Nat. Sumatra",
+        "Overrun Nicaragua",
+        "Overrun Nicaragua Extra",
+        "Overrun Nicaragua Gordo",
+        "Overrun Nicaragua Short"
+      ],
+      "draft_has_blurb": true,
+      "draft_has_source": true,
+      "note_en": "Factory Overrun — retailers (e.g. Cigarworld) sell surplus/rejected lots from various factories; not a dated brand.",
+      "source": "https://www.cigarworld.de/zigarren/dominikanische-republik/dominican-cigar-selection-90017308"
+    },
+    {
+      "brand": "Blenders Clearing House",
+      "cigar_count": 7,
+      "category": "holts_or_value_closeout",
+      "country_draft": "Dominikanska Republika",
+      "lines": [
+        "Churchill",
+        "Gordo",
+        "Maduro",
+        "Presidente",
+        "Robusto",
+        "Toro",
+        "Torpedo"
+      ],
+      "draft_has_blurb": true,
+      "draft_has_source": true,
+      "note_en": "Holt’s Dominican value bundle line from a boutique factory; founding year not documented.",
+      "source": "https://www.holts.com/cigars/all-cigar-brands/blenders-clearing-house.html"
+    },
+    {
+      "brand": "Xhaxhi",
+      "cigar_count": 7,
+      "category": "researched_year_unconfirmed",
+      "country_draft": "Dominikanska Republika",
+      "lines": [
+        "Bobi",
+        "Bobi Baba Jan",
+        "Bobi El Ingeniero",
+        "Bobi El Licenciado",
+        "Bobi Mi Hermano",
+        "Bobi Sunrise",
+        "Bobi Sunset"
+      ],
+      "draft_has_blurb": true,
+      "draft_has_source": true,
+      "note_en": "Xhaxhi Bobi — boutique brand of Bob de Goede (Dutchman in the DR), blends e.g. at Kelner Boutique / El Artista; exact founding year not reliably documented (US visibility around PCA 2022).",
+      "source": "https://halfwheel.com/pca-2022-xhaxhi-bobi/412126/"
+    },
+    {
+      "brand": "Angry Elf",
+      "cigar_count": 6,
+      "category": "holts_or_value_closeout",
+      "country_draft": "Dominikanska Republika",
+      "lines": [
+        "Churchill",
+        "Connecticut",
+        "Maduro",
+        "Robusto",
+        "Sun Grown",
+        "Toro"
+      ],
+      "draft_has_blurb": true,
+      "draft_has_source": true,
+      "note_en": "Holt’s value line (Candela/Connecticut/Maduro); hand-made Dominican Republic / Honduras; founding year not confirmed.",
+      "source": "https://www.holts.com/cigars/all-cigar-brands/angry-elf.html"
+    },
+    {
+      "brand": "Bella Cuba",
+      "cigar_count": 6,
+      "category": "holts_or_value_closeout",
+      "country_draft": "Dominikanska Republika",
+      "lines": [
+        "Candela",
+        "Churchill",
+        "Connecticut",
+        "Maduro",
+        "Robusto",
+        "Toro"
+      ],
+      "draft_has_blurb": true,
+      "draft_has_source": true,
+      "note_en": "Dominican value brand (cuban-sandwich / Sumatra) sold in bundles; founding year not reliably documented.",
+      "source": "https://www.holts.com/cigars/all-cigar-brands/bella-cuba.html"
+    },
+    {
+      "brand": "Cigarworld",
+      "cigar_count": 5,
+      "category": "ambiguous_or_mixed_key",
+      "country_draft": "—",
+      "lines": [
+        "Ligero No. 1 Esteli",
+        "Ligero No. 2 Condega",
+        "Ligero No. 3 Jalapa",
+        "de Luxe Brasil",
+        "de Luxe Sumatra"
+      ],
+      "draft_has_blurb": true,
+      "draft_has_source": true,
+      "note_en": "Cigarworld private label — Corona de Luxe (Kleinlagel, sold from 2008 / catalogued 2010) and Ligero Estelí/Condega/Jalapa (PRODAP, 6 Jun 2024); not one line with a single founding year.",
+      "source": "https://www.cigarworld.de/en/zigarren/deutschland/cigarworld-corona-de-luxe-90008888"
+    },
+    {
+      "brand": "Savoy",
+      "cigar_count": 5,
+      "category": "holts_or_value_closeout",
+      "country_draft": "Dominikanska Republika",
+      "lines": [
+        "Churchill",
+        "Gordo",
+        "Robusto",
+        "Toro",
+        "Torpedo"
+      ],
+      "draft_has_blurb": true,
+      "draft_has_source": true,
+      "note_en": "Holt’s/Ashton value line (Ecuador) from the 1990s; exact launch year not reliably confirmed.",
+      "source": "https://www.encyclopedia.com/books/politics-and-business-magazines/holts-cigar-holdings-inc"
+    },
+    {
+      "brand": "Argyle Fumas",
+      "cigar_count": 4,
+      "category": "holts_or_value_closeout",
+      "country_draft": "Dominikanska Republika",
+      "lines": [
+        "Churchill",
+        "Connecticut",
+        "Robusto",
+        "Toro"
+      ],
+      "draft_has_blurb": true,
+      "draft_has_source": false,
+      "note_en": "Argyle Fumas — a brand listed in retail shop catalogues (HR/EU/USA).",
+      "source": ""
+    },
+    {
+      "brand": "Babalu",
+      "cigar_count": 4,
+      "category": "holts_or_value_closeout",
+      "country_draft": "Dominikanska Republika",
+      "lines": [
+        "Churchill",
+        "Gordo",
+        "Robusto",
+        "Toro"
+      ],
+      "draft_has_blurb": true,
+      "draft_has_source": true,
+      "note_en": "Holt’s Dominican value line (Sun Grown); founding year not reliably documented (distinct from Austin Bobalu).",
+      "source": "https://www.holts.com/cigars/all-cigar-brands/babalu.html"
+    },
+    {
+      "brand": "Don Melo",
+      "cigar_count": 4,
+      "category": "researched_year_unconfirmed",
+      "country_draft": "Dominikanska Republika",
+      "lines": [
+        "Corona",
+        "Robusto",
+        "Toro",
+        "Torpedo"
+      ],
+      "draft_has_blurb": true,
+      "draft_has_source": true,
+      "note_en": "Don Melo — Philip Wynne / Felipe Gregorio line (Centenario around the early 1990s, CA); exact founding year not unambiguously confirmed; today’s catalogue often DR value.",
+      "source": "https://www.cigaraficionado.com/article/a-conversation-with-philip-wynne-6207"
+    },
+    {
+      "brand": "El Rey del Mundo",
+      "cigar_count": 3,
+      "category": "researched_year_unconfirmed",
+      "country_draft": "Honduras",
+      "lines": [
+        "Largo Oscuro",
+        "Oscuro",
+        "Suprema Oscuro"
+      ],
+      "draft_has_blurb": true,
+      "draft_has_source": false,
+      "note_en": "El Rey del Mundo (non-Cuban) — Honduras / Villazon & Co. (later General Cigar; Oscuro etc.); Cuban name from 1848; exact Honduran incarnation year not reliably documented.",
+      "source": ""
+    },
+    {
+      "brand": "Boardwalk",
+      "cigar_count": 2,
+      "category": "holts_or_value_closeout",
+      "country_draft": "Dominikanska Republika",
+      "lines": [
+        "Robusto",
+        "Toro"
+      ],
+      "draft_has_blurb": true,
+      "draft_has_source": false,
+      "note_en": "Boardwalk — Holt’s value bundle line (Dominican Republic / Nicaragua); launch year not reliably documented.",
+      "source": ""
+    },
+    {
+      "brand": "Casa Royale",
+      "cigar_count": 2,
+      "category": "holts_or_value_closeout",
+      "country_draft": "Dominikanska Republika",
+      "lines": [
+        "Churchill",
+        "Robusto"
+      ],
+      "draft_has_blurb": true,
+      "draft_has_source": false,
+      "note_en": "Casa Royale — a brand listed in retail shop catalogues (HR/EU/USA).",
+      "source": ""
+    },
+    {
+      "brand": "Don Rubio",
+      "cigar_count": 2,
+      "category": "holts_or_value_closeout",
+      "country_draft": "Dominikanska Republika",
+      "lines": [
+        "Churchill",
+        "Toro"
+      ],
+      "draft_has_blurb": true,
+      "draft_has_source": false,
+      "note_en": "Don Rubio — a brand listed in retail shop catalogues (HR/EU/USA).",
+      "source": ""
+    },
+    {
+      "brand": "El Copey",
+      "cigar_count": 2,
+      "category": "researched_year_unconfirmed",
+      "country_draft": "Dominikanska Republika",
+      "lines": [
+        "Claro",
+        "Mini"
+      ],
+      "draft_has_blurb": true,
+      "draft_has_source": true,
+      "note_en": "El Copey — DR handmade linked to Emiliano Lagos (Tabacalera American Caribbean / Spanish distribution); exact founding year not reliably documented.",
+      "source": "https://www.cigarworld.de/en/el-copey"
+    },
+    {
+      "brand": "Fine Catch",
+      "cigar_count": 2,
+      "category": "holts_or_value_closeout",
+      "country_draft": "Dominikanska Republika",
+      "lines": [
+        "Marlin",
+        "Marlin Maduro"
+      ],
+      "draft_has_blurb": true,
+      "draft_has_source": false,
+      "note_en": "Fine Catch — Holt’s Dominican value line (Marlin etc.); angler-themed bundle brand; exact founding year not reliably documented.",
+      "source": ""
+    },
+    {
+      "brand": "Flor",
+      "cigar_count": 2,
+      "category": "ambiguous_or_mixed_key",
+      "country_draft": "—",
+      "lines": [
+        "de D'Crossier Seleccion Suprema 560",
+        "del Sol"
+      ],
+      "draft_has_blurb": true,
+      "draft_has_source": true,
+      "note_en": "Catalogue key 'Flor' — mixes Flor de D'Crossier (Pure Aroma, company 2006) and Flor del Sol (STG Honduras, Robusto from 2017); not one confirmed marque with a single founding year.",
+      "source": "https://www.cigarworld.de/zigarren/honduras/flor-del-sol-90015017"
+    },
+    {
+      "brand": "Amante",
+      "cigar_count": 1,
+      "category": "holts_or_value_closeout",
+      "country_draft": "Dominikanska Republika",
+      "lines": [
+        "Toro"
+      ],
+      "draft_has_blurb": true,
+      "draft_has_source": false,
+      "note_en": "Amante — a brand listed in retail shop catalogues (HR/EU/USA).",
+      "source": ""
+    },
+    {
+      "brand": "Belleza",
+      "cigar_count": 1,
+      "category": "holts_or_value_closeout",
+      "country_draft": "Dominikanska Republika",
+      "lines": [
+        "Toro"
+      ],
+      "draft_has_blurb": true,
+      "draft_has_source": false,
+      "note_en": "Belleza — a brand listed in retail catalogues (Toro); reliable founding-year source not found.",
+      "source": ""
+    },
+    {
+      "brand": "Blarney Stone",
+      "cigar_count": 1,
+      "category": "holts_or_value_closeout",
+      "country_draft": "Dominikanska Republika",
+      "lines": [
+        "Churchill"
+      ],
+      "draft_has_blurb": true,
+      "draft_has_source": false,
+      "note_en": "Blarney Stone — a brand listed in retail shop catalogues (HR/EU/USA).",
+      "source": ""
+    },
+    {
+      "brand": "Bottom Shelf",
+      "cigar_count": 1,
+      "category": "holts_or_value_closeout",
+      "country_draft": "Dominikanska Republika",
+      "lines": [
+        "Churchill"
+      ],
+      "draft_has_blurb": true,
+      "draft_has_source": false,
+      "note_en": "Bottom Shelf — a brand listed in retail shop catalogues (HR/EU/USA).",
+      "source": ""
+    },
+    {
+      "brand": "Cortesia",
+      "cigar_count": 1,
+      "category": "holts_or_value_closeout",
+      "country_draft": "Dominikanska Republika",
+      "lines": [
+        "Churchill"
+      ],
+      "draft_has_blurb": true,
+      "draft_has_source": false,
+      "note_en": "Cortesia — a brand listed in retail shop catalogues (HR/EU/USA).",
+      "source": ""
+    },
+    {
+      "brand": "Don Fidel",
+      "cigar_count": 1,
+      "category": "researched_year_unconfirmed",
+      "country_draft": "Nikaragva",
+      "lines": [
+        "El Legado"
+      ],
+      "draft_has_blurb": true,
+      "draft_has_source": true,
+      "note_en": "Don Fidel El Legado — brand of Justo Rico (Barcelona), made at Fidel Olivas Tabacalera, Estelí; exact launch year not reliably documented.",
+      "source": "https://www.cigarworld.de/en/don-fidel"
+    },
+    {
+      "brand": "Flor de Jose",
+      "cigar_count": 1,
+      "category": "holts_or_value_closeout",
+      "country_draft": "Dominikanska Republika",
+      "lines": [
+        "Churchill"
+      ],
+      "draft_has_blurb": true,
+      "draft_has_source": false,
+      "note_en": "Flor de Jose — a brand listed in retail shop catalogues (HR/EU/USA).",
+      "source": ""
+    },
+    {
+      "brand": "Gaia",
+      "cigar_count": 1,
+      "category": "holts_or_value_closeout",
+      "country_draft": "Dominikanska Republika",
+      "lines": [
+        "Churchill"
+      ],
+      "draft_has_blurb": true,
+      "draft_has_source": false,
+      "note_en": "Gaia — a brand listed in retail shop catalogues (HR/EU/USA).",
+      "source": ""
+    },
+    {
+      "brand": "Gran",
+      "cigar_count": 1,
+      "category": "ambiguous_or_mixed_key",
+      "country_draft": "Honduras",
+      "lines": [
+        "Ligero No. 3"
+      ],
+      "draft_has_blurb": true,
+      "draft_has_source": false,
+      "note_en": "Gran — a brand listed in retail shop catalogues (HR/EU/USA).",
+      "source": ""
+    },
+    {
+      "brand": "Jalopy",
+      "cigar_count": 1,
+      "category": "holts_or_value_closeout",
+      "country_draft": "Dominikanska Republika",
+      "lines": [
+        "Churchill"
+      ],
+      "draft_has_blurb": true,
+      "draft_has_source": false,
+      "note_en": "Jalopy — a brand listed in retail shop catalogues (HR/EU/USA).",
+      "source": ""
+    },
+    {
+      "brand": "King S. Court",
+      "cigar_count": 1,
+      "category": "holts_or_value_closeout",
+      "country_draft": "Honduras",
+      "lines": [
+        "King's Court Abbot"
+      ],
+      "draft_has_blurb": true,
+      "draft_has_source": false,
+      "note_en": "King S. Court — a brand listed in retail shop catalogues (HR/EU/USA).",
+      "source": ""
+    },
+    {
+      "brand": "Legado",
+      "cigar_count": 1,
+      "category": "ambiguous_or_mixed_key",
+      "country_draft": "—",
+      "lines": [
+        "Premium"
+      ],
+      "draft_has_blurb": true,
+      "draft_has_source": false,
+      "note_en": "Legado — a brand listed in retail shop catalogues (HR/EU/USA).",
+      "source": ""
+    },
+    {
+      "brand": "Los Amigos",
+      "cigar_count": 1,
+      "category": "researched_year_unconfirmed",
+      "country_draft": "—",
+      "lines": [
+        "Churchill"
+      ],
+      "draft_has_blurb": true,
+      "draft_has_source": false,
+      "note_en": "Los Amigos — a brand listed in retail shop catalogues (HR/EU/USA).",
+      "source": ""
+    },
+    {
+      "brand": "Lucky Dublin",
+      "cigar_count": 1,
+      "category": "holts_or_value_closeout",
+      "country_draft": "Dominikanska Republika",
+      "lines": [
+        "Churchill"
+      ],
+      "draft_has_blurb": true,
+      "draft_has_source": false,
+      "note_en": "Lucky Dublin — a brand listed in retail shop catalogues (HR/EU/USA).",
+      "source": ""
+    },
+    {
+      "brand": "Nat Sherman Host",
+      "cigar_count": 1,
+      "category": "researched_year_unconfirmed",
+      "country_draft": "Honduras",
+      "lines": [
+        "Hanover"
+      ],
+      "draft_has_blurb": true,
+      "draft_has_source": false,
+      "note_en": "Nat Sherman Host Selection — Connecticut Shade line from the early 1990s (a Nat favorite); Hanover and related; exact year not reliably documented.",
+      "source": ""
+    },
+    {
+      "brand": "O. Danny Boy",
+      "cigar_count": 1,
+      "category": "holts_or_value_closeout",
+      "country_draft": "Dominikanska Republika",
+      "lines": [
+        "O' Danny Boy"
+      ],
+      "draft_has_blurb": true,
+      "draft_has_source": false,
+      "note_en": "O. Danny Boy — a brand listed in retail shop catalogues (HR/EU/USA).",
+      "source": ""
+    },
+    {
+      "brand": "Perla",
+      "cigar_count": 1,
+      "category": "researched_year_unconfirmed",
+      "country_draft": "Nikaragva",
+      "lines": [
+        "de Calvano"
+      ],
+      "draft_has_blurb": true,
+      "draft_has_source": true,
+      "note_en": "Perla de Calvano — handmade medium-filler of J. Cortès / VCF (Belgium), Estelí; present at least since the mid-2010s (e.g. Cigar Trophy nomination); exact founding year not confirmed.",
+      "source": "https://cigar-coop.com/2016/07/feature-story-a-closer-look-at-j-cortes.html"
+    },
+    {
+      "brand": "Rainmaker",
+      "cigar_count": 1,
+      "category": "holts_or_value_closeout",
+      "country_draft": "Dominikanska Republika",
+      "lines": [
+        "Toro"
+      ],
+      "draft_has_blurb": true,
+      "draft_has_source": false,
+      "note_en": "Rainmaker — Holt’s Dominican value bundle (Connecticut Toro); launch year not reliably documented.",
+      "source": ""
+    },
+    {
+      "brand": "Reserva",
+      "cigar_count": 1,
+      "category": "ambiguous_or_mixed_key",
+      "country_draft": "—",
+      "lines": [
+        "del Robusto"
+      ],
+      "draft_has_blurb": true,
+      "draft_has_source": false,
+      "note_en": "Reserva — a brand listed in retail shop catalogues (HR/EU/USA).",
+      "source": ""
+    },
+    {
+      "brand": "Royal Symbols",
+      "cigar_count": 1,
+      "category": "holts_or_value_closeout",
+      "country_draft": "Dominikanska Republika",
+      "lines": [
+        "Churchill"
+      ],
+      "draft_has_blurb": true,
+      "draft_has_source": false,
+      "note_en": "Royal Symbols — a brand listed in retail shop catalogues (HR/EU/USA).",
+      "source": ""
+    },
+    {
+      "brand": "Sansibar",
+      "cigar_count": 1,
+      "category": "researched_year_unconfirmed",
+      "country_draft": "Honduras",
+      "lines": [
+        "No. 1"
+      ],
+      "draft_has_blurb": true,
+      "draft_has_source": true,
+      "note_en": "Sansibar No. 1 — private-label cigar for Sansibar restaurant (Sylt, officially 1978); exact year of the cigar line itself is not reliably documented.",
+      "source": "https://www.sansibar.de/sansibar/de/c/Sansibar-Zigarre-No-1-Tubos-/p/000000000000007068/"
+    },
+    {
+      "brand": "Smokin Sandwich",
+      "cigar_count": 1,
+      "category": "holts_or_value_closeout",
+      "country_draft": "Dominikanska Republika",
+      "lines": [
+        "Smokin' Sandwich"
+      ],
+      "draft_has_blurb": true,
+      "draft_has_source": false,
+      "note_en": "Smokin Sandwich — a brand listed in retail shop catalogues (HR/EU/USA).",
+      "source": ""
+    },
+    {
+      "brand": "Tabacos Baez",
+      "cigar_count": 1,
+      "category": "researched_year_unconfirmed",
+      "country_draft": "Nikaragva",
+      "lines": [
+        "Serie SF"
+      ],
+      "draft_has_blurb": true,
+      "draft_has_source": true,
+      "note_en": "Tabacos Baez Serie SF — My Father Cigars house short/mixed-filler (Cuban sandwich); Nic. reintro in the 2000s, SF reviewed at least by 2012, current design from 2018; exact SF launch year not confirmed.",
+      "source": "http://www.stogieguys.com/2012/02/02092012-cigar-review-tabacos-baez-serie-sf-robusto.html"
+    },
+    {
+      "brand": "Utopia",
+      "cigar_count": 1,
+      "category": "holts_or_value_closeout",
+      "country_draft": "Dominikanska Republika",
+      "lines": [
+        "Churchill"
+      ],
+      "draft_has_blurb": true,
+      "draft_has_source": false,
+      "note_en": "Utopia — a brand listed in retail shop catalogues (HR/EU/USA).",
+      "source": ""
+    }
+  ]
+}
