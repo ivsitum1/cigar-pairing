@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
 import type { Cigar, Drink } from "../types";
 import { useI18n, STYLE_LABELS, ADDITIVE_LABELS, ADDITIVE_RULES } from "../i18n";
-import { brandInfo, cigarShopLinks, formatPrice } from "../data";
+import { brandInfo, cigarShopLinks, cigarPriceForMarket, formatPrice } from "../data";
 import { REGIONS } from "../data/shops";
-import { useMarket } from "../store/market";
 import { drinkBuyLink } from "../lib/drinkBuyLink";
 import { vitolaBlurb } from "../lib/vitolaInfo";
 import { Chip, Meter } from "./ui";
@@ -194,6 +193,12 @@ function CigarDetails({
         <div className="space-y-1">
           {cigar.vitolas.map((v) => {
             const blurb = vitolaBlurb(v.name, lang);
+            // cijena+link te vitole: HR (humidor) ili prva regija iz njenih regionLinks
+            const rl = v.regionLinks ?? {};
+            const region = (["HR", "EU", "USA"] as const).find((r) => rl[r]?.priceEUR != null);
+            const price = v.priceEUR ?? (region ? rl[region]!.priceEUR ?? null : null);
+            const url = v.url ?? (region ? rl[region]!.url : null);
+            const approx = v.priceEUR == null && region ? rl[region]!.priceApprox : false;
             return (
               <div
                 key={v.name}
@@ -204,13 +209,13 @@ function CigarDetails({
                   <span className="shrink-0 text-xs text-dim">
                     {v.format && v.format !== "—" ? `${v.format} · ` : ""}
                     {v.smokeTimeMin != null ? `⏱ ~${v.smokeTimeMin} min` : ""}
-                    {v.priceEUR != null &&
-                      (v.url ? (
-                        <a href={v.url} target="_blank" rel="noreferrer" className="ml-1.5 text-zlato-2 underline decoration-zlato/40 underline-offset-2">
-                          {v.priceEUR.toFixed(2)} € ↗
+                    {price != null &&
+                      (url ? (
+                        <a href={url} target="_blank" rel="noreferrer" className="ml-1.5 text-zlato-2 underline decoration-zlato/40 underline-offset-2">
+                          {approx ? "~" : ""}{price.toFixed(2)} € ↗
                         </a>
                       ) : (
-                        <span className="ml-1.5 text-zlato-2">{v.priceEUR.toFixed(2)} €</span>
+                        <span className="ml-1.5 text-zlato-2">{approx ? "~" : ""}{price.toFixed(2)} €</span>
                       ))}
                   </span>
                 </div>
@@ -363,15 +368,13 @@ function BuyLink({ href, label }: { href: string; label: "buy" | "search" }) {
   );
 }
 
-// Linkovi na trgovine grupirani po regiji. Kad je filter regije aktivan
-// prikazuje samo tu regiju; "ALL" prikazuje sve regije gdje je cigara dostupna.
+// Kupnja po regiji — prikazuje SVE regije gdje je cigara dostupna (HR uz EU/USA,
+// da HR link ne bude skriven), svaka trgovina kao ravnopravan gumb s cijenom.
 function CigarBuyLinks({ cigar }: { cigar: Cigar }) {
   const { t } = useI18n();
-  const region = useMarket();
   const links = cigarShopLinks(cigar);
-  const regions = REGIONS.filter(
-    (r) => (region === "ALL" || region === r) && links.some((l) => l.region === r),
-  );
+  const hrPrice = cigarPriceForMarket(cigar, "HR").price;
+  const regions = REGIONS.filter((r) => links.some((l) => l.region === r));
   if (regions.length === 0) return null;
   return (
     <div className="mt-3">
@@ -389,9 +392,16 @@ function CigarBuyLinks({ cigar }: { cigar: Cigar }) {
                 .filter((l) => l.region === r)
                 .map((l) => {
                   const rl = cigar.regionLinks?.[r];
-                  const price =
+                  const priceNum =
                     rl && rl.shop === l.shop && rl.priceEUR != null
-                      ? `${rl.priceApprox ? "~" : ""}${rl.priceEUR.toFixed(rl.priceEUR % 1 ? 2 : 0)} €`
+                      ? rl.priceEUR
+                      : r === "HR" && l.exact
+                        ? hrPrice
+                        : null;
+                  const approx = rl && rl.shop === l.shop ? rl.priceApprox : false;
+                  const price =
+                    priceNum != null
+                      ? `${approx ? "~" : ""}${priceNum.toFixed(priceNum % 1 ? 2 : 0)} €`
                       : null;
                   return (
                     <a

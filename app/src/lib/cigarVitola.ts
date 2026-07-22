@@ -70,5 +70,7 @@ export function applyVitola(cigar: Cigar, vitola: Vitola): Cigar {
     smokeTimeMin: vitola.smokeTimeMin ?? cigar.smokeTimeMin,
     priceEUR: vitola.priceEUR ?? cigar.priceEUR,
     priceUrl: vitola.url ?? cigar.priceUrl,
+    // odabir vitole → kupnja/cijena po regiji vode na TU vitolu (market katalog)
+    regionLinks: vitola.regionLinks ?? cigar.regionLinks,
   };
 }

@@ -112,6 +112,35 @@ _LINE_WORDS = {
 }
 
 
+_STRENGTH_HR = {1: "vrlo lagane", 2: "lagane", 3: "srednje", 4: "jače", 5: "pune"}
+_STRENGTH_EN = {1: "very mild", 2: "mild", 3: "medium", 4: "medium-full", 5: "full"}
+_BODY_HR = {1: "vrlo laganog", 2: "laganog", 3: "srednjeg", 4: "punijeg", 5: "punog"}
+_BODY_EN = {1: "very light", 2: "light", 3: "medium", 4: "fuller", 5: "full"}
+# nekoliko okusnih tagova -> čitljiv opis
+_TAG_HR = {"kremasto": "kremasto", "cedar": "cedrovina", "koza": "koža", "kava": "kava",
+           "zacini": "začini", "med": "med", "orasasti": "orašasti tonovi",
+           "zemljano": "zemljani tonovi", "cokolada": "čokolada", "papar": "papar",
+           "vanilija": "vanilija", "slatko": "slatkoća", "trava-slatka": "slatka trava",
+           "duhan": "duhan", "drvenasto": "drvenasto"}
+
+
+def market_note(rec):
+    """Opis linije iz atributa (bez izmišljanja) — snaga/tijelo/wrapper/okusi."""
+    country = rec["country"]
+    wrapper = rec.get("wrapper")
+    wr_hr = f", {wrapper} pokrov" if wrapper and wrapper != "—" else ""
+    wr_en = f", {wrapper} wrapper" if wrapper and wrapper != "—" else ""
+    tags = [t for t in rec.get("flavorTags") or []][:3]
+    tags_hr = ", ".join(_TAG_HR.get(t, t) for t in tags)
+    hr = f"{country}{wr_hr} — {_STRENGTH_HR[rec['strength']]} snage, {_BODY_HR[rec['body']]} tijela."
+    en = f"{country}{wr_en} — {_STRENGTH_EN[rec['strength']]} in strength, {_BODY_EN[rec['body']]}-bodied."
+    if tags_hr:
+        hr += f" Okusi: {tags_hr}."
+    if tags:
+        en += f" Notes: {', '.join(tags)}."
+    return {"hr": hr, "en": en}
+
+
 def brand_ok(b: str) -> bool:
     toks = re.findall(r"[a-z0-9]+", b.lower())
     if any(t in _VIT_WORDS for t in toks):
@@ -365,10 +394,13 @@ def build():
             vlinks = region_links(v["offers"], cuban)
             hr = vlinks.get("HR")
             fmt = f"{v['ring']} x {v['lmm']}mm"
-            vitolas.append({"name": v["name"], "format": fmt,
-                            "smokeTimeMin": max(20, min(120, round(v["lmm"] / 2.6))),
-                            "priceEUR": hr.get("priceEUR") if hr else None,
-                            "url": hr["url"] if hr else None})
+            ventry = {"name": v["name"], "format": fmt,
+                      "smokeTimeMin": max(20, min(120, round(v["lmm"] / 2.6))),
+                      "priceEUR": hr.get("priceEUR") if hr else None,
+                      "url": hr["url"] if hr else None}
+            if vlinks:  # linkovi te vitole (EU/USA/HR) — za odabir vitole u appu
+                ventry["regionLinks"] = vlinks
+            vitolas.append(ventry)
         default_v = vsorted[0]
         markets = set(cigar_links.keys()) | {"WW"}
         if cuban:
@@ -386,13 +418,13 @@ def build():
             "priceEUR": hr_link.get("priceEUR") if hr_link else None,
             "priceApprox": bool(hr_link and hr_link.get("priceApprox")),
             "availabilityHR": [hr_link["shop"]] if hr_link else [],
-            "notes": {"hr": f"Iz kataloga {shops} — {b} {line}{bp}.",
-                       "en": f"From the {shops} catalogue — {b} {line}{bp}."},
+            "notes": {"hr": "", "en": ""},
             "markets": markets, "vitolas": vitolas, "regionLinks": cigar_links,
         }
         if agg["len_est"]:
             rec["formatEstimated"] = True  # duljina procijenjena iz vitole
         enrich(rec)  # strength/body/wrapper/flavorTags heuristika
+        rec["notes"] = market_note(rec)  # opis iz atributa (nakon profila)
         new_entries.append(rec)
 
     stats["lines"] = len(new_entries)
