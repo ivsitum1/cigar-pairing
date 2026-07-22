@@ -179,6 +179,7 @@ def match_vitola(text, syns):
 def _clean(s):
     s = re.sub(r"\([^)]*\)|\[[^\]]*\]", " ", s)      # sadržaj u zagradama
     s = re.sub(r"[()\[\]{}]", " ", s)                # zaostali fragmenti zagrada
+    s = re.sub(r"\b100\s*%\s*tobacco\b", " ", s, flags=re.I)  # marketinški tag
     # pakiranje/šum kao zasebne riječi
     s = re.sub(r"\b(tube|tubes|tubos|bundle|pack|count|tin|sampler|gift|box|assortment)\b", " ", s, flags=re.I)
     s = re.sub(r"\bgran\s*$", " ", s, flags=re.I)    # dangling "Gran" (od "Gran Toro/Belicoso")
@@ -199,7 +200,7 @@ def canon_line(brand, name, vitola, syns, line_map):
         if canon == vitola:
             base = re.sub(rf"\b{re.escape(s)}\b", " ", base, flags=re.I)
     # remove modifiers noise
-    base = re.sub(r"\b(box[- ]?pressed|tubos?|single|cigar|the)\b", " ", base, flags=re.I)
+    base = re.sub(r"\b(box[- ]?pressed|tubos?|single|cigars?|the|bp)\b", " ", base, flags=re.I)
     line = _clean(base)
     # override map wins
     ov = line_map.get(f"{brand}::{raw}") or line_map.get(f"{brand}::{line}")
