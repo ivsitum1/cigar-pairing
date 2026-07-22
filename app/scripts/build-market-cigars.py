@@ -446,20 +446,25 @@ def build():
     all_used = {c["brand"] for c in merged}
     final_brands = {}
     added_brands = 0
+    generic = lambda b: {
+        "hr": f"{b} — marka iz kataloga trgovina (HR/EU/USA).",
+        "en": f"{b} — a brand listed in retail shop catalogues (HR/EU/USA).",
+    }
     for b in sorted(all_used, key=lambda s: s.casefold()):
-        if b in brands_now:
-            final_brands[b] = brands_now[b]          # kurirani ili već dodani
-        else:
-            d = draft.get(b, {})
+        if b in draft:
+            # shop brend: draft je IZVOR ISTINE (founded/blurb istraživanja
+            # propagiraju svaki run); zemlja iz cigara; `source` se ignorira.
+            d = draft[b]
             country = country_by_brand[b].most_common(1)[0][0] if country_by_brand[b] else d.get("country", "—")
-            final_brands[b] = {
-                "country": country,
-                "founded": d.get("founded", "—"),
-                "blurb": d.get("blurb", {
-                    "hr": f"{b} — marka iz kataloga trgovina (HR/EU/USA).",
-                    "en": f"{b} — a brand listed in retail shop catalogues (HR/EU/USA).",
-                }),
-            }
+            final_brands[b] = {"country": country, "founded": d.get("founded", "—"),
+                               "blurb": d.get("blurb", generic(b))}
+            if b not in brands_now:
+                added_brands += 1
+        elif b in brands_now:
+            final_brands[b] = brands_now[b]          # kurirani — zadrži
+        else:
+            country = country_by_brand[b].most_common(1)[0][0] if country_by_brand[b] else "—"
+            final_brands[b] = {"country": country, "founded": "—", "blurb": generic(b)}
             added_brands += 1
     Path(BRANDS).write_text(json.dumps(final_brands, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     stats["new_brands_added"] = added_brands
