@@ -5,10 +5,10 @@
   "draft_file": "app/scripts/data/new_brands_draft.json",
   "stats": {
     "draft_dated_count": 339,
-    "still_missing_founded": 26,
+    "still_missing_founded": 13,
     "by_category": {
       "ambiguous_or_mixed_key": 0,
-      "holts_or_value_closeout": 26,
+      "holts_or_value_closeout": 13,
       "researched_year_unconfirmed": 0
     }
   },
@@ -123,223 +123,74 @@
       "brand": "Tabacos Baez",
       "founded": "—",
       "reason": "Serie SF on market by May 2010 reviews; explicit launch year not stated by My Father"
-    }
-  ],
-  "missing": [
+    },
     {
       "brand": "Argyle",
-      "cigar_count": 16,
-      "category": "holts_or_value_closeout",
-      "country_draft": "Dominikanska Republika",
-      "lines": [
-        "A-Bomb",
-        "Banquet Selection",
-        "Banquet Selection #2",
-        "Candela",
-        "Churchill",
-        "Conundrum",
-        "Corona",
-        "Dark Corojo",
-        "It's a Boy / It's a Girl It's a Boy",
-        "It's a Boy / It's a Girl It's a Girl",
-        "Maduro",
-        "Piramide",
-        "Robusto",
-        "Toro",
-        "Turf Club",
-        "White Glove"
-      ],
-      "draft_has_blurb": true,
-      "draft_has_source": true,
-      "note_en": "Holt’s exclusive boutique franchise; hand-made in the Dominican Republic (Banquet Selection, A-Bomb, and others).",
-      "source": "https://www.holts.com/cigars/all-cigar-brands/brand/argyle"
-    },
-    {
-      "brand": "Blenders Clearing House",
-      "cigar_count": 7,
-      "category": "holts_or_value_closeout",
-      "country_draft": "Dominikanska Republika",
-      "lines": [
-        "Churchill",
-        "Gordo",
-        "Maduro",
-        "Presidente",
-        "Robusto",
-        "Toro",
-        "Torpedo"
-      ],
-      "draft_has_blurb": true,
-      "draft_has_source": true,
-      "note_en": "Holt’s Dominican value bundle line from a boutique factory; founding year not documented.",
-      "source": "https://www.holts.com/cigars/all-cigar-brands/blenders-clearing-house.html"
-    },
-    {
-      "brand": "Angry Elf",
-      "cigar_count": 6,
-      "category": "holts_or_value_closeout",
-      "country_draft": "Dominikanska Republika",
-      "lines": [
-        "Churchill",
-        "Connecticut",
-        "Maduro",
-        "Robusto",
-        "Sun Grown",
-        "Toro"
-      ],
-      "draft_has_blurb": true,
-      "draft_has_source": true,
-      "note_en": "Holt’s value line (Candela/Connecticut/Maduro); hand-made Dominican Republic / Honduras; founding year not confirmed.",
-      "source": "https://www.holts.com/cigars/all-cigar-brands/angry-elf.html"
-    },
-    {
-      "brand": "Bella Cuba",
-      "cigar_count": 6,
-      "category": "holts_or_value_closeout",
-      "country_draft": "Dominikanska Republika",
-      "lines": [
-        "Candela",
-        "Churchill",
-        "Connecticut",
-        "Maduro",
-        "Robusto",
-        "Toro"
-      ],
-      "draft_has_blurb": true,
-      "draft_has_source": true,
-      "note_en": "Dominican value brand (cuban-sandwich / Sumatra) sold in bundles; founding year not reliably documented.",
-      "source": "https://www.holts.com/cigars/all-cigar-brands/bella-cuba.html"
-    },
-    {
-      "brand": "Savoy",
-      "cigar_count": 5,
-      "category": "holts_or_value_closeout",
-      "country_draft": "Dominikanska Republika",
-      "lines": [
-        "Churchill",
-        "Gordo",
-        "Robusto",
-        "Toro",
-        "Torpedo"
-      ],
-      "draft_has_blurb": true,
-      "draft_has_source": true,
-      "note_en": "Holt’s/Ashton value line (Ecuador) from the 1990s; exact launch year not reliably confirmed.",
-      "source": "https://www.encyclopedia.com/books/politics-and-business-magazines/holts-cigar-holdings-inc"
+      "founded": "—",
+      "reason": "Holt's exclusive DR boutique; 'well over a decade' bestseller claim; no public founding year"
     },
     {
       "brand": "Argyle Fumas",
-      "cigar_count": 4,
-      "category": "holts_or_value_closeout",
-      "country_draft": "Dominikanska Republika",
-      "lines": [
-        "Churchill",
-        "Connecticut",
-        "Robusto",
-        "Toro"
-      ],
-      "draft_has_blurb": true,
-      "draft_has_source": true,
-      "note_en": "Argyle Fumas — Holt’s value/fumée variant of the Argyle franchise (DR); exact year not documented.",
-      "source": "https://www.holts.com/cigars/all-cigar-brands/brand/argyle"
+      "founded": "—",
+      "reason": "Holt's/catalogue value or closeout; public founding year not documented after deep pass (SEC/Holts/trade)"
+    },
+    {
+      "brand": "Blenders Clearing House",
+      "founded": "—",
+      "reason": "Holt's DR value bundle; 'well over a decade' insider note; no launch year"
+    },
+    {
+      "brand": "Angry Elf",
+      "founded": "—",
+      "reason": "Holt's Candela/CT/Maduro/SG value; no confirmed founding year"
+    },
+    {
+      "brand": "Bella Cuba",
+      "founded": "—",
+      "reason": "Holt's/catalogue value or closeout; public founding year not documented after deep pass (SEC/Holts/trade)"
+    },
+    {
+      "brand": "Savoy",
+      "founded": "—",
+      "reason": "Holt's/Ashton Brands value; SEC 1999 trademark; late-1990s Ecuador distribution noted; no explicit intro year"
     },
     {
       "brand": "Babalu",
-      "cigar_count": 4,
-      "category": "holts_or_value_closeout",
-      "country_draft": "Dominikanska Republika",
-      "lines": [
-        "Churchill",
-        "Gordo",
-        "Robusto",
-        "Toro"
-      ],
-      "draft_has_blurb": true,
-      "draft_has_source": true,
-      "note_en": "Holt’s Dominican value line (Sun Grown); founding year not reliably documented (distinct from Austin Bobalu).",
-      "source": "https://www.holts.com/cigars/all-cigar-brands/babalu.html"
+      "founded": "—",
+      "reason": "Holt's/catalogue value or closeout; public founding year not documented after deep pass (SEC/Holts/trade)"
     },
     {
       "brand": "Boardwalk",
-      "cigar_count": 2,
-      "category": "holts_or_value_closeout",
-      "country_draft": "Dominikanska Republika",
-      "lines": [
-        "Robusto",
-        "Toro"
-      ],
-      "draft_has_blurb": true,
-      "draft_has_source": true,
-      "note_en": "Boardwalk — Holt’s value bundle (DR/Nicaragua, Brazilian wrapper); launch year not reliably documented.",
-      "source": "https://www.holts.com/cigars/all-cigar-brands/boardwalk.html"
+      "founded": "—",
+      "reason": "Holt's/catalogue value or closeout; public founding year not documented after deep pass (SEC/Holts/trade)"
     },
     {
       "brand": "Casa Royale",
-      "cigar_count": 2,
-      "category": "holts_or_value_closeout",
-      "country_draft": "Dominikanska Republika",
-      "lines": [
-        "Churchill",
-        "Robusto"
-      ],
-      "draft_has_blurb": true,
-      "draft_has_source": true,
-      "note_en": "Casa Royale — Holt’s/catalogue value line; reliable founding year not found.",
-      "source": "https://www.holts.com/cigars/all-cigar-brands.html"
+      "founded": "—",
+      "reason": "Holt's/catalogue value or closeout; public founding year not documented after deep pass (SEC/Holts/trade)"
     },
     {
       "brand": "Don Rubio",
-      "cigar_count": 2,
-      "category": "holts_or_value_closeout",
-      "country_draft": "Dominikanska Republika",
-      "lines": [
-        "Churchill",
-        "Toro"
-      ],
-      "draft_has_blurb": true,
-      "draft_has_source": true,
-      "note_en": "Don Rubio — Holt’s/catalogue value line; reliable founding year not found.",
-      "source": "https://www.holts.com/cigars/all-cigar-brands.html"
+      "founded": "—",
+      "reason": "Holt's/catalogue value or closeout; public founding year not documented after deep pass (SEC/Holts/trade)"
     },
     {
       "brand": "Fine Catch",
-      "cigar_count": 2,
-      "category": "holts_or_value_closeout",
-      "country_draft": "Dominikanska Republika",
-      "lines": [
-        "Marlin",
-        "Marlin Maduro"
-      ],
-      "draft_has_blurb": true,
-      "draft_has_source": true,
-      "note_en": "Fine Catch — Holt’s Dominican value line (Marlin etc., angler theme); exact year not documented.",
-      "source": "https://www.holts.com/cigars/all-cigar-brands/fine-catch.html"
+      "founded": "—",
+      "reason": "Holt's/catalogue value or closeout; public founding year not documented after deep pass (SEC/Holts/trade)"
     },
     {
       "brand": "Amante",
-      "cigar_count": 1,
-      "category": "holts_or_value_closeout",
-      "country_draft": "Dominikanska Republika",
-      "lines": [
-        "Toro"
-      ],
-      "draft_has_blurb": true,
-      "draft_has_source": true,
-      "note_en": "Amante — Holt’s catalogue value cigar; reliable founding year not found.",
-      "source": "https://www.holts.com/cigars/all-cigar-brands/amante.html"
+      "founded": "—",
+      "reason": "Holt's/catalogue value or closeout; public founding year not documented after deep pass (SEC/Holts/trade)"
     },
     {
       "brand": "Belleza",
-      "cigar_count": 1,
-      "category": "holts_or_value_closeout",
-      "country_draft": "Dominikanska Republika",
-      "lines": [
-        "Toro"
-      ],
-      "draft_has_blurb": true,
-      "draft_has_source": true,
-      "note_en": "Belleza — catalogue value (Toro); reliable founding year not found.",
-      "source": "https://www.holts.com/cigars/all-cigar-brands.html"
-    },
+      "founded": "—",
+      "reason": "Holt's/catalogue value or closeout; public founding year not documented after deep pass (SEC/Holts/trade)"
+    }
+  ],
+  "missing": [
     {
       "brand": "Blarney Stone",
       "cigar_count": 1,
