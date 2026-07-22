@@ -51,6 +51,10 @@
       "La Ley::Robusto": "DH Boutique La Ley core → La Ley; Nicarao zasebna linija istog blendatora",
       "Prominent::Robusto": "jedna od vitola Indonesian core → Prominent",
       "skipped_still": "Asylum bare; Blenders Clearing House; Bribon; Confidenciaal; Domenico; El Credito; Excalibur Epicure; Fuente Piramide; Kaneda; La Gloria Cubana; La Sirena; Montesino; Padrón Churchill/Panetela; Peterson Hallmark; 7-20-4"
+    },
+    "batch5": {
+      "Quorum::SHADE*": "casing/alias → Shade (merge s postojećom Quorum::Shade; CT wrapper)",
+      "bare_skipped": "Ostalih ~39 bare i dalje dvosmisleno (Asylum, Montesino Natural+Maduro, Fuente Piramide, Padrón Churchill/Panetela, Blenders Clearing House, Domenico, Bribon, Confidenciaal, La Sirena, La Gloria Cubana, Excalibur Epicure, El Credito, Kaneda, Peterson Hallmark, 7-20-4)"
     }
   },
   "map": {
@@ -238,6 +242,9 @@
     "El Centurion::Gran Toro": "El Centurion",
     "Henry Clay::Toro": "Stalk Cut",
     "La Ley::Robusto": "La Ley",
-    "Prominent::Robusto": "Prominent"
+    "Prominent::Robusto": "Prominent",
+    "Quorum::SHADE": "Shade",
+    "Quorum::SHADE Double": "Shade",
+    "Quorum::SHADE Tres": "Shade"
   }
 }
