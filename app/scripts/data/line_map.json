@@ -41,6 +41,25 @@
       "only_bare_brand_as_line": "Jednolinijski brendovi (samo bare vitole, konzistentan wrapper): Amante, Apr, Belleza, Blarney Stone, Bohekio, Bottom Shelf, Botucal, Casa Royale, Castano, Cortesia, Don Melo, Don Rubio, El Sitio, Escarabin, Flor de Jose, Gaia, Jalopy, La Capitana, La Coalicion, La Duena, La Libertad, Los Amigos, Lucky Dublin, Luminosa, Notorious, Rainmaker, Royal Symbols, Utopia → brand-as-line",
       "Graycliff Original::Presidente": "Sumatra bare → Graycliff Original (Pirate ostaje zasebna linija)",
       "skipped": "Confidenciaal (wrapper unbekannt/geheim); La Sirena (wrapper —); Excalibur Epicure (CT Shade+Broadleaf dual); Asylum bare (multi-line Habano/H-2000 mix); Arturo Fuente Piramide; Blenders Clearing House (CT+Habano agregacija + Maduro); Bribon; Domenico (miješani wrapperi); Don Lino bare; El Centurion Gran Toro vs H-2K-CT; El Credito; Hemmys; Henry Clay Toro vs War Hawk/Stalk Cut; Kaneda; La Gloria Cubana (Natural+Maduro agregacija); La Ley; Montesino (Natural+Maduro); Padrón Churchill/Panetela; Peterson Hallmark; Por Larranaga CT non-Cuban; Prominent; 7-20-4 Robusto (multi-line)"
+    },
+    "batch4": {
+      "Por Larranaga CT bare": "Altadis USA Dominican Ecuador CT (neptunecigar.com/cigar/por-larranaga) → Connecticut; kubanske linije (50/Montecarlos) ostaju",
+      "Don Lino Nicaraguan bare": "Holt's Don Lino Original all-Nicaraguan → Don Lino; Dark Horse/Millennium/Fumas/Casa Verde već imenovani",
+      "Hemmys::Piramide|Robusto": "core Natural (hemmys.de Robustos/Piramides); Maduro/Linea Secreta/Bundles već imenovani → Hemmys",
+      "El Centurion::Gran Toro": "core El Centurion Nicaraguan (vs H-2K-CT spinoff) → El Centurion",
+      "Henry Clay::Toro": "CT Broadleaf → merge Stalk Cut (holts Stalk Cut Toro); War Hawk već CT named",
+      "La Ley::Robusto": "DH Boutique La Ley core → La Ley; Nicarao zasebna linija istog blendatora",
+      "Prominent::Robusto": "jedna od vitola Indonesian core → Prominent",
+      "skipped_still": "Asylum bare; Blenders Clearing House; Bribon; Confidenciaal; Domenico; El Credito; Excalibur Epicure; Fuente Piramide; Kaneda; La Gloria Cubana; La Sirena; Montesino; Padrón Churchill/Panetela; Peterson Hallmark; 7-20-4"
+    },
+    "batch5": {
+      "Quorum::SHADE*": "casing/alias → Shade (merge s postojećom Quorum::Shade; CT wrapper)",
+      "bare_skipped": "Ostalih ~39 bare i dalje dvosmisleno (Asylum, Montesino Natural+Maduro, Fuente Piramide, Padrón Churchill/Panetela, Blenders Clearing House, Domenico, Bribon, Confidenciaal, La Sirena, La Gloria Cubana, Excalibur Epicure, El Credito, Kaneda, Peterson Hallmark, 7-20-4)"
+    },
+    "batch6_final": {
+      "Oliva::Master Blends III": "alias → Master Blends 3",
+      "Padrón::1964 Anniversary": "alias → 1964 Anniversary Series (postojeći note)",
+      "bare": "nema novih bare mapa — preostalih ~39 i dalje dvosmisleno"
     }
   },
   "map": {
@@ -215,6 +234,24 @@
     "Rainmaker::Toro": "Rainmaker",
     "Royal Symbols::Churchill": "Royal Symbols",
     "Utopia::Churchill": "Utopia",
-    "Graycliff Original::Presidente": "Graycliff Original"
+    "Graycliff Original::Presidente": "Graycliff Original",
+    "Por Larranaga::Corona Gorda": "Connecticut",
+    "Por Larranaga::Robusto": "Connecticut",
+    "Por Larranaga::Toro": "Connecticut",
+    "Don Lino::Churchill": "Don Lino",
+    "Don Lino::Robusto": "Don Lino",
+    "Don Lino::Toro": "Don Lino",
+    "Don Lino::Torpedo": "Don Lino",
+    "Hemmys::Piramide": "Hemmys",
+    "Hemmys::Robusto": "Hemmys",
+    "El Centurion::Gran Toro": "El Centurion",
+    "Henry Clay::Toro": "Stalk Cut",
+    "La Ley::Robusto": "La Ley",
+    "Prominent::Robusto": "Prominent",
+    "Quorum::SHADE": "Shade",
+    "Quorum::SHADE Double": "Shade",
+    "Quorum::SHADE Tres": "Shade",
+    "Oliva::Master Blends III": "Master Blends 3",
+    "Padrón::1964 Anniversary": "1964 Anniversary Series"
   }
 }
