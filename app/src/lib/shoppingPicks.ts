@@ -15,7 +15,7 @@ export const BUCKETS: Partial<Record<DrinkCategory, StyleBucket[]>> = {
   rum: [
     { id: "clean", label: { hr: "Čisti klasik", en: "Clean classic" }, styles: ["barbados", "blend", "trinidad", "puerto-rico", "dominican", "st-lucia", "cuba", "nicaragua-dry", "colombia", "mixing"] },
     { id: "jamaica", label: { hr: "Jamajka / esteri", en: "Jamaica / esters" }, styles: ["jamaica"] },
-    { id: "agricole", label: { hr: "Agricole", en: "Agricole" }, styles: ["agricole"] },
+    { id: "agricole", label: { hr: "Agricole / Cachaça", en: "Agricole / Cachaça" }, styles: ["agricole", "cachaca"] },
     { id: "rich", label: { hr: "Bogati / tamni", en: "Rich / dark" }, styles: ["demerara", "solera", "venezuela", "panama", "navy", "other"] },
     { id: "dessert", label: { hr: "Desertni / spiced", en: "Dessert / spiced" }, styles: ["spiced", "liqueur"] },
   ],

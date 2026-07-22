@@ -262,6 +262,7 @@ const STRINGS = {
   "brand.index": { hr: "Brendovi", en: "Brands" },
   "brand.lines": { hr: "linija", en: "lines" },
   "brand.from": { hr: "od", en: "from" },
+  "catalog.showMore": { hr: "Prikaži još", en: "Show more" },
   // kolekcija
   "coll.owned": { hr: "Imam", en: "Owned" },
   "coll.tried": { hr: "Probao", en: "Tried" },
@@ -325,6 +326,7 @@ export type StringKey = keyof typeof STRINGS;
 export const STYLE_LABELS: Record<string, LocalizedText> = {
   jamaica: { hr: "Jamajka (esterski)", en: "Jamaica (high ester)" },
   agricole: { hr: "Agricole", en: "Agricole" },
+  cachaca: { hr: "Cachaça (Brazil)", en: "Cachaça (Brazil)" },
   barbados: { hr: "Barbados", en: "Barbados" },
   cuba: { hr: "Kuba", en: "Cuba" },
   demerara: { hr: "Demerara", en: "Demerara" },
