@@ -249,11 +249,14 @@ def canon_line(brand, name, vitola, syns, line_map):
     # remove modifiers noise
     base = re.sub(r"\b(box[- ]?pressed|tubos?|single|cigars?|the|bp)\b", " ", base, flags=re.I)
     line = _clean(base)
-    # override map wins
-    ov = line_map.get(f"{brand}::{raw}") or line_map.get(f"{brand}::{line}")
-    if ov:
-        return ov
-    return line or vitola  # jednolinijski brend: linija = vitola fallback
+    final = line or vitola  # jednolinijski brend / bare-vitola: linija = vitola
+    # override map (line_map.json): probaj i sirovi naziv, i očišćenu liniju, i
+    # konačnu (vitola-fallback) liniju — da "Brend::Vitola" ključevi rade za
+    # bare-vitola linije (npr. "5 Vegas::Churchill" -> "Classic").
+    ov = (line_map.get(f"{brand}::{raw}")
+          or line_map.get(f"{brand}::{line}")
+          or line_map.get(f"{brand}::{final}"))
+    return ov or final
 
 
 def region_links(offers, cuban):
