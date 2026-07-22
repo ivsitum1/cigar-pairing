@@ -164,6 +164,10 @@ const STRINGS = {
     hr: "Prodaja duhana na daljinu u RH nije dopuštena — linkovi na cigare su isključivo referentni. Samo za punoljetne (18+).",
     en: "Distance sale of tobacco is not permitted in Croatia — cigar links are for reference only. Adults only (18+).",
   },
+  "footer.alcohol": {
+    hr: "Alkoholna pića su namijenjena punoljetnima (18+) — uživaj odgovorno.",
+    en: "Alcoholic drinks are for adults only (18+) — enjoy responsibly.",
+  },
   "footer.prices": {
     hr: "Cijene i dostupnost su okvirne i podložne promjeni — provjeri u trgovini.",
     en: "Prices and availability are indicative and subject to change — verify with the shop.",

@@ -20,6 +20,7 @@ export function Footer() {
         </a>
       </p>
       <p className="mt-1.5">{t("footer.tobacco")}</p>
+      <p className="mt-1.5">{t("footer.alcohol")}</p>
       <p className="mt-1.5">{t("footer.prices")}</p>
       <p className="mt-1.5">{t("footer.data")}</p>
       <p className="mt-2 font-display uppercase tracking-widest text-dim">
