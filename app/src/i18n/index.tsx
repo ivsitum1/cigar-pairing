@@ -152,6 +152,30 @@ const STRINGS = {
     en: "length estimated from the vitola (shop didn't state dimensions)",
   },
   "common.strengthReal": { hr: "snaga iz ocjene trgovine", en: "strength from shop rating" },
+  "footer.copyright": {
+    hr: "© 2026 Cigar & Pairing. Sva prava pridržana.",
+    en: "© 2026 Cigar & Pairing. All rights reserved.",
+  },
+  "footer.music": {
+    hr: "Glazba: Night on the Docks – Sax, Kevin MacLeod (incompetech.com), licenca CC BY 3.0.",
+    en: "Music: Night on the Docks – Sax by Kevin MacLeod (incompetech.com), licensed under CC BY 3.0.",
+  },
+  "footer.tobacco": {
+    hr: "Prodaja duhana na daljinu u RH nije dopuštena — linkovi na cigare su isključivo referentni. Samo za punoljetne (18+).",
+    en: "Distance sale of tobacco is not permitted in Croatia — cigar links are for reference only. Adults only (18+).",
+  },
+  "footer.prices": {
+    hr: "Cijene i dostupnost su okvirne i podložne promjeni — provjeri u trgovini.",
+    en: "Prices and availability are indicative and subject to change — verify with the shop.",
+  },
+  "footer.data": {
+    hr: "Dio profila (okusi, tijelo, snaga, duljina) je procjena, ne iz degustacije. App nije povezan s trgovinama ni markama; nazivi i marke pripadaju vlasnicima.",
+    en: "Some profiles (flavour, body, strength, length) are estimates, not from tasting. Not affiliated with the shops or brands; names and trademarks belong to their owners.",
+  },
+  "footer.health": {
+    hr: "Pušenje šteti zdravlju.",
+    en: "Smoking harms your health.",
+  },
   "pair.pickVitola": { hr: "Odaberi vitolu", en: "Pick a vitola" },
   "pair.pickVitolaHint": { hr: "Ova linija ima više formata — odaberi vitolu.", en: "This line has multiple sizes — pick a vitola." },
   "common.vitolas": { hr: "Vitole", en: "Vitolas" },

@@ -5,6 +5,7 @@ import { requestPairing } from "./store/pairingNav";
 import { navigate, useRoute, type Page } from "./store/route";
 import { SystemBanners } from "./components/SystemBanners";
 import { MusicToggle } from "./components/MusicToggle";
+import { Footer } from "./components/Footer";
 import type { Cigar, Drink } from "./types";
 
 // pairing je pocetni ekran i ostaje u glavnom chunku; ostale stranice
@@ -75,6 +76,7 @@ export default function App() {
           {page === "shopping" && <ShoppingPage />}
           {page === "club" && <ClubPage />}
         </Suspense>
+        <Footer />
       </main>
 
       <SystemBanners />

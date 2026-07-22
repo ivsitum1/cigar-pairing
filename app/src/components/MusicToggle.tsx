@@ -74,12 +74,21 @@ export function MusicToggle() {
   return (
     <button
       onClick={toggle}
-      className="rounded-full border border-zlato/40 px-3 py-1.5 font-display text-xs uppercase tracking-widest text-zlato hover:bg-zlato/10"
-      aria-label={on ? "Zaustavi glazbu" : "Pusti glazbu"}
+      className="flex h-8 w-8 items-center justify-center rounded-full border border-zlato/40 text-zlato hover:bg-zlato/10"
+      aria-label={on ? "Isključi glazbu" : "Uključi glazbu"}
       aria-pressed={on}
-      title={on ? "Glazba: uključena" : "Glazba: isključena"}
+      title={on ? "Glazba: uključena (klikni za isključivanje)" : "Glazba: isključena (klikni za uključivanje)"}
     >
-      {on ? "♪" : "♫"}
+      {/* nota = uključi; prekrižena nota = isključi */}
+      <span className="relative inline-flex text-base leading-none">
+        ♪
+        {on && (
+          <span
+            aria-hidden
+            className="pointer-events-none absolute left-1/2 top-1/2 h-[1.5px] w-[130%] -translate-x-1/2 -translate-y-1/2 rotate-45 rounded-full bg-current"
+          />
+        )}
+      </span>
     </button>
   );
 }
