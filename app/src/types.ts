@@ -103,6 +103,7 @@ export interface Cigar {
   // od kuriranih unosa; idempotentno regenerirano. Vidi Faza B/C playbook.
   catalogSource?: "market";
   formatEstimated?: boolean; // duljina procijenjena iz vitole (shop bez dimenzije)
+  strengthFromShop?: boolean; // snaga iz stvarnog shop-ocjenjivanja, ne heuristike
   sourceUrls?: string[];
   availabilityHR: string[];
   notes: LocalizedText;

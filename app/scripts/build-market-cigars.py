@@ -10,6 +10,7 @@ See docs/superpowers/plans/2026-07-21-phase-b-c-execution-playbook.md
 """
 from __future__ import annotations
 import argparse
+import collections
 import hashlib
 import json
 import re
@@ -175,6 +176,18 @@ def write_json(p, obj):
     Path(p).write_text(json.dumps(obj, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
+def detail_val(record, key):
+    """Vrijednost iz record.details ili bilo koje offer.details (shop je dao)."""
+    v = (record.get("details") or {}).get(key)
+    if v not in (None, ""):
+        return v
+    for o in record.get("offers") or []:
+        v = (o.get("details") or {}).get(key)
+        if v not in (None, ""):
+            return v
+    return None
+
+
 def length_mm(det):
     if det.get("lengthIn"):
         return round(det["lengthIn"] * 25.4)
@@ -309,7 +322,6 @@ def build():
                 pool.append((rb, r))
 
     if args.list_brands:
-        import collections
         cnt = collections.Counter(b for b, _ in pool)
         for b, n in cnt.most_common():
             print(f"{n:4d}  {b}")
@@ -360,19 +372,23 @@ def build():
         if agg is None:
             agg = {"brand": b, "line": line, "country": country, "cuban": cuban,
                    "wrappers": {}, "boxpressed": False, "offers": [], "urls": set(),
-                   "vitolas": {}, "len_est": False}
+                   "vitolas": {}, "len_est": False, "strengths": collections.Counter()}
             lines[(b, line)] = agg
         agg["len_est"] = agg["len_est"] or len_est
-        agg["boxpressed"] = agg["boxpressed"] or bool(det.get("boxPressed"))
-        w = det.get("wrapper")
+        agg["boxpressed"] = agg["boxpressed"] or bool(detail_val(r, "boxPressed"))
+        w = detail_val(r, "wrapper")
         if w:
             agg["wrappers"][w] = agg["wrappers"].get(w, 0) + 1
+        s_shop = detail_val(r, "strength")  # prava snaga iz shopa (1–5), kad postoji
+        if isinstance(s_shop, (int, float)) and 1 <= s_shop <= 5:
+            agg["strengths"][int(round(s_shop))] += 1
         agg["offers"].extend(offers)
         for o in offers:
             if o.get("url"):
                 agg["urls"].add(o["url"])
         vkey = (vit, int(ring), int(lmm))
-        agg["vitolas"].setdefault(vkey, {"name": vit, "ring": int(ring), "lmm": int(lmm), "offers": []})
+        agg["vitolas"].setdefault(vkey, {"name": vit, "ring": int(ring), "lmm": int(lmm),
+                                          "offers": [], "burn": detail_val(r, "burnTimeMin")})
         agg["vitolas"][vkey]["offers"].extend(offers)
 
     # materijalizacija: jedna cigara po (brend, linija)
@@ -394,8 +410,11 @@ def build():
             vlinks = region_links(v["offers"], cuban)
             hr = vlinks.get("HR")
             fmt = f"{v['ring']} x {v['lmm']}mm"
-            ventry = {"name": v["name"], "format": fmt,
-                      "smokeTimeMin": max(20, min(120, round(v["lmm"] / 2.6))),
+            # vrijeme pušenja: pravi burnTime iz shopa kad postoji, inače iz dužine
+            burn = v.get("burn")
+            smoke = int(burn) if isinstance(burn, (int, float)) and 15 <= burn <= 180 \
+                else max(20, min(120, round(v["lmm"] / 2.6)))
+            ventry = {"name": v["name"], "format": fmt, "smokeTimeMin": smoke,
                       "priceEUR": hr.get("priceEUR") if hr else None,
                       "url": hr["url"] if hr else None}
             if vlinks:  # linkovi te vitole (EU/USA/HR) — za odabir vitole u appu
@@ -414,7 +433,7 @@ def build():
             "format": f"{default_v['ring']} x {default_v['lmm']}mm", "country": agg["country"],
             "wrapper": wrapper, "strength": 3, "body": 3, "flavorTags": [],
             "profileEstimated": True, "catalogSource": "market",
-            "smokeTimeMin": max(20, min(120, round(default_v["lmm"] / 2.6))),
+            "smokeTimeMin": vitolas[0]["smokeTimeMin"],
             "priceEUR": hr_link.get("priceEUR") if hr_link else None,
             "priceApprox": bool(hr_link and hr_link.get("priceApprox")),
             "availabilityHR": [hr_link["shop"]] if hr_link else [],
@@ -423,7 +442,11 @@ def build():
         }
         if agg["len_est"]:
             rec["formatEstimated"] = True  # duljina procijenjena iz vitole
-        enrich(rec)  # strength/body/wrapper/flavorTags heuristika
+        enrich(rec)  # body/wrapper/flavorTags heuristika (snaga se prepisuje ispod)
+        if agg["strengths"]:
+            # PRAVA snaga iz shopa (CigarWorld 1–5) — najčešća za liniju
+            rec["strength"] = agg["strengths"].most_common(1)[0][0]
+            rec["strengthFromShop"] = True
         rec["notes"] = market_note(rec)  # opis iz atributa (nakon profila)
         new_entries.append(rec)
 
@@ -436,7 +459,6 @@ def build():
     # brands.json = TOČNO brendovi prisutni u cigars.json (1:1, bez orphana,
     # idempotentno): postojeće/kurirane zadrži, nove dodaj iz drafta (zemlja iz
     # cigara). Rebuild svaki run da se stara Faza C stanja ne gomilaju.
-    import collections
     draft_path = DATADIR / "new_brands_draft.json"
     draft = {k: v for k, v in load_json(draft_path).items() if not k.startswith("_")} if draft_path.exists() else {}
     brands_now = load_json(BRANDS)
