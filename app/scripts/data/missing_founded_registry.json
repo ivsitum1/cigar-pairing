@@ -4,12 +4,12 @@
   "scope": "brands.json founded==\"—\" AND draft founded still \"—\" or missing",
   "draft_file": "app/scripts/data/new_brands_draft.json",
   "stats": {
-    "draft_dated_count": 340,
-    "still_missing_founded": 32,
+    "draft_dated_count": 339,
+    "still_missing_founded": 26,
     "by_category": {
       "ambiguous_or_mixed_key": 0,
       "holts_or_value_closeout": 26,
-      "researched_year_unconfirmed": 6
+      "researched_year_unconfirmed": 0
     }
   },
   "categories_legend": {
@@ -93,6 +93,36 @@
       "brand": "Cigarworld",
       "founded": "—",
       "reason": "House private label (Corona de Luxe + Ligero); no single founding year; blurb improved"
+    },
+    {
+      "brand": "Xhaxhi",
+      "founded": "—",
+      "reason": "Boutique Bob de Goede; PCA 2022 visibility; no reliable founding year (halfwheel)"
+    },
+    {
+      "brand": "Don Melo",
+      "founded": "—",
+      "reason": "Wynne/Felipe Gregorio line; early-1990s Centenario in CA interview; exact year unconfirmed"
+    },
+    {
+      "brand": "El Copey",
+      "founded": "—",
+      "reason": "Lagos/American Caribbean DR handmade; DE exclusivity notes; year undocumented"
+    },
+    {
+      "brand": "Nat Sherman Host",
+      "founded": "—",
+      "reason": "Host Selection 'early 1990s' only; Maduro 2014; natural-line year not pinned"
+    },
+    {
+      "brand": "Perla",
+      "founded": "—",
+      "reason": "Perla de Calvano (J. Cortès/VCF); DE retail from 2015; founding year unconfirmed"
+    },
+    {
+      "brand": "Tabacos Baez",
+      "founded": "—",
+      "reason": "Serie SF on market by May 2010 reviews; explicit launch year not stated by My Father"
     }
   ],
   "missing": [
@@ -142,25 +172,6 @@
       "draft_has_source": true,
       "note_en": "Holt’s Dominican value bundle line from a boutique factory; founding year not documented.",
       "source": "https://www.holts.com/cigars/all-cigar-brands/blenders-clearing-house.html"
-    },
-    {
-      "brand": "Xhaxhi",
-      "cigar_count": 7,
-      "category": "researched_year_unconfirmed",
-      "country_draft": "Dominikanska Republika",
-      "lines": [
-        "Bobi",
-        "Bobi Baba Jan",
-        "Bobi El Ingeniero",
-        "Bobi El Licenciado",
-        "Bobi Mi Hermano",
-        "Bobi Sunrise",
-        "Bobi Sunset"
-      ],
-      "draft_has_blurb": true,
-      "draft_has_source": true,
-      "note_en": "Xhaxhi Bobi — boutique brand of Bob de Goede (Dutchman in the DR), blends e.g. at Kelner Boutique / El Artista; exact founding year not reliably documented (US visibility around PCA 2022).",
-      "source": "https://halfwheel.com/pca-2022-xhaxhi-bobi/412126/"
     },
     {
       "brand": "Angry Elf",
@@ -248,22 +259,6 @@
       "source": "https://www.holts.com/cigars/all-cigar-brands/babalu.html"
     },
     {
-      "brand": "Don Melo",
-      "cigar_count": 4,
-      "category": "researched_year_unconfirmed",
-      "country_draft": "Dominikanska Republika",
-      "lines": [
-        "Corona",
-        "Robusto",
-        "Toro",
-        "Torpedo"
-      ],
-      "draft_has_blurb": true,
-      "draft_has_source": true,
-      "note_en": "Don Melo — Philip Wynne / Felipe Gregorio line (Centenario around the early 1990s, CA); exact founding year not unambiguously confirmed; today’s catalogue often DR value.",
-      "source": "https://www.cigaraficionado.com/article/a-conversation-with-philip-wynne-6207"
-    },
-    {
       "brand": "Boardwalk",
       "cigar_count": 2,
       "category": "holts_or_value_closeout",
@@ -304,20 +299,6 @@
       "draft_has_source": true,
       "note_en": "Don Rubio — Holt’s/catalogue value line; reliable founding year not found.",
       "source": "https://www.holts.com/cigars/all-cigar-brands.html"
-    },
-    {
-      "brand": "El Copey",
-      "cigar_count": 2,
-      "category": "researched_year_unconfirmed",
-      "country_draft": "Dominikanska Republika",
-      "lines": [
-        "Claro",
-        "Mini"
-      ],
-      "draft_has_blurb": true,
-      "draft_has_source": true,
-      "note_en": "El Copey — DR handmade linked to Emiliano Lagos (Tabacalera American Caribbean / Spanish distribution); exact founding year not reliably documented.",
-      "source": "https://www.cigarworld.de/en/el-copey"
     },
     {
       "brand": "Fine Catch",
@@ -464,19 +445,6 @@
       "source": "https://www.holts.com/cigars/all-cigar-brands.html"
     },
     {
-      "brand": "Nat Sherman Host",
-      "cigar_count": 1,
-      "category": "researched_year_unconfirmed",
-      "country_draft": "Honduras",
-      "lines": [
-        "Hanover"
-      ],
-      "draft_has_blurb": true,
-      "draft_has_source": true,
-      "note_en": "Nat Sherman Host Selection — CT Shade line from the early 1990s (a Nat favorite; Hanover etc.); Maduro 2014; exact natural-line year not unambiguously confirmed.",
-      "source": "https://cigar-coop.com/2014/05/cigar-news-nat-sherman-host-selection.html"
-    },
-    {
       "brand": "O. Danny Boy",
       "cigar_count": 1,
       "category": "holts_or_value_closeout",
@@ -488,19 +456,6 @@
       "draft_has_source": true,
       "note_en": "O. Danny Boy — Holt’s/catalogue value; reliable founding year not found.",
       "source": "https://www.holts.com/cigars/all-cigar-brands.html"
-    },
-    {
-      "brand": "Perla",
-      "cigar_count": 1,
-      "category": "researched_year_unconfirmed",
-      "country_draft": "Nikaragva",
-      "lines": [
-        "de Calvano"
-      ],
-      "draft_has_blurb": true,
-      "draft_has_source": true,
-      "note_en": "Perla de Calvano — handmade medium-filler of J. Cortès / VCF (Belgium), Estelí; present at least since the mid-2010s (e.g. Cigar Trophy nomination); exact founding year not confirmed.",
-      "source": "https://cigar-coop.com/2016/07/feature-story-a-closer-look-at-j-cortes.html"
     },
     {
       "brand": "Rainmaker",
@@ -540,19 +495,6 @@
       "draft_has_source": true,
       "note_en": "Smokin’ Sandwich — Holt’s/catalogue mixed-filler value; reliable founding year not found.",
       "source": "https://www.holts.com/cigars/all-cigar-brands.html"
-    },
-    {
-      "brand": "Tabacos Baez",
-      "cigar_count": 1,
-      "category": "researched_year_unconfirmed",
-      "country_draft": "Nikaragva",
-      "lines": [
-        "Serie SF"
-      ],
-      "draft_has_blurb": true,
-      "draft_has_source": true,
-      "note_en": "Tabacos Baez Serie SF — My Father house mixed-filler (Cuban sandwich); on market by Mar/May 2010 (reviews/giveaway); exact launch year not explicitly confirmed.",
-      "source": "https://stogiereview.com/2010/05/05/tabacos-baez-serie-sf-corona/"
     },
     {
       "brand": "Utopia",
