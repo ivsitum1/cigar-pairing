@@ -11,12 +11,12 @@ export function Footer() {
       <p className="mt-1.5">
         {t("footer.music")}{" "}
         <a
-          href="https://creativecommons.org/licenses/by/3.0/"
+          href="https://creativecommons.org/licenses/by/4.0/"
           target="_blank"
           rel="noreferrer"
           className="text-zlato/80 underline decoration-zlato/30 underline-offset-2 hover:text-zlato-2"
         >
-          CC BY 3.0
+          CC BY 4.0
         </a>
       </p>
       <p className="mt-1.5">{t("footer.tobacco")}</p>

@@ -157,8 +157,8 @@ const STRINGS = {
     en: "© 2026 Cigar & Pairing. All rights reserved.",
   },
   "footer.music": {
-    hr: "Glazba: Night on the Docks – Sax, Kevin MacLeod (incompetech.com), licenca CC BY 3.0.",
-    en: "Music: Night on the Docks – Sax by Kevin MacLeod (incompetech.com), licensed under CC BY 3.0.",
+    hr: "Glazba: Night in Venice, Kevin MacLeod (incompetech.com), licenca CC BY 4.0.",
+    en: "Music: Night in Venice by Kevin MacLeod (incompetech.com), licensed under CC BY 4.0.",
   },
   "footer.tobacco": {
     hr: "Prodaja duhana na daljinu u RH nije dopuštena — linkovi na cigare su isključivo referentni. Samo za punoljetne (18+).",

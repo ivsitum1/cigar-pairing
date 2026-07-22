@@ -1,43 +1,63 @@
 import { useEffect, useRef, useState } from "react";
 
-// Diskretan pozadinski svirač. Preglednici ne daju da zvuk krene bez
-// korisničke geste, pa: klik uključi/isključi, izbor se pamti, a ako je
-// zadnji put bio uključen pokušamo nastaviti na prvu interakciju.
-const SRC = `${import.meta.env.BASE_URL}music/lounge.mp3`;
+// Pozadinska glazba — playlist na jednom gumbu. Klik cikliše:
+//   isključeno → track 1 → track 2 → … → isključeno.
+// Izbor se pamti; ako je zadnji put svirala, pokušamo nastaviti na prvu
+// korisničku gestu (preglednici blokiraju autoplay bez interakcije).
+const BASE = import.meta.env.BASE_URL;
+const TRACKS: { src: string; title: string }[] = [
+  { src: `${BASE}music/night-in-venice.mp3`, title: "Night in Venice" },
+];
 const STORAGE_KEY = "cnr.music";
 const VOLUME = 0.32;
 
 export function MusicToggle() {
   const audioRef = useRef<HTMLAudioElement | null>(null);
-  const [on, setOn] = useState(false);
+  const [idx, setIdx] = useState(-1); // -1 = isključeno
 
   // jednom napravi <audio> element (izvan React stabla, da preživi rerender)
   if (audioRef.current === null && typeof Audio !== "undefined") {
-    const el = new Audio(SRC);
+    const el = new Audio();
     el.loop = true;
     el.volume = VOLUME;
     el.preload = "none";
     audioRef.current = el;
   }
 
-  // ako je zadnji put bio uključen, pokušaj nastaviti — ako preglednik
-  // blokira autoplay, čekaj prvu gestu korisnika pa tek onda kreni
-  useEffect(() => {
-    if (localStorage.getItem(STORAGE_KEY) !== "on") return;
+  const playIndex = (i: number) => {
     const audio = audioRef.current;
     if (!audio) return;
+    audio.src = TRACKS[i].src;
+    audio.play().then(
+      () => {
+        setIdx(i);
+        localStorage.setItem(STORAGE_KEY, String(i));
+      },
+      () => {},
+    );
+  };
+
+  const stop = () => {
+    audioRef.current?.pause();
+    setIdx(-1);
+    localStorage.setItem(STORAGE_KEY, "off");
+  };
+
+  // ako je zadnji put svirala neka pjesma, pokušaj nastaviti — ako preglednik
+  // blokira autoplay, čekaj prvu gestu pa tek onda kreni
+  useEffect(() => {
+    const saved = localStorage.getItem(STORAGE_KEY);
+    const i = saved != null && saved !== "off" ? Number(saved) : -1;
+    if (!(i >= 0 && i < TRACKS.length)) return;
+    const audio = audioRef.current;
+    if (!audio) return;
+    audio.src = TRACKS[i].src;
 
     let cleanup = () => {};
-    const start = () => {
-      audio.play().then(
-        () => setOn(true),
-        () => {},
-      );
-    };
+    const start = () => audio.play().then(() => setIdx(i), () => {});
     audio.play().then(
-      () => setOn(true),
+      () => setIdx(i),
       () => {
-        // blokirano — pričekaj prvu gestu
         const resume = () => {
           start();
           cleanup();
@@ -53,33 +73,27 @@ export function MusicToggle() {
     return () => cleanup();
   }, []);
 
-  const toggle = () => {
-    const audio = audioRef.current;
-    if (!audio) return;
-    if (on) {
-      audio.pause();
-      setOn(false);
-      localStorage.setItem(STORAGE_KEY, "off");
-    } else {
-      audio.play().then(
-        () => {
-          setOn(true);
-          localStorage.setItem(STORAGE_KEY, "on");
-        },
-        () => {},
-      );
-    }
+  const cycle = () => {
+    const next = idx + 1;
+    if (next >= TRACKS.length) stop();
+    else playIndex(next);
   };
+
+  const on = idx >= 0;
+  const hasNext = on && idx < TRACKS.length - 1;
+  const title = on
+    ? `Glazba: ${TRACKS[idx].title} — klikni za ${hasNext ? "sljedeću podlogu" : "isključivanje"}`
+    : "Glazba isključena — klikni za uključivanje";
 
   return (
     <button
-      onClick={toggle}
+      onClick={cycle}
       className="flex h-8 w-8 items-center justify-center rounded-full border border-zlato/40 text-zlato hover:bg-zlato/10"
-      aria-label={on ? "Isključi glazbu" : "Uključi glazbu"}
+      aria-label={on ? "Promijeni ili isključi glazbu" : "Uključi glazbu"}
       aria-pressed={on}
-      title={on ? "Glazba: uključena (klikni za isključivanje)" : "Glazba: isključena (klikni za uključivanje)"}
+      title={title}
     >
-      {/* nota = uključi; prekrižena nota = isključi */}
+      {/* nota = uključi; prekrižena nota = isključeno/promjena */}
       <span className="relative inline-flex text-base leading-none">
         ♪
         {on && (
