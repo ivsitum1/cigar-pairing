@@ -240,7 +240,12 @@ function CigarDetails({
 
       {/* kupnja po regiji — kad je filter na regiji prikazi samo tu, inace sve */}
       <CigarBuyLinks cigar={cigar} />
-      <div className="mt-2 flex flex-wrap gap-1.5">
+      <div className="mt-2 flex flex-wrap items-center gap-1.5">
+        {cigar.flavoured && (
+          <span className="rounded-full border border-lista/50 bg-lista/15 px-2 py-0.5 text-micro uppercase tracking-wide text-lista">
+            ✿ {t("common.flavoured")}
+          </span>
+        )}
         {cigar.flavorTags.map((tag) => (
           <Chip key={tag}>{tag}</Chip>
         ))}
@@ -248,6 +253,20 @@ function CigarDetails({
       <p className="mt-3 text-sm leading-relaxed text-papir/85">
         {lx(cigar.notes)}
       </p>
+      {/* poštene oznake izvora podataka */}
+      {(cigar.profileEstimated || cigar.formatEstimated || cigar.strengthFromShop) && (
+        <div className="mt-1.5 space-y-0.5">
+          {cigar.profileEstimated && (
+            <p className="text-micro leading-snug text-dim/70">≈ {t("common.estimatedProfile")}</p>
+          )}
+          {cigar.strengthFromShop && (
+            <p className="text-micro leading-snug text-dim/70">✓ {t("common.strengthReal")}</p>
+          )}
+          {cigar.formatEstimated && (
+            <p className="text-micro leading-snug text-dim/70">± {t("common.formatEstimated")}</p>
+          )}
+        </div>
+      )}
       {/* sadrzaj samplera / gift-packa */}
       {cigar.lineup && cigar.lineup.length > 0 && (
         <div className="mt-3 rounded-lg border border-dim/20 bg-cedar/60 p-3">
