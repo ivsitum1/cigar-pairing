@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import type { Cigar, Drink, DrinkCategory, RegionFilter } from "../types";
 import {
   CIGARS,
@@ -21,6 +21,47 @@ import { useMarket, setMarket } from "../store/market";
 
 const norm = (s: string) =>
   s.normalize("NFKD").replace(/[̀-ͯ]/g, "").toLowerCase();
+
+// Prvi znak imena kao slovo indeksa (A–Z); sve ostalo (brojevi, simboli) → "#".
+const letterFor = (s: string) => {
+  const c = norm(s).charAt(0);
+  return c >= "a" && c <= "z" ? c.toUpperCase() : "#";
+};
+
+const RAIL = ["#", ..."ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("")];
+
+// Bočna A–Z traka za brzo skakanje po brendovima (tipa iOS kontakti):
+// klik na slovo skoči na prvi brend s tim početnim slovom.
+function AlphabetRail({
+  letters,
+  onJump,
+}: {
+  letters: Set<string>;
+  onJump: (l: string) => void;
+}) {
+  return (
+    <div className="fixed right-0 top-1/2 z-30 -translate-y-1/2 select-none">
+      <div className="flex flex-col items-center rounded-l-lg border-y border-l border-zlato/20 bg-humidor/85 px-1 py-1.5 backdrop-blur">
+        {RAIL.map((l) => {
+          const has = letters.has(l);
+          return (
+            <button
+              key={l}
+              disabled={!has}
+              onClick={() => onJump(l)}
+              aria-label={`Skoči na ${l}`}
+              className={`flex h-[15px] w-4 items-center justify-center font-display text-[9px] leading-none ${
+                has ? "text-zlato active:text-zlato-2" : "text-dim/25"
+              }`}
+            >
+              {l}
+            </button>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
 
 type Tab = "cigars" | DrinkCategory;
 const TABS: Tab[] = [
@@ -46,7 +87,10 @@ export function CatalogPage({
   const [styleFilter, setStyleFilter] = useState<string | null>(null);
   const [strengthFilter, setStrengthFilter] = useState<number | null>(null);
   const [cleanOnly, setCleanOnly] = useState(false);
-  const [browseBrands, setBrowseBrands] = useState(false);
+  // cigare se otvaraju na indeksu brendova (lakše se učitava od ~3000 cigara i
+  // ima abecedu za skok); puni popis cigara je iza istog "Brendovi" gumba
+  const [browseBrands, setBrowseBrands] = useState(true);
+  const [limit, setLimit] = useState(120);
   const [showShops, setShowShops] = useState(false);
   // sortiranje: pica kvaliteta|cijena|tijelo|slatkoca; cigare naziv|cijena|tijelo|snaga
   const [sortBy, setSortBy] = useState<"quality" | "price" | "body" | "sweetness" | "strength" | "name">("quality");
@@ -72,6 +116,28 @@ export function CatalogPage({
     );
   }, [tab, browseBrands, query]);
 
+  // sidra za A–Z skok: prvi redak svakog početnog slova u indeksu brendova
+  const brandAnchors = useMemo(() => {
+    const at = new Map<number, string>();
+    const letters = new Set<string>();
+    let prev = "";
+    brandRows.forEach((b, i) => {
+      const L = letterFor(b.brand);
+      letters.add(L);
+      if (L !== prev) {
+        at.set(i, L);
+        prev = L;
+      }
+    });
+    return { at, letters };
+  }, [brandRows]);
+
+  const jumpToLetter = (l: string) => {
+    document
+      .getElementById(`ci-alpha-${l}`)
+      ?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
   const openCigar = (raw: Cigar) => {
     const cigar = cigarById(raw.id) ?? raw;
     if (needsVitolaPick(cigar)) {
@@ -90,7 +156,7 @@ export function CatalogPage({
     setStyleFilter(null);
     setStrengthFilter(null);
     setCleanOnly(false);
-    setBrowseBrands(false);
+    setBrowseBrands(next === "cigars");
     setShowShops(false);
     setSortBy(next === "cigars" ? "name" : "quality");
   };
@@ -159,6 +225,20 @@ export function CatalogPage({
     };
     return [...list].sort(by[sortBy] ?? by.quality);
   }, [tab, q, styleFilter, cleanOnly, sortBy]);
+
+  // puni popis cigara zna imati tisuće redaka — prikaži u komadima da se
+  // kartica brzo otvori; reset kad se promijeni filter/sort/tab
+  useEffect(() => {
+    setLimit(120);
+  }, [tab, q, strengthFilter, market, sortBy, browseBrands]);
+
+  const showRail =
+    tab === "cigars" &&
+    browseBrands &&
+    brandRows.length > 12 &&
+    !brand &&
+    !detail &&
+    !pendingCigar;
 
   return (
     <div className="pb-4">
@@ -307,11 +387,14 @@ export function CatalogPage({
 
       <div className="mt-2 space-y-2">
         {browseBrands &&
-          brandRows.map((b) => (
+          brandRows.map((b, i) => {
+            const anchor = brandAnchors.at.get(i);
+            return (
             <button
               key={b.brand}
+              id={anchor ? `ci-alpha-${anchor}` : undefined}
               onClick={() => setBrand(b.brand)}
-              className="w-full rounded-xl border border-dim/15 bg-cedar p-3 text-left transition-colors hover:border-zlato/40"
+              className="w-full scroll-mt-4 rounded-xl border border-dim/15 bg-cedar p-3 text-left transition-colors hover:border-zlato/40"
             >
               <div className="flex items-baseline justify-between gap-2">
                 <span className="font-display text-base text-papir">{b.brand}</span>
@@ -334,15 +417,24 @@ export function CatalogPage({
                 </div>
               )}
             </button>
-          ))}
+            );
+          })}
         {!browseBrands &&
-          cigars.map((c) => (
+          cigars.slice(0, limit).map((c) => (
             <CigarRow
               key={`${c.id}::${c.line}`}
               cigar={c}
               onClick={() => openCigar(c)}
             />
           ))}
+        {!browseBrands && tab === "cigars" && cigars.length > limit && (
+          <button
+            onClick={() => setLimit((n) => n + 200)}
+            className="w-full rounded-xl border border-zlato/30 bg-cedar/60 py-2.5 text-xs uppercase tracking-widest text-zlato hover:bg-zlato/10"
+          >
+            {t("catalog.showMore")} ({cigars.length - limit})
+          </button>
+        )}
         {drinks.map((d, i) => (
           <DrinkRow
             key={d.id}
@@ -352,6 +444,10 @@ export function CatalogPage({
           />
         ))}
       </div>
+
+      {showRail && (
+        <AlphabetRail letters={brandAnchors.letters} onJump={jumpToLetter} />
+      )}
 
       {pendingCigar && (
         <VitolaPicker
