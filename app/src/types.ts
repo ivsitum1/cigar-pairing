@@ -72,6 +72,9 @@ export interface Vitola {
   smokeTimeMin: number | null;
   priceEUR: number | null;
   url: string | null; // link na proizvod (humidor.hr)
+  // Linkovi na proizvod te KONKRETNE vitole po regiji (market katalog) — kad
+  // korisnik izabere vitolu, kupnja/cijena vode na tu vitolu, ne na liniju.
+  regionLinks?: Partial<Record<Region, { shop: string; url: string; priceEUR?: number; priceApprox?: boolean }>>;
 }
 
 export interface Cigar {
@@ -100,6 +103,8 @@ export interface Cigar {
   // od kuriranih unosa; idempotentno regenerirano. Vidi Faza B/C playbook.
   catalogSource?: "market";
   formatEstimated?: boolean; // duljina procijenjena iz vitole (shop bez dimenzije)
+  strengthFromShop?: boolean; // snaga iz stvarnog shop-ocjenjivanja, ne heuristike
+  flavoured?: boolean; // aromatizirana/infuzirana (shop oznaka)
   sourceUrls?: string[];
   availabilityHR: string[];
   notes: LocalizedText;

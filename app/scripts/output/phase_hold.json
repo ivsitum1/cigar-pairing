@@ -1,17 +1,18 @@
 {
   "stats": {
-    "seen": 7746,
-    "admitted_records": 4444,
-    "lines": 2631,
-    "held": 3302,
+    "seen": 7912,
+    "admitted_records": 4548,
+    "lines": 2712,
+    "held": 3364,
     "by_reason": {
       "malformed_brand": 8,
       "no_format": 626,
-      "no_vitola": 2255,
-      "unknown_country": 44,
-      "habanos_brand_skip": 366,
+      "no_vitola": 2305,
+      "unknown_country": 45,
+      "habanos_brand_skip": 377,
       "no_price": 3
     },
+    "recovered_offers": 25,
     "new_brands_added": 0
   },
   "hold": [
@@ -382,6 +383,16 @@
     },
     {
       "reason": "no_vitola",
+      "name": "Aging Room Quattro Nicaragua Espressivo 5 x 50",
+      "brand": null
+    },
+    {
+      "reason": "no_vitola",
+      "name": "Aging Room Quattro Nicaragua Maestro 6 x 52",
+      "brand": null
+    },
+    {
+      "reason": "no_vitola",
       "name": "Aging Room Small Batch by Rafael Nodal Major",
       "brand": null
     },
@@ -591,6 +602,61 @@
       "brand": null
     },
     {
+      "reason": "no_vitola",
+      "name": "Ambasciator Italico Ammezzato Classico 5 /5 pak.",
+      "brand": null
+    },
+    {
+      "reason": "no_vitola",
+      "name": "Ambasciator Italico Bianco Stellato/5 pak.",
+      "brand": null
+    },
+    {
+      "reason": "no_vitola",
+      "name": "Ambasciator Italico Giallo Soave /5 pak.",
+      "brand": null
+    },
+    {
+      "reason": "no_vitola",
+      "name": "Ambasciator Italico Il Buttero /5 pak.",
+      "brand": null
+    },
+    {
+      "reason": "no_vitola",
+      "name": "Ambasciator Italico Maturo/5 pak.",
+      "brand": null
+    },
+    {
+      "reason": "no_vitola",
+      "name": "Ambasciator Italico Nero/5 pak.",
+      "brand": null
+    },
+    {
+      "reason": "no_vitola",
+      "name": "Ambasciator Italico Rosato Del Grappa /5 pak.",
+      "brand": null
+    },
+    {
+      "reason": "no_vitola",
+      "name": "Ambasciator Italico Rosso Arabico /5 pak.",
+      "brand": null
+    },
+    {
+      "reason": "no_vitola",
+      "name": "Ambasciator Italico Superiore /2 pak.",
+      "brand": null
+    },
+    {
+      "reason": "unknown_country",
+      "name": "Ambasciator Italico Torpedo /3 pak.",
+      "brand": null
+    },
+    {
+      "reason": "no_vitola",
+      "name": "Ambasciator Italico Tradizionale/5 pak.",
+      "brand": null
+    },
+    {
       "reason": "no_format",
       "name": "American Viking Unkillable Robusto (5×50)",
       "brand": null
@@ -746,6 +812,11 @@
       "brand": null
     },
     {
+      "reason": "no_vitola",
+      "name": "Asylum 13 April Fools 9 x 90",
+      "brand": null
+    },
+    {
       "reason": "no_format",
       "name": "Asylum 13 Authentic Corojo Robusto (5×50)",
       "brand": null
@@ -781,8 +852,18 @@
       "brand": null
     },
     {
+      "reason": "no_vitola",
+      "name": "Asylum 13 Hercule 7 x 70",
+      "brand": null
+    },
+    {
       "reason": "no_format",
       "name": "Asylum 13 Medulla Maduro Robusto (5×50)",
+      "brand": null
+    },
+    {
+      "reason": "no_vitola",
+      "name": "Asylum 13 Medulla Oblongata 5 x 50",
       "brand": null
     },
     {
@@ -813,6 +894,11 @@
     {
       "reason": "no_format",
       "name": "Asylum 13 Ogre Toro (6×52)",
+      "brand": null
+    },
+    {
+      "reason": "no_vitola",
+      "name": "Asylum 13 Pandemonium 8 ½ x 52",
       "brand": null
     },
     {
@@ -1792,6 +1878,11 @@
     },
     {
       "reason": "no_vitola",
+      "name": "CLE 25th Anniversary 11/18 6 x 54",
+      "brand": null
+    },
+    {
+      "reason": "no_vitola",
       "name": "CLE Connecticut 11/18 (54x6)",
       "brand": null
     },
@@ -1802,7 +1893,17 @@
     },
     {
       "reason": "no_vitola",
+      "name": "CLE Corojo 11/18 6 x 54",
+      "brand": null
+    },
+    {
+      "reason": "no_vitola",
       "name": "CLE Criollo 11/18 (54x6)",
+      "brand": null
+    },
+    {
+      "reason": "no_vitola",
+      "name": "CLE Criollo 11/18 6 x 52",
       "brand": null
     },
     {
@@ -3457,6 +3558,11 @@
     },
     {
       "reason": "no_vitola",
+      "name": "El Criollito Rosado Infante Tubos 4 ½ X 54",
+      "brand": null
+    },
+    {
+      "reason": "no_vitola",
       "name": "El Galan Connecticut Airosos (5x52)",
       "brand": null
     },
@@ -4631,6 +4737,56 @@
       "brand": null
     },
     {
+      "reason": "habanos_brand_skip",
+      "name": "H.Upmann Connossieur No. 1/25",
+      "brand": null
+    },
+    {
+      "reason": "habanos_brand_skip",
+      "name": "H.Upmann Connossieur No. 2/25",
+      "brand": null
+    },
+    {
+      "reason": "habanos_brand_skip",
+      "name": "H.Upmann Half Corona/25",
+      "brand": null
+    },
+    {
+      "reason": "habanos_brand_skip",
+      "name": "H.Upmann Magnum 46/25",
+      "brand": null
+    },
+    {
+      "reason": "habanos_brand_skip",
+      "name": "H.Upmann Magnum 50/25",
+      "brand": null
+    },
+    {
+      "reason": "habanos_brand_skip",
+      "name": "H.Upmann Magnum 54/25",
+      "brand": null
+    },
+    {
+      "reason": "habanos_brand_skip",
+      "name": "H.Upmann Majestic/25",
+      "brand": null
+    },
+    {
+      "reason": "habanos_brand_skip",
+      "name": "H.Upmann Noellas (LCH)/25",
+      "brand": null
+    },
+    {
+      "reason": "habanos_brand_skip",
+      "name": "H.Upmann Regalias /25",
+      "brand": null
+    },
+    {
+      "reason": "habanos_brand_skip",
+      "name": "H.Upmann Regalias /5",
+      "brand": null
+    },
+    {
       "reason": "no_vitola",
       "name": "Handmade Cheroots (5×44) 10-Pack",
       "brand": null
@@ -5271,6 +5427,21 @@
       "brand": null
     },
     {
+      "reason": "no_vitola",
+      "name": "JFR Corojo Titan 6 x 60",
+      "brand": null
+    },
+    {
+      "reason": "no_vitola",
+      "name": "JFR Lunatic Maduro 7 x 70",
+      "brand": null
+    },
+    {
+      "reason": "no_vitola",
+      "name": "JFR Lunatic Short Titan Habano 4 ¾ x 60",
+      "brand": null
+    },
+    {
       "reason": "no_format",
       "name": "JFR Maduro Robusto (5.5×50)",
       "brand": null
@@ -5792,6 +5963,16 @@
     },
     {
       "reason": "no_vitola",
+      "name": "La Aroma Del Caribe Mi Amor Duque 5 ¼ x 56",
+      "brand": null
+    },
+    {
+      "reason": "no_vitola",
+      "name": "La Aroma Del Caribe Mi Amor Valentino 5 ¾ x 58",
+      "brand": null
+    },
+    {
+      "reason": "no_vitola",
       "name": "La Aroma de Cuba Connecticut El Jefe",
       "brand": null
     },
@@ -5923,6 +6104,11 @@
     {
       "reason": "no_vitola",
       "name": "La Aroma del Caribe Connecticut El Jefe",
+      "brand": null
+    },
+    {
+      "reason": "no_vitola",
+      "name": "La Aroma del Caribe Edicion Especial No.3 6 x 50",
       "brand": null
     },
     {
@@ -6232,7 +6418,37 @@
     },
     {
       "reason": "no_vitola",
+      "name": "La Instructora Box Pressed #5 5 ⅝ x 55",
+      "brand": null
+    },
+    {
+      "reason": "no_vitola",
+      "name": "La Instructora Perfection Invicto 5 ¾ x 56",
+      "brand": null
+    },
+    {
+      "reason": "no_vitola",
       "name": "La Intimidad de Antonino Caruncho Entreacto",
+      "brand": null
+    },
+    {
+      "reason": "no_vitola",
+      "name": "La Ley Canonazo 6 ⅛ x 52",
+      "brand": null
+    },
+    {
+      "reason": "no_vitola",
+      "name": "La Ley Reserva 2016 Exquisito 4 ⅞ x 48",
+      "brand": null
+    },
+    {
+      "reason": "no_vitola",
+      "name": "La Ley Reserva 2016 Laguito N.6 6 ½ x 56",
+      "brand": null
+    },
+    {
+      "reason": "no_vitola",
+      "name": "La Ley Reserva 2017 Laguito N.6 6 ½ x 56",
       "brand": null
     },
     {
@@ -7197,6 +7413,11 @@
     },
     {
       "reason": "no_vitola",
+      "name": "Muestras de Saka The Bewitched 6 ⅝ x 48",
+      "brand": null
+    },
+    {
+      "reason": "no_vitola",
       "name": "Mustique Blue Slim Panetella",
       "brand": null
     },
@@ -7562,6 +7783,26 @@
     },
     {
       "reason": "no_vitola",
+      "name": "PDR A Flores Gran Reserva Corojo 2006 Puritos 4 ¼ x 34",
+      "brand": null
+    },
+    {
+      "reason": "no_vitola",
+      "name": "PDR A Flores Gran Reserva Desflorado Puritos 4 ¼ x 34",
+      "brand": null
+    },
+    {
+      "reason": "no_vitola",
+      "name": "PDR A Flores Gran Reserva Maduro Puritos 4 ¼ x 34",
+      "brand": null
+    },
+    {
+      "reason": "no_vitola",
+      "name": "PDR A Flores Gran Reserva Sungrown Puritos 4 ¼ x 34",
+      "brand": null
+    },
+    {
+      "reason": "no_vitola",
       "name": "PDR Capa Madura Magnum",
       "brand": null
     },
@@ -7578,6 +7819,21 @@
     {
       "reason": "no_vitola",
       "name": "PDR Capa Sun Grown Magnum",
+      "brand": null
+    },
+    {
+      "reason": "no_vitola",
+      "name": "PDR El Criollito Rosado Double Magnum 6 x 60",
+      "brand": null
+    },
+    {
+      "reason": "no_vitola",
+      "name": "PDR El Criollito Rosado Perla 3 ¾ x 42",
+      "brand": null
+    },
+    {
+      "reason": "no_vitola",
+      "name": "PDR El Criollito Rosado Puritos 4 ¼ x 34",
       "brand": null
     },
     {
@@ -7962,6 +8218,11 @@
     },
     {
       "reason": "no_vitola",
+      "name": "Rafael Gonzalez Panatelas Extra/25",
+      "brand": null
+    },
+    {
+      "reason": "no_vitola",
       "name": "Raices Liga de Reyes Salomón (Edición Limitada 2025)",
       "brand": null
     },
@@ -7993,6 +8254,11 @@
     {
       "reason": "no_vitola",
       "name": "Regius Grandido",
+      "brand": null
+    },
+    {
+      "reason": "no_vitola",
+      "name": "Rey del Mundo Royal Series (CDH)/20",
       "brand": null
     },
     {
@@ -8358,6 +8624,11 @@
     {
       "reason": "no_vitola",
       "name": "SYN Original Signum",
+      "brand": null
+    },
+    {
+      "reason": "no_vitola",
+      "name": "Saga Golden Age Yamasa 5 ⅝ x 47",
       "brand": null
     },
     {
@@ -8826,6 +9097,11 @@
       "brand": null
     },
     {
+      "reason": "no_vitola",
+      "name": "Sin Compromiso Paladin de Saka 7 x 50",
+      "brand": null
+    },
+    {
       "reason": "no_format",
       "name": "Sin Compromiso Seleccion No. 2 Torpedo (6×52)",
       "brand": null
@@ -8838,6 +9114,16 @@
     {
       "reason": "no_vitola",
       "name": "Sin Compromiso Seleccion No.7 (7×56)",
+      "brand": null
+    },
+    {
+      "reason": "no_vitola",
+      "name": "Sin Compromiso Selección Intrépido 5 ⅔ x 46",
+      "brand": null
+    },
+    {
+      "reason": "no_vitola",
+      "name": "Sin Compromiso Selección No.5 6 x 54",
       "brand": null
     },
     {
@@ -8883,6 +9169,16 @@
     {
       "reason": "no_vitola",
       "name": "Smoking Jacket by Hendrik Kelner Jr. Red Label Favoritos",
+      "brand": null
+    },
+    {
+      "reason": "no_vitola",
+      "name": "Sobremesa Brulee Blue 6 ¼ x 46",
+      "brand": null
+    },
+    {
+      "reason": "no_vitola",
+      "name": "Sobremesa Brulee Double Corono 7 x 54",
       "brand": null
     },
     {
@@ -9258,6 +9554,16 @@
     {
       "reason": "no_vitola",
       "name": "Te Amo World Selection Nicaragua Gran Corto",
+      "brand": null
+    },
+    {
+      "reason": "no_vitola",
+      "name": "The Aviator Series Cochon Volant 5 x 65",
+      "brand": null
+    },
+    {
+      "reason": "no_vitola",
+      "name": "The Aviator Series Envoi 5 x 50",
       "brand": null
     },
     {
@@ -9678,6 +9984,11 @@
     {
       "reason": "no_vitola",
       "name": "Vegas de Santiago White Label Chiquititos",
+      "brand": null
+    },
+    {
+      "reason": "habanos_brand_skip",
+      "name": "Vegueros Centrogordos/4",
       "brand": null
     },
     {

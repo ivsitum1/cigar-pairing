@@ -10,6 +10,7 @@ See docs/superpowers/plans/2026-07-21-phase-b-c-execution-playbook.md
 """
 from __future__ import annotations
 import argparse
+import collections
 import hashlib
 import json
 import re
@@ -95,6 +96,9 @@ def brand_slug(url: str):
     m = re.search(r"/zigarren/[^/]+/([^/?]+)", url)             # CigarWorld
     if m:
         return re.sub(r"-\d{6,}.*$", "", m.group(1))            # makni završni id-blok
+    m = re.search(r"(?:humidor\.hr|havana-cigar-shop\.com)/(?:hr/|en/)?proizvod/([^/?]+)", url)  # HR
+    if m:
+        return re.sub(r"-\d{1,3}$", "", m.group(1))            # makni trailing broj varijante
     return None
 
 
@@ -110,6 +114,37 @@ _LINE_WORDS = {
     "vintage", "signature", "anniversary", "aniversario", "especial", "exclusivo",
     "maduro", "connecticut", "habano", "selection", "master", "collection", "batch",
 }
+
+
+_STRENGTH_HR = {1: "vrlo lagane", 2: "lagane", 3: "srednje", 4: "jače", 5: "pune"}
+_STRENGTH_EN = {1: "very mild", 2: "mild", 3: "medium", 4: "medium-full", 5: "full"}
+_BODY_HR = {1: "vrlo laganog", 2: "laganog", 3: "srednjeg", 4: "punijeg", 5: "punog"}
+_BODY_EN = {1: "very light", 2: "light", 3: "medium", 4: "fuller", 5: "full"}
+# nekoliko okusnih tagova -> čitljiv opis
+_TAG_HR = {"kremasto": "kremasto", "cedar": "cedrovina", "koza": "koža", "kava": "kava",
+           "zacini": "začini", "med": "med", "orasasti": "orašasti tonovi",
+           "zemljano": "zemljani tonovi", "cokolada": "čokolada", "papar": "papar",
+           "vanilija": "vanilija", "slatko": "slatkoća", "trava-slatka": "slatka trava",
+           "duhan": "duhan", "drvenasto": "drvenasto"}
+
+
+def market_note(rec):
+    """Opis linije iz atributa (bez izmišljanja) — snaga/tijelo/wrapper/okusi."""
+    country = rec["country"]
+    wrapper = rec.get("wrapper")
+    wr_hr = f", {wrapper} pokrov" if wrapper and wrapper != "—" else ""
+    wr_en = f", {wrapper} wrapper" if wrapper and wrapper != "—" else ""
+    tags = [t for t in rec.get("flavorTags") or []][:3]
+    tags_hr = ", ".join(_TAG_HR.get(t, t) for t in tags)
+    arom_hr = "Aromatizirana. " if rec.get("flavoured") else ""
+    arom_en = "Flavoured/infused. " if rec.get("flavoured") else ""
+    hr = f"{arom_hr}{country}{wr_hr} — {_STRENGTH_HR[rec['strength']]} snage, {_BODY_HR[rec['body']]} tijela."
+    en = f"{arom_en}{country}{wr_en} — {_STRENGTH_EN[rec['strength']]} in strength, {_BODY_EN[rec['body']]}-bodied."
+    if tags_hr:
+        hr += f" Okusi: {tags_hr}."
+    if tags:
+        en += f" Notes: {', '.join(tags)}."
+    return {"hr": hr, "en": en}
 
 
 def brand_ok(b: str) -> bool:
@@ -144,6 +179,18 @@ def load_json(p):
 
 def write_json(p, obj):
     Path(p).write_text(json.dumps(obj, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
+def detail_val(record, key):
+    """Vrijednost iz record.details ili bilo koje offer.details (shop je dao)."""
+    v = (record.get("details") or {}).get(key)
+    if v not in (None, ""):
+        return v
+    for o in record.get("offers") or []:
+        v = (o.get("details") or {}).get(key)
+        if v not in (None, ""):
+            return v
+    return None
 
 
 def length_mm(det):
@@ -280,7 +327,6 @@ def build():
                 pool.append((rb, r))
 
     if args.list_brands:
-        import collections
         cnt = collections.Counter(b for b, _ in pool)
         for b, n in cnt.most_common():
             print(f"{n:4d}  {b}")
@@ -292,6 +338,7 @@ def build():
 
     # Grupiranje po (brend, linija) -> jedna cigara s više vitola.
     lines = {}   # (brand, line) -> aggregate
+    pending = []  # (brand, line, offers) iz zapisa bez vitole — za cross-shop recovery
     hold = []
     stats = {"seen": len(pool), "admitted_records": 0, "lines": 0, "held": 0, "by_reason": {}}
 
@@ -308,6 +355,13 @@ def build():
         cuban = is_cuban(r.get("country") or det.get("origin"))
         vit = match_vitola(r.get("vitola") or r.get("name") or "", syns) or match_vitola(det.get("size") or "", syns)
         if not vit:
+            # zapis bez prepoznate vitole: spremi ponudu za cross-shop recovery
+            # (npr. humidor Aging Room bez formata — vraća HR dostupnost liniji)
+            offs = [o for o in (r.get("offers") or []) if o.get("amount") is not None]
+            cc = derive_country(r)
+            if offs and cc:
+                ln = canon_line(b, r.get("name"), "", syns, line_map)
+                pending.append((b, ln, offs))
             rej("no_vitola", r); continue
         ring = det.get("ringGauge")
         lmm = length_mm(det)
@@ -331,20 +385,40 @@ def build():
         if agg is None:
             agg = {"brand": b, "line": line, "country": country, "cuban": cuban,
                    "wrappers": {}, "boxpressed": False, "offers": [], "urls": set(),
-                   "vitolas": {}, "len_est": False}
+                   "vitolas": {}, "len_est": False, "strengths": collections.Counter()}
             lines[(b, line)] = agg
         agg["len_est"] = agg["len_est"] or len_est
-        agg["boxpressed"] = agg["boxpressed"] or bool(det.get("boxPressed"))
-        w = det.get("wrapper")
+        agg["boxpressed"] = agg["boxpressed"] or bool(detail_val(r, "boxPressed"))
+        if detail_val(r, "flavoured") is True:
+            agg["flavoured"] = True
+        w = detail_val(r, "wrapper")
         if w:
             agg["wrappers"][w] = agg["wrappers"].get(w, 0) + 1
+        s_shop = detail_val(r, "strength")  # prava snaga iz shopa (1–5), kad postoji
+        if isinstance(s_shop, (int, float)) and 1 <= s_shop <= 5:
+            agg["strengths"][int(round(s_shop))] += 1
         agg["offers"].extend(offers)
         for o in offers:
             if o.get("url"):
                 agg["urls"].add(o["url"])
         vkey = (vit, int(ring), int(lmm))
-        agg["vitolas"].setdefault(vkey, {"name": vit, "ring": int(ring), "lmm": int(lmm), "offers": []})
+        agg["vitolas"].setdefault(vkey, {"name": vit, "ring": int(ring), "lmm": int(lmm),
+                                          "offers": [], "burn": detail_val(r, "burnTimeMin")})
         agg["vitolas"][vkey]["offers"].extend(offers)
+
+    # cross-shop recovery: vrati ponude (npr. HR) zapisa bez vitole u liniju
+    # istog (brend, linija) — da dostupnost/linkovi pokriju sve trgovine.
+    recovered = 0
+    for b, ln, offs in pending:
+        agg = lines.get((b, ln))
+        if agg is None:
+            continue
+        agg["offers"].extend(offs)
+        for o in offs:
+            if o.get("url"):
+                agg["urls"].add(o["url"])
+        recovered += 1
+    stats["recovered_offers"] = recovered
 
     # materijalizacija: jedna cigara po (brend, linija)
     used_ids = {c["id"] for c in base}
@@ -365,10 +439,16 @@ def build():
             vlinks = region_links(v["offers"], cuban)
             hr = vlinks.get("HR")
             fmt = f"{v['ring']} x {v['lmm']}mm"
-            vitolas.append({"name": v["name"], "format": fmt,
-                            "smokeTimeMin": max(20, min(120, round(v["lmm"] / 2.6))),
-                            "priceEUR": hr.get("priceEUR") if hr else None,
-                            "url": hr["url"] if hr else None})
+            # vrijeme pušenja: pravi burnTime iz shopa kad postoji, inače iz dužine
+            burn = v.get("burn")
+            smoke = int(burn) if isinstance(burn, (int, float)) and 15 <= burn <= 180 \
+                else max(20, min(120, round(v["lmm"] / 2.6)))
+            ventry = {"name": v["name"], "format": fmt, "smokeTimeMin": smoke,
+                      "priceEUR": hr.get("priceEUR") if hr else None,
+                      "url": hr["url"] if hr else None}
+            if vlinks:  # linkovi te vitole (EU/USA/HR) — za odabir vitole u appu
+                ventry["regionLinks"] = vlinks
+            vitolas.append(ventry)
         default_v = vsorted[0]
         markets = set(cigar_links.keys()) | {"WW"}
         if cuban:
@@ -382,17 +462,23 @@ def build():
             "format": f"{default_v['ring']} x {default_v['lmm']}mm", "country": agg["country"],
             "wrapper": wrapper, "strength": 3, "body": 3, "flavorTags": [],
             "profileEstimated": True, "catalogSource": "market",
-            "smokeTimeMin": max(20, min(120, round(default_v["lmm"] / 2.6))),
+            "smokeTimeMin": vitolas[0]["smokeTimeMin"],
             "priceEUR": hr_link.get("priceEUR") if hr_link else None,
             "priceApprox": bool(hr_link and hr_link.get("priceApprox")),
             "availabilityHR": [hr_link["shop"]] if hr_link else [],
-            "notes": {"hr": f"Iz kataloga {shops} — {b} {line}{bp}.",
-                       "en": f"From the {shops} catalogue — {b} {line}{bp}."},
+            "notes": {"hr": "", "en": ""},
             "markets": markets, "vitolas": vitolas, "regionLinks": cigar_links,
         }
         if agg["len_est"]:
             rec["formatEstimated"] = True  # duljina procijenjena iz vitole
-        enrich(rec)  # strength/body/wrapper/flavorTags heuristika
+        enrich(rec)  # body/wrapper/flavorTags heuristika (snaga se prepisuje ispod)
+        if agg["strengths"]:
+            # PRAVA snaga iz shopa (CigarWorld 1–5) — najčešća za liniju
+            rec["strength"] = agg["strengths"].most_common(1)[0][0]
+            rec["strengthFromShop"] = True
+        if agg.get("flavoured"):
+            rec["flavoured"] = True  # shop označio aromatiziranu/infuziranu cigaru
+        rec["notes"] = market_note(rec)  # opis iz atributa (nakon profila)
         new_entries.append(rec)
 
     stats["lines"] = len(new_entries)
@@ -404,7 +490,6 @@ def build():
     # brands.json = TOČNO brendovi prisutni u cigars.json (1:1, bez orphana,
     # idempotentno): postojeće/kurirane zadrži, nove dodaj iz drafta (zemlja iz
     # cigara). Rebuild svaki run da se stara Faza C stanja ne gomilaju.
-    import collections
     draft_path = DATADIR / "new_brands_draft.json"
     draft = {k: v for k, v in load_json(draft_path).items() if not k.startswith("_")} if draft_path.exists() else {}
     brands_now = load_json(BRANDS)
@@ -414,20 +499,25 @@ def build():
     all_used = {c["brand"] for c in merged}
     final_brands = {}
     added_brands = 0
+    generic = lambda b: {
+        "hr": f"{b} — marka iz kataloga trgovina (HR/EU/USA).",
+        "en": f"{b} — a brand listed in retail shop catalogues (HR/EU/USA).",
+    }
     for b in sorted(all_used, key=lambda s: s.casefold()):
-        if b in brands_now:
-            final_brands[b] = brands_now[b]          # kurirani ili već dodani
-        else:
-            d = draft.get(b, {})
+        if b in draft:
+            # shop brend: draft je IZVOR ISTINE (founded/blurb istraživanja
+            # propagiraju svaki run); zemlja iz cigara; `source` se ignorira.
+            d = draft[b]
             country = country_by_brand[b].most_common(1)[0][0] if country_by_brand[b] else d.get("country", "—")
-            final_brands[b] = {
-                "country": country,
-                "founded": d.get("founded", "—"),
-                "blurb": d.get("blurb", {
-                    "hr": f"{b} — marka iz kataloga trgovina (HR/EU/USA).",
-                    "en": f"{b} — a brand listed in retail shop catalogues (HR/EU/USA).",
-                }),
-            }
+            final_brands[b] = {"country": country, "founded": d.get("founded", "—"),
+                               "blurb": d.get("blurb", generic(b))}
+            if b not in brands_now:
+                added_brands += 1
+        elif b in brands_now:
+            final_brands[b] = brands_now[b]          # kurirani — zadrži
+        else:
+            country = country_by_brand[b].most_common(1)[0][0] if country_by_brand[b] else "—"
+            final_brands[b] = {"country": country, "founded": "—", "blurb": generic(b)}
             added_brands += 1
     Path(BRANDS).write_text(json.dumps(final_brands, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     stats["new_brands_added"] = added_brands
