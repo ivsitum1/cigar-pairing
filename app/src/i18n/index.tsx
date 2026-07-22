@@ -146,6 +146,12 @@ const STRINGS = {
     en: "Estimated profile — flavours inferred from wrapper and brand, not from tasting",
   },
   "common.estimatedShort": { hr: "procijenjeno", en: "estimated" },
+  "common.flavoured": { hr: "Aromatizirano", en: "Flavoured" },
+  "common.formatEstimated": {
+    hr: "duljina procijenjena iz vitole (trgovina nije navela dimenziju)",
+    en: "length estimated from the vitola (shop didn't state dimensions)",
+  },
+  "common.strengthReal": { hr: "snaga iz ocjene trgovine", en: "strength from shop rating" },
   "pair.pickVitola": { hr: "Odaberi vitolu", en: "Pick a vitola" },
   "pair.pickVitolaHint": { hr: "Ova linija ima više formata — odaberi vitolu.", en: "This line has multiple sizes — pick a vitola." },
   "common.vitolas": { hr: "Vitole", en: "Vitolas" },
