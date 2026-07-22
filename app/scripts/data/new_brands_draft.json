@@ -1102,13 +1102,12 @@
     }
   },
   "Csc": {
+    "country": "Nikaragva",
     "founded": "—",
     "blurb": {
-      "hr": "CSC (Cigar Seed Company) — nikaragvanski hand-made (Laith Haddad / Michael Sprick, Pforzheim); Fire Oak, Apache, Doble Capa.",
-      "en": "CSC (Cigar Seed Company) — Nicaraguan hand-mades (Laith Haddad / Michael Sprick, Pforzheim); Fire Oak, Apache, Doble Capa."
-    },
-    "source": "https://www.cigarworld.de/en/csc",
-    "country": "—"
+      "hr": "CSC (Cigar Seed Company) — Laith Haddad (LA shop od 1995.) / Michael Sprick (DE); nikaragvanski small-batch; točna godina EU brenda CSC nije pouzdano dokumentirana.",
+      "en": "CSC (Cigar Seed Company) — Laith Haddad (LA shop from 1995) / Michael Sprick (DE); Nicaraguan small-batch; exact EU CSC brand year not reliably documented."
+    }
   },
   "Cuba Aliados": {
     "founded": "1955",
@@ -1461,12 +1460,12 @@
     "country": "—"
   },
   "Dos": {
+    "country": "Španjolska",
     "founded": "—",
     "blurb": {
-      "hr": "Katalog ključ 'Dos' — miješa Amigos 87 i Jotas Infinity; nije jedna potvrđena marka/godina.",
-      "en": "Catalogue key 'Dos' — mixes Amigos 87 and Jotas Infinity; not one confirmed marque/year."
-    },
-    "country": "—"
+      "hr": "Katalog ključ 'Dos' — miješa Dos Amigos 87 (Llorens/Pineda, InterTabac 2025.) i Jotas Infinity; nije jedna potvrđena marka s jednom godinom.",
+      "en": "Catalogue key 'Dos' — mixes Dos Amigos 87 (Llorens/Pineda, InterTabac 2025) and Jotas Infinity; not one confirmed marque with a single founding year."
+    }
   },
   "Dutch Masters": {
     "country": "SAD",
@@ -2443,12 +2442,13 @@
     "country": "Nikaragva"
   },
   "La Chaveta": {
-    "country": "—",
-    "founded": "—",
+    "country": "Nikaragva",
+    "founded": "2025",
     "blurb": {
-      "hr": "La Chaveta — marka iz kataloga trgovina (HR/EU/USA).",
-      "en": "La Chaveta — a brand listed in retail shop catalogues (HR/EU/USA)."
-    }
+      "hr": "La Chaveta — Cigarworld in-house brend (Casa de Alegria / Ralf Westerwick, Estelí); White prva serija od 13.9.2025.",
+      "en": "La Chaveta — Cigarworld in-house brand (Casa de Alegria / Ralf Westerwick, Estelí); White first series from 13 Sep 2025."
+    },
+    "source": "https://www.cigarworld.de/en/zigarren/nicaragua/la-chaveta-white-90017380"
   },
   "La Coalicion": {
     "country": "Nikaragva",
@@ -2546,13 +2546,13 @@
     "source": "https://www.rauchr.de/en/zigarren/nicaragua/la-ley-90013466"
   },
   "La Libertad": {
-    "founded": "—",
+    "country": "Nikaragva",
+    "founded": "2010",
     "blurb": {
-      "hr": "Villiger La Libertad — Liberty Cigar Company (Njemačka) ranih 2000-ih; od 2021. Villiger de Nicaragua.",
-      "en": "Villiger La Libertad — Liberty Cigar Company (Germany) in the early 2000s; from 2021 at Villiger de Nicaragua."
+      "hr": "Villiger La Libertad — US launch 2010.; kasnije rebrand/blend update; proizvodnja Honduras pa Nikaragva.",
+      "en": "Villiger La Libertad — U.S. launch 2010; later rebrand/blend updates; made in Honduras then Nicaragua."
     },
-    "source": "https://www.cigarjournal.com/la-libertad-moves-from-honduras-to-nicaragua/",
-    "country": "—"
+    "source": "https://www.cigaraficionado.com/article/villiger-la-libertad-gets-new-look"
   },
   "La Magdalena": {
     "country": "Dominikanska Republika",
@@ -3508,8 +3508,8 @@
     "country": "Dominikanska Republika",
     "founded": "—",
     "blurb": {
-      "hr": "Rainmaker — marka iz kataloga trgovina (HR/EU/USA).",
-      "en": "Rainmaker — a brand listed in retail shop catalogues (HR/EU/USA)."
+      "hr": "Rainmaker — Holt’s Dominican value bundle (Connecticut Toro); godina lansiranja nije pouzdano dokumentirana.",
+      "en": "Rainmaker — Holt’s Dominican value bundle (Connecticut Toro); launch year not reliably documented."
     }
   },
   "Rancho": {
@@ -3548,12 +3548,13 @@
     "country": "Brazil"
   },
   "Regius": {
-    "country": "—",
-    "founded": "—",
+    "country": "Nikaragva",
+    "founded": "2010",
     "blurb": {
-      "hr": "Regius — marka iz kataloga trgovina (HR/EU/USA).",
-      "en": "Regius — a brand listed in retail shop catalogues (HR/EU/USA)."
-    }
+      "hr": "Regius — Akhil Kapacee (London); prve cigare prodane 2010.; nikaragvanski hand-made; Connecticut i druge linije.",
+      "en": "Regius — Akhil Kapacee (London); first cigars sold in 2010; Nicaraguan hand-mades; Connecticut and other lines."
+    },
+    "source": "https://www.cigaraficionado.com/article/q-a-akhil-kapacee-of-regius-cigars-194445"
   },
   "Reposado": {
     "founded": "2018",
@@ -3641,12 +3642,13 @@
     }
   },
   "Rough": {
-    "country": "—",
-    "founded": "—",
+    "country": "Dominikanska Republika",
+    "founded": "2025",
     "blurb": {
-      "hr": "Rough — marka iz kataloga trgovina (HR/EU/USA).",
-      "en": "Rough — a brand listed in retail shop catalogues (HR/EU/USA)."
-    }
+      "hr": "Rough Rider Chapter One — blaga linija Joséa „Jochyja“ Blanca (La Galera / Tabacalera Palma); InterTabac 2025.; Rough Rider ime od 2001.",
+      "en": "Rough Rider Chapter One — mild line by José “Jochy” Blanco (La Galera / Tabacalera Palma); InterTabac 2025; Rough Rider name from 2001."
+    },
+    "source": "https://www.cigarjournal.com/a-rough-ride-with-la-galera/"
   },
   "Royal Estates": {
     "country": "Nikaragva",
@@ -3727,18 +3729,19 @@
   },
   "Sancho Panza": {
     "country": "Honduras",
-    "founded": "—",
+    "founded": "1981",
     "blurb": {
-      "hr": "Sancho Panza — marka iz kataloga trgovina (HR/EU/USA).",
-      "en": "Sancho Panza — a brand listed in retail shop catalogues (HR/EU/USA)."
-    }
+      "hr": "Sancho Panza (nekubanski) — Villazon / General Cigar US trademark od 1981.; Honduras; Double Maduro revamp 2022.; cubansko ime 1848.",
+      "en": "Sancho Panza (non-Cuban) — Villazon / General Cigar U.S. trademark from 1981; Honduras; Double Maduro revamp 2022; Cuban name 1848."
+    },
+    "source": "https://en.wikipedia.org/wiki/Sancho_Panza_(brand)"
   },
   "Sansibar": {
-    "country": "—",
+    "country": "Honduras",
     "founded": "—",
     "blurb": {
-      "hr": "Sansibar — marka iz kataloga trgovina (HR/EU/USA).",
-      "en": "Sansibar — a brand listed in retail shop catalogues (HR/EU/USA)."
+      "hr": "Sansibar No. 1 — privatna linija za Sansibar (Sylt), npr. Laura Chavin Dominican puro; točna godina cigare nije pouzdano dokumentirana.",
+      "en": "Sansibar No. 1 — private line for Sansibar (Sylt), e.g. Laura Chavin Dominican puro; exact cigar year not reliably documented."
     }
   },
   "Santa Clara": {
@@ -3868,12 +3871,13 @@
     "country": "Nikaragva"
   },
   "Skull": {
-    "country": "—",
-    "founded": "—",
+    "country": "Kostarika",
+    "founded": "2014",
     "blurb": {
-      "hr": "Skull — marka iz kataloga trgovina (HR/EU/USA).",
-      "en": "Skull — a brand listed in retail shop catalogues (HR/EU/USA)."
-    }
+      "hr": "Skull 77 — Laurent Taha / Vegas de Santiago (Costa Rica); lansiranje 7.7.2014.; El Volcano piramida od 2018.",
+      "en": "Skull 77 — Laurent Taha / Vegas de Santiago (Costa Rica); launch 7 Jul 2014; El Volcano pyramid from 2018."
+    },
+    "source": "https://www.cigarworld.de/en/zigarren/costa-rica/skull-77-zigarren-90015879"
   },
   "Smokin Sandwich": {
     "country": "Dominikanska Republika",
@@ -3902,12 +3906,13 @@
     "country": "Nikaragva"
   },
   "Sons": {
-    "country": "—",
-    "founded": "—",
+    "country": "Honduras",
+    "founded": "2013",
     "blurb": {
-      "hr": "Sons — marka iz kataloga trgovina (HR/EU/USA).",
-      "en": "Sons — a brand listed in retail shop catalogues (HR/EU/USA)."
-    }
+      "hr": "Sons of Anarchy by Black Crown — Meier & Dutch × Fox; limited TV-licenca od 2013. (HATSA, Honduras).",
+      "en": "Sons of Anarchy by Black Crown — Meier & Dutch × Fox; limited TV licence from 2013 (HATSA, Honduras)."
+    },
+    "source": "https://halfwheel.com/press-release-meier-dutch-twentieth-century-fox-consumer-products-announced-limited-edition-sons-anarchy-cigar-line/40862/"
   },
   "Southern Draw": {
     "country": "Nikaragva",
@@ -4094,12 +4099,13 @@
     }
   },
   "Teatro": {
-    "country": "—",
-    "founded": "—",
+    "country": "Nikaragva",
+    "founded": "2023",
     "blurb": {
-      "hr": "Teatro — marka iz kataloga trgovina (HR/EU/USA).",
-      "en": "Teatro — a brand listed in retail shop catalogues (HR/EU/USA)."
-    }
+      "hr": "Teatro del Mundo Special Longfiller — August Schuster (Bünde); lagano aromatizirani nikaragvanski longfiller; EU od 4.4.2023.",
+      "en": "Teatro del Mundo Special Longfiller — August Schuster (Bünde); lightly flavoured Nicaraguan long-filler; EU from 4 Apr 2023."
+    },
+    "source": "https://www.cigarworld.de/en/zigarren/nicaragua/teatro-del-mundo-special-longfiller-90016385"
   },
   "The Aviator": {
     "country": "Dominikanska Republika",
@@ -4203,20 +4209,22 @@
     "source": "https://www.cigaraficionado.com/article/an-interview-with-carlos-torano-6171"
   },
   "Tortuga": {
-    "country": "—",
-    "founded": "—",
+    "country": "Honduras",
+    "founded": "2013",
     "blurb": {
-      "hr": "Tortuga — marka iz kataloga trgovina (HR/EU/USA).",
-      "en": "Tortuga — a brand listed in retail shop catalogues (HR/EU/USA)."
-    }
+      "hr": "Tortuga 215 Reserva — Victor Vitale / Legacy Brands; Nicaraguan puro; debut IPCPR 2013. (215 = ZIP Philadelphije).",
+      "en": "Tortuga 215 Reserva — Victor Vitale / Legacy Brands; Nicaraguan puro; debut IPCPR 2013 (215 = Philadelphia ZIP)."
+    },
+    "source": "https://halfwheel.com/press-release-tortuga-215-reserva-victor-vitale/38708/"
   },
   "Toscano": {
-    "country": "—",
-    "founded": "—",
+    "country": "Italija",
+    "founded": "2022",
     "blurb": {
-      "hr": "Toscano — marka iz kataloga trgovina (HR/EU/USA).",
-      "en": "Toscano — a brand listed in retail shop catalogues (HR/EU/USA)."
-    }
+      "hr": "Toscano Master Aged — Manifatture Sigaro Toscano premium serija s produženim zrenjem; showcase PCA 2022.; Toscano nasljeđe od 1818.",
+      "en": "Toscano Master Aged — Manifatture Sigaro Toscano premium series with extended maturation; PCA showcase 2022; Toscano heritage from 1818."
+    },
+    "source": "https://cigar-coop.com/2022/06/cigar-news-toscano-master-aged-series-to-be-showcased-at-2022-pca-trade-show.html"
   },
   "Total": {
     "founded": "2010",
@@ -4339,12 +4347,13 @@
     }
   },
   "Villa": {
-    "country": "—",
-    "founded": "—",
+    "country": "Nikaragva",
+    "founded": "2022",
     "blurb": {
-      "hr": "Villa — marka iz kataloga trgovina (HR/EU/USA).",
-      "en": "Villa — a brand listed in retail shop catalogues (HR/EU/USA)."
-    }
+      "hr": "Villa Vieja — Fernando Navarro / Aganorsa (Estelí); market launch mid-2022.; Clasico linija u EU od 2023.",
+      "en": "Villa Vieja — Fernando Navarro / Aganorsa (Estelí); market launch mid-2022; Clasico line in EU from 2023."
+    },
+    "source": "https://villaviejacigars.com/history/"
   },
   "Warfighter": {
     "country": "—",
@@ -4415,11 +4424,11 @@
     "country": "—"
   },
   "Wolfertz": {
-    "country": "—",
+    "country": "Honduras",
     "founded": "—",
     "blurb": {
-      "hr": "Wolfertz — marka iz kataloga trgovina (HR/EU/USA).",
-      "en": "Wolfertz — a brand listed in retail shop catalogues (HR/EU/USA)."
+      "hr": "Wolfertz Aventura — honduraški longfiller pod imenom uvoznika Wolfertz; točna godina nije pouzdano dokumentirana (ne miješati s ADVentura).",
+      "en": "Wolfertz Aventura — Honduran long-filler under importer Wolfertz; exact year not reliably documented (not to be confused with ADVentura)."
     }
   },
   "Xhaxhi": {
