@@ -5,10 +5,10 @@
   "draft_file": "app/scripts/data/new_brands_draft.json",
   "stats": {
     "draft_dated_count": 339,
-    "still_missing_founded": 13,
+    "still_missing_founded": 0,
     "by_category": {
       "ambiguous_or_mixed_key": 0,
-      "holts_or_value_closeout": 13,
+      "holts_or_value_closeout": 0,
       "researched_year_unconfirmed": 0
     }
   },
@@ -188,177 +188,72 @@
       "brand": "Belleza",
       "founded": "—",
       "reason": "Holt's/catalogue value or closeout; public founding year not documented after deep pass (SEC/Holts/trade)"
-    }
-  ],
-  "missing": [
+    },
     {
       "brand": "Blarney Stone",
-      "cigar_count": 1,
-      "category": "holts_or_value_closeout",
-      "country_draft": "Dominikanska Republika",
-      "lines": [
-        "Churchill"
-      ],
-      "draft_has_blurb": true,
-      "draft_has_source": true,
-      "note_en": "Blarney Stone — Holt’s/catalogue value; reliable founding year not found.",
-      "source": "https://www.holts.com/cigars/all-cigar-brands.html"
+      "founded": "—",
+      "reason": "Holt's/catalogue value or closeout; public founding year not documented after deep pass (SEC/Holts/trade)"
     },
     {
       "brand": "Bottom Shelf",
-      "cigar_count": 1,
-      "category": "holts_or_value_closeout",
-      "country_draft": "Dominikanska Republika",
-      "lines": [
-        "Churchill"
-      ],
-      "draft_has_blurb": true,
-      "draft_has_source": true,
-      "note_en": "Bottom Shelf — Holt’s closeout/value; reliable founding year not found.",
-      "source": "https://www.holts.com/cigars/all-cigar-brands.html"
+      "founded": "—",
+      "reason": "Holt's/catalogue value or closeout; public founding year not documented after deep pass (SEC/Holts/trade)"
     },
     {
       "brand": "Cortesia",
-      "cigar_count": 1,
-      "category": "holts_or_value_closeout",
-      "country_draft": "Dominikanska Republika",
-      "lines": [
-        "Churchill"
-      ],
-      "draft_has_blurb": true,
-      "draft_has_source": true,
-      "note_en": "Cortesia — registered trademark of Holt’s Cigar Holdings (SEC 1999 with Ashton/Castano/Savoy); exact line launch year not stated.",
-      "source": "https://www.sec.gov/Archives/edgar/data/1045549/000089322099000785/0000893220-99-000785.txt"
+      "founded": "—",
+      "reason": "Holt's proprietary in SEC 1998/99; price-tier catalog brand; intro year not stated"
     },
     {
       "brand": "Flor de Jose",
-      "cigar_count": 1,
-      "category": "holts_or_value_closeout",
-      "country_draft": "Dominikanska Republika",
-      "lines": [
-        "Churchill"
-      ],
-      "draft_has_blurb": true,
-      "draft_has_source": true,
-      "note_en": "Flor de Jose — Holt’s/catalogue value; reliable founding year not found.",
-      "source": "https://www.holts.com/cigars/all-cigar-brands.html"
+      "founded": "—",
+      "reason": "Holt's/catalogue value or closeout; public founding year not documented after deep pass (SEC/Holts/trade)"
     },
     {
       "brand": "Gaia",
-      "cigar_count": 1,
-      "category": "holts_or_value_closeout",
-      "country_draft": "Dominikanska Republika",
-      "lines": [
-        "Churchill"
-      ],
-      "draft_has_blurb": true,
-      "draft_has_source": true,
-      "note_en": "Gaia — Holt’s/catalogue value; reliable founding year not found.",
-      "source": "https://www.holts.com/cigars/all-cigar-brands.html"
+      "founded": "—",
+      "reason": "Holt's/catalogue value or closeout; public founding year not documented after deep pass (SEC/Holts/trade)"
     },
     {
       "brand": "Jalopy",
-      "cigar_count": 1,
-      "category": "holts_or_value_closeout",
-      "country_draft": "Dominikanska Republika",
-      "lines": [
-        "Churchill"
-      ],
-      "draft_has_blurb": true,
-      "draft_has_source": true,
-      "note_en": "Jalopy — Holt’s/catalogue value; reliable founding year not found.",
-      "source": "https://www.holts.com/cigars/all-cigar-brands.html"
+      "founded": "—",
+      "reason": "Holt's/catalogue value or closeout; public founding year not documented after deep pass (SEC/Holts/trade)"
     },
     {
       "brand": "King S. Court",
-      "cigar_count": 1,
-      "category": "holts_or_value_closeout",
-      "country_draft": "Honduras",
-      "lines": [
-        "King's Court Abbot"
-      ],
-      "draft_has_blurb": true,
-      "draft_has_source": true,
-      "note_en": "King’s Court — Holt’s Honduras closeout (Abbot belicoso); launch year not documented.",
-      "source": "https://www.holts.com/cigars/all-cigar-brands/king-s-court.html"
+      "founded": "—",
+      "reason": "Holt's Honduras closeout (Abbot); launch year undocumented"
     },
     {
       "brand": "Lucky Dublin",
-      "cigar_count": 1,
-      "category": "holts_or_value_closeout",
-      "country_draft": "Dominikanska Republika",
-      "lines": [
-        "Churchill"
-      ],
-      "draft_has_blurb": true,
-      "draft_has_source": true,
-      "note_en": "Lucky Dublin — Holt’s/catalogue value; reliable founding year not found.",
-      "source": "https://www.holts.com/cigars/all-cigar-brands.html"
+      "founded": "—",
+      "reason": "Holt's/catalogue value or closeout; public founding year not documented after deep pass (SEC/Holts/trade)"
     },
     {
       "brand": "O. Danny Boy",
-      "cigar_count": 1,
-      "category": "holts_or_value_closeout",
-      "country_draft": "Dominikanska Republika",
-      "lines": [
-        "O' Danny Boy"
-      ],
-      "draft_has_blurb": true,
-      "draft_has_source": true,
-      "note_en": "O. Danny Boy — Holt’s/catalogue value; reliable founding year not found.",
-      "source": "https://www.holts.com/cigars/all-cigar-brands.html"
+      "founded": "—",
+      "reason": "Holt's/catalogue value or closeout; public founding year not documented after deep pass (SEC/Holts/trade)"
     },
     {
       "brand": "Rainmaker",
-      "cigar_count": 1,
-      "category": "holts_or_value_closeout",
-      "country_draft": "Dominikanska Republika",
-      "lines": [
-        "Toro"
-      ],
-      "draft_has_blurb": true,
-      "draft_has_source": true,
-      "note_en": "Rainmaker — Holt’s Dominican value bundle (CT Toro); launch year not documented.",
-      "source": "https://www.holts.com/cigars/all-cigar-brands.html"
+      "founded": "—",
+      "reason": "Holt's/catalogue value or closeout; public founding year not documented after deep pass (SEC/Holts/trade)"
     },
     {
       "brand": "Royal Symbols",
-      "cigar_count": 1,
-      "category": "holts_or_value_closeout",
-      "country_draft": "Dominikanska Republika",
-      "lines": [
-        "Churchill"
-      ],
-      "draft_has_blurb": true,
-      "draft_has_source": true,
-      "note_en": "Royal Symbols — Holt’s/catalogue value; reliable founding year not found.",
-      "source": "https://www.holts.com/cigars/all-cigar-brands.html"
+      "founded": "—",
+      "reason": "Holt's/catalogue value or closeout; public founding year not documented after deep pass (SEC/Holts/trade)"
     },
     {
       "brand": "Smokin Sandwich",
-      "cigar_count": 1,
-      "category": "holts_or_value_closeout",
-      "country_draft": "Dominikanska Republika",
-      "lines": [
-        "Smokin' Sandwich"
-      ],
-      "draft_has_blurb": true,
-      "draft_has_source": true,
-      "note_en": "Smokin’ Sandwich — Holt’s/catalogue mixed-filler value; reliable founding year not found.",
-      "source": "https://www.holts.com/cigars/all-cigar-brands.html"
+      "founded": "—",
+      "reason": "Holt's/catalogue value or closeout; public founding year not documented after deep pass (SEC/Holts/trade)"
     },
     {
       "brand": "Utopia",
-      "cigar_count": 1,
-      "category": "holts_or_value_closeout",
-      "country_draft": "Dominikanska Republika",
-      "lines": [
-        "Churchill"
-      ],
-      "draft_has_blurb": true,
-      "draft_has_source": true,
-      "note_en": "Utopia — Holt’s/catalogue value; reliable founding year not found.",
-      "source": "https://www.holts.com/cigars/all-cigar-brands.html"
+      "founded": "—",
+      "reason": "Holt's/catalogue value or closeout; public founding year not documented after deep pass (SEC/Holts/trade)"
     }
-  ]
+  ],
+  "missing": []
 }
