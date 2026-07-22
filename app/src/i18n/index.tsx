@@ -26,8 +26,8 @@ const STRINGS = {
     en: "Short guides: cigars, drinks and accessories. Shop links are optional — local and online retailers.",
   },
   "club.101Teaser": {
-    hr: "Mali tečaj: cigare, pića, pribor i trikovi. Lekcije se otvaraju u zasebnom pogledu — s natrag gumbom.",
-    en: "A mini course: cigars, drinks, accessories and tips. Lessons open in their own view — with a back button.",
+    hr: "Mali tečaj: cigare, pića, pribor i trikovi. Lekcije se otvaraju u zasebnom pogledu.",
+    en: "A mini course: cigars, drinks, accessories and tips. Lessons open in their own view.",
   },
   "club.101Open": { hr: "Otvori tečaj", en: "Open the course" },
   "club.101CourseHint": {
