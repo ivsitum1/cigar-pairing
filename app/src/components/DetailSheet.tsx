@@ -5,6 +5,7 @@ import { brandInfo, cigarShopLinks, cigarPriceForMarket, formatPrice } from "../
 import { REGIONS } from "../data/shops";
 import { drinkBuyLink } from "../lib/drinkBuyLink";
 import { vitolaBlurb } from "../lib/vitolaInfo";
+import { resolveSamplerCigar } from "../lib/samplerLink";
 import { Chip, Meter } from "./ui";
 import { BackButton } from "./BackButton";
 import {
@@ -28,7 +29,13 @@ export function DetailSheet({
 }) {
   const { t } = useI18n();
   useCollection();
-  const id = target?.item.id;
+  // interni stog: navigacija unutar kartice (npr. sampler → pojedina cigara)
+  const [stack, setStack] = useState<Item[]>([]);
+  useEffect(() => {
+    setStack([]);
+  }, [target?.item.id]);
+  const active = stack.length ? stack[stack.length - 1] : target;
+  const id = active?.item.id;
   const state = id ? getItemState(id) : null;
   const [note, setNote] = useState("");
 
@@ -36,9 +43,13 @@ export function DetailSheet({
     if (id) setNote(getItemState(id).note);
   }, [id]);
 
-  if (!target || !id || !state) return null;
+  if (!target || !active || !id || !state) return null;
 
   const saveNote = () => updateItem(id, { note });
+  const goBack = () =>
+    stack.length ? setStack((s) => s.slice(0, -1)) : onClose();
+  const pushCigar = (c: Cigar) =>
+    setStack((s) => [...s, { kind: "cigar", item: c }]);
 
   return (
     <div
@@ -52,13 +63,17 @@ export function DetailSheet({
         <div className="mx-auto mb-4 h-1 w-10 rounded-full bg-dim/40 sm:hidden" />
 
         <div className="mb-3">
-          <BackButton onClick={onClose}>{t("common.back")}</BackButton>
+          <BackButton onClick={goBack}>{t("common.back")}</BackButton>
         </div>
 
-        {target.kind === "cigar" ? (
-          <CigarDetails cigar={target.item} onOpenBrand={onOpenBrand} />
+        {active.kind === "cigar" ? (
+          <CigarDetails
+            cigar={active.item}
+            onOpenBrand={onOpenBrand}
+            onOpenCigar={pushCigar}
+          />
         ) : (
-          <DrinkDetails drink={target.item} />
+          <DrinkDetails drink={active.item} />
         )}
 
         <div className="band-rule my-4" />
@@ -124,10 +139,10 @@ export function DetailSheet({
         {onPair && (
           <button
             type="button"
-            onClick={() => onPair(target)}
+            onClick={() => onPair(active)}
             className="mt-4 w-full rounded-lg border border-oxblood/50 bg-oxblood/15 py-2.5 font-display text-sm uppercase tracking-widest text-zlato-2 hover:bg-oxblood/25"
           >
-            {target.kind === "cigar" ? t("cat.pairWithDrink") : t("cat.pairWithCigar")}
+            {active.kind === "cigar" ? t("cat.pairWithDrink") : t("cat.pairWithCigar")}
           </button>
         )}
 
@@ -145,9 +160,11 @@ export function DetailSheet({
 function CigarDetails({
   cigar,
   onOpenBrand,
+  onOpenCigar,
 }: {
   cigar: Cigar;
   onOpenBrand?: (brand: string) => void;
+  onOpenCigar?: (c: Cigar) => void;
 }) {
   const { t, lx, cn, lang } = useI18n();
   const brand = brandInfo(cigar.brand);
@@ -274,11 +291,20 @@ function CigarDetails({
             {t("common.samplerContents")}
           </div>
           <ul className="mt-1.5 flex flex-wrap gap-1.5">
-            {cigar.lineup.map((b) => (
-              <li key={b}>
-                <Chip>{b}</Chip>
-              </li>
-            ))}
+            {cigar.lineup.map((b) => {
+              const hit = onOpenCigar
+                ? resolveSamplerCigar(cigar.brand, b, cigar.id)
+                : null;
+              return (
+                <li key={b}>
+                  {hit ? (
+                    <Chip onClick={() => onOpenCigar!(hit)}>{b} →</Chip>
+                  ) : (
+                    <Chip>{b}</Chip>
+                  )}
+                </li>
+              );
+            })}
           </ul>
         </div>
       )}
