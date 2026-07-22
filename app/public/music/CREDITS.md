@@ -1,9 +1,14 @@
 # Background music credits
 
-`lounge.mp3` is **Night on the Docks - Sax** by [Kevin MacLeod](https://incompetech.com/).
+All background tracks are by **Kevin MacLeod** (incompetech.com), licensed under
+**Creative Commons Attribution 4.0 (CC BY 4.0)** —
+https://creativecommons.org/licenses/by/4.0/
 
-- License: [Creative Commons Attribution 3.0](https://creativecommons.org/licenses/by/3.0/)
-- Source mirror: [Internet Archive — Jazz Sampler](https://archive.org/details/Jazz_Sampler-9619)
-- Original site: https://incompetech.com/
+## Tracks
 
-Attribution (required by CC BY 3.0): *Night on the Docks - Sax* by Kevin MacLeod (incompetech.com), licensed under CC BY 3.0.
+- **Night in Venice** — Kevin MacLeod (incompetech.com). CC BY 4.0. ISRC USUAN1900056.
+
+## Required attribution (CC BY 4.0)
+
+"Night in Venice" by Kevin MacLeod (incompetech.com), licensed under CC BY 4.0
+(http://creativecommons.org/licenses/by/4.0/).
