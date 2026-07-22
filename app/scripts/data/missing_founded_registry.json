@@ -4,12 +4,12 @@
   "scope": "brands.json founded==\"—\" AND draft founded still \"—\" or missing",
   "draft_file": "app/scripts/data/new_brands_draft.json",
   "stats": {
-    "draft_dated_count": 327,
-    "still_missing_founded": 44,
+    "draft_dated_count": 331,
+    "still_missing_founded": 40,
     "by_category": {
+      "ambiguous_or_mixed_key": 8,
       "holts_or_value_closeout": 26,
-      "researched_year_unconfirmed": 10,
-      "ambiguous_or_mixed_key": 8
+      "researched_year_unconfirmed": 6
     }
   },
   "categories_legend": {
@@ -33,6 +33,26 @@
       "brand": "Cuvee",
       "founded": "2006",
       "reason": "CA: Chiusano launched Cuvée line in 2006"
+    },
+    {
+      "brand": "Don Fidel",
+      "founded": "2022",
+      "reason": "Cigarworld: El Legado series introduced 10.03.2022"
+    },
+    {
+      "brand": "Sansibar",
+      "founded": "2013",
+      "reason": "Cigarworld: Sansibar series introduced 07.03.2013"
+    },
+    {
+      "brand": "Los Amigos",
+      "founded": "2013",
+      "reason": "Cigarworld: Los Amigos series introduced 11.07.2013 (Villiger)"
+    },
+    {
+      "brand": "El Rey del Mundo",
+      "founded": "1848",
+      "reason": "Wikipedia: brand founded 1848; catalogue key is Honduran Villazon incarnation"
     }
   ],
   "missing": [
@@ -256,9 +276,9 @@
         "Toro"
       ],
       "draft_has_blurb": true,
-      "draft_has_source": false,
-      "note_en": "Argyle Fumas — a brand listed in retail shop catalogues (HR/EU/USA).",
-      "source": ""
+      "draft_has_source": true,
+      "note_en": "Argyle Fumas — Holt’s value/fumée variant of the Argyle franchise (DR); exact year not documented.",
+      "source": "https://www.holts.com/cigars/all-cigar-brands/brand/argyle"
     },
     {
       "brand": "Babalu",
@@ -293,21 +313,6 @@
       "source": "https://www.cigaraficionado.com/article/a-conversation-with-philip-wynne-6207"
     },
     {
-      "brand": "El Rey del Mundo",
-      "cigar_count": 3,
-      "category": "researched_year_unconfirmed",
-      "country_draft": "Honduras",
-      "lines": [
-        "Largo Oscuro",
-        "Oscuro",
-        "Suprema Oscuro"
-      ],
-      "draft_has_blurb": true,
-      "draft_has_source": false,
-      "note_en": "El Rey del Mundo (non-Cuban) — Honduras / Villazon & Co. (later General Cigar; Oscuro etc.); Cuban name from 1848; exact Honduran incarnation year not reliably documented.",
-      "source": ""
-    },
-    {
       "brand": "Boardwalk",
       "cigar_count": 2,
       "category": "holts_or_value_closeout",
@@ -317,9 +322,9 @@
         "Toro"
       ],
       "draft_has_blurb": true,
-      "draft_has_source": false,
-      "note_en": "Boardwalk — Holt’s value bundle line (Dominican Republic / Nicaragua); launch year not reliably documented.",
-      "source": ""
+      "draft_has_source": true,
+      "note_en": "Boardwalk — Holt’s value bundle (DR/Nicaragua, Brazilian wrapper); launch year not reliably documented.",
+      "source": "https://www.holts.com/cigars/all-cigar-brands/boardwalk.html"
     },
     {
       "brand": "Casa Royale",
@@ -331,9 +336,9 @@
         "Robusto"
       ],
       "draft_has_blurb": true,
-      "draft_has_source": false,
-      "note_en": "Casa Royale — a brand listed in retail shop catalogues (HR/EU/USA).",
-      "source": ""
+      "draft_has_source": true,
+      "note_en": "Casa Royale — Holt’s/catalogue value line; reliable founding year not found.",
+      "source": "https://www.holts.com/cigars/all-cigar-brands.html"
     },
     {
       "brand": "Don Rubio",
@@ -345,9 +350,9 @@
         "Toro"
       ],
       "draft_has_blurb": true,
-      "draft_has_source": false,
-      "note_en": "Don Rubio — a brand listed in retail shop catalogues (HR/EU/USA).",
-      "source": ""
+      "draft_has_source": true,
+      "note_en": "Don Rubio — Holt’s/catalogue value line; reliable founding year not found.",
+      "source": "https://www.holts.com/cigars/all-cigar-brands.html"
     },
     {
       "brand": "El Copey",
@@ -373,9 +378,9 @@
         "Marlin Maduro"
       ],
       "draft_has_blurb": true,
-      "draft_has_source": false,
-      "note_en": "Fine Catch — Holt’s Dominican value line (Marlin etc.); angler-themed bundle brand; exact founding year not reliably documented.",
-      "source": ""
+      "draft_has_source": true,
+      "note_en": "Fine Catch — Holt’s Dominican value line (Marlin etc., angler theme); exact year not documented.",
+      "source": "https://www.holts.com/cigars/all-cigar-brands/fine-catch.html"
     },
     {
       "brand": "Flor",
@@ -400,9 +405,9 @@
         "Toro"
       ],
       "draft_has_blurb": true,
-      "draft_has_source": false,
-      "note_en": "Amante — a brand listed in retail shop catalogues (HR/EU/USA).",
-      "source": ""
+      "draft_has_source": true,
+      "note_en": "Amante — Holt’s catalogue value cigar; reliable founding year not found.",
+      "source": "https://www.holts.com/cigars/all-cigar-brands/amante.html"
     },
     {
       "brand": "Belleza",
@@ -413,9 +418,9 @@
         "Toro"
       ],
       "draft_has_blurb": true,
-      "draft_has_source": false,
-      "note_en": "Belleza — a brand listed in retail catalogues (Toro); reliable founding-year source not found.",
-      "source": ""
+      "draft_has_source": true,
+      "note_en": "Belleza — catalogue value (Toro); reliable founding year not found.",
+      "source": "https://www.holts.com/cigars/all-cigar-brands.html"
     },
     {
       "brand": "Blarney Stone",
@@ -426,9 +431,9 @@
         "Churchill"
       ],
       "draft_has_blurb": true,
-      "draft_has_source": false,
-      "note_en": "Blarney Stone — a brand listed in retail shop catalogues (HR/EU/USA).",
-      "source": ""
+      "draft_has_source": true,
+      "note_en": "Blarney Stone — Holt’s/catalogue value; reliable founding year not found.",
+      "source": "https://www.holts.com/cigars/all-cigar-brands.html"
     },
     {
       "brand": "Bottom Shelf",
@@ -439,9 +444,9 @@
         "Churchill"
       ],
       "draft_has_blurb": true,
-      "draft_has_source": false,
-      "note_en": "Bottom Shelf — a brand listed in retail shop catalogues (HR/EU/USA).",
-      "source": ""
+      "draft_has_source": true,
+      "note_en": "Bottom Shelf — Holt’s closeout/value; reliable founding year not found.",
+      "source": "https://www.holts.com/cigars/all-cigar-brands.html"
     },
     {
       "brand": "Cortesia",
@@ -452,22 +457,9 @@
         "Churchill"
       ],
       "draft_has_blurb": true,
-      "draft_has_source": false,
-      "note_en": "Cortesia — a brand listed in retail shop catalogues (HR/EU/USA).",
-      "source": ""
-    },
-    {
-      "brand": "Don Fidel",
-      "cigar_count": 1,
-      "category": "researched_year_unconfirmed",
-      "country_draft": "Nikaragva",
-      "lines": [
-        "El Legado"
-      ],
-      "draft_has_blurb": true,
       "draft_has_source": true,
-      "note_en": "Don Fidel El Legado — brand of Justo Rico (Barcelona), made at Fidel Olivas Tabacalera, Estelí; exact launch year not reliably documented.",
-      "source": "https://www.cigarworld.de/en/don-fidel"
+      "note_en": "Cortesia — registered trademark of Holt’s Cigar Holdings (SEC 1999 with Ashton/Castano/Savoy); exact line launch year not stated.",
+      "source": "https://www.sec.gov/Archives/edgar/data/1045549/000089322099000785/0000893220-99-000785.txt"
     },
     {
       "brand": "Flor de Jose",
@@ -478,9 +470,9 @@
         "Churchill"
       ],
       "draft_has_blurb": true,
-      "draft_has_source": false,
-      "note_en": "Flor de Jose — a brand listed in retail shop catalogues (HR/EU/USA).",
-      "source": ""
+      "draft_has_source": true,
+      "note_en": "Flor de Jose — Holt’s/catalogue value; reliable founding year not found.",
+      "source": "https://www.holts.com/cigars/all-cigar-brands.html"
     },
     {
       "brand": "Gaia",
@@ -491,9 +483,9 @@
         "Churchill"
       ],
       "draft_has_blurb": true,
-      "draft_has_source": false,
-      "note_en": "Gaia — a brand listed in retail shop catalogues (HR/EU/USA).",
-      "source": ""
+      "draft_has_source": true,
+      "note_en": "Gaia — Holt’s/catalogue value; reliable founding year not found.",
+      "source": "https://www.holts.com/cigars/all-cigar-brands.html"
     },
     {
       "brand": "Gran",
@@ -517,9 +509,9 @@
         "Churchill"
       ],
       "draft_has_blurb": true,
-      "draft_has_source": false,
-      "note_en": "Jalopy — a brand listed in retail shop catalogues (HR/EU/USA).",
-      "source": ""
+      "draft_has_source": true,
+      "note_en": "Jalopy — Holt’s/catalogue value; reliable founding year not found.",
+      "source": "https://www.holts.com/cigars/all-cigar-brands.html"
     },
     {
       "brand": "King S. Court",
@@ -530,9 +522,9 @@
         "King's Court Abbot"
       ],
       "draft_has_blurb": true,
-      "draft_has_source": false,
-      "note_en": "King S. Court — a brand listed in retail shop catalogues (HR/EU/USA).",
-      "source": ""
+      "draft_has_source": true,
+      "note_en": "King’s Court — Holt’s Honduras closeout (Abbot belicoso); launch year not documented.",
+      "source": "https://www.holts.com/cigars/all-cigar-brands/king-s-court.html"
     },
     {
       "brand": "Legado",
@@ -548,19 +540,6 @@
       "source": ""
     },
     {
-      "brand": "Los Amigos",
-      "cigar_count": 1,
-      "category": "researched_year_unconfirmed",
-      "country_draft": "—",
-      "lines": [
-        "Churchill"
-      ],
-      "draft_has_blurb": true,
-      "draft_has_source": false,
-      "note_en": "Los Amigos — a brand listed in retail shop catalogues (HR/EU/USA).",
-      "source": ""
-    },
-    {
       "brand": "Lucky Dublin",
       "cigar_count": 1,
       "category": "holts_or_value_closeout",
@@ -569,9 +548,9 @@
         "Churchill"
       ],
       "draft_has_blurb": true,
-      "draft_has_source": false,
-      "note_en": "Lucky Dublin — a brand listed in retail shop catalogues (HR/EU/USA).",
-      "source": ""
+      "draft_has_source": true,
+      "note_en": "Lucky Dublin — Holt’s/catalogue value; reliable founding year not found.",
+      "source": "https://www.holts.com/cigars/all-cigar-brands.html"
     },
     {
       "brand": "Nat Sherman Host",
@@ -582,9 +561,9 @@
         "Hanover"
       ],
       "draft_has_blurb": true,
-      "draft_has_source": false,
-      "note_en": "Nat Sherman Host Selection — Connecticut Shade line from the early 1990s (a Nat favorite); Hanover and related; exact year not reliably documented.",
-      "source": ""
+      "draft_has_source": true,
+      "note_en": "Nat Sherman Host Selection — CT Shade line from the early 1990s (a Nat favorite; Hanover etc.); Maduro 2014; exact natural-line year not unambiguously confirmed.",
+      "source": "https://cigar-coop.com/2014/05/cigar-news-nat-sherman-host-selection.html"
     },
     {
       "brand": "O. Danny Boy",
@@ -595,9 +574,9 @@
         "O' Danny Boy"
       ],
       "draft_has_blurb": true,
-      "draft_has_source": false,
-      "note_en": "O. Danny Boy — a brand listed in retail shop catalogues (HR/EU/USA).",
-      "source": ""
+      "draft_has_source": true,
+      "note_en": "O. Danny Boy — Holt’s/catalogue value; reliable founding year not found.",
+      "source": "https://www.holts.com/cigars/all-cigar-brands.html"
     },
     {
       "brand": "Perla",
@@ -621,9 +600,9 @@
         "Toro"
       ],
       "draft_has_blurb": true,
-      "draft_has_source": false,
-      "note_en": "Rainmaker — Holt’s Dominican value bundle (Connecticut Toro); launch year not reliably documented.",
-      "source": ""
+      "draft_has_source": true,
+      "note_en": "Rainmaker — Holt’s Dominican value bundle (CT Toro); launch year not documented.",
+      "source": "https://www.holts.com/cigars/all-cigar-brands.html"
     },
     {
       "brand": "Reserva",
@@ -647,22 +626,9 @@
         "Churchill"
       ],
       "draft_has_blurb": true,
-      "draft_has_source": false,
-      "note_en": "Royal Symbols — a brand listed in retail shop catalogues (HR/EU/USA).",
-      "source": ""
-    },
-    {
-      "brand": "Sansibar",
-      "cigar_count": 1,
-      "category": "researched_year_unconfirmed",
-      "country_draft": "Honduras",
-      "lines": [
-        "No. 1"
-      ],
-      "draft_has_blurb": true,
       "draft_has_source": true,
-      "note_en": "Sansibar No. 1 — private-label cigar for Sansibar restaurant (Sylt, officially 1978); exact year of the cigar line itself is not reliably documented.",
-      "source": "https://www.sansibar.de/sansibar/de/c/Sansibar-Zigarre-No-1-Tubos-/p/000000000000007068/"
+      "note_en": "Royal Symbols — Holt’s/catalogue value; reliable founding year not found.",
+      "source": "https://www.holts.com/cigars/all-cigar-brands.html"
     },
     {
       "brand": "Smokin Sandwich",
@@ -673,9 +639,9 @@
         "Smokin' Sandwich"
       ],
       "draft_has_blurb": true,
-      "draft_has_source": false,
-      "note_en": "Smokin Sandwich — a brand listed in retail shop catalogues (HR/EU/USA).",
-      "source": ""
+      "draft_has_source": true,
+      "note_en": "Smokin’ Sandwich — Holt’s/catalogue mixed-filler value; reliable founding year not found.",
+      "source": "https://www.holts.com/cigars/all-cigar-brands.html"
     },
     {
       "brand": "Tabacos Baez",
@@ -687,8 +653,8 @@
       ],
       "draft_has_blurb": true,
       "draft_has_source": true,
-      "note_en": "Tabacos Baez Serie SF — My Father Cigars house short/mixed-filler (Cuban sandwich); Nic. reintro in the 2000s, SF reviewed at least by 2012, current design from 2018; exact SF launch year not confirmed.",
-      "source": "http://www.stogieguys.com/2012/02/02092012-cigar-review-tabacos-baez-serie-sf-robusto.html"
+      "note_en": "Tabacos Baez Serie SF — My Father house mixed-filler (Cuban sandwich); on market by Mar/May 2010 (reviews/giveaway); exact launch year not explicitly confirmed.",
+      "source": "https://stogiereview.com/2010/05/05/tabacos-baez-serie-sf-corona/"
     },
     {
       "brand": "Utopia",
@@ -699,9 +665,9 @@
         "Churchill"
       ],
       "draft_has_blurb": true,
-      "draft_has_source": false,
-      "note_en": "Utopia — a brand listed in retail shop catalogues (HR/EU/USA).",
-      "source": ""
+      "draft_has_source": true,
+      "note_en": "Utopia — Holt’s/catalogue value; reliable founding year not found.",
+      "source": "https://www.holts.com/cigars/all-cigar-brands.html"
     }
   ]
 }
