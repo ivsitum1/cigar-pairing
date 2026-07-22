@@ -1500,6 +1500,486 @@
         "en": "Light filter coffee or VS cognac."
       },
       "source": "https://olivacigar.com/cigars/connecticut-reserve/"
+    },
+    "Oliva::Serie O": {
+      "strength": 3,
+      "body": 3,
+      "flavorTags": [
+        "cedar",
+        "zemljano",
+        "kakao",
+        "orasasti",
+        "koza"
+      ],
+      "note": {
+        "hr": "Nikaragvanski puro (Habano): cedar, zemlja, kakao i orašasto uz kožu; medium.",
+        "en": "Nicaraguan Habano puro: cedar, earth, cocoa and nuts with leather; medium."
+      },
+      "pairing": {
+        "hr": "Srednji rum ili espresso.",
+        "en": "Medium rum or espresso."
+      },
+      "source": "https://www.holts.com/cigars/all-cigar-brands/brand/oliva"
+    },
+    "Davidoff::Grand Cru": {
+      "strength": 2,
+      "body": 3,
+      "flavorTags": [
+        "kremasto",
+        "cedar",
+        "orasasti",
+        "kava",
+        "zacini"
+      ],
+      "note": {
+        "hr": "Ecuador CT Dominikana: kremasto, cedar i badem uz blagu kavu/začine; mild–medium.",
+        "en": "Ecuador CT Dominican: cream, cedar and almond with soft coffee/spice; mild–medium."
+      },
+      "pairing": {
+        "hr": "Filter kava ili cognac VS.",
+        "en": "Filter coffee or VS cognac."
+      },
+      "source": "https://www.thelatesmoke.com/reviews/davidoff-grand-cru-robusto"
+    },
+    "Davidoff::Escurio": {
+      "strength": 4,
+      "body": 4,
+      "flavorTags": [
+        "kakao",
+        "kava",
+        "papar",
+        "koza",
+        "zacini"
+      ],
+      "note": {
+        "hr": "Brazilski utjecaj: kakao/espresso, papar i koža, slatko–začinski kontrast; medium–full.",
+        "en": "Brazilian influence: cocoa/espresso, pepper and leather, sweet–spice contrast; medium–full."
+      },
+      "pairing": {
+        "hr": "Tamni rum ili espresso.",
+        "en": "Dark rum or espresso."
+      },
+      "source": "https://www.holts.com/cigars/all-cigar-brands/davidoff-escurio.html"
+    },
+    "Davidoff::Winston Churchill": {
+      "strength": 3,
+      "body": 3,
+      "flavorTags": [
+        "cedar",
+        "orasasti",
+        "zacini",
+        "kava",
+        "kremasto"
+      ],
+      "note": {
+        "hr": "Ecuador Habano: cedar, orašasto i začini uz kavu; medium (brand core WC).",
+        "en": "Ecuador Habano: cedar, nuts and spice with coffee; medium (core WC)."
+      },
+      "pairing": {
+        "hr": "Cognac VSOP ili filter-medium.",
+        "en": "VSOP cognac or medium filter coffee."
+      },
+      "source": "https://www.davidoff.com/us_en/cigars/winston-churchill"
+    },
+    "Davidoff::Millennium": {
+      "strength": 3,
+      "body": 4,
+      "flavorTags": [
+        "kakao",
+        "kava",
+        "cedar",
+        "papar",
+        "orasasti"
+      ],
+      "note": {
+        "hr": "Millennium Blend: bogatiji Davidoff profil — kakao, kava, cedar i papar; medium+.",
+        "en": "Millennium Blend: richer Davidoff profile — cocoa, coffee, cedar and pepper; medium+."
+      },
+      "pairing": {
+        "hr": "Bourbon ili espresso.",
+        "en": "Bourbon or espresso."
+      },
+      "source": "https://www.davidoff.com/us_en/cigars/millennium-blend"
+    },
+    "Padrón::Damaso": {
+      "strength": 2,
+      "body": 2,
+      "flavorTags": [
+        "kremasto",
+        "cedar",
+        "orasasti",
+        "zacini-slatki",
+        "papar"
+      ],
+      "note": {
+        "hr": "Ecuador CT: kremasto, cedar i orašasto uz blage začine/papar; mild–medium.",
+        "en": "Ecuador CT: cream, cedar and nuts with soft spice/pepper; mild–medium."
+      },
+      "pairing": {
+        "hr": "Jutarnja kava ili belgijsko pivo.",
+        "en": "Morning coffee or Belgian ale."
+      },
+      "source": "https://www.holts.com/clubhouse/staff-reviews/padron-damaso"
+    },
+    "Camacho::Broadleaf": {
+      "strength": 4,
+      "body": 4,
+      "flavorTags": [
+        "kakao",
+        "kava",
+        "koza",
+        "hrast",
+        "zemljano"
+      ],
+      "note": {
+        "hr": "Honduras Broadleaf: tamni kakao, espresso, koža, hrast i zemlja; medium–full.",
+        "en": "Honduran Broadleaf: dark cocoa, espresso, leather, oak and earth; medium–full."
+      },
+      "pairing": {
+        "hr": "Bourbon ili tamni rum.",
+        "en": "Bourbon or dark rum."
+      },
+      "source": "https://www.holts.com/cigars/all-cigar-brands/camacho-broadleaf.html"
+    },
+    "Arturo Fuente::Hemingway": {
+      "strength": 3,
+      "body": 3,
+      "flavorTags": [
+        "cedar",
+        "orasasti",
+        "zacini",
+        "kremasto",
+        "papar"
+      ],
+      "note": {
+        "hr": "Cameroon figurados: cedar, orašasto i začini uz kremastu teksturu; medium.",
+        "en": "Cameroon figurados: cedar, nuts and spice with a creamy texture; medium."
+      },
+      "pairing": {
+        "hr": "Cognac VSOP ili filter kava.",
+        "en": "VSOP cognac or filter coffee."
+      },
+      "source": "https://www.holts.com/cigars/all-cigar-brands/arturo-fuente-hemingway.html"
+    },
+    "My Father::The Judge": {
+      "strength": 4,
+      "body": 5,
+      "flavorTags": [
+        "kakao",
+        "kava",
+        "papar",
+        "koza",
+        "zemljano"
+      ],
+      "note": {
+        "hr": "Ecuador Sumatra: kakao, espresso, papar, koža i zemlja; medium–full do full (CA).",
+        "en": "Ecuador Sumatra: cocoa, espresso, pepper, leather and earth; medium–full to full (CA)."
+      },
+      "pairing": {
+        "hr": "Bourbon ili espresso.",
+        "en": "Bourbon or espresso."
+      },
+      "source": "https://www.cigaraficionado.com/ratings/24275/name/my-father-the-judge-grand-robusto"
+    },
+    "My Father::My Father Original": {
+      "strength": 4,
+      "body": 4,
+      "flavorTags": [
+        "papar",
+        "zemljano",
+        "cedar",
+        "kava",
+        "koza"
+      ],
+      "note": {
+        "hr": "Original My Father Habano: papar, zemlja, cedar i kava/koža; medium–full.",
+        "en": "Original My Father Habano: pepper, earth, cedar and coffee/leather; medium–full."
+      },
+      "pairing": {
+        "hr": "Bourbon ili srednji rum.",
+        "en": "Bourbon or medium rum."
+      },
+      "source": "https://www.myfathercigars.com/cigar/my-father/"
+    },
+    "Hoyo de Monterrey::Le Hoyo": {
+      "strength": 2,
+      "body": 2,
+      "flavorTags": [
+        "kremasto",
+        "cedar",
+        "cvjetno",
+        "orasasti",
+        "med"
+      ],
+      "note": {
+        "hr": "Le Hoyo: blaži Hoyo profil — kremasto, cedar i cvjetno/orašasto; mild–medium.",
+        "en": "Le Hoyo: milder Hoyo profile — cream, cedar and floral/nutty; mild–medium."
+      },
+      "pairing": {
+        "hr": "Cognac VS ili filter-light.",
+        "en": "VS cognac or light filter coffee."
+      },
+      "source": "https://cigares.com/en/cuba/hoyo-de-monterrey/hoyo-de-monterrey-hoyo-du-depute"
+    },
+    "Cohiba::Línea Clásica": {
+      "strength": 4,
+      "body": 4,
+      "flavorTags": [
+        "hrast",
+        "vanilija",
+        "orasasti",
+        "kava",
+        "zacini"
+      ],
+      "note": {
+        "hr": "Línea Clásica (npr. Robustos): hrast, vanilija i orašasto uz kavu/začine; medium–full (CA).",
+        "en": "Línea Clásica (e.g. Robustos): oak, vanilla and nuts with coffee/spice; medium–full (CA)."
+      },
+      "pairing": {
+        "hr": "Cognac XO ili espresso.",
+        "en": "XO cognac or espresso."
+      },
+      "source": "https://www.cigaraficionado.com/ratings/21849/name/cohiba-robusto-robusto"
+    },
+    "CAO::Cameroon": {
+      "strength": 3,
+      "body": 3,
+      "flavorTags": [
+        "cedar",
+        "orasasti",
+        "zacini",
+        "kava",
+        "zemljano"
+      ],
+      "note": {
+        "hr": "Afrički Cameroon: cedar, orašasto i začini uz kavu; medium.",
+        "en": "African Cameroon: cedar, nuts and spice with coffee; medium."
+      },
+      "pairing": {
+        "hr": "Rum ili filter-medium kava.",
+        "en": "Rum or medium filter coffee."
+      },
+      "source": "https://www.holts.com/cigars/all-cigar-brands/cao-cameroon.html"
+    },
+    "Macanudo::Gold Label": {
+      "strength": 1,
+      "body": 2,
+      "flavorTags": [
+        "kremasto",
+        "cedar",
+        "orasasti",
+        "med",
+        "cvjetno"
+      ],
+      "note": {
+        "hr": "CT Shade klasik: vrlo blago, kremasto i cedar s orašastim/medenim notama.",
+        "en": "CT Shade classic: very mild, creamy cedar with nutty/honey notes."
+      },
+      "pairing": {
+        "hr": "Latte ili cognac VS.",
+        "en": "Latte or VS cognac."
+      },
+      "source": "https://www.holts.com/cigars/all-cigar-brands/macanudo-gold-label.html"
+    },
+    "Ashton::Paragon": {
+      "strength": 3,
+      "body": 3,
+      "flavorTags": [
+        "cedar",
+        "orasasti",
+        "zacini",
+        "kava",
+        "kremasto"
+      ],
+      "note": {
+        "hr": "Paragon Habano: cedar, orašasto i začini uz kavu; medium.",
+        "en": "Paragon Habano: cedar, nuts and spice with coffee; medium."
+      },
+      "pairing": {
+        "hr": "Cognac VSOP ili espresso.",
+        "en": "VSOP cognac or espresso."
+      },
+      "source": "https://www.ashtoncigar.com/cigars/ashton/paragon"
+    },
+    "Avo::Heritage": {
+      "strength": 4,
+      "body": 4,
+      "flavorTags": [
+        "zemljano",
+        "kava",
+        "kakao",
+        "papar",
+        "cedar"
+      ],
+      "note": {
+        "hr": "H-2000: zemlja, kava/kakao i papar uz cedar; medium–full.",
+        "en": "H-2000: earth, coffee/cocoa and pepper with cedar; medium–full."
+      },
+      "pairing": {
+        "hr": "Bourbon ili espresso.",
+        "en": "Bourbon or espresso."
+      },
+      "source": "https://www.holts.com/cigars/all-cigar-brands/avo-heritage.html"
+    },
+    "Samana::Classic": {
+      "strength": 2,
+      "body": 2,
+      "flavorTags": [
+        "kremasto",
+        "cedar",
+        "orasasti",
+        "vanilija",
+        "med"
+      ],
+      "note": {
+        "hr": "US CT Shade Classic Line: kremasto, cedar i orašasto uz blagu slatkoću; mild–medium.",
+        "en": "US CT Shade Classic Line: cream, cedar and nuts with soft sweetness; mild–medium."
+      },
+      "pairing": {
+        "hr": "Jutarnja kava ili cognac VS.",
+        "en": "Morning coffee or VS cognac."
+      },
+      "source": "https://zigarren-gentlemans.ch/en/samana-classic-line/"
+    },
+    "Perdomo::Habano Connecticut": {
+      "strength": 2,
+      "body": 3,
+      "flavorTags": [
+        "kremasto",
+        "cedar",
+        "orasasti",
+        "med",
+        "zacini"
+      ],
+      "note": {
+        "hr": "Habano Connecticut: kremasto, cedar i orašasto uz med/začine; mild–medium (Neptune).",
+        "en": "Habano Connecticut: cream, cedar and nuts with honey/spice; mild–medium (Neptune)."
+      },
+      "pairing": {
+        "hr": "Filter-light kava.",
+        "en": "Light filter coffee."
+      },
+      "source": "https://www.neptunecigar.com/cigar/perdomo-habano-connecticut"
+    },
+    "Quorum::Maduro": {
+      "strength": 3,
+      "body": 3,
+      "flavorTags": [
+        "kakao",
+        "kava",
+        "zemljano",
+        "papar",
+        "cedar"
+      ],
+      "note": {
+        "hr": "Maduro Quorum: tamni kakao, coffee bean, zemlja i papar; medium (Holt's).",
+        "en": "Quorum Maduro: dark cocoa, coffee bean, earth and pepper; medium (Holt's)."
+      },
+      "pairing": {
+        "hr": "Espresso ili jeftini bourbon.",
+        "en": "Espresso or everyday bourbon."
+      },
+      "source": "https://www.holts.com/cigars/all-cigar-brands/quorum-maduro.html"
+    },
+    "Por Larranaga::Connecticut": {
+      "strength": 2,
+      "body": 3,
+      "flavorTags": [
+        "kremasto",
+        "cedar",
+        "orasasti",
+        "zemljano",
+        "zacini"
+      ],
+      "note": {
+        "hr": "Altadis USA Ecuador CT / Dominikana: kremasto, cedar, orašasto i blaga zemlja; mild–medium.",
+        "en": "Altadis USA Ecuador CT / Dominican: cream, cedar, nuts and soft earth; mild–medium."
+      },
+      "pairing": {
+        "hr": "Jutarnja kava.",
+        "en": "Morning coffee."
+      },
+      "source": "https://www.neptunecigar.com/cigar/por-larranaga"
+    },
+    "Don Lino::Don Lino": {
+      "strength": 3,
+      "body": 3,
+      "flavorTags": [
+        "zacini",
+        "cedar",
+        "kremasto",
+        "koza",
+        "orasasti"
+      ],
+      "note": {
+        "hr": "Original Nicaraguan Don Lino: začini, cedar i kremasto uz kožu; medium.",
+        "en": "Original Nicaraguan Don Lino: spice, cedar and cream with leather; medium."
+      },
+      "pairing": {
+        "hr": "Rum ili kava.",
+        "en": "Rum or coffee."
+      },
+      "source": "https://www.holts.com/cigars/all-cigar-brands/don-lino.html"
+    },
+    "Henry Clay::Stalk Cut": {
+      "strength": 4,
+      "body": 4,
+      "flavorTags": [
+        "cedar",
+        "kakao",
+        "koza",
+        "zemljano",
+        "zacini-slatki"
+      ],
+      "note": {
+        "hr": "CT Broadleaf Stalk Cut: cedar, kakao, koža i zemlja uz cimet; medium–full.",
+        "en": "CT Broadleaf Stalk Cut: cedar, cocoa, leather and earth with cinnamon; medium–full."
+      },
+      "pairing": {
+        "hr": "Bourbon ili espresso.",
+        "en": "Bourbon or espresso."
+      },
+      "source": "https://www.holts.com/cigars/all-cigar-brands/henry-clay-stalk-cut.html"
+    },
+    "Joya de Nicaragua::Clasico Original": {
+      "strength": 3,
+      "body": 3,
+      "flavorTags": [
+        "zemljano",
+        "papar",
+        "kava",
+        "duhan",
+        "cedar"
+      ],
+      "note": {
+        "hr": "Clásico CT: zemlja, papar, kava i duhan uz cedar; mild–medium (Neptune).",
+        "en": "Clásico CT: earth, pepper, coffee and tobacco with cedar; mild–medium (Neptune)."
+      },
+      "pairing": {
+        "hr": "Kava ili lagani rum.",
+        "en": "Coffee or light rum."
+      },
+      "source": "https://www.neptunecigar.com/cigar/joya-de-nicaragua-clasico"
+    },
+    "Montesino::Maduro": {
+      "strength": 3,
+      "body": 3,
+      "flavorTags": [
+        "kakao",
+        "kava",
+        "orasasti",
+        "melasa",
+        "papar"
+      ],
+      "note": {
+        "hr": "CT Broadleaf Maduro: kakao, espresso, orašasto i melasa uz blagi papar; medium.",
+        "en": "CT Broadleaf Maduro: cocoa, espresso, nuts and molasses with mild pepper; medium."
+      },
+      "pairing": {
+        "hr": "Espresso ili tamni rum.",
+        "en": "Espresso or dark rum."
+      },
+      "source": "https://www.holts.com/cigars/all-cigar-brands/montesino.html"
     }
   }
 }
