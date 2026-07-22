@@ -104,6 +104,7 @@ export interface Cigar {
   catalogSource?: "market";
   formatEstimated?: boolean; // duljina procijenjena iz vitole (shop bez dimenzije)
   strengthFromShop?: boolean; // snaga iz stvarnog shop-ocjenjivanja, ne heuristike
+  flavoured?: boolean; // aromatizirana/infuzirana (shop oznaka)
   sourceUrls?: string[];
   availabilityHR: string[];
   notes: LocalizedText;

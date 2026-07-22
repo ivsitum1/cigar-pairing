@@ -96,6 +96,9 @@ def brand_slug(url: str):
     m = re.search(r"/zigarren/[^/]+/([^/?]+)", url)             # CigarWorld
     if m:
         return re.sub(r"-\d{6,}.*$", "", m.group(1))            # makni završni id-blok
+    m = re.search(r"(?:humidor\.hr|havana-cigar-shop\.com)/(?:hr/|en/)?proizvod/([^/?]+)", url)  # HR
+    if m:
+        return re.sub(r"-\d{1,3}$", "", m.group(1))            # makni trailing broj varijante
     return None
 
 
@@ -133,8 +136,10 @@ def market_note(rec):
     wr_en = f", {wrapper} wrapper" if wrapper and wrapper != "—" else ""
     tags = [t for t in rec.get("flavorTags") or []][:3]
     tags_hr = ", ".join(_TAG_HR.get(t, t) for t in tags)
-    hr = f"{country}{wr_hr} — {_STRENGTH_HR[rec['strength']]} snage, {_BODY_HR[rec['body']]} tijela."
-    en = f"{country}{wr_en} — {_STRENGTH_EN[rec['strength']]} in strength, {_BODY_EN[rec['body']]}-bodied."
+    arom_hr = "Aromatizirana. " if rec.get("flavoured") else ""
+    arom_en = "Flavoured/infused. " if rec.get("flavoured") else ""
+    hr = f"{arom_hr}{country}{wr_hr} — {_STRENGTH_HR[rec['strength']]} snage, {_BODY_HR[rec['body']]} tijela."
+    en = f"{arom_en}{country}{wr_en} — {_STRENGTH_EN[rec['strength']]} in strength, {_BODY_EN[rec['body']]}-bodied."
     if tags_hr:
         hr += f" Okusi: {tags_hr}."
     if tags:
@@ -333,6 +338,7 @@ def build():
 
     # Grupiranje po (brend, linija) -> jedna cigara s više vitola.
     lines = {}   # (brand, line) -> aggregate
+    pending = []  # (brand, line, offers) iz zapisa bez vitole — za cross-shop recovery
     hold = []
     stats = {"seen": len(pool), "admitted_records": 0, "lines": 0, "held": 0, "by_reason": {}}
 
@@ -349,6 +355,13 @@ def build():
         cuban = is_cuban(r.get("country") or det.get("origin"))
         vit = match_vitola(r.get("vitola") or r.get("name") or "", syns) or match_vitola(det.get("size") or "", syns)
         if not vit:
+            # zapis bez prepoznate vitole: spremi ponudu za cross-shop recovery
+            # (npr. humidor Aging Room bez formata — vraća HR dostupnost liniji)
+            offs = [o for o in (r.get("offers") or []) if o.get("amount") is not None]
+            cc = derive_country(r)
+            if offs and cc:
+                ln = canon_line(b, r.get("name"), "", syns, line_map)
+                pending.append((b, ln, offs))
             rej("no_vitola", r); continue
         ring = det.get("ringGauge")
         lmm = length_mm(det)
@@ -376,6 +389,8 @@ def build():
             lines[(b, line)] = agg
         agg["len_est"] = agg["len_est"] or len_est
         agg["boxpressed"] = agg["boxpressed"] or bool(detail_val(r, "boxPressed"))
+        if detail_val(r, "flavoured") is True:
+            agg["flavoured"] = True
         w = detail_val(r, "wrapper")
         if w:
             agg["wrappers"][w] = agg["wrappers"].get(w, 0) + 1
@@ -390,6 +405,20 @@ def build():
         agg["vitolas"].setdefault(vkey, {"name": vit, "ring": int(ring), "lmm": int(lmm),
                                           "offers": [], "burn": detail_val(r, "burnTimeMin")})
         agg["vitolas"][vkey]["offers"].extend(offers)
+
+    # cross-shop recovery: vrati ponude (npr. HR) zapisa bez vitole u liniju
+    # istog (brend, linija) — da dostupnost/linkovi pokriju sve trgovine.
+    recovered = 0
+    for b, ln, offs in pending:
+        agg = lines.get((b, ln))
+        if agg is None:
+            continue
+        agg["offers"].extend(offs)
+        for o in offs:
+            if o.get("url"):
+                agg["urls"].add(o["url"])
+        recovered += 1
+    stats["recovered_offers"] = recovered
 
     # materijalizacija: jedna cigara po (brend, linija)
     used_ids = {c["id"] for c in base}
@@ -447,6 +476,8 @@ def build():
             # PRAVA snaga iz shopa (CigarWorld 1–5) — najčešća za liniju
             rec["strength"] = agg["strengths"].most_common(1)[0][0]
             rec["strengthFromShop"] = True
+        if agg.get("flavoured"):
+            rec["flavoured"] = True  # shop označio aromatiziranu/infuziranu cigaru
         rec["notes"] = market_note(rec)  # opis iz atributa (nakon profila)
         new_entries.append(rec)
 
