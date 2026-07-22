@@ -55,6 +55,11 @@
     "batch5": {
       "Quorum::SHADE*": "casing/alias → Shade (merge s postojećom Quorum::Shade; CT wrapper)",
       "bare_skipped": "Ostalih ~39 bare i dalje dvosmisleno (Asylum, Montesino Natural+Maduro, Fuente Piramide, Padrón Churchill/Panetela, Blenders Clearing House, Domenico, Bribon, Confidenciaal, La Sirena, La Gloria Cubana, Excalibur Epicure, El Credito, Kaneda, Peterson Hallmark, 7-20-4)"
+    },
+    "batch6_final": {
+      "Oliva::Master Blends III": "alias → Master Blends 3",
+      "Padrón::1964 Anniversary": "alias → 1964 Anniversary Series (postojeći note)",
+      "bare": "nema novih bare mapa — preostalih ~39 i dalje dvosmisleno"
     }
   },
   "map": {
@@ -245,6 +250,8 @@
     "Prominent::Robusto": "Prominent",
     "Quorum::SHADE": "Shade",
     "Quorum::SHADE Double": "Shade",
-    "Quorum::SHADE Tres": "Shade"
+    "Quorum::SHADE Tres": "Shade",
+    "Oliva::Master Blends III": "Master Blends 3",
+    "Padrón::1964 Anniversary": "1964 Anniversary Series"
   }
 }
