@@ -325,6 +325,7 @@ export type StringKey = keyof typeof STRINGS;
 export const STYLE_LABELS: Record<string, LocalizedText> = {
   jamaica: { hr: "Jamajka (esterski)", en: "Jamaica (high ester)" },
   agricole: { hr: "Agricole", en: "Agricole" },
+  cachaca: { hr: "Cachaça (Brazil)", en: "Cachaça (Brazil)" },
   barbados: { hr: "Barbados", en: "Barbados" },
   cuba: { hr: "Kuba", en: "Cuba" },
   demerara: { hr: "Demerara", en: "Demerara" },

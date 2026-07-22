@@ -6132,5 +6132,382 @@
    "hr": "Referentni kokosov liker na rum bazi (21%); pina colada standard.",
    "en": "The reference coconut rum liqueur (21%); the piña colada standard."
   }
+ },
+ {
+  "id": "rum-leblon-cachaca",
+  "category": "rum",
+  "name": "Leblon (cachaça)",
+  "style": "cachaca",
+  "region": "Brazil",
+  "body": 2,
+  "sweetness": 2,
+  "flavorTags": [
+   "travnato",
+   "tropsko-voce",
+   "citrus"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": {
+   "hr": "Bez dodane slatkoće",
+   "en": "No added sugar"
+  },
+  "additiveSource": "Braz. zakon (cachaça ≤6 g/L šećera)",
+  "qualityScore": 7.0,
+  "priceEUR": {
+   "min": 24,
+   "max": 32
+  },
+  "shopHR": "import",
+  "status": "META",
+  "pairable": true,
+  "serving": {
+   "neat": 2,
+   "water": 2,
+   "rocks": 2,
+   "highball": 3,
+   "cola": 1,
+   "best": "Caipirinha / čisto"
+  },
+  "cigarHint": {
+   "hr": "Most prema cigari je travnato-voćni i lagan; traži blaži dim sa sijenom ili cedrom, bez teške zemlje.",
+   "en": "The bridge to a cigar is grassy-fruity and light; look for milder smoke with hay or cedar, nothing heavy or earthy."
+  },
+  "priceUrl": null,
+  "notes": {
+   "hr": "Leblon je cachaça iz Minas Geraisa, destilirana iz svježeg soka šećerne trske (ne melase) i kratko odmarana u rabljenim bačvama XO konjaka. Stil je lagan, cvjetan i travnat s voćnim rubom — čist za sipanje, ali doma je u Caipirinhi. Cachaça je brazilski rođak ruma: ista trska, ali svježi sok i vlastiti zakon.",
+   "en": "Leblon is a cachaça from Minas Gerais, distilled from fresh sugarcane juice (not molasses) and briefly rested in used XO cognac casks. The style is light, floral and grassy with a fruity edge — clean enough to sip, but at home in a Caipirinha. Cachaça is Brazil's cousin of rum: same cane, but fresh juice and its own law."
+  }
+ },
+ {
+  "id": "rum-novo-fogo-cachaca",
+  "category": "rum",
+  "name": "Novo Fogo (cachaça)",
+  "style": "cachaca",
+  "region": "Brazil",
+  "body": 3,
+  "sweetness": 2,
+  "flavorTags": [
+   "travnato",
+   "tropsko-voce",
+   "vanilija"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": {
+   "hr": "Bez dodane slatkoće (organska)",
+   "en": "No added sugar (organic)"
+  },
+  "additiveSource": "Braz. zakon (cachaça ≤6 g/L šećera)",
+  "qualityScore": 8.0,
+  "priceEUR": {
+   "min": 26,
+   "max": 42
+  },
+  "shopHR": "import",
+  "status": "META",
+  "pairable": true,
+  "serving": {
+   "neat": 3,
+   "water": 3,
+   "rocks": 2,
+   "highball": 3,
+   "cola": 1,
+   "best": "Čisto / Caipirinha"
+  },
+  "cigarHint": {
+   "hr": "Bačvaste verzije nose vaniliju i blagu drvenu slatkoću; radi s kremastim ili orašastim srednje jakim dimom.",
+   "en": "The barrel-aged expressions carry vanilla and gentle woody sweetness; work with creamy or nutty medium smoke."
+  },
+  "priceUrl": null,
+  "notes": {
+   "hr": "Novo Fogo je certificirano organska cachaça iz Morretesa (Paraná), na rubu atlantske prašume. Silver je nedozrela i travnata; bačvaste verzije (Barrel-Aged u ex-bourbon hrastu, Two Woods s brazilskim ariribá drvom) dodaju vaniliju, banane i mekani začin. Zanatski pristup s malim serijama.",
+   "en": "Novo Fogo is a certified-organic cachaça from Morretes (Paraná), on the edge of the Atlantic rainforest. The Silver is unaged and grassy; the barrel-aged bottlings (Barrel-Aged in ex-bourbon oak, Two Woods with Brazilian ariribá wood) add vanilla, banana and soft spice. A small-batch, craft approach."
+  },
+  "lineup": [
+   "Silver",
+   "Barrel-Aged",
+   "Two Woods",
+   "Chameleon"
+  ]
+ },
+ {
+  "id": "rum-avua-cachaca",
+  "category": "rum",
+  "name": "Avuá (cachaça)",
+  "style": "cachaca",
+  "region": "Brazil",
+  "body": 3,
+  "sweetness": 2,
+  "flavorTags": [
+   "zacini",
+   "vanilija",
+   "travnato"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": {
+   "hr": "Bez dodane slatkoće (single-estate)",
+   "en": "No added sugar (single-estate)"
+  },
+  "additiveSource": "Braz. zakon (cachaça ≤6 g/L šećera)",
+  "qualityScore": 8.5,
+  "priceEUR": {
+   "min": 34,
+   "max": 52
+  },
+  "shopHR": "import",
+  "status": "META",
+  "pairable": true,
+  "serving": {
+   "neat": 3,
+   "water": 3,
+   "rocks": 2,
+   "highball": 2,
+   "cola": 0,
+   "best": "Čisto"
+  },
+  "cigarHint": {
+   "hr": "Amburana verzija miriše na cimet i tonku; sipaj uz srednje jaku cigaru s cedrom i slatkim začinom.",
+   "en": "The Amburana expression smells of cinnamon and tonka; sip alongside a medium cigar with cedar and sweet spice."
+  },
+  "priceUrl": null,
+  "notes": {
+   "hr": "Avuá je zanatska single-estate cachaça s Fazende da Quinta (Rio de Janeiro). Prata je nedozrela i bistra; posebne su verzije dozrele u domaćim brazilskim drvima — Amburana daje cimet, klinčić i tonku, Bálsamo smolu i med, a Oak i Tapinhoã dublju drvenu strukturu. Ovo je cachaça kao ozbiljan destilat za sipanje.",
+   "en": "Avuá is an artisanal single-estate cachaça from Fazenda da Quinta (Rio de Janeiro). The Prata is unaged and clear; the standout bottlings rest in native Brazilian woods — Amburana gives cinnamon, clove and tonka, Bálsamo resin and honey, while Oak and Tapinhoã add deeper woody structure. This is cachaça as a serious sipping spirit."
+  },
+  "lineup": [
+   "Prata",
+   "Amburana",
+   "Bálsamo",
+   "Oak",
+   "Tapinhoã"
+  ]
+ },
+ {
+  "id": "rum-germana-cachaca",
+  "category": "rum",
+  "name": "Germana (cachaça)",
+  "style": "cachaca",
+  "region": "Brazil",
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "zacini",
+   "hrast",
+   "suho-voce"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": {
+   "hr": "Bez dodane slatkoće",
+   "en": "No added sugar"
+  },
+  "additiveSource": "Braz. zakon (cachaça ≤6 g/L šećera)",
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 28,
+   "max": 60
+  },
+  "shopHR": "import",
+  "status": "META",
+  "pairable": true,
+  "serving": {
+   "neat": 3,
+   "water": 2,
+   "rocks": 2,
+   "highball": 1,
+   "cola": 0,
+   "best": "Čisto"
+  },
+  "cigarHint": {
+   "hr": "Dozrela i drvenasta; nosi srednje jaku cigaru sa suhim voćem i tostiranim hrastom.",
+   "en": "Aged and woody; carries a medium cigar with dried fruit and toasted oak."
+  },
+  "priceUrl": null,
+  "notes": {
+   "hr": "Germana je obiteljska zanatska cachaça iz Nove Uniãa (Minas Gerais), dozrijevana u bačvama od bálsama i hrasta. Profil je topao i drvenast — suho voće, tostirani hrast i blagi začin — a vrhunska Heritage izdanja idu do 18 godina starosti. Tradicionalni alambique stil.",
+   "en": "Germana is a family-run artisanal cachaça from Nova União (Minas Gerais), aged in bálsamo and oak casks. The profile is warm and woody — dried fruit, toasted oak and gentle spice — with top Heritage bottlings going up to 18 years old. A traditional alembic style."
+  }
+ },
+ {
+  "id": "rum-weber-haus-cachaca",
+  "category": "rum",
+  "name": "Weber Haus (cachaça)",
+  "style": "cachaca",
+  "region": "Brazil",
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "zacini",
+   "vanilija",
+   "tropsko-voce"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": {
+   "hr": "Bez dodane slatkoće (organska)",
+   "en": "No added sugar (organic)"
+  },
+  "additiveSource": "Braz. zakon (cachaça ≤6 g/L šećera)",
+  "qualityScore": 8.0,
+  "priceEUR": {
+   "min": 25,
+   "max": 55
+  },
+  "shopHR": "import",
+  "status": "META",
+  "pairable": true,
+  "serving": {
+   "neat": 3,
+   "water": 2,
+   "rocks": 2,
+   "highball": 2,
+   "cola": 0,
+   "best": "Čisto / Caipirinha"
+  },
+  "cigarHint": {
+   "hr": "Amburana i bálsamo daju slatki začin; pari sa srednjim dimom koji ima cedar ili karamelu.",
+   "en": "Amburana and bálsamo bring sweet spice; pair with medium smoke carrying cedar or caramel."
+  },
+  "priceUrl": null,
+  "notes": {
+   "hr": "Weber Haus je organska cachaça iz Ivotija (Rio Grande do Sul), poznata po dozrijevanju u domaćim drvima poput amburane i bálsama uz hrast. Rezultat je topao, začinski i voćan profil, s premium Reserva izdanjima. Njemačko-brazilska obiteljska destilerija.",
+   "en": "Weber Haus is an organic cachaça from Ivoti (Rio Grande do Sul), known for ageing in native woods such as amburana and bálsamo alongside oak. The result is a warm, spiced and fruity profile, with premium Reserva bottlings. A German-Brazilian family distillery."
+  }
+ },
+ {
+  "id": "rum-sagatiba-cachaca",
+  "category": "rum",
+  "name": "Sagatiba Pura / Velha (cachaça)",
+  "style": "cachaca",
+  "region": "Brazil",
+  "body": 2,
+  "sweetness": 2,
+  "flavorTags": [
+   "travnato",
+   "vegetalno",
+   "citrus"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": {
+   "hr": "Bez dodane slatkoće",
+   "en": "No added sugar"
+  },
+  "additiveSource": "Braz. zakon (cachaça ≤6 g/L šećera)",
+  "qualityScore": 7.0,
+  "priceEUR": {
+   "min": 20,
+   "max": 40
+  },
+  "shopHR": "import",
+  "status": "META",
+  "pairable": true,
+  "serving": {
+   "neat": 2,
+   "water": 2,
+   "rocks": 2,
+   "highball": 3,
+   "cola": 1,
+   "best": "Caipirinha"
+  },
+  "cigarHint": {
+   "hr": "Pura je čista i neutralna — okvir za koktel; uz cigaru je najbolje kao Caipirinha uz blaži dim.",
+   "en": "The Pura is clean and neutral — a cocktail frame; with a cigar it works best as a Caipirinha beside milder smoke."
+  },
+  "priceUrl": null,
+  "notes": {
+   "hr": "Sagatiba iz São Paula dolazi u dvije glavne verzije: Pura je nedozrela, ugljenom filtrirana i vrlo čista — premium okvir za Caipirinhu — dok je Velha dozrela ~2 godine u hrastu i mekša za sipanje. Moderni, precizni stil cachaçe.",
+   "en": "Sagatiba from São Paulo comes in two main expressions: Pura is unaged, charcoal-filtered and very clean — a premium Caipirinha base — while Velha is aged about 2 years in oak and softer to sip. A modern, precise style of cachaça."
+  },
+  "lineup": [
+   "Pura",
+   "Velha"
+  ]
+ },
+ {
+  "id": "rum-ypioca-cachaca",
+  "category": "rum",
+  "name": "Ypióca Ouro (cachaça)",
+  "style": "cachaca",
+  "region": "Brazil",
+  "body": 2,
+  "sweetness": 3,
+  "flavorTags": [
+   "travnato",
+   "karamela",
+   "vanilija"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": {
+   "hr": "Bez dodane slatkoće",
+   "en": "No added sugar"
+  },
+  "additiveSource": "Braz. zakon (cachaça ≤6 g/L šećera)",
+  "qualityScore": 6.0,
+  "priceEUR": {
+   "min": 12,
+   "max": 20
+  },
+  "shopHR": "import",
+  "status": "META",
+  "pairable": true,
+  "serving": {
+   "neat": 2,
+   "water": 2,
+   "rocks": 2,
+   "highball": 3,
+   "cola": 2,
+   "best": "Caipirinha"
+  },
+  "cigarHint": {
+   "hr": "Blago dozrela i mekana; svakodnevni izbor za Caipirinhu uz blag do srednji dim.",
+   "en": "Lightly aged and soft; an everyday Caipirinha choice beside mild-to-medium smoke."
+  },
+  "priceUrl": null,
+  "notes": {
+   "hr": "Ypióca je jedna od najpoznatijih brazilskih marki (Ceará, od 1846.), tradicionalno dozrijevana u velikim bačvama od domaćeg drva jequitibá. Ouro (zlatna) je blago dozrela, mekana i pristupačna — klasičan, pouzdan izbor za Caipirinhu, a ne za sipanje.",
+   "en": "Ypióca is one of Brazil's best-known brands (Ceará, since 1846), traditionally matured in large vats of native jequitibá wood. The Ouro (gold) is lightly aged, soft and approachable — a classic, dependable choice for Caipirinha rather than for sipping."
+  }
+ },
+ {
+  "id": "rum-cachaca-51-pitu",
+  "category": "rum",
+  "name": "Cachaça 51 / Pitú (cachaça)",
+  "style": "cachaca",
+  "region": "Brazil",
+  "body": 2,
+  "sweetness": 3,
+  "flavorTags": [
+   "travnato",
+   "slatko",
+   "vegetalno"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": {
+   "hr": "Nepoznato (industrijska)",
+   "en": "Unknown (industrial)"
+  },
+  "additiveSource": "Bez službene deklaracije",
+  "qualityScore": 4.5,
+  "priceEUR": {
+   "min": 10,
+   "max": 16
+  },
+  "shopHR": "import",
+  "status": "META",
+  "pairable": true,
+  "serving": {
+   "neat": 0,
+   "water": 1,
+   "rocks": 1,
+   "highball": 3,
+   "cola": 2,
+   "best": "Caipirinha"
+  },
+  "cigarHint": {
+   "hr": "Radni konj za Caipirinhu, ne za sipanje; posluži uz jednostavan, blaži dim.",
+   "en": "A Caipirinha workhorse, not for sipping; serve alongside simple, milder smoke."
+  },
+  "priceUrl": null,
+  "notes": {
+   "hr": "Cachaça 51 i Pitú su masovne industrijske cachaçe — kolonski destilirane, nedozrele ili tek nakratko odmarane, i daleko najprodavaniji temelj za Caipirinhu u Brazilu. Nisu za čisto sipanje: tu su radi mješavine, cijene i dostupnosti. Ako želiš cachaçu za sipanje, gledaj zanatske marke iznad.",
+   "en": "Cachaça 51 and Pitú are mass-market industrial cachaças — column-distilled, unaged or only briefly rested, and by far the biggest-selling Caipirinha base in Brazil. They are not for neat sipping: they exist for the mix, the price and the availability. For a sipping cachaça, look to the craft brands above."
+  }
  }
 ]

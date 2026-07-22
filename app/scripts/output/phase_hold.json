@@ -1,20 +1,20 @@
 {
   "stats": {
-    "seen": 7912,
-    "admitted_records": 4542,
-    "lines": 2590,
-    "held": 3370,
+    "seen": 7899,
+    "admitted_records": 4541,
+    "lines": 2591,
+    "held": 3358,
     "by_reason": {
-      "malformed_brand": 8,
-      "no_format": 626,
-      "no_vitola": 2305,
+      "malformed_brand": 9,
+      "no_format": 616,
+      "no_vitola": 2302,
       "unknown_country": 45,
       "habanos_brand_skip": 377,
       "existing_line": 6,
       "no_price": 3
     },
     "recovered_offers": 25,
-    "new_brands_added": 0
+    "new_brands_added": 8
   },
   "hold": [
     {
@@ -4583,26 +4583,6 @@
       "brand": null
     },
     {
-      "reason": "no_format",
-      "name": "Gran Habano Black Dahlia STK Gran Robusto (6×54)",
-      "brand": null
-    },
-    {
-      "reason": "no_format",
-      "name": "Gran Habano Black Dahlia STK Robusto (5×52)",
-      "brand": null
-    },
-    {
-      "reason": "no_format",
-      "name": "Gran Habano Blue In Green Gran Robusto (6×54)",
-      "brand": null
-    },
-    {
-      "reason": "no_format",
-      "name": "Gran Habano Blue In Green Robusto (5×52)",
-      "brand": null
-    },
-    {
       "reason": "no_vitola",
       "name": "Gran Habano Connecticut #1 Imperiales",
       "brand": null
@@ -4635,51 +4615,6 @@
     {
       "reason": "no_vitola",
       "name": "Gran Habano Habano #3 Imperiales",
-      "brand": null
-    },
-    {
-      "reason": "no_vitola",
-      "name": "Gran Habano Minis #3 Habano Cigarillos (3.5×20) Pack of 20",
-      "brand": null
-    },
-    {
-      "reason": "no_format",
-      "name": "Gran Habano No. 1 Connecticut Gran Robusto (6×54)",
-      "brand": null
-    },
-    {
-      "reason": "no_format",
-      "name": "Gran Habano No. 1 Connecticut Robusto (5×52)",
-      "brand": null
-    },
-    {
-      "reason": "no_format",
-      "name": "Gran Habano No. 3 Habano Gran Robusto (6×54)",
-      "brand": null
-    },
-    {
-      "reason": "no_format",
-      "name": "Gran Habano No. 5 Corojo Gran Robusto (6×54)",
-      "brand": null
-    },
-    {
-      "reason": "no_format",
-      "name": "Gran Habano No. 5 Corojo Maduro Gran Robusto (6×54)",
-      "brand": null
-    },
-    {
-      "reason": "no_format",
-      "name": "Gran Habano No. 5 Corojo Robusto (5×52)",
-      "brand": null
-    },
-    {
-      "reason": "no_vitola",
-      "name": "Gran Habano Persian King Rajah Maduro (6X50)",
-      "brand": null
-    },
-    {
-      "reason": "no_vitola",
-      "name": "Gran Habano Persian King Rajah Natural (6×50)",
       "brand": null
     },
     {
@@ -8255,6 +8190,11 @@
     {
       "reason": "no_vitola",
       "name": "Regius Grandido",
+      "brand": null
+    },
+    {
+      "reason": "malformed_brand",
+      "name": "Reserva del Presidente Robusto",
       "brand": null
     },
     {
