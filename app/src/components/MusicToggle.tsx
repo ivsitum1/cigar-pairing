@@ -7,6 +7,7 @@ import { useEffect, useRef, useState } from "react";
 const BASE = import.meta.env.BASE_URL;
 const TRACKS: { src: string; title: string }[] = [
   { src: `${BASE}music/night-in-venice.mp3`, title: "Night in Venice" },
+  { src: `${BASE}music/no-frills-cumbia.mp3`, title: "No Frills Cumbia" },
 ];
 const STORAGE_KEY = "cnr.music";
 const VOLUME = 0.32;
