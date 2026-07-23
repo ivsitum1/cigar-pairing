@@ -13,6 +13,9 @@ export type DrinkCategory =
 
 export type Market = "HR" | "EU" | "USA" | "WW";
 
+// Kako se piće servira — mijenja aromu/žestinu spoja (vidi engine/serve.ts).
+export type ServeStyle = "neat" | "water" | "rocks" | "highball" | "cola";
+
 // Regija za kupnju cigara (bez WW — WW je "dostupno globalno" u podacima).
 export type Region = "HR" | "EU" | "USA";
 // Filter u UI-u: "ALL" = bez filtera (prikaži sve), inače konkretna regija.

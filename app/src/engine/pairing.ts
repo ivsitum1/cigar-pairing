@@ -1,9 +1,10 @@
 // Deterministicki rule-based pairing engine.
 // Svako pravilo koje pridonese rezultatu generira dvojezicno objasnjenje.
 
-import type { Cigar, Drink, PairingReason, PairingResult } from "../types";
+import type { Cigar, Drink, PairingReason, PairingResult, ServeStyle } from "../types";
 import { COMPLEMENTS, POWER_TAGS, WEIGHTS, WRAPPER_AFFINITY, normalizeTags } from "./rules";
 import { personalBrandReason, personalStyleReason, type PersonalPrefs } from "./personal";
+import { applyServe } from "./serve";
 
 const clamp = (v: number, lo: number, hi: number) =>
   Math.max(lo, Math.min(hi, v));
@@ -15,35 +16,45 @@ export function scorePairing(
   cigar: Cigar,
   drink: Drink,
   prefs?: PersonalPrefs,
+  serve?: ServeStyle,
 ): { score: number; reasons: PairingReason[] } {
   const reasons: PairingReason[] = [];
   let score = WEIGHTS.base;
 
+  // serve style: EFEKTIVNO piće (body/sweetness dotjerani) + množitelji
+  // aromaFactor (aroma-sinergija) i tameFactor (kazne žestine). Za neat/undefined
+  // je piće netaknuto, množitelji 1.0, bez objašnjenja. (Vidi engine/serve.ts.)
+  const { drink: effDrink, effect: serveEffect, reason: serveReason } = applyServe(
+    drink,
+    serve,
+  );
+
   // sinonimi iz scrape podataka (npr. "začini", "cokolada", "mizunara")
   // svode se na kanonske tagove da bi pravila 2, 2b i 5 vidjela sve note
   const cigarTags = normalizeTags(cigar.flavorTags);
-  const drinkTags = normalizeTags(drink.flavorTags);
+  const drinkTags = normalizeTags(effDrink.flavorTags);
 
-  // 1) Body match — zlatno pravilo
-  const bodyDiff = Math.abs(cigar.body - drink.body);
-  if (bodyDiff === 0) {
+  // 1) Body match — zlatno pravilo (serve može dati necijeli body -> zaokruži za usporedbu/label)
+  const effDrinkBodyRounded = Math.round(effDrink.body);
+  const bodyDiff = Math.abs(cigar.body - effDrink.body);
+  if (bodyDiff < 0.5) {
     score += WEIGHTS.bodyBonus;
     reasons.push({
       rule: "body-match",
       score: WEIGHTS.bodyBonus,
       text: {
-        hr: `Tijela se poklapaju (${BODY_LABEL_HR[cigar.body]}) — nijedno ne nadjačava drugo.`,
-        en: `Bodies match (${BODY_LABEL_EN[cigar.body]}) — neither overpowers the other.`,
+        hr: `Tijela se poklapaju (${BODY_LABEL_HR[effDrinkBodyRounded]}) — nijedno ne nadjačava drugo.`,
+        en: `Bodies match (${BODY_LABEL_EN[effDrinkBodyRounded]}) — neither overpowers the other.`,
       },
     });
   } else {
     const penalty = bodyDiff * WEIGHTS.bodyPerStep;
     score -= penalty;
     if (bodyDiff >= 2) {
-      const cigarHeavier = cigar.body > drink.body;
+      const cigarHeavier = cigar.body > effDrink.body;
       reasons.push({
         rule: "body-mismatch",
-        score: -penalty,
+        score: -Math.round(penalty),
         text: {
           hr: cigarHeavier
             ? "Cigara je znatno punija od pića — dim će pregaziti okus."
@@ -56,12 +67,13 @@ export function scorePairing(
     }
   }
 
-  // 1b) Jaka cigara + lagano pice = pregazeno
-  if (cigar.strength >= 4 && drink.body <= 2) {
-    score -= WEIGHTS.overwhelmPenalty;
+  // 1b) Jaka cigara + lagano pice = pregazeno (voda umiruje -> manja kazna)
+  if (cigar.strength >= 4 && effDrink.body <= 2) {
+    const penalty = Math.round(WEIGHTS.overwhelmPenalty * serveEffect.tameFactor);
+    score -= penalty;
     reasons.push({
       rule: "strength-overwhelm",
-      score: -WEIGHTS.overwhelmPenalty,
+      score: -penalty,
       text: {
         hr: "Jaka cigara (nikotin) guši ovako delikatno piće.",
         en: "A strong cigar (nicotine) smothers such a delicate drink.",
@@ -72,7 +84,10 @@ export function scorePairing(
   // 2) Zajednicki tagovi (komplementarno — slicni profili)
   const shared = cigarTags.filter((t) => drinkTags.includes(t));
   if (shared.length > 0) {
-    const pts = Math.min(shared.length, 3) * WEIGHTS.tagOverlap;
+    // aromaFactor: voda otvara aromu (>1), led je zatvara (<1)
+    const pts = Math.round(
+      Math.min(shared.length, 3) * WEIGHTS.tagOverlap * serveEffect.aromaFactor,
+    );
     score += pts;
     reasons.push({
       rule: "flavor-shared",
@@ -94,7 +109,9 @@ export function scorePairing(
     }
   }
   if (complemented.length > 0) {
-    const pts = Math.min(complemented.length, 3) * WEIGHTS.tagComplement;
+    const pts = Math.round(
+      Math.min(complemented.length, 3) * WEIGHTS.tagComplement * serveEffect.aromaFactor,
+    );
     score += pts;
     reasons.push({
       rule: "flavor-complement",
@@ -106,9 +123,9 @@ export function scorePairing(
     });
   }
 
-  // 3) Kontrast: slatko pice + puna maduro cigara
+  // 3) Kontrast: slatko pice + puna maduro cigara (cola diže effDrink.sweetness)
   const isDarkWrapper = /maduro|oscuro|san andr|broadleaf/i.test(cigar.wrapper);
-  if (drink.sweetness >= 4 && cigar.body >= 4 && isDarkWrapper) {
+  if (effDrink.sweetness >= 4 && cigar.body >= 4 && isDarkWrapper) {
     score += WEIGHTS.contrastSweetMaduro;
     reasons.push({
       rule: "contrast-sweet-maduro",
@@ -123,7 +140,7 @@ export function scorePairing(
   // 4) Wrapper afinitet
   for (const wa of WRAPPER_AFFINITY) {
     if (!wa.wrapper.test(cigar.wrapper)) continue;
-    const styleHit = wa.styles.includes(drink.style);
+    const styleHit = wa.styles.includes(effDrink.style);
     const tagHit = drinkTags.some((t) => wa.tags.includes(t));
     if (styleHit || tagHit) {
       score += WEIGHTS.wrapperMatch;
@@ -151,10 +168,12 @@ export function scorePairing(
       },
     });
   } else if (powerDrink && cigar.strength <= 2) {
-    score -= WEIGHTS.strengthPowerMismatch;
+    // voda umiruje overproof -> manja kazna prema blagoj cigari
+    const penalty = Math.round(WEIGHTS.strengthPowerMismatch * serveEffect.tameFactor);
+    score -= penalty;
     reasons.push({
       rule: "power-mismatch",
-      score: -WEIGHTS.strengthPowerMismatch,
+      score: -penalty,
       text: {
         hr: "Ovako intenzivno piće pregazit će blagu cigaru.",
         en: "Such an intense drink will steamroll a mild cigar.",
@@ -163,14 +182,14 @@ export function scorePairing(
   }
 
   // 6) Kvaliteta pica — blagi nudge da bolji sipperi isplivaju
-  if (drink.qualityScore != null) {
-    score += (drink.qualityScore - 7) * WEIGHTS.qualityNudge;
+  if (effDrink.qualityScore != null) {
+    score += (effDrink.qualityScore - 7) * WEIGHTS.qualityNudge;
   }
 
   // 7) Osobni nudge iz dnevnika (lokalno, s objasnjenjem) — nikad presudan
   if (prefs) {
     for (const reason of [
-      personalStyleReason(prefs, drink.style),
+      personalStyleReason(prefs, effDrink.style),
       personalBrandReason(prefs, cigar.brand),
     ]) {
       if (reason) {
@@ -179,6 +198,9 @@ export function scorePairing(
       }
     }
   }
+
+  // serve objašnjenje (score 0 — efekt je već u body/sweetness i množiteljima)
+  if (serveReason) reasons.push(serveReason);
 
   return { score: clamp(Math.round(score), 0, 100), reasons };
 }
@@ -198,8 +220,9 @@ export function pairCigarsForDrink(
   drink: Drink,
   cigars: Cigar[],
   prefs?: PersonalPrefs,
+  serve?: ServeStyle,
 ): PairingResult<Cigar>[] {
   return cigars
-    .map((item) => ({ item, ...scorePairing(item, drink, prefs) }))
+    .map((item) => ({ item, ...scorePairing(item, drink, prefs, serve) }))
     .sort((a, b) => b.score - a.score);
 }

@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import type { Cigar, Drink, DrinkCategory, RegionFilter, PairingResult, Vitola } from "../types";
+import type { Cigar, Drink, DrinkCategory, RegionFilter, PairingResult, ServeStyle, Vitola } from "../types";
 import { ALL_DRINKS, CIGARS, cigarById, cigarInRegion, cigarLinkForMarket, cigarPriceForMarket, drinkById, formatPrice } from "../data";
 import { pairCigarsForDrink, pairDrinksForCigar } from "../engine/pairing";
 import { buildPrefs } from "../engine/personal";
@@ -9,6 +9,7 @@ import { Chip, Meter, ScoreBand, SearchInput, SectionTitle } from "../components
 import { getItemState, useCollection } from "../store/collection";
 import { DetailSheet } from "../components/DetailSheet";
 import { EveningSessionSheet } from "../components/EveningSessionSheet";
+import { ServeChips } from "../components/ServeChips";
 import { OcrScan } from "../components/OcrScan";
 import { VitolaPicker } from "../components/VitolaPicker";
 import { applyVitola, needsVitolaPick, uniqueVitolas } from "../lib/cigarVitola";
@@ -64,6 +65,7 @@ export function PairingPage() {
   const [selectedCigar, setSelectedCigar] = useState<Cigar | null>(null);
   const [pendingCigar, setPendingCigar] = useState<Cigar | null>(null);
   const [selectedDrink, setSelectedDrink] = useState<Drink | null>(null);
+  const [serve, setServe] = useState<ServeStyle | undefined>(undefined);
   const [onlyMine, setOnlyMine] = useState(false);
   const market = useMarket();
   // indeks "sljedeceg prijedloga" po kategoriji (cigara->pice) ili offset (pice->cigare)
@@ -161,7 +163,7 @@ export function PairingPage() {
     if (mode !== "drinkToCigar" || !selectedDrink) return null;
     let cigars = marketCigars;
     if (onlyMine) cigars = cigars.filter((c) => getItemState(c.id).owned);
-    const ranked = pairCigarsForDrink(selectedDrink, cigars, prefs);
+    const ranked = pairCigarsForDrink(selectedDrink, cigars, prefs, serve);
     if (ranked.length === 0) return { window: [], total: 0 };
     // diversity: po jedna najbolja cigara svakog brenda
     const seen = new Set<string>();
@@ -173,7 +175,7 @@ export function PairingPage() {
     const pool = diverse.length >= 3 ? diverse : ranked;
     const offset = ((cycle["cigars"] ?? 0) * 3) % Math.max(pool.length, 1);
     return { window: pool.slice(offset, offset + 3), total: pool.length };
-  }, [mode, selectedDrink, onlyMine, cycle, marketCigars, prefs]);
+  }, [mode, selectedDrink, onlyMine, cycle, marketCigars, prefs, serve]);
 
   // kandidati za večernji zapis: trenutno vidljivi prijedlozi
   const sessionDrinks: Drink[] = useMemo(() => {
@@ -197,6 +199,7 @@ export function PairingPage() {
     setSelectedCigar(null);
     setPendingCigar(null);
     setSelectedDrink(null);
+    setServe(undefined);
     setQuery("");
     setCycle({});
     navigate({ page: "pairing" }, { replace: true });
@@ -222,6 +225,7 @@ export function PairingPage() {
 
   const pickDrink = (drink: Drink) => {
     setSelectedDrink(drink);
+    setServe(undefined);
     navigate({ page: "pairing", pair: { kind: "drink", id: drink.id } });
   };
 
@@ -248,6 +252,7 @@ export function PairingPage() {
       setSelectedCigar(null);
       setPendingCigar(null);
       setSelectedDrink(intent.drink);
+      setServe(undefined);
       setQuery(intent.drink.name);
     }
   }, [pairingNavVersion]);
@@ -288,6 +293,7 @@ export function PairingPage() {
       setCycle({});
       setQuery(drink.name);
       setSelectedDrink(drink);
+      setServe(undefined);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [route]);
@@ -510,6 +516,10 @@ export function PairingPage() {
                 </Chip>
               ))}
           </div>
+
+          {mode === "drinkToCigar" && selectedDrink && (
+            <ServeChips drink={selectedDrink} serve={serve} onChange={setServe} />
+          )}
 
           <SectionTitle>{t("pair.suggestions")}</SectionTitle>
 
