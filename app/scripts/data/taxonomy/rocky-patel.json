@@ -1,12 +1,184 @@
 {
   "brand": "Rocky Patel",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-23",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "https://www.rockypatel.com/",
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w1_slice2 deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.1"
   ],
-  "lines": {},
+  "lines": {
+    "15th Anniversary": {
+      "line": "15th Anniversary"
+    },
+    "20th Anniversary Grande": {
+      "line": "20th Anniversary Grande"
+    },
+    "20th Anniversary Maduro": {
+      "line": "20th Anniversary Maduro"
+    },
+    "A.L.B.": {
+      "line": "A.L.B."
+    },
+    "Aged Limited Rare Second Edition": {
+      "line": "Aged Limited Rare Second Edition"
+    },
+    "Alr 2nd": {
+      "line": "Aged Limited Rare Second Edition"
+    },
+    "Bernie Parent Closeout": {
+      "line": "Bernie Parent Closeout"
+    },
+    "Black Label": {
+      "line": "Black Label"
+    },
+    "Bold by Nish Patel": {
+      "line": "Bold by Nish Patel"
+    },
+    "Catch 22": {
+      "line": "Catch 22"
+    },
+    "Conviction": {
+      "line": "Conviction"
+    },
+    "Dark Star": {
+      "line": "Dark Star"
+    },
+    "DBS": {
+      "line": "DBS"
+    },
+    "Decade": {
+      "line": "Decade"
+    },
+    "Disciple": {
+      "line": "Disciple"
+    },
+    "Edge": {
+      "line": "Edge"
+    },
+    "Emerald": {
+      "line": "Emerald"
+    },
+    "Fifty": {
+      "line": "Fifty"
+    },
+    "Fifty Five": {
+      "line": "Fifty Five"
+    },
+    "Gary Sheffield": {
+      "line": "Gary Sheffield"
+    },
+    "Gold Label": {
+      "line": "Gold Label"
+    },
+    "Grand Reserve": {
+      "line": "Grand Reserve"
+    },
+    "Hamlet 25th Year": {
+      "line": "Hamlet 25th Year"
+    },
+    "Hamlet 25th Year Series 2020": {
+      "line": "Hamlet 25th Year Series 2020"
+    },
+    "Hamlet Liberation": {
+      "line": "Hamlet Liberation"
+    },
+    "Hamlet Tabaquero": {
+      "line": "Hamlet Tabaquero"
+    },
+    "LB-1": {
+      "line": "LB-1"
+    },
+    "Limited Editions Conviction": {
+      "line": "Conviction"
+    },
+    "Limited Editions Ray Lewis Legends 52": {
+      "line": "Limited Editions Ray Lewis Legends 52"
+    },
+    "Limited Editions Year of Dragon 2024": {
+      "line": "Limited Editions Year of Dragon 2024"
+    },
+    "Limited Editions Year of Snake 2025": {
+      "line": "Limited Editions Year of Snake 2025"
+    },
+    "Nimmy D": {
+      "line": "Nimmy D"
+    },
+    "Number 6": {
+      "line": "Number 6"
+    },
+    "Olde World Reserve Corojo": {
+      "line": "Olde World Reserve Corojo"
+    },
+    "Olde World Reserve Maduro": {
+      "line": "Olde World Reserve Maduro"
+    },
+    "Platinum": {
+      "line": "Platinum"
+    },
+    "Private Cellar": {
+      "line": "Private Cellar"
+    },
+    "Project Omega": {
+      "line": "Project Omega"
+    },
+    "Quarter Century": {
+      "line": "Quarter Century"
+    },
+    "Ray Lewis": {
+      "line": "Ray Lewis"
+    },
+    "Renaissance Fumas Connecticut": {
+      "line": "Renaissance Fumas Connecticut"
+    },
+    "Renaissance Fumas Habano": {
+      "line": "Renaissance Fumas Habano"
+    },
+    "Renaissance Fumas Maduro": {
+      "line": "Renaissance Fumas Maduro"
+    },
+    "Renaissance Fumas Original": {
+      "line": "Renaissance Fumas Original"
+    },
+    "Royal Vintage": {
+      "line": "Royal Vintage"
+    },
+    "Royale": {
+      "line": "Royale"
+    },
+    "Seed To Smoke Classic": {
+      "line": "Seed To Smoke Classic"
+    },
+    "Seed To Smoke Shade": {
+      "line": "Seed To Smoke Shade"
+    },
+    "Short Run Limited Edition Icon": {
+      "line": "Short Run Limited Edition Icon"
+    },
+    "Sixty": {
+      "line": "Sixty"
+    },
+    "Smoking World Championship": {
+      "line": "Smoking World Championship"
+    },
+    "Strada": {
+      "line": "Strada"
+    },
+    "Sun Grown": {
+      "line": "Sun Grown"
+    },
+    "Vintage": {
+      "line": "Vintage"
+    },
+    "Vintage 1990/1992": {
+      "line": "Vintage 1990/1992"
+    },
+    "White Label": {
+      "line": "White Label"
+    }
+  },
   "vitolaRenames": {},
   "shapes": {},
   "keepSeparate": [
@@ -24,5 +196,7 @@
     ]
   ],
   "lineNotes": {},
-  "unresolved": []
+  "unresolved": [
+    "Rocky Patel: Decade/Edge/A.L.B. vitola names still embed line tokens — Phase 3 polish later"
+  ]
 }
