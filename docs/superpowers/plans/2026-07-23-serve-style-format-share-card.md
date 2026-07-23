@@ -17,7 +17,25 @@ Recenzija predlaže tri stvari. **Bitno: dvije su već djelomično u podacima, s
 | B | **Format & trajanje cigare** | `Cigar.smokeTimeMin`, `Cigar.format`, `Vitola.{format,smokeTimeMin,ring,lengthMM,shape}` **već postoje**; `applyVitola()` ih već primjenjuje; picker ih prikazuje. Engine ih **ne koristi za pairing/ritam**. | „Ritam/trajanje” hint na rezultatu (B1) + opcionalni blagi nudge (B2). |
 | C | **Backup + share** | Export/Import JSON **već postoji** (`store/collection.ts` `exportData`/`importData`, UI u `CollectionPage`). | **Slikovna „pairing kartica”** za dijeljenje (canvas → PNG / `navigator.share`). Backup NE dirati. |
 
-Prioritet isporuke: **A → C → B** (A ima najveću vrijednost i najčišći dodir; C je vidljiv i sam za sebe; B je fino ugađanje).
+Prioritet isporuke: **A → C → B** (A ima najveću vrijednost i najčišći dodir; C je vidljiv i sam za sebe; B (geometrija vitole) je sada pravi ulaz formule jer su podaci popunjeni — vidi §0.5).
+
+---
+
+## 0.5 Provjera domenskih tvrdnji (recenzija runda 2)
+
+Dvije tvrdnje provjerene izvorima — **obje točne**, i mijenjaju model iz prve verzije plana.
+
+**Tvrdnja 1 — geometrija vitole (dužina × debljina) mijenja gorenje i okus. ✅ TOČNO.**
+Tanji ring gauge sužava dovod zraka → veća brzina zraka → **žar gori znatno toplije i brže**; veći omjer wrapper:filler čini **wrapper dominantnijim, okus koncentriranijim i intenzivnijim** (najizraženije na ringu ~36–44). Deblji ring gori **hladnije, glađe, filler-naprijed, manje koncentrirano**. Dužina: dim se hladi na putu do usta → duže cigare glađe kreću i intenzitet grade prema kraju.
+Izvori: Holt's „What is Cigar Ring Gauge”, JR Cigars „Large Ring Gauge”, Cigars.com „Ring Gauge Explained”.
+
+**Tvrdnja 2 — kap vode otvara aromu (ne smanjuje bitno tijelo); led zatvara. ✅ TOČNO.**
+Nature 2017 (Karlsson & Friedman, „Dilution of whisky — the molecular perspective”): razrjeđivanjem amfipatski aromatski spojevi (npr. **gvajakol**) migriraju na granicu tekućina–zrak i lakše isparavaju → **pojačana aroma**; efekt slabi tek iznad ~59 vol-% etanola. Dakle kap (mlake) vode **otvara aromu i umiruje žestinu etanola**, a **tijelo/viskoznost jedva mijenja**. Hlađenje (led) snižava tlak para hlapljivih spojeva → **zatvara/prigušuje aromu** i smanjuje percepciju slatkoće; s vremenom topljenjem razrjeđuje.
+Izvori: Nature Sci. Reports 2017 (s41598-017-06423-5); ScienceDaily 2017-08-18; PMC10048241 (senzorna analiza dilucije).
+
+**Popravci u odnosu na prvu verziju plana:**
+1. Serve model više **nije tijelo-centričan**. Uvodi se `aromaFactor` (množi aroma-sinergiju: voda ↑, led ↓) i `tameFactor` (množi kazne žestine: voda umiruje). Voda ima `bodyDelta ≈ 0` (bila je −0.5 — pogrešno).
+2. **Podaci to podržavaju:** `vitola.ring`, `vitola.lengthMM`, `format` = "RING x LENGTHmm" popunjeni na **99%**, `smokeTimeMin` **100%** (5516 vitola). Zato geometrija (§4) postaje **pravilo u formuli**, uz siguran neutralni fallback za 1% bez dimenzija.
 
 ---
 
@@ -57,57 +75,69 @@ Kako se piće servira mijenja ravnotežu spoja: kap vode spušta žestinu i otva
 
 ### 2.3 Deterministički model (novi modul `app/src/engine/serve.ts`)
 
+**Ispravljeno prema §0.5.** Serve ne mijenja samo body/sweetness — glavni efekt je na **aromu** (tag-sinergija) i **žestinu** (kazne). Zato uz delte body/sweet uvodimo dva množitelja: `aromaFactor` (voda ↑ otvara, led ↓ zatvara) i `tameFactor` (<1 = umiruje alkohol → smanjuje kazne overwhelm/power-mismatch).
+
 ```ts
 import type { Drink, PairingReason, ServeStyle } from "../types";
 
-// Delte na EFEKTIVNI profil pića (float dopušten; klemanje 1..5 na kraju).
-// Kalibracija namjerno konzervativna — serve nikad ne smije biti presudan.
-export const SERVE_ADJUST: Record<ServeStyle, { body: number; sweetness: number }> = {
-  neat:     { body:  0.0, sweetness:  0.0 }, // baseline
-  water:    { body: -0.5, sweetness:  0.0 }, // kap vode: otvara aromu, spušta žestinu
-  rocks:    { body: -0.7, sweetness: -0.5 }, // led: priguši arome i slatkoću
-  highball: { body: -1.5, sweetness:  0.5 }, // soda: razrijedi tijelo, doda svježinu
-  cola:     { body: -1.0, sweetness:  1.5 }, // cola: razrijedi + naglo digne slatkoću
+export interface ServeEffect {
+  bodyDelta: number;      // pomak EFEKTIVNOG tijela (dilucija) — voda ≈ 0
+  sweetnessDelta: number; // pomak EFEKTIVNE slatkoće — cola +, led −
+  aromaFactor: number;    // množi aroma-sinergiju (rules 2 + 2b): >1 otvara, <1 zatvara
+  tameFactor: number;     // množi kazne žestine (rules 1b + 5neg): <1 umiruje alkohol
+}
+
+// Kalibracija namjerno konzervativna — serve nikad presudan. Jedno mjesto za ugađanje.
+export const SERVE_EFFECT: Record<ServeStyle, ServeEffect> = {
+  neat:     { bodyDelta:  0.0, sweetnessDelta:  0.0, aromaFactor: 1.00, tameFactor: 1.00 }, // baseline
+  // kap (mlake) vode: OTVARA aromu (gvajakol na površinu), UMIRUJE žestinu; tijelo ~netaknuto
+  water:    { bodyDelta:  0.0, sweetnessDelta:  0.0, aromaFactor: 1.15, tameFactor: 0.65 },
+  // led: hladno ZATVARA aromu i prigušuje slatkoću; blaga dilucija tijela
+  rocks:    { bodyDelta: -0.2, sweetnessDelta: -0.3, aromaFactor: 0.80, tameFactor: 0.85 },
+  // highball: jaka dilucija tijela + svježina; aroma blago prigušena
+  highball: { bodyDelta: -1.3, sweetnessDelta:  0.3, aromaFactor: 0.95, tameFactor: 0.50 },
+  // cola: šećer naglo diže slatkoću (mijenja contrast-sweet-maduro), razrjeđuje tijelo
+  cola:     { bodyDelta: -0.8, sweetnessDelta:  1.3, aromaFactor: 0.90, tameFactor: 0.60 },
 };
 
 const clamp15 = (v: number) => Math.max(1, Math.min(5, v));
 
-/** Vrati piće s prilagođenim (float) body/sweetness + objašnjenje serve stila. */
+/** EFEKTIVNO piće + množitelji + objašnjenje serve stila. */
 export function applyServe(
   drink: Drink,
   serve: ServeStyle | undefined,
-): { drink: Drink; reason?: PairingReason } {
-  if (!serve || serve === "neat") return { drink };
-  const d = SERVE_ADJUST[serve];
+): { drink: Drink; effect: ServeEffect; reason?: PairingReason } {
+  const effect = SERVE_EFFECT[serve ?? "neat"];
+  if (!serve || serve === "neat") return { drink, effect };
   const adjusted: Drink = {
     ...drink,
-    body: clamp15(drink.body + d.body),
-    sweetness: clamp15(drink.sweetness + d.sweetness),
+    body: clamp15(drink.body + effect.bodyDelta),
+    sweetness: clamp15(drink.sweetness + effect.sweetnessDelta),
   };
-  return { drink: adjusted, reason: SERVE_REASON[serve] };
+  return { drink: adjusted, effect, reason: SERVE_REASON[serve] };
 }
 
 const SERVE_REASON: Record<Exclude<ServeStyle, "neat">, PairingReason> = {
   water: { rule: "serve-water", score: 0, text: {
-    hr: "Kap vode otvara aromu i spušta žestinu — spoj bolje podnosi i blažu cigaru.",
-    en: "A drop of water opens the aroma and tames the heat — the match tolerates a milder cigar." } },
+    hr: "Kap vode otvara aromu i umiruje žestinu — spoj podnosi i blažu cigaru (tijelo ostaje slično).",
+    en: "A drop of water opens the aroma and tames the heat — it tolerates a milder cigar (body stays similar)." } },
   rocks: { rule: "serve-rocks", score: 0, text: {
-    hr: "Led priguši arome i slatkoću — tijelo pića djeluje lakše.",
-    en: "Ice mutes aroma and sweetness — the drink reads lighter." } },
+    hr: "Led zatvara aromu i prigušuje slatkoću — manje aromatskog preklapanja s cigarom.",
+    en: "Ice closes the aroma and dampens sweetness — less aromatic overlap with the cigar." } },
   highball: { rule: "serve-highball", score: 0, text: {
     hr: "Highball razrjeđuje tijelo i dodaje svježinu — traži lakšu cigaru.",
     en: "A highball dilutes the body and adds lift — it calls for a lighter cigar." } },
   cola: { rule: "serve-cola", score: 0, text: {
-    hr: "Cola naglo diže slatkoću — mijenja kontrast prema tamnijoj, punijoj cigari.",
-    en: "Cola spikes the sweetness — it shifts the contrast toward a darker, fuller cigar." } },
+    hr: "Cola naglo diže slatkoću — pojačava kontrast prema tamnijoj, punijoj cigari.",
+    en: "Cola spikes the sweetness — it strengthens the contrast toward a darker, fuller cigar." } },
 };
 ```
 
-> `score: 0` znači: reason se **prikaže** u „zašto”, ali sam po sebi ne dodaje bodove. Efekt na rezultat dolazi kroz **prilagođeni body/sweetness** koji ulaze u postojeća pravila (body-match, overwhelm, contrast-sweet-maduro). Time izbjegavamo dvostruko bodovanje i držimo engine čitljivim.
+> `score: 0`: reason se **prikaže** u „zašto”, ali bodove ne dodaje izravno. Efekt dolazi kroz (a) prilagođeni body/sweetness u pravilima body-match/overwhelm/contrast i (b) množitelje `aromaFactor`/`tameFactor` u §2.4. Time nema dvostrukog bodovanja, a mehanizam odgovara §0.5 (voda = aroma↑/žestina↓, ne tijelo↓).
 
 ### 2.4 Izmjena `app/src/engine/pairing.ts`
 
-Dodati opcionalni 4. argument i primijeniti serve na početku:
+Dodati opcionalni 4. argument, primijeniti serve na početku i **množiti aroma/žestina bodove**:
 
 ```ts
 export function scorePairing(
@@ -116,15 +146,20 @@ export function scorePairing(
   prefs?: PersonalPrefs,
   serve?: ServeStyle,          // NOVO
 ): { score: number; reasons: PairingReason[] } {
-  const { drink: effDrink, reason: serveReason } = applyServe(drink, serve);
+  const { drink: effDrink, effect, reason: serveReason } = applyServe(drink, serve);
   // …ostatak koristi effDrink umjesto drink…
   // na kraju, prije return, ako serveReason: reasons.push(serveReason)
 }
 ```
 
-- `bodyDiff = Math.abs(cigar.body - effDrink.body)` — sad radi s floatom; `BODY_LABEL_HR[…]` indeksirati s `Math.round(effDrink.body)`.
-- Pravilo 3 (contrast-sweet-maduro) čita `effDrink.sweetness` → cola automatski pojačava kontrast.
+Konkretne izmjene po pravilu (množitelji zaokružiti tek pri dodavanju u `score`):
+- **Pravilo 1 / 1b (body/overwhelm):** `bodyDiff = Math.abs(effCigar.body - effDrink.body)` (float; `BODY_LABEL_*` indeksirati `Math.round`). Overwhelm kazna (1b) **× `effect.tameFactor`** — voda umiruje pa jaka cigara manje „guši” razrijeđeno piće.
+- **Pravilo 2 (flavor-shared)** i **2b (flavor-complement):** bodovi **× `effect.aromaFactor`** — voda (1.15) otvara aromu → jače aromatsko preklapanje; led (0.80) zatvara → slabije. Npr. `pts = Math.round(Math.min(shared.length,3) * WEIGHTS.tagOverlap * effect.aromaFactor)`.
+- **Pravilo 3 (contrast-sweet-maduro):** čita `effDrink.sweetness` → cola (+1.3) automatski pali/pojačava kontrast; led (−0.3) ga slabi.
+- **Pravilo 5 (power):** negativna grana (`power-mismatch`) **× `effect.tameFactor`** (voda umiruje overproof); pozitivna grana bez množitelja.
 - Proslijediti `serve` kroz `pairCigarsForDrink(drink, cigars, prefs, serve?)`. `pairDrinksForCigar` **ostaje bez serve** (opseg §2.2).
+
+> Napomena: `effCigar` u pravilima 1/1b/5 dolazi iz §4 (geometrija vitole). Ako se §4 ne isporučuje u istom PR-u, `effCigar === cigar`.
 
 ### 2.5 UI — `app/src/pages/PairingPage.tsx`
 
@@ -160,12 +195,14 @@ export function scorePairing(
 ```
 
 ### 2.7 Testovi (`app/src/engine/serve.test.ts` — novi)
-- `applyServe(drink,"neat")` vraća isti body/sweetness (bez reasona).
-- `water` spušta body i dodaje `serve-water` reason.
-- `cola` diže sweetness ≥ +1 i klema na 5 kad je već visoko.
+- `applyServe(drink,"neat")` vraća isti body/sweetness, `aromaFactor===1`, `tameFactor===1`, bez reasona.
+- `water`: `bodyDelta === 0` (tijelo se **ne** mijenja — regresija na §0.5), `aromaFactor > 1`, `tameFactor < 1`, dodan `serve-water` reason.
+- `rocks`: `aromaFactor < 1` (zatvara aromu), `sweetnessDelta < 0`.
+- `cola`: efektivni sweetness ≥ +1 i klema na 5 kad je već visoko.
 - Klemanje: `highball` na piću body=1 ostaje ≥1.
 - Regresija u `pairing.test.ts`: `scorePairing(c,d,undefined,undefined)` === stara vrijednost (serve opcionalan ne mijenja default).
-- Integracijski: jako piće (body 5, overproof tag) + blaga cigara → `water` **smanjuje** kaznu (viši ili jednak score).
+- Integracijski A — žestina: jako piće (body 5, overproof tag) + blaga cigara → `water` **smanjuje** kaznu (score ≥ neat) preko `tameFactor`.
+- Integracijski B — aroma: cigara i piće s 2+ zajedničkih tagova → `water` **diže** score vs `neat`, a `rocks` ga **spušta** (aromaFactor).
 
 ---
 
@@ -239,9 +276,85 @@ export async function sharePairing(model: ShareCardModel): Promise<"shared"|"dow
 
 ---
 
-## 4. Feature B — Format & Trajanje (ritam)
+## 4. Feature B — Geometrija vitole (dužina × ring) u formuli + ritam
 
-> Podaci već postoje. **B1 (informativni ritam-hint) isporučiti; B2 (nudge u bodovanju) ostaje opcionalno/experimentalno iza zastavice.**
+> Prema §0.5 (potvrđeno izvorima) i popunjenosti podataka (ring/lengthMM/format 99%, smokeTime 100%): geometrija **ulazi u formulu** kao `effCigar` prilagodba (B0), uz informativni ritam-hint (B1). Opcionalni kompleksnost-nudge (B2) ostaje iza zastavice.
+
+### 4.0 B0 — Geometrija u bodovanju (novi `app/src/engine/vitolaGeometry.ts`)
+
+Model iz §0.5: **tanji ring → gori toplije/brže, wrapper-dominantno, intenzivnije** (djeluje kao „jača i wrapper-glasnija” cigara); **deblji ring → hladnije, glađe, filler-naprijed** (blaže); **duže → dim se hladi, glađi start**.
+
+```ts
+import type { Cigar, PairingReason } from "../types";
+
+// Kalibracija na jednom mjestu (kao WEIGHTS/SERVE_EFFECT). Male magnitude — geometrija
+// dotjeruje, ne preokreće body-match. Pragovi: klasične granice ring gaugea.
+export const GEOMETRY = {
+  thinRingMax: 42,    // ≤42: panetela/corona/lonsdale/lancero — wrapper-forward, vruće
+  thickRingMin: 54,   // ≥54: toro gordo/60 — hladno, glatko, filler-forward
+  longLenMin: 160,    // ≥160mm: churchill/double corona — dim se hladi na putu
+  thin:  { strengthDelta: +0.4, bodyDelta: +0.2, wrapperForwardBonus: 5 },
+  thick: { strengthDelta: -0.3, bodyDelta: -0.1, wrapperForwardBonus: 0 },
+  longSmoothStrengthDelta: -0.1, // duljina blago glača početnu oštrinu
+} as const;
+
+/** Ring/length iz odabrane vitole ili iz "RING x LENGTHmm" stringa; null ako nepoznato. */
+export function parseGeometry(cigar: Cigar): { ring: number | null; len: number | null } {
+  const v = cigar.vitolas?.[0];
+  let ring = v?.ring ?? null;
+  let len = v?.lengthMM ?? null;
+  const m = /(\d{2})\s*[x×]\s*(\d{2,3})\s*mm/i.exec(cigar.format ?? "");
+  if (ring == null && m) ring = Number(m[1]);
+  if (len == null && m) len = Number(m[2]);
+  return { ring, len };
+}
+
+/** EFEKTIVNA cigara (strength/body dotjerani geometrijom) + wrapper-forward bonus + reason.
+ *  Ako geometrija nepoznata (1% unosa) → neutralno (cigar netaknut). */
+export function applyGeometry(cigar: Cigar): {
+  cigar: Cigar; wrapperForwardBonus: number; reason?: PairingReason;
+} {
+  const { ring, len } = parseGeometry(cigar);
+  if (ring == null) return { cigar, wrapperForwardBonus: 0 };
+  const clamp15 = (x: number) => Math.max(1, Math.min(5, x));
+  let dS = 0, dB = 0, wrapperForwardBonus = 0, reason: PairingReason | undefined;
+
+  if (ring <= GEOMETRY.thinRingMax) {
+    dS += GEOMETRY.thin.strengthDelta; dB += GEOMETRY.thin.bodyDelta;
+    wrapperForwardBonus = GEOMETRY.thin.wrapperForwardBonus;
+    reason = { rule: "vitola-thin", score: 0, text: {
+      hr: `Tanak ring (${ring}): gori toplije i brže, wrapper vodi — intenzivnije i začinjenije.`,
+      en: `Thin ring (${ring}): burns hotter and faster, wrapper-led — more intense and spicy.` } };
+  } else if (ring >= GEOMETRY.thickRingMin) {
+    dS += GEOMETRY.thick.strengthDelta; dB += GEOMETRY.thick.bodyDelta;
+    reason = { rule: "vitola-thick", score: 0, text: {
+      hr: `Debeo ring (${ring}): gori hladnije i glađe, punija/mekša strana duhana.`,
+      en: `Thick ring (${ring}): burns cooler and smoother, fuller/mellower tobacco.` } };
+  }
+  if (len != null && len >= GEOMETRY.longLenMin) dS += GEOMETRY.longSmoothStrengthDelta;
+
+  const eff: Cigar = { ...cigar, strength: clamp15(cigar.strength + dS), body: clamp15(cigar.body + dB) };
+  return { cigar: eff, wrapperForwardBonus, reason };
+}
+```
+
+**Izmjena `pairing.ts`:** na početku izračunaj `const { cigar: effCigar, wrapperForwardBonus, reason: geoReason } = applyGeometry(cigar);` i koristi `effCigar` u:
+- Pravilo 1/1b (body, overwhelm) — `effCigar.body`, `effCigar.strength`.
+- Pravilo 4 (wrapper-affinity) — kad wrapper pogodi, dodaj `WEIGHTS.wrapperMatch + wrapperForwardBonus` (tanka cigara → wrapper glasniji, pa afinitet wrappera nosi više).
+- Pravilo 5 (power) — `effCigar.strength`.
+- Ako `geoReason`, `reasons.push(geoReason)`.
+Redoslijed: `applyGeometry(cigar)` **i** `applyServe(drink, serve)` na vrhu; ostatak funkcije radi s `effCigar` + `effDrink`.
+
+**Zašto ovo poštuje §0.5:** tanka cigara sad lakše „pregazi” delikatno piće (viši effStrength u 1b/5) i jače naginje wrapper-afinitetu (bonus u pravilu 4) — točno mehanizam „vruće + wrapper-forward”. Debela cigara djeluje blaže i glađe. Magnitude (≤0.4 koraka) drže body-match kao dominantno pravilo.
+
+**Testovi (`app/src/engine/vitolaGeometry.test.ts`):**
+- `parseGeometry` čita `vitola.ring`/`lengthMM`; fallback na regex iz `format`; `null` kad nema ni jedno.
+- Tanak ring (npr. 38) → `effStrength > cigar.strength`, `wrapperForwardBonus === 5`, `vitola-thin` reason.
+- Debeo ring (60) → `effStrength < cigar.strength`, bonus 0.
+- Nepoznata geometrija → cigar netaknut, bonus 0, bez reasona.
+- Integracijski: ista linija, tanka vs debela vitola, uz delikatno piće (body 2) → tanka ima **veću** overwhelm kaznu (niži score); uz jako začinjeno piće tanka ima **veći** wrapper-afinitet.
+- Klemanje strength/body u [1,5].
+- **Regresija:** cigara bez `vitolas`/`format` → `scorePairing` identičan staroj vrijednosti.
 
 ### 4.1 B1 — Ritam/trajanje hint (novi `app/src/lib/cigarRitual.ts`)
 
@@ -277,15 +390,17 @@ formatComplexityBonus: 0, // 0 = isključeno (default). Postavi npr. 3 za eksper
 ```
 Pravilo (u `pairing.ts`, iza `if (WEIGHTS.formatComplexityBonus > 0)`): duga cigara (`cigar.smokeTimeMin >= 75`) + kompleksno piće (`drink.qualityScore != null && drink.qualityScore >= 8`) → `+formatComplexityBonus` uz reason „Duga cigara traži piće koje se razvija u čaši”. Default 0 = **nema promjene u rangu** dok se ne kalibrira. Ne isporučivati uključeno bez A/B osjećaja; drži izvan prvog PR-a.
 
-> Napomena: ring gauge (`Vitola.ring`) i `lengthMM` postoje, ali nisu popunjeni za sve unose — zato B temeljimo na `smokeTimeMin` (najpotpuniji signal). Ako kasnije poželiš ring-based intenzitet, prvo provjeri popunjenost polja skriptom.
+> Napomena: ring gauge (`Vitola.ring`) i `lengthMM` popunjeni su na **99%** (provjereno 2026-07-23, 5488/5516 vitola), pa **B0 (§4.0) koristi ring/length izravno** kao jezgru geometrije, dok `smokeTimeMin` (100%) nosi ritam (B1) i ovaj opcionalni B2 nudge. Za 1% bez dimenzija `applyGeometry` je neutralan.
 
 ---
 
 ## 5. Popis datoteka (za Cursor)
 
 **Novi:**
-- `app/src/engine/serve.ts` — `SERVE_ADJUST`, `applyServe`, serve reasons.
+- `app/src/engine/serve.ts` — `SERVE_EFFECT`, `applyServe` (vraća `{drink, effect, reason}`), serve reasons.
 - `app/src/engine/serve.test.ts`
+- `app/src/engine/vitolaGeometry.ts` — `GEOMETRY`, `parseGeometry`, `applyGeometry` (B0).
+- `app/src/engine/vitolaGeometry.test.ts`
 - `app/src/lib/shareCard.ts` — model + canvas render + share.
 - `app/src/lib/shareCard.test.ts`
 - `app/src/lib/cigarRitual.ts` — `ritualHint`.
@@ -293,7 +408,7 @@ Pravilo (u `pairing.ts`, iza `if (WEIGHTS.formatComplexityBonus > 0)`): duga cig
 
 **Izmjene:**
 - `app/src/types.ts` — dodati `ServeStyle`.
-- `app/src/engine/pairing.ts` — `serve?` param u `scorePairing` i `pairCigarsForDrink`; koristi `effDrink`.
+- `app/src/engine/pairing.ts` — `serve?` param; na vrhu `applyGeometry(cigar)` + `applyServe(drink,serve)`; pravila koriste `effCigar`/`effDrink`, `aromaFactor`/`tameFactor` množitelje i `wrapperForwardBonus`.
 - `app/src/engine/rules.ts` — (B2 opcionalno) `formatComplexityBonus: 0`.
 - `app/src/pages/PairingPage.tsx` — serve state + ServeChips (drinkToCigar/custom), ritual hint (cigarToDrink), share gumb na `ResultCard`, read-only `serving.best` na drink karticama.
 - `app/src/pages/CustomPairing.tsx` — serve selektor + proslijediti u `scorePairing`.
@@ -305,16 +420,20 @@ Pravilo (u `pairing.ts`, iza `if (WEIGHTS.formatComplexityBonus > 0)`): duga cig
 ## 6. Kriteriji prihvaćanja
 - [ ] `npm test` prolazi; postojeći pairing/personal/integrity testovi **nepromijenjeni** (serve i format su opcionalni, default ne mijenja rezultate).
 - [ ] `npm run build` (tsc) bez grešaka; nema novih dependencija u `package.json`.
-- [ ] drinkToCigar: promjena serve stila **vidljivo** mijenja rang/score i dodaje serve-objašnjenje u „zašto”.
+- [ ] drinkToCigar: promjena serve stila **vidljivo** mijenja rang/score; `water` diže aromatsko preklapanje i smanjuje kaznu žestine, `rocks` ga spušta; objašnjenje u „zašto”.
+- [ ] Geometrija (B0): ista linija u tankoj vs debeloj vitoli daje **različit** rang (tanka = jača/wrapper-glasnija); cigara bez dimenzija ne mijenja stari rezultat.
 - [ ] cigarToDrink: prikazan `serving.best` (read-only) i ritual-hint za odabranu cigaru.
 - [ ] Share gumb na mobitelu otvara share-sheet sa PNG-om; na desktopu preuzme PNG; kartica je u humidor paleti i čitljiva.
 - [ ] Sve nove UI oznake dvojezične (HR/EN) preko `STRINGS`.
 - [ ] Nema regresije u deep-linkovima/back tipki (serve je lokalni UI state, ne ide u hash — dokumentirati; ako se poželi dijeljivost serve stila, to je zaseban zahvat).
 
 ## 7. Redoslijed / PR razbijanje
-1. **PR 1 — Serve Style (A):** `serve.ts` + engine param + PairingPage/CustomPairing selektor + i18n + testovi. *(Najveća vrijednost.)*
-2. **PR 2 — Share-kartica (C):** `shareCard.ts` + gumb + i18n + model test. *(Vidljivo, samostalno.)*
-3. **PR 3 — Ritam/trajanje (B1):** `cigarRitual.ts` + hint u UI + test. **B2 ostaviti isključeno** (`formatComplexityBonus: 0`) dok se ne kalibrira.
+1. **PR 1 — Serve Style (A):** `serve.ts` + engine (`serve?`, aroma/tame množitelji) + PairingPage/CustomPairing selektor + i18n + testovi. *(Najveća vrijednost.)*
+2. **PR 2 — Geometrija vitole (B0):** `vitolaGeometry.ts` + `effCigar` u pravilima 1/1b/4/5 + testovi. *(Sada pravi ulaz formule; podaci 99% popunjeni.)* Može ići i prije PR 1 — modeli su nezavisni (serve množi aroma/žestinu, geometrija dotjeruje effCigar), a `pairing.ts` ih kombinira `effCigar × effDrink`.
+3. **PR 3 — Share-kartica (C):** `shareCard.ts` + gumb + i18n + model test. *(Vidljivo, samostalno.)*
+4. **PR 4 — Ritam/trajanje (B1) + B2:** `cigarRitual.ts` + hint u UI + test. **B2 ostaviti isključeno** (`formatComplexityBonus: 0`) dok se ne kalibrira.
+
+> Ako PR 1 i PR 2 idu odvojeno: onaj koji stigne drugi samo doda svoj `eff*` u već postojeći izračun; `scorePairing` potpis je isti (`serve?` opcionalan, geometrija interna).
 
 ## 8. Izvan opsega / rizici
 - **Ne** dirati Export/Import backup (već radi) niti localStorage shemu.
