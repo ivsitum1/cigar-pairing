@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import type { Cigar, Drink } from "../types";
 import { useI18n, STYLE_LABELS, ADDITIVE_LABELS, ADDITIVE_RULES } from "../i18n";
-import { brandInfo, cigarShopLinks, cigarPriceForMarket, formatPrice } from "../data";
+import { brandInfo, cigarShopLinks, cigarShopLinkPrice, formatPrice } from "../data";
 import { REGIONS } from "../data/shops";
 import { drinkBuyLink } from "../lib/drinkBuyLink";
 import { vitolaBlurb } from "../lib/vitolaInfo";
@@ -418,7 +418,6 @@ function BuyLink({ href, label }: { href: string; label: "buy" | "search" }) {
 function CigarBuyLinks({ cigar }: { cigar: Cigar }) {
   const { t } = useI18n();
   const links = cigarShopLinks(cigar);
-  const hrPrice = cigarPriceForMarket(cigar, "HR").price;
   const regions = REGIONS.filter((r) => links.some((l) => l.region === r));
   if (regions.length === 0) return null;
   return (
@@ -436,14 +435,7 @@ function CigarBuyLinks({ cigar }: { cigar: Cigar }) {
               {links
                 .filter((l) => l.region === r)
                 .map((l) => {
-                  const rl = cigar.regionLinks?.[r];
-                  const priceNum =
-                    rl && rl.shop === l.shop && rl.priceEUR != null
-                      ? rl.priceEUR
-                      : r === "HR" && l.exact
-                        ? hrPrice
-                        : null;
-                  const approx = rl && rl.shop === l.shop ? rl.priceApprox : false;
+                  const { price: priceNum, approx } = cigarShopLinkPrice(cigar, l);
                   const price =
                     priceNum != null
                       ? `${approx ? "~" : ""}${priceNum.toFixed(priceNum % 1 ? 2 : 0)} €`

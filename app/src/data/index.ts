@@ -160,13 +160,23 @@ export const cigarCountByRegion: Record<Region, number> = {
   USA: CIGARS.filter((c) => c.markets.includes("USA")).length,
 };
 
-// Izravan link na proizvod za dani host (prednost zadanoj vitoli radi sklada s
-// prikazanom cijenom); inače bilo koja vitola, pa priceUrl.
+// Izravan link na proizvod za dani host — samo URL koji odgovara prikazanoj
+// cijeni (zadana vitola / priceUrl / vitola iste cijene). Ne padati na
+// proizvoljnu vitolu istog hosta (npr. Cubanitos umjesto Gran Reserva).
 function exactProductUrl(c: Cigar, host: string): string | null {
   const dv = resolveDefaultVitola(c);
   if (dv?.url && dv.url.includes(host)) return dv.url;
-  for (const v of c.vitolas ?? []) if (v.url?.includes(host)) return v.url;
   if (c.priceUrl?.includes(host)) return c.priceUrl;
+  const display = dv?.priceEUR ?? c.priceEUR ?? null;
+  if (display != null) {
+    const samePrice = (c.vitolas ?? []).find(
+      (v) =>
+        v.url?.includes(host) &&
+        v.priceEUR != null &&
+        Math.abs(v.priceEUR - display) < 0.05,
+    );
+    if (samePrice?.url) return samePrice.url;
+  }
   return null;
 }
 
@@ -265,6 +275,33 @@ export function cigarPriceForMarket(
   const min = Math.min(...priced.map((v) => v.priceEUR as number));
   const max = Math.max(...priced.map((v) => v.priceEUR as number));
   return { price: min, fromMany: max - min > 0.01 };
+}
+
+/**
+ * Cijena na gumbu "Kupnja" za konkretan shop link.
+ * HR: cijena vitole na koju URL vodi (ne regionLinks.HR — često je to druga
+ * vitola od one u opisu). EU/USA: regionLinks kad shop odgovara.
+ */
+export function cigarShopLinkPrice(
+  c: Cigar,
+  link: CigarShopLink,
+): { price: number | null; approx?: boolean } {
+  if (link.exact) {
+    const vitola = (c.vitolas ?? []).find((v) => v.url === link.url);
+    if (vitola?.priceEUR != null) return { price: vitola.priceEUR };
+    if (c.priceUrl === link.url && c.priceEUR != null) return { price: c.priceEUR };
+    if (link.region === "HR") {
+      return { price: cigarPriceForMarket(c, "HR").price };
+    }
+  }
+  // regionLinks.HR namjerno ignoriran — izvor istine za HR su vitolas/priceUrl
+  if (link.region === "EU" || link.region === "USA") {
+    const rl = c.regionLinks?.[link.region];
+    if (rl && rl.shop === link.shop && rl.priceEUR != null) {
+      return { price: rl.priceEUR, approx: rl.priceApprox };
+    }
+  }
+  return { price: null };
 }
 
 export const formatPrice = (
