@@ -15,7 +15,7 @@ const byStyle = (re: RegExp) => ALL_DRINKS.filter((d) => re.test(d.style));
 
 describe("sanity logike matchanja", () => {
   it("klasicni parovi rangiraju iznad promasaja", () => {
-    const padron = cigarById("cig-padron-1964")!; // maduro s4 b4
+    const padron = cigarById("cig-padron-1964-anniversary")!; // maduro s4 b4
     expect(meanScoreFor(padron, byStyle(/port-tawny|sherry-sweet/)))
       .toBeGreaterThan(meanScoreFor(padron, byStyle(/sparkling/)) + 10);
 

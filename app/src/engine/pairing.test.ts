@@ -21,7 +21,7 @@ const byId = <T extends { id: string }>(arr: T[], id: string): T => {
 describe("pairing engine — poznati parovi iz Excela", () => {
   it("Hampden (esterski, puno tijelo) preferira jaku/punu cigaru nad blagom", () => {
     const hampden = byId(rums, "rum-hampden-estate-8");
-    const partagas = byId(cigars, "cig-partagas-serie-d4");
+    const partagas = byId(cigars, "cig-partagas-serie-d");
     const fonseca = byId(cigars, "cig-fonseca-delicias");
     expect(scorePairing(partagas, hampden).score).toBeGreaterThan(
       scorePairing(fonseca, hampden).score,
@@ -39,14 +39,14 @@ describe("pairing engine — poznati parovi iz Excela", () => {
 
   it("dosladjeni rum + puna maduro cigara dobiva kontrast bonus (slatkoca presijece gorcinu)", () => {
     const onyx = byId(rums, "rum-barcelo-imperial-onyx");
-    const padronMaduro = byId(cigars, "cig-padron-1964"); // Maduro wrapper, body 4
+    const padronMaduro = byId(cigars, "cig-padron-1964-anniversary"); // Maduro wrapper, body 4
     const { reasons } = scorePairing(padronMaduro, onyx);
     expect(reasons.some((r) => r.rule === "contrast-sweet-maduro")).toBe(true);
   });
 
   it("tamni espresso preferira maduro nad blagim Connecticutom", () => {
     const espresso = byId(coffees, "cf-espresso-italian-dark");
-    const padronMaduro = byId(cigars, "cig-padron-1964"); // Maduro, body 4
+    const padronMaduro = byId(cigars, "cig-padron-1964-anniversary"); // Maduro, body 4
     const macanudo = byId(cigars, "cig-macanudo-cafe"); // Connecticut, body 1
     expect(scorePairing(padronMaduro, espresso).score).toBeGreaterThan(
       scorePairing(macanudo, espresso).score,
@@ -54,7 +54,7 @@ describe("pairing engine — poznati parovi iz Excela", () => {
   });
 
   it("vino po principu punoce: puna maduro cigara preferira porto/PX nad proseccom", () => {
-    const padronMaduro = byId(cigars, "cig-padron-1964"); // Maduro, body 4
+    const padronMaduro = byId(cigars, "cig-padron-1964-anniversary"); // Maduro, body 4
     const px = byId(wines, "wine-lustau-px"); // body 5, sweetness 5
     const lbv = byId(wines, "wine-taylors-lbv"); // body 4, sweetness 4
     const prosecco = byId(wines, "wine-prosecco-docg"); // body 1
@@ -79,7 +79,7 @@ describe("pairing engine — poznati parovi iz Excela", () => {
   });
 
   it("body mismatch se penalizira: puna cigara bolje ide uz puno pice nego uz lagano", () => {
-    const partagas = byId(cigars, "cig-partagas-serie-d4");
+    const partagas = byId(cigars, "cig-partagas-serie-d");
     const espresso = byId(coffees, "cf-espresso-italian-dark");
     const lightFilter = byId(coffees, "cf-v60-ethiopia");
     expect(scorePairing(partagas, espresso).score).toBeGreaterThan(
@@ -103,7 +103,7 @@ describe("pairing engine — API", () => {
   });
 
   it("pairDrinksForCigar ukljucuje sva pica — neutralna politika, engine boduje spoj", () => {
-    const cohiba = byId(cigars, "cig-cohiba-robustos");
+    const cohiba = byId(cigars, "cig-cohiba-linea-clasica-robustos");
     const results = pairDrinksForCigar(cohiba, rums);
     expect(results.every((r) => r.item.pairable)).toBe(true);
     // spiced/liker vise nisu cenzurirani; niska ocjena spoja dolazi iz pravila
