@@ -1,12 +1,73 @@
 {
   "brand": "Aganorsa Leaf",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-23",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "https://aganorsa.com/",
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w1_slice5 deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.1"
   ],
-  "lines": {},
+  "lines": {
+    "Aniversario": {
+      "line": "Aniversario"
+    },
+    "Arsenio": {
+      "line": "Arsenio"
+    },
+    "Cerberus": {
+      "line": "Cerberus"
+    },
+    "JFR Connecticut": {
+      "line": "JFR Connecticut"
+    },
+    "JFR Corojo": {
+      "line": "JFR Corojo"
+    },
+    "JFR Maduro": {
+      "line": "JFR Maduro"
+    },
+    "La Validacion Connecticut": {
+      "line": "La Validación Connecticut"
+    },
+    "La Validacion Corojo": {
+      "line": "La Validación Corojo"
+    },
+    "La Validacion Habano": {
+      "line": "La Validación Habano"
+    },
+    "La Validacion Maduro": {
+      "line": "La Validación Maduro"
+    },
+    "Rare Leaf Reserve Corojo": {
+      "line": "Rare Leaf Reserve Corojo"
+    },
+    "Rare Leaf Reserve Maduro": {
+      "line": "Rare Leaf Reserve Maduro"
+    },
+    "Signature Selection Corojo": {
+      "line": "Signature Selection Corojo"
+    },
+    "Signature Selection Gorda": {
+      "line": "Signature Selection",
+      "vitola": "Gorda"
+    },
+    "Signature Selection Maduro": {
+      "line": "Signature Selection Maduro"
+    },
+    "Supreme Leaf": {
+      "line": "Supreme Leaf"
+    },
+    "Supreme Leaf Euro": {
+      "line": "Supreme Leaf",
+      "vitola": "Euro"
+    },
+    "Supreme Leaf Inter": {
+      "line": "Supreme Leaf",
+      "vitola": "Inter"
+    }
+  },
   "vitolaRenames": {},
   "shapes": {},
   "keepSeparate": [],

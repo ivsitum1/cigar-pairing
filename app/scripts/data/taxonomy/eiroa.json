@@ -1,12 +1,64 @@
 {
   "brand": "Eiroa",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-23",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "https://eiroacigars.com/",
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w1_slice5 deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.1"
   ],
-  "lines": {},
+  "lines": {
+    "20 Years Colorado": {
+      "line": "20 Years Colorado"
+    },
+    "20 Years Colorado Robusto Prensado": {
+      "line": "20 Years Colorado",
+      "vitola": "Robusto Prensado"
+    },
+    "20 Years Maduro Robusto Prensado": {
+      "line": "20 Years Maduro",
+      "vitola": "Robusto Prensado"
+    },
+    "20 Years Maduro Toro Prensado": {
+      "line": "20 Years Maduro",
+      "vitola": "Toro Prensado"
+    },
+    "Cbt": {
+      "line": "CBT"
+    },
+    "CBT Maduro": {
+      "line": "CBT Maduro"
+    },
+    "CBT Maduro / 20 Years": {
+      "line": "CBT Maduro"
+    },
+    "Classic": {
+      "line": "Classic"
+    },
+    "Classic / Colorado": {
+      "line": "Classic Colorado"
+    },
+    "First 20 Years Colorado": {
+      "line": "First 20 Years Colorado"
+    },
+    "First 20 Years Maduro Gordo": {
+      "line": "First 20 Years Maduro",
+      "vitola": "Gordo"
+    },
+    "Jamastran 11/18": {
+      "line": "Jamastran",
+      "vitola": "11/18"
+    },
+    "Limitada 2025": {
+      "line": "Limitada 2025"
+    },
+    "The First 20 Years Maduro Diadema 8 X 48-60": {
+      "line": "First 20 Years Maduro",
+      "vitola": "Diadema"
+    }
+  },
   "vitolaRenames": {},
   "shapes": {},
   "keepSeparate": [],

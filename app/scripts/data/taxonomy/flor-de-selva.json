@@ -1,12 +1,76 @@
 {
   "brand": "Flor de Selva",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-23",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "https://flor-de-selva.com/",
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w1_slice5 deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.1"
   ],
-  "lines": {},
+  "lines": {
+    "2023 Year of Rabbit": {
+      "line": "Year of the Rabbit 2023"
+    },
+    "2024 Year of Dragon": {
+      "line": "Year of the Dragon 2024"
+    },
+    "2026 Year of Horse": {
+      "line": "Year of the Horse 2026"
+    },
+    "Aniversario": {
+      "line": "Aniversario"
+    },
+    "Ano Del Dragon": {
+      "line": "Year of the Dragon 2024"
+    },
+    "Classic": {
+      "line": "Classic"
+    },
+    "Clásica": {
+      "line": "Clásica"
+    },
+    "Coffret Maduro": {
+      "line": "Coffret",
+      "vitola": "Maduro"
+    },
+    "Coffret No. 20": {
+      "line": "Coffret",
+      "vitola": "No. 20"
+    },
+    "El Galan Cabinet": {
+      "line": "El Galán",
+      "vitola": "Cabinet"
+    },
+    "Fino": {
+      "line": "Fino"
+    },
+    "Grand Presse Maduro": {
+      "line": "Grand Presse Maduro"
+    },
+    "Maduro Grand-Press": {
+      "line": "Grand Presse Maduro"
+    },
+    "Maduro No. 15": {
+      "line": "Maduro No. 15"
+    },
+    "No. 20 Celebracion": {
+      "line": "No. 20",
+      "vitola": "Celebracion"
+    },
+    "Numero Xv": {
+      "line": "Número XV"
+    },
+    "Robusto Maduro": {
+      "line": "Maduro",
+      "vitola": "Robusto",
+      "shape": "Robusto"
+    },
+    "Tempo": {
+      "line": "Tempo"
+    }
+  },
   "vitolaRenames": {},
   "shapes": {},
   "keepSeparate": [],
