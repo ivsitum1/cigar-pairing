@@ -1,0 +1,20 @@
+{
+  "brand": "Quesada",
+  "renameBrand": null,
+  "status": "partial",
+  "reviewedAt": null,
+  "sources": [
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+  ],
+  "lines": {
+    "40th Anniversary Real": {
+      "line": "40th Anniversary",
+      "vitola": "Real"
+    }
+  },
+  "vitolaRenames": {},
+  "shapes": {},
+  "keepSeparate": [],
+  "lineNotes": {},
+  "unresolved": []
+}

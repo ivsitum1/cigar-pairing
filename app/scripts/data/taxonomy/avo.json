@@ -1,0 +1,28 @@
+{
+  "brand": "Avo",
+  "renameBrand": null,
+  "status": "partial",
+  "reviewedAt": null,
+  "sources": [
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+  ],
+  "lines": {},
+  "vitolaRenames": {},
+  "shapes": {},
+  "keepSeparate": [
+    [
+      "Syncro",
+      "Syncro Nicaragua Fogata"
+    ],
+    [
+      "Heritage",
+      "Heritage Special"
+    ],
+    [
+      "Syncro",
+      "Syncro Special"
+    ]
+  ],
+  "lineNotes": {},
+  "unresolved": []
+}

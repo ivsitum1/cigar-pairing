@@ -1,6 +1,7 @@
 import { describe, it, expect } from "vitest";
-import { ALL_DRINKS, CIGARS, DRINKS } from "./index";
+import { ALL_DRINKS, CIGARS, DRINKS, brandInfo } from "./index";
 import { KNOWN_TAGS, normalizeTag } from "../engine/rules";
+import aliasFile from "./cigarIdAliases.json";
 
 // Cuva integritet generiranih indeksa nakon regeneracije pipeline-ima.
 describe("integritet podataka", () => {
@@ -179,5 +180,66 @@ describe("integritet podataka", () => {
       }
     }
     expect([...unknown].sort()).toEqual([]);
+  });
+
+  // Taxonomy invariants (plan §4.4). Strict line-name rules land as brands reach
+  // status "done"; uniqueness / brands / aliases are always on.
+  it("(brand, line) je jedinstven", () => {
+    const seen = new Map<string, string>();
+    for (const c of CIGARS) {
+      const key = `${c.brand}::${c.line}`;
+      expect(seen.has(key), `duplicate ${key} (${seen.get(key)} vs ${c.id})`).toBe(false);
+      seen.set(key, c.id);
+    }
+  });
+
+  it("svaki brend u cigars.json ima brands.json unos", () => {
+    const missing = [...new Set(CIGARS.map((c) => c.brand))].filter((b) => !brandInfo(b));
+    expect(missing).toEqual([]);
+  });
+
+  it("cigarIdAliases.json targeti postoje", () => {
+    const aliases = (aliasFile as { aliases?: Record<string, string> }).aliases ?? {};
+    const ids = new Set(CIGARS.map((c) => c.id));
+    const broken = Object.entries(aliases)
+      .filter(([, to]) => typeof to === "string" && !ids.has(to))
+      .map(([frm, to]) => `${frm} -> ${to}`);
+    expect(broken).toEqual([]);
+  });
+
+  it("vitole unutar linije sortirane po ring, lengthMM, name (kad ring postoji)", () => {
+    for (const c of CIGARS) {
+      const vs = c.vitolas ?? [];
+      if (!vs.some((v) => v.ring != null)) continue;
+      for (let i = 1; i < vs.length; i++) {
+        const a = vs[i - 1];
+        const b = vs[i];
+        const ka = [
+          a.ring == null ? 1 : 0,
+          a.ring ?? 999,
+          a.lengthMM == null ? 1 : 0,
+          a.lengthMM ?? 9999,
+          a.name.toLowerCase(),
+        ] as const;
+        const kb = [
+          b.ring == null ? 1 : 0,
+          b.ring ?? 999,
+          b.lengthMM == null ? 1 : 0,
+          b.lengthMM ?? 9999,
+          b.name.toLowerCase(),
+        ] as const;
+        const ordered =
+          ka[0] < kb[0] ||
+          (ka[0] === kb[0] && ka[1] < kb[1]) ||
+          (ka[0] === kb[0] && ka[1] === kb[1] && ka[2] < kb[2]) ||
+          (ka[0] === kb[0] && ka[1] === kb[1] && ka[2] === kb[2] && ka[3] < kb[3]) ||
+          (ka[0] === kb[0] &&
+            ka[1] === kb[1] &&
+            ka[2] === kb[2] &&
+            ka[3] === kb[3] &&
+            ka[4] <= kb[4]);
+        expect(ordered, `${c.id}: ${a.name} before ${b.name}`).toBe(true);
+      }
+    }
   });
 });

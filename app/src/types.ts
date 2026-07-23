@@ -72,6 +72,10 @@ export interface Vitola {
   smokeTimeMin: number | null;
   priceEUR: number | null;
   url: string | null; // link na proizvod (humidor.hr)
+  // Generic family (Robusto, Toro, …). When the maker uses the generic name, name === shape.
+  shape?: string;
+  ring?: number;
+  lengthMM?: number;
   // Linkovi na proizvod te KONKRETNE vitole po regiji (market katalog) — kad
   // korisnik izabere vitolu, kupnja/cijena vode na tu vitolu, ne na liniju.
   regionLinks?: Partial<Record<Region, { shop: string; url: string; priceEUR?: number; priceApprox?: boolean }>>;

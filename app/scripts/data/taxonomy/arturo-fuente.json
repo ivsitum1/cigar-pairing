@@ -1,0 +1,33 @@
+{
+  "brand": "Arturo Fuente",
+  "renameBrand": null,
+  "status": "partial",
+  "reviewedAt": null,
+  "sources": [
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+  ],
+  "lines": {
+    "Seleccion d'Oro Imperial": {
+      "line": "Seleccion d'Oro",
+      "vitola": "Imperial"
+    }
+  },
+  "vitolaRenames": {},
+  "shapes": {},
+  "keepSeparate": [
+    [
+      "Don Carlos",
+      "Don Carlos Edicion de Aniversario"
+    ],
+    [
+      "Special Selection Brevas Royales",
+      "Special Selection Brevas Royales Maduro"
+    ],
+    [
+      "Claro",
+      "Claro Spanish"
+    ]
+  ],
+  "lineNotes": {},
+  "unresolved": []
+}

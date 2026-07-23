@@ -1,0 +1,37 @@
+{
+  "brand": "PDR",
+  "renameBrand": null,
+  "status": "partial",
+  "reviewedAt": null,
+  "sources": [
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+  ],
+  "lines": {
+    "Capa Madura Crystal": {
+      "line": "Capa Madura",
+      "vitola": "Crystal"
+    },
+    "Capa Natural Crystal": {
+      "line": "Capa Natural",
+      "vitola": "Crystal"
+    },
+    "Capa Oscura Crystal": {
+      "line": "Capa Oscura",
+      "vitola": "Crystal"
+    },
+    "Capa Sun Grown Crystal": {
+      "line": "Capa Sun Grown",
+      "vitola": "Crystal"
+    }
+  },
+  "vitolaRenames": {},
+  "shapes": {},
+  "keepSeparate": [
+    [
+      "Value Line Reserve",
+      "Value Line Reserve Connecticut"
+    ]
+  ],
+  "lineNotes": {},
+  "unresolved": []
+}

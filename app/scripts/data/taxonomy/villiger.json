@@ -1,0 +1,36 @@
+{
+  "brand": "Villiger",
+  "renameBrand": null,
+  "status": "partial",
+  "reviewedAt": null,
+  "sources": [
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+  ],
+  "lines": {},
+  "vitolaRenames": {},
+  "shapes": {},
+  "keepSeparate": [
+    [
+      "1888",
+      "1888 Dominican Republic"
+    ],
+    [
+      "1888",
+      "1888 Fuerte"
+    ],
+    [
+      "1888",
+      "1888 Nicaragua"
+    ],
+    [
+      "San Doro Claro",
+      "San Doro Claro Aged 10 Years"
+    ],
+    [
+      "San Doro Colorado",
+      "San Doro Colorado Aged 10 Years"
+    ]
+  ],
+  "lineNotes": {},
+  "unresolved": []
+}

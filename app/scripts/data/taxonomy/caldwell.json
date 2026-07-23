@@ -1,0 +1,24 @@
+{
+  "brand": "Caldwell",
+  "renameBrand": null,
+  "status": "partial",
+  "reviewedAt": null,
+  "sources": [
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+  ],
+  "lines": {},
+  "vitolaRenames": {},
+  "shapes": {},
+  "keepSeparate": [
+    [
+      "Blind Man's Bluff",
+      "Blind Man's Bluff Connecticut"
+    ],
+    [
+      "Blind Man's Bluff",
+      "Blind Man's Bluff Maduro"
+    ]
+  ],
+  "lineNotes": {},
+  "unresolved": []
+}

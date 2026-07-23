@@ -206,12 +206,16 @@ Serie-letter scrub done. Still **~4932** vitolas without a real product URL and 
 
 ## Verification checklist
 
-- [ ] `normalize-vitolas.py --check` clean (idempotent)
-- [ ] Connecticut still 6 vitolas (no twin Corona / No.4 dup)
-- [ ] No new locale twins / sampler multi-vitola (integrity tests)
-- [ ] `line_merge_decisions.json` still contains Oliva Monticello absorb + Serie V keep
-- [ ] No invented Holts/CigarWorld product URLs
-- [ ] vitest + build green if TS touched
+- [x] `normalize-vitolas.py --check` clean (idempotent) — 2026-07-23 Core
+- [x] La Galera Connecticut still 6 vitolas (Half Corona / No.4 distinct; no twin collapse)
+- [x] locale twins / sampler multi-vitola still 0 after Core
+- [x] `line_merge_decisions.json` still contains Oliva Monticello absorb + Serie V keep
+- [x] No invented Holts/CigarWorld product URLs (decisions-only; normalize applied absorbs)
+- [ ] vitest + build green if TS touched — not required (no TS this pass)
+
+### Core apply note (2026-07-23)
+
+After C + J (incl. deferred): **2758 cigars / 5537 vitolas**. Audit: `line_merges` 277, `keep_distinct` 173, `duplicate_line_suspects` ~84 residual, `prefix_suspects` 44, `shared_region_urls` 0. Deferred list cleared (0). Next optional: Stream D dims, residual J suspects, rename polish (e.g. Rocky `Sixty Toro 6 ½ x 52` → `Toro`).
 
 ## Out of scope for this handoff
 

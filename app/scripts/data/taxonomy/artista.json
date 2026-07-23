@@ -1,0 +1,25 @@
+{
+  "brand": "Artista",
+  "renameBrand": null,
+  "status": "partial",
+  "reviewedAt": null,
+  "sources": [
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+  ],
+  "lines": {
+    "Factory Classics Puro Ambar Legacy Grand": {
+      "line": "Factory Classics Puro Ambar",
+      "vitola": "Legacy Grand Toro"
+    }
+  },
+  "vitolaRenames": {},
+  "shapes": {},
+  "keepSeparate": [
+    [
+      "David Ortiz HOF",
+      "David Ortiz HOF Limited Edition"
+    ]
+  ],
+  "lineNotes": {},
+  "unresolved": []
+}

@@ -1,0 +1,29 @@
+{
+  "brand": "Domaine",
+  "renameBrand": null,
+  "status": "partial",
+  "reviewedAt": null,
+  "sources": [
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+  ],
+  "lines": {
+    "de Lavalette Classic Small": {
+      "line": "de Lavalette Classic",
+      "vitola": "Small Panetela"
+    },
+    "de Lavalette Panama Breve": {
+      "line": "de Lavalette Panama",
+      "vitola": "Breve Robusto"
+    }
+  },
+  "vitolaRenames": {},
+  "shapes": {},
+  "keepSeparate": [
+    [
+      "de Lavalette Honduras",
+      "de Lavalette Honduras Maduro"
+    ]
+  ],
+  "lineNotes": {},
+  "unresolved": []
+}

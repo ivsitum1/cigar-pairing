@@ -1,0 +1,40 @@
+{
+  "brand": "E.P. Carrillo",
+  "renameBrand": null,
+  "status": "partial",
+  "reviewedAt": null,
+  "sources": [
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+  ],
+  "lines": {
+    "Core Line": {
+      "line": "Core",
+      "vitola": "E.P. Carrillo Robusto"
+    },
+    "EPC Pledge Apogee": {
+      "line": "EPC Pledge",
+      "vitola": "Apogee"
+    },
+    "EPC Pledge Prequel": {
+      "line": "EPC Pledge",
+      "vitola": "Prequel"
+    },
+    "EPC Pledge Sojourn": {
+      "line": "EPC Pledge",
+      "vitola": "Apogee"
+    },
+    "Pledge / Encore": {
+      "line": "Pledge",
+      "vitola": "Pledge Prequel (robusto)"
+    },
+    "Pledge Apogee": {
+      "line": "Pledge",
+      "vitola": "Apogee"
+    }
+  },
+  "vitolaRenames": {},
+  "shapes": {},
+  "keepSeparate": [],
+  "lineNotes": {},
+  "unresolved": []
+}

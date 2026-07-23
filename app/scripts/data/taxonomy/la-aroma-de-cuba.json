@@ -1,0 +1,36 @@
+{
+  "brand": "La Aroma de Cuba",
+  "renameBrand": null,
+  "status": "partial",
+  "reviewedAt": null,
+  "sources": [
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+  ],
+  "lines": {
+    "La Aroma del Caribe Base Line El Jefe": {
+      "line": "La Aroma del Caribe Base Line",
+      "vitola": "El Jefe"
+    },
+    "La Aroma del Caribe Base Line Immensa": {
+      "line": "La Aroma del Caribe Base Line",
+      "vitola": "El Jefe"
+    },
+    "La Aroma del Caribe Base Line Monarch": {
+      "line": "La Aroma del Caribe Base Line",
+      "vitola": "Monarch"
+    },
+    "La Aroma del Caribe Mi Amor Duque": {
+      "line": "La Aroma del Caribe Mi Amor",
+      "vitola": "Duque"
+    },
+    "La Aroma del Caribe Mi Amor Valentino": {
+      "line": "La Aroma del Caribe Mi Amor",
+      "vitola": "Valentino"
+    }
+  },
+  "vitolaRenames": {},
+  "shapes": {},
+  "keepSeparate": [],
+  "lineNotes": {},
+  "unresolved": []
+}

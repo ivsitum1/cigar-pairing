@@ -1,0 +1,20 @@
+{
+  "brand": "Ra",
+  "renameBrand": null,
+  "status": "partial",
+  "reviewedAt": null,
+  "sources": [
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+  ],
+  "lines": {
+    "R.A. Villamil Viso 98 G n Corona": {
+      "line": "R.A. Villamil Viso 98",
+      "vitola": "Gran Corona"
+    }
+  },
+  "vitolaRenames": {},
+  "shapes": {},
+  "keepSeparate": [],
+  "lineNotes": {},
+  "unresolved": []
+}

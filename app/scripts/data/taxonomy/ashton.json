@@ -1,0 +1,29 @@
+{
+  "brand": "Ashton",
+  "renameBrand": null,
+  "status": "partial",
+  "reviewedAt": null,
+  "sources": [
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+  ],
+  "lines": {
+    "Paradiso By Papagayo XXL": {
+      "line": "Paradiso By Papagayo",
+      "vitola": "XXL"
+    }
+  },
+  "vitolaRenames": {},
+  "shapes": {},
+  "keepSeparate": [
+    [
+      "VSG",
+      "VSG (Virgin Sun Grown)"
+    ],
+    [
+      "Cabinet",
+      "Cabinet Selection"
+    ]
+  ],
+  "lineNotes": {},
+  "unresolved": []
+}

@@ -527,10 +527,10 @@ def build():
 
     write_json(HOLD, {"stats": stats, "hold": hold})
 
-    # Stream A: collapse locale-twin (/en/ vs /hr/) i sampler self-vitole nad
-    # cijelim cigars.json — deterministički i idempotentno (vidi
-    # docs/superpowers/plans/2026-07-23-vitola-dedup.md).
+    # Taxonomy fold (brand/line remap) then Stream A vitola hygiene.
+    # apply-taxonomy is a no-op until taxonomy/*.json files have status done|brand-only.
     import subprocess, sys
+    subprocess.run([sys.executable, str(Path(__file__).with_name("apply-taxonomy.py")), "--skip-normalize"], check=True)
     subprocess.run([sys.executable, str(Path(__file__).with_name("normalize-vitolas.py"))], check=True)
 
     print(json.dumps(stats, ensure_ascii=False, indent=2))

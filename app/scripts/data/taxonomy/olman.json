@@ -1,0 +1,29 @@
+{
+  "brand": "Olman",
+  "renameBrand": null,
+  "status": "partial",
+  "reviewedAt": null,
+  "sources": [
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+  ],
+  "lines": {
+    "Founders Edition 1997 Corojo Emperador": {
+      "line": "Founders Edition 1997 Corojo",
+      "vitola": "Emperador"
+    }
+  },
+  "vitolaRenames": {},
+  "shapes": {},
+  "keepSeparate": [
+    [
+      "Founders Edition 1997",
+      "Founders Edition 1997 Corojo"
+    ],
+    [
+      "Founders Edition 1997",
+      "Founders Edition 1997 Corojo Emperador"
+    ]
+  ],
+  "lineNotes": {},
+  "unresolved": []
+}

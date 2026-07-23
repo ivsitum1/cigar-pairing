@@ -1,0 +1,84 @@
+{
+  "brand": "Oliva",
+  "renameBrand": null,
+  "status": "partial",
+  "reviewedAt": null,
+  "sources": [
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+  ],
+  "lines": {},
+  "vitolaRenames": {},
+  "shapes": {},
+  "keepSeparate": [
+    [
+      "Serie V",
+      "Serie V / Melanio"
+    ],
+    [
+      "Flor de",
+      "Flor de Connecticut"
+    ],
+    [
+      "Flor de",
+      "Flor de Corojo"
+    ],
+    [
+      "Flor de",
+      "Flor de Gold"
+    ],
+    [
+      "Flor de",
+      "Flor de Maduro"
+    ],
+    [
+      "Flor de",
+      "Flor de Original"
+    ],
+    [
+      "Flor de Connecticut",
+      "Flor de Corojo"
+    ],
+    [
+      "Flor de Connecticut",
+      "Flor de Gold"
+    ],
+    [
+      "Flor de Connecticut",
+      "Flor de Maduro"
+    ],
+    [
+      "Flor de Connecticut",
+      "Flor de Original"
+    ],
+    [
+      "Flor de Corojo",
+      "Flor de Gold"
+    ],
+    [
+      "Flor de Corojo",
+      "Flor de Maduro"
+    ],
+    [
+      "Flor de Corojo",
+      "Flor de Original"
+    ],
+    [
+      "Flor de Gold",
+      "Flor de Maduro"
+    ],
+    [
+      "Flor de Gold",
+      "Flor de Original"
+    ],
+    [
+      "Flor de Maduro",
+      "Flor de Original"
+    ],
+    [
+      "Gilberto Reserva",
+      "Gilberto Reserva Blanc"
+    ]
+  ],
+  "lineNotes": {},
+  "unresolved": []
+}

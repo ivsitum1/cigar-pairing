@@ -1,0 +1,25 @@
+{
+  "brand": "Black Label",
+  "renameBrand": null,
+  "status": "partial",
+  "reviewedAt": null,
+  "sources": [
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+  ],
+  "lines": {
+    "Trading Company Nocurne &amp; Short Salomon": {
+      "line": "Trading Company Nocurne",
+      "vitola": "Perfecto"
+    }
+  },
+  "vitolaRenames": {},
+  "shapes": {},
+  "keepSeparate": [
+    [
+      "Trading Company Santa Muerte",
+      "Trading Company Santa Muerte Barrio Santo"
+    ]
+  ],
+  "lineNotes": {},
+  "unresolved": []
+}

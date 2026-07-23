@@ -54,6 +54,8 @@ PIPELINES = {
         "enrich-cigars.py",  # dobiva --humidor-catalog putanju kao argv[1]
         "profile-cigars.py",
         "dedupe-data.py",
+        "apply-taxonomy.py",
+        "normalize-vitolas.py",
     ],
 }
 

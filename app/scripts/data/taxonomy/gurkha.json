@@ -1,0 +1,41 @@
+{
+  "brand": "Gurkha",
+  "renameBrand": null,
+  "status": "partial",
+  "reviewedAt": null,
+  "sources": [
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+  ],
+  "lines": {
+    "Heritage Corto": {
+      "line": "Heritage",
+      "vitola": "Corto Robusto"
+    },
+    "Heritage Maduro Corto": {
+      "line": "Heritage Maduro",
+      "vitola": "Corto Robusto"
+    }
+  },
+  "vitolaRenames": {},
+  "shapes": {},
+  "keepSeparate": [
+    [
+      "Heritage",
+      "Heritage Maduro"
+    ],
+    [
+      "Heritage",
+      "Heritage Maduro Corto"
+    ],
+    [
+      "Marquesa",
+      "Marquesa Kiste"
+    ],
+    [
+      "Treinta 30th Anniversary",
+      "Treinta 30th Anniversary Aganorsa"
+    ]
+  ],
+  "lineNotes": {},
+  "unresolved": []
+}

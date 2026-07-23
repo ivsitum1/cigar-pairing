@@ -1,0 +1,20 @@
+{
+  "brand": "Hr",
+  "renameBrand": null,
+  "status": "partial",
+  "reviewedAt": null,
+  "sources": [
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+  ],
+  "lines": {
+    "H.R. Signature Signature": {
+      "line": "H.R. Signature",
+      "vitola": "Corona Gorda"
+    }
+  },
+  "vitolaRenames": {},
+  "shapes": {},
+  "keepSeparate": [],
+  "lineNotes": {},
+  "unresolved": []
+}

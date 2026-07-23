@@ -1,0 +1,25 @@
+{
+  "brand": "Alec Bradley",
+  "renameBrand": null,
+  "status": "partial",
+  "reviewedAt": null,
+  "sources": [
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+  ],
+  "lines": {
+    "Texas Lancero": {
+      "line": "Texas",
+      "vitola": "Lancero"
+    }
+  },
+  "vitolaRenames": {},
+  "shapes": {},
+  "keepSeparate": [
+    [
+      "Nica Puro",
+      "Nica Puro Rosado"
+    ]
+  ],
+  "lineNotes": {},
+  "unresolved": []
+}

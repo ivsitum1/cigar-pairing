@@ -26,5 +26,13 @@ jobs:
         working-directory: app
       - run: npm test
         working-directory: app
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Taxonomy + vitola normalize --check
+        working-directory: app
+        run: |
+          python scripts/apply-taxonomy.py --check --skip-normalize
+          python scripts/normalize-vitolas.py --check
       - run: npm run build
         working-directory: app
