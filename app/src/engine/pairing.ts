@@ -186,6 +186,25 @@ export function scorePairing(
     score += (effDrink.qualityScore - 7) * WEIGHTS.qualityNudge;
   }
 
+  // 6b) B2 (eksperimentalno, gated): duga cigara traži piće koje se razvija u čaši.
+  // Default WEIGHTS.formatComplexityBonus === 0 -> pravilo ne mijenja rezultat.
+  if (
+    WEIGHTS.formatComplexityBonus > 0 &&
+    cigar.smokeTimeMin >= 75 &&
+    effDrink.qualityScore != null &&
+    effDrink.qualityScore >= 8
+  ) {
+    score += WEIGHTS.formatComplexityBonus;
+    reasons.push({
+      rule: "format-complexity",
+      score: WEIGHTS.formatComplexityBonus,
+      text: {
+        hr: "Duga cigara traži piće koje se razvija u čaši.",
+        en: "A long cigar wants a drink that evolves in the glass.",
+      },
+    });
+  }
+
   // 7) Osobni nudge iz dnevnika (lokalno, s objasnjenjem) — nikad presudan
   if (prefs) {
     for (const reason of [

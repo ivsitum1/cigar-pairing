@@ -11,6 +11,7 @@ import { DetailSheet } from "../components/DetailSheet";
 import { EveningSessionSheet } from "../components/EveningSessionSheet";
 import { ServeChips } from "../components/ServeChips";
 import { buildShareCardModel, sharePairing } from "../lib/shareCard";
+import { ritualHint } from "../lib/cigarRitual";
 import { OcrScan } from "../components/OcrScan";
 import { VitolaPicker } from "../components/VitolaPicker";
 import { applyVitola, needsVitolaPick, uniqueVitolas } from "../lib/cigarVitola";
@@ -47,7 +48,7 @@ const SUGGEST_CATEGORIES: DrinkCategory[] = [
 ];
 
 export function PairingPage() {
-  const { t, lx, cn } = useI18n();
+  const { t, lx, cn, lang } = useI18n();
   const collection = useCollection();
   const [mode, setMode] = useState<Mode>("cigarToDrink");
   const [occasion, setOccasion] = useState<Occasion>("any");
@@ -492,6 +493,15 @@ export function PairingPage() {
                     </>
                   )}
                 </div>
+                {mode === "cigarToDrink" &&
+                  (() => {
+                    const rh = ritualHint((selected as Cigar).smokeTimeMin, lang);
+                    return rh ? (
+                      <div className="mt-2 text-micro leading-snug text-dim/85">
+                        {rh.icon} {rh.text}
+                      </div>
+                    ) : null;
+                  })()}
               </div>
               <button
                 onClick={reset}
