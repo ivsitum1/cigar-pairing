@@ -1,18 +1,69 @@
 {
   "brand": "Laura",
   "renameBrand": "Laura Chavin",
-  "status": "brand-only",
+  "status": "done",
   "reviewedAt": "2026-07-23",
   "sources": [
     "brands.json Laura blurb",
-    "product ids cig-laura-chavin-*"
+    "product ids cig-laura-chavin-*",
+    "phase3_w1_slice1 deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.1"
   ],
-  "lines": {},
+  "lines": {
+    "Chavin Classic No. 33": {
+      "line": "Classic No. 33"
+    },
+    "Chavin Classic No. 44": {
+      "line": "Classic No. 44"
+    },
+    "Chavin Classic No. 444": {
+      "line": "Classic No. 444"
+    },
+    "Chavin Classic No. 55": {
+      "line": "Classic No. 55"
+    },
+    "Chavin Classic No. 555": {
+      "line": "Classic No. 555"
+    },
+    "Chavin Classic No. 66": {
+      "line": "Classic No. 66"
+    },
+    "Chavin Classic No. 88": {
+      "line": "Classic No. 88"
+    },
+    "Chavin Classic Sansibar Gran Reserva": {
+      "line": "Classic Sansibar Gran Reserva"
+    },
+    "Chavin Concours des Meilleurs Connaisseurs": {
+      "line": "Concours des Meilleurs Connaisseurs"
+    },
+    "Chavin Invincible Black": {
+      "line": "Invincible Black"
+    },
+    "Chavin Invincible Copper": {
+      "line": "Invincible Copper"
+    },
+    "Chavin La Ligue des Divins": {
+      "line": "La Ligue des Divins"
+    },
+    "Chavin Terre de Mythe": {
+      "line": "Terre de Mythe"
+    },
+    "Chavin Virginy No. 1": {
+      "line": "Virginy No. 1"
+    },
+    "Chavin Virginy No. 2": {
+      "line": "Virginy No. 2"
+    },
+    "Chavin Virginy No. 3": {
+      "line": "Virginy No. 3"
+    }
+  },
   "vitolaRenames": {},
   "shapes": {},
   "keepSeparate": [],
   "lineNotes": {},
   "unresolved": [
-    "Phase 2 brand rename only; prior seed line maps cleared for Phase 3 rewrite"
+    "Phase 3 slice-1: Chavin prefix strip; Classic Nos. stay as line names"
   ]
 }

@@ -1,92 +1,143 @@
 {
   "brand": "Roma",
   "renameBrand": "RoMa Craft Tobac",
-  "status": "brand-only",
+  "status": "done",
   "reviewedAt": "2026-07-23",
   "sources": [
     "https://halfwheel.com/roma-craft-tobac-updating-cromagnon-line-in-2024/428403/",
-    "brands.json (Roma blurb already names RoMa Craft Tobac)"
+    "https://halfwheel.com/roma-craft-tobac-updating-cromagnon-line-in-2024/428403/",
+    "brands.json (Roma blurb already names RoMa Craft Tobac)",
+    "phase3_w1_slice1 deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.1"
   ],
   "lines": {
-    "Craft C gnon Anthropology": {
-      "line": "CroMagnon Anthropology"
+    "CroMagnon Anthropology": {
+      "line": "CroMagnon",
+      "vitola": "Anthropology",
+      "shape": "Corona Gorda"
     },
-    "Craft C gnon Aquitaine Anthropology": {
-      "line": "CroMagnon Aquitaine Anthropology"
+    "CroMagnon Aquitaine Anthropology": {
+      "line": "CroMagnon Aquitaine",
+      "vitola": "Anthropology",
+      "shape": "Corona Gorda"
     },
-    "Craft C gnon Aquitaine Cranium": {
-      "line": "CroMagnon Aquitaine Cranium"
+    "CroMagnon Aquitaine Cranium": {
+      "line": "CroMagnon Aquitaine",
+      "vitola": "Cranium",
+      "shape": "Gran Toro"
     },
-    "Craft C gnon Aquitaine Knuckle Dragger": {
-      "line": "CroMagnon Aquitaine Knuckle Dragger"
+    "CroMagnon Aquitaine Knuckle Dragger": {
+      "line": "CroMagnon Aquitaine",
+      "vitola": "Knuckle Dragger",
+      "shape": "Robusto"
     },
-    "Craft C gnon Aquitaine Mode 5": {
-      "line": "CroMagnon Aquitaine Mode 5"
+    "CroMagnon Aquitaine Mode 5": {
+      "line": "CroMagnon Aquitaine",
+      "vitola": "Mode 5",
+      "shape": "Perfecto"
     },
-    "Craft C gnon Cranium": {
-      "line": "CroMagnon Cranium"
+    "CroMagnon Cranium": {
+      "line": "CroMagnon",
+      "vitola": "Cranium",
+      "shape": "Gran Toro"
     },
-    "Craft C gnon EMH": {
-      "line": "CroMagnon EMH"
+    "CroMagnon EMH": {
+      "line": "CroMagnon",
+      "vitola": "EMH",
+      "shape": "Robusto"
     },
-    "Craft C gnon Knuckle Dragger": {
-      "line": "CroMagnon Knuckle Dragger"
+    "CroMagnon Knuckle Dragger": {
+      "line": "CroMagnon",
+      "vitola": "Knuckle Dragger",
+      "shape": "Robusto"
     },
-    "Craft Intemperance BA XXI Ambition": {
-      "line": "Intemperance BA XXI Ambition"
+    "Intemperance BA XXI Ambition": {
+      "line": "Intemperance BA XXI",
+      "vitola": "Ambition",
+      "shape": "Belicoso"
     },
-    "Craft Intemperance BA XXI Breach of Peace": {
-      "line": "Intemperance BA XXI Breach of Peace"
+    "Intemperance BA XXI Breach of Peace": {
+      "line": "Intemperance BA XXI",
+      "vitola": "Breach of Peace",
+      "shape": "Robusto"
     },
-    "Craft Intemperance EC XVIII Faith": {
-      "line": "Intemperance EC XVIII Faith"
+    "Intemperance EC XVIII Faith": {
+      "line": "Intemperance EC XVIII",
+      "vitola": "Faith",
+      "shape": "Perfecto"
     },
-    "Craft Intemperance EC XVIII Virtue": {
-      "line": "Intemperance EC XVIII Virtue"
+    "Intemperance EC XVIII Virtue": {
+      "line": "Intemperance EC XVIII",
+      "vitola": "Virtue",
+      "shape": "Short Robusto"
     },
-    "Craft Intemperance VO 1920 Belle Livingstone": {
-      "line": "Intemperance VO 1920 Belle Livingstone"
+    "Intemperance VO 1920 Belle Livingstone": {
+      "line": "Intemperance VO 1920",
+      "vitola": "Belle Livingstone",
+      "shape": "Short Robusto"
     },
-    "Craft Intemperance VO 1920 George Remus": {
-      "line": "Intemperance VO 1920 George Remus"
+    "Intemperance VO 1920 George Remus": {
+      "line": "Intemperance VO 1920",
+      "vitola": "George Remus",
+      "shape": "Robusto"
     },
-    "Craft Intemperance VO 1920 Izzy Einstein": {
-      "line": "Intemperance VO 1920 Izzy Einstein"
+    "Intemperance VO 1920 Izzy Einstein": {
+      "line": "Intemperance VO 1920",
+      "vitola": "Izzy Einstein",
+      "shape": "Petit Corona"
     },
-    "Craft Intemperance VO 1920 Roy Olmstead": {
-      "line": "Intemperance VO 1920 Roy Olmstead"
+    "Intemperance VO 1920 Roy Olmstead": {
+      "line": "Intemperance VO 1920",
+      "vitola": "Roy Olmstead",
+      "shape": "Belicoso"
     },
-    "Craft Intemperance WR 1794 Bradford": {
-      "line": "Intemperance WR 1794 Bradford"
+    "Intemperance WR 1794 Bradford": {
+      "line": "Intemperance WR 1794",
+      "vitola": "Bradford",
+      "shape": "Robusto"
     },
-    "Craft Intemperance WR 1794 Jefferson": {
-      "line": "Intemperance WR 1794 Jefferson"
+    "Intemperance WR 1794 Jefferson": {
+      "line": "Intemperance WR 1794",
+      "vitola": "Jefferson",
+      "shape": "Short Robusto"
     },
-    "Craft Intemperance WR 1794 Washington": {
-      "line": "Intemperance WR 1794 Washington"
+    "Intemperance WR 1794 Washington": {
+      "line": "Intemperance WR 1794",
+      "vitola": "Washington",
+      "shape": "Torpedo"
     },
-    "Craft Limited Edition Quinquagenario": {
-      "line": "Limited Edition Quinquagenario"
+    "Limited Edition Quinquagenario": {
+      "line": "Quinquagenario",
+      "vitola": "Robusto"
     },
-    "Craft Neanderthal HS 5 3": {
-      "line": "Neanderthal HS 5 3"
+    "Neanderthal HS 5 3": {
+      "line": "Neanderthal",
+      "vitola": "HS 5 3",
+      "shape": "Corona Gorda"
     },
-    "Craft Neanderthal JCF 5 1": {
-      "line": "Neanderthal JCF 5 1"
+    "Neanderthal JCF 5 1": {
+      "line": "Neanderthal",
+      "vitola": "JCF 5 1",
+      "shape": "Robusto"
     },
-    "Craft Neanderthal KFG 4 3": {
-      "line": "Neanderthal KFG 4 3"
+    "Neanderthal KFG 4 3": {
+      "line": "Neanderthal",
+      "vitola": "KFG 4 3",
+      "shape": "Short Robusto"
     },
-    "Craft Neanderthal SGP 4 1": {
-      "line": "Neanderthal SGP 4 1"
+    "Neanderthal SGP 4 1": {
+      "line": "Neanderthal",
+      "vitola": "SGP 4 1",
+      "shape": "Robusto"
     },
-    "Craft Weaselitos Africa Cameroon": {
-      "line": "Weaselitos Africa Cameroon"
+    "Weaselitos Africa Cameroon": {
+      "line": "Weaselitos",
+      "vitola": "Africa Cameroon"
     },
-    "Craft WunderLust": {
+    "WunderLust": {
       "line": "WunderLust"
     },
-    "Craft WunderLust Limited Edition": {
+    "WunderLust Limited Edition": {
       "line": "WunderLust Limited Edition"
     }
   },

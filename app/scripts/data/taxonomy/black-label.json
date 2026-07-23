@@ -1,18 +1,89 @@
 {
   "brand": "Black Label",
   "renameBrand": "Black Label Trading Company",
-  "status": "brand-only",
+  "status": "done",
   "reviewedAt": "2026-07-23",
   "sources": [
     "https://halfwheel.com/black-label-trading-co-s-founder-launches-black-works-studio/98956/",
-    "https://ovejanegracigars.com/"
+    "https://ovejanegracigars.com/",
+    "phase3_w1_slice1 deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.1"
   ],
-  "lines": {},
+  "lines": {
+    "Trading Company Bishops Blend": {
+      "line": "Bishops Blend"
+    },
+    "Trading Company Bishops Blend Novemdiales": {
+      "line": "Bishops Blend Novemdiales"
+    },
+    "Trading Company Charity Project Benediction": {
+      "line": "Charity Project Benediction"
+    },
+    "Trading Company Coffin Nails": {
+      "line": "Coffin Nails"
+    },
+    "Trading Company Deliverance Porcelain": {
+      "line": "Deliverance Porcelain"
+    },
+    "Trading Company Eletto": {
+      "line": "Eletto"
+    },
+    "Trading Company La Madonna Negra": {
+      "line": "La Madonna Negra"
+    },
+    "Trading Company Last Rites": {
+      "line": "Last Rites"
+    },
+    "Trading Company Lawless": {
+      "line": "Lawless"
+    },
+    "Trading Company Memento Mori": {
+      "line": "Memento Mori"
+    },
+    "Trading Company Morph Vintage 2020": {
+      "line": "Morph Vintage 2020"
+    },
+    "Trading Company Morph Vintage 2022": {
+      "line": "Morph Vintage 2022"
+    },
+    "Trading Company Nocurne": {
+      "line": "Nocurne"
+    },
+    "Trading Company Orthodox": {
+      "line": "Orthodox"
+    },
+    "Trading Company Oveja Negra": {
+      "line": "Oveja Negra"
+    },
+    "Trading Company Royalty": {
+      "line": "Royalty"
+    },
+    "Trading Company Salvation": {
+      "line": "Salvation"
+    },
+    "Trading Company Santa Muerte": {
+      "line": "Santa Muerte"
+    },
+    "Trading Company Santa Muerte Barrio Santo": {
+      "line": "Santa Muerte Barrio Santo"
+    },
+    "Trading Company Super Deluxe": {
+      "line": "Super Deluxe"
+    },
+    "Trading Company Viaticum": {
+      "line": "Viaticum"
+    }
+  },
   "vitolaRenames": {},
   "shapes": {},
-  "keepSeparate": [],
+  "keepSeparate": [
+    [
+      "Santa Muerte",
+      "Santa Muerte Barrio Santo"
+    ]
+  ],
   "lineNotes": {},
   "unresolved": [
-    "Phase 2 brand rename only; prior seed line maps cleared for Phase 3 rewrite"
+    "Phase 3 slice-1: prefix strip only; vitola proprietary names unchanged"
   ]
 }

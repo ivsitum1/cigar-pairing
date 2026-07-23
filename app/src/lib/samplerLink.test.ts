@@ -16,9 +16,10 @@ describe("resolveSamplerCigar", () => {
     expect(hit!.vitola).toBe("Robusto");
   });
 
-  it("Anemoi Eurus → Anemoi Eurus linija", () => {
+  it("Anemoi Eurus → Anemoi linija, vitola Eurus", () => {
     const hit = resolveSamplerCigar("La Galera", "Anemoi Eurus ×1", sampler!.id);
-    expect(hit?.line).toBe("Anemoi Eurus");
+    expect(hit?.line).toBe("Anemoi");
+    expect(hit?.vitola).toMatch(/Eurus/i);
   });
 
   it("1936 Box Pressed Robusto → 1936 Box Pressed linija", () => {

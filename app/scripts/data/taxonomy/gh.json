@@ -1,18 +1,83 @@
 {
   "brand": "Gh",
   "renameBrand": "Gran Habano",
-  "status": "brand-only",
+  "status": "done",
   "reviewedAt": "2026-07-23",
   "sources": [
+    "https://ghcigars.com/",
+    "https://ghcigars.com/",
     "https://cigar-coop.com/2018/03/cigar-review-gran-habano-s-t-k-black-dahlia-by-george-rico-robusto.html",
-    "ghcigars.com / brands.json Gh blurb"
+    "ghcigars.com / brands.json Gh blurb",
+    "phase3_w1_slice1 deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.1"
   ],
-  "lines": {},
+  "lines": {
+    "American Puro": {
+      "line": "American Puro"
+    },
+    "Connecticut #1": {
+      "line": "Connecticut #1"
+    },
+    "Corojo #5": {
+      "line": "Corojo #5"
+    },
+    "Corojo Maduro #5": {
+      "line": "Corojo Maduro #5"
+    },
+    "G.A.R. Grande": {
+      "line": "G.A.R. Grande"
+    },
+    "G.A.R. Opium": {
+      "line": "G.A.R. Opium"
+    },
+    "G.H. Black Dahlia": {
+      "line": "Black Dahlia"
+    },
+    "G.H. Blue in Green": {
+      "line": "Blue in Green"
+    },
+    "G.H. Connecticut No. 1": {
+      "line": "Connecticut #1"
+    },
+    "G.H. Corojo No. 5": {
+      "line": "Corojo #5"
+    },
+    "G.H. Corojo No. 5 Maduro": {
+      "line": "Corojo Maduro #5"
+    },
+    "G.H. Criollo No. 3": {
+      "line": "Criollo #3"
+    },
+    "G.H. Gran Reserva No. 5": {
+      "line": "Gran Reserva #5"
+    },
+    "G.H. House Connecticut": {
+      "line": "House Connecticut"
+    },
+    "G.H. House Corojo": {
+      "line": "House Corojo"
+    },
+    "G.H. La Conquista": {
+      "line": "La Conquista"
+    },
+    "Habano #3": {
+      "line": "Habano #3"
+    },
+    "Vintage 2002": {
+      "line": "Vintage 2002"
+    },
+    "Vintage 2004": {
+      "line": "Vintage 2004"
+    },
+    "Vintage 2006": {
+      "line": "Vintage 2006"
+    }
+  },
   "vitolaRenames": {},
   "shapes": {},
   "keepSeparate": [],
   "lineNotes": {},
   "unresolved": [
-    "Phase 2 brand rename only; prior seed line maps cleared for Phase 3 rewrite"
+    "Gran Habano: merged G.H. Connecticut No. 1 with existing Connecticut #1 after apply — confirm vitola union"
   ]
 }

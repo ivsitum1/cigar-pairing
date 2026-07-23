@@ -25,7 +25,10 @@ function signature(c: Cigar): { line: Set<string>; all: Set<string> } {
   const line = new Set(toks(c.line));
   const all = new Set(line);
   for (const t of toks(c.vitola)) all.add(t);
-  for (const v of c.vitolas ?? []) for (const t of toks(v.name)) all.add(t);
+  for (const v of c.vitolas ?? []) {
+    for (const t of toks(v.name)) all.add(t);
+    if (v.shape) for (const t of toks(v.shape)) all.add(t);
+  }
   return { line, all };
 }
 
