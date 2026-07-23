@@ -1,0 +1,32 @@
+{
+  "brand": "Toraño",
+  "renameBrand": null,
+  "status": "partial",
+  "reviewedAt": null,
+  "sources": [
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+  ],
+  "lines": {},
+  "vitolaRenames": {},
+  "shapes": {},
+  "keepSeparate": [
+    [
+      "Torano Exodus",
+      "Torano Exodus 1959 50 Years"
+    ],
+    [
+      "Torano Exodus",
+      "Torano Exodus 1959 Gold"
+    ],
+    [
+      "Torano Exodus",
+      "Torano Exodus 1959 50 Years Limited Edition Cuban"
+    ],
+    [
+      "Torano Exodus 1959 50 Years",
+      "Torano Exodus 1959 50 Years Limited Edition Cuban"
+    ]
+  ],
+  "lineNotes": {},
+  "unresolved": []
+}

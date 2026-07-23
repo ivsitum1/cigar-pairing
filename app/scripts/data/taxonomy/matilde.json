@@ -1,0 +1,45 @@
+{
+  "brand": "Matilde",
+  "renameBrand": null,
+  "status": "partial",
+  "reviewedAt": null,
+  "sources": [
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+  ],
+  "lines": {
+    "Oscura Bravo": {
+      "line": "Oscura",
+      "vitola": "Bravo"
+    },
+    "Quadrata Bravo": {
+      "line": "Quadrata",
+      "vitola": "Bravo"
+    },
+    "Renacer Bravo": {
+      "line": "Renacer",
+      "vitola": "Bravo"
+    },
+    "Serena Bravo": {
+      "line": "Serena",
+      "vitola": "Bravo"
+    }
+  },
+  "vitolaRenames": {},
+  "shapes": {},
+  "keepSeparate": [
+    [
+      "Serena",
+      "Serena Bravo Maduro"
+    ],
+    [
+      "Serena",
+      "Serena Maduro"
+    ],
+    [
+      "Serena Bravo",
+      "Serena Bravo Maduro"
+    ]
+  ],
+  "lineNotes": {},
+  "unresolved": []
+}

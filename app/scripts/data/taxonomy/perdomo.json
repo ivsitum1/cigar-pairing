@@ -1,0 +1,32 @@
+{
+  "brand": "Perdomo",
+  "renameBrand": null,
+  "status": "partial",
+  "reviewedAt": null,
+  "sources": [
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+  ],
+  "lines": {},
+  "vitolaRenames": {},
+  "shapes": {},
+  "keepSeparate": [
+    [
+      "Legacy Shade",
+      "Legacy Shade Grown"
+    ],
+    [
+      "Small Batch Connecticut",
+      "Small Batch Connecticut Half"
+    ],
+    [
+      "Small Batch Maduro",
+      "Small Batch Maduro Half"
+    ],
+    [
+      "Small Batch Sun Grown",
+      "Small Batch Sun Grown Half"
+    ]
+  ],
+  "lineNotes": {},
+  "unresolved": []
+}

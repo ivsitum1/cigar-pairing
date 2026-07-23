@@ -1,0 +1,29 @@
+{
+  "brand": "Padilla",
+  "renameBrand": null,
+  "status": "partial",
+  "reviewedAt": null,
+  "sources": [
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+  ],
+  "lines": {
+    "Barcelona XL": {
+      "line": "Barcelona",
+      "vitola": "XL"
+    }
+  },
+  "vitolaRenames": {},
+  "shapes": {},
+  "keepSeparate": [
+    [
+      "1932",
+      "1932 Black"
+    ],
+    [
+      "Reserva",
+      "Reserva Maduro"
+    ]
+  ],
+  "lineNotes": {},
+  "unresolved": []
+}

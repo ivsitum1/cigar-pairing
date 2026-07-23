@@ -1,0 +1,44 @@
+{
+  "brand": "Casdagli",
+  "renameBrand": null,
+  "status": "partial",
+  "reviewedAt": null,
+  "sources": [
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+  ],
+  "lines": {},
+  "vitolaRenames": {},
+  "shapes": {},
+  "keepSeparate": [
+    [
+      "Basilica C No. 1",
+      "Basilica C No. 1 MADURO"
+    ],
+    [
+      "Club",
+      "Club Gran GOLD"
+    ],
+    [
+      "Club",
+      "Club Especial"
+    ],
+    [
+      "Club",
+      "Club Mareva Jure"
+    ],
+    [
+      "Club",
+      "Club Mareva Spalato No. 2"
+    ],
+    [
+      "Villa",
+      "Villa Exquisito Nicarita"
+    ],
+    [
+      "Villa",
+      "Villa Exquisito Peruvita"
+    ]
+  ],
+  "lineNotes": {},
+  "unresolved": []
+}

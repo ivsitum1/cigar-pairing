@@ -1,0 +1,53 @@
+{
+  "brand": "Tabacalera",
+  "renameBrand": null,
+  "status": "partial",
+  "reviewedAt": null,
+  "sources": [
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+  ],
+  "lines": {
+    "Flor Fina Larga Especiale": {
+      "line": "Flor Fina",
+      "vitola": "Larga Especiale Corona"
+    }
+  },
+  "vitolaRenames": {},
+  "shapes": {},
+  "keepSeparate": [
+    [
+      "1881",
+      "1881 Perique Bold Maduro"
+    ],
+    [
+      "1881",
+      "1881 Perique Maduro"
+    ],
+    [
+      "1881 Perique",
+      "1881 Perique Bold Maduro"
+    ],
+    [
+      "1881 Perique",
+      "1881 Perique Maduro"
+    ],
+    [
+      "1881 Perique Bold",
+      "1881 Perique Bold Maduro"
+    ],
+    [
+      "1881",
+      "1881 Perique"
+    ],
+    [
+      "1881",
+      "1881 Perique Bold"
+    ],
+    [
+      "1881 Perique",
+      "1881 Perique Bold"
+    ]
+  ],
+  "lineNotes": {},
+  "unresolved": []
+}

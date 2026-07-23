@@ -1,0 +1,25 @@
+{
+  "brand": "Davidoff",
+  "renameBrand": null,
+  "status": "partial",
+  "reviewedAt": null,
+  "sources": [
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+  ],
+  "lines": {
+    "Year Of Horse 2026": {
+      "line": "Year of Horse",
+      "vitola": "Toro"
+    }
+  },
+  "vitolaRenames": {},
+  "shapes": {},
+  "keepSeparate": [
+    [
+      "Winston Churchill",
+      "Winston Churchill The Late Hour"
+    ]
+  ],
+  "lineNotes": {},
+  "unresolved": []
+}

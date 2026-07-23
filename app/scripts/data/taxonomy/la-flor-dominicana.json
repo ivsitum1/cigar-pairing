@@ -1,0 +1,25 @@
+{
+  "brand": "La Flor Dominicana",
+  "renameBrand": null,
+  "status": "partial",
+  "reviewedAt": null,
+  "sources": [
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+  ],
+  "lines": {
+    "Reserva Especial El Jocko #2": {
+      "line": "Reserva Especial",
+      "vitola": "El Jocko #2"
+    }
+  },
+  "vitolaRenames": {},
+  "shapes": {},
+  "keepSeparate": [
+    [
+      "Reserva Especial",
+      "Reserva Especial El Jocko #1 Maduro"
+    ]
+  ],
+  "lineNotes": {},
+  "unresolved": []
+}

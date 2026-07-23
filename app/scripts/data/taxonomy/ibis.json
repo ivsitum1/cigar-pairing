@@ -1,0 +1,28 @@
+{
+  "brand": "Ibis",
+  "renameBrand": null,
+  "status": "partial",
+  "reviewedAt": null,
+  "sources": [
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+  ],
+  "lines": {},
+  "vitolaRenames": {},
+  "shapes": {},
+  "keepSeparate": [
+    [
+      "Honduras",
+      "Honduras Maduro"
+    ],
+    [
+      "Honduras",
+      "Honduras Maduro Antiguo"
+    ],
+    [
+      "Honduras Maduro",
+      "Honduras Maduro Antiguo"
+    ]
+  ],
+  "lineNotes": {},
+  "unresolved": []
+}

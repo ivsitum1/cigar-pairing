@@ -1,0 +1,28 @@
+{
+  "brand": "Inca",
+  "renameBrand": null,
+  "status": "partial",
+  "reviewedAt": null,
+  "sources": [
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+  ],
+  "lines": {
+    "Peru Imperio": {
+      "line": "Peru",
+      "vitola": "Imperio"
+    },
+    "Peru Roca": {
+      "line": "Peru",
+      "vitola": "Roca"
+    },
+    "Peru Tambo": {
+      "line": "Peru",
+      "vitola": "Tambo"
+    }
+  },
+  "vitolaRenames": {},
+  "shapes": {},
+  "keepSeparate": [],
+  "lineNotes": {},
+  "unresolved": []
+}

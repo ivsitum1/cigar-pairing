@@ -1,0 +1,49 @@
+{
+  "brand": "Gh",
+  "renameBrand": null,
+  "status": "partial",
+  "reviewedAt": null,
+  "sources": [
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+  ],
+  "lines": {
+    "G.H. Black Dahlia Shorty": {
+      "line": "G.H. Black Dahlia",
+      "vitola": "Shorty Robusto"
+    },
+    "G.H. Connecticut No. 1 Shorty": {
+      "line": "G.H. Connecticut No. 1",
+      "vitola": "Shorty Robusto"
+    },
+    "G.H. Corojo No. 5 Shorty": {
+      "line": "G.H. Corojo No. 5",
+      "vitola": "Shorty Robusto"
+    },
+    "G.H. Criollo No. 3 Shorty": {
+      "line": "G.H. Criollo No. 3",
+      "vitola": "Shorty Robusto"
+    },
+    "G.H. Gran Reserva No. 5 Shorty": {
+      "line": "G.H. Gran Reserva No. 5",
+      "vitola": "Shorty Robusto"
+    },
+    "G.H. La Conquista La Pinta": {
+      "line": "G.H. La Conquista",
+      "vitola": "La Pinta"
+    },
+    "G.H. La Conquista Shorty": {
+      "line": "G.H. La Conquista",
+      "vitola": "Shorty Robusto"
+    }
+  },
+  "vitolaRenames": {},
+  "shapes": {},
+  "keepSeparate": [
+    [
+      "G.H. Corojo No. 5",
+      "G.H. Corojo No. 5 Maduro"
+    ]
+  ],
+  "lineNotes": {},
+  "unresolved": []
+}

@@ -1,0 +1,28 @@
+{
+  "brand": "Culture",
+  "renameBrand": null,
+  "status": "partial",
+  "reviewedAt": null,
+  "sources": [
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+  ],
+  "lines": {
+    "Dominican Reserve Paris": {
+      "line": "Dominican Reserve",
+      "vitola": "Paris"
+    },
+    "Dominican Reserve Rome": {
+      "line": "Dominican Reserve",
+      "vitola": "Rome"
+    },
+    "Dominican Reserve Sevilla": {
+      "line": "Dominican Reserve",
+      "vitola": "Sevilla"
+    }
+  },
+  "vitolaRenames": {},
+  "shapes": {},
+  "keepSeparate": [],
+  "lineNotes": {},
+  "unresolved": []
+}

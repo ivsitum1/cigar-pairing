@@ -1,0 +1,20 @@
+{
+  "brand": "Kafie",
+  "renameBrand": null,
+  "status": "partial",
+  "reviewedAt": null,
+  "sources": [
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+  ],
+  "lines": {
+    "1901 Connecticut Balicoso": {
+      "line": "1901 Connecticut",
+      "vitola": "Belicoso"
+    }
+  },
+  "vitolaRenames": {},
+  "shapes": {},
+  "keepSeparate": [],
+  "lineNotes": {},
+  "unresolved": []
+}

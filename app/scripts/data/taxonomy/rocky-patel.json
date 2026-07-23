@@ -1,0 +1,28 @@
+{
+  "brand": "Rocky Patel",
+  "renameBrand": null,
+  "status": "partial",
+  "reviewedAt": null,
+  "sources": [
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+  ],
+  "lines": {},
+  "vitolaRenames": {},
+  "shapes": {},
+  "keepSeparate": [
+    [
+      "Vintage",
+      "Vintage 1990/1992"
+    ],
+    [
+      "Fifty",
+      "Fifty Five"
+    ],
+    [
+      "Hamlet 25th Year",
+      "Hamlet 25th Year Series 2020"
+    ]
+  ],
+  "lineNotes": {},
+  "unresolved": []
+}

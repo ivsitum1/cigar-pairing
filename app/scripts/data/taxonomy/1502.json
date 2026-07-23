@@ -1,0 +1,29 @@
+{
+  "brand": "1502",
+  "renameBrand": null,
+  "status": "partial",
+  "reviewedAt": null,
+  "sources": [
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+  ],
+  "lines": {
+    "Special Edition Blue Sapphire Gordo": {
+      "line": "Special Edition Blue Sapphire",
+      "vitola": "Robusto"
+    }
+  },
+  "vitolaRenames": {},
+  "shapes": {},
+  "keepSeparate": [
+    [
+      "Special Edition Cachito",
+      "Special Edition Cachito White Connecticut"
+    ],
+    [
+      "Special Edition Cachito",
+      "Special Edition Cachito Original"
+    ]
+  ],
+  "lineNotes": {},
+  "unresolved": []
+}

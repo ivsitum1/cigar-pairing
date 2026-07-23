@@ -1,0 +1,36 @@
+{
+  "brand": "Kristoff",
+  "renameBrand": null,
+  "status": "partial",
+  "reviewedAt": null,
+  "sources": [
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+  ],
+  "lines": {},
+  "vitolaRenames": {},
+  "shapes": {},
+  "keepSeparate": [
+    [
+      "Kristania",
+      "Kristania Maduro"
+    ],
+    [
+      "GC Signature Series",
+      "GC Signature Series Intertabac 2023"
+    ],
+    [
+      "GC Signature Series",
+      "GC Signature Series JT"
+    ],
+    [
+      "GC Signature Series",
+      "GC Signature Series PCA 2022"
+    ],
+    [
+      "GC Signature Series",
+      "GC Signature Series PCA 2026"
+    ]
+  ],
+  "lineNotes": {},
+  "unresolved": []
+}

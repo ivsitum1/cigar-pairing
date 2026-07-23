@@ -1,0 +1,40 @@
+{
+  "brand": "Xhaxhi",
+  "renameBrand": null,
+  "status": "partial",
+  "reviewedAt": null,
+  "sources": [
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+  ],
+  "lines": {
+    "Bobi Baba Jan": {
+      "line": "Bobi",
+      "vitola": "Baba Jan"
+    },
+    "Bobi El Ingeniero": {
+      "line": "Bobi",
+      "vitola": "El Ingeniero"
+    },
+    "Bobi El Licenciado": {
+      "line": "Bobi",
+      "vitola": "El Ingeniero"
+    },
+    "Bobi Mi Hermano": {
+      "line": "Bobi",
+      "vitola": "Baba Jan"
+    },
+    "Bobi Sunrise": {
+      "line": "Bobi",
+      "vitola": "Baba Jan"
+    },
+    "Bobi Sunset": {
+      "line": "Bobi",
+      "vitola": "El Ingeniero"
+    }
+  },
+  "vitolaRenames": {},
+  "shapes": {},
+  "keepSeparate": [],
+  "lineNotes": {},
+  "unresolved": []
+}

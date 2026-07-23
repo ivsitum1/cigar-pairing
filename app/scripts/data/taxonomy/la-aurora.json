@@ -1,0 +1,33 @@
+{
+  "brand": "La Aurora",
+  "renameBrand": null,
+  "status": "partial",
+  "reviewedAt": null,
+  "sources": [
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+  ],
+  "lines": {
+    "107 Ecuador Sumo": {
+      "line": "107 Ecuador",
+      "vitola": "Sumo"
+    },
+    "1495 Series Sumo": {
+      "line": "1495 Series",
+      "vitola": "Sumo"
+    }
+  },
+  "vitolaRenames": {},
+  "shapes": {},
+  "keepSeparate": [
+    [
+      "107 Ecuador",
+      "107 Ecuador Maduro USA"
+    ],
+    [
+      "Cameroon 1903",
+      "Cameroon 1903 Deluxe"
+    ]
+  ],
+  "lineNotes": {},
+  "unresolved": []
+}
