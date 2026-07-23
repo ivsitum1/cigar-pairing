@@ -1,1 +1,0 @@
-C:/Users/Admin/Documents/agent rules/.cursor/hooks/memory_lifecycle.py

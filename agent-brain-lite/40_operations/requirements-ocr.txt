@@ -1,8 +1,0 @@
-# Optional OCR stack (PaddleOCR + PaddlePaddle). Install via install_paddle_ocr.py
-# Framework: https://github.com/PaddlePaddle/Paddle (wheels via install_paddle_ocr.py)
-# Application: vendored PaddleOCR under 40_operations/vendor/PaddleOCR after bootstrap.
-
-PyMuPDF>=1.24.0
-Pillow>=10.0.0
-# PP-StructureV3 needs [ocr], not only paddleocr's transitive [ocr-core]
-paddlex[ocr]==3.5.2

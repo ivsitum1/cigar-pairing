@@ -1,3 +1,0 @@
-# Optional: MCP handoff server (removes brain_health "fastmcp not installed" warn)
-# pip install -r 40_operations/requirements-optional-mcp.txt
-fastmcp>=2.0.0

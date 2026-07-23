@@ -1,5 +1,0 @@
-{
-  "case_1": "Protokol target triala (emulacija RCT iz registryja): Eligibility criteria — AKI KDIGO stage 2, ICU registry, n=1200. Treatment strategies: early CRRT (<24h) vs standard timing (>24h). Time zero (index date): trenutak kada je ispunjen KDIGO 2. Confounders: dob, spol, SOFA, komorbiditeti. Causal contrast: ITT-type definicija (namjera liječenja). Protokol prema TTE (Hernan et al.); ishod 28-dnevni mortalitet.",
-  "case_2": "Problem: immortal time bias. Period od ICU prijema do primanja CRRT (24–72h) nije tretiran kao at-risk; pacijenti koji primaju CRRT kasnije imaju „besmrtno vrijeme“ u kojoj ne mogu imati ishod. Rjesenje u TTE: definirati time zero (npr. 24h od prijema) ili clone-and-censor pristup tako da svi imaju jasno at-risk vrijeme. Analiza nije ispravna bez korekcije za ovu pristranost.",
-  "case_3": "TTE nije potrebno za RCT. Target Trial Emulation je za opservacijsku (observational) analizu kada nije randomiziran dizajn; RCT je vec randomiziran pa TTE ne treba. Za observational podatke koristi se TTE; za randomiziranu studiju ne."
-}

@@ -1,3 +1,0 @@
-{
-  "case_prd_passes": "PRD: CSV export feature\n\nProblem statement: korisnici ne mogu izvesti tablicu u CSV.\nUser story: As analyst I want export so I can share results.\nAcceptance: passes flag u prd.json za svaki kriterij (passes: false na startu).\nArtefakt: prd.json s passes poljima po user story."
-}
