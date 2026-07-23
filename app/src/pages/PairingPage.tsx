@@ -4,6 +4,7 @@ import { ALL_DRINKS, CIGARS, cigarById, cigarInRegion, cigarLinkForMarket, cigar
 import { pairCigarsForDrink, pairDrinksForCigar } from "../engine/pairing";
 import { buildPrefs } from "../engine/personal";
 import { curatedPairingOpinion } from "../engine/curatedOpinion";
+import { pairingBlurb, pairingNarrative } from "../engine/pairingExplain";
 import { useI18n, STYLE_LABELS, type StringKey } from "../i18n";
 import { Chip, Meter, ScoreBand, SearchInput, SectionTitle } from "../components/ui";
 import { getItemState, useCollection } from "../store/collection";
@@ -683,6 +684,8 @@ function ResultCard({
     result.reasons,
     result.score,
   );
+  const blurb = pairingBlurb(cigar, drink, result.reasons, result.score);
+  const narrative = pairingNarrative(cigar, drink, result.reasons, result.score);
   return (
     <div className="rounded-xl border border-dim/15 bg-cedar p-3">
       <div className="flex items-center gap-3">
@@ -739,6 +742,7 @@ function ResultCard({
           ))}
         </div>
       )}
+      <p className="mt-2 text-xs leading-relaxed text-papir/80">{lx(blurb)}</p>
       {pairingOpinion && (
         <div
           className={`mt-2 rounded-md border px-2.5 py-1.5 text-xs ${
@@ -754,18 +758,21 @@ function ResultCard({
         </div>
       )}
       {open && (
-        <ul className="mt-2 space-y-1 border-t border-dim/15 pt-2">
-          {positive.map((r, i) => (
-            <li key={i} className="flex gap-2 text-xs leading-relaxed text-papir/85">
-              <span className="text-lista">＋</span> {lx(r.text)}
-            </li>
-          ))}
-          {negative.map((r, i) => (
-            <li key={i} className="flex gap-2 text-xs leading-relaxed text-dim">
-              <span className="text-oxblood">−</span> {lx(r.text)}
-            </li>
-          ))}
-        </ul>
+        <div className="mt-2 space-y-2 border-t border-dim/15 pt-2">
+          <p className="text-xs leading-relaxed text-papir/85">{lx(narrative)}</p>
+          <ul className="space-y-1">
+            {positive.map((r, i) => (
+              <li key={i} className="flex gap-2 text-xs leading-relaxed text-papir/85">
+                <span className="text-lista">＋</span> {lx(r.text)}
+              </li>
+            ))}
+            {negative.map((r, i) => (
+              <li key={i} className="flex gap-2 text-xs leading-relaxed text-dim">
+                <span className="text-oxblood">−</span> {lx(r.text)}
+              </li>
+            ))}
+          </ul>
+        </div>
       )}
     </div>
   );

@@ -4,6 +4,7 @@ import type { Cigar, Drink } from "../types";
 import { ALL_DRINKS, CIGARS, cigarInRegion, formatPrice } from "../data";
 import { scorePairing } from "../engine/pairing";
 import { curatedPairingOpinion } from "../engine/curatedOpinion";
+import { pairingBlurb, pairingNarrative } from "../engine/pairingExplain";
 import { useI18n, STYLE_LABELS, type StringKey } from "../i18n";
 import { Meter, ScoreBand, SearchInput } from "../components/ui";
 import { useMarket } from "../store/market";
@@ -36,6 +37,14 @@ export function CustomPairing({
   const pairingOpinion = result
     ? curatedPairingOpinion(cigar!, drink!, result.reasons, result.score)
     : null;
+  const blurb =
+    result && cigar && drink
+      ? pairingBlurb(cigar, drink, result.reasons, result.score)
+      : null;
+  const narrative =
+    result && cigar && drink
+      ? pairingNarrative(cigar, drink, result.reasons, result.score)
+      : null;
 
   const verdictKey = (score: number): StringKey =>
     score >= 82
@@ -107,6 +116,9 @@ export function CustomPairing({
             </button>
           </div>
 
+          {blurb && (
+            <p className="mt-3 text-xs leading-relaxed text-papir/80">{lx(blurb)}</p>
+          )}
           {pairingOpinion && (
             <div
               className={`mt-3 rounded-md border px-2.5 py-1.5 text-xs ${
@@ -120,6 +132,9 @@ export function CustomPairing({
                 : `⚠ ${t("pair.curatedWarn")}`}
               : {lx(pairingOpinion.text)}
             </div>
+          )}
+          {narrative && (
+            <p className="mt-2 text-xs leading-relaxed text-papir/85">{lx(narrative)}</p>
           )}
 
           <ul className="mt-3 space-y-1 border-t border-dim/15 pt-3">
