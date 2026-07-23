@@ -23,12 +23,12 @@ describe("resolveSamplerCigar", () => {
 
   it("1936 Box Pressed Robusto → 1936 Box Pressed linija", () => {
     const hit = resolveSamplerCigar("La Galera", "1936 Box Pressed Robusto ×2", sampler!.id);
-    expect(hit?.line).toMatch(/^1936 Box Pressed Robusto/);
+    expect(hit?.line).toMatch(/^1936 Box Pressed/);
   });
 
-  it("Imperial Jade Robusto → Imperial Jade Robusto linija", () => {
+  it("Imperial Jade Robusto → Imperial Jade linija", () => {
     const hit = resolveSamplerCigar("La Galera", "Imperial Jade Robusto ×1", sampler!.id);
-    expect(hit?.line).toMatch(/^Imperial Jade Robusto/);
+    expect(hit?.line).toMatch(/^Imperial Jade/);
   });
 
   it("svaki redak La Galera samplera se razriješi u neku cigaru", () => {

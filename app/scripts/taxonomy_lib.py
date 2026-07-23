@@ -25,6 +25,18 @@ DIM_IN_LINE_RE = re.compile(
     | \b\d+\s*1\s*[⁄/]\s*\d+\b
     """
 )
+# Trailing "… 6 X 50" / "… 6 1/4 x 52" / "… 6 ½ X 52" at end of a line name.
+TRAILING_DIM_RE = re.compile(
+    r"""(?ix)
+    ^(.+?)\s+
+    (
+      \d+
+      (?:\s+\d+\s*[⁄/]\s*\d+ | \s*[¼½¾⅓⅔⅛⅜⅝⅞])?
+    )
+    \s*[x×]\s*
+    (\d+)\s*$
+    """
+)
 FRAC_MAP = {
     "¼": "1/4",
     "½": "1/2",
@@ -101,6 +113,21 @@ def shape_words() -> set[str]:
 
 def line_has_dimensions(line: str) -> bool:
     return bool(DIM_IN_LINE_RE.search(line or ""))
+
+
+def split_trailing_dimensions(line: str) -> tuple[str, str] | None:
+    """If line ends with a dimension group, return (line_without_dims, format_hint)."""
+    m = TRAILING_DIM_RE.match((line or "").strip())
+    if not m:
+        return None
+    base = m.group(1).strip()
+    if not base:
+        return None
+    length_part = re.sub(r"\s+", " ", m.group(2).strip())
+    for a, b in FRAC_MAP.items():
+        length_part = length_part.replace(a, b)
+    fmt = f"{length_part} x {m.group(3)}"
+    return base, fmt
 
 
 def line_ends_with_shape(line: str, shapes: set[str] | None = None) -> str | None:

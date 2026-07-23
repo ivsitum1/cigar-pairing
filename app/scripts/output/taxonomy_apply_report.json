@@ -1,7 +1,22 @@
 {
   "taxonomy_files": 0,
   "taxonomy_files_total": 167,
-  "input_records": 2758,
-  "note": "no applyable taxonomy/*.json (status done|brand-only) — identity",
-  "output_records": 2758
+  "input_records": 2711,
+  "auto_pass": {
+    "P1": [],
+    "P2": [],
+    "P3": [],
+    "P4": [],
+    "P5": []
+  },
+  "auto_pass_counts": {
+    "P1": 0,
+    "P2": 0,
+    "P3": 0,
+    "P4": 0,
+    "P5": 0
+  },
+  "aliases_added": [],
+  "note": "no applyable taxonomy/*.json (status done|brand-only); auto-pass only",
+  "output_records": 2711
 }

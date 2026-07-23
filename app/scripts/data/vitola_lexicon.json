@@ -1,28 +1,387 @@
 {
   "_doc": "Kanonske vitole + sinonimi za determinističku normalizaciju (playbook §4c). Match je case-insensitive na cijele tokene. Redoslijed nebitan; matcher bira najdulji sinonim koji se poklopi. ring/lenMM su za soft-validaciju (ne odbacuju).",
   "vitolas": {
-    "Petit Corona": { "syn": ["petit corona", "petit coronas", "mareva", "marevas", "petit"], "ring": [40, 44], "lenMM": [110, 132] },
-    "Corona": { "syn": ["corona", "coronas", "cervantes"], "ring": [42, 46], "lenMM": [132, 152] },
-    "Corona Gorda": { "syn": ["corona gorda", "coronas gordas", "grand corona", "gran corona"], "ring": [46, 50], "lenMM": [140, 160] },
-    "Lonsdale": { "syn": ["lonsdale", "lonsdales"], "ring": [42, 44], "lenMM": [152, 175] },
-    "Panetela": { "syn": ["panetela", "panatela", "panetelas"], "ring": [34, 39], "lenMM": [140, 185] },
-    "Lancero": { "syn": ["lancero", "lanceros", "laguito no. 1", "laguito no.1"], "ring": [38, 42], "lenMM": [178, 200] },
-    "Half Corona": { "syn": ["half corona", "half coronas"], "ring": [40, 48], "lenMM": [95, 115] },
-    "Robusto": { "syn": ["robusto", "robustos"], "ring": [48, 54], "lenMM": [114, 140] },
-    "Short Robusto": { "syn": ["short robusto", "rothchild", "rothschild", "petit robusto"], "ring": [48, 54], "lenMM": [95, 118] },
-    "Double Robusto": { "syn": ["double robusto", "gran robusto"], "ring": [52, 56], "lenMM": [130, 145] },
-    "Toro": { "syn": ["toro", "toros", "corona gorda toro"], "ring": [50, 56], "lenMM": [140, 165] },
-    "Gran Toro": { "syn": ["gran toro", "toro gordo", "toro grande"], "ring": [54, 60], "lenMM": [150, 168] },
-    "Gordo": { "syn": ["gordo", "gordito", "gigante", "sixty"], "ring": [58, 70], "lenMM": [140, 178] },
-    "Churchill": { "syn": ["churchill", "churchills"], "ring": [46, 50], "lenMM": [170, 195] },
-    "Double Corona": { "syn": ["double corona", "prominente", "double coronas"], "ring": [48, 52], "lenMM": [190, 215] },
-    "Presidente": { "syn": ["presidente", "president"], "ring": [50, 60], "lenMM": [195, 230] },
-    "Torpedo": { "syn": ["torpedo", "torpedos"], "ring": [50, 56], "lenMM": [140, 168] },
-    "Belicoso": { "syn": ["belicoso", "belicosos"], "ring": [50, 54], "lenMM": [127, 152] },
-    "Piramide": { "syn": ["piramide", "pyramid", "piramides", "pyramide"], "ring": [50, 56], "lenMM": [152, 165] },
-    "Perfecto": { "syn": ["perfecto", "perfectos"], "ring": [40, 60], "lenMM": [110, 178] },
-    "Figurado": { "syn": ["figurado", "figurados", "salomon", "salomones", "diadema"], "ring": [48, 60], "lenMM": [140, 215] },
-    "Petit Panetela": { "syn": ["petit panetela", "petit panatela"], "ring": [32, 38], "lenMM": [100, 130] },
-    "Epicure": { "syn": ["epicure", "epicures"], "ring": [50, 54], "lenMM": [140, 155] }
-  }
+    "Petit Corona": {
+      "syn": [
+        "petit corona",
+        "petit coronas",
+        "mareva",
+        "marevas",
+        "petit"
+      ],
+      "ring": [
+        40,
+        44
+      ],
+      "lenMM": [
+        110,
+        132
+      ]
+    },
+    "Corona": {
+      "syn": [
+        "corona",
+        "coronas",
+        "cervantes"
+      ],
+      "ring": [
+        42,
+        46
+      ],
+      "lenMM": [
+        132,
+        152
+      ]
+    },
+    "Corona Gorda": {
+      "syn": [
+        "corona gorda",
+        "coronas gordas",
+        "grand corona",
+        "gran corona"
+      ],
+      "ring": [
+        46,
+        50
+      ],
+      "lenMM": [
+        140,
+        160
+      ]
+    },
+    "Lonsdale": {
+      "syn": [
+        "lonsdale",
+        "lonsdales"
+      ],
+      "ring": [
+        42,
+        44
+      ],
+      "lenMM": [
+        152,
+        175
+      ]
+    },
+    "Panetela": {
+      "syn": [
+        "panetela",
+        "panatela",
+        "panetelas"
+      ],
+      "ring": [
+        34,
+        39
+      ],
+      "lenMM": [
+        140,
+        185
+      ]
+    },
+    "Lancero": {
+      "syn": [
+        "lancero",
+        "lanceros",
+        "laguito no. 1",
+        "laguito no.1"
+      ],
+      "ring": [
+        38,
+        42
+      ],
+      "lenMM": [
+        178,
+        200
+      ]
+    },
+    "Half Corona": {
+      "syn": [
+        "half corona",
+        "half coronas"
+      ],
+      "ring": [
+        40,
+        48
+      ],
+      "lenMM": [
+        95,
+        115
+      ]
+    },
+    "Robusto": {
+      "syn": [
+        "robusto",
+        "robustos"
+      ],
+      "ring": [
+        48,
+        54
+      ],
+      "lenMM": [
+        114,
+        140
+      ]
+    },
+    "Short Robusto": {
+      "syn": [
+        "short robusto",
+        "rothchild",
+        "rothschild",
+        "petit robusto"
+      ],
+      "ring": [
+        48,
+        54
+      ],
+      "lenMM": [
+        95,
+        118
+      ]
+    },
+    "Double Robusto": {
+      "syn": [
+        "double robusto",
+        "gran robusto"
+      ],
+      "ring": [
+        52,
+        56
+      ],
+      "lenMM": [
+        130,
+        145
+      ]
+    },
+    "Toro": {
+      "syn": [
+        "toro",
+        "toros",
+        "corona gorda toro"
+      ],
+      "ring": [
+        50,
+        56
+      ],
+      "lenMM": [
+        140,
+        165
+      ]
+    },
+    "Gran Toro": {
+      "syn": [
+        "gran toro",
+        "toro gordo",
+        "toro grande"
+      ],
+      "ring": [
+        54,
+        60
+      ],
+      "lenMM": [
+        150,
+        168
+      ]
+    },
+    "Gordo": {
+      "syn": [
+        "gordo",
+        "gordito",
+        "gigante",
+        "sixty"
+      ],
+      "ring": [
+        58,
+        70
+      ],
+      "lenMM": [
+        140,
+        178
+      ]
+    },
+    "Churchill": {
+      "syn": [
+        "churchill",
+        "churchills"
+      ],
+      "ring": [
+        46,
+        50
+      ],
+      "lenMM": [
+        170,
+        195
+      ]
+    },
+    "Double Corona": {
+      "syn": [
+        "double corona",
+        "prominente",
+        "double coronas"
+      ],
+      "ring": [
+        48,
+        52
+      ],
+      "lenMM": [
+        190,
+        215
+      ]
+    },
+    "Presidente": {
+      "syn": [
+        "presidente",
+        "president"
+      ],
+      "ring": [
+        50,
+        60
+      ],
+      "lenMM": [
+        195,
+        230
+      ]
+    },
+    "Torpedo": {
+      "syn": [
+        "torpedo",
+        "torpedos"
+      ],
+      "ring": [
+        50,
+        56
+      ],
+      "lenMM": [
+        140,
+        168
+      ]
+    },
+    "Belicoso": {
+      "syn": [
+        "belicoso",
+        "belicosos"
+      ],
+      "ring": [
+        50,
+        54
+      ],
+      "lenMM": [
+        127,
+        152
+      ]
+    },
+    "Piramide": {
+      "syn": [
+        "piramide",
+        "pyramid",
+        "piramides",
+        "pyramide"
+      ],
+      "ring": [
+        50,
+        56
+      ],
+      "lenMM": [
+        152,
+        165
+      ]
+    },
+    "Perfecto": {
+      "syn": [
+        "perfecto",
+        "perfectos"
+      ],
+      "ring": [
+        40,
+        60
+      ],
+      "lenMM": [
+        110,
+        178
+      ]
+    },
+    "Figurado": {
+      "syn": [
+        "figurado",
+        "figurados",
+        "salomon",
+        "salomones",
+        "diadema"
+      ],
+      "ring": [
+        48,
+        60
+      ],
+      "lenMM": [
+        140,
+        215
+      ]
+    },
+    "Petit Panetela": {
+      "syn": [
+        "petit panetela",
+        "petit panatela"
+      ],
+      "ring": [
+        32,
+        38
+      ],
+      "lenMM": [
+        100,
+        130
+      ]
+    },
+    "Epicure": {
+      "syn": [
+        "epicure",
+        "epicures"
+      ],
+      "ring": [
+        50,
+        54
+      ],
+      "lenMM": [
+        140,
+        155
+      ]
+    }
+  },
+  "slugs": {
+    "aganorsa-leaf-la-validacion-connecticut-gran-robusto-5-x-54": "Connecticut Gran Robusto",
+    "aganorsa-leaf-la-validacion-corojo-gran-robusto-5-x-54": "Corojo Gran Robusto",
+    "aganorsa-leaf-la-validacion-habano-gran-robusto-5-x-54": "Habano Gran Robusto",
+    "aganorsa-leaf-la-validacion-maduro-gran-robusto-5-x-54": "Maduro Gran Robusto",
+    "arturo-fuente-cuban-corona-25": "Cuban Corona",
+    "eiroa-20-years-colorado-robusto-prensado-5-x-50": "20 Years Colorado Robusto Prensado",
+    "eiroa-20-years-colorado-toro-6-x-54": "20 Years Colorado Toro",
+    "eiroa-20-years-robusto-prensado-5-x-50": "20 Years Maduro Robusto Prensado",
+    "eiroa-20-years-toro-prensado-6-x-54": "20 Years Maduro Toro Prensado",
+    "eiroa-cbt-robusto-5-x-50": "CBT Robusto",
+    "eiroa-cbt-toro-6-x-54": "CBT Toro",
+    "eiroa-classic-10-x-50": "Classic",
+    "eiroa-classic-corona-prensado-4-x-48": "Corona Prensado",
+    "eiroa-limitada-2025": "Limitada 2025 Toro",
+    "el-pulpo-gordita-4-x-48": "Gordita",
+    "el-pulpo-lancero-7-x-38": "Lancero",
+    "el-pulpo-toro-grande-6-x-56": "Toro Grande",
+    "eladio-diaz-71st-aniversario-toro-6-x-54": "71st Aniversario Toro",
+    "eladio-diaz-72nd-aniversario-churchill-6-½-x-52": "72nd Aniversario Churchill",
+    "eladio-diaz-before-and-after-legado-5-¾-x-54": "Before and After Legado",
+    "eladio-diaz-before-and-after-mi-familia-robusto-5-x-50": "Before and After Mi Familia Robusto",
+    "eladio-diaz-before-and-after-pasion-toro-6-x-52": "Before and After Pasion Toro",
+    "eladio-diaz-la-diana-robusto-5-x-52": "La Diana Robusto",
+    "la-aurora-107-zeppelin-4-x-64": "107 Zeppelin",
+    "la-galera-85th-anniversary-toro": "Anniversary Toro",
+    "la-galera-habano-bonchero-no-4-5-5-x-42": "Bonchero No.4",
+    "la-galera-habano-cabeza-caracol-7-x-47": "Cabeza Caracol Churchill",
+    "la-galera-habano-half-corona-3-½-x-46": "Half Corona",
+    "la-galera-habano-lancero-7-25-x-38": "Lancero",
+    "montecristo-no-2-6-1-8-x-52": "No.2 (pirámide)",
+    "perdomo-20th-anniversary-sungrown-gordo-6-x-60": "Sungrown Gordo",
+    "perdomo-20th-anniversary-sungrown-robusto-5-x-56": "Sungrown Robusto",
+    "romeo-y-julieta-no-2-tubos-5-x-42": "No.2 Tubos",
+    "viva-la-vida-5th-anniversario-club-500-5¼-x-58": "5th Anniversario Club 500",
+    "viva-la-vida-5th-anniversario-jester-5-1-2-x-56": "5th Anniversario Jester",
+    "viva-la-vida-club-500-6-x-60": "Club 500"
+  },
+  "_doc_slugs": "Stream B: URL slug -> preferred display name when locale/twins oscillate. Does not replace vitolas synonym table."
 }

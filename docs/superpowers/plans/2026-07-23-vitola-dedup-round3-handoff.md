@@ -215,7 +215,26 @@ Serie-letter scrub done. Still **~4932** vitolas without a real product URL and 
 
 ### Core apply note (2026-07-23)
 
-After C + J (incl. deferred): **2758 cigars / 5537 vitolas**. Audit: `line_merges` 277, `keep_distinct` 173, `duplicate_line_suspects` ~84 residual, `prefix_suspects` 44, `shared_region_urls` 0. Deferred list cleared (0). Next optional: Stream D dims, residual J suspects, rename polish (e.g. Rocky `Sixty Toro 6 ½ x 52` → `Toro`).
+After C + J (incl. deferred): **2758 cigars / 5537 vitolas**. Audit: `line_merges` 277, `keep_distinct` 173, `duplicate_line_suspects` ~84 residual, `prefix_suspects` 44, `shared_region_urls` 0. Deferred list cleared (0).
+
+### Stream D note (2026-07-23)
+
+- Fetcher: `app/scripts/fetch-dimension-fixes.py` (Havana via WC Store API `?slug=`).
+- `dimension_fixes.json`: **239** fixes. After re-normalize: **28** dash left (17 with URL unverified). Do not invent.
+
+### Residual J + tiny leftovers (2026-07-23)
+
+- Re-applied residual 84 + prefix leftovers + La Galera 85th absorb (note `residual-J reapply` in decisions `_meta`).
+- Rocky Patel Sixty: three distinct sizes kept (`Sixty Robusto` / `Sixty Toro 6 ½ x 52` / `Sixty`).
+- Corpus: **2729 / 5528**. Audit: `line_merges` 280, `keep_distinct` 239, `duplicate_line_suspects` **0**, alive unhandled prefix **0**. `--check` clean.
+
+### Stream B note (2026-07-23)
+
+- `vitola_lexicon.json` → `slugs` (**36**); existing `vitolas` table untouched.
+
+### H / I residual
+
+- H: `shared_region_urls` **0**; exact Holts per-size still **0** — no invent. I: mass URL fill out of scope.
 
 ## Out of scope for this handoff
 

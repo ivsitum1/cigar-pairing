@@ -30,7 +30,7 @@ describe("cigars.json integrity", () => {
   });
 
   it("Oliva Serie V / Melanio — Melanio vitole, ne Double Robusto", () => {
-    const melanio = CIGARS.find((c) => c.id === "cig-oliva-serie-v");
+    const melanio = CIGARS.find((c) => c.id === "cig-oliva-serie-v-melanio");
     expect(melanio).toBeDefined();
     expect(melanio!.line).toBe("Serie V / Melanio");
     const names = (melanio!.vitolas ?? []).map((v) => v.name);
@@ -158,7 +158,7 @@ describe("cigars.json integrity", () => {
   });
 
   it("Serie V / Melanio priceUrl nije Serie O", () => {
-    for (const id of ["cig-oliva-oliva-serie-v", "cig-oliva-serie-v"] as const) {
+    for (const id of ["cig-oliva-serie-v", "cig-oliva-serie-v-melanio"] as const) {
       const c = CIGARS.find((x) => x.id === id);
       expect(c).toBeDefined();
       expect((c!.priceUrl ?? "").toLowerCase()).not.toContain("serie-o");
@@ -168,7 +168,7 @@ describe("cigars.json integrity", () => {
   });
 
   it("Serie V Melanio ima CigarWorld Robusto/Churchill i Holts line listing", () => {
-    const m = CIGARS.find((c) => c.id === "cig-oliva-serie-v");
+    const m = CIGARS.find((c) => c.id === "cig-oliva-serie-v-melanio");
     expect(m).toBeDefined();
     expect(m!.line).toContain("Melanio");
     const robusto = m!.vitolas?.find((v) => /robusto/i.test(v.name));
@@ -305,25 +305,25 @@ describe("cigars.json integrity", () => {
     expect(CIGARS.find((c) => c.id === "cig-padron-padron-extra")).toBeUndefined();
     expect(CIGARS.find((c) => c.id === "cig-drew-estate-de-extra")).toBeUndefined();
 
-    const s1926 = CIGARS.find((c) => c.id === "cig-padron-1926");
+    const s1926 = CIGARS.find((c) => c.id === "cig-padron-1926-serie");
     expect(s1926).toBeDefined();
     const n1926 = (s1926!.vitolas ?? []).map((v) => v.name.toLowerCase());
     expect(n1926.some((n) => n.includes("no. 6") || n.includes("no.6"))).toBe(true);
 
-    const family = CIGARS.find((c) => c.id === "cig-padron-padron-family-reserve");
+    const family = CIGARS.find((c) => c.id === "cig-padron-family-reserve");
     expect((family!.vitolas ?? []).map((v) => v.name).join(" ")).toMatch(/45|44/);
 
-    const liga = CIGARS.find((c) => c.id === "cig-drew-estate-de-liga-privada");
+    const liga = CIGARS.find((c) => c.id === "cig-drew-estate-liga-privada-unico-serie");
     expect(liga).toBeDefined();
     const ligaNames = (liga!.vitolas ?? []).map((v) => v.name.toLowerCase()).join(" ");
-    expect(ligaNames).toMatch(/papas|fritas|seleccion|no\.9|no\. 9/);
+    expect(ligaNames).toMatch(/papas|fritas|seleccion/);
     expect(
       (liga!.vitolas ?? []).some(
-        (v) => v.url?.includes("liga-privada-10-seleccion") || v.url?.includes("liga-privada-no-9"),
+        (v) => v.url?.includes("liga-privada-10-seleccion"),
       ),
     ).toBe(true);
 
-    const liga9 = CIGARS.find((c) => c.id === "cig-liga-privada-no9");
+    const liga9 = CIGARS.find((c) => c.id === "cig-drew-estate-liga-privada-no-9");
     expect(liga9!.priceEUR).toBe(23);
     expect(liga9!.priceUrl).toContain("liga-privada-no-9-toro");
   });
@@ -364,7 +364,7 @@ describe("cigars.json integrity", () => {
     expect(CIGARS.some((c) => c.brand === "Tatuaje" && /fausto/i.test(c.line))).toBe(true);
 
     // Stream J absorbed the dim-suffixed SKU into the Sixty line.
-    const sixty = CIGARS.find((c) => c.id === "cig-rocky-patel-rp-sixty");
+    const sixty = CIGARS.find((c) => c.id === "cig-rocky-patel-sixty");
     expect(sixty).toBeDefined();
     const sixtyToro = (sixty!.vitolas ?? []).find(
       (v) => /sixty\s*toro/i.test(v.name) && (v.priceEUR ?? 0) === 26,
@@ -421,11 +421,11 @@ describe("cigars.json integrity", () => {
     expect(CIGARS.some((c) => c.brand === "La Aurora" && /preferidos/i.test(c.line))).toBe(true);
     expect(CIGARS.some((c) => c.brand === "Oliva" && /serie g/i.test(c.line))).toBe(true);
 
-    const magnum = CIGARS.find((c) => c.id === "cig-hupmann-magnum");
+    const magnum = CIGARS.find((c) => c.id === "cig-h-upmann-magnum");
     expect(magnum).toBeDefined();
     expect((magnum!.vitolas ?? []).some((v) => /magnum 54/i.test(v.name))).toBe(true);
 
-    const classic = CIGARS.find((c) => c.id === "cig-romeo-y-julieta-ryj-classic");
+    const classic = CIGARS.find((c) => c.id === "cig-romeo-y-julieta-classic");
     expect(classic).toBeDefined();
     expect((classic!.vitolas ?? []).some((v) => /puritos/i.test(v.name))).toBe(true);
   });
