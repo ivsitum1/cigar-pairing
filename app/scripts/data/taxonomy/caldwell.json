@@ -1,12 +1,112 @@
 {
   "brand": "Caldwell",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-23",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "https://caldwellcigarco.com/",
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w1_slice4 deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.1"
   ],
-  "lines": {},
+  "lines": {
+    "Blind Man's Bluff": {
+      "line": "Blind Man's Bluff"
+    },
+    "Blind Man's Bluff Connecticut": {
+      "line": "Blind Man's Bluff Connecticut"
+    },
+    "Blind Man's Bluff Maduro": {
+      "line": "Blind Man's Bluff Maduro"
+    },
+    "Eastern Standard Corretto": {
+      "line": "Eastern Standard",
+      "vitola": "Corretto"
+    },
+    "Eastern Standard Cypress Room": {
+      "line": "Eastern Standard",
+      "vitola": "Cypress Room"
+    },
+    "Eastern Standard Dos Firmas": {
+      "line": "Eastern Standard",
+      "vitola": "Dos Firmas"
+    },
+    "Eastern Standard Manzanita": {
+      "line": "Eastern Standard",
+      "vitola": "Manzanita"
+    },
+    "Eastern Standard Midnight Express Jockey Club": {
+      "line": "Eastern Standard Midnight Express",
+      "vitola": "Jockey Club"
+    },
+    "Eastern Standard Midnight Express Palais Royale": {
+      "line": "Eastern Standard Midnight Express",
+      "vitola": "Palais Royale"
+    },
+    "Eastern Standard Sungrown": {
+      "line": "Eastern Standard",
+      "vitola": "Sungrown"
+    },
+    "King is Dead Last Payday": {
+      "line": "The King Is Dead",
+      "vitola": "Last Payday"
+    },
+    "King is Dead Manzanita": {
+      "line": "The King Is Dead",
+      "vitola": "Manzanita"
+    },
+    "King is Dead Premier": {
+      "line": "The King Is Dead",
+      "vitola": "Premier"
+    },
+    "Long Live King Mad Mofo MAD MOFO Maduro": {
+      "line": "Long Live The King",
+      "vitola": "Mad Mofo Maduro"
+    },
+    "Long Live King Mad Mofo MAD MOFO Super Maduro": {
+      "line": "Long Live The King",
+      "vitola": "Mad Mofo Super Maduro"
+    },
+    "Long Live King Mad Mofo Maduro": {
+      "line": "Long Live The King",
+      "vitola": "Mad Mofo Maduro"
+    },
+    "Long Live King Manzanita": {
+      "line": "Long Live The King",
+      "vitola": "Manzanita"
+    },
+    "Long Live King My Style is Jalapeno": {
+      "line": "Long Live The King",
+      "vitola": "My Style is Jalapeno"
+    },
+    "Long Live King Petite Double Wide Short": {
+      "line": "Long Live The King",
+      "vitola": "Petite Double Wide Short"
+    },
+    "Long live Queen Maduro Queens's Chalice": {
+      "line": "Long Live The Queen Maduro",
+      "vitola": "Queen's Chalice"
+    },
+    "Long live Queen Maduro Queens's Coronet": {
+      "line": "Long Live The Queen Maduro",
+      "vitola": "Queen's Coronet"
+    },
+    "Long live Queen Queens's Club": {
+      "line": "Long Live The Queen",
+      "vitola": "Queen's Club"
+    },
+    "Long live Queen Queens's Courd": {
+      "line": "Long Live The Queen",
+      "vitola": "Queen's Courd"
+    },
+    "Long live Queen Queens's Sword": {
+      "line": "Long Live The Queen",
+      "vitola": "Queen's Sword"
+    },
+    "Reserva Sevillana": {
+      "line": "Reserva Sevillana"
+    }
+  },
   "vitolaRenames": {},
   "shapes": {},
   "keepSeparate": [
@@ -17,8 +117,14 @@
     [
       "Blind Man's Bluff",
       "Blind Man's Bluff Maduro"
+    ],
+    [
+      "Long Live The Queen",
+      "Long Live The Queen Maduro"
     ]
   ],
   "lineNotes": {},
-  "unresolved": []
+  "unresolved": [
+    "Caldwell: Blind Man's Bluff wrapper variants kept separate"
+  ]
 }
