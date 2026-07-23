@@ -4,6 +4,7 @@
 import type { Cigar, Drink, PairingReason, PairingResult } from "../types";
 import { COMPLEMENTS, POWER_TAGS, WEIGHTS, WRAPPER_AFFINITY, normalizeTags } from "./rules";
 import { personalBrandReason, personalStyleReason, type PersonalPrefs } from "./personal";
+import { applyGeometry } from "./vitolaGeometry";
 
 const clamp = (v: number, lo: number, hi: number) =>
   Math.max(lo, Math.min(hi, v));
@@ -19,28 +20,37 @@ export function scorePairing(
   const reasons: PairingReason[] = [];
   let score = WEIGHTS.base;
 
+  const {
+    cigar: effCigar,
+    wrapperForwardBonus,
+    reason: geoReason,
+  } = applyGeometry(cigar);
+
   // sinonimi iz scrape podataka (npr. "začini", "cokolada", "mizunara")
   // svode se na kanonske tagove da bi pravila 2, 2b i 5 vidjela sve note
-  const cigarTags = normalizeTags(cigar.flavorTags);
+  const cigarTags = normalizeTags(effCigar.flavorTags);
   const drinkTags = normalizeTags(drink.flavorTags);
 
-  // 1) Body match — zlatno pravilo
-  const bodyDiff = Math.abs(cigar.body - drink.body);
-  if (bodyDiff === 0) {
+  // 1) Body match — zlatno pravilo (effCigar: geometrija vitole).
+  // Match unutar <0.5 koraka: bodyDelta geometrije (±0.1–0.2) ne smije skinuti
+  // puni bonus — inače geometrija preokreće dominantno pravilo.
+  const bodyDiff = Math.abs(effCigar.body - drink.body);
+  const bodyLabelIdx = Math.round(effCigar.body);
+  if (bodyDiff < 0.5) {
     score += WEIGHTS.bodyBonus;
     reasons.push({
       rule: "body-match",
       score: WEIGHTS.bodyBonus,
       text: {
-        hr: `Tijela se poklapaju (${BODY_LABEL_HR[cigar.body]}) — nijedno ne nadjačava drugo.`,
-        en: `Bodies match (${BODY_LABEL_EN[cigar.body]}) — neither overpowers the other.`,
+        hr: `Tijela se poklapaju (${BODY_LABEL_HR[bodyLabelIdx]}) — nijedno ne nadjačava drugo.`,
+        en: `Bodies match (${BODY_LABEL_EN[bodyLabelIdx]}) — neither overpowers the other.`,
       },
     });
   } else {
     const penalty = bodyDiff * WEIGHTS.bodyPerStep;
     score -= penalty;
     if (bodyDiff >= 2) {
-      const cigarHeavier = cigar.body > drink.body;
+      const cigarHeavier = effCigar.body > drink.body;
       reasons.push({
         rule: "body-mismatch",
         score: -penalty,
@@ -57,7 +67,7 @@ export function scorePairing(
   }
 
   // 1b) Jaka cigara + lagano pice = pregazeno
-  if (cigar.strength >= 4 && drink.body <= 2) {
+  if (effCigar.strength >= 4 && drink.body <= 2) {
     score -= WEIGHTS.overwhelmPenalty;
     reasons.push({
       rule: "strength-overwhelm",
@@ -106,7 +116,7 @@ export function scorePairing(
     });
   }
 
-  // 3) Kontrast: slatko pice + puna maduro cigara
+  // 3) Kontrast: slatko pice + puna maduro cigara (bazni body, ne eff — geometrija ne dira ovo pravilo)
   const isDarkWrapper = /maduro|oscuro|san andr|broadleaf/i.test(cigar.wrapper);
   if (drink.sweetness >= 4 && cigar.body >= 4 && isDarkWrapper) {
     score += WEIGHTS.contrastSweetMaduro;
@@ -120,16 +130,17 @@ export function scorePairing(
     });
   }
 
-  // 4) Wrapper afinitet
+  // 4) Wrapper afinitet — tanka vitola pojačava wrapper-forward bonus
   for (const wa of WRAPPER_AFFINITY) {
-    if (!wa.wrapper.test(cigar.wrapper)) continue;
+    if (!wa.wrapper.test(effCigar.wrapper)) continue;
     const styleHit = wa.styles.includes(drink.style);
     const tagHit = drinkTags.some((t) => wa.tags.includes(t));
     if (styleHit || tagHit) {
-      score += WEIGHTS.wrapperMatch;
+      const pts = WEIGHTS.wrapperMatch + wrapperForwardBonus;
+      score += pts;
       reasons.push({
         rule: "wrapper-affinity",
-        score: WEIGHTS.wrapperMatch,
+        score: pts,
         text: { hr: `${wa.labelHr}.`, en: `${wa.labelEn}.` },
       });
     }
@@ -140,7 +151,7 @@ export function scorePairing(
   const powerDrink = drinkTags.some((t) =>
     (POWER_TAGS as readonly string[]).includes(t),
   );
-  if (powerDrink && cigar.strength >= 4) {
+  if (powerDrink && effCigar.strength >= 4) {
     score += WEIGHTS.strengthPowerMatch;
     reasons.push({
       rule: "power-match",
@@ -150,7 +161,7 @@ export function scorePairing(
         en: "A powerful drink (esters/smoke/overproof) demands and handles a strong cigar.",
       },
     });
-  } else if (powerDrink && cigar.strength <= 2) {
+  } else if (powerDrink && effCigar.strength <= 2) {
     score -= WEIGHTS.strengthPowerMismatch;
     reasons.push({
       rule: "power-mismatch",
@@ -179,6 +190,8 @@ export function scorePairing(
       }
     }
   }
+
+  if (geoReason) reasons.push(geoReason);
 
   return { score: clamp(Math.round(score), 0, 100), reasons };
 }
