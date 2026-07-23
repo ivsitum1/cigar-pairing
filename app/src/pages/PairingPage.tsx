@@ -10,6 +10,7 @@ import { getItemState, useCollection } from "../store/collection";
 import { DetailSheet } from "../components/DetailSheet";
 import { EveningSessionSheet } from "../components/EveningSessionSheet";
 import { ServeChips } from "../components/ServeChips";
+import { buildShareCardModel, sharePairing } from "../lib/shareCard";
 import { OcrScan } from "../components/OcrScan";
 import { VitolaPicker } from "../components/VitolaPicker";
 import { applyVitola, needsVitolaPick, uniqueVitolas } from "../lib/cigarVitola";
@@ -602,6 +603,7 @@ export function PairingPage() {
                     price={priceStr}
                     priceUrl={cigarLinkForMarket(r.item, market)}
                     vitolas={r.item.vitolas}
+                    serve={serve}
                     onOpen={() => setDetail({ kind: "cigar", item: r.item })}
                   />
                 );
@@ -671,6 +673,7 @@ function ResultCard({
   price,
   priceUrl,
   vitolas,
+  serve,
   onOpen,
 }: {
   result: PairingResult<Cigar> | PairingResult<Drink>;
@@ -681,12 +684,25 @@ function ResultCard({
   price: string;
   priceUrl?: string | null;
   vitolas?: import("../types").Vitola[];
+  serve?: ServeStyle;
   onOpen: () => void;
 }) {
-  const { t, lx } = useI18n();
+  const { t, lx, lang } = useI18n();
   const [open, setOpen] = useState(false);
+  const [shareMsg, setShareMsg] = useState<string | null>(null);
   const positive = result.reasons.filter((r) => r.score > 0);
   const negative = result.reasons.filter((r) => r.score < 0);
+
+  const onShare = async () => {
+    const model = buildShareCardModel(cigar, drink, serve, result.score, result.reasons, lang);
+    try {
+      const how = await sharePairing(model);
+      setShareMsg(t(how === "shared" ? "share.shared" : "share.downloaded"));
+    } catch {
+      setShareMsg(t("share.failed"));
+    }
+    setTimeout(() => setShareMsg(null), 2500);
+  };
   const pairingOpinion = curatedPairingOpinion(
     cigar,
     drink,
@@ -723,6 +739,14 @@ function ResultCard({
           </div>
         </div>
         <button
+          onClick={onShare}
+          className="shrink-0 rounded-md border border-dim/25 px-2 py-1 text-xs text-dim hover:border-zlato/50"
+          aria-label={t("share.pairing")}
+          title={t("share.pairing")}
+        >
+          ⤴
+        </button>
+        <button
           onClick={() => setOpen(!open)}
           className="shrink-0 rounded-md border border-dim/25 px-2 py-1 text-xs text-dim hover:border-zlato/50"
           aria-expanded={open}
@@ -731,6 +755,9 @@ function ResultCard({
           {open ? "▴" : "▾"}
         </button>
       </div>
+      {shareMsg && (
+        <p className="mt-2 text-center text-micro text-zlato-2">{shareMsg}</p>
+      )}
       {vitolas && vitolas.length > 0 && (
         <div className="no-scrollbar mt-2 flex gap-1.5 overflow-x-auto">
           {vitolas.map((v) => (
