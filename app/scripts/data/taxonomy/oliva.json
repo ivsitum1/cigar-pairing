@@ -1,84 +1,97 @@
 {
   "brand": "Oliva",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-23",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "https://olivacigar.com/",
+    "https://olivacigar.com/",
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w1_slice1 deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.1"
   ],
-  "lines": {},
+  "lines": {
+    "Connecticut Reserve": {
+      "line": "Connecticut Reserve"
+    },
+    "Edicion Ano 2024": {
+      "line": "Edicion Ano 2024"
+    },
+    "Extra Edicion Ano 2025": {
+      "line": "Extra Edicion Ano 2025"
+    },
+    "Flor de": {
+      "line": "Flor de"
+    },
+    "Flor de Connecticut": {
+      "line": "Flor de Connecticut"
+    },
+    "Flor de Corojo": {
+      "line": "Flor de Corojo"
+    },
+    "Flor de Gold": {
+      "line": "Flor de Gold"
+    },
+    "Flor de Maduro": {
+      "line": "Flor de Maduro"
+    },
+    "Flor de Original": {
+      "line": "Flor de Original"
+    },
+    "Gilberto Reserva": {
+      "line": "Gilberto Reserva"
+    },
+    "Gilberto Reserva Blanc": {
+      "line": "Gilberto Reserva Blanc"
+    },
+    "Mareva": {
+      "line": "Mareva"
+    },
+    "Master Blends 3": {
+      "line": "Master Blends 3"
+    },
+    "Monticello": {
+      "line": "Monticello"
+    },
+    "Robusto Sampler": {
+      "line": "Robusto Sampler",
+      "sampler": true
+    },
+    "Serie G": {
+      "line": "Serie G"
+    },
+    "Serie O": {
+      "line": "Serie O"
+    },
+    "Serie V": {
+      "line": "Serie V"
+    },
+    "Serie V / Melanio": {
+      "line": "Serie V / Melanio"
+    },
+    "Year of Snake 2025": {
+      "line": "Year of Snake 2025"
+    }
+  },
   "vitolaRenames": {},
   "shapes": {},
   "keepSeparate": [
     [
-      "Serie V",
-      "Serie V / Melanio"
-    ],
-    [
-      "Flor de",
-      "Flor de Connecticut"
-    ],
-    [
-      "Flor de",
-      "Flor de Corojo"
-    ],
-    [
-      "Flor de",
-      "Flor de Gold"
-    ],
-    [
-      "Flor de",
-      "Flor de Maduro"
-    ],
-    [
-      "Flor de",
-      "Flor de Original"
-    ],
-    [
       "Flor de Connecticut",
       "Flor de Corojo"
-    ],
-    [
-      "Flor de Connecticut",
-      "Flor de Gold"
-    ],
-    [
-      "Flor de Connecticut",
-      "Flor de Maduro"
-    ],
-    [
-      "Flor de Connecticut",
-      "Flor de Original"
-    ],
-    [
-      "Flor de Corojo",
-      "Flor de Gold"
-    ],
-    [
-      "Flor de Corojo",
-      "Flor de Maduro"
-    ],
-    [
-      "Flor de Corojo",
-      "Flor de Original"
     ],
     [
       "Flor de Gold",
       "Flor de Maduro"
     ],
     [
-      "Flor de Gold",
-      "Flor de Original"
-    ],
-    [
-      "Flor de Maduro",
-      "Flor de Original"
-    ],
-    [
-      "Gilberto Reserva",
-      "Gilberto Reserva Blanc"
+      "Flor de Original",
+      "Flor de"
     ]
   ],
   "lineNotes": {},
-  "unresolved": []
+  "unresolved": [
+    "Oliva: 'NUB Connecticut 464T' looks like Nub brand leakage — left unchanged",
+    "Oliva: 'NUB Sun Grown 464T' looks like Nub brand leakage — left unchanged"
+  ]
 }

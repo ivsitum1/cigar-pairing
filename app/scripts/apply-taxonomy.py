@@ -563,6 +563,30 @@ def apply_taxonomy(cigars: list, tax_files: list[dict], report: dict) -> list:
             report.setdefault("alias_conflicts", []).append(
                 {"from": frm, "existing": aliases[frm], "new": to}
             )
+
+    # Retarget aliases whose destination was an intermediate id that later merged away.
+    retargeted = []
+    for frm, to in list(aliases.items()):
+        if to in live_ids:
+            continue
+        cands = sorted(
+            (lid for lid in live_ids if to == lid or to.startswith(f"{lid}-")),
+            key=len,
+            reverse=True,
+        )
+        if not cands and to.endswith("-limited-edition-quinquagenario"):
+            # brand rename shortened the line slug
+            alt = "cig-roma-craft-tobac-quinquagenario"
+            if alt in live_ids:
+                cands = [alt]
+        if cands:
+            aliases[frm] = cands[0]
+            retargeted.append({"from": frm, "was": to, "to": cands[0]})
+        else:
+            report.setdefault("aliases_broken", []).append({"from": frm, "to": to})
+    if retargeted:
+        report["aliases_retargeted"] = retargeted
+
     write_json(ALIASES_PATH, {"aliases": aliases})
 
     return merged

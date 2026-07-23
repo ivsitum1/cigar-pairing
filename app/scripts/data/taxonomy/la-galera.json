@@ -1,15 +1,212 @@
 {
   "brand": "La Galera",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-23",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "https://lagaleracigars.com/",
+    "https://lagaleracigars.com/",
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w1_slice1 deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.1"
   ],
-  "lines": {},
+  "lines": {
+    "1936 Box Pressed": {
+      "line": "1936 Box Pressed"
+    },
+    "1936 Chaveta": {
+      "line": "1936",
+      "vitola": "Chaveta",
+      "shape": "Robusto"
+    },
+    "1936 Cortador": {
+      "line": "1936",
+      "vitola": "Cortador",
+      "shape": "Torpedo"
+    },
+    "1936 El Lector": {
+      "line": "1936",
+      "vitola": "El Lector",
+      "shape": "Toro"
+    },
+    "1936 Pegador": {
+      "line": "1936",
+      "vitola": "Pegador",
+      "shape": "Corona"
+    },
+    "1936 Pilon": {
+      "line": "1936",
+      "vitola": "Pilón",
+      "shape": "Gordo"
+    },
+    "85th Anniversary / Habano": {
+      "line": "85th Anniversary"
+    },
+    "Anemoi": {
+      "line": "Anemoi"
+    },
+    "Anemoi Anemoi": {
+      "line": "Anemoi"
+    },
+    "Anemoi Boreas": {
+      "line": "Anemoi",
+      "vitola": "Boreas",
+      "shape": "Corona"
+    },
+    "Anemoi Eurus": {
+      "line": "Anemoi",
+      "vitola": "Eurus",
+      "shape": "Robusto"
+    },
+    "Anemoi Zephyrus": {
+      "line": "Anemoi",
+      "vitola": "Zephyrus",
+      "shape": "Toro"
+    },
+    "Connecticut": {
+      "line": "Connecticut"
+    },
+    "Corojo Bonchero No. 4": {
+      "line": "Corojo",
+      "vitola": "Bonchero No. 4",
+      "shape": "Corona"
+    },
+    "Corojo Cabeza de Caracol": {
+      "line": "Corojo",
+      "vitola": "Cabeza de Caracol",
+      "shape": "Churchill"
+    },
+    "Corojo Chaveta": {
+      "line": "Corojo",
+      "vitola": "Chaveta",
+      "shape": "Robusto"
+    },
+    "Corojo El Lector": {
+      "line": "Corojo",
+      "vitola": "El Lector",
+      "shape": "Toro"
+    },
+    "Corojo Half": {
+      "line": "Corojo",
+      "vitola": "Half Corona",
+      "shape": "Petit Corona"
+    },
+    "Corojo Perillas": {
+      "line": "Corojo",
+      "vitola": "Perillas",
+      "shape": "Lancero"
+    },
+    "Corojo Pilon": {
+      "line": "Corojo",
+      "vitola": "Pilon",
+      "shape": "Gordo"
+    },
+    "Fresh Pack Connecticut Chaveta": {
+      "line": "Fresh Pack Connecticut Chaveta"
+    },
+    "Habano": {
+      "line": "Habano"
+    },
+    "Habano Bonchero No.4 –": {
+      "line": "Habano",
+      "vitola": "Bonchero No.4"
+    },
+    "Habano Cabeza Caracol": {
+      "line": "Habano",
+      "vitola": "Cabeza Caracol",
+      "shape": "Churchill"
+    },
+    "Habano Lancero": {
+      "line": "Habano",
+      "vitola": "Lancero",
+      "shape": "Lancero"
+    },
+    "Habano Robusto Chaveta": {
+      "line": "Habano",
+      "vitola": "Chaveta",
+      "shape": "Robusto"
+    },
+    "Imperial Jade": {
+      "line": "Imperial Jade"
+    },
+    "Imperial Jade Chiquito": {
+      "line": "Imperial Jade",
+      "vitola": "Chiquito",
+      "shape": "Perfecto"
+    },
+    "Imperial Jade Perfecto": {
+      "line": "Imperial Jade",
+      "vitola": "Perfecto",
+      "shape": "Jade Perfecto"
+    },
+    "Imperial Jade Piramide": {
+      "line": "Imperial Jade",
+      "vitola": "Pirámide",
+      "shape": "Jade Piramide"
+    },
+    "La Instructora Perfeccion": {
+      "line": "La Instructora",
+      "vitola": "Perfección"
+    },
+    "Limited Edition 2022 Maduro Gavillero": {
+      "line": "Limited Edition 2022 Maduro Gavillero"
+    },
+    "Limited Edition Year of Snake": {
+      "line": "Limited Edition Year of Snake"
+    },
+    "Maduro": {
+      "line": "Maduro"
+    },
+    "Maduro Chaveta": {
+      "line": "Maduro",
+      "vitola": "Chaveta",
+      "shape": "Robusto"
+    },
+    "Maduro El Lector": {
+      "line": "Maduro",
+      "vitola": "El Lector",
+      "shape": "Toro"
+    },
+    "Maduro No.1": {
+      "line": "Maduro",
+      "vitola": "No.1",
+      "shape": "Short Robusto"
+    },
+    "Maduro Pilon": {
+      "line": "Maduro",
+      "vitola": "Pilon",
+      "shape": "Gordo"
+    },
+    "Maduro Vitola No. 1": {
+      "line": "Maduro",
+      "vitola": "Vitola No. 1",
+      "shape": "Short Robusto"
+    },
+    "Robusto Sampler": {
+      "line": "Robusto Sampler",
+      "sampler": true
+    },
+    "Rojo Gift Pack": {
+      "line": "Rojo Gift Pack",
+      "sampler": true
+    },
+    "Toro Sampler": {
+      "line": "Toro Sampler",
+      "sampler": true
+    }
+  },
   "vitolaRenames": {},
   "shapes": {},
-  "keepSeparate": [],
+  "keepSeparate": [
+    [
+      "1936",
+      "1936 Box Pressed"
+    ],
+    [
+      "Imperial Jade",
+      "Imperial Jade Reserva"
+    ]
+  ],
   "lineNotes": {},
   "unresolved": []
 }
