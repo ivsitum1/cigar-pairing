@@ -2,6 +2,21 @@ import type { Cigar, Vitola } from "../types";
 
 const norm = (s: string) => s.trim().toLowerCase();
 
+// Locale-normalizirani ključ proizvoda: /en/ i /hr/ stranice iste cigare vode
+// na isti proizvod. Koristi se kao sigurnosna mreža protiv locale-blizanaca
+// (glavni dedup je u scripts/normalize-vitolas.py nad podacima).
+const productKey = (url: string | null | undefined): string | null => {
+  if (!url) return null;
+  let u = url.split("?")[0].split("#")[0];
+  u = u.replace(
+    /(humidor\.hr|havana-cigar-shop\.com)\/(?:hr|en)\/proizvod\//,
+    "$1/proizvod/",
+  );
+  u = u.replace(/cigarworld\.de\/(?:en|de)\//, "cigarworld.de/");
+  u = u.replace(/\/+$/, "");
+  return u.includes("/proizvod/") ? u : null;
+};
+
 const isProductUrl = (url: string | null | undefined): url is string =>
   Boolean(url && !url.includes("?s="));
 
@@ -14,12 +29,20 @@ const preferHrUrl = (a: Vitola, b: Vitola): Vitola => {
 };
 
 export function uniqueVitolas(cigar: Cigar): Vitola[] {
-  const seen = new Set<string>();
+  const seenNames = new Set<string>();
+  const seenUrls = new Set<string>();
   const out: Vitola[] = [];
   for (const v of cigar.vitolas ?? []) {
     const key = v.name.trim().toLowerCase();
-    if (!key || seen.has(key)) continue;
-    seen.add(key);
+    if (!key || seenNames.has(key)) continue;
+    // sigurnosna mreža: isti proizvod (locale-blizanac) pod drugim imenom
+    const pk =
+      productKey(v.url) ??
+      productKey(v.regionLinks?.HR?.url) ??
+      null;
+    if (pk && seenUrls.has(pk)) continue;
+    seenNames.add(key);
+    if (pk) seenUrls.add(pk);
     out.push(v);
   }
   return out;
