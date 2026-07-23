@@ -1,0 +1,24 @@
+{
+  "skill_id": "grill-me",
+  "version": "1.0",
+  "cases": [
+    {
+      "id": "case_design_tree",
+      "input": {
+        "text": "Grill me: želim novu auth funkcionalnost, nisam siguran oko API granica."
+      },
+      "assertions": [
+        {
+          "type": "regex_match",
+          "value": "(?i)(design tree|gran|boundary|API|pitanje)",
+          "description": "structured clarification"
+        },
+        {
+          "type": "not_contains",
+          "value": "prd.json",
+          "description": "does not jump straight to PRD file without alignment"
+        }
+      ]
+    }
+  ]
+}

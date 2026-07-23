@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "default_new_server": 3,
+  "tiers": {
+    "1": "metadata_only",
+    "2": "instruction_access",
+    "3": "supervised_execution",
+    "4": "autonomous_execution"
+  },
+  "servers": {
+    "filesystem": { "trust_tier": 4, "note": "project-scoped root" },
+    "git": { "trust_tier": 3, "note": "supervised for push/force" },
+    "pubmed": { "trust_tier": 3, "note": "external NCBI API" },
+    "handoff": { "trust_tier": 4, "note": "local log only" },
+    "memory": { "trust_tier": 4, "note": "local sqlite" },
+    "pdf": { "trust_tier": 3, "note": "reads user PDFs" },
+    "books_rag": { "trust_tier": 4, "note": "local index C:\\books_rag" },
+    "latex": { "trust_tier": 3, "note": "shell compile" },
+    "overleaf": { "trust_tier": 3, "note": "external sync" },
+    "notebooklm": { "trust_tier": 3, "note": "Google OAuth browser" },
+    "consensus": { "trust_tier": 3, "note": "external OAuth API" },
+    "graphify": { "trust_tier": 4, "note": "local graph.json" }
+  }
+}

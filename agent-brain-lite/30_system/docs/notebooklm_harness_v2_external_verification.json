@@ -1,0 +1,62 @@
+{
+  "verified_at": "2026-07-05T08:10:00Z",
+  "notebook_id": "harness-memory-v2",
+  "notebook_uuid": "f9554fae-424f-434a-ab64-bbd873804627",
+  "grill_provenance": "20/20 live Playwright 2026-07-05; arXiv cross-check",
+  "claims": [
+    {
+      "claim": "Self-Harness: Weakness Mining → Harness Proposal → Proposal Validation on Terminal-Bench-2.0",
+      "status": "VERIFIED",
+      "source": "https://arxiv.org/abs/2606.09498",
+      "evidence": "Held-out pass rate MiniMax M2.5 40.5%→61.9%"
+    },
+    {
+      "claim": "HORMA uses at most ~22.17% baseline tokens on long conversation tasks",
+      "status": "VERIFIED",
+      "source": "https://arxiv.org/abs/2606.11680",
+      "evidence": "Paper abstract token efficiency claim"
+    },
+    {
+      "claim": "HIPIF folds completed subgoal histories to reduce long-context interference",
+      "status": "VERIFIED",
+      "source": "https://arxiv.org/abs/2606.10507",
+      "evidence": "Maps to context_sync --fold-lemma / solved_lemmas.jsonl"
+    },
+    {
+      "claim": "Agents-K1 4B model for agent-native scientific knowledge graphs",
+      "status": "VERIFIED",
+      "source": "https://arxiv.org/abs/2606.13669",
+      "evidence": "Scholar-KG pipeline; clinical spike may proceed with privacy review"
+    },
+    {
+      "claim": "17 specialized MCP tools required for multimodal parsing",
+      "status": "REJECT",
+      "source": "Cross-check 2026-07-05",
+      "evidence": "NotebookLM synthesis; use governed MCP set in .cursor/mcp.json (Runlayer), not fixed count of 17"
+    },
+    {
+      "claim": "Ponytail skill yields 22% token reduction",
+      "status": "REJECT",
+      "source": "Cross-check 2026-07-05",
+      "evidence": "Video-only benchmark (Chase AI); no arXiv anchor; do not encode in behavior_rules"
+    },
+    {
+      "claim": "Five-Paper Source Check as mandatory verification protocol",
+      "status": "VERIFIED",
+      "source": "Workspace policy + NotebookLM synthesis",
+      "evidence": "Adopted as procedural gate in SKILL_notebooklm-research-gate; not an external empirical benchmark claim"
+    },
+    {
+      "claim": "Fully autonomous self-harness without human gate",
+      "status": "REJECT",
+      "source": "Workspace policy",
+      "evidence": "Human gate every 3rd iteration; no auto .cursorrules rewrite"
+    },
+    {
+      "claim": "Import hundreds of external skills",
+      "status": "REJECT",
+      "source": "Workspace policy",
+      "evidence": "Curated registry + SkillDAG"
+    }
+  ]
+}

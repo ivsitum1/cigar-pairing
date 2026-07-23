@@ -1,0 +1,24 @@
+{
+  "skill_id": "create-skill",
+  "version": "1.0",
+  "cases": [
+    {
+      "id": "case_gap_skill",
+      "input": {
+        "text": "Kreiraj novi skill za ponavljajući PDF→markdown pipeline u ovom repou."
+      },
+      "assertions": [
+        {
+          "type": "regex_match",
+          "value": "(?i)(SKILL_|registry\\.json|evals/|skill_id|YAML)",
+          "description": "skill authoring artifacts"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(eval|registry|30_system/SKILLS)",
+          "description": "registry or eval seed path"
+        }
+      ]
+    }
+  ]
+}

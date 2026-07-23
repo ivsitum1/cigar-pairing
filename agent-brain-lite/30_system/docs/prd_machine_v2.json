@@ -1,0 +1,26 @@
+{
+  "version": "2.0.0",
+  "parent": "prd_machine_v1.1.json",
+  "problem": "Machine v1.1 lacks batch NotebookLM orchestration, optional pre-submit context compression (Headroom pattern), structured digest proposal tracking for W27 five-repo sprint, and cross-links from OKF/loop notebooks.",
+  "solution": "v2: notebooklm_batch_grill/postprocess, context_compress opt-in hook, digest decision ledger for W27, six spike docs (5 GitHub + Crabbox), US-22..US-29.",
+  "user_stories": [
+    {"id": "US-22", "description": "notebooklm_batch_grill.py orchestrates multi-notebook grill + questions JSON", "priority": "P0", "passes": true},
+    {"id": "US-23", "description": "Digest proposal decisions ingest via machine_digest_decisions JSON + ledger", "priority": "P1", "passes": true},
+    {"id": "US-24", "description": "Headroom-style context_compress module + opt-in hook AGENT_CONTEXT_COMPRESS=1", "priority": "P1", "passes": true},
+    {"id": "US-25", "description": "Agent-Reach research spike doc + MCP governance note", "priority": "P1", "passes": true},
+    {"id": "US-26", "description": "CowAgent memory/self-evolve pattern map vs memory_engine", "priority": "P1", "passes": true},
+    {"id": "US-27", "description": "oh-my-openagent harness patterns vs orchestrator spike", "priority": "P1", "passes": true},
+    {"id": "US-28", "description": "dify workflow comparison doc (docs only)", "priority": "P2", "passes": true},
+    {"id": "US-29", "description": "W27 digest five proposals marked approved in digest_proposal_ledger", "priority": "P1", "passes": true}
+  ],
+  "issues": [
+    {"id": "MV2-1", "title": "notebooklm batch scripts", "priority": "P0", "passes": true},
+    {"id": "MV2-2", "title": "context_compress + hook", "priority": "P1", "passes": true},
+    {"id": "MV2-3", "title": "spike docs x6", "priority": "P1", "passes": true},
+    {"id": "MV2-4", "title": "digest decisions W27", "priority": "P1", "passes": true}
+  ],
+  "verification_protocol": {
+    "tests": ["pytest 40_operations/tests/test_context_compress.py"],
+    "human_gate": "No new MCP install without approval"
+  }
+}

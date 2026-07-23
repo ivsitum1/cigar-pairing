@@ -1,0 +1,1 @@
+C:/Users/Admin/Documents/agent rules/.cursor/hooks/context_compress_lifecycle.py

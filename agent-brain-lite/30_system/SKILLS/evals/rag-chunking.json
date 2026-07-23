@@ -1,0 +1,34 @@
+{
+  "skill_name": "rag-chunking",
+  "evals": [
+    {
+      "id": "chunk_parent_resolves",
+      "prompt": "Split a markdown doc with two sections using chunk_policy. Does every child chunk resolve to a parent?",
+      "expected_output": "All children have parent_id present in the same batch; orphan_chunks returns empty.",
+      "files": ["40_operations/python/brain_assist/chunk_policy.py"],
+      "expectations": [
+        {"text": "mentions parent_id", "passed": null, "evidence": ""},
+        {"text": "orphan_chunks empty on valid split", "passed": null, "evidence": ""}
+      ]
+    },
+    {
+      "id": "chunk_metadata_required",
+      "prompt": "What metadata fields are required on every chunk record?",
+      "expected_output": "doc_title, doc_version, source_type; optional environment defaults to agent-rules.",
+      "files": ["30_system/docs/RAG_CHUNKING_MAP.md"],
+      "expectations": [
+        {"text": "doc_version required", "passed": null, "evidence": ""},
+        {"text": "source_type required", "passed": null, "evidence": ""}
+      ]
+    },
+    {
+      "id": "contextual_framing",
+      "prompt": "How is embed text framed for contextual retrieval?",
+      "expected_output": "doc_title > section_path prepended before chunk body.",
+      "files": ["40_operations/python/brain_assist/chunk_policy.py"],
+      "expectations": [
+        {"text": "framed_embed_text includes section path", "passed": null, "evidence": ""}
+      ]
+    }
+  ]
+}

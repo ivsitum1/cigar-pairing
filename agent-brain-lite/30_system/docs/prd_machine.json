@@ -1,0 +1,169 @@
+{
+  "version": "1.0.0",
+  "problem": "agent-rules has orchestration, memory, and MCP sensors but lacks reliable project-scoped memory isolation, unified perception/digest for brain maintenance, grounded idle creativity (Dreaming), and explicit Machine autonomy boundaries. Cross-project context can leak when .cursor is symlinked from clinical project roots.",
+  "solution": "Implement The Machine architecture: workspace scope resolver, per-project memory DB, conscious cross-project search MCP tool, weekly brain digest (arXiv + GitHub AI + AI news), Dreaming Daemon MVP, autonomy rule, Primary/Secondary routing doc, and expanded soul.md identity.",
+  "user_stories": [
+    {
+      "id": "US-1",
+      "description": "Hooks resolve correct project workspace root when .cursor is symlinked from a clinical project folder.",
+      "priority": "P0",
+      "passes": true
+    },
+    {
+      "id": "US-2",
+      "description": "project_init writes .agent/project_scope.json with stable scope slug for the project folder.",
+      "priority": "P0",
+      "passes": true
+    },
+    {
+      "id": "US-3",
+      "description": "Automatic memory injection never includes observations from a different project_scope.",
+      "priority": "P0",
+      "passes": true
+    },
+    {
+      "id": "US-4",
+      "description": "MCP search_cross_project(query, limit) returns hits across all scopes; hooks never invoke it.",
+      "priority": "P0",
+      "passes": true
+    },
+    {
+      "id": "US-5",
+      "description": "MEMORY.md fallback injection is disabled or scoped; no unfiltered cross-project tail inject.",
+      "priority": "P0",
+      "passes": true
+    },
+    {
+      "id": "US-6",
+      "description": "Weekly arXiv scan mode writes arxiv_scan_YYYY-WW.json in brain repo.",
+      "priority": "P1",
+      "passes": true
+    },
+    {
+      "id": "US-7",
+      "description": "github_ai_watch.py monitors AI/agent repos and writes github_ai_watch_YYYY-WW.json.",
+      "priority": "P1",
+      "passes": true
+    },
+    {
+      "id": "US-8",
+      "description": "ai_news_feed.py aggregates configured RSS feeds into ai_news_YYYY-WW.json.",
+      "priority": "P1",
+      "passes": true
+    },
+    {
+      "id": "US-9",
+      "description": "machine_weekly_digest.py produces machine_digest_YYYY-WW.md with upgrade proposals mapped to changelog.",
+      "priority": "P1",
+      "passes": true
+    },
+    {
+      "id": "US-10",
+      "description": "dreaming_daemon.py builds framework markdown in .agent/dreaming/frameworks/ with source_ref on every premise.",
+      "priority": "P1",
+      "passes": true
+    },
+    {
+      "id": "US-11",
+      "description": "machine-autonomy.mdc codifies allowed/forbidden autonomous actions and changelog duty.",
+      "priority": "P0",
+      "passes": true
+    },
+    {
+      "id": "US-12",
+      "description": "Primary/Secondary relevance routing defined in MACHINE_PRIMARY_SECONDARY.md and wired in orchestrator.",
+      "priority": "P1",
+      "passes": true
+    },
+    {
+      "id": "US-13",
+      "description": "soul.md expanded with Machine identity, honesty protocol, and collaboration defaults.",
+      "priority": "P1",
+      "passes": true
+    }
+  ],
+  "technical_decisions": [
+    {
+      "decision": "One memory.db per resolved WORKSPACE_ROOT; brain repo scope slug agent-rules.",
+      "rationale": "Prevents cross-project bleed while allowing brain-only maintenance memory.",
+      "passes": true
+    },
+    {
+      "decision": "workspace_scope.py shared by hooks, memory_engine/config, handoff_server.",
+      "rationale": "Single source of truth for root and scope resolution.",
+      "passes": true
+    },
+    {
+      "decision": "Weekly digest runs only in agent-rules brain repo via Task Scheduler scripts.",
+      "rationale": "User confirmed brain-only digest location.",
+      "passes": true
+    },
+    {
+      "decision": "Sensors use Python scripts + public APIs/RSS; no new MCP servers in v1.",
+      "rationale": "MCP governance and simpler scheduling.",
+      "passes": true
+    }
+  ],
+  "execution_chain": {
+    "sequence": ["grill-me", "write-prd", "prd-to-issues", "ralph-loop"],
+    "status": "implemented_v1",
+    "notes": "Machine upgrade v1 complete 2026-06-29; iterate via weekly digest proposals."
+  },
+  "verification_protocol": {
+    "claim_statuses": ["VERIFIED", "INFERRED", "UNVERIFIED"],
+    "baseline_vs_steered": {
+      "required": true,
+      "passes": true,
+      "notes": "pytest memory_engine 19 passed; scoped inject regression + cross_project test."
+    },
+    "reproducibility": {
+      "required": true,
+      "passes": true,
+      "seed": 42,
+      "environment": "python=3.11+",
+      "locked_versions": false
+    }
+  },
+  "issues": [
+    {
+      "id": "I-1",
+      "title": "workspace_scope resolver + hook wiring",
+      "priority": "P0",
+      "passes": true,
+      "blocked_by": [],
+      "maps_to_stories": ["US-1", "US-2"]
+    },
+    {
+      "id": "I-2",
+      "title": "Memory isolation + search_cross_project + tests",
+      "priority": "P0",
+      "passes": true,
+      "blocked_by": [],
+      "maps_to_stories": ["US-3", "US-4", "US-5"]
+    },
+    {
+      "id": "I-3",
+      "title": "Sensor layer + machine weekly digest",
+      "priority": "P1",
+      "passes": true,
+      "blocked_by": [],
+      "maps_to_stories": ["US-6", "US-7", "US-8", "US-9"]
+    },
+    {
+      "id": "I-4",
+      "title": "Dreaming daemon MVP",
+      "priority": "P1",
+      "passes": true,
+      "blocked_by": [],
+      "maps_to_stories": ["US-10"]
+    },
+    {
+      "id": "I-5",
+      "title": "Primary/Secondary + soul + autonomy rules",
+      "priority": "P1",
+      "passes": true,
+      "blocked_by": [],
+      "maps_to_stories": ["US-11", "US-12", "US-13"]
+    }
+  ]
+}

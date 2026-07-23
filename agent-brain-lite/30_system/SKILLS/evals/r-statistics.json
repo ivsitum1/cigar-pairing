@@ -1,0 +1,42 @@
+{
+  "skill_id": "r-statistics",
+  "version": "1.0",
+  "cases": [
+    {
+      "id": "case_r_cox_ph",
+      "input": {
+        "text": "Napiši R kod za Cox model primarnog ishoda; provjeri PH pretpostavku i izvještaj HR s 95% CI."
+      },
+      "assertions": [
+        {
+          "type": "regex_match",
+          "value": "(?i)(cox\\.ph|cox\\.zph|Schoenfeld|proportional hazards)",
+          "description": "mentions PH assumption check"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(hazard ratio|HR|95%\\s*CI|confidence interval)",
+          "description": "reports HR with CI"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(here::here|set\\.seed|reproducib)",
+          "description": "reproducibility convention"
+        }
+      ]
+    },
+    {
+      "id": "case_delegate_test_selection",
+      "input": {
+        "text": "Samo mi reci koji test odabrati za dvije neovisne grupe, ne piši kod."
+      },
+      "assertions": [
+        {
+          "type": "regex_match",
+          "value": "(?i)(test-selection|test selection skill|odabir testa)",
+          "description": "delegates to test-selection rather than full R implementation"
+        }
+      ]
+    }
+  ]
+}

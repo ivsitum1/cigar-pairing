@@ -1,0 +1,14 @@
+{
+  "skill_id": "latex-document",
+  "version": "1.0",
+  "cases": [
+    {
+      "case_id": "ieee_article_baseline",
+      "input": { "text": "Pripremi IEEE Transactions članak u LaTeX-u. Koji class i vodič koristiš?" },
+      "assertions": [
+        { "type": "regex_match", "value": "(?i)(IEEEtran|ieee-journal|ieee)", "description": "mentions IEEE layout" },
+        { "type": "regex_match", "value": "(?i)(latex|MCP|compile)", "description": "mentions LaTeX toolchain" }
+      ]
+    }
+  ]
+}

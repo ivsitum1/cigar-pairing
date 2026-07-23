@@ -1,0 +1,104 @@
+{
+  "version": "1.0.0",
+  "verified_utc": "2026-06-05T19:34:00Z",
+  "grill_status": "14/14 complete",
+  "gate_verdict": "GO",
+  "notebook_id": "48a6afa2-97d8-44f4-8a41-c87d2ea0b650",
+  "notebook_title": "SkillDAG",
+  "method": "Full Playwright grill (14/14) + arXiv abs fetch 2026-06-05",
+  "status": "arxiv_partial_verified",
+  "status_legend": {
+    "LITERATURE_VERIFIED": "Primary or authoritative source supports the procedural claim",
+    "LITERATURE_PARTIAL": "Related evidence exists; exact video metric not replicated",
+    "LITERATURE_UNSUPPORTED": "No reproducible primary source for the exact claim",
+    "REPO_VERIFIED": "Implemented or documented in agent-rules repository"
+  },
+  "claims": [
+    {
+      "id": "SD-DAG-TYPED",
+      "notebook_claim": "SkillDAG is a typed DAG with edge types depends_on, specializes, composes_with, conflicts_with",
+      "status": "LITERATURE_PARTIAL",
+      "summary": "Procedural framing from YouTube source in notebook; no local SkillDAG implementation in repo yet.",
+      "sources": [
+        {
+          "title": "The Real AI Bottleneck? Graph Routing for Skills (notebook source)",
+          "url": null
+        }
+      ],
+      "implementation_gate": "GO — SKILLDAG_MAP + skill_dag_validate shipped 2026-06-05"
+    },
+    {
+      "id": "SD-SKILLOPT-ARXIV",
+      "notebook_claim": "SkillOpt arXiv 2605.23904 — trajectory-derived skill compilation",
+      "status": "LITERATURE_VERIFIED",
+      "summary": "arXiv:2605.23904 exists (May 2026). Title: SkillOpt: Executive Strategy for Self-Evolving Agent Skills. Benchmark % remain UNVERIFIED locally.",
+      "sources": [
+        {
+          "title": "arXiv:2605.23904",
+          "url": "https://arxiv.org/abs/2605.23904"
+        }
+      ],
+      "implementation_gate": "NO-GO for new SkillOpt skill until verified and deduped with Geometry PRD"
+    },
+    {
+      "id": "SD-SKILLADAPTOR-ARXIV",
+      "notebook_claim": "SkillAdaptor — step-level failure attribution",
+      "status": "LITERATURE_VERIFIED",
+      "summary": "Notebook cited wrong ID 2605.10813 (NanoResearch). Correct paper: arXiv:2606.01311 SkillAdaptor: Self-Adapting Skills for LLM Agents from Trajectories.",
+      "sources": [
+        {
+          "title": "arXiv:2606.01311 (corrected from notebook 2605.10813)",
+          "url": "https://arxiv.org/abs/2606.01311"
+        }
+      ],
+      "implementation_gate": "P2 research; pair with skill gap eval ingest pattern if adopted"
+    },
+    {
+      "id": "SD-USERHARNESS-ARXIV",
+      "notebook_claim": "UserHarness arXiv 2605.27721 — external symbolic ToM tracker",
+      "status": "LITERATURE_VERIFIED",
+      "summary": "arXiv:2605.27721 exists. Title: UserHarness: Harnessing User Minds for Stronger Agent Theory-of-Mind. Accuracy benchmarks not replicated locally.",
+      "sources": [
+        {
+          "title": "arXiv:2605.27721",
+          "url": "https://arxiv.org/abs/2605.27721"
+        }
+      ],
+      "implementation_gate": "GO for doc cross-link to LifeHarness L4 only; NO-GO for benchmark accuracy claims in rules"
+    },
+    {
+      "id": "SD-SCALE-10K",
+      "notebook_claim": "SkillDAG scales retrieval to 10k+ skills",
+      "status": "LITERATURE_UNSUPPORTED",
+      "summary": "YouTube narrative; no local benchmark in agent-rules.",
+      "sources": [],
+      "implementation_gate": "NO-GO for numeric claims in .mdc rules"
+    },
+    {
+      "id": "SD-REPO-SKILLRAE",
+      "notebook_claim": "SkillRAE subunit graphs already in repo",
+      "status": "REPO_VERIFIED",
+      "summary": "skill_decompose.py, outputs/skillrae/, wiki concept documented.",
+      "sources": [
+        {
+          "title": "40_operations/scripts/skill_decompose.py",
+          "url": null
+        }
+      ],
+      "implementation_gate": "GO — disambiguate SkillRAE subunit vs SkillDAG inter-skill graph in SKILLDAG_MAP"
+    },
+    {
+      "id": "SD-REPO-TIER3",
+      "notebook_claim": "Registry has partial conflicts_with via tier3_pairing",
+      "status": "REPO_VERIFIED",
+      "summary": "registry.json tier3_pairing.forbidden_pairs analog to conflicts_with edges.",
+      "sources": [
+        {
+          "title": "30_system/SKILLS/registry.json",
+          "url": null
+        }
+      ],
+      "implementation_gate": "GO — depends_on + skill_dag_validate shipped 2026-06-05"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+---
+description: "Writing-only lite orchestrator — lifestyle/etiquette prose; no scientific research stack"
+alwaysApply: true
+---
+
+# Orchestrator (Agent Brain Lite — writing-only)
+
+You are the **Lite Orchestrator** for this workspace. Profile: **pisanje** (popularna literatura / bonton). Do **not** run scholarly research pipelines (meta-analysis, PRISMA, CONSORT, PubMed SR, statistics protocols).
+
+## Every turn
+
+1. Read `AGENTS.md`, `hot.md`, `.agent/MEMORY.md` when present.
+2. **Classify:** ADMIN | WRITER | AUTOMATION | LOOKUP | MIXED
+3. **Writing skills (parent, when drafting):** prefer `SKILL_nonacademic-writer.md`, then `SKILL_avoid-ai-formulations.md` / `writing-avoid-ai.mdc`, `writing-hrvatski-pravopis.mdc`.
+4. **Lite skills:** `skills/registry.json` (wiki-ingest, wiki-query, project-setup, learning-capture).
+5. **Delegate** — default to Writer for prose tasks.
+
+## Classification
+
+- ADMIN: organiziraj, arhiva, rok, checklista
+- WRITER: draft, poglavlje, bonton, stil, korekcija, memo, sažetak
+- AUTOMATION: skripta, JSON, PowerShell, app code
+- LOOKUP: brza činjenična provjera ili wiki-query — **bez** znanstvenog research gatea / SR pipelinea
+
+## Hard stops (out of profile)
+
+Do not load or follow: scholarly_workflow, reporting-* (PRISMA/CONSORT/…), statistics-test-selection, books-rag research, meta-analysis, Swiss Cheese clinical protocols, or parent `00_orchestrator_agent.mdc`.
+
+## Coexistence
+
+- Honesty / no fabrication: `98_honesty_grounding_protocol.mdc`, `verification.mdc`, `core-principles.mdc`
+- Token budget: `context-optimization.mdc`
+- Parent path is read-only (`PARENT_BRAIN_PATH`)
+
+## Handoff / learning
+
+- Handoff: `.agent/task/handoff_<id>.md` when switching nodes
+- After significant writing tasks: `learning-loop-lite.mdc`

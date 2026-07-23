@@ -1,0 +1,6004 @@
+{
+  "buckets": {
+    "texas-special": [
+      {
+        "ids": [
+          "cig-alec-bradley-texas",
+          "cig-alec-bradley-texas-lancero"
+        ],
+        "brand": "Alec Bradley",
+        "line_p": "Texas",
+        "line_c": "Texas Lancero",
+        "rest": "Lancero",
+        "n_p": 1,
+        "n_c": 1,
+        "vit_p": [
+          "Lancero"
+        ],
+        "vit_c": [
+          "Gordo"
+        ],
+        "reason0": "Same commercial SKU (Texas Lancero 7x70): CW product URL sits on cig-alec-bradley-texas; Holts listing on texas-lancero with vitola mislabeled Gordo. Needs line rename + single-vitola collapse — skip blind size-absorb."
+      }
+    ],
+    "multi-child": [
+      {
+        "ids": [
+          "cig-1502-special-edition-blue-sapphire",
+          "cig-1502-special-edition-blue-sapphire-gordo"
+        ],
+        "brand": "1502",
+        "line_p": "Special Edition Blue Sapphire",
+        "line_c": "Special Edition Blue Sapphire Gordo",
+        "rest": "Gordo",
+        "n_p": 1,
+        "n_c": 2,
+        "vit_p": [
+          "Lancero"
+        ],
+        "vit_c": [
+          "Robusto",
+          "Toro"
+        ],
+        "reason0": "needs judgment; suffix=\"Gordo\"; n=1/2"
+      },
+      {
+        "ids": [
+          "cig-e-p-carrillo-core",
+          "cig-ep-carrillo-epc-core"
+        ],
+        "brand": "E.P. Carrillo",
+        "line_p": "Core",
+        "line_c": "Core Line",
+        "rest": "Line",
+        "n_p": 1,
+        "n_c": 2,
+        "vit_p": [
+          "Churchill"
+        ],
+        "vit_c": [
+          "E.P. Carrillo Robusto",
+          "E.P. Carrillo Toro"
+        ],
+        "reason0": "needs judgment; suffix=\"Line\"; n=1/2"
+      },
+      {
+        "ids": [
+          "cig-rocky-patel-fifty",
+          "cig-rocky-patel-fifty-five"
+        ],
+        "brand": "Rocky Patel",
+        "line_p": "Fifty",
+        "line_c": "Fifty Five",
+        "rest": "Five",
+        "n_p": 1,
+        "n_c": 2,
+        "vit_p": [
+          "Toro"
+        ],
+        "vit_c": [
+          "Robusto",
+          "Toro"
+        ],
+        "reason0": "needs judgment; suffix=\"Five\"; n=1/2"
+      },
+      {
+        "ids": [
+          "cig-tabacalera-1881",
+          "cig-tabacalera-1881-perique-bold"
+        ],
+        "brand": "Tabacalera",
+        "line_p": "1881",
+        "line_c": "1881 Perique Bold",
+        "rest": "Perique Bold",
+        "n_p": 1,
+        "n_c": 2,
+        "vit_p": [
+          "Robusto"
+        ],
+        "vit_c": [
+          "Robusto",
+          "Toro"
+        ],
+        "reason0": "needs judgment; suffix=\"Perique Bold\"; n=1/2"
+      },
+      {
+        "ids": [
+          "cig-tabacalera-1881-perique",
+          "cig-tabacalera-1881-perique-bold"
+        ],
+        "brand": "Tabacalera",
+        "line_p": "1881 Perique",
+        "line_c": "1881 Perique Bold",
+        "rest": "Bold",
+        "n_p": 1,
+        "n_c": 2,
+        "vit_p": [
+          "Robusto"
+        ],
+        "vit_c": [
+          "Robusto",
+          "Toro"
+        ],
+        "reason0": "needs judgment; suffix=\"Bold\"; n=1/2"
+      },
+      {
+        "ids": [
+          "cig-tatuaje-unicos",
+          "cig-tatuaje-tatuaje-unico"
+        ],
+        "brand": "Tatuaje",
+        "line_p": "Unicos",
+        "line_c": "Unicos & Special",
+        "rest": "Special",
+        "n_p": 1,
+        "n_c": 5,
+        "vit_p": [
+          "Torpedo"
+        ],
+        "vit_c": [
+          "Pork Tenderloin",
+          "Cabaiguan Guapos",
+          "Cohete",
+          "Pork Tenderloin XL",
+          "TLX Toro"
+        ],
+        "reason0": "needs judgment; suffix=\"Special\"; n=1/5"
+      },
+      {
+        "ids": [
+          "cig-villiger-1888",
+          "cig-villiger-1888-dominican-republic"
+        ],
+        "brand": "Villiger",
+        "line_p": "1888",
+        "line_c": "1888 Dominican Republic",
+        "rest": "Dominican Republic",
+        "n_p": 1,
+        "n_c": 4,
+        "vit_p": [
+          "Toro"
+        ],
+        "vit_c": [
+          "Corona",
+          "Robusto",
+          "Toro",
+          "Torpedo"
+        ],
+        "reason0": "needs judgment; suffix=\"Dominican Republic\"; n=1/4"
+      },
+      {
+        "ids": [
+          "cig-villiger-1888",
+          "cig-villiger-1888-fuerte"
+        ],
+        "brand": "Villiger",
+        "line_p": "1888",
+        "line_c": "1888 Fuerte",
+        "rest": "Fuerte",
+        "n_p": 1,
+        "n_c": 3,
+        "vit_p": [
+          "Toro"
+        ],
+        "vit_c": [
+          "Robusto",
+          "Toro",
+          "Gordo"
+        ],
+        "reason0": "needs judgment; suffix=\"Fuerte\"; n=1/3"
+      },
+      {
+        "ids": [
+          "cig-villiger-1888",
+          "cig-villiger-1888-nicaragua"
+        ],
+        "brand": "Villiger",
+        "line_p": "1888",
+        "line_c": "1888 Nicaragua",
+        "rest": "Nicaragua",
+        "n_p": 1,
+        "n_c": 5,
+        "vit_p": [
+          "Toro"
+        ],
+        "vit_c": [
+          "Churchill",
+          "Robusto",
+          "Toro",
+          "Perfecto",
+          "Gordo"
+        ],
+        "reason0": "needs judgment; suffix=\"Nicaragua\"; n=1/5"
+      }
+    ],
+    "1v1": [
+      {
+        "ids": [
+          "cig-1502-special-edition-cachito",
+          "cig-1502-special-edition-cachito-original"
+        ],
+        "brand": "1502",
+        "line_p": "Special Edition Cachito",
+        "line_c": "Special Edition Cachito Original",
+        "rest": "Original",
+        "n_p": 1,
+        "n_c": 1,
+        "vit_p": [
+          "Lancero"
+        ],
+        "vit_c": [
+          "Short Robusto"
+        ],
+        "reason0": "needs judgment; suffix=\"Original\"; n=1/1"
+      },
+      {
+        "ids": [
+          "cig-arturo-fuente-claro",
+          "cig-arturo-fuente-claro-spanish"
+        ],
+        "brand": "Arturo Fuente",
+        "line_p": "Claro",
+        "line_c": "Claro Spanish",
+        "rest": "Spanish",
+        "n_p": 1,
+        "n_c": 1,
+        "vit_p": [
+          "Churchill"
+        ],
+        "vit_c": [
+          "Lonsdale"
+        ],
+        "reason0": "needs judgment; suffix=\"Spanish\"; n=1/1"
+      },
+      {
+        "ids": [
+          "cig-arturo-fuente-seleccion-d-oro",
+          "cig-arturo-fuente-seleccion-d-oro-imperial"
+        ],
+        "brand": "Arturo Fuente",
+        "line_p": "Seleccion d'Oro",
+        "line_c": "Seleccion d'Oro Imperial",
+        "rest": "Imperial",
+        "n_p": 1,
+        "n_c": 1,
+        "vit_p": [
+          "Churchill"
+        ],
+        "vit_c": [
+          "Corona"
+        ],
+        "reason0": "needs judgment; suffix=\"Imperial\"; n=1/1"
+      },
+      {
+        "ids": [
+          "cig-ashton-cabinet",
+          "cig-ashton-cabinet-selection"
+        ],
+        "brand": "Ashton",
+        "line_p": "Cabinet",
+        "line_c": "Cabinet Selection",
+        "rest": "Selection",
+        "n_p": 1,
+        "n_c": 1,
+        "vit_p": [
+          "Belicoso"
+        ],
+        "vit_c": [
+          "Cabinet Selection T"
+        ],
+        "reason0": "needs judgment; suffix=\"Selection\"; n=1/1"
+      },
+      {
+        "ids": [
+          "cig-ashton-paradiso-by-papagayo",
+          "cig-ashton-paradiso-by-papagayo-xxl"
+        ],
+        "brand": "Ashton",
+        "line_p": "Paradiso By Papagayo",
+        "line_c": "Paradiso By Papagayo XXL",
+        "rest": "XXL",
+        "n_p": 1,
+        "n_c": 1,
+        "vit_p": [
+          "Toro"
+        ],
+        "vit_c": [
+          "Toro"
+        ],
+        "reason0": "needs judgment; suffix=\"XXL\"; n=1/1"
+      },
+      {
+        "ids": [
+          "cig-casdagli-club",
+          "cig-casdagli-club-especial"
+        ],
+        "brand": "Casdagli",
+        "line_p": "Club",
+        "line_c": "Club Especial",
+        "rest": "Especial",
+        "n_p": 1,
+        "n_c": 1,
+        "vit_p": [
+          "Petit Corona"
+        ],
+        "vit_c": [
+          "Petit Corona"
+        ],
+        "reason0": "needs judgment; suffix=\"Especial\"; n=1/1"
+      },
+      {
+        "ids": [
+          "cig-casdagli-club",
+          "cig-casdagli-club-mareva-jure"
+        ],
+        "brand": "Casdagli",
+        "line_p": "Club",
+        "line_c": "Club Mareva Jure",
+        "rest": "Mareva Jure",
+        "n_p": 1,
+        "n_c": 1,
+        "vit_p": [
+          "Petit Corona"
+        ],
+        "vit_c": [
+          "Churchill"
+        ],
+        "reason0": "needs judgment; suffix=\"Mareva Jure\"; n=1/1"
+      },
+      {
+        "ids": [
+          "cig-casdagli-club",
+          "cig-casdagli-club-mareva-spalato-no-2"
+        ],
+        "brand": "Casdagli",
+        "line_p": "Club",
+        "line_c": "Club Mareva Spalato No. 2",
+        "rest": "Mareva Spalato No. 2",
+        "n_p": 1,
+        "n_c": 1,
+        "vit_p": [
+          "Petit Corona"
+        ],
+        "vit_c": [
+          "Piramide"
+        ],
+        "reason0": "needs judgment; suffix=\"Mareva Spalato No. 2\"; n=1/1"
+      },
+      {
+        "ids": [
+          "cig-domenico-limited-edition",
+          "cig-domenico-limited-edition-pirata"
+        ],
+        "brand": "Domenico",
+        "line_p": "Limited Edition",
+        "line_c": "Limited Edition Pirata",
+        "rest": "Pirata",
+        "n_p": 1,
+        "n_c": 1,
+        "vit_p": [
+          "Toro"
+        ],
+        "vit_c": [
+          "Robusto"
+        ],
+        "reason0": "needs judgment; suffix=\"Pirata\"; n=1/1"
+      },
+      {
+        "ids": [
+          "cig-dos-santos-la-regenta",
+          "cig-dos-santos-la-regenta-1921-anejo-rum-barrel-aged"
+        ],
+        "brand": "Dos Santos",
+        "line_p": "La Regenta",
+        "line_c": "La Regenta 1921 Anejo Rum Barrel Aged",
+        "rest": "1921 Anejo Rum Barrel Aged",
+        "n_p": 1,
+        "n_c": 1,
+        "vit_p": [
+          "Robusto"
+        ],
+        "vit_c": [
+          "Piramide"
+        ],
+        "reason0": "needs judgment; suffix=\"1921 Anejo Rum Barrel Aged\"; n=1/1"
+      },
+      {
+        "ids": [
+          "cig-e-p-carrillo-epc-pledge",
+          "cig-e-p-carrillo-epc-pledge-apogee"
+        ],
+        "brand": "E.P. Carrillo",
+        "line_p": "EPC Pledge",
+        "line_c": "EPC Pledge Apogee",
+        "rest": "Apogee",
+        "n_p": 1,
+        "n_c": 1,
+        "vit_p": [
+          "Lonsdale"
+        ],
+        "vit_c": [
+          "Toro"
+        ],
+        "reason0": "needs judgment; suffix=\"Apogee\"; n=1/1"
+      },
+      {
+        "ids": [
+          "cig-e-p-carrillo-epc-pledge",
+          "cig-e-p-carrillo-epc-pledge-prequel"
+        ],
+        "brand": "E.P. Carrillo",
+        "line_p": "EPC Pledge",
+        "line_c": "EPC Pledge Prequel",
+        "rest": "Prequel",
+        "n_p": 1,
+        "n_c": 1,
+        "vit_p": [
+          "Lonsdale"
+        ],
+        "vit_c": [
+          "Robusto"
+        ],
+        "reason0": "needs judgment; suffix=\"Prequel\"; n=1/1"
+      },
+      {
+        "ids": [
+          "cig-e-p-carrillo-epc-pledge",
+          "cig-e-p-carrillo-epc-pledge-sojourn"
+        ],
+        "brand": "E.P. Carrillo",
+        "line_p": "EPC Pledge",
+        "line_c": "EPC Pledge Sojourn",
+        "rest": "Sojourn",
+        "n_p": 1,
+        "n_c": 1,
+        "vit_p": [
+          "Lonsdale"
+        ],
+        "vit_c": [
+          "Toro"
+        ],
+        "reason0": "needs judgment; suffix=\"Sojourn\"; n=1/1"
+      },
+      {
+        "ids": [
+          "cig-gh-g-h-la-conquista",
+          "cig-gh-g-h-la-conquista-la-pinta"
+        ],
+        "brand": "Gh",
+        "line_p": "G.H. La Conquista",
+        "line_c": "G.H. La Conquista La Pinta",
+        "rest": "La Pinta",
+        "n_p": 1,
+        "n_c": 1,
+        "vit_p": [
+          "Piramide"
+        ],
+        "vit_c": [
+          "Double Robusto"
+        ],
+        "reason0": "needs judgment; suffix=\"La Pinta\"; n=1/1"
+      },
+      {
+        "ids": [
+          "cig-gh-g-h-la-conquista",
+          "cig-gh-g-h-la-conquista-shorty"
+        ],
+        "brand": "Gh",
+        "line_p": "G.H. La Conquista",
+        "line_c": "G.H. La Conquista Shorty",
+        "rest": "Shorty",
+        "n_p": 1,
+        "n_c": 1,
+        "vit_p": [
+          "Piramide"
+        ],
+        "vit_c": [
+          "Robusto"
+        ],
+        "reason0": "needs judgment; suffix=\"Shorty\"; n=1/1"
+      },
+      {
+        "ids": [
+          "cig-gurkha-treinta-30th-anniversary",
+          "cig-gurkha-treinta-30th-anniversary-aganorsa"
+        ],
+        "brand": "Gurkha",
+        "line_p": "Treinta 30th Anniversary",
+        "line_c": "Treinta 30th Anniversary Aganorsa",
+        "rest": "Aganorsa",
+        "n_p": 1,
+        "n_c": 1,
+        "vit_p": [
+          "Toro"
+        ],
+        "vit_c": [
+          "Toro"
+        ],
+        "reason0": "needs judgment; suffix=\"Aganorsa\"; n=1/1"
+      },
+      {
+        "ids": [
+          "cig-henk-maori-la-dona",
+          "cig-henk-maori-la-dona-edicion-limitada-2018"
+        ],
+        "brand": "Henk",
+        "line_p": "Maori La Dona",
+        "line_c": "Maori La Dona Edición Limitada 2018",
+        "rest": "Edición Limitada 2018",
+        "n_p": 1,
+        "n_c": 1,
+        "vit_p": [
+          "Double Robusto"
+        ],
+        "vit_c": [
+          "Double Robusto"
+        ],
+        "reason0": "needs judgment; suffix=\"Edición Limitada 2018\"; n=1/1"
+      },
+      {
+        "ids": [
+          "cig-herr-lehmann-no-5-schwarzwald",
+          "cig-herr-lehmann-no-5-schwarzwald-goldfinger"
+        ],
+        "brand": "Herr",
+        "line_p": "Lehmann No. 5 Schwarzwald",
+        "line_c": "Lehmann No. 5 Schwarzwald Goldfinger",
+        "rest": "Goldfinger",
+        "n_p": 1,
+        "n_c": 1,
+        "vit_p": [
+          "Torpedo"
+        ],
+        "vit_c": [
+          "Torpedo"
+        ],
+        "reason0": "needs judgment; suffix=\"Goldfinger\"; n=1/1"
+      },
+      {
+        "ids": [
+          "cig-inca-peru",
+          "cig-inca-peru-imperio"
+        ],
+        "brand": "Inca",
+        "line_p": "Peru",
+        "line_c": "Peru Imperio",
+        "rest": "Imperio",
+        "n_p": 1,
+        "n_c": 1,
+        "vit_p": [
+          "Gordo"
+        ],
+        "vit_c": [
+          "Gordo"
+        ],
+        "reason0": "needs judgment; suffix=\"Imperio\"; n=1/1"
+      },
+      {
+        "ids": [
+          "cig-inca-peru",
+          "cig-inca-peru-roca"
+        ],
+        "brand": "Inca",
+        "line_p": "Peru",
+        "line_c": "Peru Roca",
+        "rest": "Roca",
+        "n_p": 1,
+        "n_c": 1,
+        "vit_p": [
+          "Gordo"
+        ],
+        "vit_c": [
+          "Robusto"
+        ],
+        "reason0": "needs judgment; suffix=\"Roca\"; n=1/1"
+      },
+      {
+        "ids": [
+          "cig-inca-peru",
+          "cig-inca-peru-tambo"
+        ],
+        "brand": "Inca",
+        "line_p": "Peru",
+        "line_c": "Peru Tambo",
+        "rest": "Tambo",
+        "n_p": 1,
+        "n_c": 1,
+        "vit_p": [
+          "Gordo"
+        ],
+        "vit_c": [
+          "Corona Gorda"
+        ],
+        "reason0": "needs judgment; suffix=\"Tambo\"; n=1/1"
+      },
+      {
+        "ids": [
+          "cig-la-aurora-107-ecuador",
+          "cig-la-aurora-107-ecuador-sumo"
+        ],
+        "brand": "La Aurora",
+        "line_p": "107 Ecuador",
+        "line_c": "107 Ecuador Sumo",
+        "rest": "Sumo",
+        "n_p": 1,
+        "n_c": 1,
+        "vit_p": [
+          "Robusto"
+        ],
+        "vit_c": [
+          "Short Robusto"
+        ],
+        "reason0": "needs judgment; suffix=\"Sumo\"; n=1/1"
+      },
+      {
+        "ids": [
+          "cig-la-rosa-de-sandiego-clasico",
+          "cig-la-rosa-de-sandiego-clasico-altpreisiger-bestand"
+        ],
+        "brand": "La Rosa",
+        "line_p": "de Sandiego Clasico",
+        "line_c": "de Sandiego Clasico ALTPREISIGER Bestand",
+        "rest": "ALTPREISIGER Bestand",
+        "n_p": 1,
+        "n_c": 1,
+        "vit_p": [
+          "Robusto"
+        ],
+        "vit_c": [
+          "Gran Toro"
+        ],
+        "reason0": "needs judgment; suffix=\"ALTPREISIGER Bestand\"; n=1/1"
+      },
+      {
+        "ids": [
+          "cig-leite-amp-alves-stalk-cut",
+          "cig-leite-amp-alves-stalk-cut-quadrado"
+        ],
+        "brand": "Leite",
+        "line_p": "&amp; Alves Stalk Cut",
+        "line_c": "&amp; Alves Stalk Cut Quadrado",
+        "rest": "Quadrado",
+        "n_p": 1,
+        "n_c": 1,
+        "vit_p": [
+          "Robusto"
+        ],
+        "vit_c": [
+          "Belicoso"
+        ],
+        "reason0": "needs judgment; suffix=\"Quadrado\"; n=1/1"
+      },
+      {
+        "ids": [
+          "cig-macanudo-limited-edition",
+          "cig-macanudo-limited-edition-vintage-2010"
+        ],
+        "brand": "Macanudo",
+        "line_p": "Limited Edition",
+        "line_c": "Limited Edition Vintage 2010",
+        "rest": "Vintage 2010",
+        "n_p": 1,
+        "n_c": 1,
+        "vit_p": [
+          "Churchill"
+        ],
+        "vit_c": [
+          "Torpedo"
+        ],
+        "reason0": "needs judgment; suffix=\"Vintage 2010\"; n=1/1"
+      },
+      {
+        "ids": [
+          "cig-maria-mancini-edicion-especial",
+          "cig-maria-mancini-edicion-especial-classico"
+        ],
+        "brand": "Maria",
+        "line_p": "Mancini Edicion Especial",
+        "line_c": "Mancini Edicion Especial Classico",
+        "rest": "Classico",
+        "n_p": 1,
+        "n_c": 1,
+        "vit_p": [
+          "Petit Corona"
+        ],
+        "vit_c": [
+          "Corona"
+        ],
+        "reason0": "needs judgment; suffix=\"Classico\"; n=1/1"
+      },
+      {
+        "ids": [
+          "cig-nat-sherman-timeless-prestige",
+          "cig-nat-sherman-timeless-prestige-divinos"
+        ],
+        "brand": "Nat Sherman Timeless",
+        "line_p": "Prestige",
+        "line_c": "Prestige Divinos",
+        "rest": "Divinos",
+        "n_p": 1,
+        "n_c": 1,
+        "vit_p": [
+          "Robusto"
+        ],
+        "vit_c": [
+          "Perfecto"
+        ],
+        "reason0": "needs judgment; suffix=\"Divinos\"; n=1/1"
+      },
+      {
+        "ids": [
+          "cig-olman-founders-edition-1997-corojo",
+          "cig-olman-founders-edition-1997-corojo-emperador"
+        ],
+        "brand": "Olman",
+        "line_p": "Founders Edition 1997 Corojo",
+        "line_c": "Founders Edition 1997 Corojo Emperador",
+        "rest": "Emperador",
+        "n_p": 1,
+        "n_c": 1,
+        "vit_p": [
+          "Corona"
+        ],
+        "vit_c": [
+          "Petit Corona"
+        ],
+        "reason0": "needs judgment; suffix=\"Emperador\"; n=1/1"
+      },
+      {
+        "ids": [
+          "cig-padilla-barcelona",
+          "cig-padilla-barcelona-xl"
+        ],
+        "brand": "Padilla",
+        "line_p": "Barcelona",
+        "line_c": "Barcelona XL",
+        "rest": "XL",
+        "n_p": 1,
+        "n_c": 1,
+        "vit_p": [
+          "Gordo"
+        ],
+        "vit_c": [
+          "Robusto"
+        ],
+        "reason0": "needs judgment; suffix=\"XL\"; n=1/1"
+      },
+      {
+        "ids": [
+          "cig-palmar-arriba",
+          "cig-palmar-arriba-jeroboam"
+        ],
+        "brand": "Palmar",
+        "line_p": "Arriba",
+        "line_c": "Arriba Jeroboam",
+        "rest": "Jeroboam",
+        "n_p": 1,
+        "n_c": 1,
+        "vit_p": [
+          "Short Robusto"
+        ],
+        "vit_c": [
+          "Petit Corona"
+        ],
+        "reason0": "needs judgment; suffix=\"Jeroboam\"; n=1/1"
+      },
+      {
+        "ids": [
+          "cig-quesada-40th-anniversary",
+          "cig-quesada-40th-anniversary-real"
+        ],
+        "brand": "Quesada",
+        "line_p": "40th Anniversary",
+        "line_c": "40th Anniversary Real",
+        "rest": "Real",
+        "n_p": 1,
+        "n_c": 1,
+        "vit_p": [
+          "Robusto"
+        ],
+        "vit_c": [
+          "Toro"
+        ],
+        "reason0": "needs judgment; suffix=\"Real\"; n=1/1"
+      },
+      {
+        "ids": [
+          "cig-ra-r-a-villamil-viso-98",
+          "cig-ra-r-a-villamil-viso-98-g-n-corona"
+        ],
+        "brand": "Ra",
+        "line_p": "R.A. Villamil Viso 98",
+        "line_c": "R.A. Villamil Viso 98 G n Corona",
+        "rest": "G n Corona",
+        "n_p": 1,
+        "n_c": 1,
+        "vit_p": [
+          "Robusto"
+        ],
+        "vit_c": [
+          "Corona Gorda"
+        ],
+        "reason0": "needs judgment; suffix=\"G n Corona\"; n=1/1"
+      },
+      {
+        "ids": [
+          "cig-rojas-custom-blends-ometepe-maduro",
+          "cig-rojas-custom-blends-ometepe-maduro-shaggy"
+        ],
+        "brand": "Rojas",
+        "line_p": "Custom Blends Ometepe Maduro",
+        "line_c": "Custom Blends Ometepe Maduro Shaggy",
+        "rest": "Shaggy",
+        "n_p": 1,
+        "n_c": 1,
+        "vit_p": [
+          "Gordo"
+        ],
+        "vit_c": [
+          "Toro"
+        ],
+        "reason0": "needs judgment; suffix=\"Shaggy\"; n=1/1"
+      },
+      {
+        "ids": [
+          "cig-smoking-jacket-by-hendrik-kelner-jr-red-label",
+          "cig-smoking-jacket-by-hendrik-kelner-jr-red-label-imperial"
+        ],
+        "brand": "Smoking",
+        "line_p": "Jacket by Hendrik Kelner Jr. Red Label",
+        "line_c": "Jacket by Hendrik Kelner Jr. Red Label Imperial",
+        "rest": "Imperial",
+        "n_p": 1,
+        "n_c": 1,
+        "vit_p": [
+          "Short Robusto"
+        ],
+        "vit_c": [
+          "Robusto"
+        ],
+        "reason0": "needs judgment; suffix=\"Imperial\"; n=1/1"
+      },
+      {
+        "ids": [
+          "cig-smoking-jacket-by-hendrik-kelner-jr-red-label",
+          "cig-smoking-jacket-by-hendrik-kelner-jr-red-label-magno"
+        ],
+        "brand": "Smoking",
+        "line_p": "Jacket by Hendrik Kelner Jr. Red Label",
+        "line_c": "Jacket by Hendrik Kelner Jr. Red Label Magno",
+        "rest": "Magno",
+        "n_p": 1,
+        "n_c": 1,
+        "vit_p": [
+          "Short Robusto"
+        ],
+        "vit_c": [
+          "Toro"
+        ],
+        "reason0": "needs judgment; suffix=\"Magno\"; n=1/1"
+      },
+      {
+        "ids": [
+          "cig-tabacalera-1881",
+          "cig-tabacalera-1881-perique"
+        ],
+        "brand": "Tabacalera",
+        "line_p": "1881",
+        "line_c": "1881 Perique",
+        "rest": "Perique",
+        "n_p": 1,
+        "n_c": 1,
+        "vit_p": [
+          "Robusto"
+        ],
+        "vit_c": [
+          "Robusto"
+        ],
+        "reason0": "needs judgment; suffix=\"Perique\"; n=1/1"
+      },
+      {
+        "ids": [
+          "cig-tabacalera-flor-fina",
+          "cig-tabacalera-flor-fina-larga-especiale"
+        ],
+        "brand": "Tabacalera",
+        "line_p": "Flor Fina",
+        "line_c": "Flor Fina Larga Especiale",
+        "rest": "Larga Especiale",
+        "n_p": 1,
+        "n_c": 1,
+        "vit_p": [
+          "Corona"
+        ],
+        "vit_c": [
+          "Corona"
+        ],
+        "reason0": "needs judgment; suffix=\"Larga Especiale\"; n=1/1"
+      },
+      {
+        "ids": [
+          "cig-vegafina-vega-fina",
+          "cig-vegafina-vega-fina-nicaragua"
+        ],
+        "brand": "VegaFina",
+        "line_p": "Vega Fina",
+        "line_c": "Vega Fina Nicaragua",
+        "rest": "Nicaragua",
+        "n_p": 1,
+        "n_c": 1,
+        "vit_p": [
+          "Churchill"
+        ],
+        "vit_c": [
+          "Gran Toro"
+        ],
+        "reason0": "needs judgment; suffix=\"Nicaragua\"; n=1/1"
+      },
+      {
+        "ids": [
+          "cig-vegas-de-santiago-d8-limited-edition",
+          "cig-vegas-de-santiago-d8-limited-edition-palo-alto-2023"
+        ],
+        "brand": "Vegas",
+        "line_p": "de Santiago D8 Limited Edition",
+        "line_c": "de Santiago D8 Limited Edition Palo Alto 2023",
+        "rest": "Palo Alto 2023",
+        "n_p": 1,
+        "n_c": 1,
+        "vit_p": [
+          "Lancero"
+        ],
+        "vit_c": [
+          "Piramide"
+        ],
+        "reason0": "needs judgment; suffix=\"Palo Alto 2023\"; n=1/1"
+      },
+      {
+        "ids": [
+          "cig-xhaxhi-bobi",
+          "cig-xhaxhi-bobi-baba-jan"
+        ],
+        "brand": "Xhaxhi",
+        "line_p": "Bobi",
+        "line_c": "Bobi Baba Jan",
+        "rest": "Baba Jan",
+        "n_p": 1,
+        "n_c": 1,
+        "vit_p": [
+          "Petit Corona"
+        ],
+        "vit_c": [
+          "Petit Corona"
+        ],
+        "reason0": "needs judgment; suffix=\"Baba Jan\"; n=1/1"
+      },
+      {
+        "ids": [
+          "cig-xhaxhi-bobi",
+          "cig-xhaxhi-bobi-el-ingeniero"
+        ],
+        "brand": "Xhaxhi",
+        "line_p": "Bobi",
+        "line_c": "Bobi El Ingeniero",
+        "rest": "El Ingeniero",
+        "n_p": 1,
+        "n_c": 1,
+        "vit_p": [
+          "Petit Corona"
+        ],
+        "vit_c": [
+          "Robusto"
+        ],
+        "reason0": "needs judgment; suffix=\"El Ingeniero\"; n=1/1"
+      },
+      {
+        "ids": [
+          "cig-xhaxhi-bobi",
+          "cig-xhaxhi-bobi-el-licenciado"
+        ],
+        "brand": "Xhaxhi",
+        "line_p": "Bobi",
+        "line_c": "Bobi El Licenciado",
+        "rest": "El Licenciado",
+        "n_p": 1,
+        "n_c": 1,
+        "vit_p": [
+          "Petit Corona"
+        ],
+        "vit_c": [
+          "Robusto"
+        ],
+        "reason0": "needs judgment; suffix=\"El Licenciado\"; n=1/1"
+      },
+      {
+        "ids": [
+          "cig-xhaxhi-bobi",
+          "cig-xhaxhi-bobi-mi-hermano"
+        ],
+        "brand": "Xhaxhi",
+        "line_p": "Bobi",
+        "line_c": "Bobi Mi Hermano",
+        "rest": "Mi Hermano",
+        "n_p": 1,
+        "n_c": 1,
+        "vit_p": [
+          "Petit Corona"
+        ],
+        "vit_c": [
+          "Petit Corona"
+        ],
+        "reason0": "needs judgment; suffix=\"Mi Hermano\"; n=1/1"
+      },
+      {
+        "ids": [
+          "cig-xhaxhi-bobi",
+          "cig-xhaxhi-bobi-sunrise"
+        ],
+        "brand": "Xhaxhi",
+        "line_p": "Bobi",
+        "line_c": "Bobi Sunrise",
+        "rest": "Sunrise",
+        "n_p": 1,
+        "n_c": 1,
+        "vit_p": [
+          "Petit Corona"
+        ],
+        "vit_c": [
+          "Petit Corona"
+        ],
+        "reason0": "needs judgment; suffix=\"Sunrise\"; n=1/1"
+      },
+      {
+        "ids": [
+          "cig-xhaxhi-bobi",
+          "cig-xhaxhi-bobi-sunset"
+        ],
+        "brand": "Xhaxhi",
+        "line_p": "Bobi",
+        "line_c": "Bobi Sunset",
+        "rest": "Sunset",
+        "n_p": 1,
+        "n_c": 1,
+        "vit_p": [
+          "Petit Corona"
+        ],
+        "vit_c": [
+          "Robusto"
+        ],
+        "reason0": "needs judgment; suffix=\"Sunset\"; n=1/1"
+      }
+    ],
+    "series-ish": [
+      {
+        "ids": [
+          "cig-artista-david-ortiz-hof",
+          "cig-artista-david-ortiz-hof-limited-edition"
+        ],
+        "brand": "Artista",
+        "line_p": "David Ortiz HOF",
+        "line_c": "David Ortiz HOF Limited Edition",
+        "rest": "Limited Edition",
+        "n_p": 1,
+        "n_c": 1,
+        "vit_p": [
+          "Toro"
+        ],
+        "vit_c": [
+          "Figurado"
+        ],
+        "reason0": "needs judgment; suffix=\"Limited Edition\"; n=1/1"
+      },
+      {
+        "ids": [
+          "cig-baron-ullmann",
+          "cig-baron-ullmann-edicion-limitada"
+        ],
+        "brand": "Baron",
+        "line_p": "Ullmann",
+        "line_c": "Ullmann Edicion Limitada",
+        "rest": "Edicion Limitada",
+        "n_p": 2,
+        "n_c": 1,
+        "vit_p": [
+          "Robusto",
+          "Torpedo"
+        ],
+        "vit_c": [
+          "Double Robusto"
+        ],
+        "reason0": "needs judgment; suffix=\"Edicion Limitada\"; n=2/1"
+      },
+      {
+        "ids": [
+          "cig-baron-ullmann",
+          "cig-baron-ullmann-gran-reserva"
+        ],
+        "brand": "Baron",
+        "line_p": "Ullmann",
+        "line_c": "Ullmann Gran Reserva",
+        "rest": "Gran Reserva",
+        "n_p": 2,
+        "n_c": 1,
+        "vit_p": [
+          "Robusto",
+          "Torpedo"
+        ],
+        "vit_c": [
+          "Torpedo"
+        ],
+        "reason0": "needs judgment; suffix=\"Gran Reserva\"; n=2/1"
+      },
+      {
+        "ids": [
+          "cig-bentley-green",
+          "cig-bentley-green-limited-edition"
+        ],
+        "brand": "Bentley",
+        "line_p": "Green",
+        "line_c": "Green Limited Edition",
+        "rest": "Limited Edition",
+        "n_p": 7,
+        "n_c": 1,
+        "vit_p": [
+          "Half Corona",
+          "Corona",
+          "Robusto",
+          "Belicoso",
+          "Toro",
+          "Churchill",
+          "Gran Toro"
+        ],
+        "vit_c": [
+          "Toro"
+        ],
+        "reason0": "needs judgment; suffix=\"Limited Edition\"; n=7/1"
+      },
+      {
+        "ids": [
+          "cig-gilbert-de-montsalvat-classic",
+          "cig-gilbert-de-montsalvat-classic-limited-edition-15-years"
+        ],
+        "brand": "Gilbert",
+        "line_p": "de Montsalvat Classic",
+        "line_c": "de Montsalvat Classic Limited Edition 15 Years",
+        "rest": "Limited Edition 15 Years",
+        "n_p": 4,
+        "n_c": 1,
+        "vit_p": [
+          "Corona",
+          "Robusto",
+          "Belicoso",
+          "Gran Toro"
+        ],
+        "vit_c": [
+          "Gran Toro"
+        ],
+        "reason0": "needs judgment; suffix=\"Limited Edition 15 Years\"; n=4/1"
+      },
+      {
+        "ids": [
+          "cig-leon-jimenes-series-300-cameroon",
+          "cig-leon-jimenes-series-300-cameroon-limited-edition"
+        ],
+        "brand": "Leon",
+        "line_p": "Jimenes Series 300 Cameroon",
+        "line_c": "Jimenes Series 300 Cameroon Limited Edition",
+        "rest": "Limited Edition",
+        "n_p": 3,
+        "n_c": 1,
+        "vit_p": [
+          "Corona",
+          "Churchill",
+          "Robusto"
+        ],
+        "vit_c": [
+          "Gran Toro"
+        ],
+        "reason0": "needs judgment; suffix=\"Limited Edition\"; n=3/1"
+      },
+      {
+        "ids": [
+          "cig-my-father-limited-edition-pepin-mania",
+          "cig-my-father-limited-edition-pepin-mania-10th-anniversary"
+        ],
+        "brand": "My Father",
+        "line_p": "Limited Edition Pepin Mania",
+        "line_c": "Limited Edition Pepin Mania 10th Anniversary",
+        "rest": "10th Anniversary",
+        "n_p": 1,
+        "n_c": 1,
+        "vit_p": [
+          "Toro"
+        ],
+        "vit_c": [
+          "Toro"
+        ],
+        "reason0": "needs judgment; suffix=\"10th Anniversary\"; n=1/1"
+      },
+      {
+        "ids": [
+          "cig-rocky-patel-hamlet-25th-year",
+          "cig-rocky-patel-hamlet-25th-year-series-2020"
+        ],
+        "brand": "Rocky Patel",
+        "line_p": "Hamlet 25th Year",
+        "line_c": "Hamlet 25th Year Series 2020",
+        "rest": "Series 2020",
+        "n_p": 1,
+        "n_c": 1,
+        "vit_p": [
+          "Robusto"
+        ],
+        "vit_c": [
+          "Toro"
+        ],
+        "reason0": "needs judgment; suffix=\"Series 2020\"; n=1/1"
+      },
+      {
+        "ids": [
+          "cig-torano-torano-exodus",
+          "cig-torano-torano-exodus-1959-50-years-limited-edition-cuban"
+        ],
+        "brand": "Toraño",
+        "line_p": "Torano Exodus",
+        "line_c": "Torano Exodus 1959 50 Years Limited Edition Cuban",
+        "rest": "1959 50 Years Limited Edition Cuban",
+        "n_p": 2,
+        "n_c": 1,
+        "vit_p": [
+          "Torpedo",
+          "Gordo"
+        ],
+        "vit_c": [
+          "Toro"
+        ],
+        "reason0": "needs judgment; suffix=\"1959 50 Years Limited Edition Cuban\"; n=2/1"
+      },
+      {
+        "ids": [
+          "cig-torano-torano-exodus-1959-50-years",
+          "cig-torano-torano-exodus-1959-50-years-limited-edition-cuban"
+        ],
+        "brand": "Toraño",
+        "line_p": "Torano Exodus 1959 50 Years",
+        "line_c": "Torano Exodus 1959 50 Years Limited Edition Cuban",
+        "rest": "Limited Edition Cuban",
+        "n_p": 2,
+        "n_c": 1,
+        "vit_p": [
+          "Robusto",
+          "Torpedo"
+        ],
+        "vit_c": [
+          "Toro"
+        ],
+        "reason0": "needs judgment; suffix=\"Limited Edition Cuban\"; n=2/1"
+      },
+      {
+        "ids": [
+          "cig-vegafina-nicaragua",
+          "cig-vegafina-nicaragua-dosmilcatorce-gran-reserva-x-anniversario"
+        ],
+        "brand": "VegaFina",
+        "line_p": "Nicaragua",
+        "line_c": "Nicaragua Dosmilcatorce Gran Reserva X Anniversario",
+        "rest": "Dosmilcatorce Gran Reserva X Anniversario",
+        "n_p": 3,
+        "n_c": 1,
+        "vit_p": [
+          "Corona",
+          "Robusto",
+          "Toro"
+        ],
+        "vit_c": [
+          "Gran Toro"
+        ],
+        "reason0": "needs judgment; suffix=\"Dosmilcatorce Gran Reserva X Anniversario\"; n=3/1"
+      },
+      {
+        "ids": [
+          "cig-vegas-de-santiago-d8-limited-edition",
+          "cig-vegas-de-santiago-d8-limited-edition-very-limited-edition-2024"
+        ],
+        "brand": "Vegas",
+        "line_p": "de Santiago D8 Limited Edition",
+        "line_c": "de Santiago D8 Limited Edition very Limited Edition 2024",
+        "rest": "very Limited Edition 2024",
+        "n_p": 1,
+        "n_c": 1,
+        "vit_p": [
+          "Lancero"
+        ],
+        "vit_c": [
+          "Toro"
+        ],
+        "reason0": "needs judgment; suffix=\"very Limited Edition 2024\"; n=1/1"
+      }
+    ],
+    "other": [
+      {
+        "ids": [
+          "cig-artista-factory-classics-puro-ambar",
+          "cig-artista-factory-classics-puro-ambar-legacy-grand"
+        ],
+        "brand": "Artista",
+        "line_p": "Factory Classics Puro Ambar",
+        "line_c": "Factory Classics Puro Ambar Legacy Grand",
+        "rest": "Legacy Grand",
+        "n_p": 2,
+        "n_c": 1,
+        "vit_p": [
+          "Short Robusto",
+          "Toro"
+        ],
+        "vit_c": [
+          "Toro"
+        ],
+        "reason0": "needs judgment; suffix=\"Legacy Grand\"; n=2/1"
+      },
+      {
+        "ids": [
+          "cig-ave-maria-argentum",
+          "cig-ave-maria-argentum-morning-star"
+        ],
+        "brand": "Ave Maria",
+        "line_p": "Argentum",
+        "line_c": "Argentum Morning Star",
+        "rest": "Morning Star",
+        "n_p": 2,
+        "n_c": 1,
+        "vit_p": [
+          "Robusto",
+          "Gordo"
+        ],
+        "vit_c": [
+          "Perfecto"
+        ],
+        "reason0": "needs judgment; suffix=\"Morning Star\"; n=2/1"
+      },
+      {
+        "ids": [
+          "cig-avo-heritage",
+          "cig-avo-heritage-special"
+        ],
+        "brand": "Avo",
+        "line_p": "Heritage",
+        "line_c": "Heritage Special",
+        "rest": "Special",
+        "n_p": 3,
+        "n_c": 1,
+        "vit_p": [
+          "Robusto",
+          "Toro",
+          "Short Robusto"
+        ],
+        "vit_c": [
+          "Toro"
+        ],
+        "reason0": "needs judgment; suffix=\"Special\"; n=3/1"
+      },
+      {
+        "ids": [
+          "cig-avo-syncro",
+          "cig-avo-syncro-special"
+        ],
+        "brand": "Avo",
+        "line_p": "Syncro",
+        "line_c": "Syncro Special",
+        "rest": "Special",
+        "n_p": 2,
+        "n_c": 1,
+        "vit_p": [
+          "Robusto",
+          "Toro"
+        ],
+        "vit_c": [
+          "Toro"
+        ],
+        "reason0": "needs judgment; suffix=\"Special\"; n=2/1"
+      },
+      {
+        "ids": [
+          "cig-balmoral-dominican-selection",
+          "cig-balmoral-dominican-selection-small"
+        ],
+        "brand": "Balmoral",
+        "line_p": "Dominican Selection",
+        "line_c": "Dominican Selection SMALL",
+        "rest": "SMALL",
+        "n_p": 3,
+        "n_c": 1,
+        "vit_p": [
+          "Panetela",
+          "Corona",
+          "Churchill"
+        ],
+        "vit_c": [
+          "Panetela"
+        ],
+        "reason0": "needs judgment; suffix=\"SMALL\"; n=3/1"
+      },
+      {
+        "ids": [
+          "cig-black-label-trading-company-nocurne",
+          "cig-black-label-trading-company-nocurne-amp-short-salomon"
+        ],
+        "brand": "Black Label",
+        "line_p": "Trading Company Nocurne",
+        "line_c": "Trading Company Nocurne &amp; Short Salomon",
+        "rest": "amp; Short Salomon",
+        "n_p": 2,
+        "n_c": 1,
+        "vit_p": [
+          "Toro",
+          "Robusto"
+        ],
+        "vit_c": [
+          "Perfecto"
+        ],
+        "reason0": "needs judgment; suffix=\"amp; Short Salomon\"; n=2/1"
+      },
+      {
+        "ids": [
+          "cig-black-label-trading-company-santa-muerte",
+          "cig-black-label-trading-company-santa-muerte-barrio-santo"
+        ],
+        "brand": "Black Label",
+        "line_p": "Trading Company Santa Muerte",
+        "line_c": "Trading Company Santa Muerte Barrio Santo",
+        "rest": "Barrio Santo",
+        "n_p": 3,
+        "n_c": 1,
+        "vit_p": [
+          "Lancero",
+          "Corona Gorda",
+          "Short Robusto"
+        ],
+        "vit_c": [
+          "Corona Gorda"
+        ],
+        "reason0": "needs judgment; suffix=\"Barrio Santo\"; n=3/1"
+      },
+      {
+        "ids": [
+          "cig-bock-y-ca",
+          "cig-bock-y-ca-25-anos-renacimiento"
+        ],
+        "brand": "Bock",
+        "line_p": "y Ca.",
+        "line_c": "y Ca. 25 Anos Renacimiento",
+        "rest": "25 Anos Renacimiento",
+        "n_p": 5,
+        "n_c": 1,
+        "vit_p": [
+          "Panetela",
+          "Corona",
+          "Churchill",
+          "Short Robusto",
+          "Robusto"
+        ],
+        "vit_c": [
+          "Gran Toro"
+        ],
+        "reason0": "needs judgment; suffix=\"25 Anos Renacimiento\"; n=5/1"
+      },
+      {
+        "ids": [
+          "cig-casa-de-torres",
+          "cig-casa-de-torres-bold"
+        ],
+        "brand": "Casa",
+        "line_p": "de Torres",
+        "line_c": "de Torres Bold",
+        "rest": "Bold",
+        "n_p": 12,
+        "n_c": 1,
+        "vit_p": [
+          "Panetela",
+          "Half Corona",
+          "Corona",
+          "Double Corona",
+          "Short Robusto",
+          "Perfecto",
+          "Toro",
+          "Churchill",
+          "Torpedo",
+          "Robusto",
+          "Figurado",
+          "Double Robusto"
+        ],
+        "vit_c": [
+          "Short Robusto"
+        ],
+        "reason0": "needs judgment; suffix=\"Bold\"; n=12/1"
+      },
+      {
+        "ids": [
+          "cig-casdagli-villa",
+          "cig-casdagli-villa-exquisito-nicarita"
+        ],
+        "brand": "Casdagli",
+        "line_p": "Villa",
+        "line_c": "Villa Exquisito Nicarita",
+        "rest": "Exquisito Nicarita",
+        "n_p": 4,
+        "n_c": 1,
+        "vit_p": [
+          "Lonsdale",
+          "Corona Gorda",
+          "Robusto",
+          "Toro"
+        ],
+        "vit_c": [
+          "Petit Corona"
+        ],
+        "reason0": "needs judgment; suffix=\"Exquisito Nicarita\"; n=4/1"
+      },
+      {
+        "ids": [
+          "cig-casdagli-villa",
+          "cig-casdagli-villa-exquisito-peruvita"
+        ],
+        "brand": "Casdagli",
+        "line_p": "Villa",
+        "line_c": "Villa Exquisito Peruvita",
+        "rest": "Exquisito Peruvita",
+        "n_p": 4,
+        "n_c": 1,
+        "vit_p": [
+          "Lonsdale",
+          "Corona Gorda",
+          "Robusto",
+          "Toro"
+        ],
+        "vit_c": [
+          "Petit Corona"
+        ],
+        "reason0": "needs judgment; suffix=\"Exquisito Peruvita\"; n=4/1"
+      },
+      {
+        "ids": [
+          "cig-chinchalero-torcidos",
+          "cig-chinchalero-torcidos-tres"
+        ],
+        "brand": "Chinchalero",
+        "line_p": "Torcidos",
+        "line_c": "Torcidos Très",
+        "rest": "Très",
+        "n_p": 2,
+        "n_c": 1,
+        "vit_p": [
+          "Petit Corona",
+          "Gordo"
+        ],
+        "vit_c": [
+          "Petit Corona"
+        ],
+        "reason0": "needs judgment; suffix=\"Très\"; n=2/1"
+      },
+      {
+        "ids": [
+          "cig-cigarkings-maduro",
+          "cig-cigarkings-maduro-3-years-aged"
+        ],
+        "brand": "Cigarkings",
+        "line_p": "Maduro",
+        "line_c": "Maduro 3 Years aged",
+        "rest": "3 Years aged",
+        "n_p": 4,
+        "n_c": 1,
+        "vit_p": [
+          "Corona",
+          "Short Robusto",
+          "Robusto",
+          "Toro"
+        ],
+        "vit_c": [
+          "Robusto"
+        ],
+        "reason0": "needs judgment; suffix=\"3 Years aged\"; n=4/1"
+      },
+      {
+        "ids": [
+          "cig-culture-dominican-reserve",
+          "cig-culture-dominican-reserve-paris"
+        ],
+        "brand": "Culture",
+        "line_p": "Dominican Reserve",
+        "line_c": "Dominican Reserve Paris",
+        "rest": "Paris",
+        "n_p": 5,
+        "n_c": 1,
+        "vit_p": [
+          "Petit Corona",
+          "Corona",
+          "Half Corona",
+          "Churchill",
+          "Belicoso"
+        ],
+        "vit_c": [
+          "Double Robusto"
+        ],
+        "reason0": "needs judgment; suffix=\"Paris\"; n=5/1"
+      },
+      {
+        "ids": [
+          "cig-culture-dominican-reserve",
+          "cig-culture-dominican-reserve-rome"
+        ],
+        "brand": "Culture",
+        "line_p": "Dominican Reserve",
+        "line_c": "Dominican Reserve Rome",
+        "rest": "Rome",
+        "n_p": 5,
+        "n_c": 1,
+        "vit_p": [
+          "Petit Corona",
+          "Corona",
+          "Half Corona",
+          "Churchill",
+          "Belicoso"
+        ],
+        "vit_c": [
+          "Robusto"
+        ],
+        "reason0": "needs judgment; suffix=\"Rome\"; n=5/1"
+      },
+      {
+        "ids": [
+          "cig-culture-dominican-reserve",
+          "cig-culture-dominican-reserve-sevilla"
+        ],
+        "brand": "Culture",
+        "line_p": "Dominican Reserve",
+        "line_c": "Dominican Reserve Sevilla",
+        "rest": "Sevilla",
+        "n_p": 5,
+        "n_c": 1,
+        "vit_p": [
+          "Petit Corona",
+          "Corona",
+          "Half Corona",
+          "Churchill",
+          "Belicoso"
+        ],
+        "vit_c": [
+          "Toro"
+        ],
+        "reason0": "needs judgment; suffix=\"Sevilla\"; n=5/1"
+      },
+      {
+        "ids": [
+          "cig-domaine-de-lavalette-classic",
+          "cig-domaine-de-lavalette-classic-small"
+        ],
+        "brand": "Domaine",
+        "line_p": "de Lavalette Classic",
+        "line_c": "de Lavalette Classic Small",
+        "rest": "Small",
+        "n_p": 6,
+        "n_c": 1,
+        "vit_p": [
+          "Panetela",
+          "Petit Corona",
+          "Corona",
+          "Robusto",
+          "Double Corona",
+          "Piramide"
+        ],
+        "vit_c": [
+          "Panetela"
+        ],
+        "reason0": "needs judgment; suffix=\"Small\"; n=6/1"
+      },
+      {
+        "ids": [
+          "cig-domaine-de-lavalette-panama",
+          "cig-domaine-de-lavalette-panama-breve"
+        ],
+        "brand": "Domaine",
+        "line_p": "de Lavalette Panama",
+        "line_c": "de Lavalette Panama Breve",
+        "rest": "Breve",
+        "n_p": 2,
+        "n_c": 1,
+        "vit_p": [
+          "Corona",
+          "Toro"
+        ],
+        "vit_c": [
+          "Robusto"
+        ],
+        "reason0": "needs judgment; suffix=\"Breve\"; n=2/1"
+      },
+      {
+        "ids": [
+          "cig-dos-santos-la-regenta-1921",
+          "cig-dos-santos-la-regenta-1921-anejo-rum-barrel-aged"
+        ],
+        "brand": "Dos Santos",
+        "line_p": "La Regenta 1921",
+        "line_c": "La Regenta 1921 Anejo Rum Barrel Aged",
+        "rest": "Anejo Rum Barrel Aged",
+        "n_p": 4,
+        "n_c": 1,
+        "vit_p": [
+          "Half Corona",
+          "Robusto",
+          "Gran Toro",
+          "Short Robusto"
+        ],
+        "vit_c": [
+          "Piramide"
+        ],
+        "reason0": "needs judgment; suffix=\"Anejo Rum Barrel Aged\"; n=4/1"
+      },
+      {
+        "ids": [
+          "cig-drew-estate-de-acid",
+          "cig-drew-estate-acid-blondie-shipping-restrictions"
+        ],
+        "brand": "Drew Estate",
+        "line_p": "Acid",
+        "line_c": "Acid Blondie - Shipping restrictions",
+        "rest": "Blondie - Shipping restrictions",
+        "n_p": 3,
+        "n_c": 1,
+        "vit_p": [
+          "Acid Blondie",
+          "Acid Kuba Kuba",
+          "Krush"
+        ],
+        "vit_c": [
+          "Belicoso"
+        ],
+        "reason0": "needs judgment; suffix=\"Blondie - Shipping restrictions\"; n=3/1"
+      },
+      {
+        "ids": [
+          "cig-drew-estate-liga-undercrown",
+          "cig-drew-estate-liga-undercrown-dogma"
+        ],
+        "brand": "Drew Estate",
+        "line_p": "Liga Undercrown",
+        "line_c": "Liga Undercrown Dogma",
+        "rest": "Dogma",
+        "n_p": 3,
+        "n_c": 1,
+        "vit_p": [
+          "Toro",
+          "Robusto",
+          "Gordo"
+        ],
+        "vit_c": [
+          "Toro"
+        ],
+        "reason0": "needs judgment; suffix=\"Dogma\"; n=3/1"
+      },
+      {
+        "ids": [
+          "cig-drew-estate-norteno",
+          "cig-drew-estate-norteno-by-humidor"
+        ],
+        "brand": "Drew Estate",
+        "line_p": "Norteno",
+        "line_c": "Norteno by Humidor",
+        "rest": "by Humidor",
+        "n_p": 3,
+        "n_c": 1,
+        "vit_p": [
+          "Lonsdale",
+          "Corona",
+          "Toro"
+        ],
+        "vit_c": [
+          "Lonsdale"
+        ],
+        "reason0": "needs judgment; suffix=\"by Humidor\"; n=3/1"
+      },
+      {
+        "ids": [
+          "cig-ep-carrillo-epc-pledge",
+          "cig-ep-carrillo-pledge"
+        ],
+        "brand": "E.P. Carrillo",
+        "line_p": "Pledge",
+        "line_c": "Pledge / Encore",
+        "rest": "Encore",
+        "n_p": 4,
+        "n_c": 1,
+        "vit_p": [
+          "Pledge Prequel",
+          "Pledge Apogee",
+          "Chapter",
+          "Chapter II"
+        ],
+        "vit_c": [
+          "Pledge Prequel (robusto)"
+        ],
+        "reason0": "needs judgment; suffix=\"Encore\"; n=4/1"
+      },
+      {
+        "ids": [
+          "cig-ep-carrillo-epc-pledge",
+          "cig-e-p-carrillo-pledge-apogee"
+        ],
+        "brand": "E.P. Carrillo",
+        "line_p": "Pledge",
+        "line_c": "Pledge Apogee",
+        "rest": "Apogee",
+        "n_p": 4,
+        "n_c": 1,
+        "vit_p": [
+          "Pledge Prequel",
+          "Pledge Apogee",
+          "Chapter",
+          "Chapter II"
+        ],
+        "vit_c": [
+          "Pledge Apogee"
+        ],
+        "reason0": "needs judgment; suffix=\"Apogee\"; n=4/1"
+      },
+      {
+        "ids": [
+          "cig-gh-g-h-black-dahlia",
+          "cig-gh-g-h-black-dahlia-shorty"
+        ],
+        "brand": "Gh",
+        "line_p": "G.H. Black Dahlia",
+        "line_c": "G.H. Black Dahlia Shorty",
+        "rest": "Shorty",
+        "n_p": 4,
+        "n_c": 1,
+        "vit_p": [
+          "Corona Gorda",
+          "Robusto",
+          "Piramide",
+          "Double Robusto"
+        ],
+        "vit_c": [
+          "Robusto"
+        ],
+        "reason0": "needs judgment; suffix=\"Shorty\"; n=4/1"
+      },
+      {
+        "ids": [
+          "cig-gh-g-h-connecticut-no-1",
+          "cig-gh-g-h-connecticut-no-1-shorty"
+        ],
+        "brand": "Gh",
+        "line_p": "G.H. Connecticut No. 1",
+        "line_c": "G.H. Connecticut No. 1 Shorty",
+        "rest": "Shorty",
+        "n_p": 6,
+        "n_c": 1,
+        "vit_p": [
+          "Corona Gorda",
+          "Churchill",
+          "Short Robusto",
+          "Robusto",
+          "Piramide",
+          "Double Robusto"
+        ],
+        "vit_c": [
+          "Robusto"
+        ],
+        "reason0": "needs judgment; suffix=\"Shorty\"; n=6/1"
+      },
+      {
+        "ids": [
+          "cig-gh-g-h-corojo-no-5",
+          "cig-gh-g-h-corojo-no-5-shorty"
+        ],
+        "brand": "Gh",
+        "line_p": "G.H. Corojo No. 5",
+        "line_c": "G.H. Corojo No. 5 Shorty",
+        "rest": "Shorty",
+        "n_p": 4,
+        "n_c": 1,
+        "vit_p": [
+          "Corona Gorda",
+          "Churchill",
+          "Robusto",
+          "Double Robusto"
+        ],
+        "vit_c": [
+          "Robusto"
+        ],
+        "reason0": "needs judgment; suffix=\"Shorty\"; n=4/1"
+      },
+      {
+        "ids": [
+          "cig-gh-g-h-criollo-no-3",
+          "cig-gh-g-h-criollo-no-3-shorty"
+        ],
+        "brand": "Gh",
+        "line_p": "G.H. Criollo No. 3",
+        "line_c": "G.H. Criollo No. 3 Shorty",
+        "rest": "Shorty",
+        "n_p": 6,
+        "n_c": 1,
+        "vit_p": [
+          "Corona Gorda",
+          "Churchill",
+          "Short Robusto",
+          "Robusto",
+          "Piramide",
+          "Double Robusto"
+        ],
+        "vit_c": [
+          "Robusto"
+        ],
+        "reason0": "needs judgment; suffix=\"Shorty\"; n=6/1"
+      },
+      {
+        "ids": [
+          "cig-gh-g-h-gran-reserva-no-5",
+          "cig-gh-g-h-gran-reserva-no-5-shorty"
+        ],
+        "brand": "Gh",
+        "line_p": "G.H. Gran Reserva No. 5",
+        "line_c": "G.H. Gran Reserva No. 5 Shorty",
+        "rest": "Shorty",
+        "n_p": 3,
+        "n_c": 1,
+        "vit_p": [
+          "Corona Gorda",
+          "Piramide",
+          "Double Robusto"
+        ],
+        "vit_c": [
+          "Robusto"
+        ],
+        "reason0": "needs judgment; suffix=\"Shorty\"; n=3/1"
+      },
+      {
+        "ids": [
+          "cig-gilbert-de-montsalvat-classic",
+          "cig-gilbert-de-montsalvat-classic-chunky"
+        ],
+        "brand": "Gilbert",
+        "line_p": "de Montsalvat Classic",
+        "line_c": "de Montsalvat Classic Chunky",
+        "rest": "Chunky",
+        "n_p": 4,
+        "n_c": 1,
+        "vit_p": [
+          "Corona",
+          "Robusto",
+          "Belicoso",
+          "Gran Toro"
+        ],
+        "vit_c": [
+          "Gordo"
+        ],
+        "reason0": "needs judgment; suffix=\"Chunky\"; n=4/1"
+      },
+      {
+        "ids": [
+          "cig-gurkha-heritage",
+          "cig-gurkha-heritage-corto"
+        ],
+        "brand": "Gurkha",
+        "line_p": "Heritage",
+        "line_c": "Heritage Corto",
+        "rest": "Corto",
+        "n_p": 2,
+        "n_c": 1,
+        "vit_p": [
+          "Toro",
+          "Robusto"
+        ],
+        "vit_c": [
+          "Robusto"
+        ],
+        "reason0": "needs judgment; suffix=\"Corto\"; n=2/1"
+      },
+      {
+        "ids": [
+          "cig-gurkha-heritage-maduro",
+          "cig-gurkha-heritage-maduro-corto"
+        ],
+        "brand": "Gurkha",
+        "line_p": "Heritage Maduro",
+        "line_c": "Heritage Maduro Corto",
+        "rest": "Corto",
+        "n_p": 2,
+        "n_c": 1,
+        "vit_p": [
+          "Toro",
+          "Robusto"
+        ],
+        "vit_c": [
+          "Robusto"
+        ],
+        "reason0": "needs judgment; suffix=\"Corto\"; n=2/1"
+      },
+      {
+        "ids": [
+          "cig-gurkha-marquesa",
+          "cig-gurkha-marquesa-kiste"
+        ],
+        "brand": "Gurkha",
+        "line_p": "Marquesa",
+        "line_c": "Marquesa Kiste",
+        "rest": "Kiste",
+        "n_p": 2,
+        "n_c": 1,
+        "vit_p": [
+          "Robusto",
+          "Toro"
+        ],
+        "vit_c": [
+          "Toro"
+        ],
+        "reason0": "needs judgment; suffix=\"Kiste\"; n=2/1"
+      },
+      {
+        "ids": [
+          "cig-hr-h-r-signature",
+          "cig-hr-h-r-signature-signature"
+        ],
+        "brand": "Hr",
+        "line_p": "H.R. Signature",
+        "line_c": "H.R. Signature Signature",
+        "rest": "Signature",
+        "n_p": 2,
+        "n_c": 1,
+        "vit_p": [
+          "Belicoso",
+          "Toro"
+        ],
+        "vit_c": [
+          "Corona Gorda"
+        ],
+        "reason0": "needs judgment; suffix=\"Signature\"; n=2/1"
+      },
+      {
+        "ids": [
+          "cig-ibis-honduras-maduro",
+          "cig-ibis-honduras-maduro-antiguo"
+        ],
+        "brand": "Ibis",
+        "line_p": "Honduras Maduro",
+        "line_c": "Honduras Maduro Antiguo",
+        "rest": "Antiguo",
+        "n_p": 2,
+        "n_c": 1,
+        "vit_p": [
+          "Short Robusto",
+          "Double Robusto"
+        ],
+        "vit_c": [
+          "Figurado"
+        ],
+        "reason0": "needs judgment; suffix=\"Antiguo\"; n=2/1"
+      },
+      {
+        "ids": [
+          "cig-kafie-1901-connecticut",
+          "cig-kafie-1901-connecticut-balicoso"
+        ],
+        "brand": "Kafie",
+        "line_p": "1901 Connecticut",
+        "line_c": "1901 Connecticut Balicoso",
+        "rest": "Balicoso",
+        "n_p": 2,
+        "n_c": 1,
+        "vit_p": [
+          "Robusto",
+          "Toro"
+        ],
+        "vit_c": [
+          "Belicoso"
+        ],
+        "reason0": "needs judgment; suffix=\"Balicoso\"; n=2/1"
+      },
+      {
+        "ids": [
+          "cig-kristoff-gc-signature-series",
+          "cig-kristoff-gc-signature-series-intertabac-2023"
+        ],
+        "brand": "Kristoff",
+        "line_p": "GC Signature Series",
+        "line_c": "GC Signature Series Intertabac 2023",
+        "rest": "Intertabac 2023",
+        "n_p": 3,
+        "n_c": 1,
+        "vit_p": [
+          "Churchill",
+          "Torpedo",
+          "Robusto"
+        ],
+        "vit_c": [
+          "Toro"
+        ],
+        "reason0": "needs judgment; suffix=\"Intertabac 2023\"; n=3/1"
+      },
+      {
+        "ids": [
+          "cig-kristoff-gc-signature-series",
+          "cig-kristoff-gc-signature-series-jt"
+        ],
+        "brand": "Kristoff",
+        "line_p": "GC Signature Series",
+        "line_c": "GC Signature Series JT",
+        "rest": "JT",
+        "n_p": 3,
+        "n_c": 1,
+        "vit_p": [
+          "Churchill",
+          "Torpedo",
+          "Robusto"
+        ],
+        "vit_c": [
+          "Toro"
+        ],
+        "reason0": "needs judgment; suffix=\"JT\"; n=3/1"
+      },
+      {
+        "ids": [
+          "cig-kristoff-gc-signature-series",
+          "cig-kristoff-gc-signature-series-pca-2022"
+        ],
+        "brand": "Kristoff",
+        "line_p": "GC Signature Series",
+        "line_c": "GC Signature Series PCA 2022",
+        "rest": "PCA 2022",
+        "n_p": 3,
+        "n_c": 1,
+        "vit_p": [
+          "Churchill",
+          "Torpedo",
+          "Robusto"
+        ],
+        "vit_c": [
+          "Perfecto"
+        ],
+        "reason0": "needs judgment; suffix=\"PCA 2022\"; n=3/1"
+      },
+      {
+        "ids": [
+          "cig-kristoff-gc-signature-series",
+          "cig-kristoff-gc-signature-series-pca-2026"
+        ],
+        "brand": "Kristoff",
+        "line_p": "GC Signature Series",
+        "line_c": "GC Signature Series PCA 2026",
+        "rest": "PCA 2026",
+        "n_p": 3,
+        "n_c": 1,
+        "vit_p": [
+          "Churchill",
+          "Torpedo",
+          "Robusto"
+        ],
+        "vit_c": [
+          "Toro"
+        ],
+        "reason0": "needs judgment; suffix=\"PCA 2026\"; n=3/1"
+      },
+      {
+        "ids": [
+          "cig-la-aroma-de-cuba-la-aroma-del-caribe-base-line",
+          "cig-la-aroma-de-cuba-la-aroma-del-caribe-base-line-el-jefe"
+        ],
+        "brand": "La Aroma de Cuba",
+        "line_p": "La Aroma del Caribe Base Line",
+        "line_c": "La Aroma del Caribe Base Line El Jefe",
+        "rest": "El Jefe",
+        "n_p": 3,
+        "n_c": 1,
+        "vit_p": [
+          "Short Robusto",
+          "Churchill",
+          "Robusto"
+        ],
+        "vit_c": [
+          "Gordo"
+        ],
+        "reason0": "needs judgment; suffix=\"El Jefe\"; n=3/1"
+      },
+      {
+        "ids": [
+          "cig-la-aroma-de-cuba-la-aroma-del-caribe-base-line",
+          "cig-la-aroma-de-cuba-la-aroma-del-caribe-base-line-immensa"
+        ],
+        "brand": "La Aroma de Cuba",
+        "line_p": "La Aroma del Caribe Base Line",
+        "line_c": "La Aroma del Caribe Base Line Immensa",
+        "rest": "Immensa",
+        "n_p": 3,
+        "n_c": 1,
+        "vit_p": [
+          "Short Robusto",
+          "Churchill",
+          "Robusto"
+        ],
+        "vit_c": [
+          "Gordo"
+        ],
+        "reason0": "needs judgment; suffix=\"Immensa\"; n=3/1"
+      },
+      {
+        "ids": [
+          "cig-la-aroma-de-cuba-la-aroma-del-caribe-base-line",
+          "cig-la-aroma-de-cuba-la-aroma-del-caribe-base-line-monarch"
+        ],
+        "brand": "La Aroma de Cuba",
+        "line_p": "La Aroma del Caribe Base Line",
+        "line_c": "La Aroma del Caribe Base Line Monarch",
+        "rest": "Monarch",
+        "n_p": 3,
+        "n_c": 1,
+        "vit_p": [
+          "Short Robusto",
+          "Churchill",
+          "Robusto"
+        ],
+        "vit_c": [
+          "Toro"
+        ],
+        "reason0": "needs judgment; suffix=\"Monarch\"; n=3/1"
+      },
+      {
+        "ids": [
+          "cig-la-aroma-de-cuba-la-aroma-del-caribe-mi-amor",
+          "cig-la-aroma-de-cuba-la-aroma-del-caribe-mi-amor-duque"
+        ],
+        "brand": "La Aroma de Cuba",
+        "line_p": "La Aroma del Caribe Mi Amor",
+        "line_c": "La Aroma del Caribe Mi Amor Duque",
+        "rest": "Duque",
+        "n_p": 2,
+        "n_c": 1,
+        "vit_p": [
+          "Robusto",
+          "Belicoso"
+        ],
+        "vit_c": [
+          "Robusto"
+        ],
+        "reason0": "needs judgment; suffix=\"Duque\"; n=2/1"
+      },
+      {
+        "ids": [
+          "cig-la-aroma-de-cuba-la-aroma-del-caribe-mi-amor",
+          "cig-la-aroma-de-cuba-la-aroma-del-caribe-mi-amor-valentino"
+        ],
+        "brand": "La Aroma de Cuba",
+        "line_p": "La Aroma del Caribe Mi Amor",
+        "line_c": "La Aroma del Caribe Mi Amor Valentino",
+        "rest": "Valentino",
+        "n_p": 2,
+        "n_c": 1,
+        "vit_p": [
+          "Robusto",
+          "Belicoso"
+        ],
+        "vit_c": [
+          "Gran Toro"
+        ],
+        "reason0": "needs judgment; suffix=\"Valentino\"; n=2/1"
+      },
+      {
+        "ids": [
+          "cig-la-aurora-1495-series",
+          "cig-la-aurora-1495-series-sumo"
+        ],
+        "brand": "La Aurora",
+        "line_p": "1495 Series",
+        "line_c": "1495 Series Sumo",
+        "rest": "Sumo",
+        "n_p": 3,
+        "n_c": 1,
+        "vit_p": [
+          "Robusto",
+          "Churchill",
+          "Belicoso"
+        ],
+        "vit_c": [
+          "Short Robusto"
+        ],
+        "reason0": "needs judgment; suffix=\"Sumo\"; n=3/1"
+      },
+      {
+        "ids": [
+          "cig-la-aurora-cameroon-1903",
+          "cig-la-aurora-cameroon-1903-deluxe"
+        ],
+        "brand": "La Aurora",
+        "line_p": "Cameroon 1903",
+        "line_c": "Cameroon 1903 Deluxe",
+        "rest": "Deluxe",
+        "n_p": 3,
+        "n_c": 1,
+        "vit_p": [
+          "Churchill",
+          "Robusto",
+          "Toro"
+        ],
+        "vit_c": [
+          "Robusto"
+        ],
+        "reason0": "needs judgment; suffix=\"Deluxe\"; n=3/1"
+      },
+      {
+        "ids": [
+          "cig-la-flor-dominicana-reserva-especial",
+          "cig-la-flor-dominicana-reserva-especial-el-jocko-2"
+        ],
+        "brand": "La Flor Dominicana",
+        "line_p": "Reserva Especial",
+        "line_c": "Reserva Especial El Jocko #2",
+        "rest": "El Jocko #2",
+        "n_p": 3,
+        "n_c": 1,
+        "vit_p": [
+          "Robusto",
+          "Toro",
+          "Robusto"
+        ],
+        "vit_c": [
+          "Perfecto"
+        ],
+        "reason0": "needs judgment; suffix=\"El Jocko #2\"; n=3/1"
+      },
+      {
+        "ids": [
+          "cig-leite-amp-alves-arapiraca",
+          "cig-leite-amp-alves-arapiraca-quadrado"
+        ],
+        "brand": "Leite",
+        "line_p": "&amp; Alves Arapiraca",
+        "line_c": "&amp; Alves Arapiraca Quadrado",
+        "rest": "Quadrado",
+        "n_p": 3,
+        "n_c": 1,
+        "vit_p": [
+          "Corona Gorda",
+          "Robusto",
+          "Gordo"
+        ],
+        "vit_c": [
+          "Belicoso"
+        ],
+        "reason0": "needs judgment; suffix=\"Quadrado\"; n=3/1"
+      },
+      {
+        "ids": [
+          "cig-leon-jimenes",
+          "cig-leon-jimenes-flavour-bee"
+        ],
+        "brand": "Leon",
+        "line_p": "Jimenes",
+        "line_c": "Jimenes Flavour Bee",
+        "rest": "Flavour Bee",
+        "n_p": 2,
+        "n_c": 1,
+        "vit_p": [
+          "Petit Corona",
+          "Robusto"
+        ],
+        "vit_c": [
+          "Petit Corona"
+        ],
+        "reason0": "needs judgment; suffix=\"Flavour Bee\"; n=2/1"
+      },
+      {
+        "ids": [
+          "cig-leon-jimenes",
+          "cig-leon-jimenes-flavour-blond"
+        ],
+        "brand": "Leon",
+        "line_p": "Jimenes",
+        "line_c": "Jimenes Flavour Blond",
+        "rest": "Flavour Blond",
+        "n_p": 2,
+        "n_c": 1,
+        "vit_p": [
+          "Petit Corona",
+          "Robusto"
+        ],
+        "vit_c": [
+          "Petit Corona"
+        ],
+        "reason0": "needs judgment; suffix=\"Flavour Blond\"; n=2/1"
+      },
+      {
+        "ids": [
+          "cig-leon-jimenes",
+          "cig-leon-jimenes-flavour-caribbean"
+        ],
+        "brand": "Leon",
+        "line_p": "Jimenes",
+        "line_c": "Jimenes Flavour Caribbean",
+        "rest": "Flavour Caribbean",
+        "n_p": 2,
+        "n_c": 1,
+        "vit_p": [
+          "Petit Corona",
+          "Robusto"
+        ],
+        "vit_c": [
+          "Petit Corona"
+        ],
+        "reason0": "needs judgment; suffix=\"Flavour Caribbean\"; n=2/1"
+      },
+      {
+        "ids": [
+          "cig-luciano-dreamer",
+          "cig-luciano-dreamer-de-luxe"
+        ],
+        "brand": "Luciano",
+        "line_p": "Dreamer",
+        "line_c": "Dreamer de Luxe",
+        "rest": "de Luxe",
+        "n_p": 2,
+        "n_c": 1,
+        "vit_p": [
+          "Lancero",
+          "Belicoso"
+        ],
+        "vit_c": [
+          "Toro"
+        ],
+        "reason0": "needs judgment; suffix=\"de Luxe\"; n=2/1"
+      },
+      {
+        "ids": [
+          "cig-manuel-alonso-maduro",
+          "cig-manuel-alonso-maduro-xl"
+        ],
+        "brand": "Manuel",
+        "line_p": "Alonso Maduro",
+        "line_c": "Alonso Maduro XL",
+        "rest": "XL",
+        "n_p": 2,
+        "n_c": 1,
+        "vit_p": [
+          "Robusto",
+          "Piramide"
+        ],
+        "vit_c": [
+          "Robusto"
+        ],
+        "reason0": "needs judgment; suffix=\"XL\"; n=2/1"
+      },
+      {
+        "ids": [
+          "cig-marca-fina-brazil",
+          "cig-marca-fina-brazil-breve"
+        ],
+        "brand": "Marca",
+        "line_p": "Fina Brazil",
+        "line_c": "Fina Brazil Breve",
+        "rest": "Breve",
+        "n_p": 3,
+        "n_c": 1,
+        "vit_p": [
+          "Corona",
+          "Churchill",
+          "Robusto"
+        ],
+        "vit_c": [
+          "Robusto"
+        ],
+        "reason0": "needs judgment; suffix=\"Breve\"; n=3/1"
+      },
+      {
+        "ids": [
+          "cig-marca-fina-brazil",
+          "cig-marca-fina-brazil-edicion-limitada-2023"
+        ],
+        "brand": "Marca",
+        "line_p": "Fina Brazil",
+        "line_c": "Fina Brazil Edición Limitada 2023",
+        "rest": "Edición Limitada 2023",
+        "n_p": 3,
+        "n_c": 1,
+        "vit_p": [
+          "Corona",
+          "Churchill",
+          "Robusto"
+        ],
+        "vit_c": [
+          "Toro"
+        ],
+        "reason0": "needs judgment; suffix=\"Edición Limitada 2023\"; n=3/1"
+      },
+      {
+        "ids": [
+          "cig-marca-fina-nicaragua",
+          "cig-marca-fina-nicaragua-breve"
+        ],
+        "brand": "Marca",
+        "line_p": "Fina Nicaragua",
+        "line_c": "Fina Nicaragua Breve",
+        "rest": "Breve",
+        "n_p": 3,
+        "n_c": 1,
+        "vit_p": [
+          "Corona",
+          "Robusto",
+          "Double Corona"
+        ],
+        "vit_c": [
+          "Piramide"
+        ],
+        "reason0": "needs judgment; suffix=\"Breve\"; n=3/1"
+      },
+      {
+        "ids": [
+          "cig-marca-fina-panama",
+          "cig-marca-fina-panama-robusto-breve"
+        ],
+        "brand": "Marca",
+        "line_p": "Fina Panama",
+        "line_c": "Fina Panama Robusto Breve",
+        "rest": "Robusto Breve",
+        "n_p": 3,
+        "n_c": 1,
+        "vit_p": [
+          "Corona",
+          "Robusto",
+          "Double Corona"
+        ],
+        "vit_c": [
+          "Short Robusto"
+        ],
+        "reason0": "needs judgment; suffix=\"Robusto Breve\"; n=3/1"
+      },
+      {
+        "ids": [
+          "cig-marca-fina-panama-maduro",
+          "cig-marca-fina-panama-maduro-breve"
+        ],
+        "brand": "Marca",
+        "line_p": "Fina Panama Maduro",
+        "line_c": "Fina Panama Maduro Breve",
+        "rest": "Breve",
+        "n_p": 2,
+        "n_c": 1,
+        "vit_p": [
+          "Corona",
+          "Robusto"
+        ],
+        "vit_c": [
+          "Robusto"
+        ],
+        "reason0": "needs judgment; suffix=\"Breve\"; n=2/1"
+      },
+      {
+        "ids": [
+          "cig-marca-fina-panama-maduro",
+          "cig-marca-fina-panama-maduro-edicion-limitada-2024"
+        ],
+        "brand": "Marca",
+        "line_p": "Fina Panama Maduro",
+        "line_c": "Fina Panama Maduro Edición Limitada 2024",
+        "rest": "Edición Limitada 2024",
+        "n_p": 2,
+        "n_c": 1,
+        "vit_p": [
+          "Corona",
+          "Robusto"
+        ],
+        "vit_c": [
+          "Toro"
+        ],
+        "reason0": "needs judgment; suffix=\"Edición Limitada 2024\"; n=2/1"
+      },
+      {
+        "ids": [
+          "cig-matilde-oscura",
+          "cig-matilde-oscura-bravo"
+        ],
+        "brand": "Matilde",
+        "line_p": "Oscura",
+        "line_c": "Oscura Bravo",
+        "rest": "Bravo",
+        "n_p": 2,
+        "n_c": 1,
+        "vit_p": [
+          "Corona",
+          "Robusto"
+        ],
+        "vit_c": [
+          "Toro"
+        ],
+        "reason0": "needs judgment; suffix=\"Bravo\"; n=2/1"
+      },
+      {
+        "ids": [
+          "cig-matilde-quadrata",
+          "cig-matilde-quadrata-bravo"
+        ],
+        "brand": "Matilde",
+        "line_p": "Quadrata",
+        "line_c": "Quadrata Bravo",
+        "rest": "Bravo",
+        "n_p": 2,
+        "n_c": 1,
+        "vit_p": [
+          "Robusto",
+          "Torpedo"
+        ],
+        "vit_c": [
+          "Toro"
+        ],
+        "reason0": "needs judgment; suffix=\"Bravo\"; n=2/1"
+      },
+      {
+        "ids": [
+          "cig-matilde-renacer",
+          "cig-matilde-renacer-bravo"
+        ],
+        "brand": "Matilde",
+        "line_p": "Renacer",
+        "line_c": "Renacer Bravo",
+        "rest": "Bravo",
+        "n_p": 2,
+        "n_c": 1,
+        "vit_p": [
+          "Corona",
+          "Robusto"
+        ],
+        "vit_c": [
+          "Toro"
+        ],
+        "reason0": "needs judgment; suffix=\"Bravo\"; n=2/1"
+      },
+      {
+        "ids": [
+          "cig-matilde-serena",
+          "cig-matilde-serena-bravo"
+        ],
+        "brand": "Matilde",
+        "line_p": "Serena",
+        "line_c": "Serena Bravo",
+        "rest": "Bravo",
+        "n_p": 2,
+        "n_c": 1,
+        "vit_p": [
+          "Corona",
+          "Robusto"
+        ],
+        "vit_c": [
+          "Toro"
+        ],
+        "reason0": "needs judgment; suffix=\"Bravo\"; n=2/1"
+      },
+      {
+        "ids": [
+          "cig-meine-longfiller-bundles",
+          "cig-meine-longfiller-bundles-fat-shorty"
+        ],
+        "brand": "Meine",
+        "line_p": "Longfiller Bundles",
+        "line_c": "Longfiller Bundles Fat Shorty",
+        "rest": "Fat Shorty",
+        "n_p": 4,
+        "n_c": 1,
+        "vit_p": [
+          "Petit Corona",
+          "Corona",
+          "Toro",
+          "Figurado"
+        ],
+        "vit_c": [
+          "Robusto"
+        ],
+        "reason0": "needs judgment; suffix=\"Fat Shorty\"; n=4/1"
+      },
+      {
+        "ids": [
+          "cig-paradiso-quintessence",
+          "cig-paradiso-quintessence-majestic"
+        ],
+        "brand": "Paradiso",
+        "line_p": "Quintessence",
+        "line_c": "Quintessence Majestic",
+        "rest": "Majestic",
+        "n_p": 5,
+        "n_c": 1,
+        "vit_p": [
+          "Robusto",
+          "Churchill",
+          "Epicure",
+          "Epicure",
+          "Belicoso"
+        ],
+        "vit_c": [
+          "Gordo"
+        ],
+        "reason0": "needs judgment; suffix=\"Majestic\"; n=5/1"
+      },
+      {
+        "ids": [
+          "cig-pdr-capa-madura",
+          "cig-pdr-capa-madura-crystal"
+        ],
+        "brand": "PDR",
+        "line_p": "Capa Madura",
+        "line_c": "Capa Madura Crystal",
+        "rest": "Crystal",
+        "n_p": 2,
+        "n_c": 1,
+        "vit_p": [
+          "Robusto",
+          "Toro"
+        ],
+        "vit_c": [
+          "Robusto"
+        ],
+        "reason0": "needs judgment; suffix=\"Crystal\"; n=2/1"
+      },
+      {
+        "ids": [
+          "cig-pdr-capa-natural",
+          "cig-pdr-capa-natural-crystal"
+        ],
+        "brand": "PDR",
+        "line_p": "Capa Natural",
+        "line_c": "Capa Natural Crystal",
+        "rest": "Crystal",
+        "n_p": 2,
+        "n_c": 1,
+        "vit_p": [
+          "Robusto",
+          "Toro"
+        ],
+        "vit_c": [
+          "Robusto"
+        ],
+        "reason0": "needs judgment; suffix=\"Crystal\"; n=2/1"
+      },
+      {
+        "ids": [
+          "cig-pdr-capa-oscura",
+          "cig-pdr-capa-oscura-crystal"
+        ],
+        "brand": "PDR",
+        "line_p": "Capa Oscura",
+        "line_c": "Capa Oscura Crystal",
+        "rest": "Crystal",
+        "n_p": 2,
+        "n_c": 1,
+        "vit_p": [
+          "Robusto",
+          "Toro"
+        ],
+        "vit_c": [
+          "Robusto"
+        ],
+        "reason0": "needs judgment; suffix=\"Crystal\"; n=2/1"
+      },
+      {
+        "ids": [
+          "cig-pdr-capa-sun-grown",
+          "cig-pdr-capa-sun-grown-crystal"
+        ],
+        "brand": "PDR",
+        "line_p": "Capa Sun Grown",
+        "line_c": "Capa Sun Grown Crystal",
+        "rest": "Crystal",
+        "n_p": 2,
+        "n_c": 1,
+        "vit_p": [
+          "Robusto",
+          "Toro"
+        ],
+        "vit_c": [
+          "Robusto"
+        ],
+        "reason0": "needs judgment; suffix=\"Crystal\"; n=2/1"
+      },
+      {
+        "ids": [
+          "cig-room101-room-101-johnny-tobacconaut",
+          "cig-room101-room-101-johnny-tobacconaut-ranflactic"
+        ],
+        "brand": "Room101",
+        "line_p": "Room 101 Johnny Tobacconaut",
+        "line_c": "Room 101 Johnny Tobacconaut Ranflactic",
+        "rest": "Ranflactic",
+        "n_p": 2,
+        "n_c": 1,
+        "vit_p": [
+          "Robusto",
+          "Toro"
+        ],
+        "vit_c": [
+          "Perfecto"
+        ],
+        "reason0": "needs judgment; suffix=\"Ranflactic\"; n=2/1"
+      },
+      {
+        "ids": [
+          "cig-southern-draw-jacob-s-ladder",
+          "cig-southern-draw-jacob-s-ladder-brimstone"
+        ],
+        "brand": "Southern Draw",
+        "line_p": "Jacob's Ladder",
+        "line_c": "Jacob's Ladder Brimstone",
+        "rest": "Brimstone",
+        "n_p": 3,
+        "n_c": 1,
+        "vit_p": [
+          "Toro",
+          "Robusto",
+          "Gordo"
+        ],
+        "vit_c": [
+          "Perfecto"
+        ],
+        "reason0": "needs judgment; suffix=\"Brimstone\"; n=3/1"
+      },
+      {
+        "ids": [
+          "cig-valentino-siesto-anniversary-sun-grown",
+          "cig-valentino-siesto-anniversary-sun-grown-real-5"
+        ],
+        "brand": "Valentino",
+        "line_p": "Siesto Anniversary Sun Grown",
+        "line_c": "Siesto Anniversary Sun Grown Real #5",
+        "rest": "Real #5",
+        "n_p": 2,
+        "n_c": 1,
+        "vit_p": [
+          "Toro",
+          "Torpedo"
+        ],
+        "vit_c": [
+          "Robusto"
+        ],
+        "reason0": "needs judgment; suffix=\"Real #5\"; n=2/1"
+      },
+      {
+        "ids": [
+          "cig-valentino-siesto-premium-maduro",
+          "cig-valentino-siesto-premium-maduro-real"
+        ],
+        "brand": "Valentino",
+        "line_p": "Siesto Premium Maduro",
+        "line_c": "Siesto Premium Maduro Real",
+        "rest": "Real",
+        "n_p": 3,
+        "n_c": 1,
+        "vit_p": [
+          "Robusto",
+          "Toro",
+          "Gran Toro"
+        ],
+        "vit_c": [
+          "Figurado"
+        ],
+        "reason0": "needs judgment; suffix=\"Real\"; n=3/1"
+      },
+      {
+        "ids": [
+          "cig-villiger-san-doro-claro",
+          "cig-villiger-san-doro-claro-aged-10-years"
+        ],
+        "brand": "Villiger",
+        "line_p": "San Doro Claro",
+        "line_c": "San Doro Claro Aged 10 Years",
+        "rest": "Aged 10 Years",
+        "n_p": 3,
+        "n_c": 1,
+        "vit_p": [
+          "Robusto",
+          "Toro",
+          "Churchill"
+        ],
+        "vit_c": [
+          "Churchill"
+        ],
+        "reason0": "needs judgment; suffix=\"Aged 10 Years\"; n=3/1"
+      },
+      {
+        "ids": [
+          "cig-villiger-san-doro-colorado",
+          "cig-villiger-san-doro-colorado-aged-10-years"
+        ],
+        "brand": "Villiger",
+        "line_p": "San Doro Colorado",
+        "line_c": "San Doro Colorado Aged 10 Years",
+        "rest": "Aged 10 Years",
+        "n_p": 2,
+        "n_c": 1,
+        "vit_p": [
+          "Toro",
+          "Churchill"
+        ],
+        "vit_c": [
+          "Churchill"
+        ],
+        "reason0": "needs judgment; suffix=\"Aged 10 Years\"; n=2/1"
+      }
+    ],
+    "number": [
+      {
+        "ids": [
+          "cig-davidoff-year-of-horse",
+          "cig-davidoff-year-of-horse-2026"
+        ],
+        "brand": "Davidoff",
+        "line_p": "Year of Horse",
+        "line_c": "Year Of Horse 2026",
+        "rest": "2026",
+        "n_p": 1,
+        "n_c": 1,
+        "vit_p": [
+          "Toro"
+        ],
+        "vit_c": [
+          "Toro"
+        ],
+        "reason0": "needs judgment; suffix=\"2026\"; n=1/1"
+      },
+      {
+        "ids": [
+          "cig-dos-santos-la-regenta",
+          "cig-dos-santos-la-regenta-1921"
+        ],
+        "brand": "Dos Santos",
+        "line_p": "La Regenta",
+        "line_c": "La Regenta 1921",
+        "rest": "1921",
+        "n_p": 1,
+        "n_c": 4,
+        "vit_p": [
+          "Robusto"
+        ],
+        "vit_c": [
+          "Half Corona",
+          "Robusto",
+          "Gran Toro",
+          "Short Robusto"
+        ],
+        "reason0": "needs judgment; suffix=\"1921\"; n=1/4"
+      },
+      {
+        "ids": [
+          "cig-la-gloria-cubana-glorias",
+          "cig-la-gloria-cubana-glorias-20"
+        ],
+        "brand": "La Gloria Cubana",
+        "line_p": "Glorias",
+        "line_c": "Glorias /20",
+        "rest": "20",
+        "n_p": 1,
+        "n_c": 1,
+        "vit_p": [
+          "Petit Corona"
+        ],
+        "vit_c": [
+          "Robusto"
+        ],
+        "reason0": "needs judgment; suffix=\"20\"; n=1/1"
+      },
+      {
+        "ids": [
+          "cig-woermann-dominican-bundles",
+          "cig-woermann-dominican-bundles-460"
+        ],
+        "brand": "Woermann",
+        "line_p": "Dominican Bundles",
+        "line_c": "Dominican Bundles 460",
+        "rest": "460",
+        "n_p": 5,
+        "n_c": 1,
+        "vit_p": [
+          "Petit Corona",
+          "Half Corona",
+          "Corona",
+          "Robusto",
+          "Churchill"
+        ],
+        "vit_c": [
+          "Torpedo"
+        ],
+        "reason0": "needs judgment; suffix=\"460\"; n=5/1"
+      }
+    ]
+  },
+  "all": [
+    {
+      "ids": [
+        "cig-alec-bradley-texas",
+        "cig-alec-bradley-texas-lancero"
+      ],
+      "brand": "Alec Bradley",
+      "line_p": "Texas",
+      "line_c": "Texas Lancero",
+      "rest": "Lancero",
+      "n_p": 1,
+      "n_c": 1,
+      "vit_p": [
+        "Lancero"
+      ],
+      "vit_c": [
+        "Gordo"
+      ],
+      "reason0": "Same commercial SKU (Texas Lancero 7x70): CW product URL sits on cig-alec-bradley-texas; Holts listing on texas-lancero with vitola mislabeled Gordo. Needs line rename + single-vitola collapse — skip blind size-absorb."
+    },
+    {
+      "ids": [
+        "cig-1502-special-edition-blue-sapphire",
+        "cig-1502-special-edition-blue-sapphire-gordo"
+      ],
+      "brand": "1502",
+      "line_p": "Special Edition Blue Sapphire",
+      "line_c": "Special Edition Blue Sapphire Gordo",
+      "rest": "Gordo",
+      "n_p": 1,
+      "n_c": 2,
+      "vit_p": [
+        "Lancero"
+      ],
+      "vit_c": [
+        "Robusto",
+        "Toro"
+      ],
+      "reason0": "needs judgment; suffix=\"Gordo\"; n=1/2"
+    },
+    {
+      "ids": [
+        "cig-1502-special-edition-cachito",
+        "cig-1502-special-edition-cachito-original"
+      ],
+      "brand": "1502",
+      "line_p": "Special Edition Cachito",
+      "line_c": "Special Edition Cachito Original",
+      "rest": "Original",
+      "n_p": 1,
+      "n_c": 1,
+      "vit_p": [
+        "Lancero"
+      ],
+      "vit_c": [
+        "Short Robusto"
+      ],
+      "reason0": "needs judgment; suffix=\"Original\"; n=1/1"
+    },
+    {
+      "ids": [
+        "cig-artista-david-ortiz-hof",
+        "cig-artista-david-ortiz-hof-limited-edition"
+      ],
+      "brand": "Artista",
+      "line_p": "David Ortiz HOF",
+      "line_c": "David Ortiz HOF Limited Edition",
+      "rest": "Limited Edition",
+      "n_p": 1,
+      "n_c": 1,
+      "vit_p": [
+        "Toro"
+      ],
+      "vit_c": [
+        "Figurado"
+      ],
+      "reason0": "needs judgment; suffix=\"Limited Edition\"; n=1/1"
+    },
+    {
+      "ids": [
+        "cig-artista-factory-classics-puro-ambar",
+        "cig-artista-factory-classics-puro-ambar-legacy-grand"
+      ],
+      "brand": "Artista",
+      "line_p": "Factory Classics Puro Ambar",
+      "line_c": "Factory Classics Puro Ambar Legacy Grand",
+      "rest": "Legacy Grand",
+      "n_p": 2,
+      "n_c": 1,
+      "vit_p": [
+        "Short Robusto",
+        "Toro"
+      ],
+      "vit_c": [
+        "Toro"
+      ],
+      "reason0": "needs judgment; suffix=\"Legacy Grand\"; n=2/1"
+    },
+    {
+      "ids": [
+        "cig-arturo-fuente-claro",
+        "cig-arturo-fuente-claro-spanish"
+      ],
+      "brand": "Arturo Fuente",
+      "line_p": "Claro",
+      "line_c": "Claro Spanish",
+      "rest": "Spanish",
+      "n_p": 1,
+      "n_c": 1,
+      "vit_p": [
+        "Churchill"
+      ],
+      "vit_c": [
+        "Lonsdale"
+      ],
+      "reason0": "needs judgment; suffix=\"Spanish\"; n=1/1"
+    },
+    {
+      "ids": [
+        "cig-arturo-fuente-seleccion-d-oro",
+        "cig-arturo-fuente-seleccion-d-oro-imperial"
+      ],
+      "brand": "Arturo Fuente",
+      "line_p": "Seleccion d'Oro",
+      "line_c": "Seleccion d'Oro Imperial",
+      "rest": "Imperial",
+      "n_p": 1,
+      "n_c": 1,
+      "vit_p": [
+        "Churchill"
+      ],
+      "vit_c": [
+        "Corona"
+      ],
+      "reason0": "needs judgment; suffix=\"Imperial\"; n=1/1"
+    },
+    {
+      "ids": [
+        "cig-ashton-cabinet",
+        "cig-ashton-cabinet-selection"
+      ],
+      "brand": "Ashton",
+      "line_p": "Cabinet",
+      "line_c": "Cabinet Selection",
+      "rest": "Selection",
+      "n_p": 1,
+      "n_c": 1,
+      "vit_p": [
+        "Belicoso"
+      ],
+      "vit_c": [
+        "Cabinet Selection T"
+      ],
+      "reason0": "needs judgment; suffix=\"Selection\"; n=1/1"
+    },
+    {
+      "ids": [
+        "cig-ashton-paradiso-by-papagayo",
+        "cig-ashton-paradiso-by-papagayo-xxl"
+      ],
+      "brand": "Ashton",
+      "line_p": "Paradiso By Papagayo",
+      "line_c": "Paradiso By Papagayo XXL",
+      "rest": "XXL",
+      "n_p": 1,
+      "n_c": 1,
+      "vit_p": [
+        "Toro"
+      ],
+      "vit_c": [
+        "Toro"
+      ],
+      "reason0": "needs judgment; suffix=\"XXL\"; n=1/1"
+    },
+    {
+      "ids": [
+        "cig-ave-maria-argentum",
+        "cig-ave-maria-argentum-morning-star"
+      ],
+      "brand": "Ave Maria",
+      "line_p": "Argentum",
+      "line_c": "Argentum Morning Star",
+      "rest": "Morning Star",
+      "n_p": 2,
+      "n_c": 1,
+      "vit_p": [
+        "Robusto",
+        "Gordo"
+      ],
+      "vit_c": [
+        "Perfecto"
+      ],
+      "reason0": "needs judgment; suffix=\"Morning Star\"; n=2/1"
+    },
+    {
+      "ids": [
+        "cig-avo-heritage",
+        "cig-avo-heritage-special"
+      ],
+      "brand": "Avo",
+      "line_p": "Heritage",
+      "line_c": "Heritage Special",
+      "rest": "Special",
+      "n_p": 3,
+      "n_c": 1,
+      "vit_p": [
+        "Robusto",
+        "Toro",
+        "Short Robusto"
+      ],
+      "vit_c": [
+        "Toro"
+      ],
+      "reason0": "needs judgment; suffix=\"Special\"; n=3/1"
+    },
+    {
+      "ids": [
+        "cig-avo-syncro",
+        "cig-avo-syncro-special"
+      ],
+      "brand": "Avo",
+      "line_p": "Syncro",
+      "line_c": "Syncro Special",
+      "rest": "Special",
+      "n_p": 2,
+      "n_c": 1,
+      "vit_p": [
+        "Robusto",
+        "Toro"
+      ],
+      "vit_c": [
+        "Toro"
+      ],
+      "reason0": "needs judgment; suffix=\"Special\"; n=2/1"
+    },
+    {
+      "ids": [
+        "cig-balmoral-dominican-selection",
+        "cig-balmoral-dominican-selection-small"
+      ],
+      "brand": "Balmoral",
+      "line_p": "Dominican Selection",
+      "line_c": "Dominican Selection SMALL",
+      "rest": "SMALL",
+      "n_p": 3,
+      "n_c": 1,
+      "vit_p": [
+        "Panetela",
+        "Corona",
+        "Churchill"
+      ],
+      "vit_c": [
+        "Panetela"
+      ],
+      "reason0": "needs judgment; suffix=\"SMALL\"; n=3/1"
+    },
+    {
+      "ids": [
+        "cig-baron-ullmann",
+        "cig-baron-ullmann-edicion-limitada"
+      ],
+      "brand": "Baron",
+      "line_p": "Ullmann",
+      "line_c": "Ullmann Edicion Limitada",
+      "rest": "Edicion Limitada",
+      "n_p": 2,
+      "n_c": 1,
+      "vit_p": [
+        "Robusto",
+        "Torpedo"
+      ],
+      "vit_c": [
+        "Double Robusto"
+      ],
+      "reason0": "needs judgment; suffix=\"Edicion Limitada\"; n=2/1"
+    },
+    {
+      "ids": [
+        "cig-baron-ullmann",
+        "cig-baron-ullmann-gran-reserva"
+      ],
+      "brand": "Baron",
+      "line_p": "Ullmann",
+      "line_c": "Ullmann Gran Reserva",
+      "rest": "Gran Reserva",
+      "n_p": 2,
+      "n_c": 1,
+      "vit_p": [
+        "Robusto",
+        "Torpedo"
+      ],
+      "vit_c": [
+        "Torpedo"
+      ],
+      "reason0": "needs judgment; suffix=\"Gran Reserva\"; n=2/1"
+    },
+    {
+      "ids": [
+        "cig-bentley-green",
+        "cig-bentley-green-limited-edition"
+      ],
+      "brand": "Bentley",
+      "line_p": "Green",
+      "line_c": "Green Limited Edition",
+      "rest": "Limited Edition",
+      "n_p": 7,
+      "n_c": 1,
+      "vit_p": [
+        "Half Corona",
+        "Corona",
+        "Robusto",
+        "Belicoso",
+        "Toro",
+        "Churchill",
+        "Gran Toro"
+      ],
+      "vit_c": [
+        "Toro"
+      ],
+      "reason0": "needs judgment; suffix=\"Limited Edition\"; n=7/1"
+    },
+    {
+      "ids": [
+        "cig-black-label-trading-company-nocurne",
+        "cig-black-label-trading-company-nocurne-amp-short-salomon"
+      ],
+      "brand": "Black Label",
+      "line_p": "Trading Company Nocurne",
+      "line_c": "Trading Company Nocurne &amp; Short Salomon",
+      "rest": "amp; Short Salomon",
+      "n_p": 2,
+      "n_c": 1,
+      "vit_p": [
+        "Toro",
+        "Robusto"
+      ],
+      "vit_c": [
+        "Perfecto"
+      ],
+      "reason0": "needs judgment; suffix=\"amp; Short Salomon\"; n=2/1"
+    },
+    {
+      "ids": [
+        "cig-black-label-trading-company-santa-muerte",
+        "cig-black-label-trading-company-santa-muerte-barrio-santo"
+      ],
+      "brand": "Black Label",
+      "line_p": "Trading Company Santa Muerte",
+      "line_c": "Trading Company Santa Muerte Barrio Santo",
+      "rest": "Barrio Santo",
+      "n_p": 3,
+      "n_c": 1,
+      "vit_p": [
+        "Lancero",
+        "Corona Gorda",
+        "Short Robusto"
+      ],
+      "vit_c": [
+        "Corona Gorda"
+      ],
+      "reason0": "needs judgment; suffix=\"Barrio Santo\"; n=3/1"
+    },
+    {
+      "ids": [
+        "cig-bock-y-ca",
+        "cig-bock-y-ca-25-anos-renacimiento"
+      ],
+      "brand": "Bock",
+      "line_p": "y Ca.",
+      "line_c": "y Ca. 25 Anos Renacimiento",
+      "rest": "25 Anos Renacimiento",
+      "n_p": 5,
+      "n_c": 1,
+      "vit_p": [
+        "Panetela",
+        "Corona",
+        "Churchill",
+        "Short Robusto",
+        "Robusto"
+      ],
+      "vit_c": [
+        "Gran Toro"
+      ],
+      "reason0": "needs judgment; suffix=\"25 Anos Renacimiento\"; n=5/1"
+    },
+    {
+      "ids": [
+        "cig-casa-de-torres",
+        "cig-casa-de-torres-bold"
+      ],
+      "brand": "Casa",
+      "line_p": "de Torres",
+      "line_c": "de Torres Bold",
+      "rest": "Bold",
+      "n_p": 12,
+      "n_c": 1,
+      "vit_p": [
+        "Panetela",
+        "Half Corona",
+        "Corona",
+        "Double Corona",
+        "Short Robusto",
+        "Perfecto",
+        "Toro",
+        "Churchill",
+        "Torpedo",
+        "Robusto",
+        "Figurado",
+        "Double Robusto"
+      ],
+      "vit_c": [
+        "Short Robusto"
+      ],
+      "reason0": "needs judgment; suffix=\"Bold\"; n=12/1"
+    },
+    {
+      "ids": [
+        "cig-casdagli-club",
+        "cig-casdagli-club-especial"
+      ],
+      "brand": "Casdagli",
+      "line_p": "Club",
+      "line_c": "Club Especial",
+      "rest": "Especial",
+      "n_p": 1,
+      "n_c": 1,
+      "vit_p": [
+        "Petit Corona"
+      ],
+      "vit_c": [
+        "Petit Corona"
+      ],
+      "reason0": "needs judgment; suffix=\"Especial\"; n=1/1"
+    },
+    {
+      "ids": [
+        "cig-casdagli-club",
+        "cig-casdagli-club-mareva-jure"
+      ],
+      "brand": "Casdagli",
+      "line_p": "Club",
+      "line_c": "Club Mareva Jure",
+      "rest": "Mareva Jure",
+      "n_p": 1,
+      "n_c": 1,
+      "vit_p": [
+        "Petit Corona"
+      ],
+      "vit_c": [
+        "Churchill"
+      ],
+      "reason0": "needs judgment; suffix=\"Mareva Jure\"; n=1/1"
+    },
+    {
+      "ids": [
+        "cig-casdagli-club",
+        "cig-casdagli-club-mareva-spalato-no-2"
+      ],
+      "brand": "Casdagli",
+      "line_p": "Club",
+      "line_c": "Club Mareva Spalato No. 2",
+      "rest": "Mareva Spalato No. 2",
+      "n_p": 1,
+      "n_c": 1,
+      "vit_p": [
+        "Petit Corona"
+      ],
+      "vit_c": [
+        "Piramide"
+      ],
+      "reason0": "needs judgment; suffix=\"Mareva Spalato No. 2\"; n=1/1"
+    },
+    {
+      "ids": [
+        "cig-casdagli-villa",
+        "cig-casdagli-villa-exquisito-nicarita"
+      ],
+      "brand": "Casdagli",
+      "line_p": "Villa",
+      "line_c": "Villa Exquisito Nicarita",
+      "rest": "Exquisito Nicarita",
+      "n_p": 4,
+      "n_c": 1,
+      "vit_p": [
+        "Lonsdale",
+        "Corona Gorda",
+        "Robusto",
+        "Toro"
+      ],
+      "vit_c": [
+        "Petit Corona"
+      ],
+      "reason0": "needs judgment; suffix=\"Exquisito Nicarita\"; n=4/1"
+    },
+    {
+      "ids": [
+        "cig-casdagli-villa",
+        "cig-casdagli-villa-exquisito-peruvita"
+      ],
+      "brand": "Casdagli",
+      "line_p": "Villa",
+      "line_c": "Villa Exquisito Peruvita",
+      "rest": "Exquisito Peruvita",
+      "n_p": 4,
+      "n_c": 1,
+      "vit_p": [
+        "Lonsdale",
+        "Corona Gorda",
+        "Robusto",
+        "Toro"
+      ],
+      "vit_c": [
+        "Petit Corona"
+      ],
+      "reason0": "needs judgment; suffix=\"Exquisito Peruvita\"; n=4/1"
+    },
+    {
+      "ids": [
+        "cig-chinchalero-torcidos",
+        "cig-chinchalero-torcidos-tres"
+      ],
+      "brand": "Chinchalero",
+      "line_p": "Torcidos",
+      "line_c": "Torcidos Très",
+      "rest": "Très",
+      "n_p": 2,
+      "n_c": 1,
+      "vit_p": [
+        "Petit Corona",
+        "Gordo"
+      ],
+      "vit_c": [
+        "Petit Corona"
+      ],
+      "reason0": "needs judgment; suffix=\"Très\"; n=2/1"
+    },
+    {
+      "ids": [
+        "cig-cigarkings-maduro",
+        "cig-cigarkings-maduro-3-years-aged"
+      ],
+      "brand": "Cigarkings",
+      "line_p": "Maduro",
+      "line_c": "Maduro 3 Years aged",
+      "rest": "3 Years aged",
+      "n_p": 4,
+      "n_c": 1,
+      "vit_p": [
+        "Corona",
+        "Short Robusto",
+        "Robusto",
+        "Toro"
+      ],
+      "vit_c": [
+        "Robusto"
+      ],
+      "reason0": "needs judgment; suffix=\"3 Years aged\"; n=4/1"
+    },
+    {
+      "ids": [
+        "cig-culture-dominican-reserve",
+        "cig-culture-dominican-reserve-paris"
+      ],
+      "brand": "Culture",
+      "line_p": "Dominican Reserve",
+      "line_c": "Dominican Reserve Paris",
+      "rest": "Paris",
+      "n_p": 5,
+      "n_c": 1,
+      "vit_p": [
+        "Petit Corona",
+        "Corona",
+        "Half Corona",
+        "Churchill",
+        "Belicoso"
+      ],
+      "vit_c": [
+        "Double Robusto"
+      ],
+      "reason0": "needs judgment; suffix=\"Paris\"; n=5/1"
+    },
+    {
+      "ids": [
+        "cig-culture-dominican-reserve",
+        "cig-culture-dominican-reserve-rome"
+      ],
+      "brand": "Culture",
+      "line_p": "Dominican Reserve",
+      "line_c": "Dominican Reserve Rome",
+      "rest": "Rome",
+      "n_p": 5,
+      "n_c": 1,
+      "vit_p": [
+        "Petit Corona",
+        "Corona",
+        "Half Corona",
+        "Churchill",
+        "Belicoso"
+      ],
+      "vit_c": [
+        "Robusto"
+      ],
+      "reason0": "needs judgment; suffix=\"Rome\"; n=5/1"
+    },
+    {
+      "ids": [
+        "cig-culture-dominican-reserve",
+        "cig-culture-dominican-reserve-sevilla"
+      ],
+      "brand": "Culture",
+      "line_p": "Dominican Reserve",
+      "line_c": "Dominican Reserve Sevilla",
+      "rest": "Sevilla",
+      "n_p": 5,
+      "n_c": 1,
+      "vit_p": [
+        "Petit Corona",
+        "Corona",
+        "Half Corona",
+        "Churchill",
+        "Belicoso"
+      ],
+      "vit_c": [
+        "Toro"
+      ],
+      "reason0": "needs judgment; suffix=\"Sevilla\"; n=5/1"
+    },
+    {
+      "ids": [
+        "cig-davidoff-year-of-horse",
+        "cig-davidoff-year-of-horse-2026"
+      ],
+      "brand": "Davidoff",
+      "line_p": "Year of Horse",
+      "line_c": "Year Of Horse 2026",
+      "rest": "2026",
+      "n_p": 1,
+      "n_c": 1,
+      "vit_p": [
+        "Toro"
+      ],
+      "vit_c": [
+        "Toro"
+      ],
+      "reason0": "needs judgment; suffix=\"2026\"; n=1/1"
+    },
+    {
+      "ids": [
+        "cig-domaine-de-lavalette-classic",
+        "cig-domaine-de-lavalette-classic-small"
+      ],
+      "brand": "Domaine",
+      "line_p": "de Lavalette Classic",
+      "line_c": "de Lavalette Classic Small",
+      "rest": "Small",
+      "n_p": 6,
+      "n_c": 1,
+      "vit_p": [
+        "Panetela",
+        "Petit Corona",
+        "Corona",
+        "Robusto",
+        "Double Corona",
+        "Piramide"
+      ],
+      "vit_c": [
+        "Panetela"
+      ],
+      "reason0": "needs judgment; suffix=\"Small\"; n=6/1"
+    },
+    {
+      "ids": [
+        "cig-domaine-de-lavalette-panama",
+        "cig-domaine-de-lavalette-panama-breve"
+      ],
+      "brand": "Domaine",
+      "line_p": "de Lavalette Panama",
+      "line_c": "de Lavalette Panama Breve",
+      "rest": "Breve",
+      "n_p": 2,
+      "n_c": 1,
+      "vit_p": [
+        "Corona",
+        "Toro"
+      ],
+      "vit_c": [
+        "Robusto"
+      ],
+      "reason0": "needs judgment; suffix=\"Breve\"; n=2/1"
+    },
+    {
+      "ids": [
+        "cig-domenico-limited-edition",
+        "cig-domenico-limited-edition-pirata"
+      ],
+      "brand": "Domenico",
+      "line_p": "Limited Edition",
+      "line_c": "Limited Edition Pirata",
+      "rest": "Pirata",
+      "n_p": 1,
+      "n_c": 1,
+      "vit_p": [
+        "Toro"
+      ],
+      "vit_c": [
+        "Robusto"
+      ],
+      "reason0": "needs judgment; suffix=\"Pirata\"; n=1/1"
+    },
+    {
+      "ids": [
+        "cig-dos-santos-la-regenta",
+        "cig-dos-santos-la-regenta-1921"
+      ],
+      "brand": "Dos Santos",
+      "line_p": "La Regenta",
+      "line_c": "La Regenta 1921",
+      "rest": "1921",
+      "n_p": 1,
+      "n_c": 4,
+      "vit_p": [
+        "Robusto"
+      ],
+      "vit_c": [
+        "Half Corona",
+        "Robusto",
+        "Gran Toro",
+        "Short Robusto"
+      ],
+      "reason0": "needs judgment; suffix=\"1921\"; n=1/4"
+    },
+    {
+      "ids": [
+        "cig-dos-santos-la-regenta",
+        "cig-dos-santos-la-regenta-1921-anejo-rum-barrel-aged"
+      ],
+      "brand": "Dos Santos",
+      "line_p": "La Regenta",
+      "line_c": "La Regenta 1921 Anejo Rum Barrel Aged",
+      "rest": "1921 Anejo Rum Barrel Aged",
+      "n_p": 1,
+      "n_c": 1,
+      "vit_p": [
+        "Robusto"
+      ],
+      "vit_c": [
+        "Piramide"
+      ],
+      "reason0": "needs judgment; suffix=\"1921 Anejo Rum Barrel Aged\"; n=1/1"
+    },
+    {
+      "ids": [
+        "cig-dos-santos-la-regenta-1921",
+        "cig-dos-santos-la-regenta-1921-anejo-rum-barrel-aged"
+      ],
+      "brand": "Dos Santos",
+      "line_p": "La Regenta 1921",
+      "line_c": "La Regenta 1921 Anejo Rum Barrel Aged",
+      "rest": "Anejo Rum Barrel Aged",
+      "n_p": 4,
+      "n_c": 1,
+      "vit_p": [
+        "Half Corona",
+        "Robusto",
+        "Gran Toro",
+        "Short Robusto"
+      ],
+      "vit_c": [
+        "Piramide"
+      ],
+      "reason0": "needs judgment; suffix=\"Anejo Rum Barrel Aged\"; n=4/1"
+    },
+    {
+      "ids": [
+        "cig-drew-estate-de-acid",
+        "cig-drew-estate-acid-blondie-shipping-restrictions"
+      ],
+      "brand": "Drew Estate",
+      "line_p": "Acid",
+      "line_c": "Acid Blondie - Shipping restrictions",
+      "rest": "Blondie - Shipping restrictions",
+      "n_p": 3,
+      "n_c": 1,
+      "vit_p": [
+        "Acid Blondie",
+        "Acid Kuba Kuba",
+        "Krush"
+      ],
+      "vit_c": [
+        "Belicoso"
+      ],
+      "reason0": "needs judgment; suffix=\"Blondie - Shipping restrictions\"; n=3/1"
+    },
+    {
+      "ids": [
+        "cig-drew-estate-liga-undercrown",
+        "cig-drew-estate-liga-undercrown-dogma"
+      ],
+      "brand": "Drew Estate",
+      "line_p": "Liga Undercrown",
+      "line_c": "Liga Undercrown Dogma",
+      "rest": "Dogma",
+      "n_p": 3,
+      "n_c": 1,
+      "vit_p": [
+        "Toro",
+        "Robusto",
+        "Gordo"
+      ],
+      "vit_c": [
+        "Toro"
+      ],
+      "reason0": "needs judgment; suffix=\"Dogma\"; n=3/1"
+    },
+    {
+      "ids": [
+        "cig-drew-estate-norteno",
+        "cig-drew-estate-norteno-by-humidor"
+      ],
+      "brand": "Drew Estate",
+      "line_p": "Norteno",
+      "line_c": "Norteno by Humidor",
+      "rest": "by Humidor",
+      "n_p": 3,
+      "n_c": 1,
+      "vit_p": [
+        "Lonsdale",
+        "Corona",
+        "Toro"
+      ],
+      "vit_c": [
+        "Lonsdale"
+      ],
+      "reason0": "needs judgment; suffix=\"by Humidor\"; n=3/1"
+    },
+    {
+      "ids": [
+        "cig-e-p-carrillo-core",
+        "cig-ep-carrillo-epc-core"
+      ],
+      "brand": "E.P. Carrillo",
+      "line_p": "Core",
+      "line_c": "Core Line",
+      "rest": "Line",
+      "n_p": 1,
+      "n_c": 2,
+      "vit_p": [
+        "Churchill"
+      ],
+      "vit_c": [
+        "E.P. Carrillo Robusto",
+        "E.P. Carrillo Toro"
+      ],
+      "reason0": "needs judgment; suffix=\"Line\"; n=1/2"
+    },
+    {
+      "ids": [
+        "cig-e-p-carrillo-epc-pledge",
+        "cig-e-p-carrillo-epc-pledge-apogee"
+      ],
+      "brand": "E.P. Carrillo",
+      "line_p": "EPC Pledge",
+      "line_c": "EPC Pledge Apogee",
+      "rest": "Apogee",
+      "n_p": 1,
+      "n_c": 1,
+      "vit_p": [
+        "Lonsdale"
+      ],
+      "vit_c": [
+        "Toro"
+      ],
+      "reason0": "needs judgment; suffix=\"Apogee\"; n=1/1"
+    },
+    {
+      "ids": [
+        "cig-e-p-carrillo-epc-pledge",
+        "cig-e-p-carrillo-epc-pledge-prequel"
+      ],
+      "brand": "E.P. Carrillo",
+      "line_p": "EPC Pledge",
+      "line_c": "EPC Pledge Prequel",
+      "rest": "Prequel",
+      "n_p": 1,
+      "n_c": 1,
+      "vit_p": [
+        "Lonsdale"
+      ],
+      "vit_c": [
+        "Robusto"
+      ],
+      "reason0": "needs judgment; suffix=\"Prequel\"; n=1/1"
+    },
+    {
+      "ids": [
+        "cig-e-p-carrillo-epc-pledge",
+        "cig-e-p-carrillo-epc-pledge-sojourn"
+      ],
+      "brand": "E.P. Carrillo",
+      "line_p": "EPC Pledge",
+      "line_c": "EPC Pledge Sojourn",
+      "rest": "Sojourn",
+      "n_p": 1,
+      "n_c": 1,
+      "vit_p": [
+        "Lonsdale"
+      ],
+      "vit_c": [
+        "Toro"
+      ],
+      "reason0": "needs judgment; suffix=\"Sojourn\"; n=1/1"
+    },
+    {
+      "ids": [
+        "cig-ep-carrillo-epc-pledge",
+        "cig-ep-carrillo-pledge"
+      ],
+      "brand": "E.P. Carrillo",
+      "line_p": "Pledge",
+      "line_c": "Pledge / Encore",
+      "rest": "Encore",
+      "n_p": 4,
+      "n_c": 1,
+      "vit_p": [
+        "Pledge Prequel",
+        "Pledge Apogee",
+        "Chapter",
+        "Chapter II"
+      ],
+      "vit_c": [
+        "Pledge Prequel (robusto)"
+      ],
+      "reason0": "needs judgment; suffix=\"Encore\"; n=4/1"
+    },
+    {
+      "ids": [
+        "cig-ep-carrillo-epc-pledge",
+        "cig-e-p-carrillo-pledge-apogee"
+      ],
+      "brand": "E.P. Carrillo",
+      "line_p": "Pledge",
+      "line_c": "Pledge Apogee",
+      "rest": "Apogee",
+      "n_p": 4,
+      "n_c": 1,
+      "vit_p": [
+        "Pledge Prequel",
+        "Pledge Apogee",
+        "Chapter",
+        "Chapter II"
+      ],
+      "vit_c": [
+        "Pledge Apogee"
+      ],
+      "reason0": "needs judgment; suffix=\"Apogee\"; n=4/1"
+    },
+    {
+      "ids": [
+        "cig-gh-g-h-black-dahlia",
+        "cig-gh-g-h-black-dahlia-shorty"
+      ],
+      "brand": "Gh",
+      "line_p": "G.H. Black Dahlia",
+      "line_c": "G.H. Black Dahlia Shorty",
+      "rest": "Shorty",
+      "n_p": 4,
+      "n_c": 1,
+      "vit_p": [
+        "Corona Gorda",
+        "Robusto",
+        "Piramide",
+        "Double Robusto"
+      ],
+      "vit_c": [
+        "Robusto"
+      ],
+      "reason0": "needs judgment; suffix=\"Shorty\"; n=4/1"
+    },
+    {
+      "ids": [
+        "cig-gh-g-h-connecticut-no-1",
+        "cig-gh-g-h-connecticut-no-1-shorty"
+      ],
+      "brand": "Gh",
+      "line_p": "G.H. Connecticut No. 1",
+      "line_c": "G.H. Connecticut No. 1 Shorty",
+      "rest": "Shorty",
+      "n_p": 6,
+      "n_c": 1,
+      "vit_p": [
+        "Corona Gorda",
+        "Churchill",
+        "Short Robusto",
+        "Robusto",
+        "Piramide",
+        "Double Robusto"
+      ],
+      "vit_c": [
+        "Robusto"
+      ],
+      "reason0": "needs judgment; suffix=\"Shorty\"; n=6/1"
+    },
+    {
+      "ids": [
+        "cig-gh-g-h-corojo-no-5",
+        "cig-gh-g-h-corojo-no-5-shorty"
+      ],
+      "brand": "Gh",
+      "line_p": "G.H. Corojo No. 5",
+      "line_c": "G.H. Corojo No. 5 Shorty",
+      "rest": "Shorty",
+      "n_p": 4,
+      "n_c": 1,
+      "vit_p": [
+        "Corona Gorda",
+        "Churchill",
+        "Robusto",
+        "Double Robusto"
+      ],
+      "vit_c": [
+        "Robusto"
+      ],
+      "reason0": "needs judgment; suffix=\"Shorty\"; n=4/1"
+    },
+    {
+      "ids": [
+        "cig-gh-g-h-criollo-no-3",
+        "cig-gh-g-h-criollo-no-3-shorty"
+      ],
+      "brand": "Gh",
+      "line_p": "G.H. Criollo No. 3",
+      "line_c": "G.H. Criollo No. 3 Shorty",
+      "rest": "Shorty",
+      "n_p": 6,
+      "n_c": 1,
+      "vit_p": [
+        "Corona Gorda",
+        "Churchill",
+        "Short Robusto",
+        "Robusto",
+        "Piramide",
+        "Double Robusto"
+      ],
+      "vit_c": [
+        "Robusto"
+      ],
+      "reason0": "needs judgment; suffix=\"Shorty\"; n=6/1"
+    },
+    {
+      "ids": [
+        "cig-gh-g-h-gran-reserva-no-5",
+        "cig-gh-g-h-gran-reserva-no-5-shorty"
+      ],
+      "brand": "Gh",
+      "line_p": "G.H. Gran Reserva No. 5",
+      "line_c": "G.H. Gran Reserva No. 5 Shorty",
+      "rest": "Shorty",
+      "n_p": 3,
+      "n_c": 1,
+      "vit_p": [
+        "Corona Gorda",
+        "Piramide",
+        "Double Robusto"
+      ],
+      "vit_c": [
+        "Robusto"
+      ],
+      "reason0": "needs judgment; suffix=\"Shorty\"; n=3/1"
+    },
+    {
+      "ids": [
+        "cig-gh-g-h-la-conquista",
+        "cig-gh-g-h-la-conquista-la-pinta"
+      ],
+      "brand": "Gh",
+      "line_p": "G.H. La Conquista",
+      "line_c": "G.H. La Conquista La Pinta",
+      "rest": "La Pinta",
+      "n_p": 1,
+      "n_c": 1,
+      "vit_p": [
+        "Piramide"
+      ],
+      "vit_c": [
+        "Double Robusto"
+      ],
+      "reason0": "needs judgment; suffix=\"La Pinta\"; n=1/1"
+    },
+    {
+      "ids": [
+        "cig-gh-g-h-la-conquista",
+        "cig-gh-g-h-la-conquista-shorty"
+      ],
+      "brand": "Gh",
+      "line_p": "G.H. La Conquista",
+      "line_c": "G.H. La Conquista Shorty",
+      "rest": "Shorty",
+      "n_p": 1,
+      "n_c": 1,
+      "vit_p": [
+        "Piramide"
+      ],
+      "vit_c": [
+        "Robusto"
+      ],
+      "reason0": "needs judgment; suffix=\"Shorty\"; n=1/1"
+    },
+    {
+      "ids": [
+        "cig-gilbert-de-montsalvat-classic",
+        "cig-gilbert-de-montsalvat-classic-chunky"
+      ],
+      "brand": "Gilbert",
+      "line_p": "de Montsalvat Classic",
+      "line_c": "de Montsalvat Classic Chunky",
+      "rest": "Chunky",
+      "n_p": 4,
+      "n_c": 1,
+      "vit_p": [
+        "Corona",
+        "Robusto",
+        "Belicoso",
+        "Gran Toro"
+      ],
+      "vit_c": [
+        "Gordo"
+      ],
+      "reason0": "needs judgment; suffix=\"Chunky\"; n=4/1"
+    },
+    {
+      "ids": [
+        "cig-gilbert-de-montsalvat-classic",
+        "cig-gilbert-de-montsalvat-classic-limited-edition-15-years"
+      ],
+      "brand": "Gilbert",
+      "line_p": "de Montsalvat Classic",
+      "line_c": "de Montsalvat Classic Limited Edition 15 Years",
+      "rest": "Limited Edition 15 Years",
+      "n_p": 4,
+      "n_c": 1,
+      "vit_p": [
+        "Corona",
+        "Robusto",
+        "Belicoso",
+        "Gran Toro"
+      ],
+      "vit_c": [
+        "Gran Toro"
+      ],
+      "reason0": "needs judgment; suffix=\"Limited Edition 15 Years\"; n=4/1"
+    },
+    {
+      "ids": [
+        "cig-gurkha-heritage",
+        "cig-gurkha-heritage-corto"
+      ],
+      "brand": "Gurkha",
+      "line_p": "Heritage",
+      "line_c": "Heritage Corto",
+      "rest": "Corto",
+      "n_p": 2,
+      "n_c": 1,
+      "vit_p": [
+        "Toro",
+        "Robusto"
+      ],
+      "vit_c": [
+        "Robusto"
+      ],
+      "reason0": "needs judgment; suffix=\"Corto\"; n=2/1"
+    },
+    {
+      "ids": [
+        "cig-gurkha-heritage-maduro",
+        "cig-gurkha-heritage-maduro-corto"
+      ],
+      "brand": "Gurkha",
+      "line_p": "Heritage Maduro",
+      "line_c": "Heritage Maduro Corto",
+      "rest": "Corto",
+      "n_p": 2,
+      "n_c": 1,
+      "vit_p": [
+        "Toro",
+        "Robusto"
+      ],
+      "vit_c": [
+        "Robusto"
+      ],
+      "reason0": "needs judgment; suffix=\"Corto\"; n=2/1"
+    },
+    {
+      "ids": [
+        "cig-gurkha-marquesa",
+        "cig-gurkha-marquesa-kiste"
+      ],
+      "brand": "Gurkha",
+      "line_p": "Marquesa",
+      "line_c": "Marquesa Kiste",
+      "rest": "Kiste",
+      "n_p": 2,
+      "n_c": 1,
+      "vit_p": [
+        "Robusto",
+        "Toro"
+      ],
+      "vit_c": [
+        "Toro"
+      ],
+      "reason0": "needs judgment; suffix=\"Kiste\"; n=2/1"
+    },
+    {
+      "ids": [
+        "cig-gurkha-treinta-30th-anniversary",
+        "cig-gurkha-treinta-30th-anniversary-aganorsa"
+      ],
+      "brand": "Gurkha",
+      "line_p": "Treinta 30th Anniversary",
+      "line_c": "Treinta 30th Anniversary Aganorsa",
+      "rest": "Aganorsa",
+      "n_p": 1,
+      "n_c": 1,
+      "vit_p": [
+        "Toro"
+      ],
+      "vit_c": [
+        "Toro"
+      ],
+      "reason0": "needs judgment; suffix=\"Aganorsa\"; n=1/1"
+    },
+    {
+      "ids": [
+        "cig-henk-maori-la-dona",
+        "cig-henk-maori-la-dona-edicion-limitada-2018"
+      ],
+      "brand": "Henk",
+      "line_p": "Maori La Dona",
+      "line_c": "Maori La Dona Edición Limitada 2018",
+      "rest": "Edición Limitada 2018",
+      "n_p": 1,
+      "n_c": 1,
+      "vit_p": [
+        "Double Robusto"
+      ],
+      "vit_c": [
+        "Double Robusto"
+      ],
+      "reason0": "needs judgment; suffix=\"Edición Limitada 2018\"; n=1/1"
+    },
+    {
+      "ids": [
+        "cig-herr-lehmann-no-5-schwarzwald",
+        "cig-herr-lehmann-no-5-schwarzwald-goldfinger"
+      ],
+      "brand": "Herr",
+      "line_p": "Lehmann No. 5 Schwarzwald",
+      "line_c": "Lehmann No. 5 Schwarzwald Goldfinger",
+      "rest": "Goldfinger",
+      "n_p": 1,
+      "n_c": 1,
+      "vit_p": [
+        "Torpedo"
+      ],
+      "vit_c": [
+        "Torpedo"
+      ],
+      "reason0": "needs judgment; suffix=\"Goldfinger\"; n=1/1"
+    },
+    {
+      "ids": [
+        "cig-hr-h-r-signature",
+        "cig-hr-h-r-signature-signature"
+      ],
+      "brand": "Hr",
+      "line_p": "H.R. Signature",
+      "line_c": "H.R. Signature Signature",
+      "rest": "Signature",
+      "n_p": 2,
+      "n_c": 1,
+      "vit_p": [
+        "Belicoso",
+        "Toro"
+      ],
+      "vit_c": [
+        "Corona Gorda"
+      ],
+      "reason0": "needs judgment; suffix=\"Signature\"; n=2/1"
+    },
+    {
+      "ids": [
+        "cig-ibis-honduras-maduro",
+        "cig-ibis-honduras-maduro-antiguo"
+      ],
+      "brand": "Ibis",
+      "line_p": "Honduras Maduro",
+      "line_c": "Honduras Maduro Antiguo",
+      "rest": "Antiguo",
+      "n_p": 2,
+      "n_c": 1,
+      "vit_p": [
+        "Short Robusto",
+        "Double Robusto"
+      ],
+      "vit_c": [
+        "Figurado"
+      ],
+      "reason0": "needs judgment; suffix=\"Antiguo\"; n=2/1"
+    },
+    {
+      "ids": [
+        "cig-inca-peru",
+        "cig-inca-peru-imperio"
+      ],
+      "brand": "Inca",
+      "line_p": "Peru",
+      "line_c": "Peru Imperio",
+      "rest": "Imperio",
+      "n_p": 1,
+      "n_c": 1,
+      "vit_p": [
+        "Gordo"
+      ],
+      "vit_c": [
+        "Gordo"
+      ],
+      "reason0": "needs judgment; suffix=\"Imperio\"; n=1/1"
+    },
+    {
+      "ids": [
+        "cig-inca-peru",
+        "cig-inca-peru-roca"
+      ],
+      "brand": "Inca",
+      "line_p": "Peru",
+      "line_c": "Peru Roca",
+      "rest": "Roca",
+      "n_p": 1,
+      "n_c": 1,
+      "vit_p": [
+        "Gordo"
+      ],
+      "vit_c": [
+        "Robusto"
+      ],
+      "reason0": "needs judgment; suffix=\"Roca\"; n=1/1"
+    },
+    {
+      "ids": [
+        "cig-inca-peru",
+        "cig-inca-peru-tambo"
+      ],
+      "brand": "Inca",
+      "line_p": "Peru",
+      "line_c": "Peru Tambo",
+      "rest": "Tambo",
+      "n_p": 1,
+      "n_c": 1,
+      "vit_p": [
+        "Gordo"
+      ],
+      "vit_c": [
+        "Corona Gorda"
+      ],
+      "reason0": "needs judgment; suffix=\"Tambo\"; n=1/1"
+    },
+    {
+      "ids": [
+        "cig-kafie-1901-connecticut",
+        "cig-kafie-1901-connecticut-balicoso"
+      ],
+      "brand": "Kafie",
+      "line_p": "1901 Connecticut",
+      "line_c": "1901 Connecticut Balicoso",
+      "rest": "Balicoso",
+      "n_p": 2,
+      "n_c": 1,
+      "vit_p": [
+        "Robusto",
+        "Toro"
+      ],
+      "vit_c": [
+        "Belicoso"
+      ],
+      "reason0": "needs judgment; suffix=\"Balicoso\"; n=2/1"
+    },
+    {
+      "ids": [
+        "cig-kristoff-gc-signature-series",
+        "cig-kristoff-gc-signature-series-intertabac-2023"
+      ],
+      "brand": "Kristoff",
+      "line_p": "GC Signature Series",
+      "line_c": "GC Signature Series Intertabac 2023",
+      "rest": "Intertabac 2023",
+      "n_p": 3,
+      "n_c": 1,
+      "vit_p": [
+        "Churchill",
+        "Torpedo",
+        "Robusto"
+      ],
+      "vit_c": [
+        "Toro"
+      ],
+      "reason0": "needs judgment; suffix=\"Intertabac 2023\"; n=3/1"
+    },
+    {
+      "ids": [
+        "cig-kristoff-gc-signature-series",
+        "cig-kristoff-gc-signature-series-jt"
+      ],
+      "brand": "Kristoff",
+      "line_p": "GC Signature Series",
+      "line_c": "GC Signature Series JT",
+      "rest": "JT",
+      "n_p": 3,
+      "n_c": 1,
+      "vit_p": [
+        "Churchill",
+        "Torpedo",
+        "Robusto"
+      ],
+      "vit_c": [
+        "Toro"
+      ],
+      "reason0": "needs judgment; suffix=\"JT\"; n=3/1"
+    },
+    {
+      "ids": [
+        "cig-kristoff-gc-signature-series",
+        "cig-kristoff-gc-signature-series-pca-2022"
+      ],
+      "brand": "Kristoff",
+      "line_p": "GC Signature Series",
+      "line_c": "GC Signature Series PCA 2022",
+      "rest": "PCA 2022",
+      "n_p": 3,
+      "n_c": 1,
+      "vit_p": [
+        "Churchill",
+        "Torpedo",
+        "Robusto"
+      ],
+      "vit_c": [
+        "Perfecto"
+      ],
+      "reason0": "needs judgment; suffix=\"PCA 2022\"; n=3/1"
+    },
+    {
+      "ids": [
+        "cig-kristoff-gc-signature-series",
+        "cig-kristoff-gc-signature-series-pca-2026"
+      ],
+      "brand": "Kristoff",
+      "line_p": "GC Signature Series",
+      "line_c": "GC Signature Series PCA 2026",
+      "rest": "PCA 2026",
+      "n_p": 3,
+      "n_c": 1,
+      "vit_p": [
+        "Churchill",
+        "Torpedo",
+        "Robusto"
+      ],
+      "vit_c": [
+        "Toro"
+      ],
+      "reason0": "needs judgment; suffix=\"PCA 2026\"; n=3/1"
+    },
+    {
+      "ids": [
+        "cig-la-aroma-de-cuba-la-aroma-del-caribe-base-line",
+        "cig-la-aroma-de-cuba-la-aroma-del-caribe-base-line-el-jefe"
+      ],
+      "brand": "La Aroma de Cuba",
+      "line_p": "La Aroma del Caribe Base Line",
+      "line_c": "La Aroma del Caribe Base Line El Jefe",
+      "rest": "El Jefe",
+      "n_p": 3,
+      "n_c": 1,
+      "vit_p": [
+        "Short Robusto",
+        "Churchill",
+        "Robusto"
+      ],
+      "vit_c": [
+        "Gordo"
+      ],
+      "reason0": "needs judgment; suffix=\"El Jefe\"; n=3/1"
+    },
+    {
+      "ids": [
+        "cig-la-aroma-de-cuba-la-aroma-del-caribe-base-line",
+        "cig-la-aroma-de-cuba-la-aroma-del-caribe-base-line-immensa"
+      ],
+      "brand": "La Aroma de Cuba",
+      "line_p": "La Aroma del Caribe Base Line",
+      "line_c": "La Aroma del Caribe Base Line Immensa",
+      "rest": "Immensa",
+      "n_p": 3,
+      "n_c": 1,
+      "vit_p": [
+        "Short Robusto",
+        "Churchill",
+        "Robusto"
+      ],
+      "vit_c": [
+        "Gordo"
+      ],
+      "reason0": "needs judgment; suffix=\"Immensa\"; n=3/1"
+    },
+    {
+      "ids": [
+        "cig-la-aroma-de-cuba-la-aroma-del-caribe-base-line",
+        "cig-la-aroma-de-cuba-la-aroma-del-caribe-base-line-monarch"
+      ],
+      "brand": "La Aroma de Cuba",
+      "line_p": "La Aroma del Caribe Base Line",
+      "line_c": "La Aroma del Caribe Base Line Monarch",
+      "rest": "Monarch",
+      "n_p": 3,
+      "n_c": 1,
+      "vit_p": [
+        "Short Robusto",
+        "Churchill",
+        "Robusto"
+      ],
+      "vit_c": [
+        "Toro"
+      ],
+      "reason0": "needs judgment; suffix=\"Monarch\"; n=3/1"
+    },
+    {
+      "ids": [
+        "cig-la-aroma-de-cuba-la-aroma-del-caribe-mi-amor",
+        "cig-la-aroma-de-cuba-la-aroma-del-caribe-mi-amor-duque"
+      ],
+      "brand": "La Aroma de Cuba",
+      "line_p": "La Aroma del Caribe Mi Amor",
+      "line_c": "La Aroma del Caribe Mi Amor Duque",
+      "rest": "Duque",
+      "n_p": 2,
+      "n_c": 1,
+      "vit_p": [
+        "Robusto",
+        "Belicoso"
+      ],
+      "vit_c": [
+        "Robusto"
+      ],
+      "reason0": "needs judgment; suffix=\"Duque\"; n=2/1"
+    },
+    {
+      "ids": [
+        "cig-la-aroma-de-cuba-la-aroma-del-caribe-mi-amor",
+        "cig-la-aroma-de-cuba-la-aroma-del-caribe-mi-amor-valentino"
+      ],
+      "brand": "La Aroma de Cuba",
+      "line_p": "La Aroma del Caribe Mi Amor",
+      "line_c": "La Aroma del Caribe Mi Amor Valentino",
+      "rest": "Valentino",
+      "n_p": 2,
+      "n_c": 1,
+      "vit_p": [
+        "Robusto",
+        "Belicoso"
+      ],
+      "vit_c": [
+        "Gran Toro"
+      ],
+      "reason0": "needs judgment; suffix=\"Valentino\"; n=2/1"
+    },
+    {
+      "ids": [
+        "cig-la-aurora-107-ecuador",
+        "cig-la-aurora-107-ecuador-sumo"
+      ],
+      "brand": "La Aurora",
+      "line_p": "107 Ecuador",
+      "line_c": "107 Ecuador Sumo",
+      "rest": "Sumo",
+      "n_p": 1,
+      "n_c": 1,
+      "vit_p": [
+        "Robusto"
+      ],
+      "vit_c": [
+        "Short Robusto"
+      ],
+      "reason0": "needs judgment; suffix=\"Sumo\"; n=1/1"
+    },
+    {
+      "ids": [
+        "cig-la-aurora-1495-series",
+        "cig-la-aurora-1495-series-sumo"
+      ],
+      "brand": "La Aurora",
+      "line_p": "1495 Series",
+      "line_c": "1495 Series Sumo",
+      "rest": "Sumo",
+      "n_p": 3,
+      "n_c": 1,
+      "vit_p": [
+        "Robusto",
+        "Churchill",
+        "Belicoso"
+      ],
+      "vit_c": [
+        "Short Robusto"
+      ],
+      "reason0": "needs judgment; suffix=\"Sumo\"; n=3/1"
+    },
+    {
+      "ids": [
+        "cig-la-aurora-cameroon-1903",
+        "cig-la-aurora-cameroon-1903-deluxe"
+      ],
+      "brand": "La Aurora",
+      "line_p": "Cameroon 1903",
+      "line_c": "Cameroon 1903 Deluxe",
+      "rest": "Deluxe",
+      "n_p": 3,
+      "n_c": 1,
+      "vit_p": [
+        "Churchill",
+        "Robusto",
+        "Toro"
+      ],
+      "vit_c": [
+        "Robusto"
+      ],
+      "reason0": "needs judgment; suffix=\"Deluxe\"; n=3/1"
+    },
+    {
+      "ids": [
+        "cig-la-flor-dominicana-reserva-especial",
+        "cig-la-flor-dominicana-reserva-especial-el-jocko-2"
+      ],
+      "brand": "La Flor Dominicana",
+      "line_p": "Reserva Especial",
+      "line_c": "Reserva Especial El Jocko #2",
+      "rest": "El Jocko #2",
+      "n_p": 3,
+      "n_c": 1,
+      "vit_p": [
+        "Robusto",
+        "Toro",
+        "Robusto"
+      ],
+      "vit_c": [
+        "Perfecto"
+      ],
+      "reason0": "needs judgment; suffix=\"El Jocko #2\"; n=3/1"
+    },
+    {
+      "ids": [
+        "cig-la-gloria-cubana-glorias",
+        "cig-la-gloria-cubana-glorias-20"
+      ],
+      "brand": "La Gloria Cubana",
+      "line_p": "Glorias",
+      "line_c": "Glorias /20",
+      "rest": "20",
+      "n_p": 1,
+      "n_c": 1,
+      "vit_p": [
+        "Petit Corona"
+      ],
+      "vit_c": [
+        "Robusto"
+      ],
+      "reason0": "needs judgment; suffix=\"20\"; n=1/1"
+    },
+    {
+      "ids": [
+        "cig-la-rosa-de-sandiego-clasico",
+        "cig-la-rosa-de-sandiego-clasico-altpreisiger-bestand"
+      ],
+      "brand": "La Rosa",
+      "line_p": "de Sandiego Clasico",
+      "line_c": "de Sandiego Clasico ALTPREISIGER Bestand",
+      "rest": "ALTPREISIGER Bestand",
+      "n_p": 1,
+      "n_c": 1,
+      "vit_p": [
+        "Robusto"
+      ],
+      "vit_c": [
+        "Gran Toro"
+      ],
+      "reason0": "needs judgment; suffix=\"ALTPREISIGER Bestand\"; n=1/1"
+    },
+    {
+      "ids": [
+        "cig-leite-amp-alves-arapiraca",
+        "cig-leite-amp-alves-arapiraca-quadrado"
+      ],
+      "brand": "Leite",
+      "line_p": "&amp; Alves Arapiraca",
+      "line_c": "&amp; Alves Arapiraca Quadrado",
+      "rest": "Quadrado",
+      "n_p": 3,
+      "n_c": 1,
+      "vit_p": [
+        "Corona Gorda",
+        "Robusto",
+        "Gordo"
+      ],
+      "vit_c": [
+        "Belicoso"
+      ],
+      "reason0": "needs judgment; suffix=\"Quadrado\"; n=3/1"
+    },
+    {
+      "ids": [
+        "cig-leite-amp-alves-stalk-cut",
+        "cig-leite-amp-alves-stalk-cut-quadrado"
+      ],
+      "brand": "Leite",
+      "line_p": "&amp; Alves Stalk Cut",
+      "line_c": "&amp; Alves Stalk Cut Quadrado",
+      "rest": "Quadrado",
+      "n_p": 1,
+      "n_c": 1,
+      "vit_p": [
+        "Robusto"
+      ],
+      "vit_c": [
+        "Belicoso"
+      ],
+      "reason0": "needs judgment; suffix=\"Quadrado\"; n=1/1"
+    },
+    {
+      "ids": [
+        "cig-leon-jimenes",
+        "cig-leon-jimenes-flavour-bee"
+      ],
+      "brand": "Leon",
+      "line_p": "Jimenes",
+      "line_c": "Jimenes Flavour Bee",
+      "rest": "Flavour Bee",
+      "n_p": 2,
+      "n_c": 1,
+      "vit_p": [
+        "Petit Corona",
+        "Robusto"
+      ],
+      "vit_c": [
+        "Petit Corona"
+      ],
+      "reason0": "needs judgment; suffix=\"Flavour Bee\"; n=2/1"
+    },
+    {
+      "ids": [
+        "cig-leon-jimenes",
+        "cig-leon-jimenes-flavour-blond"
+      ],
+      "brand": "Leon",
+      "line_p": "Jimenes",
+      "line_c": "Jimenes Flavour Blond",
+      "rest": "Flavour Blond",
+      "n_p": 2,
+      "n_c": 1,
+      "vit_p": [
+        "Petit Corona",
+        "Robusto"
+      ],
+      "vit_c": [
+        "Petit Corona"
+      ],
+      "reason0": "needs judgment; suffix=\"Flavour Blond\"; n=2/1"
+    },
+    {
+      "ids": [
+        "cig-leon-jimenes",
+        "cig-leon-jimenes-flavour-caribbean"
+      ],
+      "brand": "Leon",
+      "line_p": "Jimenes",
+      "line_c": "Jimenes Flavour Caribbean",
+      "rest": "Flavour Caribbean",
+      "n_p": 2,
+      "n_c": 1,
+      "vit_p": [
+        "Petit Corona",
+        "Robusto"
+      ],
+      "vit_c": [
+        "Petit Corona"
+      ],
+      "reason0": "needs judgment; suffix=\"Flavour Caribbean\"; n=2/1"
+    },
+    {
+      "ids": [
+        "cig-leon-jimenes-series-300-cameroon",
+        "cig-leon-jimenes-series-300-cameroon-limited-edition"
+      ],
+      "brand": "Leon",
+      "line_p": "Jimenes Series 300 Cameroon",
+      "line_c": "Jimenes Series 300 Cameroon Limited Edition",
+      "rest": "Limited Edition",
+      "n_p": 3,
+      "n_c": 1,
+      "vit_p": [
+        "Corona",
+        "Churchill",
+        "Robusto"
+      ],
+      "vit_c": [
+        "Gran Toro"
+      ],
+      "reason0": "needs judgment; suffix=\"Limited Edition\"; n=3/1"
+    },
+    {
+      "ids": [
+        "cig-luciano-dreamer",
+        "cig-luciano-dreamer-de-luxe"
+      ],
+      "brand": "Luciano",
+      "line_p": "Dreamer",
+      "line_c": "Dreamer de Luxe",
+      "rest": "de Luxe",
+      "n_p": 2,
+      "n_c": 1,
+      "vit_p": [
+        "Lancero",
+        "Belicoso"
+      ],
+      "vit_c": [
+        "Toro"
+      ],
+      "reason0": "needs judgment; suffix=\"de Luxe\"; n=2/1"
+    },
+    {
+      "ids": [
+        "cig-macanudo-limited-edition",
+        "cig-macanudo-limited-edition-vintage-2010"
+      ],
+      "brand": "Macanudo",
+      "line_p": "Limited Edition",
+      "line_c": "Limited Edition Vintage 2010",
+      "rest": "Vintage 2010",
+      "n_p": 1,
+      "n_c": 1,
+      "vit_p": [
+        "Churchill"
+      ],
+      "vit_c": [
+        "Torpedo"
+      ],
+      "reason0": "needs judgment; suffix=\"Vintage 2010\"; n=1/1"
+    },
+    {
+      "ids": [
+        "cig-manuel-alonso-maduro",
+        "cig-manuel-alonso-maduro-xl"
+      ],
+      "brand": "Manuel",
+      "line_p": "Alonso Maduro",
+      "line_c": "Alonso Maduro XL",
+      "rest": "XL",
+      "n_p": 2,
+      "n_c": 1,
+      "vit_p": [
+        "Robusto",
+        "Piramide"
+      ],
+      "vit_c": [
+        "Robusto"
+      ],
+      "reason0": "needs judgment; suffix=\"XL\"; n=2/1"
+    },
+    {
+      "ids": [
+        "cig-marca-fina-brazil",
+        "cig-marca-fina-brazil-breve"
+      ],
+      "brand": "Marca",
+      "line_p": "Fina Brazil",
+      "line_c": "Fina Brazil Breve",
+      "rest": "Breve",
+      "n_p": 3,
+      "n_c": 1,
+      "vit_p": [
+        "Corona",
+        "Churchill",
+        "Robusto"
+      ],
+      "vit_c": [
+        "Robusto"
+      ],
+      "reason0": "needs judgment; suffix=\"Breve\"; n=3/1"
+    },
+    {
+      "ids": [
+        "cig-marca-fina-brazil",
+        "cig-marca-fina-brazil-edicion-limitada-2023"
+      ],
+      "brand": "Marca",
+      "line_p": "Fina Brazil",
+      "line_c": "Fina Brazil Edición Limitada 2023",
+      "rest": "Edición Limitada 2023",
+      "n_p": 3,
+      "n_c": 1,
+      "vit_p": [
+        "Corona",
+        "Churchill",
+        "Robusto"
+      ],
+      "vit_c": [
+        "Toro"
+      ],
+      "reason0": "needs judgment; suffix=\"Edición Limitada 2023\"; n=3/1"
+    },
+    {
+      "ids": [
+        "cig-marca-fina-nicaragua",
+        "cig-marca-fina-nicaragua-breve"
+      ],
+      "brand": "Marca",
+      "line_p": "Fina Nicaragua",
+      "line_c": "Fina Nicaragua Breve",
+      "rest": "Breve",
+      "n_p": 3,
+      "n_c": 1,
+      "vit_p": [
+        "Corona",
+        "Robusto",
+        "Double Corona"
+      ],
+      "vit_c": [
+        "Piramide"
+      ],
+      "reason0": "needs judgment; suffix=\"Breve\"; n=3/1"
+    },
+    {
+      "ids": [
+        "cig-marca-fina-panama",
+        "cig-marca-fina-panama-robusto-breve"
+      ],
+      "brand": "Marca",
+      "line_p": "Fina Panama",
+      "line_c": "Fina Panama Robusto Breve",
+      "rest": "Robusto Breve",
+      "n_p": 3,
+      "n_c": 1,
+      "vit_p": [
+        "Corona",
+        "Robusto",
+        "Double Corona"
+      ],
+      "vit_c": [
+        "Short Robusto"
+      ],
+      "reason0": "needs judgment; suffix=\"Robusto Breve\"; n=3/1"
+    },
+    {
+      "ids": [
+        "cig-marca-fina-panama-maduro",
+        "cig-marca-fina-panama-maduro-breve"
+      ],
+      "brand": "Marca",
+      "line_p": "Fina Panama Maduro",
+      "line_c": "Fina Panama Maduro Breve",
+      "rest": "Breve",
+      "n_p": 2,
+      "n_c": 1,
+      "vit_p": [
+        "Corona",
+        "Robusto"
+      ],
+      "vit_c": [
+        "Robusto"
+      ],
+      "reason0": "needs judgment; suffix=\"Breve\"; n=2/1"
+    },
+    {
+      "ids": [
+        "cig-marca-fina-panama-maduro",
+        "cig-marca-fina-panama-maduro-edicion-limitada-2024"
+      ],
+      "brand": "Marca",
+      "line_p": "Fina Panama Maduro",
+      "line_c": "Fina Panama Maduro Edición Limitada 2024",
+      "rest": "Edición Limitada 2024",
+      "n_p": 2,
+      "n_c": 1,
+      "vit_p": [
+        "Corona",
+        "Robusto"
+      ],
+      "vit_c": [
+        "Toro"
+      ],
+      "reason0": "needs judgment; suffix=\"Edición Limitada 2024\"; n=2/1"
+    },
+    {
+      "ids": [
+        "cig-maria-mancini-edicion-especial",
+        "cig-maria-mancini-edicion-especial-classico"
+      ],
+      "brand": "Maria",
+      "line_p": "Mancini Edicion Especial",
+      "line_c": "Mancini Edicion Especial Classico",
+      "rest": "Classico",
+      "n_p": 1,
+      "n_c": 1,
+      "vit_p": [
+        "Petit Corona"
+      ],
+      "vit_c": [
+        "Corona"
+      ],
+      "reason0": "needs judgment; suffix=\"Classico\"; n=1/1"
+    },
+    {
+      "ids": [
+        "cig-matilde-oscura",
+        "cig-matilde-oscura-bravo"
+      ],
+      "brand": "Matilde",
+      "line_p": "Oscura",
+      "line_c": "Oscura Bravo",
+      "rest": "Bravo",
+      "n_p": 2,
+      "n_c": 1,
+      "vit_p": [
+        "Corona",
+        "Robusto"
+      ],
+      "vit_c": [
+        "Toro"
+      ],
+      "reason0": "needs judgment; suffix=\"Bravo\"; n=2/1"
+    },
+    {
+      "ids": [
+        "cig-matilde-quadrata",
+        "cig-matilde-quadrata-bravo"
+      ],
+      "brand": "Matilde",
+      "line_p": "Quadrata",
+      "line_c": "Quadrata Bravo",
+      "rest": "Bravo",
+      "n_p": 2,
+      "n_c": 1,
+      "vit_p": [
+        "Robusto",
+        "Torpedo"
+      ],
+      "vit_c": [
+        "Toro"
+      ],
+      "reason0": "needs judgment; suffix=\"Bravo\"; n=2/1"
+    },
+    {
+      "ids": [
+        "cig-matilde-renacer",
+        "cig-matilde-renacer-bravo"
+      ],
+      "brand": "Matilde",
+      "line_p": "Renacer",
+      "line_c": "Renacer Bravo",
+      "rest": "Bravo",
+      "n_p": 2,
+      "n_c": 1,
+      "vit_p": [
+        "Corona",
+        "Robusto"
+      ],
+      "vit_c": [
+        "Toro"
+      ],
+      "reason0": "needs judgment; suffix=\"Bravo\"; n=2/1"
+    },
+    {
+      "ids": [
+        "cig-matilde-serena",
+        "cig-matilde-serena-bravo"
+      ],
+      "brand": "Matilde",
+      "line_p": "Serena",
+      "line_c": "Serena Bravo",
+      "rest": "Bravo",
+      "n_p": 2,
+      "n_c": 1,
+      "vit_p": [
+        "Corona",
+        "Robusto"
+      ],
+      "vit_c": [
+        "Toro"
+      ],
+      "reason0": "needs judgment; suffix=\"Bravo\"; n=2/1"
+    },
+    {
+      "ids": [
+        "cig-meine-longfiller-bundles",
+        "cig-meine-longfiller-bundles-fat-shorty"
+      ],
+      "brand": "Meine",
+      "line_p": "Longfiller Bundles",
+      "line_c": "Longfiller Bundles Fat Shorty",
+      "rest": "Fat Shorty",
+      "n_p": 4,
+      "n_c": 1,
+      "vit_p": [
+        "Petit Corona",
+        "Corona",
+        "Toro",
+        "Figurado"
+      ],
+      "vit_c": [
+        "Robusto"
+      ],
+      "reason0": "needs judgment; suffix=\"Fat Shorty\"; n=4/1"
+    },
+    {
+      "ids": [
+        "cig-my-father-limited-edition-pepin-mania",
+        "cig-my-father-limited-edition-pepin-mania-10th-anniversary"
+      ],
+      "brand": "My Father",
+      "line_p": "Limited Edition Pepin Mania",
+      "line_c": "Limited Edition Pepin Mania 10th Anniversary",
+      "rest": "10th Anniversary",
+      "n_p": 1,
+      "n_c": 1,
+      "vit_p": [
+        "Toro"
+      ],
+      "vit_c": [
+        "Toro"
+      ],
+      "reason0": "needs judgment; suffix=\"10th Anniversary\"; n=1/1"
+    },
+    {
+      "ids": [
+        "cig-nat-sherman-timeless-prestige",
+        "cig-nat-sherman-timeless-prestige-divinos"
+      ],
+      "brand": "Nat Sherman Timeless",
+      "line_p": "Prestige",
+      "line_c": "Prestige Divinos",
+      "rest": "Divinos",
+      "n_p": 1,
+      "n_c": 1,
+      "vit_p": [
+        "Robusto"
+      ],
+      "vit_c": [
+        "Perfecto"
+      ],
+      "reason0": "needs judgment; suffix=\"Divinos\"; n=1/1"
+    },
+    {
+      "ids": [
+        "cig-olman-founders-edition-1997-corojo",
+        "cig-olman-founders-edition-1997-corojo-emperador"
+      ],
+      "brand": "Olman",
+      "line_p": "Founders Edition 1997 Corojo",
+      "line_c": "Founders Edition 1997 Corojo Emperador",
+      "rest": "Emperador",
+      "n_p": 1,
+      "n_c": 1,
+      "vit_p": [
+        "Corona"
+      ],
+      "vit_c": [
+        "Petit Corona"
+      ],
+      "reason0": "needs judgment; suffix=\"Emperador\"; n=1/1"
+    },
+    {
+      "ids": [
+        "cig-padilla-barcelona",
+        "cig-padilla-barcelona-xl"
+      ],
+      "brand": "Padilla",
+      "line_p": "Barcelona",
+      "line_c": "Barcelona XL",
+      "rest": "XL",
+      "n_p": 1,
+      "n_c": 1,
+      "vit_p": [
+        "Gordo"
+      ],
+      "vit_c": [
+        "Robusto"
+      ],
+      "reason0": "needs judgment; suffix=\"XL\"; n=1/1"
+    },
+    {
+      "ids": [
+        "cig-palmar-arriba",
+        "cig-palmar-arriba-jeroboam"
+      ],
+      "brand": "Palmar",
+      "line_p": "Arriba",
+      "line_c": "Arriba Jeroboam",
+      "rest": "Jeroboam",
+      "n_p": 1,
+      "n_c": 1,
+      "vit_p": [
+        "Short Robusto"
+      ],
+      "vit_c": [
+        "Petit Corona"
+      ],
+      "reason0": "needs judgment; suffix=\"Jeroboam\"; n=1/1"
+    },
+    {
+      "ids": [
+        "cig-paradiso-quintessence",
+        "cig-paradiso-quintessence-majestic"
+      ],
+      "brand": "Paradiso",
+      "line_p": "Quintessence",
+      "line_c": "Quintessence Majestic",
+      "rest": "Majestic",
+      "n_p": 5,
+      "n_c": 1,
+      "vit_p": [
+        "Robusto",
+        "Churchill",
+        "Epicure",
+        "Epicure",
+        "Belicoso"
+      ],
+      "vit_c": [
+        "Gordo"
+      ],
+      "reason0": "needs judgment; suffix=\"Majestic\"; n=5/1"
+    },
+    {
+      "ids": [
+        "cig-pdr-capa-madura",
+        "cig-pdr-capa-madura-crystal"
+      ],
+      "brand": "PDR",
+      "line_p": "Capa Madura",
+      "line_c": "Capa Madura Crystal",
+      "rest": "Crystal",
+      "n_p": 2,
+      "n_c": 1,
+      "vit_p": [
+        "Robusto",
+        "Toro"
+      ],
+      "vit_c": [
+        "Robusto"
+      ],
+      "reason0": "needs judgment; suffix=\"Crystal\"; n=2/1"
+    },
+    {
+      "ids": [
+        "cig-pdr-capa-natural",
+        "cig-pdr-capa-natural-crystal"
+      ],
+      "brand": "PDR",
+      "line_p": "Capa Natural",
+      "line_c": "Capa Natural Crystal",
+      "rest": "Crystal",
+      "n_p": 2,
+      "n_c": 1,
+      "vit_p": [
+        "Robusto",
+        "Toro"
+      ],
+      "vit_c": [
+        "Robusto"
+      ],
+      "reason0": "needs judgment; suffix=\"Crystal\"; n=2/1"
+    },
+    {
+      "ids": [
+        "cig-pdr-capa-oscura",
+        "cig-pdr-capa-oscura-crystal"
+      ],
+      "brand": "PDR",
+      "line_p": "Capa Oscura",
+      "line_c": "Capa Oscura Crystal",
+      "rest": "Crystal",
+      "n_p": 2,
+      "n_c": 1,
+      "vit_p": [
+        "Robusto",
+        "Toro"
+      ],
+      "vit_c": [
+        "Robusto"
+      ],
+      "reason0": "needs judgment; suffix=\"Crystal\"; n=2/1"
+    },
+    {
+      "ids": [
+        "cig-pdr-capa-sun-grown",
+        "cig-pdr-capa-sun-grown-crystal"
+      ],
+      "brand": "PDR",
+      "line_p": "Capa Sun Grown",
+      "line_c": "Capa Sun Grown Crystal",
+      "rest": "Crystal",
+      "n_p": 2,
+      "n_c": 1,
+      "vit_p": [
+        "Robusto",
+        "Toro"
+      ],
+      "vit_c": [
+        "Robusto"
+      ],
+      "reason0": "needs judgment; suffix=\"Crystal\"; n=2/1"
+    },
+    {
+      "ids": [
+        "cig-quesada-40th-anniversary",
+        "cig-quesada-40th-anniversary-real"
+      ],
+      "brand": "Quesada",
+      "line_p": "40th Anniversary",
+      "line_c": "40th Anniversary Real",
+      "rest": "Real",
+      "n_p": 1,
+      "n_c": 1,
+      "vit_p": [
+        "Robusto"
+      ],
+      "vit_c": [
+        "Toro"
+      ],
+      "reason0": "needs judgment; suffix=\"Real\"; n=1/1"
+    },
+    {
+      "ids": [
+        "cig-ra-r-a-villamil-viso-98",
+        "cig-ra-r-a-villamil-viso-98-g-n-corona"
+      ],
+      "brand": "Ra",
+      "line_p": "R.A. Villamil Viso 98",
+      "line_c": "R.A. Villamil Viso 98 G n Corona",
+      "rest": "G n Corona",
+      "n_p": 1,
+      "n_c": 1,
+      "vit_p": [
+        "Robusto"
+      ],
+      "vit_c": [
+        "Corona Gorda"
+      ],
+      "reason0": "needs judgment; suffix=\"G n Corona\"; n=1/1"
+    },
+    {
+      "ids": [
+        "cig-rocky-patel-fifty",
+        "cig-rocky-patel-fifty-five"
+      ],
+      "brand": "Rocky Patel",
+      "line_p": "Fifty",
+      "line_c": "Fifty Five",
+      "rest": "Five",
+      "n_p": 1,
+      "n_c": 2,
+      "vit_p": [
+        "Toro"
+      ],
+      "vit_c": [
+        "Robusto",
+        "Toro"
+      ],
+      "reason0": "needs judgment; suffix=\"Five\"; n=1/2"
+    },
+    {
+      "ids": [
+        "cig-rocky-patel-hamlet-25th-year",
+        "cig-rocky-patel-hamlet-25th-year-series-2020"
+      ],
+      "brand": "Rocky Patel",
+      "line_p": "Hamlet 25th Year",
+      "line_c": "Hamlet 25th Year Series 2020",
+      "rest": "Series 2020",
+      "n_p": 1,
+      "n_c": 1,
+      "vit_p": [
+        "Robusto"
+      ],
+      "vit_c": [
+        "Toro"
+      ],
+      "reason0": "needs judgment; suffix=\"Series 2020\"; n=1/1"
+    },
+    {
+      "ids": [
+        "cig-rojas-custom-blends-ometepe-maduro",
+        "cig-rojas-custom-blends-ometepe-maduro-shaggy"
+      ],
+      "brand": "Rojas",
+      "line_p": "Custom Blends Ometepe Maduro",
+      "line_c": "Custom Blends Ometepe Maduro Shaggy",
+      "rest": "Shaggy",
+      "n_p": 1,
+      "n_c": 1,
+      "vit_p": [
+        "Gordo"
+      ],
+      "vit_c": [
+        "Toro"
+      ],
+      "reason0": "needs judgment; suffix=\"Shaggy\"; n=1/1"
+    },
+    {
+      "ids": [
+        "cig-room101-room-101-johnny-tobacconaut",
+        "cig-room101-room-101-johnny-tobacconaut-ranflactic"
+      ],
+      "brand": "Room101",
+      "line_p": "Room 101 Johnny Tobacconaut",
+      "line_c": "Room 101 Johnny Tobacconaut Ranflactic",
+      "rest": "Ranflactic",
+      "n_p": 2,
+      "n_c": 1,
+      "vit_p": [
+        "Robusto",
+        "Toro"
+      ],
+      "vit_c": [
+        "Perfecto"
+      ],
+      "reason0": "needs judgment; suffix=\"Ranflactic\"; n=2/1"
+    },
+    {
+      "ids": [
+        "cig-smoking-jacket-by-hendrik-kelner-jr-red-label",
+        "cig-smoking-jacket-by-hendrik-kelner-jr-red-label-imperial"
+      ],
+      "brand": "Smoking",
+      "line_p": "Jacket by Hendrik Kelner Jr. Red Label",
+      "line_c": "Jacket by Hendrik Kelner Jr. Red Label Imperial",
+      "rest": "Imperial",
+      "n_p": 1,
+      "n_c": 1,
+      "vit_p": [
+        "Short Robusto"
+      ],
+      "vit_c": [
+        "Robusto"
+      ],
+      "reason0": "needs judgment; suffix=\"Imperial\"; n=1/1"
+    },
+    {
+      "ids": [
+        "cig-smoking-jacket-by-hendrik-kelner-jr-red-label",
+        "cig-smoking-jacket-by-hendrik-kelner-jr-red-label-magno"
+      ],
+      "brand": "Smoking",
+      "line_p": "Jacket by Hendrik Kelner Jr. Red Label",
+      "line_c": "Jacket by Hendrik Kelner Jr. Red Label Magno",
+      "rest": "Magno",
+      "n_p": 1,
+      "n_c": 1,
+      "vit_p": [
+        "Short Robusto"
+      ],
+      "vit_c": [
+        "Toro"
+      ],
+      "reason0": "needs judgment; suffix=\"Magno\"; n=1/1"
+    },
+    {
+      "ids": [
+        "cig-southern-draw-jacob-s-ladder",
+        "cig-southern-draw-jacob-s-ladder-brimstone"
+      ],
+      "brand": "Southern Draw",
+      "line_p": "Jacob's Ladder",
+      "line_c": "Jacob's Ladder Brimstone",
+      "rest": "Brimstone",
+      "n_p": 3,
+      "n_c": 1,
+      "vit_p": [
+        "Toro",
+        "Robusto",
+        "Gordo"
+      ],
+      "vit_c": [
+        "Perfecto"
+      ],
+      "reason0": "needs judgment; suffix=\"Brimstone\"; n=3/1"
+    },
+    {
+      "ids": [
+        "cig-tabacalera-1881",
+        "cig-tabacalera-1881-perique"
+      ],
+      "brand": "Tabacalera",
+      "line_p": "1881",
+      "line_c": "1881 Perique",
+      "rest": "Perique",
+      "n_p": 1,
+      "n_c": 1,
+      "vit_p": [
+        "Robusto"
+      ],
+      "vit_c": [
+        "Robusto"
+      ],
+      "reason0": "needs judgment; suffix=\"Perique\"; n=1/1"
+    },
+    {
+      "ids": [
+        "cig-tabacalera-1881",
+        "cig-tabacalera-1881-perique-bold"
+      ],
+      "brand": "Tabacalera",
+      "line_p": "1881",
+      "line_c": "1881 Perique Bold",
+      "rest": "Perique Bold",
+      "n_p": 1,
+      "n_c": 2,
+      "vit_p": [
+        "Robusto"
+      ],
+      "vit_c": [
+        "Robusto",
+        "Toro"
+      ],
+      "reason0": "needs judgment; suffix=\"Perique Bold\"; n=1/2"
+    },
+    {
+      "ids": [
+        "cig-tabacalera-1881-perique",
+        "cig-tabacalera-1881-perique-bold"
+      ],
+      "brand": "Tabacalera",
+      "line_p": "1881 Perique",
+      "line_c": "1881 Perique Bold",
+      "rest": "Bold",
+      "n_p": 1,
+      "n_c": 2,
+      "vit_p": [
+        "Robusto"
+      ],
+      "vit_c": [
+        "Robusto",
+        "Toro"
+      ],
+      "reason0": "needs judgment; suffix=\"Bold\"; n=1/2"
+    },
+    {
+      "ids": [
+        "cig-tabacalera-flor-fina",
+        "cig-tabacalera-flor-fina-larga-especiale"
+      ],
+      "brand": "Tabacalera",
+      "line_p": "Flor Fina",
+      "line_c": "Flor Fina Larga Especiale",
+      "rest": "Larga Especiale",
+      "n_p": 1,
+      "n_c": 1,
+      "vit_p": [
+        "Corona"
+      ],
+      "vit_c": [
+        "Corona"
+      ],
+      "reason0": "needs judgment; suffix=\"Larga Especiale\"; n=1/1"
+    },
+    {
+      "ids": [
+        "cig-tatuaje-unicos",
+        "cig-tatuaje-tatuaje-unico"
+      ],
+      "brand": "Tatuaje",
+      "line_p": "Unicos",
+      "line_c": "Unicos & Special",
+      "rest": "Special",
+      "n_p": 1,
+      "n_c": 5,
+      "vit_p": [
+        "Torpedo"
+      ],
+      "vit_c": [
+        "Pork Tenderloin",
+        "Cabaiguan Guapos",
+        "Cohete",
+        "Pork Tenderloin XL",
+        "TLX Toro"
+      ],
+      "reason0": "needs judgment; suffix=\"Special\"; n=1/5"
+    },
+    {
+      "ids": [
+        "cig-torano-torano-exodus",
+        "cig-torano-torano-exodus-1959-50-years-limited-edition-cuban"
+      ],
+      "brand": "Toraño",
+      "line_p": "Torano Exodus",
+      "line_c": "Torano Exodus 1959 50 Years Limited Edition Cuban",
+      "rest": "1959 50 Years Limited Edition Cuban",
+      "n_p": 2,
+      "n_c": 1,
+      "vit_p": [
+        "Torpedo",
+        "Gordo"
+      ],
+      "vit_c": [
+        "Toro"
+      ],
+      "reason0": "needs judgment; suffix=\"1959 50 Years Limited Edition Cuban\"; n=2/1"
+    },
+    {
+      "ids": [
+        "cig-torano-torano-exodus-1959-50-years",
+        "cig-torano-torano-exodus-1959-50-years-limited-edition-cuban"
+      ],
+      "brand": "Toraño",
+      "line_p": "Torano Exodus 1959 50 Years",
+      "line_c": "Torano Exodus 1959 50 Years Limited Edition Cuban",
+      "rest": "Limited Edition Cuban",
+      "n_p": 2,
+      "n_c": 1,
+      "vit_p": [
+        "Robusto",
+        "Torpedo"
+      ],
+      "vit_c": [
+        "Toro"
+      ],
+      "reason0": "needs judgment; suffix=\"Limited Edition Cuban\"; n=2/1"
+    },
+    {
+      "ids": [
+        "cig-valentino-siesto-anniversary-sun-grown",
+        "cig-valentino-siesto-anniversary-sun-grown-real-5"
+      ],
+      "brand": "Valentino",
+      "line_p": "Siesto Anniversary Sun Grown",
+      "line_c": "Siesto Anniversary Sun Grown Real #5",
+      "rest": "Real #5",
+      "n_p": 2,
+      "n_c": 1,
+      "vit_p": [
+        "Toro",
+        "Torpedo"
+      ],
+      "vit_c": [
+        "Robusto"
+      ],
+      "reason0": "needs judgment; suffix=\"Real #5\"; n=2/1"
+    },
+    {
+      "ids": [
+        "cig-valentino-siesto-premium-maduro",
+        "cig-valentino-siesto-premium-maduro-real"
+      ],
+      "brand": "Valentino",
+      "line_p": "Siesto Premium Maduro",
+      "line_c": "Siesto Premium Maduro Real",
+      "rest": "Real",
+      "n_p": 3,
+      "n_c": 1,
+      "vit_p": [
+        "Robusto",
+        "Toro",
+        "Gran Toro"
+      ],
+      "vit_c": [
+        "Figurado"
+      ],
+      "reason0": "needs judgment; suffix=\"Real\"; n=3/1"
+    },
+    {
+      "ids": [
+        "cig-vegafina-nicaragua",
+        "cig-vegafina-nicaragua-dosmilcatorce-gran-reserva-x-anniversario"
+      ],
+      "brand": "VegaFina",
+      "line_p": "Nicaragua",
+      "line_c": "Nicaragua Dosmilcatorce Gran Reserva X Anniversario",
+      "rest": "Dosmilcatorce Gran Reserva X Anniversario",
+      "n_p": 3,
+      "n_c": 1,
+      "vit_p": [
+        "Corona",
+        "Robusto",
+        "Toro"
+      ],
+      "vit_c": [
+        "Gran Toro"
+      ],
+      "reason0": "needs judgment; suffix=\"Dosmilcatorce Gran Reserva X Anniversario\"; n=3/1"
+    },
+    {
+      "ids": [
+        "cig-vegafina-vega-fina",
+        "cig-vegafina-vega-fina-nicaragua"
+      ],
+      "brand": "VegaFina",
+      "line_p": "Vega Fina",
+      "line_c": "Vega Fina Nicaragua",
+      "rest": "Nicaragua",
+      "n_p": 1,
+      "n_c": 1,
+      "vit_p": [
+        "Churchill"
+      ],
+      "vit_c": [
+        "Gran Toro"
+      ],
+      "reason0": "needs judgment; suffix=\"Nicaragua\"; n=1/1"
+    },
+    {
+      "ids": [
+        "cig-vegas-de-santiago-d8-limited-edition",
+        "cig-vegas-de-santiago-d8-limited-edition-palo-alto-2023"
+      ],
+      "brand": "Vegas",
+      "line_p": "de Santiago D8 Limited Edition",
+      "line_c": "de Santiago D8 Limited Edition Palo Alto 2023",
+      "rest": "Palo Alto 2023",
+      "n_p": 1,
+      "n_c": 1,
+      "vit_p": [
+        "Lancero"
+      ],
+      "vit_c": [
+        "Piramide"
+      ],
+      "reason0": "needs judgment; suffix=\"Palo Alto 2023\"; n=1/1"
+    },
+    {
+      "ids": [
+        "cig-vegas-de-santiago-d8-limited-edition",
+        "cig-vegas-de-santiago-d8-limited-edition-very-limited-edition-2024"
+      ],
+      "brand": "Vegas",
+      "line_p": "de Santiago D8 Limited Edition",
+      "line_c": "de Santiago D8 Limited Edition very Limited Edition 2024",
+      "rest": "very Limited Edition 2024",
+      "n_p": 1,
+      "n_c": 1,
+      "vit_p": [
+        "Lancero"
+      ],
+      "vit_c": [
+        "Toro"
+      ],
+      "reason0": "needs judgment; suffix=\"very Limited Edition 2024\"; n=1/1"
+    },
+    {
+      "ids": [
+        "cig-villiger-1888",
+        "cig-villiger-1888-dominican-republic"
+      ],
+      "brand": "Villiger",
+      "line_p": "1888",
+      "line_c": "1888 Dominican Republic",
+      "rest": "Dominican Republic",
+      "n_p": 1,
+      "n_c": 4,
+      "vit_p": [
+        "Toro"
+      ],
+      "vit_c": [
+        "Corona",
+        "Robusto",
+        "Toro",
+        "Torpedo"
+      ],
+      "reason0": "needs judgment; suffix=\"Dominican Republic\"; n=1/4"
+    },
+    {
+      "ids": [
+        "cig-villiger-1888",
+        "cig-villiger-1888-fuerte"
+      ],
+      "brand": "Villiger",
+      "line_p": "1888",
+      "line_c": "1888 Fuerte",
+      "rest": "Fuerte",
+      "n_p": 1,
+      "n_c": 3,
+      "vit_p": [
+        "Toro"
+      ],
+      "vit_c": [
+        "Robusto",
+        "Toro",
+        "Gordo"
+      ],
+      "reason0": "needs judgment; suffix=\"Fuerte\"; n=1/3"
+    },
+    {
+      "ids": [
+        "cig-villiger-1888",
+        "cig-villiger-1888-nicaragua"
+      ],
+      "brand": "Villiger",
+      "line_p": "1888",
+      "line_c": "1888 Nicaragua",
+      "rest": "Nicaragua",
+      "n_p": 1,
+      "n_c": 5,
+      "vit_p": [
+        "Toro"
+      ],
+      "vit_c": [
+        "Churchill",
+        "Robusto",
+        "Toro",
+        "Perfecto",
+        "Gordo"
+      ],
+      "reason0": "needs judgment; suffix=\"Nicaragua\"; n=1/5"
+    },
+    {
+      "ids": [
+        "cig-villiger-san-doro-claro",
+        "cig-villiger-san-doro-claro-aged-10-years"
+      ],
+      "brand": "Villiger",
+      "line_p": "San Doro Claro",
+      "line_c": "San Doro Claro Aged 10 Years",
+      "rest": "Aged 10 Years",
+      "n_p": 3,
+      "n_c": 1,
+      "vit_p": [
+        "Robusto",
+        "Toro",
+        "Churchill"
+      ],
+      "vit_c": [
+        "Churchill"
+      ],
+      "reason0": "needs judgment; suffix=\"Aged 10 Years\"; n=3/1"
+    },
+    {
+      "ids": [
+        "cig-villiger-san-doro-colorado",
+        "cig-villiger-san-doro-colorado-aged-10-years"
+      ],
+      "brand": "Villiger",
+      "line_p": "San Doro Colorado",
+      "line_c": "San Doro Colorado Aged 10 Years",
+      "rest": "Aged 10 Years",
+      "n_p": 2,
+      "n_c": 1,
+      "vit_p": [
+        "Toro",
+        "Churchill"
+      ],
+      "vit_c": [
+        "Churchill"
+      ],
+      "reason0": "needs judgment; suffix=\"Aged 10 Years\"; n=2/1"
+    },
+    {
+      "ids": [
+        "cig-woermann-dominican-bundles",
+        "cig-woermann-dominican-bundles-460"
+      ],
+      "brand": "Woermann",
+      "line_p": "Dominican Bundles",
+      "line_c": "Dominican Bundles 460",
+      "rest": "460",
+      "n_p": 5,
+      "n_c": 1,
+      "vit_p": [
+        "Petit Corona",
+        "Half Corona",
+        "Corona",
+        "Robusto",
+        "Churchill"
+      ],
+      "vit_c": [
+        "Torpedo"
+      ],
+      "reason0": "needs judgment; suffix=\"460\"; n=5/1"
+    },
+    {
+      "ids": [
+        "cig-xhaxhi-bobi",
+        "cig-xhaxhi-bobi-baba-jan"
+      ],
+      "brand": "Xhaxhi",
+      "line_p": "Bobi",
+      "line_c": "Bobi Baba Jan",
+      "rest": "Baba Jan",
+      "n_p": 1,
+      "n_c": 1,
+      "vit_p": [
+        "Petit Corona"
+      ],
+      "vit_c": [
+        "Petit Corona"
+      ],
+      "reason0": "needs judgment; suffix=\"Baba Jan\"; n=1/1"
+    },
+    {
+      "ids": [
+        "cig-xhaxhi-bobi",
+        "cig-xhaxhi-bobi-el-ingeniero"
+      ],
+      "brand": "Xhaxhi",
+      "line_p": "Bobi",
+      "line_c": "Bobi El Ingeniero",
+      "rest": "El Ingeniero",
+      "n_p": 1,
+      "n_c": 1,
+      "vit_p": [
+        "Petit Corona"
+      ],
+      "vit_c": [
+        "Robusto"
+      ],
+      "reason0": "needs judgment; suffix=\"El Ingeniero\"; n=1/1"
+    },
+    {
+      "ids": [
+        "cig-xhaxhi-bobi",
+        "cig-xhaxhi-bobi-el-licenciado"
+      ],
+      "brand": "Xhaxhi",
+      "line_p": "Bobi",
+      "line_c": "Bobi El Licenciado",
+      "rest": "El Licenciado",
+      "n_p": 1,
+      "n_c": 1,
+      "vit_p": [
+        "Petit Corona"
+      ],
+      "vit_c": [
+        "Robusto"
+      ],
+      "reason0": "needs judgment; suffix=\"El Licenciado\"; n=1/1"
+    },
+    {
+      "ids": [
+        "cig-xhaxhi-bobi",
+        "cig-xhaxhi-bobi-mi-hermano"
+      ],
+      "brand": "Xhaxhi",
+      "line_p": "Bobi",
+      "line_c": "Bobi Mi Hermano",
+      "rest": "Mi Hermano",
+      "n_p": 1,
+      "n_c": 1,
+      "vit_p": [
+        "Petit Corona"
+      ],
+      "vit_c": [
+        "Petit Corona"
+      ],
+      "reason0": "needs judgment; suffix=\"Mi Hermano\"; n=1/1"
+    },
+    {
+      "ids": [
+        "cig-xhaxhi-bobi",
+        "cig-xhaxhi-bobi-sunrise"
+      ],
+      "brand": "Xhaxhi",
+      "line_p": "Bobi",
+      "line_c": "Bobi Sunrise",
+      "rest": "Sunrise",
+      "n_p": 1,
+      "n_c": 1,
+      "vit_p": [
+        "Petit Corona"
+      ],
+      "vit_c": [
+        "Petit Corona"
+      ],
+      "reason0": "needs judgment; suffix=\"Sunrise\"; n=1/1"
+    },
+    {
+      "ids": [
+        "cig-xhaxhi-bobi",
+        "cig-xhaxhi-bobi-sunset"
+      ],
+      "brand": "Xhaxhi",
+      "line_p": "Bobi",
+      "line_c": "Bobi Sunset",
+      "rest": "Sunset",
+      "n_p": 1,
+      "n_c": 1,
+      "vit_p": [
+        "Petit Corona"
+      ],
+      "vit_c": [
+        "Robusto"
+      ],
+      "reason0": "needs judgment; suffix=\"Sunset\"; n=1/1"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "skill_id": "latex-compile",
+  "version": "1.0",
+  "cases": [
+    {
+      "id": "case_1_error",
+      "input": { "text": "LaTeX build pada: Undefined control sequence \\foo. Što provjeriti?" },
+      "assertions": [
+        { "type": "regex_match", "value": "(?i)(preamble|package|macro|log|undefined)", "description": "latex debug steps" }
+      ]
+    }
+  ]
+}

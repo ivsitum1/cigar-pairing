@@ -1,0 +1,47 @@
+{
+  "skill_id": "arxiv-skill-scout",
+  "version": "1.0",
+  "cases": [
+    {
+      "id": "case_run_cli",
+      "input": {
+        "text": "Run the monthly arxiv skill scout for last month and show me proposals."
+      },
+      "assertions": [
+        {
+          "type": "regex_match",
+          "value": "(?i)(arxiv_monthly_scan|arxiv_digest|arxiv_scan)",
+          "description": "mentions CLI or digest paths"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(approve|reject|human|approval)",
+          "description": "states human approval gate"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(non-peer-reviewed|preprint)",
+          "description": "labels preprint status"
+        }
+      ]
+    },
+    {
+      "id": "case_not_research_lookup",
+      "input": {
+        "text": "Scan arxiv for agent workflow papers to add skills. Not a clinical question."
+      },
+      "assertions": [
+        {
+          "type": "not_contains",
+          "value": "use research-lookup for this arxiv scan",
+          "description": "does not route to PubMed lookup skill"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(skill-discovery|arxiv-skill-scout|arxiv_monthly)",
+          "description": "routes to scout or distinguishes from SkillsMP"
+        }
+      ]
+    }
+  ]
+}

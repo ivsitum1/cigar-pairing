@@ -1,0 +1,23 @@
+{
+  "version": "1.1.0",
+  "parent": "prd_machine.json",
+  "problem": "Machine v1 lacks dreaming run log seeding, live brain_health in digest, GitHub token wiring, session Secondary count, digest learning ledger, and TF-IDF dreaming clusters.",
+  "solution": "v1.1 polish + v1.2 tests/UX + v2.0 learning loop extensions per roadmap 2026-06-29.",
+  "user_stories": [
+    {"id": "US-14", "description": "sessionEnd appends dreaming run_logs JSONL in brain workspace only", "priority": "P1", "passes": true},
+    {"id": "US-15", "description": "machine_weekly_digest embeds brain_health.py --json status", "priority": "P1", "passes": true},
+    {"id": "US-16", "description": "sessionStart shows Secondary proposal count in brain repo", "priority": "P1", "passes": true},
+    {"id": "US-17", "description": "digest proposal decisions ingest to digest_proposal_ledger.jsonl", "priority": "P2", "passes": true},
+    {"id": "US-18", "description": "dreaming_daemon TF-IDF clusters similar outcomes", "priority": "P2", "passes": true},
+    {"id": "US-19", "description": "project_init scope integration test", "priority": "P1", "passes": true},
+    {"id": "US-20", "description": "MEMORY_SYSTEM cross-project UX documented", "priority": "P2", "passes": true},
+    {"id": "US-21", "description": "MACHINE_PRIMARY_SECONDARY v2 + soul v2 from grill-me", "priority": "P1", "passes": true}
+  ],
+  "execution_chain": {
+    "status": "implemented_v1.1",
+    "notes": "Iterate via machine_digest; Verifier Phase 4 NO-GO until 2026-07-08 review"
+  },
+  "verification_protocol": {
+    "reproducibility": {"passes": true, "environment": "pytest 40_operations/tests"}
+  }
+}

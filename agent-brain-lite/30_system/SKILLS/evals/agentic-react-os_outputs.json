@@ -1,0 +1,4 @@
+{
+    "case_roadmap_taor": "Roadmap prije koda: (1) Reproduciraj pad testa lokalno. (2) Usporedi env s CI. TAOR: Think (hipoteze), Act (jedan eksperiment), Observe (log), Reflect (što je potvrđeno). Cap at 5 iteration cycles, then escalation; stop and report options if unresolved.",
+  "case_tot_debug": "Tree of Thought: grana A – različit Python/R u CI matrix; grana B – env varijable u GitHub Actions; grana C – flaky timing. Rangiram po vjerojatnosti uz evidence iz logova. CI vs local: provjeri Actions runner image i dependency lockfile."
+}

@@ -429,8 +429,12 @@ def apply_taxonomy(cigars: list, tax_files: list[dict], report: dict) -> list:
             if other.get("id") and other.get("id") != base.get("id"):
                 aliases_new.append({"from": other["id"], "to": None})  # filled after id derive
                 report.setdefault("merges", []).append({"into": base.get("id"), "from": other.get("id")})
-        # stash old ids for alias after derive
+        # stash old ids + pre-auto lines for stable-id derive
         base["_old_ids"] = [r.get("id") for r in rows_sorted if r.get("id")]
+        base["_raw_lines"] = [
+            r.get("_raw_line") if r.get("_raw_line") is not None else (r.get("line") or "")
+            for r in rows_sorted
+        ]
         base.pop("_raw_line", None)
         merged.append(base)
 
@@ -472,27 +476,44 @@ def apply_taxonomy(cigars: list, tax_files: list[dict], report: dict) -> list:
         # record-level format from default vitola
         c["vitolas"] = sort_vitolas(c.get("vitolas") or [])
 
-    # 6. Derive id, default vitola, format
+    # 6. Derive id, default vitola, format.
+    # Keep stable ids when a single record's line identity did not change.
+    # Only mint cigar_id(...) on merges or when auto-pass/taxonomy changed the line.
     used_ids: set[str] = set()
     alias_pairs = []
     for c in merged:
         brand = c.get("brand") or ""
         line = c.get("line") or ""
-        new_id = cigar_id(brand, line)
-        base_id = new_id
-        n = 2
-        while new_id in used_ids:
-            new_id = f"{base_id}-{n}"
-            n += 1
+        old_ids = [i for i in (c.pop("_old_ids", []) or []) if i]
+        raw_lines = c.pop("_raw_lines", None) or []
+        line_changed = bool(raw_lines) and not (len(raw_lines) == 1 and raw_lines[0] == line)
+        merged_many = len(old_ids) > 1
+
+        if not merged_many and not line_changed and len(old_ids) == 1 and old_ids[0] not in used_ids:
+            new_id = old_ids[0]
+        else:
+            new_id = cigar_id(brand, line)
+            base_id = new_id
+            n = 2
+            while new_id in used_ids:
+                new_id = f"{base_id}-{n}"
+                n += 1
+
+        if new_id in used_ids:
+            new_id = cigar_id(brand, line)
+            base_id = new_id
+            n = 2
+            while new_id in used_ids:
+                new_id = f"{base_id}-{n}"
+                n += 1
+
         used_ids.add(new_id)
-        old_ids = c.pop("_old_ids", []) or []
         for oid in old_ids:
             if oid and oid != new_id:
                 alias_pairs.append((oid, new_id))
         c["id"] = new_id
         vitolas = c.get("vitolas") or []
         if vitolas:
-            # keep default if still present, else first sorted
             names = {v.get("name") for v in vitolas}
             if c.get("vitola") not in names:
                 c["vitola"] = vitolas[0].get("name") or c.get("vitola")
@@ -508,25 +529,41 @@ def apply_taxonomy(cigars: list, tax_files: list[dict], report: dict) -> list:
 
     merged.sort(key=lambda c: ((c.get("brand") or "").lower(), (c.get("line") or "").lower()))
 
-    # 7. Aliases append-only
+    # 7. Aliases append-only — never alias away a live id
     report["aliases_added"] = []
-    if alias_pairs:
-        existing = load_json(ALIASES_PATH, {}) or {}
-        if not isinstance(existing, dict):
-            existing = {"aliases": existing}
-        aliases = existing.setdefault("aliases", existing if "aliases" not in existing else existing["aliases"])
-        if not isinstance(aliases, dict):
-            aliases = {}
-            existing = {"aliases": aliases}
-        for frm, to in alias_pairs:
-            if frm not in aliases:
-                aliases[frm] = to
-                report["aliases_added"].append({"from": frm, "to": to})
-            elif aliases[frm] != to:
-                report.setdefault("alias_conflicts", []).append(
-                    {"from": frm, "existing": aliases[frm], "new": to}
-                )
-        write_json(ALIASES_PATH, {"aliases": aliases})
+    live_ids = {c.get("id") for c in merged if c.get("id")}
+    existing = load_json(ALIASES_PATH, {}) or {}
+    if not isinstance(existing, dict):
+        existing = {"aliases": existing}
+    aliases = existing.setdefault(
+        "aliases", existing if "aliases" not in existing else existing["aliases"]
+    )
+    if not isinstance(aliases, dict):
+        aliases = {}
+        existing = {"aliases": aliases}
+
+    removed = []
+    for frm in list(aliases.keys()):
+        if frm in live_ids:
+            del aliases[frm]
+            removed.append(frm)
+    if removed:
+        report["aliases_removed_live_collision"] = removed
+
+    for frm, to in alias_pairs:
+        if frm in live_ids:
+            report.setdefault("aliases_skipped_live_collision", []).append(
+                {"from": frm, "to": to}
+            )
+            continue
+        if frm not in aliases:
+            aliases[frm] = to
+            report["aliases_added"].append({"from": frm, "to": to})
+        elif aliases[frm] != to:
+            report.setdefault("alias_conflicts", []).append(
+                {"from": frm, "existing": aliases[frm], "new": to}
+            )
+    write_json(ALIASES_PATH, {"aliases": aliases})
 
     return merged
 

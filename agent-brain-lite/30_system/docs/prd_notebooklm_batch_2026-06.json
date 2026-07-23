@@ -1,0 +1,39 @@
+{
+  "version": "1.2.0",
+  "problem": "Four new NotebookLM notebooks (OKF, Last Mile GLM, Humanize Predictability, Loop of Loops) lack research-gate extraction, dedup against prior eight notebooks, and incorporation backlog.",
+  "solution": "Batch grill pass1+pass2, source expansion, gate reports, MAP docs, and prioritized OKF/MILE/HUM/LOOP backlog with human gates.",
+  "user_stories": [
+    {"id": "NB-0", "description": "Batch grill pass1 (14 turns x4) archived under outputs/notebooklm/", "priority": "P0", "passes": true},
+    {"id": "NB-1", "description": "Source expansion JSON + optional CLI add-research per slug", "priority": "P1", "passes": true},
+    {"id": "NB-2", "description": "Batch grill pass2 + merged delta vs prior notebooks", "priority": "P0", "passes": true},
+    {"id": "NB-3", "description": "Gate GO/NO-GO + executive + delta + skill_fit per slug", "priority": "P0", "passes": true},
+    {"id": "NB-4", "description": "Four MAP.md files and wiki-ingest on GO slugs", "priority": "P1", "passes": true},
+    {"id": "NB-5", "description": "notebooklm-research-gate reference_files extended for batch 2026-06", "priority": "P1", "passes": true}
+  ],
+  "issues": [
+    {"id": "OKF-1", "title": "OKF wiki bridge spike", "priority": "P1", "passes": true, "slug": "okf-knowledge", "artifact": "30_system/docs/spikes/okf_wiki_bridge.md"},
+    {"id": "OKF-2", "title": "long-context vs RAG policy + validation doc", "priority": "P1", "passes": true, "slug": "okf-knowledge", "artifact": "30_system/docs/OKF-2_validation_longcontext_vs_rag.md"},
+    {"id": "OKF-3", "title": "Crabbox vs worktrees spike", "priority": "P2", "passes": true, "slug": "okf-knowledge", "artifact": "30_system/docs/spikes/crabbox_sandbox.md"},
+    {"id": "OKF-4", "title": "meta-analysis PDF trace in skill reference", "priority": "P1", "passes": true, "slug": "okf-knowledge", "artifact": "30_system/SKILLS/reference/meta_analysis_pdf_trace.md"},
+    {"id": "MILE-1", "title": "LAST_MILE_GLM_MAP + project_init checklist", "priority": "P1", "passes": true, "slug": "last-mile-glm"},
+    {"id": "MILE-2", "title": "JEPA wiki concept research only", "priority": "P2", "passes": true, "slug": "last-mile-glm", "artifact": "20_knowledge/wiki/concepts/JEPA world models.md"},
+    {"id": "HUM-1", "title": "Delta-only vs humanize_ai notebook", "priority": "P0", "passes": true, "slug": "humanize-predictability", "artifact": ".agent/task/notebooklm_batch_2026-06_synthesis.md"},
+    {"id": "HUM-2", "title": "ai_pattern_scan structural signals", "priority": "P1", "passes": true, "slug": "humanize-predictability"},
+    {"id": "HUM-3", "title": "writing-avoid-ai paragraph rules (H4)", "priority": "P1", "passes": true, "slug": "humanize-predictability", "artifact": ".cursor/rules/writing-avoid-ai.mdc"},
+    {"id": "LOOP-1", "title": "loop-of-loops map to AGENT_AUTONOMY_AND_PARALLEL", "priority": "P0", "passes": true, "slug": "loop-of-loops"},
+    {"id": "LOOP-2", "title": "STORM eval seed for research-grill-me", "priority": "P1", "passes": true, "slug": "loop-of-loops"},
+    {"id": "LOOP-3", "title": "wiki-synthesize + daily-update pipeline doc", "priority": "P1", "passes": true, "slug": "loop-of-loops", "artifact": "30_system/docs/LOOP-3_wiki_self_improving_kb.md"}
+  ],
+  "gate_summary": {
+    "okf-knowledge": "GO",
+    "last-mile-glm": "GO",
+    "humanize-predictability": "GO",
+    "loop-of-loops": "GO",
+    "human_gates_record": ".agent/task/notebooklm_batch_2026-06_human_gates.md",
+    "verified_at": "2026-06-30"
+  },
+  "verification_protocol": {
+    "claim_statuses": ["VERIFIED", "INFERRED", "UNVERIFIED"],
+    "human_gates": ["H1 confirmed", "H2 P0 done", "H4 HUM-3 applied"]
+  }
+}

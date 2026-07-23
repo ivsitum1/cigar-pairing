@@ -1,0 +1,14 @@
+{
+  "skill_name": "model-native-skill-transform",
+  "evals": [
+    {
+      "id": "runtime_gate",
+      "prompt": "When is model-native transform allowed?",
+      "expected_output": "MODEL_NATIVE_RUNTIME=1 and eval pass threshold met",
+      "files": ["30_system/SKILLS/SKILL_model-native-skill-transform.md"],
+      "expectations": [
+        {"text": "MODEL_NATIVE_RUNTIME", "passed": null, "evidence": ""}
+      ]
+    }
+  ]
+}

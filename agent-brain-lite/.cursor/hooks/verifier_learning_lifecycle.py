@@ -1,0 +1,1 @@
+C:/Users/Admin/Documents/agent rules/.cursor/hooks/verifier_learning_lifecycle.py

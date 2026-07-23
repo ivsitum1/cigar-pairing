@@ -1,0 +1,688 @@
+[
+  {
+    "cigarId": "cig-1502-emerald",
+    "drinkId": "wine-syrah-shiraz",
+    "cigarLabel": "1502 Emerald",
+    "drinkLabel": "Syrah / Shiraz (Rhone / Barossa)",
+    "score": 100,
+    "rules": [
+      "body-match",
+      "flavor-shared",
+      "flavor-complement",
+      "wrapper-affinity",
+      "power-match"
+    ]
+  },
+  {
+    "cigarId": "cig-7-20-4-hustler-five-amp-dime",
+    "drinkId": "wh-kavalan-solist-fino-sherry-cask-single-malt-whisky-57-8-vol-0-7-l-u-drvenoj-poklon-kutiji",
+    "cigarLabel": "7-20-4 Hustler Five &amp; Dime",
+    "drinkLabel": "Kavalan SOLIST FINO SHERRY CASK",
+    "score": 100,
+    "rules": [
+      "body-match",
+      "flavor-shared",
+      "flavor-complement",
+      "wrapper-affinity",
+      "power-match"
+    ]
+  },
+  {
+    "cigarId": "cig-7-20-4-hustler-five-amp-dime",
+    "drinkId": "wh-edradour-21-yo-oloroso-cask-finish-1995-56-2-vol-0-7l-u-poklon-kutiji",
+    "cigarLabel": "7-20-4 Hustler Five &amp; Dime",
+    "drinkLabel": "Edradour 21 YO Oloroso Cask Finish 1995",
+    "score": 100,
+    "rules": [
+      "body-match",
+      "flavor-shared",
+      "flavor-complement",
+      "wrapper-affinity",
+      "power-match"
+    ]
+  },
+  {
+    "cigarId": "cig-7-20-4-hustler-five-amp-dime",
+    "drinkId": "wine-grahams-tawny-20",
+    "cigarLabel": "7-20-4 Hustler Five &amp; Dime",
+    "drinkLabel": "Graham's Tawny Port 20 Y.O.",
+    "score": 100,
+    "rules": [
+      "body-match",
+      "flavor-shared",
+      "flavor-complement",
+      "contrast-sweet-maduro",
+      "wrapper-affinity"
+    ]
+  },
+  {
+    "cigarId": "cig-7-20-4-hustler-five-amp-dime",
+    "drinkId": "wine-sandeman-tawny-20",
+    "cigarLabel": "7-20-4 Hustler Five &amp; Dime",
+    "drinkLabel": "Sandeman Tawny Port 20 Y.O.",
+    "score": 100,
+    "rules": [
+      "body-match",
+      "flavor-shared",
+      "flavor-complement",
+      "contrast-sweet-maduro",
+      "wrapper-affinity"
+    ]
+  },
+  {
+    "cigarId": "cig-7-20-4-hustler-five-amp-dime",
+    "drinkId": "wine-fonseca-bin-27",
+    "cigarLabel": "7-20-4 Hustler Five &amp; Dime",
+    "drinkLabel": "Fonseca Bin No. 27 Reserve Ruby",
+    "score": 100,
+    "rules": [
+      "body-match",
+      "flavor-shared",
+      "flavor-complement",
+      "contrast-sweet-maduro",
+      "wrapper-affinity"
+    ]
+  },
+  {
+    "cigarId": "cig-7-20-4-hustler-five-amp-dime",
+    "drinkId": "wine-blandys-madeira-10",
+    "cigarLabel": "7-20-4 Hustler Five &amp; Dime",
+    "drinkLabel": "Blandy's Madeira 10 Y.O. (Bual/Malmsey)",
+    "score": 100,
+    "rules": [
+      "body-match",
+      "flavor-shared",
+      "flavor-complement",
+      "contrast-sweet-maduro",
+      "wrapper-affinity"
+    ]
+  },
+  {
+    "cigarId": "cig-7-20-4-hustler-five-amp-dime",
+    "drinkId": "wine-prosek-hvar",
+    "cigarLabel": "7-20-4 Hustler Five &amp; Dime",
+    "drinkLabel": "Prošek (Hvar/Dalmacija)",
+    "score": 100,
+    "rules": [
+      "body-match",
+      "flavor-shared",
+      "flavor-complement",
+      "contrast-sweet-maduro",
+      "wrapper-affinity"
+    ]
+  },
+  {
+    "cigarId": "cig-7-20-4-hustler-five-amp-dime",
+    "drinkId": "wine-tokaji-aszu-5",
+    "cigarLabel": "7-20-4 Hustler Five &amp; Dime",
+    "drinkLabel": "Tokaji Aszú 5 Puttonyos",
+    "score": 100,
+    "rules": [
+      "body-match",
+      "flavor-shared",
+      "flavor-complement",
+      "contrast-sweet-maduro",
+      "wrapper-affinity"
+    ]
+  },
+  {
+    "cigarId": "cig-7-20-4-hustler-five-amp-dime",
+    "drinkId": "wine-sauternes",
+    "cigarLabel": "7-20-4 Hustler Five &amp; Dime",
+    "drinkLabel": "Sauternes",
+    "score": 100,
+    "rules": [
+      "body-match",
+      "flavor-shared",
+      "flavor-complement",
+      "contrast-sweet-maduro",
+      "wrapper-affinity"
+    ]
+  },
+  {
+    "cigarId": "cig-7-20-4-hustler-five-amp-dime",
+    "drinkId": "cf-moka-pot",
+    "cigarLabel": "7-20-4 Hustler Five &amp; Dime",
+    "drinkLabel": "Moka pot (Bialetti)",
+    "score": 100,
+    "rules": [
+      "body-match",
+      "flavor-shared",
+      "flavor-complement",
+      "wrapper-affinity"
+    ]
+  },
+  {
+    "cigarId": "cig-7-20-4-hustler-five-amp-dime",
+    "drinkId": "cf-cuba-serrano",
+    "cigarLabel": "7-20-4 Hustler Five &amp; Dime",
+    "drinkLabel": "Cubita / Cuba Serrano (dark)",
+    "score": 100,
+    "rules": [
+      "body-match",
+      "flavor-shared",
+      "flavor-complement",
+      "wrapper-affinity"
+    ]
+  },
+  {
+    "cigarId": "cig-7-20-4-hustler-five-amp-dime",
+    "drinkId": "cf-french-press-dark",
+    "cigarLabel": "7-20-4 Hustler Five &amp; Dime",
+    "drinkLabel": "French press — tamna mješavina",
+    "score": 100,
+    "rules": [
+      "body-match",
+      "flavor-shared",
+      "flavor-complement",
+      "wrapper-affinity"
+    ]
+  },
+  {
+    "cigarId": "cig-7-20-4-hustler-five-amp-dime",
+    "drinkId": "cf-irish-coffee",
+    "cigarLabel": "7-20-4 Hustler Five &amp; Dime",
+    "drinkLabel": "Irish coffee",
+    "score": 100,
+    "rules": [
+      "body-match",
+      "flavor-shared",
+      "flavor-complement",
+      "contrast-sweet-maduro",
+      "wrapper-affinity"
+    ]
+  },
+  {
+    "cigarId": "cig-7-20-4-hustler-five-amp-dime",
+    "drinkId": "cf-carajillo",
+    "cigarLabel": "7-20-4 Hustler Five &amp; Dime",
+    "drinkLabel": "Carajillo / caffè corretto (s rumom ili brandyjem)",
+    "score": 100,
+    "rules": [
+      "body-match",
+      "flavor-shared",
+      "flavor-complement",
+      "wrapper-affinity"
+    ]
+  },
+  {
+    "cigarId": "cig-7-20-4-hustler-five-amp-dime",
+    "drinkId": "cf-vietnamese-iced",
+    "cigarLabel": "7-20-4 Hustler Five &amp; Dime",
+    "drinkLabel": "Vijetnamska ledena kava (cà phê sữa đá)",
+    "score": 100,
+    "rules": [
+      "body-match",
+      "flavor-shared",
+      "flavor-complement",
+      "contrast-sweet-maduro",
+      "wrapper-affinity"
+    ]
+  },
+  {
+    "cigarId": "cig-7-20-4-robusto",
+    "drinkId": "cf-espresso-italian-dark",
+    "cigarLabel": "7-20-4 Robusto",
+    "drinkLabel": "Espresso — talijanska tamna mješavina (80/20)",
+    "score": 100,
+    "rules": [
+      "body-match",
+      "flavor-shared",
+      "flavor-complement",
+      "wrapper-affinity"
+    ]
+  },
+  {
+    "cigarId": "cig-7-20-4-robusto",
+    "drinkId": "cf-cubano-sweet",
+    "cigarLabel": "7-20-4 Robusto",
+    "drinkLabel": "Café Cubano (zaslađeni espresso)",
+    "score": 100,
+    "rules": [
+      "body-match",
+      "flavor-shared",
+      "flavor-complement",
+      "wrapper-affinity"
+    ]
+  },
+  {
+    "cigarId": "cig-a-flores-gran-reserva-maduro",
+    "drinkId": "wine-grahams-tawny-20",
+    "cigarLabel": "A. Flores Gran Reserva Maduro",
+    "drinkLabel": "Graham's Tawny Port 20 Y.O.",
+    "score": 100,
+    "rules": [
+      "body-match",
+      "flavor-shared",
+      "flavor-complement",
+      "contrast-sweet-maduro",
+      "wrapper-affinity"
+    ]
+  },
+  {
+    "cigarId": "cig-a-flores-gran-reserva-maduro",
+    "drinkId": "wine-sandeman-tawny-20",
+    "cigarLabel": "A. Flores Gran Reserva Maduro",
+    "drinkLabel": "Sandeman Tawny Port 20 Y.O.",
+    "score": 100,
+    "rules": [
+      "body-match",
+      "flavor-shared",
+      "flavor-complement",
+      "contrast-sweet-maduro",
+      "wrapper-affinity"
+    ]
+  },
+  {
+    "cigarId": "cig-a-flores-gran-reserva-maduro",
+    "drinkId": "wine-fonseca-bin-27",
+    "cigarLabel": "A. Flores Gran Reserva Maduro",
+    "drinkLabel": "Fonseca Bin No. 27 Reserve Ruby",
+    "score": 100,
+    "rules": [
+      "body-match",
+      "flavor-shared",
+      "flavor-complement",
+      "contrast-sweet-maduro",
+      "wrapper-affinity"
+    ]
+  },
+  {
+    "cigarId": "cig-a-flores-gran-reserva-maduro",
+    "drinkId": "wine-blandys-madeira-10",
+    "cigarLabel": "A. Flores Gran Reserva Maduro",
+    "drinkLabel": "Blandy's Madeira 10 Y.O. (Bual/Malmsey)",
+    "score": 100,
+    "rules": [
+      "body-match",
+      "flavor-shared",
+      "flavor-complement",
+      "contrast-sweet-maduro",
+      "wrapper-affinity"
+    ]
+  },
+  {
+    "cigarId": "cig-a-flores-gran-reserva-maduro",
+    "drinkId": "wine-prosek-hvar",
+    "cigarLabel": "A. Flores Gran Reserva Maduro",
+    "drinkLabel": "Prošek (Hvar/Dalmacija)",
+    "score": 100,
+    "rules": [
+      "body-match",
+      "flavor-shared",
+      "flavor-complement",
+      "contrast-sweet-maduro",
+      "wrapper-affinity"
+    ]
+  },
+  {
+    "cigarId": "cig-a-flores-gran-reserva-maduro",
+    "drinkId": "wine-tokaji-aszu-5",
+    "cigarLabel": "A. Flores Gran Reserva Maduro",
+    "drinkLabel": "Tokaji Aszú 5 Puttonyos",
+    "score": 100,
+    "rules": [
+      "body-match",
+      "flavor-shared",
+      "flavor-complement",
+      "contrast-sweet-maduro",
+      "wrapper-affinity"
+    ]
+  },
+  {
+    "cigarId": "cig-a-flores-gran-reserva-maduro",
+    "drinkId": "wine-sauternes",
+    "cigarLabel": "A. Flores Gran Reserva Maduro",
+    "drinkLabel": "Sauternes",
+    "score": 100,
+    "rules": [
+      "body-match",
+      "flavor-shared",
+      "flavor-complement",
+      "contrast-sweet-maduro",
+      "wrapper-affinity"
+    ]
+  },
+  {
+    "cigarId": "cig-a-flores-gran-reserva-maduro",
+    "drinkId": "cf-moka-pot",
+    "cigarLabel": "A. Flores Gran Reserva Maduro",
+    "drinkLabel": "Moka pot (Bialetti)",
+    "score": 100,
+    "rules": [
+      "body-match",
+      "flavor-shared",
+      "flavor-complement",
+      "wrapper-affinity"
+    ]
+  },
+  {
+    "cigarId": "cig-a-flores-gran-reserva-maduro",
+    "drinkId": "cf-cuba-serrano",
+    "cigarLabel": "A. Flores Gran Reserva Maduro",
+    "drinkLabel": "Cubita / Cuba Serrano (dark)",
+    "score": 100,
+    "rules": [
+      "body-match",
+      "flavor-shared",
+      "flavor-complement",
+      "wrapper-affinity"
+    ]
+  },
+  {
+    "cigarId": "cig-a-flores-gran-reserva-maduro",
+    "drinkId": "cf-french-press-dark",
+    "cigarLabel": "A. Flores Gran Reserva Maduro",
+    "drinkLabel": "French press — tamna mješavina",
+    "score": 100,
+    "rules": [
+      "body-match",
+      "flavor-shared",
+      "flavor-complement",
+      "wrapper-affinity"
+    ]
+  },
+  {
+    "cigarId": "cig-a-flores-gran-reserva-maduro",
+    "drinkId": "cf-irish-coffee",
+    "cigarLabel": "A. Flores Gran Reserva Maduro",
+    "drinkLabel": "Irish coffee",
+    "score": 100,
+    "rules": [
+      "body-match",
+      "flavor-shared",
+      "flavor-complement",
+      "contrast-sweet-maduro",
+      "wrapper-affinity"
+    ]
+  },
+  {
+    "cigarId": "cig-a-flores-gran-reserva-maduro",
+    "drinkId": "cf-carajillo",
+    "cigarLabel": "A. Flores Gran Reserva Maduro",
+    "drinkLabel": "Carajillo / caffè corretto (s rumom ili brandyjem)",
+    "score": 100,
+    "rules": [
+      "body-match",
+      "flavor-shared",
+      "flavor-complement",
+      "wrapper-affinity"
+    ]
+  },
+  {
+    "cigarId": "cig-a-flores-gran-reserva-maduro",
+    "drinkId": "cf-vietnamese-iced",
+    "cigarLabel": "A. Flores Gran Reserva Maduro",
+    "drinkLabel": "Vijetnamska ledena kava (cà phê sữa đá)",
+    "score": 100,
+    "rules": [
+      "body-match",
+      "flavor-shared",
+      "flavor-complement",
+      "contrast-sweet-maduro",
+      "wrapper-affinity"
+    ]
+  },
+  {
+    "cigarId": "cig-a-flores-gran-reserva-maduro-grand",
+    "drinkId": "wine-grahams-tawny-20",
+    "cigarLabel": "A. Flores Gran Reserva Maduro Grand",
+    "drinkLabel": "Graham's Tawny Port 20 Y.O.",
+    "score": 100,
+    "rules": [
+      "body-match",
+      "flavor-shared",
+      "flavor-complement",
+      "contrast-sweet-maduro",
+      "wrapper-affinity"
+    ]
+  },
+  {
+    "cigarId": "cig-a-flores-gran-reserva-maduro-grand",
+    "drinkId": "wine-sandeman-tawny-20",
+    "cigarLabel": "A. Flores Gran Reserva Maduro Grand",
+    "drinkLabel": "Sandeman Tawny Port 20 Y.O.",
+    "score": 100,
+    "rules": [
+      "body-match",
+      "flavor-shared",
+      "flavor-complement",
+      "contrast-sweet-maduro",
+      "wrapper-affinity"
+    ]
+  },
+  {
+    "cigarId": "cig-a-flores-gran-reserva-maduro-grand",
+    "drinkId": "wine-fonseca-bin-27",
+    "cigarLabel": "A. Flores Gran Reserva Maduro Grand",
+    "drinkLabel": "Fonseca Bin No. 27 Reserve Ruby",
+    "score": 100,
+    "rules": [
+      "body-match",
+      "flavor-shared",
+      "flavor-complement",
+      "contrast-sweet-maduro",
+      "wrapper-affinity"
+    ]
+  },
+  {
+    "cigarId": "cig-a-flores-gran-reserva-maduro-grand",
+    "drinkId": "wine-blandys-madeira-10",
+    "cigarLabel": "A. Flores Gran Reserva Maduro Grand",
+    "drinkLabel": "Blandy's Madeira 10 Y.O. (Bual/Malmsey)",
+    "score": 100,
+    "rules": [
+      "body-match",
+      "flavor-shared",
+      "flavor-complement",
+      "contrast-sweet-maduro",
+      "wrapper-affinity"
+    ]
+  },
+  {
+    "cigarId": "cig-a-flores-gran-reserva-maduro-grand",
+    "drinkId": "wine-prosek-hvar",
+    "cigarLabel": "A. Flores Gran Reserva Maduro Grand",
+    "drinkLabel": "Prošek (Hvar/Dalmacija)",
+    "score": 100,
+    "rules": [
+      "body-match",
+      "flavor-shared",
+      "flavor-complement",
+      "contrast-sweet-maduro",
+      "wrapper-affinity"
+    ]
+  },
+  {
+    "cigarId": "cig-a-flores-gran-reserva-maduro-grand",
+    "drinkId": "wine-tokaji-aszu-5",
+    "cigarLabel": "A. Flores Gran Reserva Maduro Grand",
+    "drinkLabel": "Tokaji Aszú 5 Puttonyos",
+    "score": 100,
+    "rules": [
+      "body-match",
+      "flavor-shared",
+      "flavor-complement",
+      "contrast-sweet-maduro",
+      "wrapper-affinity"
+    ]
+  },
+  {
+    "cigarId": "cig-a-flores-gran-reserva-maduro-grand",
+    "drinkId": "wine-sauternes",
+    "cigarLabel": "A. Flores Gran Reserva Maduro Grand",
+    "drinkLabel": "Sauternes",
+    "score": 100,
+    "rules": [
+      "body-match",
+      "flavor-shared",
+      "flavor-complement",
+      "contrast-sweet-maduro",
+      "wrapper-affinity"
+    ]
+  },
+  {
+    "cigarId": "cig-a-flores-gran-reserva-maduro-grand",
+    "drinkId": "cf-moka-pot",
+    "cigarLabel": "A. Flores Gran Reserva Maduro Grand",
+    "drinkLabel": "Moka pot (Bialetti)",
+    "score": 100,
+    "rules": [
+      "body-match",
+      "flavor-shared",
+      "flavor-complement",
+      "wrapper-affinity"
+    ]
+  },
+  {
+    "cigarId": "cig-a-flores-gran-reserva-maduro-grand",
+    "drinkId": "cf-cuba-serrano",
+    "cigarLabel": "A. Flores Gran Reserva Maduro Grand",
+    "drinkLabel": "Cubita / Cuba Serrano (dark)",
+    "score": 100,
+    "rules": [
+      "body-match",
+      "flavor-shared",
+      "flavor-complement",
+      "wrapper-affinity"
+    ]
+  },
+  {
+    "cigarId": "cig-a-flores-gran-reserva-maduro-grand",
+    "drinkId": "cf-french-press-dark",
+    "cigarLabel": "A. Flores Gran Reserva Maduro Grand",
+    "drinkLabel": "French press — tamna mješavina",
+    "score": 100,
+    "rules": [
+      "body-match",
+      "flavor-shared",
+      "flavor-complement",
+      "wrapper-affinity"
+    ]
+  },
+  {
+    "cigarId": "cig-a-flores-gran-reserva-maduro-grand",
+    "drinkId": "cf-irish-coffee",
+    "cigarLabel": "A. Flores Gran Reserva Maduro Grand",
+    "drinkLabel": "Irish coffee",
+    "score": 100,
+    "rules": [
+      "body-match",
+      "flavor-shared",
+      "flavor-complement",
+      "contrast-sweet-maduro",
+      "wrapper-affinity"
+    ]
+  },
+  {
+    "cigarId": "cig-a-flores-gran-reserva-maduro-grand",
+    "drinkId": "cf-carajillo",
+    "cigarLabel": "A. Flores Gran Reserva Maduro Grand",
+    "drinkLabel": "Carajillo / caffè corretto (s rumom ili brandyjem)",
+    "score": 100,
+    "rules": [
+      "body-match",
+      "flavor-shared",
+      "flavor-complement",
+      "wrapper-affinity"
+    ]
+  },
+  {
+    "cigarId": "cig-a-flores-gran-reserva-maduro-grand",
+    "drinkId": "cf-vietnamese-iced",
+    "cigarLabel": "A. Flores Gran Reserva Maduro Grand",
+    "drinkLabel": "Vijetnamska ledena kava (cà phê sữa đá)",
+    "score": 100,
+    "rules": [
+      "body-match",
+      "flavor-shared",
+      "flavor-complement",
+      "contrast-sweet-maduro",
+      "wrapper-affinity"
+    ]
+  },
+  {
+    "cigarId": "cig-a-turrent-puro-corojo",
+    "drinkId": "wine-syrah-shiraz",
+    "cigarLabel": "A. Turrent Puro Corojo",
+    "drinkLabel": "Syrah / Shiraz (Rhone / Barossa)",
+    "score": 100,
+    "rules": [
+      "body-match",
+      "flavor-shared",
+      "flavor-complement",
+      "wrapper-affinity",
+      "power-match"
+    ]
+  },
+  {
+    "cigarId": "cig-a-turrent-puros-san-andres",
+    "drinkId": "wine-grahams-tawny-20",
+    "cigarLabel": "A. Turrent Puros San Andres",
+    "drinkLabel": "Graham's Tawny Port 20 Y.O.",
+    "score": 100,
+    "rules": [
+      "body-match",
+      "flavor-shared",
+      "flavor-complement",
+      "contrast-sweet-maduro",
+      "wrapper-affinity"
+    ]
+  },
+  {
+    "cigarId": "cig-a-turrent-puros-san-andres",
+    "drinkId": "wine-sandeman-tawny-20",
+    "cigarLabel": "A. Turrent Puros San Andres",
+    "drinkLabel": "Sandeman Tawny Port 20 Y.O.",
+    "score": 100,
+    "rules": [
+      "body-match",
+      "flavor-shared",
+      "flavor-complement",
+      "contrast-sweet-maduro",
+      "wrapper-affinity"
+    ]
+  },
+  {
+    "cigarId": "cig-a-turrent-puros-san-andres",
+    "drinkId": "wine-fonseca-bin-27",
+    "cigarLabel": "A. Turrent Puros San Andres",
+    "drinkLabel": "Fonseca Bin No. 27 Reserve Ruby",
+    "score": 100,
+    "rules": [
+      "body-match",
+      "flavor-shared",
+      "flavor-complement",
+      "contrast-sweet-maduro",
+      "wrapper-affinity"
+    ]
+  },
+  {
+    "cigarId": "cig-a-turrent-puros-san-andres",
+    "drinkId": "wine-blandys-madeira-10",
+    "cigarLabel": "A. Turrent Puros San Andres",
+    "drinkLabel": "Blandy's Madeira 10 Y.O. (Bual/Malmsey)",
+    "score": 100,
+    "rules": [
+      "body-match",
+      "flavor-shared",
+      "flavor-complement",
+      "contrast-sweet-maduro",
+      "wrapper-affinity"
+    ]
+  },
+  {
+    "cigarId": "cig-a-turrent-puros-san-andres",
+    "drinkId": "wine-prosek-hvar",
+    "cigarLabel": "A. Turrent Puros San Andres",
+    "drinkLabel": "Prošek (Hvar/Dalmacija)",
+    "score": 100,
+    "rules": [
+      "body-match",
+      "flavor-shared",
+      "flavor-complement",
+      "contrast-sweet-maduro",
+      "wrapper-affinity"
+    ]
+  }
+]

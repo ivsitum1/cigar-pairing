@@ -1,0 +1,164 @@
+{
+  "skill_id": "test-selection",
+  "version": "1.0",
+  "cases": [
+    {
+      "id": "case_1",
+      "input": {
+        "text": "Odaberi statistički test: dvije neovisne grupe, kontinuirani outcome (MAP u mmHg), n=25 po grupi, Shapiro-Wilk p=0.31 (obje grupe), Levene test p=0.02."
+      },
+      "assertions": [
+        {
+          "type": "contains",
+          "value": "Welch",
+          "description": "Welch t-test (nejednake varijance)"
+        },
+        {
+          "type": "not_contains",
+          "value": "Student t-test",
+          "description": "not_contains: Student t-test"
+        },
+        {
+          "type": "not_contains",
+          "value": "Student's t-test",
+          "description": "Student je za jednake varijance"
+        },
+        {
+          "type": "not_contains",
+          "value": "Mann-Whitney",
+          "description": "distribucija je normalna (SW p=0.31)"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(Levene|varijanca)",
+          "description": "contains: Levene OR objašnjenje zašto Welch"
+        },
+        {
+          "type": "regex_match",
+          "value": "Welch.{0,100}varijanca|nejednake varijance.{0,100}Welch",
+          "description": "regex_match: Welch.{0,100}varijanca|nejednake varijance.{0,100}"
+        },
+        {
+          "type": "last_sentence_not_question",
+          "description": "Last sentence not ?"
+        }
+      ]
+    },
+    {
+      "id": "case_2",
+      "input": {
+        "text": "Odaberi test: dvije neovisne grupe, kontinuirani outcome (ICU LOS u danima, desno asimetričan), n=12 po grupi, Shapiro-Wilk p=0.003 (grupa A), p=0.11 (grupa B)."
+      },
+      "assertions": [
+        {
+          "type": "regex_match",
+          "value": "(?i)(Mann\\-Whitney|Wilcoxon\\ rank\\-sum)",
+          "description": "contains: Mann-Whitney OR neparametrijski test"
+        },
+        {
+          "type": "not_contains",
+          "value": "t-test",
+          "description": "nije prikladan (SW p=0.003)"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(neparametri|nonparametric|asimetri)",
+          "description": "contains: neparametri OR contains: nonparametric OR contains: asimetri"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(Shapiro\\-Wilk|normalnost)",
+          "description": "contains: Shapiro-Wilk OR obrazloženje"
+        },
+        {
+          "type": "regex_match",
+          "value": "Mann.Whitney|Wilcoxon|neparametri",
+          "description": "regex_match: Mann.Whitney|Wilcoxon|neparametri"
+        },
+        {
+          "type": "last_sentence_not_question",
+          "description": "Last sentence not ?"
+        }
+      ]
+    },
+    {
+      "id": "case_3",
+      "input": {
+        "text": "Odaberi test: 3 grupe (propofol, ketamin, midazolam), kontinuirani outcome (induction time u sekundama), n=20 po grupi, sve grupe normalno distribuirane (SW p>0.1 sve), Levene p=0.45."
+      },
+      "assertions": [
+        {
+          "type": "regex_match",
+          "value": "(?i)(ANOVA|one\\-way\\ ANOVA)",
+          "description": "contains: ANOVA OR contains: one-way ANOVA"
+        },
+        {
+          "type": "not_contains",
+          "value": "Kruskal-Wallis",
+          "description": "nepotrebno, distribucija je normalna"
+        },
+        {
+          "type": "not_contains",
+          "value": "t-test",
+          "description": "više od 2 grupe"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(post\\-hoc|Tukey|Bonferroni)",
+          "description": "contains: post-hoc OR contains: Tukey OR post-hoc provjera"
+        },
+        {
+          "type": "regex_match",
+          "value": "one.way.{0,50}ANOVA|ANOVA.{0,50}post.hoc",
+          "description": "regex_match: one.way.{0,50}ANOVA|ANOVA.{0,50}post.hoc"
+        },
+        {
+          "type": "last_sentence_not_question",
+          "description": "Last sentence not ?"
+        }
+      ]
+    },
+    {
+      "id": "case_4",
+      "input": {
+        "text": "Odaberi test: isti pacijenti mjereni u 2 točke (MAP prije i 5 minuta nakon indukcije anestezije), n=30, razlike normalno distribuirane (SW p=0.21)."
+      },
+      "assertions": [
+        {
+          "type": "regex_match",
+          "value": "(?i)(paired|upareni)",
+          "description": "contains: paired OR contains: upareni"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(paired\\ t\\-test|upareni\\ t\\-test)",
+          "description": "contains: paired t-test OR contains: upareni t-test"
+        },
+        {
+          "type": "not_contains",
+          "value": "neovisni",
+          "description": "not_contains: neovisni"
+        },
+        {
+          "type": "not_contains",
+          "value": "independent",
+          "description": "nije neovisni uzorak"
+        },
+        {
+          "type": "not_contains",
+          "value": "Wilcoxon",
+          "description": "distribucija razlika je normalna, SW p=0.21"
+        },
+        {
+          "type": "regex_match",
+          "value": "paired.{0,50}t.test|upareni.{0,50}t",
+          "description": "regex_match: paired.{0,50}t.test|upareni.{0,50}t"
+        },
+        {
+          "type": "last_sentence_not_question",
+          "description": "Last sentence not ?"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1443 @@
+{
+  "version": "1.1",
+  "max_active_skills": 2,
+  "note": "Single source of truth for skill metadata. Use 40_operations/scripts/skill_registry.py to validate and regenerate skill_task_mapping.md. Tier 3 default max 2 skills when pairing rules apply; pipelines still unload between heavy stages.",
+  "dag_schema": {
+    "optional_fields": [
+      "depends_on",
+      "pipeline_group",
+      "parallel_safe",
+      "granularity"
+    ],
+    "granularity_values": [
+      "policy",
+      "strategy",
+      "procedure",
+      "primitive"
+    ],
+    "granularity_map": "30_system/docs/SKILL_LAYER_TAXONOMY.md",
+    "edge_types_documented": [
+      "depends_on",
+      "specializes",
+      "composes_with",
+      "conflicts_with"
+    ],
+    "map": "30_system/docs/SKILLDAG_MAP.md",
+    "pipelines": "30_system/docs/skill_pipelines_dag.json",
+    "validator": "40_operations/scripts/skill_dag_validate.py"
+  },
+  "tier3_pairing": {
+    "max_combined_tokens": 2200,
+    "allowed_pairs": [
+      [
+        "nonacademic-writer",
+        "avoid-ai-formulations"
+      ],
+      [
+        "nonacademic-writer",
+        "ai-detection"
+      ],
+      [
+        "manuscript-structure",
+        "avoid-ai-formulations"
+      ],
+      [
+        "manuscript-structure",
+        "ai-detection"
+      ],
+      [
+        "manuscript-writing",
+        "avoid-ai-formulations"
+      ],
+      [
+        "manuscript-writing",
+        "ai-detection"
+      ],
+      [
+        "manuscript-structure",
+        "manuscript-writing"
+      ],
+      [
+        "latex-document",
+        "latex-compile"
+      ],
+      [
+        "journal-production",
+        "manuscript-structure"
+      ],
+      [
+        "journal-production",
+        "latex-document"
+      ],
+      [
+        "notebooklm-research-gate",
+        "research-lookup"
+      ]
+    ],
+    "forbidden_pairs": [
+      [
+        "nonacademic-writer",
+        "manuscript-structure"
+      ],
+      [
+        "nonacademic-writer",
+        "literature-synthesis"
+      ],
+      [
+        "nonacademic-writer",
+        "meta-analysis"
+      ]
+    ]
+  },
+  "skills": [
+    {
+      "id": "agentic-react-os",
+      "file": "SKILL_agentic-react-os.md",
+      "domain": "engineering",
+      "triggers": [
+        "Agentic OS",
+        "Re-Act OS",
+        "TAOR",
+        "Think Act Observe Reflect",
+        "Tree of Thought debugging",
+        "verbose agent loop",
+        "@agentic-os"
+      ],
+      "conflicts_with": [],
+      "disambiguation": "Use for explicit Agentic OS / Re-Act execution discipline and TAOR checkpoints; NOT a substitute for domain analysis skills (meta-analysis, etc.). For software PRD workflow use grill-me → write-prd → prd-to-issues → ralph-loop instead.",
+      "trust_tier": 4
+    },
+    {
+      "id": "ai-detection",
+      "file": "SKILL_ai-detection.md",
+      "domain": "writing",
+      "triggers": [
+        "check AI score",
+        "AI detection",
+        "reduce AI phrasing",
+        "natural writing"
+      ],
+      "conflicts_with": [],
+      "disambiguation": "Use when checking/reducing AI detection score on existing text; for writing strategy guidance use avoid-ai-formulations instead",
+      "trust_tier": 4
+    },
+    {
+      "id": "avoid-ai-formulations",
+      "file": "SKILL_avoid-ai-formulations.md",
+      "domain": "writing",
+      "triggers": [
+        "avoid AI phrasing",
+        "natural writing",
+        "AI formulations",
+        "reduce AI score"
+      ],
+      "conflicts_with": [],
+      "disambiguation": "Use for writing strategy and phrase-level revision on academic or non-academic drafts; for automated AI score checking use ai-detection instead. May pair as second Tier 3 skill with nonacademic-writer or manuscript-structure per registry tier3_pairing.",
+      "trust_tier": 4
+    },
+    {
+      "id": "bayesian-workflow",
+      "file": "SKILL_bayesian-workflow.md",
+      "domain": "statistics",
+      "triggers": [
+        "Bayesian",
+        "prior",
+        "posterior",
+        "Bayes workflow",
+        "brms"
+      ],
+      "conflicts_with": [
+        "statsmodels-python"
+      ],
+      "disambiguation": "Use for full Bayesian analysis workflow (priors, fitting, diagnostics, reporting) in R/brms; NOT for frequentist analyses or Python statsmodels unless user switches stack",
+      "trust_tier": 4
+    },
+    {
+      "id": "eda-flexplot",
+      "file": "SKILL_eda-flexplot.md",
+      "domain": "statistics",
+      "triggers": [
+        "exploratory analysis",
+        "EDA",
+        "explorativna analiza",
+        "flexplot",
+        "visual EDA",
+        "vizualna eksplorativna analiza",
+        "explore variables",
+        "explore data before analysis"
+      ],
+      "conflicts_with": [],
+      "disambiguation": "Use for EDA then visual EDA via flexplot script; mandatory pause to present results and suggest options; then user picks next skill (test-selection, meta-analysis, etc.). Do NOT run inferential analysis in same turn.",
+      "trust_tier": 4
+    },
+    {
+      "id": "case-report-series",
+      "file": "SKILL_case-report-series.md",
+      "domain": "writing",
+      "triggers": [
+        "case report",
+        "case series",
+        "prikaz slučaja",
+        "serija slučajeva",
+        "write case report",
+        "write case series",
+        "CARE checklist",
+        "case report structure"
+      ],
+      "conflicts_with": [],
+      "disambiguation": "Use for writing or structuring case reports and case series; follow CARE. For CARE checklist check only use reporting-care.mdc; for general article structure use manuscript-structure.",
+      "trust_tier": 4
+    },
+    {
+      "id": "consort-checklist",
+      "file": "SKILL_consort-checklist.md",
+      "domain": "methodology",
+      "triggers": [
+        "CONSORT",
+        "RCT checklist",
+        "randomized trial reporting"
+      ],
+      "conflicts_with": [
+        "prisma-checklist",
+        "strobe-checklist"
+      ],
+      "disambiguation": "Use for CONSORT compliance check on RCT manuscripts; for writing RCT structure use rct-manuscript.",
+      "trust_tier": 4
+    },
+    {
+      "id": "document-conversion",
+      "file": "SKILL_document-conversion.md",
+      "domain": "tools",
+      "triggers": [
+        "document conversion",
+        "Word to txt",
+        "docx to md",
+        "Excel to markdown",
+        "convert document"
+      ],
+      "conflicts_with": [],
+      "disambiguation": "Use for file format conversion between docx/xlsx/txt/md only",
+      "trust_tier": 3
+    },
+    {
+      "id": "paddle-ocr",
+      "file": "SKILL_paddle-ocr.md",
+      "domain": "tools",
+      "triggers": [
+        "OCR",
+        "paddleocr",
+        "paddle ocr",
+        "scan PDF",
+        "scanned PDF",
+        "extract text from image",
+        "image OCR"
+      ],
+      "conflicts_with": [],
+      "disambiguation": "Use for scanned PDFs/images and PaddleOCR install/extract pipeline; for docx/xlsx conversion use document-conversion; default PDF library extract uses --ocr auto in extract_pdf_library_to_md.py",
+      "trust_tier": 3
+    },
+    {
+      "id": "figure-pipeline",
+      "file": "SKILL_figure-pipeline.md",
+      "domain": "figures",
+      "triggers": [
+        "figure pipeline",
+        "publication figures",
+        "all figures",
+        "visualization for paper"
+      ],
+      "conflicts_with": [],
+      "disambiguation": "Use when multiple publication figures are needed; for a single forest plot use forest-plot directly",
+      "trust_tier": 4
+    },
+    {
+      "id": "forest-plot",
+      "file": "SKILL_forest-plot.md",
+      "domain": "statistics",
+      "triggers": [
+        "forest plot",
+        "meta-analysis figure",
+        "study results visualization"
+      ],
+      "conflicts_with": [],
+      "disambiguation": "Use for creating a single forest plot; for full figure workflow use figure-pipeline instead",
+      "trust_tier": 3
+    },
+    {
+      "id": "grade-assessment",
+      "file": "SKILL_grade-assessment.md",
+      "domain": "methodology",
+      "triggers": [
+        "GRADE",
+        "quality of evidence",
+        "certainty assessment",
+        "evidence grading"
+      ],
+      "conflicts_with": [],
+      "disambiguation": "Use for GRADE certainty-of-evidence assessment across outcomes; NOT for individual study risk-of-bias tools",
+      "trust_tier": 4
+    },
+    {
+      "id": "manuscript-structure",
+      "file": "SKILL_manuscript-structure.md",
+      "domain": "writing",
+      "triggers": [
+        "manuscript structure",
+        "IMRaD",
+        "check article structure",
+        "section check",
+        "does it have all sections"
+      ],
+      "conflicts_with": [],
+      "disambiguation": "Use for structural completeness check (IMRaD sections) on journal-bound work; for full write/edit/QC workflow use manuscript-writing; for blog/newsletter use nonacademic-writer; for prose quality use avoid-ai-formulations (pairing allowed per tier3_pairing).",
+      "trust_tier": 4
+    },
+    {
+      "id": "manuscript-writing",
+      "file": "SKILL_manuscript-writing.md",
+      "domain": "writing",
+      "triggers": [
+        "write manuscript",
+        "piši manuskript",
+        "edit manuscript",
+        "uredi manuskript",
+        "manuscript protocol",
+        "prepare submission",
+        "priprema za submission",
+        "position paper",
+        "cohort manuscript",
+        "CRAB colistin"
+      ],
+      "conflicts_with": [
+        "nonacademic-writer"
+      ],
+      "disambiguation": "Use for end-to-end manuscript draft, edit, or pre-submission QC. Load 59_manuscript_writing_principles.md (conceptual) then 58 protocol (operational): file hygiene, integrity check, style, stats reporting, weighted score gate, stop on N mismatch. Pair with study-type skills. For IMRaD checklist only use manuscript-structure; for AI phrases only avoid-ai-formulations; NOT blog/newsletter.",
+      "trust_tier": 4
+    },
+    {
+      "id": "obsidian-wiki-agent",
+      "file": "SKILL_obsidian-wiki-agent.md",
+      "domain": "tools",
+      "triggers": [
+        "obsidian wiki",
+        "Obsidian ingest",
+        "wiki ingestion",
+        "wikilink graph",
+        "wiki health check",
+        "wiki lint",
+        "graph connectivity",
+        "Karpathy wiki",
+        "second brain",
+        "LLM Wiki Mode",
+        "Obsidian tricks",
+        "Obsidian skill",
+        "Obsidian flavored markdown",
+        "OFM",
+        "wikilink",
+        "callout",
+        "transclusion",
+        "JSON Canvas",
+        "canvas file",
+        "Obsidian Bases",
+        "vault note",
+        "PKM",
+        "osobna baza znanja",
+        "napravi bilješku Obsidian",
+        "Obsidian URI"
+      ],
+      "conflicts_with": [],
+      "disambiguation": "Use for Obsidian-native markdown and vault/wiki ops under 20_knowledge/wiki (ingest, syntax, Canvas, Bases, connectivity). NOT for systematic review methodology as a study type (use literature-synthesis or meta-analysis).",
+      "trust_tier": 3
+    },
+    {
+      "id": "meta-analysis",
+      "file": "SKILL_meta-analysis.md",
+      "domain": "statistics",
+      "granularity": "procedure",
+      "triggers": [
+        "meta-analysis",
+        "meta analiza",
+        "systematic review",
+        "sustavni pregled",
+        "systematic review and meta-analysis",
+        "combine studies",
+        "pooled estimate",
+        "systematic review quantitative"
+      ],
+      "conflicts_with": [],
+      "disambiguation": "Use for conducting full systematic review and/or meta-analysis (protocol, search, screening, extraction, RoB, pooling, forest plot, publication bias). For PRISMA compliance check on existing manuscript only use prisma-checklist; for narrative synthesis/grid/gaps without mandatory MA use literature-synthesis; for single forest plot use forest-plot.",
+      "trust_tier": 3
+    },
+    {
+      "id": "retrospective-cohort",
+      "file": "SKILL_retrospective-cohort.md",
+      "domain": "writing",
+      "triggers": [
+        "retrospective cohort",
+        "retrospektivna kohortna studija",
+        "kohortna studija",
+        "write cohort study",
+        "pisanje kohortne studije",
+        "observational cohort",
+        "cohort study manuscript"
+      ],
+      "conflicts_with": [],
+      "disambiguation": "Use for writing or structuring retrospective cohort manuscripts; follow STROBE. For STROBE checklist check only use strobe-checklist; for case-control or cross-sectional use strobe-checklist with study-specific items.",
+      "trust_tier": 4
+    },
+    {
+      "id": "prospective-cohort",
+      "file": "SKILL_prospective-cohort.md",
+      "domain": "writing",
+      "triggers": [
+        "prospective cohort",
+        "prospektivna kohortna studija",
+        "write prospective cohort",
+        "pisanje prospektivne kohortne studije",
+        "longitudinal cohort"
+      ],
+      "conflicts_with": [],
+      "disambiguation": "Use for writing or structuring prospective cohort manuscripts; follow STROBE. For retrospective cohort use retrospective-cohort; for checklist check use strobe-checklist.",
+      "trust_tier": 4
+    },
+    {
+      "id": "observational-studies",
+      "file": "SKILL_observational-studies.md",
+      "domain": "writing",
+      "triggers": [
+        "observational study",
+        "opservacijska studija",
+        "write observational study",
+        "pisanje opservacijske studije",
+        "case-control",
+        "cross-sectional",
+        "presječna studija",
+        "studija slučaj-kontrola"
+      ],
+      "conflicts_with": [],
+      "disambiguation": "Use for writing case-control or cross-sectional manuscripts; STROBE by design. For cohort use prospective-cohort or retrospective-cohort; for checklist check use strobe-checklist.",
+      "trust_tier": 4
+    },
+    {
+      "id": "rct-manuscript",
+      "file": "SKILL_rct-manuscript.md",
+      "domain": "writing",
+      "triggers": [
+        "RCT",
+        "randomized controlled trial",
+        "randomizirana kontrolirana studija",
+        "write RCT",
+        "pisanje RCT-a",
+        "clinical trial manuscript",
+        "CONSORT writing"
+      ],
+      "conflicts_with": [],
+      "disambiguation": "Use for writing or structuring RCT manuscripts; follow CONSORT. For CONSORT checklist compliance check only use consort-checklist.",
+      "trust_tier": 3
+    },
+    {
+      "id": "prisma-checklist",
+      "file": "SKILL_prisma-checklist.md",
+      "domain": "methodology",
+      "triggers": [
+        "PRISMA",
+        "systematic review checklist",
+        "PRISMA 2020"
+      ],
+      "conflicts_with": [
+        "consort-checklist",
+        "strobe-checklist"
+      ],
+      "disambiguation": "Use to check SR/MA manuscript against PRISMA 2020 (compliance check only). To conduct the SR/MA workflow use meta-analysis; for RCTs use consort-checklist; for observational use strobe-checklist.",
+      "trust_tier": 4
+    },
+    {
+      "id": "publication-bias",
+      "file": "SKILL_publication-bias.md",
+      "domain": "statistics",
+      "triggers": [
+        "publication bias",
+        "funnel plot",
+        "small-study effects",
+        "Egger test"
+      ],
+      "conflicts_with": [],
+      "disambiguation": "Use specifically for publication bias assessment (funnel, Egger, trim-and-fill); requires completed meta-analysis with k >= 10",
+      "trust_tier": 4
+    },
+    {
+      "id": "sensitivity-analysis",
+      "file": "SKILL_sensitivity-analysis.md",
+      "domain": "statistics",
+      "triggers": [
+        "sensitivity analysis",
+        "robustness checks",
+        "leave-one-out",
+        "influence analysis"
+      ],
+      "conflicts_with": [],
+      "disambiguation": "Use for meta-analysis sensitivity analyses (leave-one-out, influence, method comparison); NOT for general statistical sensitivity analysis outside meta-analysis",
+      "trust_tier": 4
+    },
+    {
+      "id": "setup-project",
+      "file": "SKILL_setup-project.md",
+      "domain": "setup",
+      "triggers": [
+        "setup project",
+        "create project",
+        "initialize project"
+      ],
+      "conflicts_with": [],
+      "disambiguation": "Use to create new project directory structure; for checking existing structure use validate-setup",
+      "trust_tier": 4
+    },
+    {
+      "id": "strobe-checklist",
+      "file": "SKILL_strobe-checklist.md",
+      "domain": "methodology",
+      "triggers": [
+        "STROBE",
+        "observational study checklist",
+        "cohort reporting",
+        "case-control reporting"
+      ],
+      "conflicts_with": [
+        "consort-checklist",
+        "prisma-checklist"
+      ],
+      "disambiguation": "Use for observational studies (cohort, case-control, cross-sectional); for RCTs use consort-checklist; for systematic reviews use prisma-checklist",
+      "trust_tier": 4
+    },
+    {
+      "id": "swiss-cheese",
+      "file": "SKILL_swiss-cheese.md",
+      "domain": "validation",
+      "triggers": [
+        "swiss cheese",
+        "validation protocol",
+        "validate task",
+        "verification protocol"
+      ],
+      "conflicts_with": [],
+      "disambiguation": "Use for multi-layer validation of critical analyses; mandatory before publication or writing transition",
+      "trust_tier": 4
+    },
+    {
+      "id": "artifact-audit-bundle",
+      "file": "SKILL_artifact-audit-bundle.md",
+      "domain": "validation",
+      "triggers": [
+        "artifact bundle",
+        "audit bundle",
+        "reproducibility bundle",
+        "make this auditable",
+        "reproducible artifact",
+        "@artifact-audit"
+      ],
+      "conflicts_with": [],
+      "disambiguation": "Use to produce a reproducibility bundle (code+env+methodology+provenance) for a finished deliverable under 90_archive/artifacts/. NOT a verification gate (that is output-controller / swiss-cheese) and NOT trajectory logging.",
+      "trust_tier": 4
+    },
+    {
+      "id": "output-controller",
+      "file": "SKILL_output-controller.md",
+      "domain": "validation",
+      "triggers": [
+        "output gate",
+        "output check",
+        "kontrola outputa",
+        "provjeri output",
+        "final gate",
+        "zero tolerance",
+        "@OUTPUT_CTRL",
+        "@output-gate",
+        "deliver before submit",
+        "isporuči"
+      ],
+      "conflicts_with": [],
+      "disambiguation": "Zero-tolerance terminal gate before deliverable release (system + project author_claims). NOT graded code review (CODE_QA) and NOT SkillLens skill routing.",
+      "trust_tier": 4
+    },
+    {
+      "id": "target-trial-emulation",
+      "file": "SKILL_target-trial-emulation.md",
+      "domain": "statistics",
+      "triggers": [
+        "target trial",
+        "emulation",
+        "causal inference design",
+        "comparative effectiveness"
+      ],
+      "conflicts_with": [],
+      "disambiguation": "Use when emulating an RCT from observational data; NOT for actual RCTs or standard observational analysis",
+      "trust_tier": 4
+    },
+    {
+      "id": "test-selection",
+      "file": "SKILL_test-selection.md",
+      "domain": "statistics",
+      "triggers": [
+        "which test",
+        "test selection",
+        "Welch",
+        "comparison of groups",
+        "statistical test choice",
+        "power analysis",
+        "sample size",
+        "multiple comparison",
+        "assumption check"
+      ],
+      "conflicts_with": [
+        "statsmodels-python"
+      ],
+      "disambiguation": "Default R-oriented test choice and reporting (Welch, effect sizes, K-Dense references); for full R implementation and package catalog use r-statistics; NOT for meta-analysis, Bayesian workflow, or Python statsmodels implementation",
+      "trust_tier": 4
+    },
+    {
+      "id": "validate-setup",
+      "file": "SKILL_validate-setup.md",
+      "domain": "setup",
+      "triggers": [
+        "validate setup",
+        "check project structure",
+        "verify setup"
+      ],
+      "conflicts_with": [],
+      "disambiguation": "Use to verify existing project structure is correct; for creating new structure use setup-project",
+      "trust_tier": 4
+    },
+    {
+      "id": "create-sop",
+      "file": "SKILL_create-sop.md",
+      "domain": "methodology",
+      "triggers": [
+        "create SOP",
+        "standard operating procedure",
+        "document procedure",
+        "record fix"
+      ],
+      "conflicts_with": [],
+      "disambiguation": "Use to document multi-step fixes or complex integrations as reusable SOPs; NOT for simple error logging",
+      "trust_tier": 4
+    },
+    {
+      "id": "literature-synthesis",
+      "file": "SKILL_literature-synthesis.md",
+      "domain": "writing",
+      "triggers": [
+        "literature review",
+        "lit review",
+        "synthesis",
+        "analysis grid",
+        "consensus meter",
+        "gap identification",
+        "research gap",
+        "critical review"
+      ],
+      "conflicts_with": [],
+      "disambiguation": "Use for narrative synthesis, analysis grid, evidence agreement table (consensus meter), gap identification (no mandatory quantitative pooling). NOT Consensus.app MCP (use research-lookup). For blog or newsletter drafts use nonacademic-writer; for full systematic review or meta-analysis workflow use meta-analysis; for PRISMA check use prisma-checklist; for manuscript structure use manuscript-structure.",
+      "trust_tier": 3
+    },
+    {
+      "id": "graphify-brain-map",
+      "file": "SKILL_graphify-brain-map.md",
+      "domain": "engineering",
+      "triggers": [
+        "graphify",
+        "brain map",
+        "codebase graph",
+        "architecture query",
+        "god nodes",
+        "structural index",
+        "what connects",
+        "shortest path",
+        "graph query",
+        "map the brain",
+        "graphify query",
+        "knowledge graph brain"
+      ],
+      "conflicts_with": [],
+      "disambiguation": "Use for agent-rules repo structure and cross-module wiring (Graphify MCP/CLI). NOT Obsidian wiki (obsidian-wiki-agent), session memory (memory MCP), or textbooks (books_rag).",
+      "trust_tier": 4
+    },
+    {
+      "id": "grill-me",
+      "file": "SKILL_grill-me.md",
+      "domain": "engineering",
+      "granularity": "strategy",
+      "pipeline_group": "agentic-engineering",
+      "triggers": [
+        "Grill-me",
+        "grill me",
+        "shared understanding",
+        "interview before coding",
+        "design tree",
+        "clarify requirements"
+      ],
+      "conflicts_with": [],
+      "disambiguation": "Use for structured interview and design-tree alignment before coding or PRD; NOT for statistical grill-down of data",
+      "trust_tier": 4
+    },
+    {
+      "id": "write-prd",
+      "file": "SKILL_write-prd.md",
+      "domain": "engineering",
+      "granularity": "procedure",
+      "pipeline_group": "agentic-engineering",
+      "depends_on": [
+        "grill-me"
+      ],
+      "triggers": [
+        "Write PRD",
+        "product requirements",
+        "prd.json",
+        "PRD",
+        "requirements document",
+        "passes flag"
+      ],
+      "conflicts_with": [
+        "prisma-checklist"
+      ],
+      "disambiguation": "Use for software Product Requirements Document with passes flags; NOT for PRISMA systematic review checklist (use prisma-checklist)",
+      "trust_tier": 4
+    },
+    {
+      "id": "prd-to-issues",
+      "file": "SKILL_prd-to-issues.md",
+      "domain": "engineering",
+      "pipeline_group": "agentic-engineering",
+      "depends_on": [
+        "write-prd"
+      ],
+      "triggers": [
+        "PRD to issues",
+        "vertical slice",
+        "vertical slices",
+        "decompose PRD",
+        "tracer bullet",
+        "task breakdown"
+      ],
+      "conflicts_with": [],
+      "disambiguation": "Use to break a PRD into vertical slices and blockers; load after write-prd when planning execution",
+      "trust_tier": 4
+    },
+    {
+      "id": "ralph-loop",
+      "file": "SKILL_ralph-loop.md",
+      "domain": "engineering",
+      "pipeline_group": "agentic-engineering",
+      "depends_on": [
+        "prd-to-issues"
+      ],
+      "triggers": [
+        "Ralph ON",
+        "Ralph OFF",
+        "Ralph loop",
+        "Ralph Wiggum",
+        "PROMISE COMPLETE",
+        "Exploration Mode",
+        "autonomous execution"
+      ],
+      "conflicts_with": [],
+      "disambiguation": "Use for PRD-driven iterative execution with TDD and progress logging; NOT for research statistics pipelines unless user explicitly names Ralph mode",
+      "trust_tier": 4
+    },
+    {
+      "id": "r-statistics",
+      "file": "SKILL_r-statistics.md",
+      "domain": "statistics",
+      "triggers": [
+        "R statistics",
+        "R statistika",
+        "R analiza",
+        "biostatistics R",
+        "clinical statistics R",
+        "napiši R kod",
+        "R script analysis",
+        "glmmTMB",
+        "lme4",
+        "survival analysis R",
+        "gtsummary",
+        "ggstatsplot",
+        "MatchIt",
+        "mice imputation",
+        "tidymodels",
+        "mlr3",
+        "paketi za statistiku"
+      ],
+      "conflicts_with": [
+        "statsmodels-python"
+      ],
+      "disambiguation": "Use for R biostatistics implementation, package selection, and reproducible analysis scripts. For test choice only use test-selection; for full Bayesian workflow use bayesian-workflow; for SR/MA protocol use meta-analysis; for EDA pause workflow use eda-flexplot; for Python use statsmodels-python.",
+      "trust_tier": 3
+    },
+    {
+      "id": "research-grill-me",
+      "file": "SKILL_research-grill-me.md",
+      "domain": "scholarly",
+      "pipeline_group": "scholarly-spec",
+      "triggers": [
+        "research grill-me",
+        "scholarly alignment",
+        "PICO interview",
+        "clarify study design",
+        "before research spec",
+        "manuscript scope",
+        "opisujem zadatak",
+        "describe my task"
+      ],
+      "conflicts_with": [
+        "grill-me"
+      ],
+      "disambiguation": "Use for interview and design-tree alignment before a research spec or manuscript; NOT for software Grill-me before PRD (use grill-me)",
+      "trust_tier": 4
+    },
+    {
+      "id": "write-research-spec",
+      "file": "SKILL_write-research-spec.md",
+      "domain": "scholarly",
+      "pipeline_group": "scholarly-spec",
+      "depends_on": [
+        "research-grill-me"
+      ],
+      "triggers": [
+        "research spec",
+        "research-spec.json",
+        "manuscript spec",
+        "scholarly spec",
+        "SAP outline",
+        "write research spec",
+        "help create research-spec",
+        "make research-spec.json"
+      ],
+      "conflicts_with": [
+        "write-prd"
+      ],
+      "disambiguation": "Use for research/manuscript specification with passes flags (research-spec.json); NOT for software PRD (use write-prd)",
+      "trust_tier": 4
+    },
+    {
+      "id": "research-spec-to-milestones",
+      "file": "SKILL_research-spec-to-milestones.md",
+      "domain": "scholarly",
+      "pipeline_group": "scholarly-spec",
+      "depends_on": [
+        "write-research-spec"
+      ],
+      "triggers": [
+        "research milestones",
+        "decompose research spec",
+        "spec to milestones",
+        "analysis milestones",
+        "chapter order",
+        "tracer bullet research"
+      ],
+      "conflicts_with": [
+        "prd-to-issues"
+      ],
+      "disambiguation": "Use to break research spec into milestones for statistics and writing; NOT for software vertical slices (use prd-to-issues)",
+      "trust_tier": 4
+    },
+    {
+      "id": "scholarly-iteration-loop",
+      "file": "SKILL_scholarly-iteration-loop.md",
+      "domain": "scholarly",
+      "pipeline_group": "scholarly-spec",
+      "depends_on": [
+        "research-spec-to-milestones"
+      ],
+      "triggers": [
+        "LOOP ON",
+        "LOOP OFF",
+        "run loop",
+        "research iteration loop",
+        "PROMISE COMPLETE loop",
+        "scholarly loop"
+      ],
+      "conflicts_with": [
+        "ralph-loop"
+      ],
+      "disambiguation": "Use for spec-driven scholarly iterations with Swiss Cheese and progress logs; NOT for software Ralph/TDD loop (use ralph-loop)",
+      "trust_tier": 4
+    },
+    {
+      "id": "statsmodels-python",
+      "file": "SKILL_statsmodels-python.md",
+      "domain": "statistics",
+      "triggers": [
+        "statsmodels",
+        "Python regression",
+        "OLS Python",
+        "ARIMA Python",
+        "Python inference",
+        "logistic regression Python",
+        "GLM Python"
+      ],
+      "conflicts_with": [
+        "test-selection",
+        "bayesian-workflow"
+      ],
+      "disambiguation": "Use only when user explicitly requests Python/statsmodels; for default clinical/R analysis use test-selection or bayesian-workflow",
+      "trust_tier": 4
+    },
+    {
+      "id": "legal-contract-review",
+      "file": "SKILL_legal-contract-review.md",
+      "domain": "legal",
+      "triggers": [
+        "contract review",
+        "review contract",
+        "pregled ugovora",
+        "NDA",
+        "MSA",
+        "DPA",
+        "data processing agreement",
+        "ugovor o suradnji",
+        "redline",
+        "red flags ugovor",
+        "limitation of liability",
+        "indemnification",
+        "governing law"
+      ],
+      "conflicts_with": [
+        "prisma-checklist",
+        "consort-checklist",
+        "strobe-checklist"
+      ],
+      "disambiguation": "Use for commercial/research contract clause review and redlines with HR/EU playbook; NOT legal advice; NOT for reporting checklists (PRISMA/CONSORT/STROBE) or clinical treatment.",
+      "trust_tier": 4
+    },
+    {
+      "id": "skill-dag-router",
+      "file": "SKILL_skill-dag-router.md",
+      "domain": "engineering",
+      "granularity": "strategy",
+      "triggers": [
+        "skill dag router",
+        "skill DAG routing",
+        "depends_on skills",
+        "pipeline skill order",
+        "topological skill load",
+        "conflicts_with skills"
+      ],
+      "conflicts_with": [],
+      "disambiguation": "Inter-skill DAG routing via registry depends_on and skill_pipelines_dag.json; for TF-IDF-only ranking use skill_rerank; for intra-skill steps use skill_decompose (SkillRAE).",
+      "trust_tier": 4
+    },
+    {
+      "id": "skill-discovery",
+      "file": "SKILL_skill-discovery.md",
+      "domain": "meta",
+      "triggers": [
+        "find skill",
+        "skill discovery",
+        "external skill",
+        "SkillsMP",
+        "skills marketplace",
+        "nedostaje skill",
+        "nema skilla",
+        "koji skill",
+        "pretraži skill",
+        "skill nije integriran",
+        "agent skills marketplace"
+      ],
+      "conflicts_with": [
+        "arxiv-skill-scout"
+      ],
+      "disambiguation": "Use to search local registry and SkillsMP for skills not yet integrated. Run before create-skill when hunting candidates; NOT for performing the underlying domain task. For monthly arXiv preprint skill proposals use arxiv-skill-scout instead.",
+      "trust_tier": 3
+    },
+    {
+      "id": "arxiv-skill-scout",
+      "file": "SKILL_arxiv-skill-scout.md",
+      "domain": "meta",
+      "triggers": [
+        "arxiv monthly",
+        "arxiv digest",
+        "scan arxiv for skills",
+        "arxiv skill scout",
+        "monthly arxiv scan"
+      ],
+      "conflicts_with": [
+        "research-lookup",
+        "skill-discovery"
+      ],
+      "disambiguation": "Monthly arXiv scan for agent/stat/CS skill proposals (CLI + digest); human approval before create-skill. NOT clinical evidence (research-lookup) or SkillsMP import (skill-discovery).",
+      "trust_tier": 3
+    },
+    {
+      "id": "machine-weekly-digest",
+      "file": "SKILL_machine-weekly-digest.md",
+      "domain": "meta",
+      "triggers": [
+        "machine weekly digest",
+        "machine digest",
+        "weekly machine upgrade",
+        "sensor digest",
+        "the machine digest"
+      ],
+      "conflicts_with": [
+        "arxiv-skill-scout"
+      ],
+      "disambiguation": "Weekly brain digest aggregating arXiv/GitHub AI/news sensors + upgrade proposals. NOT single arXiv scout run (arxiv-skill-scout).",
+      "trust_tier": 4
+    },
+    {
+      "id": "dreaming-daemon",
+      "file": "SKILL_dreaming-daemon.md",
+      "domain": "meta",
+      "triggers": [
+        "dreaming daemon",
+        "run dreaming",
+        "knowledge frameworks",
+        "dream daemon",
+        "idle frameworks"
+      ],
+      "conflicts_with": [],
+      "disambiguation": "Grounded hypothesis frameworks from run logs; not free-form creative writing.",
+      "trust_tier": 4
+    },
+    {
+      "id": "longtracerl-long-context-reason",
+      "file": "SKILL_longtracerl-long-context-reason.md",
+      "domain": "engineering",
+      "triggers": [
+        "long context reasoning agent",
+        "longtracerl",
+        "rubric reward agent trajectory",
+        "tiered distractors benchmark",
+        "long context RL agent evaluation"
+      ],
+      "conflicts_with": [],
+      "disambiguation": "Long-context agent eval pattern (LongTraceRL arXiv 2605.31584); not clinical research-lookup.",
+      "trust_tier": 4
+    },
+    {
+      "id": "translation-analytics-freelancers-ii",
+      "file": "SKILL_translation-analytics-freelancers-ii.md",
+      "domain": "engineering",
+      "triggers": [
+        "local LLM translation benchmark",
+        "confidential translation workflow",
+        "offline translation evaluation",
+        "translation analytics freelancers",
+        "privacy sensitive translation LLM"
+      ],
+      "conflicts_with": [
+        "document-conversion"
+      ],
+      "disambiguation": "Offline local LLM translation benchmarking (arXiv 2605.31452); not document-conversion.",
+      "trust_tier": 4
+    },
+    {
+      "id": "autosci-memory-centric-lifecycle",
+      "file": "SKILL_autosci-memory-centric-lifecycle.md",
+      "domain": "engineering",
+      "triggers": [
+        "scientific research lifecycle agent",
+        "autosci memory agent",
+        "memory centric research agent",
+        "full research lifecycle orchestration",
+        "persistent memory scientific agent"
+      ],
+      "conflicts_with": [
+        "agentic-react-os"
+      ],
+      "disambiguation": "Multi-phase research memory layout (AutoSci arXiv 2605.31468); for Re-Act OS use agentic-react-os.",
+      "trust_tier": 4
+    },
+    {
+      "id": "clinical-cdss",
+      "file": "SKILL_clinical-cdss.md",
+      "domain": "clinical",
+      "triggers": [
+        "clinical scenario",
+        "bedside",
+        "ICU question",
+        "anestezija",
+        "anesthesiology",
+        "intenzivna",
+        "perioperative",
+        "airway",
+        "sepsis bundle",
+        "ECMO sedation",
+        "sedacija ECMO",
+        "klinički slučaj",
+        "clinical decision support",
+        "CDSS"
+      ],
+      "conflicts_with": [
+        "legal-contract-review",
+        "meta-analysis",
+        "test-selection"
+      ],
+      "disambiguation": "Use for bedside anesthesia/ICU SBAR and clinical reasoning with ECMO guardrails; wraps Clinical Decision Support subagent. NOT pharma-label CDS packages; NOT report auditing or legal contracts.",
+      "trust_tier": 3
+    },
+    {
+      "id": "create-skill",
+      "file": "SKILL_create-skill.md",
+      "domain": "meta",
+      "triggers": [
+        "create skill",
+        "new skill",
+        "add skill",
+        "skill gap",
+        "skill maker",
+        "skill builder",
+        "skill-builder"
+      ],
+      "conflicts_with": [],
+      "disambiguation": "Use when a repeatable workflow needs to be captured as a new SKILL_*.md file",
+      "trust_tier": 4
+    },
+    {
+      "id": "notebooklm-research-gate",
+      "file": "SKILL_notebooklm-research-gate.md",
+      "domain": "tools",
+      "pipeline_group": "notebooklm-before-prd",
+      "triggers": [
+        "notebooklm research gate",
+        "notebooklm verify claims",
+        "ground notebooklm synthesis",
+        "notebooklm before implement",
+        "verify notebook sources",
+        "NotebookLM research gate"
+      ],
+      "conflicts_with": [
+        "meta-analysis",
+        "literature-synthesis"
+      ],
+      "disambiguation": "Gate NotebookLM answers before implementation with VERIFIED/INFERRED/UNVERIFIED labels; for PubMed quick lookup use research-lookup; for formal SR use meta-analysis.",
+      "trust_tier": 3
+    },
+    {
+      "id": "model-native-skill-transform",
+      "file": "SKILL_model-native-skill-transform.md",
+      "domain": "engineering",
+      "triggers": [
+        "model-native skill",
+        "model-native skill transformation",
+        "steering vector workflow",
+        "representation engineering pipeline",
+        "activation extraction",
+        "SAE steering",
+        "latent steering"
+      ],
+      "conflicts_with": [],
+      "disambiguation": "Use for repeatable transformation of procedural skills into activation/steering workflows with baseline-vs-steered evaluation and reproducibility guardrails; for generic new skill authoring use create-skill.",
+      "trust_tier": 4
+    },
+    {
+      "id": "nonacademic-writer",
+      "file": "SKILL_nonacademic-writer.md",
+      "domain": "writing",
+      "triggers": [
+        "blog post",
+        "blog",
+        "newsletter",
+        "Substack",
+        "LinkedIn article",
+        "thought leadership",
+        "content draft",
+        "non-academic writing",
+        "nonacademic",
+        "web article",
+        "tutorial post",
+        "case study post",
+        "piši blog",
+        "blog objava"
+      ],
+      "conflicts_with": [
+        "manuscript-structure",
+        "literature-synthesis",
+        "meta-analysis",
+        "case-report-series",
+        "rct-manuscript",
+        "retrospective-cohort",
+        "prospective-cohort",
+        "observational-studies",
+        "research-grill-me",
+        "write-research-spec"
+      ],
+      "disambiguation": "Use for blog, newsletter, and other non-journal prose (outline, hooks, section feedback, web-sourced citations). NOT for manuscripts, IMRaD, systematic reviews, or scholarly spec. For journal structure use manuscript-structure; for literature grids use literature-synthesis; may pair with avoid-ai-formulations or ai-detection per tier3_pairing.",
+      "trust_tier": 4
+    },
+    {
+      "id": "academic-paper-review",
+      "file": "SKILL_academic-paper-review.md",
+      "domain": "writing",
+      "triggers": [
+        "review this paper",
+        "peer review",
+        "critique paper",
+        "analyze research article",
+        "academic paper review",
+        "arXiv review"
+      ],
+      "conflicts_with": [
+        "manuscript-structure",
+        "literature-synthesis"
+      ],
+      "disambiguation": "Structured critique of one external paper; for own manuscript IMRaD check use manuscript-structure; for multi-paper synthesis use literature-synthesis.",
+      "trust_tier": 3
+    },
+    {
+      "id": "document-review",
+      "file": "SKILL_document-review.md",
+      "domain": "tools",
+      "triggers": [
+        "document review",
+        "fact-check document",
+        "audit this PDF",
+        "proofread report",
+        "review deck"
+      ],
+      "conflicts_with": [
+        "legal-contract-review",
+        "manuscript-structure"
+      ],
+      "disambiguation": "Factual/structural audit of reports and slides; for contracts use legal-contract-review; for scientific manuscript structure use manuscript-structure.",
+      "trust_tier": 3
+    },
+    {
+      "id": "presentation-speech",
+      "file": "SKILL_presentation-speech.md",
+      "domain": "writing",
+      "triggers": [
+        "speech writer",
+        "TED talk",
+        "keynote",
+        "public speaking",
+        "oral presentation",
+        "conference talk script"
+      ],
+      "conflicts_with": [
+        "nonacademic-writer",
+        "manuscript-structure"
+      ],
+      "disambiguation": "Spoken talk scripts; for blog use nonacademic-writer.",
+      "trust_tier": 4
+    },
+    {
+      "id": "powerpoint-accessibility",
+      "file": "SKILL_powerpoint-accessibility.md",
+      "domain": "tools",
+      "triggers": [
+        "powerpoint accessibility",
+        "accessible presentation",
+        "PPTX audit",
+        "slide accessibility"
+      ],
+      "conflicts_with": [
+        "figure-pipeline"
+      ],
+      "disambiguation": "Slide deck accessibility; for publication figures use figure-pipeline.",
+      "trust_tier": 3
+    },
+    {
+      "id": "research-lookup",
+      "file": "SKILL_research-lookup.md",
+      "domain": "tools",
+      "triggers": [
+        "research lookup",
+        "current evidence",
+        "recent studies on",
+        "what does literature say now",
+        "consensus search",
+        "consensus evidence"
+      ],
+      "conflicts_with": [
+        "meta-analysis",
+        "literature-synthesis",
+        "arxiv-skill-scout"
+      ],
+      "disambiguation": "Quick cited lookup: Consensus MCP (OAuth) then PubMed for PMIDs/gaps; for SR/MA use meta-analysis; for synthesis grid use literature-synthesis (internal consensus meter is NOT Consensus.app). For arXiv skill scouting use arxiv-skill-scout.",
+      "trust_tier": 3
+    },
+    {
+      "id": "meeting-insights",
+      "file": "SKILL_meeting-insights.md",
+      "domain": "tools",
+      "triggers": [
+        "meeting insights",
+        "analyze transcript",
+        "meeting summary",
+        "action items from meeting"
+      ],
+      "conflicts_with": [],
+      "disambiguation": "Meeting transcript analysis; not clinical CDSS.",
+      "trust_tier": 3
+    },
+    {
+      "id": "latex-document",
+      "file": "SKILL_latex-document.md",
+      "domain": "tools",
+      "triggers": [
+        "write latex",
+        "create latex",
+        "latex document",
+        "latex paper",
+        "beamer",
+        "latex poster",
+        "ieee format",
+        "latex thesis",
+        "convert to latex"
+      ],
+      "conflicts_with": [
+        "document-conversion"
+      ],
+      "disambiguation": "LaTeX authoring and layout; for compile-only use latex-compile; for Word use document-conversion.",
+      "trust_tier": 3
+    },
+    {
+      "id": "journal-production",
+      "file": "SKILL_journal-production.md",
+      "domain": "tools",
+      "triggers": [
+        "journal production",
+        "production checklist",
+        "galley proof",
+        "camera ready",
+        "typesetting",
+        "prepress",
+        "publisher production"
+      ],
+      "conflicts_with": [],
+      "disambiguation": "Post-acceptance production; for structure use manuscript-structure; for cover art use journal-cover-design.",
+      "trust_tier": 3
+    },
+    {
+      "id": "journal-cover-design",
+      "file": "SKILL_journal-cover-design.md",
+      "domain": "tools",
+      "triggers": [
+        "journal cover",
+        "cover design",
+        "title page design",
+        "graphical abstract layout",
+        "issue cover"
+      ],
+      "conflicts_with": [
+        "figure-pipeline"
+      ],
+      "disambiguation": "Cover/title-page layout; for in-article figures use figure-pipeline.",
+      "trust_tier": 3
+    },
+    {
+      "id": "latex-compile",
+      "file": "SKILL_latex-compile.md",
+      "domain": "tools",
+      "triggers": [
+        "compile latex",
+        "compile paper",
+        "latex PDF",
+        "fix latex error",
+        "arxiv build",
+        "latexmk"
+      ],
+      "conflicts_with": [],
+      "disambiguation": "LaTeX build only; for new documents use latex-document; for Word use document-conversion.",
+      "trust_tier": 3
+    },
+    {
+      "id": "investor-materials",
+      "file": "SKILL_investor-materials.md",
+      "domain": "business",
+      "triggers": [
+        "pitch deck",
+        "investor memo",
+        "one-pager",
+        "fundraising",
+        "accelerator application"
+      ],
+      "conflicts_with": [
+        "nonacademic-writer"
+      ],
+      "disambiguation": "Investor-facing collateral; for blog use nonacademic-writer.",
+      "trust_tier": 4
+    },
+    {
+      "id": "scenario-planning",
+      "file": "SKILL_scenario-planning.md",
+      "domain": "engineering",
+      "triggers": [
+        "what if",
+        "scenario analysis",
+        "scenario planning",
+        "threat model horizon"
+      ],
+      "conflicts_with": [
+        "grill-me"
+      ],
+      "disambiguation": "Scenario branches; for software grill-me use grill-me.",
+      "trust_tier": 4
+    },
+    {
+      "id": "financial-trading",
+      "file": "SKILL_financial-trading.md",
+      "domain": "finance",
+      "triggers": [
+        "trading analysis",
+        "risk manager",
+        "portfolio risk",
+        "R-multiple",
+        "position sizing"
+      ],
+      "conflicts_with": [
+        "test-selection",
+        "r-statistics"
+      ],
+      "disambiguation": "Trading risk; for biostatistics use test-selection or r-statistics.",
+      "trust_tier": 4
+    },
+    {
+      "id": "wargame-blueprint",
+      "file": "SKILL_wargame-blueprint.md",
+      "domain": "engineering",
+      "triggers": [
+        "wargame",
+        "ARC blueprint",
+        "action reaction counteraction",
+        "fight the mission on paper",
+        "failure counter-move"
+      ],
+      "conflicts_with": [],
+      "disambiguation": "Pre-execution ARC planning; for requirements grill use grill-me.",
+      "trust_tier": 4
+    },
+    {
+      "id": "drug-discovery-workbench",
+      "file": "SKILL_drug-discovery-workbench.md",
+      "domain": "discovery",
+      "triggers": [
+        "drug discovery",
+        "diffdock",
+        "pathml",
+        "molecular docking",
+        "discovery workbench"
+      ],
+      "conflicts_with": [
+        "clinical-cdss",
+        "meta-analysis"
+      ],
+      "disambiguation": "Computational discovery; Pipeline 7B; not bedside CDSS.",
+      "trust_tier": 3
+    }
+  ],
+  "trust_tier_policy": {
+    "schema_version": 1,
+    "default_new_skill": 3,
+    "tiers": {
+      "1": "metadata_only — name/description index only",
+      "2": "instruction_access — load SKILL text into context",
+      "3": "supervised_execution — bash/write/MCP requires approval",
+      "4": "autonomous_execution — full rights within workspace sandbox"
+    },
+    "mcp_registry": "30_system/docs/mcp_trust_registry.json",
+    "auditor": "40_operations/scripts/skill_auditor.py",
+  "process_rubric": "40_operations/scripts/skill_process_rubric.py",
+  "landscape_doc": "30_system/docs/SELF_EVOLVING_AGENTS_LANDSCAPE.md"
+  }
+}

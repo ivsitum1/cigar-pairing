@@ -1,0 +1,29 @@
+{
+  "skill_id": "eda-flexplot",
+  "version": "1.0",
+  "cases": [
+    {
+      "id": "case_eda_pause",
+      "input": {
+        "text": "Eksplorativna analiza podataka iz 01_input/cohort.csv prije odabira testa."
+      },
+      "assertions": [
+        {
+          "type": "regex_match",
+          "value": "(?i)(EDA|eksplorativ|flexplot|deskriptiv)",
+          "description": "EDA or flexplot framing"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(pauz|pause|odabir|opcij|test-selection|inferenc)",
+          "description": "pause or offer next-step options without jumping to inference"
+        },
+        {
+          "type": "not_contains",
+          "value": "p = 0.0",
+          "description": "no fabricated inferential p-value in EDA-only turn"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "case_1": "library(metafor)\nres <- rma(yi, vi, data = dat)\nfunnel(res)\nregtest(res)\ntrimfill(res)\n# Funnel plot za vizualnu asimetriju; Egger test (regtest) za small-study effects; trim-and-fill za imputaciju i korigirani estimate. Interpretacija ovisi o rezultatima.",
+  "case_2": "S k=7 studija Egger test i trim-and-fill imaju ogranicenu snaga; preporuka je da ih ne provodis bez upozorenja. Granica k >= 10 cesto se koristi za Egger (limited power ispod toga). Premalo studija za pouzdanu procjenu publication biasa. Nije preporuceno donositi jake zakljucke iz ovih testova pri k=7.",
+  "case_3": "Egger test (p=0.03) ukazuje na asimetriju funnel plota i moguci publication bias. Trim-and-fill je dodao 3 studije; korigirani OR=0.82 (95% CI 0.68–0.99) u odnosu na originalni 0.70 (0.58–0.84). Adjusted estimate sugerira da bi bez bias-a efekt mogao biti slabiji. U Discussion navedi ogranicenje i interpretiraj korigirani estimate."
+}

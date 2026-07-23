@@ -1,0 +1,233 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "created": "2025-01-01T00:00:00",
+    "last_updated": "2026-07-05T08:08:43.716631",
+    "total_sessions": 3,
+    "total_tasks": 5
+  },
+  "sessions": [
+    {
+      "session_id": "2026-01-03-224f700d",
+      "timestamp": "2026-01-03T19:25:46.835542",
+      "tasks": [
+        {
+          "task_id": "3a2c1938-2a17-4320-ab70-29982f760bfe",
+          "timestamp": "2026-01-03T19:25:46.834392",
+          "task": {
+            "type": "statistical_analysis",
+            "description": "Performed regression analysis on clinical trial data",
+            "complexity": "low",
+            "knowledge_domain": "statistics"
+          },
+          "execution": {
+            "approach": "Performed regression analysis on clinical trial data",
+            "files_modified": [],
+            "time_seconds": null,
+            "iterations": 1
+          },
+          "outcome": {
+            "status": "success",
+            "user_feedback": "positive",
+            "error_occurred": false,
+            "error_type": null,
+            "error_message": null,
+            "self_assessment_score": 8.5
+          },
+          "learnings": {
+            "what_worked": [
+              "Used appropriate statistical methods"
+            ],
+            "what_failed": [],
+            "insights": [
+              "Linear regression was appropriate for this dataset"
+            ]
+          }
+        },
+        {
+          "task_id": "1849ec63-20e8-481d-8262-7f894520a36e",
+          "timestamp": "2026-01-03T19:26:12.471510",
+          "task": {
+            "type": "medical_diagnosis",
+            "description": "Analyzed patient symptoms and recommended treatment protocol",
+            "complexity": "low",
+            "knowledge_domain": "medicine"
+          },
+          "execution": {
+            "approach": "Analyzed patient symptoms and recommended treatment protocol",
+            "files_modified": [],
+            "time_seconds": null,
+            "iterations": 1
+          },
+          "outcome": {
+            "status": "success",
+            "user_feedback": "positive",
+            "error_occurred": false,
+            "error_type": null,
+            "error_message": null,
+            "self_assessment_score": 9.0
+          },
+          "learnings": {
+            "what_worked": [],
+            "what_failed": [],
+            "insights": []
+          }
+        }
+      ],
+      "summary": {
+        "total_tasks": 2,
+        "successful": 2,
+        "failed": 0,
+        "errors": 0,
+        "user_feedback": "neutral"
+      }
+    },
+    {
+      "session_id": "20260704-002",
+      "timestamp": "2026-07-04T19:12:24.942155",
+      "tasks": [
+        {
+          "session_id": "20260704-002",
+          "timestamp": "2026-07-04T19:12:24.942142",
+          "task": {
+            "type": "setup",
+            "description": "Setup project: sinston (type: case_control)",
+            "complexity": "medium"
+          },
+          "execution": {
+            "approach": "Automatic setup with study type detection",
+            "files_modified": [],
+            "time_seconds": null,
+            "iterations": 1
+          },
+          "outcome": {
+            "status": "partial",
+            "user_feedback": "none",
+            "error_occurred": false,
+            "error_type": null,
+            "self_assessment_score": null
+          },
+          "learnings": {
+            "what_worked": [
+              "Automatic study type detection"
+            ],
+            "what_failed": []
+          }
+        },
+        {
+          "session_id": "20260704-003",
+          "timestamp": "2026-07-04T19:12:25.012482",
+          "task": {
+            "type": "setup",
+            "description": "Setup project: sinston (type: case_control)",
+            "complexity": "medium"
+          },
+          "execution": {
+            "approach": "Automatic setup with study type detection",
+            "files_modified": [],
+            "time_seconds": null,
+            "iterations": 1
+          },
+          "outcome": {
+            "status": "partial",
+            "user_feedback": "none",
+            "error_occurred": false,
+            "error_type": null,
+            "self_assessment_score": null
+          },
+          "learnings": {
+            "what_worked": [
+              "Automatic study type detection"
+            ],
+            "what_failed": []
+          }
+        }
+      ],
+      "summary": {
+        "total_tasks": 2,
+        "successful": 0,
+        "failed": 0,
+        "errors": 0,
+        "user_feedback": "none"
+      }
+    },
+    {
+      "session_id": "2026-07-05-94255efd",
+      "timestamp": "2026-07-05T08:08:43.716625",
+      "tasks": [
+        {
+          "task_id": "93d1fdeb-f646-4ca2-a7b7-b1130ac70ae5",
+          "timestamp": "2026-07-05T08:08:43.716615",
+          "task": {
+            "type": "notebooklm_cycle_close",
+            "description": "Harness v2 20/20 + AutoMemory 14/14 live grill; AM-4..7 implemented; UNVERIFIED resolved",
+            "complexity": "low",
+            "knowledge_domain": "general"
+          },
+          "execution": {
+            "approach": "Harness v2 20/20 + AutoMemory 14/14 live grill; AM-4..7 implemented; UNVERIFIED resolved",
+            "files_modified": [],
+            "time_seconds": null,
+            "iterations": 1
+          },
+          "outcome": {
+            "status": "success",
+            "user_feedback": "positive",
+            "error_occurred": false,
+            "error_type": null,
+            "error_message": null,
+            "self_assessment_score": 9.0
+          },
+          "learnings": {
+            "what_worked": [
+              "Playwright grill, gate GO, memory_trace_bridge, memory-schema propose"
+            ],
+            "what_failed": [],
+            "insights": [
+              "AutoMem outer loop = propose-only; no LoRA in brain repo"
+            ]
+          }
+        }
+      ],
+      "summary": {
+        "total_tasks": 1,
+        "successful": 1,
+        "failed": 0,
+        "errors": 0,
+        "user_feedback": "neutral"
+      }
+    }
+  ],
+  "patterns": {
+    "recurring_errors": [],
+    "successful_strategies": [],
+    "user_preferences": [],
+    "knowledge_domain_performance": {
+      "statistics": {
+        "success_rate": 1.0,
+        "task_count": 1,
+        "success_count": 1,
+        "common_errors": []
+      },
+      "medicine": {
+        "success_rate": 1.0,
+        "task_count": 1,
+        "success_count": 1,
+        "common_errors": []
+      },
+      "decisions": {
+        "success_rate": 0.0,
+        "task_count": 0,
+        "success_count": 0,
+        "common_errors": []
+      },
+      "general": {
+        "success_rate": 1.0,
+        "task_count": 1,
+        "success_count": 1,
+        "common_errors": []
+      }
+    }
+  },
+  "adaptations": []
+}

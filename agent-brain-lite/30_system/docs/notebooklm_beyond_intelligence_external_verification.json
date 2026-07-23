@@ -1,0 +1,83 @@
+{
+  "version": "1.0.0",
+  "verified_utc": "2026-06-10T12:00:00Z",
+  "gate_verdict": "GO",
+  "notebook_id": "b8896972-fd70-40ca-9456-15c8ff41e72a",
+  "notebook_url": "https://notebooklm.google.com/notebook/b8896972-fd70-40ca-9456-15c8ff41e72a",
+  "method": "arXiv abs + GitHub README fetch 2026-06-10",
+  "status_legend": {
+    "LITERATURE_VERIFIED": "Primary arXiv/GitHub source exists",
+    "LITERATURE_PARTIAL": "Paper exists; benchmark % not reproduced locally",
+    "REPO_VERIFIED": "Implemented in agent-rules",
+    "SCOPE_EXCLUDED": "Out of incorporation scope"
+  },
+  "claims": [
+    {
+      "id": "MEMFAIL-PAPER",
+      "notebook_claim": "MemFail isolates summarization, storage, and retrieval failure modes",
+      "status": "LITERATURE_VERIFIED",
+      "summary": "arXiv:2605.26667; GitHub ishirgarg/MemFail documents three-function harness API.",
+      "sources": [
+        {"title": "arXiv:2605.26667", "url": "https://arxiv.org/abs/2605.26667"},
+        {"title": "GitHub MemFail", "url": "https://github.com/ishirgarg/MemFail"}
+      ],
+      "implementation_gate": "GO — adapter + failure_mode tags (P1)"
+    },
+    {
+      "id": "MEMFAIL-API",
+      "notebook_claim": "store_conversation, retrieve_memories, get_all_memories plug into harness",
+      "status": "LITERATURE_VERIFIED",
+      "summary": "Confirmed in MemFail README and paper Phase 1–2 description.",
+      "sources": [{"title": "GitHub MemFail", "url": "https://github.com/ishirgarg/MemFail"}],
+      "implementation_gate": "GO — memfail_adapter.py (P2 smoke)"
+    },
+    {
+      "id": "EPISODIC-FIRST",
+      "notebook_claim": "Do not overwrite raw trajectories with aggressive consolidation",
+      "status": "LITERATURE_PARTIAL",
+      "summary": "Theme from faulty-memory / agent-memory literature in notebook; procedural policy in TRAJECTORY_RL_POLICY.",
+      "sources": [],
+      "implementation_gate": "GO — episodic-first policy (P0)"
+    },
+    {
+      "id": "MIXTURE-ROUTING",
+      "notebook_claim": "Route queries to distinct memory substores",
+      "status": "REPO_VERIFIED",
+      "summary": "MEMORY_MIXTURE_ROUTING.md maps wiki / memory.db / books_rag / trajectory / verifier ledger.",
+      "sources": [],
+      "implementation_gate": "GO — P1"
+    },
+    {
+      "id": "MEMFAIL-BENCH-PCT",
+      "notebook_claim": "Aggregate MemFail accuracy numbers for commercial systems",
+      "status": "LITERATURE_PARTIAL",
+      "summary": "Numbers in paper; not reproduced in agent-rules.",
+      "sources": [{"title": "arXiv:2605.26667", "url": "https://arxiv.org/abs/2605.26667"}],
+      "implementation_gate": "SCOPE_EXCLUDED — diagnostic smoke only"
+    },
+    {
+      "id": "NEURAL-MEMORY",
+      "notebook_claim": "Learned/neural memory stacks",
+      "status": "SCOPE_EXCLUDED",
+      "summary": "MemFail notes difficulty evaluating implicit learned memory; out of brain repo scope.",
+      "sources": [],
+      "implementation_gate": "SCOPE_EXCLUDED"
+    },
+    {
+      "id": "FAULTY-MEMORY-THEME",
+      "notebook_claim": "Faulty Memory / AutoMem — episodic-first, avoid destructive consolidation",
+      "status": "LITERATURE_PARTIAL",
+      "summary": "Theme cited in Beyond Intelligence notebook; episodic-first policy implemented in TRAJECTORY_RL_POLICY + emit.py.",
+      "sources": [],
+      "implementation_gate": "GO — episodic-first (P0)"
+    },
+    {
+      "id": "NO-ESCAPE-THEME",
+      "notebook_claim": "Semantic forgetting is structural (no-escape literature)",
+      "status": "LITERATURE_PARTIAL",
+      "summary": "Documented in SEMANTIC_FORGETTING_LIMITS.md; no token-only fix claimed.",
+      "sources": [],
+      "implementation_gate": "GO — P2 docs only"
+    }
+  ]
+}

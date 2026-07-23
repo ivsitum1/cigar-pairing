@@ -1,0 +1,18 @@
+{
+  "skill_id": "graphify-brain-map",
+  "version": 1,
+  "cases": [
+    {
+      "id": "routes_architecture_to_graphify",
+      "prompt": "What connects the orchestrator to memory hooks in agent-rules?",
+      "must_contain": ["graphify", "graph"],
+      "must_not_contain": ["replace wiki", "delete memory"]
+    },
+    {
+      "id": "build_script_exists",
+      "prompt": "How do I rebuild the brain structural graph?",
+      "must_contain": ["graphify_brain_build.py"],
+      "must_not_contain": []
+    }
+  ]
+}

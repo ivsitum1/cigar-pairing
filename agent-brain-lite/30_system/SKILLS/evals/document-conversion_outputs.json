@@ -1,0 +1,5 @@
+{
+  "case_1": "# Naslov studije\n\n## Uvod\nOva studija ispituje...\n\n## Metode\n| Varijabla | Vrijednost |\n|---|---|\n| n | 120 |",
+  "case_2": "| group | n | mean_age | sd_age | mortality_30d |\n|-------|---|----------|--------|---------------|\n| HFNC | 45 | 67.3 | 12.1 | 8 |\n| NIV | 43 | 68.9 | 11.7 | 12 |",
+  "case_3": "Upozorenje: pri konverziji u plain text (.txt) izgubit ce se sljedeci elementi: formula i matematicke izraze (npr. sum(x^2)/n), tablice (table struktura ce postati obican tekst), bold i italic formatiranje, reference [1] kao oznake, header s paginacijom. Sadrzaj ce biti sačuvan kao tekst; formatiranje nece biti sačuvano."
+}

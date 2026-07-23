@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "last_updated": "2026-07-08",
+  "scan_script": "40_operations/scripts/arxiv_self_evolving_scan.py",
+  "papers": [
+    {
+      "arxiv_id": "2607.03935",
+      "title": "Harness-Aware Self-Evolving: Co-Evolving Model Weights, Harness, and Task Solutions",
+      "published": "2026-07-04",
+      "url": "https://arxiv.org/abs/2607.03935",
+      "tier": "harness_co_evolution",
+      "repo_mapping": "P2 research only — do not auto-rewrite orchestrator; align with MOSS human-gated apply pattern",
+      "implemented": ["wargame-blueprint", "skill_gap_optimize_gate"]
+    },
+    {
+      "arxiv_id": "2607.01874",
+      "title": "SkillCoach: Self-Evolving Rubrics for Evaluating and Enhancing Agentic Skill-Use",
+      "published": "2026-07-02",
+      "url": "https://arxiv.org/abs/2607.01874",
+      "tier": "skill_process_eval",
+      "repo_mapping": "skill_process_rubric.py — four dimensions: selection, following, composition, reflection",
+      "implemented": ["skill_process_rubric.py", "skill_auditor.py"]
+    },
+    {
+      "arxiv_id": "2607.00871",
+      "title": "Self-Evolving Agents with Anytime-Valid Certificates",
+      "published": "2026-07-01",
+      "url": "https://arxiv.org/abs/2607.00871",
+      "tier": "safety_gate",
+      "repo_mapping": "Trust tiers + skill_auditor score gate + skill_gap_optimize_gate composite cutoff",
+      "implemented": ["skill-trust-tiers.mdc", "skill_auditor.py", "skill_gap_optimize_gate.py"]
+    },
+    {
+      "arxiv_id": "2606.17628",
+      "title": "OPD-Evolver: Cultivating Holistic Agent Evolver via On-Policy Distillation",
+      "published": "2026-06-16",
+      "url": "https://arxiv.org/abs/2606.17628",
+      "tier": "on_policy_memory",
+      "repo_mapping": "DISTILLATION_TRACE_PROTOCOL + contrastive_reflection — slow/fast loops",
+      "implemented": ["DISTILLATION_TRACE_PROTOCOL.md", "contrastive_reflection.py"]
+    },
+    {
+      "arxiv_id": "2607.01120",
+      "title": "Next-Generation Agentic RL Systems Enable Self-Evolving Agents",
+      "published": "2026-07-01",
+      "url": "https://arxiv.org/abs/2607.01120",
+      "tier": "infrastructure",
+      "repo_mapping": "ATDP-lite + trajectory hooks + data proxy PHI scrub",
+      "implemented": ["TRAJECTORY_EMIT_PROTOCOL.md", "trajectory_rl/atdp.py"]
+    },
+    {
+      "arxiv_id": "2606.24151",
+      "title": "Metis: Bridging Text and Code Memory for Self-Evolving Agents",
+      "published": "2026-06-23",
+      "url": "https://arxiv.org/abs/2606.24151",
+      "tier": "dual_memory",
+      "repo_mapping": "Wiki text memory + code-as-skill scripts in 40_operations; crystallize repeated patterns",
+      "implemented": ["wiki memory", "40_operations/scripts"]
+    },
+    {
+      "arxiv_id": "2605.22794",
+      "title": "MOSS: Self-Evolution through Source-Level Rewriting",
+      "published": "2026-05-21",
+      "url": "https://arxiv.org/abs/2605.22794",
+      "tier": "harness_rewrite",
+      "repo_mapping": "Human-gated evolution only; error_log → plan → verify; no auto harness rewrite",
+      "implemented": ["error_log promotion", "wargame-blueprint"]
+    },
+    {
+      "arxiv_id": "2602.01966",
+      "title": "Self-Consolidation for Self-Evolving Agents (EvoSC)",
+      "published": "2026-02-02",
+      "url": "https://arxiv.org/abs/2602.01966",
+      "tier": "consolidation",
+      "repo_mapping": "contrastive_reflection.py + wiki consolidation",
+      "implemented": ["contrastive_reflection.py", "CONTRASTIVE_REFLECTION.md"]
+    },
+    {
+      "arxiv_id": "2508.07407",
+      "title": "Comprehensive Survey of Self-Evolving AI Agents",
+      "published": "2025-08-10",
+      "url": "https://arxiv.org/abs/2508.07407",
+      "tier": "survey",
+      "repo_mapping": "Maturity ladder: rules+skills+MCP+wiki = text-mutable artifacts layer",
+      "implemented": ["TRUST_TIER_POLICY.md"]
+    }
+  ]
+}

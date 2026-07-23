@@ -1,0 +1,163 @@
+{
+  "version": "1.0.0",
+  "problem": "NotebookLM 'SkillDAG' notebook (48a6afa2-97d8-44f4-8a41-c87d2ea0b650) may define skill dependency graphs, pipeline routing, and gate nodes not yet mapped in agent-rules after Geometry and RAG Anatomy incorporation slices.",
+  "solution": "Extract and gate SkillDAG sources; document SKILLDAG_MAP; extend registry with optional DAG metadata and validation script; add wiki concept and research-gate grill reference—without duplicating Geometry SkillRAE or RAG Anatomy harness docs, and without citing UNVERIFIED benchmarks in rules.",
+  "user_stories": [
+    {
+      "id": "US-SD1",
+      "description": "Operator has SKILLDAG_MAP.md linking DAG concepts to registry, skill_rerank, skill_decompose, and LifeHarness L2.",
+      "priority": "P0",
+      "passes": true
+    },
+    {
+      "id": "US-SD2",
+      "description": "Registry supports optional depends_on / pipeline_group / parallel_safe with skill_dag_validate.py cycle detection.",
+      "priority": "P1",
+      "passes": true
+    },
+    {
+      "id": "US-SD3",
+      "description": "notebooklm-research-gate lists SkillDAG grill prompts for re-extraction.",
+      "priority": "P0",
+      "passes": true
+    },
+    {
+      "id": "US-SD4",
+      "description": "Wiki concept SkillDAG is linked from index/log with notebooklm provenance.",
+      "priority": "P1",
+      "passes": true
+    },
+    {
+      "id": "US-SD5",
+      "description": "Optional skill-dag-router skill exists only if delta doc confirms true gap vs existing skill_rerank and pipelines table.",
+      "priority": "P2",
+      "passes": true
+    }
+  ],
+  "technical_decisions": [
+    {
+      "decision": "Defer all incorporation until skilldag_gate_report.json returns GO for P0 procedural claims.",
+      "rationale": "NotebookLM content is untrusted until research gate; staged 2026-06-05 without extraction on source machine.",
+      "passes": true
+    },
+    {
+      "decision": "Do not reopen prd_geometry_incorporation.json or prd_rag_anatomy_incorporation.json issues.",
+      "rationale": "Both execution_chain.status complete; SkillDAG is third notebook slice.",
+      "passes": true
+    },
+    {
+      "decision": "SkillRAE subunit graphs (skill_decompose) and skill-to-skill DAG are distinct concepts until notebook proves otherwise.",
+      "rationale": "Repo already has SkillRAE-lite; delta doc must disambiguate before registry schema change.",
+      "passes": true
+    },
+    {
+      "decision": "MCP ask_question with notebooklm_skilldag_grill_prompts.md is canonical extraction path; CLI export-chat is supplemental.",
+      "rationale": "Default notebooklm_grill_playwright.py embeds RAG Anatomy questions only; skilldag script uses dedicated prompts.",
+      "passes": true
+    }
+  ],
+  "execution_chain": {
+    "sequence": ["notebooklm-research-gate", "write-prd", "prd-to-issues", "ralph-loop"],
+    "status": "complete",
+    "notes": "SD-0..SD-9 + P2 skill_rerank --dag complete 2026-06-05 (skill_dag_rerank.py)."
+  },
+  "verification_protocol": {
+    "claim_statuses": ["VERIFIED", "INFERRED", "UNVERIFIED"],
+    "external_ledger": "30_system/docs/notebooklm_skilldag_external_verification.json",
+    "gate_report": "outputs/notebooklm/skilldag_gate_report.json",
+    "dedup_notebooks": [
+      {
+        "title": "The Geometry of Intelligence",
+        "notebook_id": "7c31671a-37df-4227-ac76-3ef2f5346d84",
+        "prd": "30_system/docs/prd_geometry_incorporation.json"
+      },
+      {
+        "title": "RAG Anatomy, Harness, Workflow",
+        "notebook_id": "33feafbc-a75e-4e05-9eff-ae5394a08f05",
+        "prd": "30_system/docs/prd_rag_anatomy_incorporation.json"
+      }
+    ]
+  },
+  "issues": [
+    {
+      "id": "SD-0",
+      "title": "NotebookLM extraction + gate (Fazes A–C)",
+      "priority": "P0",
+      "passes": true,
+      "blocked_by": [],
+      "maps_to_stories": []
+    },
+    {
+      "id": "SD-1",
+      "title": "SKILLDAG_MAP + executive + delta docs",
+      "priority": "P0",
+      "passes": true,
+      "blocked_by": ["SD-0"],
+      "maps_to_stories": ["US-SD1"]
+    },
+    {
+      "id": "SD-2",
+      "title": "Extend notebooklm-research-gate reference_files with SkillDAG grill prompts",
+      "priority": "P0",
+      "passes": true,
+      "blocked_by": ["SD-0"],
+      "maps_to_stories": ["US-SD3"]
+    },
+    {
+      "id": "SD-3",
+      "title": "Wiki concept SkillDAG + bridge wiki-ingest",
+      "priority": "P1",
+      "passes": true,
+      "blocked_by": ["SD-0"],
+      "maps_to_stories": ["US-SD4"]
+    },
+    {
+      "id": "SD-4",
+      "title": "Registry optional DAG metadata + skill_task_mapping regenerate",
+      "priority": "P1",
+      "passes": true,
+      "blocked_by": ["SD-1"],
+      "maps_to_stories": ["US-SD2"]
+    },
+    {
+      "id": "SD-5",
+      "title": "skill_dag_validate.py cycle and orphan detection",
+      "priority": "P1",
+      "passes": true,
+      "blocked_by": ["SD-4"],
+      "maps_to_stories": ["US-SD2"]
+    },
+    {
+      "id": "SD-6",
+      "title": "Batch skill_decompose compare subunit vs dependency graph",
+      "priority": "P1",
+      "passes": true,
+      "blocked_by": ["SD-1"],
+      "maps_to_stories": ["US-SD2"]
+    },
+    {
+      "id": "SD-7",
+      "title": "Optional skill-dag-router skill + eval seed",
+      "priority": "P2",
+      "passes": true,
+      "blocked_by": ["SD-1", "SD-0"],
+      "maps_to_stories": ["US-SD5"]
+    },
+    {
+      "id": "SD-8",
+      "title": "NOTEBOOKLM_CONSUMER_INTEGRATION third notebook entry",
+      "priority": "P2",
+      "passes": true,
+      "blocked_by": ["SD-0"],
+      "maps_to_stories": ["US-SD1"]
+    },
+    {
+      "id": "SD-9",
+      "title": "skilldag_vs_geometry_rag cross-notebook dedup section in delta",
+      "priority": "P2",
+      "passes": true,
+      "blocked_by": ["SD-1"],
+      "maps_to_stories": ["US-SD1"]
+    }
+  ]
+}

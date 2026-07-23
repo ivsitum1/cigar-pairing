@@ -1,0 +1,14 @@
+{
+  "skill_id": "meeting-insights",
+  "version": "1.0",
+  "cases": [
+    {
+      "id": "case_1_actions",
+      "input": { "text": "Transkript: Ana će poslati protokol do petka. Marko nije bio siguran oko n." },
+      "assertions": [
+        { "type": "regex_match", "value": "(?i)(Ana|protokol|petak|action|akcij)", "description": "extracts action" },
+        { "type": "regex_match", "value": "(?i)(Marko|nije siguran|open|otvoren)", "description": "open item" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "search_queries": [
+    "mcp agent language:python stars:>50",
+    "llm orchestration agent stars:>100",
+    "cursor IDE agent stars:>20",
+    "model context protocol stars:>30"
+  ],
+  "lookback_days": 7,
+  "min_stars": 20,
+  "max_results_per_query": 15,
+  "digest_top_n": 20,
+  "proposal_top_n": 5,
+  "rank_keywords": [
+    "agent",
+    "mcp",
+    "orchestrat",
+    "skill",
+    "workflow",
+    "memory",
+    "rag",
+    "cursor"
+  ]
+}

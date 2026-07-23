@@ -1,0 +1,1 @@
+C:/Users/Admin/Documents/agent rules/.cursor/hooks/output_gate_lifecycle.py

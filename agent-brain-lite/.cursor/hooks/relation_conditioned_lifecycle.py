@@ -1,0 +1,1 @@
+C:/Users/Admin/Documents/agent rules/.cursor/hooks/relation_conditioned_lifecycle.py

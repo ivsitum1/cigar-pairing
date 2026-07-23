@@ -1,0 +1,24 @@
+{
+  "skill_id": "grade-assessment",
+  "pass_rate_pct": 100.0,
+  "passed_assertions": 22,
+  "total_assertions": 22,
+  "cases": [
+    {
+      "case_id": "case_1",
+      "passed": 10,
+      "total": 10
+    },
+    {
+      "case_id": "case_2",
+      "passed": 6,
+      "total": 6
+    },
+    {
+      "case_id": "case_3",
+      "passed": 6,
+      "total": 6
+    }
+  ],
+  "failed_assertions": []
+}

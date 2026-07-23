@@ -1,0 +1,114 @@
+{
+  "skill_id": "manuscript-structure",
+  "version": "1.0",
+  "cases": [
+    {
+      "id": "case_1",
+      "input": {
+        "text": "Provjeri IMRaD strukturu: dokument ima sekcije \"Uvod\", \"Metode\", \"Rezultati\", \"Rasprava\". Uvod nema jasno postavljenu hipotezu. Rasprava nema sekciju ograničenja. Abstract ima 320 riječi. Provjeri usklađenost."
+      },
+      "assertions": [
+        {
+          "type": "regex_match",
+          "value": "(?i)(hipoteza|research\\ question)",
+          "description": "contains: hipoteza OR nedostaje, mora biti označeno"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(ograničenja|limitations)",
+          "description": "contains: ograničenja OR nedostaje u raspravi"
+        },
+        {
+          "type": "regex_match",
+          "value": "320.{0,30}rije|word.{0,30}limit|predug|exceeds|abstract",
+          "description": "regex_match: 320.{0,30}rije|word.{0,30}limit|predug|exceeds|abs"
+        },
+        {
+          "type": "not_contains",
+          "value": "struktura je ispravna",
+          "description": "not_contains: struktura je ispravna"
+        },
+        {
+          "type": "not_contains",
+          "value": "zadovoljava sve zahtjeve",
+          "description": "not_contains: zadovoljava sve zahtjeve"
+        },
+        {
+          "type": "regex_match",
+          "value": "nedostaje|nije naveden|missing|incomplete",
+          "description": "regex_match: nedostaje|nije naveden|missing|incomplete"
+        },
+        {
+          "type": "last_sentence_not_question",
+          "description": "Last sentence not ?"
+        }
+      ]
+    },
+    {
+      "id": "case_2",
+      "input": {
+        "text": "Evaluiraj ovu Methods sekciju: opisana randomizacija, inkluzijski/ekskluzijski kriteriji, intervencija, follow-up. Statistička analiza nije navedena kao zasebna podsekcija. Software nije specificiran."
+      },
+      "assertions": [
+        {
+          "type": "regex_match",
+          "value": "(?i)(statistička\\ analiza|statistical\\ analysis)",
+          "description": "contains: statistička analiza OR nedostaje"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(software|verzija|version)",
+          "description": "contains: software OR contains: verzija OR mora biti naveden"
+        },
+        {
+          "type": "not_contains",
+          "value": "metode su kompletne",
+          "description": "nedostaje statistička sekcija"
+        },
+        {
+          "type": "regex_match",
+          "value": "nedostaje|missing|nije naveden|not reported|dodati",
+          "description": "regex_match: nedostaje|missing|nije naveden|not reported|dodati"
+        }
+      ]
+    },
+    {
+      "id": "case_3",
+      "input": {
+        "text": "Provjeri rukopis: Introduction, Methods (randomizacija, intervencija), Results, Discussion, References. Nema: ethics approval, informed consent statement, trial registration number."
+      },
+      "assertions": [
+        {
+          "type": "regex_match",
+          "value": "(?i)(etič|ethics|IRB|ethics\\ approval)",
+          "description": "contains: etič OR contains: ethics OR contains: IRB OR contains: ethics approval"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(pristanak|informed\\ consent)",
+          "description": "contains: pristanak OR contains: informed consent"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(registracija|registration|ClinicalTrials|PROSPERO)",
+          "description": "contains: registracija OR contains: registration OR contains: ClinicalTrials OR contains: PROSPERO"
+        },
+        {
+          "type": "not_contains",
+          "value": "rukopis je kompletan",
+          "description": "not_contains: rukopis je kompletan"
+        },
+        {
+          "type": "not_contains",
+          "value": "sve sekcije su prisutne",
+          "description": "not_contains: sve sekcije su prisutne"
+        },
+        {
+          "type": "regex_match",
+          "value": "nedostaje|missing|obavezan|required|mora biti naveden",
+          "description": "regex_match: nedostaje|missing|obavezan|required|mora biti nave"
+        }
+      ]
+    }
+  ]
+}

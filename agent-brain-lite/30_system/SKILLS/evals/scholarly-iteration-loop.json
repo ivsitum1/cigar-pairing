@@ -1,0 +1,24 @@
+{
+  "skill_id": "scholarly-iteration-loop",
+  "version": "1.0",
+  "cases": [
+    {
+      "id": "case_loop_on",
+      "input": {
+        "text": "LOOP ON: izvedi sljedeći milestone iz research-spec i zapiši scholarly-progress."
+      },
+      "assertions": [
+        {
+          "type": "regex_match",
+          "value": "(?i)(scholarly-progress|milestone|Swiss|passes)",
+          "description": "scholarly iteration artifacts"
+        },
+        {
+          "type": "not_contains",
+          "value": "Ralph ON",
+          "description": "not software Ralph loop"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "version": "1.1.0",
+  "source_paper": "arXiv:2508.17497",
+  "source_title": "Multimodal Representation Learning Conditioned on Semantic Relations (Rcml)",
+  "purpose": "Canonical relation catalog for harness routing today and export to training datasets later. Not trained weights in this repo.",
+  "example_provenance": [
+    "90_archive/artifacts/bench_rl_demo/run_20260527_lit_bad_tool/trajectory.jsonl",
+    "90_archive/artifacts/bench_rl_demo/run_20260527_lit_good/trajectory.jsonl",
+    "40_operations/tests/test_dual_registry_rcml.py",
+    "30_system/behavior_rules/reference/classification_hints.md",
+    "30_system/docs/RELATION_CONDITIONED_MAP.md"
+  ],
+  "export_profiles": {
+    "jsonl_contrastive": {
+      "description": "Many-to-many contrastive rows: relation_nl + anchor text + positive/negative keys",
+      "fields": ["relation_id", "relation_nl", "anchor", "positive", "negative", "modality"]
+    },
+    "jsonl_instruction": {
+      "description": "Instruction-tuning rows for relation-conditioned routing",
+      "fields": ["instruction", "input", "output", "relation_id"]
+    }
+  },
+  "relations": [
+    {
+      "id": "causality",
+      "description_nl": "Identify and follow cause-effect chains rather than surface text similarity",
+      "modalities": ["text", "code"],
+      "harness_tags": ["causality"],
+      "task_types": ["CODE_IMPL", "CODE_QA", "CLINICAL"],
+      "routing_hint": "After lexical hit run larger_graph_expand; trace callers before edits",
+      "training_schema": {
+        "contrastive_key": "same_causal_chain",
+        "negative_strategy": "text_similarity_only",
+        "many_to_many": true
+      },
+      "examples": [
+        {
+          "source": "RELATION_CONDITIONED_MAP.md",
+          "anchor": "fix regression in skill_rerank after MCP failure",
+          "positive": "trace import graph from grep hit to orchestrator hook via larger_graph_expand",
+          "negative": "search repo for unrelated skill_rerank docs by filename only"
+        },
+        {
+          "source": "test_dual_registry_rcml.py",
+          "anchor": "fix bug root cause in imports after verifier returns SKIP",
+          "positive": "detect_relation_tag causality → boost graphify-brain-map; expand caller chain",
+          "negative": "reload full SKILL blocks matching keyword rerank"
+        }
+      ]
+    },
+    {
+      "id": "dependency",
+      "description_nl": "Map structural dependencies among modules, skills, or study components",
+      "modalities": ["text", "code"],
+      "harness_tags": ["dependency"],
+      "task_types": ["CODE_IMPL", "METHODOLOGY"],
+      "routing_hint": "Graphify path + skill_dag_validate before parallel load",
+      "training_schema": {
+        "contrastive_key": "shared_dependency",
+        "negative_strategy": "same_folder_only",
+        "many_to_many": true
+      },
+      "examples": [
+        {
+          "source": "larger_graph_expand smoke test",
+          "anchor": "refactor skill_verifier without breaking skill_rerank CLI",
+          "positive": "anchor_nodes(skill_rerank.py) → neighbors skill_verifier.py, evolve_dual_registry.py",
+          "negative": "edit SKILL_meta-analysis.md only because both mention skills"
+        },
+        {
+          "source": "classification_hints.md",
+          "anchor": "move handoff_log hook when orchestrator imports change",
+          "positive": "Graphify import edges from 00_orchestrator_agent.mdc to handoff MCP",
+          "negative": "grep handoff without path expansion"
+        }
+      ]
+    },
+    {
+      "id": "assumption_chain",
+      "description_nl": "Preserve ordered methodological assumptions before inferential steps",
+      "modalities": ["text"],
+      "harness_tags": ["assumption_chain"],
+      "task_types": ["STATISTICS", "METHODOLOGY"],
+      "routing_hint": "Load methodology or test-selection before analysis skills",
+      "training_schema": {
+        "contrastive_key": "shared_assumption_set",
+        "negative_strategy": "wrong_order",
+        "many_to_many": false
+      },
+      "examples": [
+        {
+          "source": "99_error_memory.mdc + dual_registry evolve test",
+          "anchor": "meta-analysis workflow used Student t-test on skewed arms",
+          "positive": "test-selection → Welch t-test default → then inferential skill",
+          "negative": "forest-plot skill before assumption check"
+        },
+        {
+          "source": "verifier_registry relation_overrides",
+          "anchor": "run Cox primary analysis on survival outcome",
+          "positive": "methodology SAP + cox.zph / Schoenfeld before Cox model",
+          "negative": "meta-analysis pooled estimate without PH check"
+        }
+      ]
+    },
+    {
+      "id": "evidence_strength",
+      "description_nl": "Align claims with verifiable evidence strength labels",
+      "modalities": ["text"],
+      "harness_tags": ["evidence_strength"],
+      "task_types": ["WRITING", "CLINICAL", "METHODOLOGY"],
+      "routing_hint": "research-lookup or swiss-cheese before strong wording",
+      "training_schema": {
+        "contrastive_key": "same_evidence_grade",
+        "negative_strategy": "overstated_claim",
+        "many_to_many": false
+      },
+      "examples": [
+        {
+          "source": "bench_rl_demo/run_20260527_lit_bad_tool/trajectory.jsonl",
+          "anchor": "literature search for ECMO sedation RCT evidence",
+          "positive": "tool_selected pubmed/search with abstract verification before claim",
+          "negative": "tool_selected web_search/fetch when golden_set expects pubmed/search"
+        },
+        {
+          "source": "bench_rl_demo/run_20260527_lit_good/trajectory.jsonl",
+          "anchor": "manuscript Discussion states dexmedetomidine first-line on adult ECMO",
+          "positive": "research-lookup + swiss-cheese; label supported vs partial vs unsupported",
+          "negative": "cite title-only PubMed record without full-text check"
+        }
+      ]
+    },
+    {
+      "id": "procedure_reuse",
+      "description_nl": "Reuse compatible procedural subunits instead of reloading full skill blocks",
+      "modalities": ["text"],
+      "harness_tags": ["procedure_reuse"],
+      "task_types": ["CODE_IMPL", "STATISTICS", "WRITING"],
+      "routing_hint": "skill_rerank --dag --rwr then skill_verifier ACCEPT/DECOMPOSE",
+      "training_schema": {
+        "contrastive_key": "compatible_subskill",
+        "negative_strategy": "full_skill_block",
+        "many_to_many": true
+      },
+      "examples": [
+        {
+          "source": "test_relation_conditioned.py",
+          "anchor": "Write PRD product requirements after grill-me alignment",
+          "positive": "rank_skills --rwr reaches grill-me prerequisite; verifier ACCEPT strategy layer",
+          "negative": "load full ralph-loop + write-prd + prd-to-issues bodies in one turn"
+        },
+        {
+          "source": "SKILL_LAYER_TAXONOMY.md",
+          "anchor": "tweak forest plot styling in meta-analysis manuscript pass",
+          "positive": "skill_verifier DECOMPOSE forest-plot subunit; skip unrelated SR screening steps",
+          "negative": "Tier-3 reload entire SKILL_meta-analysis.md each message"
+        }
+      ]
+    },
+    {
+      "id": "multimodal_alignment",
+      "description_nl": "Align image and text regions under an explicit relational description (Rcml core)",
+      "modalities": ["image", "text"],
+      "harness_tags": [],
+      "task_types": [],
+      "routing_hint": "Training-only in v1; no harness runtime",
+      "training_schema": {
+        "contrastive_key": "relation_conditioned_pair",
+        "negative_strategy": "diagonal_only",
+        "many_to_many": true
+      },
+      "examples": [
+        {
+          "source": "Rcml paper arXiv:2508.17497 (export seed)",
+          "anchor": "forest plot image: pooled diamond and CI whiskers region",
+          "positive": "caption text: random-effects pooled OR 1.12 (95% CI 0.89–1.41)",
+          "negative": "caption describes CONSORT flow diagram enrollment counts only"
+        },
+        {
+          "source": "figure-pipeline skill context (training seed)",
+          "anchor": "methods diagram panel showing DAG skill load order",
+          "positive": "legend text: Policy → Strategy → Procedure before Primitive injection",
+          "negative": "legend lists alphabetically sorted skill filenames"
+        }
+      ]
+    }
+  ]
+}
+

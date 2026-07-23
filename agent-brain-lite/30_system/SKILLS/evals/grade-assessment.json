@@ -1,0 +1,139 @@
+{
+  "skill_id": "grade-assessment",
+  "version": "1.0",
+  "cases": [
+    {
+      "id": "case_1",
+      "input": {
+        "text": "Provedi GRADE procjenu za ishod 30-dnevni mortalitet: 2 RCT-a (n=430, n=280), RoB low, konzistentnost I²=18%, direktnost direktna, preciznost 95% CI 0.55–0.98, nema sumnje na publication bias."
+      },
+      "assertions": [
+        {
+          "type": "contains",
+          "value": "high",
+          "description": "contains: high"
+        },
+        {
+          "type": "contains",
+          "value": "visoka",
+          "description": "contains: visoka"
+        },
+        {
+          "type": "regex_match",
+          "value": "⊕⊕⊕⊕",
+          "description": "RCT = high kao polazna razina"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(risk\\ of\\ bias|pristranost)",
+          "description": "contains: risk of bias OR contains: pristranost"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(I²|konzistentnost)",
+          "description": "contains: I² OR contains: konzistentnost"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(preciznost|precision)",
+          "description": "contains: preciznost OR contains: precision"
+        },
+        {
+          "type": "regex_match",
+          "value": "⊕|GRADE|razina|certainty|quality of evidence",
+          "description": "regex_match: ⊕|GRADE|razina|certainty|quality of evidence"
+        },
+        {
+          "type": "not_contains",
+          "value": "niska sigurnost",
+          "description": "not_contains: niska sigurnost"
+        },
+        {
+          "type": "not_contains",
+          "value": "low certainty",
+          "description": "bez razloga za downgrade"
+        },
+        {
+          "type": "last_sentence_not_question",
+          "description": "Last sentence not ?"
+        }
+      ]
+    },
+    {
+      "id": "case_2",
+      "input": {
+        "text": "GRADE procjena za isti tip ishoda, ali: opservacijska studija, RoB visok (confounding bez adjustment), konzistentnost I²=62%, preciznost CI=0.31–1.89 (prelazi null vrijednost, široki CI), indirektnost postoji (surrogate outcome)."
+      },
+      "assertions": [
+        {
+          "type": "regex_match",
+          "value": "⊕⊕○○|⊕○○○|low|very low|niska|vrlo niska",
+          "description": "niska ili vrlo niska"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(opservacijska|observational)",
+          "description": "contains: opservacijska OR niža polazna razina"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(wide\\ CI|preciznost|CI\\ prelazi)",
+          "description": "contains: wide CI OR contains: preciznost OR contains: CI prelazi"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(downgrade|sniženo|degradiran)",
+          "description": "contains: downgrade OR contains: sniženo OR contains: degradiran"
+        },
+        {
+          "type": "not_contains",
+          "value": "high certainty",
+          "description": "not_contains: high certainty"
+        },
+        {
+          "type": "not_contains",
+          "value": "visoka sigurnost",
+          "description": "not_contains: visoka sigurnost"
+        }
+      ]
+    },
+    {
+      "id": "case_3",
+      "input": {
+        "text": "GRADE procjena za 3 ishoda:\n(1) mortalitet: 2 RCT, I²=8%, low RoB, CI=0.55–0.89\n(2) ICU LOS: 1 RCT, I²=N/A, high RoB\n(3) adverse events: samo case reports\nPrezentiraj kao GRADE sažetnu tablicu."
+      },
+      "assertions": [
+        {
+          "type": "regex_match",
+          "value": "(?i)(mortalitet|mortality)",
+          "description": "contains: mortalitet OR contains: mortality"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(ICU|LOS)",
+          "description": "contains: ICU OR contains: LOS"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(adverse|nuspojave)",
+          "description": "contains: adverse OR contains: nuspojave"
+        },
+        {
+          "type": "regex_match",
+          "value": "tablica|table|GRADE table|sažetna",
+          "description": "regex_match: tablica|table|GRADE table|sažetna"
+        },
+        {
+          "type": "regex_match",
+          "value": "⊕⊕⊕⊕|⊕⊕⊕○|⊕⊕○○|⊕○○○",
+          "description": "GRADE simboli"
+        },
+        {
+          "type": "not_contains",
+          "value": "svi ishodi imaju jednaku razinu",
+          "description": "3 ishoda moraju imati različite razine"
+        }
+      ]
+    }
+  ]
+}

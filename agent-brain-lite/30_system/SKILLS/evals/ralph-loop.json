@@ -1,0 +1,24 @@
+{
+  "skill_id": "ralph-loop",
+  "version": "1.0",
+  "cases": [
+    {
+      "id": "case_ralph_on_tdd",
+      "input": {
+        "text": "Ralph ON: implementiraj prvi PRD task s TDD i ažuriraj progress.txt."
+      },
+      "assertions": [
+        {
+          "type": "regex_match",
+          "value": "(?i)(TDD|test|progress\\.txt|passes)",
+          "description": "TDD and progress logging"
+        },
+        {
+          "type": "not_contains",
+          "value": "scholarly-progress",
+          "description": "not scholarly loop artifact"
+        }
+      ]
+    }
+  ]
+}

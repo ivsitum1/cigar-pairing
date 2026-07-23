@@ -1,0 +1,3 @@
+{
+  "case_vertical_slice": "Razlomak PRD-a na issue-e po vertical slice principu (tracer bullet):\n1. Slice A: end-to-end upload → parse → CSV download (minimal path).\n2. Slice B: error handling + logging.\nAFK izvršavanje uz HITL checkpoint nakon svakog slicea prije sljedećeg."
+}
