@@ -1,15 +1,138 @@
 {
   "brand": "Alec Bradley",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-23",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "https://alecbradley.com/",
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w1_slice3 deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.1"
   ],
   "lines": {
-    "Texas Lancero": {
-      "line": "Texas",
-      "vitola": "Lancero"
+    "American Classic": {
+      "line": "American Classic"
+    },
+    "American Sun Grown": {
+      "line": "American Sun Grown"
+    },
+    "Black Market": {
+      "line": "Black Market"
+    },
+    "Blind Faith": {
+      "line": "Blind Faith"
+    },
+    "Connecticut": {
+      "line": "Connecticut"
+    },
+    "Coyol": {
+      "line": "Coyol"
+    },
+    "Dissident Bloc": {
+      "line": "Dissident",
+      "vitola": "Bloc"
+    },
+    "Double Broadleaf": {
+      "line": "Double Broadleaf"
+    },
+    "Family Blend T11": {
+      "line": "Family Blend",
+      "vitola": "T11"
+    },
+    "Filthy Hooligan": {
+      "line": "Filthy Hooligan"
+    },
+    "Gatekeeper": {
+      "line": "Gatekeeper"
+    },
+    "Kintsugi": {
+      "line": "Kintsugi"
+    },
+    "Lineage": {
+      "line": "Lineage"
+    },
+    "Magic Toast": {
+      "line": "Magic Toast"
+    },
+    "MAXX CURVE": {
+      "line": "MAXX",
+      "vitola": "Curve"
+    },
+    "MAXX FIXX": {
+      "line": "MAXX",
+      "vitola": "Fixx"
+    },
+    "MAXX NANO": {
+      "line": "MAXX",
+      "vitola": "Nano"
+    },
+    "Medalist": {
+      "line": "Medalist"
+    },
+    "Mundial PL4": {
+      "line": "Mundial",
+      "vitola": "PL4",
+      "shape": "Perfecto"
+    },
+    "Mundial PL5": {
+      "line": "Mundial",
+      "vitola": "PL5",
+      "shape": "Perfecto"
+    },
+    "Nica Puro": {
+      "line": "Nica Puro"
+    },
+    "Nica Puro Rosado": {
+      "line": "Nica Puro Rosado"
+    },
+    "Post Embargo": {
+      "line": "Post Embargo"
+    },
+    "Prensado": {
+      "line": "Prensado"
+    },
+    "Project 40 05.50": {
+      "line": "Project 40",
+      "vitola": "Robusto",
+      "shape": "Robusto"
+    },
+    "Project 40 06.52": {
+      "line": "Project 40",
+      "vitola": "Toro",
+      "shape": "Toro"
+    },
+    "Project 40 Maduro 05.50": {
+      "line": "Project 40 Maduro",
+      "vitola": "Robusto",
+      "shape": "Robusto"
+    },
+    "Project 40 Maduro 06.52": {
+      "line": "Project 40 Maduro",
+      "vitola": "Toro",
+      "shape": "Toro"
+    },
+    "Project 40 Maduro 06.60": {
+      "line": "Project 40 Maduro",
+      "vitola": "Gordo",
+      "shape": "Gordo"
+    },
+    "Raices Cubanas": {
+      "line": "Raices Cubanas"
+    },
+    "Safe Keepings": {
+      "line": "Safe Keepings"
+    },
+    "Sanctum": {
+      "line": "Sanctum"
+    },
+    "Tempus": {
+      "line": "Tempus"
+    },
+    "Texas": {
+      "line": "Texas"
+    },
+    "White Gold": {
+      "line": "White Gold"
     }
   },
   "vitolaRenames": {},
@@ -21,5 +144,7 @@
     ]
   ],
   "lineNotes": {},
-  "unresolved": []
+  "unresolved": [
+    "Alec Bradley: Gatekeeper/Magic Toast vitola names still embed line tokens"
+  ]
 }

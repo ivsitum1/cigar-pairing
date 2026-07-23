@@ -1,12 +1,114 @@
 {
   "brand": "My Father",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-23",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "https://myfathercigars.com/",
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w1_slice3 deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.1"
   ],
-  "lines": {},
+  "lines": {
+    "#2": {
+      "line": "My Father Original",
+      "vitola": "No. 2",
+      "shape": "Belicoso"
+    },
+    "#4": {
+      "line": "My Father Original",
+      "vitola": "No. 4",
+      "shape": "Lancero"
+    },
+    "& Tatuaje 'La Union' Red Especial": {
+      "line": "La Union Red Especial"
+    },
+    "Blue": {
+      "line": "Blue"
+    },
+    "Cedros Deluxe": {
+      "line": "Cedros Deluxe"
+    },
+    "Classic No. 1": {
+      "line": "Classic",
+      "vitola": "No. 1"
+    },
+    "Classic No. 5": {
+      "line": "Classic",
+      "vitola": "No. 5"
+    },
+    "Connecticut": {
+      "line": "Connecticut"
+    },
+    "Don Pepin Garcia 70th Birthday Humidor Deluxe": {
+      "line": "Don Pepin Garcia 70th Birthday Humidor Deluxe"
+    },
+    "Don Pepin Garcia Blue": {
+      "line": "Don Pepin Garcia Blue"
+    },
+    "El Centurion": {
+      "line": "El Centurion"
+    },
+    "Flor de las Antillas": {
+      "line": "Flor de las Antillas"
+    },
+    "Fonseca": {
+      "line": "Fonseca"
+    },
+    "Garcia & Garcia": {
+      "line": "Garcia & Garcia"
+    },
+    "Jaime Garcia Reserva Especial": {
+      "line": "Jaime Garcia Reserva Especial"
+    },
+    "La Antiguedad": {
+      "line": "La Antiguedad"
+    },
+    "La Duena Petit No. 11": {
+      "line": "La Duena",
+      "vitola": "Petit No. 11"
+    },
+    "La Gran Oferta": {
+      "line": "La Gran Oferta"
+    },
+    "La Lealtad": {
+      "line": "La Lealtad"
+    },
+    "La Opulencia": {
+      "line": "La Opulencia"
+    },
+    "La Promesa": {
+      "line": "La Promesa"
+    },
+    "La Reloba": {
+      "line": "La Reloba"
+    },
+    "Le Bijou 1922": {
+      "line": "Le Bijou 1922"
+    },
+    "Le Bijou Limited Edition 2016": {
+      "line": "Le Bijou 1922",
+      "vitola": "Limited Edition 2016"
+    },
+    "Limited Edition 10th Anniversary 2018": {
+      "line": "Limited Edition 10th Anniversary 2018"
+    },
+    "Limited Edition Pepin Mania": {
+      "line": "Limited Edition Pepin Mania"
+    },
+    "Limited Edition Pepin Mania 10th Anniversary": {
+      "line": "Limited Edition Pepin Mania 10th Anniversary"
+    },
+    "My Father Original": {
+      "line": "My Father Original"
+    },
+    "Tabacos Beaz": {
+      "line": "Tabacos Beaz"
+    },
+    "The Judge": {
+      "line": "The Judge"
+    }
+  },
   "vitolaRenames": {},
   "shapes": {},
   "keepSeparate": [
@@ -16,5 +118,7 @@
     ]
   ],
   "lineNotes": {},
-  "unresolved": []
+  "unresolved": [
+    "My Father: collab line \"& Tatuaje 'La Union' Red Especial\" → La Union Red Especial (verify)"
+  ]
 }

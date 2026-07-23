@@ -1,12 +1,111 @@
 {
   "brand": "Kristoff",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-23",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "https://kristoffcigars.com/",
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w1_slice3 deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.1"
   ],
-  "lines": {},
+  "lines": {
+    "Cameroon": {
+      "line": "Cameroon"
+    },
+    "Classic Blend": {
+      "line": "Classic Blend"
+    },
+    "Connecticut": {
+      "line": "Connecticut"
+    },
+    "Corojo Limitada": {
+      "line": "Corojo Limitada"
+    },
+    "Criollo": {
+      "line": "Criollo"
+    },
+    "Edicion Limitada 685 Woodlawn": {
+      "line": "685 Woodlawn"
+    },
+    "GC Signature Series": {
+      "line": "GC Signature Series"
+    },
+    "GC Signature Series Intertabac 2023": {
+      "line": "GC Signature Series Intertabac 2023"
+    },
+    "GC Signature Series JT": {
+      "line": "GC Signature Series JT"
+    },
+    "GC Signature Series PCA 2022": {
+      "line": "GC Signature Series PCA 2022"
+    },
+    "GC Signature Series PCA 2026": {
+      "line": "GC Signature Series PCA 2026"
+    },
+    "Guardrail": {
+      "line": "Guardrail"
+    },
+    "Habano": {
+      "line": "Habano"
+    },
+    "It's a Girl / It's a Boy Boy": {
+      "line": "It's a Girl",
+      "sampler": true
+    },
+    "It's a Girl / It's a Boy GIRL": {
+      "line": "It's a Girl",
+      "sampler": true
+    },
+    "Kristania": {
+      "line": "Kristania"
+    },
+    "Kristania Maduro": {
+      "line": "Kristania Maduro"
+    },
+    "Ligero Criollo": {
+      "line": "Ligero Criollo"
+    },
+    "Ligero Maduro": {
+      "line": "Ligero Maduro"
+    },
+    "Maduro": {
+      "line": "Maduro"
+    },
+    "Nicaragua": {
+      "line": "Nicaragua"
+    },
+    "Original Criollo": {
+      "line": "Original Criollo"
+    },
+    "Original Maduro": {
+      "line": "Original Maduro"
+    },
+    "Pistoff": {
+      "line": "Pistoff"
+    },
+    "Premium Selection Maduro": {
+      "line": "Premium Selection Maduro"
+    },
+    "San Andres": {
+      "line": "San Andres"
+    },
+    "Shade Grown": {
+      "line": "Shade Grown"
+    },
+    "Sumatra": {
+      "line": "Sumatra"
+    },
+    "Tres Compadres": {
+      "line": "Tres Compadres"
+    },
+    "Twentieth Anniversary Veinte": {
+      "line": "Veinte"
+    },
+    "Vengeance": {
+      "line": "Vengeance"
+    }
+  },
   "vitolaRenames": {},
   "shapes": {},
   "keepSeparate": [

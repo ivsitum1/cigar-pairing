@@ -1,12 +1,107 @@
 {
   "brand": "Tatuaje",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-23",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "https://tatuajecigars.com/",
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w1_slice3 deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.1"
   ],
-  "lines": {},
+  "lines": {
+    "10th Anniversary Belle Encre": {
+      "line": "10th Anniversary",
+      "vitola": "Belle Encre"
+    },
+    "10th Anniversary Capa Especial Belle Encre": {
+      "line": "10th Anniversary Capa Especial",
+      "vitola": "Belle Encre"
+    },
+    "15th Anniversary Oscuro": {
+      "line": "15th Anniversary Oscuro"
+    },
+    "15th Anniversary Rosado": {
+      "line": "15th Anniversary Rosado"
+    },
+    "7th Corojo": {
+      "line": "7th Corojo"
+    },
+    "7th San Andre Tuxtla": {
+      "line": "7th San Andre Tuxtla"
+    },
+    "Black": {
+      "line": "Black"
+    },
+    "Black Label": {
+      "line": "Black Label"
+    },
+    "Boris Karloff": {
+      "line": "Boris Karloff"
+    },
+    "Cabaiguan": {
+      "line": "Cabaiguan"
+    },
+    "El Triunfador Original": {
+      "line": "El Triunfador"
+    },
+    "Fausto": {
+      "line": "Fausto"
+    },
+    "Havana VI / Miami": {
+      "line": "Havana VI / Miami"
+    },
+    "HCS #1 Larga": {
+      "line": "HCS",
+      "vitola": "#1 Larga"
+    },
+    "HCS #2 Grande": {
+      "line": "HCS",
+      "vitola": "#2 Grande"
+    },
+    "HCS #3 Cubano": {
+      "line": "HCS",
+      "vitola": "#3 Cubano"
+    },
+    "HCS Maduro #1 Larga": {
+      "line": "HCS Maduro",
+      "vitola": "#1 Larga"
+    },
+    "La Seleccion de Cazador 20th Anniversary Grand Chasseur": {
+      "line": "La Seleccion de Cazador 20th Anniversary",
+      "vitola": "Grand Chasseur"
+    },
+    "La Seleccion de Cazador 20th Anniversary Grande Merveille": {
+      "line": "La Seleccion de Cazador 20th Anniversary",
+      "vitola": "Grande Merveille"
+    },
+    "La Seleccion de Cazador PCA 2023 Limited Edition": {
+      "line": "La Seleccion de Cazador",
+      "vitola": "PCA 2023 Limited Edition"
+    },
+    "Mexican Experiment ME II": {
+      "line": "Mexican Experiment II"
+    },
+    "Nuevitas": {
+      "line": "Nuevitas"
+    },
+    "Reserva Broadleaf": {
+      "line": "Reserva Broadleaf"
+    },
+    "Tattoo": {
+      "line": "Tattoo"
+    },
+    "Tuxtla Belle Encre": {
+      "line": "Tuxtla",
+      "vitola": "Belle Encre"
+    },
+    "Unicos": {
+      "line": "Unicos"
+    },
+    "Unicos & Special": {
+      "line": "Unicos & Special"
+    }
+  },
   "vitolaRenames": {},
   "shapes": {},
   "keepSeparate": [

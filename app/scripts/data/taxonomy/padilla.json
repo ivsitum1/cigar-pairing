@@ -1,15 +1,99 @@
 {
   "brand": "Padilla",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-23",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "https://padillacigars.com/",
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w1_slice3 deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.1"
   ],
   "lines": {
-    "Barcelona XL": {
-      "line": "Barcelona",
-      "vitola": "XL"
+    "1932": {
+      "line": "1932"
+    },
+    "1932 Black": {
+      "line": "1932 Black"
+    },
+    "1948": {
+      "line": "1948"
+    },
+    "88th Aniversario": {
+      "line": "88th Aniversario"
+    },
+    "88th Anniversario": {
+      "line": "88th Aniversario"
+    },
+    "Artemis": {
+      "line": "Artemis"
+    },
+    "Barcelona": {
+      "line": "Barcelona"
+    },
+    "Batch Barrel Proof": {
+      "line": "Batch Barrel Proof"
+    },
+    "Cazadores": {
+      "line": "Cazadores"
+    },
+    "Dominus": {
+      "line": "Dominus"
+    },
+    "Finest Hour Connecticut": {
+      "line": "Finest Hour Connecticut"
+    },
+    "Finest Hour Oscuro OSCURO": {
+      "line": "Finest Hour Oscuro"
+    },
+    "Finest Hour Sun Grown": {
+      "line": "Finest Hour Sun Grown"
+    },
+    "Fumas Connecticut": {
+      "line": "Fumas Connecticut"
+    },
+    "Fumas Habano": {
+      "line": "Fumas Habano"
+    },
+    "Fumas Maduro": {
+      "line": "Fumas Maduro"
+    },
+    "Habano": {
+      "line": "Habano"
+    },
+    "Hybrid": {
+      "line": "Hybrid"
+    },
+    "La Terraza Connecticut": {
+      "line": "La Terraza Connecticut"
+    },
+    "La Terraza Maduro": {
+      "line": "La Terraza Maduro"
+    },
+    "Picadores": {
+      "line": "Picadores"
+    },
+    "Reserva": {
+      "line": "Reserva"
+    },
+    "Reserva Maduro": {
+      "line": "Reserva Maduro"
+    },
+    "Serie 1968": {
+      "line": "Serie 1968"
+    },
+    "Serie 1968 Black Bear": {
+      "line": "Serie 1968 Black Bear"
+    },
+    "Serie 1968 Golden Bear": {
+      "line": "Serie 1968 Golden Bear"
+    },
+    "Signature 1932": {
+      "line": "1932",
+      "vitola": "Signature"
+    },
+    "Vintage Reserve": {
+      "line": "Vintage Reserve"
     }
   },
   "vitolaRenames": {},

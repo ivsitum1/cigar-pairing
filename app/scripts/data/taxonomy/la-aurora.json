@@ -1,19 +1,125 @@
 {
   "brand": "La Aurora",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-23",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "https://www.laaurora.com.do/",
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w1_slice3 deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.1"
   ],
   "lines": {
-    "107 Ecuador Sumo": {
-      "line": "107 Ecuador",
-      "vitola": "Sumo"
+    "107": {
+      "line": "107"
     },
-    "1495 Series Sumo": {
-      "line": "1495 Series",
-      "vitola": "Sumo"
+    "107 / 107 Nicaragua": {
+      "line": "107 Nicaragua"
+    },
+    "107 Belicoso": {
+      "line": "107",
+      "vitola": "Belicoso",
+      "shape": "Belicoso"
+    },
+    "107 Ecuador": {
+      "line": "107 Ecuador"
+    },
+    "107 Ecuador Maduro USA": {
+      "line": "107 Ecuador Maduro USA"
+    },
+    "107 Nicaragua": {
+      "line": "107 Nicaragua"
+    },
+    "107 Nicaragua Zepelin": {
+      "line": "107 Nicaragua",
+      "vitola": "Zeppelin"
+    },
+    "107 Zeppelin": {
+      "line": "107 Nicaragua",
+      "vitola": "Zeppelin"
+    },
+    "115 Aniversario Gordo": {
+      "line": "115 Anniversary",
+      "vitola": "Gordo",
+      "shape": "Gordo"
+    },
+    "115 Anniversary": {
+      "line": "115 Anniversary"
+    },
+    "120 Anniversary": {
+      "line": "120 Anniversary"
+    },
+    "1495 Series": {
+      "line": "1495 Series"
+    },
+    "1903 Edition": {
+      "line": "1903 Edition"
+    },
+    "ADN": {
+      "line": "ADN"
+    },
+    "Barrel Aged": {
+      "line": "Barrel Aged"
+    },
+    "Black Lion Connecticut": {
+      "line": "Black Lion Connecticut"
+    },
+    "Black Lion Corojo": {
+      "line": "Black Lion Corojo"
+    },
+    "Cameroon 1903": {
+      "line": "Cameroon 1903"
+    },
+    "Cameroon 1903 Deluxe": {
+      "line": "Cameroon 1903 Deluxe"
+    },
+    "Connecticut 1987": {
+      "line": "Connecticut 1987"
+    },
+    "Corojo 1962": {
+      "line": "Corojo 1962"
+    },
+    "Dominicana": {
+      "line": "Dominicana"
+    },
+    "Escogidos": {
+      "line": "Escogidos"
+    },
+    "Family Creed Fuerte Sol": {
+      "line": "Family Creed Fuerte Sol"
+    },
+    "Family Reserve": {
+      "line": "Family Reserve"
+    },
+    "Imperiales Classico": {
+      "line": "Imperiales Classico"
+    },
+    "Imperiales Maduro": {
+      "line": "Imperiales Maduro"
+    },
+    "Limited Editions 100 Anos Tribute": {
+      "line": "Limited Editions 100 Anos Tribute"
+    },
+    "Limited Editions 120 Anniversary": {
+      "line": "Limited Editions 120 Anniversary"
+    },
+    "Limited Editions Hors d'Age 2020": {
+      "line": "Limited Editions Hors d'Age 2020"
+    },
+    "Maduro 1985": {
+      "line": "Maduro 1985"
+    },
+    "Preferidos": {
+      "line": "Preferidos"
+    },
+    "Principes Claro": {
+      "line": "Principes Claro"
+    },
+    "Principes MADURO": {
+      "line": "Principes Maduro"
+    },
+    "Principes Nicaragua": {
+      "line": "Principes Nicaragua"
     }
   },
   "vitolaRenames": {},
@@ -29,5 +135,7 @@
     ]
   ],
   "lineNotes": {},
-  "unresolved": []
+  "unresolved": [
+    "La Aurora: Preferidos / ADN vitola names still embed line tokens"
+  ]
 }
