@@ -9,6 +9,39 @@ describe("integritet podataka", () => {
     expect(new Set(ids).size).toBe(ids.length);
   });
 
+  // regresijski čuvar protiv locale-blizanaca (isti proizvod iz /en/ i /hr/)
+  const productKey = (url: string | null | undefined): string | null => {
+    if (!url) return null;
+    let u = url.split("?")[0].split("#")[0];
+    u = u.replace(
+      /(humidor\.hr|havana-cigar-shop\.com)\/(?:hr|en)\/proizvod\//,
+      "$1/proizvod/",
+    );
+    u = u.replace(/\/+$/, "");
+    return u.includes("/proizvod/") ? u : null;
+  };
+
+  it("nijedna cigara nema dvije vitole s istim proizvodom (locale-blizanci)", () => {
+    for (const c of CIGARS) {
+      const seen = new Set<string>();
+      for (const v of c.vitolas ?? []) {
+        const pk = productKey(v.url) ?? productKey(v.regionLinks?.HR?.url);
+        if (!pk) continue;
+        expect(seen.has(pk), `${c.id} :: ${v.name} (${pk})`).toBe(false);
+        seen.add(pk);
+      }
+    }
+  });
+
+  it("sampler/gift linija ima točno jednu vitolu", () => {
+    for (const c of CIGARS) {
+      const hay = `${c.line} ${c.vitola}`.toLowerCase();
+      if (/\b(sampler|gift)\b/.test(hay)) {
+        expect((c.vitolas ?? []).length, `${c.id}`).toBeLessThanOrEqual(1);
+      }
+    }
+  });
+
   it("svi ID-jevi pica su jedinstveni (rum+whisky+brandy+gin+kava)", () => {
     const ids = ALL_DRINKS.map((d) => d.id);
     const dupes = ids.filter((id, i) => ids.indexOf(id) !== i);

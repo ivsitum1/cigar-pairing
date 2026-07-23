@@ -526,6 +526,13 @@ def build():
     stats["new_brands_added"] = added_brands
 
     write_json(HOLD, {"stats": stats, "hold": hold})
+
+    # Stream A: collapse locale-twin (/en/ vs /hr/) i sampler self-vitole nad
+    # cijelim cigars.json — deterministički i idempotentno (vidi
+    # docs/superpowers/plans/2026-07-23-vitola-dedup.md).
+    import subprocess, sys
+    subprocess.run([sys.executable, str(Path(__file__).with_name("normalize-vitolas.py"))], check=True)
+
     print(json.dumps(stats, ensure_ascii=False, indent=2))
     print(f"total cigars now: {len(merged)} (base {len(base)} + new {len(new_entries)}) | brands +{added_brands}")
 
