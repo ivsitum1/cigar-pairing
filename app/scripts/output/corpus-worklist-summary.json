@@ -1,0 +1,441 @@
+{
+  "corpus": {
+    "cigars": 3104,
+    "vitolas": 5581
+  },
+  "done_residuals": {
+    "locale_twins": 0,
+    "sampler_multi": 0,
+    "semantic_groups": 2
+  },
+  "stream_C": {
+    "count": 48,
+    "shapes": {
+      "dim-conflict-same-name": 35,
+      "prefix-pair": 13
+    },
+    "by_range": {
+      "A-F": 19,
+      "G-M": 13,
+      "N-Z": 16
+    },
+    "by_brand_top": [
+      [
+        "Aganorsa Leaf",
+        8
+      ],
+      [
+        "La Aurora",
+        4
+      ],
+      [
+        "Quorum",
+        4
+      ],
+      [
+        "Davidoff",
+        3
+      ],
+      [
+        "Holt's",
+        3
+      ],
+      [
+        "Factory Overrun",
+        2
+      ],
+      [
+        "Perdomo",
+        2
+      ],
+      [
+        "Rocky Patel",
+        2
+      ],
+      [
+        "Romeo y Julieta",
+        2
+      ],
+      [
+        "VegaFina",
+        2
+      ],
+      [
+        "A. Flores",
+        1
+      ],
+      [
+        "CLE",
+        1
+      ],
+      [
+        "Don Diego",
+        1
+      ],
+      [
+        "Don Julio",
+        1
+      ],
+      [
+        "Don Pépin García",
+        1
+      ],
+      [
+        "Flor de las Antillas",
+        1
+      ],
+      [
+        "Henry Clay",
+        1
+      ],
+      [
+        "Hiram",
+        1
+      ],
+      [
+        "Kristoff",
+        1
+      ],
+      [
+        "La Flor Dominicana",
+        1
+      ],
+      [
+        "La Galera",
+        1
+      ],
+      [
+        "My Father",
+        1
+      ],
+      [
+        "Paradiso",
+        1
+      ],
+      [
+        "Saga",
+        1
+      ],
+      [
+        "Vallejuelo",
+        1
+      ],
+      [
+        "Vegas",
+        1
+      ]
+    ]
+  },
+  "stream_D": {
+    "dash_vitolas": 279,
+    "cigars": 207,
+    "with_url": 268,
+    "by_range": {
+      "A-F": 136,
+      "G-M": 45,
+      "N-Z": 98
+    },
+    "by_brand_top": [
+      [
+        "Davidoff",
+        40
+      ],
+      [
+        "Arturo Fuente",
+        24
+      ],
+      [
+        "Plasencia",
+        22
+      ],
+      [
+        "Montecristo",
+        17
+      ],
+      [
+        "Oscar Valladares",
+        16
+      ],
+      [
+        "Cohiba",
+        15
+      ],
+      [
+        "Joya de Nicaragua",
+        14
+      ],
+      [
+        "Romeo y Julieta",
+        13
+      ],
+      [
+        "Partagás",
+        12
+      ],
+      [
+        "Flor de Selva",
+        11
+      ],
+      [
+        "E.P. Carrillo",
+        10
+      ],
+      [
+        "Casa 1910",
+        8
+      ],
+      [
+        "Hoyo de Monterrey",
+        8
+      ],
+      [
+        "Cusano",
+        7
+      ],
+      [
+        "Oliva",
+        7
+      ],
+      [
+        "Trinidad",
+        7
+      ],
+      [
+        "Camacho",
+        5
+      ],
+      [
+        "Cumpay",
+        5
+      ],
+      [
+        "La Galera",
+        5
+      ],
+      [
+        "Nub",
+        5
+      ],
+      [
+        "AJ Fernandez",
+        4
+      ],
+      [
+        "Villa Zamorano",
+        4
+      ],
+      [
+        "Cuaba",
+        3
+      ],
+      [
+        "Zino",
+        3
+      ],
+      [
+        "Eiroa",
+        2
+      ],
+      [
+        "Punch",
+        2
+      ],
+      [
+        "Quintero",
+        2
+      ],
+      [
+        "Ramón Allones",
+        2
+      ],
+      [
+        "Bolívar",
+        1
+      ],
+      [
+        "Fonseca",
+        1
+      ]
+    ]
+  },
+  "stream_H": {
+    "count": 0,
+    "by_host": []
+  },
+  "stream_I": {
+    "serie_mismatch_priceUrl": 0,
+    "url_less_vitolas": 4932,
+    "all_url_less_cigars": 2673
+  },
+  "stream_J": {
+    "count": 614,
+    "by_range": {
+      "other": 8,
+      "A-F": 266,
+      "G-M": 162,
+      "N-Z": 178
+    },
+    "by_brand_top": [
+      [
+        "Perdomo",
+        29
+      ],
+      [
+        "Gurkha",
+        14
+      ],
+      [
+        "Marca",
+        14
+      ],
+      [
+        "Vegas",
+        13
+      ],
+      [
+        "Cavalier",
+        12
+      ],
+      [
+        "Casdagli",
+        11
+      ],
+      [
+        "Drew Estate",
+        11
+      ],
+      [
+        "Villiger",
+        11
+      ],
+      [
+        "Black Label",
+        10
+      ],
+      [
+        "Toraño",
+        10
+      ],
+      [
+        "Bossner",
+        9
+      ],
+      [
+        "Dos Santos",
+        9
+      ],
+      [
+        "E.P. Carrillo",
+        9
+      ],
+      [
+        "Eiroa",
+        9
+      ],
+      [
+        "La Aroma de Cuba",
+        9
+      ],
+      [
+        "Padilla",
+        9
+      ],
+      [
+        "PDR",
+        9
+      ],
+      [
+        "Tabacalera",
+        9
+      ],
+      [
+        "1502",
+        8
+      ],
+      [
+        "Alec Bradley",
+        8
+      ],
+      [
+        "Alfambra",
+        8
+      ],
+      [
+        "Ashton",
+        8
+      ],
+      [
+        "Gh",
+        8
+      ],
+      [
+        "Man O. War",
+        8
+      ],
+      [
+        "Rocky Patel",
+        8
+      ],
+      [
+        "Black Works",
+        7
+      ],
+      [
+        "Leon",
+        7
+      ],
+      [
+        "Matilde",
+        7
+      ],
+      [
+        "VegaFina",
+        7
+      ],
+      [
+        "Aganorsa Leaf",
+        6
+      ],
+      [
+        "Casa",
+        6
+      ],
+      [
+        "CLE",
+        6
+      ],
+      [
+        "Crowned Heads",
+        6
+      ],
+      [
+        "Dalay",
+        6
+      ],
+      [
+        "Ibis",
+        6
+      ],
+      [
+        "Joya de Nicaragua",
+        6
+      ],
+      [
+        "Manuel",
+        6
+      ],
+      [
+        "My Father",
+        6
+      ],
+      [
+        "Padrón",
+        6
+      ],
+      [
+        "Xhaxhi",
+        6
+      ]
+    ]
+  }
+}

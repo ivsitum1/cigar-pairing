@@ -11,7 +11,8 @@
       "2026-07-23 Round3 J A–F: size-stuck-in-line-title merges verified via cigarworld.de product pages / halfwheel Coyol+Lineage specs.",
       "Deferred: cig-alec-bradley-texas vs texas-lancero — both are the same 7x70 Texas Lancero SKU (CW product vs Holts listing) but need line-rename + vitola collapse, not a plain size absorb.",
       "2026-07-23 Round3 J full: auto MERGE only when child has exactly 1 vitola and suffix is pure size/dims; wrapper/sampler/known-series → KEEP; remainder → _deferred for human pass.",
-      "2026-07-23 deferred pass: resolved 147/147 (+80 absorb, +64 keep); 0 remain."
+      "2026-07-23 deferred pass: resolved 147/147 (+80 absorb, +64 keep); 0 remain.",
+      "2026-07-23 residual-J reapply: pending 84 + prefix leftovers + La Galera 85th absorb; deferred cleared."
     ]
   },
   "cig-oliva-monticello": {
@@ -115,22 +116,26 @@
   "cig-alec-bradley-lineage": {
     "absorb": [
       "cig-alec-bradley-lineage-552",
-      "cig-alec-bradley-lineage-double-665"
+      "cig-alec-bradley-lineage-double-665",
+      "cig-alec-bradley-lineage-gigante-770"
     ],
     "rename_absorbed_vitolas": {
       "Robusto": "Robusto 552",
-      "Toro": "Double Toro 665"
+      "Toro": "Double Toro 665",
+      "Churchill": "Gigante 770"
     },
-    "reason": "Lineage sizes include Robusto 552 and Double Toro 665 (halfwheel Lineage launch; cigarworld product pages). Not separate lines."
+    "reason": "Lineage sizes include Robusto 552 and Double Toro 665 (halfwheel Lineage launch; cigarworld product pages). Not separate lines. | Size/named vitola suffix \"Gigante 770\" of Lineage."
   },
   "cig-alfambra-boutique-g": {
     "absorb": [
-      "cig-alfambra-boutique-g-toro"
+      "cig-alfambra-boutique-g-toro",
+      "cig-alfambra-boutique-g-magnificos"
     ],
     "rename_absorbed_vitolas": {
-      "Petit Corona": "Petit Toro"
+      "Petit Corona": "Petit Toro",
+      "Toro": "Magnificos"
     },
-    "reason": "Boutique G Toro is the Petit Toro size of Boutique G (cigarworld alfambra-boutique-g-petit-toro), not a separate line."
+    "reason": "Boutique G Toro is the Petit Toro size of Boutique G (cigarworld alfambra-boutique-g-petit-toro), not a separate line. | Size/named vitola suffix \"Magnificos\" of Boutique G."
   },
   "cig-1502-black-gold": {
     "absorb": [
@@ -220,14 +225,18 @@
     "absorb": [
       "cig-alfambra-seleccion-gordo",
       "cig-alfambra-seleccion-toro",
-      "cig-alfambra-seleccion-wide"
+      "cig-alfambra-seleccion-wide",
+      "cig-alfambra-seleccion-52",
+      "cig-alfambra-seleccion-56",
+      "cig-alfambra-seleccion-60"
     ],
     "rename_absorbed_vitolas": {
       "Toro": "Wide Toro",
       "Robusto": "Gordo",
-      "Gordo": "Toro"
+      "Gordo": "Toro",
+      "Petit Corona": "Petit Corona 60"
     },
-    "reason": "Size suffix \"Gordo\" of Seleccion; not a separate commercial line."
+    "reason": "Size suffix \"Gordo\" of Seleccion; not a separate commercial line. | Numeric size code \"52\" of Seleccion. | Numeric size code \"56\" of Seleccion. | Numeric size code \"60\" of Seleccion."
   },
   "cig-alonso-menendez": {
     "absorb": [
@@ -417,12 +426,16 @@
   "cig-bossner-classic": {
     "absorb": [
       "cig-bossner-classic-long-001",
-      "cig-bossner-classic-long-002"
+      "cig-bossner-classic-long-002",
+      "cig-bossner-classic-001",
+      "cig-bossner-classic-002",
+      "cig-bossner-classic-003",
+      "cig-bossner-classic-004"
     ],
     "rename_absorbed_vitolas": {
       "Panetela": "Long Panetela"
     },
-    "reason": "Size suffix \"Long 001\" of Classic; not a separate commercial line."
+    "reason": "Size suffix \"Long 001\" of Classic; not a separate commercial line. | Numeric size code \"001\" of Classic. | Numeric size code \"002\" of Classic. | Numeric size code \"003\" of Classic. | Numeric size code \"004\" of Classic."
   },
   "cig-brick-house-classic": {
     "absorb": [
@@ -444,12 +457,15 @@
   },
   "cig-brun-del-re-1787-rain-forest": {
     "absorb": [
-      "cig-brun-del-re-1787-rain-forest-immenso"
+      "cig-brun-del-re-1787-rain-forest-immenso",
+      "cig-brun-del-re-1787-rain-forest-lanza",
+      "cig-brun-del-re-1787-rain-forest-long"
     ],
     "rename_absorbed_vitolas": {
-      "Robusto": "Immenso Robusto"
+      "Robusto": "Long Robusto",
+      "Lancero": "Lanza Lancero"
     },
-    "reason": "Size suffix \"Immenso\" of del Ré 1787 Rain Forest; not a separate commercial line."
+    "reason": "Size suffix \"Immenso\" of del Ré 1787 Rain Forest; not a separate commercial line. | Size/named vitola suffix \"Lanza\" of del Ré 1787 Rain Forest. | Size/named vitola suffix \"Long\" of del Ré 1787 Rain Forest."
   },
   "cig-camacho-ecuador": {
     "absorb": [
@@ -888,12 +904,14 @@
   },
   "cig-eiroa-cbt-maduro-2": {
     "absorb": [
-      "cig-eiroa-cbt-maduro-gordo"
+      "cig-eiroa-cbt-maduro-gordo",
+      "cig-eiroa-cbt-maduro-presando"
     ],
     "rename_absorbed_vitolas": {
-      "Toro": "Gordo"
+      "Toro": "Gordo",
+      "Corona": "Prensado Corona"
     },
-    "reason": "Size suffix \"Gordo\" of CBT Maduro; not a separate commercial line."
+    "reason": "Size suffix \"Gordo\" of CBT Maduro; not a separate commercial line. | Size/named vitola suffix \"Presando\" of CBT Maduro."
   },
   "cig-eiroa-classic-2": {
     "absorb": [
@@ -993,21 +1011,25 @@
   },
   "cig-flores-y-rodriguez-10th-anniversary": {
     "absorb": [
-      "cig-flores-y-rodriguez-10th-anniversary-wide"
+      "cig-flores-y-rodriguez-10th-anniversary-wide",
+      "cig-flores-y-rodriguez-10th-anniversary-millefleurs"
     ],
     "rename_absorbed_vitolas": {
-      "Churchill": "Wide Churchill"
+      "Churchill": "Wide Churchill",
+      "Corona": "Millefleurs"
     },
-    "reason": "Size suffix \"Wide\" of y Rodriguez 10th Anniversary; not a separate commercial line."
+    "reason": "Size suffix \"Wide\" of y Rodriguez 10th Anniversary; not a separate commercial line. | Size/named vitola suffix \"Millefleurs\" of y Rodriguez 10th Anniversary."
   },
   "cig-flores-y-rodriguez-18th-anniversary": {
     "absorb": [
-      "cig-flores-y-rodriguez-18th-anniversary-wide"
+      "cig-flores-y-rodriguez-18th-anniversary-wide",
+      "cig-flores-y-rodriguez-18th-anniversary-millefleurs"
     ],
     "rename_absorbed_vitolas": {
-      "Churchill": "Wide Churchill"
+      "Churchill": "Wide Churchill",
+      "Corona": "Millefleurs"
     },
-    "reason": "Size suffix \"Wide\" of y Rodriguez 18th Anniversary; not a separate commercial line."
+    "reason": "Size suffix \"Wide\" of y Rodriguez 18th Anniversary; not a separate commercial line. | Size/named vitola suffix \"Millefleurs\" of y Rodriguez 18th Anniversary."
   },
   "cig-god-of-fire-by-don-carlos": {
     "absorb": [
@@ -1023,12 +1045,13 @@
   },
   "cig-griffin-s-nicaragua": {
     "absorb": [
-      "cig-griffin-s-nicaragua-short"
+      "cig-griffin-s-nicaragua-short",
+      "cig-griffin-s-nicaragua-short-units"
     ],
     "rename_absorbed_vitolas": {
       "Torpedo": "Short Torpedo"
     },
-    "reason": "Size suffix \"Short\" of Nicaragua; not a separate commercial line."
+    "reason": "Size suffix \"Short\" of Nicaragua; not a separate commercial line. | Size/named vitola suffix \"Short Units\" of Nicaragua."
   },
   "cig-gurkha-35th-anniversary": {
     "absorb": [
@@ -1105,13 +1128,14 @@
   "cig-jaime-garcia-jaime-garcia-reserva-especial": {
     "absorb": [
       "cig-jaime-garcia-jaime-garcia-reserva-especial-extra",
-      "cig-jaime-garcia-jaime-garcia-reserva-especial-grande"
+      "cig-jaime-garcia-jaime-garcia-reserva-especial-grande",
+      "cig-jaime-garcia-jaime-garcia-reserva-especial-super"
     ],
     "rename_absorbed_vitolas": {
-      "Gordo": "Extra Gordo",
+      "Gordo": "Super Gordo",
       "Corona": "Grande Corona"
     },
-    "reason": "Size suffix \"Extra\" of Jaime Garcia Reserva Especial; not a separate commercial line."
+    "reason": "Size suffix \"Extra\" of Jaime Garcia Reserva Especial; not a separate commercial line. | Size/named vitola suffix \"Super\" of Jaime Garcia Reserva Especial."
   },
   "cig-joya-de-nicaragua-cabinetta": {
     "absorb": [
@@ -1124,9 +1148,15 @@
   },
   "cig-la-aroma-de-cuba-la-aroma-del-caribe-connecticut": {
     "absorb": [
-      "cig-la-aroma-de-cuba-la-aroma-del-caribe-connecticut-5-1-4-x-54"
+      "cig-la-aroma-de-cuba-la-aroma-del-caribe-connecticut-5-1-4-x-54",
+      "cig-la-aroma-de-cuba-la-aroma-del-caribe-connecticut-immensa",
+      "cig-la-aroma-de-cuba-la-aroma-del-caribe-connecticut-monarch"
     ],
-    "reason": "Size suffix \"5 ¼ x 54\" of La Aroma del Caribe Connecticut; not a separate commercial line."
+    "reason": "Size suffix \"5 ¼ x 54\" of La Aroma del Caribe Connecticut; not a separate commercial line. | Size/named vitola suffix \"Immensa\" of La Aroma del Caribe Connecticut. | Size/named vitola suffix \"Monarch\" of La Aroma del Caribe Connecticut.",
+    "rename_absorbed_vitolas": {
+      "Gordo": "Immensa Gordo",
+      "Toro": "Monarch Toro"
+    }
   },
   "cig-la-aroma-de-cuba-la-aroma-del-caribe-pasion": {
     "absorb": [
@@ -1151,12 +1181,13 @@
   },
   "cig-la-flor-dominicana-coronado": {
     "absorb": [
-      "cig-la-flor-dominicana-coronado-double"
+      "cig-la-flor-dominicana-coronado-double",
+      "cig-la-flor-dominicana-coronado-gorda"
     ],
     "rename_absorbed_vitolas": {
-      "Corona": "Double Corona"
+      "Corona": "Gorda Corona"
     },
-    "reason": "Size suffix \"Double\" of Coronado; not a separate commercial line."
+    "reason": "Size suffix \"Double\" of Coronado; not a separate commercial line. | Size/named vitola suffix \"Gorda\" of Coronado."
   },
   "cig-la-galana-clasica": {
     "absorb": [
@@ -1175,12 +1206,14 @@
   },
   "cig-la-galera-la-instructora-perfeccion": {
     "absorb": [
-      "cig-la-galera-la-instructora-perfeccion-petite"
+      "cig-la-galera-la-instructora-perfeccion-petite",
+      "cig-la-galera-la-instructora-perfeccion-royal"
     ],
     "rename_absorbed_vitolas": {
-      "Figurado": "Petite Figurado"
+      "Figurado": "Petite Figurado",
+      "Corona": "Royal"
     },
-    "reason": "Size suffix \"Petite\" of La Instructora Perfeccion; not a separate commercial line."
+    "reason": "Size suffix \"Petite\" of La Instructora Perfeccion; not a separate commercial line. | Size/named vitola suffix \"Royal\" of La Instructora Perfeccion."
   },
   "cig-la-rosa-de-sandiego-connecticut": {
     "absorb": [
@@ -1265,12 +1298,14 @@
   },
   "cig-luciano-maria-lucia": {
     "absorb": [
-      "cig-luciano-maria-lucia-magnum"
+      "cig-luciano-maria-lucia-magnum",
+      "cig-luciano-maria-lucia-de-lux"
     ],
     "rename_absorbed_vitolas": {
-      "Robusto": "Magnum"
+      "Robusto": "Magnum",
+      "Toro": "De Lux Toro"
     },
-    "reason": "Size suffix \"Magnum\" of Maria Lucia; not a separate commercial line."
+    "reason": "Size suffix \"Magnum\" of Maria Lucia; not a separate commercial line. | Size/named vitola suffix \"de Lux\" of Maria Lucia."
   },
   "cig-luciano-underrated": {
     "absorb": [
@@ -1318,12 +1353,14 @@
   },
   "cig-maria-mancini-classic": {
     "absorb": [
-      "cig-maria-mancini-classic-larga"
+      "cig-maria-mancini-classic-larga",
+      "cig-maria-mancini-classic-classico"
     ],
     "rename_absorbed_vitolas": {
-      "Robusto": "Larga Robusto"
+      "Robusto": "Larga Robusto",
+      "Corona": "Classico"
     },
-    "reason": "Size suffix \"Larga\" of Mancini Classic; not a separate commercial line."
+    "reason": "Size suffix \"Larga\" of Mancini Classic; not a separate commercial line. | Size/named vitola suffix \"Classico\" of Mancini Classic."
   },
   "cig-meerapfel-machetero-bundles": {
     "absorb": [
@@ -1416,12 +1453,14 @@
   },
   "cig-oscar-valladares-santiago-valladares": {
     "absorb": [
-      "cig-oscar-valladares-santiago-valladares-petit"
+      "cig-oscar-valladares-santiago-valladares-petit",
+      "cig-oscar-valladares-santiago-valladares-magico"
     ],
     "rename_absorbed_vitolas": {
-      "Toro": "Petit Toro"
+      "Toro": "Petit Toro",
+      "Robusto": "Mágico"
     },
-    "reason": "Size suffix \"Petit\" of Santiago Valladares; not a separate commercial line."
+    "reason": "Size suffix \"Petit\" of Santiago Valladares; not a separate commercial line. | Size/named vitola suffix \"Mágico\" of Santiago Valladares."
   },
   "cig-padilla-finest-hour-connecticut": {
     "absorb": [
@@ -1461,12 +1500,13 @@
   },
   "cig-pdr-el-criollito-rosado": {
     "absorb": [
-      "cig-pdr-el-criollito-rosado-short-4-1-4-x-58"
+      "cig-pdr-el-criollito-rosado-short-4-1-4-x-58",
+      "cig-pdr-el-criollito-rosado-habano-3-3-4-x-50"
     ],
     "rename_absorbed_vitolas": {
       "Gordo": "Short Gordo"
     },
-    "reason": "Size suffix \"Short 4 ¼ x 58\" of El Criollito Rosado; not a separate commercial line."
+    "reason": "Size suffix \"Short 4 ¼ x 58\" of El Criollito Rosado; not a separate commercial line. | Dims in line suffix under El Criollito Rosado; duplicate SKU page."
   },
   "cig-pdr-flores-y-rodriguez-10th-anniversary": {
     "absorb": [
@@ -1614,12 +1654,14 @@
   },
   "cig-quorum-classic": {
     "absorb": [
-      "cig-quorum-classic-double"
+      "cig-quorum-classic-double",
+      "cig-quorum-classic-tres"
     ],
     "rename_absorbed_vitolas": {
-      "Gordo": "Double Gordo"
+      "Gordo": "Double Gordo",
+      "Petit Corona": "Très Petit Corona"
     },
-    "reason": "Size suffix \"Double\" of Classic; not a separate commercial line."
+    "reason": "Size suffix \"Double\" of Classic; not a separate commercial line. | Size/named vitola suffix \"Très\" of Classic."
   },
   "cig-ra-r-a-villamil-clasico": {
     "absorb": [
@@ -1785,12 +1827,15 @@
   },
   "cig-vegas-de-santiago-d8": {
     "absorb": [
-      "cig-vegas-de-santiago-d8-wide"
+      "cig-vegas-de-santiago-d8-wide",
+      "cig-vegas-de-santiago-d8-short"
     ],
     "rename_absorbed_vitolas": {
-      "Churchill": "Wide Churchill"
+      "Churchill": "Wide Churchill",
+      "Corona": "Short Corona",
+      "Figurado": "Short Figurado"
     },
-    "reason": "Size suffix \"Wide\" of de Santiago D8; not a separate commercial line."
+    "reason": "Size suffix \"Wide\" of de Santiago D8; not a separate commercial line. | Size/named vitola suffix \"Short\" of de Santiago D8."
   },
   "cig-vegas-de-santiago-d8-maduro": {
     "absorb": [
@@ -3780,6 +3825,732 @@
         "San Doro Colorado Aged 10 Years"
       ],
       "reason": "Distinct series/release (suffix \"Aged 10 Years\")."
+    },
+    {
+      "ids": [
+        "cig-aladino-cameroon",
+        "cig-aladino-cameroon-reserva"
+      ],
+      "lines": [
+        "Cameroon",
+        "Cameroon Reserva"
+      ],
+      "reason": "Distinct series/release (suffix \"Reserva\")."
+    },
+    {
+      "ids": [
+        "cig-black-label-trading-company-bishops-blend",
+        "cig-black-label-trading-company-bishops-blend-novemdiales"
+      ],
+      "lines": [
+        "Trading Company Bishops Blend",
+        "Trading Company Bishops Blend Novemdiales"
+      ],
+      "reason": "Distinct series/release (suffix \"Novemdiales\")."
+    },
+    {
+      "ids": [
+        "cig-black-works-studio-killer-bee",
+        "cig-black-works-studio-killer-bee-hornet"
+      ],
+      "lines": [
+        "Studio Killer Bee",
+        "Studio Killer Bee Hornet"
+      ],
+      "reason": "Distinct series/release (suffix \"Hornet\")."
+    },
+    {
+      "ids": [
+        "cig-bossner-classic",
+        "cig-bossner-classic-ekaterina-i"
+      ],
+      "lines": [
+        "Classic",
+        "Classic Ekaterina I."
+      ],
+      "reason": "Distinct series/release (suffix \"Ekaterina I.\")."
+    },
+    {
+      "ids": [
+        "cig-bossner-classic",
+        "cig-bossner-classic-elizabeth-i"
+      ],
+      "lines": [
+        "Classic",
+        "Classic Elizabeth I."
+      ],
+      "reason": "Distinct series/release (suffix \"Elizabeth I.\")."
+    },
+    {
+      "ids": [
+        "cig-bossner-classic",
+        "cig-bossner-classic-t-e-glastubo"
+      ],
+      "lines": [
+        "Classic",
+        "Classic T.E. Glastubo"
+      ],
+      "reason": "Distinct series/release (suffix \"T.E. Glastubo\")."
+    },
+    {
+      "ids": [
+        "cig-casdagli-traditional",
+        "cig-casdagli-traditional-25-aniversario"
+      ],
+      "lines": [
+        "Traditional",
+        "Traditional 25 Aniversario"
+      ],
+      "reason": "Distinct series/release (suffix \"25 Aniversario\")."
+    },
+    {
+      "ids": [
+        "cig-casdagli-traditional",
+        "cig-casdagli-traditional-cotton-tail"
+      ],
+      "lines": [
+        "Traditional",
+        "Traditional Cotton tail"
+      ],
+      "reason": "Distinct series/release (suffix \"Cotton tail\")."
+    },
+    {
+      "ids": [
+        "cig-casdagli-traditional",
+        "cig-casdagli-traditional-grand-cafe-maduro"
+      ],
+      "lines": [
+        "Traditional",
+        "Traditional Grand Cafe Maduro"
+      ],
+      "reason": "Distinct series/release (suffix \"Grand Cafe Maduro\")."
+    },
+    {
+      "ids": [
+        "cig-cle-maduro",
+        "cig-cle-maduro-azabache"
+      ],
+      "lines": [
+        "Maduro",
+        "Maduro Azabache"
+      ],
+      "reason": "Distinct series/release (suffix \"Azabache\")."
+    },
+    {
+      "ids": [
+        "cig-crowned-heads-four-kicks",
+        "cig-crowned-heads-four-kicks-capa-especial"
+      ],
+      "lines": [
+        "Four Kicks",
+        "Four Kicks Capa Especial"
+      ],
+      "reason": "Distinct series/release (suffix \"Capa Especial\")."
+    },
+    {
+      "ids": [
+        "cig-crowned-heads-four-kicks",
+        "cig-crowned-heads-four-kicks-capa-especial-gorda"
+      ],
+      "lines": [
+        "Four Kicks",
+        "Four Kicks Capa Especial Gorda"
+      ],
+      "reason": "Distinct series/release (suffix \"Capa Especial Gorda\")."
+    },
+    {
+      "ids": [
+        "cig-eiroa-cbt-maduro-2",
+        "cig-eiroa-cbt-maduro"
+      ],
+      "lines": [
+        "CBT Maduro",
+        "CBT Maduro / 20 Years"
+      ],
+      "reason": "Distinct series/release (suffix \"20 Years\")."
+    },
+    {
+      "ids": [
+        "cig-eiroa-classic-2",
+        "cig-eiroa-classic"
+      ],
+      "lines": [
+        "Classic",
+        "Classic / Colorado"
+      ],
+      "reason": "Distinct series/release (suffix \"Colorado\")."
+    },
+    {
+      "ids": [
+        "cig-eladio-diaz-la-diana",
+        "cig-eladio-diaz"
+      ],
+      "lines": [
+        "La Diana",
+        "La Diana / Anniversary"
+      ],
+      "reason": "Distinct series/release (suffix \"Anniversary\")."
+    },
+    {
+      "ids": [
+        "cig-flor-de-copan-flor-de-copan",
+        "cig-flor-de-copan-flor-de-copan-1795-edicion-limitada-2025"
+      ],
+      "lines": [
+        "Flor de Copan",
+        "Flor de Copan 1795 Edicion Limitada 2025"
+      ],
+      "reason": "Distinct series/release (suffix \"1795 Edicion Limitada 2025\")."
+    },
+    {
+      "ids": [
+        "cig-flor-de-copan-flor-de-copan",
+        "cig-flor-de-copan-flor-de-copan-linea-puros"
+      ],
+      "lines": [
+        "Flor de Copan",
+        "Flor de Copan Linea Puros"
+      ],
+      "reason": "Distinct series/release (suffix \"Linea Puros\")."
+    },
+    {
+      "ids": [
+        "cig-flor-de-copan-flor-de-copan",
+        "cig-flor-de-copan-flor-de-copan-maduro"
+      ],
+      "lines": [
+        "Flor de Copan",
+        "Flor de Copan Maduro"
+      ],
+      "reason": "Distinct series/release (suffix \"Maduro\")."
+    },
+    {
+      "ids": [
+        "cig-gilbert-de-montsalvat-classic",
+        "cig-gilbert-de-montsalvat-classic-limited-edition-15-years"
+      ],
+      "lines": [
+        "de Montsalvat Classic",
+        "de Montsalvat Classic Limited Edition 15 Years"
+      ],
+      "reason": "Distinct series/release (suffix \"Limited Edition 15 Years\")."
+    },
+    {
+      "ids": [
+        "cig-griffin-s-nicaragua",
+        "cig-griffin-s-nicaragua-special-edition-2016"
+      ],
+      "lines": [
+        "Nicaragua",
+        "Nicaragua Special Edition 2016"
+      ],
+      "reason": "Distinct series/release (suffix \"Special Edition 2016\")."
+    },
+    {
+      "ids": [
+        "cig-gurkha-royal-challenge",
+        "cig-gurkha-royal-challenge-maduro"
+      ],
+      "lines": [
+        "Royal Challenge",
+        "Royal Challenge Maduro"
+      ],
+      "reason": "Distinct series/release (suffix \"Maduro\")."
+    },
+    {
+      "ids": [
+        "cig-gurkha-special-edition-tyson-2-0-undisputed",
+        "cig-gurkha-special-edition-tyson-2-0-undisputed-gordo-maduro"
+      ],
+      "lines": [
+        "Special Edition Tyson 2.0 Undisputed",
+        "Special Edition Tyson 2.0 Undisputed Gordo Maduro"
+      ],
+      "reason": "Distinct series/release (suffix \"Gordo Maduro\")."
+    },
+    {
+      "ids": [
+        "cig-gurkha-special-edition-tyson-2-0-undisputed",
+        "cig-gurkha-special-edition-tyson-2-0-undisputed-maduro"
+      ],
+      "lines": [
+        "Special Edition Tyson 2.0 Undisputed",
+        "Special Edition Tyson 2.0 Undisputed Maduro"
+      ],
+      "reason": "Distinct series/release (suffix \"Maduro\")."
+    },
+    {
+      "ids": [
+        "cig-ibis-dominicana",
+        "cig-ibis-dominicana-fuerte"
+      ],
+      "lines": [
+        "Dominicana",
+        "Dominicana Fuerte"
+      ],
+      "reason": "Distinct series/release (suffix \"Fuerte\")."
+    },
+    {
+      "ids": [
+        "cig-jaime-garcia-jaime-garcia-reserva-especial",
+        "cig-jaime-garcia-jaime-garcia-reserva-especial-connecticut"
+      ],
+      "lines": [
+        "Jaime Garcia Reserva Especial",
+        "Jaime Garcia Reserva Especial Connecticut"
+      ],
+      "reason": "Distinct series/release (suffix \"Connecticut\")."
+    },
+    {
+      "ids": [
+        "cig-jaime-garcia-jaime-garcia-reserva-especial",
+        "cig-jaime-garcia-jaime-garcia-reserva-especial-sucesor"
+      ],
+      "lines": [
+        "Jaime Garcia Reserva Especial",
+        "Jaime Garcia Reserva Especial Sucesor"
+      ],
+      "reason": "Distinct series/release (suffix \"Sucesor\")."
+    },
+    {
+      "ids": [
+        "cig-man-o-war-man-o-war",
+        "cig-man-o-war-man-o-war-ruination"
+      ],
+      "lines": [
+        "Man O' War",
+        "Man O' War Ruination"
+      ],
+      "reason": "Distinct series/release (suffix \"Ruination\")."
+    },
+    {
+      "ids": [
+        "cig-manuel-alonso",
+        "cig-manuel-alonso-1867"
+      ],
+      "lines": [
+        "Alonso",
+        "Alonso 1867"
+      ],
+      "reason": "Distinct series/release (suffix \"1867\")."
+    },
+    {
+      "ids": [
+        "cig-manuel-alonso",
+        "cig-manuel-alonso-maduro"
+      ],
+      "lines": [
+        "Alonso",
+        "Alonso Maduro"
+      ],
+      "reason": "Distinct series/release (suffix \"Maduro\")."
+    },
+    {
+      "ids": [
+        "cig-manuel-alonso",
+        "cig-manuel-alonso-nicaragua"
+      ],
+      "lines": [
+        "Alonso",
+        "Alonso Nicaragua"
+      ],
+      "reason": "Distinct series/release (suffix \"Nicaragua\")."
+    },
+    {
+      "ids": [
+        "cig-marca-fina-brazil",
+        "cig-marca-fina-brazil-edicion-limitada-2023"
+      ],
+      "lines": [
+        "Fina Brazil",
+        "Fina Brazil Edición Limitada 2023"
+      ],
+      "reason": "Distinct series/release (suffix \"Edición Limitada 2023\")."
+    },
+    {
+      "ids": [
+        "cig-marca-fina-dominicana",
+        "cig-marca-fina-dominicana-edicion-limitada-2023"
+      ],
+      "lines": [
+        "Fina Dominicana",
+        "Fina Dominicana Edicion Limitada 2023"
+      ],
+      "reason": "Distinct series/release (suffix \"Edicion Limitada 2023\")."
+    },
+    {
+      "ids": [
+        "cig-marca-fina-ecuador",
+        "cig-marca-fina-ecuador-edicion-limitada-2024"
+      ],
+      "lines": [
+        "Fina Ecuador",
+        "Fina Ecuador Edicion Limitada 2024"
+      ],
+      "reason": "Distinct series/release (suffix \"Edicion Limitada 2024\")."
+    },
+    {
+      "ids": [
+        "cig-marca-fina-panama-maduro",
+        "cig-marca-fina-panama-maduro-edicion-limitada-2024"
+      ],
+      "lines": [
+        "Fina Panama Maduro",
+        "Fina Panama Maduro Edición Limitada 2024"
+      ],
+      "reason": "Distinct series/release (suffix \"Edición Limitada 2024\")."
+    },
+    {
+      "ids": [
+        "cig-padilla-serie-1968",
+        "cig-padilla-serie-1968-black-bear"
+      ],
+      "lines": [
+        "Serie 1968",
+        "Serie 1968 Black Bear"
+      ],
+      "reason": "Distinct series/release (suffix \"Black Bear\")."
+    },
+    {
+      "ids": [
+        "cig-padilla-serie-1968",
+        "cig-padilla-serie-1968-golden-bear"
+      ],
+      "lines": [
+        "Serie 1968",
+        "Serie 1968 Golden Bear"
+      ],
+      "reason": "Distinct series/release (suffix \"Golden Bear\")."
+    },
+    {
+      "ids": [
+        "cig-perdomo-10th-anniversary",
+        "cig-perdomo-10th-anniversary-4er-freshpack"
+      ],
+      "lines": [
+        "10th Anniversary",
+        "10th Anniversary 4er Freshpack"
+      ],
+      "reason": "Distinct series/release (suffix \"4er Freshpack\")."
+    },
+    {
+      "ids": [
+        "cig-perdomo-10th-anniversary",
+        "cig-perdomo-champagne"
+      ],
+      "lines": [
+        "10th Anniversary",
+        "10th Anniversary Champagne"
+      ],
+      "reason": "Distinct series/release (suffix \"Champagne\")."
+    },
+    {
+      "ids": [
+        "cig-perdomo-10th-anniversary",
+        "cig-perdomo-10th-anniversary-maduro"
+      ],
+      "lines": [
+        "10th Anniversary",
+        "10th Anniversary Maduro"
+      ],
+      "reason": "Distinct series/release (suffix \"Maduro\")."
+    },
+    {
+      "ids": [
+        "cig-perdomo-10th-anniversary",
+        "cig-perdomo-10th-anniversary-sun-grown"
+      ],
+      "lines": [
+        "10th Anniversary",
+        "10th Anniversary Sun Grown"
+      ],
+      "reason": "Distinct series/release (suffix \"Sun Grown\")."
+    },
+    {
+      "ids": [
+        "cig-perdomo-perdomo-20th",
+        "cig-perdomo-20th-maduro"
+      ],
+      "lines": [
+        "20th Anniversary",
+        "20th Anniversary Maduro"
+      ],
+      "reason": "Distinct series/release (suffix \"Maduro\")."
+    },
+    {
+      "ids": [
+        "cig-perdomo-double-aged",
+        "cig-perdomo-double-aged-vintage-connecticut"
+      ],
+      "lines": [
+        "Double Aged",
+        "Double Aged Vintage Connecticut"
+      ],
+      "reason": "Distinct series/release (suffix \"Vintage Connecticut\")."
+    },
+    {
+      "ids": [
+        "cig-perdomo-double-aged",
+        "cig-perdomo-double-aged-vintage-maduro"
+      ],
+      "lines": [
+        "Double Aged",
+        "Double Aged Vintage Maduro"
+      ],
+      "reason": "Distinct series/release (suffix \"Vintage Maduro\")."
+    },
+    {
+      "ids": [
+        "cig-perdomo-double-aged",
+        "cig-perdomo-double-aged-vintage-sun-grown"
+      ],
+      "lines": [
+        "Double Aged",
+        "Double Aged Vintage Sun Grown"
+      ],
+      "reason": "Distinct series/release (suffix \"Vintage Sun Grown\")."
+    },
+    {
+      "ids": [
+        "cig-roma-craft-wunderlust",
+        "cig-roma-craft-wunderlust-limited-edition"
+      ],
+      "lines": [
+        "Craft WunderLust",
+        "Craft WunderLust Limited Edition"
+      ],
+      "reason": "Distinct series/release (suffix \"Limited Edition\")."
+    },
+    {
+      "ids": [
+        "cig-torano-torano-exodus",
+        "cig-torano-torano-exodus-1959-silver"
+      ],
+      "lines": [
+        "Torano Exodus",
+        "Torano Exodus 1959 Silver"
+      ],
+      "reason": "Distinct series/release (suffix \"1959 Silver\")."
+    },
+    {
+      "ids": [
+        "cig-torano-torano-exodus",
+        "cig-torano-torano-exodus-gold-20th-anniversary"
+      ],
+      "lines": [
+        "Torano Exodus",
+        "Torano Exodus Gold 20th Anniversary"
+      ],
+      "reason": "Distinct series/release (suffix \"Gold 20th Anniversary\")."
+    },
+    {
+      "ids": [
+        "cig-vegafina-classic-2",
+        "cig-vegafina-classic"
+      ],
+      "lines": [
+        "Classic",
+        "Classic / Fortaleza 2"
+      ],
+      "reason": "Distinct series/release (suffix \"Fortaleza 2\")."
+    },
+    {
+      "ids": [
+        "cig-vegafina-serie-2",
+        "cig-vegafina-serie-2-coupage"
+      ],
+      "lines": [
+        "Serie 2",
+        "Serie 2 Coupage"
+      ],
+      "reason": "Distinct series/release (suffix \"Coupage\")."
+    },
+    {
+      "ids": [
+        "cig-vegas-de-santiago-d8",
+        "cig-vegas-de-santiago-d8-el"
+      ],
+      "lines": [
+        "de Santiago D8",
+        "de Santiago D8 El"
+      ],
+      "reason": "Distinct series/release (suffix \"El\")."
+    },
+    {
+      "ids": [
+        "cig-vegas-de-santiago-d8",
+        "cig-vegas-de-santiago-d8-limited-edition"
+      ],
+      "lines": [
+        "de Santiago D8",
+        "de Santiago D8 Limited Edition"
+      ],
+      "reason": "Distinct series/release (suffix \"Limited Edition\")."
+    },
+    {
+      "ids": [
+        "cig-vegas-de-santiago-d8",
+        "cig-vegas-de-santiago-d8-limited-edition-palo-alto-2023"
+      ],
+      "lines": [
+        "de Santiago D8",
+        "de Santiago D8 Limited Edition Palo Alto 2023"
+      ],
+      "reason": "Distinct series/release (suffix \"Limited Edition Palo Alto 2023\")."
+    },
+    {
+      "ids": [
+        "cig-vegas-de-santiago-d8",
+        "cig-vegas-de-santiago-d8-limited-edition-very-limited-edition-2024"
+      ],
+      "lines": [
+        "de Santiago D8",
+        "de Santiago D8 Limited Edition very Limited Edition 2024"
+      ],
+      "reason": "Distinct series/release (suffix \"Limited Edition very Limited Edition 2024\")."
+    },
+    {
+      "ids": [
+        "cig-vegas-de-santiago-d8",
+        "cig-vegas-de-santiago-d8-maduro"
+      ],
+      "lines": [
+        "de Santiago D8",
+        "de Santiago D8 Maduro"
+      ],
+      "reason": "Distinct series/release (suffix \"Maduro\")."
+    },
+    {
+      "ids": [
+        "cig-villa-zamorano-classic",
+        "cig-villa-zamorano-classic-intenso"
+      ],
+      "lines": [
+        "Classic",
+        "Classic Intenso"
+      ],
+      "reason": "Distinct series/release (suffix \"Intenso\")."
+    },
+    {
+      "ids": [
+        "cig-villiger-1492",
+        "cig-villiger-1492-discovery-edition"
+      ],
+      "lines": [
+        "1492",
+        "1492 Discovery Edition"
+      ],
+      "reason": "Distinct series/release (suffix \"Discovery Edition\")."
+    },
+    {
+      "ids": [
+        "cig-griffin-s-nicaragua",
+        "cig-griffin-s-nicaragua-units"
+      ],
+      "lines": [
+        "Nicaragua",
+        "Nicaragua Units"
+      ],
+      "reason": "Units packaging/size SKUs vs base Nicaragua line; keep distinct."
+    },
+    {
+      "ids": [
+        "cig-tatuaje-black",
+        "cig-tatuaje-tatuaje-black"
+      ],
+      "lines": [
+        "Black",
+        "Black Label"
+      ],
+      "reason": "Black Label is a distinct Tatuaje series from Black."
+    },
+    {
+      "ids": [
+        "cig-arturo-fuente-anejo-55",
+        "cig-arturo-fuente-anejo-55-maduro"
+      ],
+      "lines": [
+        "Anejo #55",
+        "Anejo 55 Maduro"
+      ],
+      "reason": "Maduro wrapper/series vs base Anejo #55."
+    },
+    {
+      "ids": [
+        "cig-oliva-flor-de",
+        "cig-oliva-flor-de-corojo"
+      ],
+      "lines": [
+        "Flor de",
+        "Flor de Corojo"
+      ],
+      "reason": "Wrapper series under Flor de family."
+    },
+    {
+      "ids": [
+        "cig-oliva-flor-de",
+        "cig-oliva-flor-de-gold"
+      ],
+      "lines": [
+        "Flor de",
+        "Flor de Gold"
+      ],
+      "reason": "Wrapper series under Flor de family."
+    },
+    {
+      "ids": [
+        "cig-oliva-flor-de",
+        "cig-oliva-flor-de-maduro"
+      ],
+      "lines": [
+        "Flor de",
+        "Flor de Maduro"
+      ],
+      "reason": "Wrapper series under Flor de family."
+    },
+    {
+      "ids": [
+        "cig-oliva-flor-de",
+        "cig-oliva-flor-de-original"
+      ],
+      "lines": [
+        "Flor de",
+        "Flor de Original"
+      ],
+      "reason": "Wrapper series under Flor de family."
+    },
+    {
+      "ids": [
+        "cig-rocky-patel-fifty",
+        "cig-rocky-patel-fifty-five-2"
+      ],
+      "lines": [
+        "Fifty",
+        "Fifty-Five"
+      ],
+      "reason": "Distinct Rocky Patel ring-count series."
+    },
+    {
+      "ids": [
+        "cig-villiger-san-doro-claro-aged-10-years",
+        "cig-villiger-san-doro-claro-2"
+      ],
+      "lines": [
+        "San Doro Claro Aged 10 Years",
+        "San'Doro Claro"
+      ],
+      "reason": "Aged 10 Years release vs base San'Doro Claro line."
+    },
+    {
+      "ids": [
+        "cig-villiger-san-doro-colorado-aged-10-years",
+        "cig-villiger-san-doro-colorado-2"
+      ],
+      "lines": [
+        "San Doro Colorado Aged 10 Years",
+        "San'Doro Colorado"
+      ],
+      "reason": "Aged 10 Years release vs base San'Doro Colorado line."
     }
   ],
   "_relocate_vitolas": [
@@ -4370,5 +5141,29 @@
       "Robusto": "El Ingeniero"
     },
     "reason": "Suffix \"Baba Jan\" treated as size/named vitola of Bobi. | Suffix \"El Ingeniero\" treated as size/named vitola of Bobi. | Suffix \"El Licenciado\" treated as size/named vitola of Bobi. | Suffix \"Mi Hermano\" treated as size/named vitola of Bobi. | Suffix \"Sunrise\" treated as size/named vitola of Bobi. | Suffix \"Sunset\" treated as size/named vitola of Bobi."
+  },
+  "cig-montecristo-no2": {
+    "absorb": [
+      "cig-montecristo-no-2-6-1-8-x-52"
+    ],
+    "rename_absorbed_vitolas": {
+      "Montecristo No.2": "No.2 (pirámide)"
+    },
+    "reason": "Dims-in-line SKU under Montecristo No. 2."
+  },
+  "cig-plasencia-cosecha-146-san-luis-toro": {
+    "absorb": [
+      "cig-plasencia-cosecha-146-san-luis-toro-5-3-4-x-54"
+    ],
+    "reason": "Duplicate Cosecha 146 San Luis Toro; dims-in-line vs hyphenated line name."
+  },
+  "cig-la-galera-85th": {
+    "absorb": [
+      "cig-la-galera-85th-anniversary-toro-6-x-52"
+    ],
+    "rename_absorbed_vitolas": {
+      "Toro": "Anniversary Toro"
+    },
+    "reason": "Size-as-line duplicate of 85th Anniversary Toro (same product URL family)."
   }
 }
