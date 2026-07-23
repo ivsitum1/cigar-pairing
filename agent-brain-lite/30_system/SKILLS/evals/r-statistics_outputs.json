@@ -1,0 +1,4 @@
+{
+  "case_r_cox_ph": "library(survival)\nset.seed(42)\n# cox.ph fit; cox.zph / Schoenfeld za proportional hazards\n# Izvještaj: hazard ratio (HR) s 95% CI\n# Putanje: here::here() za reproducibilnost",
+  "case_delegate_test_selection": "Za samo odabir testa bez koda učitajte test-selection skill (odabir testa za dvije neovisne grupe). Ne pišem puni R pipeline dok ne potvrdite dizajn."
+}

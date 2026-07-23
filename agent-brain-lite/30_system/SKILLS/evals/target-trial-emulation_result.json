@@ -1,0 +1,24 @@
+{
+  "skill_id": "target-trial-emulation",
+  "pass_rate_pct": 100.0,
+  "passed_assertions": 19,
+  "total_assertions": 19,
+  "cases": [
+    {
+      "case_id": "case_1",
+      "passed": 7,
+      "total": 7
+    },
+    {
+      "case_id": "case_2",
+      "passed": 6,
+      "total": 6
+    },
+    {
+      "case_id": "case_3",
+      "passed": 6,
+      "total": 6
+    }
+  ],
+  "failed_assertions": []
+}

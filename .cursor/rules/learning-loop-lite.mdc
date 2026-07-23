@@ -1,0 +1,30 @@
+---
+description: "Three-layer learning loop — manual LEARNING_BLOCK, parent hooks, lite JSONL"
+alwaysApply: true
+---
+
+# Learning loop (brain-lite)
+
+See `harness/LEARNING_LOOP.md` for full map.
+
+## After significant tasks (layer 1 — always)
+
+1. Update `log.md`, `hot.md`; milestone → `.agent/MEMORY.md`
+2. For reusable insight: emit LEARNING_BLOCK per `knowledge/learnings/LEARNING_BLOCK_TEMPLATE.md`
+3. Ingest: `python scripts/learning_log.py ingest-block --stdin` or skill `learning-capture`
+4. Durable domain learning → `knowledge/learnings/<slug>.md`
+
+## Layer 2 — parent (when `link_parent.py` ran)
+
+Parent hooks in `.cursor/hooks.json` capture memory, trajectory, verifier learning. Weekly optional:
+
+`powershell -File 40_operations/scripts/memory_weekly_maintenance.ps1`
+
+Proposals land in parent `30_system/docs/LEARNING_UPDATES.md` via `self_eval_learning_loop.py`.
+
+## Layer 3 — lite auto
+
+- `.agent/learning.jsonl` — session markers (hook) + ingested blocks (CLI)
+- `python scripts/learning_log.py summary`
+
+Do not skip layer 1 when layer 2/3 are active — they complement each other.

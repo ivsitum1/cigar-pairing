@@ -1,0 +1,30 @@
+{
+  "verified_at": "2026-06-24T00:00:00Z",
+  "notebook_id": "cea806f1-982c-4666-b760-a8237d615eb5",
+  "claims": [
+    {
+      "claim": "Parent-child chunking improves retrieval context vs flat fixed-size splits",
+      "status": "INFERRED",
+      "source": "NotebookLM synthesis + RAG Anatomy video series",
+      "evidence": "Industry pattern (Anthropic contextual retrieval); not locally benchmarked in repo"
+    },
+    {
+      "claim": "Contextual retrieval framing reduces wrong-context hits",
+      "status": "INFERRED",
+      "source": "NotebookLM synthesis",
+      "evidence": "Prepend title/section metadata before embed"
+    },
+    {
+      "claim": "Late chunking requires embedding model long-context support",
+      "status": "VERIFIED",
+      "source": "NotebookLM synthesis",
+      "evidence": "Out of scope for .mdc rules without embedding stack change"
+    },
+    {
+      "claim": "80% token reduction from chunking alone",
+      "status": "UNVERIFIED",
+      "source": "NotebookLM marketing synthesis",
+      "evidence": "Do not cite in rules without local eval"
+    }
+  ]
+}

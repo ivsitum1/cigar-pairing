@@ -1,0 +1,186 @@
+{
+  "skill_id": "bayesian-workflow",
+  "version": "1.0",
+  "cases": [
+    {
+      "id": "case_1",
+      "input": {
+        "text": "Provedi potpuni Bayesov workflow: binarni ishod (30-dnevni mortalitet), tretman vs. kontrola: 45/200 vs. 30/200. Uninformativni prior. Napiši kompletan R kod s brms: prior specification, prior predictive check, model fitting, MCMC dijagnostika, posterior summary."
+      },
+      "assertions": [
+        {
+          "type": "contains",
+          "value": "brms",
+          "description": "contains: brms"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(prior\\(|prior_summary)",
+          "description": "contains: prior( OR contains: prior_summary"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(pp_check|prior_predictive)",
+          "description": "contains: pp_check OR contains: prior_predictive"
+        },
+        {
+          "type": "contains",
+          "value": "Rhat",
+          "description": "contains: Rhat"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(ESS|ess_bulk)",
+          "description": "contains: ESS OR contains: ess_bulk"
+        },
+        {
+          "type": "regex_match",
+          "value": "brm\\s*\\(",
+          "description": "regex_match: brm\\s*\\("
+        },
+        {
+          "type": "not_contains",
+          "value": "glm(",
+          "description": "ne samo frequentist alternativa"
+        }
+      ]
+    },
+    {
+      "id": "case_2",
+      "input": {
+        "text": "Isti scenarij (binarni ishod, 45/200 vs 30/200), ali s informativnim priorom iz meta-analize: pooled OR=0.75, 95% CI 0.60–0.94. Specificiraj prior u brms i prikaži usporedbu posteriornih distribucija s uninformativnim priorom (sensitivity analysis)."
+      },
+      "assertions": [
+        {
+          "type": "contains",
+          "value": "prior(",
+          "description": "contains: prior("
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(normal\\(|lognormal\\()",
+          "description": "contains: normal( OR contains: lognormal("
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(prior\\ predictive|prior_predictive)",
+          "description": "contains: prior predictive OR contains: prior_predictive"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(sensitivity|osjetljivost|usporedba\\ priora)",
+          "description": "contains: sensitivity OR contains: osjetljivost OR contains: usporedba priora"
+        },
+        {
+          "type": "not_contains",
+          "value": "flat prior",
+          "description": "not_contains: flat prior"
+        },
+        {
+          "type": "not_contains",
+          "value": "uninformative prior",
+          "description": "ne ignorira zadani informativni prior"
+        },
+        {
+          "type": "regex_match",
+          "value": "0\\.75|log\\(0\\.75\\)|log.*0\\.75",
+          "description": "regex_match: 0\\.75|log\\(0\\.75\\)|log.*0\\.75"
+        }
+      ]
+    },
+    {
+      "id": "case_3",
+      "input": {
+        "text": "Interpretiraj MCMC dijagnostiku i predloži konkretne korake korekcije: Rhat=1.18 za sve parametre, ESS_bulk=95, ESS_tail=80, trace plotovi pokazuju loš mixing između 4 chaina."
+      },
+      "assertions": [
+        {
+          "type": "regex_match",
+          "value": "(?i)(konvergencij|convergence)",
+          "description": "contains: konvergencij OR problem identificiran"
+        },
+        {
+          "type": "not_contains",
+          "value": "prihvatljiv",
+          "description": "not_contains: prihvatljiv"
+        },
+        {
+          "type": "not_contains",
+          "value": "zadovoljavajuć",
+          "description": "Rhat=1.18 NIJE prihvatljiv"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(iter|warmup|iteracij)",
+          "description": "contains: iter OR contains: warmup OR povećanje iteracija"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(adapt_delta|max_treedepth|thin)",
+          "description": "contains: adapt_delta OR contains: max_treedepth OR tuning parametri"
+        },
+        {
+          "type": "regex_match",
+          "value": "Rhat.{0,80}1\\.0[0-9]|granica|threshold|<\\s*1\\.0[0-9]",
+          "description": "regex_match: Rhat.{0,80}1\\.0[0-9]|granica|threshold|<\\s*1\\.0[0-"
+        },
+        {
+          "type": "last_sentence_not_question",
+          "description": "Last sentence not ?"
+        }
+      ]
+    },
+    {
+      "id": "case_4",
+      "input": {
+        "text": "Na temelju posteriornih distribucija: OR=0.68 (95% CrI: 0.51–0.89), P(OR<1)=0.97, P(OR<0.5)=0.08. Napiši klinički interpretabilan posterior summary za Results sekciju medicinskog članka. Bez R koda, bez formula."
+      },
+      "assertions": [
+        {
+          "type": "contains",
+          "value": "0.68",
+          "description": "contains: 0.68"
+        },
+        {
+          "type": "contains",
+          "value": "OR",
+          "description": "contains: OR"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(credible\\ interval|CrI|wjerodostojni\\ interval)",
+          "description": "contains: credible interval OR contains: CrI OR contains: wjerodostojni interval"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(0\\.97|97%)",
+          "description": "contains: 0.97 OR P(OR<1)"
+        },
+        {
+          "type": "not_contains",
+          "value": "p-value",
+          "description": "not_contains: p-value"
+        },
+        {
+          "type": "not_contains",
+          "value": "p-vrijednost",
+          "description": "Bayesov, ne frequentist jezik"
+        },
+        {
+          "type": "not_contains",
+          "value": "statistički značajno",
+          "description": "Bayesova interpretacija, ne NHST"
+        },
+        {
+          "type": "word_count_below",
+          "value": 300,
+          "description": "word_count_below: 300"
+        },
+        {
+          "type": "last_sentence_not_question",
+          "description": "Last sentence not ?"
+        }
+      ]
+    }
+  ]
+}

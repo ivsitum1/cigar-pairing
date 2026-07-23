@@ -1,0 +1,14 @@
+{
+  "skill_id": "autosci-memory-centric-lifecycle",
+  "version": "1.0",
+  "cases": [
+    {
+      "id": "case_lifecycle_memory",
+      "input": { "text": "Set up agent memory across literature, analysis, and manuscript for a 6-month study." },
+      "assertions": [
+        { "type": "regex_match", "value": "(?i)(phase|lifecycle|literature|manuscript|memory)", "description": "covers lifecycle memory" },
+        { "type": "regex_match", "value": "(?i)(\\.agent|context/main|log\\.md|commit\\.md)", "description": "references repo memory paths" }
+      ]
+    }
+  ]
+}

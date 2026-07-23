@@ -1,0 +1,14 @@
+{
+  "skill_id": "presentation-speech",
+  "version": "1.0",
+  "cases": [
+    {
+      "id": "case_1_arc",
+      "input": { "text": "Nacrtaj 15-min TED-style govor o ECMO sedaciji za mješovitu publiku." },
+      "assertions": [
+        { "type": "regex_match", "value": "(?i)(hook|priča|story|problem|zaključ)", "description": "talk arc" },
+        { "type": "not_contains", "value": "p<0.05", "description": "not a methods lecture" }
+      ]
+    }
+  ]
+}

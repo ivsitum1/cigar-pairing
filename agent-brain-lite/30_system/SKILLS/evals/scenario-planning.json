@@ -1,0 +1,13 @@
+{
+  "skill_id": "scenario-planning",
+  "version": "1.0",
+  "cases": [
+    {
+      "id": "case_1_branches",
+      "input": { "text": "What-if: gubitak ključnog suradnika za 6 mjeseci na SR projektu." },
+      "assertions": [
+        { "type": "regex_match", "value": "(?i)(scenario|scenarij|best|worst|base|mitig)", "description": "scenario branches" }
+      ]
+    }
+  ]
+}

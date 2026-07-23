@@ -1,12 +1,217 @@
 {
   "brand": "Oscar Valladares",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-23",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "https://oscarvalladarescigars.com/",
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w1_slice2 deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.1"
   ],
-  "lines": {},
+  "lines": {
+    "10th Anniversary": {
+      "line": "10th Anniversary"
+    },
+    "2012 / The Oscar": {
+      "line": "2012 / The Oscar"
+    },
+    "2012 by Oscar Barber Pole": {
+      "line": "2012 by Oscar Barber Pole"
+    },
+    "2012 by Oscar Connecticut": {
+      "line": "2012 by Oscar Connecticut"
+    },
+    "2012 by Oscar Corojo": {
+      "line": "2012 by Oscar Corojo"
+    },
+    "2012 by Oscar Maduro": {
+      "line": "2012 by Oscar Maduro"
+    },
+    "Altar Q": {
+      "line": "Altar Q"
+    },
+    "Barber Pole Toro Box Pressed": {
+      "line": "Barber Pole Toro Box Pressed"
+    },
+    "Brotherhood No. 1": {
+      "line": "Brotherhood No. 1"
+    },
+    "Ciseron Edition Black": {
+      "line": "Ciseron Edition Black"
+    },
+    "Ciseron Edition Blue": {
+      "line": "Ciseron Edition Blue"
+    },
+    "Ciseron Edition Deep Purple": {
+      "line": "Ciseron Edition Deep Purple"
+    },
+    "Ciseron Edition Gray": {
+      "line": "Ciseron Edition Gray"
+    },
+    "Ciseron Edition Green": {
+      "line": "Ciseron Edition Green"
+    },
+    "Ciseron Edition Red": {
+      "line": "Ciseron Edition Red"
+    },
+    "Ciseron Edition Toro Black": {
+      "line": "Ciseron Edition Black",
+      "vitola": "Toro"
+    },
+    "Ciseron Edition Toro Blue": {
+      "line": "Ciseron Edition Blue",
+      "vitola": "Toro"
+    },
+    "Ciseron Edition Toro Gray": {
+      "line": "Ciseron Edition Gray",
+      "vitola": "Toro"
+    },
+    "Ciseron Edition Toro Green": {
+      "line": "Ciseron Edition Green",
+      "vitola": "Toro"
+    },
+    "Ciseron Edition Toro Yellow": {
+      "line": "Ciseron Edition Yellow",
+      "vitola": "Toro"
+    },
+    "Ciseron Edition Yellow": {
+      "line": "Ciseron Edition Yellow"
+    },
+    "Connecticut Robusto (Round)": {
+      "line": "Connecticut",
+      "vitola": "Robusto (Round)"
+    },
+    "Connecticut Short Robusto (Round)": {
+      "line": "Connecticut",
+      "vitola": "Short Robusto (Round)"
+    },
+    "Corojo Robusto (Round)": {
+      "line": "Corojo",
+      "vitola": "Robusto (Round)"
+    },
+    "Corojo Short Robusto (Round)": {
+      "line": "Corojo",
+      "vitola": "Short Robusto (Round)"
+    },
+    "Edition Toro Black": {
+      "line": "Ciseron Edition Black",
+      "vitola": "Toro"
+    },
+    "Edition Toro Blue": {
+      "line": "Ciseron Edition Blue",
+      "vitola": "Toro"
+    },
+    "Edition Toro Gray": {
+      "line": "Ciseron Edition Gray",
+      "vitola": "Toro"
+    },
+    "Edition Toro Green": {
+      "line": "Ciseron Edition Green",
+      "vitola": "Toro"
+    },
+    "Edition Toro Yellow": {
+      "line": "Ciseron Edition Yellow",
+      "vitola": "Toro"
+    },
+    "Governor": {
+      "line": "Governor"
+    },
+    "Gurkha Special Edition 2025 Year of Snake": {
+      "line": "Gurkha Special Edition 2025 Year of Snake"
+    },
+    "Heaven&amp; Hell Claro": {
+      "line": "Heaven& Hell Claro"
+    },
+    "Heaven&amp; Hell Oscuro": {
+      "line": "Heaven& Hell Oscuro"
+    },
+    "Into Deep Aphotic": {
+      "line": "Into Deep Aphotic"
+    },
+    "Into Deep Disphotic": {
+      "line": "Into Deep Disphotic"
+    },
+    "Into Deep Euphotic": {
+      "line": "Into Deep Euphotic"
+    },
+    "Island Jim #2 Barber Pole": {
+      "line": "Island Jim #2 Barber Pole"
+    },
+    "Island Jim #2 Corojo": {
+      "line": "Island Jim #2 Corojo"
+    },
+    "Island Jim #2 Maduro": {
+      "line": "Island Jim #2 Maduro"
+    },
+    "Kinich": {
+      "line": "Kinich"
+    },
+    "Krocodil Barber Pole": {
+      "line": "Krocodil Barber Pole"
+    },
+    "Leaf Barber Pole": {
+      "line": "Leaf Barber Pole"
+    },
+    "Leaf Broadleaf": {
+      "line": "Leaf Broadleaf"
+    },
+    "Leaf Connecticut": {
+      "line": "Leaf Connecticut"
+    },
+    "Leaf Corojo": {
+      "line": "Leaf Corojo"
+    },
+    "Leaf Criollo 10 Aniversario": {
+      "line": "Leaf Criollo 10 Aniversario"
+    },
+    "Leaf Maduro": {
+      "line": "Leaf Maduro"
+    },
+    "McFly": {
+      "line": "McFly"
+    },
+    "My Way by Bayron Duarte Grande": {
+      "line": "My Way by Bayron Duarte Grande"
+    },
+    "Oscar": {
+      "line": "Oscar"
+    },
+    "Oscar Connecticut": {
+      "line": "Oscar Connecticut"
+    },
+    "Oscar Maduro": {
+      "line": "Oscar Maduro"
+    },
+    "Plan B Connecticut": {
+      "line": "Plan B Connecticut"
+    },
+    "Plan B Corojo": {
+      "line": "Plan B Corojo"
+    },
+    "Plan B Maduro": {
+      "line": "Plan B Maduro"
+    },
+    "Sampler": {
+      "line": "Sampler",
+      "sampler": true
+    },
+    "Santiago Valladares": {
+      "line": "Santiago Valladares"
+    },
+    "Super Fly Connecticut": {
+      "line": "Super Fly Connecticut"
+    },
+    "Super Fly Maduro": {
+      "line": "Super Fly Maduro"
+    },
+    "Wild Hunter Natural": {
+      "line": "Wild Hunter Natural"
+    },
+    "Wild Hunter Oscuro": {
+      "line": "Wild Hunter Oscuro"
+    }
+  },
   "vitolaRenames": {},
   "shapes": {},
   "keepSeparate": [
@@ -20,5 +225,7 @@
     ]
   ],
   "lineNotes": {},
-  "unresolved": []
+  "unresolved": [
+    "Oscar Valladares: 'Gurkha Special Edition 2025 Year of Snake' looks like Gurkha leakage — left as-is"
+  ]
 }

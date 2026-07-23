@@ -1,0 +1,24 @@
+{
+  "skill_id": "rct-manuscript",
+  "version": "1.0",
+  "cases": [
+    {
+      "id": "case_rct_consort",
+      "input": {
+        "text": "Strukturiraj RCT rukopis sedacije na ECMO; CONSORT."
+      },
+      "assertions": [
+        {
+          "type": "regex_match",
+          "value": "(?i)(RCT|randomiz|CONSORT|intervencij|kontroln)",
+          "description": "RCT manuscript framing"
+        },
+        {
+          "type": "contains",
+          "value": "CONSORT",
+          "description": "mentions CONSORT"
+        }
+      ]
+    }
+  ]
+}

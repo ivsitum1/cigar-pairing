@@ -1,0 +1,37 @@
+{
+  "version": "1.1",
+  "entry_node": "00_orchestrator",
+  "nodes": {
+    "00_orchestrator": {
+      "file": "nodes/00_orchestrator.md",
+      "routes_to": ["01_admin", "02_writer", "03_automation", "04_research", "parent_brain"]
+    },
+    "01_admin": {
+      "file": "nodes/01_admin.md",
+      "routes_to": ["02_writer", "03_automation"]
+    },
+    "02_writer": {
+      "file": "nodes/02_writer.md",
+      "routes_to": ["04_research", "01_admin"]
+    },
+    "03_automation": {
+      "file": "nodes/03_automation.md",
+      "routes_to": ["01_admin"]
+    },
+    "04_research": {
+      "file": "nodes/04_research.md",
+      "routes_to": ["02_writer", "parent_brain"]
+    },
+    "parent_brain": {
+      "file": "docs/PARENT_BRAIN.md",
+      "external_path_env": "PARENT_BRAIN_PATH"
+    }
+  },
+  "keyword_hints": {
+    "01_admin": ["organiziraj", "arhiva", "rok", "checklista", "ured"],
+    "02_writer": ["napiši", "email", "draft", "memo", "sažetak"],
+    "03_automation": ["skripta", "csv", "powershell", "python", "automatiziraj"],
+    "04_research": ["istraži", "notebooklm", "literatura", "provjeri"],
+    "parent_brain": ["meta-analiza", "swiss cheese", "strobe", "r script", "klinički protokol", "books_rag"]
+  }
+}

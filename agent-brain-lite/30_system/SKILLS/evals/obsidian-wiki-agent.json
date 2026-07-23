@@ -1,0 +1,42 @@
+{
+  "skill_id": "obsidian-wiki-agent",
+  "version": "1.0",
+  "cases": [
+    {
+      "id": "case_wiki_ingest",
+      "input": {
+        "text": "Ingest novi PDF sažetak u wiki pod 20_knowledge/wiki/ s wikilinkovima i log unosom."
+      },
+      "assertions": [
+        {
+          "type": "regex_match",
+          "value": "(?i)(wikilink|\\[\\[|wiki/log|index\\.md|entities|concepts)",
+          "description": "wiki structure or wikilinks"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(20_knowledge/wiki|ingest)",
+          "description": "correct wiki root path"
+        }
+      ]
+    },
+    {
+      "id": "case_literature_claim_gate",
+      "input": {
+        "text": "U vaultu imam paper note samo s abstractom. Smijem li iz nje graditi Research Gaps u Knowledge/?"
+      },
+      "assertions": [
+        {
+          "type": "regex_match",
+          "value": "(?i)(ne smije|cannot|abstract.?only|weak|punog teksta|full text|promot)",
+          "description": "blocks promotion from abstract-only"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(CLAIM|evidence|claim strength)",
+          "description": "references claim/evidence gate"
+        }
+      ]
+    }
+  ]
+}

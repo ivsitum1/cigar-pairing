@@ -1,0 +1,122 @@
+{
+  "skill_id": "validate-setup",
+  "version": "1.0",
+  "cases": [
+    {
+      "id": "case_1",
+      "input": {
+        "text": "Provjeri projektnu strukturu: mape 01_input (3 CSV), 02_analysis (R skripte), 03_output (prazna), 04_manuscript (DOCX draft), 05_admin (protokol PDF). Nedostaju: README.md, .gitignore, session_info.txt."
+      },
+      "assertions": [
+        {
+          "type": "contains",
+          "value": "README",
+          "description": "nedostaje, mora biti označeno"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(\\.gitignore|gitignore)",
+          "description": "contains: .gitignore OR nedostaje"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(session_info|reproducibilnost)",
+          "description": "contains: session_info OR reproducibilnost koda"
+        },
+        {
+          "type": "not_contains",
+          "value": "struktura je ispravna",
+          "description": "not_contains: struktura je ispravna"
+        },
+        {
+          "type": "not_contains",
+          "value": "sve je prisutno",
+          "description": "not_contains: sve je prisutno"
+        },
+        {
+          "type": "regex_match",
+          "value": "nedostaje|missing|dodaj|add|preporuča",
+          "description": "regex_match: nedostaje|missing|dodaj|add|preporuča"
+        },
+        {
+          "type": "last_sentence_not_question",
+          "description": "Last sentence not ?"
+        }
+      ]
+    },
+    {
+      "id": "case_2",
+      "input": {
+        "text": "Validacija: sve datoteke (input CSV, R skripte, output PDF, manuscript DOCX) su u jednoj mapi bez podstrukture. Postoji README.md ali nije organizirano po fazama projekta."
+      },
+      "assertions": [
+        {
+          "type": "regex_match",
+          "value": "(?i)(podstruktura|organizacij|mape)",
+          "description": "contains: podstruktura OR contains: organizacij OR problem"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(01_input|odvojiti|reorganiz)",
+          "description": "contains: 01_input OR contains: odvojiti OR preporuka"
+        },
+        {
+          "type": "not_contains",
+          "value": "struktura je prihvatljiva",
+          "description": "flat struktura nije prihvatljiva"
+        },
+        {
+          "type": "regex_match",
+          "value": "reorganiz|restructur|premjesti|move|odvoj|preporuč",
+          "description": "regex_match: reorganiz|restructur|premjesti|move|odvoj|preporuč"
+        },
+        {
+          "type": "last_sentence_not_question",
+          "description": "Last sentence not ?"
+        }
+      ]
+    },
+    {
+      "id": "case_3",
+      "input": {
+        "text": "Provjeri strukturu: postoje mape 04_manuscript i 05_admin s dokumentima. Mape 01_input, 02_analysis, 03_output ne postoje. R skripte su u root direktoriju."
+      },
+      "assertions": [
+        {
+          "type": "regex_match",
+          "value": "(?i)(01_input|input)",
+          "description": "contains: 01_input OR kritična mapa nedostaje"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(02_analysis|analysis)",
+          "description": "contains: 02_analysis OR nedostaje"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(03_output|output)",
+          "description": "contains: 03_output OR nedostaje"
+        },
+        {
+          "type": "not_contains",
+          "value": "struktura je zadovoljavajuća",
+          "description": "not_contains: struktura je zadovoljavajuća"
+        },
+        {
+          "type": "not_contains",
+          "value": "prihvatljivo",
+          "description": "not_contains: prihvatljivo"
+        },
+        {
+          "type": "regex_match",
+          "value": "nedostaje|kritična mapa|missing|reorganiz|kreirati",
+          "description": "regex_match: nedostaje|kritična mapa|missing|reorganiz|kreirati"
+        },
+        {
+          "type": "last_sentence_not_question",
+          "description": "Last sentence not ?"
+        }
+      ]
+    }
+  ]
+}

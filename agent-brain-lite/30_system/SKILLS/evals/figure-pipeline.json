@@ -1,0 +1,124 @@
+{
+  "skill_id": "figure-pipeline",
+  "version": "1.0",
+  "cases": [
+    {
+      "id": "case_1",
+      "input": {
+        "text": "Kreiraj R pipeline za generiranje dviju publikacijskih figura: (1) forest plot meta-analize s 8 studija, (2) PRISMA 2020 flow dijagram. Output: PDF, 300 DPI, font Times New Roman. Organiziraj pipeline u funkcije s jasnim inputima."
+      },
+      "assertions": [
+        {
+          "type": "regex_match",
+          "value": "(?i)(forest|forest_plot)",
+          "description": "contains: forest OR contains: forest_plot"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(PRISMA|prisma)",
+          "description": "contains: PRISMA OR contains: prisma"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(pdf\\(|ggsave\\(|cairo_pdf)",
+          "description": "contains: pdf( OR contains: ggsave( OR contains: cairo_pdf"
+        },
+        {
+          "type": "contains",
+          "value": "300",
+          "description": "contains: 300 (DPI/res)"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(dpi|DPI|res\\s*=)",
+          "description": "regex: dpi or res="
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(Times\\ New\\ Roman|serif)",
+          "description": "contains: Times New Roman OR contains: serif"
+        },
+        {
+          "type": "regex_match",
+          "value": "library\\s*\\(\\s*['\"]?(forestplot|meta|ggplot2|metafor)",
+          "description": "regex_match: library\\s*\\(\\s*['\"]?(forestplot|meta|ggplot2|metaf"
+        }
+      ]
+    },
+    {
+      "id": "case_2",
+      "input": {
+        "text": "Generiraj R kod za CONSORT 2010 flow dijagram: screenirano 450, isključeno 230 (ineligible 180, odbili 50), randomizirano 220, TIVA n=110 (izgubljeni iz praćenja: 5), Sevo n=110 (izgubljeni: 8), ITT analiza: TIVA n=105, Sevo n=102."
+      },
+      "assertions": [
+        {
+          "type": "contains",
+          "value": "450",
+          "description": "screened"
+        },
+        {
+          "type": "contains",
+          "value": "220",
+          "description": "randomized"
+        },
+        {
+          "type": "regex_match",
+          "value": "105|102",
+          "description": "ITT brojevi"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(DiagrammeR|Gmisc|consort|ggflowchart)",
+          "description": "contains: DiagrammeR OR contains: Gmisc OR contains: consort OR paket"
+        },
+        {
+          "type": "not_contains",
+          "value": "PRISMA",
+          "description": "ovo je CONSORT, ne PRISMA"
+        },
+        {
+          "type": "regex_match",
+          "value": "izgubljen|lost.{0,30}follow|withdraw|excluded",
+          "description": "regex_match: izgubljen|lost.{0,30}follow|withdraw|excluded"
+        }
+      ]
+    },
+    {
+      "id": "case_3",
+      "input": {
+        "text": "Generiraj forest plot pipeline, ali imam samo 3 studije i heterogenost je I²=94%."
+      },
+      "assertions": [
+        {
+          "type": "regex_match",
+          "value": "(?i)(I²|heterogenost)",
+          "description": "contains: I² OR problem identificiran"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(94%|visoka)",
+          "description": "contains: 94% OR visoka heterogenost"
+        },
+        {
+          "type": "not_contains",
+          "value": "\"random effects\" kao jedino rješenje bez upozorenja",
+          "description": "not_contains: \"random effects\" kao jedino rješenje bez upozorenj"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(pooling|meta\\-analiza)",
+          "description": "contains: pooling OR upitnost poolinga"
+        },
+        {
+          "type": "regex_match",
+          "value": "upozorenje|caution|ograničenje|limitation|subgroup|ne preporuč",
+          "description": "regex_match: upozorenje|caution|ograničenje|limitation|subgroup"
+        },
+        {
+          "type": "last_sentence_not_question",
+          "description": "Last sentence not ?"
+        }
+      ]
+    }
+  ]
+}

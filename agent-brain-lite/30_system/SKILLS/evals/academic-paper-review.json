@@ -1,0 +1,42 @@
+{
+  "skill_id": "academic-paper-review",
+  "version": "1.0",
+  "cases": [
+    {
+      "id": "case_1_structure",
+      "input": {
+        "text": "Pregledaj ovaj RCT sažetak (samo abstract): randomizirana studija, n=200, primarni ishod mortalitet, p=0.04. Napiši kratki peer-review stil."
+      },
+      "assertions": [
+        {
+          "type": "regex_match",
+          "value": "(?i)(strength|weakness|limitation|methodolog)",
+          "description": "structured review sections"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(abstract|punog teksta|full text|ograničen)",
+          "description": "notes abstract limitation"
+        }
+      ]
+    },
+    {
+      "id": "case_2_causal",
+      "input": {
+        "text": "Opservacijska kohorta tvrdi da intervencija 'uzrokuje' smanjenje mortaliteta. Ocijeni kao recenzent."
+      },
+      "assertions": [
+        {
+          "type": "regex_match",
+          "value": "(?i)(confound|kauzal|causal|opservacij|associated)",
+          "description": "flags causal language"
+        },
+        {
+          "type": "not_contains",
+          "value": "dokazuje uzročnost",
+          "description": "no causal endorsement"
+        }
+      ]
+    }
+  ]
+}

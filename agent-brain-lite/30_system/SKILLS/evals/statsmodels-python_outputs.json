@@ -1,0 +1,4 @@
+{
+  "case_ols_constant": "import statsmodels.api as sm\nX = sm.add_constant(df[['X1','X2']])\nmodel = sm.OLS(y, X).fit()\n# Diagnostics: residual plot, Breusch-Pagan za heteroskedasticity",
+  "case_r_default_redirect": "Za kohortu u R-u i Welch t-test primarni ishod koristite r-statistics / test-selection; ovo nije Python statsmodels zadatak."
+}

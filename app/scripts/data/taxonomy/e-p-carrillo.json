@@ -1,35 +1,154 @@
 {
   "brand": "E.P. Carrillo",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-23",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "https://epcarrillo.com/",
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w1_slice2 deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.1"
   ],
   "lines": {
-    "Core Line": {
-      "line": "Core",
-      "vitola": "E.P. Carrillo Robusto"
+    "Allegiance": {
+      "line": "Allegiance"
     },
-    "EPC Pledge Apogee": {
-      "line": "EPC Pledge",
-      "vitola": "Apogee"
+    "Cabinet": {
+      "line": "Cabinet"
     },
-    "EPC Pledge Prequel": {
-      "line": "EPC Pledge",
-      "vitola": "Prequel"
+    "Core": {
+      "line": "Core"
     },
-    "EPC Pledge Sojourn": {
-      "line": "EPC Pledge",
-      "vitola": "Apogee"
+    "Dusk Solidos": {
+      "line": "Dusk Solidos"
     },
-    "Pledge / Encore": {
-      "line": "Pledge",
-      "vitola": "Pledge Prequel (robusto)"
+    "Encore": {
+      "line": "Encore"
     },
-    "Pledge Apogee": {
-      "line": "Pledge",
-      "vitola": "Apogee"
+    "EPC Allegiance Confidant": {
+      "line": "Allegiance",
+      "vitola": "Confidant"
+    },
+    "EPC Allegiance Sidekick": {
+      "line": "Allegiance",
+      "vitola": "Sidekick"
+    },
+    "EPC Aniversario 15": {
+      "line": "Aniversario 15"
+    },
+    "EPC Encore Celestial": {
+      "line": "Encore",
+      "vitola": "Celestial"
+    },
+    "EPC Encore Edicion Unica Solidarios": {
+      "line": "Encore",
+      "vitola": "Edicion Unica Solidarios"
+    },
+    "EPC Encore El Futuro": {
+      "line": "Encore",
+      "vitola": "El Futuro"
+    },
+    "EPC Encore El Primero": {
+      "line": "Encore",
+      "vitola": "El Primero"
+    },
+    "EPC Encore Majestic": {
+      "line": "Encore",
+      "vitola": "Majestic"
+    },
+    "EPC Encore Noir Majestic No.2": {
+      "line": "Encore",
+      "vitola": "Noir Majestic No.2"
+    },
+    "EPC Encore Valientes": {
+      "line": "Encore",
+      "vitola": "Valientes"
+    },
+    "EPC Endure": {
+      "line": "Endure"
+    },
+    "EPC Essence Connecticut": {
+      "line": "Essence Connecticut"
+    },
+    "EPC Essence Honduras": {
+      "line": "Essence Honduras"
+    },
+    "EPC Essence Maduro": {
+      "line": "Essence Maduro"
+    },
+    "EPC Essence Sumatra": {
+      "line": "Essence Sumatra"
+    },
+    "EPC INCH Natural No. 60 Double": {
+      "line": "INCH Natural",
+      "vitola": "No. 60 Double"
+    },
+    "EPC INCH Natural No. 62": {
+      "line": "INCH Natural",
+      "vitola": "No. 62"
+    },
+    "EPC INCH Natural No. 64 Toro": {
+      "line": "INCH Natural",
+      "vitola": "No. 64 Toro"
+    },
+    "EPC INCH Natural No. 70 Gigante": {
+      "line": "INCH Natural",
+      "vitola": "No. 70 Gigante"
+    },
+    "EPC INCH Nicaragua No. 60": {
+      "line": "INCH Nicaragua",
+      "vitola": "No. 60"
+    },
+    "EPC La Historia Silk": {
+      "line": "La Historia",
+      "vitola": "Silk"
+    },
+    "EPC New Wave Connecticut Brillantes": {
+      "line": "New Wave Connecticut",
+      "vitola": "Brillantes"
+    },
+    "EPC New Wave Connecticut Divinos": {
+      "line": "New Wave Connecticut",
+      "vitola": "Divinos"
+    },
+    "EPC New Wave Connecticut Stella": {
+      "line": "New Wave Connecticut",
+      "vitola": "Stella"
+    },
+    "EPC Pledge": {
+      "line": "Pledge"
+    },
+    "EPC Short Run 2023": {
+      "line": "Short Run 2023"
+    },
+    "Inch Maduro": {
+      "line": "INCH Maduro"
+    },
+    "Inch Natural": {
+      "line": "INCH Natural"
+    },
+    "La Historia": {
+      "line": "La Historia"
+    },
+    "Maduro Predilectos": {
+      "line": "Maduro",
+      "vitola": "Predilectos"
+    },
+    "New Wave Connecticut": {
+      "line": "New Wave Connecticut"
+    },
+    "New Wave Reserva": {
+      "line": "New Wave Reserva"
+    },
+    "Pledge": {
+      "line": "Pledge"
+    },
+    "Seleccion Oscuro Piramides Royal": {
+      "line": "Seleccion Oscuro",
+      "vitola": "Piramides Royal"
+    },
+    "Small Batch": {
+      "line": "Small Batch"
     }
   },
   "vitolaRenames": {},

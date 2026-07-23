@@ -1,0 +1,35 @@
+---
+description: "Markdown wiki conventions for knowledge and nodes"
+globs: ["**/*.md", "knowledge/**", "nodes/**", "skills/**"]
+---
+
+# Markdown wiki conventions
+
+## Required YAML frontmatter (knowledge pages)
+
+```yaml
+---
+title: Page Title
+category: concept|entity|reference|project|node|skill|meta|doc
+tags: [tag1, tag2]
+summary: One line for RAG-lite scan
+created: YYYY-MM-DD
+updated: YYYY-MM-DD
+---
+```
+
+Nodes may include `triggers: [keyword1, keyword2]`.
+
+## Linking
+
+Use Obsidian-style `[[wikilinks]]` or `[[path/to/page|display text]]`.
+
+## RAG-lite query order
+
+1. Scan `summary` and `title` in frontmatter via search
+2. Open only matching `.md` bodies
+3. Cite paths in answers
+
+## After ingest
+
+Update `index.md`, `.manifest.json`, `log.md`, `hot.md`.

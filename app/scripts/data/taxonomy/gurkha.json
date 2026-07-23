@@ -1,19 +1,175 @@
 {
   "brand": "Gurkha",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-23",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "https://gurkhacigars.com/",
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w1_slice2 deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.1"
   ],
   "lines": {
-    "Heritage Corto": {
-      "line": "Heritage",
-      "vitola": "Corto Robusto"
+    "35th Anniversary": {
+      "line": "35th Anniversary"
     },
-    "Heritage Maduro Corto": {
-      "line": "Heritage Maduro",
-      "vitola": "Corto Robusto"
+    "Cask Blend": {
+      "line": "Cask Blend"
+    },
+    "Cellar Reserve 12 Years Hedonism": {
+      "line": "Cellar Reserve 12 Years",
+      "vitola": "Hedonism"
+    },
+    "Cellar Reserve 12 Years Solara": {
+      "line": "Cellar Reserve 12 Years",
+      "vitola": "Solara"
+    },
+    "Cellar Reserve 15 Years Hedonism": {
+      "line": "Cellar Reserve 15 Years",
+      "vitola": "Hedonism"
+    },
+    "Cellar Reserve 15 Years Koi": {
+      "line": "Cellar Reserve 15 Years",
+      "vitola": "Koi"
+    },
+    "Cellar Reserve 15 Years Limitada Hedonism": {
+      "line": "Cellar Reserve 15 Years Limitada",
+      "vitola": "Hedonism"
+    },
+    "Cellar Reserve 15 Years Limitada Solara": {
+      "line": "Cellar Reserve 15 Years Limitada",
+      "vitola": "Solara"
+    },
+    "Cellar Reserve 15 Years Solara": {
+      "line": "Cellar Reserve 15 Years",
+      "vitola": "Solara"
+    },
+    "Cellar Reserve 18 Years Hedonism": {
+      "line": "Cellar Reserve 18 Years",
+      "vitola": "Hedonism"
+    },
+    "Cellar Reserve 18 Years Koi": {
+      "line": "Cellar Reserve 18 Years",
+      "vitola": "Koi"
+    },
+    "Cellar Reserve 18 Years Prisoner": {
+      "line": "Cellar Reserve 18 Years",
+      "vitola": "Prisoner"
+    },
+    "Cellar Reserve 18 Years Solara": {
+      "line": "Cellar Reserve 18 Years",
+      "vitola": "Solara"
+    },
+    "Cellar Reserve 21 Years Hedonism": {
+      "line": "Cellar Reserve 21 Years",
+      "vitola": "Hedonism"
+    },
+    "Cellar Reserve 21 Years Solara": {
+      "line": "Cellar Reserve 21 Years",
+      "vitola": "Solara"
+    },
+    "Classic": {
+      "line": "Classic"
+    },
+    "Evil": {
+      "line": "Evil"
+    },
+    "Ghost": {
+      "line": "Ghost"
+    },
+    "Grand Reserve Cognac": {
+      "line": "Grand Reserve Cognac"
+    },
+    "Grand Reserve Maduro": {
+      "line": "Grand Reserve Maduro"
+    },
+    "Grand Reserve Natural": {
+      "line": "Grand Reserve Natural"
+    },
+    "Heritage": {
+      "line": "Heritage"
+    },
+    "Heritage Maduro": {
+      "line": "Heritage Maduro"
+    },
+    "Legend 1959": {
+      "line": "Legend 1959"
+    },
+    "Legend Imperial": {
+      "line": "Legend Imperial"
+    },
+    "Marquesa": {
+      "line": "Marquesa"
+    },
+    "Marquesa Kiste": {
+      "line": "Marquesa",
+      "vitola": "Kiste"
+    },
+    "Nicaragua Series": {
+      "line": "Nicaragua Series"
+    },
+    "Pedro Martin Ruby": {
+      "line": "Pedro Martin Ruby"
+    },
+    "Prize Fighter": {
+      "line": "Prize Fighter"
+    },
+    "Revenant Corojo": {
+      "line": "Revenant Corojo"
+    },
+    "Revenant Maduro": {
+      "line": "Revenant Maduro"
+    },
+    "Royal Challenge": {
+      "line": "Royal Challenge"
+    },
+    "Royal Challenge Maduro": {
+      "line": "Royal Challenge Maduro"
+    },
+    "Seduction": {
+      "line": "Seduction"
+    },
+    "Special Edition 2025 Year of Snake by EPC": {
+      "line": "Special Edition 2025 Year of Snake by EPC"
+    },
+    "Special Edition Bourbon Collection Glastube": {
+      "line": "Special Edition Bourbon Collection Glastube"
+    },
+    "Special Edition Bourbon Collection Natural Glastube": {
+      "line": "Special Edition Bourbon Collection Natural Glastube"
+    },
+    "Special Edition Kingdom": {
+      "line": "Special Edition Kingdom"
+    },
+    "Special Edition Lounge Exclusive Dragon Maduro": {
+      "line": "Special Edition Lounge Exclusive Dragon Maduro"
+    },
+    "Special Edition Lounge Exclusive Dragon Natural": {
+      "line": "Special Edition Lounge Exclusive Dragon Natural"
+    },
+    "Special Edition Ron Abuelo Anejo 7 Anos Glas": {
+      "line": "Special Edition Ron Abuelo Anejo 7 Anos Glas"
+    },
+    "Special Edition Tyson 2.0 Undisputed": {
+      "line": "Special Edition Tyson 2.0 Undisputed"
+    },
+    "Special Edition Tyson 2.0 Undisputed Gordo Maduro": {
+      "line": "Special Edition Tyson 2.0 Undisputed Gordo Maduro"
+    },
+    "Special Edition Tyson 2.0 Undisputed Maduro": {
+      "line": "Special Edition Tyson 2.0 Undisputed Maduro"
+    },
+    "Special Edition Year of Dragon": {
+      "line": "Special Edition Year of Dragon"
+    },
+    "Treinta 30th Anniversary": {
+      "line": "Treinta 30th Anniversary"
+    },
+    "Treinta 30th Anniversary Aganorsa": {
+      "line": "Treinta 30th Anniversary Aganorsa"
+    },
+    "Wicked Indie": {
+      "line": "Wicked Indie"
     }
   },
   "vitolaRenames": {},

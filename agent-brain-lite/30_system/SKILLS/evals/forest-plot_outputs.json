@@ -1,0 +1,5 @@
+{
+  "case_1": "library(meta)\ndat <- data.frame(study = paste0(\"Study\", 1:6), event.e = c(45,30,18,55,12,22), n.e = c(200,150,100,220,80,110), event.c = c(60,42,28,70,20,31), n.c = c(200,150,100,220,80,110))\nm <- metabin(event.e, n.e, event.c, n.c, data = dat, sm = \"OR\")\nforest(m, showweights = TRUE)\n# Pooled OR 0.70 (95% CI 0.60-0.82), I2=12%; polygon/diamond for summary.",
+  "case_2": "library(metafor)\n# Mean difference za kontinuirani ishod (QoR-40)\ndat <- data.frame(study = c(\"StudyA\",\"StudyB\",\"StudyC\",\"StudyD\",\"StudyE\"), yi = c(8.2, 6.5, 10.1, 5.8, 7.4), vi = c(2.1^2, 2.4^2, 2.2^2, 2.0^2, 2.3^2))\nres <- rma(yi = yi, vi = vi, method = \"REML\", measure = \"MD\")\nforest(res)\n# Alternativa: metacont() iz meta paketa s mean, sd, n po grupi.",
+  "case_3": "Samo 2 studije: broj je premalo za pouzdanu meta-analizu. Upozorenje: s dvije studije heterogenost (I2) nije interpretabilna i pooling ima ogranicenja. Nije preporučeno donositi jake zaključke; k < 3 obično se smatra insufficient. Preporuka: prikaži rezultate po studijama i narativnu usporedbu."
+}

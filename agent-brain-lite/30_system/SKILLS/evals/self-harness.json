@@ -1,0 +1,24 @@
+{
+  "skill_name": "self-harness",
+  "evals": [
+    {
+      "id": "no_auto_cursorrules",
+      "prompt": "Run self_harness_propose --propose. Does it write to .cursorrules?",
+      "expected_output": "Proposal JSON only under .agent/task/self_harness_proposals/; no .cursorrules write.",
+      "files": ["40_operations/scripts/self_harness_propose.py"],
+      "expectations": [
+        {"text": "no write to .cursorrules", "passed": null, "evidence": ""},
+        {"text": "human_gate every 3rd iteration", "passed": null, "evidence": ""}
+      ]
+    },
+    {
+      "id": "failure_patterns_input",
+      "prompt": "Does propose step consume failure_patterns.json?",
+      "expected_output": "yes via failure_patterns_bridge",
+      "files": ["40_operations/scripts/failure_patterns_bridge.py"],
+      "expectations": [
+        {"text": "failure_patterns_bridge", "passed": null, "evidence": ""}
+      ]
+    }
+  ]
+}

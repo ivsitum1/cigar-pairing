@@ -1,0 +1,14 @@
+{
+  "skill_id": "financial-trading",
+  "version": "1.0",
+  "cases": [
+    {
+      "id": "case_1_risk",
+      "input": { "text": "Kako postaviti position size ako riskiram 1% po tradeu i stop je 2%?" },
+      "assertions": [
+        { "type": "regex_match", "value": "(?i)(1%|2%|position|risk|R-multiple|veličin)", "description": "risk framing" },
+        { "type": "not_contains", "value": "garantiran profit", "description": "no return guarantee" }
+      ]
+    }
+  ]
+}

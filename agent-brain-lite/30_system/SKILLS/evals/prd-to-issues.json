@@ -1,0 +1,24 @@
+{
+  "skill_id": "prd-to-issues",
+  "version": "1.0",
+  "cases": [
+    {
+      "id": "case_vertical_slice",
+      "input": {
+        "text": "Razbij PRD na issue-e; želim tracer bullet vertikalne sliceove."
+      },
+      "assertions": [
+        {
+          "type": "regex_match",
+          "value": "(?i)(vertical slice|tracer bullet|end.to.end|AFK|HITL)",
+          "description": "vertical slice framing"
+        },
+        {
+          "type": "not_contains",
+          "value": "research-spec",
+          "description": "not scholarly spec milestones"
+        }
+      ]
+    }
+  ]
+}

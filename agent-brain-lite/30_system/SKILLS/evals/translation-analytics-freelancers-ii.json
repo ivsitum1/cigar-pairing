@@ -1,0 +1,14 @@
+{
+  "skill_id": "translation-analytics-freelancers-ii",
+  "version": "1.0",
+  "cases": [
+    {
+      "id": "case_offline_benchmark",
+      "input": { "text": "We need offline LLM translation benchmarks for confidential client docs." },
+      "assertions": [
+        { "type": "regex_match", "value": "(?i)(offline|on-prem|local|confidential|privacy)", "description": "addresses confidentiality" },
+        { "type": "regex_match", "value": "(?i)(benchmark|metric|LQA|corpus|segment)", "description": "mentions evaluation structure" }
+      ]
+    }
+  ]
+}

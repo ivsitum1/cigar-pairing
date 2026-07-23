@@ -1,0 +1,109 @@
+{
+  "skill_id": "strobe-checklist",
+  "version": "1.0",
+  "cases": [
+    {
+      "id": "case_1",
+      "input": {
+        "text": "Provjeri STROBE usklađenost za kohortnu studiju: prijavljeni setting, participanti, exposures, outcomes, confounders, statistička metoda. NIJE prijavljeno: handling of missing data, sensitivity analysis, funding sources."
+      },
+      "assertions": [
+        {
+          "type": "regex_match",
+          "value": "(?i)(missing\\ data|nedostajući\\ podaci)",
+          "description": "contains: missing data OR mora biti identificirano"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(sensitivity\\ analysis|osjetljivost)",
+          "description": "contains: sensitivity analysis OR nedostaje"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(funding|financiranje)",
+          "description": "contains: funding OR nedostaje"
+        },
+        {
+          "type": "contains",
+          "value": "STROBE",
+          "description": "eksplicitno referenciranje"
+        },
+        {
+          "type": "regex_match",
+          "value": "nedostaje|nije naveden|item [0-9]|stavka [0-9]|missing",
+          "description": "regex_match: nedostaje|nije naveden|item [0-9]|stavka [0-9]|mis"
+        },
+        {
+          "type": "last_sentence_not_question",
+          "description": "Last sentence not ?"
+        }
+      ]
+    },
+    {
+      "id": "case_2",
+      "input": {
+        "text": "Primijeniti STROBE checklist na case-control studiju. Koje su stavke specifične za case-control a ne za kohortnu? Fokus na selekciju kontrola i matchanje."
+      },
+      "assertions": [
+        {
+          "type": "contains",
+          "value": "case-control",
+          "description": "prepoznaje dizajn"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(controls|kontrole)",
+          "description": "contains: controls OR selekcija kontrola specifična za CC"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(matching|uparivanje|matched)",
+          "description": "contains: matching OR contains: uparivanje OR contains: matched"
+        },
+        {
+          "type": "not_contains",
+          "value": "isti checklist kao kohortna",
+          "description": "postoje razlike"
+        },
+        {
+          "type": "regex_match",
+          "value": "specifičan|specific|razlika|differ|case.control",
+          "description": "regex_match: specifičan|specific|razlika|differ|case.control"
+        }
+      ]
+    },
+    {
+      "id": "case_3",
+      "input": {
+        "text": "Koristim STROBE checklist za cross-sectional studiju. Je li STROBE primjenjiv ili treba drugi checklist?"
+      },
+      "assertions": [
+        {
+          "type": "contains",
+          "value": "cross-sectional",
+          "description": "prepoznaje dizajn"
+        },
+        {
+          "type": "regex_match",
+          "value": "STROBE.{0,50}cross.sectional|cross.sectional.{0,50}STROBE",
+          "description": "STROBE JE primjenjiv"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(prevalencija|prevalence)",
+          "description": "contains: prevalencija OR specifičan za cross-sectional"
+        },
+        {
+          "type": "not_contains",
+          "value": "STROBE nije za cross-sectional",
+          "description": "STROBE je primjenjiv za CS"
+        },
+        {
+          "type": "regex_match",
+          "value": "cross.sectional.{0,60}STROBE|STROBE.{0,60}cross.sectional|prilagod|modificiran",
+          "description": "regex_match: cross.sectional.{0,60}STROBE|STROBE.{0,60}cross.se"
+        }
+      ]
+    }
+  ]
+}

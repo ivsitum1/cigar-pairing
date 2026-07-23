@@ -1,0 +1,19 @@
+{
+  "skill_id": "observational-studies",
+  "version": "1.0",
+  "cases": [
+    {
+      "id": "case_case_control",
+      "input": {
+        "text": "Piši case-control manuskript o faktorima rizika za ECMO mortalitet."
+      },
+      "assertions": [
+        {
+          "type": "regex_match",
+          "value": "(?i)(case.control|slučaj.kontrol|STROBE|odds ratio|ekspozicij)",
+          "description": "case-control structure"
+        }
+      ]
+    }
+  ]
+}

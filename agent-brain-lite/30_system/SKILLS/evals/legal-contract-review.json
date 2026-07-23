@@ -1,0 +1,61 @@
+{
+  "skill_id": "legal-contract-review",
+  "version": "1.0",
+  "cases": [
+    {
+      "id": "case_disclaimer_and_structure",
+      "input": {
+        "text": "Pregledaj ovaj NDA ugovor (vendor). Zanima me ograničenje odgovornosti i povjerljivost. [priložen tekst: liability cap 3 months fees, unilateral indemnity for all breaches]"
+      },
+      "assertions": [
+        {
+          "type": "regex_match",
+          "value": "(?i)(nije pravni savjet|not legal advice|qualified counsel|odvjetnik)",
+          "description": "legal disclaimer present"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(GREEN|YELLOW|RED)",
+          "description": "severity classification used"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(limitation of liability|ograničenje odgovornosti|liability cap)",
+          "description": "addresses liability"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(indemnif|odštet|naknad)",
+          "description": "addresses indemnification"
+        },
+        {
+          "type": "last_sentence_not_question",
+          "description": "Last sentence not ?"
+        }
+      ]
+    },
+    {
+      "id": "case_missing_contract",
+      "input": {
+        "text": "Možeš li pregledati ugovor?"
+      },
+      "assertions": [
+        {
+          "type": "regex_match",
+          "value": "(?i)(priloži|upload|tekst ugovora|putanju|document|nedostaje|provide|pošalji)",
+          "description": "asks for contract text"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(nije pravni savjet|not legal advice)",
+          "description": "disclaimer even when asking for input"
+        },
+        {
+          "type": "not_contains",
+          "value": "GREEN — Acceptable",
+          "description": "does not fabricate full review without text"
+        }
+      ]
+    }
+  ]
+}

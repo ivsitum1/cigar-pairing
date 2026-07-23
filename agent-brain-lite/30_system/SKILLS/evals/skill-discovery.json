@@ -1,0 +1,51 @@
+{
+  "skill_id": "skill-discovery",
+  "version": "1.0",
+  "cases": [
+    {
+      "id": "case_local_first",
+      "input": {
+        "text": "Trebam skill za pregled ugovora ali nisam siguran imamo li ga u mozgu. Pretraži."
+      },
+      "assertions": [
+        {
+          "type": "regex_match",
+          "value": "(?i)(registry|skill_discovery_scan|30_system/SKILLS|lokaln)",
+          "description": "mentions local registry scan"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(legal-contract-review|contract review|ugovor)",
+          "description": "suggests legal-contract-review or contract domain"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(SkillsMP|skillsmp_search|external)",
+          "description": "mentions external search path"
+        },
+        {
+          "type": "last_sentence_not_question",
+          "description": "Last sentence not ?"
+        }
+      ]
+    },
+    {
+      "id": "case_no_duplicate_meta",
+      "input": {
+        "text": "Nađi skill za meta-analizu na SkillsMP, nemamo ga."
+      },
+      "assertions": [
+        {
+          "type": "regex_match",
+          "value": "(?i)(meta-analysis|već|already|registry|integriran)",
+          "description": "notes existing meta-analysis skill or registry"
+        },
+        {
+          "type": "not_contains",
+          "value": "must import from SkillsMP because you have no meta-analysis",
+          "description": "does not claim zero local coverage falsely"
+        }
+      ]
+    }
+  ]
+}

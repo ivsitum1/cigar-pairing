@@ -1,0 +1,56 @@
+{
+  "version": "1.0.0",
+  "problem": "Users cannot export analysis tables to CSV from the dashboard.",
+  "solution": "Add an export action on the results view that streams CSV and respects row filters.",
+  "user_stories": [
+    {
+      "id": "US-1",
+      "description": "As a user, I can click Export CSV and download the visible table with current filters.",
+      "priority": "P0",
+      "passes": false
+    },
+    {
+      "id": "US-2",
+      "description": "As a user, I see an error message if export fails (e.g. empty result).",
+      "priority": "P1",
+      "passes": false
+    }
+  ],
+  "technical_decisions": [
+    {
+      "decision": "CSV generated server-side; UTF-8 with header row.",
+      "rationale": "Consistency with large datasets and encoding.",
+      "passes": true
+    }
+  ],
+  "execution_chain": {
+    "sequence": ["grill-me", "write-prd", "prd-to-issues", "ralph-loop"],
+    "status": "planned",
+    "notes": "Run Ralph loop only after explicit Ralph ON."
+  },
+  "verification_protocol": {
+    "claim_statuses": ["VERIFIED", "INFERRED", "UNVERIFIED"],
+    "baseline_vs_steered": {
+      "required": true,
+      "passes": false,
+      "notes": "Compare baseline output against steered output on the same prompt set."
+    },
+    "reproducibility": {
+      "required": true,
+      "passes": false,
+      "seed": 42,
+      "environment": "python=3.11",
+      "locked_versions": false
+    }
+  },
+  "issues": [
+    {
+      "id": "I-1",
+      "title": "End-to-end: API route + UI button + test for US-1",
+      "priority": "P0",
+      "passes": false,
+      "blocked_by": [],
+      "maps_to_stories": ["US-1"]
+    }
+  ]
+}

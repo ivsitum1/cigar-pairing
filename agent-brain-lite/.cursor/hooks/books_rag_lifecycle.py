@@ -1,0 +1,1 @@
+C:/Users/Admin/Documents/agent rules/.cursor/hooks/books_rag_lifecycle.py

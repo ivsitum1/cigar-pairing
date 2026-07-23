@@ -1,0 +1,24 @@
+{
+  "skill_id": "research-spec-to-milestones",
+  "version": "1.0",
+  "cases": [
+    {
+      "id": "case_milestones",
+      "input": {
+        "text": "Razloži research-spec na milestonee za statistiku pa pisanje."
+      },
+      "assertions": [
+        {
+          "type": "regex_match",
+          "value": "(?i)(milestone|blocked_by|tracer|redoslijed)",
+          "description": "milestone breakdown"
+        },
+        {
+          "type": "not_contains",
+          "value": "vertical slice issue",
+          "description": "not software issue tracker slices"
+        }
+      ]
+    }
+  ]
+}

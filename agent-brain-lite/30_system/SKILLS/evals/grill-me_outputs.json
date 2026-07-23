@@ -1,0 +1,3 @@
+{
+  "case_design_tree": "Prije implementacije predlažem kratki design tree o API granicama. Pitanja: (1) Koji identiteti i session boundary ulaze u scope? (2) Koji endpointi su javni vs interni? (3) Koje integracije su izvan scopea? Molim odgovore prije pisanja specifikacije; ne idem odmah u implementaciju."
+}

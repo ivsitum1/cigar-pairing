@@ -1,12 +1,153 @@
 {
   "brand": "Drew Estate",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-23",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "https://drewestate.com/",
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w1_slice2 deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.1"
   ],
-  "lines": {},
+  "lines": {
+    "Acid": {
+      "line": "Acid"
+    },
+    "Acid Blondie - Shipping restrictions": {
+      "line": "Acid Blondie"
+    },
+    "Blackened M81 Maduro to Core M81": {
+      "line": "Blackened M81"
+    },
+    "Blackened S84 Shade to Black S84": {
+      "line": "Blackened S84"
+    },
+    "Deadwood by Crazy Alice": {
+      "line": "Deadwood Crazy Alice"
+    },
+    "Deadwood by Fat Bottom Betty": {
+      "line": "Deadwood Fat Bottom Betty"
+    },
+    "Deadwood by Leather Rose": {
+      "line": "Deadwood Leather Rose"
+    },
+    "Deadwood Dominicana": {
+      "line": "Deadwood Dominicana"
+    },
+    "Deadwood Dominicana Buenas Noches": {
+      "line": "Deadwood Dominicana Buenas Noches"
+    },
+    "Deadwood Fat Bottom Betty": {
+      "line": "Deadwood Fat Bottom Betty"
+    },
+    "Deadwood Girl With No Name": {
+      "line": "Deadwood Girl With No Name"
+    },
+    "Deadwood Leather Rose": {
+      "line": "Deadwood Leather Rose"
+    },
+    "Factory Smokes Maduro": {
+      "line": "Factory Smokes Maduro"
+    },
+    "Factory Smokes Shade": {
+      "line": "Factory Smokes Shade"
+    },
+    "Factory Smokes Sungrown": {
+      "line": "Factory Smokes Sungrown"
+    },
+    "Florida Sun Grown": {
+      "line": "Florida Sun Grown"
+    },
+    "Herrera Esteli": {
+      "line": "Herrera Esteli"
+    },
+    "Isla del Sol by - Shipping restrictions": {
+      "line": "Isla del Sol by"
+    },
+    "Isla del Sol by Gran - Shipping restrictions": {
+      "line": "Isla del Sol by Gran"
+    },
+    "Java by - Shipping restrictions": {
+      "line": "Java by"
+    },
+    "Java Latte by - Shipping restrictions": {
+      "line": "Java Latte by"
+    },
+    "Java Mint by - Shipping restrictions": {
+      "line": "Java Mint by"
+    },
+    "Java Red by - Shipping restrictions": {
+      "line": "Java Red by"
+    },
+    "Liga Privada H99": {
+      "line": "Liga Privada H99"
+    },
+    "Liga Privada No. 9": {
+      "line": "Liga Privada No. 9"
+    },
+    "Liga Privada T52": {
+      "line": "Liga Privada T52"
+    },
+    "Liga Privada Único Serie": {
+      "line": "Liga Privada Único Serie"
+    },
+    "Liga Undercrown": {
+      "line": "Undercrown"
+    },
+    "Liga Undercrown 10": {
+      "line": "Undercrown 10"
+    },
+    "Liga Undercrown 10 by Doble": {
+      "line": "Undercrown 10",
+      "vitola": "Doble"
+    },
+    "Liga Undercrown by Flying Pig": {
+      "line": "Undercrown",
+      "vitola": "Flying Pig"
+    },
+    "Liga Undercrown Dogma": {
+      "line": "Undercrown Dogma"
+    },
+    "Liga Undercrown El Tigre Dominicano": {
+      "line": "Undercrown El Tigre Dominicano"
+    },
+    "Nica Rustica Adobe": {
+      "line": "Nica Rustica Adobe"
+    },
+    "Nica Rustica Connecticut Broadleaf": {
+      "line": "Nica Rustica Connecticut Broadleaf"
+    },
+    "Norteno": {
+      "line": "Norteno"
+    },
+    "Norteno by Fino": {
+      "line": "Norteno by Fino"
+    },
+    "Norteno by Humidor": {
+      "line": "Norteno by Humidor"
+    },
+    "Pappy Van Winkle": {
+      "line": "Pappy Van Winkle"
+    },
+    "Tabak Especial by Dulce - Shipping restrictions": {
+      "line": "Tabak Especial by Dulce"
+    },
+    "Tabak Especial by Negra - Shipping restrictions": {
+      "line": "Tabak Especial by Negra"
+    },
+    "Undercrown 10 All Dekk´d Out": {
+      "line": "Undercrown 10 All Dekk´d Out"
+    },
+    "Undercrown Maduro": {
+      "line": "Undercrown Maduro"
+    },
+    "Undercrown Shade": {
+      "line": "Undercrown Shade"
+    },
+    "Undercrown Sun Grown": {
+      "line": "Undercrown Sun Grown"
+    }
+  },
   "vitolaRenames": {},
   "shapes": {},
   "keepSeparate": [
@@ -52,5 +193,7 @@
     ]
   ],
   "lineNotes": {},
-  "unresolved": []
+  "unresolved": [
+    "Drew Estate: Acid/Java/Tabak shipping-restriction SKUs need catalog cleanup"
+  ]
 }

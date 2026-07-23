@@ -1,0 +1,38 @@
+---
+description: "Writing-only inheritance from agent-rules parent (skills + subset of Cursor rules)"
+alwaysApply: true
+---
+
+# Parent inheritance (writing-only)
+
+This project uses **agent brain lite** with a **writing-only** slice of the parent `agent-rules` brain.
+
+## What is inherited
+
+| Asset | Path |
+|-------|------|
+| Writing + honesty Cursor rules | `.cursor/rules/` (allowlisted; see `harness/parent_rules_manifest.json`) |
+| Skills (including nonacademic writer) | `agent-brain-lite/30_system/SKILLS/` |
+| Ops / learning | `40_operations/`, `memory_engine/` |
+| Cursor docs | `.cursor/docs/` |
+
+**Not inherited:** parent MCP (`symlink_mcp_json: false`), scholarly/reporting/statistics rules, `skills-auto-detect` (would pull research workflows).
+
+## Skills to use for prose
+
+1. `SKILL_nonacademic-writer.md` — outline → draft → polish
+2. `SKILL_avoid-ai-formulations.md` — anti-AI phrasing
+3. Rules: `writing-avoid-ai.mdc`, `writing-avoid-ai-extended.mdc`, `writing-hrvatski-pravopis.mdc`
+
+## Read-only on parent
+
+Do not modify files under `PARENT_BRAIN_PATH`. Edit project docs (`docs/bonton/`), `01_work/`, and lite wiki under `agent-brain-lite/knowledge/`.
+
+## Re-link
+
+```powershell
+cd agent-brain-lite
+python scripts/link_parent.py --parent "C:\Users\Admin\Documents\agent rules"
+```
+
+After re-link, confirm research rules stay excluded via `parent_rules_manifest.json` version `1.2-writing-only`.

@@ -1,0 +1,75 @@
+# Requirements for check_ai_plagiarism.py
+
+# Basic packages (already included in Python standard library)
+# - json
+# - os
+# - sys
+# - argparse
+# - pathlib
+# - datetime
+# - typing
+# - difflib
+
+# ============================================================================
+# Core Dependencies (Required for basic functionality)
+# ============================================================================
+requests>=2.31.0  # For API calls (if real APIs are used)
+
+# ============================================================================
+# Advanced Dependencies (Optional - for improved plagiarism detection)
+# ============================================================================
+
+# Text Similarity & Plagiarism Detection
+scikit-learn>=1.3.0  # TF-IDF vectorization, cosine similarity, n-grams
+textdistance>=4.6.0  # Multiple text similarity algorithms (Jaccard, Jaro-Winkler, etc.)
+
+# Semantic Similarity (for detecting paraphrased content)
+sentence-transformers>=2.2.0  # Semantic embeddings for text similarity
+# Note: sentence-transformers will auto-install torch and transformers
+
+# Text Statistics & Readability (for AI detection)
+textstat>=0.7.3  # Readability metrics, vocabulary analysis
+
+# Translation Support (for Croatian -> English workflow)
+googletrans==4.0.0rc1  # Google Translate API for translation
+langdetect>=1.0.9  # Language detection
+
+# ============================================================================
+# Optional: Advanced AI Detection (large packages - install only if needed)
+# ============================================================================
+
+# Uncomment to enable advanced AI detection with transformers:
+# transformers>=4.30.0  # Pre-trained models for AI text detection
+# torch>=2.0.0  # Required by transformers (use CPU version if no GPU)
+# Note: For CPU-only installation: pip install torch --index-url https://download.pytorch.org/whl/cpu
+
+# ============================================================================
+# Installation Instructions
+# ============================================================================
+#
+# Basic installation (current functionality):
+#   pip install requests
+#
+# Improved plagiarism detection:
+#   pip install scikit-learn textdistance sentence-transformers textstat
+
+# Translation support (for Croatian -> English workflow):
+#   pip install googletrans==4.0.0rc1 langdetect
+#
+# Full installation (including advanced AI detection):
+#   pip install -r requirements.txt
+#   # Then uncomment transformers and torch above, or install separately:
+#   pip install transformers torch
+#
+# CPU-only installation (if no GPU available):
+#   pip install transformers torch --index-url https://download.pytorch.org/whl/cpu
+#
+# ============================================================================
+# Notes
+# ============================================================================
+#
+# - Most functionality works without additional packages (uses fallback methods)
+# - Advanced features are optional and improve accuracy significantly
+# - sentence-transformers and transformers are large packages (~500MB-2GB)
+# - Consider installing only what you need based on your use case
+#

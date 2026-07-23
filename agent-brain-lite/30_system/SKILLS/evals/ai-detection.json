@@ -1,0 +1,193 @@
+{
+  "skill_id": "ai-detection",
+  "version": "1.0",
+  "cases": [
+    {
+      "id": "case_1",
+      "input": {
+        "text": "Revidiraj sljedeći paragraf da sniziš AI detection score (GPTZero/Originality). Tekst mora ostati medicinski točan.\n\"It is worth noting that the administration of vasopressors in septic shock represents a cornerstone of hemodynamic management. Furthermore, it is important to consider that norepinephrine is generally considered the first-line agent. In conclusion, clinicians should be aware of the potential adverse effects.\""
+      },
+      "assertions": [
+        {
+          "type": "regex_match",
+          "value": "(?i)norepinephr(in|ine)",
+          "description": "termin ostaje (medicinska točnost; prihvaća norepinephrin i norepinephrine)"
+        },
+        {
+          "type": "not_contains",
+          "value": "It is worth noting",
+          "description": "not_contains: It is worth noting"
+        },
+        {
+          "type": "not_contains",
+          "value": "Furthermore",
+          "description": "not_contains: Furthermore"
+        },
+        {
+          "type": "not_contains",
+          "value": "In conclusion",
+          "description": "not_contains: In conclusion"
+        },
+        {
+          "type": "not_contains",
+          "value": "it is important to consider",
+          "description": "not_contains: it is important to consider"
+        },
+        {
+          "type": "last_sentence_not_question",
+          "description": "Last sentence not ?"
+        }
+      ]
+    },
+    {
+      "id": "case_2",
+      "input": {
+        "text": "Provjeri AI score i revidiraj samo dijelove s visokim AI markerima:\n\"Norepinephrin ostaje lijek prvog izbora u septičnom šoku prema Surviving Sepsis Guidelines 2021. Ciljana vrijednost MAP ≥65 mmHg postiže se titriranjem doze između 0.01–3.3 mcg/kg/min. Nismo opservirali statistički značajnu razliku u 28-dnevnom mortalitetu između skupina (p=0.34).\""
+      },
+      "assertions": [
+        {
+          "type": "regex_match",
+          "value": "nizak|minimalne izmjene|prirodan stil|low score|malo AI markera",
+          "description": "regex_match: nizak|minimalne izmjene|prirodan stil|low score|ma"
+        },
+        {
+          "type": "not_contains",
+          "value": "It is worth noting",
+          "description": "ne dodaje AI fraze revizijom"
+        },
+        {
+          "type": "not_contains",
+          "value": "Furthermore",
+          "description": "not_contains: Furthermore"
+        },
+        {
+          "type": "word_count_below",
+          "value": 400,
+          "description": "word_count_below: 400"
+        }
+      ]
+    },
+    {
+      "id": "case_3",
+      "input": {
+        "text": "Identificiraj sve AI formulacije i predloži konkretne zamjene za svaku:\n\"Certainly, it is evident that this groundbreaking study delves into the intricate complexities of perioperative fluid management. Importantly, the findings underscore the necessity of a nuanced approach. It should be noted that the authors navigate these challenges with commendable rigor. In summary, this research paves the way for future investigations.\""
+      },
+      "assertions": [
+        {
+          "type": "contains",
+          "value": "delve",
+          "description": "contains: delve"
+        },
+        {
+          "type": "regex_match",
+          "value": "delves?.{0,50}marker|delves?.{0,50}AI",
+          "description": "identificiran"
+        },
+        {
+          "type": "contains",
+          "value": "groundbreaking",
+          "description": "identificiran"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(paves\\ the\\ way|pave\\ the\\ way)",
+          "description": "contains: paves the way OR identificiran"
+        },
+        {
+          "type": "contains",
+          "value": "Certainly",
+          "description": "identificiran"
+        },
+        {
+          "type": "not_contains",
+          "value": "tekst je prihvatljiv",
+          "description": "not_contains: tekst je prihvatljiv"
+        },
+        {
+          "type": "not_contains",
+          "value": "nema AI markera",
+          "description": "not_contains: nema AI markera"
+        },
+        {
+          "type": "regex_match",
+          "value": "zamjen|alternativ|umjesto|replace|revid",
+          "description": "regex_match: zamjen|alternativ|umjesto|replace|revid"
+        }
+      ]
+    },
+    {
+      "id": "case_4_ai_vocabulary",
+      "input": {
+        "text": "Revidiraj za prirodan akademski stil (zadrži medicinsku točnost):\n\"This robust study delves into perioperative fluid management. Furthermore, the comprehensive findings leverage advanced metrics. In order to optimize outcomes, clinicians should utilize evidence-based protocols.\""
+      },
+      "assertions": [
+        {
+          "type": "not_contains",
+          "value": "delve",
+          "description": "not_contains: delve"
+        },
+        {
+          "type": "not_contains",
+          "value": "Furthermore",
+          "description": "not_contains: Furthermore"
+        },
+        {
+          "type": "not_contains",
+          "value": "utilize",
+          "description": "not_contains: utilize"
+        },
+        {
+          "type": "not_contains",
+          "value": "In order to",
+          "description": "not_contains: In order to"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)fluid|perioperative",
+          "description": "topic preserved"
+        }
+      ]
+    },
+    {
+      "id": "case_5_rule_of_three",
+      "input": {
+        "text": "Označi AI obrasce i predloži kraću verziju:\n\"Our work delivers innovation, inspiration, and insight for the field of critical care.\""
+      },
+      "assertions": [
+        {
+          "type": "regex_match",
+          "value": "(?i)(rule of three|triplet|triada|triplet)",
+          "description": "flags forced triplet"
+        },
+        {
+          "type": "not_contains",
+          "value": "innovation, inspiration, and insight",
+          "description": "removes triplet in revision"
+        }
+      ]
+    },
+    {
+      "id": "case_6_citation_bugs",
+      "input": {
+        "text": "Očisti instant AI flagove i zadrži smisao:\n\"Recent trials show benefit :contentReference[oaicite:0]{index=0}. See https://example.org?utm_source=chatgpt.com for details.\""
+      },
+      "assertions": [
+        {
+          "type": "not_contains",
+          "value": "contentReference",
+          "description": "not_contains: contentReference"
+        },
+        {
+          "type": "not_contains",
+          "value": "utm_source=chatgpt",
+          "description": "not_contains: utm_source"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)trial|benefit",
+          "description": "meaning preserved"
+        }
+      ]
+    }
+  ]
+}

@@ -569,13 +569,24 @@ def apply_taxonomy(cigars: list, tax_files: list[dict], report: dict) -> list:
     for frm, to in list(aliases.items()):
         if to in live_ids:
             continue
+        # follow alias chain (e.g. long-id → alr-2nd → aged-limited-…)
+        seen = {frm, to}
+        cur = to
+        while cur in aliases and aliases[cur] not in seen:
+            cur = aliases[cur]
+            seen.add(cur)
+            if cur in live_ids:
+                break
+        if cur in live_ids:
+            aliases[frm] = cur
+            retargeted.append({"from": frm, "was": to, "to": cur})
+            continue
         cands = sorted(
             (lid for lid in live_ids if to == lid or to.startswith(f"{lid}-")),
             key=len,
             reverse=True,
         )
         if not cands and to.endswith("-limited-edition-quinquagenario"):
-            # brand rename shortened the line slug
             alt = "cig-roma-craft-tobac-quinquagenario"
             if alt in live_ids:
                 cands = [alt]

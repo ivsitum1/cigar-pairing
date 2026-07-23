@@ -1,0 +1,27 @@
+{
+  "benchmark_id": "trajectory_full_example",
+  "description": "Example live-run benchmark configuration",
+  "runs": [
+    {
+      "run_id": "run_001",
+      "trajectory_path": "90_archive/artifacts/live_runs/run_001.jsonl",
+      "golden_set_case_id": "case_001"
+    }
+  ],
+  "gates": {
+    "min_trajectory_score": 0.7,
+    "min_rag_score": 0.7,
+    "max_judge_variance": 0.08,
+    "min_judge_consistency": 0.75,
+    "min_golden_set_score": 0.8
+  },
+  "judges": {
+    "judge_runs": 3
+  },
+  "output": {
+    "results_json": "90_archive/artifacts/bench/latest.json",
+    "results_md": "90_archive/artifacts/bench/latest.md",
+    "trend_jsonl": "90_archive/artifacts/bench/trend.jsonl"
+  }
+}
+

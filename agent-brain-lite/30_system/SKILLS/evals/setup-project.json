@@ -1,0 +1,113 @@
+{
+  "skill_id": "setup-project",
+  "version": "1.0",
+  "cases": [
+    {
+      "id": "case_1",
+      "input": {
+        "text": "Kreiraj projektnu strukturu za meta-analizu. Koristi standardni template: 01_input, 02_analysis, 03_output, 04_manuscript, 05_admin. Uključi README.md i .gitignore."
+      },
+      "assertions": [
+        {
+          "type": "regex_match",
+          "value": "(?i)(01_input|input)",
+          "description": "contains: 01_input OR contains: input"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(02_analysis|analysis)",
+          "description": "contains: 02_analysis OR contains: analysis"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(03_output|output)",
+          "description": "contains: 03_output OR contains: output"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(04_manuscript|manuscript)",
+          "description": "contains: 04_manuscript OR contains: manuscript"
+        },
+        {
+          "type": "contains",
+          "value": "README",
+          "description": "obavezan element"
+        },
+        {
+          "type": "regex_match",
+          "value": "mkdir|dir\\.create|fs::|struktura|created",
+          "description": "regex_match: mkdir|dir\\.create|fs::|struktura|created"
+        }
+      ]
+    },
+    {
+      "id": "case_2",
+      "input": {
+        "text": "Kreiraj projektnu strukturu za novi projekt, ali mapa \"01_input\" već postoji s 5 datoteka unutra. Što napraviti s postojećom mapom?"
+      },
+      "assertions": [
+        {
+          "type": "regex_match",
+          "value": "(?i)(već\\ postoji|exists)",
+          "description": "contains: već postoji OR prepoznaje problem"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(ne\\ briši|preskoči|skip|overwrite)",
+          "description": "contains: ne briši OR contains: preskoči OR contains: skip OR contains: overwrite"
+        },
+        {
+          "type": "not_contains",
+          "value": "izbriši",
+          "description": "not_contains: izbriši"
+        },
+        {
+          "type": "not_contains",
+          "value": "rm -rf",
+          "description": "not_contains: rm -rf"
+        },
+        {
+          "type": "not_contains",
+          "value": "delete",
+          "description": "ne briše postojeće"
+        },
+        {
+          "type": "regex_match",
+          "value": "if.*exists|exist.*skip|provjeri|check.{0,30}exist",
+          "description": "regex_match: if.*exists|exist.*skip|provjeri|check.{0,30}exist"
+        },
+        {
+          "type": "last_sentence_not_question",
+          "description": "Last sentence not ?"
+        }
+      ]
+    },
+    {
+      "id": "case_3",
+      "input": {
+        "text": "Kreiraj projektnu strukturu."
+      },
+      "assertions": [
+        {
+          "type": "regex_match",
+          "value": "(?i)(naziv|name|ime projekta|koji projekt|koji tip|which project|what type|default|example_project)",
+          "description": "regex_match: (?i)(naziv|name|ime projekta|koji projekt|koji tip"
+        },
+        {
+          "type": "not_contains",
+          "value": "ne mogu",
+          "description": "not_contains: ne mogu"
+        },
+        {
+          "type": "not_contains",
+          "value": "nije moguće",
+          "description": "mora nešto napraviti ili zatražiti info"
+        },
+        {
+          "type": "last_sentence_not_question",
+          "description": "Last sentence not ?"
+        }
+      ]
+    }
+  ]
+}

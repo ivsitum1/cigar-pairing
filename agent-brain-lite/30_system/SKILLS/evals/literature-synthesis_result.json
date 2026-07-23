@@ -1,0 +1,24 @@
+{
+  "skill_id": "literature-synthesis",
+  "pass_rate_pct": 100.0,
+  "passed_assertions": 18,
+  "total_assertions": 18,
+  "cases": [
+    {
+      "case_id": "case_1",
+      "passed": 7,
+      "total": 7
+    },
+    {
+      "case_id": "case_2",
+      "passed": 7,
+      "total": 7
+    },
+    {
+      "case_id": "case_3",
+      "passed": 4,
+      "total": 4
+    }
+  ],
+  "failed_assertions": []
+}

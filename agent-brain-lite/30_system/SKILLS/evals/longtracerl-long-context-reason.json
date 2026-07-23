@@ -1,0 +1,14 @@
+{
+  "skill_id": "longtracerl-long-context-reason",
+  "version": "1.0",
+  "cases": [
+    {
+      "id": "case_tiered_distractors",
+      "input": { "text": "Design a long-context eval for our search agent with hard distractors." },
+      "assertions": [
+        { "type": "regex_match", "value": "(?i)(distractor|confusab|rubric|entity|tier)", "description": "mentions distractor or rubric concepts" },
+        { "type": "regex_match", "value": "(?i)(preprint|arxiv|2605\\.31584|not clinical)", "description": "sources non-clinical preprint framing" }
+      ]
+    }
+  ]
+}

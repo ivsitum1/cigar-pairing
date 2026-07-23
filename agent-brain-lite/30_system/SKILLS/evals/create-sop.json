@@ -1,0 +1,112 @@
+{
+  "skill_id": "create-sop",
+  "version": "1.0",
+  "cases": [
+    {
+      "id": "case_1",
+      "input": {
+        "text": "Kreiraj SOP za propensity score matching analizu u R: od uvoza podataka do izvještavanja. Uključi: korake, odgovornu osobu, verziju softvera, format outputa i kriterij za odobrenje."
+      },
+      "assertions": [
+        {
+          "type": "regex_match",
+          "value": "(?i)(SOP|Standard\\ Operating\\ Procedure)",
+          "description": "contains: SOP OR contains: Standard Operating Procedure"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(software|40_operations/R\\ verzija|version)",
+          "description": "contains: software OR contains: R verzija OR contains: version"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(odgovornost|responsible|odgovorna\\ osoba)",
+          "description": "contains: odgovornost OR contains: responsible OR contains: odgovorna osoba"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(propensity\\ score|PSM)",
+          "description": "contains: propensity score OR contains: PSM"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(korak|step)\\s+[0-9]|[0-9]\\.\\s",
+          "description": "numeracija koraka"
+        },
+        {
+          "type": "last_sentence_not_question",
+          "description": "Last sentence not ?"
+        }
+      ]
+    },
+    {
+      "id": "case_2",
+      "input": {
+        "text": "Kreiraj SOP za rapid sequence induction (RSI): indikacije, preduvjeti (preoxygenation), lijekovi (indukcija + mišićni relaksant), koraci, moguće komplikacije, rescue plan za failed intubation."
+      },
+      "assertions": [
+        {
+          "type": "regex_match",
+          "value": "(?i)(RSI|rapid\\ sequence)",
+          "description": "contains: RSI OR contains: rapid sequence"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(preoksigenacij|preoxygenation)",
+          "description": "contains: preoksigenacij OR obavezan korak"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(rescue|cannot\\ intubate|plan\\ B|failed\\ airway)",
+          "description": "contains: rescue OR contains: cannot intubate OR contains: plan B OR contains: failed airway"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(krikoidsni|Sellick|cricoid)",
+          "description": "contains: krikoidsni OR contains: Sellick OR ili eksplicitno navodi da je kontroverzno"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(korak|step)\\s+[0-9]|[0-9]\\.\\s|faza",
+          "description": "numeracija koraka ili faza"
+        },
+        {
+          "type": "not_contains",
+          "value": "nije moguće napisati SOP",
+          "description": "not_contains: nije moguće napisati SOP"
+        },
+        {
+          "type": "last_sentence_not_question",
+          "description": "Last sentence not ?"
+        }
+      ]
+    },
+    {
+      "id": "case_3",
+      "input": {
+        "text": "Napiši SOP."
+      },
+      "assertions": [
+        {
+          "type": "regex_match",
+          "value": "(?i)(koji postupak|za što|specificiraj|koji tip|which procedure|what process|tema|subject)",
+          "description": "regex_match: koji postupak|za što|specificiraj|koji tip|which p"
+        },
+        {
+          "type": "not_contains",
+          "value": "Korak 1:",
+          "description": "ne piše generički SOP bez konteksta"
+        },
+        {
+          "type": "not_contains",
+          "value": "Standard Operating Procedure za",
+          "description": "ne generira nasumičan SOP"
+        },
+        {
+          "type": "last_sentence_not_question",
+          "description": "Last sentence not ?"
+        }
+      ]
+    }
+  ]
+}

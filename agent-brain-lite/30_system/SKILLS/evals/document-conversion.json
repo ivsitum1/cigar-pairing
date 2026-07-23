@@ -1,0 +1,119 @@
+{
+  "skill_id": "document-conversion",
+  "version": "1.0",
+  "cases": [
+    {
+      "id": "case_1",
+      "input": {
+        "text": "Konvertiraj ovaj Word sadržaj u Markdown, čuvajući naslove (H1, H2), tablice i bold tekst:\n\nNaslov studije\n\nUvod\nOva studija ispituje...\n\nMetode\n| Varijabla | Vrijednost |\n|---|---|\n| n | 120 |"
+      },
+      "assertions": [
+        {
+          "type": "regex_match",
+          "value": "^#\\s+Naslov|^##\\s+Naslov",
+          "description": "H1/H2 header"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(\\#\\#\\ Uvod|\\#\\ Uvod)",
+          "description": "contains: ## Uvod OR section header"
+        },
+        {
+          "type": "contains",
+          "value": "| Varijabla | Vrijednost |",
+          "description": "tablica u MD formatu"
+        },
+        {
+          "type": "regex_match",
+          "value": "\\|---\\||\\|:---\\|",
+          "description": "separator retka tablice"
+        },
+        {
+          "type": "not_contains",
+          "value": "<table>",
+          "description": "nije HTML format"
+        },
+        {
+          "type": "last_sentence_not_question",
+          "description": "Last sentence not ?"
+        }
+      ]
+    },
+    {
+      "id": "case_2",
+      "input": {
+        "text": "Pretvori ovaj CSV u formatiranu Markdown tablicu:\n\ngroup,n,mean_age,sd_age,mortality_30d\nHFNC,45,67.3,12.1,8\nNIV,43,68.9,11.7,12"
+      },
+      "assertions": [
+        {
+          "type": "regex_match",
+          "value": "(?i)(\\|\\ group\\ \\||\\|\\ Group\\ \\|)",
+          "description": "contains: | group | OR contains: | Group |"
+        },
+        {
+          "type": "contains",
+          "value": "| HFNC |",
+          "description": "contains: | HFNC |"
+        },
+        {
+          "type": "contains",
+          "value": "| NIV |",
+          "description": "contains: | NIV |"
+        },
+        {
+          "type": "regex_match",
+          "value": "\\|\\s*67\\.3\\s*\\|",
+          "description": "regex_match: \\|\\s*67\\.3\\s*\\|"
+        },
+        {
+          "type": "not_contains",
+          "value": "group,n,mean_age",
+          "description": "nije ostalo u CSV formatu"
+        },
+        {
+          "type": "regex_match",
+          "value": "\\|---\\||\\|:---\\|",
+          "description": "separator prisutan"
+        }
+      ]
+    },
+    {
+      "id": "case_3",
+      "input": {
+        "text": "Konvertiraj ovaj dokument u plain text (.txt), ali upozori na sve elemente koji će se izgubiti. Dokument sadrži: matematičke formule (∑x²/n), tablice, bold/italic, reference [1], header s paginacijom."
+      },
+      "assertions": [
+        {
+          "type": "regex_match",
+          "value": "(?i)(formula|matematičk|∑)",
+          "description": "contains: formula OR contains: matematičk OR gubitak formula identificiran"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(tablica|table)",
+          "description": "contains: tablica OR gubitak tablice"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(bold|italic|formatiranje)",
+          "description": "contains: bold OR contains: italic OR gubitak formatiranja"
+        },
+        {
+          "type": "not_contains",
+          "value": "bez gubitka",
+          "description": "not_contains: bez gubitka"
+        },
+        {
+          "type": "not_contains",
+          "value": "bez promjena",
+          "description": "konverzija nije bezgubitna"
+        },
+        {
+          "type": "regex_match",
+          "value": "upozorenje|warning|izgub|loss|neće biti sačuvan",
+          "description": "regex_match: upozorenje|warning|izgub|loss|neće biti sačuvan"
+        }
+      ]
+    }
+  ]
+}

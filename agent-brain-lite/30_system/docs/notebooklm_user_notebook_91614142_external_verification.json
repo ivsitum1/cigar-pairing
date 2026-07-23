@@ -1,0 +1,43 @@
+{
+  "verified_at": "2026-07-04T22:15:00Z",
+  "notebook_uuid": "91614142-303b-45b8-ad5c-91ee60b66e06",
+  "notebook_slug": "automemory-stanford",
+  "claims": [
+    {
+      "claim": "AutoMem treats memory management as a trainable metamemory skill with dual optimization loops",
+      "status": "VERIFIED",
+      "source": "https://arxiv.org/abs/2607.01224",
+      "evidence": "Stanford AutoMem paper abstract: structure-revision loop + proficiency-training loop"
+    },
+    {
+      "claim": "Memory-only optimization yields ~2-4x gains on Crafter/MiniHack/NetHack without changing task-action weights",
+      "status": "VERIFIED",
+      "source": "https://arxiv.org/abs/2607.01224",
+      "evidence": "Table 1 in AutoMem paper; HuggingFace paper page"
+    },
+    {
+      "claim": "Qwen2.5-32B with AutoMem competitive with Claude Opus 4.5 on long-horizon game benchmarks",
+      "status": "VERIFIED",
+      "source": "https://arxiv.org/abs/2607.01224",
+      "evidence": "Paper results section; cross-check benchmark numbers in Table 1"
+    },
+    {
+      "claim": "Memory specialist co-processor with LoRA adapter required in agent-rules",
+      "status": "REJECT",
+      "source": "NotebookLM synthesis",
+      "evidence": "Brain repo is procedural harness; no weight fine-tuning. Adapt pattern only."
+    },
+    {
+      "claim": "File-system memory ops (log/plan/read/write) as first-class actions separate from task skills",
+      "status": "INFERRED",
+      "source": "AutoMem paper + NotebookLM",
+      "evidence": "Maps to memory_hierarchy/, context_sync, MCP file tools — implement as skills not LoRA"
+    },
+    {
+      "claim": "DeepSeek GRPO/MLA architecture changes for agent-rules",
+      "status": "REJECT",
+      "source": "Source mix analysis",
+      "evidence": "47 sources mostly DeepSeek background; not AutoMem core. Background only."
+    }
+  ]
+}

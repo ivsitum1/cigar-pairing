@@ -1,0 +1,150 @@
+{
+  "version": "1.0.0",
+  "verified_utc": "2026-06-08T14:10:00Z",
+  "gate_verdict": "GO",
+  "notebook_id": "b4be6608-180d-4619-862e-9ddbefa92314",
+  "notebook_title": "Relation-Conditioned Multimodal Learning for Semantic Representations",
+  "notebook_url": "https://notebooklm.google.com/notebook/b4be6608-180d-4619-862e-9ddbefa92314",
+  "method": "Playwright ask (3/3) + arXiv abs fetch 2026-06-08",
+  "status": "arxiv_verified_procedural_go",
+  "status_legend": {
+    "LITERATURE_VERIFIED": "Primary arXiv source exists; procedural mechanism described in abstract",
+    "LITERATURE_PARTIAL": "Paper exists; benchmark % not reproduced in agent-rules",
+    "LITERATURE_UNSUPPORTED": "No reproducible primary source for exact metric",
+    "REPO_VERIFIED": "Implemented or documented in agent-rules repository",
+    "REPO_PARTIAL": "Partial overlap; gap documented in RELATION_CONDITIONED_MAP.md",
+    "SCOPE_EXCLUDED": "Out of incorporation scope by PRD decision (model training)"
+  },
+  "claims": [
+    {
+      "id": "RCML-PAPER",
+      "notebook_claim": "Rcml — Relation-Conditioned Multimodal Learning with relation-guided attention and many-to-many contrastive loss",
+      "status": "LITERATURE_VERIFIED",
+      "summary": "arXiv:2508.17497 exists (ICLR 2026 submission). Training-time framework; not harness-only.",
+      "sources": [
+        {
+          "title": "arXiv:2508.17497",
+          "url": "https://arxiv.org/abs/2508.17497"
+        }
+      ],
+      "implementation_gate": "SCOPE_EXCLUDED — prompt-level relation tags only (P2); no weight training"
+    },
+    {
+      "id": "SKILLLENS-PAPER",
+      "notebook_claim": "SkillLens — four-layer skill graph (Policy, Strategy, Procedure, Primitive) with verifier routing",
+      "status": "LITERATURE_VERIFIED",
+      "summary": "arXiv:2605.08386 exists. Verifier actions ACCEPT/DECOMPOSE/REWRITE/SKIP and degree-corrected RWR confirmed in abstract.",
+      "sources": [
+        {
+          "title": "arXiv:2605.08386",
+          "url": "https://arxiv.org/abs/2605.08386"
+        }
+      ],
+      "implementation_gate": "GO — SkillLens harness slice (verifier + taxonomy + RWR extension)"
+    },
+    {
+      "id": "SKILLLENS-BENCH",
+      "notebook_claim": "SkillLens +6.31pp Acc@1 MuLocbench; ALFWorld 45.00% → 51.31%",
+      "status": "LITERATURE_PARTIAL",
+      "summary": "Numbers appear in arXiv abstract; not reproduced locally in agent-rules.",
+      "sources": [
+        {
+          "title": "arXiv:2605.08386 abstract",
+          "url": "https://arxiv.org/abs/2605.08386"
+        }
+      ],
+      "implementation_gate": "NO-GO for citing exact % in .mdc rules"
+    },
+    {
+      "id": "LARGER-PAPER",
+      "notebook_claim": "LARGER — lexically anchored repo graph expansion inside agent search loop",
+      "status": "LITERATURE_VERIFIED",
+      "summary": "arXiv:2605.16352 exists. Lexical anchor + confidence-filtered local expansion + CLI integration confirmed.",
+      "sources": [
+        {
+          "title": "arXiv:2605.16352",
+          "url": "https://arxiv.org/abs/2605.16352"
+        }
+      ],
+      "implementation_gate": "GO — Graphify bridge slice (grep anchor → graph expand)"
+    },
+    {
+      "id": "LARGER-BENCH",
+      "notebook_claim": "LARGER +13.9 / +11.8 LocBench Acc@5 points",
+      "status": "LITERATURE_PARTIAL",
+      "summary": "In arXiv abstract; local eval not run.",
+      "sources": [
+        {
+          "title": "arXiv:2605.16352 abstract",
+          "url": "https://arxiv.org/abs/2605.16352"
+        }
+      ],
+      "implementation_gate": "NO-GO for numeric claims in rules until local smoke eval"
+    },
+    {
+      "id": "LARGER-COMMIT",
+      "notebook_claim": "LARGER commit-aware incremental graph update (4500× faster than full rebuild)",
+      "status": "LITERATURE_PARTIAL",
+      "summary": "Mechanism described in notebook synthesis; Graphify has manifest incremental cache but not LARGER diff semantics.",
+      "sources": [],
+      "implementation_gate": "P2 — extend graphify manifest only if profiling shows need"
+    },
+    {
+      "id": "REPO-SKILLRAE",
+      "notebook_claim": "Intra-skill decomposition overlaps SkillLens Procedure layer",
+      "status": "REPO_VERIFIED",
+      "summary": "skill_decompose.py implements SkillRAE-lite subunit graphs.",
+      "paths": ["40_operations/python/brain_assist/skill_decompose.py"],
+      "implementation_gate": "GO — map as Procedure sublayer; do not duplicate"
+    },
+    {
+      "id": "REPO-SKILLDAG",
+      "notebook_claim": "Inter-skill DAG routing overlaps SkillLens graph traversal",
+      "status": "REPO_PARTIAL",
+      "summary": "skill_dag_validate.py + skill-dag-router exist; no ACCEPT/DECOMPOSE verifier loop.",
+      "paths": [
+        "30_system/docs/SKILLDAG_MAP.md",
+        "30_system/SKILLS/SKILL_skill-dag-router.md"
+      ],
+      "implementation_gate": "GO — add verifier as new layer on top of DAG rerank"
+    },
+    {
+      "id": "REPO-GRAPHIFY",
+      "notebook_claim": "LARGER sidecar graph equivalent exists",
+      "status": "REPO_PARTIAL",
+      "summary": "Graphify AST graph + MCP query_graph; not grep-anchored per-file sidecar JSON.",
+      "paths": [
+        "30_system/docs/GRAPHIFY_BRAIN_INTEGRATION.md",
+        "graphify-out/graph.json"
+      ],
+      "implementation_gate": "GO — bridge script larger_graph_expand.py wrapping Graphify"
+    },
+    {
+      "id": "REPO-SKILL-GAP",
+      "notebook_claim": "Dual-registry evolution on failure",
+      "status": "REPO_PARTIAL",
+      "summary": "skill_gap_ingest.py + ERROR LEARNING; single registry path, no verifier registry.",
+      "paths": ["40_operations/scripts/skill_gap_ingest.py"],
+      "implementation_gate": "P1 — trajectory gap report → eval append; defer second registry"
+    }
+  ],
+  "blockers_discharged": [
+    "All three source papers verified on arXiv",
+    "Rcml training claims explicitly excluded from P0/P1 scope",
+    "Benchmark percentages gated as LITERATURE_PARTIAL"
+  ],
+  "dedup_notebooks": [
+    {
+      "title": "The Geometry of Intelligence",
+      "notebook_id": "7c31671a-37df-4227-ac76-3ef2f5346d84",
+      "prd": "30_system/docs/prd_geometry_incorporation.json",
+      "overlap": "SkillRAE, LifeHarness L2 — do not reopen"
+    },
+    {
+      "title": "SkillDAG",
+      "notebook_id": "48a6afa2-97d8-44f4-8a41-c87d2ea0b650",
+      "prd": "30_system/docs/prd_skilldag_incorporation.json",
+      "overlap": "Inter-skill DAG — extend with verifier, not replace"
+    }
+  ]
+}

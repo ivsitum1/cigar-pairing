@@ -1,0 +1,65 @@
+{
+  "skill_id": "research-lookup",
+  "version": "1.1",
+  "cases": [
+    {
+      "id": "case_1_citations",
+      "input": {
+        "text": "Što trenutna literatura kaže o Welch t-testu vs Student za male uzorke? Trebam izvore."
+      },
+      "assertions": [
+        {
+          "type": "regex_match",
+          "value": "(?i)(Welch|Student|DOI|PMID|godin|year|reference)",
+          "description": "substantive answer with source framing"
+        },
+        {
+          "type": "not_contains",
+          "value": "PMID:00000000",
+          "description": "no fake PMID pattern"
+        }
+      ]
+    },
+    {
+      "id": "case_2_derivation_calibration",
+      "input": {
+        "text": "Two papers disagree on effect size. Run research lookup with derivation and calibration."
+      },
+      "assertions": [
+        {
+          "type": "regex_match",
+          "value": "(?i)(derivation|calibration|conflict|source|PMID|DOI)",
+          "description": "mentions multi-step research phases"
+        }
+      ]
+    },
+    {
+      "id": "case_consensus_empty_no_fabrication",
+      "input": {
+        "text": "Consensus MCP returned no papers for this query. Run research lookup anyway and report evidence."
+      },
+      "assertions": [
+        {
+          "type": "regex_match",
+          "value": "(?i)(no (papers|results|hits)|empty|sparse|insufficient|not found|nema)",
+          "description": "acknowledges empty or sparse evidence"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(search date|datum pretrage|as of|202[0-9])",
+          "description": "states search date or timeframe"
+        },
+        {
+          "type": "not_contains",
+          "value": "10.1000/",
+          "description": "no fabricated DOI prefix"
+        },
+        {
+          "type": "not_contains",
+          "value": "PMID:00000000",
+          "description": "no fake PMID pattern"
+        }
+      ]
+    }
+  ]
+}

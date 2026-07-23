@@ -1,0 +1,34 @@
+{
+  "skill_id": "strobe-checklist",
+  "pass_rate_pct": 93.75,
+  "passed_assertions": 15,
+  "total_assertions": 16,
+  "cases": [
+    {
+      "case_id": "case_1",
+      "passed": 6,
+      "total": 6
+    },
+    {
+      "case_id": "case_2",
+      "passed": 4,
+      "total": 5
+    },
+    {
+      "case_id": "case_3",
+      "passed": 5,
+      "total": 5
+    }
+  ],
+  "failed_assertions": [
+    {
+      "case_id": "case_2",
+      "assertion": {
+        "type": "not_contains",
+        "value": "isti checklist kao kohortna",
+        "description": "postoje razlike"
+      },
+      "output_snippet": "Za case-control studiju STROBE checklist ima specifične stavke koje se razlikuju od kohortne. Specifično za case-control: selekcija kontrola (controls), način odabira kontrola, uparivanje (matching) a..."
+    }
+  ]
+}

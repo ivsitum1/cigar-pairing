@@ -1,0 +1,5 @@
+{
+  "case_1": "library(metafor)\nres <- rma(yi, vi, data = dat)\nleave_one_out <- leave1out(res)\ninf <- influence(res)\nplot(inf)\n# leave_one_out daje L1O estimat; influence() i baujat/influence plot za utjecajne studije. Sensitivity analiza je standardni korak.",
+  "case_2": "StudyC je utjecajna studija: bez nje pooled OR=0.61 (I2=5%), s njom 0.70 (I2=18%). sensitivity analiza pokazuje da rezultat ovisi o StudyC; visok rizik pristranosti (high RoB) i veliki n=950 cine je influential. Heterogenost se smanji na I2=5% kad se StudyC iskljuci. Za Discussion: rezultat je osjetljiv na ukljucivanje StudyC.",
+  "case_3": "Prospective (k=4, OR=0.62) vs retrospective (k=4, OR=0.81). R: rma(yi, vi, mods = ~ design); Q_b ili metareg za test interakcije izmedu podgrupa. Razlika 0.62 vs 0.81 zahtijeva formalni test (Q_between ili test for interaction); ne tvrditi nema razlike bez tog testa. Interpretiraj interakciju dizajna."
+}

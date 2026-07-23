@@ -1,0 +1,37 @@
+{
+  "skill_id": "skill-dag-router",
+  "version": "1.0",
+  "cases": [
+    {
+      "id": "case_pipeline_order",
+      "input": {
+        "text": "skill DAG routing for agentic PRD pipeline — what loads before write-prd?"
+      },
+      "assertions": [
+        {
+          "type": "regex_match",
+          "value": "(?i)(grill-me|depends_on|topological|skill_dag_validate|skill_pipelines_dag)",
+          "description": "mentions prerequisite or DAG artifacts"
+        },
+        {
+          "type": "not_contains",
+          "value": "skill_decompose",
+          "description": "does not confuse with SkillRAE subunit decomposition"
+        }
+      ]
+    },
+    {
+      "id": "case_conflict_aware",
+      "input": {
+        "text": "pipeline skill order with conflicts_with — can I load grill-me and research-grill-me together?"
+      },
+      "assertions": [
+        {
+          "type": "regex_match",
+          "value": "(?i)(conflicts_with|forbidden|not both|one only|scholarly|engineering)",
+          "description": "addresses conflict or pipeline separation"
+        }
+      ]
+    }
+  ]
+}

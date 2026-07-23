@@ -1,0 +1,41 @@
+{
+  "skill_id": "research-grill-me",
+  "version": "1.0",
+  "cases": [
+    {
+      "id": "case_pico",
+      "input": {
+        "text": "Research grill-me: retrospektivna kohorta ECMO sedacije, primarni ishod ICU LOS."
+      },
+      "assertions": [
+        {
+          "type": "regex_match",
+          "value": "(?i)(PICO|ishod|dizajn|kohort|primarn)",
+          "description": "research design tree language"
+        },
+        {
+          "type": "not_contains",
+          "value": "prd.json",
+          "description": "not software PRD"
+        }
+      ]
+    {
+      "id": "case_storm_multi_perspective",
+      "input": {
+        "text": "Research grill-me using STORM-style multi-perspective synthesis for a systematic review on ECMO sedation protocols. List perspectives before locking PICO."
+      },
+      "assertions": [
+        {
+          "type": "regex_match",
+          "value": "(?i)(perspective|STORM|multi|stakeholder|PICO)",
+          "description": "STORM multi-perspective research framing"
+        },
+        {
+          "type": "not_contains",
+          "value": "auto rule rewrite",
+          "description": "no ungated rule changes"
+        }
+      ]
+    }
+  ]
+}

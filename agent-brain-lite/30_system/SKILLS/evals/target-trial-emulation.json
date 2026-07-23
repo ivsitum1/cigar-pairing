@@ -1,0 +1,122 @@
+{
+  "skill_id": "target-trial-emulation",
+  "version": "1.0",
+  "cases": [
+    {
+      "id": "case_1",
+      "input": {
+        "text": "Definiraj protokol target triala za emulaciju RCT-a iz registry podataka: early CRRT (unutar 24h od AKI KDIGO stage 2) vs. standard timing (>24h). Ishod: 28-dnevni mortalitet. Dostupni podaci: bolnički registry ICU pacijenata, n=1200."
+      },
+      "assertions": [
+        {
+          "type": "regex_match",
+          "value": "(?i)(eligibility\\ criteria|inkluzijski\\ kriteriji)",
+          "description": "contains: eligibility criteria OR contains: inkluzijski kriteriji"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(treatment\\ strategies|intervencija)",
+          "description": "contains: treatment strategies OR contains: intervencija"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(time\\ zero|index\\ date|početna\\ točka)",
+          "description": "contains: time zero OR contains: index date OR contains: početna točka"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(confounders|konfunderi)",
+          "description": "contains: confounders OR contains: konfunderi"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(ITT|causal\\ contrast|kauzalni)",
+          "description": "contains: ITT OR contains: causal contrast OR contains: kauzalni"
+        },
+        {
+          "type": "regex_match",
+          "value": "target.trial|emulacij|Hernán|protokol",
+          "description": "regex_match: target.trial|emulacij|Hernán|protokol"
+        },
+        {
+          "type": "last_sentence_not_question",
+          "description": "Last sentence not ?"
+        }
+      ]
+    },
+    {
+      "id": "case_2",
+      "input": {
+        "text": "U registry studiji, pacijenti koji primili CRRT u 24–72h od ICU prijema uspoređeni su s pacijentima koji nisu primili CRRT. Period od primitka do primanja CRRT nije tretiran kao at-risk period. Identificiraj problem kroz TTE framework i predloži rješenje."
+      },
+      "assertions": [
+        {
+          "type": "contains",
+          "value": "immortal time bias",
+          "description": "problem identificiran"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(time\\ zero|clone|cloning)",
+          "description": "contains: time zero OR contains: clone OR TTE rješenje"
+        },
+        {
+          "type": "not_contains",
+          "value": "nema problema",
+          "description": "not_contains: nema problema"
+        },
+        {
+          "type": "not_contains",
+          "value": "analiza je ispravna",
+          "description": "not_contains: analiza je ispravna"
+        },
+        {
+          "type": "regex_match",
+          "value": "immortal|besmrtno vrijeme|pristranost|bias|clone.{0,30}censor",
+          "description": "regex_match: immortal|besmrtno vrijeme|pristranost|bias|clone.{"
+        },
+        {
+          "type": "last_sentence_not_question",
+          "description": "Last sentence not ?"
+        }
+      ]
+    },
+    {
+      "id": "case_3",
+      "input": {
+        "text": "Imam randomiziranu kliničku studiju (RCT). Treba li primijeniti Target Trial Emulation framework?"
+      },
+      "assertions": [
+        {
+          "type": "regex_match",
+          "value": "(?i)(nije\\ potrebno|not\\ needed|RCT\\ ne\\ zahtijeva)",
+          "description": "contains: nije potrebno OR contains: not needed OR contains: RCT ne zahtijeva"
+        },
+        {
+          "type": "contains",
+          "value": "TTE",
+          "description": "contains: TTE"
+        },
+        {
+          "type": "regex_match",
+          "value": "(?i)(opservacijska|observational|nije randomiziran|not randomized)",
+          "description": "TTE for observational 30_system/context"
+        },
+        {
+          "type": "not_contains",
+          "value": "da, primijeni TTE",
+          "description": "TTE je za opservacijske podatke"
+        },
+        {
+          "type": "regex_match",
+          "value": "opservacijska|observational|randomiziran.{0,30}nije|RCT.{0,50}ne treba",
+          "description": "regex_match: opservacijska|observational|randomiziran.{0,30}nij"
+        },
+        {
+          "type": "last_sentence_not_question",
+          "description": "Last sentence not ?"
+        }
+      ]
+    }
+  ]
+}

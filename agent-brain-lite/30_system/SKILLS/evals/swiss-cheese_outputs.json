@@ -1,0 +1,5 @@
+{
+  "case_1": "Swiss Cheese validacija PSM: balance (balans) post-matching nije provjeren — to je obavezan sloj. Provjeri SMD (standardized mean difference) za sve kovarijate i love plot; bez toga validacija nije gotova. Dodaj layer: provjera balansa, check overlap i SMD. Ne tvrdi da je analiza ispravna dok balance nije procijenjen.",
+  "case_2": "Ostali slojevi za validaciju: (1) GRADE ili certainty of evidence za ishode. (2) PRISMA checklist i izvjestavanje. (3) Protokol i PROSPERO registracija. (4) Reproducibilnost koda (seed, skripte). Provjera po sloju: checklist, validacija metodologije, reproducibilnost. Ukratko.",
+  "case_3": "Nije dovoljna. Samo p-vrijednosti i forest plot nedovoljno su za Swiss Cheese: nedostaje provjera pretpostavki (assumptions) modela, reproducibilnost (skripte, seed), eventualno dodatni sloj (npr. sensitivity, RoB). Insufficient; validacija nije zavrsena."
+}

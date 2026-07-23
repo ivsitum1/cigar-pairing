@@ -1,0 +1,36 @@
+{
+  "verified_at": "2026-06-16T11:22:00Z",
+  "notebook_id": "agent-harness-memory-skilltree",
+  "claims": [
+    {
+      "claim": "Self-Harness: Shanghai AI Lab iterative harness optimization on Terminal-Bench-2.0",
+      "status": "VERIFIED",
+      "source": "https://arxiv.org/abs/2606.09498",
+      "evidence": "Weakness Mining → Harness Proposal → Proposal Validation; MiniMax M2.5 40.5%→61.9% held-out pass rate"
+    },
+    {
+      "claim": "HORMA uses at most ~22% baseline tokens on long conversation tasks",
+      "status": "VERIFIED",
+      "source": "https://arxiv.org/abs/2606.11680",
+      "evidence": "Paper abstract: at most 22.17% of baseline token usage"
+    },
+    {
+      "claim": "17 specialized MCP tools required for multimodal parsing",
+      "status": "UNVERIFIED",
+      "source": "NotebookLM synthesis only",
+      "evidence": "Workspace-specific; use governed MCP set in .cursor/mcp.json"
+    },
+    {
+      "claim": "Fully autonomous self-harness without human gate",
+      "status": "REJECT",
+      "source": "Workspace policy",
+      "evidence": "Human gate every 3rd iteration; no auto .cursorrules rewrite"
+    },
+    {
+      "claim": "K1 4B model for agent-native clinical knowledge extraction",
+      "status": "VERIFIED",
+      "source": "https://arxiv.org/abs/2606.13669",
+      "evidence": "Agents-K1 paper; HuggingFace InternScience/Agents-K1"
+    }
+  ]
+}

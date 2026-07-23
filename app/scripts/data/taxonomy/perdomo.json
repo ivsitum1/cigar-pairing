@@ -1,12 +1,165 @@
 {
   "brand": "Perdomo",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-23",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "https://perdomocigars.com/",
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w1_slice2 deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.1"
   ],
-  "lines": {},
+  "lines": {
+    "10th Anniversary": {
+      "line": "10th Anniversary"
+    },
+    "10th Anniversary 4er Freshpack": {
+      "line": "10th Anniversary 4er Freshpack",
+      "sampler": true
+    },
+    "10th Anniversary Champagne": {
+      "line": "10th Anniversary Champagne"
+    },
+    "10th Anniversary Maduro": {
+      "line": "10th Anniversary Maduro"
+    },
+    "10th Anniversary Sun Grown": {
+      "line": "10th Anniversary Sun Grown"
+    },
+    "20th Anniversary": {
+      "line": "20th Anniversary"
+    },
+    "20th Anniversary Maduro": {
+      "line": "20th Anniversary Maduro"
+    },
+    "30th Anniversary Connecticut Epicure": {
+      "line": "30th Anniversary Connecticut",
+      "vitola": "Epicure"
+    },
+    "30th Anniversary Maduro": {
+      "line": "30th Anniversary Maduro"
+    },
+    "30th Anniversary Sun Grown": {
+      "line": "30th Anniversary Sun Grown"
+    },
+    "Bourbon Barrel Aged": {
+      "line": "Bourbon Barrel Aged"
+    },
+    "Champagne Noir": {
+      "line": "Champagne Noir"
+    },
+    "Champagne Sun Grown": {
+      "line": "Champagne Sun Grown"
+    },
+    "Craft Series Amber": {
+      "line": "Craft Series Amber"
+    },
+    "Craft Series Pilsner": {
+      "line": "Craft Series Pilsner"
+    },
+    "Craft Series Stout": {
+      "line": "Craft Series Stout"
+    },
+    "Double Aged": {
+      "line": "Double Aged"
+    },
+    "Double Aged Vintage Connecticut": {
+      "line": "Double Aged Vintage Connecticut"
+    },
+    "Double Aged Vintage Maduro": {
+      "line": "Double Aged Vintage Maduro"
+    },
+    "Double Aged Vintage Sun Grown": {
+      "line": "Double Aged Vintage Sun Grown"
+    },
+    "Edicion de Silvio Connecticut": {
+      "line": "Edicion de Silvio Connecticut"
+    },
+    "Edicion de Silvio Maduro": {
+      "line": "Edicion de Silvio Maduro"
+    },
+    "Edicion de Silvio Sun Grown": {
+      "line": "Edicion de Silvio Sun Grown"
+    },
+    "Esteli": {
+      "line": "Esteli"
+    },
+    "Factory Tour Connecticut": {
+      "line": "Factory Tour Connecticut"
+    },
+    "Factory Tour Maduro": {
+      "line": "Factory Tour Maduro"
+    },
+    "Factory Tour Sun Grown": {
+      "line": "Factory Tour Sun Grown"
+    },
+    "Fresco Connecticut": {
+      "line": "Fresco Connecticut"
+    },
+    "Fresco Maduro": {
+      "line": "Fresco Maduro"
+    },
+    "Fresco Sun Grown": {
+      "line": "Fresco Sun Grown"
+    },
+    "Habano Bourbon": {
+      "line": "Habano Bourbon"
+    },
+    "Habano Connecticut": {
+      "line": "Habano Connecticut"
+    },
+    "Habano Maduro": {
+      "line": "Habano Maduro"
+    },
+    "Habano Sun Grown": {
+      "line": "Habano Sun Grown"
+    },
+    "Legacy Connecticut": {
+      "line": "Legacy Connecticut"
+    },
+    "Legacy Maduro": {
+      "line": "Legacy Maduro"
+    },
+    "Legacy Shade": {
+      "line": "Legacy Shade"
+    },
+    "Legacy Shade Grown": {
+      "line": "Legacy Shade Grown"
+    },
+    "Limited Cameroon Edition": {
+      "line": "Limited Cameroon Edition"
+    },
+    "Lot 23": {
+      "line": "Lot 23"
+    },
+    "Reserve": {
+      "line": "Reserve"
+    },
+    "Small Batch Connecticut": {
+      "line": "Small Batch Connecticut"
+    },
+    "Small Batch Connecticut Half": {
+      "line": "Small Batch Connecticut",
+      "vitola": "Half Corona",
+      "shape": "Petit Corona"
+    },
+    "Small Batch Maduro": {
+      "line": "Small Batch Maduro"
+    },
+    "Small Batch Maduro Half": {
+      "line": "Small Batch Maduro",
+      "vitola": "Half Corona",
+      "shape": "Petit Corona"
+    },
+    "Small Batch Sun Grown": {
+      "line": "Small Batch Sun Grown"
+    },
+    "Small Batch Sun Grown Half": {
+      "line": "Small Batch Sun Grown",
+      "vitola": "Half Corona",
+      "shape": "Petit Corona"
+    }
+  },
   "vitolaRenames": {},
   "shapes": {},
   "keepSeparate": [
