@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import type { Cigar, Drink, DrinkCategory, RegionFilter, PairingResult, ServeStyle, Vitola } from "../types";
+import type { Cigar, Drink, DrinkCategory, PairingResult, ServeStyle, Vitola } from "../types";
 import { ALL_DRINKS, CIGARS, cigarById, cigarInRegion, cigarLinkForMarket, cigarPriceForMarket, drinkById, formatPrice } from "../data";
 import { pairCigarsForDrink, pairDrinksForCigar } from "../engine/pairing";
 import { buildPrefs } from "../engine/personal";
@@ -9,6 +9,7 @@ import { Chip, Meter, ScoreBand, SearchInput, SectionTitle } from "../components
 import { getItemState, useCollection } from "../store/collection";
 import { DetailSheet } from "../components/DetailSheet";
 import { EveningSessionSheet } from "../components/EveningSessionSheet";
+import { MarketFilter } from "../components/MarketFilter";
 import { ServeChips } from "../components/ServeChips";
 import { buildShareCardModel, sharePairing } from "../lib/shareCard";
 import { ritualHint } from "../lib/cigarRitual";
@@ -16,14 +17,13 @@ import { OcrScan } from "../components/OcrScan";
 import { VitolaPicker } from "../components/VitolaPicker";
 import { applyVitola, needsVitolaPick, uniqueVitolas } from "../lib/cigarVitola";
 import { drinkBuyLink } from "../lib/drinkBuyLink";
-import { useMarket, setMarket } from "../store/market";
+import { useMarket } from "../store/market";
 import { consumePairingIntent, usePairingNavVersion } from "../store/pairingNav";
 import { navigate, useRoute } from "../store/route";
 import { CustomPairing } from "./CustomPairing";
 
 type Mode = "cigarToDrink" | "drinkToCigar" | "custom";
 type Occasion = "any" | "morning" | "afternoon" | "evening";
-const REGION_FILTERS: RegionFilter[] = ["ALL", "HR", "EU", "USA"];
 
 // prilika filtrira pica po punoci: jutro uz kavu/lagane sippere, vecer uz bogate
 const OCCASION_KEEP: Record<Occasion, (d: Drink) => boolean> = {
@@ -330,25 +330,18 @@ export function PairingPage() {
 
       {mode === "custom" && <CustomPairing onOpenDetail={setDetail} />}
 
-      {/* market birac — bitan kad biras cigare */}
-      {mode !== "custom" && (
-      <div className="no-scrollbar mt-3 flex items-center gap-2 overflow-x-auto">
-        <span className="shrink-0 text-micro uppercase tracking-widest text-dim">
-          {t("pair.market")}
-        </span>
-        {REGION_FILTERS.map((m) => (
-          <Chip key={m} active={market === m} onClick={() => setMarket(m)}>
-            {t(`market.${m}` as StringKey)}
+      {/* market birac — uvijek vidljiv (i u custom načinu) */}
+      <div className="mt-3 flex flex-wrap items-center gap-2">
+        <MarketFilter label={t("pair.market")} className="min-w-0 flex-1" />
+        {mode !== "custom" && (
+          <Chip
+            active={showPrefs || excludedCountries.length > 0 || excludedBrands.length > 0}
+            onClick={() => setShowPrefs(!showPrefs)}
+          >
+            ⚙ {excludedCountries.length + excludedBrands.length || ""}
           </Chip>
-        ))}
-        <Chip
-          active={showPrefs || excludedCountries.length > 0 || excludedBrands.length > 0}
-          onClick={() => setShowPrefs(!showPrefs)}
-        >
-          ⚙ {excludedCountries.length + excludedBrands.length || ""}
-        </Chip>
+        )}
       </div>
-      )}
 
       {/* preferencije: zemlje/brendovi koje NE zelis u prijedlozima */}
       {mode !== "custom" && showPrefs && (
