@@ -1,0 +1,93 @@
+{
+  "_meta": {
+    "stream": "J",
+    "date": "2026-07-23",
+    "scope": "Oliva sample + Holts-shared 'X Double' size splits",
+    "notes": [
+      "Serie V and Serie V Melanio are distinct commercial lines (Habano vs Ecuador Sumatra) — do NOT merge despite prefix overlap.",
+      "Monticello Double is not a separate Oliva line: Holt's lists Double Toro 6x60 as a Monticello size on the Monticello category page.",
+      "Flor de * and Gilberto Reserva Blanc are genuine distinct lines (false-positive prefix suspects).",
+      "Additional merges: exact 'Line' / 'Line Double' pairs that share the same Holts listing URL and whose Double entry is a single oversized vitola (Monticello pattern)."
+    ]
+  },
+  "cig-oliva-monticello": {
+    "absorb": ["cig-oliva-monticello-double"],
+    "rename_absorbed_vitolas": {
+      "Toro": "Double Toro"
+    },
+    "reason": "Holt's Oliva Monticello page lists Double Toro (6x60) as a size of Monticello, not a separate line. Shared listing URL was the only signal for the false split."
+  },
+  "cig-alec-bradley-sanctum": {
+    "absorb": ["cig-alec-bradley-sanctum-double"],
+    "rename_absorbed_vitolas": {
+      "Gordo": "Double Gordo"
+    },
+    "reason": "Shared Holts Sanctum listing; Double is a longer 60-ring Gordo (60x216), not a separate line."
+  },
+  "cig-padilla-serie-1968": {
+    "absorb": ["cig-padilla-serie-1968-double"],
+    "rename_absorbed_vitolas": {
+      "Toro": "Double Toro"
+    },
+    "reason": "Shared Holts Serie 1968 listing; Double is 60x152 Toro size of the same line."
+  },
+  "cig-puros-indios-viejo": {
+    "absorb": ["cig-puros-indios-viejo-double"],
+    "rename_absorbed_vitolas": {
+      "Toro": "Double Toro"
+    },
+    "reason": "Shared Holts Viejo listing; Double is 60x152 Toro size of the same line."
+  },
+  "cig-quorum-maduro": {
+    "absorb": ["cig-quorum-maduro-double"],
+    "reason": "Shared Holts Quorum Maduro listing; Double is a single Gordo (60x152) size of the same line."
+  },
+  "cig-sam-leccia-white": {
+    "absorb": ["cig-sam-leccia-white-double"],
+    "rename_absorbed_vitolas": {
+      "Toro": "Double Toro"
+    },
+    "reason": "Shared Holts Sam Leccia White listing; Double is 60x152 Toro size of the same line."
+  },
+  "cig-torano-torano-exodus-gold-20th-anniversary": {
+    "absorb": ["cig-torano-torano-exodus-gold-20th-anniversary-double"],
+    "rename_absorbed_vitolas": {
+      "Toro": "Double Toro"
+    },
+    "reason": "Shared Holts Exodus Gold 20th listing; Double is 60x152 Toro size of the same line."
+  },
+  "_keep_distinct": [
+    {
+      "ids": ["cig-oliva-oliva-serie-v", "cig-oliva-serie-v"],
+      "lines": ["Serie V", "Serie V / Melanio"],
+      "reason": "Distinct commercial lines: Serie V (sun-grown Habano) vs Serie V Melanio (Ecuador Sumatra, Gran Reserva). Prefix overlap only."
+    },
+    {
+      "ids": [
+        "cig-oliva-flor-de",
+        "cig-oliva-flor-de-connecticut",
+        "cig-oliva-flor-de-corojo",
+        "cig-oliva-flor-de-gold",
+        "cig-oliva-flor-de-maduro",
+        "cig-oliva-flor-de-original"
+      ],
+      "reason": "Flor de Connecticut / Corojo / Gold / Maduro / Original are separate wrapper/series lines under the Flor de umbrella."
+    },
+    {
+      "ids": ["cig-oliva-gilberto-reserva", "cig-oliva-gilberto-reserva-blanc"],
+      "reason": "Gilberto Reserva Blanc is a distinct Connecticut/blanc sibling, not a naming twin of Gilberto Reserva."
+    }
+  ],
+  "_relocate_vitolas": [
+    {
+      "from": "cig-oliva-oliva-serie-v",
+      "to": "cig-oliva-serie-v",
+      "names": [
+        "Serie V Melanio Robusto",
+        "Serie V Melanio Figurado",
+        "Figurado"
+      ],
+      "reason": "Melanio SKUs (and a Figurado whose product URL is melanio-figurado) were incorrectly attached to the Serie V line entry."
+    }
+  ]
+}

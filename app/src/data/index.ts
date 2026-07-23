@@ -174,12 +174,18 @@ export interface CigarShopLink {
   region: Region;
   shop: string;
   url: string;
-  exact: boolean; // true = izravan link na proizvod; false = pretraga po nazivu
+  exact: boolean; // true = izravan link na proizvod; false = pretraga / listing linije
+}
+
+/** Holt's /all-cigar-brands/*.html je listing linije, ne SKU jedne vitole. */
+export function isLineListingUrl(url: string | null | undefined): boolean {
+  if (!url) return false;
+  return /holts\.com\/cigars\/all-cigar-brands\/[^/?#]+\.html/i.test(url);
 }
 
 // Linkovi na trgovine za sve regije u kojima je cigara dostupna. HR koristi
 // izravan link na proizvod gdje postoji (humidor/havana), inače pretragu;
-// EU/USA uvijek pretraga po nazivu (nemamo scrapane linkove po proizvodu).
+// EU/USA: scrapani regionLinks kad postoje (listing = exact:false), inače search.
 export function cigarShopLinks(c: Cigar): CigarShopLink[] {
   const q = encodeURIComponent(`${c.brand} ${c.line}`.trim());
   const out: CigarShopLink[] = [];
@@ -190,7 +196,12 @@ export function cigarShopLinks(c: Cigar): CigarShopLink[] {
     const rl = region === "HR" ? undefined : c.regionLinks?.[region];
     let usedShop: string | null = null;
     if (rl?.url) {
-      out.push({ region, shop: rl.shop, url: rl.url, exact: true });
+      out.push({
+        region,
+        shop: rl.shop,
+        url: rl.url,
+        exact: !isLineListingUrl(rl.url),
+      });
       usedShop = rl.shop;
     }
     for (const shop of shopsForRegion(region)) {
@@ -200,7 +211,7 @@ export function cigarShopLinks(c: Cigar): CigarShopLink[] {
         region,
         shop: shop.name,
         url: exact ?? shop.search(q),
-        exact: exact != null,
+        exact: exact != null && !isLineListingUrl(exact),
       });
     }
   }

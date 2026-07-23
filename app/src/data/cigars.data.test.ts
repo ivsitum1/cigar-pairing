@@ -144,6 +144,44 @@ describe("cigars.json integrity", () => {
     expect(gr!.priceUrl).toContain("arturo-fuente-cuban-corona");
   });
 
+  it("Holt's all-cigar-brands listing nije exact product link", () => {
+    const mont = CIGARS.find((c) => c.id === "cig-oliva-monticello");
+    expect(mont).toBeDefined();
+    // listing ostaje na liniji, ne na svakoj vitoli
+    for (const v of mont!.vitolas ?? []) {
+      expect(v.regionLinks?.USA?.url ?? "").not.toMatch(/all-cigar-brands/);
+    }
+    expect(mont!.regionLinks?.USA?.url).toContain("oliva-monticello.html");
+    const holts = cigarShopLinks(mont!).find((l) => l.shop === "Holt's");
+    expect(holts).toBeDefined();
+    expect(holts!.exact).toBe(false);
+  });
+
+  it("Serie V / Melanio priceUrl nije Serie O", () => {
+    for (const id of ["cig-oliva-oliva-serie-v", "cig-oliva-serie-v"] as const) {
+      const c = CIGARS.find((x) => x.id === id);
+      expect(c).toBeDefined();
+      expect((c!.priceUrl ?? "").toLowerCase()).not.toContain("serie-o");
+      expect((c!.priceUrl ?? "").toLowerCase()).toMatch(/serie-v/);
+      expect((c!.priceUrl ?? "").toLowerCase()).not.toMatch(/sampler/);
+    }
+  });
+
+  it("Serie V Melanio ima CigarWorld Robusto/Churchill i Holts line listing", () => {
+    const m = CIGARS.find((c) => c.id === "cig-oliva-serie-v");
+    expect(m).toBeDefined();
+    expect(m!.line).toContain("Melanio");
+    const robusto = m!.vitolas?.find((v) => /robusto/i.test(v.name));
+    const churchill = m!.vitolas?.find((v) => /^churchill$/i.test(v.name));
+    expect(robusto?.format).toBe("52 x 127mm");
+    expect(robusto?.regionLinks?.EU?.url).toContain("melanio-boxpressed-robusto");
+    expect(churchill?.format).toBe("50 x 178mm");
+    expect(churchill?.regionLinks?.EU?.url).toContain("melanio-boxpressed-churchill");
+    expect(m!.regionLinks?.USA?.url).toContain("oliva-serie-v-melanio.html");
+    expect(CIGARS.find((c) => c.id === "cig-oliva-monticello-double")).toBeUndefined();
+    expect(CIGARS.find((c) => c.id === "cig-alec-bradley-sanctum-double")).toBeUndefined();
+  });
+
   it("USA kupnja ide na Holt's search po nazivu, ne na Google site: (0 pogodaka)", () => {
     const withUsa = CIGARS.find((c) => c.markets.includes("USA"));
     expect(withUsa).toBeDefined();
@@ -203,7 +241,7 @@ describe("cigars.json integrity", () => {
     expect(bad.map((c) => c.id)).toEqual([]);
   });
 
-  it("regionLinks — host odgovara regiji i EU/USA su izravni linkovi", () => {
+  it("regionLinks — host odgovara regiji; EU/USA link postoji (listing ≠ exact)", () => {
     const hostByRegion: Record<string, string[]> = {
       HR: ["humidor.hr", "havana-cigar-shop.com"],
       EU: ["cigarworld.de"],
@@ -216,10 +254,19 @@ describe("cigars.json integrity", () => {
         if (!hostByRegion[region].some((h) => host.includes(h))) {
           bad.push(`${c.id}: ${region} -> ${host}`);
         }
-        // EU/USA regionLink mora dati izravan (exact) link u cigarShopLinks
+        // EU/USA regionLink mora biti u cigarShopLinks; Holts listing = exact:false
         if (region !== "HR") {
-          const sl = cigarShopLinks(c).find((l) => l.region === region && l.exact);
-          if (!sl) bad.push(`${c.id}: ${region} regionLink nije exact u cigarShopLinks`);
+          const sl = cigarShopLinks(c).find(
+            (l) => l.region === region && l.url === link.url,
+          );
+          if (!sl) bad.push(`${c.id}: ${region} regionLink nije u cigarShopLinks`);
+          const listing = /holts\.com\/cigars\/all-cigar-brands\//i.test(link.url);
+          if (listing && sl?.exact) {
+            bad.push(`${c.id}: Holts listing ne smije biti exact`);
+          }
+          if (!listing && !sl?.exact) {
+            bad.push(`${c.id}: ${region} product regionLink nije exact u cigarShopLinks`);
+          }
         }
       }
     }

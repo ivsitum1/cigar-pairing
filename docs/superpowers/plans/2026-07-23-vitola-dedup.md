@@ -226,19 +226,57 @@ stops claiming it's the specific vitola. Fix by editing the raw unified catalog
 which now ends with `normalize-vitolas.py`. Split by shop (Holt's / CigarWorld /
 humidor+havana) and brand range.
 
+**Holt's deterministic pass (2026-07-23) ✅ done:**
+- All 99 shared URLs were `holts.com/.../all-cigar-brands/*.html` listings.
+- `normalize-vitolas.py` now demotes every such URL from vitola.regionLinks →
+  cigar.regionLinks (633 cigars). `shared_region_urls` → **0**.
+- App: `cigarShopLinks` marks Holts listings as `exact: false`.
+- Remaining H work (network): find real per-size Holts product URLs where they
+  exist; CigarWorld / humidor+havana shared URLs if any reappear after engine rebuild.
+
 ### Stream I — wrong-product-match verification · network · by brand range
 Lines with no product URL where the search fallback mis-hits (e.g. Serie V
 Melanio → Serie O). Verify the correct product URL and add it to the raw
 catalog; if no product page exists, leave it (the search fallback is honest) but
 note it. Split by brand range.
 
+**Serie-letter scrub (2026-07-23) ✅ done (deterministic slice):**
+- `priceUrl` whose slug serie letter ≠ line serie is replaced with a real
+  `/proizvod/` URL from the cigar's own vitolas (prefer non-sampler).
+- Oliva: Serie V → `oliva-serie-v-no-4`; Melanio → `oliva-serie-v-melanio-figurado`
+  (was both pointing at Serie O Robusto).
+
+**Melanio product URLs (2026-07-23) ✅ done:**
+- Robusto → CigarWorld product + format `52 x 127mm` (was 50×127, wrong ring).
+- Churchill → CigarWorld product + format `50 x 178mm` (was 52×178).
+- Line-level USA → Holts Melanio listing; EU → CigarWorld Melanio series.
+- Via `vitola_link_fixes.json` (consumed by normalize).
+- Remaining I work: brand-range scan for non-serie mis-hits; HR Melanio
+  Robusto/Churchill pages if/when stocked.
+
 ### Stream J — duplicate-line adjudication · data + light network · by brand range
 Work `vitola_dedup_audit.json → duplicate_line_suspects`. Decide per pair:
-merge (same line, e.g. `Serie V` + `Serie V / Melanio`) or distinct (`Flor de`
-family). For merges, name the canonical line id and fold vitolas in. Output
-`app/scripts/data/line_merge_decisions.json`
-(`{ "<canonicalId>": { "absorb": ["<otherId>"] } }`). High false-positive rate —
-this is judgement work, not a blind rule.
+merge or keep-distinct. For merges, name the canonical line id and fold vitolas
+in. Output `app/scripts/data/line_merge_decisions.json`
+(`{ "<canonicalId>": { "absorb": ["<otherId>"] }, "_keep_distinct": [...],
+"_relocate_vitolas": [...] }`). Consumed by `normalize-vitolas.py`. High
+false-positive rate — judgement work, not a blind rule.
+
+**Oliva sample (2026-07-23) ✅ done:**
+- **MERGE** `Monticello Double` → `Monticello` (Holt's Double Toro 6×60 is a
+  size of Monticello, not a separate line). Vitola renamed `Toro` → `Double Toro`.
+- **KEEP DISTINCT** `Serie V` vs `Serie V / Melanio` — different commercial
+  lines (Habano vs Ecuador Sumatra). Prefix overlap only; do **not** merge.
+- **RELOCATE** Melanio SKUs (`Serie V Melanio Robusto` / `Figurado` / …) that
+  were wrongly hanging on the Serie V entry → Melanio line.
+- **KEEP DISTINCT** Flor de * family and Gilberto Reserva vs Blanc.
+
+**Holts-shared `X Double` batch (2026-07-23) ✅ done:**
+Same Monticello pattern (shared listing + single oversized vitola): Sanctum,
+Padilla Serie 1968, Puros Indios Viejo, Quorum Maduro, Sam Leccia White,
+Torano Exodus Gold 20th. Renames `Toro`→`Double Toro` / `Gordo`→`Double Gordo`
+where needed. Other Double suspects left for adjudication (no shared listing or
+ambiguous size).
 
 ### Stream E (frontend safety net) — updated
 > Also: `uniqueVitolas` already dedups by product URL (Round 1). Confirm sampler
