@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
 import { ALL_DRINKS, CIGARS, DRINKS, brandInfo } from "./index";
-import { KNOWN_TAGS, normalizeTag } from "../engine/rules";
+import { KNOWN_TAGS, TAG_LABELS, normalizeTag } from "../engine/rules";
 import aliasFile from "./cigarIdAliases.json";
 
 // Cuva integritet generiranih indeksa nakon regeneracije pipeline-ima.
@@ -180,6 +180,16 @@ describe("integritet podataka", () => {
       }
     }
     expect([...unknown].sort()).toEqual([]);
+  });
+
+  it("svaki KNOWN_TAG ima TAG_LABELS unos (hr + en)", () => {
+    const missing = [...KNOWN_TAGS]
+      .filter((t) => {
+        const entry = TAG_LABELS[t];
+        return !entry?.hr || !entry?.en;
+      })
+      .sort();
+    expect(missing).toEqual([]);
   });
 
   // Taxonomy invariants (plan §4.4). Strict line-name rules land as brands reach

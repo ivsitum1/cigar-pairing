@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import type { Cigar, Drink } from "../types";
 import { useI18n, STYLE_LABELS, ADDITIVE_LABELS, ADDITIVE_RULES } from "../i18n";
+import { flavorLabel } from "../engine/rules";
 import { brandInfo, cigarShopLinks, cigarShopLinkPrice, formatPrice } from "../data";
 import { REGIONS } from "../data/shops";
 import { drinkBuyLink } from "../lib/drinkBuyLink";
@@ -264,7 +265,7 @@ function CigarDetails({
           </span>
         )}
         {cigar.flavorTags.map((tag) => (
-          <Chip key={tag}>{tag}</Chip>
+          <Chip key={tag}>{flavorLabel(tag, lang)}</Chip>
         ))}
       </div>
       <p className="mt-3 text-sm leading-relaxed text-papir/85">
@@ -324,7 +325,7 @@ function CigarDetails({
 }
 
 function DrinkDetails({ drink }: { drink: Drink }) {
-  const { t, lx, sv, rgn } = useI18n();
+  const { t, lx, sv, rgn, lang } = useI18n();
   const style = STYLE_LABELS[drink.style];
   const buy = drinkBuyLink(drink);
   return (
@@ -360,7 +361,7 @@ function DrinkDetails({ drink }: { drink: Drink }) {
       </dl>
       <div className="mt-2 flex flex-wrap gap-1.5">
         {drink.flavorTags.map((tag) => (
-          <Chip key={tag}>{tag}</Chip>
+          <Chip key={tag}>{flavorLabel(tag, lang)}</Chip>
         ))}
       </div>
       {drink.qualityScore != null && (

@@ -102,6 +102,26 @@ describe("pairing engine — API", () => {
     expect(top.reasons[0].text.en.length).toBeGreaterThan(0);
   });
 
+  it("flavor-shared / flavor-complement reasoni koriste lokalizirane oznake, ne sirove ID-jeve", () => {
+    const drink = rums.find(
+      (d) => d.flavorTags.includes("zacini") || d.flavorTags.includes("hrast"),
+    );
+    const cigar = cigars.find(
+      (c) => c.flavorTags.includes("zacini") || c.flavorTags.includes("hrast"),
+    );
+    expect(drink && cigar).toBeTruthy();
+    const { reasons } = scorePairing(cigar!, drink!);
+    const tagged = reasons.filter(
+      (r) => r.rule === "flavor-shared" || r.rule === "flavor-complement",
+    );
+    expect(tagged.length).toBeGreaterThan(0);
+    for (const r of tagged) {
+      expect(r.text.en).not.toMatch(/\bzacini\b/);
+      expect(r.text.en).not.toMatch(/\bhrast\b/);
+      expect(r.text.en).not.toMatch(/\bsuho-voce\b/);
+    }
+  });
+
   it("pairDrinksForCigar ukljucuje sva pica — neutralna politika, engine boduje spoj", () => {
     const cohiba = byId(cigars, "cig-cohiba-linea-clasica-robustos");
     const results = pairDrinksForCigar(cohiba, rums);
