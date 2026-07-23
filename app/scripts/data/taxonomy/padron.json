@@ -1,12 +1,113 @@
 {
   "brand": "Padrón",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-23",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "https://www.padron.com/",
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w1_slice3 deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.1"
   ],
-  "lines": {},
+  "lines": {
+    "#6000": {
+      "line": "#6000"
+    },
+    "#6000 Maduro": {
+      "line": "#6000 Maduro"
+    },
+    "1926 Serie": {
+      "line": "1926 Serie"
+    },
+    "1964 Anniversary": {
+      "line": "1964 Anniversary"
+    },
+    "1964 Anniversary Series": {
+      "line": "1964 Anniversary Series"
+    },
+    "40th Anniversary 40th": {
+      "line": "40th Anniversary"
+    },
+    "40th Anniversary 40th Maduro": {
+      "line": "40th Anniversary Maduro"
+    },
+    "50th Anniversary Maduro": {
+      "line": "50th Anniversary",
+      "vitola": "Maduro"
+    },
+    "50th Anniversary Natural": {
+      "line": "50th Anniversary",
+      "vitola": "Natural"
+    },
+    "60th Anniversary 60th": {
+      "line": "60th Anniversary"
+    },
+    "60th Anniversary 60th Maduro": {
+      "line": "60th Anniversary Maduro"
+    },
+    "80 Years 80th": {
+      "line": "80 Years"
+    },
+    "80 Years 80th Maduro": {
+      "line": "80 Years Maduro"
+    },
+    "Churchill": {
+      "line": "Churchill"
+    },
+    "Core (2000/3000)": {
+      "line": "Classic"
+    },
+    "Damaso": {
+      "line": "Damaso"
+    },
+    "Family Reserve": {
+      "line": "Family Reserve"
+    },
+    "Maduro": {
+      "line": "Maduro"
+    },
+    "Padron Black Black PB 97": {
+      "line": "Black"
+    },
+    "Padron Black Black PB 97 Maduro": {
+      "line": "Black Maduro"
+    },
+    "Padron Classic No. 2000 MADURO": {
+      "line": "Classic",
+      "vitola": "No. 2000 Maduro"
+    },
+    "Padron Classic No. 2000 NATURAL": {
+      "line": "Classic",
+      "vitola": "No. 2000 Natural"
+    },
+    "Padron Classic No. 3000 MADURO": {
+      "line": "Classic",
+      "vitola": "No. 3000 Maduro"
+    },
+    "Padron Classic No. 3000 NATURAL": {
+      "line": "Classic",
+      "vitola": "No. 3000 Natural"
+    },
+    "Padron Classic No. 4000 MADURO": {
+      "line": "Classic",
+      "vitola": "No. 4000 Maduro"
+    },
+    "Padron Classic No. 4000 NATURAL": {
+      "line": "Classic",
+      "vitola": "No. 4000 Natural"
+    },
+    "Padron Classic No. 5000 MADURO": {
+      "line": "Classic",
+      "vitola": "No. 5000 Maduro"
+    },
+    "Padron Classic No. 5000 NATURAL": {
+      "line": "Classic",
+      "vitola": "No. 5000 Natural"
+    },
+    "Panetela": {
+      "line": "Panetela"
+    }
+  },
   "vitolaRenames": {},
   "shapes": {},
   "keepSeparate": [
@@ -19,22 +120,24 @@
       "1964 Anniversary Series"
     ],
     [
-      "40th Anniversary 40th",
-      "40th Anniversary 40th Maduro"
+      "40th Anniversary",
+      "40th Anniversary Maduro"
     ],
     [
-      "60th Anniversary 60th",
-      "60th Anniversary 60th Maduro"
+      "60th Anniversary",
+      "60th Anniversary Maduro"
     ],
     [
-      "80 Years 80th",
-      "80 Years 80th Maduro"
+      "80 Years",
+      "80 Years Maduro"
     ],
     [
-      "Padron Black Black PB 97",
-      "Padron Black Black PB 97 Maduro"
+      "Black",
+      "Black Maduro"
     ]
   ],
   "lineNotes": {},
-  "unresolved": []
+  "unresolved": [
+    "Padrón: 1964 Anniversary vs Anniversary Series kept separate per seed"
+  ]
 }

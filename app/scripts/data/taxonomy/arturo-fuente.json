@@ -1,15 +1,150 @@
 {
   "brand": "Arturo Fuente",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-23",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "https://www.arturofuente.com/",
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w1_slice3 deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.1"
   ],
   "lines": {
-    "Seleccion d'Oro Imperial": {
-      "line": "Seleccion d'Oro",
-      "vitola": "Imperial"
+    "A. Fuente Don Carlos /15": {
+      "line": "Don Carlos"
+    },
+    "A. Fuente Don Carlos /25": {
+      "line": "Don Carlos"
+    },
+    "A. Fuente Fuente Fuente OpusX Perfecxion X/3": {
+      "line": "Opus X",
+      "vitola": "Perfecxion X"
+    },
+    "A. Fuente Hemingway Classic/25": {
+      "line": "Hemingway",
+      "vitola": "Classic",
+      "shape": "Perfecto"
+    },
+    "A. Fuente Hemingway Signature/25": {
+      "line": "Hemingway",
+      "vitola": "Signature",
+      "shape": "Perfecto"
+    },
+    "Anejo #55": {
+      "line": "Añejo",
+      "vitola": "55"
+    },
+    "Anejo 50 Maduro": {
+      "line": "Añejo",
+      "vitola": "50 Maduro"
+    },
+    "Anejo 55 Maduro": {
+      "line": "Añejo",
+      "vitola": "55 Maduro"
+    },
+    "Anejo 8-8-8 Maduro": {
+      "line": "Añejo",
+      "vitola": "8-8-8 Maduro"
+    },
+    "Anejo No. 46": {
+      "line": "Añejo",
+      "vitola": "46"
+    },
+    "Anejo No. 48": {
+      "line": "Añejo",
+      "vitola": "48"
+    },
+    "Anejo No. 49": {
+      "line": "Añejo",
+      "vitola": "49"
+    },
+    "Anejo No. 50": {
+      "line": "Añejo",
+      "vitola": "50"
+    },
+    "Anejo No. 55": {
+      "line": "Añejo",
+      "vitola": "55"
+    },
+    "Anejo No. 60": {
+      "line": "Añejo",
+      "vitola": "60"
+    },
+    "Brevas Royal Boy": {
+      "line": "Brevas Royales",
+      "vitola": "Royal Boy"
+    },
+    "Brevas Royal Girl": {
+      "line": "Brevas Royales",
+      "vitola": "Royal Girl"
+    },
+    "Brevas Royal Maduro": {
+      "line": "Brevas Royales",
+      "vitola": "Royal Maduro"
+    },
+    "Chateau Fuente": {
+      "line": "Chateau Fuente"
+    },
+    "Claro": {
+      "line": "Claro"
+    },
+    "Claro Spanish": {
+      "line": "Claro Spanish"
+    },
+    "Curly Head Deluxe": {
+      "line": "Curly Head",
+      "vitola": "Deluxe"
+    },
+    "Don Carlos": {
+      "line": "Don Carlos"
+    },
+    "Don Carlos Edicion de Aniversario": {
+      "line": "Don Carlos Edicion de Aniversario"
+    },
+    "Fuente Fuente Opus X Lost City": {
+      "line": "Opus X Lost City"
+    },
+    "Gran Reserva": {
+      "line": "Gran Reserva"
+    },
+    "Hemingway": {
+      "line": "Hemingway"
+    },
+    "King T Sungrown": {
+      "line": "Chateau Fuente",
+      "vitola": "King T Sungrown"
+    },
+    "Limited Edition Edicion de Aniversario": {
+      "line": "Limited Edition Edicion de Aniversario"
+    },
+    "Limited Edition Unnamed Reserve Grand 2021": {
+      "line": "Limited Edition Unnamed Reserve Grand 2021"
+    },
+    "Opus X": {
+      "line": "Opus X"
+    },
+    "Piramide": {
+      "line": "Gran Reserva",
+      "vitola": "Piramide",
+      "shape": "Piramide"
+    },
+    "Rare Pink Queen of Hearts": {
+      "line": "Rare Pink Queen of Hearts"
+    },
+    "Rosado Sungrown": {
+      "line": "Rosado Sungrown"
+    },
+    "Royale Salute": {
+      "line": "Royale Salute"
+    },
+    "Seleccion d'Oro": {
+      "line": "Seleccion d'Oro"
+    },
+    "Special Selection Brevas Royales": {
+      "line": "Special Selection Brevas Royales"
+    },
+    "Special Selection Brevas Royales Maduro": {
+      "line": "Special Selection Brevas Royales Maduro"
     }
   },
   "vitolaRenames": {},
@@ -29,5 +164,7 @@
     ]
   ],
   "lineNotes": {},
-  "unresolved": []
+  "unresolved": [
+    "Arturo Fuente: Opus X / Hemingway vitola names still embed line tokens — polish later"
+  ]
 }
