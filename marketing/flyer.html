@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Cigar &amp; Drink Pairing — Dosje</title>
+<style>
+  :root {
+    --ground: #141009;
+    --ground-2: #1b130d;
+    --cedar: #221812;
+    --cedar-2: #2c2018;
+    --gold: #c9a35c;
+    --gold-shine: #e6cd93;
+    --paper: #ece0c9;
+    --dim: #a68f72;
+    --oxblood: #9c4433;
+    --line: #6b563a;
+    --serif: "Didot", "Bodoni MT", "Playfair Display", "Hoefler Text", Georgia, serif;
+    --body: Georgia, "Iowan Old Style", "Times New Roman", serif;
+    --util: "Manrope", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background:
+      radial-gradient(900px 420px at 50% -8%, #4a331d66, transparent 70%),
+      radial-gradient(600px 600px at 88% 108%, #3a271633, transparent 70%),
+      var(--ground);
+    color: var(--paper);
+    font-family: var(--body);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .sheet {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: clamp(28px, 6vw, 72px) clamp(22px, 5vw, 60px) clamp(40px, 6vw, 80px);
+  }
+
+  /* ── shared bits ─────────────────────────────── */
+  .eyebrow {
+    font-family: var(--util);
+    font-size: 11px;
+    letter-spacing: 0.42em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin: 0;
+  }
+  .band {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold) 18%, var(--gold) 82%, transparent);
+    opacity: 0.55;
+    margin: 0;
+    border: 0;
+  }
+  .label {
+    font-family: var(--util);
+    font-size: 10.5px;
+    letter-spacing: 0.34em;
+    text-transform: uppercase;
+    color: var(--dim);
+  }
+  h2.section-title {
+    font-family: var(--util);
+    font-size: 12px;
+    letter-spacing: 0.34em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 600;
+    margin: 0 0 4px;
+  }
+
+  /* ── hero ────────────────────────────────────── */
+  .hero { text-align: center; }
+  .filecode {
+    display: flex; align-items: center; justify-content: center; gap: 14px;
+    margin-bottom: clamp(26px, 5vw, 42px);
+  }
+  .filecode .rule { flex: 1; max-width: 120px; }
+  .title {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: clamp(40px, 10.5vw, 84px);
+    line-height: 0.98;
+    letter-spacing: 0.01em;
+    margin: clamp(20px, 5vw, 34px) 0 0;
+    text-wrap: balance;
+    color: var(--paper);
+  }
+  .title .amp { color: var(--gold); font-style: italic; font-size: 0.7em; }
+  .kicker {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: clamp(17px, 3.4vw, 23px);
+    color: var(--gold-shine);
+    margin: 18px 0 0;
+    letter-spacing: 0.01em;
+  }
+  .lede {
+    max-width: 46ch;
+    margin: 22px auto 0;
+    color: var(--dim);
+    font-size: clamp(15px, 2.4vw, 17px);
+  }
+  .ember {
+    width: 7px; height: 7px; border-radius: 50%;
+    background: var(--oxblood);
+    box-shadow: 0 0 10px 2px #c9573688, 0 0 3px 1px #e07a4f;
+    display: inline-block; vertical-align: middle;
+    animation: glow 3.4s ease-in-out infinite;
+  }
+  @keyframes glow {
+    0%, 100% { opacity: 0.55; box-shadow: 0 0 8px 1px #c9573666; }
+    50% { opacity: 1; box-shadow: 0 0 14px 3px #e07a4faa; }
+  }
+
+  .cta-row {
+    display: flex; flex-wrap: wrap; gap: 14px; justify-content: center;
+    margin-top: clamp(28px, 5vw, 40px);
+  }
+  .cta {
+    font-family: var(--util);
+    font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase;
+    text-decoration: none; padding: 14px 26px; border-radius: 2px;
+    transition: transform 0.15s ease, background 0.2s ease, color 0.2s ease;
+  }
+  .cta.primary { background: var(--gold); color: #1a130b; font-weight: 600; }
+  .cta.primary:hover { background: var(--gold-shine); transform: translateY(-1px); }
+  .cta.ghost { border: 1px solid var(--line); color: var(--paper); }
+  .cta.ghost:hover { border-color: var(--gold); color: var(--gold-shine); transform: translateY(-1px); }
+
+  /* ── generic section ─────────────────────────── */
+  section { margin-top: clamp(44px, 8vw, 76px); }
+  .brief {
+    font-family: var(--serif);
+    font-size: clamp(19px, 3.4vw, 25px);
+    line-height: 1.5;
+    color: var(--paper);
+    text-align: center;
+    max-width: 32ch;
+    margin: 22px auto 0;
+    text-wrap: balance;
+  }
+  .brief em { color: var(--gold-shine); font-style: italic; }
+
+  /* ── capabilities grid ───────────────────────── */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+    margin-top: 26px;
+  }
+  .cap {
+    background: linear-gradient(180deg, var(--cedar), var(--ground-2));
+    padding: 22px 22px 24px;
+  }
+  .cap h3 {
+    font-family: var(--serif);
+    font-size: 19px; font-weight: 400; margin: 10px 0 6px;
+    color: var(--paper);
+  }
+  .cap p { margin: 0; font-size: 13.5px; color: var(--dim); font-family: var(--util); line-height: 1.55; }
+  .cap .mk { font-family: var(--util); font-size: 10px; letter-spacing: 0.3em; text-transform: uppercase; color: var(--gold); }
+
+  /* ── objection turn (the spine) ──────────────── */
+  .dossier { margin-top: clamp(48px, 8vw, 80px); }
+  .dossier .head { text-align: center; }
+  .stamp {
+    display: inline-block;
+    font-family: var(--util);
+    font-size: 10px; letter-spacing: 0.3em; text-transform: uppercase;
+    color: var(--oxblood);
+    border: 1.5px solid var(--oxblood);
+    padding: 5px 12px; border-radius: 2px;
+    transform: rotate(-3deg);
+    margin-bottom: 18px;
+    opacity: 0.9;
+  }
+  .obj {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 6px;
+    padding: 20px 0;
+    border-bottom: 1px solid #3a2c1e;
+  }
+  .obj:last-child { border-bottom: 0; }
+  .obj .said {
+    font-family: var(--serif); font-style: italic;
+    font-size: clamp(17px, 3vw, 21px); color: var(--paper);
+  }
+  .obj .said::before { content: "«"; color: var(--dim); margin-right: 4px; }
+  .obj .said::after { content: "»"; color: var(--dim); margin-left: 4px; }
+  .obj .ans {
+    font-family: var(--util); font-size: 14px; color: var(--dim); line-height: 1.6;
+    padding-left: 22px; position: relative;
+  }
+  .obj .ans::before {
+    content: "→"; position: absolute; left: 0; color: var(--gold); font-family: var(--body);
+  }
+  .obj .ans b { color: var(--gold-shine); font-weight: 600; }
+
+  /* ── numbers ─────────────────────────────────── */
+  .numbers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(96px, 1fr));
+    gap: 20px 12px;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .num .n {
+    font-family: var(--serif); font-size: clamp(30px, 6vw, 44px);
+    color: var(--gold-shine); line-height: 1; font-variant-numeric: tabular-nums;
+  }
+  .num .cap-lbl {
+    display: block; margin-top: 8px;
+    font-family: var(--util); font-size: 10px; letter-spacing: 0.22em;
+    text-transform: uppercase; color: var(--dim);
+  }
+
+  /* ── closing ─────────────────────────────────── */
+  .closing { text-align: center; margin-top: clamp(52px, 9vw, 88px); }
+  .closing .sign {
+    font-family: var(--serif); font-style: italic;
+    font-size: clamp(22px, 4.6vw, 32px); color: var(--paper);
+    margin: 0 auto; max-width: 24ch; text-wrap: balance;
+  }
+  .closing .sign b { color: var(--gold-shine); font-weight: 400; font-style: normal; }
+  .url {
+    font-family: var(--util); font-size: 13px; letter-spacing: 0.14em;
+    color: var(--gold); margin-top: 18px; word-break: break-all;
+  }
+  .foot {
+    margin-top: clamp(40px, 7vw, 64px);
+    font-family: var(--util); font-size: 11px; color: #6f5c46;
+    text-align: center; line-height: 1.7; letter-spacing: 0.02em;
+  }
+  .foot .dot { color: var(--line); margin: 0 8px; }
+</style>
+</head>
+<body>
+<main class="sheet">
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="filecode">
+      <hr class="band rule" />
+      <span class="eyebrow">Dosje&nbsp;№&nbsp;007 · Est. 2026</span>
+      <hr class="band rule" />
+    </div>
+
+    <p class="label">Strogo za uživanje</p>
+    <h1 class="title">Cigar <span class="amp">&amp;</span> Drink<br />Pairing</h1>
+    <p class="kicker">Odležano, ne prepušteno slučaju. <span class="ember"></span></p>
+
+    <p class="lede">
+      Sommelier za cigaru i čašu — u džepu. Bira spoj, objašnjava zašto radi,
+      i kaže ti gdje kupiti. Bez računa, bez slanja podataka, radi offline.
+    </p>
+
+    <div class="cta-row">
+      <a class="cta primary" href="https://ivsitum1.github.io/cigar-pairing/">Otvori aplikaciju</a>
+      <a class="cta ghost" href="https://ivsitum1.github.io/cigar-pairing/">Instaliraj na mobitel</a>
+    </div>
+  </header>
+
+  <!-- BRIEF -->
+  <section>
+    <p class="brief">
+      Imaš cigaru. Imaš policu s bocama. Pitanje je samo <em>koja čaša</em> —
+      i to pitanje smo riješili.
+    </p>
+  </section>
+
+  <!-- CAPABILITIES -->
+  <section>
+    <div style="text-align:center">
+      <h2 class="section-title">Što je u kutiji</h2>
+    </div>
+    <div class="grid">
+      <div class="cap">
+        <span class="mk">Engine</span>
+        <h3>Spoj s objašnjenjem</h3>
+        <p>Rule-based engine boduje po tijelu, slatkoći i okusima — i napiše zašto spoj radi. Nema pogađanja.</p>
+      </div>
+      <div class="cap">
+        <span class="mk">Katalog</span>
+        <h3>Šest svjetova pića</h3>
+        <p>Rum, whisky, konjak &amp; brandy, gin, vino i kava. Svaki rangiran po kvaliteti za sipping uz cigaru.</p>
+      </div>
+      <div class="cap">
+        <span class="mk">Offline</span>
+        <h3>Radi bez signala</h3>
+        <p>PWA — instalira se kao aplikacija, otvara se u sekundi, radi u lounge-u bez wi-fija.</p>
+      </div>
+      <div class="cap">
+        <span class="mk">Dnevnik</span>
+        <h3>Pamti tvoj ukus</h3>
+        <p>Zabilježi večer, ocijeni spoj — prijedlozi se tiho naginju tebi. Sve ostaje na tvom uređaju.</p>
+      </div>
+      <div class="cap">
+        <span class="mk">Klub</span>
+        <h3>101 lekcija &amp; leksikon</h3>
+        <p>Kurikulum, jezik degustacije, bonton, kviz i karta zemalja. Od početnika do znalca.</p>
+      </div>
+      <div class="cap">
+        <span class="mk">Kupovina</span>
+        <h3>Gdje nabaviti</h3>
+        <p>Trgovine i cijene za HR, EU i USA — izravan link na proizvod gdje postoji, inače pretraga.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE SPINE: objection turn -->
+  <section class="dossier">
+    <div class="head">
+      <span class="stamp">Povjerljivo · Analiza odbijanja</span>
+      <h2 class="section-title">Zašto ju ljudi isprva nisu željeli</h2>
+      <p class="lede" style="margin-top:14px">
+        Svaka dobra misija počinje s poštenom procjenom prepreka. Evo četiri koje smo čuli — i kako smo na svaku odgovorili.
+      </p>
+    </div>
+
+    <hr class="band" style="margin:26px 0" />
+
+    <div class="obj">
+      <span class="said">Još jedna aplikacija koju moram skinuti i registrirati se.</span>
+      <span class="ans">Ne. <b>Nema računa, nema prijave, ništa se ne šalje.</b> Otvoriš link i radi — instalacija je opcija, ne uvjet.</span>
+    </div>
+    <div class="obj">
+      <span class="said">Ne razumijem se dovoljno da bih to koristio.</span>
+      <span class="ans">Zato postoji <b>Klub 101</b> — vodi te korak po korak, a engine uz svaki prijedlog objasni zašto spoj radi.</span>
+    </div>
+    <div class="obj">
+      <span class="said">Baš i nemam gdje to sve kupiti.</span>
+      <span class="ans">Trgovine i cijene su <b>ugrađene po regiji</b> (HR · EU · USA). App ne izmišlja broj — pokazuje pravi link kad postoji.</span>
+    </div>
+    <div class="obj">
+      <span class="said">Zvuči snobovski — kao da će me suditi.</span>
+      <span class="ans">Suprotno. <b>Sve je pairable, ništa se ne osuđuje.</b> Dodaci se deklariraju, ne kažnjavaju. Ti biraš što voliš.</span>
+    </div>
+  </section>
+
+  <!-- NUMBERS -->
+  <section>
+    <div style="text-align:center">
+      <h2 class="section-title">Dosje u brojkama</h2>
+    </div>
+    <div class="numbers">
+      <div class="num"><span class="n">525</span><span class="cap-lbl">Cigara</span></div>
+      <div class="num"><span class="n">278</span><span class="cap-lbl">Viskija</span></div>
+      <div class="num"><span class="n">147</span><span class="cap-lbl">Rumova</span></div>
+      <div class="num"><span class="n">84</span><span class="cap-lbl">Konjaka</span></div>
+      <div class="num"><span class="n">57</span><span class="cap-lbl">Vina</span></div>
+      <div class="num"><span class="n">0</span><span class="cap-lbl">Računa</span></div>
+    </div>
+  </section>
+
+  <hr class="band" style="margin:clamp(48px,8vw,80px) 0 0" />
+
+  <!-- CLOSING -->
+  <section class="closing">
+    <p class="sign">Za večeri koje se pamte.<br /><b>Otvori, zapali, nazdravi.</b></p>
+    <p class="url">ivsitum1.github.io/cigar-pairing</p>
+    <div class="cta-row">
+      <a class="cta primary" href="https://ivsitum1.github.io/cigar-pairing/">Uđi u lounge</a>
+    </div>
+  </section>
+
+  <p class="foot">
+    Instalabilno · Radi offline · Bez računa <span class="dot">·</span> Podaci ostaju na tvom uređaju
+    <br />
+    Neutralno i informativno — deklaracija umjesto osude
+    <span class="dot">·</span> Uživajte odgovorno · 18+
+  </p>
+
+</main>
+</body>
+</html>

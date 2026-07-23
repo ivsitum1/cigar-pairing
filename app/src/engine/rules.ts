@@ -16,6 +16,7 @@ export const WEIGHTS = {
   curatedHintMinScore: 80,
   curatedWarnMaxScore: 45, // ispod ovoga kurirana poruka smije biti negativna
   personal: 5, // max nudge iz dnevnika (stil pica / brend cigare), po smjeru
+  formatComplexityBonus: 0, // B2 (eksperimentalno, default 0=iskljuceno): duga cigara + kompleksno pice
 };
 
 // sinonimi/varijante iz scrape podataka -> kanonski tag koji engine boduje

@@ -1,11 +1,12 @@
 // Custom pairing prostor: ručno izaberi JEDNU cigaru i JEDNO piće -> % slaganja.
 import { useMemo, useState } from "react";
-import type { Cigar, Drink } from "../types";
+import type { Cigar, Drink, ServeStyle } from "../types";
 import { ALL_DRINKS, CIGARS, cigarInRegion, formatPrice } from "../data";
 import { scorePairing } from "../engine/pairing";
 import { curatedPairingOpinion } from "../engine/curatedOpinion";
 import { useI18n, STYLE_LABELS, type StringKey } from "../i18n";
 import { Meter, ScoreBand, SearchInput } from "../components/ui";
+import { ServeChips } from "../components/ServeChips";
 import { useMarket } from "../store/market";
 
 const norm = (s: string) =>
@@ -24,6 +25,7 @@ export function CustomPairing({
   const market = useMarket();
   const [cigar, setCigar] = useState<Cigar | null>(null);
   const [drink, setDrink] = useState<Drink | null>(null);
+  const [serve, setServe] = useState<ServeStyle | undefined>(undefined);
   const [picking, setPicking] = useState<"cigar" | "drink" | null>("cigar");
 
   const marketCigars = useMemo(
@@ -32,7 +34,7 @@ export function CustomPairing({
   );
   const drinks = useMemo(() => ALL_DRINKS.filter((d) => d.pairable), []);
 
-  const result = cigar && drink ? scorePairing(cigar, drink) : null;
+  const result = cigar && drink ? scorePairing(cigar, drink, undefined, serve) : null;
   const pairingOpinion = result
     ? curatedPairingOpinion(cigar!, drink!, result.reasons, result.score)
     : null;
@@ -70,6 +72,9 @@ export function CustomPairing({
           active={picking === "drink"}
         />
       </div>
+
+      {/* serve style — mijenja rezultat (aroma/žestina) */}
+      {drink && <ServeChips drink={drink} serve={serve} onChange={setServe} />}
 
       {/* rezultat slaganja */}
       {result && (
@@ -168,6 +173,7 @@ export function CustomPairing({
               setPicking(drink ? null : "drink");
             } else {
               setDrink(raw as Drink);
+              setServe(undefined);
               setPicking(cigar ? null : "cigar");
             }
           }}
