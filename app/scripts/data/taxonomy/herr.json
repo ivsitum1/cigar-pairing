@@ -1,20 +1,17 @@
 {
   "brand": "Herr",
-  "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "renameBrand": "Herr Lehmann",
+  "status": "brand-only",
+  "reviewedAt": "2026-07-23",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "product ids cig-herr-lehmann-*"
   ],
   "lines": {},
   "vitolaRenames": {},
   "shapes": {},
-  "keepSeparate": [
-    [
-      "Lehmann No. 5 Schwarzwald",
-      "Lehmann No. 5 Schwarzwald Goldfinger"
-    ]
-  ],
+  "keepSeparate": [],
   "lineNotes": {},
-  "unresolved": []
+  "unresolved": [
+    "Phase 2 brand rename only; prior seed line maps cleared for Phase 3 rewrite"
+  ]
 }

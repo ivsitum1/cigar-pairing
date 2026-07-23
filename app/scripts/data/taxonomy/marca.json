@@ -1,49 +1,17 @@
 {
   "brand": "Marca",
-  "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "renameBrand": "Marca Fina",
+  "status": "brand-only",
+  "reviewedAt": "2026-07-23",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "product ids cig-marca-fina-*"
   ],
-  "lines": {
-    "Fina Brazil Breve": {
-      "line": "Fina Brazil",
-      "vitola": "Breve Robusto"
-    },
-    "Fina Nicaragua Breve": {
-      "line": "Fina Nicaragua",
-      "vitola": "Breve Piramide"
-    },
-    "Fina Panama Robusto Breve": {
-      "line": "Fina Panama",
-      "vitola": "Short Robusto"
-    },
-    "Fina Panama Maduro Breve": {
-      "line": "Fina Panama Maduro",
-      "vitola": "Breve Robusto"
-    }
-  },
+  "lines": {},
   "vitolaRenames": {},
   "shapes": {},
-  "keepSeparate": [
-    [
-      "Fina Panama",
-      "Fina Panama Edicion Limitada 2024"
-    ],
-    [
-      "Fina Panama",
-      "Fina Panama Maduro"
-    ],
-    [
-      "Fina Panama",
-      "Fina Panama Maduro Breve"
-    ],
-    [
-      "Fina Panama",
-      "Fina Panama Maduro Edición Limitada 2024"
-    ]
-  ],
+  "keepSeparate": [],
   "lineNotes": {},
-  "unresolved": []
+  "unresolved": [
+    "Phase 2 brand rename only; prior seed line maps cleared for Phase 3 rewrite"
+  ]
 }

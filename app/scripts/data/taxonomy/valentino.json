@@ -1,28 +1,17 @@
 {
   "brand": "Valentino",
-  "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "renameBrand": "Valentino Siesto",
+  "status": "brand-only",
+  "reviewedAt": "2026-07-23",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "https://www.valentinosiestocigars.com/"
   ],
   "lines": {},
   "vitolaRenames": {},
   "shapes": {},
-  "keepSeparate": [
-    [
-      "Siesto Premium Sun Grown",
-      "Siesto Premium Sun Grown 1971"
-    ],
-    [
-      "Siesto Anniversary Sun Grown",
-      "Siesto Anniversary Sun Grown Real #5"
-    ],
-    [
-      "Siesto Premium Maduro",
-      "Siesto Premium Maduro Real"
-    ]
-  ],
+  "keepSeparate": [],
   "lineNotes": {},
-  "unresolved": []
+  "unresolved": [
+    "Phase 2 brand rename only; prior seed line maps cleared for Phase 3 rewrite"
+  ]
 }

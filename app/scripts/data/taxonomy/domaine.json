@@ -1,29 +1,17 @@
 {
   "brand": "Domaine",
-  "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "renameBrand": "Domaine de Lavalette",
+  "status": "brand-only",
+  "reviewedAt": "2026-07-23",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "product ids cig-domaine-de-lavalette-*"
   ],
-  "lines": {
-    "de Lavalette Classic Small": {
-      "line": "de Lavalette Classic",
-      "vitola": "Small Panetela"
-    },
-    "de Lavalette Panama Breve": {
-      "line": "de Lavalette Panama",
-      "vitola": "Breve Robusto"
-    }
-  },
+  "lines": {},
   "vitolaRenames": {},
   "shapes": {},
-  "keepSeparate": [
-    [
-      "de Lavalette Honduras",
-      "de Lavalette Honduras Maduro"
-    ]
-  ],
+  "keepSeparate": [],
   "lineNotes": {},
-  "unresolved": []
+  "unresolved": [
+    "Phase 2 brand rename only; prior seed line maps cleared for Phase 3 rewrite"
+  ]
 }

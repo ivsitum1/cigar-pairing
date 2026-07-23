@@ -1,6 +1,6 @@
 {
-  "taxonomy_files": 0,
-  "taxonomy_files_total": 167,
+  "taxonomy_files": 56,
+  "taxonomy_files_total": 188,
   "input_records": 2711,
   "auto_pass": {
     "P1": [],
@@ -17,6 +17,5 @@
     "P5": 0
   },
   "aliases_added": [],
-  "note": "no applyable taxonomy/*.json (status done|brand-only); auto-pass only",
   "output_records": 2711
 }

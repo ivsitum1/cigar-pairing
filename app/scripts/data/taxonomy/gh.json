@@ -1,49 +1,18 @@
 {
   "brand": "Gh",
-  "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "renameBrand": "Gran Habano",
+  "status": "brand-only",
+  "reviewedAt": "2026-07-23",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "https://cigar-coop.com/2018/03/cigar-review-gran-habano-s-t-k-black-dahlia-by-george-rico-robusto.html",
+    "ghcigars.com / brands.json Gh blurb"
   ],
-  "lines": {
-    "G.H. Black Dahlia Shorty": {
-      "line": "G.H. Black Dahlia",
-      "vitola": "Shorty Robusto"
-    },
-    "G.H. Connecticut No. 1 Shorty": {
-      "line": "G.H. Connecticut No. 1",
-      "vitola": "Shorty Robusto"
-    },
-    "G.H. Corojo No. 5 Shorty": {
-      "line": "G.H. Corojo No. 5",
-      "vitola": "Shorty Robusto"
-    },
-    "G.H. Criollo No. 3 Shorty": {
-      "line": "G.H. Criollo No. 3",
-      "vitola": "Shorty Robusto"
-    },
-    "G.H. Gran Reserva No. 5 Shorty": {
-      "line": "G.H. Gran Reserva No. 5",
-      "vitola": "Shorty Robusto"
-    },
-    "G.H. La Conquista La Pinta": {
-      "line": "G.H. La Conquista",
-      "vitola": "La Pinta"
-    },
-    "G.H. La Conquista Shorty": {
-      "line": "G.H. La Conquista",
-      "vitola": "Shorty Robusto"
-    }
-  },
+  "lines": {},
   "vitolaRenames": {},
   "shapes": {},
-  "keepSeparate": [
-    [
-      "G.H. Corojo No. 5",
-      "G.H. Corojo No. 5 Maduro"
-    ]
-  ],
+  "keepSeparate": [],
   "lineNotes": {},
-  "unresolved": []
+  "unresolved": [
+    "Phase 2 brand rename only; prior seed line maps cleared for Phase 3 rewrite"
+  ]
 }
