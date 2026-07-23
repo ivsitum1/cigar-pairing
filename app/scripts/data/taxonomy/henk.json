@@ -1,20 +1,17 @@
 {
   "brand": "Henk",
-  "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "renameBrand": "Henk Maori",
+  "status": "brand-only",
+  "reviewedAt": "2026-07-23",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "https://www.henk-suitcase.com/the-straightshooter/"
   ],
   "lines": {},
   "vitolaRenames": {},
   "shapes": {},
-  "keepSeparate": [
-    [
-      "Maori La Dona",
-      "Maori La Dona Edición Limitada 2018"
-    ]
-  ],
+  "keepSeparate": [],
   "lineNotes": {},
-  "unresolved": []
+  "unresolved": [
+    "Phase 2 brand rename only; prior seed line maps cleared for Phase 3 rewrite"
+  ]
 }

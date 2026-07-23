@@ -1,20 +1,17 @@
 {
   "brand": "Man O. War",
-  "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "renameBrand": "Man O' War",
+  "status": "brand-only",
+  "reviewedAt": "2026-07-23",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "https://www.cigarsinternational.com/p/man-o-war-cigars/1411636/"
   ],
   "lines": {},
   "vitolaRenames": {},
   "shapes": {},
-  "keepSeparate": [
-    [
-      "Man O' War",
-      "Man O' War Virtue"
-    ]
-  ],
+  "keepSeparate": [],
   "lineNotes": {},
-  "unresolved": []
+  "unresolved": [
+    "Phase 2 brand rename only; prior seed line maps cleared for Phase 3 rewrite"
+  ]
 }

@@ -1,20 +1,17 @@
 {
   "brand": "Bock",
-  "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "renameBrand": "Bock y Ca.",
+  "status": "brand-only",
+  "reviewedAt": "2026-07-23",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "product ids cig-bock-y-ca*"
   ],
   "lines": {},
   "vitolaRenames": {},
   "shapes": {},
-  "keepSeparate": [
-    [
-      "y Ca.",
-      "y Ca. 25 Anos Renacimiento"
-    ]
-  ],
+  "keepSeparate": [],
   "lineNotes": {},
-  "unresolved": []
+  "unresolved": [
+    "Phase 2 brand rename only; prior seed line maps cleared for Phase 3 rewrite"
+  ]
 }

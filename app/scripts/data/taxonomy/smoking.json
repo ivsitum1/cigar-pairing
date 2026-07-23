@@ -1,24 +1,17 @@
 {
   "brand": "Smoking",
-  "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "renameBrand": "Smoking Jacket",
+  "status": "brand-only",
+  "reviewedAt": "2026-07-23",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "product ids cig-smoking-jacket-by-hendrik-kelner-jr-*"
   ],
-  "lines": {
-    "Jacket by Hendrik Kelner Jr. Red Label Imperial": {
-      "line": "Jacket by Hendrik Kelner Jr. Red Label",
-      "vitola": "Imperial"
-    },
-    "Jacket by Hendrik Kelner Jr. Red Label Magno": {
-      "line": "Jacket by Hendrik Kelner Jr. Red Label",
-      "vitola": "Magno"
-    }
-  },
+  "lines": {},
   "vitolaRenames": {},
   "shapes": {},
   "keepSeparate": [],
   "lineNotes": {},
-  "unresolved": []
+  "unresolved": [
+    "Phase 2 brand rename only; prior seed line maps cleared for Phase 3 rewrite"
+  ]
 }
