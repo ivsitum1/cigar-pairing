@@ -70,6 +70,12 @@ def toks(s):
     ]
 
 
+def toks_all(s):
+    """Like toks() but KEEPS single-char tokens — roman numerals / letters
+    distinguish vitolas (Siglo I vs Siglo V), so they must survive here."""
+    return [t for t in re.sub(r"[^a-z0-9]+", " ", (s or "").lower()).split() if t]
+
+
 def product_key(v):
     """Locale-normalized key for a vitola, ONLY from a real product page.
 
@@ -185,8 +191,28 @@ def is_sampler(cig):
     return "sampler" in hay or "gift" in hay
 
 
+def semantic_key(name, prefix):
+    """Tokens of a vitola name after dropping a LEADING run of brand/line
+    tokens. 'Serie V Belicoso' (line Serie V) -> ('belicoso',); 'V No.4' ->
+    ('no','4'). Only leading tokens are stripped, so distinct middles never
+    collide (Serie V Melanio Robusto stays separate from Serie V Robusto).
+    Single-char tokens are kept so Siglo I and Siglo V don't collapse."""
+    tt = toks_all(name)
+    i = 0
+    while i < len(tt) and tt[i] in prefix:
+        i += 1
+    return tuple(tt[i:]) or tuple(tt)
+
+
 def normalize(cigars, lexicon, decisions, dimfix):
-    audit = {"locale_twin_merges": [], "sampler_collapses": [], "prefix_suspects": []}
+    audit = {
+        "locale_twin_merges": [],
+        "semantic_merges": [],
+        "sampler_collapses": [],
+        "prefix_suspects": [],
+        "shared_region_urls": [],
+        "duplicate_line_suspects": [],
+    }
     for cig in cigars:
         vitolas = cig.get("vitolas") or []
         if not vitolas:
@@ -221,6 +247,36 @@ def normalize(cigars, lexicon, decisions, dimfix):
                 used_names.add(canon)
                 audit["locale_twin_merges"].append(
                     {"id": cid, "kept": canon, "dropped": [m["name"] for m in members if m["name"] != canon]}
+                )
+                changed = True
+            vitolas = new_vitolas
+
+        # 1b) semantic within-line dedup: same vitola named with/without the
+        #     redundant brand/line/series prefix (Belicoso == Serie V Belicoso).
+        #     Guard: never merge when the members carry CONFLICTING real
+        #     dimensions — that means genuinely different sizes (kept + flagged).
+        prefix = set(toks_all(cig["brand"])) | set(toks_all(cig["line"]))
+        groups2 = collections.OrderedDict()
+        for v in vitolas:
+            groups2.setdefault(semantic_key(v["name"], prefix), []).append(v)
+        if any(len(g) > 1 for g in groups2.values()):
+            new_vitolas = []
+            for members in groups2.values():
+                if len(members) == 1:
+                    new_vitolas.append(members[0])
+                    continue
+                dims = {parse_dims(v.get("format")) for v in members if has_dims(v.get("format"))}
+                if len(dims) > 1:  # conflicting sizes → not the same vitola
+                    new_vitolas.extend(members)
+                    audit["prefix_suspects"].append(
+                        {"id": cid, "brand": cig["brand"], "line": cig["line"],
+                         "conflict": [{"name": m["name"], "format": m.get("format")} for m in members]}
+                    )
+                    continue
+                rep = min(members, key=lambda m: (len(toks_all(m["name"])), len(m["name"])))
+                new_vitolas.append(merge_group(members, rep["name"]))
+                audit["semantic_merges"].append(
+                    {"id": cid, "kept": rep["name"], "dropped": [m["name"] for m in members if m is not rep]}
                 )
                 changed = True
             vitolas = new_vitolas
@@ -290,6 +346,37 @@ def normalize(cigars, lexicon, decisions, dimfix):
                             {"id": cid, "brand": cig["brand"], "line": cig["line"],
                              "a": a["name"], "b": b["name"], "format": a["format"], "price": a["priceEUR"]}
                         )
+
+    # --- link worklist for the network streams (H/I) -----------------------
+    # Region URL reused by >1 cigar => a listing/category page, not a per-product
+    # link (e.g. holts oliva-monticello.html on Monticello AND Monticello Double).
+    url_owners = collections.defaultdict(set)
+    for cig in cigars:
+        for v in cig.get("vitolas") or []:
+            for rl in (v.get("regionLinks") or {}).values():
+                u = (rl or {}).get("url") if isinstance(rl, dict) else None
+                if u:
+                    url_owners[u].add(cig["id"])
+    for u, ids in sorted(url_owners.items()):
+        if len(ids) > 1:
+            audit["shared_region_urls"].append({"url": u, "cigars": sorted(ids)})
+
+    # Lines within a brand where one name is a strict prefix of another
+    # (Serie V ⊂ Serie V / Melanio, Monticello ⊂ Monticello Double) — suspects
+    # for human/agent adjudication (some, like Flor de *, are genuinely distinct).
+    by_brand = collections.defaultdict(list)
+    for cig in cigars:
+        by_brand[cig["brand"]].append(cig)
+    for brand, cs in by_brand.items():
+        for a in cs:
+            for b in cs:
+                if a is b:
+                    continue
+                la, lb = a["line"].strip(), b["line"].strip()
+                if la and lb != la and lb.lower().startswith(la.lower() + " "):
+                    audit["duplicate_line_suspects"].append(
+                        {"brand": brand, "line_a": la, "id_a": a["id"], "line_b": lb, "id_b": b["id"]}
+                    )
     return audit
 
 
@@ -311,8 +398,11 @@ def main():
 
     stats = {
         "locale_twin_merges": len(audit["locale_twin_merges"]),
+        "semantic_merges": len(audit["semantic_merges"]),
         "sampler_collapses": len(audit["sampler_collapses"]),
         "prefix_suspects": len(audit["prefix_suspects"]),
+        "shared_region_urls": len(audit["shared_region_urls"]),
+        "duplicate_line_suspects": len(audit["duplicate_line_suspects"]),
         "changed": before != after,
     }
     print(json.dumps(stats, ensure_ascii=False, indent=2))

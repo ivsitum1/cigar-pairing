@@ -181,3 +181,65 @@ Add to `app/src/data/integrity.test.ts`:
 > vitolas by locale-normalized product URL and by `(ring,lmm,priceEUR)`, and make
 > sampler/gift cards never render a vitola row that just repeats the line name.
 > Add integrity tests (Stream F). No data edits. `tsc`, `vitest`, `build` green.
+
+---
+
+## Round 2 (2026-07-23 pm) — links wrong, semantic dupes, duplicate lines
+
+New reports (Oliva): Serie V / Melanio buy links all wrong — humidor opens
+Serie **O**, Holt's the homepage/category, CigarWorld finds nothing, Cigars
+Daily lands on Serie V; Monticello / Monticello Double the same. Serie V also
+lists `Belicoso`, `V Belicoso` and `Serie V Belicoso` (same cigar), and exists
+as two lines (`Serie V` and `Serie V / Melanio`).
+
+Diagnosis:
+- **Semantic vitola dupes** — same vitola named with/without a redundant
+  brand/line/series prefix. Not locale twins (no shared URL), so Round-1 dedup
+  missed them.
+- **Listing URLs masquerading as per-vitola links** — one shop URL
+  (`holts.com/.../oliva-monticello.html`) is attached to every vitola *and* to
+  both Monticello and Monticello Double. It's a category page, not a product.
+  Measured: **100 region URLs reused across ≥2 cigars.**
+- **Search-fallback mis-hits** — when a line has no product URL, the app builds
+  a shop search from `brand + line` that returns the wrong product (Serie V
+  Melanio → Serie O).
+- **Duplicate lines** — `Serie V` ⊂ `Serie V / Melanio`, `Monticello` ⊂
+  `Monticello Double`. Measured **622 prefix-overlap suspects** (noisy: `Flor de`
+  ⊂ `Flor de Connecticut` etc. are genuinely distinct — adjudication needed).
+
+### Stream G — semantic within-line dedup + link audit ✅ done (core agent)
+`normalize-vitolas.py` now also collapses vitolas equal after stripping a
+LEADING run of brand/line tokens (`Serie V Belicoso` → `Belicoso`,
+`Epicure No. 2` → `Epicure No.2`). Guards: single-char tokens kept (Siglo I ≠
+Siglo V), and never merge when real dimensions conflict (kept + flagged). 18
+safe merges applied. Emits audit sections `semantic_merges`, `prefix_suspects`,
+`shared_region_urls` (100), `duplicate_line_suspects` (622) as the worklist
+below. Also: `applyVitola` now shows ONLY the chosen vitola (picking Robusto no
+longer reopens the full vitola list).
+
+### Stream H — per-vitola / per-product URL correctness · network · by shop×brand
+Work `vitola_dedup_audit.json → shared_region_urls`. For each reused URL, find
+the real per-size product page where the shop has one; where the shop only
+offers a line/category page, mark that link **line-level (not exact)** so the app
+stops claiming it's the specific vitola. Fix by editing the raw unified catalog
+(the engine's pinned input) and re-running `build-market-cigars.py --phase all`,
+which now ends with `normalize-vitolas.py`. Split by shop (Holt's / CigarWorld /
+humidor+havana) and brand range.
+
+### Stream I — wrong-product-match verification · network · by brand range
+Lines with no product URL where the search fallback mis-hits (e.g. Serie V
+Melanio → Serie O). Verify the correct product URL and add it to the raw
+catalog; if no product page exists, leave it (the search fallback is honest) but
+note it. Split by brand range.
+
+### Stream J — duplicate-line adjudication · data + light network · by brand range
+Work `vitola_dedup_audit.json → duplicate_line_suspects`. Decide per pair:
+merge (same line, e.g. `Serie V` + `Serie V / Melanio`) or distinct (`Flor de`
+family). For merges, name the canonical line id and fold vitolas in. Output
+`app/scripts/data/line_merge_decisions.json`
+(`{ "<canonicalId>": { "absorb": ["<otherId>"] } }`). High false-positive rate —
+this is judgement work, not a blind rule.
+
+### Stream E (frontend safety net) — updated
+> Also: `uniqueVitolas` already dedups by product URL (Round 1). Confirm sampler
+> and chosen-vitola display shows a single row.
