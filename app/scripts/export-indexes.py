@@ -169,4 +169,6 @@ if __name__ == "__main__":
                   "KONJAK / BRANDY — rangirano po kvaliteti za sipping uz cigaru", "Konjak-Brandy (rang)")
     export_drinks("coffees.json", "Kava_Index.xlsx",
                   "KAVA — profili za pairing s cigarom", "Kava (rang)")
+    export_drinks("wines.json", "Vino_Index.xlsx",
+                  "VINO - profili za pairing s cigarom", "Vino (rang)")
     export_cigars()
