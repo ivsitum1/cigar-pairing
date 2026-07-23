@@ -18,7 +18,11 @@ const productKey = (url: string | null | undefined): string | null => {
 };
 
 const isProductUrl = (url: string | null | undefined): url is string =>
-  Boolean(url && !url.includes("?s="));
+  Boolean(
+    url &&
+      !url.includes("?s=") &&
+      !/holts\.com\/cigars\/all-cigar-brands\/[^/?#]+\.html/i.test(url),
+  );
 
 const preferHrUrl = (a: Vitola, b: Vitola): Vitola => {
   const aHumidor = a.url?.includes("humidor.hr") ?? false;

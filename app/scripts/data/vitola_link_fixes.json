@@ -1,0 +1,45 @@
+{
+  "_meta": {
+    "stream": "I+D",
+    "date": "2026-07-23",
+    "notes": [
+      "Oliva Serie V Melanio sizes verified against Holt's listing (Robusto 5x52, Churchill 7x50) and CigarWorld product pages.",
+      "HR product pages for Melanio Robusto/Churchill not found in catalog shops; EU CigarWorld URLs used."
+    ]
+  },
+  "cig-oliva-serie-v::Serie V Melanio Robusto": {
+    "format": "52 x 127mm",
+    "clearPriceEUR": true,
+    "regionLinks": {
+      "EU": {
+        "shop": "CigarWorld",
+        "url": "https://www.cigarworld.de/en/zigarren/nicaragua/oliva-serie-v-melanio-boxpressed-robusto-90012427_26139",
+        "priceEUR": 16.5
+      }
+    }
+  },
+  "cig-oliva-serie-v::Melanio Churchill": {
+    "name": "Churchill",
+    "format": "50 x 178mm",
+    "regionLinks": {
+      "EU": {
+        "shop": "CigarWorld",
+        "url": "https://www.cigarworld.de/en/zigarren/nicaragua/oliva-serie-v-melanio-boxpressed-churchill-90012427_26141",
+        "priceEUR": 17.5
+      }
+    }
+  },
+  "cig-oliva-serie-v": {
+    "regionLinks": {
+      "USA": {
+        "shop": "Holt's",
+        "url": "https://www.holts.com/cigars/all-cigar-brands/oliva-serie-v-melanio.html",
+        "priceApprox": true
+      },
+      "EU": {
+        "shop": "CigarWorld",
+        "url": "https://www.cigarworld.de/en/zigarren/nicaragua/oliva-serie-v-melanio-boxpressed-90012427"
+      }
+    }
+  }
+}
