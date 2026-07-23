@@ -1,733 +1,12 @@
 [
  {
-  "id": "wine-royal-tokaji-essencia",
+  "id": "wine-grahams-tawny-10",
   "category": "wine",
-  "name": "Royal Tokaji Essencia",
-  "style": "dessert-wine",
-  "region": "Tokaj, Mađarska",
-  "abv": 5.0,
-  "body": 5,
-  "sweetness": 5,
-  "flavorTags": [
-   "med",
-   "suho-voce",
-   "karamela",
-   "citrus",
-   "slatko"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 9.5,
-  "priceEUR": {
-   "min": 150.0,
-   "max": 500.0
-  },
-  "priceApprox": true,
-  "shopHR": "Rijetko u HR; specijalist vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Ohladjeno, 8-10 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Najrjeđe i najskuplje vino Tokaja , sirupasta konzistencija, 450+ g/L šećera. Me",
-   "en": "Najrjeđe i najskuplje vino Tokaja , sirupasta konzistencija, 450+ g/L šećera. Me"
-  }
- },
- {
-  "id": "wine-dow-s-vintage-port",
-  "category": "wine",
-  "name": "Dow's Vintage Port",
-  "style": "port-ruby",
-  "region": "Douro, Portugal",
-  "abv": 20.0,
-  "body": 5,
-  "sweetness": 4,
-  "flavorTags": [
-   "tamno-voce",
-   "zacini",
-   "kakao",
-   "hrast"
-  ],
-  "additiveStatus": "fortified",
-  "additiveDetail": {
-   "hr": "Fortificirano vinskim destilatom; slatkoca iz zaustavljene fermentacije",
-   "en": "Fortified with grape spirit; sweetness from arrested fermentation"
-  },
-  "additiveSource": "Standard kategorije porto/sherry/madeira",
-  "qualityScore": 9.0,
-  "priceEUR": {
-   "min": 85.0,
-   "max": 150.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Casa za porto, 14-16 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Dow's: suši, strukturiraniji vintage; crno voće i papar. Odličan uz Habano punoć",
-   "en": "Dow's: suši, strukturiraniji vintage; crno voće i papar. Odličan uz Habano punoć"
-  }
- },
- {
-  "id": "wine-gaja-barbaresco",
-  "category": "wine",
-  "name": "Gaja Barbaresco",
-  "style": "red-full",
-  "region": "Piemont, Italija",
-  "abv": 14.0,
-  "body": 4,
-  "sweetness": 1,
-  "flavorTags": [
-   "cvjetno",
-   "tamno-voce",
-   "koza",
-   "mineralno"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 9.0,
-  "priceEUR": {
-   "min": 120.0,
-   "max": 220.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Velika casa, 16-18 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Gaja Barbaresco: ikona Piemonta; elegancija i snaga. Posebna prilika uz fine Hab",
-   "en": "Gaja Barbaresco: ikona Piemonta; elegancija i snaga. Posebna prilika uz fine Hab"
-  }
- },
- {
-  "id": "wine-graham-s-vintage-port",
-  "category": "wine",
-  "name": "Graham's Vintage Port",
-  "style": "port-ruby",
-  "region": "Douro, Portugal",
-  "abv": 20.0,
-  "body": 5,
-  "sweetness": 4,
-  "flavorTags": [
-   "tamno-voce",
-   "kakao",
-   "suho-voce",
-   "zacini"
-  ],
-  "additiveStatus": "fortified",
-  "additiveDetail": {
-   "hr": "Fortificirano vinskim destilatom; slatkoca iz zaustavljene fermentacije",
-   "en": "Fortified with grape spirit; sweetness from arrested fermentation"
-  },
-  "additiveSource": "Standard kategorije porto/sherry/madeira",
-  "qualityScore": 9.0,
-  "priceEUR": {
-   "min": 90.0,
-   "max": 160.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Casa za porto, 14-16 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Graham's vintage: bogato tamno voće i čokolada, malo slađi stil od Taylor's. Kla",
-   "en": "Graham's vintage: bogato tamno voće i čokolada, malo slađi stil od Taylor's. Kla"
-  }
- },
- {
-  "id": "wine-oremus-tokaji-asz-6-puttonyos",
-  "category": "wine",
-  "name": "Oremus Tokaji Aszú 6 Puttonyos",
-  "style": "dessert-wine",
-  "region": "Tokaj, Mađarska",
-  "abv": 10.5,
-  "body": 5,
-  "sweetness": 5,
-  "flavorTags": [
-   "med",
-   "suho-voce",
-   "citrus",
-   "karamela",
-   "slatko"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 9.0,
-  "priceEUR": {
-   "min": 50.0,
-   "max": 90.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Ohladjeno, 8-10 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Gušći i bogatiji od 5 puttonyosa , med, datule, naranča, šafran; dugi završetak.",
-   "en": "Gušći i bogatiji od 5 puttonyosa , med, datule, naranča, šafran; dugi završetak."
-  }
- },
- {
-  "id": "wine-ornellaia-bolgheri-superiore",
-  "category": "wine",
-  "name": "Ornellaia Bolgheri Superiore",
-  "style": "red-full",
-  "region": "Toskana, Italija",
-  "abv": 14.5,
-  "body": 5,
-  "sweetness": 1,
-  "flavorTags": [
-   "tamno-voce",
-   "hrast",
-   "zacini",
-   "kakao"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 9.0,
-  "priceEUR": {
-   "min": 150.0,
-   "max": 250.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Velika casa, 16-18 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Ornellaia: Bordeaux blend s toskanske obale. Koncentracija uz vrhunski maduro.",
-   "en": "Ornellaia: Bordeaux blend s toskanske obale. Koncentracija uz vrhunski maduro."
-  }
- },
- {
-  "id": "wine-taylor-s-vintage-port",
-  "category": "wine",
-  "name": "Taylor's Vintage Port",
-  "style": "port-ruby",
-  "region": "Douro, Portugal",
-  "abv": 20.0,
-  "body": 5,
-  "sweetness": 4,
-  "flavorTags": [
-   "tamno-voce",
-   "kakao",
-   "zacini",
-   "hrast"
-  ],
-  "additiveStatus": "fortified",
-  "additiveDetail": {
-   "hr": "Fortificirano vinskim destilatom; slatkoca iz zaustavljene fermentacije",
-   "en": "Fortified with grape spirit; sweetness from arrested fermentation"
-  },
-  "additiveSource": "Standard kategorije porto/sherry/madeira",
-  "qualityScore": 9.0,
-  "priceEUR": {
-   "min": 90.0,
-   "max": 160.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Casa za porto, 14-16 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Deklarirano godište Taylor's: crna trešnja, kakao, začini, dug život. Vrh pirami",
-   "en": "Deklarirano godište Taylor's: crna trešnja, kakao, začini, dug život. Vrh pirami"
-  }
- },
- {
-  "id": "wine-allegrini-amarone-della-valpolicella",
-  "category": "wine",
-  "name": "Allegrini Amarone della Valpolicella",
-  "style": "red-full",
-  "region": "Veneto, Italija",
-  "abv": 15.5,
-  "body": 5,
-  "sweetness": 2,
-  "flavorTags": [
-   "suho-voce",
-   "tamno-voce",
-   "kakao",
-   "hrast"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 8.5,
-  "priceEUR": {
-   "min": 55.0,
-   "max": 80.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Velika casa, 16-18 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Allegrini: elegantniji, koncentrirani Amarone. Suho voće i kakao uz punu cigaru.",
-   "en": "Allegrini: elegantniji, koncentrirani Amarone. Suho voće i kakao uz punu cigaru."
-  }
- },
- {
-  "id": "wine-antinori-tignanello",
-  "category": "wine",
-  "name": "Antinori Tignanello",
-  "style": "red-full",
-  "region": "Toskana, Italija",
-  "abv": 14.0,
-  "body": 4,
-  "sweetness": 1,
-  "flavorTags": [
-   "tamno-voce",
-   "hrast",
-   "zacini",
-   "koza"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 8.5,
-  "priceEUR": {
-   "min": 80.0,
-   "max": 130.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Velika casa, 16-18 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Tignanello: ikona Super Toscane; Sangiovese + Cabernet. Elegancija uz punu cigar",
-   "en": "Tignanello: ikona Super Toscane; Sangiovese + Cabernet. Elegancija uz punu cigar"
-  }
- },
- {
-  "id": "wine-bisol-cartizze",
-  "category": "wine",
-  "name": "Bisol Cartizze",
-  "style": "sparkling",
-  "region": "Veneto, Italija",
-  "abv": 11.5,
-  "body": 2,
-  "sweetness": 2,
-  "flavorTags": [
-   "voce",
-   "med",
-   "cvjetno"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 8.5,
-  "priceEUR": {
-   "min": 30.0,
-   "max": 45.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Dobro ohladjeno, 6-8 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Bisol Cartizze: referentni Cartizze; med i bijelo cvijeće. Premium prosecco pair",
-   "en": "Bisol Cartizze: referentni Cartizze; med i bijelo cvijeće. Premium prosecco pair"
-  }
- },
- {
-  "id": "wine-bollinger-special-cuv-e",
-  "category": "wine",
-  "name": "Bollinger Special Cuvée",
-  "style": "sparkling",
-  "region": "Champagne, Francuska",
-  "abv": 12.0,
-  "body": 3,
-  "sweetness": 1,
-  "flavorTags": [
-   "orasasti",
-   "kremasto",
-   "citrus",
-   "hrast"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 8.5,
-  "priceEUR": {
-   "min": 55.0,
-   "max": 75.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Dobro ohladjeno, 6-8 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Bollinger: pinot-teži, orašasti Champagne. Ozbiljniji pjenušac uz blagu do sredn",
-   "en": "Bollinger: pinot-teži, orašasti Champagne. Ozbiljniji pjenušac uz blagu do sredn"
-  }
- },
- {
-  "id": "wine-casanova-di-neri-brunello-di-montalcino",
-  "category": "wine",
-  "name": "Casanova di Neri Brunello di Montalcino",
-  "style": "red-full",
-  "region": "Toskana, Italija",
-  "abv": 14.5,
-  "body": 4,
-  "sweetness": 1,
-  "flavorTags": [
-   "tamno-voce",
-   "hrast",
-   "koza",
-   "zacini"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 8.5,
-  "priceEUR": {
-   "min": 55.0,
-   "max": 90.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Velika casa, 16-18 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Casanova di Neri: moderniji, koncentrirani Brunello. Snaga i elegancija uz madur",
-   "en": "Casanova di Neri: moderniji, koncentrirani Brunello. Snaga i elegancija uz madur"
-  }
- },
- {
-  "id": "wine-ch-teau-lynch-bages",
-  "category": "wine",
-  "name": "Château Lynch-Bages",
-  "style": "red-full",
-  "region": "Bordeaux, Francuska",
-  "abv": 13.5,
-  "body": 4,
-  "sweetness": 1,
-  "flavorTags": [
-   "tamno-voce",
-   "cedar",
-   "hrast",
-   "zacini"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 8.5,
-  "priceEUR": {
-   "min": 90.0,
-   "max": 160.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Velika casa, 16-18 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Lynch-Bages (Pauillac): cedar, crni ribiz, grafit. Klasični Bordeaux uz Habano.",
-   "en": "Lynch-Bages (Pauillac): cedar, crni ribiz, grafit. Klasični Bordeaux uz Habano."
-  }
- },
- {
-  "id": "wine-ch-teau-rieussec-sauternes",
-  "category": "wine",
-  "name": "Château Rieussec Sauternes",
-  "style": "dessert-wine",
-  "region": "Bordeaux, Francuska",
-  "abv": 13.5,
-  "body": 4,
-  "sweetness": 5,
-  "flavorTags": [
-   "med",
-   "suho-voce",
-   "citrus",
-   "karamela"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 8.5,
-  "priceEUR": {
-   "min": 45.0,
-   "max": 80.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Ohladjeno, 8-10 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Rieussec (Rothschild): botritis med, marelica, limun. Klasika uz blagi maduro il",
-   "en": "Rieussec (Rothschild): botritis med, marelica, limun. Klasika uz blagi maduro il"
-  }
- },
- {
-  "id": "wine-ch-teau-suduiraut-sauternes",
-  "category": "wine",
-  "name": "Château Suduiraut Sauternes",
-  "style": "dessert-wine",
-  "region": "Bordeaux, Francuska",
-  "abv": 13.5,
-  "body": 4,
-  "sweetness": 5,
-  "flavorTags": [
-   "med",
-   "suho-voce",
-   "karamela",
-   "citrus"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 8.5,
-  "priceEUR": {
-   "min": 50.0,
-   "max": 90.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Ohladjeno, 8-10 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Suduiraut: gust, kremast Sauternes; ananas, med, vanilija. Ozbiljan desertni pai",
-   "en": "Suduiraut: gust, kremast Sauternes; ananas, med, vanilija. Ozbiljan desertni pai"
-  }
- },
- {
-  "id": "wine-ch-teau-de-beaucastel-ch-teauneuf-du-pape",
-  "category": "wine",
-  "name": "Château de Beaucastel Châteauneuf-du-Pape",
-  "style": "red-full",
-  "region": "Rhone, Francuska",
-  "abv": 14.5,
-  "body": 4,
-  "sweetness": 1,
-  "flavorTags": [
-   "tamno-voce",
-   "zacini",
-   "zemljano",
-   "koza"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 8.5,
-  "priceEUR": {
-   "min": 55.0,
-   "max": 90.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Velika casa, 16-18 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Beaucastel: garrigue, crno voće, 13 sorti. Referentni CdP uz Habano.",
-   "en": "Beaucastel: garrigue, crno voće, 13 sorti. Referentni CdP uz Habano."
-  }
- },
- {
-  "id": "wine-concha-y-toro-don-melchor",
-  "category": "wine",
-  "name": "Concha y Toro Don Melchor",
-  "style": "red-full",
-  "region": "Maipo, Čile",
-  "abv": 14.5,
-  "body": 5,
-  "sweetness": 1,
-  "flavorTags": [
-   "tamno-voce",
-   "hrast",
-   "zacini",
-   "cedar"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 8.5,
-  "priceEUR": {
-   "min": 70.0,
-   "max": 110.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Velika casa, 16-18 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Don Melchor: vodeći čileanski Cabernet; cedar i crno voće. Icon uz punu cigaru.",
-   "en": "Don Melchor: vodeći čileanski Cabernet; cedar i crno voće. Icon uz punu cigaru."
-  }
- },
- {
-  "id": "wine-diszn-k-tokaji-asz-5-puttonyos",
-  "category": "wine",
-  "name": "Disznókő Tokaji Aszú 5 Puttonyos",
-  "style": "dessert-wine",
-  "region": "Tokaj, Mađarska",
-  "abv": 11.5,
-  "body": 4,
-  "sweetness": 5,
-  "flavorTags": [
-   "med",
-   "suho-voce",
-   "citrus",
-   "karamela"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 8.5,
-  "priceEUR": {
-   "min": 40.0,
-   "max": 65.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Ohladjeno, 8-10 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Disznókő 5 putt: med, marelica, limunova kora. Pouzdan Tokaj uz cigaru.",
-   "en": "Disznókő 5 putt: med, marelica, limunova kora. Pouzdan Tokaj uz cigaru."
-  }
- },
- {
-  "id": "wine-fonseca-20-y-o-tawny-port",
-  "category": "wine",
-  "name": "Fonseca 20 Y.O. Tawny Port",
+  "name": "Graham's Tawny Port 10 Y.O.",
   "style": "port-tawny",
   "region": "Douro, Portugal",
   "abv": 20.0,
-  "body": 4,
+  "body": 3,
   "sweetness": 4,
   "flavorTags": [
    "orasasti",
@@ -737,17 +16,16 @@
   ],
   "additiveStatus": "fortified",
   "additiveDetail": {
-   "hr": "Fortificirano vinskim destilatom; slatkoca iz zaustavljene fermentacije",
-   "en": "Fortified with grape spirit; sweetness from arrested fermentation"
+   "hr": "Fortificirano vinskim destilatom (77%); slatkoca iz zaustavljene fermentacije",
+   "en": "Fortified with grape spirit (77%); sweetness from arrested fermentation"
   },
-  "additiveSource": "Standard kategorije porto/sherry/madeira",
-  "qualityScore": 8.5,
+  "additiveSource": "Standard kategorije porto",
+  "qualityScore": 8.0,
   "priceEUR": {
-   "min": 55.0,
-   "max": 75.0
+   "min": 36.3,
+   "max": 36.3
   },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
+  "shopHR": "Vivat fina vina",
   "status": null,
   "pairable": true,
   "serving": {
@@ -756,88 +34,8 @@
   "cigarHint": null,
   "priceUrl": null,
   "notes": {
-   "hr": "Fonseca 20 YO: bogat tawny; orasi, karamela, suhe smokve. Rival Graham's uz madu",
-   "en": "Fonseca 20 YO: bogat tawny; orasi, karamela, suhe smokve. Rival Graham's uz madu"
-  }
- },
- {
-  "id": "wine-fontanafredda-barolo",
-  "category": "wine",
-  "name": "Fontanafredda Barolo",
-  "style": "red-full",
-  "region": "Piemont, Italija",
-  "abv": 14.0,
-  "body": 4,
-  "sweetness": 1,
-  "flavorTags": [
-   "cvjetno",
-   "tamno-voce",
-   "koza",
-   "zemljano"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 8.5,
-  "priceEUR": {
-   "min": 35.0,
-   "max": 55.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Velika casa, 16-18 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Fontanafredda: klasični Barolo; ruža, katran, višnja. Tannini uz strukturiranu c",
-   "en": "Fontanafredda: klasični Barolo; ruža, katran, višnja. Tannini uz strukturiranu c"
-  }
- },
- {
-  "id": "wine-franciacorta-ca-del-bosco",
-  "category": "wine",
-  "name": "Franciacorta Ca' del Bosco Cuvée Prestige",
-  "style": "sparkling",
-  "region": "Lombardija, Italija",
-  "abv": 12.5,
-  "body": 2,
-  "sweetness": 1,
-  "flavorTags": [
-   "kremasto",
-   "orasasti",
-   "citrus",
-   "mineralno"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 8.5,
-  "priceEUR": {
-   "min": 48.0,
-   "max": 60.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Dobro ohladjeno, 6-8 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Talijanski odgovor šampanjcu , klasična metoda, brioche i lješnjak; ozbiljna alt",
-   "en": "Italy's answer to Champagne , classic method, brioche and hazelnut; a serious option with a mild cigar."
+   "hr": "Tawny odležan 10 godina u drvu — orašasti plodovi, karamela, suho voće. Klasičan izbor uz cigaru srednje punoće.",
+   "en": "Tawny aged 10 years in wood — nuts, caramel, dried fruit. A classic pick with a medium-bodied cigar."
   }
  },
  {
@@ -860,13 +58,12 @@
    "hr": "Fortificirano vinskim destilatom; slatkoca iz zaustavljene fermentacije",
    "en": "Fortified with grape spirit; sweetness from arrested fermentation"
   },
-  "additiveSource": "Standard kategorije porto/sherry/madeira",
+  "additiveSource": "Standard kategorije porto",
   "qualityScore": 8.5,
   "priceEUR": {
    "min": 63.9,
    "max": 63.9
   },
-  "priceApprox": true,
   "shopHR": "vivat-finavina.hr",
   "status": null,
   "pairable": true,
@@ -876,1826 +73,8 @@
   "cigarHint": null,
   "priceUrl": "https://www.vivat-finavina.hr/proizvod/grahams-tawny-port-20-y-o/",
   "notes": {
-   "hr": "Dublja, koncentriranija verzija , pečeni orasi, datulje, fina oksidativna komple",
-   "en": "Deeper and more concentrated , roasted nuts, dates, fine oxidative complexity. One of the best all-round cigar partners."
-  }
- },
- {
-  "id": "wine-gramona-imperial-brut",
-  "category": "wine",
-  "name": "Gramona Imperial Brut",
-  "style": "sparkling",
-  "region": "Penedes, Španjolska",
-  "abv": 12.0,
-  "body": 2,
-  "sweetness": 1,
-  "flavorTags": [
-   "orasasti",
-   "kremasto",
-   "mineralno"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 8.5,
-  "priceEUR": {
-   "min": 25.0,
-   "max": 40.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Dobro ohladjeno, 6-8 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Gramona Imperial: dugo odležavanje; brioche i orasi. Najbolja Cava kuća uz cigar",
-   "en": "Gramona Imperial: dugo odležavanje; brioche i orasi. Najbolja Cava kuća uz cigar"
-  }
- },
- {
-  "id": "wine-j-j-pr-m-riesling-kabinett",
-  "category": "wine",
-  "name": "J.J. Prüm Riesling Kabinett",
-  "style": "white-fresh",
-  "region": "Mosel, Njemačka",
-  "abv": 9.0,
-  "body": 2,
-  "sweetness": 3,
-  "flavorTags": [
-   "citrus",
-   "mineralno",
-   "cvjetno",
-   "med"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 8.5,
-  "priceEUR": {
-   "min": 22.0,
-   "max": 35.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Dobro ohladjeno, 6-8 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "J.J. Prüm: ikona Mosela; precizan, cvjetan, mineralan. Rijedak bijeli uz cigaru.",
-   "en": "J.J. Prüm: ikona Mosela; precizan, cvjetan, mineralan. Rijedak bijeli uz cigaru."
-  }
- },
- {
-  "id": "wine-lustau-px",
-  "category": "wine",
-  "name": "Lustau Pedro Ximenez San Emilio",
-  "style": "sherry-sweet",
-  "region": "Jerez, Španjolska",
-  "abv": 17.0,
-  "body": 5,
-  "sweetness": 5,
-  "flavorTags": [
-   "suho-voce",
-   "melasa",
-   "kava",
-   "slatko"
-  ],
-  "additiveStatus": "fortified",
-  "additiveDetail": {
-   "hr": "Fortificirano vinskim destilatom; slatkoca iz zaustavljene fermentacije",
-   "en": "Fortified with grape spirit; sweetness from arrested fermentation"
-  },
-  "additiveSource": "Standard kategorije porto/sherry/madeira",
-  "qualityScore": 8.5,
-  "priceEUR": {
-   "min": 22.0,
-   "max": 30.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vinoteke / Miva",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Casa za sherry, 14-16 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "PX , grožđice, datulje, kava; gust poput sirupa. Desertni ekstrem koji presijeca",
-   "en": "PX , raisins, dates, coffee; syrup-thick. A dessert extreme that cuts through the darkest smoke."
-  }
- },
- {
-  "id": "wine-madirazza-dinga",
-  "category": "wine",
-  "name": "Madirazza Dingač",
-  "style": "red-full",
-  "region": "Pelješac, Hrvatska",
-  "abv": 14.5,
-  "body": 5,
-  "sweetness": 2,
-  "flavorTags": [
-   "tamno-voce",
-   "zacini",
-   "suho-voce",
-   "hrast"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 8.5,
-  "priceEUR": {
-   "min": 29.0,
-   "max": 52.0
-  },
-  "priceApprox": true,
-  "shopHR": "Madirazza webshop / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Velika casa, 16-18 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Madirazza Dingač: koncentrirani plavac s južne padine. Klasičan HR pairing uz pu",
-   "en": "Madirazza Dingač: koncentrirani plavac s južne padine. Klasičan HR pairing uz pu"
-  }
- },
- {
-  "id": "wine-masi-costasera-amarone",
-  "category": "wine",
-  "name": "Masi Costasera Amarone",
-  "style": "red-full",
-  "region": "Veneto, Italija",
-  "abv": 15.0,
-  "body": 5,
-  "sweetness": 2,
-  "flavorTags": [
-   "suho-voce",
-   "tamno-voce",
-   "kakao",
-   "zacini"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 8.5,
-  "priceEUR": {
-   "min": 40.0,
-   "max": 60.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Velika casa, 16-18 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Masi Costasera: suha trešnja, čokolada, začini. Jedan od najpouzdanijih Amaronea",
-   "en": "Masi Costasera: suha trešnja, čokolada, začini. Jedan od najpouzdanijih Amaronea"
-  }
- },
- {
-  "id": "wine-muga-gran-reserva",
-  "category": "wine",
-  "name": "Muga Gran Reserva",
-  "style": "red-full",
-  "region": "Rioja, Španjolska",
-  "abv": 14.0,
-  "body": 4,
-  "sweetness": 1,
-  "flavorTags": [
-   "tamno-voce",
-   "hrast",
-   "orasasti",
-   "zacini"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 8.5,
-  "priceEUR": {
-   "min": 40.0,
-   "max": 60.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Velika casa, 16-18 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Muga GR: ozbiljnija Rioja; hrast, crno voće, začini. Bolje uz puniju cigaru.",
-   "en": "Muga GR: ozbiljnija Rioja; hrast, crno voće, začini. Bolje uz puniju cigaru."
-  }
- },
- {
-  "id": "wine-penfolds-bin-389-cabernet-shiraz",
-  "category": "wine",
-  "name": "Penfolds Bin 389 Cabernet Shiraz",
-  "style": "red-full",
-  "region": "Južna Australija",
-  "abv": 14.5,
-  "body": 5,
-  "sweetness": 1,
-  "flavorTags": [
-   "tamno-voce",
-   "hrast",
-   "zacini",
-   "kakao"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 8.5,
-  "priceEUR": {
-   "min": 45.0,
-   "max": 70.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Velika casa, 16-18 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Bin 389 (Baby Grange): Cabernet struktura + Shiraz meso. Ozbiljan NS pairing.",
-   "en": "Bin 389 (Baby Grange): Cabernet struktura + Shiraz meso. Ozbiljan NS pairing."
-  }
- },
- {
-  "id": "wine-pio-cesare-barolo",
-  "category": "wine",
-  "name": "Pio Cesare Barolo",
-  "style": "red-full",
-  "region": "Piemont, Italija",
-  "abv": 14.0,
-  "body": 4,
-  "sweetness": 1,
-  "flavorTags": [
-   "cvjetno",
-   "tamno-voce",
-   "koza",
-   "hrast"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 8.5,
-  "priceEUR": {
-   "min": 45.0,
-   "max": 70.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Velika casa, 16-18 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Pio Cesare: tradicionalni, snažni Barolo. Koža i crveno voće uz Habano.",
-   "en": "Pio Cesare: tradicionalni, snažni Barolo. Koža i crveno voće uz Habano."
-  }
- },
- {
-  "id": "wine-pol-roger-brut-r-serve",
-  "category": "wine",
-  "name": "Pol Roger Brut Réserve",
-  "style": "sparkling",
-  "region": "Champagne, Francuska",
-  "abv": 12.0,
-  "body": 2,
-  "sweetness": 1,
-  "flavorTags": [
-   "citrus",
-   "kremasto",
-   "mineralno"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 8.5,
-  "priceEUR": {
-   "min": 50.0,
-   "max": 70.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Dobro ohladjeno, 6-8 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Pol Roger: elegantan, fin mousse; citrus i biskvit. Churchillova kuća uz blagu c",
-   "en": "Pol Roger: elegantan, fin mousse; citrus i biskvit. Churchillova kuća uz blagu c"
-  }
- },
- {
-  "id": "wine-ridge-lytton-springs",
-  "category": "wine",
-  "name": "Ridge Lytton Springs",
-  "style": "red-full",
-  "region": "California, SAD",
-  "abv": 14.5,
-  "body": 4,
-  "sweetness": 2,
-  "flavorTags": [
-   "tamno-voce",
-   "zacini",
-   "orasasti"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 8.5,
-  "priceEUR": {
-   "min": 45.0,
-   "max": 70.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Velika casa, 16-18 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Ridge Lytton: Zinfandel field blend; bobičasto voće i začini. Referenca uz madur",
-   "en": "Ridge Lytton: Zinfandel field blend; bobičasto voće i začini. Referenca uz madur"
-  }
- },
- {
-  "id": "wine-royal-tokaji-asz-5-puttonyos",
-  "category": "wine",
-  "name": "Royal Tokaji Aszú 5 Puttonyos",
-  "style": "dessert-wine",
-  "region": "Tokaj, Mađarska",
-  "abv": 11.0,
-  "body": 4,
-  "sweetness": 5,
-  "flavorTags": [
-   "med",
-   "suho-voce",
-   "citrus",
-   "slatko"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 8.5,
-  "priceEUR": {
-   "min": 35.0,
-   "max": 55.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Ohladjeno, 8-10 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Botritis klasik , med, marelica, šafran; raskošna slatkoća s električnom kiselin",
-   "en": "Botritis klasik , med, marelica, šafran; raskošna slatkoća s električnom kiselin"
-  }
- },
- {
-  "id": "wine-saints-hills-dinga",
-  "category": "wine",
-  "name": "Saints Hills Dingač",
-  "style": "red-full",
-  "region": "Pelješac, Hrvatska",
-  "abv": 14.5,
-  "body": 5,
-  "sweetness": 2,
-  "flavorTags": [
-   "tamno-voce",
-   "zacini",
-   "hrast",
-   "suho-voce"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 8.5,
-  "priceEUR": {
-   "min": 35.0,
-   "max": 55.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Velika casa, 16-18 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Saints Hills: moderniji, bačveni Dingač; crno voće i vanilija. Snaga uz maduro.",
-   "en": "Saints Hills: moderniji, bačveni Dingač; crno voće i vanilija. Snaga uz maduro."
-  }
- },
- {
-  "id": "wine-skaramu-a-dinga",
-  "category": "wine",
-  "name": "Skaramuča Dingač",
-  "style": "red-full",
-  "region": "Pelješac, Hrvatska",
-  "abv": 14.5,
-  "body": 5,
-  "sweetness": 2,
-  "flavorTags": [
-   "tamno-voce",
-   "suho-voce",
-   "zacini",
-   "zemljano"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 8.5,
-  "priceEUR": {
-   "min": 28.0,
-   "max": 45.0
-  },
-  "priceApprox": true,
-  "shopHR": "Madirazza / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Velika casa, 16-18 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Skaramuča s položaja Dingač: zreli plavac, suha trešnja, začini. Vrh HR crvenog ",
-   "en": "Skaramuča s položaja Dingač: zreli plavac, suha trešnja, začini. Vrh HR crvenog "
-  }
- },
- {
-  "id": "wine-taylor-s-tawny-port-20-y-o",
-  "category": "wine",
-  "name": "Taylor's Tawny Port 20 Y.O.",
-  "style": "port-tawny",
-  "region": "Douro, Portugal",
-  "abv": 20.0,
-  "body": 4,
-  "sweetness": 4,
-  "flavorTags": [
-   "orasasti",
-   "karamela",
-   "suho-voce",
-   "hrast"
-  ],
-  "additiveStatus": "fortified",
-  "additiveDetail": {
-   "hr": "Fortificirano vinskim destilatom; slatkoca iz zaustavljene fermentacije",
-   "en": "Fortified with grape spirit; sweetness from arrested fermentation"
-  },
-  "additiveSource": "Standard kategorije porto/sherry/madeira",
-  "qualityScore": 8.5,
-  "priceEUR": {
-   "min": 55.0,
-   "max": 75.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Casa za porto, 14-16 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Dublji Taylor's 20 YO: pečeni orasi, datulje, fina oksidacija. Univerzalan uz ma",
-   "en": "Dublji Taylor's 20 YO: pečeni orasi, datulje, fina oksidacija. Univerzalan uz ma"
-  }
- },
- {
-  "id": "wine-tomac-amfora",
-  "category": "wine",
-  "name": "Tomac Amfora",
-  "style": "sparkling",
-  "region": "Plešivica, Hrvatska",
-  "abv": 12.0,
-  "body": 2,
-  "sweetness": 1,
-  "flavorTags": [
-   "orasasti",
-   "mineralno",
-   "citrus"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 8.5,
-  "priceEUR": {
-   "min": 28.0,
-   "max": 42.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Dobro ohladjeno, 6-8 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Tomac Amfora: fermentacija u amforama; kompleksniji, orašasti. Svjetska razina u",
-   "en": "Tomac Amfora: fermentacija u amforama; kompleksniji, orašasti. Svjetska razina u"
-  }
- },
- {
-  "id": "wine-valdespino-tio-diego-amontillado",
-  "category": "wine",
-  "name": "Valdespino Tio Diego Amontillado",
-  "style": "sherry-dry",
-  "region": "Jerez, Španjolska",
-  "abv": 18.0,
-  "body": 3,
-  "sweetness": 1,
-  "flavorTags": [
-   "orasasti",
-   "suho-voce",
-   "mineralno"
-  ],
-  "additiveStatus": "fortified",
-  "additiveDetail": {
-   "hr": "Fortificirano vinskim destilatom; slatkoca iz zaustavljene fermentacije",
-   "en": "Fortified with grape spirit; sweetness from arrested fermentation"
-  },
-  "additiveSource": "Standard kategorije porto/sherry/madeira",
-  "qualityScore": 8.5,
-  "priceEUR": {
-   "min": 22.0,
-   "max": 32.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Casa za sherry, 12-14 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Valdespino amontillado: orasi, jod, suha jabuka. Most između fino i olorosa uz s",
-   "en": "Valdespino amontillado: orasi, jod, suha jabuka. Most između fino i olorosa uz s"
-  }
- },
- {
-  "id": "wine-vieux-t-l-graphe-ch-teauneuf-du-pape",
-  "category": "wine",
-  "name": "Vieux Télégraphe Châteauneuf-du-Pape",
-  "style": "red-full",
-  "region": "Rhone, Francuska",
-  "abv": 14.5,
-  "body": 4,
-  "sweetness": 1,
-  "flavorTags": [
-   "tamno-voce",
-   "zacini",
-   "zemljano",
-   "mineralno"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 8.5,
-  "priceEUR": {
-   "min": 50.0,
-   "max": 85.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Velika casa, 16-18 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Vieux Télégraphe: kamenito, začinsko CdP s La Crau. Elegancija uz punu cigaru.",
-   "en": "Vieux Télégraphe: kamenito, začinsko CdP s La Crau. Elegancija uz punu cigaru."
-  }
- },
- {
-  "id": "wine-villa-sandi-cartizze",
-  "category": "wine",
-  "name": "Villa Sandi Cartizze",
-  "style": "sparkling",
-  "region": "Veneto, Italija",
-  "abv": 11.5,
-  "body": 2,
-  "sweetness": 2,
-  "flavorTags": [
-   "voce",
-   "kremasto",
-   "cvjetno"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 8.5,
-  "priceEUR": {
-   "min": 28.0,
-   "max": 40.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Dobro ohladjeno, 6-8 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Villa Sandi Cartizze: vrh prosecco piramide; kremast, cvjetan. Ozbiljniji mousse",
-   "en": "Villa Sandi Cartizze: vrh prosecco piramide; kremast, cvjetan. Ozbiljniji mousse"
-  }
- },
- {
-  "id": "wine-lvaro-palacios-les-terrasses",
-  "category": "wine",
-  "name": "Álvaro Palacios Les Terrasses",
-  "style": "red-full",
-  "region": "Priorat, Španjolska",
-  "abv": 14.5,
-  "body": 5,
-  "sweetness": 1,
-  "flavorTags": [
-   "tamno-voce",
-   "mineralno",
-   "zacini",
-   "hrast"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 8.5,
-  "priceEUR": {
-   "min": 30.0,
-   "max": 45.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Velika casa, 16-18 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Les Terrasses: pristupačni Priorat; škriljevac, crno voće, alkoholna snaga. Uz m",
-   "en": "Les Terrasses: pristupačni Priorat; škriljevac, crno voće, alkoholna snaga. Uz m"
-  }
- },
- {
-  "id": "wine-berlucchi-61-franciacorta-brut",
-  "category": "wine",
-  "name": "Berlucchi '61 Franciacorta Brut",
-  "style": "sparkling",
-  "region": "Lombardija, Italija",
-  "abv": 12.5,
-  "body": 2,
-  "sweetness": 1,
-  "flavorTags": [
-   "citrus",
-   "kremasto",
-   "orasasti"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 8.0,
-  "priceEUR": {
-   "min": 22.0,
-   "max": 32.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Dobro ohladjeno, 6-8 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Berlucchi '61: pionir Franciacorte; citrus i brioche. Alternativa Ca' del Boscu.",
-   "en": "Berlucchi '61: pionir Franciacorte; citrus i brioche. Alternativa Ca' del Boscu."
-  }
- },
- {
-  "id": "wine-bisol-crede-valdobbiadene-docg",
-  "category": "wine",
-  "name": "Bisol Crede Valdobbiadene DOCG",
-  "style": "sparkling",
-  "region": "Veneto, Italija",
-  "abv": 11.5,
-  "body": 1,
-  "sweetness": 2,
-  "flavorTags": [
-   "voce",
-   "citrus",
-   "mineralno"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 8.0,
-  "priceEUR": {
-   "min": 14.0,
-   "max": 22.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Dobro ohladjeno, 6-8 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Bisol Crede: suši, mineralniji prosecco. Bolji omjer cijene i ozbiljnosti.",
-   "en": "Bisol Crede: suši, mineralniji prosecco. Bolji omjer cijene i ozbiljnosti."
-  }
- },
- {
-  "id": "wine-blandy-s-bual-10-y-o",
-  "category": "wine",
-  "name": "Blandy's Bual 10 Y.O.",
-  "style": "madeira",
-  "region": "Madeira, Portugal",
-  "abv": 19.0,
-  "body": 4,
-  "sweetness": 4,
-  "flavorTags": [
-   "orasasti",
-   "suho-voce",
-   "karamela",
-   "med"
-  ],
-  "additiveStatus": "fortified",
-  "additiveDetail": {
-   "hr": "Fortificirano vinskim destilatom; slatkoca iz zaustavljene fermentacije",
-   "en": "Fortified with grape spirit; sweetness from arrested fermentation"
-  },
-  "additiveSource": "Standard kategorije porto/sherry/madeira",
-  "qualityScore": 8.0,
-  "priceEUR": {
-   "min": 35.0,
-   "max": 48.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Casa za madeira, 14-16 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Bual 10 YO: karamela, suhe marelice, dimna nota. Odličan uz maduro srednje snage",
-   "en": "Bual 10 YO: karamela, suhe marelice, dimna nota. Odličan uz maduro srednje snage"
-  }
- },
- {
-  "id": "wine-blandy-s-malmsey-10-y-o",
-  "category": "wine",
-  "name": "Blandy's Malmsey 10 Y.O.",
-  "style": "madeira",
-  "region": "Madeira, Portugal",
-  "abv": 19.0,
-  "body": 4,
-  "sweetness": 5,
-  "flavorTags": [
-   "med",
-   "suho-voce",
-   "karamela",
-   "orasasti"
-  ],
-  "additiveStatus": "fortified",
-  "additiveDetail": {
-   "hr": "Fortificirano vinskim destilatom; slatkoca iz zaustavljene fermentacije",
-   "en": "Fortified with grape spirit; sweetness from arrested fermentation"
-  },
-  "additiveSource": "Standard kategorije porto/sherry/madeira",
-  "qualityScore": 8.0,
-  "priceEUR": {
-   "min": 35.0,
-   "max": 48.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Casa za madeira, 14-16 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Malmsey 10 YO: najslađi stil madeire; med, smokve, orasi. Desert uz blagi do sre",
-   "en": "Malmsey 10 YO: najslađi stil madeire; med, smokve, orasi. Desert uz blagi do sre"
-  }
- },
- {
-  "id": "wine-castello-banfi-brunello-di-montalcino",
-  "category": "wine",
-  "name": "Castello Banfi Brunello di Montalcino",
-  "style": "red-full",
-  "region": "Toskana, Italija",
-  "abv": 14.0,
-  "body": 4,
-  "sweetness": 1,
-  "flavorTags": [
-   "tamno-voce",
-   "koza",
-   "zemljano",
-   "hrast"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 8.0,
-  "priceEUR": {
-   "min": 40.0,
-   "max": 65.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Velika casa, 16-18 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Banfi Brunello: široko dostupan, zreo sangiovese. Višnja i hrast uz srednje-punu",
-   "en": "Banfi Brunello: široko dostupan, zreo sangiovese. Višnja i hrast uz srednje-punu"
-  }
- },
- {
-  "id": "wine-castello-di-ama-chianti-classico",
-  "category": "wine",
-  "name": "Castello di Ama Chianti Classico",
-  "style": "red-medium",
-  "region": "Toskana, Italija",
-  "abv": 13.5,
-  "body": 3,
-  "sweetness": 1,
-  "flavorTags": [
-   "tamno-voce",
-   "cvjetno",
-   "mineralno"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 8.0,
-  "priceEUR": {
-   "min": 28.0,
-   "max": 45.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Casa, 15-17 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Castello di Ama: finiji Chianti; cvijet i mineralnost. Elegantniji pairing.",
-   "en": "Castello di Ama: finiji Chianti; cvijet i mineralnost. Elegantniji pairing."
-  }
- },
- {
-  "id": "wine-caymus-cabernet-sauvignon",
-  "category": "wine",
-  "name": "Caymus Cabernet Sauvignon",
-  "style": "red-full",
-  "region": "Napa Valley, SAD",
-  "abv": 14.5,
-  "body": 5,
-  "sweetness": 2,
-  "flavorTags": [
-   "tamno-voce",
-   "vanilija",
-   "kakao",
-   "hrast"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 8.0,
-  "priceEUR": {
-   "min": 60.0,
-   "max": 95.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Velika casa, 16-18 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Caymus: bogati Napa Cab; vanilija i crno voće. Američki stil uz maduro.",
-   "en": "Caymus: bogati Napa Cab; vanilija i crno voće. Američki stil uz maduro."
-  }
- },
- {
-  "id": "wine-coronica-gran-teran",
-  "category": "wine",
-  "name": "Coronica Gran Teran",
-  "style": "red-medium",
-  "region": "Istra, Hrvatska",
-  "abv": 13.5,
-  "body": 3,
-  "sweetness": 1,
-  "flavorTags": [
-   "tamno-voce",
-   "zemljano",
-   "mineralno"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 8.0,
-  "priceEUR": {
-   "min": 20.0,
-   "max": 30.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vinoteke / Miva",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Casa, 15-17 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Istarski teran ozbiljnog izdanja , divlja kupina, željezo, zemlja; markantna kis",
-   "en": "Istarski teran ozbiljnog izdanja , divlja kupina, željezo, zemlja; markantna kis"
-  }
- },
- {
-  "id": "wine-dr-loosen-riesling-kabinett",
-  "category": "wine",
-  "name": "Dr. Loosen Riesling Kabinett",
-  "style": "white-fresh",
-  "region": "Mosel, Njemačka",
-  "abv": 8.5,
-  "body": 2,
-  "sweetness": 3,
-  "flavorTags": [
-   "citrus",
-   "jabuka",
-   "mineralno",
-   "med"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 8.0,
-  "priceEUR": {
-   "min": 12.0,
-   "max": 20.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Dobro ohladjeno, 6-8 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Dr. Loosen Kabinett: limeta, jabuka, škriljevac, nježna slatkoća. Uz najblažu ci",
-   "en": "Dr. Loosen Kabinett: limeta, jabuka, škriljevac, nježna slatkoća. Uz najblažu ci"
-  }
- },
- {
-  "id": "wine-e-guigal-gigondas",
-  "category": "wine",
-  "name": "E. Guigal Gigondas",
-  "style": "red-full",
-  "region": "Rhone, Francuska",
-  "abv": 14.5,
-  "body": 4,
-  "sweetness": 1,
-  "flavorTags": [
-   "tamno-voce",
-   "zacini",
-   "zemljano"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 8.0,
-  "priceEUR": {
-   "min": 20.0,
-   "max": 32.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Velika casa, 16-18 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Guigal Gigondas: puniji južni Rhône; garrigue i crno voće. Blizu CdP-a uz manju ",
-   "en": "Guigal Gigondas: puniji južni Rhône; garrigue i crno voće. Blizu CdP-a uz manju "
-  }
- },
- {
-  "id": "wine-emilio-moro-ribera-del-duero",
-  "category": "wine",
-  "name": "Emilio Moro Ribera del Duero",
-  "style": "red-full",
-  "region": "Ribera del Duero, Španjolska",
-  "abv": 14.5,
-  "body": 4,
-  "sweetness": 1,
-  "flavorTags": [
-   "tamno-voce",
-   "hrast",
-   "zacini"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 8.0,
-  "priceEUR": {
-   "min": 22.0,
-   "max": 35.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Velika casa, 16-18 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Emilio Moro: zreo Ribera stil; voće i bačva. Svakodnevni španjolski pairing.",
-   "en": "Emilio Moro: zreo Ribera stil; voće i bačva. Svakodnevni španjolski pairing."
-  }
- },
- {
-  "id": "wine-faustino-i-gran-reserva",
-  "category": "wine",
-  "name": "Faustino I Gran Reserva",
-  "style": "red-full",
-  "region": "Rioja, Španjolska",
-  "abv": 13.5,
-  "body": 4,
-  "sweetness": 1,
-  "flavorTags": [
-   "orasasti",
-   "suho-voce",
-   "vanilija",
-   "tamno-voce"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 8.0,
-  "priceEUR": {
-   "min": 22.0,
-   "max": 35.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Velika casa, 16-18 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Faustino I GR: klasik Rioje; vanilija, suha trešnja, orasi. Prijateljski uz Conn",
-   "en": "Faustino I GR: klasik Rioje; vanilija, suha trešnja, orasi. Prijateljski uz Conn"
-  }
- },
- {
-  "id": "wine-grahams-tawny-10",
-  "category": "wine",
-  "name": "Graham's Tawny Port 10 Y.O.",
-  "style": "port-tawny",
-  "region": "Douro, Portugal",
-  "abv": 20.0,
-  "body": 3,
-  "sweetness": 4,
-  "flavorTags": [
-   "orasasti",
-   "karamela",
-   "suho-voce",
-   "med"
-  ],
-  "additiveStatus": "fortified",
-  "additiveDetail": {
-   "hr": "Fortificirano vinskim destilatom; slatkoca iz zaustavljene fermentacije",
-   "en": "Fortified with grape spirit; sweetness from arrested fermentation"
-  },
-  "additiveSource": "Standard kategorije porto/sherry/madeira",
-  "qualityScore": 8.0,
-  "priceEUR": {
-   "min": 36.3,
-   "max": 36.3
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Casa za porto, 14-16 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Tawny odležan 10 godina u drvu , orašasti plodovi, karamela, suho voće. Klasičan",
-   "en": "Tawny aged 10 years in wood , nuts, caramel, dried fruit. A classic pick with a medium-bodied cigar."
-  }
- },
- {
-  "id": "wine-hidalgo-la-gitana-manzanilla",
-  "category": "wine",
-  "name": "Hidalgo La Gitana Manzanilla",
-  "style": "sherry-dry",
-  "region": "Sanlucar, Španjolska",
-  "abv": 15.0,
-  "body": 2,
-  "sweetness": 1,
-  "flavorTags": [
-   "mineralno",
-   "orasasti",
-   "citrus"
-  ],
-  "additiveStatus": "fortified",
-  "additiveDetail": {
-   "hr": "Fortificirano vinskim destilatom; slatkoca iz zaustavljene fermentacije",
-   "en": "Fortified with grape spirit; sweetness from arrested fermentation"
-  },
-  "additiveSource": "Standard kategorije porto/sherry/madeira",
-  "qualityScore": 8.0,
-  "priceEUR": {
-   "min": 12.0,
-   "max": 18.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Casa za sherry, 12-14 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Najpoznatija manzanilla: morska svježina, badem, limuna kora. Uz najblažu Connec",
-   "en": "Najpoznatija manzanilla: morska svježina, badem, limuna kora. Uz najblažu Connec"
-  }
- },
- {
-  "id": "wine-korta-katarina-plavac-mali",
-  "category": "wine",
-  "name": "Korta Katarina Plavac Mali",
-  "style": "red-full",
-  "region": "Pelješac, Hrvatska",
-  "abv": 14.5,
-  "body": 4,
-  "sweetness": 2,
-  "flavorTags": [
-   "tamno-voce",
-   "hrast",
-   "zacini"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 8.0,
-  "priceEUR": {
-   "min": 25.0,
-   "max": 40.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Velika casa, 16-18 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Korta Katarina: uređen, međunarodni stil plavca. Dobar most prema Novom svijetu ",
-   "en": "Korta Katarina: uređen, međunarodni stil plavca. Dobar most prema Novom svijetu "
-  }
- },
- {
-  "id": "wine-krajan-i-po-ip",
-  "category": "wine",
-  "name": "Krajančić Pošip",
-  "style": "white-rich",
-  "region": "Korčula, Hrvatska",
-  "abv": 13.5,
-  "body": 3,
-  "sweetness": 1,
-  "flavorTags": [
-   "citrus",
-   "orasasti",
-   "mineralno"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 8.0,
-  "priceEUR": {
-   "min": 16.0,
-   "max": 28.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Ohladjeno, 8-10 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Krajančić: referentni korčulanski pošip; orasi i citrus. Ozbiljniji bijeli pairi",
-   "en": "Krajančić: referentni korčulanski pošip; orasi i citrus. Ozbiljniji bijeli pairi"
-  }
- },
- {
-  "id": "wine-louis-latour-pouilly-fuiss",
-  "category": "wine",
-  "name": "Louis Latour Pouilly-Fuissé",
-  "style": "white-rich",
-  "region": "Burgundija, Francuska",
-  "abv": 13.5,
-  "body": 3,
-  "sweetness": 1,
-  "flavorTags": [
-   "orasasti",
-   "citrus",
-   "mineralno"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 8.0,
-  "priceEUR": {
-   "min": 25.0,
-   "max": 40.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Ohladjeno, 8-10 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Latour Pouilly-Fuissé: klasični bijeli Burgundac; orasi i mineralnost.",
-   "en": "Latour Pouilly-Fuissé: klasični bijeli Burgundac; orasi i mineralnost."
-  }
- },
- {
-  "id": "wine-lustau-amontillado",
-  "category": "wine",
-  "name": "Lustau Amontillado Los Arcos",
-  "style": "sherry-dry",
-  "region": "Jerez, Španjolska",
-  "abv": 18.5,
-  "body": 3,
-  "sweetness": 2,
-  "flavorTags": [
-   "orasasti",
-   "hrast",
-   "suho-voce"
-  ],
-  "additiveStatus": "fortified",
-  "additiveDetail": {
-   "hr": "Fortificirano vinskim destilatom; slatkoca iz zaustavljene fermentacije",
-   "en": "Fortified with grape spirit; sweetness from arrested fermentation"
-  },
-  "additiveSource": "Standard kategorije porto/sherry/madeira",
-  "qualityScore": 8.0,
-  "priceEUR": {
-   "min": 18.0,
-   "max": 25.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vinoteke / Miva",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Casa za sherry, 12-14 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Amontillado , lješnjak, duhan, suho drvo; suh i kompleksan. Podcijenjen partner ",
-   "en": "Amontillado , hazelnut, tobacco, dry wood; dry and complex. An underrated partner for a medium cigar."
-  }
- },
- {
-  "id": "wine-lustau-east-india-solera",
-  "category": "wine",
-  "name": "Lustau East India Solera",
-  "style": "sherry-sweet",
-  "region": "Jerez, Španjolska",
-  "abv": 20.0,
-  "body": 4,
-  "sweetness": 4,
-  "flavorTags": [
-   "orasasti",
-   "suho-voce",
-   "karamela",
-   "med"
-  ],
-  "additiveStatus": "fortified",
-  "additiveDetail": {
-   "hr": "Fortificirano vinskim destilatom; slatkoca iz zaustavljene fermentacije",
-   "en": "Fortified with grape spirit; sweetness from arrested fermentation"
-  },
-  "additiveSource": "Standard kategorije porto/sherry/madeira",
-  "qualityScore": 8.0,
-  "priceEUR": {
-   "min": 18.0,
-   "max": 28.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Casa za sherry, 14-16 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "East India Solera: cream/oloroso stil; orasi i suho voće. Odličan uz Connecticut",
-   "en": "East India Solera: cream/oloroso stil; orasi i suho voće. Odličan uz Connecticut"
-  }
- },
- {
-  "id": "wine-lustau-oloroso",
-  "category": "wine",
-  "name": "Lustau Oloroso Don Nuno",
-  "style": "sherry-dry",
-  "region": "Jerez, Španjolska",
-  "abv": 20.0,
-  "body": 4,
-  "sweetness": 2,
-  "flavorTags": [
-   "orasasti",
-   "hrast",
-   "suho-voce",
-   "koza"
-  ],
-  "additiveStatus": "fortified",
-  "additiveDetail": {
-   "hr": "Fortificirano vinskim destilatom; slatkoca iz zaustavljene fermentacije",
-   "en": "Fortified with grape spirit; sweetness from arrested fermentation"
-  },
-  "additiveSource": "Standard kategorije porto/sherry/madeira",
-  "qualityScore": 8.0,
-  "priceEUR": {
-   "min": 20.0,
-   "max": 28.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vinoteke / Miva",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Casa za sherry, 12-14 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Oksidativni oloroso , orah, koža, balzamiko; suh, pun i dug. Nosi i punu cigaru.",
-   "en": "Oxidative oloroso , walnut, leather, balsamic; dry, full and long. Stands up to a full cigar."
-  }
- },
- {
-  "id": "wine-madirazza-postup",
-  "category": "wine",
-  "name": "Madirazza Postup",
-  "style": "red-full",
-  "region": "Pelješac, Hrvatska",
-  "abv": 14.5,
-  "body": 5,
-  "sweetness": 2,
-  "flavorTags": [
-   "tamno-voce",
-   "zacini",
-   "zemljano"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 8.0,
-  "priceEUR": {
-   "min": 24.0,
-   "max": 40.0
-  },
-  "priceApprox": true,
-  "shopHR": "Madirazza webshop",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Velika casa, 16-18 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Madirazza Postup: tamno voće i mediteranski začini. Pairing blizak Dingaču.",
-   "en": "Madirazza Postup: tamno voće i mediteranski začini. Pairing blizak Dingaču."
-  }
- },
- {
-  "id": "wine-masi-brolo-di-campofiorin",
-  "category": "wine",
-  "name": "Masi Brolo di Campofiorin",
-  "style": "red-full",
-  "region": "Veneto, Italija",
-  "abv": 14.0,
-  "body": 4,
-  "sweetness": 2,
-  "flavorTags": [
-   "suho-voce",
-   "tamno-voce",
-   "zacini"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 8.0,
-  "priceEUR": {
-   "min": 22.0,
-   "max": 35.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Velika casa, 16-18 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Brolo: premium Campofiorin linija; suha trešnja i začini. Most prema Amaroneu.",
-   "en": "Brolo: premium Campofiorin linija; suha trešnja i začini. Most prema Amaroneu."
-  }
- },
- {
-  "id": "wine-matu-ko-postup",
-  "category": "wine",
-  "name": "Matuško Postup",
-  "style": "red-full",
-  "region": "Pelješac, Hrvatska",
-  "abv": 14.5,
-  "body": 5,
-  "sweetness": 2,
-  "flavorTags": [
-   "tamno-voce",
-   "suho-voce",
-   "zacini"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 8.0,
-  "priceEUR": {
-   "min": 25.0,
-   "max": 42.0
-  },
-  "priceApprox": true,
-  "shopHR": "Konzum / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Velika casa, 16-18 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Matuško Postup: susjed Dingača; zrelo voće i struktura. Ozbiljan plavac uz Haban",
-   "en": "Matuško Postup: susjed Dingača; zrelo voće i struktura. Ozbiljan plavac uz Haban"
-  }
- },
- {
-  "id": "wine-misal-per-uri-prestige",
-  "category": "wine",
-  "name": "Misal Peršurić Prestige",
-  "style": "sparkling",
-  "region": "Istra, Hrvatska",
-  "abv": 12.0,
-  "body": 2,
-  "sweetness": 1,
-  "flavorTags": [
-   "kremasto",
-   "orasasti",
-   "citrus"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 8.0,
-  "priceEUR": {
-   "min": 25.0,
-   "max": 38.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Dobro ohladjeno, 6-8 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Misal Prestige: duže na kvascima; kremastiji. Bolji HR pairing uz Connecticut.",
-   "en": "Misal Prestige: duže na kvascima; kremastiji. Bolji HR pairing uz Connecticut."
-  }
- },
- {
-  "id": "wine-nino-franco-rustico",
-  "category": "wine",
-  "name": "Nino Franco Rustico Valdobbiadene DOCG",
-  "style": "sparkling",
-  "region": "Veneto, Italija",
-  "abv": 11.0,
-  "body": 2,
-  "sweetness": 2,
-  "flavorTags": [
-   "voce",
-   "cvjetno",
-   "mineralno"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 8.0,
-  "priceEUR": {
-   "min": 20.0,
-   "max": 26.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Dobro ohladjeno, 6-8 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Referentna kuća Valdobbiadenea , zrela jabuka, glicinija, fina perlica; prosecco",
-   "en": "The benchmark Valdobbiadene house , ripe apple, wisteria, fine mousse; prosecco taken seriously."
-  }
- },
- {
-  "id": "wine-penfolds-bin-28-kalimna-shiraz",
-  "category": "wine",
-  "name": "Penfolds Bin 28 Kalimna Shiraz",
-  "style": "red-full",
-  "region": "Barossa, Australija",
-  "abv": 14.5,
-  "body": 5,
-  "sweetness": 2,
-  "flavorTags": [
-   "tamno-voce",
-   "zacini",
-   "hrast",
-   "kakao"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 8.0,
-  "priceEUR": {
-   "min": 25.0,
-   "max": 40.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Velika casa, 16-18 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Bin 28: klasični Barossa Shiraz; džem, papar, hrast. Snaga uz maduro.",
-   "en": "Bin 28: klasični Barossa Shiraz; džem, papar, hrast. Snaga uz maduro."
-  }
- },
- {
-  "id": "wine-primitivo-sessantanni",
-  "category": "wine",
-  "name": "Primitivo di Manduria (San Marzano 60 Sessantanni)",
-  "style": "red-full",
-  "region": "Puglia, Italija",
-  "abv": 14.5,
-  "body": 5,
-  "sweetness": 3,
-  "flavorTags": [
-   "tamno-voce",
-   "suho-voce",
-   "vanilija",
-   "kakao"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 8.0,
-  "priceEUR": {
-   "min": 22.0,
-   "max": 30.0
-  },
-  "priceApprox": true,
-  "shopHR": "Miva / Vrutak",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Velika casa, 16-18 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Sa 60-godišnjih trsova , džem od šljive, vanilija, kakao; polusuho bogatstvo koj",
-   "en": "From 60-year-old vines , plum jam, vanilla, cocoa; off-dry richness that loves a maduro."
+   "hr": "Dublja, koncentriranija verzija — pečeni orasi, datulje, fina oksidativna kompleksnost. Jedan od najboljih univerzalnih partnera cigari.",
+   "en": "Deeper and more concentrated — roasted nuts, dates, fine oxidative complexity. One of the best all-round cigar partners."
   }
  },
  {
@@ -2717,13 +96,12 @@
    "hr": "Fortificirano vinskim destilatom; slatkoca iz zaustavljene fermentacije",
    "en": "Fortified with grape spirit; sweetness from arrested fermentation"
   },
-  "additiveSource": "Standard kategorije porto/sherry/madeira",
+  "additiveSource": "Standard kategorije porto",
   "qualityScore": 8.0,
   "priceEUR": {
    "min": 55.79,
    "max": 55.79
   },
-  "priceApprox": true,
   "shopHR": "webshop.rotodinamic.hr",
   "status": null,
   "pairable": true,
@@ -2733,1650 +111,8 @@
   "cigarHint": null,
   "priceUrl": "https://webshop.rotodinamic.hr/en/sandeman-tawny-20-yo-porto",
   "notes": {
-   "hr": "Zreo tawny , badem, karamela, suha smokva; svilenkasta tekstura.",
-   "en": "Mature tawny , almond, caramel, dried fig; silky texture."
-  }
- },
- {
-  "id": "wine-stina-po-ip",
-  "category": "wine",
-  "name": "Stina Pošip",
-  "style": "white-rich",
-  "region": "Brač, Hrvatska",
-  "abv": 13.0,
-  "body": 3,
-  "sweetness": 1,
-  "flavorTags": [
-   "citrus",
-   "mineralno",
-   "orasasti"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 8.0,
-  "priceEUR": {
-   "min": 14.0,
-   "max": 24.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Ohladjeno, 8-10 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Stina Pošip: mineralan, mediteranski bijeli. Uz blagu cigaru ili aperitiv.",
-   "en": "Stina Pošip: mineralan, mediteranski bijeli. Uz blagu cigaru ili aperitiv."
-  }
- },
- {
-  "id": "wine-taittinger-brut-r-serve",
-  "category": "wine",
-  "name": "Taittinger Brut Réserve",
-  "style": "sparkling",
-  "region": "Champagne, Francuska",
-  "abv": 12.0,
-  "body": 2,
-  "sweetness": 1,
-  "flavorTags": [
-   "cvjetno",
-   "citrus",
-   "kremasto"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 8.0,
-  "priceEUR": {
-   "min": 45.0,
-   "max": 60.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Dobro ohladjeno, 6-8 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Taittinger: chardonnay-teži, cvjetni Champagne. Elegantan uz blagu cigaru.",
-   "en": "Taittinger: chardonnay-teži, cvjetni Champagne. Elegantan uz blagu cigaru."
-  }
- },
- {
-  "id": "wine-taylor-s-tawny-port-10-y-o",
-  "category": "wine",
-  "name": "Taylor's Tawny Port 10 Y.O.",
-  "style": "port-tawny",
-  "region": "Douro, Portugal",
-  "abv": 20.0,
-  "body": 3,
-  "sweetness": 4,
-  "flavorTags": [
-   "orasasti",
-   "karamela",
-   "suho-voce"
-  ],
-  "additiveStatus": "fortified",
-  "additiveDetail": {
-   "hr": "Fortificirano vinskim destilatom; slatkoca iz zaustavljene fermentacije",
-   "en": "Fortified with grape spirit; sweetness from arrested fermentation"
-  },
-  "additiveSource": "Standard kategorije porto/sherry/madeira",
-  "qualityScore": 8.0,
-  "priceEUR": {
-   "min": 32.0,
-   "max": 42.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Casa za porto, 14-16 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Taylor's 10 YO tawny: orasi, karamela, suhe smokve. Pouzdan partner srednjoj cig",
-   "en": "Taylor's 10 YO tawny: orasi, karamela, suhe smokve. Pouzdan partner srednjoj cig"
-  }
- },
- {
-  "id": "wine-testament-babi",
-  "category": "wine",
-  "name": "Testament Babić",
-  "style": "red-full",
-  "region": "Primošten, Hrvatska",
-  "abv": 14.0,
-  "body": 4,
-  "sweetness": 2,
-  "flavorTags": [
-   "tamno-voce",
-   "mineralno",
-   "zacini"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 8.0,
-  "priceEUR": {
-   "min": 18.0,
-   "max": 30.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Velika casa, 16-18 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Testament: moderno primoštensko babić; mineralnost i crvena trešnja. Karakter uz",
-   "en": "Testament: moderno primoštensko babić; mineralnost i crvena trešnja. Karakter uz"
-  }
- },
- {
-  "id": "wine-tinto-pesquera-crianza",
-  "category": "wine",
-  "name": "Tinto Pesquera Crianza",
-  "style": "red-full",
-  "region": "Ribera del Duero, Španjolska",
-  "abv": 14.0,
-  "body": 4,
-  "sweetness": 1,
-  "flavorTags": [
-   "tamno-voce",
-   "hrast",
-   "zacini"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 8.0,
-  "priceEUR": {
-   "min": 25.0,
-   "max": 40.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Velika casa, 16-18 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Pesquera: Tempranillo s Ribere; crna trešnja i hrast. Pouzdan uz Habano.",
-   "en": "Pesquera: Tempranillo s Ribere; crna trešnja i hrast. Pouzdan uz Habano."
-  }
- },
- {
-  "id": "wine-tomac-klasik",
-  "category": "wine",
-  "name": "Tomac Klasik",
-  "style": "sparkling",
-  "region": "Plešivica, Hrvatska",
-  "abv": 12.0,
-  "body": 2,
-  "sweetness": 1,
-  "flavorTags": [
-   "citrus",
-   "mineralno",
-   "kremasto"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 8.0,
-  "priceEUR": {
-   "min": 18.0,
-   "max": 28.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Dobro ohladjeno, 6-8 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Tomac Klasik: plešivička klasična metoda; citrus i kvasac. HR referentni pjenuša",
-   "en": "Tomac Klasik: plešivička klasična metoda; citrus i kvasac. HR referentni pjenuša"
-  }
- },
- {
-  "id": "wine-tomi-pro-ek",
-  "category": "wine",
-  "name": "Tomić Prošek",
-  "style": "prosek",
-  "region": "Hvar, Hrvatska",
-  "abv": 16.0,
-  "body": 4,
-  "sweetness": 5,
-  "flavorTags": [
-   "suho-voce",
-   "med",
-   "orasasti"
-  ],
-  "additiveStatus": "fortified",
-  "additiveDetail": {
-   "hr": "Fortificirano vinskim destilatom; slatkoca iz zaustavljene fermentacije",
-   "en": "Fortified with grape spirit; sweetness from arrested fermentation"
-  },
-  "additiveSource": "Standard kategorije porto/sherry/madeira",
-  "qualityScore": 8.0,
-  "priceEUR": {
-   "min": 25.0,
-   "max": 40.0
-  },
-  "priceApprox": true,
-  "shopHR": "Konzum / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Mala casa, 12-14 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Tomić s Hvara: tradicionalni prošek od plavca; suhe smokve i med. Lokalni desert",
-   "en": "Tomić s Hvara: tradicionalni prošek od plavca; suhe smokve i med. Lokalni desert"
-  }
- },
- {
-  "id": "wine-veuve-clicquot-yellow-label-brut",
-  "category": "wine",
-  "name": "Veuve Clicquot Yellow Label Brut",
-  "style": "sparkling",
-  "region": "Champagne, Francuska",
-  "abv": 12.0,
-  "body": 2,
-  "sweetness": 1,
-  "flavorTags": [
-   "citrus",
-   "kremasto",
-   "voce"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 8.0,
-  "priceEUR": {
-   "min": 45.0,
-   "max": 60.0
-  },
-  "priceApprox": true,
-  "shopHR": "Siroka dostupnost",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Dobro ohladjeno, 6-8 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Veuve Yellow Label: malo puniji brut; voće i tost. Kontrast uz Connecticut.",
-   "en": "Veuve Yellow Label: malo puniji brut; voće i tost. Kontrast uz Connecticut."
-  }
- },
- {
-  "id": "wine-zlatan-plenkovi-grand-cru-plavac",
-  "category": "wine",
-  "name": "Zlatan Plenković Grand Cru Plavac",
-  "style": "red-full",
-  "region": "Hvar, Hrvatska",
-  "abv": 14.5,
-  "body": 5,
-  "sweetness": 2,
-  "flavorTags": [
-   "tamno-voce",
-   "suho-voce",
-   "zacini",
-   "hrast"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 8.0,
-  "priceEUR": {
-   "min": 30.0,
-   "max": 50.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Velika casa, 16-18 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Zlatan Grand Cru: vrhunski hvarski plavac; koncentracija i začini. Uz Habano/mad",
-   "en": "Zlatan Grand Cru: vrhunski hvarski plavac; koncentracija i začini. Uz Habano/mad"
-  }
- },
- {
-  "id": "wine-ember-brut",
-  "category": "wine",
-  "name": "Šember Brut",
-  "style": "sparkling",
-  "region": "Plešivica, Hrvatska",
-  "abv": 12.0,
-  "body": 2,
-  "sweetness": 1,
-  "flavorTags": [
-   "citrus",
-   "mineralno",
-   "cvjetno"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 8.0,
-  "priceEUR": {
-   "min": 16.0,
-   "max": 26.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Dobro ohladjeno, 6-8 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Šember: još jedan plešivički klasik; precizan i mineralan. Alternativa Tomacu.",
-   "en": "Šember: još jedan plešivički klasik; precizan i mineralan. Alternativa Tomacu."
-  }
- },
- {
-  "id": "wine-antinori-peppoli-chianti-classico",
-  "category": "wine",
-  "name": "Antinori Peppoli Chianti Classico",
-  "style": "red-medium",
-  "region": "Toskana, Italija",
-  "abv": 13.5,
-  "body": 3,
-  "sweetness": 1,
-  "flavorTags": [
-   "tamno-voce",
-   "voce",
-   "zacini"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 7.5,
-  "priceEUR": {
-   "min": 14.0,
-   "max": 22.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Casa, 15-17 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Peppoli: pristupačni Chianti Classico; trešnja i začini. Uz blagu do srednju cig",
-   "en": "Peppoli: pristupačni Chianti Classico; trešnja i začini. Uz blagu do srednju cig"
-  }
- },
- {
-  "id": "wine-benvenuti-pinot-noir",
-  "category": "wine",
-  "name": "Benvenuti Pinot Noir",
-  "style": "red-medium",
-  "region": "Istra, Hrvatska",
-  "abv": 13.0,
-  "body": 2,
-  "sweetness": 1,
-  "flavorTags": [
-   "voce",
-   "cvjetno",
-   "mineralno"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 7.5,
-  "priceEUR": {
-   "min": 16.0,
-   "max": 26.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Casa, 15-17 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Benvenuti: istarski Pinot; svježe voće i mineralnost. Lagani HR pairing.",
-   "en": "Benvenuti: istarski Pinot; svježe voće i mineralnost. Lagani HR pairing."
-  }
- },
- {
-  "id": "wine-catena-malbec",
-  "category": "wine",
-  "name": "Catena Malbec",
-  "style": "red-full",
-  "region": "Mendoza, Argentina",
-  "abv": 14.0,
-  "body": 4,
-  "sweetness": 2,
-  "flavorTags": [
-   "tamno-voce",
-   "zacini",
-   "vanilija"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 7.5,
-  "priceEUR": {
-   "min": 12.0,
-   "max": 20.0
-  },
-  "priceApprox": true,
-  "shopHR": "Konzum / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Velika casa, 16-18 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Catena: referentni Mendoza Malbec; šljiva i začini. Prijateljski uz srednju ciga",
-   "en": "Catena: referentni Mendoza Malbec; šljiva i začini. Prijateljski uz srednju ciga"
-  }
- },
- {
-  "id": "wine-celler-de-cap-anes-mas-donis-priorat",
-  "category": "wine",
-  "name": "Celler de Capçanes Mas Donis Priorat",
-  "style": "red-full",
-  "region": "Priorat, Španjolska",
-  "abv": 14.5,
-  "body": 4,
-  "sweetness": 1,
-  "flavorTags": [
-   "tamno-voce",
-   "mineralno",
-   "zacini"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 7.5,
-  "priceEUR": {
-   "min": 14.0,
-   "max": 22.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Velika casa, 16-18 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Mas Donis: pristupačni Priorat; škriljevac i crno voće. Value uz Habano.",
-   "en": "Mas Donis: pristupačni Priorat; škriljevac i crno voće. Value uz Habano."
-  }
- },
- {
-  "id": "wine-cesari-mara-valpolicella-ripasso",
-  "category": "wine",
-  "name": "Cesari Mara Valpolicella Ripasso",
-  "style": "red-medium",
-  "region": "Veneto, Italija",
-  "abv": 13.5,
-  "body": 3,
-  "sweetness": 2,
-  "flavorTags": [
-   "tamno-voce",
-   "suho-voce",
-   "zacini"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 7.5,
-  "priceEUR": {
-   "min": 14.0,
-   "max": 22.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Casa, 15-17 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Cesari Mara: popularni ripasso; suha trešnja i blaga slatkoća. Svakodnevni pairi",
-   "en": "Cesari Mara: popularni ripasso; suha trešnja i blaga slatkoća. Svakodnevni pairi"
-  }
- },
- {
-  "id": "wine-diszn-k-tokaji-asz-3-puttonyos",
-  "category": "wine",
-  "name": "Disznókő Tokaji Aszú 3 Puttonyos",
-  "style": "dessert-wine",
-  "region": "Tokaj, Mađarska",
-  "abv": 12.0,
-  "body": 3,
-  "sweetness": 4,
-  "flavorTags": [
-   "med",
-   "citrus",
-   "voce",
-   "cvjetno"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 7.5,
-  "priceEUR": {
-   "min": 18.0,
-   "max": 30.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Ohladjeno, 8-10 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Najlakša aszu kategorija , cvjetna, svježa, s umjerenom slatkoćom i živom kiseli",
-   "en": "Najlakša aszu kategorija , cvjetna, svježa, s umjerenom slatkoćom i živom kiseli"
-  }
- },
- {
-  "id": "wine-diszn-k-tokaji-furmint-suhi",
-  "category": "wine",
-  "name": "Disznókő Tokaji Furmint (suhi)",
-  "style": "white-rich",
-  "region": "Tokaj, Mađarska",
-  "abv": 13.0,
-  "body": 3,
-  "sweetness": 1,
-  "flavorTags": [
-   "citrus",
-   "mineralno",
-   "jabuka",
-   "cvjetno"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 7.5,
-  "priceEUR": {
-   "min": 10.0,
-   "max": 20.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Ohladjeno, 8-10 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Suhi furmint iz Tokaja , vulkanska mineralnost, jabuka, limun, bijeli cvijet. Od",
-   "en": "Suhi furmint iz Tokaja , vulkanska mineralnost, jabuka, limun, bijeli cvijet. Od"
-  }
- },
- {
-  "id": "wine-dow-s-late-bottled-vintage",
-  "category": "wine",
-  "name": "Dow's Late Bottled Vintage",
-  "style": "port-ruby",
-  "region": "Douro, Portugal",
-  "abv": 20.0,
-  "body": 4,
-  "sweetness": 4,
-  "flavorTags": [
-   "tamno-voce",
-   "zacini",
-   "kakao"
-  ],
-  "additiveStatus": "fortified",
-  "additiveDetail": {
-   "hr": "Fortificirano vinskim destilatom; slatkoca iz zaustavljene fermentacije",
-   "en": "Fortified with grape spirit; sweetness from arrested fermentation"
-  },
-  "additiveSource": "Standard kategorije porto/sherry/madeira",
-  "qualityScore": 7.5,
-  "priceEUR": {
-   "min": 18.0,
-   "max": 28.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Casa za porto, 14-16 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Dow's LBV: zrelo crno voće i začini bez vintage cijene. Dobar svakodnevni ruby u",
-   "en": "Dow's LBV: zrelo crno voće i začini bez vintage cijene. Dobar svakodnevni ruby u"
-  }
- },
- {
-  "id": "wine-e-guigal-c-tes-du-rh-ne",
-  "category": "wine",
-  "name": "E. Guigal Côtes du Rhône",
-  "style": "red-full",
-  "region": "Rhone, Francuska",
-  "abv": 14.0,
-  "body": 3,
-  "sweetness": 1,
-  "flavorTags": [
-   "tamno-voce",
-   "zacini",
-   "papar"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 7.5,
-  "priceEUR": {
-   "min": 10.0,
-   "max": 16.0
-  },
-  "priceApprox": true,
-  "shopHR": "Konzum / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Velika casa, 16-18 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Guigal CdR: Syrah/Grenache pristupačnost; papar i crveno voće. Ulaz u Rhône uz c",
-   "en": "Guigal CdR: Syrah/Grenache pristupačnost; papar i crveno voće. Ulaz u Rhône uz c"
-  }
- },
- {
-  "id": "wine-enjingi-gra-evina",
-  "category": "wine",
-  "name": "Enjingi Graševina",
-  "style": "white-fresh",
-  "region": "Slavonija, Hrvatska",
-  "abv": 12.5,
-  "body": 2,
-  "sweetness": 1,
-  "flavorTags": [
-   "jabuka",
-   "citrus",
-   "med"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 7.5,
-  "priceEUR": {
-   "min": 9.0,
-   "max": 16.0
-  },
-  "priceApprox": true,
-  "shopHR": "Konzum / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Dobro ohladjeno, 6-8 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Enjingi: malo bogatija graševina; med i jabuka. Kontrast uz Connecticut.",
-   "en": "Enjingi: malo bogatija graševina; med i jabuka. Kontrast uz Connecticut."
-  }
- },
- {
-  "id": "wine-fonseca-bin-27",
-  "category": "wine",
-  "name": "Fonseca Bin No. 27 Reserve Ruby",
-  "style": "port-ruby",
-  "region": "Douro, Portugal",
-  "abv": 20.0,
-  "body": 4,
-  "sweetness": 4,
-  "flavorTags": [
-   "tamno-voce",
-   "kakao",
-   "slatko"
-  ],
-  "additiveStatus": "fortified",
-  "additiveDetail": {
-   "hr": "Fortificirano vinskim destilatom; slatkoca iz zaustavljene fermentacije",
-   "en": "Fortified with grape spirit; sweetness from arrested fermentation"
-  },
-  "additiveSource": "Standard kategorije porto/sherry/madeira",
-  "qualityScore": 7.5,
-  "priceEUR": {
-   "min": 18.0,
-   "max": 24.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vrutak",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Casa za porto, 14-16 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Bogati reserve ruby , sočno tamno voće i čokolada; pouzdan svakodnevni porto uz ",
-   "en": "Rich reserve ruby , juicy dark fruit and chocolate; a dependable everyday port with a cigar."
-  }
- },
- {
-  "id": "wine-grabovac-babi",
-  "category": "wine",
-  "name": "Grabovac Babić",
-  "style": "red-full",
-  "region": "Primošten, Hrvatska",
-  "abv": 13.5,
-  "body": 4,
-  "sweetness": 1,
-  "flavorTags": [
-   "tamno-voce",
-   "zemljano",
-   "zacini"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 7.5,
-  "priceEUR": {
-   "min": 14.0,
-   "max": 24.0
-  },
-  "priceApprox": true,
-  "shopHR": "Konzum / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Velika casa, 16-18 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Grabovac: klasični babić s kamenjara. Zemljano i začinsko uz Habano srednje snag",
-   "en": "Grabovac: klasični babić s kamenjara. Zemljano i začinsko uz Habano srednje snag"
-  }
- },
- {
-  "id": "wine-graham-s-late-bottled-vintage",
-  "category": "wine",
-  "name": "Graham's Late Bottled Vintage",
-  "style": "port-ruby",
-  "region": "Douro, Portugal",
-  "abv": 20.0,
-  "body": 4,
-  "sweetness": 4,
-  "flavorTags": [
-   "tamno-voce",
-   "kakao",
-   "zacini"
-  ],
-  "additiveStatus": "fortified",
-  "additiveDetail": {
-   "hr": "Fortificirano vinskim destilatom; slatkoca iz zaustavljene fermentacije",
-   "en": "Fortified with grape spirit; sweetness from arrested fermentation"
-  },
-  "additiveSource": "Standard kategorije porto/sherry/madeira",
-  "qualityScore": 7.5,
-  "priceEUR": {
-   "min": 18.0,
-   "max": 28.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Casa za porto, 14-16 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Graham's LBV: voćniji, slađi LBV stil. Lakši ulaz u ruby porto uz cigaru.",
-   "en": "Graham's LBV: voćniji, slađi LBV stil. Lakši ulaz u ruby porto uz cigaru."
-  }
- },
- {
-  "id": "wine-grahams-six-grapes",
-  "category": "wine",
-  "name": "Graham's Six Grapes Reserve Ruby",
-  "style": "port-ruby",
-  "region": "Douro, Portugal",
-  "abv": 20.0,
-  "body": 4,
-  "sweetness": 4,
-  "flavorTags": [
-   "tamno-voce",
-   "kakao",
-   "zacini"
-  ],
-  "additiveStatus": "fortified",
-  "additiveDetail": {
-   "hr": "Fortificirano vinskim destilatom; slatkoca iz zaustavljene fermentacije",
-   "en": "Fortified with grape spirit; sweetness from arrested fermentation"
-  },
-  "additiveSource": "Standard kategorije porto/sherry/madeira",
-  "qualityScore": 7.5,
-  "priceEUR": {
-   "min": 20.0,
-   "max": 27.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Casa za porto, 14-16 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Ruby iz grožđa vintage razreda , šljiva, višnja, čokolada; pun i sladak.",
-   "en": "Ruby from vintage-class grapes , plum, cherry, chocolate; full and sweet."
-  }
- },
- {
-  "id": "wine-henriques-and-henriques-10-y-o-medium-rich",
-  "category": "wine",
-  "name": "Henriques & Henriques 10 Y.O. Medium Rich",
-  "style": "madeira",
-  "region": "Madeira, Portugal",
-  "abv": 19.0,
-  "body": 4,
-  "sweetness": 4,
-  "flavorTags": [
-   "orasasti",
-   "karamela",
-   "suho-voce"
-  ],
-  "additiveStatus": "fortified",
-  "additiveDetail": {
-   "hr": "Fortificirano vinskim destilatom; slatkoca iz zaustavljene fermentacije",
-   "en": "Fortified with grape spirit; sweetness from arrested fermentation"
-  },
-  "additiveSource": "Standard kategorije porto/sherry/madeira",
-  "qualityScore": 7.5,
-  "priceEUR": {
-   "min": 28.0,
-   "max": 40.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Casa za madeira, 14-16 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "H&H medium rich: uravnotežen madeira profil; orasi i karamela. Dobra alternativa",
-   "en": "H&H medium rich: uravnotežen madeira profil; orasi i karamela. Dobra alternativa"
-  }
- },
- {
-  "id": "wine-juv-y-camps-reserva-de-la-familia-brut-nature",
-  "category": "wine",
-  "name": "Juvé y Camps Reserva de la Familia Brut Nature",
-  "style": "sparkling",
-  "region": "Penedes, Španjolska",
-  "abv": 12.0,
-  "body": 2,
-  "sweetness": 1,
-  "flavorTags": [
-   "orasasti",
-   "citrus",
-   "kremasto"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 7.5,
-  "priceEUR": {
-   "min": 12.0,
-   "max": 20.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Dobro ohladjeno, 6-8 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Juvé y Camps Brut Nature: bez dozaže; orasi i citrus. Cava vrijednost uz blagu c",
-   "en": "Juvé y Camps Brut Nature: bez dozaže; orasi i citrus. Cava vrijednost uz blagu c"
-  }
- },
- {
-  "id": "wine-korak-cabernet-sauvignon",
-  "category": "wine",
-  "name": "Korak Cabernet Sauvignon",
-  "style": "red-full",
-  "region": "Plešivica, Hrvatska",
-  "abv": 13.5,
-  "body": 4,
-  "sweetness": 1,
-  "flavorTags": [
-   "tamno-voce",
-   "hrast",
-   "zacini"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 7.5,
-  "priceEUR": {
-   "min": 18.0,
-   "max": 30.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Velika casa, 16-18 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Korak: kontinentalni HR Cabernet; struktura i crveno voće. Domaci flagship.",
-   "en": "Korak: kontinentalni HR Cabernet; struktura i crveno voće. Domaci flagship."
-  }
- },
- {
-  "id": "wine-korak-chardonnay",
-  "category": "wine",
-  "name": "Korak Chardonnay",
-  "style": "white-rich",
-  "region": "Plešivica, Hrvatska",
-  "abv": 13.5,
-  "body": 3,
-  "sweetness": 1,
-  "flavorTags": [
-   "orasasti",
-   "vanilija",
-   "citrus"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 7.5,
-  "priceEUR": {
-   "min": 16.0,
-   "max": 28.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Ohladjeno, 8-10 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Korak barrique Chardonnay: maslac i citrus. Bogatiji bijeli uz Connecticut.",
-   "en": "Korak barrique Chardonnay: maslac i citrus. Bogatiji bijeli uz Connecticut."
-  }
- },
- {
-  "id": "wine-kozlovi-malvazija",
-  "category": "wine",
-  "name": "Kozlović Malvazija",
-  "style": "white-fresh",
-  "region": "Istra, Hrvatska",
-  "abv": 13.0,
-  "body": 2,
-  "sweetness": 1,
-  "flavorTags": [
-   "voce",
-   "citrus",
-   "cvjetno"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 7.5,
-  "priceEUR": {
-   "min": 10.0,
-   "max": 18.0
-  },
-  "priceApprox": true,
-  "shopHR": "Konzum / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Dobro ohladjeno, 6-8 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Kozlović: istarska klasika; breskva i bagrem. Svježina uz blagu cigaru.",
-   "en": "Kozlović: istarska klasika; breskva i bagrem. Svježina uz blagu cigaru."
-  }
- },
- {
-  "id": "wine-krauthaker-gra-evina",
-  "category": "wine",
-  "name": "Krauthaker Graševina",
-  "style": "white-fresh",
-  "region": "Slavonija, Hrvatska",
-  "abv": 12.5,
-  "body": 2,
-  "sweetness": 1,
-  "flavorTags": [
-   "jabuka",
-   "citrus",
-   "mineralno"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 7.5,
-  "priceEUR": {
-   "min": 8.0,
-   "max": 14.0
-  },
-  "priceApprox": true,
-  "shopHR": "Konzum / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Dobro ohladjeno, 6-8 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Krauthaker: standard HR bijelog; jabuka i citrus. Samo uz najblažu cigaru.",
-   "en": "Krauthaker: standard HR bijelog; jabuka i citrus. Samo uz najblažu cigaru."
-  }
- },
- {
-  "id": "wine-louis-jadot-bourgogne-pinot-noir",
-  "category": "wine",
-  "name": "Louis Jadot Bourgogne Pinot Noir",
-  "style": "red-medium",
-  "region": "Burgundija, Francuska",
-  "abv": 13.0,
-  "body": 2,
-  "sweetness": 1,
-  "flavorTags": [
-   "voce",
-   "zemljano",
-   "cvjetno"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 7.5,
-  "priceEUR": {
-   "min": 18.0,
-   "max": 28.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Casa, 15-17 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Jadot regionalni Pinot: crvena trešnja i zemlja. Samo uz blagu Connecticut cigar",
-   "en": "Jadot regionalni Pinot: crvena trešnja i zemlja. Samo uz blagu Connecticut cigar"
-  }
- },
- {
-  "id": "wine-masi-campofiorin",
-  "category": "wine",
-  "name": "Masi Campofiorin",
-  "style": "red-medium",
-  "region": "Veneto, Italija",
-  "abv": 13.5,
-  "body": 3,
-  "sweetness": 2,
-  "flavorTags": [
-   "tamno-voce",
-   "zacini",
-   "voce"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 7.5,
-  "priceEUR": {
-   "min": 12.0,
-   "max": 20.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Casa, 15-17 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Campofiorin: ripasso-stil Masi; trešnja i začini. Lakši ulaz u Valpolicellu uz b",
-   "en": "Campofiorin: ripasso-stil Masi; trešnja i začini. Lakši ulaz u Valpolicellu uz b"
-  }
- },
- {
-  "id": "wine-mato-evi-malvazija",
-  "category": "wine",
-  "name": "Matošević Malvazija",
-  "style": "white-fresh",
-  "region": "Istra, Hrvatska",
-  "abv": 13.0,
-  "body": 2,
-  "sweetness": 1,
-  "flavorTags": [
-   "voce",
-   "mineralno",
-   "citrus"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 7.5,
-  "priceEUR": {
-   "min": 12.0,
-   "max": 20.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Dobro ohladjeno, 6-8 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Matošević: mineralnija malvazija; citrus i kamen. Elegantan HR bijeli.",
-   "en": "Matošević: mineralnija malvazija; citrus i kamen. Elegantan HR bijeli."
-  }
- },
- {
-  "id": "wine-misal-per-uri-brut",
-  "category": "wine",
-  "name": "Misal Peršurić Brut",
-  "style": "sparkling",
-  "region": "Istra, Hrvatska",
-  "abv": 12.0,
-  "body": 2,
-  "sweetness": 1,
-  "flavorTags": [
-   "citrus",
-   "voce",
-   "mineralno"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 7.5,
-  "priceEUR": {
-   "min": 15.0,
-   "max": 24.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Dobro ohladjeno, 6-8 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Misal Brut: prvi HR klasični metoda (Višnjan); svjež citrus. Ulaz u HR pjenušce.",
-   "en": "Misal Brut: prvi HR klasični metoda (Višnjan); svjež citrus. Ulaz u HR pjenušce."
-  }
- },
- {
-  "id": "wine-mo-t-and-chandon-brut-imp-rial",
-  "category": "wine",
-  "name": "Moët & Chandon Brut Impérial",
-  "style": "sparkling",
-  "region": "Champagne, Francuska",
-  "abv": 12.0,
-  "body": 2,
-  "sweetness": 1,
-  "flavorTags": [
-   "citrus",
-   "kremasto",
-   "orasasti"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 7.5,
-  "priceEUR": {
-   "min": 40.0,
-   "max": 55.0
-  },
-  "priceApprox": true,
-  "shopHR": "Siroka dostupnost",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Dobro ohladjeno, 6-8 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Moët Brut Impérial: brioche i citrus; široko dostupan. Tradicija uz blagu dnevnu",
-   "en": "Moët Brut Impérial: brioche i citrus; široko dostupan. Tradicija uz blagu dnevnu"
-  }
- },
- {
-  "id": "wine-muskat-momjanski",
-  "category": "wine",
-  "name": "Muškat momjanski (Kozlović)",
-  "style": "dessert-wine",
-  "region": "Istra, Hrvatska",
-  "abv": 12.0,
-  "body": 3,
-  "sweetness": 4,
-  "flavorTags": [
-   "cvjetno",
-   "med",
-   "voce",
-   "slatko"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 7.5,
-  "priceEUR": {
-   "min": 18.0,
-   "max": 28.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vinoteke / Kozlović webshop",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Ohladjeno, 8-10 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Istarski aromatski dragulj , ruža, med, muškatni orah; slatko ali živo.",
-   "en": "An Istrian aromatic gem , rose, honey, nutmeg; sweet but lively."
-  }
- },
- {
-  "id": "wine-niepoort-ruby-dum",
-  "category": "wine",
-  "name": "Niepoort Ruby Dum",
-  "style": "port-ruby",
-  "region": "Douro, Portugal",
-  "abv": 19.5,
-  "body": 4,
-  "sweetness": 4,
-  "flavorTags": [
-   "tamno-voce",
-   "voce",
-   "zacini"
-  ],
-  "additiveStatus": "fortified",
-  "additiveDetail": {
-   "hr": "Fortificirano vinskim destilatom; slatkoca iz zaustavljene fermentacije",
-   "en": "Fortified with grape spirit; sweetness from arrested fermentation"
-  },
-  "additiveSource": "Standard kategorije porto/sherry/madeira",
-  "qualityScore": 7.5,
-  "priceEUR": {
-   "min": 14.0,
-   "max": 22.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Casa za porto, 14-16 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Niepoort Ruby Dum: moderniji, voćni ruby. Svježiji porto profil uz srednju cigar",
-   "en": "Niepoort Ruby Dum: moderniji, voćni ruby. Svježiji porto profil uz srednju cigar"
-  }
- },
- {
-  "id": "wine-norton-reserva-malbec",
-  "category": "wine",
-  "name": "Norton Reserva Malbec",
-  "style": "red-full",
-  "region": "Mendoza, Argentina",
-  "abv": 14.0,
-  "body": 4,
-  "sweetness": 2,
-  "flavorTags": [
-   "tamno-voce",
-   "hrast",
-   "vanilija"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 7.5,
-  "priceEUR": {
-   "min": 10.0,
-   "max": 18.0
-  },
-  "priceApprox": true,
-  "shopHR": "Konzum / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Velika casa, 16-18 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Norton Reserva: bačveniji Malbec; vanilija i crno voće. Value pairing.",
-   "en": "Norton Reserva: bačveniji Malbec; vanilija i crno voće. Value pairing."
-  }
- },
- {
-  "id": "wine-plan-i-pro-ek",
-  "category": "wine",
-  "name": "Plančić Prošek",
-  "style": "prosek",
-  "region": "Hvar, Hrvatska",
-  "abv": 15.5,
-  "body": 4,
-  "sweetness": 5,
-  "flavorTags": [
-   "med",
-   "suho-voce",
-   "karamela"
-  ],
-  "additiveStatus": "fortified",
-  "additiveDetail": {
-   "hr": "Fortificirano vinskim destilatom; slatkoca iz zaustavljene fermentacije",
-   "en": "Fortified with grape spirit; sweetness from arrested fermentation"
-  },
-  "additiveSource": "Standard kategorije porto/sherry/madeira",
-  "qualityScore": 7.5,
-  "priceEUR": {
-   "min": 22.0,
-   "max": 35.0
-  },
-  "priceApprox": true,
-  "shopHR": "Konzum / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Mala casa, 12-14 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Plančić: bogat hvarski prošek; med i suho voće. HR alternativa uz blagi maduro.",
-   "en": "Plančić: bogat hvarski prošek; med i suho voće. HR alternativa uz blagi maduro."
-  }
- },
- {
-  "id": "wine-rizman-tribidrag",
-  "category": "wine",
-  "name": "Rizman Tribidrag",
-  "style": "red-full",
-  "region": "Dalmacija, Hrvatska",
-  "abv": 14.0,
-  "body": 4,
-  "sweetness": 2,
-  "flavorTags": [
-   "tamno-voce",
-   "zacini",
-   "hrast"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 7.5,
-  "priceEUR": {
-   "min": 20.0,
-   "max": 35.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Velika casa, 16-18 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Rizman Tribidrag: isto sortno ime, bačveniji stil. Punije tijelo uz maduro.",
-   "en": "Rizman Tribidrag: isto sortno ime, bačveniji stil. Punije tijelo uz maduro."
-  }
- },
- {
-  "id": "wine-roxanich-merlot",
-  "category": "wine",
-  "name": "Roxanich Merlot",
-  "style": "red-medium",
-  "region": "Istra, Hrvatska",
-  "abv": 13.5,
-  "body": 3,
-  "sweetness": 1,
-  "flavorTags": [
-   "tamno-voce",
-   "zemljano",
-   "orasasti"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 7.5,
-  "priceEUR": {
-   "min": 25.0,
-   "max": 40.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Casa, 15-17 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Roxanich: duži maceration stil; kompleksniji Merlot. Uz srednju cigaru.",
-   "en": "Roxanich: duži maceration stil; kompleksniji Merlot. Uz srednju cigaru."
-  }
- },
- {
-  "id": "wine-seghesio-sonoma-zinfandel",
-  "category": "wine",
-  "name": "Seghesio Sonoma Zinfandel",
-  "style": "red-full",
-  "region": "California, SAD",
-  "abv": 15.0,
-  "body": 4,
-  "sweetness": 2,
-  "flavorTags": [
-   "tamno-voce",
-   "zacini",
-   "papar"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 7.5,
-  "priceEUR": {
-   "min": 18.0,
-   "max": 28.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Velika casa, 16-18 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Seghesio: pristupačni Sonoma Zin; papar i džem. Lakši CA stil uz cigaru.",
-   "en": "Seghesio: pristupačni Sonoma Zin; papar i džem. Lakši CA stil uz cigaru."
+   "hr": "Zreo tawny — badem, karamela, suha smokva; svilenkasta tekstura.",
+   "en": "Mature tawny — almond, caramel, dried fig; silky texture."
   }
  },
  {
@@ -4398,7 +134,7 @@
    "hr": "Fortificirano vinskim destilatom; slatkoca iz zaustavljene fermentacije",
    "en": "Fortified with grape spirit; sweetness from arrested fermentation"
   },
-  "additiveSource": "Standard kategorije porto/sherry/madeira",
+  "additiveSource": "Standard kategorije porto",
   "qualityScore": 7.5,
   "priceEUR": {
    "min": 20.0,
@@ -4414,8 +150,126 @@
   "cigarHint": null,
   "priceUrl": null,
   "notes": {
-   "hr": "LBV , vintage karakter po pristupačnoj cijeni: tamna višnja, kupina, kakao. Odli",
-   "en": "LBV , vintage character at an accessible price: dark cherry, blackberry, cocoa. Great value with maduro cigars."
+   "hr": "LBV — vintage karakter po pristupačnoj cijeni: tamna višnja, kupina, kakao. Odličan omjer cijene i kvalitete uz maduro cigare.",
+   "en": "LBV — vintage character at an accessible price: dark cherry, blackberry, cocoa. Great value with maduro cigars."
+  }
+ },
+ {
+  "id": "wine-fonseca-bin-27",
+  "category": "wine",
+  "name": "Fonseca Bin No. 27 Reserve Ruby",
+  "style": "port-ruby",
+  "region": "Douro, Portugal",
+  "abv": 20.0,
+  "body": 4,
+  "sweetness": 4,
+  "flavorTags": [
+   "tamno-voce",
+   "kakao",
+   "slatko"
+  ],
+  "additiveStatus": "fortified",
+  "additiveDetail": {
+   "hr": "Fortificirano vinskim destilatom; slatkoca iz zaustavljene fermentacije",
+   "en": "Fortified with grape spirit; sweetness from arrested fermentation"
+  },
+  "additiveSource": "Standard kategorije porto",
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 18.0,
+   "max": 24.0
+  },
+  "priceApprox": true,
+  "shopHR": "Vrutak",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Casa za porto, 14-16 C"
+  },
+  "cigarHint": null,
+  "priceUrl": null,
+  "notes": {
+   "hr": "Bogati reserve ruby — sočno tamno voće i čokolada; pouzdan svakodnevni porto uz cigaru.",
+   "en": "Rich reserve ruby — juicy dark fruit and chocolate; a dependable everyday port with a cigar."
+  }
+ },
+ {
+  "id": "wine-grahams-six-grapes",
+  "category": "wine",
+  "name": "Graham's Six Grapes Reserve Ruby",
+  "style": "port-ruby",
+  "region": "Douro, Portugal",
+  "abv": 20.0,
+  "body": 4,
+  "sweetness": 4,
+  "flavorTags": [
+   "tamno-voce",
+   "kakao",
+   "zacini"
+  ],
+  "additiveStatus": "fortified",
+  "additiveDetail": {
+   "hr": "Fortificirano vinskim destilatom; slatkoca iz zaustavljene fermentacije",
+   "en": "Fortified with grape spirit; sweetness from arrested fermentation"
+  },
+  "additiveSource": "Standard kategorije porto",
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 20.0,
+   "max": 27.0
+  },
+  "priceApprox": true,
+  "shopHR": "Vivat fina vina / vinoteke",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Casa za porto, 14-16 C"
+  },
+  "cigarHint": null,
+  "priceUrl": null,
+  "notes": {
+   "hr": "Ruby iz grožđa vintage razreda — šljiva, višnja, čokolada; pun i sladak.",
+   "en": "Ruby from vintage-class grapes — plum, cherry, chocolate; full and sweet."
+  }
+ },
+ {
+  "id": "wine-vintage-port",
+  "category": "wine",
+  "name": "Vintage Port (Taylor's / Graham's / Dow's)",
+  "style": "port-ruby",
+  "region": "Douro, Portugal",
+  "abv": 20.0,
+  "body": 5,
+  "sweetness": 4,
+  "flavorTags": [
+   "tamno-voce",
+   "kakao",
+   "zacini",
+   "hrast"
+  ],
+  "additiveStatus": "fortified",
+  "additiveDetail": {
+   "hr": "Fortificirano vinskim destilatom; slatkoca iz zaustavljene fermentacije",
+   "en": "Fortified with grape spirit; sweetness from arrested fermentation"
+  },
+  "additiveSource": "Standard kategorije porto",
+  "qualityScore": 9.0,
+  "priceEUR": {
+   "min": 90.0,
+   "max": 180.0
+  },
+  "priceApprox": true,
+  "shopHR": "Vinoteke (Acrobat, Vivat) — po godistu",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Casa za porto, 14-16 C"
+  },
+  "cigarHint": null,
+  "priceUrl": null,
+  "notes": {
+   "hr": "Vrh piramide porta — deklarirana godišta, dekantiranje obavezno. Uz punu cigaru spada među povijesno najslavnije kombinacije.",
+   "en": "The top of the port pyramid — declared vintages, decanting required. With a full cigar it is one of the most storied pairings."
   }
  },
  {
@@ -4434,10 +288,10 @@
   ],
   "additiveStatus": "fortified",
   "additiveDetail": {
-   "hr": "Fortificirano vinskim destilatom; slatkoca iz zaustavljene fermentacije",
-   "en": "Fortified with grape spirit; sweetness from arrested fermentation"
+   "hr": "Fortificirano vinskim destilatom; potpuno suho",
+   "en": "Fortified with grape spirit; fully dry"
   },
-  "additiveSource": "Standard kategorije porto/sherry/madeira",
+  "additiveSource": "Standard kategorije sherry",
   "qualityScore": 7.5,
   "priceEUR": {
    "min": 13.0,
@@ -4448,78 +302,159 @@
   "status": null,
   "pairable": true,
   "serving": {
-   "best": "Casa za sherry, 12-14 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Suhi fino pod florom , slan, mineralan, badem. Osvježavajući kontrast blagoj cig",
-   "en": "Dry fino aged under flor , saline, mineral, almond. A refreshing contrast to a mild cigar."
-  }
- },
- {
-  "id": "wine-villa-sandi-valdobbiadene-prosecco-superiore",
-  "category": "wine",
-  "name": "Villa Sandi Valdobbiadene Prosecco Superiore",
-  "style": "sparkling",
-  "region": "Veneto, Italija",
-  "abv": 11.0,
-  "body": 1,
-  "sweetness": 2,
-  "flavorTags": [
-   "voce",
-   "citrus",
-   "cvjetno"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 7.5,
-  "priceEUR": {
-   "min": 12.0,
-   "max": 18.0
-  },
-  "priceApprox": true,
-  "shopHR": "Vivat fina vina / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
    "best": "Dobro ohladjeno, 6-8 C"
   },
   "cigarHint": null,
   "priceUrl": null,
   "notes": {
-   "hr": "Villa Sandi: čist DOCG stil; kruška i citrus. Aperitiv uz Connecticut.",
-   "en": "Villa Sandi: čist DOCG stil; kruška i citrus. Aperitiv uz Connecticut."
+   "hr": "Suhi fino pod florom — slan, mineralan, badem. Osvježavajući kontrast blagoj cigari.",
+   "en": "Dry fino aged under flor — saline, mineral, almond. A refreshing contrast to a mild cigar."
   }
  },
  {
-  "id": "wine-warre-s-otima-10-y-o-tawny",
+  "id": "wine-lustau-amontillado",
   "category": "wine",
-  "name": "Warre's Otima 10 Y.O. Tawny",
-  "style": "port-tawny",
-  "region": "Douro, Portugal",
-  "abv": 20.0,
+  "name": "Lustau Amontillado Los Arcos",
+  "style": "sherry-dry",
+  "region": "Jerez, Španjolska",
+  "abv": 18.5,
   "body": 3,
-  "sweetness": 4,
+  "sweetness": 2,
   "flavorTags": [
    "orasasti",
-   "karamela",
-   "med"
+   "hrast",
+   "suho-voce"
   ],
   "additiveStatus": "fortified",
   "additiveDetail": {
-   "hr": "Fortificirano vinskim destilatom; slatkoca iz zaustavljene fermentacije",
-   "en": "Fortified with grape spirit; sweetness from arrested fermentation"
+   "hr": "Fortificirano vinskim destilatom; suho",
+   "en": "Fortified with grape spirit; dry"
   },
-  "additiveSource": "Standard kategorije porto/sherry/madeira",
-  "qualityScore": 7.5,
+  "additiveSource": "Standard kategorije sherry",
+  "qualityScore": 8.0,
   "priceEUR": {
-   "min": 25.0,
-   "max": 35.0
+   "min": 18.0,
+   "max": 25.0
+  },
+  "priceApprox": true,
+  "shopHR": "Vinoteke / Miva",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Casa za sherry, 12-14 C"
+  },
+  "cigarHint": null,
+  "priceUrl": null,
+  "notes": {
+   "hr": "Amontillado — lješnjak, duhan, suho drvo; suh i kompleksan. Podcijenjen partner cigari srednje punoće.",
+   "en": "Amontillado — hazelnut, tobacco, dry wood; dry and complex. An underrated partner for a medium cigar."
+  }
+ },
+ {
+  "id": "wine-lustau-oloroso",
+  "category": "wine",
+  "name": "Lustau Oloroso Don Nuno",
+  "style": "sherry-dry",
+  "region": "Jerez, Španjolska",
+  "abv": 20.0,
+  "body": 4,
+  "sweetness": 2,
+  "flavorTags": [
+   "orasasti",
+   "hrast",
+   "suho-voce",
+   "koza"
+  ],
+  "additiveStatus": "fortified",
+  "additiveDetail": {
+   "hr": "Fortificirano vinskim destilatom; suho",
+   "en": "Fortified with grape spirit; dry"
+  },
+  "additiveSource": "Standard kategorije sherry",
+  "qualityScore": 8.0,
+  "priceEUR": {
+   "min": 20.0,
+   "max": 28.0
+  },
+  "priceApprox": true,
+  "shopHR": "Vinoteke / Miva",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Casa za sherry, 12-14 C"
+  },
+  "cigarHint": null,
+  "priceUrl": null,
+  "notes": {
+   "hr": "Oksidativni oloroso — orah, koža, balzamiko; suh, pun i dug. Nosi i punu cigaru.",
+   "en": "Oxidative oloroso — walnut, leather, balsamic; dry, full and long. Stands up to a full cigar."
+  }
+ },
+ {
+  "id": "wine-lustau-px",
+  "category": "wine",
+  "name": "Lustau Pedro Ximenez San Emilio",
+  "style": "sherry-sweet",
+  "region": "Jerez, Španjolska",
+  "abv": 17.0,
+  "body": 5,
+  "sweetness": 5,
+  "flavorTags": [
+   "suho-voce",
+   "melasa",
+   "kava",
+   "slatko"
+  ],
+  "additiveStatus": "fortified",
+  "additiveDetail": {
+   "hr": "Fortificirano; slatkoca iz prosusenog grozdja (PX)",
+   "en": "Fortified; sweetness from sun-dried grapes (PX)"
+  },
+  "additiveSource": "Standard kategorije sherry",
+  "qualityScore": 8.5,
+  "priceEUR": {
+   "min": 22.0,
+   "max": 30.0
+  },
+  "priceApprox": true,
+  "shopHR": "Vinoteke / Miva",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Casa za sherry, 12-14 C"
+  },
+  "cigarHint": null,
+  "priceUrl": null,
+  "notes": {
+   "hr": "PX — grožđice, datulje, kava; gust poput sirupa. Desertni ekstrem koji presijeca i najtamniji dim.",
+   "en": "PX — raisins, dates, coffee; syrup-thick. A dessert extreme that cuts through the darkest smoke."
+  }
+ },
+ {
+  "id": "wine-blandys-madeira-10",
+  "category": "wine",
+  "name": "Blandy's Madeira 10 Y.O. (Bual/Malmsey)",
+  "style": "madeira",
+  "region": "Madeira, Portugal",
+  "abv": 19.0,
+  "body": 4,
+  "sweetness": 4,
+  "flavorTags": [
+   "karamela",
+   "suho-voce",
+   "orasasti",
+   "citrus"
+  ],
+  "additiveStatus": "fortified",
+  "additiveDetail": {
+   "hr": "Fortificirano vinskim destilatom; slatkoca ovisi o sorti (Bual/Malmsey)",
+   "en": "Fortified with grape spirit; sweetness depends on the variety (Bual/Malmsey)"
+  },
+  "additiveSource": "Standard kategorije madeira",
+  "qualityScore": 8.0,
+  "priceEUR": {
+   "min": 30.0,
+   "max": 40.0
   },
   "priceApprox": true,
   "shopHR": "Vinoteke",
@@ -4531,23 +466,64 @@
   "cigarHint": null,
   "priceUrl": null,
   "notes": {
-   "hr": "Warre's Otima: mekani tawny u elegantnoj boci; orasi i med. Lagan ulaz u porto u",
-   "en": "Warre's Otima: mekani tawny u elegantnoj boci; orasi i med. Lagan ulaz u porto u"
+   "hr": "Madeira — karamela, orah i marelica s visokom kiselinom koja čisti nepce između dimova.",
+   "en": "Madeira — caramel, walnut and apricot with high acidity that cleans the palate between puffs."
   }
  },
  {
-  "id": "wine-zlatan-otok-crljenak",
+  "id": "wine-prosek-hvar",
   "category": "wine",
-  "name": "Zlatan Otok Crljenak",
-  "style": "red-full",
-  "region": "Hvar, Hrvatska",
-  "abv": 14.0,
+  "name": "Prošek (Hvar/Dalmacija)",
+  "style": "prosek",
+  "region": "Dalmacija, Hrvatska",
+  "abv": 15.0,
   "body": 4,
+  "sweetness": 5,
+  "flavorTags": [
+   "suho-voce",
+   "med",
+   "karamela",
+   "slatko"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": {
+   "hr": "Prirodna slatkoca iz prosusenog grozdja (passito), bez fortifikacije",
+   "en": "Natural sweetness from dried grapes (passito), no fortification"
+  },
+  "additiveSource": "Tradicionalna metoda",
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 18.0,
+   "max": 35.0
+  },
+  "priceApprox": true,
+  "shopHR": "Vinoteke / OPG (Hvar, Pelješac)",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Mala casa, 10-12 C"
+  },
+  "cigarHint": null,
+  "priceUrl": null,
+  "notes": {
+   "hr": "Dalmatinski desertni klasik od prosušenog grožđa — suha smokva, med, karamela. Domaći odgovor na porto uz cigaru.",
+   "en": "The Dalmatian dessert classic from dried grapes — dried fig, honey, caramel. Croatia's answer to port with a cigar."
+  }
+ },
+ {
+  "id": "wine-dingac",
+  "category": "wine",
+  "name": "Dingač (Skaramuča / Madirazza)",
+  "style": "red-full",
+  "region": "Pelješac, Hrvatska",
+  "abv": 14.5,
+  "body": 5,
   "sweetness": 2,
   "flavorTags": [
    "tamno-voce",
+   "suho-voce",
    "zacini",
-   "voce"
+   "zemljano"
   ],
   "additiveStatus": "clean",
   "additiveDetail": {
@@ -4555,13 +531,12 @@
    "en": "Standard winemaking (sulphites)"
   },
   "additiveSource": "Standard kategorije vino",
-  "qualityScore": 7.5,
+  "qualityScore": 8.5,
   "priceEUR": {
-   "min": 18.0,
-   "max": 32.0
+   "min": 29.0,
+   "max": 52.0
   },
-  "priceApprox": true,
-  "shopHR": "Konzum / vinoteke",
+  "shopHR": "Madirazza webshop / Konzum / vinoteke",
   "status": null,
   "pairable": true,
   "serving": {
@@ -4570,17 +545,17 @@
   "cigarHint": null,
   "priceUrl": null,
   "notes": {
-   "hr": "Crljenak (zinfandelov predak): crveno voće i papar. Zanimljiv HR most prema CA z",
-   "en": "Crljenak (zinfandelov predak): crveno voće i papar. Zanimljiv HR most prema CA z"
+   "hr": "Vrhunski plavac s položaja Dingač — zrela višnja, suha šljiva, mediteranske trave; pun, topao, taninski. Ponos Pelješca.",
+   "en": "Top plavac from the Dingač slope — ripe cherry, dried plum, Mediterranean herbs; full, warm, tannic. The pride of Pelješac."
   }
  },
  {
-  "id": "wine-zlatan-otok-plavac-mali",
+  "id": "wine-plavac-mali",
   "category": "wine",
-  "name": "Zlatan Otok Plavac Mali",
+  "name": "Plavac Mali (Zlatan / kvalitetni)",
   "style": "red-full",
-  "region": "Hvar, Hrvatska",
-  "abv": 14.0,
+  "region": "Dalmacija, Hrvatska",
+  "abv": 13.5,
   "body": 4,
   "sweetness": 2,
   "flavorTags": [
@@ -4596,8 +571,8 @@
   "additiveSource": "Standard kategorije vino",
   "qualityScore": 7.5,
   "priceEUR": {
-   "min": 12.0,
-   "max": 22.0
+   "min": 10.0,
+   "max": 20.0
   },
   "priceApprox": true,
   "shopHR": "Konzum / vinoteke",
@@ -4609,23 +584,696 @@
   "cigarHint": null,
   "priceUrl": null,
   "notes": {
-   "hr": "Zlatan: tipičan hvarski plavac; trešnja, papar, mediteran. Solidan HR crveni uz ",
-   "en": "Zlatan: tipičan hvarski plavac; trešnja, papar, mediteran. Solidan HR crveni uz "
+   "hr": "Dalmatinski standard — tamno voće, začini, mediteranski karakter; pouzdan svakodnevni partner cigari.",
+   "en": "The Dalmatian standard — dark fruit, spice, Mediterranean character; a reliable everyday cigar partner."
   }
  },
  {
-  "id": "wine-kozlovi-merlot",
+  "id": "wine-postup",
   "category": "wine",
-  "name": "Kozlović Merlot",
+  "name": "Postup (Peljesac)",
+  "style": "red-full",
+  "region": "Pelješac, Hrvatska",
+  "abv": 14.0,
+  "body": 4,
+  "sweetness": 2,
+  "flavorTags": [
+   "tamno-voce",
+   "suho-voce",
+   "zacini"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": {
+   "hr": "Standardno vinarstvo (sulfiti)",
+   "en": "Standard winemaking (sulphites)"
+  },
+  "additiveSource": "Standard kategorije vino",
+  "qualityScore": 8.0,
+  "priceEUR": {
+   "min": 18.0,
+   "max": 35.0
+  },
+  "priceApprox": true,
+  "shopHR": "Vinoteke / Konzum",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Velika casa, 16-18 C"
+  },
+  "cigarHint": null,
+  "priceUrl": null,
+  "notes": {
+   "hr": "Drugi veliki pelješki položaj — nešto mekši od Dingača, zrelo tamno voće i suha šljiva.",
+   "en": "Pelješac's other great site — slightly softer than Dingač, ripe dark fruit and dried plum."
+  }
+ },
+ {
+  "id": "wine-babic",
+  "category": "wine",
+  "name": "Babić (Testament / Primosten)",
+  "style": "red-full",
+  "region": "Primošten, Hrvatska",
+  "abv": 14.0,
+  "body": 4,
+  "sweetness": 1,
+  "flavorTags": [
+   "tamno-voce",
+   "zemljano",
+   "mineralno",
+   "zacini"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": {
+   "hr": "Standardno vinarstvo (sulfiti)",
+   "en": "Standard winemaking (sulphites)"
+  },
+  "additiveSource": "Standard kategorije vino",
+  "qualityScore": 8.0,
+  "priceEUR": {
+   "min": 15.0,
+   "max": 25.0
+  },
+  "priceApprox": true,
+  "shopHR": "Vinoteke / Konzum",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Velika casa, 16-18 C"
+  },
+  "cigarHint": null,
+  "priceUrl": null,
+  "notes": {
+   "hr": "Babić s kamenjara — tamno voće, kamen, suha trava; ozbiljna struktura i svježina.",
+   "en": "Babić from the stone fields — dark fruit, stone, dried herbs; serious structure and freshness."
+  }
+ },
+ {
+  "id": "wine-teran",
+  "category": "wine",
+  "name": "Teran (Coronica Gran Teran)",
   "style": "red-medium",
   "region": "Istra, Hrvatska",
   "abv": 13.5,
   "body": 3,
   "sweetness": 1,
   "flavorTags": [
-   "voce",
    "tamno-voce",
+   "zemljano",
+   "mineralno"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": {
+   "hr": "Standardno vinarstvo (sulfiti)",
+   "en": "Standard winemaking (sulphites)"
+  },
+  "additiveSource": "Standard kategorije vino",
+  "qualityScore": 8.0,
+  "priceEUR": {
+   "min": 20.0,
+   "max": 30.0
+  },
+  "priceApprox": true,
+  "shopHR": "Vinoteke / Miva",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Velika casa, 16-18 C"
+  },
+  "cigarHint": null,
+  "priceUrl": null,
+  "notes": {
+   "hr": "Istarski teran ozbiljnog izdanja — divlja kupina, željezo, zemlja; markantna kiselina.",
+   "en": "A serious Istrian teran — wild blackberry, iron, earth; striking acidity."
+  }
+ },
+ {
+  "id": "wine-amarone",
+  "category": "wine",
+  "name": "Amarone della Valpolicella (Masi / Allegrini)",
+  "style": "red-full",
+  "region": "Veneto, Italija",
+  "abv": 15.5,
+  "body": 5,
+  "sweetness": 2,
+  "flavorTags": [
+   "suho-voce",
+   "tamno-voce",
+   "kakao",
+   "zacini"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": {
+   "hr": "Standardno vinarstvo (sulfiti); appassimento (prosuseno grozdje)",
+   "en": "Standard winemaking (sulphites); appassimento (dried grapes)"
+  },
+  "additiveSource": "Standard kategorije vino",
+  "qualityScore": 8.5,
+  "priceEUR": {
+   "min": 45.0,
+   "max": 75.0
+  },
+  "priceApprox": true,
+  "shopHR": "vivat-finavina.hr",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Velika casa, 16-18 C"
+  },
+  "cigarHint": null,
+  "priceUrl": "https://www.vivat-finavina.hr/proizvod/masi-amarone-costasera-della-valpolicella-classico-docg/",
+  "notes": {
+   "hr": "Od prosušenog grožđa — suha višnja, čokolada, začini; baršunasto i moćno (15%+). Među najboljim suhim vinima uz punu cigaru.",
+   "en": "From dried grapes — dried cherry, chocolate, spice; velvety and powerful (15%+). Among the best dry wines for a full cigar."
+  }
+ },
+ {
+  "id": "wine-ripasso",
+  "category": "wine",
+  "name": "Valpolicella Ripasso (Masi / Cesari)",
+  "style": "red-medium",
+  "region": "Veneto, Italija",
+  "abv": 13.5,
+  "body": 3,
+  "sweetness": 2,
+  "flavorTags": [
+   "tamno-voce",
+   "suho-voce",
+   "zacini"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": {
+   "hr": "Standardno vinarstvo (sulfiti)",
+   "en": "Standard winemaking (sulphites)"
+  },
+  "additiveSource": "Standard kategorije vino",
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 18.0,
+   "max": 28.0
+  },
+  "priceApprox": true,
+  "shopHR": "Vrutak / Miva",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Velika casa, 16-18 C"
+  },
+  "cigarHint": null,
+  "priceUrl": null,
+  "notes": {
+   "hr": "'Mali Amarone' — višnja i suho voće s mekim taninima; pristupačniji ulaz u stil.",
+   "en": "The 'baby Amarone' — cherry and dried fruit with soft tannins; an accessible entry to the style."
+  }
+ },
+ {
+  "id": "wine-barolo",
+  "category": "wine",
+  "name": "Barolo DOCG",
+  "style": "red-full",
+  "region": "Piemont, Italija",
+  "abv": 14.0,
+  "body": 4,
+  "sweetness": 1,
+  "flavorTags": [
+   "cvjetno",
+   "tamno-voce",
+   "koza",
+   "zemljano"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": {
+   "hr": "Standardno vinarstvo (sulfiti)",
+   "en": "Standard winemaking (sulphites)"
+  },
+  "additiveSource": "Standard kategorije vino",
+  "qualityScore": 8.5,
+  "priceEUR": {
+   "min": 35.0,
+   "max": 70.0
+  },
+  "priceApprox": true,
+  "shopHR": "Vivat fina vina / vinoteke",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Velika casa, 16-18 C"
+  },
+  "cigarHint": null,
+  "priceUrl": null,
+  "notes": {
+   "hr": "Nebbiolo — ruža, katran, višnja, koža; visoki tanini i kiselina traže cigaru s karakterom.",
+   "en": "Nebbiolo — rose, tar, cherry, leather; high tannin and acidity call for a cigar with character."
+  }
+ },
+ {
+  "id": "wine-brunello",
+  "category": "wine",
+  "name": "Brunello di Montalcino",
+  "style": "red-full",
+  "region": "Toskana, Italija",
+  "abv": 14.0,
+  "body": 4,
+  "sweetness": 1,
+  "flavorTags": [
+   "tamno-voce",
+   "koza",
+   "zemljano",
    "hrast"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": {
+   "hr": "Standardno vinarstvo (sulfiti)",
+   "en": "Standard winemaking (sulphites)"
+  },
+  "additiveSource": "Standard kategorije vino",
+  "qualityScore": 8.5,
+  "priceEUR": {
+   "min": 45.0,
+   "max": 90.0
+  },
+  "priceApprox": true,
+  "shopHR": "Vinoteke",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Velika casa, 16-18 C"
+  },
+  "cigarHint": null,
+  "priceUrl": null,
+  "notes": {
+   "hr": "Sangiovese u najozbiljnijem izdanju — višnja, koža, duhan; elegancija i snaga u ravnoteži.",
+   "en": "Sangiovese at its most serious — cherry, leather, tobacco; elegance and power in balance."
+  }
+ },
+ {
+  "id": "wine-rioja-gran-reserva",
+  "category": "wine",
+  "name": "Rioja Gran Reserva (Faustino I / Muga)",
+  "style": "red-full",
+  "region": "Rioja, Španjolska",
+  "abv": 13.5,
+  "body": 4,
+  "sweetness": 1,
+  "flavorTags": [
+   "suho-voce",
+   "vanilija",
+   "koza",
+   "hrast"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": {
+   "hr": "Standardno vinarstvo (sulfiti)",
+   "en": "Standard winemaking (sulphites)"
+  },
+  "additiveSource": "Standard kategorije vino",
+  "qualityScore": 8.0,
+  "priceEUR": {
+   "min": 25.0,
+   "max": 40.0
+  },
+  "priceApprox": true,
+  "shopHR": "Miva / Vrutak / vinoteke",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Velika casa, 16-18 C"
+  },
+  "cigarHint": null,
+  "priceUrl": null,
+  "notes": {
+   "hr": "Dugo odležan tempranillo — suha šljiva, vanilija od američkog hrasta, koža. Mekan, zreo, cigar-friendly klasik.",
+   "en": "Long-aged tempranillo — dried plum, American-oak vanilla, leather. Soft, mature, a cigar-friendly classic."
+  }
+ },
+ {
+  "id": "wine-primitivo-sessantanni",
+  "category": "wine",
+  "name": "Primitivo di Manduria (San Marzano 60 Sessantanni)",
+  "style": "red-full",
+  "region": "Puglia, Italija",
+  "abv": 14.5,
+  "body": 5,
+  "sweetness": 3,
+  "flavorTags": [
+   "tamno-voce",
+   "suho-voce",
+   "vanilija",
+   "kakao"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": {
+   "hr": "Standardno vinarstvo (sulfiti); zaostali secer daje mekocu",
+   "en": "Standard winemaking (sulphites); residual sugar lends softness"
+  },
+  "additiveSource": "Standard kategorije vino",
+  "qualityScore": 8.0,
+  "priceEUR": {
+   "min": 22.0,
+   "max": 30.0
+  },
+  "priceApprox": true,
+  "shopHR": "Miva / Vrutak",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Velika casa, 16-18 C"
+  },
+  "cigarHint": null,
+  "priceUrl": null,
+  "notes": {
+   "hr": "Sa 60-godišnjih trsova — džem od šljive, vanilija, kakao; polusuho bogatstvo koje odlično ide uz maduro.",
+   "en": "From 60-year-old vines — plum jam, vanilla, cocoa; off-dry richness that loves a maduro."
+  }
+ },
+ {
+  "id": "wine-crljenak",
+  "category": "wine",
+  "name": "Crljenak / Tribidrag (Zlatan, Rizman)",
+  "style": "red-full",
+  "region": "Dalmacija, Hrvatska",
+  "abv": 14.5,
+  "body": 4,
+  "sweetness": 2,
+  "flavorTags": [
+   "tamno-voce",
+   "zacini",
+   "vanilija"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": {
+   "hr": "Standardno vinarstvo (sulfiti)",
+   "en": "Standard winemaking (sulphites)"
+  },
+  "additiveSource": "Standard kategorije vino",
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 18.0,
+   "max": 30.0
+  },
+  "priceApprox": true,
+  "shopHR": "Vinoteke",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Velika casa, 16-18 C"
+  },
+  "cigarHint": null,
+  "priceUrl": null,
+  "notes": {
+   "hr": "Izvorni zinfandel — hrvatski original: kupina, papar, toplo mediteransko voće.",
+   "en": "The original zinfandel — a Croatian original: blackberry, pepper, warm Mediterranean fruit."
+  }
+ },
+ {
+  "id": "wine-cabernet-sauvignon",
+  "category": "wine",
+  "name": "Cabernet Sauvignon (premium, Cile/HR/FR)",
+  "style": "red-full",
+  "region": "Razne regije",
+  "abv": 14.0,
+  "body": 4,
+  "sweetness": 1,
+  "flavorTags": [
+   "tamno-voce",
+   "cedar",
+   "hrast",
+   "zacini"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": {
+   "hr": "Standardno vinarstvo (sulfiti)",
+   "en": "Standard winemaking (sulphites)"
+  },
+  "additiveSource": "Standard kategorije vino",
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 15.0,
+   "max": 35.0
+  },
+  "priceApprox": true,
+  "shopHR": "Siroka dostupnost",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Velika casa, 16-18 C"
+  },
+  "cigarHint": null,
+  "priceUrl": null,
+  "notes": {
+   "hr": "Crni ribiz, cedrovina, duhan — sorta čije drvne note prirodno prate cigaru.",
+   "en": "Blackcurrant, cedar, tobacco — a variety whose woody notes naturally echo a cigar."
+  }
+ },
+ {
+  "id": "wine-malbec-mendoza",
+  "category": "wine",
+  "name": "Malbec Mendoza (Catena / Norton Reserva)",
+  "style": "red-full",
+  "region": "Mendoza, Argentina",
+  "abv": 14.0,
+  "body": 4,
+  "sweetness": 2,
+  "flavorTags": [
+   "tamno-voce",
+   "vanilija",
+   "kakao"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": {
+   "hr": "Standardno vinarstvo (sulfiti)",
+   "en": "Standard winemaking (sulphites)"
+  },
+  "additiveSource": "Standard kategorije vino",
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 15.0,
+   "max": 25.0
+  },
+  "priceApprox": true,
+  "shopHR": "Miva / Vrutak / Konzum",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Velika casa, 16-18 C"
+  },
+  "cigarHint": null,
+  "priceUrl": null,
+  "notes": {
+   "hr": "Sočna kupina i šljiva s čokoladnim finišem — mekani tanini, vrlo pristupačan stil.",
+   "en": "Juicy blackberry and plum with a chocolate finish — soft tannins, a very approachable style."
+  }
+ },
+ {
+  "id": "wine-syrah-shiraz",
+  "category": "wine",
+  "name": "Syrah / Shiraz (Rhone / Barossa)",
+  "style": "red-full",
+  "region": "Rhone, Francuska / Barossa, Australija",
+  "abv": 14.0,
+  "body": 4,
+  "sweetness": 1,
+  "flavorTags": [
+   "tamno-voce",
+   "papar",
+   "dim",
+   "zacini"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": {
+   "hr": "Standardno vinarstvo (sulfiti)",
+   "en": "Standard winemaking (sulphites)"
+  },
+  "additiveSource": "Standard kategorije vino",
+  "qualityScore": 8.0,
+  "priceEUR": {
+   "min": 20.0,
+   "max": 40.0
+  },
+  "priceApprox": true,
+  "shopHR": "Vinoteke / Miva",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Velika casa, 16-18 C"
+  },
+  "cigarHint": null,
+  "priceUrl": null,
+  "notes": {
+   "hr": "Crni papar, kupina, dim — začinski profil koji se nadovezuje na začinsku cigaru.",
+   "en": "Black pepper, blackberry, smoke — a spicy profile that plays off a spicy cigar."
+  }
+ },
+ {
+  "id": "wine-zinfandel",
+  "category": "wine",
+  "name": "Zinfandel (California)",
+  "style": "red-full",
+  "region": "California, SAD",
+  "abv": 14.5,
+  "body": 4,
+  "sweetness": 2,
+  "flavorTags": [
+   "tamno-voce",
+   "zacini",
+   "vanilija",
+   "slatko"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": {
+   "hr": "Standardno vinarstvo (sulfiti)",
+   "en": "Standard winemaking (sulphites)"
+  },
+  "additiveSource": "Standard kategorije vino",
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 20.0,
+   "max": 35.0
+  },
+  "priceApprox": true,
+  "shopHR": "Vinoteke",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Velika casa, 16-18 C"
+  },
+  "cigarHint": null,
+  "priceUrl": null,
+  "notes": {
+   "hr": "Zreo, džemast stil s toplim začinima — bogatstvo koje prati tamne dimove.",
+   "en": "Ripe, jammy style with warm spice — richness that follows dark smoke."
+  }
+ },
+ {
+  "id": "wine-chateauneuf",
+  "category": "wine",
+  "name": "Chateauneuf-du-Pape",
+  "style": "red-full",
+  "region": "Rhone, Francuska",
+  "abv": 14.5,
+  "body": 4,
+  "sweetness": 1,
+  "flavorTags": [
+   "tamno-voce",
+   "zacini",
+   "zemljano",
+   "koza"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": {
+   "hr": "Standardno vinarstvo (sulfiti)",
+   "en": "Standard winemaking (sulphites)"
+  },
+  "additiveSource": "Standard kategorije vino",
+  "qualityScore": 8.5,
+  "priceEUR": {
+   "min": 40.0,
+   "max": 70.0
+  },
+  "priceApprox": true,
+  "shopHR": "Vivat fina vina / vinoteke",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Velika casa, 16-18 C"
+  },
+  "cigarHint": null,
+  "priceUrl": null,
+  "notes": {
+   "hr": "Grenache blend s juga Rhone — garrigue, zrela šljiva, koža; toplina i dubina.",
+   "en": "A southern Rhône grenache blend — garrigue, ripe plum, leather; warmth and depth."
+  }
+ },
+ {
+  "id": "wine-chianti-classico",
+  "category": "wine",
+  "name": "Chianti Classico Riserva",
+  "style": "red-medium",
+  "region": "Toskana, Italija",
+  "abv": 13.5,
+  "body": 3,
+  "sweetness": 1,
+  "flavorTags": [
+   "voce",
+   "koza",
+   "zemljano"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": {
+   "hr": "Standardno vinarstvo (sulfiti)",
+   "en": "Standard winemaking (sulphites)"
+  },
+  "additiveSource": "Standard kategorije vino",
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 18.0,
+   "max": 30.0
+  },
+  "priceApprox": true,
+  "shopHR": "Miva / Vrutak / vinoteke",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Velika casa, 16-18 C"
+  },
+  "cigarHint": null,
+  "priceUrl": null,
+  "notes": {
+   "hr": "Sangiovese — višnja, koža, suha trava; kiselina drži nepce svježim.",
+   "en": "Sangiovese — cherry, leather, dried herbs; acidity keeps the palate fresh."
+  }
+ },
+ {
+  "id": "wine-pinot-noir",
+  "category": "wine",
+  "name": "Pinot Noir (Bourgogne / HR)",
+  "style": "red-medium",
+  "region": "Burgundija, Francuska / Hrvatska",
+  "abv": 13.0,
+  "body": 2,
+  "sweetness": 1,
+  "flavorTags": [
+   "voce",
+   "cvjetno",
+   "zemljano"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": {
+   "hr": "Standardno vinarstvo (sulfiti)",
+   "en": "Standard winemaking (sulphites)"
+  },
+  "additiveSource": "Standard kategorije vino",
+  "qualityScore": 8.0,
+  "priceEUR": {
+   "min": 20.0,
+   "max": 45.0
+  },
+  "priceApprox": true,
+  "shopHR": "Vinoteke",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Blago ohladjeno, 12-14 C"
+  },
+  "cigarHint": null,
+  "priceUrl": null,
+  "notes": {
+   "hr": "Malina, jagoda, šumsko tlo — delikatan; traži blagu cigaru da ga ne pregazi.",
+   "en": "Raspberry, strawberry, forest floor — delicate; needs a mild cigar so it isn't overpowered."
+  }
+ },
+ {
+  "id": "wine-merlot-istra",
+  "category": "wine",
+  "name": "Merlot (Istra / Slavonija)",
+  "style": "red-medium",
+  "region": "Hrvatska",
+  "abv": 13.5,
+  "body": 3,
+  "sweetness": 1,
+  "flavorTags": [
+   "tamno-voce",
+   "voce",
+   "kakao"
   ],
   "additiveStatus": "clean",
   "additiveDetail": {
@@ -4635,7 +1283,7 @@
   "additiveSource": "Standard kategorije vino",
   "qualityScore": 7.0,
   "priceEUR": {
-   "min": 12.0,
+   "min": 10.0,
    "max": 20.0
   },
   "priceApprox": true,
@@ -4643,28 +1291,28 @@
   "status": null,
   "pairable": true,
   "serving": {
-   "best": "Casa, 15-17 C"
+   "best": "Velika casa, 16-18 C"
   },
   "cigarHint": null,
   "priceUrl": null,
   "notes": {
-   "hr": "Kozlović Merlot: meko voće i blagi hrast. Svakodnevni istarski crveni.",
-   "en": "Kozlović Merlot: meko voće i blagi hrast. Svakodnevni istarski crveni."
+   "hr": "Mekan, okrugao, šljiva i kakao — pristupačan crni za opuštenu kombinaciju.",
+   "en": "Soft, round, plum and cocoa — an approachable red for a relaxed pairing."
   }
  },
  {
-  "id": "wine-krauthaker-frankovka",
+  "id": "wine-frankovka",
   "category": "wine",
-  "name": "Krauthaker Frankovka",
+  "name": "Frankovka (Slavonija / Feričanci)",
   "style": "red-medium",
   "region": "Slavonija, Hrvatska",
-  "abv": 13.0,
-  "body": 3,
+  "abv": 12.5,
+  "body": 2,
   "sweetness": 1,
   "flavorTags": [
    "voce",
    "zacini",
-   "papar"
+   "mineralno"
   ],
   "additiveStatus": "clean",
   "additiveDetail": {
@@ -4675,26 +1323,464 @@
   "qualityScore": 7.0,
   "priceEUR": {
    "min": 8.0,
-   "max": 14.0
+   "max": 15.0
   },
   "priceApprox": true,
   "shopHR": "Konzum / vinoteke",
   "status": null,
   "pairable": true,
   "serving": {
-   "best": "Casa, 15-17 C"
+   "best": "Blago ohladjeno, 12-14 C"
   },
   "cigarHint": null,
   "priceUrl": null,
   "notes": {
-   "hr": "Krauthaker Frankovka: papar i crveno voće. Lagani kontinentalni pairing.",
-   "en": "Krauthaker Frankovka: papar i crveno voće. Lagani kontinentalni pairing."
+   "hr": "Svježa višnja i papar; lagana i pitka — uz blagu jutarnju cigaru.",
+   "en": "Fresh cherry and pepper; light and drinkable — for a mild morning cigar."
   }
  },
  {
-  "id": "wine-oremus-tokaji-szamorodni-des",
+  "id": "wine-grasevina",
   "category": "wine",
-  "name": "Oremus Tokaji Szamorodni Édes",
+  "name": "Graševina (Krauthaker / Enjingi)",
+  "style": "white-fresh",
+  "region": "Slavonija, Hrvatska",
+  "abv": 12.5,
+  "body": 2,
+  "sweetness": 1,
+  "flavorTags": [
+   "voce",
+   "citrus",
+   "cvjetno"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": {
+   "hr": "Standardno vinarstvo (sulfiti)",
+   "en": "Standard winemaking (sulphites)"
+  },
+  "additiveSource": "Standard kategorije vino",
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 8.0,
+   "max": 15.0
+  },
+  "priceApprox": true,
+  "shopHR": "Konzum / vinoteke",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Ohladjeno, 8-10 C"
+  },
+  "cigarHint": null,
+  "priceUrl": null,
+  "notes": {
+   "hr": "Hrvatski bijeli standard — jabuka, citrus, cvijet; čist i svjež.",
+   "en": "Croatia's white standard — apple, citrus, blossom; clean and fresh."
+  }
+ },
+ {
+  "id": "wine-posip",
+  "category": "wine",
+  "name": "Pošip (Stina / Krajančić)",
+  "style": "white-rich",
+  "region": "Korčula/Brač, Hrvatska",
+  "abv": 13.5,
+  "body": 3,
+  "sweetness": 1,
+  "flavorTags": [
+   "voce",
+   "med",
+   "mineralno"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": {
+   "hr": "Standardno vinarstvo (sulfiti)",
+   "en": "Standard winemaking (sulphites)"
+  },
+  "additiveSource": "Standard kategorije vino",
+  "qualityScore": 8.0,
+  "priceEUR": {
+   "min": 15.0,
+   "max": 25.0
+  },
+  "priceApprox": true,
+  "shopHR": "Vinoteke / Konzum",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Ohladjeno, 8-10 C"
+  },
+  "cigarHint": null,
+  "priceUrl": null,
+  "notes": {
+   "hr": "Puniji dalmatinski bijeli — zrela kruška, med, slana mineralnost.",
+   "en": "A fuller Dalmatian white — ripe pear, honey, saline minerality."
+  }
+ },
+ {
+  "id": "wine-malvazija",
+  "category": "wine",
+  "name": "Malvazija istarska (Kozlović / Matošević)",
+  "style": "white-fresh",
+  "region": "Istra, Hrvatska",
+  "abv": 13.0,
+  "body": 2,
+  "sweetness": 1,
+  "flavorTags": [
+   "voce",
+   "cvjetno",
+   "mineralno"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": {
+   "hr": "Standardno vinarstvo (sulfiti)",
+   "en": "Standard winemaking (sulphites)"
+  },
+  "additiveSource": "Standard kategorije vino",
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 10.0,
+   "max": 18.0
+  },
+  "priceApprox": true,
+  "shopHR": "Konzum / vinoteke",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Ohladjeno, 8-10 C"
+  },
+  "cigarHint": null,
+  "priceUrl": null,
+  "notes": {
+   "hr": "Istarska klasika — bijela breskva, bagrem, lagana gorčina badema na kraju.",
+   "en": "The Istrian classic — white peach, acacia, a light almond bitterness on the finish."
+  }
+ },
+ {
+  "id": "wine-chardonnay-barrique",
+  "category": "wine",
+  "name": "Chardonnay barrique (HR / Bourgogne)",
+  "style": "white-rich",
+  "region": "Hrvatska / Francuska",
+  "abv": 13.5,
+  "body": 3,
+  "sweetness": 1,
+  "flavorTags": [
+   "vanilija",
+   "kremasto",
+   "voce",
+   "hrast"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": {
+   "hr": "Standardno vinarstvo (sulfiti); barrique dozrijevanje",
+   "en": "Standard winemaking (sulphites); barrique maturation"
+  },
+  "additiveSource": "Standard kategorije vino",
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 18.0,
+   "max": 40.0
+  },
+  "priceApprox": true,
+  "shopHR": "Vinoteke",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Blago ohladjeno, 12-14 C"
+  },
+  "cigarHint": null,
+  "priceUrl": null,
+  "notes": {
+   "hr": "Maslac, vanilija, pečena jabuka — kremasta tekstura lijepo prati kremasti dim Connecticuta.",
+   "en": "Butter, vanilla, baked apple — a creamy texture that mirrors Connecticut's creamy smoke."
+  }
+ },
+ {
+  "id": "wine-riesling-mosel",
+  "category": "wine",
+  "name": "Riesling Kabinett (Mosel)",
+  "style": "white-fresh",
+  "region": "Mosel, Njemačka",
+  "abv": 9.5,
+  "body": 2,
+  "sweetness": 3,
+  "flavorTags": [
+   "citrus",
+   "jabuka",
+   "mineralno",
+   "med"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": {
+   "hr": "Standardno vinarstvo (sulfiti); prirodni zaostali secer",
+   "en": "Standard winemaking (sulphites); natural residual sugar"
+  },
+  "additiveSource": "Standard kategorije vino",
+  "qualityScore": 8.0,
+  "priceEUR": {
+   "min": 15.0,
+   "max": 25.0
+  },
+  "priceApprox": true,
+  "shopHR": "Vinoteke",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Dobro ohladjeno, 6-8 C"
+  },
+  "cigarHint": null,
+  "priceUrl": null,
+  "notes": {
+   "hr": "Limeta, zelena jabuka, škriljevac uz nježnu prirodnu slatkoću i nizak alkohol.",
+   "en": "Lime, green apple, slate with gentle natural sweetness and low alcohol."
+  }
+ },
+ {
+  "id": "wine-champagne-brut",
+  "category": "wine",
+  "name": "Champagne Brut (Moët / Veuve Clicquot)",
+  "style": "sparkling",
+  "region": "Champagne, Francuska",
+  "abv": 12.0,
+  "body": 2,
+  "sweetness": 1,
+  "flavorTags": [
+   "citrus",
+   "kremasto",
+   "orasasti",
+   "mineralno"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": {
+   "hr": "Standardno vinarstvo (sulfiti); dozaza secera u brut razini (<12 g/L)",
+   "en": "Standard winemaking (sulphites); sugar dosage at brut level (<12 g/L)"
+  },
+  "additiveSource": "Standard kategorije champagne",
+  "qualityScore": 8.0,
+  "priceEUR": {
+   "min": 45.0,
+   "max": 65.0
+  },
+  "priceApprox": true,
+  "shopHR": "Siroka dostupnost",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Dobro ohladjeno, 6-8 C"
+  },
+  "cigarHint": null,
+  "priceUrl": null,
+  "notes": {
+   "hr": "Brioche, citrus, fine perlice — mjehurići čiste nepce; tradicija uz blagu jutarnju cigaru.",
+   "en": "Brioche, citrus, fine bubbles — the mousse cleanses the palate; a tradition with a mild daytime cigar."
+  }
+ },
+ {
+  "id": "wine-prosecco-docg",
+  "category": "wine",
+  "name": "Valdobbiadene Prosecco Superiore DOCG (Valdo / Villa Sandi)",
+  "style": "sparkling",
+  "region": "Veneto, Italija",
+  "abv": 11.0,
+  "body": 1,
+  "sweetness": 2,
+  "flavorTags": [
+   "voce",
+   "cvjetno",
+   "citrus"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": {
+   "hr": "Standardno vinarstvo (sulfiti); brut/extra dry dozaza",
+   "en": "Standard winemaking (sulphites); brut/extra dry dosage"
+  },
+  "additiveSource": "Standard kategorije pjenusac",
+  "qualityScore": 7.0,
+  "priceEUR": {
+   "min": 13.0,
+   "max": 18.0
+  },
+  "priceApprox": true,
+  "shopHR": "Konzum / Miva / vinoteke",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Dobro ohladjeno, 6-8 C"
+  },
+  "cigarHint": null,
+  "priceUrl": null,
+  "notes": {
+   "hr": "Ulazna DOCG razina s brežuljaka Valdobbiadenea — kruška, cvijet, lagane perlice; pouzdan aperitiv uz najblaže cigare.",
+   "en": "Entry DOCG level from the Valdobbiadene hills — pear, blossom, light bubbles; a dependable aperitif with the mildest cigars."
+  }
+ },
+ {
+  "id": "wine-tokaji-aszu-5",
+  "category": "wine",
+  "name": "Tokaji Aszú 5 Puttonyos",
+  "style": "dessert-wine",
+  "region": "Tokaj, Mađarska",
+  "abv": 11.0,
+  "body": 4,
+  "sweetness": 5,
+  "flavorTags": [
+   "med",
+   "suho-voce",
+   "citrus",
+   "slatko"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": {
+   "hr": "Prirodna slatkoca iz botritiziranog grozdja",
+   "en": "Natural sweetness from botrytised grapes"
+  },
+  "additiveSource": "Standard kategorije aszu",
+  "qualityScore": 8.5,
+  "priceEUR": {
+   "min": 35.0,
+   "max": 55.0
+  },
+  "priceApprox": true,
+  "shopHR": "Vinoteke",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Ohladjeno, 8-10 C"
+  },
+  "cigarHint": null,
+  "priceUrl": null,
+  "notes": {
+   "hr": "Botritis klasik — med, marelica, šafran; raskošna slatkoća s električnom kiselinom.",
+   "en": "The botrytis classic — honey, apricot, saffron; opulent sweetness with electric acidity."
+  }
+ },
+ {
+  "id": "wine-tokaji-aszu-6",
+  "category": "wine",
+  "name": "Tokaji Aszú 6 Puttonyos",
+  "style": "dessert-wine",
+  "region": "Tokaj, Mađarska",
+  "abv": 10.5,
+  "body": 5,
+  "sweetness": 5,
+  "flavorTags": [
+   "med",
+   "suho-voce",
+   "citrus",
+   "karamela",
+   "slatko"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": {
+   "hr": "Prirodna slatkoca iz botritiziranog grozdja",
+   "en": "Natural sweetness from botrytised grapes"
+  },
+  "additiveSource": "Standard kategorije aszu",
+  "qualityScore": 9.0,
+  "priceEUR": {
+   "min": 50.0,
+   "max": 90.0
+  },
+  "priceApprox": true,
+  "shopHR": "Vinoteke",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Ohladjeno, 8-10 C"
+  },
+  "cigarHint": null,
+  "priceUrl": null,
+  "notes": {
+   "hr": "Gušći i bogatiji od 5 puttonyosa — med, datule, naranča, šafran; dugi završetak.",
+   "en": "Thicker and richer than 5 puttonyos — honey, dates, orange, saffron; long finish."
+  }
+ },
+ {
+  "id": "wine-tokaji-aszu-3",
+  "category": "wine",
+  "name": "Tokaji Aszú 3 Puttonyos",
+  "style": "dessert-wine",
+  "region": "Tokaj, Mađarska",
+  "abv": 12.0,
+  "body": 3,
+  "sweetness": 4,
+  "flavorTags": [
+   "med",
+   "citrus",
+   "voce",
+   "cvjetno"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": {
+   "hr": "Prirodna slatkoca iz botritiziranog grozdja",
+   "en": "Natural sweetness from botrytised grapes"
+  },
+  "additiveSource": "Standard kategorije aszu",
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 18.0,
+   "max": 30.0
+  },
+  "priceApprox": true,
+  "shopHR": "Vinoteke",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Ohladjeno, 8-10 C"
+  },
+  "cigarHint": null,
+  "priceUrl": null,
+  "notes": {
+   "hr": "Najlakša aszu kategorija — cvjetna, svježa, s umjerenom slatkoćom i živom kiselinom.",
+   "en": "The lightest aszú category — floral, fresh, with moderate sweetness and lively acidity."
+  }
+ },
+ {
+  "id": "wine-tokaji-essencia",
+  "category": "wine",
+  "name": "Tokaji Essencia",
+  "style": "dessert-wine",
+  "region": "Tokaj, Mađarska",
+  "abv": 5.0,
+  "body": 5,
+  "sweetness": 5,
+  "flavorTags": [
+   "med",
+   "suho-voce",
+   "karamela",
+   "citrus",
+   "slatko"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": {
+   "hr": "Čisti sok botritiziranog groždja, bez dodanog šećera",
+   "en": "Pure free-run juice of botrytised grapes, no added sugar"
+  },
+  "additiveSource": "Standard kategorije essencia",
+  "qualityScore": 9.5,
+  "priceEUR": {
+   "min": 150.0,
+   "max": 500.0
+  },
+  "priceApprox": true,
+  "shopHR": "Rijetko u HR; specijalist vinoteke",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Mala casa, 10-12 C"
+  },
+  "cigarHint": null,
+  "priceUrl": null,
+  "notes": {
+   "hr": "Najrjeđe i najskuplje vino Tokaja — sirupasta konzistencija, 450+ g/L šećera. Med, ružina latice, suho voće.",
+   "en": "The rarest and most precious Tokaj wine — syrupy texture, 450+ g/L sugar. Honey, rose petals, dried fruit."
+  }
+ },
+ {
+  "id": "wine-tokaji-szamorodni-edes",
+  "category": "wine",
+  "name": "Tokaji Szamorodni Édes (slatki)",
   "style": "dessert-wine",
   "region": "Tokaj, Mađarska",
   "abv": 13.0,
@@ -4708,10 +1794,10 @@
   ],
   "additiveStatus": "clean",
   "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
+   "hr": "Prirodna slatkoca iz mješavine botritiziranog i zdravog groždja",
+   "en": "Natural sweetness from a mix of botrytised and healthy grapes"
   },
-  "additiveSource": "Standard kategorije vino",
+  "additiveSource": "Standard kategorije szamorodni",
   "qualityScore": 7.0,
   "priceEUR": {
    "min": 12.0,
@@ -4727,124 +1813,128 @@
   "cigarHint": null,
   "priceUrl": null,
   "notes": {
-   "hr": "Pristupačniji od aszúa , grozdje se bere neovisno o botritisu, mješavina daje ka",
-   "en": "Pristupačniji od aszúa , grozdje se bere neovisno o botritisu, mješavina daje ka"
+   "hr": "Pristupačniji od aszúa — grozdje se bere neovisno o botritisu, mješavina daje karakter.",
+   "en": "More approachable than aszú — grapes harvested regardless of botrytis, the blend gives character."
   }
  },
  {
-  "id": "wine-valdo-valdobbiadene-prosecco-superiore-docg",
+  "id": "wine-tokaji-furmint-dry",
   "category": "wine",
-  "name": "Valdo Valdobbiadene Prosecco Superiore DOCG",
-  "style": "sparkling",
-  "region": "Veneto, Italija",
-  "abv": 11.0,
-  "body": 1,
-  "sweetness": 2,
-  "flavorTags": [
-   "voce",
-   "cvjetno",
-   "citrus"
-  ],
-  "additiveStatus": "clean",
-  "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
-  },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 7.0,
-  "priceEUR": {
-   "min": 10.0,
-   "max": 16.0
-  },
-  "priceApprox": true,
-  "shopHR": "Konzum / vinoteke",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "best": "Dobro ohladjeno, 6-8 C"
-  },
-  "cigarHint": null,
-  "priceUrl": null,
-  "notes": {
-   "hr": "Valdo DOCG: jabuka i cvijet; lagani prosecco. Samo uz najblažu cigaru.",
-   "en": "Valdo DOCG: jabuka i cvijet; lagani prosecco. Samo uz najblažu cigaru."
-  }
- },
- {
-  "id": "wine-belje-frankovka",
-  "category": "wine",
-  "name": "Belje Frankovka",
-  "style": "red-medium",
-  "region": "Baranja, Hrvatska",
-  "abv": 12.5,
+  "name": "Tokaji Furmint (suhi)",
+  "style": "white-rich",
+  "region": "Tokaj, Mađarska",
+  "abv": 13.0,
   "body": 3,
   "sweetness": 1,
   "flavorTags": [
-   "voce",
-   "zacini"
+   "citrus",
+   "mineralno",
+   "jabuka",
+   "cvjetno"
   ],
   "additiveStatus": "clean",
   "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
+   "hr": "Standardna vinifikacija",
+   "en": "Standard vinification"
   },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 6.5,
+  "additiveSource": "Standard",
+  "qualityScore": 7.5,
   "priceEUR": {
-   "min": 6.0,
-   "max": 12.0
+   "min": 10.0,
+   "max": 20.0
   },
   "priceApprox": true,
-  "shopHR": "Konzum / vinoteke",
+  "shopHR": "Vinoteke",
   "status": null,
   "pairable": true,
   "serving": {
-   "best": "Casa, 15-17 C"
+   "best": "Ohladjeno, 8-10 C"
   },
   "cigarHint": null,
   "priceUrl": null,
   "notes": {
-   "hr": "Belje: široko dostupna frankovka; svježe voće. Ulazni HR crveni.",
-   "en": "Belje: široko dostupna frankovka; svježe voće. Ulazni HR crveni."
+   "hr": "Suhi furmint iz Tokaja — vulkanska mineralnost, jabuka, limun, bijeli cvijet. Odličan aperitiv.",
+   "en": "Dry Furmint from Tokaj — volcanic minerality, apple, lemon, white blossom. Excellent as an aperitif."
   }
  },
  {
-  "id": "wine-bottega-gold",
+  "id": "wine-sauternes",
   "category": "wine",
-  "name": "Bottega Gold Prosecco DOC Brut",
-  "style": "sparkling",
-  "region": "Veneto, Italija",
-  "abv": 11.0,
-  "body": 1,
-  "sweetness": 2,
+  "name": "Sauternes",
+  "style": "dessert-wine",
+  "region": "Bordeaux, Francuska",
+  "abv": 13.5,
+  "body": 4,
+  "sweetness": 5,
   "flavorTags": [
-   "voce",
-   "cvjetno",
-   "citrus"
+   "med",
+   "suho-voce",
+   "vanilija",
+   "slatko"
   ],
   "additiveStatus": "clean",
   "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
+   "hr": "Prirodna slatkoca iz botritiziranog grozdja",
+   "en": "Natural sweetness from botrytised grapes"
   },
-  "additiveSource": "Standard kategorije vino",
-  "qualityScore": 6.5,
+  "additiveSource": "Standard kategorije sauternes",
+  "qualityScore": 8.0,
   "priceEUR": {
-   "min": 22.0,
-   "max": 28.0
+   "min": 25.0,
+   "max": 45.0
   },
   "priceApprox": true,
-  "shopHR": "Miva / duty free / vinoteke",
+  "shopHR": "Vinoteke",
   "status": null,
   "pairable": true,
   "serving": {
-   "best": "Dobro ohladjeno, 6-8 C"
+   "best": "Ohladjeno, 8-10 C"
   },
   "cigarHint": null,
   "priceUrl": null,
   "notes": {
-   "hr": "Prepoznatljiva zlatna boca; korektan brut voćnog profila , dio cijene je ambalaž",
-   "en": "The recognizable gold bottle; a decent fruity brut , part of the price is the packaging, noted for information."
+   "hr": "Med, kandirana naranča, vanilija — bogata slatkoća uz dovoljno svježine.",
+   "en": "Honey, candied orange, vanilla — rich sweetness with enough freshness."
+  }
+ },
+ {
+  "id": "wine-muskat-momjanski",
+  "category": "wine",
+  "name": "Muškat momjanski (Kozlović)",
+  "style": "dessert-wine",
+  "region": "Istra, Hrvatska",
+  "abv": 12.0,
+  "body": 3,
+  "sweetness": 4,
+  "flavorTags": [
+   "cvjetno",
+   "med",
+   "voce",
+   "slatko"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": {
+   "hr": "Prirodna slatkoca (kasna berba)",
+   "en": "Natural sweetness (late harvest)"
+  },
+  "additiveSource": "Standard kategorije vino",
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 18.0,
+   "max": 28.0
+  },
+  "priceApprox": true,
+  "shopHR": "Vinoteke / Kozlović webshop",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Ohladjeno, 8-10 C"
+  },
+  "cigarHint": null,
+  "priceUrl": null,
+  "notes": {
+   "hr": "Istarski aromatski dragulj — ruža, med, muškatni orah; slatko ali živo.",
+   "en": "An Istrian aromatic gem — rose, honey, nutmeg; sweet but lively."
   }
  },
  {
@@ -4863,10 +1953,10 @@
   ],
   "additiveStatus": "clean",
   "additiveDetail": {
-   "hr": "Standardno vinarstvo (sulfiti)",
-   "en": "Standard winemaking (sulphites)"
+   "hr": "Standardno vinarstvo (sulfiti); brut dozaza",
+   "en": "Standard winemaking (sulphites); brut dosage"
   },
-  "additiveSource": "Standard kategorije vino",
+  "additiveSource": "Standard kategorije pjenusac",
   "qualityScore": 6.5,
   "priceEUR": {
    "min": 11.0,
@@ -4882,8 +1972,282 @@
   "cigarHint": null,
   "priceUrl": null,
   "notes": {
-   "hr": "Najrasireniji prosecco u HR trgovinama , jednostavan, voćan, svjež; ulaz u kateg",
-   "en": "The most widely available prosecco in Croatian stores , simple, fruity, fresh; the category entry point."
+   "hr": "Najrasireniji prosecco u HR trgovinama — jednostavan, voćan, svjež; ulaz u kategoriju.",
+   "en": "The most widely available prosecco in Croatian stores — simple, fruity, fresh; the category entry point."
+  }
+ },
+ {
+  "id": "wine-nino-franco-rustico",
+  "category": "wine",
+  "name": "Nino Franco Rustico Valdobbiadene DOCG",
+  "style": "sparkling",
+  "region": "Veneto, Italija",
+  "abv": 11.0,
+  "body": 2,
+  "sweetness": 2,
+  "flavorTags": [
+   "voce",
+   "cvjetno",
+   "mineralno"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": {
+   "hr": "Standardno vinarstvo (sulfiti); brut dozaza",
+   "en": "Standard winemaking (sulphites); brut dosage"
+  },
+  "additiveSource": "Standard kategorije pjenusac",
+  "qualityScore": 8.0,
+  "priceEUR": {
+   "min": 20.0,
+   "max": 26.0
+  },
+  "priceApprox": true,
+  "shopHR": "Vinoteke",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Dobro ohladjeno, 6-8 C"
+  },
+  "cigarHint": null,
+  "priceUrl": null,
+  "notes": {
+   "hr": "Referentna kuća Valdobbiadenea — zrela jabuka, glicinija, fina perlica; prosecco koji se ozbiljno shvaća.",
+   "en": "The benchmark Valdobbiadene house — ripe apple, wisteria, fine mousse; prosecco taken seriously."
+  }
+ },
+ {
+  "id": "wine-bottega-gold",
+  "category": "wine",
+  "name": "Bottega Gold Prosecco DOC Brut",
+  "style": "sparkling",
+  "region": "Veneto, Italija",
+  "abv": 11.0,
+  "body": 1,
+  "sweetness": 2,
+  "flavorTags": [
+   "voce",
+   "cvjetno",
+   "citrus"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": {
+   "hr": "Standardno vinarstvo (sulfiti); brut dozaza",
+   "en": "Standard winemaking (sulphites); brut dosage"
+  },
+  "additiveSource": "Standard kategorije pjenusac",
+  "qualityScore": 6.5,
+  "priceEUR": {
+   "min": 22.0,
+   "max": 28.0
+  },
+  "priceApprox": true,
+  "shopHR": "Miva / duty free / vinoteke",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Dobro ohladjeno, 6-8 C"
+  },
+  "cigarHint": null,
+  "priceUrl": null,
+  "notes": {
+   "hr": "Prepoznatljiva zlatna boca; korektan brut voćnog profila — dio cijene je ambalaža, navodimo radi informacije.",
+   "en": "The recognizable gold bottle; a decent fruity brut — part of the price is the packaging, noted for information."
+  }
+ },
+ {
+  "id": "wine-cartizze",
+  "category": "wine",
+  "name": "Valdobbiadene Superiore di Cartizze DOCG (Villa Sandi / Bisol)",
+  "style": "sparkling",
+  "region": "Veneto, Italija",
+  "abv": 11.5,
+  "body": 2,
+  "sweetness": 3,
+  "flavorTags": [
+   "voce",
+   "cvjetno",
+   "med"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": {
+   "hr": "Standardno vinarstvo (sulfiti); brut dozaza",
+   "en": "Standard winemaking (sulphites); brut dosage"
+  },
+  "additiveSource": "Standard kategorije pjenusac",
+  "qualityScore": 8.5,
+  "priceEUR": {
+   "min": 35.0,
+   "max": 48.0
+  },
+  "priceApprox": true,
+  "shopHR": "Vinoteke",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Dobro ohladjeno, 6-8 C"
+  },
+  "cigarHint": null,
+  "priceUrl": null,
+  "notes": {
+   "hr": "Vrh prosecco piramide — grand cru brežuljak Cartizze: kremasta perlica, breskva, med. Najozbiljniji izraz sorte glera.",
+   "en": "The top of the prosecco pyramid — the Cartizze grand cru hill: creamy mousse, peach, honey. Glera at its most serious."
+  }
+ },
+ {
+  "id": "wine-franciacorta-ca-del-bosco",
+  "category": "wine",
+  "name": "Franciacorta Ca' del Bosco Cuvée Prestige",
+  "style": "sparkling",
+  "region": "Lombardija, Italija",
+  "abv": 12.5,
+  "body": 2,
+  "sweetness": 1,
+  "flavorTags": [
+   "kremasto",
+   "orasasti",
+   "citrus",
+   "mineralno"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": {
+   "hr": "Standardno vinarstvo (sulfiti); klasicna metoda, brut dozaza",
+   "en": "Standard winemaking (sulphites); classic method, brut dosage"
+  },
+  "additiveSource": "Standard kategorije pjenusac",
+  "qualityScore": 8.5,
+  "priceEUR": {
+   "min": 48.0,
+   "max": 60.0
+  },
+  "priceApprox": true,
+  "shopHR": "Vinoteke",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Dobro ohladjeno, 6-8 C"
+  },
+  "cigarHint": null,
+  "priceUrl": null,
+  "notes": {
+   "hr": "Talijanski odgovor šampanjcu — klasična metoda, brioche i lješnjak; ozbiljna alternativa uz blagu cigaru.",
+   "en": "Italy's answer to Champagne — classic method, brioche and hazelnut; a serious option with a mild cigar."
+  }
+ },
+ {
+  "id": "wine-cava-juve-y-camps",
+  "category": "wine",
+  "name": "Cava Brut Nature Reserva (Juvé & Camps / Gramona)",
+  "style": "sparkling",
+  "region": "Penedes, Španjolska",
+  "abv": 12.0,
+  "body": 2,
+  "sweetness": 1,
+  "flavorTags": [
+   "citrus",
+   "orasasti",
+   "mineralno"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": {
+   "hr": "Standardno vinarstvo (sulfiti); brut nature (bez dozaze)",
+   "en": "Standard winemaking (sulphites); brut nature (no dosage)"
+  },
+  "additiveSource": "Standard kategorije pjenusac",
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 16.0,
+   "max": 24.0
+  },
+  "priceApprox": true,
+  "shopHR": "Vinoteke / Miva",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Dobro ohladjeno, 6-8 C"
+  },
+  "cigarHint": null,
+  "priceUrl": null,
+  "notes": {
+   "hr": "Klasična metoda bez dozaže — suh, zreo, orašast; najbolji omjer cijene i ozbiljnosti među pjenušcima.",
+   "en": "Classic method with no dosage — dry, mature, nutty; the best value-to-seriousness ratio in sparkling."
+  }
+ },
+ {
+  "id": "wine-tomac-pjenusac",
+  "category": "wine",
+  "name": "Tomac pjenušac (Klasik / Amfora)",
+  "style": "sparkling",
+  "region": "Plešivica, Hrvatska",
+  "abv": 12.0,
+  "body": 2,
+  "sweetness": 1,
+  "flavorTags": [
+   "jabuka",
+   "mineralno",
+   "kremasto"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": {
+   "hr": "Standardno vinarstvo (sulfiti); klasicna metoda",
+   "en": "Standard winemaking (sulphites); classic method"
+  },
+  "additiveSource": "Standard kategorije pjenusac",
+  "qualityScore": 8.0,
+  "priceEUR": {
+   "min": 25.0,
+   "max": 42.0
+  },
+  "priceApprox": true,
+  "shopHR": "Vinoteke (Vinoteka Terra, Wine&Friends)",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Dobro ohladjeno, 6-8 C"
+  },
+  "cigarHint": null,
+  "priceUrl": null,
+  "notes": {
+   "hr": "Plešivički pionir klasične metode; Amfora verzija fermentira u amforama — hrvatski pjenušac svjetske razine.",
+   "en": "The Plešivica pioneer of the classic method; the Amfora version ferments in clay — a world-class Croatian sparkling."
+  }
+ },
+ {
+  "id": "wine-misal-persuric",
+  "category": "wine",
+  "name": "Misal Peršurić (Brut / Prestige)",
+  "style": "sparkling",
+  "region": "Istra, Hrvatska",
+  "abv": 12.0,
+  "body": 2,
+  "sweetness": 1,
+  "flavorTags": [
+   "citrus",
+   "jabuka",
+   "cvjetno"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": {
+   "hr": "Standardno vinarstvo (sulfiti); klasicna metoda",
+   "en": "Standard winemaking (sulphites); classic method"
+  },
+  "additiveSource": "Standard kategorije pjenusac",
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 18.0,
+   "max": 28.0
+  },
+  "priceApprox": true,
+  "shopHR": "Vrutak / Roto",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "best": "Dobro ohladjeno, 6-8 C"
+  },
+  "cigarHint": null,
+  "priceUrl": null,
+  "notes": {
+   "hr": "Prvi hrvatski pjenušac klasičnom metodom (Višnjan) — svjež, citrusni brut; Prestige odležava 18+ mjeseci na kvascima.",
+   "en": "Croatia's first classic-method sparkling (Višnjan) — a fresh, citrusy brut; Prestige spends 18+ months on lees."
   }
  }
 ]
