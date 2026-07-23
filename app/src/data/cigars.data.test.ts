@@ -363,9 +363,14 @@ describe("cigars.json integrity", () => {
     expect(CIGARS.some((c) => c.brand === "Tatuaje" && /cabaiguan/i.test(c.line))).toBe(true);
     expect(CIGARS.some((c) => c.brand === "Tatuaje" && /fausto/i.test(c.line))).toBe(true);
 
-    const sixty = CIGARS.find((c) => c.id === "cig-rocky-patel-sixty-toro-6-1-2-x-52");
-    expect(sixty?.priceEUR).toBe(26);
-    expect(sixty?.priceUrl).toContain("rocky-patel-sixty");
+    // Stream J absorbed the dim-suffixed SKU into the Sixty line.
+    const sixty = CIGARS.find((c) => c.id === "cig-rocky-patel-rp-sixty");
+    expect(sixty).toBeDefined();
+    const sixtyToro = (sixty!.vitolas ?? []).find(
+      (v) => /sixty\s*toro/i.test(v.name) && (v.priceEUR ?? 0) === 26,
+    );
+    expect(sixtyToro?.priceEUR).toBe(26);
+    expect(sixtyToro?.url ?? sixty?.priceUrl).toContain("rocky-patel-sixty");
   });
 
   it("Batch D — kubanke bez Additional Vitolas", () => {
