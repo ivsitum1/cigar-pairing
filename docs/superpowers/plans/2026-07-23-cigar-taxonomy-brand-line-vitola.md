@@ -195,8 +195,11 @@ Add, and they must go red on regression:
 Add the chain to `scripts/pipeline.py` under the `cigars` category, and to CI as
 `apply-taxonomy.py --check && normalize-vitolas.py --check`.
 
-**Deliverable of Phase 0:** the three scripts, the tests, the wiring, and 462 worklist
-stubs. No data judgement yet.
+**Deliverable of Phase 0:** the three scripts, the tests, the wiring, 462 worklist
+stubs, and a one-shot `seed-taxonomy-from-legacy.py` that writes `status: "partial"`
+taxonomy stubs from `line_map.json` + `line_merge_decisions.json` where mapping is
+already known (Oliva, Double-pattern brands, `line_map` `_log` batches). No new data
+judgement beyond what those stores already encode.
 
 ---
 
@@ -339,6 +342,11 @@ python app/scripts/apply-taxonomy.py && python app/scripts/taxonomy-report.py --
 Accepted when: the tree reads like the maker's own catalogue, no line contains a size,
 no vitola repeats its line, `npm test` is green, and `unresolved` is honest.
 
+`status: "done"` only when the brand's audit no longer shows class B/C/F flags for
+that brand (dimensions-in-line, ends-with-shape, vitola-repeats-line-tokens). Anything
+still unverifiable stays in `unresolved` as an explicit list — never invent to clear
+the flag. For W1, paste the tree **and** the unresolved list (empty is fine).
+
 ### 7.3 Waves
 
 Do them in this order — each wave is independently shippable.
@@ -378,7 +386,10 @@ export const resolveCigarId: (id: string) => Cigar | undefined  // follows cigar
 
 Screens:
 
-- **`BrandSheet`** — brand story on top, then **lines only**. Each row: line name,
+- **`BrandSheet`** — brand story on top, then **lines only**. Header count: **`N linija · M vitola`** (from `BrandNode.lines.length` /
+  `vitolaCount`) — never "N cigars" as if records were SKUs. Catalogue / hero
+  totals may show overall line count or vitola count; do **not** keep marketing the
+  pre-merge ~3105 record count as truth. Each row: line name,
   wrapper, `N vitola`, price range `from X €`. It must not show vitola names any more
   (it currently shows `c.vitola` when there is one vitola — that is the level leak).
 - **`LineSheet`** (new, `app/src/components/LineSheet.tsx`) — line name + `lineNotes`
@@ -399,6 +410,10 @@ Routing, `app/src/store/route.ts` — deep links for all three levels:
 
 Search must hit all three levels and say which it hit — a query matching a vitola name
 should offer the vitola, its line, and its brand as three distinct results.
+
+Pairing still keys off a `Cigar` record (= one line) plus the chosen vitola
+(Stream G). After the merge, pair counts in audits (~1.9M today) will drop with
+the line count — expected, not a regression.
 
 ---
 
@@ -456,7 +471,9 @@ the content.
 > If two current brands are the same maker, give both the same `renameBrand` — they will
 > merge. Add or merge the `brands.json` entry for every new canonical name (country,
 > founded, hr+en blurb). Do NOT touch `cigars.json` or any script. If you cannot verify a
-> brand name, leave its file out and list it in your summary. Then run
+> brand name, leave its file out and list it in your summary. For Habanos / Cuban
+> brands (and `Jose` → José L. Piedra), confirm `integrity.test.ts` invariants still
+> hold: country `Kuba`, Cuban wrapper where required. Then run
 > `python app/scripts/apply-taxonomy.py && npm test` from `app/` and paste the result.
 
 ### Phase 3 — per-brand taxonomy (one agent, brands `{LIST}`)
@@ -509,13 +526,78 @@ the content.
 
 ---
 
-## 14. Open questions for the owner
+## 14. Owner decisions (locked 2026-07-23)
 
-1. **Wrapper variants** — `Oliva Flor de Connecticut` / `Corojo` / `Maduro` / `Gold`:
-   separate lines (assumed here), or one `Flor de Oliva` line with a wrapper facet?
-   The assumption is "separate lines" because that is how makers and shops sell them.
-2. **Record-count drop** — merging ~3105 records into ~1400 lines will change ids and
-   shrink the catalogue count shown in the UI. The alias map keeps links working, but the
-   headline number goes down. Assumed acceptable; say so if the count matters.
-3. **Line stories** — `lineNotes` is optional per line. Filling ~1400 of them is a
-   separate content pass; this plan only creates the slot. Assumed: fill W1 brands first.
+| # | Question | Decision | Why |
+|---|---|---|---|
+| 1 | Wrapper variants (`Oliva Flor de Connecticut` / `Corojo` / `Maduro` / `Gold`) | **Separate lines** | How makers and shops sell them; already encoded in Stream J `_keep_distinct` for Flor de*; §7.1 rule 3 stands |
+| 2 | Record-count drop ~3105 → ~1400 | **Acceptable** | Alias map keeps links alive; UI shows **lines + vitolas**, not the old SKU-like record count (§8, §17) |
+| 3 | `lineNotes` | **Slot now; fill W1 brands first** (39 brands) | Does not block taxonomy waves; full ~1400 is a later content pass |
+
+---
+
+## 15. Gate before Phase 1 (mandatory)
+
+The main worktree has unfinished / parallel work that **overlaps** auto-pass and line merge:
+
+- `docs/superpowers/plans/2026-07-23-vitola-dedup-round3-handoff.md` (Streams C/D residual)
+- `app/scripts/data/line_merge_decisions.json` (Stream J Oliva + Double merges)
+- `app/scripts/data/vitola_link_fixes.json` (local)
+- branch `cursor/stream-j-oliva-line-merge` (ahead of master)
+
+**Order:**
+
+1. Finish shipping Stream J (+ optional Stream C prefix adjudication) into `master`, **or**
+   explicitly migrate J decisions into taxonomy files and stop appending to
+   `line_merge_decisions.json`.
+2. Merge this plan document to `master` (PR: plan-only branch
+   `claude/cigars-sorting-grouping-plan-a11340`).
+3. Only then Phase 0 tooling and Phase 1 auto-pass — otherwise auto-pass and J absorb
+   rewrite the same ids on different paths.
+
+Do **not** start Phase 1 while Round-3 structural merges are still open.
+
+---
+
+## 16. Migrating legacy decision stores
+
+The repo already has two partial precursors of taxonomy:
+
+| Existing | Role today | After taxonomy |
+|---|---|---|
+| `app/scripts/data/line_map.json` | raw line → canonical line (ingest/playbook) | **Seed** for `taxonomy/*.json` `lines` maps in Phase 0/1; then read-only legacy or drop from the pipeline |
+| `app/scripts/data/line_merge_decisions.json` | absorb / relocate / keepDistinct (`normalize-vitolas.py`) | **Rewrite** into brand taxonomy (`lines` + `keepSeparate` + `vitolaRenames`); afterward `normalize-vitolas.py` keeps only locale-twin / sampler / link hygiene — **not** line absorb |
+
+Phase 0 includes `seed-taxonomy-from-legacy.py` (see §4 deliverable): emit
+`status: "partial"` stubs from `line_map` + J decisions where mapping is already known.
+
+Once taxonomy owns merges, J-style absorb must not remain in `normalize-vitolas.py` —
+otherwise ids get rewritten twice (§4.2 pass order: apply-taxonomy → normalize).
+
+---
+
+## 17. UI counts (so the record drop is not confusing)
+
+`BrandSheet` today shows `{cigars.length} · cat.cigars`. After the repair a record is a
+**line**, so the header must read **`N linija · M vitola`** (see §8). Catalogue / hero
+totals may use overall line count or vitola count — never keep advertising ~3105 as the
+catalogue size.
+
+Pairing continues to key off `Cigar` (= line) + chosen vitola. Pairing-audit pair counts
+will change with the line count; that is expected.
+
+---
+
+## 18. Phase 0 / 4 technical addenda
+
+1. **`apply-taxonomy` vs `normalize-vitolas`:** after taxonomy takes over line merge,
+   remove (or no-op) Stream J absorb/relocate from normalize so the two passes do not
+   double-rewrite ids. Locale twins, samplers, and link hygiene stay in normalize.
+2. **Habanos invariants** in `integrity.test.ts`: Phase 2 prompt (§12) requires an
+   explicit smoke check for Cuban brands and `Jose` → José L. Piedra (`Kuba`, Cuban
+   wrapper).
+3. **PR sequencing:** this plan branch is documentation only. Open / merge a PR into
+   `master` titled like `Plan: brand→line→vitola taxonomy` **before** implementing
+   Phase 0 on a feature branch `feat/cigar-taxonomy-tooling`.
+4. **W1 done criteria:** see §7.2 — `status: "done"` only with B/C/F flags cleared (or
+   honest `unresolved`); paste tree + unresolved list.
