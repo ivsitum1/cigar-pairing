@@ -364,7 +364,7 @@ describe("cigars.json integrity", () => {
     expect(CIGARS.some((c) => c.brand === "Tatuaje" && /fausto/i.test(c.line))).toBe(true);
 
     // Stream J absorbed the dim-suffixed SKU into the Sixty line.
-    const sixty = CIGARS.find((c) => c.id === "cig-rocky-patel-rp-sixty");
+    const sixty = CIGARS.find((c) => c.id === "cig-rocky-patel-sixty");
     expect(sixty).toBeDefined();
     const sixtyToro = (sixty!.vitolas ?? []).find(
       (v) => /sixty\s*toro/i.test(v.name) && (v.priceEUR ?? 0) === 26,
@@ -421,11 +421,11 @@ describe("cigars.json integrity", () => {
     expect(CIGARS.some((c) => c.brand === "La Aurora" && /preferidos/i.test(c.line))).toBe(true);
     expect(CIGARS.some((c) => c.brand === "Oliva" && /serie g/i.test(c.line))).toBe(true);
 
-    const magnum = CIGARS.find((c) => c.id === "cig-hupmann-magnum");
+    const magnum = CIGARS.find((c) => c.id === "cig-h-upmann-magnum");
     expect(magnum).toBeDefined();
     expect((magnum!.vitolas ?? []).some((v) => /magnum 54/i.test(v.name))).toBe(true);
 
-    const classic = CIGARS.find((c) => c.id === "cig-romeo-y-julieta-ryj-classic");
+    const classic = CIGARS.find((c) => c.id === "cig-romeo-y-julieta-classic");
     expect(classic).toBeDefined();
     expect((classic!.vitolas ?? []).some((v) => /puritos/i.test(v.name))).toBe(true);
   });
