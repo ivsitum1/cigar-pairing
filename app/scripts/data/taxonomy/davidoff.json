@@ -1,15 +1,140 @@
 {
   "brand": "Davidoff",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-23",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "https://www.davidoff.com/",
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w1_slice2 deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.1"
   ],
   "lines": {
-    "Year Of Horse 2026": {
-      "line": "Year of Horse",
-      "vitola": "Toro"
+    "Aniversario": {
+      "line": "Aniversario"
+    },
+    "Chef's Edition 2017": {
+      "line": "Chef's Edition 2017"
+    },
+    "Chef's Edition 2018": {
+      "line": "Chef's Edition 2018"
+    },
+    "Chefs Edition 2025": {
+      "line": "Chef's Edition 2025"
+    },
+    "Demi Tasse": {
+      "line": "Demi Tasse"
+    },
+    "Discovery Le 2022": {
+      "line": "Discovery Le 2022"
+    },
+    "Dominicana": {
+      "line": "Dominicana"
+    },
+    "Escurio": {
+      "line": "Escurio"
+    },
+    "Exclusive Croatia 2021": {
+      "line": "Exclusive Croatia 2021"
+    },
+    "Figurado Selection": {
+      "line": "Figurado Selection"
+    },
+    "Golf Scorecard Edition": {
+      "line": "Golf Scorecard Edition"
+    },
+    "Grand Cru": {
+      "line": "Grand Cru"
+    },
+    "Limited Edition 2019 Real Especiales >": {
+      "line": "Limited Edition 2019 Real Especiales >"
+    },
+    "Limited Edition Art 2016": {
+      "line": "Limited Edition Art 2016"
+    },
+    "Maduro": {
+      "line": "Maduro"
+    },
+    "Master Selection 2012": {
+      "line": "Master Selection 2012"
+    },
+    "Millenium /20": {
+      "line": "Millennium"
+    },
+    "Millenium /25": {
+      "line": "Millennium"
+    },
+    "Millennium": {
+      "line": "Millennium"
+    },
+    "Nicaragua": {
+      "line": "Nicaragua"
+    },
+    "Primeros": {
+      "line": "Primeros"
+    },
+    "Puro Dominicano": {
+      "line": "Puro Dominicano"
+    },
+    "Room 101 Uncle Lee by Ranfla": {
+      "line": "Room 101 Uncle Lee by Ranfla"
+    },
+    "Royal Release 2016": {
+      "line": "Royal Release 2016"
+    },
+    "Royal Release Salomones": {
+      "line": "Royal Release Salomones"
+    },
+    "Signature": {
+      "line": "Signature"
+    },
+    "Tubos Selection White": {
+      "line": "Tubos Selection White"
+    },
+    "Winston Churchill": {
+      "line": "Winston Churchill"
+    },
+    "Winston Churchill The Late Hour": {
+      "line": "Winston Churchill The Late Hour"
+    },
+    "WSC Late Hour /4": {
+      "line": "Winston Churchill The Late Hour"
+    },
+    "Yamasa": {
+      "line": "Yamasa"
+    },
+    "Year of Dog": {
+      "line": "Year of Dog"
+    },
+    "Year of Horse": {
+      "line": "Year of Horse"
+    },
+    "Year of Ox": {
+      "line": "Year of Ox"
+    },
+    "Year of Pig": {
+      "line": "Year of Pig"
+    },
+    "Year of Rabbit": {
+      "line": "Year of Rabbit"
+    },
+    "Year of Rat": {
+      "line": "Year of Rat"
+    },
+    "Year of Rooster": {
+      "line": "Year of Rooster"
+    },
+    "Year of Snake": {
+      "line": "Year of Snake"
+    },
+    "Year Of The Dragon 2024": {
+      "line": "Year of the Dragon 2024"
+    },
+    "Year Of The Rabbit 2023": {
+      "line": "Year of the Rabbit 2023"
+    },
+    "Year Of The Snake 2025": {
+      "line": "Year of the Snake 2025"
     }
   },
   "vitolaRenames": {},

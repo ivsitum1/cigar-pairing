@@ -1,12 +1,145 @@
 {
   "brand": "Villiger",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-23",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "https://www.villiger.com/",
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w1_slice2 deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.1"
   ],
-  "lines": {},
+  "lines": {
+    "125 DNU": {
+      "line": "125 DNU"
+    },
+    "125 Habano": {
+      "line": "125 Habano"
+    },
+    "1492": {
+      "line": "1492"
+    },
+    "1492 Discovery Edition": {
+      "line": "1492 Discovery Edition"
+    },
+    "1888": {
+      "line": "1888"
+    },
+    "1888 Dominican Republic": {
+      "line": "1888 Dominican Republic"
+    },
+    "1888 Fuerte": {
+      "line": "1888 Fuerte"
+    },
+    "1888 Nicaragua": {
+      "line": "1888 Nicaragua"
+    },
+    "Cabarete": {
+      "line": "Cabarete"
+    },
+    "Cuellar Black Forest": {
+      "line": "Cuellar Black Forest"
+    },
+    "Cuellar Kreme": {
+      "line": "Cuellar Kreme"
+    },
+    "Do Brasil Claro": {
+      "line": "Do Brasil Claro"
+    },
+    "Do Brasil Maduro": {
+      "line": "Do Brasil Maduro"
+    },
+    "Dominican Selection": {
+      "line": "Dominican Selection"
+    },
+    "Edicion Limitada 1888 Nicaragua Gran Reserva": {
+      "line": "Edicion Limitada 1888 Nicaragua Gran Reserva"
+    },
+    "Edicion Limitada 2022 Nicaragua": {
+      "line": "Edicion Limitada 2022 Nicaragua"
+    },
+    "Edicion Limitada 2024": {
+      "line": "Edicion Limitada 2024"
+    },
+    "Edicion Limitada 2025 Edicion Alemana": {
+      "line": "Edicion Limitada 2025 Edicion Alemana"
+    },
+    "Edicion Limitada 2025 Nicaragua": {
+      "line": "Edicion Limitada 2025 Nicaragua"
+    },
+    "Edicion Limitada Celebration 2024 Fina": {
+      "line": "Edicion Limitada Celebration 2024 Fina"
+    },
+    "Edicion Limitada Private Cellar #7511": {
+      "line": "Edicion Limitada Private Cellar #7511"
+    },
+    "Edicion Limitada Private Cellar #7527": {
+      "line": "Edicion Limitada Private Cellar #7527"
+    },
+    "Edicion Limitada Private Cellar #7571": {
+      "line": "Edicion Limitada Private Cellar #7571"
+    },
+    "Exclusivo USA": {
+      "line": "Exclusivo USA"
+    },
+    "La Capitana": {
+      "line": "La Capitana"
+    },
+    "La Flor de Ynclan": {
+      "line": "La Flor de Ynclan"
+    },
+    "La Libertad": {
+      "line": "La Libertad"
+    },
+    "La Meridiana": {
+      "line": "La Meridiana"
+    },
+    "La Vencedora": {
+      "line": "La Vencedora"
+    },
+    "Royal Estates": {
+      "line": "Royal Estates"
+    },
+    "San Doro Claro": {
+      "line": "San Doro Claro"
+    },
+    "San Doro Claro Aged 10 Years": {
+      "line": "San Doro Claro Aged 10 Years"
+    },
+    "San Doro Colorado": {
+      "line": "San Doro Colorado"
+    },
+    "San Doro Colorado Aged 10 Years": {
+      "line": "San Doro Colorado Aged 10 Years"
+    },
+    "San Martin": {
+      "line": "San Martin"
+    },
+    "San'Doro Maduro": {
+      "line": "San Doro Maduro"
+    },
+    "Selecto Connecticut": {
+      "line": "Selecto Connecticut"
+    },
+    "Selecto DNU": {
+      "line": "Selecto DNU"
+    },
+    "Selecto Maduro": {
+      "line": "Selecto Maduro"
+    },
+    "Trill": {
+      "line": "Trill"
+    },
+    "Villiger 1888": {
+      "line": "1888"
+    },
+    "Villiger Export": {
+      "line": "Export"
+    },
+    "White Forest": {
+      "line": "White Forest"
+    }
+  },
   "vitolaRenames": {},
   "shapes": {},
   "keepSeparate": [
@@ -32,5 +165,7 @@
     ]
   ],
   "lineNotes": {},
-  "unresolved": []
+  "unresolved": [
+    "Villiger: 125 DNU / Selecto DNU meaning unverified — left unchanged"
+  ]
 }
