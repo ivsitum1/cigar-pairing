@@ -1,0 +1,2531 @@
+{
+  "Aganorsa Leaf": [
+    {
+      "id": "cig-aganorsa-leaf-aniversario",
+      "line": "Aniversario",
+      "vitola": "Connecticut Robusto",
+      "vitolas": [
+        {
+          "name": "Connecticut Robusto",
+          "format": "54 x 127mm",
+          "shape": null
+        },
+        {
+          "name": "Corojo Robusto",
+          "format": "54 x 127mm",
+          "shape": null
+        },
+        {
+          "name": "Maduro Robusto",
+          "format": "54 x 127mm",
+          "shape": null
+        },
+        {
+          "name": "Corojo Toro",
+          "format": "58 x 152mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-aganorsa-leaf-arsenio",
+      "line": "Arsenio",
+      "vitola": "Robusto",
+      "vitolas": [
+        {
+          "name": "Robusto",
+          "format": "54 x 133mm",
+          "shape": "Robusto"
+        }
+      ]
+    },
+    {
+      "id": "cig-aganorsa-leaf-cerberus",
+      "line": "Cerberus",
+      "vitola": "Toro",
+      "vitolas": [
+        {
+          "name": "Toro",
+          "format": "52 x 152mm",
+          "shape": null
+        },
+        {
+          "name": "Robusto",
+          "format": "54 x 127mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-aganorsa-leaf-jfr-connecticut",
+      "line": "JFR Connecticut",
+      "vitola": "Robusto",
+      "vitolas": [
+        {
+          "name": "Robusto",
+          "format": "50 x 127mm",
+          "shape": null
+        },
+        {
+          "name": "Super Toro",
+          "format": "52 x 152mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-aganorsa-leaf-jfr-corojo",
+      "line": "JFR Corojo",
+      "vitola": "Robusto",
+      "vitolas": [
+        {
+          "name": "Robusto",
+          "format": "50 x 127mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-aganorsa-leaf-jfr-maduro",
+      "line": "JFR Maduro",
+      "vitola": "Robusto",
+      "vitolas": [
+        {
+          "name": "Robusto",
+          "format": "50 x 127mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-aganorsa-leaf-la-validacion-connecticut",
+      "line": "La Validacion Connecticut",
+      "vitola": "Robusto",
+      "vitolas": [
+        {
+          "name": "Robusto",
+          "format": "54 x 127mm",
+          "shape": "Gran Robusto"
+        }
+      ]
+    },
+    {
+      "id": "cig-aganorsa-leaf-la-validacion-corojo",
+      "line": "La Validacion Corojo",
+      "vitola": "Robusto",
+      "vitolas": [
+        {
+          "name": "Connecticut Gran Robusto",
+          "format": "54 x 127mm",
+          "shape": null
+        },
+        {
+          "name": "Corojo Gran Robusto",
+          "format": "54 x 127mm",
+          "shape": null
+        },
+        {
+          "name": "Habano Gran Robusto",
+          "format": "54 x 127mm",
+          "shape": null
+        },
+        {
+          "name": "Maduro Gran Robusto",
+          "format": "54 x 127mm",
+          "shape": null
+        },
+        {
+          "name": "Robusto",
+          "format": "54 x 127mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-aganorsa-leaf-la-validacion-habano",
+      "line": "La Validacion Habano",
+      "vitola": "Robusto",
+      "vitolas": [
+        {
+          "name": "Robusto",
+          "format": "54 x 127mm",
+          "shape": "Gran Robusto"
+        }
+      ]
+    },
+    {
+      "id": "cig-aganorsa-leaf-la-validacion-maduro",
+      "line": "La Validacion Maduro",
+      "vitola": "Robusto",
+      "vitolas": [
+        {
+          "name": "Robusto",
+          "format": "54 x 127mm",
+          "shape": "Gran Robusto"
+        }
+      ]
+    },
+    {
+      "id": "cig-aganorsa-leaf-rare-leaf-reserve-corojo",
+      "line": "Rare Leaf Reserve Corojo",
+      "vitola": "Robusto",
+      "vitolas": [
+        {
+          "name": "Robusto",
+          "format": "52 x 133mm",
+          "shape": "Robusto"
+        },
+        {
+          "name": "Toro",
+          "format": "54 x 152mm",
+          "shape": "Toro"
+        }
+      ]
+    },
+    {
+      "id": "cig-aganorsa-leaf-rare-leaf-reserve-maduro",
+      "line": "Rare Leaf Reserve Maduro",
+      "vitola": "Robusto",
+      "vitolas": [
+        {
+          "name": "Robusto",
+          "format": "52 x 127mm",
+          "shape": "Robusto"
+        }
+      ]
+    },
+    {
+      "id": "cig-aganorsa-leaf-signature-selection-corojo",
+      "line": "Signature Selection Corojo",
+      "vitola": "Robusto",
+      "vitolas": [
+        {
+          "name": "Robusto",
+          "format": "52 x 127mm",
+          "shape": "Robusto"
+        },
+        {
+          "name": "Toro",
+          "format": "52 x 152mm",
+          "shape": "Toro"
+        }
+      ]
+    },
+    {
+      "id": "cig-aganorsa-leaf-signature-selection-gorda",
+      "line": "Signature Selection Gorda",
+      "vitola": "Corona",
+      "vitolas": [
+        {
+          "name": "Corona",
+          "format": "44 x 142mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-aganorsa-leaf-signature-selection-maduro",
+      "line": "Signature Selection Maduro",
+      "vitola": "Robusto",
+      "vitolas": [
+        {
+          "name": "Robusto",
+          "format": "52 x 127mm",
+          "shape": null
+        },
+        {
+          "name": "Toro",
+          "format": "52 x 152mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-aganorsa-leaf-supreme-leaf",
+      "line": "Supreme Leaf",
+      "vitola": "Robusto",
+      "vitolas": [
+        {
+          "name": "Robusto",
+          "format": "52 x 127mm",
+          "shape": "Robusto"
+        },
+        {
+          "name": "Toro",
+          "format": "52 x 152mm",
+          "shape": "Toro"
+        }
+      ]
+    },
+    {
+      "id": "cig-aganorsa-leaf-supreme-leaf-euro",
+      "line": "Supreme Leaf Euro",
+      "vitola": "Toro",
+      "vitolas": [
+        {
+          "name": "Toro",
+          "format": "50 x 152mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-aganorsa-leaf-supreme-leaf-inter",
+      "line": "Supreme Leaf Inter",
+      "vitola": "Robusto",
+      "vitolas": [
+        {
+          "name": "Robusto",
+          "format": "54 x 127mm",
+          "shape": null
+        }
+      ]
+    }
+  ],
+  "PDR": [
+    {
+      "id": "cig-pdr-1878-capa-sun-grown",
+      "line": "1878 Capa Sun Grown",
+      "vitola": "Robusto",
+      "vitolas": [
+        {
+          "name": "Robusto",
+          "format": "52 x 127mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-pdr-1975-privada-rosado-sp-52",
+      "line": "1975 Privada Rosado SP 52",
+      "vitola": "Robusto",
+      "vitolas": [
+        {
+          "name": "Robusto",
+          "format": "52 x 127mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-pdr-a-flores-gran-reserva-corojo-2006",
+      "line": "A. Flores Gran Reserva Corojo 2006",
+      "vitola": "Half Corona",
+      "vitolas": [
+        {
+          "name": "Half Corona",
+          "format": "46 x 89mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-pdr-a-flores-gran-reserva-desflorado",
+      "line": "A. Flores Gran Reserva Desflorado",
+      "vitola": "Half Corona",
+      "vitolas": [
+        {
+          "name": "Half Corona",
+          "format": "46 x 89mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-pdr-a-flores-gran-reserva-maduro",
+      "line": "A. Flores Gran Reserva Maduro",
+      "vitola": "Half Corona",
+      "vitolas": [
+        {
+          "name": "Half Corona",
+          "format": "46 x 89mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-pdr-a-flores-gran-reserva-sungrown",
+      "line": "A. Flores Gran Reserva Sungrown",
+      "vitola": "Half Corona",
+      "vitolas": [
+        {
+          "name": "Half Corona",
+          "format": "46 x 89mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-pdr-capa-madura",
+      "line": "Capa Madura",
+      "vitola": "Robusto",
+      "vitolas": [
+        {
+          "name": "Crystal",
+          "format": "52 x 127mm",
+          "shape": null
+        },
+        {
+          "name": "Robusto",
+          "format": "52 x 127mm",
+          "shape": null
+        },
+        {
+          "name": "Toro",
+          "format": "52 x 152mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-pdr-capa-natural",
+      "line": "Capa Natural",
+      "vitola": "Robusto",
+      "vitolas": [
+        {
+          "name": "Crystal",
+          "format": "52 x 127mm",
+          "shape": null
+        },
+        {
+          "name": "Robusto",
+          "format": "52 x 127mm",
+          "shape": null
+        },
+        {
+          "name": "Toro",
+          "format": "52 x 152mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-pdr-capa-oscura",
+      "line": "Capa Oscura",
+      "vitola": "Robusto",
+      "vitolas": [
+        {
+          "name": "Crystal",
+          "format": "52 x 127mm",
+          "shape": null
+        },
+        {
+          "name": "Robusto",
+          "format": "52 x 127mm",
+          "shape": null
+        },
+        {
+          "name": "Toro",
+          "format": "52 x 152mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-pdr-capa-sun-grown",
+      "line": "Capa Sun Grown",
+      "vitola": "Robusto",
+      "vitolas": [
+        {
+          "name": "Crystal",
+          "format": "52 x 127mm",
+          "shape": null
+        },
+        {
+          "name": "Robusto",
+          "format": "52 x 127mm",
+          "shape": null
+        },
+        {
+          "name": "Toro",
+          "format": "52 x 152mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-pdr-el-criollito-a-flores-habano",
+      "line": "El Criollito A Flores Habano",
+      "vitola": "Half Corona",
+      "vitolas": [
+        {
+          "name": "Half Corona",
+          "format": "50 x 89mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-pdr-el-criollito-rosado",
+      "line": "El Criollito Rosado",
+      "vitola": "Robusto",
+      "vitolas": [
+        {
+          "name": "Half Corona",
+          "format": "50 x 95mm",
+          "shape": null
+        },
+        {
+          "name": "Robusto",
+          "format": "54 x 127mm",
+          "shape": null
+        },
+        {
+          "name": "Short Gordo",
+          "format": "58 x 108mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-pdr-el-vinyet-cuvee-especial-bf-52-fino-2024",
+      "line": "El Vinyet Cuvee Especial BF 52 Fino 2024",
+      "vitola": "Belicoso",
+      "vitolas": [
+        {
+          "name": "Belicoso",
+          "format": "52 x 140mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-pdr-el-vinyet-cuvee-especial-rc-52-clasico-2024",
+      "line": "El Vinyet Cuvee Especial RC 52 Clasico 2024",
+      "vitola": "Robusto",
+      "vitolas": [
+        {
+          "name": "Robusto",
+          "format": "52 x 127mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-pdr-el-vinyet-cuvee-especial-wc-58-wide-2024",
+      "line": "El Vinyet Cuvee Especial WC 58 Wide 2024",
+      "vitola": "Churchill",
+      "vitolas": [
+        {
+          "name": "Churchill",
+          "format": "58 x 182mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-pdr-flores-y-rodriguez-10th-anniversary",
+      "line": "Flores Y Rodriguez 10th Anniversary",
+      "vitola": "Robusto",
+      "vitolas": [
+        {
+          "name": "Robusto",
+          "format": "52 x 127mm",
+          "shape": null
+        },
+        {
+          "name": "Figurado",
+          "format": "52 x 165mm",
+          "shape": null
+        },
+        {
+          "name": "Wide Churchill",
+          "format": "58 x 130mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-pdr-roast-special",
+      "line": "Roast Special",
+      "vitola": "Corona",
+      "vitolas": [
+        {
+          "name": "Corona",
+          "format": "44 x 142mm",
+          "shape": null
+        },
+        {
+          "name": "Robusto",
+          "format": "52 x 127mm",
+          "shape": null
+        },
+        {
+          "name": "Toro",
+          "format": "52 x 152mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-pdr-value-line-reserve",
+      "line": "Value Line Reserve",
+      "vitola": "Robusto",
+      "vitolas": [
+        {
+          "name": "Robusto",
+          "format": "50 x 127mm",
+          "shape": null
+        },
+        {
+          "name": "Churchill",
+          "format": "50 x 182mm",
+          "shape": null
+        },
+        {
+          "name": "Toro",
+          "format": "52 x 152mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-pdr-value-line-reserve-connecticut",
+      "line": "Value Line Reserve Connecticut",
+      "vitola": "Robusto",
+      "vitolas": [
+        {
+          "name": "Robusto",
+          "format": "50 x 127mm",
+          "shape": null
+        },
+        {
+          "name": "Toro",
+          "format": "50 x 152mm",
+          "shape": null
+        },
+        {
+          "name": "Churchill",
+          "format": "50 x 178mm",
+          "shape": null
+        }
+      ]
+    }
+  ],
+  "Ashton": [
+    {
+      "id": "cig-ashton-aged-maduro",
+      "line": "Aged Maduro",
+      "vitola": "Piramide",
+      "vitolas": [
+        {
+          "name": "Corona",
+          "format": "43 x 142mm",
+          "shape": null
+        },
+        {
+          "name": "Lonsdale",
+          "format": "43 x 164mm",
+          "shape": null
+        },
+        {
+          "name": "Maduro No.30",
+          "format": "44 x 171mm",
+          "shape": null
+        },
+        {
+          "name": "Robusto",
+          "format": "50 x 127mm",
+          "shape": null
+        },
+        {
+          "name": "Toro",
+          "format": "50 x 152mm",
+          "shape": null
+        },
+        {
+          "name": "Piramide",
+          "format": "52 x 152mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-ashton-benchmade",
+      "line": "Benchmade",
+      "vitola": "Toro",
+      "vitolas": [
+        {
+          "name": "Toro",
+          "format": "50 x 152mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-ashton-cabinet",
+      "line": "Cabinet",
+      "vitola": "Belicoso",
+      "vitolas": [
+        {
+          "name": "Belicoso",
+          "format": "52 x 140mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-ashton-cabinet-selection",
+      "line": "Cabinet Selection",
+      "vitola": "Cabinet Selection T",
+      "vitolas": [
+        {
+          "name": "Cabinet Selection T",
+          "format": "52 x 152mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-ashton-classic",
+      "line": "Classic",
+      "vitola": "Corona",
+      "vitolas": [
+        {
+          "name": "Corona",
+          "format": "44 x 140mm",
+          "shape": null
+        },
+        {
+          "name": "Classic Magnum",
+          "format": "50 x 152mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-ashton-crystal",
+      "line": "Crystal",
+      "vitola": "Belicoso",
+      "vitolas": [
+        {
+          "name": "Belicoso",
+          "format": "49 x 152mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-ashton-esg",
+      "line": "ESG",
+      "vitola": "ESG Robusto",
+      "vitolas": [
+        {
+          "name": "ESG Robusto",
+          "format": "50 x 127mm",
+          "shape": null
+        },
+        {
+          "name": "ESG 23 Year Salute",
+          "format": "52 x 152mm",
+          "shape": null
+        },
+        {
+          "name": "ESG Churchill",
+          "format": "52 x 178mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-ashton-heritage-belicoso",
+      "line": "Heritage Belicoso",
+      "vitola": "Heritage Belicoso",
+      "vitolas": [
+        {
+          "name": "Heritage Belicoso",
+          "format": "49 x 127mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-ashton-heritage-puro-sol",
+      "line": "Heritage Puro Sol",
+      "vitola": "Heritage Puro Sol",
+      "vitolas": [
+        {
+          "name": "Heritage Puro Sol",
+          "format": "50 x 127mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-ashton-it-s-a-boy-it-s-a-girl-crystal-it-s-a-boy",
+      "line": "It's a Boy / It's a Girl Crystal It's a Boy",
+      "vitola": "Belicoso",
+      "vitolas": [
+        {
+          "name": "Belicoso",
+          "format": "49 x 152mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-ashton-it-s-a-boy-it-s-a-girl-crystal-it-s-a-girl",
+      "line": "It's a Boy / It's a Girl Crystal It's a Girl",
+      "vitola": "Belicoso",
+      "vitolas": [
+        {
+          "name": "Belicoso",
+          "format": "49 x 152mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-ashton-paradiso-by-monumento",
+      "line": "Paradiso By Monumento",
+      "vitola": "Churchill",
+      "vitolas": [
+        {
+          "name": "Churchill",
+          "format": "49 x 182mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-ashton-paradiso-by-papagayo",
+      "line": "Paradiso By Papagayo",
+      "vitola": "Toro",
+      "vitolas": [
+        {
+          "name": "Toro",
+          "format": "55 x 152mm",
+          "shape": null
+        },
+        {
+          "name": "XXL",
+          "format": "60 x 152mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-ashton-paragon",
+      "line": "Paragon",
+      "vitola": "Paragon Robusto",
+      "vitolas": [
+        {
+          "name": "Paragon Robusto",
+          "format": "52 x 127mm",
+          "shape": null
+        },
+        {
+          "name": "Paragon Toro",
+          "format": "52 x 152mm",
+          "shape": null
+        },
+        {
+          "name": "Paragon Churchill",
+          "format": "52 x 178mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-ashton-sovereign",
+      "line": "Sovereign",
+      "vitola": "Piramide",
+      "vitolas": [
+        {
+          "name": "Piramide",
+          "format": "55 x 171mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-ashton-symmetry",
+      "line": "Symmetry",
+      "vitola": "Symmetry",
+      "vitolas": [
+        {
+          "name": "Symmetry",
+          "format": "52 x 127mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-ashton-vsg",
+      "line": "VSG",
+      "vitola": "VSG Robusto",
+      "vitolas": [
+        {
+          "name": "VSG Robusto",
+          "format": "50 x 127mm",
+          "shape": null
+        },
+        {
+          "name": "VSG Entourage",
+          "format": "52 x 152mm",
+          "shape": null
+        },
+        {
+          "name": "VSG Toro",
+          "format": "52 x 152mm",
+          "shape": null
+        },
+        {
+          "name": "VSG Churchill",
+          "format": "52 x 178mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-ashton-vsg-virgin-sun-grown",
+      "line": "VSG (Virgin Sun Grown)",
+      "vitola": "Robusto",
+      "vitolas": [
+        {
+          "name": "Robusto",
+          "format": "50 x 140mm",
+          "shape": null
+        }
+      ]
+    }
+  ],
+  "Eiroa": [
+    {
+      "id": "cig-eiroa-20-years-colorado",
+      "line": "20 Years Colorado",
+      "vitola": "Toro",
+      "vitolas": [
+        {
+          "name": "Toro",
+          "format": "54 x 152mm",
+          "shape": "Toro"
+        }
+      ]
+    },
+    {
+      "id": "cig-eiroa-20-years-colorado-robusto-prensado",
+      "line": "20 Years Colorado Robusto Prensado",
+      "vitola": "Robusto",
+      "vitolas": [
+        {
+          "name": "Robusto",
+          "format": "50 x 127mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-eiroa-20-years-maduro-robusto-prensado",
+      "line": "20 Years Maduro Robusto Prensado",
+      "vitola": "Robusto",
+      "vitolas": [
+        {
+          "name": "Robusto",
+          "format": "50 x 127mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-eiroa-20-years-maduro-toro-prensado",
+      "line": "20 Years Maduro Toro Prensado",
+      "vitola": "Toro",
+      "vitolas": [
+        {
+          "name": "Toro",
+          "format": "54 x 152mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-eiroa-cbt",
+      "line": "Cbt",
+      "vitola": "Toro",
+      "vitolas": [
+        {
+          "name": "Robusto",
+          "format": "50 x 127mm",
+          "shape": "Robusto"
+        },
+        {
+          "name": "Toro",
+          "format": "54 x 152mm",
+          "shape": "Toro"
+        }
+      ]
+    },
+    {
+      "id": "cig-eiroa-cbt-maduro",
+      "line": "CBT Maduro",
+      "vitola": "Lancero",
+      "vitolas": [
+        {
+          "name": "Lancero",
+          "format": "38 x 189mm",
+          "shape": null
+        },
+        {
+          "name": "Prensado Corona",
+          "format": "48 x 142mm",
+          "shape": null
+        },
+        {
+          "name": "Gordo",
+          "format": "60 x 152mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-eiroa-cbt-maduro-20-years",
+      "line": "CBT Maduro / 20 Years",
+      "vitola": "20 Years Colorado Robusto Prensado",
+      "vitolas": [
+        {
+          "name": "20 Years Colorado Robusto Prensado",
+          "format": "50 x 127mm",
+          "shape": null
+        },
+        {
+          "name": "20 Years Maduro Robusto Prensado",
+          "format": "50 x 127mm",
+          "shape": null
+        },
+        {
+          "name": "CBT Robusto",
+          "format": "50 x 127mm",
+          "shape": null
+        },
+        {
+          "name": "20 Years Colorado Toro",
+          "format": "54 x 152mm",
+          "shape": null
+        },
+        {
+          "name": "20 Years Maduro Toro Prensado",
+          "format": "54 x 152mm",
+          "shape": null
+        },
+        {
+          "name": "CBT Toro",
+          "format": "54 x 152mm",
+          "shape": null
+        },
+        {
+          "name": "Limitada 2025 Toro",
+          "format": "54 x 152mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-eiroa-classic",
+      "line": "Classic",
+      "vitola": "Lancero",
+      "vitolas": [
+        {
+          "name": "Lancero",
+          "format": "38 x 189mm",
+          "shape": null
+        },
+        {
+          "name": "Corona",
+          "format": "48 x 102mm",
+          "shape": null
+        },
+        {
+          "name": "Robusto",
+          "format": "50 x 127mm",
+          "shape": null
+        },
+        {
+          "name": "Classic",
+          "format": "50 x 254mm",
+          "shape": null
+        },
+        {
+          "name": "Toro",
+          "format": "54 x 152mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-eiroa-classic-colorado",
+      "line": "Classic / Colorado",
+      "vitola": "Robusto",
+      "vitolas": [
+        {
+          "name": "Corona Prensado",
+          "format": "48 x 102mm",
+          "shape": null
+        },
+        {
+          "name": "Robusto",
+          "format": "50 x 127mm",
+          "shape": null
+        },
+        {
+          "name": "50 RG",
+          "format": "50 x 254mm",
+          "shape": null
+        },
+        {
+          "name": "Toro",
+          "format": "54 x 152mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-eiroa-first-20-years-colorado",
+      "line": "First 20 Years Colorado",
+      "vitola": "Corona",
+      "vitolas": [
+        {
+          "name": "Corona",
+          "format": "45 x 142mm",
+          "shape": null
+        },
+        {
+          "name": "Robusto",
+          "format": "50 x 127mm",
+          "shape": null
+        },
+        {
+          "name": "Toro",
+          "format": "54 x 152mm",
+          "shape": null
+        },
+        {
+          "name": "Gordo",
+          "format": "60 x 152mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-eiroa-first-20-years-maduro-gordo",
+      "line": "First 20 Years Maduro Gordo",
+      "vitola": "Toro",
+      "vitolas": [
+        {
+          "name": "Toro",
+          "format": "60 x 152mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-eiroa-jamastran-11-18",
+      "line": "Jamastran 11/18",
+      "vitola": "Perfecto",
+      "vitolas": [
+        {
+          "name": "Perfecto",
+          "format": "58 x 144mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-eiroa-limitada-2025",
+      "line": "Limitada 2025",
+      "vitola": "Limitada 2025",
+      "vitolas": [
+        {
+          "name": "Limitada 2025",
+          "format": "52 x 152mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-eiroa-the-first-20-years-maduro-diadema-8-x-48-60",
+      "line": "The First 20 Years Maduro Diadema 8 X 48-60",
+      "vitola": "Diadema",
+      "vitolas": [
+        {
+          "name": "Diadema",
+          "format": "48 x 203mm",
+          "shape": null
+        }
+      ]
+    }
+  ],
+  "Flor de Selva": [
+    {
+      "id": "cig-flor-de-selva-2023-year-of-rabbit",
+      "line": "2023 Year of Rabbit",
+      "vitola": "Toro",
+      "vitolas": [
+        {
+          "name": "Toro",
+          "format": "52 x 152mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-flor-de-selva-2024-year-of-dragon",
+      "line": "2024 Year of Dragon",
+      "vitola": "Double Corona",
+      "vitolas": [
+        {
+          "name": "Double Corona",
+          "format": "52 x 202mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-flor-de-selva-2026-year-of-horse",
+      "line": "2026 Year of Horse",
+      "vitola": "Double Corona",
+      "vitolas": [
+        {
+          "name": "Double Corona",
+          "format": "52 x 202mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-flor-de-selva-aniversario",
+      "line": "Aniversario",
+      "vitola": "Petit Corona",
+      "vitolas": [
+        {
+          "name": "Petit Corona",
+          "format": "42 x 121mm",
+          "shape": null
+        },
+        {
+          "name": "Robusto",
+          "format": "50 x 127mm",
+          "shape": null
+        },
+        {
+          "name": "Toro",
+          "format": "52 x 152mm",
+          "shape": null
+        },
+        {
+          "name": "Short Robusto",
+          "format": "56 x 106mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-flor-de-selva-ano-del-dragon",
+      "line": "Ano Del Dragon",
+      "vitola": "Del Dragon",
+      "vitolas": [
+        {
+          "name": "Del Dragon",
+          "format": "52 x 190mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-flor-de-selva-classic",
+      "line": "Classic",
+      "vitola": "Petit Corona",
+      "vitolas": [
+        {
+          "name": "Petit Corona",
+          "format": "40 x 121mm",
+          "shape": null
+        },
+        {
+          "name": "Corona",
+          "format": "47 x 142mm",
+          "shape": null
+        },
+        {
+          "name": "Churchill",
+          "format": "48 x 182mm",
+          "shape": null
+        },
+        {
+          "name": "Robusto",
+          "format": "50 x 127mm",
+          "shape": null
+        },
+        {
+          "name": "Double Corona",
+          "format": "52 x 142mm",
+          "shape": null
+        },
+        {
+          "name": "Toro",
+          "format": "52 x 152mm",
+          "shape": null
+        },
+        {
+          "name": "Figurado",
+          "format": "54 x 178mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-flor-de-selva-clasica",
+      "line": "Clásica",
+      "vitola": "Robusto",
+      "vitolas": [
+        {
+          "name": "Robusto",
+          "format": "50 x 120mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-flor-de-selva-coffret-maduro",
+      "line": "Coffret Maduro",
+      "vitola": "Coffret Maduro",
+      "vitolas": [
+        {
+          "name": "Coffret Maduro",
+          "format": "—",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-flor-de-selva-coffret-no-20",
+      "line": "Coffret No. 20",
+      "vitola": "No. 20",
+      "vitolas": [
+        {
+          "name": "No. 20",
+          "format": "—",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-flor-de-selva-el-galan-cabinet",
+      "line": "El Galan Cabinet",
+      "vitola": "Galan Cabinet",
+      "vitolas": [
+        {
+          "name": "Galan Cabinet",
+          "format": "49 x 148mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-flor-de-selva-fino",
+      "line": "Fino",
+      "vitola": "Fino",
+      "vitolas": [
+        {
+          "name": "Fino",
+          "format": "44 x 153mm",
+          "shape": null
+        },
+        {
+          "name": "Selva Fino",
+          "format": "44 x 153mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-flor-de-selva-grand-presse-maduro",
+      "line": "Grand Presse Maduro",
+      "vitola": "Presse Maduro",
+      "vitolas": [
+        {
+          "name": "Presse Maduro",
+          "format": "56 x 152mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-flor-de-selva-maduro-grand-press",
+      "line": "Maduro Grand-Press",
+      "vitola": "Toro",
+      "vitolas": [
+        {
+          "name": "Toro",
+          "format": "56 x 152mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-flor-de-selva-maduro-no-15",
+      "line": "Maduro No. 15",
+      "vitola": "Figurado",
+      "vitolas": [
+        {
+          "name": "Figurado",
+          "format": "54 x 178mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-flor-de-selva-no-20-celebracion",
+      "line": "No. 20 Celebracion",
+      "vitola": "Petit Corona",
+      "vitolas": [
+        {
+          "name": "Petit Corona",
+          "format": "42 x 140mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-flor-de-selva-numero-xv",
+      "line": "Numero Xv",
+      "vitola": "Numero Xv",
+      "vitolas": [
+        {
+          "name": "Numero Xv",
+          "format": "54 x 140mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-flor-de-selva-robusto-maduro",
+      "line": "Robusto Maduro",
+      "vitola": "Robusto",
+      "vitolas": [
+        {
+          "name": "Robusto",
+          "format": "50 x 121mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-flor-de-selva-tempo",
+      "line": "Tempo",
+      "vitola": "Tempo",
+      "vitolas": [
+        {
+          "name": "Tempo",
+          "format": "60 x 152mm",
+          "shape": null
+        }
+      ]
+    }
+  ],
+  "1502": [
+    {
+      "id": "cig-1502-aniversario-10",
+      "line": "Aniversario 10",
+      "vitola": "Toro",
+      "vitolas": [
+        {
+          "name": "Toro",
+          "format": "50 x 152mm",
+          "shape": "Toro"
+        }
+      ]
+    },
+    {
+      "id": "cig-1502-black-gold",
+      "line": "Black Gold",
+      "vitola": "Lancero",
+      "vitolas": [
+        {
+          "name": "Lancero",
+          "format": "38 x 189mm",
+          "shape": null
+        },
+        {
+          "name": "Robusto",
+          "format": "50 x 127mm",
+          "shape": null
+        },
+        {
+          "name": "Toro",
+          "format": "50 x 152mm",
+          "shape": null
+        },
+        {
+          "name": "Perfecto",
+          "format": "52 x 144mm",
+          "shape": null
+        },
+        {
+          "name": "Torpedo",
+          "format": "52 x 154mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-1502-blue-sapphire-robusto-gordo",
+      "line": "Blue Sapphire Robusto Gordo",
+      "vitola": "Robusto",
+      "vitolas": [
+        {
+          "name": "Robusto",
+          "format": "52 x 127mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-1502-emerald",
+      "line": "Emerald",
+      "vitola": "Lancero",
+      "vitolas": [
+        {
+          "name": "Emerald Lancero",
+          "format": "40 x 178mm",
+          "shape": null
+        },
+        {
+          "name": "Lancero",
+          "format": "40 x 189mm",
+          "shape": null
+        },
+        {
+          "name": "Robusto",
+          "format": "50 x 127mm",
+          "shape": null
+        },
+        {
+          "name": "Toro",
+          "format": "50 x 152mm",
+          "shape": null
+        },
+        {
+          "name": "Perfecto",
+          "format": "52 x 144mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-1502-nicaragua",
+      "line": "Nicaragua",
+      "vitola": "Churchill",
+      "vitolas": [
+        {
+          "name": "Churchill",
+          "format": "48 x 178mm",
+          "shape": "Churchill"
+        },
+        {
+          "name": "Robusto",
+          "format": "50 x 127mm",
+          "shape": "Robusto"
+        }
+      ]
+    },
+    {
+      "id": "cig-1502-ruby",
+      "line": "Ruby",
+      "vitola": "Lancero",
+      "vitolas": [
+        {
+          "name": "Lancero",
+          "format": "38 x 189mm",
+          "shape": null
+        },
+        {
+          "name": "Toro",
+          "format": "50 x 152mm",
+          "shape": null
+        },
+        {
+          "name": "Perfecto",
+          "format": "52 x 144mm",
+          "shape": null
+        },
+        {
+          "name": "Torpedo",
+          "format": "52 x 154mm",
+          "shape": null
+        },
+        {
+          "name": "Ruby Conquistador",
+          "format": "56 x 152mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-1502-special-edition-anniversario-10",
+      "line": "Special Edition Anniversario 10",
+      "vitola": "Toro",
+      "vitolas": [
+        {
+          "name": "Toro",
+          "format": "50 x 152mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-1502-special-edition-blue-sapphire",
+      "line": "Special Edition Blue Sapphire",
+      "vitola": "Lancero",
+      "vitolas": [
+        {
+          "name": "Lancero",
+          "format": "38 x 189mm",
+          "shape": null
+        },
+        {
+          "name": "Robusto",
+          "format": "52 x 127mm",
+          "shape": null
+        },
+        {
+          "name": "Toro",
+          "format": "52 x 152mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-1502-special-edition-cachito",
+      "line": "Special Edition Cachito",
+      "vitola": "Lancero",
+      "vitolas": [
+        {
+          "name": "Lancero",
+          "format": "38 x 189mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-1502-special-edition-cachito-original",
+      "line": "Special Edition Cachito Original",
+      "vitola": "Short Robusto",
+      "vitolas": [
+        {
+          "name": "Short Robusto",
+          "format": "50 x 106mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-1502-special-edition-cachito-white-connecticut",
+      "line": "Special Edition Cachito White Connecticut",
+      "vitola": "Short Robusto",
+      "vitolas": [
+        {
+          "name": "Short Robusto",
+          "format": "50 x 106mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-1502-special-edition-xo-series",
+      "line": "Special Edition XO Series",
+      "vitola": "Lancero",
+      "vitolas": [
+        {
+          "name": "Lancero",
+          "format": "40 x 189mm",
+          "shape": null
+        },
+        {
+          "name": "Toro",
+          "format": "50 x 152mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-1502-xo-conquistador",
+      "line": "Xo Conquistador",
+      "vitola": "Xo Conquistador",
+      "vitolas": [
+        {
+          "name": "Xo Conquistador",
+          "format": "50 x 152mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-1502-xo-perfecto",
+      "line": "Xo Perfecto",
+      "vitola": "Xo Perfecto",
+      "vitolas": [
+        {
+          "name": "Xo Perfecto",
+          "format": "52 x 165mm",
+          "shape": null
+        }
+      ]
+    }
+  ],
+  "Artista": [
+    {
+      "id": "cig-artista-art-56-claro",
+      "line": "ART-56 Claro",
+      "vitola": "Toro",
+      "vitolas": [
+        {
+          "name": "Toro",
+          "format": "50 x 152mm",
+          "shape": null
+        },
+        {
+          "name": "Robusto",
+          "format": "54 x 127mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-artista-art-56-maduro",
+      "line": "ART-56 Maduro",
+      "vitola": "Toro",
+      "vitolas": [
+        {
+          "name": "Toro",
+          "format": "50 x 152mm",
+          "shape": null
+        },
+        {
+          "name": "Robusto",
+          "format": "54 x 127mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-artista-art-56-natural",
+      "line": "ART-56 Natural",
+      "vitola": "Toro",
+      "vitolas": [
+        {
+          "name": "Toro",
+          "format": "50 x 152mm",
+          "shape": null
+        },
+        {
+          "name": "Robusto",
+          "format": "54 x 127mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-artista-david-ortiz-hof",
+      "line": "David Ortiz HOF",
+      "vitola": "Toro",
+      "vitolas": [
+        {
+          "name": "Toro",
+          "format": "54 x 152mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-artista-david-ortiz-hof-limited-edition",
+      "line": "David Ortiz HOF Limited Edition",
+      "vitola": "Figurado",
+      "vitolas": [
+        {
+          "name": "Figurado",
+          "format": "60 x 178mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-artista-david-ortiz-slugger-by-big-papi",
+      "line": "David Ortiz Slugger by Big Papi",
+      "vitola": "Robusto",
+      "vitolas": [
+        {
+          "name": "Robusto",
+          "format": "50 x 127mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-artista-factory-classics-exactus-connecticut",
+      "line": "Factory Classics Exactus Connecticut",
+      "vitola": "Toro",
+      "vitolas": [
+        {
+          "name": "Toro",
+          "format": "50 x 152mm",
+          "shape": null
+        },
+        {
+          "name": "Robusto",
+          "format": "54 x 127mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-artista-factory-classics-exactus-maduro",
+      "line": "Factory Classics Exactus Maduro",
+      "vitola": "Toro",
+      "vitolas": [
+        {
+          "name": "Toro",
+          "format": "50 x 152mm",
+          "shape": null
+        },
+        {
+          "name": "Robusto",
+          "format": "54 x 127mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-artista-factory-classics-pulita-60-aniversario",
+      "line": "Factory Classics Pulita 60 Aniversario",
+      "vitola": "Robusto",
+      "vitolas": [
+        {
+          "name": "Robusto",
+          "format": "50 x 127mm",
+          "shape": null
+        },
+        {
+          "name": "Toro",
+          "format": "54 x 152mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-artista-factory-classics-puro-ambar",
+      "line": "Factory Classics Puro Ambar",
+      "vitola": "Short Robusto",
+      "vitolas": [
+        {
+          "name": "Short Robusto",
+          "format": "54 x 106mm",
+          "shape": null
+        },
+        {
+          "name": "Toro",
+          "format": "54 x 152mm",
+          "shape": null
+        },
+        {
+          "name": "Legacy Grand Toro",
+          "format": "56 x 152mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-artista-falu",
+      "line": "Falu",
+      "vitola": "Toro",
+      "vitolas": [
+        {
+          "name": "Toro",
+          "format": "50 x 152mm",
+          "shape": null
+        },
+        {
+          "name": "Robusto",
+          "format": "54 x 127mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-artista-harvest",
+      "line": "Harvest",
+      "vitola": "Toro",
+      "vitolas": [
+        {
+          "name": "Toro",
+          "format": "50 x 152mm",
+          "shape": null
+        },
+        {
+          "name": "Robusto",
+          "format": "54 x 127mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-artista-midnight",
+      "line": "Midnight",
+      "vitola": "Toro",
+      "vitolas": [
+        {
+          "name": "Toro",
+          "format": "50 x 152mm",
+          "shape": null
+        },
+        {
+          "name": "Robusto",
+          "format": "54 x 127mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-artista-rugged-country-buffalo-ten-maduro",
+      "line": "Rugged Country Buffalo Ten MADURO",
+      "vitola": "Toro",
+      "vitolas": [
+        {
+          "name": "Toro",
+          "format": "50 x 152mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-artista-rugged-country-cimarron-colorado",
+      "line": "Rugged Country Cimarron Colorado",
+      "vitola": "Toro",
+      "vitolas": [
+        {
+          "name": "Toro",
+          "format": "50 x 152mm",
+          "shape": null
+        },
+        {
+          "name": "Robusto",
+          "format": "54 x 127mm",
+          "shape": null
+        },
+        {
+          "name": "Doble Toro",
+          "format": "60 x 152mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-artista-rugged-country-cimarron-connecticut",
+      "line": "Rugged Country Cimarron Connecticut",
+      "vitola": "Toro",
+      "vitolas": [
+        {
+          "name": "Toro",
+          "format": "50 x 152mm",
+          "shape": null
+        },
+        {
+          "name": "Robusto",
+          "format": "54 x 127mm",
+          "shape": null
+        },
+        {
+          "name": "Doble Toro",
+          "format": "60 x 152mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-artista-rugged-country-cimarron-maduro",
+      "line": "Rugged Country Cimarron Maduro",
+      "vitola": "Toro",
+      "vitolas": [
+        {
+          "name": "Toro",
+          "format": "50 x 152mm",
+          "shape": null
+        },
+        {
+          "name": "Robusto",
+          "format": "54 x 127mm",
+          "shape": null
+        },
+        {
+          "name": "Doble Toro",
+          "format": "60 x 152mm",
+          "shape": null
+        }
+      ]
+    }
+  ],
+  "Casa Turrent": [
+    {
+      "id": "cig-casa-turrent-1880-claro",
+      "line": "1880 Claro",
+      "vitola": "Lancero",
+      "vitolas": [
+        {
+          "name": "Lancero",
+          "format": "40 x 189mm",
+          "shape": null
+        },
+        {
+          "name": "Short Robusto",
+          "format": "52 x 106mm",
+          "shape": null
+        },
+        {
+          "name": "Perfecto",
+          "format": "54 x 144mm",
+          "shape": null
+        },
+        {
+          "name": "Doble Robusto",
+          "format": "55 x 127mm",
+          "shape": null
+        },
+        {
+          "name": "Robusto",
+          "format": "55 x 127mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-casa-turrent-1880-colorado-doble",
+      "line": "1880 Colorado Doble",
+      "vitola": "Robusto",
+      "vitolas": [
+        {
+          "name": "Robusto",
+          "format": "55 x 127mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-casa-turrent-1880-edicion-limitada",
+      "line": "1880 Edición Limitada",
+      "vitola": "Double Robusto",
+      "vitolas": [
+        {
+          "name": "Double Robusto",
+          "format": "55 x 138mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-casa-turrent-1880-maduro-doble",
+      "line": "1880 Maduro Doble",
+      "vitola": "Robusto",
+      "vitolas": [
+        {
+          "name": "Robusto",
+          "format": "55 x 127mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-casa-turrent-1880-oscuro-doble",
+      "line": "1880 Oscuro Doble",
+      "vitola": "Robusto",
+      "vitolas": [
+        {
+          "name": "Robusto",
+          "format": "55 x 127mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-casa-turrent-1880-rosado-460",
+      "line": "1880 Rosado 460",
+      "vitola": "Gordo",
+      "vitolas": [
+        {
+          "name": "Gordo",
+          "format": "60 x 159mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-casa-turrent-1901-maduro",
+      "line": "1901 Maduro",
+      "vitola": "Robusto",
+      "vitolas": [
+        {
+          "name": "Robusto",
+          "format": "50 x 127mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-casa-turrent-1942-natural",
+      "line": "1942 NATURAL",
+      "vitola": "Robusto",
+      "vitolas": [
+        {
+          "name": "Robusto",
+          "format": "50 x 127mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-casa-turrent-1973-natural",
+      "line": "1973 NATURAL",
+      "vitola": "Robusto",
+      "vitolas": [
+        {
+          "name": "Robusto",
+          "format": "50 x 127mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-casa-turrent-habano",
+      "line": "Habano",
+      "vitola": "Petit Corona",
+      "vitolas": [
+        {
+          "name": "Petit Corona",
+          "format": "38 x 102mm",
+          "shape": null
+        },
+        {
+          "name": "Corona",
+          "format": "40 x 140mm",
+          "shape": null
+        },
+        {
+          "name": "Lonsdale",
+          "format": "45 x 140mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-casa-turrent-maduro",
+      "line": "Maduro",
+      "vitola": "Robusto",
+      "vitolas": [
+        {
+          "name": "Robusto",
+          "format": "54 x 127mm",
+          "shape": null
+        },
+        {
+          "name": "Gordo",
+          "format": "60 x 152mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-casa-turrent-maduro-short",
+      "line": "Maduro Short",
+      "vitola": "Torpedo",
+      "vitolas": [
+        {
+          "name": "Torpedo",
+          "format": "54 x 127mm",
+          "shape": null
+        },
+        {
+          "name": "Gordo",
+          "format": "58 x 102mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-casa-turrent-origin-extra-caribe",
+      "line": "Origin Extra Caribe",
+      "vitola": "Robusto",
+      "vitolas": [
+        {
+          "name": "Robusto",
+          "format": "54 x 127mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-casa-turrent-origin-extra-miami",
+      "line": "Origin Extra Miami",
+      "vitola": "Robusto",
+      "vitolas": [
+        {
+          "name": "Robusto",
+          "format": "54 x 127mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-casa-turrent-origin-extra-nicaragua",
+      "line": "Origin Extra Nicaragua",
+      "vitola": "Robusto",
+      "vitolas": [
+        {
+          "name": "Robusto",
+          "format": "54 x 127mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-casa-turrent-origin-extra-san-andres",
+      "line": "Origin Extra San Andres",
+      "vitola": "Robusto",
+      "vitolas": [
+        {
+          "name": "Robusto",
+          "format": "54 x 127mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-casa-turrent-revolution-original",
+      "line": "Revolution Original",
+      "vitola": "Short Robusto",
+      "vitolas": [
+        {
+          "name": "Wide Corona",
+          "format": "46 x 142mm",
+          "shape": null
+        },
+        {
+          "name": "Short Robusto",
+          "format": "52 x 106mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-casa-turrent-sumatra",
+      "line": "Sumatra",
+      "vitola": "Panetela",
+      "vitolas": [
+        {
+          "name": "Panetela",
+          "format": "32 x 127mm",
+          "shape": null
+        },
+        {
+          "name": "Short Torpedo",
+          "format": "52 x 127mm",
+          "shape": null
+        },
+        {
+          "name": "Torpedo",
+          "format": "52 x 156mm",
+          "shape": null
+        },
+        {
+          "name": "Robusto",
+          "format": "54 x 127mm",
+          "shape": null
+        }
+      ]
+    }
+  ],
+  "La Aroma de Cuba": [
+    {
+      "id": "cig-la-aroma-de-cuba-connecticut",
+      "line": "Connecticut",
+      "vitola": "Corona",
+      "vitolas": [
+        {
+          "name": "Corona",
+          "format": "44 x 140mm",
+          "shape": null
+        },
+        {
+          "name": "Short Robusto",
+          "format": "50 x 127mm",
+          "shape": null
+        },
+        {
+          "name": "Churchill",
+          "format": "50 x 178mm",
+          "shape": null
+        },
+        {
+          "name": "Belicoso",
+          "format": "52 x 140mm",
+          "shape": null
+        },
+        {
+          "name": "Robusto",
+          "format": "54 x 133mm",
+          "shape": null
+        },
+        {
+          "name": "Double Corona",
+          "format": "54 x 190mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-la-aroma-de-cuba-edicion-especial-5",
+      "line": "Edición Especial #5",
+      "vitola": "Belicoso",
+      "vitolas": [
+        {
+          "name": "Belicoso",
+          "format": "52 x 140mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-la-aroma-de-cuba-la-aroma-de-cuba",
+      "line": "La Aroma de Cuba",
+      "vitola": "Corona",
+      "vitolas": [
+        {
+          "name": "Corona",
+          "format": "44 x 140mm",
+          "shape": null
+        },
+        {
+          "name": "Short Robusto",
+          "format": "50 x 127mm",
+          "shape": null
+        },
+        {
+          "name": "Churchill",
+          "format": "50 x 178mm",
+          "shape": null
+        },
+        {
+          "name": "Belicoso",
+          "format": "52 x 140mm",
+          "shape": null
+        },
+        {
+          "name": "Robusto",
+          "format": "54 x 133mm",
+          "shape": null
+        },
+        {
+          "name": "Double Corona",
+          "format": "54 x 190mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-la-aroma-de-cuba-la-aroma-del-caribe",
+      "line": "La Aroma Del Caribe",
+      "vitola": "Robusto",
+      "vitolas": [
+        {
+          "name": "Robusto",
+          "format": "54 x 133mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-la-aroma-de-cuba-la-aroma-del-caribe-base-line",
+      "line": "La Aroma del Caribe Base Line",
+      "vitola": "Short Robusto",
+      "vitolas": [
+        {
+          "name": "Short Robusto",
+          "format": "50 x 106mm",
+          "shape": null
+        },
+        {
+          "name": "Churchill",
+          "format": "50 x 182mm",
+          "shape": null
+        },
+        {
+          "name": "Monarch",
+          "format": "52 x 152mm",
+          "shape": null
+        },
+        {
+          "name": "Robusto",
+          "format": "54 x 127mm",
+          "shape": null
+        },
+        {
+          "name": "El Jefe",
+          "format": "58 x 159mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-la-aroma-de-cuba-la-aroma-del-caribe-connecticut",
+      "line": "La Aroma del Caribe Connecticut",
+      "vitola": "Short Robusto",
+      "vitolas": [
+        {
+          "name": "Short Robusto",
+          "format": "50 x 106mm",
+          "shape": null
+        },
+        {
+          "name": "Churchill",
+          "format": "50 x 182mm",
+          "shape": null
+        },
+        {
+          "name": "Monarch Toro",
+          "format": "52 x 152mm",
+          "shape": null
+        },
+        {
+          "name": "Robusto",
+          "format": "54 x 127mm",
+          "shape": null
+        },
+        {
+          "name": "Immensa Gordo",
+          "format": "60 x 159mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-la-aroma-de-cuba-la-aroma-del-caribe-mi-amor",
+      "line": "La Aroma del Caribe Mi Amor",
+      "vitola": "Robusto",
+      "vitolas": [
+        {
+          "name": "Robusto",
+          "format": "50 x 127mm",
+          "shape": null
+        },
+        {
+          "name": "Belicoso",
+          "format": "54 x 140mm",
+          "shape": null
+        },
+        {
+          "name": "Duque",
+          "format": "56 x 127mm",
+          "shape": null
+        },
+        {
+          "name": "Valentino",
+          "format": "58 x 159mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-la-aroma-de-cuba-la-aroma-del-caribe-pasion",
+      "line": "La Aroma del Caribe Pasion",
+      "vitola": "Churchill",
+      "vitolas": [
+        {
+          "name": "Churchill",
+          "format": "49 x 182mm",
+          "shape": null
+        },
+        {
+          "name": "Robusto",
+          "format": "50 x 127mm",
+          "shape": null
+        },
+        {
+          "name": "Torpedo",
+          "format": "54 x 154mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-la-aroma-de-cuba-mi-amor",
+      "line": "Mi Amor",
+      "vitola": "Robusto",
+      "vitolas": [
+        {
+          "name": "Robusto",
+          "format": "50 x 127mm",
+          "shape": null
+        },
+        {
+          "name": "Churchill",
+          "format": "50 x 178mm",
+          "shape": null
+        },
+        {
+          "name": "Belicoso",
+          "format": "54 x 140mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-la-aroma-de-cuba-noblesse-viceroy",
+      "line": "Noblesse Viceroy",
+      "vitola": "Piramide",
+      "vitolas": [
+        {
+          "name": "Piramide",
+          "format": "52 x 156mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-la-aroma-de-cuba-pasion",
+      "line": "Pasión",
+      "vitola": "Corona Gorda",
+      "vitolas": [
+        {
+          "name": "Corona Gorda",
+          "format": "46 x 143mm",
+          "shape": null
+        },
+        {
+          "name": "Churchill",
+          "format": "49 x 178mm",
+          "shape": null
+        },
+        {
+          "name": "Robusto",
+          "format": "50 x 140mm",
+          "shape": null
+        },
+        {
+          "name": "Torpedo",
+          "format": "54 x 156mm",
+          "shape": null
+        }
+      ]
+    },
+    {
+      "id": "cig-la-aroma-de-cuba-reserva",
+      "line": "Reserva",
+      "vitola": "Belicoso",
+      "vitolas": [
+        {
+          "name": "Belicoso",
+          "format": "52 x 140mm",
+          "shape": null
+        }
+      ]
+    }
+  ]
+}

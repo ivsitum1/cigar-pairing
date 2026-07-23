@@ -1,15 +1,72 @@
 {
   "brand": "Ashton",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-23",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "https://ashtoncigar.com/",
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w1_slice5 deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.1"
   ],
   "lines": {
-    "Paradiso By Papagayo XXL": {
-      "line": "Paradiso By Papagayo",
-      "vitola": "XXL"
+    "Aged Maduro": {
+      "line": "Aged Maduro"
+    },
+    "Benchmade": {
+      "line": "Benchmade"
+    },
+    "Cabinet": {
+      "line": "Cabinet"
+    },
+    "Cabinet Selection": {
+      "line": "Cabinet Selection"
+    },
+    "Classic": {
+      "line": "Classic"
+    },
+    "Crystal": {
+      "line": "Crystal"
+    },
+    "ESG": {
+      "line": "ESG"
+    },
+    "Heritage Belicoso": {
+      "line": "Heritage",
+      "vitola": "Belicoso"
+    },
+    "Heritage Puro Sol": {
+      "line": "Heritage",
+      "vitola": "Puro Sol"
+    },
+    "It's a Boy / It's a Girl Crystal It's a Boy": {
+      "line": "It's a Boy",
+      "sampler": true
+    },
+    "It's a Boy / It's a Girl Crystal It's a Girl": {
+      "line": "It's a Girl",
+      "sampler": true
+    },
+    "Paradiso By Monumento": {
+      "line": "Paradiso Monumento"
+    },
+    "Paradiso By Papagayo": {
+      "line": "Paradiso Papagayo"
+    },
+    "Paragon": {
+      "line": "Paragon"
+    },
+    "Sovereign": {
+      "line": "Sovereign"
+    },
+    "Symmetry": {
+      "line": "Symmetry"
+    },
+    "VSG": {
+      "line": "VSG"
+    },
+    "VSG (Virgin Sun Grown)": {
+      "line": "VSG (Virgin Sun Grown)"
     }
   },
   "vitolaRenames": {},
@@ -25,5 +82,7 @@
     ]
   ],
   "lineNotes": {},
-  "unresolved": []
+  "unresolved": [
+    "Ashton: VSG / Cabinet keepSeparate pairs retained from seed"
+  ]
 }

@@ -1,27 +1,81 @@
 {
   "brand": "PDR",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-23",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "https://pdrcigars.com/",
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w1_slice5 deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.1"
   ],
   "lines": {
-    "Capa Madura Crystal": {
-      "line": "Capa Madura",
-      "vitola": "Crystal"
+    "1878 Capa Sun Grown": {
+      "line": "1878",
+      "vitola": "Capa Sun Grown"
     },
-    "Capa Natural Crystal": {
-      "line": "Capa Natural",
-      "vitola": "Crystal"
+    "1975 Privada Rosado SP 52": {
+      "line": "1975 Privada Rosado"
     },
-    "Capa Oscura Crystal": {
-      "line": "Capa Oscura",
-      "vitola": "Crystal"
+    "A. Flores Gran Reserva Corojo 2006": {
+      "line": "A. Flores Gran Reserva",
+      "vitola": "Corojo 2006"
     },
-    "Capa Sun Grown Crystal": {
-      "line": "Capa Sun Grown",
-      "vitola": "Crystal"
+    "A. Flores Gran Reserva Desflorado": {
+      "line": "A. Flores Gran Reserva",
+      "vitola": "Desflorado"
+    },
+    "A. Flores Gran Reserva Maduro": {
+      "line": "A. Flores Gran Reserva",
+      "vitola": "Maduro"
+    },
+    "A. Flores Gran Reserva Sungrown": {
+      "line": "A. Flores Gran Reserva",
+      "vitola": "Sungrown"
+    },
+    "Capa Madura": {
+      "line": "Capa Madura"
+    },
+    "Capa Natural": {
+      "line": "Capa Natural"
+    },
+    "Capa Oscura": {
+      "line": "Capa Oscura"
+    },
+    "Capa Sun Grown": {
+      "line": "Capa Sun Grown"
+    },
+    "El Criollito A Flores Habano": {
+      "line": "El Criollito",
+      "vitola": "A Flores Habano"
+    },
+    "El Criollito Rosado": {
+      "line": "El Criollito",
+      "vitola": "Rosado"
+    },
+    "El Vinyet Cuvee Especial BF 52 Fino 2024": {
+      "line": "El Vinyet Cuvée Especial",
+      "vitola": "Fino"
+    },
+    "El Vinyet Cuvee Especial RC 52 Clasico 2024": {
+      "line": "El Vinyet Cuvée Especial",
+      "vitola": "Clasico"
+    },
+    "El Vinyet Cuvee Especial WC 58 Wide 2024": {
+      "line": "El Vinyet Cuvée Especial",
+      "vitola": "Wide"
+    },
+    "Flores Y Rodriguez 10th Anniversary": {
+      "line": "Flores Y Rodriguez 10th Anniversary"
+    },
+    "Roast Special": {
+      "line": "Roast Special"
+    },
+    "Value Line Reserve": {
+      "line": "Value Line Reserve"
+    },
+    "Value Line Reserve Connecticut": {
+      "line": "Value Line Reserve Connecticut"
     }
   },
   "vitolaRenames": {},

@@ -1,15 +1,60 @@
 {
   "brand": "1502",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-23",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "https://1502cigars.com/",
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w1_slice5 deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.1"
   ],
   "lines": {
-    "Special Edition Blue Sapphire Gordo": {
+    "Aniversario 10": {
+      "line": "Aniversario 10"
+    },
+    "Black Gold": {
+      "line": "Black Gold"
+    },
+    "Blue Sapphire Robusto Gordo": {
       "line": "Special Edition Blue Sapphire",
-      "vitola": "Robusto"
+      "vitola": "Robusto Gordo",
+      "shape": "Gordo"
+    },
+    "Emerald": {
+      "line": "Emerald"
+    },
+    "Nicaragua": {
+      "line": "Nicaragua"
+    },
+    "Ruby": {
+      "line": "Ruby"
+    },
+    "Special Edition Anniversario 10": {
+      "line": "Aniversario 10"
+    },
+    "Special Edition Blue Sapphire": {
+      "line": "Special Edition Blue Sapphire"
+    },
+    "Special Edition Cachito": {
+      "line": "Special Edition Cachito"
+    },
+    "Special Edition Cachito Original": {
+      "line": "Special Edition Cachito Original"
+    },
+    "Special Edition Cachito White Connecticut": {
+      "line": "Special Edition Cachito White Connecticut"
+    },
+    "Special Edition XO Series": {
+      "line": "Special Edition XO Series"
+    },
+    "Xo Conquistador": {
+      "line": "Special Edition XO Series",
+      "vitola": "Conquistador"
+    },
+    "Xo Perfecto": {
+      "line": "Special Edition XO Series",
+      "vitola": "Perfecto"
     }
   },
   "vitolaRenames": {},

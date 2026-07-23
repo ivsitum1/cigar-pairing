@@ -1,15 +1,65 @@
 {
   "brand": "Artista",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-23",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "https://artistacigars.com/",
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w1_slice5 deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.1"
   ],
   "lines": {
-    "Factory Classics Puro Ambar Legacy Grand": {
-      "line": "Factory Classics Puro Ambar",
-      "vitola": "Legacy Grand Toro"
+    "ART-56 Claro": {
+      "line": "ART-56 Claro"
+    },
+    "ART-56 Maduro": {
+      "line": "ART-56 Maduro"
+    },
+    "ART-56 Natural": {
+      "line": "ART-56 Natural"
+    },
+    "David Ortiz HOF": {
+      "line": "David Ortiz HOF"
+    },
+    "David Ortiz HOF Limited Edition": {
+      "line": "David Ortiz HOF Limited Edition"
+    },
+    "David Ortiz Slugger by Big Papi": {
+      "line": "David Ortiz Slugger"
+    },
+    "Factory Classics Exactus Connecticut": {
+      "line": "Factory Classics Exactus Connecticut"
+    },
+    "Factory Classics Exactus Maduro": {
+      "line": "Factory Classics Exactus Maduro"
+    },
+    "Factory Classics Pulita 60 Aniversario": {
+      "line": "Factory Classics Pulita"
+    },
+    "Factory Classics Puro Ambar": {
+      "line": "Factory Classics Puro Ambar"
+    },
+    "Falu": {
+      "line": "Falu"
+    },
+    "Harvest": {
+      "line": "Harvest"
+    },
+    "Midnight": {
+      "line": "Midnight"
+    },
+    "Rugged Country Buffalo Ten MADURO": {
+      "line": "Rugged Country Buffalo Ten"
+    },
+    "Rugged Country Cimarron Colorado": {
+      "line": "Rugged Country Cimarron Colorado"
+    },
+    "Rugged Country Cimarron Connecticut": {
+      "line": "Rugged Country Cimarron Connecticut"
+    },
+    "Rugged Country Cimarron Maduro": {
+      "line": "Rugged Country Cimarron Maduro"
     }
   },
   "vitolaRenames": {},

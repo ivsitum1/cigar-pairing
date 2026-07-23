@@ -1,12 +1,81 @@
 {
   "brand": "Casa Turrent",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-23",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "https://casaturrent.com/",
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w1_slice5 deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.1"
   ],
-  "lines": {},
+  "lines": {
+    "1880 Claro": {
+      "line": "1880 Claro"
+    },
+    "1880 Colorado Doble": {
+      "line": "1880 Colorado",
+      "vitola": "Doble"
+    },
+    "1880 Edición Limitada": {
+      "line": "1880 Edición Limitada"
+    },
+    "1880 Maduro Doble": {
+      "line": "1880 Maduro",
+      "vitola": "Doble"
+    },
+    "1880 Oscuro Doble": {
+      "line": "1880 Oscuro",
+      "vitola": "Doble"
+    },
+    "1880 Rosado 460": {
+      "line": "1880 Rosado",
+      "vitola": "460"
+    },
+    "1901 Maduro": {
+      "line": "1901 Maduro"
+    },
+    "1942 NATURAL": {
+      "line": "1942",
+      "vitola": "Natural"
+    },
+    "1973 NATURAL": {
+      "line": "1973",
+      "vitola": "Natural"
+    },
+    "Habano": {
+      "line": "Habano"
+    },
+    "Maduro": {
+      "line": "Maduro"
+    },
+    "Maduro Short": {
+      "line": "Maduro",
+      "vitola": "Short"
+    },
+    "Origin Extra Caribe": {
+      "line": "Origin Extra",
+      "vitola": "Caribe"
+    },
+    "Origin Extra Miami": {
+      "line": "Origin Extra",
+      "vitola": "Miami"
+    },
+    "Origin Extra Nicaragua": {
+      "line": "Origin Extra",
+      "vitola": "Nicaragua"
+    },
+    "Origin Extra San Andres": {
+      "line": "Origin Extra",
+      "vitola": "San Andres"
+    },
+    "Revolution Original": {
+      "line": "Revolution"
+    },
+    "Sumatra": {
+      "line": "Sumatra"
+    }
+  },
   "vitolaRenames": {},
   "shapes": {},
   "keepSeparate": [
