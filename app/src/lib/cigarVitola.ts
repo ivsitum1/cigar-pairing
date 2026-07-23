@@ -95,5 +95,8 @@ export function applyVitola(cigar: Cigar, vitola: Vitola): Cigar {
     priceUrl: vitola.url ?? cigar.priceUrl,
     // odabir vitole → kupnja/cijena po regiji vode na TU vitolu (market katalog)
     regionLinks: vitola.regionLinks ?? cigar.regionLinks,
+    // prikaži SAMO odabranu vitolu (ne cijeli popis) — kad tražiš Robusto,
+    // Churchill i Half Corona te ne zanimaju
+    vitolas: [vitola],
   };
 }

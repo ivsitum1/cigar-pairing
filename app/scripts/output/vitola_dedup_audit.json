@@ -1,7 +1,23 @@
 {
   "locale_twin_merges": [],
+  "semantic_merges": [],
   "sampler_collapses": [],
   "prefix_suspects": [
+    {
+      "id": "cig-a-flores-el-criollito",
+      "brand": "A. Flores",
+      "line": "El Criollito",
+      "conflict": [
+        {
+          "name": "Half Corona",
+          "format": "46 x 105mm"
+        },
+        {
+          "name": "Half Corona",
+          "format": "50 x 105mm"
+        }
+      ]
+    },
     {
       "id": "cig-aganorsa-aniversario",
       "brand": "Aganorsa Leaf",
@@ -75,6 +91,36 @@
       "price": 10.0
     },
     {
+      "id": "cig-cle-connecticut",
+      "brand": "CLE",
+      "line": "Connecticut",
+      "conflict": [
+        {
+          "name": "Corona",
+          "format": "46 x 127mm"
+        },
+        {
+          "name": "Corona",
+          "format": "46 x 142mm"
+        }
+      ]
+    },
+    {
+      "id": "cig-davidoff-chefs-edition-2025",
+      "brand": "Davidoff",
+      "line": "Chefs Edition 2025",
+      "conflict": [
+        {
+          "name": "Toro",
+          "format": "52 x 159mm"
+        },
+        {
+          "name": "Toro",
+          "format": "53 x 152mm"
+        }
+      ]
+    },
+    {
       "id": "cig-davidoff-primeros-by-davidoff-dominican",
       "brand": "Davidoff",
       "line": "Primeros",
@@ -91,6 +137,411 @@
       "b": "Nicaragua Maduro",
       "format": "34 x 105mm",
       "price": 7.15
+    },
+    {
+      "id": "cig-don-diego-classic",
+      "brand": "Don Diego",
+      "line": "Classic",
+      "conflict": [
+        {
+          "name": "Robusto",
+          "format": "50 x 127mm"
+        },
+        {
+          "name": "Robusto",
+          "format": "52 x 127mm"
+        }
+      ]
+    },
+    {
+      "id": "cig-don-julio-punta-espada",
+      "brand": "Don Julio",
+      "line": "Punta Espada",
+      "conflict": [
+        {
+          "name": "Gordo",
+          "format": "58 x 159mm"
+        },
+        {
+          "name": "Gordo",
+          "format": "60 x 159mm"
+        }
+      ]
+    },
+    {
+      "id": "cig-don-pepin-garcia-don-pepin-garcia-original",
+      "brand": "Don Pépin García",
+      "line": "Don Pepin Garcia Original",
+      "conflict": [
+        {
+          "name": "Gran Toro",
+          "format": "56 x 152mm"
+        },
+        {
+          "name": "Gran Toro",
+          "format": "62 x 152mm"
+        }
+      ]
+    },
+    {
+      "id": "cig-factory-overrun-nicaragua",
+      "brand": "Factory Overrun",
+      "line": "Nicaragua",
+      "conflict": [
+        {
+          "name": "Robusto",
+          "format": "50 x 127mm"
+        },
+        {
+          "name": "Robusto",
+          "format": "52 x 127mm"
+        }
+      ]
+    },
+    {
+      "id": "cig-factory-overrun-nicaragua",
+      "brand": "Factory Overrun",
+      "line": "Nicaragua",
+      "conflict": [
+        {
+          "name": "Toro",
+          "format": "56 x 152mm"
+        },
+        {
+          "name": "Toro",
+          "format": "58 x 152mm"
+        }
+      ]
+    },
+    {
+      "id": "cig-flor-de-las-antillas-flor-de-las-antillas",
+      "brand": "Flor de las Antillas",
+      "line": "Flor de las Antillas",
+      "conflict": [
+        {
+          "name": "Gran Toro",
+          "format": "56 x 165mm"
+        },
+        {
+          "name": "Gran Toro",
+          "format": "60 x 152mm"
+        }
+      ]
+    },
+    {
+      "id": "cig-henry-clay-stalk-cut",
+      "brand": "Henry Clay",
+      "line": "Stalk Cut",
+      "conflict": [
+        {
+          "name": "Toro",
+          "format": "50 x 152mm"
+        },
+        {
+          "name": "Toro",
+          "format": "54 x 152mm"
+        }
+      ]
+    },
+    {
+      "id": "cig-hiram-amp-solomon-traveling-man",
+      "brand": "Hiram",
+      "line": "&amp; Solomon Traveling Man",
+      "conflict": [
+        {
+          "name": "Toro",
+          "format": "52 x 152mm"
+        },
+        {
+          "name": "Toro",
+          "format": "54 x 152mm"
+        }
+      ]
+    },
+    {
+      "id": "cig-holt-s-factory-specials-maduro",
+      "brand": "Holt's",
+      "line": "Factory Specials Maduro",
+      "conflict": [
+        {
+          "name": "Gordo",
+          "format": "54 x 190mm"
+        },
+        {
+          "name": "Gordo",
+          "format": "60 x 152mm"
+        }
+      ]
+    },
+    {
+      "id": "cig-holt-s-factory-specials-natural",
+      "brand": "Holt's",
+      "line": "Factory Specials Natural",
+      "conflict": [
+        {
+          "name": "Gordo",
+          "format": "54 x 190mm"
+        },
+        {
+          "name": "Gordo",
+          "format": "60 x 152mm"
+        }
+      ]
+    },
+    {
+      "id": "cig-holt-s-factory-specials-sun-grown",
+      "brand": "Holt's",
+      "line": "Factory Specials Sun Grown",
+      "conflict": [
+        {
+          "name": "Gordo",
+          "format": "54 x 190mm"
+        },
+        {
+          "name": "Gordo",
+          "format": "60 x 152mm"
+        }
+      ]
+    },
+    {
+      "id": "cig-kristoff-shade-grown",
+      "brand": "Kristoff",
+      "line": "Shade Grown",
+      "conflict": [
+        {
+          "name": "Robusto",
+          "format": "54 x 127mm"
+        },
+        {
+          "name": "Robusto",
+          "format": "54 x 140mm"
+        }
+      ]
+    },
+    {
+      "id": "cig-la-aurora-115-anniversary",
+      "brand": "La Aurora",
+      "line": "115 Anniversary",
+      "conflict": [
+        {
+          "name": "Toro",
+          "format": "54 x 152mm"
+        },
+        {
+          "name": "Toro",
+          "format": "58 x 152mm"
+        }
+      ]
+    },
+    {
+      "id": "cig-la-aurora-120-anniversary",
+      "brand": "La Aurora",
+      "line": "120 Anniversary",
+      "conflict": [
+        {
+          "name": "Toro",
+          "format": "54 x 152mm"
+        },
+        {
+          "name": "Toro",
+          "format": "58 x 152mm"
+        }
+      ]
+    },
+    {
+      "id": "cig-la-aurora-escogidos",
+      "brand": "La Aurora",
+      "line": "Escogidos",
+      "conflict": [
+        {
+          "name": "Toro",
+          "format": "52 x 152mm"
+        },
+        {
+          "name": "Toro",
+          "format": "54 x 152mm"
+        }
+      ]
+    },
+    {
+      "id": "cig-la-aurora-family-creed-fuerte-sol",
+      "brand": "La Aurora",
+      "line": "Family Creed Fuerte Sol",
+      "conflict": [
+        {
+          "name": "Toro",
+          "format": "54 x 152mm"
+        },
+        {
+          "name": "Toro",
+          "format": "58 x 152mm"
+        }
+      ]
+    },
+    {
+      "id": "cig-la-flor-dominicana-reserva-especial",
+      "brand": "La Flor Dominicana",
+      "line": "Reserva Especial",
+      "conflict": [
+        {
+          "name": "Robusto",
+          "format": "48 x 127mm"
+        },
+        {
+          "name": "Robusto",
+          "format": "60 x 140mm"
+        }
+      ]
+    },
+    {
+      "id": "cig-la-galera-85th",
+      "brand": "La Galera",
+      "line": "85th Anniversary / Habano",
+      "conflict": [
+        {
+          "name": "Anniversary Toro",
+          "format": "52 x 152mm"
+        },
+        {
+          "name": "Toro",
+          "format": "54 x 152mm"
+        }
+      ]
+    },
+    {
+      "id": "cig-my-father-la-gran-oferta",
+      "brand": "My Father",
+      "line": "La Gran Oferta",
+      "conflict": [
+        {
+          "name": "Torpedo",
+          "format": "52 x 154mm"
+        },
+        {
+          "name": "Torpedo",
+          "format": "52 x 156mm"
+        }
+      ]
+    },
+    {
+      "id": "cig-paradiso-quintessence",
+      "brand": "Paradiso",
+      "line": "Quintessence",
+      "conflict": [
+        {
+          "name": "Epicure",
+          "format": "52 x 148mm"
+        },
+        {
+          "name": "Epicure",
+          "format": "52 x 152mm"
+        }
+      ]
+    },
+    {
+      "id": "cig-perdomo-30th-anniversary-maduro",
+      "brand": "Perdomo",
+      "line": "30th Anniversary Maduro",
+      "conflict": [
+        {
+          "name": "Epicure",
+          "format": "54 x 148mm"
+        },
+        {
+          "name": "Epicure",
+          "format": "54 x 152mm"
+        }
+      ]
+    },
+    {
+      "id": "cig-perdomo-30th-anniversary-sun-grown",
+      "brand": "Perdomo",
+      "line": "30th Anniversary Sun Grown",
+      "conflict": [
+        {
+          "name": "Epicure",
+          "format": "54 x 148mm"
+        },
+        {
+          "name": "Epicure",
+          "format": "54 x 152mm"
+        }
+      ]
+    },
+    {
+      "id": "cig-quorum-classic",
+      "brand": "Quorum",
+      "line": "Classic",
+      "conflict": [
+        {
+          "name": "Corona",
+          "format": "43 x 140mm"
+        },
+        {
+          "name": "Corona",
+          "format": "43 x 142mm"
+        }
+      ]
+    },
+    {
+      "id": "cig-quorum-classic",
+      "brand": "Quorum",
+      "line": "Classic",
+      "conflict": [
+        {
+          "name": "Churchill",
+          "format": "48 x 178mm"
+        },
+        {
+          "name": "Churchill",
+          "format": "48 x 182mm"
+        }
+      ]
+    },
+    {
+      "id": "cig-quorum-classic",
+      "brand": "Quorum",
+      "line": "Classic",
+      "conflict": [
+        {
+          "name": "Short Robusto",
+          "format": "50 x 89mm"
+        },
+        {
+          "name": "Short Robusto",
+          "format": "50 x 106mm"
+        }
+      ]
+    },
+    {
+      "id": "cig-quorum-classic",
+      "brand": "Quorum",
+      "line": "Classic",
+      "conflict": [
+        {
+          "name": "Robusto",
+          "format": "50 x 121mm"
+        },
+        {
+          "name": "Robusto",
+          "format": "50 x 127mm"
+        }
+      ]
+    },
+    {
+      "id": "cig-rocky-patel-rp-sixty",
+      "brand": "Rocky Patel",
+      "line": "Sixty",
+      "conflict": [
+        {
+          "name": "Toro",
+          "format": "52 x 165mm"
+        },
+        {
+          "name": "Sixty Toro",
+          "format": "60 x 152mm"
+        }
+      ]
     },
     {
       "id": "cig-rocky-patel-rp-sixty",
@@ -118,6 +569,5176 @@
       "b": "Fabuloso No. 2",
       "format": "52 x 156mm",
       "price": 14.2
+    },
+    {
+      "id": "cig-saga-solaz",
+      "brand": "Saga",
+      "line": "Solaz",
+      "conflict": [
+        {
+          "name": "Gordo",
+          "format": "58 x 152mm"
+        },
+        {
+          "name": "Gordo",
+          "format": "58 x 159mm"
+        }
+      ]
+    },
+    {
+      "id": "cig-vallejuelo-clasic",
+      "brand": "Vallejuelo",
+      "line": "Clasic",
+      "conflict": [
+        {
+          "name": "Robusto",
+          "format": "50 x 127mm"
+        },
+        {
+          "name": "Robusto",
+          "format": "54 x 127mm"
+        }
+      ]
+    },
+    {
+      "id": "cig-vegafina-1998-vf-52",
+      "brand": "VegaFina",
+      "line": "1998 VF 52",
+      "conflict": [
+        {
+          "name": "Robusto",
+          "format": "6 x 127mm"
+        },
+        {
+          "name": "Robusto",
+          "format": "52 x 127mm"
+        }
+      ]
+    },
+    {
+      "id": "cig-vegafina-1998-vf-54",
+      "brand": "VegaFina",
+      "line": "1998 VF 54",
+      "conflict": [
+        {
+          "name": "Toro",
+          "format": "54 x 152mm"
+        },
+        {
+          "name": "Toro",
+          "format": "56 x 152mm"
+        }
+      ]
+    },
+    {
+      "id": "cig-vegas-de-santiago-d8",
+      "brand": "Vegas",
+      "line": "de Santiago D8",
+      "conflict": [
+        {
+          "name": "Short Robusto",
+          "format": "50 x 106mm"
+        },
+        {
+          "name": "Short Robusto",
+          "format": "54 x 106mm"
+        }
+      ]
+    }
+  ],
+  "shared_region_urls": [
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/a-turrent-puros-san-andres.html",
+      "cigars": [
+        "cig-a-turrent-puros-san-andres",
+        "cig-a-turrent-puros-san-andres-maduro"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/aksum-claro.html",
+      "cigars": [
+        "cig-aksum-claro",
+        "cig-aksum-claro-doble"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/aksum-maduro.html",
+      "cigars": [
+        "cig-aksum-maduro",
+        "cig-aksum-maduro-doble"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/alec-bradley-mundial.html",
+      "cigars": [
+        "cig-alec-bradley-mundial-pl4",
+        "cig-alec-bradley-mundial-pl5"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/alec-bradley-sanctum.html",
+      "cigars": [
+        "cig-alec-bradley-sanctum",
+        "cig-alec-bradley-sanctum-double"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/argyle-banquet-selection.html",
+      "cigars": [
+        "cig-argyle-banquet-selection",
+        "cig-argyle-banquet-selection-2"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/argyle-it-s-a-boy-it-s-a-girl.html",
+      "cigars": [
+        "cig-argyle-it-s-a-boy-it-s-a-girl-it-s-a-boy",
+        "cig-argyle-it-s-a-boy-it-s-a-girl-it-s-a-girl"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/arturo-fuente-claro.html",
+      "cigars": [
+        "cig-arturo-fuente-claro",
+        "cig-arturo-fuente-claro-spanish"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/arturo-fuente-seleccion-d-oro.html",
+      "cigars": [
+        "cig-arturo-fuente-seleccion-d-oro",
+        "cig-arturo-fuente-seleccion-d-oro-imperial"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/ashton-it-s-a-boy-it-s-a-girl.html",
+      "cigars": [
+        "cig-ashton-it-s-a-boy-it-s-a-girl-crystal-it-s-a-boy",
+        "cig-ashton-it-s-a-boy-it-s-a-girl-crystal-it-s-a-girl"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/ashton.html",
+      "cigars": [
+        "cig-ashton-crystal",
+        "cig-ashton-sovereign"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/ave-maria-argentum.html",
+      "cigars": [
+        "cig-ave-maria-argentum",
+        "cig-ave-maria-argentum-morning-star"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/avo-heritage.html",
+      "cigars": [
+        "cig-avo-heritage",
+        "cig-avo-heritage-special"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/avo-syncro.html",
+      "cigars": [
+        "cig-avo-syncro",
+        "cig-avo-syncro-special"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/avo-xo.html",
+      "cigars": [
+        "cig-avo-xo-legato",
+        "cig-avo-xo-notturno"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/baccarat.html",
+      "cigars": [
+        "cig-baccarat-maduro",
+        "cig-baccarat-the-game"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/bahia-maduro.html",
+      "cigars": [
+        "cig-bahia-maduro",
+        "cig-bahia-maduro-corona"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/benchmade.html",
+      "cigars": [
+        "cig-benchmade-maduro",
+        "cig-benchmade-natural",
+        "cig-benchmade-sun-grown"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/blenders-clearing-house.html",
+      "cigars": [
+        "cig-blenders-clearing-house-churchill",
+        "cig-blenders-clearing-house-gordo",
+        "cig-blenders-clearing-house-maduro",
+        "cig-blenders-clearing-house-presidente",
+        "cig-blenders-clearing-house-robusto",
+        "cig-blenders-clearing-house-toro",
+        "cig-blenders-clearing-house-torpedo"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/brick-house-connecticut.html",
+      "cigars": [
+        "cig-brick-house-connecticut",
+        "cig-brick-house-connecticut-larga"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/brick-house.html",
+      "cigars": [
+        "cig-brick-house-classic",
+        "cig-brick-house-maduro"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/camacho-scorpion-sun-grown.html",
+      "cigars": [
+        "cig-camacho-scorpion-sun-grown",
+        "cig-camacho-scorpion-sun-grown-super"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/cao-pilon.html",
+      "cigars": [
+        "cig-cao-pilon",
+        "cig-cao-pilon-2"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/casa-turrent-maduro.html",
+      "cigars": [
+        "cig-casa-turrent-maduro",
+        "cig-casa-turrent-maduro-short"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/casa-turrent-sumatra.html",
+      "cigars": [
+        "cig-casa-turrent-sumatra",
+        "cig-casa-turrent-sumatra-short"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/cuba-aliados-limited-edition.html",
+      "cigars": [
+        "cig-cuba-aliados-limitado-zeppelin",
+        "cig-cuba-aliados-limitado-zeppelin-maduro"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/cuesta-rey.html",
+      "cigars": [
+        "cig-cuesta-rey-7",
+        "cig-cuesta-rey-9"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/davidoff-puro-dominicano.html",
+      "cigars": [
+        "cig-davidoff-puro-dominicano",
+        "cig-davidoff-puro-dominicano-larga"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/deadwood.html",
+      "cigars": [
+        "cig-drew-estate-deadwood-by-crazy-alice",
+        "cig-drew-estate-deadwood-by-fat-bottom-betty",
+        "cig-drew-estate-deadwood-by-leather-rose",
+        "cig-drew-estate-deadwood-by-leather-rose-petite"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/diamond-crown.html",
+      "cigars": [
+        "cig-diamond-crown-3",
+        "cig-diamond-crown-4",
+        "cig-diamond-crown-5"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/don-lino-old-packaging.html",
+      "cigars": [
+        "cig-don-lino-old-packaging-liquidation-dark-horse",
+        "cig-don-lino-old-packaging-liquidation-fumas"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/don-pepin-garcia-original.html",
+      "cigars": [
+        "cig-don-pepin-garcia-don-pepin-garcia-original",
+        "cig-don-pepin-garcia-don-pepin-garcia-original-imperiales"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/e-p-carrillo-cabinet.html",
+      "cigars": [
+        "cig-e-p-carrillo-cabinet",
+        "cig-e-p-carrillo-cabinet-double",
+        "cig-e-p-carrillo-cabinet-gorda",
+        "cig-e-p-carrillo-cabinet-wide"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/el-credito.html",
+      "cigars": [
+        "cig-el-credito-extra",
+        "cig-el-credito-short-robusto",
+        "cig-el-credito-small"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/el-gueguense.html",
+      "cigars": [
+        "cig-el-gueguense-el-gueguense",
+        "cig-el-gueguense-el-gueguense-huaco"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/el-rey-del-mundo.html",
+      "cigars": [
+        "cig-el-rey-del-mundo-largo-oscuro",
+        "cig-el-rey-del-mundo-oscuro",
+        "cig-el-rey-del-mundo-suprema-oscuro"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/fine-catch.html",
+      "cigars": [
+        "cig-fine-catch-marlin",
+        "cig-fine-catch-marlin-maduro"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/god-of-fire-serie-aniversario.html",
+      "cigars": [
+        "cig-god-of-fire-serie-aniversario-54",
+        "cig-god-of-fire-serie-aniversario-56",
+        "cig-god-of-fire-serie-aniversario-60"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/graycliff-original.html",
+      "cigars": [
+        "cig-graycliff-original-graycliff-original",
+        "cig-graycliff-original-pirate"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/holt-s-factory-specials.html",
+      "cigars": [
+        "cig-holt-s-factory-specials-maduro",
+        "cig-holt-s-factory-specials-natural",
+        "cig-holt-s-factory-specials-sun-grown"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/holt-s-house-selection.html",
+      "cigars": [
+        "cig-holt-s-house-selection",
+        "cig-holt-s-house-selection-maduro"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/isla-del-sol-by-drew-estate.html",
+      "cigars": [
+        "cig-drew-estate-isla-del-sol-by-gran-shipping-restrictions",
+        "cig-drew-estate-isla-del-sol-by-shipping-restrictions"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/jaime-garcia-reserva-especial.html",
+      "cigars": [
+        "cig-jaime-garcia-jaime-garcia-reserva-especial",
+        "cig-jaime-garcia-jaime-garcia-reserva-especial-extra",
+        "cig-jaime-garcia-jaime-garcia-reserva-especial-grande",
+        "cig-jaime-garcia-jaime-garcia-reserva-especial-super"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/la-antiguedad.html",
+      "cigars": [
+        "cig-la-antiguedad-la-antiguedad",
+        "cig-la-antiguedad-super"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/la-flor-dominicana-coronado.html",
+      "cigars": [
+        "cig-la-flor-dominicana-coronado",
+        "cig-la-flor-dominicana-coronado-double",
+        "cig-la-flor-dominicana-coronado-gorda"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/la-flor-dominicana-reserva-especial.html",
+      "cigars": [
+        "cig-la-flor-dominicana-reserva-especial",
+        "cig-la-flor-dominicana-reserva-especial-el-jocko-1-maduro",
+        "cig-la-flor-dominicana-reserva-especial-el-jocko-2"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/la-gloria-cubana.html",
+      "cigars": [
+        "cig-la-gloria-cubana-churchill",
+        "cig-la-gloria-cubana-corona-gorda",
+        "cig-la-gloria-cubana-glorias",
+        "cig-la-gloria-cubana-maduro"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/liga-privada-undercrown-10.html",
+      "cigars": [
+        "cig-drew-estate-liga-undercrown-10",
+        "cig-drew-estate-liga-undercrown-10-by-doble"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/liga-undercrown-by-drew-estate.html",
+      "cigars": [
+        "cig-drew-estate-liga-undercrown",
+        "cig-drew-estate-liga-undercrown-by-flying-pig"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/man-o-war-ruination.html",
+      "cigars": [
+        "cig-man-o-war-man-o-war-ruination",
+        "cig-man-o-war-man-o-war-ruination-1-2",
+        "cig-man-o-war-man-o-war-ruination-2"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/montesino.html",
+      "cigars": [
+        "cig-montesino-corona-gorda",
+        "cig-montesino-maduro",
+        "cig-montesino-robusto",
+        "cig-montesino-toro"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/my-father-la-gran-oferta.html",
+      "cigars": [
+        "cig-my-father-la-gran-oferta",
+        "cig-my-father-la-gran-oferta-gordo"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/my-father-la-lealtad.html",
+      "cigars": [
+        "cig-my-father-la-lealtad",
+        "cig-my-father-la-lealtad-gordo",
+        "cig-my-father-la-lealtad-press"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/my-father.html",
+      "cigars": [
+        "cig-my-father-2",
+        "cig-my-father-4"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/nat-sherman-panamericana.html",
+      "cigars": [
+        "cig-nat-sherman-panamericana",
+        "cig-nat-sherman-panamericana-fino"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/nat-sherman-timeless-dominican.html",
+      "cigars": [
+        "cig-nat-sherman-timeless-prestige",
+        "cig-nat-sherman-timeless-prestige-divinos"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/norteno-by-drew-estate.html",
+      "cigars": [
+        "cig-drew-estate-norteno",
+        "cig-drew-estate-norteno-by-fino",
+        "cig-drew-estate-norteno-by-humidor"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/oliva-monticello.html",
+      "cigars": [
+        "cig-oliva-monticello",
+        "cig-oliva-monticello-double"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/onyx-reserve.html",
+      "cigars": [
+        "cig-onyx-reserve-2",
+        "cig-onyx-reserve-mini",
+        "cig-onyx-reserve-onyx-reserve"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/padilla-serie-1968.html",
+      "cigars": [
+        "cig-padilla-serie-1968",
+        "cig-padilla-serie-1968-double"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/padron-40th-anniversary.html",
+      "cigars": [
+        "cig-padron-40th-anniversary-40th",
+        "cig-padron-40th-anniversary-40th-maduro"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/padron-50th-anniversary.html",
+      "cigars": [
+        "cig-padron-50th-anniversary-maduro",
+        "cig-padron-50th-anniversary-natural"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/padron-60th-anniversary.html",
+      "cigars": [
+        "cig-padron-60th-anniversary-60th",
+        "cig-padron-60th-anniversary-60th-maduro"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/padron-80-years.html",
+      "cigars": [
+        "cig-padron-80-years-80th",
+        "cig-padron-80-years-80th-maduro"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/padron.html",
+      "cigars": [
+        "cig-padron-6000",
+        "cig-padron-6000-maduro",
+        "cig-padron-churchill",
+        "cig-padron-maduro",
+        "cig-padron-panetela"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/perdomo-10th-anniversary-sun-grown.html",
+      "cigars": [
+        "cig-perdomo-10th-anniversary-sun-grown",
+        "cig-perdomo-10th-anniversary-sun-grown-super"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/perdomo-champagne-noir.html",
+      "cigars": [
+        "cig-perdomo-champagne-noir",
+        "cig-perdomo-champagne-noir-super"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/perdomo-champagne-sungrown.html",
+      "cigars": [
+        "cig-perdomo-champagne-sun-grown",
+        "cig-perdomo-champagne-sun-grown-super"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/perdomo-double-aged-vintage-connecticut.html",
+      "cigars": [
+        "cig-perdomo-double-aged-vintage-connecticut",
+        "cig-perdomo-double-aged-vintage-connecticut-extra"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/perdomo-double-aged-vintage-maduro.html",
+      "cigars": [
+        "cig-perdomo-double-aged-vintage-maduro",
+        "cig-perdomo-double-aged-vintage-maduro-extra"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/perdomo-double-aged-vintage-sungrown.html",
+      "cigars": [
+        "cig-perdomo-double-aged-vintage-sun-grown",
+        "cig-perdomo-double-aged-vintage-sun-grown-extra"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/perdomo-edicion-de-silvio-maduro.html",
+      "cigars": [
+        "cig-perdomo-edicion-de-silvio-maduro",
+        "cig-perdomo-edicion-de-silvio-maduro-double"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/perdomo-edicion-de-silvio-sungrown.html",
+      "cigars": [
+        "cig-perdomo-edicion-de-silvio-sun-grown",
+        "cig-perdomo-edicion-de-silvio-sun-grown-double"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/perdomo-small-batch-connecticut.html",
+      "cigars": [
+        "cig-perdomo-small-batch-connecticut",
+        "cig-perdomo-small-batch-connecticut-half"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/perdomo-small-batch-maduro.html",
+      "cigars": [
+        "cig-perdomo-small-batch-maduro",
+        "cig-perdomo-small-batch-maduro-half"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/perdomo-small-batch-sun-grown.html",
+      "cigars": [
+        "cig-perdomo-small-batch-sun-grown",
+        "cig-perdomo-small-batch-sun-grown-half"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/peterson-hallmark.html",
+      "cigars": [
+        "cig-peterson-hallmark-maduro",
+        "cig-peterson-hallmark-presidente"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/puros-indios-viejo.html",
+      "cigars": [
+        "cig-puros-indios-viejo",
+        "cig-puros-indios-viejo-double"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/quorum-maduro.html",
+      "cigars": [
+        "cig-quorum-maduro",
+        "cig-quorum-maduro-double"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/quorum.html",
+      "cigars": [
+        "cig-quorum-classic",
+        "cig-quorum-double"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/rocky-patel-20th-anniversary-maduro.html",
+      "cigars": [
+        "cig-rocky-patel-20th-anniversary-maduro",
+        "cig-rocky-patel-20th-anniversary-maduro-grande"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/rocky-patel-renaissance-fumas.html",
+      "cigars": [
+        "cig-rocky-patel-renaissance-fumas-connecticut",
+        "cig-rocky-patel-renaissance-fumas-habano",
+        "cig-rocky-patel-renaissance-fumas-maduro",
+        "cig-rocky-patel-renaissance-fumas-original"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/saint-luis-rey-serie-g-blowout.html",
+      "cigars": [
+        "cig-saint-luis-rey-serie-g-blowout",
+        "cig-saint-luis-rey-serie-g-blowout-maduro"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/sam-leccia-black.html",
+      "cigars": [
+        "cig-sam-leccia-black",
+        "cig-sam-leccia-black-press"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/sam-leccia-white.html",
+      "cigars": [
+        "cig-sam-leccia-white",
+        "cig-sam-leccia-white-double"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/sobremesa.html",
+      "cigars": [
+        "cig-sobremesa-fino",
+        "cig-sobremesa-largo",
+        "cig-sobremesa-short"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/tabak-especial-by-drew-estate.html",
+      "cigars": [
+        "cig-drew-estate-tabak-especial-by-dulce-shipping-restrictions",
+        "cig-drew-estate-tabak-especial-by-negra-shipping-restrictions"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/tatuaje-black.html",
+      "cigars": [
+        "cig-tatuaje-black",
+        "cig-tatuaje-black-gorda",
+        "cig-tatuaje-black-petit"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/tatuaje-hcs.html",
+      "cigars": [
+        "cig-tatuaje-hcs-1-larga",
+        "cig-tatuaje-hcs-2-grande",
+        "cig-tatuaje-hcs-3-cubano"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/the-griffin-s-nicaragua.html",
+      "cigars": [
+        "cig-griffin-s-nicaragua",
+        "cig-griffin-s-nicaragua-short",
+        "cig-griffin-s-nicaragua-short-units",
+        "cig-griffin-s-nicaragua-units"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/the-tabernacle-havana-seed-ct-142.html",
+      "cigars": [
+        "cig-the-tabernacle-havana-seed-ct-142",
+        "cig-the-tabernacle-havana-seed-ct-142-doble"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/the-tabernacle.html",
+      "cigars": [
+        "cig-the-tabernacle-ct-broadleaf",
+        "cig-the-tabernacle-doble"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/torano-exodus-1959-silver.html",
+      "cigars": [
+        "cig-torano-torano-exodus-1959-silver",
+        "cig-torano-torano-exodus-1959-silver-grand"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/torano-exodus-gold-20th-anniversary.html",
+      "cigars": [
+        "cig-torano-torano-exodus-gold-20th-anniversary",
+        "cig-torano-torano-exodus-gold-20th-anniversary-double"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/villiger-1888.html",
+      "cigars": [
+        "cig-villiger-1492",
+        "cig-villiger-1888"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/villiger-cuellar-black-forest.html",
+      "cigars": [
+        "cig-villiger-cuellar-black-forest",
+        "cig-villiger-cuellar-black-forest-gordo"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/villiger-cuellar-kreme.html",
+      "cigars": [
+        "cig-villiger-cuellar-kreme",
+        "cig-villiger-cuellar-kreme-gordo"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/warlock.html",
+      "cigars": [
+        "cig-warlock-short",
+        "cig-warlock-warlock"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/wise-man-corojo.html",
+      "cigars": [
+        "cig-wise-man-corojo",
+        "cig-wise-man-corojo-doble"
+      ]
+    },
+    {
+      "url": "https://www.holts.com/cigars/all-cigar-brands/wise-man-maduro.html",
+      "cigars": [
+        "cig-wise-man-maduro",
+        "cig-wise-man-maduro-doble"
+      ]
+    }
+  ],
+  "duplicate_line_suspects": [
+    {
+      "brand": "1502",
+      "line_a": "Black Gold",
+      "id_a": "cig-1502-black-gold",
+      "line_b": "Black Gold Toro 6 X 50",
+      "id_b": "cig-1502-black-gold-toro-6-x-50"
+    },
+    {
+      "brand": "1502",
+      "line_a": "Emerald",
+      "id_a": "cig-1502-emerald",
+      "line_b": "Emerald Lancero 7 X 40",
+      "id_b": "cig-1502-emerald-lancero-7-x-40"
+    },
+    {
+      "brand": "1502",
+      "line_a": "Emerald",
+      "id_a": "cig-1502-emerald",
+      "line_b": "Emerald Robusto 5 X 50",
+      "id_b": "cig-1502-emerald-robusto-5-x-50"
+    },
+    {
+      "brand": "1502",
+      "line_a": "Ruby",
+      "id_a": "cig-1502-ruby",
+      "line_b": "Ruby Conquistador 6 X 56",
+      "id_b": "cig-1502-ruby-conquistador-6-x-56"
+    },
+    {
+      "brand": "1502",
+      "line_a": "Ruby",
+      "id_a": "cig-1502-ruby",
+      "line_b": "Ruby Toro 6 X 50",
+      "id_b": "cig-1502-ruby-toro-6-x-50"
+    },
+    {
+      "brand": "1502",
+      "line_a": "Special Edition Blue Sapphire",
+      "id_a": "cig-1502-special-edition-blue-sapphire",
+      "line_b": "Special Edition Blue Sapphire Gordo",
+      "id_b": "cig-1502-special-edition-blue-sapphire-gordo"
+    },
+    {
+      "brand": "1502",
+      "line_a": "Special Edition Cachito",
+      "id_a": "cig-1502-special-edition-cachito",
+      "line_b": "Special Edition Cachito Original",
+      "id_b": "cig-1502-special-edition-cachito-original"
+    },
+    {
+      "brand": "1502",
+      "line_a": "Special Edition Cachito",
+      "id_a": "cig-1502-special-edition-cachito",
+      "line_b": "Special Edition Cachito White Connecticut",
+      "id_b": "cig-1502-special-edition-cachito-white-connecticut"
+    },
+    {
+      "brand": "A. Flores",
+      "line_a": "El Criollito",
+      "id_a": "cig-a-flores-el-criollito",
+      "line_b": "El Criollito Short",
+      "id_b": "cig-a-flores-el-criollito-short"
+    },
+    {
+      "brand": "A. Flores",
+      "line_a": "Gran Reserva Maduro",
+      "id_a": "cig-a-flores-gran-reserva-maduro",
+      "line_b": "Gran Reserva Maduro Grand",
+      "id_b": "cig-a-flores-gran-reserva-maduro-grand"
+    },
+    {
+      "brand": "A. Flores",
+      "line_a": "Gran Reserva Sun Grown",
+      "id_a": "cig-a-flores-gran-reserva-sun-grown",
+      "line_b": "Gran Reserva Sun Grown Grand",
+      "id_b": "cig-a-flores-gran-reserva-sun-grown-grand"
+    },
+    {
+      "brand": "A. Turrent",
+      "line_a": "Puros San Andres",
+      "id_a": "cig-a-turrent-puros-san-andres",
+      "line_b": "Puros San Andres Maduro",
+      "id_b": "cig-a-turrent-puros-san-andres-maduro"
+    },
+    {
+      "brand": "Adrian",
+      "line_a": "Magnus Imperiales",
+      "id_a": "cig-adrian-magnus-imperiales",
+      "line_b": "Magnus Imperiales Wide",
+      "id_b": "cig-adrian-magnus-imperiales-wide"
+    },
+    {
+      "brand": "Adv",
+      "line_a": "Explorer",
+      "id_a": "cig-adv-explorer",
+      "line_b": "Explorer Grande",
+      "id_b": "cig-adv-explorer-grande"
+    },
+    {
+      "brand": "Aganorsa Leaf",
+      "line_a": "Aniversario",
+      "id_a": "cig-aganorsa-aniversario",
+      "line_b": "Aniversario Connecticut Robusto 5 X 54",
+      "id_b": "cig-aganorsa-leaf-aniversario-connecticut-robusto-5-x-54"
+    },
+    {
+      "brand": "Aganorsa Leaf",
+      "line_a": "Aniversario",
+      "id_a": "cig-aganorsa-aniversario",
+      "line_b": "Aniversario Connecticut Toro 6 1⁄4 X 52",
+      "id_b": "cig-aganorsa-leaf-aniversario-connecticut-toro-6-1-4-x-52"
+    },
+    {
+      "brand": "Aganorsa Leaf",
+      "line_a": "Aniversario",
+      "id_a": "cig-aganorsa-aniversario",
+      "line_b": "Aniversario Corojo Robusto 5 X 54",
+      "id_b": "cig-aganorsa-leaf-aniversario-corojo-robusto-5-x-54"
+    },
+    {
+      "brand": "Aganorsa Leaf",
+      "line_a": "Aniversario",
+      "id_a": "cig-aganorsa-aniversario",
+      "line_b": "Aniversario Corojo Toro 6 X 58",
+      "id_b": "cig-aganorsa-leaf-aniversario-corojo-toro-6-x-58"
+    },
+    {
+      "brand": "Aganorsa Leaf",
+      "line_a": "Aniversario",
+      "id_a": "cig-aganorsa-aniversario",
+      "line_b": "Aniversario Maduro Robusto 5 X 54",
+      "id_b": "cig-aganorsa-leaf-aniversario-maduro-robusto-5-x-54"
+    },
+    {
+      "brand": "Aganorsa Leaf",
+      "line_a": "JFR Connecticut",
+      "id_a": "cig-aganorsa-leaf-jfr-connecticut",
+      "line_b": "JFR Connecticut Super",
+      "id_b": "cig-aganorsa-leaf-jfr-connecticut-super"
+    },
+    {
+      "brand": "AJ Fernandez",
+      "line_a": "New World",
+      "id_a": "cig-aj-fernandez-new-world",
+      "line_b": "New World Dorado Sampler",
+      "id_b": "cig-aj-fernandez-new-world-dorado-sampler"
+    },
+    {
+      "brand": "AJ Fernandez",
+      "line_a": "New World",
+      "id_a": "cig-aj-fernandez-new-world",
+      "line_b": "New World Sampler",
+      "id_b": "cig-aj-fernandez-new-world-sampler"
+    },
+    {
+      "brand": "Aksum",
+      "line_a": "Claro",
+      "id_a": "cig-aksum-claro",
+      "line_b": "Claro Doble",
+      "id_b": "cig-aksum-claro-doble"
+    },
+    {
+      "brand": "Aksum",
+      "line_a": "Maduro",
+      "id_a": "cig-aksum-maduro",
+      "line_b": "Maduro Doble",
+      "id_b": "cig-aksum-maduro-doble"
+    },
+    {
+      "brand": "Aladino",
+      "line_a": "Cameroon",
+      "id_a": "cig-aladino-cameroon",
+      "line_b": "Cameroon Reserva",
+      "id_b": "cig-aladino-cameroon-reserva"
+    },
+    {
+      "brand": "Aladino",
+      "line_a": "Cameroon",
+      "id_a": "cig-aladino-cameroon",
+      "line_b": "Cameroon Super",
+      "id_b": "cig-aladino-cameroon-super"
+    },
+    {
+      "brand": "Alec Bradley",
+      "line_a": "Coyol",
+      "id_a": "cig-alec-bradley-coyol",
+      "line_b": "Coyol Double",
+      "id_b": "cig-alec-bradley-coyol-double"
+    },
+    {
+      "brand": "Alec Bradley",
+      "line_a": "Coyol",
+      "id_a": "cig-alec-bradley-coyol",
+      "line_b": "Coyol Petit",
+      "id_b": "cig-alec-bradley-coyol-petit"
+    },
+    {
+      "brand": "Alec Bradley",
+      "line_a": "Lineage",
+      "id_a": "cig-alec-bradley-lineage",
+      "line_b": "Lineage 552",
+      "id_b": "cig-alec-bradley-lineage-552"
+    },
+    {
+      "brand": "Alec Bradley",
+      "line_a": "Lineage",
+      "id_a": "cig-alec-bradley-lineage",
+      "line_b": "Lineage Double 665",
+      "id_b": "cig-alec-bradley-lineage-double-665"
+    },
+    {
+      "brand": "Alec Bradley",
+      "line_a": "Lineage",
+      "id_a": "cig-alec-bradley-lineage",
+      "line_b": "Lineage Gigante 770",
+      "id_b": "cig-alec-bradley-lineage-gigante-770"
+    },
+    {
+      "brand": "Alec Bradley",
+      "line_a": "Nica Puro",
+      "id_a": "cig-alec-bradley-nica-puro",
+      "line_b": "Nica Puro Rosado",
+      "id_b": "cig-alec-bradley-nica-puro-rosado"
+    },
+    {
+      "brand": "Alec Bradley",
+      "line_a": "Sanctum",
+      "id_a": "cig-alec-bradley-sanctum",
+      "line_b": "Sanctum Double",
+      "id_b": "cig-alec-bradley-sanctum-double"
+    },
+    {
+      "brand": "Alec Bradley",
+      "line_a": "Texas",
+      "id_a": "cig-alec-bradley-texas",
+      "line_b": "Texas Lancero",
+      "id_b": "cig-alec-bradley-texas-lancero"
+    },
+    {
+      "brand": "Alejandro",
+      "line_a": "Lopez Dominicana",
+      "id_a": "cig-alejandro-lopez-dominicana",
+      "line_b": "Lopez Dominicana Maduro",
+      "id_b": "cig-alejandro-lopez-dominicana-maduro"
+    },
+    {
+      "brand": "Alfambra",
+      "line_a": "Boutique G",
+      "id_a": "cig-alfambra-boutique-g",
+      "line_b": "Boutique G Magnificos",
+      "id_b": "cig-alfambra-boutique-g-magnificos"
+    },
+    {
+      "brand": "Alfambra",
+      "line_a": "Boutique G",
+      "id_a": "cig-alfambra-boutique-g",
+      "line_b": "Boutique G Toro",
+      "id_b": "cig-alfambra-boutique-g-toro"
+    },
+    {
+      "brand": "Alfambra",
+      "line_a": "Seleccion",
+      "id_a": "cig-alfambra-seleccion",
+      "line_b": "Seleccion 52",
+      "id_b": "cig-alfambra-seleccion-52"
+    },
+    {
+      "brand": "Alfambra",
+      "line_a": "Seleccion",
+      "id_a": "cig-alfambra-seleccion",
+      "line_b": "Seleccion 56",
+      "id_b": "cig-alfambra-seleccion-56"
+    },
+    {
+      "brand": "Alfambra",
+      "line_a": "Seleccion",
+      "id_a": "cig-alfambra-seleccion",
+      "line_b": "Seleccion 60",
+      "id_b": "cig-alfambra-seleccion-60"
+    },
+    {
+      "brand": "Alfambra",
+      "line_a": "Seleccion",
+      "id_a": "cig-alfambra-seleccion",
+      "line_b": "Seleccion Gordo",
+      "id_b": "cig-alfambra-seleccion-gordo"
+    },
+    {
+      "brand": "Alfambra",
+      "line_a": "Seleccion",
+      "id_a": "cig-alfambra-seleccion",
+      "line_b": "Seleccion Toro",
+      "id_b": "cig-alfambra-seleccion-toro"
+    },
+    {
+      "brand": "Alfambra",
+      "line_a": "Seleccion",
+      "id_a": "cig-alfambra-seleccion",
+      "line_b": "Seleccion Wide",
+      "id_b": "cig-alfambra-seleccion-wide"
+    },
+    {
+      "brand": "Alonso",
+      "line_a": "Menendez",
+      "id_a": "cig-alonso-menendez",
+      "line_b": "Menendez No. 10",
+      "id_b": "cig-alonso-menendez-no-10"
+    },
+    {
+      "brand": "Alonso",
+      "line_a": "Menendez",
+      "id_a": "cig-alonso-menendez",
+      "line_b": "Menendez No. 20",
+      "id_b": "cig-alonso-menendez-no-20"
+    },
+    {
+      "brand": "Alonso",
+      "line_a": "Menendez",
+      "id_a": "cig-alonso-menendez",
+      "line_b": "Menendez No. 40",
+      "id_b": "cig-alonso-menendez-no-40"
+    },
+    {
+      "brand": "Alonso",
+      "line_a": "Menendez",
+      "id_a": "cig-alonso-menendez",
+      "line_b": "Menendez No. 50",
+      "id_b": "cig-alonso-menendez-no-50"
+    },
+    {
+      "brand": "Argyle",
+      "line_a": "Banquet Selection",
+      "id_a": "cig-argyle-banquet-selection",
+      "line_b": "Banquet Selection #2",
+      "id_b": "cig-argyle-banquet-selection-2"
+    },
+    {
+      "brand": "Artista",
+      "line_a": "David Ortiz HOF",
+      "id_a": "cig-artista-david-ortiz-hof",
+      "line_b": "David Ortiz HOF Limited Edition",
+      "id_b": "cig-artista-david-ortiz-hof-limited-edition"
+    },
+    {
+      "brand": "Artista",
+      "line_a": "Factory Classics Puro Ambar",
+      "id_a": "cig-artista-factory-classics-puro-ambar",
+      "line_b": "Factory Classics Puro Ambar Legacy Grand",
+      "id_b": "cig-artista-factory-classics-puro-ambar-legacy-grand"
+    },
+    {
+      "brand": "Artista",
+      "line_a": "Rugged Country Cimarron Colorado",
+      "id_a": "cig-artista-rugged-country-cimarron-colorado",
+      "line_b": "Rugged Country Cimarron Colorado Doble",
+      "id_b": "cig-artista-rugged-country-cimarron-colorado-doble"
+    },
+    {
+      "brand": "Artista",
+      "line_a": "Rugged Country Cimarron Connecticut",
+      "id_a": "cig-artista-rugged-country-cimarron-connecticut",
+      "line_b": "Rugged Country Cimarron Connecticut Doble",
+      "id_b": "cig-artista-rugged-country-cimarron-connecticut-doble"
+    },
+    {
+      "brand": "Artista",
+      "line_a": "Rugged Country Cimarron Maduro",
+      "id_a": "cig-artista-rugged-country-cimarron-maduro",
+      "line_b": "Rugged Country Cimarron Maduro Doble",
+      "id_b": "cig-artista-rugged-country-cimarron-maduro-doble"
+    },
+    {
+      "brand": "Arturo Fuente",
+      "line_a": "Claro",
+      "id_a": "cig-arturo-fuente-claro",
+      "line_b": "Claro Spanish",
+      "id_b": "cig-arturo-fuente-claro-spanish"
+    },
+    {
+      "brand": "Arturo Fuente",
+      "line_a": "Don Carlos",
+      "id_a": "cig-arturo-fuente-af-don-carlos",
+      "line_b": "Don Carlos Edicion de Aniversario",
+      "id_b": "cig-arturo-fuente-don-carlos-edicion-de-aniversario"
+    },
+    {
+      "brand": "Arturo Fuente",
+      "line_a": "Seleccion d'Oro",
+      "id_a": "cig-arturo-fuente-seleccion-d-oro",
+      "line_b": "Seleccion d'Oro Imperial",
+      "id_b": "cig-arturo-fuente-seleccion-d-oro-imperial"
+    },
+    {
+      "brand": "Arturo Fuente",
+      "line_a": "Special Selection Brevas Royales",
+      "id_a": "cig-arturo-fuente-special-selection-brevas-royales",
+      "line_b": "Special Selection Brevas Royales Maduro",
+      "id_b": "cig-arturo-fuente-special-selection-brevas-royales-maduro"
+    },
+    {
+      "brand": "Ashton",
+      "line_a": "Aged Maduro",
+      "id_a": "cig-ashton-aged-maduro",
+      "line_b": "Aged Maduro No. 10",
+      "id_b": "cig-ashton-aged-maduro-no-10"
+    },
+    {
+      "brand": "Ashton",
+      "line_a": "Aged Maduro",
+      "id_a": "cig-ashton-aged-maduro",
+      "line_b": "Aged Maduro No. 20",
+      "id_b": "cig-ashton-aged-maduro-no-20"
+    },
+    {
+      "brand": "Ashton",
+      "line_a": "Aged Maduro",
+      "id_a": "cig-ashton-aged-maduro",
+      "line_b": "Aged Maduro No. 30",
+      "id_b": "cig-ashton-aged-maduro-no-30"
+    },
+    {
+      "brand": "Ashton",
+      "line_a": "Aged Maduro",
+      "id_a": "cig-ashton-aged-maduro",
+      "line_b": "Aged Maduro No. 40",
+      "id_b": "cig-ashton-aged-maduro-no-40"
+    },
+    {
+      "brand": "Ashton",
+      "line_a": "Aged Maduro",
+      "id_a": "cig-ashton-aged-maduro",
+      "line_b": "Aged Maduro No.30 6 3/4 X 44",
+      "id_b": "cig-ashton-aged-maduro-no-30-6-3-4-x-44"
+    },
+    {
+      "brand": "Ashton",
+      "line_a": "Cabinet",
+      "id_a": "cig-ashton-cabinet",
+      "line_b": "Cabinet Selection",
+      "id_b": "cig-ashton-cabinet-selection"
+    },
+    {
+      "brand": "Ashton",
+      "line_a": "Paradiso By Papagayo",
+      "id_a": "cig-ashton-paradiso-by-papagayo",
+      "line_b": "Paradiso By Papagayo XXL",
+      "id_b": "cig-ashton-paradiso-by-papagayo-xxl"
+    },
+    {
+      "brand": "Ashton",
+      "line_a": "VSG",
+      "id_a": "cig-ashton-ashton-vsg",
+      "line_b": "VSG (Virgin Sun Grown)",
+      "id_b": "cig-ashton-vsg"
+    },
+    {
+      "brand": "Asylum",
+      "line_a": "Insidious",
+      "id_a": "cig-asylum-insidious",
+      "line_b": "Insidious Short",
+      "id_b": "cig-asylum-insidious-short"
+    },
+    {
+      "brand": "Asylum",
+      "line_a": "Schizo",
+      "id_a": "cig-asylum-schizo",
+      "line_b": "Schizo Maduro",
+      "id_b": "cig-asylum-schizo-maduro"
+    },
+    {
+      "brand": "Ave Maria",
+      "line_a": "Argentum",
+      "id_a": "cig-ave-maria-argentum",
+      "line_b": "Argentum Morning Star",
+      "id_b": "cig-ave-maria-argentum-morning-star"
+    },
+    {
+      "brand": "Avo",
+      "line_a": "Classic",
+      "id_a": "cig-avo-classic",
+      "line_b": "Classic No. 2",
+      "id_b": "cig-avo-classic-no-2"
+    },
+    {
+      "brand": "Avo",
+      "line_a": "Classic",
+      "id_a": "cig-avo-classic",
+      "line_b": "Classic No. 6",
+      "id_b": "cig-avo-classic-no-6"
+    },
+    {
+      "brand": "Avo",
+      "line_a": "Heritage",
+      "id_a": "cig-avo-heritage",
+      "line_b": "Heritage Special",
+      "id_b": "cig-avo-heritage-special"
+    },
+    {
+      "brand": "Avo",
+      "line_a": "Syncro",
+      "id_a": "cig-avo-syncro",
+      "line_b": "Syncro Nicaragua Fogata",
+      "id_b": "cig-avo-syncro-nicaragua-fogata"
+    },
+    {
+      "brand": "Avo",
+      "line_a": "Syncro",
+      "id_a": "cig-avo-syncro",
+      "line_b": "Syncro Special",
+      "id_b": "cig-avo-syncro-special"
+    },
+    {
+      "brand": "Bahia",
+      "line_a": "Maduro",
+      "id_a": "cig-bahia-maduro",
+      "line_b": "Maduro Corona",
+      "id_b": "cig-bahia-maduro-corona"
+    },
+    {
+      "brand": "Balmoral",
+      "line_a": "Dominican Selection",
+      "id_a": "cig-balmoral-dominican-selection",
+      "line_b": "Dominican Selection SMALL",
+      "id_b": "cig-balmoral-dominican-selection-small"
+    },
+    {
+      "brand": "Baron",
+      "line_a": "Ullmann",
+      "id_a": "cig-baron-ullmann",
+      "line_b": "Ullmann Edicion Limitada",
+      "id_b": "cig-baron-ullmann-edicion-limitada"
+    },
+    {
+      "brand": "Baron",
+      "line_a": "Ullmann",
+      "id_a": "cig-baron-ullmann",
+      "line_b": "Ullmann Gran Reserva",
+      "id_b": "cig-baron-ullmann-gran-reserva"
+    },
+    {
+      "brand": "Barrio",
+      "line_a": "Viejo",
+      "id_a": "cig-barrio-viejo",
+      "line_b": "Viejo Double",
+      "id_b": "cig-barrio-viejo-double"
+    },
+    {
+      "brand": "Bentley",
+      "line_a": "Green",
+      "id_a": "cig-bentley-green",
+      "line_b": "Green Limited Edition",
+      "id_b": "cig-bentley-green-limited-edition"
+    },
+    {
+      "brand": "Black Label",
+      "line_a": "Trading Company Bishops Blend",
+      "id_a": "cig-black-label-trading-company-bishops-blend",
+      "line_b": "Trading Company Bishops Blend Larga",
+      "id_b": "cig-black-label-trading-company-bishops-blend-larga"
+    },
+    {
+      "brand": "Black Label",
+      "line_a": "Trading Company Bishops Blend",
+      "id_a": "cig-black-label-trading-company-bishops-blend",
+      "line_b": "Trading Company Bishops Blend Novemdiales",
+      "id_b": "cig-black-label-trading-company-bishops-blend-novemdiales"
+    },
+    {
+      "brand": "Black Label",
+      "line_a": "Trading Company Last Rites",
+      "id_a": "cig-black-label-trading-company-last-rites",
+      "line_b": "Trading Company Last Rites Grand",
+      "id_b": "cig-black-label-trading-company-last-rites-grand"
+    },
+    {
+      "brand": "Black Label",
+      "line_a": "Trading Company Lawless",
+      "id_a": "cig-black-label-trading-company-lawless",
+      "line_b": "Trading Company Lawless Grand",
+      "id_b": "cig-black-label-trading-company-lawless-grand"
+    },
+    {
+      "brand": "Black Label",
+      "line_a": "Trading Company Memento Mori",
+      "id_a": "cig-black-label-trading-company-memento-mori",
+      "line_b": "Trading Company Memento Mori Larga",
+      "id_b": "cig-black-label-trading-company-memento-mori-larga"
+    },
+    {
+      "brand": "Black Label",
+      "line_a": "Trading Company Nocurne",
+      "id_a": "cig-black-label-trading-company-nocurne",
+      "line_b": "Trading Company Nocurne &amp; Short Salomon",
+      "id_b": "cig-black-label-trading-company-nocurne-amp-short-salomon"
+    },
+    {
+      "brand": "Black Label",
+      "line_a": "Trading Company Royalty",
+      "id_a": "cig-black-label-trading-company-royalty",
+      "line_b": "Trading Company Royalty Grand",
+      "id_b": "cig-black-label-trading-company-royalty-grand"
+    },
+    {
+      "brand": "Black Label",
+      "line_a": "Trading Company Salvation",
+      "id_a": "cig-black-label-trading-company-salvation",
+      "line_b": "Trading Company Salvation Grand",
+      "id_b": "cig-black-label-trading-company-salvation-grand"
+    },
+    {
+      "brand": "Black Label",
+      "line_a": "Trading Company Santa Muerte",
+      "id_a": "cig-black-label-trading-company-santa-muerte",
+      "line_b": "Trading Company Santa Muerte Barrio Santo",
+      "id_b": "cig-black-label-trading-company-santa-muerte-barrio-santo"
+    },
+    {
+      "brand": "Black Label",
+      "line_a": "Trading Company Super Deluxe",
+      "id_a": "cig-black-label-trading-company-super-deluxe",
+      "line_b": "Trading Company Super Deluxe Petite",
+      "id_b": "cig-black-label-trading-company-super-deluxe-petite"
+    },
+    {
+      "brand": "Black Works",
+      "line_a": "Studio Intergalactic",
+      "id_a": "cig-black-works-studio-intergalactic",
+      "line_b": "Studio Intergalactic Larga",
+      "id_b": "cig-black-works-studio-intergalactic-larga"
+    },
+    {
+      "brand": "Black Works",
+      "line_a": "Studio Killer Bee",
+      "id_a": "cig-black-works-studio-killer-bee",
+      "line_b": "Studio Killer Bee Connecticut",
+      "id_b": "cig-black-works-studio-killer-bee-connecticut"
+    },
+    {
+      "brand": "Black Works",
+      "line_a": "Studio Killer Bee",
+      "id_a": "cig-black-works-studio-killer-bee",
+      "line_b": "Studio Killer Bee Hornet",
+      "id_b": "cig-black-works-studio-killer-bee-hornet"
+    },
+    {
+      "brand": "Black Works",
+      "line_a": "Studio Killer Bee",
+      "id_a": "cig-black-works-studio-killer-bee",
+      "line_b": "Studio Killer Bee Hornet Larga",
+      "id_b": "cig-black-works-studio-killer-bee-hornet-larga"
+    },
+    {
+      "brand": "Black Works",
+      "line_a": "Studio Killer Bee Hornet",
+      "id_a": "cig-black-works-studio-killer-bee-hornet",
+      "line_b": "Studio Killer Bee Hornet Larga",
+      "id_b": "cig-black-works-studio-killer-bee-hornet-larga"
+    },
+    {
+      "brand": "Black Works",
+      "line_a": "Studio Rorschach",
+      "id_a": "cig-black-works-studio-rorschach",
+      "line_b": "Studio Rorschach Petite",
+      "id_b": "cig-black-works-studio-rorschach-petite"
+    },
+    {
+      "brand": "Black Works",
+      "line_a": "Studio S&amp;R",
+      "id_a": "cig-black-works-studio-s-amp-r",
+      "line_b": "Studio S&amp;R Larga",
+      "id_b": "cig-black-works-studio-s-amp-r-larga"
+    },
+    {
+      "brand": "Bock",
+      "line_a": "y Ca.",
+      "id_a": "cig-bock-y-ca",
+      "line_b": "y Ca. 25 Anos Renacimiento",
+      "id_b": "cig-bock-y-ca-25-anos-renacimiento"
+    },
+    {
+      "brand": "Bossner",
+      "line_a": "Classic",
+      "id_a": "cig-bossner-classic",
+      "line_b": "Classic 001",
+      "id_b": "cig-bossner-classic-001"
+    },
+    {
+      "brand": "Bossner",
+      "line_a": "Classic",
+      "id_a": "cig-bossner-classic",
+      "line_b": "Classic 002",
+      "id_b": "cig-bossner-classic-002"
+    },
+    {
+      "brand": "Bossner",
+      "line_a": "Classic",
+      "id_a": "cig-bossner-classic",
+      "line_b": "Classic 003",
+      "id_b": "cig-bossner-classic-003"
+    },
+    {
+      "brand": "Bossner",
+      "line_a": "Classic",
+      "id_a": "cig-bossner-classic",
+      "line_b": "Classic 004",
+      "id_b": "cig-bossner-classic-004"
+    },
+    {
+      "brand": "Bossner",
+      "line_a": "Classic",
+      "id_a": "cig-bossner-classic",
+      "line_b": "Classic Ekaterina I.",
+      "id_b": "cig-bossner-classic-ekaterina-i"
+    },
+    {
+      "brand": "Bossner",
+      "line_a": "Classic",
+      "id_a": "cig-bossner-classic",
+      "line_b": "Classic Elizabeth I.",
+      "id_b": "cig-bossner-classic-elizabeth-i"
+    },
+    {
+      "brand": "Bossner",
+      "line_a": "Classic",
+      "id_a": "cig-bossner-classic",
+      "line_b": "Classic Long 001",
+      "id_b": "cig-bossner-classic-long-001"
+    },
+    {
+      "brand": "Bossner",
+      "line_a": "Classic",
+      "id_a": "cig-bossner-classic",
+      "line_b": "Classic Long 002",
+      "id_b": "cig-bossner-classic-long-002"
+    },
+    {
+      "brand": "Bossner",
+      "line_a": "Classic",
+      "id_a": "cig-bossner-classic",
+      "line_b": "Classic T.E. Glastubo",
+      "id_b": "cig-bossner-classic-t-e-glastubo"
+    },
+    {
+      "brand": "Brick House",
+      "line_a": "Classic",
+      "id_a": "cig-brick-house-classic",
+      "line_b": "Classic Larga",
+      "id_b": "cig-brick-house-classic-larga"
+    },
+    {
+      "brand": "Brick House",
+      "line_a": "Connecticut",
+      "id_a": "cig-brick-house-connecticut",
+      "line_b": "Connecticut Larga",
+      "id_b": "cig-brick-house-connecticut-larga"
+    },
+    {
+      "brand": "Brun",
+      "line_a": "del Ré 1787 Rain Forest",
+      "id_a": "cig-brun-del-re-1787-rain-forest",
+      "line_b": "del Ré 1787 Rain Forest Immenso",
+      "id_b": "cig-brun-del-re-1787-rain-forest-immenso"
+    },
+    {
+      "brand": "Brun",
+      "line_a": "del Ré 1787 Rain Forest",
+      "id_a": "cig-brun-del-re-1787-rain-forest",
+      "line_b": "del Ré 1787 Rain Forest Lanza",
+      "id_b": "cig-brun-del-re-1787-rain-forest-lanza"
+    },
+    {
+      "brand": "Brun",
+      "line_a": "del Ré 1787 Rain Forest",
+      "id_a": "cig-brun-del-re-1787-rain-forest",
+      "line_b": "del Ré 1787 Rain Forest Long",
+      "id_b": "cig-brun-del-re-1787-rain-forest-long"
+    },
+    {
+      "brand": "Brun",
+      "line_a": "del Ré Gold",
+      "id_a": "cig-brun-del-re-gold",
+      "line_b": "del Ré Gold Inmenso",
+      "id_b": "cig-brun-del-re-gold-inmenso"
+    },
+    {
+      "brand": "Bugatti",
+      "line_a": "Monte Carlo",
+      "id_a": "cig-bugatti-monte-carlo",
+      "line_b": "Monte Carlo Especial Gold DN",
+      "id_b": "cig-bugatti-monte-carlo-especial-gold-dn"
+    },
+    {
+      "brand": "Caldwell",
+      "line_a": "Blind Man's Bluff",
+      "id_a": "cig-caldwell-blind-man-s-bluff",
+      "line_b": "Blind Man's Bluff Connecticut",
+      "id_b": "cig-caldwell-blind-man-s-bluff-connecticut"
+    },
+    {
+      "brand": "Caldwell",
+      "line_a": "Blind Man's Bluff",
+      "id_a": "cig-caldwell-blind-man-s-bluff",
+      "line_b": "Blind Man's Bluff Maduro",
+      "id_b": "cig-caldwell-blind-man-s-bluff-maduro"
+    },
+    {
+      "brand": "Camacho",
+      "line_a": "Ecuador",
+      "id_a": "cig-camacho-ecuador",
+      "line_b": "Ecuador Robusto Tubos",
+      "id_b": "cig-camacho-ecuador-robusto-tubos"
+    },
+    {
+      "brand": "Camacho",
+      "line_a": "Scorpion Sun Grown",
+      "id_a": "cig-camacho-scorpion-sun-grown",
+      "line_b": "Scorpion Sun Grown Super",
+      "id_b": "cig-camacho-scorpion-sun-grown-super"
+    },
+    {
+      "brand": "CAO",
+      "line_a": "Amazon Basin",
+      "id_a": "cig-cao-amazon-basin",
+      "line_b": "Amazon Basin Extra Anejo",
+      "id_b": "cig-cao-amazon-basin-extra-anejo"
+    },
+    {
+      "brand": "Carlos",
+      "line_a": "André Airborne",
+      "id_a": "cig-carlos-andre-airborne",
+      "line_b": "André Airborne Larga",
+      "id_b": "cig-carlos-andre-airborne-larga"
+    },
+    {
+      "brand": "Carlos",
+      "line_a": "André Cast Off",
+      "id_a": "cig-carlos-andre-cast-off",
+      "line_b": "André Cast Off Larga",
+      "id_b": "cig-carlos-andre-cast-off-larga"
+    },
+    {
+      "brand": "Carlos",
+      "line_a": "André Pace",
+      "id_a": "cig-carlos-andre-pace",
+      "line_b": "André Pace Larga",
+      "id_b": "cig-carlos-andre-pace-larga"
+    },
+    {
+      "brand": "Casa",
+      "line_a": "de Torres",
+      "id_a": "cig-casa-de-torres",
+      "line_b": "de Torres Bold",
+      "id_b": "cig-casa-de-torres-bold"
+    },
+    {
+      "brand": "Casa",
+      "line_a": "de Torres",
+      "id_a": "cig-casa-de-torres",
+      "line_b": "de Torres Edicion Especial",
+      "id_b": "cig-casa-de-torres-edicion-especial"
+    },
+    {
+      "brand": "Casa",
+      "line_a": "de Torres",
+      "id_a": "cig-casa-de-torres",
+      "line_b": "de Torres Edicion Famoso XI Maduro",
+      "id_b": "cig-casa-de-torres-edicion-famoso-xi-maduro"
+    },
+    {
+      "brand": "Casa",
+      "line_a": "de Torres",
+      "id_a": "cig-casa-de-torres",
+      "line_b": "de Torres Edicion Famoso XII Finos Maduro",
+      "id_b": "cig-casa-de-torres-edicion-famoso-xii-finos-maduro"
+    },
+    {
+      "brand": "Casa",
+      "line_a": "de Torres",
+      "id_a": "cig-casa-de-torres",
+      "line_b": "de Torres Edicion Famoso XIII Marron",
+      "id_b": "cig-casa-de-torres-edicion-famoso-xiii-marron"
+    },
+    {
+      "brand": "Casa",
+      "line_a": "de Torres",
+      "id_a": "cig-casa-de-torres",
+      "line_b": "de Torres Maduro Selection",
+      "id_b": "cig-casa-de-torres-maduro-selection"
+    },
+    {
+      "brand": "Casa Fernández",
+      "line_a": "Casa Fernandez Miami Reserva",
+      "id_a": "cig-casa-fernandez-casa-fernandez-miami-reserva",
+      "line_b": "Casa Fernandez Miami Reserva Maduro",
+      "id_b": "cig-casa-fernandez-casa-fernandez-miami-reserva-maduro"
+    },
+    {
+      "brand": "Casa Turrent",
+      "line_a": "1880 Claro",
+      "id_a": "cig-casa-turrent-1880-claro",
+      "line_b": "1880 Claro Doble",
+      "id_b": "cig-casa-turrent-1880-claro-doble"
+    },
+    {
+      "brand": "Casa Turrent",
+      "line_a": "Maduro",
+      "id_a": "cig-casa-turrent-maduro",
+      "line_b": "Maduro Short",
+      "id_b": "cig-casa-turrent-maduro-short"
+    },
+    {
+      "brand": "Casa Turrent",
+      "line_a": "Revolution Original",
+      "id_a": "cig-casa-turrent-revolution-original",
+      "line_b": "Revolution Original Wide",
+      "id_b": "cig-casa-turrent-revolution-original-wide"
+    },
+    {
+      "brand": "Casa Turrent",
+      "line_a": "Sumatra",
+      "id_a": "cig-casa-turrent-sumatra",
+      "line_b": "Sumatra Short",
+      "id_b": "cig-casa-turrent-sumatra-short"
+    },
+    {
+      "brand": "Casdagli",
+      "line_a": "Basilica C No. 1",
+      "id_a": "cig-casdagli-basilica-c-no-1",
+      "line_b": "Basilica C No. 1 MADURO",
+      "id_b": "cig-casdagli-basilica-c-no-1-maduro"
+    },
+    {
+      "brand": "Casdagli",
+      "line_a": "Club",
+      "id_a": "cig-casdagli-club",
+      "line_b": "Club Especial",
+      "id_b": "cig-casdagli-club-especial"
+    },
+    {
+      "brand": "Casdagli",
+      "line_a": "Club",
+      "id_a": "cig-casdagli-club",
+      "line_b": "Club Gran GOLD",
+      "id_b": "cig-casdagli-club-gran-gold"
+    },
+    {
+      "brand": "Casdagli",
+      "line_a": "Club",
+      "id_a": "cig-casdagli-club",
+      "line_b": "Club Mareva Jure",
+      "id_b": "cig-casdagli-club-mareva-jure"
+    },
+    {
+      "brand": "Casdagli",
+      "line_a": "Club",
+      "id_a": "cig-casdagli-club",
+      "line_b": "Club Mareva Spalato No. 2",
+      "id_b": "cig-casdagli-club-mareva-spalato-no-2"
+    },
+    {
+      "brand": "Casdagli",
+      "line_a": "Traditional",
+      "id_a": "cig-casdagli-traditional",
+      "line_b": "Traditional 25 Aniversario",
+      "id_b": "cig-casdagli-traditional-25-aniversario"
+    },
+    {
+      "brand": "Casdagli",
+      "line_a": "Traditional",
+      "id_a": "cig-casdagli-traditional",
+      "line_b": "Traditional Cotton tail",
+      "id_b": "cig-casdagli-traditional-cotton-tail"
+    },
+    {
+      "brand": "Casdagli",
+      "line_a": "Traditional",
+      "id_a": "cig-casdagli-traditional",
+      "line_b": "Traditional Grand Cafe Maduro",
+      "id_b": "cig-casdagli-traditional-grand-cafe-maduro"
+    },
+    {
+      "brand": "Casdagli",
+      "line_a": "Traditional",
+      "id_a": "cig-casdagli-traditional",
+      "line_b": "Traditional Super",
+      "id_b": "cig-casdagli-traditional-super"
+    },
+    {
+      "brand": "Casdagli",
+      "line_a": "Villa",
+      "id_a": "cig-casdagli-villa",
+      "line_b": "Villa Exquisito Nicarita",
+      "id_b": "cig-casdagli-villa-exquisito-nicarita"
+    },
+    {
+      "brand": "Casdagli",
+      "line_a": "Villa",
+      "id_a": "cig-casdagli-villa",
+      "line_b": "Villa Exquisito Peruvita",
+      "id_b": "cig-casdagli-villa-exquisito-peruvita"
+    },
+    {
+      "brand": "Cavalier",
+      "line_a": "Genève BII Viso Jalapa",
+      "id_a": "cig-cavalier-geneve-bii-viso-jalapa",
+      "line_b": "Genève BII Viso Jalapa Gordo",
+      "id_b": "cig-cavalier-geneve-bii-viso-jalapa-gordo"
+    },
+    {
+      "brand": "Cavalier",
+      "line_a": "Genève BII Viso Jalapa",
+      "id_a": "cig-cavalier-geneve-bii-viso-jalapa",
+      "line_b": "Genève BII Viso Jalapa No. 2",
+      "id_b": "cig-cavalier-geneve-bii-viso-jalapa-no-2"
+    },
+    {
+      "brand": "Cavalier",
+      "line_a": "Genève Black II",
+      "id_a": "cig-cavalier-geneve-black-ii",
+      "line_b": "Genève Black II Gordo",
+      "id_b": "cig-cavalier-geneve-black-ii-gordo"
+    },
+    {
+      "brand": "Cavalier",
+      "line_a": "Genève Black II",
+      "id_a": "cig-cavalier-geneve-black-ii",
+      "line_b": "Genève Black II No. 2",
+      "id_b": "cig-cavalier-geneve-black-ii-no-2"
+    },
+    {
+      "brand": "Cavalier",
+      "line_a": "Genève Domaine Rouge",
+      "id_a": "cig-cavalier-geneve-domaine-rouge",
+      "line_b": "Genève Domaine Rouge Grande",
+      "id_b": "cig-cavalier-geneve-domaine-rouge-grande"
+    },
+    {
+      "brand": "Cavalier",
+      "line_a": "Genève Inner Circle",
+      "id_a": "cig-cavalier-geneve-inner-circle",
+      "line_b": "Genève Inner Circle Grande",
+      "id_b": "cig-cavalier-geneve-inner-circle-grande"
+    },
+    {
+      "brand": "Cavalier",
+      "line_a": "Genève Limited Edition 2025",
+      "id_a": "cig-cavalier-geneve-limited-edition-2025",
+      "line_b": "Genève Limited Edition 2025 Green Jacket",
+      "id_b": "cig-cavalier-geneve-limited-edition-2025-green-jacket"
+    },
+    {
+      "brand": "Cavalier",
+      "line_a": "Genève White Series",
+      "id_a": "cig-cavalier-geneve-white-series",
+      "line_b": "Genève White Series Diplomate",
+      "id_b": "cig-cavalier-geneve-white-series-diplomate"
+    },
+    {
+      "brand": "Cavalier",
+      "line_a": "Genève White Series",
+      "id_a": "cig-cavalier-geneve-white-series",
+      "line_b": "Genève White Series Elegantes",
+      "id_b": "cig-cavalier-geneve-white-series-elegantes"
+    },
+    {
+      "brand": "Cavalier",
+      "line_a": "Genève White Series",
+      "id_a": "cig-cavalier-geneve-white-series",
+      "line_b": "Genève White Series Medio",
+      "id_b": "cig-cavalier-geneve-white-series-medio"
+    },
+    {
+      "brand": "Cavalier",
+      "line_a": "Genève White Series",
+      "id_a": "cig-cavalier-geneve-white-series",
+      "line_b": "Genève White Series No. 2",
+      "id_b": "cig-cavalier-geneve-white-series-no-2"
+    },
+    {
+      "brand": "Cavalier",
+      "line_a": "Genève White Series",
+      "id_a": "cig-cavalier-geneve-white-series",
+      "line_b": "Genève White Series Tempura",
+      "id_b": "cig-cavalier-geneve-white-series-tempura"
+    },
+    {
+      "brand": "Charatan",
+      "line_a": "Claro Claro",
+      "id_a": "cig-charatan-claro-claro",
+      "line_b": "Claro Claro Half",
+      "id_b": "cig-charatan-claro-claro-half"
+    },
+    {
+      "brand": "Chateau",
+      "line_a": "Diadem Conviction",
+      "id_a": "cig-chateau-diadem-conviction",
+      "line_b": "Diadem Conviction Petit",
+      "id_b": "cig-chateau-diadem-conviction-petit"
+    },
+    {
+      "brand": "Chinchalero",
+      "line_a": "Classic",
+      "id_a": "cig-chinchalero-classic",
+      "line_b": "Classic Novillo",
+      "id_b": "cig-chinchalero-classic-novillo"
+    },
+    {
+      "brand": "Chinchalero",
+      "line_a": "Classic",
+      "id_a": "cig-chinchalero-classic",
+      "line_b": "Classic Picadillos",
+      "id_b": "cig-chinchalero-classic-picadillos"
+    },
+    {
+      "brand": "Chinchalero",
+      "line_a": "Torcidos",
+      "id_a": "cig-chinchalero-torcidos",
+      "line_b": "Torcidos Très",
+      "id_b": "cig-chinchalero-torcidos-tres"
+    },
+    {
+      "brand": "Christo",
+      "line_a": "Brasil",
+      "id_a": "cig-christo-brasil",
+      "line_b": "Brasil Glastube",
+      "id_b": "cig-christo-brasil-glastube"
+    },
+    {
+      "brand": "Christo",
+      "line_a": "Sumatra",
+      "id_a": "cig-christo-sumatra",
+      "line_b": "Sumatra Glastube",
+      "id_b": "cig-christo-sumatra-glastube"
+    },
+    {
+      "brand": "Christo",
+      "line_a": "Werkfleiß",
+      "id_a": "cig-christo-werkflei",
+      "line_b": "Werkfleiß Glastube",
+      "id_b": "cig-christo-werkflei-glastube"
+    },
+    {
+      "brand": "Cigarkings",
+      "line_a": "Maduro",
+      "id_a": "cig-cigarkings-maduro",
+      "line_b": "Maduro 3 Years aged",
+      "id_b": "cig-cigarkings-maduro-3-years-aged"
+    },
+    {
+      "brand": "CLE",
+      "line_a": "Connecticut",
+      "id_a": "cig-cle-connecticut",
+      "line_b": "Connecticut Short",
+      "id_b": "cig-cle-connecticut-short"
+    },
+    {
+      "brand": "CLE",
+      "line_a": "Corojo",
+      "id_a": "cig-cle-corojo",
+      "line_b": "Corojo Short",
+      "id_b": "cig-cle-corojo-short"
+    },
+    {
+      "brand": "CLE",
+      "line_a": "Criollo",
+      "id_a": "cig-cle-criollo",
+      "line_b": "Criollo Short",
+      "id_b": "cig-cle-criollo-short"
+    },
+    {
+      "brand": "CLE",
+      "line_a": "Maduro",
+      "id_a": "cig-cle-maduro",
+      "line_b": "Maduro Azabache",
+      "id_b": "cig-cle-maduro-azabache"
+    },
+    {
+      "brand": "CLE",
+      "line_a": "Maduro",
+      "id_a": "cig-cle-maduro",
+      "line_b": "Maduro Short",
+      "id_b": "cig-cle-maduro-short"
+    },
+    {
+      "brand": "CLE",
+      "line_a": "Signature",
+      "id_a": "cig-cle-signature",
+      "line_b": "Signature 11/18",
+      "id_b": "cig-cle-signature-11-18"
+    },
+    {
+      "brand": "Cohiba",
+      "line_a": "Línea Clásica",
+      "id_a": "cig-cohiba-cohiba-linea-clasica",
+      "line_b": "Línea Clásica Robustos",
+      "id_b": "cig-cohiba-robustos"
+    },
+    {
+      "brand": "Cohiba",
+      "line_a": "Robusto",
+      "id_a": "cig-cohiba-robusto",
+      "line_b": "Robusto Tubos",
+      "id_b": "cig-cohiba-robusto-tubos"
+    },
+    {
+      "brand": "Condega",
+      "line_a": "Serie F",
+      "id_a": "cig-condega-serie-f",
+      "line_b": "Serie F Mini",
+      "id_b": "cig-condega-serie-f-mini"
+    },
+    {
+      "brand": "Crowned Heads",
+      "line_a": "Court Reserve XVIII",
+      "id_a": "cig-crowned-heads-court-reserve-xviii",
+      "line_b": "Court Reserve XVIII Gorda",
+      "id_b": "cig-crowned-heads-court-reserve-xviii-gorda"
+    },
+    {
+      "brand": "Crowned Heads",
+      "line_a": "Four Kicks",
+      "id_a": "cig-crowned-heads-four-kicks",
+      "line_b": "Four Kicks Capa Especial",
+      "id_b": "cig-crowned-heads-four-kicks-capa-especial"
+    },
+    {
+      "brand": "Crowned Heads",
+      "line_a": "Four Kicks",
+      "id_a": "cig-crowned-heads-four-kicks",
+      "line_b": "Four Kicks Capa Especial Gorda",
+      "id_b": "cig-crowned-heads-four-kicks-capa-especial-gorda"
+    },
+    {
+      "brand": "Crowned Heads",
+      "line_a": "Four Kicks",
+      "id_a": "cig-crowned-heads-four-kicks",
+      "line_b": "Four Kicks Gorda",
+      "id_b": "cig-crowned-heads-four-kicks-gorda"
+    },
+    {
+      "brand": "Crowned Heads",
+      "line_a": "Four Kicks Capa Especial",
+      "id_a": "cig-crowned-heads-four-kicks-capa-especial",
+      "line_b": "Four Kicks Capa Especial Gorda",
+      "id_b": "cig-crowned-heads-four-kicks-capa-especial-gorda"
+    },
+    {
+      "brand": "Crowned Heads",
+      "line_a": "Mil Dias",
+      "id_a": "cig-crowned-heads-mil-dias",
+      "line_b": "Mil Dias Gorda",
+      "id_b": "cig-crowned-heads-mil-dias-gorda"
+    },
+    {
+      "brand": "Cuba Aliados",
+      "line_a": "Limitado Zeppelin",
+      "id_a": "cig-cuba-aliados-limitado-zeppelin",
+      "line_b": "Limitado Zeppelin Maduro",
+      "id_b": "cig-cuba-aliados-limitado-zeppelin-maduro"
+    },
+    {
+      "brand": "Cuervo",
+      "line_a": "y Sobrinos Historiador",
+      "id_a": "cig-cuervo-y-sobrinos-historiador",
+      "line_b": "y Sobrinos Historiador Press",
+      "id_b": "cig-cuervo-y-sobrinos-historiador-press"
+    },
+    {
+      "brand": "Culture",
+      "line_a": "Dominican Reserve",
+      "id_a": "cig-culture-dominican-reserve",
+      "line_b": "Dominican Reserve Paris",
+      "id_b": "cig-culture-dominican-reserve-paris"
+    },
+    {
+      "brand": "Culture",
+      "line_a": "Dominican Reserve",
+      "id_a": "cig-culture-dominican-reserve",
+      "line_b": "Dominican Reserve Rome",
+      "id_b": "cig-culture-dominican-reserve-rome"
+    },
+    {
+      "brand": "Culture",
+      "line_a": "Dominican Reserve",
+      "id_a": "cig-culture-dominican-reserve",
+      "line_b": "Dominican Reserve Sevilla",
+      "id_b": "cig-culture-dominican-reserve-sevilla"
+    },
+    {
+      "brand": "Dalay",
+      "line_a": "Dominikanische Republik Dunkel",
+      "id_a": "cig-dalay-dominikanische-republik-dunkel",
+      "line_b": "Dominikanische Republik Dunkel Petite",
+      "id_b": "cig-dalay-dominikanische-republik-dunkel-petite"
+    },
+    {
+      "brand": "Dalay",
+      "line_a": "Dominikanische Republik Dunkel",
+      "id_a": "cig-dalay-dominikanische-republik-dunkel",
+      "line_b": "Dominikanische Republik Dunkel Super",
+      "id_b": "cig-dalay-dominikanische-republik-dunkel-super"
+    },
+    {
+      "brand": "Dalay",
+      "line_a": "Dominikanische Republik Hell",
+      "id_a": "cig-dalay-dominikanische-republik-hell",
+      "line_b": "Dominikanische Republik Hell Petite",
+      "id_b": "cig-dalay-dominikanische-republik-hell-petite"
+    },
+    {
+      "brand": "Dalay",
+      "line_a": "Dominikanische Republik Hell",
+      "id_a": "cig-dalay-dominikanische-republik-hell",
+      "line_b": "Dominikanische Republik Hell Super",
+      "id_b": "cig-dalay-dominikanische-republik-hell-super"
+    },
+    {
+      "brand": "Dalay",
+      "line_a": "Sevilla",
+      "id_a": "cig-dalay-sevilla",
+      "line_b": "Sevilla Extra",
+      "id_b": "cig-dalay-sevilla-extra"
+    },
+    {
+      "brand": "Dalay",
+      "line_a": "Sevilla",
+      "id_a": "cig-dalay-sevilla",
+      "line_b": "Sevilla Super",
+      "id_b": "cig-dalay-sevilla-super"
+    },
+    {
+      "brand": "Davidoff",
+      "line_a": "Maduro",
+      "id_a": "cig-davidoff-maduro",
+      "line_b": "Maduro Short",
+      "id_b": "cig-davidoff-maduro-short"
+    },
+    {
+      "brand": "Davidoff",
+      "line_a": "Puro Dominicano",
+      "id_a": "cig-davidoff-puro-dominicano",
+      "line_b": "Puro Dominicano Larga",
+      "id_b": "cig-davidoff-puro-dominicano-larga"
+    },
+    {
+      "brand": "Davidoff",
+      "line_a": "Winston Churchill",
+      "id_a": "cig-davidoff-davidoff-winston",
+      "line_b": "Winston Churchill The Late Hour",
+      "id_b": "cig-davidoff-wsc-the-late-hour"
+    },
+    {
+      "brand": "Davidoff",
+      "line_a": "Year of Horse",
+      "id_a": "cig-davidoff-year-of-horse",
+      "line_b": "Year Of Horse 2026",
+      "id_b": "cig-davidoff-year-of-horse-2026"
+    },
+    {
+      "brand": "Dbl",
+      "line_a": "Amarillo",
+      "id_a": "cig-dbl-amarillo",
+      "line_b": "Amarillo Press",
+      "id_b": "cig-dbl-amarillo-press"
+    },
+    {
+      "brand": "Dbl",
+      "line_a": "Extra Viejo",
+      "id_a": "cig-dbl-extra-viejo",
+      "line_b": "Extra Viejo Gorda",
+      "id_b": "cig-dbl-extra-viejo-gorda"
+    },
+    {
+      "brand": "Dbl",
+      "line_a": "Formula",
+      "id_a": "cig-dbl-formula",
+      "line_b": "Formula Gorda",
+      "id_b": "cig-dbl-formula-gorda"
+    },
+    {
+      "brand": "Dbl",
+      "line_a": "Nicaragua",
+      "id_a": "cig-dbl-nicaragua",
+      "line_b": "Nicaragua Gorda Prensado",
+      "id_b": "cig-dbl-nicaragua-gorda-prensado"
+    },
+    {
+      "brand": "De Leon",
+      "line_a": "Etiqueta Negra",
+      "id_a": "cig-de-leon-etiqueta-negra",
+      "line_b": "Etiqueta Negra Gordo",
+      "id_b": "cig-de-leon-etiqueta-negra-gordo"
+    },
+    {
+      "brand": "Despot",
+      "line_a": "U",
+      "id_a": "cig-despot-u",
+      "line_b": "U Half",
+      "id_b": "cig-despot-u-half"
+    },
+    {
+      "brand": "Diamond Crown",
+      "line_a": "Maximus",
+      "id_a": "cig-diamond-crown-maximus",
+      "line_b": "Maximus #5",
+      "id_b": "cig-diamond-crown-maximus-5"
+    },
+    {
+      "brand": "Domaine",
+      "line_a": "de Lavalette Classic",
+      "id_a": "cig-domaine-de-lavalette-classic",
+      "line_b": "de Lavalette Classic Small",
+      "id_b": "cig-domaine-de-lavalette-classic-small"
+    },
+    {
+      "brand": "Domaine",
+      "line_a": "de Lavalette Honduras",
+      "id_a": "cig-domaine-de-lavalette-honduras",
+      "line_b": "de Lavalette Honduras Maduro",
+      "id_b": "cig-domaine-de-lavalette-honduras-maduro"
+    },
+    {
+      "brand": "Domaine",
+      "line_a": "de Lavalette Panama",
+      "id_a": "cig-domaine-de-lavalette-panama",
+      "line_b": "de Lavalette Panama Breve",
+      "id_b": "cig-domaine-de-lavalette-panama-breve"
+    },
+    {
+      "brand": "Domenico",
+      "line_a": "Limited Edition",
+      "id_a": "cig-domenico-limited-edition",
+      "line_b": "Limited Edition Pirata",
+      "id_b": "cig-domenico-limited-edition-pirata"
+    },
+    {
+      "brand": "Don Diego",
+      "line_a": "Classic",
+      "id_a": "cig-don-diego-classic",
+      "line_b": "Classic Slim",
+      "id_b": "cig-don-diego-classic-slim"
+    },
+    {
+      "brand": "Don Duarte",
+      "line_a": "Reserva Privada Fuerte",
+      "id_a": "cig-don-duarte-reserva-privada-fuerte",
+      "line_b": "Reserva Privada Fuerte MADURO",
+      "id_b": "cig-don-duarte-reserva-privada-fuerte-maduro"
+    },
+    {
+      "brand": "Don Pepin",
+      "line_a": "Original",
+      "id_a": "cig-don-pepin-original",
+      "line_b": "Original Delicias",
+      "id_b": "cig-don-pepin-original-delicias"
+    },
+    {
+      "brand": "Don Pepin",
+      "line_a": "Original",
+      "id_a": "cig-don-pepin-original",
+      "line_b": "Original Gordos",
+      "id_b": "cig-don-pepin-original-gordos"
+    },
+    {
+      "brand": "Don Pepin",
+      "line_a": "VC",
+      "id_a": "cig-don-pepin-vc",
+      "line_b": "VC Invictos",
+      "id_b": "cig-don-pepin-vc-invictos"
+    },
+    {
+      "brand": "Don Pépin García",
+      "line_a": "Don Pepin Garcia Original",
+      "id_a": "cig-don-pepin-garcia-don-pepin-garcia-original",
+      "line_b": "Don Pepin Garcia Original Imperiales",
+      "id_b": "cig-don-pepin-garcia-don-pepin-garcia-original-imperiales"
+    },
+    {
+      "brand": "Don Pépin García",
+      "line_a": "Don Pepin Garcia Serie JJ",
+      "id_a": "cig-don-pepin-garcia-don-pepin-garcia-serie-jj",
+      "line_b": "Don Pepin Garcia Serie JJ Limited Edition 2025",
+      "id_b": "cig-don-pepin-garcia-don-pepin-garcia-serie-jj-limited-edition-2025"
+    },
+    {
+      "brand": "Don Zuarin",
+      "line_a": "Clar",
+      "id_a": "cig-don-zuarin-clar",
+      "line_b": "Clar Double",
+      "id_b": "cig-don-zuarin-clar-double"
+    },
+    {
+      "brand": "Dos Santos",
+      "line_a": "Consul Maduro Vintage",
+      "id_a": "cig-dos-santos-consul-maduro-vintage",
+      "line_b": "Consul Maduro Vintage Inmenso",
+      "id_b": "cig-dos-santos-consul-maduro-vintage-inmenso"
+    },
+    {
+      "brand": "Dos Santos",
+      "line_a": "La Regenta",
+      "id_a": "cig-dos-santos-la-regenta",
+      "line_b": "La Regenta 1921",
+      "id_b": "cig-dos-santos-la-regenta-1921"
+    },
+    {
+      "brand": "Dos Santos",
+      "line_a": "La Regenta",
+      "id_a": "cig-dos-santos-la-regenta",
+      "line_b": "La Regenta 1921 Anejo Rum Barrel Aged",
+      "id_b": "cig-dos-santos-la-regenta-1921-anejo-rum-barrel-aged"
+    },
+    {
+      "brand": "Dos Santos",
+      "line_a": "La Regenta",
+      "id_a": "cig-dos-santos-la-regenta",
+      "line_b": "La Regenta 1921 Maduro",
+      "id_b": "cig-dos-santos-la-regenta-1921-maduro"
+    },
+    {
+      "brand": "Dos Santos",
+      "line_a": "La Regenta",
+      "id_a": "cig-dos-santos-la-regenta",
+      "line_b": "La Regenta Especial Edicion Especiales Maduro",
+      "id_b": "cig-dos-santos-la-regenta-especial-edicion-especiales-maduro"
+    },
+    {
+      "brand": "Dos Santos",
+      "line_a": "La Regenta",
+      "id_a": "cig-dos-santos-la-regenta",
+      "line_b": "La Regenta Especial Edicion Maduro",
+      "id_b": "cig-dos-santos-la-regenta-especial-edicion-maduro"
+    },
+    {
+      "brand": "Dos Santos",
+      "line_a": "La Regenta",
+      "id_a": "cig-dos-santos-la-regenta",
+      "line_b": "La Regenta Maduro",
+      "id_b": "cig-dos-santos-la-regenta-maduro"
+    },
+    {
+      "brand": "Dos Santos",
+      "line_a": "La Regenta 1921",
+      "id_a": "cig-dos-santos-la-regenta-1921",
+      "line_b": "La Regenta 1921 Anejo Rum Barrel Aged",
+      "id_b": "cig-dos-santos-la-regenta-1921-anejo-rum-barrel-aged"
+    },
+    {
+      "brand": "Dos Santos",
+      "line_a": "La Regenta 1921",
+      "id_a": "cig-dos-santos-la-regenta-1921",
+      "line_b": "La Regenta 1921 Maduro",
+      "id_b": "cig-dos-santos-la-regenta-1921-maduro"
+    },
+    {
+      "brand": "Drew Estate",
+      "line_a": "Acid",
+      "id_a": "cig-drew-estate-de-acid",
+      "line_b": "Acid Blondie - Shipping restrictions",
+      "id_b": "cig-drew-estate-acid-blondie-shipping-restrictions"
+    },
+    {
+      "brand": "Drew Estate",
+      "line_a": "Deadwood by Leather Rose",
+      "id_a": "cig-drew-estate-deadwood-by-leather-rose",
+      "line_b": "Deadwood by Leather Rose Petite",
+      "id_b": "cig-drew-estate-deadwood-by-leather-rose-petite"
+    },
+    {
+      "brand": "Drew Estate",
+      "line_a": "Deadwood Dominicana",
+      "id_a": "cig-drew-estate-deadwood-dominicana",
+      "line_b": "Deadwood Dominicana Buenas Noches",
+      "id_b": "cig-drew-estate-deadwood-dominicana-buenas-noches"
+    },
+    {
+      "brand": "Drew Estate",
+      "line_a": "Liga Undercrown",
+      "id_a": "cig-drew-estate-liga-undercrown",
+      "line_b": "Liga Undercrown 10",
+      "id_b": "cig-drew-estate-liga-undercrown-10"
+    },
+    {
+      "brand": "Drew Estate",
+      "line_a": "Liga Undercrown",
+      "id_a": "cig-drew-estate-liga-undercrown",
+      "line_b": "Liga Undercrown 10 by Doble",
+      "id_b": "cig-drew-estate-liga-undercrown-10-by-doble"
+    },
+    {
+      "brand": "Drew Estate",
+      "line_a": "Liga Undercrown",
+      "id_a": "cig-drew-estate-liga-undercrown",
+      "line_b": "Liga Undercrown by Flying Pig",
+      "id_b": "cig-drew-estate-liga-undercrown-by-flying-pig"
+    },
+    {
+      "brand": "Drew Estate",
+      "line_a": "Liga Undercrown",
+      "id_a": "cig-drew-estate-liga-undercrown",
+      "line_b": "Liga Undercrown Dogma",
+      "id_b": "cig-drew-estate-liga-undercrown-dogma"
+    },
+    {
+      "brand": "Drew Estate",
+      "line_a": "Liga Undercrown",
+      "id_a": "cig-drew-estate-liga-undercrown",
+      "line_b": "Liga Undercrown El Tigre Dominicano",
+      "id_b": "cig-drew-estate-liga-undercrown-el-tigre-dominicano"
+    },
+    {
+      "brand": "Drew Estate",
+      "line_a": "Liga Undercrown 10",
+      "id_a": "cig-drew-estate-liga-undercrown-10",
+      "line_b": "Liga Undercrown 10 by Doble",
+      "id_b": "cig-drew-estate-liga-undercrown-10-by-doble"
+    },
+    {
+      "brand": "Drew Estate",
+      "line_a": "Norteno",
+      "id_a": "cig-drew-estate-norteno",
+      "line_b": "Norteno by Fino",
+      "id_b": "cig-drew-estate-norteno-by-fino"
+    },
+    {
+      "brand": "Drew Estate",
+      "line_a": "Norteno",
+      "id_a": "cig-drew-estate-norteno",
+      "line_b": "Norteno by Humidor",
+      "id_b": "cig-drew-estate-norteno-by-humidor"
+    },
+    {
+      "brand": "E.P. Carrillo",
+      "line_a": "Cabinet",
+      "id_a": "cig-e-p-carrillo-cabinet",
+      "line_b": "Cabinet Double",
+      "id_b": "cig-e-p-carrillo-cabinet-double"
+    },
+    {
+      "brand": "E.P. Carrillo",
+      "line_a": "Cabinet",
+      "id_a": "cig-e-p-carrillo-cabinet",
+      "line_b": "Cabinet Gorda",
+      "id_b": "cig-e-p-carrillo-cabinet-gorda"
+    },
+    {
+      "brand": "E.P. Carrillo",
+      "line_a": "Cabinet",
+      "id_a": "cig-e-p-carrillo-cabinet",
+      "line_b": "Cabinet Wide",
+      "id_b": "cig-e-p-carrillo-cabinet-wide"
+    },
+    {
+      "brand": "E.P. Carrillo",
+      "line_a": "Core",
+      "id_a": "cig-e-p-carrillo-core",
+      "line_b": "Core Line",
+      "id_b": "cig-ep-carrillo-epc-core"
+    },
+    {
+      "brand": "E.P. Carrillo",
+      "line_a": "EPC Pledge",
+      "id_a": "cig-e-p-carrillo-epc-pledge",
+      "line_b": "EPC Pledge Apogee",
+      "id_b": "cig-e-p-carrillo-epc-pledge-apogee"
+    },
+    {
+      "brand": "E.P. Carrillo",
+      "line_a": "EPC Pledge",
+      "id_a": "cig-e-p-carrillo-epc-pledge",
+      "line_b": "EPC Pledge Prequel",
+      "id_b": "cig-e-p-carrillo-epc-pledge-prequel"
+    },
+    {
+      "brand": "E.P. Carrillo",
+      "line_a": "EPC Pledge",
+      "id_a": "cig-e-p-carrillo-epc-pledge",
+      "line_b": "EPC Pledge Sojourn",
+      "id_b": "cig-e-p-carrillo-epc-pledge-sojourn"
+    },
+    {
+      "brand": "E.P. Carrillo",
+      "line_a": "Pledge",
+      "id_a": "cig-ep-carrillo-epc-pledge",
+      "line_b": "Pledge / Encore",
+      "id_b": "cig-ep-carrillo-pledge"
+    },
+    {
+      "brand": "E.P. Carrillo",
+      "line_a": "Pledge",
+      "id_a": "cig-ep-carrillo-epc-pledge",
+      "line_b": "Pledge Apogee",
+      "id_b": "cig-e-p-carrillo-pledge-apogee"
+    },
+    {
+      "brand": "Eiroa",
+      "line_a": "CBT Maduro",
+      "id_a": "cig-eiroa-cbt-maduro-2",
+      "line_b": "CBT Maduro / 20 Years",
+      "id_b": "cig-eiroa-cbt-maduro"
+    },
+    {
+      "brand": "Eiroa",
+      "line_a": "CBT Maduro",
+      "id_a": "cig-eiroa-cbt-maduro-2",
+      "line_b": "CBT Maduro Gordo",
+      "id_b": "cig-eiroa-cbt-maduro-gordo"
+    },
+    {
+      "brand": "Eiroa",
+      "line_a": "CBT Maduro",
+      "id_a": "cig-eiroa-cbt-maduro-2",
+      "line_b": "CBT Maduro Presando",
+      "id_b": "cig-eiroa-cbt-maduro-presando"
+    },
+    {
+      "brand": "Eiroa",
+      "line_a": "Classic",
+      "id_a": "cig-eiroa-classic-2",
+      "line_b": "Classic / Colorado",
+      "id_b": "cig-eiroa-classic"
+    },
+    {
+      "brand": "Eiroa",
+      "line_a": "Classic",
+      "id_a": "cig-eiroa-classic-2",
+      "line_b": "Classic 10 X 50",
+      "id_b": "cig-eiroa-classic-10-x-50"
+    },
+    {
+      "brand": "Eiroa",
+      "line_a": "Classic",
+      "id_a": "cig-eiroa-classic-2",
+      "line_b": "Classic Corona Prensado 4 X 48",
+      "id_b": "cig-eiroa-classic-corona-prensado-4-x-48"
+    },
+    {
+      "brand": "Eiroa",
+      "line_a": "Classic",
+      "id_a": "cig-eiroa-classic-2",
+      "line_b": "Classic Robusto 5 X 50",
+      "id_b": "cig-eiroa-classic-robusto-5-x-50"
+    },
+    {
+      "brand": "Eiroa",
+      "line_a": "Classic",
+      "id_a": "cig-eiroa-classic-2",
+      "line_b": "Classic Toro 6 X 54",
+      "id_b": "cig-eiroa-classic-toro-6-x-54"
+    },
+    {
+      "brand": "Eiroa",
+      "line_a": "First 20 Years Colorado",
+      "id_a": "cig-eiroa-first-20-years-colorado",
+      "line_b": "First 20 Years Colorado Gordo",
+      "id_b": "cig-eiroa-first-20-years-colorado-gordo"
+    },
+    {
+      "brand": "El Gueguense",
+      "line_a": "El Güegüense",
+      "id_a": "cig-el-gueguense-el-gueguense",
+      "line_b": "El Güegüense Huaco",
+      "id_b": "cig-el-gueguense-el-gueguense-huaco"
+    },
+    {
+      "brand": "Eladio Diaz",
+      "line_a": "La Diana",
+      "id_a": "cig-eladio-diaz-la-diana",
+      "line_b": "La Diana / Anniversary",
+      "id_b": "cig-eladio-diaz"
+    },
+    {
+      "brand": "Eladio Diaz",
+      "line_a": "La Diana",
+      "id_a": "cig-eladio-diaz-la-diana",
+      "line_b": "La Diana Robusto 5 X 52",
+      "id_b": "cig-eladio-diaz-la-diana-robusto-5-x-52"
+    },
+    {
+      "brand": "Epic",
+      "line_a": "Gold",
+      "id_a": "cig-epic-gold",
+      "line_b": "Gold Extra",
+      "id_b": "cig-epic-gold-extra"
+    },
+    {
+      "brand": "Epic",
+      "line_a": "La Rubia",
+      "id_a": "cig-epic-la-rubia",
+      "line_b": "La Rubia Short",
+      "id_b": "cig-epic-la-rubia-short"
+    },
+    {
+      "brand": "Esteban",
+      "line_a": "Carreras Chupa Cabra Hellcat",
+      "id_a": "cig-esteban-carreras-chupa-cabra-hellcat",
+      "line_b": "Carreras Chupa Cabra Hellcat Grande",
+      "id_b": "cig-esteban-carreras-chupa-cabra-hellcat-grande"
+    },
+    {
+      "brand": "Factory Overrun",
+      "line_a": "Nicaragua",
+      "id_a": "cig-factory-overrun-nicaragua",
+      "line_b": "Nicaragua Extra",
+      "id_b": "cig-factory-overrun-nicaragua-extra"
+    },
+    {
+      "brand": "Factory Overrun",
+      "line_a": "Nicaragua",
+      "id_a": "cig-factory-overrun-nicaragua",
+      "line_b": "Nicaragua Gordo",
+      "id_b": "cig-factory-overrun-nicaragua-gordo"
+    },
+    {
+      "brand": "Factory Overrun",
+      "line_a": "Nicaragua",
+      "id_a": "cig-factory-overrun-nicaragua",
+      "line_b": "Nicaragua Short",
+      "id_b": "cig-factory-overrun-nicaragua-short"
+    },
+    {
+      "brand": "Fine Catch",
+      "line_a": "Marlin",
+      "id_a": "cig-fine-catch-marlin",
+      "line_b": "Marlin Maduro",
+      "id_b": "cig-fine-catch-marlin-maduro"
+    },
+    {
+      "brand": "Flor de Copán",
+      "line_a": "Flor de Copan",
+      "id_a": "cig-flor-de-copan-flor-de-copan",
+      "line_b": "Flor de Copan 1795 Edicion Limitada 2025",
+      "id_b": "cig-flor-de-copan-flor-de-copan-1795-edicion-limitada-2025"
+    },
+    {
+      "brand": "Flor de Copán",
+      "line_a": "Flor de Copan",
+      "id_a": "cig-flor-de-copan-flor-de-copan",
+      "line_b": "Flor de Copan Linea Puros",
+      "id_b": "cig-flor-de-copan-flor-de-copan-linea-puros"
+    },
+    {
+      "brand": "Flor de Copán",
+      "line_a": "Flor de Copan",
+      "id_a": "cig-flor-de-copan-flor-de-copan",
+      "line_b": "Flor de Copan Maduro",
+      "id_b": "cig-flor-de-copan-flor-de-copan-maduro"
+    },
+    {
+      "brand": "Flor de Copán",
+      "line_a": "Flor de Copan",
+      "id_a": "cig-flor-de-copan-flor-de-copan",
+      "line_b": "Flor de Copan Short Magnum",
+      "id_b": "cig-flor-de-copan-flor-de-copan-short-magnum"
+    },
+    {
+      "brand": "Flor de Copán",
+      "line_a": "Flor de Copan",
+      "id_a": "cig-flor-de-copan-flor-de-copan",
+      "line_b": "Flor de Copan Titan",
+      "id_b": "cig-flor-de-copan-flor-de-copan-titan"
+    },
+    {
+      "brand": "Flor de Selva",
+      "line_a": "Aniversario",
+      "id_a": "cig-flor-de-selva-aniversario",
+      "line_b": "Aniversario Egoista",
+      "id_b": "cig-flor-de-selva-aniversario-egoista"
+    },
+    {
+      "brand": "Flor de Selva",
+      "line_a": "Classic",
+      "id_a": "cig-flor-de-selva-classic",
+      "line_b": "Classic Double",
+      "id_b": "cig-flor-de-selva-classic-double"
+    },
+    {
+      "brand": "Flor de Selva",
+      "line_a": "Classic",
+      "id_a": "cig-flor-de-selva-classic",
+      "line_b": "Classic No. 15",
+      "id_b": "cig-flor-de-selva-classic-no-15"
+    },
+    {
+      "brand": "Flor de Selva",
+      "line_a": "Classic",
+      "id_a": "cig-flor-de-selva-classic",
+      "line_b": "Classic Siesta",
+      "id_b": "cig-flor-de-selva-classic-siesta"
+    },
+    {
+      "brand": "Flores",
+      "line_a": "y Rodriguez 10th Anniversary",
+      "id_a": "cig-flores-y-rodriguez-10th-anniversary",
+      "line_b": "y Rodriguez 10th Anniversary Millefleurs",
+      "id_b": "cig-flores-y-rodriguez-10th-anniversary-millefleurs"
+    },
+    {
+      "brand": "Flores",
+      "line_a": "y Rodriguez 10th Anniversary",
+      "id_a": "cig-flores-y-rodriguez-10th-anniversary",
+      "line_b": "y Rodriguez 10th Anniversary Wide",
+      "id_b": "cig-flores-y-rodriguez-10th-anniversary-wide"
+    },
+    {
+      "brand": "Flores",
+      "line_a": "y Rodriguez 18th Anniversary",
+      "id_a": "cig-flores-y-rodriguez-18th-anniversary",
+      "line_b": "y Rodriguez 18th Anniversary Millefleurs",
+      "id_b": "cig-flores-y-rodriguez-18th-anniversary-millefleurs"
+    },
+    {
+      "brand": "Flores",
+      "line_a": "y Rodriguez 18th Anniversary",
+      "id_a": "cig-flores-y-rodriguez-18th-anniversary",
+      "line_b": "y Rodriguez 18th Anniversary Wide",
+      "id_b": "cig-flores-y-rodriguez-18th-anniversary-wide"
+    },
+    {
+      "brand": "Gh",
+      "line_a": "G.H. Black Dahlia",
+      "id_a": "cig-gh-g-h-black-dahlia",
+      "line_b": "G.H. Black Dahlia Shorty",
+      "id_b": "cig-gh-g-h-black-dahlia-shorty"
+    },
+    {
+      "brand": "Gh",
+      "line_a": "G.H. Connecticut No. 1",
+      "id_a": "cig-gh-g-h-connecticut-no-1",
+      "line_b": "G.H. Connecticut No. 1 Shorty",
+      "id_b": "cig-gh-g-h-connecticut-no-1-shorty"
+    },
+    {
+      "brand": "Gh",
+      "line_a": "G.H. Corojo No. 5",
+      "id_a": "cig-gh-g-h-corojo-no-5",
+      "line_b": "G.H. Corojo No. 5 Maduro",
+      "id_b": "cig-gh-g-h-corojo-no-5-maduro"
+    },
+    {
+      "brand": "Gh",
+      "line_a": "G.H. Corojo No. 5",
+      "id_a": "cig-gh-g-h-corojo-no-5",
+      "line_b": "G.H. Corojo No. 5 Shorty",
+      "id_b": "cig-gh-g-h-corojo-no-5-shorty"
+    },
+    {
+      "brand": "Gh",
+      "line_a": "G.H. Criollo No. 3",
+      "id_a": "cig-gh-g-h-criollo-no-3",
+      "line_b": "G.H. Criollo No. 3 Shorty",
+      "id_b": "cig-gh-g-h-criollo-no-3-shorty"
+    },
+    {
+      "brand": "Gh",
+      "line_a": "G.H. Gran Reserva No. 5",
+      "id_a": "cig-gh-g-h-gran-reserva-no-5",
+      "line_b": "G.H. Gran Reserva No. 5 Shorty",
+      "id_b": "cig-gh-g-h-gran-reserva-no-5-shorty"
+    },
+    {
+      "brand": "Gh",
+      "line_a": "G.H. La Conquista",
+      "id_a": "cig-gh-g-h-la-conquista",
+      "line_b": "G.H. La Conquista La Pinta",
+      "id_b": "cig-gh-g-h-la-conquista-la-pinta"
+    },
+    {
+      "brand": "Gh",
+      "line_a": "G.H. La Conquista",
+      "id_a": "cig-gh-g-h-la-conquista",
+      "line_b": "G.H. La Conquista Shorty",
+      "id_b": "cig-gh-g-h-la-conquista-shorty"
+    },
+    {
+      "brand": "Gilbert",
+      "line_a": "de Montsalvat Classic",
+      "id_a": "cig-gilbert-de-montsalvat-classic",
+      "line_b": "de Montsalvat Classic Chunky",
+      "id_b": "cig-gilbert-de-montsalvat-classic-chunky"
+    },
+    {
+      "brand": "Gilbert",
+      "line_a": "de Montsalvat Classic",
+      "id_a": "cig-gilbert-de-montsalvat-classic",
+      "line_b": "de Montsalvat Classic Limited Edition 15 Years",
+      "id_b": "cig-gilbert-de-montsalvat-classic-limited-edition-15-years"
+    },
+    {
+      "brand": "God",
+      "line_a": "of Fire By Don Carlos",
+      "id_a": "cig-god-of-fire-by-don-carlos",
+      "line_b": "of Fire By Don Carlos Gordo 54",
+      "id_b": "cig-god-of-fire-by-don-carlos-gordo-54"
+    },
+    {
+      "brand": "God",
+      "line_a": "of Fire Serie B",
+      "id_a": "cig-god-of-fire-serie-b",
+      "line_b": "of Fire Serie B Gordo 54",
+      "id_b": "cig-god-of-fire-serie-b-gordo-54"
+    },
+    {
+      "brand": "Griffin's",
+      "line_a": "Nicaragua",
+      "id_a": "cig-griffin-s-nicaragua",
+      "line_b": "Nicaragua Short",
+      "id_b": "cig-griffin-s-nicaragua-short"
+    },
+    {
+      "brand": "Griffin's",
+      "line_a": "Nicaragua",
+      "id_a": "cig-griffin-s-nicaragua",
+      "line_b": "Nicaragua Short Units",
+      "id_b": "cig-griffin-s-nicaragua-short-units"
+    },
+    {
+      "brand": "Griffin's",
+      "line_a": "Nicaragua",
+      "id_a": "cig-griffin-s-nicaragua",
+      "line_b": "Nicaragua Special Edition 2016",
+      "id_b": "cig-griffin-s-nicaragua-special-edition-2016"
+    },
+    {
+      "brand": "Griffin's",
+      "line_a": "Nicaragua",
+      "id_a": "cig-griffin-s-nicaragua",
+      "line_b": "Nicaragua Units",
+      "id_b": "cig-griffin-s-nicaragua-units"
+    },
+    {
+      "brand": "Griffin's",
+      "line_a": "Nicaragua Short",
+      "id_a": "cig-griffin-s-nicaragua-short",
+      "line_b": "Nicaragua Short Units",
+      "id_b": "cig-griffin-s-nicaragua-short-units"
+    },
+    {
+      "brand": "Gurkha",
+      "line_a": "35th Anniversary",
+      "id_a": "cig-gurkha-35th-anniversary",
+      "line_b": "35th Anniversary No. 2",
+      "id_b": "cig-gurkha-35th-anniversary-no-2"
+    },
+    {
+      "brand": "Gurkha",
+      "line_a": "Cask Blend",
+      "id_a": "cig-gurkha-cask-blend",
+      "line_b": "Cask Blend Grand",
+      "id_b": "cig-gurkha-cask-blend-grand"
+    },
+    {
+      "brand": "Gurkha",
+      "line_a": "Heritage",
+      "id_a": "cig-gurkha-heritage",
+      "line_b": "Heritage Corto",
+      "id_b": "cig-gurkha-heritage-corto"
+    },
+    {
+      "brand": "Gurkha",
+      "line_a": "Heritage",
+      "id_a": "cig-gurkha-heritage",
+      "line_b": "Heritage Maduro",
+      "id_b": "cig-gurkha-heritage-maduro"
+    },
+    {
+      "brand": "Gurkha",
+      "line_a": "Heritage",
+      "id_a": "cig-gurkha-heritage",
+      "line_b": "Heritage Maduro Corto",
+      "id_b": "cig-gurkha-heritage-maduro-corto"
+    },
+    {
+      "brand": "Gurkha",
+      "line_a": "Heritage Maduro",
+      "id_a": "cig-gurkha-heritage-maduro",
+      "line_b": "Heritage Maduro Corto",
+      "id_b": "cig-gurkha-heritage-maduro-corto"
+    },
+    {
+      "brand": "Gurkha",
+      "line_a": "Marquesa",
+      "id_a": "cig-gurkha-marquesa",
+      "line_b": "Marquesa Kiste",
+      "id_b": "cig-gurkha-marquesa-kiste"
+    },
+    {
+      "brand": "Gurkha",
+      "line_a": "Royal Challenge",
+      "id_a": "cig-gurkha-royal-challenge",
+      "line_b": "Royal Challenge Grand",
+      "id_b": "cig-gurkha-royal-challenge-grand"
+    },
+    {
+      "brand": "Gurkha",
+      "line_a": "Royal Challenge",
+      "id_a": "cig-gurkha-royal-challenge",
+      "line_b": "Royal Challenge Maduro",
+      "id_b": "cig-gurkha-royal-challenge-maduro"
+    },
+    {
+      "brand": "Gurkha",
+      "line_a": "Special Edition Tyson 2.0 Undisputed",
+      "id_a": "cig-gurkha-special-edition-tyson-2-0-undisputed",
+      "line_b": "Special Edition Tyson 2.0 Undisputed Gordo",
+      "id_b": "cig-gurkha-special-edition-tyson-2-0-undisputed-gordo"
+    },
+    {
+      "brand": "Gurkha",
+      "line_a": "Special Edition Tyson 2.0 Undisputed",
+      "id_a": "cig-gurkha-special-edition-tyson-2-0-undisputed",
+      "line_b": "Special Edition Tyson 2.0 Undisputed Gordo Maduro",
+      "id_b": "cig-gurkha-special-edition-tyson-2-0-undisputed-gordo-maduro"
+    },
+    {
+      "brand": "Gurkha",
+      "line_a": "Special Edition Tyson 2.0 Undisputed",
+      "id_a": "cig-gurkha-special-edition-tyson-2-0-undisputed",
+      "line_b": "Special Edition Tyson 2.0 Undisputed Maduro",
+      "id_b": "cig-gurkha-special-edition-tyson-2-0-undisputed-maduro"
+    },
+    {
+      "brand": "Gurkha",
+      "line_a": "Special Edition Tyson 2.0 Undisputed Gordo",
+      "id_a": "cig-gurkha-special-edition-tyson-2-0-undisputed-gordo",
+      "line_b": "Special Edition Tyson 2.0 Undisputed Gordo Maduro",
+      "id_b": "cig-gurkha-special-edition-tyson-2-0-undisputed-gordo-maduro"
+    },
+    {
+      "brand": "Gurkha",
+      "line_a": "Treinta 30th Anniversary",
+      "id_a": "cig-gurkha-treinta-30th-anniversary",
+      "line_b": "Treinta 30th Anniversary Aganorsa",
+      "id_b": "cig-gurkha-treinta-30th-anniversary-aganorsa"
+    },
+    {
+      "brand": "H. Upmann",
+      "line_a": "Half Corona",
+      "id_a": "cig-hupmann-half-corona",
+      "line_b": "Half Corona 3 1⁄2 X 44",
+      "id_b": "cig-h-upmann-half-corona-3-1-2-x-44"
+    },
+    {
+      "brand": "Hemmys",
+      "line_a": "Bundles",
+      "id_a": "cig-hemmys-bundles",
+      "line_b": "Bundles No. 2",
+      "id_b": "cig-hemmys-bundles-no-2"
+    },
+    {
+      "brand": "Hemmys",
+      "line_a": "Linea Secreta",
+      "id_a": "cig-hemmys-linea-secreta",
+      "line_b": "Linea Secreta Petit",
+      "id_b": "cig-hemmys-linea-secreta-petit"
+    },
+    {
+      "brand": "Henk",
+      "line_a": "Maori La Dona",
+      "id_a": "cig-henk-maori-la-dona",
+      "line_b": "Maori La Dona Edición Limitada 2018",
+      "id_b": "cig-henk-maori-la-dona-edicion-limitada-2018"
+    },
+    {
+      "brand": "Herr",
+      "line_a": "Lehmann No. 5 Schwarzwald",
+      "id_a": "cig-herr-lehmann-no-5-schwarzwald",
+      "line_b": "Lehmann No. 5 Schwarzwald Goldfinger",
+      "id_b": "cig-herr-lehmann-no-5-schwarzwald-goldfinger"
+    },
+    {
+      "brand": "Holt's",
+      "line_a": "House Selection",
+      "id_a": "cig-holt-s-house-selection",
+      "line_b": "House Selection Maduro",
+      "id_b": "cig-holt-s-house-selection-maduro"
+    },
+    {
+      "brand": "Hr",
+      "line_a": "H.R. Signature",
+      "id_a": "cig-hr-h-r-signature",
+      "line_b": "H.R. Signature Signature",
+      "id_b": "cig-hr-h-r-signature-signature"
+    },
+    {
+      "brand": "Ibis",
+      "line_a": "Dominicana",
+      "id_a": "cig-ibis-dominicana",
+      "line_b": "Dominicana Fuerte",
+      "id_b": "cig-ibis-dominicana-fuerte"
+    },
+    {
+      "brand": "Ibis",
+      "line_a": "Dominicana",
+      "id_a": "cig-ibis-dominicana",
+      "line_b": "Dominicana Mini",
+      "id_b": "cig-ibis-dominicana-mini"
+    },
+    {
+      "brand": "Ibis",
+      "line_a": "Honduras",
+      "id_a": "cig-ibis-honduras",
+      "line_b": "Honduras Maduro",
+      "id_b": "cig-ibis-honduras-maduro"
+    },
+    {
+      "brand": "Ibis",
+      "line_a": "Honduras",
+      "id_a": "cig-ibis-honduras",
+      "line_b": "Honduras Maduro Antiguo",
+      "id_b": "cig-ibis-honduras-maduro-antiguo"
+    },
+    {
+      "brand": "Ibis",
+      "line_a": "Honduras Maduro",
+      "id_a": "cig-ibis-honduras-maduro",
+      "line_b": "Honduras Maduro Antiguo",
+      "id_b": "cig-ibis-honduras-maduro-antiguo"
+    },
+    {
+      "brand": "Ibis",
+      "line_a": "Nicaragua",
+      "id_a": "cig-ibis-nicaragua",
+      "line_b": "Nicaragua Petit",
+      "id_b": "cig-ibis-nicaragua-petit"
+    },
+    {
+      "brand": "Inca",
+      "line_a": "Peru",
+      "id_a": "cig-inca-peru",
+      "line_b": "Peru Imperio",
+      "id_b": "cig-inca-peru-imperio"
+    },
+    {
+      "brand": "Inca",
+      "line_a": "Peru",
+      "id_a": "cig-inca-peru",
+      "line_b": "Peru Roca",
+      "id_b": "cig-inca-peru-roca"
+    },
+    {
+      "brand": "Inca",
+      "line_a": "Peru",
+      "id_a": "cig-inca-peru",
+      "line_b": "Peru Tambo",
+      "id_b": "cig-inca-peru-tambo"
+    },
+    {
+      "brand": "Jaime García",
+      "line_a": "Jaime Garcia Reserva Especial",
+      "id_a": "cig-jaime-garcia-jaime-garcia-reserva-especial",
+      "line_b": "Jaime Garcia Reserva Especial Connecticut",
+      "id_b": "cig-jaime-garcia-jaime-garcia-reserva-especial-connecticut"
+    },
+    {
+      "brand": "Jaime García",
+      "line_a": "Jaime Garcia Reserva Especial",
+      "id_a": "cig-jaime-garcia-jaime-garcia-reserva-especial",
+      "line_b": "Jaime Garcia Reserva Especial Extra",
+      "id_b": "cig-jaime-garcia-jaime-garcia-reserva-especial-extra"
+    },
+    {
+      "brand": "Jaime García",
+      "line_a": "Jaime Garcia Reserva Especial",
+      "id_a": "cig-jaime-garcia-jaime-garcia-reserva-especial",
+      "line_b": "Jaime Garcia Reserva Especial Grande",
+      "id_b": "cig-jaime-garcia-jaime-garcia-reserva-especial-grande"
+    },
+    {
+      "brand": "Jaime García",
+      "line_a": "Jaime Garcia Reserva Especial",
+      "id_a": "cig-jaime-garcia-jaime-garcia-reserva-especial",
+      "line_b": "Jaime Garcia Reserva Especial Sucesor",
+      "id_b": "cig-jaime-garcia-jaime-garcia-reserva-especial-sucesor"
+    },
+    {
+      "brand": "Jaime García",
+      "line_a": "Jaime Garcia Reserva Especial",
+      "id_a": "cig-jaime-garcia-jaime-garcia-reserva-especial",
+      "line_b": "Jaime Garcia Reserva Especial Super",
+      "id_b": "cig-jaime-garcia-jaime-garcia-reserva-especial-super"
+    },
+    {
+      "brand": "Joya de Nicaragua",
+      "line_a": "Antano",
+      "id_a": "cig-joya-de-nicaragua-antano-2",
+      "line_b": "Antano Dark Corojo Azarosa",
+      "id_b": "cig-joya-de-nicaragua-antano-dark-corojo-azarosa"
+    },
+    {
+      "brand": "Joya de Nicaragua",
+      "line_a": "Antano",
+      "id_a": "cig-joya-de-nicaragua-antano-2",
+      "line_b": "Antano Dark Corojo El Martillo",
+      "id_b": "cig-joya-de-nicaragua-antano-dark-corojo-el-martillo"
+    },
+    {
+      "brand": "Joya de Nicaragua",
+      "line_a": "Antano",
+      "id_a": "cig-joya-de-nicaragua-antano-2",
+      "line_b": "Antano Dark Corojo La Niveladora",
+      "id_b": "cig-joya-de-nicaragua-antano-dark-corojo-la-niveladora"
+    },
+    {
+      "brand": "Joya de Nicaragua",
+      "line_a": "Antano",
+      "id_a": "cig-joya-de-nicaragua-antano-2",
+      "line_b": "Antano Dark Corojo Pesadillas",
+      "id_b": "cig-joya-de-nicaragua-antano-dark-corojo-pesadillas"
+    },
+    {
+      "brand": "Joya de Nicaragua",
+      "line_a": "Antano",
+      "id_a": "cig-joya-de-nicaragua-antano-2",
+      "line_b": "Antano Dark Corojo Poderoso",
+      "id_b": "cig-joya-de-nicaragua-antano-dark-corojo-poderoso"
+    },
+    {
+      "brand": "Joya de Nicaragua",
+      "line_a": "Cabinetta",
+      "id_a": "cig-joya-de-nicaragua-cabinetta",
+      "line_b": "Cabinetta Gorda",
+      "id_b": "cig-joya-de-nicaragua-cabinetta-gorda"
+    },
+    {
+      "brand": "Kafie",
+      "line_a": "1901 Connecticut",
+      "id_a": "cig-kafie-1901-connecticut",
+      "line_b": "1901 Connecticut Balicoso",
+      "id_b": "cig-kafie-1901-connecticut-balicoso"
+    },
+    {
+      "brand": "Karen",
+      "line_a": "Berger Don Kiki",
+      "id_a": "cig-karen-berger-don-kiki",
+      "line_b": "Berger Don Kiki Barber Pole",
+      "id_b": "cig-karen-berger-don-kiki-barber-pole"
+    },
+    {
+      "brand": "Kristoff",
+      "line_a": "GC Signature Series",
+      "id_a": "cig-kristoff-gc-signature-series",
+      "line_b": "GC Signature Series Intertabac 2023",
+      "id_b": "cig-kristoff-gc-signature-series-intertabac-2023"
+    },
+    {
+      "brand": "Kristoff",
+      "line_a": "GC Signature Series",
+      "id_a": "cig-kristoff-gc-signature-series",
+      "line_b": "GC Signature Series JT",
+      "id_b": "cig-kristoff-gc-signature-series-jt"
+    },
+    {
+      "brand": "Kristoff",
+      "line_a": "GC Signature Series",
+      "id_a": "cig-kristoff-gc-signature-series",
+      "line_b": "GC Signature Series PCA 2022",
+      "id_b": "cig-kristoff-gc-signature-series-pca-2022"
+    },
+    {
+      "brand": "Kristoff",
+      "line_a": "GC Signature Series",
+      "id_a": "cig-kristoff-gc-signature-series",
+      "line_b": "GC Signature Series PCA 2026",
+      "id_b": "cig-kristoff-gc-signature-series-pca-2026"
+    },
+    {
+      "brand": "Kristoff",
+      "line_a": "Kristania",
+      "id_a": "cig-kristoff-kristania",
+      "line_b": "Kristania Maduro",
+      "id_b": "cig-kristoff-kristania-maduro"
+    },
+    {
+      "brand": "La Aroma de Cuba",
+      "line_a": "La Aroma del Caribe Base Line",
+      "id_a": "cig-la-aroma-de-cuba-la-aroma-del-caribe-base-line",
+      "line_b": "La Aroma del Caribe Base Line El Jefe",
+      "id_b": "cig-la-aroma-de-cuba-la-aroma-del-caribe-base-line-el-jefe"
+    },
+    {
+      "brand": "La Aroma de Cuba",
+      "line_a": "La Aroma del Caribe Base Line",
+      "id_a": "cig-la-aroma-de-cuba-la-aroma-del-caribe-base-line",
+      "line_b": "La Aroma del Caribe Base Line Immensa",
+      "id_b": "cig-la-aroma-de-cuba-la-aroma-del-caribe-base-line-immensa"
+    },
+    {
+      "brand": "La Aroma de Cuba",
+      "line_a": "La Aroma del Caribe Base Line",
+      "id_a": "cig-la-aroma-de-cuba-la-aroma-del-caribe-base-line",
+      "line_b": "La Aroma del Caribe Base Line Monarch",
+      "id_b": "cig-la-aroma-de-cuba-la-aroma-del-caribe-base-line-monarch"
+    },
+    {
+      "brand": "La Aroma de Cuba",
+      "line_a": "La Aroma del Caribe Connecticut",
+      "id_a": "cig-la-aroma-de-cuba-la-aroma-del-caribe-connecticut",
+      "line_b": "La Aroma Del Caribe Connecticut 5 ¼ x 54",
+      "id_b": "cig-la-aroma-de-cuba-la-aroma-del-caribe-connecticut-5-1-4-x-54"
+    },
+    {
+      "brand": "La Aroma de Cuba",
+      "line_a": "La Aroma del Caribe Connecticut",
+      "id_a": "cig-la-aroma-de-cuba-la-aroma-del-caribe-connecticut",
+      "line_b": "La Aroma del Caribe Connecticut Immensa",
+      "id_b": "cig-la-aroma-de-cuba-la-aroma-del-caribe-connecticut-immensa"
+    },
+    {
+      "brand": "La Aroma de Cuba",
+      "line_a": "La Aroma del Caribe Connecticut",
+      "id_a": "cig-la-aroma-de-cuba-la-aroma-del-caribe-connecticut",
+      "line_b": "La Aroma del Caribe Connecticut Monarch",
+      "id_b": "cig-la-aroma-de-cuba-la-aroma-del-caribe-connecticut-monarch"
+    },
+    {
+      "brand": "La Aroma de Cuba",
+      "line_a": "La Aroma del Caribe Mi Amor",
+      "id_a": "cig-la-aroma-de-cuba-la-aroma-del-caribe-mi-amor",
+      "line_b": "La Aroma del Caribe Mi Amor Duque",
+      "id_b": "cig-la-aroma-de-cuba-la-aroma-del-caribe-mi-amor-duque"
+    },
+    {
+      "brand": "La Aroma de Cuba",
+      "line_a": "La Aroma del Caribe Mi Amor",
+      "id_a": "cig-la-aroma-de-cuba-la-aroma-del-caribe-mi-amor",
+      "line_b": "La Aroma del Caribe Mi Amor Valentino",
+      "id_b": "cig-la-aroma-de-cuba-la-aroma-del-caribe-mi-amor-valentino"
+    },
+    {
+      "brand": "La Aroma de Cuba",
+      "line_a": "La Aroma del Caribe Pasion",
+      "id_a": "cig-la-aroma-de-cuba-la-aroma-del-caribe-pasion",
+      "line_b": "La Aroma del Caribe Pasion 5 ½ x 50",
+      "id_b": "cig-la-aroma-de-cuba-la-aroma-del-caribe-pasion-5-1-2-x-50"
+    },
+    {
+      "brand": "La Aurora",
+      "line_a": "107 Ecuador",
+      "id_a": "cig-la-aurora-107-ecuador",
+      "line_b": "107 Ecuador Maduro USA",
+      "id_b": "cig-la-aurora-107-ecuador-maduro-usa"
+    },
+    {
+      "brand": "La Aurora",
+      "line_a": "107 Ecuador",
+      "id_a": "cig-la-aurora-107-ecuador",
+      "line_b": "107 Ecuador Sumo",
+      "id_b": "cig-la-aurora-107-ecuador-sumo"
+    },
+    {
+      "brand": "La Aurora",
+      "line_a": "1495 Series",
+      "id_a": "cig-la-aurora-1495-series",
+      "line_b": "1495 Series Sumo",
+      "id_b": "cig-la-aurora-1495-series-sumo"
+    },
+    {
+      "brand": "La Aurora",
+      "line_a": "1903 Edition",
+      "id_a": "cig-la-aurora-la-1903",
+      "line_b": "1903 Edition Connecticut Toro 5 1/2 X 54",
+      "id_b": "cig-la-aurora-1903-edition-connecticut-toro-5-1-2-x-54"
+    },
+    {
+      "brand": "La Aurora",
+      "line_a": "Cameroon 1903",
+      "id_a": "cig-la-aurora-cameroon-1903",
+      "line_b": "Cameroon 1903 Deluxe",
+      "id_b": "cig-la-aurora-cameroon-1903-deluxe"
+    },
+    {
+      "brand": "La Barba",
+      "line_a": "Red",
+      "id_a": "cig-la-barba-red",
+      "line_b": "Red Petite",
+      "id_b": "cig-la-barba-red-petite"
+    },
+    {
+      "brand": "La Flor Dominicana",
+      "line_a": "Coronado",
+      "id_a": "cig-la-flor-dominicana-coronado",
+      "line_b": "Coronado Double",
+      "id_b": "cig-la-flor-dominicana-coronado-double"
+    },
+    {
+      "brand": "La Flor Dominicana",
+      "line_a": "Coronado",
+      "id_a": "cig-la-flor-dominicana-coronado",
+      "line_b": "Coronado Gorda",
+      "id_b": "cig-la-flor-dominicana-coronado-gorda"
+    },
+    {
+      "brand": "La Flor Dominicana",
+      "line_a": "Reserva Especial",
+      "id_a": "cig-la-flor-dominicana-reserva-especial",
+      "line_b": "Reserva Especial El Jocko #1 Maduro",
+      "id_b": "cig-la-flor-dominicana-reserva-especial-el-jocko-1-maduro"
+    },
+    {
+      "brand": "La Flor Dominicana",
+      "line_a": "Reserva Especial",
+      "id_a": "cig-la-flor-dominicana-reserva-especial",
+      "line_b": "Reserva Especial El Jocko #2",
+      "id_b": "cig-la-flor-dominicana-reserva-especial-el-jocko-2"
+    },
+    {
+      "brand": "La Galana",
+      "line_a": "Clasica",
+      "id_a": "cig-la-galana-clasica",
+      "line_b": "Clasica Toro",
+      "id_b": "cig-la-galana-clasica-toro"
+    },
+    {
+      "brand": "La Galera",
+      "line_a": "Anemoi Eurus",
+      "id_a": "cig-la-galera-anemoi-eurus",
+      "line_b": "Anemoi Eurus 5 1⁄2 X 48",
+      "id_b": "cig-la-galera-eurus-5-1-2-x-48"
+    },
+    {
+      "brand": "La Galera",
+      "line_a": "La Instructora Perfeccion",
+      "id_a": "cig-la-galera-la-instructora-perfeccion",
+      "line_b": "La Instructora Perfeccion Petite",
+      "id_b": "cig-la-galera-la-instructora-perfeccion-petite"
+    },
+    {
+      "brand": "La Galera",
+      "line_a": "La Instructora Perfeccion",
+      "id_a": "cig-la-galera-la-instructora-perfeccion",
+      "line_b": "La Instructora Perfeccion Royal",
+      "id_b": "cig-la-galera-la-instructora-perfeccion-royal"
+    },
+    {
+      "brand": "La Gloria Cubana",
+      "line_a": "Glorias",
+      "id_a": "cig-la-gloria-cubana-glorias",
+      "line_b": "Glorias /20",
+      "id_b": "cig-la-gloria-cubana-glorias-20"
+    },
+    {
+      "brand": "La Rosa",
+      "line_a": "de Sandiego Clasico",
+      "id_a": "cig-la-rosa-de-sandiego-clasico",
+      "line_b": "de Sandiego Clasico ALTPREISIGER Bestand",
+      "id_b": "cig-la-rosa-de-sandiego-clasico-altpreisiger-bestand"
+    },
+    {
+      "brand": "La Rosa",
+      "line_a": "de Sandiego Connecticut",
+      "id_a": "cig-la-rosa-de-sandiego-connecticut",
+      "line_b": "de Sandiego Connecticut Inmenso",
+      "id_b": "cig-la-rosa-de-sandiego-connecticut-inmenso"
+    },
+    {
+      "brand": "La Rosa",
+      "line_a": "de Sandiego Maduro",
+      "id_a": "cig-la-rosa-de-sandiego-maduro",
+      "line_b": "de Sandiego Maduro Inmenso",
+      "id_b": "cig-la-rosa-de-sandiego-maduro-inmenso"
+    },
+    {
+      "brand": "Laura",
+      "line_a": "Chavin Invincible Black",
+      "id_a": "cig-laura-chavin-invincible-black",
+      "line_b": "Chavin Invincible Black Short",
+      "id_b": "cig-laura-chavin-invincible-black-short"
+    },
+    {
+      "brand": "Laura",
+      "line_a": "Chavin Invincible Copper",
+      "id_a": "cig-laura-chavin-invincible-copper",
+      "line_b": "Chavin Invincible Copper Short",
+      "id_b": "cig-laura-chavin-invincible-copper-short"
+    },
+    {
+      "brand": "Laura",
+      "line_a": "Chavin La Ligue des Divins",
+      "id_a": "cig-laura-chavin-la-ligue-des-divins",
+      "line_b": "Chavin La Ligue des Divins Short",
+      "id_b": "cig-laura-chavin-la-ligue-des-divins-short"
+    },
+    {
+      "brand": "Laura",
+      "line_a": "Chavin Terre de Mythe",
+      "id_a": "cig-laura-chavin-terre-de-mythe",
+      "line_b": "Chavin Terre de Mythe Grand",
+      "id_b": "cig-laura-chavin-terre-de-mythe-grand"
+    },
+    {
+      "brand": "Leite",
+      "line_a": "&amp; Alves Arapiraca",
+      "id_a": "cig-leite-amp-alves-arapiraca",
+      "line_b": "&amp; Alves Arapiraca Quadrado",
+      "id_b": "cig-leite-amp-alves-arapiraca-quadrado"
+    },
+    {
+      "brand": "Leite",
+      "line_a": "&amp; Alves Stalk Cut",
+      "id_a": "cig-leite-amp-alves-stalk-cut",
+      "line_b": "&amp; Alves Stalk Cut Quadrado",
+      "id_b": "cig-leite-amp-alves-stalk-cut-quadrado"
+    },
+    {
+      "brand": "Leon",
+      "line_a": "Jimenes",
+      "id_a": "cig-leon-jimenes",
+      "line_b": "Jimenes Double Maduro",
+      "id_b": "cig-leon-jimenes-double-maduro"
+    },
+    {
+      "brand": "Leon",
+      "line_a": "Jimenes",
+      "id_a": "cig-leon-jimenes",
+      "line_b": "Jimenes Flavour Bee",
+      "id_b": "cig-leon-jimenes-flavour-bee"
+    },
+    {
+      "brand": "Leon",
+      "line_a": "Jimenes",
+      "id_a": "cig-leon-jimenes",
+      "line_b": "Jimenes Flavour Blond",
+      "id_b": "cig-leon-jimenes-flavour-blond"
+    },
+    {
+      "brand": "Leon",
+      "line_a": "Jimenes",
+      "id_a": "cig-leon-jimenes",
+      "line_b": "Jimenes Flavour Caribbean",
+      "id_b": "cig-leon-jimenes-flavour-caribbean"
+    },
+    {
+      "brand": "Leon",
+      "line_a": "Jimenes",
+      "id_a": "cig-leon-jimenes",
+      "line_b": "Jimenes Series 300 Cameroon",
+      "id_b": "cig-leon-jimenes-series-300-cameroon"
+    },
+    {
+      "brand": "Leon",
+      "line_a": "Jimenes",
+      "id_a": "cig-leon-jimenes",
+      "line_b": "Jimenes Series 300 Cameroon Limited Edition",
+      "id_b": "cig-leon-jimenes-series-300-cameroon-limited-edition"
+    },
+    {
+      "brand": "Leon",
+      "line_a": "Jimenes Series 300 Cameroon",
+      "id_a": "cig-leon-jimenes-series-300-cameroon",
+      "line_b": "Jimenes Series 300 Cameroon Limited Edition",
+      "id_b": "cig-leon-jimenes-series-300-cameroon-limited-edition"
+    },
+    {
+      "brand": "Leonel",
+      "line_a": "Rare",
+      "id_a": "cig-leonel-rare",
+      "line_b": "Rare d'Or",
+      "id_b": "cig-leonel-rare-d-or"
+    },
+    {
+      "brand": "Les",
+      "line_a": "Privatiers Gold Edition",
+      "id_a": "cig-les-privatiers-gold-edition",
+      "line_b": "Privatiers Gold Edition Immenso",
+      "id_b": "cig-les-privatiers-gold-edition-immenso"
+    },
+    {
+      "brand": "Les",
+      "line_a": "Privatiers Hurra wir leben noch!",
+      "id_a": "cig-les-privatiers-hurra-wir-leben-noch",
+      "line_b": "Privatiers Hurra wir leben noch! Maduro",
+      "id_b": "cig-les-privatiers-hurra-wir-leben-noch-maduro"
+    },
+    {
+      "brand": "Les",
+      "line_a": "Privatiers Serie N",
+      "id_a": "cig-les-privatiers-serie-n",
+      "line_b": "Privatiers Serie N Short",
+      "id_b": "cig-les-privatiers-serie-n-short"
+    },
+    {
+      "brand": "Luciano",
+      "line_a": "Dreamer",
+      "id_a": "cig-luciano-dreamer",
+      "line_b": "Dreamer de Luxe",
+      "id_b": "cig-luciano-dreamer-de-luxe"
+    },
+    {
+      "brand": "Luciano",
+      "line_a": "Foreign Affairs",
+      "id_a": "cig-luciano-foreign-affairs",
+      "line_b": "Foreign Affairs Extra",
+      "id_b": "cig-luciano-foreign-affairs-extra"
+    },
+    {
+      "brand": "Luciano",
+      "line_a": "Maria Lucia",
+      "id_a": "cig-luciano-maria-lucia",
+      "line_b": "Maria Lucia de Lux",
+      "id_b": "cig-luciano-maria-lucia-de-lux"
+    },
+    {
+      "brand": "Luciano",
+      "line_a": "Maria Lucia",
+      "id_a": "cig-luciano-maria-lucia",
+      "line_b": "Maria Lucia Magnum",
+      "id_b": "cig-luciano-maria-lucia-magnum"
+    },
+    {
+      "brand": "Luciano",
+      "line_a": "Underrated",
+      "id_a": "cig-luciano-underrated",
+      "line_b": "Underrated extra",
+      "id_b": "cig-luciano-underrated-extra"
+    },
+    {
+      "brand": "Macanudo",
+      "line_a": "Limited Edition",
+      "id_a": "cig-macanudo-limited-edition",
+      "line_b": "Limited Edition Vintage 2010",
+      "id_b": "cig-macanudo-limited-edition-vintage-2010"
+    },
+    {
+      "brand": "Man O. War",
+      "line_a": "Man O' War",
+      "id_a": "cig-man-o-war-man-o-war",
+      "line_b": "Man O' War Ruination",
+      "id_b": "cig-man-o-war-man-o-war-ruination"
+    },
+    {
+      "brand": "Man O. War",
+      "line_a": "Man O' War",
+      "id_a": "cig-man-o-war-man-o-war",
+      "line_b": "Man O' War Ruination # 1",
+      "id_b": "cig-man-o-war-man-o-war-ruination-1"
+    },
+    {
+      "brand": "Man O. War",
+      "line_a": "Man O' War",
+      "id_a": "cig-man-o-war-man-o-war",
+      "line_b": "Man O' War Ruination #1",
+      "id_b": "cig-man-o-war-man-o-war-ruination-1-2"
+    },
+    {
+      "brand": "Man O. War",
+      "line_a": "Man O' War",
+      "id_a": "cig-man-o-war-man-o-war",
+      "line_b": "Man O' War Ruination #2",
+      "id_b": "cig-man-o-war-man-o-war-ruination-2"
+    },
+    {
+      "brand": "Man O. War",
+      "line_a": "Man O' War",
+      "id_a": "cig-man-o-war-man-o-war",
+      "line_b": "Man O' War Virtue",
+      "id_b": "cig-man-o-war-man-o-war-virtue"
+    },
+    {
+      "brand": "Man O. War",
+      "line_a": "Man O' War Ruination",
+      "id_a": "cig-man-o-war-man-o-war-ruination",
+      "line_b": "Man O' War Ruination # 1",
+      "id_b": "cig-man-o-war-man-o-war-ruination-1"
+    },
+    {
+      "brand": "Man O. War",
+      "line_a": "Man O' War Ruination",
+      "id_a": "cig-man-o-war-man-o-war-ruination",
+      "line_b": "Man O' War Ruination #1",
+      "id_b": "cig-man-o-war-man-o-war-ruination-1-2"
+    },
+    {
+      "brand": "Man O. War",
+      "line_a": "Man O' War Ruination",
+      "id_a": "cig-man-o-war-man-o-war-ruination",
+      "line_b": "Man O' War Ruination #2",
+      "id_b": "cig-man-o-war-man-o-war-ruination-2"
+    },
+    {
+      "brand": "Manuel",
+      "line_a": "Alonso",
+      "id_a": "cig-manuel-alonso",
+      "line_b": "Alonso 1867",
+      "id_b": "cig-manuel-alonso-1867"
+    },
+    {
+      "brand": "Manuel",
+      "line_a": "Alonso",
+      "id_a": "cig-manuel-alonso",
+      "line_b": "Alonso Maduro",
+      "id_b": "cig-manuel-alonso-maduro"
+    },
+    {
+      "brand": "Manuel",
+      "line_a": "Alonso",
+      "id_a": "cig-manuel-alonso",
+      "line_b": "Alonso Maduro XL",
+      "id_b": "cig-manuel-alonso-maduro-xl"
+    },
+    {
+      "brand": "Manuel",
+      "line_a": "Alonso",
+      "id_a": "cig-manuel-alonso",
+      "line_b": "Alonso Nicaragua",
+      "id_b": "cig-manuel-alonso-nicaragua"
+    },
+    {
+      "brand": "Manuel",
+      "line_a": "Alonso",
+      "id_a": "cig-manuel-alonso",
+      "line_b": "Alonso Short",
+      "id_b": "cig-manuel-alonso-short"
+    },
+    {
+      "brand": "Manuel",
+      "line_a": "Alonso Maduro",
+      "id_a": "cig-manuel-alonso-maduro",
+      "line_b": "Alonso Maduro XL",
+      "id_b": "cig-manuel-alonso-maduro-xl"
+    },
+    {
+      "brand": "Marca",
+      "line_a": "Fina Brazil",
+      "id_a": "cig-marca-fina-brazil",
+      "line_b": "Fina Brazil Breve",
+      "id_b": "cig-marca-fina-brazil-breve"
+    },
+    {
+      "brand": "Marca",
+      "line_a": "Fina Brazil",
+      "id_a": "cig-marca-fina-brazil",
+      "line_b": "Fina Brazil Edición Limitada 2023",
+      "id_b": "cig-marca-fina-brazil-edicion-limitada-2023"
+    },
+    {
+      "brand": "Marca",
+      "line_a": "Fina Dominicana",
+      "id_a": "cig-marca-fina-dominicana",
+      "line_b": "Fina Dominicana Demi",
+      "id_b": "cig-marca-fina-dominicana-demi"
+    },
+    {
+      "brand": "Marca",
+      "line_a": "Fina Dominicana",
+      "id_a": "cig-marca-fina-dominicana",
+      "line_b": "Fina Dominicana Edicion Limitada 2023",
+      "id_b": "cig-marca-fina-dominicana-edicion-limitada-2023"
+    },
+    {
+      "brand": "Marca",
+      "line_a": "Fina Ecuador",
+      "id_a": "cig-marca-fina-ecuador",
+      "line_b": "Fina Ecuador Doble",
+      "id_b": "cig-marca-fina-ecuador-doble"
+    },
+    {
+      "brand": "Marca",
+      "line_a": "Fina Ecuador",
+      "id_a": "cig-marca-fina-ecuador",
+      "line_b": "Fina Ecuador Edicion Limitada 2024",
+      "id_b": "cig-marca-fina-ecuador-edicion-limitada-2024"
+    },
+    {
+      "brand": "Marca",
+      "line_a": "Fina Nicaragua",
+      "id_a": "cig-marca-fina-nicaragua",
+      "line_b": "Fina Nicaragua Breve",
+      "id_b": "cig-marca-fina-nicaragua-breve"
+    },
+    {
+      "brand": "Marca",
+      "line_a": "Fina Panama",
+      "id_a": "cig-marca-fina-panama",
+      "line_b": "Fina Panama Edicion Limitada 2024",
+      "id_b": "cig-marca-fina-panama-edicion-limitada-2024"
+    },
+    {
+      "brand": "Marca",
+      "line_a": "Fina Panama",
+      "id_a": "cig-marca-fina-panama",
+      "line_b": "Fina Panama Maduro",
+      "id_b": "cig-marca-fina-panama-maduro"
+    },
+    {
+      "brand": "Marca",
+      "line_a": "Fina Panama",
+      "id_a": "cig-marca-fina-panama",
+      "line_b": "Fina Panama Maduro Breve",
+      "id_b": "cig-marca-fina-panama-maduro-breve"
+    },
+    {
+      "brand": "Marca",
+      "line_a": "Fina Panama",
+      "id_a": "cig-marca-fina-panama",
+      "line_b": "Fina Panama Maduro Edición Limitada 2024",
+      "id_b": "cig-marca-fina-panama-maduro-edicion-limitada-2024"
+    },
+    {
+      "brand": "Marca",
+      "line_a": "Fina Panama",
+      "id_a": "cig-marca-fina-panama",
+      "line_b": "Fina Panama Robusto Breve",
+      "id_b": "cig-marca-fina-panama-robusto-breve"
+    },
+    {
+      "brand": "Marca",
+      "line_a": "Fina Panama Maduro",
+      "id_a": "cig-marca-fina-panama-maduro",
+      "line_b": "Fina Panama Maduro Breve",
+      "id_b": "cig-marca-fina-panama-maduro-breve"
+    },
+    {
+      "brand": "Marca",
+      "line_a": "Fina Panama Maduro",
+      "id_a": "cig-marca-fina-panama-maduro",
+      "line_b": "Fina Panama Maduro Edición Limitada 2024",
+      "id_b": "cig-marca-fina-panama-maduro-edicion-limitada-2024"
+    },
+    {
+      "brand": "Maria",
+      "line_a": "Mancini Classic",
+      "id_a": "cig-maria-mancini-classic",
+      "line_b": "Mancini Classic Classico",
+      "id_b": "cig-maria-mancini-classic-classico"
+    },
+    {
+      "brand": "Maria",
+      "line_a": "Mancini Classic",
+      "id_a": "cig-maria-mancini-classic",
+      "line_b": "Mancini Classic Larga",
+      "id_b": "cig-maria-mancini-classic-larga"
+    },
+    {
+      "brand": "Maria",
+      "line_a": "Mancini Edicion Especial",
+      "id_a": "cig-maria-mancini-edicion-especial",
+      "line_b": "Mancini Edicion Especial Classico",
+      "id_b": "cig-maria-mancini-edicion-especial-classico"
+    },
+    {
+      "brand": "Matilde",
+      "line_a": "Oscura",
+      "id_a": "cig-matilde-oscura",
+      "line_b": "Oscura Bravo",
+      "id_b": "cig-matilde-oscura-bravo"
+    },
+    {
+      "brand": "Matilde",
+      "line_a": "Quadrata",
+      "id_a": "cig-matilde-quadrata",
+      "line_b": "Quadrata Bravo",
+      "id_b": "cig-matilde-quadrata-bravo"
+    },
+    {
+      "brand": "Matilde",
+      "line_a": "Renacer",
+      "id_a": "cig-matilde-renacer",
+      "line_b": "Renacer Bravo",
+      "id_b": "cig-matilde-renacer-bravo"
+    },
+    {
+      "brand": "Matilde",
+      "line_a": "Serena",
+      "id_a": "cig-matilde-serena",
+      "line_b": "Serena Bravo",
+      "id_b": "cig-matilde-serena-bravo"
+    },
+    {
+      "brand": "Matilde",
+      "line_a": "Serena",
+      "id_a": "cig-matilde-serena",
+      "line_b": "Serena Bravo Maduro",
+      "id_b": "cig-matilde-serena-bravo-maduro"
+    },
+    {
+      "brand": "Matilde",
+      "line_a": "Serena",
+      "id_a": "cig-matilde-serena",
+      "line_b": "Serena Maduro",
+      "id_b": "cig-matilde-serena-maduro"
+    },
+    {
+      "brand": "Matilde",
+      "line_a": "Serena Bravo",
+      "id_a": "cig-matilde-serena-bravo",
+      "line_b": "Serena Bravo Maduro",
+      "id_b": "cig-matilde-serena-bravo-maduro"
+    },
+    {
+      "brand": "Meerapfel",
+      "line_a": "Machetero Bundles",
+      "id_a": "cig-meerapfel-machetero-bundles",
+      "line_b": "Machetero Bundles Short",
+      "id_b": "cig-meerapfel-machetero-bundles-short"
+    },
+    {
+      "brand": "Meerapfel",
+      "line_a": "Machetero Exclusiva",
+      "id_a": "cig-meerapfel-machetero-exclusiva",
+      "line_b": "Machetero Exclusiva Short",
+      "id_b": "cig-meerapfel-machetero-exclusiva-short"
+    },
+    {
+      "brand": "Meine",
+      "line_a": "Longfiller Bundles",
+      "id_a": "cig-meine-longfiller-bundles",
+      "line_b": "Longfiller Bundles Fat Shorty",
+      "id_b": "cig-meine-longfiller-bundles-fat-shorty"
+    },
+    {
+      "brand": "My Father",
+      "line_a": "Blue",
+      "id_a": "cig-my-father-blue",
+      "line_b": "Blue Gordo",
+      "id_b": "cig-my-father-blue-gordo"
+    },
+    {
+      "brand": "My Father",
+      "line_a": "Blue",
+      "id_a": "cig-my-father-blue",
+      "line_b": "Blue Petit",
+      "id_b": "cig-my-father-blue-petit"
+    },
+    {
+      "brand": "My Father",
+      "line_a": "La Gran Oferta",
+      "id_a": "cig-my-father-la-gran-oferta",
+      "line_b": "La Gran Oferta Gordo",
+      "id_b": "cig-my-father-la-gran-oferta-gordo"
+    },
+    {
+      "brand": "My Father",
+      "line_a": "La Lealtad",
+      "id_a": "cig-my-father-la-lealtad",
+      "line_b": "La Lealtad Gordo",
+      "id_b": "cig-my-father-la-lealtad-gordo"
+    },
+    {
+      "brand": "My Father",
+      "line_a": "La Lealtad",
+      "id_a": "cig-my-father-la-lealtad",
+      "line_b": "La Lealtad Press",
+      "id_b": "cig-my-father-la-lealtad-press"
+    },
+    {
+      "brand": "My Father",
+      "line_a": "Limited Edition Pepin Mania",
+      "id_a": "cig-my-father-limited-edition-pepin-mania",
+      "line_b": "Limited Edition Pepin Mania 10th Anniversary",
+      "id_b": "cig-my-father-limited-edition-pepin-mania-10th-anniversary"
+    },
+    {
+      "brand": "Nat Sherman",
+      "line_a": "Panamericana",
+      "id_a": "cig-nat-sherman-panamericana",
+      "line_b": "Panamericana Fino",
+      "id_b": "cig-nat-sherman-panamericana-fino"
+    },
+    {
+      "brand": "Nat Sherman Timeless",
+      "line_a": "Prestige",
+      "id_a": "cig-nat-sherman-timeless-prestige",
+      "line_b": "Prestige Divinos",
+      "id_b": "cig-nat-sherman-timeless-prestige-divinos"
+    },
+    {
+      "brand": "Nicarao",
+      "line_a": "Clasico Anno VI",
+      "id_a": "cig-nicarao-clasico-anno-vi",
+      "line_b": "Clasico Anno VI Gordito",
+      "id_b": "cig-nicarao-clasico-anno-vi-gordito"
+    },
+    {
+      "brand": "Nicarao",
+      "line_a": "Especiales",
+      "id_a": "cig-nicarao-especiales",
+      "line_b": "Especiales Doble",
+      "id_b": "cig-nicarao-especiales-doble"
+    },
+    {
+      "brand": "Nicarao",
+      "line_a": "Especiales",
+      "id_a": "cig-nicarao-especiales",
+      "line_b": "Especiales Gordo",
+      "id_b": "cig-nicarao-especiales-gordo"
+    },
+    {
+      "brand": "Nicarao",
+      "line_a": "Puros Exclusivos",
+      "id_a": "cig-nicarao-puros-exclusivos",
+      "line_b": "Puros Exclusivos Extra",
+      "id_b": "cig-nicarao-puros-exclusivos-extra"
+    },
+    {
+      "brand": "Nordlicht",
+      "line_a": "Maduro",
+      "id_a": "cig-nordlicht-maduro",
+      "line_b": "Maduro Short",
+      "id_b": "cig-nordlicht-maduro-short"
+    },
+    {
+      "brand": "Oliva",
+      "line_a": "Flor de",
+      "id_a": "cig-oliva-flor-de",
+      "line_b": "Flor de Connecticut",
+      "id_b": "cig-oliva-flor-de-connecticut"
+    },
+    {
+      "brand": "Oliva",
+      "line_a": "Flor de",
+      "id_a": "cig-oliva-flor-de",
+      "line_b": "Flor de Corojo",
+      "id_b": "cig-oliva-flor-de-corojo"
+    },
+    {
+      "brand": "Oliva",
+      "line_a": "Flor de",
+      "id_a": "cig-oliva-flor-de",
+      "line_b": "Flor de Gold",
+      "id_b": "cig-oliva-flor-de-gold"
+    },
+    {
+      "brand": "Oliva",
+      "line_a": "Flor de",
+      "id_a": "cig-oliva-flor-de",
+      "line_b": "Flor de Maduro",
+      "id_b": "cig-oliva-flor-de-maduro"
+    },
+    {
+      "brand": "Oliva",
+      "line_a": "Flor de",
+      "id_a": "cig-oliva-flor-de",
+      "line_b": "Flor de Original",
+      "id_b": "cig-oliva-flor-de-original"
+    },
+    {
+      "brand": "Oliva",
+      "line_a": "Gilberto Reserva",
+      "id_a": "cig-oliva-gilberto-reserva",
+      "line_b": "Gilberto Reserva Blanc",
+      "id_b": "cig-oliva-gilberto-reserva-blanc"
+    },
+    {
+      "brand": "Oliva",
+      "line_a": "Monticello",
+      "id_a": "cig-oliva-monticello",
+      "line_b": "Monticello Double",
+      "id_b": "cig-oliva-monticello-double"
+    },
+    {
+      "brand": "Oliva",
+      "line_a": "Serie V",
+      "id_a": "cig-oliva-oliva-serie-v",
+      "line_b": "Serie V / Melanio",
+      "id_b": "cig-oliva-serie-v"
+    },
+    {
+      "brand": "Olman",
+      "line_a": "Founders Edition 1997",
+      "id_a": "cig-olman-founders-edition-1997",
+      "line_b": "Founders Edition 1997 Corojo",
+      "id_b": "cig-olman-founders-edition-1997-corojo"
+    },
+    {
+      "brand": "Olman",
+      "line_a": "Founders Edition 1997",
+      "id_a": "cig-olman-founders-edition-1997",
+      "line_b": "Founders Edition 1997 Corojo Emperador",
+      "id_b": "cig-olman-founders-edition-1997-corojo-emperador"
+    },
+    {
+      "brand": "Olman",
+      "line_a": "Founders Edition 1997 Corojo",
+      "id_a": "cig-olman-founders-edition-1997-corojo",
+      "line_b": "Founders Edition 1997 Corojo Emperador",
+      "id_b": "cig-olman-founders-edition-1997-corojo-emperador"
+    },
+    {
+      "brand": "Omar Ortez",
+      "line_a": "Original",
+      "id_a": "cig-omar-ortez-original",
+      "line_b": "Original 6 ⅛ x 52",
+      "id_b": "cig-omar-ortez-original-6-1-8-x-52"
+    },
+    {
+      "brand": "Oscar Valladares",
+      "line_a": "Oscar",
+      "id_a": "cig-oscar-valladares-oscar",
+      "line_b": "Oscar Connecticut",
+      "id_b": "cig-oscar-valladares-oscar-connecticut"
+    },
+    {
+      "brand": "Oscar Valladares",
+      "line_a": "Oscar",
+      "id_a": "cig-oscar-valladares-oscar",
+      "line_b": "Oscar Maduro",
+      "id_b": "cig-oscar-valladares-oscar-maduro"
+    },
+    {
+      "brand": "Oscar Valladares",
+      "line_a": "Santiago Valladares",
+      "id_a": "cig-oscar-valladares-santiago-valladares",
+      "line_b": "Santiago Valladares Mágico",
+      "id_b": "cig-oscar-valladares-santiago-valladares-magico"
+    },
+    {
+      "brand": "Oscar Valladares",
+      "line_a": "Santiago Valladares",
+      "id_a": "cig-oscar-valladares-santiago-valladares",
+      "line_b": "Santiago Valladares Petit",
+      "id_b": "cig-oscar-valladares-santiago-valladares-petit"
+    },
+    {
+      "brand": "Padilla",
+      "line_a": "1932",
+      "id_a": "cig-padilla-1932",
+      "line_b": "1932 Black",
+      "id_b": "cig-padilla-1932-black"
+    },
+    {
+      "brand": "Padilla",
+      "line_a": "Barcelona",
+      "id_a": "cig-padilla-barcelona",
+      "line_b": "Barcelona XL",
+      "id_b": "cig-padilla-barcelona-xl"
+    },
+    {
+      "brand": "Padilla",
+      "line_a": "Finest Hour Connecticut",
+      "id_a": "cig-padilla-finest-hour-connecticut",
+      "line_b": "Finest Hour Connecticut Double",
+      "id_b": "cig-padilla-finest-hour-connecticut-double"
+    },
+    {
+      "brand": "Padilla",
+      "line_a": "Finest Hour Oscuro OSCURO",
+      "id_a": "cig-padilla-finest-hour-oscuro-oscuro",
+      "line_b": "Finest Hour Oscuro OSCURO Double",
+      "id_b": "cig-padilla-finest-hour-oscuro-oscuro-double"
+    },
+    {
+      "brand": "Padilla",
+      "line_a": "Finest Hour Sun Grown",
+      "id_a": "cig-padilla-finest-hour-sun-grown",
+      "line_b": "Finest Hour Sun Grown Double",
+      "id_b": "cig-padilla-finest-hour-sun-grown-double"
+    },
+    {
+      "brand": "Padilla",
+      "line_a": "Reserva",
+      "id_a": "cig-padilla-reserva",
+      "line_b": "Reserva Maduro",
+      "id_b": "cig-padilla-reserva-maduro"
+    },
+    {
+      "brand": "Padilla",
+      "line_a": "Serie 1968",
+      "id_a": "cig-padilla-serie-1968",
+      "line_b": "Serie 1968 Black Bear",
+      "id_b": "cig-padilla-serie-1968-black-bear"
+    },
+    {
+      "brand": "Padilla",
+      "line_a": "Serie 1968",
+      "id_a": "cig-padilla-serie-1968",
+      "line_b": "Serie 1968 Double",
+      "id_b": "cig-padilla-serie-1968-double"
+    },
+    {
+      "brand": "Padilla",
+      "line_a": "Serie 1968",
+      "id_a": "cig-padilla-serie-1968",
+      "line_b": "Serie 1968 Golden Bear",
+      "id_b": "cig-padilla-serie-1968-golden-bear"
+    },
+    {
+      "brand": "Padrón",
+      "line_a": "#6000",
+      "id_a": "cig-padron-6000",
+      "line_b": "#6000 Maduro",
+      "id_b": "cig-padron-6000-maduro"
+    },
+    {
+      "brand": "Padrón",
+      "line_a": "1964 Anniversary",
+      "id_a": "cig-padron-1964",
+      "line_b": "1964 Anniversary Series",
+      "id_b": "cig-padron-padron-1964"
+    },
+    {
+      "brand": "Padrón",
+      "line_a": "40th Anniversary 40th",
+      "id_a": "cig-padron-40th-anniversary-40th",
+      "line_b": "40th Anniversary 40th Maduro",
+      "id_b": "cig-padron-40th-anniversary-40th-maduro"
+    },
+    {
+      "brand": "Padrón",
+      "line_a": "60th Anniversary 60th",
+      "id_a": "cig-padron-60th-anniversary-60th",
+      "line_b": "60th Anniversary 60th Maduro",
+      "id_b": "cig-padron-60th-anniversary-60th-maduro"
+    },
+    {
+      "brand": "Padrón",
+      "line_a": "80 Years 80th",
+      "id_a": "cig-padron-80-years-80th",
+      "line_b": "80 Years 80th Maduro",
+      "id_b": "cig-padron-80-years-80th-maduro"
+    },
+    {
+      "brand": "Padrón",
+      "line_a": "Padron Black Black PB 97",
+      "id_a": "cig-padron-padron-black-black-pb-97",
+      "line_b": "Padron Black Black PB 97 Maduro",
+      "id_b": "cig-padron-padron-black-black-pb-97-maduro"
+    },
+    {
+      "brand": "Palmar",
+      "line_a": "Arriba",
+      "id_a": "cig-palmar-arriba",
+      "line_b": "Arriba Jeroboam",
+      "id_b": "cig-palmar-arriba-jeroboam"
+    },
+    {
+      "brand": "Paradiso",
+      "line_a": "Quintessence",
+      "id_a": "cig-paradiso-quintessence",
+      "line_b": "Quintessence Majestic",
+      "id_b": "cig-paradiso-quintessence-majestic"
+    },
+    {
+      "brand": "Patoro",
+      "line_a": "VA",
+      "id_a": "cig-patoro-va",
+      "line_b": "VA Extra",
+      "id_b": "cig-patoro-va-extra"
+    },
+    {
+      "brand": "PDR",
+      "line_a": "Capa Madura",
+      "id_a": "cig-pdr-capa-madura",
+      "line_b": "Capa Madura Crystal",
+      "id_b": "cig-pdr-capa-madura-crystal"
+    },
+    {
+      "brand": "PDR",
+      "line_a": "Capa Natural",
+      "id_a": "cig-pdr-capa-natural",
+      "line_b": "Capa Natural Crystal",
+      "id_b": "cig-pdr-capa-natural-crystal"
+    },
+    {
+      "brand": "PDR",
+      "line_a": "Capa Oscura",
+      "id_a": "cig-pdr-capa-oscura",
+      "line_b": "Capa Oscura Crystal",
+      "id_b": "cig-pdr-capa-oscura-crystal"
+    },
+    {
+      "brand": "PDR",
+      "line_a": "Capa Sun Grown",
+      "id_a": "cig-pdr-capa-sun-grown",
+      "line_b": "Capa Sun Grown Crystal",
+      "id_b": "cig-pdr-capa-sun-grown-crystal"
+    },
+    {
+      "brand": "PDR",
+      "line_a": "El Criollito Rosado",
+      "id_a": "cig-pdr-el-criollito-rosado",
+      "line_b": "El Criollito Rosado Habano 3 ¾ x 50",
+      "id_b": "cig-pdr-el-criollito-rosado-habano-3-3-4-x-50"
+    },
+    {
+      "brand": "PDR",
+      "line_a": "El Criollito Rosado",
+      "id_a": "cig-pdr-el-criollito-rosado",
+      "line_b": "El Criollito Rosado Short 4 ¼ x 58",
+      "id_b": "cig-pdr-el-criollito-rosado-short-4-1-4-x-58"
+    },
+    {
+      "brand": "PDR",
+      "line_a": "Flores Y Rodriguez 10th Anniversary",
+      "id_a": "cig-pdr-flores-y-rodriguez-10th-anniversary",
+      "line_b": "Flores Y Rodriguez 10th Anniversary 6 ½ x 52",
+      "id_b": "cig-pdr-flores-y-rodriguez-10th-anniversary-6-1-2-x-52"
+    },
+    {
+      "brand": "PDR",
+      "line_a": "Flores Y Rodriguez 10th Anniversary",
+      "id_a": "cig-pdr-flores-y-rodriguez-10th-anniversary",
+      "line_b": "Flores Y Rodriguez 10th Anniversary Wide 5 ⅛ x 58",
+      "id_b": "cig-pdr-flores-y-rodriguez-10th-anniversary-wide-5-1-8-x-58"
+    },
+    {
+      "brand": "PDR",
+      "line_a": "Value Line Reserve",
+      "id_a": "cig-pdr-value-line-reserve",
+      "line_b": "Value Line Reserve Connecticut",
+      "id_b": "cig-pdr-value-line-reserve-connecticut"
+    },
+    {
+      "brand": "Perdomo",
+      "line_a": "10th Anniversary",
+      "id_a": "cig-perdomo-10th-anniversary",
+      "line_b": "10th Anniversary 4er Freshpack",
+      "id_b": "cig-perdomo-10th-anniversary-4er-freshpack"
+    },
+    {
+      "brand": "Perdomo",
+      "line_a": "10th Anniversary",
+      "id_a": "cig-perdomo-10th-anniversary",
+      "line_b": "10th Anniversary Champagne",
+      "id_b": "cig-perdomo-champagne"
+    },
+    {
+      "brand": "Perdomo",
+      "line_a": "10th Anniversary",
+      "id_a": "cig-perdomo-10th-anniversary",
+      "line_b": "10th Anniversary Connecticut Robusto 5 X 54",
+      "id_b": "cig-perdomo-10th-anniversary-connecticut-robusto-5-x"
+    },
+    {
+      "brand": "Perdomo",
+      "line_a": "10th Anniversary",
+      "id_a": "cig-perdomo-10th-anniversary",
+      "line_b": "10th Anniversary Maduro",
+      "id_b": "cig-perdomo-10th-anniversary-maduro"
+    },
+    {
+      "brand": "Perdomo",
+      "line_a": "10th Anniversary",
+      "id_a": "cig-perdomo-10th-anniversary",
+      "line_b": "10th Anniversary Sun Grown",
+      "id_b": "cig-perdomo-10th-anniversary-sun-grown"
+    },
+    {
+      "brand": "Perdomo",
+      "line_a": "10th Anniversary",
+      "id_a": "cig-perdomo-10th-anniversary",
+      "line_b": "10th Anniversary Sun Grown Super",
+      "id_b": "cig-perdomo-10th-anniversary-sun-grown-super"
+    },
+    {
+      "brand": "Perdomo",
+      "line_a": "10th Anniversary",
+      "id_a": "cig-perdomo-10th-anniversary",
+      "line_b": "10th Anniversary Super",
+      "id_b": "cig-perdomo-10th-anniversary-super"
+    },
+    {
+      "brand": "Perdomo",
+      "line_a": "10th Anniversary Sun Grown",
+      "id_a": "cig-perdomo-10th-anniversary-sun-grown",
+      "line_b": "10th Anniversary Sun Grown Super",
+      "id_b": "cig-perdomo-10th-anniversary-sun-grown-super"
+    },
+    {
+      "brand": "Perdomo",
+      "line_a": "20th Anniversary",
+      "id_a": "cig-perdomo-perdomo-20th",
+      "line_b": "20th Anniversary Maduro",
+      "id_b": "cig-perdomo-20th-maduro"
+    },
+    {
+      "brand": "Perdomo",
+      "line_a": "20th Anniversary",
+      "id_a": "cig-perdomo-perdomo-20th",
+      "line_b": "20th Anniversary Sungrown Gordo 6 X 60",
+      "id_b": "cig-perdomo-20th-anniversary-sungrown-gordo-6-x-60"
+    },
+    {
+      "brand": "Perdomo",
+      "line_a": "20th Anniversary",
+      "id_a": "cig-perdomo-perdomo-20th",
+      "line_b": "20th Anniversary Sungrown Robusto 5 X 56",
+      "id_b": "cig-perdomo-20th-anniversary-sungrown-robusto-5-x-56"
+    },
+    {
+      "brand": "Perdomo",
+      "line_a": "Champagne Noir",
+      "id_a": "cig-perdomo-champagne-noir",
+      "line_b": "Champagne Noir Super",
+      "id_b": "cig-perdomo-champagne-noir-super"
+    },
+    {
+      "brand": "Perdomo",
+      "line_a": "Champagne Sun Grown",
+      "id_a": "cig-perdomo-champagne-sun-grown",
+      "line_b": "Champagne Sun Grown Super",
+      "id_b": "cig-perdomo-champagne-sun-grown-super"
+    },
+    {
+      "brand": "Perdomo",
+      "line_a": "Double Aged",
+      "id_a": "cig-perdomo-double-aged",
+      "line_b": "Double Aged Extra",
+      "id_b": "cig-perdomo-double-aged-extra"
+    },
+    {
+      "brand": "Perdomo",
+      "line_a": "Double Aged",
+      "id_a": "cig-perdomo-double-aged",
+      "line_b": "Double Aged Vintage Connecticut",
+      "id_b": "cig-perdomo-double-aged-vintage-connecticut"
+    },
+    {
+      "brand": "Perdomo",
+      "line_a": "Double Aged",
+      "id_a": "cig-perdomo-double-aged",
+      "line_b": "Double Aged Vintage Connecticut Extra",
+      "id_b": "cig-perdomo-double-aged-vintage-connecticut-extra"
+    },
+    {
+      "brand": "Perdomo",
+      "line_a": "Double Aged",
+      "id_a": "cig-perdomo-double-aged",
+      "line_b": "Double Aged Vintage Maduro",
+      "id_b": "cig-perdomo-double-aged-vintage-maduro"
+    },
+    {
+      "brand": "Perdomo",
+      "line_a": "Double Aged",
+      "id_a": "cig-perdomo-double-aged",
+      "line_b": "Double Aged Vintage Maduro Extra",
+      "id_b": "cig-perdomo-double-aged-vintage-maduro-extra"
+    },
+    {
+      "brand": "Perdomo",
+      "line_a": "Double Aged",
+      "id_a": "cig-perdomo-double-aged",
+      "line_b": "Double Aged Vintage Sun Grown",
+      "id_b": "cig-perdomo-double-aged-vintage-sun-grown"
+    },
+    {
+      "brand": "Perdomo",
+      "line_a": "Double Aged",
+      "id_a": "cig-perdomo-double-aged",
+      "line_b": "Double Aged Vintage Sun Grown Extra",
+      "id_b": "cig-perdomo-double-aged-vintage-sun-grown-extra"
+    },
+    {
+      "brand": "Perdomo",
+      "line_a": "Double Aged Vintage Connecticut",
+      "id_a": "cig-perdomo-double-aged-vintage-connecticut",
+      "line_b": "Double Aged Vintage Connecticut Extra",
+      "id_b": "cig-perdomo-double-aged-vintage-connecticut-extra"
+    },
+    {
+      "brand": "Perdomo",
+      "line_a": "Double Aged Vintage Maduro",
+      "id_a": "cig-perdomo-double-aged-vintage-maduro",
+      "line_b": "Double Aged Vintage Maduro Extra",
+      "id_b": "cig-perdomo-double-aged-vintage-maduro-extra"
+    },
+    {
+      "brand": "Perdomo",
+      "line_a": "Double Aged Vintage Sun Grown",
+      "id_a": "cig-perdomo-double-aged-vintage-sun-grown",
+      "line_b": "Double Aged Vintage Sun Grown Extra",
+      "id_b": "cig-perdomo-double-aged-vintage-sun-grown-extra"
+    },
+    {
+      "brand": "Perdomo",
+      "line_a": "Edicion de Silvio Maduro",
+      "id_a": "cig-perdomo-edicion-de-silvio-maduro",
+      "line_b": "Edicion de Silvio Maduro Double",
+      "id_b": "cig-perdomo-edicion-de-silvio-maduro-double"
+    },
+    {
+      "brand": "Perdomo",
+      "line_a": "Edicion de Silvio Sun Grown",
+      "id_a": "cig-perdomo-edicion-de-silvio-sun-grown",
+      "line_b": "Edicion de Silvio Sun Grown Double",
+      "id_b": "cig-perdomo-edicion-de-silvio-sun-grown-double"
+    },
+    {
+      "brand": "Perdomo",
+      "line_a": "Legacy Shade",
+      "id_a": "cig-perdomo-legacy-shade",
+      "line_b": "Legacy Shade Grown",
+      "id_b": "cig-perdomo-legacy-shade-grown"
+    },
+    {
+      "brand": "Perdomo",
+      "line_a": "Small Batch Connecticut",
+      "id_a": "cig-perdomo-small-batch-connecticut",
+      "line_b": "Small Batch Connecticut Half",
+      "id_b": "cig-perdomo-small-batch-connecticut-half"
+    },
+    {
+      "brand": "Perdomo",
+      "line_a": "Small Batch Maduro",
+      "id_a": "cig-perdomo-small-batch-maduro",
+      "line_b": "Small Batch Maduro Half",
+      "id_b": "cig-perdomo-small-batch-maduro-half"
+    },
+    {
+      "brand": "Perdomo",
+      "line_a": "Small Batch Sun Grown",
+      "id_a": "cig-perdomo-small-batch-sun-grown",
+      "line_b": "Small Batch Sun Grown Half",
+      "id_b": "cig-perdomo-small-batch-sun-grown-half"
+    },
+    {
+      "brand": "Perla del Mar",
+      "line_a": "Corojo",
+      "id_a": "cig-perla-del-mar-corojo",
+      "line_b": "Corojo Double",
+      "id_b": "cig-perla-del-mar-corojo-double"
+    },
+    {
+      "brand": "Perla del Mar",
+      "line_a": "Maduro",
+      "id_a": "cig-perla-del-mar-maduro",
+      "line_b": "Maduro Double",
+      "id_b": "cig-perla-del-mar-maduro-double"
+    },
+    {
+      "brand": "Perla del Mar",
+      "line_a": "Shade",
+      "id_a": "cig-perla-del-mar-shade",
+      "line_b": "Shade Double",
+      "id_b": "cig-perla-del-mar-shade-double"
+    },
+    {
+      "brand": "Platinum",
+      "line_a": "Nova Batch",
+      "id_a": "cig-platinum-nova-batch",
+      "line_b": "Nova Batch Connecticut",
+      "id_b": "cig-platinum-nova-batch-connecticut"
+    },
+    {
+      "brand": "Principle",
+      "line_a": "Bad s",
+      "id_a": "cig-principle-bad-s",
+      "line_b": "Bad s Petite",
+      "id_b": "cig-principle-bad-s-petite"
+    },
+    {
+      "brand": "Privada",
+      "line_a": "Club Hold Fast",
+      "id_a": "cig-privada-club-hold-fast",
+      "line_b": "Club Hold Fast Maduro",
+      "id_b": "cig-privada-club-hold-fast-maduro"
+    },
+    {
+      "brand": "Puros Indios",
+      "line_a": "Viejo",
+      "id_a": "cig-puros-indios-viejo",
+      "line_b": "Viejo Double",
+      "id_b": "cig-puros-indios-viejo-double"
+    },
+    {
+      "brand": "Quesada",
+      "line_a": "40th Anniversary",
+      "id_a": "cig-quesada-40th-anniversary",
+      "line_b": "40th Anniversary Real",
+      "id_b": "cig-quesada-40th-anniversary-real"
+    },
+    {
+      "brand": "Quorum",
+      "line_a": "Classic",
+      "id_a": "cig-quorum-classic",
+      "line_b": "Classic Double",
+      "id_b": "cig-quorum-classic-double"
+    },
+    {
+      "brand": "Quorum",
+      "line_a": "Classic",
+      "id_a": "cig-quorum-classic",
+      "line_b": "Classic Très",
+      "id_b": "cig-quorum-classic-tres"
+    },
+    {
+      "brand": "Quorum",
+      "line_a": "Maduro",
+      "id_a": "cig-quorum-maduro",
+      "line_b": "Maduro Double",
+      "id_b": "cig-quorum-maduro-double"
+    },
+    {
+      "brand": "Ra",
+      "line_a": "R.A. Villamil Clasico",
+      "id_a": "cig-ra-r-a-villamil-clasico",
+      "line_b": "R.A. Villamil Clasico Doble",
+      "id_b": "cig-ra-r-a-villamil-clasico-doble"
+    },
+    {
+      "brand": "Ra",
+      "line_a": "R.A. Villamil Viso 98",
+      "id_a": "cig-ra-r-a-villamil-viso-98",
+      "line_b": "R.A. Villamil Viso 98 G n Corona",
+      "id_b": "cig-ra-r-a-villamil-viso-98-g-n-corona"
+    },
+    {
+      "brand": "Rocky Patel",
+      "line_a": "20th Anniversary Maduro",
+      "id_a": "cig-rocky-patel-20th-anniversary-maduro",
+      "line_b": "20th Anniversary Maduro Grande",
+      "id_b": "cig-rocky-patel-20th-anniversary-maduro-grande"
+    },
+    {
+      "brand": "Rocky Patel",
+      "line_a": "Catch 22",
+      "id_a": "cig-rocky-patel-catch-22",
+      "line_b": "Catch 22 Double",
+      "id_b": "cig-rocky-patel-catch-22-double"
+    },
+    {
+      "brand": "Rocky Patel",
+      "line_a": "Fifty",
+      "id_a": "cig-rocky-patel-fifty",
+      "line_b": "Fifty Five",
+      "id_b": "cig-rocky-patel-fifty-five"
+    },
+    {
+      "brand": "Rocky Patel",
+      "line_a": "Gold Label",
+      "id_a": "cig-rocky-patel-gold-label",
+      "line_b": "Gold Label Half",
+      "id_b": "cig-rocky-patel-gold-label-half"
+    },
+    {
+      "brand": "Rocky Patel",
+      "line_a": "Hamlet 25th Year",
+      "id_a": "cig-rocky-patel-hamlet-25th-year",
+      "line_b": "Hamlet 25th Year Series 2020",
+      "id_b": "cig-rocky-patel-hamlet-25th-year-series-2020"
+    },
+    {
+      "brand": "Rocky Patel",
+      "line_a": "Hamlet Liberation",
+      "id_a": "cig-rocky-patel-hamlet-liberation",
+      "line_b": "Hamlet Liberation Gorda",
+      "id_b": "cig-rocky-patel-hamlet-liberation-gorda"
+    },
+    {
+      "brand": "Rocky Patel",
+      "line_a": "Sixty",
+      "id_a": "cig-rocky-patel-rp-sixty",
+      "line_b": "Sixty Toro 6 1/2 X 52",
+      "id_b": "cig-rocky-patel-sixty-toro-6-1-2-x-52"
+    },
+    {
+      "brand": "Rocky Patel",
+      "line_a": "Vintage",
+      "id_a": "cig-rocky-patel-rp-vintage",
+      "line_b": "Vintage 1990/1992",
+      "id_b": "cig-rocky-patel-vintage-1990"
+    },
+    {
+      "brand": "Rojas",
+      "line_a": "Custom Blends Ometepe Maduro",
+      "id_a": "cig-rojas-custom-blends-ometepe-maduro",
+      "line_b": "Custom Blends Ometepe Maduro Shaggy",
+      "id_b": "cig-rojas-custom-blends-ometepe-maduro-shaggy"
+    },
+    {
+      "brand": "Roma",
+      "line_a": "Craft WunderLust",
+      "id_a": "cig-roma-craft-wunderlust",
+      "line_b": "Craft WunderLust Limited Edition",
+      "id_b": "cig-roma-craft-wunderlust-limited-edition"
+    },
+    {
+      "brand": "Roma",
+      "line_a": "Craft WunderLust",
+      "id_a": "cig-roma-craft-wunderlust",
+      "line_b": "Craft WunderLust Petit",
+      "id_b": "cig-roma-craft-wunderlust-petit"
+    },
+    {
+      "brand": "Roma",
+      "line_a": "Craft WunderLust",
+      "id_a": "cig-roma-craft-wunderlust",
+      "line_b": "Craft WunderLust Petite",
+      "id_b": "cig-roma-craft-wunderlust-petite"
+    },
+    {
+      "brand": "Room101",
+      "line_a": "Room 101 Johnny Tobacconaut",
+      "id_a": "cig-room101-room-101-johnny-tobacconaut",
+      "line_b": "Room 101 Johnny Tobacconaut Ranflactic",
+      "id_b": "cig-room101-room-101-johnny-tobacconaut-ranflactic"
+    },
+    {
+      "brand": "Rosa",
+      "line_a": "Nicaragua Connecticut",
+      "id_a": "cig-rosa-nicaragua-connecticut",
+      "line_b": "Nicaragua Connecticut Extra",
+      "id_b": "cig-rosa-nicaragua-connecticut-extra"
+    },
+    {
+      "brand": "Saint Luis Rey",
+      "line_a": "Serie G Blowout",
+      "id_a": "cig-saint-luis-rey-serie-g-blowout",
+      "line_b": "Serie G Blowout Maduro",
+      "id_b": "cig-saint-luis-rey-serie-g-blowout-maduro"
+    },
+    {
+      "brand": "Sam Leccia",
+      "line_a": "Black",
+      "id_a": "cig-sam-leccia-black",
+      "line_b": "Black Press",
+      "id_b": "cig-sam-leccia-black-press"
+    },
+    {
+      "brand": "Sam Leccia",
+      "line_a": "White",
+      "id_a": "cig-sam-leccia-white",
+      "line_b": "White Double",
+      "id_b": "cig-sam-leccia-white-double"
+    },
+    {
+      "brand": "Schumacher",
+      "line_a": "Selection",
+      "id_a": "cig-schumacher-selection",
+      "line_b": "Selection Double",
+      "id_b": "cig-schumacher-selection-double"
+    },
+    {
+      "brand": "Smoking",
+      "line_a": "Jacket by Hendrik Kelner Jr. Red Label",
+      "id_a": "cig-smoking-jacket-by-hendrik-kelner-jr-red-label",
+      "line_b": "Jacket by Hendrik Kelner Jr. Red Label Imperial",
+      "id_b": "cig-smoking-jacket-by-hendrik-kelner-jr-red-label-imperial"
+    },
+    {
+      "brand": "Smoking",
+      "line_a": "Jacket by Hendrik Kelner Jr. Red Label",
+      "id_a": "cig-smoking-jacket-by-hendrik-kelner-jr-red-label",
+      "line_b": "Jacket by Hendrik Kelner Jr. Red Label Magno",
+      "id_b": "cig-smoking-jacket-by-hendrik-kelner-jr-red-label-magno"
+    },
+    {
+      "brand": "Southern Draw",
+      "line_a": "Jacob's Ladder",
+      "id_a": "cig-southern-draw-jacob-s-ladder",
+      "line_b": "Jacob's Ladder Brimstone",
+      "id_b": "cig-southern-draw-jacob-s-ladder-brimstone"
+    },
+    {
+      "brand": "Southern Draw",
+      "line_a": "Rose of Sharon",
+      "id_a": "cig-southern-draw-rose-of-sharon",
+      "line_b": "Rose of Sharon Desert Rose Fino",
+      "id_b": "cig-southern-draw-rose-of-sharon-desert-rose-fino"
+    },
+    {
+      "brand": "Tabacalera",
+      "line_a": "1881",
+      "id_a": "cig-tabacalera-1881",
+      "line_b": "1881 Perique",
+      "id_b": "cig-tabacalera-1881-perique"
+    },
+    {
+      "brand": "Tabacalera",
+      "line_a": "1881",
+      "id_a": "cig-tabacalera-1881",
+      "line_b": "1881 Perique Bold",
+      "id_b": "cig-tabacalera-1881-perique-bold"
+    },
+    {
+      "brand": "Tabacalera",
+      "line_a": "1881",
+      "id_a": "cig-tabacalera-1881",
+      "line_b": "1881 Perique Bold Maduro",
+      "id_b": "cig-tabacalera-1881-perique-bold-maduro"
+    },
+    {
+      "brand": "Tabacalera",
+      "line_a": "1881",
+      "id_a": "cig-tabacalera-1881",
+      "line_b": "1881 Perique Maduro",
+      "id_b": "cig-tabacalera-1881-perique-maduro"
+    },
+    {
+      "brand": "Tabacalera",
+      "line_a": "1881 Perique",
+      "id_a": "cig-tabacalera-1881-perique",
+      "line_b": "1881 Perique Bold",
+      "id_b": "cig-tabacalera-1881-perique-bold"
+    },
+    {
+      "brand": "Tabacalera",
+      "line_a": "1881 Perique",
+      "id_a": "cig-tabacalera-1881-perique",
+      "line_b": "1881 Perique Bold Maduro",
+      "id_b": "cig-tabacalera-1881-perique-bold-maduro"
+    },
+    {
+      "brand": "Tabacalera",
+      "line_a": "1881 Perique",
+      "id_a": "cig-tabacalera-1881-perique",
+      "line_b": "1881 Perique Maduro",
+      "id_b": "cig-tabacalera-1881-perique-maduro"
+    },
+    {
+      "brand": "Tabacalera",
+      "line_a": "1881 Perique Bold",
+      "id_a": "cig-tabacalera-1881-perique-bold",
+      "line_b": "1881 Perique Bold Maduro",
+      "id_b": "cig-tabacalera-1881-perique-bold-maduro"
+    },
+    {
+      "brand": "Tabacalera",
+      "line_a": "Flor Fina",
+      "id_a": "cig-tabacalera-flor-fina",
+      "line_b": "Flor Fina Larga Especiale",
+      "id_b": "cig-tabacalera-flor-fina-larga-especiale"
+    },
+    {
+      "brand": "Tatuaje",
+      "line_a": "Black",
+      "id_a": "cig-tatuaje-black",
+      "line_b": "Black Gorda",
+      "id_b": "cig-tatuaje-black-gorda"
+    },
+    {
+      "brand": "Tatuaje",
+      "line_a": "Black",
+      "id_a": "cig-tatuaje-black",
+      "line_b": "Black Label",
+      "id_b": "cig-tatuaje-tatuaje-black"
+    },
+    {
+      "brand": "Tatuaje",
+      "line_a": "Black",
+      "id_a": "cig-tatuaje-black",
+      "line_b": "Black Petit",
+      "id_b": "cig-tatuaje-black-petit"
+    },
+    {
+      "brand": "Tatuaje",
+      "line_a": "Tattoo",
+      "id_a": "cig-tatuaje-tattoo",
+      "line_b": "Tattoo Gordo",
+      "id_b": "cig-tatuaje-tattoo-gordo"
+    },
+    {
+      "brand": "Tatuaje",
+      "line_a": "Unicos",
+      "id_a": "cig-tatuaje-unicos",
+      "line_b": "Unicos & Special",
+      "id_b": "cig-tatuaje-tatuaje-unico"
+    },
+    {
+      "brand": "The Tabernacle",
+      "line_a": "Havana Seed CT 142",
+      "id_a": "cig-the-tabernacle-havana-seed-ct-142",
+      "line_b": "Havana Seed CT 142 Doble",
+      "id_b": "cig-the-tabernacle-havana-seed-ct-142-doble"
+    },
+    {
+      "brand": "Toraño",
+      "line_a": "Torano Exodus",
+      "id_a": "cig-torano-torano-exodus",
+      "line_b": "Torano Exodus 1959 50 Years",
+      "id_b": "cig-torano-torano-exodus-1959-50-years"
+    },
+    {
+      "brand": "Toraño",
+      "line_a": "Torano Exodus",
+      "id_a": "cig-torano-torano-exodus",
+      "line_b": "Torano Exodus 1959 50 Years Limited Edition Cuban",
+      "id_b": "cig-torano-torano-exodus-1959-50-years-limited-edition-cuban"
+    },
+    {
+      "brand": "Toraño",
+      "line_a": "Torano Exodus",
+      "id_a": "cig-torano-torano-exodus",
+      "line_b": "Torano Exodus 1959 Gold",
+      "id_b": "cig-torano-torano-exodus-1959-gold"
+    },
+    {
+      "brand": "Toraño",
+      "line_a": "Torano Exodus",
+      "id_a": "cig-torano-torano-exodus",
+      "line_b": "Torano Exodus 1959 Silver",
+      "id_b": "cig-torano-torano-exodus-1959-silver"
+    },
+    {
+      "brand": "Toraño",
+      "line_a": "Torano Exodus",
+      "id_a": "cig-torano-torano-exodus",
+      "line_b": "Torano Exodus 1959 Silver Grand",
+      "id_b": "cig-torano-torano-exodus-1959-silver-grand"
+    },
+    {
+      "brand": "Toraño",
+      "line_a": "Torano Exodus",
+      "id_a": "cig-torano-torano-exodus",
+      "line_b": "Torano Exodus Gold 20th Anniversary",
+      "id_b": "cig-torano-torano-exodus-gold-20th-anniversary"
+    },
+    {
+      "brand": "Toraño",
+      "line_a": "Torano Exodus",
+      "id_a": "cig-torano-torano-exodus",
+      "line_b": "Torano Exodus Gold 20th Anniversary Double",
+      "id_b": "cig-torano-torano-exodus-gold-20th-anniversary-double"
+    },
+    {
+      "brand": "Toraño",
+      "line_a": "Torano Exodus 1959 50 Years",
+      "id_a": "cig-torano-torano-exodus-1959-50-years",
+      "line_b": "Torano Exodus 1959 50 Years Limited Edition Cuban",
+      "id_b": "cig-torano-torano-exodus-1959-50-years-limited-edition-cuban"
+    },
+    {
+      "brand": "Toraño",
+      "line_a": "Torano Exodus 1959 Silver",
+      "id_a": "cig-torano-torano-exodus-1959-silver",
+      "line_b": "Torano Exodus 1959 Silver Grand",
+      "id_b": "cig-torano-torano-exodus-1959-silver-grand"
+    },
+    {
+      "brand": "Toraño",
+      "line_a": "Torano Exodus Gold 20th Anniversary",
+      "id_a": "cig-torano-torano-exodus-gold-20th-anniversary",
+      "line_b": "Torano Exodus Gold 20th Anniversary Double",
+      "id_b": "cig-torano-torano-exodus-gold-20th-anniversary-double"
+    },
+    {
+      "brand": "Valentino",
+      "line_a": "Siesto Anniversary Sun Grown",
+      "id_a": "cig-valentino-siesto-anniversary-sun-grown",
+      "line_b": "Siesto Anniversary Sun Grown Real #5",
+      "id_b": "cig-valentino-siesto-anniversary-sun-grown-real-5"
+    },
+    {
+      "brand": "Valentino",
+      "line_a": "Siesto Premium Maduro",
+      "id_a": "cig-valentino-siesto-premium-maduro",
+      "line_b": "Siesto Premium Maduro Real",
+      "id_b": "cig-valentino-siesto-premium-maduro-real"
+    },
+    {
+      "brand": "Valentino",
+      "line_a": "Siesto Premium Sun Grown",
+      "id_a": "cig-valentino-siesto-premium-sun-grown",
+      "line_b": "Siesto Premium Sun Grown 1971",
+      "id_b": "cig-valentino-siesto-premium-sun-grown-1971"
+    },
+    {
+      "brand": "Vedado",
+      "line_a": "Classic",
+      "id_a": "cig-vedado-classic",
+      "line_b": "Classic Mini",
+      "id_b": "cig-vedado-classic-mini"
+    },
+    {
+      "brand": "VegaFina",
+      "line_a": "Classic",
+      "id_a": "cig-vegafina-classic-2",
+      "line_b": "Classic / Fortaleza 2",
+      "id_b": "cig-vegafina-classic"
+    },
+    {
+      "brand": "VegaFina",
+      "line_a": "Classic",
+      "id_a": "cig-vegafina-classic-2",
+      "line_b": "Classic Half",
+      "id_b": "cig-vegafina-classic-half"
+    },
+    {
+      "brand": "VegaFina",
+      "line_a": "Classic",
+      "id_a": "cig-vegafina-classic-2",
+      "line_b": "Classic Wide",
+      "id_b": "cig-vegafina-classic-wide"
+    },
+    {
+      "brand": "VegaFina",
+      "line_a": "Nicaragua",
+      "id_a": "cig-vegafina-nicaragua",
+      "line_b": "Nicaragua Dosmilcatorce Gran Reserva X Anniversario",
+      "id_b": "cig-vegafina-nicaragua-dosmilcatorce-gran-reserva-x-anniversario"
+    },
+    {
+      "brand": "VegaFina",
+      "line_a": "Serie 2",
+      "id_a": "cig-vegafina-serie-2",
+      "line_b": "Serie 2 Coupage",
+      "id_b": "cig-vegafina-serie-2-coupage"
+    },
+    {
+      "brand": "VegaFina",
+      "line_a": "Serie 2",
+      "id_a": "cig-vegafina-serie-2",
+      "line_b": "Serie 2 Short",
+      "id_b": "cig-vegafina-serie-2-short"
+    },
+    {
+      "brand": "VegaFina",
+      "line_a": "Vega Fina",
+      "id_a": "cig-vegafina-vega-fina",
+      "line_b": "Vega Fina Nicaragua",
+      "id_b": "cig-vegafina-vega-fina-nicaragua"
+    },
+    {
+      "brand": "Vegas",
+      "line_a": "de Santiago Chaman",
+      "id_a": "cig-vegas-de-santiago-chaman",
+      "line_b": "de Santiago Chaman Wide",
+      "id_b": "cig-vegas-de-santiago-chaman-wide"
+    },
+    {
+      "brand": "Vegas",
+      "line_a": "de Santiago D8",
+      "id_a": "cig-vegas-de-santiago-d8",
+      "line_b": "de Santiago D8 El",
+      "id_b": "cig-vegas-de-santiago-d8-el"
+    },
+    {
+      "brand": "Vegas",
+      "line_a": "de Santiago D8",
+      "id_a": "cig-vegas-de-santiago-d8",
+      "line_b": "de Santiago D8 Limited Edition",
+      "id_b": "cig-vegas-de-santiago-d8-limited-edition"
+    },
+    {
+      "brand": "Vegas",
+      "line_a": "de Santiago D8",
+      "id_a": "cig-vegas-de-santiago-d8",
+      "line_b": "de Santiago D8 Limited Edition Palo Alto 2023",
+      "id_b": "cig-vegas-de-santiago-d8-limited-edition-palo-alto-2023"
+    },
+    {
+      "brand": "Vegas",
+      "line_a": "de Santiago D8",
+      "id_a": "cig-vegas-de-santiago-d8",
+      "line_b": "de Santiago D8 Limited Edition very Limited Edition 2024",
+      "id_b": "cig-vegas-de-santiago-d8-limited-edition-very-limited-edition-2024"
+    },
+    {
+      "brand": "Vegas",
+      "line_a": "de Santiago D8",
+      "id_a": "cig-vegas-de-santiago-d8",
+      "line_b": "de Santiago D8 Maduro",
+      "id_b": "cig-vegas-de-santiago-d8-maduro"
+    },
+    {
+      "brand": "Vegas",
+      "line_a": "de Santiago D8",
+      "id_a": "cig-vegas-de-santiago-d8",
+      "line_b": "de Santiago D8 Maduro Wide",
+      "id_b": "cig-vegas-de-santiago-d8-maduro-wide"
+    },
+    {
+      "brand": "Vegas",
+      "line_a": "de Santiago D8",
+      "id_a": "cig-vegas-de-santiago-d8",
+      "line_b": "de Santiago D8 Short",
+      "id_b": "cig-vegas-de-santiago-d8-short"
+    },
+    {
+      "brand": "Vegas",
+      "line_a": "de Santiago D8",
+      "id_a": "cig-vegas-de-santiago-d8",
+      "line_b": "de Santiago D8 Wide",
+      "id_b": "cig-vegas-de-santiago-d8-wide"
+    },
+    {
+      "brand": "Vegas",
+      "line_a": "de Santiago D8 Limited Edition",
+      "id_a": "cig-vegas-de-santiago-d8-limited-edition",
+      "line_b": "de Santiago D8 Limited Edition Palo Alto 2023",
+      "id_b": "cig-vegas-de-santiago-d8-limited-edition-palo-alto-2023"
+    },
+    {
+      "brand": "Vegas",
+      "line_a": "de Santiago D8 Limited Edition",
+      "id_a": "cig-vegas-de-santiago-d8-limited-edition",
+      "line_b": "de Santiago D8 Limited Edition very Limited Edition 2024",
+      "id_b": "cig-vegas-de-santiago-d8-limited-edition-very-limited-edition-2024"
+    },
+    {
+      "brand": "Vegas",
+      "line_a": "de Santiago D8 Maduro",
+      "id_a": "cig-vegas-de-santiago-d8-maduro",
+      "line_b": "de Santiago D8 Maduro Wide",
+      "id_b": "cig-vegas-de-santiago-d8-maduro-wide"
+    },
+    {
+      "brand": "Vegas",
+      "line_a": "de Santiago Gran Reserva",
+      "id_a": "cig-vegas-de-santiago-gran-reserva",
+      "line_b": "de Santiago Gran Reserva Gordo",
+      "id_b": "cig-vegas-de-santiago-gran-reserva-gordo"
+    },
+    {
+      "brand": "Villa Zamorano",
+      "line_a": "Classic",
+      "id_a": "cig-villa-zamorano-classic",
+      "line_b": "Classic Intenso",
+      "id_b": "cig-villa-zamorano-classic-intenso"
+    },
+    {
+      "brand": "Villa Zamorano",
+      "line_a": "Classic",
+      "id_a": "cig-villa-zamorano-classic",
+      "line_b": "Classic No. 15",
+      "id_b": "cig-villa-zamorano-classic-no-15"
+    },
+    {
+      "brand": "Villiger",
+      "line_a": "1492",
+      "id_a": "cig-villiger-1492",
+      "line_b": "1492 Discovery Edition",
+      "id_b": "cig-villiger-1492-discovery-edition"
+    },
+    {
+      "brand": "Villiger",
+      "line_a": "1492",
+      "id_a": "cig-villiger-1492",
+      "line_b": "1492 Long",
+      "id_b": "cig-villiger-1492-long"
+    },
+    {
+      "brand": "Villiger",
+      "line_a": "1492",
+      "id_a": "cig-villiger-1492",
+      "line_b": "1492 Short",
+      "id_b": "cig-villiger-1492-short"
+    },
+    {
+      "brand": "Villiger",
+      "line_a": "1888",
+      "id_a": "cig-villiger-1888",
+      "line_b": "1888 Dominican Republic",
+      "id_b": "cig-villiger-1888-dominican-republic"
+    },
+    {
+      "brand": "Villiger",
+      "line_a": "1888",
+      "id_a": "cig-villiger-1888",
+      "line_b": "1888 Fuerte",
+      "id_b": "cig-villiger-1888-fuerte"
+    },
+    {
+      "brand": "Villiger",
+      "line_a": "1888",
+      "id_a": "cig-villiger-1888",
+      "line_b": "1888 Nicaragua",
+      "id_b": "cig-villiger-1888-nicaragua"
+    },
+    {
+      "brand": "Villiger",
+      "line_a": "Cuellar Black Forest",
+      "id_a": "cig-villiger-cuellar-black-forest",
+      "line_b": "Cuellar Black Forest Gordo",
+      "id_b": "cig-villiger-cuellar-black-forest-gordo"
+    },
+    {
+      "brand": "Villiger",
+      "line_a": "Cuellar Kreme",
+      "id_a": "cig-villiger-cuellar-kreme",
+      "line_b": "Cuellar Kreme Gordo",
+      "id_b": "cig-villiger-cuellar-kreme-gordo"
+    },
+    {
+      "brand": "Villiger",
+      "line_a": "La Meridiana",
+      "id_a": "cig-villiger-la-meridiana",
+      "line_b": "La Meridiana Grande",
+      "id_b": "cig-villiger-la-meridiana-grande"
+    },
+    {
+      "brand": "Villiger",
+      "line_a": "San Doro Claro",
+      "id_a": "cig-villiger-san-doro-claro",
+      "line_b": "San Doro Claro Aged 10 Years",
+      "id_b": "cig-villiger-san-doro-claro-aged-10-years"
+    },
+    {
+      "brand": "Villiger",
+      "line_a": "San Doro Colorado",
+      "id_a": "cig-villiger-san-doro-colorado",
+      "line_b": "San Doro Colorado Aged 10 Years",
+      "id_b": "cig-villiger-san-doro-colorado-aged-10-years"
+    },
+    {
+      "brand": "Wise Man",
+      "line_a": "Corojo",
+      "id_a": "cig-wise-man-corojo",
+      "line_b": "Corojo Doble",
+      "id_b": "cig-wise-man-corojo-doble"
+    },
+    {
+      "brand": "Wise Man",
+      "line_a": "Maduro",
+      "id_a": "cig-wise-man-maduro",
+      "line_b": "Maduro Doble",
+      "id_b": "cig-wise-man-maduro-doble"
+    },
+    {
+      "brand": "Woermann",
+      "line_a": "Dominican Bundles",
+      "id_a": "cig-woermann-dominican-bundles",
+      "line_b": "Dominican Bundles 460",
+      "id_b": "cig-woermann-dominican-bundles-460"
+    },
+    {
+      "brand": "Xhaxhi",
+      "line_a": "Bobi",
+      "id_a": "cig-xhaxhi-bobi",
+      "line_b": "Bobi Baba Jan",
+      "id_b": "cig-xhaxhi-bobi-baba-jan"
+    },
+    {
+      "brand": "Xhaxhi",
+      "line_a": "Bobi",
+      "id_a": "cig-xhaxhi-bobi",
+      "line_b": "Bobi El Ingeniero",
+      "id_b": "cig-xhaxhi-bobi-el-ingeniero"
+    },
+    {
+      "brand": "Xhaxhi",
+      "line_a": "Bobi",
+      "id_a": "cig-xhaxhi-bobi",
+      "line_b": "Bobi El Licenciado",
+      "id_b": "cig-xhaxhi-bobi-el-licenciado"
+    },
+    {
+      "brand": "Xhaxhi",
+      "line_a": "Bobi",
+      "id_a": "cig-xhaxhi-bobi",
+      "line_b": "Bobi Mi Hermano",
+      "id_b": "cig-xhaxhi-bobi-mi-hermano"
+    },
+    {
+      "brand": "Xhaxhi",
+      "line_a": "Bobi",
+      "id_a": "cig-xhaxhi-bobi",
+      "line_b": "Bobi Sunrise",
+      "id_b": "cig-xhaxhi-bobi-sunrise"
+    },
+    {
+      "brand": "Xhaxhi",
+      "line_a": "Bobi",
+      "id_a": "cig-xhaxhi-bobi",
+      "line_b": "Bobi Sunset",
+      "id_b": "cig-xhaxhi-bobi-sunset"
+    },
+    {
+      "brand": "Zino",
+      "line_a": "Honduras",
+      "id_a": "cig-zino-honduras",
+      "line_b": "Honduras Half",
+      "id_b": "cig-zino-honduras-half"
     }
   ]
 }

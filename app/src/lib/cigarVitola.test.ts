@@ -48,6 +48,13 @@ describe("cigarVitola", () => {
     expect(applied.format).toBe("50 x 152mm");
   });
 
+  it("applyVitola prikazuje SAMO odabranu vitolu (ne cijeli popis)", () => {
+    const applied = applyVitola(serieO, serieO.vitolas![1]);
+    expect(applied.vitolas).toHaveLength(1);
+    expect(applied.vitolas[0].name).toBe("Tubos");
+    expect(needsVitolaPick(applied)).toBe(false);
+  });
+
   it("resolveDefaultVitola preferira vitolu istog imena kao linija", () => {
     const cigar: Cigar = {
       ...serieO,
