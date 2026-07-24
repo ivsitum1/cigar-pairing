@@ -1,15 +1,25 @@
 {
   "brand": "Quesada",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-24",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w3_w4_finish W3",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
   ],
   "lines": {
-    "40th Anniversary Real": {
-      "line": "40th Anniversary",
-      "vitola": "Real"
+    "1974": {
+      "line": "1974"
+    },
+    "40th Anniversary": {
+      "line": "40th Anniversary"
+    },
+    "Holiday Keg": {
+      "line": "Holiday Keg"
+    },
+    "Vega Magna": {
+      "line": "Vega Magna"
     }
   },
   "vitolaRenames": {},

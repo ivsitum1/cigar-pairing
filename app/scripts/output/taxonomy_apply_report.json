@@ -1,6 +1,6 @@
 {
-  "taxonomy_files": 206,
-  "taxonomy_files_total": 254,
+  "taxonomy_files": 506,
+  "taxonomy_files_total": 506,
   "input_records": 2396,
   "auto_pass": {
     "P1": [],
@@ -16,6 +16,23 @@
     "P4": 0,
     "P5": 0
   },
+  "brand_renames": [
+    {
+      "from": "Man O' War",
+      "to": "Man O' War",
+      "id": "cig-man-o-war-o-war"
+    },
+    {
+      "from": "Man O' War",
+      "to": "Man O' War",
+      "id": "cig-man-o-war-ruination"
+    },
+    {
+      "from": "Man O' War",
+      "to": "Man O' War",
+      "id": "cig-man-o-war-virtue"
+    }
+  ],
   "aliases_added": [],
   "output_records": 2396
 }

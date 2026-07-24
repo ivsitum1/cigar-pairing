@@ -1,35 +1,16 @@
 {
   "brand": "Xhaxhi",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-24",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w3_w4_finish W4",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
   ],
   "lines": {
-    "Bobi Baba Jan": {
-      "line": "Bobi",
-      "vitola": "Baba Jan"
-    },
-    "Bobi El Ingeniero": {
-      "line": "Bobi",
-      "vitola": "El Ingeniero"
-    },
-    "Bobi El Licenciado": {
-      "line": "Bobi",
-      "vitola": "El Ingeniero"
-    },
-    "Bobi Mi Hermano": {
-      "line": "Bobi",
-      "vitola": "Baba Jan"
-    },
-    "Bobi Sunrise": {
-      "line": "Bobi",
-      "vitola": "Baba Jan"
-    },
-    "Bobi Sunset": {
-      "line": "Bobi",
-      "vitola": "El Ingeniero"
+    "Bobi": {
+      "line": "Bobi"
     }
   },
   "vitolaRenames": {},

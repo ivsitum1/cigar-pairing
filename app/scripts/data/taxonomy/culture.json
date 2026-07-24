@@ -1,23 +1,25 @@
 {
   "brand": "Culture",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-24",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w3_w4_finish W3",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
   ],
   "lines": {
-    "Dominican Reserve Paris": {
-      "line": "Dominican Reserve",
-      "vitola": "Paris"
+    "Aniversario": {
+      "line": "Aniversario"
     },
-    "Dominican Reserve Rome": {
-      "line": "Dominican Reserve",
-      "vitola": "Rome"
+    "Dominican Reserve": {
+      "line": "Dominican Reserve"
     },
-    "Dominican Reserve Sevilla": {
-      "line": "Dominican Reserve",
-      "vitola": "Sevilla"
+    "Nicaraguan Reserve Shanghai": {
+      "line": "Nicaraguan Reserve Shanghai"
+    },
+    "Nicaraguan Reserve Tokyo": {
+      "line": "Nicaraguan Reserve Tokyo"
     }
   },
   "vitolaRenames": {},

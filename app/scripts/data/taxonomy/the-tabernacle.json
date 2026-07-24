@@ -1,12 +1,24 @@
 {
   "brand": "The Tabernacle",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-24",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w3_w4_finish W3",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
   ],
-  "lines": {},
+  "lines": {
+    "CT Broadleaf": {
+      "line": "CT Broadleaf"
+    },
+    "Doble": {
+      "line": "Doble"
+    },
+    "Havana Seed CT 142": {
+      "line": "Havana Seed CT 142"
+    }
+  },
   "vitolaRenames": {},
   "shapes": {},
   "keepSeparate": [],

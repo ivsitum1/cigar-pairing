@@ -5,21 +5,18 @@
   "reviewedAt": "2026-07-24",
   "sources": [
     "phase3_w2_finish deterministic remaps",
-    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3",
+    "phase3_w3_w4_finish W3"
   ],
   "lines": {
     "Classic": {
       "line": "Classic"
     },
-    "Dorsay No. 50/10": {
-      "line": "Dorsay No. 50"
+    "Clásica": {
+      "line": "Clásica"
     },
-    "Dorsay No. 50/25": {
+    "Dorsay No. 50": {
       "line": "Dorsay No. 50"
-    },
-    "No.50 / No.54": {
-      "line": "Clásica",
-      "vitola": "No.50 / No.54"
     },
     "Special Editions": {
       "line": "Special Editions"
@@ -30,6 +27,7 @@
   "keepSeparate": [],
   "lineNotes": {},
   "unresolved": [
-    "Quai d'Orsay: Habanos Clásica fold is partial — verify against catalog"
+    "Quai d'Orsay: Habanos Clásica fold is partial — verify against catalog",
+    "Quai d'Orsay: Habanos small set — verify Clásica folds if any"
   ]
 }

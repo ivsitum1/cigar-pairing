@@ -1,12 +1,24 @@
 {
-  "brand": "Man O. War",
+  "brand": "Man O' War",
   "renameBrand": "Man O' War",
-  "status": "brand-only",
-  "reviewedAt": "2026-07-23",
+  "status": "done",
+  "reviewedAt": "2026-07-24",
   "sources": [
-    "https://www.cigarsinternational.com/p/man-o-war-cigars/1411636/"
+    "https://www.cigarsinternational.com/p/man-o-war-cigars/1411636/",
+    "phase3_w3_w4_finish W3",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
   ],
-  "lines": {},
+  "lines": {
+    "Man O' War": {
+      "line": "O' War"
+    },
+    "Man O' War Ruination": {
+      "line": "Ruination"
+    },
+    "Man O' War Virtue": {
+      "line": "Virtue"
+    }
+  },
   "vitolaRenames": {},
   "shapes": {},
   "keepSeparate": [],
