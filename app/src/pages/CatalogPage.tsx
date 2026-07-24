@@ -1,11 +1,12 @@
 import { useEffect, useMemo, useState } from "react";
-import type { Cigar, Drink, DrinkCategory, RegionFilter } from "../types";
+import type { Cigar, Drink, DrinkCategory } from "../types";
 import {
   CIGARS,
   DRINKS,
   cigarById,
   ALL_BRANDS,
   BRAND_CATALOG,
+  cigarsByBrand,
   cigarInRegion,
   cigarCountByRegion,
 } from "../data";
@@ -15,6 +16,7 @@ import { Chip, SearchInput } from "../components/ui";
 import { CigarRow, DrinkRow } from "../components/cards";
 import { DetailSheet } from "../components/DetailSheet";
 import { BrandSheet } from "../components/BrandSheet";
+import { MarketFilter } from "../components/MarketFilter";
 import { VitolaPicker } from "../components/VitolaPicker";
 import { applyVitola, needsVitolaPick, uniqueVitolas } from "../lib/cigarVitola";
 import { useMarket, setMarket } from "../store/market";
@@ -74,8 +76,6 @@ const TABS: Tab[] = [
   "tequila",
   "gin",
 ];
-const REGION_FILTERS: RegionFilter[] = ["ALL", "HR", "EU", "USA"];
-
 export function CatalogPage({
   onPair,
 }: {
@@ -111,10 +111,17 @@ export function CatalogPage({
   const brandRows = useMemo(() => {
     if (tab !== "cigars" || !browseBrands) return [];
     const nq = norm(query.trim());
-    return BRAND_CATALOG.filter(
-      (b) => !nq || norm(b.brand).includes(nq) || norm(b.info?.country ?? "").includes(nq),
-    );
-  }, [tab, browseBrands, query]);
+    return BRAND_CATALOG.filter((b) => {
+      if (nq && !norm(b.brand).includes(nq) && !norm(b.info?.country ?? "").includes(nq)) {
+        return false;
+      }
+      // filter tržišta: sakrij brendove bez ijedne cigare na odabranom tržištu
+      if (market !== "ALL" && !cigarsByBrand(b.brand).some((c) => cigarInRegion(c, market))) {
+        return false;
+      }
+      return true;
+    });
+  }, [tab, browseBrands, query, market]);
 
   // sidra za A–Z skok: prvi redak svakog početnog slova u indeksu brendova
   const brandAnchors = useMemo(() => {
@@ -283,13 +290,6 @@ export function CatalogPage({
         )}
         {tab === "cigars" &&
           !browseBrands &&
-          REGION_FILTERS.map((m) => (
-            <Chip key={m} active={market === m} onClick={() => setMarket(m)}>
-              {t(`market.${m}` as StringKey)}
-            </Chip>
-          ))}
-        {tab === "cigars" &&
-          !browseBrands &&
           [1, 2, 3, 4, 5].map((s) => (
             <Chip
               key={s}
@@ -314,6 +314,9 @@ export function CatalogPage({
           </Chip>
         ))}
       </div>
+
+      {/* tržište uvijek vidljivo za cigare (indeks brendova + popis) */}
+      {tab === "cigars" && <MarketFilter className="mt-2" />}
 
       {/* sortiranje */}
       {!browseBrands && (
@@ -389,6 +392,10 @@ export function CatalogPage({
         {browseBrands &&
           brandRows.map((b, i) => {
             const anchor = brandAnchors.at.get(i);
+            const linesInMarket = cigarsByBrand(b.brand).filter(
+              (c) => c.line !== "Additional Vitolas" && cigarInRegion(c, market),
+            );
+            const lineCount = market === "ALL" ? b.lineCount : linesInMarket.length;
             return (
             <button
               key={b.brand}
@@ -408,8 +415,8 @@ export function CatalogPage({
                 {b.info ? cn(b.info.country) : ""}
                 {b.info?.founded ? ` · ${b.info.founded}` : ""}
                 {" · "}
-                {b.lineCount} {t("brand.lines")}
-                {b.hasAdditionalVitolas ? " · +" : ""}
+                {lineCount} {t("brand.lines")}
+                {b.hasAdditionalVitolas && market === "ALL" ? " · +" : ""}
               </div>
               {b.info && (
                 <div className="mt-1.5 line-clamp-2 text-xs leading-relaxed text-dim/90">

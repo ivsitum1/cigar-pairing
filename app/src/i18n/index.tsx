@@ -273,6 +273,10 @@ const STRINGS = {
   "brand.index": { hr: "Brendovi", en: "Brands" },
   "brand.lines": { hr: "linija", en: "lines" },
   "brand.from": { hr: "od", en: "from" },
+  "brand.noneInMarket": {
+    hr: "Nema linija dostupnih na odabranom tržištu. Promijeni filter iznad.",
+    en: "No lines available in the selected market. Change the filter above.",
+  },
   "catalog.showMore": { hr: "Prikaži još", en: "Show more" },
   // kolekcija
   "coll.owned": { hr: "Imam", en: "Owned" },
