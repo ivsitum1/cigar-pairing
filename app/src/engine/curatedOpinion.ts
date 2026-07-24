@@ -6,6 +6,7 @@
 // Nikad ne čita drink.cigarHint (Excel). Tekst je uvijek specifičan za taj par.
 
 import type { Cigar, Drink, LocalizedText, PairingReason } from "../types";
+import { drinkNameLoc } from "../lib/drinkName";
 import { WEIGHTS, flavorLabel, normalizeTags } from "./rules";
 
 const BODY_HR = ["", "vrlo lagano", "lagano", "srednje", "puno", "vrlo puno"];
@@ -340,14 +341,15 @@ export function curatedPairingOpinion(
   score: number,
 ): CuratedOpinion | null {
   const cigarName = `${cigar.brand} ${cigar.line}`.trim();
+  const dn = drinkNameLoc(drink);
 
   if (score >= WEIGHTS.curatedHintMinScore) {
     const body = alwaysUniqueBody(cigar, drink, reasons, score);
     return {
       tone: "praise",
       text: {
-        hr: `${cigarName} i ${drink.name} — ${body.hr}`,
-        en: `${cigarName} and ${drink.name} — ${body.en}`,
+        hr: `${cigarName} i ${dn.hr} — ${body.hr}`,
+        en: `${cigarName} and ${dn.en} — ${body.en}`,
       },
     };
   }
@@ -357,8 +359,8 @@ export function curatedPairingOpinion(
     return {
       tone: "warning",
       text: {
-        hr: `${cigarName} i ${drink.name} — ${body.hr}`,
-        en: `${cigarName} and ${drink.name} — ${body.en}`,
+        hr: `${cigarName} i ${dn.hr} — ${body.hr}`,
+        en: `${cigarName} and ${dn.en} — ${body.en}`,
       },
     };
   }

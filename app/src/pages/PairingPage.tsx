@@ -18,6 +18,7 @@ import { OcrScan } from "../components/OcrScan";
 import { VitolaPicker } from "../components/VitolaPicker";
 import { applyVitola, needsVitolaPick, uniqueVitolas } from "../lib/cigarVitola";
 import { drinkBuyLink } from "../lib/drinkBuyLink";
+import { drinkNameLoc, drinkNameHaystack } from "../lib/drinkName";
 import { useMarket } from "../store/market";
 import { consumePairingIntent, usePairingNavVersion } from "../store/pairingNav";
 import { navigate, useRoute } from "../store/route";
@@ -139,7 +140,9 @@ export function PairingPage() {
       );
     }
     return ALL_DRINKS.filter(
-      (d) => d.pairable && (!q || norm(`${d.name} ${d.style} ${d.region}`).includes(q)),
+      (d) =>
+        d.pairable &&
+        (!q || norm(`${drinkNameHaystack(d)} ${d.style} ${d.region}`).includes(q)),
     );
   }, [mode, query, marketCigars]);
 
@@ -430,7 +433,7 @@ export function PairingPage() {
               ) : (
                 <PickRow
                   key={item.id}
-                  title={(item as Drink).name}
+                  title={lx(drinkNameLoc(item as Drink))}
                   sub={lx(STYLE_LABELS[(item as Drink).style]) || (item as Drink).style}
                   onPick={() => pickDrink(item as Drink)}
                 />
@@ -457,7 +460,7 @@ export function PairingPage() {
                 <div className="font-display text-base text-papir">
                   {mode === "cigarToDrink"
                     ? `${(selected as Cigar).brand} ${(selected as Cigar).line}`
-                    : (selected as Drink).name}
+                    : lx(drinkNameLoc(selected as Drink))}
                 </div>
                 {mode === "cigarToDrink" && (
                   <div className="mt-0.5 text-xs text-dim">
@@ -553,7 +556,7 @@ export function PairingPage() {
                       result={result}
                       cigar={selectedCigar as Cigar}
                       drink={result.item}
-                      title={result.item.name}
+                      title={lx(drinkNameLoc(result.item))}
                       sub={`${t(`cat.${category}` as StringKey)} · ${lx(STYLE_LABELS[result.item.style]) || result.item.style}${
                         result.item.serving?.best
                           ? ` · ${t("serve.best")}: ${sv(result.item.serving.best)}`

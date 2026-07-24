@@ -5,6 +5,7 @@ import { ALL_DRINKS, CIGARS, cigarInRegion, formatPrice } from "../data";
 import { scorePairing } from "../engine/pairing";
 import { curatedPairingOpinion } from "../engine/curatedOpinion";
 import { pairingBlurb } from "../engine/pairingExplain";
+import { drinkNameLoc, drinkNameHaystack } from "../lib/drinkName";
 import { useI18n, STYLE_LABELS, type StringKey } from "../i18n";
 import { Meter, ScoreBand, SearchInput } from "../components/ui";
 import { ServeChips } from "../components/ServeChips";
@@ -72,7 +73,7 @@ export function CustomPairing({
         />
         <Slot
           label={t("common.drink")}
-          filled={drink ? drink.name : null}
+          filled={drink ? lx(drinkNameLoc(drink)) : null}
           onClick={() => setPicking(picking === "drink" ? null : "drink")}
           active={picking === "drink"}
         />
@@ -109,7 +110,7 @@ export function CustomPairing({
               onClick={() => onOpenDetail({ kind: "drink", item: drink! })}
               className="rounded-lg border border-dim/20 bg-humidor/40 p-2 text-left"
             >
-              <div className="font-display text-papir">{drink!.name}</div>
+              <div className="font-display text-papir">{lx(drinkNameLoc(drink!))}</div>
               <div className="mt-1 flex gap-3">
                 <Meter value={drink!.body} label={t("common.body")} />
                 <Meter value={drink!.sweetness} label={t("common.sweetness")} accent="var(--color-lista)" />
@@ -168,9 +169,9 @@ export function CustomPairing({
                 }))
               : drinks.map((d) => ({
                   id: d.id,
-                  title: d.name,
+                  title: lx(drinkNameLoc(d)),
                   sub: `${lx(STYLE_LABELS[d.style]) || d.style} · ${formatPrice(d.priceEUR)}`,
-                  hay: `${d.name} ${d.style} ${d.region}`,
+                  hay: `${drinkNameHaystack(d)} ${d.style} ${d.region}`,
                   raw: d as Cigar | Drink,
                 }))
           }

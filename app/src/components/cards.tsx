@@ -4,6 +4,7 @@ import { cigarPriceForMarket, formatPrice } from "../data";
 import { Meter } from "./ui";
 import { getItemState, useCollection } from "../store/collection";
 import { useMarket } from "../store/market";
+import { drinkNameLoc } from "../lib/drinkName";
 
 // Cijena cigare koja odgovara odabranom tržištu (HR = konkretna, ostalo = "provjeri")
 export function CigarPrice({ cigar }: { cigar: Cigar }) {
@@ -101,7 +102,7 @@ export function DrinkRow({
       <div className="flex items-baseline justify-between gap-2">
         <span className="font-display text-base text-papir">
           {rank != null && <span className="mr-1.5 text-xs text-dim">#{rank}</span>}
-          {drink.name}
+          {lx(drinkNameLoc(drink))}
           <OwnedDot id={drink.id} />
         </span>
         <span className="shrink-0 text-xs text-dim">
