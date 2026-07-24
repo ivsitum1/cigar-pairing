@@ -483,7 +483,7 @@ describe("cigars.json integrity", () => {
     expect(magnum).toBeDefined();
     expect((magnum!.vitolas ?? []).some((v) => /magnum 54/i.test(v.name))).toBe(true);
 
-    const classic = CIGARS.find((c) => c.id === "cig-romeo-y-julieta-classic");
+    const classic = CIGARS.find((c) => c.id === "cig-romeo-y-julieta-clasica");
     expect(classic).toBeDefined();
     expect((classic!.vitolas ?? []).some((v) => /puritos/i.test(v.name))).toBe(true);
   });

@@ -1,15 +1,63 @@
 {
   "brand": "Woermann",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-24",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w2_slice1 deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
   ],
   "lines": {
-    "Dominican Bundles 460": {
-      "line": "Dominican Bundles",
-      "vitola": "Torpedo"
+    "Dominican Bundles": {
+      "line": "Dominican Bundles"
+    },
+    "LF Dominican": {
+      "line": "LF Dominican"
+    },
+    "MF Maduro": {
+      "line": "MF Maduro"
+    },
+    "MF Red": {
+      "line": "MF Red"
+    },
+    "Natur Classic No. 340 Sumatra": {
+      "line": "Natur Classic Sumatra",
+      "vitola": "No. 340"
+    },
+    "Natur Classic No. 341 Brasil": {
+      "line": "Natur Classic Brasil",
+      "vitola": "No. 341"
+    },
+    "Seaman Christopherus Columbus Brasil No. 150": {
+      "line": "Seaman Christopherus Columbus Brasil"
+    },
+    "Seaman Christopherus Columbus Sumatra No. 150": {
+      "line": "Seaman Christopherus Columbus Sumatra"
+    },
+    "Seaman Kaptän Cook Brasil No. 60": {
+      "line": "Seaman Kaptän Cook Brasil"
+    },
+    "Seaman Kaptän Cook Sumatra No. 60": {
+      "line": "Seaman Kaptän Cook Sumatra"
+    },
+    "Seaman Lord Nelson Brasil No. 80": {
+      "line": "Seaman Lord Nelson Brasil"
+    },
+    "Seaman Lord Nelson Sumatra No. 80": {
+      "line": "Seaman Lord Nelson Sumatra"
+    },
+    "Seaman Panatella No. 1 Brasil": {
+      "line": "Seaman Panatella No. 1 Brasil"
+    },
+    "Seaman Panatella No. 1 Sumatra": {
+      "line": "Seaman Panatella No. 1 Sumatra"
+    },
+    "Seaman Sir Francis Drake Brasil No. 100": {
+      "line": "Seaman Sir Francis Drake Brasil"
+    },
+    "Seaman Sir Francis Drake Sumatra No. 100": {
+      "line": "Seaman Sir Francis Drake Sumatra"
     }
   },
   "vitolaRenames": {},

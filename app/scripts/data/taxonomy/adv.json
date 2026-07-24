@@ -1,15 +1,82 @@
 {
   "brand": "Adv",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-24",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w2_slice1 deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
   ],
-  "lines": {},
+  "lines": {
+    "Barbarroja's Invasion": {
+      "line": "Barbarroja's Invasion"
+    },
+    "Conqueror Almirante": {
+      "line": "Conqueror",
+      "vitola": "Almirante"
+    },
+    "Conqueror Canonero - Plus": {
+      "line": "Conqueror",
+      "vitola": "Canonero Plus"
+    },
+    "Conqueror Capitan": {
+      "line": "Conqueror",
+      "vitola": "Capitan"
+    },
+    "Conqueror Comandante": {
+      "line": "Conqueror",
+      "vitola": "Comandante"
+    },
+    "Conqueror Emperor’s Edition - Limited Edition": {
+      "line": "Conqueror",
+      "vitola": "Emperor’s Edition"
+    },
+    "Conqueror Marinero": {
+      "line": "Conqueror",
+      "vitola": "Marinero"
+    },
+    "Explorer": {
+      "line": "Explorer"
+    },
+    "Navigator Cabral": {
+      "line": "Navigator",
+      "vitola": "Cabral"
+    },
+    "Navigator Cadamosto": {
+      "line": "Navigator",
+      "vitola": "Cadamosto"
+    },
+    "Navigator Magellan": {
+      "line": "Navigator",
+      "vitola": "Magellan"
+    },
+    "Navigator Pinzon": {
+      "line": "Navigator",
+      "vitola": "Pinzon"
+    },
+    "Navigator Vespucci": {
+      "line": "Navigator",
+      "vitola": "Vespucci"
+    },
+    "Piece of Heart Short": {
+      "line": "Piece of Heart",
+      "vitola": "Short"
+    },
+    "Royal Return King's Gold": {
+      "line": "Royal Return",
+      "vitola": "King's Gold"
+    },
+    "Royal Return Queen's Pearls": {
+      "line": "Royal Return",
+      "vitola": "Queen's Pearls"
+    }
+  },
   "vitolaRenames": {},
   "shapes": {},
   "keepSeparate": [],
   "lineNotes": {},
-  "unresolved": []
+  "unresolved": [
+    "Adv: brand name looks truncated (Phase-2 leftover) — renameBrand later"
+  ]
 }

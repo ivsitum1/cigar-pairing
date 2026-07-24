@@ -1,12 +1,76 @@
 {
   "brand": "Cohiba",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-24",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "https://www.habanos.com/",
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w2_slice1 deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
   ],
-  "lines": {},
+  "lines": {
+    "Behike": {
+      "line": "Behike"
+    },
+    "Coronas Especiales": {
+      "line": "Línea Clásica",
+      "vitola": "Coronas Especiales"
+    },
+    "Esplendidos": {
+      "line": "Línea Clásica",
+      "vitola": "Esplendidos"
+    },
+    "Exquisitos": {
+      "line": "Línea Clásica",
+      "vitola": "Exquisitos"
+    },
+    "Ideales": {
+      "line": "Línea Clásica",
+      "vitola": "Ideales"
+    },
+    "Línea Clásica": {
+      "line": "Línea Clásica"
+    },
+    "Línea Clásica Robustos": {
+      "line": "Línea Clásica"
+    },
+    "Maduro 5": {
+      "line": "Maduro 5"
+    },
+    "Maduro Genios": {
+      "line": "Maduro 5",
+      "vitola": "Genios"
+    },
+    "Maduro Secretos": {
+      "line": "Maduro 5",
+      "vitola": "Secretos"
+    },
+    "Maravillas": {
+      "line": "Línea Clásica",
+      "vitola": "Maravillas"
+    },
+    "Medio Siglo Tubos": {
+      "line": "Medio Siglo"
+    },
+    "Panetelas": {
+      "line": "Línea Clásica",
+      "vitola": "Panetelas"
+    },
+    "Piramides Extra": {
+      "line": "Pirámides Extra"
+    },
+    "Robusto": {
+      "line": "Línea Clásica",
+      "vitola": "Robusto"
+    },
+    "Siglo": {
+      "line": "Siglo"
+    },
+    "Talisman": {
+      "line": "Talisman"
+    }
+  },
   "vitolaRenames": {},
   "shapes": {},
   "keepSeparate": [
@@ -16,5 +80,7 @@
     ]
   ],
   "lineNotes": {},
-  "unresolved": []
+  "unresolved": [
+    "Cohiba: Habanos Línea Clásica fold — verify against catalog"
+  ]
 }

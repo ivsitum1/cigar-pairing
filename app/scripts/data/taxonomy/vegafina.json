@@ -1,12 +1,67 @@
 {
   "brand": "VegaFina",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-24",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w2_slice1 deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
   ],
-  "lines": {},
+  "lines": {
+    "1998 Nabateos Wonders Collection": {
+      "line": "1998",
+      "vitola": "Nabateos Wonders Collection"
+    },
+    "1998 VF 42L": {
+      "line": "1998",
+      "vitola": "42L"
+    },
+    "1998 VF 46": {
+      "line": "1998",
+      "vitola": "46"
+    },
+    "1998 VF 50": {
+      "line": "1998",
+      "vitola": "50"
+    },
+    "1998 VF 52": {
+      "line": "1998",
+      "vitola": "52"
+    },
+    "1998 VF 54": {
+      "line": "1998",
+      "vitola": "54"
+    },
+    "Classic": {
+      "line": "Classic"
+    },
+    "Classic / Fortaleza 2": {
+      "line": "Fortaleza 2"
+    },
+    "Nicaragua": {
+      "line": "Nicaragua"
+    },
+    "Nicaragua Dosmilcatorce Gran Reserva X Anniversario": {
+      "line": "Nicaragua Gran Reserva"
+    },
+    "Serie 2": {
+      "line": "Serie 2"
+    },
+    "Serie 2 Coupage": {
+      "line": "Serie 2",
+      "vitola": "Coupage"
+    },
+    "Vega Fina": {
+      "line": "Classic"
+    },
+    "Vega Fina Nicaragua": {
+      "line": "Nicaragua"
+    },
+    "Year Of Snake 2025": {
+      "line": "Year of the Snake 2025"
+    }
+  },
   "vitolaRenames": {},
   "shapes": {},
   "keepSeparate": [

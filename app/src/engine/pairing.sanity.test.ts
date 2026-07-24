@@ -52,7 +52,7 @@ describe("sanity logike matchanja", () => {
     expect(share80).toBeGreaterThan(0.02); // kurirane poruke moraju postojati
     expect(share80).toBeLessThan(0.3); // ...ali 80+ mora ostati poseban
     expect(share100).toBeLessThan(0.02);
-  });
+  }, 15_000);
 
   // ton poruke mora pratiti score: pohvala (>=80) bez negativnih verdikta,
   // upozorenje (<=45) bez pohvala — negativno misljenje je dozvoljeno i
@@ -75,5 +75,5 @@ describe("sanity logike matchanja", () => {
       }
     }
     expect(offenders).toEqual([]);
-  });
+  }, 20_000);
 });

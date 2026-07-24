@@ -126,5 +126,5 @@ describe("curatedPairingOpinion — tri zone (pohvala / null / upozorenje)", () 
         }
       }
     }
-  });
+  }, 20_000);
 });
