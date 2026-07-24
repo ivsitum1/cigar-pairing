@@ -323,6 +323,14 @@ const STRINGS = {
   // filteri
   "filter.style": { hr: "Stil", en: "Style" },
   "filter.strength": { hr: "Snaga", en: "Strength" },
+  "filter.shape": { hr: "Oblik", en: "Shape" },
+  "shape.robusto": { hr: "Robusto", en: "Robusto" },
+  "shape.toro": { hr: "Toro", en: "Toro" },
+  "shape.corona": { hr: "Corona", en: "Corona" },
+  "shape.churchill": { hr: "Churchill", en: "Churchill" },
+  "shape.gordo": { hr: "Gordo", en: "Gordo" },
+  "shape.lancero": { hr: "Lancero", en: "Lancero" },
+  "shape.figurado": { hr: "Figurado", en: "Figurado" },
   "filter.maxPrice": { hr: "Cijena do", en: "Price up to" },
   "filter.clean": { hr: "Samo čisti (bez aditiva)", en: "Clean only (no additives)" },
   // sortiranje

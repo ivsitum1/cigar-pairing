@@ -2,6 +2,7 @@ import { describe, it, expect } from "vitest";
 import cigarsData from "./cigars.json";
 import brandsData from "./brands.json";
 import { CIGARS, cigarLinkForMarket, cigarPriceForMarket, cigarShopLinks, cigarShopLinkPrice, ALL_BRANDS, BRAND_CATALOG } from "./index";
+import { classifyVitola, cigarShapes } from "../lib/vitolaShape";
 import type { Cigar } from "../types";
 
 describe("cigars.json integrity", () => {
@@ -551,5 +552,25 @@ describe("cigars.json integrity", () => {
       }
     }
     expect(mismatches).toEqual([]);
+  });
+
+  it("filter oblika — ≥95% vitola s ring podatkom dobije obitelj", () => {
+    let withRing = 0;
+    let classified = 0;
+    for (const c of CIGARS) {
+      for (const v of c.vitolas ?? []) {
+        if (v.ring == null) continue;
+        withRing++;
+        if (classifyVitola(v)) classified++;
+      }
+    }
+    expect(withRing).toBeGreaterThan(0);
+    expect(classified / withRing).toBeGreaterThanOrEqual(0.95);
+  });
+
+  it("filter oblika — gotovo svaka linija ima barem jednu obitelj", () => {
+    const without = CIGARS.filter((c) => (c.vitolas?.length ?? 0) > 0 && cigarShapes(c).size === 0);
+    // dopuštamo šačicu rubnih linija bez ijedne prepoznate vitole
+    expect(without.length).toBeLessThanOrEqual(15);
   });
 });
