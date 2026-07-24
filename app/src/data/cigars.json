@@ -10,10 +10,12 @@
     "strength": 3,
     "body": 3,
     "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
+      "kakao",
+      "kava",
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "smokeTimeMin": 55,
     "priceEUR": 21.0,
@@ -23,8 +25,8 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Nikaragva, H-2000 pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Nicaragua, H-2000 wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
+      "hr": "Jubilarno izdanje uz obljetnicu marke — odabrane šarže i zaobljeniji, svečaniji profil.",
+      "en": "The anniversary release — selected batches and a rounder, celebratory profile."
     },
     "markets": [
       "EU",
@@ -79,10 +81,12 @@
     "strength": 3,
     "body": 3,
     "flavorTags": [
+      "kakao",
+      "kava",
+      "zemljano",
       "cedar",
       "zacini",
-      "koza",
-      "kava"
+      "koza"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -91,8 +95,8 @@
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Nicaragua pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Nicaragua, Nicaragua wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
+      "hr": "Black Gold je najtamnija redovna 1502 — bogata, čokoladno-zemljana, uz jaču kavu i dulji finiš.",
+      "en": "Black Gold is the darkest regular 1502 — rich, chocolate-earthy, with stronger coffee and a longer finish."
     },
     "markets": [
       "EU",
@@ -207,10 +211,12 @@
     "strength": 4,
     "body": 4,
     "flavorTags": [
+      "kakao",
+      "kava",
       "papar",
-      "zacini",
-      "koza",
-      "cedar"
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -219,8 +225,8 @@
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Corojo pokrov — jače snage, punijeg tijela. Okusi: papar, začini, koža.",
-      "en": "Nicaragua, Corojo wrapper — medium-full in strength, fuller-bodied. Notes: pepper, spices, leather."
+      "hr": "Emerald je najpitkiji izraz linije 1502 — nikaragvanski puro s box-pressom i zatvorenom nogom, kremasto-drvenast uz blage začine.",
+      "en": "Emerald is 1502's most approachable expression — a box-pressed Nicaraguan puro with a closed foot, creamy-woody with gentle spice."
     },
     "markets": [
       "EU",
@@ -400,9 +406,11 @@
     "body": 4,
     "flavorTags": [
       "kakao",
-      "zacini",
-      "drvo",
-      "karamela"
+      "kava",
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -411,8 +419,8 @@
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Sumatra pokrov — srednje snage, punijeg tijela. Okusi: kakao, začini, drvo.",
-      "en": "Nicaragua, Sumatra wrapper — medium in strength, fuller-bodied. Notes: cocoa, spices, wood."
+      "hr": "Ruby donosi srednje-puno tijelo i sočniju slatkoću od Emeralda; potpisni box-press i zatvorena noga čuvaju ulja i arome.",
+      "en": "Ruby brings medium-full body and juicier sweetness than Emerald; the signature box-press and closed foot lock in oils and aroma."
     },
     "markets": [
       "EU",
@@ -516,10 +524,15 @@
     "vitola": "Robusto Gordo",
     "format": "52 x 127mm",
     "country": "Nikaragva",
-    "wrapper": "—",
+    "wrapper": "Habano",
     "strength": 3,
     "body": 3,
-    "flavorTags": [],
+    "flavorTags": [
+      "cedar",
+      "koza",
+      "zacini",
+      "kava"
+    ],
     "smokeTimeMin": 50,
     "priceEUR": 15.5,
     "priceApprox": false,
@@ -626,10 +639,12 @@
     "strength": 3,
     "body": 3,
     "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
+      "kakao",
+      "kava",
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -683,10 +698,12 @@
     "strength": 3,
     "body": 3,
     "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
+      "kakao",
+      "kava",
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -799,9 +816,11 @@
     "body": 3,
     "flavorTags": [
       "cedar",
-      "zacini",
       "koza",
-      "kava"
+      "zacini",
+      "duhan",
+      "dim",
+      "slatko"
     ],
     "smokeTimeMin": 55,
     "priceEUR": 45.0,
@@ -1142,11 +1161,12 @@
     "strength": 2,
     "body": 2,
     "flavorTags": [
+      "kakao",
+      "kava",
+      "papar",
       "kremasto",
-      "cedar",
-      "orasasti",
-      "med",
-      "trava-slatka"
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -1549,10 +1569,12 @@
     "strength": 4,
     "body": 4,
     "flavorTags": [
+      "kakao",
+      "kava",
       "papar",
-      "zacini",
-      "koza",
-      "cedar"
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -1638,11 +1660,12 @@
     "strength": 2,
     "body": 2,
     "flavorTags": [
+      "kakao",
+      "kava",
+      "papar",
       "kremasto",
-      "cedar",
-      "orasasti",
-      "med",
-      "trava-slatka"
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -1714,9 +1737,10 @@
     "flavorTags": [
       "kakao",
       "kava",
-      "karamela",
-      "slatko",
-      "zemljano"
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -1802,10 +1826,12 @@
     "strength": 3,
     "body": 3,
     "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
+      "kakao",
+      "kava",
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -2361,11 +2387,12 @@
     "strength": 2,
     "body": 2,
     "flavorTags": [
+      "kakao",
+      "kava",
+      "papar",
       "kremasto",
-      "cedar",
-      "orasasti",
-      "med",
-      "trava-slatka"
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -2435,10 +2462,12 @@
     "strength": 3,
     "body": 3,
     "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
+      "kakao",
+      "kava",
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -2713,10 +2742,12 @@
     "strength": 3,
     "body": 3,
     "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
+      "kakao",
+      "kava",
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -3113,11 +3144,12 @@
     "strength": 2,
     "body": 2,
     "flavorTags": [
+      "kakao",
+      "kava",
+      "papar",
       "kremasto",
-      "cedar",
-      "orasasti",
-      "med",
-      "trava-slatka"
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -3370,10 +3402,12 @@
     "strength": 4,
     "body": 4,
     "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
+      "kakao",
+      "kava",
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "smokeTimeMin": 50,
     "priceEUR": 13.0,
@@ -3383,7 +3417,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Habano wrapper (Nikaragva); punija i izražajna. Note: cedar, zacini, koza.",
+      "hr": "Nikaragva, Habano pokrov — jače snage, punijeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Nicaragua); fuller and expressive. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -3436,10 +3470,12 @@
     "strength": 4,
     "body": 4,
     "flavorTags": [
+      "kakao",
+      "kava",
       "papar",
-      "zacini",
-      "koza",
-      "cedar"
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -3977,14 +4013,16 @@
     "vitola": "Robusto",
     "format": "52 x 133mm",
     "country": "Nikaragva",
-    "wrapper": "—",
+    "wrapper": "Corojo",
     "strength": 4,
     "body": 4,
     "flavorTags": [
+      "kakao",
+      "kava",
       "papar",
-      "zacini",
-      "koza",
-      "cedar"
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "smokeTimeMin": 50,
     "priceEUR": 12.5,
@@ -4114,10 +4152,12 @@
     "strength": 4,
     "body": 4,
     "flavorTags": [
+      "kakao",
+      "kava",
       "papar",
-      "zacini",
-      "koza",
-      "cedar"
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -4126,8 +4166,8 @@
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Corojo pokrov — jače snage, punijeg tijela. Okusi: papar, začini, koža.",
-      "en": "Nicaragua, Corojo wrapper — medium-full in strength, fuller-bodied. Notes: pepper, spices, leather."
+      "hr": "Signature Selection je potpisni kućni blend — najizravniji uvod u slatko-začinski karakter Aganorsa duhana.",
+      "en": "Signature Selection is the house's signature blend — the most direct introduction to Aganorsa's sweet-spiced character."
     },
     "markets": [
       "EU",
@@ -4252,9 +4292,10 @@
     "flavorTags": [
       "kakao",
       "kava",
-      "karamela",
-      "slatko",
-      "zemljano"
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -4263,8 +4304,8 @@
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Corojo pokrov — srednje snage, punijeg tijela. Okusi: kakao, kava, karamela.",
-      "en": "Nicaragua, Corojo wrapper — medium in strength, fuller-bodied. Notes: cocoa, coffee, caramel."
+      "hr": "Signature Selection je potpisni kućni blend — najizravniji uvod u slatko-začinski karakter Aganorsa duhana.",
+      "en": "Signature Selection is the house's signature blend — the most direct introduction to Aganorsa's sweet-spiced character."
     },
     "markets": [
       "EU",
@@ -4320,14 +4361,16 @@
     "vitola": "Robusto",
     "format": "52 x 127mm",
     "country": "Nikaragva",
-    "wrapper": "Natural",
+    "wrapper": "Corojo",
     "strength": 4,
     "body": 4,
     "flavorTags": [
       "kakao",
+      "kava",
       "papar",
-      "koza",
-      "zemljano"
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "smokeTimeMin": 50,
     "priceEUR": 11.0,
@@ -4429,9 +4472,11 @@
     "body": 4,
     "flavorTags": [
       "kakao",
-      "zacini",
-      "drvo",
-      "karamela"
+      "kava",
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -4494,9 +4539,11 @@
     "body": 4,
     "flavorTags": [
       "kakao",
-      "zacini",
-      "drvo",
-      "karamela"
+      "kava",
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -4576,9 +4623,11 @@
     "body": 4,
     "flavorTags": [
       "kakao",
-      "zacini",
-      "drvo",
-      "karamela"
+      "kava",
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -4632,10 +4681,12 @@
     "strength": 3,
     "body": 3,
     "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
+      "kakao",
+      "kava",
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -4832,7 +4883,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Bellas Artes spaja umjetničku estetiku s AJ-evim blendom: Hybrid (Rojita wrapper) za kompleksnost, Maduro za tamniju, puniju stranu.",
+      "hr": "Nikaragva, Hybrid Rojita / Maduro pokrov — jače snage, punijeg tijela. Okusi: cimet, cedrovina, kakao.",
       "en": "Bellas Artes pairs artistic presentation with AJ's blending: Hybrid (Rojita wrapper) for complexity, Maduro for the darker, fuller side."
     },
     "markets": [
@@ -5095,8 +5146,8 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Enclave je AJ-eva posveta 'enklavi' odanih pušača: tri wrappera (Broadleaf, Habano, Connecticut) preko nikaragvanske jezgre — od slatke broadleaf do papreno-cedrovog Habana.",
-      "en": "Enclave is AJ's tribute to the 'enclave' of loyal smokers: three wrappers (Broadleaf, Habano, Connecticut) over a Nicaraguan core — from sweet broadleaf to peppery-cedar Habano."
+      "hr": "Enclave je AJ-eva posveta 'enklavi' odanih pušača: broadleaf slatkoća preko nikaragvanske jezgre, kruh s korom, kakao i slatki začini u srednje-punom tijelu.",
+      "en": "Enclave is AJ's tribute to the 'enclave' of loyal smokers: broadleaf sweetness over a Nicaraguan core — baked bread, cocoa and sweet spice at medium-full."
     },
     "markets": [
       "HR",
@@ -5273,7 +5324,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "— wrapper (Nikaragva); punija i izražajna. Note: cedar, zacini, koza.",
+      "hr": "Nikaragva — jače snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "— wrapper (Nicaragua); fuller and expressive. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -5809,8 +5860,8 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "San Lotano je obiteljska linija (ime iz duhanskih polja Fernándeza): Oval press za ravnomjerno gorenje, plus Habano, Bull i Requiem Connecticut.",
-      "en": "San Lotano is the family line (named for the Fernández tobacco fields): oval press for an even burn, plus Habano, Bull and Requiem Connecticut."
+      "hr": "San Lotano je obiteljska linija (ime iz duhanskih polja obitelji Fernández) — oval press za ravnomjerno gorenje, uravnotežena začinjenost.",
+      "en": "San Lotano is the family line (named for the Fernández tobacco fields) — the oval press burns evenly, with balanced spice."
     },
     "markets": [
       "HR",
@@ -6168,10 +6219,12 @@
     "strength": 2,
     "body": 3,
     "flavorTags": [
-      "zacini-slatki",
-      "cedar",
-      "orasasti",
-      "koza"
+      "kakao",
+      "kava",
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -6241,9 +6294,11 @@
     "strength": 2,
     "body": 3,
     "flavorTags": [
-      "zacini-slatki",
       "cedar",
       "orasasti",
+      "zacini",
+      "zacini-slatki",
+      "slatko",
       "koza"
     ],
     "profileEstimated": true,
@@ -6298,11 +6353,12 @@
     "strength": 2,
     "body": 2,
     "flavorTags": [
+      "kakao",
+      "kava",
+      "papar",
       "kremasto",
-      "cedar",
-      "orasasti",
-      "med",
-      "trava-slatka"
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -6372,10 +6428,12 @@
     "strength": 4,
     "body": 4,
     "flavorTags": [
+      "kakao",
+      "kava",
       "papar",
-      "zacini",
-      "koza",
-      "cedar"
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -6486,10 +6544,12 @@
     "strength": 2,
     "body": 3,
     "flavorTags": [
-      "zacini-slatki",
-      "cedar",
-      "orasasti",
-      "koza"
+      "kakao",
+      "kava",
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -6601,11 +6661,12 @@
     "strength": 3,
     "body": 2,
     "flavorTags": [
+      "kakao",
+      "kava",
+      "papar",
       "kremasto",
-      "cedar",
-      "orasasti",
-      "med",
-      "trava-slatka"
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -6768,14 +6829,16 @@
     "vitola": "Black Market",
     "format": "52 x 152mm",
     "country": "Honduras",
-    "wrapper": "—",
+    "wrapper": "Nicaragua",
     "strength": 3,
     "body": 3,
     "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
+      "kakao",
+      "kava",
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "smokeTimeMin": 65,
     "priceEUR": null,
@@ -6832,10 +6895,12 @@
     "strength": 3,
     "body": 3,
     "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
+      "kakao",
+      "kava",
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -6929,11 +6994,12 @@
     "strength": 2,
     "body": 2,
     "flavorTags": [
+      "kakao",
+      "kava",
+      "papar",
       "kremasto",
-      "cedar",
-      "orasasti",
-      "med",
-      "trava-slatka"
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -7019,10 +7085,12 @@
     "strength": 4,
     "body": 3,
     "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
+      "kakao",
+      "kava",
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -7210,9 +7278,10 @@
     "flavorTags": [
       "kakao",
       "kava",
-      "karamela",
-      "slatko",
-      "zemljano"
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -7369,14 +7438,16 @@
     "vitola": "Filthy Hooligan",
     "format": "52 x 127mm",
     "country": "Honduras",
-    "wrapper": "—",
+    "wrapper": "H-2000",
     "strength": 3,
     "body": 3,
     "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
+      "kakao",
+      "kava",
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "smokeTimeMin": 50,
     "priceEUR": null,
@@ -7433,10 +7504,12 @@
     "strength": 5,
     "body": 5,
     "flavorTags": [
+      "kakao",
+      "kava",
       "papar",
-      "zacini",
-      "koza",
-      "cedar"
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "smokeTimeMin": 50,
     "priceEUR": null,
@@ -7446,7 +7519,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Corojo wrapper (Honduras); snažna, za iskusne pušače. Note: papar, zacini, koza.",
+      "hr": "Honduras, Corojo pokrov — pune snage, punog tijela. Okusi: papar, začini, koža.",
       "en": "Corojo wrapper (Honduras); powerful, for seasoned smokers. Notes of pepper, spice, leather. Gatekeeper robusto; pepper-forward."
     },
     "markets": [
@@ -7507,14 +7580,16 @@
     "vitola": "Kintsugi",
     "format": "52 x 127mm",
     "country": "Honduras",
-    "wrapper": "—",
+    "wrapper": "Honduras",
     "strength": 3,
     "body": 3,
     "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
+      "kakao",
+      "kava",
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "smokeTimeMin": 50,
     "priceEUR": 11.5,
@@ -7585,10 +7660,12 @@
     "strength": 3,
     "body": 3,
     "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
+      "kakao",
+      "kava",
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -7692,10 +7769,10 @@
     "flavorTags": [
       "kakao",
       "kava",
-      "zemljano",
-      "koza",
       "papar",
-      "slatko"
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "smokeTimeMin": 50,
     "priceEUR": null,
@@ -7705,7 +7782,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Nicaraguan maduro wrapper (Honduras); punija i izražajna. Note: kakao, kava, zemljano.",
+      "hr": "Honduras, Nicaraguan maduro pokrov — jače snage, punog tijela. Okusi: kakao, kava, zemljani tonovi.",
       "en": "Nicaraguan maduro wrapper (Honduras); fuller and expressive. Notes of cocoa, coffee, earth. Sweet maduro; chocolate and toast."
     },
     "markets": [
@@ -7770,10 +7847,12 @@
     "strength": 3,
     "body": 3,
     "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
+      "kakao",
+      "kava",
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -7861,10 +7940,12 @@
     "strength": 2,
     "body": 3,
     "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
+      "kakao",
+      "kava",
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -8290,10 +8371,12 @@
     "strength": 3,
     "body": 3,
     "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
+      "kakao",
+      "kava",
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -8369,9 +8452,10 @@
     "flavorTags": [
       "kakao",
       "kava",
-      "karamela",
-      "slatko",
-      "zemljano"
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -8549,10 +8633,12 @@
     "strength": 3,
     "body": 3,
     "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
+      "kakao",
+      "kava",
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -8702,9 +8788,10 @@
     "flavorTags": [
       "kakao",
       "kava",
-      "karamela",
-      "slatko",
-      "zemljano"
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "smokeTimeMin": 50,
     "priceEUR": null,
@@ -8714,7 +8801,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "San Andrés maduro wrapper (Honduras); uravnotežena, srednje snage. Note: kakao, kava, karamela.",
+      "hr": "Honduras, San Andrés maduro pokrov — srednje snage, punijeg tijela. Okusi: kakao, kava, karamela.",
       "en": "San Andrés maduro wrapper (Honduras); balanced, medium in strength. Notes of cocoa, coffee, caramel. Tempus maduro; earthy and sweet."
     },
     "markets": [
@@ -8779,10 +8866,12 @@
     "strength": 3,
     "body": 3,
     "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
+      "kakao",
+      "kava",
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -8913,10 +9002,12 @@
     "strength": 3,
     "body": 3,
     "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
+      "kakao",
+      "kava",
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -9036,9 +9127,10 @@
     "flavorTags": [
       "kakao",
       "kava",
-      "karamela",
-      "slatko",
-      "zemljano"
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -9156,10 +9248,12 @@
     "strength": 3,
     "body": 3,
     "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
+      "kakao",
+      "kava",
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -9277,10 +9371,12 @@
     "strength": 3,
     "body": 3,
     "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
+      "kakao",
+      "kava",
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -9398,11 +9494,11 @@
     "strength": 3,
     "body": 3,
     "flavorTags": [
+      "citrus",
       "cedar",
       "zacini",
       "koza",
-      "kava",
-      "citrus"
+      "kava"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -9456,11 +9552,12 @@
     "strength": 3,
     "body": 3,
     "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
+      "kakao",
       "kava",
-      "citrus"
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -9514,10 +9611,12 @@
     "strength": 3,
     "body": 3,
     "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
+      "kakao",
+      "kava",
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -9571,10 +9670,12 @@
     "strength": 3,
     "body": 3,
     "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
+      "kakao",
+      "kava",
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -9685,10 +9786,12 @@
     "strength": 3,
     "body": 3,
     "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
+      "kakao",
+      "kava",
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -9952,10 +10055,12 @@
     "strength": 3,
     "body": 3,
     "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
+      "kakao",
+      "kava",
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -10058,9 +10163,11 @@
     "body": 4,
     "flavorTags": [
       "kakao",
-      "zacini",
-      "drvo",
-      "karamela"
+      "kava",
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -10162,10 +10269,12 @@
     "strength": 3,
     "body": 3,
     "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
+      "kakao",
+      "kava",
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -10267,10 +10376,12 @@
     "strength": 3,
     "body": 3,
     "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
+      "kakao",
+      "kava",
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -10857,10 +10968,12 @@
     "strength": 3,
     "body": 3,
     "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
+      "kakao",
+      "kava",
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -10914,10 +11027,12 @@
     "strength": 3,
     "body": 3,
     "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
+      "kakao",
+      "kava",
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -10971,10 +11086,12 @@
     "strength": 3,
     "body": 3,
     "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
+      "kakao",
+      "kava",
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -11943,11 +12060,12 @@
     "strength": 2,
     "body": 2,
     "flavorTags": [
+      "kakao",
+      "kava",
+      "papar",
       "kremasto",
-      "cedar",
-      "orasasti",
-      "med",
-      "trava-slatka"
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -12019,9 +12137,10 @@
     "flavorTags": [
       "kakao",
       "kava",
-      "karamela",
-      "slatko",
-      "zemljano"
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -12091,10 +12210,12 @@
     "strength": 3,
     "body": 3,
     "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
+      "kakao",
+      "kava",
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -12337,11 +12458,12 @@
     "strength": 2,
     "body": 2,
     "flavorTags": [
+      "kakao",
+      "kava",
+      "papar",
       "kremasto",
-      "cedar",
-      "orasasti",
-      "med",
-      "trava-slatka"
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -12413,9 +12535,10 @@
     "flavorTags": [
       "kakao",
       "kava",
-      "karamela",
-      "slatko",
-      "zemljano"
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -12558,10 +12681,12 @@
     "strength": 3,
     "body": 3,
     "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
+      "kakao",
+      "kava",
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -12647,10 +12772,12 @@
     "strength": 3,
     "body": 3,
     "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
+      "kakao",
+      "kava",
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -12721,9 +12848,11 @@
     "body": 4,
     "flavorTags": [
       "kakao",
-      "zacini",
-      "drvo",
-      "karamela"
+      "kava",
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -12813,10 +12942,12 @@
     "strength": 5,
     "body": 3,
     "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
+      "kakao",
+      "kava",
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -12908,9 +13039,10 @@
     "flavorTags": [
       "kakao",
       "kava",
-      "karamela",
-      "slatko",
-      "zemljano"
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -12964,10 +13096,12 @@
     "strength": 4,
     "body": 4,
     "flavorTags": [
+      "kakao",
+      "kava",
       "papar",
-      "zacini",
-      "koza",
-      "cedar"
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -13145,9 +13279,10 @@
     "flavorTags": [
       "kakao",
       "kava",
-      "karamela",
-      "slatko",
-      "zemljano"
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -13229,15 +13364,16 @@
     "vitola": "50 Maduro",
     "format": "50 x 133mm",
     "country": "Dominikanska Republika",
-    "wrapper": "—",
+    "wrapper": "Connecticut",
     "strength": 2,
     "body": 4,
     "flavorTags": [
       "kakao",
       "kava",
-      "karamela",
-      "slatko",
-      "zemljano"
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "smokeTimeMin": 45,
     "priceEUR": 31.0,
@@ -13430,7 +13566,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "— wrapper (Dominikanska Republika); uravnotežena, srednje snage. Note: kakao, kava, karamela.",
+      "hr": "Dominikanska Republika — srednje snage, punijeg tijela. Okusi: kakao, kava, karamela.",
       "en": "— wrapper (Dominican Republic); balanced, medium in strength. Notes of cocoa, coffee, caramel."
     },
     "markets": [
@@ -13488,14 +13624,16 @@
     "vitola": "Chateau Fuente",
     "format": "50 x 114mm",
     "country": "Dominikanska Republika",
-    "wrapper": "—",
+    "wrapper": "Connecticut",
     "strength": 3,
     "body": 3,
     "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
+      "kakao",
+      "kava",
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "smokeTimeMin": 45,
     "priceEUR": 15.5,
@@ -13712,14 +13850,16 @@
     "vitola": "Deluxe",
     "format": "43 x 165mm",
     "country": "Dominikanska Republika",
-    "wrapper": "—",
+    "wrapper": "Connecticut",
     "strength": 3,
     "body": 3,
     "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
+      "kakao",
+      "kava",
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "smokeTimeMin": 45,
     "priceEUR": 6.7,
@@ -13729,7 +13869,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "— wrapper (Dominikanska Republika); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
+      "hr": "Dominikanska Republika — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "— wrapper (Dominican Republic); balanced, medium in strength. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -13781,10 +13921,12 @@
     "strength": 4,
     "body": 4,
     "flavorTags": [
-      "zacini",
-      "cedar",
       "kakao",
-      "koza"
+      "kava",
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "smokeTimeMin": 60,
     "priceEUR": 28.2,
@@ -13961,11 +14103,12 @@
     "strength": 2,
     "body": 2,
     "flavorTags": [
-      "cedar",
-      "zacini-slatki",
-      "orasasti",
-      "koza",
-      "karamela"
+      "kakao",
+      "kava",
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "smokeTimeMin": 50,
     "priceEUR": 12.3,
@@ -14117,11 +14260,12 @@
     "strength": 2,
     "body": 3,
     "flavorTags": [
-      "cedar",
-      "zacini-slatki",
-      "karamela",
-      "orasasti",
-      "kava"
+      "kakao",
+      "kava",
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "smokeTimeMin": 50,
     "priceEUR": 12.3,
@@ -14246,9 +14390,11 @@
     "strength": 2,
     "body": 3,
     "flavorTags": [
-      "zacini-slatki",
       "cedar",
       "orasasti",
+      "zacini",
+      "zacini-slatki",
+      "slatko",
       "koza"
     ],
     "profileEstimated": true,
@@ -14319,11 +14465,12 @@
     "strength": 3,
     "body": 3,
     "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
+      "kakao",
       "kava",
-      "med"
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -14377,11 +14524,12 @@
     "strength": 5,
     "body": 5,
     "flavorTags": [
-      "zacini",
-      "cedar",
-      "citrus",
-      "koza",
-      "cvjetno"
+      "kakao",
+      "kava",
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "smokeTimeMin": 50,
     "priceEUR": 51.0,
@@ -14615,10 +14763,12 @@
     "strength": 3,
     "body": 3,
     "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
+      "kakao",
+      "kava",
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -14854,11 +15004,12 @@
     "strength": 2,
     "body": 2,
     "flavorTags": [
+      "kakao",
+      "kava",
+      "papar",
       "kremasto",
-      "cedar",
-      "orasasti",
-      "med",
-      "trava-slatka"
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -14914,9 +15065,10 @@
     "flavorTags": [
       "kakao",
       "kava",
-      "karamela",
-      "slatko",
-      "zemljano"
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -14972,9 +15124,10 @@
     "flavorTags": [
       "kakao",
       "kava",
-      "karamela",
-      "slatko",
-      "zemljano"
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -15107,10 +15260,12 @@
     "strength": 2,
     "body": 2,
     "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
+      "kakao",
+      "kava",
+      "papar",
+      "kremasto",
+      "zemljano",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -15409,7 +15564,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Ecuadorian sun-grown wrapper (Dominikanska Republika); blaga prema srednjoj. Note: cedar, zacini, koza.",
+      "hr": "Dominikanska Republika, Ecuadorian sun-grown pokrov — lagane snage, laganog tijela. Okusi: cedrovina, začini, koža.",
       "en": "Ecuadorian sun-grown wrapper (Dominican Republic); mild-to-medium. Notes of cedar, spice, leather. Aged ESG; refined complexity."
     },
     "markets": [
@@ -15474,8 +15629,10 @@
     "body": 3,
     "flavorTags": [
       "cedar",
-      "zacini",
       "koza",
+      "zacini",
+      "kakao",
+      "drvo",
       "kava"
     ],
     "smokeTimeMin": 50,
@@ -15486,7 +15643,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Ecuador Sumatra wrapper (Dominikanska Republika); blaga prema srednjoj. Note: cedar, zacini, koza.",
+      "hr": "Dominikanska Republika, Ecuador Sumatra pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Ecuador Sumatra wrapper (Dominican Republic); mild-to-medium. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -15799,7 +15956,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Habano wrapper (Dominikanska Republika); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
+      "hr": "Dominikanska Republika, Habano pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Dominican Republic); balanced, medium in strength. Notes of cedar, spice, leather. Paragon robusto; modern medium-full."
     },
     "markets": [
@@ -15976,7 +16133,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Ecuadorian sun-grown wrapper (Dominikanska Republika); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
+      "hr": "Dominikanska Republika, Ecuadorian sun-grown pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Ecuadorian sun-grown wrapper (Dominican Republic); balanced, medium in strength. Notes of cedar, spice, leather. Virgin Sun Grown; full-bodied spice."
     },
     "markets": [
@@ -16423,7 +16580,7 @@
     "vitola": "Robusto",
     "format": "50 x 127mm",
     "country": "Nikaragva",
-    "wrapper": "—",
+    "wrapper": "Connecticut",
     "strength": 2,
     "body": 2,
     "flavorTags": [
@@ -16517,10 +16674,12 @@
     "strength": 3,
     "body": 4,
     "flavorTags": [
+      "kakao",
+      "kava",
       "cedar",
-      "zacini",
       "koza",
-      "kava"
+      "zacini",
+      "karamela"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -19457,9 +19616,11 @@
     "strength": 2,
     "body": 3,
     "flavorTags": [
-      "zacini-slatki",
       "cedar",
       "orasasti",
+      "zacini",
+      "zacini-slatki",
+      "slatko",
       "koza"
     ],
     "profileEstimated": true,
@@ -19530,9 +19691,11 @@
     "strength": 2,
     "body": 3,
     "flavorTags": [
-      "zacini-slatki",
       "cedar",
       "orasasti",
+      "zacini",
+      "zacini-slatki",
+      "slatko",
       "koza"
     ],
     "profileEstimated": true,
@@ -19587,9 +19750,11 @@
     "strength": 2,
     "body": 3,
     "flavorTags": [
-      "zacini-slatki",
       "cedar",
       "orasasti",
+      "zacini",
+      "zacini-slatki",
+      "slatko",
       "koza"
     ],
     "profileEstimated": true,
@@ -22961,9 +23126,11 @@
     "strength": 2,
     "body": 3,
     "flavorTags": [
-      "zacini-slatki",
       "cedar",
       "orasasti",
+      "zacini",
+      "zacini-slatki",
+      "slatko",
       "koza"
     ],
     "profileEstimated": true,
@@ -24950,8 +25117,8 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Sinkronizirano iz HR trgovina — Belicosos Finos.",
-      "en": ""
+      "hr": "Kuba, Habano pokrov — srednje snage, srednjeg tijela.",
+      "en": "Habano wrapper (Cuba); balanced, medium in strength."
     },
     "markets": [
       "HR",
@@ -25027,7 +25194,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Habano wrapper (Kuba); snažna, za iskusne pušače. Note: cedar, zacini, koza.",
+      "hr": "Kuba, Habano pokrov — pune snage, punog tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Cuba); powerful, for seasoned smokers. Notes of cedar, spice, leather. Signature belicoso; full-bodied earth and pepper."
     },
     "markets": [
@@ -25146,7 +25313,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Habano wrapper (Kuba); snažna, za iskusne pušače. Note: cedar, zacini, koza.",
+      "hr": "Kuba, Habano pokrov — pune snage, punog tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Cuba); powerful, for seasoned smokers. Notes of cedar, spice, leather. Modern wide robusto; dense cocoa."
     },
     "markets": [
@@ -25261,9 +25428,11 @@
     "strength": 2,
     "body": 3,
     "flavorTags": [
-      "zacini-slatki",
       "cedar",
       "orasasti",
+      "zacini",
+      "zacini-slatki",
+      "slatko",
       "koza"
     ],
     "profileEstimated": true,
@@ -25738,8 +25907,9 @@
       "kakao",
       "kava",
       "karamela",
-      "slatko",
-      "zemljano"
+      "kremasto",
+      "cedar",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -25796,8 +25966,9 @@
       "kakao",
       "kava",
       "karamela",
-      "slatko",
-      "zemljano"
+      "kremasto",
+      "cedar",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -25854,8 +26025,9 @@
       "kakao",
       "kava",
       "karamela",
-      "slatko",
-      "zemljano"
+      "kremasto",
+      "cedar",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -25912,8 +26084,9 @@
       "kakao",
       "kava",
       "karamela",
-      "slatko",
-      "zemljano"
+      "kremasto",
+      "cedar",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -29534,9 +29707,10 @@
     "flavorTags": [
       "kakao",
       "kava",
-      "karamela",
-      "slatko",
-      "zemljano"
+      "papar",
+      "koza",
+      "zacini",
+      "karamela"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -30548,8 +30722,9 @@
     "body": 4,
     "flavorTags": [
       "cedar",
-      "zacini",
       "koza",
+      "zacini",
+      "dim",
       "kava"
     ],
     "smokeTimeMin": 50,
@@ -30560,7 +30735,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Habano wrapper (Honduras); snažna, za iskusne pušače. Note: cedar, zacini, koza.",
+      "hr": "Honduras, Habano pokrov — pune snage, punijeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Honduras); powerful, for seasoned smokers. Notes of cedar, spice, leather. Diploma series; medium-full balance."
     },
     "markets": [
@@ -30946,7 +31121,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Honduras); punija i izražajna. Note: cedar, zacini, koza.",
+      "hr": "Honduras, Habano pokrov — jače snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Honduras); fuller and expressive. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -31137,7 +31312,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Maduro wrapper (Honduras); punija i izražajna. Note: kakao, kava, karamela.",
+      "hr": "Honduras, Maduro pokrov — jače snage, punijeg tijela. Okusi: kakao, kava, karamela.",
       "en": "Maduro wrapper (Honduras); fuller and expressive. Notes of cocoa, coffee, caramel. All-maduro blend; dense chocolate."
     },
     "markets": [
@@ -31321,7 +31496,7 @@
     "vitola": "Corona",
     "format": "43 x 142mm",
     "country": "Njemačka",
-    "wrapper": "—",
+    "wrapper": "Sumatra",
     "strength": 3,
     "body": 4,
     "flavorTags": [
@@ -31378,7 +31553,7 @@
     "vitola": "Corona",
     "format": "43 x 142mm",
     "country": "Njemačka",
-    "wrapper": "—",
+    "wrapper": "Sumatra",
     "strength": 3,
     "body": 4,
     "flavorTags": [
@@ -31901,7 +32076,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Brazilski maduro wrapper — tamno i slatkasto, odličan value.",
+      "hr": "Nikaragva, Brazilian maduro pokrov — srednje snage, punijeg tijela. Okusi: kakao, zemljani tonovi, slatkoća.",
       "en": "Brazilian maduro wrapper — dark and sweetish, great value."
     },
     "markets": [
@@ -32020,9 +32195,11 @@
     "strength": 3,
     "body": 3,
     "flavorTags": [
-      "zacini-slatki",
       "cedar",
       "orasasti",
+      "zacini",
+      "zacini-slatki",
+      "slatko",
       "koza"
     ],
     "profileEstimated": true,
@@ -32241,7 +32418,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Connecticut habano wrapper (Nikaragva); uravnotežena, srednje snage. Note: kremasto, cedar, orasasti.",
+      "hr": "Nikaragva, Connecticut habano pokrov — srednje snage, srednjeg tijela. Okusi: kremasto, cedrovina, orašasti tonovi.",
       "en": "Connecticut habano wrapper (Nicaragua); balanced, medium in strength. Notes of cream, cedar, nuts. Large box-pressed; bold spice."
     },
     "markets": [
@@ -32375,7 +32552,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Connecticut wrapper (Nikaragva); blaga i glatka. Note: kremasto, cedar, orasasti.",
+      "hr": "Nikaragva, Connecticut pokrov — vrlo lagane snage, vrlo laganog tijela. Okusi: kremasto, cedrovina, orašasti tonovi.",
       "en": "Connecticut wrapper (Nicaragua); mild and smooth. Notes of cream, cedar, nuts. Gold band Connecticut; mild-medium."
     },
     "markets": [
@@ -32820,7 +32997,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Habano wrapper (Nikaragva); punija i izražajna. Note: cedar, zacini, koza.",
+      "hr": "Nikaragva, Habano pokrov — jače snage, punijeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Nicaragua); fuller and expressive. Notes of cedar, spice, leather. Vision robusto; medium-full spice."
     },
     "markets": [
@@ -34963,10 +35140,12 @@
     "strength": 3,
     "body": 4,
     "flavorTags": [
+      "kakao",
+      "kava",
       "cedar",
-      "zacini",
       "koza",
-      "kava"
+      "zacini",
+      "karamela"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -35157,7 +35336,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Meksiko); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
+      "hr": "Meksiko, Habano pokrov — srednje snage, punijeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Mexico); balanced, medium in strength. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -35272,7 +35451,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Meksiko); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
+      "hr": "Meksiko, Habano pokrov — srednje snage, punijeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Mexico); balanced, medium in strength. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -35330,7 +35509,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Meksiko); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
+      "hr": "Meksiko, Habano pokrov — srednje snage, punijeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Mexico); balanced, medium in strength. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -35388,7 +35567,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Meksiko); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
+      "hr": "Meksiko, Habano pokrov — srednje snage, punijeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Mexico); balanced, medium in strength. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -35446,7 +35625,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Meksiko); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
+      "hr": "Meksiko, Habano pokrov — srednje snage, punijeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Mexico); balanced, medium in strength. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -35504,7 +35683,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Meksiko); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
+      "hr": "Meksiko, Habano pokrov — srednje snage, punijeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Mexico); balanced, medium in strength. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -35562,7 +35741,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Meksiko); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
+      "hr": "Meksiko, Habano pokrov — srednje snage, punijeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Mexico); balanced, medium in strength. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -35724,7 +35903,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Nicaraguan Colorado wrapper (Nikaragva); punija i izražajna. Note: cedar, zacini, koza.",
+      "hr": "Nikaragva, Nicaraguan Colorado pokrov — jače snage, punijeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Nicaraguan Colorado wrapper (Nicaragua); fuller and expressive. Notes of cedar, spice, leather. Colorado wrapper; medium-full with spice and sweetness."
     },
     "markets": [
@@ -35928,6 +36107,7 @@
       "kakao",
       "kava",
       "zemljano",
+      "karamela",
       "koza",
       "papar"
     ],
@@ -36063,8 +36243,9 @@
       "kremasto",
       "cedar",
       "orasasti",
-      "med",
-      "trava-slatka"
+      "zemljano",
+      "zacini",
+      "med"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -36358,8 +36539,9 @@
       "kakao",
       "kava",
       "zemljano",
-      "koza",
-      "papar"
+      "cedar",
+      "orasasti",
+      "zacini"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -36784,8 +36966,9 @@
     "strength": 2,
     "body": 2,
     "flavorTags": [
-      "zemljano",
+      "kremasto",
       "cedar",
+      "zemljano",
       "orasasti",
       "zacini"
     ],
@@ -37099,9 +37282,10 @@
     "strength": 4,
     "body": 4,
     "flavorTags": [
+      "papar",
       "cedar",
-      "zacini",
       "koza",
+      "zacini",
       "kava"
     ],
     "profileEstimated": true,
@@ -37886,10 +38070,12 @@
     "strength": 3,
     "body": 4,
     "flavorTags": [
+      "kakao",
+      "kava",
       "cedar",
-      "zacini",
       "koza",
-      "kava"
+      "zacini",
+      "karamela"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -39192,9 +39378,11 @@
     "body": 3,
     "flavorTags": [
       "cedar",
-      "zacini",
       "koza",
-      "kava"
+      "zacini",
+      "kremasto",
+      "orasasti",
+      "med"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -42046,9 +42234,11 @@
     "strength": 2,
     "body": 3,
     "flavorTags": [
-      "zacini-slatki",
       "cedar",
       "orasasti",
+      "zacini",
+      "zacini-slatki",
+      "slatko",
       "koza"
     ],
     "profileEstimated": true,
@@ -42371,9 +42561,11 @@
     "strength": 2,
     "body": 3,
     "flavorTags": [
-      "zacini-slatki",
       "cedar",
       "orasasti",
+      "zacini",
+      "zacini-slatki",
+      "slatko",
       "koza"
     ],
     "profileEstimated": true,
@@ -42490,7 +42682,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Medio tiempo wrapper wrapper (Kuba); punija i izražajna. Note: kremasto, med, cedar.",
+      "hr": "Kuba, Medio tiempo pokrov — jače snage, punijeg tijela. Okusi: kremasto, med, cedrovina.",
       "en": "Medio tiempo wrapper wrapper (Cuba); fuller and expressive. Notes of cream, honey, cedar. Flagship Behike with medio tiempo; rich, complex, full-bodied."
     },
     "markets": [
@@ -42740,7 +42932,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Maduro wrapper (Kuba); uravnotežena, srednje snage. Note: kakao, kava, cedar.",
+      "hr": "Kuba, Maduro pokrov — srednje snage, punijeg tijela. Okusi: kakao, kava, cedrovina.",
       "en": "Maduro wrapper (Cuba); balanced, medium in strength. Notes of cocoa, coffee, cedar. Dark maduro; chocolate, coffee, sweet spice."
     },
     "markets": [
@@ -42837,7 +43029,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "— wrapper (Kuba); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
+      "hr": "Kuba, Habano pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "— wrapper (Cuba); balanced, medium in strength. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -42904,7 +43096,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Kuba); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
+      "hr": "Kuba, Habano pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Cuba); balanced, medium in strength. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -42971,7 +43163,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Habano wrapper (Kuba); blaga prema srednjoj. Note: cedar, zacini, koza.",
+      "hr": "Kuba, Habano pokrov — lagane snage, laganog tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Cuba); mild-to-medium. Notes of cedar, spice, leather. Petite corona Siglo; mild-medium coffee and cedar."
     },
     "markets": [
@@ -45303,7 +45495,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Kuba); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
+      "hr": "Kuba, Habano pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Cuba); balanced, medium in strength. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -45418,7 +45610,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Kuba); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
+      "hr": "Kuba, Habano pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Cuba); balanced, medium in strength. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -45476,7 +45668,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Kuba); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
+      "hr": "Kuba, Habano pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Cuba); balanced, medium in strength. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -46565,7 +46757,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Honduras); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
+      "hr": "Honduras, Habano pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Honduras); balanced, medium in strength. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -46617,7 +46809,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Honduras); punija i izražajna. Note: cedar, zacini, koza.",
+      "hr": "Honduras, Habano pokrov — jače snage, punijeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Honduras); fuller and expressive. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -46675,7 +46867,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Honduras); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
+      "hr": "Honduras, Habano pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Honduras); balanced, medium in strength. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -46743,7 +46935,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Maduro wrapper (Honduras); uravnotežena, srednje snage. Note: kakao, kava, karamela.",
+      "hr": "Honduras, Maduro pokrov — srednje snage, punijeg tijela. Okusi: kakao, kava, karamela.",
       "en": "Maduro wrapper (Honduras); balanced, medium in strength. Notes of cocoa, coffee, caramel."
     },
     "markets": [
@@ -48688,7 +48880,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Habano wrapper (Dominikanska Republika); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
+      "hr": "Dominikanska Republika, Habano pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Dominican Republic); balanced, medium in strength. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -48740,7 +48932,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Dominikanska Republika); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
+      "hr": "Dominikanska Republika, Habano pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Dominican Republic); balanced, medium in strength. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -48861,7 +49053,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Natural wrapper (Dominikanska Republika); uravnotežena, srednje snage. Note: kakao, karamela, zacini.",
+      "hr": "Dominikanska Republika, Natural pokrov — srednje snage, punijeg tijela. Okusi: kakao, karamela, začini.",
       "en": "Natural wrapper (Dominican Republic); balanced, medium in strength. Notes of cocoa, caramel, spice."
     },
     "markets": [
@@ -48961,7 +49153,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Dominikanska Republika); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
+      "hr": "Dominikanska Republika, Habano pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Dominican Republic); balanced, medium in strength. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -49008,8 +49200,8 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Sinkronizirano iz HR trgovina — Figurado Selection.",
-      "en": ""
+      "hr": "Nikaragva — srednje snage, srednjeg tijela.",
+      "en": "(Nicaragua); balanced, medium in strength."
     },
     "markets": [
       "HR",
@@ -49733,7 +49925,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Dominikanska Republika); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
+      "hr": "Dominikanska Republika, Habano pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Dominican Republic); balanced, medium in strength. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -50038,7 +50230,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Dominikanska Republika); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
+      "hr": "Dominikanska Republika, Habano pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Dominican Republic); balanced, medium in strength. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -50226,7 +50418,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Dominikanska Republika); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
+      "hr": "Dominikanska Republika, Habano pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Dominican Republic); balanced, medium in strength. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -50287,7 +50479,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Ecuadorian habano wrapper (Dominikanska Republika); uravnotežena, srednje snage. Note: kava, tamno-voce, zacini.",
+      "hr": "Dominikanska Republika, Ecuadorian habano pokrov — srednje snage, punijeg tijela. Okusi: kava, tamno voće, začini.",
       "en": "Ecuadorian habano wrapper (Dominican Republic); balanced, medium in strength. Notes of coffee, dark fruit, spice. Churchill tribute toro; refined complexity."
     },
     "markets": [
@@ -50480,7 +50672,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Natural wrapper (Dominikanska Republika); uravnotežena, srednje snage. Note: zemljano, kakao, koza.",
+      "hr": "Dominikanska Republika, Natural pokrov — srednje snage, punijeg tijela. Okusi: zemljani tonovi, kakao, koža.",
       "en": "Natural wrapper (Dominican Republic); balanced, medium in strength. Notes of earth, cocoa, leather."
     },
     "markets": [
@@ -50985,7 +51177,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Dominikanska Republika); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
+      "hr": "Dominikanska Republika, Habano pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Dominican Republic); balanced, medium in strength. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -51043,7 +51235,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Dominikanska Republika); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
+      "hr": "Dominikanska Republika, Habano pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Dominican Republic); balanced, medium in strength. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -51095,7 +51287,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Dominikanska Republika); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
+      "hr": "Dominikanska Republika, Habano pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Dominican Republic); balanced, medium in strength. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -51246,9 +51438,11 @@
     "strength": 2,
     "body": 3,
     "flavorTags": [
-      "zacini-slatki",
       "cedar",
       "orasasti",
+      "zacini",
+      "zacini-slatki",
+      "slatko",
       "koza"
     ],
     "profileEstimated": true,
@@ -51733,9 +51927,11 @@
     "strength": 2,
     "body": 3,
     "flavorTags": [
-      "zacini-slatki",
       "cedar",
       "orasasti",
+      "zacini",
+      "zacini-slatki",
+      "slatko",
       "koza"
     ],
     "profileEstimated": true,
@@ -52657,8 +52853,9 @@
       "kakao",
       "kava",
       "karamela",
-      "slatko",
-      "zemljano"
+      "kremasto",
+      "cedar",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -56015,7 +56212,7 @@
     "vitola": "Robusto",
     "format": "6 x 127mm",
     "country": "Nikaragva",
-    "wrapper": "—",
+    "wrapper": "Maduro",
     "strength": 3,
     "body": 4,
     "flavorTags": [
@@ -60678,7 +60875,7 @@
     "vitola": "Piramide",
     "format": "50 x 158mm",
     "country": "Španjolska",
-    "wrapper": "—",
+    "wrapper": "Maduro",
     "strength": 3,
     "body": 4,
     "flavorTags": [
@@ -60736,7 +60933,7 @@
     "vitola": "Corona",
     "format": "42 x 142mm",
     "country": "Španjolska",
-    "wrapper": "—",
+    "wrapper": "Maduro",
     "strength": 3,
     "body": 4,
     "flavorTags": [
@@ -60794,7 +60991,7 @@
     "vitola": "Robusto",
     "format": "50 x 127mm",
     "country": "Španjolska",
-    "wrapper": "—",
+    "wrapper": "Maduro",
     "strength": 3,
     "body": 4,
     "flavorTags": [
@@ -60852,7 +61049,7 @@
     "vitola": "Short Robusto",
     "format": "48 x 106mm",
     "country": "Španjolska",
-    "wrapper": "—",
+    "wrapper": "Maduro",
     "strength": 3,
     "body": 4,
     "flavorTags": [
@@ -60929,7 +61126,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Infused Connecticut wrapper (Nikaragva); uravnotežena, srednje snage. Note: kremasto, cedar, orasasti.",
+      "hr": "Nikaragva, Infused Connecticut pokrov — srednje snage, srednjeg tijela. Okusi: kremasto, cedrovina, orašasti tonovi.",
       "en": "Infused Connecticut wrapper (Nicaragua); balanced, medium in strength. Notes of cream, cedar, nuts. Infused aromatic robusto; sweet and unique."
     },
     "markets": [
@@ -61620,8 +61817,9 @@
       "kakao",
       "kava",
       "karamela",
-      "slatko",
-      "zemljano"
+      "dim",
+      "zemljano",
+      "slatko"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -61729,6 +61927,7 @@
       "kremasto",
       "cedar",
       "orasasti",
+      "dim",
       "med",
       "trava-slatka"
     ],
@@ -61836,8 +62035,9 @@
     "body": 3,
     "flavorTags": [
       "cedar",
-      "zacini",
       "koza",
+      "zacini",
+      "dim",
       "kava"
     ],
     "profileEstimated": true,
@@ -62601,9 +62801,9 @@
       "kakao",
       "kava",
       "karamela",
-      "slatko",
-      "zemljano",
-      "suho-voce"
+      "tamno-voce",
+      "suho-voce",
+      "zemljano"
     ],
     "smokeTimeMin": 70,
     "priceEUR": 22.2,
@@ -62613,7 +62813,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Connecticut broadleaf maduro wrapper (Nikaragva); uravnotežena, srednje snage. Note: kakao, kava, karamela.",
+      "hr": "Nikaragva, Connecticut broadleaf pokrov — srednje snage, punijeg tijela. Okusi: kakao, kava, karamela.",
       "en": "Connecticut broadleaf maduro wrapper (Nicaragua); balanced, medium in strength. Notes of cocoa, coffee, caramel. Iconic broadleaf maduro; dark fruit and espresso."
     },
     "markets": [
@@ -62777,8 +62977,9 @@
       "kakao",
       "kava",
       "karamela",
-      "slatko",
-      "zemljano"
+      "kremasto",
+      "cedar",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -64166,8 +64367,10 @@
     "strength": 3,
     "body": 4,
     "flavorTags": [
-      "cedar",
+      "kakao",
       "zacini",
+      "drvo",
+      "cedar",
       "koza",
       "kava"
     ],
@@ -64532,11 +64735,11 @@
     "body": 4,
     "flavorTags": [
       "kakao",
-      "zemljano",
       "kava",
-      "koza",
+      "zemljano",
+      "zacini",
       "slatko",
-      "zacini"
+      "cedar"
     ],
     "smokeTimeMin": 50,
     "priceEUR": 19.35,
@@ -64743,9 +64946,11 @@
     "strength": 2,
     "body": 3,
     "flavorTags": [
-      "zacini-slatki",
       "cedar",
       "orasasti",
+      "zacini",
+      "zacini-slatki",
+      "slatko",
       "koza"
     ],
     "profileEstimated": true,
@@ -65234,6 +65439,8 @@
     "strength": 3,
     "body": 4,
     "flavorTags": [
+      "dim",
+      "slatko",
       "cedar",
       "zacini",
       "koza",
@@ -65359,6 +65566,8 @@
     "strength": 3,
     "body": 3,
     "flavorTags": [
+      "dim",
+      "slatko",
       "cedar",
       "zacini",
       "koza",
@@ -65371,8 +65580,8 @@
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Nicaragua pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Nicaragua, Nicaragua wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
+      "hr": "INCH slavi velike prstenove (58–70): puno dima, mekana tekstura; Natural je uglađen, Maduro tamniji i slađi.",
+      "en": "INCH celebrates big ring gauges (58–70): huge smoke output, soft texture; Natural is polished, Maduro darker and sweeter."
     },
     "markets": [
       "EU",
@@ -65418,10 +65627,10 @@
     "flavorTags": [
       "kakao",
       "kava",
+      "zacini",
       "karamela",
-      "slatko",
-      "zemljano",
-      "zacini"
+      "tamno-voce",
+      "suho-voce"
     ],
     "smokeTimeMin": 50,
     "priceEUR": 18.7,
@@ -65431,7 +65640,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Mexican maduro wrapper (Dominikanska Republika); uravnotežena, srednje snage. Note: kakao, kava, karamela.",
+      "hr": "Dominikanska Republika, Mexican maduro pokrov — srednje snage, punijeg tijela. Okusi: kakao, kava, karamela.",
       "en": "Mexican maduro wrapper (Dominican Republic); balanced, medium in strength. Notes of cocoa, coffee, caramel. Maduro figurado; dark fruit and spice."
     },
     "markets": [
@@ -65582,9 +65791,10 @@
     "body": 2,
     "flavorTags": [
       "kremasto",
+      "cedar",
       "orasasti",
-      "trava-slatka",
-      "med"
+      "med",
+      "trava-slatka"
     ],
     "smokeTimeMin": 45,
     "priceEUR": 9.9,
@@ -65714,8 +65924,8 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Sinkronizirano iz HR trgovina — New Wave Reserva.",
-      "en": ""
+      "hr": "Nikaragva — srednje snage, srednjeg tijela.",
+      "en": "(Nicaragua); balanced, medium in strength."
     },
     "markets": [
       "HR",
@@ -65761,10 +65971,11 @@
     "body": 4,
     "flavorTags": [
       "kakao",
-      "zacini-slatki",
+      "papar",
       "zemljano",
-      "kava",
-      "papar"
+      "zacini",
+      "zacini-slatki",
+      "slatko"
     ],
     "smokeTimeMin": 50,
     "priceEUR": null,
@@ -65774,7 +65985,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Connecticut habano wrapper (Dominikanska Republika); punija i izražajna. Note: kakao, zacini-slatki, zemljano.",
+      "hr": "Dominikanska Republika, Connecticut habano pokrov — jače snage, punijeg tijela. Okusi: kakao, slatki začini, zemljani tonovi.",
       "en": "Connecticut habano wrapper (Dominican Republic); fuller and expressive. Notes of cocoa, sweet spice, earth. Pledge prequel; rich and peppery."
     },
     "markets": [
@@ -66105,7 +66316,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "20 Years Colorado obilježava dva desetljeća Christiana Eiroe — colorado wrapper daje karamelu i cedar uz honduraški temperament.",
+      "hr": "20 Years Colorado obilježava dva desetljeća Christiana Eiroe — colorado pokrov daje karamelu i cedar uz honduraški temperament.",
       "en": "20 Years Colorado marks Christian Eiroa's two decades — the colorado wrapper adds caramel and cedar to Honduran temperament."
     },
     "markets": [
@@ -66171,7 +66382,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Maduro wrapper (Honduras); uravnotežena, srednje snage. Note: kakao, kava, karamela.",
+      "hr": "Honduras, Maduro pokrov — jače snage, punijeg tijela. Okusi: kakao, kava, karamela.",
       "en": "Maduro wrapper (Honduras); balanced, medium in strength. Notes of cocoa, coffee, caramel."
     },
     "markets": [
@@ -66235,7 +66446,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Habano wrapper (Honduras); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
+      "hr": "Honduras, Habano pokrov — jače snage, punijeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Honduras); balanced, medium in strength. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -66283,8 +66494,9 @@
     "flavorTags": [
       "kakao",
       "kava",
-      "slatko",
+      "karamela",
       "zemljano",
+      "slatko",
       "tamno-voce"
     ],
     "smokeTimeMin": 50,
@@ -66729,11 +66941,12 @@
     "strength": 3,
     "body": 4,
     "flavorTags": [
+      "duhan",
       "kakao",
       "kava",
       "karamela",
-      "slatko",
-      "zemljano"
+      "zemljano",
+      "slatko"
     ],
     "smokeTimeMin": 45,
     "priceEUR": 26.5,
@@ -66877,7 +67090,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Habano wrapper (Honduras); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
+      "hr": "Honduras, Habano pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Honduras); balanced, medium in strength. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -67817,8 +68030,8 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Sinkronizirano iz HR trgovina — Belicoso Grande 5 3⁄4 X 58.",
-      "en": ""
+      "hr": "Nikaragva — srednje snage, srednjeg tijela.",
+      "en": "(Nicaragua); balanced, medium in strength."
     },
     "markets": [
       "HR",
@@ -67858,8 +68071,8 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Sinkronizirano iz HR trgovina — Culebra 7 X 38 X 3.",
-      "en": ""
+      "hr": "Nikaragva — srednje snage, srednjeg tijela.",
+      "en": "(Nicaragua); balanced, medium in strength."
     },
     "markets": [
       "HR",
@@ -67996,8 +68209,8 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Sinkronizirano iz HR trgovina — Gordita 4 X 48.",
-      "en": ""
+      "hr": "Nikaragva — srednje snage, srednjeg tijela.",
+      "en": "(Nicaragua); balanced, medium in strength."
     },
     "markets": [
       "HR",
@@ -68037,8 +68250,8 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Sinkronizirano iz HR trgovina — Lancero 7 X 38.",
-      "en": ""
+      "hr": "Nikaragva — srednje snage, srednjeg tijela.",
+      "en": "(Nicaragua); balanced, medium in strength."
     },
     "markets": [
       "HR",
@@ -68078,8 +68291,8 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Sinkronizirano iz HR trgovina — Robusto Grande 5 X 56.",
-      "en": ""
+      "hr": "Nikaragva — srednje snage, srednjeg tijela.",
+      "en": "(Nicaragua); balanced, medium in strength."
     },
     "markets": [
       "HR",
@@ -68127,8 +68340,8 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Sinkronizirano iz HR trgovina — Toro Grande 6 X 56.",
-      "en": ""
+      "hr": "Nikaragva — srednje snage, srednjeg tijela.",
+      "en": "(Nicaragua); balanced, medium in strength."
     },
     "markets": [
       "HR",
@@ -68889,7 +69102,7 @@
     "vitola": "Gordo",
     "format": "60 x 159mm",
     "country": "Kostarika",
-    "wrapper": "—",
+    "wrapper": "Maduro",
     "strength": 3,
     "body": 4,
     "flavorTags": [
@@ -69005,7 +69218,7 @@
     "vitola": "Torpedo",
     "format": "60 x 154mm",
     "country": "Kostarika",
-    "wrapper": "—",
+    "wrapper": "Maduro",
     "strength": 3,
     "body": 4,
     "flavorTags": [
@@ -70026,8 +70239,8 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Sinkronizirano iz HR trgovina — 71St Aniversario Toro 6 X 54.",
-      "en": ""
+      "hr": "Nikaragva — srednje snage, srednjeg tijela.",
+      "en": "(Nicaragua); balanced, medium in strength."
     },
     "markets": [
       "HR",
@@ -70068,8 +70281,8 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Sinkronizirano iz HR trgovina — 72Nd Aniversario Churchill 6 1⁄2 X 52.",
-      "en": ""
+      "hr": "Nikaragva — srednje snage, srednjeg tijela.",
+      "en": "(Nicaragua); balanced, medium in strength."
     },
     "markets": [
       "HR",
@@ -70110,8 +70323,8 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Sinkronizirano iz HR trgovina — Before And After Legado 5 3⁄4 X 54.",
-      "en": ""
+      "hr": "Nikaragva — srednje snage, srednjeg tijela.",
+      "en": "(Nicaragua); balanced, medium in strength."
     },
     "markets": [
       "HR",
@@ -70158,8 +70371,8 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Sinkronizirano iz HR trgovina — Before And After Mi Familia Robusto 5 X 50.",
-      "en": ""
+      "hr": "Nikaragva — srednje snage, srednjeg tijela.",
+      "en": "(Nicaragua); balanced, medium in strength."
     },
     "markets": [
       "HR",
@@ -70200,8 +70413,8 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Sinkronizirano iz HR trgovina — Before And After Pasion Toro 6 X 52.",
-      "en": ""
+      "hr": "Nikaragva — srednje snage, srednjeg tijela.",
+      "en": "(Nicaragua); balanced, medium in strength."
     },
     "markets": [
       "HR",
@@ -71472,7 +71685,7 @@
     "vitola": "Corona",
     "format": "44 x 142mm",
     "country": "Dominikanska Republika",
-    "wrapper": "—",
+    "wrapper": "Maduro",
     "strength": 3,
     "body": 4,
     "flavorTags": [
@@ -71530,7 +71743,7 @@
     "vitola": "Toro",
     "format": "52 x 152mm",
     "country": "Honduras",
-    "wrapper": "—",
+    "wrapper": "Maduro",
     "strength": 3,
     "body": 4,
     "flavorTags": [
@@ -71588,7 +71801,7 @@
     "vitola": "Gordo",
     "format": "60 x 159mm",
     "country": "Honduras",
-    "wrapper": "—",
+    "wrapper": "Habano",
     "strength": 3,
     "body": 3,
     "flavorTags": [
@@ -73185,7 +73398,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Maduro wrapper (Honduras); blaga prema srednjoj. Note: kakao, kava, karamela.",
+      "hr": "Honduras, Maduro pokrov — lagane snage, laganog tijela. Okusi: kakao, kava, karamela.",
       "en": "Maduro wrapper (Honduras); mild-to-medium. Notes of cocoa, coffee, caramel."
     },
     "markets": [
@@ -73251,7 +73464,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Honduras); blaga prema srednjoj. Note: cedar, zacini, koza.",
+      "hr": "Honduras, Habano pokrov — lagane snage, laganog tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Honduras); mild-to-medium. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -73302,7 +73515,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Honduras); blaga prema srednjoj. Note: cedar, zacini, koza.",
+      "hr": "Honduras, Habano pokrov — lagane snage, laganog tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Honduras); mild-to-medium. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -73447,7 +73660,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Maduro wrapper (Honduras); uravnotežena, srednje snage. Note: kakao, kava, karamela.",
+      "hr": "Honduras, Maduro pokrov — srednje snage, punijeg tijela. Okusi: kakao, kava, karamela.",
       "en": "Maduro wrapper (Honduras); balanced, medium in strength. Notes of cocoa, coffee, caramel."
     },
     "markets": [
@@ -73558,7 +73771,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Honduras); blaga prema srednjoj. Note: cedar, zacini, koza.",
+      "hr": "Honduras, Habano pokrov — lagane snage, laganog tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Honduras); mild-to-medium. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -73609,7 +73822,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Honduras); blaga prema srednjoj. Note: cedar, zacini, koza.",
+      "hr": "Honduras, Habano pokrov — lagane snage, laganog tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Honduras); mild-to-medium. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -73660,7 +73873,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Honduras); blaga prema srednjoj. Note: cedar, zacini, koza.",
+      "hr": "Honduras, Habano pokrov — lagane snage, laganog tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Honduras); mild-to-medium. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -74149,8 +74362,9 @@
       "kakao",
       "kava",
       "karamela",
-      "slatko",
-      "zemljano"
+      "kremasto",
+      "cedar",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -74217,7 +74431,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Kuba); blaga prema srednjoj. Note: cedar, zacini, koza.",
+      "hr": "Kuba, Habano pokrov — lagane snage, laganog tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Cuba); mild-to-medium. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -74384,7 +74598,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Connecticut shade wrapper (Nikaragva); blaga prema srednjoj. Note: kremasto, trava-slatka, med.",
+      "hr": "Nikaragva, Connecticut shade pokrov — lagane snage, laganog tijela. Okusi: kremasto, slatka trava, med.",
       "en": "Connecticut shade wrapper (Nicaragua); mild-to-medium. Notes of cream, sweet grass, honey. Shade Charter Oak; approachable medium."
     },
     "markets": [
@@ -74542,7 +74756,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Habano wrapper (Nikaragva); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
+      "hr": "Nikaragva, Habano pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Nicaragua); balanced, medium in strength. Notes of cedar, spice, leather. Edwardian-inspired corona; elegant medium."
     },
     "markets": [
@@ -74616,7 +74830,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Habano wrapper (Nikaragva); snažna, za iskusne pušače. Note: cedar, zacini, koza.",
+      "hr": "Nikaragva, Habano pokrov — pune snage, punog tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Nicaragua); powerful, for seasoned smokers. Notes of cedar, spice, leather. Box-pressed robusto; spice and dark fruit."
     },
     "markets": [
@@ -75680,8 +75894,9 @@
     "body": 3,
     "flavorTags": [
       "cedar",
-      "zacini",
       "koza",
+      "zacini",
+      "dim",
       "kava"
     ],
     "profileEstimated": true,
@@ -75737,8 +75952,9 @@
     "body": 3,
     "flavorTags": [
       "cedar",
-      "zacini",
       "koza",
+      "zacini",
+      "dim",
       "kava"
     ],
     "profileEstimated": true,
@@ -75794,8 +76010,9 @@
     "body": 3,
     "flavorTags": [
       "cedar",
-      "zacini",
       "koza",
+      "zacini",
+      "dim",
       "kava"
     ],
     "profileEstimated": true,
@@ -76503,9 +76720,11 @@
     "strength": 2,
     "body": 3,
     "flavorTags": [
-      "zacini-slatki",
       "cedar",
       "orasasti",
+      "zacini",
+      "zacini-slatki",
+      "slatko",
       "koza"
     ],
     "profileEstimated": true,
@@ -79619,7 +79838,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Brazilian Arapiraca wrapper (Nikaragva); uravnotežena, srednje snage. Note: kakao, kava, karamela.",
+      "hr": "Nikaragva, Brazilian Arapiraca pokrov — srednje snage, punijeg tijela. Okusi: kakao, kava, karamela.",
       "en": "Brazilian Arapiraca wrapper (Nicaragua); balanced, medium in strength. Notes of cocoa, coffee, caramel. Dark maduro; sweet cocoa and espresso."
     },
     "markets": [
@@ -80793,7 +81012,7 @@
     "vitola": "Toro",
     "format": "50 x 152mm",
     "country": "Nikaragva",
-    "wrapper": "—",
+    "wrapper": "Maduro",
     "strength": 3,
     "body": 4,
     "flavorTags": [
@@ -81953,7 +82172,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Habano wrapper (Kuba); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
+      "hr": "Kuba, Habano pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Cuba); balanced, medium in strength. Notes of cedar, spice, leather. Beloved corona gorda; medium with nuts and cedar."
     },
     "markets": [
@@ -82096,7 +82315,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Habano wrapper (Kuba); blaga prema srednjoj. Note: cedar, zacini, koza.",
+      "hr": "Kuba, Habano pokrov — lagane snage, laganog tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Cuba); mild-to-medium. Notes of cedar, spice, leather. Connossieur corona; smooth and balanced."
     },
     "markets": [
@@ -82289,7 +82508,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Habano wrapper (Kuba); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
+      "hr": "Kuba, Habano pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Cuba); balanced, medium in strength. Notes of cedar, spice, leather. Churchill format; classic Upmann refinement."
     },
     "markets": [
@@ -82457,8 +82676,9 @@
       "kakao",
       "kava",
       "zemljano",
-      "koza",
-      "papar"
+      "kremasto",
+      "cedar",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -82619,9 +82839,11 @@
     "strength": 2,
     "body": 3,
     "flavorTags": [
-      "zacini-slatki",
       "cedar",
       "orasasti",
+      "zacini",
+      "zacini-slatki",
+      "slatko",
       "koza"
     ],
     "profileEstimated": true,
@@ -82944,7 +83166,7 @@
     "vitola": "Robusto",
     "format": "52 x 127mm",
     "country": "Nikaragva",
-    "wrapper": "—",
+    "wrapper": "Maduro",
     "strength": 3,
     "body": 4,
     "flavorTags": [
@@ -84367,6 +84589,7 @@
       "kakao",
       "kava",
       "zemljano",
+      "karamela",
       "koza",
       "papar"
     ],
@@ -85539,7 +85762,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Habano wrapper (Kuba); blaga prema srednjoj. Note: cedar, zacini, koza.",
+      "hr": "Kuba, Habano pokrov — lagane snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Cuba); mild-to-medium. Notes of cedar, spice, leather. Long double corona; classic Hoyo elegance."
     },
     "markets": [
@@ -85656,7 +85879,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Kuba); blaga prema srednjoj. Note: cedar, zacini, koza.",
+      "hr": "Kuba, Habano pokrov — lagane snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Cuba); mild-to-medium. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -85707,7 +85930,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Kuba); blaga i glatka. Note: cedar, zacini, koza.",
+      "hr": "Kuba, Habano pokrov — vrlo lagane snage, laganog tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Cuba); mild and smooth. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -85858,7 +86081,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Habano wrapper (Kuba); blaga i glatka. Note: cedar, zacini, koza.",
+      "hr": "Kuba, Habano pokrov — vrlo lagane snage, laganog tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Cuba); mild and smooth. Notes of cedar, spice, leather. Petite Le Hoyo; delicate and mild."
     },
     "markets": [
@@ -85956,7 +86179,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Kuba); blaga prema srednjoj. Note: cedar, zacini, koza.",
+      "hr": "Kuba, Habano pokrov — lagane snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Cuba); mild-to-medium. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -86022,7 +86245,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Kuba); blaga prema srednjoj. Note: cedar, zacini, koza.",
+      "hr": "Kuba, Habano pokrov — lagane snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Cuba); mild-to-medium. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -86130,7 +86353,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Kuba); blaga prema srednjoj. Note: cedar, zacini, koza.",
+      "hr": "Kuba, Habano pokrov — lagane snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Cuba); mild-to-medium. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -86519,14 +86742,16 @@
     "vitola": "Short Robusto",
     "format": "48 x 106mm",
     "country": "Nikaragva",
-    "wrapper": "—",
+    "wrapper": "Connecticut",
     "strength": 3,
     "body": 3,
     "flavorTags": [
       "cedar",
-      "zacini",
       "koza",
-      "kava"
+      "zacini",
+      "kremasto",
+      "orasasti",
+      "med"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -86592,14 +86817,16 @@
     "vitola": "Corona",
     "format": "50 x 142mm",
     "country": "Nikaragva",
-    "wrapper": "—",
+    "wrapper": "Connecticut",
     "strength": 3,
     "body": 3,
     "flavorTags": [
       "cedar",
-      "zacini",
       "koza",
-      "kava"
+      "zacini",
+      "kremasto",
+      "orasasti",
+      "med"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -87295,7 +87522,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Nicaraguan Habano wrapper (Nikaragva); punija i izražajna. Note: cedar, zacini, koza.",
+      "hr": "Nikaragva, Nicaraguan Habano pokrov — jače snage, punijeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Nicaraguan Habano wrapper (Nicaragua); fuller and expressive. Notes of cedar, spice, leather. Full-bodied habano; pepper, earth, and dark fruit."
     },
     "markets": [
@@ -87352,7 +87579,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "San Andrés Maduro wrapper (Nikaragva); uravnotežena, srednje snage. Note: kakao, kava, karamela.",
+      "hr": "Nikaragva, San Andrés Maduro pokrov — srednje snage, punijeg tijela. Okusi: kakao, kava, karamela.",
       "en": "San Andrés Maduro wrapper (Nicaragua); balanced, medium in strength. Notes of cocoa, coffee, caramel. Short maduro; chocolate and espresso notes."
     },
     "markets": [
@@ -87568,8 +87795,9 @@
       "kakao",
       "kava",
       "karamela",
-      "slatko",
-      "zemljano"
+      "kremasto",
+      "cedar",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -88929,7 +89157,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Nicaraguan Habano wrapper (Nikaragva); snažna, za iskusne pušače. Note: cedar, zacini, koza.",
+      "hr": "Nikaragva, Habano (criollo) pokrov — pune snage, punog tijela. Okusi: papar, zemljani tonovi, koža.",
       "en": "Nicaraguan Habano wrapper (Nicaragua); powerful, for seasoned smokers. Notes of cedar, spice, leather. Full-bodied classic; pepper, earth, and leather."
     },
     "markets": [
@@ -89037,8 +89265,9 @@
       "kakao",
       "kava",
       "zemljano",
-      "koza",
-      "papar"
+      "papar",
+      "zacini",
+      "koza"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -89384,7 +89613,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Nikaragva); punija i izražajna. Note: cedar, zacini, koza.",
+      "hr": "Nikaragva, Habano pokrov — jače snage, punijeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Nicaragua); fuller and expressive. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -89442,7 +89671,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Nikaragva); punija i izražajna. Note: cedar, zacini, koza.",
+      "hr": "Nikaragva, Habano pokrov — jače snage, punijeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Nicaragua); fuller and expressive. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -89665,7 +89894,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Nikaragva); punija i izražajna. Note: cedar, zacini, koza.",
+      "hr": "Nikaragva, Habano pokrov — jače snage, punijeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Nicaragua); fuller and expressive. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -89748,7 +89977,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Nikaragva); punija i izražajna. Note: cedar, zacini, koza.",
+      "hr": "Nikaragva, Habano pokrov — jače snage, punijeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Nicaragua); fuller and expressive. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -89931,7 +90160,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Nikaragva); punija i izražajna. Note: cedar, zacini, koza.",
+      "hr": "Nikaragva, Habano pokrov — jače snage, punijeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Nicaragua); fuller and expressive. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -89998,7 +90227,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Ecuador Connecticut wrapper (Nikaragva); uravnotežena, srednje snage. Note: kremasto, cedar, orasasti.",
+      "hr": "Nikaragva, Ecuador Connecticut pokrov — srednje snage, srednjeg tijela. Okusi: kremasto, cedrovina, orašasti tonovi.",
       "en": "Ecuador Connecticut wrapper (Nicaragua); balanced, medium in strength. Notes of cream, cedar, nuts. Refined Connecticut; cream and subtle spice."
     },
     "markets": [
@@ -90116,8 +90345,8 @@
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Nicaragua pokrov — jače snage, punijeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Nicaragua, Nicaragua wrapper — medium-full in strength, fuller-bodied. Notes: cedar, spices, leather."
+      "hr": "Rosalones je tradicionalna serija za europsko tržište — pošteni nikaragvanski profil izvrsnog omjera cijene i kvalitete.",
+      "en": "Rosalones is the traditional series for Europe — an honest Nicaraguan profile at excellent value."
     },
     "markets": [
       "EU",
@@ -90192,7 +90421,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Habano wrapper (Kuba); blaga prema srednjoj. Note: cedar, zacini, koza.",
+      "hr": "Kuba, Habano pokrov — lagane snage, laganog tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Cuba); mild-to-medium. Notes of cedar, spice, leather. Half corona size; mild-medium."
     },
     "markets": [
@@ -91161,9 +91390,11 @@
     "strength": 2,
     "body": 3,
     "flavorTags": [
-      "zacini-slatki",
       "cedar",
       "orasasti",
+      "zacini",
+      "zacini-slatki",
+      "slatko",
       "koza"
     ],
     "profileEstimated": true,
@@ -92298,9 +92529,11 @@
     "strength": 4,
     "body": 3,
     "flavorTags": [
-      "zacini-slatki",
       "cedar",
       "orasasti",
+      "zacini",
+      "zacini-slatki",
+      "slatko",
       "koza"
     ],
     "profileEstimated": true,
@@ -92902,9 +93135,11 @@
     "strength": 2,
     "body": 3,
     "flavorTags": [
-      "zacini-slatki",
       "cedar",
       "orasasti",
+      "zacini",
+      "zacini-slatki",
+      "slatko",
       "koza"
     ],
     "profileEstimated": true,
@@ -94578,11 +94813,12 @@
     "strength": 2,
     "body": 2,
     "flavorTags": [
+      "kakao",
+      "kava",
       "kremasto",
       "cedar",
       "orasasti",
-      "med",
-      "trava-slatka"
+      "karamela"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -95670,8 +95906,8 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Sinkronizirano iz HR trgovina — 107 Belicoso 6 1⁄4 X 52.",
-      "en": ""
+      "hr": "Nikaragva — srednje snage, srednjeg tijela.",
+      "en": "(Nicaragua); balanced, medium in strength."
     },
     "markets": [
       "EU",
@@ -95731,9 +95967,10 @@
     "strength": 3,
     "body": 3,
     "flavorTags": [
+      "kakao",
       "cedar",
       "zacini",
-      "kakao",
+      "drvo",
       "zemljano"
     ],
     "profileEstimated": true,
@@ -95800,13 +96037,15 @@
     "vitola": "Robusto",
     "format": "50 x 127mm",
     "country": "Dominikanska Republika",
-    "wrapper": "—",
+    "wrapper": "Maduro",
     "strength": 3,
     "body": 3,
     "flavorTags": [
+      "kakao",
       "cedar",
       "zacini",
-      "kakao",
+      "kava",
+      "karamela",
       "zemljano"
     ],
     "profileEstimated": true,
@@ -95959,8 +96198,10 @@
     "strength": 3,
     "body": 4,
     "flavorTags": [
-      "cedar",
+      "kakao",
       "zacini",
+      "drvo",
+      "cedar",
       "koza",
       "kava"
     ],
@@ -96261,7 +96502,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Cameroon wrapper (Dominikanska Republika); blaga prema srednjoj. Note: cedar, kremasto, orasasti.",
+      "hr": "Dominikanska Republika, Cameroon pokrov — lagane snage, srednjeg tijela. Okusi: cedrovina, kremasto, orašasti tonovi.",
       "en": "Cameroon wrapper (Dominican Republic); mild-to-medium. Notes of cedar, cream, nuts. 1903 Cameroon; classic Dominican spice."
     },
     "markets": [
@@ -96350,7 +96591,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Habano wrapper (Dominikanska Republika); punija i izražajna. Note: cedar, zacini, koza.",
+      "hr": "Dominikanska Republika, Habano pokrov — jače snage, punijeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Dominican Republic); fuller and expressive. Notes of cedar, spice, leather. ADN robusto; medium-full Dominican."
     },
     "markets": [
@@ -96623,9 +96864,10 @@
     "strength": 2,
     "body": 3,
     "flavorTags": [
-      "cedar",
       "kremasto",
+      "cedar",
       "orasasti",
+      "zacini-slatki",
       "zacini"
     ],
     "profileEstimated": true,
@@ -96712,9 +96954,10 @@
     "strength": 2,
     "body": 3,
     "flavorTags": [
-      "cedar",
       "kremasto",
+      "cedar",
       "orasasti",
+      "zacini-slatki",
       "zacini"
     ],
     "profileEstimated": true,
@@ -97245,7 +97488,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Habano wrapper (Dominikanska Republika); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
+      "hr": "Dominikanska Republika, Habano pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Dominican Republic); balanced, medium in strength. Notes of cedar, spice, leather. Family Reserve; refined spice."
     },
     "markets": [
@@ -97790,7 +98033,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Cameroon wrapper (Dominikanska Republika); uravnotežena, srednje snage. Note: kakao, cedar, zacini.",
+      "hr": "Dominikanska Republika, Cameroon pokrov — srednje snage, punijeg tijela. Okusi: kakao, cedrovina, začini.",
       "en": "Cameroon wrapper (Dominican Republic); balanced, medium in strength. Notes of cocoa, cedar, spice. Tubed perfecto; balanced medium."
     },
     "markets": [
@@ -98941,7 +99184,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Cameroon wrapper (Dominikanska Republika); uravnotežena, srednje snage. Note: zacini-slatki, cedar, orasasti.",
+      "hr": "Dominikanska Republika, Cameroon pokrov — srednje snage, punijeg tijela. Okusi: slatki začini, cedrovina, orašasti tonovi.",
       "en": "Cameroon wrapper (Dominican Republic); balanced, medium in strength. Notes of sweet spice, cedar, nuts. Cameroon-wrapped; medium with floral and spice."
     },
     "markets": [
@@ -99179,8 +99422,9 @@
     "body": 5,
     "flavorTags": [
       "cedar",
-      "zacini",
       "koza",
+      "zacini",
+      "dim",
       "kava"
     ],
     "smokeTimeMin": 60,
@@ -99191,7 +99435,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Nicaraguan wrapper (Dominikanska Republika); snažna, za iskusne pušače. Note: cedar, zacini, koza.",
+      "hr": "Dominikanska Republika, Nicaraguan pokrov — pune snage, punog tijela. Okusi: cedrovina, začini, koža.",
       "en": "Nicaraguan wrapper (Dominican Republic); powerful, for seasoned smokers. Notes of cedar, spice, leather. Signature chisel shape; full-bodied ligero power."
     },
     "markets": [
@@ -100043,7 +100287,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Habano wrapper (Dominikanska Republika); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
+      "hr": "Dominikanska Republika, Habano pokrov — jače snage, punijeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Dominican Republic); balanced, medium in strength. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -100202,7 +100446,9 @@
     "strength": 2,
     "body": 2,
     "flavorTags": [
+      "kremasto",
       "cedar",
+      "orasasti",
       "zacini",
       "koza",
       "kava"
@@ -100665,7 +100911,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Habano wrapper (Dominikanska Republika); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
+      "hr": "Dominikanska Republika, Habano pokrov — jače snage, punijeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Dominican Republic); balanced, medium in strength. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -100758,9 +101004,11 @@
     "body": 4,
     "flavorTags": [
       "cedar",
+      "orasasti",
       "zacini",
-      "koza",
-      "kava"
+      "zacini-slatki",
+      "slatko",
+      "koza"
     ],
     "smokeTimeMin": 40,
     "priceEUR": 9.9,
@@ -101215,7 +101463,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Habano wrapper (Dominikanska Republika); punija i izražajna. Note: cedar, zacini, koza.",
+      "hr": "Dominikanska Republika, Habano pokrov — jače snage, punijeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Dominican Republic); fuller and expressive. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -101273,7 +101521,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Habano wrapper (Dominikanska Republika); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
+      "hr": "Dominikanska Republika, Habano pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Dominican Republic); balanced, medium in strength. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -101330,7 +101578,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Habano wrapper (Dominikanska Republika); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
+      "hr": "Dominikanska Republika, Habano pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Dominican Republic); balanced, medium in strength. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -102517,9 +102765,11 @@
     "strength": 2,
     "body": 3,
     "flavorTags": [
-      "zacini-slatki",
       "cedar",
       "orasasti",
+      "zacini",
+      "zacini-slatki",
+      "slatko",
       "koza"
     ],
     "profileEstimated": true,
@@ -102996,7 +103246,7 @@
     "vitola": "Toro",
     "format": "50 x 152mm",
     "country": "Nikaragva",
-    "wrapper": "—",
+    "wrapper": "Sumatra",
     "strength": 3,
     "body": 4,
     "flavorTags": [
@@ -105937,9 +106187,11 @@
     "strength": 2,
     "body": 3,
     "flavorTags": [
-      "zacini-slatki",
       "cedar",
       "orasasti",
+      "zacini",
+      "zacini-slatki",
+      "slatko",
       "koza"
     ],
     "profileEstimated": true,
@@ -106252,8 +106504,9 @@
       "kakao",
       "kava",
       "karamela",
-      "slatko",
-      "zemljano"
+      "kremasto",
+      "cedar",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -107325,6 +107578,7 @@
       "kakao",
       "kava",
       "zemljano",
+      "karamela",
       "koza",
       "papar"
     ],
@@ -107570,9 +107824,11 @@
     "strength": 2,
     "body": 3,
     "flavorTags": [
-      "zacini-slatki",
       "cedar",
       "orasasti",
+      "zacini",
+      "zacini-slatki",
+      "slatko",
       "koza"
     ],
     "profileEstimated": true,
@@ -107659,9 +107915,11 @@
     "strength": 2,
     "body": 3,
     "flavorTags": [
-      "zacini-slatki",
       "cedar",
       "orasasti",
+      "zacini",
+      "zacini-slatki",
+      "slatko",
       "koza"
     ],
     "profileEstimated": true,
@@ -109360,7 +109618,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Connecticut shade wrapper (Dominikanska Republika); blaga i glatka. Note: kremasto, cedar, orasasti.",
+      "hr": "Dominikanska Republika, Connecticut shade pokrov — vrlo lagane snage, vrlo laganog tijela. Okusi: kremasto, cedrovina, orašasti tonovi.",
       "en": "Connecticut shade wrapper (Dominican Republic); mild and smooth. Notes of cream, cedar, nuts. Hyde Park toro; approachable mild."
     },
     "markets": [
@@ -109644,7 +109902,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Connecticut wrapper (Dominikanska Republika); blaga i glatka. Note: kremasto, cedar, orasasti.",
+      "hr": "Dominikanska Republika, Connecticut pokrov — vrlo lagane snage, vrlo laganog tijela. Okusi: kremasto, cedrovina, orašasti tonovi.",
       "en": "Connecticut wrapper (Dominican Republic); mild and smooth. Notes of cream, cedar, nuts. Gold Label; refined mild-medium."
     },
     "markets": [
@@ -109718,7 +109976,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Connecticut shade wrapper (Dominikanska Republika); blaga i glatka. Note: kremasto, cedar, orasasti.",
+      "hr": "Dominikanska Republika, Connecticut shade pokrov — vrlo lagane snage, vrlo laganog tijela. Okusi: kremasto, cedrovina, orašasti tonovi.",
       "en": "Connecticut shade wrapper (Dominican Republic); mild and smooth. Notes of cream, cedar, nuts. Hampton Court; mild Connecticut classic."
     },
     "markets": [
@@ -109862,7 +110120,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Habano wrapper (Dominikanska Republika); blaga prema srednjoj. Note: cedar, zacini, koza.",
+      "hr": "Dominikanska Republika, Habano pokrov — lagane snage, laganog tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Dominican Republic); mild-to-medium. Notes of cedar, spice, leather. Orange band Inspirado; medium spice."
     },
     "markets": [
@@ -110762,7 +111020,7 @@
     "vitola": "Robusto",
     "format": "52 x 127mm",
     "country": "Nikaragva",
-    "wrapper": "—",
+    "wrapper": "Maduro",
     "strength": 3,
     "body": 4,
     "flavorTags": [
@@ -111975,7 +112233,7 @@
     "vitola": "Toro",
     "format": "98 x 152mm",
     "country": "Panama",
-    "wrapper": "—",
+    "wrapper": "Maduro",
     "strength": 3,
     "body": 4,
     "flavorTags": [
@@ -113803,9 +114061,11 @@
     "strength": 2,
     "body": 3,
     "flavorTags": [
-      "zacini-slatki",
       "cedar",
       "orasasti",
+      "zacini",
+      "zacini-slatki",
+      "slatko",
       "koza"
     ],
     "profileEstimated": true,
@@ -114321,9 +114581,11 @@
     "strength": 2,
     "body": 3,
     "flavorTags": [
-      "zacini-slatki",
       "cedar",
       "orasasti",
+      "zacini",
+      "zacini-slatki",
+      "slatko",
       "koza"
     ],
     "profileEstimated": true,
@@ -114919,6 +115181,7 @@
       "kakao",
       "kava",
       "cedar",
+      "koza",
       "zacini"
     ],
     "smokeTimeMin": 55,
@@ -115158,7 +115421,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Cuban seed wrapper wrapper (Kuba); uravnotežena, srednje snage. Note: kakao, kremasto, cedar.",
+      "hr": "Kuba, Cuban seed pokrov — srednje snage, punijeg tijela. Okusi: kakao, kremasto, cedrovina.",
       "en": "Cuban seed wrapper wrapper (Cuba); balanced, medium in strength. Notes of cocoa, cream, cedar. Modern robusto; medium-full with chocolate and wood."
     },
     "markets": [
@@ -115301,7 +115564,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Kuba); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
+      "hr": "Kuba, Habano pokrov — jače snage, punijeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Cuba); fuller and expressive. Notes of cedar, spice, leather. 1935 series robusto; modern fuller Montecristo profile."
     },
     "markets": [
@@ -115377,8 +115640,9 @@
     "body": 4,
     "flavorTags": [
       "cedar",
-      "zacini",
       "koza",
+      "zacini",
+      "citrus",
       "kava"
     ],
     "smokeTimeMin": 45,
@@ -115389,7 +115653,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Kuba); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
+      "hr": "Kuba, Habano pokrov — jače snage, punijeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Cuba); fuller and expressive. Notes of cedar, spice, leather. Outdoor line robusto; lighter body with citrus and cedar."
     },
     "markets": [
@@ -116543,8 +116807,9 @@
       "kakao",
       "kava",
       "karamela",
-      "slatko",
-      "zemljano"
+      "zacini",
+      "drvo",
+      "slatko"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -117503,7 +117768,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Habano wrapper (Nikaragva); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
+      "hr": "Nikaragva, Habano pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Nicaragua); balanced, medium in strength. Notes of cedar, spice, leather. Collaboration lonsdale; refined complexity."
     },
     "markets": [
@@ -117610,9 +117875,11 @@
     "body": 4,
     "flavorTags": [
       "papar",
+      "koza",
       "kakao",
-      "cedar",
-      "koza"
+      "kava",
+      "karamela",
+      "zemljano"
     ],
     "smokeTimeMin": 50,
     "priceEUR": null,
@@ -117952,8 +118219,10 @@
     "body": 4,
     "flavorTags": [
       "kakao",
-      "slatko",
       "zacini",
+      "slatko",
+      "kava",
+      "karamela",
       "zemljano"
     ],
     "smokeTimeMin": 50,
@@ -118029,7 +118298,8 @@
       "kakao",
       "kava",
       "cedar",
-      "zacini"
+      "zacini",
+      "koza"
     ],
     "smokeTimeMin": 50,
     "priceEUR": null,
@@ -118209,6 +118479,7 @@
       "kakao",
       "papar",
       "zemljano",
+      "kava",
       "karamela"
     ],
     "smokeTimeMin": 50,
@@ -118654,11 +118925,12 @@
     "strength": 4,
     "body": 4,
     "flavorTags": [
+      "kava",
       "papar",
       "kakao",
-      "kava",
-      "koza",
-      "zemljano"
+      "karamela",
+      "zemljano",
+      "koza"
     ],
     "smokeTimeMin": 60,
     "priceEUR": null,
@@ -119876,7 +120148,7 @@
     "vitola": "Perfecto",
     "format": "52 x 144mm",
     "country": "Nikaragva",
-    "wrapper": "—",
+    "wrapper": "Maduro",
     "strength": 3,
     "body": 4,
     "flavorTags": [
@@ -120056,7 +120328,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Cameroon wrapper (Nikaragva); blaga prema srednjoj. Note: zacini-slatki, cedar, orasasti.",
+      "hr": "Nikaragva, Cameroon pokrov — lagane snage, srednjeg tijela. Okusi: slatki začini, cedrovina, orašasti tonovi.",
       "en": "Cameroon wrapper (Nicaragua); mild-to-medium. Notes of sweet spice, cedar, nuts."
     },
     "markets": [
@@ -120363,7 +120635,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Nikaragva); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
+      "hr": "Nikaragva, Habano pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Nicaragua); balanced, medium in strength. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -120419,7 +120691,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Habano wrapper (Nikaragva); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
+      "hr": "Nikaragva, Habano pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Nicaragua); balanced, medium in strength. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -121802,8 +122074,8 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Sinkronizirano iz HR trgovina — Mareva.",
-      "en": ""
+      "hr": "Nikaragva — srednje snage, srednjeg tijela.",
+      "en": "(Nicaragua); balanced, medium in strength."
     },
     "markets": [
       "HR",
@@ -122171,7 +122443,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Nikaragva); punija i izražajna. Note: cedar, zacini, koza.",
+      "hr": "Nikaragva, Habano pokrov — jače snage, punijeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Nicaragua); fuller and expressive. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -122401,7 +122673,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "San Andrés maduro wrapper (Nikaragva); punija i izražajna. Note: kakao, karamela, zacini.",
+      "hr": "Nikaragva, San Andrés maduro pokrov — jače snage, punijeg tijela. Okusi: kakao, karamela, začini.",
       "en": "San Andrés maduro wrapper (Nicaragua); fuller and expressive. Notes of cocoa, caramel, spice. Box-pressed figurado; dark chocolate and spice."
     },
     "markets": [
@@ -124116,6 +124388,7 @@
     "strength": 3,
     "body": 4,
     "flavorTags": [
+      "kremasto",
       "cedar",
       "zacini",
       "koza",
@@ -124190,6 +124463,7 @@
     "strength": 3,
     "body": 4,
     "flavorTags": [
+      "kremasto",
       "cedar",
       "zacini",
       "koza",
@@ -124315,6 +124589,7 @@
     "strength": 3,
     "body": 4,
     "flavorTags": [
+      "kremasto",
       "cedar",
       "zacini",
       "koza",
@@ -124383,6 +124658,7 @@
     "strength": 3,
     "body": 4,
     "flavorTags": [
+      "kremasto",
       "cedar",
       "zacini",
       "koza",
@@ -124508,6 +124784,7 @@
     "strength": 3,
     "body": 4,
     "flavorTags": [
+      "kremasto",
       "cedar",
       "zacini",
       "koza",
@@ -124897,6 +125174,7 @@
       "kakao",
       "kava",
       "zemljano",
+      "karamela",
       "koza",
       "papar"
     ],
@@ -125486,8 +125764,9 @@
       "kakao",
       "kava",
       "karamela",
-      "slatko",
-      "zemljano"
+      "kremasto",
+      "cedar",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -126387,7 +126666,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Honduras); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
+      "hr": "Honduras, Habano pokrov — srednje snage, punijeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Honduras); balanced, medium in strength. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -126765,6 +127044,7 @@
       "kakao",
       "kava",
       "zemljano",
+      "karamela",
       "koza",
       "papar"
     ],
@@ -127687,8 +127967,9 @@
       "kakao",
       "kava",
       "zemljano",
-      "koza",
-      "papar"
+      "kremasto",
+      "cedar",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -128902,8 +129183,9 @@
       "kakao",
       "kava",
       "karamela",
-      "slatko",
-      "zemljano"
+      "dim",
+      "zemljano",
+      "slatko"
     ],
     "smokeTimeMin": 40,
     "priceEUR": null,
@@ -128913,7 +129195,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Maduro wrapper (Nikaragva); snažna, za iskusne pušače. Note: kakao, kava, karamela.",
+      "hr": "Nikaragva, Maduro pokrov — pune snage, punog tijela. Okusi: kakao, kava, karamela.",
       "en": "Maduro wrapper (Nicaragua); powerful, for seasoned smokers. Notes of cocoa, coffee, caramel. Flagship box-pressed robusto; legendary full body."
     },
     "markets": [
@@ -129738,8 +130020,10 @@
     "flavorTags": [
       "kakao",
       "kava",
-      "zemljano",
-      "orasasti"
+      "cedar",
+      "koza",
+      "zacini",
+      "karamela"
     ],
     "smokeTimeMin": 50,
     "priceEUR": 9,
@@ -130036,7 +130320,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Habano wrapper (Nikaragva); punija i izražajna. Note: cedar, zacini, koza.",
+      "hr": "Nikaragva, Habano pokrov — jače snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Nicaragua); fuller and expressive. Notes of cedar, spice, leather. Limited Family Reserve; refined and complex."
     },
     "markets": [
@@ -130428,8 +130712,8 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Sinkronizirano iz HR trgovina — Maduro Petit Corona 4 X 44.",
-      "en": ""
+      "hr": "Nikaragva — srednje snage, srednjeg tijela.",
+      "en": "(Nicaragua); balanced, medium in strength."
     },
     "markets": [
       "HR",
@@ -131803,7 +132087,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Kuba); punija i izražajna. Note: cedar, zacini, koza.",
+      "hr": "Kuba, Habano pokrov — jače snage, punijeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Cuba); fuller and expressive. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -131894,10 +132178,12 @@
     "strength": 4,
     "body": 4,
     "flavorTags": [
+      "kava",
+      "papar",
+      "zemljano",
       "cedar",
       "zacini",
-      "koza",
-      "kava"
+      "koza"
     ],
     "smokeTimeMin": 40,
     "priceEUR": 15.2,
@@ -132085,7 +132371,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Kuba); punija i izražajna. Note: cedar, zacini, koza.",
+      "hr": "Kuba, Habano pokrov — jače snage, punijeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Cuba); fuller and expressive. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -132137,7 +132423,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Kuba); punija i izražajna. Note: zemljano, papar, koza.",
+      "hr": "Kuba, Habano pokrov — jače snage, punog tijela. Okusi: zemljani tonovi, papar, koža.",
       "en": "Habano wrapper (Cuba); fuller and expressive. Notes of earth, pepper, leather."
     },
     "markets": [
@@ -132182,10 +132468,11 @@
     "body": 4,
     "flavorTags": [
       "cedar",
-      "zacini",
       "koza",
-      "kava",
-      "suho-voce"
+      "zacini",
+      "tamno-voce",
+      "suho-voce",
+      "kava"
     ],
     "smokeTimeMin": 45,
     "priceEUR": 120.0,
@@ -132195,7 +132482,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Habano wrapper (Kuba); punija i izražajna. Note: cedar, zacini, koza.",
+      "hr": "Kuba, Habano pokrov — jače snage, punijeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Cuba); fuller and expressive. Notes of cedar, spice, leather. Maestra line; refined spice and dark fruit."
     },
     "markets": [
@@ -132310,7 +132597,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Kuba); punija i izražajna. Note: cedar, zacini, koza.",
+      "hr": "Kuba, Habano pokrov — jače snage, punijeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Cuba); fuller and expressive. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -132500,7 +132787,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Kuba); punija i izražajna. Note: cedar, zacini, koza.",
+      "hr": "Kuba, Habano pokrov — jače snage, punijeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Cuba); fuller and expressive. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -132540,10 +132827,11 @@
     "body": 5,
     "flavorTags": [
       "cedar",
-      "zacini",
       "koza",
-      "kava",
-      "drvo"
+      "zacini",
+      "drvo",
+      "dim",
+      "kava"
     ],
     "smokeTimeMin": 50,
     "priceEUR": 40.5,
@@ -132553,7 +132841,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Habano wrapper (Kuba); snažna, za iskusne pušače. Note: cedar, zacini, koza.",
+      "hr": "Kuba, Habano pokrov — pune snage, punog tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Cuba); powerful, for seasoned smokers. Notes of cedar, spice, leather. Serie P torpedo; full-bodied with charred wood."
     },
     "markets": [
@@ -132761,9 +133049,11 @@
     "strength": 2,
     "body": 3,
     "flavorTags": [
-      "zacini-slatki",
       "cedar",
       "orasasti",
+      "zacini",
+      "zacini-slatki",
+      "slatko",
       "koza"
     ],
     "profileEstimated": true,
@@ -132818,9 +133108,11 @@
     "strength": 2,
     "body": 3,
     "flavorTags": [
-      "zacini-slatki",
       "cedar",
       "orasasti",
+      "zacini",
+      "zacini-slatki",
+      "slatko",
       "koza"
     ],
     "profileEstimated": true,
@@ -132875,9 +133167,11 @@
     "strength": 2,
     "body": 3,
     "flavorTags": [
-      "zacini-slatki",
       "cedar",
       "orasasti",
+      "zacini",
+      "zacini-slatki",
+      "slatko",
       "koza"
     ],
     "profileEstimated": true,
@@ -132932,9 +133226,11 @@
     "strength": 2,
     "body": 3,
     "flavorTags": [
-      "zacini-slatki",
       "cedar",
       "orasasti",
+      "zacini",
+      "zacini-slatki",
+      "slatko",
       "koza"
     ],
     "profileEstimated": true,
@@ -134092,6 +134388,7 @@
       "kremasto",
       "cedar",
       "orasasti",
+      "drvo",
       "med",
       "trava-slatka"
     ],
@@ -134363,10 +134660,12 @@
     "strength": 3,
     "body": 3,
     "flavorTags": [
+      "kremasto",
+      "med",
+      "vanilija",
+      "slatko",
       "cedar",
-      "zacini",
-      "koza",
-      "kava"
+      "zacini"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -134375,8 +134674,8 @@
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Nicaragua pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Nicaragua, Nicaragua wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
+      "hr": "10th Anniversary Champagne — kremasti Connecticut odležan u bourbon bačvama: vanilija, med i lagana hrastova slatkoća.",
+      "en": "10th Anniversary Champagne — a creamy Connecticut aged in bourbon barrels: vanilla, honey and light oak sweetness."
     },
     "markets": [
       "EU",
@@ -134459,10 +134758,12 @@
     "strength": 3,
     "body": 3,
     "flavorTags": [
+      "kremasto",
+      "med",
+      "vanilija",
+      "slatko",
       "cedar",
-      "zacini",
-      "koza",
-      "kava"
+      "zacini"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -134471,8 +134772,8 @@
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Nicaragua pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Nicaragua, Nicaragua wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
+      "hr": "10th Anniversary Champagne — kremasti Connecticut odležan u bourbon bačvama: vanilija, med i lagana hrastova slatkoća.",
+      "en": "10th Anniversary Champagne — a creamy Connecticut aged in bourbon barrels: vanilla, honey and light oak sweetness."
     },
     "markets": [
       "EU",
@@ -134580,8 +134881,8 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "10th Anniversary Maduro: linija marke Perdomo.",
-      "en": "10th Anniversary Maduro: a Perdomo line."
+      "hr": "10th Anniversary Champagne — kremasti Connecticut odležan u bourbon bačvama: vanilija, med i lagana hrastova slatkoća.",
+      "en": "10th Anniversary Champagne — a creamy Connecticut aged in bourbon barrels: vanilla, honey and light oak sweetness."
     },
     "markets": [
       "HR",
@@ -134634,8 +134935,8 @@
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Nicaraguan pokrov — jače snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Nicaragua, Nicaraguan wrapper — medium-full in strength, medium-bodied. Notes: cedar, spices, leather."
+      "hr": "10th Anniversary Champagne — kremasti Connecticut odležan u bourbon bačvama: vanilija, med i lagana hrastova slatkoća.",
+      "en": "10th Anniversary Champagne — a creamy Connecticut aged in bourbon barrels: vanilla, honey and light oak sweetness."
     },
     "markets": [
       "USA",
@@ -134714,7 +135015,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Maduro wrapper (Nikaragva); uravnotežena, srednje snage. Note: kakao, kava, karamela.",
+      "hr": "Nikaragva, Maduro pokrov — srednje snage, punijeg tijela. Okusi: kakao, kava, karamela.",
       "en": "Maduro wrapper (Nicaragua); balanced, medium in strength. Notes of cocoa, coffee, caramel. 20th maduro; rich and sweet."
     },
     "markets": [
@@ -134928,11 +135229,12 @@
     "strength": 4,
     "body": 4,
     "flavorTags": [
+      "duhan",
       "kakao",
       "kava",
       "karamela",
-      "slatko",
-      "zemljano"
+      "zemljano",
+      "slatko"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -134941,8 +135243,8 @@
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Nicaraguan pokrov — jače snage, punijeg tijela. Okusi: kakao, kava, karamela.",
-      "en": "Nicaragua, Nicaraguan wrapper — medium-full in strength, fuller-bodied. Notes: cocoa, coffee, caramel."
+      "hr": "30th Anniversary donosi najstarije Perdomo duhane — svilenkast, zaobljen, s bourbon-bačva finišem.",
+      "en": "30th Anniversary features Perdomo's oldest tobaccos — silky, rounded, with the bourbon-barrel finish."
     },
     "markets": [
       "EU",
@@ -135053,6 +135355,7 @@
     "strength": 4,
     "body": 3,
     "flavorTags": [
+      "duhan",
       "cedar",
       "zacini",
       "koza",
@@ -135065,8 +135368,8 @@
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Nicaraguan pokrov — jače snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Nicaragua, Nicaraguan wrapper — medium-full in strength, medium-bodied. Notes: cedar, spices, leather."
+      "hr": "30th Anniversary donosi najstarije Perdomo duhane — svilenkast, zaobljen, s bourbon-bačva finišem.",
+      "en": "30th Anniversary features Perdomo's oldest tobaccos — silky, rounded, with the bourbon-barrel finish."
     },
     "markets": [
       "EU",
@@ -136745,7 +137048,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Habano wrapper (Nikaragva); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
+      "hr": "Nikaragva, Habano pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Nicaragua); balanced, medium in strength. Notes of cedar, spice, leather. Barrel-aged concept; spice and vanilla."
     },
     "markets": [
@@ -137555,7 +137858,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Habano wrapper (Nikaragva); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
+      "hr": "Nikaragva, Habano pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Nicaragua); balanced, medium in strength. Notes of cedar, spice, leather. Accessible Lot 23; balanced everyday."
     },
     "markets": [
@@ -137643,7 +137946,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Maduro wrapper (Nikaragva); uravnotežena, srednje snage. Note: kakao, kava, karamela.",
+      "hr": "Nikaragva, Maduro pokrov — srednje snage, punijeg tijela. Okusi: kakao, kava, karamela.",
       "en": "Maduro wrapper (Nicaragua); balanced, medium in strength. Notes of cocoa, coffee, caramel. Value maduro; chocolate notes."
     },
     "markets": [
@@ -138142,8 +138445,9 @@
       "kakao",
       "kava",
       "karamela",
-      "slatko",
-      "zemljano"
+      "kremasto",
+      "cedar",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -139106,7 +139410,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Jalapa habano wrapper (Nikaragva); punija i izražajna. Note: cedar, zacini, koza.",
+      "hr": "Nikaragva, Jalapa habano pokrov — jače snage, punog tijela. Okusi: cedrovina, začini, koža.",
       "en": "Jalapa habano wrapper (Nicaragua); fuller and expressive. Notes of cedar, spice, leather. Box-pressed toro; creamy medium-full."
     },
     "markets": [
@@ -139281,7 +139585,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Nikaragva); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
+      "hr": "Nikaragva, Habano pokrov — srednje snage, punijeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Nicaragua); balanced, medium in strength. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -139553,7 +139857,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Natural wrapper (Honduras); uravnotežena, srednje snage. Note: zemljano, citrus, drvo.",
+      "hr": "Honduras, Natural pokrov — srednje snage, punijeg tijela. Okusi: zemljani tonovi, citrus, drvo.",
       "en": "Natural wrapper (Honduras); balanced, medium in strength. Notes of earth, citrus, wood."
     },
     "markets": [
@@ -139634,7 +139938,11 @@
     "wrapper": "—",
     "strength": 3,
     "body": 4,
-    "flavorTags": [],
+    "flavorTags": [
+      "zemljano",
+      "citrus",
+      "drvo"
+    ],
     "smokeTimeMin": 45,
     "priceEUR": 14.0,
     "priceApprox": false,
@@ -139793,7 +140101,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Nikaragva); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
+      "hr": "Nikaragva, Habano pokrov — srednje snage, punijeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Nicaragua); balanced, medium in strength. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -139852,7 +140160,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Jalapa claro wrapper (Nikaragva); blaga i glatka. Note: kremasto, cedar, orasasti.",
+      "hr": "Nikaragva, Jalapa claro pokrov — vrlo lagane snage, laganog tijela. Okusi: kremasto, cedrovina, orašasti tonovi.",
       "en": "Jalapa claro wrapper (Nicaragua); mild and smooth. Notes of cream, cedar, nuts. Claro-wrapped; mild-medium and smooth."
     },
     "markets": [
@@ -139948,8 +140256,8 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Sinkronizirano iz HR trgovina — Year Of The Rabbit.",
-      "en": ""
+      "hr": "Nikaragva — srednje snage, srednjeg tijela.",
+      "en": "(Nicaragua); balanced, medium in strength."
     },
     "markets": [
       "HR",
@@ -140006,7 +140314,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Nikaragva); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
+      "hr": "Nikaragva, Habano pokrov — srednje snage, punijeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Nicaragua); balanced, medium in strength. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -140064,7 +140372,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Criollo 98 wrapper (Nikaragva); uravnotežena, srednje snage. Note: zemljano, cedar, orasasti.",
+      "hr": "Nikaragva, Criollo 98 pokrov — srednje snage, punijeg tijela. Okusi: zemljani tonovi, cedrovina, orašasti tonovi.",
       "en": "Criollo 98 wrapper (Nicaragua); balanced, medium in strength. Notes of earth, cedar, nuts. 146 anniversary toro; complex spice."
     },
     "markets": [
@@ -141103,9 +141411,11 @@
     "body": 3,
     "flavorTags": [
       "cedar",
-      "zacini",
       "koza",
-      "kava"
+      "zacini",
+      "kremasto",
+      "orasasti",
+      "med"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -141452,9 +141762,11 @@
     "body": 3,
     "flavorTags": [
       "cedar",
-      "zacini",
       "koza",
-      "kava"
+      "zacini",
+      "kremasto",
+      "orasasti",
+      "med"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -141868,9 +142180,11 @@
     "strength": 2,
     "body": 3,
     "flavorTags": [
-      "zacini-slatki",
       "cedar",
       "orasasti",
+      "zacini",
+      "zacini-slatki",
+      "slatko",
       "koza"
     ],
     "profileEstimated": true,
@@ -142502,7 +142816,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Habano wrapper (Kuba); punija i izražajna. Note: cedar, zacini, koza.",
+      "hr": "Kuba, Habano pokrov — jače snage, punog tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Cuba); fuller and expressive. Notes of cedar, spice, leather. Namesake corona gorda; medium-full with spice."
     },
     "markets": [
@@ -142630,7 +142944,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Habano wrapper (Kuba); punija i izražajna. Note: cedar, zacini, koza.",
+      "hr": "Kuba, Habano pokrov — jače snage, punog tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Cuba); fuller and expressive. Notes of cedar, spice, leather. Robusto selection; medium-full body."
     },
     "markets": [
@@ -143097,7 +143411,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Habano wrapper (Kuba); punija i izražajna. Note: cedar, zacini, koza.",
+      "hr": "Kuba, Habano pokrov — jače snage, punijeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Cuba); fuller and expressive. Notes of cedar, spice, leather. French-market robusto; mild-medium elegance."
     },
     "markets": [
@@ -143342,7 +143656,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Habano wrapper (Kuba); blaga prema srednjoj. Note: kremasto, cedar, orasasti.",
+      "hr": "Kuba, Habano pokrov — lagane snage, laganog tijela. Okusi: kremasto, cedrovina, orašasti tonovi.",
       "en": "Habano wrapper (Cuba); mild-to-medium. Notes of cream, cedar, nuts. Limited 50 ring lonsdale; rich and slow."
     },
     "markets": [
@@ -143467,9 +143781,11 @@
     "strength": 2,
     "body": 3,
     "flavorTags": [
-      "zacini-slatki",
       "cedar",
       "orasasti",
+      "zacini",
+      "zacini-slatki",
+      "slatko",
       "koza"
     ],
     "profileEstimated": true,
@@ -143823,7 +144139,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Kuba); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
+      "hr": "Kuba, Habano pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Cuba); balanced, medium in strength. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -145388,7 +145704,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Kuba); punija i izražajna. Note: cedar, zacini, koza.",
+      "hr": "Kuba, Habano pokrov — jače snage, punijeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Cuba); fuller and expressive. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -145446,7 +145762,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Kuba); punija i izražajna. Note: cedar, zacini, koza.",
+      "hr": "Kuba, Habano pokrov — jače snage, punijeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Cuba); fuller and expressive. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -146744,7 +147060,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Habano wrapper (Honduras); punija i izražajna. Note: cedar, zacini, koza.",
+      "hr": "Honduras, Habano pokrov — jače snage, punijeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Honduras); fuller and expressive. Notes of cedar, spice, leather. Second-generation blend; medium-full."
     },
     "markets": [
@@ -146803,10 +147119,12 @@
     "strength": 3,
     "body": 4,
     "flavorTags": [
+      "kakao",
+      "kava",
+      "karamela",
       "cedar",
       "zacini",
-      "koza",
-      "kava"
+      "koza"
     ],
     "smokeTimeMin": 58,
     "priceEUR": 20.0,
@@ -147137,10 +147455,12 @@
     "strength": 3,
     "body": 4,
     "flavorTags": [
+      "kakao",
+      "kava",
+      "karamela",
       "cedar",
       "zacini",
-      "koza",
-      "kava"
+      "koza"
     ],
     "smokeTimeMin": 58,
     "priceEUR": 110.0,
@@ -148018,7 +148338,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Habano wrapper (Honduras); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
+      "hr": "Honduras, Habano pokrov — jače snage, punijeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Honduras); balanced, medium in strength. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -149501,8 +149821,9 @@
     "body": 3,
     "flavorTags": [
       "cedar",
-      "zacini",
       "koza",
+      "zacini",
+      "dim",
       "kava"
     ],
     "profileEstimated": true,
@@ -149595,6 +149916,7 @@
       "kremasto",
       "cedar",
       "orasasti",
+      "dim",
       "med",
       "trava-slatka"
     ],
@@ -149747,7 +150069,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "San Andrés wrapper (Honduras); punija i izražajna. Note: kakao, kava, karamela.",
+      "hr": "Honduras, San Andrés pokrov — jače snage, punog tijela. Okusi: kakao, kava, karamela.",
       "en": "San Andrés wrapper (Honduras); fuller and expressive. Notes of cocoa, coffee, caramel. 60 ring robusto; bold and modern."
     },
     "markets": [
@@ -149981,7 +150303,7 @@
     "vitola": "Sun Grown",
     "format": "52 x 152mm",
     "country": "Honduras",
-    "wrapper": "—",
+    "wrapper": "Habano",
     "strength": 3,
     "body": 3,
     "flavorTags": [
@@ -150059,7 +150381,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Connecticut broadleaf maduro wrapper (Honduras); uravnotežena, srednje snage. Note: kakao, kava, karamela.",
+      "hr": "Honduras, Connecticut broadleaf maduro pokrov — srednje snage, punijeg tijela. Okusi: kakao, kava, karamela.",
       "en": "Connecticut broadleaf maduro wrapper (Honduras); balanced, medium in strength. Notes of cocoa, coffee, caramel. 1990 maduro; sweet and approachable."
     },
     "markets": [
@@ -150130,7 +150452,7 @@
     ],
     "availabilityHR": [],
     "notes": {
-      "hr": "Odležani wrapper (12+ god) — mekano, zaobljeno iskustvo.",
+      "hr": "Honduras, Broadleaf (1990) / Sumatra (1992) pokrov — lagane snage, srednjeg tijela. Okusi: cedrovina, karamela, orašasti tonovi.",
       "en": "Aged wrapper (12+ yrs) — a soft, rounded experience."
     },
     "vitolas": [
@@ -152367,9 +152689,11 @@
     "strength": 2,
     "body": 3,
     "flavorTags": [
-      "zacini-slatki",
       "cedar",
       "orasasti",
+      "zacini",
+      "zacini-slatki",
+      "slatko",
       "koza"
     ],
     "profileEstimated": true,
@@ -152599,7 +152923,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Kuba); blaga prema srednjoj. Note: cedar, zacini, koza.",
+      "hr": "Kuba, Habano pokrov — lagane snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Cuba); mild-to-medium. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -152650,7 +152974,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Kuba); blaga prema srednjoj. Note: cedar, zacini, koza.",
+      "hr": "Kuba, Habano pokrov — lagane snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Cuba); mild-to-medium. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -152929,7 +153253,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Kuba); blaga prema srednjoj. Note: cedar, zacini, koza.",
+      "hr": "Kuba, Habano pokrov — lagane snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Cuba); mild-to-medium. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -152986,7 +153310,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Kuba); blaga prema srednjoj. Note: cedar, zacini, koza.",
+      "hr": "Kuba, Habano pokrov — lagane snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Cuba); mild-to-medium. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -153037,7 +153361,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Kuba); blaga prema srednjoj. Note: cedar, zacini, koza.",
+      "hr": "Kuba, Habano pokrov — lagane snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Cuba); mild-to-medium. Notes of cedar, spice, leather. Premium Oro line torpedo; refined sweetness."
     },
     "markets": [
@@ -153143,7 +153467,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Kuba); blaga prema srednjoj. Note: cedar, zacini, koza.",
+      "hr": "Kuba, Habano pokrov — lagane snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Cuba); mild-to-medium. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -153200,7 +153524,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Kuba); blaga prema srednjoj. Note: cedar, zacini, koza.",
+      "hr": "Kuba, Habano pokrov — lagane snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Cuba); mild-to-medium. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -153257,7 +153581,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Kuba); blaga prema srednjoj. Note: cedar, zacini, koza.",
+      "hr": "Kuba, Habano pokrov — lagane snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Cuba); mild-to-medium. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -153308,7 +153632,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Habano wrapper (Kuba); blaga prema srednjoj. Note: cedar, zacini, koza.",
+      "hr": "Kuba, Habano pokrov — lagane snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Cuba); mild-to-medium. Notes of cedar, spice, leather. Large torpedo; modern fuller RyJ."
     },
     "markets": [
@@ -153411,7 +153735,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Ecuador Habano wrapper (Nikaragva); punija i izražajna. Note: cedar, zacini, koza.",
+      "hr": "Nikaragva, Ecuador Habano pokrov — jače snage, punijeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Ecuador Habano wrapper (Nicaragua); fuller and expressive. Notes of cedar, spice, leather. Medium-full habano; cedar, spice, and cream."
     },
     "markets": [
@@ -155642,6 +155966,7 @@
       "kakao",
       "kava",
       "zemljano",
+      "karamela",
       "koza",
       "papar"
     ],
@@ -156220,7 +156545,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Habano wrapper (Kuba); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
+      "hr": "Kuba, Habano pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Cuba); balanced, medium in strength. Notes of cedar, spice, leather. Small format; medium body with floral and honey notes."
     },
     "markets": [
@@ -157202,6 +157527,7 @@
       "kakao",
       "kava",
       "zemljano",
+      "karamela",
       "koza",
       "papar"
     ],
@@ -157545,9 +157871,11 @@
     "strength": 2,
     "body": 3,
     "flavorTags": [
-      "zacini-slatki",
       "cedar",
       "orasasti",
+      "zacini",
+      "zacini-slatki",
+      "slatko",
       "koza"
     ],
     "profileEstimated": true,
@@ -159119,7 +159447,7 @@
     "vitola": "Robusto",
     "format": "52 x 127mm",
     "country": "Nikaragva",
-    "wrapper": "—",
+    "wrapper": "Maduro",
     "strength": 3,
     "body": 4,
     "flavorTags": [
@@ -159412,8 +159740,9 @@
       "kakao",
       "kava",
       "karamela",
-      "slatko",
-      "zemljano"
+      "papar",
+      "zacini",
+      "koza"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -160326,10 +160655,12 @@
     "strength": 4,
     "body": 3,
     "flavorTags": [
+      "kakao",
+      "kava",
       "cedar",
-      "zacini",
+      "zemljano",
       "koza",
-      "kava"
+      "zacini"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -161654,7 +161985,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Ecuadorian habano wrapper (Nikaragva); punija i izražajna. Note: cedar, zacini, koza.",
+      "hr": "Nikaragva, Ecuadorian habano pokrov — jače snage, punog tijela. Okusi: cedrovina, začini, koža.",
       "en": "Ecuadorian habano wrapper (Nicaragua); fuller and expressive. Notes of cedar, spice, leather. Core Black robusto; pepper and cedar."
     },
     "markets": [
@@ -161891,7 +162222,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Habano wrapper (Nikaragva); punija i izražajna. Note: cedar, zacini, koza.",
+      "hr": "Nikaragva, Habano pokrov — jače snage, punog tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Nicaragua); fuller and expressive. Notes of cedar, spice, leather. Short perfecto; intense full body."
     },
     "markets": [
@@ -162416,7 +162747,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Connecticut broadleaf wrapper (Nikaragva); uravnotežena, srednje snage. Note: kakao, kava, karamela.",
+      "hr": "Nikaragva, Connecticut broadleaf pokrov — srednje snage, punog tijela. Okusi: kakao, kava, karamela.",
       "en": "Connecticut broadleaf wrapper (Nicaragua); balanced, medium in strength. Notes of cocoa, coffee, caramel. Broadleaf reserva; sweet earth."
     },
     "markets": [
@@ -162705,7 +163036,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Habano wrapper (Nikaragva); punija i izražajna. Note: cedar, zacini, koza.",
+      "hr": "Nikaragva, Habano pokrov — jače snage, punog tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Nicaragua); fuller and expressive. Notes of cedar, spice, leather. Short perfecto; bold and oily."
     },
     "markets": [
@@ -164798,8 +165129,8 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Sinkronizirano iz HR trgovina — Coloniales.",
-      "en": ""
+      "hr": "Kuba, Habano pokrov — srednje snage, srednjeg tijela.",
+      "en": "Habano wrapper (Cuba); balanced, medium in strength."
     },
     "markets": [
       "HR",
@@ -164864,7 +165195,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Habano wrapper (Kuba); punija i izražajna. Note: cedar, zacini, koza.",
+      "hr": "Kuba, Habano pokrov — jače snage, punijeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Cuba); fuller and expressive. Notes of cedar, spice, leather. Wide short robusto; modern Trinidad richness."
     },
     "markets": [
@@ -165048,7 +165379,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Kuba); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
+      "hr": "Kuba, Habano pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Cuba); balanced, medium in strength. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -165100,7 +165431,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Habano wrapper (Kuba); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
+      "hr": "Kuba, Habano pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Cuba); balanced, medium in strength. Notes of cedar, spice, leather. LCDH exclusive torpedo; complex and refined."
     },
     "markets": [
@@ -165164,7 +165495,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Kuba); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
+      "hr": "Kuba, Habano pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Cuba); balanced, medium in strength. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -165289,7 +165620,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Kuba); uravnotežena, srednje snage. Note: cedar, zacini, koza.",
+      "hr": "Kuba, Habano pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Cuba); balanced, medium in strength. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -165808,7 +166139,7 @@
     "vitola": "Gran Toro",
     "format": "60 x 159mm",
     "country": "Dominikanska Republika",
-    "wrapper": "—",
+    "wrapper": "Habano",
     "strength": 3,
     "body": 3,
     "flavorTags": [
@@ -165995,7 +166326,7 @@
     "vitola": "Figurado",
     "format": "58 x 178mm",
     "country": "Dominikanska Republika",
-    "wrapper": "—",
+    "wrapper": "Connecticut",
     "strength": 2,
     "body": 2,
     "flavorTags": [
@@ -166143,7 +166474,7 @@
     "vitola": "Figurado",
     "format": "58 x 178mm",
     "country": "Dominikanska Republika",
-    "wrapper": "—",
+    "wrapper": "Maduro",
     "strength": 3,
     "body": 4,
     "flavorTags": [
@@ -168032,9 +168363,11 @@
     "body": 3,
     "flavorTags": [
       "cedar",
-      "zacini",
       "koza",
-      "kava"
+      "zacini",
+      "kremasto",
+      "orasasti",
+      "med"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -168191,7 +168524,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Habano wrapper (Kuba); punija i izražajna. Note: cedar, zacini, koza.",
+      "hr": "Kuba, Habano pokrov — jače snage, punog tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Cuba); fuller and expressive. Notes of cedar, spice, leather. Pyramid figurado; rich medium-full with cocoa and cedar."
     },
     "markets": [
@@ -168375,8 +168708,9 @@
       "kakao",
       "kava",
       "karamela",
-      "slatko",
-      "zemljano"
+      "kremasto",
+      "cedar",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -168605,7 +168939,7 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Habano wrapper (Honduras); blaga prema srednjoj. Note: cedar, zacini, koza.",
+      "hr": "Honduras, Habano pokrov — lagane snage, laganog tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Honduras); mild-to-medium. Notes of cedar, spice, leather."
     },
     "markets": [
@@ -170836,7 +171170,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Ecuador wrapper (Dominikanska Republika); blaga i glatka. Note: cedar, zacini, koza.",
+      "hr": "Dominikanska Republika, Ecuador pokrov — vrlo lagane snage, vrlo laganog tijela. Okusi: cedrovina, začini, koža.",
       "en": "Ecuador wrapper (Dominican Republic); mild and smooth. Notes of cedar, spice, leather. Swiss-heritage brand; mild-medium everyday smoke."
     },
     "markets": [
@@ -172195,8 +172529,8 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Sinkronizirano iz HR trgovina — 5Th Anniversario Club 500 5 1⁄4 X 58.",
-      "en": ""
+      "hr": "Nikaragva — srednje snage, srednjeg tijela.",
+      "en": "(Nicaragua); balanced, medium in strength."
     },
     "markets": [
       "HR",
@@ -172236,8 +172570,8 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Sinkronizirano iz HR trgovina — 5Th Anniversario Jester 5 1⁄2 X 56.",
-      "en": ""
+      "hr": "Nikaragva — srednje snage, srednjeg tijela.",
+      "en": "(Nicaragua); balanced, medium in strength."
     },
     "markets": [
       "HR",
@@ -172366,8 +172700,8 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Sinkronizirano iz HR trgovina — Club 500 6 X 60.",
-      "en": ""
+      "hr": "Nikaragva — srednje snage, srednjeg tijela.",
+      "en": "(Nicaragua); balanced, medium in strength."
     },
     "markets": [
       "HR",
@@ -172415,8 +172749,8 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Sinkronizirano iz HR trgovina — Connecticut Robusto 5 X 54.",
-      "en": ""
+      "hr": "Nikaragva — srednje snage, srednjeg tijela.",
+      "en": "(Nicaragua); balanced, medium in strength."
     },
     "markets": [
       "EU",
@@ -172484,8 +172818,8 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Sinkronizirano iz HR trgovina — Diadema 6 1⁄2 X 52.",
-      "en": ""
+      "hr": "Nikaragva — srednje snage, srednjeg tijela.",
+      "en": "(Nicaragua); balanced, medium in strength."
     },
     "markets": [
       "HR",
@@ -172756,7 +173090,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Corojo wrapper (Nikaragva); snažna, za iskusne pušače. Note: papar, zacini, koza.",
+      "hr": "Nikaragva, Corojo pokrov — pune snage, punog tijela. Okusi: papar, začini, koža.",
       "en": "Corojo wrapper (Nicaragua); powerful, for seasoned smokers. Notes of pepper, spice, leather. Corojo-wrapped; medium-full with spice and leather."
     },
     "markets": [
@@ -172911,7 +173245,7 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Ecuador Connecticut wrapper (Nikaragva); blaga i glatka. Note: kremasto, cedar, orasasti.",
+      "hr": "Nikaragva, Ecuador Connecticut pokrov — vrlo lagane snage, vrlo laganog tijela. Okusi: kremasto, cedrovina, orašasti tonovi.",
       "en": "Ecuador Connecticut wrapper (Nicaragua); mild and smooth. Notes of cream, cedar, nuts. Mild-medium Connecticut with cream, nuts, and gentle spice."
     },
     "markets": [
@@ -173433,9 +173767,11 @@
     "body": 3,
     "flavorTags": [
       "cedar",
-      "zacini",
       "koza",
-      "kava"
+      "zacini",
+      "kremasto",
+      "orasasti",
+      "med"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
