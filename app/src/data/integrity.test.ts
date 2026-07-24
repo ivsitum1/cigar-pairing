@@ -10,6 +10,21 @@ describe("integritet podataka", () => {
     expect(new Set(ids).size).toBe(ids.length);
   });
 
+  it("notes.en cigara ne propušta hrvatske riječi (tagovi/zemlje)", () => {
+    // Regres: heuristički EN opisi su nosili sirove hrvatske tagove i
+    // ime zemlje ("Nikaragva … Notes: cedar, zacini, koza").
+    const HR = new RegExp(
+      "\\b(" +
+        "Nikaragva|Meksiko|Kuba|Škotska|Njemačka|Španjolska|" +
+        "kakao|zacini|začini|koza|koža|drvo|papar|hrast|kava|cvjetno|travnato|" +
+        "orasasti|orašasti|zemljano|melasa|mlijeko|kremasto|vanilija|" +
+        "suho-voce|tamno-voce|biljno|Okusi|pokrov" +
+        ")\\b",
+    );
+    const bad = CIGARS.filter((c) => c.notes?.en && HR.test(c.notes.en));
+    expect(bad.map((c) => `${c.id}: ${c.notes.en}`)).toEqual([]);
+  });
+
   // regresijski čuvar protiv locale-blizanaca (isti proizvod iz /en/ i /hr/)
   const productKey = (url: string | null | undefined): string | null => {
     if (!url) return null;
