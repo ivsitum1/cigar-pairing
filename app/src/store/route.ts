@@ -1,15 +1,20 @@
-// Hash-based routing: #/<stranica>[/cigar|drink/<id>] or #/club/<view>.
-// Daje deep-linkove (podijeli cigaru/pice) i ispravnu back tipku na mobitelu;
-// hash radi i na GitHub Pages bez server-side ruta.
+// Hash-based routing: #/<stranica>[/…] — deep-linkovi + back tipka; radi na GH Pages.
 import { useSyncExternalStore } from "react";
 
 export type Page = "pairing" | "catalog" | "collection" | "shopping" | "club";
 export type ClubView = "101" | "bonton" | "lexicon" | "hr-guide" | "archetypes";
 
+/** Catalog deep links: brand → line → vitola (Phase 4). */
+export type CatalogFocus =
+  | { level: "brand"; brandSlug: string }
+  | { level: "line"; cigarId: string }
+  | { level: "vitola"; cigarId: string; vitolaSlug: string };
+
 export interface Route {
   page: Page;
   pair?: { kind: "cigar" | "drink"; id: string };
   club?: ClubView;
+  catalog?: CatalogFocus;
 }
 
 const PAGES: readonly string[] = ["pairing", "catalog", "collection", "shopping", "club"];
@@ -24,12 +29,49 @@ export function parseHash(hash: string): Route {
   if (page === "club" && CLUB_VIEWS.includes(parts[1])) {
     return { page, club: parts[1] as ClubView };
   }
+  if (page === "catalog" && parts[1] === "brand" && parts[2]) {
+    return {
+      page,
+      catalog: { level: "brand", brandSlug: decodeURIComponent(parts[2]) },
+    };
+  }
+  if (page === "catalog" && parts[1] === "line" && parts[2]) {
+    return {
+      page,
+      catalog: { level: "line", cigarId: decodeURIComponent(parts[2]) },
+    };
+  }
+  if (page === "catalog" && parts[1] === "vitola" && parts[2] && parts[3]) {
+    return {
+      page,
+      catalog: {
+        level: "vitola",
+        cigarId: decodeURIComponent(parts[2]),
+        vitolaSlug: decodeURIComponent(parts[3]),
+      },
+    };
+  }
   return { page };
 }
 
 export function routeToHash(r: Route): string {
   if (r.page === "club" && r.club) {
     return `#/${r.page}/${r.club}`;
+  }
+  if (r.page === "catalog" && r.catalog) {
+    const c = r.catalog;
+    switch (c.level) {
+      case "brand":
+        return `#/catalog/brand/${encodeURIComponent(c.brandSlug)}`;
+      case "line":
+        return `#/catalog/line/${encodeURIComponent(c.cigarId)}`;
+      case "vitola":
+        return `#/catalog/vitola/${encodeURIComponent(c.cigarId)}/${encodeURIComponent(c.vitolaSlug)}`;
+      default: {
+        const _exhaustive: never = c;
+        return _exhaustive;
+      }
+    }
   }
   return r.pair
     ? `#/${r.page}/${r.pair.kind}/${encodeURIComponent(r.pair.id)}`

@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import type { Cigar, Drink, DrinkCategory, PairingResult, ServeStyle, Vitola } from "../types";
-import { ALL_DRINKS, CIGARS, cigarById, cigarInRegion, cigarLinkForMarket, cigarPriceForMarket, drinkById, formatPrice } from "../data";
+import { ALL_DRINKS, CIGARS, cigarInRegion, cigarLinkForMarket, cigarPriceForMarket, drinkById, formatPrice, resolveCigarId } from "../data";
 import { pairCigarsForDrink, pairDrinksForCigar } from "../engine/pairing";
 import { buildPrefs } from "../engine/personal";
 import { curatedPairingOpinion } from "../engine/curatedOpinion";
@@ -60,7 +60,7 @@ export function PairingPage() {
     const rated = collection.journal.map((j) => ({
       rating: j.rating,
       drinkStyle: drinkById(j.drinkId)?.style,
-      cigarBrand: cigarById(j.cigarId)?.brand,
+      cigarBrand: resolveCigarId(j.cigarId)?.brand,
     }));
     const built = buildPrefs(rated);
     return built.entries > 0 ? built : undefined;
@@ -212,7 +212,7 @@ export function PairingPage() {
   };
 
   const pickCigar = (raw: Cigar) => {
-    const cigar = cigarById(raw.id) ?? raw;
+    const cigar = resolveCigarId(raw.id) ?? raw;
     if (needsVitolaPick(cigar)) {
       setPendingCigar(cigar);
       return;
@@ -244,7 +244,7 @@ export function PairingPage() {
       setMode("cigarToDrink");
       setSelectedDrink(null);
       setQuery(`${intent.cigar.brand} ${intent.cigar.line}`);
-      const cigar = cigarById(intent.cigar.id) ?? intent.cigar;
+      const cigar = resolveCigarId(intent.cigar.id) ?? intent.cigar;
       if (needsVitolaPick(cigar)) {
         setPendingCigar(cigar);
         setSelectedCigar(null);
@@ -281,7 +281,7 @@ export function PairingPage() {
     }
     if (pair.kind === "cigar") {
       if (selectedCigar?.id === pair.id || pendingCigar?.id === pair.id) return;
-      const cigar = cigarById(pair.id);
+      const cigar = resolveCigarId(pair.id);
       if (!cigar) return;
       setMode("cigarToDrink");
       setSelectedDrink(null);
@@ -411,7 +411,7 @@ export function PairingPage() {
               onMatch={(id) => {
                 // OCR prepoznato -> otvori karticu (može se odmah označiti u kolekciju)
                 if (mode === "cigarToDrink") {
-                  const c = cigarById(id) ?? marketCigars.find((x) => x.id === id);
+                  const c = resolveCigarId(id) ?? marketCigars.find((x) => x.id === id);
                   if (c) setDetail({ kind: "cigar", item: c });
                 } else {
                   const d = ALL_DRINKS.find((x) => x.id === id);
