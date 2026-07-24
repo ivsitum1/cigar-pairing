@@ -1,6 +1,6 @@
 # Cigar & Drink Pairing
 
-PWA za sparivanje cigara i pića (rum, whisky, konjak/brandy, gin, vino, kava) s
+PWA za sparivanje cigara i pića (rum, whisky, konjak/brandy, gin, vino, tequila, kava) s
 indeksima rangiranim po kvaliteti za sipping uz cigaru.
 
 **Live:** https://ivsitum1.github.io/cigar-pairing/ (instalabilno na mobitel, radi offline)
@@ -28,7 +28,7 @@ indeksima rangiranim po kvaliteti za sipping uz cigaru.
 - `app/` — Vite + React + TS + Tailwind PWA
   - Hash-routing s deep-linkovima: `#/pairing/cigar/<id>` i `#/pairing/drink/<id>`
     otvaraju pairing s odabranom stavkom (dijeljivi linkovi, back tipka radi)
-  - `src/data/*.json` — indeksi (147 rumova, 278 whiskyja, 84 brandy/grappa, 20 gin, 57 vina, 23 kave, 525 cigara);
+  - `src/data/*.json` — indeksi (155 rumova, 273 whiskyja, 84 brandy/grappa, 19 gin, 124 vina, 14 tequila, 33 kave, 2395 cigara);
     build ih dijeli u odvojene chunkove (`data-cigars`, `data-whiskies`, `data-rums`…) radi
     paralelnog downloada i boljeg cachea
   - Personalizacija: ocjene iz dnevnika lokalno naginju prijedloge (±5 bodova,
@@ -40,7 +40,8 @@ indeksima rangiranim po kvaliteti za sipping uz cigaru.
     Excela vrati ih s `python scripts/merge-extras.py`
   - `src/data/wines.json` — vino po istom principu punoće (porto, sherry,
     madeira, prošek, puna/srednja crna, bijela, pjenušava, desertna); HR cijene
-    (Vivat/Miva/Vrutak/vinoteke), približne označene `priceApprox` (57 zapisa)
+    (Vivat/Miva/Vrutak/vinoteke), približne označene `priceApprox` (124 zapisa;
+    regeneracija: `python scripts/expand-wines.py`)
   - `src/engine/` — rule-based pairing engine s objašnjenjima (kalibracija u `rules.ts`)
   - **`scripts/pipeline.py` — orkestrator: vrti korake regeneracije ispravnim
     redoslijedom i staje na prvoj grešci** (`--category rum|whisky|brandy|cigars|all`,

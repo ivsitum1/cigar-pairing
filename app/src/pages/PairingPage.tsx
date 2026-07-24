@@ -19,6 +19,7 @@ import { VitolaPicker } from "../components/VitolaPicker";
 import { applyVitola, needsVitolaPick, uniqueVitolas } from "../lib/cigarVitola";
 import { drinkBuyLink } from "../lib/drinkBuyLink";
 import { drinkNameLoc, drinkNameHaystack } from "../lib/drinkName";
+import { readJsonStringArray } from "../lib/safeStorage";
 import { useMarket } from "../store/market";
 import { consumePairingIntent, usePairingNavVersion } from "../store/pairingNav";
 import { navigate, useRoute } from "../store/route";
@@ -76,10 +77,10 @@ export function PairingPage() {
   const [cycle, setCycle] = useState<Record<string, number>>({});
   const [showPrefs, setShowPrefs] = useState(false);
   const [excludedCountries, setExcludedCountries] = useState<string[]>(
-    () => JSON.parse(localStorage.getItem("prefs-excluded-countries") ?? "[]"),
+    () => readJsonStringArray("prefs-excluded-countries"),
   );
   const [excludedBrands, setExcludedBrands] = useState<string[]>(
-    () => JSON.parse(localStorage.getItem("prefs-excluded-brands") ?? "[]"),
+    () => readJsonStringArray("prefs-excluded-brands"),
   );
 
   const toggleExcluded = (

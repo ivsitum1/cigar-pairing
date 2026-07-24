@@ -1,5 +1,6 @@
 // Kolekcija i dnevnik — localStorage, s export/import backupom.
 import { useSyncExternalStore } from "react";
+import { normalizeCollectionPayload } from "../lib/safeStorage";
 
 export interface ItemState {
   owned: boolean;
@@ -32,8 +33,8 @@ function load(): CollectionData {
   try {
     const raw = localStorage.getItem(KEY);
     if (raw) {
-      const parsed = JSON.parse(raw);
-      return { items: parsed.items ?? {}, journal: parsed.journal ?? [] };
+      const normalized = normalizeCollectionPayload(JSON.parse(raw));
+      if (normalized) return normalized;
     }
   } catch {
     // pokvaren zapis — kreni ispocetka
@@ -119,9 +120,9 @@ export function exportData(): string {
 
 export function importData(json: string): boolean {
   try {
-    const parsed = JSON.parse(json);
-    if (typeof parsed !== "object" || parsed === null) return false;
-    persist({ items: parsed.items ?? {}, journal: parsed.journal ?? [] });
+    const normalized = normalizeCollectionPayload(JSON.parse(json));
+    if (!normalized) return false;
+    persist(normalized);
     return true;
   } catch {
     return false;

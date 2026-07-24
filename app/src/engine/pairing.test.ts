@@ -57,7 +57,7 @@ describe("pairing engine — poznati parovi iz Excela", () => {
     const padronMaduro = byId(cigars, "cig-padron-1964-anniversary"); // Maduro, body 4
     const px = byId(wines, "wine-lustau-px"); // body 5, sweetness 5
     const lbv = byId(wines, "wine-taylors-lbv"); // body 4, sweetness 4
-    const prosecco = byId(wines, "wine-prosecco-docg"); // body 1
+    const prosecco = byId(wines, "wine-mionetto-prosecco-doc"); // body 1
     expect(scorePairing(padronMaduro, px).score).toBeGreaterThan(
       scorePairing(padronMaduro, prosecco).score,
     );
@@ -71,8 +71,8 @@ describe("pairing engine — poznati parovi iz Excela", () => {
 
   it("vino po principu punoce: blaga Connecticut cigara preferira pjenusac nad Amaroneom", () => {
     const macanudo = byId(cigars, "cig-macanudo-cafe"); // Connecticut, body 1
-    const champagne = byId(wines, "wine-champagne-brut"); // body 2
-    const amarone = byId(wines, "wine-amarone"); // body 5
+    const champagne = byId(wines, "wine-moet-brut-imperial"); // body 2
+    const amarone = byId(wines, "wine-allegrini-amarone"); // body 5
     expect(scorePairing(macanudo, champagne).score).toBeGreaterThan(
       scorePairing(macanudo, amarone).score,
     );

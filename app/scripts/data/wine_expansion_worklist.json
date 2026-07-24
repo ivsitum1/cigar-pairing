@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "goal": "120-140 concrete winery+label bottles; global curated; pairing-first",
+  "result": {"old": 57, "new": 124, "kept": 23, "added": 101},
+  "note": "Applied via scripts/expand-wines.py on 2026-07-24; wines.json now 124. Pairing tests updated to new concrete IDs."
+}

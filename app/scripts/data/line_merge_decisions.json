@@ -12,7 +12,8 @@
       "Deferred: cig-alec-bradley-texas vs texas-lancero — both are the same 7x70 Texas Lancero SKU (CW product vs Holts listing) but need line-rename + vitola collapse, not a plain size absorb.",
       "2026-07-23 Round3 J full: auto MERGE only when child has exactly 1 vitola and suffix is pure size/dims; wrapper/sampler/known-series → KEEP; remainder → _deferred for human pass.",
       "2026-07-23 deferred pass: resolved 147/147 (+80 absorb, +64 keep); 0 remain.",
-      "2026-07-23 residual-J reapply: pending 84 + prefix leftovers + La Galera 85th absorb; deferred cleared."
+      "2026-07-23 residual-J reapply: pending 84 + prefix leftovers + La Galera 85th absorb; deferred cleared.",
+      "2026-07-24: absorb Brun del Ré Gold Inmenso; keep Valentino Siesto Sun Grown 1971 as edition SKU."
     ]
   },
   "cig-oliva-monticello": {
@@ -2090,17 +2091,6 @@
     },
     {
       "ids": [
-        "cig-brun-del-re-gold",
-        "cig-brun-del-re-gold-inmenso"
-      ],
-      "lines": [
-        "del Ré Gold",
-        "del Ré Gold Inmenso"
-      ],
-      "reason": "Both multi-vitola; suffix \"Inmenso\"."
-    },
-    {
-      "ids": [
         "cig-bugatti-monte-carlo",
         "cig-bugatti-monte-carlo-especial-gold-dn"
       ],
@@ -3120,7 +3110,7 @@
         "Siesto Premium Sun Grown",
         "Siesto Premium Sun Grown 1971"
       ],
-      "reason": "Both multi-vitola; suffix \"1971\"."
+      "reason": "Parallel CW SKU/edition \"1971\" (identical Robusto/Toro dims to Sun Grown); not a size absorb."
     },
     {
       "ids": [
@@ -5165,5 +5155,15 @@
       "Toro": "Anniversary Toro"
     },
     "reason": "Size-as-line duplicate of 85th Anniversary Toro (same product URL family)."
+  },
+  "cig-brun-del-re-gold": {
+    "absorb": [
+      "cig-brun-del-re-gold-inmenso"
+    ],
+    "rename_absorbed_vitolas": {
+      "Robusto": "Inmenso Robusto",
+      "Torpedo": "Inmenso Torpedo"
+    },
+    "reason": "Inmenso is a larger ring size of del Ré Gold (CW Robusto Inmenso 60x127 / Torpedo Inmenso 62x154), not a separate commercial line."
   }
 }

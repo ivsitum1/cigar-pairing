@@ -21,7 +21,7 @@
       "line": "del Ré Gold"
     },
     "del Ré Gold Inmenso": {
-      "line": "del Ré Gold Inmenso"
+      "line": "del Ré Gold"
     },
     "del Ré Premium": {
       "line": "del Ré Premium"
@@ -30,6 +30,8 @@
   "vitolaRenames": {},
   "shapes": {},
   "keepSeparate": [],
-  "lineNotes": {},
+  "lineNotes": {
+    "del Ré Gold Inmenso": "Absorbed into del Ré Gold (Inmenso Robusto / Inmenso Torpedo) via line_merge_decisions 2026-07-24."
+  },
   "unresolved": []
 }

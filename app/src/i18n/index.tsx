@@ -1,4 +1,5 @@
 import { createContext, useContext, useState, type ReactNode } from "react";
+import { resolveLang } from "../lib/safeStorage";
 import type { Lang, LocalizedText } from "../types";
 import { REGION_LABELS } from "./regions";
 
@@ -632,12 +633,15 @@ interface I18nCtx {
 const Ctx = createContext<I18nCtx>(null!);
 
 export function I18nProvider({ children }: { children: ReactNode }) {
-  const [lang, setLangState] = useState<Lang>(
-    () => (localStorage.getItem("lang") as Lang) || "hr",
-  );
+  const [lang, setLangState] = useState<Lang>(() => {
+    const resolved = resolveLang(localStorage.getItem("lang"));
+    document.documentElement.lang = resolved;
+    return resolved;
+  });
   const setLang = (l: Lang) => {
     localStorage.setItem("lang", l);
     setLangState(l);
+    document.documentElement.lang = l;
   };
   const t = (key: StringKey) => STRINGS[key][lang];
   // tolerira i obicni string — regenerirani podaci iz Excela mogu jos biti jednojezicni
