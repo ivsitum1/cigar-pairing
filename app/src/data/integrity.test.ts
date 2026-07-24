@@ -203,6 +203,13 @@ describe("integritet podataka", () => {
     }
   });
 
+  // plan §4.4 — dimenzije ne smiju ostati u imenu linije
+  it("nijedna linija ne sadrži dimenzijski obrazac", () => {
+    const dim = /\d+\s*[x×]\s*\d+|\d+\s*(?:mm|")/i;
+    const bad = CIGARS.filter((c) => dim.test(c.line)).map((c) => `${c.id} · ${c.line}`);
+    expect(bad).toEqual([]);
+  });
+
   it("svaki brend u cigars.json ima brands.json unos", () => {
     const missing = [...new Set(CIGARS.map((c) => c.brand))].filter((b) => !brandInfo(b));
     expect(missing).toEqual([]);

@@ -1,18 +1,23 @@
 #!/usr/bin/env python3
 """Audit cigars.json into taxonomy_audit.json + per-brand worklist stubs.
 
-Usage:  python scripts/taxonomy-audit.py
+Usage:
+  python scripts/taxonomy-audit.py
+  python scripts/taxonomy-audit.py --fail-on-new   # CI: every brand/line covered
 """
 from __future__ import annotations
 
+import argparse
 import collections
+import json
+import sys
 from pathlib import Path
 
 from taxonomy_lib import (
     OUT_DIR,
+    TAXONOMY_DIR,
     WORKLIST_DIR,
     brand_slug,
-    cigar_id,
     format_missing,
     is_sampler_line,
     line_ends_with_shape,
@@ -20,6 +25,7 @@ from taxonomy_lib import (
     load_json,
     normalize_line_key,
     shape_words,
+    taxonomy_brand_files,
     vitola_repeats_line_tokens,
     write_json,
     CIGARS_PATH,
@@ -59,7 +65,85 @@ def suggest_split_c(line: str, shapes: set[str]) -> dict | None:
     return {"line": base, "vitola": sh.title() if sh.islower() else sh, "shape": sh.title(), "class": "C"}
 
 
-def main() -> None:
+def _known_lines_from_tax(data: dict) -> set[str]:
+    known: set[str] = set()
+    for key, rem in (data.get("lines") or {}).items():
+        known.add(key)
+        if isinstance(rem, dict) and rem.get("line"):
+            known.add(str(rem["line"]))
+        elif isinstance(rem, str):
+            known.add(rem)
+    for pair in data.get("keepSeparate") or []:
+        if isinstance(pair, (list, tuple)):
+            for item in pair:
+                if isinstance(item, str):
+                    known.add(item)
+    for u in data.get("unresolved") or []:
+        if isinstance(u, str) and u.strip() and "'" not in u and len(u) < 80:
+            # bare line names only; prose notes are ignored
+            known.add(u.strip())
+        elif isinstance(u, dict) and u.get("line"):
+            known.add(str(u["line"]))
+    return known
+
+
+def index_taxonomy_by_brand() -> dict[str, dict]:
+    """Map canonical brand name → taxonomy dict (renameBrand targets included)."""
+    by_brand: dict[str, dict] = {}
+    for p in taxonomy_brand_files():
+        data = load_json(p, {}) or {}
+        if not isinstance(data, dict):
+            continue
+        data = {**data, "_file": p.name}
+        brand = data.get("brand")
+        if isinstance(brand, str) and brand:
+            by_brand[brand] = data
+        rb = data.get("renameBrand")
+        if isinstance(rb, str) and rb:
+            # Prefer a file whose renameBrand points at the live brand when present
+            by_brand.setdefault(rb, data)
+    return by_brand
+
+
+def fail_on_new_violations(cigars: list) -> list[str]:
+    """Brands/lines in corpus that lack taxonomy coverage (Phase 5)."""
+    by_brand: dict[str, set[str]] = collections.defaultdict(set)
+    for c in cigars:
+        brand = c.get("brand") or ""
+        line = c.get("line") or ""
+        if brand:
+            by_brand[brand].add(line)
+
+    tax = index_taxonomy_by_brand()
+    errors: list[str] = []
+
+    for brand in sorted(by_brand, key=str.lower):
+        data = tax.get(brand)
+        if data is None:
+            slug_path = TAXONOMY_DIR / f"{brand_slug(brand)}.json"
+            if slug_path.exists():
+                data = load_json(slug_path, {}) or {}
+                data = {**data, "_file": slug_path.name}
+            else:
+                errors.append(f"missing taxonomy file for brand: {brand}")
+                continue
+
+        status = data.get("status") or "todo"
+        # brand-only / todo / partial: file existence is enough until review finishes
+        if status != "done":
+            continue
+
+        known = _known_lines_from_tax(data)
+        for line in sorted(by_brand[brand], key=str.lower):
+            if line and line not in known:
+                errors.append(
+                    f"new line without taxonomy entry: {brand} · {line} "
+                    f"(add to {data.get('_file', brand_slug(brand) + '.json')} lines or unresolved)"
+                )
+    return errors
+
+
+def run_audit(*, write_worklist: bool = True) -> dict:
     cigars = load_json(CIGARS_PATH, [])
     shapes = shape_words()
     by_brand: dict[str, list] = collections.defaultdict(list)
@@ -80,7 +164,8 @@ def main() -> None:
         "format_missing": 0,
     }
 
-    WORKLIST_DIR.mkdir(parents=True, exist_ok=True)
+    if write_worklist:
+        WORKLIST_DIR.mkdir(parents=True, exist_ok=True)
 
     for brand, rows in sorted(by_brand.items(), key=lambda x: x[0].lower()):
         bslug = brand_slug(brand)
@@ -148,20 +233,15 @@ def main() -> None:
             lines_norm[normalize_line_key(line)].append(line)
             raw_lines.append(line)
 
-        # brand_truncated: ≥80% of lines share first token AND that token != brand first token
-        # meaning the brand name was cut and the rest spilled into lines
         truncated = False
         if first_tokens:
             common, n = collections.Counter(first_tokens).most_common(1)[0]
             brand_first = (brand.split()[0] if brand else "").lower()
             if n / len(first_tokens) >= 0.8 and common and common != brand_first:
-                # weaker signal: many lines start with same word that looks like brand continuation
                 truncated = True
-            # stronger: brand is a single short token and lines start with a shared second brand word
             if len(brand.split()) == 1 and n / len(first_tokens) >= 0.8:
                 truncated = True
 
-        # prefix overlap pairs within brand
         prefix_pairs = []
         uniq_lines = sorted(set(raw_lines), key=str.lower)
         for i, a in enumerate(uniq_lines):
@@ -188,49 +268,79 @@ def main() -> None:
         if truncated:
             brand_truncated.append(brand)
 
-        # worklist stub (agent starting point; never overwrite richer taxonomy/*.json)
-        stub = {
-            "brand": brand,
-            "renameBrand": None,
-            "status": "todo",
-            "reviewedAt": None,
-            "sources": [],
-            "lines": {},
-            "vitolaRenames": {},
-            "shapes": {},
-            "keepSeparate": [],
-            "lineNotes": {},
-            "unresolved": [],
-            "_from_audit": {
-                "record_count": len(records),
-                "brand_truncated": truncated,
-                "prefix_overlap_pairs": len(prefix_pairs),
-            },
-        }
-        write_json(WORKLIST_DIR / f"{bslug}.json", stub)
+        if write_worklist:
+            stub = {
+                "brand": brand,
+                "renameBrand": None,
+                "status": "todo",
+                "reviewedAt": None,
+                "sources": [],
+                "lines": {},
+                "vitolaRenames": {},
+                "shapes": {},
+                "keepSeparate": [],
+                "lineNotes": {},
+                "unresolved": [],
+                "_from_audit": {
+                    "record_count": len(records),
+                    "brand_truncated": truncated,
+                    "prefix_overlap_pairs": len(prefix_pairs),
+                },
+            }
+            write_json(WORKLIST_DIR / f"{bslug}.json", stub)
 
     audit = {
-        "source": str(CIGARS_PATH.relative_to(APP.parent) if False else CIGARS_PATH.name),
+        "source": CIGARS_PATH.name,
         "totals": totals,
         "brand_truncated": sorted(brand_truncated),
         "brands": brands_out,
     }
     write_json(OUT_DIR / "taxonomy_audit.json", audit)
-    import json as _json
+    return {
+        "brands": totals["brands"],
+        "records": totals["records"],
+        "brand_truncated": len(brand_truncated),
+        "worklist": len(list(WORKLIST_DIR.glob("*.json"))) if WORKLIST_DIR.exists() else 0,
+        "dims_in_line": totals["has_dimensions_in_line"],
+        "ends_with_shape": totals["ends_with_shape"],
+    }
 
-    print(
-        _json.dumps(
-            {
-                "brands": totals["brands"],
-                "records": totals["records"],
-                "brand_truncated": len(brand_truncated),
-                "worklist": len(list(WORKLIST_DIR.glob("*.json"))),
-                "dims_in_line": totals["has_dimensions_in_line"],
-                "ends_with_shape": totals["ends_with_shape"],
-            },
-            indent=2,
-        )
+
+def main() -> None:
+    ap = argparse.ArgumentParser(description=__doc__)
+    ap.add_argument(
+        "--fail-on-new",
+        action="store_true",
+        help="Exit 1 if any brand/line in cigars.json lacks taxonomy coverage",
     )
+    ap.add_argument(
+        "--no-worklist",
+        action="store_true",
+        help="Do not rewrite taxonomy/_worklist stubs",
+    )
+    ap.add_argument(
+        "--check-only",
+        action="store_true",
+        help="Only run --fail-on-new checks (no audit JSON / worklist writes)",
+    )
+    args = ap.parse_args()
+
+    cigars = load_json(CIGARS_PATH, [])
+    if not isinstance(cigars, list):
+        print("cigars.json is not a list", file=sys.stderr)
+        sys.exit(2)
+
+    if args.fail_on_new or args.check_only:
+        violations = fail_on_new_violations(cigars)
+        if violations:
+            print(json.dumps({"ok": False, "violations": violations}, indent=2, ensure_ascii=False))
+            sys.exit(1)
+        print(json.dumps({"ok": True, "violations": []}, indent=2))
+        if args.check_only:
+            return
+
+    summary = run_audit(write_worklist=not (args.no_worklist or args.fail_on_new))
+    print(json.dumps(summary, indent=2))
 
 
 if __name__ == "__main__":
