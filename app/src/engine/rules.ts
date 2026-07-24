@@ -1,6 +1,8 @@
 // Kalibracija pairing enginea — tezine i tablice komplementarnih okusa.
 // Mijenjaj ovdje ako zelis drugacije ponasanje prijedloga.
 
+import type { Lang, LocalizedText } from "../types";
+
 export const WEIGHTS = {
   base: 36,
   bodyPerStep: 12, // kazna po koraku razlike tijela (0 razlike = pun bonus)
@@ -125,3 +127,56 @@ export const KNOWN_TAGS: Set<string> = new Set([
   ...WRAPPER_AFFINITY.flatMap((w) => w.tags),
   ...POWER_TAGS,
 ]);
+
+// Prikazni nazivi kanonskih tagova (chipovi + reason tekstovi).
+// Ključ = kanonski ID; integrity test traži unos za svaki član KNOWN_TAGS.
+export const TAG_LABELS: Record<string, LocalizedText> = {
+  agava: { hr: "agava", en: "agave" },
+  biljno: { hr: "biljno", en: "herbal" },
+  caj: { hr: "čaj", en: "tea" },
+  cedar: { hr: "cedar", en: "cedar" },
+  citrus: { hr: "citrus", en: "citrus" },
+  cvjetno: { hr: "cvjetno", en: "floral" },
+  dim: { hr: "dim", en: "smoke" },
+  drvo: { hr: "drvo", en: "wood" },
+  duhan: { hr: "duhan", en: "tobacco" },
+  "ester-funk": { hr: "ester-funk", en: "ester funk" },
+  gorko: { hr: "gorko", en: "bitter" },
+  hrast: { hr: "hrast", en: "oak" },
+  jabuka: { hr: "jabuka", en: "apple" },
+  kakao: { hr: "kakao", en: "cocoa" },
+  karamela: { hr: "karamela", en: "caramel" },
+  kava: { hr: "kava", en: "coffee" },
+  kokos: { hr: "kokos", en: "coconut" },
+  koza: { hr: "koža", en: "leather" },
+  kremasto: { hr: "kremasto", en: "creamy" },
+  med: { hr: "med", en: "honey" },
+  melasa: { hr: "melasa", en: "molasses" },
+  mineralno: { hr: "mineralno", en: "mineral" },
+  mlijeko: { hr: "mlijeko", en: "milk" },
+  orasasti: { hr: "orašasti", en: "nutty" },
+  overproof: { hr: "overproof", en: "overproof" },
+  papar: { hr: "papar", en: "pepper" },
+  psenica: { hr: "pšenica", en: "wheat" },
+  slatko: { hr: "slatko", en: "sweet" },
+  "suho-voce": { hr: "suho voće", en: "dried fruit" },
+  "tamno-voce": { hr: "tamno voće", en: "dark fruit" },
+  "trava-slatka": { hr: "slatka trava", en: "sweet grass" },
+  travnato: { hr: "travnato", en: "grassy" },
+  "tropsko-voce": { hr: "tropsko voće", en: "tropical fruit" },
+  vanilija: { hr: "vanilija", en: "vanilla" },
+  vegetalno: { hr: "vegetalno", en: "vegetal" },
+  vino: { hr: "vino", en: "wine" },
+  voce: { hr: "voće", en: "fruit" },
+  zacini: { hr: "začini", en: "spices" },
+  "zacini-slatki": { hr: "slatki začini", en: "sweet spices" },
+  zemljano: { hr: "zemljano", en: "earthy" },
+};
+
+/** Lokalizirani prikaz flavor taga (nakon aliasa → kanonski ID). */
+export function flavorLabel(tag: string, lang: Lang): string {
+  const canonical = normalizeTag(tag);
+  const entry = TAG_LABELS[canonical];
+  if (!entry) return tag;
+  return entry[lang] || entry.hr || tag;
+}

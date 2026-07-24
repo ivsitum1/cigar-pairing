@@ -2,7 +2,7 @@
 // Svako pravilo koje pridonese rezultatu generira dvojezicno objasnjenje.
 
 import type { Cigar, Drink, PairingReason, PairingResult, ServeStyle } from "../types";
-import { COMPLEMENTS, POWER_TAGS, WEIGHTS, WRAPPER_AFFINITY, normalizeTags } from "./rules";
+import { COMPLEMENTS, POWER_TAGS, WEIGHTS, WRAPPER_AFFINITY, flavorLabel, normalizeTags } from "./rules";
 import { personalBrandReason, personalStyleReason, type PersonalPrefs } from "./personal";
 import { applyServe } from "./serve";
 import { applyGeometry } from "./vitolaGeometry";
@@ -101,12 +101,14 @@ export function scorePairing(
       Math.min(shared.length, 3) * WEIGHTS.tagOverlap * serveEffect.aromaFactor,
     );
     score += pts;
+    const sharedHr = shared.slice(0, 3).map((t) => flavorLabel(t, "hr"));
+    const sharedEn = shared.slice(0, 3).map((t) => flavorLabel(t, "en"));
     reasons.push({
       rule: "flavor-shared",
       score: pts,
       text: {
-        hr: `Dijele note: ${shared.slice(0, 3).join(", ")}.`,
-        en: `Shared notes: ${shared.slice(0, 3).join(", ")}.`,
+        hr: `Dijele note: ${sharedHr.join(", ")}.`,
+        en: `Shared notes: ${sharedEn.join(", ")}.`,
       },
     });
   }
@@ -125,12 +127,17 @@ export function scorePairing(
       Math.min(complemented.length, 3) * WEIGHTS.tagComplement * serveEffect.aromaFactor,
     );
     score += pts;
+    const top = complemented.slice(0, 3);
+    const pairLabel = (pair: string, lang: "hr" | "en") => {
+      const [a, b] = pair.split("↔");
+      return `${flavorLabel(a, lang)}↔${flavorLabel(b, lang)}`;
+    };
     reasons.push({
       rule: "flavor-complement",
       score: pts,
       text: {
-        hr: `Note se nadopunjuju: ${complemented.slice(0, 3).join(", ")}.`,
-        en: `Complementary notes: ${complemented.slice(0, 3).join(", ")}.`,
+        hr: `Note se nadopunjuju: ${top.map((p) => pairLabel(p, "hr")).join(", ")}.`,
+        en: `Complementary notes: ${top.map((p) => pairLabel(p, "en")).join(", ")}.`,
       },
     });
   }

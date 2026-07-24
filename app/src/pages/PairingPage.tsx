@@ -48,7 +48,7 @@ const SUGGEST_CATEGORIES: DrinkCategory[] = [
 ];
 
 export function PairingPage() {
-  const { t, lx, cn, lang } = useI18n();
+  const { t, lx, cn, lang, sv } = useI18n();
   const collection = useCollection();
   const [mode, setMode] = useState<Mode>("cigarToDrink");
   const [occasion, setOccasion] = useState<Occasion>("any");
@@ -560,7 +560,11 @@ export function PairingPage() {
                       cigar={selectedCigar as Cigar}
                       drink={result.item}
                       title={result.item.name}
-                      sub={`${t(`cat.${category}` as StringKey)} · ${lx(STYLE_LABELS[result.item.style]) || result.item.style}`}
+                      sub={`${t(`cat.${category}` as StringKey)} · ${lx(STYLE_LABELS[result.item.style]) || result.item.style}${
+                        result.item.serving?.best
+                          ? ` · ${t("serve.best")}: ${sv(result.item.serving.best)}`
+                          : ""
+                      }`}
                       price={formatPrice(result.item.priceEUR)}
                       priceUrl={drinkBuyLink(result.item).href}
                       onOpen={() => setDetail({ kind: "drink", item: result.item })}
