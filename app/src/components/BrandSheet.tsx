@@ -1,43 +1,61 @@
-// Brend stranica: opis + povijest marke i sve njene cigare, sort po ocjeni/cijeni.
+// Brend: priča marke + popis linija (bez vitola imena — Phase 4).
 import { useMemo, useState } from "react";
 import type { Cigar } from "../types";
-import { brandInfo, cigarsByBrand, cigarInRegion, cigarPriceForMarket } from "../data";
+import {
+  brandInfo,
+  brandNode,
+  cigarInRegion,
+  cigarPriceForMarket,
+  linesByBrand,
+} from "../data";
 import { useI18n } from "../i18n";
 import { Meter } from "./ui";
 import { BackButton } from "./BackButton";
 import { MarketFilter } from "./MarketFilter";
 import { useMarket } from "../store/market";
 
-type Sort = "strength" | "price";
+type Sort = "strength" | "price" | "name";
 
 export function BrandSheet({
   brand,
   onClose,
-  onOpenCigar,
+  onOpenLine,
 }: {
   brand: string;
   onClose: () => void;
-  onOpenCigar: (c: Cigar) => void;
+  onOpenLine: (c: Cigar) => void;
 }) {
   const { t, lx, cn } = useI18n();
   const market = useMarket();
-  const [sort, setSort] = useState<Sort>("strength");
+  const [sort, setSort] = useState<Sort>("name");
   const info = brandInfo(brand);
-  const cigars = useMemo(
-    () => cigarsByBrand(brand).filter((c) => cigarInRegion(c, market)),
+  const node = useMemo(() => brandNode(brand), [brand]);
+  const lines = useMemo(
+    () => linesByBrand(brand).filter((c) => cigarInRegion(c, market)),
     [brand, market],
   );
 
   const sorted = useMemo(() => {
-    const list = [...cigars];
+    const list = [...lines];
     if (sort === "price") {
       const p = (c: Cigar) => cigarPriceForMarket(c, market).price ?? 9e9;
       list.sort((a, b) => p(a) - p(b));
-    } else {
+    } else if (sort === "strength") {
       list.sort((a, b) => b.strength - a.strength || b.body - a.body);
     }
     return list;
-  }, [cigars, sort, market]);
+  }, [lines, sort, market]);
+
+  const vitolaInMarket = useMemo(
+    () => lines.reduce((n, c) => n + (c.vitolas?.length ?? 0), 0),
+    [lines],
+  );
+
+  const headerLines =
+    market === "ALL"
+      ? node.lines.filter((c) => c.line !== "Additional Vitolas").length
+      : lines.filter((c) => c.line !== "Additional Vitolas").length;
+  const headerVitolas = market === "ALL" ? node.vitolaCount : vitolaInMarket;
 
   return (
     <div
@@ -68,11 +86,14 @@ export function BrandSheet({
 
         <MarketFilter className="mb-3" />
 
-        <div className="mb-2 flex items-center justify-between">
+        <div className="mb-2 flex items-center justify-between gap-2">
           <span className="text-xs text-dim">
-            {cigars.length} · {t("cat.cigars")}
+            {headerLines} {t("brand.lines")} · {headerVitolas} {t("common.vitolaCountSuffix")}
           </span>
           <div className="flex gap-1.5">
+            <SortChip active={sort === "name"} onClick={() => setSort("name")}>
+              {t("sort.name")}
+            </SortChip>
             <SortChip active={sort === "strength"} onClick={() => setSort("strength")}>
               {t("brand.byStrength")}
             </SortChip>
@@ -90,19 +111,18 @@ export function BrandSheet({
           <div className="space-y-1.5">
             {sorted.map((c) => {
               const mp = cigarPriceForMarket(c, market);
+              const nVit = c.vitolas?.length ?? 0;
               return (
                 <button
                   key={c.id}
-                  onClick={() => onOpenCigar(c)}
+                  type="button"
+                  onClick={() => onOpenLine(c)}
                   className="flex w-full items-center justify-between gap-3 rounded-lg border border-dim/15 bg-cedar px-3 py-2.5 text-left hover:border-zlato/40"
                 >
                   <div className="min-w-0">
                     <div className="truncate font-display text-sm text-papir">{c.line}</div>
                     <div className="truncate text-xs text-dim">
-                      {c.wrapper} ·{" "}
-                      {c.vitolas.length > 1
-                        ? `${c.vitolas.length} ${t("common.vitolaCountSuffix")}`
-                        : c.vitola}
+                      {c.wrapper} · {nVit} {t("common.vitolaCountSuffix")}
                     </div>
                     <div className="mt-1 flex gap-3">
                       <Meter
@@ -125,6 +145,7 @@ export function BrandSheet({
         )}
 
         <button
+          type="button"
           onClick={onClose}
           className="mt-4 w-full rounded-lg border border-zlato/40 py-2.5 font-display text-sm uppercase tracking-widest text-zlato hover:bg-zlato/10"
         >
@@ -146,6 +167,7 @@ function SortChip({
 }) {
   return (
     <button
+      type="button"
       onClick={onClick}
       className={`rounded-full border px-2.5 py-1 text-micro ${
         active ? "border-zlato bg-zlato/15 text-zlato-2" : "border-dim/30 text-dim"

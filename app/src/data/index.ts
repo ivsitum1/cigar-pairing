@@ -1,4 +1,4 @@
-import type { Cigar, Drink, DrinkCategory, Region, RegionFilter } from "../types";
+import type { Cigar, Drink, DrinkCategory, Region, RegionFilter, Vitola } from "../types";
 import { shopsForRegion, REGIONS } from "./shops";
 import rums from "./rums.json";
 import whiskies from "./whiskies.json";
@@ -10,6 +10,7 @@ import tequilas from "./tequilas.json";
 import cigarsJson from "./cigars.json";
 import shoppingJson from "./shopping.json";
 import brandsJson from "./brands.json";
+import cigarIdAliasesJson from "./cigarIdAliases.json";
 import { resolveDefaultVitola } from "../lib/cigarVitola";
 
 export const DRINKS: Record<DrinkCategory, Drink[]> = {
@@ -92,6 +93,40 @@ export const drinkById = (id: string): Drink | undefined =>
 export const cigarById = (id: string): Cigar | undefined =>
   CIGARS.find((c) => c.id === id);
 
+const CIGAR_ID_ALIASES: Record<string, string> =
+  (cigarIdAliasesJson as { aliases?: Record<string, string> }).aliases ?? {};
+
+/** Slug za brand / vitola deep-linkove (ASCII, kebab-case). */
+export function slugifyLabel(label: string): string {
+  return label
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[''`]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+export const brandSlug = (brand: string): string => slugifyLabel(brand);
+
+export const vitolaSlug = (v: Vitola | string): string =>
+  slugifyLabel(typeof v === "string" ? v : v.name);
+
+/** Prati cigarIdAliases.json do kanonskog zapisa (lanac aliasa). */
+export function resolveCigarId(id: string): Cigar | undefined {
+  let cur = id;
+  const seen = new Set<string>();
+  for (;;) {
+    const hit = cigarById(cur);
+    if (hit) return hit;
+    if (seen.has(cur)) return undefined;
+    seen.add(cur);
+    const next = CIGAR_ID_ALIASES[cur];
+    if (!next) return undefined;
+    cur = next;
+  }
+}
+
 export interface BrandInfo {
   country: string;
   founded: string;
@@ -102,13 +137,30 @@ const BRANDS = brandsJson as Record<string, BrandInfo>;
 
 export const brandInfo = (brand: string): BrandInfo | undefined => BRANDS[brand];
 
-export const cigarsByBrand = (brand: string): Cigar[] =>
-  CIGARS.filter((c) => c.brand === brand);
+/** Linije marke: A→Z, linija = ime marke prva (§2). */
+export function linesByBrand(brand: string): Cigar[] {
+  const lines = CIGARS.filter((c) => c.brand === brand);
+  return [...lines].sort((a, b) => {
+    const aCore = a.line === brand ? 0 : 1;
+    const bCore = b.line === brand ? 0 : 1;
+    if (aCore !== bCore) return aCore - bCore;
+    return a.line.localeCompare(b.line);
+  });
+}
+
+/** Alias za linesByBrand — postojeći importi. */
+export const cigarsByBrand = (brand: string): Cigar[] => linesByBrand(brand);
 
 // sve marke koje imaju barem jednu cigaru, sortirano
 export const ALL_BRANDS: string[] = [
   ...new Set(CIGARS.map((c) => c.brand)),
 ].sort((a, b) => a.localeCompare(b));
+
+const BRAND_BY_SLUG = new Map(ALL_BRANDS.map((b) => [brandSlug(b), b]));
+
+export function brandFromSlug(slug: string): string | undefined {
+  return BRAND_BY_SLUG.get(slug);
+}
 
 /** Indeks brenda za katalog / Brand Index (derivacija iz cigars + brands.json). */
 export interface BrandCatalogStats {
@@ -120,13 +172,20 @@ export interface BrandCatalogStats {
   minPriceEUR: number | null;
 }
 
-export function brandCatalogStats(brand: string): BrandCatalogStats {
-  const lines = cigarsByBrand(brand);
+/** Phase 4: brand čvor s linijama (jedan zapis = jedna linija). */
+export interface BrandNode {
+  brand: string;
+  info?: BrandInfo;
+  lines: Cigar[];
+  vitolaCount: number;
+  minPriceEUR: number | null;
+}
+
+export function brandNode(brand: string): BrandNode {
+  const lines = linesByBrand(brand);
   let vitolaCount = 0;
   let minPrice: number | null = null;
-  let hasAdditional = false;
   for (const c of lines) {
-    if (c.line === "Additional Vitolas") hasAdditional = true;
     for (const v of c.vitolas ?? []) {
       vitolaCount += 1;
       if (v.priceEUR != null && (minPrice == null || v.priceEUR < minPrice)) {
@@ -140,10 +199,23 @@ export function brandCatalogStats(brand: string): BrandCatalogStats {
   return {
     brand,
     info: brandInfo(brand),
-    lineCount: lines.filter((c) => c.line !== "Additional Vitolas").length,
+    lines,
     vitolaCount,
-    hasAdditionalVitolas: hasAdditional,
     minPriceEUR: minPrice,
+  };
+}
+
+export const BRAND_INDEX: BrandNode[] = ALL_BRANDS.map(brandNode);
+
+export function brandCatalogStats(brand: string): BrandCatalogStats {
+  const node = brandNode(brand);
+  return {
+    brand: node.brand,
+    info: node.info,
+    lineCount: node.lines.filter((c) => c.line !== "Additional Vitolas").length,
+    vitolaCount: node.vitolaCount,
+    hasAdditionalVitolas: node.lines.some((c) => c.line === "Additional Vitolas"),
+    minPriceEUR: node.minPriceEUR,
   };
 }
 

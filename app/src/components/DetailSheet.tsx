@@ -22,11 +22,13 @@ export function DetailSheet({
   target,
   onClose,
   onOpenBrand,
+  onOpenLine,
   onPair,
 }: {
   target: Item | null;
   onClose: () => void;
   onOpenBrand?: (brand: string) => void;
+  onOpenLine?: (cigar: Cigar) => void;
   onPair?: (target: Item) => void;
 }) {
   const { t } = useI18n();
@@ -72,6 +74,7 @@ export function DetailSheet({
           <CigarDetails
             cigar={active.item}
             onOpenBrand={onOpenBrand}
+            onOpenLine={onOpenLine}
             onOpenCigar={pushCigar}
           />
         ) : (
@@ -162,28 +165,59 @@ export function DetailSheet({
 function CigarDetails({
   cigar,
   onOpenBrand,
+  onOpenLine,
   onOpenCigar,
 }: {
   cigar: Cigar;
   onOpenBrand?: (brand: string) => void;
+  onOpenLine?: (cigar: Cigar) => void;
   onOpenCigar?: (c: Cigar) => void;
 }) {
   const { t, lx, cn, lang } = useI18n();
   const brand = brandInfo(cigar.brand);
+  const vitolaCrumb =
+    cigar.vitolas.length === 1 ? cigar.vitolas[0].name : cigar.vitola;
   return (
     <>
-      <div className="font-display text-xl text-papir">
+      {/* Brand › Line › Vitola — svaki crumb navigira gore */}
+      <div className="mb-2 flex flex-wrap items-center gap-x-1.5 text-xs text-dim">
         {onOpenBrand ? (
           <button
+            type="button"
             onClick={() => onOpenBrand(cigar.brand)}
             className="underline decoration-zlato/40 underline-offset-2 hover:text-zlato-2"
           >
             {cigar.brand}
           </button>
         ) : (
-          cigar.brand
-        )}{" "}
+          <span>{cigar.brand}</span>
+        )}
+        <span aria-hidden>›</span>
+        {onOpenLine ? (
+          <button
+            type="button"
+            onClick={() => onOpenLine(cigar)}
+            className="underline decoration-zlato/40 underline-offset-2 hover:text-zlato-2"
+          >
+            {cigar.line}
+          </button>
+        ) : (
+          <span className="text-zlato-2">{cigar.line}</span>
+        )}
+        {vitolaCrumb ? (
+          <>
+            <span aria-hidden>›</span>
+            <span className="text-papir/90">{vitolaCrumb}</span>
+          </>
+        ) : null}
+      </div>
+
+      <div className="font-display text-xl text-papir">
+        {cigar.brand}{" "}
         <span className="text-zlato-2">{cigar.line}</span>
+        {vitolaCrumb && vitolaCrumb !== cigar.line ? (
+          <span className="text-papir/80"> · {vitolaCrumb}</span>
+        ) : null}
       </div>
       <div className="mt-1 text-sm text-dim">
         {cn(cigar.country)} · {cigar.wrapper}
@@ -191,6 +225,7 @@ function CigarDetails({
           <>
             {" · "}
             <button
+              type="button"
               onClick={() => onOpenBrand(cigar.brand)}
               className="text-zlato hover:text-zlato-2"
             >
