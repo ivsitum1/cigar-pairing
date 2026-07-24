@@ -4,6 +4,7 @@ import { ALL_DRINKS, CIGARS, cigarById, drinkById } from "../data";
 import { useI18n } from "../i18n";
 import { Chip, SectionTitle } from "../components/ui";
 import { CigarRow, DrinkRow } from "../components/cards";
+import { drinkNameLoc } from "../lib/drinkName";
 import { DetailSheet } from "../components/DetailSheet";
 import { BackButton } from "../components/BackButton";
 import {
@@ -15,7 +16,7 @@ import {
 } from "../store/collection";
 
 export function CollectionPage() {
-  const { t, lang } = useI18n();
+  const { t, lx, lang } = useI18n();
   const data = useCollection();
   const [detail, setDetail] = useState<
     { kind: "cigar"; item: Cigar } | { kind: "drink"; item: Drink } | null
@@ -143,7 +144,7 @@ export function CollectionPage() {
                 <span className="font-display text-sm text-papir">
                   {cigar ? `${cigar.brand} ${cigar.line}` : j.cigarId}
                   <span className="text-zlato"> × </span>
-                  {drink ? drink.name : j.drinkId}
+                  {drink ? lx(drinkNameLoc(drink)) : j.drinkId}
                 </span>
                 {j.rating != null && (
                   <span className="shrink-0 text-sm text-zlato-2">{j.rating}/10</span>
@@ -171,7 +172,7 @@ export function CollectionPage() {
 }
 
 function AddPairingSheet({ onClose }: { onClose: () => void }) {
-  const { t } = useI18n();
+  const { t, lx } = useI18n();
   const [cigarId, setCigarId] = useState(CIGARS[0]?.id ?? "");
   const [drinkId, setDrinkId] = useState(ALL_DRINKS[0]?.id ?? "");
   const [rating, setRating] = useState<string>("");
@@ -216,7 +217,7 @@ function AddPairingSheet({ onClose }: { onClose: () => void }) {
             <select value={drinkId} onChange={(e) => setDrinkId(e.target.value)} className={`mt-1 ${selectCls}`}>
               {ALL_DRINKS.filter((d) => d.pairable).map((d) => (
                 <option key={d.id} value={d.id}>
-                  {d.name}
+                  {lx(drinkNameLoc(d))}
                 </option>
               ))}
             </select>

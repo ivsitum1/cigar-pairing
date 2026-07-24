@@ -5,6 +5,7 @@ import { flavorLabel } from "../engine/rules";
 import { brandInfo, cigarShopLinks, cigarShopLinkPrice, formatPrice } from "../data";
 import { REGIONS } from "../data/shops";
 import { drinkBuyLink } from "../lib/drinkBuyLink";
+import { drinkNameLoc } from "../lib/drinkName";
 import { vitolaBlurb } from "../lib/vitolaInfo";
 import { resolveSamplerCigar } from "../lib/samplerLink";
 import { Chip, Meter } from "./ui";
@@ -330,7 +331,7 @@ function DrinkDetails({ drink }: { drink: Drink }) {
   const buy = drinkBuyLink(drink);
   return (
     <>
-      <div className="font-display text-xl text-papir">{drink.name}</div>
+      <div className="font-display text-xl text-papir">{lx(drinkNameLoc(drink))}</div>
       <div className="mt-1 text-sm text-dim">
         {style ? lx(style) : drink.style} · {rgn(drink.region)}
         {drink.abv ? ` · ${drink.abv}%` : ""}

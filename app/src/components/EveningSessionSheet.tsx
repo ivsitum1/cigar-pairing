@@ -3,6 +3,7 @@ import type { Cigar, Drink } from "../types";
 import { useI18n } from "../i18n";
 import { BackButton } from "./BackButton";
 import { logEveningSession } from "../lib/eveningSession";
+import { drinkNameLoc } from "../lib/drinkName";
 
 export function EveningSessionSheet({
   cigars,
@@ -19,7 +20,7 @@ export function EveningSessionSheet({
   onClose: () => void;
   onSaved?: () => void;
 }) {
-  const { t } = useI18n();
+  const { t, lx } = useI18n();
 
   const cigarOptions = useMemo(() => {
     const seen = new Set<string>();
@@ -113,7 +114,7 @@ export function EveningSessionSheet({
             >
               {drinkOptions.map((d) => (
                 <option key={d.id} value={d.id}>
-                  {d.name}
+                  {lx(drinkNameLoc(d))}
                 </option>
               ))}
             </select>

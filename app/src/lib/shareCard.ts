@@ -2,6 +2,7 @@
 // Backup/Export ostaje u store/collection.ts — ovo je samo vizualna kartica.
 
 import type { Cigar, Drink, Lang, PairingReason, ServeStyle } from "../types";
+import { drinkNameLoc } from "./drinkName";
 
 export interface ShareCardModel {
   eyebrow: string; // "DOSJE · SPOJ"
@@ -43,7 +44,7 @@ export function buildShareCardModel(
   return {
     eyebrow: lang === "hr" ? "DOSJE · SPOJ" : "DOSSIER · PAIRING",
     cigarLine: `${cigar.brand} ${cigar.line}${cigarVitola}`,
-    drinkLine: `${drink.name}${serveSuffix}`,
+    drinkLine: `${drinkNameLoc(drink)[lang]}${serveSuffix}`,
     score: Math.round(score),
     reasons: topReasons,
     footer: FOOTER,

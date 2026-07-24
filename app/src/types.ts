@@ -44,6 +44,11 @@ export interface Drink {
   id: string;
   category: DrinkCategory;
   name: string;
+  // Prikazno ime po jeziku. Kada opisno ime sadrži hrvatske riječi
+  // ("Turska kava", "ledena", "tamna mješavina"), ovdje živi prijevod;
+  // vlastiti pojmovi (džezva, cà phê sữa đá) ostaju nepromijenjeni.
+  // Ako izostane, koristi se `name` u oba jezika.
+  nameLoc?: LocalizedText;
   style: string;
   region: string;
   country?: string;
