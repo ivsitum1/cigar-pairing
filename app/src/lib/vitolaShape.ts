@@ -26,15 +26,16 @@ export const SHAPE_FAMILIES: ShapeFamily[] = [
   "figurado",
 ];
 
-// Regex obitelji — specifično prije općenitog. Šiljasti (figurado) i tanki
-// (lancero) idu prvi jer bi ih inače pojeo generički "corona"/"toro".
+// Regex obitelji — specifično prije općenitog. Šiljasti (figurado) i pravi
+// lancero idu prvi; panatela ide u corona, ne u lancero.
 const NAME_RULES: { family: ShapeFamily; match: RegExp }[] = [
   {
     family: "figurado",
     match:
       /figurado|torpedo|belicoso|pir[aá]mide|piramide|pyramid|perfecto|diadema|salomon|culebra/i,
   },
-  { family: "lancero", match: /lancero|pan[ae]tela|laguito/i },
+  // Samo pravi lancero (i cubanska Laguito No.1). Panatela/petit nisu lancero.
+  { family: "lancero", match: /lancero|laguito\s*no\.?\s*1/i },
   {
     family: "churchill",
     match: /churchill|julieta|double corona|doble corona|prominente|presidente|lonsdale|larga corona/i,
@@ -44,7 +45,7 @@ const NAME_RULES: { family: ShapeFamily; match: RegExp }[] = [
   {
     family: "corona",
     match:
-      /corona gorda|gran corona|grand corona|half corona|petit corona|short corona|\bcorona\b|mareva|minuto|\bperla\b|cadete/i,
+      /corona gorda|gran corona|grand corona|half corona|petit corona|short corona|\bcorona\b|mareva|minuto|\bperla\b|cadete|pan[ae]tela/i,
   },
   {
     family: "robusto",
@@ -65,7 +66,11 @@ function familyFromText(text: string | null | undefined): ShapeFamily | null {
 function familyFromGeometry(ring: number | null, len: number | null): ShapeFamily | null {
   if (ring == null) return null;
   if (ring >= GEOMETRY.thickRingMin + 2) return "gordo"; // ≥56
-  if (ring <= GEOMETRY.thinRingMax - 2) return "lancero"; // ≤40
+  // Lancero = tanak I dug (~7"+ × ≤40). Kratki tanki (petit/mini) → corona.
+  if (ring <= GEOMETRY.thinRingMax - 2) {
+    if (len != null && len >= GEOMETRY.longLenMin) return "lancero";
+    return "corona";
+  }
   if (ring <= 45) return "corona";
   if (ring >= GEOMETRY.thickRingMin) return "toro"; // 54–55
   // 46–53: duljina razdvaja robusto (kratko) od toro (dugo)

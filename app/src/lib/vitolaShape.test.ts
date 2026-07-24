@@ -55,7 +55,10 @@ describe("classifyVitola — po nazivu", () => {
     ["Gordo", "gordo"],
     ["Gigante", "gordo"],
     ["Lancero", "lancero"],
-    ["Panetela", "lancero"],
+    ["Petit Lancero", "lancero"],
+    ["Laguito No. 1", "lancero"],
+    ["Panetela", "corona"],
+    ["Petit Panetela", "corona"],
     ["Torpedo", "figurado"],
     ["Belicoso", "figurado"],
     ["Piramide", "figurado"],
@@ -84,8 +87,18 @@ describe("classifyVitola — prioritet i granice", () => {
     expect(classifyVitola(vitola({ name: "??", ring: 60, lengthMM: 150 }))).toBe("gordo");
   });
 
-  it("geometrija: tanak ring bez naziva → lancero", () => {
+  it("geometrija: tanak + dug (≥160mm) bez naziva → lancero", () => {
     expect(classifyVitola(vitola({ name: "??", ring: 38, lengthMM: 178 }))).toBe("lancero");
+  });
+
+  it("geometrija: tanak + kratak nije lancero (petit/mini)", () => {
+    expect(classifyVitola(vitola({ name: "??", ring: 32, lengthMM: 114 }))).toBe("corona");
+    expect(classifyVitola(vitola({ name: "??", ring: 38, lengthMM: 102 }))).toBe("corona");
+    expect(classifyVitola(vitola({ name: "??", ring: 40, lengthMM: 110 }))).toBe("corona");
+  });
+
+  it("geometrija: tanak ring bez duljine nije lancero", () => {
+    expect(classifyVitola(vitola({ name: "??", ring: 38 }))).toBe("corona");
   });
 
   it("geometrija: srednji ring, dugačko → toro; kratko → robusto", () => {
