@@ -1,12 +1,39 @@
 {
   "brand": "Aladino",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-24",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w2_finish deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
   ],
-  "lines": {},
+  "lines": {
+    "85 Aniversario Reserva": {
+      "line": "85 Aniversario Reserva"
+    },
+    "Cameroon": {
+      "line": "Cameroon"
+    },
+    "Cameroon Reserva": {
+      "line": "Cameroon Reserva"
+    },
+    "Connecticut": {
+      "line": "Connecticut"
+    },
+    "Corojo Reserva": {
+      "line": "Corojo Reserva"
+    },
+    "Fuma Noche": {
+      "line": "Fuma Noche"
+    },
+    "Limited Edition": {
+      "line": "Limited Edition"
+    },
+    "Maduro": {
+      "line": "Maduro"
+    }
+  },
   "vitolaRenames": {},
   "shapes": {},
   "keepSeparate": [],

@@ -1,0 +1,35 @@
+{
+  "brand": "Quai d'Orsay",
+  "renameBrand": null,
+  "status": "done",
+  "reviewedAt": "2026-07-24",
+  "sources": [
+    "phase3_w2_finish deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
+  ],
+  "lines": {
+    "Classic": {
+      "line": "Classic"
+    },
+    "Dorsay No. 50/10": {
+      "line": "Dorsay No. 50"
+    },
+    "Dorsay No. 50/25": {
+      "line": "Dorsay No. 50"
+    },
+    "No.50 / No.54": {
+      "line": "Clásica",
+      "vitola": "No.50 / No.54"
+    },
+    "Special Editions": {
+      "line": "Special Editions"
+    }
+  },
+  "vitolaRenames": {},
+  "shapes": {},
+  "keepSeparate": [],
+  "lineNotes": {},
+  "unresolved": [
+    "Quai d'Orsay: Habanos Clásica fold is partial — verify against catalog"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "brand": "Hoyo de Monterrey",
+  "renameBrand": null,
+  "status": "done",
+  "reviewedAt": "2026-07-24",
+  "sources": [
+    "phase3_w2_finish deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
+  ],
+  "lines": {
+    "Classic": {
+      "line": "Classic"
+    },
+    "Destinos (Tr)": {
+      "line": "Destinos (Tr)"
+    },
+    "Elegantes": {
+      "line": "Elegantes"
+    },
+    "Epicure": {
+      "line": "Epicure"
+    },
+    "Le Hoyo": {
+      "line": "Le Hoyo"
+    },
+    "Monterreyes No.4": {
+      "line": "Monterreyes No.4"
+    },
+    "Palmas Extra": {
+      "line": "Palmas Extra"
+    },
+    "Petit Robustos": {
+      "line": "Petit",
+      "vitola": "Robustos"
+    },
+    "Souvenir De Luxe": {
+      "line": "Souvenir De Luxe"
+    }
+  },
+  "vitolaRenames": {},
+  "shapes": {},
+  "keepSeparate": [],
+  "lineNotes": {},
+  "unresolved": [
+    "Hoyo de Monterrey: Habanos Clásica fold is partial — verify against catalog"
+  ]
+}

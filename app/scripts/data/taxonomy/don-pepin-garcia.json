@@ -1,12 +1,45 @@
 {
   "brand": "Don Pépin García",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-24",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w2_finish deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
   ],
-  "lines": {},
+  "lines": {
+    "Don Pepin Garcia 15th Anniversary": {
+      "line": "Pepin Garcia 15th Anniversary"
+    },
+    "Don Pepin Garcia 20th Anniversary": {
+      "line": "Pepin Garcia 20th Anniversary"
+    },
+    "Don Pepin Garcia Clasico 20th Anniversary": {
+      "line": "Pepin Garcia Clasico 20th Anniversary"
+    },
+    "Don Pepin Garcia Cuban Classic": {
+      "line": "Pepin Garcia Cuban Classic"
+    },
+    "Don Pepin Garcia E.R.H.": {
+      "line": "Pepin Garcia E.R.H."
+    },
+    "Don Pepin Garcia Original": {
+      "line": "Pepin Garcia Original"
+    },
+    "Don Pepin Garcia Serie JJ": {
+      "line": "Pepin Garcia Serie JJ"
+    },
+    "Don Pepin Garcia Serie JJ Limited Edition 2025": {
+      "line": "Pepin Garcia Serie JJ Limited Edition 2025"
+    },
+    "Don Pepin Garcia Vegas Cubanas": {
+      "line": "Pepin Garcia Vegas Cubanas"
+    },
+    "Don Pepin Garcia Vintage": {
+      "line": "Pepin Garcia Vintage"
+    }
+  },
   "vitolaRenames": {},
   "shapes": {},
   "keepSeparate": [

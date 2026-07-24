@@ -1,12 +1,42 @@
 {
   "brand": "Dos Santos",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-24",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w2_finish deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
   ],
-  "lines": {},
+  "lines": {
+    "Condal": {
+      "line": "Condal"
+    },
+    "Consul Maduro Vintage": {
+      "line": "Consul Maduro Vintage"
+    },
+    "La Regenta": {
+      "line": "La Regenta"
+    },
+    "La Regenta 1921": {
+      "line": "La Regenta 1921"
+    },
+    "La Regenta 1921 Anejo Rum Barrel Aged": {
+      "line": "La Regenta 1921 Anejo Rum Barrel Aged"
+    },
+    "La Regenta 1921 Maduro": {
+      "line": "La Regenta 1921 Maduro"
+    },
+    "La Regenta Especial Edicion Especiales Maduro": {
+      "line": "La Regenta Especial Edicion Especiales Maduro"
+    },
+    "La Regenta Especial Edicion Maduro": {
+      "line": "La Regenta Especial Edicion Maduro"
+    },
+    "La Regenta Maduro": {
+      "line": "La Regenta Maduro"
+    }
+  },
   "vitolaRenames": {},
   "shapes": {},
   "keepSeparate": [

@@ -1,12 +1,48 @@
 {
   "brand": "Avo",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-24",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w2_finish deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
   ],
-  "lines": {},
+  "lines": {
+    "Classic": {
+      "line": "Classic"
+    },
+    "Expresivo": {
+      "line": "Expresivo"
+    },
+    "Heritage": {
+      "line": "Heritage"
+    },
+    "Heritage Special": {
+      "line": "Heritage Special"
+    },
+    "Limited Editions Classic Covers 2017 Improvisation": {
+      "line": "Limited Editions Classic Covers 2017 Improvisation"
+    },
+    "Limited Editions Expressions 2024": {
+      "line": "Limited Editions Expressions 2024"
+    },
+    "Syncro": {
+      "line": "Syncro"
+    },
+    "Syncro Nicaragua Fogata": {
+      "line": "Syncro Nicaragua Fogata"
+    },
+    "Syncro Special": {
+      "line": "Syncro Special"
+    },
+    "XO Legato": {
+      "line": "XO Legato"
+    },
+    "XO Notturno": {
+      "line": "XO Notturno"
+    }
+  },
   "vitolaRenames": {},
   "shapes": {},
   "keepSeparate": [

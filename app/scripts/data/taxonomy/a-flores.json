@@ -1,12 +1,39 @@
 {
   "brand": "A. Flores",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-24",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w2_finish deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
   ],
-  "lines": {},
+  "lines": {
+    "AFR-75": {
+      "line": "AFR-75"
+    },
+    "Connecticut Valley Reserve Azul": {
+      "line": "Connecticut Valley Reserve Azul"
+    },
+    "Connecticut Valley Reserve Roja": {
+      "line": "Connecticut Valley Reserve Roja"
+    },
+    "El Criollito": {
+      "line": "El Criollito"
+    },
+    "Gran Reserva Corojo": {
+      "line": "Gran Reserva Corojo"
+    },
+    "Gran Reserva Desflorado": {
+      "line": "Gran Reserva Desflorado"
+    },
+    "Gran Reserva Maduro": {
+      "line": "Gran Reserva Maduro"
+    },
+    "Gran Reserva Sun Grown": {
+      "line": "Gran Reserva Sun Grown"
+    }
+  },
   "vitolaRenames": {},
   "shapes": {},
   "keepSeparate": [],

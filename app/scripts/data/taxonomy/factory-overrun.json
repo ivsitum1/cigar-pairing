@@ -1,12 +1,33 @@
 {
   "brand": "Factory Overrun",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-24",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w2_finish deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
   ],
-  "lines": {},
+  "lines": {
+    "Dominikanische Republik PDR H.": {
+      "line": "Dominikanische Republik PDR H."
+    },
+    "Dominikanische Republik PDR Maduro Mini": {
+      "line": "Dominikanische Republik PDR Maduro Mini"
+    },
+    "Honduras Maduro": {
+      "line": "Honduras Maduro"
+    },
+    "Honduras Sungrown": {
+      "line": "Honduras Sungrown"
+    },
+    "Mexico &quot;01&quot; Small Batch Nat. Sumatra": {
+      "line": "Mexico &quot;01&quot; Small Batch Nat. Sumatra"
+    },
+    "Nicaragua": {
+      "line": "Nicaragua"
+    }
+  },
   "vitolaRenames": {},
   "shapes": {},
   "keepSeparate": [],

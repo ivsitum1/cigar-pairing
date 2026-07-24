@@ -1,12 +1,33 @@
 {
   "brand": "Holt's",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-24",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w2_finish deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
   ],
-  "lines": {},
+  "lines": {
+    "Classics": {
+      "line": "Classics"
+    },
+    "Factory Specials Maduro": {
+      "line": "Factory Specials Maduro"
+    },
+    "Factory Specials Natural": {
+      "line": "Factory Specials Natural"
+    },
+    "Factory Specials Sun Grown": {
+      "line": "Factory Specials Sun Grown"
+    },
+    "House Selection": {
+      "line": "House Selection"
+    },
+    "House Selection Maduro": {
+      "line": "House Selection Maduro"
+    }
+  },
   "vitolaRenames": {},
   "shapes": {},
   "keepSeparate": [

@@ -1,0 +1,49 @@
+{
+  "brand": "Csc",
+  "renameBrand": null,
+  "status": "done",
+  "reviewedAt": "2026-07-24",
+  "sources": [
+    "phase3_w2_finish deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
+  ],
+  "lines": {
+    "Apache": {
+      "line": "Apache"
+    },
+    "Castro": {
+      "line": "Castro"
+    },
+    "Doble Capa": {
+      "line": "Doble Capa"
+    },
+    "Fire Oak #1": {
+      "line": "Fire Oak #1"
+    },
+    "Fire Oak #2": {
+      "line": "Fire Oak #2"
+    },
+    "Fire Oak #3": {
+      "line": "Fire Oak #3"
+    },
+    "Fire Oak #4": {
+      "line": "Fire Oak #4"
+    },
+    "Genios": {
+      "line": "Genios"
+    },
+    "Winston Dream": {
+      "line": "Winston Dream"
+    },
+    "Xplosivo": {
+      "line": "Xplosivo"
+    }
+  },
+  "vitolaRenames": {},
+  "shapes": {},
+  "keepSeparate": [],
+  "lineNotes": {},
+  "unresolved": [
+    "Csc: brand name looks truncated/ambiguous — renameBrand later"
+  ]
+}

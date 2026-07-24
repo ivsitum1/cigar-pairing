@@ -1,27 +1,43 @@
 {
   "brand": "Matilde",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-24",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w2_finish deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
   ],
   "lines": {
-    "Oscura Bravo": {
-      "line": "Oscura",
-      "vitola": "Bravo"
+    "Exposure No. 1": {
+      "line": "Exposure No. 1"
     },
-    "Quadrata Bravo": {
-      "line": "Quadrata",
-      "vitola": "Bravo"
+    "Exposure No. 2": {
+      "line": "Exposure No. 2"
     },
-    "Renacer Bravo": {
-      "line": "Renacer",
-      "vitola": "Bravo"
+    "Oscura": {
+      "line": "Oscura"
     },
-    "Serena Bravo": {
-      "line": "Serena",
-      "vitola": "Bravo"
+    "Para Jose Seijas": {
+      "line": "Para Jose Seijas"
+    },
+    "Quadrata": {
+      "line": "Quadrata"
+    },
+    "Renacer": {
+      "line": "Renacer"
+    },
+    "Serena": {
+      "line": "Serena"
+    },
+    "Serena Bravo Maduro": {
+      "line": "Serena Bravo Maduro"
+    },
+    "Serena Maduro": {
+      "line": "Serena Maduro"
+    },
+    "Special Edition": {
+      "line": "Special Edition"
     }
   },
   "vitolaRenames": {},
