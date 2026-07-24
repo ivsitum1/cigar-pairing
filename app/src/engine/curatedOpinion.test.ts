@@ -100,6 +100,46 @@ describe("curatedPairingOpinion — tri zone (pohvala / null / upozorenje)", () 
     }
   });
 
+  it("EN kurirani tekst ne propušta sirove hrvatske tagove (kakao/karamela/zacini…)", () => {
+    // Regres: alwaysUniqueBody je zajedničke note lijepio kao sirove ID-jeve,
+    // pa se u engleskom prikazu vidjelo "kakao", "karamela", "zacini".
+    const LEAK = /\b(kakao|karamela|zacini|začini|vanilija|hrast|koza|koža|drvo|cvjetno|travnato|orasasti|orašasti|zemljano|melasa|kremasto|mlijeko|suho-voce|tamno-voce|voce)\b/;
+    const sampleCigars = CIGARS.filter((c) =>
+      /aj fernandez|oliva|arturo fuente|davidoff|1502/i.test(c.brand),
+    ).slice(0, 20);
+    const drinks = ALL_DRINKS.filter((d) => d.pairable);
+    let checkedPraise = 0;
+    for (const cigar of sampleCigars) {
+      for (const drink of drinks) {
+        const { score, reasons } = scorePairing(cigar, drink);
+        const op = curatedPairingOpinion(cigar, drink, reasons, score);
+        if (!op || op.tone !== "praise") continue;
+        checkedPraise++;
+        expect(op.text.en, `${cigar.brand} ${cigar.line} + ${drink.name}`).not.toMatch(LEAK);
+      }
+    }
+    expect(checkedPraise).toBeGreaterThan(0);
+  }, 20_000);
+
+  it("kurirani okvir ne ponavlja ime pića ni tijelo dvaput (čitljivost)", () => {
+    // Regres: "…and X — … X sit in the same weight class — neither overpowers…".
+    const cigar = CIGARS.find((c) => /1502/i.test(c.brand))!;
+    const ranked = pairDrinksForCigar(cigar, ALL_DRINKS).filter((r) => r.score >= 80);
+    expect(ranked.length).toBeGreaterThan(0);
+    for (const r of ranked) {
+      const op = curatedPairingOpinion(cigar, r.item, r.reasons, r.score)!;
+      // Format je "<cigara> and <piće> — <tijelo>"; ime pića stoji u prefiksu,
+      // pa tijelo (nakon prvog " — ") ne smije ponovno spominjati ime pića.
+      const body = op.text.en.slice(op.text.en.indexOf(" — ") + 3);
+      const firstWord = r.item.name.split(/[\s/(]/)[0];
+      if (firstWord.length >= 4) {
+        expect(body, `"${firstWord}" ponovljen u tijelu: ${op.text.en}`).not.toContain(firstWord);
+      }
+      // "neither overpowers" (iz blurba) ne smije se dodatno ponavljati u okviru
+      expect(op.text.en.match(/neither overpowers/g)?.length ?? 0).toBeLessThanOrEqual(1);
+    }
+  });
+
   it("zone su dosljedne: >=80 jedinstvena pohvala, sredina null, <=45 upozorenje", () => {
     const sampleCigars = CIGARS.filter((c) =>
       /aj fernandez|oliva|arturo fuente|davidoff/i.test(c.brand),

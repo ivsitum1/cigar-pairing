@@ -34,6 +34,18 @@ describe("pairingBlurb / pairingNarrative", () => {
     expect(n.en.length).toBeGreaterThan(b.en.length);
   });
 
+  it("EN narrative lokalizira zajedničke note (bez sirovih hrvatskih tagova)", () => {
+    // Regres: "Shared notes: kakao" u engleskom tekstu.
+    const LEAK = /Shared notes:[^.]*\b(kakao|karamela|zacini|vanilija|hrast|voce|suho-voce)\b/;
+    for (const cigar of cigars.slice(0, 30)) {
+      for (const drink of rums) {
+        const { score, reasons } = scorePairing(cigar, drink);
+        const n = pairingNarrative(cigar, drink, reasons, score);
+        expect(n.en, `${cigar.brand} ${cigar.line} + ${drink.name}`).not.toMatch(LEAK);
+      }
+    }
+  });
+
   it("handles empty reasons without throwing", () => {
     const cigar = byId(cigars, "cig-macanudo-cafe");
     const drink = byId(rums, "rum-doorly-s-xo-foursquare");
