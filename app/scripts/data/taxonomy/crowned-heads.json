@@ -1,12 +1,50 @@
 {
   "brand": "Crowned Heads",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-24",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w2_finish deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
   ],
-  "lines": {},
+  "lines": {
+    "Azul y Oro": {
+      "line": "Azul y Oro"
+    },
+    "Belgian Blue": {
+      "line": "Belgian Blue"
+    },
+    "Court Reserve XVIII": {
+      "line": "Court Reserve XVIII"
+    },
+    "Court Serie E Edmundo": {
+      "line": "Court Serie E Edmundo"
+    },
+    "Four Kicks": {
+      "line": "Four Kicks"
+    },
+    "Four Kicks Capa Especial": {
+      "line": "Four Kicks",
+      "vitola": "Capa Especial"
+    },
+    "Four Kicks Capa Especial Gorda": {
+      "line": "Four Kicks",
+      "vitola": "Capa Especial Gorda"
+    },
+    "Las Calaveras 2024 LC54": {
+      "line": "Las Calaveras 2024 LC54"
+    },
+    "Le Carême": {
+      "line": "Le Carême"
+    },
+    "Luminosa": {
+      "line": "Luminosa"
+    },
+    "Mil Dias": {
+      "line": "Mil Dias"
+    }
+  },
   "vitolaRenames": {},
   "shapes": {},
   "keepSeparate": [

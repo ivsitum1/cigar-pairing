@@ -1,12 +1,46 @@
 {
   "brand": "Alfambra",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-24",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w2_finish deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
   ],
-  "lines": {},
+  "lines": {
+    "Boutique G": {
+      "line": "Boutique G"
+    },
+    "Classic Orange Serie N No. 13 Toro": {
+      "line": "Classic Orange Serie N No. 13",
+      "vitola": "Toro"
+    },
+    "Classic Orange Serie N No. 5": {
+      "line": "Classic Orange Serie N No. 5"
+    },
+    "El Brujito 10 Aniversario": {
+      "line": "El Brujito 10 Aniversario"
+    },
+    "El Brujito F1": {
+      "line": "El Brujito F1"
+    },
+    "El Brujito F2": {
+      "line": "El Brujito F2"
+    },
+    "El Brujito F3": {
+      "line": "El Brujito F3"
+    },
+    "El Brujito Serie Oro": {
+      "line": "El Brujito Serie Oro"
+    },
+    "Seleccion": {
+      "line": "Seleccion"
+    },
+    "Tradición Tabacalera": {
+      "line": "Tradición Tabacalera"
+    }
+  },
   "vitolaRenames": {},
   "shapes": {},
   "keepSeparate": [],

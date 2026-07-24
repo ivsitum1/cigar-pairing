@@ -1,12 +1,54 @@
 {
   "brand": "Luciano",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-24",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w2_finish deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
   ],
-  "lines": {},
+  "lines": {
+    "Dreamer": {
+      "line": "Dreamer"
+    },
+    "Dreamer de Luxe": {
+      "line": "Dreamer de Luxe"
+    },
+    "Foreign Affairs": {
+      "line": "Foreign Affairs"
+    },
+    "Maria Lucia": {
+      "line": "Maria Lucia"
+    },
+    "Mas Igneus": {
+      "line": "Mas Igneus"
+    },
+    "Sergeant Sergeant": {
+      "line": "Sergeant"
+    },
+    "Tiago Clasico Maduro": {
+      "line": "Tiago Clasico Maduro"
+    },
+    "Tiago Clasico Natural": {
+      "line": "Tiago Clasico Natural"
+    },
+    "Tiago Clasico Sumatra": {
+      "line": "Tiago Clasico Sumatra"
+    },
+    "Tiago Familia Elegida Connecticut": {
+      "line": "Tiago Familia Elegida Connecticut"
+    },
+    "Tiago Familia Elegida San Andrés": {
+      "line": "Tiago Familia Elegida San Andrés"
+    },
+    "Underrated": {
+      "line": "Underrated"
+    },
+    "Y Panda": {
+      "line": "Y Panda"
+    }
+  },
   "vitolaRenames": {},
   "shapes": {},
   "keepSeparate": [

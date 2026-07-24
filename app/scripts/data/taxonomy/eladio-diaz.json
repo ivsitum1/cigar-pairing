@@ -1,12 +1,42 @@
 {
   "brand": "Eladio Diaz",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-24",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w2_finish deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
   ],
-  "lines": {},
+  "lines": {
+    "71st Aniversario": {
+      "line": "71st Aniversario"
+    },
+    "72nd Aniversario": {
+      "line": "72nd Aniversario"
+    },
+    "Before And After Legado": {
+      "line": "Before And After Legado"
+    },
+    "Before And After Mi Familia": {
+      "line": "Before And After Mi Familia"
+    },
+    "Before And After Pasion": {
+      "line": "Before And After Pasion"
+    },
+    "La Diana": {
+      "line": "La Diana"
+    },
+    "La Diana / Anniversary": {
+      "line": "La Diana / Anniversary"
+    },
+    "Limited Edition 71th Anniversary": {
+      "line": "Limited Edition 71th Anniversary"
+    },
+    "Limited Edition 72th Anniversary": {
+      "line": "Limited Edition 72th Anniversary"
+    }
+  },
   "vitolaRenames": {},
   "shapes": {},
   "keepSeparate": [],

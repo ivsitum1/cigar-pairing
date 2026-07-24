@@ -1,15 +1,44 @@
 {
   "brand": "Balmoral",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-24",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w2_finish deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
   ],
   "lines": {
-    "Dominican Selection SMALL": {
-      "line": "Dominican Selection",
-      "vitola": "Small Panetela"
+    "Añejo XO": {
+      "line": "Añejo XO"
+    },
+    "Dominican Selection": {
+      "line": "Dominican Selection"
+    },
+    "Puro Dominicana Masivo": {
+      "line": "Puro Dominicana Masivo"
+    },
+    "Puro Dominicana Petit": {
+      "line": "Puro Dominicana",
+      "vitola": "Petit"
+    },
+    "Puro Nicaragua Masivo": {
+      "line": "Puro Nicaragua Masivo"
+    },
+    "Puro Nicaragua Petit FT": {
+      "line": "Puro Nicaragua Petit FT"
+    },
+    "Royal Selection Claro": {
+      "line": "Royal Selection Claro"
+    },
+    "Royal Selection Maduro": {
+      "line": "Royal Selection Maduro"
+    },
+    "Royal Selection Reserva": {
+      "line": "Royal Selection Reserva"
+    },
+    "Serie Signaturas Dueto": {
+      "line": "Serie Signaturas Dueto"
     }
   },
   "vitolaRenames": {},

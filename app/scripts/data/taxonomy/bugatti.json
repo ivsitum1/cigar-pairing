@@ -1,12 +1,33 @@
 {
   "brand": "Bugatti",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-24",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w2_finish deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
   ],
-  "lines": {},
+  "lines": {
+    "Ambassador": {
+      "line": "Ambassador"
+    },
+    "Monte Carlo": {
+      "line": "Monte Carlo"
+    },
+    "Monte Carlo Especial Gold DN": {
+      "line": "Monte Carlo Especial Gold DN"
+    },
+    "Quattro Claro": {
+      "line": "Quattro Claro"
+    },
+    "Quattro MADURO": {
+      "line": "Quattro MADURO"
+    },
+    "Signature": {
+      "line": "Signature"
+    }
+  },
   "vitolaRenames": {},
   "shapes": {},
   "keepSeparate": [

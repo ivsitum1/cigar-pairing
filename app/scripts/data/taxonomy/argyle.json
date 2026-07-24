@@ -1,12 +1,48 @@
 {
   "brand": "Argyle",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-24",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w2_finish deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
   ],
-  "lines": {},
+  "lines": {
+    "A-Bomb": {
+      "line": "A-Bomb"
+    },
+    "Banquet Selection": {
+      "line": "Banquet Selection"
+    },
+    "Candela": {
+      "line": "Candela"
+    },
+    "Connecticut": {
+      "line": "Connecticut"
+    },
+    "Conundrum": {
+      "line": "Conundrum"
+    },
+    "Dark Corojo": {
+      "line": "Dark Corojo"
+    },
+    "It's a Boy / It's a Girl It's a Boy": {
+      "line": "It's a Boy / It's a Girl It's a Boy"
+    },
+    "It's a Boy / It's a Girl It's a Girl": {
+      "line": "It's a Boy / It's a Girl It's a Girl"
+    },
+    "Maduro": {
+      "line": "Maduro"
+    },
+    "Turf Club": {
+      "line": "Turf Club"
+    },
+    "White Glove": {
+      "line": "White Glove"
+    }
+  },
   "vitolaRenames": {},
   "shapes": {},
   "keepSeparate": [],

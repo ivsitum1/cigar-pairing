@@ -1,12 +1,54 @@
 {
   "brand": "Meerapfel",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-24",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w2_finish deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
   ],
-  "lines": {},
+  "lines": {
+    "Behind Scenes Gordo V": {
+      "line": "Behind Scenes Gordo V"
+    },
+    "Behind Scenes I": {
+      "line": "Behind Scenes I"
+    },
+    "Behind Scenes II": {
+      "line": "Behind Scenes II"
+    },
+    "Behind Scenes III": {
+      "line": "Behind Scenes III"
+    },
+    "Behind Scenes Short IV": {
+      "line": "Behind Scenes Short IV"
+    },
+    "Behind Scenes VI": {
+      "line": "Behind Scenes VI"
+    },
+    "Ernest": {
+      "line": "Ernest"
+    },
+    "La Estancia Edicion Exclusiva EE 50": {
+      "line": "La Estancia Edicion Exclusiva EE 50"
+    },
+    "La Estancia Edicion Exclusiva EE 52": {
+      "line": "La Estancia Edicion Exclusiva EE 52"
+    },
+    "La Estancia Edicion Exclusiva EE 56": {
+      "line": "La Estancia Edicion Exclusiva EE 56"
+    },
+    "Machetero Bundles": {
+      "line": "Machetero Bundles"
+    },
+    "Machetero Exclusiva": {
+      "line": "Machetero Exclusiva"
+    },
+    "Meier": {
+      "line": "Meier"
+    }
+  },
   "vitolaRenames": {},
   "shapes": {},
   "keepSeparate": [],

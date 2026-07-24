@@ -1,15 +1,31 @@
 {
   "brand": "Paradiso",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-24",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w2_finish deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
   ],
   "lines": {
-    "Quintessence Majestic": {
-      "line": "Quintessence",
-      "vitola": "Majestic"
+    "Elegancia": {
+      "line": "Elegancia"
+    },
+    "Fabuloso": {
+      "line": "Fabuloso"
+    },
+    "Quintessence": {
+      "line": "Quintessence"
+    },
+    "Revelation Legend": {
+      "line": "Revelation Legend"
+    },
+    "Revelation Odyssey": {
+      "line": "Revelation Odyssey"
+    },
+    "Revelation Prophet": {
+      "line": "Revelation Prophet"
     }
   },
   "vitolaRenames": {},

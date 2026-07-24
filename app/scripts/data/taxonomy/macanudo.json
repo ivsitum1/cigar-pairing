@@ -1,12 +1,54 @@
 {
   "brand": "Macanudo",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-24",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w2_finish deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
   ],
-  "lines": {},
+  "lines": {
+    "Café": {
+      "line": "Café"
+    },
+    "Criollo 98": {
+      "line": "Criollo 98"
+    },
+    "Cru Royale": {
+      "line": "Cru Royale"
+    },
+    "Emissary Espana": {
+      "line": "Emissary Espana"
+    },
+    "Gold Label": {
+      "line": "Gold Label"
+    },
+    "Hampton Court": {
+      "line": "Hampton Court"
+    },
+    "Heritage Nuevo": {
+      "line": "Heritage Nuevo"
+    },
+    "Inspirado": {
+      "line": "Inspirado"
+    },
+    "Legacy": {
+      "line": "Legacy"
+    },
+    "Limited Edition": {
+      "line": "Limited Edition"
+    },
+    "Limited Edition Vintage 2010": {
+      "line": "Limited Edition Vintage 2010"
+    },
+    "M Dark": {
+      "line": "M Dark"
+    },
+    "Motivo": {
+      "line": "Motivo"
+    }
+  },
   "vitolaRenames": {},
   "shapes": {},
   "keepSeparate": [

@@ -1,12 +1,33 @@
 {
   "brand": "Room101",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-24",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w2_finish deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
   ],
-  "lines": {},
+  "lines": {
+    "Farce": {
+      "line": "Farce"
+    },
+    "Room 101 Connecticut 404C": {
+      "line": "Room 101 Connecticut 404C"
+    },
+    "Room 101 Farce Original": {
+      "line": "Room 101 Farce Original"
+    },
+    "Room 101 Johnny Tobacconaut": {
+      "line": "Room 101 Johnny Tobacconaut"
+    },
+    "Room 101 Johnny Tobacconaut Ranflactic": {
+      "line": "Room 101 Johnny Tobacconaut Ranflactic"
+    },
+    "Room 101 Series Black Scale": {
+      "line": "Room 101 Series Black Scale"
+    }
+  },
   "vitolaRenames": {},
   "shapes": {},
   "keepSeparate": [

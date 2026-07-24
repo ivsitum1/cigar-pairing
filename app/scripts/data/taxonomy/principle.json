@@ -1,12 +1,52 @@
 {
   "brand": "Principle",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-24",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w2_finish deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
   ],
-  "lines": {},
+  "lines": {
+    "Accomplice Blue Label Connecticut": {
+      "line": "Accomplice Blue Label Connecticut"
+    },
+    "Accomplice Decienne": {
+      "line": "Accomplice Decienne"
+    },
+    "Accomplice Maduro": {
+      "line": "Accomplice Maduro"
+    },
+    "Accomplice Purple Label Corojo": {
+      "line": "Accomplice Purple Label Corojo"
+    },
+    "Accomplice White Label": {
+      "line": "Accomplice White Label"
+    },
+    "Aviator Grande": {
+      "line": "Aviator",
+      "vitola": "Grande"
+    },
+    "Bad s": {
+      "line": "Bad s"
+    },
+    "Especial dunkel": {
+      "line": "Especial dunkel"
+    },
+    "Especial hell": {
+      "line": "Especial hell"
+    },
+    "Especial white gold": {
+      "line": "Especial white gold"
+    },
+    "Frothy Monkey": {
+      "line": "Frothy Monkey"
+    },
+    "Martinique": {
+      "line": "Martinique"
+    }
+  },
   "vitolaRenames": {},
   "shapes": {},
   "keepSeparate": [],

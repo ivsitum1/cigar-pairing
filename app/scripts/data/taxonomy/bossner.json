@@ -1,12 +1,51 @@
 {
   "brand": "Bossner",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-24",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w2_finish deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
   ],
-  "lines": {},
+  "lines": {
+    "Black Edition": {
+      "line": "Black Edition"
+    },
+    "Classic": {
+      "line": "Classic"
+    },
+    "Classic Ekaterina I.": {
+      "line": "Classic Ekaterina I."
+    },
+    "Classic Elizabeth I.": {
+      "line": "Classic Elizabeth I."
+    },
+    "Classic T.E. Glastubo": {
+      "line": "Classic T.E. Glastubo"
+    },
+    "Maduro Ekaterina I.": {
+      "line": "Maduro Ekaterina I."
+    },
+    "Maduro Elizabeth I.": {
+      "line": "Maduro Elizabeth I."
+    },
+    "Maduro Glastubo": {
+      "line": "Maduro Glastubo"
+    },
+    "Maduro Rolando": {
+      "line": "Maduro Rolando"
+    },
+    "Reserva Ivan IV.": {
+      "line": "Reserva Ivan IV."
+    },
+    "Reserva Richard I. Maduro": {
+      "line": "Reserva Richard I. Maduro"
+    },
+    "Reserva Richard I. Moreno": {
+      "line": "Reserva Richard I. Moreno"
+    }
+  },
   "vitolaRenames": {},
   "shapes": {},
   "keepSeparate": [],
