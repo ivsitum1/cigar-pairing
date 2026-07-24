@@ -1,15 +1,17 @@
 {
   "brand": "Jesus",
-  "renameBrand": null,
+  "renameBrand": "Jesus Fuego",
   "status": "done",
   "reviewedAt": "2026-07-24",
   "sources": [
     "phase3_w3_w4_finish W4",
-    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3",
+    "https://www.cigarworld.de/en/zigarren/nicaragua/jesus-fuego-origen-natural-90013473",
+    "brand-polish truncated rename"
   ],
   "lines": {
     "Fuego Origen Natural Spirit of Caribe": {
-      "line": "Fuego Origen Natural Spirit of Caribe"
+      "line": "Origen Natural Spirit of Caribe"
     }
   },
   "vitolaRenames": {},

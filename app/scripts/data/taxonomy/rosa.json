@@ -1,22 +1,25 @@
 {
   "brand": "Rosa",
-  "renameBrand": null,
+  "renameBrand": "Rosa Nicaragua",
   "status": "done",
   "reviewedAt": "2026-07-24",
   "sources": [
     "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
     "phase3_w3_w4_finish W3",
-    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3",
+    "https://www.cigarworld.de/rosa-nicaragua",
+    "https://www.hacico.de/en/rosa-nicaragua",
+    "brand-polish truncated rename"
   ],
   "lines": {
     "Nicaragua Connecticut": {
-      "line": "Nicaragua Connecticut"
+      "line": "Connecticut"
     },
     "Nicaragua Esteli": {
-      "line": "Nicaragua Esteli"
+      "line": "Esteli"
     },
     "Nicaragua Jalapa": {
-      "line": "Nicaragua Jalapa"
+      "line": "Jalapa"
     }
   },
   "vitolaRenames": {},

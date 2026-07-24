@@ -1,11 +1,14 @@
 {
   "brand": "Csc",
-  "renameBrand": null,
+  "renameBrand": "CSC",
   "status": "done",
   "reviewedAt": "2026-07-24",
   "sources": [
     "phase3_w2_finish deterministic remaps",
-    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3",
+    "https://cigarseedcompany.eu/en/collections/cigars",
+    "https://www.cigarworld.de/en/zigarren/nicaragua/csc-fire-oak-90016477",
+    "brand-polish truncated rename"
   ],
   "lines": {
     "Apache": {
