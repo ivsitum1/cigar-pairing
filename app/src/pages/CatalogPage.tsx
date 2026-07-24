@@ -19,6 +19,12 @@ import { BrandSheet } from "../components/BrandSheet";
 import { MarketFilter } from "../components/MarketFilter";
 import { VitolaPicker } from "../components/VitolaPicker";
 import { applyVitola, needsVitolaPick, uniqueVitolas } from "../lib/cigarVitola";
+import {
+  SHAPE_FAMILIES,
+  cigarShapes,
+  firstVitolaOfShape,
+  type ShapeFamily,
+} from "../lib/vitolaShape";
 import { useMarket, setMarket } from "../store/market";
 
 const norm = (s: string) =>
@@ -86,6 +92,7 @@ export function CatalogPage({
   const [query, setQuery] = useState("");
   const [styleFilter, setStyleFilter] = useState<string | null>(null);
   const [strengthFilter, setStrengthFilter] = useState<number | null>(null);
+  const [shapeFilter, setShapeFilter] = useState<ShapeFamily | null>(null);
   const [cleanOnly, setCleanOnly] = useState(false);
   // cigare se otvaraju na indeksu brendova (lakše se učitava od ~3000 cigara i
   // ima abecedu za skok); puni popis cigara je iza istog "Brendovi" gumba
@@ -147,6 +154,15 @@ export function CatalogPage({
 
   const openCigar = (raw: Cigar) => {
     const cigar = cigarById(raw.id) ?? raw;
+    // aktivan filter oblika → otvori odmah tu vitolu (kad tražiš Robusto, ne
+    // biraš ponovno između Churchilla i Corone)
+    if (shapeFilter) {
+      const match = firstVitolaOfShape(cigar, shapeFilter);
+      if (match) {
+        setDetail({ kind: "cigar", item: applyVitola(cigar, match) });
+        return;
+      }
+    }
     if (needsVitolaPick(cigar)) {
       setPendingCigar(cigar);
       return;
@@ -162,6 +178,7 @@ export function CatalogPage({
     setTab(next);
     setStyleFilter(null);
     setStrengthFilter(null);
+    setShapeFilter(null);
     setCleanOnly(false);
     setBrowseBrands(next === "cigars");
     setShowShops(false);
@@ -199,7 +216,8 @@ export function CatalogPage({
                 .map((v) => v.name)
                 .join(" ")}`,
             ).includes(norm(q))) &&
-          (strengthFilter == null || c.strength === strengthFilter),
+          (strengthFilter == null || c.strength === strengthFilter) &&
+          (shapeFilter == null || cigarShapes(c).has(shapeFilter)),
       );
       const by: Record<string, (a: Cigar, b: Cigar) => number> = {
         name: (a, b) => a.brand.localeCompare(b.brand) || a.line.localeCompare(b.line),
@@ -210,7 +228,7 @@ export function CatalogPage({
       return [...list].sort(by[sortBy] ?? by.name);
     },
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [tab, q, strengthFilter, market, sortBy, browseBrands],
+    [tab, q, strengthFilter, shapeFilter, market, sortBy, browseBrands],
   );
 
   // zadano rangirano po kvaliteti; ostala sortiranja preko chipova
@@ -237,7 +255,7 @@ export function CatalogPage({
   // kartica brzo otvori; reset kad se promijeni filter/sort/tab
   useEffect(() => {
     setLimit(120);
-  }, [tab, q, strengthFilter, market, sortBy, browseBrands]);
+  }, [tab, q, strengthFilter, shapeFilter, market, sortBy, browseBrands]);
 
   const showRail =
     tab === "cigars" &&
@@ -314,6 +332,24 @@ export function CatalogPage({
           </Chip>
         ))}
       </div>
+
+      {/* filter oblika (vitole) — samo u ravnom popisu cigara */}
+      {tab === "cigars" && !browseBrands && (
+        <div className="no-scrollbar mt-2 flex items-center gap-2 overflow-x-auto">
+          <span className="shrink-0 text-micro uppercase tracking-widest text-dim">
+            {t("filter.shape")}
+          </span>
+          {SHAPE_FAMILIES.map((s) => (
+            <Chip
+              key={s}
+              active={shapeFilter === s}
+              onClick={() => setShapeFilter(shapeFilter === s ? null : s)}
+            >
+              {t(`shape.${s}` as StringKey)}
+            </Chip>
+          ))}
+        </div>
+      )}
 
       {/* tržište uvijek vidljivo za cigare (indeks brendova + popis) */}
       {tab === "cigars" && <MarketFilter className="mt-2" />}
