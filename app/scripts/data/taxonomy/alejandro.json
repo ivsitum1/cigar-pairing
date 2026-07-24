@@ -1,12 +1,24 @@
 {
   "brand": "Alejandro",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-24",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w3_w4_finish W3",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
   ],
-  "lines": {},
+  "lines": {
+    "Lopez Dominicana": {
+      "line": "Lopez Dominicana"
+    },
+    "Lopez Dominicana Maduro": {
+      "line": "Lopez Dominicana Maduro"
+    },
+    "Lopez Nicaragua": {
+      "line": "Lopez Nicaragua"
+    }
+  },
   "vitolaRenames": {},
   "shapes": {},
   "keepSeparate": [
