@@ -226,6 +226,92 @@ ima `HR` bez ijednog HR product linka — hardkodirano u seedu (`enrich-cigars.p
 
 ---
 
+## P4 — Revizija CIJELOG korpusa (isti problemi kod ostalih cigara)
+
+**Grana:** `fix/cigar-corpus-audit`
+**Radi se nakon P1–P3** (jer P1–P3 pokrivaju najgore poznate slučajeve); P4 je
+sustavni sweep da se **isti razredi grešaka nađu i kod svih ostalih ~2395 cigara** i
+svih marki. P1/P2/P3 su bili *primjeri* — pretpostavka je da problema ima šire.
+
+> **Princip:** ne popravljati samo prijavljene stavke, nego **klasu problema** kroz cijeli
+> `cigars.json` + `brands.json`. Sve što nije očito/deterministički → u **review report**,
+> ne pogađati.
+
+### T4.1 — Sweep duplih marki / tržišnih naziva (klasa P1)
+La Aroma de Cuba/del Caribe vjerojatno nije jedini slučaj „ista cigara, dva imena po
+tržištu” ili „ne-kubanski imenjak kubanske marke”.
+- Generiraj kandidate: (a) marke sa sličnim korijenom naziva (npr. `Flor de …`,
+  `San Cristóbal`, `Padrón`/`Padron`, `La Gloria …`), (b) ne-kubanski imenjaci Habanos
+  marki (`(NW)`, „Non-Cuban”), (c) marke iste zemlje + istog blend/proizvođača u blurbu.
+- Alat: skripta koja grupira po normaliziranom nazivu (`norm()` iz `sync-hr-shops.py`) i
+  po proizvođaču spomenutom u `brands.json` blurbu; ispiši u `output/brand_dupe_candidates.json`.
+- **Izlaz = lista kandidata za review**, ne automatski merge (svaki spoj je urednička
+  odluka kao P1).
+
+### T4.2 — Sweep dostupnosti kroz SVE regije (klasa P2)
+P2 je gledao samo HR. Isti hardkod-rizik postoji za **EU i USA** kod kuriranih unosa.
+- Za svaku regiju (`HR`, `EU`, `USA`) provjeri: ima li cigara `markets` unos bez ijednog
+  odgovarajućeg `regionLinks[region]` **i** bez drugog dokaza (product URL na hostu te regije)?
+- EU/USA izvor istine = scrapani `regionLinks` iz `build-market-cigars` pipelinea
+  (CigarWorld / Holt's / Cigars Daily). Kurirani unosi bez tih linkova, a s regijom u
+  `markets`, idu u report.
+- Izlaz: `output/markets_audit_report.json` po regiji (koliko „bez izvora”, popis). Miči
+  neutemeljene regije po istom pravilu kao T2.2; sporno → review.
+- Provjeri i **obrnuto**: cigare koje IMAJU `regionLinks[region]` ali nemaju regiju u
+  `markets` (izgubljena dostupnost).
+
+### T4.3 — Sweep bilješki i prijevoda kroz cijeli korpus (klasa P3)
+Prošire T3 provjere na sve moguće leakove i loše prijevode, u oba smjera:
+- **HR polje sadrži engleski:** regex `\bwrapper\b|Note:|Notes of|mild|medium|full-bodied|
+  spice\b|leather\b|smooth\b` u `notes.hr`.
+- **EN polje sadrži hrvatski / neprevedene tagove:** `pokrov|snage|tijela|Okusi|zacini|
+  koza|orasasti|cedrovina|kremasto|začini|koža` u `notes.en`.
+- **Neprevedeni ASCII tagovi u `flavorTags`** koji se prikazuju bez mapiranja (usporedi s
+  `_TAG_HR` i EN mapom; nađi tagove bez prijevoda u nekoj od mapa).
+- **Strojni kalkovi u `brands.json` blurbovima:** heuristika „HR ≈ riječ-za-riječ EN”
+  (podudaranje redoslijeda tokena, doslovni prijevodi idioma tipa „veliki osnovni”,
+  „velika osnovna”). Ispiši par HR/EN za ručni trijaž u `output/blurb_translation_review.json`.
+- **Prazne/šum bilješke:** `notes.hr`/`notes.en` prazni, „Sinkronizirano iz HR trgovina”,
+  „Dostupno u HR”, ili identični HR==EN (znak da prijevod nije napravljen).
+- **HTML/enkoding artefakti:** `&amp;`, `&quot;`, dvostruki razmaci, `#N` ostaci u
+  `line`/`vitola`/`notes` (primjer: `7-20-4 | Hustler Five &amp; Dime`). Dekodiraj entitete.
+- Regeneriraj kroz ispravljeni `describe-lines.py` (T3.1) gdje je moguće; ostalo (blurbovi,
+  imena linija) u review.
+- **Ciljne provjere = 0** za sve gornje regexe nakon popravka (dokumentiraj u PR-u).
+
+### T4.4 — Ostale konzistentnosti (oportunistički, dok se već prolazi korpus)
+- `country` vrijednosti: dosljedni HR nazivi (`Nikaragva`, ne `Nicaragua`; `Dominikanska
+  Republika`, ne `Dominikana`) — `sync-hr-shops.py:385` npr. koristi „Dominikana”.
+- `wrapper` `"—"` placeholderi na kuriranim unosima koji imaju stvaran wrapper drugdje.
+- `smokeTimeMin`/`format` očiti outlieri (npr. 0 ili >180 min, ring izvan 30–80).
+- Sve nalaze koji nisu očit auto-fix → `output/corpus_audit_findings.md` za review.
+
+### Prihvatljivost P4
+- Svi sweep-report fileovi priloženi u PR (`brand_dupe_candidates.json`,
+  `markets_audit_report.json`, `blurb_translation_review.json`, `corpus_audit_findings.md`).
+- Auto-popravljive klase (leak regexi, HTML entiteti, country normalizacija) = **0**
+  preostalih; verifikacijski one-lineri u PR opisu.
+- Uredničke odluke (dupli brendovi, sumnjiva dostupnost, prepisivanje blurbova) **ostaju
+  u review** s jasnim popisom — ne mergeati te dijelove bez korisnikove potvrde.
+
+---
+
+## Novi problemi koji iskrsnu tijekom rada
+
+Ako Cursor tijekom bilo kojeg zadatka naiđe na problem koji **nije** u ovom planu:
+1. **Ako je očit, deterministički i niskorizičan** (npr. još jedan enkoding artefakt,
+   očita greška u tipu podatka) — **sanira ga** u sklopu odgovarajuće grane i **zabilježi**
+   u `output/corpus_audit_findings.md` (što je bilo, kako je popravljeno).
+2. **Ako je urednički/dvosmislen ili mijenja što korisnik vidi** (spajanje marki, micanje
+   dostupnosti, prepisivanje teksta) — **NE dira**, nego zapiše u findings s prijedlogom i
+   ostavi za review.
+3. Ako otkriće ruši pretpostavku ovog plana (npr. `markets` se negdje računa drukčije) —
+   **STANI**, zapiši, i nastavi s ostalim zadacima koji nisu blokirani.
+
+Cilj: nijedan nalaz se ne gubi. Findings datoteka je jedinstveni dnevnik za review sutra.
+
+---
+
 ## Globalna verifikacija (svaka grana prije push-a)
 
 ```bash
@@ -244,3 +330,6 @@ Ako neka provjera ne prolazi deterministički — **STANI i pitaj**, ne improviz
 - [ ] **P2:** upali HR filter → prođi listu; `hr_reconcile_report.json` spot-check 5–10
       maknutih (jesu li stvarno odsutne iz HR trgovina).
 - [ ] **P1:** potvrdi opciju (A/B/C) i tablicu mapiranja del Caribe ↔ de Cuba prije mergea.
+- [ ] **P4:** prođi sweep-reporte — dupli brendovi (kandidati), dostupnost po EU/USA
+      (bez izvora), lista blurbova za prijevod, `corpus_audit_findings.md`. Potvrdi
+      uredničke odluke; auto-fix klase provjeri da su 0.
