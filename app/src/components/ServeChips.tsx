@@ -15,7 +15,7 @@ export function ServeChips({
   serve: ServeStyle | undefined;
   onChange: (s: ServeStyle | undefined) => void;
 }) {
-  const { t } = useI18n();
+  const { t, sv } = useI18n();
   const available = SERVE_ORDER.filter((s) => (drink.serving[s] ?? 0) > 0);
   if (available.length < 2) return null; // nema smisla birati ako je samo jedan način
 
@@ -27,7 +27,7 @@ export function ServeChips({
         </span>
         {drink.serving.best && (
           <span className="text-micro text-dim/70">
-            · {t("serve.best")}: {drink.serving.best}
+            · {t("serve.best")}: {sv(drink.serving.best)}
           </span>
         )}
       </div>

@@ -28,7 +28,10 @@
    "best": "Cisti ili martini",
    "highball": 2
   },
-  "cigarHint": null,
+  "cigarHint": {
+   "hr": "Most prema cigari je gusta botanika i borovica; kao martini koncentracija drži blažu do srednju cigaru — Connecticut ili mlađu Habano, gdje svježina reže kremasti dim.",
+   "en": "The bridge to a cigar is dense botanicals and juniper; as a martini the concentration holds a mild-to-medium cigar — Connecticut or a younger Habano, where freshness cuts creamy smoke."
+  },
   "notes": {
    "hr": "Referentni contemporary gin — složen botanički profil, odličan čist ili u martiniu.",
    "en": "The reference contemporary gin — a complex botanical profile, excellent neat or in a martini."
@@ -66,7 +69,10 @@
    "best": "Cisti ili martini",
    "highball": 2
   },
-  "cigarHint": null,
+  "cigarHint": {
+   "hr": "Bačveno zaokruženje daje malo više tijela od standardnog Monkeyja; čist ili martini nosi srednju Habano, a začinska botanika pravi most prema Habano wrapperu.",
+   "en": "The barrel rounding gives a touch more body than the standard Monkey; neat or as a martini it carries a medium Habano, and the spiced botanicals bridge to a Habano wrapper."
+  },
   "notes": {
    "hr": "Referentni contemporary gin — složen botanički profil, odličan čist ili u martiniu.",
    "en": "The reference contemporary gin — a complex botanical profile, excellent neat or in a martini."
@@ -104,7 +110,10 @@
    "best": "Cisti ili martini",
    "highball": 2
   },
-  "cigarHint": null,
+  "cigarHint": {
+   "hr": "Most prema cigari je zelena, travnata botanika Islaya; traži laganu do srednju cigaru — čist ili martini, gdje biljna svježina osvježava kremasti Connecticut dim.",
+   "en": "The bridge to a cigar is Islay's green, herbal botanicals; it wants a mild-to-medium cigar — neat or a martini, where the herbal lift refreshes creamy Connecticut smoke."
+  },
   "notes": {
    "hr": "Islay bilje + juniper — kompleksan čist sipper.",
    "en": "Islay botanicals plus juniper — a complex neat sipper."
@@ -142,7 +151,10 @@
    "best": "Cisti ili martini",
    "highball": 2
   },
-  "cigarHint": null,
+  "cigarHint": {
+   "hr": "Most prema cigari je citrus i začin; kao martini drži srednju cigaru, a citrusna svježina reže blaži, kremasti dim bez da ga preglasi.",
+   "en": "The bridge to a cigar is citrus and spice; as a martini it holds a medium cigar, the citrus lift cutting milder, creamy smoke without overpowering it."
+  },
   "notes": {
    "hr": "Australijski premium — složen, odličan čist.",
    "en": "An Australian premium — complex, excellent neat."
@@ -180,7 +192,10 @@
    "best": "Cisti ili martini",
    "highball": 2
   },
-  "cigarHint": null,
+  "cigarHint": {
+   "hr": "Cvjetni profil (ruža, krastavac) je nježan — most je svježina, ne tijelo; traži blagu Connecticut cigaru, gdje G&T ili martini radi kao osvježenje uz laki dim.",
+   "en": "The floral profile (rose, cucumber) is delicate — the bridge is freshness, not body; it wants a mild Connecticut cigar, where a G&T or martini works as a refresher beside light smoke."
+  },
   "notes": {
    "hr": "Klasičan cvjetni profil — pairing s blažom Connecticut cigarom.",
    "en": "A classic floral profile — pairs with a milder Connecticut cigar."
@@ -218,7 +233,10 @@
    "best": "Cisti ili martini",
    "highball": 2
   },
-  "cigarHint": null,
+  "cigarHint": {
+   "hr": "Japanski citrus (yuzu, jabuka) je elegantan i lagan; most je citrusna svježina uz blagu Connecticut ili Cameroon cigaru — čist ili martini da profil ostane koncentriran.",
+   "en": "The Japanese citrus (yuzu, apple) is elegant and light; the bridge is citrus freshness with a mild Connecticut or Cameroon cigar — neat or a martini to keep the profile concentrated."
+  },
   "notes": {
    "hr": "Japanski citrus gin — čist ili martini.",
    "en": "A Japanese citrus gin — neat or in a martini."
@@ -256,7 +274,10 @@
    "best": "Cisti ili martini",
    "highball": 2
   },
-  "cigarHint": null,
+  "cigarHint": {
+   "hr": "Citrus-forward London dry — most prema cigari je koriander i citrus; martini klasik drži srednju Habano, gdje začinska botanika sjeda uz Habano wrapper.",
+   "en": "A citrus-forward London dry — the bridge to a cigar is coriander and citrus; the classic martini holds a medium Habano, the spiced botanicals settling against a Habano wrapper."
+  },
   "notes": {
    "hr": "Premium London dry — citrus-forward, martini klasik.",
    "en": "A premium London dry — citrus-forward, a martini classic."
@@ -294,7 +315,10 @@
    "best": "Cisti ili martini",
    "highball": 2
   },
-  "cigarHint": null,
+  "cigarHint": {
+   "hr": "Citrus-forward London dry — most prema cigari je koriander i citrus; martini klasik drži srednju Habano, gdje začinska botanika sjeda uz Habano wrapper.",
+   "en": "A citrus-forward London dry — the bridge to a cigar is coriander and citrus; the classic martini holds a medium Habano, the spiced botanicals settling against a Habano wrapper."
+  },
   "notes": {
    "hr": "Premium London dry — citrus-forward, martini klasik.",
    "en": "A premium London dry — citrus-forward, a martini classic."
@@ -332,7 +356,10 @@
    "best": "G&T ili martini",
    "highball": 3
   },
-  "cigarHint": null,
+  "cigarHint": {
+   "hr": "Mediteranska botanika (ružmarin, kadulja, borovica) pravi most uz Habano wrapper; najbolje G&T ili martini uz srednju cigaru — začinska svježina prati zemljasti dim.",
+   "en": "Mediterranean botanicals (rosemary, sage, juniper) bridge to a Habano wrapper; best as a G&T or martini beside a medium cigar — the herbal lift tracking earthy smoke."
+  },
   "notes": {
    "hr": "HR premium gin — mediteranski botanički karakter.",
    "en": "A Croatian premium gin — Mediterranean botanical character."
@@ -370,7 +397,10 @@
    "best": "G&T ili martini",
    "highball": 3
   },
-  "cigarHint": null,
+  "cigarHint": {
+   "hr": "Mekši od klasičnog London dry — most je zaobljena borovica; dobar G&T uz srednju cigaru ili martini, gdje blaža žestina ne gazi kremasti dim.",
+   "en": "Softer than a classic London dry — the bridge is rounded juniper; a good G&T beside a medium cigar or a martini, where the gentler heat doesn't trample creamy smoke."
+  },
   "notes": {
    "hr": "Mekši od klasičnog London dry — dobar G&T uz srednju cigaru.",
    "en": "Softer than a classic London dry — a good G&T with a medium cigar."
@@ -408,7 +438,10 @@
    "best": "G&T ili martini",
    "highball": 3
   },
-  "cigarHint": null,
+  "cigarHint": {
+   "hr": "Lokalni craft s mediteranskim biljem — most je začinska svježina uz blažu Habano; G&T ili martini da botanika ostane u prvom planu, bez guranja tijela.",
+   "en": "A local craft with Mediterranean herbs — the bridge is a herbal lift beside a milder Habano; a G&T or martini to keep the botanicals forward, without pushing body."
+  },
   "notes": {
    "hr": "Lokalni craft gin — dobar uz blažu Habano.",
    "en": "A local craft gin — good with a milder Habano."
@@ -446,7 +479,10 @@
    "best": "G&T ili martini",
    "highball": 3
   },
-  "cigarHint": null,
+  "cigarHint": {
+   "hr": "Čist London dry profil — most prema cigari je klasična borovica i citrus; pouzdan martini uz srednju cigaru, svježina protiv kremastog dima.",
+   "en": "A clean London dry profile — the bridge to a cigar is classic juniper and citrus; a dependable martini beside a medium cigar, freshness against creamy smoke."
+  },
   "notes": {
    "hr": "Čist London dry profil — pouzdan za martini.",
    "en": "A clean London dry profile — dependable for a martini."
@@ -484,7 +520,10 @@
    "best": "G&T ili martini",
    "highball": 3
   },
-  "cigarHint": null,
+  "cigarHint": {
+   "hr": "Čaj i citrus na London dry bazi — most je taninska gorčina čaja koja odgovara duhanskom začinu; lagana do srednja cigara, martini ili G&T kao aperitiv.",
+   "en": "Tea and citrus on a London dry base — the bridge is the tea's tannic edge meeting tobacco spice; a mild-to-medium cigar, martini or G&T as an aperitif."
+  },
   "notes": {
    "hr": "Tea & citrus twist na London dry.",
    "en": "A tea-and-citrus twist on London dry."
@@ -522,7 +561,10 @@
    "best": "Cisti ili martini",
    "highball": 2
   },
-  "cigarHint": null,
+  "cigarHint": {
+   "hr": "American dry s cvjetno-anisnim tonom — nježan profil traži laganu Connecticut cigaru; most je svježina anisa i cvijeća uz laki, kremasti dim.",
+   "en": "An American dry with a floral-anise tone — the delicate profile wants a mild Connecticut cigar; the bridge is anise and floral lift beside light, creamy smoke."
+  },
   "notes": {
    "hr": "American dry — cvjetno-anis profil, martini.",
    "en": "American dry — a floral-anise profile, for a martini."
@@ -560,7 +602,10 @@
    "best": "Cisti ili martini",
    "highball": 2
   },
-  "cigarHint": null,
+  "cigarHint": {
+   "hr": "Very Junipery Over Proof, 57.7% — dovoljno tijela i borovice da ponese srednju do punu cigaru; čist ili s kapi vode, borovica i začin nose maduro karamel kao 'treći akt'.",
+   "en": "Very Junipery Over Proof, 57.7% — enough body and juniper to carry a medium-to-full cigar; neat or with a drop of water, the juniper and spice carry maduro caramel as a 'third act'."
+  },
   "notes": {
    "hr": "Heuristika — contemporary, botanical",
    "en": "Heuristic profile — contemporary, botanical"
@@ -598,7 +643,10 @@
    "best": "Cisti ili martini",
    "highball": 2
   },
-  "cigarHint": null,
+  "cigarHint": {
+   "hr": "Kyoto botanika (yuzu, hinoki, sansho papar) je precizna i cvjetna; most je citrusna svježina i papreni začin uz laganu do srednju cigaru — čist ili martini.",
+   "en": "Kyoto botanicals (yuzu, hinoki, sansho pepper) are precise and floral; the bridge is citrus lift and peppery spice beside a mild-to-medium cigar — neat or a martini."
+  },
   "notes": {
    "hr": "Heuristika — contemporary, botanical",
    "en": "Heuristic profile — contemporary, botanical"
@@ -636,7 +684,10 @@
    "best": "Cisti ili martini",
    "highball": 2
   },
-  "cigarHint": null,
+  "cigarHint": {
+   "hr": "Kyoto botanika (yuzu, hinoki, sansho papar) je precizna i cvjetna; most je citrusna svježina i papreni začin uz laganu do srednju cigaru — čist ili martini.",
+   "en": "Kyoto botanicals (yuzu, hinoki, sansho pepper) are precise and floral; the bridge is citrus lift and peppery spice beside a mild-to-medium cigar — neat or a martini."
+  },
   "notes": {
    "hr": "Heuristika — contemporary, botanical",
    "en": "Heuristic profile — contemporary, botanical"
@@ -674,7 +725,10 @@
    "best": "Cisti ili martini",
    "highball": 2
   },
-  "cigarHint": null,
+  "cigarHint": {
+   "hr": "Pojačana Kyoto verzija na 54.5% — više tijela od standardnog KI NO BI; nosi srednju cigaru čist ili s kapi vode, papreni sansho pravi most prema Habano wrapperu.",
+   "en": "The reinforced Kyoto version at 54.5% — more body than the standard KI NO BI; it carries a medium cigar neat or with a drop of water, the peppery sansho bridging to a Habano wrapper."
+  },
   "notes": {
    "hr": "Heuristika — contemporary, botanical",
    "en": "Heuristic profile — contemporary, botanical"
@@ -712,7 +766,10 @@
    "best": "G&T ili martini",
    "highball": 3
   },
-  "cigarHint": null,
+  "cigarHint": {
+   "hr": "Navy strength 57% — koncentrirana borovica i žestina drže i maduro; čist ili s kapi vode uz punu cigaru, klasičan 'treći akt' s espressom (tamna čokolada + borovica nose karamel maduro wrappera).",
+   "en": "Navy strength 57% — concentrated juniper and heat hold even a maduro; neat or with a drop of water beside a full cigar, a classic 'third act' with espresso (dark chocolate + juniper carrying maduro wrapper caramel)."
+  },
   "notes": {
    "hr": "Heuristika — london-dry, classic-juniper",
    "en": "Heuristic profile — london-dry, classic-juniper"
@@ -750,7 +807,10 @@
    "best": "Cisti ili martini",
    "highball": 2
   },
-  "cigarHint": null,
+  "cigarHint": {
+   "hr": "Japanski craft (sakura, sencha, sansho) — most je zeleni čaj i cvjetni začin uz laganu do srednju cigaru; martini drži profil, G&T radi kao aperitiv.",
+   "en": "A Japanese craft (sakura, sencha, sansho) — the bridge is green tea and floral spice beside a mild-to-medium cigar; a martini holds the profile, a G&T works as an aperitif."
+  },
   "notes": {
    "hr": "Heuristika — contemporary, botanical",
    "en": "Heuristic profile — contemporary, botanical"

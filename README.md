@@ -66,7 +66,7 @@ indeksima rangiranim po kvaliteti za sipping uz cigaru.
     → `dedupe-data.py` → `npm test`
   - **Club** (`src/pages/ClubPage.tsx`) — citat dana, činjenice, kviz, karta zemalja + urednički slojevi (redoslijed na indexu):
     1. **101** (`club101.json`) — kurikulum: cigare, pića, pribor, savjeti (33 lekcije u 4 trake)
-    2. **Leksikon** (`lexicon.json`) — jezik degustacije i pairing mostova (8 unosa)
+    2. **Leksikon** (`lexicon.json`) — jezik degustacije i pairing mostova (9 unosa, uklj. gin-koktel most)
     3. **HR vodič** (`hrGuide.json`) — kupnja i dostupnost u HR (7 poglavlja)
     4. **Arhetipovi** (`eveningArchetypes.json`) — stilske slike večeri (6 eseja)
     5. **Bonton** (`bonton.json`) — manire za stol (10 poglavlja; rukopis se ne rewrita u rolloutu)

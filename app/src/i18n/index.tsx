@@ -511,7 +511,57 @@ export const SERVING_LABELS: Record<string, string> = {
   "V60 / aeropress": "V60 / AeroPress",
   "V60 / pour-over": "V60 / pour-over",
   "Velika kocka leda ILI kap vode": "A large ice cube OR a drop of water",
+  "Čisto": "Neat",
+  "Čisto / Caipirinha": "Neat / Caipirinha",
 };
+
+/** Ukloni dijakritiku radi usporedbe (Čisto ≈ Cisto). */
+export function foldServingKey(s: string): string {
+  return s.normalize("NFD").replace(/\p{M}/gu, "").toLowerCase();
+}
+
+/**
+ * Engleski prikaz serving.best iz podataka.
+ * 1) točan ključ  2) dijakritika-fold cijelog stringa
+ * 3) token-fallback (dijelovi razdvojeni / ili ili|ILI)
+ */
+export function localizeServing(serving: string, lang: Lang): string {
+  if (lang !== "en") return serving;
+  const exact = SERVING_LABELS[serving];
+  if (exact) return exact;
+
+  const folded = foldServingKey(serving);
+  for (const [key, en] of Object.entries(SERVING_LABELS)) {
+    if (foldServingKey(key) === folded) return en;
+  }
+
+  // Tokeni: "Čisto / Caipirinha", "On the rocks / kap vode", "X ili Y"
+  const parts = serving.split(/\s*(?:\/|\bili\b|\bILI\b)\s*/);
+  if (parts.length < 2) return serving;
+
+  let anyHit = false;
+  const translated = parts.map((part) => {
+    const pExact = SERVING_LABELS[part];
+    if (pExact) {
+      anyHit = true;
+      return pExact;
+    }
+    const pFold = foldServingKey(part);
+    for (const [key, en] of Object.entries(SERVING_LABELS)) {
+      if (foldServingKey(key) === pFold) {
+        anyHit = true;
+        return en;
+      }
+    }
+    return part;
+  });
+  if (!anyHit) return serving;
+
+  // Sačuvaj razdjelnik sličan originalu
+  if (/\s+ILI\s+/.test(serving)) return translated.join(" OR ");
+  if (/\s+ili\s+/i.test(serving)) return translated.join(" or ");
+  return translated.join(" / ");
+}
 
 export const ADDITIVE_LABELS: Record<string, LocalizedText> = {
   clean: { hr: "Čist", en: "Clean" },
@@ -583,8 +633,7 @@ export function I18nProvider({ children }: { children: ReactNode }) {
   // imena zemalja i serviranja u podacima su hrvatska; na EN prevedi mapom
   const cn = (country: string) =>
     lang === "en" ? (COUNTRY_LABELS[country] ?? country) : country;
-  const sv = (serving: string) =>
-    lang === "en" ? (SERVING_LABELS[serving] ?? serving) : serving;
+  const sv = (serving: string) => localizeServing(serving, lang);
   const rgn = (region: string) =>
     lang === "en" ? (REGION_LABELS[region] ?? region) : region;
   return (
