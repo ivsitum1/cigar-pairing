@@ -1,15 +1,69 @@
 {
   "brand": "Rojas",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-24",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w2_slice1 deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
   ],
   "lines": {
-    "Custom Blends Ometepe Maduro Shaggy": {
-      "line": "Custom Blends Ometepe Maduro",
-      "vitola": "Shaggy"
+    "10th Anniversary": {
+      "line": "10th Anniversary"
+    },
+    "Bluebonnets": {
+      "line": "Bluebonnets"
+    },
+    "Breakfast Tacos Connecticut Petit": {
+      "line": "Breakfast Tacos Connecticut",
+      "vitola": "Petit"
+    },
+    "Breakfast Tacos Maduro Petit": {
+      "line": "Breakfast Tacos Maduro",
+      "vitola": "Petit"
+    },
+    "Breakfast Tacos Sumatra Petit": {
+      "line": "Breakfast Tacos Sumatra",
+      "vitola": "Petit"
+    },
+    "Custom Blends Dominicana Connecticut": {
+      "line": "Custom Blends Dominicana Connecticut"
+    },
+    "Custom Blends Ometepe Maduro": {
+      "line": "Custom Blends Ometepe Maduro"
+    },
+    "Custom Blends Sumatra Pigtail": {
+      "line": "Custom Blends Sumatra Pigtail"
+    },
+    "Gallo Pinto Connecticut": {
+      "line": "Gallo Pinto Connecticut"
+    },
+    "Gallo Pinto Maduro": {
+      "line": "Gallo Pinto Maduro"
+    },
+    "Gallo Pinto Sun Grown": {
+      "line": "Gallo Pinto Sun Grown"
+    },
+    "Statement Maduro": {
+      "line": "Statement Maduro"
+    },
+    "Street Tacos Al Pastor": {
+      "line": "Street Tacos Al Pastor"
+    },
+    "Street Tacos Barbacoa": {
+      "line": "Street Tacos Barbacoa"
+    },
+    "Street Tacos Carnitas": {
+      "line": "Street Tacos Carnitas"
+    },
+    "Street Tacos Street Barbacoa Short": {
+      "line": "Street Tacos Barbacoa",
+      "vitola": "Short"
+    },
+    "Street Tacos Street Carnitas Short": {
+      "line": "Street Tacos Carnitas",
+      "vitola": "Short"
     }
   },
   "vitolaRenames": {},

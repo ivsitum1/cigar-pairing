@@ -1,12 +1,75 @@
 {
   "brand": "Asylum",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-24",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "https://asylumcigars.com/",
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w2_slice1 deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
   ],
-  "lines": {},
+  "lines": {
+    "867 Midnight Oil Midnight Oil": {
+      "line": "867 Midnight Oil"
+    },
+    "867 Zero Zero": {
+      "line": "867 Zero"
+    },
+    "Connecticut": {
+      "line": "Connecticut"
+    },
+    "Flavoured Cool Brew": {
+      "line": "Flavoured",
+      "vitola": "Cool Brew"
+    },
+    "Flavoured Split Personality": {
+      "line": "Flavoured",
+      "vitola": "Split Personality"
+    },
+    "Gordo": {
+      "line": "Asylum",
+      "vitola": "Gordo"
+    },
+    "Gran Toro": {
+      "line": "Asylum",
+      "vitola": "Gran Toro"
+    },
+    "Insidious": {
+      "line": "Insidious"
+    },
+    "Limitada 2025": {
+      "line": "Limitada 2025"
+    },
+    "Nine by Four": {
+      "line": "Nine by Four"
+    },
+    "Ogre": {
+      "line": "Ogre"
+    },
+    "Robusto": {
+      "line": "Asylum",
+      "vitola": "Robusto"
+    },
+    "Schizo": {
+      "line": "Schizo"
+    },
+    "Schizo Maduro": {
+      "line": "Schizo Maduro"
+    },
+    "Short": {
+      "line": "Asylum",
+      "vitola": "Short Corona"
+    },
+    "Straight Jacket Double": {
+      "line": "Straight Jacket",
+      "vitola": "Double"
+    },
+    "Year 10 11/18": {
+      "line": "Year 10",
+      "vitola": "11/18"
+    }
+  },
   "vitolaRenames": {},
   "shapes": {},
   "keepSeparate": [

@@ -1,12 +1,63 @@
 {
   "brand": "Toraño",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-24",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w2_slice1 deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
   ],
-  "lines": {},
+  "lines": {
+    "Torano Captiva": {
+      "line": "Captiva"
+    },
+    "Torano Exodus": {
+      "line": "Exodus"
+    },
+    "Torano Exodus 1959 50 Years": {
+      "line": "Exodus 1959 50 Years"
+    },
+    "Torano Exodus 1959 50 Years Limited Edition Cuban": {
+      "line": "Exodus 1959 50 Years"
+    },
+    "Torano Exodus 1959 Gold": {
+      "line": "Exodus 1959 Gold"
+    },
+    "Torano Exodus 1959 Silver": {
+      "line": "Exodus 1959 Silver"
+    },
+    "Torano Exodus Gold 20th Anniversary": {
+      "line": "Exodus Gold"
+    },
+    "Torano Loyal": {
+      "line": "Loyal"
+    },
+    "Torano Salutem Extra": {
+      "line": "Salutem",
+      "vitola": "Extra"
+    },
+    "Torano Vault A-008": {
+      "line": "Vault",
+      "vitola": "A-008"
+    },
+    "Torano Vault C-033": {
+      "line": "Vault",
+      "vitola": "C-033"
+    },
+    "Torano Vault Green P-044": {
+      "line": "Vault",
+      "vitola": "Green P-044"
+    },
+    "Torano Vault L-075": {
+      "line": "Vault",
+      "vitola": "L-075"
+    },
+    "Torano Vault Purple TM-027": {
+      "line": "Vault",
+      "vitola": "Purple TM-027"
+    }
+  },
   "vitolaRenames": {},
   "shapes": {},
   "keepSeparate": [
@@ -28,5 +79,7 @@
     ]
   ],
   "lineNotes": {},
-  "unresolved": []
+  "unresolved": [
+    "Toraño: Exodus 1959 Gold vs Exodus Gold kept as distinct lines"
+  ]
 }

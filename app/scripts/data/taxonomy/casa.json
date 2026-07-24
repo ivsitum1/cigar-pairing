@@ -1,12 +1,63 @@
 {
   "brand": "Casa",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-24",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w2_slice1 deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
   ],
-  "lines": {},
+  "lines": {
+    "Culinaria Connecticut": {
+      "line": "Culinaria Connecticut"
+    },
+    "Culinaria Esteli": {
+      "line": "Culinaria Esteli"
+    },
+    "Culinaria Jalapa": {
+      "line": "Culinaria Jalapa"
+    },
+    "de Alegria Criollo": {
+      "line": "de Alegría Criollo"
+    },
+    "de Alegria Rico": {
+      "line": "de Alegría Rico"
+    },
+    "de Alegria Suave": {
+      "line": "de Alegría Suave"
+    },
+    "de Garcia Connecticut": {
+      "line": "de García Connecticut"
+    },
+    "de Nicaragua": {
+      "line": "de Nicaragua"
+    },
+    "de Torres": {
+      "line": "de Torres"
+    },
+    "de Torres Bold": {
+      "line": "de Torres Bold"
+    },
+    "de Torres Edicion Especial": {
+      "line": "de Torres Edición Especial"
+    },
+    "de Torres Edicion Famoso XI Maduro": {
+      "line": "de Torres Edición Famoso",
+      "vitola": "XI Maduro"
+    },
+    "de Torres Edicion Famoso XII Finos Maduro": {
+      "line": "de Torres Edición Famoso",
+      "vitola": "XII Finos Maduro"
+    },
+    "de Torres Edicion Famoso XIII Marron": {
+      "line": "de Torres Edición Famoso",
+      "vitola": "XIII Marron"
+    },
+    "de Torres Maduro Selection": {
+      "line": "de Torres Maduro Selection"
+    }
+  },
   "vitolaRenames": {},
   "shapes": {},
   "keepSeparate": [
@@ -36,5 +87,7 @@
     ]
   ],
   "lineNotes": {},
-  "unresolved": []
+  "unresolved": [
+    "Casa: brand truncated (mixed Casa Cuevas/Torres/…) — Phase-2 leftover"
+  ]
 }

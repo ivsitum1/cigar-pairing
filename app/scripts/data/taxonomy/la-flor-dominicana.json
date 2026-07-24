@@ -1,15 +1,57 @@
 {
   "brand": "La Flor Dominicana",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-24",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "https://laflordominicana.com/",
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w2_slice1 deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
   ],
   "lines": {
-    "Reserva Especial El Jocko #2": {
+    "Air Bender": {
+      "line": "Air Bender"
+    },
+    "Andalusian Bull": {
+      "line": "Andalusian Bull"
+    },
+    "Coronado": {
+      "line": "Coronado"
+    },
+    "Double Claro No. 50": {
+      "line": "Double Claro",
+      "vitola": "No. 50"
+    },
+    "Double Ligero": {
+      "line": "Double Ligero"
+    },
+    "La Nox": {
+      "line": "La Nox"
+    },
+    "La Volcada": {
+      "line": "La Volcada"
+    },
+    "Limited Edition La Nox": {
+      "line": "La Nox"
+    },
+    "Limited Edition Solis": {
+      "line": "Solis"
+    },
+    "Reserva Especial": {
+      "line": "Reserva Especial"
+    },
+    "Reserva Especial El Jocko #1 Maduro": {
       "line": "Reserva Especial",
-      "vitola": "El Jocko #2"
+      "vitola": "El Jocko #1 Maduro"
+    },
+    "Suave Maceo": {
+      "line": "Suave",
+      "vitola": "Maceo"
+    },
+    "Suave Maximo": {
+      "line": "Suave",
+      "vitola": "Maximo"
     }
   },
   "vitolaRenames": {},

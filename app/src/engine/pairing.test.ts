@@ -123,7 +123,7 @@ describe("pairing engine — API", () => {
   });
 
   it("pairDrinksForCigar ukljucuje sva pica — neutralna politika, engine boduje spoj", () => {
-    const cohiba = byId(cigars, "cig-cohiba-linea-clasica-robustos");
+    const cohiba = byId(cigars, "cig-cohiba-linea-clasica");
     const results = pairDrinksForCigar(cohiba, rums);
     expect(results.every((r) => r.item.pairable)).toBe(true);
     // spiced/liker vise nisu cenzurirani; niska ocjena spoja dolazi iz pravila

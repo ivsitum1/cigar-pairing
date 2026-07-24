@@ -1,12 +1,71 @@
 {
   "brand": "AJ Fernandez",
   "renameBrand": null,
-  "status": "partial",
-  "reviewedAt": null,
+  "status": "done",
+  "reviewedAt": "2026-07-24",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json"
+    "https://ajfernandez.com/",
+    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
+    "phase3_w2_slice1 deterministic remaps",
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
   ],
-  "lines": {},
+  "lines": {
+    "A.J. Fernandez 20th Anniversary": {
+      "line": "20th Anniversary"
+    },
+    "AJF 20th Anniversary": {
+      "line": "20th Anniversary Maduro"
+    },
+    "Amar": {
+      "line": "Amar"
+    },
+    "Bellas Artes": {
+      "line": "Bellas Artes"
+    },
+    "Blend 15": {
+      "line": "Blend 15"
+    },
+    "Días de Gloria": {
+      "line": "Días de Gloria"
+    },
+    "Enclave": {
+      "line": "Enclave"
+    },
+    "H. Upmann": {
+      "line": "H. Upmann"
+    },
+    "K by Karen Berger 25th Anniversary": {
+      "line": "K by Karen Berger"
+    },
+    "Last Call": {
+      "line": "Last Call"
+    },
+    "Montecristo": {
+      "line": "Montecristo"
+    },
+    "New World": {
+      "line": "New World"
+    },
+    "New World Dorado Sampler": {
+      "line": "New World Dorado Sampler",
+      "sampler": true
+    },
+    "New World Sampler": {
+      "line": "New World Sampler",
+      "sampler": true
+    },
+    "Premium Sampler": {
+      "line": "Premium Sampler",
+      "sampler": true
+    },
+    "San Lotano": {
+      "line": "San Lotano"
+    },
+    "Toro Sampler": {
+      "line": "Toro Sampler",
+      "sampler": true
+    }
+  },
   "vitolaRenames": {},
   "shapes": {},
   "keepSeparate": [
@@ -20,5 +79,7 @@
     ]
   ],
   "lineNotes": {},
-  "unresolved": []
+  "unresolved": [
+    "AJ Fernandez: New World / San Lotano vitola names still embed wrappers"
+  ]
 }
