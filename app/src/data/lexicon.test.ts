@@ -4,6 +4,7 @@ import { parseLessonBody } from "../lib/parseLessonBody";
 
 const REQUIRED_ENTRY_IDS = [
   "most",
+  "gin-koktel-most",
   "tijelo-tijelo",
   "snaga-vs-tijelo",
   "trecine",
