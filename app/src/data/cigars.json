@@ -59095,7 +59095,14 @@
         "priceEUR": null,
         "url": null,
         "ring": 48,
-        "lengthMM": 178
+        "lengthMM": 178,
+        "regionLinks": {
+          "EU": {
+            "shop": "CigarWorld",
+            "url": "https://www.cigarworld.de/en/zigarren/honduras/don-tomas-bundles-honduras-churchill-90014348_32693",
+            "priceEUR": null
+          }
+        }
       },
       {
         "name": "Robusto",
@@ -59104,7 +59111,14 @@
         "priceEUR": null,
         "url": null,
         "ring": 50,
-        "lengthMM": 127
+        "lengthMM": 127,
+        "regionLinks": {
+          "EU": {
+            "shop": "CigarWorld",
+            "url": "https://www.cigarworld.de/en/zigarren/honduras/don-tomas-bundles-honduras-robusto-90014348_32692",
+            "priceEUR": null
+          }
+        }
       },
       {
         "name": "Toro",
@@ -59113,7 +59127,14 @@
         "priceEUR": null,
         "url": null,
         "ring": 50,
-        "lengthMM": 152
+        "lengthMM": 152,
+        "regionLinks": {
+          "EU": {
+            "shop": "CigarWorld",
+            "url": "https://www.cigarworld.de/en/zigarren/honduras/don-tomas-bundles-honduras-toro-90014348_32695",
+            "priceEUR": 2.4
+          }
+        }
       }
     ],
     "markets": [
@@ -59129,6 +59150,13 @@
     "notes": {
       "hr": "Bundle izdanje bez kutije — ista tvornica, jednostavnije pakiranje. Blaži, zemljano-drvenast profil za svakodnevno pušenje po nižoj cijeni. U Hrvatskoj se nabavlja u Havana Shopu i manjim tobacco trgovinama koje robu dobivaju od istog dobavljača (npr. Tobacco Petica, Mingle Mall).",
       "en": "The bundle release without the box — same factory, simpler packaging. A milder, earthy-woody everyday smoke at a lower price. In Croatia it's carried by Havana Shop and smaller tobacco shops supplied by the same distributor (e.g. Tobacco Petica, Mingle Mall)."
+    },
+    "regionLinks": {
+      "EU": {
+        "shop": "CigarWorld",
+        "url": "https://www.cigarworld.de/en/zigarren/honduras/don-tomas-bundles-honduras-robusto-90014348_32692",
+        "priceEUR": null
+      }
     }
   },
   {
