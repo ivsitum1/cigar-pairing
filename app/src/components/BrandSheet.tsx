@@ -1,10 +1,11 @@
 // Brend stranica: opis + povijest marke i sve njene cigare, sort po ocjeni/cijeni.
 import { useMemo, useState } from "react";
 import type { Cigar } from "../types";
-import { brandInfo, cigarsByBrand, cigarPriceForMarket } from "../data";
+import { brandInfo, cigarsByBrand, cigarInRegion, cigarPriceForMarket } from "../data";
 import { useI18n } from "../i18n";
 import { Meter } from "./ui";
 import { BackButton } from "./BackButton";
+import { MarketFilter } from "./MarketFilter";
 import { useMarket } from "../store/market";
 
 type Sort = "strength" | "price";
@@ -22,7 +23,10 @@ export function BrandSheet({
   const market = useMarket();
   const [sort, setSort] = useState<Sort>("strength");
   const info = brandInfo(brand);
-  const cigars = useMemo(() => cigarsByBrand(brand), [brand]);
+  const cigars = useMemo(
+    () => cigarsByBrand(brand).filter((c) => cigarInRegion(c, market)),
+    [brand, market],
+  );
 
   const sorted = useMemo(() => {
     const list = [...cigars];
@@ -62,6 +66,8 @@ export function BrandSheet({
 
         <div className="band-rule my-4" />
 
+        <MarketFilter className="mb-3" />
+
         <div className="mb-2 flex items-center justify-between">
           <span className="text-xs text-dim">
             {cigars.length} · {t("cat.cigars")}
@@ -76,34 +82,47 @@ export function BrandSheet({
           </div>
         </div>
 
-        <div className="space-y-1.5">
-          {sorted.map((c) => {
-            const mp = cigarPriceForMarket(c, market);
-            return (
-              <button
-                key={c.id}
-                onClick={() => onOpenCigar(c)}
-                className="flex w-full items-center justify-between gap-3 rounded-lg border border-dim/15 bg-cedar px-3 py-2.5 text-left hover:border-zlato/40"
-              >
-                <div className="min-w-0">
-                  <div className="truncate font-display text-sm text-papir">{c.line}</div>
-                  <div className="truncate text-xs text-dim">
-                    {c.wrapper} · {c.vitolas.length > 1 ? `${c.vitolas.length} ${t("common.vitolaCountSuffix")}` : c.vitola}
+        {sorted.length === 0 ? (
+          <p className="rounded-lg border border-dim/20 bg-cedar/50 px-3 py-3 text-sm leading-relaxed text-dim">
+            {t("brand.noneInMarket")}
+          </p>
+        ) : (
+          <div className="space-y-1.5">
+            {sorted.map((c) => {
+              const mp = cigarPriceForMarket(c, market);
+              return (
+                <button
+                  key={c.id}
+                  onClick={() => onOpenCigar(c)}
+                  className="flex w-full items-center justify-between gap-3 rounded-lg border border-dim/15 bg-cedar px-3 py-2.5 text-left hover:border-zlato/40"
+                >
+                  <div className="min-w-0">
+                    <div className="truncate font-display text-sm text-papir">{c.line}</div>
+                    <div className="truncate text-xs text-dim">
+                      {c.wrapper} ·{" "}
+                      {c.vitolas.length > 1
+                        ? `${c.vitolas.length} ${t("common.vitolaCountSuffix")}`
+                        : c.vitola}
+                    </div>
+                    <div className="mt-1 flex gap-3">
+                      <Meter
+                        value={c.strength}
+                        label={t("common.strength")}
+                        accent="var(--color-oxblood)"
+                      />
+                      <Meter value={c.body} label={t("common.body")} />
+                    </div>
                   </div>
-                  <div className="mt-1 flex gap-3">
-                    <Meter value={c.strength} label={t("common.strength")} accent="var(--color-oxblood)" />
-                    <Meter value={c.body} label={t("common.body")} />
-                  </div>
-                </div>
-                <span className="shrink-0 text-xs text-zlato-2">
-                  {mp.price != null
-                    ? `${mp.fromMany ? t("price.from") + " " : ""}${mp.price.toFixed(mp.price % 1 ? 2 : 0)} €`
-                    : t("price.check")}
-                </span>
-              </button>
-            );
-          })}
-        </div>
+                  <span className="shrink-0 text-xs text-zlato-2">
+                    {mp.price != null
+                      ? `${mp.fromMany ? t("price.from") + " " : ""}${mp.price.toFixed(mp.price % 1 ? 2 : 0)} €`
+                      : t("price.check")}
+                  </span>
+                </button>
+              );
+            })}
+          </div>
+        )}
 
         <button
           onClick={onClose}
