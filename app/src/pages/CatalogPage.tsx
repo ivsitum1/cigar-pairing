@@ -23,6 +23,12 @@ import { LineSheet } from "../components/LineSheet";
 import { MarketFilter } from "../components/MarketFilter";
 import { VitolaPicker } from "../components/VitolaPicker";
 import { applyVitola, uniqueVitolas } from "../lib/cigarVitola";
+import {
+  SHAPE_FAMILIES,
+  cigarShapes,
+  firstVitolaOfShape,
+  type ShapeFamily,
+} from "../lib/vitolaShape";
 import { useMarket, setMarket } from "../store/market";
 import { navigate, useRoute } from "../store/route";
 
@@ -97,6 +103,7 @@ export function CatalogPage({
   const [query, setQuery] = useState("");
   const [styleFilter, setStyleFilter] = useState<string | null>(null);
   const [strengthFilter, setStrengthFilter] = useState<number | null>(null);
+  const [shapeFilter, setShapeFilter] = useState<ShapeFamily | null>(null);
   const [cleanOnly, setCleanOnly] = useState(false);
   // cigare se otvaraju na indeksu brendova; puni popis linija je iza "Brendovi" gumba
   const [browseBrands, setBrowseBrands] = useState(true);
@@ -266,10 +273,24 @@ export function CatalogPage({
       ?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
+  /** Flat-list open: shape filter → that vitola; else LineSheet. */
+  const openFromFlatList = (raw: Cigar) => {
+    const cigar = resolveCigarId(raw.id) ?? raw;
+    if (shapeFilter) {
+      const match = firstVitolaOfShape(cigar, shapeFilter);
+      if (match) {
+        openVitola(cigar, match);
+        return;
+      }
+    }
+    openLine(cigar);
+  };
+
   const switchTab = (next: Tab) => {
     setTab(next);
     setStyleFilter(null);
     setStrengthFilter(null);
+    setShapeFilter(null);
     setCleanOnly(false);
     setBrowseBrands(next === "cigars");
     setShowShops(false);
@@ -307,7 +328,8 @@ export function CatalogPage({
               .map((v) => v.name)
               .join(" ")}`,
           ).includes(norm(q))) &&
-        (strengthFilter == null || c.strength === strengthFilter),
+        (strengthFilter == null || c.strength === strengthFilter) &&
+        (shapeFilter == null || cigarShapes(c).has(shapeFilter)),
     );
     const by: Record<string, (a: Cigar, b: Cigar) => number> = {
       name: (a, b) => a.brand.localeCompare(b.brand) || a.line.localeCompare(b.line),
@@ -317,7 +339,7 @@ export function CatalogPage({
     };
     return [...list].sort(by[sortBy] ?? by.name);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [tab, q, strengthFilter, market, sortBy, browseBrands]);
+  }, [tab, q, strengthFilter, shapeFilter, market, sortBy, browseBrands]);
 
   const drinks = useMemo(() => {
     if (tab === "cigars") return [];
@@ -340,7 +362,7 @@ export function CatalogPage({
 
   useEffect(() => {
     setLimit(120);
-  }, [tab, q, strengthFilter, market, sortBy, browseBrands]);
+  }, [tab, q, strengthFilter, shapeFilter, market, sortBy, browseBrands]);
 
   const showRail =
     tab === "cigars" &&
@@ -469,6 +491,25 @@ export function CatalogPage({
         ))}
       </div>
 
+      {/* filter oblika (vitole) — samo u ravnom popisu cigara */}
+      {tab === "cigars" && !browseBrands && (
+        <div className="no-scrollbar mt-2 flex items-center gap-2 overflow-x-auto">
+          <span className="shrink-0 text-micro uppercase tracking-widest text-dim">
+            {t("filter.shape")}
+          </span>
+          {SHAPE_FAMILIES.map((s) => (
+            <Chip
+              key={s}
+              active={shapeFilter === s}
+              onClick={() => setShapeFilter(shapeFilter === s ? null : s)}
+            >
+              {t(`shape.${s}` as StringKey)}
+            </Chip>
+          ))}
+        </div>
+      )}
+
+      {/* tržište uvijek vidljivo za cigare (indeks brendova + popis) */}
       {tab === "cigars" && <MarketFilter className="mt-2" />}
 
       {!browseBrands && (
@@ -584,7 +625,7 @@ export function CatalogPage({
             <CigarRow
               key={`${c.id}::${c.line}`}
               cigar={c}
-              onClick={() => openLine(c)}
+              onClick={() => openFromFlatList(c)}
             />
           ))}
         {!browseBrands && tab === "cigars" && cigars.length > limit && (
