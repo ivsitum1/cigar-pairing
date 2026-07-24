@@ -34,5 +34,6 @@ jobs:
         run: |
           python scripts/apply-taxonomy.py --check --skip-normalize
           python scripts/normalize-vitolas.py --check
+          python scripts/taxonomy-audit.py --fail-on-new --check-only
       - run: npm run build
         working-directory: app
