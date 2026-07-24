@@ -4,7 +4,7 @@ import { ALL_DRINKS, CIGARS, cigarById, cigarInRegion, cigarLinkForMarket, cigar
 import { pairCigarsForDrink, pairDrinksForCigar } from "../engine/pairing";
 import { buildPrefs } from "../engine/personal";
 import { curatedPairingOpinion } from "../engine/curatedOpinion";
-import { pairingBlurb, pairingNarrative } from "../engine/pairingExplain";
+import { pairingBlurb } from "../engine/pairingExplain";
 import { useI18n, STYLE_LABELS, type StringKey } from "../i18n";
 import { Chip, Meter, ScoreBand, SearchInput, SectionTitle } from "../components/ui";
 import { getItemState, useCollection } from "../store/collection";
@@ -718,7 +718,6 @@ function ResultCard({
     result.score,
   );
   const blurb = pairingBlurb(cigar, drink, result.reasons, result.score);
-  const narrative = pairingNarrative(cigar, drink, result.reasons, result.score);
   return (
     <div className="rounded-xl border border-dim/15 bg-cedar p-3">
       <div className="flex items-center gap-3">
@@ -803,7 +802,6 @@ function ResultCard({
       )}
       {open && (
         <div className="mt-2 space-y-2 border-t border-dim/15 pt-2">
-          <p className="text-xs leading-relaxed text-papir/85">{lx(narrative)}</p>
           <ul className="space-y-1">
             {positive.map((r, i) => (
               <li key={i} className="flex gap-2 text-xs leading-relaxed text-papir/85">

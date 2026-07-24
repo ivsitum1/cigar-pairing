@@ -2,7 +2,7 @@
 // Deterministički iz reasons + dijeljenih tagova; bez LLM/API.
 
 import type { Cigar, Drink, LocalizedText, PairingReason } from "../types";
-import { normalizeTags } from "./rules";
+import { flavorLabel, normalizeTags } from "./rules";
 
 const BODY_HR = ["", "vrlo lagano", "lagano", "srednje", "puno", "vrlo puno"];
 const BODY_EN = ["", "very light", "light", "medium", "full", "very full"];
@@ -74,9 +74,8 @@ export function pairingNarrative(
   }
 
   if (shared.length > 0) {
-    const tags = shared.join(", ");
-    extraHr.push(`Zajedničke note: ${tags}`);
-    extraEn.push(`Shared notes: ${tags}`);
+    extraHr.push(`Zajedničke note: ${shared.map((t) => flavorLabel(t, "hr")).join(", ")}`);
+    extraEn.push(`Shared notes: ${shared.map((t) => flavorLabel(t, "en")).join(", ")}`);
   }
 
   if (extraHr.length === 0) {

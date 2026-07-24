@@ -4,7 +4,7 @@ import type { Cigar, Drink, ServeStyle } from "../types";
 import { ALL_DRINKS, CIGARS, cigarInRegion, formatPrice } from "../data";
 import { scorePairing } from "../engine/pairing";
 import { curatedPairingOpinion } from "../engine/curatedOpinion";
-import { pairingBlurb, pairingNarrative } from "../engine/pairingExplain";
+import { pairingBlurb } from "../engine/pairingExplain";
 import { useI18n, STYLE_LABELS, type StringKey } from "../i18n";
 import { Meter, ScoreBand, SearchInput } from "../components/ui";
 import { ServeChips } from "../components/ServeChips";
@@ -42,10 +42,6 @@ export function CustomPairing({
   const blurb =
     result && cigar && drink
       ? pairingBlurb(cigar, drink, result.reasons, result.score)
-      : null;
-  const narrative =
-    result && cigar && drink
-      ? pairingNarrative(cigar, drink, result.reasons, result.score)
       : null;
 
   const verdictKey = (score: number): StringKey =>
@@ -138,10 +134,6 @@ export function CustomPairing({
               : {lx(pairingOpinion.text)}
             </div>
           )}
-          {narrative && (
-            <p className="mt-2 text-xs leading-relaxed text-papir/85">{lx(narrative)}</p>
-          )}
-
           <ul className="mt-3 space-y-1 border-t border-dim/15 pt-3">
             {result.reasons
               .filter((r) => r.score > 0)

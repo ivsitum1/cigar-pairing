@@ -6,7 +6,7 @@
 // Nikad ne čita drink.cigarHint (Excel). Tekst je uvijek specifičan za taj par.
 
 import type { Cigar, Drink, LocalizedText, PairingReason } from "../types";
-import { WEIGHTS, normalizeTags } from "./rules";
+import { WEIGHTS, flavorLabel, normalizeTags } from "./rules";
 
 const BODY_HR = ["", "vrlo lagano", "lagano", "srednje", "puno", "vrlo puno"];
 const BODY_EN = ["", "very light", "light", "medium", "full", "very full"];
@@ -151,13 +151,9 @@ function wrapperVerdict(
     };
   }
 
-  if (cigar.body === drink.body && kind !== "other") {
-    return {
-      hr: `${w} i ${drink.name} su u istom registru punoće — nijedno ne nadjačava drugo.`,
-      en: `${w} and ${drink.name} sit in the same weight class — neither overpowers the other.`,
-    };
-  }
-
+  // Namjerno NEMA generičkog "isti registar punoće" verdikta: tijelo se već
+  // spominje u blurbu ("Bodies match…") i u synergy liniji, pa bi ga treći put
+  // ponovilo (uz ponovljeno ime pića) — kurirani okvir tako postaje nečitljiv.
   return null;
 }
 
@@ -270,22 +266,31 @@ function alwaysUniqueBody(
   const synergy = synergyLine(reasons);
   const verdict = wrapperVerdict(drinkProfile(drink), kind, cigar, drink);
 
-  if (synergy && verdict) {
-    return { hr: `${synergy.hr} ${verdict.hr}`, en: `${synergy.en} ${verdict.en}` };
-  }
-  if (synergy) {
-    return {
-      hr: `${synergy.hr} ${w} (${STRENGTH_HR[cigar.strength]}) uz ${drink.style} — ${score}%.`,
-      en: `${synergy.en} ${w} (${STRENGTH_EN[cigar.strength]}) with ${drink.style} — ${score}%.`,
-    };
-  }
+  // Specifičan verdikt (npr. "Habano daje strukturu za suhi, hrastov profil…")
+  // stoji sam — jedna bogata, konkretna rečenica bez ponavljanja.
   if (verdict) return verdict;
 
+  // Inače: jedna synergy linija, po potrebi obogaćena zajedničkim notama
+  // (prevedenim!) da svaki par dobije svoju specifičnost — bez dvostrukog
+  // spominjanja tijela i bez ponovljenog imena pića.
+  if (synergy) {
+    if (shared.length >= 1) {
+      const hrTags = shared.slice(0, 3).map((t) => flavorLabel(t, "hr")).join(", ");
+      const enTags = shared.slice(0, 3).map((t) => flavorLabel(t, "en")).join(", ");
+      return {
+        hr: `${synergy.hr} Spaja ih ${hrTags}.`,
+        en: `${synergy.en} They meet on ${enTags}.`,
+      };
+    }
+    return synergy;
+  }
+
   if (shared.length >= 1) {
-    const tags = shared.slice(0, 3).join(", ");
+    const hrTags = shared.slice(0, 3).map((t) => flavorLabel(t, "hr")).join(", ");
+    const enTags = shared.slice(0, 3).map((t) => flavorLabel(t, "en")).join(", ");
     return {
-      hr: `Dijele ${tags}; ${w} (${BODY_HR[cigar.body]}) i ${drink.name} grade koherentan par uz ${score}%.`,
-      en: `They share ${tags}; ${w} (${BODY_EN[cigar.body]}) and ${drink.name} form a coherent pair at ${score}%.`,
+      hr: `${w} (${BODY_HR[cigar.body]}) gradi koherentan par — spajaju ih ${hrTags}.`,
+      en: `${w} (${BODY_EN[cigar.body]}) forms a coherent pair — they meet on ${enTags}.`,
     };
   }
 
