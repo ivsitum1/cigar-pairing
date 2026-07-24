@@ -1,12 +1,15 @@
 {
   "brand": "Dbl",
-  "renameBrand": null,
+  "renameBrand": "DBL",
   "status": "done",
   "reviewedAt": "2026-07-24",
   "sources": [
     "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
     "phase3_w2_finish deterministic remaps",
-    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3",
+    "https://www.dblcigars.com/el-final/",
+    "https://halfwheel.com/dbl-el-final-debuting-at-pca-2022/410694/",
+    "brand-polish truncated rename"
   ],
   "lines": {
     "Amarillo": {

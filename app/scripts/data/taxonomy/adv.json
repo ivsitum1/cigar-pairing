@@ -1,12 +1,15 @@
 {
   "brand": "Adv",
-  "renameBrand": null,
+  "renameBrand": "ADVentura",
   "status": "done",
   "reviewedAt": "2026-07-24",
   "sources": [
     "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
     "phase3_w2_slice1 deterministic remaps",
-    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3",
+    "https://www.neptunecigar.com/adventura-cigar",
+    "https://halfwheel.com/adventura-barbarrojas-invasion-corona/417380/",
+    "brand-polish truncated rename"
   ],
   "lines": {
     "Barbarroja's Invasion": {

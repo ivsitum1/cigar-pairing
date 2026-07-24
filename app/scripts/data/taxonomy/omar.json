@@ -1,18 +1,21 @@
 {
   "brand": "Omar",
-  "renameBrand": null,
+  "renameBrand": "Omar Ortez",
   "status": "done",
   "reviewedAt": "2026-07-24",
   "sources": [
     "phase3_w3_w4_finish W3",
-    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3",
+    "https://www.cigarcoop.com/",
+    "existing Omar Ortez taxonomy",
+    "brand-polish truncated rename"
   ],
   "lines": {
     "Rodriguez Form 50": {
-      "line": "Rodriguez Form 50"
+      "line": "Form 50"
     },
     "Rodriguez Reserva Escogida": {
-      "line": "Rodriguez Reserva Escogida"
+      "line": "Reserva Escogida"
     }
   },
   "vitolaRenames": {},

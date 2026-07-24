@@ -1,15 +1,17 @@
 {
   "brand": "Jas",
-  "renameBrand": null,
+  "renameBrand": "Jas Sum Kral",
   "status": "done",
   "reviewedAt": "2026-07-24",
   "sources": [
     "phase3_w3_w4_finish W4",
-    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3",
+    "https://developingpalates.com/reviews/cigar-reviews/team-cigar-review-jas-sum-kral-red-knight-robusto/",
+    "brand-polish truncated rename"
   ],
   "lines": {
     "Sum Kral Red Knight": {
-      "line": "Sum Kral Red Knight"
+      "line": "Red Knight"
     }
   },
   "vitolaRenames": {},
