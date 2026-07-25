@@ -9,6 +9,7 @@ Pokretanje:
 """
 from __future__ import annotations
 
+import html
 import json
 import re
 import sys
@@ -210,12 +211,22 @@ def detect_line_id(brand: str, product_name: str) -> str | None:
 
 
 def line_name_from_product(brand: str, product_name: str) -> str:
+    # Decode HTML entities first so "Brand &amp; Co" strips match decoded brand.
+    product_name = html.unescape(product_name or "")
+    brand = html.unescape(brand or "")
     low = norm(product_name)
     b = norm(brand)
     rest = low
     for prefix in [b, "bundle selection by cusano", "joya de nicaragua"]:
         if rest.startswith(prefix):
-            rest = rest[len(prefix) :].strip(" -/")
+            rest = rest[len(prefix) :].strip(" -/&")
+    # dangling "& solomon …" / brand-tail after partial strip
+    rest = re.sub(r"^&\s*", "", rest).strip()
+    m = re.search(r"&\s*(.+)$", brand)
+    if m:
+        tail = norm(m.group(1))
+        if tail and rest.startswith(tail):
+            rest = rest[len(tail) :].strip(" -/")
     rest = re.sub(r"/\d+$", "", rest).strip()
     # ukloni vitola na kraju (robusto, toro...)
     for vit in ("robusto grande", "double robusto", "short robusto", "petit corona",
