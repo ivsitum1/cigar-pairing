@@ -26,7 +26,45 @@ TAG_EN = {
     "duhan": "tobacco", "dim": "smoke", "melasa": "molasses",
 }
 
-# kurirani opisi: (prefiks "brand line".lower()) -> (hr, en)
+TAG_HR = {
+    "kakao": "kakao", "kava": "kava", "zemljano": "zemljani tonovi", "koza": "koža",
+    "papar": "papar", "zacini": "začini", "zacini-slatki": "slatki začini",
+    "cedar": "cedrovina", "drvo": "drvo", "med": "med", "citrus": "citrus",
+    "kremasto": "kremasto", "orasasti": "orašasti tonovi", "karamela": "karamela",
+    "vanilija": "vanilija", "slatko": "slatkoća", "suho-voce": "suho voće",
+    "tamno-voce": "tamno voće", "cvjetno": "cvjetno", "trava-slatka": "slatka trava",
+    "duhan": "duhan", "dim": "dim", "melasa": "melasa", "cokolada": "čokolada",
+    "drvenasto": "drvenasto",
+}
+
+STRENGTH_HR_SHORT = {1: "vrlo lagane", 2: "lagane", 3: "srednje", 4: "jače", 5: "pune"}
+BODY_HR = {1: "vrlo laganog", 2: "laganog", 3: "srednjeg", 4: "punijeg", 5: "punog"}
+
+COUNTRY_EN = {
+    "Nikaragva": "Nicaragua", "Honduras": "Honduras", "Kuba": "Cuba",
+    "Dominikanska Republika": "Dominican Republic", "Dominikana": "Dominican Republic",
+    "Meksiko": "Mexico", "SAD": "USA", "Kostarika": "Costa Rica", "Brazil": "Brazil",
+    "Ekvador": "Ecuador", "Panama": "Panama", "Kolumbija": "Colombia", "Peru": "Peru",
+    "Jamajka": "Jamaica", "Filipini": "Philippines", "Indonezija": "Indonesia",
+    "Kamerun": "Cameroon", "Italija": "Italy", "Danska": "Denmark",
+    "Njemačka": "Germany", "Švicarska": "Switzerland", "Španjolska": "Spain",
+    "Francuska": "France", "Nizozemska": "Netherlands", "Belgija": "Belgium",
+    "Haiti": "Haiti", "Nikaragva / Honduras": "Nicaragua / Honduras",
+    "Honduras / Nikaragva": "Honduras / Nicaragua", "SAD / Nikaragva": "USA / Nicaragua",
+    "Švicarska / Dominikanska Republika": "Switzerland / Dominican Republic",
+}
+
+
+def country_en(hr: str) -> str:
+    if not hr:
+        return hr
+    if hr in COUNTRY_EN:
+        return COUNTRY_EN[hr]
+    if " / " in hr:
+        return " / ".join(country_en(p.strip()) for p in hr.split("/"))
+    return COUNTRY_EN.get(hr, hr)
+
+
 CURATED = {
     "1502 emerald": (
         "Emerald je najpitkiji izraz linije 1502 — nikaragvanski puro s box-pressom i zatvorenom nogom, kremasto-drvenast uz blage začine.",
@@ -89,7 +127,7 @@ CURATED = {
         "Selección Oscuro — najtamniji EPC izraz: gusta slatkoća pečenog kakaa i crne kave, puno tijelo.",
         "Selección Oscuro — EPC's darkest expression: dense baked-cocoa sweetness and black coffee, full body."),
     "eiroa 20 years colorado": (
-        "20 Years Colorado obilježava dva desetljeća Christiana Eiroe — colorado wrapper daje karamelu i cedar uz honduraški temperament.",
+        "20 Years Colorado obilježava dva desetljeća Christiana Eiroe — colorado pokrov daje karamelu i cedar uz honduraški temperament.",
         "20 Years Colorado marks Christian Eiroa's two decades — the colorado wrapper adds caramel and cedar to Honduran temperament."),
     "eiroa the first 20 years": (
         "The First 20 Years je svečana serija — odležani honduraški duhani u velikim, sporim formatima poput diademe.",
@@ -157,6 +195,8 @@ STRENGTH_EN = {1: "mild and smooth", 2: "mild-to-medium", 3: "balanced, medium i
 
 FILLER = re.compile(r"^(Sinkronizirano iz HR trgovina|Dostupno u HR trgovinama)|^$")
 SHORT_EN = re.compile(r"^[A-Za-z0-9 ,;.'&()/-]+$")
+# Engleski leak u HR bilješci (stari describe-lines predložak)
+HR_EN_LEAK = re.compile(r"\bwrapper\b|Note:")
 
 
 def curated_for(c):
@@ -167,17 +207,36 @@ def curated_for(c):
     return None
 
 
+def _wrapper_label(raw: str) -> str:
+    """Ukloni redundantni engleski 'wrapper' iz naziva pokrova."""
+    w = (raw or "").strip()
+    if not w or w == "—":
+        return ""
+    return re.sub(r"\s*\bwrapper\b\s*$", "", w, flags=re.I).strip() or w
+
+
 def generate(c):
     tags = c.get("flavorTags", [])[:3]
-    tags_hr = ", ".join(tags)
+    tags_hr = ", ".join(TAG_HR.get(t, t) for t in tags)
     tags_en = ", ".join(TAG_EN.get(t, t) for t in tags)
-    wrapper = c.get("wrapper", "").strip()
+    wrapper = _wrapper_label((c.get("wrapper") or "").strip())
     country = c.get("country", "")
+    country_e = country_en(country)
     s = c.get("strength", 3)
-    hr = f"{wrapper} wrapper ({country}); {STRENGTH_HR.get(s, STRENGTH_HR[3])}."
-    en = f"{wrapper} wrapper ({country}); {STRENGTH_EN.get(s, STRENGTH_EN[3])}."
+    body = c.get("body", s if isinstance(s, int) else 3)
+    wr_hr = f", {wrapper} pokrov" if wrapper else ""
+    hr = (
+        f"{country}{wr_hr} — "
+        f"{STRENGTH_HR_SHORT.get(s, STRENGTH_HR_SHORT[3])} snage, "
+        f"{BODY_HR.get(body, BODY_HR[3])} tijela."
+    )
+    if wrapper:
+        en = f"{wrapper} wrapper ({country_e}); {STRENGTH_EN.get(s, STRENGTH_EN[3])}."
+    else:
+        en = f"({country_e}); {STRENGTH_EN.get(s, STRENGTH_EN[3])}."
     if tags_hr:
-        hr += f" Note: {tags_hr}."
+        hr += f" Okusi: {tags_hr}."
+    if tags_en:
         en += f" Notes of {tags_en}."
     return hr, en
 
@@ -188,23 +247,28 @@ def main():
     n_cur = n_gen = 0
     for c in cigars:
         note_hr = (c.get("notes", {}).get("hr") or "").strip()
+        existing_en = (c.get("notes", {}).get("en") or "").strip()
         is_filler = bool(FILLER.match(note_hr))
         is_short_en = bool(SHORT_EN.match(note_hr)) and len(note_hr) < 70
+        has_en_leak = bool(HR_EN_LEAK.search(note_hr))
         cur = curated_for(c)
         if cur:
             c["notes"] = {"hr": cur[0], "en": cur[1]}
             n_cur += 1
+        elif has_en_leak and not (is_filler or is_short_en):
+            # Samo popravi HR; zadrži postojeći EN (regresija 65a86f8)
+            hr, en = generate(c)
+            c["notes"] = {"hr": hr, "en": existing_en if existing_en else en}
+            n_gen += 1
         elif is_filler or is_short_en:
             hr, en = generate(c)
-            # postojecu englesku natuknicu ugradi u EN opis
             if is_short_en and note_hr:
                 en = f"{en} {note_hr.rstrip('.')}."
             c["notes"] = {"hr": hr, "en": en}
             n_gen += 1
-        elif not (c.get("notes", {}).get("en") or "").strip():
-            # HR opis postoji, EN prazan -> generiraj EN
+        elif not existing_en:
             _, en = generate(c)
-            c["notes"]["en"] = en
+            c.setdefault("notes", {})["en"] = en
             n_gen += 1
     p.write_text(json.dumps(cigars, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"kurirano: {n_cur} | generirano: {n_gen} | ukupno: {len(cigars)}")
