@@ -173,7 +173,7 @@ const STRINGS = {
     en: "Music: Night in Venice and No Frills Cumbia by Kevin MacLeod (incompetech.com), licensed under CC BY 4.0.",
   },
   "footer.tobacco": {
-    hr: "Prodaja duhana na daljinu u RH nije dopuštena — linkovi na cigare su isključivo referentni. Samo za punoljetne (18+).",
+    hr: "Prodaja duhana na daljinu u Hrvatskoj nije dopuštena — poveznice na cigare služe samo kao informacija. Samo za punoljetne (18+).",
     en: "Distance sale of tobacco is not permitted in Croatia — cigar links are for reference only. Adults only (18+).",
   },
   "footer.alcohol": {
@@ -185,7 +185,7 @@ const STRINGS = {
     en: "Prices and availability are indicative and subject to change — verify with the shop.",
   },
   "footer.data": {
-    hr: "Dio profila (okusi, tijelo, snaga, duljina) je procjena, ne iz degustacije. App nije povezan s trgovinama ni markama; nazivi i marke pripadaju vlasnicima.",
+    hr: "Dio profila (okusi, tijelo, snaga, duljina) je procjena, a ne rezultat degustacije. Aplikacija nije povezana s trgovinama ni markama; nazivi i marke pripadaju svojim vlasnicima.",
     en: "Some profiles (flavour, body, strength, length) are estimates, not from tasting. Not affiliated with the shops or brands; names and trademarks belong to their owners.",
   },
   "footer.health": {
