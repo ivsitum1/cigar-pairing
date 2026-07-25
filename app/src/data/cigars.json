@@ -33377,111 +33377,6 @@
     "formatEstimated": true
   },
   {
-    "id": "cig-carlos-amp-maria-amorio",
-    "brand": "Carlos",
-    "line": "Maria Amorio",
-    "vitola": "Corona Gorda",
-    "format": "46 x 150mm",
-    "country": "Dominikanska Republika",
-    "wrapper": "H-2000",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
-    ],
-    "profileEstimated": true,
-    "catalogSource": "market",
-    "smokeTimeMin": 58,
-    "priceEUR": null,
-    "priceApprox": false,
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Dominikanska Republika, H-2000 pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Dominican Republic, H-2000 wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
-    },
-    "markets": [
-      "EU",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Corona Gorda",
-        "format": "46 x 150mm",
-        "smokeTimeMin": 58,
-        "priceEUR": null,
-        "url": null,
-        "regionLinks": {
-          "EU": {
-            "shop": "CigarWorld",
-            "url": "https://www.cigarworld.de/en/zigarren/dominikanische-republik/carlos-amp-maria-amorio-corona-gorda-90017277_61494",
-            "priceEUR": 19.0
-          }
-        },
-        "ring": 46,
-        "lengthMM": 150
-      },
-      {
-        "name": "Churchill",
-        "format": "48 x 182mm",
-        "smokeTimeMin": 70,
-        "priceEUR": null,
-        "url": null,
-        "regionLinks": {
-          "EU": {
-            "shop": "CigarWorld",
-            "url": "https://www.cigarworld.de/en/zigarren/dominikanische-republik/carlos-amp-maria-amorio-churchill-90017277_61497",
-            "priceEUR": 23.0
-          }
-        },
-        "ring": 48,
-        "lengthMM": 182
-      },
-      {
-        "name": "Robusto",
-        "format": "50 x 127mm",
-        "smokeTimeMin": 49,
-        "priceEUR": null,
-        "url": null,
-        "regionLinks": {
-          "EU": {
-            "shop": "CigarWorld",
-            "url": "https://www.cigarworld.de/en/zigarren/dominikanische-republik/carlos-amp-maria-amorio-robusto-90017277_61496",
-            "priceEUR": 21.0
-          }
-        },
-        "ring": 50,
-        "lengthMM": 127
-      },
-      {
-        "name": "Toro",
-        "format": "54 x 152mm",
-        "smokeTimeMin": 58,
-        "priceEUR": null,
-        "url": null,
-        "regionLinks": {
-          "EU": {
-            "shop": "CigarWorld",
-            "url": "https://www.cigarworld.de/en/zigarren/dominikanische-republik/carlos-amp-maria-amorio-toro-90017277_61495",
-            "priceEUR": 25.0
-          }
-        },
-        "ring": 54,
-        "lengthMM": 152
-      }
-    ],
-    "regionLinks": {
-      "EU": {
-        "shop": "CigarWorld",
-        "url": "https://www.cigarworld.de/en/zigarren/dominikanische-republik/carlos-amp-maria-amorio-corona-gorda-90017277_61494",
-        "priceEUR": 19.0
-      }
-    },
-    "formatEstimated": true
-  },
-  {
     "id": "cig-carlos-andre-airborne",
     "brand": "Carlos",
     "line": "André Airborne",
@@ -33810,6 +33705,111 @@
         "shop": "CigarWorld",
         "url": "https://www.cigarworld.de/en/zigarren/dominikanische-republik/carlos-andre-pace-robusto-90016837_57215",
         "priceEUR": 17.0
+      }
+    },
+    "formatEstimated": true
+  },
+  {
+    "id": "cig-carlos-amp-maria-amorio",
+    "brand": "Carlos",
+    "line": "Maria Amorio",
+    "vitola": "Corona Gorda",
+    "format": "46 x 150mm",
+    "country": "Dominikanska Republika",
+    "wrapper": "H-2000",
+    "strength": 3,
+    "body": 3,
+    "flavorTags": [
+      "cedar",
+      "zacini",
+      "koza",
+      "kava"
+    ],
+    "profileEstimated": true,
+    "catalogSource": "market",
+    "smokeTimeMin": 58,
+    "priceEUR": null,
+    "priceApprox": false,
+    "availabilityHR": [],
+    "notes": {
+      "hr": "Dominikanska Republika, H-2000 pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
+      "en": "Dominican Republic, H-2000 wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
+    },
+    "markets": [
+      "EU",
+      "WW"
+    ],
+    "vitolas": [
+      {
+        "name": "Corona Gorda",
+        "format": "46 x 150mm",
+        "smokeTimeMin": 58,
+        "priceEUR": null,
+        "url": null,
+        "regionLinks": {
+          "EU": {
+            "shop": "CigarWorld",
+            "url": "https://www.cigarworld.de/en/zigarren/dominikanische-republik/carlos-amp-maria-amorio-corona-gorda-90017277_61494",
+            "priceEUR": 19.0
+          }
+        },
+        "ring": 46,
+        "lengthMM": 150
+      },
+      {
+        "name": "Churchill",
+        "format": "48 x 182mm",
+        "smokeTimeMin": 70,
+        "priceEUR": null,
+        "url": null,
+        "regionLinks": {
+          "EU": {
+            "shop": "CigarWorld",
+            "url": "https://www.cigarworld.de/en/zigarren/dominikanische-republik/carlos-amp-maria-amorio-churchill-90017277_61497",
+            "priceEUR": 23.0
+          }
+        },
+        "ring": 48,
+        "lengthMM": 182
+      },
+      {
+        "name": "Robusto",
+        "format": "50 x 127mm",
+        "smokeTimeMin": 49,
+        "priceEUR": null,
+        "url": null,
+        "regionLinks": {
+          "EU": {
+            "shop": "CigarWorld",
+            "url": "https://www.cigarworld.de/en/zigarren/dominikanische-republik/carlos-amp-maria-amorio-robusto-90017277_61496",
+            "priceEUR": 21.0
+          }
+        },
+        "ring": 50,
+        "lengthMM": 127
+      },
+      {
+        "name": "Toro",
+        "format": "54 x 152mm",
+        "smokeTimeMin": 58,
+        "priceEUR": null,
+        "url": null,
+        "regionLinks": {
+          "EU": {
+            "shop": "CigarWorld",
+            "url": "https://www.cigarworld.de/en/zigarren/dominikanische-republik/carlos-amp-maria-amorio-toro-90017277_61495",
+            "priceEUR": 25.0
+          }
+        },
+        "ring": 54,
+        "lengthMM": 152
+      }
+    ],
+    "regionLinks": {
+      "EU": {
+        "shop": "CigarWorld",
+        "url": "https://www.cigarworld.de/en/zigarren/dominikanische-republik/carlos-amp-maria-amorio-corona-gorda-90017277_61494",
+        "priceEUR": 19.0
       }
     },
     "formatEstimated": true
