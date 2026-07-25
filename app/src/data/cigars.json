@@ -6,7 +6,7 @@
     "vitola": "Toro",
     "format": "50 x 152mm",
     "country": "Nikaragva",
-    "wrapper": "Habano",
+    "wrapper": "H-2000",
     "strength": 3,
     "body": 3,
     "flavorTags": [
@@ -3404,7 +3404,7 @@
     "vitola": "Robusto",
     "format": "54 x 133mm",
     "country": "Nikaragva",
-    "wrapper": "Habano",
+    "wrapper": "Corojo",
     "strength": 4,
     "body": 4,
     "flavorTags": [
@@ -6663,7 +6663,7 @@
     "vitola": "Robusto",
     "format": "50 x 127mm",
     "country": "Nikaragva",
-    "wrapper": "Connecticut",
+    "wrapper": "Connecticut Shade",
     "strength": 3,
     "body": 2,
     "flavorTags": [
@@ -6671,8 +6671,8 @@
       "kava",
       "papar",
       "kremasto",
-      "zemljano",
-      "orasasti"
+      "cedar",
+      "zemljano"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -6835,7 +6835,7 @@
     "vitola": "Black Market",
     "format": "52 x 152mm",
     "country": "Honduras",
-    "wrapper": "Nicaragua",
+    "wrapper": "Hybrid",
     "strength": 3,
     "body": 3,
     "flavorTags": [
@@ -6843,8 +6843,8 @@
       "kava",
       "papar",
       "kremasto",
-      "zemljano",
-      "orasasti"
+      "cedar",
+      "zemljano"
     ],
     "smokeTimeMin": 65,
     "priceEUR": null,
@@ -6852,7 +6852,7 @@
     "availabilityHR": [],
     "notes": {
       "hr": "Black Market: linija marke Alec Bradley.",
-      "en": "Black Market: a Alec Bradley line."
+      "en": "Honduran Jamastran and Panamanian longfillers sit at the heart of Alec Bradley Black Market, a medium-bodied luxury-class cigar wrapped in a dark, shimmering Nicaraguan Jalapa leaf cured to a semi-sweet patina. A Sumatra binder ties the blend together, adding a layer of spice and complexity that balances the wrapper's natural sweetness. First draw reveals cream, cedar, and a gentle cocoa that builds steadily without "
     },
     "markets": [
       "EU",
@@ -6871,7 +6871,7 @@
       }
     ],
     "priceUrl": null,
-    "profileEstimated": true,
+    "profileEstimated": false,
     "regionLinks": {
       "EU": {
         "shop": "CigarWorld",
@@ -6992,7 +6992,7 @@
     "vitola": "Robusto",
     "format": "50 x 127mm",
     "country": "Honduras",
-    "wrapper": "Connecticut",
+    "wrapper": "Connecticut Shade",
     "strength": 2,
     "body": 2,
     "flavorTags": [
@@ -7000,8 +7000,8 @@
       "kava",
       "papar",
       "kremasto",
-      "zemljano",
-      "orasasti"
+      "cedar",
+      "zemljano"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -7083,7 +7083,7 @@
     "vitola": "Robusto",
     "format": "52 x 127mm",
     "country": "Honduras",
-    "wrapper": "Honduras",
+    "wrapper": "Hybrid",
     "strength": 4,
     "body": 3,
     "flavorTags": [
@@ -7274,7 +7274,7 @@
     "vitola": "Corona",
     "format": "46 x 142mm",
     "country": "Honduras",
-    "wrapper": "Honduras",
+    "wrapper": "Broadleaf",
     "strength": 5,
     "body": 4,
     "flavorTags": [
@@ -7440,7 +7440,7 @@
     "vitola": "Filthy Hooligan",
     "format": "52 x 127mm",
     "country": "Honduras",
-    "wrapper": "H-2000",
+    "wrapper": "Maduro",
     "strength": 3,
     "body": 3,
     "flavorTags": [
@@ -7498,7 +7498,7 @@
     "vitola": "Gatekeeper Robusto",
     "format": "52 x 127mm",
     "country": "Honduras",
-    "wrapper": "Corojo",
+    "wrapper": "Habano",
     "strength": 5,
     "body": 5,
     "flavorTags": [
@@ -7574,7 +7574,7 @@
     "vitola": "Kintsugi",
     "format": "52 x 127mm",
     "country": "Honduras",
-    "wrapper": "Honduras",
+    "wrapper": "Trojes",
     "strength": 3,
     "body": 3,
     "flavorTags": [
@@ -7650,7 +7650,7 @@
     "vitola": "Gordo",
     "format": "60 x 152mm",
     "country": "Honduras",
-    "wrapper": "Honduran",
+    "wrapper": "Hybrid",
     "strength": 3,
     "body": 3,
     "flavorTags": [
@@ -7833,7 +7833,7 @@
     "vitola": "Curve",
     "format": "58 x 154mm",
     "country": "Honduras",
-    "wrapper": "Nicaragua",
+    "wrapper": "Habano",
     "strength": 3,
     "body": 3,
     "flavorTags": [
@@ -7926,7 +7926,7 @@
     "vitola": "Churchill",
     "format": "50 x 178mm",
     "country": "Honduras",
-    "wrapper": "Honduras",
+    "wrapper": "Honduran",
     "strength": 2,
     "body": 3,
     "flavorTags": [
@@ -8768,7 +8768,7 @@
     "vitola": "Tempus Maduro Robusto",
     "format": "52 x 127mm",
     "country": "Honduras",
-    "wrapper": "San Andrés maduro",
+    "wrapper": "Criollo",
     "strength": 3,
     "body": 4,
     "flavorTags": [
@@ -8844,7 +8844,7 @@
     "vitola": "Lancero",
     "format": "70 x 189mm",
     "country": "Honduras",
-    "wrapper": "Nicaragua",
+    "wrapper": "Proprietary",
     "strength": 3,
     "body": 3,
     "flavorTags": [
@@ -12825,7 +12825,7 @@
     "vitola": "Toro",
     "format": "50 x 152mm",
     "country": "Dominikanska Republika",
-    "wrapper": "Top-Grade Sumatra",
+    "wrapper": "Sumatra",
     "strength": 4,
     "body": 4,
     "flavorTags": [
@@ -13346,7 +13346,7 @@
     "vitola": "50 Maduro",
     "format": "50 x 133mm",
     "country": "Dominikanska Republika",
-    "wrapper": "Connecticut",
+    "wrapper": "Broadleaf",
     "strength": 2,
     "body": 4,
     "flavorTags": [
@@ -13606,7 +13606,7 @@
     "vitola": "Chateau Fuente",
     "format": "50 x 114mm",
     "country": "Dominikanska Republika",
-    "wrapper": "Connecticut",
+    "wrapper": "Broadleaf",
     "strength": 3,
     "body": 3,
     "flavorTags": [
@@ -13832,7 +13832,7 @@
     "vitola": "Deluxe",
     "format": "43 x 165mm",
     "country": "Dominikanska Republika",
-    "wrapper": "Connecticut",
+    "wrapper": "Cameroon",
     "strength": 3,
     "body": 3,
     "flavorTags": [
@@ -13907,8 +13907,8 @@
       "kava",
       "papar",
       "kremasto",
-      "zemljano",
-      "orasasti"
+      "cedar",
+      "zemljano"
     ],
     "smokeTimeMin": 60,
     "priceEUR": 28.2,
@@ -14238,7 +14238,7 @@
     "vitola": "Best Seller",
     "format": "49 x 140mm",
     "country": "Dominikanska Republika",
-    "wrapper": "Cameroon",
+    "wrapper": "Sun Grown",
     "strength": 2,
     "body": 3,
     "flavorTags": [
@@ -14246,8 +14246,8 @@
       "kava",
       "papar",
       "kremasto",
-      "zemljano",
-      "orasasti"
+      "cedar",
+      "zemljano"
     ],
     "smokeTimeMin": 50,
     "priceEUR": 12.3,
@@ -14502,7 +14502,7 @@
     "vitola": "Robusto",
     "format": "50 x 133mm",
     "country": "Dominikanska Republika",
-    "wrapper": "Dominican chateau de la fuente",
+    "wrapper": "Corojo",
     "strength": 5,
     "body": 5,
     "flavorTags": [
@@ -14864,14 +14864,16 @@
     "vitola": "Double Robusto",
     "format": "54 x 138mm",
     "country": "Dominikanska Republika",
-    "wrapper": "USA",
+    "wrapper": "Connecticut Shade",
     "strength": 3,
     "body": 3,
     "flavorTags": [
       "cedar",
-      "zacini",
       "koza",
-      "kava"
+      "zacini",
+      "kremasto",
+      "orasasti",
+      "med"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -14982,7 +14984,7 @@
     "vitola": "Petit Corona",
     "format": "42 x 121mm",
     "country": "Dominikanska Republika",
-    "wrapper": "Connecticut",
+    "wrapper": "Cameroon",
     "strength": 2,
     "body": 2,
     "flavorTags": [
@@ -15100,7 +15102,7 @@
     "vitola": "Piramide",
     "format": "52 x 152mm",
     "country": "Dominikanska Republika",
-    "wrapper": "Connecticut Broadleaf",
+    "wrapper": "Broadleaf",
     "strength": 2,
     "body": 3,
     "flavorTags": [
