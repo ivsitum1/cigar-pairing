@@ -5,7 +5,25 @@ import { useI18n } from "../i18n";
 import { Chip, SectionTitle } from "../components/ui";
 import { CigarRow, DrinkRow } from "../components/cards";
 import { DetailSheet } from "../components/DetailSheet";
-import { COUNTRIES, cigarCountries, drinkCountries, type CountryInfo } from "../lib/geo";
+import { COUNTRIES, cigarCountries, drinkCountries, flagSrc, type CountryInfo } from "../lib/geo";
+
+/** Flag image — Windows does not render emoji flags, only ISO letter pairs. */
+function FlagIcon({ iso, name, size = 14 }: { iso: string; name: string; size?: number }) {
+  const h = Math.round(size * 0.75);
+  return (
+    <img
+      src={flagSrc(iso, 40)}
+      srcSet={`${flagSrc(iso, 40)} 1x, ${flagSrc(iso, 80)} 2x`}
+      alt=""
+      title={name}
+      width={size}
+      height={h}
+      className="inline-block shrink-0 rounded-[1px] object-cover align-[-1px]"
+      loading="lazy"
+      decoding="async"
+    />
+  );
+}
 import club from "../data/club.json";
 import WORLD_OUTLINE from "../data/world_outline.json";
 import { Club101Page } from "./Club101Page";
@@ -343,6 +361,7 @@ export function ClubPage() {
               key={c.hr}
               onClick={() => setCountry(country?.hr === c.hr ? null : c)}
               className="cursor-pointer"
+              aria-label={lx({ hr: c.hr, en: c.en })}
             >
               <circle
                 cx={X(c.lon)}
@@ -352,15 +371,15 @@ export function ClubPage() {
                 stroke={country?.hr === c.hr ? "#d4af37" : "rgba(200,160,60,0.5)"}
                 strokeWidth={markerSize * 0.06}
               />
-              <text
-                x={X(c.lon)}
-                y={Y(c.lat) + markerSize * 0.32}
-                textAnchor="middle"
-                fontSize={markerSize * 0.9}
-                style={{ userSelect: "none" }}
-              >
-                {c.flag}
-              </text>
+              <image
+                href={flagSrc(c.iso, 40)}
+                x={X(c.lon) - markerSize * 0.45}
+                y={Y(c.lat) - markerSize * 0.3}
+                width={markerSize * 0.9}
+                height={markerSize * 0.6}
+                preserveAspectRatio="xMidYMid slice"
+                style={{ pointerEvents: "none" }}
+              />
             </g>
           ))}
         </svg>
@@ -369,7 +388,7 @@ export function ClubPage() {
       <div className="no-scrollbar mt-2 flex gap-1.5 overflow-x-auto">
         {active.map((c) => (
           <Chip key={c.hr} active={country?.hr === c.hr} onClick={() => setCountry(country?.hr === c.hr ? null : c)}>
-            {c.flag} {lx({ hr: c.hr, en: c.en })} ({countryCounts.get(c.hr)})
+            <FlagIcon iso={c.iso} name={lx({ hr: c.hr, en: c.en })} /> {lx({ hr: c.hr, en: c.en })} ({countryCounts.get(c.hr)})
           </Chip>
         ))}
       </div>
@@ -377,8 +396,11 @@ export function ClubPage() {
       {country && (
         <>
           <SectionTitle>
-            {country.flag} {lx({ hr: country.hr, en: country.en })} · {countryCigars.length + countryDrinks.length}{" "}
-            {t("club.products")}
+            <span className="inline-flex items-center gap-1.5">
+              <FlagIcon iso={country.iso} name={lx({ hr: country.hr, en: country.en })} size={16} />
+              {lx({ hr: country.hr, en: country.en })} · {countryCigars.length + countryDrinks.length}{" "}
+              {t("club.products")}
+            </span>
           </SectionTitle>
           <div className="space-y-2">
             {countryCigars.map((c) => (
