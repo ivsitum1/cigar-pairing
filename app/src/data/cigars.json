@@ -27369,6 +27369,22 @@
         "lengthMM": 142
       },
       {
+        "name": "Gran Toro",
+        "format": "48 x 178mm",
+        "smokeTimeMin": 61,
+        "priceEUR": null,
+        "url": null,
+        "regionLinks": {
+          "EU": {
+            "shop": "CigarWorld",
+            "url": "https://www.cigarworld.de/en/zigarren/costa-rica/brun-del-re-gold-gran-toro-90010123_38244",
+            "priceEUR": 8.4
+          }
+        },
+        "ring": 48,
+        "lengthMM": 178
+      },
+      {
         "name": "Churchill",
         "format": "48 x 182mm",
         "smokeTimeMin": 70,
@@ -27463,22 +27479,6 @@
         },
         "ring": 62,
         "lengthMM": 154
-      },
-      {
-        "name": "Gran Toro",
-        "format": "91 x 159mm",
-        "smokeTimeMin": 61,
-        "priceEUR": null,
-        "url": null,
-        "regionLinks": {
-          "EU": {
-            "shop": "CigarWorld",
-            "url": "https://www.cigarworld.de/en/zigarren/costa-rica/brun-del-re-gold-gran-toro-90010123_38244",
-            "priceEUR": 8.4
-          }
-        },
-        "ring": 91,
-        "lengthMM": 159
       }
     ],
     "regionLinks": {
@@ -31613,7 +31613,7 @@
     "brand": "CAO",
     "line": "Amazon Basin",
     "vitola": "Toro",
-    "format": "6 x 152mm",
+    "format": "52 x 152mm",
     "country": "Nikaragva",
     "wrapper": "Ecuador Sumatra",
     "strength": 4,
@@ -31642,7 +31642,7 @@
     "vitolas": [
       {
         "name": "Toro",
-        "format": "6 x 152mm",
+        "format": "52 x 152mm",
         "smokeTimeMin": 58,
         "priceEUR": null,
         "url": null,
@@ -31653,7 +31653,7 @@
             "priceEUR": 14.5
           }
         },
-        "ring": 6,
+        "ring": 52,
         "lengthMM": 152
       }
     ],
@@ -56118,7 +56118,7 @@
     "brand": "Don Duarte",
     "line": "Reserva Privada Fuerte MADURO",
     "vitola": "Robusto",
-    "format": "6 x 127mm",
+    "format": "52 x 127mm",
     "country": "Nikaragva",
     "wrapper": "Maduro",
     "strength": 3,
@@ -56147,7 +56147,7 @@
     "vitolas": [
       {
         "name": "Robusto",
-        "format": "6 x 127mm",
+        "format": "52 x 127mm",
         "smokeTimeMin": 49,
         "priceEUR": null,
         "url": null,
@@ -56158,7 +56158,7 @@
             "priceEUR": 9.9
           }
         },
-        "ring": 6,
+        "ring": 52,
         "lengthMM": 127
       }
     ],
@@ -60656,6 +60656,22 @@
         "lengthMM": 105
       },
       {
+        "name": "Short Robusto",
+        "format": "48 x 102mm",
+        "smokeTimeMin": 41,
+        "priceEUR": null,
+        "url": null,
+        "regionLinks": {
+          "EU": {
+            "shop": "CigarWorld",
+            "url": "https://www.cigarworld.de/en/zigarren/spanien/dos-santos-la-regenta-1921-short-robusto-90001835_54613",
+            "priceEUR": 6.9
+          }
+        },
+        "ring": 48,
+        "lengthMM": 102
+      },
+      {
         "name": "Robusto",
         "format": "50 x 127mm",
         "smokeTimeMin": 49,
@@ -60686,22 +60702,6 @@
         },
         "ring": 56,
         "lengthMM": 159
-      },
-      {
-        "name": "Short Robusto",
-        "format": "91 x 106mm",
-        "smokeTimeMin": 41,
-        "priceEUR": null,
-        "url": null,
-        "regionLinks": {
-          "EU": {
-            "shop": "CigarWorld",
-            "url": "https://www.cigarworld.de/en/zigarren/spanien/dos-santos-la-regenta-1921-short-robusto-90001835_54613",
-            "priceEUR": 6.9
-          }
-        },
-        "ring": 91,
-        "lengthMM": 106
       }
     ],
     "regionLinks": {
@@ -109407,7 +109407,7 @@
       },
       {
         "name": "Belicoso",
-        "format": "100 x 140mm",
+        "format": "100 x 254mm",
         "smokeTimeMin": 54,
         "priceEUR": null,
         "url": null,
@@ -109419,7 +109419,7 @@
           }
         },
         "ring": 100,
-        "lengthMM": 140
+        "lengthMM": 254
       }
     ],
     "regionLinks": {
@@ -110979,7 +110979,7 @@
     "brand": "Maradona",
     "line": "Tribute Classic",
     "vitola": "Robusto",
-    "format": "98 x 127mm",
+    "format": "50 x 127mm",
     "country": "Nikaragva",
     "wrapper": "—",
     "strength": 3,
@@ -111007,7 +111007,7 @@
     "vitolas": [
       {
         "name": "Robusto",
-        "format": "98 x 127mm",
+        "format": "50 x 127mm",
         "smokeTimeMin": 49,
         "priceEUR": null,
         "url": null,
@@ -111018,7 +111018,7 @@
             "priceEUR": 10.2
           }
         },
-        "ring": 98,
+        "ring": 50,
         "lengthMM": 127
       }
     ],
@@ -112045,7 +112045,7 @@
     "brand": "Marca Fina",
     "line": "Fina Panama Maduro Edición Limitada 2024",
     "vitola": "Toro",
-    "format": "98 x 152mm",
+    "format": "52 x 152mm",
     "country": "Panama",
     "wrapper": "Maduro",
     "strength": 3,
@@ -112074,7 +112074,7 @@
     "vitolas": [
       {
         "name": "Toro",
-        "format": "98 x 152mm",
+        "format": "52 x 152mm",
         "smokeTimeMin": 58,
         "priceEUR": null,
         "url": null,
@@ -112085,7 +112085,7 @@
             "priceEUR": 3.8
           }
         },
-        "ring": 98,
+        "ring": 52,
         "lengthMM": 152
       }
     ],
@@ -131143,7 +131143,7 @@
     "brand": "Partageno",
     "line": "&amp; Corona Brasil",
     "vitola": "Panetela",
-    "format": "10 x 162mm",
+    "format": "28 x 162mm",
     "country": "Njemačka",
     "wrapper": "Brasil",
     "strength": 3,
@@ -131171,7 +131171,7 @@
     "vitolas": [
       {
         "name": "Panetela",
-        "format": "10 x 162mm",
+        "format": "28 x 162mm",
         "smokeTimeMin": 62,
         "priceEUR": null,
         "url": null,
@@ -131182,7 +131182,7 @@
             "priceEUR": 48.02
           }
         },
-        "ring": 10,
+        "ring": 28,
         "lengthMM": 162
       }
     ],
@@ -131542,7 +131542,7 @@
     "brand": "Partageno",
     "line": "&amp; Corona Sumatra",
     "vitola": "Panetela",
-    "format": "10 x 162mm",
+    "format": "28 x 162mm",
     "country": "Njemačka",
     "wrapper": "Indonesia",
     "strength": 3,
@@ -131570,7 +131570,7 @@
     "vitolas": [
       {
         "name": "Panetela",
-        "format": "10 x 162mm",
+        "format": "28 x 162mm",
         "smokeTimeMin": 62,
         "priceEUR": null,
         "url": null,
@@ -131581,7 +131581,7 @@
             "priceEUR": 48.02
           }
         },
-        "ring": 10,
+        "ring": 28,
         "lengthMM": 162
       }
     ],
@@ -164627,6 +164627,22 @@
     ],
     "vitolas": [
       {
+        "name": "Toro",
+        "format": "48 x 143mm",
+        "smokeTimeMin": 58,
+        "priceEUR": null,
+        "url": null,
+        "regionLinks": {
+          "EU": {
+            "shop": "CigarWorld",
+            "url": "https://www.cigarworld.de/en/zigarren/italien/toscano-master-aged-toro-90016052_65594",
+            "priceEUR": 9.3
+          }
+        },
+        "ring": 48,
+        "lengthMM": 143
+      },
+      {
         "name": "Double Robusto",
         "format": "70 x 138mm",
         "smokeTimeMin": 53,
@@ -164641,22 +164657,6 @@
         },
         "ring": 70,
         "lengthMM": 138
-      },
-      {
-        "name": "Toro",
-        "format": "90 x 152mm",
-        "smokeTimeMin": 58,
-        "priceEUR": null,
-        "url": null,
-        "regionLinks": {
-          "EU": {
-            "shop": "CigarWorld",
-            "url": "https://www.cigarworld.de/en/zigarren/italien/toscano-master-aged-toro-90016052_65594",
-            "priceEUR": 9.3
-          }
-        },
-        "ring": 90,
-        "lengthMM": 152
       }
     ],
     "regionLinks": {
@@ -166656,22 +166656,6 @@
     ],
     "vitolas": [
       {
-        "name": "Robusto",
-        "format": "6 x 127mm",
-        "smokeTimeMin": 49,
-        "priceEUR": null,
-        "url": null,
-        "regionLinks": {
-          "EU": {
-            "shop": "CigarWorld",
-            "url": "https://www.cigarworld.de/en/zigarren/dominikanische-republik/vegafina-1998-vf-52-tubo-90015386_59651",
-            "priceEUR": 9.1
-          }
-        },
-        "ring": 6,
-        "lengthMM": 127
-      },
-      {
         "name": "42L",
         "format": "42 x 182mm",
         "smokeTimeMin": 70,
@@ -166734,6 +166718,22 @@
         },
         "ring": 50,
         "lengthMM": 106
+      },
+      {
+        "name": "Robusto",
+        "format": "52 x 133mm",
+        "smokeTimeMin": 49,
+        "priceEUR": null,
+        "url": null,
+        "regionLinks": {
+          "EU": {
+            "shop": "CigarWorld",
+            "url": "https://www.cigarworld.de/en/zigarren/dominikanische-republik/vegafina-1998-vf-52-tubo-90015386_59651",
+            "priceEUR": 9.1
+          }
+        },
+        "ring": 52,
+        "lengthMM": 133
       },
       {
         "name": "Toro",
