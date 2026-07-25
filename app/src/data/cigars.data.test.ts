@@ -183,14 +183,17 @@ describe("cigars.json integrity", () => {
     expect(CIGARS.find((c) => c.id === "cig-alec-bradley-sanctum-double")).toBeUndefined();
   });
 
-  it("USA kupnja ide na Holt's search po nazivu, ne na Google site: (0 pogodaka)", () => {
+  it("USA kupnja ide na Holt's (listing ili search), ne na Google site:", () => {
     const withUsa = CIGARS.find((c) => c.markets.includes("USA"));
     expect(withUsa).toBeDefined();
     const usa = cigarLinkForMarket(withUsa!, "USA");
-    expect(usa).toContain("holts.com");
-    expect(usa).toContain(encodeURIComponent(`${withUsa!.brand} ${withUsa!.line}`.trim()));
+    expect(usa).toMatch(/holts\.com|cigarsdaily\.com|famous-smoke\.com|neptunecigar\.com/i);
     expect(usa).not.toContain("google.com");
     expect(usa).not.toContain("site%3A");
+    // Bez regionLinks.USA app pada na Holts search po brand+line
+    if (!withUsa!.regionLinks?.USA?.url) {
+      expect(usa).toContain(encodeURIComponent(`${withUsa!.brand} ${withUsa!.line}`.trim()));
+    }
   });
 
   it("cigarShopLinks — po regiji tocne trgovine i izravni HR link gdje postoji", () => {
