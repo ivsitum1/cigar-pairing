@@ -16,6 +16,21 @@
     "Edición Especial #5": {
       "line": "Edición Especial #5"
     },
+    "Edición Especial No. 1": {
+      "line": "Edición Especial No. 1"
+    },
+    "Edición Especial No. 2": {
+      "line": "Edición Especial No. 2"
+    },
+    "Edición Especial No. 4": {
+      "line": "Edición Especial No. 4"
+    },
+    "Edición Especial No. 5": {
+      "line": "Edición Especial #5"
+    },
+    "Edición Especial No. 60": {
+      "line": "Edición Especial No. 60"
+    },
     "La Aroma de Cuba": {
       "line": "La Aroma de Cuba"
     },
@@ -71,8 +86,10 @@
   "vitolaRenames": {},
   "shapes": {},
   "keepSeparate": [],
-  "lineNotes": {},
+  "lineNotes": {
+    "Edición Especial No. 5": "EU market name line → merge into Edición Especial #5; preserve EU regionLinks (Option A brand unify 2026-07-25)."
+  },
   "unresolved": [
-    "La Aroma de Cuba: Caribe vs Cuba naming — Base Line / Mi Amor / Pasión folded"
+    "La Aroma de Cuba: Caribe vs Cuba naming — Base Line / Mi Amor / Pasión folded; del Caribe brand retired via la-aroma-del-caribe.json renameBrand"
   ]
 }
