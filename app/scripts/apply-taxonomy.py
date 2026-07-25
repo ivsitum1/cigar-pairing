@@ -344,14 +344,12 @@ def apply_taxonomy(cigars: list, tax_files: list[dict], report: dict) -> list:
         if rb:
             rename_map[brand] = rb
 
-    # 1. Brand canonicalization — mark rows so id derive mints cigar_id(new_brand, line)
-    # and old ids land in cigarIdAliases (deep-links / localStorage).
+    # 1. Brand canonicalization
     for c in cigars:
         b = c.get("brand")
         if b in rename_map:
             report.setdefault("brand_renames", []).append({"from": b, "to": rename_map[b], "id": c.get("id")})
             c["brand"] = rename_map[b]
-            c["_brand_renamed"] = True
 
     # 2. Line remap
     for c in cigars:
@@ -364,15 +362,9 @@ def apply_taxonomy(cigars: list, tax_files: list[dict], report: dict) -> list:
                 if cand.get("renameBrand") == c.get("brand") or cand.get("brand") == c.get("brand"):
                     tf = cand
                     break
-        # Merge line maps: renameBrand *source* files first, destination taxonomy wins.
-        lines_map: dict = {}
-        for src, dst in rename_map.items():
-            if dst == c.get("brand") and src in by_brand:
-                lines_map.update(by_brand[src].get("lines") or {})
-        if tf:
-            lines_map.update(tf.get("lines") or {})
-        if not lines_map:
+        if not tf:
             continue
+        lines_map = tf.get("lines") or {}
         raw_line = c.get("_raw_line") or c.get("line") or ""
         cur_line = c.get("line") or ""
         spec = lines_map.get(raw_line) or lines_map.get(cur_line)
@@ -384,6 +376,13 @@ def apply_taxonomy(cigars: list, tax_files: list[dict], report: dict) -> list:
             continue
         new_line = spec.get("line", raw_line)
         c["line"] = new_line
+        # Per-line brand split (Casa / Carlos class): optional brand override on the line spec.
+        new_brand = spec.get("brand")
+        if isinstance(new_brand, str) and new_brand.strip() and new_brand != c.get("brand"):
+            report.setdefault("brand_renames", []).append(
+                {"from": c.get("brand"), "to": new_brand, "id": c.get("id"), "via": "line"}
+            )
+            c["brand"] = new_brand
         if spec.get("sampler"):
             c.setdefault("lineup", c.get("lineup") or [])
         if "vitola" in spec:
@@ -432,7 +431,6 @@ def apply_taxonomy(cigars: list, tax_files: list[dict], report: dict) -> list:
             ),
         )
         base = copy.deepcopy(rows_sorted[0])
-        brand_renamed = any(r.get("_brand_renamed") for r in rows_sorted)
         for other in rows_sorted[1:]:
             base = merge_records(base, other, report)
             if other.get("id") and other.get("id") != base.get("id"):
@@ -444,8 +442,6 @@ def apply_taxonomy(cigars: list, tax_files: list[dict], report: dict) -> list:
             r.get("_raw_line") if r.get("_raw_line") is not None else (r.get("line") or "")
             for r in rows_sorted
         ]
-        if brand_renamed:
-            base["_brand_renamed"] = True
         base.pop("_raw_line", None)
         merged.append(base)
 
@@ -497,17 +493,10 @@ def apply_taxonomy(cigars: list, tax_files: list[dict], report: dict) -> list:
         line = c.get("line") or ""
         old_ids = [i for i in (c.pop("_old_ids", []) or []) if i]
         raw_lines = c.pop("_raw_lines", None) or []
-        brand_renamed = bool(c.pop("_brand_renamed", False))
         line_changed = bool(raw_lines) and not (len(raw_lines) == 1 and raw_lines[0] == line)
         merged_many = len(old_ids) > 1
 
-        if (
-            not brand_renamed
-            and not merged_many
-            and not line_changed
-            and len(old_ids) == 1
-            and old_ids[0] not in used_ids
-        ):
+        if not merged_many and not line_changed and len(old_ids) == 1 and old_ids[0] not in used_ids:
             new_id = old_ids[0]
         else:
             new_id = cigar_id(brand, line)

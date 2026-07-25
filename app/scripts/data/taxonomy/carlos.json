@@ -2,29 +2,42 @@
   "brand": "Carlos",
   "renameBrand": null,
   "status": "done",
-  "reviewedAt": "2026-07-24",
+  "reviewedAt": "2026-07-25",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
-    "phase3_w3_w4_finish W3",
-    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
+    "https://www.carlos-andre.com/en/brand/",
+    "https://www.cigarworld.de/en/carlos-andre",
+    "https://www.cigarworld.de/en/zigarren/dominikanische-republik/carlos-andre-airborne-90015057",
+    "https://halfwheel.com/freuds-carlos-maria-amorio-begins-shipping/429872/",
+    "https://www.cigarworld.de/en/zigarren/dominikanische-republik/carlos-amp-maria-amorio-90017277",
+    "brand-identity-cleanup 2026-07-25"
   ],
   "lines": {
-    "Maria Amorio": {
-      "line": "Maria Amorio"
-    },
     "André Airborne": {
-      "line": "André Airborne"
+      "line": "Airborne",
+      "brand": "Carlos André"
     },
     "André Cast Off": {
-      "line": "André Cast Off"
+      "line": "Cast Off",
+      "brand": "Carlos André"
     },
     "André Pace": {
-      "line": "André Pace"
+      "line": "Pace",
+      "brand": "Carlos André"
+    },
+    "Maria Amorio": {
+      "line": "Amorio",
+      "brand": "Carlos & Maria"
+    },
+    "&amp; Maria Amorio": {
+      "line": "Amorio",
+      "brand": "Carlos & Maria"
     }
   },
   "vitolaRenames": {},
   "shapes": {},
   "keepSeparate": [],
-  "lineNotes": {},
+  "lineNotes": {
+    "Maria Amorio": "Freud Cigar Co. brand Carlos & Maria, line Amorío — not Arnold André"
+  },
   "unresolved": []
 }

@@ -1,12 +1,14 @@
 {
   "brand": "Don Pepin",
-  "renameBrand": null,
+  "renameBrand": "Don Pépin García",
   "status": "done",
-  "reviewedAt": "2026-07-24",
+  "reviewedAt": "2026-07-25",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
-    "phase3_w2_finish deterministic remaps",
-    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
+    "https://halfwheel.com/my-fathers-el-rey-de-los-habanos-returns/444463/",
+    "https://halfwheel.com/don-pepin-garcia-series-jj-20th-anniversary-ships/453053/",
+    "https://myfathercigars.com/cigar/don-pepin-garcia-e-r-h/",
+    "https://www.cigarworld.de/en/zigarren/nicaragua/don-pepin-original-lanceros-90007951_18886",
+    "brand-identity-cleanup 2026-07-25"
   ],
   "lines": {
     "Clasicos 1950": {
@@ -16,7 +18,7 @@
       "line": "Clasicos 1979"
     },
     "E.R.H": {
-      "line": "E.R.H"
+      "line": "E.R.H."
     },
     "Limited Edition Original 20th Anniversary 2023": {
       "line": "Limited Edition Original 20th Anniversary 2023"
@@ -25,10 +27,10 @@
       "line": "Original"
     },
     "Series JJ Selectos": {
-      "line": "Series JJ Selectos"
+      "line": "Series JJ"
     },
     "Series JJ Sublimes": {
-      "line": "Series JJ Sublimes"
+      "line": "Series JJ"
     },
     "VC": {
       "line": "VC"
@@ -37,8 +39,10 @@
   "vitolaRenames": {},
   "shapes": {},
   "keepSeparate": [],
-  "lineNotes": {},
-  "unresolved": [
-    "Don Pepin: brand name looks truncated/ambiguous — renameBrand later"
-  ]
+  "lineNotes": {
+    "Series JJ Selectos": "EU vitola-level label under Series JJ — absorb into Series JJ",
+    "Series JJ Sublimes": "EU vitola-level label under Series JJ — absorb into Series JJ",
+    "VC": "Kept distinct from Vegas Cubanas (separate catalogue lines)"
+  },
+  "unresolved": []
 }

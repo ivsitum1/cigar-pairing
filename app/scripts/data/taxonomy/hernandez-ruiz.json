@@ -1,6 +1,6 @@
 {
-  "brand": "Hernandez",
-  "renameBrand": "Hernandez & Ruiz",
+  "brand": "Hernandez & Ruiz",
+  "renameBrand": null,
   "status": "done",
   "reviewedAt": "2026-07-25",
   "sources": [
@@ -10,6 +10,9 @@
     "brand-identity-cleanup 2026-07-25"
   ],
   "lines": {
+    "Hernandez & Ruiz": {
+      "line": "Hernandez & Ruiz"
+    },
     "Ruiz": {
       "line": "Hernandez & Ruiz"
     },
@@ -20,8 +23,6 @@
   "vitolaRenames": {},
   "shapes": {},
   "keepSeparate": [],
-  "lineNotes": {
-    "Ruiz": "Single-series Panama brand (Tabacalera H & R / Paul Bugge) — line equals brand (class H)"
-  },
+  "lineNotes": {},
   "unresolved": []
 }

@@ -2,52 +2,155 @@
   "brand": "Don Pépin García",
   "renameBrand": null,
   "status": "done",
-  "reviewedAt": "2026-07-24",
+  "reviewedAt": "2026-07-25",
   "sources": [
-    "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
-    "phase3_w2_finish deterministic remaps",
-    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
+    "https://halfwheel.com/my-fathers-el-rey-de-los-habanos-returns/444463/",
+    "https://halfwheel.com/don-pepin-garcia-series-jj-20th-anniversary-ships/453053/",
+    "https://halfwheel.com/don-pepin-garcia-clasico-20th-anniversary/472648/",
+    "https://myfathercigars.com/cigar/don-pepin-garcia-e-r-h/",
+    "https://www.holts.com/cigars/all-cigar-brands/don-pepin-garcia-original.html",
+    "https://www.cigarworld.de/en/zigarren/nicaragua/don-pepin-original-lanceros-90007951_18886",
+    "brand-identity-cleanup 2026-07-25"
   ],
   "lines": {
+    "Clasicos 1950": {
+      "line": "Clasicos 1950"
+    },
+    "Clasicos 1979": {
+      "line": "Clasicos 1979"
+    },
+    "E.R.H": {
+      "line": "E.R.H."
+    },
+    "E.R.H.": {
+      "line": "E.R.H."
+    },
+    "Limited Edition Original 20th Anniversary 2023": {
+      "line": "Limited Edition Original 20th Anniversary 2023"
+    },
+    "Original": {
+      "line": "Original"
+    },
+    "Series JJ": {
+      "line": "Series JJ"
+    },
+    "Series JJ Selectos": {
+      "line": "Series JJ"
+    },
+    "Series JJ Sublimes": {
+      "line": "Series JJ"
+    },
+    "Serie JJ": {
+      "line": "Series JJ"
+    },
+    "VC": {
+      "line": "VC"
+    },
     "Don Pepin Garcia 15th Anniversary": {
-      "line": "Pepin Garcia 15th Anniversary"
+      "line": "15th Anniversary"
     },
     "Don Pepin Garcia 20th Anniversary": {
-      "line": "Pepin Garcia 20th Anniversary"
+      "line": "20th Anniversary"
     },
     "Don Pepin Garcia Clasico 20th Anniversary": {
-      "line": "Pepin Garcia Clasico 20th Anniversary"
+      "line": "Clasico 20th Anniversary"
     },
     "Don Pepin Garcia Cuban Classic": {
-      "line": "Pepin Garcia Cuban Classic"
+      "line": "Cuban Classic"
     },
     "Don Pepin Garcia E.R.H.": {
-      "line": "Pepin Garcia E.R.H."
+      "line": "E.R.H."
     },
     "Don Pepin Garcia Original": {
-      "line": "Pepin Garcia Original"
+      "line": "Original"
     },
     "Don Pepin Garcia Serie JJ": {
-      "line": "Pepin Garcia Serie JJ"
+      "line": "Series JJ"
     },
     "Don Pepin Garcia Serie JJ Limited Edition 2025": {
-      "line": "Pepin Garcia Serie JJ Limited Edition 2025"
+      "line": "Series JJ Limited Edition 2025"
     },
     "Don Pepin Garcia Vegas Cubanas": {
-      "line": "Pepin Garcia Vegas Cubanas"
+      "line": "Vegas Cubanas"
     },
     "Don Pepin Garcia Vintage": {
-      "line": "Pepin Garcia Vintage"
+      "line": "Vintage"
+    },
+    "Pepin Garcia 15th Anniversary": {
+      "line": "15th Anniversary"
+    },
+    "Pepin Garcia 20th Anniversary": {
+      "line": "20th Anniversary"
+    },
+    "Pepin Garcia Clasico 20th Anniversary": {
+      "line": "Clasico 20th Anniversary"
+    },
+    "Pepin Garcia Cuban Classic": {
+      "line": "Cuban Classic"
+    },
+    "Pepin Garcia E.R.H.": {
+      "line": "E.R.H."
+    },
+    "Pepin Garcia Original": {
+      "line": "Original"
+    },
+    "Pepin Garcia Serie JJ": {
+      "line": "Series JJ"
+    },
+    "Pepin Garcia Serie JJ Limited Edition 2025": {
+      "line": "Series JJ Limited Edition 2025"
+    },
+    "Pepin Garcia Vegas Cubanas": {
+      "line": "Vegas Cubanas"
+    },
+    "Pepin Garcia Vintage": {
+      "line": "Vintage"
+    },
+    "15th Anniversary": {
+      "line": "15th Anniversary"
+    },
+    "20th Anniversary": {
+      "line": "20th Anniversary"
+    },
+    "Clasico 20th Anniversary": {
+      "line": "Clasico 20th Anniversary"
+    },
+    "Cuban Classic": {
+      "line": "Cuban Classic"
+    },
+    "Series JJ Limited Edition 2025": {
+      "line": "Series JJ Limited Edition 2025"
+    },
+    "Vegas Cubanas": {
+      "line": "Vegas Cubanas"
+    },
+    "Vintage": {
+      "line": "Vintage"
     }
   },
   "vitolaRenames": {},
   "shapes": {},
   "keepSeparate": [
     [
-      "Don Pepin Garcia Serie JJ",
-      "Don Pepin Garcia Serie JJ Limited Edition 2025"
+      "Series JJ",
+      "Series JJ Limited Edition 2025"
+    ],
+    [
+      "Original",
+      "Limited Edition Original 20th Anniversary 2023"
+    ],
+    [
+      "20th Anniversary",
+      "Clasico 20th Anniversary"
+    ],
+    [
+      "VC",
+      "Vegas Cubanas"
     ]
   ],
-  "lineNotes": {},
+  "lineNotes": {
+    "Series JJ": "Canonical English name per My Father / halfwheel (Serie JJ / Series JJ unified)",
+    "E.R.H.": "El Rey de los Habanos — trailing period normalized"
+  },
   "unresolved": []
 }
