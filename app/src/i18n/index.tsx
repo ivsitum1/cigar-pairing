@@ -46,8 +46,8 @@ const STRINGS = {
   "club.shopLink": { hr: "Trgovina", en: "Shop" },
   "club.bonton": { hr: "Pušački bonton", en: "Smoking manners" },
   "club.bontonTeaser": {
-    hr: "Mala knjiga manira za stol s cigarom i čašom — jedanaest kratkih poglavlja u duhu klasičnog britanskog bontona.",
-    en: "A short book of manners for a table with cigar and glass — eleven brief chapters in the spirit of classic British etiquette.",
+    hr: "Mala knjiga manira za stol s cigarom i čašom — bez ispravnog i krivog, samo uljudnost i pažnja u jedanaest kratkih poglavlja.",
+    en: "A short book of manners for the cigar-and-glass table — no right or wrong, just courtesy and care across eleven short chapters.",
   },
   "club.bontonOpen": { hr: "Otvori knjigu", en: "Open the book" },
   "club.bontonSubtitle": { hr: "Kratka knjiga manira", en: "A short book of manners" },

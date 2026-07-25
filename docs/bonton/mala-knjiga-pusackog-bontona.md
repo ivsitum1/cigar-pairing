@@ -7,6 +7,8 @@
 
 ## Epigraf
 
+Prvo i najvažnije: uljudnost i pažnja. Ne postoji ispravno ili krivo — ako nekome nešto odgovara, a ne narušava tuđe uživanje, to je u redu.
+
 Po uzoru na klasične britanske knjige bontona: kratka pravila ljubaznosti, napisana za stol s cigarom i čašom.
 
 
@@ -16,6 +18,8 @@ Po uzoru na klasične britanske knjige bontona: kratka pravila ljubaznosti, napi
 
 
 Bonton nije policija ukusa. To je način da drugi udišu lakše dok ti uživaš.
+
+Prvo i najvažnije: uljudnost i pažnja. Ne postoji ispravno ili krivo — ako nekome nešto odgovara, a ne narušava tuđe uživanje, to je u redu.
 
 ### Temelji
 
@@ -278,6 +282,8 @@ Ako zapamtiš samo troje, neka bude ovo.
 
 ## Epigraph
 
+First and above all: courtesy and care. There is no right or wrong — if something suits someone and does not spoil another's enjoyment, it is fine.
+
 In the spirit of classic British etiquette books: short rules of courtesy, written for a table with a cigar and a glass.
 
 
@@ -285,6 +291,8 @@ In the spirit of classic British etiquette books: short rules of courtesy, writt
 
 
 Manners are not the police of taste. They are how others can breathe easier while you enjoy yourself.
+
+First and above all: courtesy and care. There is no right or wrong — if something suits someone and does not spoil another's enjoyment, it is fine.
 
 ### Foundations
 

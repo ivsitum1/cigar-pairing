@@ -17,6 +17,8 @@ To those who know that smoke is only an excuse to sit down — and to those stil
 
 ### Epigraph
 
+> First and above all: courtesy and care. There is no right or wrong — if something suits someone and does not spoil another's enjoyment, it is fine.
+
 > Etiquette is not the police of taste. It is a way for others to breathe more easily while you enjoy yourself.
 
 > A gentleman is a person who makes the lives of others more pleasant. — paraphrased from the spirit of the classic guides to courtesy
@@ -25,7 +27,7 @@ To those who know that smoke is only an excuse to sit down — and to those stil
 
 ## How to read this book
 
-This is not an exam. There are no grades, no "correct" brand, no penalty for a bad cut.
+This is not an exam. There are no grades, no "correct" brand, no penalty for a bad cut. First and above all it is courtesy and care: there is no right or wrong — if something suits someone and does not spoil another's enjoyment, it is fine.
 
 Read it like a conversation at the table: you can stop, go back, skip the chapter on history if you're more interested in what to say when a guest declines a cigar. The form is deliberately loose — short rules, the occasional vignette, the occasional saying — modelled on those little books of etiquette that are read in one sitting and remembered far longer.
 
@@ -107,6 +109,8 @@ Etiquette is not a lecture on the origin of the leaf while someone simply wants 
 Etiquette is not an excuse to correct someone else's ash as if you were a judge at a fair.
 
 Etiquette is not a moral sermon. If someone doesn't smoke, you don't have to "convert" them. If someone smokes differently from you, you don't have to rescue them — unless they ask.
+
+In short: there is no right or wrong. If something suits someone and does not spoil another's enjoyment, it is fine — the measure is care for others, not a rulebook.
 
 ### A wise thought
 

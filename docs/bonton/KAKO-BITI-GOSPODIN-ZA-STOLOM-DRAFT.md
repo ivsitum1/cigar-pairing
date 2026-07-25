@@ -17,6 +17,8 @@ Onima koji znaju da je dim samo izgovor da se sjedne — i onima koji još uče 
 
 ### Epigraf
 
+> Prvo i najvažnije: uljudnost i pažnja. Ne postoji ispravno ili krivo — ako nekome nešto odgovara, a ne narušava tuđe uživanje, to je u redu.
+
 > Bonton nije policija ukusa. To je način da drugi udišu lakše dok ti uživaš.
 
 > Gospodin je osoba koja život drugih čini ugodnijim. — parafrazirano iz duha klasičnih vodiča uljudnosti
@@ -25,7 +27,7 @@ Onima koji znaju da je dim samo izgovor da se sjedne — i onima koji još uče 
 
 ## Kako čitati ovu knjigu
 
-Ovo nije ispit. Nema ocjena, nema „prave” marke, nema kazne za krivi rez.
+Ovo nije ispit. Nema ocjena, nema „prave” marke, nema kazne za krivi rez. Prvo i najvažnije jest uljudnost i pažnja: ne postoji ispravno ili krivo — ako nekome nešto odgovara, a ne narušava tuđe uživanje, to je u redu.
 
 Čitaj je kao razgovor za stolom: možeš stati, vratiti se, preskočiti poglavlje o povijesti ako te više zanima što reći kad gost odbije cigaru. Forma je namjerno rahla — kratka pravila, poneka vinjeta, poneka izreka — po uzoru na one male knjige bontona koje se čitaju u jednom dahu, a pamte se duže.
 
@@ -107,6 +109,8 @@ Bonton nije predavanje o podrijetlu lista dok netko samo želi miran sat.
 Bonton nije izgovor da ispravljaš tuđi pepeo kao da si sudac na sajmu.
 
 Bonton nije moralna propovijed. Ako netko ne puši, ne moraš ga „obratiti”. Ako netko puši drugačije od tebe, ne moraš ga spašavati — osim ako te pita.
+
+Ukratko: nema ispravnog ni krivog. Ako nekome nešto odgovara, a ne kvari tuđe uživanje, to je u redu — mjera je pažnja prema drugima, ne pravilnik.
 
 ### Mudra misao
 
