@@ -47,13 +47,12 @@ describe("HR vodic kupnje", () => {
     }
   });
 
-  it("objasnjava da Kupi znaci pouzdan product URL, inace Trazi online", () => {
+  it("objasnjava da Gdje kupiti znaci pouzdanu poveznicu, inace Trazi online", () => {
     const section = guide.sections.find((item) => item.id === "cijena-link-app");
     expect(section).toBeTruthy();
-    expect(section?.body.hr).toContain("Kupi");
-    expect(section?.body.hr).toContain("pouzdan product URL");
+    expect(section?.body.hr).toContain("Gdje kupiti");
+    expect(section?.body.hr).toContain("pouzdana poveznica na stranicu proizvoda");
     expect(section?.body.hr).toContain("Traži online");
-    expect(section?.body.hr).toContain("drinkBuyLink");
     expect(section?.body.en).toContain("Buy");
     expect(section?.body.en).toContain("trusted product URL");
     expect(section?.body.en).toContain("Search online");
