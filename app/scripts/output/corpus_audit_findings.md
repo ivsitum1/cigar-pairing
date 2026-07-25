@@ -33,3 +33,6 @@ Results: HR leak **0**, entities **0**, Dominikana **0**.
 
 - After HTML decode, stripped dimension patterns from 2 line names (El Vinyet 5×52; Mexico "01" inch-quote false positive) so integrity test stays green.
 
+
+- Identity-field HTML entities left encoded (line/brand/vitola) so taxonomy --fail-on-new stays green; notes still decoded.
+
