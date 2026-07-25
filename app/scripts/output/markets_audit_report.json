@@ -1,0 +1,1305 @@
+{
+  "without_source": {
+    "HR": {
+      "count": 7,
+      "items": [
+        {
+          "id": "cig-my-father-cedros-deluxe",
+          "brand": "My Father",
+          "line": "Cedros Deluxe",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-my-father-connecticut",
+          "brand": "My Father",
+          "line": "Connecticut",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-my-father-fonseca",
+          "brand": "My Father",
+          "line": "Fonseca",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-my-father-la-antiguedad",
+          "brand": "My Father",
+          "line": "La Antiguedad",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-my-father-la-opulencia",
+          "brand": "My Father",
+          "line": "La Opulencia",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-my-father-la-promesa",
+          "brand": "My Father",
+          "line": "La Promesa",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-my-father-la-reloba",
+          "brand": "My Father",
+          "line": "La Reloba",
+          "catalogSource": null
+        }
+      ]
+    },
+    "EU": {
+      "count": 107,
+      "items": [
+        {
+          "id": "cig-aj-fernandez-20th-anniversary-maduro",
+          "brand": "AJ Fernandez",
+          "line": "20th Anniversary Maduro",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-aj-fernandez-k-by-karen-berger",
+          "brand": "AJ Fernandez",
+          "line": "K by Karen Berger",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-arturo-fuente-brevas-royales",
+          "brand": "Arturo Fuente",
+          "line": "Brevas Royales",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-ashton-cabinet-selection",
+          "brand": "Ashton",
+          "line": "Cabinet Selection",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-ashton-paragon",
+          "brand": "Ashton",
+          "line": "Paragon",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-bolivar-core-line",
+          "brand": "Bolívar",
+          "line": "Core Line",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-bolivar-new-generation",
+          "brand": "Bolívar",
+          "line": "New Generation",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-bolivar-regional-special",
+          "brand": "Bolívar",
+          "line": "Regional & Special",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-camacho-escuro",
+          "brand": "Camacho",
+          "line": "Escuro",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-camacho-powerband",
+          "brand": "Camacho",
+          "line": "Powerband",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-camacho-triple-maduro",
+          "brand": "Camacho",
+          "line": "Triple Maduro",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-cao-brazilia",
+          "brand": "CAO",
+          "line": "Brazilia",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-cao-consigliere",
+          "brand": "CAO",
+          "line": "Consigliere",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-cao-flathead",
+          "brand": "CAO",
+          "line": "Flathead",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-cao-vision",
+          "brand": "CAO",
+          "line": "Vision",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-cohiba-talisman",
+          "brand": "Cohiba",
+          "line": "Talisman",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-cumpay-cumpay",
+          "brand": "Cumpay",
+          "line": "Cumpay",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-davidoff-figurado-selection",
+          "brand": "Davidoff",
+          "line": "Figurado Selection",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-drew-estate-herrera-esteli",
+          "brand": "Drew Estate",
+          "line": "Herrera Esteli",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-drew-estate-liga-privada-h99",
+          "brand": "Drew Estate",
+          "line": "Liga Privada H99",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-drew-estate-liga-privada-t52",
+          "brand": "Drew Estate",
+          "line": "Liga Privada T52",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-drew-estate-undercrown-sun-grown",
+          "brand": "Drew Estate",
+          "line": "Undercrown Sun Grown",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-e-p-carrillo-core",
+          "brand": "E.P. Carrillo",
+          "line": "Core",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-e-p-carrillo-new-wave-reserva",
+          "brand": "E.P. Carrillo",
+          "line": "New Wave Reserva",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-e-p-carrillo-small-batch",
+          "brand": "E.P. Carrillo",
+          "line": "Small Batch",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-el-pulpo-belicoso",
+          "brand": "El Pulpo",
+          "line": "Belicoso",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-el-pulpo-culebra",
+          "brand": "El Pulpo",
+          "line": "Culebra",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-el-pulpo-el-pulpo",
+          "brand": "El Pulpo",
+          "line": "El Pulpo",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-el-pulpo-gordita",
+          "brand": "El Pulpo",
+          "line": "Gordita",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-el-pulpo-lancero",
+          "brand": "El Pulpo",
+          "line": "Lancero",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-el-pulpo-robusto",
+          "brand": "El Pulpo",
+          "line": "Robusto",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-el-pulpo-toro-grande",
+          "brand": "El Pulpo",
+          "line": "Toro Grande",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-eladio-diaz-71st-aniversario",
+          "brand": "Eladio Diaz",
+          "line": "71st Aniversario",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-eladio-diaz-72nd-aniversario",
+          "brand": "Eladio Diaz",
+          "line": "72nd Aniversario",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-eladio-diaz-before-and-after-mi-familia",
+          "brand": "Eladio Diaz",
+          "line": "Before And After Mi Familia",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-eladio-diaz-before-and-after-pasion",
+          "brand": "Eladio Diaz",
+          "line": "Before And After Pasion",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-eladio-diaz-la-diana-anniversary",
+          "brand": "Eladio Diaz",
+          "line": "La Diana / Anniversary",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-flor-de-copan-classic",
+          "brand": "Flor de Copán",
+          "line": "Classic",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-flor-de-selva-clasica",
+          "brand": "Flor de Selva",
+          "line": "Clásica",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-foundation-highclere-castle",
+          "brand": "Foundation",
+          "line": "Highclere Castle",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-foundation-menelik",
+          "brand": "Foundation",
+          "line": "Menelik",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-h-upmann-classic",
+          "brand": "H. Upmann",
+          "line": "Classic",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-h-upmann-reserva",
+          "brand": "H. Upmann",
+          "line": "Reserva &",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-hoyo-de-monterrey-classic",
+          "brand": "Hoyo de Monterrey",
+          "line": "Classic",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-hoyo-de-monterrey-le-hoyo",
+          "brand": "Hoyo de Monterrey",
+          "line": "Le Hoyo",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-illusione-hl-habano-ligero",
+          "brand": "Illusione",
+          "line": "HL (Habano Ligero)",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-illusione-rothchildes",
+          "brand": "Illusione",
+          "line": "Rothchildes",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-juan-lopez-classic",
+          "brand": "Juan López",
+          "line": "Classic",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-la-aurora-107",
+          "brand": "La Aurora",
+          "line": "107",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-la-aurora-1903-edition",
+          "brand": "La Aurora",
+          "line": "1903 Edition",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-la-galera-85th-anniversary",
+          "brand": "La Galera",
+          "line": "85th Anniversary",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-macanudo-cafe",
+          "brand": "Macanudo",
+          "line": "Café",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-macanudo-criollo-98",
+          "brand": "Macanudo",
+          "line": "Criollo 98",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-macanudo-gold-label",
+          "brand": "Macanudo",
+          "line": "Gold Label",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-macanudo-hampton-court",
+          "brand": "Macanudo",
+          "line": "Hampton Court",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-macanudo-legacy",
+          "brand": "Macanudo",
+          "line": "Legacy",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-macanudo-motivo",
+          "brand": "Macanudo",
+          "line": "Motivo",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-montecristo-limited-edition",
+          "brand": "Montecristo",
+          "line": "Limited Edition",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-my-father-cedros-deluxe",
+          "brand": "My Father",
+          "line": "Cedros Deluxe",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-my-father-don-pepin-garcia-blue",
+          "brand": "My Father",
+          "line": "Don Pepin Garcia Blue",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-my-father-fonseca",
+          "brand": "My Father",
+          "line": "Fonseca",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-my-father-garcia-garcia",
+          "brand": "My Father",
+          "line": "Garcia & Garcia",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-my-father-la-reloba",
+          "brand": "My Father",
+          "line": "La Reloba",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-my-father-my-father-original",
+          "brand": "My Father",
+          "line": "My Father Original",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-nub-maduro-460",
+          "brand": "Nub",
+          "line": "Maduro 460",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-oliva-master-blends-3",
+          "brand": "Oliva",
+          "line": "Master Blends 3",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-padron-1964-anniversary",
+          "brand": "Padrón",
+          "line": "1964 Anniversary",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-paperboy-maduro",
+          "brand": "Paperboy",
+          "line": "Maduro",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-partagas-capitolio",
+          "brand": "Partagás",
+          "line": "Capitolio",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-perdomo-10th-anniversary-champagne",
+          "brand": "Perdomo",
+          "line": "10th Anniversary Champagne",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-perdomo-10th-anniversary-maduro",
+          "brand": "Perdomo",
+          "line": "10th Anniversary Maduro",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-perdomo-20th-anniversary-maduro",
+          "brand": "Perdomo",
+          "line": "20th Anniversary Maduro",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-perdomo-esteli",
+          "brand": "Perdomo",
+          "line": "Esteli",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-perdomo-habano-bourbon",
+          "brand": "Perdomo",
+          "line": "Habano Bourbon",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-plasencia-160",
+          "brand": "Plasencia",
+          "line": "160",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-plasencia-cosecha-146",
+          "brand": "Plasencia",
+          "line": "Cosecha 146",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-plasencia-year-series",
+          "brand": "Plasencia",
+          "line": "Year Series",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-punch-brevas",
+          "brand": "Punch",
+          "line": "Brevas",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-punch-classic",
+          "brand": "Punch",
+          "line": "Classic",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-punch-gran-puro",
+          "brand": "Punch",
+          "line": "Gran Puro",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-punch-modern-line",
+          "brand": "Punch",
+          "line": "Modern Line",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-punch-super-punch",
+          "brand": "Punch",
+          "line": "Super Punch",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-quai-d-orsay-classic",
+          "brand": "Quai d'Orsay",
+          "line": "Classic",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-quai-d-orsay-clasica",
+          "brand": "Quai d'Orsay",
+          "line": "Clásica",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-quai-d-orsay-special-editions",
+          "brand": "Quai d'Orsay",
+          "line": "Special Editions",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-rocky-patel-a-l-b",
+          "brand": "Rocky Patel",
+          "line": "A.L.B.",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-rocky-patel-royal-vintage",
+          "brand": "Rocky Patel",
+          "line": "Royal Vintage",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-rocky-patel-vintage-1990-1992",
+          "brand": "Rocky Patel",
+          "line": "Vintage 1990/1992",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-romeo-y-julieta-clasica",
+          "brand": "Romeo y Julieta",
+          "line": "Clásica",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-room101-farce",
+          "brand": "Room101",
+          "line": "Farce",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-san-cristobal-de-la-habana-regular-production",
+          "brand": "San Cristóbal de la Habana",
+          "line": "Regular Production",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-tatuaje-cabaiguan",
+          "brand": "Tatuaje",
+          "line": "Cabaiguan",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-tatuaje-reserva-broadleaf",
+          "brand": "Tatuaje",
+          "line": "Reserva Broadleaf",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-tatuaje-unicos-special",
+          "brand": "Tatuaje",
+          "line": "Unicos & Special",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-trinidad-current-production",
+          "brand": "Trinidad",
+          "line": "Current Production",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-trinidad-limited-editions",
+          "brand": "Trinidad",
+          "line": "Limited Editions",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-vegas-robaina-regular-production",
+          "brand": "Vegas Robaina",
+          "line": "Regular Production",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-villiger-1888",
+          "brand": "Villiger",
+          "line": "1888",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-villiger-export",
+          "brand": "Villiger",
+          "line": "Export",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-villiger-la-libertad",
+          "brand": "Villiger",
+          "line": "La Libertad",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-viva-la-vida-5th-anniversario-club-500",
+          "brand": "Viva La Vida",
+          "line": "5th Anniversario Club 500",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-viva-la-vida-5th-anniversario-jester",
+          "brand": "Viva La Vida",
+          "line": "5th Anniversario Jester",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-viva-la-vida-club-500",
+          "brand": "Viva La Vida",
+          "line": "Club 500",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-viva-la-vida-connecticut",
+          "brand": "Viva La Vida",
+          "line": "Connecticut",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-viva-la-vida-diadema",
+          "brand": "Viva La Vida",
+          "line": "Diadema",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-viva-la-vida-original",
+          "brand": "Viva La Vida",
+          "line": "Original",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-warped-don-reynaldo",
+          "brand": "Warped",
+          "line": "Don Reynaldo",
+          "catalogSource": null
+        }
+      ]
+    },
+    "USA": {
+      "count": 98,
+      "items": [
+        {
+          "id": "cig-1502-black-gold",
+          "brand": "1502",
+          "line": "Black Gold",
+          "catalogSource": "market"
+        },
+        {
+          "id": "cig-1502-ruby",
+          "brand": "1502",
+          "line": "Ruby",
+          "catalogSource": "market"
+        },
+        {
+          "id": "cig-1502-special-edition-blue-sapphire",
+          "brand": "1502",
+          "line": "Special Edition Blue Sapphire",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-aj-fernandez-blend-15",
+          "brand": "AJ Fernandez",
+          "line": "Blend 15",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-arturo-fuente-brevas-royales",
+          "brand": "Arturo Fuente",
+          "line": "Brevas Royales",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-arturo-fuente-opus-x",
+          "brand": "Arturo Fuente",
+          "line": "Opus X",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-arturo-fuente-rosado-sungrown",
+          "brand": "Arturo Fuente",
+          "line": "Rosado Sungrown",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-ashton-classic",
+          "brand": "Ashton",
+          "line": "Classic",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-ashton-paragon",
+          "brand": "Ashton",
+          "line": "Paragon",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-ashton-vsg-virgin-sun-grown",
+          "brand": "Ashton",
+          "line": "VSG (Virgin Sun Grown)",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-camacho-escuro",
+          "brand": "Camacho",
+          "line": "Escuro",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-camacho-powerband",
+          "brand": "Camacho",
+          "line": "Powerband",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-cao-consigliere",
+          "brand": "CAO",
+          "line": "Consigliere",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-cao-session",
+          "brand": "CAO",
+          "line": "Session",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-cao-vision",
+          "brand": "CAO",
+          "line": "Vision",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-casa-magna-colorado",
+          "brand": "Casa Magna",
+          "line": "Colorado",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-crowned-heads-le-careme",
+          "brand": "Crowned Heads",
+          "line": "Le Carême",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-cumpay-cumpay",
+          "brand": "Cumpay",
+          "line": "Cumpay",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-davidoff-figurado-selection",
+          "brand": "Davidoff",
+          "line": "Figurado Selection",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-don-tomas-bundle",
+          "brand": "Don Tomas",
+          "line": "Bundle",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-drew-estate-liga-privada-h99",
+          "brand": "Drew Estate",
+          "line": "Liga Privada H99",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-drew-estate-liga-privada-no-9",
+          "brand": "Drew Estate",
+          "line": "Liga Privada No. 9",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-drew-estate-liga-privada-t52",
+          "brand": "Drew Estate",
+          "line": "Liga Privada T52",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-dunbarton-t-t-mi-querida",
+          "brand": "Dunbarton T&T",
+          "line": "Mi Querida",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-dunbarton-t-t-sobremesa",
+          "brand": "Dunbarton T&T",
+          "line": "Sobremesa",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-e-p-carrillo-allegiance",
+          "brand": "E.P. Carrillo",
+          "line": "Allegiance",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-e-p-carrillo-encore",
+          "brand": "E.P. Carrillo",
+          "line": "Encore",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-e-p-carrillo-small-batch",
+          "brand": "E.P. Carrillo",
+          "line": "Small Batch",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-eiroa-cbt-maduro",
+          "brand": "Eiroa",
+          "line": "CBT Maduro",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-eiroa-classic",
+          "brand": "Eiroa",
+          "line": "Classic",
+          "catalogSource": "market"
+        },
+        {
+          "id": "cig-eiroa-classic-colorado",
+          "brand": "Eiroa",
+          "line": "Classic Colorado",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-el-pulpo-belicoso",
+          "brand": "El Pulpo",
+          "line": "Belicoso",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-el-pulpo-culebra",
+          "brand": "El Pulpo",
+          "line": "Culebra",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-el-pulpo-el-pulpo",
+          "brand": "El Pulpo",
+          "line": "El Pulpo",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-el-pulpo-gordita",
+          "brand": "El Pulpo",
+          "line": "Gordita",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-el-pulpo-lancero",
+          "brand": "El Pulpo",
+          "line": "Lancero",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-eladio-diaz-71st-aniversario",
+          "brand": "Eladio Diaz",
+          "line": "71st Aniversario",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-eladio-diaz-72nd-aniversario",
+          "brand": "Eladio Diaz",
+          "line": "72nd Aniversario",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-eladio-diaz-before-and-after-legado",
+          "brand": "Eladio Diaz",
+          "line": "Before And After Legado",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-eladio-diaz-before-and-after-mi-familia",
+          "brand": "Eladio Diaz",
+          "line": "Before And After Mi Familia",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-eladio-diaz-before-and-after-pasion",
+          "brand": "Eladio Diaz",
+          "line": "Before And After Pasion",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-eladio-diaz-la-diana",
+          "brand": "Eladio Diaz",
+          "line": "La Diana",
+          "catalogSource": "market"
+        },
+        {
+          "id": "cig-eladio-diaz-la-diana-anniversary",
+          "brand": "Eladio Diaz",
+          "line": "La Diana / Anniversary",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-flor-de-selva-clasica",
+          "brand": "Flor de Selva",
+          "line": "Clásica",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-foundation-el-gueguense",
+          "brand": "Foundation",
+          "line": "El Güegüense",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-foundation-menelik",
+          "brand": "Foundation",
+          "line": "Menelik",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-illusione-hl-habano-ligero",
+          "brand": "Illusione",
+          "line": "HL (Habano Ligero)",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-illusione-rothchildes",
+          "brand": "Illusione",
+          "line": "Rothchildes",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-joya-de-nicaragua-antano-gran-reserva",
+          "brand": "Joya de Nicaragua",
+          "line": "Antaño Gran Reserva",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-joya-de-nicaragua-joya-red",
+          "brand": "Joya de Nicaragua",
+          "line": "Joya Red",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-joya-de-nicaragua-numero-uno",
+          "brand": "Joya de Nicaragua",
+          "line": "Numero Uno",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-la-aurora-107-nicaragua",
+          "brand": "La Aurora",
+          "line": "107 Nicaragua",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-la-aurora-1903-edition",
+          "brand": "La Aurora",
+          "line": "1903 Edition",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-la-aurora-adn",
+          "brand": "La Aurora",
+          "line": "ADN",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-la-aurora-family-reserve",
+          "brand": "La Aurora",
+          "line": "Family Reserve",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-la-galera-85th-anniversary",
+          "brand": "La Galera",
+          "line": "85th Anniversary",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-la-galera-connecticut",
+          "brand": "La Galera",
+          "line": "Connecticut",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-macanudo-criollo-98",
+          "brand": "Macanudo",
+          "line": "Criollo 98",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-macanudo-legacy",
+          "brand": "Macanudo",
+          "line": "Legacy",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-macanudo-motivo",
+          "brand": "Macanudo",
+          "line": "Motivo",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-montecristo-nw-white-series-dominikanska-republika",
+          "brand": "Montecristo (NW)",
+          "line": "White Series (Dominikanska Republika)",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-my-father-cedros-deluxe",
+          "brand": "My Father",
+          "line": "Cedros Deluxe",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-my-father-flor-de-las-antillas",
+          "brand": "My Father",
+          "line": "Flor de las Antillas",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-my-father-garcia-garcia",
+          "brand": "My Father",
+          "line": "Garcia & Garcia",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-my-father-jaime-garcia-reserva-especial",
+          "brand": "My Father",
+          "line": "Jaime Garcia Reserva Especial",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-my-father-la-reloba",
+          "brand": "My Father",
+          "line": "La Reloba",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-oliva-mareva",
+          "brand": "Oliva",
+          "line": "Mareva",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-oscar-valladares-2012-the-oscar",
+          "brand": "Oscar Valladares",
+          "line": "2012 / The Oscar",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-oscar-valladares-ciseron-edition-blue",
+          "brand": "Oscar Valladares",
+          "line": "Ciseron Edition Blue",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-oscar-valladares-ciseron-edition-gray",
+          "brand": "Oscar Valladares",
+          "line": "Ciseron Edition Gray",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-oscar-valladares-ciseron-edition-green",
+          "brand": "Oscar Valladares",
+          "line": "Ciseron Edition Green",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-oscar-valladares-ciseron-edition-yellow",
+          "brand": "Oscar Valladares",
+          "line": "Ciseron Edition Yellow",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-padron-1964-anniversary",
+          "brand": "Padrón",
+          "line": "1964 Anniversary",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-padron-classic",
+          "brand": "Padrón",
+          "line": "Classic",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-paperboy-connecticut",
+          "brand": "Paperboy",
+          "line": "Connecticut",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-paperboy-maduro",
+          "brand": "Paperboy",
+          "line": "Maduro",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-perdomo-reserve",
+          "brand": "Perdomo",
+          "line": "Reserve",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-plasencia-cosecha-146",
+          "brand": "Plasencia",
+          "line": "Cosecha 146",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-plasencia-year-of-the-rabbit",
+          "brand": "Plasencia",
+          "line": "Year of the Rabbit",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-plasencia-year-series",
+          "brand": "Plasencia",
+          "line": "Year Series",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-rocky-patel-a-l-b",
+          "brand": "Rocky Patel",
+          "line": "A.L.B.",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-rocky-patel-royal-vintage",
+          "brand": "Rocky Patel",
+          "line": "Royal Vintage",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-rocky-patel-vintage-1990-1992",
+          "brand": "Rocky Patel",
+          "line": "Vintage 1990/1992",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-romeo-y-julieta-nw-1875-dominikanska-republika",
+          "brand": "Romeo y Julieta (NW)",
+          "line": "1875 (Dominikanska Republika)",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-room101-farce",
+          "brand": "Room101",
+          "line": "Farce",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-tatuaje-cabaiguan",
+          "brand": "Tatuaje",
+          "line": "Cabaiguan",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-tatuaje-havana-vi-miami",
+          "brand": "Tatuaje",
+          "line": "Havana VI / Miami",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-tatuaje-reserva-broadleaf",
+          "brand": "Tatuaje",
+          "line": "Reserva Broadleaf",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-tatuaje-unicos-special",
+          "brand": "Tatuaje",
+          "line": "Unicos & Special",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-villa-zamorano-reserva",
+          "brand": "Villa Zamorano",
+          "line": "Reserva",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-villiger-export",
+          "brand": "Villiger",
+          "line": "Export",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-viva-la-vida-5th-anniversario-club-500",
+          "brand": "Viva La Vida",
+          "line": "5th Anniversario Club 500",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-viva-la-vida-5th-anniversario-jester",
+          "brand": "Viva La Vida",
+          "line": "5th Anniversario Jester",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-viva-la-vida-diadema",
+          "brand": "Viva La Vida",
+          "line": "Diadema",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-viva-la-vida-original",
+          "brand": "Viva La Vida",
+          "line": "Original",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-warped-don-reynaldo",
+          "brand": "Warped",
+          "line": "Don Reynaldo",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-warped-flor-del-valle",
+          "brand": "Warped",
+          "line": "Flor del Valle",
+          "catalogSource": null
+        },
+        {
+          "id": "cig-warped-la-hacienda",
+          "brand": "Warped",
+          "line": "La Hacienda",
+          "catalogSource": null
+        }
+      ]
+    }
+  },
+  "has_link_missing_market": {
+    "HR": {
+      "count": 0,
+      "items": []
+    },
+    "EU": {
+      "count": 0,
+      "items": []
+    },
+    "USA": {
+      "count": 0,
+      "items": []
+    }
+  }
+}
