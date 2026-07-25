@@ -12,6 +12,7 @@ from __future__ import annotations
 import argparse
 import collections
 import hashlib
+import html
 import json
 import re
 from pathlib import Path
@@ -223,6 +224,18 @@ def match_vitola(text, syns):
     return None
 
 
+def _unescape(s: str) -> str:
+    """Decode HTML entities in shop titles (&amp; → &, &#215; → ×)."""
+    if not s or "&" not in s:
+        return s or ""
+    prev = None
+    cur = s
+    while prev != cur:
+        prev = cur
+        cur = html.unescape(cur)
+    return cur
+
+
 def _clean(s):
     s = re.sub(r"\([^)]*\)|\[[^\]]*\]", " ", s)      # sadržaj u zagradama
     s = re.sub(r"[()\[\]{}]", " ", s)                # zaostali fragmenti zagrada
@@ -231,15 +244,25 @@ def _clean(s):
     s = re.sub(r"\b(tube|tubes|tubos|bundle|pack|count|tin|sampler|gift|box|assortment)\b", " ", s, flags=re.I)
     s = re.sub(r"\bgran\s*$", " ", s, flags=re.I)    # dangling "Gran" (od "Gran Toro/Belicoso")
     s = re.sub(r"\bby\b\s*$", " ", s, flags=re.I)    # dangling "by" (maker već maknut)
-    s = re.sub(r"\s{2,}", " ", s)
+    # dangling "& …" left after stripping "Brand & Partner" when only "Brand" matched
+    s = re.sub(r"^\s*&\s*", "", s)
+    s = re.sub(r"^\s*and\s+", "", s, flags=re.I)
+    s = re.sub(r" {2,}", " ", s)
     return s.strip(" -–—·,/")
 
 
 def canon_line(brand, name, vitola, syns, line_map):
-    base = name or ""
+    brand = _unescape(brand or "")
+    base = _unescape(name or "")
     raw = base.strip()
     # makni brend gdje god se pojavi kao cjelina (i vodeći i u kolaboracijama)
     base = re.sub(re.escape(brand), " ", base, flags=re.I)
+    # ako je ostao brand-tail nakon "&" (npr. brand "Hiram & Solomon" → "Solomon Traveling Man")
+    m = re.search(r"&\s*(.+)$", brand)
+    if m:
+        tail = m.group(1).strip()
+        if tail and re.match(rf"^{re.escape(tail)}\b", base.strip(), flags=re.I):
+            base = re.sub(rf"^{re.escape(tail)}\b", " ", base.strip(), count=1, flags=re.I)
     # remove dimension tokens
     base = DIM_RE.sub(" ", base)
     # remove the matched vitola synonyms (samo za prepoznatu vitolu)
