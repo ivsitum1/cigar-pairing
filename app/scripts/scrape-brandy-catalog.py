@@ -215,10 +215,17 @@ def main() -> int:
     elif not args.ecuga_only:
         entries.extend(scrape_allez())
     if not args.allez_only:
+        prev_ecuga: list[dict] = []
+        if OUT_JSON.exists() and not args.ecuga_only:
+            prev = json.loads(OUT_JSON.read_text(encoding="utf-8"))
+            prev_ecuga = [e for e in prev if e.get("source") == "ecuga"]
         try:
             entries.extend(scrape_ecuga())
         except Exception as exc:
             print(f"WARNING: ecuga scrape failed: {exc}")
+            if prev_ecuga:
+                print(f"  keeping {len(prev_ecuga)} previous ecuga rows")
+                entries.extend(prev_ecuga)
 
     OUT_JSON.write_text(
         json.dumps(entries, ensure_ascii=False, indent=2),

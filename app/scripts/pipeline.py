@@ -23,7 +23,12 @@ APP = HERE.parent
 
 # redoslijed koraka po kategoriji; (skripta, [dodatni argumenti])
 # scrape koraci se preskacu bez --scrape (koriste postojeci raw katalog)
-SCRAPE = {"whisky": "scrape-whisky-catalog.py", "brandy": "scrape-brandy-catalog.py"}
+SCRAPE = {
+    "whisky": "scrape-whisky-catalog.py",
+    "brandy": "scrape-brandy-catalog.py",
+    "gin": "scrape-gin-catalog.py",
+    "tequila": "scrape-tequila-catalog.py",
+}
 
 PIPELINES = {
     "rum": [
@@ -44,7 +49,26 @@ PIPELINES = {
     ],
     "brandy": [
         "build-brandy-excel.py",
+        "calibrate-master.py",
         "excel-to-brandy-json.py",
+        "apply-neutral-overrides.py",
+        "localize-detail-fields.py",
+        "dedupe-data.py",
+        "export-indexes.py",
+    ],
+    "gin": [
+        "build-gin-excel.py",
+        "calibrate-master.py",
+        "excel-to-gin-json.py",
+        "apply-neutral-overrides.py",
+        "localize-detail-fields.py",
+        "dedupe-data.py",
+        "export-indexes.py",
+    ],
+    "tequila": [
+        "build-tequila-excel.py",
+        "calibrate-master.py",
+        "excel-to-tequila-json.py",
         "apply-neutral-overrides.py",
         "localize-detail-fields.py",
         "dedupe-data.py",
@@ -101,6 +125,8 @@ def main() -> None:
             cmd = [sys.executable, str(HERE / step)]
             if step == "enrich-cigars.py":
                 cmd.append(args.humidor_catalog)
+            if step == "calibrate-master.py":
+                cmd.extend(["--category", cat])
             run(cmd)
 
     if not args.list and not args.no_test:

@@ -28,7 +28,7 @@ indeksima rangiranim po kvaliteti za sipping uz cigaru.
 - `app/` — Vite + React + TS + Tailwind PWA
   - Hash-routing s deep-linkovima: `#/pairing/cigar/<id>` i `#/pairing/drink/<id>`
     otvaraju pairing s odabranom stavkom (dijeljivi linkovi, back tipka radi)
-  - `src/data/*.json` — indeksi (155 rumova, 273 whiskyja, 84 brandy/grappa, 19 gin, 124 vina, 14 tequila, 33 kave, 2395 cigara);
+  - `src/data/*.json` — indeksi (155 rumova, 273 whiskyja, 98 brandy/grappa, 70 gin, 124 vina, 26 tequila, 33 kave, 2395 cigara);
     build ih dijeli u odvojene chunkove (`data-cigars`, `data-whiskies`, `data-rums`…) radi
     paralelnog downloada i boljeg cachea
   - Personalizacija: ocjene iz dnevnika lokalno naginju prijedloge (±5 bodova,
@@ -43,8 +43,8 @@ indeksima rangiranim po kvaliteti za sipping uz cigaru.
     (Vivat/Miva/Vrutak/vinoteke), približne označene `priceApprox` (124 zapisa;
     regeneracija: `python scripts/expand-wines.py`)
   - `src/engine/` — rule-based pairing engine s objašnjenjima (kalibracija u `rules.ts`)
-  - **`scripts/pipeline.py` — orkestrator: vrti korake regeneracije ispravnim
-    redoslijedom i staje na prvoj grešci** (`--category rum|whisky|brandy|cigars|all`,
+  - `scripts/pipeline.py` — orkestrator: vrti korake regeneracije ispravnim
+    redoslijedom i staje na prvoj grešci** (`--category rum|whisky|brandy|gin|tequila|cigars|all`,
     `--scrape` za osvježenje kataloga, `--from <skripta>` za nastavak nakon ručne
     kalibracije Excela, `--list` za pregled koraka); ručno nabrajanje ispod ostaje
     kao referenca
@@ -159,9 +159,11 @@ Po tipu (kupnja), Serviranje + Cigare, Kolekcija (plan), Vodič (sažetak).
 
 ```powershell
 cd app
+python scripts/pipeline.py --category brandy --scrape
+# ili korak po korak:
 python scripts/scrape-brandy-catalog.py
 python scripts/build-brandy-excel.py
-# ručna kalibracija MASTER / Po tipu u Excelu (po potrebi)
+python scripts/calibrate-master.py --category brandy
 python scripts/excel-to-brandy-json.py
 python scripts/export-indexes.py
 npm test
@@ -173,3 +175,24 @@ Izvori: [allez.hr/shop/cognac-calvados-armagnac](https://allez.hr/shop/cognac-ca
 Grappa/pisco/absinthe/likeri koji uđu u app nose jasnu deklaraciju kategorije
 i neutralnu ocjenu unutar vlastitog stila.
 HR vinjak (Badel itd.) zadržava se iz seed datoteke i može ostati bez shop linka.
+
+## Gin indeks (pipeline)
+
+Isti model: scrape allez+ecuga → Excel MASTER → agent kalibracija → `gins.json` (merge sa seedom).
+
+```powershell
+cd app
+python scripts/pipeline.py --category gin --scrape
+```
+
+Izvor: [allez.hr/shop/gin1](https://allez.hr/shop/gin1). Flavoured/pink/sloe/RTD ostaju u Katalogu, ne u MASTER-u.
+
+## Tequila indeks (pipeline)
+
+```powershell
+cd app
+python scripts/pipeline.py --category tequila --scrape
+```
+
+Izvor: [allez.hr/shop/tequila-mezcal](https://allez.hr/shop/tequila-mezcal).
+Mixto/aromatizirano van MASTER-a; mezcal u MASTER samo uz quality ≥ 7.

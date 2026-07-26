@@ -230,7 +230,7 @@ def fix_encoding_pass():
 
 def main():
     fix_encoding_pass()
-    for name in ["rums", "whiskies", "brandies", "gins", "coffees"]:
+    for name in ["rums", "whiskies", "brandies", "gins", "tequilas", "coffees"]:
         p = DATA / f"{name}.json"
         if p.exists():
             r = dedupe_drinks(p)

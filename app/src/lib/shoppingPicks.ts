@@ -30,7 +30,7 @@ export const BUCKETS: Partial<Record<DrinkCategory, StyleBucket[]>> = {
     { id: "cognac", label: { hr: "Cognac", en: "Cognac" }, styles: ["cognac-vs", "cognac-vsop", "cognac-xo"] },
     { id: "armagnac", label: { hr: "Armagnac / Calvados", en: "Armagnac / Calvados" }, styles: ["armagnac", "calvados"] },
     { id: "spain", label: { hr: "Španjolska", en: "Spain" }, styles: ["brandy-de-jerez", "brandy-spanish"] },
-    { id: "mediteran", label: { hr: "Grappa / mediteran", en: "Grappa / Mediterranean" }, styles: ["grappa", "brandy-italian", "brandy-greek", "vinjak", "brandy-armenian", "brandy-german"] },
+    { id: "mediteran", label: { hr: "Grappa / mediteran", en: "Grappa / Mediterranean" }, styles: ["grappa", "brandy-italian", "brandy-greek", "vinjak", "brandy-armenian", "brandy-german", "brandy-other", "brandy-irish"] },
     { id: "liqueur", label: { hr: "Liker", en: "Liqueur" }, styles: ["liqueur"] },
   ],
   wine: [
@@ -51,7 +51,7 @@ export const BUCKETS: Partial<Record<DrinkCategory, StyleBucket[]>> = {
     { id: "blanco", label: { hr: "Blanco", en: "Blanco" }, styles: ["blanco"] },
     { id: "reposado", label: { hr: "Reposado", en: "Reposado" }, styles: ["reposado"] },
     { id: "anejo", label: { hr: "Añejo", en: "Añejo" }, styles: ["anejo"] },
-    { id: "extra", label: { hr: "Extra añejo", en: "Extra añejo" }, styles: ["extra-anejo"] },
+    { id: "extra", label: { hr: "Extra añejo / mezcal", en: "Extra añejo / mezcal" }, styles: ["extra-anejo", "mezcal"] },
     { id: "entry", label: { hr: "Pristupačno", en: "Approachable" }, styles: ["blanco", "reposado"] },
   ],
   gin: [

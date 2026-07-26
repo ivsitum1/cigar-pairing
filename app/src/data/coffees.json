@@ -3,7 +3,10 @@
   "id": "cf-espresso-italian-dark",
   "category": "coffee",
   "name": "Espresso — talijanska tamna mješavina (80/20)",
-  "nameLoc": { "hr": "Espresso — talijanska tamna mješavina (80/20)", "en": "Espresso — Italian dark blend (80/20)" },
+  "nameLoc": {
+   "hr": "Espresso — talijanska tamna mješavina (80/20)",
+   "en": "Espresso — Italian dark blend (80/20)"
+  },
   "style": "espresso-dark",
   "region": "Italija (blend)",
   "country": "—",
@@ -120,7 +123,10 @@
   "id": "cf-turska",
   "category": "coffee",
   "name": "Turska / domaća kava (džezva)",
-  "nameLoc": { "hr": "Turska / domaća kava (džezva)", "en": "Turkish coffee (džezva)" },
+  "nameLoc": {
+   "hr": "Turska / domaća kava (džezva)",
+   "en": "Turkish coffee (džezva)"
+  },
   "style": "turkish",
   "region": "Balkan / Turska",
   "country": "—",
@@ -178,7 +184,10 @@
   "id": "cf-v60-ethiopia",
   "category": "coffee",
   "name": "V60 filter — Etiopija Yirgacheffe (light roast)",
-  "nameLoc": { "hr": "V60 filter — Etiopija Yirgacheffe (light roast)", "en": "V60 filter — Ethiopia Yirgacheffe (light roast)" },
+  "nameLoc": {
+   "hr": "V60 filter — Etiopija Yirgacheffe (light roast)",
+   "en": "V60 filter — Ethiopia Yirgacheffe (light roast)"
+  },
   "style": "filter-light",
   "region": "Yirgacheffe, Etiopija",
   "country": "Etiopija",
@@ -208,7 +217,10 @@
   "id": "cf-v60-kenya",
   "category": "coffee",
   "name": "Filter — Kenija AA (light-medium)",
-  "nameLoc": { "hr": "Filter — Kenija AA (light-medium)", "en": "Filter — Kenya AA (light-medium)" },
+  "nameLoc": {
+   "hr": "Filter — Kenija AA (light-medium)",
+   "en": "Filter — Kenya AA (light-medium)"
+  },
   "style": "filter-light",
   "region": "Nyeri, Kenija",
   "country": "Kenija",
@@ -238,7 +250,10 @@
   "id": "cf-colombia-medium",
   "category": "coffee",
   "name": "Filter — Kolumbija (medium roast)",
-  "nameLoc": { "hr": "Filter — Kolumbija (medium roast)", "en": "Filter — Colombia (medium roast)" },
+  "nameLoc": {
+   "hr": "Filter — Kolumbija (medium roast)",
+   "en": "Filter — Colombia (medium roast)"
+  },
   "style": "filter-medium",
   "region": "Huila, Kolumbija",
   "country": "Kolumbija",
@@ -296,7 +311,10 @@
   "id": "cf-guatemala-antigua",
   "category": "coffee",
   "name": "Gvatemala Antigua (medium)",
-  "nameLoc": { "hr": "Gvatemala Antigua (medium)", "en": "Guatemala Antigua (medium)" },
+  "nameLoc": {
+   "hr": "Gvatemala Antigua (medium)",
+   "en": "Guatemala Antigua (medium)"
+  },
   "style": "filter-medium",
   "region": "Antigua, Gvatemala",
   "country": "Gvatemala",
@@ -442,7 +460,10 @@
   "id": "cf-ethiopia-natural",
   "category": "coffee",
   "name": "Etiopija natural process (medium-light)",
-  "nameLoc": { "hr": "Etiopija natural process (medium-light)", "en": "Ethiopia natural process (medium-light)" },
+  "nameLoc": {
+   "hr": "Etiopija natural process (medium-light)",
+   "en": "Ethiopia natural process (medium-light)"
+  },
   "style": "filter-light",
   "region": "Sidamo/Guji, Etiopija",
   "country": "Etiopija",
@@ -472,7 +493,10 @@
   "id": "cf-french-press-dark",
   "category": "coffee",
   "name": "French press — tamna mješavina",
-  "nameLoc": { "hr": "French press — tamna mješavina", "en": "French press — dark blend" },
+  "nameLoc": {
+   "hr": "French press — tamna mješavina",
+   "en": "French press — dark blend"
+  },
   "style": "filter-dark",
   "region": "blend",
   "country": "—",
@@ -671,19 +695,29 @@
   "id": "cf-cubano-sweet",
   "category": "coffee",
   "name": "Café Cubano (zaslađeni espresso)",
-  "nameLoc": { "hr": "Café Cubano (zaslađeni espresso)", "en": "Café Cubano (sweetened espresso)" },
+  "nameLoc": {
+   "hr": "Café Cubano (zaslađeni espresso)",
+   "en": "Café Cubano (sweetened espresso)"
+  },
   "style": "espresso-dark",
   "region": "Kuba / diaspora",
   "country": "Kuba",
   "abv": null,
   "body": 5,
   "sweetness": 4,
-  "flavorTags": ["kakao", "karamela", "slatko", "dim"],
+  "flavorTags": [
+   "kakao",
+   "karamela",
+   "slatko",
+   "dim"
+  ],
   "qualityScore": 7,
   "priceEUR": null,
   "shopHR": "doma / bar",
   "pairable": true,
-  "serving": { "best": "Espresso + demerara u cremi" },
+  "serving": {
+   "best": "Espresso + demerara u cremi"
+  },
   "cigarHint": null,
   "notes": {
    "hr": "Kubanska tradicija — gorčina i šećer u istoj šalici. Uz kratku maduro ili cuban-style cigaru.",
@@ -700,13 +734,22 @@
   "abv": null,
   "body": 3,
   "sweetness": 3,
-  "flavorTags": ["kakao", "orasasti", "karamela"],
+  "flavorTags": [
+   "kakao",
+   "orasasti",
+   "karamela"
+  ],
   "qualityScore": 7.5,
-  "priceEUR": { "min": 12, "max": 18 },
+  "priceEUR": {
+   "min": 12,
+   "max": 18
+  },
   "priceApprox": true,
   "shopHR": "Cogito / specialty",
   "pairable": true,
-  "serving": { "best": "AeroPress, 200–220 ml" },
+  "serving": {
+   "best": "AeroPress, 200–220 ml"
+  },
   "cigarHint": null,
   "notes": {
    "hr": "Čokoladno-orasasti Brazil — miran most uz srednju Connecticut / Habano cigaru.",
@@ -723,13 +766,22 @@
   "abv": null,
   "body": 2,
   "sweetness": 3,
-  "flavorTags": ["voce", "med", "citrus"],
+  "flavorTags": [
+   "voce",
+   "med",
+   "citrus"
+  ],
   "qualityScore": 8,
-  "priceEUR": { "min": 14, "max": 22 },
+  "priceEUR": {
+   "min": 14,
+   "max": 22
+  },
   "priceApprox": true,
   "shopHR": "Quahwa / specialty",
   "pairable": true,
-  "serving": { "best": "V60 / Kalita, jutro–popodne" },
+  "serving": {
+   "best": "V60 / Kalita, jutro–popodne"
+  },
   "cigarHint": null,
   "notes": {
    "hr": "Medena slatkoća i voće — uz laganu cigaru, ne uz peaty ili maduro ekstrem.",
@@ -746,13 +798,23 @@
   "abv": null,
   "body": 4,
   "sweetness": 3,
-  "flavorTags": ["kakao", "suho-voce", "zacini", "dim"],
+  "flavorTags": [
+   "kakao",
+   "suho-voce",
+   "zacini",
+   "dim"
+  ],
   "qualityScore": 8.5,
-  "priceEUR": { "min": 25, "max": 40 },
+  "priceEUR": {
+   "min": 25,
+   "max": 40
+  },
   "priceApprox": true,
   "shopHR": "specialty (ograničeno)",
   "pairable": true,
-  "serving": { "best": "Filter / espresso blend" },
+  "serving": {
+   "best": "Filter / espresso blend"
+  },
   "cigarHint": null,
   "notes": {
    "hr": "Gusti, začinski mocha profil — prirodan most uz maduro i tamne note cigare.",
@@ -763,19 +825,28 @@
   "id": "cf-lungo",
   "category": "coffee",
   "name": "Lungo (duži espresso)",
-  "nameLoc": { "hr": "Lungo (duži espresso)", "en": "Lungo (longer espresso)" },
+  "nameLoc": {
+   "hr": "Lungo (duži espresso)",
+   "en": "Lungo (longer espresso)"
+  },
   "style": "espresso-medium",
   "region": "Italija (stil)",
   "country": "—",
   "abv": null,
   "body": 3,
   "sweetness": 2,
-  "flavorTags": ["kakao", "gorko", "orasasti"],
+  "flavorTags": [
+   "kakao",
+   "gorko",
+   "orasasti"
+  ],
   "qualityScore": 6.5,
   "priceEUR": null,
   "shopHR": "svugdje",
   "pairable": true,
-  "serving": { "best": "Lungo 60–90 ml" },
+  "serving": {
+   "best": "Lungo 60–90 ml"
+  },
   "cigarHint": null,
   "notes": {
    "hr": "Razvodnjeniji od espressa — manje intenziteta, duže praćenje uz srednju cigaru.",
@@ -792,12 +863,18 @@
   "abv": null,
   "body": 3,
   "sweetness": 3,
-  "flavorTags": ["kakao", "mlijeko", "karamela"],
+  "flavorTags": [
+   "kakao",
+   "mlijeko",
+   "karamela"
+  ],
   "qualityScore": 7,
   "priceEUR": null,
   "shopHR": "bar / specialty",
   "pairable": true,
-  "serving": { "best": "Espresso + malo mlijeka 1:1" },
+  "serving": {
+   "best": "Espresso + malo mlijeka 1:1"
+  },
   "cigarHint": null,
   "notes": {
    "hr": "Mlijeko ublažava gorčinu — uz blagu do srednju cigaru poslijepodne.",
@@ -814,12 +891,18 @@
   "abv": null,
   "body": 3,
   "sweetness": 3,
-  "flavorTags": ["mlijeko", "kakao", "orasasti"],
+  "flavorTags": [
+   "mlijeko",
+   "kakao",
+   "orasasti"
+  ],
   "qualityScore": 7,
   "priceEUR": null,
   "shopHR": "specialty",
   "pairable": true,
-  "serving": { "best": "Doppio + mikro-pjena" },
+  "serving": {
+   "best": "Doppio + mikro-pjena"
+  },
   "cigarHint": null,
   "notes": {
    "hr": "Više kave nego cappuccino — kremasti most uz Connecticut ili blagi natural.",
@@ -830,19 +913,28 @@
   "id": "cf-vietnamese-iced",
   "category": "coffee",
   "name": "Vijetnamska ledena kava (cà phê sữa đá)",
-  "nameLoc": { "hr": "Vijetnamska ledena kava (cà phê sữa đá)", "en": "Vietnamese iced coffee (cà phê sữa đá)" },
+  "nameLoc": {
+   "hr": "Vijetnamska ledena kava (cà phê sữa đá)",
+   "en": "Vietnamese iced coffee (cà phê sữa đá)"
+  },
   "style": "cold",
   "region": "Vijetnam",
   "country": "Vijetnam",
   "abv": null,
   "body": 4,
   "sweetness": 4,
-  "flavorTags": ["kakao", "slatko", "karamela"],
+  "flavorTags": [
+   "kakao",
+   "slatko",
+   "karamela"
+  ],
   "qualityScore": 7,
   "priceEUR": null,
   "shopHR": "doma / azijski bar",
   "pairable": true,
-  "serving": { "best": "Phin + kondenzirano mlijeko, led" },
+  "serving": {
+   "best": "Phin + kondenzirano mlijeko, led"
+  },
   "cigarHint": null,
   "notes": {
    "hr": "Gusti, slatki hladni profil — kontrast uz kratku, začinsku cigaru po vrućini.",
@@ -859,12 +951,18 @@
   "abv": 12,
   "body": 4,
   "sweetness": 2,
-  "flavorTags": ["kakao", "hrast", "karamela"],
+  "flavorTags": [
+   "kakao",
+   "hrast",
+   "karamela"
+  ],
   "qualityScore": 8,
   "priceEUR": null,
   "shopHR": "doma",
   "pairable": true,
-  "serving": { "best": "Espresso + 10–15 ml VSOP" },
+  "serving": {
+   "best": "Espresso + 10–15 ml VSOP"
+  },
   "cigarHint": null,
   "notes": {
    "hr": "Kava i konjak u istoj šalici — dvostruki most uz srednju do punu cigaru.",
@@ -875,19 +973,29 @@
   "id": "cf-batch-brew-dark",
   "category": "coffee",
   "name": "Batch brew — tamna prženica (filter)",
-  "nameLoc": { "hr": "Batch brew — tamna prženica (filter)", "en": "Batch brew — dark roast (filter)" },
+  "nameLoc": {
+   "hr": "Batch brew — tamna prženica (filter)",
+   "en": "Batch brew — dark roast (filter)"
+  },
   "style": "filter-dark",
   "region": "blend",
   "country": "—",
   "abv": null,
   "body": 4,
   "sweetness": 2,
-  "flavorTags": ["kakao", "dim", "gorko", "orasasti"],
+  "flavorTags": [
+   "kakao",
+   "dim",
+   "gorko",
+   "orasasti"
+  ],
   "qualityScore": 6.5,
   "priceEUR": null,
   "shopHR": "bar / ured",
   "pairable": true,
-  "serving": { "best": "Filter 200–250 ml" },
+  "serving": {
+   "best": "Filter 200–250 ml"
+  },
   "cigarHint": null,
   "notes": {
    "hr": "Jednostavna tamna filter kava — pouzdan most uz srednju cigaru.",

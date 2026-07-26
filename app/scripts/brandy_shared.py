@@ -170,8 +170,9 @@ def detect_age_tier(name: str) -> str:
 
 def detect_style_region(name: str, ecuga_category: str = "") -> tuple[str, str, int, int, list[str]]:
     text = f"{name} {ecuga_category}"
+    text_fold = unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode()
     for pattern, style, region, body, sweet, tags in STYLE_RULES:
-        if re.search(pattern, text, re.IGNORECASE):
+        if re.search(pattern, text_fold, re.IGNORECASE):
             return style, region, body, sweet, list(tags)
     cat = detect_category_type(name, ecuga_category)
     cat_map = {

@@ -119,8 +119,16 @@ DET_NORMALIZE = {
     "sweetened / vsop": ("Doslazen (unutar dopustene obskuracije)", "Sweetened (within permitted obscuration)"),
     "sweetened / xo": ("Doslazen (unutar dopustene obskuracije)", "Sweetened (within permitted obscuration)"),
     "unknown / unknown": ("Nije deklarirano", "Not declared"),
+    "unknown / vs": ("Nije deklarirano", "Not declared"),
     "unknown / vsop": ("Nije deklarirano", "Not declared"),
     "unknown / xo": ("Nije deklarirano", "Not declared"),
+    "unknown / nas": ("Nije deklarirano", "Not declared"),
+    "unknown / age": ("Nije deklarirano", "Not declared"),
+    "clean / nas": ("Bez poznatih dodataka", "No known additives"),
+    "clean / age": ("Bez poznatih dodataka", "No known additives"),
+    "sweetened / nas": ("Doslazen (unutar dopustene obskuracije)", "Sweetened (within permitted obscuration)"),
+    "sweetened / vs": ("Doslazen (unutar dopustene obskuracije)", "Sweetened (within permitted obscuration)"),
+    "sweetened / age": ("Doslazen (unutar dopustene obskuracije)", "Sweetened (within permitted obscuration)"),
 }
 
 HINT = {
@@ -232,6 +240,6 @@ def convert(path: Path) -> None:
     print(f"{path.name}: OK")
 
 if __name__ == "__main__":
-    for name in ["rums", "whiskies", "brandies", "gins", "wines", "coffees"]:
+    for name in ["rums", "whiskies", "brandies", "gins", "tequilas", "wines", "coffees"]:
         convert(DATA / f"{name}.json")
     convert(SEED)

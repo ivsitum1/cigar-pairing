@@ -199,13 +199,36 @@ def extract_brandies(wb, seeds: list[dict]) -> list[dict]:
     return items
 
 
+def load_existing() -> list[dict]:
+    if OUT.exists():
+        return json.loads(OUT.read_text(encoding="utf-8-sig"))
+    return []
+
+
+def merge_orphan_brandies(items: list[dict], existing: list[dict]) -> list[dict]:
+    """Zadrzi postojece brandies.json unose koji nisu u MASTER-u."""
+    seen_ids = {b["id"] for b in items}
+    out = list(items)
+    for prev in existing:
+        if prev.get("id") in seen_ids:
+            continue
+        if any(token_overlap(prev["name"], it["name"]) >= 4 for it in out):
+            continue
+        out.append(prev)
+        seen_ids.add(prev["id"])
+    out.sort(key=lambda d: (-(d.get("qualityScore") or 0), d.get("name", "")))
+    return out
+
+
 def main() -> int:
     if not XLSX.exists():
         print(f"Missing {XLSX} — run build-brandy-excel.py first")
         return 1
     wb = openpyxl.load_workbook(XLSX, data_only=True)
     seeds = load_seed_notes()
+    existing = load_existing()
     brandies = extract_brandies(wb, seeds)
+    brandies = merge_orphan_brandies(brandies, existing)
     wb.close()
     OUT.write_text(json.dumps(brandies, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"brandies.json: {len(brandies)} brendija")
