@@ -9,6 +9,7 @@ updated: 2026-06-12
 
 | Datum | Događaj |
 |-------|---------|
+| 2026-07-26 | Bonton: „kuća”→„domaćin” (agens); „javna pušionica”→„cigar lounge”; XI 3. pravilo |
 | 2026-07-25 | Flavor: CW scrape (117/120) + Famous browser (22 linije); learning `shop-flavor-scrape.md`; convert preferira Famous prose |
 | 2026-07-24 | App cigare: popis cijena vs katalog („od” samo za min stick; LE/krivi URL/sampler van); pokrov→wrapper (+ filler/binder) |
 | 2026-07-24 | App: filter oblika (vitole) opet vidljiv na indeksu brendova; odabir prelazi na filtrirani popis |

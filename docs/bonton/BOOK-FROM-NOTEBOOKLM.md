@@ -37,7 +37,7 @@ Precepti (HR, knjižni ton) — sync iz grill `adfe8fc8` + raniji Cigar 101:
 
 1. Ulazak: pozdrav + „je li mjesto slobodno?”  
 2. Higijena rezača — nikad „stick licker”.  
-3. Podrži domaćina u cigar loungeu; na **privatnoj terasi** vrijedi gostoprimstvo, ne cut fee.  
+3. Lokal: u cigar loungeu podrži mjesto kupnjom; na **privatnoj terasi** si gost, ne cut fee.  
 4. Dim od lica / prema gore.  
 5. Telefon: kratko ili vani; bez zvučnika.  
 6. Pepeo; ugasi dostojanstveno (ne stubaj).  

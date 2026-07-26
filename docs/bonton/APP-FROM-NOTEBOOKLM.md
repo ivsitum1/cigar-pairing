@@ -19,13 +19,13 @@ Stanje korpusa nakon refresha (3 ključne bilježnice): Cigar 101 **100**, Drink
 
 Naslov (stara skica): *X. Lounge i klub* → implementirano kao *VIII. Salon i klub* / EN: *VIII. Lounge and club*
 
-Uvod: Javna pušionica nije tvoja terasa — ali ista pažnja prema tuđem zraku.
+Uvod: Cigar lounge nije tvoja terasa — ali ista pažnja prema tuđem zraku.
 
 Bulleti (katalog `•`):
 
 - Prije sjedanja pitaj je li mjesto slobodno; pozdravi prostor, ne samo šank.
 - Rezač je zajednički samo ako je čist — ne vlaži cap slinom prije kućnog ili lounge rezača.
-- Podrži kuću: u trgovini/klubu kupi barem jednu stavku ili poštuj njihov cut fee; na **privatnoj terasi** to pravilo ne vrijedi — tamo vrijedi gostoprimstvo.
+- Lokal: u trgovini/klubu kupi barem jednu stavku ili poštuj njihovo pravilo; na **privatnoj terasi** to ne vrijedi — tamo si gost.
 - Dim gore ili od lica; na vjetru biraj smjer.
 - Telefon: kratko ili vani; bez zvučnika i video poziva nad stolom.
 - Pepeo u pepeljaru; na kraju ostavi cigar da se ugasi — ne stubaj ga poput cigarete.

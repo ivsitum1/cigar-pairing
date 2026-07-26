@@ -2457,7 +2457,7 @@ If a guest leaves and says "I enjoyed it", the host has won. If he leaves and sa
 
 A cigar lounge has a host. The host has expectations. A gentleman reads them.
 
-A greeting. A seat. Cutter hygiene. Smoke up. The phone outside. Ash with dignity. Advice on request. Your own bottle — if you may — shared. Perfume in measure. Cigars, not cigarettes/vapes, if the host lives that way.
+A greeting. A seat. Cutter hygiene. Smoke up. The phone outside. Ash with dignity. Advice on request. Your own bottle — if you may — shared. Perfume in measure. Cigars, not cigarettes/vapes, if the place lives that way.
 
 A private terrace is not a lounge with a price list. Here hospitality applies, not the import of someone else's tipping as local law.
 
@@ -2592,7 +2592,7 @@ A gentleman knows how to stop; doesn't force a third; keeps water; shortens the 
 
 A gentleman offers a choice; shows the toilet; keeps the ashtray; doesn't vanish into the phone; sends thanks.
 
-A gentleman in a lounge asks for a seat; doesn't lick the cap; doesn't switch on a speakerphone; doesn't ask for a puff; respects the host locally.
+A gentleman in a lounge asks for a seat; doesn't lick the cap; doesn't switch on a speakerphone; doesn't ask for a puff; supports the place by buying.
 
 A gentleman outdoors reads the wind; doesn't ash the lawn; doesn't smoke in lines of people; remembers that smoke goes up; doesn't underestimate the bura.
 
@@ -2867,7 +2867,7 @@ Ash: dignity.
 Advice: on request.
 Your own bottle: share it or don't bring it.
 Perfume: in measure.
-Cigars only, if the host lives that way.
+Cigars only, if the place lives that way.
 
 Don't import someone else's types as local law.
 Don't reserve five armchairs for a ghost.
@@ -3010,7 +3010,7 @@ A gentleman knows how to stop in the middle of the third. He doesn't force a thi
 A gentleman offers a choice, not an exam. He shows the toilet without a joke. He keeps the ashtray within reach. He doesn't vanish into the phone. He sends thanks the next day.
 
 ### The lounge
-A gentleman asks whether a seat is free. He doesn't lick the cap before a shared cutter. He doesn't switch on a speakerphone. He doesn't ask for a puff of someone else's cigar. He supports the house locally, without importing someone else's tipping as dogma.
+A gentleman asks whether a seat is free. He doesn't lick the cap before a shared cutter. He doesn't switch on a speakerphone. He doesn't ask for a puff of someone else's cigar. He supports the place by buying, without importing someone else's tipping as dogma.
 
 ### Outdoors
 A gentleman reads the wind. He doesn't ash the lawn. He doesn't smoke into faces in a queue. On a balcony he remembers that smoke goes up. On the Adriatic he doesn't underestimate the bura.

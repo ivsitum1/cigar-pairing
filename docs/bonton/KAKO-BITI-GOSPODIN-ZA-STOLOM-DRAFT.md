@@ -3062,7 +3062,7 @@ Gospodin čita vjetar. Ne pepeljuje travnjak. Ne puši u lica u redu. Na balkonu
 - Gospodin ne liže kapu prije zajedničkog rezača.
 - Gospodin ne pali zvučnik.
 - Gospodin ne traži povlačenje s tuđe cigare.
-- Gospodin podržava domaćina bez uvoza tuđih napojnica kao dogme.
+- Gospodin podržava lokal kupnjom, bez uvoza tuđih napojnica kao dogme.
 - Gospodin pita je li mjesto slobodno.
 
 ---

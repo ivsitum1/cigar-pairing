@@ -9,6 +9,8 @@ updated: 2026-07-25
 
 ~500 riječi snapshot nedavne aktivnosti. Agent ažurira nakon svake značajnije operacije pisanja u wiki.
 
+> **2026-07-26:** Bonton salon: „kuća” (agens) → „domaćin”; „kućna pravila” / „kućni rezač” ostaju. Prije: „javna pušionica” → „cigar lounge”; XI 3. pravilo.
+
 > **2026-07-25:** Flavor scrape: CW HTTP (VariantInfo + aroma canvas; 429→resume/backoff). Famous: urllib/CAPTCHA; Cursor browser `fetch` radi — 22 linije u korpusu. Learning: `knowledge/learnings/shop-flavor-scrape.md`.
 
 > **2026-07-24:** Cigare na popisu: „od X €” samo kad je X stvarno najniža stick cijena; LE/krivi brend URL i sampler/pack isključeni iz zadane cijene. HR bilješke: pokrov→wrapper (runtime + generatori); filler/binder u brands.

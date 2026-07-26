@@ -175,7 +175,7 @@ Dobar domaćin nudi ljestvicu. Dobar gost zna sići s nje bez srama.
 ## VIII. Salon i klub
 
 
-Javna pušionica nije tvoja dnevna soba. Privatna terasa nije salon s cjenikom.
+Cigar lounge nije tvoja dnevna soba. Privatna terasa nije salon s cjenikom.
 
 ### Ulazak i mjesto
 
@@ -194,10 +194,11 @@ Javna pušionica nije tvoja dnevna soba. Privatna terasa nije salon s cjenikom.
 - Ne traži gutljaj tuđe cigare. Savjet samo na upit. Ne rangiraj tuđi izbor po cijeni.
 - Ne pretvaraj svaku priču u svoju veću. Prvo slušaj ritam sobe.
 
-### Kuća
+### Mjesto
 
-- U javnoj pušionici i trgovini podrži kuću kupnjom ili jasnim pravilom mjesta. Na privatnoj terasi vrijedi gostoprimstvo, ne uvozna naplata reza.
-- Ne sjedi satima kao da je stol besplatni ured. Cigareta i vape: pitaj kuću.
+- U cigar loungeu i trgovini podrži mjesto kupnjom ili jasnim pravilom.
+- Na privatnoj terasi si gost kod domaćina, ne mušterija u salonu; naplata za rez iz stranih loungea ovdje ne pripada.
+- Ne sjedi satima kao da je stol besplatni ured. Cigareta i vape: pitaj domaćina.
 
 
 ---
@@ -260,7 +261,7 @@ Ako zapamtiš samo troje, neka bude ovo.
 
 - Pitaj prije paljenja.
 - Ostavi dovoljno prostora drugima: u dimu, u čaši, u razgovoru.
-- Završi čišće nego si zatekao: pepeo, čaša, zahvala.
+- Ostavi čistije nego što si zatekao: pepeo, čaša, zahvala.
 
 ### Za kraj
 
@@ -444,7 +445,7 @@ A good host offers a ladder. A good guest knows how to step off it without shame
 ## VIII. Lounge and club
 
 
-A public smoking room is not your living room. A private terrace is not a lounge with a price list.
+A cigar lounge is not your living room. A private terrace is not a lounge with a price list.
 
 ### Arrival and seat
 
@@ -463,10 +464,11 @@ A public smoking room is not your living room. A private terrace is not a lounge
 - Do not ask for a puff of another's cigar. Advise only if asked. Do not rank another's choice by price.
 - Do not turn every story into your bigger one. Listen to the room's pace first.
 
-### The house
+### The place
 
-- In a public lounge or shop, support the house by buying or following the place's clear rule. On a private terrace, hospitality applies, not an imported cut fee as local custom.
-- Do not camp for hours as if the seat were a free office. Cigarettes and vapes: ask the house.
+- In a cigar lounge or shop, support the place by buying or following the place's clear rule.
+- On a private terrace you are a guest at someone's home, not a paying lounge customer; a foreign cut fee does not belong here.
+- Do not camp for hours as if the seat were a free office. Cigarettes and vapes: ask the host.
 
 
 ---
