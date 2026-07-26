@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import type { Cigar, Drink } from "../types";
 import { useI18n, STYLE_LABELS, ADDITIVE_LABELS, ADDITIVE_RULES } from "../i18n";
 import { flavorLabel } from "../engine/rules";
-import { brandInfo, cigarShopLinks, cigarShopLinkPrice, formatPrice } from "../data";
+import { brandInfo, brandDisplayName, cigarShopLinks, cigarShopLinkPrice, formatPrice } from "../data";
 import { REGIONS } from "../data/shops";
 import { drinkBuyLink } from "../lib/drinkBuyLink";
 import { drinkNameLoc } from "../lib/drinkName";
@@ -15,6 +15,7 @@ import {
   updateItem,
   useCollection,
 } from "../store/collection";
+import { useMarket } from "../store/market";
 
 type Item = { kind: "cigar"; item: Cigar } | { kind: "drink"; item: Drink };
 
@@ -174,7 +175,9 @@ function CigarDetails({
   onOpenCigar?: (c: Cigar) => void;
 }) {
   const { t, lx, cn, lang } = useI18n();
+  const market = useMarket();
   const brand = brandInfo(cigar.brand);
+  const displayBrand = brandDisplayName(cigar.brand, market);
   const vitolaCrumb =
     cigar.vitolas.length === 1 ? cigar.vitolas[0].name : cigar.vitola;
   return (
@@ -187,10 +190,10 @@ function CigarDetails({
             onClick={() => onOpenBrand(cigar.brand)}
             className="underline decoration-zlato/40 underline-offset-2 hover:text-zlato-2"
           >
-            {cigar.brand}
+            {displayBrand}
           </button>
         ) : (
-          <span>{cigar.brand}</span>
+          <span>{displayBrand}</span>
         )}
         <span aria-hidden>›</span>
         {onOpenLine ? (
@@ -213,7 +216,7 @@ function CigarDetails({
       </div>
 
       <div className="font-display text-xl text-papir">
-        {cigar.brand}{" "}
+        {displayBrand}{" "}
         <span className="text-zlato-2">{cigar.line}</span>
         {vitolaCrumb && vitolaCrumb !== cigar.line ? (
           <span className="text-papir/80"> · {vitolaCrumb}</span>
@@ -349,7 +352,7 @@ function CigarDetails({
       {brand && (
         <div className="mt-3 rounded-lg border border-dim/20 bg-cedar/60 p-3">
           <div className="text-micro uppercase tracking-widest text-dim">
-            {cigar.brand} · {cn(brand.country)} · {brand.founded}
+            {displayBrand} · {cn(brand.country)} · {brand.founded}
           </div>
           <p className="mt-1 text-xs leading-relaxed text-papir/80">
             {lx(brand.blurb)}

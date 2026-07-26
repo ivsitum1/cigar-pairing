@@ -1,7 +1,7 @@
 // Custom pairing prostor: ručno izaberi JEDNU cigaru i JEDNO piće -> % slaganja.
 import { useMemo, useState } from "react";
 import type { Cigar, Drink, ServeStyle } from "../types";
-import { ALL_DRINKS, CIGARS, cigarInRegion, formatPrice } from "../data";
+import { ALL_DRINKS, CIGARS, brandDisplayName, brandSearchHaystack, cigarInRegion, formatPrice } from "../data";
 import { scorePairing } from "../engine/pairing";
 import { curatedPairingOpinion } from "../engine/curatedOpinion";
 import { pairingBlurb } from "../engine/pairingExplain";
@@ -67,7 +67,7 @@ export function CustomPairing({
       <div className="grid grid-cols-2 gap-2">
         <Slot
           label={t("common.cigar")}
-          filled={cigar ? `${cigar.brand} ${cigar.line}` : null}
+          filled={cigar ? `${brandDisplayName(cigar.brand, market)} ${cigar.line}` : null}
           onClick={() => setPicking(picking === "cigar" ? null : "cigar")}
           active={picking === "cigar"}
         />
@@ -162,9 +162,9 @@ export function CustomPairing({
             picking === "cigar"
               ? marketCigars.map((c) => ({
                   id: c.id,
-                  title: `${c.brand} ${c.line}`,
+                  title: `${brandDisplayName(c.brand, market)} ${c.line}`,
                   sub: `${c.wrapper} · ${cn(c.country)}`,
-                  hay: `${c.brand} ${c.line} ${c.wrapper} ${c.country}`,
+                  hay: `${brandSearchHaystack(c.brand)} ${c.line} ${c.wrapper} ${c.country}`,
                   raw: c as Cigar | Drink,
                 }))
               : drinks.map((d) => ({

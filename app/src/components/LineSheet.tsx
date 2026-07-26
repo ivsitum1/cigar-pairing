@@ -1,12 +1,13 @@
 // Linija: priča + metrike + puna tablica vitola (Phase 4).
 import { useMemo } from "react";
 import type { Cigar, Vitola } from "../types";
-import { brandInfo, resolveCigarId } from "../data";
+import { brandInfo, brandDisplayName, resolveCigarId } from "../data";
 import { useI18n } from "../i18n";
 import { Meter } from "./ui";
 import { BackButton } from "./BackButton";
 import { uniqueVitolas } from "../lib/cigarVitola";
 import { vitolaBlurb } from "../lib/vitolaInfo";
+import { useMarket } from "../store/market";
 
 function dimLabel(v: Vitola): string {
   if (v.ring != null && v.lengthMM != null) return `${v.ring} × ${v.lengthMM} mm`;
@@ -26,8 +27,10 @@ export function LineSheet({
   onOpenVitola: (cigar: Cigar, vitola: Vitola) => void;
 }) {
   const { t, lx, cn, lang } = useI18n();
+  const market = useMarket();
   const cigar = resolveCigarId(raw.id) ?? raw;
   const info = brandInfo(cigar.brand);
+  const displayBrand = brandDisplayName(cigar.brand, market);
   const vitolas = useMemo(() => uniqueVitolas(cigar), [cigar]);
 
   return (
@@ -52,10 +55,10 @@ export function LineSheet({
               onClick={() => onOpenBrand(cigar.brand)}
               className="underline decoration-zlato/40 underline-offset-2 hover:text-zlato-2"
             >
-              {cigar.brand}
+              {displayBrand}
             </button>
           ) : (
-            cigar.brand
+            displayBrand
           )}
           {" › "}
           <span className="text-zlato-2">{cigar.line}</span>

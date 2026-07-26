@@ -131,11 +131,32 @@ export interface BrandInfo {
   country: string;
   founded: string;
   blurb: { hr: string; en: string };
+  /** Market-specific display name (e.g. La Aroma de Cuba → del Caribe in HR/EU). */
+  displayNames?: Partial<Record<"HR" | "EU" | "USA", string>>;
 }
 
 const BRANDS = brandsJson as Record<string, BrandInfo>;
 
 export const brandInfo = (brand: string): BrandInfo | undefined => BRANDS[brand];
+
+/** Canonical brand key stays in data; UI may show a market alias. */
+export function brandDisplayName(
+  brand: string,
+  market: RegionFilter,
+): string {
+  if (market === "ALL") return brand;
+  const alias = brandInfo(brand)?.displayNames?.[market];
+  return alias ?? brand;
+}
+
+/** Haystack for catalog/pairing search: canonical name + all display aliases. */
+export function brandSearchHaystack(brand: string): string {
+  const info = brandInfo(brand);
+  const aliases = info?.displayNames
+    ? Object.values(info.displayNames).filter(Boolean)
+    : [];
+  return [brand, ...aliases].join(" ");
+}
 
 /** Linije marke: A→Z, linija = ime marke prva (§2). */
 export function linesByBrand(brand: string): Cigar[] {
