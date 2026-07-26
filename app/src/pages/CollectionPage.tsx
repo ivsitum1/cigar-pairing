@@ -96,10 +96,7 @@ export function CollectionPage() {
 
       {myDrinks.length > 0 && (
         <>
-          <SectionTitle>
-            {t("cat.rum")} / {t("cat.whisky")} / {t("cat.brandy")} / {t("cat.wine")} /{" "}
-            {t("cat.coffee")} / {t("cat.tequila")} / {t("cat.gin")}
-          </SectionTitle>
+          <SectionTitle>{t("coll.drinks")}</SectionTitle>
           <div className="space-y-2">
             {myDrinks.map((d) => (
               <DrinkRow key={d.id} drink={d} onClick={() => setDetail({ kind: "drink", item: d })} />

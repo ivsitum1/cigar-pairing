@@ -87,7 +87,7 @@ export function Chip({
 export function SectionTitle({ children }: { children: ReactNode }) {
   return (
     <div className="mb-3 mt-6 flex items-center gap-3">
-      <h2 className="font-display text-sm uppercase tracking-[0.2em] text-zlato">
+      <h2 className="min-w-0 break-words font-display text-sm uppercase tracking-[0.2em] text-zlato">
         {children}
       </h2>
       <div className="band-rule flex-1" />

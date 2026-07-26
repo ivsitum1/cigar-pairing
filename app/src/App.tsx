@@ -45,7 +45,7 @@ export default function App() {
   };
 
   return (
-    <div className="mx-auto flex min-h-screen max-w-2xl flex-col px-4">
+    <div className="mx-auto flex min-h-screen max-w-2xl flex-col overflow-x-hidden px-4">
       {/* header — cigar band stil */}
       <header className="flex items-center justify-between pb-2 pt-5">
         <div>

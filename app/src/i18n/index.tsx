@@ -305,6 +305,7 @@ const STRINGS = {
   "coll.importErr": { hr: "Neispravna datoteka.", en: "Invalid file." },
   "coll.stats": { hr: "boca/cigara u kolekciji", en: "bottles/cigars in collection" },
   "coll.historySection": { hr: "Probano / bilješke (nemam)", en: "Tried / notes (not owned)" },
+  "coll.drinks": { hr: "Pića", en: "Drinks" },
   // shopping
   "shop.tiers": { hr: "Plan kolekcije po razinama", en: "Collection plan by tiers" },
   "shop.tier": { hr: "Razina", en: "Tier" },
