@@ -9,6 +9,8 @@ updated: 2026-07-25
 
 ~500 riječi snapshot nedavne aktivnosti. Agent ažurira nakon svake značajnije operacije pisanja u wiki.
 
+> **2026-07-26:** HR spirits: gin/tequila pipeline (scrape→Excel→calibrate-master→JSON); brandy refresh + orphan merge. Katalog: gin 70, tequila 26, brandy 98. Branch `catalog-hr-gin-tequila-cognac`.
+
 > **2026-07-26:** Bonton salon: „kuća” (agens) → „domaćin”; „kućna pravila” / „kućni rezač” ostaju. Prije: „javna pušionica” → „cigar lounge”; XI 3. pravilo.
 
 > **2026-07-25:** Flavor scrape: CW HTTP (VariantInfo + aroma canvas; 429→resume/backoff). Famous: urllib/CAPTCHA; Cursor browser `fetch` radi — 22 linije u korpusu. Learning: `knowledge/learnings/shop-flavor-scrape.md`.

@@ -43,7 +43,7 @@ indeksima rangiranim po kvaliteti za sipping uz cigaru.
     (Vivat/Miva/Vrutak/vinoteke), približne označene `priceApprox` (124 zapisa;
     regeneracija: `python scripts/expand-wines.py`)
   - `src/engine/` — rule-based pairing engine s objašnjenjima (kalibracija u `rules.ts`)
-  - `scripts/pipeline.py` — orkestrator: vrti korake regeneracije ispravnim
+  - **`scripts/pipeline.py` — orkestrator: vrti korake regeneracije ispravnim
     redoslijedom i staje na prvoj grešci** (`--category rum|whisky|brandy|gin|tequila|cigars|all`,
     `--scrape` za osvježenje kataloga, `--from <skripta>` za nastavak nakon ručne
     kalibracije Excela, `--list` za pregled koraka); ručno nabrajanje ispod ostaje
@@ -56,6 +56,9 @@ indeksima rangiranim po kvaliteti za sipping uz cigaru.
   - `scripts/scrape-brandy-catalog.py` — scrape allez.hr + ecuga.com → brandy_catalog_raw.json
   - `scripts/build-brandy-excel.py` — gradi Konjak_Brandy_Checklist.xlsx iz raw kataloga
   - `scripts/excel-to-brandy-json.py` — regenerira brandies.json iz brandy Excela
+  - `scripts/scrape-gin-catalog.py` / `build-gin-excel.py` / `excel-to-gin-json.py` — gin pipeline
+  - `scripts/scrape-tequila-catalog.py` / `build-tequila-excel.py` / `excel-to-tequila-json.py` — tequila pipeline
+  - `scripts/calibrate-master.py` — agent kalibracija MASTER sheetova (gin/tequila/brandy)
   - `scripts/enrich-cigars.py` — vitole/cijene/linkovi iz humidor.hr scrape podataka
   - `scripts/profile-cigars.py` — obogaćuje cigare bez profila (prazan flavorTags →
     izvodi snagu/tijelo/wrapper/okuse iz wrappera, marke i bilješki)

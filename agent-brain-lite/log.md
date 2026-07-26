@@ -9,6 +9,7 @@ updated: 2026-06-12
 
 | Datum | Događaj |
 |-------|---------|
+| 2026-07-26 | HR katalog: gin 19→70, tequila 14→26, brandy 84→98 (allez+ecuga scrape, MASTER kalibracija) |
 | 2026-07-26 | Bonton: „kuća”→„domaćin” (agens); „javna pušionica”→„cigar lounge”; XI 3. pravilo |
 | 2026-07-25 | Flavor: CW scrape (117/120) + Famous browser (22 linije); learning `shop-flavor-scrape.md`; convert preferira Famous prose |
 | 2026-07-24 | App cigare: popis cijena vs katalog („od” samo za min stick; LE/krivi URL/sampler van); pokrov→wrapper (+ filler/binder) |
