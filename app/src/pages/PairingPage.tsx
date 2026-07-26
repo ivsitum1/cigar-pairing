@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import type { Cigar, Drink, DrinkCategory, PairingResult, ServeStyle, Vitola } from "../types";
 import { ALL_DRINKS, CIGARS, cigarInRegion, cigarLinkForMarket, cigarPriceForMarket, drinkById, formatPrice, resolveCigarId } from "../data";
 import { pairCigarsForDrink, pairDrinksForCigar } from "../engine/pairing";
+import { dayKey, softBandWindow } from "../engine/softBandRank";
 import { buildPrefs } from "../engine/personal";
 import { curatedPairingOpinion } from "../engine/curatedOpinion";
 import { pairingBlurb } from "../engine/pairingExplain";
@@ -166,23 +167,21 @@ export function PairingPage() {
     };
   }, [mode, selectedCigar, onlyMine, cycle, occasion, prefs]);
 
-  // pice -> tocno 3 cigare RAZLICITIH brendova (cycle pomice prozor za 3)
+  // pice -> tocno 3 cigare RAZLICITIH brendova u soft-bandu (max−5);
+  // day seed + cycle pomice prozor
   const cigarSuggestions = useMemo(() => {
     if (mode !== "drinkToCigar" || !selectedDrink) return null;
     let cigars = marketCigars;
     if (onlyMine) cigars = cigars.filter((c) => getItemState(c.id).owned);
     const ranked = pairCigarsForDrink(selectedDrink, cigars, prefs, serve);
     if (ranked.length === 0) return { window: [], total: 0 };
-    // diversity: po jedna najbolja cigara svakog brenda
-    const seen = new Set<string>();
-    const diverse = ranked.filter((r) => {
-      if (seen.has(r.item.brand)) return false;
-      seen.add(r.item.brand);
-      return true;
+    const { window, total } = softBandWindow(ranked, {
+      anchorId: selectedDrink.id,
+      dayKey: dayKey(),
+      cycle: cycle["cigars"] ?? 0,
+      keyOf: (c) => c.brand,
     });
-    const pool = diverse.length >= 3 ? diverse : ranked;
-    const offset = ((cycle["cigars"] ?? 0) * 3) % Math.max(pool.length, 1);
-    return { window: pool.slice(offset, offset + 3), total: pool.length };
+    return { window, total };
   }, [mode, selectedDrink, onlyMine, cycle, marketCigars, prefs, serve]);
 
   // kandidati za večernji zapis: trenutno vidljivi prijedlozi
