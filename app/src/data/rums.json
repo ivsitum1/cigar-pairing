@@ -66,9 +66,9 @@
     ]
   },
   {
-    "id": "rum-foursquare-sovereignty-covenant-ecs",
+    "id": "rum-foursquare-sovereignty",
     "category": "rum",
-    "name": "Foursquare Sovereignty / Covenant (ECS)",
+    "name": "Foursquare Sovereignty (ECS)",
     "style": "barbados",
     "region": "Barbados",
     "body": 4,
@@ -102,13 +102,59 @@
       "best": "Cisto"
     },
     "cigarHint": {
-      "hr": "Most prema cigari je punoća hrasta; kontrast traži dim koji ima kremu ili zemlju bez dodatne slatkoće.",
-      "en": "The bridge to a cigar is oak weight; the contrast asks for smoke with cream or earth rather than extra sweetness."
+      "hr": "Uz Foursquare Sovereignty biraj cigaru prema tijelu 4/5 i zajedničkim notama (suho-voce, hrast).",
+      "en": "With Foursquare Sovereignty pick a cigar for body 4/5 and shared notes (suho-voce, hrast)."
     },
     "priceUrl": "https://allez.hr/shop/svi-proizvodi/foursquare-14-yo-sovereignty-single-blended-rum-62-vol-07l",
     "notes": {
-      "hr": "Vrh ECS serije, cask strength, bez aditiva (deklaracija destilerije) — gust ester-profil uz puniju cigaru.",
-      "en": "Top of the ECS series, cask strength, no additives (distillery declaration)."
+      "hr": "Foursquare Sovereignty (ECS): Prva boca iz kombiniranog unosa — vlastiti profil. Profil ostaje u stilu barbados (Barbados). Vrh ECS serije, cask strength, bez aditiva (deklaracija destilerije) — gust ester-profil uz puniju cigaru.",
+      "en": "Foursquare Sovereignty (ECS): First bottle from the combined entry — its own profile. Profile stays in the barbados style (Barbados). Top of the ECS series, cask strength, no additives (distillery declaration)."
+    }
+  },
+  {
+    "id": "rum-covenant",
+    "category": "rum",
+    "name": "Covenant (ECS)",
+    "style": "barbados",
+    "region": "Barbados",
+    "body": 4,
+    "sweetness": 1,
+    "flavorTags": [
+      "suho-voce",
+      "hrast",
+      "vanilija",
+      "overproof"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Cist",
+      "en": "Clean"
+    },
+    "additiveSource": "Dekl. (R.Seale)",
+    "qualityScore": 9.5,
+    "priceEUR": {
+      "min": 166,
+      "max": 304
+    },
+    "shopHR": "allez.hr",
+    "status": "META",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 3,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Cisto"
+    },
+    "cigarHint": {
+      "hr": "Uz Covenant biraj cigaru prema tijelu 4/5 i zajedničkim notama (suho-voce, hrast).",
+      "en": "With Covenant pick a cigar for body 4/5 and shared notes (suho-voce, hrast)."
+    },
+    "priceUrl": "https://allez.hr/shop/svi-proizvodi/foursquare-14-yo-sovereignty-single-blended-rum-62-vol-07l",
+    "notes": {
+      "hr": "Covenant (ECS): Druga boca iz kombiniranog unosa — vlastiti profil. Profil ostaje u stilu barbados (Barbados). Vrh ECS serije, cask strength, bez aditiva (deklaracija destilerije) — gust ester-profil uz puniju cigaru.",
+      "en": "Covenant (ECS): Second bottle from the combined entry — its own profile. Profile stays in the barbados style (Barbados). Top of the ECS series, cask strength, no additives (distillery declaration)."
     }
   },
   {
@@ -202,9 +248,9 @@
     }
   },
   {
-    "id": "rum-foursquare-nobiliary-sagacity",
+    "id": "rum-foursquare-nobiliary",
     "category": "rum",
-    "name": "Foursquare Nobiliary / Sagacity",
+    "name": "Foursquare Nobiliary",
     "style": "barbados",
     "region": "Barbados",
     "body": 3,
@@ -234,13 +280,55 @@
       "best": "Cisto"
     },
     "cigarHint": {
-      "hr": "Most prema cigari je zreli hrast; kontrast ostaje čist uz dim s orasima, kožom ili kakaom.",
-      "en": "The bridge to a cigar is mature oak; the contrast stays clean with smoke showing nuts, leather or cocoa."
+      "hr": "Uz Foursquare Nobiliary biraj cigaru prema tijelu 3/5 i zajedničkim notama (suho-voce, hrast).",
+      "en": "With Foursquare Nobiliary pick a cigar for body 3/5 and shared notes (suho-voce, hrast)."
     },
     "priceUrl": null,
     "notes": {
-      "hr": "Nobiliary i Sagacity predstavljaju zreliji Foursquare Barbados stil, suh, hrastov i jasno strukturiran. U čaši očekuj slojeve suhog voća, začina i vanilije bez dojma sirupaste slatkoće.",
-      "en": "Nobiliary and Sagacity represent a more mature Foursquare Barbados style, dry, oaky and clearly structured. In the glass expect layers of dried fruit, spice and vanilla without a syrupy sweetness impression."
+      "hr": "Foursquare Nobiliary: Prva boca iz kombiniranog unosa — vlastiti profil. Profil ostaje u stilu barbados (Barbados). Nobiliary i Sagacity predstavljaju zreliji Foursquare Barbados stil, suh, hrastov i jasno strukturiran. U čaši očekuj slojeve suhog voća, začina i vanilije bez dojma sirupaste slat",
+      "en": "Foursquare Nobiliary: First bottle from the combined entry — its own profile. Profile stays in the barbados style (Barbados). Nobiliary and Sagacity represent a more mature Foursquare Barbados style, dry, oaky and clearly structured. In the glass expect layers of dried fruit, spice and vanilla without a s"
+    }
+  },
+  {
+    "id": "rum-sagacity",
+    "category": "rum",
+    "name": "Sagacity",
+    "style": "barbados",
+    "region": "Barbados",
+    "body": 3,
+    "sweetness": 1,
+    "flavorTags": [
+      "suho-voce",
+      "hrast",
+      "vanilija"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Cist",
+      "en": "Clean"
+    },
+    "additiveSource": "Dekl. (R.Seale)",
+    "qualityScore": 9,
+    "priceEUR": null,
+    "shopHR": "import",
+    "status": "META",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 3,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Cisto"
+    },
+    "cigarHint": {
+      "hr": "Uz Sagacity biraj cigaru prema tijelu 3/5 i zajedničkim notama (suho-voce, hrast).",
+      "en": "With Sagacity pick a cigar for body 3/5 and shared notes (suho-voce, hrast)."
+    },
+    "priceUrl": null,
+    "notes": {
+      "hr": "Sagacity: Druga boca iz kombiniranog unosa — vlastiti profil. Profil ostaje u stilu barbados (Barbados). Nobiliary i Sagacity predstavljaju zreliji Foursquare Barbados stil, suh, hrastov i jasno strukturiran. U čaši očekuj slojeve suhog voća, začina i vanilije bez dojma sirupaste slat",
+      "en": "Sagacity: Second bottle from the combined entry — its own profile. Profile stays in the barbados style (Barbados). Nobiliary and Sagacity represent a more mature Foursquare Barbados style, dry, oaky and clearly structured. In the glass expect layers of dried fruit, spice and vanilla without a s"
     }
   },
   {
@@ -557,9 +645,9 @@
     }
   },
   {
-    "id": "rum-chairman-s-reserve-1931-master-s",
+    "id": "rum-chairman-s-reserve-1931",
     "category": "rum",
-    "name": "Chairman's Reserve 1931 / Master's",
+    "name": "Chairman's Reserve 1931",
     "style": "st-lucia",
     "region": "Sv. Lucija",
     "body": 3,
@@ -592,27 +680,72 @@
       "best": "Cisto / kap vode"
     },
     "cigarHint": {
-      "hr": "Most prema cigari je duhan i hrast; kontrast radi s kremastim, cedrastim ili orašastim profilom.",
-      "en": "The bridge to a cigar is tobacco and oak; the contrast works with creamy, cedar or nut-led profiles."
+      "hr": "Uz Chairman's Reserve 1931 biraj cigaru prema tijelu 3/5 i zajedničkim notama (vanilija, duhan).",
+      "en": "With Chairman's Reserve 1931 pick a cigar for body 3/5 and shared notes (vanilija, duhan)."
     },
     "priceUrl": "https://allez.hr/shop/svi-proizvodi/chairmans-reserve-masters-selection-coffey-still-rum-462-vol-07l-u-poklon-kutiji",
     "notes": {
-      "hr": "Chairman’s Reserve 1931 i Master’s Selection nose stil Svete Lucije kroz hrast, duhan i toplu vaniliju. U čaši očekuj srednje tijelo, uredan začin i završetak koji ostavlja prostor dimu.",
-      "en": "Chairman’s Reserve 1931 and Master’s Selection carry Saint Lucia style through oak, tobacco and warm vanilla. In the glass expect medium body, tidy spice and a finish that leaves room for smoke."
+      "hr": "Chairman's Reserve 1931: Mlađa ili lakša ekspresija u paru. Profil ostaje u stilu st-lucia (Sv. Lucija). Chairman’s Reserve 1931 i Master’s Selection nose stil Svete Lucije kroz hrast, duhan i toplu vaniliju. U čaši očekuj srednje tijelo, uredan začin i završetak koji ostavlja prostor",
+      "en": "Chairman's Reserve 1931: The younger or lighter expression in the pair. Profile stays in the st-lucia style (Sv. Lucija). Chairman’s Reserve 1931 and Master’s Selection carry Saint Lucia style through oak, tobacco and warm vanilla. In the glass expect medium body, tidy spice and a finish that leaves r"
     }
   },
   {
-    "id": "rum-clement-vsop-neisson-agricole",
+    "id": "rum-master-s",
     "category": "rum",
-    "name": "Clement VSOP / Neisson (agricole)",
+    "name": "Master's",
+    "style": "st-lucia",
+    "region": "Sv. Lucija",
+    "body": 4,
+    "sweetness": 1,
+    "flavorTags": [
+      "vanilija",
+      "duhan",
+      "hrast"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Cist",
+      "en": "Clean"
+    },
+    "additiveSource": "Dekl./regija",
+    "qualityScore": 8.5,
+    "priceEUR": {
+      "min": 77,
+      "max": 86
+    },
+    "shopHR": "allez.hr",
+    "status": "META",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 3,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Cisto / kap vode"
+    },
+    "cigarHint": {
+      "hr": "Uz Master's biraj cigaru prema tijelu 4/5 i zajedničkim notama (vanilija, duhan).",
+      "en": "With Master's pick a cigar for body 4/5 and shared notes (vanilija, duhan)."
+    },
+    "priceUrl": "https://allez.hr/shop/svi-proizvodi/chairmans-reserve-masters-selection-coffey-still-rum-462-vol-07l-u-poklon-kutiji",
+    "notes": {
+      "hr": "Master's: Starija/punija ekspresija: više hrasta i težine. Profil ostaje u stilu st-lucia (Sv. Lucija). Chairman’s Reserve 1931 i Master’s Selection nose stil Svete Lucije kroz hrast, duhan i toplu vaniliju. U čaši očekuj srednje tijelo, uredan začin i završetak koji ostavlja prostor",
+      "en": "Master's: The older/fuller expression: more oak and weight. Profile stays in the st-lucia style (Sv. Lucija). Chairman’s Reserve 1931 and Master’s Selection carry Saint Lucia style through oak, tobacco and warm vanilla. In the glass expect medium body, tidy spice and a finish that leaves r"
+    }
+  },
+  {
+    "id": "rum-clement-vsop-agricole",
+    "category": "rum",
+    "name": "Clément VSOP (agricole)",
     "style": "agricole",
     "region": "Agricole (Martinique)",
     "body": 2,
     "sweetness": 1,
     "flavorTags": [
       "travnato",
-      "vegetalno",
-      "citrus"
+      "citrus",
+      "vanilija"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -634,22 +767,67 @@
       "rocks": 1,
       "highball": 2,
       "cola": 0,
-      "best": "Cisto / Ti' Punch"
+      "best": "Čisto / Ti' Punch"
     },
     "cigarHint": {
-      "hr": "Most prema cigari je travnati citrus; kontrast najbolje radi s blažim dimom koji ima sijeno ili kremu.",
-      "en": "The bridge to a cigar is grassy citrus; the contrast works best with milder smoke carrying hay or cream."
+      "hr": "Most je citrus i lagani hrast; biraj blagu Connecticut ili natural cigaru (npr. Hemingway/Avo stil) da ne pregaziš rum.",
+      "en": "The bridge is citrus and light oak; pick a mild Connecticut or natural cigar (Hemingway/Avo style) so the rum is not buried."
     },
     "priceUrl": null,
     "notes": {
-      "hr": "Martinique agricole stil ovdje je travnat, suh i citrusan, s vegetalnom linijom ispred melase. U čaši očekuj lakše tijelo, svježiji rub i profil koji najviše govori kad se pije čisto ili kao Ti Punch.",
-      "en": "The Martinique agricole style here is grassy, dry and citrus-led, with a vegetal line ahead of molasses. In the glass expect lighter body, a fresher edge and a profile that speaks most clearly neat or as Ti Punch."
+      "hr": "Clément VSOP s Habitation Clément (Martinique AOC) odležava najmanje 4 godine: mješavina novih i bourbon bačava daje mokku, kakao, kandiranu naranču i vaniliju uz travnatu agricole bazu. U čaši je suh, srednje lagan i jasan kad se pije čisto.",
+      "en": "Clément VSOP from Habitation Clément (Martinique AOC) ages at least four years: new and bourbon casks bring mocha, cocoa, candied orange and vanilla over a grassy agricole base. In the glass it is dry, light-medium and clearest neat."
     }
   },
   {
-    "id": "rum-doorly-s-12-14-foursquare",
+    "id": "rum-neisson-agricole",
     "category": "rum",
-    "name": "Doorly's 12 / 14 (Foursquare)",
+    "name": "Neisson (agricole)",
+    "style": "agricole",
+    "region": "Agricole (Martinique)",
+    "body": 2,
+    "sweetness": 1,
+    "flavorTags": [
+      "travnato",
+      "vegetalno",
+      "zacini"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Bez aditiva (AOC)",
+      "en": "No additives (AOC)"
+    },
+    "additiveSource": "AOC zakon (zabranjeni aditivi)",
+    "qualityScore": 8.5,
+    "priceEUR": {
+      "min": 41.34,
+      "max": 41.34
+    },
+    "shopHR": "allez.hr",
+    "status": "META",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 3,
+      "rocks": 1,
+      "highball": 1,
+      "cola": 0,
+      "best": "Čisto / Ti' Punch"
+    },
+    "cigarHint": {
+      "hr": "Vegetalni most traži blagi do srednji dim sa sijeno/biljnim notama, ne teški maduro.",
+      "en": "The vegetal bridge wants mild-to-medium smoke with hay/herbal notes, not a heavy maduro."
+    },
+    "priceUrl": null,
+    "notes": {
+      "hr": "Neisson je obiteljska destilerija u Carbetu, poznata po izrazito vegetalnom, začinskom agricole profilu i čistoj AOC liniji. U čaši očekuj više zelenog soka trske i papra nego slatke melase; VSOP/Élevé sous bois stilovi ostaju suhiji od hispanskih rumova.",
+      "en": "Neisson is a family distillery in Carbet, known for a distinctly vegetal, spicy agricole profile and a clean AOC line. In the glass expect more green cane juice and pepper than sweet molasses; VSOP/élevé styles stay drier than Hispanic rums."
+    }
+  },
+  {
+    "id": "rum-doorly-s-12-foursquare",
+    "category": "rum",
+    "name": "Doorly's 12 (Foursquare)",
     "style": "barbados",
     "region": "Barbados",
     "body": 3,
@@ -668,6 +846,51 @@
     "qualityScore": 8.5,
     "priceEUR": {
       "min": 62,
+      "max": 70
+    },
+    "shopHR": "allez.hr",
+    "status": "META",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 3,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Cisto / kap vode"
+    },
+    "cigarHint": {
+      "hr": "Most je vanilija u suhom hrastu; cedrasti ili orašasti dim dobro sjeda.",
+      "en": "The bridge is vanilla in dry oak; cedar or nutty smoke sits well."
+    },
+    "priceUrl": "https://allez.hr/shop/svi-proizvodi/doorlys-12-yo-fine-old-barbados-rum-43-vol-07l-u-poklon-kutiji",
+    "notes": {
+      "hr": "Doorly's 12 iz Foursquarea (Barbados) je suh, čist single-blended stil: hrast, suho voće i vanilija bez doziranog šećera. U čaši srednje tijelo i uredan završetak uz kap vode.",
+      "en": "Doorly's 12 from Foursquare (Barbados) is a dry, clean single-blended style: oak, dried fruit and vanilla with no dosed sugar. Medium body and a tidy finish with a drop of water."
+    }
+  },
+  {
+    "id": "rum-doorly-s-14-foursquare",
+    "category": "rum",
+    "name": "Doorly's 14 (Foursquare)",
+    "style": "barbados",
+    "region": "Barbados",
+    "body": 3,
+    "sweetness": 1,
+    "flavorTags": [
+      "suho-voce",
+      "hrast",
+      "orasasti"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Cist",
+      "en": "Clean"
+    },
+    "additiveSource": "Dekl. (Foursquare)",
+    "qualityScore": 8.5,
+    "priceEUR": {
+      "min": 80,
       "max": 93
     },
     "shopHR": "allez.hr",
@@ -682,13 +905,13 @@
       "best": "Cisto / kap vode"
     },
     "cigarHint": {
-      "hr": "Most prema cigari je vanilija u suhom hrastu; kontrast prima cedrasti, orašasti ili kremasti dim.",
-      "en": "The bridge to a cigar is vanilla in dry oak; the contrast welcomes cedar, nutty or creamy smoke."
+      "hr": "14-ica podnosi malo puniji dim (srednji Habano) uz isti suhi most.",
+      "en": "The 14 tolerates a slightly fuller smoke (medium Habano) on the same dry bridge."
     },
-    "priceUrl": "https://allez.hr/shop/svi-proizvodi/doorlys-12-yo-fine-old-barbados-rum-43-vol-07l-u-poklon-kutiji",
+    "priceUrl": null,
     "notes": {
-      "hr": "Doorly’s 12 i 14 nose Barbados stil iz Foursquare kuće, suh, hrastov i jasno voćan. U čaši očekuj srednje tijelo, vaniliju u pozadini i završetak koji ostaje uredan uz kap vode.",
-      "en": "Doorly’s 12 and 14 carry Barbados style from the Foursquare house, dry, oaky and clearly fruited. In the glass expect medium body, background vanilla and a finish that stays tidy with a drop of water."
+      "hr": "Doorly's 14 ide korak dalje u zrelosti: više orašastog hrasta i suhog voća, i dalje bez aditiva. Malo bogatiji od 12-ice, i dalje jasan Barbados profil.",
+      "en": "Doorly's 14 steps further in maturity: more nutty oak and dried fruit, still additive-free. A touch richer than the 12, still a clear Barbados profile."
     }
   },
   {
@@ -824,9 +1047,9 @@
     }
   },
   {
-    "id": "rum-havana-club-seleccion-maestros-union",
+    "id": "rum-havana-club-seleccion-maestros",
     "category": "rum",
-    "name": "Havana Club Seleccion Maestros / Union",
+    "name": "Havana Club Seleccion Maestros",
     "style": "cuba",
     "region": "Kuba",
     "body": 3,
@@ -859,27 +1082,72 @@
       "best": "Cisto / kap vode"
     },
     "cigarHint": {
-      "hr": "Most prema cigari je suhi duhan; kontrast najbolje drže cedar, krema ili lagani papar u dimu.",
-      "en": "The bridge to a cigar is dry tobacco; cedar, cream or light pepper in the smoke hold the contrast best."
+      "hr": "Uz Havana Club Seleccion Maestros biraj cigaru prema tijelu 3/5 i zajedničkim notama (zacini, duhan).",
+      "en": "With Havana Club Seleccion Maestros pick a cigar for body 3/5 and shared notes (zacini, duhan)."
     },
     "priceUrl": null,
     "notes": {
-      "hr": "Seleccion Maestros i Union predstavljaju kubanski profil s više začina, duhana i suhog drva. U čaši očekuj srednje tijelo, mekši ulaz i završetak koji se oslanja na začin prije slatkoće.",
-      "en": "Seleccion Maestros and Union represent a Cuban profile with more spice, tobacco and dry wood. In the glass expect medium body, a softer entry and a finish leaning on spice before sweetness."
+      "hr": "Havana Club Seleccion Maestros: Prva boca iz kombiniranog unosa — vlastiti profil. Profil ostaje u stilu cuba (Kuba). Seleccion Maestros i Union predstavljaju kubanski profil s više začina, duhana i suhog drva. U čaši očekuj srednje tijelo, mekši ulaz i završetak koji se oslanja na začin prije sla",
+      "en": "Havana Club Seleccion Maestros: First bottle from the combined entry — its own profile. Profile stays in the cuba style (Kuba). Seleccion Maestros and Union represent a Cuban profile with more spice, tobacco and dry wood. In the glass expect medium body, a softer entry and a finish leaning on spice before s"
     }
   },
   {
-    "id": "rum-mount-gay-xo-1703",
+    "id": "rum-union",
     "category": "rum",
-    "name": "Mount Gay XO / 1703",
-    "style": "barbados",
-    "region": "Barbados",
+    "name": "Union",
+    "style": "cuba",
+    "region": "Kuba",
     "body": 3,
     "sweetness": 1,
     "flavorTags": [
+      "zacini",
+      "duhan",
+      "citrus"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Cist",
+      "en": "Clean"
+    },
+    "additiveSource": "Proizvodjac dekl.",
+    "qualityScore": 8.5,
+    "priceEUR": {
+      "min": 61.69,
+      "max": 61.69
+    },
+    "shopHR": "Vrutak",
+    "status": "META",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 3,
+      "rocks": 2,
+      "highball": 1,
+      "cola": 0,
+      "best": "Cisto / kap vode"
+    },
+    "cigarHint": {
+      "hr": "Uz Union biraj cigaru prema tijelu 3/5 i zajedničkim notama (zacini, duhan).",
+      "en": "With Union pick a cigar for body 3/5 and shared notes (zacini, duhan)."
+    },
+    "priceUrl": null,
+    "notes": {
+      "hr": "Union: Druga boca iz kombiniranog unosa — vlastiti profil. Profil ostaje u stilu cuba (Kuba). Seleccion Maestros i Union predstavljaju kubanski profil s više začina, duhana i suhog drva. U čaši očekuj srednje tijelo, mekši ulaz i završetak koji se oslanja na začin prije sla",
+      "en": "Union: Second bottle from the combined entry — its own profile. Profile stays in the cuba style (Kuba). Seleccion Maestros and Union represent a Cuban profile with more spice, tobacco and dry wood. In the glass expect medium body, a softer entry and a finish leaning on spice before s"
+    }
+  },
+  {
+    "id": "rum-mount-gay-xo",
+    "category": "rum",
+    "name": "Mount Gay XO",
+    "style": "barbados",
+    "region": "Barbados",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
       "suho-voce",
-      "hrast",
-      "vanilija"
+      "vanilija",
+      "hrast"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -904,19 +1172,64 @@
       "best": "Cisto / kap vode"
     },
     "cigarHint": {
-      "hr": "Most prema cigari je vanilija preko hrasta; kontrast radi s tostom, orasima ili blagom zemljom.",
-      "en": "The bridge to a cigar is vanilla over oak; the contrast works with toast, nuts or gentle earth."
+      "hr": "Srednji Habano ili blagi maduro.",
+      "en": "Medium Habano or mild maduro."
     },
     "priceUrl": "https://allez.hr/shop/svi-proizvodi/mount-gay-1703-xo-triple-cask-blend-43-vol-07-l-u-poklon-kutiji",
     "notes": {
-      "hr": "Mount Gay XO i 1703 nose suhi Barbados karakter s hrastom, vanilijom i suhim voćem. U čaši očekuj srednje tijelo, glatku teksturu i završetak koji ostaje odmjeren uz ili bez kapi vode.",
-      "en": "Mount Gay XO and 1703 carry dry Barbados character with oak, vanilla and dried fruit. In the glass expect medium body, smooth texture and a finish that stays measured with or without a drop of water."
+      "hr": "Mount Gay XO (Barbados) miješa starije destilate: suho voće, vanilija i hrast u srednje punom, pristupačnom profilu. Kućni klasik Mount Gaya.",
+      "en": "Mount Gay XO (Barbados) blends older distillates: dried fruit, vanilla and oak in a medium-full, approachable profile. Mount Gay's house classic."
     }
   },
   {
-    "id": "rum-rhum-j-m-vsop-xo-agricole",
+    "id": "rum-mount-gay-1703",
     "category": "rum",
-    "name": "Rhum J.M VSOP / XO (agricole)",
+    "name": "Mount Gay 1703",
+    "style": "barbados",
+    "region": "Barbados",
+    "body": 4,
+    "sweetness": 2,
+    "flavorTags": [
+      "suho-voce",
+      "hrast",
+      "orasasti"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Cist",
+      "en": "Clean"
+    },
+    "additiveSource": "Alko lab (nizak/0)",
+    "qualityScore": 8.5,
+    "priceEUR": {
+      "min": 59.5,
+      "max": 59.5
+    },
+    "shopHR": "allez.hr",
+    "status": "META",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 0,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto"
+    },
+    "cigarHint": {
+      "hr": "Puniji maduro ili Habano s kakao notom.",
+      "en": "A fuller maduro or Habano with cocoa notes."
+    },
+    "priceUrl": "https://allez.hr/shop/svi-proizvodi/mount-gay-1703-xo-triple-cask-blend-43-vol-07-l-u-poklon-kutiji",
+    "notes": {
+      "hr": "Mount Gay 1703 Master Select bira starije bačve: orašastiji, dublji i skuplji od XO-a, s duljim završetkom. Sipper za posebne večeri.",
+      "en": "Mount Gay 1703 Master Select picks older casks: nuttier, deeper and dearer than XO, with a longer finish. A sipper for special evenings."
+    }
+  },
+  {
+    "id": "rum-rhum-j-m-vsop-agricole",
+    "category": "rum",
+    "name": "Rhum J.M VSOP (agricole)",
     "style": "agricole",
     "region": "Agricole (Martinique)",
     "body": 2,
@@ -946,27 +1259,75 @@
       "rocks": 1,
       "highball": 2,
       "cola": 0,
-      "best": "Cisto / Ti' Punch"
+      "best": "Čisto / Ti' Punch"
     },
-    "cigarHint": null,
+    "cigarHint": {
+      "hr": "Uz VSOP biraj laganu natural/Connecticut cigaru — travnati citrus treba prostor.",
+      "en": "With VSOP choose a light natural/Connecticut cigar — grassy citrus needs room."
+    },
     "priceUrl": null,
     "notes": {
-      "hr": "Vrhunski agricole, vegetalni/začinski",
-      "en": "Top agricole, vegetal and spicy"
+      "hr": "J.M VSOP (Habitation Bellevue, Macouba) tipično nosi 4+ godine u hrastu: svježa trska, citrusna kora i blagi začin, još uvijek laganog tijela. Klasik za Ti' Punch ili čistu čašu.",
+      "en": "J.M VSOP (Habitation Bellevue, Macouba) typically carries 4+ years in oak: fresh cane, citrus peel and light spice, still light-bodied. A classic for Ti' Punch or a neat pour."
     }
   },
   {
-    "id": "rum-saint-james-xo-12-agricole",
+    "id": "rum-rhum-j-m-xo-agricole",
     "category": "rum",
-    "name": "Saint James XO / 12 (agricole)",
+    "name": "Rhum J.M XO (agricole)",
     "style": "agricole",
     "region": "Agricole (Martinique)",
-    "body": 2,
+    "body": 3,
     "sweetness": 1,
     "flavorTags": [
       "travnato",
-      "vegetalno",
-      "citrus"
+      "hrast",
+      "suho-voce"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Bez aditiva (AOC)",
+      "en": "No additives (AOC)"
+    },
+    "additiveSource": "AOC zakon",
+    "qualityScore": 8.5,
+    "priceEUR": {
+      "min": 50.5,
+      "max": 70.48
+    },
+    "shopHR": "allez.hr",
+    "status": "META",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 0,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto"
+    },
+    "cigarHint": {
+      "hr": "XO podnosi srednji Habano ili blagi maduro s cedrom — još ne traži najpunije cigare.",
+      "en": "XO handles a medium Habano or mild maduro with cedar — it still does not want the fullest cigars."
+    },
+    "priceUrl": null,
+    "notes": {
+      "hr": "J.M XO dulje odležava (često 6+ godina): hrast, suho voće i začin nadograđuju agricole bazu, tijelo je punije od VSOP-a. Pije se čisto; highball bi razvodnio kompleksnost.",
+      "en": "J.M XO ages longer (often 6+ years): oak, dried fruit and spice build on the agricole base, with more body than VSOP. Drink neat; a highball would wash out the complexity."
+    }
+  },
+  {
+    "id": "rum-saint-james-12-agricole",
+    "category": "rum",
+    "name": "Saint James 12 (agricole)",
+    "style": "agricole",
+    "region": "Agricole (Martinique)",
+    "body": 3,
+    "sweetness": 1,
+    "flavorTags": [
+      "travnato",
+      "hrast",
+      "zacini"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -984,17 +1345,65 @@
     "pairable": true,
     "serving": {
       "neat": 3,
-      "water": 3,
+      "water": 2,
       "rocks": 1,
-      "highball": 2,
+      "highball": 1,
       "cola": 0,
-      "best": "Cisto / Ti' Punch"
+      "best": "Čisto"
     },
-    "cigarHint": null,
+    "cigarHint": {
+      "hr": "Srednja cigara s cedrom ili paprom.",
+      "en": "A medium cigar with cedar or pepper."
+    },
     "priceUrl": "https://allez.hr/shop/svi-proizvodi/saint-james-xo-rhum-vieux-agricole-43-vol-07l-u-poklon-kutiji",
     "notes": {
-      "hr": "Martinique agricole, kompleksan",
-      "en": "Martinique agricole, complex"
+      "hr": "Saint James 12 Year (Martinique) spaja agricole travnatost s dubljim hrastom i začinom nakon dvanaest godina. Srednje tijelo, suši završetak.",
+      "en": "Saint James 12 Year (Martinique) joins agricole grassiness with deeper oak and spice after twelve years. Medium body, dry finish."
+    }
+  },
+  {
+    "id": "rum-saint-james-xo-agricole",
+    "category": "rum",
+    "name": "Saint James XO (agricole)",
+    "style": "agricole",
+    "region": "Agricole (Martinique)",
+    "body": 3,
+    "sweetness": 1,
+    "flavorTags": [
+      "travnato",
+      "hrast",
+      "suho-voce"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Bez aditiva (AOC)",
+      "en": "No additives (AOC)"
+    },
+    "additiveSource": "AOC zakon",
+    "qualityScore": 8.5,
+    "priceEUR": {
+      "min": 50.17,
+      "max": 73.86
+    },
+    "shopHR": "allez.hr",
+    "status": "META",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 0,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto"
+    },
+    "cigarHint": {
+      "hr": "Srednje puni Habano; izbjegavaj najblaži Connecticut.",
+      "en": "Medium-full Habano; avoid the mildest Connecticut."
+    },
+    "priceUrl": "https://allez.hr/shop/svi-proizvodi/saint-james-xo-rhum-vieux-agricole-43-vol-07l-u-poklon-kutiji",
+    "notes": {
+      "hr": "Saint James XO je hors d'âge ekspresija: bogatiji hrast i suho voće od mlađih linija, i dalje prepoznatljivo agricole. Čisti gutljaj.",
+      "en": "Saint James XO is a hors d'âge expression: richer oak and dried fruit than younger lines, still recognisably agricole. A neat pour."
     }
   },
   {
@@ -1037,9 +1446,9 @@
     }
   },
   {
-    "id": "rum-worthy-park-109-single-estate-reserve",
+    "id": "rum-worthy-park-109",
     "category": "rum",
-    "name": "Worthy Park 109 / Single Estate Reserve",
+    "name": "Worthy Park 109",
     "style": "jamaica",
     "region": "Jamajka",
     "body": 5,
@@ -1073,13 +1482,59 @@
       "best": "Kap vode (otvara estere)"
     },
     "cigarHint": {
-      "hr": "Most prema cigari je tamni esterski voćni ton; kontrast traži kakao, kožu ili zemljani dim.",
-      "en": "The bridge to a cigar is dark ester fruit; the contrast asks for cocoa, leather or earthy smoke."
+      "hr": "Uz Worthy Park 109 biraj cigaru prema tijelu 5/5 i zajedničkim notama (ester-funk, tropsko-voce).",
+      "en": "With Worthy Park 109 pick a cigar for body 5/5 and shared notes (ester-funk, tropsko-voce)."
     },
     "priceUrl": "https://allez.hr/shop/svi-proizvodi/rum-exchange-jamaica-worthy-park-5-yo-pure-single-rum-002-2013-59-vol-07l",
     "notes": {
-      "hr": "Worthy Park 109 i Single Estate Reserve nose jamajčanski stil s esterima, tamnim voćem i overproof energijom. U čaši očekuj vrlo puno tijelo, suh rub i vodu koja otvara aromu bez mijenjanja smjera.",
-      "en": "Worthy Park 109 and Single Estate Reserve carry Jamaican style with esters, dark fruit and overproof energy. In the glass expect very full body, a dry edge and water that opens aroma without changing direction."
+      "hr": "Worthy Park 109: Prva boca iz kombiniranog unosa — vlastiti profil. Profil ostaje u stilu jamaica (Jamajka). Worthy Park 109 i Single Estate Reserve nose jamajčanski stil s esterima, tamnim voćem i overproof energijom. U čaši očekuj vrlo puno tijelo, suh rub i vodu koja otvara aromu bez m",
+      "en": "Worthy Park 109: First bottle from the combined entry — its own profile. Profile stays in the jamaica style (Jamajka). Worthy Park 109 and Single Estate Reserve carry Jamaican style with esters, dark fruit and overproof energy. In the glass expect very full body, a dry edge and water that opens aro"
+    }
+  },
+  {
+    "id": "rum-single-estate-reserve",
+    "category": "rum",
+    "name": "Single Estate Reserve",
+    "style": "jamaica",
+    "region": "Jamajka",
+    "body": 5,
+    "sweetness": 1,
+    "flavorTags": [
+      "ester-funk",
+      "tropsko-voce",
+      "hrast",
+      "overproof"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Cist",
+      "en": "Clean"
+    },
+    "additiveSource": "Pravilo regije",
+    "qualityScore": 8.5,
+    "priceEUR": {
+      "min": 44.98,
+      "max": 67.6
+    },
+    "shopHR": "allez.hr",
+    "status": "META",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 3,
+      "rocks": 1,
+      "highball": 1,
+      "cola": 0,
+      "best": "Kap vode (otvara estere)"
+    },
+    "cigarHint": {
+      "hr": "Uz Single Estate Reserve biraj cigaru prema tijelu 5/5 i zajedničkim notama (ester-funk, tropsko-voce).",
+      "en": "With Single Estate Reserve pick a cigar for body 5/5 and shared notes (ester-funk, tropsko-voce)."
+    },
+    "priceUrl": "https://allez.hr/shop/svi-proizvodi/rum-exchange-jamaica-worthy-park-5-yo-pure-single-rum-002-2013-59-vol-07l",
+    "notes": {
+      "hr": "Single Estate Reserve: Druga boca iz kombiniranog unosa — vlastiti profil. Profil ostaje u stilu jamaica (Jamajka). Worthy Park 109 i Single Estate Reserve nose jamajčanski stil s esterima, tamnim voćem i overproof energijom. U čaši očekuj vrlo puno tijelo, suh rub i vodu koja otvara aromu bez m",
+      "en": "Single Estate Reserve: Second bottle from the combined entry — its own profile. Profile stays in the jamaica style (Jamajka). Worthy Park 109 and Single Estate Reserve carry Jamaican style with esters, dark fruit and overproof energy. In the glass expect very full body, a dry edge and water that opens aro"
     }
   },
   {
@@ -1417,17 +1872,17 @@
     }
   },
   {
-    "id": "rum-hse-xo-vsop-agricole",
+    "id": "rum-hse-vsop-agricole",
     "category": "rum",
-    "name": "HSE XO / VSOP (agricole)",
+    "name": "HSE VSOP (agricole)",
     "style": "agricole",
     "region": "Agricole (Martinique)",
     "body": 2,
     "sweetness": 1,
     "flavorTags": [
       "travnato",
-      "vegetalno",
-      "citrus"
+      "citrus",
+      "vanilija"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -1449,13 +1904,61 @@
       "rocks": 1,
       "highball": 2,
       "cola": 0,
-      "best": "Cisto / Ti' Punch"
+      "best": "Čisto / Ti' Punch"
     },
-    "cigarHint": null,
+    "cigarHint": {
+      "hr": "Connecticut ili blagi Cameroon — ne guši travnati citrus.",
+      "en": "Connecticut or mild Cameroon — do not smother the grassy citrus."
+    },
     "priceUrl": "https://allez.hr/shop/svi-proizvodi/hse-tres-vieux-rhum-agricole-vsop-45-vol-07l-u-poklon-kutiji",
     "notes": {
-      "hr": "Agricole, sherry/port finishevi",
-      "en": "Agricole with sherry and port finishes"
+      "hr": "Habitation Saint-Étienne VSOP je martinique agricole s citrusom, vanilijom i svježom trskom nakon nekoliko godina u hrastu. Lagani do srednje lagani sipper.",
+      "en": "Habitation Saint-Étienne VSOP is Martinique agricole with citrus, vanilla and fresh cane after several years in oak. A light to light-medium sipper."
+    }
+  },
+  {
+    "id": "rum-hse-xo-agricole",
+    "category": "rum",
+    "name": "HSE XO (agricole)",
+    "style": "agricole",
+    "region": "Agricole (Martinique)",
+    "body": 3,
+    "sweetness": 1,
+    "flavorTags": [
+      "travnato",
+      "hrast",
+      "suho-voce"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Bez aditiva (AOC)",
+      "en": "No additives (AOC)"
+    },
+    "additiveSource": "AOC zakon",
+    "qualityScore": 8,
+    "priceEUR": {
+      "min": 63.5,
+      "max": 91
+    },
+    "shopHR": "allez.hr",
+    "status": "META",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 0,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto"
+    },
+    "cigarHint": {
+      "hr": "Srednji Habano ili blagi maduro s cedrom.",
+      "en": "Medium Habano or mild maduro with cedar."
+    },
+    "priceUrl": "https://allez.hr/shop/svi-proizvodi/hse-tres-vieux-rhum-agricole-vsop-45-vol-07l-u-poklon-kutiji",
+    "notes": {
+      "hr": "HSE XO dulje odležava: više hrasta, suhog voća i začina uz agricole kičmu. Puniji od VSOP-a; namijenjen čistom servisu.",
+      "en": "HSE XO ages longer: more oak, dried fruit and spice on an agricole spine. Fuller than VSOP; meant for neat service."
     }
   },
   {
@@ -1584,9 +2087,9 @@
     }
   },
   {
-    "id": "rum-la-hechicera-se-no-1-no-2",
+    "id": "rum-la-hechicera-se-no-1",
     "category": "rum",
-    "name": "La Hechicera SE No.1 / No.2",
+    "name": "La Hechicera SE No.1",
     "style": "colombia",
     "region": "Kolumbija",
     "body": 3,
@@ -1617,11 +2120,59 @@
       "cola": 0,
       "best": "Cisto / kap vode"
     },
-    "cigarHint": null,
+    "cigarHint": {
+      "hr": "Uz La Hechicera SE No.1 biraj cigaru prema tijelu 3/5 i zajedničkim notama (suho-voce, vanilija).",
+      "en": "With La Hechicera SE No.1 pick a cigar for body 3/5 and shared notes (suho-voce, vanilija)."
+    },
     "priceUrl": null,
     "notes": {
-      "hr": "Serie Experimental",
-      "en": "The Serie Experimental"
+      "hr": "La Hechicera SE No.1: Mlađa ili lakša ekspresija u paru. Profil ostaje u stilu colombia (Kolumbija). Serie Experimental",
+      "en": "La Hechicera SE No.1: The younger or lighter expression in the pair. Profile stays in the colombia style (Kolumbija). The Serie Experimental"
+    }
+  },
+  {
+    "id": "rum-no-2",
+    "category": "rum",
+    "name": "No.2",
+    "style": "colombia",
+    "region": "Kolumbija",
+    "body": 4,
+    "sweetness": 2,
+    "flavorTags": [
+      "suho-voce",
+      "vanilija",
+      "hrast"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "~Bez dodatka",
+      "en": "~No additions"
+    },
+    "additiveSource": "Proizvodjac dekl.",
+    "qualityScore": 8,
+    "priceEUR": {
+      "min": 62.38,
+      "max": 62.38
+    },
+    "shopHR": "Vrutak",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 2,
+      "highball": 0,
+      "cola": 0,
+      "best": "Cisto / kap vode"
+    },
+    "cigarHint": {
+      "hr": "Uz No.2 biraj cigaru prema tijelu 4/5 i zajedničkim notama (suho-voce, vanilija).",
+      "en": "With No.2 pick a cigar for body 4/5 and shared notes (suho-voce, vanilija)."
+    },
+    "priceUrl": null,
+    "notes": {
+      "hr": "No.2: Starija/punija ekspresija: više hrasta i težine. Profil ostaje u stilu colombia (Kolumbija). Serie Experimental",
+      "en": "No.2: The older/fuller expression: more oak and weight. Profile stays in the colombia style (Kolumbija). The Serie Experimental"
     }
   },
   {
@@ -1667,9 +2218,9 @@
     }
   },
   {
-    "id": "rum-banks-5-7-blend",
+    "id": "rum-banks-5",
     "category": "rum",
-    "name": "Banks 5 / 7 (blend)",
+    "name": "Banks 5 (blend)",
     "style": "blend",
     "region": "Blend (vise regija)",
     "body": 3,
@@ -1700,11 +2251,58 @@
       "cola": 0,
       "best": "Cisto / kap vode"
     },
-    "cigarHint": null,
+    "cigarHint": {
+      "hr": "Uz Banks 5 biraj cigaru prema tijelu 3/5 i zajedničkim notama (suho-voce, hrast).",
+      "en": "With Banks 5 pick a cigar for body 3/5 and shared notes (suho-voce, hrast)."
+    },
     "priceUrl": null,
     "notes": {
-      "hr": "Viseregijski blend, suh-ish",
-      "en": "A multi-region blend, on the dry side"
+      "hr": "Banks 5 (blend): Mlađa ili lakša ekspresija u paru. Profil ostaje u stilu blend (Blend (vise regija)). Viseregijski blend, suh-ish",
+      "en": "Banks 5 (blend): The younger or lighter expression in the pair. Profile stays in the blend style (Blend (vise regija)). A multi-region blend, on the dry side"
+    }
+  },
+  {
+    "id": "rum-7",
+    "category": "rum",
+    "name": "7 (blend)",
+    "style": "blend",
+    "region": "Blend (vise regija)",
+    "body": 4,
+    "sweetness": 2,
+    "flavorTags": [
+      "suho-voce",
+      "hrast"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Cist-ish",
+      "en": "Essentially clean"
+    },
+    "additiveSource": "Procjena",
+    "qualityScore": 7.5,
+    "priceEUR": {
+      "min": 44.2,
+      "max": 49.99
+    },
+    "shopHR": "allez.hr",
+    "status": "META",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 3,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Cisto / kap vode"
+    },
+    "cigarHint": {
+      "hr": "Uz 7 biraj cigaru prema tijelu 4/5 i zajedničkim notama (suho-voce, hrast).",
+      "en": "With 7 pick a cigar for body 4/5 and shared notes (suho-voce, hrast)."
+    },
+    "priceUrl": null,
+    "notes": {
+      "hr": "7 (blend): Starija/punija ekspresija: više hrasta i težine. Profil ostaje u stilu blend (Blend (vise regija)). Viseregijski blend, suh-ish",
+      "en": "7 (blend): The older/fuller expression: more oak and weight. Profile stays in the blend style (Blend (vise regija)). A multi-region blend, on the dry side"
     }
   },
   {
@@ -2118,9 +2716,9 @@
     }
   },
   {
-    "id": "rum-smith-cross-plantation-oftd",
+    "id": "rum-smith-cross",
     "category": "rum",
-    "name": "Smith & Cross / Plantation OFTD",
+    "name": "Smith & Cross",
     "style": "jamaica",
     "region": "Jamajka",
     "body": 5,
@@ -2153,11 +2751,60 @@
       "cola": 1,
       "best": "Kap vode ILI highball"
     },
-    "cigarHint": null,
+    "cigarHint": {
+      "hr": "Uz Smith & Cross biraj cigaru prema tijelu 5/5 i zajedničkim notama (ester-funk, tropsko-voce).",
+      "en": "With Smith & Cross pick a cigar for body 5/5 and shared notes (ester-funk, tropsko-voce)."
+    },
     "priceUrl": "https://allez.hr/shop/svi-proizvodi/smith-cross-traditional-jamaica-rum-57-vol-07l",
     "notes": {
-      "hr": "Overproof, snaga+ester, kap vode",
-      "en": "Overproof — power and esters; add a drop of water"
+      "hr": "Smith & Cross: Prva boca iz kombiniranog unosa — vlastiti profil. Profil ostaje u stilu jamaica (Jamajka). Overproof, snaga+ester, kap vode",
+      "en": "Smith & Cross: First bottle from the combined entry — its own profile. Profile stays in the jamaica style (Jamajka). Overproof — power and esters; add a drop of water"
+    }
+  },
+  {
+    "id": "rum-plantation-oftd",
+    "category": "rum",
+    "name": "Plantation OFTD",
+    "style": "jamaica",
+    "region": "Jamajka",
+    "body": 5,
+    "sweetness": 1,
+    "flavorTags": [
+      "ester-funk",
+      "tropsko-voce",
+      "hrast",
+      "overproof"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Cist",
+      "en": "Clean"
+    },
+    "additiveSource": "Pravilo regije (Jamajka)",
+    "qualityScore": 7.5,
+    "priceEUR": {
+      "min": 34,
+      "max": 34
+    },
+    "shopHR": "allez.hr (S&C)",
+    "status": "META",
+    "pairable": true,
+    "serving": {
+      "neat": 2,
+      "water": 3,
+      "rocks": 2,
+      "highball": 3,
+      "cola": 1,
+      "best": "Kap vode ILI highball"
+    },
+    "cigarHint": {
+      "hr": "Uz Plantation OFTD biraj cigaru prema tijelu 5/5 i zajedničkim notama (ester-funk, tropsko-voce).",
+      "en": "With Plantation OFTD pick a cigar for body 5/5 and shared notes (ester-funk, tropsko-voce)."
+    },
+    "priceUrl": "https://allez.hr/shop/svi-proizvodi/smith-cross-traditional-jamaica-rum-57-vol-07l",
+    "notes": {
+      "hr": "Plantation OFTD: Druga boca iz kombiniranog unosa — vlastiti profil. Profil ostaje u stilu jamaica (Jamajka). Overproof, snaga+ester, kap vode",
+      "en": "Plantation OFTD: Second bottle from the combined entry — its own profile. Profile stays in the jamaica style (Jamajka). Overproof — power and esters; add a drop of water"
     }
   },
   {
@@ -2329,9 +2976,9 @@
     }
   },
   {
-    "id": "rum-angostura-1919-1787",
+    "id": "rum-angostura-1919",
     "category": "rum",
-    "name": "Angostura 1919 / 1787",
+    "name": "Angostura 1919",
     "style": "trinidad",
     "region": "Trinidad",
     "body": 3,
@@ -2362,11 +3009,58 @@
       "cola": 0,
       "best": "Cisto / kap vode"
     },
-    "cigarHint": null,
+    "cigarHint": {
+      "hr": "Uz Angostura 1919 biraj cigaru prema tijelu 3/5 i zajedničkim notama (karamela, hrast).",
+      "en": "With Angostura 1919 pick a cigar for body 3/5 and shared notes (karamela, hrast)."
+    },
     "priceUrl": null,
     "notes": {
-      "hr": "1919 suh-ish, dobra vrijednost",
-      "en": "The 1919, dry-leaning, good value"
+      "hr": "Angostura 1919: Prva boca iz kombiniranog unosa — vlastiti profil. Profil ostaje u stilu trinidad (Trinidad). 1919 suh-ish, dobra vrijednost",
+      "en": "Angostura 1919: First bottle from the combined entry — its own profile. Profile stays in the trinidad style (Trinidad). The 1919, dry-leaning, good value"
+    }
+  },
+  {
+    "id": "rum-1787",
+    "category": "rum",
+    "name": "1787",
+    "style": "trinidad",
+    "region": "Trinidad",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "karamela",
+      "hrast"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Nizak (reformuliran)",
+      "en": "Low (reformulated)"
+    },
+    "additiveSource": "Alko: nizak",
+    "qualityScore": 7,
+    "priceEUR": {
+      "min": 34,
+      "max": 34
+    },
+    "shopHR": "ecuga.com",
+    "status": "META",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 3,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Cisto / kap vode"
+    },
+    "cigarHint": {
+      "hr": "Uz 1787 biraj cigaru prema tijelu 3/5 i zajedničkim notama (karamela, hrast).",
+      "en": "With 1787 pick a cigar for body 3/5 and shared notes (karamela, hrast)."
+    },
+    "priceUrl": null,
+    "notes": {
+      "hr": "1787: Druga boca iz kombiniranog unosa — vlastiti profil. Profil ostaje u stilu trinidad (Trinidad). 1919 suh-ish, dobra vrijednost",
+      "en": "1787: Second bottle from the combined entry — its own profile. Profile stays in the trinidad style (Trinidad). The 1919, dry-leaning, good value"
     }
   },
   {
@@ -2909,9 +3603,9 @@
     }
   },
   {
-    "id": "rum-ron-matusalem-15-23-solera",
+    "id": "rum-ron-matusalem-15",
     "category": "rum",
-    "name": "Ron Matusalem 15 / 23 (solera)",
+    "name": "Ron Matusalem 15 (solera)",
     "style": "solera",
     "region": "Gvatemala (solera)",
     "body": 3,
@@ -2943,11 +3637,59 @@
       "cola": 0,
       "best": "Velika kocka leda ili kap vode"
     },
-    "cigarHint": null,
+    "cigarHint": {
+      "hr": "Uz Ron Matusalem 15 biraj cigaru prema tijelu 3/5 i zajedničkim notama (karamela, vanilija).",
+      "en": "With Ron Matusalem 15 pick a cigar for body 3/5 and shared notes (karamela, vanilija)."
+    },
     "priceUrl": null,
     "notes": {
-      "hr": "Stariji Matusalem, gladak",
-      "en": "An older Matusalem, smooth"
+      "hr": "Ron Matusalem 15 (solera): Mlađa ili lakša ekspresija u paru. Profil ostaje u stilu solera (Gvatemala (solera)). Stariji Matusalem, gladak",
+      "en": "Ron Matusalem 15 (solera): The younger or lighter expression in the pair. Profile stays in the solera style (Gvatemala (solera)). An older Matusalem, smooth"
+    }
+  },
+  {
+    "id": "rum-23",
+    "category": "rum",
+    "name": "23 (solera)",
+    "style": "solera",
+    "region": "Gvatemala (solera)",
+    "body": 4,
+    "sweetness": 4,
+    "flavorTags": [
+      "karamela",
+      "vanilija",
+      "hrast"
+    ],
+    "additiveStatus": "sweetened",
+    "additiveDetail": {
+      "hr": "Blago slazen",
+      "en": "Lightly sweetened"
+    },
+    "additiveSource": "Systembolaget: slazen",
+    "qualityScore": 7,
+    "priceEUR": {
+      "min": 45.95,
+      "max": 68.5
+    },
+    "shopHR": "allez.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 2,
+      "water": 3,
+      "rocks": 3,
+      "highball": 0,
+      "cola": 0,
+      "best": "Velika kocka leda ili kap vode"
+    },
+    "cigarHint": {
+      "hr": "Uz 23 biraj cigaru prema tijelu 4/5 i zajedničkim notama (karamela, vanilija).",
+      "en": "With 23 pick a cigar for body 4/5 and shared notes (karamela, vanilija)."
+    },
+    "priceUrl": null,
+    "notes": {
+      "hr": "23 (solera): Starija/punija ekspresija: više hrasta i težine. Profil ostaje u stilu solera (Gvatemala (solera)). Stariji Matusalem, gladak",
+      "en": "23 (solera): The older/fuller expression: more oak and weight. Profile stays in the solera style (Gvatemala (solera)). An older Matusalem, smooth"
     }
   },
   {
@@ -3076,9 +3818,9 @@
     }
   },
   {
-    "id": "rum-bacardi-8-10-gran-reserva",
+    "id": "rum-bacardi-8",
     "category": "rum",
-    "name": "Bacardi 8 / 10 Gran Reserva",
+    "name": "Bacardi 8",
     "style": "puerto-rico",
     "region": "Puerto Rico",
     "body": 3,
@@ -3109,11 +3851,58 @@
       "cola": 3,
       "best": "Koktel / cola"
     },
-    "cigarHint": null,
+    "cigarHint": {
+      "hr": "Uz Bacardi 8 biraj cigaru prema tijelu 3/5 i zajedničkim notama (hrast, vanilija).",
+      "en": "With Bacardi 8 pick a cigar for body 3/5 and shared notes (hrast, vanilija)."
+    },
     "priceUrl": null,
     "notes": {
-      "hr": "Stariji Bacardi, suh-ish, pristojan",
-      "en": "An older Bacardí, dry-leaning and decent"
+      "hr": "Bacardi 8: Mlađa ili lakša ekspresija u paru. Profil ostaje u stilu puerto-rico (Puerto Rico). Stariji Bacardi, suh-ish, pristojan",
+      "en": "Bacardi 8: The younger or lighter expression in the pair. Profile stays in the puerto-rico style (Puerto Rico). An older Bacardí, dry-leaning and decent"
+    }
+  },
+  {
+    "id": "rum-10-gran-reserva",
+    "category": "rum",
+    "name": "10 Gran Reserva",
+    "style": "puerto-rico",
+    "region": "Puerto Rico",
+    "body": 4,
+    "sweetness": 1,
+    "flavorTags": [
+      "hrast",
+      "vanilija"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Cist-ish",
+      "en": "Essentially clean"
+    },
+    "additiveSource": "Dekl.",
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 31,
+      "max": 39.95
+    },
+    "shopHR": "ecuga.com",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 0,
+      "water": 0,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 3,
+      "best": "Koktel / cola"
+    },
+    "cigarHint": {
+      "hr": "Uz 10 Gran Reserva biraj cigaru prema tijelu 4/5 i zajedničkim notama (hrast, vanilija).",
+      "en": "With 10 Gran Reserva pick a cigar for body 4/5 and shared notes (hrast, vanilija)."
+    },
+    "priceUrl": null,
+    "notes": {
+      "hr": "10 Gran Reserva: Starija/punija ekspresija: više hrasta i težine. Profil ostaje u stilu puerto-rico (Puerto Rico). Stariji Bacardi, suh-ish, pristojan",
+      "en": "10 Gran Reserva: The older/fuller expression: more oak and weight. Profile stays in the puerto-rico style (Puerto Rico). An older Bacardí, dry-leaning and decent"
     }
   },
   {
@@ -3281,9 +4070,9 @@
     }
   },
   {
-    "id": "rum-cristobal-nina-pinta-dr",
+    "id": "rum-cristobal-nina",
     "category": "rum",
-    "name": "Cristobal Nina / Pinta (DR)",
+    "name": "Cristobal Nina (DR)",
     "style": "dominican",
     "region": "Dominikanska Republika",
     "body": 3,
@@ -3314,11 +4103,58 @@
       "cola": 0,
       "best": "On the rocks (velika kocka)"
     },
-    "cigarHint": null,
+    "cigarHint": {
+      "hr": "Uz Cristobal Nina biraj cigaru prema tijelu 3/5 i zajedničkim notama (karamela, vanilija).",
+      "en": "With Cristobal Nina pick a cigar for body 3/5 and shared notes (karamela, vanilija)."
+    },
     "priceUrl": null,
     "notes": {
-      "hr": "Solera 8-12, pristojan",
-      "en": "A solera of 8–12 years, decent"
+      "hr": "Cristobal Nina (DR): Prva boca iz kombiniranog unosa — vlastiti profil. Profil ostaje u stilu dominican (Dominikanska Republika). Solera 8-12, pristojan",
+      "en": "Cristobal Nina (DR): First bottle from the combined entry — its own profile. Profile stays in the dominican style (Dominikanska Republika). A solera of 8–12 years, decent"
+    }
+  },
+  {
+    "id": "rum-pinta",
+    "category": "rum",
+    "name": "Pinta (DR)",
+    "style": "dominican",
+    "region": "Dominikanska Republika",
+    "body": 3,
+    "sweetness": 3,
+    "flavorTags": [
+      "karamela",
+      "vanilija"
+    ],
+    "additiveStatus": "light",
+    "additiveDetail": {
+      "hr": "Blagi dodatak (spirit drink)",
+      "en": "Light addition (spirit drink)"
+    },
+    "additiveSource": "Procjena",
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 38.25,
+      "max": 38.25
+    },
+    "shopHR": "ecuga.com",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 2,
+      "water": 2,
+      "rocks": 3,
+      "highball": 1,
+      "cola": 0,
+      "best": "On the rocks (velika kocka)"
+    },
+    "cigarHint": {
+      "hr": "Uz Pinta biraj cigaru prema tijelu 3/5 i zajedničkim notama (karamela, vanilija).",
+      "en": "With Pinta pick a cigar for body 3/5 and shared notes (karamela, vanilija)."
+    },
+    "priceUrl": null,
+    "notes": {
+      "hr": "Pinta (DR): Druga boca iz kombiniranog unosa — vlastiti profil. Profil ostaje u stilu dominican (Dominikanska Republika). Solera 8-12, pristojan",
+      "en": "Pinta (DR): Second bottle from the combined entry — its own profile. Profile stays in the dominican style (Dominikanska Republika). A solera of 8–12 years, decent"
     }
   },
   {
@@ -4634,9 +5470,9 @@
     }
   },
   {
-    "id": "rum-ron-centenario-25-30",
+    "id": "rum-ron-centenario-25",
     "category": "rum",
-    "name": "Ron Centenario 25 / 30",
+    "name": "Ron Centenario 25",
     "style": "other",
     "region": "Kostarika",
     "body": 3,
@@ -4666,11 +5502,58 @@
       "cola": 0,
       "best": "Velika kocka leda ili kap vode"
     },
-    "cigarHint": null,
+    "cigarHint": {
+      "hr": "Uz Ron Centenario 25 biraj cigaru prema tijelu 3/5 i zajedničkim notama (karamela).",
+      "en": "With Ron Centenario 25 pick a cigar for body 3/5 and shared notes (karamela)."
+    },
     "priceUrl": null,
     "notes": {
-      "hr": "Starije solere istog mekanog profila.",
-      "en": "The older soleras with the same soft profile."
+      "hr": "Ron Centenario 25: Mlađa ili lakša ekspresija u paru. Profil ostaje u stilu other (Kostarika). Starije solere istog mekanog profila.",
+      "en": "Ron Centenario 25: The younger or lighter expression in the pair. Profile stays in the other style (Kostarika). The older soleras with the same soft profile."
+    }
+  },
+  {
+    "id": "rum-30",
+    "category": "rum",
+    "name": "30",
+    "style": "other",
+    "region": "Kostarika",
+    "body": 4,
+    "sweetness": 4,
+    "flavorTags": [
+      "karamela",
+      "hrast"
+    ],
+    "additiveStatus": "sweetened",
+    "additiveDetail": {
+      "hr": "Doslazen",
+      "en": "Sweetened"
+    },
+    "additiveSource": "Sugar list: doslazen",
+    "qualityScore": 5.5,
+    "priceEUR": {
+      "min": 60,
+      "max": 100
+    },
+    "shopHR": "Vrutak",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 2,
+      "water": 3,
+      "rocks": 3,
+      "highball": 0,
+      "cola": 0,
+      "best": "Velika kocka leda ili kap vode"
+    },
+    "cigarHint": {
+      "hr": "Uz 30 biraj cigaru prema tijelu 4/5 i zajedničkim notama (karamela).",
+      "en": "With 30 pick a cigar for body 4/5 and shared notes (karamela)."
+    },
+    "priceUrl": null,
+    "notes": {
+      "hr": "30: Starija/punija ekspresija: više hrasta i težine. Profil ostaje u stilu other (Kostarika). Starije solere istog mekanog profila.",
+      "en": "30: The older/fuller expression: more oak and weight. Profile stays in the other style (Kostarika). The older soleras with the same soft profile."
     }
   },
   {
@@ -4716,9 +5599,9 @@
     }
   },
   {
-    "id": "rum-ron-centenario-5-7",
+    "id": "rum-ron-centenario-5",
     "category": "rum",
-    "name": "Ron Centenario 5 / 7",
+    "name": "Ron Centenario 5",
     "style": "other",
     "region": "Kostarika",
     "body": 3,
@@ -4748,11 +5631,14 @@
       "cola": 0,
       "best": "Velika kocka leda ili kap vode"
     },
-    "cigarHint": null,
+    "cigarHint": {
+      "hr": "Uz Ron Centenario 5 biraj cigaru prema tijelu 3/5 i zajedničkim notama (karamela).",
+      "en": "With Ron Centenario 5 pick a cigar for body 3/5 and shared notes (karamela)."
+    },
     "priceUrl": null,
     "notes": {
-      "hr": "Kostarikanski ulazni rumovi — mekani, za miješanje.",
-      "en": "Costa Rican entry rums — soft, for mixing."
+      "hr": "Ron Centenario 5: Mlađa ili lakša ekspresija u paru. Profil ostaje u stilu other (Kostarika). Kostarikanski ulazni rumovi — mekani, za miješanje.",
+      "en": "Ron Centenario 5: The younger or lighter expression in the pair. Profile stays in the other style (Kostarika). Costa Rican entry rums — soft, for mixing."
     }
   },
   {
@@ -4796,9 +5682,9 @@
     }
   },
   {
-    "id": "rum-a-h-riise-xo-family-reserve",
+    "id": "rum-a-h-riise-xo",
     "category": "rum",
-    "name": "A.H. Riise XO / Family Reserve",
+    "name": "A.H. Riise XO",
     "style": "other",
     "region": "Danska (spirit drink)",
     "body": 3,
@@ -4828,11 +5714,57 @@
       "cola": 0,
       "best": "Velika kocka leda ili kap vode"
     },
-    "cigarHint": null,
+    "cigarHint": {
+      "hr": "Uz A.H. Riise XO biraj cigaru prema tijelu 3/5 i zajedničkim notama (karamela).",
+      "en": "With A.H. Riise XO pick a cigar for body 3/5 and shared notes (karamela)."
+    },
     "priceUrl": "https://allez.hr/shop/svi-proizvodi/ah-riise-1888-copenhagen-xo-superior-spirit-drink-40-vol-07l-u-poklon-kutiji",
     "notes": {
-      "hr": "Slađen spirit drink (EU oznaka zbog šećera); mekan desertni profil karamele — publika ga voli, kritika manje.",
-      "en": "Sweetened spirit drink (EU label due to sugar); soft caramel dessert profile — loved by the public, less by critics."
+      "hr": "A.H. Riise XO: Prva boca iz kombiniranog unosa — vlastiti profil. Profil ostaje u stilu other (Danska (spirit drink)). Slađen spirit drink (EU oznaka zbog šećera); mekan desertni profil karamele — publika ga voli, kritika manje.",
+      "en": "A.H. Riise XO: First bottle from the combined entry — its own profile. Profile stays in the other style (Danska (spirit drink)). Sweetened spirit drink (EU label due to sugar); soft caramel dessert profile — loved by the public, less by critics."
+    }
+  },
+  {
+    "id": "rum-family-reserve",
+    "category": "rum",
+    "name": "Family Reserve",
+    "style": "other",
+    "region": "Danska (spirit drink)",
+    "body": 3,
+    "sweetness": 4,
+    "flavorTags": [
+      "karamela"
+    ],
+    "additiveStatus": "sweetened",
+    "additiveDetail": {
+      "hr": "Dodani secer (hidrometrija)",
+      "en": "Added sugar (hydrometer)"
+    },
+    "additiveSource": "Hydrometer: slazen",
+    "qualityScore": 5.5,
+    "priceEUR": {
+      "min": 57,
+      "max": 94
+    },
+    "shopHR": "allez.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 2,
+      "water": 3,
+      "rocks": 3,
+      "highball": 1,
+      "cola": 0,
+      "best": "Velika kocka leda ili kap vode"
+    },
+    "cigarHint": {
+      "hr": "Uz Family Reserve biraj cigaru prema tijelu 3/5 i zajedničkim notama (karamela).",
+      "en": "With Family Reserve pick a cigar for body 3/5 and shared notes (karamela)."
+    },
+    "priceUrl": "https://allez.hr/shop/svi-proizvodi/ah-riise-1888-copenhagen-xo-superior-spirit-drink-40-vol-07l-u-poklon-kutiji",
+    "notes": {
+      "hr": "Family Reserve: Druga boca iz kombiniranog unosa — vlastiti profil. Profil ostaje u stilu other (Danska (spirit drink)). Slađen spirit drink (EU oznaka zbog šećera); mekan desertni profil karamele — publika ga voli, kritika manje.",
+      "en": "Family Reserve: Second bottle from the combined entry — its own profile. Profile stays in the other style (Danska (spirit drink)). Sweetened spirit drink (EU label due to sugar); soft caramel dessert profile — loved by the public, less by critics."
     }
   },
   {
@@ -4877,9 +5809,9 @@
     }
   },
   {
-    "id": "rum-capitan-bucanero-anejo-reserva",
+    "id": "rum-capitan-bucanero-anejo",
     "category": "rum",
-    "name": "Capitan Bucanero Anejo / Reserva",
+    "name": "Capitan Bucanero Anejo",
     "style": "dominican",
     "region": "Dominikanska Republika",
     "body": 3,
@@ -4910,11 +5842,59 @@
       "cola": 2,
       "best": "On the rocks"
     },
-    "cigarHint": null,
+    "cigarHint": {
+      "hr": "Uz Capitan Bucanero Anejo biraj cigaru prema tijelu 3/5 i zajedničkim notama (karamela, vanilija).",
+      "en": "With Capitan Bucanero Anejo pick a cigar for body 3/5 and shared notes (karamela, vanilija)."
+    },
     "priceUrl": null,
     "notes": {
-      "hr": "Slatki, pristupačni profil vanilije i karamele u nižem cjenovnom razredu.",
-      "en": "Sweet, approachable vanilla-caramel profile in the budget range."
+      "hr": "Capitan Bucanero Anejo: Mlađa ili lakša ekspresija u paru. Profil ostaje u stilu dominican (Dominikanska Republika). Slatki, pristupačni profil vanilije i karamele u nižem cjenovnom razredu.",
+      "en": "Capitan Bucanero Anejo: The younger or lighter expression in the pair. Profile stays in the dominican style (Dominikanska Republika). Sweet, approachable vanilla-caramel profile in the budget range."
+    }
+  },
+  {
+    "id": "rum-reserva",
+    "category": "rum",
+    "name": "Reserva",
+    "style": "dominican",
+    "region": "Dominikanska Republika",
+    "body": 4,
+    "sweetness": 4,
+    "flavorTags": [
+      "karamela",
+      "vanilija",
+      "hrast"
+    ],
+    "additiveStatus": "flavored",
+    "additiveDetail": {
+      "hr": "Doslazen/aromatiziran (procjena)",
+      "en": "Sweetened/flavoured (estimate)"
+    },
+    "additiveSource": "Procjena (nije lab/hydro)",
+    "qualityScore": 4,
+    "priceEUR": {
+      "min": 11.99,
+      "max": 14.49
+    },
+    "shopHR": "Vrutak",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 1,
+      "water": 1,
+      "rocks": 3,
+      "highball": 0,
+      "cola": 2,
+      "best": "On the rocks"
+    },
+    "cigarHint": {
+      "hr": "Uz Reserva biraj cigaru prema tijelu 4/5 i zajedničkim notama (karamela, vanilija).",
+      "en": "With Reserva pick a cigar for body 4/5 and shared notes (karamela, vanilija)."
+    },
+    "priceUrl": null,
+    "notes": {
+      "hr": "Reserva: Starija/punija ekspresija: više hrasta i težine. Profil ostaje u stilu dominican (Dominikanska Republika). Slatki, pristupačni profil vanilije i karamele u nižem cjenovnom razredu.",
+      "en": "Reserva: The older/fuller expression: more oak and weight. Profile stays in the dominican style (Dominikanska Republika). Sweet, approachable vanilla-caramel profile in the budget range."
     }
   },
   {
@@ -5045,9 +6025,9 @@
     }
   },
   {
-    "id": "rum-legendario-elixir-anejo-9-kuba",
+    "id": "rum-legendario-elixir",
     "category": "rum",
-    "name": "Legendario Elixir / Anejo 9 (Kuba)",
+    "name": "Legendario Elixir (Kuba)",
     "style": "spiced",
     "region": "Kuba (elixir / liker)",
     "body": 2,
@@ -5078,11 +6058,58 @@
       "cola": 3,
       "best": "Koktel / highball"
     },
-    "cigarHint": null,
+    "cigarHint": {
+      "hr": "Uz Legendario Elixir biraj cigaru prema tijelu 2/5 i zajedničkim notama (vanilija, zacini).",
+      "en": "With Legendario Elixir pick a cigar for body 2/5 and shared notes (vanilija, zacini)."
+    },
     "priceUrl": null,
     "notes": {
-      "hr": "Kubanski 'elixir' — kategorija s dodanim šećerom i suhim grožđem (deklarirano). Vrlo sladak, popularan desertni stil.",
-      "en": "Cuban 'elixir' — a category with added sugar and raisins (declared). Very sweet, popular dessert style."
+      "hr": "Legendario Elixir (Kuba): Prva boca iz kombiniranog unosa — vlastiti profil. Profil ostaje u stilu spiced (Kuba (elixir / liker)). Kubanski 'elixir' — kategorija s dodanim šećerom i suhim grožđem (deklarirano). Vrlo sladak, popularan desertni stil.",
+      "en": "Legendario Elixir (Kuba): First bottle from the combined entry — its own profile. Profile stays in the spiced style (Kuba (elixir / liker)). Cuban 'elixir' — a category with added sugar and raisins (declared). Very sweet, popular dessert style."
+    }
+  },
+  {
+    "id": "rum-anejo-9",
+    "category": "rum",
+    "name": "Anejo 9 (Kuba)",
+    "style": "spiced",
+    "region": "Kuba (elixir / liker)",
+    "body": 2,
+    "sweetness": 5,
+    "flavorTags": [
+      "vanilija",
+      "zacini"
+    ],
+    "additiveStatus": "flavored",
+    "additiveDetail": {
+      "hr": "Dodani secer i suho grozdje (elixir kategorija)",
+      "en": "Added sugar and raisins (elixir category)"
+    },
+    "additiveSource": "Deklaracija proizvodjaca",
+    "qualityScore": 6,
+    "priceEUR": {
+      "min": 19.55,
+      "max": 27
+    },
+    "shopHR": "ecuga.com",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 1,
+      "water": 0,
+      "rocks": 2,
+      "highball": 3,
+      "cola": 3,
+      "best": "Koktel / highball"
+    },
+    "cigarHint": {
+      "hr": "Uz Anejo 9 biraj cigaru prema tijelu 2/5 i zajedničkim notama (vanilija, zacini).",
+      "en": "With Anejo 9 pick a cigar for body 2/5 and shared notes (vanilija, zacini)."
+    },
+    "priceUrl": null,
+    "notes": {
+      "hr": "Anejo 9 (Kuba): Druga boca iz kombiniranog unosa — vlastiti profil. Profil ostaje u stilu spiced (Kuba (elixir / liker)). Kubanski 'elixir' — kategorija s dodanim šećerom i suhim grožđem (deklarirano). Vrlo sladak, popularan desertni stil.",
+      "en": "Anejo 9 (Kuba): Second bottle from the combined entry — its own profile. Profile stays in the spiced style (Kuba (elixir / liker)). Cuban 'elixir' — a category with added sugar and raisins (declared). Very sweet, popular dessert style."
     }
   },
   {
@@ -5488,9 +6515,9 @@
     }
   },
   {
-    "id": "rum-barcelo-dorado-blanco",
+    "id": "rum-barcelo-dorado",
     "category": "rum",
-    "name": "Barcelo Dorado / Blanco",
+    "name": "Barcelo Dorado",
     "style": "dominican",
     "region": "Dominikanska Republika",
     "body": 3,
@@ -5521,11 +6548,58 @@
       "cola": 3,
       "best": "Koktel / cola"
     },
-    "cigarHint": null,
+    "cigarHint": {
+      "hr": "Uz Barcelo Dorado biraj cigaru prema tijelu 3/5 i zajedničkim notama (karamela, vanilija).",
+      "en": "With Barcelo Dorado pick a cigar for body 3/5 and shared notes (karamela, vanilija)."
+    },
     "priceUrl": null,
     "notes": {
-      "hr": "Pristupačni dominikanski rum; zlatna varijanta ima blagu karamelu.",
-      "en": "Approachable Dominican rum; the gold variant shows light caramel."
+      "hr": "Barcelo Dorado: Prva boca iz kombiniranog unosa — vlastiti profil. Profil ostaje u stilu dominican (Dominikanska Republika). Pristupačni dominikanski rum; zlatna varijanta ima blagu karamelu.",
+      "en": "Barcelo Dorado: First bottle from the combined entry — its own profile. Profile stays in the dominican style (Dominikanska Republika). Approachable Dominican rum; the gold variant shows light caramel."
+    }
+  },
+  {
+    "id": "rum-blanco",
+    "category": "rum",
+    "name": "Blanco",
+    "style": "dominican",
+    "region": "Dominikanska Republika",
+    "body": 3,
+    "sweetness": 3,
+    "flavorTags": [
+      "karamela",
+      "vanilija"
+    ],
+    "additiveStatus": "unknown",
+    "additiveDetail": {
+      "hr": "Bez podataka o dodacima (nije mjereno)",
+      "en": "No additive data (not measured)"
+    },
+    "additiveSource": "Procjena (nije lab/hydro)",
+    "qualityScore": 4,
+    "priceEUR": {
+      "min": 22.99,
+      "max": 22.99
+    },
+    "shopHR": "Roto",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 0,
+      "water": 0,
+      "rocks": 1,
+      "highball": 3,
+      "cola": 3,
+      "best": "Koktel / cola"
+    },
+    "cigarHint": {
+      "hr": "Uz Blanco biraj cigaru prema tijelu 3/5 i zajedničkim notama (karamela, vanilija).",
+      "en": "With Blanco pick a cigar for body 3/5 and shared notes (karamela, vanilija)."
+    },
+    "priceUrl": null,
+    "notes": {
+      "hr": "Blanco: Druga boca iz kombiniranog unosa — vlastiti profil. Profil ostaje u stilu dominican (Dominikanska Republika). Pristupačni dominikanski rum; zlatna varijanta ima blagu karamelu.",
+      "en": "Blanco: Second bottle from the combined entry — its own profile. Profile stays in the dominican style (Dominikanska Republika). Approachable Dominican rum; the gold variant shows light caramel."
     }
   },
   {
@@ -6372,9 +7446,9 @@
     }
   },
   {
-    "id": "rum-sagatiba-cachaca",
+    "id": "rum-sagatiba-pura",
     "category": "rum",
-    "name": "Sagatiba Pura / Velha (cachaça)",
+    "name": "Sagatiba Pura (cachaça)",
     "style": "cachaca",
     "region": "Brazil",
     "body": 2,
@@ -6407,13 +7481,63 @@
       "best": "Caipirinha"
     },
     "cigarHint": {
-      "hr": "Pura je čista i neutralna — okvir za koktel; uz cigaru je najbolje kao Caipirinha uz blaži dim.",
-      "en": "The Pura is clean and neutral — a cocktail frame; with a cigar it works best as a Caipirinha beside milder smoke."
+      "hr": "Uz Sagatiba Pura biraj cigaru prema tijelu 2/5 i zajedničkim notama (travnato, vegetalno).",
+      "en": "With Sagatiba Pura pick a cigar for body 2/5 and shared notes (travnato, vegetalno)."
     },
     "priceUrl": null,
     "notes": {
-      "hr": "Sagatiba iz São Paula dolazi u dvije glavne verzije: Pura je nedozrela, ugljenom filtrirana i vrlo čista — premium okvir za Caipirinhu — dok je Velha dozrela ~2 godine u hrastu i mekša za sipanje. Moderni, precizni stil cachaçe.",
-      "en": "Sagatiba from São Paulo comes in two main expressions: Pura is unaged, charcoal-filtered and very clean — a premium Caipirinha base — while Velha is aged about 2 years in oak and softer to sip. A modern, precise style of cachaça."
+      "hr": "Sagatiba Pura (cachaça): Mlađa ili lakša ekspresija u paru. Profil ostaje u stilu cachaca (Brazil). Sagatiba iz São Paula dolazi u dvije glavne verzije: Pura je nedozrela, ugljenom filtrirana i vrlo čista — premium okvir za Caipirinhu — dok je Velha dozrela ~2 godine u hrastu i m",
+      "en": "Sagatiba Pura (cachaça): The younger or lighter expression in the pair. Profile stays in the cachaca style (Brazil). Sagatiba from São Paulo comes in two main expressions: Pura is unaged, charcoal-filtered and very clean — a premium Caipirinha base — while Velha is aged about 2 years in oak and s"
+    },
+    "lineup": [
+      "Pura",
+      "Velha"
+    ]
+  },
+  {
+    "id": "rum-velha",
+    "category": "rum",
+    "name": "Velha (cachaça)",
+    "style": "cachaca",
+    "region": "Brazil",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "travnato",
+      "vegetalno",
+      "citrus",
+      "hrast"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Bez dodane slatkoće",
+      "en": "No added sugar"
+    },
+    "additiveSource": "Braz. zakon (cachaça ≤6 g/L šećera)",
+    "qualityScore": 7.0,
+    "priceEUR": {
+      "min": 20,
+      "max": 40
+    },
+    "shopHR": "import",
+    "status": "META",
+    "pairable": true,
+    "serving": {
+      "neat": 2,
+      "water": 2,
+      "rocks": 2,
+      "highball": 0,
+      "cola": 1,
+      "best": "Caipirinha"
+    },
+    "cigarHint": {
+      "hr": "Uz Velha biraj cigaru prema tijelu 3/5 i zajedničkim notama (travnato, vegetalno).",
+      "en": "With Velha pick a cigar for body 3/5 and shared notes (travnato, vegetalno)."
+    },
+    "priceUrl": null,
+    "notes": {
+      "hr": "Velha (cachaça): Starija/punija ekspresija: više hrasta i težine. Profil ostaje u stilu cachaca (Brazil). Sagatiba iz São Paula dolazi u dvije glavne verzije: Pura je nedozrela, ugljenom filtrirana i vrlo čista — premium okvir za Caipirinhu — dok je Velha dozrela ~2 godine u hrastu i m",
+      "en": "Velha (cachaça): The older/fuller expression: more oak and weight. Profile stays in the cachaca style (Brazil). Sagatiba from São Paulo comes in two main expressions: Pura is unaged, charcoal-filtered and very clean — a premium Caipirinha base — while Velha is aged about 2 years in oak and s"
     },
     "lineup": [
       "Pura",
@@ -6466,9 +7590,9 @@
     }
   },
   {
-    "id": "rum-cachaca-51-pitu",
+    "id": "rum-cacha-a-51",
     "category": "rum",
-    "name": "Cachaça 51 / Pitú (cachaça)",
+    "name": "Cachaça 51 (cachaça)",
     "style": "cachaca",
     "region": "Brazil",
     "body": 2,
@@ -6501,13 +7625,58 @@
       "best": "Caipirinha"
     },
     "cigarHint": {
-      "hr": "Radni konj za Caipirinhu, ne za sipanje; posluži uz jednostavan, blaži dim.",
-      "en": "A Caipirinha workhorse, not for sipping; serve alongside simple, milder smoke."
+      "hr": "Uz Cachaça 51 biraj cigaru prema tijelu 2/5 i zajedničkim notama (travnato, slatko).",
+      "en": "With Cachaça 51 pick a cigar for body 2/5 and shared notes (travnato, slatko)."
     },
     "priceUrl": null,
     "notes": {
-      "hr": "Cachaça 51 i Pitú su masovne industrijske cachaçe — kolonski destilirane, nedozrele ili tek nakratko odmarane, i daleko najprodavaniji temelj za Caipirinhu u Brazilu. Nisu za čisto sipanje: tu su radi mješavine, cijene i dostupnosti. Ako želiš cachaçu za sipanje, gledaj zanatske marke iznad.",
-      "en": "Cachaça 51 and Pitú are mass-market industrial cachaças — column-distilled, unaged or only briefly rested, and by far the biggest-selling Caipirinha base in Brazil. They are not for neat sipping: they exist for the mix, the price and the availability. For a sipping cachaça, look to the craft brands above."
+      "hr": "Cachaça 51 (cachaça): Prva boca iz kombiniranog unosa — vlastiti profil. Profil ostaje u stilu cachaca (Brazil). Cachaça 51 i Pitú su masovne industrijske cachaçe — kolonski destilirane, nedozrele ili tek nakratko odmarane, i daleko najprodavaniji temelj za Caipirinhu u Brazilu. Nisu za čisto",
+      "en": "Cachaça 51 (cachaça): First bottle from the combined entry — its own profile. Profile stays in the cachaca style (Brazil). Cachaça 51 and Pitú are mass-market industrial cachaças — column-distilled, unaged or only briefly rested, and by far the biggest-selling Caipirinha base in Brazil. They are not fo"
+    }
+  },
+  {
+    "id": "rum-pit",
+    "category": "rum",
+    "name": "Pitú (cachaça)",
+    "style": "cachaca",
+    "region": "Brazil",
+    "body": 2,
+    "sweetness": 3,
+    "flavorTags": [
+      "travnato",
+      "slatko",
+      "vegetalno"
+    ],
+    "additiveStatus": "unknown",
+    "additiveDetail": {
+      "hr": "Nepoznato (industrijska)",
+      "en": "Unknown (industrial)"
+    },
+    "additiveSource": "Bez službene deklaracije",
+    "qualityScore": 4.5,
+    "priceEUR": {
+      "min": 10,
+      "max": 16
+    },
+    "shopHR": "import",
+    "status": "META",
+    "pairable": true,
+    "serving": {
+      "neat": 0,
+      "water": 1,
+      "rocks": 1,
+      "highball": 3,
+      "cola": 2,
+      "best": "Caipirinha"
+    },
+    "cigarHint": {
+      "hr": "Uz Pitú biraj cigaru prema tijelu 2/5 i zajedničkim notama (travnato, slatko).",
+      "en": "With Pitú pick a cigar for body 2/5 and shared notes (travnato, slatko)."
+    },
+    "priceUrl": null,
+    "notes": {
+      "hr": "Pitú (cachaça): Druga boca iz kombiniranog unosa — vlastiti profil. Profil ostaje u stilu cachaca (Brazil). Cachaça 51 i Pitú su masovne industrijske cachaçe — kolonski destilirane, nedozrele ili tek nakratko odmarane, i daleko najprodavaniji temelj za Caipirinhu u Brazilu. Nisu za čisto",
+      "en": "Pitú (cachaça): Second bottle from the combined entry — its own profile. Profile stays in the cachaca style (Brazil). Cachaça 51 and Pitú are mass-market industrial cachaças — column-distilled, unaged or only briefly rested, and by far the biggest-selling Caipirinha base in Brazil. They are not fo"
     }
   }
 ]

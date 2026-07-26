@@ -28,6 +28,7 @@ import { CustomPairing } from "./CustomPairing";
 
 type Mode = "cigarToDrink" | "drinkToCigar" | "custom";
 type Occasion = "any" | "morning" | "afternoon" | "evening";
+type DrinkTypeFilter = "any" | DrinkCategory;
 
 // prilika filtrira pica po punoci: jutro uz kavu i lagana-do-srednja pica
 // (ne samo najlaganja — inace srednja cigara ostaje bez pravog ruma), vecer uz bogate
@@ -37,6 +38,17 @@ const OCCASION_KEEP: Record<Occasion, (d: Drink) => boolean> = {
   afternoon: (d) => d.category === "coffee" || d.body <= 3,
   evening: (d) => d.category === "coffee" || d.body >= 3,
 };
+
+const DRINK_TYPE_FILTERS: DrinkTypeFilter[] = [
+  "any",
+  "rum",
+  "whisky",
+  "brandy",
+  "wine",
+  "gin",
+  "coffee",
+  "tequila",
+];
 
 // pretraga neosjetljiva na naglaske i velika/mala slova
 const norm = (s: string) =>
@@ -69,6 +81,7 @@ export function PairingPage() {
     return built.entries > 0 ? built : undefined;
   }, [collection.journal]);
   const [query, setQuery] = useState("");
+  const [drinkType, setDrinkType] = useState<DrinkTypeFilter>("any");
   const [selectedCigar, setSelectedCigar] = useState<Cigar | null>(null);
   const [pendingCigar, setPendingCigar] = useState<Cigar | null>(null);
   const [selectedDrink, setSelectedDrink] = useState<Drink | null>(null);
@@ -145,9 +158,10 @@ export function PairingPage() {
     return ALL_DRINKS.filter(
       (d) =>
         d.pairable &&
+        (drinkType === "any" || d.category === drinkType) &&
         (!q || norm(`${drinkNameHaystack(d)} ${d.style} ${d.region}`).includes(q)),
     );
-  }, [mode, query, marketCigars]);
+  }, [mode, query, marketCigars, drinkType]);
 
   // cigara -> po jedan najbolji prijedlog po kategoriji (gin zadnji)
   const drinkSuggestions = useMemo(() => {
@@ -208,6 +222,7 @@ export function PairingPage() {
     setSelectedDrink(null);
     setServe(undefined);
     setQuery("");
+    setDrinkType("any");
     setCycle({});
     navigate({ page: "pairing" }, { replace: true });
   };
@@ -422,6 +437,21 @@ export function PairingPage() {
               onText={setQuery}
             />
           </div>
+          {mode === "drinkToCigar" && (
+            <div className="no-scrollbar mt-2 flex gap-2 overflow-x-auto">
+              {DRINK_TYPE_FILTERS.map((cat) => (
+                <Chip
+                  key={cat}
+                  active={drinkType === cat}
+                  onClick={() => setDrinkType(cat)}
+                >
+                  {cat === "any"
+                    ? t("pair.drinkTypeAll")
+                    : t(`cat.${cat}` as StringKey)}
+                </Chip>
+              ))}
+            </div>
+          )}
           <div className="mt-3 space-y-1.5">
             {pickList.map((item) =>
               mode === "cigarToDrink" ? (

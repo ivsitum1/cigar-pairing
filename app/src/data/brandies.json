@@ -1796,9 +1796,9 @@
     }
   },
   {
-    "id": "br-pierre-ferrand-1840-reserve",
+    "id": "br-pierre-ferrand-1840",
     "category": "brandy",
-    "name": "Pierre Ferrand 1840 / Réserve",
+    "name": "Pierre Ferrand 1840",
     "style": "cognac-vsop",
     "region": "Grande Champagne, Francuska",
     "country": "Francuska",
@@ -1833,11 +1833,62 @@
       "cola": 0,
       "best": "Cisto ili velika kocka leda"
     },
-    "cigarHint": null,
+    "cigarHint": {
+      "hr": "Uz Pierre Ferrand 1840 biraj cigaru prema tijelu 3/5 i zajedničkim notama (voce, vanilija).",
+      "en": "With Pierre Ferrand 1840 pick a cigar for body 3/5 and shared notes (voce, vanilija)."
+    },
     "priceUrl": null,
     "notes": {
-      "hr": "Craft pristup, viši proof — konjak s karakterom.",
-      "en": "Craft approach, higher proof — cognac with character."
+      "hr": "Pierre Ferrand 1840: Prva boca iz kombiniranog unosa — vlastiti profil. Profil ostaje u stilu cognac-vsop (Grande Champagne, Francuska). Craft pristup, viši proof — konjak s karakterom.",
+      "en": "Pierre Ferrand 1840: First bottle from the combined entry — its own profile. Profile stays in the cognac-vsop style (Grande Champagne, Francuska). Craft approach, higher proof — cognac with character."
+    }
+  },
+  {
+    "id": "br-r-serve",
+    "category": "brandy",
+    "name": "Réserve",
+    "style": "cognac-vsop",
+    "region": "Grande Champagne, Francuska",
+    "country": "Francuska",
+    "abv": 40.0,
+    "body": 3,
+    "sweetness": 3,
+    "flavorTags": [
+      "voce",
+      "vanilija",
+      "hrast"
+    ],
+    "additiveStatus": "unknown",
+    "additiveDetail": {
+      "hr": "Nije deklarirano",
+      "en": "Not declared"
+    },
+    "additiveSource": "Excel MASTER",
+    "qualityScore": 8.0,
+    "priceEUR": {
+      "min": 45.0,
+      "max": 45.0
+    },
+    "priceApprox": false,
+    "shopHR": "allez.hr",
+    "status": "META",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 2,
+      "highball": 0,
+      "cola": 0,
+      "best": "Cisto ili velika kocka leda"
+    },
+    "cigarHint": {
+      "hr": "Uz Réserve biraj cigaru prema tijelu 3/5 i zajedničkim notama (voce, vanilija).",
+      "en": "With Réserve pick a cigar for body 3/5 and shared notes (voce, vanilija)."
+    },
+    "priceUrl": null,
+    "notes": {
+      "hr": "Réserve: Druga boca iz kombiniranog unosa — vlastiti profil. Profil ostaje u stilu cognac-vsop (Grande Champagne, Francuska). Craft pristup, viši proof — konjak s karakterom.",
+      "en": "Réserve: Second bottle from the combined entry — its own profile. Profile stays in the cognac-vsop style (Grande Champagne, Francuska). Craft approach, higher proof — cognac with character."
     }
   },
   {
@@ -1933,19 +1984,18 @@
     }
   },
   {
-    "id": "br-martell-vsop-cordon-bleu",
+    "id": "br-martell-vsop",
     "category": "brandy",
-    "name": "Martell VSOP / Cordon Bleu",
+    "name": "Martell VSOP",
     "style": "cognac-vsop",
     "region": "Cognac, Francuska",
     "country": "Francuska",
     "abv": 40.0,
     "body": 3,
-    "sweetness": 3,
+    "sweetness": 2,
     "flavorTags": [
-      "voce",
-      "vanilija",
-      "zacini",
+      "suho-voce",
+      "cvjetno",
       "hrast"
     ],
     "additiveStatus": "clean",
@@ -1971,11 +2021,14 @@
       "cola": 0,
       "best": "Cisto ili velika kocka leda"
     },
-    "cigarHint": null,
+    "cigarHint": {
+      "hr": "Srednja Dominikanska ili Habano cigara.",
+      "en": "A medium Dominican or Habano cigar."
+    },
     "priceUrl": "https://allez.hr/shop/svi-proizvodi/martell-cognac-cordon-bleu",
     "notes": {
-      "hr": "Suhlji, orašastiji stil (bez borderies slatkoće u VSOP-u; Cordon Bleu = klasik za cigare).",
-      "en": "Drier, nuttier style (Cordon Bleu is a cigar classic)."
+      "hr": "Martell VSOP (Borderies utjecaj) nudi voće, cvijet i uredan hrast u srednjem tijelu. Ulazna Martell linija za cognac uz cigaru.",
+      "en": "Martell VSOP (Borderies influence) offers fruit, flower and tidy oak in medium body. An entry Martell line for cognac with a cigar."
     }
   },
   {
@@ -2071,20 +2124,19 @@
     }
   },
   {
-    "id": "br-courvoisier-vsop-xo",
+    "id": "br-courvoisier-vsop",
     "category": "brandy",
-    "name": "Courvoisier VSOP / XO",
-    "style": "cognac-xo",
+    "name": "Courvoisier VSOP",
+    "style": "cognac-vsop",
     "region": "Cognac, Francuska",
     "country": "Francuska",
     "abv": 40.0,
-    "body": 4,
-    "sweetness": 3,
+    "body": 3,
+    "sweetness": 2,
     "flavorTags": [
       "suho-voce",
-      "kakao",
-      "zacini",
-      "koza"
+      "vanilija",
+      "cvjetno"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -2103,17 +2155,20 @@
     "pairable": true,
     "serving": {
       "neat": 3,
-      "water": 3,
+      "water": 1,
       "rocks": 1,
-      "highball": 2,
+      "highball": 0,
       "cola": 0,
-      "best": "Cisto / Ti' Punch"
+      "best": "Čisto"
     },
-    "cigarHint": null,
+    "cigarHint": {
+      "hr": "Srednja cigara, ne najpuniji maduro.",
+      "en": "A medium cigar, not the fullest maduro."
+    },
     "priceUrl": null,
     "notes": {
-      "hr": "Mekan i pristupačan — jasmin i voće.",
-      "en": "Soft and approachable — jasmine and fruit."
+      "hr": "Courvoisier VSOP je cognac s voćnim i cvjetnim notama, vanilijom i umjerenim hrastom. Pristupačniji i lakši od XO linije.",
+      "en": "Courvoisier VSOP is cognac with fruit and floral notes, vanilla and moderate oak. More approachable and lighter than the XO line."
     }
   },
   {
@@ -3767,9 +3822,9 @@
     }
   },
   {
-    "id": "br-torres-15-20-imperial",
+    "id": "br-torres-15",
     "category": "brandy",
-    "name": "Torres 15 / 20 Imperial",
+    "name": "Torres 15",
     "style": "brandy-spanish",
     "region": "Katalonija, ┼ápanjolska",
     "country": "┼ápanjolska",
@@ -3804,11 +3859,62 @@
       "cola": 0,
       "best": "Cisto"
     },
-    "cigarHint": null,
+    "cigarHint": {
+      "hr": "Uz Torres 15 biraj cigaru prema tijelu 3/5 i zajedničkim notama (karamela, suho-voce).",
+      "en": "With Torres 15 pick a cigar for body 3/5 and shared notes (karamela, suho-voce)."
+    },
     "priceUrl": null,
     "notes": {
-      "hr": "Katalonski value — pouzdan, mekan, dostupan.",
-      "en": "Catalan value — reliable, soft, widely available."
+      "hr": "Torres 15: Mlađa ili lakša ekspresija u paru. Profil ostaje u stilu brandy-spanish (Katalonija, ┼ápanjolska). Katalonski value — pouzdan, mekan, dostupan.",
+      "en": "Torres 15: The younger or lighter expression in the pair. Profile stays in the brandy-spanish style (Katalonija, ┼ápanjolska). Catalan value — reliable, soft, widely available."
+    }
+  },
+  {
+    "id": "br-20-imperial",
+    "category": "brandy",
+    "name": "20 Imperial",
+    "style": "brandy-spanish",
+    "region": "Katalonija, ┼ápanjolska",
+    "country": "┼ápanjolska",
+    "abv": 40.0,
+    "body": 4,
+    "sweetness": 3,
+    "flavorTags": [
+      "karamela",
+      "suho-voce",
+      "hrast"
+    ],
+    "additiveStatus": "unknown",
+    "additiveDetail": {
+      "hr": "Nije deklarirano",
+      "en": "Not declared"
+    },
+    "additiveSource": "Excel MASTER",
+    "qualityScore": 7.0,
+    "priceEUR": {
+      "min": 25.0,
+      "max": 25.0
+    },
+    "priceApprox": false,
+    "shopHR": "svugdje",
+    "status": "META",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 2,
+      "highball": 0,
+      "cola": 0,
+      "best": "Cisto"
+    },
+    "cigarHint": {
+      "hr": "Uz 20 Imperial biraj cigaru prema tijelu 4/5 i zajedničkim notama (karamela, suho-voce).",
+      "en": "With 20 Imperial pick a cigar for body 4/5 and shared notes (karamela, suho-voce)."
+    },
+    "priceUrl": null,
+    "notes": {
+      "hr": "20 Imperial: Starija/punija ekspresija: više hrasta i težine. Profil ostaje u stilu brandy-spanish (Katalonija, ┼ápanjolska). Katalonski value — pouzdan, mekan, dostupan.",
+      "en": "20 Imperial: The older/fuller expression: more oak and weight. Profile stays in the brandy-spanish style (Katalonija, ┼ápanjolska). Catalan value — reliable, soft, widely available."
     }
   },
   {
@@ -4037,9 +4143,9 @@
     }
   },
   {
-    "id": "br-fundador-supremo-12-sherry-cask",
+    "id": "br-fundador-supremo-12",
     "category": "brandy",
-    "name": "Fundador Supremo 12 / Sherry Cask",
+    "name": "Fundador Supremo 12",
     "style": "brandy-de-jerez",
     "region": "Jerez, ┼ápanjolska",
     "country": "┼ápanjolska",
@@ -4075,11 +4181,63 @@
       "cola": 0,
       "best": "Cisto (snifter)"
     },
-    "cigarHint": null,
+    "cigarHint": {
+      "hr": "Uz Fundador Supremo 12 biraj cigaru prema tijelu 4/5 i zajedničkim notama (orah, karamela).",
+      "en": "With Fundador Supremo 12 pick a cigar for body 4/5 and shared notes (orah, karamela)."
+    },
     "priceUrl": null,
     "notes": {
-      "hr": "Budget Jerez — sladak, jednostavan, uz opuštenu večer.",
-      "en": "Budget Jerez — sweet, simple, for a relaxed evening."
+      "hr": "Fundador Supremo 12: Prva boca iz kombiniranog unosa — vlastiti profil. Profil ostaje u stilu brandy-de-jerez (Jerez, ┼ápanjolska). Budget Jerez — sladak, jednostavan, uz opuštenu večer.",
+      "en": "Fundador Supremo 12: First bottle from the combined entry — its own profile. Profile stays in the brandy-de-jerez style (Jerez, ┼ápanjolska). Budget Jerez — sweet, simple, for a relaxed evening."
+    }
+  },
+  {
+    "id": "br-sherry-cask",
+    "category": "brandy",
+    "name": "Sherry Cask",
+    "style": "brandy-de-jerez",
+    "region": "Jerez, ┼ápanjolska",
+    "country": "┼ápanjolska",
+    "abv": 40.0,
+    "body": 4,
+    "sweetness": 3,
+    "flavorTags": [
+      "orah",
+      "karamela",
+      "suho-voce",
+      "hrast"
+    ],
+    "additiveStatus": "moderate",
+    "additiveDetail": {
+      "hr": "Doslazen (unutar dopustene obskuracije)",
+      "en": "Sweetened (within permitted obscuration)"
+    },
+    "additiveSource": "Excel MASTER",
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 25.0,
+      "max": 25.0
+    },
+    "priceApprox": false,
+    "shopHR": "svugdje",
+    "status": "META",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Cisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Sherry Cask biraj cigaru prema tijelu 4/5 i zajedničkim notama (orah, karamela).",
+      "en": "With Sherry Cask pick a cigar for body 4/5 and shared notes (orah, karamela)."
+    },
+    "priceUrl": null,
+    "notes": {
+      "hr": "Sherry Cask: Druga boca iz kombiniranog unosa — vlastiti profil. Profil ostaje u stilu brandy-de-jerez (Jerez, ┼ápanjolska). Budget Jerez — sladak, jednostavan, uz opuštenu večer.",
+      "en": "Sherry Cask: Second bottle from the combined entry — its own profile. Profile stays in the brandy-de-jerez style (Jerez, ┼ápanjolska). Budget Jerez — sweet, simple, for a relaxed evening."
     }
   },
   {
@@ -4125,51 +4283,6 @@
     "notes": {
       "hr": "Grčki specifikum (brandy + muškat vino) — medeno, mekano.",
       "en": "The Greek special (brandy + muscat wine) — honeyed, soft."
-    }
-  },
-  {
-    "id": "br-torres-15",
-    "category": "brandy",
-    "name": "Torres 15 Reserva Privada",
-    "style": "brandy-spanish",
-    "region": "Katalonija, Španjolska",
-    "country": "┼ápanjolska",
-    "abv": 40,
-    "body": 3,
-    "sweetness": 3,
-    "flavorTags": [
-      "karamela",
-      "suho-voce",
-      "hrast"
-    ],
-    "additiveStatus": "unknown",
-    "additiveDetail": {
-      "hr": "Nije deklarirano",
-      "en": "Not declared"
-    },
-    "additiveSource": "Excel MASTER",
-    "qualityScore": 6.5,
-    "priceEUR": {
-      "min": 25,
-      "max": 25
-    },
-    "priceApprox": false,
-    "shopHR": "svugdje",
-    "status": "META",
-    "pairable": true,
-    "serving": {
-      "neat": 3,
-      "water": 2,
-      "rocks": 2,
-      "highball": 0,
-      "cola": 0,
-      "best": "Cisto"
-    },
-    "cigarHint": null,
-    "priceUrl": null,
-    "notes": {
-      "hr": "Katalonski brandy solera — mekan, hrastov, izvrstan omjer.",
-      "en": "A Catalan solera brandy — soft, oaky, excellent value."
     }
   },
   {
@@ -4307,9 +4420,9 @@
     }
   },
   {
-    "id": "br-badel-vinjak-xo-prima",
+    "id": "br-badel-vinjak-xo",
     "category": "brandy",
-    "name": "Badel Vinjak XO / Prima",
+    "name": "Badel Vinjak XO",
     "style": "vinjak",
     "region": "Hrvatska",
     "country": "Hrvatska",
@@ -4344,11 +4457,62 @@
       "cola": 0,
       "best": "Cisto (snifter)"
     },
-    "cigarHint": null,
+    "cigarHint": {
+      "hr": "Uz Badel Vinjak XO biraj cigaru prema tijelu 3/5 i zajedničkim notama (grozdje, med).",
+      "en": "With Badel Vinjak XO pick a cigar for body 3/5 and shared notes (grozdje, med)."
+    },
     "priceUrl": null,
     "notes": {
-      "hr": "Domaći vinjak — nostalgija i pristupačnost, uz blagu cigarilu.",
-      "en": "The local vinjak — nostalgia and accessibility, with a mild cigarillo."
+      "hr": "Badel Vinjak XO: Prva boca iz kombiniranog unosa — vlastiti profil. Profil ostaje u stilu vinjak (Hrvatska). Domaći vinjak — nostalgija i pristupačnost, uz blagu cigarilu.",
+      "en": "Badel Vinjak XO: First bottle from the combined entry — its own profile. Profile stays in the vinjak style (Hrvatska). The local vinjak — nostalgia and accessibility, with a mild cigarillo."
+    }
+  },
+  {
+    "id": "br-prima",
+    "category": "brandy",
+    "name": "Prima",
+    "style": "vinjak",
+    "region": "Hrvatska",
+    "country": "Hrvatska",
+    "abv": 40.0,
+    "body": 3,
+    "sweetness": 3,
+    "flavorTags": [
+      "grozdje",
+      "med",
+      "hrast"
+    ],
+    "additiveStatus": "unknown",
+    "additiveDetail": {
+      "hr": "Nije deklarirano",
+      "en": "Not declared"
+    },
+    "additiveSource": "Excel MASTER",
+    "qualityScore": 5.5,
+    "priceEUR": {
+      "min": 15.0,
+      "max": 15.0
+    },
+    "priceApprox": false,
+    "shopHR": "svugdje",
+    "status": "META",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Cisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Prima biraj cigaru prema tijelu 3/5 i zajedničkim notama (grozdje, med).",
+      "en": "With Prima pick a cigar for body 3/5 and shared notes (grozdje, med)."
+    },
+    "priceUrl": null,
+    "notes": {
+      "hr": "Prima: Druga boca iz kombiniranog unosa — vlastiti profil. Profil ostaje u stilu vinjak (Hrvatska). Domaći vinjak — nostalgija i pristupačnost, uz blagu cigarilu.",
+      "en": "Prima: Second bottle from the combined entry — its own profile. Profile stays in the vinjak style (Hrvatska). The local vinjak — nostalgia and accessibility, with a mild cigarillo."
     }
   },
   {

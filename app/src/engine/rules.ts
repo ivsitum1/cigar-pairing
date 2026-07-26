@@ -50,6 +50,13 @@ export const TAG_ALIASES: Record<string, string> = {
   ribiz: "voce",
   gladak: "kremasto",
   viski: "hrast",
+  // grassy / hay notes from cigar scrapes → bridge to agricole drink tags
+  sijeno: "trava-slatka",
+  hay: "trava-slatka",
+  grass: "travnato",
+  grassy: "travnato",
+  herbal: "biljno",
+  vegetal: "vegetalno",
 };
 
 export const normalizeTag = (t: string): string => TAG_ALIASES[t] ?? t;
@@ -62,7 +69,7 @@ export const normalizeTags = (tags: string[]): string[] => [
 export const COMPLEMENTS: Record<string, string[]> = {
   kakao: ["kava", "karamela", "melasa", "tamno-voce", "slatko", "gorko", "kakao"],
   kava: ["kakao", "karamela", "zemljano", "gorko", "kava", "melasa"],
-  kremasto: ["vanilija", "med", "karamela", "kokos", "mlijeko", "kremasto"],
+  kremasto: ["vanilija", "med", "karamela", "kokos", "mlijeko", "kremasto", "citrus", "travnato"],
   zemljano: ["hrast", "koza", "dim", "zemljano", "duhan", "gorko"],
   papar: ["overproof", "zacini", "ester-funk", "dim", "papar"],
   zacini: ["zacini", "suho-voce", "hrast", "vanilija", "zacini-slatki"],
@@ -70,9 +77,12 @@ export const COMPLEMENTS: Record<string, string[]> = {
   cedar: ["hrast", "drvo", "vanilija", "citrus", "cedar"],
   drvo: ["hrast", "drvo", "vanilija"],
   med: ["med", "karamela", "cvjetno", "voce", "caj"],
-  citrus: ["citrus", "travnato", "trava-slatka", "voce", "cvjetno"],
-  "trava-slatka": ["travnato", "vegetalno", "citrus", "caj", "cvjetno"],
-  cvjetno: ["cvjetno", "caj", "citrus", "med", "voce"],
+  citrus: ["citrus", "travnato", "trava-slatka", "voce", "cvjetno", "vegetalno"],
+  "trava-slatka": ["travnato", "vegetalno", "citrus", "caj", "cvjetno", "biljno"],
+  // drink-side agricole tags (used when complement matching is bidirectional)
+  travnato: ["trava-slatka", "biljno", "citrus", "cvjetno", "kremasto", "caj"],
+  vegetalno: ["biljno", "trava-slatka", "citrus", "zemljano", "caj"],
+  cvjetno: ["cvjetno", "caj", "citrus", "med", "voce", "travnato"],
   koza: ["koza", "dim", "tamno-voce", "duhan", "zemljano"],
   duhan: ["duhan", "koza", "zemljano", "kava", "melasa"],
   "tamno-voce": ["suho-voce", "tamno-voce", "melasa", "vino", "kakao"],
@@ -84,7 +94,7 @@ export const COMPLEMENTS: Record<string, string[]> = {
   mineralno: ["mineralno", "citrus", "dim"],
   jabuka: ["jabuka", "voce", "med"],
   agava: ["agava", "citrus", "papar", "biljno", "zemljano", "vanilija"],
-  biljno: ["biljno", "agava", "travnato", "citrus", "vegetalno"],
+  biljno: ["biljno", "agava", "travnato", "citrus", "vegetalno", "trava-slatka", "caj"],
   mlijeko: ["mlijeko", "kremasto", "vanilija", "kakao", "slatko"],
 };
 

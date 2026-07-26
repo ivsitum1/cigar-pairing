@@ -120,6 +120,7 @@ const STRINGS = {
   "pair.why": { hr: "Zašto paše", en: "Why it works" },
   "pair.match": { hr: "match", en: "match" },
   "pair.onlyMine": { hr: "Samo moja kolekcija", en: "My collection only" },
+  "pair.drinkTypeAll": { hr: "Sva pića", en: "All drinks" },
   "pair.noResults": { hr: "Nema rezultata za odabrane filtere.", en: "No results for the selected filters." },
   "pair.excelHint": { hr: "Kurirana preporuka", en: "Curated recommendation" },
   "pair.curatedWarn": { hr: "Kurirano upozorenje", en: "Curated warning" },

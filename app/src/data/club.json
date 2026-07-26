@@ -563,10 +563,6 @@
       "en": "Specialist Croatian retailers such as allez.hr and ecuga.com offer legal online drinks sales; tobacco in the app remains reference and in-person purchase."
     },
     {
-      "hr": "U aplikaciji „Gdje kupiti” znači da postoji pouzdana poveznica na stranicu proizvoda, a „Traži online” da poveznica nije dovoljno precizna; cijenu i zalihu potvrđuje stranica trgovine.",
-      "en": "In the app, Buy means a trusted product URL; Search online means the link is not precise enough: always confirm price and stock on the retailer page."
-    },
-    {
       "hr": "Don Papa s oko 29 g/L dodanog šećera prelazi europski prag od 20 g/L, pa na etiketi mora stajati „spirit drink”, a ne „rum”.",
       "en": "Don Papa (~29 g/L added sugar) exceeds the EU rum cap of 20 g/L and must be labelled 'spirit drink', not 'rum'."
     },
@@ -751,8 +747,8 @@
       "en": "The NOM is a number on tequila identifying the registered distillery that made it. Several different brands can share the same NOM because they come from the same distillery."
     },
     {
-      "hr": "Tanini su spojevi iz kožice, sjemenki i hrasta koji na nepcu daju suh, stežući osjećaj (kao jak čaj). U crnom vinu i mladom destilatu daju strukturu; s vremenom omekšaju.",
-      "en": "Tannins are compounds from skins, seeds and oak that give a dry, gripping feel on the palate (like strong tea). In red wine and young spirit they give structure; they soften with time."
+      "hr": "Tanini su spojevi iz kožice i sjemenki grožđa, te iz hrasta (bačve), koji na nepcu daju suh, stežući osjećaj (kao jak čaj). U crnom vinu i mladom destilatu daju strukturu; s vremenom omekšaju.",
+      "en": "Tannins are compounds from grape skins and seeds, and from oak (barrels), that give a dry, gripping feel on the palate (like strong tea). In red wine and young spirit they give structure; they soften with time."
     },
     {
       "hr": "Cold brew je kava natapana u hladnoj vodi 12–24 sata: blaga, slatkasta i niske kiselosti. Espresso je suprotnost: vruća voda pod tlakom u sekundama izvuče gust, intenzivan koncentrat.",
@@ -791,8 +787,8 @@
       "en": "Canoeing is an uneven burn where one side of the cigar burns faster, so the ember takes on a canoe shape. It is often caused by wind or an uneven light. Fix it by rotating the cigar and touching up the slower side."
     },
     {
-      "hr": "Tunneling je suprotan problem: sredina cigare gori brže od omota, pa nastaje „tunel”, a wrapper zaostaje. Najčešće je od slabog paljenja ili prerijetkog povlačenja. Ravnomjernije paljenje i redovit vlak to sprječavaju.",
-      "en": "Tunneling is the opposite problem: the core burns ahead of the wrapper, forming a 'tunnel' while the wrapper lags. It usually comes from a weak light or drawing too seldom. An even light and a regular draw prevent it."
+      "hr": "Tunneling je suprotan problem: sredina cigare gori brže od omota, pa nastaje „tunel”, a wrapper zaostaje. Najčešće je od slabog paljenja ili prerijetkog povlačenja. Ravnomjernije paljenje i redovito povlačenje (otprilike svakih 30–60 sekundi) to sprječavaju.",
+      "en": "Tunneling is the opposite problem: the core burns ahead of the wrapper, forming a 'tunnel' while the wrapper lags. It usually comes from a weak light or drawing too seldom. An even light and steady draws (roughly every 30–60 seconds) prevent it."
     },
     {
       "hr": "Cigara se smije ponovno zapaliti ako se ugasi: otreseš pepeo, nježno ispušeš dim i ponovno „tostiraš” stopalo. U razumnoj mjeri to ne kvari okus; problem je tek dugo stajala, hladna cigara koja postaje gorka.",
@@ -903,8 +899,8 @@
       "en": "A torcedor (or torcedora) hand-rolls cigars in the factory. A cigar sommelier in a restaurant or club selects, recommends and serves: humidity, cut, light, pairing. Different jobs, same subject."
     },
     {
-      "hr": "Dvosmjerni (2-way) vlažni paketići (npr. Boveda-stil) i otpuštaju i upijaju vlagu prema soli i vodi u membrani. Cilj je stabilan RH bez stalnog dolijevanja spužve.",
-      "en": "Two-way humidity packs (e.g. Boveda-style) both release and absorb moisture via salt and water in a membrane. The aim is steady RH without constantly topping up a sponge."
+      "hr": "Dvosmjerni (2-way) vlažni paketići (npr. Boveda) i otpuštaju i upijaju vlagu prema soli i vodi u membrani. Cilj je stabilan RH bez stalnog dolijevanja spužve.",
+      "en": "Two-way humidity packs (e.g. Boveda) both release and absorb moisture via salt and water in a membrane. The aim is steady RH without constantly topping up a sponge."
     },
     {
       "hr": "Cvjetanje (plume, bloom) je bijeli, suhi kristal ulja na omotu: bez mirisa plijesni, briše se. Plijesan je pamučasta, često obojena i miriše na podrum. Kad sumnjaš, odvoji cigaru i ne puši „za svaki slučaj”.",
@@ -927,15 +923,27 @@
       "en": "Spanish cedar in a humidor holds aroma, helps humidity stability and traditionally lines boxes. It is not a food spice: raw, strong cedar smell can overpower mild cigars."
     },
     {
-      "hr": "Novi humidor treba „začiniti”: navlaži cedar (spužva ili 2-way paketići), zatvori ga danima i pusti RH da se stabilizira prije nego što ubaciš skupu kutiju. Suhi cedar pojede vlagu iz cigara.",
-      "en": "A new humidor needs seasoning: moisten the cedar (sponge or two-way packs), close it for days and let RH settle before you add an expensive box. Dry cedar steals moisture from cigars."
+      "hr": "Novi humidor treba „začiniti”: navlaži cedar (spužva ili Boveda 2-way paketići), zatvori ga danima i pusti RH da se stabilizira prije nego što ubaciš skupu kutiju. Suhi cedar pojede vlagu iz cigara.",
+      "en": "A new humidor needs seasoning: moisten the cedar (sponge or Boveda 2-way packs), close it for days and let RH settle before you add an expensive box. Dry cedar steals moisture from cigars."
     },
     {
       "hr": "Praktičan cilj vlage u humidoru za većinu cigara je otprilike 65–72 % RH, uz sobnu temperaturu bez velikih skokova. Previsoko vodi plijesni; prenisko suši omot i otvara ga.",
       "en": "A practical humidity target for most cigars is about 65–72% RH, with room temperature without big swings. Too high invites mould; too low dries and cracks the wrapper."
     },
     {
-      "hr": "Higrometar se može grubo provjeriti soli: zatvorena posuda sa slanom kašom treba pokazati oko 75 % RH. Ako tvoj uređaj jako odstupa, kalibriraj ili zamijeni ga prije nego što „spašavaš” kutiju.",
+      "hr": "Boveda (i slični 2-way) paketići dolaze u više RH razina: 62 % često za brže gorenje i snažniji okus, 65 % za svakodnevno skladištenje, 69 % za klasičan „mekši” dim, 72 % uglavnom za začinjavanje novog humidora ili vrlo suhu klimu — ne kao trajni cilj za većinu kutija.",
+      "en": "Boveda (and similar 2-way) packs come in several RH levels: 62% often for a quicker burn and sharper flavour, 65% for everyday storage, 69% for a classic softer smoke, 72% mainly for seasoning a new humidor or a very dry climate — not a long-term target for most boxes."
+    },
+    {
+      "hr": "Vino s plutom drži se položeno da pluto ostane vlažno i ne propušta zrak. Žestice (rum, whisky, konjak) stoje okomito: visoki alkohol može oslabiti pluto, a talog nije isti problem kao kod vina.",
+      "en": "Corked wine is stored on its side so the cork stays moist and airtight. Spirits (rum, whisky, cognac) stand upright: high alcohol can degrade cork, and sediment is not the same concern as with wine."
+    },
+    {
+      "hr": "Highball je servirati žestoko s sodom (ili sličnim) u visokoj čaši: tijelo pića se razrijedi, a profil postaje svježiji. U aplikaciji chip Highball postoji samo kod pića kojima taj stil prirodno paše (npr. rum, gin) — ne kod vina ili kave.",
+      "en": "A highball is serving a spirit with soda (or similar) in a tall glass: the drink’s body thins and the profile turns fresher. In the app the Highball chip appears only for drinks that suit that style (e.g. rum, gin) — not for wine or coffee."
+    },
+    {
+      "hr": "Higrometar se može ugrubo provjeriti solju: zatvorena posuda sa slanom kašom treba pokazati oko 75 % RH. Ako tvoj uređaj jako odstupa, kalibriraj ili zamijeni ga prije nego što „spašavaš” kutiju.",
       "en": "A hygrometer can be roughly checked with salt: a closed jar with wet salt slurry should read about 75% RH. If yours is far off, calibrate or replace it before you ‘rescue’ a box."
     },
     {
@@ -943,7 +951,7 @@
       "en": "Rotate stock: older boxes forward, new ones behind (FIFO). That way one box does not sit in a corner for years while only favourites are emptied."
     },
     {
-      "hr": "Pepeo se ne „tresa” svakih deset sekundi: pusti da naraste pa nježno odloži u pepeljaru. Predugi pepeo pada na odijelo; prečesto tresenje hladi žar i kvari gorenje.",
+      "hr": "Pepeo se ne otresa svakih deset sekundi: pusti da naraste pa nježno odloži u pepeljaru. Predugi pepeo pada na odijelo; prečesto otresanje hladi žar i kvari gorenje.",
       "en": "Ash is not flicked every ten seconds: let it grow, then rest it gently in the tray. Over-long ash falls on clothes; constant flicking cools the coal and spoils the burn."
     },
     {
@@ -3237,31 +3245,31 @@
     },
     {
       "q": {
-        "hr": "Što u aplikaciji znači gumb „Traži online” kod pića?",
-        "en": "The 'Search online' button in the app for a drink means…"
+        "hr": "Koja RH razina Boveda paketića najčešće služi za začinjavanje novog humidora?",
+        "en": "Which Boveda pack RH level is most often used to season a new humidor?"
       },
       "a": [
         {
-          "hr": "Nema pouzdane poveznice na proizvod, pa pretragu radiš sam",
-          "en": "No trusted product URL: search yourself"
+          "hr": "72 %",
+          "en": "72%"
         },
         {
-          "hr": "Proizvod je rasprodan zauvijek",
-          "en": "The product is permanently sold out"
+          "hr": "50 %",
+          "en": "50%"
         },
         {
-          "hr": "Kupnja je ilegalna",
-          "en": "Purchase is illegal"
+          "hr": "90 %",
+          "en": "90%"
         },
         {
-          "hr": "Cijena je pogrešna",
-          "en": "The price is wrong"
+          "hr": "30 %",
+          "en": "30%"
         }
       ],
       "correct": 0,
       "why": {
-        "hr": "„Gdje kupiti” znači pouzdanu poveznicu; kad je nema, aplikacija ne izmišlja točnu stranicu proizvoda.",
-        "en": "Buy = trusted link; otherwise the app does not fake a precise SKU."
+        "hr": "72 % često ide za seasoning ili vrlo suhu klimu; za svakodnevno skladištenje češći su 65 % ili 69 %.",
+        "en": "72% is often for seasoning or a very dry climate; everyday storage more often uses 65% or 69%."
       }
     },
     {
@@ -4594,8 +4602,8 @@
       ],
       "correct": 0,
       "why": {
-        "hr": "Dolaze iz kožice, sjemenki i hrasta; daju strukturu i s vremenom omekšaju.",
-        "en": "They come from skins, seeds and oak; they give structure and soften with time."
+        "hr": "Dolaze iz kožice i sjemenki grožđa te iz hrasta (bačve); daju strukturu i s vremenom omekšaju.",
+        "en": "They come from grape skins and seeds and from oak (barrels); they give structure and soften with time."
       }
     },
     {
@@ -4942,8 +4950,8 @@
       ],
       "correct": 2,
       "why": {
-        "hr": "Nastaje „tunel” jer wrapper zaostaje; sprječava ga ravnomjerno paljenje i redovit vlak.",
-        "en": "A 'tunnel' forms as the wrapper lags; an even light and regular draw prevent it."
+        "hr": "Nastaje „tunel” jer wrapper zaostaje; sprječava ga ravnomjerno paljenje i redovito povlačenje.",
+        "en": "A 'tunnel' forms as the wrapper lags; an even light and steady draws prevent it."
       }
     },
     {

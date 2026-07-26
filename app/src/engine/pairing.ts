@@ -46,9 +46,12 @@ export function scorePairing(
   // 1) Body match — zlatno pravilo (effCigar: geometrija, effDrink: serve).
   // Match unutar <0.5 koraka: male delte (geometrija ±0.1–0.2, serve) ne smiju
   // skinuti puni bonus — inače dotjerivanja preokrenu dominantno pravilo.
+  // Light band: oba ≤2.5 i |Δ|≤1 također dobiju puni match — inače agricole
+  // (body 2) + blagi Connecticut (body 1) padne na ~50 i izgleda kao da „nema para”.
   const bodyLabelIdx = Math.round(effCigar.body);
   const bodyDiff = Math.abs(effCigar.body - effDrink.body);
-  if (bodyDiff < 0.5) {
+  const bothLight = effCigar.body <= 2.5 && effDrink.body <= 2.5;
+  if (bodyDiff < 0.5 || (bothLight && bodyDiff <= 1.05)) {
     score += WEIGHTS.bodyBonus;
     reasons.push({
       rule: "body-match",
@@ -113,13 +116,29 @@ export function scorePairing(
     });
   }
 
-  // 2b) Komplementarni parovi (razliciti ali se nadopunjuju)
+  // 2b) Komplementarni parovi (razliciti ali se nadopunjuju).
+  // Bidirekcionalno: cigar→drink i drink→cigar, da agricole tagovi
+  // (travnato/vegetalno) na piću moste ka trava-slatka/biljno/kremasto na cigari.
   const complemented: string[] = [];
+  const seenPairs = new Set<string>();
+  const addPair = (a: string, b: string) => {
+    const key = a < b ? `${a}↔${b}` : `${b}↔${a}`;
+    if (seenPairs.has(key)) return;
+    seenPairs.add(key);
+    complemented.push(`${a}↔${b}`);
+  };
   for (const ct of cigarTags) {
     const comp = COMPLEMENTS[ct];
     if (!comp) continue;
     for (const dt of drinkTags) {
-      if (dt !== ct && comp.includes(dt)) complemented.push(`${ct}↔${dt}`);
+      if (dt !== ct && comp.includes(dt)) addPair(ct, dt);
+    }
+  }
+  for (const dt of drinkTags) {
+    const comp = COMPLEMENTS[dt];
+    if (!comp) continue;
+    for (const ct of cigarTags) {
+      if (ct !== dt && comp.includes(ct)) addPair(ct, dt);
     }
   }
   if (complemented.length > 0) {
