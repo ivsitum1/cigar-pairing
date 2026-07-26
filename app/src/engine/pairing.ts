@@ -255,7 +255,15 @@ export function pairDrinksForCigar(
   return drinks
     .filter((d) => d.pairable)
     .map((item) => ({ item, ...scorePairing(cigar, item, prefs) }))
-    .sort((a, b) => b.score - a.score);
+    // score pada; kod izjednacenih rezultata (npr. gomila spiced rumova na
+    // istom bodu) presuduje kvaliteta pa ime — deterministicki, ne redoslijed
+    // iz JSON-a
+    .sort(
+      (a, b) =>
+        b.score - a.score ||
+        (b.item.qualityScore ?? 0) - (a.item.qualityScore ?? 0) ||
+        a.item.name.localeCompare(b.item.name),
+    );
 }
 
 export function pairCigarsForDrink(
@@ -266,5 +274,10 @@ export function pairCigarsForDrink(
 ): PairingResult<Cigar>[] {
   return cigars
     .map((item) => ({ item, ...scorePairing(item, drink, prefs, serve) }))
-    .sort((a, b) => b.score - a.score);
+    // kod izjednacenih rezultata deterministicki po imenu (brand + linija)
+    .sort(
+      (a, b) =>
+        b.score - a.score ||
+        `${a.item.brand} ${a.item.line}`.localeCompare(`${b.item.brand} ${b.item.line}`),
+    );
 }
