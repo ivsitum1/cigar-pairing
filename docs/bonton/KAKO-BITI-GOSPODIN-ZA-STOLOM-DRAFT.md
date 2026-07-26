@@ -911,7 +911,7 @@ Gospodin ne fotografira tuđu slabost. Nikad.
 
 ## 16. Salon i klub
 
-Javna pušionica nije tvoja dnevna soba. Privatna terasa nije salon s cjenikom. Razlikuj.
+Cigar lounge nije tvoja dnevna soba. Privatna terasa nije salon s cjenikom. Razlikuj.
 
 ### Deset precepta salona
 
@@ -919,7 +919,7 @@ Javna pušionica nije tvoja dnevna soba. Privatna terasa nije salon s cjenikom. 
 
 2. **Higijena rezača.** Nikad lizanje kape na zajedničkom alatu. Vlastiti rezač ili čisti kućni — pitaj.
 
-3. **Podrži kuću.** U javnoj pušionici i specijaliziranoj trgovini, podržati kuću dio je uljudnosti. Na privatnoj terasi vrijedi gostoprimstvo, ne uvozna naplata reza kao domaći običaj. Ne prenosi tuđe napojnice kao domaći zakon. Ne sjedi satima kao da je stol besplatni ured.
+3. **Lokal.** U cigar loungeu i specijaliziranoj trgovini, podrška mjestu kupnjom ili poštivanjem pravila dio je uljudnosti. Na privatnoj terasi si gost kod prijatelja, ne mušterija: naplata za rez cigare iz stranih salona ovdje nije običaj. Ne prenosi tuđe napojnice kao domaći zakon. Ne sjedi satima kao da je stol besplatni ured.
 
 4. **Dim.** Od lica. Prema gore. Ne u susjedni stol kao da dijeliš mišljenje.
 
@@ -937,7 +937,7 @@ Javna pušionica nije tvoja dnevna soba. Privatna terasa nije salon s cjenikom. 
 
 ### Što ne uvoziti slijepo
 
-U nekim zemljama postoje kruta pravila napojnica, odijevanja i onih koji samo troše tuđe. U hrvatskom kontekstu: lokalni klub, lokalna trgovina, lokalna terasa. Gledaj što kuća očekuje. Nemoj glumiti tuđi bonton da bi izgledao svjetski.
+U nekim zemljama postoje kruta pravila napojnica, odijevanja i onih koji samo troše tuđe. U hrvatskom kontekstu: lokalni klub, lokalna trgovina, lokalna terasa. Gledaj što domaćin očekuje. Nemoj glumiti tuđi bonton da bi izgledao svjetski.
 
 ### Kontradikcije bez dogme
 
@@ -1251,7 +1251,7 @@ Ako zapamtiš samo troje, neka bude ovo.
 
 1. **Pitaj prije plamena.**
 2. **Ostavi prostor** — u dimu, u čaši, u razgovoru.
-3. **Završi čistije nego si zatekao:** pepeo, čaša, zahvala.
+3. **Ostavi čistije nego što si zatekao:** pepeo, čaša, zahvala.
 
 ### Što ostaje
 
@@ -1990,7 +1990,7 @@ Pušeš: od lica.
 Pričaš: bez zvučnika. 
 Savjetuješ: samo na upit. 
 Dijeliš: što doneseš. 
-Plaćaš: poštovanjem kuće. 
+Plaćaš: poštovanjem domaćina. 
 Odlaziš: pepeo i zahvala.
 
 Ako zapamtiš samo ovaj niz, salon te neće mrziti.
@@ -2013,7 +2013,7 @@ Ako zapamtiš samo ovaj niz, salon te neće mrziti.
 12. Netko grije brandy nad plamenom → ponudi čašu bez predstave. 
 13. Netko umače list → „ja ću držati odvojeno”. 
 14. Netko kasni i očekuje da svi čekaju s upaljenim → dogovor unaprijed. 
-15. Netko donese vape u salon → pitaj kuću, poštuj odgovor. 
+15. Netko donese vape u salon → pitaj domaćina, poštuj odgovor. 
 16. Netko priča preko zdravice → pričekaj pepeo i tišinu. 
 17. Netko ostavi pepeo na rubu tegle → premjesti u pepeljaru tiho. 
 18. Netko se hvali stubom → neaplauziraj. 
@@ -2461,9 +2461,9 @@ Ako gost ode i kaže „ugodno mi je bilo”, domaćin je pobijedio. Ako ode i k
 
 ## Esej: Salon nije dnevna soba
 
-Javna pušionica ima kuću. Kuća ima očekivanja. Gospodin ih čita.
+Cigar lounge ima domaćina. Domaćin ima očekivanja. Gospodin ih čita.
 
-Pozdrav. Mjesto. Higijena rezača. Dim gore. Telefon vani. Pepeo dostojanstven. Savjet na upit. Svoju bocu — ako smiješ — dijeli. Parfem u mjeri. Cigar, ne cigareta/vape, ako kuća tako živi.
+Pozdrav. Mjesto. Higijena rezača. Dim gore. Telefon vani. Pepeo dostojanstven. Savjet na upit. Svoju bocu — ako smiješ — dijeli. Parfem u mjeri. Cigar, ne cigareta/vape, ako domaćin tako živi.
 
 Privatna terasa nije salon s cjenikom. Tu vrijedi gostoprimstvo, ne uvoz tuđih napojnica kao domaćeg zakona.
 
@@ -2598,7 +2598,7 @@ Gospodin zna stati; ne forsira treću; drži vodu; skraćuje format; ne mjeri us
 
 Gospodin nudi izbor; pokazuje WC; drži pepeljaru; ne nestaje u telefonu; šalje zahvalu.
 
-Gospodin u salonu pita za mjesto; ne liže kapu; ne pali zvučnik; ne traži povlačenje; poštuje kuću lokalno.
+Gospodin u salonu pita za mjesto; ne liže kapu; ne pali zvučnik; ne traži povlačenje; podržava lokal kupnjom.
 
 Gospodin vani čita vjetar; ne pepeljuje travnjak; ne puši u redove; pamti da dim ide gore; ne podcjenjuje buru.
 
@@ -2866,14 +2866,14 @@ Ako gost ne pije alkohol, stol ne umire. Dim po dogovoru, voda, razgovor — dov
 
 Ulaz: pozdrav + mjesto. 
 Rez: higijena. 
-Kuća: podrži lokalno. 
+Lokal: kupnjom. 
 Dim: od lica. 
 Telefon: vani, bez zvučnika. 
 Pepeo: dostojanstvo. 
 Savjet: na upit. 
 Svoja boca: dijeli ili nemoj donositi. 
 Parfem: mjera. 
-Samo cigar ako kuća tako živi.
+Samo cigar ako lokal tako živi.
 
 Ne uvozi tuđe tipove kao domaći zakon. 
 Ne rezerviraj pet fotelja za duha. 
@@ -2942,7 +2942,7 @@ Jer dim putuje dalje od namjere. Jer „ok” iz neugode nije pristanak. Jer pro
 **Ostavi prostor.** 
 U dimu — od lica. U čaši — bez forsiranja. U razgovoru — bez seminara. U vremenu — izlaz.
 
-**Završi čistije.** 
+**Ostavi čistije nego što si zatekao.**
 Pepeo. Čaša. Zahvala. Ne goreći stub. Ne celofan. Ne sramota.
 
 Ako ovo tri držiš, smiješ zaboraviti ostatak knjige. Ostatak je samo vježba.
@@ -3016,7 +3016,7 @@ Gospodin zna stati usred trećine. Ne forsira treću iz egomanije. Drži vodu ka
 Gospodin nudi izbor, ne ispit. Pokazuje WC bez šale. Drži pepeljaru na dohvat. Ne nestaje u telefonu. Šalje zahvalu sutradan.
 
 ### Salon
-Gospodin pita je li mjesto slobodno. Ne liže kapu prije zajedničkog rezača. Ne pali zvučnik. Ne traži povlačenje s tuđe cigare. Podržava kuću lokalno, bez uvoza tuđih napojnica kao dogme.
+Gospodin pita je li mjesto slobodno. Ne liže kapu prije zajedničkog rezača. Ne pali zvučnik. Ne traži povlačenje s tuđe cigare. Podržava lokal kupnjom, bez uvoza tuđih napojnica kao dogme.
 
 ### Vani
 Gospodin čita vjetar. Ne pepeljuje travnjak. Ne puši u lica u redu. Na balkonu pamti da dim ide gore. Na Jadranu ne podcjenjuje buru.
@@ -3062,7 +3062,7 @@ Gospodin čita vjetar. Ne pepeljuje travnjak. Ne puši u lica u redu. Na balkonu
 - Gospodin ne liže kapu prije zajedničkog rezača.
 - Gospodin ne pali zvučnik.
 - Gospodin ne traži povlačenje s tuđe cigare.
-- Gospodin podržava kuću bez uvoza tuđih napojnica kao dogme.
+- Gospodin podržava domaćina bez uvoza tuđih napojnica kao dogme.
 - Gospodin pita je li mjesto slobodno.
 
 ---
@@ -3246,32 +3246,62 @@ Egomanija voli najjači list, najglasniji naljev, najdužu priču. Stol voli mje
 
 Ova knjiga popularna je literatura. Nije znanstveni rad. Reference su ovdje na kraju — kako je uobičajeno za vodiče uljudnosti i čitanje za razonodu — a ne kao akademske fusnote usred precepta.
 
+**Pravilo citiranja:** u knjizi (i u Club aplikaciji) navode se samo **originalne** stranice, članci, videozapisi i podcasti. Interne bilješke, grill dumpovi i NotebookLM bilježnice **nisu** izvori za čitatelja — to je radni alat autora.
+
 ### Oblik (ne sadržaj)
 
 Struktura kratkih pravila i rahlog sloga nadahnuta je tradicijom suvremenih vodiča uljudnosti, među kojima je hrvatskom čitatelju poznat i prijevod Johna Bridgesa *Kako biti gospodin* (Leo-commerce, 2001). Oblik je uzor; sadržaj o cigari i stolu originalan je za ovaj rukopis.
 
 Sličnu formalnu tradiciju (kratki precepti, gostoprimstvo bez snobizma) čitatelj može prepoznati i u širim vodičima uljudnosti (npr. Debrett, Emily Post) — opet kao oblik, ne kao izvor cigar-pravila.
 
-### Salon i javna pušionica (orijentiri)
+### Bonton i salon
 
-- Cigar lounge etiquette — CigarLounges 
- https://www.cigarlounges.co/blog/cigar-lounge-etiquette 
-- VDG — cigar lounge etiquette 
- https://vdg-cigars.com/cigar-lounge-etiquette-the-complete-rules-guide/ 
-- The Manual — cigar etiquette 101 
- https://www.themanual.com/culture/cigar-etiquette-101/ 
-- Casa de Montecristo — beginners 
- https://www.casademontecristo.com/broadleaf-social/cigar-lounge-etiquette-for-beginners/
+- CigarLounges — lounge etiquette  
+  https://www.cigarlounges.co/blog/cigar-lounge-etiquette  
+- VDG — complete lounge rules  
+  https://vdg-cigars.com/cigar-lounge-etiquette-the-complete-rules-guide/  
+- The Manual — cigar etiquette 101  
+  https://www.themanual.com/culture/cigar-etiquette-101/  
+- Casa de Montecristo — beginners  
+  https://www.casademontecristo.com/broadleaf-social/cigar-lounge-etiquette-for-beginners/  
+- Holt’s — cigar lounge etiquette  
+  https://www.holts.com/clubhouse/cigar-culture/cigar-lounge-etiquette  
+- Gentleman’s Gazette — lounge etiquette 101  
+  https://www.gentlemansgazette.com/cigar-etiquette-101-what-to-do-and-not-to-do-at-your-local-cigar-lounge/  
+- Beyond the Humidor — podcast (Apple)  
+  https://podcasts.apple.com/us/podcast/beyond-the-humidor-a-cigar-podcast-for-the-rest-of-us/id1480171817  
 
 Napomena: američki običaji napojnica, naplate reza i propisanog odijevanja **nisu** preneseni kao hrvatske norme. Lokalni klub, trgovina i terasa imaju prednost.
 
-### Unutarnja istraživačka bilješka autora
+### Stol, pairing i umakanje
 
-Priprema rukopisa oslanjala se i na kurirani korpus bilježnica (Cigar 101, Drink 101, Rum 101, Family Story, Oliva/heritage, bonton/etiquette `adfe8fc8` i srodno) te na radne sinteze projekta *cigar_and_rum* (2026). To su autorove istraživačke bilješke i AI-potpomognute sinteze javnih izvora — **ne** recenzirana literatura. Činjenice o povijesti i tehnici u knjizi namjerno su držane kratkima i opreznima („kažu”, „uobičajeno je”).
+- JR Cigars — dipping a cigar in alcohol  
+  https://www.jrcigars.com/blending-room/university/cigar-tips/cigar-etiquette-dipping-your-cigar-in-alcohol/  
+- Holt’s — should you dip a cigar in whiskey?  
+  https://www.holts.com/clubhouse/cigar-101/should-you-dip-your-cigar-in-whiskey  
+- Holt’s — cigar basics (cut, light, manners)  
+  https://www.holts.com/clubhouse/cigar-101/cigar-basics  
+- La Aurora — pairing guide (whiskey, rum, coffee)  
+  https://www.laaurora.com/blogs/news/cigar-pairing-guide-whiskey-rum-coffee-and-chocolate  
+- Whisky.com — tasting guide (glass, water)  
+  https://www.whisky.com/tasting-guide.html  
+- Whisky.com — diluting with water  
+  https://www.whisky.com/diluting-whisky.html  
+
+### Rječnik i degustacija (orijentacija)
+
+- Cigar Aficionado Podcast Ep. 1 — blind tastings  
+  https://www.youtube.com/watch?v=sApf8DHooO4  
+- Wikipedia — cigar etiquette  
+  https://en.wikipedia.org/wiki/Cigar_etiquette  
+
+### Napomena autora o pripremi
+
+Priprema rukopisa koristila je javne članke, Clubhouse vodiče, videozapise i podcasti (gore navedene i srodne). Privremeno su ti materijali grupirani u autorovim bilježnicama radi čitanja — to **nije** popis izvora za tiskanu knjigu. Činjenice o povijesti i tehnici u tekstu namjerno su kratke i oprezne („kažu”, „uobičajeno je”).
 
 Autor je liječnik. Stolne napomene o ritmu, nikotinu ili želucu **nisu** medicinski savjet; knjiga ostaje vodič uljudnosti, ne klinički tekst.
 
-Kratki kanonski precepti za aplikaciju Club žive odvojeno u *Maloj knjizi pušačkog bontona*; ovaj draft proširuje žanr u cjelovitu popularnu knjigu.
+Kratki kanonski precepti za aplikaciju Club žive odvojeno u *Maloj knjizi pušačkog bontona*; ovaj draft proširuje žanr u cjelovitu popularnu knjigu. Isti popis vanjskih izvora stoji i na dnu Kluba u aplikaciji.
 
 ### Što namjerno nije u knjizi
 
@@ -3312,7 +3342,7 @@ Kratki kanonski precepti za aplikaciju Club žive odvojeno u *Maloj knjizi puša
 
 **BYOB** — bring your own bottle; ako doneseš, dijeli.
 
-**Lounge** — javna pušionica / salon; tuđi prostor s vlastitim očekivanjima.
+**Cigar lounge** — salon / klub; tuđi prostor s vlastitim očekivanjima.
 
 **Band** — papirnati prsten na cigari; škole skidanja različite — bez dogme, bez smeća pod stolom.
 

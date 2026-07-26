@@ -98,6 +98,10 @@ const STRINGS = {
   "club.mapHint": { hr: "Dodir na zastavicu ili na zemlju s popisa otvara sve cigare i pića iz te zemlje.", en: "Tap a flag or a country in the list — every cigar and drink from that country will appear." },
   "club.mapWorld": { hr: "Svijet", en: "World" },
   "club.mapCarib": { hr: "Karibi i Srednja Amerika", en: "Caribbean & Central America" },
+  "club.sources": { hr: "Izvori", en: "Sources" },
+  "club.sourceKind.article": { hr: "članak", en: "article" },
+  "club.sourceKind.video": { hr: "video", en: "video" },
+  "club.sourceKind.podcast": { hr: "podcast", en: "podcast" },
   "club.mapEurope": { hr: "Europa", en: "Europe" },
   "club.products": { hr: "proizvoda", en: "products" },
   // pairing

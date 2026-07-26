@@ -7,6 +7,7 @@ import { CigarRow, DrinkRow } from "../components/cards";
 import { DetailSheet } from "../components/DetailSheet";
 import { COUNTRIES, cigarCountries, drinkCountries, type CountryInfo } from "../lib/geo";
 import club from "../data/club.json";
+import clubSources from "../data/clubSources.json";
 import WORLD_OUTLINE from "../data/world_outline.json";
 import { Club101Page } from "./Club101Page";
 import { BontonPage } from "./BontonPage";
@@ -18,10 +19,23 @@ import { navigate, useRoute } from "../store/route";
 interface Quote { text: LocalizedText; author: string; note?: LocalizedText }
 interface Fact { hr: string; en: string }
 interface QuizQ { q: LocalizedText; a: LocalizedText[]; correct: number; why: LocalizedText }
+type SourceKind = "article" | "video" | "podcast";
+interface SourceItem {
+  label: LocalizedText;
+  url: string;
+  kind: SourceKind;
+}
+interface SourceGroup {
+  id: string;
+  title: LocalizedText;
+  items: SourceItem[];
+}
 
 const QUOTES = club.quotes as Quote[];
 const FACTS = club.facts as Fact[];
 const QUIZ = club.quiz as QuizQ[];
+const SOURCE_GROUPS = clubSources.groups as SourceGroup[];
+const SOURCE_INTRO = clubSources.intro as LocalizedText;
 
 // dan u godini — deterministicki "dnevni" izbor
 const dayOfYear = () => {
@@ -390,6 +404,55 @@ export function ClubPage() {
           </div>
         </>
       )}
+
+      <SectionTitle>{t("club.sources")}</SectionTitle>
+      <div className="rounded-xl border border-zlato/25 bg-cedar p-4">
+        <p className="mb-4 text-sm leading-relaxed text-papir/80">{lx(SOURCE_INTRO)}</p>
+        <div className="space-y-4">
+          {SOURCE_GROUPS.map((group) => (
+            <div key={group.id}>
+              <h3 className="mb-2 font-display text-xs uppercase tracking-widest text-zlato">{lx(group.title)}</h3>
+              <ul className="space-y-1.5">
+                {group.items.map((item) => {
+                  let kindKey: "club.sourceKind.article" | "club.sourceKind.video" | "club.sourceKind.podcast";
+                  switch (item.kind) {
+                    case "article":
+                      kindKey = "club.sourceKind.article";
+                      break;
+                    case "video":
+                      kindKey = "club.sourceKind.video";
+                      break;
+                    case "podcast":
+                      kindKey = "club.sourceKind.podcast";
+                      break;
+                    default: {
+                      const _exhaustive: never = item.kind;
+                      void _exhaustive;
+                      kindKey = "club.sourceKind.article";
+                      break;
+                    }
+                  }
+                  return (
+                    <li key={item.url}>
+                      <a
+                        href={item.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block rounded-lg border border-dim/20 px-3 py-2 text-sm text-papir/90 transition-colors hover:border-zlato/40 hover:bg-zlato/5"
+                      >
+                        <span className="mr-2 font-display text-[10px] uppercase tracking-wider text-dim">
+                          {t(kindKey)}
+                        </span>
+                        {lx(item.label)}
+                      </a>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </div>
 
       <DetailSheet target={detail} onClose={() => setDetail(null)} />
     </div>
