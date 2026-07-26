@@ -3236,73 +3236,27 @@ Thanks close the circle. Without them the table stays an open account. In practi
 
 Egomania loves the strongest leaf, the loudest pour, the longest story. The table loves measure. A gentleman chooses the table. In practice this means: ask, slow down, give thanks.
 
-## Sources and notes
+## Sources
 
-This book is popular literature. It is not a scholarly work. The references are here at the end — as is customary for guides to courtesy and reading for pleasure — and not as academic footnotes in the middle of a precept.
+The popular literature behind this text: public guides, articles, videos and podcasts. The emphasis is written for the Croatian context — the local club, shop and terrace set the tone.
 
-**Citation rule:** the book (and the Club app) cite only **original** pages, articles, videos and podcasts. Internal notes, grill dumps and NotebookLM notebooks are **not** sources for the reader — they are the author's working tools.
+The form of short rules owes a debt to the tradition of courtesy guides — John Bridges's *How to Be a Gentleman* (Leo-commerce, 2001), along with Debrett and Emily Post. The content about the cigar and the table is original to this manuscript.
 
-### Form (not content)
+- Beyond the Humidor (podcast) — https://podcasts.apple.com/us/podcast/beyond-the-humidor-a-cigar-podcast-for-the-rest-of-us/id1480171817
+- Casa de Montecristo — https://www.casademontecristo.com
+- Cigar Aficionado — https://www.cigaraficionado.com
+- CigarLounges — https://www.cigarlounges.co
+- cigars.com — https://www.cigars.com
+- Gentleman’s Gazette — https://www.gentlemansgazette.com
+- Holt’s Clubhouse — https://www.holts.com/clubhouse
+- JR Cigars — https://www.jrcigars.com
+- La Aurora — https://www.laaurora.com
+- The Manual — https://www.themanual.com
+- VDG Cigars — https://vdg-cigars.com
+- Whisky.com — https://www.whisky.com
+- Wikipedia — cigar etiquette — https://en.wikipedia.org/wiki/Cigar_etiquette
 
-The structure of short rules and loose typesetting is inspired by the tradition of contemporary guides to courtesy, among which the Croatian reader also knows the translation of John Bridges's *How to Be a Gentleman* (Leo-commerce, 2001). The form is a model; the content about the cigar and the table is original to this manuscript.
-
-A similar formal tradition (short precepts, hospitality without snobbery) can also be recognised in broader guides to courtesy (e.g. Debrett, Emily Post) — again as form, not as a source of cigar rules.
-
-### Manners and lounge
-
-- CigarLounges — lounge etiquette  
-  https://www.cigarlounges.co/blog/cigar-lounge-etiquette  
-- VDG — complete lounge rules  
-  https://vdg-cigars.com/cigar-lounge-etiquette-the-complete-rules-guide/  
-- The Manual — cigar etiquette 101  
-  https://www.themanual.com/culture/cigar-etiquette-101/  
-- Casa de Montecristo — beginners  
-  https://www.casademontecristo.com/broadleaf-social/cigar-lounge-etiquette-for-beginners/  
-- Holt’s — cigar lounge etiquette  
-  https://www.holts.com/clubhouse/cigar-culture/cigar-lounge-etiquette  
-- Gentleman’s Gazette — lounge etiquette 101  
-  https://www.gentlemansgazette.com/cigar-etiquette-101-what-to-do-and-not-to-do-at-your-local-cigar-lounge/  
-- Beyond the Humidor — podcast (Apple)  
-  https://podcasts.apple.com/us/podcast/beyond-the-humidor-a-cigar-podcast-for-the-rest-of-us/id1480171817  
-
-Note: American customs of tipping, cut fees and prescribed dress are **not** carried over as Croatian norms. The local club, shop and terrace take priority.
-
-### Table, pairing and dipping
-
-- JR Cigars — dipping a cigar in alcohol  
-  https://www.jrcigars.com/blending-room/university/cigar-tips/cigar-etiquette-dipping-your-cigar-in-alcohol/  
-- Holt’s — should you dip a cigar in whiskey?  
-  https://www.holts.com/clubhouse/cigar-101/should-you-dip-your-cigar-in-whiskey  
-- Holt’s — cigar basics (cut, light, manners)  
-  https://www.holts.com/clubhouse/cigar-101/cigar-basics  
-- La Aurora — pairing guide (whiskey, rum, coffee)  
-  https://www.laaurora.com/blogs/news/cigar-pairing-guide-whiskey-rum-coffee-and-chocolate  
-- Whisky.com — tasting guide (glass, water)  
-  https://www.whisky.com/tasting-guide.html  
-- Whisky.com — diluting with water  
-  https://www.whisky.com/diluting-whisky.html  
-
-### Lexicon and tasting (orientation)
-
-- Cigar Aficionado Podcast Ep. 1 — blind tastings  
-  https://www.youtube.com/watch?v=sApf8DHooO4  
-- Wikipedia — cigar etiquette  
-  https://en.wikipedia.org/wiki/Cigar_etiquette  
-
-### Author’s note on preparation
-
-The manuscript drew on public articles, Clubhouse guides, videos and podcasts (those listed above and related ones). For reading they were temporarily grouped in the author’s notebooks — that is **not** the published source list. Facts of history and technique in the text are kept short and cautious (“they say”, “it is common”).
-
-The author is a physician. Table notes on pace, nicotine or the stomach are **not** medical advice; the book remains a guide to courtesy, not a clinical text.
-
-The short canonical precepts for the Club app live separately in *The Little Book of Smoking Etiquette*; this draft expands the genre into a full popular book. The same external source list appears at the foot of Club in the app.
-
-### What is deliberately not in the book
-
-- Rankings of brands
-- A technical humidor manual disguised as etiquette
-- Moralising about health beyond measure and consent
-- Lists of forbidden shops and essays about conglomerates
+The same list appears at the foot of Club in the app. The author is a physician; table notes on pace and nicotine are part of the etiquette, not medical advice.
 
 ---
 

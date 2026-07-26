@@ -99,9 +99,6 @@ const STRINGS = {
   "club.mapWorld": { hr: "Svijet", en: "World" },
   "club.mapCarib": { hr: "Karibi i Srednja Amerika", en: "Caribbean & Central America" },
   "club.sources": { hr: "Izvori", en: "Sources" },
-  "club.sourceKind.article": { hr: "članak", en: "article" },
-  "club.sourceKind.video": { hr: "video", en: "video" },
-  "club.sourceKind.podcast": { hr: "podcast", en: "podcast" },
   "club.mapEurope": { hr: "Europa", en: "Europe" },
   "club.products": { hr: "proizvoda", en: "products" },
   // pairing

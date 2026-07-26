@@ -92,12 +92,11 @@ Precepti (HR, knjižni ton) — sync iz grill `adfe8fc8` + raniji Cigar 101:
 
 ## 5. Literatura / vanjski linkovi
 
-**Pravilo (knjiga + Club):** citirati samo originalne URL-ove (članci, podcasti, video). NotebookLM / grill dumpovi = radni alat, ne popis za čitatelja. Kanon popisa: `app/src/data/clubSources.json` i kraj draftova (`KAKO-…-DRAFT.md` / `HOW-TO-…-DRAFT.md`).
+Kanonski popis izvora živi na jednom mjestu i dijeli ga knjiga i Club: `app/src/data/clubSources.json` i kraj draftova (`KAKO-…-DRAFT.md` / `HOW-TO-…-DRAFT.md`). Popis je neutralan i jedan red po izvoru (stranici), bez posebnog navođenja pojedinih podstranica.
 
-- CigarLounges, VDG, The Manual, Casa de Montecristo, Holt’s lounge, Gentleman’s Gazette, Beyond the Humidor  
-- JR / Holt’s (umakanje), La Aurora pairing, Whisky.com (čaša/voda)  
-- Cigar Aficionado Podcast Ep. 1; Wikipedia cigar etiquette (orijentacija)  
-- Debrett / Emily Post / Bridges — forma, ne cigar sadržaj
+- Beyond the Humidor, Casa de Montecristo, Cigar Aficionado, CigarLounges, cigars.com  
+- Gentleman’s Gazette, Holt’s Clubhouse, JR Cigars, La Aurora, The Manual, VDG, Whisky.com, Wikipedia  
+- Bridges / Debrett / Emily Post — tradicija forme kratkih pravila
 
 ---
 

@@ -3242,73 +3242,27 @@ Zahvala zatvara krug. Bez nje stol ostaje otvoren račun. U praksi to znači: pi
 
 Egomanija voli najjači list, najglasniji naljev, najdužu priču. Stol voli mjeru. Gospodin bira stol. U praksi to znači: pitaj, uspori, zahvali.
 
-## Izvori i napomene
+## Izvori
 
-Ova knjiga popularna je literatura. Nije znanstveni rad. Reference su ovdje na kraju — kako je uobičajeno za vodiče uljudnosti i čitanje za razonodu — a ne kao akademske fusnote usred precepta.
+Popularna literatura iza ovog teksta: javni vodiči, članci, videozapisi i podcasti. Naglasci su pisani za hrvatski kontekst — mjerodavni su lokalni klub, trgovina i terasa.
 
-**Pravilo citiranja:** u knjizi (i u Club aplikaciji) navode se samo **originalne** stranice, članci, videozapisi i podcasti. Interne bilješke, grill dumpovi i NotebookLM bilježnice **nisu** izvori za čitatelja — to je radni alat autora.
+Oblik kratkih pravila duguje tradiciji vodiča uljudnosti — prijevodu Johna Bridgesa *Kako biti gospodin* (Leo-commerce, 2001), te Debrettu i Emily Post. Sadržaj o cigari i stolu vlastit je za ovaj rukopis.
 
-### Oblik (ne sadržaj)
+- Beyond the Humidor (podcast) — https://podcasts.apple.com/us/podcast/beyond-the-humidor-a-cigar-podcast-for-the-rest-of-us/id1480171817
+- Casa de Montecristo — https://www.casademontecristo.com
+- Cigar Aficionado — https://www.cigaraficionado.com
+- CigarLounges — https://www.cigarlounges.co
+- cigars.com — https://www.cigars.com
+- Gentleman’s Gazette — https://www.gentlemansgazette.com
+- Holt’s Clubhouse — https://www.holts.com/clubhouse
+- JR Cigars — https://www.jrcigars.com
+- La Aurora — https://www.laaurora.com
+- The Manual — https://www.themanual.com
+- VDG Cigars — https://vdg-cigars.com
+- Whisky.com — https://www.whisky.com
+- Wikipedia — cigar etiquette — https://en.wikipedia.org/wiki/Cigar_etiquette
 
-Struktura kratkih pravila i rahlog sloga nadahnuta je tradicijom suvremenih vodiča uljudnosti, među kojima je hrvatskom čitatelju poznat i prijevod Johna Bridgesa *Kako biti gospodin* (Leo-commerce, 2001). Oblik je uzor; sadržaj o cigari i stolu originalan je za ovaj rukopis.
-
-Sličnu formalnu tradiciju (kratki precepti, gostoprimstvo bez snobizma) čitatelj može prepoznati i u širim vodičima uljudnosti (npr. Debrett, Emily Post) — opet kao oblik, ne kao izvor cigar-pravila.
-
-### Bonton i salon
-
-- CigarLounges — lounge etiquette  
-  https://www.cigarlounges.co/blog/cigar-lounge-etiquette  
-- VDG — complete lounge rules  
-  https://vdg-cigars.com/cigar-lounge-etiquette-the-complete-rules-guide/  
-- The Manual — cigar etiquette 101  
-  https://www.themanual.com/culture/cigar-etiquette-101/  
-- Casa de Montecristo — beginners  
-  https://www.casademontecristo.com/broadleaf-social/cigar-lounge-etiquette-for-beginners/  
-- Holt’s — cigar lounge etiquette  
-  https://www.holts.com/clubhouse/cigar-culture/cigar-lounge-etiquette  
-- Gentleman’s Gazette — lounge etiquette 101  
-  https://www.gentlemansgazette.com/cigar-etiquette-101-what-to-do-and-not-to-do-at-your-local-cigar-lounge/  
-- Beyond the Humidor — podcast (Apple)  
-  https://podcasts.apple.com/us/podcast/beyond-the-humidor-a-cigar-podcast-for-the-rest-of-us/id1480171817  
-
-Napomena: američki običaji napojnica, naplate reza i propisanog odijevanja **nisu** preneseni kao hrvatske norme. Lokalni klub, trgovina i terasa imaju prednost.
-
-### Stol, pairing i umakanje
-
-- JR Cigars — dipping a cigar in alcohol  
-  https://www.jrcigars.com/blending-room/university/cigar-tips/cigar-etiquette-dipping-your-cigar-in-alcohol/  
-- Holt’s — should you dip a cigar in whiskey?  
-  https://www.holts.com/clubhouse/cigar-101/should-you-dip-your-cigar-in-whiskey  
-- Holt’s — cigar basics (cut, light, manners)  
-  https://www.holts.com/clubhouse/cigar-101/cigar-basics  
-- La Aurora — pairing guide (whiskey, rum, coffee)  
-  https://www.laaurora.com/blogs/news/cigar-pairing-guide-whiskey-rum-coffee-and-chocolate  
-- Whisky.com — tasting guide (glass, water)  
-  https://www.whisky.com/tasting-guide.html  
-- Whisky.com — diluting with water  
-  https://www.whisky.com/diluting-whisky.html  
-
-### Rječnik i degustacija (orijentacija)
-
-- Cigar Aficionado Podcast Ep. 1 — blind tastings  
-  https://www.youtube.com/watch?v=sApf8DHooO4  
-- Wikipedia — cigar etiquette  
-  https://en.wikipedia.org/wiki/Cigar_etiquette  
-
-### Napomena autora o pripremi
-
-Priprema rukopisa koristila je javne članke, Clubhouse vodiče, videozapise i podcasti (gore navedene i srodne). Privremeno su ti materijali grupirani u autorovim bilježnicama radi čitanja — to **nije** popis izvora za tiskanu knjigu. Činjenice o povijesti i tehnici u tekstu namjerno su kratke i oprezne („kažu”, „uobičajeno je”).
-
-Autor je liječnik. Stolne napomene o ritmu, nikotinu ili želucu **nisu** medicinski savjet; knjiga ostaje vodič uljudnosti, ne klinički tekst.
-
-Kratki kanonski precepti za aplikaciju Club žive odvojeno u *Maloj knjizi pušačkog bontona*; ovaj draft proširuje žanr u cjelovitu popularnu knjigu. Isti popis vanjskih izvora stoji i na dnu Kluba u aplikaciji.
-
-### Što namjerno nije u knjizi
-
-- Ljestvice marki 
-- Tehnički priručnik humidora kao bonton 
-- Moraliziranje o zdravlju izvan mjere i suglasnosti 
-- Popisi zabranjenih trgovina i eseji o konglomeratima 
+Isti popis stoji na dnu Kluba u aplikaciji. Autor je liječnik; stolne napomene o ritmu i nikotinu dio su bontona, ne liječnički savjet.
 
 ---
 

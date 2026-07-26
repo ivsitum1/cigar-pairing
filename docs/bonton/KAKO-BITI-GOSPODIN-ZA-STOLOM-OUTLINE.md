@@ -93,15 +93,11 @@ I Duh · II Prostor · III Nuditi · IV Tempo · V Pepeo · VI Stol · VII Doma�
 
 ## Izvori za kraj knjige (radni popis)
 
-**Pravilo:** samo originalne stranice / podcasti / video — ne NotebookLM, ne grill dumpovi, ne interne bilješke. Usklađeno s `app/src/data/clubSources.json` (Club footer).
+Neutralan popis, jedan red po izvoru (stranici), usklađen s `app/src/data/clubSources.json` (Club footer):
 
-- CigarLounges, VDG, The Manual, Casa de Montecristo — lounge etiquette  
-- Holt’s Clubhouse — lounge etiquette, basics, dipping  
-- Gentleman’s Gazette — lounge etiquette 101  
-- Beyond the Humidor — podcast  
-- JR Cigars — dipping; La Aurora — pairing; Whisky.com — glass/water  
-- Cigar Aficionado Podcast Ep. 1; Wikipedia — cigar etiquette (orijentacija)  
-- Debrett / Emily Post / Bridges — **forma** precepta, ne cigar sadržaj  
+- Beyond the Humidor, Casa de Montecristo, Cigar Aficionado, CigarLounges, cigars.com  
+- Gentleman’s Gazette, Holt’s Clubhouse, JR Cigars, La Aurora, The Manual, VDG, Whisky.com, Wikipedia  
+- Bridges / Debrett / Emily Post — tradicija forme kratkih pravila  
 - Kanon aplikacije: `mala-knjiga-pusackog-bontona.md`
 
 ---

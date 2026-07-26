@@ -104,7 +104,7 @@
 
 **Pairing kandidati:** body↔intenzitet/ABV; ABV≈46%+ vs puni dim; Maduro↔slatkoća (deklaracija); CT≠doslađeni rum; nic-sick hint (slatko, ne double espresso).
 
-**Vanjski linkovi (samo originali; vidi `clubSources.json` / kraj knjižnog drafta):** [CigarLounges](https://www.cigarlounges.co/blog/cigar-lounge-etiquette) · [VDG](https://vdg-cigars.com/cigar-lounge-etiquette-the-complete-rules-guide/) · [The Manual](https://www.themanual.com/culture/cigar-etiquette-101/) · Holt’s / JR / Gentleman’s Gazette / Beyond the Humidor — ne NotebookLM.
+**Vanjski linkovi (kanon: `clubSources.json` / kraj knjižnog drafta):** [CigarLounges](https://www.cigarlounges.co/blog/cigar-lounge-etiquette) · [VDG](https://vdg-cigars.com/cigar-lounge-etiquette-the-complete-rules-guide/) · [The Manual](https://www.themanual.com/culture/cigar-etiquette-101/) · Holt’s Clubhouse · JR Cigars · Gentleman’s Gazette · Beyond the Humidor.
 
 *Zadnje ažuriranje inboxa: 2026-07-18. Dodavati bullet po bullet — ne prepisivati kanonski rukopis.*
 

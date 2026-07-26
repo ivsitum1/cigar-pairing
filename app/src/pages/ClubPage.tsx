@@ -19,22 +19,15 @@ import { navigate, useRoute } from "../store/route";
 interface Quote { text: LocalizedText; author: string; note?: LocalizedText }
 interface Fact { hr: string; en: string }
 interface QuizQ { q: LocalizedText; a: LocalizedText[]; correct: number; why: LocalizedText }
-type SourceKind = "article" | "video" | "podcast";
 interface SourceItem {
   label: LocalizedText;
   url: string;
-  kind: SourceKind;
-}
-interface SourceGroup {
-  id: string;
-  title: LocalizedText;
-  items: SourceItem[];
 }
 
 const QUOTES = club.quotes as Quote[];
 const FACTS = club.facts as Fact[];
 const QUIZ = club.quiz as QuizQ[];
-const SOURCE_GROUPS = clubSources.groups as SourceGroup[];
+const SOURCE_ITEMS = clubSources.items as SourceItem[];
 const SOURCE_INTRO = clubSources.intro as LocalizedText;
 
 // dan u godini — deterministicki "dnevni" izbor
@@ -102,6 +95,7 @@ export function ClubPage() {
   // karta
   const [view, setView] = useState<"world" | "carib" | "europe">("world");
   const [country, setCountry] = useState<CountryInfo | null>(null);
+  const [showSources, setShowSources] = useState(false);
   const [detail, setDetail] = useState<
     { kind: "cigar"; item: Cigar } | { kind: "drink"; item: Drink } | null
   >(null);
@@ -405,53 +399,34 @@ export function ClubPage() {
         </>
       )}
 
-      <SectionTitle>{t("club.sources")}</SectionTitle>
-      <div className="rounded-xl border border-zlato/25 bg-cedar p-4">
-        <p className="mb-4 text-sm leading-relaxed text-papir/80">{lx(SOURCE_INTRO)}</p>
-        <div className="space-y-4">
-          {SOURCE_GROUPS.map((group) => (
-            <div key={group.id}>
-              <h3 className="mb-2 font-display text-xs uppercase tracking-widest text-zlato">{lx(group.title)}</h3>
-              <ul className="space-y-1.5">
-                {group.items.map((item) => {
-                  let kindKey: "club.sourceKind.article" | "club.sourceKind.video" | "club.sourceKind.podcast";
-                  switch (item.kind) {
-                    case "article":
-                      kindKey = "club.sourceKind.article";
-                      break;
-                    case "video":
-                      kindKey = "club.sourceKind.video";
-                      break;
-                    case "podcast":
-                      kindKey = "club.sourceKind.podcast";
-                      break;
-                    default: {
-                      const _exhaustive: never = item.kind;
-                      void _exhaustive;
-                      kindKey = "club.sourceKind.article";
-                      break;
-                    }
-                  }
-                  return (
-                    <li key={item.url}>
-                      <a
-                        href={item.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="block rounded-lg border border-dim/20 px-3 py-2 text-sm text-papir/90 transition-colors hover:border-zlato/40 hover:bg-zlato/5"
-                      >
-                        <span className="mr-2 font-display text-[10px] uppercase tracking-wider text-dim">
-                          {t(kindKey)}
-                        </span>
-                        {lx(item.label)}
-                      </a>
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
-          ))}
-        </div>
+      <div className="mt-6 border-t border-dim/15 pt-3">
+        <button
+          type="button"
+          onClick={() => setShowSources((s) => !s)}
+          aria-expanded={showSources}
+          className="font-display text-xs uppercase tracking-widest text-dim transition-colors hover:text-zlato"
+        >
+          {t("club.sources")} {showSources ? "–" : "+"}
+        </button>
+        {showSources && (
+          <div className="mt-3">
+            <p className="mb-3 text-xs leading-relaxed text-papir/60">{lx(SOURCE_INTRO)}</p>
+            <ul className="flex flex-wrap gap-x-4 gap-y-1.5">
+              {SOURCE_ITEMS.map((item) => (
+                <li key={item.url}>
+                  <a
+                    href={item.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs text-papir/70 underline decoration-dim/30 underline-offset-2 transition-colors hover:text-zlato hover:decoration-zlato/50"
+                  >
+                    {lx(item.label)}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
       </div>
 
       <DetailSheet target={detail} onClose={() => setDetail(null)} />
