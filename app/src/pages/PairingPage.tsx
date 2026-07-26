@@ -28,10 +28,11 @@ import { CustomPairing } from "./CustomPairing";
 type Mode = "cigarToDrink" | "drinkToCigar" | "custom";
 type Occasion = "any" | "morning" | "afternoon" | "evening";
 
-// prilika filtrira pica po punoci: jutro uz kavu/lagane sippere, vecer uz bogate
+// prilika filtrira pica po punoci: jutro uz kavu i lagana-do-srednja pica
+// (ne samo najlaganja — inace srednja cigara ostaje bez pravog ruma), vecer uz bogate
 const OCCASION_KEEP: Record<Occasion, (d: Drink) => boolean> = {
   any: () => true,
-  morning: (d) => d.category === "coffee" || d.body <= 2,
+  morning: (d) => d.category === "coffee" || d.body <= 3,
   afternoon: (d) => d.category === "coffee" || d.body <= 3,
   evening: (d) => d.category === "coffee" || d.body >= 3,
 };
@@ -722,8 +723,11 @@ function ResultCard({
     result.score,
   );
   const blurb = pairingBlurb(cigar, drink, result.reasons, result.score);
+  // par koji nosi kurirano upozorenje nije preporuka: priguši karticu i ne vodi
+  // pozitivnim blurbom (inače "note se nadopunjuju" proturječi "ne preporučujemo")
+  const weak = pairingOpinion?.tone === "warning";
   return (
-    <div className="rounded-xl border border-dim/15 bg-cedar p-3">
+    <div className={`rounded-xl border bg-cedar p-3 ${weak ? "border-dim/10 opacity-70" : "border-dim/15"}`}>
       <div className="flex items-center gap-3">
         <ScoreBand score={result.score} title={t("rate.matchWhat")} />
         <div
@@ -789,7 +793,9 @@ function ResultCard({
           ))}
         </div>
       )}
-      <p className="mt-2 text-xs leading-relaxed text-papir/80">{lx(blurb)}</p>
+      {!weak && (
+        <p className="mt-2 text-xs leading-relaxed text-papir/80">{lx(blurb)}</p>
+      )}
       {pairingOpinion && (
         <div
           className={`mt-2 rounded-md border px-2.5 py-1.5 text-xs ${
@@ -807,16 +813,17 @@ function ResultCard({
       {open && (
         <div className="mt-2 space-y-2 border-t border-dim/15 pt-2">
           <ul className="space-y-1">
-            {positive.map((r, i) => (
-              <li key={i} className="flex gap-2 text-xs leading-relaxed text-papir/85">
-                <span className="text-lista">＋</span> {lx(r.text)}
-              </li>
-            ))}
-            {negative.map((r, i) => (
-              <li key={i} className="flex gap-2 text-xs leading-relaxed text-dim">
-                <span className="text-oxblood">−</span> {lx(r.text)}
-              </li>
-            ))}
+            {(weak ? [...negative, ...positive] : [...positive, ...negative]).map((r, i) =>
+              r.score < 0 ? (
+                <li key={i} className="flex gap-2 text-xs leading-relaxed text-dim">
+                  <span className="text-oxblood">−</span> {lx(r.text)}
+                </li>
+              ) : (
+                <li key={i} className="flex gap-2 text-xs leading-relaxed text-papir/85">
+                  <span className="text-lista">＋</span> {lx(r.text)}
+                </li>
+              ),
+            )}
           </ul>
         </div>
       )}
