@@ -953,6 +953,62 @@
     {
       "hr": "Traka (band) skida se kad se ljepilo ugrije i omot omekša, obično nakon centimetra-dva. Čupanje hladne trake može potrgati wrapper. Nije sramota ostaviti je do kraja ako drži.",
       "en": "The band comes off when glue warms and the wrapper softens, usually after a centimetre or two. Yanking a cold band can tear the wrapper. Leaving it on to the end is fine if it holds."
+    },
+    {
+      "hr": "Triple cap je trostruko zatvaranje glave cigare tankim listićima wrappera. Cilj je uredan izgled i manje kidanja pri rezu. Nije jamstvo okusa, ali jest znak pažljivog završetka.",
+      "en": "A triple cap is a three-layer finish of the cigar’s head with thin wrapper pieces. The aim is a neat look and less tearing when cut. It does not guarantee flavour, but it signals careful finishing."
+    },
+    {
+      "hr": "Vlak (draw): previše otvoren gori vruće; previše zatvoren peče i gasi se. Blagi masaža duž cigare ili drugi rez (ne pretjeran) ponekad pomogne. Ako je čep od duhana unutra, bolje drugu cigaru nego sila.",
+      "en": "Draw: too open burns hot; too tight scorches and goes out. A gentle massage along the cigar or a second cut (not excessive) sometimes helps. If a tobacco plug sits inside, another cigar beats force."
+    },
+    {
+      "hr": "Binder (vezni list) drži punilo na okupu ispod omota. Filler (punilo) gradi tijelo okusa i snagu (mješavina lista po visini biljke). Wrapper je koža: miris, izgled i dio okusa.",
+      "en": "The binder holds the filler together under the wrapper. Filler builds body and strength (a blend of leaves by plant height). Wrapper is the skin: aroma, looks and part of the flavour."
+    },
+    {
+      "hr": "Omotni listovi sortiraju se po veličini, boji i elastičnosti. Bolji „wrap” ide na vidljive cigare; manji ili s mrljama često završe kao binder. Boja nije jedina mjera kvalitete.",
+      "en": "Wrapper leaves are sorted by size, colour and elasticity. Better wraps go on show cigars; smaller or spotted leaves often become binder. Colour alone is not a quality score."
+    },
+    {
+      "hr": "Čep (plug) je zbijeni duhan koji blokira vlak. Simptom: gotovo nema dima unatoč jakom vučenju. Ne forsiraj usisavanje; drugi rez ili druga cigara spašavaju večer.",
+      "en": "A plug is packed tobacco that blocks the draw. Symptom: almost no smoke despite hard pulling. Do not force suction; a second cut or another cigar saves the evening."
+    },
+    {
+      "hr": "Ako se wrapper odvija, malo sline na prstu (ili čista voda) i nježno priljubi rub u smjeru uvijanja. Velika kidanja znače kraj sesije, ne ljepilo iz ladice.",
+      "en": "If the wrapper unravels, a little saliva on a finger (or clean water) and gently press the edge back in the roll direction. Big tears end the session; do not raid the desk glue."
+    },
+    {
+      "hr": "Touch-up paljenje: kad jedna strana zaostaje, kratko podgrij taj rub plamenom dok se ne poravna žar. Bolje mali popravak nego pretjerano vučenje koje peče cijelu cigaru.",
+      "en": "Touch-up lighting: when one side lags, briefly warm that rim with the flame until the coal evens. A small fix beats over-puffing that scorches the whole cigar."
+    },
+    {
+      "hr": "Kad dim postane vruć, gorak ili „prazan”, uspori: duže stanke, kraći dimovi, gutljaj vode. Temperatura u ustima često kaže više od sata na telefonu.",
+      "en": "When smoke turns hot, bitter or ‘empty’, slow down: longer pauses, shorter puffs, a sip of water. Mouth temperature often says more than the clock on your phone."
+    },
+    {
+      "hr": "Otvorena boca žestokog (visok alkohol) traje mjesecima ako je čep dobar i stoji uspravno, dalje od sunca. Otvoreno vino i fino sherry brže gube svježinu: planiraj ih potrošiti ranije.",
+      "en": "An opened high-strength spirit lasts months if the cork is sound and the bottle stands upright, away from sun. Open wine and fino sherry lose freshness faster: plan to finish them sooner."
+    },
+    {
+      "hr": "Vintage porto se često dekantira: talog ostaje u boci, vino u karahu diše. Tawny porto talog rijetko treba; služi se iz boce. Uz cigaru, dekantiranje je za sediment, ne za „show”.",
+      "en": "Vintage port is often decanted: sediment stays in the bottle, wine in the carafe breathes. Tawny rarely needs it; pour from the bottle. With a cigar, decanting is for sediment, not for show."
+    },
+    {
+      "hr": "Čaša: tulipan ili cognac ballon skuplja aromu žestokog; tumbler više hladi i razrjeđuje s ledom; vinska čaša širi vino. Za pairing biraj čašu koja ne guši piće ispod dima.",
+      "en": "Glassware: a tulip or cognac balloon gathers spirit aroma; a tumbler chills and dilutes more with ice; a wine glass opens wine. For pairing, pick a glass that does not smother the drink under smoke."
+    },
+    {
+      "hr": "Led uz žestoko i cigaru brzo razvodni okus i hladi nepce. Ponekad trebaš hladnoću; češće uz kompleksnu bačvu i maduro bolje ide malo vode ili neat gutljaj.",
+      "en": "Ice with spirits and a cigar quickly dilutes flavour and chills the palate. Sometimes you want the cold; more often with a complex cask and a maduro, a little water or a neat sip works better."
+    },
+    {
+      "hr": "Voda je reset nepca: između jakog dima i slatkog gutljaja, ili kad se arome pomiješaju. Nezamjenjiva uz dugu sesiju, jeftinija od drugog koktela.",
+      "en": "Water resets the palate: between strong smoke and a sweet sip, or when aromas muddle. Essential on a long session, cheaper than a second cocktail."
+    },
+    {
+      "hr": "Cask finish znači da duh nakon glavnog odležavanja kratko provede u drugoj bačvi (npr. sherry ili vino). Dodaje sloj arome; ne briše izvorni karakter destilata ako je finish umjeren.",
+      "en": "Cask finish means the spirit, after main ageing, spends a short time in a second cask (e.g. sherry or wine). It adds an aroma layer; a moderate finish does not erase the distillate’s character."
     }
   ],
   "quiz": [
@@ -6174,6 +6230,470 @@
       "why": {
         "hr": "QC je dio lanca prije nego kutija krene na put.",
         "en": "QC is part of the chain before the box ships."
+      }
+    },
+    {
+      "q": {
+        "hr": "Triple cap na cigari je…",
+        "en": "A triple cap on a cigar is…"
+      },
+      "a": [
+        {
+          "hr": "trostruko zatvaranje glave listićima wrappera",
+          "en": "a three-layer finish of the head with wrapper pieces"
+        },
+        {
+          "hr": "tri različita punila u jednoj kutiji",
+          "en": "three different fillers in one box"
+        },
+        {
+          "hr": "alat s tri oštrice",
+          "en": "a tool with three blades"
+        },
+        {
+          "hr": "obvezni pepeo od tri centimetra",
+          "en": "mandatory three-centimetre ash"
+        }
+      ],
+      "correct": 0,
+      "why": {
+        "hr": "Završni sloj na glavi, ne recept punila.",
+        "en": "A finishing layer on the head, not a filler recipe."
+      }
+    },
+    {
+      "q": {
+        "hr": "Ako je vlak pretijesan, loš prvi korak je…",
+        "en": "If the draw is too tight, a bad first step is…"
+      },
+      "a": [
+        {
+          "hr": "nježna masaža duž cigare",
+          "en": "a gentle massage along the cigar"
+        },
+        {
+          "hr": "silovito usisavanje dok ne pocrveniš",
+          "en": "violent sucking until you turn red"
+        },
+        {
+          "hr": "provjera je li rez dovoljan",
+          "en": "checking whether the cut is enough"
+        },
+        {
+          "hr": "zamjena cigare ako je unutra čep",
+          "en": "switching cigars if a plug sits inside"
+        }
+      ],
+      "correct": 1,
+      "why": {
+        "hr": "Sila peče i ne otvara čep; miran popravak ili druga cigara.",
+        "en": "Force scorches and does not clear a plug; calm fix or another cigar."
+      }
+    },
+    {
+      "q": {
+        "hr": "Binder list…",
+        "en": "The binder leaf…"
+      },
+      "a": [
+        {
+          "hr": "je samo naljepnica na kutiji",
+          "en": "is only the sticker on the box"
+        },
+        {
+          "hr": "je vanjski sjajni celofan",
+          "en": "is the outer glossy cellophane"
+        },
+        {
+          "hr": "drži punilo ispod omota",
+          "en": "holds the filler under the wrapper"
+        },
+        {
+          "hr": "je pepeo nakon paljenja",
+          "en": "is the ash after lighting"
+        }
+      ],
+      "correct": 2,
+      "why": {
+        "hr": "Binder je konstrukcija; wrapper je koža.",
+        "en": "Binder is structure; wrapper is the skin."
+      }
+    },
+    {
+      "q": {
+        "hr": "Čep (plug) u cigari…",
+        "en": "A plug in a cigar…"
+      },
+      "a": [
+        {
+          "hr": "poboljšava retrohale",
+          "en": "improves the retrohale"
+        },
+        {
+          "hr": "obvezan je u svim robustima",
+          "en": "is required in every robusto"
+        },
+        {
+          "hr": "dokaz je da je cedar svjež",
+          "en": "proves the cedar is fresh"
+        },
+        {
+          "hr": "blokira vlak zbijenim duhanom",
+          "en": "blocks the draw with packed tobacco"
+        }
+      ],
+      "correct": 3,
+      "why": {
+        "hr": "Zato gotovo nema dima unatoč vučenju.",
+        "en": "That is why there is almost no smoke despite pulling."
+      }
+    },
+    {
+      "q": {
+        "hr": "Manje kidanje wrappera pri odvijanju…",
+        "en": "A small wrapper unravel…"
+      },
+      "a": [
+        {
+          "hr": "može se nježno priljubiti vlagom prsta u smjeru uvijanja",
+          "en": "can be gently pressed back with finger moisture along the roll"
+        },
+        {
+          "hr": "mora se zalijepiti superljepilom",
+          "en": "must be fixed with superglue"
+        },
+        {
+          "hr": "znači da je cijela kutija pokvarena",
+          "en": "means the whole box is ruined"
+        },
+        {
+          "hr": "popravlja se samo u tvornici na Kubi",
+          "en": "is repaired only in a Cuban factory"
+        }
+      ],
+      "correct": 0,
+      "why": {
+        "hr": "Mali rub da; veliko kidanje završava sesiju.",
+        "en": "A small edge yes; a big tear ends the session."
+      }
+    },
+    {
+      "q": {
+        "hr": "Touch-up paljenje služi…",
+        "en": "Touch-up lighting is for…"
+      },
+      "a": [
+        {
+          "hr": "kad jedna strana žara zaostaje",
+          "en": "when one side of the coal lags"
+        },
+        {
+          "hr": "kad želiš brže potrošiti cijelu kutiju",
+          "en": "when you want to finish the whole box faster"
+        },
+        {
+          "hr": "samo prije stavljanja trake",
+          "en": "only before putting the band on"
+        },
+        {
+          "hr": "isključivo uz led u čaši",
+          "en": "only with ice in the glass"
+        }
+      ],
+      "correct": 2,
+      "why": {
+        "hr": "Kratko podgrij rub, ne peči cijelu cigaru.",
+        "en": "Warm the rim briefly; do not scorch the whole cigar."
+      }
+    },
+    {
+      "q": {
+        "hr": "Kad dim postane vruć i gorak…",
+        "en": "When smoke turns hot and bitter…"
+      },
+      "a": [
+        {
+          "hr": "ubrzaj tempo da „prođe”",
+          "en": "speed up to ‘get through it’"
+        },
+        {
+          "hr": "uspori, napravi stanke i popij vode",
+          "en": "slow down, pause and drink water"
+        },
+        {
+          "hr": "dodaj šećer na jezik",
+          "en": "put sugar on your tongue"
+        },
+        {
+          "hr": "zatvori humidor dok pušiš",
+          "en": "close the humidor while you smoke"
+        }
+      ],
+      "correct": 1,
+      "why": {
+        "hr": "Temperatura i ritam spašavaju ostatak cigare.",
+        "en": "Temperature and pace save the rest of the cigar."
+      }
+    },
+    {
+      "q": {
+        "hr": "Otvoreno fino sherry u usporedbi s otvorenim whiskyjem…",
+        "en": "Open fino sherry compared with open whisky…"
+      },
+      "a": [
+        {
+          "hr": "traje jednako dugo u svim uvjetima",
+          "en": "lasts equally long in all conditions"
+        },
+        {
+          "hr": "traje dulje jer je jače",
+          "en": "lasts longer because it is stronger"
+        },
+        {
+          "hr": "ne postoji u boci",
+          "en": "does not exist in bottle form"
+        },
+        {
+          "hr": "brže gubi svježinu; potroši ga ranije",
+          "en": "loses freshness faster; finish it sooner"
+        }
+      ],
+      "correct": 3,
+      "why": {
+        "hr": "Visok alkohol žestokog bolje podnosi zrak nego krhki fino.",
+        "en": "High-strength spirits handle air better than fragile fino."
+      }
+    },
+    {
+      "q": {
+        "hr": "Dekantiranje vintage porta prvenstveno…",
+        "en": "Decanting vintage port primarily…"
+      },
+      "a": [
+        {
+          "hr": "odvaja talog i daje vinu zraka",
+          "en": "separates sediment and gives the wine air"
+        },
+        {
+          "hr": "dodaje šećer",
+          "en": "adds sugar"
+        },
+        {
+          "hr": "pretvara ga u tawny",
+          "en": "turns it into tawny"
+        },
+        {
+          "hr": "zamjenjuje potrebu za čašom",
+          "en": "replaces the need for a glass"
+        }
+      ],
+      "correct": 0,
+      "why": {
+        "hr": "Talog ostaje; vino u karahu diše.",
+        "en": "Sediment stays behind; wine in the carafe breathes."
+      }
+    },
+    {
+      "q": {
+        "hr": "Tulipan ili ballon čaša za žestoko…",
+        "en": "A tulip or balloon glass for spirits…"
+      },
+      "a": [
+        {
+          "hr": "guši aromu namjerno",
+          "en": "smothers aroma on purpose"
+        },
+        {
+          "hr": "služi samo za led bez pića",
+          "en": "is only for ice with no drink"
+        },
+        {
+          "hr": "skuplja aromu prema nosu",
+          "en": "gathers aroma toward the nose"
+        },
+        {
+          "hr": "obavezna je za svaku cigaru",
+          "en": "is mandatory for every cigar"
+        }
+      ],
+      "correct": 2,
+      "why": {
+        "hr": "Oblik vodi miris; tumbler više hladi s ledom.",
+        "en": "Shape guides scent; a tumbler chills more with ice."
+      }
+    },
+    {
+      "q": {
+        "hr": "Led uz kompleksnu bačvu i maduro često…",
+        "en": "Ice with a complex cask and a maduro often…"
+      },
+      "a": [
+        {
+          "hr": "mora biti od pjenušca",
+          "en": "must be made from sparkling wine"
+        },
+        {
+          "hr": "poboljšava nikotin",
+          "en": "improves nicotine"
+        },
+        {
+          "hr": "je jedini legalni način serviranja",
+          "en": "is the only legal serve"
+        },
+        {
+          "hr": "prebrzo razvodni i hladi nepce",
+          "en": "dilutes and chills the palate too fast"
+        }
+      ],
+      "correct": 3,
+      "why": {
+        "hr": "Neat ili kap vode često čuvaju više arome.",
+        "en": "Neat or a drop of water often keeps more aroma."
+      }
+    },
+    {
+      "q": {
+        "hr": "Voda u pairing sesiji…",
+        "en": "Water in a pairing session…"
+      },
+      "a": [
+        {
+          "hr": "resetira nepce između dima i gutljaja",
+          "en": "resets the palate between smoke and sip"
+        },
+        {
+          "hr": "zamjenjuje potrebu za pepeljarom",
+          "en": "replaces the need for an ashtray"
+        },
+        {
+          "hr": "suši humidor",
+          "en": "dries the humidor"
+        },
+        {
+          "hr": "uklanja traku s cigare",
+          "en": "removes the band from the cigar"
+        }
+      ],
+      "correct": 1,
+      "why": {
+        "hr": "Jednostavan reset bez novog koktela.",
+        "en": "A simple reset without another cocktail."
+      }
+    },
+    {
+      "q": {
+        "hr": "Cask finish znači…",
+        "en": "Cask finish means…"
+      },
+      "a": [
+        {
+          "hr": "da se boca boji ručno",
+          "en": "that the bottle is hand-painted"
+        },
+        {
+          "hr": "da destilat nakon glavnog odležavanja kratko odstoji u drugoj bačvi",
+          "en": "that after main ageing the spirit rests briefly in a second cask"
+        },
+        {
+          "hr": "da se cigara dimi bačvom",
+          "en": "that the cigar is smoked with a barrel"
+        },
+        {
+          "hr": "da je piće bez alkohola",
+          "en": "that the drink is non-alcoholic"
+        }
+      ],
+      "correct": 1,
+      "why": {
+        "hr": "Druga bačva dodaje sloj, ne briše nužno cijeli karakter.",
+        "en": "The second cask adds a layer; it need not erase the whole character."
+      }
+    },
+    {
+      "q": {
+        "hr": "Filler u cigari prvenstveno…",
+        "en": "Filler in a cigar primarily…"
+      },
+      "a": [
+        {
+          "hr": "je vanjski omot za fotografiju",
+          "en": "is the outer wrap for photos"
+        },
+        {
+          "hr": "je ljepilo trake",
+          "en": "is the band glue"
+        },
+        {
+          "hr": "je samo tinta na kutiji",
+          "en": "is only ink on the box"
+        },
+        {
+          "hr": "gradi tijelo okusa i snagu mješavinom lista",
+          "en": "builds flavour body and strength via the leaf blend"
+        }
+      ],
+      "correct": 3,
+      "why": {
+        "hr": "Punilo je motor; binder drži, wrapper obuče.",
+        "en": "Filler is the engine; binder holds, wrapper dresses."
+      }
+    },
+    {
+      "q": {
+        "hr": "Sortiranje wrapper lista gleda…",
+        "en": "Sorting wrapper leaf looks at…"
+      },
+      "a": [
+        {
+          "hr": "veličinu, boju i elastičnost, ne samo boju",
+          "en": "size, colour and elasticity, not colour alone"
+        },
+        {
+          "hr": "samo cijenu na aukciji duhana",
+          "en": "only the price at a tobacco auction"
+        },
+        {
+          "hr": "samo zemlju na putovnici kupca",
+          "en": "only the country on the buyer’s passport"
+        },
+        {
+          "hr": "samo težinu pepela",
+          "en": "only ash weight"
+        }
+      ],
+      "correct": 0,
+      "why": {
+        "hr": "Elastičnost i veličina određuju hoće li list ići kao omot.",
+        "en": "Elasticity and size decide whether a leaf becomes wrapper."
+      }
+    },
+    {
+      "q": {
+        "hr": "Pretjerano otvoren vlak često znači…",
+        "en": "An overly open draw often means…"
+      },
+      "a": [
+        {
+          "hr": "hladniji, sporiji dim uvijek",
+          "en": "always cooler, slower smoke"
+        },
+        {
+          "hr": "da se mora dodati led u humidor",
+          "en": "that ice must be added to the humidor"
+        },
+        {
+          "hr": "vruće, brzo gorenje i kraći užitak",
+          "en": "hot, fast burning and a shorter pleasure"
+        },
+        {
+          "hr": "da je RH točno 100 %",
+          "en": "that RH is exactly 100%"
+        }
+      ],
+      "correct": 2,
+      "why": {
+        "hr": "Previše zraka tjera temperaturu gore.",
+        "en": "Too much air drives temperature up."
       }
     }
   ]
