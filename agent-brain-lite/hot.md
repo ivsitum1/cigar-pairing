@@ -2,12 +2,16 @@
 title: Session Hot Cache
 category: meta
 tags: [session, cache]
-updated: 2026-07-25
+updated: 2026-07-26
 ---
 
 # Session Hot Cache
 
 ~500 riječi snapshot nedavne aktivnosti. Agent ažurira nakon svake značajnije operacije pisanja u wiki.
+
+> **2026-07-26:** Klub facts/kviz krugovi 6–8 (nastavak Claude sesije): 148→190 facts, 148→196 quiz u `club.json`; bez em dasha / dimka.
+
+> **2026-07-26:** HR rječnik (puff): **dim** (brojivo: prvi dim, jedan dim). Ne: dimka, povlačenje, potez, usis. Tvar/atmosfera i dalje *dim*.
 
 > **2026-07-26:** HR spirits: gin/tequila pipeline (scrape→Excel→calibrate-master→JSON); brandy refresh + orphan merge. Katalog: gin 70, tequila 26, brandy 98. Branch `catalog-hr-gin-tequila-cognac`.
 
