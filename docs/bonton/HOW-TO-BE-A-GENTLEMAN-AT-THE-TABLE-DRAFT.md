@@ -911,7 +911,7 @@ A gentleman does not photograph someone else's weakness. Never.
 
 ## 16. The lounge and the club
 
-A public smoking room is not your living room. A private terrace is not a lounge with a price list. Tell them apart.
+A cigar lounge is not your living room. A private terrace is not a lounge with a price list. Tell them apart.
 
 ### Ten precepts of the lounge
 
@@ -919,7 +919,7 @@ A public smoking room is not your living room. A private terrace is not a lounge
 
 2. **Cutter hygiene.** Never lick the cap on a shared tool. Your own cutter or a clean house one — ask.
 
-3. **Support the house.** In a public smoking room and a specialist shop, supporting the house is part of courtesy. On a private terrace, hospitality applies, not an imported cut fee as if it were a local custom. Don't carry someone else's tipping over as local law. Don't camp for hours as if the seat were a free office.
+3. **The place.** In a cigar lounge and a specialist shop, supporting the place by buying or following its rules is part of courtesy. On a private terrace you are a guest at a friend's home, not a customer: a foreign lounge cut fee is not a local custom here. Don't carry someone else's tipping over as local law. Don't camp for hours as if the seat were a free office.
 
 4. **Smoke.** Away from faces. Upward. Not into the neighbouring table as if you were sharing an opinion.
 
@@ -937,7 +937,7 @@ A public smoking room is not your living room. A private terrace is not a lounge
 
 ### What not to import blindly
 
-In some countries there are rigid rules about tipping, dress, and those who only sponge off others. In the Croatian context: the local club, the local shop, the local terrace. Look at what the house expects. Don't playact someone else's etiquette to look worldly.
+In some countries there are rigid rules about tipping, dress, and those who only sponge off others. In the Croatian context: the local club, the local shop, the local terrace. Look at what the host expects. Don't playact someone else's etiquette to look worldly.
 
 ### Contradictions without dogma
 
@@ -2007,7 +2007,7 @@ If you remember only this sequence, the lounge won't hate you.
 12. Someone warms brandy over the flame → offer a glass without the show.
 13. Someone dips the leaf → "I'll keep mine separate".
 14. Someone is late and expects everyone to wait with a lit cigar → agree in advance.
-15. Someone brings a vape into the lounge → ask the house, respect the answer.
+15. Someone brings a vape into the lounge → ask the host, respect the answer.
 16. Someone talks over a toast → wait for the ash and the silence.
 17. Someone leaves ash on the rim of a pot → move it to the ashtray quietly.
 18. Someone brags about the tower → don't applaud.
@@ -2455,9 +2455,9 @@ If a guest leaves and says "I enjoyed it", the host has won. If he leaves and sa
 
 ## Essay: A lounge is not a living room
 
-A public smoking room has a house. The house has expectations. A gentleman reads them.
+A cigar lounge has a host. The host has expectations. A gentleman reads them.
 
-A greeting. A seat. Cutter hygiene. Smoke up. The phone outside. Ash with dignity. Advice on request. Your own bottle — if you may — shared. Perfume in measure. Cigars, not cigarettes/vapes, if the house lives that way.
+A greeting. A seat. Cutter hygiene. Smoke up. The phone outside. Ash with dignity. Advice on request. Your own bottle — if you may — shared. Perfume in measure. Cigars, not cigarettes/vapes, if the host lives that way.
 
 A private terrace is not a lounge with a price list. Here hospitality applies, not the import of someone else's tipping as local law.
 
@@ -2592,7 +2592,7 @@ A gentleman knows how to stop; doesn't force a third; keeps water; shortens the 
 
 A gentleman offers a choice; shows the toilet; keeps the ashtray; doesn't vanish into the phone; sends thanks.
 
-A gentleman in a lounge asks for a seat; doesn't lick the cap; doesn't switch on a speakerphone; doesn't ask for a puff; respects the house locally.
+A gentleman in a lounge asks for a seat; doesn't lick the cap; doesn't switch on a speakerphone; doesn't ask for a puff; respects the host locally.
 
 A gentleman outdoors reads the wind; doesn't ash the lawn; doesn't smoke in lines of people; remembers that smoke goes up; doesn't underestimate the bura.
 
@@ -2860,14 +2860,14 @@ If a guest doesn't drink alcohol, the table doesn't die. Smoke by agreement, wat
 
 Entering: a greeting + a seat.
 The cut: hygiene.
-The house: support it locally.
+The place: by buying.
 Smoke: away from faces.
 The phone: outside, no speakerphone.
 Ash: dignity.
 Advice: on request.
 Your own bottle: share it or don't bring it.
 Perfume: in measure.
-Cigars only, if the house lives that way.
+Cigars only, if the host lives that way.
 
 Don't import someone else's types as local law.
 Don't reserve five armchairs for a ghost.
@@ -3240,32 +3240,62 @@ Egomania loves the strongest leaf, the loudest pour, the longest story. The tabl
 
 This book is popular literature. It is not a scholarly work. The references are here at the end — as is customary for guides to courtesy and reading for pleasure — and not as academic footnotes in the middle of a precept.
 
+**Citation rule:** the book (and the Club app) cite only **original** pages, articles, videos and podcasts. Internal notes, grill dumps and NotebookLM notebooks are **not** sources for the reader — they are the author's working tools.
+
 ### Form (not content)
 
 The structure of short rules and loose typesetting is inspired by the tradition of contemporary guides to courtesy, among which the Croatian reader also knows the translation of John Bridges's *How to Be a Gentleman* (Leo-commerce, 2001). The form is a model; the content about the cigar and the table is original to this manuscript.
 
 A similar formal tradition (short precepts, hospitality without snobbery) can also be recognised in broader guides to courtesy (e.g. Debrett, Emily Post) — again as form, not as a source of cigar rules.
 
-### The lounge and the public smoking room (points of reference)
+### Manners and lounge
 
-- Cigar lounge etiquette — CigarLounges
- https://www.cigarlounges.co/blog/cigar-lounge-etiquette
-- VDG — cigar lounge etiquette
- https://vdg-cigars.com/cigar-lounge-etiquette-the-complete-rules-guide/
-- The Manual — cigar etiquette 101
- https://www.themanual.com/culture/cigar-etiquette-101/
-- Casa de Montecristo — beginners
- https://www.casademontecristo.com/broadleaf-social/cigar-lounge-etiquette-for-beginners/
+- CigarLounges — lounge etiquette  
+  https://www.cigarlounges.co/blog/cigar-lounge-etiquette  
+- VDG — complete lounge rules  
+  https://vdg-cigars.com/cigar-lounge-etiquette-the-complete-rules-guide/  
+- The Manual — cigar etiquette 101  
+  https://www.themanual.com/culture/cigar-etiquette-101/  
+- Casa de Montecristo — beginners  
+  https://www.casademontecristo.com/broadleaf-social/cigar-lounge-etiquette-for-beginners/  
+- Holt’s — cigar lounge etiquette  
+  https://www.holts.com/clubhouse/cigar-culture/cigar-lounge-etiquette  
+- Gentleman’s Gazette — lounge etiquette 101  
+  https://www.gentlemansgazette.com/cigar-etiquette-101-what-to-do-and-not-to-do-at-your-local-cigar-lounge/  
+- Beyond the Humidor — podcast (Apple)  
+  https://podcasts.apple.com/us/podcast/beyond-the-humidor-a-cigar-podcast-for-the-rest-of-us/id1480171817  
 
 Note: American customs of tipping, cut fees and prescribed dress are **not** carried over as Croatian norms. The local club, shop and terrace take priority.
 
-### The author's internal research note
+### Table, pairing and dipping
 
-The preparation of the manuscript also drew on a curated corpus of notebooks (Cigar 101, Drink 101, Rum 101, Family Story, Oliva/heritage, bonton/etiquette `adfe8fc8` and the like) and on the working syntheses of the *cigar_and_rum* project (2026). These are the author's research notes and AI-assisted syntheses of public sources — **not** peer-reviewed literature. The facts of history and technique in the book are deliberately kept short and cautious ("they say", "it is common").
+- JR Cigars — dipping a cigar in alcohol  
+  https://www.jrcigars.com/blending-room/university/cigar-tips/cigar-etiquette-dipping-your-cigar-in-alcohol/  
+- Holt’s — should you dip a cigar in whiskey?  
+  https://www.holts.com/clubhouse/cigar-101/should-you-dip-your-cigar-in-whiskey  
+- Holt’s — cigar basics (cut, light, manners)  
+  https://www.holts.com/clubhouse/cigar-101/cigar-basics  
+- La Aurora — pairing guide (whiskey, rum, coffee)  
+  https://www.laaurora.com/blogs/news/cigar-pairing-guide-whiskey-rum-coffee-and-chocolate  
+- Whisky.com — tasting guide (glass, water)  
+  https://www.whisky.com/tasting-guide.html  
+- Whisky.com — diluting with water  
+  https://www.whisky.com/diluting-whisky.html  
+
+### Lexicon and tasting (orientation)
+
+- Cigar Aficionado Podcast Ep. 1 — blind tastings  
+  https://www.youtube.com/watch?v=sApf8DHooO4  
+- Wikipedia — cigar etiquette  
+  https://en.wikipedia.org/wiki/Cigar_etiquette  
+
+### Author’s note on preparation
+
+The manuscript drew on public articles, Clubhouse guides, videos and podcasts (those listed above and related ones). For reading they were temporarily grouped in the author’s notebooks — that is **not** the published source list. Facts of history and technique in the text are kept short and cautious (“they say”, “it is common”).
 
 The author is a physician. Table notes on pace, nicotine or the stomach are **not** medical advice; the book remains a guide to courtesy, not a clinical text.
 
-The short canonical precepts for the Club app live separately in *The Little Book of Smoking Etiquette*; this draft expands the genre into a full popular book.
+The short canonical precepts for the Club app live separately in *The Little Book of Smoking Etiquette*; this draft expands the genre into a full popular book. The same external source list appears at the foot of Club in the app.
 
 ### What is deliberately not in the book
 
@@ -3306,7 +3336,7 @@ The short canonical precepts for the Club app live separately in *The Little Boo
 
 **BYOB** — bring your own bottle; if you bring it, share it.
 
-**Lounge** — a public smoking room / lounge; someone else's space with its own expectations.
+**Cigar lounge** — a lounge / club; someone else's space with its own expectations.
 
 **Band** — the paper ring on the cigar; the schools of removal differ — without dogma, without litter under the table.
 

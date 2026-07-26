@@ -37,7 +37,7 @@ Precepti (HR, knjižni ton) — sync iz grill `adfe8fc8` + raniji Cigar 101:
 
 1. Ulazak: pozdrav + „je li mjesto slobodno?”  
 2. Higijena rezača — nikad „stick licker”.  
-3. Podrži kuću u javnoj pušionici; na **privatnoj terasi** vrijedi gostoprimstvo, ne cut fee.  
+3. Podrži domaćina u cigar loungeu; na **privatnoj terasi** vrijedi gostoprimstvo, ne cut fee.  
 4. Dim od lica / prema gore.  
 5. Telefon: kratko ili vani; bez zvučnika.  
 6. Pepeo; ugasi dostojanstveno (ne stubaj).  
@@ -92,11 +92,12 @@ Precepti (HR, knjižni ton) — sync iz grill `adfe8fc8` + raniji Cigar 101:
 
 ## 5. Literatura / vanjski linkovi
 
-Već u `grill-inbox.md` + Exa:
+**Pravilo (knjiga + Club):** citirati samo originalne URL-ove (članci, podcasti, video). NotebookLM / grill dumpovi = radni alat, ne popis za čitatelja. Kanon popisa: `app/src/data/clubSources.json` i kraj draftova (`KAKO-…-DRAFT.md` / `HOW-TO-…-DRAFT.md`).
 
-- CigarLounges etiquette, VDG, The Manual, Casa de Montecristo  
-- Debrett / Emily Post — forma, ne cigar sadržaj  
-- James J Fox, Gentleman's Gazette, Villiger etiquette (u Cigar 101 refresh izvorima)
+- CigarLounges, VDG, The Manual, Casa de Montecristo, Holt’s lounge, Gentleman’s Gazette, Beyond the Humidor  
+- JR / Holt’s (umakanje), La Aurora pairing, Whisky.com (čaša/voda)  
+- Cigar Aficionado Podcast Ep. 1; Wikipedia cigar etiquette (orijentacija)  
+- Debrett / Emily Post / Bridges — forma, ne cigar sadržaj
 
 ---
 
