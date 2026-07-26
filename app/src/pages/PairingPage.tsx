@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import type { Cigar, Drink, DrinkCategory, PairingResult, ServeStyle, Vitola } from "../types";
-import { ALL_DRINKS, CIGARS, cigarInRegion, cigarLinkForMarket, cigarPriceForMarket, drinkById, formatPrice, resolveCigarId } from "../data";
+import { ALL_DRINKS, CIGARS, brandDisplayName, brandSearchHaystack, cigarInRegion, cigarLinkForMarket, cigarPriceForMarket, drinkById, formatPrice, resolveCigarId } from "../data";
 import { pairCigarsForDrink, pairDrinksForCigar } from "../engine/pairing";
 import { dayKey, softBandWindow } from "../engine/softBandRank";
 import { buildPrefs } from "../engine/personal";
@@ -136,8 +136,11 @@ export function PairingPage() {
     [],
   );
   const allBrands = useMemo(
-    () => [...new Set(CIGARS.map((c) => c.brand))].sort(),
-    [],
+    () =>
+      [...new Set(CIGARS.map((c) => c.brand))].sort((a, b) =>
+        brandDisplayName(a, market).localeCompare(brandDisplayName(b, market)),
+      ),
+    [market],
   );
 
   // PUNI popis — identican onome iz kojeg engine predlaze (bez skracivanja).
@@ -149,7 +152,7 @@ export function PairingPage() {
         (c) =>
           !q ||
           norm(
-            `${c.brand} ${c.line} ${c.country} ${c.wrapper} ${c.vitolas
+            `${brandSearchHaystack(c.brand)} ${c.line} ${c.country} ${c.wrapper} ${c.vitolas
               .map((v) => v.name)
               .join(" ")}`,
           ).includes(q),
@@ -259,7 +262,7 @@ export function PairingPage() {
     if (intent.mode === "cigarToDrink") {
       setMode("cigarToDrink");
       setSelectedDrink(null);
-      setQuery(`${intent.cigar.brand} ${intent.cigar.line}`);
+      setQuery(`${brandDisplayName(intent.cigar.brand, market)} ${intent.cigar.line}`);
       const cigar = resolveCigarId(intent.cigar.id) ?? intent.cigar;
       if (needsVitolaPick(cigar)) {
         setPendingCigar(cigar);
@@ -302,7 +305,7 @@ export function PairingPage() {
       setMode("cigarToDrink");
       setSelectedDrink(null);
       setCycle({});
-      setQuery(`${cigar.brand} ${cigar.line}`);
+      setQuery(`${brandDisplayName(cigar.brand, market)} ${cigar.line}`);
       const vitolas = uniqueVitolas(cigar);
       setSelectedCigar(vitolas.length === 1 ? applyVitola(cigar, vitolas[0]) : cigar);
     } else {
@@ -393,7 +396,7 @@ export function PairingPage() {
                   toggleExcluded(b, excludedBrands, setExcludedBrands, "prefs-excluded-brands")
                 }
               >
-                {excludedBrands.includes(b) ? "✕ " : ""}{b}
+                {excludedBrands.includes(b) ? "✕ " : ""}{brandDisplayName(b, market)}
               </Chip>
             ))}
           </div>
@@ -416,7 +419,7 @@ export function PairingPage() {
                 mode === "cigarToDrink"
                   ? marketCigars.map((c) => ({
                       id: c.id,
-                      label: `${c.brand} ${c.line}`,
+                      label: `${brandDisplayName(c.brand, market)} ${c.line}`,
                       brand: c.brand,
                     }))
                   : ALL_DRINKS.filter((d) => d.pairable).map((d) => ({
@@ -457,7 +460,7 @@ export function PairingPage() {
               mode === "cigarToDrink" ? (
                 <PickRow
                   key={`${item.id}::${(item as Cigar).line}`}
-                  title={`${(item as Cigar).brand} ${(item as Cigar).line}`}
+                  title={`${brandDisplayName((item as Cigar).brand, market)} ${(item as Cigar).line}`}
                   sub={`${(item as Cigar).vitolas.length > 1 ? `${(item as Cigar).vitolas.length} ${t("common.vitolaCountSuffix")} · ` : `${(item as Cigar).vitola} · `}${(item as Cigar).wrapper} · ${cn((item as Cigar).country)}`}
                   onPick={() => pickCigar((item as Cigar))}
                 />
@@ -490,7 +493,7 @@ export function PairingPage() {
               <div>
                 <div className="font-display text-base text-papir">
                   {mode === "cigarToDrink"
-                    ? `${(selected as Cigar).brand} ${(selected as Cigar).line}`
+                    ? `${brandDisplayName((selected as Cigar).brand, market)} ${(selected as Cigar).line}`
                     : lx(drinkNameLoc(selected as Drink))}
                 </div>
                 {mode === "cigarToDrink" && (
@@ -636,7 +639,7 @@ export function PairingPage() {
                     result={r}
                     cigar={r.item}
                     drink={selectedDrink}
-                    title={`${r.item.brand} ${r.item.line}`}
+                    title={`${brandDisplayName(r.item.brand, market)} ${r.item.line}`}
                     sub={`${r.item.wrapper}${
                       r.item.profileEstimated || r.item.flavorTags.length === 0
                         ? ` · ≈ ${t("common.estimatedShort")}`

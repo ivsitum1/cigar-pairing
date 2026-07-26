@@ -5,7 +5,9 @@ import {
   DRINKS,
   ALL_BRANDS,
   BRAND_CATALOG,
+  brandDisplayName,
   brandFromSlug,
+  brandSearchHaystack,
   brandSlug,
   cigarsByBrand,
   cigarInRegion,
@@ -197,7 +199,7 @@ export function CatalogPage({
     const seenVitola = new Set<string>();
 
     for (const b of ALL_BRANDS) {
-      if (!norm(b).includes(nq) || seenBrand.has(b)) continue;
+      if (!norm(brandSearchHaystack(b)).includes(nq) || seenBrand.has(b)) continue;
       seenBrand.add(b);
       hits.push({ kind: "brand", brand: b });
       if (hits.length >= 8) break;
@@ -205,8 +207,12 @@ export function CatalogPage({
 
     for (const c of CIGARS) {
       if (!cigarInRegion(c, market)) continue;
+      const display = brandDisplayName(c.brand, market);
       const lineHit =
-        norm(c.line).includes(nq) || norm(`${c.brand} ${c.line}`).includes(nq);
+        norm(c.line).includes(nq) ||
+        norm(`${c.brand} ${c.line}`).includes(nq) ||
+        norm(`${display} ${c.line}`).includes(nq) ||
+        norm(brandSearchHaystack(c.brand)).includes(nq);
       if (lineHit && !seenLine.has(c.id)) {
         seenLine.add(c.id);
         hits.push({ kind: "line", cigar: c });
@@ -235,14 +241,18 @@ export function CatalogPage({
   const matchedBrands = useMemo(() => {
     const nq = norm(query.trim());
     if (tab !== "cigars" || nq.length < 2 || browseBrands) return [];
-    return ALL_BRANDS.filter((b) => norm(b).includes(nq)).slice(0, 4);
+    return ALL_BRANDS.filter((b) => norm(brandSearchHaystack(b)).includes(nq)).slice(0, 4);
   }, [tab, query, browseBrands]);
 
   const brandRows = useMemo(() => {
     if (tab !== "cigars" || !browseBrands) return [];
     const nq = norm(query.trim());
-    return BRAND_CATALOG.filter((b) => {
-      if (nq && !norm(b.brand).includes(nq) && !norm(b.info?.country ?? "").includes(nq)) {
+    const rows = BRAND_CATALOG.filter((b) => {
+      if (
+        nq &&
+        !norm(brandSearchHaystack(b.brand)).includes(nq) &&
+        !norm(b.info?.country ?? "").includes(nq)
+      ) {
         return false;
       }
       if (market !== "ALL" && !cigarsByBrand(b.brand).some((c) => cigarInRegion(c, market))) {
@@ -250,6 +260,9 @@ export function CatalogPage({
       }
       return true;
     });
+    return [...rows].sort((a, b) =>
+      brandDisplayName(a.brand, market).localeCompare(brandDisplayName(b.brand, market)),
+    );
   }, [tab, browseBrands, query, market]);
 
   const brandAnchors = useMemo(() => {
@@ -257,7 +270,7 @@ export function CatalogPage({
     const letters = new Set<string>();
     let prev = "";
     brandRows.forEach((b, i) => {
-      const L = letterFor(b.brand);
+      const L = letterFor(brandDisplayName(b.brand, market));
       letters.add(L);
       if (L !== prev) {
         at.set(i, L);
@@ -265,7 +278,7 @@ export function CatalogPage({
       }
     });
     return { at, letters };
-  }, [brandRows]);
+  }, [brandRows, market]);
 
   const jumpToLetter = (l: string) => {
     document
@@ -324,7 +337,7 @@ export function CatalogPage({
         cigarInRegion(c, market) &&
         (!q ||
           norm(
-            `${c.brand} ${c.line} ${c.vitola} ${c.wrapper} ${c.country} ${(c.vitolas ?? [])
+            `${brandSearchHaystack(c.brand)} ${c.line} ${c.vitola} ${c.wrapper} ${c.country} ${(c.vitolas ?? [])
               .map((v) => v.name)
               .join(" ")}`,
           ).includes(norm(q))) &&
@@ -332,7 +345,9 @@ export function CatalogPage({
         (shapeFilter == null || cigarShapes(c).has(shapeFilter)),
     );
     const by: Record<string, (a: Cigar, b: Cigar) => number> = {
-      name: (a, b) => a.brand.localeCompare(b.brand) || a.line.localeCompare(b.line),
+      name: (a, b) =>
+        brandDisplayName(a.brand, market).localeCompare(brandDisplayName(b.brand, market)) ||
+        a.line.localeCompare(b.line),
       price: (a, b) => cigarPrice(a) - cigarPrice(b),
       body: (a, b) => b.body - a.body,
       strength: (a, b) => b.strength - a.strength,
@@ -401,7 +416,7 @@ export function CatalogPage({
                   onClick={() => openBrand(h.brand)}
                   className="flex w-full items-baseline justify-between gap-2 rounded-lg px-2 py-1.5 text-left hover:bg-zlato/10"
                 >
-                  <span className="text-sm text-papir">{h.brand}</span>
+                  <span className="text-sm text-papir">{brandDisplayName(h.brand, market)}</span>
                   <span className="shrink-0 text-micro text-zlato-2">{t("search.kindBrand")}</span>
                 </button>
               );
@@ -415,7 +430,8 @@ export function CatalogPage({
                   className="flex w-full items-baseline justify-between gap-2 rounded-lg px-2 py-1.5 text-left hover:bg-zlato/10"
                 >
                   <span className="truncate text-sm text-papir">
-                    {h.cigar.brand} <span className="text-zlato-2">{h.cigar.line}</span>
+                    {brandDisplayName(h.cigar.brand, market)}{" "}
+                    <span className="text-zlato-2">{h.cigar.line}</span>
                   </span>
                   <span className="shrink-0 text-micro text-zlato-2">{t("search.kindLine")}</span>
                 </button>
@@ -429,7 +445,7 @@ export function CatalogPage({
                 className="flex w-full items-baseline justify-between gap-2 rounded-lg px-2 py-1.5 text-left hover:bg-zlato/10"
               >
                 <span className="truncate text-sm text-papir">
-                  {h.cigar.brand} {h.cigar.line} · {h.vitola.name}
+                  {brandDisplayName(h.cigar.brand, market)} {h.cigar.line} · {h.vitola.name}
                 </span>
                 <span className="shrink-0 text-micro text-zlato-2">{t("search.kindVitola")}</span>
               </button>
@@ -447,7 +463,7 @@ export function CatalogPage({
               onClick={() => openBrand(b)}
               className="inline-flex shrink-0 items-center gap-1.5 rounded-full border border-zlato/50 bg-zlato/10 px-3 py-1.5 text-xs text-zlato-2 hover:bg-zlato/20"
             >
-              {t("brand.open")}: {b} →
+              {t("brand.open")}: {brandDisplayName(b, market)} →
             </button>
           ))}
         </div>
@@ -598,7 +614,9 @@ export function CatalogPage({
                 className="w-full scroll-mt-4 rounded-xl border border-dim/15 bg-cedar p-3 text-left transition-colors hover:border-zlato/40"
               >
                 <div className="flex items-baseline justify-between gap-2">
-                  <span className="font-display text-base text-papir">{b.brand}</span>
+                  <span className="font-display text-base text-papir">
+                    {brandDisplayName(b.brand, market)}
+                  </span>
                   {b.minPriceEUR != null && (
                     <span className="shrink-0 text-xs text-dim">
                       {t("brand.from")} {b.minPriceEUR.toFixed(b.minPriceEUR % 1 ? 2 : 0)} €

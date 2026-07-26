@@ -1,11 +1,12 @@
 import { useMemo, useState } from "react";
 import type { Cigar, Drink, DrinkCategory } from "../types";
-import { ALL_DRINKS, CIGARS, DRINKS, SHOPPING, formatPrice } from "../data";
+import { ALL_DRINKS, CIGARS, DRINKS, SHOPPING, brandDisplayName, formatPrice } from "../data";
 import { useI18n, STYLE_LABELS, type StringKey } from "../i18n";
 import { Chip, SectionTitle } from "../components/ui";
 import { CigarRow, DrinkRow } from "../components/cards";
 import { DetailSheet } from "../components/DetailSheet";
 import { getItemState, useCollection } from "../store/collection";
+import { useMarket } from "../store/market";
 import {
   buffetFive,
   buffetTotal,
@@ -28,6 +29,7 @@ const CATEGORIES: DrinkCategory[] = [
 
 export function ShoppingPage() {
   const { t, lx } = useI18n();
+  const market = useMarket();
   const collection = useCollection(); // re-render na promjene kolekcije/liste zelja
   const [detail, setDetail] = useState<
     { kind: "cigar"; item: Cigar } | { kind: "drink"; item: Drink } | null
@@ -79,7 +81,7 @@ export function ShoppingPage() {
         {
           title: t("cat.cigars"),
           items: wishlistCigars.map((c) => ({
-            name: `${c.brand} ${c.line}`,
+            name: `${brandDisplayName(c.brand, market)} ${c.line}`,
             price: c.priceEUR,
             shop: c.availabilityHR?.[0],
           })),

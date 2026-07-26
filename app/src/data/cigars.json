@@ -95033,6 +95033,83 @@
     "formatEstimated": true
   },
   {
+    "id": "cig-la-aroma-de-cuba-edicion-especial-no-3",
+    "brand": "La Aroma de Cuba",
+    "line": "Edición Especial No. 3",
+    "vitola": "Toro",
+    "format": "50 x 152mm",
+    "country": "Nikaragva",
+    "wrapper": "H-2000",
+    "strength": 3,
+    "body": 3,
+    "flavorTags": [
+      "cedar",
+      "zacini",
+      "koza",
+      "kava"
+    ],
+    "profileEstimated": true,
+    "catalogSource": "market",
+    "smokeTimeMin": 58,
+    "priceEUR": 13.94,
+    "priceApprox": false,
+    "availabilityHR": [
+      "The Humidor"
+    ],
+    "notes": {
+      "hr": "Nikaragva, H-2000 pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
+      "en": "Nicaragua, H-2000 wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
+    },
+    "markets": [
+      "HR",
+      "EU",
+      "USA",
+      "WW"
+    ],
+    "vitolas": [
+      {
+        "name": "Toro",
+        "format": "50 x 152mm",
+        "smokeTimeMin": 58,
+        "priceEUR": 13.94,
+        "url": "https://humidor.hr/hr/proizvod/la-aroma-del-caribe-edicion-especial-no-3-6-x-50/",
+        "ring": 50,
+        "lengthMM": 152,
+        "regionLinks": {
+          "HR": {
+            "shop": "The Humidor",
+            "url": "https://humidor.hr/hr/proizvod/la-aroma-del-caribe-edicion-especial-no-3-6-x-50/",
+            "priceEUR": 13.94
+          },
+          "EU": {
+            "shop": "CigarWorld",
+            "url": "https://www.cigarworld.de/en/zigarren/nicaragua/la-aroma-del-caribe-edicion-especial-new-blend-no-3-toro-90009227_44096",
+            "priceEUR": 9.9
+          }
+        }
+      }
+    ],
+    "regionLinks": {
+      "HR": {
+        "shop": "The Humidor",
+        "url": "https://humidor.hr/hr/proizvod/la-aroma-del-caribe-edicion-especial-no-3-6-x-50/",
+        "priceEUR": 13.94
+      },
+      "EU": {
+        "shop": "CigarWorld",
+        "url": "https://www.cigarworld.de/en/zigarren/nicaragua/la-aroma-del-caribe-edicion-especial-new-blend-no-3-toro-90009227_44096",
+        "priceEUR": 9.9
+      },
+      "USA": {
+        "shop": "Holt's",
+        "url": "https://www.holts.com/cigars/all-cigar-brands/la-aroma-de-cuba-edicion-especial.html",
+        "priceEUR": 9.66,
+        "priceApprox": true
+      }
+    },
+    "formatEstimated": true
+  },
+  {
     "id": "cig-la-aroma-de-cuba-edicion-especial-no-4",
     "brand": "La Aroma de Cuba",
     "line": "Edición Especial No. 4",
@@ -95244,6 +95321,67 @@
     "strengthFromShop": true
   },
   {
+    "id": "cig-la-aroma-de-cuba-habano-reserve",
+    "brand": "La Aroma de Cuba",
+    "line": "Habano Reserve",
+    "vitola": "Monarch",
+    "format": "52 x 152mm",
+    "country": "Nikaragva",
+    "wrapper": "Ecuador Habano Rosado",
+    "strength": 4,
+    "body": 3,
+    "flavorTags": [
+      "kava",
+      "karamela",
+      "kremasto",
+      "cedar",
+      "zacini"
+    ],
+    "profileEstimated": true,
+    "catalogSource": "market",
+    "smokeTimeMin": 58,
+    "priceEUR": null,
+    "priceApprox": true,
+    "availabilityHR": [],
+    "notes": {
+      "hr": "Nikaragva, Ecuador Habano Rosado pokrov — jače snage, srednjeg tijela. Okusi: kava, melasa, kremasto.",
+      "en": "Nicaragua, Ecuador Habano Rosado wrapper — medium-full in strength, medium-bodied. Notes: coffee, molasses, cream, cedar."
+    },
+    "markets": [
+      "USA",
+      "WW"
+    ],
+    "vitolas": [
+      {
+        "name": "Monarch",
+        "format": "52 x 152mm",
+        "smokeTimeMin": 58,
+        "priceEUR": null,
+        "url": null,
+        "ring": 52,
+        "lengthMM": 152,
+        "regionLinks": {
+          "USA": {
+            "shop": "Holt's",
+            "url": "https://www.holts.com/cigars/all-cigar-brands/la-aroma-de-cuba-habano-reserve.html",
+            "priceEUR": 9.05,
+            "priceApprox": true
+          }
+        }
+      }
+    ],
+    "regionLinks": {
+      "USA": {
+        "shop": "Holt's",
+        "url": "https://www.holts.com/cigars/all-cigar-brands/la-aroma-de-cuba-habano-reserve.html",
+        "priceEUR": 9.05,
+        "priceApprox": true
+      }
+    },
+    "formatEstimated": true,
+    "strengthFromShop": true
+  },
+  {
     "id": "cig-la-aroma-de-cuba-mi-amor",
     "brand": "La Aroma de Cuba",
     "line": "Mi Amor",
@@ -95265,12 +95403,15 @@
     "smokeTimeMin": 49,
     "priceEUR": null,
     "priceApprox": false,
-    "availabilityHR": [],
+    "availabilityHR": [
+      "The Humidor"
+    ],
     "notes": {
       "hr": "Nikaragva, San Andrés pokrov — srednje snage, punijeg tijela. Okusi: kakao, kava, karamela.",
       "en": "Nicaragua, San Andres wrapper — medium-full in strength, fuller-bodied. Notes: cocoa, coffee, caramel."
     },
     "markets": [
+      "HR",
       "EU",
       "USA",
       "WW"
@@ -95321,13 +95462,18 @@
         "name": "Duque",
         "format": "56 x 127mm",
         "smokeTimeMin": 49,
-        "priceEUR": null,
-        "url": null,
+        "priceEUR": 12.0,
+        "url": "https://humidor.hr/hr/proizvod/la-aroma-de-cuba-mi-amor-duque-5-1-4-x-56/",
         "regionLinks": {
           "EU": {
             "shop": "CigarWorld",
             "url": "https://www.cigarworld.de/en/zigarren/nicaragua/la-aroma-del-caribe-mi-amor-duque-robusto-grande-90012473_26200",
             "priceEUR": 8.5
+          },
+          "HR": {
+            "shop": "The Humidor",
+            "url": "https://humidor.hr/hr/proizvod/la-aroma-de-cuba-mi-amor-duque-5-1-4-x-56/",
+            "priceEUR": 12.0
           }
         },
         "ring": 56,
@@ -95337,13 +95483,18 @@
         "name": "Valentino",
         "format": "58 x 159mm",
         "smokeTimeMin": 61,
-        "priceEUR": null,
-        "url": null,
+        "priceEUR": 13.0,
+        "url": "https://humidor.hr/hr/proizvod/la-aroma-dcma-valentino-5-3-4-x-58/",
         "regionLinks": {
           "EU": {
             "shop": "CigarWorld",
             "url": "https://www.cigarworld.de/en/zigarren/nicaragua/la-aroma-del-caribe-mi-amor-valentino-toro-gordo-90012473_26197",
             "priceEUR": 9.6
+          },
+          "HR": {
+            "shop": "The Humidor",
+            "url": "https://humidor.hr/hr/proizvod/la-aroma-dcma-valentino-5-3-4-x-58/",
+            "priceEUR": 13.0
           }
         },
         "ring": 58,
@@ -95361,6 +95512,11 @@
         "url": "https://www.holts.com/cigars/all-cigar-brands/la-aroma-de-cuba-mi-amor.html",
         "priceEUR": 9.06,
         "priceApprox": true
+      },
+      "HR": {
+        "shop": "The Humidor",
+        "url": "https://humidor.hr/hr/proizvod/la-aroma-de-cuba-mi-amor-duque-5-1-4-x-56/",
+        "priceEUR": 12.0
       }
     },
     "formatEstimated": true,
@@ -95563,10 +95719,27 @@
       "en": "Nicaragua, San Andres wrapper — full in strength, fuller-bodied. Notes: cocoa, coffee, caramel."
     },
     "markets": [
+      "EU",
       "USA",
       "WW"
     ],
     "vitolas": [
+      {
+        "name": "Romantico",
+        "format": "50 x 175mm",
+        "smokeTimeMin": 67,
+        "priceEUR": null,
+        "url": null,
+        "ring": 50,
+        "lengthMM": 175,
+        "regionLinks": {
+          "EU": {
+            "shop": "CigarWorld",
+            "url": "https://www.cigarworld.de/en/zigarren/nicaragua/la-aroma-del-caribe-reserva-romantico-90016734_56307",
+            "priceEUR": 11.5
+          }
+        }
+      },
       {
         "name": "Belicoso",
         "format": "52 x 140mm",
@@ -95575,6 +95748,54 @@
         "url": null,
         "ring": 52,
         "lengthMM": 140
+      },
+      {
+        "name": "Divino",
+        "format": "52 x 159mm",
+        "smokeTimeMin": 61,
+        "priceEUR": null,
+        "url": null,
+        "ring": 52,
+        "lengthMM": 159,
+        "regionLinks": {
+          "EU": {
+            "shop": "CigarWorld",
+            "url": "https://www.cigarworld.de/en/zigarren/nicaragua/la-aroma-del-caribe-reserva-divino-90016734_56308",
+            "priceEUR": 10.9
+          }
+        }
+      },
+      {
+        "name": "Maximo",
+        "format": "54 x 140mm",
+        "smokeTimeMin": 54,
+        "priceEUR": null,
+        "url": null,
+        "ring": 54,
+        "lengthMM": 140,
+        "regionLinks": {
+          "EU": {
+            "shop": "CigarWorld",
+            "url": "https://www.cigarworld.de/en/zigarren/nicaragua/la-aroma-del-caribe-reserva-maximo-90016734_56305",
+            "priceEUR": 10.5
+          }
+        }
+      },
+      {
+        "name": "Pomposo",
+        "format": "60 x 165mm",
+        "smokeTimeMin": 64,
+        "priceEUR": null,
+        "url": null,
+        "ring": 60,
+        "lengthMM": 165,
+        "regionLinks": {
+          "EU": {
+            "shop": "CigarWorld",
+            "url": "https://www.cigarworld.de/en/zigarren/nicaragua/la-aroma-del-caribe-reserva-pomposo-90016734_56306",
+            "priceEUR": 11.9
+          }
+        }
       }
     ],
     "regionLinks": {
@@ -95583,8 +95804,73 @@
         "url": "https://www.holts.com/cigars/all-cigar-brands/la-aroma-de-cuba-mi-amor-reserva.html",
         "priceEUR": 12.19,
         "priceApprox": true
+      },
+      "EU": {
+        "shop": "CigarWorld",
+        "url": "https://www.cigarworld.de/en/zigarren/nicaragua/la-aroma-del-caribe-reserva-maximo-90016734_56305",
+        "priceEUR": 10.5
       }
     },
+    "strengthFromShop": true
+  },
+  {
+    "id": "cig-la-aroma-de-cuba-small-batch",
+    "brand": "La Aroma de Cuba",
+    "line": "Small Batch",
+    "vitola": "Toro",
+    "format": "52 x 152mm",
+    "country": "Nikaragva",
+    "wrapper": "Ecuador Habano",
+    "strength": 5,
+    "body": 4,
+    "flavorTags": [
+      "kava",
+      "cedar",
+      "zacini",
+      "slatko"
+    ],
+    "profileEstimated": true,
+    "catalogSource": "market",
+    "smokeTimeMin": 58,
+    "priceEUR": null,
+    "priceApprox": true,
+    "availabilityHR": [],
+    "notes": {
+      "hr": "Nikaragva, Ecuador Habano pokrov — pune snage, punijeg tijela. Okusi: espresso, cedrovina, muškatni oraščić.",
+      "en": "Nicaragua, Ecuador Habano wrapper — full in strength, fuller-bodied. Notes: espresso, cedar, nutmeg."
+    },
+    "markets": [
+      "USA",
+      "WW"
+    ],
+    "vitolas": [
+      {
+        "name": "Toro",
+        "format": "52 x 152mm",
+        "smokeTimeMin": 58,
+        "priceEUR": null,
+        "url": null,
+        "ring": 52,
+        "lengthMM": 152,
+        "regionLinks": {
+          "USA": {
+            "shop": "Holt's",
+            "url": "https://www.holts.com/cigars/all-cigar-brands/la-aroma-de-cuba-small-batch.html",
+            "priceEUR": 22.95,
+            "priceApprox": true
+          }
+        }
+      }
+    ],
+    "regionLinks": {
+      "USA": {
+        "shop": "Holt's",
+        "url": "https://www.holts.com/cigars/all-cigar-brands/la-aroma-de-cuba-small-batch.html",
+        "priceEUR": 22.95,
+        "priceApprox": true
+      }
+    },
+    "formatEstimated": true,
     "strengthFromShop": true
   },
   {

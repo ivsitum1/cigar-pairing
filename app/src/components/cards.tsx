@@ -1,6 +1,6 @@
 import type { Cigar, Drink } from "../types";
 import { useI18n, STYLE_LABELS, ADDITIVE_LABELS, type StringKey } from "../i18n";
-import { cigarPriceForMarket, formatPrice } from "../data";
+import { cigarPriceForMarket, formatPrice, brandDisplayName } from "../data";
 import { Meter } from "./ui";
 import { getItemState, useCollection } from "../store/collection";
 import { useMarket } from "../store/market";
@@ -54,6 +54,8 @@ export function CigarRow({
   onClick?: () => void;
 }) {
   const { t, lx, cn } = useI18n();
+  const market = useMarket();
+  const displayBrand = brandDisplayName(cigar.brand, market);
   return (
     <button
       onClick={onClick}
@@ -61,7 +63,7 @@ export function CigarRow({
     >
       <div className="flex items-baseline justify-between gap-2">
         <span className="font-display text-base text-papir">
-          {cigar.brand} <span className="text-zlato-2">{cigar.line}</span>
+          {displayBrand} <span className="text-zlato-2">{cigar.line}</span>
           <OwnedDot id={cigar.id} />
         </span>
         <span className="shrink-0 text-xs text-dim">

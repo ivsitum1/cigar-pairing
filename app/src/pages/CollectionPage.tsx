@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import type { Cigar, Drink } from "../types";
-import { ALL_DRINKS, CIGARS, cigarById, drinkById } from "../data";
+import { ALL_DRINKS, CIGARS, brandDisplayName, cigarById, drinkById } from "../data";
 import { useI18n } from "../i18n";
 import { Chip, SectionTitle } from "../components/ui";
 import { CigarRow, DrinkRow } from "../components/cards";
@@ -14,6 +14,7 @@ import {
   removeJournalEntry,
   useCollection,
 } from "../store/collection";
+import { useMarket } from "../store/market";
 
 export function CollectionPage() {
   const { t, lx, lang } = useI18n();
@@ -170,6 +171,7 @@ export function CollectionPage() {
 
 function AddPairingSheet({ onClose }: { onClose: () => void }) {
   const { t, lx } = useI18n();
+  const market = useMarket();
   const [cigarId, setCigarId] = useState(CIGARS[0]?.id ?? "");
   const [drinkId, setDrinkId] = useState(ALL_DRINKS[0]?.id ?? "");
   const [rating, setRating] = useState<string>("");
@@ -204,7 +206,7 @@ function AddPairingSheet({ onClose }: { onClose: () => void }) {
             <select value={cigarId} onChange={(e) => setCigarId(e.target.value)} className={`mt-1 ${selectCls}`}>
               {CIGARS.map((c) => (
                 <option key={c.id} value={c.id}>
-                  {c.brand} {c.line}
+                  {brandDisplayName(c.brand, market)} {c.line}
                 </option>
               ))}
             </select>

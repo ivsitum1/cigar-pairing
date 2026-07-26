@@ -3,6 +3,7 @@ import { useMemo, useState } from "react";
 import type { Cigar } from "../types";
 import {
   brandInfo,
+  brandDisplayName,
   brandNode,
   cigarInRegion,
   cigarPriceForMarket,
@@ -29,6 +30,7 @@ export function BrandSheet({
   const market = useMarket();
   const [sort, setSort] = useState<Sort>("name");
   const info = brandInfo(brand);
+  const displayBrand = brandDisplayName(brand, market);
   const node = useMemo(() => brandNode(brand), [brand]);
   const lines = useMemo(
     () => linesByBrand(brand).filter((c) => cigarInRegion(c, market)),
@@ -72,7 +74,7 @@ export function BrandSheet({
           <BackButton onClick={onClose}>{t("common.back")}</BackButton>
         </div>
 
-        <div className="font-display text-2xl tracking-wide text-zlato-2">{brand}</div>
+        <div className="font-display text-2xl tracking-wide text-zlato-2">{displayBrand}</div>
         {info && (
           <div className="mt-0.5 text-xs uppercase tracking-widest text-dim">
             {cn(info.country)} · {info.founded}
