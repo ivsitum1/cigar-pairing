@@ -228,7 +228,10 @@ describe("cigars.json integrity", () => {
       if (!c.brand || !c.line || !c.vitola) bad.push(`${c.id}: prazan brand/line/vitola`);
       if (/[()\[\]{}]/.test(c.line)) bad.push(`${c.id}: zagrade u liniji '${c.line}'`);
       if (!/\d+\s*x\s*\d+mm/.test(c.format)) bad.push(`${c.id}: format '${c.format}'`);
-      if (c.profileEstimated !== true) bad.push(`${c.id}: nije profileEstimated`);
+      // profil je ili heuristička procjena (profileEstimated) ili pravi
+      // kurirani profil (line_notes.json — prepoznatljiv po sourceUrls)
+      if (c.profileEstimated !== true && !c.sourceUrls?.length)
+        bad.push(`${c.id}: ni profileEstimated ni sourceUrls`);
       if (!c.vitolas?.length) bad.push(`${c.id}: nema vitola`);
       if (!c.regionLinks || Object.keys(c.regionLinks).length === 0)
         bad.push(`${c.id}: nema regionLinks`);

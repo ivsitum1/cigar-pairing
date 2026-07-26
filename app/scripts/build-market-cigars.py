@@ -129,6 +129,36 @@ _TAG_HR = {"kremasto": "kremasto", "cedar": "cedrovina", "koza": "koža", "kava"
            "duhan": "duhan", "drvenasto": "drvenasto"}
 
 
+def apply_line_note(rec, brand, line, line_notes):
+    """Kad linija ima pravi kurirani profil (line_notes.json), zamijeni
+    procjenu (enrich heuristika / shop-strength) pravim strength/body/
+    flavorTags + note/pairing iz pouzdanog izvora. Vraca True ako je primijenjeno.
+    """
+    note = line_notes.get(f"{brand}::{line}")
+    if not note:
+        return False
+    rec["strength"] = note["strength"]
+    rec["body"] = note["body"]
+    rec["flavorTags"] = note["flavorTags"]
+    rec.pop("profileEstimated", None)
+    rec.pop("strengthFromShop", None)
+    nb, pr = note.get("note") or {}, note.get("pairing") or {}
+    rec["notes"] = {
+        "hr": " ".join(x for x in (nb.get("hr"), pr.get("hr")) if x),
+        "en": " ".join(x for x in (nb.get("en"), pr.get("en")) if x),
+    }
+    if note.get("source"):
+        rec["sourceUrls"] = [note["source"]]
+    return True
+
+
+def load_line_notes(datadir):
+    p = datadir / "line_notes.json"
+    if not p.exists():
+        return {}
+    return {k: v for k, v in load_json(p).get("notes", {}).items()}
+
+
 def market_note(rec):
     """Opis linije iz atributa (bez izmišljanja) — snaga/tijelo/wrapper/okusi."""
     country = rec["country"]
@@ -325,6 +355,7 @@ def build():
     known_brands = set(load_json(BRANDS).keys())
     syns, vit_mid = load_vitola_lexicon()
     line_map = load_json(DATADIR / "line_map.json")["map"]
+    line_notes = load_line_notes(DATADIR)
     brand_dict = {}
     bd = DATADIR / "brand_dictionary.json"
     if bd.exists():
@@ -504,7 +535,8 @@ def build():
             rec["strengthFromShop"] = True
         if agg.get("flavoured"):
             rec["flavoured"] = True  # shop označio aromatiziranu/infuziranu cigaru
-        rec["notes"] = market_note(rec)  # opis iz atributa (nakon profila)
+        if not apply_line_note(rec, b, line, line_notes):
+            rec["notes"] = market_note(rec)  # opis iz atributa (nakon profila)
         new_entries.append(rec)
 
     stats["lines"] = len(new_entries)

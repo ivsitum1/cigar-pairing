@@ -920,22 +920,22 @@
     "country": "Nikaragva",
     "wrapper": "Sumatra",
     "strength": 3,
-    "body": 4,
+    "body": 3,
     "flavorTags": [
-      "kakao",
-      "zacini",
-      "drvo",
-      "karamela"
+      "kava",
+      "orasasti",
+      "cedar",
+      "kremasto",
+      "zacini"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 54,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Sumatra pokrov — srednje snage, punijeg tijela. Okusi: kakao, začini, drvo.",
-      "en": "Nicaragua, Sumatra wrapper — medium in strength, fuller-bodied. Notes: cocoa, spices, wood."
+      "hr": "Sumatra Classic: kava, orašasto i cedar uz kremasti finish; medium (CI). Bourbon ili kava.",
+      "en": "Sumatra Classic: coffee, nuts and cedar with a creamy finish; medium (CI). Bourbon or coffee."
     },
     "markets": [
       "USA",
@@ -996,7 +996,9 @@
         "priceApprox": true
       }
     },
-    "strengthFromShop": true
+    "sourceUrls": [
+      "https://www.cigarsinternational.com/p/5-vegas-classic-cigars/1410404/"
+    ]
   },
   {
     "id": "cig-7-20-4-1874-series-especial",
@@ -6658,25 +6660,23 @@
     "format": "50 x 127mm",
     "country": "Nikaragva",
     "wrapper": "Connecticut Shade",
-    "strength": 3,
-    "body": 2,
+    "strength": 2,
+    "body": 3,
     "flavorTags": [
-      "kakao",
-      "kava",
-      "papar",
       "kremasto",
       "cedar",
-      "zemljano"
+      "orasasti",
+      "zacini",
+      "kava"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 49,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Connecticut pokrov — srednje snage, laganog tijela. Okusi: kremasto, cedrovina, orašasti tonovi.",
-      "en": "Nicaragua, Connecticut wrapper — medium in strength, light-bodied. Notes: creamy, cedar, nutty."
+      "hr": "American Classic CT: kremasto, cedar i orašasto; mild–medium. Filter kava.",
+      "en": "American Classic CT: cream, cedar and nuts; mild–medium. Filter coffee."
     },
     "markets": [
       "EU",
@@ -6769,7 +6769,9 @@
       }
     },
     "formatEstimated": true,
-    "strengthFromShop": true
+    "sourceUrls": [
+      "https://www.holts.com/cigars/all-cigar-brands/alec-bradley-american-classic.html"
+    ]
   },
   {
     "id": "cig-alec-bradley-american-sun-grown",
@@ -6990,22 +6992,20 @@
     "strength": 2,
     "body": 2,
     "flavorTags": [
-      "kakao",
-      "kava",
-      "papar",
       "kremasto",
       "cedar",
-      "zemljano"
+      "orasasti",
+      "zacini",
+      "vanilija"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 49,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Honduras, Connecticut pokrov — lagane snage, laganog tijela. Okusi: kremasto, cedrovina, orašasti tonovi.",
-      "en": "Honduras, Connecticut wrapper — mild in strength, light-bodied. Notes: creamy, cedar, nutty."
+      "hr": "AB Connecticut: kremasto, cedar i orašasto uz blage začine; mild–medium. Filter-light kava.",
+      "en": "AB Connecticut: cream, cedar and nuts with soft spice; mild–medium. Light filter coffee."
     },
     "markets": [
       "EU",
@@ -7068,7 +7068,9 @@
         "priceApprox": true
       }
     },
-    "strengthFromShop": true
+    "sourceUrls": [
+      "https://www.holts.com/cigars/all-cigar-brands/alec-bradley-connecticut.html"
+    ]
   },
   {
     "id": "cig-alec-bradley-coyol",
@@ -7079,24 +7081,22 @@
     "country": "Honduras",
     "wrapper": "Hybrid",
     "strength": 4,
-    "body": 3,
+    "body": 4,
     "flavorTags": [
-      "kakao",
-      "kava",
-      "papar",
-      "kremasto",
       "zemljano",
-      "orasasti"
+      "kakao",
+      "papar",
+      "kava",
+      "koza"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 49,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Honduras, Honduras pokrov — jače snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Honduras, Honduras wrapper — medium-full in strength, medium-bodied. Notes: cedar, spices, leather."
+      "hr": "Coyol Honduras: zemlja, kakao i papar uz kavu; medium–full. Bourbon ili espresso.",
+      "en": "Coyol Honduras: earth, cocoa and pepper with coffee; medium–full. Bourbon or espresso."
     },
     "markets": [
       "EU",
@@ -7208,7 +7208,9 @@
       }
     },
     "formatEstimated": true,
-    "strengthFromShop": true
+    "sourceUrls": [
+      "https://www.holts.com/cigars/all-cigar-brands/alec-bradley-coyol.html"
+    ]
   },
   {
     "id": "cig-alec-bradley-dissident",
@@ -8911,18 +8913,17 @@
       "kremasto",
       "cedar",
       "orasasti",
-      "med",
-      "trava-slatka"
+      "vanilija",
+      "cvjetno"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 49,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Ecuador Connecticut pokrov — lagane snage, laganog tijela. Okusi: kremasto, cedrovina, orašasti tonovi.",
-      "en": "Nicaragua, Ecuador Connecticut wrapper — mild in strength, light-bodied. Notes: creamy, cedar, nutty."
+      "hr": "White Gold Ecuador CT: kremasto, cedar i orašasto; mild–medium. Latte ili cognac VS.",
+      "en": "White Gold Ecuador CT: cream, cedar and nuts; mild–medium. Latte or VS cognac."
     },
     "markets": [
       "USA",
@@ -8965,7 +8966,9 @@
         "priceApprox": true
       }
     },
-    "strengthFromShop": true
+    "sourceUrls": [
+      "https://www.holts.com/cigars/all-cigar-brands/alec-bradley-white-gold.html"
+    ]
   },
   {
     "id": "cig-alejandro-lopez-dominicana",
@@ -17614,18 +17617,17 @@
       "kremasto",
       "cedar",
       "orasasti",
-      "med",
-      "trava-slatka"
+      "zacini",
+      "med"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 49,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Dominikanska Republika, Ecuador Connecticut pokrov — lagane snage, laganog tijela. Okusi: kremasto, cedrovina, orašasti tonovi.",
-      "en": "Dominican Republic, Ecuador Connecticut wrapper — mild in strength, light-bodied. Notes: creamy, cedar, nutty."
+      "hr": "Ecuador CT: kremasto, cedar i orašasto s blagim začinom; mild–medium. Cognac VSOP ili sparkling; filter-light.",
+      "en": "Ecuador CT: creamy cedar and nuts with light spice; mild–medium. VSOP cognac or sparkling; light filter coffee."
     },
     "markets": [
       "EU",
@@ -17705,7 +17707,9 @@
       }
     },
     "formatEstimated": true,
-    "strengthFromShop": true
+    "sourceUrls": [
+      "https://www.cigarsinternational.com/product/avo-classic/AV1-PM.html"
+    ]
   },
   {
     "id": "cig-avo-expresivo",
@@ -17715,23 +17719,23 @@
     "format": "48 x 182mm",
     "country": "Honduras",
     "wrapper": "Ecuador",
-    "strength": 3,
-    "body": 3,
+    "strength": 4,
+    "body": 4,
     "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
+      "zemljano",
+      "kakao",
+      "kava",
+      "papar",
+      "zacini"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 70,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Honduras, Ecuador pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Honduras, Ecuador wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
+      "hr": "Expresivo: bogatiji Avo profil — zemlja, kakao/kava i papar; medium–full. Bourbon ili espresso.",
+      "en": "Expresivo: richer Avo profile — earth, cocoa/coffee and pepper; medium–full. Bourbon or espresso."
     },
     "markets": [
       "EU",
@@ -17794,7 +17798,10 @@
         "priceEUR": 15.8
       }
     },
-    "formatEstimated": true
+    "formatEstimated": true,
+    "sourceUrls": [
+      "https://www.neptunecigar.com/cigar/avo-expresivo"
+    ]
   },
   {
     "id": "cig-avo-heritage",
@@ -17805,22 +17812,22 @@
     "country": "Dominikanska Republika",
     "wrapper": "H-2000",
     "strength": 4,
-    "body": 3,
+    "body": 4,
     "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
+      "zemljano",
+      "kava",
+      "kakao",
+      "papar",
+      "cedar"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 48,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Dominikanska Republika, H-2000 pokrov — jače snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Dominican Republic, H-2000 wrapper — medium-full in strength, medium-bodied. Notes: cedar, spices, leather."
+      "hr": "H-2000: zemlja, kava/kakao i papar uz cedar; medium–full. Bourbon ili espresso.",
+      "en": "H-2000: earth, coffee/cocoa and pepper with cedar; medium–full. Bourbon or espresso."
     },
     "markets": [
       "EU",
@@ -17884,7 +17891,9 @@
       }
     },
     "formatEstimated": true,
-    "strengthFromShop": true
+    "sourceUrls": [
+      "https://www.holts.com/cigars/all-cigar-brands/avo-heritage.html"
+    ]
   },
   {
     "id": "cig-avo-heritage-special",
@@ -18605,23 +18614,22 @@
     "country": "Honduras",
     "wrapper": "Connecticut Shade, Connecticut Broadleaf",
     "strength": 2,
-    "body": 4,
+    "body": 2,
     "flavorTags": [
+      "kremasto",
+      "cedar",
+      "orasasti",
       "kakao",
-      "kava",
-      "karamela",
-      "slatko",
-      "zemljano"
+      "slatko"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 58,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Honduras, Connecticut Shade, Connecticut Broadleaf pokrov — lagane snage, punijeg tijela. Okusi: kakao, kava, karamela.",
-      "en": "Honduras, Connecticut Shade, Connecticut Broadleaf wrapper — mild in strength, fuller-bodied. Notes: cocoa, coffee, caramel."
+      "hr": "CT Shade Honduras sa slatkim vrhom: blago, kremasto, cedar/orašasto uz blagi kakao. Kava s mlijekom ili lagani rum.",
+      "en": "CT Shade Honduras with sweetened tip: mild, creamy cedar/nuts with soft cocoa. Milky coffee or light rum."
     },
     "markets": [
       "USA",
@@ -18709,7 +18717,9 @@
         "priceApprox": true
       }
     },
-    "strengthFromShop": true
+    "sourceUrls": [
+      "https://finckcigarcompany.com/baccarat-classic/"
+    ]
   },
   {
     "id": "cig-bahia-maduro",
@@ -24746,24 +24756,23 @@
     "format": "50 x 127mm",
     "country": "Dominikanska Republika",
     "wrapper": "Brazilian",
-    "strength": 3,
-    "body": 4,
+    "strength": 2,
+    "body": 2,
     "flavorTags": [
-      "kakao",
-      "kava",
-      "karamela",
-      "slatko",
-      "zemljano"
+      "orasasti",
+      "drvo",
+      "zemljano",
+      "zacini",
+      "kremasto"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 49,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Dominikanska Republika, Brazilian pokrov — srednje snage, punijeg tijela. Okusi: kakao, kava, karamela.",
-      "en": "Dominican Republic, Brazilian wrapper — medium in strength, fuller-bodied. Notes: cocoa, coffee, caramel."
+      "hr": "Brazilski omot Cuban-sandwich: orašasto, drvo i blagi začini; mild (Holt's). Obična kava ili lagani rum.",
+      "en": "Brazilian-wrapper Cuban sandwich: nuts, wood and light spice; mild (Holt's). Everyday coffee or light rum."
     },
     "markets": [
       "USA",
@@ -24797,7 +24806,9 @@
         "priceApprox": true
       }
     },
-    "strengthFromShop": true
+    "sourceUrls": [
+      "https://www.holts.com/cigars/all-cigar-brands/boardwalk.html"
+    ]
   },
   {
     "id": "cig-bock-y-ca",
@@ -26734,19 +26745,19 @@
     "body": 3,
     "flavorTags": [
       "cedar",
+      "orasasti",
+      "zemljano",
       "zacini",
-      "koza",
-      "kava"
+      "slatko"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 55,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, H-2000 pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Nicaragua, H-2000 wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
+      "hr": "Srednje tijelo: cedar, pečeni orašasti, zemlja i blagi začini uz prirodnu slatkoću. Bourbon ili crno pivo; filter-dark kava.",
+      "en": "Medium: cedar, roasted nuts, earth and gentle spice with natural sweetness. Bourbon or dark beer; dark filter coffee."
     },
     "markets": [
       "EU",
@@ -26849,7 +26860,9 @@
       }
     },
     "formatEstimated": true,
-    "strengthFromShop": true
+    "sourceUrls": [
+      "https://www.cuencacigars.com/blog/brick-house-classic-cigars-flavor-profile-sizes-what-to-expect/"
+    ]
   },
   {
     "id": "cig-brick-house-connecticut",
@@ -26860,23 +26873,22 @@
     "country": "Nikaragva",
     "wrapper": "Connecticut Shade",
     "strength": 2,
-    "body": 2,
+    "body": 3,
     "flavorTags": [
       "kremasto",
       "cedar",
       "orasasti",
       "med",
-      "trava-slatka"
+      "zacini"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 58,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Connecticut Shade pokrov — lagane snage, laganog tijela. Okusi: kremasto, cedrovina, orašasti tonovi.",
-      "en": "Nicaragua, Connecticut Shade wrapper — mild in strength, light-bodied. Notes: creamy, cedar, nutty."
+      "hr": "CT Shade Brick House: kremasto, cedar i orašasto; mild–medium. Cognac VS ili filter-light.",
+      "en": "CT Shade Brick House: creamy cedar and nuts; mild–medium. VS cognac or light filter coffee."
     },
     "markets": [
       "USA",
@@ -26910,7 +26922,9 @@
         "priceApprox": true
       }
     },
-    "strengthFromShop": true
+    "sourceUrls": [
+      "https://www.jcnewman.com/company/brick-house-cigars/"
+    ]
   },
   {
     "id": "cig-brick-house-double-connecticut",
@@ -30089,20 +30103,19 @@
     "body": 4,
     "flavorTags": [
       "kakao",
+      "hrast",
+      "vanilija",
       "kava",
-      "karamela",
-      "slatko",
-      "zemljano"
+      "papar"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 49,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Dominikanska Republika, Connecticut Broadleaf pokrov — jače snage, punijeg tijela. Okusi: kakao, kava, karamela.",
-      "en": "Dominican Republic, Connecticut Broadleaf wrapper — medium-full in strength, fuller-bodied. Notes: cocoa, coffee, caramel."
+      "hr": "American Barrel Aged Broadleaf: kakao, hrast/vanilija i kava uz papar; medium–full. Bourbon (barrel theme) ili espresso.",
+      "en": "American Barrel Aged Broadleaf: cocoa, oak/vanilla and coffee with pepper; medium–full. Bourbon (barrel theme) or espresso."
     },
     "markets": [
       "USA",
@@ -30145,7 +30158,9 @@
         "priceApprox": true
       }
     },
-    "strengthFromShop": true
+    "sourceUrls": [
+      "https://www.holts.com/cigars/all-cigar-brands/camacho-american-barrel-aged.html"
+    ]
   },
   {
     "id": "cig-camacho-bg-meyer",
@@ -30247,19 +30262,18 @@
     "flavorTags": [
       "kakao",
       "kava",
-      "karamela",
-      "slatko",
+      "koza",
+      "hrast",
       "zemljano"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 49,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Honduras, Honduras pokrov — jače snage, punijeg tijela. Okusi: kakao, kava, karamela.",
-      "en": "Honduras, Honduras wrapper — medium-full in strength, fuller-bodied. Notes: cocoa, coffee, caramel."
+      "hr": "Honduras Broadleaf: tamni kakao, espresso, koža, hrast i zemlja; medium–full. Bourbon ili tamni rum.",
+      "en": "Honduran Broadleaf: dark cocoa, espresso, leather, oak and earth; medium–full. Bourbon or dark rum."
     },
     "markets": [
       "EU",
@@ -30329,7 +30343,9 @@
         "priceApprox": true
       }
     },
-    "strengthFromShop": true
+    "sourceUrls": [
+      "https://www.holts.com/cigars/all-cigar-brands/camacho-broadleaf.html"
+    ]
   },
   {
     "id": "cig-camacho-check-six",
@@ -32116,19 +32132,17 @@
       "cedar",
       "orasasti",
       "zacini",
-      "zacini-slatki",
-      "slatko",
-      "koza"
+      "kava",
+      "zemljano"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 55,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Cameroon pokrov — srednje snage, srednjeg tijela. Okusi: zacini-slatki, cedrovina, orašasti tonovi.",
-      "en": "Nicaragua, Cameroon wrapper — medium in strength, medium-bodied. Notes: sweet spices, cedar, nutty."
+      "hr": "Afrički Cameroon: cedar, orašasto i začini uz kavu; medium. Rum ili filter-medium kava.",
+      "en": "African Cameroon: cedar, nuts and spice with coffee; medium. Rum or medium filter coffee."
     },
     "markets": [
       "EU",
@@ -32210,7 +32224,9 @@
       }
     },
     "formatEstimated": true,
-    "strengthFromShop": true
+    "sourceUrls": [
+      "https://www.holts.com/cigars/all-cigar-brands/cao-cameroon.html"
+    ]
   },
   {
     "id": "cig-cao-colombia",
@@ -32522,19 +32538,18 @@
     "flavorTags": [
       "kakao",
       "kava",
-      "karamela",
-      "slatko",
-      "zemljano"
+      "zemljano",
+      "papar",
+      "koza"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 49,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Connecticut Broadleaf pokrov — jače snage, punijeg tijela. Okusi: kakao, kava, karamela.",
-      "en": "Nicaragua, Connecticut Broadleaf wrapper — medium-full in strength, fuller-bodied. Notes: cocoa, coffee, caramel."
+      "hr": "CAO Maduro Broadleaf: kakao, kava i zemlja uz papar; medium–full. Bourbon ili espresso.",
+      "en": "CAO Maduro Broadleaf: cocoa, coffee and earth with pepper; medium–full. Bourbon or espresso."
     },
     "markets": [
       "USA",
@@ -32577,7 +32592,9 @@
         "priceApprox": true
       }
     },
-    "strengthFromShop": true
+    "sourceUrls": [
+      "https://www.holts.com/cigars/all-cigar-brands/cao-maduro.html"
+    ]
   },
   {
     "id": "cig-cao-medio-tiempo",
@@ -48843,23 +48860,23 @@
     "format": "50 x 102mm",
     "country": "Dominikanska Republika",
     "wrapper": "Dominican",
-    "strength": 4,
+    "strength": 3,
     "body": 3,
     "flavorTags": [
       "cedar",
+      "orasasti",
+      "kremasto",
       "zacini",
-      "koza",
       "kava"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 39,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Dominikanska Republika, Dominican pokrov — jače snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Dominican Republic, Dominican wrapper — medium-full in strength, medium-bodied. Notes: cedar, spices, leather."
+      "hr": "Dominicana: cedar, orašasto i kremasto uz blage začine; medium. Cognac VSOP ili filter kava.",
+      "en": "Dominicana: cedar, nuts and cream with soft spice; medium. VSOP cognac or filter coffee."
     },
     "markets": [
       "USA",
@@ -48902,7 +48919,9 @@
         "priceApprox": true
       }
     },
-    "strengthFromShop": true
+    "sourceUrls": [
+      "https://www.neptunecigar.com/cigar/davidoff-dominicana"
+    ]
   },
   {
     "id": "cig-davidoff-escurio",
@@ -49374,19 +49393,18 @@
     "flavorTags": [
       "kakao",
       "kava",
-      "karamela",
-      "slatko",
-      "zemljano"
+      "zemljano",
+      "papar",
+      "orasasti"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 44,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Dominikanska Republika, Ecuador pokrov — jače snage, punijeg tijela. Okusi: kakao, kava, karamela.",
-      "en": "Dominican Republic, Ecuador wrapper — medium-full in strength, fuller-bodied. Notes: cocoa, coffee, caramel."
+      "hr": "Davidoff Maduro: kakao, kava i zemlja uz papar; medium–full. Cognac XO ili espresso.",
+      "en": "Davidoff Maduro: cocoa, coffee and earth with pepper; medium–full. XO cognac or espresso."
     },
     "markets": [
       "EU",
@@ -49466,7 +49484,9 @@
       }
     },
     "formatEstimated": true,
-    "strengthFromShop": true
+    "sourceUrls": [
+      "https://www.holts.com/cigars/all-cigar-brands/davidoff-maduro.html"
+    ]
   },
   {
     "id": "cig-davidoff-master-selection-2012",
@@ -55711,24 +55731,23 @@
     "format": "40 x 142mm",
     "country": "Dominikanska Republika",
     "wrapper": "Connecticut",
-    "strength": 2,
+    "strength": 1,
     "body": 2,
     "flavorTags": [
       "kremasto",
       "cedar",
       "orasasti",
       "med",
-      "trava-slatka"
+      "zacini"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 55,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Dominikanska Republika, Connecticut pokrov — lagane snage, laganog tijela. Okusi: kremasto, cedrovina, orašasti tonovi.",
-      "en": "Dominican Republic, Connecticut wrapper — mild in strength, light-bodied. Notes: creamy, cedar, nutty."
+      "hr": "CT Shade Dominican: vrlo blago, kremasto i cedar s kratkim finishom. Mlijeko-kava ili sparkling.",
+      "en": "CT Shade Dominican: very mild, creamy cedar with a short finish. Milky coffee or sparkling wine."
     },
     "markets": [
       "EU",
@@ -55840,7 +55859,9 @@
       }
     },
     "formatEstimated": true,
-    "strengthFromShop": true
+    "sourceUrls": [
+      "https://www.altadisusa.com/cigars/don-diego/don-diego-by-don-diego/"
+    ]
   },
   {
     "id": "cig-don-diego-edicion-limitada-special-edition-2025",
@@ -61789,19 +61810,17 @@
       "kremasto",
       "cedar",
       "orasasti",
-      "dim",
-      "med",
-      "trava-slatka"
+      "vanilija",
+      "med"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 58,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Connecticut pokrov — lagane snage, laganog tijela. Okusi: kremasto, cedrovina, orašasti tonovi.",
-      "en": "Nicaragua, Connecticut wrapper — mild in strength, light-bodied. Notes: creamy, cedar, nutty."
+      "hr": "Factory Smokes Shade: jednostavan CT — kremasto, cedar i orašasto; mild. Jutarnja kava.",
+      "en": "Factory Smokes Shade: simple CT — cream, cedar and nuts; mild. Morning coffee."
     },
     "markets": [
       "EU",
@@ -61883,7 +61902,10 @@
         "priceApprox": true
       }
     },
-    "formatEstimated": true
+    "formatEstimated": true,
+    "sourceUrls": [
+      "https://www.cigars.com/product/acid-by-drew-estate-factory-smokes-shade/1522156/"
+    ]
   },
   {
     "id": "cig-drew-estate-factory-smokes-sungrown",
@@ -62879,23 +62901,22 @@
     "country": "Nikaragva",
     "wrapper": "San Andres",
     "strength": 5,
-    "body": 4,
+    "body": 5,
     "flavorTags": [
+      "zemljano",
+      "papar",
       "kakao",
       "kava",
-      "karamela",
-      "slatko",
-      "zemljano"
+      "koza"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 63,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, San Andres pokrov — pune snage, punijeg tijela. Okusi: kakao, kava, karamela.",
-      "en": "Nicaragua, San Andres wrapper — full in strength, fuller-bodied. Notes: cocoa, coffee, caramel."
+      "hr": "Norteño San Andrés: puna snaga — zemlja, papar, kakao i kava. Bourbon ili espresso.",
+      "en": "Norteño San Andrés: full — earth, pepper, cocoa and coffee. Bourbon or espresso."
     },
     "markets": [
       "USA",
@@ -62938,7 +62959,9 @@
         "priceApprox": true
       }
     },
-    "strengthFromShop": true
+    "sourceUrls": [
+      "https://www.cigars.com/product/drew-estate-norteno/1519438/"
+    ]
   },
   {
     "id": "cig-drew-estate-norteno-by-fino",
@@ -67028,23 +67051,23 @@
     "format": "54 x 127mm",
     "country": "Nikaragva",
     "wrapper": "Ecuador",
-    "strength": 3,
-    "body": 3,
+    "strength": 4,
+    "body": 4,
     "flavorTags": [
-      "cedar",
-      "zacini",
+      "papar",
       "koza",
-      "kava"
+      "zemljano",
+      "orasasti",
+      "kakao"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 49,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Ecuador pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Nicaragua, Ecuador wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
+      "hr": "Ecuador Habano JC Newman: papar, koža, zemlja i orašasto; medium-full do full. Bourbon ili tamni rum.",
+      "en": "Ecuador Habano JC Newman: pepper, leather, earth and nuts; medium-full to full. Bourbon or dark rum."
     },
     "markets": [
       "EU",
@@ -67091,7 +67114,10 @@
         "priceEUR": 9.2
       }
     },
-    "formatEstimated": true
+    "formatEstimated": true,
+    "sourceUrls": [
+      "https://www.jcnewman.com/review-el-baton/"
+    ]
   },
   {
     "id": "cig-el-centurion-el-centurion",
@@ -72798,20 +72824,19 @@
     "body": 4,
     "flavorTags": [
       "kakao",
-      "kava",
       "karamela",
-      "slatko",
-      "zemljano"
+      "cedar",
+      "papar",
+      "koza"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 55,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Ecuador Habano pokrov — jače snage, punijeg tijela. Okusi: kakao, kava, karamela.",
-      "en": "Nicaragua, Ecuador Habano wrapper — medium-full in strength, fuller-bodied. Notes: cocoa, coffee, caramel."
+      "hr": "Maduro: kakao, butterscotch/karamela, cedar i papar; medium-full (Holt's). Bourbon ili stari rum.",
+      "en": "Maduro: cocoa, butterscotch/caramel, cedar and pepper; medium-full (Holt's). Bourbon or aged rum."
     },
     "markets": [
       "USA",
@@ -72872,7 +72897,9 @@
         "priceApprox": true
       }
     },
-    "strengthFromShop": true
+    "sourceUrls": [
+      "https://www.holts.com/clubhouse/content/flor-de-las-antillas-maduro"
+    ]
   },
   {
     "id": "cig-flor-de-selva-aniversario",
@@ -76431,24 +76458,23 @@
     "format": "54 x 127mm",
     "country": "Honduras",
     "wrapper": "Ecuador Connecticut",
-    "strength": 3,
+    "strength": 2,
     "body": 2,
     "flavorTags": [
       "kremasto",
       "cedar",
       "orasasti",
       "med",
-      "trava-slatka"
+      "zacini"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 49,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Honduras, Ecuador Connecticut pokrov — srednje snage, laganog tijela. Okusi: kremasto, cedrovina, orašasti tonovi.",
-      "en": "Honduras, Ecuador Connecticut wrapper — medium in strength, light-bodied. Notes: creamy, cedar, nutty."
+      "hr": "Ecuador CT Honduras: kremasto, cedar, blagi orašasti; mild–medium (Altadis). Lagana kava ili cognac VS.",
+      "en": "Ecuador CT Honduras: creamy cedar and soft nuts; mild–medium (Altadis). Light coffee or VS cognac."
     },
     "markets": [
       "USA",
@@ -76482,7 +76508,9 @@
         "priceApprox": true
       }
     },
-    "strengthFromShop": true
+    "sourceUrls": [
+      "https://www.altadisusa.com/cigars/gispert/gispert-natural/"
+    ]
   },
   {
     "id": "cig-god-of-fire-by-carlito",
@@ -78565,24 +78593,23 @@
     "format": "50 x 127mm",
     "country": "Dominikanska Republika",
     "wrapper": "Ecuador Connecticut",
-    "strength": 3,
+    "strength": 2,
     "body": 2,
     "flavorTags": [
       "kremasto",
       "cedar",
       "orasasti",
-      "med",
-      "trava-slatka"
+      "vanilija",
+      "med"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 49,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Dominikanska Republika, Ecuador Connecticut pokrov — srednje snage, laganog tijela. Okusi: kremasto, cedrovina, orašasti tonovi.",
-      "en": "Dominican Republic, Ecuador Connecticut wrapper — medium in strength, light-bodied. Notes: creamy, cedar, nutty."
+      "hr": "Ecuador CT Dominican: kremasto, cedar i orašasto; mild–medium (Davidoff). Flat white ili sparkling.",
+      "en": "Ecuador CT Dominican: creamy cedar and nuts; mild–medium (Davidoff). Flat white or sparkling wine."
     },
     "markets": [
       "USA",
@@ -78625,7 +78652,9 @@
         "priceApprox": true
       }
     },
-    "strengthFromShop": true
+    "sourceUrls": [
+      "https://www.neptunecigar.com/cigar/the-griffin-s-classic"
+    ]
   },
   {
     "id": "cig-griffin-s-nicaragua",
@@ -83722,21 +83751,20 @@
     "strength": 4,
     "body": 4,
     "flavorTags": [
+      "cedar",
       "kakao",
-      "kava",
-      "karamela",
-      "slatko",
-      "zemljano"
+      "koza",
+      "zemljano",
+      "zacini-slatki"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 58,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Dominikanska Republika, Connecticut Broadleaf pokrov — jače snage, punijeg tijela. Okusi: kakao, kava, karamela.",
-      "en": "Dominican Republic, Connecticut Broadleaf wrapper — medium-full in strength, fuller-bodied. Notes: cocoa, coffee, caramel."
+      "hr": "CT Broadleaf Stalk Cut: cedar, kakao, koža i zemlja uz cimet; medium–full. Bourbon ili espresso.",
+      "en": "CT Broadleaf Stalk Cut: cedar, cocoa, leather and earth with cinnamon; medium–full. Bourbon or espresso."
     },
     "markets": [
       "USA",
@@ -83788,7 +83816,9 @@
         "priceApprox": true
       }
     },
-    "strengthFromShop": true
+    "sourceUrls": [
+      "https://www.holts.com/cigars/all-cigar-brands/henry-clay-stalk-cut.html"
+    ]
   },
   {
     "id": "cig-henry-clay-war-hawk",
@@ -83799,23 +83829,22 @@
     "country": "Honduras",
     "wrapper": "Connecticut",
     "strength": 2,
-    "body": 2,
+    "body": 3,
     "flavorTags": [
       "kremasto",
       "cedar",
       "orasasti",
-      "med",
-      "trava-slatka"
+      "zacini-slatki",
+      "vanilija"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 63,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Honduras, Connecticut pokrov — lagane snage, laganog tijela. Okusi: kremasto, cedrovina, orašasti tonovi.",
-      "en": "Honduras, Connecticut wrapper — mild in strength, light-bodied. Notes: creamy, cedar, nutty."
+      "hr": "Ecuador CT: kremasto, cedar, orašasto i cimet/vanilija; mild–medium (CA). Cognac VS ili filter-light kava.",
+      "en": "Ecuador CT: creamy cedar, nuts and cinnamon/vanilla; mild–medium (CA). VS cognac or light filter coffee."
     },
     "markets": [
       "EU",
@@ -83910,7 +83939,10 @@
         "priceEUR": 7.3
       }
     },
-    "formatEstimated": true
+    "formatEstimated": true,
+    "sourceUrls": [
+      "https://www.cigaraficionado.com/ratings/24925/name/henry-clay-war-hawk-toro-toro"
+    ]
   },
   {
     "id": "cig-hernandez-amp-ruiz",
@@ -94442,23 +94474,23 @@
     "format": "52 x 133mm",
     "country": "Nikaragva",
     "wrapper": "Ecuador Habano",
-    "strength": 5,
-    "body": 3,
+    "strength": 4,
+    "body": 4,
     "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
+      "papar",
+      "kakao",
+      "voce",
+      "zemljano",
+      "koza"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 51,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Ecuador Habano pokrov — pune snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Nicaragua, Ecuador Habano wrapper — full in strength, medium-bodied. Notes: cedar, spices, leather."
+      "hr": "Ecuador Habano rosado: papar pa kakao i voćne note; medium-full (My Father). Bourbon ili demerara rum.",
+      "en": "Ecuador Habano rosado: pepper then cocoa and fruit; medium-full (My Father). Bourbon or Demerara rum."
     },
     "markets": [
       "USA",
@@ -94492,7 +94524,9 @@
         "priceApprox": true
       }
     },
-    "strengthFromShop": true
+    "sourceUrls": [
+      "https://myfathercigars.com/cigar/la-antiguedad/"
+    ]
   },
   {
     "id": "cig-la-antiguedad-super",
@@ -94709,10 +94743,9 @@
       "kremasto",
       "cedar",
       "orasasti",
-      "med",
-      "trava-slatka"
+      "kava",
+      "slatko"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 54,
     "priceEUR": null,
@@ -94722,8 +94755,8 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Nikaragva, Ecuador Connecticut pokrov — lagane snage, laganog tijela. Okusi: kremasto, cedrovina, orašasti tonovi.",
-      "en": "Nicaragua, Ecuador Connecticut wrapper — mild in strength, light-bodied. Notes: creamy, cedar, nutty."
+      "hr": "Ecuador CT: badem/cashew, cedar i coffee bean uz buttercream; mild–medium (Holt's). Jutarnja kava ili cognac VS.",
+      "en": "Ecuador CT: almond/cashew, cedar and coffee bean with buttercream; mild–medium (Holt's). Morning coffee or VS cognac."
     },
     "markets": [
       "HR",
@@ -94858,9 +94891,11 @@
         "priceEUR": 7.8
       }
     },
-    "strengthFromShop": true,
     "flavoured": false,
-    "formatEstimated": true
+    "formatEstimated": true,
+    "sourceUrls": [
+      "https://www.holts.com/cigars/all-cigar-brands/la-aroma-de-cuba-connecticut.html"
+    ]
   },
   {
     "id": "cig-la-aroma-de-cuba-edicion-especial-5",
@@ -95165,23 +95200,22 @@
     "country": "Nikaragva",
     "wrapper": "Connecticut Broadleaf",
     "strength": 3,
-    "body": 4,
+    "body": 3,
     "flavorTags": [
       "kakao",
+      "cedar",
       "kava",
-      "karamela",
-      "slatko",
-      "zemljano"
+      "melasa",
+      "zacini"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 54,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Connecticut Broadleaf pokrov — srednje snage, punijeg tijela. Okusi: kakao, kava, karamela.",
-      "en": "Nicaragua, Connecticut Broadleaf wrapper — medium in strength, fuller-bodied. Notes: cocoa, coffee, caramel."
+      "hr": "Core CT Broadleaf: kakao, cedar, kava i melasa; medium (Holt's/Ashton LADC). Bourbon ili filter-dark kava.",
+      "en": "Core CT Broadleaf: cocoa, cedar, coffee and molasses; medium. Bourbon or dark filter coffee."
     },
     "markets": [
       "USA",
@@ -95251,7 +95285,9 @@
         "priceApprox": true
       }
     },
-    "strengthFromShop": true
+    "sourceUrls": [
+      "https://www.holts.com/cigars/all-cigar-brands/la-aroma-de-cuba.html"
+    ]
   },
   {
     "id": "cig-la-aroma-de-cuba-mi-amor",
@@ -95265,20 +95301,19 @@
     "body": 4,
     "flavorTags": [
       "kakao",
+      "orasasti",
       "kava",
-      "karamela",
-      "slatko",
-      "zemljano"
+      "papar",
+      "kokos"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 49,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, San Andrés pokrov — srednje snage, punijeg tijela. Okusi: kakao, kava, karamela.",
-      "en": "Nicaragua, San Andres wrapper — medium-full in strength, fuller-bodied. Notes: cocoa, coffee, caramel."
+      "hr": "San Andrés: tamna čokolada, badem, espresso, papar i trag kokosa (brand). Bourbon ili demerara rum; espresso.",
+      "en": "San Andrés: dark chocolate, almond, espresso, black pepper and a hint of coconut (brand). Bourbon or Demerara rum; espresso."
     },
     "markets": [
       "EU",
@@ -95375,7 +95410,9 @@
     },
     "formatEstimated": true,
     "flavoured": false,
-    "strengthFromShop": true
+    "sourceUrls": [
+      "https://www.laaromadecuba.com/cigars/la-aroma-de-cuba-cigars/la-aroma-de-cuba-mi-amor"
+    ]
   },
   {
     "id": "cig-la-aroma-de-cuba-noblesse",
@@ -97810,18 +97847,17 @@
       "kremasto",
       "cedar",
       "orasasti",
-      "med",
-      "trava-slatka"
+      "vanilija",
+      "citrus"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 47,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Dominikanska Republika, Connecticut pokrov — lagane snage, laganog tijela. Okusi: kremasto, cedrovina, orašasti tonovi.",
-      "en": "Dominican Republic, Connecticut wrapper — mild in strength, light-bodied. Notes: creamy, cedar, nutty."
+      "hr": "Principes Claro CT: kremasto, cedar i badem uz vaniliju/citrus; mild–medium. Jutarnja kava ili cognac VS.",
+      "en": "Principes Claro CT: cream, cedar and almond with vanilla/citrus; mild–medium. Morning coffee or VS cognac."
     },
     "markets": [
       "EU",
@@ -97932,7 +97968,10 @@
         "priceEUR": 3.15
       }
     },
-    "formatEstimated": true
+    "formatEstimated": true,
+    "sourceUrls": [
+      "https://robertgraham1874.com/product/la-aurora-principes-long-filler-claro-robusto-single-cigar/"
+    ]
   },
   {
     "id": "cig-la-aurora-principes-maduro",
@@ -101665,23 +101704,23 @@
     "format": "46 x 146mm",
     "country": "Nikaragva",
     "wrapper": "Ecuador Habano",
-    "strength": 4,
-    "body": 3,
+    "strength": 5,
+    "body": 5,
     "flavorTags": [
-      "cedar",
-      "zacini",
+      "kakao",
+      "kava",
       "koza",
-      "kava"
+      "papar",
+      "tamno-voce"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 56,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Ecuador Habano pokrov — jače snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Nicaragua, Ecuador Habano wrapper — medium-full in strength, medium-bodied. Notes: cedar, spices, leather."
+      "hr": "Habano Oscuro: tamna čokolada, espresso, koža i papar uz tamno voće (Crowned Heads). Bourbon ili navy rum; espresso-dark.",
+      "en": "Habano Oscuro: dark chocolate, espresso, leather and pepper with dark fruit (Crowned Heads). Bourbon or navy rum; dark espresso."
     },
     "markets": [
       "USA",
@@ -101715,7 +101754,9 @@
         "priceApprox": true
       }
     },
-    "strengthFromShop": true
+    "sourceUrls": [
+      "https://www.crownedheads.com/la-imperiosa/"
+    ]
   },
   {
     "id": "cig-la-instructora-delicado",
@@ -116061,24 +116102,23 @@
     "format": "50 x 127mm",
     "country": "Dominikanska Republika",
     "wrapper": "Connecticut Shade, Connecticut Broadleaf",
-    "strength": 2,
-    "body": 4,
+    "strength": 3,
+    "body": 3,
     "flavorTags": [
       "kakao",
       "kava",
-      "karamela",
-      "slatko",
-      "zemljano"
+      "orasasti",
+      "melasa",
+      "papar"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 49,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Dominikanska Republika, Connecticut Shade, Connecticut Broadleaf pokrov — lagane snage, punijeg tijela. Okusi: kakao, kava, karamela.",
-      "en": "Dominican Republic, Connecticut Shade, Connecticut Broadleaf wrapper — mild in strength, fuller-bodied. Notes: cocoa, coffee, caramel."
+      "hr": "CT Broadleaf Maduro: kakao, espresso, orašasto i melasa uz blagi papar; medium. Espresso ili tamni rum.",
+      "en": "CT Broadleaf Maduro: cocoa, espresso, nuts and molasses with mild pepper; medium. Espresso or dark rum."
     },
     "markets": [
       "USA",
@@ -116112,7 +116152,9 @@
         "priceApprox": true
       }
     },
-    "strengthFromShop": true
+    "sourceUrls": [
+      "https://www.holts.com/cigars/all-cigar-brands/montesino.html"
+    ]
   },
   {
     "id": "cig-montesino-robusto",
@@ -117628,22 +117670,22 @@
     "country": "Nikaragva",
     "wrapper": "Ecuador Habano",
     "strength": 4,
-    "body": 3,
+    "body": 4,
     "flavorTags": [
+      "papar",
+      "zemljano",
       "cedar",
-      "zacini",
-      "koza",
-      "kava"
+      "kava",
+      "orasasti"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 73,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Ecuador Habano pokrov — jače snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Nicaragua, Ecuador Habano wrapper — medium-full in strength, medium-bodied. Notes: cedar, spices, leather."
+      "hr": "La Gran Oferta Habano: papar, zemlja i cedar uz kavu; medium–full. Bourbon ili espresso.",
+      "en": "La Gran Oferta Habano: pepper, earth and cedar with coffee; medium–full. Bourbon or espresso."
     },
     "markets": [
       "EU",
@@ -117748,7 +117790,9 @@
       }
     },
     "formatEstimated": true,
-    "strengthFromShop": true
+    "sourceUrls": [
+      "https://www.holts.com/cigars/all-cigar-brands/my-father-la-gran-oferta.html"
+    ]
   },
   {
     "id": "cig-my-father-la-lealtad",
@@ -121057,18 +121101,17 @@
       "kremasto",
       "cedar",
       "orasasti",
-      "med",
-      "trava-slatka"
+      "vanilija",
+      "med"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 49,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Connecticut pokrov — lagane snage, laganog tijela. Okusi: kremasto, cedrovina, orašasti tonovi.",
-      "en": "Nicaragua, Connecticut wrapper — mild in strength, light-bodied. Notes: creamy, cedar, nutty."
+      "hr": "Flor de Oliva Connecticut: kremasto, cedar i orašasto; mild–medium. Jutarnja kava.",
+      "en": "Flor de Oliva Connecticut: cream, cedar and nuts; mild–medium. Morning coffee."
     },
     "markets": [
       "EU",
@@ -121131,7 +121174,10 @@
         "priceEUR": 4.9
       }
     },
-    "formatEstimated": true
+    "formatEstimated": true,
+    "sourceUrls": [
+      "https://www.jrcigars.com/item/oliva/flor-de-oliva-connecticut/FLO-CT/"
+    ]
   },
   {
     "id": "cig-oliva-flor-de-corojo",
@@ -121141,23 +121187,23 @@
     "format": "50 x 127mm",
     "country": "Nikaragva",
     "wrapper": "Corojo",
-    "strength": 5,
+    "strength": 4,
     "body": 4,
     "flavorTags": [
       "papar",
       "zacini",
-      "koza",
-      "cedar"
+      "zemljano",
+      "cedar",
+      "kava"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 49,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Corojo pokrov — pune snage, punijeg tijela. Okusi: papar, začini, koža.",
-      "en": "Nicaragua, Corojo wrapper — full in strength, fuller-bodied. Notes: pepper, spices, leather."
+      "hr": "Flor de Oliva Corojo: papar, začini i zemlja uz cedar; medium–full do full. Bourbon ili espresso.",
+      "en": "Flor de Oliva Corojo: pepper, spice and earth with cedar; medium–full to full. Bourbon or espresso."
     },
     "markets": [
       "USA",
@@ -121209,7 +121255,9 @@
         "priceApprox": true
       }
     },
-    "strengthFromShop": true
+    "sourceUrls": [
+      "https://www.holts.com/cigars/all-cigar-brands/flor-de-oliva-corojo.html"
+    ]
   },
   {
     "id": "cig-oliva-flor-de-gold",
@@ -121299,23 +121347,22 @@
     "country": "Nikaragva",
     "wrapper": "Nicaragua",
     "strength": 3,
-    "body": 4,
+    "body": 3,
     "flavorTags": [
       "kakao",
       "kava",
-      "karamela",
+      "zemljano",
       "slatko",
-      "zemljano"
+      "orasasti"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 49,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Nicaragua pokrov — srednje snage, punijeg tijela. Okusi: kakao, kava, karamela.",
-      "en": "Nicaragua, Nicaragua wrapper — medium in strength, fuller-bodied. Notes: cocoa, coffee, caramel."
+      "hr": "Flor de Oliva Maduro: kakao, kava i zemlja uz slatkoću; medium. Espresso ili rum.",
+      "en": "Flor de Oliva Maduro: cocoa, coffee and earth with sweetness; medium. Espresso or rum."
     },
     "markets": [
       "EU",
@@ -121394,7 +121441,9 @@
         "priceApprox": true
       }
     },
-    "strengthFromShop": true
+    "sourceUrls": [
+      "https://www.holts.com/cigars/all-cigar-brands/flor-de-oliva-maduro.html"
+    ]
   },
   {
     "id": "cig-oliva-flor-de-original",
@@ -121495,22 +121544,22 @@
     "country": "Nikaragva",
     "wrapper": "Sumatra",
     "strength": 3,
-    "body": 4,
+    "body": 3,
     "flavorTags": [
-      "kakao",
+      "cedar",
+      "orasasti",
       "zacini",
-      "drvo",
-      "karamela"
+      "kremasto",
+      "kava"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 56,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Sumatra pokrov — srednje snage, punijeg tijela. Okusi: kakao, začini, drvo.",
-      "en": "Nicaragua, Sumatra wrapper — medium in strength, fuller-bodied. Notes: cocoa, spices, wood."
+      "hr": "Gilberto Reserva Sumatra: cedar, orašasto i začini uz kremastu teksturu; medium. Rum ili filter kava.",
+      "en": "Gilberto Reserva Sumatra: cedar, nuts and spice with a creamy texture; medium. Rum or filter coffee."
     },
     "markets": [
       "USA",
@@ -121571,7 +121620,9 @@
         "priceApprox": true
       }
     },
-    "strengthFromShop": true
+    "sourceUrls": [
+      "https://www.jrcigars.com/item/oliva/gilberto-reserva/OLI-GIL-RES/"
+    ]
   },
   {
     "id": "cig-oliva-gilberto-reserva-blanc",
@@ -121830,22 +121881,22 @@
     "country": "Nikaragva",
     "wrapper": "Nicaraguan",
     "strength": 4,
-    "body": 3,
+    "body": 4,
     "flavorTags": [
+      "kakao",
+      "kava",
       "cedar",
       "zacini",
-      "koza",
-      "kava"
+      "orasasti"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 49,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Nicaraguan pokrov — jače snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Nicaragua, Nicaraguan wrapper — medium-full in strength, medium-bodied. Notes: cedar, spices, leather."
+      "hr": "Monticello: kakao, kava i cedar uz začine; medium–full. Bourbon ili espresso.",
+      "en": "Monticello: cocoa, coffee and cedar with spice; medium–full. Bourbon or espresso."
     },
     "markets": [
       "USA",
@@ -121906,7 +121957,9 @@
         "priceApprox": true
       }
     },
-    "strengthFromShop": true
+    "sourceUrls": [
+      "https://www.holts.com/cigars/all-cigar-brands/oliva-monticello.html"
+    ]
   },
   {
     "id": "cig-oliva-nub-connecticut-464t",
@@ -134492,22 +134545,22 @@
     "country": "Nikaragva",
     "wrapper": "Nicaraguan",
     "strength": 4,
-    "body": 3,
+    "body": 4,
     "flavorTags": [
       "cedar",
-      "zacini",
       "koza",
-      "kava"
+      "zacini",
+      "kava",
+      "orasasti"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 49,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "10th Anniversary Champagne — kremasti Connecticut odležan u bourbon bačvama: vanilija, med i lagana hrastova slatkoća.",
-      "en": "10th Anniversary Champagne — a creamy Connecticut aged in bourbon barrels: vanilla, honey and light oak sweetness."
+      "hr": "10th SG: cedar, koža i začini uz kavu; medium–full (Holt's reviews). Bourbon ili srednji rum.",
+      "en": "10th SG: cedar, leather and spice with coffee; medium–full (Holt's reviews). Bourbon or medium rum."
     },
     "markets": [
       "USA",
@@ -134559,7 +134612,9 @@
         "priceApprox": true
       }
     },
-    "strengthFromShop": true
+    "sourceUrls": [
+      "https://www.holts.com/clubhouse/staff-reviews/perdomo-10th-anniversary-sun-grown"
+    ]
   },
   {
     "id": "cig-perdomo-20th-anniversary",
@@ -134801,22 +134856,20 @@
     "strength": 4,
     "body": 4,
     "flavorTags": [
-      "duhan",
       "kakao",
       "kava",
-      "karamela",
-      "zemljano",
-      "slatko"
+      "papar",
+      "cedar",
+      "zemljano"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 49,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "30th Anniversary donosi najstarije Perdomo duhane — svilenkast, zaobljen, s bourbon-bačva finišem.",
-      "en": "30th Anniversary features Perdomo's oldest tobaccos — silky, rounded, with the bourbon-barrel finish."
+      "hr": "30th Maduro: kakao/espresso, papar, cedar i zemlja; medium–medium-full. Bourbon ili cognac; espresso.",
+      "en": "30th Maduro: cocoa/espresso, pepper, cedar and earth; medium–medium-full. Bourbon or cognac; espresso."
     },
     "markets": [
       "EU",
@@ -134914,7 +134967,9 @@
       }
     },
     "formatEstimated": true,
-    "strengthFromShop": true
+    "sourceUrls": [
+      "https://cigar-coop.com/2024/05/perdomo-30th-anniversary-maduro-epicure-cigar-review.html"
+    ]
   },
   {
     "id": "cig-perdomo-30th-anniversary-sun-grown",
@@ -134925,23 +134980,22 @@
     "country": "Nikaragva",
     "wrapper": "Nicaraguan",
     "strength": 4,
-    "body": 3,
+    "body": 4,
     "flavorTags": [
-      "duhan",
-      "cedar",
-      "zacini",
+      "hrast",
+      "orasasti",
+      "papar",
       "koza",
-      "kava"
+      "zacini"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 49,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "30th Anniversary donosi najstarije Perdomo duhane — svilenkast, zaobljen, s bourbon-bačva finišem.",
-      "en": "30th Anniversary features Perdomo's oldest tobaccos — silky, rounded, with the bourbon-barrel finish."
+      "hr": "30th Sun Grown: hrast, badem, cayenne/papar, koža; medium–full (Holt's). Bourbon ili srednji rum.",
+      "en": "30th Sun Grown: oak, almond, cayenne/pepper, leather; medium–full (Holt's). Bourbon or medium rum."
     },
     "markets": [
       "EU",
@@ -135039,7 +135093,9 @@
       }
     },
     "formatEstimated": true,
-    "strengthFromShop": true
+    "sourceUrls": [
+      "https://www.holts.com/cigars/all-cigar-brands/perdomo-30th-anniversary-sun-grown.html"
+    ]
   },
   {
     "id": "cig-perdomo-bourbon-barrel-aged",
@@ -135050,22 +135106,22 @@
     "country": "Nikaragva",
     "wrapper": "Nicaragua",
     "strength": 3,
-    "body": 3,
+    "body": 4,
     "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
+      "hrast",
+      "vanilija",
+      "karamela",
+      "kava",
+      "orasasti"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 49,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Nicaragua pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Nicaragua, Nicaragua wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
+      "hr": "Bourbon Barrel Aged: hrast, vanilija/karamela i kava; medium+. Bourbon (prirodni pairing).",
+      "en": "Bourbon Barrel Aged: oak, vanilla/caramel and coffee; medium+. Bourbon (natural pairing)."
     },
     "markets": [
       "EU",
@@ -135128,7 +135184,10 @@
         "priceEUR": 12.5
       }
     },
-    "formatEstimated": true
+    "formatEstimated": true,
+    "sourceUrls": [
+      "https://www.jrcigars.com/item/perdomo/bourbon-barrel-aged/PER-BBA/"
+    ]
   },
   {
     "id": "cig-perdomo-champagne-noir",
@@ -136213,18 +136272,17 @@
       "kremasto",
       "cedar",
       "orasasti",
-      "med",
-      "trava-slatka"
+      "vanilija",
+      "citrus"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 49,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Connecticut pokrov — lagane snage, laganog tijela. Okusi: kremasto, cedrovina, orašasti tonovi.",
-      "en": "Nicaragua, Connecticut wrapper — mild in strength, light-bodied. Notes: creamy, cedar, nutty."
+      "hr": "Fresco CT: lagano kremasto, cedar i orašasto; mild–medium (fresh-pack line). Jutarnja kava.",
+      "en": "Fresco CT: light cream, cedar and nuts; mild–medium (fresh-pack line). Morning coffee."
     },
     "markets": [
       "EU",
@@ -136328,7 +136386,10 @@
         "priceApprox": true
       }
     },
-    "formatEstimated": true
+    "formatEstimated": true,
+    "sourceUrls": [
+      "https://www.cigars.com/product/perdomo-fresco-connecticut/1521807/"
+    ]
   },
   {
     "id": "cig-perdomo-fresco-maduro",
@@ -136339,23 +136400,22 @@
     "country": "Nikaragva",
     "wrapper": "Nicaragua",
     "strength": 3,
-    "body": 4,
+    "body": 3,
     "flavorTags": [
       "kakao",
       "kava",
-      "karamela",
+      "zemljano",
       "slatko",
-      "zemljano"
+      "papar"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 49,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Nicaragua pokrov — srednje snage, punijeg tijela. Okusi: kakao, kava, karamela.",
-      "en": "Nicaragua, Nicaragua wrapper — medium in strength, fuller-bodied. Notes: cocoa, coffee, caramel."
+      "hr": "Fresco Maduro: kakao, kava i zemlja; medium. Espresso.",
+      "en": "Fresco Maduro: cocoa, coffee and earth; medium. Espresso."
     },
     "markets": [
       "EU",
@@ -136459,7 +136519,10 @@
         "priceApprox": true
       }
     },
-    "formatEstimated": true
+    "formatEstimated": true,
+    "sourceUrls": [
+      "https://www.neptunecigar.com/cigar/perdomo-fresco-maduro"
+    ]
   },
   {
     "id": "cig-perdomo-fresco-sun-grown",
@@ -136473,19 +136536,19 @@
     "body": 3,
     "flavorTags": [
       "cedar",
+      "orasasti",
       "zacini",
-      "koza",
-      "kava"
+      "kava",
+      "papar"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 49,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Nicaragua pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Nicaragua, Nicaragua wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
+      "hr": "Fresco Sun Grown: cedar, orašasto i začini; medium. Kava ili lagani rum.",
+      "en": "Fresco Sun Grown: cedar, nuts and spice; medium. Coffee or light rum."
     },
     "markets": [
       "EU",
@@ -136589,7 +136652,10 @@
         "priceApprox": true
       }
     },
-    "formatEstimated": true
+    "formatEstimated": true,
+    "sourceUrls": [
+      "https://www.neptunecigar.com/cigar/perdomo-fresco-sun-grown"
+    ]
   },
   {
     "id": "cig-perdomo-habano-bourbon",
@@ -136668,23 +136734,22 @@
     "country": "Nikaragva",
     "wrapper": "Ecuador Connecticut",
     "strength": 2,
-    "body": 2,
+    "body": 3,
     "flavorTags": [
       "kremasto",
       "cedar",
       "orasasti",
       "med",
-      "trava-slatka"
+      "zacini"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 49,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Ecuador Connecticut pokrov — lagane snage, laganog tijela. Okusi: kremasto, cedrovina, orašasti tonovi.",
-      "en": "Nicaragua, Ecuador Connecticut wrapper — mild in strength, light-bodied. Notes: creamy, cedar, nutty."
+      "hr": "Habano Connecticut: kremasto, cedar i orašasto uz med/začine; mild–medium (Neptune). Filter-light kava.",
+      "en": "Habano Connecticut: cream, cedar and nuts with honey/spice; mild–medium (Neptune). Light filter coffee."
     },
     "markets": [
       "USA",
@@ -136745,7 +136810,9 @@
         "priceApprox": true
       }
     },
-    "strengthFromShop": true
+    "sourceUrls": [
+      "https://www.neptunecigar.com/cigar/perdomo-habano-connecticut"
+    ]
   },
   {
     "id": "cig-perdomo-habano-maduro",
@@ -136760,19 +136827,18 @@
     "flavorTags": [
       "kakao",
       "kava",
-      "karamela",
-      "slatko",
-      "zemljano"
+      "papar",
+      "zemljano",
+      "orasasti"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 49,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Nicaraguan pokrov — jače snage, punijeg tijela. Okusi: kakao, kava, karamela.",
-      "en": "Nicaragua, Nicaraguan wrapper — medium-full in strength, fuller-bodied. Notes: cocoa, coffee, caramel."
+      "hr": "Habano Maduro: kakao, espresso i papar uz zemlju; medium–full. Tamni rum ili bourbon.",
+      "en": "Habano Maduro: cocoa, espresso and pepper with earth; medium–full. Dark rum or bourbon."
     },
     "markets": [
       "USA",
@@ -136824,7 +136890,9 @@
         "priceApprox": true
       }
     },
-    "strengthFromShop": true
+    "sourceUrls": [
+      "https://www.neptunecigar.com/cigar/perdomo-habano-maduro"
+    ]
   },
   {
     "id": "cig-perdomo-habano-sun-grown",
@@ -136838,19 +136906,19 @@
     "body": 3,
     "flavorTags": [
       "cedar",
+      "orasasti",
       "zacini",
-      "koza",
-      "kava"
+      "kava",
+      "papar"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 49,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Nicaraguan pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Nicaragua, Nicaraguan wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
+      "hr": "Habano Sun Grown: cedar, orašasto i začini uz kavu; medium. Srednji rum ili kava.",
+      "en": "Habano Sun Grown: cedar, nuts and spice with coffee; medium. Medium rum or coffee."
     },
     "markets": [
       "USA",
@@ -136902,7 +136970,9 @@
         "priceApprox": true
       }
     },
-    "strengthFromShop": true
+    "sourceUrls": [
+      "https://www.neptunecigar.com/cigar/perdomo-habano-sungrown"
+    ]
   },
   {
     "id": "cig-perdomo-legacy-connecticut",
@@ -136912,24 +136982,23 @@
     "format": "54 x 127mm",
     "country": "Nikaragva",
     "wrapper": "Connecticut",
-    "strength": 3,
-    "body": 2,
+    "strength": 2,
+    "body": 3,
     "flavorTags": [
       "kremasto",
       "cedar",
       "orasasti",
-      "med",
-      "trava-slatka"
+      "vanilija",
+      "zacini"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 49,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Aromatizirana. Nikaragva, Connecticut pokrov — srednje snage, laganog tijela. Okusi: kremasto, cedrovina, orašasti tonovi.",
-      "en": "Flavoured/infused. Nicaragua, Connecticut wrapper — medium in strength, light-bodied. Notes: creamy, cedar, nutty."
+      "hr": "Legacy Connecticut: kremasto, cedar i orašasto; mild–medium. Jutarnja kava.",
+      "en": "Legacy Connecticut: cream, cedar and nuts; mild–medium. Morning coffee."
     },
     "markets": [
       "EU",
@@ -137024,8 +137093,10 @@
         "priceApprox": true
       }
     },
-    "strengthFromShop": true,
-    "flavoured": true
+    "flavoured": true,
+    "sourceUrls": [
+      "https://www.holts.com/cigars/all-cigar-brands/perdomo-legacy-connecticut.html"
+    ]
   },
   {
     "id": "cig-perdomo-legacy-maduro",
@@ -137040,19 +137111,18 @@
     "flavorTags": [
       "kakao",
       "kava",
-      "karamela",
-      "slatko",
-      "zemljano"
+      "zemljano",
+      "papar",
+      "slatko"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 49,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Aromatizirana. Nikaragva, Nicaragua pokrov — jače snage, punijeg tijela. Okusi: kakao, kava, karamela.",
-      "en": "Flavoured/infused. Nicaragua, Nicaragua wrapper — medium-full in strength, fuller-bodied. Notes: cocoa, coffee, caramel."
+      "hr": "Legacy Maduro: kakao, kava i zemlja uz papar; medium–full. Bourbon ili espresso.",
+      "en": "Legacy Maduro: cocoa, coffee and earth with pepper; medium–full. Bourbon or espresso."
     },
     "markets": [
       "EU",
@@ -137147,8 +137217,10 @@
         "priceApprox": true
       }
     },
-    "strengthFromShop": true,
-    "flavoured": true
+    "flavoured": true,
+    "sourceUrls": [
+      "https://www.holts.com/cigars/all-cigar-brands/perdomo-legacy-maduro.html"
+    ]
   },
   {
     "id": "cig-perdomo-legacy-shade",
@@ -140488,24 +140560,23 @@
     "format": "46 x 152mm",
     "country": "Dominikanska Republika",
     "wrapper": "Ecuador Connecticut",
-    "strength": 3,
-    "body": 2,
+    "strength": 2,
+    "body": 3,
     "flavorTags": [
       "kremasto",
       "cedar",
       "orasasti",
-      "med",
-      "trava-slatka"
+      "zemljano",
+      "zacini"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 58,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Dominikanska Republika, Ecuador Connecticut pokrov — srednje snage, laganog tijela. Okusi: kremasto, cedrovina, orašasti tonovi.",
-      "en": "Dominican Republic, Ecuador Connecticut wrapper — medium in strength, light-bodied. Notes: creamy, cedar, nutty."
+      "hr": "Altadis USA Ecuador CT / Dominikana: kremasto, cedar, orašasto i blaga zemlja; mild–medium. Jutarnja kava.",
+      "en": "Altadis USA Ecuador CT / Dominican: cream, cedar, nuts and soft earth; mild–medium. Morning coffee."
     },
     "markets": [
       "USA",
@@ -140548,7 +140619,9 @@
         "priceApprox": true
       }
     },
-    "strengthFromShop": true
+    "sourceUrls": [
+      "https://www.neptunecigar.com/cigar/por-larranaga"
+    ]
   },
   {
     "id": "cig-por-larranaga-montecarlos",
@@ -144104,22 +144177,22 @@
     "country": "Nikaragva",
     "wrapper": "Ecuador Sumatra",
     "strength": 3,
-    "body": 4,
+    "body": 3,
     "flavorTags": [
-      "kakao",
-      "zacini",
-      "drvo",
-      "karamela"
+      "kava",
+      "cedar",
+      "orasasti",
+      "zemljano",
+      "zacini"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 54,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Ecuador Sumatra pokrov — srednje snage, punijeg tijela. Okusi: kakao, začini, drvo.",
-      "en": "Nicaragua, Ecuador Sumatra wrapper — medium in strength, fuller-bodied. Notes: cocoa, spices, wood."
+      "hr": "Ecuador Sumatra bundle: kava, cedar, orašasto i blagi začini; medium (J.C. Newman). Obična kava ili lagani rum.",
+      "en": "Ecuador Sumatra bundle: coffee, cedar, nuts and light spice; medium (J.C. Newman). Everyday coffee or light rum."
     },
     "markets": [
       "EU",
@@ -144299,7 +144372,9 @@
       }
     },
     "formatEstimated": true,
-    "strengthFromShop": true
+    "sourceUrls": [
+      "https://www.jcnewman.com/company/quorum-cigars/"
+    ]
   },
   {
     "id": "cig-quorum-double",
@@ -144361,23 +144436,22 @@
     "country": "Nikaragva",
     "wrapper": "Maduro",
     "strength": 3,
-    "body": 4,
+    "body": 3,
     "flavorTags": [
       "kakao",
       "kava",
-      "karamela",
-      "slatko",
-      "zemljano"
+      "zemljano",
+      "papar",
+      "cedar"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 54,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Maduro pokrov — srednje snage, punijeg tijela. Okusi: kakao, kava, karamela.",
-      "en": "Nicaragua, Maduro wrapper — medium in strength, fuller-bodied. Notes: cocoa, coffee, caramel."
+      "hr": "Maduro Quorum: tamni kakao, coffee bean, zemlja i papar; medium (Holt's). Espresso ili jeftini bourbon.",
+      "en": "Quorum Maduro: dark cocoa, coffee bean, earth and pepper; medium (Holt's). Espresso or everyday bourbon."
     },
     "markets": [
       "EU",
@@ -144479,7 +144553,9 @@
         "priceApprox": true
       }
     },
-    "strengthFromShop": true
+    "sourceUrls": [
+      "https://www.holts.com/cigars/all-cigar-brands/quorum-maduro.html"
+    ]
   },
   {
     "id": "cig-quorum-shade",
@@ -144489,24 +144565,23 @@
     "format": "38 x 121mm",
     "country": "Nikaragva",
     "wrapper": "Connecticut",
-    "strength": 3,
+    "strength": 2,
     "body": 2,
     "flavorTags": [
       "kremasto",
       "cedar",
       "orasasti",
       "med",
-      "trava-slatka"
+      "zacini"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 47,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Connecticut pokrov — srednje snage, laganog tijela. Okusi: kremasto, cedrovina, orašasti tonovi.",
-      "en": "Nicaragua, Connecticut wrapper — medium in strength, light-bodied. Notes: creamy, cedar, nutty."
+      "hr": "Ecuador CT Shade: kremasto, cedar i orašasto; mild–medium (J.C. Newman). Mlijeko-kava ili lagani rum.",
+      "en": "Ecuador CT Shade: creamy cedar and nuts; mild–medium (J.C. Newman). Milky coffee or light rum."
     },
     "markets": [
       "EU",
@@ -144650,7 +144725,9 @@
       }
     },
     "formatEstimated": true,
-    "strengthFromShop": true
+    "sourceUrls": [
+      "https://www.jcnewman.com/company/quorum-cigars/"
+    ]
   },
   {
     "id": "cig-r-a-villamil-clasico",
@@ -146765,23 +146842,22 @@
     "country": "Honduras",
     "wrapper": "Maduro",
     "strength": 5,
-    "body": 4,
+    "body": 5,
     "flavorTags": [
-      "kakao",
       "kava",
-      "karamela",
-      "slatko",
-      "zemljano"
+      "kakao",
+      "tamno-voce",
+      "zemljano",
+      "papar"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 54,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Honduras, Maduro pokrov — pune snage, punijeg tijela. Okusi: kakao, kava, karamela.",
-      "en": "Honduras, Maduro wrapper — full in strength, fuller-bodied. Notes: cocoa, coffee, caramel."
+      "hr": "Black Label Maduro: espresso, kakao i tamno voće; full (Holt's). Bourbon ili espresso.",
+      "en": "Black Label Maduro: espresso, cocoa and dark fruit; full (Holt's). Bourbon or espresso."
     },
     "markets": [
       "USA",
@@ -146824,7 +146900,9 @@
         "priceApprox": true
       }
     },
-    "strengthFromShop": true
+    "sourceUrls": [
+      "https://www.holts.com/cigars/all-cigar-brands/rocky-patel-black-label.html"
+    ]
   },
   {
     "id": "cig-rocky-patel-bold-by-nish-patel",
@@ -147046,23 +147124,22 @@
     "country": "Honduras",
     "wrapper": "Honduras",
     "strength": 4,
-    "body": 5,
+    "body": 4,
     "flavorTags": [
       "kakao",
       "kava",
       "zemljano",
-      "koza",
-      "papar"
+      "papar",
+      "koza"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 49,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Honduras, Honduras pokrov — jače snage, punog tijela. Okusi: kakao, kava, zemljani tonovi.",
-      "en": "Honduras, Honduras wrapper — medium-full in strength, full-bodied. Notes: cocoa, coffee, earthy."
+      "hr": "Dark Star: tamni kakao, kava i zemlja uz papar; medium–full. Bourbon ili tamni rum.",
+      "en": "Dark Star: dark cocoa, coffee and earth with pepper; medium–full. Bourbon or dark rum."
     },
     "markets": [
       "EU",
@@ -147125,7 +147202,10 @@
         "priceEUR": 11.5
       }
     },
-    "formatEstimated": true
+    "formatEstimated": true,
+    "sourceUrls": [
+      "https://www.rockypatel.com/cigars/dark-star/"
+    ]
   },
   {
     "id": "cig-rocky-patel-dbs",
@@ -149735,19 +149815,19 @@
     "body": 3,
     "flavorTags": [
       "cedar",
+      "orasasti",
       "zacini",
-      "koza",
-      "kava"
+      "kava",
+      "kremasto"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 49,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Honduras, Nicaraguan pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Honduras, Nicaraguan wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
+      "hr": "Strada: cedar, orašasto i začini uz kavu; medium. Rum ili filter kava.",
+      "en": "Strada: cedar, nuts and spice with coffee; medium. Rum or filter coffee."
     },
     "markets": [
       "USA",
@@ -149799,7 +149879,9 @@
         "priceApprox": true
       }
     },
-    "strengthFromShop": true
+    "sourceUrls": [
+      "https://www.holts.com/cigars/all-cigar-brands/rocky-patel-strada.html"
+    ]
   },
   {
     "id": "cig-rocky-patel-sun-grown",
@@ -155247,18 +155329,17 @@
       "kremasto",
       "cedar",
       "orasasti",
-      "med",
-      "trava-slatka"
+      "vanilija",
+      "med"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 62,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Dominikanska Republika, Connecticut pokrov — lagane snage, laganog tijela. Okusi: kremasto, cedrovina, orašasti tonovi.",
-      "en": "Dominican Republic, Connecticut wrapper — mild in strength, light-bodied. Notes: creamy, cedar, nutty."
+      "hr": "US CT Shade Classic Line: kremasto, cedar i orašasto uz blagu slatkoću; mild–medium. Jutarnja kava ili cognac VS.",
+      "en": "US CT Shade Classic Line: cream, cedar and nuts with soft sweetness; mild–medium. Morning coffee or VS cognac."
     },
     "markets": [
       "EU",
@@ -155385,7 +155466,10 @@
         "priceEUR": 7.2
       }
     },
-    "formatEstimated": true
+    "formatEstimated": true,
+    "sourceUrls": [
+      "https://zigarren-gentlemans.ch/en/samana-classic-line/"
+    ]
   },
   {
     "id": "cig-samana-jeroboam",
@@ -156550,20 +156634,19 @@
     "body": 2,
     "flavorTags": [
       "kremasto",
-      "cedar",
       "orasasti",
-      "med",
-      "trava-slatka"
+      "cedar",
+      "zacini",
+      "med"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 62,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Dominikanska Republika, Connecticut pokrov — lagane snage, laganog tijela. Okusi: kremasto, cedrovina, orašasti tonovi.",
-      "en": "Dominican Republic, Connecticut wrapper — mild in strength, light-bodied. Notes: creamy, cedar, nutty."
+      "hr": "Dominikanski Classic CT: kremasto, orašasto i cedar uz blage začine; mild–medium. Cognac VS ili filter-light kava.",
+      "en": "Dominican Classic CT: creamy nuts and cedar with light spice; mild–medium. VS cognac or light filter coffee."
     },
     "markets": [
       "EU",
@@ -156706,7 +156789,10 @@
         "priceEUR": 6.0
       }
     },
-    "formatEstimated": true
+    "formatEstimated": true,
+    "sourceUrls": [
+      "https://www.cigarmaxx.de/santa-damiana-classic-churchill/"
+    ]
   },
   {
     "id": "cig-santa-damiana-limited-edition-special-edition-2023-twisted",
@@ -156774,23 +156860,22 @@
     "country": "Dominikanska Republika",
     "wrapper": "Connecticut Shade",
     "strength": 3,
-    "body": 2,
+    "body": 3,
     "flavorTags": [
-      "kremasto",
       "cedar",
       "orasasti",
-      "med",
-      "trava-slatka"
+      "kava",
+      "kremasto",
+      "zacini"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 49,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Dominikanska Republika, Connecticut Shade pokrov — srednje snage, laganog tijela. Okusi: kremasto, cedrovina, orašasti tonovi.",
-      "en": "Dominican Republic, Connecticut Shade wrapper — medium in strength, light-bodied. Notes: creamy, cedar, nutty."
+      "hr": "CT Shade Dominican: cedar, badem, toast i kava; medium (Holt's). Kava ili lagani rum.",
+      "en": "CT Shade Dominican: cedar, almond, toast and coffee; medium (Holt's). Coffee or light rum."
     },
     "markets": [
       "USA",
@@ -156851,7 +156936,9 @@
         "priceApprox": true
       }
     },
-    "strengthFromShop": true
+    "sourceUrls": [
+      "https://www.holts.com/cigars/all-cigar-brands/savoy.html"
+    ]
   },
   {
     "id": "cig-schumacher-selection",
@@ -162264,22 +162351,22 @@
     "country": "Nikaragva",
     "wrapper": "H-2000",
     "strength": 3,
-    "body": 4,
+    "body": 3,
     "flavorTags": [
+      "zemljano",
+      "papar",
       "cedar",
-      "zacini",
-      "koza",
-      "kava"
+      "kava",
+      "orasasti"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 47,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, H-2000 pokrov — srednje snage, punijeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Nicaragua, H-2000 wrapper — medium in strength, fuller-bodied. Notes: cedar, spices, leather."
+      "hr": "Tattoo H-2000: zemlja, papar i cedar uz kavu; medium. Rum ili espresso.",
+      "en": "Tattoo H-2000: earth, pepper and cedar with coffee; medium. Rum or espresso."
     },
     "markets": [
       "EU",
@@ -162374,7 +162461,10 @@
         "priceEUR": 4.25
       }
     },
-    "formatEstimated": true
+    "formatEstimated": true,
+    "sourceUrls": [
+      "https://www.holts.com/cigars/all-cigar-brands/tatuaje-tattoo.html"
+    ]
   },
   {
     "id": "cig-tatuaje-tuxtla",
@@ -162921,24 +163011,23 @@
     "format": "50 x 127mm",
     "country": "Nikaragva",
     "wrapper": "Connecticut Broadleaf",
-    "strength": 4,
-    "body": 4,
+    "strength": 5,
+    "body": 5,
     "flavorTags": [
       "kakao",
       "kava",
-      "karamela",
-      "slatko",
-      "zemljano"
+      "zemljano",
+      "koza",
+      "papar"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 49,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Connecticut Broadleaf pokrov — jače snage, punijeg tijela. Okusi: kakao, kava, karamela.",
-      "en": "Nicaragua, Connecticut Broadleaf wrapper — medium-full in strength, fuller-bodied. Notes: cocoa, coffee, caramel."
+      "hr": "CT Broadleaf maduro: kakao, espresso, zemlja, koža i papar; full body (Foundation). Bourbon cask-strength ili stout; espresso-dark.",
+      "en": "CT Broadleaf maduro: cocoa, espresso, earth, leather and pepper; full body (Foundation). Cask-strength bourbon or stout; dark espresso."
     },
     "markets": [
       "USA",
@@ -162972,7 +163061,9 @@
         "priceApprox": true
       }
     },
-    "strengthFromShop": true
+    "sourceUrls": [
+      "https://foundationcigarcompany.com/the-tabernacle-ct-broadleaf/"
+    ]
   },
   {
     "id": "cig-the-tabernacle-doble",
@@ -172420,22 +172511,22 @@
     "country": "Nikaragva",
     "wrapper": "Ecuador Habano",
     "strength": 4,
-    "body": 3,
+    "body": 4,
     "flavorTags": [
+      "kakao",
+      "kava",
+      "orasasti",
       "cedar",
-      "zacini",
-      "koza",
-      "kava"
+      "zacini"
     ],
-    "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 54,
     "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Ecuador Habano pokrov — jače snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Nicaragua, Ecuador Habano wrapper — medium-full in strength, medium-bodied. Notes: cedar, spices, leather."
+      "hr": "Ecuador Habano: kakao, kava, toast/orašasto i cedar; medium–full (Altadis/Omar Ortez). Bourbon ili tamni rum.",
+      "en": "Ecuador Habano: cocoa, coffee, toast/nuts and cedar; medium–full (Altadis/Omar Ortez). Bourbon or dark rum."
     },
     "markets": [
       "USA",
@@ -172487,7 +172578,9 @@
         "priceApprox": true
       }
     },
-    "strengthFromShop": true
+    "sourceUrls": [
+      "https://www.holts.com/cigars/all-cigar-brands/warlock.html"
+    ]
   },
   {
     "id": "cig-warped-don-reynaldo",
