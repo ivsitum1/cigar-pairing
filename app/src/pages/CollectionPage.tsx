@@ -16,7 +16,11 @@ import {
 } from "../store/collection";
 import { useMarket } from "../store/market";
 
-export function CollectionPage() {
+export function CollectionPage({
+  onPair,
+}: {
+  onPair?: (target: { kind: "cigar"; item: Cigar } | { kind: "drink"; item: Drink }) => void;
+}) {
   const { t, lx, lang } = useI18n();
   const data = useCollection();
   const [detail, setDetail] = useState<
@@ -164,7 +168,18 @@ export function CollectionPage() {
       </div>
 
       {showAddPairing && <AddPairingSheet onClose={() => setShowAddPairing(false)} />}
-      <DetailSheet target={detail} onClose={() => setDetail(null)} />
+      <DetailSheet
+        target={detail}
+        onClose={() => setDetail(null)}
+        onPair={
+          onPair
+            ? (target) => {
+                setDetail(null);
+                onPair(target);
+              }
+            : undefined
+        }
+      />
     </div>
   );
 }
