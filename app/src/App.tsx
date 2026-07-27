@@ -72,7 +72,7 @@ export default function App() {
         >
           {page === "pairing" && <PairingPage />}
           {page === "catalog" && <CatalogPage onPair={goToPairing} />}
-          {page === "collection" && <CollectionPage />}
+          {page === "collection" && <CollectionPage onPair={goToPairing} />}
           {page === "shopping" && <ShoppingPage />}
           {page === "club" && <ClubPage />}
         </Suspense>
