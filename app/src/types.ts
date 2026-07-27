@@ -97,6 +97,22 @@ export interface Cigar {
   format: string;
   country: string;
   wrapper: string;
+  /** Display label for binder (variety / shop string), when known. */
+  binder?: string;
+  /** Display label for filler (variety / shop string), when known. */
+  filler?: string;
+  /** Country of wrapper leaf (HR name, aligned with `country`). */
+  wrapperOrigin?: string;
+  /** Country of binder leaf. */
+  binderOrigin?: string;
+  /** Country of filler leaf (single-country only; multi-origin left unset for puro). */
+  fillerOrigin?: string;
+  /**
+   * true = all three origins known and equal;
+   * false = all three known and not equal;
+   * null/absent = incomplete leaf origins.
+   */
+  isPuro?: boolean | null;
   strength: number; // 1-5 (nikotin)
   body: number; // 1-5 (punoca dima)
   flavorTags: string[];

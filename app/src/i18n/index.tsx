@@ -341,6 +341,14 @@ const STRINGS = {
   "shape.figurado": { hr: "Figurado", en: "Figurado" },
   "filter.maxPrice": { hr: "Cijena do", en: "Price up to" },
   "filter.clean": { hr: "Samo čisti (bez aditiva)", en: "Clean only (no additives)" },
+  "filter.wrapper": { hr: "Omot (porijeklo)", en: "Wrapper origin" },
+  "filter.binder": { hr: "Vezivo", en: "Binder" },
+  "filter.filler": { hr: "Punilo", en: "Filler" },
+  "filter.puro": { hr: "Samo puro", en: "Puro only" },
+  "leaf.wrapper": { hr: "Omot", en: "Wrapper" },
+  "leaf.binder": { hr: "Vezivo", en: "Binder" },
+  "leaf.filler": { hr: "Punilo", en: "Filler" },
+  "leaf.puro": { hr: "Puro", en: "Puro" },
   // sortiranje
   "sort.label": { hr: "Poredaj", en: "Sort" },
   "sort.quality": { hr: "Kvaliteta", en: "Quality" },
@@ -466,6 +474,17 @@ export const COUNTRY_LABELS: Record<string, string> = {
   Tajvan: "Taiwan",
   Švicarska: "Switzerland",
   Nizozemska: "Netherlands",
+  Ekvador: "Ecuador",
+  Brazil: "Brazil",
+  Kamerun: "Cameroon",
+  Indonezija: "Indonesia",
+  Filipini: "Philippines",
+  Kostarika: "Costa Rica",
+  Panama: "Panama",
+  Peru: "Peru",
+  Kolumbija: "Colombia",
+  Honduras: "Honduras",
+  SAD: "USA",
 };
 
 // ceste "najbolji nacin" serviranja iz podataka -> engleski prikaz
