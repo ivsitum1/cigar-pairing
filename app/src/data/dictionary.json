@@ -598,12 +598,12 @@
         "en": "Bourbon"
       },
       "def": {
-        "hr": "Američki whiskey s dominantnom kukuruznom mash billom, destiliran u SAD-u.",
-        "en": "American whiskey with a dominant corn mash bill, distilled in the USA."
+        "hr": "Američki whiskey s najmanje 51 % kukuruza, destiliran u SAD-u i odležan u novim opaljenim hrastovim bačvama.",
+        "en": "American whiskey of at least 51% corn, distilled in the USA and aged in new charred oak barrels."
       },
       "body": {
-        "hr": "Bourbon donosi vaniliju, karamelu i orašastost iz charred oak bačve — prirodni suputnik cedar i pečenim notama u cigari.\n\nZa pairing birajte visoke proof varijante s oprezom; 40–46 % ABV obično daje bolju ravnotežu.",
-        "en": "Bourbon brings vanilla, caramel and nuttiness from charred oak — a natural companion to cedar and roast in cigars.\n\nFor pairing, treat high-proof bottlings with care; 40–46% ABV often balances better."
+        "hr": "Bourbon donosi vaniliju, karamelu i orašastost iz charred new oak — prirodni suputnik cedar i pečenim notama u cigari. Zakonski minimum je 51 % kukuruza; većina boca znatno premašuje taj prag.\\n\\nZa pairing birajte visoke proof varijante s oprezom; 40–46 % ABV obično daje bolju ravnotežu. Vidi i Tennessee whiskey (ugljena filtracija).",
+        "en": "Bourbon brings vanilla, caramel and nuttiness from charred new oak — a natural companion to cedar and roast in cigars. The legal floor is 51% corn; most bottles far exceed it.\\n\\nFor pairing, treat high-proof bottlings with care; 40–46% ABV often balances better. See also Tennessee whiskey (charcoal filtration)."
       },
       "aliases": [
         "bourbon whiskey"
@@ -611,7 +611,8 @@
       "seeAlso": [
         "rye-whiskey",
         "mash-bill",
-        "cask-strength"
+        "cask-strength",
+        "tennessee-whiskey"
       ],
       "category": "drink"
     },
@@ -3121,7 +3122,9 @@
       "seeAlso": [
         "juniper",
         "botanicals",
-        "gin-and-tonic"
+        "gin-and-tonic",
+        "plymouth-gin",
+        "genever"
       ],
       "category": "drink"
     },
@@ -3297,15 +3300,16 @@
         "en": "Agave distillate from Mexico — broader than tequila; often smoky, artisan character."
       },
       "body": {
-        "hr": "Mezcal donosi dim i agave koji mogu parirati s punom, zemljanom cigaretom kao peated whisky. Blanco mezcal je agave-forward; reposado/añejo dodaje bačvu.\n\nEtiketa «worm» je turistički mit, ne kvaliteta.",
-        "en": "Mezcal brings smoke and agave that can pair with full earthy cigars like peated whisky. Blanco mezcal is agave-forward; reposado/añejo adds cask.\n\nThe «worm» label is tourist myth, not quality."
+        "hr": "Mezcal je šira obitelj agave destilata; tequila je zaštićeni podskup (plava Weber agave, određene meksičke države). Dim često dolazi iz pečenja agave u zemljanim jamama — zato može parirati punoj, zemljanoj cigari kao peated whisky.\\n\\nTradicionalno se pije neat, gutljajem, sobne temperature, s vodom sa strane — ne kao shot. Etiketa «worm» je turistički mit, ne kvaliteta.",
+        "en": "Mezcal is the broader agave-spirit family; tequila is a protected subset (Weber blue agave, specified Mexican states). Smoke often comes from roasting agave in earthen pits — hence it can pair with full earthy cigars like peated whisky.\\n\\nTraditionally drunk neat, sipped at room temperature, with water on the side — not as a shot. The «worm» label is tourist myth, not quality."
       },
       "aliases": [
         "mescal"
       ],
       "seeAlso": [
         "mezcal-smoky",
-        "tequila-blanco"
+        "tequila-blanco",
+        "tequila-100-agave"
       ],
       "category": "drink"
     },
@@ -4568,15 +4572,17 @@
         "en": "Fortified wine from the Douro — ruby, tawny, LBV, vintage and more."
       },
       "body": {
-        "hr": "Port donosi slatkoću, alkohol i tamno voće — tradicionalni partner punih cigare. Ruby za mladost, tawny za orahe i karamelu.\n\nVintage port za posebne prilike; LBV pristupačniji.",
-        "en": "Port brings sweetness, alcohol and dark fruit — a traditional partner for full cigars. Ruby for youth, tawny for nuts and caramel.\n\nVintage port for occasions; LBV more approachable."
+        "hr": "Porto se fortificira usred fermentacije: dodani weingeist zaustavi kvasce i sačuva prirodni šećer — zato je sladak i alkoholno jak. Ruby čuva voće; tawny oksidativno stari u malim bačvama (orah, karamela).\\n\\nTradicionalni partner punih cigare. Vintage za posebne prilike; LBV pristupačniji. Vidi i fortificirano vino (razlika od sherryja).",
+        "en": "Port is fortified mid-fermentation: added grape spirit stops the yeast and preserves natural sugar — hence sweet and high in alcohol. Ruby keeps fruit; tawny ages oxidatively in small casks (walnut, caramel).\\n\\nA traditional partner for full cigars. Vintage for occasions; LBV more approachable. See also fortified wine (contrast with sherry)."
       },
       "aliases": [
         "porto",
         "port wine"
       ],
       "seeAlso": [
-        "residual-sugar"
+        "fortified-wine",
+        "residual-sugar",
+        "sherry"
       ],
       "category": "drink"
     },
@@ -5376,18 +5382,20 @@
         "en": "Fortified wine from Jerez — spectrum from dry fino to sweet PX."
       },
       "body": {
-        "hr": "Sherry je tajni alat cigar pairinga: fino uz laganu, oloroso uz punu, PX uz desert i maduro. Solera sustav određuje konzistentnost.\n\nServirajte hladnije nego crveno vino; mala čaša je dovoljna.",
-        "en": "Sherry is a cigar pairing secret weapon: fino with light, oloroso with full, PX with dessert and maduro. Solera defines consistency.\n\nServe cooler than red wine; a small glass suffices."
+        "hr": "Za razliku od porta, osnovni sherry se prvo potpuno fermentira, pa se zatim fortificira — zato počinje suh, a slatkoća (cream, PX) dolazi kasnijim dodacima. Solera i flor (fino/manzanilla) ili oksidacija (oloroso) grade stil.\\n\\nFino uz laganu cigar; oloroso uz punu; PX uz desert i maduro. Servirajte hladnije nego crveno vino; mala čaša je dovoljna.",
+        "en": "Unlike port, base sherry is fully fermented first, then fortified — so it starts dry, and sweetness (cream, PX) comes from later additions. Solera plus flor (fino/manzanilla) or oxidation (oloroso) build the style.\\n\\nFino with light cigars; oloroso with full; PX with dessert and maduro. Serve cooler than red wine; a small glass suffices."
       },
       "aliases": [
         "jerez",
         "vino de Jerez"
       ],
       "seeAlso": [
+        "fortified-wine",
         "sherry-fino",
         "sherry-oloroso",
         "sherry-px",
-        "rum-solera"
+        "rum-solera",
+        "port"
       ],
       "category": "drink"
     },
@@ -6823,6 +6831,178 @@
       ],
       "seeAlso": [],
       "category": "cigar"
+    },
+    {
+      "id": "blended-whisky",
+      "term": {
+        "hr": "Blended whisky",
+        "en": "Blended whisky"
+      },
+      "def": {
+        "hr": "Mješavina malt i grain whiskya — konzistentan kućni stil, ne profil jedne destilerije.",
+        "en": "A blend of malt and grain whiskies — a consistent house style, not one distillery profile."
+      },
+      "body": {
+        "hr": "Blended whisky nije «slabiji single malt»: omogućuje stil koji se ponavlja iz boce u bocu. U pairing aplikaciji to često znači pristupačniji ABV i mekšu žitaricu uz medium do full cigar.\\n\\nBlended malt (samo maltovi iz više destilerija) nije isto što i blend malt+grain.",
+        "en": "Blended whisky is not «weaker single malt»: it enables a style that repeats bottle to bottle. In the pairing app that often means approachable ABV and softer grain beside medium to full cigars.\\n\\nBlended malt (malts from several distilleries only) is not the same as malt+grain blend."
+      },
+      "aliases": [
+        "blended whiskey",
+        "blended scotch",
+        "blend"
+      ],
+      "seeAlso": [
+        "single-malt",
+        "scotch-whisky"
+      ],
+      "category": "drink"
+    },
+    {
+      "id": "cachaca",
+      "term": {
+        "hr": "Cachaça",
+        "en": "Cachaça"
+      },
+      "def": {
+        "hr": "Brazilski destilat iz soka šećerne trske — nacionalni spirit i baza caipirinhe.",
+        "en": "Brazilian cane-juice spirit — the national spirit and base of the caipirinha."
+      },
+      "body": {
+        "hr": "Cachaça dijeli sok trske s rhum agricole, ali ima brazilska pravila i vlastiti kulturni kontekst. Bijela (mlada) je travnata i svježa; odležana (ouro/gold) mekša je i složenija.\\n\\nUz cigar: mlada uz laganu/claro; odležana uz medium s pečenim i voćnim notama. Nije sinonim za melasni rum.",
+        "en": "Cachaça shares cane juice with rhum agricole, but follows Brazilian rules and its own cultural frame. Unaged white is grassy and fresh; aged (ouro/gold) is softer and more complex.\\n\\nWith cigars: young with light/claro; aged with medium smoke carrying roast and fruit. Not a synonym for molasses rum."
+      },
+      "aliases": [
+        "cachaca",
+        "aguardente de cana"
+      ],
+      "seeAlso": [
+        "rum-agricole",
+        "rum-blanco"
+      ],
+      "category": "drink"
+    },
+    {
+      "id": "fortified-wine",
+      "term": {
+        "hr": "Fortificirano vino",
+        "en": "Fortified wine"
+      },
+      "def": {
+        "hr": "Vino ojačano dodanim destilatom (obično brandyjem) — porto, sherry, madeira i slični stilovi.",
+        "en": "Wine strengthened with added distillate (usually brandy) — port, sherry, madeira and related styles."
+      },
+      "body": {
+        "hr": "Trenutak fortifikacije određuje stil: porto se ojačava usred fermentacije pa ostaje sladak; sherry se prvo potpuno fermentira, pa se zatim fortificira i često kasnije zaslađuje.\\n\\nZa cigar pairing: tawny/oloroso/madeira nose orah, karamelu i oksidaciju; fino je suši i laganiji partner.",
+        "en": "When fortification happens sets the style: port is fortified mid-ferment and stays sweet; sherry is fully fermented first, then fortified and often sweetened later.\\n\\nFor cigar pairing: tawny/oloroso/madeira carry nut, caramel and oxidation; fino is drier and a lighter partner."
+      },
+      "aliases": [
+        "likersko vino",
+        "gespriteter Wein",
+        "fortified"
+      ],
+      "seeAlso": [
+        "port",
+        "sherry",
+        "madeira"
+      ],
+      "category": "drink"
+    },
+    {
+      "id": "genever",
+      "term": {
+        "hr": "Genever (jenever)",
+        "en": "Genever (jenever)"
+      },
+      "def": {
+        "hr": "Nizozemski/belgijski predak gina — borovičasti spirit na žitarnoj (sladnoj) bazi.",
+        "en": "Dutch/Belgian ancestor of gin — a juniper spirit on a grain (malt) base."
+      },
+      "body": {
+        "hr": "Genever je puniji i žitniji od London Dry: moutwijn (sladna baza) nosi kruh i žito, a borovica je nježnija. Stilovi oude / jonge / corenwijn razlikuju se po proizvodnji i dozrijevanju.\\n\\nU domovini se često pije neat, blago ohlađen — uz cigar birajte medium cigar, ne peated ekstrem.",
+        "en": "Genever is fuller and grainier than London Dry: moutwijn (malt base) brings bread and cereal, with gentler juniper. Oude / jonge / corenwijn styles differ in production and ageing.\\n\\nAt home it is often drunk neat, lightly chilled — with cigars prefer medium smoke, not peated extremes."
+      },
+      "aliases": [
+        "jenever",
+        "holland gin",
+        "dutch gin"
+      ],
+      "seeAlso": [
+        "gin-london-dry",
+        "gin-and-tonic"
+      ],
+      "category": "drink"
+    },
+    {
+      "id": "grappa",
+      "term": {
+        "hr": "Grappa",
+        "en": "Grappa"
+      },
+      "def": {
+        "hr": "Talijanski destilat komine (kožice i sjemenke) — nije brandy od vina.",
+        "en": "Italian pomace distillate (skins and seeds) — not wine brandy."
+      },
+      "body": {
+        "hr": "Grappa je digestif preciznosti: aroma sorte grožđa (monovitigno) ili mješavine. Većina je bistra i svježe flaširana; odležane (riserva) dobiju boju i mekoću bačve.\\n\\nUz cigar rijetko prvi izbor — osim lagane večeri s claro ili kao kratki završetak nakon jela. U katalogu brandy stil «grappa».",
+        "en": "Grappa is a precision digestif: variety aroma (monovitigno) or a blend. Most is clear and bottled fresh; aged (riserva) gains colour and cask softness.\\n\\nWith cigars rarely a first choice — except a light claro evening or a short close after a meal. In the catalog under brandy style «grappa»."
+      },
+      "aliases": [
+        "grappe",
+        "pomace brandy"
+      ],
+      "seeAlso": [
+        "digestif",
+        "eau-de-vie",
+        "armagnac"
+      ],
+      "category": "drink"
+    },
+    {
+      "id": "plymouth-gin",
+      "term": {
+        "hr": "Plymouth gin",
+        "en": "Plymouth gin"
+      },
+      "def": {
+        "hr": "Gin sa zaštićenom geografskom oznakom — smije se proizvoditi samo u Plymouthu (UK).",
+        "en": "Gin with protected geographical indication — may be produced only in Plymouth (UK)."
+      },
+      "body": {
+        "hr": "Plymouth je zaseban stil od London Dry: malo manje suh, aromatičniji, s «zemljanijim» korijenjem u botanici. Klasična jačina ~41,2 %; navy strength (~57 %) povijesno je vezan uz mornaricu.\\n\\nU app katalogu stil «plymouth» — za pairing često blago mekši od oštrog juniper-forward London Drya.",
+        "en": "Plymouth is a distinct style from London Dry: slightly less dry, more aromatic, with earthier roots in the botanicals. Classic strength ~41.2%; navy strength (~57%) is historically tied to the navy.\\n\\nIn the app catalog as style «plymouth» — for pairing often a touch softer than sharp juniper-forward London Dry."
+      },
+      "aliases": [
+        "plymouth"
+      ],
+      "seeAlso": [
+        "gin-london-dry",
+        "gin-and-tonic"
+      ],
+      "category": "drink"
+    },
+    {
+      "id": "tennessee-whiskey",
+      "term": {
+        "hr": "Tennessee whiskey",
+        "en": "Tennessee whiskey"
+      },
+      "def": {
+        "hr": "Američki whiskey blizak bourbonu, dodatno filtriran kroz javorov ugljen (Lincoln County Process).",
+        "en": "American whiskey close to bourbon, additionally filtered through maple charcoal (Lincoln County Process)."
+      },
+      "body": {
+        "hr": "Tennessee whiskey dijeli kukuruznu bazu i nove opaljene bačve s bourbonom, ali ugljena filtracija daje mekši, često «slađi» profil.\\n\\nUz cigar: sličan izbor kao bourbon — medium do full, cedar i karamela. Ne zamijeniti s peated scotchem.",
+        "en": "Tennessee whiskey shares corn base and new charred oak with bourbon, but charcoal filtration yields a softer, often «sweeter» profile.\\n\\nWith cigars: similar pick to bourbon — medium to full, cedar and caramel. Do not confuse with peated Scotch."
+      },
+      "aliases": [
+        "tennessee whisky",
+        "lincoln county"
+      ],
+      "seeAlso": [
+        "bourbon",
+        "rye-whiskey"
+      ],
+      "category": "drink"
     }
   ]
 }
