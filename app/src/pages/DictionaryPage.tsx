@@ -208,13 +208,19 @@ export function DictionaryPage({ onBack }: { onBack: () => void }) {
       {letters.length > 1 && (
         <div className="mb-3 flex flex-wrap gap-1">
           {letters.map((L) => (
-            <a
+            <button
               key={L}
-              href={`#letter-${encodeURIComponent(L)}`}
+              type="button"
+              // Ne koristiti href="#…" — hash router bi to protumačio kao rutu (npr. Pairing).
+              onClick={() => {
+                document
+                  .getElementById(`dict-letter-${L}`)
+                  ?.scrollIntoView({ behavior: "smooth", block: "start" });
+              }}
               className="rounded px-1.5 py-0.5 font-display text-micro text-zlato/80 hover:bg-zlato/10"
             >
               {L}
-            </a>
+            </button>
           ))}
         </div>
       )}
@@ -237,7 +243,7 @@ export function DictionaryPage({ onBack }: { onBack: () => void }) {
               <div key={item.id}>
                 {showLetter && (
                   <h3
-                    id={`letter-${L}`}
+                    id={`dict-letter-${L}`}
                     className="mb-1.5 mt-3 scroll-mt-20 font-display text-micro uppercase tracking-[0.2em] text-zlato/60 first:mt-0"
                   >
                     {L}
