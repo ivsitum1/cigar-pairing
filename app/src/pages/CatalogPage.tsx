@@ -106,6 +106,10 @@ export function CatalogPage({
   const [styleFilter, setStyleFilter] = useState<string | null>(null);
   const [strengthFilter, setStrengthFilter] = useState<number | null>(null);
   const [shapeFilter, setShapeFilter] = useState<ShapeFamily | null>(null);
+  const [wrapperOriginFilter, setWrapperOriginFilter] = useState<string | null>(null);
+  const [binderOriginFilter, setBinderOriginFilter] = useState<string | null>(null);
+  const [fillerOriginFilter, setFillerOriginFilter] = useState<string | null>(null);
+  const [puroOnly, setPuroOnly] = useState(false);
   const [cleanOnly, setCleanOnly] = useState(false);
   // cigare se otvaraju na indeksu brendova; puni popis linija je iza "Brendovi" gumba
   const [browseBrands, setBrowseBrands] = useState(true);
@@ -304,6 +308,10 @@ export function CatalogPage({
     setStyleFilter(null);
     setStrengthFilter(null);
     setShapeFilter(null);
+    setWrapperOriginFilter(null);
+    setBinderOriginFilter(null);
+    setFillerOriginFilter(null);
+    setPuroOnly(false);
     setCleanOnly(false);
     setBrowseBrands(next === "cigars");
     setShowShops(false);
@@ -321,6 +329,23 @@ export function CatalogPage({
       })
       .map((d) => d.style);
   }, [tab]);
+
+  const leafOriginOptions = useMemo(() => {
+    const wrappers = new Set<string>();
+    const binders = new Set<string>();
+    const fillers = new Set<string>();
+    for (const c of CIGARS) {
+      if (c.wrapperOrigin) wrappers.add(c.wrapperOrigin);
+      if (c.binderOrigin) binders.add(c.binderOrigin);
+      if (c.fillerOrigin) fillers.add(c.fillerOrigin);
+    }
+    const sort = (a: string, b: string) => a.localeCompare(b, "hr");
+    return {
+      wrappers: [...wrappers].sort(sort),
+      binders: [...binders].sort(sort),
+      fillers: [...fillers].sort(sort),
+    };
+  }, []);
 
   const q = query.toLowerCase();
 
@@ -342,7 +367,11 @@ export function CatalogPage({
               .join(" ")}`,
           ).includes(norm(q))) &&
         (strengthFilter == null || c.strength === strengthFilter) &&
-        (shapeFilter == null || cigarShapes(c).has(shapeFilter)),
+        (shapeFilter == null || cigarShapes(c).has(shapeFilter)) &&
+        (wrapperOriginFilter == null || c.wrapperOrigin === wrapperOriginFilter) &&
+        (binderOriginFilter == null || c.binderOrigin === binderOriginFilter) &&
+        (fillerOriginFilter == null || c.fillerOrigin === fillerOriginFilter) &&
+        (!puroOnly || c.isPuro === true),
     );
     const by: Record<string, (a: Cigar, b: Cigar) => number> = {
       name: (a, b) =>
@@ -354,7 +383,19 @@ export function CatalogPage({
     };
     return [...list].sort(by[sortBy] ?? by.name);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [tab, q, strengthFilter, shapeFilter, market, sortBy, browseBrands]);
+  }, [
+    tab,
+    q,
+    strengthFilter,
+    shapeFilter,
+    wrapperOriginFilter,
+    binderOriginFilter,
+    fillerOriginFilter,
+    puroOnly,
+    market,
+    sortBy,
+    browseBrands,
+  ]);
 
   const drinks = useMemo(() => {
     if (tab === "cigars") return [];
@@ -377,7 +418,19 @@ export function CatalogPage({
 
   useEffect(() => {
     setLimit(120);
-  }, [tab, q, strengthFilter, shapeFilter, market, sortBy, browseBrands]);
+  }, [
+    tab,
+    q,
+    strengthFilter,
+    shapeFilter,
+    wrapperOriginFilter,
+    binderOriginFilter,
+    fillerOriginFilter,
+    puroOnly,
+    market,
+    sortBy,
+    browseBrands,
+  ]);
 
   const showRail =
     tab === "cigars" &&
@@ -491,6 +544,11 @@ export function CatalogPage({
               {t("filter.strength")} {s}
             </Chip>
           ))}
+        {tab === "cigars" && !browseBrands && (
+          <Chip active={puroOnly} onClick={() => setPuroOnly(!puroOnly)}>
+            {t("filter.puro")}
+          </Chip>
+        )}
         {tab !== "cigars" && tab !== "coffee" && tab !== "tequila" && (
           <Chip active={cleanOnly} onClick={() => setCleanOnly(!cleanOnly)}>
             {t("filter.clean")}
@@ -520,6 +578,55 @@ export function CatalogPage({
               onClick={() => setShapeFilter(shapeFilter === s ? null : s)}
             >
               {t(`shape.${s}` as StringKey)}
+            </Chip>
+          ))}
+        </div>
+      )}
+
+      {tab === "cigars" && !browseBrands && leafOriginOptions.wrappers.length > 0 && (
+        <div className="no-scrollbar mt-2 flex items-center gap-2 overflow-x-auto">
+          <span className="shrink-0 text-micro uppercase tracking-widest text-dim">
+            {t("filter.wrapper")}
+          </span>
+          {leafOriginOptions.wrappers.map((o) => (
+            <Chip
+              key={`w-${o}`}
+              active={wrapperOriginFilter === o}
+              onClick={() => setWrapperOriginFilter(wrapperOriginFilter === o ? null : o)}
+            >
+              {cn(o)}
+            </Chip>
+          ))}
+        </div>
+      )}
+      {tab === "cigars" && !browseBrands && leafOriginOptions.binders.length > 0 && (
+        <div className="no-scrollbar mt-2 flex items-center gap-2 overflow-x-auto">
+          <span className="shrink-0 text-micro uppercase tracking-widest text-dim">
+            {t("filter.binder")}
+          </span>
+          {leafOriginOptions.binders.map((o) => (
+            <Chip
+              key={`b-${o}`}
+              active={binderOriginFilter === o}
+              onClick={() => setBinderOriginFilter(binderOriginFilter === o ? null : o)}
+            >
+              {cn(o)}
+            </Chip>
+          ))}
+        </div>
+      )}
+      {tab === "cigars" && !browseBrands && leafOriginOptions.fillers.length > 0 && (
+        <div className="no-scrollbar mt-2 flex items-center gap-2 overflow-x-auto">
+          <span className="shrink-0 text-micro uppercase tracking-widest text-dim">
+            {t("filter.filler")}
+          </span>
+          {leafOriginOptions.fillers.map((o) => (
+            <Chip
+              key={`f-${o}`}
+              active={fillerOriginFilter === o}
+              onClick={() => setFillerOriginFilter(fillerOriginFilter === o ? null : o)}
+            >
+              {cn(o)}
             </Chip>
           ))}
         </div>

@@ -410,7 +410,8 @@ def build():
         agg = lines.get((b, line))
         if agg is None:
             agg = {"brand": b, "line": line, "country": country, "cuban": cuban,
-                   "wrappers": {}, "boxpressed": False, "offers": [], "urls": set(),
+                   "wrappers": {}, "binders": {}, "fillers": {},
+                   "boxpressed": False, "offers": [], "urls": set(),
                    "vitolas": {}, "len_est": False, "strengths": collections.Counter()}
             lines[(b, line)] = agg
         agg["len_est"] = agg["len_est"] or len_est
@@ -420,6 +421,12 @@ def build():
         w = detail_val(r, "wrapper")
         if w:
             agg["wrappers"][w] = agg["wrappers"].get(w, 0) + 1
+        binder = detail_val(r, "binder")
+        if binder:
+            agg["binders"][binder] = agg["binders"].get(binder, 0) + 1
+        filler = detail_val(r, "filler")
+        if filler:
+            agg["fillers"][filler] = agg["fillers"].get(filler, 0) + 1
         s_shop = detail_val(r, "strength")  # prava snaga iz shopa (1–5), kad postoji
         if isinstance(s_shop, (int, float)) and 1 <= s_shop <= 5:
             agg["strengths"][int(round(s_shop))] += 1
@@ -457,6 +464,8 @@ def build():
             cid = f"{base_id}-{n}"; n += 1
         used_ids.add(cid)
         wrapper = max(agg["wrappers"].items(), key=lambda kv: (kv[1], kv[0]))[0] if agg["wrappers"] else "—"
+        binder = max(agg["binders"].items(), key=lambda kv: (kv[1], kv[0]))[0] if agg.get("binders") else None
+        filler = max(agg["fillers"].items(), key=lambda kv: (kv[1], kv[0]))[0] if agg.get("fillers") else None
         # vitole sortirane po ring pa dužini
         vsorted = sorted(agg["vitolas"].values(), key=lambda v: (v["ring"], v["lmm"], v["name"]))
         cigar_links = region_links(agg["offers"], cuban)
@@ -495,6 +504,25 @@ def build():
             "notes": {"hr": "", "en": ""},
             "markets": markets, "vitolas": vitolas, "regionLinks": cigar_links,
         }
+        if binder:
+            rec["binder"] = binder
+        if filler:
+            rec["filler"] = filler
+        try:
+            from lib.leaf_origins import leaf_from_facts, apply_leaf_fields, refresh_is_puro
+
+            leaf = leaf_from_facts({
+                "wrapper": wrapper if wrapper != "—" else None,
+                "binder": binder,
+                "filler": filler,
+            })
+            apply_leaf_fields(rec, leaf, prefer_existing=False)
+            for ok in ("wrapperOrigin", "binderOrigin", "fillerOrigin"):
+                if leaf.get(ok):
+                    rec[ok] = leaf[ok]
+            refresh_is_puro(rec)
+        except Exception:
+            pass
         if agg["len_est"]:
             rec["formatEstimated"] = True  # duljina procijenjena iz vitole
         enrich(rec)  # body/wrapper/flavorTags heuristika (snaga se prepisuje ispod)

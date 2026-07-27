@@ -224,6 +224,7 @@ function CigarDetails({
       </div>
       <div className="mt-1 text-sm text-dim">
         {cn(cigar.country)} · {cigar.wrapper}
+        {cigar.isPuro === true ? ` · ${t("leaf.puro")}` : null}
         {onOpenBrand && (
           <>
             {" · "}
@@ -237,6 +238,28 @@ function CigarDetails({
           </>
         )}
       </div>
+      {(cigar.wrapperOrigin || cigar.binderOrigin || cigar.fillerOrigin) && (
+        <div className="mt-1.5 space-y-0.5 text-xs text-dim/90">
+          {cigar.wrapperOrigin ? (
+            <div>
+              {t("leaf.wrapper")}: {cn(cigar.wrapperOrigin)}
+              {cigar.wrapper ? ` · ${cigar.wrapper}` : ""}
+            </div>
+          ) : null}
+          {cigar.binderOrigin ? (
+            <div>
+              {t("leaf.binder")}: {cn(cigar.binderOrigin)}
+              {cigar.binder ? ` · ${cigar.binder}` : ""}
+            </div>
+          ) : null}
+          {cigar.fillerOrigin ? (
+            <div>
+              {t("leaf.filler")}: {cn(cigar.fillerOrigin)}
+              {cigar.filler ? ` · ${cigar.filler}` : ""}
+            </div>
+          ) : null}
+        </div>
+      )}
       <div className="mt-3 flex flex-wrap gap-x-5 gap-y-2">
         <Meter value={cigar.strength} label={t("common.strength")} accent="var(--color-oxblood)" />
         <Meter value={cigar.body} label={t("common.body")} />

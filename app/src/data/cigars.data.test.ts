@@ -1,7 +1,7 @@
 import { describe, it, expect } from "vitest";
 import cigarsData from "./cigars.json";
 import brandsData from "./brands.json";
-import { CIGARS, cigarLinkForMarket, cigarPriceForMarket, cigarShopLinks, cigarShopLinkPrice, ALL_BRANDS, BRAND_CATALOG } from "./index";
+import { CIGARS, cigarLinkForMarket, cigarPriceForMarket, cigarShopLinks, cigarShopLinkPrice, ALL_BRANDS, BRAND_CATALOG, isLineListingUrl } from "./index";
 import { classifyVitola, cigarShapes } from "../lib/vitolaShape";
 import type { Cigar } from "../types";
 
@@ -165,6 +165,22 @@ describe("cigars.json integrity", () => {
       expect((c!.priceUrl ?? "").toLowerCase()).toMatch(/serie-v/);
       expect((c!.priceUrl ?? "").toLowerCase()).not.toMatch(/sampler/);
     }
+  });
+
+  it("Nub Maduro ne vodi na Havana brand listing (Cameroon i ostale linije)", () => {
+    const m = CIGARS.find((c) => c.id === "cig-nub-maduro-460");
+    expect(m).toBeDefined();
+    expect(isLineListingUrl("https://havana-cigar-shop.com/en/product-brand/nub/")).toBe(true);
+    expect(isLineListingUrl("https://www.holts.com/cigars/all-cigar-brands/nub-maduro.html")).toBe(
+      true,
+    );
+    expect(m!.priceUrl ?? "").not.toMatch(/product-brand\/nub/i);
+    const hr = cigarLinkForMarket(m!, "HR");
+    expect(hr).not.toMatch(/product-brand\/nub/i);
+    expect(hr.toLowerCase()).toMatch(/maduro|nub/);
+    const usa = cigarLinkForMarket(m!, "USA");
+    expect(usa).toContain("nub-maduro");
+    expect(usa).not.toContain("nub-cameroon");
   });
 
   it("Serie V Melanio ima CigarWorld Robusto/Churchill i Holts line listing", () => {

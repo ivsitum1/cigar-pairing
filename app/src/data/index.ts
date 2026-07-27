@@ -258,13 +258,14 @@ export const cigarCountByRegion: Record<Region, number> = {
 // proizvoljnu vitolu istog hosta (npr. Cubanitos umjesto Gran Reserva).
 function exactProductUrl(c: Cigar, host: string): string | null {
   const dv = resolveDefaultVitola(c);
-  if (dv?.url && dv.url.includes(host)) return dv.url;
-  if (c.priceUrl?.includes(host)) return c.priceUrl;
+  if (dv?.url && dv.url.includes(host) && !isLineListingUrl(dv.url)) return dv.url;
+  if (c.priceUrl?.includes(host) && !isLineListingUrl(c.priceUrl)) return c.priceUrl;
   const display = dv?.priceEUR ?? c.priceEUR ?? null;
   if (display != null) {
     const samePrice = (c.vitolas ?? []).find(
       (v) =>
         v.url?.includes(host) &&
+        !isLineListingUrl(v.url) &&
         v.priceEUR != null &&
         Math.abs(v.priceEUR - display) < 0.05,
     );
@@ -280,10 +281,16 @@ export interface CigarShopLink {
   exact: boolean; // true = izravan link na proizvod; false = pretraga / listing linije
 }
 
-/** Holt's /all-cigar-brands/*.html je listing linije, ne SKU jedne vitole. */
+/**
+ * Listing / brand pages — not a single product SKU.
+ * Holt's /all-cigar-brands/*.html and Havana /product-brand/* are line/brand indexes.
+ */
 export function isLineListingUrl(url: string | null | undefined): boolean {
   if (!url) return false;
-  return /holts\.com\/cigars\/all-cigar-brands\/[^/?#]+\.html/i.test(url);
+  return (
+    /holts\.com\/cigars\/all-cigar-brands\/[^/?#]+\.html/i.test(url) ||
+    /\/(?:en\/)?product-brand\//i.test(url)
+  );
 }
 
 // Linkovi na trgovine za sve regije u kojima je cigara dostupna. HR koristi
