@@ -6,6 +6,10 @@ import { dayKey, softBandWindow } from "../engine/softBandRank";
 import { buildPrefs } from "../engine/personal";
 import { curatedPairingOpinion } from "../engine/curatedOpinion";
 import { pairingBlurb } from "../engine/pairingExplain";
+import {
+  occasionKeep,
+  type OccasionFilter,
+} from "../engine/occasion";
 import { useI18n, STYLE_LABELS, type StringKey } from "../i18n";
 import { Chip, Meter, ScoreBand, SearchInput, SectionTitle } from "../components/ui";
 import { getItemState, useCollection } from "../store/collection";
@@ -27,17 +31,7 @@ import { navigate, useRoute } from "../store/route";
 import { CustomPairing } from "./CustomPairing";
 
 type Mode = "cigarToDrink" | "drinkToCigar" | "custom";
-type Occasion = "any" | "morning" | "afternoon" | "evening";
 type DrinkTypeFilter = "any" | DrinkCategory;
-
-// prilika filtrira pica po punoci: jutro uz kavu i lagana-do-srednja pica
-// (ne samo najlaganja — inace srednja cigara ostaje bez pravog ruma), vecer uz bogate
-const OCCASION_KEEP: Record<Occasion, (d: Drink) => boolean> = {
-  any: () => true,
-  morning: (d) => d.category === "coffee" || d.body <= 3,
-  afternoon: (d) => d.category === "coffee" || d.body <= 3,
-  evening: (d) => d.category === "coffee" || d.body >= 3,
-};
 
 const DRINK_TYPE_FILTERS: DrinkTypeFilter[] = [
   "any",
@@ -70,7 +64,7 @@ export function PairingPage() {
   const { t, lx, cn, lang, sv } = useI18n();
   const collection = useCollection();
   const [mode, setMode] = useState<Mode>("cigarToDrink");
-  const [occasion, setOccasion] = useState<Occasion>("any");
+  const [occasion, setOccasion] = useState<OccasionFilter>("any");
 
   // osobni afiniteti iz ocijenjenih zapisa dnevnika (sve lokalno)
   const prefs = useMemo(() => {
@@ -173,8 +167,15 @@ export function PairingPage() {
     if (mode !== "cigarToDrink" || !selectedCigar) return null;
     let drinks = ALL_DRINKS;
     if (onlyMine) drinks = drinks.filter((d) => getItemState(d.id).owned);
-    if (occasion !== "any") drinks = drinks.filter(OCCASION_KEEP[occasion]);
-    const ranked = pairDrinksForCigar(selectedCigar, drinks, prefs);
+    if (occasion !== "any") {
+      drinks = drinks.filter(occasionKeep(occasion, selectedCigar.body));
+    }
+    const ranked = pairDrinksForCigar(
+      selectedCigar,
+      drinks,
+      prefs,
+      occasion === "any" ? undefined : occasion,
+    );
     const perCategory = (cat: DrinkCategory) =>
       ranked.filter((r) => r.item.category === cat);
     return {

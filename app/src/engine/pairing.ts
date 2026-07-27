@@ -6,6 +6,7 @@ import { COMPLEMENTS, POWER_TAGS, WEIGHTS, WRAPPER_AFFINITY, flavorLabel, normal
 import { personalBrandReason, personalStyleReason, type PersonalPrefs } from "./personal";
 import { applyServe } from "./serve";
 import { applyGeometry } from "./vitolaGeometry";
+import { occasionReasons, type Occasion } from "./occasion";
 
 const clamp = (v: number, lo: number, hi: number) =>
   Math.max(lo, Math.min(hi, v));
@@ -18,6 +19,7 @@ export function scorePairing(
   drink: Drink,
   prefs?: PersonalPrefs,
   serve?: ServeStyle,
+  occasion?: Occasion,
 ): { score: number; reasons: PairingReason[] } {
   const reasons: PairingReason[] = [];
   let score = WEIGHTS.base;
@@ -258,6 +260,15 @@ export function scorePairing(
     }
   }
 
+  // 8) Prilika (jutro/poslijepodne/večer) — soft nudge ispod body-matcha
+  for (const reason of occasionReasons(occasion, {
+    cigar: effCigar,
+    drink: effDrink,
+  })) {
+    score += reason.score;
+    reasons.push(reason);
+  }
+
   // objašnjenja geometrije i serve stila (score 0 — efekt je već u body/strength,
   // množiteljima i wrapper bonusu)
   if (geoReason) reasons.push(geoReason);
@@ -270,10 +281,14 @@ export function pairDrinksForCigar(
   cigar: Cigar,
   drinks: Drink[],
   prefs?: PersonalPrefs,
+  occasion?: Occasion,
 ): PairingResult<Drink>[] {
   return drinks
     .filter((d) => d.pairable)
-    .map((item) => ({ item, ...scorePairing(cigar, item, prefs) }))
+    .map((item) => ({
+      item,
+      ...scorePairing(cigar, item, prefs, undefined, occasion),
+    }))
     // score pada; kod izjednacenih rezultata (npr. gomila spiced rumova na
     // istom bodu) presuduje kvaliteta pa ime — deterministicki, ne redoslijed
     // iz JSON-a
