@@ -2,7 +2,7 @@
 import { useSyncExternalStore } from "react";
 
 export type Page = "pairing" | "catalog" | "collection" | "shopping" | "club";
-export type ClubView = "101" | "bonton" | "lexicon" | "hr-guide" | "archetypes";
+export type ClubView = "101" | "bonton" | "lexicon" | "dictionary" | "hr-guide" | "archetypes";
 
 /** Catalog deep links: brand → line → vitola (Phase 4). */
 export type CatalogFocus =
@@ -18,7 +18,7 @@ export interface Route {
 }
 
 const PAGES: readonly string[] = ["pairing", "catalog", "collection", "shopping", "club"];
-const CLUB_VIEWS: readonly string[] = ["101", "bonton", "lexicon", "hr-guide", "archetypes"];
+const CLUB_VIEWS: readonly string[] = ["101", "bonton", "lexicon", "dictionary", "hr-guide", "archetypes"];
 
 export function parseHash(hash: string): Route {
   const parts = hash.replace(/^#\/?/, "").split("/").filter(Boolean);
