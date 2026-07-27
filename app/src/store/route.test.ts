@@ -12,6 +12,11 @@ describe("hash route helpers", () => {
     expect(routeToHash({ page: "club", club: "archetypes" })).toBe("#/club/archetypes");
   });
 
+  it("round-trips the dictionary club subroute", () => {
+    expect(parseHash("#/club/dictionary")).toEqual({ page: "club", club: "dictionary" });
+    expect(routeToHash({ page: "club", club: "dictionary" })).toBe("#/club/dictionary");
+  });
+
   it("round-trips catalog brand / line / vitola deep links", () => {
     expect(parseHash("#/catalog/brand/la-galera")).toEqual({
       page: "catalog",
