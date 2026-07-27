@@ -48,6 +48,7 @@ const DRINK_TYPE_FILTERS: DrinkTypeFilter[] = [
   "gin",
   "coffee",
   "tequila",
+  "digestif",
 ];
 
 // pretraga neosjetljiva na naglaske i velika/mala slova
@@ -62,6 +63,7 @@ const SUGGEST_CATEGORIES: DrinkCategory[] = [
   "coffee",
   "tequila",
   "gin",
+  "digestif",
 ];
 
 export function PairingPage() {

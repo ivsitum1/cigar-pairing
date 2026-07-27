@@ -93,6 +93,7 @@ const TABS: Tab[] = [
   "coffee",
   "tequila",
   "gin",
+  "digestif",
 ];
 export function CatalogPage({
   onPair,

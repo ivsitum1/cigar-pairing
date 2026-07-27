@@ -371,6 +371,7 @@ const CATEGORY_HINT: Record<DrinkCategory, string> = {
   wine: "vino",
   coffee: "kava",
   tequila: "tequila",
+  digestif: "digestif",
 };
 
 const KIND_IN_NAME =

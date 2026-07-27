@@ -7,6 +7,7 @@ import gins from "./gins.json";
 import wines from "./wines.json";
 import coffees from "./coffees.json";
 import tequilas from "./tequilas.json";
+import digestifs from "./digestifs.json";
 import cigarsJson from "./cigars.json";
 import shoppingJson from "./shopping.json";
 import brandsJson from "./brands.json";
@@ -21,6 +22,7 @@ export const DRINKS: Record<DrinkCategory, Drink[]> = {
   coffee: coffees as unknown as Drink[],
   tequila: tequilas as unknown as Drink[],
   gin: gins as unknown as Drink[],
+  digestif: digestifs as unknown as Drink[],
 };
 
 function cigarRichness(c: Cigar): number {
@@ -53,6 +55,7 @@ export const ALL_DRINKS: Drink[] = [
   ...DRINKS.coffee,
   ...DRINKS.tequila,
   ...DRINKS.gin,
+  ...DRINKS.digestif,
 ];
 
 export const CIGARS: Cigar[] = dedupeCigars(cigarsJson as Cigar[]);

@@ -26,6 +26,7 @@ const CATEGORIES: DrinkCategory[] = [
   "coffee",
   "tequila",
   "gin",
+  "digestif",
 ];
 
 export function ShoppingPage({
