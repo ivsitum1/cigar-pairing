@@ -90,13 +90,48 @@ export function resolveDefaultVitola(cigar: Cigar): Vitola | undefined {
 
 /** Primijeni odabranu vitolu na prikaz / pairing (cijena, format, link). */
 export function applyVitola(cigar: Cigar, vitola: Vitola): Cigar {
+  const inheritedPriceUrl = cigar.priceUrl ?? null;
+
+  // Ako vitola nema vlastiti product URL, ranije je fallbackao na
+  // `cigar.priceUrl` (što može biti pogrešan proizvod kad dimenzije/format
+  // ne odgovaraju).
+  // Novi guard: naslijedi URL samo ako izgleda kao da pripada istoj vitoli
+  // (usporedba format/ring/length kad postoje).
+  const resolvedPriceUrl = (() => {
+    if (vitola.url) return vitola.url;
+    if (!inheritedPriceUrl) return null;
+
+    const anchor = (cigar.vitolas ?? []).find((v) => v.url === inheritedPriceUrl);
+    if (!anchor) return null;
+
+    const anchorFormat = anchor.format ?? null;
+    const vitolaFormat = vitola.format ?? null;
+    const anchorRing = anchor.ring ?? null;
+    const vitolaRing = vitola.ring ?? null;
+    const anchorLen = anchor.lengthMM ?? null;
+    const vitolaLen = vitola.lengthMM ?? null;
+
+    const anyComparable =
+      (anchorFormat && vitolaFormat) ||
+      (anchorRing != null && vitolaRing != null) ||
+      (anchorLen != null && vitolaLen != null);
+
+    if (!anyComparable) return inheritedPriceUrl; // nema čime dokazati mismatch
+
+    const formatOk = anchorFormat && vitolaFormat ? anchorFormat === vitolaFormat : true;
+    const ringOk = anchorRing != null && vitolaRing != null ? anchorRing === vitolaRing : true;
+    const lenOk = anchorLen != null && vitolaLen != null ? anchorLen === vitolaLen : true;
+
+    return formatOk && ringOk && lenOk ? inheritedPriceUrl : null;
+  })();
+
   return {
     ...cigar,
     vitola: vitola.name,
     format: vitola.format && vitola.format !== "—" ? vitola.format : cigar.format,
     smokeTimeMin: vitola.smokeTimeMin ?? cigar.smokeTimeMin,
     priceEUR: vitola.priceEUR ?? cigar.priceEUR,
-    priceUrl: vitola.url ?? cigar.priceUrl,
+    priceUrl: resolvedPriceUrl,
     // odabir vitole → kupnja/cijena po regiji vode na TU vitolu (market katalog)
     regionLinks: vitola.regionLinks ?? cigar.regionLinks,
     // prikaži SAMO odabranu vitolu (ne cijeli popis) — kad tražiš Robusto,

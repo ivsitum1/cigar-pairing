@@ -13889,7 +13889,7 @@
     "id": "cig-arturo-fuente-don-carlos",
     "brand": "Arturo Fuente",
     "line": "Don Carlos",
-    "vitola": "Don Carlos",
+    "vitola": "Carlos Presidente",
     "format": "50 x 165mm",
     "country": "Dominikanska Republika",
     "wrapper": "Cameroon",
@@ -13943,15 +13943,6 @@
         "smokeTimeMin": 50,
         "priceEUR": 28.2,
         "url": "https://havana-cigar-shop.com/proizvod/a-fuente-don-carlos-presidente-25/",
-        "ring": 50,
-        "lengthMM": 165
-      },
-      {
-        "name": "Don Carlos",
-        "format": "50 x 165mm",
-        "smokeTimeMin": 60,
-        "priceEUR": 28.2,
-        "url": "https://humidor.hr/hr/proizvod/arturo-fuente-don-carlos-presidente-25/",
         "ring": 50,
         "lengthMM": 165
       },
@@ -49649,8 +49640,8 @@
     "id": "cig-davidoff-nicaragua",
     "brand": "Davidoff",
     "line": "Nicaragua",
-    "vitola": "Robusto",
-    "format": "50 x 127mm",
+    "vitola": "Box Pressed",
+    "format": "48 x 127mm",
     "country": "Dominikanska Republika",
     "wrapper": "Habano",
     "strength": 3,
@@ -49663,7 +49654,7 @@
       "zemljano"
     ],
     "smokeTimeMin": 50,
-    "priceEUR": 26.1,
+    "priceEUR": 21.3,
     "priceApprox": false,
     "availabilityHR": [
       "The Humidor",
@@ -49703,7 +49694,7 @@
         "format": "50 x 127mm",
         "smokeTimeMin": 50,
         "priceEUR": 26.1,
-        "url": "https://humidor.hr/hr/proizvod/davidoff-nicaragua-robusto-tubos-5-x-50/",
+        "url": null,
         "ring": 50,
         "lengthMM": 127
       },
@@ -49744,7 +49735,7 @@
         "lengthMM": 152
       }
     ],
-    "priceUrl": "https://humidor.hr/hr/proizvod/davidoff-nicaragua-robusto-tubos-5-x-50/",
+    "priceUrl": "https://havana-cigar-shop.com/proizvod/davidoff-nicaragua-robusto-box-pressed-4/",
     "regionLinks": {
       "HR": {
         "shop": "Havana Cigar Shop",
@@ -122002,7 +121993,7 @@
       "zemljano"
     ],
     "smokeTimeMin": 49,
-    "priceEUR": 8.3,
+    "priceEUR": null,
     "priceApprox": false,
     "availabilityHR": [
       "The Humidor",
@@ -122022,7 +122013,7 @@
         "name": "Robusto",
         "format": "50 x 127mm",
         "smokeTimeMin": 49,
-        "priceEUR": 8.3,
+        "priceEUR": null,
         "url": null,
         "ring": 50,
         "lengthMM": 127
@@ -122073,14 +122064,9 @@
         "lengthMM": 127
       }
     ],
-    "priceUrl": "https://humidor.hr/hr/proizvod/oliva-serie-g-double-robusto-5-x-54/",
+    "priceUrl": null,
     "profileEstimated": true,
     "regionLinks": {
-      "HR": {
-        "shop": "The Humidor",
-        "url": "https://humidor.hr/hr/proizvod/oliva-serie-g-double-robusto-5-x-54/",
-        "priceEUR": 8.3
-      },
       "USA": {
         "shop": "Holt's",
         "url": "https://www.holts.com/cigars/all-cigar-brands/oliva-master-blends-3.html",
@@ -122396,12 +122382,12 @@
       },
       {
         "name": "Serie G Robusto",
-        "format": "50 x 127mm",
+        "format": "50 x 114mm",
         "smokeTimeMin": 50,
         "priceEUR": 8.3,
         "url": null,
         "ring": 50,
-        "lengthMM": 127
+        "lengthMM": 114
       },
       {
         "name": "Double Robusto",
@@ -122486,21 +122472,12 @@
         "lengthMM": 152
       },
       {
-        "name": "Serie O Puro",
-        "format": "54 x 152mm",
-        "smokeTimeMin": 70,
-        "priceEUR": 9.2,
-        "url": null,
-        "ring": 54,
-        "lengthMM": 152
-      },
-      {
         "name": "Serie O Churchill",
-        "format": "54 x 178mm",
+        "format": "50 x 178mm",
         "smokeTimeMin": 85,
         "priceEUR": 9.2,
         "url": null,
-        "ring": 54,
+        "ring": 50,
         "lengthMM": 178
       }
     ],
@@ -122613,7 +122590,7 @@
         "lengthMM": 152
       },
       {
-        "name": "Toro",
+        "name": "Double Toro",
         "format": "60 x 152mm",
         "smokeTimeMin": 45,
         "priceEUR": 17.5,
@@ -139206,7 +139183,7 @@
     "id": "cig-plasencia-alma-del-campo",
     "brand": "Plasencia",
     "line": "Alma del Campo",
-    "vitola": "Robusto",
+    "vitola": "Guajiro",
     "format": "54 x 140mm",
     "country": "Nikaragva",
     "wrapper": "Jalapa habano",
@@ -139251,12 +139228,12 @@
         "format": "54 x 140mm",
         "smokeTimeMin": 50,
         "priceEUR": 16.6,
-        "url": "https://havana-cigar-shop.com/proizvod/plasencia-alma-del-campo-guajiro-robusto-gordo-10/",
+        "url": null,
         "ring": 54,
         "lengthMM": 140
       },
       {
-        "name": "Robusto",
+        "name": "Guajiro",
         "format": "54 x 140mm",
         "smokeTimeMin": 55,
         "priceEUR": 16.6,
@@ -139283,7 +139260,7 @@
         "lengthMM": 178
       },
       {
-        "name": "Toro",
+        "name": "Sendero",
         "format": "56 x 152mm",
         "smokeTimeMin": 60,
         "priceEUR": 17.7,
