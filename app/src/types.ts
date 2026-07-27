@@ -9,7 +9,8 @@ export type DrinkCategory =
   | "wine"
   | "coffee"
   | "tequila"
-  | "gin";
+  | "gin"
+  | "digestif";
 
 export type Market = "HR" | "EU" | "USA" | "WW";
 
