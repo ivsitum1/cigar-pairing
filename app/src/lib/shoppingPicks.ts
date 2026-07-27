@@ -61,6 +61,33 @@ export const BUCKETS: Partial<Record<DrinkCategory, StyleBucket[]>> = {
     { id: "contemporary", label: { hr: "Contemporary", en: "Contemporary" }, styles: ["contemporary"] },
     { id: "croatian", label: { hr: "HR craft", en: "Croatian craft" }, styles: ["croatian"] },
   ],
+  digestif: [
+    {
+      id: "central-bitter",
+      label: { hr: "Središnja Europa", en: "Central Europe" },
+      styles: ["herbal-bitter-central"],
+    },
+    {
+      id: "italian-bitter",
+      label: { hr: "Talijanski gorki", en: "Italian bitter" },
+      styles: ["herbal-bitter-italian", "fernet"],
+    },
+    {
+      id: "monastic",
+      label: { hr: "Monastički", en: "Monastic" },
+      styles: ["herbal-monastic"],
+    },
+    {
+      id: "yellow-herbal",
+      label: { hr: "Žuti biljni", en: "Yellow herbal" },
+      styles: ["herbal-saffron-yellow"],
+    },
+    {
+      id: "local-unique",
+      label: { hr: "Lokalno / jedinstveno", en: "Local / unique" },
+      styles: ["pelinkovac", "specialty-botanical"],
+    },
+  ],
 };
 
 // za rangiranje koristimo SREDINU raspona — kombinirani zapisi (min jeftine
