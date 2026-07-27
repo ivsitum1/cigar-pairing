@@ -59,6 +59,16 @@ describe("club 101 vodici", () => {
     );
   });
 
+  it("pica 101 pokriva biljne digestive", () => {
+    const ids = club101.tracks.drinks.map((c) => c.id);
+    expect(ids).toContain("d-digestif");
+    const card = club101.tracks.drinks.find((c) => c.id === "d-digestif");
+    expect(card?.body.hr.toLowerCase()).toMatch(/becherovka|pelinkovac|chartreuse|fernet/);
+    expect(card?.body.en.toLowerCase()).toMatch(/becherovka|pelinkovac|chartreuse|fernet/);
+    expect(card!.body.hr.length).toBeGreaterThanOrEqual(650);
+    expect(card!.body.en.length).toBeGreaterThanOrEqual(650);
+  });
+
   it("lekcije imaju katalog-dubinu (liste tipova / karakteristike)", () => {
     for (const track of TRACKS) {
       for (const card of club101.tracks[track]) {
