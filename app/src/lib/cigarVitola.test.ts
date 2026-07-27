@@ -15,14 +15,20 @@ const serieO: Cigar = {
   flavorTags: [],
   smokeTimeMin: 50,
   priceEUR: 9.2,
+  priceUrl: "https://humidor.hr/hr/proizvod/oliva-serie-o-robusto-5-x-50/",
   availabilityHR: ["The Humidor"],
   notes: { hr: "", en: "" },
   markets: ["HR", "EU", "WW"],
   vitolas: [
-    { name: "Serie O Robusto", format: "50 x 127mm", smokeTimeMin: 50, priceEUR: 9.2, url: null },
+    {
+      name: "Serie O Robusto",
+      format: "50 x 127mm",
+      smokeTimeMin: 50,
+      priceEUR: 9.2,
+      url: "https://humidor.hr/hr/proizvod/oliva-serie-o-robusto-5-x-50/",
+    },
     { name: "Tubos", format: "50 x 152mm", smokeTimeMin: 55, priceEUR: 13.4, url: null },
-    { name: "Serie O Puro", format: "54 x 152mm", smokeTimeMin: 70, priceEUR: 9.2, url: null },
-    { name: "Serie O Churchill", format: "54 x 178mm", smokeTimeMin: 85, priceEUR: 9.0, url: null },
+    { name: "Serie O Churchill", format: "50 x 178mm", smokeTimeMin: 85, priceEUR: 9.0, url: null },
   ],
 };
 
@@ -32,7 +38,7 @@ describe("cigarVitola", () => {
       ...serieO,
       vitolas: [...(serieO.vitolas ?? []), { name: "Tubos", format: "50 x 152mm", smokeTimeMin: 55, priceEUR: 13.4, url: null }],
     };
-    expect(uniqueVitolas(dup)).toHaveLength(4);
+    expect(uniqueVitolas(dup)).toHaveLength(3);
   });
 
   it("needsVitolaPick za Serie O", () => {
@@ -53,6 +59,13 @@ describe("cigarVitola", () => {
     expect(applied.vitolas).toHaveLength(1);
     expect(applied.vitolas[0].name).toBe("Tubos");
     expect(needsVitolaPick(applied)).toBe(false);
+  });
+
+  it("applyVitola ne nasljeđuje priceUrl kad vitola nema url i format ne odgovara", () => {
+    const churchill = serieO.vitolas![2];
+    const applied = applyVitola(serieO, churchill);
+    expect(applied.vitola).toBe("Serie O Churchill");
+    expect(applied.priceUrl).toBeNull();
   });
 
   it("resolveDefaultVitola preferira vitolu istog imena kao linija", () => {

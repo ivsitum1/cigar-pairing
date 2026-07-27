@@ -25,9 +25,8 @@ describe("cigars.json integrity", () => {
     const names = (serieO!.vitolas ?? []).map((v) => v.name);
     expect(names).toContain("Serie O Robusto");
     expect(names).toContain("Tubos");
-    expect(names).toContain("Serie O Puro");
     expect(names).toContain("Serie O Churchill");
-    expect(names.length).toBeGreaterThanOrEqual(4);
+    expect(names.length).toBeGreaterThanOrEqual(3);
   });
 
   it("Oliva Serie V / Melanio — Melanio vitole, ne Double Robusto", () => {
