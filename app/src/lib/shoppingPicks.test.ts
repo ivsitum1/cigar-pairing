@@ -6,6 +6,7 @@ import {
   groupWishlistByShop,
   groupWishlistDrinksByCategory,
   segmentPicks,
+  wishlistShopKey,
   wishlistText,
   wishlistTextSections,
 } from "./shoppingPicks";
@@ -42,6 +43,12 @@ const stubDrink = (id: string, category: DrinkCategory): Drink =>
   }) as Drink;
 
 describe("grupiranje liste zelja po trgovini", () => {
+  it("wishlistShopKey cisti sufiks i prazno mapira na ostalo", () => {
+    expect(wishlistShopKey("allez.hr (rijetko)", "ostalo")).toBe("allez.hr");
+    expect(wishlistShopKey("  ", "ostalo")).toBe("ostalo");
+    expect(wishlistShopKey(null, "ostalo")).toBe("ostalo");
+  });
+
   it("grupira, cisti sufikse u zagradi i sortira po trosku", () => {
     const groups = groupWishlistByShop(
       [

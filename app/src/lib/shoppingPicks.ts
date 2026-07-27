@@ -174,15 +174,23 @@ export interface ShopGroup {
   total: number; // zbroj poznatih cijena (min za pica)
 }
 
+/** Normalizirani ključ trgovine za listu želja (isti kao u groupWishlistByShop). */
+export function wishlistShopKey(
+  raw: string | null | undefined,
+  otherLabel: string,
+): string {
+  const t = (raw ?? "").trim();
+  // "allez.hr (rijetko)" -> "allez.hr"
+  return t ? t.replace(/\s*\(.*\)$/, "") : otherLabel;
+}
+
 export function groupWishlistByShop(
   items: { shop?: string | null; price: number | null }[],
   otherLabel: string,
 ): ShopGroup[] {
   const groups = new Map<string, ShopGroup>();
   for (const it of items) {
-    const raw = (it.shop ?? "").trim();
-    // "allez.hr (rijetko)" -> "allez.hr"
-    const shop = raw ? raw.replace(/\s*\(.*\)$/, "") : otherLabel;
+    const shop = wishlistShopKey(it.shop, otherLabel);
     const g = groups.get(shop) ?? { shop, count: 0, total: 0 };
     g.count += 1;
     g.total += it.price ?? 0;
