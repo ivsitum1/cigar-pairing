@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import type { Cigar, Drink, DrinkCategory } from "../types";
 import { ALL_DRINKS, CIGARS, DRINKS, SHOPPING, brandDisplayName, formatPrice } from "../data";
 import { useI18n, STYLE_LABELS, type StringKey } from "../i18n";
@@ -43,6 +43,8 @@ export function ShoppingPage({
   const [showPlan, setShowPlan] = useState(false);
   const [copied, setCopied] = useState(false);
   const [selectedShop, setSelectedShop] = useState<string | null>(null);
+  const shopFilterRef = useRef<HTMLDivElement>(null);
+  const shopFilterScrollSkip = useRef(true);
 
   const isOwned = (id: string) => getItemState(id).owned;
   // ☆ uz preporuku = vec je na tvojoj listi zelja (liste su neovisne)
@@ -90,6 +92,20 @@ export function ShoppingPage({
   const wishlistTotal =
     visibleDrinks.reduce((s, d) => s + (d.priceEUR?.min ?? 0), 0) +
     visibleCigars.reduce((s, c) => s + (c.priceEUR ?? 0), 0);
+
+  // nakon filtera lista iznad se skraćuje — chipovi ostanu u središtu viewporta
+  useEffect(() => {
+    if (shopFilterScrollSkip.current) {
+      shopFilterScrollSkip.current = false;
+      return;
+    }
+    const el = shopFilterRef.current;
+    if (!el) return;
+    const id = requestAnimationFrame(() => {
+      el.scrollIntoView({ behavior: "smooth", block: "center" });
+    });
+    return () => cancelAnimationFrame(id);
+  }, [selectedShop]);
 
   const toggleShop = (shop: string) =>
     setSelectedShop((cur) => (cur === shop ? null : shop));
@@ -222,7 +238,7 @@ export function ShoppingPage({
             )}
           </div>
           {wishlistShops.length >= 1 && (
-            <div className="mt-2 flex flex-wrap gap-1.5">
+            <div ref={shopFilterRef} className="mt-2 flex flex-wrap gap-1.5">
               <Chip active={selectedShop == null} onClick={() => setSelectedShop(null)}>
                 {t("shop.filterAll")}
               </Chip>
