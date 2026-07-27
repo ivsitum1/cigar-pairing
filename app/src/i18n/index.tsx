@@ -287,6 +287,7 @@ const STRINGS = {
   "cat.wine": { hr: "Vino", en: "Wine" },
   "cat.coffee": { hr: "Kava", en: "Coffee" },
   "cat.tequila": { hr: "Tekila", en: "Tequila" },
+  "cat.digestif": { hr: "Biljni digestivi", en: "Herbal digestifs" },
   "cat.cigars": { hr: "Cigare", en: "Cigars" },
   "cat.pairWithDrink": { hr: "Upari s pićem →", en: "Pair with a drink →" },
   "cat.pairWithCigar": { hr: "Upari s cigarama →", en: "Pair with cigars →" },
@@ -471,6 +472,13 @@ export const STYLE_LABELS: Record<string, LocalizedText> = {
   reposado: { hr: "Reposado", en: "Reposado" },
   anejo: { hr: "Añejo", en: "Añejo" },
   "extra-anejo": { hr: "Extra añejo", en: "Extra añejo" },
+  "herbal-bitter-central": { hr: "Srednjoeuropski biljni biter", en: "Central European herbal bitter" },
+  "herbal-bitter-italian": { hr: "Talijanski amaro", en: "Italian amaro" },
+  fernet: { hr: "Fernet", en: "Fernet" },
+  "herbal-monastic": { hr: "Monastički biljni", en: "Monastic herbal" },
+  "herbal-saffron-yellow": { hr: "Žuti biljni (šafran)", en: "Yellow herbal (saffron)" },
+  pelinkovac: { hr: "Pelinkovac", en: "Pelinkovac" },
+  "specialty-botanical": { hr: "Jedinstveni botanik", en: "Specialty botanical" },
 };
 
 // hrvatska imena zemalja u podacima -> engleski prikaz

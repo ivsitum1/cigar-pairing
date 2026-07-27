@@ -21,6 +21,7 @@ const CATS: DrinkCategory[] = [
   "coffee",
   "tequila",
   "gin",
+  "digestif",
 ];
 const nitko = () => false;
 
@@ -95,6 +96,14 @@ describe("shopping picks", () => {
         expect(p.bucket.styles, `${cat}: ${p.drink.name}`).toContain(p.drink.style);
       }
     }
+  });
+
+  it("digestif ima pet buffet segmenata i barem jednu bocu po segmentu", () => {
+    expect(BUCKETS.digestif?.length).toBe(5);
+    const picks = buffetFive("digestif", DRINKS.digestif, nitko);
+    expect(picks.length).toBe(5);
+    const styles = new Set(picks.map((p) => p.bucket.id));
+    expect(styles.size).toBe(5);
   });
 
   it("buffet preskace boce koje vec imam", () => {

@@ -1,0 +1,337 @@
+[
+  {
+    "id": "dg-becherovka",
+    "category": "digestif",
+    "name": "Becherovka",
+    "style": "herbal-bitter-central",
+    "region": "Češka",
+    "country": "Češka",
+    "abv": 38,
+    "body": 3,
+    "sweetness": 3,
+    "flavorTags": ["cimet", "klinčić", "bilje"],
+    "additiveStatus": "flavored",
+    "additiveDetail": {
+      "hr": "Biljni liker / bitter — destilat s cimetom, klinčićem i tajnom mješavinom bilja (EU kategorija likera, ne whisky/brandy).",
+      "en": "Herbal liqueur / bitter — distillate with cinnamon, clove and a secret herb blend (EU liqueur category, not whisky/brandy)."
+    },
+    "qualityScore": 8,
+    "priceEUR": { "min": 14, "max": 14 },
+    "priceApprox": false,
+    "shopHR": "ecuga.com",
+    "pairable": true,
+    "serving": { "best": "Čisto, hladno" },
+    "priceUrl": "https://ecuga.com/proizvod/becherovka",
+    "notes": {
+      "hr": "Češki nacionalni bitter od 1807. — cimet i klinčić u ledene čaši. Uz cigaru radi kao digestiv nakon jela, ne kao koktel baza.",
+      "en": "Czech national bitter since 1807 — cinnamon and clove in an ice-cold glass. With a cigar it works as an after-dinner digestif, not a cocktail base."
+    }
+  },
+  {
+    "id": "dg-unicum-zwack",
+    "category": "digestif",
+    "name": "Unicum Zwack",
+    "style": "herbal-bitter-central",
+    "region": "Mađarska",
+    "country": "Mađarska",
+    "abv": 40,
+    "body": 4,
+    "sweetness": 2,
+    "flavorTags": ["bilje", "gorcina", "zacini"],
+    "additiveStatus": "flavored",
+    "additiveDetail": {
+      "hr": "Mađarski biljni bitter — liker na bazi alkohola i biljne mješavine (EU kategorija likera).",
+      "en": "Hungarian herbal bitter — alcohol-based liqueur with a herb blend (EU liqueur category)."
+    },
+    "qualityScore": 8,
+    "priceEUR": { "min": 20, "max": 20 },
+    "priceApprox": false,
+    "shopHR": "ecuga.com",
+    "pairable": true,
+    "serving": { "best": "Čisto" },
+    "priceUrl": "https://ecuga.com/proizvod/unicum-zwack",
+    "notes": {
+      "hr": "Mađarska ikona od 1790. — tamniji i gorkiji od Becherovke. Neat uz punu cigaru; tradicija kaže jedan gutljaj nakon jela.",
+      "en": "Hungarian icon since 1790 — darker and more bitter than Becherovka. Neat with a full cigar; tradition calls for one sip after the meal."
+    }
+  },
+  {
+    "id": "dg-fernet-branca",
+    "category": "digestif",
+    "name": "Fernet Branca",
+    "style": "fernet",
+    "region": "Italija",
+    "country": "Italija",
+    "abv": 35,
+    "body": 4,
+    "sweetness": 2,
+    "flavorTags": ["menta", "gorcina", "bilje"],
+    "additiveStatus": "flavored",
+    "additiveDetail": {
+      "hr": "Fernet — italijanski biljni amaro/bitter (EU liker); menta i gorka biljna baza, ne destilat žitarica.",
+      "en": "Fernet — Italian herbal amaro/bitter (EU liqueur); mint and bitter herb base, not a grain distillate."
+    },
+    "qualityScore": 8,
+    "priceEUR": { "min": 24, "max": 24 },
+    "priceApprox": false,
+    "shopHR": "ecuga.com",
+    "pairable": true,
+    "serving": { "best": "Čisto, hladno" },
+    "priceUrl": "https://ecuga.com/proizvod/branca-fernet",
+    "notes": {
+      "hr": "Klasični milanski fernet — intenzivna menta i gorka biljna tajna. Servirajte ledeno hladno; uz cigar nakon večere, ne prije.",
+      "en": "The classic Milanese fernet — intense mint and a bitter herbal secret. Serve ice-cold; with a cigar after dinner, not before."
+    }
+  },
+  {
+    "id": "dg-averna",
+    "category": "digestif",
+    "name": "Averna Amaro",
+    "style": "herbal-bitter-italian",
+    "region": "Sicilija, Italija",
+    "country": "Italija",
+    "abv": 29,
+    "body": 3,
+    "sweetness": 3,
+    "flavorTags": ["bilje", "gorcina", "karamela"],
+    "additiveStatus": "flavored",
+    "additiveDetail": {
+      "hr": "Sicilijanski amaro — biljni liker s nižim ABV-om (29%); EU kategorija likera/amaro.",
+      "en": "Sicilian amaro — herbal liqueur at lower ABV (29%); EU liqueur/amaro category."
+    },
+    "qualityScore": 7,
+    "priceEUR": null,
+    "shopHR": "ecuga.com",
+    "pairable": true,
+    "serving": { "best": "Čisto ili s ledom" },
+    "priceUrl": "https://ecuga.com/proizvod/averna-amaro",
+    "notes": {
+      "hr": "Sicilijski amaro od 1868. — pristupačniji od ferneta, blaža slatko-gorka ravnoteža. Neat ili s ledom uz medium do punu cigaru.",
+      "en": "Sicilian amaro since 1868 — more approachable than fernet, a gentler sweet-bitter balance. Neat or on ice with medium to full cigars."
+    }
+  },
+  {
+    "id": "dg-nonino-amaro",
+    "category": "digestif",
+    "name": "Nonino Amaro Quintessentia",
+    "style": "herbal-bitter-italian",
+    "region": "Italija",
+    "country": "Italija",
+    "abv": 35,
+    "body": 3,
+    "sweetness": 3,
+    "flavorTags": ["bilje", "citrus", "grappa"],
+    "additiveStatus": "flavored",
+    "additiveDetail": {
+      "hr": "Amaro na bazi grappe — biljni liker (EU kategorija likera), ne starija grappa sama po sebi.",
+      "en": "Grappa-based amaro — herbal liqueur (EU liqueur category), not aged grappa on its own."
+    },
+    "qualityScore": 8,
+    "priceEUR": { "min": 35, "max": 45 },
+    "priceApprox": true,
+    "shopHR": "allez.hr",
+    "pairable": true,
+    "serving": { "best": "Čisto" },
+    "priceUrl": "https://allez.hr/shop/svi-proizvodi/amaro-nonino-quintessentia-liquore-35-vol-07l-u-poklon-kutiji",
+    "notes": {
+      "hr": "Amaro obitelji Nonino — grappa baza s biljnim destilatom. Finiji od masovnih amara; uz cigar kao digestiv nakon jela.",
+      "en": "Amaro from the Nonino family — grappa base with herbal distillate. Finer than mass-market amari; with a cigar as an after-dinner digestif."
+    }
+  },
+  {
+    "id": "dg-chartreuse-verte",
+    "category": "digestif",
+    "name": "Chartreuse Verte",
+    "style": "herbal-monastic",
+    "region": "Francuska",
+    "country": "Francuska",
+    "abv": 55,
+    "body": 4,
+    "sweetness": 3,
+    "flavorTags": ["bilje", "zacini", "med"],
+    "additiveStatus": "flavored",
+    "additiveDetail": {
+      "hr": "Monastički biljni liker — 130 biljaka po receptu kartuzijanaca (EU kategorija likera).",
+      "en": "Monastic herbal liqueur — 130 plants per the Carthusian recipe (EU liqueur category)."
+    },
+    "qualityScore": 8,
+    "priceEUR": { "min": 55, "max": 65 },
+    "priceApprox": true,
+    "shopHR": "allez.hr",
+    "pairable": true,
+    "serving": { "best": "Čisto" },
+    "priceUrl": "https://allez.hr/shop/svi-proizvodi/chartreuse-liqueur-verte-55-vol-07l",
+    "notes": {
+      "hr": "Zelena Chartreuse (55%) — herbaceous, slojevit, visok ABV. Jedan gutljaj neat u maloj čaši; uz punu cigaru nakon jela.",
+      "en": "Green Chartreuse (55%) — herbaceous, layered, high ABV. One neat sip in a small glass; with a full cigar after the meal."
+    }
+  },
+  {
+    "id": "dg-chartreuse-jaune",
+    "category": "digestif",
+    "name": "Chartreuse Jaune",
+    "style": "herbal-monastic",
+    "region": "Francuska",
+    "country": "Francuska",
+    "abv": 43,
+    "body": 3,
+    "sweetness": 4,
+    "flavorTags": ["bilje", "med", "cvijet"],
+    "additiveStatus": "flavored",
+    "additiveDetail": {
+      "hr": "Monastički biljni liker — blaža žuta verzija iste kartuzijanske tradicije (EU kategorija likera).",
+      "en": "Monastic herbal liqueur — gentler yellow version of the same Carthusian tradition (EU liqueur category)."
+    },
+    "qualityScore": 8,
+    "priceEUR": { "min": 52, "max": 52 },
+    "priceApprox": false,
+    "shopHR": "allez.hr",
+    "pairable": true,
+    "serving": { "best": "Čisto" },
+    "priceUrl": "https://allez.hr/shop/svi-proizvodi/chartreuse-liqueur-jaune-43-vol-07l",
+    "notes": {
+      "hr": "Žuta Chartreuse (43%) — mekša i slatkša od Verte. Bolji izbor uz medium cigaru nego zelena verzija.",
+      "en": "Yellow Chartreuse (43%) — softer and sweeter than Verte. A better pick with medium cigars than the green version."
+    }
+  },
+  {
+    "id": "dg-benedictine",
+    "category": "digestif",
+    "name": "Dom Benedictine",
+    "style": "herbal-monastic",
+    "region": "Francuska",
+    "country": "Francuska",
+    "abv": 40,
+    "body": 3,
+    "sweetness": 4,
+    "flavorTags": ["bilje", "med", "zacini"],
+    "additiveStatus": "flavored",
+    "additiveDetail": {
+      "hr": "Francuski biljni liker — med i 27 biljaka (EU kategorija likera, ne konjak/brandy).",
+      "en": "French herbal liqueur — honey and 27 plants (EU liqueur category, not cognac/brandy)."
+    },
+    "qualityScore": 7,
+    "priceEUR": { "min": 30, "max": 40 },
+    "priceApprox": true,
+    "shopHR": "allez.hr",
+    "pairable": true,
+    "serving": { "best": "Čisto" },
+    "priceUrl": "https://allez.hr/shop/svi-proizvodi/dom-benedictine-40-07-l",
+    "notes": {
+      "hr": "Benediktinski liker od 1510. — med, bilje i začini. Slatkiji digestiv uz medium do punu cigaru; B&B mješavina je druga priča.",
+      "en": "Benedictine liqueur since 1510 — honey, herbs and spice. A sweeter digestif with medium to full cigars; the B&B blend is a different story."
+    }
+  },
+  {
+    "id": "dg-strega",
+    "category": "digestif",
+    "name": "Strega Liquore",
+    "style": "herbal-saffron-yellow",
+    "region": "Italija",
+    "country": "Italija",
+    "abv": 40,
+    "body": 3,
+    "sweetness": 4,
+    "flavorTags": ["safran", "bilje", "med"],
+    "additiveStatus": "flavored",
+    "additiveDetail": {
+      "hr": "Talijanski žuti biljni liker sa safranom — 70 biljaka (EU kategorija likera).",
+      "en": "Italian yellow herbal liqueur with saffron — 70 plants (EU liqueur category)."
+    },
+    "qualityScore": 7,
+    "priceEUR": { "min": 23, "max": 23 },
+    "priceApprox": false,
+    "shopHR": "allez.hr",
+    "pairable": true,
+    "serving": { "best": "Čisto" },
+    "priceUrl": "https://allez.hr/shop/svi-proizvodi/strega-liquore-40-07-l",
+    "notes": {
+      "hr": "Benevento od 1860. — prepoznatljiv safran i žuta boja. Neat uz medium cigaru; slatko-gorka, ne desertni liker.",
+      "en": "Benevento since 1860 — distinctive saffron and yellow colour. Neat with a medium cigar; sweet-bitter, not a dessert liqueur."
+    }
+  },
+  {
+    "id": "dg-galliano",
+    "category": "digestif",
+    "name": "Galliano L'Autentico",
+    "style": "herbal-saffron-yellow",
+    "region": "Italija",
+    "country": "Italija",
+    "abv": 42.3,
+    "body": 3,
+    "sweetness": 4,
+    "flavorTags": ["vanilija", "bilje", "anis"],
+    "additiveStatus": "flavored",
+    "additiveDetail": {
+      "hr": "Talijanski žuti biljni liker — vanilija i biljna mješavina (EU kategorija likera).",
+      "en": "Italian yellow herbal liqueur — vanilla and herb blend (EU liqueur category)."
+    },
+    "qualityScore": 7,
+    "priceEUR": { "min": 25, "max": 35 },
+    "priceApprox": true,
+    "shopHR": "allez.hr",
+    "pairable": true,
+    "serving": { "best": "Čisto" },
+    "priceUrl": "https://allez.hr/shop/svi-proizvodi/galliano-lautentico-423-07-l",
+    "notes": {
+      "hr": "Visoki bočni flakon — vanilija i bilje. Slatkiji od Strega; neat je moguć uz medium cigaru, ali češće ide u koktele.",
+      "en": "The tall side bottle — vanilla and herbs. Sweeter than Strega; neat works with medium cigars, but it more often lands in cocktails."
+    }
+  },
+  {
+    "id": "dg-aura-pelinkovac",
+    "category": "digestif",
+    "name": "Aura Pelinkovac Gorki",
+    "style": "pelinkovac",
+    "region": "Istra, Hrvatska",
+    "country": "Hrvatska",
+    "abv": 30.8,
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": ["pelin", "gorcina", "bilje"],
+    "additiveStatus": "flavored",
+    "additiveDetail": {
+      "hr": "Hrvatski pelinkovac — biljni liker s pelinom (EU kategorija likera).",
+      "en": "Croatian pelinkovac — wormwood herbal liqueur (EU liqueur category)."
+    },
+    "qualityScore": 7,
+    "priceEUR": { "min": 26, "max": 26 },
+    "priceApprox": false,
+    "shopHR": "ecuga.com",
+    "pairable": true,
+    "serving": { "best": "Čisto, hladno" },
+    "priceUrl": "https://ecuga.com/proizvod/aura-pelinkovac-gorki",
+    "notes": {
+      "hr": "Istarski craft pelinkovac — gorki, pelin-forward profil. Lokalni digestiv uz cigaru; hladniji servis smanjuje gorkoću.",
+      "en": "Istrian craft pelinkovac — bitter, wormwood-forward profile. A local digestif with cigars; colder service tames the bitterness."
+    }
+  },
+  {
+    "id": "dg-agwa",
+    "category": "digestif",
+    "name": "Agwa de Bolivia",
+    "style": "specialty-botanical",
+    "region": "Bolivija / NL",
+    "country": "Bolivija",
+    "abv": 30,
+    "body": 3,
+    "sweetness": 3,
+    "flavorTags": ["menta", "bilje", "zeleni-caj"],
+    "additiveStatus": "flavored",
+    "additiveDetail": {
+      "hr": "Botanički liker s listom koke — destilat i ekstrakti bilja (EU kategorija likera; nije rum niti whisky).",
+      "en": "Botanical liqueur with coca leaf — distillate and herb extracts (EU liqueur category; not rum or whisky)."
+    },
+    "qualityScore": 7,
+    "priceEUR": { "min": 24, "max": 24 },
+    "priceApprox": false,
+    "shopHR": "ecuga.com",
+    "pairable": true,
+    "serving": { "best": "Čisto ili s ledom" },
+    "priceUrl": "https://ecuga.com/proizvod/agwa-de-bolivia",
+    "notes": {
+      "hr": "Jedinstvena boca — koka-list, menta i zeleni čaj. Nema zamjene u katalogu; neat ili s ledom uz medium cigaru.",
+      "en": "A one-of-a-kind bottle — coca leaf, mint and green tea. No substitute in the catalog; neat or on ice with a medium cigar."
+    }
+  }
+]
