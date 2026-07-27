@@ -4,8 +4,8 @@
     "en": "Dictionary"
   },
   "intro": {
-    "hr": "Pojmovnik stola: cigara, piće, sparivanje i bonton. Svaki unos ima kratku definiciju i malo duže objašnjenje — ne samo prijevod.",
-    "en": "A table glossary: cigar, drink, pairing and etiquette. Each entry has a short definition and a fuller explanation — not merely a translation."
+    "hr": "Pojmovnik stola: cigara, piće i sparivanje. Svaki unos objašnjava pojam — definicija i kratko značenje. Bonton i govor o spoju ostaju u Bontonu i Leksikonu.",
+    "en": "A table glossary: cigar, drink and pairing. Each entry explains a term — definition and short meaning. Etiquette and pairing speech stay in Bonton and the Lexicon."
   },
   "entries": [
     {
@@ -89,7 +89,7 @@
         "en": "Devices with fans or electronic humidity control."
       },
       "body": {
-        "hr": "Aktivna humidifikacija koristi električne humidifikatore, ponekad s ventilatorom, u većim ormarima ili vinotekama prilagođenim cigar u. Brže reagira na promjene, ali traži održavanje i struju.\n\nZa kućni ormar s nekoliko stotina cigare smisleno; za jednu kutiju Boveda je jednostavniji izbor.",
+        "hr": "Aktivna humidifikacija koristi električne humidifikatore, ponekad s ventilatorom, u većim ormarima ili vinotekama prilagođenim cigaru. Brže reagira na promjene, ali traži održavanje i struju.\n\nZa kućni ormar s nekoliko stotina cigare smisleno; za jednu kutiju Boveda je jednostavniji izbor.",
         "en": "Active humidification uses electric humidifiers, sometimes with fans, in larger cabinets or wineadors adapted for cigars. It reacts faster to swings but needs maintenance and power.\n\nFor a home cabinet with hundreds of cigars it makes sense; for one box, Boveda is the simpler choice."
       },
       "aliases": [],
@@ -135,7 +135,7 @@
         "en": "Sherry that passed flor then oxidatively aged — nutty, drier."
       },
       "body": {
-        "hr": "Amontillado je most: više tijela od fino, manje slatkoće od oloroso. Klasičan uz medium-full cigar s cedar.\n\nNaslov Edgar Allan Poea nije recept — tražite stvarnu bocu.",
+        "hr": "Amontillado je most: više tijela od fino, manje slatkoće od oloroso. Klasičan uz srednje do pune cigare s cedar.\n\nNaslov Edgar Allan Poea nije recept — tražite stvarnu bocu.",
         "en": "Amontillado is the bridge: more body than fino, less sweetness than oloroso. Classic with medium-full cedar cigars.\n\nEdgar Allan Poe's title is not a recipe — seek a real bottle."
       },
       "aliases": [
@@ -150,7 +150,7 @@
     {
       "id": "aperitif-pairing",
       "term": {
-        "hr": "Aperitiv uz cigar",
+        "hr": "Aperitiv uz cigaru",
         "en": "Aperitif pairing"
       },
       "def": {
@@ -158,7 +158,7 @@
         "en": "A light pour before or at the start of the evening — opens the table, does not close it with smoke."
       },
       "body": {
-        "hr": "Aperitiv uz cigar traži štednju: suho vino, blagi vermut, kratki koktel s citrusom. Cilj je probuditi apetit za razgovor, ne natjecati se s prvim dimom. Ako aperitiv već puni tanjur, cigar mora biti blag.",
+        "hr": "Aperitiv uz cigaru traži štednju: suho vino, blagi vermut, kratki koktel s citrusom. Cilj je probuditi apetit za razgovor, ne natjecati se s prvim dimom. Ako aperitiv već puni nepce, cigara mora biti blag.",
         "en": "An aperitif with a cigar asks restraint: dry wine, gentle vermouth, a short citrus cocktail. The aim is to wake appetite for conversation, not to fight the first puff. If the aperitif already fills the palate, the cigar must stay mild."
       },
       "aliases": [
@@ -212,7 +212,7 @@
         "en": "Older French brandy from Gascony — often pot still, rustier than Cognac."
       },
       "body": {
-        "hr": "Armagnac donosi više tijela i zemlje — odličan uz punu, zemljanu cigar. Manje marketinga, više karaktera na stolu.\n\nVintage armagnac je stvar određene berbe, ne samo XO kategorija.",
+        "hr": "Armagnac donosi više tijela i zemlje — odličan uz punu, zemljanu cigaru. Manje marketinga, više karaktera na stolu.\n\nVintage armagnac je stvar određene berbe, ne samo XO kategorija.",
         "en": "Armagnac brings more body and earth — excellent with full, earthy cigars. Less marketing, more character at the table.\n\nVintage Armagnac is a specific harvest, not just an XO category."
       },
       "aliases": [
@@ -260,7 +260,7 @@
         "en": "Tequila with longer oak aging — caramel, spice, less agave peak."
       },
       "body": {
-        "hr": "Añejo tequila uz punu cigar nosi vaniliju i dim paralelno s maduro. Previše slatki añejo može sukobiti sa suhom ligom.\n\nExtra añejo ide dalje — vidi tequila-extra-anejo.",
+        "hr": "Añejo tequila uz punu cigaru nosi vaniliju i dim paralelno s maduro. Previše slatki añejo može sukobiti sa suhom ligom.\n\nExtra añejo ide dalje — vidi tequila-extra-anejo.",
         "en": "Añejo tequila with full cigars carries vanilla and smoke parallel to maduro. Too sweet an añejo clashes with dry ligero.\n\nExtra añejo goes further — see tequila-extra-anejo."
       },
       "aliases": [
@@ -319,41 +319,17 @@
       "category": "cigar"
     },
     {
-      "id": "buffet-five",
-      "term": {
-        "hr": "Bife petorka",
-        "en": "Buffet five"
-      },
-      "def": {
-        "hr": "Pet odabranih boca u aplikaciji koje predstavljaju različite stilove za istu večer.",
-        "en": "Five curated bottles in the app representing different styles for one evening."
-      },
-      "body": {
-        "hr": "Petorka nije „top five“ po ocjeni — to je mali bife identiteta. Jedna boca otvara, jedna nosi tijelo, jedna zatvara, dvije su iznenađenje. Domaćin u stvarnom životu radi isto, samo bez algoritma.",
-        "en": "The five is not a \"top five\" by score — it is a small buffet of identity. One bottle opens, one carries body, one closes, two are surprise. A real host does the same, just without an algorithm."
-      },
-      "aliases": [
-        "petorka",
-        "buffet 5"
-      ],
-      "seeAlso": [
-        "soft-recommendation-band",
-        "serve-style"
-      ],
-      "category": "pairing"
-    },
-    {
       "id": "white-ash",
       "term": {
-        "hr": "Bijeli pepel",
+        "hr": "Bijeli pepeo",
         "en": "White ash"
       },
       "def": {
-        "hr": "Svijetlo, gotovo kredasto obojen pepel.",
+        "hr": "Svijetlo, gotovo kredasto obojen pepeo.",
         "en": "Light, nearly chalk-colored ash."
       },
       "body": {
-        "hr": "Bijeli pepel često se povezuje s mineralno bogatim tlima i dobrim curenjem dušika u gnojivu — posebno u karipskom i srednjoameričkom kontekstu. Nije garancija kvalitete, ali je znak pažljive obrade.\n\nRazlikujte ga od sivog, prljavog pepela koji može ukazivati na loše gorenje ili previše vlage.",
+        "hr": "Bijeli pepeo često se povezuje s mineralno bogatim tlima i dobrim curenjem dušika u gnojivu — posebno u karipskom i srednjoameričkom kontekstu. Nije garancija kvalitete, ali je znak pažljive obrade.\n\nRazlikujte ga od sivog, prljavog pepela koji može ukazivati na loše gorenje ili previše vlage.",
         "en": "White ash is often linked to mineral-rich soils and careful nitrogen management in fertilizer — especially in Caribbean and Central American contexts. It is not a quality guarantee, but a sign of careful processing.\n\nDistinguish it from gray, dirty ash that may signal poor combustion or excess moisture."
       },
       "aliases": [],
@@ -399,7 +375,7 @@
         "en": "Concentrated herbal extract — dashes in cocktails, not a sipping drink (except ritual)."
       },
       "body": {
-        "hr": "Angostura i slični bitters definiraju old fashioned i negroni — gorčina u kapljicama. Uz cigar relevantni kroz koktel (negroni), ne kao solo gutljaj.\n\nNe miješajte s amaro bocom — različita koncentracija.",
+        "hr": "Angostura i slični bitters definiraju old fashioned i negroni — gorčina u kapljicama. Uz cigara relevantni kroz koktel (negroni), ne kao solo gutljaj.\n\nNe miješajte s amaro bocom — različita koncentracija.",
         "en": "Angostura and similar bitters define old fashioned and negroni — bitterness in dashes. Relevant with cigars via cocktails (negroni), not as a solo sip.\n\nDo not confuse with amaro bottles — different concentration."
       },
       "aliases": [
@@ -467,11 +443,11 @@
         "en": "Blend"
       },
       "def": {
-        "hr": "Namjerna mješavina listova i regija koja određuje karakter cigarete.",
+        "hr": "Namjerna mješavina listova i regija koja određuje karakter cigare.",
         "en": "The intentional mix of leaves and regions that defines a cigar's character."
       },
       "body": {
-        "hr": "Blend nije slučajna gomila duhana — to je recept. Koji ligero, koji seco, koji omotač, iz koje regije: sve služi jednom profilu.\n\nIsti proizvođač može imati više blendova: jedan blaži za jutro, jedan puniji za večer. Promjena jednog lista mijenja cijelu cigaretu.\n\nKod stola blend je korisna riječ kad ne želite reći samo „jača” ili „slabija” — nego opisati stil.",
+        "hr": "Blend nije slučajna gomila duhana — to je recept. Koji ligero, koji seco, koji omotač, iz koje regije: sve služi jednom profilu.\n\nIsti proizvođač može imati više blendova: jedan blaži za jutro, jedan puniji za večer. Promjena jednog lista mijenja cijelu cigaru.\n\nKod stola blend je korisna riječ kad ne želite reći samo „jača” ili „slabija” — nego opisati stil.",
         "en": "A blend is not a random pile of tobacco — it is a recipe. Which ligero, which seco, which wrapper, from which region: all serve one profile.\n\nOne maker may run several blends: a milder one for morning, a fuller one for evening. Change one leaf and the whole cigar shifts.\n\nAt the table blend is useful when you do not want to say only stronger or milder — but to describe style."
       },
       "aliases": [
@@ -492,7 +468,7 @@
         "en": "A blend of malt and grain whiskies — the best-selling Scotch style."
       },
       "body": {
-        "hr": "Blend donosi konzistentnost i pristupačnu cijenu. Uz cigar često je sigurniji izbor od agresivnog young malt-a — tražite sherry-forward blend za maduro.\n\nChivas, Johnnie Walker i sl. nisu «inferiorni» maltovi.",
+        "hr": "Blend donosi konzistentnost i pristupačnu cijenu. Uz cigara često je sigurniji izbor od agresivnog young malt-a — tražite sherry-forward blend za maduro.\n\nChivas, Johnnie Walker i sl. nisu «inferiorni» maltovi.",
         "en": "Blends offer consistency and approachability. With cigars they are often safer than aggressive young malts — seek sherry-forward blends for maduro.\n\nHousehold names are not «inferior» malts."
       },
       "aliases": [
@@ -652,7 +628,7 @@
         "en": "Small production, craft focus and limited runs, not mass-market brand."
       },
       "body": {
-        "hr": "Boutique u svijetu cigareta znači mala fabrika ili mala serija — često s imenom blendera na kutiji. Nije službena kategorija, nego stil poslovanja.\n\nMože biti izvrstan ili neujednačen; prednost je eksperiment, ne sigurna skala.\n\nNa stolu boutique znači „tražite karakter, ne reklamu”.",
+        "hr": "Boutique u svijetu cigara znači mala fabrika ili mala serija — često s imenom blendera na kutiji. Nije službena kategorija, nego stil poslovanja.\n\nMože biti izvrstan ili neujednačen; prednost je eksperiment, ne sigurna skala.\n\nNa stolu boutique znači „tražite karakter, ne reklamu”.",
         "en": "Boutique in cigars means small factory or small batch — often blender name on box. Not an official category, but business style.\n\nCan be excellent or uneven; advantage is experiment, not guaranteed scale.\n\nAt the table boutique means seek character, not advertising."
       },
       "aliases": [
@@ -683,30 +659,6 @@
         "humidor"
       ],
       "category": "cigar"
-    },
-    {
-      "id": "nic-sick-care",
-      "term": {
-        "hr": "Briga za nic-sick gosta",
-        "en": "Care for a nic-sick guest"
-      },
-      "def": {
-        "hr": "Prepoznati prekomjernu nikotinsku reakciju — voda, zrak, pauza, bez sramote.",
-        "en": "Recognize nicotine overload — water, air, pause, without shame."
-      },
-      "body": {
-        "hr": "Blijeda koža, vrtoglavica, znojenje — to nije „slab pušač“, to je signal za pauzu. Domaćin nudi vodu, svježi zrak i prekid bez komentara. Natjecanje u izdržljivosti nema mjesta na stolu.",
-        "en": "Pale skin, dizziness, sweat — that is not a \"weak smoker,\" that is a signal to pause. The host offers water, fresh air, and stop without commentary. Endurance contests have no place at the table."
-      },
-      "aliases": [
-        "nic sick",
-        "nikotinska mučnina"
-      ],
-      "seeAlso": [
-        "water-on-table",
-        "host-at-table"
-      ],
-      "category": "table"
     },
     {
       "id": "bouquet",
@@ -758,11 +710,11 @@
         "en": "Cabinet selection"
       },
       "def": {
-        "hr": "Pakiranje bez papirnate podloge u kutiji, cigarete u punom kontaktu s drvetom.",
+        "hr": "Pakiranje bez papirnate podloge u kutiji, cigare u punom kontaktu s drvetom.",
         "en": "Box packing without paper lining, cigars in full contact with wood."
       },
       "body": {
-        "hr": "Cabinet selection znači da cigarete leže izravno na cedar — bez papira između. Brža razmjena arome s drvetom, drugačiji razvoj u prvom mjesecu.\n\nČesto 24 ili više u ravnom sloju. Traži stabilan humidor kod kuće.\n\nKad kupujete cabinet, planirajte gdje će cigarete odležati.",
+        "hr": "Cabinet selection znači da cigare leže izravno na cedar — bez papira između. Brža razmjena arome s drvetom, drugačiji razvoj u prvom mjesecu.\n\nČesto 24 ili više u ravnom sloju. Traži stabilan humidor kod kuće.\n\nKad kupujete cabinet, planirajte gdje će cigare odležati.",
         "en": "Cabinet selection means cigars lie directly on cedar — no paper between. Faster exchange with wood aroma, different first-month evolution.\n\nOften 24 or more in flat layer. Wants stable home humidor.\n\nWhen buying cabinet, plan where cigars will rest."
       },
       "aliases": [
@@ -784,7 +736,7 @@
         "en": "Brazilian cane-juice spirit — the national spirit and base of the caipirinha."
       },
       "body": {
-        "hr": "Cachaça dijeli sok trske s rhum agricole, ali ima brazilska pravila i vlastiti kulturni kontekst. Bijela (mlada) je travnata i svježa; odležana (ouro/gold) mekša je i složenija.\\n\\nUz cigar: mlada uz laganu/claro; odležana uz medium s pečenim i voćnim notama. Nije sinonim za melasni rum.",
+        "hr": "Cachaça dijeli sok trske s rhum agricole, ali ima brazilska pravila i vlastiti kulturni kontekst. Bijela (mlada) je travnata i svježa; odležana (ouro/gold) mekša je i složenija.\\n\\nUz cigara: mlada uz laganu/claro; odležana uz medium s pečenim i voćnim notama. Nije sinonim za melasni rum.",
         "en": "Cachaça shares cane juice with rhum agricole, but follows Brazilian rules and its own cultural frame. Unaged white is grassy and fresh; aged (ouro/gold) is softer and more complex.\\n\\nWith cigars: young with light/claro; aged with medium smoke carrying roast and fruit. Not a synonym for molasses rum."
       },
       "aliases": [
@@ -874,7 +826,7 @@
         "en": "Brief secondary aging in another cask after main maturation — port, sherry, wine finish."
       },
       "body": {
-        "hr": "Finish dodaje sloj bez cijene punog starenja — sherry finish whisky voli maduro cigar. Marketing «double barrel» nije uvijek dug finish.\n\nProvjerite koliko je vremena u finish bačvi kad je navedeno.",
+        "hr": "Finish dodaje sloj bez cijene punog starenja — sherry finish whisky voli maduro cigara. Marketing «double barrel» nije uvijek dug finish.\n\nProvjerite koliko je vremena u finish bačvi kad je navedeno.",
         "en": "Finish adds a layer without full aging cost — sherry-finish whisky loves maduro cigars. Marketing «double barrel» is not always long finish.\n\nVerify time in finish cask when stated."
       },
       "aliases": [
@@ -944,7 +896,7 @@
         "en": "Cellophane"
       },
       "def": {
-        "hr": "Providan omotač oko pojedinačne cigarete, zaštita pri transportu.",
+        "hr": "Providan omotač oko pojedinačne cigare, zaštita pri transportu.",
         "en": "Clear sleeve around an individual cigar, protection in transit."
       },
       "body": {
@@ -969,7 +921,7 @@
         "en": "Sparkling wine from France's Champagne region — traditional method, long lees aging."
       },
       "body": {
-        "hr": "«Champagne» je zaštićena regija, ne opći naziv za svaki pjenusac. Uz cigar birajte brut i starije vintage kad želite tost i orahe uz medium-full cigar.\n\nNe koristite «šampanjac» za svako pjenušavo vino u salonu.",
+        "hr": "«Champagne» je zaštićena regija, ne opći naziv za svaki pjenusac. Uz cigara birajte brut i starije vintage kad želite tost i orahe uz srednje do pune cigare.\n\nNe koristite «šampanjac» za svako pjenušavo vino u salonu.",
         "en": "«Champagne» is a protected region, not a generic name for every sparkling wine. With cigars choose brut and older vintage for toast and nuts with medium-full cigars.\n\nDo not use «Champagne» for every sparkling wine in the salon."
       },
       "aliases": [
@@ -1036,7 +988,7 @@
         "en": "A long, elegant vitola, typically around 7 inches and ring gauge 47."
       },
       "body": {
-        "hr": "Churchill je format za sporu večer — više faza okusa, više vremena za razgovor. Klasična slika duge, ravne cigarete.\n\nZahtijeva pažniju konstrukciju; loš blend ovdje se osjeća duže. Dobro napravljen churchill nagrađuje strpljenje.\n\nNa stolu ime nosi povijest, ali dim odlučuje blend, ne mit.",
+        "hr": "Churchill je format za sporu večer — više faza okusa, više vremena za razgovor. Klasična slika duge, ravne cigare.\n\nZahtijeva pažniju konstrukciju; loš blend ovdje se osjeća duže. Dobro napravljen churchill nagrađuje strpljenje.\n\nNa stolu ime nosi povijest, ali dim odlučuje blend, ne mit.",
         "en": "Churchill is a format for a slow evening — more flavour phases, more time for conversation. The classic image of a long straight cigar.\n\nIt demands careful construction; a poor blend is felt longer here. A well-made Churchill rewards patience.\n\nAt the table the name carries history, but smoke decides, not myth."
       },
       "aliases": [
@@ -1066,54 +1018,6 @@
         "connecticut-river-valley"
       ],
       "category": "cigar"
-    },
-    {
-      "id": "cigar-lounge",
-      "term": {
-        "hr": "Cigar lounge",
-        "en": "Cigar lounge"
-      },
-      "def": {
-        "hr": "Prostor namijenjen dimu — s pravilima, ventilacijom i osobljem koje poznaje ritam stola.",
-        "en": "A space built for smoke — with rules, ventilation, and staff who know table rhythm."
-      },
-      "body": {
-        "hr": "Lounge nije „bar gdje se smije pušiti“ — to je salon s rezervom i odgovornošću. Poštujte kućni red, ne dirajte tuđ humidor, i ne tretirajte osoblje kao prenos cut fee-a. Dobar lounge štiti i pušača i nepušača.",
-        "en": "A lounge is not \"a bar where smoking is allowed\" — it is a salon with reserve and responsibility. Respect house rules, do not touch another's humidor, and do not treat staff as cut-fee carriers. A good lounge protects smokers and non-smokers alike."
-      },
-      "aliases": [
-        "lounge",
-        "salon dima"
-      ],
-      "seeAlso": [
-        "house-rules-vs-lounge",
-        "salon-rules"
-      ],
-      "category": "table"
-    },
-    {
-      "id": "gift-cigar",
-      "term": {
-        "hr": "Cigar na dar",
-        "en": "Gift cigar"
-      },
-      "def": {
-        "hr": "Ponuditi cigar kao znak pažnje — ne kao test znanja primatelja.",
-        "en": "Offering a cigar as attention — not as a test of the recipient's knowledge."
-      },
-      "body": {
-        "hr": "Dar je dobrodošao kad zna tko puši, a tko ne. Ne darujte „tešku“ cigar neiskusnom gostu bez objašnjenja. Jedna cigar u travel tube-u bolja je gesta od pet u vrećici bez konteksta.",
-        "en": "A gift is welcome when you know who smokes and who does not. Do not gift a \"strong\" cigar to an inexperienced guest without context. One cigar in a travel tube is a better gesture than five in a bag without story."
-      },
-      "aliases": [
-        "gift cigar",
-        "dar"
-      ],
-      "seeAlso": [
-        "offering-choice",
-        "travel-with-cigars"
-      ],
-      "category": "table"
     },
     {
       "id": "claro",
@@ -1147,7 +1051,7 @@
         "en": "French brandy from the Cognac region, grape distillate aged in oak."
       },
       "body": {
-        "hr": "Cognac je klasičan digestif uz cigar — karamel, suho voće, tanini. VS/VSOP/XO govore o minimalnom starosti mješavine, ne jedne bačve.\n\nSlužite u snifteru, room temperature.",
+        "hr": "Cognac je klasičan digestif uz cigaru — karamel, suho voće, tanini. VS/VSOP/XO govore o minimalnom starosti mješavine, ne jedne bačve.\n\nSlužite u snifteru, room temperature.",
         "en": "Cognac is a classic cigar digestif — caramel, dried fruit, tannin. VS/VSOP/XO state minimum blend age, not one cask.\n\nServe in a snifter at room temperature."
       },
       "aliases": [
@@ -1225,30 +1129,6 @@
       ],
       "seeAlso": [],
       "category": "cigar"
-    },
-    {
-      "id": "connecticut-fino",
-      "term": {
-        "hr": "Connecticut i fino",
-        "en": "Connecticut and fino"
-      },
-      "def": {
-        "hr": "Blag dim i suho sherry — stol koji traži štednju i hladnu čašu.",
-        "en": "Mild smoke and dry sherry — a table that asks for restraint and a chilled glass."
-      },
-      "body": {
-        "hr": "Connecticut ne traži teško piće; fino sherry ne traži Habano. Zajedno grade suptilan, gotovo mediteranski ton. Ako sherry postane slatko kremasto, veza se lomi — ostanite na suhom finu ili manzanilli.",
-        "en": "Connecticut does not ask for heavy drink; fino sherry does not ask for Habano. Together they build a subtle, almost Mediterranean tone. If the sherry turns sweet and creamy, the link breaks — stay with dry fino or manzanilla."
-      },
-      "aliases": [
-        "connecticut sherry",
-        "fino"
-      ],
-      "seeAlso": [
-        "wine-with-cigar",
-        "body-match"
-      ],
-      "category": "pairing"
     },
     {
       "id": "connecticut-river-valley",
@@ -1370,7 +1250,7 @@
         "en": "Golden-brown foam on espresso — emulsion of oils and CO₂."
       },
       "body": {
-        "hr": "Crema signalizira svježu ekstrakciju — nije slatkoća nego tekstura. Uz cigar kratki espresso s dobrom kremom je elegantniji od dugog gutljaja mliječne kave.\n\nBlada crema može značiti starija kava ili lošu ekstrakciju.",
+        "hr": "Crema signalizira svježu ekstrakciju — nije slatkoća nego tekstura. Uz cigara kratki espresso s dobrom kremom je elegantniji od dugog gutljaja mliječne kave.\n\nBlada crema može značiti starija kava ili lošu ekstrakciju.",
         "en": "Crema signals fresh extraction — not sweetness but texture. With cigars a short espresso with good crema beats a long milky sip.\n\nPale crema may mean stale beans or poor extraction."
       },
       "aliases": [
@@ -1393,7 +1273,7 @@
         "en": "Fine white oil crystals on the wrapper; not mold."
       },
       "body": {
-        "hr": "Bloom (plume) su kristali prirodnih ulja iz lišća koji izlaze na površinu opne u stabilnom, hladnijem skladištenju. Brisu se lagano prstom; ispod opna je čista.\n\nNe brkati s plijesni — plume je ravnomjerna, prahasta i suha na dodir. Cigar u s bloomom je sigurna za pušenje nakon što se kristali uklone.",
+        "hr": "Bloom (plume) su kristali prirodnih ulja iz lišća koji izlaze na površinu opne u stabilnom, hladnijem skladištenju. Brisu se lagano prstom; ispod opna je čista.\n\nNe brkati s plijesni — plume je ravnomjerna, prahasta i suha na dodir. Cigara s bloomom je sigurna za pušenje nakon što se kristali uklone.",
         "en": "Bloom (plume) is crystallized natural leaf oils surfacing on the wrapper in stable, cooler storage. It wipes away lightly; the wrapper beneath is clean.\n\nDo not confuse with mold — plume is even, powdery, and dry to the touch. A bloomed cigar is safe to smoke once crystals are brushed off."
       },
       "aliases": [
@@ -1417,7 +1297,7 @@
         "en": "A sweet drink or dessert with the closing smoke — rare and deliberate."
       },
       "body": {
-        "hr": "Desert uz cigar lako postane previše. Ako idete u slatko, smanjite dim ili skratite završnicu. Čokolada i karamela mogu raditi s madurom; kremasti deserti često guše suptilniji wrapper.",
+        "hr": "Desert uz cigaru lako postane previše. Ako idete u slatko, smanjite dim ili skratite završnicu. Čokolada i karamela mogu raditi s madurom; kremasti deserti često guše suptilniji wrapper.",
         "en": "Dessert with a cigar easily becomes too much. If you go sweet, shorten the smoke or lighten the final third. Chocolate and caramel can work with maduro; creamy desserts often bury a subtler wrapper."
       },
       "aliases": [
@@ -1459,7 +1339,7 @@
         "en": "Digestif"
       },
       "def": {
-        "hr": "Piće poslije jela — brandy, amaro, herbal liqueur — zatvara večer uz cigar.",
+        "hr": "Piće poslije jela — brandy, amaro, herbal liqueur — zatvara večer uz cigaru.",
         "en": "After-dinner drink — brandy, amaro, herbal liqueur — closes the evening with a cigar."
       },
       "body": {
@@ -1480,7 +1360,7 @@
     {
       "id": "digestif-pairing",
       "term": {
-        "hr": "Digestiv uz cigar",
+        "hr": "Digestiv uz cigaru",
         "en": "Digestif pairing"
       },
       "def": {
@@ -1488,7 +1368,7 @@
         "en": "A post-meal or late-evening pour with herbal, bitter, or warm edges beside smoke."
       },
       "body": {
-        "hr": "Digestiv uz cigar nije svaki liker iz police — to su boca koje znaju stajati uz dim bez da postanu desert. Biljni gorci, blagi amari i određeni konjaci imaju mjesto; kremasti likeri rijetko.",
+        "hr": "Digestiv uz cigaru nije svaki liker iz police — to su boca koje znaju stajati uz dim bez da postanu desert. Biljni gorci, blagi amari i određeni konjaci imaju mjesto; kremasti likeri rijetko.",
         "en": "A digestif with a cigar is not every bottle on the shelf — these are pours that can stand beside smoke without becoming dessert. Herbal bitters, gentle amari, and certain brandies belong; creamy liqueurs rarely do."
       },
       "aliases": [
@@ -1500,30 +1380,6 @@
         "bitterness-in-pairing"
       ],
       "category": "pairing"
-    },
-    {
-      "id": "sharing-cutter",
-      "term": {
-        "hr": "Dijeljenje rezača",
-        "en": "Sharing a cutter"
-      },
-      "def": {
-        "hr": "Rezač je osobna alatka — dijelite je čisto i uz kratko upozorenje.",
-        "en": "A cutter is personal kit — share it cleanly and with a brief warning."
-      },
-      "body": {
-        "hr": "Prije nego što date rezač, obrišite ga ili ponudite novi. Ne režite tuđu cigar bez pitanja — to je intimniji gest nego što izgleda. U loungeu koristite kućni rezač ako postoji.",
-        "en": "Before handing a cutter, wipe it or offer a fresh one. Do not cut another's cigar unasked — it is a more intimate gesture than it looks. In a lounge, use the house cutter when available."
-      },
-      "aliases": [
-        "cutter",
-        "rezač"
-      ],
-      "seeAlso": [
-        "ask-before-lighting",
-        "gift-cigar"
-      ],
-      "category": "table"
     },
     {
       "id": "mezcal-smoky",
@@ -1550,61 +1406,13 @@
       "category": "drink"
     },
     {
-      "id": "age-gate-18",
-      "term": {
-        "hr": "Dobna granica 18+",
-        "en": "Age gate (18+)"
-      },
-      "def": {
-        "hr": "Pušenje i prodaja uz zakonsku dob — u aplikaciji i u stvarnom salonu bez iznimke.",
-        "en": "Smoking and sales at legal age — in the app and in real lounges without exception."
-      },
-      "body": {
-        "hr": "Osamnaest nije dekoracija u sučelju — to je granica odgovornosti. Domaćin ne nudi cigar maloljetniku „samo da proba“. Aplikacija i salon dijele istu poruku: bez drame, bez iznimke.",
-        "en": "Eighteen is not UI decoration — it is a line of responsibility. A host does not offer a cigar to a minor \"just to try.\" App and lounge share the same message: no drama, no exception."
-      },
-      "aliases": [
-        "18+",
-        "age gate"
-      ],
-      "seeAlso": [
-        "salon-rules",
-        "host-at-table"
-      ],
-      "category": "table"
-    },
-    {
-      "id": "host-at-table",
-      "term": {
-        "hr": "Domaćin stola",
-        "en": "Host at the table"
-      },
-      "def": {
-        "hr": "Osoba koja postavlja tempo, izbor i granice večeri — bez monologa.",
-        "en": "The person who sets pace, choice, and boundaries for the evening — without monologue."
-      },
-      "body": {
-        "hr": "Domaćin ne mora imati najskuplji humidor; mora imati pažnju. Nudi izbor, ne naređuje. Vidi tko je umoran, tko želi tiši kut, tko treba vodu. Gost se osjeća sigurno kad domaćin ne natječe se s dimom.",
-        "en": "The host need not own the most expensive humidor; they must pay attention. They offer choice, not orders. They see who is tired, who wants a quiet corner, who needs water. A guest feels safe when the host is not competing with the smoke."
-      },
-      "aliases": [
-        "host",
-        "domaćin"
-      ],
-      "seeAlso": [
-        "guest-at-table",
-        "offering-choice"
-      ],
-      "category": "table"
-    },
-    {
       "id": "dominican-republic",
       "term": {
         "hr": "Dominikanska Republika",
         "en": "Dominican Republic"
       },
       "def": {
-        "hr": "Država s jakom tradicijom blažih premium cigar u.",
+        "hr": "Država s jakom tradicijom blažih premium cigaru.",
         "en": "Country with strong tradition of milder premium cigars."
       },
       "body": {
@@ -1626,11 +1434,11 @@
         "en": "Long filler"
       },
       "def": {
-        "hr": "Punjenje od cijelih dužinskih listova, tipično za premium ručno motane cigarete.",
+        "hr": "Punjenje od cijelih dužinskih listova, tipično za premium ručno motane cigare.",
         "en": "Filler made from whole lengthwise leaf, typical of premium hand-rolled cigars."
       },
       "body": {
-        "hr": "Long filler znači da su listovi cijeli, a ne usitnjeni komadići. Dim je čišći, razvoj okusa slojevitiji, a pepel obično drži liniju duže.\n\nTo ne jamči savršenu cigaretu — loš blend ostaje loš — ali je temelj ozbiljne konstrukcije.\n\nKod razgovora o kvaliteti, long filler razlikuje premium cigaretu od jeftinijih kratkih punjenja.",
+        "hr": "Long filler znači da su listovi cijeli, a ne usitnjeni komadići. Dim je čišći, razvoj okusa slojevitiji, a pepeo obično drži liniju duže.\n\nTo ne jamči savršenu cigaru — loš blend ostaje loš — ali je temelj ozbiljne konstrukcije.\n\nKod razgovora o kvaliteti, long filler razlikuje premium cigaru od jeftinijih kratkih punjenja.",
         "en": "Long filler means whole leaves, not chopped scraps. Smoke is cleaner, flavour development more layered, and ash often holds its line longer.\n\nIt does not guarantee a perfect cigar — a poor blend remains poor — but it is the foundation of serious construction.\n\nIn quality talk, long filler separates premium cigars from cheaper short-filler products."
       },
       "aliases": [
@@ -1651,7 +1459,7 @@
         "en": "Lasioderma serricorne; a humidor pest."
       },
       "body": {
-        "hr": "Duhanova bubica (cigaretni plamenac) u larvnom stadiju buši minute rupe kroz cigar u i lišće. Toplina iznad otprilike 18 °C potiče razvoj.\n\nSumnjate li bušotine, stavite cigare u zamrzivač nekoliko dana (u zatvorenom pakiranju), odmrznuti polako, zatim očistite humidor. Prevencija: stabilna niža temperatura i RH.",
+        "hr": "Duhanova bubica (cigaretni plamenac) u larvnom stadiju buši minute rupe kroz cigaru i lišće. Toplina iznad otprilike 18 °C potiče razvoj.\n\nSumnjate li bušotine, stavite cigare u zamrzivač nekoliko dana (u zatvorenom pakiranju), odmrznuti polako, zatim očistite humidor. Prevencija: stabilna niža temperatura i RH.",
         "en": "The tobacco beetle (Lasioderma serricorne) larvae drill pinholes through cigars and leaf. Warmth above roughly 18 °C encourages hatch.\n\nIf you suspect pinholes, freeze cigars for several days (sealed), thaw slowly, then clean the humidor. Prevention: stable cooler temperature and RH."
       },
       "aliases": [
@@ -1671,7 +1479,7 @@
         "en": "Length"
       },
       "def": {
-        "hr": "Mjerena duljina cigarete od glave do stope, obično u inčima.",
+        "hr": "Mjerena duljina cigare od glave do stope, obično u inčima.",
         "en": "Measured cigar length from head to foot, usually in inches."
       },
       "body": {
@@ -1684,30 +1492,6 @@
       ],
       "seeAlso": [],
       "category": "cigar"
-    },
-    {
-      "id": "session-length",
-      "term": {
-        "hr": "Duljina večeri",
-        "en": "Session length"
-      },
-      "def": {
-        "hr": "Koliko dugo stol drži dim i piće u istom ritmu — plan, ne slučajnost.",
-        "en": "How long the table keeps smoke and drink in the same rhythm — planned, not accidental."
-      },
-      "body": {
-        "hr": "Duga vitola traži dulju večer; kratka traži odluku. Aperitiv, glavno piće i digestiv imaju smisla samo ako imate vremena za trećine. Bolje skratiti izbor nego žuriti kraj.",
-        "en": "A long vitola asks for a long evening; a short one asks for decision. Aperitif, main pour, and digestif only make sense if you have time for thirds. Better to shorten the choice than rush the end."
-      },
-      "aliases": [
-        "session",
-        "večer"
-      ],
-      "seeAlso": [
-        "thirds-pairing",
-        "palate-fatigue"
-      ],
-      "category": "pairing"
     },
     {
       "id": "eau-de-vie",
@@ -1785,7 +1569,7 @@
         "en": "Pressure-brewed concentrated coffee — small volume, intense flavour, crema."
       },
       "body": {
-        "hr": "Espresso uz cigar poslije jela je klasičan europski ritual — gorčina kave balansira slatkoću maduro. Izbjegavajte previše gorku ligu + very dark roast.\n\nRistretto je kraći, koncentriraniji — vidi ristretto.",
+        "hr": "Espresso uz cigaru poslije jela je klasičan europski ritual — gorčina kave balansira slatkoću maduro. Izbjegavajte previše gorku ligu + very dark roast.\n\nRistretto je kraći, koncentriraniji — vidi ristretto.",
         "en": "Espresso with a cigar after a meal is a classic European ritual — coffee bitterness balances maduro sweetness. Avoid very bitter ligero + very dark roast.\n\nRistretto is shorter, more concentrated — see ristretto."
       },
       "aliases": [
@@ -1797,30 +1581,6 @@
         "milk-coffee"
       ],
       "category": "drink"
-    },
-    {
-      "id": "espresso-maduro",
-      "term": {
-        "hr": "Espresso i maduro",
-        "en": "Espresso and maduro"
-      },
-      "def": {
-        "hr": "Klasičan stol: kratka kava i pun, tamniji wrapper — gorak susret koji traži mjeru.",
-        "en": "A classic table: short coffee and full, darker wrapper — a bitter meeting that needs measure."
-      },
-      "body": {
-        "hr": "Espresso ne „pojačava“ maduro — on ga susreće na istom rubu. Jedna šalica dovoljna je; druga lako podigne intenzitet iznad ugode. Ako dodajete šećer, znajte da pomičete stol prema desertu.",
-        "en": "Espresso does not \"boost\" maduro — it meets it on the same edge. One cup is enough; a second easily raises intensity past comfort. If you add sugar, know you are shifting the table toward dessert."
-      },
-      "aliases": [
-        "espresso maduro",
-        "kava maduro"
-      ],
-      "seeAlso": [
-        "coffee-pairing",
-        "dessert-pairing"
-      ],
-      "category": "pairing"
     },
     {
       "id": "esteli",
@@ -1989,7 +1749,7 @@
         "en": "The driest sherry, biologically aged under flor yeast — salty, almondy."
       },
       "body": {
-        "hr": "Fino i manzanilla (fino iz Sanlúcara) su aperitivni, ali rade uz laganu cigar s mineralnošću. Flor daje karakter koji se ne miješa s portom.\n\nOtvorena boca kratko traje — pijte svježe.",
+        "hr": "Fino i manzanilla (fino iz Sanlúcara) su aperitivni, ali rade uz laganu cigaru s mineralnošću. Flor daje karakter koji se ne miješa s portom.\n\nOtvorena boca kratko traje — pijte svježe.",
         "en": "Fino and manzanilla (fino from Sanlúcar) are aperitif yet suit light cigars with minerality. Flor gives character unlike port.\n\nOpen bottles fade fast — drink fresh."
       },
       "aliases": [
@@ -2053,39 +1813,6 @@
       "category": "cigar"
     },
     {
-      "id": "extinguish-or-leave",
-      "term": {
-        "hr": "Gasiti ili ostaviti",
-        "en": "Extinguish or leave"
-      },
-      "def": {
-        "hr": "Kad cigar stvarno završava — gasiti ili ostaviti da ugine bez gušenja.",
-        "en": "When the cigar truly ends — extinguish or let it die without smothering."
-      },
-      "body": {
-        "hr": "U loungeu često se ostavlja kratko da ugine sama — bez gnječenja u pepeljari. Kod kuće pitajte domaćina. Gušenje stvara neugodan miris i pokvarava zadnji dojam večeri.",
-        "en": "In lounges it is often left briefly to die on its own — without crushing in the tray. At home, ask the host. Smothering creates bad odor and spoils the evening's last impression."
-      },
-      "aliases": [
-        "extinguish",
-        "gasiti"
-      ],
-      "seeAlso": [
-        "nub-disposal",
-        "ashtray-etiquette"
-      ],
-      "category": "table",
-      "doNotConfuse": [
-        {
-          "with": "nub-disposal",
-          "note": {
-            "hr": "Gasiti i baciti ostatak nisu isti trenutak.",
-            "en": "Extinguishing and disposing the nub are not the same moment."
-          }
-        }
-      ]
-    },
-    {
       "id": "genever",
       "term": {
         "hr": "Genever (jenever)",
@@ -2142,7 +1869,7 @@
         "en": "Head"
       },
       "def": {
-        "hr": "Zatvoreni kraj cigarete koji se reže prije pušenja.",
+        "hr": "Zatvoreni kraj cigare koji se reže prije pušenja.",
         "en": "The closed end of the cigar that is cut before smoking."
       },
       "body": {
@@ -2188,11 +1915,11 @@
         "en": "Golf stick"
       },
       "def": {
-        "hr": "Sleng za blažu, laku cigar u u casual kontekstu.",
+        "hr": "Sleng za blažu, laku cigaru u casual kontekstu.",
         "en": "Slang for a mild, easy cigar in casual settings."
       },
       "body": {
-        "hr": "Golf stick kolokvijalno označava blažu, manje zahtjevnu cigar u — često manji ring gauge, manje nikotina, pogodna za teren ili društvo koje ne traži punu snagu.\n\nNije formalni klasifikacijski termin; služi kao opis tempa i jačine, ne porijekla.",
+        "hr": "Golf stick kolokvijalno označava blažu, manje zahtjevnu cigaru — često manji ring gauge, manje nikotina, pogodna za teren ili društvo koje ne traži punu snagu.\n\nNije formalni klasifikacijski termin; služi kao opis tempa i jačine, ne porijekla.",
         "en": "Golf stick colloquially marks a milder, less demanding cigar — often smaller ring gauge, lower nicotine, suited to the course or company not seeking full strength.\n\nNot a formal classification term; it describes pace and strength, not origin."
       },
       "aliases": [],
@@ -2253,7 +1980,7 @@
         "en": "Bitterness in pairing"
       },
       "def": {
-        "hr": "Gorki rub pića koji može očistiti ili sukobiti tanjur nakon dima.",
+        "hr": "Gorki rub pića koji može očistiti ili sukobiti nepce nakon dima.",
         "en": "The bitter edge of a drink that may cleanse or clash with the palate after smoke."
       },
       "body": {
@@ -2266,58 +1993,9 @@
       ],
       "seeAlso": [
         "sweetness-in-pairing",
-        "palate-reset",
         "digestif-pairing"
       ],
       "category": "pairing"
-    },
-    {
-      "id": "gospodin-etiquette",
-      "term": {
-        "hr": "Gospodin stola",
-        "en": "Gospodin at the table"
-      },
-      "def": {
-        "hr": "Inclusive figura pristojnosti — pažnja prema drugima, ne rodní stereotip.",
-        "en": "An inclusive figure of courtesy — attention to others, not a gender stereotype."
-      },
-      "body": {
-        "hr": "„Gospodin“ ovdje znači onaj tko drži obećanja stola: nudi, sluša, ne ponižava. Nije ekskluzivan naslov; to je standard ponašanja koji svatko može nositi. Gospodin ne dokazuje status dimom.",
-        "en": "\"Gospodin\" here means one who keeps the table's promises: offers, listens, does not belittle. It is not an exclusive title; it is a standard anyone can carry. A gospodin does not prove status with smoke."
-      },
-      "aliases": [
-        "gospodin",
-        "gentleman"
-      ],
-      "seeAlso": [
-        "host-at-table",
-        "salon-rules"
-      ],
-      "category": "table"
-    },
-    {
-      "id": "guest-at-table",
-      "term": {
-        "hr": "Gost stola",
-        "en": "Guest at the table"
-      },
-      "def": {
-        "hr": "Onaj tko je pozvan — s pravom odbiti, s dužnošću poštovati prostor i druge.",
-        "en": "One who is invited — with the right to refuse, with duty to respect space and others."
-      },
-      "body": {
-        "hr": "Gost ne mora pušiti da bi bio prisutan. Ako puši, ne educira nevoljne slušatelje. Ako ne puši, ne moralizira. Zahvalnost na izboru i odbijanje bez drame jednako su znak dobrog stola.",
-        "en": "A guest need not smoke to belong. If they smoke, they do not lecture unwilling listeners. If they do not smoke, they do not moralize. Gratitude for choice and refusal without drama are equally signs of a good table."
-      },
-      "aliases": [
-        "guest",
-        "gost"
-      ],
-      "seeAlso": [
-        "host-at-table",
-        "refusing-gracefully"
-      ],
-      "category": "table"
     },
     {
       "id": "grappa",
@@ -2330,7 +2008,7 @@
         "en": "Italian pomace distillate (skins and seeds) — not wine brandy."
       },
       "body": {
-        "hr": "Grappa je digestif preciznosti: aroma sorte grožđa (monovitigno) ili mješavine. Većina je bistra i svježe flaširana; odležane (riserva) dobiju boju i mekoću bačve.\\n\\nUz cigar rijetko prvi izbor — osim lagane večeri s claro ili kao kratki završetak nakon jela. U katalogu brandy stil «grappa».",
+        "hr": "Grappa je digestif preciznosti: aroma sorte grožđa (monovitigno) ili mješavine. Većina je bistra i svježe flaširana; odležane (riserva) dobiju boju i mekoću bačve.\\n\\nUz cigara rijetko prvi izbor — osim lagane večeri s claro ili kao kratki završetak nakon jela. U katalogu brandy stil «grappa».",
         "en": "Grappa is a precision digestif: variety aroma (monovitigno) or a blend. Most is clear and bottled fresh; aged (riserva) gains colour and cask softness.\\n\\nWith cigars rarely a first choice — except a light claro evening or a short close after a meal. In the catalog under brandy style «grappa»."
       },
       "aliases": [
@@ -2454,7 +2132,7 @@
         "en": "An instrument for measuring relative humidity."
       },
       "body": {
-        "hr": "Higrometar u humidoru često laže iz kutije — kalibracija solnim testom ili Boveda kalibracijskim kitom vrijedi truda. Digitalni modeli su praktični; analogni estetski.\n\nBez pouzdanog očitanja ne znate je li problem u cigar u ili u uređaju. Provjeravajte mjesečno u aktivno korištenim kutijama.",
+        "hr": "Higrometar u humidoru često laže iz kutije — kalibracija solnim testom ili Boveda kalibracijskim kitom vrijedi truda. Digitalni modeli su praktični; analogni estetski.\n\nBez pouzdanog očitanja ne znate je li problem u cigaru ili u uređaju. Provjeravajte mjesečno u aktivno korištenim kutijama.",
         "en": "Humidor hygrometers often lie out of the box — calibration with a salt test or Boveda kit is worth the effort. Digital units are practical; analog ones aesthetic.\n\nWithout reliable readings you cannot tell if the problem is the cigar or the device. Check monthly in active boxes."
       },
       "aliases": [],
@@ -2476,7 +2154,7 @@
         "en": "An airflow test taken before lighting."
       },
       "body": {
-        "hr": "Hladno povlačenje radi se prije paljenja: lagano povucite kroz cigar u kako biste procijenili otpor punjenja. Služi kao rani znak uske ili labave konstrukcije.\n\nNe treba biti dramatično; blagi, mirni udisaj dovoljan je. Ako je otpor neobičan, imajte na umu da se ponašanje može promijeniti nakon paljenja.",
+        "hr": "Hladno povlačenje radi se prije paljenja: lagano povucite kroz cigaru kako biste procijenili otpor punjenja. Služi kao rani znak uske ili labave konstrukcije.\n\nNe treba biti dramatično; blagi, mirni udisaj dovoljan je. Ako je otpor neobičan, imajte na umu da se ponašanje može promijeniti nakon paljenja.",
         "en": "A cold draw is taken before lighting: gently pull through the cigar to judge filler resistance. It serves as an early sign of tight or loose construction.\n\nIt need not be dramatic; a light, calm inhale is enough. If resistance feels unusual, remember behavior may change once lit."
       },
       "aliases": [],
@@ -2509,30 +2187,6 @@
       "category": "cigar"
     },
     {
-      "id": "food-with-cigar",
-      "term": {
-        "hr": "Hrana uz cigar",
-        "en": "Food with cigar"
-      },
-      "def": {
-        "hr": "Lagani zalogaji ili bez hrane — teška jela rijetko slušaju dim.",
-        "en": "Light bites or none — heavy meals rarely listen to smoke."
-      },
-      "body": {
-        "hr": "Hrana na stolu uz cigar ne smije biti glavni događaj. Soleni krekers, orašasti, tamna čokolada — u malim porcijama. Pun ručak prije večeri pomiče cigar u digestif zonu; to je plan, ne greška.",
-        "en": "Food at the cigar table should not be the main event. Salty crackers, nuts, dark chocolate — in small portions. A full lunch before the evening pushes the cigar into digestif territory; that is planning, not error."
-      },
-      "aliases": [
-        "food",
-        "hrana"
-      ],
-      "seeAlso": [
-        "digestif-pairing",
-        "session-length"
-      ],
-      "category": "table"
-    },
-    {
       "id": "wine-oak",
       "term": {
         "hr": "Hrast (vino)",
@@ -2543,7 +2197,7 @@
         "en": "Influence of oak casks — vanilla, smoke, tannin in wine."
       },
       "body": {
-        "hr": "Oak u vinu most je prema cedar i pečenju u cigari. Previše novog hrasta («oak bomb») uz mladu punu cigar može biti previše drva.\n\nOloroso i barrique-stareni crveni imaju različit oak karakter.",
+        "hr": "Oak u vinu most je prema cedar i pečenju u cigari. Previše novog hrasta («oak bomb») uz mladu punu cigara može biti previše drva.\n\nOloroso i barrique-stareni crveni imaju različit oak karakter.",
         "en": "Oak in wine bridges cedar and roast in cigars. Too much new oak («oak bomb») with young full cigars can be all wood.\n\nOloroso and barrique-aged reds differ in oak character."
       },
       "aliases": [
@@ -2590,7 +2244,7 @@
         "en": "Whiskey from Ireland — often triple-distilled, smoother and fruitier."
       },
       "body": {
-        "hr": "Irish whiskey je pristupačan ulaz u svijet whiskeyja uz cigar. Lagani single pot still varijante rade uz connecticut ili claro wrapper.\n\nPeated irski izuzeci postoje, ali nisu norma.",
+        "hr": "Irish whiskey je pristupačan ulaz u svijet whiskeyja uz cigaru. Lagani single pot still varijante rade uz connecticut ili claro wrapper.\n\nPeated irski izuzeci postoje, ali nisu norma.",
         "en": "Irish whiskey is an approachable entry with cigars. Light single pot still bottlings suit Connecticut or claro wrappers.\n\nPeated Irish exceptions exist but are not the norm."
       },
       "aliases": [
@@ -2682,7 +2336,7 @@
         "en": "Whisky made in Japan — often precise, elegant, inspired by Scotch tradition."
       },
       "body": {
-        "hr": "Japanese whisky naglašava finu ravnotežu i umjereni dim. Uz cigar odličan je za večere gdje ne želite dominaciju dima ni alkohola.\n\nPravila označavanja starosti mijenjala su se — provjerite godinu na etiketi.",
+        "hr": "Japanese whisky naglašava finu ravnotežu i umjereni dim. Uz cigara odličan je za večere gdje ne želite dominaciju dima ni alkohola.\n\nPravila označavanja starosti mijenjala su se — provjerite godinu na etiketi.",
         "en": "Japanese whisky emphasises fine balance and restrained smoke. With cigars it suits evenings where neither smoke nor alcohol should dominate.\n\nAge labelling rules have changed — check the bottle date."
       },
       "aliases": [
@@ -2739,7 +2393,7 @@
         "en": "The defining aromatic berry of gin — resin, pine, clarity."
       },
       "body": {
-        "hr": "Juniper je most prema cedar i pinu u cigari — zato gin ponekad radi tamo gdje vodka ne. Previše junipera («Christmas tree») može dominirati laganu cigar.\n\nBez junipera nema gina po EU definiciji.",
+        "hr": "Juniper je most prema cedar i pinu u cigari — zato gin ponekad radi tamo gdje vodka ne. Previše junipera («Christmas tree») može dominirati laganu cigara.\n\nBez junipera nema gina po EU definiciji.",
         "en": "Juniper bridges cedar and pine in cigars — why gin sometimes works where vodka does not. Too much juniper («Christmas tree») can dominate light cigars.\n\nWithout juniper there is no gin under EU definition."
       },
       "aliases": [
@@ -2849,7 +2503,7 @@
     {
       "id": "coffee-pairing",
       "term": {
-        "hr": "Kava uz cigar",
+        "hr": "Kava uz cigaru",
         "en": "Coffee pairing"
       },
       "def": {
@@ -2857,7 +2511,7 @@
         "en": "Espresso or filter coffee as companion to smoke — a concentrate that demands measure."
       },
       "body": {
-        "hr": "Kava i dim dijele gorak rub; zato dobro paze kad je cigar pun i kada je kava kratka. Espresso s madurom je klasičan stol; duga filter kava bolje ide uz blaži dim. Šećer u kavi mijenja igru — neka bude svjestan izbor.",
+        "hr": "Kava i dim dijele gorak rub; zato dobro paze kad je cigara pun i kada je kava kratka. Espresso s madurom je klasičan stol; duga filter kava bolje ide uz blaži dim. Šećer u kavi mijenja igru — neka bude svjestan izbor.",
         "en": "Coffee and smoke share a bitter edge; that is why they work when the cigar is full and the coffee is short. Espresso with maduro is a classic table; long filter coffee suits milder smoke. Sugar in coffee changes the game — make it a conscious choice."
       },
       "aliases": [
@@ -2865,7 +2519,6 @@
         "kava"
       ],
       "seeAlso": [
-        "espresso-maduro",
         "bitterness-in-pairing"
       ],
       "category": "pairing"
@@ -2901,7 +2554,7 @@
         "en": "Cocktail bridge"
       },
       "def": {
-        "hr": "Kratki, namjerni koktel koji povezuje cigar i jače piće bez punog volumena alkohola.",
+        "hr": "Kratki, namjerni koktel koji povezuje cigara i jače piće bez punog volumena alkohola.",
         "en": "A short, deliberate cocktail linking cigar and stronger pour without full alcohol volume."
       },
       "body": {
@@ -2913,8 +2566,7 @@
         "koktel most"
       ],
       "seeAlso": [
-        "bridge-pairing",
-        "neat-vs-mixed"
+        "bridge-pairing"
       ],
       "category": "pairing"
     },
@@ -2952,7 +2604,7 @@
         "en": "Deliberately opposing smoke and drink to highlight different edges of flavor."
       },
       "body": {
-        "hr": "Kontrast nije nesloga. Slatko uz gorak dim, hladno uz topli pepel — to su odluke koje budi pažnju, ne one koje guše. Kontrast traži mjeru: jedan naglasak dovoljan je; dva suprotna naglaska istovremeno postaju kaos.",
+        "hr": "Kontrast nije nesloga. Slatko uz gorak dim, hladno uz topli pepeo — to su odluke koje budi pažnju, ne one koje guše. Kontrast traži mjeru: jedan naglasak dovoljan je; dva suprotna naglaska istovremeno postaju kaos.",
         "en": "Contrast is not discord. Sweet against bitter smoke, cold against warm ash — these are choices that wake the palate, not choices that crush it. Contrast needs measure: one accent is enough; two opposing accents at once become noise."
       },
       "aliases": [
@@ -2976,7 +2628,7 @@
         "en": "A gentle flame correction along the burn edge."
       },
       "body": {
-        "hr": "Touch-up je diskretna korekcija: plamen samo dotakne stranu koja zaostaje, bez pečenja cijele opne. Cilj je izravnati liniju, ne prepeći cigar u.\n\nKoristite ga štedljivo; prečesta korekcija maskira lošu konstrukciju. Pri stolu se radi nenametljivo, bez dramatizacije.",
+        "hr": "Touch-up je diskretna korekcija: plamen samo dotakne stranu koja zaostaje, bez pečenja cijele opne. Cilj je izravnati liniju, ne prepeći cigaru.\n\nKoristite ga štedljivo; prečesta korekcija maskira lošu konstrukciju. Pri stolu se radi nenametljivo, bez dramatizacije.",
         "en": "A touch-up is a discreet correction: the flame only kisses the lagging side without roasting the whole wrapper. The goal is to level the line, not re-char the cigar.\n\nUse it sparingly; constant correction hides poor construction. At the table, do it quietly, without ceremony."
       },
       "aliases": [
@@ -2996,11 +2648,11 @@
         "en": "Coffin"
       },
       "def": {
-        "hr": "Drvena kutijica za jednu cigaretu, premium pakiranje.",
+        "hr": "Drvena kutijica za jednu cigaru, premium pakiranje.",
         "en": "Wooden box for a single cigar, premium packaging."
       },
       "body": {
-        "hr": "Coffin je pojedinačna drvena kutija — često za limitirane ili reprezentativne cigarete. Zaštita i ceremonijal.\n\nNije za dugo skladištenje bez humidora; drvo alone ne drži RH. Cigaretu izvucite u normalne uvjete.\n\nNa stolu coffin signalizira poseban trenutak, ne svakodnevni dim.",
+        "hr": "Coffin je pojedinačna drvena kutija — često za limitirane ili reprezentativne cigare. Zaštita i ceremonijal.\n\nNije za dugo skladištenje bez humidora; drvo alone ne drži RH. Cigaretu izvucite u normalne uvjete.\n\nNa stolu coffin signalizira poseban trenutak, ne svakodnevni dim.",
         "en": "Coffin is a single wooden box — often for limited or showcase cigars. Protection and ceremony.\n\nNot for long storage without humidor; wood alone does not hold RH. Move cigar to normal conditions.\n\nAt the table a coffin signals a special moment, not everyday smoke."
       },
       "aliases": [
@@ -3021,7 +2673,7 @@
         "en": "Filler made from chopped tobacco pieces, more common in inexpensive or machine-made formats."
       },
       "body": {
-        "hr": "Short filler koristi rezanice, otpad ili sitnije komade. Dim može biti okusit, ali često kraći, pepel labaviji, a gorenje manje predvidivo.\n\nNije nužno loše — neki formati namjerno koriste kratko punjenje — ali nije isti doživljaj kao long filler.\n\nNa stolu ga spominjite bez snobizma: radi se o konstrukciji, ne o moralnoj ocjeni.",
+        "hr": "Short filler koristi rezanice, otpad ili sitnije komade. Dim može biti okusit, ali često kraći, pepeo labaviji, a gorenje manje predvidivo.\n\nNije nužno loše — neki formati namjerno koriste kratko punjenje — ali nije isti doživljaj kao long filler.\n\nNa stolu ga spominjite bez snobizma: radi se o konstrukciji, ne o moralnoj ocjeni.",
         "en": "Short filler uses cuttings, scraps, or smaller pieces. Smoke can taste fine but is often shorter, ash less stable, and burn less predictable.\n\nIt is not necessarily bad — some formats use it by design — but it is not the same experience as long filler.\n\nMention it at the table without snobbery: it is about construction, not moral judgment."
       },
       "aliases": [
@@ -3042,7 +2694,7 @@
         "en": "Cuban tobacco origin; Habano as protected term."
       },
       "body": {
-        "hr": "Kuba ostaje referenca za tradicionalnu konstrukciju i profil — Vuelta Abajo, Partido, Pinar del Río. Habano označava kubanski duhan i proizvode prema kubanskom sustavu, ne svaku cigar u općenito.\n\nVan Kube Cuban seed ili Habano style opisuju utjecaj, ne porijeklo. Poštujte embargoe i autentičnost pri kupnji.",
+        "hr": "Kuba ostaje referenca za tradicionalnu konstrukciju i profil — Vuelta Abajo, Partido, Pinar del Río. Habano označava kubanski duhan i proizvode prema kubanskom sustavu, ne svaku cigaru općenito.\n\nVan Kube Cuban seed ili Habano style opisuju utjecaj, ne porijeklo. Poštujte embargoe i autentičnost pri kupnji.",
         "en": "Cuba remains reference for traditional construction and profile — Vuelta Abajo, Partido, Pinar del Río. Habano marks Cuban tobacco and products under the Cuban system, not any cigar generically.\n\nOutside Cuba, Cuban seed or Habano style describe influence, not origin. Respect embargoes and authenticity when buying."
       },
       "aliases": [
@@ -3077,63 +2729,6 @@
       ],
       "seeAlso": [],
       "category": "cigar"
-    },
-    {
-      "id": "house-humidor",
-      "term": {
-        "hr": "Kućni humidor",
-        "en": "House humidor"
-      },
-      "def": {
-        "hr": "Humidor domaćina ili loungea — gledati može, dirati ne bez poziva.",
-        "en": "The host's or lounge's humidor — look if you must, touch only when invited."
-      },
-      "body": {
-        "hr": "Kućni humidor nije degustacijska polica u trgovini. Ne otvarate ga sami „da vidite“. Domaćin nudi; gost prima ili odbija. Dirati bez poziva je kao otvaranje tuđe ormara.",
-        "en": "A house humidor is not a shop tasting shelf. Do not open it yourself \"to see.\" The host offers; the guest accepts or declines. Touching uninvited is like opening someone else's wardrobe."
-      },
-      "aliases": [
-        "humidor",
-        "humidor kuće"
-      ],
-      "seeAlso": [
-        "house-rules-vs-lounge",
-        "gift-cigar"
-      ],
-      "category": "table"
-    },
-    {
-      "id": "house-rules-vs-lounge",
-      "term": {
-        "hr": "Kućni red naspram loungea",
-        "en": "House rules vs public lounge"
-      },
-      "def": {
-        "hr": "Dva konteksta — privatni stol kod domaćina i javni salon imaju različite granice.",
-        "en": "Two contexts — a private host table and a public lounge carry different boundaries."
-      },
-      "body": {
-        "hr": "Kod domaćina vrijedi njegov humidor i njegov ritam. U loungeu vrijedi cut fee i osoblje. Ne prenosite naviku „dirati sve“ iz privatnog stola u javni prostor.",
-        "en": "At a host's home, their humidor and rhythm rule. In a lounge, cut fee and staff rule. Do not carry the habit of \"touching everything\" from a private table into a public room."
-      },
-      "aliases": [
-        "house rules",
-        "kućni red"
-      ],
-      "seeAlso": [
-        "salon-rules",
-        "house-humidor"
-      ],
-      "category": "table",
-      "doNotConfuse": [
-        {
-          "with": "salon-rules",
-          "note": {
-            "hr": "Kuća gosta i javni salon imaju različite posljedice za isti gest.",
-            "en": "A guest's home and a public lounge have different consequences for the same gesture."
-          }
-        }
-      ]
     },
     {
       "id": "loose-draw",
@@ -3191,7 +2786,7 @@
         "en": "Leaf from the upper primings, the strongest and fullest, often giving power and depth to the blend."
       },
       "body": {
-        "hr": "Ligero raste visoko na stabljici, tamo gdje je sunce najintenzivnije. List je deblji, oleozniji i sporije sazrijeva.\n\nU punjenju ligero donosi snagu, zemljanost i dug završetak. Previše ga može učiniti dim teškim; u maloj mjeri daje strukturu.\n\nNa stolu ga spominjite kad cigaretu osjećate kao „punu” i sporo otkrivenu — to je često ligero u akciji.",
+        "hr": "Ligero raste visoko na stabljici, tamo gdje je sunce najintenzivnije. List je deblji, oleozniji i sporije sazrijeva.\n\nU punjenju ligero donosi snagu, zemljanost i dug završetak. Previše ga može učiniti dim teškim; u maloj mjeri daje strukturu.\n\nNa stolu ga spominjite kad cigaru osjećate kao „punu” i sporo otkrivenu — to je često ligero u akciji.",
         "en": "Ligero grows high on the stalk, where sunlight is most intense. The leaf is thicker, oilier, and slower to mature.\n\nIn the filler ligero brings strength, earthiness, and a long finish. Too much can make the smoke heavy; in modest amounts it gives structure.\n\nAt the table mention it when a cigar feels full and slowly unfolding — that is often ligero at work."
       },
       "aliases": [
@@ -3204,30 +2799,6 @@
       "category": "cigar"
     },
     {
-      "id": "non-smoker-courtesy",
-      "term": {
-        "hr": "Ljubaznost prema nepušaču",
-        "en": "Non-smoker courtesy"
-      },
-      "def": {
-        "hr": "Prostor, zrak i pažnja prema onima koji ne puše — bez izvinjavanja koje traje predugo.",
-        "en": "Space, air, and attention for those who do not smoke — without endless apology."
-      },
-      "body": {
-        "hr": "Nepušač na stolu nije smetnja — to je gost kojeg treba uključiti. Smjestite dim od strane, provjerite ventilaciju, ne forsirajte „probaj“. Kratka pažnja bolja je od desetominutnog govora o zdravlju.",
-        "en": "A non-smoker at the table is not a problem — they are a guest to include. Place smoke aside, check ventilation, do not force \"just try.\" Brief care beats a ten-minute speech about health."
-      },
-      "aliases": [
-        "non-smoker",
-        "nepušač"
-      ],
-      "seeAlso": [
-        "ventilation",
-        "terrace-vs-indoor"
-      ],
-      "category": "table"
-    },
-    {
       "id": "gin-london-dry",
       "term": {
         "hr": "London dry gin",
@@ -3238,7 +2809,7 @@
         "en": "Gin style with no added sweetness after distillation — juniper forward, dry profile."
       },
       "body": {
-        "hr": "London dry je klasična baza G&T-a uz cigar u ljetnoj vrućini — tonic smanjuje ABV percipiranje. Sušina voli cedar i earth u cigari.\n\n«London dry» ne znači da je gin napravljen u Londonu.",
+        "hr": "London dry je klasična baza G&T-a uz cigaru ljetnoj vrućini — tonic smanjuje ABV percipiranje. Sušina voli cedar i earth u cigari.\n\n«London dry» ne znači da je gin napravljen u Londonu.",
         "en": "London dry is the classic G&T base with cigars in summer heat — tonic lowers perceived ABV. Dryness loves cedar and earth in cigars.\n\n«London dry» does not mean the gin was made in London."
       },
       "aliases": [
@@ -3264,7 +2835,7 @@
         "en": "Fortified wine from Madeira — deliberately oxidative and heat-aged."
       },
       "body": {
-        "hr": "Madeira je gotovo neuništiva i kompleksna — karamel, acid, nuts. Uz cigar izvanredna za zimski stol i punu ligu.\n\nSercial je sušći; Malmsey slatkiji — prilagodite cigari.",
+        "hr": "Madeira je gotovo neuništiva i kompleksna — karamel, acid, nuts. Uz cigara izvanredna za zimski stol i punu ligu.\n\nSercial je sušći; Malmsey slatkiji — prilagodite cigari.",
         "en": "Madeira is near-indestructible and complex — caramel, acid, nuts. With cigars excellent for winter tables and full ligero.\n\nSercial is drier; Malmsey sweeter — match to the cigar."
       },
       "aliases": [
@@ -3310,7 +2881,7 @@
         "en": "The grain recipe (corn, barley, rye, wheat) before whiskey fermentation."
       },
       "body": {
-        "hr": "Mash bill određuje slatkoću vs začin. Bourbon (>51 % kukuruz) vs rye (>51 % raž) daje različit cigar most.\n\nNije obavezno na etiketi, ali educira izbor.",
+        "hr": "Mash bill određuje slatkoću vs začin. Bourbon (>51 % kukuruz) vs rye (>51 % raž) daje različit cigara most.\n\nNije obavezno na etiketi, ali educira izbor.",
         "en": "Mash bill sets sweetness vs spice. Bourbon (>51% corn) vs rye (>51% rye) gives different cigar bridges.\n\nNot always on the label, but it guides choice."
       },
       "aliases": [
@@ -3333,7 +2904,7 @@
         "en": "Localized softer filler areas in the cigar body."
       },
       "body": {
-        "hr": "Meka mjesta osjetite pritiskom duž tijela — praznina ili labaviji list u punjenju. Mogu uzrokovati neravno gorenje ili labav draw u tom dijelu.\n\nPri kupnji lagano pritisnite cigar u; meka mjesta su razlog za zamjenu, ne za popust bez razgovora.",
+        "hr": "Meka mjesta osjetite pritiskom duž tijela — praznina ili labaviji list u punjenju. Mogu uzrokovati neravno gorenje ili labav draw u tom dijelu.\n\nPri kupnji lagano pritisnite cigaru; meka mjesta su razlog za zamjenu, ne za popust bez razgovora.",
         "en": "Soft spots are felt by gently squeezing the body — a gap or loose leaf in the bunch. They may cause uneven burn or loose draw in that section.\n\nWhen buying, lightly press along the cigar; soft spots warrant exchange, not silent discount."
       },
       "aliases": [],
@@ -3354,7 +2925,7 @@
         "en": "Classic lighter or candle flame without a jet nozzle."
       },
       "body": {
-        "hr": "Meki plamen pali cigar u nježnije i mirisnije — cedar spill ili plamen upaljača blizu foota daje kontrolu pri toastingu. Manje agresivan je prema opni.\n\nVanjski vjetar otežava uporabu; turbo je praktičniji na terasi, meki plamen elegantniji u salonu.",
+        "hr": "Meki plamen pali cigaru nježnije i mirisnije — cedar spill ili plamen upaljača blizu foota daje kontrolu pri toastingu. Manje agresivan je prema opni.\n\nVanjski vjetar otežava uporabu; turbo je praktičniji na terasi, meki plamen elegantniji u salonu.",
         "en": "A soft flame lights more gently and aromatically — cedar spill or lighter flame near the foot gives control when toasting. Less aggressive to the wrapper.\n\nOutdoor wind hampers use; torch is practical on the terrace, soft flame more elegant indoors."
       },
       "aliases": [],
@@ -3439,29 +3010,6 @@
       "category": "drink"
     },
     {
-      "id": "cigar-smell-courtesy",
-      "term": {
-        "hr": "Miris dima i odjeća",
-        "en": "Cigar smell courtesy"
-      },
-      "def": {
-        "hr": "Dim ostaje na odjeći — pažnja prema susjedima u prostoru i u transportu.",
-        "en": "Smoke stays on clothes — care for neighbors in the room and in transit."
-      },
-      "body": {
-        "hr": "Nakon večeri ne prigrlite nepušača u istom kaputu bez najave. Provjerite ventilaciju prije nego uđete u taxi. Miris nije dokaz statusa — to je trag koji drugi nose bez pitanja.",
-        "en": "After the evening, do not hug a non-smoker in the same coat unannounced. Check ventilation before entering a taxi. Scent is not proof of status — it is a trace others carry without asking."
-      },
-      "aliases": [
-        "smell",
-        "miris dima"
-      ],
-      "seeAlso": [
-        "non-smoker-courtesy"
-      ],
-      "category": "table"
-    },
-    {
       "id": "room-note",
       "term": {
         "hr": "Miris u prostoriji",
@@ -3540,7 +3088,7 @@
         "en": "Spirit served over ice — cooler, milder, diluting over time."
       },
       "body": {
-        "hr": "Led smanjuje percipiranu jačinu alkohola — korisno uz cigar u toplini ili s visokim ABV. Single large cube razblažuje sporije od sitnog leda.\n\nWhisky puristi preferiraju neat + kap vode umjesto leda.",
+        "hr": "Led smanjuje percipiranu jačinu alkohola — korisno uz cigaru toplini ili s visokim ABV. Single large cube razblažuje sporije od sitnog leda.\n\nWhisky puristi preferiraju neat + kap vode umjesto leda.",
         "en": "Ice lowers perceived alcohol strength — useful with cigars in heat or high ABV. One large cube dilutes slower than crushed ice.\n\nWhisky purists prefer neat + water drop over ice."
       },
       "aliases": [
@@ -3576,30 +3124,6 @@
       "category": "cigar"
     },
     {
-      "id": "cut-fee",
-      "term": {
-        "hr": "Naknada za rezanje",
-        "en": "Cut fee"
-      },
-      "def": {
-        "hr": "Kućna naknada kad donesete vlastitu cigar — plaćate prostor i uslugu, ne samo dim.",
-        "en": "A house charge when you bring your own cigar — you pay for space and service, not smoke alone."
-      },
-      "body": {
-        "hr": "Cut fee nije kažnjavanje — to je način da lounge preživi. Platite bez pregovaranja ili pušite kod kuće. Spor oko par eura kvare večer i reputaciju gosta.",
-        "en": "Cut fee is not punishment — it is how a lounge survives. Pay without haggling or smoke at home. An argument over a few euros ruins the evening and the guest's reputation."
-      },
-      "aliases": [
-        "cut fee",
-        "rezanje"
-      ],
-      "seeAlso": [
-        "byob",
-        "cigar-lounge"
-      ],
-      "category": "table"
-    },
-    {
       "id": "navy-strength",
       "term": {
         "hr": "Navy strength",
@@ -3625,29 +3149,6 @@
       "category": "drink"
     },
     {
-      "id": "serve-style",
-      "term": {
-        "hr": "Način posluživanja",
-        "en": "Serve style"
-      },
-      "def": {
-        "hr": "Kako piće dolazi u čašu — neat, rocks, visok čaša — i kako to mijenja stol uz dim.",
-        "en": "How the drink arrives in the glass — neat, rocks, tall — and how that changes the table beside smoke."
-      },
-      "body": {
-        "hr": "Isti liker neat i s ledom nije isto sparivanje. Led razvodnjava i hladi; visoka čaša dodaje aromu i volumen. Domaćin neka kaže kako je posluženo prije nego što gost sudi.",
-        "en": "The same liqueur neat and on ice is not the same pairing. Ice dilutes and cools; a tall glass adds aroma and volume. The host should say how it is served before the guest judges."
-      },
-      "aliases": [
-        "serve",
-        "posluživanje"
-      ],
-      "seeAlso": [
-        "neat-vs-mixed"
-      ],
-      "category": "pairing"
-    },
-    {
       "id": "neat",
       "term": {
         "hr": "Neat",
@@ -3658,7 +3159,7 @@
         "en": "Spirit poured from bottle to glass — no ice, no water, no mixer."
       },
       "body": {
-        "hr": "Neat je default za ozbiljan cigar stol: cognac, rum, whisky. Alkohol može «peći» — mali gutljaji, rotacija s dimom.\n\nCask strength neat uz vodu je varijanta — vidi water-splash.",
+        "hr": "Neat je default za ozbiljan cigara stol: cognac, rum, whisky. Alkohol može «peći» — mali gutljaji, rotacija s dimom.\n\nCask strength neat uz vodu je varijanta — vidi water-splash.",
         "en": "Neat is the default for a serious cigar table: cognac, rum, whisky. Alcohol may «burn» — small sips, rotation with smoke.\n\nCask strength neat with water is a variant — see water-splash."
       },
       "aliases": [
@@ -3673,30 +3174,6 @@
       "category": "drink"
     },
     {
-      "id": "neat-vs-mixed",
-      "term": {
-        "hr": "Neat naspram miješanog",
-        "en": "Neat vs mixed"
-      },
-      "def": {
-        "hr": "Piće iz boce naspram koktela — različit intenzitet uz isti dim.",
-        "en": "Straight from the bottle versus a cocktail — different intensity beside the same smoke."
-      },
-      "body": {
-        "hr": "Neat daje punu sliku boce; miješano daje most i masku. Uz pun maduro često je bolje neat ili kratki koktel; uz blagi dim, lagani highball može biti savršen most. Ne miješajte ocjenu neat pića s ocjenom istog pića u koktelu.",
-        "en": "Neat gives the bottle's full picture; mixed gives bridge and mask. Beside full maduro, neat or a short cocktail often wins; beside mild smoke, a light highball can be the perfect bridge. Do not score neat and cocktail as the same pour."
-      },
-      "aliases": [
-        "neat",
-        "mixed"
-      ],
-      "seeAlso": [
-        "cocktail-bridge",
-        "serve-style"
-      ],
-      "category": "pairing"
-    },
-    {
       "id": "negroni",
       "term": {
         "hr": "Negroni",
@@ -3707,7 +3184,7 @@
         "en": "Cocktail of gin + Campari + sweet vermouth — bitter, sweet, red."
       },
       "body": {
-        "hr": "Negroni je amaro-adjacent partner uz medium-full cigar — gorčina paralelna je s ligero. Previše slatko u vermouthu može naglasiti maduro previše.\n\nEqual parts je klasičan recept; ne «pravilo zakona».",
+        "hr": "Negroni je amaro-adjacent partner uz srednje do pune cigare — gorčina paralelna je s ligero. Previše slatko u vermouthu može naglasiti maduro previše.\n\nEqual parts je klasičan recept; ne «pravilo zakona».",
         "en": "Negroni is an amaro-adjacent partner with medium-full cigars — bitterness parallels ligero. Too much vermouth sweetness can over-highlight maduro.\n\nEqual parts is the classic recipe; not a «law»."
       },
       "aliases": [
@@ -3773,7 +3250,7 @@
         "en": "Excessive nicotine reaction while smoking."
       },
       "body": {
-        "hr": "Nikotinska mučnina (nic-sick) javlja se kao vrtoglavica, mučnina, hladan znoj — često kod jakih cigar u na prazan želudac ili uz prebrzo pušenje.\n\nUsporite, jedite nešto blago, pijte vodu; jaču cigar u odložite. Nema srama u prekidu — tijelo postavlja granicu.",
+        "hr": "Nikotinska mučnina (nic-sick) javlja se kao vrtoglavica, mučnina, hladan znoj — često kod jakih cigaru na prazan želudac ili uz prebrzo pušenje.\n\nUsporite, jedite nešto blago, pijte vodu; jaču cigaru odložite. Nema srama u prekidu — tijelo postavlja granicu.",
         "en": "Nic-sickness shows as dizziness, nausea, cold sweat — often from strong cigars on an empty stomach or fast pacing.\n\nSlow down, eat something mild, drink water; defer the stronger cigar. No shame in stopping — the body sets the limit."
       },
       "aliases": [
@@ -3888,54 +3365,6 @@
       ]
     },
     {
-      "id": "refusing-gracefully",
-      "term": {
-        "hr": "Odbiti bez drame",
-        "en": "Refusing gracefully"
-      },
-      "def": {
-        "hr": "„Ne, hvala“ bez opravdanja — i bez uvrede domaćina.",
-        "en": "\"No, thank you\" without justification — and without insult to the host."
-      },
-      "body": {
-        "hr": "Odbijanje cigare ili pića nije odbijanje društva. Domaćin ne forsira; gost ne objašnjava medicinsku povijest pred stolom. Jedna rečenica i osmijeh završavaju temu.",
-        "en": "Refusing cigar or drink is not refusing company. The host does not push; the guest need not explain medical history at the table. One sentence and a smile close the topic."
-      },
-      "aliases": [
-        "refuse",
-        "odbiti"
-      ],
-      "seeAlso": [
-        "offering-choice",
-        "guest-at-table"
-      ],
-      "category": "table"
-    },
-    {
-      "id": "nub-disposal",
-      "term": {
-        "hr": "Odlaganje ostatka",
-        "en": "Nub disposal"
-      },
-      "def": {
-        "hr": "Završni centimetar cigare — gdje završava, ne u pepeljari kao smeće za miješanje.",
-        "en": "The final centimeter of cigar — where it ends, not mashed in the tray as trash."
-      },
-      "body": {
-        "hr": "Nub ne ostavljajte da gori do kraja ako gost već stoji. U pepeljari ne gurajte ostatak uz tuđ pepel. U kući domaćin kaže gdje ostatak ide; u loungeu slijedite kućni red.",
-        "en": "Do not leave the nub burning if the guest is already leaving. Do not push the stub into the tray against others' ash. At home the host says where ends go; in a lounge follow house rule."
-      },
-      "aliases": [
-        "nub",
-        "ostatak"
-      ],
-      "seeAlso": [
-        "extinguish-or-leave",
-        "ashtray-etiquette"
-      ],
-      "category": "table"
-    },
-    {
       "id": "sherry-oloroso",
       "term": {
         "hr": "Oloroso",
@@ -3991,7 +3420,7 @@
         "en": "The outermost tobacco leaf that shapes appearance, aroma, and first impression when smoking."
       },
       "body": {
-        "hr": "Omotač je prvo što primijetite na stolu: boja, sjaj i fina tekstura. U okusu nosi najnježnije note — kremasto, slatko, začinsko — jer je list tanak i pažljivo biran.\n\nKvaliteta omotača utječe na gustoću dima i ravnotežu, ali sama po sebi ne određuje jačinu. Dobar omotač dopušta punjenju da se čuje, umjesto da ga prekrije.\n\nKod usporedbe dviju cigareta iste veličine korisno je spomenuti omotač — često objašnjava razliku u karakteru.",
+        "hr": "Omotač je prvo što primijetite na stolu: boja, sjaj i fina tekstura. U okusu nosi najnježnije note — kremasto, slatko, začinsko — jer je list tanak i pažljivo biran.\n\nKvaliteta omotača utječe na gustoću dima i ravnotežu, ali sama po sebi ne određuje jačinu. Dobar omotač dopušta punjenju da se čuje, umjesto da ga prekrije.\n\nKod usporedbe dviju cigara iste veličine korisno je spomenuti omotač — često objašnjava razliku u karakteru.",
         "en": "The wrapper is the first thing you notice at the table: colour, sheen, and fine texture. In flavour it carries the gentlest notes — cream, sweetness, spice — because the leaf is thin and carefully chosen.\n\nWrapper quality affects smoke density and balance, but does not by itself define strength. A good wrapper lets the filler speak rather than masking it.\n\nWhen comparing two cigars of the same size, naming the wrapper often explains the difference in character."
       },
       "aliases": [
@@ -4015,7 +3444,7 @@
         "en": "High-proof bottles ask for less in the glass and more care beside smoke."
       },
       "body": {
-        "hr": "Overproof piće udvostručuje i alkohol i aromu; dim već zauzima tanjur. Jedan mali gutljaj može biti most; puna čaša često prekida večer prije treće trećine. Domaćin neka ponudi vodu bez komentara.",
+        "hr": "Overproof piće udvostručuje i alkohol i aromu; dim već zauzima nepce. Jedan mali gutljaj može biti most; puna čaša često prekida večer prije treće trećine. Domaćin neka ponudi vodu bez komentara.",
         "en": "Overproof doubles both alcohol and aroma; smoke already occupies the palate. One small sip can bridge; a full glass often ends the evening before the final third. The host should offer water without comment."
       },
       "aliases": [
@@ -4039,7 +3468,7 @@
         "en": "Unfermented sugar left after fermentation — perceived sweetness."
       },
       "body": {
-        "hr": "Slatko vino ili port uz cigar traži pažnju: slatkoća može naglasiti slatkoću maduro ili sukobiti sa suhom ligom.\n\nPX sherry ekstrem je — vidi sherry-px.",
+        "hr": "Slatko vino ili port uz cigaru traži pažnju: slatkoća može naglasiti slatkoću maduro ili sukobiti sa suhom ligom.\n\nPX sherry ekstrem je — vidi sherry-px.",
         "en": "Sweet wine or port with cigars needs care: sweetness can highlight maduro or clash with dry ligero.\n\nPX sherry is the extreme — see sherry-px."
       },
       "aliases": [
@@ -4052,30 +3481,6 @@
         "wine-body"
       ],
       "category": "drink"
-    },
-    {
-      "id": "ash-flick",
-      "term": {
-        "hr": "Otkidanje pepela",
-        "en": "Ash flick"
-      },
-      "def": {
-        "hr": "Kad i kako otpasti pepel — mirno, iznad pepeljare, ne prema ljudima.",
-        "en": "When and how to drop ash — calmly, over the tray, not toward people."
-      },
-      "body": {
-        "hr": "Otkid pepela nije signal da ste iskusni — preuranjen otkid pravi nered. Držite pepel dok je stabilan; otpustite iznad pepeljare. Nikad prema vjetru ni prema tuđoj čaši.",
-        "en": "Flicking ash is not proof of expertise — early flick makes mess. Hold ash while stable; release over the tray. Never into the wind or toward another's glass."
-      },
-      "aliases": [
-        "ash flick",
-        "pepel"
-      ],
-      "seeAlso": [
-        "ashtray-etiquette",
-        "band-removal"
-      ],
-      "category": "table"
     },
     {
       "id": "unraveling",
@@ -4175,15 +3580,15 @@
     {
       "id": "flaky-ash",
       "term": {
-        "hr": "Pahuljasti pepel",
+        "hr": "Pahuljasti pepeo",
         "en": "Flaky ash"
       },
       "def": {
-        "hr": "Pepel koji se lako raspada u pahuljice.",
+        "hr": "Pepeo koji se lako raspada u pahuljice.",
         "en": "Ash that crumbles easily into flakes."
       },
       "body": {
-        "hr": "Pahuljasti pepel ne drži čvrsto oblik i rasipa se pri tapkanju. Može značiti labavije punjenje, neravnomjerno gorenje ili previsoku relativnu vlagu pri pušenju.\n\nNije nužno greška pušača, ali obično prati manje elegantno iskustvo nego pepel koji drži konus.",
+        "hr": "Pahuljasti pepeo ne drži čvrsto oblik i rasipa se pri tapkanju. Može značiti labavije punjenje, neravnomjerno gorenje ili previsoku relativnu vlagu pri pušenju.\n\nNije nužno greška pušača, ali obično prati manje elegantno iskustvo nego pepeo koji drži konus.",
         "en": "Flaky ash will not hold shape and scatters when tapped. It may indicate loose filler, uneven burn, or overly high humidity while smoking.\n\nNot always the smoker's fault, but it usually accompanies a less elegant experience than a firm conical stack."
       },
       "aliases": [],
@@ -4201,11 +3606,11 @@
         "en": "Parejo"
       },
       "def": {
-        "hr": "Cilindrična cigaretu s ravnim tijelom od glave do stope.",
+        "hr": "Cilindrična cigaru s ravnim tijelom od glave do stope.",
         "en": "A cylindrical cigar with straight sides from head to foot."
       },
       "body": {
-        "hr": "Parejo je „klasična” silueta — ravne strane, jednak promjer. Većina svakodnevnih vitola (corona, robusto, toro) parejo je.\n\nLakše se drži, reže i skladišti nego figurado. Gorenje je obično predvidivije.\n\nKad netko kaže „normalna cigaretu”, često misli na parejo.",
+        "hr": "Parejo je „klasična” silueta — ravne strane, jednak promjer. Većina svakodnevnih vitola (corona, robusto, toro) parejo je.\n\nLakše se drži, reže i skladišti nego figurado. Gorenje je obično predvidivije.\n\nKad netko kaže „normalna cigaru”, često misli na parejo.",
         "en": "Parejo is the classic silhouette — straight sides, even diameter. Most everyday vitolas (corona, robusto, toro) are parejos.\n\nEasier to hold, cut, and store than figurados. Burn is usually more predictable.\n\nWhen someone says a normal cigar, they often mean parejo."
       },
       "aliases": [
@@ -4269,7 +3674,7 @@
         "en": "French anise liqueur diluted with water — louche effect, sweet, herbal."
       },
       "body": {
-        "hr": "Pastis uz cigar je mediteranski aperitiv/digestif rub — anis voli začinske note u cigari. Razblaženje vodom smanjuje ABV i slatkoću percipiranje.\n\nPernod i Ricard su poznati brandovi; absinthe je drugačija kategorija.",
+        "hr": "Pastis uz cigaru je mediteranski aperitiv/digestif rub — anis voli začinske note u cigari. Razblaženje vodom smanjuje ABV i slatkoću percipiranje.\n\nPernod i Ricard su poznati brandovi; absinthe je drugačija kategorija.",
         "en": "Pastis with cigars is a Mediterranean aperitif/digestif edge — anise loves spice notes in cigars. Water dilution lowers ABV and perceived sweetness.\n\nPernod and Ricard are known brands; absinthe is a different category."
       },
       "aliases": [
@@ -4318,7 +3723,7 @@
         "en": "Very sweet sherry from PX grapes — syrup, dried fruit, caramel."
       },
       "body": {
-        "hr": "PX je desert uz cigar, ne uz prvi dim. Radi s najslađim maduro i nakon jela.\n\nMala količina — slatkoća dominira.",
+        "hr": "PX je desert uz cigaru, ne uz prvi dim. Radi s najslađim maduro i nakon jela.\n\nMala količina — slatkoća dominira.",
         "en": "PX is dessert with a cigar, not first smoke. Works with the sweetest maduro after a meal.\n\nSmall pours — sweetness dominates."
       },
       "aliases": [
@@ -4343,7 +3748,7 @@
         "en": "Balkan wormwood liqueur — bitter, herbal, often local brands (Aura etc.)."
       },
       "body": {
-        "hr": "Pelinkovac uz cigar je regionalni stol — gorčina i bilje uz earth i pepper u cigari. Ledeni servis smanjuje oštrinu.\n\nNe miješajte s absintom — drugačija tradicija i ABV.",
+        "hr": "Pelinkovac uz cigaru je regionalni stol — gorčina i bilje uz earth i pepper u cigari. Ledeni servis smanjuje oštrinu.\n\nNe miješajte s absintom — drugačija tradicija i ABV.",
         "en": "Pelinkovac with cigars is a regional table — bitterness and herbs with earth and pepper in the cigar. Iced service lowers sharpness.\n\nDo not confuse with absinthe — different tradition and ABV."
       },
       "aliases": [
@@ -4358,41 +3763,17 @@
       "category": "drink"
     },
     {
-      "id": "ash",
-      "term": {
-        "hr": "Pepel",
-        "en": "Ash"
-      },
-      "def": {
-        "hr": "Mineralni ostatak gorenja punjenja i veziva.",
-        "en": "The mineral residue left as filler and binder burn."
-      },
-      "body": {
-        "hr": "Pepel na cigari nije prljavština nego strukturirani trag gorenja. Dobar pepel drži oblik neko vrijeme, a boja i tekstura daju naznake o gnojivu, vlagi i kvaliteti lišća.\n\nNe treba ga nasilno otkidati; pustite da padne sam ili lagano tapnite. Dugačak pepel može značiti hladnije gorenje — ponekad.",
-        "en": "Ash on a cigar is not dirt but a structured trace of combustion. Good ash holds shape for a while; color and texture hint at soil, moisture, and leaf quality.\n\nDo not knock it off aggressively; let it fall or tap lightly. A long ash can mean cooler burning — sometimes."
-      },
-      "aliases": [
-        "pepeljara ostatak"
-      ],
-      "seeAlso": [
-        "white-ash",
-        "flaky-ash",
-        "even-burn"
-      ],
-      "category": "cigar"
-    },
-    {
       "id": "ashtray",
       "term": {
         "hr": "Pepeljara",
         "en": "Ashtray"
       },
       "def": {
-        "hr": "Posuda za pepel i kratke pauze cigare.",
+        "hr": "Posuda za pepeo i kratke pauze cigare.",
         "en": "A vessel for ash and brief cigar rests."
       },
       "body": {
-        "hr": "Pepeljara treba imati dovoljno široko ležište za cigar u u odmoru — uska lokalna pepeljara prisiljava na neugodan kut. Duboki kanali drže pepel bez rasipanja.\n\nNe koristite pepeljaru kao peć za gasiti cigar u; rez i poštovan prema dimu.",
+        "hr": "Pepeljara treba imati dovoljno široko ležište za cigaru u u odmoru — uska lokalna pepeljara prisiljava na neugodan kut. Duboki kanali drže pepeo bez rasipanja.\n\nNe koristite pepeljaru kao peć za gasiti cigaru; rez i poštovan prema dimu.",
         "en": "An ashtray needs a wide enough rest for a cigar on pause — narrow local ashtrays force awkward angles. Deep channels hold ash without scatter.\n\nDo not use the ashtray as a furnace to crush out a cigar; cut and respect the smoke."
       },
       "aliases": [
@@ -4405,28 +3786,28 @@
       "category": "cigar"
     },
     {
-      "id": "ashtray-etiquette",
+      "id": "ash",
       "term": {
-        "hr": "Pepeljara i pepel",
-        "en": "Ashtray etiquette"
+        "hr": "Pepeo",
+        "en": "Ash"
       },
       "def": {
-        "hr": "Gdje pepel pada — i kako ne ukrasiti stol tuđim dimom.",
-        "en": "Where ash belongs — and how not to decorate the table with someone else's smoke."
+        "hr": "Mineralni ostatak gorenja punjenja i veziva.",
+        "en": "The mineral residue left as filler and binder burn."
       },
       "body": {
-        "hr": "Pepel drži blizu pepeljare, ne iznad tanjura ni knjige. Duga pepeljna traka je znak pažnje, ne show. Ako pepeljara puna, pitajte za novu — ne gurajte pepel u čašu.",
-        "en": "Keep ash near the tray, not over a plate or book. A long ash column is a sign of care, not a show. If the tray is full, ask for a fresh one — do not push ash into a glass."
+        "hr": "Pepeo na cigari nije prljavština nego strukturirani trag gorenja. Dobar pepeo drži oblik neko vrijeme, a boja i tekstura daju naznake o gnojivu, vlagi i kvaliteti lišća.\n\nNe treba ga nasilno otkidati; pustite da padne sam ili lagano tapnite. Dugačak pepeo može značiti hladnije gorenje — ponekad.",
+        "en": "Ash on a cigar is not dirt but a structured trace of combustion. Good ash holds shape for a while; color and texture hint at soil, moisture, and leaf quality.\n\nDo not knock it off aggressively; let it fall or tap lightly. A long ash can mean cooler burning — sometimes."
       },
       "aliases": [
-        "ashtray",
-        "pepeljara"
+        "pepeljara ostatak"
       ],
       "seeAlso": [
-        "ash-flick",
-        "nub-disposal"
+        "white-ash",
+        "flaky-ash",
+        "even-burn"
       ],
-      "category": "table"
+      "category": "cigar"
     },
     {
       "id": "pilon",
@@ -4493,30 +3874,6 @@
       "category": "cigar"
     },
     {
-      "id": "ask-before-lighting",
-      "term": {
-        "hr": "Pitati prije paljenja",
-        "en": "Ask before lighting"
-      },
-      "def": {
-        "hr": "Prije plamena, pitajte je li ritam stola spreman — posebno u zatvorenom prostoru.",
-        "en": "Before flame, ask if the table's rhythm is ready — especially indoors."
-      },
-      "body": {
-        "hr": "Paljenje je signal da večer kreće u novi tempo. U zatvorenom salonu prvi plamen postavlja ton za sve. Kratko „palim?“ nije slabost — to je poštovanje prema nepušačima i prema domaćinu.",
-        "en": "Lighting is the signal the evening shifts pace. Indoors, the first flame sets tone for everyone. A brief \"Shall I light?\" is not weakness — it is respect for non-smokers and for the host."
-      },
-      "aliases": [
-        "lighting",
-        "paljenje"
-      ],
-      "seeAlso": [
-        "torch-indoors",
-        "non-smoker-courtesy"
-      ],
-      "category": "table"
-    },
-    {
       "id": "blue-mold",
       "term": {
         "hr": "Plava plijesen",
@@ -4549,7 +3906,7 @@
         "en": "A twisted tail of wrapper at the head instead of a flat cap, decorative and functional."
       },
       "body": {
-        "hr": "Pigtail je mali uvijeni vrh — ne reže se kao klasična kapica; često se samo malo otvori ili odgurne. Daje cigaretu prepoznatljiv izgled.\n\nZahtijeva pažnju pri paljenju i prvom povlačenju dima. Nije čest na svakodnevnim vitolama, ali se pojavlju u limitiranim serijama.\n\nNa stolu je razgovor o tradiciji završnog rada, ne o boljem okusu sam po sebi.",
+        "hr": "Pigtail je mali uvijeni vrh — ne reže se kao klasična kapica; često se samo malo otvori ili odgurne. Daje cigaru prepoznatljiv izgled.\n\nZahtijeva pažnju pri paljenju i prvom povlačenju dima. Nije čest na svakodnevnim vitolama, ali se pojavlju u limitiranim serijama.\n\nNa stolu je razgovor o tradiciji završnog rada, ne o boljem okusu sam po sebi.",
         "en": "A pigtail is a small twisted tip — not cut like a classic cap; often slightly opened or nudged aside. It gives a distinctive look.\n\nIt needs care when lighting and on the first draws. Uncommon on everyday vitolas but appears in limited lines.\n\nAt the table it is talk about finishing tradition, not better flavour by itself."
       },
       "aliases": [
@@ -4595,7 +3952,7 @@
         "en": "A dense wad of leaf inside the filler, not the nub."
       },
       "body": {
-        "hr": "Plug u punjenju označava lokalno zbijeno lišće u bunchu — može dati usko povlačenje bez da je cijela cigar u loše zamotana. Ne miješati s nubom (ostatkom nakon pušenja) niti s plugged cigar kao cjelinom.\n\nTermin je tehnički; za stol dovoljno reći da je draw usko u tom dimu.",
+        "hr": "Plug u punjenju označava lokalno zbijeno lišće u bunchu — može dati usko povlačenje bez da je cijela cigaru loše zamotana. Ne miješati s nubom (ostatkom nakon pušenja) niti s plugged cigara kao cjelinom.\n\nTermin je tehnički; za stol dovoljno reći da je draw usko u tom dimu.",
         "en": "A tobacco plug is locally compressed leaf in the bunch — it may tighten draw without the whole cigar being poorly rolled. Do not confuse with the nub (smoked remnant) or plugged cigar as a whole.\n\nThe term is technical; at the table, saying the draw is tight in that smoke suffices."
       },
       "aliases": [
@@ -4675,7 +4032,7 @@
         "en": "Lighting a cigar after it has gone out."
       },
       "body": {
-        "hr": "Ponovno paljenje je dopušteno — cigar u nije svijeća koja mora gorjeti neprekidno. Uklonite pepel, tostirajte foot, nastavite. Okus može postati nešto oštriji nakon duge pauze.\n\nAko je cigar u ugasio u zadnjoj trećini, razmislite o završetku; ponovno paljenje tamo često donosi gorčinu.",
+        "hr": "Ponovno paljenje je dopušteno — cigara nije svijeća koja mora gorjeti neprekidno. Uklonite pepeo, tostirajte foot, nastavite. Okus može postati nešto oštriji nakon duge pauze.\n\nAko je cigara ugasio u zadnjoj trećini, razmislite o završetku; ponovno paljenje tamo često donosi gorčinu.",
         "en": "Relighting is acceptable — a cigar is not a candle that must burn continuously. Knock ash, toast the foot, continue. Flavor may turn slightly sharper after a long pause.\n\nIf it died in the final third, consider ending; relight there often brings bitterness."
       },
       "aliases": [],
@@ -4685,30 +4042,6 @@
         "purging"
       ],
       "category": "cigar"
-    },
-    {
-      "id": "offering-choice",
-      "term": {
-        "hr": "Ponuda izbora",
-        "en": "Offering choice"
-      },
-      "def": {
-        "hr": "Tri opcije, ne trideset — gost bira, domaćin ne testira.",
-        "en": "Three options, not thirty — the guest chooses, the host does not test."
-      },
-      "body": {
-        "hr": "Dobar domaćin suzi izbor: lagana, srednja, punija; ili tri pića različitog tijela. Previše opcija stvara anksioznost. Ponudite i prihvatite „ne, hvala“.",
-        "en": "A good host narrows choice: mild, middle, full; or three drinks of different body. Too many options create anxiety. Offer and accept \"no, thank you.\""
-      },
-      "aliases": [
-        "choice",
-        "izbor"
-      ],
-      "seeAlso": [
-        "refusing-gracefully",
-        "host-at-table"
-      ],
-      "category": "table"
     },
     {
       "id": "port",
@@ -4734,30 +4067,6 @@
         "sherry"
       ],
       "category": "drink"
-    },
-    {
-      "id": "borrow-lighter",
-      "term": {
-        "hr": "Posuditi upaljač",
-        "en": "Borrowing a lighter"
-      },
-      "def": {
-        "hr": "Kratko posuđivanje plamena — uz vraćanje i bez zadržavanja tuđeg upaljača.",
-        "en": "Brief borrowing of flame — with return and without keeping another's lighter."
-      },
-      "body": {
-        "hr": "Upaljač je osobna stvar; posudite ga jednom, vratite odmah. Ne palite svoju cigar tuđim plamenom bez pitanja. Torch upaljač unutra traži posebnu pažnju — vidi torch etiquette.",
-        "en": "A lighter is personal; borrow once, return at once. Do not light your cigar with another's flame unasked. Torch indoors needs extra care — see torch etiquette."
-      },
-      "aliases": [
-        "lighter",
-        "upaljač"
-      ],
-      "seeAlso": [
-        "torch-indoors",
-        "ask-before-lighting"
-      ],
-      "category": "table"
     },
     {
       "id": "pot-still",
@@ -4807,30 +4116,6 @@
       "category": "cigar"
     },
     {
-      "id": "salon-rules",
-      "term": {
-        "hr": "Pravila salona",
-        "en": "Salon rules"
-      },
-      "def": {
-        "hr": "Javni kod ponašanja u loungeu — poznati prije nego što sjednete.",
-        "en": "The public code of conduct in a lounge — known before you sit."
-      },
-      "body": {
-        "hr": "Pravila salona nisu sugestija: gdje pušiti, gdje ne, kako naručiti, što ne dirati. Pročitajte ih ili pitajte osoblje. Kršenje pravila nije „slobodan duh“ — to je nepristojnost prema kući.",
-        "en": "Salon rules are not suggestions: where to smoke, where not, how to order, what not to touch. Read them or ask staff. Breaking rules is not \"free spirit\" — it is rudeness to the house."
-      },
-      "aliases": [
-        "salon rules",
-        "pravila"
-      ],
-      "seeAlso": [
-        "house-rules-vs-lounge",
-        "cigar-lounge"
-      ],
-      "category": "table"
-    },
-    {
       "id": "underhumidified",
       "term": {
         "hr": "Previše suho",
@@ -4863,7 +4148,7 @@
         "en": "Storage condition above desired RH."
       },
       "body": {
-        "hr": "Previše vlažne cigare imaju spužvast dodir, teško pale i okus je mutan ili plijesni. RH iznad otprilike 72–74 % dugoročno je rizično.\n\nRješenje: privremeno otvorite humidor, smanjite izvor vlage, koristite niži Boveda paket. Pušenje dok je cigar u prenatopljena često daje tunel gorenje.",
+        "hr": "Previše vlažne cigare imaju spužvast dodir, teško pale i okus je mutan ili plijesni. RH iznad otprilike 72–74 % dugoročno je rizično.\n\nRješenje: privremeno otvorite humidor, smanjite izvor vlage, koristite niži Boveda paket. Pušenje dok je cigaru prenatopljena često daje tunel gorenje.",
         "en": "Overhumidified cigars feel spongy, resist lighting, and taste muddy or musty. RH above roughly 72–74% is risky long term.\n\nFix: air the humidor briefly, reduce humidity source, use a lower Boveda pack. Smoking while soggy often yields tunneling."
       },
       "aliases": [],
@@ -4902,7 +4187,7 @@
         "en": "Ring gauge"
       },
       "def": {
-        "hr": "Brojčana mjera promjera cigarete u 64-inčnim dijelovima inča; veći broj znači deblja cigaretu.",
+        "hr": "Brojčana mjera promjera cigare u 64-inčnim dijelovima inča; veći broj znači deblja cigaru.",
         "en": "Numeric measure of cigar diameter in 64ths of an inch; higher number means thicker cigar."
       },
       "body": {
@@ -4928,7 +4213,7 @@
         "en": "US measure of alcohol — 100 proof ≈ 50% ABV (classic scaling)."
       },
       "body": {
-        "hr": "Proof na američkim bocama pomaže usporediti bourbon i rye. 80 proof = 40 % ABV — standard stola.\n\n«Barrel proof» i «cask strength» često prelaze 100 proof — oprez uz cigar.",
+        "hr": "Proof na američkim bocama pomaže usporediti bourbon i rye. 80 proof = 40 % ABV — standard stola.\n\n«Barrel proof» i «cask strength» često prelaze 100 proof — oprez uz cigaru.",
         "en": "Proof on American bottles helps compare bourbon and rye. 80 proof = 40% ABV — table standard.\n\n«Barrel proof» and «cask strength» often exceed 100 proof — care with cigars."
       },
       "aliases": [
@@ -4949,11 +4234,11 @@
         "en": "Purging"
       },
       "def": {
-        "hr": "Lagano izdisanje kroz cigar u da se oslobodi zagorjeli dim.",
+        "hr": "Lagano izdisanje kroz cigaru da se oslobodi zagorjeli dim.",
         "en": "Gently blowing through the cigar to clear stale smoke."
       },
       "body": {
-        "hr": "Purging znači lagano puhanje kroz cigar u (oprezno, kratko) kako bi se istisnuo zastarjeli, vruć dim iz punjenja nakon pauze ili vrućeg gorenja. Foot ne smije zapaliti obrnutim plamenom.\n\nKoristite rijetko; prečesto purging maskira loše tempiranje pušenja.",
+        "hr": "Purging znači lagano puhanje kroz cigaru (oprezno, kratko) kako bi se istisnuo zastarjeli, vruć dim iz punjenja nakon pauze ili vrućeg gorenja. Foot ne smije zapaliti obrnutim plamenom.\n\nKoristite rijetko; prečesto purging maskira loše tempiranje pušenja.",
         "en": "Purging means gently blowing through the cigar (carefully, briefly) to push out stale, hot smoke from the filler after a pause or hot burn. The foot must not ignite from reverse flame.\n\nUse sparingly; constant purging hides poor pacing."
       },
       "aliases": [],
@@ -4962,30 +4247,6 @@
         "relight"
       ],
       "category": "cigar"
-    },
-    {
-      "id": "cigar-first-vs-drink-first",
-      "term": {
-        "hr": "Prvo cigar ili piće",
-        "en": "Cigar-first vs drink-first"
-      },
-      "def": {
-        "hr": "Redoslijed prvog gutljaja i prvog dima — navika koja mijenja prvi dojam.",
-        "en": "The order of first sip and first puff — a habit that changes the opening impression."
-      },
-      "body": {
-        "hr": "Nema univerzalnog pravila. Piće prvo otvara tanjur; dim prvo postavlja ton večeri. Domaćin neka ponudi oboje i neka gost bira bez natjecanja. Važno je da se odluka ne mijenja svakih pet minuta.",
-        "en": "There is no universal rule. Drink first opens the palate; smoke first sets the evening's tone. The host offers both and lets the guest choose without competition. What matters is the choice does not flip every five minutes."
-      },
-      "aliases": [
-        "order",
-        "redoslijed"
-      ],
-      "seeAlso": [
-        "aperitif-pairing",
-        "thirds-pairing"
-      ],
-      "category": "pairing"
     },
     {
       "id": "punch-cut",
@@ -5022,7 +4283,7 @@
         "en": "The inner layers of tobacco that carry most of the flavour, strength, and smoking duration."
       },
       "body": {
-        "hr": "Tripa je srce cigarete. Ovdje se spajaju različite vrste listova — jači, srednji i lakši — u blend koji određuje karakter.\n\nJačina, punina i razvoj okusa kroz dim najčešće dolaze iz punjenja, ne iz omotača. Zato isti omotač na različitom punjenju može zvučati potpuno drukčije.\n\nKad degustirate, promatrajte kako se okus otvara, srednji dio i završetak — to je najčešće priča punjenja.",
+        "hr": "Tripa je srce cigare. Ovdje se spajaju različite vrste listova — jači, srednji i lakši — u blend koji određuje karakter.\n\nJačina, punina i razvoj okusa kroz dim najčešće dolaze iz punjenja, ne iz omotača. Zato isti omotač na različitom punjenju može zvučati potpuno drukčije.\n\nKad degustirate, promatrajte kako se okus otvara, srednji dio i završetak — to je najčešće priča punjenja.",
         "en": "The filler is the heart of the cigar. Here different leaf types — stronger, middle, and lighter — are combined into a blend that defines character.\n\nStrength, body, and how flavour develops through the smoke usually come from the filler, not the wrapper. The same wrapper on a different filler can taste entirely different.\n\nWhen tasting, notice how flavour opens, develops in the middle, and finishes — that is usually the filler speaking."
       },
       "aliases": [
@@ -5079,29 +4340,6 @@
         "cigar-case"
       ],
       "category": "cigar"
-    },
-    {
-      "id": "travel-with-cigars",
-      "term": {
-        "hr": "Putovanje s cigar",
-        "en": "Travel with cigars"
-      },
-      "def": {
-        "hr": "Kako cigar stiže na stol — zaštita, vlaga i carina bez iznenađenja.",
-        "en": "How cigars reach the table — protection, humidity, and customs without surprises."
-      },
-      "body": {
-        "hr": "Travel humidor ili tube, ne džep. Na granici deklarirajte po pravilima zemlje — iznenađenje carinika nije romantičan početak večeri. Na stol donosite cigar u stanju u kojem biste ga primili.",
-        "en": "Travel humidor or tube, not a pocket. At the border, declare per the country's rules — a customs surprise is not a romantic start to the evening. Bring to the table a cigar you would accept yourself."
-      },
-      "aliases": [
-        "travel",
-        "putovanje"
-      ],
-      "seeAlso": [
-        "house-humidor"
-      ],
-      "category": "table"
     },
     {
       "id": "straight-cut",
@@ -5209,7 +4447,7 @@
         "en": "Tequila aged briefly in oak (months) — balance of agave and vanilla."
       },
       "body": {
-        "hr": "Reposado je često najbolji tequila most uz cigar: dovoljno bačve, još agave svježine. Idealno uz medium-full s earth notom.\n\n«Reposado» ima minimalne zakonske zahtjeve u Meksiku — provjerite brand.",
+        "hr": "Reposado je često najbolji tequila most uz cigaru: dovoljno bačve, još agave svježine. Idealno uz medium-full s earth notom.\n\n«Reposado» ima minimalne zakonske zahtjeve u Meksiku — provjerite brand.",
         "en": "Reposado is often the best tequila bridge with cigars: enough cask, still agave freshness. Ideal with medium-full earth notes.\n\n«Reposado» has minimum legal requirements in Mexico — check the brand."
       },
       "aliases": [
@@ -5220,29 +4458,6 @@
         "tequila-anejo"
       ],
       "category": "drink"
-    },
-    {
-      "id": "palate-reset",
-      "term": {
-        "hr": "Reset tanjura",
-        "en": "Palate reset"
-      },
-      "def": {
-        "hr": "Namjerni prekid između gutljaja ili dima koji vraća osjetljivost ustima.",
-        "en": "A deliberate break between sips or puffs that restores sensitivity to the palate."
-      },
-      "body": {
-        "hr": "Reset nije «pranje» greške — to je pauza u kojoj nepce opet čuje. Voda, blagi cracker, kratka šutnja: alati domaćina, ne znak da je sparivanje propalo.",
-        "en": "A reset is not washing away a mistake — it is a pause in which the palate can hear again. Water, a plain cracker, a brief silence: these are host tools, not proof the pairing failed."
-      },
-      "aliases": [
-        "reset",
-        "palate cleanse"
-      ],
-      "seeAlso": [
-        "water-between-puffs"
-      ],
-      "category": "pairing"
     },
     {
       "id": "retrohale",
@@ -5327,7 +4542,7 @@
         "en": "Shorter «restricted» espresso — less water, more concentration and sweetness."
       },
       "body": {
-        "hr": "Ristretto je intenzivniji od standardnog espressa — manji volumen, jači okus. Uz cigar koristite kao kratki digestif, ne kao litre kave.\n\nIdealno nakon lagane do medium cigare.",
+        "hr": "Ristretto je intenzivniji od standardnog espressa — manji volumen, jači okus. Uz cigara koristite kao kratki digestif, ne kao litre kave.\n\nIdealno nakon lagane do medium cigare.",
         "en": "Ristretto is more intense than standard espresso — smaller volume, stronger taste. With cigars use as a short digestif, not litres of coffee.\n\nIdeal after light to medium cigars."
       },
       "aliases": [
@@ -5394,7 +4609,7 @@
         "en": "Cigar rolled by hand by a roller, not machine."
       },
       "body": {
-        "hr": "Ručno motanje znači da je torcedor formirao bonche, stavio omotač i kapicu. Svaka cigaretu je blago drugačija — ljudska varijacija.\n\nPremium segment se oslanja na long filler i ručni rad. Brzina je manja, cijena viša.\n\nKad netko hvali „craft”, često misli na ovo.",
+        "hr": "Ručno motanje znači da je torcedor formirao bonche, stavio omotač i kapicu. Svaka cigaru je blago drugačija — ljudska varijacija.\n\nPremium segment se oslanja na long filler i ručni rad. Brzina je manja, cijena viša.\n\nKad netko hvali „craft”, često misli na ovo.",
         "en": "Hand rolling means a roller formed the bunch, applied wrapper and cap. Each cigar differs slightly — human variation.\n\nPremium segment relies on long filler and hand work. Slower, pricier.\n\nWhen someone praises craft, they often mean this."
       },
       "aliases": [
@@ -5556,7 +4771,7 @@
         "en": "Fortified wine from Jerez — spectrum from dry fino to sweet PX."
       },
       "body": {
-        "hr": "Za razliku od porta, osnovni sherry se prvo potpuno fermentira, pa se zatim fortificira — zato počinje suh, a slatkoća (cream, PX) dolazi kasnijim dodacima. Solera i flor (fino/manzanilla) ili oksidacija (oloroso) grade stil.\\n\\nFino uz laganu cigar; oloroso uz punu; PX uz desert i maduro. Servirajte hladnije nego crveno vino; mala čaša je dovoljna.",
+        "hr": "Za razliku od porta, osnovni sherry se prvo potpuno fermentira, pa se zatim fortificira — zato počinje suh, a slatkoća (cream, PX) dolazi kasnijim dodacima. Solera i flor (fino/manzanilla) ili oksidacija (oloroso) grade stil.\\n\\nFino uz laganu cigaru; oloroso uz punu; PX uz desert i maduro. Servirajte hladnije nego crveno vino; mala čaša je dovoljna.",
         "en": "Unlike port, base sherry is fully fermented first, then fortified — so it starts dry, and sweetness (cream, PX) comes from later additions. Solera plus flor (fino/manzanilla) or oxidation (oloroso) build the style.\\n\\nFino with light cigars; oloroso with full; PX with dessert and maduro. Serve cooler than red wine; a small glass suffices."
       },
       "aliases": [
@@ -5598,38 +4813,6 @@
       "category": "drink"
     },
     {
-      "id": "band-removal",
-      "term": {
-        "hr": "Skidanje prstena",
-        "en": "Band removal"
-      },
-      "def": {
-        "hr": "Kad skinuti prsten s cigare — škole različitih navika, ista poštovanja prema stolu.",
-        "en": "When to remove the cigar band — schools differ, respect for the table stays the same."
-      },
-      "body": {
-        "hr": "Jedna škola skida prsten nakon prvog dima da ne gori papir; druga ga ostavlja radi identiteta. Obje su u redu ako pepel ne pada na stolnjak. Ne moralizirajte tuđi izbor — to je brz put do dosadnog stola.",
-        "en": "One school removes the band after the first puff so paper does not burn; another keeps it for identity. Both are fine if ash does not fall on the linen. Do not moralize another's choice — that is a fast road to a dull table."
-      },
-      "aliases": [
-        "band",
-        "prsten"
-      ],
-      "seeAlso": [
-        "ashtray-etiquette"
-      ],
-      "category": "table",
-      "doNotConfuse": [
-        {
-          "with": "ashtray-etiquette",
-          "note": {
-            "hr": "Prsten je estetika; pepel je higijena stola.",
-            "en": "The band is aesthetics; ash is table hygiene."
-          }
-        }
-      ]
-    },
-    {
       "id": "sweetness-in-pairing",
       "term": {
         "hr": "Slatkoća u sparivanju",
@@ -5664,7 +4847,7 @@
         "en": "The number and shift of flavor nuances through the smoke."
       },
       "body": {
-        "hr": "Složena cigar u ne drži jedan okus cijelo vrijeme — prelazi iz kakaoa u orašaste note, pa u crni papar, pa u cedar. To ne znači bolja automatski, ali nagrađuje pažnju.\n\nJednostavna, konzistentna cigar u može biti savršena za opuštanje; složenost je degustacijski izazov.",
+        "hr": "Složena cigaru ne drži jedan okus cijelo vrijeme — prelazi iz kakaoa u orašaste note, pa u crni papar, pa u cedar. To ne znači bolja automatski, ali nagrađuje pažnju.\n\nJednostavna, konzistentna cigaru može biti savršena za opuštanje; složenost je degustacijski izazov.",
         "en": "A complex cigar does not hold one flavor throughout — it moves from cocoa to nuts to black pepper to cedar. That does not automatically mean better, but it rewards attention.\n\nA simple, steady cigar can be perfect for relaxation; complexity is a tasting challenge."
       },
       "aliases": [],
@@ -5686,7 +4869,7 @@
         "en": "Rounded glass with narrow rim — concentrates brandy and cognac aroma."
       },
       "body": {
-        "hr": "Snifter je stol za cognac, armagnac i stariji rum. Zagrijte čašu dlanom blago — aroma prema nosu, gutljaj malen.\n\nUz cigar snifter naglašava suho voće prije nego dim «preuzme».",
+        "hr": "Snifter je stol za cognac, armagnac i stariji rum. Zagrijte čašu dlanom blago — aroma prema nosu, gutljaj malen.\n\nUz cigara snifter naglašava suho voće prije nego dim «preuzme».",
         "en": "Snifter is the table glass for cognac, armagnac and older rum. Warm the bowl gently in the palm — aroma to the nose, sip small.\n\nWith cigars a snifter highlights dried fruit before smoke «takes over»."
       },
       "aliases": [
@@ -5706,7 +4889,7 @@
         "en": "Aging room"
       },
       "def": {
-        "hr": "Prostor s kontroliranom vlagom i temperaturom za odležavanje gotovih cigareta.",
+        "hr": "Prostor s kontroliranom vlagom i temperaturom za odležavanje gotovih cigara.",
         "en": "Room with controlled humidity and temperature for resting finished cigars."
       },
       "body": {
@@ -5763,10 +4946,7 @@
         "thirds",
         "trećine"
       ],
-      "seeAlso": [
-        "session-length",
-        "cigar-first-vs-drink-first"
-      ],
+      "seeAlso": [],
       "category": "pairing"
     },
     {
@@ -5780,7 +4960,7 @@
         "en": "Rum flavoured with spices — vanilla, cinnamon, citrus peel."
       },
       "body": {
-        "hr": "Spiced rum je desertni partner. Uz cigar radi kad cigare već nose slatkoću ili začin; uz suhu ligu može djelovati prenatrpano.",
+        "hr": "Spiced rum je desertni partner. Uz cigara radi kad cigare već nose slatkoću ili začin; uz suhu ligu može djelovati prenatrpano.",
         "en": "Spiced rum is a dessert partner. With cigars it works when the cigar already carries sweetness or spice; with dry ligero it can feel cluttered."
       },
       "aliases": [
@@ -5803,7 +4983,7 @@
         "en": "The middle leaf that holds the filler together and helps shape the bunch before the wrapper is applied."
       },
       "body": {
-        "hr": "Capote je strukturalni sloj: manje vidljiv od omotača, ali važan za čvrstoću i ravnomjerno gorenje. Obično je nešto deblji i elastičniji od vanjskog lista.\n\nU okusu binder rijetko dominira; ipak doprinosi punini i stabilnosti dima. Slabije uvezan bonche može goreti neravnomjerno.\n\nZa stol je dovoljno znati da binder drži cigaretu u obliku — poput kostura ispod vidljive površine.",
+        "hr": "Capote je strukturalni sloj: manje vidljiv od omotača, ali važan za čvrstoću i ravnomjerno gorenje. Obično je nešto deblji i elastičniji od vanjskog lista.\n\nU okusu binder rijetko dominira; ipak doprinosi punini i stabilnosti dima. Slabije uvezan bonche može goreti neravnomjerno.\n\nZa stol je dovoljno znati da binder drži cigaru u obliku — poput kostura ispod vidljive površine.",
         "en": "The binder is a structural layer: less visible than the wrapper, yet important for firmness and even burn. It is usually slightly thicker and more elastic than the outer leaf.\n\nIn flavour the binder rarely dominates; it still adds body and smoke stability. A poorly bound bunch may burn unevenly.\n\nAt the table it is enough to know the binder holds the cigar in shape — like a frame beneath the surface."
       },
       "aliases": [
@@ -5828,7 +5008,7 @@
         "en": "Resting fermented tobacco in controlled conditions before rolling."
       },
       "body": {
-        "hr": "Starenje nakon fermentacije smiruje okus — oštri rubovi se zaoblju, note se spajaju. Neke kuće staraju listove mjesecima ili godinama.\n\nNije isto što i starenje gotove cigarete, ali oba koraka grade dubinu. Mlad duhan može biti jak, ali grub.\n\nKad etiketa kaže „aged tobacco”, misli se često na ovaj korak.",
+        "hr": "Starenje nakon fermentacije smiruje okus — oštri rubovi se zaoblju, note se spajaju. Neke kuće staraju listove mjesecima ili godinama.\n\nNije isto što i starenje gotove cigare, ali oba koraka grade dubinu. Mlad duhan može biti jak, ali grub.\n\nKad etiketa kaže „aged tobacco”, misli se često na ovaj korak.",
         "en": "Post-fermentation aging smooths flavour — sharp edges round, notes marry. Some houses age leaf for months or years.\n\nNot the same as aging finished cigars, but both build depth. Young leaf can be strong but rough.\n\nWhen label says aged tobacco, it often means this step."
       },
       "aliases": [
@@ -5869,11 +5049,11 @@
         "en": "Foot"
       },
       "def": {
-        "hr": "Kraj cigarete koji se pali; može biti otvoren ili zatvoren.",
+        "hr": "Kraj cigare koji se pali; može biti otvoren ili zatvoren.",
         "en": "The end of the cigar that is lit; it may be open or closed."
       },
       "body": {
-        "hr": "Stopa je strana koja ide u plamen. Otvorena stopa olakšava paljenje; zatvorena traži više strpljenja, ali može obećati bogatiji prvi dim.\n\nPri paljenju rotirajte cigaretu iznad plamena, bez žurbe. Stopa otkriva koliko je punjenje ujednačeno — neravnomjerno gorenje često počinje ovdje.\n\nNa stolu stopa je praktičan pojam: „Palim stopu, ne glavu.”",
+        "hr": "Stopa je strana koja ide u plamen. Otvorena stopa olakšava paljenje; zatvorena traži više strpljenja, ali može obećati bogatiji prvi dim.\n\nPri paljenju rotirajte cigaru iznad plamena, bez žurbe. Stopa otkriva koliko je punjenje ujednačeno — neravnomjerno gorenje često počinje ovdje.\n\nNa stolu stopa je praktičan pojam: „Palim stopu, ne glavu.”",
         "en": "The foot is the lit end. An open foot lights easily; a closed foot needs patience but may promise a richer first draw.\n\nWhen lighting, rotate the cigar above the flame without rushing. The foot reveals how even the filler is — uneven burn often starts here.\n\nAt the table the foot is practical: I light the foot, not the head."
       },
       "aliases": [
@@ -5895,7 +5075,7 @@
         "en": "Cigar formed by machine, often short filler and HTL wrapper."
       },
       "body": {
-        "hr": "Machine-made cigarete imaju svoje mjesto — jeftinije, ujednačene, brže. Konstrukcija je drugačija od ručnog rada.\n\nOkus može biti prihvatljiv za svakodnevicu, ali nije isti ritual ni slojevitost. Nema tu triple cap ni selekcije listova.\n\nBez snobizma: radi se o namjeni, ne o moralnoj superiornosti.",
+        "hr": "Machine-made cigare imaju svoje mjesto — jeftinije, ujednačene, brže. Konstrukcija je drugačija od ručnog rada.\n\nOkus može biti prihvatljiv za svakodnevicu, ali nije isti ritual ni slojevitost. Nema tu triple cap ni selekcije listova.\n\nBez snobizma: radi se o namjeni, ne o moralnoj superiornosti.",
         "en": "Machine-made cigars have their place — cheaper, uniform, fast. Construction differs from hand work.\n\nFlavour can be fine for daily use, but not same ritual or layering. No triple cap or leaf selection story.\n\nWithout snobbery: it is about purpose, not moral superiority."
       },
       "aliases": [
@@ -5916,7 +5096,7 @@
         "en": "From light to dark roast — how long beans are roasted sets bitterness and body."
       },
       "body": {
-        "hr": "Dark roast + puna cigar = dvostruka gorčina i dim — pazite na balans. Medium roast često najbolji most uz habano.\n\nLight roast je voćniji, manje «kava uz dim» klasičan.",
+        "hr": "Dark roast + puna cigara = dvostruka gorčina i dim — pazite na balans. Medium roast često najbolji most uz habano.\n\nLight roast je voćniji, manje «kava uz dim» klasičan.",
         "en": "Dark roast + full cigar = double bitterness and smoke — watch balance. Medium roast is often the best habano bridge.\n\nLight roast is fruitier, less classic «coffee with smoke»."
       },
       "aliases": [
@@ -5955,41 +5135,17 @@
       "category": "pairing"
     },
     {
-      "id": "perfume-clash",
-      "term": {
-        "hr": "Sukob parfema",
-        "en": "Perfume clash"
-      },
-      "def": {
-        "hr": "Jaki miris na koži ili odjeći koji ulazi u cigar i piće — bez krivnje, s pažnjom.",
-        "en": "Strong scent on skin or clothes entering cigar and drink — not blame, but care."
-      },
-      "body": {
-        "hr": "Cigar i piće su aromatični; parfem je treći glas koji nije pozvan. Na salonu držite miris suptilan. Ako netko primijeti sukob, rješenje je udaljenost i zrak, ne pametovanje.",
-        "en": "Cigar and drink are aromatic; perfume is a third voice uninvited. In a salon, keep scent subtle. If someone notices clash, the fix is distance and air, not clever remarks."
-      },
-      "aliases": [
-        "perfume",
-        "parfem"
-      ],
-      "seeAlso": [
-        "ventilation",
-        "cigar-smell-courtesy"
-      ],
-      "category": "table"
-    },
-    {
       "id": "peat-clash",
       "term": {
         "hr": "Sukob s tresetom",
         "en": "Peat clash"
       },
       "def": {
-        "hr": "Kad dimni, tresetni whisky pregazi suptilniji cigar ili već zasićen tanjur.",
+        "hr": "Kad dimni, tresetni whisky pregazi suptilniju cigaru ili već zasićen nepce.",
         "en": "When smoky, peaty whisky overruns a subtler cigar or an already saturated palate."
       },
       "body": {
-        "hr": "Treset nije greška — ali je glas. Uz Connecticut ili blagi Dominican blend često postane jedini okus u prostoriji. Ako volite treset, birajte cigar koji može odgovoriti puninom, ne samo dimom.",
+        "hr": "Treset nije greška — ali je glas. Uz Connecticut ili blagi Dominican blend često postane jedini okus u prostoriji. Ako volite treset, birajte cigara koji može odgovoriti puninom, ne samo dimom.",
         "en": "Peat is not a mistake — but it is loud. Beside Connecticut or a mild Dominican blend it often becomes the only flavor in the room. If you love peat, choose a cigar that can answer with weight, not only with smoke."
       },
       "aliases": [
@@ -6013,7 +5169,7 @@
         "en": "When wine tannin and smoke drying hit the same edge of the palate."
       },
       "body": {
-        "hr": "Tannin clash osjećate kao pijesak i gorko istovremeno — nije „jak okus“, nego neugoda. Pri stolu je bolje promijeniti vino nego forsirati cigar. Suha crna s Habanom wrapperom čest je kandidat za ovaj sukob.",
+        "hr": "Tannin clash osjećate kao pijesak i gorko istovremeno — nije „jak okus“, nego neugoda. Pri stolu je bolje promijeniti vino nego forsirati cigara. Suha crna s Habanom wrapperom čest je kandidat za ovaj sukob.",
         "en": "Tannin clash feels like grit and bitterness at once — not \"bold flavor,\" but discomfort. At the table, change the wine rather than force the cigar. Dry red with Habano wrapper is a frequent candidate."
       },
       "aliases": [
@@ -6072,30 +5228,6 @@
       "category": "drink"
     },
     {
-      "id": "phone-at-table",
-      "term": {
-        "hr": "Telefon za stolom",
-        "en": "Phone at table"
-      },
-      "def": {
-        "hr": "Ured za ekrane — svjetlo, zvuk i pažnja koja pripada ljudima, ne feedu.",
-        "en": "A policy for screens — light, sound, and attention belong to people, not the feed."
-      },
-      "body": {
-        "hr": "Svjetlo telefona u tamnom salonu reže tuđi mir. Ako morate javiti se, ustanite i odmaknite. Fotografiranje tuđe cigare bez pitanja nije spomen — to je ulizivanje algoritmu.",
-        "en": "Phone light in a dark salon cuts another guest's calm. If you must answer, stand and step away. Photographing someone else's cigar without asking is not a memory — it is feeding the algorithm."
-      },
-      "aliases": [
-        "phone",
-        "mobitel"
-      ],
-      "seeAlso": [
-        "quiet-table",
-        "teach-without-lecture"
-      ],
-      "category": "table"
-    },
-    {
       "id": "tennessee-whiskey",
       "term": {
         "hr": "Tennessee whiskey",
@@ -6106,7 +5238,7 @@
         "en": "American whiskey close to bourbon, additionally filtered through maple charcoal (Lincoln County Process)."
       },
       "body": {
-        "hr": "Tennessee whiskey dijeli kukuruznu bazu i nove opaljene bačve s bourbonom, ali ugljena filtracija daje mekši, često «slađi» profil.\\n\\nUz cigar: sličan izbor kao bourbon — medium do full, cedar i karamela. Ne zamijeniti s peated scotchem.",
+        "hr": "Tennessee whiskey dijeli kukuruznu bazu i nove opaljene bačve s bourbonom, ali ugljena filtracija daje mekši, često «slađi» profil.\\n\\nUz cigara: sličan izbor kao bourbon — medium do full, cedar i karamela. Ne zamijeniti s peated scotchem.",
         "en": "Tennessee whiskey shares corn base and new charred oak with bourbon, but charcoal filtration yields a softer, often «sweeter» profile.\\n\\nWith cigars: similar pick to bourbon — medium to full, cedar and caramel. Do not confuse with peated Scotch."
       },
       "aliases": [
@@ -6120,37 +5252,13 @@
       "category": "drink"
     },
     {
-      "id": "terrace-vs-indoor",
-      "term": {
-        "hr": "Terasa naspram unutra",
-        "en": "Terrace vs indoor"
-      },
-      "def": {
-        "hr": "Gdje dim pripada večeri — otvoreni zrak ili salon s pravilima.",
-        "en": "Where smoke belongs in the evening — open air or a ruled salon."
-      },
-      "body": {
-        "hr": "Terasa daje slobodu; unutra daje ritual. Ne prenosite unutrašnje navike na terasu ni obrnuto. Ako salon ima vanjski dio, pitajte gdje je večeras „kuća“.",
-        "en": "The terrace gives freedom; indoors gives ritual. Do not carry indoor habits to the terrace or the reverse. If the salon has an outdoor section, ask where the house is tonight."
-      },
-      "aliases": [
-        "terrace",
-        "terasa"
-      ],
-      "seeAlso": [
-        "ventilation",
-        "cigar-lounge"
-      ],
-      "category": "table"
-    },
-    {
       "id": "smoke-weight",
       "term": {
         "hr": "Težina dima",
         "en": "Smoke weight"
       },
       "def": {
-        "hr": "Koliko dim ispunjava prostor i tanjur — od gotovo prozračnog do sobnog.",
+        "hr": "Koliko dim ispunjava prostor i nepce — od gotovo prozračnog do sobnog.",
         "en": "How much smoke fills the room and the palate — from nearly airy to room-filling."
       },
       "body": {
@@ -6165,30 +5273,6 @@
         "body-match"
       ],
       "category": "pairing"
-    },
-    {
-      "id": "quiet-table",
-      "term": {
-        "hr": "Tihi stol",
-        "en": "Quiet table"
-      },
-      "def": {
-        "hr": "Razgovor koji ostavlja prostor dimu i piću — bez natjecanja u glasnoći.",
-        "en": "Conversation that leaves room for smoke and drink — without volume competition."
-      },
-      "body": {
-        "hr": "Tihi stol ne znači mutno — znači da se čuje prva rečenica prije treće. U loungeu glasnoća je poštovanje prema susjednom stolu. Monolog o blendu može pričekati pauzu u dimu.",
-        "en": "A quiet table is not mute — it means the first sentence is heard before the third. In a lounge, volume is respect for the next table. A blend monologue can wait for a pause in the smoke."
-      },
-      "aliases": [
-        "quiet",
-        "tiho"
-      ],
-      "seeAlso": [
-        "phone-at-table",
-        "teach-without-lecture"
-      ],
-      "category": "table"
     },
     {
       "id": "wine-body",
@@ -6213,30 +5297,6 @@
         "residual-sugar"
       ],
       "category": "drink"
-    },
-    {
-      "id": "torch-indoors",
-      "term": {
-        "hr": "Torch upaljač unutra",
-        "en": "Torch indoors"
-      },
-      "def": {
-        "hr": "Plamen visoke temperature u zatvorenom — kratko, usmjereno, bez theatralike.",
-        "en": "High-temperature flame indoors — brief, aimed, without theatrics."
-      },
-      "body": {
-        "hr": "Torch unutra ne ide preko stola niti u lice susjeda. Palite blizu foota, ne u centru razgovora. Domaćin u malom prostoru može ponuditi cedar spill ili mekši plamen.",
-        "en": "Torch indoors does not cross the table or a neighbor's face. Light near your foot, not at the center of conversation. In a small room the host may offer cedar spill or softer flame."
-      },
-      "aliases": [
-        "torch",
-        "plamen"
-      ],
-      "seeAlso": [
-        "ask-before-lighting",
-        "borrow-lighter"
-      ],
-      "category": "table"
     },
     {
       "id": "toro",
@@ -6307,11 +5367,11 @@
         "en": "Band (anillas)"
       },
       "def": {
-        "hr": "Papirnata traka oko tijela cigarete s imenom marke, linije ili vitole.",
+        "hr": "Papirnata traka oko tijela cigare s imenom marke, linije ili vitole.",
         "en": "The paper ring around the cigar body bearing brand, line, or vitola name."
       },
       "body": {
-        "hr": "Traka je vizitka cigarete — prvi pisani trag tko je napravio što. Nije samo ukras: pomaže identificirati seriju kad su cigare u humidoru bez kutije.\n\nNeke trake su sekundarne, posebne serije ili godišnji izdanja. Skidanje prije pušenja stvar je ukusa; neki je ostavljaju da ne oštete omotač.\n\nNa stolu traka olakšava razgovor: „Ovo je ista linija, druga veličina.”",
+        "hr": "Traka je vizitka cigare — prvi pisani trag tko je napravio što. Nije samo ukras: pomaže identificirati seriju kad su cigare u humidoru bez kutije.\n\nNeke trake su sekundarne, posebne serije ili godišnji izdanja. Skidanje prije pušenja stvar je ukusa; neki je ostavljaju da ne oštete omotač.\n\nNa stolu traka olakšava razgovor: „Ovo je ista linija, druga veličina.”",
         "en": "The band is the cigar's calling card — the first written clue to who made what. It is not mere decoration: it helps identify a line when cigars sit in the humidor without boxes.\n\nSome bands are secondary, special releases, or annual editions. Removing before smoking is a matter of taste; some leave it to avoid damaging the wrapper.\n\nAt the table the band makes conversation easier: same line, different size."
       },
       "aliases": [
@@ -6359,7 +5419,7 @@
         "en": "A hand-applied cap of three wrapper layers, a sign of careful finishing work."
       },
       "body": {
-        "hr": "Trostruka kapica ima tri vidljiva „kruga” koncentričnih slojeva. Tradicionalno je znak vrhunskog torcedora, posebno u kubanskom stilu.\n\nFunkcionalno je čvršća i estetski ujednačena. Nije nužna za dobar dim — ali govori o ruci koja je završavala cigaretu.\n\nKad je primijetite, to je povod za kompliment izradi, ne za hvaljenje brenda.",
+        "hr": "Trostruka kapica ima tri vidljiva „kruga” koncentričnih slojeva. Tradicionalno je znak vrhunskog torcedora, posebno u kubanskom stilu.\n\nFunkcionalno je čvršća i estetski ujednačena. Nije nužna za dobar dim — ali govori o ruci koja je završavala cigaru.\n\nKad je primijetite, to je povod za kompliment izradi, ne za hvaljenje brenda.",
         "en": "A triple cap shows three visible concentric layers. Traditionally it marks a master roller, especially in Cuban style.\n\nFunctionally it is firmer and neat. It is not required for good smoke — but it speaks of the hand that finished the cigar.\n\nWhen you notice one, it is a compliment to craft, not brand hype."
       },
       "aliases": [
@@ -6376,11 +5436,11 @@
         "en": "Tubo"
       },
       "def": {
-        "hr": "Aluminijska ili plastična cijev za pojedinačnu cigaretu, dodatna zaštita.",
+        "hr": "Aluminijska ili plastična cijev za pojedinačnu cigaru, dodatna zaštita.",
         "en": "Aluminium or plastic tube for a single cigar, extra protection."
       },
       "body": {
-        "hr": "Tubo je putna ili poklon verzija — cigaretu štiti jače nego celofan. Unutra je često cedar ili papir.\n\nPrije pušenja cigaretu treba aklimatizirati u humidoru; tubo usporava razmjenu vlage.\n\nKad netko donese tubo na stol, očekujte malo duže „probuditi” cigaretu.",
+        "hr": "Tubo je putna ili poklon verzija — cigaru štiti jače nego celofan. Unutra je često cedar ili papir.\n\nPrije pušenja cigaru treba aklimatizirati u humidoru; tubo usporava razmjenu vlage.\n\nKad netko donese tubo na stol, očekujte malo duže „probuditi” cigaru.",
         "en": "Tubo is travel or gift format — protects cigar more than cellophane. Inside is often cedar or paper.\n\nBefore smoking, acclimate in humidor; tube slows moisture exchange.\n\nWhen someone brings a tubo to the table, expect a little longer to wake the cigar."
       },
       "aliases": [
@@ -6426,7 +5486,7 @@
         "en": "A butane flame, focused and hot."
       },
       "body": {
-        "hr": "Turbo (jet) upaljač brzo i ravnomjerno zagrijava foot, idealan za vani i za touch-up. Pri paljenju držite plamen malo iznad foota, rotirajte cigar u — ne pečite opnu unaprijed.\n\nUnutrašnje paljenje: neke kuće preferiraju mekši plamen zbog mirisa i etikete.",
+        "hr": "Turbo (jet) upaljač brzo i ravnomjerno zagrijava foot, idealan za vani i za touch-up. Pri paljenju držite plamen malo iznad foota, rotirajte cigaru — ne pečite opnu unaprijed.\n\nUnutrašnje paljenje: neke kuće preferiraju mekši plamen zbog mirisa i etikete.",
         "en": "A torch (jet) lighter heats the foot quickly and evenly, ideal outdoors and for touch-ups. When lighting, hold flame just above the foot and rotate — do not pre-roast the wrapper.\n\nIndoors, some prefer softer flame for aroma and etiquette."
       },
       "aliases": [
@@ -6475,7 +5535,7 @@
         "en": "Tobacco grown under cloth or trees, thinner leaf, milder profile."
       },
       "body": {
-        "hr": "Shade grown smanjuje izravno sunce — list raste tanji, manje oleozan, glađe teksture. Connecticut Shade je najpoznatiji primjer.\n\nNe znači automatski slaba cigaretu; znači drugačiji omotač. Sun-grown iste sorte može biti puniji.\n\nNa stolu usporedite shade i sun kao stil uzgoja.",
+        "hr": "Shade grown smanjuje izravno sunce — list raste tanji, manje oleozan, glađe teksture. Connecticut Shade je najpoznatiji primjer.\n\nNe znači automatski slaba cigaru; znači drugačiji omotač. Sun-grown iste sorte može biti puniji.\n\nNa stolu usporedite shade i sun kao stil uzgoja.",
         "en": "Shade grown reduces direct sun — leaf grows thinner, less oily, smoother. Connecticut Shade is the best-known example.\n\nIt does not automatically mean weak cigar; it means different wrapper. Sun-grown same seed can be fuller.\n\nAt the table compare shade and sun as growing styles."
       },
       "aliases": [
@@ -6525,7 +5585,6 @@
         "umor"
       ],
       "seeAlso": [
-        "session-length",
         "overproof-caution"
       ],
       "category": "pairing"
@@ -6541,7 +5600,7 @@
         "en": "Dipping the foot in a drink — a controversial practice."
       },
       "body": {
-        "hr": "Umočenje foota u viski, rum ili kavu bilo je moda u nekim krugovima; danas ga mnogi smatraju vulgarnim i nepotrebnim — premium cigar u već donosi svoj profil.\n\nAko domaćin nudi piće za umočenje, pristojno je odbiti bez dramatizacije. Nikad ne mojite opnu u tuđi čašu bez poziva.",
+        "hr": "Umočenje foota u viski, rum ili kavu bilo je moda u nekim krugovima; danas ga mnogi smatraju vulgarnim i nepotrebnim — premium cigaru već donosi svoj profil.\n\nAko domaćin nudi piće za umočenje, pristojno je odbiti bez dramatizacije. Nikad ne mojite opnu u tuđi čašu bez poziva.",
         "en": "Dipping the foot in whisky, rum, or coffee was fashion in some circles; today many find it vulgar and needless — a premium cigar already carries its profile.\n\nIf a host offers a drink for dipping, decline politely without theater. Never wet the wrapper in someone else's glass uninvited."
       },
       "aliases": [
@@ -6563,7 +5622,7 @@
         "en": "Excessive airflow resistance while smoking."
       },
       "body": {
-        "hr": "Uske povlačenje znači da dim teško prolazi kroz punjenje. Uzrok može biti previše punjenje, gusti plug u listu punjenja ili konstrukcijska greška.\n\nPušenje uz jako povlačenje povećava temperaturu i gorčinu. Ponekad pomaže blago vlaženje vrha ili strpljivo pušenje; kod teških slučajeva cigar u se jednostavno ne isplati forsirati.",
+        "hr": "Uske povlačenje znači da dim teško prolazi kroz punjenje. Uzrok može biti previše punjenje, gusti plug u listu punjenja ili konstrukcijska greška.\n\nPušenje uz jako povlačenje povećava temperaturu i gorčinu. Ponekad pomaže blago vlaženje vrha ili strpljivo pušenje; kod teških slučajeva cigaru se jednostavno ne isplati forsirati.",
         "en": "A hard draw means smoke struggles to pass through the filler. Causes include overfilling, a dense tobacco plug, or construction flaws.\n\nSmoking with heavy draws raises temperature and bitterness. Mild cap softening or patient pacing sometimes helps; in severe cases, the cigar is not worth forcing."
       },
       "aliases": [
@@ -6576,30 +5635,6 @@
         "hot-burn"
       ],
       "category": "cigar"
-    },
-    {
-      "id": "teach-without-lecture",
-      "term": {
-        "hr": "Učiti bez predavanja",
-        "en": "Teach without lecturing"
-      },
-      "def": {
-        "hr": "Podijeliti znanje kad gost pita — ne kad gost traži mir.",
-        "en": "Share knowledge when the guest asks — not when the guest asks for calm."
-      },
-      "body": {
-        "hr": "Entuzijazam je dobrodošan; predavanje nije. Jedna rečenica o wrapperu bolja je od desetominutne povijesti brenda. Ako gost pita „što bih trebao zapaliti?“, tada je poduka na mjestu.",
-        "en": "Enthusiasm is welcome; lecturing is not. One sentence about the wrapper beats a ten-minute brand history. If the guest asks \"What should I light?\" then instruction belongs."
-      },
-      "aliases": [
-        "teaching",
-        "poduka"
-      ],
-      "seeAlso": [
-        "offering-choice",
-        "quiet-table"
-      ],
-      "category": "table"
     },
     {
       "id": "v-cut",
@@ -6624,33 +5659,9 @@
       "category": "cigar"
     },
     {
-      "id": "ventilation",
-      "term": {
-        "hr": "Ventilacija",
-        "en": "Ventilation"
-      },
-      "def": {
-        "hr": "Kvaliteta zraka — tihi uvjet da dim ostane ugodan, ne otrov.",
-        "en": "Air quality — the quiet condition that keeps smoke pleasant, not poisonous."
-      },
-      "body": {
-        "hr": "Loša ventilacija ne kažnjava samo nepušače — guši i pušače i piće. Domaćin mijenja prostor ili skraćuje večer prije nego što gosti tiho odu. Parfem plus loš zrak plus dim = neugoda.",
-        "en": "Poor ventilation punishes not only non-smokers — it suffocates smokers and drink too. The host changes room or shortens the evening before guests quietly leave. Perfume plus bad air plus smoke equals discomfort."
-      },
-      "aliases": [
-        "ventilation",
-        "zrak"
-      ],
-      "seeAlso": [
-        "non-smoker-courtesy",
-        "perfume-clash"
-      ],
-      "category": "table"
-    },
-    {
       "id": "wine-with-cigar",
       "term": {
-        "hr": "Vino uz cigar",
+        "hr": "Vino uz cigaru",
         "en": "Wine with cigar"
       },
       "def": {
@@ -6658,7 +5669,7 @@
         "en": "Possible, but demands caution — tannin and acidity easily fight smoke."
       },
       "body": {
-        "hr": "Vino uz cigar nije zabranjeno; često je samo nezahvalno. Suha crna s punim madurom rijetko je stvarna harmonija — više tolerancija. Ako birate vino, idite prema blagom tijelu i nižem taninu; upozorite gosta prije nego što učinite izbor.",
+        "hr": "Vino uz cigaru nije zabranjeno; često je samo nezahvalno. Suha crna s punim madurom rijetko je stvarna harmonija — više tolerancija. Ako birate vino, idite prema blagom tijelu i nižem taninu; upozorite gosta prije nego što učinite izbor.",
         "en": "Wine with a cigar is not forbidden; it is often simply unrewarding. Dry red with full maduro is rarely true harmony — more often tolerance. If you choose wine, lean toward gentle body and lower tannin; warn the guest before you commit."
       },
       "aliases": [
@@ -6666,8 +5677,7 @@
         "vino"
       ],
       "seeAlso": [
-        "tannin-clash",
-        "connecticut-fino"
+        "tannin-clash"
       ],
       "category": "pairing"
     },
@@ -6700,11 +5710,11 @@
         "en": "Vitola"
       },
       "def": {
-        "hr": "Kombinacija duljine i promjera prstena — oblik i veličina cigarete.",
+        "hr": "Kombinacija duljine i promjera prstena — oblik i veličina cigare.",
         "en": "The combination of length and ring gauge — the cigar's shape and size."
       },
       "body": {
-        "hr": "Vitola je precizniji pojam od „oblika”. Corona, robusto, toro, lancero — svaka ima tipične dimenzije, ali proizvođači ih blago mijenjaju.\n\nOdabir vitole utječe na tempo, koncentraciju okusa i udobnost. Tanak lancero zahtijeva mirnije pušenje; gordo nudi sporiji, hladniji dim.\n\nNa stolu vitola je kratki način da kažete „kakvu cigaretu držim u ruci”.",
+        "hr": "Vitola je precizniji pojam od „oblika”. Corona, robusto, toro, lancero — svaka ima tipične dimenzije, ali proizvođači ih blago mijenjaju.\n\nOdabir vitole utječe na tempo, koncentraciju okusa i udobnost. Tanak lancero zahtijeva mirnije pušenje; gordo nudi sporiji, hladniji dim.\n\nNa stolu vitola je kratki način da kažete „kakvu cigaru držim u ruci”.",
         "en": "Vitola is more precise than shape. Corona, robusto, toro, lancero — each has typical dimensions, though makers vary them slightly.\n\nVitola choice affects pace, flavour concentration, and comfort. A slim lancero wants calmer smoking; a gordo offers slower, cooler smoke.\n\nAt the table vitola is a short way to say what I hold in my hand."
       },
       "aliases": [
@@ -6714,78 +5724,6 @@
       ],
       "seeAlso": [],
       "category": "cigar"
-    },
-    {
-      "id": "byob",
-      "term": {
-        "hr": "Vlastito piće (BYOB)",
-        "en": "Bring your own bottle (BYOB)"
-      },
-      "def": {
-        "hr": "Kad gost donosi bocu — uz dozvolu domaćina ili ustanove i bez skrivanja.",
-        "en": "When a guest brings a bottle — with host or venue permission and without hiding it."
-      },
-      "body": {
-        "hr": "BYOB uz cigar ima smisla samo gdje je dopušteno i gdje se ne vrijeđa kuća. Pitajte unaprijed; ponudite da se boca podijeli ili da se plati corkage ako postoji. Donijeti bocu u tajnosti nije štednja — to je nepristojnost.",
-        "en": "BYOB with cigars only makes sense where it is allowed and where the house is not insulted. Ask ahead; offer to share or pay corkage if it exists. Bringing a bottle in secret is not thrift — it is poor manners."
-      },
-      "aliases": [
-        "BYOB",
-        "svoja boca"
-      ],
-      "seeAlso": [
-        "host-at-table",
-        "house-rules-vs-lounge"
-      ],
-      "category": "table"
-    },
-    {
-      "id": "water-between-puffs",
-      "term": {
-        "hr": "Voda između dimova",
-        "en": "Water between puffs"
-      },
-      "def": {
-        "hr": "Uobičajena navika čiste vode između dima i pića — bez drame i bez objašnjavanja.",
-        "en": "The ordinary habit of plain water between smoke and drink — without drama or lecture."
-      },
-      "body": {
-        "hr": "Voda nije „slabo piće“ niti zamjena za sparivanje; ona drži stol u ravnoteži. Domaćin je stavi na stol prije nego što netko pita. Topla ili hladna — važnije je da je čista i blizu.",
-        "en": "Water is neither a weak drink nor a substitute for pairing; it keeps the table in balance. The host puts it on the table before anyone asks. Warm or cold — what matters is that it is plain and close at hand."
-      },
-      "aliases": [
-        "water pairing",
-        "voda"
-      ],
-      "seeAlso": [
-        "palate-reset",
-        "water-on-table"
-      ],
-      "category": "pairing"
-    },
-    {
-      "id": "water-on-table",
-      "term": {
-        "hr": "Voda na stolu",
-        "en": "Water on the table"
-      },
-      "def": {
-        "hr": "Čista voda uvijek dostupna — bez objašnjavanja i bez stidne čaše u kutu.",
-        "en": "Plain water always within reach — without explanation and without a shy glass in the corner."
-      },
-      "body": {
-        "hr": "Voda je dio postavljanja stola kao rezač i pepeljara. Domaćin je napuni prije prvog dima. Nije zamjena za piće — ali je znak da brinete o tanjuru gosta.",
-        "en": "Water is part of setting the table like cutter and ashtray. The host fills it before the first puff. It is not a substitute for drink — but it signals care for the guest's palate."
-      },
-      "aliases": [
-        "water table",
-        "voda stol"
-      ],
-      "seeAlso": [
-        "water-between-puffs",
-        "host-at-table"
-      ],
-      "category": "table"
     },
     {
       "id": "volado",
@@ -6798,7 +5736,7 @@
         "en": "Lower, lighter leaves that help ignition and even burning."
       },
       "body": {
-        "hr": "Volado raste blizu tla, gdje je list tanak i manje koncentriran. Ne donosi puno okusa, ali je važan za gorenje.\n\nU punjenju volado pomaže cigaretu da se pali bez napora i da linija pepela ostane ravna. Bez njega dim može biti okusniji, ali i tvrdoglavi.\n\nNa stolu ga spominjite rijetko — osim kad netko pita zašto je neka cigara iznenađujuće laka za paljenje.",
+        "hr": "Volado raste blizu tla, gdje je list tanak i manje koncentriran. Ne donosi puno okusa, ali je važan za gorenje.\n\nU punjenju volado pomaže cigaru da se pali bez napora i da linija pepela ostane ravna. Bez njega dim može biti okusniji, ali i tvrdoglavi.\n\nNa stolu ga spominjite rijetko — osim kad netko pita zašto je neka cigara iznenađujuće laka za paljenje.",
         "en": "Volado grows low on the plant, where the leaf is thin and less concentrated. It adds little flavour but is important for combustion.\n\nIn the filler volado helps the cigar light without struggle and keeps the burn line even. Without it smoke may taste richer but burn stubbornly.\n\nRarely mentioned at the table — except when someone asks why a cigar lights surprisingly easily."
       },
       "aliases": [
@@ -6819,7 +5757,7 @@
         "en": "Excessive smoke temperature from pace or construction."
       },
       "body": {
-        "hr": "Vruće gorenje osjetite po peckanju jezika, naglašenoj gorčini i mirisu zagorjelog lišća. Prebrzo pušenje i usko povlačenje najčešći su krivci.\n\nRješenje je jednostavno: usporite, pustite cigar u da odahne, po potrebi ugasite kratku pauzu. Vruća cigar u ne nagrađuje žurbu.",
+        "hr": "Vruće gorenje osjetite po peckanju jezika, naglašenoj gorčini i mirisu zagorjelog lišća. Prebrzo pušenje i usko povlačenje najčešći su krivci.\n\nRješenje je jednostavno: usporite, pustite cigaru da odahne, po potrebi ugasite kratku pauzu. Vruća cigaru ne nagrađuje žurbu.",
         "en": "A hot burn shows as tongue bite, sharp bitterness, and a scorched-leaf smell. Fast pacing and a tight draw are the usual culprits.\n\nThe fix is simple: slow down, let the cigar breathe, pause if needed. A hot cigar never rewards hurry."
       },
       "aliases": [],
@@ -6864,7 +5802,7 @@
         "en": "«Very Superior Old Pale» — deeper aging than VS, often ~4+ years minimum."
       },
       "body": {
-        "hr": "VSOP je sweet spot za mnoge uz cigar: dovoljno bačve za orahe i vaniliju, bez težine starijih XO.\n\n«Old Pale» povijesno znači bez bojenja karamelom — danas provjerite proizvođača.",
+        "hr": "VSOP je sweet spot za mnoge uz cigaru: dovoljno bačve za orahe i vaniliju, bez težine starijih XO.\n\n«Old Pale» povijesno znači bez bojenja karamelom — danas provjerite proizvođača.",
         "en": "VSOP is a sweet spot for many with cigars: enough cask for nuts and vanilla without XO weight.\n\n«Old Pale» historically meant no caramel colouring — verify with the producer today."
       },
       "aliases": [
@@ -6947,15 +5885,15 @@
     {
       "id": "plugged-cigar",
       "term": {
-        "hr": "Zatvorena / zapušena cigar",
+        "hr": "Zatvorena / zapušena cigara",
         "en": "Plugged cigar"
       },
       "def": {
-        "hr": "Cigar s gustim plugom u punjenju koji blokira protok.",
+        "hr": "Cigara s gustim plugom u punjenju koji blokira protok.",
         "en": "A cigar with a dense tobacco plug blocking airflow."
       },
       "body": {
-        "hr": "Zapušena cigar u ima gotovo neprobojan draw — često zbog guste volute punjenja ili slučajnog komada debelog žila. Razlikujte od općenito uskog drawa: ovdje je otpor lokaliziran i ekstrem.\n\nPoneki iskušavaju iglu za draw; to je kompromis koji može oštetiti strukturu. Za skuplje dimove bolje zamijeniti.",
+        "hr": "Zapušena cigaru ima gotovo neprobojan draw — često zbog guste volute punjenja ili slučajnog komada debelog žila. Razlikujte od općenito uskog drawa: ovdje je otpor lokaliziran i ekstrem.\n\nPoneki iskušavaju iglu za draw; to je kompromis koji može oštetiti strukturu. Za skuplje dimove bolje zamijeniti.",
         "en": "A plugged cigar has nearly impassable draw — often from a dense filler roll or a stray thick stem piece. Unlike general tight draw, resistance feels localized and extreme.\n\nSome use a draw poker; it is a compromise that may harm structure. For prized smokes, replacement is better."
       },
       "aliases": [
@@ -7019,7 +5957,7 @@
         "en": "Wood in humidors and boxes that helps regulate moisture and adds gentle aroma."
       },
       "body": {
-        "hr": "Španjolski cedar (često Cedrela) nije isto što i aromatični cedar iz ormara — tanak je, prikladan za kutije i obloge humidora. Upija višak vlage i vraća je kad treba.\n\nBlaga aromatičnost je prihvatljiva za cigarete; ne prekriva duhan. Unutarnjost kutije često je cedar.\n\nKad otvarate kutiju, miris cedar + duhan je normalan znak skladištenja.",
+        "hr": "Španjolski cedar (često Cedrela) nije isto što i aromatični cedar iz ormara — tanak je, prikladan za kutije i obloge humidora. Upija višak vlage i vraća je kad treba.\n\nBlaga aromatičnost je prihvatljiva za cigare; ne prekriva duhan. Unutarnjost kutije često je cedar.\n\nKad otvarate kutiju, miris cedar + duhan je normalan znak skladištenja.",
         "en": "Spanish cedar (often Cedrela) is not closet cedar — it is thin, suited for boxes and humidor lining. It absorbs excess moisture and returns it when needed.\n\nGentle aroma is acceptable for cigars; it does not mask tobacco. Box interiors are often cedar.\n\nWhen you open a box, cedar plus tobacco scent is normal storage sign."
       },
       "aliases": [

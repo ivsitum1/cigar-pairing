@@ -1,56 +1,83 @@
 {
   "title": {
-    "hr": "Leksikon pairinga",
+    "hr": "Leksikon sparivanja",
     "en": "Pairing language lexicon"
   },
   "intro": {
-    "hr": "Kratak rječnik za razgovor o cigari i piću. Cilj nije zvučati važno, nego precizno reći što se događa u čaši, u dimu i u ritmu stola.",
+    "hr": "Kratak vodič za govor o cigari i piću. Cilj nije zvučati važno, nego precizno reći što se događa u čaši, u dimu i u ritmu stola.",
     "en": "A short vocabulary for speaking about cigar and drink pairings. The goal is not to sound important, but to describe clearly what happens in the glass, the smoke and the rhythm of the table."
   },
   "entries": [
     {
       "id": "most",
-      "title": { "hr": "Most", "en": "Bridge" },
+      "title": {
+        "hr": "Most",
+        "en": "Bridge"
+      },
       "body": "Most je zajednička točka zbog koje se cigara i piće prepoznaju kao par. Ne mora to biti najjača nota; često je riječ o tihoj sličnosti koja spoj drži na okupu.\n\nKatalog mostova\n• Aroma — kakao u maduro cigari i tamna čokolada u rumu.\n• Tekstura — kremast dim i zaobljen konjak.\n• Kontrast s mjerom — svježa kiselina bijelog vina uz masniji dim.\n• Toplina začina — topao začin u cigari i isti takav začin u rye whiskyju.\n\nZa stolom\n• „Meni je most karamela” — rečenica koja opisuje tvoj doživljaj i ostavlja mjesta tuđem, za razliku od „ovo je objektivno najbolji spoj”."
     },
     {
       "id": "gin-koktel-most",
-      "title": { "hr": "Gin i koktel kao most", "en": "Gin and the cocktail bridge" },
+      "title": {
+        "hr": "Gin i koktel kao most",
+        "en": "Gin and the cocktail bridge"
+      },
       "body": "Kad gin dolazi kao koktel, most prema cigari najčešće nosi način posluživanja, a ne sama botanika. Isti gin u martiniju i u toniku traži drukčiju cigaru, pa ljubitelj gina spoj bira prema čaši koju drži u ruci.\n\nKatalog gin mostova\n• Martini — najkoncentriraniji par: hladan i suh, podnosi blažu do srednju cigaru, a most je botanika, ne tijelo.\n• Gin i tonik — razrijeđen i svjež, s manje tijela; radi kao aperitiv ili uvod u jaču cigaru, najbolje uz laganu Connecticut.\n• Negroni — Campari i vermut dodaju gorčinu i tijelo, pa nosi srednju Habano cigaru u kojoj gorko-slatki kontrast reže kremast dim.\n• Navy strength bez razrjeđivanja — gin na 57 % i više nosi i maduro cigaru; kap vode otvara aromu, a espresso zaokružuje treći čin večeri.\n• Mediteranski gin — ružmarin, kadulja i borovica dijele začin s Habano wrapperom, pa i martini i gin s tonikom prate zemljast dim.\n\nOkvirno pravilo\n• Što je koktel razrjeđeniji, to je cigara lakša — koncentracija u čaši i punoća dima idu u paru."
     },
     {
       "id": "tijelo-tijelo",
-      "title": { "hr": "Tijelo ↔ tijelo", "en": "Body to body" },
+      "title": {
+        "hr": "Tijelo ↔ tijelo",
+        "en": "Body to body"
+      },
       "body": "Tijelo opisuje težinu dojma u ustima: lagano, srednje ili puno. Spoj je najmirniji kad oba tijela govore približno jednako glasno.\n\nKatalog tijela\n• Lagano uz lagano — Connecticut, fino sherry, svježije bijelo vino ili filtar kava.\n• Srednje uz srednje — habano, VSOP, tawny porto, zaobljen rum.\n• Puno uz puno — maduro, oloroso, XO, cask strength uz kap vode.\n• Nejednako — može raditi, ali tada spoj traži jasan most ili svjestan kontrast.\n\nOkvirno pravilo\n• Kad jedno drugome briše okus s nepca, tijela nisu u ravnoteži."
     },
     {
       "id": "snaga-vs-tijelo",
-      "title": { "hr": "Snaga nije tijelo", "en": "Strength is not body" },
+      "title": {
+        "hr": "Snaga nije tijelo",
+        "en": "Strength is not body"
+      },
       "body": "Snaga govori koliko nikotin, alkohol, treset ili začin guraju naprijed. Tijelo govori koliko je dojam širok i težak. Ta se dva pojma dodiruju, ali nisu isto.\n\nKatalog razlika\n• Jaka, ali ne puna — paprena cigara kratkog završetka.\n• Puna, ali ne agresivna — kremast maduro s puno kakaa.\n• Alkoholna snaga — 46 % i 60 % alkohola ne traže isti ritam za stolom.\n• Aromatska snaga — treset ili botanika gina mogu prekriti blagu cigaru i kad tijelo nije veliko.\n\nKako se to pita\n• „Je li ti prejako?” i „je li ti preteško?” dva su različita pitanja."
     },
     {
       "id": "trecine",
-      "title": { "hr": "Trećine", "en": "Thirds" },
+      "title": {
+        "hr": "Trećine",
+        "en": "Thirds"
+      },
       "body": "Cigara nije ista od paljenja do kraja. Prva, druga i zadnja trećina mogu tražiti drukčiji gutljaj ili drukčiji tempo.\n\nKatalog trećina\n• Prva trećina — uvod: manji gutljaj, manje alkohola i više pažnje na aromu.\n• Druga trećina — srce cigare i najčešće mjesto glavnog mosta.\n• Zadnja trećina — toplina raste, pa se ritam usporava, gutljaj smanjuje ili cigara završava na vrijeme.\n• Promjena pića — nije poraz; voda ili kava ponekad vrate nepce u igru.\n\nBilješka\n• U dnevnik ide i podatak u kojoj je trećini spoj radio, ne samo je li radio."
     },
     {
       "id": "obitelji-nota",
-      "title": { "hr": "Obitelji nota", "en": "Families of notes" },
+      "title": {
+        "hr": "Obitelji nota",
+        "en": "Families of notes"
+      },
       "body": "Nota je pojedinačna riječ, a obitelj nota je karta. O njoj je lakše razgovarati i manje glumi sigurnost nego tvrdnja da svi za stolom moraju osjetiti baš lješnjak.\n\nKatalog obitelji\n• Slatko — karamela, med, suho voće, vanilija.\n• Tamno — kakao, kava, melasa, tostirani šećer.\n• Drveno — cedar, hrast, kutija cigara, stara polica.\n• Začin — papar, klinčić, cimet, muškatni oraščić.\n• Svježe — citrus, jabuka, bilje, hladna mineralnost.\n\nKako se koristi\n• Razgovor kreće od obitelji, a sužava se tek kad ti nepce daje sigurnu sliku."
     },
     {
       "id": "ritam",
-      "title": { "hr": "Ritam", "en": "Rhythm" },
+      "title": {
+        "hr": "Ritam",
+        "en": "Rhythm"
+      },
       "body": "Ritam je redoslijed i brzina: miris, gutljaj, dim, pauza. Dobar ritam čuva duhan od pregrijavanja, a piće od nadglasavanja.\n\nKatalog ritma\n• Miris pića — dolazi prije prvog dima, da znaš odakle krećeš.\n• Mali gutljaj — navlaži nepce, ali ga ne preuzima.\n• Dim — kratak, nakon kojeg se okus smiri.\n• Pauza — voda, razgovor, bilješka.\n• Ponavljanje — tek u drugom krugu vidiš što se zaista promijenilo.\n\nZnak za usporavanje\n• Gorčina, vruć dim, ili nestanak arome najčešće govore o lošem tempu, a ne o lošem spoju."
     },
     {
       "id": "rijeci-za-stol",
-      "title": { "hr": "Riječi za stol", "en": "Words for the table" },
+      "title": {
+        "hr": "Riječi za stol",
+        "en": "Words for the table"
+      },
       "body": "Dobar pairing je i dobar razgovor. Rječnik otvara stol; ispit iz terminologije ga zatvara.\n\nKatalog rečenica\n• „Meni radi zato što…” — osobno, precizno i nenametljivo.\n• „Osjećaš li više slatko ili drveno?” — pitanje s izborom, a ne provjera znanja.\n• „U drugoj trećini se promijenilo.” — opis promjene bez drame.\n• „Za moj ukus je preglasno.” — mjera bez presude.\n• „Probaj s vodom između.” — pomoć prije nego što se otvara nova boca.\n\nŠto kvari razgovor\n• Natjecanje tko ima skuplju bocu ili veći rječnik — od njega stol postaje hladniji."
     },
     {
       "id": "mini-vjezbe",
-      "title": { "hr": "Mini vježbe", "en": "Mini exercises" },
+      "title": {
+        "hr": "Mini vježbe",
+        "en": "Mini exercises"
+      },
       "body": "Najbolji rječnik nastaje vježbom. Dovoljne su kratke vježbe jer je cilj prepoznati obrazac, a ne napisati degustacijski roman.\n\nKatalog vježbi\n• Jedan most — u jednoj večeri tražiš samo jednu zajedničku notu i na tome staješ.\n• Tijelo prije note — prvo ide procjena je li dojam lagan, srednji ili pun, a tek onda aroma.\n• Tri gutljaja — jedan prije dima, jedan nakon prve trećine i jedan u drugoj trećini.\n• Kontrast — svježe piće namjerno spojeno s punijom cigarom pokazuje gdje je granica.\n• Bez presude — prvo se zapisuje što se dogodilo, a tek onda sviđa li ti se.\n\nNavika\n• Dvije rečenice nakon svake večeri vrijede više od jedne velike teorije."
     }
   ]

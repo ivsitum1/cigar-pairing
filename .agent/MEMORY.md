@@ -25,3 +25,4 @@ cigar_and_rum — Cigar & Rum / knjiga bontona
 - Knjižni draftovi ostaju u `docs/bonton/`
 - Ne pokretati scholarly / PRISMA / statističke pipelinee u ovom workspaceu
 - Shop scrape: CW = VariantInfo + aroma canvas (429→resume); Famous = CAPTCHA na urllib, radi in-page `fetch` u IDE browseru; Famous prose > CW radar bits; ne mapirati broadleaf→Maduro za prikaz wrappera
+- **HR copy:** uvijek `.cursor/rules/hr-copy-canon.mdc` (cigara/padeži, pepeo, domaćin, dim, bez infinitivnih lanaca; Rječnik = pojmovi, Leksikon = govor, Bonton = etiketa)

@@ -29,4 +29,17 @@ describe("club dictionary", () => {
       }
     }
   });
+
+  it("HR prose follows project canon (cigara, pepeo; no bonton table dump)", () => {
+    expect(dictionary.entries.some((e) => e.category === "table")).toBe(false);
+    for (const e of dictionary.entries) {
+      for (const field of ["term", "def", "body"] as const) {
+        const hr = e[field].hr;
+        expect(hr, `${e.id}.${field}`).not.toMatch(
+          /(?<![A-Za-zČĆŽŠĐčćžšđ])cigar(?![A-Za-zČĆŽŠĐčćžšđ\-])/i,
+        );
+        expect(hr, `${e.id}.${field}`).not.toMatch(/(?<![A-Za-zČĆŽŠĐčćžšđ])pepel(?![aeijln])/i);
+      }
+    }
+  });
 });

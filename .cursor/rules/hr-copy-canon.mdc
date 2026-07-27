@@ -1,0 +1,60 @@
+---
+description: HR copy canon for the whole cigar_and_rum project (app, Club, bonton, dictionary)
+alwaysApply: true
+---
+
+# HR copy canon (project-wide)
+
+Applies to **all** Croatian prose in this repo: Club, dictionary, lexicon, 101, facts, bonton, UI strings, pairing blurbs. Do not re-litigate per feature.
+
+## Cigara (not English *cigar*)
+
+| Case | Form | Example |
+|------|------|---------|
+| Nom. sg. | **cigara** | Cigara je srednja. |
+| Gen. sg. | cigare | okus cigare |
+| Dat./Lok. sg. | cigari | uz/o cigari |
+| Ak. sg. | **cigaru** | uz cigaru, biraj cigaru |
+| Inst. sg. | **cigarom** | s cigarom |
+| Nom./Ak. pl. | **cigare** | pune cigare |
+| Gen. pl. | cigara | kutija cigara |
+| Inst. pl. | cigarama | s cigarama |
+
+**Forbidden in HR running text:** bare English *cigar* / *cigars* as the common noun.  
+**Allowed:** brand/line English names; *cigar lounge* as the established loan for the room type (not „javna pušionica”).
+
+Never use *cigareta* when you mean a premium cigar.
+
+## Pepeo
+
+Nominative: **pepeo** (not *pepel*).  
+Genitive *pepela*, compounds *pepeljara*, *pepelni* OK.
+
+## Domaćin / kuća
+
+- Agent who hosts: **domaćin** (not *kuća* as the person).
+- Keep *kućna pravila*, *kućni rezač*, *kućni humidor* when they mean household/house property.
+
+## Dim (countable draw)
+
+- One pull: **dim** (*prvi dim*, *jedan dim*).
+- Not: *dimka*, *povlačenje*, *potez*, *usis* for that sense.
+- Atmosphere/substance also *dim*.
+
+## Infinitive stacks
+
+Do not write etiquette or instructions as bare infinitive chains (*gasiti ili ostaviti*, *pitati prije paljenja*, *ne gurati…*). Prefer finite, spoken Croatian: *gasite ili ostavite*, *pitajte prije nego što zapalite*, *ne gurajte*.
+
+## Club content homes
+
+| Place | Job |
+|-------|-----|
+| **Rječnik** (`dictionary`) | Term → definition + short explanation. Concepts only. |
+| **Leksikon** | How to *speak* about pairing (essays, table phrases). Not called a „rječnik”. |
+| **Bonton** | Etiquette, host/guest, ashtray manners, phone, gifts… |
+
+Do not duplicate bonton precepts or lexicon essays inside the dictionary. If it was already a bonton/lexicon topic, leave it there.
+
+## Pairing label in HR UI
+
+Prefer **sparivanje** over bare English *pairing* in HR sentences (product name / section title may stay bilingual where already established).

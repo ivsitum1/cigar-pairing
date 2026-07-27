@@ -9,6 +9,8 @@ updated: 2026-07-26
 
 ~500 riječi snapshot nedavne aktivnosti. Agent ažurira nakon svake značajnije operacije pisanja u wiki.
 
+> **2026-07-27:** HR kanon (projekt): `.cursor/rules/hr-copy-canon.mdc` — *cigara* (padeži), *pepeo*, *domaćin*≠kuća-agens, bez infinitivnih lanaca, Rječnik≠Leksikon≠Bonton. Rječnik očišćen (maknut table/bonton; Leksikon više nije „rječnik”).
+
 > **2026-07-26:** Pairing/copy prolaz: agricole light-band + bidirekcionalni tag komplem.; 34 slash-boca razdvojene; Holts Clubhouse scrape (34 čl.) + gap map; Club facts (tanini, pepeo, Boveda RH, vino/žestice); 16 brand blurba; krivi URL-ovi (ADN, Perdomo, Camacho, Cohiba); filter tipa pića u Pairing. Testovi 279/279.
 
 > **2026-07-26:** Soft-band drink→cigara: `softBandRank` (max−5 + day seed + cycle); UI samo taj smjer. Audit 779×2394: mean band 35.6, bandSize==1 1.9% (gate OK, formula netaknuta). Izvještaj `01_work/output/SOFT-BAND-RANK-AUDIT.md`.

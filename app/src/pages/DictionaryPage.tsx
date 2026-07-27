@@ -31,7 +31,6 @@ const CATEGORIES: Array<DictionaryCategory | "all"> = [
   "cigar",
   "drink",
   "pairing",
-  "table",
 ];
 
 function letterKey(term: string): string {
