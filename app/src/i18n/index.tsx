@@ -67,7 +67,7 @@ const STRINGS = {
   "club.lexiconBackList": { hr: "Natrag na leksikon", en: "Back to lexicon" },
   "club.dictionary": { hr: "Rječnik", en: "Dictionary" },
   "club.dictionaryTeaser": {
-    hr: "Pojmovnik stola: cigara, piće, pairing i bonton — definicija plus objašnjenje, ne samo prijevod.",
+    hr: "Pojmovnik stola: cigara, piće, sparivanje i bonton — definicija plus objašnjenje, ne samo prijevod.",
     en: "A table glossary: cigar, drink, pairing and etiquette — definition plus explanation, not merely a translation.",
   },
   "club.dictionaryOpen": { hr: "Otvori rječnik", en: "Open the dictionary" },

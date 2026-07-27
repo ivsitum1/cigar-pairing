@@ -4,7 +4,7 @@
     "en": "Dictionary"
   },
   "intro": {
-    "hr": "Pojmovnik stola: cigara, piće, pairing i bonton. Svaki unos ima kratku definiciju i malo duže objašnjenje — ne samo prijevod.",
+    "hr": "Pojmovnik stola: cigara, piće, sparivanje i bonton. Svaki unos ima kratku definiciju i malo duže objašnjenje — ne samo prijevod.",
     "en": "A table glossary: cigar, drink, pairing and etiquette. Each entry has a short definition and a fuller explanation — not merely a translation."
   },
   "entries": [
@@ -19,8 +19,8 @@
         "en": "Tequila made only from agave, without added sugars from other sources."
       },
       "body": {
-        "hr": "100 % agave je minimum za stol uz cigar. Mixto (51 % agave) koristi se za koktele — u pairing kontekstu inferioran izbor.\n\nEtiketa «Hecho en Mexico» i NOM broj pomažu autentičnost.",
-        "en": "100% agave is the minimum for the table with cigars. Mixto (51% agave) suits cocktails — inferior choice in pairing context.\n\n«Hecho en Mexico» and NOM number help verify authenticity."
+        "hr": "Za večer uz cigaru birajte 100 % agave. Mixto (51 % agave) ostaje za koktele — za sparivanje je slabiji izbor.\n\nEtiketa «Hecho en Mexico» i NOM broj pomažu potvrditi porijeklo.",
+        "en": "For an evening with a cigar, choose 100% agave. Mixto (51% agave) stays for cocktails — a weaker pairing choice.\n\n«Hecho en Mexico» and the NOM number help confirm origin."
       },
       "aliases": [
         "100% agave tequila"
@@ -41,7 +41,7 @@
         "en": "High-ABV herbal distillate with wormwood and anise — traditionally diluted with water."
       },
       "body": {
-        "hr": "Absinthe uz cigar nije core pairing aplikacije — jak anis i bilje mogu pregaziti dim. Za eksperiment: lagana cigar, dobro razblažen servis.\n\nMit o halucinogenosti je povijesna propaganda, ne pairing kriterij.",
+        "hr": "Absinth uz cigaru nije u središtu kataloga sparivanja — jak anis i bilje lako pregaze dim. Za pokušaj: lagana cigara i dobro razblažen servis.\n\nMit o halucinogenosti povijesna je propaganda, ne kriterij sparivanja.",
         "en": "Absinthe is not core pairing app territory — strong anise and herbs can overwhelm smoke. For experiment: light cigar, well-diluted serve.\n\nHallucination myth is historical propaganda, not a pairing criterion."
       },
       "aliases": [
@@ -64,7 +64,7 @@
         "en": "Percentage of alcohol in the drink — typically ~40% for many spirits."
       },
       "body": {
-        "hr": "ABV određuje koliko će alkohol «pregaziti» dim cigare. Pairing aplikacija koristi jačinu kao signal — visok ABV traži puniju cigar ili razblaženje.\n\nProof (SAD) = ABV × 2 pri klasičnom skaliranju.",
+        "hr": "ABV govori koliko alkohol može pregaziti dim cigare. Aplikacija koristi jačinu kao signal — visok ABV traži puniju cigaru ili razblaženje.\n\nProof (SAD) = ABV × 2 u klasičnom skaliranju.",
         "en": "ABV sets how much alcohol will «overwhelm» cigar smoke. The pairing app uses strength as a signal — high ABV wants fuller cigars or dilution.\n\nProof (USA) ≈ ABV × 2 on the classic scale."
       },
       "aliases": [
@@ -111,7 +111,7 @@
         "en": "Italian bitter herbal liqueur — roots, herbs, citrus peel, often after meals."
       },
       "body": {
-        "hr": "Amaro uz cigar radi kad cigare nose earth ili spice — gorčina «reže» masnoću dima. Fernet je ekstrem amaro stil — vidi fernet.\n\nSlatkoća varira po brandu; provjerite body u aplikaciji.",
+        "hr": "Amaro uz cigaru radi kad cigare nose zemlju ili začin — gorčina reže masnoću dima. Fernet je ekstrem amaro stila — vidi fernet.\n\nSlatkoća varira po marki; u aplikaciji pogledajte tijelo.",
         "en": "Amaro with cigars works when cigars carry earth or spice — bitterness «cuts» oily smoke. Fernet is extreme amaro style — see fernet.\n\nSweetness varies by brand; check body in the app."
       },
       "aliases": [
@@ -423,7 +423,7 @@
         "en": "Unaged tequila — agave, citrus, pepper; no oak influence."
       },
       "body": {
-        "hr": "Blanco tequila je agave-forward test uz medium cigar s pepper notom. 100 % agave obavezno za ozbiljan stol — mixto je druga kategorija.\n\nNeat malim gutljajem, ne shot.",
+        "hr": "Blanco tequila ističe agavu uz srednje cigare s paprenom notom. Za ozbiljan stol birajte 100 % agave — mixto je druga kategorija.\n\nNeat malim gutljajem, ne kao shot.",
         "en": "Blanco tequila is an agave-forward test with medium peppery cigars. 100% agave is mandatory for a serious table — mixto is another category.\n\nNeat in small sips, not shots."
       },
       "aliases": [
@@ -447,7 +447,7 @@
         "en": "Unaged or lightly aged rum without colour — cocktail base and dry sipping."
       },
       "body": {
-        "hr": "Blanco naglašava šećernu trsku, citrus i ferment. Uz laganu do medium cigar idealan za ljetni stol; uz punu ligu može djelovati tanko.\n\n«Silver» i «white» nisu uvijek isto.",
+        "hr": "Blanco naglašava šećernu trsku, citrus i ferment. Uz laganu do srednju cigaru pogodan je za ljetni stol; uz punu ligu može djelovati tanko.\n\n«Silver» i «white» nisu uvijek isto.",
         "en": "Blanco highlights cane, citrus and ferment. With light to medium cigars it suits a summer table; with full ligero it may feel thin.\n\n«Silver» and «white» are not always the same."
       },
       "aliases": [
@@ -505,6 +505,31 @@
       "category": "drink"
     },
     {
+      "id": "blended-whisky",
+      "term": {
+        "hr": "Blended whisky",
+        "en": "Blended whisky"
+      },
+      "def": {
+        "hr": "Mješavina malt i grain whiskya — konzistentan kućni stil, ne profil jedne destilerije.",
+        "en": "A blend of malt and grain whiskies — a consistent house style, not one distillery profile."
+      },
+      "body": {
+        "hr": "Blended whisky nije «slabiji single malt»: omogućuje stil koji se ponavlja iz boce u bocu. U aplikaciji to često znači pristupačniji ABV i mekšu žitaricu uz srednje do pune cigare.\n\nBlended malt (samo maltovi iz više destilerija) nije isto što i blend malt + grain.",
+        "en": "Blended whisky is not «weaker single malt»: it enables a style that repeats bottle to bottle. In the pairing app that often means approachable ABV and softer grain beside medium to full cigars.\\n\\nBlended malt (malts from several distilleries only) is not the same as malt+grain blend."
+      },
+      "aliases": [
+        "blended whiskey",
+        "blended scotch",
+        "blend"
+      ],
+      "seeAlso": [
+        "single-malt",
+        "scotch-whisky"
+      ],
+      "category": "drink"
+    },
+    {
       "id": "bunch",
       "term": {
         "hr": "Bonche",
@@ -536,7 +561,7 @@
         "en": "Filling technique folding leaves in layers like a book."
       },
       "body": {
-        "hr": "Booking slaže listove ravno, preklopom — brže od entubado, češće u modernim fabricama. Gustoća i povlačenje ovise o pritisku.\n\nDobar booking daje ravnomjerno gorenje; loš moje stvoriti tvrde zone. Nije inferioran — drugačiji kompromis.\n\nTehnički termin za razgovor o konstrukciji, ne okusu direktno.",
+        "hr": "Booking slaže listove ravno, preklopom — brže od entubada, češće u modernim tvornicama. Gustoća i povlačenje ovise o pritisku.\n\nDobar booking daje ravnomjerno gorenje; loš može stvoriti tvrde zone. Nije lošiji način — drugačiji kompromis.\n\nTehnički termin za razgovor o konstrukciji, ne izravno o okusu.",
         "en": "Booking stacks leaves flat, folded — faster than entubado, common in modern factories. Density and draw depend on pressure.\n\nGood booking burns even; bad can create hard spots. Not inferior — different trade-off.\n\nTechnical term for construction talk, not flavour directly."
       },
       "aliases": [
@@ -557,7 +582,7 @@
         "en": "Herbs, spices and seeds macerated or distilled with gin — juniper, coriander, citrus."
       },
       "body": {
-        "hr": "Botaničke note određuju hoće li gin «igrati» s cigaretom. Citrus i korijander rade uz medium; heavy floral može sukobiti s dimom.\n\nNavy strength gin bolje nosi tonic i pairing test.",
+        "hr": "Botaničke note određuju hoće li gin ići uz cigaru. Citrus i korijander često rade uz srednje cigare; jako cvjetni profil može sukobiti s dimom.\n\nNavy strength gin bolje nosi tonic i provjeru uz dim.",
         "en": "Botanical notes decide whether gin «plays» with a cigar. Citrus and coriander suit medium; heavy floral may clash with smoke.\n\nNavy strength gin carries tonic and pairing trials better."
       },
       "aliases": [
@@ -602,7 +627,7 @@
         "en": "American whiskey of at least 51% corn, distilled in the USA and aged in new charred oak barrels."
       },
       "body": {
-        "hr": "Bourbon donosi vaniliju, karamelu i orašastost iz charred new oak — prirodni suputnik cedar i pečenim notama u cigari. Zakonski minimum je 51 % kukuruza; većina boca znatno premašuje taj prag.\\n\\nZa pairing birajte visoke proof varijante s oprezom; 40–46 % ABV obično daje bolju ravnotežu. Vidi i Tennessee whiskey (ugljena filtracija).",
+        "hr": "Bourbon donosi vaniliju, karamelu i orašastost iz novo ugljenih bačava — prirodni suputnik cedru i pečenim notama u cigari. Zakonski minimum je 51 % kukuruza; većina boca znatno premašuje taj prag.\n\nPri sparivanju visoke proof boce uzimajte oprezno; 40–46 % ABV obično daje bolju ravnotežu. Vidi i Tennessee whiskey (filtracija preko ugljena).",
         "en": "Bourbon brings vanilla, caramel and nuttiness from charred new oak — a natural companion to cedar and roast in cigars. The legal floor is 51% corn; most bottles far exceed it.\\n\\nFor pairing, treat high-proof bottlings with care; 40–46% ABV often balances better. See also Tennessee whiskey (charcoal filtration)."
       },
       "aliases": [
@@ -749,6 +774,30 @@
       "category": "cigar"
     },
     {
+      "id": "cachaca",
+      "term": {
+        "hr": "Cachaça",
+        "en": "Cachaça"
+      },
+      "def": {
+        "hr": "Brazilski destilat iz soka šećerne trske — nacionalni spirit i baza caipirinhe.",
+        "en": "Brazilian cane-juice spirit — the national spirit and base of the caipirinha."
+      },
+      "body": {
+        "hr": "Cachaça dijeli sok trske s rhum agricole, ali ima brazilska pravila i vlastiti kulturni kontekst. Bijela (mlada) je travnata i svježa; odležana (ouro/gold) mekša je i složenija.\\n\\nUz cigar: mlada uz laganu/claro; odležana uz medium s pečenim i voćnim notama. Nije sinonim za melasni rum.",
+        "en": "Cachaça shares cane juice with rhum agricole, but follows Brazilian rules and its own cultural frame. Unaged white is grassy and fresh; aged (ouro/gold) is softer and more complex.\\n\\nWith cigars: young with light/claro; aged with medium smoke carrying roast and fruit. Not a synonym for molasses rum."
+      },
+      "aliases": [
+        "cachaca",
+        "aguardente de cana"
+      ],
+      "seeAlso": [
+        "rum-agricole",
+        "rum-blanco"
+      ],
+      "category": "drink"
+    },
+    {
       "id": "calvados",
       "term": {
         "hr": "Calvados",
@@ -759,7 +808,7 @@
         "en": "Normandy apple brandy — tart-sweet fruit and oak."
       },
       "body": {
-        "hr": "Calvados spaja voćnost i tanine koje mogu pratiti medium cigar s cedar notom. Young calvados je življi; vieux je za zimski stol.\n\nServirajte malo hladnije od cognaca.",
+        "hr": "Calvados spaja voćnost i tanine koji mogu pratiti srednje cigare s notom cedra. Mladi calvados življi je; vieux pogodan za zimski stol.\n\nServirajte malo hladnije od cognaca.",
         "en": "Calvados joins fruit and tannin that can follow medium cigars with cedar. Young calvados is livelier; vieux suits winter tables.\n\nServe slightly cooler than Cognac."
       },
       "aliases": [
@@ -850,7 +899,7 @@
         "en": "Whisky (or rum) at full cask strength, not reduced to the usual 40%."
       },
       "body": {
-        "hr": "Cask strength otvara slojeve uz kapljicu vode — idealno za pažljivo pairing ispitivanje. Neat bez vode uz punu cigar može previše peći.\n\nNije isto što i overproof u svim kontekstima, ali oba traže oprez.",
+        "hr": "Cask strength otvara slojeve uz kapljicu vode — pogodan za pažljivo ispitivanje uz cigaru. Neat bez vode uz punu cigaru može previše peći.\n\nNije uvijek isto što i overproof, ali oba traže oprez.",
         "en": "Cask strength opens layers with a drop of water — ideal for careful pairing trials. Neat without water and a full cigar may burn.\n\nNot identical to overproof in every context, but both demand care."
       },
       "aliases": [
@@ -942,7 +991,7 @@
         "en": "Monastic herbal liqueur — green (stronger) or yellow (sweeter), high ABV."
       },
       "body": {
-        "hr": "Chartreuse je kompleksan digestif uz cigar nakon jela — bilje, med, alkohol. Verte je herbaceous; jaune blaži za medium cigar.\n\nJedan gutljaj neat u maloj čaši — ne koktel baza za pairing stol.",
+        "hr": "Chartreuse je složen digestiv uz cigaru nakon jela — bilje, med, alkohol. Verte je jače biljna; jaune blaži uz srednje cigare.\n\nJedan gutljaj neat u maloj čaši — ne baza za koktel na stolu uz dim.",
         "en": "Chartreuse is a complex digestif with cigars after meals — herbs, honey, alcohol. Verte is herbaceous; jaune gentler for medium cigars.\n\nOne neat sip in a small glass — not a cocktail base for the pairing table."
       },
       "aliases": [
@@ -1414,7 +1463,7 @@
         "en": "After-dinner drink — brandy, amaro, herbal liqueur — closes the evening with a cigar."
       },
       "body": {
-        "hr": "Digestif nije «lijek» nego stolski ritual. U pairing aplikaciji herbal i bitter segment raste — vidi amaro, chartreuse, pelinkovac.\n\nNe miješajte s aperitivom prije jela.",
+        "hr": "Digestiv nije «lijek», nego stolski ritual. U katalogu sparivanja biljni i gorki segment raste — vidi amaro, Chartreuse, pelinkovac.\n\nNe miješajte s aperitivom prije jela.",
         "en": "A digestif is not «medicine» but table ritual. In the pairing app herbal and bitter segments are growing — see amaro, chartreuse, pelinkovac.\n\nDo not confuse with pre-dinner aperitif."
       },
       "aliases": [
@@ -1671,7 +1720,7 @@
         "en": "Fruit distillate (pear, plum, cherry) — clean, aromatic, usually little aging."
       },
       "body": {
-        "hr": "Eau-de-vie je digestif preciznosti, ne bačve. Uz cigar rijetko prvi izbor — osim laganih večeri s claro.\n\nGrappa je grožđani rođak; pisco je grožđani destilat iz Perua/Chilea, u app-u često izvan pairing kataloga.",
+        "hr": "Eau-de-vie je digestiv preciznosti, ne bačve. Uz cigaru rijetko prvi izbor — osim laganih večeri s claro omotom.\n\nGrappa je grožđani rođak; pisco je grožđani destilat iz Perua/Čilea, u katalogu često izvan sparivanja.",
         "en": "Eau-de-vie is precision digestif, not cask. Rarely first cigar choice — except light evenings with claro.\n\nGrappa is the grape cousin; pisco is grape distillate from Peru/Chile, often outside the pairing catalog."
       },
       "aliases": [
@@ -1806,7 +1855,7 @@
         "en": "Longest tequila aging tier — often 3+ years in oak (verify current rules)."
       },
       "body": {
-        "hr": "Extra añejo je whiskyesque tequila — oak dominira. Uz cigar voli najpunije dimenzije; uz laganu cigar gubi agave identitet.\n\nCijena ne jamči pairing — ponekad reposado bolje balansira.",
+        "hr": "Extra añejo je tequila u smjeru whiskyja — hrast dominira. Uz cigaru traži najpunije dimenzije; uz laganu cigaru gubi agavin karakter.\n\nCijena ne jamči dobar spoj — ponekad reposado bolje drži ravnotežu.",
         "en": "Extra añejo is whiskyesque tequila — oak dominates. With cigars it loves the fullest dimensions; with light cigars agave identity fades.\n\nPrice does not guarantee pairing — sometimes reposado balances better."
       },
       "aliases": [
@@ -1850,7 +1899,7 @@
         "en": "Extremely bitter amaro — menthol, herbs, often served ice cold."
       },
       "body": {
-        "hr": "Fernet je acquired taste i acquired pairing — uz punu, zemljanu cigar može biti genijalan; uz slatku maduro sukob. Ledeni fernet smanjuje percipiranu gorčinu.\n\nFernet-Branca je benchmark, ne jedini.",
+        "hr": "Fernet je ukus koji se uči — i spoj uz cigaru isto tako. Uz punu, zemljanu cigaru može sjajno raditi; uz slatki maduro često sukob. Ledeni fernet smanjuje osjećaj gorčine.\n\nFernet-Branca je mjerilo, ne jedini.",
         "en": "Fernet is acquired taste and acquired pairing — with full earthy cigars it can be genius; with sweet maduro it clashes. Ice-cold fernet lowers perceived bitterness.\n\nFernet-Branca is the benchmark, not the only one."
       },
       "aliases": [
@@ -1894,7 +1943,7 @@
         "en": "Coffee brewed through a filter — larger volume, cleaner profile, less crema."
       },
       "body": {
-        "hr": "Filter kava uz cigar je casual jutarnji ritual — manje intenzivna od espressa. Medium roast voli medium cigar; very dark roast voli maduro.\n\nSingle origin naglašava terroir — vidi single-origin.",
+        "hr": "Filter kava uz cigaru opušteniji je jutarnji ritual — manje intenzivna od espressa. Srednje pečenje ide uz srednje cigare; jako tamno pečenje uz maduro.\n\nSingle origin naglašava terroir — vidi single-origin.",
         "en": "Filter coffee with cigars is a casual morning ritual — less intense than espresso. Medium roast loves medium cigars; very dark roast loves maduro.\n\nSingle origin highlights terroir — see single-origin."
       },
       "aliases": [
@@ -1955,6 +2004,32 @@
       "category": "drink"
     },
     {
+      "id": "fortified-wine",
+      "term": {
+        "hr": "Fortificirano vino",
+        "en": "Fortified wine"
+      },
+      "def": {
+        "hr": "Vino ojačano dodanim destilatom (obično brandyjem) — porto, sherry, madeira i slični stilovi.",
+        "en": "Wine strengthened with added distillate (usually brandy) — port, sherry, madeira and related styles."
+      },
+      "body": {
+        "hr": "Trenutak fortifikacije određuje stil: porto se ojačava usred fermentacije pa ostaje sladak; sherry se prvo potpuno fermentira, pa se zatim fortificira i često kasnije zaslađuje.\n\nUz cigaru: tawny, oloroso i madeira nose orah, karamelu i oksidaciju; fino je suši i laganiji partner.",
+        "en": "When fortification happens sets the style: port is fortified mid-ferment and stays sweet; sherry is fully fermented first, then fortified and often sweetened later.\\n\\nFor cigar pairing: tawny/oloroso/madeira carry nut, caramel and oxidation; fino is drier and a lighter partner."
+      },
+      "aliases": [
+        "likersko vino",
+        "gespriteter Wein",
+        "fortified"
+      ],
+      "seeAlso": [
+        "port",
+        "sherry",
+        "madeira"
+      ],
+      "category": "drink"
+    },
+    {
       "id": "cigar-case",
       "term": {
         "hr": "Futrola za cigare",
@@ -2011,6 +2086,31 @@
       ]
     },
     {
+      "id": "genever",
+      "term": {
+        "hr": "Genever (jenever)",
+        "en": "Genever (jenever)"
+      },
+      "def": {
+        "hr": "Nizozemski/belgijski predak gina — borovičasti spirit na žitarnoj (sladnoj) bazi.",
+        "en": "Dutch/Belgian ancestor of gin — a juniper spirit on a grain (malt) base."
+      },
+      "body": {
+        "hr": "Genever je puniji i žitniji od London Drya: moutwijn (sladna baza) nosi kruh i žito, a borovica je nježnija. Stilovi oude / jonge / corenwijn razlikuju se po proizvodnji i dozrijevanju.\n\nU domovini se često pije neat, blago ohlađen — uz cigaru birajte srednje cigare, ne peated ekstrem.",
+        "en": "Genever is fuller and grainier than London Dry: moutwijn (malt base) brings bread and cereal, with gentler juniper. Oude / jonge / corenwijn styles differ in production and ageing.\\n\\nAt home it is often drunk neat, lightly chilled — with cigars prefer medium smoke, not peated extremes."
+      },
+      "aliases": [
+        "jenever",
+        "holland gin",
+        "dutch gin"
+      ],
+      "seeAlso": [
+        "gin-london-dry",
+        "gin-and-tonic"
+      ],
+      "category": "drink"
+    },
+    {
       "id": "gin-and-tonic",
       "term": {
         "hr": "Gin tonic (G&T)",
@@ -2021,8 +2121,8 @@
         "en": "Cocktail: gin + tonic water, ice, lime — classic summer long drink."
       },
       "body": {
-        "hr": "G&T uz laganu do medium cigar smanjuje alkoholni udar i dodaje gorčinu koja «reže» dim. Suhi tonic i quality gin — ne treba slatki RTD.\n\nZa pairing aplikaciju razblaženje smanjuje skor za punu ligu.",
-        "en": "G&T with light to medium cigars lowers alcohol punch and adds bitterness that «cuts» smoke. Dry tonic and quality gin — skip sweet RTD.\n\nIn the pairing app, dilution lowers scores for full ligero."
+        "hr": "Gin-tonic uz laganu do srednju cigaru smanjuje udar alkohola i dodaje gorčinu koja reže dim. Birajte suhi tonic i solidan gin — ne slatki RTD (gotovo miješano piće u limenci ili boci).\n\nU aplikaciji razblaženje snižava ocjenu uz punu, jake cigare.",
+        "en": "A G&T with a light to medium cigar softens the alcohol hit and adds bitterness that cuts smoke. Choose dry tonic and proper gin — not a sweet RTD (ready-to-drink mixed drink in a can or bottle).\n\nIn the app, dilution lowers the score against full, strong cigars."
       },
       "aliases": [
         "g&t",
@@ -2220,6 +2320,31 @@
       "category": "table"
     },
     {
+      "id": "grappa",
+      "term": {
+        "hr": "Grappa",
+        "en": "Grappa"
+      },
+      "def": {
+        "hr": "Talijanski destilat komine (kožice i sjemenke) — nije brandy od vina.",
+        "en": "Italian pomace distillate (skins and seeds) — not wine brandy."
+      },
+      "body": {
+        "hr": "Grappa je digestif preciznosti: aroma sorte grožđa (monovitigno) ili mješavine. Većina je bistra i svježe flaširana; odležane (riserva) dobiju boju i mekoću bačve.\\n\\nUz cigar rijetko prvi izbor — osim lagane večeri s claro ili kao kratki završetak nakon jela. U katalogu brandy stil «grappa».",
+        "en": "Grappa is a precision digestif: variety aroma (monovitigno) or a blend. Most is clear and bottled fresh; aged (riserva) gains colour and cask softness.\\n\\nWith cigars rarely a first choice — except a light claro evening or a short close after a meal. In the catalog under brandy style «grappa»."
+      },
+      "aliases": [
+        "grappe",
+        "pomace brandy"
+      ],
+      "seeAlso": [
+        "digestif",
+        "eau-de-vie",
+        "armagnac"
+      ],
+      "category": "drink"
+    },
+    {
       "id": "habano-wrapper",
       "term": {
         "hr": "Habano omotač",
@@ -2305,8 +2430,8 @@
         "en": "A long drink: spirit plus fizzy mixer, plenty of ice, tall glass."
       },
       "body": {
-        "hr": "Highball smanjuje percipiranu jačinu alkohola — korisno uz cigar u vrućini. Rum-cola ili whisky-soda nisu «manje ozbiljni» parovi uz laganu cigar.\n\nZa pairing aplikaciju visoka razblaženost smanjuje skor za punu ligu.",
-        "en": "A highball lowers perceived alcohol — useful with a cigar in heat. Rum-cola or whisky-soda are not «less serious» with a light cigar.\n\nIn the pairing app, high dilution lowers scores for full ligero."
+        "hr": "Highball smanjuje osjećaj jačine alkohola — koristan uz cigaru na vrućini. Rum-cola ili whisky sa sodom nisu «manje ozbiljni» parovi uz laganu cigaru.\n\nU aplikaciji jako razblaženje snižava ocjenu uz pune, jake cigare.",
+        "en": "A highball softens perceived alcohol — useful with a cigar in the heat. Rum-cola or whisky-soda are not «less serious» with a light cigar.\n\nIn the app, heavy dilution lowers the score against full, strong cigars."
       },
       "aliases": [
         "long drink"
@@ -2488,7 +2613,7 @@
         "en": "Scottish island region known for smoky, maritime single malts."
       },
       "body": {
-        "hr": "Islay je ekstrem pairing teren: iodine, dim, slanost. Uz cigar voli puni body i earth — uz lagani claro može pregaziti.\n\nNe svi Islay maltovi su jednako peated; provjerite destileriju.",
+        "hr": "Islay je zahtjevan teren za sparivanje: jod, dim, slanost. Uz cigaru voli puno tijelo i zemlju — uz lagani claro može pregaziti.\n\nNisu svi Islay maltovi jednako peated; gledajte destileriju.",
         "en": "Islay is extreme pairing terrain: iodine, smoke, salt. With cigars it loves full body and earth — it may overwhelm light claro.\n\nNot all Islay malts are equally peated; check the distillery."
       },
       "aliases": [
@@ -2663,7 +2788,7 @@
         "en": "A small amount of water in whisky or high-ABV spirit — opens aroma."
       },
       "body": {
-        "hr": "Kap vode mijenja emulziju aromatika — često bolji pairing test nego led. Posebno kod cask strength uz medium-full cigar.\n\nNe «razrijedite» bocu — dodajte u čašu po gutljaju.",
+        "hr": "Kap vode mijenja aromu u čaši — često bolji test uz cigaru nego led. Posebno kod cask strength uz srednje do pune cigare.\n\nNe razrjeđujte bocu — dodajte u čašu po gutljaju.",
         "en": "A water drop changes aromatic emulsion — often a better pairing test than ice. Especially with cask strength and medium-full cigars.\n\nDo not «dilute the bottle» — add to the glass per sip."
       },
       "aliases": [
@@ -2708,7 +2833,7 @@
         "en": "Espresso with milk — cappuccino, flat white, latte; texture and sweetness."
       },
       "body": {
-        "hr": "Mlijeko smanjuje gorčinu kave — uz cigar rijetko idealno osim uz blage, kremaste cigare. Za «ozbiljan» pairing birajte crnu kavu.\n\nJutarnji cappuccino + cigar je stil, ne pravilo aplikacije.",
+        "hr": "Mlijeko smanjuje gorčinu kave — uz cigaru rijetko idealno, osim uz blage, kremaste cigare. Za ozbiljniji spoj birajte crnu kavu.\n\nJutarnji cappuccino uz cigaru stil je, ne pravilo aplikacije.",
         "en": "Milk reduces coffee bitterness — with cigars rarely ideal except with mild, creamy cigars. For «serious» pairing choose black coffee.\n\nMorning cappuccino + cigar is style, not an app rule."
       },
       "aliases": [
@@ -2756,7 +2881,7 @@
         "en": "Freshness and «cut» in wine — balances sweetness and richness of food and cigars."
       },
       "body": {
-        "hr": "Kiselost u vinu može «oživjeti» usta nakon masnog dima. Fino sherry i young white s dobrim acidom rade uz medium cigar.\n\nPreviše kiselosti uz gorku ligu stvara sukob.",
+        "hr": "Kiselost u vinu može oživjeti usta nakon masnog dima. Fino sherry i mlado bijelo s dobrom kiselošću rade uz srednje cigare.\n\nPreviše kiselosti uz gorku ligu stvara sukob.",
         "en": "Acidity in wine can «refresh» the palate after oily smoke. Fino sherry and young whites with good acid suit medium cigars.\n\nToo much acidity with bitter ligero clashes."
       },
       "aliases": [
@@ -3247,12 +3372,12 @@
         "en": "Soft recommendation band"
       },
       "def": {
-        "hr": "U aplikaciji: raspon ocjena u kojem engine predlaže, a ne garantira sparivanje.",
-        "en": "In the app: a score range where the engine suggests, not guarantees, a pairing."
+        "hr": "U aplikaciji: raspon ocjena u kojem motor predlaže sparivanje, a ne jamči ga.",
+        "en": "In the app: a score range where the engine suggests a pairing, without guaranteeing it."
       },
       "body": {
-        "hr": "Meki pojas znači da postotak nije istina na stolu — to je smjer za istraživanje. Ispod njega piće može i dalje raditi uz vaš ukus; iznad njega nije obećanje savršenstva. Stol uvijek pobjeđuje algoritam.",
-        "en": "A soft band means the percentage is not truth at the table — it is a direction for exploration. Below it, a drink may still work for your taste; above it is not a promise of perfection. The table always beats the algorithm."
+        "hr": "Meki pojas znači da postotak nije sud na stolu — to je smjer za istraživanje. Ispod njega piće i dalje može odgovarati vašem ukusu; iznad njega nije obećanje savršenstva. Stol uvijek ima prednost pred algoritmom.",
+        "en": "A soft band means the percentage is not a verdict at the table — it is a direction for exploration. Below it, a drink may still suit your taste; above it is not a promise of perfection. The table always outweighs the algorithm."
       },
       "aliases": [
         "soft band",
@@ -3485,7 +3610,7 @@
         "en": "Naval convention: alcohol around 57% ABV — today used for gin and rum alike."
       },
       "body": {
-        "hr": "Pri ~57 % ABV neki aromati ostaju bolje suspendirani nego pri 40 %. Za cigar pairing navy-strength gin u suhom G&T-u ili rum s kapljom vode otvara slojeve bez slatkoće.\n\nStil, ne rang kvalitete.",
+        "hr": "Pri oko 57 % ABV neke arome ostaju bolje otvorene nego pri 40 %. Uz cigaru navy-strength gin u suhom G&T-u ili rum s kapljom vode otvara slojeve bez slatkoće.\n\nStil, ne rang kvalitete.",
         "en": "At ~57% ABV some aromatics stay better suspended than at 40%. For cigar pairing, navy-strength gin in a dry G&T or rum with a water splash opens layers without sweetness.\n\nA style choice, not a quality rank."
       },
       "aliases": [
@@ -3821,7 +3946,7 @@
         "en": "Oxidatively aged sherry without flor — full, nutty, no added sugar in classic style."
       },
       "body": {
-        "hr": "Oloroso voli punu cigar i večernji stol. Tanini i orahe paralelne su s maduro i habano dimom.\n\nCream sherry je slatka mješavina — drugačiji pairing profil.",
+        "hr": "Oloroso voli punu cigaru i večernji stol. Tanini i orasi idu uz maduro i habano dim.\n\nCream sherry je slatka mješavina — drugačiji profil sparivanja.",
         "en": "Oloroso loves full cigars and evening tables. Tannins and nuts parallel maduro and habano smoke.\n\nCream sherry is a sweet blend — different pairing profile."
       },
       "aliases": [
@@ -4008,7 +4133,7 @@
         "en": "Rum with ABV well above the usual ~40% — often 57% or higher."
       },
       "body": {
-        "hr": "Overproof nije «jači okus» nego koncentriran alkohol i aroma. Za stol uz cigar predlažemo razblaženje ili vrlo mali gutljaj.\n\nU koktelskom kontekstu highball ili daiquiri s ledom smanjuju udar; pairing aplikacija preferira umjerene ABV-e.",
+        "hr": "Overproof nije «jači okus», nego koncentriran alkohol i aroma. Uz cigaru predlažemo razblaženje ili vrlo mali gutljaj.\n\nU koktelu highball ili daiquiri s ledom smanjuju udar; aplikacija voli umjerenije ABV-e.",
         "en": "Overproof is not simply «more flavour» but concentrated alcohol and aroma. At the table with a cigar, dilution or a very small sip is wise.\n\nIn cocktails, highball or daiquiri with ice tame the punch; the pairing app favours moderate ABV."
       },
       "aliases": [
@@ -4029,18 +4154,19 @@
         "en": "Pairable flag"
       },
       "def": {
-        "hr": "U katalogu: signal da boca ulazi u pairing engine, a ne samo u shopping.",
-        "en": "In the catalog: a signal that a bottle enters the pairing engine, not shopping alone."
+        "hr": "U katalogu: oznaka da boca ulazi u sparivanje s cigarom, a ne samo na popis za kupnju.",
+        "en": "In the catalog: a mark that a bottle enters cigar pairing, not the shopping list alone."
       },
       "body": {
-        "hr": "Ne svaka boca na polici zaslužuje stol uz dim. Oznaka sparivosti štedi gosta od kremastih likera i RTD pića koja su tu zbog zabave, ne zbog večeri. To je kuratorska odluka, ne zabrana.",
-        "en": "Not every bottle on the shelf earns a place beside smoke. The pairable flag saves guests from creamy liqueurs and RTD drinks that exist for fun, not for the evening. It is a curatorial choice, not a ban."
+        "hr": "Ne ide svaka boca s police uz cigaru. Oznaka sparivosti izdvaja boce koje ulaze u sparivanje s dimom i štedi gosta od kremastih likera te RTD-a — gotovih miješanih pića u limenci ili boci (eng. ready-to-drink), često slatkih i napravljenih za zabavu, ne za večer uz dim. To je odluka kataloga, ne zabrana.",
+        "en": "Not every bottle from the shelf belongs with a cigar. The pairable mark picks bottles that enter pairing with smoke and spares guests creamy liqueurs and RTDs — ready-to-drink mixed drinks in a can or bottle, often sweet and made for fun, not for an evening with smoke. It is a catalog choice, not a ban."
       },
       "aliases": [
         "pairable",
         "sparivost"
       ],
       "seeAlso": [
+        "rtd",
         "digestif-pairing",
         "soft-recommendation-band"
       ],
@@ -4168,7 +4294,7 @@
         "en": "Whisky with smoke from drying malt over peat — characteristic of parts of Scotland."
       },
       "body": {
-        "hr": "Peat i dim cigare mogu biti savršen par ili previše dima. Pravilo stola: usporedite intenzitet — lagan peat uz medium cigar, teški Islay uz punu ligu.\n\nPeat se mjeri ppm fenola; visok ppm nije uvijek «bolji».",
+        "hr": "Treset i dim cigare mogu biti savršen par ili previše dima. Pravilo stola: usporedite intenzitet — lagani peat uz srednje cigare, teški Islay uz punu ligu.\n\nPeat se mjeri u ppm fenola; visok ppm nije uvijek «bolji».",
         "en": "Peat and cigar smoke can be a perfect match or too much smoke. Table rule: match intensity — light peat with medium cigars, heavy Islay with full ligero.\n\nPeat is measured in ppm phenol; high ppm is not always «better»."
       },
       "aliases": [
@@ -4483,6 +4609,29 @@
       "category": "cigar"
     },
     {
+      "id": "plymouth-gin",
+      "term": {
+        "hr": "Plymouth gin",
+        "en": "Plymouth gin"
+      },
+      "def": {
+        "hr": "Gin sa zaštićenom geografskom oznakom — smije se proizvoditi samo u Plymouthu (UK).",
+        "en": "Gin with protected geographical indication — may be produced only in Plymouth (UK)."
+      },
+      "body": {
+        "hr": "Plymouth je zaseban stil od London Drya: malo manje suh, aromatičniji, sa «zemljanijim» korijenjem u botanici. Klasična jačina oko 41,2 %; navy strength (oko 57 %) povijesno je vezan uz mornaricu.\n\nU katalogu stil «plymouth» — uz cigaru često blago mekši od oštrog London Drya bogatog borovicom.",
+        "en": "Plymouth is a distinct style from London Dry: slightly less dry, more aromatic, with earthier roots in the botanicals. Classic strength ~41.2%; navy strength (~57%) is historically tied to the navy.\\n\\nIn the app catalog as style «plymouth» — for pairing often a touch softer than sharp juniper-forward London Dry."
+      },
+      "aliases": [
+        "plymouth"
+      ],
+      "seeAlso": [
+        "gin-london-dry",
+        "gin-and-tonic"
+      ],
+      "category": "drink"
+    },
+    {
       "id": "body-match",
       "term": {
         "hr": "Podudaranje tijela",
@@ -4621,7 +4770,7 @@
         "en": "Classic batch pot still — heavier, more aromatic spirit than column still."
       },
       "body": {
-        "hr": "Pot still whiskey (Irish single pot still, malt) nosi tijelo koje voli punu cigar. Column still daje čistiju neutralnu bazu za blend.\n\nDestilac oblikuje pairing više nego godina na etiketi u jeftinijim segmentima.",
+        "hr": "Pot still whiskey (irski single pot still, malt) nosi tijelo koje voli punu cigaru. Column still daje čistiju, neutralniju bazu za blend.\n\nNačin destilacije oblikuje sparivanje više nego godina na etiketi u jeftinijim segmentima.",
         "en": "Pot still whiskey (Irish single pot still, malt) carries body that loves a full cigar. Column still gives cleaner neutral base for blends.\n\nStill type shapes pairing more than label age in cheaper segments."
       },
       "aliases": [
@@ -4849,7 +4998,7 @@
         "en": "A circular cut in the center of the cap."
       },
       "body": {
-        "hr": "Punch (bullet cut) ostavlja veći dio capa intact — draw je često nešto uži, koncentracija okusa jača. Pogodan za jače cigare ili guste capove.\n\nOčistite punch nakon uporabe; zaglavljena opna kvare sljedeći rez.",
+        "hr": "Punch (bullet cut) ostavlja veći dio kape netaknut — povlačenje je često nešto užje, koncentracija okusa jača. Pogodan za jače cigare ili guste kape.\n\nOčistite punch nakon uporabe; zaglavljena opna kvari sljedeći rez.",
         "en": "A punch (bullet cut) leaves more of the cap intact — draw is often slightly tighter, flavor concentration stronger. Suited to fuller cigars or thick caps.\n\nClean the punch after use; jammed wrapper ruins the next cut."
       },
       "aliases": [
@@ -5083,7 +5232,7 @@
         "en": "A deliberate break between sips or puffs that restores sensitivity to the palate."
       },
       "body": {
-        "hr": "Reset nije „pranje“ greške — to je pauza u kojoj tanjur opet čuje. Voda, blagi cracker, kratka šutnja: sve su to alati domaćina, ne znak da je sparivanje propalo.",
+        "hr": "Reset nije «pranje» greške — to je pauza u kojoj nepce opet čuje. Voda, blagi cracker, kratka šutnja: alati domaćina, ne znak da je sparivanje propalo.",
         "en": "A reset is not washing away a mistake — it is a pause in which the palate can hear again. Water, a plain cracker, a brief silence: these are host tools, not proof the pairing failed."
       },
       "aliases": [
@@ -5210,6 +5359,31 @@
       "category": "cigar"
     },
     {
+      "id": "rtd",
+      "term": {
+        "hr": "RTD (gotovo piće)",
+        "en": "RTD (ready-to-drink)"
+      },
+      "def": {
+        "hr": "Gotovo miješano piće u limenci ili boci — eng. ready-to-drink.",
+        "en": "A pre-mixed drink in a can or bottle — ready-to-drink."
+      },
+      "body": {
+        "hr": "RTD su kokteli i long drinkovi koji dolaze već pomiješani: gin-tonic u limenci, slatki punch, hard seltzer i slično. Često su slađi i razblaženiji od čaše koju sami sastavite.\n\nUz cigaru rijetko ulaze u sparivanje — više pripadaju zabavi i brzom servisu nego večeri uz dim. Vidi i oznaku sparivosti.",
+        "en": "RTDs are cocktails and long drinks sold already mixed: canned G&T, sweet punch, hard seltzer and the like. They are often sweeter and more diluted than a glass you build yourself.\n\nWith cigars they rarely enter pairing — they belong more to casual fun than an evening with smoke. See also the pairable mark."
+      },
+      "aliases": [
+        "ready-to-drink",
+        "gotovo piće",
+        "RTD"
+      ],
+      "seeAlso": [
+        "pairable-flag",
+        "gin-and-tonic"
+      ],
+      "category": "drink"
+    },
+    {
       "id": "hand-rolled",
       "term": {
         "hr": "Ručno motana",
@@ -5311,7 +5485,7 @@
         "en": "Whisky distilled and aged in Scotland — single malt, blended and grain."
       },
       "body": {
-        "hr": "Scotch je širok obitelj: od laganog Speyside do dimnog Islaya. Za cigar pairing peated i sherry-matured maltovi često nose najbolji most prema dimu.\n\n«Whisky» piše se u Škotskoj; «whiskey» u Irskoj i SAD-u.",
+        "hr": "Scotch je široka obitelj: od laganog Speysidea do dimnog Islaya. Uz cigaru peated i sherry-matured maltovi često nose najbolji most prema dimu.\n\n«Whisky» piše se u Škotskoj; «whiskey» u Irskoj i SAD-u.",
         "en": "Scotch is a broad family: from light Speyside to smoky Islay. For cigar pairing, peated and sherry-matured malts often bridge smoke best.\n\n«Whisky» in Scotland; «whiskey» in Ireland and the USA."
       },
       "aliases": [
@@ -5410,7 +5584,7 @@
         "en": "Whisky from one distillery, made only from malted barley."
       },
       "body": {
-        "hr": "Single malt ne znači automatski «bolji» od blend-a — znači jedinstven profil destilerije. Za pairing istražite regiju: Islay vs Speyside daje suprotan rezultat.\n\nCask strength single malt traži vodu ili strpljenje.",
+        "hr": "Single malt ne znači automatski «bolji» od blenda — znači jedinstven profil destilerije. Pri sparivanju istražite regiju: Islay i Speyside daju suprotan rezultat.\n\nCask strength single malt traži vodu ili strpljenje.",
         "en": "Single malt does not automatically mean «better» than blend — it means one distillery's profile. For pairing, region matters: Islay vs Speyside give opposite results.\n\nCask strength single malt wants water or patience."
       },
       "aliases": [
@@ -5922,6 +6096,30 @@
       "category": "table"
     },
     {
+      "id": "tennessee-whiskey",
+      "term": {
+        "hr": "Tennessee whiskey",
+        "en": "Tennessee whiskey"
+      },
+      "def": {
+        "hr": "Američki whiskey blizak bourbonu, dodatno filtriran kroz javorov ugljen (Lincoln County Process).",
+        "en": "American whiskey close to bourbon, additionally filtered through maple charcoal (Lincoln County Process)."
+      },
+      "body": {
+        "hr": "Tennessee whiskey dijeli kukuruznu bazu i nove opaljene bačve s bourbonom, ali ugljena filtracija daje mekši, često «slađi» profil.\\n\\nUz cigar: sličan izbor kao bourbon — medium do full, cedar i karamela. Ne zamijeniti s peated scotchem.",
+        "en": "Tennessee whiskey shares corn base and new charred oak with bourbon, but charcoal filtration yields a softer, often «sweeter» profile.\\n\\nWith cigars: similar pick to bourbon — medium to full, cedar and caramel. Do not confuse with peated Scotch."
+      },
+      "aliases": [
+        "tennessee whisky",
+        "lincoln county"
+      ],
+      "seeAlso": [
+        "bourbon",
+        "rye-whiskey"
+      ],
+      "category": "drink"
+    },
+    {
       "id": "terrace-vs-indoor",
       "term": {
         "hr": "Terasa naspram unutra",
@@ -6003,7 +6201,7 @@
         "en": "Sense of weight and fullness in the mouth — from light to full."
       },
       "body": {
-        "hr": "Body vina treba pratiti body cigare. Lagano vino + puna cigar = vino nestaje; puno vino + lagana cigar = vino dominira.\n\nPairing aplikacija koristi sličnu logiku u skorovima.",
+        "hr": "Tijelo vina treba pratiti tijelo cigare. Lagano vino uz punu cigaru nestaje; puno vino uz laganu cigaru dominira.\n\nAplikacija koristi sličnu logiku u ocjenama.",
         "en": "Wine body should track cigar body. Light wine + full cigar = wine vanishes; full wine + light cigar = wine dominates.\n\nThe pairing app uses similar logic in scores."
       },
       "aliases": [
@@ -6252,7 +6450,7 @@
         "en": "Coffee boiled in a cezve with fine grounds — sediment, short, intense."
       },
       "body": {
-        "hr": "Turska kava je kratka, gusta i aromatična — uz cigar poslije jela, ne uz prvi dim. Slatkoća (šeker u džezvi) mijenja pairing profil.\n\nTalog se ne pije — stolska kultura, ne žurba.",
+        "hr": "Turska kava je kratka, gusta i aromatična — uz cigaru poslije jela, ne uz prvi dim. Slatkoća (šećer u džezvi) mijenja profil sparivanja.\n\nTalog se ne pije — stolska kultura, ne žurba.",
         "en": "Turkish coffee is short, thick and aromatic — with cigars after a meal, not with the first smoke. Sugar in the cezve changes pairing profile.\n\nDo not drink the sediment — table culture, not a rush."
       },
       "aliases": [
@@ -6643,7 +6841,7 @@
         "en": "«Very Special» — youngest Cognac tier, usually at least ~2 years in oak."
       },
       "body": {
-        "hr": "VS je svježiji, voćniji — dobar uz medium cigar kad ne želite teški oak. Nije «jeftino vino» nego mladiji profil.\n\nPravila starosti odnose se na najmlađi destilat u mješavini.",
+        "hr": "VS je svježiji, voćniji — dobar uz srednje cigare kad ne želite teški hrast. Nije «jeftino vino», nego mladiji profil.\n\nPravila starosti odnose se na najmlađi destilat u mješavini.",
         "en": "VS is fresher, fruitier — good with medium cigars when you avoid heavy oak. Not «cheap wine» but a younger profile.\n\nAge rules apply to the youngest spirit in the blend."
       },
       "aliases": [
@@ -6711,7 +6909,7 @@
         "en": "«Extra Old» — longest minimum aging tier in Cognac (rules updated over time)."
       },
       "body": {
-        "hr": "XO nosi kompleksnost za posebne večeri i punije cigare. Napoleon i Hors d'âge su marketinške podkategorije unutar starijeg spektra.\n\nCijena XO ne jamči idealan pairing — ponekad VSOP bolje balansira.",
+        "hr": "XO nosi složenost za posebne večeri i punije cigare. Napoleon i Hors d'âge marketinške su podkategorije unutar starijeg spektra.\n\nCijena XO ne jamči idealan spoj — ponekad VSOP bolje drži ravnotežu.",
         "en": "XO carries complexity for special evenings and fuller cigars. Napoleon and Hors d'âge are marketing sub-tiers within the older spectrum.\n\nXO price does not guarantee ideal pairing — sometimes VSOP balances better."
       },
       "aliases": [
@@ -6831,178 +7029,6 @@
       ],
       "seeAlso": [],
       "category": "cigar"
-    },
-    {
-      "id": "blended-whisky",
-      "term": {
-        "hr": "Blended whisky",
-        "en": "Blended whisky"
-      },
-      "def": {
-        "hr": "Mješavina malt i grain whiskya — konzistentan kućni stil, ne profil jedne destilerije.",
-        "en": "A blend of malt and grain whiskies — a consistent house style, not one distillery profile."
-      },
-      "body": {
-        "hr": "Blended whisky nije «slabiji single malt»: omogućuje stil koji se ponavlja iz boce u bocu. U pairing aplikaciji to često znači pristupačniji ABV i mekšu žitaricu uz medium do full cigar.\\n\\nBlended malt (samo maltovi iz više destilerija) nije isto što i blend malt+grain.",
-        "en": "Blended whisky is not «weaker single malt»: it enables a style that repeats bottle to bottle. In the pairing app that often means approachable ABV and softer grain beside medium to full cigars.\\n\\nBlended malt (malts from several distilleries only) is not the same as malt+grain blend."
-      },
-      "aliases": [
-        "blended whiskey",
-        "blended scotch",
-        "blend"
-      ],
-      "seeAlso": [
-        "single-malt",
-        "scotch-whisky"
-      ],
-      "category": "drink"
-    },
-    {
-      "id": "cachaca",
-      "term": {
-        "hr": "Cachaça",
-        "en": "Cachaça"
-      },
-      "def": {
-        "hr": "Brazilski destilat iz soka šećerne trske — nacionalni spirit i baza caipirinhe.",
-        "en": "Brazilian cane-juice spirit — the national spirit and base of the caipirinha."
-      },
-      "body": {
-        "hr": "Cachaça dijeli sok trske s rhum agricole, ali ima brazilska pravila i vlastiti kulturni kontekst. Bijela (mlada) je travnata i svježa; odležana (ouro/gold) mekša je i složenija.\\n\\nUz cigar: mlada uz laganu/claro; odležana uz medium s pečenim i voćnim notama. Nije sinonim za melasni rum.",
-        "en": "Cachaça shares cane juice with rhum agricole, but follows Brazilian rules and its own cultural frame. Unaged white is grassy and fresh; aged (ouro/gold) is softer and more complex.\\n\\nWith cigars: young with light/claro; aged with medium smoke carrying roast and fruit. Not a synonym for molasses rum."
-      },
-      "aliases": [
-        "cachaca",
-        "aguardente de cana"
-      ],
-      "seeAlso": [
-        "rum-agricole",
-        "rum-blanco"
-      ],
-      "category": "drink"
-    },
-    {
-      "id": "fortified-wine",
-      "term": {
-        "hr": "Fortificirano vino",
-        "en": "Fortified wine"
-      },
-      "def": {
-        "hr": "Vino ojačano dodanim destilatom (obično brandyjem) — porto, sherry, madeira i slični stilovi.",
-        "en": "Wine strengthened with added distillate (usually brandy) — port, sherry, madeira and related styles."
-      },
-      "body": {
-        "hr": "Trenutak fortifikacije određuje stil: porto se ojačava usred fermentacije pa ostaje sladak; sherry se prvo potpuno fermentira, pa se zatim fortificira i često kasnije zaslađuje.\\n\\nZa cigar pairing: tawny/oloroso/madeira nose orah, karamelu i oksidaciju; fino je suši i laganiji partner.",
-        "en": "When fortification happens sets the style: port is fortified mid-ferment and stays sweet; sherry is fully fermented first, then fortified and often sweetened later.\\n\\nFor cigar pairing: tawny/oloroso/madeira carry nut, caramel and oxidation; fino is drier and a lighter partner."
-      },
-      "aliases": [
-        "likersko vino",
-        "gespriteter Wein",
-        "fortified"
-      ],
-      "seeAlso": [
-        "port",
-        "sherry",
-        "madeira"
-      ],
-      "category": "drink"
-    },
-    {
-      "id": "genever",
-      "term": {
-        "hr": "Genever (jenever)",
-        "en": "Genever (jenever)"
-      },
-      "def": {
-        "hr": "Nizozemski/belgijski predak gina — borovičasti spirit na žitarnoj (sladnoj) bazi.",
-        "en": "Dutch/Belgian ancestor of gin — a juniper spirit on a grain (malt) base."
-      },
-      "body": {
-        "hr": "Genever je puniji i žitniji od London Dry: moutwijn (sladna baza) nosi kruh i žito, a borovica je nježnija. Stilovi oude / jonge / corenwijn razlikuju se po proizvodnji i dozrijevanju.\\n\\nU domovini se često pije neat, blago ohlađen — uz cigar birajte medium cigar, ne peated ekstrem.",
-        "en": "Genever is fuller and grainier than London Dry: moutwijn (malt base) brings bread and cereal, with gentler juniper. Oude / jonge / corenwijn styles differ in production and ageing.\\n\\nAt home it is often drunk neat, lightly chilled — with cigars prefer medium smoke, not peated extremes."
-      },
-      "aliases": [
-        "jenever",
-        "holland gin",
-        "dutch gin"
-      ],
-      "seeAlso": [
-        "gin-london-dry",
-        "gin-and-tonic"
-      ],
-      "category": "drink"
-    },
-    {
-      "id": "grappa",
-      "term": {
-        "hr": "Grappa",
-        "en": "Grappa"
-      },
-      "def": {
-        "hr": "Talijanski destilat komine (kožice i sjemenke) — nije brandy od vina.",
-        "en": "Italian pomace distillate (skins and seeds) — not wine brandy."
-      },
-      "body": {
-        "hr": "Grappa je digestif preciznosti: aroma sorte grožđa (monovitigno) ili mješavine. Većina je bistra i svježe flaširana; odležane (riserva) dobiju boju i mekoću bačve.\\n\\nUz cigar rijetko prvi izbor — osim lagane večeri s claro ili kao kratki završetak nakon jela. U katalogu brandy stil «grappa».",
-        "en": "Grappa is a precision digestif: variety aroma (monovitigno) or a blend. Most is clear and bottled fresh; aged (riserva) gains colour and cask softness.\\n\\nWith cigars rarely a first choice — except a light claro evening or a short close after a meal. In the catalog under brandy style «grappa»."
-      },
-      "aliases": [
-        "grappe",
-        "pomace brandy"
-      ],
-      "seeAlso": [
-        "digestif",
-        "eau-de-vie",
-        "armagnac"
-      ],
-      "category": "drink"
-    },
-    {
-      "id": "plymouth-gin",
-      "term": {
-        "hr": "Plymouth gin",
-        "en": "Plymouth gin"
-      },
-      "def": {
-        "hr": "Gin sa zaštićenom geografskom oznakom — smije se proizvoditi samo u Plymouthu (UK).",
-        "en": "Gin with protected geographical indication — may be produced only in Plymouth (UK)."
-      },
-      "body": {
-        "hr": "Plymouth je zaseban stil od London Dry: malo manje suh, aromatičniji, s «zemljanijim» korijenjem u botanici. Klasična jačina ~41,2 %; navy strength (~57 %) povijesno je vezan uz mornaricu.\\n\\nU app katalogu stil «plymouth» — za pairing često blago mekši od oštrog juniper-forward London Drya.",
-        "en": "Plymouth is a distinct style from London Dry: slightly less dry, more aromatic, with earthier roots in the botanicals. Classic strength ~41.2%; navy strength (~57%) is historically tied to the navy.\\n\\nIn the app catalog as style «plymouth» — for pairing often a touch softer than sharp juniper-forward London Dry."
-      },
-      "aliases": [
-        "plymouth"
-      ],
-      "seeAlso": [
-        "gin-london-dry",
-        "gin-and-tonic"
-      ],
-      "category": "drink"
-    },
-    {
-      "id": "tennessee-whiskey",
-      "term": {
-        "hr": "Tennessee whiskey",
-        "en": "Tennessee whiskey"
-      },
-      "def": {
-        "hr": "Američki whiskey blizak bourbonu, dodatno filtriran kroz javorov ugljen (Lincoln County Process).",
-        "en": "American whiskey close to bourbon, additionally filtered through maple charcoal (Lincoln County Process)."
-      },
-      "body": {
-        "hr": "Tennessee whiskey dijeli kukuruznu bazu i nove opaljene bačve s bourbonom, ali ugljena filtracija daje mekši, često «slađi» profil.\\n\\nUz cigar: sličan izbor kao bourbon — medium do full, cedar i karamela. Ne zamijeniti s peated scotchem.",
-        "en": "Tennessee whiskey shares corn base and new charred oak with bourbon, but charcoal filtration yields a softer, often «sweeter» profile.\\n\\nWith cigars: similar pick to bourbon — medium to full, cedar and caramel. Do not confuse with peated Scotch."
-      },
-      "aliases": [
-        "tennessee whisky",
-        "lincoln county"
-      ],
-      "seeAlso": [
-        "bourbon",
-        "rye-whiskey"
-      ],
-      "category": "drink"
     }
   ]
 }
