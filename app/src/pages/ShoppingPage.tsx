@@ -14,6 +14,7 @@ import {
   groupWishlistByShop,
   groupWishlistDrinksByCategory,
   segmentPicks,
+  wishlistShopKey,
   wishlistTextSections,
 } from "../lib/shoppingPicks";
 
@@ -41,10 +42,12 @@ export function ShoppingPage({
   const [buffetCat, setBuffetCat] = useState<DrinkCategory>("rum");
   const [showPlan, setShowPlan] = useState(false);
   const [copied, setCopied] = useState(false);
+  const [selectedShop, setSelectedShop] = useState<string | null>(null);
 
   const isOwned = (id: string) => getItemState(id).owned;
   // ☆ uz preporuku = vec je na tvojoj listi zelja (liste su neovisne)
   const wishMark = (id: string) => (getItemState(id).wishlist ? "☆ " : "");
+  const otherShopsLabel = t("shop.otherShops");
 
   // ☆ lista zelja — pice + cigare, s ukupnim troskom
   const wishlistDrinks = ALL_DRINKS.filter((d) => {
@@ -55,16 +58,8 @@ export function ShoppingPage({
     const s = getItemState(c.id);
     return s.wishlist && !s.owned;
   });
-  // cigare odvojeno; pića po kategoriji (rum, whisky, …)
-  const wishlistDrinkGroups = groupWishlistDrinksByCategory(
-    wishlistDrinks,
-    CATEGORIES,
-  );
-  const wishlistTotal =
-    wishlistDrinks.reduce((s, d) => s + (d.priceEUR?.min ?? 0), 0) +
-    wishlistCigars.reduce((s, c) => s + (c.priceEUR ?? 0), 0);
 
-  // razrada liste zelja po trgovini — jedan odlazak = jedna grupa
+  // pillovi uvijek iz pune liste (brojevi se ne mijenjaju dok filtriraš)
   const wishlistShops = groupWishlistByShop(
     [
       ...wishlistCigars.map((c) => ({
@@ -76,15 +71,35 @@ export function ShoppingPage({
         price: d.priceEUR?.min ?? null,
       })),
     ],
-    t("shop.otherShops"),
+    otherShopsLabel,
   );
+
+  const visibleCigars =
+    selectedShop == null
+      ? wishlistCigars
+      : wishlistCigars.filter(
+          (c) => wishlistShopKey(c.availabilityHR?.[0], otherShopsLabel) === selectedShop,
+        );
+  const visibleDrinks =
+    selectedShop == null
+      ? wishlistDrinks
+      : wishlistDrinks.filter(
+          (d) => wishlistShopKey(d.shopHR, otherShopsLabel) === selectedShop,
+        );
+  const wishlistDrinkGroups = groupWishlistDrinksByCategory(visibleDrinks, CATEGORIES);
+  const wishlistTotal =
+    visibleDrinks.reduce((s, d) => s + (d.priceEUR?.min ?? 0), 0) +
+    visibleCigars.reduce((s, c) => s + (c.priceEUR ?? 0), 0);
+
+  const toggleShop = (shop: string) =>
+    setSelectedShop((cur) => (cur === shop ? null : shop));
 
   const shareWishlist = async () => {
     const text = wishlistTextSections(
       [
         {
           title: t("cat.cigars"),
-          items: wishlistCigars.map((c) => ({
+          items: visibleCigars.map((c) => ({
             name: `${brandDisplayName(c.brand, market)} ${c.line}`,
             price: c.priceEUR,
             shop: c.availabilityHR?.[0],
@@ -167,13 +182,13 @@ export function ShoppingPage({
       ) : (
         <>
           <div className="space-y-4">
-            {wishlistCigars.length > 0 && (
+            {visibleCigars.length > 0 && (
               <div>
                 <div className="mb-1.5 font-display text-xs uppercase tracking-[0.2em] text-zlato">
                   {t("cat.cigars")}
                 </div>
                 <div className="space-y-2">
-                  {wishlistCigars.map((c) => (
+                  {visibleCigars.map((c) => (
                     <CigarRow
                       key={c.id}
                       cigar={c}
@@ -206,15 +221,19 @@ export function ShoppingPage({
               </span>
             )}
           </div>
-          {wishlistShops.length > 1 && (
+          {wishlistShops.length >= 1 && (
             <div className="mt-2 flex flex-wrap gap-1.5">
+              <Chip active={selectedShop == null} onClick={() => setSelectedShop(null)}>
+                {t("shop.filterAll")}
+              </Chip>
               {wishlistShops.map((g) => (
-                <span
+                <Chip
                   key={g.shop}
-                  className="rounded-full border border-dim/25 bg-cedar px-2.5 py-1 text-micro text-dim"
+                  active={selectedShop === g.shop}
+                  onClick={() => toggleShop(g.shop)}
                 >
                   {g.shop}: {g.count}×{g.total > 0 ? ` · ~${g.total.toFixed(0)} €` : ""}
-                </span>
+                </Chip>
               ))}
             </div>
           )}
