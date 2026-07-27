@@ -27,7 +27,11 @@ const CATEGORIES: DrinkCategory[] = [
   "gin",
 ];
 
-export function ShoppingPage() {
+export function ShoppingPage({
+  onPair,
+}: {
+  onPair?: (target: { kind: "cigar"; item: Cigar } | { kind: "drink"; item: Drink }) => void;
+}) {
   const { t, lx } = useI18n();
   const market = useMarket();
   const collection = useCollection(); // re-render na promjene kolekcije/liste zelja
@@ -407,7 +411,18 @@ export function ShoppingPage() {
 
       <p className="mt-4 text-xs leading-relaxed text-dim/80">⚖ {t("shop.legalNote")}</p>
 
-      <DetailSheet target={detail} onClose={() => setDetail(null)} />
+      <DetailSheet
+        target={detail}
+        onClose={() => setDetail(null)}
+        onPair={
+          onPair
+            ? (target) => {
+                setDetail(null);
+                onPair(target);
+              }
+            : undefined
+        }
+      />
     </div>
   );
 }
