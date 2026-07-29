@@ -371,6 +371,22 @@ const STRINGS = {
   "hum.prevMonth": { hr: "Prethodni mjesec", en: "Previous month" },
   "hum.nextMonth": { hr: "Sljedeći mjesec", en: "Next month" },
   "hum.entriesThisMonth": { hr: "zapisa u mjesecu", en: "entries this month" },
+  "hum.quickAdd": { hr: "Brzi unos iz kolekcije", en: "Quick add from collection" },
+  "hum.quickAddHint": {
+    hr: "Cigare koje si označio s „Imam”, a još nisu u ovom humidoru. Dodir dodaje jednu.",
+    en: "Cigars you marked as owned that are not in this humidor yet. Tap to add one.",
+  },
+  "hum.quickAddEmpty": {
+    hr: "Sve cigare iz kolekcije već su u ovom humidoru.",
+    en: "Every cigar in your collection is already in this humidor.",
+  },
+  "hum.quickAddNone": {
+    hr: "Nijedna cigara još nije označena s „Imam”. Označi ih u katalogu i pojavit će se ovdje.",
+    en: "No cigar is marked as owned yet. Mark them in the catalogue and they will show up here.",
+  },
+  "hum.quickAddAll": { hr: "Dodaj sve", en: "Add all" },
+  "hum.quickAddShow": { hr: "Prikaži", en: "Show" },
+  "hum.quickAddHide": { hr: "Sakrij", en: "Hide" },
   // shopping
   "shop.tiers": { hr: "Plan kolekcije po razinama", en: "Collection plan by tiers" },
   "shop.tier": { hr: "Razina", en: "Tier" },

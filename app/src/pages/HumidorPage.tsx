@@ -178,9 +178,106 @@ export function HumidorPage({
               ))}
             </div>
           )}
+
+          <QuickAdd humidorId={active.id} />
         </>
       )}
     </div>
+  );
+}
+
+/**
+ * Brzi unos: sve što je u kolekciji označeno s „Imam”, a još nije u ovom
+ * humidoru. Dodir dodaje jedan komad i stavka nestaje s popisa — punjenje
+ * humidora tako ide bez otvaranja kataloga za svaku cigaru.
+ */
+function QuickAdd({ humidorId }: { humidorId: string }) {
+  const { t, cn } = useI18n();
+  const market = useMarket();
+  const collection = useCollection();
+  const { stock } = useHumidors();
+  const [open, setOpen] = useState(true);
+
+  const owned = useMemo(() => {
+    const inHumidor = new Set(
+      stock.filter((s) => s.humidorId === humidorId).map((s) => s.itemId),
+    );
+    return Object.entries(collection.items)
+      .filter(([id, state]) => state.owned && !inHumidor.has(id))
+      .map(([id]) => ({ id, cigar: cigarForItemId(id) }))
+      // pića su isto u `items` — u humidor idu samo cigare
+      .filter((row): row is { id: string; cigar: Cigar } => row.cigar != null)
+      .sort((a, b) =>
+        `${a.cigar.brand} ${a.cigar.line}`.localeCompare(
+          `${b.cigar.brand} ${b.cigar.line}`,
+        ),
+      );
+  }, [collection.items, stock, humidorId]);
+
+  const ownedCigarsTotal = Object.entries(collection.items).filter(
+    ([id, state]) => state.owned && cigarForItemId(id) != null,
+  ).length;
+
+  return (
+    <>
+      <SectionTitle>{t("hum.quickAdd")}</SectionTitle>
+
+      {ownedCigarsTotal === 0 ? (
+        <p className="text-sm leading-relaxed text-dim">{t("hum.quickAddNone")}</p>
+      ) : owned.length === 0 ? (
+        <p className="text-sm leading-relaxed text-dim">{t("hum.quickAddEmpty")}</p>
+      ) : (
+        <>
+          <div className="flex flex-wrap items-center justify-between gap-2">
+            <p className="min-w-0 flex-1 text-xs leading-relaxed text-dim">
+              {t("hum.quickAddHint")}
+            </p>
+            <div className="flex shrink-0 gap-2">
+              <Chip onClick={() => setOpen((v) => !v)}>
+                {open ? t("hum.quickAddHide") : `${t("hum.quickAddShow")} (${owned.length})`}
+              </Chip>
+              {open && (
+                <Chip
+                  onClick={() => {
+                    for (const row of owned) adjustStock(humidorId, row.id, 1);
+                  }}
+                >
+                  + {t("hum.quickAddAll")}
+                </Chip>
+              )}
+            </div>
+          </div>
+
+          {open && (
+            <div className="mt-2 space-y-1.5">
+              {owned.map(({ id, cigar }) => (
+                <button
+                  key={id}
+                  type="button"
+                  onClick={() => adjustStock(humidorId, id, 1)}
+                  className="flex w-full items-center justify-between gap-3 rounded-lg border border-dim/15 bg-cedar px-3 py-2 text-left hover:border-zlato/40"
+                >
+                  <span className="min-w-0">
+                    <span className="block truncate text-sm text-papir">
+                      {brandDisplayName(cigar.brand, market)} {cigar.line}
+                    </span>
+                    <span className="block truncate text-micro text-dim">
+                      {cigar.selectedVitola ?? cigar.vitola} · {cn(cigar.country)}
+                    </span>
+                  </span>
+                  <span
+                    aria-hidden
+                    className="shrink-0 font-display text-lg leading-none text-zlato"
+                  >
+                    +
+                  </span>
+                </button>
+              ))}
+            </div>
+          )}
+        </>
+      )}
+    </>
   );
 }
 

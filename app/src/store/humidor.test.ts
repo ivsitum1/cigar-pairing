@@ -167,3 +167,83 @@ describe("humidor", () => {
     expect(h.stockCount("h9", "cig-x")).toBe(7);
   });
 });
+
+describe("brzi unos iz kolekcije", () => {
+  beforeAll(installMemoryStorage);
+
+  beforeEach(() => {
+    localStorage.clear();
+    vi.resetModules();
+  });
+
+  /** Ista logika kao QuickAdd u HumidorPage: sto se nudi za dodavanje. */
+  const quickAddIds = (
+    items: Record<string, { owned: boolean }>,
+    stock: { humidorId: string; itemId: string }[],
+    humidorId: string,
+    isCigar: (id: string) => boolean,
+  ) => {
+    const inHumidor = new Set(
+      stock.filter((s) => s.humidorId === humidorId).map((s) => s.itemId),
+    );
+    return Object.entries(items)
+      .filter(([id, s]) => s.owned && !inHumidor.has(id) && isCigar(id))
+      .map(([id]) => id)
+      .sort();
+  };
+
+  const isCigar = (id: string) => id.startsWith("cig-");
+
+  it("nudi samo posjedovane cigare kojih jos nema u humidoru", () => {
+    const ids = quickAddIds(
+      {
+        "cig-a@churchill": { owned: true },
+        "cig-a@corona": { owned: true },
+        "cig-b": { owned: true },
+        "cig-c": { owned: false }, // samo probano
+        "rum-x": { owned: true }, // pice ne ide u humidor
+      },
+      [{ humidorId: "h1", itemId: "cig-b" }],
+      "h1",
+      isCigar,
+    );
+    expect(ids).toEqual(["cig-a@churchill", "cig-a@corona"]);
+  });
+
+  it("zaliha u DRUGOM humidoru ne skriva prijedlog", () => {
+    const ids = quickAddIds(
+      { "cig-a": { owned: true } },
+      [{ humidorId: "h2", itemId: "cig-a" }],
+      "h1",
+      isCigar,
+    );
+    expect(ids).toEqual(["cig-a"]);
+  });
+
+  it("dodavanje iz brzog unosa mice stavku s popisa", async () => {
+    const h = await load();
+    const box = h.addHumidor("Radni stol");
+    const items = { "cig-a@churchill": { owned: true }, "cig-b": { owned: true } };
+
+    expect(quickAddIds(items, h.humidorData().stock, box.id, isCigar)).toEqual([
+      "cig-a@churchill",
+      "cig-b",
+    ]);
+
+    h.adjustStock(box.id, "cig-a@churchill", 1);
+
+    expect(h.stockCount(box.id, "cig-a@churchill")).toBe(1);
+    expect(quickAddIds(items, h.humidorData().stock, box.id, isCigar)).toEqual([
+      "cig-b",
+    ]);
+  });
+
+  it("„Dodaj sve” stavi po jedan komad svake", async () => {
+    const h = await load();
+    const box = h.addHumidor("Radni stol");
+    for (const id of ["cig-a", "cig-b", "cig-c"]) h.adjustStock(box.id, id, 1);
+
+    expect(h.humidorData().stock).toHaveLength(3);
+    expect(h.humidorData().stock.every((s) => s.count === 1)).toBe(true);
+  });
+});
