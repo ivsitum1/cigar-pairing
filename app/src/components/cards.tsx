@@ -6,6 +6,7 @@ import { getItemState, useCollection } from "../store/collection";
 import { useMarket } from "../store/market";
 import { drinkNameLoc } from "../lib/drinkName";
 import { cigarItemId } from "../lib/cigarItemId";
+import { cigarDescription } from "../lib/cigarNote";
 
 // Cijena cigare koja odgovara odabranom tržištu (HR = konkretna, ostalo = "provjeri")
 export function CigarPrice({ cigar }: { cigar: Cigar }) {
@@ -54,9 +55,12 @@ export function CigarRow({
   cigar: Cigar;
   onClick?: () => void;
 }) {
-  const { t, lx, cn } = useI18n();
+  const { t, cn, lang } = useI18n();
   const market = useMarket();
   const displayBrand = brandDisplayName(cigar.brand, market);
+  // generirano prepricavanje atributa (zemlja/wrapper/snaga/okusi) vec je gore
+  // na kartici — kao "opis" bi bilo samo ponavljanje
+  const description = cigarDescription(cigar, lang);
   return (
     <button
       onClick={onClick}
@@ -79,9 +83,11 @@ export function CigarRow({
         <Meter value={cigar.strength} label={t("common.strength")} accent="var(--color-oxblood)" />
         <Meter value={cigar.body} label={t("common.body")} />
       </div>
-      <div className="mt-1.5 line-clamp-2 text-xs leading-relaxed text-dim/90">
-        {lx(cigar.notes)}
-      </div>
+      {description && (
+        <div className="mt-1.5 line-clamp-2 text-xs leading-relaxed text-dim/90">
+          {description}
+        </div>
+      )}
     </button>
   );
 }

@@ -7,6 +7,7 @@ import { Meter } from "./ui";
 import { BackButton } from "./BackButton";
 import { uniqueVitolas } from "../lib/cigarVitola";
 import { vitolaBlurb } from "../lib/vitolaInfo";
+import { cigarDescription } from "../lib/cigarNote";
 import { useMarket } from "../store/market";
 
 function dimLabel(v: Vitola): string {
@@ -26,8 +27,9 @@ export function LineSheet({
   onOpenBrand?: (brand: string) => void;
   onOpenVitola: (cigar: Cigar, vitola: Vitola) => void;
 }) {
-  const { t, lx, cn, lang } = useI18n();
+  const { t, cn, lang } = useI18n();
   const market = useMarket();
+  const description = cigarDescription(raw, lang);
   const cigar = resolveCigarId(raw.id) ?? raw;
   const info = brandInfo(cigar.brand);
   const displayBrand = brandDisplayName(cigar.brand, market);
@@ -77,7 +79,9 @@ export function LineSheet({
           <Meter value={cigar.body} label={t("common.body")} />
         </div>
 
-        <p className="mt-3 text-sm leading-relaxed text-papir/85">{lx(cigar.notes)}</p>
+        {description && (
+          <p className="mt-3 text-sm leading-relaxed text-papir/85">{description}</p>
+        )}
 
         <div className="band-rule my-4" />
 

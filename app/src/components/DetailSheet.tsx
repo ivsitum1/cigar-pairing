@@ -9,6 +9,7 @@ import { drinkNameLoc } from "../lib/drinkName";
 import { vitolaBlurb } from "../lib/vitolaInfo";
 import { resolveSamplerCigar } from "../lib/samplerLink";
 import { cigarItemId } from "../lib/cigarItemId";
+import { cigarDescription } from "../lib/cigarNote";
 import { Chip, Meter } from "./ui";
 import { BackButton } from "./BackButton";
 import {
@@ -179,6 +180,7 @@ function CigarDetails({
 }) {
   const { t, lx, cn, lang } = useI18n();
   const market = useMarket();
+  const description = cigarDescription(cigar, lang);
   const brand = brandInfo(cigar.brand);
   const displayBrand = brandDisplayName(cigar.brand, market);
   const vitolaCrumb =
@@ -333,9 +335,10 @@ function CigarDetails({
           <Chip key={tag}>{flavorLabel(tag, lang)}</Chip>
         ))}
       </div>
-      <p className="mt-3 text-sm leading-relaxed text-papir/85">
-        {lx(cigar.notes)}
-      </p>
+      {/* opis samo kad postoji — generirano prepricavanje atributa nije opis */}
+      {description && (
+        <p className="mt-3 text-sm leading-relaxed text-papir/85">{description}</p>
+      )}
       {/* poštene oznake izvora podataka */}
       {(cigar.profileEstimated || cigar.formatEstimated || cigar.strengthFromShop) && (
         <div className="mt-1.5 space-y-0.5">

@@ -514,6 +514,8 @@ export function PairingPage() {
                     {(selected as Cigar).vitola} · {(selected as Cigar).wrapper} · {cn((selected as Cigar).country)}
                   </div>
                 )}
+                {/* kratka oznaka, ne rečenica — puni tekst je u tooltipu;
+                    ranije je cijela napomena stajala ondje gdje bi trebao opis */}
                 {mode === "cigarToDrink" &&
                   ((selected as Cigar).profileEstimated ||
                     (selected as Cigar).flavorTags.length === 0) && (
@@ -521,7 +523,7 @@ export function PairingPage() {
                       className="mt-1 text-micro uppercase tracking-wider text-dim/80"
                       title={t("common.estimatedProfile")}
                     >
-                      ≈ {t("common.estimatedProfile")}
+                      ≈ {t("common.estimatedShort")}
                     </div>
                   )}
                 <div className="mt-1.5 flex gap-4">
