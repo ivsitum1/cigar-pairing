@@ -8,7 +8,7 @@ import {
   cigarForItemId,
   drinkById,
 } from "../data";
-import { useI18n } from "../i18n";
+import { useI18n, type StringKey } from "../i18n";
 import { Chip, SectionTitle } from "../components/ui";
 import { CigarRow, DrinkRow } from "../components/cards";
 import { drinkNameLoc } from "../lib/drinkName";
@@ -22,6 +22,9 @@ import {
   useCollection,
 } from "../store/collection";
 import { useMarket } from "../store/market";
+import { navigate, useRoute, type CollectionView } from "../store/route";
+import { HumidorPage, JournalCalendar } from "./HumidorPage";
+import { exportHumidors, importHumidors } from "../store/humidor";
 import { applyVitola, uniqueVitolas } from "../lib/cigarVitola";
 import { cigarItemId } from "../lib/cigarItemId";
 
@@ -31,6 +34,7 @@ export function CollectionPage({
   onPair?: (target: { kind: "cigar"; item: Cigar } | { kind: "drink"; item: Drink }) => void;
 }) {
   const { t, lx, lang } = useI18n();
+  const route = useRoute();
   const data = useCollection();
   const [detail, setDetail] = useState<
     { kind: "cigar"; item: Cigar } | { kind: "drink"; item: Drink } | null
@@ -61,8 +65,14 @@ export function CollectionPage({
   const historyCigars = cigarsFor(historyIds);
   const historyDrinks = ALL_DRINKS.filter((d) => historyIds.includes(d.id));
 
+  // backup nosi i humidore — inače bi se zaliha izgubila pri prijenosu uređaja
   const doExport = () => {
-    const blob = new Blob([exportData()], { type: "application/json" });
+    const payload = JSON.stringify(
+      { ...JSON.parse(exportData()), humidors: exportHumidors() },
+      null,
+      2,
+    );
+    const blob = new Blob([payload], { type: "application/json" });
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
@@ -72,13 +82,83 @@ export function CollectionPage({
   };
 
   const doImport = async (file: File) => {
-    const ok = importData(await file.text());
+    const text = await file.text();
+    const ok = importData(text);
+    if (ok) {
+      try {
+        const parsed = JSON.parse(text) as { humidors?: unknown };
+        if (parsed.humidors !== undefined) importHumidors(parsed.humidors);
+      } catch {
+        // kolekcija je uvezena; humidori iz starijeg backupa jednostavno ne postoje
+      }
+    }
     setImportMsg(ok ? t("coll.importOk") : t("coll.importErr"));
     setTimeout(() => setImportMsg(null), 3000);
   };
 
+  // Kolekcija / Humidor / Kalendar — sve što je "moje" na jednom mjestu
+  const view = route.collection ?? "collection";
+  const tabs: { id: CollectionView; key: StringKey }[] = [
+    { id: "collection", key: "hum.tabCollection" },
+    { id: "humidor", key: "hum.tabHumidor" },
+    { id: "calendar", key: "hum.tabCalendar" },
+  ];
+
+  const tabBar = (
+    <div className="mt-4 grid grid-cols-3 gap-1 rounded-xl border border-dim/20 bg-cedar/60 p-1">
+      {tabs.map((tab) => (
+        <button
+          key={tab.id}
+          type="button"
+          onClick={() => navigate({ page: "collection", collection: tab.id })}
+          aria-current={view === tab.id ? "page" : undefined}
+          className={`rounded-lg py-2 font-display text-xs uppercase tracking-widest transition-colors ${
+            view === tab.id
+              ? "bg-zlato/15 text-zlato-2"
+              : "text-dim hover:text-papir"
+          }`}
+        >
+          {t(tab.key)}
+        </button>
+      ))}
+    </div>
+  );
+
+  if (view === "humidor") {
+    return (
+      <div className="pb-4">
+        {tabBar}
+        <HumidorPage
+          onOpenCigar={(cigar) => setDetail({ kind: "cigar", item: cigar })}
+        />
+        <DetailSheet
+          target={detail}
+          onClose={() => setDetail(null)}
+          onPair={
+            onPair
+              ? (target) => {
+                  setDetail(null);
+                  onPair(target);
+                }
+              : undefined
+          }
+        />
+      </div>
+    );
+  }
+
+  if (view === "calendar") {
+    return (
+      <div className="pb-4">
+        {tabBar}
+        <JournalCalendar />
+      </div>
+    );
+  }
+
   return (
     <div className="pb-4">
+      {tabBar}
       <div className="mt-4 flex items-center justify-between">
         <span className="text-sm text-dim">
           <span className="font-display text-lg text-zlato-2">{ownedIds.length}</span>{" "}

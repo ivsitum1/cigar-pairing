@@ -89,11 +89,11 @@ export function personalBrandReason(
     text:
       pts > 0
         ? {
-            hr: "Cigare ovog brenda su ti po dnevniku dobro sjele.",
+            hr: "Cigare ove marke po dnevniku su ti dobro sjele.",
             en: "This brand's cigars scored well in your journal.",
           }
         : {
-            hr: "Cigare ovog brenda su ti po dnevniku slabije sjele.",
+            hr: "Cigare ove marke po dnevniku su ti slabije sjele.",
             en: "This brand's cigars scored poorly in your journal.",
           },
   };

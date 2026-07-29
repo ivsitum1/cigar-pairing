@@ -61,6 +61,30 @@ function croatianStrings(): { where: string; text: string }[] {
     out.push({ where: `i18n:${m[1]}`, text: m[2] });
   }
 
+  // hrvatski živi i u kodu (objašnjenja enginea, opisi vitola, note trgovina)
+  const SRC = resolve(HERE, "..");
+  const TS_SOURCES = [
+    "engine/curatedOpinion.ts",
+    "engine/occasion.ts",
+    "engine/pairing.ts",
+    "engine/personal.ts",
+    "engine/rules.ts",
+    "engine/serve.ts",
+    "data/shops.ts",
+    "lib/geo.ts",
+    "lib/shareCard.ts",
+    "lib/shoppingPicks.ts",
+    "lib/vitolaInfo.ts",
+  ];
+  // `hr: "…"` i `labelHr: "…"` — oba se prikazuju korisniku
+  const inline = /\b(?:hr|labelHr):\s*"((?:[^"\\]|\\.)*)"/g;
+  for (const file of TS_SOURCES) {
+    const code = readFileSync(resolve(SRC, file), "utf8");
+    for (let m = inline.exec(code); m; m = inline.exec(code)) {
+      out.push({ where: file, text: m[1] });
+    }
+  }
+
   return out;
 }
 

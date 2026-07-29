@@ -59,4 +59,27 @@ describe("hash route helpers", () => {
       }),
     ).toBe("#/catalog/vitola/cig-la-galera-habano/chaveta");
   });
+
+  it("kolekcija ima podprikaze humidora i kalendara", () => {
+    expect(parseHash("#/collection/humidor")).toEqual({
+      page: "collection",
+      collection: "humidor",
+    });
+    expect(parseHash("#/collection/calendar")).toEqual({
+      page: "collection",
+      collection: "calendar",
+    });
+    // nepoznat podprikaz pada na samu kolekciju
+    expect(parseHash("#/collection/nesto")).toEqual({ page: "collection" });
+  });
+
+  it("podprikaz se vraca u hash, osnovna kolekcija ostaje cista", () => {
+    expect(routeToHash({ page: "collection", collection: "humidor" })).toBe(
+      "#/collection/humidor",
+    );
+    expect(routeToHash({ page: "collection", collection: "collection" })).toBe(
+      "#/collection",
+    );
+    expect(routeToHash({ page: "collection" })).toBe("#/collection");
+  });
 });

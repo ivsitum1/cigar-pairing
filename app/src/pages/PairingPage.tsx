@@ -319,8 +319,16 @@ export function PairingPage() {
       setSelectedDrink(null);
       setCycle({});
       setQuery(`${brandDisplayName(cigar.brand, market)} ${cigar.line}`);
-      const vitolas = uniqueVitolas(cigar);
-      setSelectedCigar(vitolas.length === 1 ? applyVitola(cigar, vitolas[0]) : cigar);
+      // podijeljeni link na liniju s više formata pita za vitolu, isto kao
+      // odabir kroz UI — inače bi dnevnik i zaliha išli na cijelu liniju
+      if (needsVitolaPick(cigar)) {
+        setPendingCigar(cigar);
+        setSelectedCigar(null);
+      } else {
+        const vitolas = uniqueVitolas(cigar);
+        setSelectedCigar(vitolas.length === 1 ? applyVitola(cigar, vitolas[0]) : cigar);
+        setPendingCigar(null);
+      }
     } else {
       if (selectedDrink?.id === pair.id) return;
       const drink = drinkById(pair.id);

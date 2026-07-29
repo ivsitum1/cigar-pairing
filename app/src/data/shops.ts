@@ -61,7 +61,7 @@ export const SHOPS: Shop[] = [
     region: "EU",
     home: "https://www.cigarworld.de/en",
     search: (q) => `https://www.cigarworld.de/en/search?q=${q}`,
-    note: { hr: "Njemacka — dostava po EU", en: "Germany — ships across the EU" },
+    note: { hr: "Njemačka — dostava po EU", en: "Germany — ships across the EU" },
   },
   {
     id: "holts",
@@ -69,7 +69,7 @@ export const SHOPS: Shop[] = [
     region: "USA",
     home: "https://www.holts.com/",
     search: (q) => `https://www.holts.com/catalogsearch/result/?q=${q}`,
-    note: { hr: "Philadelphia — klasicna US kuca", en: "Philadelphia — classic US house" },
+    note: { hr: "Philadelphia — klasična američka kuća", en: "Philadelphia — classic US house" },
   },
   {
     id: "cigarsdaily",
@@ -77,7 +77,7 @@ export const SHOPS: Shop[] = [
     region: "USA",
     home: "https://cigarsdaily.com/",
     search: (q) => `https://cigarsdaily.com/?s=${q}`,
-    note: { hr: "US ponude i recenzije", en: "US deals and reviews" },
+    note: { hr: "Američke ponude i recenzije", en: "US deals and reviews" },
   },
 ];
 

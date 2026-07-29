@@ -1,5 +1,6 @@
-// Zapis večeri u dnevnik + oznaka "probao" na obje stavke.
+// Zapis večeri u dnevnik + oznaka "probao" na obje stavke + skidanje iz humidora.
 import { addJournalEntry, getItemState, updateItem } from "../store/collection";
+import { consumeFromStock } from "../store/humidor";
 
 export interface EveningSessionInput {
   cigarId: string;
@@ -7,9 +8,11 @@ export interface EveningSessionInput {
   rating: number | null;
   note: string;
   markTried?: boolean;
+  /** false = ne diraj zalihu (npr. cigara nije bila iz humidora). */
+  consumeStock?: boolean;
 }
 
-/** Spremi pairing u dnevnik; po defaultu označi cigaru i piće kao probane. */
+/** Spremi spoj u dnevnik; po zadanome označi cigaru i piće kao probane. */
 export function logEveningSession(input: EveningSessionInput): void {
   const note = input.note.trim();
   addJournalEntry({
@@ -18,6 +21,9 @@ export function logEveningSession(input: EveningSessionInput): void {
     rating: input.rating,
     note,
   });
+
+  // popušena cigara odlazi iz zalihe — humidor prati stvarno stanje
+  if (input.consumeStock !== false) consumeFromStock(input.cigarId);
 
   if (input.markTried === false) return;
 

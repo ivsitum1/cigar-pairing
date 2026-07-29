@@ -233,7 +233,7 @@ function synergyLine(reasons: PairingReason[]): { hr: string; en: string } | nul
   }
   if (top.rule === "wrapper-affinity") {
     return {
-      hr: "Wrapper i profil pića prirodno idu u istom smjeru.",
+      hr: "Pokrov i profil pića prirodno idu u istom smjeru.",
       en: "The wrapper and the drink profile naturally pull in the same direction.",
     };
   }

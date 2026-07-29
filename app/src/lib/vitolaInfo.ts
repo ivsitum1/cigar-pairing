@@ -1,5 +1,5 @@
 // Kratki opis karaktera vitole izveden iz imena formata.
-// Format oblikuje iskustvo: omjer wrappera i punila, temperatura, trajanje.
+// Format oblikuje iskustvo: omjer pokrova i punjenja, temperatura, trajanje.
 import type { Lang } from "../types";
 
 const FORMATS: { match: RegExp; hr: string; en: string }[] = [
@@ -16,7 +16,7 @@ const FORMATS: { match: RegExp; hr: string; en: string }[] = [
     hr: "Šiljasta glava usmjerava dim i pojačava okus; rez određuje snagu poteza.",
     en: "The tapered head focuses the smoke and intensifies flavour; the cut sets the draw." },
   { match: /lancero|panatela|laguito/i,
-    hr: "Dug i tanak — wrapper dominira okusom; elegantan, traži polagano pušenje.",
+    hr: "Dug i tanak — pokrov dominira okusom; elegantan, traži polagano pušenje.",
     en: "Long and slim — the wrapper leads the flavour; elegant, demands a slow pace." },
   { match: /double corona|prominente/i,
     hr: "Kraljevski format od skoro dva sata — maksimalna kompleksnost i hladnoća dima.",
@@ -31,7 +31,7 @@ const FORMATS: { match: RegExp; hr: string; en: string }[] = [
     hr: "Mala klasika za 25–40 minuta — koncentriran okus bez obveze dugog sjedenja.",
     en: "The small classic for 25–40 minutes — concentrated flavour without the long sit." },
   { match: /\bcorona\b/i,
-    hr: "Mjera svih formata (42 RG) — savršen omjer wrappera i punila, referentan okus.",
+    hr: "Mjera svih formata (42 RG) — savršen omjer pokrova i punjenja, referentan okus.",
     en: "The benchmark format (42 RG) — the perfect wrapper-to-filler ratio, reference flavour." },
   { match: /gordo|gigante|magnum 60|\b60\b.*RG|grande extra/i,
     hr: "Vrlo debeo (58–60+ RG) — obilje mekog, hladnog dima; punilo vodi okus.",
