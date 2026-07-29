@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import type { Cigar, Drink, DrinkCategory, PairingResult, ServeStyle, Vitola } from "../types";
-import { ALL_DRINKS, CIGARS, brandDisplayName, brandSearchHaystack, cigarInRegion, cigarLinkForMarket, cigarPriceForMarket, drinkById, formatPrice, resolveCigarId } from "../data";
+import { ALL_DRINKS, CIGARS, brandDisplayName, brandSearchHaystack, cigarInRegion, cigarForItemId, cigarLinkForMarket, cigarPriceForMarket, drinkById, formatPrice, resolveCigarId } from "../data";
 import { pairCigarsForDrink, pairDrinksForCigar } from "../engine/pairing";
 import { dayKey, softBandWindow } from "../engine/softBandRank";
 import { buildPrefs } from "../engine/personal";
@@ -8,11 +8,12 @@ import { curatedPairingOpinion } from "../engine/curatedOpinion";
 import { pairingBlurb } from "../engine/pairingExplain";
 import {
   occasionKeep,
+  rankByOccasion,
   type OccasionFilter,
 } from "../engine/occasion";
 import { useI18n, STYLE_LABELS, type StringKey } from "../i18n";
 import { Chip, Meter, ScoreBand, SearchInput, SectionTitle } from "../components/ui";
-import { getItemState, useCollection } from "../store/collection";
+import { getItemState, lineState, useCollection } from "../store/collection";
 import { DetailSheet } from "../components/DetailSheet";
 import { EveningSessionSheet } from "../components/EveningSessionSheet";
 import { MarketFilter } from "../components/MarketFilter";
@@ -22,6 +23,7 @@ import { ritualHint } from "../lib/cigarRitual";
 import { OcrScan } from "../components/OcrScan";
 import { VitolaPicker } from "../components/VitolaPicker";
 import { applyVitola, needsVitolaPick, uniqueVitolas } from "../lib/cigarVitola";
+import { cigarItemId } from "../lib/cigarItemId";
 import { drinkBuyLink } from "../lib/drinkBuyLink";
 import { drinkNameLoc, drinkNameHaystack } from "../lib/drinkName";
 import { readJsonStringArray } from "../lib/safeStorage";
@@ -71,7 +73,7 @@ export function PairingPage() {
     const rated = collection.journal.map((j) => ({
       rating: j.rating,
       drinkStyle: drinkById(j.drinkId)?.style,
-      cigarBrand: resolveCigarId(j.cigarId)?.brand,
+      cigarBrand: cigarForItemId(j.cigarId)?.brand,
     }));
     const built = buildPrefs(rated);
     return built.entries > 0 ? built : undefined;
@@ -176,8 +178,15 @@ export function PairingPage() {
       prefs,
       occasion === "any" ? undefined : occasion,
     );
+    // Unutar kategorije: među izjednačenima presuđuje doba dana. Pojas se
+    // računa po kategoriji jer kartica pokazuje po jedno piće iz svake — inače
+    // bi jedan globalno najbolji par gušio razlikovanje u ostalim kategorijama.
     const perCategory = (cat: DrinkCategory) =>
-      ranked.filter((r) => r.item.category === cat);
+      rankByOccasion(
+        ranked.filter((r) => r.item.category === cat),
+        selectedCigar,
+        occasion === "any" ? undefined : occasion,
+      );
     return {
       cards: SUGGEST_CATEGORIES.map((cat) => {
         const list = perCategory(cat);
@@ -192,7 +201,8 @@ export function PairingPage() {
   const cigarSuggestions = useMemo(() => {
     if (mode !== "drinkToCigar" || !selectedDrink) return null;
     let cigars = marketCigars;
-    if (onlyMine) cigars = cigars.filter((c) => getItemState(c.id).owned);
+    // "samo moje": linija se broji ako je posjedovana u bilo kojoj vitoli
+    if (onlyMine) cigars = cigars.filter((c) => lineState(c.id).owned);
     const ranked = pairCigarsForDrink(selectedDrink, cigars, prefs, serve);
     if (ranked.length === 0) return { window: [], total: 0 };
     const { window, total } = softBandWindow(ranked, {
@@ -309,8 +319,16 @@ export function PairingPage() {
       setSelectedDrink(null);
       setCycle({});
       setQuery(`${brandDisplayName(cigar.brand, market)} ${cigar.line}`);
-      const vitolas = uniqueVitolas(cigar);
-      setSelectedCigar(vitolas.length === 1 ? applyVitola(cigar, vitolas[0]) : cigar);
+      // podijeljeni link na liniju s više formata pita za vitolu, isto kao
+      // odabir kroz UI — inače bi dnevnik i zaliha išli na cijelu liniju
+      if (needsVitolaPick(cigar)) {
+        setPendingCigar(cigar);
+        setSelectedCigar(null);
+      } else {
+        const vitolas = uniqueVitolas(cigar);
+        setSelectedCigar(vitolas.length === 1 ? applyVitola(cigar, vitolas[0]) : cigar);
+        setPendingCigar(null);
+      }
     } else {
       if (selectedDrink?.id === pair.id) return;
       const drink = drinkById(pair.id);
@@ -504,6 +522,8 @@ export function PairingPage() {
                     {(selected as Cigar).vitola} · {(selected as Cigar).wrapper} · {cn((selected as Cigar).country)}
                   </div>
                 )}
+                {/* kratka oznaka, ne rečenica — puni tekst je u tooltipu;
+                    ranije je cijela napomena stajala ondje gdje bi trebao opis */}
                 {mode === "cigarToDrink" &&
                   ((selected as Cigar).profileEstimated ||
                     (selected as Cigar).flavorTags.length === 0) && (
@@ -511,7 +531,7 @@ export function PairingPage() {
                       className="mt-1 text-micro uppercase tracking-wider text-dim/80"
                       title={t("common.estimatedProfile")}
                     >
-                      ≈ {t("common.estimatedProfile")}
+                      ≈ {t("common.estimatedShort")}
                     </div>
                   )}
                 <div className="mt-1.5 flex gap-4">
@@ -677,7 +697,7 @@ export function PairingPage() {
         <EveningSessionSheet
           cigars={sessionCigars}
           drinks={sessionDrinks}
-          initialCigarId={sessionCigars[0]?.id}
+          initialCigarId={sessionCigars[0] && cigarItemId(sessionCigars[0])}
           initialDrinkId={sessionDrinks[0]?.id}
           onClose={() => setSessionOpen(false)}
           onSaved={() => {

@@ -8,6 +8,8 @@ import { drinkBuyLink } from "../lib/drinkBuyLink";
 import { drinkNameLoc } from "../lib/drinkName";
 import { vitolaBlurb } from "../lib/vitolaInfo";
 import { resolveSamplerCigar } from "../lib/samplerLink";
+import { cigarItemId } from "../lib/cigarItemId";
+import { cigarDescription } from "../lib/cigarNote";
 import { Chip, Meter } from "./ui";
 import { BackButton } from "./BackButton";
 import {
@@ -16,6 +18,12 @@ import {
   useCollection,
 } from "../store/collection";
 import { useMarket } from "../store/market";
+import {
+  addHumidor,
+  adjustStock,
+  setActiveHumidor,
+  useHumidors,
+} from "../store/humidor";
 
 type Item = { kind: "cigar"; item: Cigar } | { kind: "drink"; item: Drink };
 
@@ -40,7 +48,9 @@ export function DetailSheet({
     setStack([]);
   }, [target?.item.id]);
   const active = stack.length ? stack[stack.length - 1] : target;
-  const id = active?.item.id;
+  // cigare: ključ nosi odabranu vitolu (Churchill ≠ Corona iste linije)
+  const id =
+    active?.kind === "cigar" ? cigarItemId(active.item) : active?.item.id;
   const state = id ? getItemState(id) : null;
   const [note, setNote] = useState("");
 
@@ -142,6 +152,8 @@ export function DetailSheet({
           className="mt-3 w-full rounded-lg border border-dim/25 bg-cedar px-3 py-2 text-sm text-papir placeholder:text-dim/60 focus:border-zlato/60 focus:outline-none"
         />
 
+        {active.kind === "cigar" && <HumidorControls itemId={id} />}
+
         {onPair && (
           <button
             type="button"
@@ -176,6 +188,7 @@ function CigarDetails({
 }) {
   const { t, lx, cn, lang } = useI18n();
   const market = useMarket();
+  const description = cigarDescription(cigar, lang);
   const brand = brandInfo(cigar.brand);
   const displayBrand = brandDisplayName(cigar.brand, market);
   const vitolaCrumb =
@@ -330,9 +343,10 @@ function CigarDetails({
           <Chip key={tag}>{flavorLabel(tag, lang)}</Chip>
         ))}
       </div>
-      <p className="mt-3 text-sm leading-relaxed text-papir/85">
-        {lx(cigar.notes)}
-      </p>
+      {/* opis samo kad postoji — generirano prepricavanje atributa nije opis */}
+      {description && (
+        <p className="mt-3 text-sm leading-relaxed text-papir/85">{description}</p>
+      )}
       {/* poštene oznake izvora podataka */}
       {(cigar.profileEstimated || cigar.formatEstimated || cigar.strengthFromShop) && (
         <div className="mt-1.5 space-y-0.5">
@@ -536,6 +550,95 @@ function Row({ k, v }: { k: string; v: string }) {
     <div className="flex gap-3">
       <dt className="w-24 shrink-0 text-dim">{k}</dt>
       <dd className="text-papir/90">{v}</dd>
+    </div>
+  );
+}
+
+/**
+ * Zaliha te cigare po humidorima. Prikazuje se samo za cigare — pića nemaju
+ * humidor. Bez ijednog humidora nudi da se prvi otvori odmah odavde.
+ */
+function HumidorControls({ itemId }: { itemId: string }) {
+  const { t } = useI18n();
+  const { humidors, stock, activeId } = useHumidors();
+  const active = humidors.find((h) => h.id === activeId) ?? humidors[0];
+
+  const total = stock
+    .filter((s) => s.itemId === itemId)
+    .reduce((sum, s) => sum + s.count, 0);
+
+  if (humidors.length === 0) {
+    return (
+      <button
+        type="button"
+        onClick={() => {
+          const created = addHumidor(t("hum.defaultName"));
+          adjustStock(created.id, itemId, 1);
+        }}
+        className="mt-4 w-full rounded-lg border border-zlato/40 py-2.5 font-display text-xs uppercase tracking-widest text-zlato hover:bg-zlato/10"
+      >
+        + {t("hum.addToHumidor")}
+      </button>
+    );
+  }
+
+  const inActive = active
+    ? (stock.find((s) => s.humidorId === active.id && s.itemId === itemId)?.count ?? 0)
+    : 0;
+
+  return (
+    <div className="mt-4 rounded-lg border border-dim/20 bg-cedar/60 p-3">
+      <div className="flex items-baseline justify-between gap-2">
+        <span className="text-micro uppercase tracking-widest text-dim">
+          {t("hum.addToHumidor")}
+        </span>
+        {total > 0 && (
+          <span className="text-micro text-dim">
+            {t("hum.inHumidor")}: {total}
+          </span>
+        )}
+      </div>
+
+      {humidors.length > 1 && (
+        <div className="mt-2 flex flex-wrap gap-1.5">
+          {humidors.map((h) => (
+            <Chip
+              key={h.id}
+              active={active?.id === h.id}
+              onClick={() => setActiveHumidor(h.id)}
+            >
+              {h.name}
+            </Chip>
+          ))}
+        </div>
+      )}
+
+      {active && (
+        <div className="mt-2 flex items-center justify-between gap-3">
+          <span className="min-w-0 truncate text-sm text-papir/90">{active.name}</span>
+          <div className="flex shrink-0 items-center gap-2">
+            <button
+              type="button"
+              aria-label="−1"
+              onClick={() => adjustStock(active.id, itemId, -1)}
+              className="h-8 w-8 rounded-lg border border-dim/30 font-display text-base text-dim hover:border-zlato/50 hover:text-papir"
+            >
+              −
+            </button>
+            <span className="min-w-[2ch] text-center font-display text-lg text-zlato-2">
+              {inActive}
+            </span>
+            <button
+              type="button"
+              aria-label="+1"
+              onClick={() => adjustStock(active.id, itemId, 1)}
+              className="h-8 w-8 rounded-lg border border-dim/30 font-display text-base text-dim hover:border-zlato/50 hover:text-papir"
+            >
+              +
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

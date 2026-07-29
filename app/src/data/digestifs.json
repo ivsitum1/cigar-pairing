@@ -68,7 +68,7 @@
     "flavorTags": ["menta", "gorcina", "bilje"],
     "additiveStatus": "flavored",
     "additiveDetail": {
-      "hr": "Fernet — italijanski biljni amaro/bitter (EU liker); menta i gorka biljna baza, ne destilat žitarica.",
+      "hr": "Fernet — talijanski biljni amaro/bitter (EU liker); menta i gorka biljna baza, ne destilat žitarica.",
       "en": "Fernet — Italian herbal amaro/bitter (EU liqueur); mint and bitter herb base, not a grain distillate."
     },
     "qualityScore": 8,
@@ -136,6 +136,38 @@
     "notes": {
       "hr": "Amaro obitelji Nonino — grappa baza s biljnim destilatom. Finiji od masovnih amara; uz cigar kao digestiv nakon jela.",
       "en": "Amaro from the Nonino family — grappa base with herbal distillate. Finer than mass-market amari; with a cigar as an after-dinner digestif."
+    }
+  },
+  {
+    "id": "dg-jagermeister",
+    "category": "digestif",
+    "name": "Jägermeister",
+    "style": "herbal-bitter-central",
+    "region": "Njemačka",
+    "country": "Njemačka",
+    "abv": 35,
+    "body": 3,
+    "sweetness": 4,
+    "flavorTags": ["bilje", "anis", "citrus", "gorko"],
+    "additiveStatus": "flavored",
+    "additiveDetail": {
+      "hr": "Biljni liker (Kräuterlikör) — maceracija 56 biljaka, korijena i začina uz dodani šećer (EU kategorija likera, ne destilat).",
+      "en": "Herbal liqueur (Kräuterlikör) — a maceration of 56 herbs, roots and spices with added sugar (EU liqueur category, not a distillate)."
+    },
+    "qualityScore": 7,
+    "priceEUR": { "min": 13, "max": 15 },
+    "priceApprox": true,
+    "shopHR": "ecuga.com",
+    "pairable": true,
+    "serving": { "best": "Čisto, ledeno hladno" },
+    "priceUrl": "https://ecuga.com/katalog/jagermeister-070-l/",
+    "notes": {
+      "hr": "Njemački biljni liker iz Wolfenbüttela, na tržištu od 1935. — 56 biljaka, korijena i začina, s anisom i gorkom narančom ispod izražene slatkoće. Tradicionalno se pije ledeno hladan, a uz cigaru ga treba shvatiti kao digestiv nakon jela, ne kao aperitiv.",
+      "en": "The German herbal liqueur from Wolfenbüttel, on the market since 1935 — 56 herbs, roots and spices, with anise and bitter orange under a pronounced sweetness. Traditionally served ice-cold; alongside a cigar treat it as an after-dinner digestif, not an aperitif."
+    },
+    "cigarHint": {
+      "hr": "Slatkoća i anis traže cigaru koja im može odgovoriti tijelom — maduro s kakaom i kavom drži ravnotežu, dok blaga Connecticut cigara ispod njega nestane.",
+      "en": "The sweetness and anise need a cigar with body to answer them — a maduro with cocoa and coffee holds the balance, while a mild Connecticut simply disappears underneath."
     }
   },
   {

@@ -19,9 +19,11 @@ export const WEIGHTS = {
   curatedWarnMaxScore: 45, // ispod ovoga kurirana poruka smije biti negativna
   personal: 5, // max nudge iz dnevnika (stil pica / brend cigare), po smjeru
   formatComplexityBonus: 0, // B2 (eksperimentalno, default 0=iskljuceno): duga cigara + kompleksno pice
-  occasionFit: 4, // soft; < bodyPerStep — par je važniji od doba dana
-  occasionMild: 2,
-  occasionClash: 4,
+  // Prilika je soft: occasionFit + occasionMild < bodyPerStep, pa doba dana
+  // nikad ne pregazi ni jedan korak body-matcha. Stvarno razdvajanje jutra i
+  // večeri radi izbor unutar izjednačenih (engine/occasion → rankByOccasion).
+  occasionFit: 5,
+  occasionMild: 3,
 };
 
 // sinonimi/varijante iz scrape podataka -> kanonski tag koji engine boduje
@@ -122,21 +124,21 @@ export const WRAPPER_AFFINITY: {
     wrapper: /connecticut|claro/i,
     styles: ["agricole", "filter-light", "cognac-vs", "cognac-vsop", "irish-blend", "milk", "vinjak", "speyside-fruity", "japanese", "contemporary", "london-dry", "premium-dry", "plymouth", "sparkling", "white-fresh", "white-rich"],
     tags: ["travnato", "cvjetno", "kremasto", "med", "citrus"],
-    labelHr: "Connecticut wrapper voli lagana, svježa i kremasta pića",
+    labelHr: "Connecticut pokrov voli lagana, svježa i kremasta pića",
     labelEn: "Connecticut wrappers love light, fresh and creamy drinks",
   },
   {
     wrapper: /maduro|oscuro|san andr|broadleaf|brazil/i,
     styles: ["demerara", "solera", "espresso-dark", "espresso-medium", "filter-dark", "brandy-de-jerez", "turkish", "moka", "bourbon", "navy-strength", "port-ruby", "sherry-sweet", "madeira", "prosek", "red-full", "dessert-wine"],
     tags: ["melasa", "kakao", "kava", "karamela", "tamno-voce", "slatko"],
-    labelHr: "Maduro/oscuro wrapper (kakao, kava) traži tamna i bogata pića",
+    labelHr: "Maduro/oscuro pokrov (kakao, kava) traži tamna i bogata pića",
     labelEn: "Maduro/oscuro wrappers (cocoa, coffee) call for dark, rich drinks",
   },
   {
     wrapper: /habano|corojo|sumatra|cameroon/i,
     styles: ["jamaica", "islay-peated", "speyside-sherry", "espresso-dark", "cognac-xo", "armagnac", "rye", "campbeltown", "croatian", "red-full", "red-medium", "port-tawny", "sherry-dry"],
     tags: ["zacini", "dim", "suho-voce", "hrast", "ester-funk"],
-    labelHr: "Habano/corojo wrapper podnosi začinska i dimna pića",
+    labelHr: "Habano/corojo pokrov podnosi začinska i dimna pića",
     labelEn: "Habano/corojo wrappers stand up to spicy and smoky drinks",
   },
 ];
@@ -165,7 +167,7 @@ export const TAG_LABELS: Record<string, LocalizedText> = {
   dim: { hr: "dim", en: "smoke" },
   drvo: { hr: "drvo", en: "wood" },
   duhan: { hr: "duhan", en: "tobacco" },
-  "ester-funk": { hr: "ester-funk", en: "ester funk" },
+  "ester-funk": { hr: "esterski funk", en: "ester funk" },
   gorko: { hr: "gorko", en: "bitter" },
   hrast: { hr: "hrast", en: "oak" },
   jabuka: { hr: "jabuka", en: "apple" },

@@ -89,6 +89,34 @@ export const getItemState = (id: string): ItemState => {
   };
 };
 
+/**
+ * Zbirno stanje cijele LINIJE cigare. Stanje se čuva po vitoli
+ * (`cig-x@churchill`), pa filteri na razini linije ("samo moje", Kupovina)
+ * moraju gledati sve njezine vitole: posjedujem liniju ako posjedujem bilo koji
+ * njezin format. Ocjena je najviša zabilježena.
+ */
+export function lineState(cigarId: string): ItemState {
+  const prefix = `${cigarId}@`;
+  const out: ItemState = {
+    owned: false,
+    tried: false,
+    wishlist: false,
+    rating: null,
+    note: "",
+  };
+  for (const [key, s] of Object.entries(cache.items)) {
+    if (key !== cigarId && !key.startsWith(prefix)) continue;
+    out.owned ||= s.owned ?? false;
+    out.tried ||= s.tried ?? false;
+    out.wishlist ||= s.wishlist ?? false;
+    if (s.rating != null && (out.rating == null || s.rating > out.rating)) {
+      out.rating = s.rating;
+    }
+    if (!out.note && s.note) out.note = s.note;
+  }
+  return out;
+}
+
 export function updateItem(id: string, patch: Partial<ItemState>) {
   const current = getItemState(id);
   const next = { ...current, ...patch, note: (patch.note ?? current.note).trim() };

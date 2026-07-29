@@ -14,6 +14,12 @@ export interface Shop {
   productHost?: string; // host izravnih product URL-ova u katalogu
   search: (query: string) => string; // pretraga po nazivu (query je vec encodeURIComponent)
   note: { hr: string; en: string };
+  /**
+   * Trgovina bez web kataloga (fizicki ducan). Prikazuje se u popisu trgovina
+   * i u `availabilityHR`, ali NE dobiva link po proizvodu — pretraga po nazivu
+   * na stranici koja nema katalog vodi u prazno.
+   */
+  walkIn?: boolean;
 }
 
 // Redoslijed u nizu = redoslijed prikaza unutar regije (prva = primarna).
@@ -37,12 +43,25 @@ export const SHOPS: Shop[] = [
     note: { hr: "provjera dobi na ulazu", en: "age-gate at entry" },
   },
   {
+    id: "tobacco-petica-branimir",
+    name: "Tobacco Petica (Branimir)",
+    region: "HR",
+    home: "https://www.branimir.hr/minglanje/trgovine/tobacco-petica",
+    // fizicki ducan bez web kataloga — search vodi na stranicu ducana
+    search: () => "https://www.branimir.hr/minglanje/trgovine/tobacco-petica",
+    walkIn: true,
+    note: {
+      hr: "Zagreb, Branimir centar — ducan bez web kataloga, kupnja na mjestu",
+      en: "Zagreb, Branimir centar — walk-in shop, no online catalogue",
+    },
+  },
+  {
     id: "cigarworld",
     name: "CigarWorld",
     region: "EU",
     home: "https://www.cigarworld.de/en",
     search: (q) => `https://www.cigarworld.de/en/search?q=${q}`,
-    note: { hr: "Njemacka — dostava po EU", en: "Germany — ships across the EU" },
+    note: { hr: "Njemačka — dostava po EU", en: "Germany — ships across the EU" },
   },
   {
     id: "holts",
@@ -50,7 +69,7 @@ export const SHOPS: Shop[] = [
     region: "USA",
     home: "https://www.holts.com/",
     search: (q) => `https://www.holts.com/catalogsearch/result/?q=${q}`,
-    note: { hr: "Philadelphia — klasicna US kuca", en: "Philadelphia — classic US house" },
+    note: { hr: "Philadelphia — klasična američka kuća", en: "Philadelphia — classic US house" },
   },
   {
     id: "cigarsdaily",
@@ -58,7 +77,7 @@ export const SHOPS: Shop[] = [
     region: "USA",
     home: "https://cigarsdaily.com/",
     search: (q) => `https://cigarsdaily.com/?s=${q}`,
-    note: { hr: "US ponude i recenzije", en: "US deals and reviews" },
+    note: { hr: "Američke ponude i recenzije", en: "US deals and reviews" },
   },
 ];
 

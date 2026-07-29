@@ -123,6 +123,13 @@ export interface Cigar {
   priceApprox?: boolean;
   priceUrl?: string | null; // izvor cijene / gdje kupiti
   vitolas: Vitola[];
+  /**
+   * Runtime oznaka (NIJE u JSON-u): ime vitole koju je korisnik izabrao iz
+   * linije s više formata — postavlja `applyVitola`. Ključ stanja kolekcije i
+   * dnevnika gradi se iz nje (`lib/cigarItemId`) da Churchill i Corona iste
+   * linije ne dijele "Imam / Probao / ocjenu".
+   */
+  selectedVitola?: string;
   markets: Market[]; // gdje se moze kupiti
   // Izravan link na proizvod + cijena po regiji (iz stvarnog scrape-a trgovina).
   // HR/EU/USA gdje postoji; EU/USA cijena je "od" na razini linije, USD->EUR

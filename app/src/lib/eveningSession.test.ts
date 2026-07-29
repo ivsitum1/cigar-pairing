@@ -3,6 +3,7 @@ import { beforeEach, describe, expect, it, vi } from "vitest";
 const addJournalEntry = vi.fn();
 const getItemState = vi.fn();
 const updateItem = vi.fn();
+const consumeFromStock = vi.fn();
 
 vi.mock("../store/collection", () => ({
   addJournalEntry: (...args: unknown[]) => addJournalEntry(...args),
@@ -10,11 +11,16 @@ vi.mock("../store/collection", () => ({
   updateItem: (...args: unknown[]) => updateItem(...args),
 }));
 
+vi.mock("../store/humidor", () => ({
+  consumeFromStock: (...args: unknown[]) => consumeFromStock(...args),
+}));
+
 describe("logEveningSession", () => {
   beforeEach(() => {
     addJournalEntry.mockReset();
     getItemState.mockReset();
     updateItem.mockReset();
+    consumeFromStock.mockReset();
     getItemState.mockReturnValue({
       owned: false,
       tried: false,
@@ -72,5 +78,28 @@ describe("logEveningSession", () => {
     });
     expect(updateItem).toHaveBeenCalledTimes(1);
     expect(updateItem).toHaveBeenCalledWith("rum-1", { tried: true });
+  });
+
+  it("skida popusenu cigaru iz zalihe humidora", async () => {
+    const { logEveningSession } = await import("./eveningSession");
+    logEveningSession({
+      cigarId: "cig-1@churchill",
+      drinkId: "rum-1",
+      rating: 9,
+      note: "",
+    });
+    expect(consumeFromStock).toHaveBeenCalledWith("cig-1@churchill");
+  });
+
+  it("ne dira zalihu kad consumeStock nije trazen", async () => {
+    const { logEveningSession } = await import("./eveningSession");
+    logEveningSession({
+      cigarId: "cig-1",
+      drinkId: "rum-1",
+      rating: null,
+      note: "",
+      consumeStock: false,
+    });
+    expect(consumeFromStock).not.toHaveBeenCalled();
   });
 });

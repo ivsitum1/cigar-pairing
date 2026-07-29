@@ -12,6 +12,7 @@ import { ALL_DRINKS, CIGARS } from "../src/data/index";
 import { pairDrinksForCigar } from "../src/engine/pairing";
 import {
   occasionKeep,
+  rankByOccasion,
   type OccasionFilter,
 } from "../src/engine/occasion";
 import type { Cigar, Drink, DrinkCategory } from "../src/types";
@@ -63,11 +64,19 @@ function topsForCigar(
     const pool = ALL_DRINKS.filter(
       (d) => d.pairable && occasionKeep(occ, cigar.body)(d),
     );
-    const ranked = pairDrinksForCigar(
+    const scored = pairDrinksForCigar(
       cigar,
       pool,
       undefined,
       occ === "any" ? undefined : occ,
+    );
+    // isti izbor kao u UI-u: pojas izjednacenih po kategoriji, pa doba dana
+    const ranked = CATEGORIES.flatMap((cat) =>
+      rankByOccasion(
+        scored.filter((r) => r.item.category === cat),
+        cigar,
+        occ === "any" ? undefined : occ,
+      ),
     );
     if (reasonTally && occ !== "any") {
       // broji reason na top-1 po kategoriji (vidljive kartice)
@@ -240,7 +249,7 @@ function main() {
 
 **Generirano:** ${summary.meta.generatedAt}  
 **Trajanje:** ${summary.meta.elapsedMs} ms  
-**Engine:** hard \`occasionKeep(cigar.body)\` + soft occasion u \`pairDrinksForCigar\`
+**Engine:** soft occasion nudge u \`pairDrinksForCigar\` + \`rankByOccasion\` (izbor unutar pojasa izjednacenih po kategoriji)
 
 ## 1. Opseg
 
@@ -282,13 +291,15 @@ ${sampleRows
   )
   .join("\n")}
 
-## 4. Hard filter pravila (ovisno o tijelu cigare)
+## 4. Kako prilika djeluje
 
-| Prilika | Keep |
-|---------|------|
-| jutro | coffee ∨ body ≤ max(3, cigarBody) |
-| poslijepodne | coffee ∨ body u [cigarBody−1, cigarBody+1] |
-| večer | coffee ∨ body ≥ min(3, max(2, cigarBody)) |
+Nista se ne rezi iz poola (\`occasionKeep\` je no-op). Dva sloja:
+
+1. **Soft nudge** u scoreu — \`|delta| ≤ occasionFit + occasionMild < bodyPerStep\`,
+   pa doba dana ne moze pretvoriti los par u dobar.
+2. **Izbor unutar izjednacenih** — medju kandidatima iste kategorije koji su
+   unutar \`OCCASION_BAND_MARGIN\` bodova od najboljeg presudjuje \`occasionAffinity\`
+   (kategorija + stil + relativno tijelo + zestina).
 
 JSON sažetak: \`app/scripts/output/occasion-audit/summary.json\`
 `;

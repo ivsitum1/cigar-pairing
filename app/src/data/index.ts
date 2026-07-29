@@ -12,7 +12,8 @@ import cigarsJson from "./cigars.json";
 import shoppingJson from "./shopping.json";
 import brandsJson from "./brands.json";
 import cigarIdAliasesJson from "./cigarIdAliases.json";
-import { resolveDefaultVitola } from "../lib/cigarVitola";
+import { applyVitola, resolveDefaultVitola } from "../lib/cigarVitola";
+import { parseCigarItemId, vitolaFromItemId } from "../lib/cigarItemId";
 
 export const DRINKS: Record<DrinkCategory, Drink[]> = {
   rum: rums as unknown as Drink[],
@@ -95,6 +96,22 @@ export const drinkById = (id: string): Drink | undefined =>
 
 export const cigarById = (id: string): Cigar | undefined =>
   CIGARS.find((c) => c.id === id);
+
+/**
+ * Cigara iza ključa kolekcije/dnevnika. Ključ smije nositi vitolu
+ * (`cig-x@churchill`) — tada se vraća linija s primijenjenom tom vitolom, pa
+ * prikaz (format, cijena, vrijeme) odgovara baš onome što je korisnik označio.
+ */
+export function cigarForItemId(itemId: string): Cigar | undefined {
+  const direct = resolveCigarId(itemId);
+  if (direct) return direct;
+  const { cigarId } = parseCigarItemId(itemId);
+  if (cigarId === itemId) return undefined;
+  const line = resolveCigarId(cigarId);
+  if (!line) return undefined;
+  const vitola = vitolaFromItemId(line, itemId);
+  return vitola ? applyVitola(line, vitola) : line;
+}
 
 const CIGAR_ID_ALIASES: Record<string, string> =
   (cigarIdAliasesJson as { aliases?: Record<string, string> }).aliases ?? {};
@@ -319,6 +336,9 @@ export function cigarShopLinks(c: Cigar): CigarShopLink[] {
     }
     for (const shop of shopsForRegion(region)) {
       if (shop.name === usedShop) continue; // vec dodan kao izravan link
+      // fizicki ducan bez kataloga: nema smisla nuditi "pretragu" po proizvodu —
+      // dostupnost se deklarira preko `availabilityHR`
+      if (shop.walkIn) continue;
       const exact = shop.productHost ? exactProductUrl(c, shop.productHost) : null;
       out.push({
         region,
