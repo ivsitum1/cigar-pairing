@@ -19,9 +19,11 @@ export const WEIGHTS = {
   curatedWarnMaxScore: 45, // ispod ovoga kurirana poruka smije biti negativna
   personal: 5, // max nudge iz dnevnika (stil pica / brend cigare), po smjeru
   formatComplexityBonus: 0, // B2 (eksperimentalno, default 0=iskljuceno): duga cigara + kompleksno pice
-  occasionFit: 4, // soft; < bodyPerStep — par je važniji od doba dana
-  occasionMild: 2,
-  occasionClash: 4,
+  // Prilika je soft: occasionFit + occasionMild < bodyPerStep, pa doba dana
+  // nikad ne pregazi ni jedan korak body-matcha. Stvarno razdvajanje jutra i
+  // večeri radi izbor unutar izjednačenih (engine/occasion → rankByOccasion).
+  occasionFit: 5,
+  occasionMild: 3,
 };
 
 // sinonimi/varijante iz scrape podataka -> kanonski tag koji engine boduje

@@ -8,6 +8,7 @@ import { curatedPairingOpinion } from "../engine/curatedOpinion";
 import { pairingBlurb } from "../engine/pairingExplain";
 import {
   occasionKeep,
+  rankByOccasion,
   type OccasionFilter,
 } from "../engine/occasion";
 import { useI18n, STYLE_LABELS, type StringKey } from "../i18n";
@@ -177,8 +178,15 @@ export function PairingPage() {
       prefs,
       occasion === "any" ? undefined : occasion,
     );
+    // Unutar kategorije: među izjednačenima presuđuje doba dana. Pojas se
+    // računa po kategoriji jer kartica pokazuje po jedno piće iz svake — inače
+    // bi jedan globalno najbolji par gušio razlikovanje u ostalim kategorijama.
     const perCategory = (cat: DrinkCategory) =>
-      ranked.filter((r) => r.item.category === cat);
+      rankByOccasion(
+        ranked.filter((r) => r.item.category === cat),
+        selectedCigar,
+        occasion === "any" ? undefined : occasion,
+      );
     return {
       cards: SUGGEST_CATEGORIES.map((cat) => {
         const list = perCategory(cat);
