@@ -1,0 +1,150 @@
+{
+  "counts": {
+    "unverified": 17,
+    "ok_api": 239,
+    "no_url": 11
+  },
+  "fixes": 239,
+  "unverified": [
+    {
+      "key": "cig-aj-fernandez-premium-sampler::Premium Sampler",
+      "url": "https://humidor.hr/en/proizvod/aj-fernandez-premium-sampler/",
+      "error": "no dims on api/page/slug/name"
+    },
+    {
+      "key": "cig-aj-fernandez-new-world-sampler::New World Sampler",
+      "url": "https://humidor.hr/en/proizvod/ajf-new-world-sampler/",
+      "error": "no dims on api/page/slug/name"
+    },
+    {
+      "key": "cig-aj-fernandez-toro-sampler::Toro Sampler",
+      "url": "https://humidor.hr/en/proizvod/aj-fernandez-toro-sampler/",
+      "error": "no dims on api/page/slug/name"
+    },
+    {
+      "key": "cig-aj-fernandez-new-world-dorado-sampler::New World Dorado Sampler",
+      "url": "https://humidor.hr/en/proizvod/ajf-new-world-dorado-sampler/",
+      "error": "no dims on api/page/slug/name"
+    },
+    {
+      "key": "cig-arturo-fuente-gran-reserva::Head Deluxe",
+      "url": "",
+      "error": null
+    },
+    {
+      "key": "cig-cohiba-cohiba-siglo::Siglo Tubos",
+      "url": "",
+      "error": null
+    },
+    {
+      "key": "cig-cohiba-panetelas-25::Panetelas/25*",
+      "url": "https://havana-cigar-shop.com/proizvod/cohiba-panetelas-25/",
+      "error": "age_gate"
+    },
+    {
+      "key": "cig-davidoff-figurado-selection::Figurado",
+      "url": "https://havana-cigar-shop.com/proizvod/davidoff-figurado-selection-6/",
+      "error": "age_gate"
+    },
+    {
+      "key": "cig-davidoff-tubos-selection-white::Selection White",
+      "url": "https://havana-cigar-shop.com/proizvod/davidoff-tubos-selection-white-3/",
+      "error": "age_gate"
+    },
+    {
+      "key": "cig-flor-de-selva-coffret-no-20::No. 20",
+      "url": "https://havana-cigar-shop.com/proizvod/flor-de-selva-coffret-no-20-4/",
+      "error": "age_gate"
+    },
+    {
+      "key": "cig-flor-de-selva-coffret-maduro::Coffret Maduro",
+      "url": "https://havana-cigar-shop.com/proizvod/flor-de-selva-coffret-maduro-4/",
+      "error": "age_gate"
+    },
+    {
+      "key": "cig-la-galera-connecticut::Connecticut Chaveta",
+      "url": "",
+      "error": null
+    },
+    {
+      "key": "cig-la-galera-fresh-pack-connecticut-chaveta::Connecticut Chaveta",
+      "url": "https://humidor.hr/hr/proizvod/la-galera-fresh-pack-connecticut-chaveta/",
+      "error": "no dims on api/page/slug/name"
+    },
+    {
+      "key": "cig-la-galera-robusto-sampler::Robusto",
+      "url": "https://humidor.hr/hr/proizvod/la-galera-robusto-sampler/",
+      "error": "no dims on api/page/slug/name"
+    },
+    {
+      "key": "cig-la-galera-toro-sampler::Toro",
+      "url": "https://humidor.hr/hr/proizvod/la-galera-toro-sampler/",
+      "error": "no dims on api/page/slug/name"
+    },
+    {
+      "key": "cig-la-galera-rojo-gift-pack::Gift Pack",
+      "url": "https://humidor.hr/hr/proizvod/la-galera-rojo-gift-pack/",
+      "error": "no dims on api/page/slug/name"
+    },
+    {
+      "key": "cig-montecristo-no4::No.4",
+      "url": "",
+      "error": null
+    },
+    {
+      "key": "cig-montecristo-joyitas::Joyitas",
+      "url": "https://havana-cigar-shop.com/proizvod/montecristo-joyitas-25/",
+      "error": "age_gate"
+    },
+    {
+      "key": "cig-nub-sampler-tubos::Sampler Tubos",
+      "url": "https://havana-cigar-shop.com/proizvod/nub-sampler-tubos-4/",
+      "error": "age_gate"
+    },
+    {
+      "key": "cig-oliva-robusto-sampler::Robusto",
+      "url": "https://havana-cigar-shop.com/proizvod/oliva-robusto-sampler-5/",
+      "error": "age_gate"
+    },
+    {
+      "key": "cig-oliva-oliva-serie-v::V Sampler",
+      "url": "https://havana-cigar-shop.com/proizvod/oliva-serie-v-sampler-5/",
+      "error": "age_gate"
+    },
+    {
+      "key": "cig-oscar-valladares-edition-toro-black::Toro Black",
+      "url": "",
+      "error": null
+    },
+    {
+      "key": "cig-oscar-valladares-edition-toro-blue::Toro Blue",
+      "url": "",
+      "error": null
+    },
+    {
+      "key": "cig-oscar-valladares-edition-toro-gray::Toro Gray",
+      "url": "",
+      "error": null
+    },
+    {
+      "key": "cig-oscar-valladares-edition-toro-green::Toro Green",
+      "url": "",
+      "error": null
+    },
+    {
+      "key": "cig-oscar-valladares-edition-toro-yellow::Toro Yellow",
+      "url": "",
+      "error": null
+    },
+    {
+      "key": "cig-partagas-short::Short",
+      "url": "",
+      "error": null
+    },
+    {
+      "key": "cig-partagas-shorts::Partagas Short",
+      "url": "",
+      "error": null
+    }
+  ]
+}

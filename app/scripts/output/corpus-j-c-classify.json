@@ -1,0 +1,539 @@
+{
+  "j_patterns": {
+    "likely-size-as-line": 153,
+    "needs-judgment": 364,
+    "likely-keep-wrapper-variant": 97
+  },
+  "j_examples": {
+    "likely-size-as-line": [
+      {
+        "brand": "1502",
+        "a": "Black Gold",
+        "b": "Black Gold Toro 6 X 50",
+        "id_a": "cig-1502-black-gold",
+        "id_b": "cig-1502-black-gold-toro-6-x-50",
+        "n_vit_a": 5,
+        "n_vit_b": 1
+      },
+      {
+        "brand": "1502",
+        "a": "Emerald",
+        "b": "Emerald Lancero 7 X 40",
+        "id_a": "cig-1502-emerald",
+        "id_b": "cig-1502-emerald-lancero-7-x-40",
+        "n_vit_a": 4,
+        "n_vit_b": 1
+      },
+      {
+        "brand": "1502",
+        "a": "Emerald",
+        "b": "Emerald Robusto 5 X 50",
+        "id_a": "cig-1502-emerald",
+        "id_b": "cig-1502-emerald-robusto-5-x-50",
+        "n_vit_a": 4,
+        "n_vit_b": 1
+      },
+      {
+        "brand": "1502",
+        "a": "Ruby",
+        "b": "Ruby Toro 6 X 50",
+        "id_a": "cig-1502-ruby",
+        "id_b": "cig-1502-ruby-toro-6-x-50",
+        "n_vit_a": 4,
+        "n_vit_b": 1
+      },
+      {
+        "brand": "1502",
+        "a": "Special Edition Blue Sapphire",
+        "b": "Special Edition Blue Sapphire Gordo",
+        "id_a": "cig-1502-special-edition-blue-sapphire",
+        "id_b": "cig-1502-special-edition-blue-sapphire-gordo",
+        "n_vit_a": 1,
+        "n_vit_b": 2
+      },
+      {
+        "brand": "A. Flores",
+        "a": "El Criollito",
+        "b": "El Criollito Short",
+        "id_a": "cig-a-flores-el-criollito",
+        "id_b": "cig-a-flores-el-criollito-short",
+        "n_vit_a": 6,
+        "n_vit_b": 1
+      },
+      {
+        "brand": "A. Flores",
+        "a": "Gran Reserva Maduro",
+        "b": "Gran Reserva Maduro Grand",
+        "id_a": "cig-a-flores-gran-reserva-maduro",
+        "id_b": "cig-a-flores-gran-reserva-maduro-grand",
+        "n_vit_a": 2,
+        "n_vit_b": 1
+      },
+      {
+        "brand": "A. Flores",
+        "a": "Gran Reserva Sun Grown",
+        "b": "Gran Reserva Sun Grown Grand",
+        "id_a": "cig-a-flores-gran-reserva-sun-grown",
+        "id_b": "cig-a-flores-gran-reserva-sun-grown-grand",
+        "n_vit_a": 3,
+        "n_vit_b": 1
+      },
+      {
+        "brand": "Alec Bradley",
+        "a": "Coyol",
+        "b": "Coyol Double",
+        "id_a": "cig-alec-bradley-coyol",
+        "id_b": "cig-alec-bradley-coyol-double",
+        "n_vit_a": 4,
+        "n_vit_b": 1
+      },
+      {
+        "brand": "Alec Bradley",
+        "a": "Coyol",
+        "b": "Coyol Petit",
+        "id_a": "cig-alec-bradley-coyol",
+        "id_b": "cig-alec-bradley-coyol-petit",
+        "n_vit_a": 4,
+        "n_vit_b": 1
+      },
+      {
+        "brand": "Alec Bradley",
+        "a": "Lineage",
+        "b": "Lineage 552",
+        "id_a": "cig-alec-bradley-lineage",
+        "id_b": "cig-alec-bradley-lineage-552",
+        "n_vit_a": 1,
+        "n_vit_b": 1
+      },
+      {
+        "brand": "Alec Bradley",
+        "a": "Lineage",
+        "b": "Lineage Double 665",
+        "id_a": "cig-alec-bradley-lineage",
+        "id_b": "cig-alec-bradley-lineage-double-665",
+        "n_vit_a": 1,
+        "n_vit_b": 1
+      },
+      {
+        "brand": "Alec Bradley",
+        "a": "Sanctum",
+        "b": "Sanctum Double",
+        "id_a": "cig-alec-bradley-sanctum",
+        "id_b": "cig-alec-bradley-sanctum-double",
+        "n_vit_a": 3,
+        "n_vit_b": 1
+      },
+      {
+        "brand": "Alec Bradley",
+        "a": "Texas",
+        "b": "Texas Lancero",
+        "id_a": "cig-alec-bradley-texas",
+        "id_b": "cig-alec-bradley-texas-lancero",
+        "n_vit_a": 1,
+        "n_vit_b": 1
+      },
+      {
+        "brand": "Alfambra",
+        "a": "Boutique G",
+        "b": "Boutique G Toro",
+        "id_a": "cig-alfambra-boutique-g",
+        "id_b": "cig-alfambra-boutique-g-toro",
+        "n_vit_a": 3,
+        "n_vit_b": 1
+      }
+    ],
+    "needs-judgment": [
+      {
+        "brand": "1502",
+        "a": "Ruby",
+        "b": "Ruby Conquistador 6 X 56",
+        "id_a": "cig-1502-ruby",
+        "id_b": "cig-1502-ruby-conquistador-6-x-56",
+        "n_vit_a": 4,
+        "n_vit_b": 1
+      },
+      {
+        "brand": "1502",
+        "a": "Special Edition Cachito",
+        "b": "Special Edition Cachito Original",
+        "id_a": "cig-1502-special-edition-cachito",
+        "id_b": "cig-1502-special-edition-cachito-original",
+        "n_vit_a": 1,
+        "n_vit_b": 1
+      },
+      {
+        "brand": "Adrian",
+        "a": "Magnus Imperiales",
+        "b": "Magnus Imperiales Wide",
+        "id_a": "cig-adrian-magnus-imperiales",
+        "id_b": "cig-adrian-magnus-imperiales-wide",
+        "n_vit_a": 1,
+        "n_vit_b": 1
+      },
+      {
+        "brand": "Adv",
+        "a": "Explorer",
+        "b": "Explorer Grande",
+        "id_a": "cig-adv-explorer",
+        "id_b": "cig-adv-explorer-grande",
+        "n_vit_a": 5,
+        "n_vit_b": 1
+      },
+      {
+        "brand": "Aganorsa Leaf",
+        "a": "JFR Connecticut",
+        "b": "JFR Connecticut Super",
+        "id_a": "cig-aganorsa-leaf-jfr-connecticut",
+        "id_b": "cig-aganorsa-leaf-jfr-connecticut-super",
+        "n_vit_a": 1,
+        "n_vit_b": 1
+      },
+      {
+        "brand": "AJ Fernandez",
+        "a": "New World",
+        "b": "New World Dorado Sampler",
+        "id_a": "cig-aj-fernandez-new-world",
+        "id_b": "cig-aj-fernandez-new-world-dorado-sampler",
+        "n_vit_a": 12,
+        "n_vit_b": 1
+      },
+      {
+        "brand": "AJ Fernandez",
+        "a": "New World",
+        "b": "New World Sampler",
+        "id_a": "cig-aj-fernandez-new-world",
+        "id_b": "cig-aj-fernandez-new-world-sampler",
+        "n_vit_a": 12,
+        "n_vit_b": 1
+      },
+      {
+        "brand": "Aksum",
+        "a": "Claro",
+        "b": "Claro Doble",
+        "id_a": "cig-aksum-claro",
+        "id_b": "cig-aksum-claro-doble",
+        "n_vit_a": 2,
+        "n_vit_b": 1
+      },
+      {
+        "brand": "Aksum",
+        "a": "Maduro",
+        "b": "Maduro Doble",
+        "id_a": "cig-aksum-maduro",
+        "id_b": "cig-aksum-maduro-doble",
+        "n_vit_a": 2,
+        "n_vit_b": 1
+      },
+      {
+        "brand": "Aladino",
+        "a": "Cameroon",
+        "b": "Cameroon Reserva",
+        "id_a": "cig-aladino-cameroon",
+        "id_b": "cig-aladino-cameroon-reserva",
+        "n_vit_a": 1,
+        "n_vit_b": 1
+      },
+      {
+        "brand": "Aladino",
+        "a": "Cameroon",
+        "b": "Cameroon Super",
+        "id_a": "cig-aladino-cameroon",
+        "id_b": "cig-aladino-cameroon-super",
+        "n_vit_a": 1,
+        "n_vit_b": 1
+      },
+      {
+        "brand": "Alec Bradley",
+        "a": "Lineage",
+        "b": "Lineage Gigante 770",
+        "id_a": "cig-alec-bradley-lineage",
+        "id_b": "cig-alec-bradley-lineage-gigante-770",
+        "n_vit_a": 1,
+        "n_vit_b": 1
+      },
+      {
+        "brand": "Alec Bradley",
+        "a": "Nica Puro",
+        "b": "Nica Puro Rosado",
+        "id_a": "cig-alec-bradley-nica-puro",
+        "id_b": "cig-alec-bradley-nica-puro-rosado",
+        "n_vit_a": 1,
+        "n_vit_b": 4
+      },
+      {
+        "brand": "Alfambra",
+        "a": "Boutique G",
+        "b": "Boutique G Magnificos",
+        "id_a": "cig-alfambra-boutique-g",
+        "id_b": "cig-alfambra-boutique-g-magnificos",
+        "n_vit_a": 3,
+        "n_vit_b": 1
+      },
+      {
+        "brand": "Alfambra",
+        "a": "Seleccion",
+        "b": "Seleccion Wide",
+        "id_a": "cig-alfambra-seleccion",
+        "id_b": "cig-alfambra-seleccion-wide",
+        "n_vit_a": 4,
+        "n_vit_b": 1
+      }
+    ],
+    "likely-keep-wrapper-variant": [
+      {
+        "brand": "1502",
+        "a": "Special Edition Cachito",
+        "b": "Special Edition Cachito White Connecticut",
+        "id_a": "cig-1502-special-edition-cachito",
+        "id_b": "cig-1502-special-edition-cachito-white-connecticut",
+        "n_vit_a": 1,
+        "n_vit_b": 1
+      },
+      {
+        "brand": "A. Turrent",
+        "a": "Puros San Andres",
+        "b": "Puros San Andres Maduro",
+        "id_a": "cig-a-turrent-puros-san-andres",
+        "id_b": "cig-a-turrent-puros-san-andres-maduro",
+        "n_vit_a": 5,
+        "n_vit_b": 5
+      },
+      {
+        "brand": "Aganorsa Leaf",
+        "a": "Aniversario",
+        "b": "Aniversario Connecticut Robusto 5 X 54",
+        "id_a": "cig-aganorsa-aniversario",
+        "id_b": "cig-aganorsa-leaf-aniversario-connecticut-robusto-5-x-54",
+        "n_vit_a": 6,
+        "n_vit_b": 1
+      },
+      {
+        "brand": "Aganorsa Leaf",
+        "a": "Aniversario",
+        "b": "Aniversario Connecticut Toro 6 1⁄4 X 52",
+        "id_a": "cig-aganorsa-aniversario",
+        "id_b": "cig-aganorsa-leaf-aniversario-connecticut-toro-6-1-4-x-52",
+        "n_vit_a": 6,
+        "n_vit_b": 1
+      },
+      {
+        "brand": "Aganorsa Leaf",
+        "a": "Aniversario",
+        "b": "Aniversario Corojo Robusto 5 X 54",
+        "id_a": "cig-aganorsa-aniversario",
+        "id_b": "cig-aganorsa-leaf-aniversario-corojo-robusto-5-x-54",
+        "n_vit_a": 6,
+        "n_vit_b": 1
+      },
+      {
+        "brand": "Aganorsa Leaf",
+        "a": "Aniversario",
+        "b": "Aniversario Corojo Toro 6 X 58",
+        "id_a": "cig-aganorsa-aniversario",
+        "id_b": "cig-aganorsa-leaf-aniversario-corojo-toro-6-x-58",
+        "n_vit_a": 6,
+        "n_vit_b": 1
+      },
+      {
+        "brand": "Aganorsa Leaf",
+        "a": "Aniversario",
+        "b": "Aniversario Maduro Robusto 5 X 54",
+        "id_a": "cig-aganorsa-aniversario",
+        "id_b": "cig-aganorsa-leaf-aniversario-maduro-robusto-5-x-54",
+        "n_vit_a": 6,
+        "n_vit_b": 1
+      },
+      {
+        "brand": "Alejandro",
+        "a": "Lopez Dominicana",
+        "b": "Lopez Dominicana Maduro",
+        "id_a": "cig-alejandro-lopez-dominicana",
+        "id_b": "cig-alejandro-lopez-dominicana-maduro",
+        "n_vit_a": 5,
+        "n_vit_b": 5
+      },
+      {
+        "brand": "Arturo Fuente",
+        "a": "Special Selection Brevas Royales",
+        "b": "Special Selection Brevas Royales Maduro",
+        "id_a": "cig-arturo-fuente-special-selection-brevas-royales",
+        "id_b": "cig-arturo-fuente-special-selection-brevas-royales-maduro",
+        "n_vit_a": 1,
+        "n_vit_b": 1
+      },
+      {
+        "brand": "Ashton",
+        "a": "VSG",
+        "b": "VSG (Virgin Sun Grown)",
+        "id_a": "cig-ashton-ashton-vsg",
+        "id_b": "cig-ashton-vsg",
+        "n_vit_a": 4,
+        "n_vit_b": 1
+      },
+      {
+        "brand": "Asylum",
+        "a": "Schizo",
+        "b": "Schizo Maduro",
+        "id_a": "cig-asylum-schizo",
+        "id_b": "cig-asylum-schizo-maduro",
+        "n_vit_a": 4,
+        "n_vit_b": 2
+      },
+      {
+        "brand": "Black Works",
+        "a": "Studio Killer Bee",
+        "b": "Studio Killer Bee Connecticut",
+        "id_a": "cig-black-works-studio-killer-bee",
+        "id_b": "cig-black-works-studio-killer-bee-connecticut",
+        "n_vit_a": 1,
+        "n_vit_b": 1
+      },
+      {
+        "brand": "Caldwell",
+        "a": "Blind Man's Bluff",
+        "b": "Blind Man's Bluff Connecticut",
+        "id_a": "cig-caldwell-blind-man-s-bluff",
+        "id_b": "cig-caldwell-blind-man-s-bluff-connecticut",
+        "n_vit_a": 1,
+        "n_vit_b": 2
+      },
+      {
+        "brand": "Caldwell",
+        "a": "Blind Man's Bluff",
+        "b": "Blind Man's Bluff Maduro",
+        "id_a": "cig-caldwell-blind-man-s-bluff",
+        "id_b": "cig-caldwell-blind-man-s-bluff-maduro",
+        "n_vit_a": 1,
+        "n_vit_b": 2
+      },
+      {
+        "brand": "Casa",
+        "a": "de Torres",
+        "b": "de Torres Edicion Famoso XI Maduro",
+        "id_a": "cig-casa-de-torres",
+        "id_b": "cig-casa-de-torres-edicion-famoso-xi-maduro",
+        "n_vit_a": 12,
+        "n_vit_b": 1
+      }
+    ]
+  },
+  "c_prefix_pairs": [
+    {
+      "id": "cig-aganorsa-aniversario",
+      "brand": "Aganorsa Leaf",
+      "line": "Aniversario",
+      "a": "Connecticut Robusto",
+      "b": "Robusto",
+      "format": "54 x 127mm",
+      "price": 13.5
+    },
+    {
+      "id": "cig-aganorsa-aniversario",
+      "brand": "Aganorsa Leaf",
+      "line": "Aniversario",
+      "a": "Corojo Robusto",
+      "b": "Robusto",
+      "format": "54 x 127mm",
+      "price": 13.5
+    },
+    {
+      "id": "cig-aganorsa-aniversario",
+      "brand": "Aganorsa Leaf",
+      "line": "Aniversario",
+      "a": "Maduro Robusto",
+      "b": "Robusto",
+      "format": "54 x 127mm",
+      "price": 13.5
+    },
+    {
+      "id": "cig-aganorsa-aniversario",
+      "brand": "Aganorsa Leaf",
+      "line": "Aniversario",
+      "a": "Corojo Toro",
+      "b": "Toro",
+      "format": "58 x 152mm",
+      "price": 15.0
+    },
+    {
+      "id": "cig-aganorsa-la-validacion",
+      "brand": "Aganorsa Leaf",
+      "line": "La Validación Corojo",
+      "a": "Connecticut Gran Robusto",
+      "b": "Robusto",
+      "format": "54 x 127mm",
+      "price": 10.0
+    },
+    {
+      "id": "cig-aganorsa-la-validacion",
+      "brand": "Aganorsa Leaf",
+      "line": "La Validación Corojo",
+      "a": "Habano Gran Robusto",
+      "b": "Robusto",
+      "format": "54 x 127mm",
+      "price": 10.0
+    },
+    {
+      "id": "cig-aganorsa-la-validacion",
+      "brand": "Aganorsa Leaf",
+      "line": "La Validación Corojo",
+      "a": "Corojo Gran Robusto",
+      "b": "Robusto",
+      "format": "54 x 127mm",
+      "price": 10.0
+    },
+    {
+      "id": "cig-aganorsa-la-validacion",
+      "brand": "Aganorsa Leaf",
+      "line": "La Validación Corojo",
+      "a": "Maduro Gran Robusto",
+      "b": "Robusto",
+      "format": "54 x 127mm",
+      "price": 10.0
+    },
+    {
+      "id": "cig-davidoff-primeros-by-davidoff-dominican",
+      "brand": "Davidoff",
+      "line": "Primeros",
+      "a": "Dominican",
+      "b": "Dominican Maduro",
+      "format": "34 x 105mm",
+      "price": 7.35
+    },
+    {
+      "id": "cig-davidoff-primeros-by-davidoff-dominican",
+      "brand": "Davidoff",
+      "line": "Primeros",
+      "a": "Nicaragua",
+      "b": "Nicaragua Maduro",
+      "format": "34 x 105mm",
+      "price": 7.15
+    },
+    {
+      "id": "cig-rocky-patel-rp-sixty",
+      "brand": "Rocky Patel",
+      "line": "Sixty",
+      "a": "Sixty Toro",
+      "b": "Sixty",
+      "format": "60 x 152mm",
+      "price": 26.0
+    },
+    {
+      "id": "cig-romeo-y-julieta-ryj-classic",
+      "brand": "Romeo y Julieta",
+      "line": "Classic",
+      "a": "No. 3",
+      "b": "Cedros de Luxe No. 3",
+      "format": "42 x 155mm",
+      "price": 14.2
+    },
+    {
+      "id": "cig-romeo-y-julieta-ryj-classic",
+      "brand": "Romeo y Julieta",
+      "line": "Classic",
+      "a": "No. 2",
+      "b": "Fabuloso No. 2",
+      "format": "52 x 156mm",
+      "price": 14.2
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "drinks": 779,
+  "cigars": 2394,
+  "drinkToCigar": {
+    "n": 779,
+    "histogram": {
+      "1": 15,
+      "2-5": 189,
+      "6+": 575
+    },
+    "rotatePct": 100,
+    "scoreGate": false
+  },
+  "cigarToDrink": {
+    "n": 2394,
+    "histogram": {
+      "1": 89,
+      "2-5": 2276,
+      "6+": 29
+    },
+    "rotatePct": 100
+  },
+  "elapsedMs": 81235
+}
