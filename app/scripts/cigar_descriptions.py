@@ -316,7 +316,7 @@ DESCRIPTIONS: dict[str, tuple[str, str]] = {
     ),
     "cig-arturo-fuente-opus-x": (
         "Prva dominikanska cigara s dominikanskim pokrovom — Fuente je 1995. dokazao "
-        "da se wrapper može uzgojiti na Chateau de la Fuente. Rijetka, puna i "
+        "da se pokrov može uzgojiti na Chateau de la Fuente. Rijetka, puna i "
         "začinjena; godinama najtraženija cigara na tržištu.",
         "The first Dominican puro with a Dominican wrapper — in 1995 Fuente proved "
         "wrapper leaf could be grown at Chateau de la Fuente. Scarce, full and spicy; "
