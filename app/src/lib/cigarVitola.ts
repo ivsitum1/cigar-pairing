@@ -125,8 +125,14 @@ export function applyVitola(cigar: Cigar, vitola: Vitola): Cigar {
     return formatOk && ringOk && lenOk ? inheritedPriceUrl : null;
   })();
 
+  // Linija s više formata: zapamti izbor da stanje kolekcije/dnevnika ide po
+  // vitoli (vidi lib/cigarItemId). Linija s jednim formatom nema što razdvajati.
+  const selectedVitola =
+    uniqueVitolas(cigar).length > 1 ? vitola.name : cigar.selectedVitola;
+
   return {
     ...cigar,
+    selectedVitola,
     vitola: vitola.name,
     format: vitola.format && vitola.format !== "—" ? vitola.format : cigar.format,
     smokeTimeMin: vitola.smokeTimeMin ?? cigar.smokeTimeMin,

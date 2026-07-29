@@ -5,6 +5,7 @@ import { Meter } from "./ui";
 import { getItemState, useCollection } from "../store/collection";
 import { useMarket } from "../store/market";
 import { drinkNameLoc } from "../lib/drinkName";
+import { cigarItemId } from "../lib/cigarItemId";
 
 // Cijena cigare koja odgovara odabranom tržištu (HR = konkretna, ostalo = "provjeri")
 export function CigarPrice({ cigar }: { cigar: Cigar }) {
@@ -64,7 +65,7 @@ export function CigarRow({
       <div className="flex items-baseline justify-between gap-2">
         <span className="font-display text-base text-papir">
           {displayBrand} <span className="text-zlato-2">{cigar.line}</span>
-          <OwnedDot id={cigar.id} />
+          <OwnedDot id={cigarItemId(cigar)} />
         </span>
         <span className="shrink-0 text-xs text-dim">
           <CigarPrice cigar={cigar} />

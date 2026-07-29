@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import type { Cigar, Drink, DrinkCategory, PairingResult, ServeStyle, Vitola } from "../types";
-import { ALL_DRINKS, CIGARS, brandDisplayName, brandSearchHaystack, cigarInRegion, cigarLinkForMarket, cigarPriceForMarket, drinkById, formatPrice, resolveCigarId } from "../data";
+import { ALL_DRINKS, CIGARS, brandDisplayName, brandSearchHaystack, cigarInRegion, cigarForItemId, cigarLinkForMarket, cigarPriceForMarket, drinkById, formatPrice, resolveCigarId } from "../data";
 import { pairCigarsForDrink, pairDrinksForCigar } from "../engine/pairing";
 import { dayKey, softBandWindow } from "../engine/softBandRank";
 import { buildPrefs } from "../engine/personal";
@@ -12,7 +12,7 @@ import {
 } from "../engine/occasion";
 import { useI18n, STYLE_LABELS, type StringKey } from "../i18n";
 import { Chip, Meter, ScoreBand, SearchInput, SectionTitle } from "../components/ui";
-import { getItemState, useCollection } from "../store/collection";
+import { getItemState, lineState, useCollection } from "../store/collection";
 import { DetailSheet } from "../components/DetailSheet";
 import { EveningSessionSheet } from "../components/EveningSessionSheet";
 import { MarketFilter } from "../components/MarketFilter";
@@ -22,6 +22,7 @@ import { ritualHint } from "../lib/cigarRitual";
 import { OcrScan } from "../components/OcrScan";
 import { VitolaPicker } from "../components/VitolaPicker";
 import { applyVitola, needsVitolaPick, uniqueVitolas } from "../lib/cigarVitola";
+import { cigarItemId } from "../lib/cigarItemId";
 import { drinkBuyLink } from "../lib/drinkBuyLink";
 import { drinkNameLoc, drinkNameHaystack } from "../lib/drinkName";
 import { readJsonStringArray } from "../lib/safeStorage";
@@ -71,7 +72,7 @@ export function PairingPage() {
     const rated = collection.journal.map((j) => ({
       rating: j.rating,
       drinkStyle: drinkById(j.drinkId)?.style,
-      cigarBrand: resolveCigarId(j.cigarId)?.brand,
+      cigarBrand: cigarForItemId(j.cigarId)?.brand,
     }));
     const built = buildPrefs(rated);
     return built.entries > 0 ? built : undefined;
@@ -192,7 +193,8 @@ export function PairingPage() {
   const cigarSuggestions = useMemo(() => {
     if (mode !== "drinkToCigar" || !selectedDrink) return null;
     let cigars = marketCigars;
-    if (onlyMine) cigars = cigars.filter((c) => getItemState(c.id).owned);
+    // "samo moje": linija se broji ako je posjedovana u bilo kojoj vitoli
+    if (onlyMine) cigars = cigars.filter((c) => lineState(c.id).owned);
     const ranked = pairCigarsForDrink(selectedDrink, cigars, prefs, serve);
     if (ranked.length === 0) return { window: [], total: 0 };
     const { window, total } = softBandWindow(ranked, {
@@ -677,7 +679,7 @@ export function PairingPage() {
         <EveningSessionSheet
           cigars={sessionCigars}
           drinks={sessionDrinks}
-          initialCigarId={sessionCigars[0]?.id}
+          initialCigarId={sessionCigars[0] && cigarItemId(sessionCigars[0])}
           initialDrinkId={sessionDrinks[0]?.id}
           onClose={() => setSessionOpen(false)}
           onSaved={() => {

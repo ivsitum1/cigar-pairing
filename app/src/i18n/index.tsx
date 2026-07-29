@@ -218,6 +218,7 @@ const STRINGS = {
   "pair.pickVitola": { hr: "Odaberi vitolu", en: "Pick a vitola" },
   "pair.pickVitolaHint": { hr: "Ova linija ima više formata — odaberi vitolu.", en: "This line has multiple sizes — pick a vitola." },
   "common.vitolas": { hr: "Vitole", en: "Vitolas" },
+  "common.vitola": { hr: "Vitola", en: "Vitola" },
   "coll.inCollection": { hr: "U kolekciji", en: "In collection" },
   "common.vitolaCountSuffix": { hr: "vitola", en: "vitolas" },
   "coll.triedTitle": { hr: "Probano", en: "Tried" },
@@ -257,6 +258,7 @@ const STRINGS = {
   "shops.availableHere": { hr: "dostupno ovdje", en: "available here" },
   "shops.direct": { hr: "izravno", en: "direct" },
   "shops.search": { hr: "pretraga", en: "search" },
+  "shops.walkIn": { hr: "na mjestu", en: "in store" },
   // opće
   "common.body": { hr: "Tijelo", en: "Body" },
   "common.strength": { hr: "Snaga", en: "Strength" },

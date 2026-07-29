@@ -685,7 +685,11 @@ export function CatalogPage({
                     <div className="flex items-baseline justify-between gap-2">
                       <span className="text-sm text-papir/90">{s.name} ↗</span>
                       <span className="shrink-0 text-micro text-dim">
-                        {s.productHost ? t("shops.direct") : t("shops.search")}
+                        {s.walkIn
+                          ? t("shops.walkIn")
+                          : s.productHost
+                            ? t("shops.direct")
+                            : t("shops.search")}
                       </span>
                     </div>
                     <div className="text-micro text-dim/85">{lx(s.note)}</div>

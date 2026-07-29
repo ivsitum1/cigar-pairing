@@ -5,7 +5,7 @@ import { useI18n, STYLE_LABELS, type StringKey } from "../i18n";
 import { Chip, SectionTitle } from "../components/ui";
 import { CigarRow, DrinkRow } from "../components/cards";
 import { DetailSheet } from "../components/DetailSheet";
-import { getItemState, useCollection } from "../store/collection";
+import { getItemState, lineState, useCollection } from "../store/collection";
 import { useMarket } from "../store/market";
 import {
   buffetFive,
@@ -57,8 +57,9 @@ export function ShoppingPage({
     const s = getItemState(d.id);
     return s.wishlist && !s.owned;
   });
+  // stanje se cuva po vitoli — linija je na listi zelja ako je bilo koja njena
   const wishlistCigars = CIGARS.filter((c) => {
-    const s = getItemState(c.id);
+    const s = lineState(c.id);
     return s.wishlist && !s.owned;
   });
 

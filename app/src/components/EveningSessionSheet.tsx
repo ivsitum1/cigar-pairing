@@ -4,6 +4,7 @@ import { useI18n } from "../i18n";
 import { BackButton } from "./BackButton";
 import { logEveningSession } from "../lib/eveningSession";
 import { drinkNameLoc } from "../lib/drinkName";
+import { cigarItemId } from "../lib/cigarItemId";
 
 export function EveningSessionSheet({
   cigars,
@@ -22,13 +23,22 @@ export function EveningSessionSheet({
 }) {
   const { t, lx } = useI18n();
 
+  // kljuc nosi odabranu vitolu — Churchill i Corona iste linije su dva zapisa
   const cigarOptions = useMemo(() => {
     const seen = new Set<string>();
-    return cigars.filter((c) => {
-      if (seen.has(c.id)) return false;
-      seen.add(c.id);
-      return true;
-    });
+    const out: { key: string; label: string }[] = [];
+    for (const c of cigars) {
+      const key = cigarItemId(c);
+      if (seen.has(key)) continue;
+      seen.add(key);
+      out.push({
+        key,
+        label: c.selectedVitola
+          ? `${c.brand} ${c.line} — ${c.selectedVitola}`
+          : `${c.brand} ${c.line}`,
+      });
+    }
+    return out;
   }, [cigars]);
 
   const drinkOptions = useMemo(() => {
@@ -42,9 +52,9 @@ export function EveningSessionSheet({
 
   const [cigarId, setCigarId] = useState(
     () =>
-      (initialCigarId && cigarOptions.some((c) => c.id === initialCigarId)
+      (initialCigarId && cigarOptions.some((c) => c.key === initialCigarId)
         ? initialCigarId
-        : cigarOptions[0]?.id) ?? "",
+        : cigarOptions[0]?.key) ?? "",
   );
   const [drinkId, setDrinkId] = useState(
     () =>
@@ -97,8 +107,8 @@ export function EveningSessionSheet({
               disabled={cigarOptions.length <= 1}
             >
               {cigarOptions.map((c) => (
-                <option key={c.id} value={c.id}>
-                  {c.brand} {c.line}
+                <option key={c.key} value={c.key}>
+                  {c.label}
                 </option>
               ))}
             </select>

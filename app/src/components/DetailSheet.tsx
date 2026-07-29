@@ -8,6 +8,7 @@ import { drinkBuyLink } from "../lib/drinkBuyLink";
 import { drinkNameLoc } from "../lib/drinkName";
 import { vitolaBlurb } from "../lib/vitolaInfo";
 import { resolveSamplerCigar } from "../lib/samplerLink";
+import { cigarItemId } from "../lib/cigarItemId";
 import { Chip, Meter } from "./ui";
 import { BackButton } from "./BackButton";
 import {
@@ -40,7 +41,9 @@ export function DetailSheet({
     setStack([]);
   }, [target?.item.id]);
   const active = stack.length ? stack[stack.length - 1] : target;
-  const id = active?.item.id;
+  // cigare: ključ nosi odabranu vitolu (Churchill ≠ Corona iste linije)
+  const id =
+    active?.kind === "cigar" ? cigarItemId(active.item) : active?.item.id;
   const state = id ? getItemState(id) : null;
   const [note, setNote] = useState("");
 

@@ -32612,7 +32612,9 @@
     "smokeTimeMin": 58,
     "priceEUR": null,
     "priceApprox": false,
-    "availabilityHR": [],
+    "availabilityHR": [
+      "Tobacco Petica (Branimir)"
+    ],
     "notes": {
       "hr": "Honduras, Connecticut pokrov — lagane snage, laganog tijela. Okusi: kremasto, cedrovina, orašasti tonovi.",
       "en": "Honduras, Connecticut wrapper — mild in strength, light-bodied. Notes: creamy, cedar, nutty."
@@ -60463,6 +60465,15 @@
     "priceUrl": null,
     "vitolas": [
       {
+        "name": "Petit Corona",
+        "format": "42 x 127mm",
+        "smokeTimeMin": 40,
+        "priceEUR": null,
+        "url": null,
+        "ring": 42,
+        "lengthMM": 127
+      },
+      {
         "name": "Corona",
         "format": "42 x 140mm",
         "smokeTimeMin": 50,
@@ -60479,6 +60490,22 @@
         "url": null,
         "ring": 48,
         "lengthMM": 178
+      },
+      {
+        "name": "Rothschild",
+        "format": "50 x 114mm",
+        "smokeTimeMin": 45,
+        "priceEUR": null,
+        "url": null,
+        "regionLinks": {
+          "EU": {
+            "shop": "CigarWorld",
+            "url": "https://www.cigarworld.de/en/zigarren/dominikanische-republik/don-tomas-bundles-dr-rothschild-90013407_27780",
+            "priceEUR": 2.4
+          }
+        },
+        "ring": 50,
+        "lengthMM": 114
       },
       {
         "name": "Robusto",
@@ -60503,7 +60530,9 @@
       "EU",
       "WW"
     ],
-    "availabilityHR": [],
+    "availabilityHR": [
+      "Tobacco Petica (Branimir)"
+    ],
     "notes": {
       "hr": "Bundle izdanje bez kutije — ista tvornica, jednostavnije pakiranje. Blaži, zemljano-drvenast profil za svakodnevno pušenje po nižoj cijeni.",
       "en": "The bundle release without the box — same factory, simpler packaging. A milder, earthy-woody everyday smoke at a lower price."

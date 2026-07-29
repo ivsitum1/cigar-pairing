@@ -14,6 +14,12 @@ export interface Shop {
   productHost?: string; // host izravnih product URL-ova u katalogu
   search: (query: string) => string; // pretraga po nazivu (query je vec encodeURIComponent)
   note: { hr: string; en: string };
+  /**
+   * Trgovina bez web kataloga (fizicki ducan). Prikazuje se u popisu trgovina
+   * i u `availabilityHR`, ali NE dobiva link po proizvodu — pretraga po nazivu
+   * na stranici koja nema katalog vodi u prazno.
+   */
+  walkIn?: boolean;
 }
 
 // Redoslijed u nizu = redoslijed prikaza unutar regije (prva = primarna).
@@ -35,6 +41,19 @@ export const SHOPS: Shop[] = [
     productHost: "havana-cigar-shop.com",
     search: (q) => `https://havana-cigar-shop.com/?s=${q}`,
     note: { hr: "provjera dobi na ulazu", en: "age-gate at entry" },
+  },
+  {
+    id: "tobacco-petica-branimir",
+    name: "Tobacco Petica (Branimir)",
+    region: "HR",
+    home: "https://www.branimir.hr/minglanje/trgovine/tobacco-petica",
+    // fizicki ducan bez web kataloga — search vodi na stranicu ducana
+    search: () => "https://www.branimir.hr/minglanje/trgovine/tobacco-petica",
+    walkIn: true,
+    note: {
+      hr: "Zagreb, Branimir centar — ducan bez web kataloga, kupnja na mjestu",
+      en: "Zagreb, Branimir centar — walk-in shop, no online catalogue",
+    },
   },
   {
     id: "cigarworld",
