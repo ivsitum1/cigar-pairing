@@ -5,6 +5,7 @@ import {
   dayKey,
   softBand,
   softBandWindow,
+  stableBestRotate,
   stableHash,
 } from "./softBandRank";
 
@@ -136,6 +137,33 @@ describe("softBandRank", () => {
     expect(window).toHaveLength(3);
   });
 
+  it("stableTop pins cycle 0 to the head of the pool", () => {
+    const ranked = [
+      r("a", "A", 90),
+      r("b", "B", 90),
+      r("c", "C", 90),
+      r("d", "D", 90),
+      r("e", "E", 90),
+      r("f", "F", 90),
+    ];
+    const w0 = softBandWindow(ranked, {
+      anchorId: "drink-stable",
+      dayKey: "2026-07-26",
+      cycle: 0,
+      stableTop: true,
+      keyOf: (i: Item) => i.brand,
+    });
+    expect(w0.window.map((x) => x.item.id)).toEqual(["a", "b", "c"]);
+    const w1 = softBandWindow(ranked, {
+      anchorId: "drink-stable",
+      dayKey: "2026-07-26",
+      cycle: 1,
+      stableTop: true,
+      keyOf: (i: Item) => i.brand,
+    });
+    expect(w1.window.map((x) => x.item.id)).toEqual(["d", "e", "f"]);
+  });
+
   it("dayKey uses UTC YYYY-MM-DD", () => {
     expect(dayKey(new Date("2026-07-26T23:30:00.000Z"))).toBe("2026-07-26");
   });
@@ -143,5 +171,48 @@ describe("softBandRank", () => {
   it("stableHash is deterministic", () => {
     expect(stableHash("abc")).toBe(stableHash("abc"));
     expect(stableHash("abc")).not.toBe(stableHash("abd"));
+  });
+});
+
+describe("stableBestRotate", () => {
+  const keyOf = (i: Item) => i.brand;
+
+  it("cycle 0 is always absolute #1", () => {
+    const ranked = [
+      r("best", "A", 92),
+      r("b", "B", 91),
+      r("c", "C", 90),
+      r("d", "D", 70),
+    ];
+    const a = stableBestRotate(ranked, 0, { keyOf });
+    const b = stableBestRotate(ranked, 0, { keyOf });
+    expect(a.pick?.item.id).toBe("best");
+    expect(b.pick?.item.id).toBe("best");
+    expect(a.total).toBe(3); // soft band 92–87 keeps A,B,C; D out
+  });
+
+  it("cycle advances only within soft band (style/key diverse)", () => {
+    const ranked = [
+      r("a1", "Demerara", 90),
+      r("a2", "Demerara", 89), // same key — dropped by diversity
+      r("b1", "Cuba", 88),
+      r("c1", "Agricole", 87),
+      r("d1", "Spiced", 70),
+    ];
+    const c0 = stableBestRotate(ranked, 0, { keyOf });
+    const c1 = stableBestRotate(ranked, 1, { keyOf });
+    const c2 = stableBestRotate(ranked, 2, { keyOf });
+    const c3 = stableBestRotate(ranked, 3, { keyOf }); // wraps
+    expect(c0.pick?.item.id).toBe("a1");
+    expect(c1.pick?.item.id).toBe("b1");
+    expect(c2.pick?.item.id).toBe("c1");
+    expect(c3.pick?.item.id).toBe("a1");
+    expect(c0.pool.map((x) => x.item.id)).toEqual(["a1", "b1", "c1"]);
+  });
+
+  it("empty ranked yields empty pick", () => {
+    const out = stableBestRotate([], 0, { keyOf });
+    expect(out.pick).toBeUndefined();
+    expect(out.total).toBe(0);
   });
 });

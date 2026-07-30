@@ -1,6 +1,122 @@
 {
  "_comment": "Neutralne izmjene tona i neovisne ocjene — primjenjuje apply-neutral-overrides.py. Nacela: deklaracija umjesto osude; ocjena unutar vlastitog stila (agregat javnih ocjena/recenzija); sve je pairable — engine posteno boduje spoj. Izvori mjerenja: Systembolaget/Alko lab liste, javni hidrometrijski testovi (rumrevelations.com, thefatrumpirate.com).",
  "rums": {
+  "rum-el-dorado-12-demerara": {
+   "qualityScore": 8.0,
+   "additiveStatus": "clean",
+   "additiveDetail": {
+    "hr": "Suvremene boce: šećer tipično <3–6 g/L (lab/hidrometar); E150a moguć za boju",
+    "en": "Recent bottlings: sugar typically <3–6 g/L (lab/hydrometer); E150a possible for colour"
+   },
+   "additiveSource": "Systembolaget / Rum Revelations (<3 g/L); Fat Rum Pirate / Single Cask (~6 g/L hidrometar, novije boce)",
+   "sweetness": 2,
+   "notes": {
+    "hr": "Demerara 12: moderna boca gotovo bez doziranja šećera — melasa i tamno voće ostaju iz bačve. Čistiji i iskreniji profil od starijih slađenih serija; pouzdana baza uz srednje-jak dim.",
+    "en": "Demerara 12: modern bottles nearly undosed — molasses and dark fruit stay from the cask. Cleaner and more honest than older sweetened runs; a solid base with medium-full smoke."
+   }
+  },
+  "rum-el-dorado-15-demerara": {
+   "qualityScore": 8.0,
+   "additiveStatus": "clean",
+   "additiveDetail": {
+    "hr": "Suvremene boce: šećer ~6 g/L (Systembolaget 0,6 g/100 ml); starije serije bile su znatno slađe",
+    "en": "Recent bottlings: sugar ~6 g/L (Systembolaget 0.6 g/100 ml); older runs were much sweeter"
+   },
+   "additiveSource": "Systembolaget / Vinguiden (~6 g/L); starije hidrometrije 20–48 g/L zastarjele",
+   "sweetness": 2,
+   "notes": {
+    "hr": "Demerara 15: bogatiji hrast i začin od 12, uz slično nisku razinu šećera u novijim bocama. Sjajan uz maduro ili Cameroon.",
+    "en": "Demerara 15: richer oak and spice than the 12, with similarly low sugar in recent bottles. Excellent with maduro or Cameroon."
+   }
+  },
+  "rum-el-dorado-21": {
+   "qualityScore": 8.5,
+   "additiveStatus": "light",
+   "additiveDetail": {
+    "hr": "I dalje blaga obscuracija/karamel (~12–16 g/L ekv. u nekim mjerenjima); sporije smanjenje od 12/15",
+    "en": "Still mild obscuration/caramel (~12–16 g/L equiv. in some tests); slower reduction than 12/15"
+   },
+   "additiveSource": "Rhum Attitude obscuracija (nova vs. stara 21); sporiji efekt reformulacije zbog starosti blendova",
+   "sweetness": 3,
+   "notes": {
+    "hr": "Demerara 21: najkompleksniji core — pečeno voće i hrast. I dalje malo slađi/zaobljeniji od 12/15 zbog preostalog karamela; biraj kad želiš težinu uz puni dim.",
+    "en": "Demerara 21: the richest core — baked fruit and oak. Still a touch rounder than 12/15 from residual caramel; choose it when you want weight with full smoke."
+   }
+  },
+  "rum-avua-cachaca": {
+   "qualityScore": 7.5,
+   "notes": {
+    "hr": "Avuá je zanatska single-estate cachaça s Fazende da Quinta (Rio de Janeiro). Prata je nedozrela i bistra; posebne su verzije dozrele u domaćim brazilskim drvima — Amburana daje cimet, klinčić i tonku, Bálsamo smolu i med. Ozbiljan destilat za sipanje, unutar stila — ne iznad zrelih siping rumova.",
+    "en": "Avuá is an artisanal single-estate cachaça from Fazenda da Quinta (Rio de Janeiro). The Prata is unaged and clear; standout bottlings rest in native Brazilian woods — Amburana for cinnamon, clove and tonka, Bálsamo for resin and honey. A serious sipping spirit within its style — not above mature sipping rums."
+   }
+  },
+  "rum-novo-fogo-cachaca": {
+   "qualityScore": 7.5
+  },
+  "rum-weber-haus-cachaca": {
+   "qualityScore": 7.5
+  },
+  "rum-goslings-black-seal": {
+   "additiveStatus": "light",
+   "additiveDetail": {
+    "hr": "Dodani šećer ~10 g/L (lab)",
+    "en": "Added sugar ~10 g/L (lab)"
+   },
+   "additiveSource": "Systembolaget 1,0 g/100 ml (=10 g/L)"
+  },
+  "rum-ron-millonario-15": {
+   "additiveDetail": {
+    "hr": "Doslađen solera stil (tipično visoka slatkoća; nije svježe lab mjerenje)",
+    "en": "Sweetened solera style (typically high sweetness; not a fresh lab figure)"
+   },
+   "additiveSource": "Stilska klasifikacija solera + hidrometrijske serije zajednice (bez svježeg Systembolaget broja)"
+  },
+  "rum-ron-millonario-xo": {
+   "additiveDetail": {
+    "hr": "Doslađen solera stil (tipično visoka slatkoća; nije svježe lab mjerenje)",
+    "en": "Sweetened solera style (typically high sweetness; not a fresh lab figure)"
+   },
+   "additiveSource": "Stilska klasifikacija solera + hidrometrijske serije zajednice (bez svježeg Systembolaget broja)"
+  },
+  "rum-kirk-sweeney-gran-reserva": {
+   "additiveDetail": {
+    "hr": "Umjereno slađen (dominikanski/solera profil; nije lab)",
+    "en": "Moderately sweetened (Dominican/solera profile; not lab)"
+   },
+   "additiveSource": "Stilska procjena — nije lab/hidrometar"
+  },
+  "rum-companero-elixir-orange-jamajka": {
+   "additiveDetail": {
+    "hr": "Rum liker: vrlo visok šećer (reda veličine ~200 g/L u javnim usporedbama)",
+    "en": "Rum liqueur: very high sugar (order of ~200 g/L in public comparisons)"
+   },
+   "additiveSource": "Rum Revelations (eliksir/liqueur, ne rum po EU pravilima)"
+  },
+  "rum-black-tot-rum": {
+   "additiveSource": "Stilska procjena (navy blend; tipično bez jakog doziranja) — nije lab mjerenje"
+  },
+  "rum-admiral-rodney-st-lucia": {
+   "additiveSource": "Stilska procjena (St Lucia Distillers; tipično čist profil) — nije lab mjerenje"
+  },
+  "rum-chairman-s-reserve-sv-lucija": {
+   "additiveSource": "Stilska procjena (St Lucia Distillers; tipično čist profil) — nije lab mjerenje"
+  },
+  "rum-planteray-original-dark": {
+   "additiveDetail": {
+    "hr": "Blagi dodatak / boja (Maison Ferrand transparentniji od solera kuća; nije lab broj)",
+    "en": "Light dose / colour (Maison Ferrand more transparent than solera houses; no lab figure)"
+   },
+   "additiveSource": "Stilska procjena — nije lab/hidrometar"
+  },
+  "rum-planteray-3-stars-bijeli": {
+   "additiveSource": "Stilska procjena (bijeli blending rum; tipično čist) — nije lab mjerenje"
+  },
+  "rum-opthimus-15-18-21-solera": {
+   "additiveSource": "Stilska procjena (DR solera, tipično slađen) — nije lab mjerenje"
+  },
+  "rum-barcelo-imperial-onyx": {
+   "additiveSource": "Stilska procjena (Imperial linija tipično doslađena) — nije lab mjerenje"
+  },
   "rum-foursquare-ecs-detente-2005": {
    "notes": {
     "hr": "Referentna točka Barbadosa — destilerija deklarira bez aditiva. Suho voće i hrast; odličan i uz cigaru.",

@@ -58,6 +58,8 @@ export type SoftBandWindowOpts<T> = {
   cycle?: number;
   windowSize?: number;
   margin?: number;
+  /** When true, cycle 0 starts at the top of the pool (no day-hash drift). */
+  stableTop?: boolean;
   /** Diversity key; default for cigars is brand via `brandDiverse` callers. */
   keyOf: (item: T) => string;
 };
@@ -97,7 +99,9 @@ export function softBandWindow<T>(
 
   const n = pool.length;
   const baseOffset =
-    n === 0 ? 0 : stableHash(`${opts.anchorId}|${opts.dayKey}`) % n;
+    opts.stableTop || n === 0
+      ? 0
+      : stableHash(`${opts.anchorId}|${opts.dayKey}`) % n;
   const offset = n === 0 ? 0 : (baseOffset + cycle * windowSize) % n;
 
   const window: PairingResult<T>[] = [];
@@ -106,4 +110,43 @@ export function softBandWindow<T>(
   }
 
   return { window, band, total: n };
+}
+
+/**
+ * Stable #1 + button rotation among near-equals.
+ * - cycle 0 always returns `ranked[0]` (no day-hash drift).
+ * - later cycles walk a key-diverse soft band, with #1 pinned at index 0.
+ */
+export function stableBestRotate<T extends { id: string }>(
+  ranked: PairingResult<T>[],
+  cycle: number,
+  opts: {
+    margin?: number;
+    keyOf: (item: T) => string;
+  },
+): {
+  pick: PairingResult<T> | undefined;
+  pool: PairingResult<T>[];
+  total: number;
+} {
+  if (ranked.length === 0) {
+    return { pick: undefined, pool: [], total: 0 };
+  }
+
+  const margin = opts.margin ?? SOFT_BAND_MARGIN;
+  const top = ranked[0];
+  const diverse = diverseBy(ranked, opts.keyOf);
+  const band = softBand(diverse, margin);
+
+  const seen = new Set<string>([top.item.id]);
+  const pool: PairingResult<T>[] = [top];
+  for (const r of band) {
+    if (seen.has(r.item.id)) continue;
+    seen.add(r.item.id);
+    pool.push(r);
+  }
+
+  const total = pool.length;
+  const idx = ((cycle % total) + total) % total;
+  return { pick: pool[idx], pool, total };
 }

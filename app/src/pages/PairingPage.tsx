@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import type { Cigar, Drink, DrinkCategory, PairingResult, ServeStyle, Vitola } from "../types";
 import { ALL_DRINKS, CIGARS, brandDisplayName, brandSearchHaystack, cigarInRegion, cigarForItemId, cigarLinkForMarket, cigarPriceForMarket, drinkById, formatPrice, resolveCigarId } from "../data";
 import { pairCigarsForDrink, pairDrinksForCigar } from "../engine/pairing";
-import { dayKey, softBandWindow } from "../engine/softBandRank";
+import { dayKey, softBandWindow, stableBestRotate } from "../engine/softBandRank";
 import { buildPrefs } from "../engine/personal";
 import { curatedPairingOpinion } from "../engine/curatedOpinion";
 import { pairingBlurb } from "../engine/pairingExplain";
@@ -196,6 +196,7 @@ export function PairingPage() {
     // Unutar kategorije: među izjednačenima presuđuje doba dana. Pojas se
     // računa po kategoriji jer kartica pokazuje po jedno piće iz svake — inače
     // bi jedan globalno najbolji par gušio razlikovanje u ostalim kategorijama.
+    // cycle 0 = stabilan #1; gumb rotira samo soft-band (različiti stilovi).
     const perCategory = (cat: DrinkCategory) =>
       rankByOccasion(
         ranked.filter((r) => r.item.category === cat),
@@ -205,14 +206,16 @@ export function PairingPage() {
     return {
       cards: SUGGEST_CATEGORIES.map((cat) => {
         const list = perCategory(cat);
-        const idx = list.length ? (cycle[cat] ?? 0) % list.length : 0;
-        return { category: cat, result: list[idx], total: list.length };
+        const { pick, total } = stableBestRotate(list, cycle[cat] ?? 0, {
+          keyOf: (d) => d.style,
+        });
+        return { category: cat, result: pick, total };
       }),
     };
   }, [mode, selectedCigar, onlyMine, cycle, occasion, prefs]);
 
   // pice -> tocno 3 cigare RAZLICITIH brendova u soft-bandu (max−5);
-  // day seed + cycle pomice prozor
+  // cycle 0 = vrh ljestvice; gumb pomiče prozor unutar pojasa
   const cigarSuggestions = useMemo(() => {
     if (mode !== "drinkToCigar" || !selectedDrink) return null;
     let cigars = marketCigars;
@@ -224,6 +227,7 @@ export function PairingPage() {
       anchorId: selectedDrink.id,
       dayKey: dayKey(),
       cycle: cycle["cigars"] ?? 0,
+      stableTop: true,
       keyOf: (c) => c.brand,
     });
     return { window, total };
@@ -495,8 +499,22 @@ export function PairingPage() {
                       label: d.name,
                     }))
               }
+              enableReceipt={mode === "cigarToDrink"}
+              onConfirmCigar={(id, action) => {
+                // Nikad auto-Imam: Pairing je primarni CTA; owned je eksplicitan u OcrScan sheetu.
+                if (action === "dismiss") return;
+                if (mode !== "cigarToDrink") return;
+                const c = resolveCigarId(id) ?? marketCigars.find((x) => x.id === id);
+                if (!c) return;
+                if (action === "pair") {
+                  pickCigar(c);
+                  return;
+                }
+                // owned | detail — pokaži karticu (owned već spremljen u OcrScan)
+                openCigar(c);
+              }}
               onMatch={(id) => {
-                // OCR prepoznato -> otvori karticu (može se odmah označiti u kolekciju)
+                // pića i legacy: otvori karticu, bez auto-owned
                 if (mode === "cigarToDrink") {
                   const c = resolveCigarId(id) ?? marketCigars.find((x) => x.id === id);
                   if (c) openCigar(c);
