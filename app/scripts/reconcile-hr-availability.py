@@ -5,10 +5,10 @@ Ulaz: scripts/output/hr_catalog_snapshot.json (havana + humidor proizvodi).
 Matcher: sync-hr-shops.detect_brand / line_name_from_product / norm.
 
 Pravila:
-  - catalogSource == "market" → ne diraj (HR već iz scrapanih ponuda)
+  - market i curated: otkrij HR kad snapshot poklopi (brand+line ili brand+vitola)
   - tvrdi dokaz (regionLinks.HR ili URL na humidor/havana) → zadrži HR
-  - inače: availabilityHR = presjek sa stvarno prisutnim (brand, line);
-    bez poklapanja → availabilityHR=[] i makni "HR" iz markets
+  - walkIn shopovi iz shops.ts se prenose kroz svaki prolaz
+  - bez poklapanja i bez dokaza → availabilityHR=[] i makni "HR" iz markets
 
 Pokretanje (iz app/):
   python scripts/reconcile-hr-availability.py [--fetch]
@@ -125,10 +125,17 @@ def has_hard_hr_proof(c: dict) -> bool:
     return False
 
 
-def build_present(sync, snapshot: dict, cigars: list[dict]) -> dict[tuple[str, str], set[str]]:
-    """(brand_norm, line_norm) -> set shop display names."""
+def build_present(
+    sync, snapshot: dict, cigars: list[dict]
+) -> tuple[dict[tuple[str, str], set[str]], dict[tuple[str, str], set[str]]]:
+    """Vrati (by_line, by_vitola): (brand_norm, line|vitola_norm) -> shopovi.
+
+    by_vitola pokriva brojčane linije (npr. Cain Daytona 646) gdje shop
+    piše samo 'Cain Daytona Corona' — line_name_from_product ne pogodi '646'.
+    """
     detectors = sync.build_brand_detectors(cigars)
-    present: dict[tuple[str, str], set[str]] = {}
+    by_line: dict[tuple[str, str], set[str]] = {}
+    by_vitola: dict[tuple[str, str], set[str]] = {}
     for src_key in ("havana", "humidor"):
         shop = SHOP_FROM_SOURCE[src_key]
         for row in snapshot.get(src_key) or []:
@@ -136,13 +143,21 @@ def build_present(sync, snapshot: dict, cigars: list[dict]) -> dict[tuple[str, s
             brand = sync.detect_brand(name, detectors)
             if not brand:
                 continue
+            bn = sync.norm(brand)
             line = sync.line_name_from_product(brand, name)
-            key = (sync.norm(brand), sync.norm(line))
-            present.setdefault(key, set()).add(shop)
-    return present
+            by_line.setdefault((bn, sync.norm(line)), set()).add(shop)
+            vit = sync.vitola_from_product(name, brand)
+            if vit:
+                by_vitola.setdefault((bn, sync.norm(vit)), set()).add(shop)
+    return by_line, by_vitola
 
 
-def match_shops(c: dict, present: dict[tuple[str, str], set[str]], sync) -> set[str]:
+def match_shops(
+    c: dict,
+    present: dict[tuple[str, str], set[str]],
+    sync,
+    present_vitola: dict[tuple[str, str], set[str]] | None = None,
+) -> set[str]:
     key = (sync.norm(c.get("brand", "")), sync.norm(c.get("line", "")))
     shops = set(present.get(key) or ())
     # fuzzy: line containment within same brand (isto kao find_or_create_cigar)
@@ -154,10 +169,39 @@ def match_shops(c: dict, present: dict[tuple[str, str], set[str]], sync) -> set[
                 continue
             if ln and pl and (ln in pl or pl in ln):
                 shops |= sh
+    # fallback samo za brojčane linije (Cain Daytona 646) — inače bi
+    # "Robusto" na brandu s više linija lažno označio sve linije kao HR
+    if not shops and present_vitola and _numeric_line(c.get("line")):
+        bn = key[0]
+        names: list[str] = []
+        if c.get("vitola"):
+            names.append(str(c["vitola"]))
+        for v in c.get("vitolas") or []:
+            n = v.get("name") if isinstance(v, dict) else None
+            if n:
+                names.append(str(n))
+        for n in names:
+            shops |= set(present_vitola.get((bn, sync.norm(n))) or ())
     return shops
 
 
-def reconcile(cigars: list[dict], present: dict, sync) -> tuple[list[dict], list[dict]]:
+def _numeric_line(line: str | None) -> bool:
+    """True za linije tipa '646', '550', 'Double 660'."""
+    s = re.sub(r"\s+", " ", (line or "").strip().lower())
+    return bool(re.fullmatch(r"(double )?\d{2,4}", s))
+
+
+def _ensure_hr_market(c: dict, prev_markets: list) -> None:
+    if "HR" not in c.get("markets", []):
+        c["markets"] = list(prev_markets) + ["HR"]
+
+
+def reconcile(
+    cigars: list[dict],
+    present: dict,
+    sync,
+    present_vitola: dict[tuple[str, str], set[str]] | None = None,
+) -> tuple[list[dict], list[dict]]:
     removed: list[dict] = []
     added: list[dict] = []
     walk_in = walk_in_shops()
@@ -167,10 +211,39 @@ def reconcile(cigars: list[dict], present: dict, sync) -> tuple[list[dict], list
         kept_walk_in = [s for s in prev_av if s in walk_in]
         prev_markets = list(c.get("markets") or [])
         is_market = c.get("catalogSource") == "market"
+        shops = match_shops(c, present, sync, present_vitola)
 
         if is_market:
-            # Market HR mora imati dokaz; inače makni HR (očiti integritetni bug).
-            if "HR" in prev_markets and not has_hard_hr_proof(c) and not prev_av:
+            # Market: otkrij novu online / walk-in ponudu. Tvrdi URL dokaz drži HR.
+            # Ne briši ručno postavljen availabilityHR samo zato što zastarjeli
+            # snapshot još nema red (npr. Cain/Perla prije --fetch) — samo makni
+            # prazan markets.HR bez ikakvog dokaza (integritet).
+            if shops or kept_walk_in:
+                had_hr = "HR" in prev_markets or bool(prev_av)
+                if shops:
+                    c["availabilityHR"] = sorted(set(shops) | set(kept_walk_in))
+                else:
+                    # samo walk-in poklapanje — zadrži i postojeće online unose
+                    c["availabilityHR"] = sorted(set(prev_av) | set(kept_walk_in))
+                _ensure_hr_market(c, prev_markets)
+                if shops and not had_hr:
+                    added.append({
+                        "id": c.get("id"),
+                        "brand": c.get("brand"),
+                        "line": c.get("line"),
+                        "shops": sorted(shops),
+                    })
+                continue
+
+            if has_hard_hr_proof(c):
+                if not c.get("availabilityHR"):
+                    c["availabilityHR"] = sorted(
+                        {"The Humidor", "Havana Shop"} | set(kept_walk_in)
+                    )
+                _ensure_hr_market(c, prev_markets)
+                continue
+
+            if "HR" in prev_markets and not prev_av:
                 removed.append({
                     "id": c.get("id"),
                     "brand": c.get("brand"),
@@ -180,10 +253,6 @@ def reconcile(cigars: list[dict], present: dict, sync) -> tuple[list[dict], list
                     "reason": "market-HR-without-source",
                 })
                 c["markets"] = [m for m in prev_markets if m != "HR"]
-            elif "HR" in prev_markets and has_hard_hr_proof(c) and not prev_av:
-                # Vitola/price URL dokazuje HR, ali availabilityHR prazan → popuni.
-                shops = match_shops(c, present, sync) or {"The Humidor", "Havana Shop"}
-                c["availabilityHR"] = sorted(shops)
             continue
 
         if "HR" not in prev_markets and not prev_av:
@@ -191,7 +260,6 @@ def reconcile(cigars: list[dict], present: dict, sync) -> tuple[list[dict], list
             # sada drži. Bez ove grane reconcile samo briše zastarjelo i nikad
             # ne otkriva novo, pa cigara koja je stigla nakon zadnjeg scrapea
             # zauvijek ostaje "nema u HR".
-            shops = match_shops(c, present, sync)
             if shops:
                 c["availabilityHR"] = sorted(set(shops) | set(kept_walk_in))
                 c["markets"] = prev_markets + ["HR"]
@@ -206,17 +274,14 @@ def reconcile(cigars: list[dict], present: dict, sync) -> tuple[list[dict], list
         if has_hard_hr_proof(c):
             # zadrži HR; normaliziraj availability ako prazan a ima dokaz
             if not c.get("availabilityHR"):
-                shops = match_shops(c, present, sync) or {"The Humidor", "Havana Shop"}
-                c["availabilityHR"] = sorted(shops)
-            if "HR" not in c.get("markets", []):
-                c.setdefault("markets", []).append("HR")
+                filled = shops or {"The Humidor", "Havana Shop"}
+                c["availabilityHR"] = sorted(set(filled) | set(kept_walk_in))
+            _ensure_hr_market(c, prev_markets)
             continue
 
-        shops = match_shops(c, present, sync)
         if shops or kept_walk_in:
             c["availabilityHR"] = sorted(set(shops) | set(kept_walk_in))
-            if "HR" not in c.get("markets", []):
-                c.setdefault("markets", []).append("HR")
+            _ensure_hr_market(c, prev_markets)
         else:
             if prev_av or "HR" in prev_markets:
                 removed.append({
@@ -261,10 +326,13 @@ def main() -> None:
     )
 
     cigars = json.loads(CIGARS.read_text(encoding="utf-8"))
-    present = build_present(sync, snap, cigars)
-    print(f"Prisutni (brand,line) ključevi: {len(present)}", flush=True)
+    present, present_vitola = build_present(sync, snap, cigars)
+    print(
+        f"Prisutni (brand,line)={len(present)} (brand,vitola)={len(present_vitola)}",
+        flush=True,
+    )
 
-    removed, added = reconcile(cigars, present, sync)
+    removed, added = reconcile(cigars, present, sync, present_vitola)
     # indent=2 + zavrsni novi red = format ostatka repozitorija; indent=1 bi
     # reformatirao cijelu datoteku i utopio stvarnu promjenu u 2400 redaka suma
     CIGARS.write_text(

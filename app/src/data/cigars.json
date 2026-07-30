@@ -1637,14 +1637,17 @@
     "smokeTimeMin": 40,
     "priceEUR": null,
     "priceApprox": false,
-    "availabilityHR": [],
+    "availabilityHR": [
+      "The Humidor"
+    ],
     "notes": {
       "hr": "Dominikanska Republika, Criollo pokrov — jače snage, punijeg tijela. Okusi: papar, začini, koža.",
       "en": "Dominican Republic, Criollo wrapper — medium-full in strength, fuller-bodied. Notes: pepper, spices, leather."
     },
     "markets": [
       "EU",
-      "WW"
+      "WW",
+      "HR"
     ],
     "vitolas": [
       {
@@ -1730,14 +1733,17 @@
     "smokeTimeMin": 40,
     "priceEUR": null,
     "priceApprox": false,
-    "availabilityHR": [],
+    "availabilityHR": [
+      "The Humidor"
+    ],
     "notes": {
       "hr": "Dominikanska Republika, Connecticut pokrov — lagane snage, laganog tijela. Okusi: kremasto, cedrovina, orašasti tonovi.",
       "en": "Dominican Republic, Connecticut wrapper — mild in strength, light-bodied. Notes: creamy, cedar, nutty."
     },
     "markets": [
       "EU",
-      "WW"
+      "WW",
+      "HR"
     ],
     "vitolas": [
       {
@@ -1806,14 +1812,17 @@
     "smokeTimeMin": 40,
     "priceEUR": null,
     "priceApprox": false,
-    "availabilityHR": [],
+    "availabilityHR": [
+      "The Humidor"
+    ],
     "notes": {
       "hr": "Dominikanska Republika, San Andrés pokrov — srednje snage, punijeg tijela. Okusi: kakao, kava, karamela.",
       "en": "Dominican Republic, San Andrés wrapper — medium in strength, fuller-bodied. Notes: cocoa, coffee, caramel."
     },
     "markets": [
       "EU",
-      "WW"
+      "WW",
+      "HR"
     ],
     "vitolas": [
       {
@@ -4288,14 +4297,17 @@
     "smokeTimeMin": 55,
     "priceEUR": null,
     "priceApprox": false,
-    "availabilityHR": [],
+    "availabilityHR": [
+      "The Humidor"
+    ],
     "notes": {
       "hr": "Signature Selection je potpisni kućni blend — najizravniji uvod u slatko-začinski karakter Aganorsa duhana.",
       "en": "Signature Selection is the house's signature blend — the most direct introduction to Aganorsa's sweet-spiced character."
     },
     "markets": [
       "EU",
-      "WW"
+      "WW",
+      "HR"
     ],
     "vitolas": [
       {
@@ -4839,14 +4851,17 @@
     "smokeTimeMin": 58,
     "priceEUR": null,
     "priceApprox": false,
-    "availabilityHR": [],
+    "availabilityHR": [
+      "The Humidor"
+    ],
     "notes": {
       "hr": "Nikaragva, Nicaragua pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Nicaragua, Nicaragua wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
     },
     "markets": [
       "EU",
-      "WW"
+      "WW",
+      "HR"
     ],
     "vitolas": [
       {
@@ -29661,7 +29676,7 @@
     "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 55,
-    "priceEUR": null,
+    "priceEUR": 9.0,
     "priceApprox": false,
     "availabilityHR": [
       "Havana Shop"
@@ -29681,8 +29696,8 @@
         "name": "Corona",
         "format": "46 x 142mm",
         "smokeTimeMin": 55,
-        "priceEUR": null,
-        "url": null,
+        "priceEUR": 9.0,
+        "url": "https://havana-cigar-shop.com/proizvod/cain-daytona-corona-24/",
         "regionLinks": {
           "EU": {
             "shop": "CigarWorld",
@@ -29707,7 +29722,8 @@
         "priceApprox": true
       }
     },
-    "formatEstimated": true
+    "formatEstimated": true,
+    "priceUrl": "https://havana-cigar-shop.com/proizvod/cain-daytona-corona-24/"
   },
   {
     "id": "cig-cain-daytona-654",
@@ -32624,7 +32640,8 @@
     },
     "markets": [
       "EU",
-      "WW"
+      "WW",
+      "HR"
     ],
     "vitolas": [
       {
@@ -42764,14 +42781,17 @@
     "smokeTimeMin": 55,
     "priceEUR": null,
     "priceApprox": false,
-    "availabilityHR": [],
+    "availabilityHR": [
+      "The Humidor"
+    ],
     "notes": {
       "hr": "Honduras, Corojo pokrov — jače snage, punijeg tijela. Okusi: papar, začini, koža.",
       "en": "Honduras, Corojo wrapper — medium-full in strength, fuller-bodied. Notes: pepper, spices, leather."
     },
     "markets": [
       "EU",
-      "WW"
+      "WW",
+      "HR"
     ],
     "vitolas": [
       {
@@ -50477,7 +50497,10 @@
     "smokeTimeMin": 44,
     "priceEUR": null,
     "priceApprox": false,
-    "availabilityHR": [],
+    "availabilityHR": [
+      "Havana Shop",
+      "The Humidor"
+    ],
     "notes": {
       "hr": "Dominikanska Republika, Ecuador pokrov — jače snage, punijeg tijela. Okusi: kakao, kava, karamela.",
       "en": "Dominican Republic, Ecuador wrapper — medium-full in strength, fuller-bodied. Notes: cocoa, coffee, caramel."
@@ -50485,7 +50508,8 @@
     "markets": [
       "EU",
       "USA",
-      "WW"
+      "WW",
+      "HR"
     ],
     "vitolas": [
       {
@@ -51166,14 +51190,17 @@
     "smokeTimeMin": 49,
     "priceEUR": null,
     "priceApprox": false,
-    "availabilityHR": [],
+    "availabilityHR": [
+      "Havana Shop"
+    ],
     "notes": {
       "hr": "Dominikanska Republika, Dominican Republic pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Dominican Republic, Dominican Republic wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
     },
     "markets": [
       "EU",
-      "WW"
+      "WW",
+      "HR"
     ],
     "vitolas": [
       {
@@ -60531,7 +60558,8 @@
     ],
     "markets": [
       "EU",
-      "WW"
+      "WW",
+      "HR"
     ],
     "availabilityHR": [
       "Tobacco Petica (Branimir)"
@@ -66992,14 +67020,17 @@
     "smokeTimeMin": 60,
     "priceEUR": null,
     "priceApprox": false,
-    "availabilityHR": [],
+    "availabilityHR": [
+      "Havana Shop"
+    ],
     "notes": {
       "hr": "Dominikanska Republika, Connecticut Broadleaf pokrov — pune snage, punijeg tijela. Okusi: kakao, kava, karamela.",
       "en": "Dominican Republic, Connecticut Broadleaf wrapper — full in strength, fuller-bodied. Notes: cocoa, coffee, caramel."
     },
     "markets": [
       "USA",
-      "WW"
+      "WW",
+      "HR"
     ],
     "vitolas": [
       {
@@ -75515,14 +75546,17 @@
     "smokeTimeMin": 49,
     "priceEUR": null,
     "priceApprox": false,
-    "availabilityHR": [],
+    "availabilityHR": [
+      "The Humidor"
+    ],
     "notes": {
       "hr": "Dominikanska Republika, H-2000 pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Dominican Republic, H-2000 wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
     },
     "markets": [
       "EU",
-      "WW"
+      "WW",
+      "HR"
     ],
     "vitolas": [
       {
@@ -80472,7 +80506,7 @@
     "priceEUR": 2.9,
     "priceApprox": false,
     "availabilityHR": [
-      "Havana Cigar Shop"
+      "Havana Shop"
     ],
     "notes": {
       "hr": "Guantanamera je kubanska strojno rađena linija kratkog punjenja — jeftin, izravan ulaz u kubanski profil. Decimos je najmanji format, za petnaestak minuta.",
@@ -90682,14 +90716,17 @@
     "smokeTimeMin": 73,
     "priceEUR": null,
     "priceApprox": false,
-    "availabilityHR": [],
+    "availabilityHR": [
+      "Havana Shop"
+    ],
     "notes": {
       "hr": "Nikaragva, Criollo pokrov — jače snage, punijeg tijela. Okusi: zemljani tonovi, cedrovina, orašasti tonovi.",
       "en": "Nicaragua, Criollo wrapper — medium-full in strength, fuller-bodied. Notes: earthy, cedar, nutty."
     },
     "markets": [
       "EU",
-      "WW"
+      "WW",
+      "HR"
     ],
     "vitolas": [
       {
@@ -91043,9 +91080,12 @@
     "priceApprox": true,
     "markets": [
       "EU",
-      "WW"
+      "WW",
+      "HR"
     ],
-    "availabilityHR": [],
+    "availabilityHR": [
+      "Havana Shop"
+    ],
     "notes": {
       "hr": "Odležana verzija Antaña — zaobljenija snaga.",
       "en": "The aged Antaño — power with rounder edges."
@@ -91483,14 +91523,17 @@
     "smokeTimeMin": 49,
     "priceEUR": null,
     "priceApprox": false,
-    "availabilityHR": [],
+    "availabilityHR": [
+      "Havana Shop"
+    ],
     "notes": {
       "hr": "Nikaragva, Nicaragua pokrov — jače snage, punijeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Nicaragua, Nicaragua wrapper — medium-full in strength, fuller-bodied. Notes: cedar, spices, leather."
     },
     "markets": [
       "EU",
-      "WW"
+      "WW",
+      "HR"
     ],
     "vitolas": [
       {
@@ -93101,14 +93144,17 @@
     "smokeTimeMin": 49,
     "priceEUR": null,
     "priceApprox": false,
-    "availabilityHR": [],
+    "availabilityHR": [
+      "The Humidor"
+    ],
     "notes": {
       "hr": "Nikaragva, Cameroon pokrov — lagane snage, srednjeg tijela. Okusi: slatki začini, cedrovina, orašasti tonovi.",
       "en": "Nicaragua, Cameroon wrapper — mild in strength, medium-bodied. Notes: sweet spices, cedar, nutty."
     },
     "markets": [
       "EU",
-      "WW"
+      "WW",
+      "HR"
     ],
     "vitolas": [
       {
@@ -93296,14 +93342,17 @@
     "smokeTimeMin": 49,
     "priceEUR": null,
     "priceApprox": false,
-    "availabilityHR": [],
+    "availabilityHR": [
+      "The Humidor"
+    ],
     "notes": {
       "hr": "Nikaragva, Ecuador pokrov — lagane snage, laganog tijela. Okusi: kremasto, cedrovina, orašasti tonovi.",
       "en": "Nicaragua, Ecuador wrapper — mild in strength, light-bodied. Notes: creamy, cedar, nutty."
     },
     "markets": [
       "EU",
-      "WW"
+      "WW",
+      "HR"
     ],
     "vitolas": [
       {
@@ -98593,16 +98642,12 @@
     "smokeTimeMin": 50,
     "priceEUR": 9.0,
     "priceApprox": false,
-    "availabilityHR": [
-      "The Humidor",
-      "Havana Shop"
-    ],
+    "availabilityHR": [],
     "notes": {
       "hr": "Dominikanska Republika, Habano pokrov — jače snage, punijeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Dominican Republic); fuller and expressive. Notes of cedar, spice, leather. ADN robusto; medium-full Dominican."
     },
     "markets": [
-      "HR",
       "EU",
       "WW"
     ],
@@ -102272,14 +102317,17 @@
     "smokeTimeMin": 49,
     "priceEUR": null,
     "priceApprox": false,
-    "availabilityHR": [],
+    "availabilityHR": [
+      "The Humidor"
+    ],
     "notes": {
       "hr": "Dominikanska Republika, Ecuador pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Dominican Republic, Ecuador wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
     },
     "markets": [
       "EU",
-      "WW"
+      "WW",
+      "HR"
     ],
     "vitolas": [
       {
@@ -107365,7 +107413,7 @@
     "priceEUR": 12.2,
     "priceApprox": false,
     "availabilityHR": [
-      "Havana Cigar Shop"
+      "Havana Shop"
     ],
     "notes": {
       "hr": "Leaf by Oscar dolazi omotana duhanskim listom umjesto celofana — Oscar Valladares tako štiti cigaru u transportu. Connecticut verzija je blaga i kremasta.",
@@ -107441,7 +107489,7 @@
     "priceEUR": 12.2,
     "priceApprox": false,
     "availabilityHR": [
-      "Havana Cigar Shop"
+      "Havana Shop"
     ],
     "notes": {
       "hr": "Corojo verzija Leaf by Oscara — ista prepoznatljiva ovojnica od duhanskog lista, ali punija i začinjenija cigara ispod nje.",
@@ -111726,14 +111774,17 @@
     "smokeTimeMin": 41,
     "priceEUR": null,
     "priceApprox": false,
-    "availabilityHR": [],
+    "availabilityHR": [
+      "The Humidor"
+    ],
     "notes": {
       "hr": "Nikaragva, San Andrés pokrov — srednje snage, punijeg tijela. Okusi: kakao, kava, karamela.",
       "en": "Nicaragua, San Andrés wrapper — medium in strength, fuller-bodied. Notes: cocoa, coffee, caramel."
     },
     "markets": [
       "EU",
-      "WW"
+      "WW",
+      "HR"
     ],
     "vitolas": [
       {
@@ -112668,7 +112719,7 @@
     "priceEUR": 11.9,
     "priceApprox": false,
     "availabilityHR": [
-      "Havana Cigar Shop"
+      "Havana Shop"
     ],
     "notes": {
       "hr": "Maestranzu proizvodi belgijska duhanska obitelj Meerapfel — ručno valjana u Hondurasu, s nikaragvanskim i hondureškim punjenjem pod kostarikanskim pokrovom. Baron je corona format.",
@@ -112728,7 +112779,7 @@
     "priceEUR": 13.5,
     "priceApprox": false,
     "availabilityHR": [
-      "Havana Cigar Shop"
+      "Havana Shop"
     ],
     "notes": {
       "hr": "Conde je robusto format Maestranze — izravniji i gušći od Barona, uz istu eleganciju koja marku definira.",
@@ -112788,7 +112839,7 @@
     "priceEUR": 12.75,
     "priceApprox": false,
     "availabilityHR": [
-      "Havana Cigar Shop"
+      "Havana Shop"
     ],
     "notes": {
       "hr": "Marques je toro format Maestranze — najduži u seriji, s uravnoteženim začinom kroz cijelo pušenje.",
@@ -124427,16 +124478,12 @@
     "smokeTimeMin": 49,
     "priceEUR": null,
     "priceApprox": false,
-    "availabilityHR": [
-      "The Humidor",
-      "Havana Shop"
-    ],
+    "availabilityHR": [],
     "notes": {
       "hr": "Nikaragva, Connecticut Broadleaf pokrov — jače snage, punijeg tijela. Okusi: kakao, kava, karamela.",
       "en": "Broadleaf wrapper (Nicaragua); balanced, medium in strength. Notes of cocoa, coffee, caramel. Broadleaf-wrapped; rich and sweet."
     },
     "markets": [
-      "HR",
       "USA",
       "WW"
     ],
@@ -136499,14 +136546,17 @@
     "smokeTimeMin": 49,
     "priceEUR": null,
     "priceApprox": false,
-    "availabilityHR": [],
+    "availabilityHR": [
+      "The Humidor"
+    ],
     "notes": {
       "hr": "Dominikanska Republika, H-2000 pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Dominican Republic, H-2000 wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
     },
     "markets": [
       "EU",
-      "WW"
+      "WW",
+      "HR"
     ],
     "vitolas": [
       {
@@ -136979,14 +137029,17 @@
     "smokeTimeMin": 49,
     "priceEUR": null,
     "priceApprox": false,
-    "availabilityHR": [],
+    "availabilityHR": [
+      "The Humidor"
+    ],
     "notes": {
       "hr": "Dominikanska Republika, Connecticut pokrov — lagane snage, laganog tijela. Okusi: kremasto, cedrovina, orašasti tonovi.",
       "en": "Dominican Republic, Connecticut wrapper — mild in strength, light-bodied. Notes: creamy, cedar, nutty."
     },
     "markets": [
       "EU",
-      "WW"
+      "WW",
+      "HR"
     ],
     "vitolas": [
       {
@@ -140494,16 +140547,12 @@
     "smokeTimeMin": 50,
     "priceEUR": 13.5,
     "priceApprox": false,
-    "availabilityHR": [
-      "The Humidor",
-      "Havana Shop"
-    ],
+    "availabilityHR": [],
     "notes": {
       "hr": "Nikaragva, Maduro pokrov — srednje snage, punijeg tijela. Okusi: kakao, kava, karamela.",
       "en": "Maduro wrapper (Nicaragua); balanced, medium in strength. Notes of cocoa, coffee, caramel. Value maduro; chocolate notes."
     },
     "markets": [
-      "HR",
       "EU",
       "WW"
     ],
@@ -140793,7 +140842,7 @@
     "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 55,
-    "priceEUR": null,
+    "priceEUR": 5.9,
     "priceApprox": false,
     "availabilityHR": [
       "Havana Shop"
@@ -140812,8 +140861,8 @@
         "name": "Corona",
         "format": "42 x 142mm",
         "smokeTimeMin": 55,
-        "priceEUR": null,
-        "url": null,
+        "priceEUR": 5.9,
+        "url": "https://havana-cigar-shop.com/proizvod/perla-de-calvano-corona-5/",
         "regionLinks": {
           "EU": {
             "shop": "CigarWorld",
@@ -140828,8 +140877,8 @@
         "name": "Robusto",
         "format": "50 x 127mm",
         "smokeTimeMin": 49,
-        "priceEUR": null,
-        "url": null,
+        "priceEUR": 5.8,
+        "url": "https://havana-cigar-shop.com/proizvod/perla-de-calvano-robusto-5/",
         "regionLinks": {
           "EU": {
             "shop": "CigarWorld",
@@ -140844,8 +140893,8 @@
         "name": "Toro",
         "format": "50 x 152mm",
         "smokeTimeMin": 58,
-        "priceEUR": null,
-        "url": null,
+        "priceEUR": 6.4,
+        "url": "https://havana-cigar-shop.com/proizvod/perla-de-calvano-toro-5/",
         "regionLinks": {
           "EU": {
             "shop": "CigarWorld",
@@ -140880,7 +140929,8 @@
         "priceEUR": 2.7
       }
     },
-    "formatEstimated": true
+    "formatEstimated": true,
+    "priceUrl": "https://havana-cigar-shop.com/proizvod/perla-de-calvano-corona-5/"
   },
   {
     "id": "cig-perla-del-mar-corojo",
@@ -143439,7 +143489,7 @@
     "priceEUR": 17.55,
     "priceApprox": false,
     "availabilityHR": [
-      "Havana Cigar Shop"
+      "Havana Shop"
     ],
     "notes": {
       "hr": "Por Larrañaga je najstarija kubanska marka u kontinuiranoj proizvodnji (1834.) i tradicionalno najslađa — kremasta, s tonom vanilije i medenog kolača.",
@@ -143625,7 +143675,7 @@
     "priceEUR": 13.65,
     "priceApprox": false,
     "availabilityHR": [
-      "Havana Cigar Shop"
+      "Havana Shop"
     ],
     "notes": {
       "hr": "Duga, tanka Por Larrañaga vitola — tanak ring pojačava pokrov, pa slatkoća marke dolazi izravnije i suše.",
@@ -148019,7 +148069,7 @@
     "priceEUR": 12.9,
     "priceApprox": false,
     "availabilityHR": [
-      "Havana Cigar Shop"
+      "Havana Shop"
     ],
     "notes": {
       "hr": "Rafael González je jedna od najlakših kubanskih marki, povijesno vezana uz Lonsdale format. Perlas je sitna vitola — blaga, cvjetna, za jutarnju kavu.",
@@ -161643,14 +161693,17 @@
     "smokeTimeMin": 61,
     "priceEUR": null,
     "priceApprox": false,
-    "availabilityHR": [],
+    "availabilityHR": [
+      "The Humidor"
+    ],
     "notes": {
       "hr": "Nikaragva, Ecuador Habano pokrov — jače snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Nicaragua, Ecuador Habano wrapper — medium-full in strength, medium-bodied. Notes: cedar, spices, leather."
     },
     "markets": [
       "USA",
-      "WW"
+      "WW",
+      "HR"
     ],
     "vitolas": [
       {
@@ -166377,7 +166430,7 @@
     "priceEUR": 13.8,
     "priceApprox": false,
     "availabilityHR": [
-      "Havana Cigar Shop"
+      "Havana Shop"
     ],
     "notes": {
       "hr": "The Oscar je vlastita linija Oscara Valladaresa iz Danlíja u Hondurasu — pažljivije birani listovi nego u ostatku njegove ponude.",
