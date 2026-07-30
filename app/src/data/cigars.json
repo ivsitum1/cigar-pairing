@@ -29663,7 +29663,9 @@
     "smokeTimeMin": 55,
     "priceEUR": null,
     "priceApprox": false,
-    "availabilityHR": [],
+    "availabilityHR": [
+      "Havana Shop"
+    ],
     "notes": {
       "hr": "Nikaragva, H-2000 pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Nicaragua, H-2000 wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
@@ -29671,7 +29673,8 @@
     "markets": [
       "EU",
       "USA",
-      "WW"
+      "WW",
+      "HR"
     ],
     "vitolas": [
       {
@@ -140792,14 +140795,17 @@
     "smokeTimeMin": 55,
     "priceEUR": null,
     "priceApprox": false,
-    "availabilityHR": [],
+    "availabilityHR": [
+      "Havana Shop"
+    ],
     "notes": {
       "hr": "Nikaragva, Indonesia pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Nicaragua, Indonesia wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
     },
     "markets": [
       "EU",
-      "WW"
+      "WW",
+      "HR"
     ],
     "vitolas": [
       {
