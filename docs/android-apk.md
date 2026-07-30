@@ -113,8 +113,13 @@ na 412×915:
 - svi lazy chunkovi se dohvaćaju s relativnim base-om: Sparivanje, Katalozi,
   Kolekcija, Kupnja, Klub (uklj. atlas)
 
-Nije provjereno na pravom uređaju — Android SDK se ne može instalirati u ovom
-kontejneru (`dl.google.com` blokiran), pa prvi pravi APK dolazi iz CI artefakta.
+APK se gradi: prvi run workflowa je prošao zeleno u **2m18s** (`assembleDebug`
+91 s, bez Gradle cachea), artefakt `cigar-pairing-debug-apk` ~19 MB.
+
+Nije provjereno na pravom uređaju — Android SDK se ne može instalirati u
+sandboxu (`dl.google.com` blokiran), pa APK treba skinuti iz CI artefakta i
+instalirati ručno (`adb install app-debug.apk` ili prijenos na mobitel uz
+"instalacija iz nepoznatih izvora").
 
 ## Što još nije napravljeno
 
@@ -133,9 +138,9 @@ kontejneru (`dl.google.com` blokiran), pa prvi pravi APK dolazi iz CI artefakta.
    - `viewport-fit=cover` i safe area (notch, gesture bar) — možda treba
      `@capacitor/status-bar`
    - glazba (`MusicToggle`) i tesseract.js worker u WebView-u
-4. **Veličina.** Asseti su ~22 MB nekomprimirano (data-cigars 3.3 MB JS, fontovi,
-   dva mp3-a). Ako APK ispadne prevelik: mp3 na manji bitrate ili download na
-   zahtjev.
+4. **Veličina.** APK je ~19 MB (asseti ~22 MB nekomprimirano: data-cigars 3.3 MB
+   JS, fontovi, dva mp3-a). Radi, ali ako treba niže: mp3 na manji bitrate,
+   `minifyEnabled` na releaseu, ili glazba na download po zahtjevu.
 5. **Play Store listing** — ikona 512×512 (postoji), feature graphic, opis,
    privacy policy (app ne šalje podatke nikamo, sve je localStorage — to olakšava).
 6. **Cloud sync** ostaje faza 2 iz README-a; APK ne mijenja tu priču jer je
