@@ -113,6 +113,10 @@ export function PairingPage() {
   >(null);
   const [sessionOpen, setSessionOpen] = useState(false);
   const [sessionFlash, setSessionFlash] = useState<string | null>(null);
+  const [sessionPrefill, setSessionPrefill] = useState<{
+    cigarId?: string;
+    drinkId?: string | null;
+  } | null>(null);
   const pairingNavVersion = usePairingNavVersion();
   const route = useRoute();
 
@@ -229,8 +233,33 @@ export function PairingPage() {
     return cigarSuggestions?.window.map((r) => r.item) ?? [];
   }, [mode, selectedCigar, cigarSuggestions]);
 
-  const canLogEvening =
-    selected != null && sessionCigars.length > 0 && sessionDrinks.length > 0;
+  // solo dopušten — dovoljna je barem jedna cigara u kontekstu
+  const canLogEvening = sessionCigars.length > 0;
+
+  const sheetCigars = useMemo(() => {
+    const base = [...sessionCigars];
+    if (sessionPrefill?.cigarId) {
+      const c = cigarForItemId(sessionPrefill.cigarId);
+      if (c && !base.some((x) => cigarItemId(x) === sessionPrefill.cigarId)) {
+        base.unshift(c);
+      }
+    }
+    return base;
+  }, [sessionCigars, sessionPrefill]);
+
+  const sheetDrinks = useMemo(() => {
+    const base = [...sessionDrinks];
+    if (sessionPrefill?.drinkId) {
+      const d = drinkById(sessionPrefill.drinkId);
+      if (d && !base.some((x) => x.id === d.id)) base.unshift(d);
+    }
+    return base;
+  }, [sessionDrinks, sessionPrefill]);
+
+  const openSession = (prefill?: { cigarId?: string; drinkId?: string | null }) => {
+    setSessionPrefill(prefill ?? null);
+    setSessionOpen(true);
+  };
 
   const reset = () => {
     setSelectedCigar(null);
@@ -622,6 +651,12 @@ export function PairingPage() {
                       price={formatPrice(result.item.priceEUR)}
                       priceUrl={drinkBuyLink(result.item).href}
                       onOpen={() => setDetail({ kind: "drink", item: result.item })}
+                      onLog={() =>
+                        openSession({
+                          cigarId: cigarItemId(selectedCigar),
+                          drinkId: result.item.id,
+                        })
+                      }
                     />
                   ) : (
                     <p className="rounded-xl border border-dim/15 bg-cedar p-3 text-xs text-dim">
@@ -673,6 +708,12 @@ export function PairingPage() {
                     vitolas={r.item.vitolas}
                     serve={serve}
                     onOpen={() => setDetail({ kind: "cigar", item: r.item })}
+                    onLog={() =>
+                      openSession({
+                        cigarId: cigarItemId(r.item),
+                        drinkId: selectedDrink.id,
+                      })
+                    }
                   />
                 );
               })}
@@ -681,7 +722,7 @@ export function PairingPage() {
 
           {canLogEvening && (
             <button
-              onClick={() => setSessionOpen(true)}
+              onClick={() => openSession()}
               className="mt-4 w-full rounded-lg border border-zlato/40 py-2.5 font-display text-xs uppercase tracking-widest text-zlato hover:bg-zlato/10"
             >
               {t("session.log")}
@@ -693,13 +734,23 @@ export function PairingPage() {
         </>
       )}
 
-      {sessionOpen && (
+      {sessionOpen && sheetCigars.length > 0 && (
         <EveningSessionSheet
-          cigars={sessionCigars}
-          drinks={sessionDrinks}
-          initialCigarId={sessionCigars[0] && cigarItemId(sessionCigars[0])}
-          initialDrinkId={sessionDrinks[0]?.id}
-          onClose={() => setSessionOpen(false)}
+          cigars={sheetCigars}
+          drinks={sheetDrinks}
+          initialCigarId={
+            sessionPrefill?.cigarId ??
+            (sheetCigars[0] && cigarItemId(sheetCigars[0]))
+          }
+          initialDrinkId={
+            sessionPrefill
+              ? sessionPrefill.drinkId
+              : sheetDrinks[0]?.id
+          }
+          onClose={() => {
+            setSessionOpen(false);
+            setSessionPrefill(null);
+          }}
           onSaved={() => {
             setSessionFlash(t("session.saved"));
             setTimeout(() => setSessionFlash(null), 2500);
@@ -707,7 +758,17 @@ export function PairingPage() {
         />
       )}
 
-      <DetailSheet target={detail} onClose={() => setDetail(null)} />
+      <DetailSheet
+        target={detail}
+        onClose={() => setDetail(null)}
+        onLogEvening={(cigar) => {
+          setDetail(null);
+          openSession({
+            cigarId: cigarItemId(cigar),
+            drinkId: selectedDrink?.id ?? null,
+          });
+        }}
+      />
     </div>
   );
 }
@@ -743,6 +804,7 @@ function ResultCard({
   vitolas,
   serve,
   onOpen,
+  onLog,
 }: {
   result: PairingResult<Cigar> | PairingResult<Drink>;
   cigar: Cigar;
@@ -754,6 +816,7 @@ function ResultCard({
   vitolas?: import("../types").Vitola[];
   serve?: ServeStyle;
   onOpen: () => void;
+  onLog?: () => void;
 }) {
   const { t, lx, lang } = useI18n();
   const [open, setOpen] = useState(false);
@@ -864,6 +927,15 @@ function ResultCard({
             : `⚠ ${t("pair.curatedWarn")}`}
           : {lx(pairingOpinion.text)}
         </div>
+      )}
+      {onLog && (
+        <button
+          type="button"
+          onClick={onLog}
+          className="mt-2 w-full rounded-md border border-zlato/35 py-1.5 font-display text-micro uppercase tracking-widest text-zlato hover:bg-zlato/10"
+        >
+          {t("session.logThis")}
+        </button>
       )}
       {open && (
         <div className="mt-2 space-y-2 border-t border-dim/15 pt-2">

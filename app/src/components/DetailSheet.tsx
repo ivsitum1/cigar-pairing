@@ -33,12 +33,15 @@ export function DetailSheet({
   onOpenBrand,
   onOpenLine,
   onPair,
+  onLogEvening,
 }: {
   target: Item | null;
   onClose: () => void;
   onOpenBrand?: (brand: string) => void;
   onOpenLine?: (cigar: Cigar) => void;
   onPair?: (target: Item) => void;
+  /** Samo za cigare — otvara večernji zapis s ovom cigarom. */
+  onLogEvening?: (cigar: Cigar) => void;
 }) {
   const { t } = useI18n();
   useCollection();
@@ -161,6 +164,16 @@ export function DetailSheet({
             className="mt-4 w-full rounded-lg border border-oxblood/50 bg-oxblood/15 py-2.5 font-display text-sm uppercase tracking-widest text-zlato-2 hover:bg-oxblood/25"
           >
             {active.kind === "cigar" ? t("cat.pairWithDrink") : t("cat.pairWithCigar")}
+          </button>
+        )}
+
+        {active.kind === "cigar" && onLogEvening && (
+          <button
+            type="button"
+            onClick={() => onLogEvening(active.item)}
+            className="mt-2 w-full rounded-lg border border-zlato/40 py-2.5 font-display text-sm uppercase tracking-widest text-zlato hover:bg-zlato/10"
+          >
+            {t("session.log")}
           </button>
         )}
 

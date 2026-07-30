@@ -1,10 +1,8 @@
-import { useMemo, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import type { Cigar, Drink } from "../types";
 import {
   ALL_DRINKS,
   CIGARS,
-  brandDisplayName,
-  cigarById,
   cigarForItemId,
   drinkById,
 } from "../data";
@@ -13,20 +11,17 @@ import { Chip, SectionTitle } from "../components/ui";
 import { CigarRow, DrinkRow } from "../components/cards";
 import { drinkNameLoc } from "../lib/drinkName";
 import { DetailSheet } from "../components/DetailSheet";
-import { BackButton } from "../components/BackButton";
+import { EveningSessionSheet } from "../components/EveningSessionSheet";
+import { cigarItemId } from "../lib/cigarItemId";
 import {
-  addJournalEntry,
   exportData,
   importData,
   removeJournalEntry,
   useCollection,
 } from "../store/collection";
-import { useMarket } from "../store/market";
 import { navigate, useRoute, type CollectionView } from "../store/route";
 import { HumidorPage, JournalCalendar } from "./HumidorPage";
 import { exportHumidors, importHumidors } from "../store/humidor";
-import { applyVitola, uniqueVitolas } from "../lib/cigarVitola";
-import { cigarItemId } from "../lib/cigarItemId";
 
 export function CollectionPage({
   onPair,
@@ -40,6 +35,7 @@ export function CollectionPage({
     { kind: "cigar"; item: Cigar } | { kind: "drink"; item: Drink } | null
   >(null);
   const [showAddPairing, setShowAddPairing] = useState(false);
+  const [logCigar, setLogCigar] = useState<Cigar | null>(null);
   const fileRef = useRef<HTMLInputElement>(null);
   const [importMsg, setImportMsg] = useState<string | null>(null);
 
@@ -142,7 +138,19 @@ export function CollectionPage({
                 }
               : undefined
           }
+          onLogEvening={(cigar) => {
+            setDetail(null);
+            setLogCigar(cigar);
+          }}
         />
+        {logCigar && (
+          <EveningSessionSheet
+            cigars={[logCigar]}
+            drinks={[]}
+            initialCigarId={cigarItemId(logCigar)}
+            onClose={() => setLogCigar(null)}
+          />
+        )}
       </div>
     );
   }
@@ -254,7 +262,11 @@ export function CollectionPage({
                       }`
                     : j.cigarId}
                   <span className="text-zlato"> × </span>
-                  {drink ? lx(drinkNameLoc(drink)) : j.drinkId}
+                  {drink
+                    ? lx(drinkNameLoc(drink))
+                    : j.drinkId == null
+                      ? t("session.soloLabel")
+                      : j.drinkId}
                 </span>
                 {j.rating != null && (
                   <span className="shrink-0 text-sm text-zlato-2">{j.rating}/10</span>
@@ -275,7 +287,18 @@ export function CollectionPage({
         })}
       </div>
 
-      {showAddPairing && <AddPairingSheet onClose={() => setShowAddPairing(false)} />}
+      {showAddPairing && (
+        <EveningSessionSheet
+          cigars={
+            myCigars.length > 0 ? myCigars.map(({ cigar }) => cigar) : CIGARS
+          }
+          drinks={[]}
+          initialCigarId={
+            myCigars[0] ? cigarItemId(myCigars[0].cigar) : CIGARS[0]?.id
+          }
+          onClose={() => setShowAddPairing(false)}
+        />
+      )}
       <DetailSheet
         target={detail}
         onClose={() => setDetail(null)}
@@ -287,134 +310,19 @@ export function CollectionPage({
               }
             : undefined
         }
+        onLogEvening={(cigar) => {
+          setDetail(null);
+          setLogCigar(cigar);
+        }}
       />
-    </div>
-  );
-}
-
-function AddPairingSheet({ onClose }: { onClose: () => void }) {
-  const { t, lx } = useI18n();
-  const market = useMarket();
-  const [cigarId, setCigarId] = useState(CIGARS[0]?.id ?? "");
-  const [vitolaName, setVitolaName] = useState("");
-  const [drinkId, setDrinkId] = useState(ALL_DRINKS[0]?.id ?? "");
-  const [rating, setRating] = useState<string>("");
-  const [note, setNote] = useState("");
-
-  // linija s vise formata: zapis ide na konkretnu vitolu, ne na cijelu liniju
-  const lineVitolas = useMemo(() => {
-    const line = cigarById(cigarId);
-    return line ? uniqueVitolas(line) : [];
-  }, [cigarId]);
-
-  const save = () => {
-    const line = cigarById(cigarId);
-    const vitola = lineVitolas.find((v) => v.name === vitolaName);
-    addJournalEntry({
-      cigarId:
-        line && vitola && lineVitolas.length > 1
-          ? cigarItemId(applyVitola(line, vitola))
-          : cigarId,
-      drinkId,
-      rating: rating ? Number(rating) : null,
-      note,
-    });
-    onClose();
-  };
-
-  const selectCls =
-    "w-full rounded-lg border border-dim/25 bg-cedar px-3 py-2.5 text-sm text-papir focus:border-zlato/60 focus:outline-none";
-
-  return (
-    <div className="fixed inset-0 z-50 flex items-end justify-center bg-black/60 sm:items-center" onClick={onClose}>
-      <div
-        className="w-full max-w-lg rounded-t-2xl border border-zlato/25 bg-humidor p-5 pb-8 sm:rounded-2xl"
-        onClick={(e) => e.stopPropagation()}
-      >
-        <div className="mb-3">
-          <BackButton onClick={onClose}>{t("common.back")}</BackButton>
-        </div>
-        <h3 className="font-display text-lg text-papir">{t("coll.addPairing")}</h3>
-        <div className="mt-4 space-y-3">
-          <label className="block text-xs uppercase tracking-widest text-dim">
-            {t("common.cigar")}
-            <select
-              value={cigarId}
-              onChange={(e) => {
-                setCigarId(e.target.value);
-                setVitolaName("");
-              }}
-              className={`mt-1 ${selectCls}`}
-            >
-              {CIGARS.map((c) => (
-                <option key={c.id} value={c.id}>
-                  {brandDisplayName(c.brand, market)} {c.line}
-                </option>
-              ))}
-            </select>
-          </label>
-          {lineVitolas.length > 1 && (
-            <label className="block text-xs uppercase tracking-widest text-dim">
-              {t("common.vitola")}
-              <select
-                value={vitolaName}
-                onChange={(e) => setVitolaName(e.target.value)}
-                className={`mt-1 ${selectCls}`}
-              >
-                <option value="">—</option>
-                {lineVitolas.map((v) => (
-                  <option key={v.name} value={v.name}>
-                    {v.name}
-                    {v.format && v.format !== "—" ? ` · ${v.format}` : ""}
-                  </option>
-                ))}
-              </select>
-            </label>
-          )}
-          <label className="block text-xs uppercase tracking-widest text-dim">
-            {t("common.drink")}
-            <select value={drinkId} onChange={(e) => setDrinkId(e.target.value)} className={`mt-1 ${selectCls}`}>
-              {ALL_DRINKS.filter((d) => d.pairable).map((d) => (
-                <option key={d.id} value={d.id}>
-                  {lx(drinkNameLoc(d))}
-                </option>
-              ))}
-            </select>
-          </label>
-          <label className="block text-xs uppercase tracking-widest text-dim">
-            {t("coll.myRating")}
-            <select value={rating} onChange={(e) => setRating(e.target.value)} className={`mt-1 ${selectCls}`}>
-              <option value="">—</option>
-              {Array.from({ length: 10 }, (_, i) => 10 - i).map((v) => (
-                <option key={v} value={v}>
-                  {v}
-                </option>
-              ))}
-            </select>
-          </label>
-          <textarea
-            value={note}
-            onChange={(e) => setNote(e.target.value)}
-            placeholder={t("coll.notePlaceholder")}
-            rows={2}
-            className={selectCls}
-          />
-        </div>
-        <div className="mt-4 grid grid-cols-2 gap-2">
-          <button
-            onClick={onClose}
-            className="rounded-lg border border-dim/30 py-2.5 font-display text-xs uppercase tracking-widest text-dim"
-          >
-            {t("common.close")}
-          </button>
-          <button
-            onClick={save}
-            className="rounded-lg border border-zlato bg-zlato/15 py-2.5 font-display text-xs uppercase tracking-widest text-zlato-2"
-          >
-            {t("coll.save")}
-          </button>
-        </div>
-      </div>
+      {logCigar && (
+        <EveningSessionSheet
+          cigars={[logCigar]}
+          drinks={[]}
+          initialCigarId={cigarItemId(logCigar)}
+          onClose={() => setLogCigar(null)}
+        />
+      )}
     </div>
   );
 }

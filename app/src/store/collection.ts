@@ -14,7 +14,8 @@ export interface JournalEntry {
   id: string;
   date: string; // ISO
   cigarId: string;
-  drinkId: string;
+  /** null = solo cigara, bez pića */
+  drinkId: string | null;
   rating: number | null;
   note: string;
 }
