@@ -1,0 +1,93 @@
+name: HR availability refresh
+
+# Ponuda hrvatskih trgovina se mijenja, a katalog je statican: cigara koja
+# stigne u ducan nakon zadnjeg scrapea inace zauvijek ostaje "nema u HR".
+# Jednom tjedno dohvati kataloge, uskladi availabilityHR / markets.HR i otvori
+# PR s razlikom. PR (a ne izravni commit) jer promjena dira 2400 cigara i
+# vrijedi je pogledati prije nego ode u aplikaciju.
+
+on:
+  schedule:
+    # ponedjeljak 04:17 UTC — izvan spice, i namjerno ne u puni sat
+    - cron: "17 4 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: hr-availability
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install scrape deps
+        run: pip install requests beautifulsoup4
+
+      - name: Fetch HR catalogues and reconcile
+        id: reconcile
+        working-directory: app
+        run: |
+          # --fetch prekida s greskom ako trgovina vrati sumnjivo malo
+          # proizvoda (MIN_FETCH_RATIO), pa pad ducana ne pomete HR katalog
+          python scripts/reconcile-hr-availability.py --fetch
+
+      - name: Summarise the diff
+        id: summary
+        working-directory: app
+        run: |
+          python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json, pathlib
+          r = json.loads(pathlib.Path("scripts/output/hr_reconcile_report.json").read_text("utf-8"))
+          print(f"### HR dostupnost — {r['snapshot_at']}\n")
+          print(f"- dodano: **{r['added_count']}**")
+          print(f"- maknuto: **{r['removed_count']}**")
+          print(f"- HR ukupno: **{r['hr_markets_remaining']}**\n")
+          for label, key, fields in (
+              ("Dodano", "added", ("brand", "line", "shops")),
+              ("Maknuto", "removed", ("brand", "line", "previous_availabilityHR")),
+          ):
+              rows = r.get(key) or []
+              if not rows:
+                  continue
+              print(f"#### {label}\n")
+              for row in rows[:50]:
+                  print("- " + " · ".join(str(row.get(f)) for f in fields))
+              if len(rows) > 50:
+                  print(f"- …i još {len(rows) - 50}")
+              print()
+          PY
+
+      - name: Open a PR when something changed
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: chore/hr-availability-refresh
+          base: master
+          delete-branch: true
+          commit-message: "chore(data): refresh HR availability from shop catalogues"
+          title: "Osvježi dostupnost u hrvatskim trgovinama"
+          body: |
+            Automatski tjedni prolaz: `scripts/reconcile-hr-availability.py --fetch`.
+
+            Dohvaća kataloge The Humidora i Havana Shopa, pa usklađuje
+            `availabilityHR` i `markets.HR` sa stvarnom ponudom — dodaje linije
+            koje su u međuvremenu stigle u ponudu i miče one kojih više nema.
+
+            Detaljan popis promjena je u sažetku workflow runa i u
+            `app/scripts/output/hr_reconcile_report.json`.
+
+            Trgovine bez web kataloga (`walkIn` u `shops.ts`) se ne diraju —
+            online snapshot ih ne može potvrditi.
+          add-paths: |
+            app/src/data/cigars.json
+            app/scripts/output/hr_catalog_snapshot.json
+            app/scripts/output/hr_reconcile_report.json

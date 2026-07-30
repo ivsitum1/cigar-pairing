@@ -38,5 +38,8 @@ jobs:
       - name: Curated cigar descriptions --check
         working-directory: app
         run: python scripts/apply-cigar-descriptions.py --check
+      - name: HR availability reconcile logic
+        working-directory: app
+        run: python scripts/test_reconcile_hr.py
       - run: npm run build
         working-directory: app

@@ -36,6 +36,27 @@ SHOP_FROM_SOURCE = {
     "humidor": "The Humidor",
     "havana": "Havana Shop",
 }
+SHOPS_TS = APP / "src" / "data" / "shops.ts"
+
+
+def walk_in_shops() -> set[str]:
+    """Nazivi trgovina bez web kataloga (`walkIn: true` u shops.ts).
+
+    Takva se dostupnost unosi ručno i online snapshot je NIKAD ne može
+    potvrditi, pa je reconcile ne smije brisati — inače bi svaki tjedni
+    prolaz pobrisao fizičke dućane.
+    """
+    if not SHOPS_TS.exists():
+        return set()
+    src = SHOPS_TS.read_text(encoding="utf-8")
+    out: set[str] = set()
+    for block in re.split(r"\n  \{", src):
+        if "walkIn: true" not in block:
+            continue
+        m = re.search(r'name:\s*"((?:[^"\\]|\\.)*)"', block)
+        if m:
+            out.add(m.group(1))
+    return out
 
 
 def _load_sync():
@@ -46,9 +67,29 @@ def _load_sync():
     return mod
 
 
+# Ispod ovog udjela prethodnog snapshota dohvat se smatra neuspjelim, ne
+# praznjenjem police. Trgovina koja padne ili promijeni API vratila bi kratku
+# listu, a reconcile bi tada pomeo HR s pola kataloga — tiho i nepovratno.
+MIN_FETCH_RATIO = 0.7
+
+
 def fetch_snapshot(sync) -> dict:
     havana = sync.fetch_havana_catalog()
     humidor = sync.fetch_humidor_catalog()
+
+    if SNAPSHOT.exists():
+        prev = json.loads(SNAPSHOT.read_text(encoding="utf-8"))
+        for key, fresh in (("havana", havana), ("humidor", humidor)):
+            before = len(prev.get(key) or [])
+            now = len(fresh)
+            if before and now < before * MIN_FETCH_RATIO:
+                raise SystemExit(
+                    f"Dohvat '{key}' vratio {now} proizvoda, a prošli snapshot ih je "
+                    f"imao {before} (< {MIN_FETCH_RATIO:.0%}). Vjerojatnije je da je "
+                    f"dohvat pao nego da je police ostala prazna — snapshot NIJE "
+                    f"prepisan i cigars.json nije diran."
+                )
+
     payload = {
         "fetched_at": datetime.now(timezone.utc).isoformat(),
         "havana": havana,
@@ -116,10 +157,14 @@ def match_shops(c: dict, present: dict[tuple[str, str], set[str]], sync) -> set[
     return shops
 
 
-def reconcile(cigars: list[dict], present: dict, sync) -> list[dict]:
+def reconcile(cigars: list[dict], present: dict, sync) -> tuple[list[dict], list[dict]]:
     removed: list[dict] = []
+    added: list[dict] = []
+    walk_in = walk_in_shops()
     for c in cigars:
         prev_av = list(c.get("availabilityHR") or [])
+        # fizicki ducani se ne mogu potvrditi online — nose se kroz svaki prolaz
+        kept_walk_in = [s for s in prev_av if s in walk_in]
         prev_markets = list(c.get("markets") or [])
         is_market = c.get("catalogSource") == "market"
 
@@ -142,6 +187,20 @@ def reconcile(cigars: list[dict], present: dict, sync) -> list[dict]:
             continue
 
         if "HR" not in prev_markets and not prev_av:
+            # Nova ponuda: linija koju dosad nismo vodili kao HR, a trgovina je
+            # sada drži. Bez ove grane reconcile samo briše zastarjelo i nikad
+            # ne otkriva novo, pa cigara koja je stigla nakon zadnjeg scrapea
+            # zauvijek ostaje "nema u HR".
+            shops = match_shops(c, present, sync)
+            if shops:
+                c["availabilityHR"] = sorted(set(shops) | set(kept_walk_in))
+                c["markets"] = prev_markets + ["HR"]
+                added.append({
+                    "id": c.get("id"),
+                    "brand": c.get("brand"),
+                    "line": c.get("line"),
+                    "shops": sorted(shops),
+                })
             continue
 
         if has_hard_hr_proof(c):
@@ -154,9 +213,8 @@ def reconcile(cigars: list[dict], present: dict, sync) -> list[dict]:
             continue
 
         shops = match_shops(c, present, sync)
-        if shops:
-            new_av = sorted(shops)
-            c["availabilityHR"] = new_av
+        if shops or kept_walk_in:
+            c["availabilityHR"] = sorted(set(shops) | set(kept_walk_in))
             if "HR" not in c.get("markets", []):
                 c.setdefault("markets", []).append("HR")
         else:
@@ -171,7 +229,7 @@ def reconcile(cigars: list[dict], present: dict, sync) -> list[dict]:
                 })
             c["availabilityHR"] = []
             c["markets"] = [m for m in (c.get("markets") or []) if m != "HR"]
-    return removed
+    return removed, added
 
 
 def integrity_count(cigars: list[dict]) -> int:
@@ -206,21 +264,28 @@ def main() -> None:
     present = build_present(sync, snap, cigars)
     print(f"Prisutni (brand,line) ključevi: {len(present)}", flush=True)
 
-    removed = reconcile(cigars, present, sync)
-    CIGARS.write_text(json.dumps(cigars, ensure_ascii=False, indent=1), encoding="utf-8")
+    removed, added = reconcile(cigars, present, sync)
+    # indent=2 + zavrsni novi red = format ostatka repozitorija; indent=1 bi
+    # reformatirao cijelu datoteku i utopio stvarnu promjenu u 2400 redaka suma
+    CIGARS.write_text(
+        json.dumps(cigars, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    )
 
     report = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "snapshot_at": snap.get("fetched_at"),
         "present_keys": len(present),
         "removed_count": len(removed),
+        "added_count": len(added),
         "hr_without_source": integrity_count(cigars),
         "hr_markets_remaining": sum(1 for c in cigars if "HR" in (c.get("markets") or [])),
         "removed": removed,
+        "added": added,
     }
     OUT.mkdir(parents=True, exist_ok=True)
     REPORT.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
     print(
+        f"Dodano HR: {report['added_count']} | "
         f"Maknuto HR: {report['removed_count']} | "
         f"HR bez izvora: {report['hr_without_source']} | "
         f"HR markets preostalo: {report['hr_markets_remaining']}",
