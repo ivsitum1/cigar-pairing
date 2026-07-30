@@ -2,12 +2,18 @@
 title: Session Hot Cache
 category: meta
 tags: [session, cache]
-updated: 2026-07-26
+updated: 2026-07-30
 ---
 
 # Session Hot Cache
 
 ~500 riječi snapshot nedavne aktivnosti. Agent ažurira nakon svake značajnije operacije pisanja u wiki.
+
+> **2026-07-30:** Dnevnik večeri: ulaz C (DetailSheet + kartice sparivanja), pretraga kataloga pića + solo cigara, wishlist upit kad zaliha → 0, Kupovina restock. Don Tomas Clásico HR @ Tobacco Petica. Testovi 381/381.
+
+> **2026-07-30:** Club facts/kviz: *vlak* → **draw** (loan; otpor/protok). Kanon: *dim* = brojivi gutljaj; *vlak* zabranjen kao calque. Rez: „tri **uobičajena**” + fact „Jeste li znali?” (škare, casino, Cuban cut, pinch).
+
+> **2026-07-27:** Live: kategorija **digestif** (Biljni digestivi / Herbal digestifs) + Club101 `d-digestif` + 12 boca. PR #102 merged; Pages deploy OK. CI fix: taxonomy linije La Aroma (No. 3 / Habano Reserve / Small Batch) + re-apply.
 
 > **2026-07-27:** HR kanon (projekt): `.cursor/rules/hr-copy-canon.mdc` — *cigara* (padeži), *pepeo*, *domaćin*≠kuća-agens, bez infinitivnih lanaca, Rječnik≠Leksikon≠Bonton. Rječnik očišćen (maknut table/bonton; Leksikon više nije „rječnik”).
 
