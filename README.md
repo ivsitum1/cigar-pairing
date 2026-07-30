@@ -77,7 +77,25 @@ indeksima rangiranim po kvaliteti za sipping uz cigaru.
     - Rotirajući sadržaj: `club.json` (83 činjenice, 80 kviz pitanja)
     - **Kupi vs Traži online:** `src/lib/drinkBuyLink.ts` prikazuje **Kupi** samo kad URL izgleda kao stranica *tog* proizvoda (slug↔ime, bez kategorijskih `/katalog/` linkova); inače **Traži online**. Root cause fuzzy matcha u pipelineu dokumentiran u `docs/superpowers/plans/2026-07-17-content-rollout.md` (Task 0 runtime safeguard; Task 1b stroži match kasnije).
     - **Redoslijed content valova** (kurirane bilješke + `cigarHint` u katalogu): rum MASTER → whisky klasici → fortificirana vina/sherry → brandy/XO i HR vinjak → cigare s `profileEstimated` (vidi brainstorm spec).
+- `app/android/` — Capacitor Android shell (APK) oko istog bundlea; vidi
+  **[Android APK](docs/android-apk.md)**
 - Deploy: push na `master` → GitHub Actions → GitHub Pages
+
+## Android APK (u izradi)
+
+Uz PWA, isti kod se pakira i kao Android app kroz **Capacitor**. Dva build
+targeta iz istog izvora: `npm run build` (Pages, base `/cigar-pairing/`, service
+worker) i `npm run build:native` (WebView, relativni base, bez SW).
+
+```powershell
+cd app
+npm run android:sync     # build:native + cap sync android
+npm run android:open     # Android Studio (traži JDK 21 + Android SDK)
+```
+
+Debug APK se gradi i u CI-u (`.github/workflows/android.yml`) i skida kao
+artefakt run-a. Potpisani release i Play Store još nisu napravljeni — detalji,
+odluke i preostali koraci u [`docs/android-apk.md`](docs/android-apk.md).
 
 ## Podaci o kolekciji (imam / probao / ocjene / dnevnik)
 

@@ -1,0 +1,56 @@
+name: Android APK
+
+# Debug APK iz istog Vite bundlea koji ide na Pages (vite build --mode native).
+# Artefakt se skida iz Actions run-a; potpisani release build dolazi kasnije
+# (trazi keystore u secrets — vidi docs/android-apk.md).
+on:
+  push:
+    branches-ignore: [master]
+  pull_request:
+    branches: [master]
+  workflow_dispatch:
+
+concurrency:
+  group: android-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  debug-apk:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: app/package-lock.json
+
+      # Capacitor 7 / AGP 8.7 trazi JDK 21
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+
+      - uses: gradle/actions/setup-gradle@v4
+
+      - run: npm ci
+        working-directory: app
+
+      - name: Build web bundle (native target)
+        run: npm run build:native
+        working-directory: app
+
+      - name: Sync Capacitor Android
+        run: npx cap sync android
+        working-directory: app
+
+      - name: Assemble debug APK
+        run: ./gradlew --no-daemon assembleDebug
+        working-directory: app/android
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cigar-pairing-debug-apk
+          path: app/android/app/build/outputs/apk/debug/app-debug.apk
+          if-no-files-found: error

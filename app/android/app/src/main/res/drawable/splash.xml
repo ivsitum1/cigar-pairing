@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Launch screen: boja humidora + amblem, umjesto Capacitorovog bijelog
+  template splasha (11 raster varijanti po gustoci/orijentaciji). Layer-list
+  je uvijek ostar i ne trazi po-density PNG-ove.
+-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/brandBackground" />
+    <item
+        android:width="160dp"
+        android:height="160dp"
+        android:gravity="center">
+        <bitmap
+            android:gravity="center"
+            android:src="@mipmap/ic_launcher_foreground" />
+    </item>
+</layer-list>
