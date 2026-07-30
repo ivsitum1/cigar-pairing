@@ -71,14 +71,8 @@ export const SHOPS: Shop[] = [
     search: (q) => `https://www.holts.com/catalogsearch/result/?q=${q}`,
     note: { hr: "Philadelphia — klasična američka kuća", en: "Philadelphia — classic US house" },
   },
-  {
-    id: "cigarsdaily",
-    name: "Cigars Daily",
-    region: "USA",
-    home: "https://cigarsdaily.com/",
-    search: (q) => `https://cigarsdaily.com/?s=${q}`,
-    note: { hr: "Američke ponude i recenzije", en: "US deals and reviews" },
-  },
+  // Cigars Daily uklonjen iz aktivnog popisa: premalo pouzdanih product hitova
+  // za dostupnost. Holt's je jedini USA izvor u tjednom syncu.
 ];
 
 // Sve regije redom kako se prikazuju.

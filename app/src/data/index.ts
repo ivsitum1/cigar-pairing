@@ -322,10 +322,11 @@ export function cigarShopLinks(c: Cigar): CigarShopLink[] {
   for (const region of REGIONS) {
     if (!c.markets.includes(region)) continue;
     // scrapani izravan link na proizvod za EU/USA (HR ostaje na vlastitim
-    // product linkovima iz vitola/priceUrl kao izvoru istine)
+    // product linkovima iz vitola/priceUrl kao izvoru istine).
+    // Cigars Daily demoted — premalo pouzdanih hitova; padamo na Holt's search.
     const rl = region === "HR" ? undefined : c.regionLinks?.[region];
     let usedShop: string | null = null;
-    if (rl?.url) {
+    if (rl?.url && rl.shop !== "Cigars Daily") {
       out.push({
         region,
         shop: rl.shop,

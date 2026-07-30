@@ -202,9 +202,10 @@ describe("cigars.json integrity", () => {
     const withUsa = CIGARS.find((c) => c.markets.includes("USA"));
     expect(withUsa).toBeDefined();
     const usa = cigarLinkForMarket(withUsa!, "USA");
-    expect(usa).toMatch(/holts\.com|cigarsdaily\.com|famous-smoke\.com|neptunecigar\.com/i);
+    expect(usa).toMatch(/holts\.com|famous-smoke\.com|neptunecigar\.com/i);
     expect(usa).not.toContain("google.com");
     expect(usa).not.toContain("site%3A");
+    expect(usa).not.toContain("cigarsdaily.com");
     // Bez regionLinks.USA app pada na Holts search po brand+line
     if (!withUsa!.regionLinks?.USA?.url) {
       expect(usa).toContain(encodeURIComponent(`${withUsa!.brand} ${withUsa!.line}`.trim()));
@@ -212,7 +213,7 @@ describe("cigars.json integrity", () => {
   });
 
   it("cigarShopLinks — po regiji tocne trgovine i izravni HR link gdje postoji", () => {
-    // HR: Humidor + Havana; EU: CigarWorld; USA: Holt's + Cigars Daily
+    // HR: Humidor + Havana; EU: CigarWorld; USA: Holt's (Cigars Daily demoted)
     const withAll = CIGARS.find(
       (c) =>
         c.markets.includes("HR") &&
@@ -227,7 +228,10 @@ describe("cigars.json integrity", () => {
     expect(hosts("HR").some((h) => h.includes("havana-cigar-shop.com"))).toBe(true);
     expect(hosts("EU").some((h) => h.includes("cigarworld.de"))).toBe(true);
     expect(hosts("USA").some((h) => h.includes("holts.com"))).toBe(true);
-    expect(hosts("USA").some((h) => h.includes("cigarsdaily.com"))).toBe(true);
+    // Cigars Daily više nije u SHOPS — buy-linkovi iz registra ne smiju ga nuditi
+    expect(links.filter((l) => l.region === "USA").map((l) => l.shop)).not.toContain(
+      "Cigars Daily",
+    );
     // regije koje cigara ne pokriva se ne pojavljuju
     const hrOnly = CIGARS.find((c) => !c.markets.includes("EU") && !c.markets.includes("USA"));
     if (hrOnly) {
@@ -264,7 +268,7 @@ describe("cigars.json integrity", () => {
     const hostByRegion: Record<string, string[]> = {
       HR: ["humidor.hr", "havana-cigar-shop.com"],
       EU: ["cigarworld.de"],
-      USA: ["holts.com", "cigarsdaily.com"],
+      USA: ["holts.com", "famous-smoke.com", "neptunecigar.com", "cigarsdaily.com"],
     };
     const bad: string[] = [];
     for (const c of CIGARS) {
@@ -274,7 +278,11 @@ describe("cigars.json integrity", () => {
           bad.push(`${c.id}: ${region} -> ${host}`);
         }
         // EU/USA regionLink mora biti u cigarShopLinks; Holts listing = exact:false
+        // Cigars Daily regionLinks su demoted — ne očekujemo ih u buy-linkovima
         if (region !== "HR") {
+          if (link.shop === "Cigars Daily" || /cigarsdaily\.com/i.test(link.url)) {
+            continue;
+          }
           const sl = cigarShopLinks(c).find(
             (l) => l.region === region && l.url === link.url,
           );

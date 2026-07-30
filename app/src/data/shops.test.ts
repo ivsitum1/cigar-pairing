@@ -40,3 +40,10 @@ describe("Tobacco Petica (Branimir centar)", () => {
     }
   });
 });
+
+describe("USA shop registry", () => {
+  it("Holt's je jedina USA trgovina; Cigars Daily je demoted", () => {
+    const usa = SHOPS.filter((s) => s.region === "USA").map((s) => s.id);
+    expect(usa).toEqual(["holts"]);
+  });
+});

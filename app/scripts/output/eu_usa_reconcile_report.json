@@ -1,190 +1,39 @@
 {
-  "generated_at": "2026-07-25T10:13:17.928516+00:00",
-  "fetch": {
-    "probed_at": "2026-07-25T10:13:13.310198+00:00",
-    "full_catalog_fetch": false,
-    "note": "Probe only (homepage reachability). Full EU/USA catalog scrape is not performed by this script; use cigar_unified_catalog.json snapshot.",
-    "any_ok": true,
-    "hosts": {
-      "cigarworld.de": {
-        "url": "https://www.cigarworld.de/",
-        "ok": true,
-        "status": 200,
-        "bytes": 2048
-      },
-      "holts.com": {
-        "url": "https://www.holts.com/",
-        "ok": true,
-        "status": 200,
-        "bytes": 2048
-      },
-      "cigarsdaily.com": {
-        "url": "https://cigarsdaily.com/",
-        "ok": true,
-        "status": 200,
-        "bytes": 2048
-      }
-    }
+  "generated_at": "2026-07-30T09:24:59.717242+00:00",
+  "snapshot_at": "2026-07-30T09:24:57.684562+00:00",
+  "present_keys": {
+    "EU": 4373,
+    "USA": 684
   },
-  "unified_catalog": {
-    "path": "scripts/output/cigar_unified_catalog.json",
-    "status": "loaded",
-    "generatedAt": "2026-07-21T20:11:35Z",
-    "present_keys": {
-      "EU": 1238,
-      "USA": 1264
-    }
-  },
-  "removed_count": 189,
-  "removed_eu": 98,
-  "removed_usa": 91,
-  "added_count": 0,
-  "added_eu": 0,
+  "usa_brands": 1046,
+  "removed_count": 6,
+  "added_count": 87,
+  "removed_eu": 4,
+  "removed_usa": 2,
+  "added_eu": 87,
   "added_usa": 0,
-  "soft_kept_curated_catalog_match": {
-    "EU": 9,
-    "USA": 7
-  },
-  "soft_kept": {
-    "EU": [
-      {
-        "id": "cig-arturo-fuente-brevas-royales",
-        "brand": "Arturo Fuente",
-        "line": "Brevas Royales"
-      },
-      {
-        "id": "cig-la-aurora-107",
-        "brand": "La Aurora",
-        "line": "107"
-      },
-      {
-        "id": "cig-padron-1964-anniversary",
-        "brand": "Padrón",
-        "line": "1964 Anniversary"
-      },
-      {
-        "id": "cig-paperboy-maduro",
-        "brand": "Paperboy",
-        "line": "Maduro"
-      },
-      {
-        "id": "cig-perdomo-20th-anniversary-maduro",
-        "brand": "Perdomo",
-        "line": "20th Anniversary Maduro"
-      },
-      {
-        "id": "cig-punch-super-punch",
-        "brand": "Punch",
-        "line": "Super Punch"
-      },
-      {
-        "id": "cig-rocky-patel-royal-vintage",
-        "brand": "Rocky Patel",
-        "line": "Royal Vintage"
-      },
-      {
-        "id": "cig-rocky-patel-vintage-1990-1992",
-        "brand": "Rocky Patel",
-        "line": "Vintage 1990/1992"
-      },
-      {
-        "id": "cig-villiger-1888",
-        "brand": "Villiger",
-        "line": "1888"
-      }
-    ],
-    "USA": [
-      {
-        "id": "cig-ashton-vsg-virgin-sun-grown",
-        "brand": "Ashton",
-        "line": "VSG (Virgin Sun Grown)"
-      },
-      {
-        "id": "cig-e-p-carrillo-encore",
-        "brand": "E.P. Carrillo",
-        "line": "Encore"
-      },
-      {
-        "id": "cig-padron-1964-anniversary",
-        "brand": "Padrón",
-        "line": "1964 Anniversary"
-      },
-      {
-        "id": "cig-rocky-patel-royal-vintage",
-        "brand": "Rocky Patel",
-        "line": "Royal Vintage"
-      },
-      {
-        "id": "cig-rocky-patel-vintage-1990-1992",
-        "brand": "Rocky Patel",
-        "line": "Vintage 1990/1992"
-      },
-      {
-        "id": "cig-villiger-export",
-        "brand": "Villiger",
-        "line": "Export"
-      },
-      {
-        "id": "cig-viva-la-vida-5th-anniversario-club-500",
-        "brand": "Viva La Vida",
-        "line": "5th Anniversario Club 500"
-      }
-    ]
-  },
-  "integrity_curated_without_proof": {
-    "EU": 0,
-    "USA": 0
-  },
   "markets_remaining": {
-    "EU": 1718,
-    "USA": 720
+    "EU": 1803,
+    "USA": 721
   },
   "removed": [
     {
-      "id": "cig-1502-black-gold",
-      "brand": "1502",
-      "line": "Black Gold",
-      "region": "USA",
-      "catalogSource": "market",
-      "previous_markets": [
-        "EU",
-        "WW",
-        "HR",
-        "USA"
-      ],
-      "reason": "market-USA-without-source"
-    },
-    {
-      "id": "cig-1502-ruby",
-      "brand": "1502",
-      "line": "Ruby",
-      "region": "USA",
-      "catalogSource": "market",
-      "previous_markets": [
-        "EU",
-        "WW",
-        "HR",
-        "USA"
-      ],
-      "reason": "market-USA-without-source"
-    },
-    {
-      "id": "cig-1502-special-edition-blue-sapphire",
-      "brand": "1502",
-      "line": "Special Edition Blue Sapphire",
+      "id": "cig-e-p-carrillo-encore",
+      "brand": "E.P. Carrillo",
+      "line": "Encore",
       "region": "USA",
       "catalogSource": null,
       "previous_markets": [
-        "EU",
         "HR",
+        "EU",
         "USA",
         "WW"
       ],
       "reason": "no-proof-no-snapshot-match"
     },
     {
-      "id": "cig-aj-fernandez-20th-anniversary-maduro",
-      "brand": "AJ Fernandez",
+      "id": "cig-perdomo-20th-anniversary-maduro",
+      "brand": "Perdomo",
       "line": "20th Anniversary Maduro",
       "region": "EU",
       "catalogSource": null,
@@ -197,2012 +46,9 @@
       "reason": "no-proof-no-snapshot-match"
     },
     {
-      "id": "cig-aj-fernandez-blend-15",
-      "brand": "AJ Fernandez",
-      "line": "Blend 15",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-aj-fernandez-k-by-karen-berger",
-      "brand": "AJ Fernandez",
-      "line": "K by Karen Berger",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-arturo-fuente-brevas-royales",
-      "brand": "Arturo Fuente",
-      "line": "Brevas Royales",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "HR",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-arturo-fuente-opus-x",
-      "brand": "Arturo Fuente",
-      "line": "Opus X",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "HR",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-arturo-fuente-rosado-sungrown",
-      "brand": "Arturo Fuente",
-      "line": "Rosado Sungrown",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-ashton-cabinet-selection",
-      "brand": "Ashton",
-      "line": "Cabinet Selection",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-ashton-classic",
-      "brand": "Ashton",
-      "line": "Classic",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-ashton-paragon",
-      "brand": "Ashton",
-      "line": "Paragon",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-ashton-paragon",
-      "brand": "Ashton",
-      "line": "Paragon",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-bolivar-core-line",
-      "brand": "Bolívar",
-      "line": "Core Line",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-bolivar-new-generation",
-      "brand": "Bolívar",
-      "line": "New Generation",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-bolivar-regional-special",
-      "brand": "Bolívar",
-      "line": "Regional & Special",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-camacho-escuro",
-      "brand": "Camacho",
-      "line": "Escuro",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-camacho-escuro",
-      "brand": "Camacho",
-      "line": "Escuro",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-camacho-powerband",
-      "brand": "Camacho",
-      "line": "Powerband",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-camacho-powerband",
-      "brand": "Camacho",
-      "line": "Powerband",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-camacho-triple-maduro",
-      "brand": "Camacho",
-      "line": "Triple Maduro",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-cao-brazilia",
-      "brand": "CAO",
-      "line": "Brazilia",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-cao-consigliere",
-      "brand": "CAO",
-      "line": "Consigliere",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-cao-consigliere",
-      "brand": "CAO",
-      "line": "Consigliere",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-cao-flathead",
-      "brand": "CAO",
-      "line": "Flathead",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-cao-session",
-      "brand": "CAO",
-      "line": "Session",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-cao-vision",
-      "brand": "CAO",
-      "line": "Vision",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-cao-vision",
-      "brand": "CAO",
-      "line": "Vision",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-casa-magna-colorado",
-      "brand": "Casa Magna",
-      "line": "Colorado",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-cohiba-talisman",
-      "brand": "Cohiba",
-      "line": "Talisman",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-crowned-heads-le-careme",
-      "brand": "Crowned Heads",
-      "line": "Le Carême",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-cumpay-cumpay",
-      "brand": "Cumpay",
-      "line": "Cumpay",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-cumpay-cumpay",
-      "brand": "Cumpay",
-      "line": "Cumpay",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-davidoff-figurado-selection",
-      "brand": "Davidoff",
-      "line": "Figurado Selection",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-davidoff-figurado-selection",
-      "brand": "Davidoff",
-      "line": "Figurado Selection",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-don-tomas-bundle",
-      "brand": "Don Tomas",
-      "line": "Bundle",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-drew-estate-herrera-esteli",
-      "brand": "Drew Estate",
-      "line": "Herrera Esteli",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-drew-estate-liga-privada-h99",
-      "brand": "Drew Estate",
-      "line": "Liga Privada H99",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "USA",
-        "EU",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-drew-estate-liga-privada-h99",
-      "brand": "Drew Estate",
-      "line": "Liga Privada H99",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "USA",
-        "EU",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-drew-estate-liga-privada-no-9",
-      "brand": "Drew Estate",
-      "line": "Liga Privada No. 9",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-drew-estate-liga-privada-t52",
-      "brand": "Drew Estate",
-      "line": "Liga Privada T52",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "USA",
-        "EU",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-drew-estate-liga-privada-t52",
-      "brand": "Drew Estate",
-      "line": "Liga Privada T52",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "USA",
-        "EU",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-drew-estate-undercrown-sun-grown",
-      "brand": "Drew Estate",
-      "line": "Undercrown Sun Grown",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-dunbarton-t-t-mi-querida",
-      "brand": "Dunbarton T&T",
-      "line": "Mi Querida",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-dunbarton-t-t-sobremesa",
-      "brand": "Dunbarton T&T",
-      "line": "Sobremesa",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-e-p-carrillo-allegiance",
-      "brand": "E.P. Carrillo",
-      "line": "Allegiance",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-e-p-carrillo-core",
-      "brand": "E.P. Carrillo",
-      "line": "Core",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-e-p-carrillo-new-wave-reserva",
-      "brand": "E.P. Carrillo",
-      "line": "New Wave Reserva",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-e-p-carrillo-small-batch",
-      "brand": "E.P. Carrillo",
-      "line": "Small Batch",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-e-p-carrillo-small-batch",
-      "brand": "E.P. Carrillo",
-      "line": "Small Batch",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-eiroa-cbt-maduro",
-      "brand": "Eiroa",
-      "line": "CBT Maduro",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "HR",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-eiroa-classic",
-      "brand": "Eiroa",
-      "line": "Classic",
-      "region": "USA",
-      "catalogSource": "market",
-      "previous_markets": [
-        "EU",
-        "WW",
-        "HR",
-        "USA"
-      ],
-      "reason": "market-USA-without-source"
-    },
-    {
-      "id": "cig-eiroa-classic-colorado",
-      "brand": "Eiroa",
-      "line": "Classic Colorado",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-el-pulpo-belicoso",
-      "brand": "El Pulpo",
-      "line": "Belicoso",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-el-pulpo-belicoso",
-      "brand": "El Pulpo",
-      "line": "Belicoso",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-el-pulpo-culebra",
-      "brand": "El Pulpo",
-      "line": "Culebra",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-el-pulpo-culebra",
-      "brand": "El Pulpo",
-      "line": "Culebra",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-el-pulpo-el-pulpo",
-      "brand": "El Pulpo",
-      "line": "El Pulpo",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-el-pulpo-el-pulpo",
-      "brand": "El Pulpo",
-      "line": "El Pulpo",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-el-pulpo-gordita",
-      "brand": "El Pulpo",
-      "line": "Gordita",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-el-pulpo-gordita",
-      "brand": "El Pulpo",
-      "line": "Gordita",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-el-pulpo-lancero",
-      "brand": "El Pulpo",
-      "line": "Lancero",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-el-pulpo-lancero",
-      "brand": "El Pulpo",
-      "line": "Lancero",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-el-pulpo-robusto",
-      "brand": "El Pulpo",
-      "line": "Robusto",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-el-pulpo-toro-grande",
-      "brand": "El Pulpo",
-      "line": "Toro Grande",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-eladio-diaz-71st-aniversario",
-      "brand": "Eladio Diaz",
-      "line": "71st Aniversario",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-eladio-diaz-71st-aniversario",
-      "brand": "Eladio Diaz",
-      "line": "71st Aniversario",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-eladio-diaz-72nd-aniversario",
-      "brand": "Eladio Diaz",
-      "line": "72nd Aniversario",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-eladio-diaz-72nd-aniversario",
-      "brand": "Eladio Diaz",
-      "line": "72nd Aniversario",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-eladio-diaz-before-and-after-legado",
-      "brand": "Eladio Diaz",
-      "line": "Before And After Legado",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-eladio-diaz-before-and-after-mi-familia",
-      "brand": "Eladio Diaz",
-      "line": "Before And After Mi Familia",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-eladio-diaz-before-and-after-mi-familia",
-      "brand": "Eladio Diaz",
-      "line": "Before And After Mi Familia",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-eladio-diaz-before-and-after-pasion",
-      "brand": "Eladio Diaz",
-      "line": "Before And After Pasion",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-eladio-diaz-before-and-after-pasion",
-      "brand": "Eladio Diaz",
-      "line": "Before And After Pasion",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-eladio-diaz-la-diana",
-      "brand": "Eladio Diaz",
-      "line": "La Diana",
-      "region": "USA",
-      "catalogSource": "market",
-      "previous_markets": [
-        "EU",
-        "WW",
-        "HR",
-        "USA"
-      ],
-      "reason": "market-USA-without-source"
-    },
-    {
-      "id": "cig-eladio-diaz-la-diana-anniversary",
-      "brand": "Eladio Diaz",
-      "line": "La Diana / Anniversary",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-eladio-diaz-la-diana-anniversary",
-      "brand": "Eladio Diaz",
-      "line": "La Diana / Anniversary",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-flor-de-copan-classic",
-      "brand": "Flor de Copán",
-      "line": "Classic",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-flor-de-selva-clasica",
-      "brand": "Flor de Selva",
-      "line": "Clásica",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-flor-de-selva-clasica",
-      "brand": "Flor de Selva",
-      "line": "Clásica",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-foundation-el-gueguense",
-      "brand": "Foundation",
-      "line": "El Güegüense",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-foundation-highclere-castle",
-      "brand": "Foundation",
-      "line": "Highclere Castle",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-foundation-menelik",
-      "brand": "Foundation",
-      "line": "Menelik",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-foundation-menelik",
-      "brand": "Foundation",
-      "line": "Menelik",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-h-upmann-classic",
-      "brand": "H. Upmann",
-      "line": "Classic",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-h-upmann-reserva",
-      "brand": "H. Upmann",
-      "line": "Reserva &",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-hoyo-de-monterrey-classic",
-      "brand": "Hoyo de Monterrey",
-      "line": "Classic",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-hoyo-de-monterrey-le-hoyo",
-      "brand": "Hoyo de Monterrey",
-      "line": "Le Hoyo",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-illusione-hl-habano-ligero",
-      "brand": "Illusione",
-      "line": "HL (Habano Ligero)",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-illusione-hl-habano-ligero",
-      "brand": "Illusione",
-      "line": "HL (Habano Ligero)",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-illusione-rothchildes",
-      "brand": "Illusione",
-      "line": "Rothchildes",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-illusione-rothchildes",
-      "brand": "Illusione",
-      "line": "Rothchildes",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-joya-de-nicaragua-antano-gran-reserva",
-      "brand": "Joya de Nicaragua",
-      "line": "Antaño Gran Reserva",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-joya-de-nicaragua-joya-red",
-      "brand": "Joya de Nicaragua",
-      "line": "Joya Red",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-joya-de-nicaragua-numero-uno",
-      "brand": "Joya de Nicaragua",
-      "line": "Numero Uno",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-juan-lopez-classic",
-      "brand": "Juan López",
-      "line": "Classic",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-la-aurora-107-nicaragua",
-      "brand": "La Aurora",
-      "line": "107 Nicaragua",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "HR",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-la-aurora-1903-edition",
-      "brand": "La Aurora",
-      "line": "1903 Edition",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-la-aurora-1903-edition",
-      "brand": "La Aurora",
-      "line": "1903 Edition",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-la-aurora-adn",
-      "brand": "La Aurora",
-      "line": "ADN",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-la-aurora-family-reserve",
-      "brand": "La Aurora",
-      "line": "Family Reserve",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-la-galera-85th-anniversary",
-      "brand": "La Galera",
-      "line": "85th Anniversary",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-la-galera-85th-anniversary",
-      "brand": "La Galera",
-      "line": "85th Anniversary",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-la-galera-connecticut",
-      "brand": "La Galera",
-      "line": "Connecticut",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-macanudo-cafe",
-      "brand": "Macanudo",
-      "line": "Café",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-macanudo-criollo-98",
-      "brand": "Macanudo",
-      "line": "Criollo 98",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-macanudo-criollo-98",
-      "brand": "Macanudo",
-      "line": "Criollo 98",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-macanudo-gold-label",
-      "brand": "Macanudo",
-      "line": "Gold Label",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-macanudo-hampton-court",
-      "brand": "Macanudo",
-      "line": "Hampton Court",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-macanudo-legacy",
-      "brand": "Macanudo",
-      "line": "Legacy",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-macanudo-legacy",
-      "brand": "Macanudo",
-      "line": "Legacy",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-macanudo-motivo",
-      "brand": "Macanudo",
-      "line": "Motivo",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-macanudo-motivo",
-      "brand": "Macanudo",
-      "line": "Motivo",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-montecristo-limited-edition",
-      "brand": "Montecristo",
-      "line": "Limited Edition",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-montecristo-nw-white-series-dominikanska-republika",
-      "brand": "Montecristo (NW)",
-      "line": "White Series (Dominikanska Republika)",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-my-father-cedros-deluxe",
-      "brand": "My Father",
-      "line": "Cedros Deluxe",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-my-father-cedros-deluxe",
-      "brand": "My Father",
-      "line": "Cedros Deluxe",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-my-father-don-pepin-garcia-blue",
-      "brand": "My Father",
-      "line": "Don Pepin Garcia Blue",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-my-father-flor-de-las-antillas",
-      "brand": "My Father",
-      "line": "Flor de las Antillas",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-my-father-fonseca",
-      "brand": "My Father",
-      "line": "Fonseca",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-my-father-garcia-garcia",
-      "brand": "My Father",
-      "line": "Garcia & Garcia",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-my-father-garcia-garcia",
-      "brand": "My Father",
-      "line": "Garcia & Garcia",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-my-father-jaime-garcia-reserva-especial",
-      "brand": "My Father",
-      "line": "Jaime Garcia Reserva Especial",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-my-father-la-reloba",
-      "brand": "My Father",
-      "line": "La Reloba",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-my-father-la-reloba",
-      "brand": "My Father",
-      "line": "La Reloba",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-my-father-my-father-original",
-      "brand": "My Father",
-      "line": "My Father Original",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-nub-maduro-460",
-      "brand": "Nub",
-      "line": "Maduro 460",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-oliva-mareva",
-      "brand": "Oliva",
-      "line": "Mareva",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-oliva-master-blends-3",
-      "brand": "Oliva",
-      "line": "Master Blends 3",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "HR",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-oscar-valladares-2012-the-oscar",
-      "brand": "Oscar Valladares",
-      "line": "2012 / The Oscar",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-oscar-valladares-ciseron-edition-blue",
-      "brand": "Oscar Valladares",
-      "line": "Ciseron Edition Blue",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "HR",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-oscar-valladares-ciseron-edition-gray",
-      "brand": "Oscar Valladares",
-      "line": "Ciseron Edition Gray",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "HR",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-oscar-valladares-ciseron-edition-green",
-      "brand": "Oscar Valladares",
-      "line": "Ciseron Edition Green",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "HR",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-oscar-valladares-ciseron-edition-yellow",
-      "brand": "Oscar Valladares",
-      "line": "Ciseron Edition Yellow",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "HR",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-padron-classic",
-      "brand": "Padrón",
-      "line": "Classic",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-paperboy-connecticut",
-      "brand": "Paperboy",
-      "line": "Connecticut",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-paperboy-maduro",
-      "brand": "Paperboy",
-      "line": "Maduro",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-partagas-capitolio",
-      "brand": "Partagás",
-      "line": "Capitolio",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-perdomo-10th-anniversary-champagne",
-      "brand": "Perdomo",
-      "line": "10th Anniversary Champagne",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-perdomo-10th-anniversary-maduro",
-      "brand": "Perdomo",
-      "line": "10th Anniversary Maduro",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-perdomo-esteli",
-      "brand": "Perdomo",
-      "line": "Esteli",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-perdomo-habano-bourbon",
-      "brand": "Perdomo",
-      "line": "Habano Bourbon",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-perdomo-reserve",
-      "brand": "Perdomo",
-      "line": "Reserve",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-plasencia-160",
-      "brand": "Plasencia",
-      "line": "160",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-plasencia-cosecha-146",
-      "brand": "Plasencia",
-      "line": "Cosecha 146",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "HR",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-plasencia-cosecha-146",
-      "brand": "Plasencia",
-      "line": "Cosecha 146",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "HR",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-plasencia-year-of-the-rabbit",
-      "brand": "Plasencia",
-      "line": "Year of the Rabbit",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-plasencia-year-series",
-      "brand": "Plasencia",
-      "line": "Year Series",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-plasencia-year-series",
-      "brand": "Plasencia",
-      "line": "Year Series",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-punch-brevas",
+      "id": "cig-punch-super-punch",
       "brand": "Punch",
-      "line": "Brevas",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-punch-classic",
-      "brand": "Punch",
-      "line": "Classic",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-punch-gran-puro",
-      "brand": "Punch",
-      "line": "Gran Puro",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-punch-modern-line",
-      "brand": "Punch",
-      "line": "Modern Line",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-quai-d-orsay-classic",
-      "brand": "Quai d'Orsay",
-      "line": "Classic",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-quai-d-orsay-clasica",
-      "brand": "Quai d'Orsay",
-      "line": "Clásica",
+      "line": "Super Punch",
       "region": "EU",
       "catalogSource": null,
       "previous_markets": [
@@ -2213,25 +59,12 @@
       "reason": "no-proof-no-snapshot-match"
     },
     {
-      "id": "cig-quai-d-orsay-special-editions",
-      "brand": "Quai d'Orsay",
-      "line": "Special Editions",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-rocky-patel-a-l-b",
+      "id": "cig-rocky-patel-royal-vintage",
       "brand": "Rocky Patel",
-      "line": "A.L.B.",
+      "line": "Royal Vintage",
       "region": "EU",
       "catalogSource": null,
       "previous_markets": [
-        "HR",
         "EU",
         "USA",
         "WW"
@@ -2239,239 +72,9 @@
       "reason": "no-proof-no-snapshot-match"
     },
     {
-      "id": "cig-rocky-patel-a-l-b",
+      "id": "cig-rocky-patel-vintage-1990-1992",
       "brand": "Rocky Patel",
-      "line": "A.L.B.",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-romeo-y-julieta-clasica",
-      "brand": "Romeo y Julieta",
-      "line": "Clásica",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "HR",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-romeo-y-julieta-nw-1875-dominikanska-republika",
-      "brand": "Romeo y Julieta (NW)",
-      "line": "1875 (Dominikanska Republika)",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-room101-farce",
-      "brand": "Room101",
-      "line": "Farce",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-room101-farce",
-      "brand": "Room101",
-      "line": "Farce",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-san-cristobal-de-la-habana-regular-production",
-      "brand": "San Cristóbal de la Habana",
-      "line": "Regular Production",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-tatuaje-cabaiguan",
-      "brand": "Tatuaje",
-      "line": "Cabaiguan",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-tatuaje-cabaiguan",
-      "brand": "Tatuaje",
-      "line": "Cabaiguan",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-tatuaje-havana-vi-miami",
-      "brand": "Tatuaje",
-      "line": "Havana VI / Miami",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-tatuaje-reserva-broadleaf",
-      "brand": "Tatuaje",
-      "line": "Reserva Broadleaf",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-tatuaje-reserva-broadleaf",
-      "brand": "Tatuaje",
-      "line": "Reserva Broadleaf",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-tatuaje-unicos-special",
-      "brand": "Tatuaje",
-      "line": "Unicos & Special",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-tatuaje-unicos-special",
-      "brand": "Tatuaje",
-      "line": "Unicos & Special",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-trinidad-current-production",
-      "brand": "Trinidad",
-      "line": "Current Production",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-trinidad-limited-editions",
-      "brand": "Trinidad",
-      "line": "Limited Editions",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-vegas-robaina-regular-production",
-      "brand": "Vegas Robaina",
-      "line": "Regular Production",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-villa-zamorano-reserva",
-      "brand": "Villa Zamorano",
-      "line": "Reserva",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-villiger-export",
-      "brand": "Villiger",
-      "line": "Export",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-villiger-la-libertad",
-      "brand": "Villiger",
-      "line": "La Libertad",
+      "line": "Vintage 1990/1992",
       "region": "EU",
       "catalogSource": null,
       "previous_markets": [
@@ -2485,180 +88,625 @@
       "id": "cig-viva-la-vida-5th-anniversario-club-500",
       "brand": "Viva La Vida",
       "line": "5th Anniversario Club 500",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-viva-la-vida-5th-anniversario-jester",
-      "brand": "Viva La Vida",
-      "line": "5th Anniversario Jester",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-viva-la-vida-5th-anniversario-jester",
-      "brand": "Viva La Vida",
-      "line": "5th Anniversario Jester",
       "region": "USA",
       "catalogSource": null,
       "previous_markets": [
         "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-viva-la-vida-club-500",
-      "brand": "Viva La Vida",
-      "line": "Club 500",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-viva-la-vida-connecticut",
-      "brand": "Viva La Vida",
-      "line": "Connecticut",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "HR",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-viva-la-vida-diadema",
-      "brand": "Viva La Vida",
-      "line": "Diadema",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-viva-la-vida-diadema",
-      "brand": "Viva La Vida",
-      "line": "Diadema",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-viva-la-vida-original",
-      "brand": "Viva La Vida",
-      "line": "Original",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-viva-la-vida-original",
-      "brand": "Viva La Vida",
-      "line": "Original",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-warped-don-reynaldo",
-      "brand": "Warped",
-      "line": "Don Reynaldo",
-      "region": "EU",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-warped-don-reynaldo",
-      "brand": "Warped",
-      "line": "Don Reynaldo",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-warped-flor-del-valle",
-      "brand": "Warped",
-      "line": "Flor del Valle",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-proof-no-snapshot-match"
-    },
-    {
-      "id": "cig-warped-la-hacienda",
-      "brand": "Warped",
-      "line": "La Hacienda",
-      "region": "USA",
-      "catalogSource": null,
-      "previous_markets": [
-        "EU",
         "USA",
         "WW"
       ],
       "reason": "no-proof-no-snapshot-match"
     }
   ],
-  "added": []
+  "added": [
+    {
+      "id": "cig-aganorsa-leaf-rare-leaf-reserve-maduro",
+      "brand": "Aganorsa Leaf",
+      "line": "Rare Leaf Reserve Maduro",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-aj-fernandez-20th-anniversary-maduro",
+      "brand": "AJ Fernandez",
+      "line": "20th Anniversary Maduro",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-aj-fernandez-new-world-dorado-sampler",
+      "brand": "AJ Fernandez",
+      "line": "New World Dorado Sampler",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-alec-bradley-mundial",
+      "brand": "Alec Bradley",
+      "line": "Mundial",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-arturo-fuente-claro",
+      "brand": "Arturo Fuente",
+      "line": "Claro",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-arturo-fuente-claro-spanish",
+      "brand": "Arturo Fuente",
+      "line": "Claro Spanish",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-arturo-fuente-don-carlos-edicion-de-aniversario",
+      "brand": "Arturo Fuente",
+      "line": "Don Carlos Edicion de Aniversario",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-arturo-fuente-opus-x-lost-city",
+      "brand": "Arturo Fuente",
+      "line": "Opus X Lost City",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-arturo-fuente-seleccion-d-oro",
+      "brand": "Arturo Fuente",
+      "line": "Seleccion d'Oro",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-ashton-cabinet-selection",
+      "brand": "Ashton",
+      "line": "Cabinet Selection",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-ashton-crystal",
+      "brand": "Ashton",
+      "line": "Crystal",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-ashton-sovereign",
+      "brand": "Ashton",
+      "line": "Sovereign",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-asylum-straight-jacket",
+      "brand": "Asylum",
+      "line": "Straight Jacket",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-avo-syncro",
+      "brand": "Avo",
+      "line": "Syncro",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-brick-house-connecticut",
+      "brand": "Brick House",
+      "line": "Connecticut",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-buffalo-ten-connecticut",
+      "brand": "Buffalo",
+      "line": "Ten Connecticut",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-buffalo-ten-maduro",
+      "brand": "Buffalo",
+      "line": "Ten Maduro",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-buffalo-ten-natural",
+      "brand": "Buffalo",
+      "line": "Ten Natural",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-cain-daytona-654",
+      "brand": "Cain Daytona",
+      "line": "654",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-cao-amazon-basin-extra-anejo",
+      "brand": "CAO",
+      "line": "Amazon Basin Extra Anejo",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-cao-maduro",
+      "brand": "CAO",
+      "line": "Maduro",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-casa-turrent-maduro",
+      "brand": "Casa Turrent",
+      "line": "Maduro",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-charter-oak-broadleaf",
+      "brand": "Charter Oak",
+      "line": "Broadleaf",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-cumpay-cumpay",
+      "brand": "Cumpay",
+      "line": "Cumpay",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-cumpay-numero-xv",
+      "brand": "Cumpay",
+      "line": "Numero Xv",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-drew-estate-acid-blondie",
+      "brand": "Drew Estate",
+      "line": "Acid Blondie",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-drew-estate-deadwood-crazy-alice",
+      "brand": "Drew Estate",
+      "line": "Deadwood Crazy Alice",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-drew-estate-deadwood-dominicana",
+      "brand": "Drew Estate",
+      "line": "Deadwood Dominicana",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-drew-estate-deadwood-dominicana-buenas-noches",
+      "brand": "Drew Estate",
+      "line": "Deadwood Dominicana Buenas Noches",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-drew-estate-deadwood-girl-with-no-name",
+      "brand": "Drew Estate",
+      "line": "Deadwood Girl With No Name",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-drew-estate-liga-privada-h99",
+      "brand": "Drew Estate",
+      "line": "Liga Privada H99",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-drew-estate-liga-privada-t52",
+      "brand": "Drew Estate",
+      "line": "Liga Privada T52",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-drew-estate-undercrown",
+      "brand": "Drew Estate",
+      "line": "Undercrown",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-drew-estate-undercrown-10",
+      "brand": "Drew Estate",
+      "line": "Undercrown 10",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-eiroa-20-years-colorado",
+      "brand": "Eiroa",
+      "line": "20 Years Colorado",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-eiroa-20-years-maduro",
+      "brand": "Eiroa",
+      "line": "20 Years Maduro",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-eiroa-cbt",
+      "brand": "Eiroa",
+      "line": "CBT",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-el-centurion-el-centurion",
+      "brand": "El Centurion",
+      "line": "El Centurion",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-el-vinyet-5-215-52",
+      "brand": "El Vinyet",
+      "line": "Robusto",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-eladio-diaz-before-and-after-mi-familia",
+      "brand": "Eladio Diaz",
+      "line": "Before And After Mi Familia",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-eladio-diaz-before-and-after-pasion",
+      "brand": "Eladio Diaz",
+      "line": "Before And After Pasion",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-eladio-diaz-la-diana-anniversary",
+      "brand": "Eladio Diaz",
+      "line": "La Diana / Anniversary",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-flor-de-copan-classic",
+      "brand": "Flor de Copán",
+      "line": "Classic",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-flor-de-las-antillas-10th-anniversary",
+      "brand": "Flor de las Antillas",
+      "line": "10th Anniversary",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-flor-de-las-antillas-de-las-antillas",
+      "brand": "Flor de las Antillas",
+      "line": "de las Antillas",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-flor-de-las-antillas-maduro",
+      "brand": "Flor de las Antillas",
+      "line": "Maduro",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-flor-de-selva-maduro",
+      "brand": "Flor de Selva",
+      "line": "Maduro",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-jaime-garcia-garcia-reserva-especial",
+      "brand": "Jaime García",
+      "line": "Garcia Reserva Especial",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-karen-berger-cameroon",
+      "brand": "Karen Berger",
+      "line": "Cameroon",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-karen-berger-connecticut",
+      "brand": "Karen Berger",
+      "line": "Connecticut",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-karen-berger-habano",
+      "brand": "Karen Berger",
+      "line": "Habano",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-kristoff-criollo",
+      "brand": "Kristoff",
+      "line": "Criollo",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-kristoff-maduro",
+      "brand": "Kristoff",
+      "line": "Maduro",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-la-antiguedad-la-antiguedad",
+      "brand": "La Antiguedad",
+      "line": "La Antiguedad",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-la-antiguedad-super",
+      "brand": "La Antiguedad",
+      "line": "Super",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-la-flor-dominicana-la-volcada",
+      "brand": "La Flor Dominicana",
+      "line": "La Volcada",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-la-galera-1936-box-pressed",
+      "brand": "La Galera",
+      "line": "1936 Box Pressed",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-la-galera-fresh-pack-connecticut-chaveta",
+      "brand": "La Galera",
+      "line": "Fresh Pack Connecticut Chaveta",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-la-ley-la-ley",
+      "brand": "La Ley",
+      "line": "La Ley",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-lunatic-el-loquito",
+      "brand": "Lunatic",
+      "line": "El Loquito",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-maestranza-baron",
+      "brand": "Maestranza",
+      "line": "Baron",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-maestranza-conde",
+      "brand": "Maestranza",
+      "line": "Conde",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-maestranza-marques",
+      "brand": "Maestranza",
+      "line": "Marques",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-oliva-flor-de",
+      "brand": "Oliva",
+      "line": "Flor de",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-oliva-robusto-sampler",
+      "brand": "Oliva",
+      "line": "Robusto Sampler",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-oscar-valladares-barber-pole-toro-box-pressed",
+      "brand": "Oscar Valladares",
+      "line": "Barber Pole Toro Box Pressed",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-padron-40th-anniversary",
+      "brand": "Padrón",
+      "line": "40th Anniversary",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-padron-40th-anniversary-maduro",
+      "brand": "Padrón",
+      "line": "40th Anniversary Maduro",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-padron-maduro",
+      "brand": "Padrón",
+      "line": "Maduro",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-pdr-value-line-reserve-connecticut",
+      "brand": "PDR",
+      "line": "Value Line Reserve Connecticut",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-perdomo-legacy-shade-grown",
+      "brand": "Perdomo",
+      "line": "Legacy Shade Grown",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-quorum-double",
+      "brand": "Quorum",
+      "line": "Double",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-rocky-patel-fifty",
+      "brand": "Rocky Patel",
+      "line": "Fifty",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-rocky-patel-ray-lewis",
+      "brand": "Rocky Patel",
+      "line": "Ray Lewis",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-saga-short-tales-tomo-i",
+      "brand": "Saga",
+      "line": "Short Tales Tomo I",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-saga-short-tales-tomo-ii",
+      "brand": "Saga",
+      "line": "Short Tales Tomo II",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-saga-short-tales-tomo-iii",
+      "brand": "Saga",
+      "line": "Short Tales Tomo III",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-saga-short-tales-tomo-iv",
+      "brand": "Saga",
+      "line": "Short Tales Tomo IV",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-saga-short-tales-tomo-v-slim",
+      "brand": "Saga",
+      "line": "Short Tales Tomo V Slim",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-saga-short-tales-tomo-vi",
+      "brand": "Saga",
+      "line": "Short Tales Tomo VI",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-saga-short-tales-tomo-vii",
+      "brand": "Saga",
+      "line": "Short Tales Tomo VII",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-sobremesa-fino",
+      "brand": "Sobremesa",
+      "line": "Fino",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-sobremesa-largo",
+      "brand": "Sobremesa",
+      "line": "Largo",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-sobremesa-short",
+      "brand": "Sobremesa",
+      "line": "Short",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-tatuaje-black",
+      "brand": "Tatuaje",
+      "line": "Black",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-tatuaje-tuxtla",
+      "brand": "Tatuaje",
+      "line": "Tuxtla",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    },
+    {
+      "id": "cig-the-tabernacle-doble",
+      "brand": "The Tabernacle",
+      "line": "Doble",
+      "region": "EU",
+      "reason": "snapshot-discover"
+    }
+  ]
 }
