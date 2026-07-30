@@ -57,12 +57,12 @@ def cig(**kw) -> dict:
     return base
 
 
-def run(cigars, present, walk_in=frozenset()):
+def run(cigars, present, walk_in=frozenset(), present_vitola=None):
     """reconcile() s podmetnutim walk_in skupom."""
     original = M.walk_in_shops
     M.walk_in_shops = lambda: set(walk_in)
     try:
-        return M.reconcile(cigars, present, FakeSync)
+        return M.reconcile(cigars, present, FakeSync, present_vitola)
     finally:
         M.walk_in_shops = original
 
@@ -80,6 +80,39 @@ c = cig(id="cig-nema", brand="Nema", line="Ovoga")
 removed, added = run([c], {})
 check("bez poklapanja ostaje bez HR", (c["availabilityHR"], "HR" in c["markets"]), ([], False))
 check("i nije prijavljena kao dodana", added, [])
+
+print("\nmarket discovery + brand/vitola fallback")
+# catalogSource=market ranije je preskakao discovery — mora dobiti HR.
+c = cig(
+    id="cig-cain-646",
+    brand="Cain Daytona",
+    line="646",
+    vitola="Corona",
+    vitolas=[{"name": "Corona"}],
+    catalogSource="market",
+    markets=["EU", "USA", "WW"],
+)
+removed, added = run(
+    [c],
+    {},  # line "646" nije u snapshotu
+    present_vitola={("cain daytona", "corona"): {"Havana Shop"}},
+)
+check("market+vitola dobiva Havana", c["availabilityHR"], ["Havana Shop"])
+check("market+vitola dobiva markets.HR", "HR" in c["markets"], True)
+check("market+vitola prijavljen kao dodan", [a["id"] for a in added], ["cig-cain-646"])
+
+# Market s walk-in bez HR u markets — mora dobiti HR.
+c = cig(
+    id="cig-cao",
+    brand="CAO",
+    line="Bones",
+    catalogSource="market",
+    availabilityHR=["Tobacco Petica (Branimir)"],
+    markets=["EU", "WW"],
+)
+removed, added = run([c], {}, walk_in={"Tobacco Petica (Branimir)"})
+check("market walk-in ostaje", c["availabilityHR"], ["Tobacco Petica (Branimir)"])
+check("market walk-in dobiva markets.HR", "HR" in c["markets"], True)
 
 print("\nuklanjanje zastarjele ponude")
 c = cig(id="cig-stara", availabilityHR=["Havana Shop"], markets=["HR", "EU", "WW"])

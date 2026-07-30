@@ -1,880 +1,16 @@
 {
-  "generated_at": "2026-07-24T22:11:59.014037+00:00",
-  "snapshot_at": "2026-07-24T21:57:43.074604Z",
-  "present_keys": 608,
-  "removed_count": 104,
+  "generated_at": "2026-07-30T08:18:14.771886+00:00",
+  "snapshot_at": "2026-07-30T08:08:23.660413+00:00",
+  "present_keys": 610,
+  "removed_count": 3,
+  "added_count": 20,
   "hr_without_source": 0,
-  "hr_markets_remaining": 355,
+  "hr_markets_remaining": 378,
   "removed": [
     {
-      "id": "cig-alec-bradley-black-market",
-      "brand": "Alec Bradley",
-      "line": "Black Market",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-alec-bradley-filthy-hooligan",
-      "brand": "Alec Bradley",
-      "line": "Filthy Hooligan",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-alec-bradley-gatekeeper",
-      "brand": "Alec Bradley",
-      "line": "Gatekeeper",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-alec-bradley-magic-toast",
-      "brand": "Alec Bradley",
-      "line": "Magic Toast",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-alec-bradley-prensado",
-      "brand": "Alec Bradley",
-      "line": "Prensado",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-alec-bradley-tempus",
-      "brand": "Alec Bradley",
-      "line": "Tempus",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-ashton-cabinet-selection",
-      "brand": "Ashton",
-      "line": "Cabinet Selection",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-ashton-esg",
-      "brand": "Ashton",
-      "line": "ESG",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-ashton-paragon",
-      "brand": "Ashton",
-      "line": "Paragon",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-ashton-symmetry",
-      "brand": "Ashton",
-      "line": "Symmetry",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-ashton-vsg",
-      "brand": "Ashton",
-      "line": "VSG",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-bolivar-core-line",
-      "brand": "Bolívar",
-      "line": "Core Line",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-bolivar-new-generation",
-      "brand": "Bolívar",
-      "line": "New Generation",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-bolivar-regional-special",
-      "brand": "Bolívar",
-      "line": "Regional & Special",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-camacho-escuro",
-      "brand": "Camacho",
-      "line": "Escuro",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-camacho-powerband",
-      "brand": "Camacho",
-      "line": "Powerband",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-cao-brazilia",
-      "brand": "CAO",
-      "line": "Brazilia",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-cao-bx3",
-      "brand": "CAO",
-      "line": "BX3",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-cao-consigliere",
-      "brand": "CAO",
-      "line": "Consigliere",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-cao-flathead",
-      "brand": "CAO",
-      "line": "Flathead",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-cao-gold",
-      "brand": "CAO",
-      "line": "Gold",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-cao-session",
-      "brand": "CAO",
-      "line": "Session",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-cao-vision",
-      "brand": "CAO",
-      "line": "Vision",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-casa-magna-colorado",
-      "brand": "Casa Magna",
-      "line": "Colorado",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-cohiba-behike",
-      "brand": "Cohiba",
-      "line": "Behike",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-cohiba-talisman",
-      "brand": "Cohiba",
-      "line": "Talisman",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-don-tomas-bundle",
-      "brand": "Don Tomas",
-      "line": "Bundle",
-      "previous_availabilityHR": [
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-don-tomas-clasico",
-      "brand": "Don Tomas",
-      "line": "Clásico",
-      "previous_availabilityHR": [
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-drew-estate-acid",
-      "brand": "Drew Estate",
-      "line": "Acid",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-drew-estate-herrera-esteli",
-      "brand": "Drew Estate",
-      "line": "Herrera Esteli",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-drew-estate-liga-privada-h99",
-      "brand": "Drew Estate",
-      "line": "Liga Privada H99",
-      "previous_availabilityHR": [
-        "The Humidor"
-      ],
-      "previous_markets": [
-        "USA",
-        "EU",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-drew-estate-liga-privada-t52",
-      "brand": "Drew Estate",
-      "line": "Liga Privada T52",
-      "previous_availabilityHR": [
-        "The Humidor"
-      ],
-      "previous_markets": [
-        "USA",
-        "EU",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-drew-estate-undercrown-sun-grown",
-      "brand": "Drew Estate",
-      "line": "Undercrown Sun Grown",
-      "previous_availabilityHR": [
-        "The Humidor"
-      ],
-      "previous_markets": [
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-e-p-carrillo-allegiance",
-      "brand": "E.P. Carrillo",
-      "line": "Allegiance",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "EU",
-        "HR",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-e-p-carrillo-small-batch",
-      "brand": "E.P. Carrillo",
-      "line": "Small Batch",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-foundation-charter-oak",
-      "brand": "Foundation",
-      "line": "Charter Oak",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-foundation-el-gueguense",
-      "brand": "Foundation",
-      "line": "El Güegüense",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-foundation-highclere-castle",
-      "brand": "Foundation",
-      "line": "Highclere Castle",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-foundation-menelik",
-      "brand": "Foundation",
-      "line": "Menelik",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-foundation-olmec",
-      "brand": "Foundation",
-      "line": "Olmec",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-foundation-wise-man",
-      "brand": "Foundation",
-      "line": "Wise Man",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-gurkha-ghost",
-      "brand": "Gurkha",
-      "line": "Ghost",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-hoyo-de-monterrey-classic",
-      "brand": "Hoyo de Monterrey",
-      "line": "Classic",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-illusione-hl-habano-ligero",
-      "brand": "Illusione",
-      "line": "HL (Habano Ligero)",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-illusione-rothchildes",
-      "brand": "Illusione",
-      "line": "Rothchildes",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-juan-lopez-classic",
-      "brand": "Juan López",
-      "line": "Classic",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-la-aurora-preferidos",
+      "id": "cig-la-aurora-adn",
       "brand": "La Aurora",
-      "line": "Preferidos",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-la-flor-dominicana-air-bender",
-      "brand": "La Flor Dominicana",
-      "line": "Air Bender",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-la-flor-dominicana-double-ligero",
-      "brand": "La Flor Dominicana",
-      "line": "Double Ligero",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-macanudo-criollo-98",
-      "brand": "Macanudo",
-      "line": "Criollo 98",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-macanudo-gold-label",
-      "brand": "Macanudo",
-      "line": "Gold Label",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-macanudo-hampton-court",
-      "brand": "Macanudo",
-      "line": "Hampton Court",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-macanudo-inspirado",
-      "brand": "Macanudo",
-      "line": "Inspirado",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-macanudo-legacy",
-      "brand": "Macanudo",
-      "line": "Legacy",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-macanudo-motivo",
-      "brand": "Macanudo",
-      "line": "Motivo",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-montecristo-limited-edition",
-      "brand": "Montecristo",
-      "line": "Limited Edition",
+      "line": "ADN",
       "previous_availabilityHR": [
         "The Humidor",
         "Havana Shop"
@@ -887,306 +23,24 @@
       "reason": "no-snapshot-match"
     },
     {
-      "id": "cig-my-father-cedros-deluxe",
-      "brand": "My Father",
-      "line": "Cedros Deluxe",
-      "previous_availabilityHR": [],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-my-father-connecticut",
-      "brand": "My Father",
-      "line": "Connecticut",
-      "previous_availabilityHR": [],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-my-father-don-pepin-garcia-blue",
-      "brand": "My Father",
-      "line": "Don Pepin Garcia Blue",
+      "id": "cig-oliva-master-blends-3",
+      "brand": "Oliva",
+      "line": "Master Blends 3",
       "previous_availabilityHR": [
         "The Humidor",
         "Havana Shop"
       ],
       "previous_markets": [
         "HR",
-        "EU",
         "USA",
         "WW"
       ],
       "reason": "no-snapshot-match"
     },
     {
-      "id": "cig-my-father-el-centurion",
-      "brand": "My Father",
-      "line": "El Centurion",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-my-father-flor-de-las-antillas",
-      "brand": "My Father",
-      "line": "Flor de las Antillas",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-my-father-fonseca",
-      "brand": "My Father",
-      "line": "Fonseca",
-      "previous_availabilityHR": [],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-my-father-garcia-garcia",
-      "brand": "My Father",
-      "line": "Garcia & Garcia",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-my-father-jaime-garcia-reserva-especial",
-      "brand": "My Father",
-      "line": "Jaime Garcia Reserva Especial",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-my-father-la-antiguedad",
-      "brand": "My Father",
-      "line": "La Antiguedad",
-      "previous_availabilityHR": [],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-my-father-la-opulencia",
-      "brand": "My Father",
-      "line": "La Opulencia",
-      "previous_availabilityHR": [],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-my-father-la-promesa",
-      "brand": "My Father",
-      "line": "La Promesa",
-      "previous_availabilityHR": [],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-my-father-la-reloba",
-      "brand": "My Father",
-      "line": "La Reloba",
-      "previous_availabilityHR": [],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-my-father-le-bijou-1922",
-      "brand": "My Father",
-      "line": "Le Bijou 1922",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "EU",
-        "HR",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-my-father-my-father-original",
-      "brand": "My Father",
-      "line": "My Father Original",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "EU",
-        "HR",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-padron-1926-serie",
-      "brand": "Padrón",
-      "line": "1926 Serie",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-padron-1964-anniversary-series",
-      "brand": "Padrón",
-      "line": "1964 Anniversary Series",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-padron-damaso",
-      "brand": "Padrón",
-      "line": "Damaso",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-padron-family-reserve",
-      "brand": "Padrón",
-      "line": "Family Reserve",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-partagas-capitolio",
-      "brand": "Partagás",
-      "line": "Capitolio",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-partagas-presidente",
-      "brand": "Partagás",
-      "line": "Presidente",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-perdomo-esteli",
+      "id": "cig-perdomo-reserve",
       "brand": "Perdomo",
-      "line": "Esteli",
+      "line": "Reserve",
       "previous_availabilityHR": [
         "The Humidor",
         "Havana Shop"
@@ -1197,425 +51,169 @@
         "WW"
       ],
       "reason": "no-snapshot-match"
+    }
+  ],
+  "added": [
+    {
+      "id": "cig-a-flores-gran-reserva-corojo",
+      "brand": "A. Flores",
+      "line": "Gran Reserva Corojo",
+      "shops": [
+        "The Humidor"
+      ]
     },
     {
-      "id": "cig-perdomo-habano-bourbon",
-      "brand": "Perdomo",
-      "line": "Habano Bourbon",
-      "previous_availabilityHR": [
-        "The Humidor",
+      "id": "cig-a-flores-gran-reserva-desflorado",
+      "brand": "A. Flores",
+      "line": "Gran Reserva Desflorado",
+      "shops": [
+        "The Humidor"
+      ]
+    },
+    {
+      "id": "cig-a-flores-gran-reserva-maduro",
+      "brand": "A. Flores",
+      "line": "Gran Reserva Maduro",
+      "shops": [
+        "The Humidor"
+      ]
+    },
+    {
+      "id": "cig-aganorsa-leaf-signature-selection",
+      "brand": "Aganorsa Leaf",
+      "line": "Signature Selection",
+      "shops": [
+        "The Humidor"
+      ]
+    },
+    {
+      "id": "cig-aj-fernandez-20th-anniversary",
+      "brand": "AJ Fernandez",
+      "line": "20th Anniversary",
+      "shops": [
+        "The Humidor"
+      ]
+    },
+    {
+      "id": "cig-cle-corojo",
+      "brand": "CLE",
+      "line": "Corojo",
+      "shops": [
+        "The Humidor"
+      ]
+    },
+    {
+      "id": "cig-davidoff-maduro",
+      "brand": "Davidoff",
+      "line": "Maduro",
+      "shops": [
+        "Havana Shop",
+        "The Humidor"
+      ]
+    },
+    {
+      "id": "cig-davidoff-royal-release-2016",
+      "brand": "Davidoff",
+      "line": "Royal Release 2016",
+      "shops": [
         "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
+      ]
     },
     {
-      "id": "cig-perdomo-lot-23",
-      "brand": "Perdomo",
-      "line": "Lot 23",
-      "previous_availabilityHR": [
-        "The Humidor",
+      "id": "cig-e-p-carrillo-maduro",
+      "brand": "E.P. Carrillo",
+      "line": "Maduro",
+      "shops": [
         "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
+      ]
     },
     {
-      "id": "cig-plasencia-160",
-      "brand": "Plasencia",
-      "line": "160",
-      "previous_availabilityHR": [
-        "The Humidor",
+      "id": "cig-flores-y-rodriguez-10th-anniversary",
+      "brand": "Flores y Rodriguez",
+      "line": "y Rodriguez 10th Anniversary",
+      "shops": [
+        "The Humidor"
+      ]
+    },
+    {
+      "id": "cig-joya-de-nicaragua-antano",
+      "brand": "Joya de Nicaragua",
+      "line": "Antaño",
+      "shops": [
         "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
+      ]
     },
     {
-      "id": "cig-punch-brevas",
-      "brand": "Punch",
-      "line": "Brevas",
-      "previous_availabilityHR": [
-        "The Humidor",
+      "id": "cig-joya-de-nicaragua-antano-gran-reserva",
+      "brand": "Joya de Nicaragua",
+      "line": "Antaño Gran Reserva",
+      "shops": [
         "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
+      ]
     },
     {
-      "id": "cig-punch-classic",
-      "brand": "Punch",
-      "line": "Classic",
-      "previous_availabilityHR": [
-        "The Humidor",
+      "id": "cig-joya-de-nicaragua-cuatro-cinco",
+      "brand": "Joya de Nicaragua",
+      "line": "Cuatro Cinco",
+      "shops": [
         "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
+      ]
     },
     {
-      "id": "cig-punch-gran-puro",
-      "brand": "Punch",
-      "line": "Gran Puro",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
+      "id": "cig-karen-berger-berger-cameroon",
+      "brand": "Karen Berger",
+      "line": "Berger Cameroon",
+      "shops": [
+        "The Humidor"
+      ]
     },
     {
-      "id": "cig-punch-modern-line",
-      "brand": "Punch",
-      "line": "Modern Line",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
+      "id": "cig-karen-berger-berger-connecticut",
+      "brand": "Karen Berger",
+      "line": "Berger Connecticut",
+      "shops": [
+        "The Humidor"
+      ]
     },
     {
-      "id": "cig-quai-d-orsay-classic",
-      "brand": "Quai d'Orsay",
-      "line": "Classic",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
+      "id": "cig-la-galera-1936",
+      "brand": "La Galera",
+      "line": "1936",
+      "shops": [
+        "The Humidor"
+      ]
     },
     {
-      "id": "cig-quai-d-orsay-special-editions",
-      "brand": "Quai d'Orsay",
-      "line": "Special Editions",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
+      "id": "cig-lunatic-maduro",
+      "brand": "Lunatic",
+      "line": "Maduro",
+      "shops": [
+        "The Humidor"
+      ]
     },
     {
-      "id": "cig-rocky-patel-edge",
-      "brand": "Rocky Patel",
-      "line": "Edge",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
+      "id": "cig-pdr-capa-sun-grown",
+      "brand": "PDR",
+      "line": "Capa Sun Grown",
+      "shops": [
+        "The Humidor"
+      ]
     },
     {
-      "id": "cig-rocky-patel-royal-vintage",
-      "brand": "Rocky Patel",
-      "line": "Royal Vintage",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
+      "id": "cig-pdr-value-line-reserve",
+      "brand": "PDR",
+      "line": "Value Line Reserve",
+      "shops": [
+        "The Humidor"
+      ]
     },
     {
-      "id": "cig-rocky-patel-sun-grown",
-      "brand": "Rocky Patel",
-      "line": "Sun Grown",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-room101-farce",
-      "brand": "Room101",
-      "line": "Farce",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-san-cristobal-de-la-habana-regular-production",
-      "brand": "San Cristóbal de la Habana",
-      "line": "Regular Production",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-tatuaje-black-label",
-      "brand": "Tatuaje",
-      "line": "Black Label",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-tatuaje-cabaiguan",
-      "brand": "Tatuaje",
-      "line": "Cabaiguan",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-tatuaje-fausto",
-      "brand": "Tatuaje",
-      "line": "Fausto",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-tatuaje-reserva-broadleaf",
-      "brand": "Tatuaje",
-      "line": "Reserva Broadleaf",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-tatuaje-unicos-special",
-      "brand": "Tatuaje",
-      "line": "Unicos & Special",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-trinidad-current-production",
-      "brand": "Trinidad",
-      "line": "Current Production",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-trinidad-limited-editions",
-      "brand": "Trinidad",
-      "line": "Limited Editions",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-vegafina-fortaleza-2",
-      "brand": "VegaFina",
-      "line": "Fortaleza 2",
-      "previous_availabilityHR": [
-        "trafike/iCigara"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-vegas-robaina-regular-production",
-      "brand": "Vegas Robaina",
-      "line": "Regular Production",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-villiger-1888",
-      "brand": "Villiger",
-      "line": "1888",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "EU",
-        "HR",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-villiger-export",
-      "brand": "Villiger",
-      "line": "Export",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-warped-don-reynaldo",
-      "brand": "Warped",
-      "line": "Don Reynaldo",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-warped-la-hacienda",
-      "brand": "Warped",
-      "line": "La Hacienda",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
-        "EU",
-        "USA",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
+      "id": "cig-sobremesa-fino",
+      "brand": "Sobremesa",
+      "line": "Fino",
+      "shops": [
+        "The Humidor"
+      ]
     }
   ]
 }

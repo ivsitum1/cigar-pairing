@@ -75,6 +75,14 @@ def slugify(s: str) -> str:
     return s
 
 
+def _numeric_looking_rest(line: str, brand: str = "") -> bool:
+    """True kad je line brojčana oznaka (646) ili prazna/jednaka brandu nakon stripa."""
+    s = re.sub(r"\s+", " ", (line or "").strip().lower())
+    if not s or (brand and s == norm(brand)):
+        return True
+    return bool(re.fullmatch(r"(double )?\d{2,4}", s))
+
+
 def parse_price(text: str) -> float | None:
     if not text:
         return None
@@ -88,8 +96,8 @@ def wc_price(prices: dict) -> float:
 
 
 def parse_pack_suffix(name: str) -> tuple[str, int | None]:
-    """'Montecristo No.2/25' -> ('Montecristo No.2', 25)"""
-    m = re.search(r"^(.+?)/(\d+)\s*$", name.strip())
+    """'Montecristo No.2/25' ili 'Cain Daytona Corona/ 24' -> (base, pack)."""
+    m = re.search(r"^(.+?)/\s*(\d+)\s*$", name.strip())
     if m:
         return m.group(1).strip(), int(m.group(2))
     return name.strip(), None
@@ -232,8 +240,8 @@ def line_name_from_product(brand: str, product_name: str) -> str:
     for vit in ("robusto grande", "double robusto", "short robusto", "petit corona",
                 "robusto", "toro", "churchill", "corona", "figurado", "lonsdale",
                 "panatela", "torpedo", "gordo", "diadema", "consul", "machito"):
-        if rest.endswith(" " + vit):
-            rest = rest[: -len(vit)].strip()
+        if rest == vit or rest.endswith(" " + vit):
+            rest = rest[: -len(vit)].strip() if rest != vit else ""
             break
     return rest.title() if rest else brand
 
@@ -373,6 +381,7 @@ def find_or_create_cigar(cigars: list[dict], brand: str, product_name: str) -> d
             if c["id"] == cid:
                 return c
     line = line_name_from_product(brand, product_name)
+    vitola = vitola_from_product(product_name, brand)
     # match postojeći po brand+line
     for c in cigars:
         if c["brand"] == brand and norm(c["line"]) == norm(line):
@@ -383,6 +392,19 @@ def find_or_create_cigar(cigars: list[dict], brand: str, product_name: str) -> d
             continue
         if norm(line) in norm(c["line"]) or norm(c["line"]) in norm(line):
             return c
+    # brojčane linije (Cain Daytona 646): shop piše samo vitolu
+    if vitola and (_numeric_looking_rest(line, brand) or not line or norm(line) == norm(brand)):
+        vkey = norm(vitola)
+        for c in cigars:
+            if c["brand"] != brand:
+                continue
+            if not _numeric_looking_rest(c.get("line") or "", brand):
+                continue
+            if norm(c.get("vitola") or "") == vkey:
+                return c
+            for v in c.get("vitolas") or []:
+                if norm(v.get("name") or "") == vkey:
+                    return c
     # novi entry
     new_id = f"cig-{slugify(brand)}-{slugify(line)}"
     if any(c["id"] == new_id for c in cigars):
@@ -391,7 +413,7 @@ def find_or_create_cigar(cigars: list[dict], brand: str, product_name: str) -> d
         "id": new_id,
         "brand": brand,
         "line": line,
-        "vitola": vitola_from_product(product_name, brand),
+        "vitola": vitola,
         "format": "—",
         "country": "Dominikana" if brand in ("Cusano", "Arturo Fuente") else "Nikaragva",
         "wrapper": "—",
@@ -489,6 +511,8 @@ def finalize_cigar(cigar: dict) -> None:
         cigar.setdefault("availabilityHR", []).append("Havana Shop")
     if "The Humidor" not in cigar.get("availabilityHR", []):
         cigar.setdefault("availabilityHR", []).append("The Humidor")
+    if "HR" not in (cigar.get("markets") or []):
+        cigar.setdefault("markets", []).append("HR")
 
 
 def main() -> None:
