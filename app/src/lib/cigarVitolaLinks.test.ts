@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
 import { CIGARS } from "../data";
-import { applyVitola, uniqueVitolas } from "./cigarVitola";
+import { applyVitola, resolveCigarSheetOpen, uniqueVitolas } from "./cigarVitola";
 import type { Cigar, Vitola } from "../types";
 
 const strip = (s: string) =>
@@ -180,6 +180,40 @@ describe("vitola ↔ shop link integrity (full catalog)", () => {
       const applied = applyVitola(serieG!, gRobusto);
       expect(applied.priceUrl).toBeNull();
     }
+  });
+
+  it("La Galera 1936 Box Pressed / 1502 Emerald — line sheet pa vitola s punom info", () => {
+    const box = CIGARS.find((c) => c.id === "cig-la-galera-1936-box-pressed");
+    expect(box).toBeDefined();
+    expect(resolveCigarSheetOpen(box!).mode).toBe("line");
+    const names = uniqueVitolas(box!).map((v) => v.name);
+    expect(names).toEqual(expect.arrayContaining(["Robusto", "Torpedo"]));
+    const torpedo = uniqueVitolas(box!).find((v) => v.name === "Torpedo")!;
+    const appliedT = applyVitola(box!, torpedo);
+    expect(resolveCigarSheetOpen(appliedT).mode).toBe("detail");
+    expect(appliedT.vitolas).toHaveLength(1);
+    expect(appliedT.vitola).toBe("Torpedo");
+    expect(appliedT.brand).toBe("La Galera");
+    expect(appliedT.line).toBe("1936 Box Pressed");
+    expect(appliedT.format).toBeTruthy();
+    expect(appliedT.priceUrl ?? torpedo.url).toBeTruthy();
+    const robusto = uniqueVitolas(box!).find((v) => v.name === "Robusto")!;
+    const appliedR = applyVitola(box!, robusto);
+    expect(appliedR.vitolas).toHaveLength(1);
+    expect(appliedR.vitola).toBe("Robusto");
+    expect(appliedR.priceUrl ?? robusto.url).toBeTruthy();
+    // sibling nije obrisan s linije
+    expect(uniqueVitolas(box!).length).toBeGreaterThanOrEqual(2);
+
+    const emerald = CIGARS.find((c) => c.id === "cig-1502-emerald");
+    expect(emerald).toBeDefined();
+    expect(resolveCigarSheetOpen(emerald!).mode).toBe("line");
+    const lancero = uniqueVitolas(emerald!).find((v) => /lancero/i.test(v.name));
+    expect(lancero).toBeDefined();
+    const appliedL = applyVitola(emerald!, lancero!);
+    expect(appliedL.vitolas).toHaveLength(1);
+    expect(appliedL.line).toBe(emerald!.line);
+    expect(appliedL.wrapper).toBe(emerald!.wrapper);
   });
 });
 

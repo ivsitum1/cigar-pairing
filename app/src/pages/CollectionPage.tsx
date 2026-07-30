@@ -10,7 +10,10 @@ import { useI18n, type StringKey } from "../i18n";
 import { Chip, SectionTitle } from "../components/ui";
 import { CigarRow, DrinkRow } from "../components/cards";
 import { drinkNameLoc } from "../lib/drinkName";
-import { DetailSheet } from "../components/DetailSheet";
+import {
+  CigarBrowseSheets,
+  useCigarBrowseSheets,
+} from "../components/useCigarBrowseSheets";
 import { EveningSessionSheet } from "../components/EveningSessionSheet";
 import { cigarItemId } from "../lib/cigarItemId";
 import {
@@ -31,9 +34,17 @@ export function CollectionPage({
   const { t, lx, lang } = useI18n();
   const route = useRoute();
   const data = useCollection();
-  const [detail, setDetail] = useState<
-    { kind: "cigar"; item: Cigar } | { kind: "drink"; item: Drink } | null
-  >(null);
+  const {
+    line,
+    detail,
+    openCigar,
+    openVitola,
+    openDrink,
+    openLine,
+    closeLine,
+    closeDetail,
+    closeSheets,
+  } = useCigarBrowseSheets();
   const [showAddPairing, setShowAddPairing] = useState(false);
   const [logCigar, setLogCigar] = useState<Cigar | null>(null);
   const fileRef = useRef<HTMLInputElement>(null);
@@ -125,21 +136,25 @@ export function CollectionPage({
       <div className="pb-4">
         {tabBar}
         <HumidorPage
-          onOpenCigar={(cigar) => setDetail({ kind: "cigar", item: cigar })}
+          onOpenCigar={(cigar) => openCigar(cigar)}
         />
-        <DetailSheet
-          target={detail}
-          onClose={() => setDetail(null)}
+        <CigarBrowseSheets
+          line={line}
+          detail={detail}
+          onCloseLine={closeLine}
+          onOpenVitola={openVitola}
+          onCloseDetail={closeDetail}
+          onOpenLine={openLine}
           onPair={
             onPair
               ? (target) => {
-                  setDetail(null);
+                  closeSheets();
                   onPair(target);
                 }
               : undefined
           }
           onLogEvening={(cigar) => {
-            setDetail(null);
+            closeSheets();
             setLogCigar(cigar);
           }}
         />
@@ -200,7 +215,7 @@ export function CollectionPage({
               <CigarRow
                 key={id}
                 cigar={cigar}
-                onClick={() => setDetail({ kind: "cigar", item: cigar })}
+                onClick={() => openCigar(cigar)}
               />
             ))}
           </div>
@@ -212,7 +227,7 @@ export function CollectionPage({
           <SectionTitle>{t("coll.drinks")}</SectionTitle>
           <div className="space-y-2">
             {myDrinks.map((d) => (
-              <DrinkRow key={d.id} drink={d} onClick={() => setDetail({ kind: "drink", item: d })} />
+              <DrinkRow key={d.id} drink={d} onClick={() => openDrink(d)} />
             ))}
           </div>
         </>
@@ -227,11 +242,11 @@ export function CollectionPage({
               <CigarRow
                 key={id}
                 cigar={cigar}
-                onClick={() => setDetail({ kind: "cigar", item: cigar })}
+                onClick={() => openCigar(cigar)}
               />
             ))}
             {historyDrinks.map((d) => (
-              <DrinkRow key={d.id} drink={d} onClick={() => setDetail({ kind: "drink", item: d })} />
+              <DrinkRow key={d.id} drink={d} onClick={() => openDrink(d)} />
             ))}
           </div>
         </>
@@ -299,19 +314,23 @@ export function CollectionPage({
           onClose={() => setShowAddPairing(false)}
         />
       )}
-      <DetailSheet
-        target={detail}
-        onClose={() => setDetail(null)}
+      <CigarBrowseSheets
+        line={line}
+        detail={detail}
+        onCloseLine={closeLine}
+        onOpenVitola={openVitola}
+        onCloseDetail={closeDetail}
+        onOpenLine={openLine}
         onPair={
           onPair
             ? (target) => {
-                setDetail(null);
+                closeSheets();
                 onPair(target);
               }
             : undefined
         }
         onLogEvening={(cigar) => {
-          setDetail(null);
+          closeSheets();
           setLogCigar(cigar);
         }}
       />

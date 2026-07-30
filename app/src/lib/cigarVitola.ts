@@ -56,6 +56,23 @@ export function needsVitolaPick(cigar: Cigar): boolean {
   return uniqueVitolas(cigar).length > 1;
 }
 
+/** Što otvoriti kad korisnik klikne cigaru: linija (izbor vitole) ili kartica vitole. */
+export type CigarSheetOpen =
+  | { mode: "line"; cigar: Cigar }
+  | { mode: "detail"; cigar: Cigar };
+
+/**
+ * Multi-vitola linija → LineSheet (klikabilan popis).
+ * Jedna vitola ili već primijenjen `applyVitola` → DetailSheet s tom veličinom.
+ * Ništa se ne briše iz podataka — sibling vitole ostaju na liniji.
+ */
+export function resolveCigarSheetOpen(cigar: Cigar): CigarSheetOpen {
+  if (needsVitolaPick(cigar)) {
+    return { mode: "line", cigar };
+  }
+  return { mode: "detail", cigar };
+}
+
 /** Zadana vitola za cijenu/link — ne najjeftinija u listi. */
 export function resolveDefaultVitola(cigar: Cigar): Vitola | undefined {
   const vitolas = uniqueVitolas(cigar);

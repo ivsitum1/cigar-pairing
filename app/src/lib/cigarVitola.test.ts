@@ -1,5 +1,11 @@
 import { describe, it, expect } from "vitest";
-import { applyVitola, needsVitolaPick, resolveDefaultVitola, uniqueVitolas } from "./cigarVitola";
+import {
+  applyVitola,
+  needsVitolaPick,
+  resolveCigarSheetOpen,
+  resolveDefaultVitola,
+  uniqueVitolas,
+} from "./cigarVitola";
 import type { Cigar } from "../types";
 
 const serieO: Cigar = {
@@ -61,6 +67,20 @@ describe("cigarVitola", () => {
     expect(needsVitolaPick(applied)).toBe(false);
   });
 
+  it("applyVitola ne gubi linijski kontekst ni vitola polja", () => {
+    const tubos = serieO.vitolas![1];
+    const applied = applyVitola(serieO, tubos);
+    expect(applied.brand).toBe(serieO.brand);
+    expect(applied.line).toBe(serieO.line);
+    expect(applied.wrapper).toBe(serieO.wrapper);
+    expect(applied.country).toBe(serieO.country);
+    expect(applied.strength).toBe(serieO.strength);
+    expect(applied.body).toBe(serieO.body);
+    expect(applied.availabilityHR).toEqual(serieO.availabilityHR);
+    expect(applied.smokeTimeMin).toBe(55);
+    expect(applied.vitolas[0]).toEqual(tubos);
+  });
+
   it("applyVitola ne nasljeđuje priceUrl kad vitola nema url i format ne odgovara", () => {
     const churchill = serieO.vitolas![2];
     const applied = applyVitola(serieO, churchill);
@@ -82,5 +102,14 @@ describe("cigarVitola", () => {
     const picked = resolveDefaultVitola(cigar);
     expect(picked?.name).toBe("Gran Reserva");
     expect(picked?.url).toContain("humidor.hr");
+  });
+
+  it("resolveCigarSheetOpen: multi → line, applied/single → detail", () => {
+    expect(resolveCigarSheetOpen(serieO)).toEqual({ mode: "line", cigar: serieO });
+    const applied = applyVitola(serieO, serieO.vitolas![0]);
+    expect(resolveCigarSheetOpen(applied).mode).toBe("detail");
+    expect(resolveCigarSheetOpen(applied).cigar.vitolas).toHaveLength(1);
+    const single = { ...serieO, vitolas: [serieO.vitolas![0]] };
+    expect(resolveCigarSheetOpen(single).mode).toBe("detail");
   });
 });

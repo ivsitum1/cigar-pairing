@@ -8,6 +8,7 @@ import { drinkNameLoc } from "../lib/drinkName";
 import { cigarItemId } from "../lib/cigarItemId";
 import { cigarDescription } from "../lib/cigarNote";
 import { totalStock, useHumidors } from "../store/humidor";
+import { uniqueVitolas } from "../lib/cigarVitola";
 
 // Cijena cigare koja odgovara odabranom tržištu (HR = konkretna, ostalo = "provjeri")
 export function CigarPrice({ cigar }: { cigar: Cigar }) {
@@ -78,6 +79,11 @@ export function CigarRow({
   // generirano prepricavanje atributa (zemlja/wrapper/snaga/okusi) vec je gore
   // na kartici — kao "opis" bi bilo samo ponavljanje
   const description = cigarDescription(cigar, lang);
+  const vitolaN = uniqueVitolas(cigar).length;
+  const sizeLabel =
+    vitolaN > 1
+      ? `${vitolaN} ${t("common.vitolaCountSuffix")}`
+      : (cigar.selectedVitola ?? cigar.vitola);
   return (
     <button
       onClick={onClick}
@@ -94,8 +100,13 @@ export function CigarRow({
         </span>
       </div>
       <div className="mt-1 text-xs text-dim">
-        {cigar.vitola} · {cigar.wrapper} · {cn(cigar.country)} ·{" "}
-        {cigar.smokeTimeMin} {t("common.minutes")}
+        {sizeLabel} · {cigar.wrapper} · {cn(cigar.country)}
+        {vitolaN <= 1 ? (
+          <>
+            {" · "}
+            {cigar.smokeTimeMin} {t("common.minutes")}
+          </>
+        ) : null}
       </div>
       <div className="mt-2 flex flex-wrap items-center gap-x-4 gap-y-1">
         <Meter value={cigar.strength} label={t("common.strength")} accent="var(--color-oxblood)" />

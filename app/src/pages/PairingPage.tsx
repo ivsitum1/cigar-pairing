@@ -14,7 +14,10 @@ import {
 import { useI18n, STYLE_LABELS, type StringKey } from "../i18n";
 import { Chip, Meter, ScoreBand, SearchInput, SectionTitle } from "../components/ui";
 import { getItemState, lineState, useCollection } from "../store/collection";
-import { DetailSheet } from "../components/DetailSheet";
+import {
+  CigarBrowseSheets,
+  useCigarBrowseSheets,
+} from "../components/useCigarBrowseSheets";
 import { EveningSessionSheet } from "../components/EveningSessionSheet";
 import { MarketFilter } from "../components/MarketFilter";
 import { ServeChips } from "../components/ServeChips";
@@ -108,9 +111,17 @@ export function PairingPage() {
     localStorage.setItem(key, JSON.stringify(next));
     set(next);
   };
-  const [detail, setDetail] = useState<
-    { kind: "cigar"; item: Cigar } | { kind: "drink"; item: Drink } | null
-  >(null);
+  const {
+    line,
+    detail,
+    openCigar,
+    openVitola,
+    openDrink,
+    openLine,
+    closeLine,
+    closeDetail,
+    closeSheets,
+  } = useCigarBrowseSheets();
   const [sessionOpen, setSessionOpen] = useState(false);
   const [sessionFlash, setSessionFlash] = useState<string | null>(null);
   const [sessionPrefill, setSessionPrefill] = useState<{
@@ -300,7 +311,7 @@ export function PairingPage() {
     const intent = consumePairingIntent();
     if (!intent) return;
     setCycle({});
-    setDetail(null);
+    closeSheets();
     if (intent.mode === "cigarToDrink") {
       setMode("cigarToDrink");
       setSelectedDrink(null);
@@ -401,7 +412,14 @@ export function PairingPage() {
         ))}
       </div>
 
-      {mode === "custom" && <CustomPairing onOpenDetail={setDetail} />}
+      {mode === "custom" && (
+        <CustomPairing
+          onOpenDetail={(d) => {
+            if (d.kind === "cigar") openCigar(d.item);
+            else openDrink(d.item);
+          }}
+        />
+      )}
 
       {/* market birac — uvijek vidljiv (i u custom načinu) */}
       <div className="mt-3 flex flex-wrap items-center gap-2">
@@ -481,10 +499,10 @@ export function PairingPage() {
                 // OCR prepoznato -> otvori karticu (može se odmah označiti u kolekciju)
                 if (mode === "cigarToDrink") {
                   const c = resolveCigarId(id) ?? marketCigars.find((x) => x.id === id);
-                  if (c) setDetail({ kind: "cigar", item: c });
+                  if (c) openCigar(c);
                 } else {
                   const d = ALL_DRINKS.find((x) => x.id === id);
-                  if (d) setDetail({ kind: "drink", item: d });
+                  if (d) openDrink(d);
                 }
               }}
               onText={setQuery}
@@ -650,7 +668,7 @@ export function PairingPage() {
                       }`}
                       price={formatPrice(result.item.priceEUR)}
                       priceUrl={drinkBuyLink(result.item).href}
-                      onOpen={() => setDetail({ kind: "drink", item: result.item })}
+                      onOpen={() => openDrink(result.item)}
                       onLog={() =>
                         openSession({
                           cigarId: cigarItemId(selectedCigar),
@@ -707,7 +725,7 @@ export function PairingPage() {
                     priceUrl={cigarLinkForMarket(r.item, market)}
                     vitolas={r.item.vitolas}
                     serve={serve}
-                    onOpen={() => setDetail({ kind: "cigar", item: r.item })}
+                    onOpen={() => openCigar(r.item)}
                     onLog={() =>
                       openSession({
                         cigarId: cigarItemId(r.item),
@@ -758,11 +776,15 @@ export function PairingPage() {
         />
       )}
 
-      <DetailSheet
-        target={detail}
-        onClose={() => setDetail(null)}
+      <CigarBrowseSheets
+        line={line}
+        detail={detail}
+        onCloseLine={closeLine}
+        onOpenVitola={openVitola}
+        onCloseDetail={closeDetail}
+        onOpenLine={openLine}
         onLogEvening={(cigar) => {
-          setDetail(null);
+          closeSheets();
           openSession({
             cigarId: cigarItemId(cigar),
             drinkId: selectedDrink?.id ?? null,

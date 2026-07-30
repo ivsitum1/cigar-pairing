@@ -4,7 +4,10 @@ import { ALL_DRINKS, CIGARS, DRINKS, SHOPPING, brandDisplayName, formatPrice } f
 import { useI18n, STYLE_LABELS, type StringKey } from "../i18n";
 import { Chip, SectionTitle } from "../components/ui";
 import { CigarRow, DrinkRow } from "../components/cards";
-import { DetailSheet } from "../components/DetailSheet";
+import {
+  CigarBrowseSheets,
+  useCigarBrowseSheets,
+} from "../components/useCigarBrowseSheets";
 import { EveningSessionSheet } from "../components/EveningSessionSheet";
 import { getItemState, lineState, useCollection } from "../store/collection";
 import { totalStock, lineTotalStock } from "../store/humidor";
@@ -41,9 +44,17 @@ export function ShoppingPage({
   const { t, lx } = useI18n();
   const market = useMarket();
   const collection = useCollection(); // re-render na promjene kolekcije/liste zelja
-  const [detail, setDetail] = useState<
-    { kind: "cigar"; item: Cigar } | { kind: "drink"; item: Drink } | null
-  >(null);
+  const {
+    line,
+    detail,
+    openCigar,
+    openVitola,
+    openDrink,
+    openLine,
+    closeLine,
+    closeDetail,
+    closeSheets,
+  } = useCigarBrowseSheets();
   const [logCigar, setLogCigar] = useState<Cigar | null>(null);
   const [buffetCat, setBuffetCat] = useState<DrinkCategory>("rum");
   const [showPlan, setShowPlan] = useState(false);
@@ -192,8 +203,6 @@ export function ShoppingPage({
     rows: SHOPPING.tiers.filter((x) => x.tier === tier),
   }));
 
-  const openDrink = (d: Drink) => setDetail({ kind: "drink", item: d });
-
   return (
     <div className="pb-4">
       {/* ☆ 1) lista zelja */}
@@ -215,7 +224,7 @@ export function ShoppingPage({
                     <CigarRow
                       key={c.id}
                       cigar={c}
-                      onClick={() => setDetail({ kind: "cigar", item: c })}
+                      onClick={() => openCigar(c)}
                     />
                   ))}
                 </div>
@@ -453,19 +462,23 @@ export function ShoppingPage({
 
       <p className="mt-4 text-xs leading-relaxed text-dim/80">⚖ {t("shop.legalNote")}</p>
 
-      <DetailSheet
-        target={detail}
-        onClose={() => setDetail(null)}
+      <CigarBrowseSheets
+        line={line}
+        detail={detail}
+        onCloseLine={closeLine}
+        onOpenVitola={openVitola}
+        onCloseDetail={closeDetail}
+        onOpenLine={openLine}
         onPair={
           onPair
             ? (target) => {
-                setDetail(null);
+                closeSheets();
                 onPair(target);
               }
             : undefined
         }
         onLogEvening={(cigar) => {
-          setDetail(null);
+          closeSheets();
           setLogCigar(cigar);
         }}
       />
