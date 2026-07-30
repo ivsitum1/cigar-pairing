@@ -2,7 +2,7 @@
   "brand": "Asylum",
   "renameBrand": null,
   "status": "done",
-  "reviewedAt": "2026-07-24",
+  "reviewedAt": "2026-07-30",
   "sources": [
     "https://asylumcigars.com/",
     "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
@@ -68,6 +68,15 @@
     "Year 10 11/18": {
       "line": "Year 10",
       "vitola": "11/18"
+    },
+    "13": {
+      "line": "13"
+    },
+    "13 Connecticut": {
+      "line": "13 Connecticut"
+    },
+    "Insidious Short": {
+      "line": "Insidious Short"
     }
   },
   "vitolaRenames": {},
@@ -76,6 +85,14 @@
     [
       "Schizo",
       "Schizo Maduro"
+    ],
+    [
+      "Connecticut",
+      "13 Connecticut"
+    ],
+    [
+      "Insidious",
+      "Insidious Short"
     ]
   ],
   "lineNotes": {},

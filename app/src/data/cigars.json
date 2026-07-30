@@ -79,8 +79,8 @@
     "id": "cig-1502-black-gold",
     "brand": "1502",
     "line": "Black Gold",
-    "vitola": "Lancero",
-    "format": "38 x 189mm",
+    "vitola": "Toro",
+    "format": "50 x 152mm",
     "country": "Nikaragva",
     "wrapper": "Nicaragua",
     "strength": 3,
@@ -95,8 +95,8 @@
     ],
     "profileEstimated": true,
     "catalogSource": "market",
-    "smokeTimeMin": 73,
-    "priceEUR": null,
+    "smokeTimeMin": 58,
+    "priceEUR": 15.0,
     "priceApprox": false,
     "availabilityHR": [
       "The Humidor"
@@ -208,14 +208,15 @@
     "wrapperOrigin": "Nikaragva",
     "binderOrigin": "Nikaragva",
     "fillerOrigin": "Nikaragva",
-    "isPuro": true
+    "isPuro": true,
+    "priceUrl": "https://humidor.hr/hr/proizvod/1502-black-gold-toro-6-x-50/"
   },
   {
     "id": "cig-1502-emerald",
     "brand": "1502",
     "line": "Emerald",
     "vitola": "Lancero",
-    "format": "40 x 189mm",
+    "format": "40 x 178mm",
     "country": "Nikaragva",
     "wrapper": "Corojo",
     "strength": 4,
@@ -230,8 +231,8 @@
     ],
     "profileEstimated": true,
     "catalogSource": "market",
-    "smokeTimeMin": 73,
-    "priceEUR": null,
+    "smokeTimeMin": 60,
+    "priceEUR": 14.5,
     "priceApprox": false,
     "availabilityHR": [
       "The Humidor"
@@ -247,20 +248,11 @@
     ],
     "vitolas": [
       {
-        "name": "Emerald Lancero",
+        "name": "Lancero",
         "format": "40 x 178mm",
         "smokeTimeMin": 60,
         "priceEUR": 14.5,
         "url": "https://humidor.hr/hr/proizvod/1502-emerald-lancero-7-x-40/",
-        "ring": 40,
-        "lengthMM": 178
-      },
-      {
-        "name": "Lancero",
-        "format": "40 x 189mm",
-        "smokeTimeMin": 73,
-        "priceEUR": null,
-        "url": null,
         "regionLinks": {
           "EU": {
             "shop": "CigarWorld",
@@ -269,7 +261,7 @@
           }
         },
         "ring": 40,
-        "lengthMM": 189
+        "lengthMM": 178
       },
       {
         "name": "Robusto",
@@ -334,7 +326,8 @@
     },
     "formatEstimated": true,
     "wrapperOrigin": "Nikaragva",
-    "binderOrigin": "Nikaragva"
+    "binderOrigin": "Nikaragva",
+    "priceUrl": "https://humidor.hr/hr/proizvod/1502-emerald-lancero-7-x-40/"
   },
   {
     "id": "cig-1502-nicaragua",
@@ -412,8 +405,8 @@
     "id": "cig-1502-ruby",
     "brand": "1502",
     "line": "Ruby",
-    "vitola": "Lancero",
-    "format": "38 x 189mm",
+    "vitola": "Toro",
+    "format": "50 x 152mm",
     "country": "Nikaragva",
     "wrapper": "Sumatra",
     "strength": 3,
@@ -428,8 +421,8 @@
     ],
     "profileEstimated": true,
     "catalogSource": "market",
-    "smokeTimeMin": 73,
-    "priceEUR": null,
+    "smokeTimeMin": 58,
+    "priceEUR": 15.0,
     "priceApprox": false,
     "availabilityHR": [
       "The Humidor"
@@ -521,8 +514,8 @@
     "regionLinks": {
       "HR": {
         "shop": "The Humidor",
-        "url": "https://humidor.hr/hr/proizvod/1502-ruby-conquistador-6-x-56/",
-        "priceEUR": 17.5
+        "url": "https://humidor.hr/hr/proizvod/1502-ruby-toro-6-x-50/",
+        "priceEUR": 15.0
       },
       "EU": {
         "shop": "CigarWorld",
@@ -534,7 +527,8 @@
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Nikaragva",
     "fillerOrigin": "Nikaragva",
-    "isPuro": false
+    "isPuro": false,
+    "priceUrl": "https://humidor.hr/hr/proizvod/1502-ruby-toro-6-x-50/"
   },
   {
     "id": "cig-1502-special-edition-blue-sapphire",
@@ -586,22 +580,6 @@
         "lengthMM": 189
       },
       {
-        "name": "Robusto",
-        "format": "52 x 127mm",
-        "smokeTimeMin": 49,
-        "priceEUR": null,
-        "url": null,
-        "regionLinks": {
-          "EU": {
-            "shop": "CigarWorld",
-            "url": "https://www.cigarworld.de/en/zigarren/nicaragua/1502-special-edition-blue-sapphire-robusto-gordo-90014552_45059",
-            "priceEUR": 11.9
-          }
-        },
-        "ring": 52,
-        "lengthMM": 127
-      },
-      {
         "name": "Robusto Gordo",
         "format": "52 x 127mm",
         "smokeTimeMin": 50,
@@ -609,7 +587,14 @@
         "url": "https://humidor.hr/hr/proizvod/1502-blue-sapphire-robusto-gordo-5-x-52/",
         "ring": 52,
         "lengthMM": 127,
-        "shape": "Gordo"
+        "shape": "Gordo",
+        "regionLinks": {
+          "EU": {
+            "shop": "CigarWorld",
+            "url": "https://www.cigarworld.de/en/zigarren/nicaragua/1502-special-edition-blue-sapphire-robusto-gordo-90014552_45059",
+            "priceEUR": 11.9
+          }
+        }
       },
       {
         "name": "Toro",
@@ -16789,6 +16774,175 @@
     "formatEstimated": true
   },
   {
+    "id": "cig-asylum-13",
+    "brand": "Asylum",
+    "line": "13",
+    "vitola": "Robusto",
+    "format": "50 x 127mm",
+    "country": "Nikaragva",
+    "wrapper": "Habano",
+    "strength": 5,
+    "body": 3,
+    "flavorTags": [
+      "cedar",
+      "zacini",
+      "koza",
+      "kava"
+    ],
+    "profileEstimated": true,
+    "catalogSource": "market",
+    "smokeTimeMin": 60,
+    "priceEUR": 9.9,
+    "priceApprox": false,
+    "availabilityHR": [
+      "The Humidor"
+    ],
+    "notes": {
+      "hr": "Linija 13 kuće Asylum (CLE / Tom Lazuka i Christian Eiroa) — ekstremni ring gauge, nikaragvanski Habano pokrov i puna snaga.",
+      "en": "Asylum's 13 line (CLE / Tom Lazuka and Christian Eiroa) — extreme ring gauges, Nicaraguan Habano wrapper, full strength."
+    },
+    "markets": [
+      "HR",
+      "USA",
+      "WW"
+    ],
+    "vitolas": [
+      {
+        "name": "Robusto",
+        "format": "50 x 127mm",
+        "smokeTimeMin": 60,
+        "priceEUR": 9.9,
+        "url": "https://humidor.hr/hr/proizvod/asylum-13-robusto-5-x-50/",
+        "regionLinks": {
+          "HR": {
+            "shop": "The Humidor",
+            "url": "https://humidor.hr/hr/proizvod/asylum-13-robusto-5-x-50/",
+            "priceEUR": 9.9
+          }
+        },
+        "ring": 50,
+        "lengthMM": 127
+      },
+      {
+        "name": "Gordo",
+        "format": "60 x 152mm",
+        "smokeTimeMin": 58,
+        "priceEUR": null,
+        "url": null,
+        "ring": 60,
+        "lengthMM": 152
+      },
+      {
+        "name": "Gran Toro",
+        "format": "60 x 152mm",
+        "smokeTimeMin": 90,
+        "priceEUR": 11.9,
+        "url": "https://humidor.hr/hr/proizvod/asylum-13-toro-gordo-6-x-60/",
+        "regionLinks": {
+          "HR": {
+            "shop": "The Humidor",
+            "url": "https://humidor.hr/hr/proizvod/asylum-13-toro-gordo-6-x-60/",
+            "priceEUR": 11.9
+          }
+        },
+        "ring": 60,
+        "lengthMM": 152
+      }
+    ],
+    "regionLinks": {
+      "HR": {
+        "shop": "The Humidor",
+        "url": "https://humidor.hr/hr/proizvod/asylum-13-robusto-5-x-50/",
+        "priceEUR": 9.9
+      },
+      "USA": {
+        "shop": "Holt's",
+        "url": "https://www.holts.com/cigars/all-cigar-brands/asylum-13.html",
+        "priceEUR": 8.28,
+        "priceApprox": true
+      }
+    },
+    "strengthFromShop": true,
+    "priceUrl": "https://humidor.hr/hr/proizvod/asylum-13-robusto-5-x-50/"
+  },
+  {
+    "id": "cig-asylum-13-connecticut",
+    "brand": "Asylum",
+    "line": "13 Connecticut",
+    "vitola": "Toro",
+    "format": "52 x 152mm",
+    "country": "Honduras",
+    "wrapper": "Ecuadorian Connecticut Shade",
+    "strength": 2,
+    "body": 2,
+    "flavorTags": [
+      "kremasto",
+      "cedar",
+      "orasasti",
+      "med",
+      "trava-slatka"
+    ],
+    "profileEstimated": true,
+    "catalogSource": "market",
+    "smokeTimeMin": 75,
+    "priceEUR": 10.9,
+    "priceApprox": false,
+    "availabilityHR": [
+      "The Humidor"
+    ],
+    "notes": {
+      "hr": "Asylum 13 Connecticut — blaga strana marke: ekvadorski Connecticut Shade nad hondureškim punjenjem, u velikim formatima.",
+      "en": "Asylum 13 Connecticut — the brand's mild side: Ecuadorian Connecticut Shade over Honduran filler, in oversized formats."
+    },
+    "markets": [
+      "HR",
+      "USA",
+      "WW"
+    ],
+    "vitolas": [
+      {
+        "name": "Toro",
+        "format": "52 x 152mm",
+        "smokeTimeMin": 75,
+        "priceEUR": 10.9,
+        "url": "https://humidor.hr/hr/proizvod/asylum-13-connecticut-toro-6-x-52/",
+        "regionLinks": {
+          "HR": {
+            "shop": "The Humidor",
+            "url": "https://humidor.hr/hr/proizvod/asylum-13-connecticut-toro-6-x-52/",
+            "priceEUR": 10.9
+          }
+        },
+        "ring": 52,
+        "lengthMM": 152
+      },
+      {
+        "name": "Gordo",
+        "format": "60 x 152mm",
+        "smokeTimeMin": 58,
+        "priceEUR": null,
+        "url": null,
+        "ring": 60,
+        "lengthMM": 152
+      }
+    ],
+    "regionLinks": {
+      "HR": {
+        "shop": "The Humidor",
+        "url": "https://humidor.hr/hr/proizvod/asylum-13-connecticut-toro-6-x-52/",
+        "priceEUR": 10.9
+      },
+      "USA": {
+        "shop": "Holt's",
+        "url": "https://www.holts.com/cigars/all-cigar-brands/asylum-13-connecticut.html",
+        "priceEUR": 2.94,
+        "priceApprox": true
+      }
+    },
+    "strengthFromShop": true,
+    "priceUrl": "https://humidor.hr/hr/proizvod/asylum-13-connecticut-toro-6-x-52/"
+  },
+  {
     "id": "cig-asylum-867-midnight-oil",
     "brand": "Asylum",
     "line": "867 Midnight Oil",
@@ -17285,6 +17439,67 @@
     "formatEstimated": true
   },
   {
+    "id": "cig-asylum-insidious-short",
+    "brand": "Asylum",
+    "line": "Insidious Short",
+    "vitola": "Corona",
+    "format": "44 x 102mm",
+    "country": "Honduras",
+    "wrapper": "Ecuador Connecticut",
+    "strength": 2,
+    "body": 2,
+    "flavorTags": [
+      "kremasto",
+      "cedar",
+      "orasasti",
+      "med",
+      "trava-slatka"
+    ],
+    "profileEstimated": true,
+    "catalogSource": "market",
+    "smokeTimeMin": 45,
+    "priceEUR": 9.4,
+    "priceApprox": false,
+    "availabilityHR": [
+      "The Humidor"
+    ],
+    "notes": {
+      "hr": "Insidious je pristupačnija Asylum linija; Short je njezin kratki format s ekvadorskim Connecticut pokrovom — blago i brzo.",
+      "en": "Insidious is Asylum's more affordable line; Short is its compact size under an Ecuadorian Connecticut wrapper — mild and quick."
+    },
+    "markets": [
+      "HR",
+      "WW"
+    ],
+    "vitolas": [
+      {
+        "name": "Corona",
+        "format": "44 x 102mm",
+        "smokeTimeMin": 45,
+        "priceEUR": 9.4,
+        "url": "https://humidor.hr/hr/proizvod/asylum-13-insidious-short-corona-44-x-4/",
+        "regionLinks": {
+          "HR": {
+            "shop": "The Humidor",
+            "url": "https://humidor.hr/hr/proizvod/asylum-13-insidious-short-corona-44-x-4/",
+            "priceEUR": 9.4
+          }
+        },
+        "ring": 44,
+        "lengthMM": 102
+      }
+    ],
+    "regionLinks": {
+      "HR": {
+        "shop": "The Humidor",
+        "url": "https://humidor.hr/hr/proizvod/asylum-13-insidious-short-corona-44-x-4/",
+        "priceEUR": 9.4
+      }
+    },
+    "strengthFromShop": true,
+    "priceUrl": "https://humidor.hr/hr/proizvod/asylum-13-insidious-short-corona-44-x-4/"
+  },
+  {
     "id": "cig-asylum-limitada-2025",
     "brand": "Asylum",
     "line": "Limitada 2025",
@@ -17760,236 +17975,6 @@
       }
     },
     "formatEstimated": true
-  },
-  {
-    "id": "cig-asylum-13-13",
-    "brand": "Asylum 13",
-    "line": "13",
-    "vitola": "Robusto",
-    "format": "50 x 127mm",
-    "country": "Nikaragva",
-    "wrapper": "Habano",
-    "strength": 5,
-    "body": 3,
-    "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
-    ],
-    "profileEstimated": true,
-    "catalogSource": "market",
-    "smokeTimeMin": 60,
-    "priceEUR": 9.9,
-    "priceApprox": false,
-    "availabilityHR": [
-      "The Humidor"
-    ],
-    "notes": {
-      "hr": "Asylum 13 je linija Christiana Eiroe i Toma Lazuke poznata po ekstremnim ringovima — nikaragvanski Habano pokrov i puna snaga, bez zaobilaženja.",
-      "en": "Asylum 13 is the Christian Eiroa and Tom Lazuka line known for extreme ring gauges — a Nicaraguan Habano wrapper and full strength, with nothing softened."
-    },
-    "markets": [
-      "HR",
-      "USA",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Robusto",
-        "format": "50 x 127mm",
-        "smokeTimeMin": 60,
-        "priceEUR": 9.9,
-        "url": "https://humidor.hr/hr/proizvod/asylum-13-robusto-5-x-50/",
-        "regionLinks": {
-          "HR": {
-            "shop": "The Humidor",
-            "url": "https://humidor.hr/hr/proizvod/asylum-13-robusto-5-x-50/",
-            "priceEUR": 9.9
-          }
-        },
-        "ring": 50,
-        "lengthMM": 127
-      },
-      {
-        "name": "Gordo",
-        "format": "60 x 152mm",
-        "smokeTimeMin": 58,
-        "priceEUR": null,
-        "url": null,
-        "ring": 60,
-        "lengthMM": 152
-      },
-      {
-        "name": "Gran Toro",
-        "format": "60 x 152mm",
-        "smokeTimeMin": 90,
-        "priceEUR": 11.9,
-        "url": "https://humidor.hr/hr/proizvod/asylum-13-toro-gordo-6-x-60/",
-        "regionLinks": {
-          "HR": {
-            "shop": "The Humidor",
-            "url": "https://humidor.hr/hr/proizvod/asylum-13-toro-gordo-6-x-60/",
-            "priceEUR": 11.9
-          }
-        },
-        "ring": 60,
-        "lengthMM": 152
-      }
-    ],
-    "regionLinks": {
-      "HR": {
-        "shop": "The Humidor",
-        "url": "https://humidor.hr/hr/proizvod/asylum-13-robusto-5-x-50/",
-        "priceEUR": 9.9
-      },
-      "USA": {
-        "shop": "Holt's",
-        "url": "https://www.holts.com/cigars/all-cigar-brands/asylum-13.html",
-        "priceEUR": 8.28,
-        "priceApprox": true
-      }
-    },
-    "strengthFromShop": true,
-    "priceUrl": "https://humidor.hr/hr/proizvod/asylum-13-robusto-5-x-50/"
-  },
-  {
-    "id": "cig-asylum-13-connecticut",
-    "brand": "Asylum 13",
-    "line": "Connecticut",
-    "vitola": "Toro",
-    "format": "52 x 152mm",
-    "country": "Honduras",
-    "wrapper": "Ecuadorian Connecticut Shade",
-    "strength": 2,
-    "body": 2,
-    "flavorTags": [
-      "kremasto",
-      "cedar",
-      "orasasti",
-      "med",
-      "trava-slatka"
-    ],
-    "profileEstimated": true,
-    "catalogSource": "market",
-    "smokeTimeMin": 75,
-    "priceEUR": 10.9,
-    "priceApprox": false,
-    "availabilityHR": [
-      "The Humidor"
-    ],
-    "notes": {
-      "hr": "Blaga strana Asyluma — ekvadorski Connecticut Shade nad hondureškim punjenjem, kremasto i orašasto, u istim velikim formatima kao ostatak marke.",
-      "en": "Asylum's mild side — Ecuadorian Connecticut Shade over Honduran filler, creamy and nutty, in the same oversized formats as the rest of the brand."
-    },
-    "markets": [
-      "HR",
-      "USA",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Toro",
-        "format": "52 x 152mm",
-        "smokeTimeMin": 75,
-        "priceEUR": 10.9,
-        "url": "https://humidor.hr/hr/proizvod/asylum-13-connecticut-toro-6-x-52/",
-        "regionLinks": {
-          "HR": {
-            "shop": "The Humidor",
-            "url": "https://humidor.hr/hr/proizvod/asylum-13-connecticut-toro-6-x-52/",
-            "priceEUR": 10.9
-          }
-        },
-        "ring": 52,
-        "lengthMM": 152
-      },
-      {
-        "name": "Gordo",
-        "format": "60 x 152mm",
-        "smokeTimeMin": 58,
-        "priceEUR": null,
-        "url": null,
-        "ring": 60,
-        "lengthMM": 152
-      }
-    ],
-    "regionLinks": {
-      "HR": {
-        "shop": "The Humidor",
-        "url": "https://humidor.hr/hr/proizvod/asylum-13-connecticut-toro-6-x-52/",
-        "priceEUR": 10.9
-      },
-      "USA": {
-        "shop": "Holt's",
-        "url": "https://www.holts.com/cigars/all-cigar-brands/asylum-13-connecticut.html",
-        "priceEUR": 2.94,
-        "priceApprox": true
-      }
-    },
-    "strengthFromShop": true,
-    "priceUrl": "https://humidor.hr/hr/proizvod/asylum-13-connecticut-toro-6-x-52/"
-  },
-  {
-    "id": "cig-asylum-13-insidious-short",
-    "brand": "Asylum 13",
-    "line": "Insidious Short",
-    "vitola": "Corona",
-    "format": "44 x 102mm",
-    "country": "Honduras",
-    "wrapper": "Ecuador Connecticut",
-    "strength": 2,
-    "body": 2,
-    "flavorTags": [
-      "kremasto",
-      "cedar",
-      "orasasti",
-      "med",
-      "trava-slatka"
-    ],
-    "profileEstimated": true,
-    "catalogSource": "market",
-    "smokeTimeMin": 45,
-    "priceEUR": 9.4,
-    "priceApprox": false,
-    "availabilityHR": [
-      "The Humidor"
-    ],
-    "notes": {
-      "hr": "Insidious je pristupačnija Asylum linija; Short je njezin kratki format s ekvadorskim Connecticut pokrovom — blago i brzo.",
-      "en": "Insidious is Asylum's more affordable line; Short is its compact size under an Ecuadorian Connecticut wrapper — mild and quick."
-    },
-    "markets": [
-      "HR",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Corona",
-        "format": "44 x 102mm",
-        "smokeTimeMin": 45,
-        "priceEUR": 9.4,
-        "url": "https://humidor.hr/hr/proizvod/asylum-13-insidious-short-corona-44-x-4/",
-        "regionLinks": {
-          "HR": {
-            "shop": "The Humidor",
-            "url": "https://humidor.hr/hr/proizvod/asylum-13-insidious-short-corona-44-x-4/",
-            "priceEUR": 9.4
-          }
-        },
-        "ring": 44,
-        "lengthMM": 102
-      }
-    ],
-    "regionLinks": {
-      "HR": {
-        "shop": "The Humidor",
-        "url": "https://humidor.hr/hr/proizvod/asylum-13-insidious-short-corona-44-x-4/",
-        "priceEUR": 9.4
-      }
-    },
-    "strengthFromShop": true,
-    "priceUrl": "https://humidor.hr/hr/proizvod/asylum-13-insidious-short-corona-44-x-4/"
   },
   {
     "id": "cig-ave-maria-argentum",
@@ -91921,8 +91906,8 @@
     "id": "cig-joya-de-nicaragua-numero-uno",
     "brand": "Joya de Nicaragua",
     "line": "Numero Uno",
-    "vitola": "Robusto",
-    "format": "52 x 140mm",
+    "vitola": "Le Premier",
+    "format": "48 x 175mm",
     "country": "Nikaragva",
     "wrapper": "Ecuador Connecticut",
     "strength": 3,
@@ -91936,7 +91921,7 @@
       "zacini"
     ],
     "smokeTimeMin": 50,
-    "priceEUR": 14.0,
+    "priceEUR": 22.8,
     "priceApprox": false,
     "availabilityHR": [
       "The Humidor",
@@ -91965,13 +91950,13 @@
         "name": "Robusto",
         "format": "52 x 140mm",
         "smokeTimeMin": 50,
-        "priceEUR": 14.0,
+        "priceEUR": null,
         "url": null,
         "ring": 52,
         "lengthMM": 140
       }
     ],
-    "priceUrl": "https://humidor.hr/hr/proizvod/1502-nicaragua-robusto-5-x-50/",
+    "priceUrl": "https://havana-cigar-shop.com/proizvod/joya-de-nicaragua-numero-uno-le-premier-25/",
     "profileEstimated": true,
     "regionLinks": {
       "HR": {
