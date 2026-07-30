@@ -703,7 +703,7 @@
       "en": "Retrohale is a technique where you gently exhale some smoke through the nose instead of the mouth. The nose catches aromas the tongue misses (spice, floral, sweetness), so the cigar suddenly shows more layers. Do it with a small amount, without rushing."
     },
     {
-      "hr": "Suhi vlak (cold draw) je povlačenje zraka kroz još nezapaljenu cigaru. Provjerava otpor (je li vlak pretvrd ili prelagan) i daje predokus nota, npr. sijena, kakaa ili slatkoće, prije nego što je zapališ.",
+      "hr": "Hladni draw (cold draw) je lagano povlačenje zraka kroz još nezapaljenu cigaru. Provjerava otpor (je li draw pretvrd ili prelagan) i daje predokus nota, npr. sijena, kakaa ili slatkoće, prije nego što je zapališ.",
       "en": "The cold draw is pulling air through a cigar that is not yet lit. It checks the resistance (whether the draw is too tight or too loose) and previews notes such as hay, cocoa or sweetness before you light up."
     },
     {
@@ -763,8 +763,12 @@
       "en": "Terroir is the sum of soil, climate and place that shows up in the drink. That is why the same style (rum, whisky, wine, even tobacco) reads differently from different regions, even with identical technique."
     },
     {
-      "hr": "Tri načina rezanja kape cigare: giljotina (ravan rez, najviše otvara vlak), V-rez (klin, koncentrira dim u sredinu) i punch (rupica, uži i topliji vlak). Manji rez lakše je popraviti nego preveliki.",
-      "en": "Three ways to cut a cigar's cap: the guillotine (a straight cut, opens the draw most), the V-cut (a wedge, focuses the smoke to the centre) and the punch (a small hole, a tighter, warmer draw). A small cut is easier to fix than too big a one."
+      "hr": "Tri uobičajena načina rezanja kape cigare: giljotina (ravan rez, najviše otvara draw), V-rez (klin, koncentrira dim u sredinu) i punch (rupica, uži i topliji draw). Manji rez lakše je popraviti nego preveliki.",
+      "en": "Three common ways to cut a cigar's cap: the guillotine (a straight cut, opens the draw most), the V-cut (a wedge, focuses the smoke to the centre) and the punch (a small hole, a tighter, warmer draw). A small cut is easier to fix than too big a one."
+    },
+    {
+      "hr": "Jeste li znali? Uz tri uobičajena reza postoje i škare za cigare, klinasti (casino) rez, Cuban cut (giljotina pod kutom, često na figuradu da se otvor proširi bez dubljeg ravnog reza) i pinch prstima kad nema rezača — hitna mjera, ne prvi izbor.",
+      "en": "Did you know? Beside the three common cuts there are also cigar scissors, a wedge (casino) cut, the Cuban cut (guillotine at an angle, often on figurados to widen the opening without a deeper straight cut) and a finger pinch when you have no cutter — an emergency move, not a first choice."
     },
     {
       "hr": "Paljenje počinje „tostiranjem” stopala: plamen se drži malo ispod ruba, cigara se okreće i grije dok se rub ne zažari, bez izravnog dodira plamena. Tako se izbjegne zagoren, oštar prvi dim.",
@@ -971,7 +975,7 @@
       "en": "A triple cap is a three-layer finish of the cigar’s head with thin wrapper pieces. The aim is a neat look and less tearing when cut. It does not guarantee flavour, but it signals careful finishing."
     },
     {
-      "hr": "Vlak (draw): previše otvoren gori vruće; previše zatvoren peče i gasi se. Blagi masaža duž cigare ili drugi rez (ne pretjeran) ponekad pomogne. Ako je čep od duhana unutra, bolje drugu cigaru nego sila.",
+      "hr": "Draw: previše otvoren gori vruće; previše zatvoren peče i gasi se. Blaga masaža duž cigare ili drugi rez (ne pretjeran) ponekad pomogne. Ako je čep od duhana unutra, bolje drugu cigaru nego sila.",
       "en": "Draw: too open burns hot; too tight scorches and goes out. A gentle massage along the cigar or a second cut (not excessive) sometimes helps. If a tobacco plug sits inside, another cigar beats force."
     },
     {
@@ -983,8 +987,8 @@
       "en": "Wrapper leaves are sorted by size, colour and elasticity. Better wraps go on show cigars; smaller or spotted leaves often become binder. Colour alone is not a quality score."
     },
     {
-      "hr": "Čep (plug) je zbijeni duhan koji blokira vlak. Simptom: gotovo nema dima unatoč jakom vučenju. Ne forsiraj usisavanje; drugi rez ili druga cigara spašavaju večer.",
-      "en": "A plug is packed tobacco that blocks the draw. Symptom: almost no smoke despite hard pulling. Do not force suction; a second cut or another cigar saves the evening."
+      "hr": "Čep (plug) je zbijeni duhan koji blokira draw. Simptom: gotovo nema dima iako vučeš jako. Ne forsiraj silom; drugi rez ili druga cigara spašavaju večer.",
+      "en": "A plug is packed tobacco that blocks the draw. Symptom: almost no smoke despite hard pulling. Do not force it; a second cut or another cigar saves the evening."
     },
     {
       "hr": "Ako se pokrov odvija, malo sline na prstu (ili čista voda) i nježno priljubi rub u smjeru uvijanja. Velika kidanja znače kraj sesije, ne ljepilo iz ladice.",
@@ -4177,7 +4181,7 @@
     },
     {
       "q": {
-        "hr": "Suhi vlak (cold draw) radi se…",
+        "hr": "Hladni draw (cold draw) radi se…",
         "en": "The cold draw is done…"
       },
       "a": [
@@ -4693,7 +4697,7 @@
       ],
       "correct": 0,
       "why": {
-        "hr": "Giljotina daje ravan rez i najviše otvara vlak; punch daje uži, topliji vlak.",
+        "hr": "Giljotina daje ravan rez i najviše otvara draw; punch daje uži, topliji draw.",
         "en": "The guillotine is a straight cut that opens the draw most; the punch gives a tighter, warmer draw."
       }
     },
@@ -6249,7 +6253,7 @@
           "en": "stronger vanilla in every cigar"
         },
         {
-          "hr": "plijesan i težak vlak",
+          "hr": "plijesan i težak draw",
           "en": "mould and a tight draw"
         },
         {
@@ -6323,7 +6327,7 @@
     },
     {
       "q": {
-        "hr": "Ako je vlak pretijesan, loš prvi korak je…",
+        "hr": "Ako je draw pretijesan, loš prvi korak je…",
         "en": "If the draw is too tight, a bad first step is…"
       },
       "a": [
@@ -6398,13 +6402,13 @@
           "en": "proves the cedar is fresh"
         },
         {
-          "hr": "blokira vlak zbijenim duhanom",
+          "hr": "blokira draw zbijenim duhanom",
           "en": "blocks the draw with packed tobacco"
         }
       ],
       "correct": 3,
       "why": {
-        "hr": "Zato gotovo nema dima unatoč vučenju.",
+        "hr": "Zato gotovo nema dima iako vučeš jako.",
         "en": "That is why there is almost no smoke despite pulling."
       }
     },
@@ -6671,7 +6675,7 @@
     },
     {
       "q": {
-        "hr": "Pretjerano otvoren vlak često znači…",
+        "hr": "Pretjerano otvoren draw često znači…",
         "en": "An overly open draw often means…"
       },
       "a": [
