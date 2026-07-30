@@ -7165,6 +7165,151 @@
         "hr": "Zato tamna pića nose više okusa, ali i teže „posljedice”.",
         "en": "So dark spirits carry more flavour, but also a heavier next day."
       }
+    },
+    {
+      "q": {
+        "hr": "Što radiš s cigarom na kraju večeri?",
+        "en": "What do you do with the cigar at the end of the evening?"
+      },
+      "a": [
+        {
+          "hr": "ostaviš je u pepeljari da se sama ugasi",
+          "en": "leave it in the ashtray to go out on its own"
+        },
+        {
+          "hr": "stubiš je poput cigarete",
+          "en": "stub it out like a cigarette"
+        },
+        {
+          "hr": "ubaciš je u čašu vode",
+          "en": "drop it into a water glass"
+        },
+        {
+          "hr": "zaliješ je brandyjem",
+          "en": "douse it with brandy"
+        }
+      ],
+      "correct": 0,
+      "why": {
+        "hr": "Stubanje širi neugodan miris; pepeo i žar mirno ugasnu u pepeljari.",
+        "en": "Stubbing spreads a foul smell; ash and coal die quietly in the tray."
+      }
+    },
+    {
+      "q": {
+        "hr": "Zajednički rezač u salonu — smiješ li navlažiti cap slinom prije reza?",
+        "en": "Shared lounge cutter — may you wet the cap with saliva before cutting?"
+      },
+      "a": [
+        {
+          "hr": "da, bolje drži",
+          "en": "yes, it holds better"
+        },
+        {
+          "hr": "ne — higijena i tuđi alat",
+          "en": "no — hygiene and a shared tool"
+        },
+        {
+          "hr": "samo ako je V-rez",
+          "en": "only with a V-cut"
+        },
+        {
+          "hr": "samo kod madura",
+          "en": "only on maduros"
+        }
+      ],
+      "correct": 1,
+      "why": {
+        "hr": "Cap ne ide u usta prije zajedničkog rezača; koristi svoj ili čist kućni.",
+        "en": "Do not put the cap in your mouth before a shared cutter; use your own or a clean house tool."
+      }
+    },
+    {
+      "q": {
+        "hr": "Limited edition (LE) cigara za stolom znači…",
+        "en": "A limited edition (LE) cigar at the table means…"
+      },
+      "a": [
+        {
+          "hr": "da si bolji gost od onoga s redovnom linijom",
+          "en": "you are a better guest than someone with a regular line"
+        },
+        {
+          "hr": "ograničenu proizvodnju — razgovor o duhanu, ne o cijeni kao dokazu",
+          "en": "finite production — talk tobacco, not price as proof"
+        },
+        {
+          "hr": "obavezno skuplji i bolji blend",
+          "en": "automatically a costlier and better blend"
+        },
+        {
+          "hr": "da moraš platiti cut fee",
+          "en": "that you must pay a cut fee"
+        }
+      ],
+      "correct": 1,
+      "why": {
+        "hr": "LE je oznaka količine/riječnosti; bonton traži priču o duhanu, ne flex cijene.",
+        "en": "LE marks quantity/rarity; manners ask for a tobacco story, not a price flex."
+      }
+    },
+    {
+      "q": {
+        "hr": "Viski u staklenoj boci…",
+        "en": "Whisky in a glass bottle…"
+      },
+      "a": [
+        {
+          "hr": "nastavlja stariti na polici",
+          "en": "keeps ageing on the shelf"
+        },
+        {
+          "hr": "prestaje stariti čim napusti bačvu",
+          "en": "stops ageing once it leaves the cask"
+        },
+        {
+          "hr": "stari samo ako je cask strength",
+          "en": "ages only if it is cask strength"
+        },
+        {
+          "hr": "stari brže na svjetlu",
+          "en": "ages faster in light"
+        }
+      ],
+      "correct": 1,
+      "why": {
+        "hr": "Starenje je u bačvi; u boci tekućina čeka otvaranje i dijeljenje.",
+        "en": "Ageing happens in cask; in bottle the liquid waits to be opened and shared."
+      }
+    },
+    {
+      "q": {
+        "hr": "Kad vodiš degustaciju s više boca uz cigaru, koliko stavki je razumno?",
+        "en": "When hosting a multi-bottle tasting with a cigar, how many items is sensible?"
+      },
+      "a": [
+        {
+          "hr": "petnaest, da svi probate sve",
+          "en": "fifteen, so everyone tries everything"
+        },
+        {
+          "hr": "pet do šest, od blažeg prema jačem",
+          "en": "five to six, milder to bolder"
+        },
+        {
+          "hr": "jedna, uvijek",
+          "en": "always exactly one"
+        },
+        {
+          "hr": "samo LE boce",
+          "en": "LE bottles only"
+        }
+      ],
+      "correct": 1,
+      "why": {
+        "hr": "Više od šest zamućuje nepce; redoslijed blago→jako i voda između štite usporedbu.",
+        "en": "More than six blurs the palate; milder→bolder order and water between protect comparison."
+      }
     }
   ]
 }

@@ -2,9 +2,9 @@
 
 ## Suvremeni vodič kroz cigaru, čašu i društvo
 
-*Radni draft za lekturu i tisak · 2026*
+*HR rukopis zamrznut (prijevod s EN) · 2026-07-30*
 
-> **Napomena uz draft (za lekturu):** cjeloviti rukopis oko 32 000 riječi. Jezgra su dijelovi I–IV; Dodatak drži Bridgesov rahli slog (kartice, epigrami, vinjete) za otprilike 100 tiskanih strana u malom formatu. Strojno umnožene serije u dodacima (kartice, scenariji, vježbe, eseji) svedene su na jedinstveni sadržaj; preostalo ponavljanje figure „gospodin” namjeran je Bridgesov ritam, ne pogreška. Datoteka `mala-knjiga-pusackog-bontona.md` ostaje kratki kanon aplikacije.
+> **Izvor:** engleski rukopis `HOW-TO-BE-A-GENTLEMAN-AT-THE-TABLE-DRAFT.md` (zamrznut 2026-07-30). Ovo je književni HR prijevod (ne kalk), usklađen sa strukturom EN-a nakon reza dodatka. Kanon: *cigara* (padeži), *pepeo*, *domaćin*, *dim* (brojivi gutljaj) vs *draw* (otpor), bez infinitivnih lanaca. App kratki kanon: `mala-knjiga-pusackog-bontona.md`.
 
 ---
 
@@ -19,17 +19,19 @@ Onima koji znaju da je dim samo izgovor da se sjedne — i onima koji još uče 
 
 > Bonton nije policija ukusa. To je način da drugi udišu lakše dok ti uživaš.
 
-> Gospodin je osoba koja život drugih čini ugodnijim. — parafrazirano iz duha klasičnih vodiča uljudnosti
+> Gospodin je osoba koja život drugih čini ugodnijim. — parafraza u duhu klasičnih vodiča uljudnosti (nije provjeren doslovni citat)
 
 ---
 
 ## Kako čitati ovu knjigu
 
-Ovo nije ispit. Nema ocjena, nema „prave” marke, nema kazne za krivi rez.
+Ovo je mali priručnik, ne ispit. Nema ocjena, nema „prave” marke, nema kazne za krivi rez.
 
-Čitaj je kao razgovor za stolom: možeš stati, vratiti se, preskočiti poglavlje o povijesti ako te više zanima što reći kad gost odbije cigaru. Forma je namjerno rahla — kratka pravila, poneka vinjeta, poneka izreka — po uzoru na one male knjige bontona koje se čitaju u jednom dahu, a pamte se duže.
+Obećanje je jednostavno: ako ti je večer za stolom ikad izgledala kao ispit — marki, izdržljivosti, tko više zna — ove stranice postoje da drugi udišu lakše dok ti uživaš. Drži je nadohvat ruke. Čitaj je polako, komad po komad: jedno poglavlje prije gostiju, jednu vinjetu kad nešto krene krivo, tri zapovijedi kad imaš samo minutu.
 
-Gdje piše *gospodin*, misli se na figuru uljudnosti, ne na spolni ispit. Dobra družbenica, dobar gost, dobar domaćin — ista mjera.
+Čitaj je kao razgovor za stolom: možeš stati, vratiti se, preskočiti poglavlje o povijesti ako te više zanima što reći kad gost odbije cigaru. Forma je namjerno rahla — kratka pravila u ravnoteži s minijaturnim pričama — po uzoru na one male knjige bontona koje se pamte duže nego što traje čitanje.
+
+Gdje piše *gospodin*, misli se na figuru uljudnosti, ne na spolni ispit. Čitatelj kojem pišemo jest jedna osoba odjednom: gost ili domaćin koji želi da večer sjedne. Dobra družbenica, dobar gost, dobar domaćin — ista mjera.
 
 Gdje piše o tehnici, to je dovoljno da ne izgledaš kao snob i da ne uništiš tuđu večer. Detaljni udžbenik o humidorima i ljestvicama snage ostaje drugdje. Ovdje je riječ o odnosima.
 
@@ -55,7 +57,7 @@ Ako zapamtiš samo troje, bit će dovoljno: pitaj prije plamena, ostavi prostor,
 8. Rez, paljenje, pepeo  
 9. Tempo i crni pepeo  
 10. Humidor kao prostor gostoprimstva  
-11. Pet maherskih savjeta koje gospodin ne nameće  
+11. Maherski savjeti koje gospodin ne nameće  
 
 ### III. Stol i društvo
 12. Nuditi i dijeliti  
@@ -74,6 +76,10 @@ Ako zapamtiš samo troje, bit će dovoljno: pitaj prije plamena, ostavi prostor,
 ### Stražnji materijal
 - Izvori i napomene · Rječnik stolnih riječi · Zahvale · Napomena za lekturu  
 
+### Dodatak (sveden)
+- A. Proširenja, međupoglavlja, popisi, vinjete  
+- B. Kartice, scenariji, stolne rečenice  
+
 ---
 
 # I. Duh i prostor
@@ -85,6 +91,8 @@ Ako zapamtiš samo troje, bit će dovoljno: pitaj prije plamena, ostavi prostor,
 ## 1. Što je gospodin za stolom
 
 Gospodin nije onaj tko najglasnije zna ime vitole. To je onaj uz kojega drugi dišu lakše.
+
+Zamisli drugu večer: kutija se otvara, zrak se napuni listom i plinom upaljača, a netko već ispravlja gostov rez prije prvog pepela. Stol se stegne. Nitko ne kaže riječ *ispit*, ali svi je osjete. Bonton postoji za taj trenutak — ne da ga dobiješ, nego da ga olabaviš.
 
 Bonton pušenja nije katalog zabrana. To je gostoprimstvo s dimom u sredini — i s mjerom da dim ne postane sredstvo vlasti.
 
@@ -190,7 +198,7 @@ Gospodin (i dobra družbenica) ne žuri dimom da dokaže snagu. Žuri rijetko �
 
 ### Ritam
 
-Kratka povlačenja, pauze između. Crni, vrući pepeo nije trofej. To je upozorenje da si pretjerao s dokazivanjem.
+Kratki dimovi, pauze između. Crni, vrući pepeo nije trofej. To je upozorenje da si pretjerao s dokazivanjem.
 
 Uobičajeno je držati pauzu u redu veličine minute — dovoljno da list diše, a ti da čuješ rečenicu do kraja. Nema magičnog broja koji te čini ozbiljnim. Ima samo ritam koji ne pretvara stol u utrku.
 
@@ -297,7 +305,7 @@ Kad netko kaže „cigara je oduvijek bila gospodska”, mudro je nasmiješiti s
 
 ### Drugi gutljaj: trgovina i putovanja
 
-List je putovao brodovima, lukama, carinama i pričama. Uobičajeno je reći da su kolonijalni putevi oblikovali i okus i mit. Gospodin ne mora romantizirati carstvo da bi uživao u večeri. Može priznati da je povijest zamršenija od naljepnice.
+List je putovao brodovima, lukama, carinama i pričama. Gospodin ne mora romantizirati carstvo da bi uživao u večeri. Može priznati da je povijest zamršenija od naljepnice.
 
 Mudro je znati da „kubanski mit” nije jedina priča na stolu. Mnogi stolovi danas žive od znanja i rada iz više zemalja. Poštovanje ide prema ljudima koji rade list — ne prema floskuli.
 
@@ -377,7 +385,7 @@ Gospodin ne kaže „Maduro je za prave”. Kaže: „Ova je tamnija i sporija �
 
 ### Povlačenje, ne drama
 
-Dobro povlačenje olakšava večer. Loše povlačenje nije moralni pad. To je tehnički trenutak. Gospodin to rješava tiho — ili pita domaćina — bez javne dijagnoze tuđe cigare.
+Dobar draw olakšava večer. Loš draw nije moralni pad. To je tehnički trenutak. Gospodin to rješava tiho — ili pita domaćina — bez javne dijagnoze tuđe cigare.
 
 ### Precepti
 
@@ -387,7 +395,7 @@ Gospodin nudi format kao vrijeme, ne kao status.
 
 Gospodin ne rangira omote kao karaktere ljudi.
 
-Gospodin ne dijagnosticira tuđe povlačenje naglas, osim ako ga pitaju.
+Gospodin ne dijagnosticira tuđi draw naglas, osim ako ga pitaju.
 
 ### Vinjeta: ispit iz boje
 
@@ -479,7 +487,7 @@ Tempo je bonton pretvoren u ritam disanja.
 
 ### Pauze
 
-Kratka povlačenja. Pauze između. Uobičajeno je ciljati otprilike minutu — ne kao metronom, nego kao podsjetnik da nisi u utrci.
+Kratki dimovi. Pauze između. Uobičajeno je ciljati otprilike minutu — ne kao metronom, nego kao podsjetnik da nisi u utrci.
 
 Gospodin ne broji naglas. Broji tijelom: ako pepeo pocrni i užari se previše, uspori.
 
@@ -557,9 +565,9 @@ Gost u trgovini cijedi cigare „da vidi”. Prodavač se smiješi ukočeno. Lju
 
 ---
 
-## 11. Pet maherskih savjeta koje gospodin ne nameće
+## 11. Maherski savjeti koje gospodin ne nameće
 
-Ovo su savjeti za vlastitu praksu. Nude se samo ako te pitaju. Inače su tihi.
+Ovo su savjeti za vlastitu praksu — pet jezgrenih, pa još dva o tempu i želucu. Nude se samo ako te pitaju. Inače su tihi.
 
 ![Mitovi koje stol ne treba](images/notebooklm-studio/slides/10-page.png)
 
@@ -587,7 +595,7 @@ Vitola, piće, most, društvo, vrijeme. Sutradan ćeš biti pametniji bez da si 
 
 ### 6. Tempo je uljudnost
 
-Jedno do dva sporija povlačenja u minuti često drži list i razgovor. Prebrzo zagrijava duhan i sobu.
+Jedan do dva sporija dima u minuti često drži list i razgovor. Prebrzo zagrijava duhan i sobu.
 
 ### 7. Lakše na mirnom želucu
 
@@ -603,7 +611,7 @@ Ako te ne pitaju, puši svoje i budi ugodan. To je najteži maherski trik.
 
 Gospodin čuva trikove za trenutak kad su traženi.
 
-Gospodin ne drži seminar između dva povlačenja.
+Gospodin ne drži seminar između dva dima.
 
 Gospodin zna da je najbolji trik — biti lak za sjedenje.
 
@@ -641,13 +649,13 @@ Gospodin gleda u oči kad nudi. Ponuda nije bacanje predmeta preko stola.
 
 ### Što ne raditi
 
-Ne paliti tuđu cigaru bez pitanja — osim ako su rekli „upali mi”.
+Ne pali tuđu cigaru bez pitanja — osim ako su rekli „upali mi”.
 
-Ne ocjenjivati naglas tuđe povlačenje ili pepeo.
+Ne ocjenjuj naglas tuđi draw ili pepeo.
 
-Ne uzimati zadnju iz kutije domaćina bez ponude.
+Ne uzimaj zadnju iz kutije domaćina bez ponude.
 
-Ne pretvarati odbijenicu u raspravu o karakteru.
+Ne pretvaraj odbijenicu u raspravu o karakteru.
 
 ### Dijeljenje boce
 
@@ -933,7 +941,7 @@ Cigar lounge nije tvoja dnevna soba. Privatna terasa nije salon s cjenikom. Razl
 
 9. **Parfem.** U mjeri. Nepce drugih također degustira. Razgovor: ne pretvaraj svaku priču u svoju veću; prvo slušaj ritam sobe.
 
-10. **Samo cigar.** Cigareta i vape u cigar salonu često krše duh mjesta — čak i kad pravilo nije ispisano velikim slovima. Pitaj. Poštuj. Čitaj kućna pravila na ulazu.
+10. **Samo cigara.** Cigareta i vape u cigar loungeu često krše duh mjesta — čak i kad pravilo nije ispisano velikim slovima. Pitaj. Poštuj. Čitaj kućna pravila na ulazu.
 
 ### Što ne uvoziti slijepo
 
@@ -985,9 +993,9 @@ Ljubazno: „Okus dolazi s plamenom — evo, zapalimo i usporedimo.” Celofan n
 
 ### 1. Lizanje kape
 
-Gost navlaži kapu i poseže za kućnim rezačem. 
-Krivo: javna lekcija o higijeni. 
-Ljubazno: tiho ponuditi vlastiti čisti rezač ili pitati za dezinficirani kućni.
+Gost navlaži kapu — taman trag na listu — i poseže za kućnim rezačem još toplim od prethodne ruke.
+Krivo: javna lekcija o higijeni.
+Ljubazno: tiho ponudi vlastiti čisti rezač ili pitaj za dezinficirani kućni.
 
 ### 2. Zvučnik na mobitelu
 
@@ -1087,11 +1095,13 @@ Panatela na vjetru traži zaklon. Ne krivi format — prilagodi mjesto. Ili form
 
 ### Terasa i Jadran
 
+Zamisli jednu večer: sol na usni, pepeo se na buri hladi brže nego u sobi, tuđi veš na konopu ispod hvata ono što prvi dim pošalje gore. To je ispit terase — ne ime na bendu.
+
 Na Jadranu vjetar s mora i vjetar s kopna nisu ista večer. Gospodin to osjeti u prvih pet minuta. Premjesti stol, zakloni se, skrati format — sve je uljudnije od tvrdoglavosti.
 
 Terasa iznad tuđeg balkona: dim ide gore. Biraj sat i smjer. „Samo malo” često nije malo onome pod tobom.
 
-U kafiću s vanjskim stolovima: ako je pepeljara na stolu, to je signal — ne blanko dozvola za cigar-bombu uz obiteljski stol do tebe. Pitaj osoblje kad nisi siguran. Mjera vrijedi i gdje je dopušteno.
+U kafiću s vanjskim stolovima: ako je pepeljara na stolu, to je signal — ne blanko dozvola za tešku cigaru uz obiteljski stol do tebe. Pitaj osoblje kad nisi siguran. Mjera vrijedi i gdje je dopušteno.
 
 ### U prolazu
 
@@ -1281,9 +1291,9 @@ Gospodin zna da je tišina također gostoprimstvo.
 
 ---
 
-# Dodatak: proširenja, arhetipovi i vježbe
+# Dodatak A: proširenja, popisi i vinjete
 
-*(U tisku rasporediti uz poglavlja ili kao kartice / margine.)*
+*(U tisku: margine, kartice ili uz odgovarajuća poglavlja. Ostaje samo gdje ima nova scena, popis ili zvučna rečenica — ne ponavljanje dijelova I–IV.)*
 
 ## Proširenje uz I. dio — još o duhu stola
 
@@ -1337,7 +1347,7 @@ Skromnost je kad ne fotografiraš svoj pepeo kao da je umjetnički performans �
 
 **Samo jaka vitola u kući.** Iskreno: „Nemam blažu, ali evo kraće — ili otvorimo samo čašu.” Bolje od tihe improvizacije koja završi nelagodom.
 
-**Cigar i cigareta na istom stolu.** Prvi koji pita za prozor nije smetalo. To je domaćin zraka.
+**Cigara i cigareta na istom stolu.** Prvi koji pita za prozor nije smetalo. To je domaćin zraka.
 
 **Telefon domaćina.** Ako mora uzeti, ugasi ili ostavi u pepeljari s riječju. Ne nestani u hodnik s gorećim stubom kao da će sam čuvati kuću.
 
@@ -1381,7 +1391,7 @@ Glasnije, više čaša, više rizika od pretjerivanja. Gospodin tada čuva sobu:
 
 **Mit o geniju s cigarom.** Poster voli dim u ustima velikog čovjeka. Stol voli malog čovjeka koji ne pušta dim u tuđe oči.
 
-**Zanat danas.** Obiteljske priče, tvornice, klubovi — sve to može biti lijep kontekst. Ne mora biti predavanje između prvog i drugog povlačenja.
+**Zanat danas.** Obiteljske priče, tvornice, klubovi — sve to može biti lijep kontekst. Ne mora biti predavanje između prvog i drugog dima.
 
 ### Anatomija: još za stol
 
@@ -1423,7 +1433,7 @@ Gospodin ne puši „da stigne” dok drugi tek sjede.
 
 Gospodin ne koristi dim kao način da ne govori cijelu večer — osim ako je dogovoreno da je tišina željena. Čak i tada, pepeo i prostor vrijede.
 
-Gospodin ne gleda u sat svako povlačenje. Gleda u ljude.
+Gospodin ne gleda u sat svaki dim. Gleda u ljude.
 
 Gospodin ako mora stići na vlak, kaže to na početku i bira kraći format. Bolje nego bježanje usred trećine.
 
@@ -1705,194 +1715,6 @@ Gospodin zna stati. To je teže od nastaviti.
 
 ---
 
-## Još precepta — Duh (kataloški niz)
-
-Gospodin ne dolazi gladan pažnje.
-
-Gospodin ne odlazi gladan zahvale — ali je ne iznuđuje.
-
-Gospodin ne pretvara neznanje gosta u svoj pozornični trenutak.
-
-Gospodin ne koristi tuđu prvu cigaru kao materijal za nastup.
-
-Gospodin ne „uči” ljude koji nisu došli na sat.
-
-Gospodin ne mjeri večer lajkovima.
-
-Gospodin ne pušta da ego naruči za cijeli stol.
-
-Gospodin ne zaboravlja imena ljudi, a pamti imena kutija.
-
-Gospodin ne prekida zdravicu dimom.
-
-Gospodin ne kašlje u tuđu čašu i ne šali se o tome.
-
-Gospodin ne sjedi tako da sav dim ide u jednog čovjeka.
-
-Gospodin ne drži cigaru kao pokazivač dok propovijeda.
-
-Gospodin ne koristi pepeo da crta po stolu.
-
-Gospodin ne ostavlja celofan kao konfeti.
-
-Gospodin ne grebe prsten noktom uz tuđu hranu.
-
-Gospodin ne priča o novcu dok nudi dar.
-
-Gospodin ne priča o politici glasno samo zato što „dim opušta”. Dim ne opušta svakoga jednako.
-
-Gospodin ne traži da svi dijele njegov humor o dimu.
-
-Gospodin ne zanemaruje znakove umora jer „još ima u kutiji”.
-
-Gospodin ne zaboravlja da je tišina također sadržaj večeri.
-
-Gospodin ne mora biti zabavan. Mora biti podnošljiv. Zabavan je bonus.
-
-Gospodin ne dolazi samo zbog kutije ako su ljudi došli zbog njega — i obrnuto: ne dolazi samo zbog ljudi pa zanemari osnovnu mjeru dima.
-
-Gospodin ne koristi „bonton” kao batinu. Batina kojom udaraš nije bonton.
-
-Gospodin ne citira ovu knjigu za stolom. Živi je.
-
----
-
-## Još precepta — Prostor
-
-Gospodin ne pali uz dječji rođendan jer „samo vani”.
-
-Gospodin ne pali u liftu. To nije mit — to je loša ideja.
-
-Gospodin ne pali u kupaonici kao da je ventilacija filozofija.
-
-Gospodin ne pali uz otvoreni prozor u tuđi stan „jer tehnički izlazi van”.
-
-Gospodin ne pregovara s trudnicama, bolesnima, astmatičarima o „malo dima”. Tu nema debata. Tu ima prostor.
-
-Gospodin ne koristi tuđe „ok” iz neugode kao pravi pristanak. Čita tijelo.
-
-Gospodin ne postavlja pepeljaru na knjigu, na laptop, na tuđi kaput.
-
-Gospodin ne pali uz zavese koje će mirisati tjedan dana bez da pita domaćina.
-
-Gospodin u tuđem domu pita i za pepeo: gdje, kako, što nakon.
-
-Gospodin ne pretpostavlja da je „pušačka večer” dogovorena ako piše samo „dođite”.
-
----
-
-## Još precepta — Ritam
-
-Gospodin ne puši u ritmu nervoze.
-
-Gospodin ne puši u ritmu dokazivanja.
-
-Gospodin ne puši da popuni tišinu koja je bila ugodna.
-
-Gospodin ne žuri zadnju trećinu jer „mora završiti”. Smije stati.
-
-Gospodin ne gleda tuđi pepeo kao sekundar.
-
-Gospodin ne uspoređuje tempo kao da je utrka.
-
-Gospodin ne kaže „opuštam se” dok listom napada kao da gasi požar.
-
-Gospodin ne nestaje u ekranu između dva povlačenja.
-
-Gospodin ne drži monolog dok drugi ne mogu ni gutljaj ubaciti.
-
-Gospodin zna da je dobra večer često sporija od dobre priče o večeri.
-
----
-
-## Još precepta — Riječi
-
-Gospodin ne kaže „ne razumiješ” o ukusu.
-
-Gospodin ne kaže „žene ne puše ovo” kao da je biologija marka.
-
-Gospodin ne kaže „muškarac mora” o dimu. Ne mora.
-
-Gospodin ne koristi umanjivanje: „samo sam se šalio” nakon uvredljive opaske o tuđem izboru.
-
-Gospodin ne traži oproštaj tako da ponovi uvredu.
-
-Gospodin hvali konkretno i kratko.
-
-Gospodin pita otvoreno i zatvara temu kad čuje odgovor.
-
-Gospodin ne „pobjeđuje” u raspravi o listu. Može ostati neslaganje. Večer može živjeti.
-
-Gospodin ne koristi strane izraze da bi zatvorio vrata. Ako kaže *draw*, može reći i „povlačenje”.
-
-Gospodin ne ispravlja izgovor marki kao ulazni ispit.
-
----
-
-## Još o povijesti — kratki eseji bez fusnota
-
-### O mitu „uvijek gospodsko”
-
-Mnogo toga što danas zovemo gospodskim bilo je nekad obično, kasnije luksuzno, zatim nostalgija. Gospodin ne treba lažnu genezu. Dovoljna mu je sadašnja mjera.
-
-### O putovanju lista
-
-List je putovao dalje od većine naših predaka. Uz put je skupljao priče, poreze, zabrane, mode. Gospodin može voljeti priču — i može je skratiti kad gosti žele mir.
-
-### O „tisućama ruku”
-
-Zanat je kolektiv. Egomanija je individualna. Kad god pomisliš da si „zaslužio” večer samo time što si platio kutiju, sjeti se da si platio i tuđi rad. Poštovanje je tiše od zdravice.
-
-### O posterima
-
-Poster s cigarom prodaje stav. Stol prodaje vrijeme. Gospodin kupuje vrijeme pažljivije.
-
-### O modernom stolu
-
-Danas za stolom sjede ljudi koji su učili s YouTubea, iz trgovine, od ujaka, od partnera, sami. Nema jednog ispravnog ulaza. Ima mnogo ispravnih načina da ne budeš težak.
-
----
-
-## Još o anatomiji — praksa bez kataloga
-
-Kad biraš za gosta, biraj snagu i vrijeme prije marke.
-
-Kad biraš za van, biraj zaklon prije egomanije formata.
-
-Kad biraš za sebe nakon teškog dana, biraj blaže nego misliš. Umorno tijelo laže o izdržljivosti.
-
-Kad ne znaš, reci da ne znaš i pitaj u trgovini. Osoblje češće pamti ljubaznost nego tvoje znanje.
-
-Kad znaš, nemoj sve znati naglas.
-
----
-
-## Još o rezu i pepelu — male greške
-
-Prevelik rez. Prebrzo paljenje. Pretvrd pepeo koji se trese. Stubanje. Pepeo u biljci. Prsten pod stolom. Upaljač na salveti. Rezač u ustima. Vlaženje kape. Dijagnoza tuđeg povlačenja. Aplauz za toranj pepela. Sramota za pad tornja.
-
-Sve su to male stvari. Zato se vide.
-
----
-
-## Još o tempu — vježba
-
-Jedna večer pokušaj ovo: između povlačenja stavi čašu, pogledaj sugovornika, odgovori na rečenicu, tek onda dim. Ako pepeo pocrni, uspori još. Ako razgovor umre, možda nije dim kriv — možda ego.
-
----
-
-## Još o humidoru — granice
-
-Humidor nije muzej u kojem si kustos tuđe zbirke.
-
-Humidor nije buvljak.
-
-Humidor nije laboratorij za tuđe prste.
-
-Humidor je ostava. Ostave se ne prekapaju.
-
----
-
 ## Deset večeri — arhetipovi (kratko)
 
 1. **Tihi solo** — mjera bez publike. 
@@ -1942,7 +1764,7 @@ Degustacija je dogovor. Druženje je dogovor. Ne miješaj ih bez riječi.
 
 ---
 
-## Još o pairingu — što reći kad ne paše
+## Još o sparivanju — što reći kad ne paše
 
 „Meni ovo večeras ne sjeda — probajmo drugačije.” 
 „Idemo vodom i dalje.” 
@@ -2007,7 +1829,7 @@ Ako zapamtiš samo ovaj niz, salon te neće mrziti.
 6. Netko nestane na telefon → vrati se s isprikom, ne s egom. 
 7. Netko fotka bez pitanja → „pričekaj, pitaj X”. 
 8. Netko ispravlja rez → „hoćeš da ti pokažem nasamo?” 
-9. Netko nudi povlačenje → „hvala, imam svoju”. 
+9. Netko nudi dim → „hvala, imam svoju”. 
 10. Netko cijedi list → „pitajmo što je spremno”. 
 11. Netko moralizira o dodacima → „reci što osjećaš u čaši”. 
 12. Netko grije brandy nad plamenom → ponudi čašu bez predstave. 
@@ -2191,14 +2013,6 @@ Gospodin dogovara očekivanje. Neočekivani maraton umara i one koji vole dim.
 
 ---
 
-## O kiši
-
-Kiša nije neprijatelj. Kiša je sito: tko ostaje, tko skraćuje, tko seli. 
-Gospodin ne forsira heroizam pod olujom. 
-Gospodin smije reći: „Večeras čaša unutra.”
-
----
-
 ## O jutru poslije
 
 Miris na jakni. Pepeo u džepu. Poruka koju nisi poslao. 
@@ -2261,16 +2075,6 @@ Gospodin čita izvore kao gost: uzima što je ljubazno, ostavlja što je tuđe.
 
 ---
 
-## Za lektora — dodatne napomene
-
-- Uniformirati pisanje tuđica (*wrapper* / omot) — odluka urednika. 
-- Provjeriti ponavljanje „Gospodin” — namjerno kao Bridgesov ritam; prorijediti ako prelom traži zrak. 
-- Epigrami mogu ići kao bočne bilješke u tisku. 
-- Vinjete mogu dobiti ilustracije / vinjete u margini. 
-- Ne dodavati rangiranje marki u lekturi „radi konkretnosti”.
-
----
-
 ## Posljednji monolog (kratki)
 
 Ako zapališ sutra i sjetiš se samo ovoga — pitaj prije plamena, ostavi prostor, završi čistije — ova je knjiga obavila posao.
@@ -2283,80 +2087,6 @@ To je način da drugi udišu lakše dok ti uživaš.
 Idi za stol. 
 Budi lak. 
 Ugasi na vrijeme.
-
----
-
-## Dodatni precepti — zbirka za prelom (punjenje rahlog sloga)
-
-Gospodin ne dolazi s potrebom da bude učitelj.
-
-Gospodin ne odlazi s potrebom da bude nezaboravan.
-
-Gospodin ne zaboravlja vodu.
-
-Gospodin ne zaboravlja zahvalu.
-
-Gospodin ne zaboravlja da je pepeo istina.
-
-Gospodin ne zaboravlja da je ego lažljiv.
-
-Gospodin ne zaboravlja ime gosta.
-
-Gospodin ne pamti cijenu da bi je rekao.
-
-Gospodin ne pali da bi bježao od razgovora koji treba voditi.
-
-Gospodin ne koristi dim kao zid.
-
-Gospodin ne koristi čašu kao oružje.
-
-Gospodin ne koristi pravila kao oklop.
-
-Gospodin skida oklop na vratima.
-
-Gospodin sjeda kao netko tko smije stati.
-
-Gospodin ustaje kao netko tko zna zahvaliti.
-
-Gospodin ne ostavlja nered kao potpis.
-
-Gospodin ne ostavlja sramotu kao šalu.
-
-Gospodin ne ostavlja tuđi miris kao da je usluga.
-
-Gospodin ne ostavlja telefon na zvučniku.
-
-Gospodin ne ostavlja savjet gdje nije tražen.
-
-Gospodin nudi izbor.
-
-Gospodin nudi izlaz.
-
-Gospodin nudi vodu.
-
-Gospodin nudi tišinu kad treba.
-
-Gospodin nudi riječ sutradan.
-
-Gospodin prima „ne” bez drame.
-
-Gospodin prima pohvalu bez govora.
-
-Gospodin prima kritiku nasamo.
-
-Gospodin prima gosta kao čovjeka, ne kao učenika.
-
-Gospodin prima domaćina kao čovjeka, ne kao servis.
-
-Gospodin zna da je najbolji stol onaj za kojim se diše.
-
-Gospodin zna da je najbolji dim onaj koji ne tjera ljude.
-
-Gospodin zna da je najbolje piće ono koje gradi most.
-
-Gospodin zna da je najbolje pravilo ono koje se ne mora vikati.
-
-Gospodin zna da je najbolji kraj — čist.
 
 ---
 
@@ -2378,12 +2108,6 @@ Gospodin zna da je najbolji kraj — čist.
 ## Završna bilješka autora drafta
 
 Ovaj tekst namjerno je rahao i preceptivan — po uzoru na male knjige uljudnosti koje se čitaju u jednom dahu. Strojno umnožena ponavljanja svedena su na jedinstveni sadržaj; ostao je ritam kratkih precepta. U tisku će bijeli prostor, vinjete i epigrami nositi dio duljine stranice. Lektor neka ne zbija slog u udžbenik: ritam je dio sadržaja.
-
----
-
-# Dodatak C: dulji eseji i večernje slike
-
-*Ovi tekstovi drže dah knjige: manje kataloga, više stola.*
 
 ---
 
@@ -2417,161 +2141,15 @@ Gospodin ne mora zvati večeru „ritualom”. Dovoljno je da je ne pretvori u u
 
 ---
 
-## Esej: Mit, poster i stol
-
-Poster voli dim u ustima velikog imena. Stol voli malog čovjeka koji ugasi na vrijeme.
-
-Mitovi o herojima s cigarama korisni su za razglednicu. Za večer su manje korisni od pepeljare. Gospodin smije voljeti mit. Ne smije njime opravdavati neuljudnost.
-
-Isto vrijedi za „autentičnost”. Riječ je teška. Lako postaje batina. Bolje: „Ovo mi večeras sjeda.” I „Ono mi je drugačije.” Razlika nije uvreda.
-
-Kad se pojavi rasprava o istom imenu na različitim kutijama, gospodin objašnjava povijest tržišta bez da ponižava kupca. Objašnjenje je usluga. Pobjeda je ego.
-
----
-
-## Esej: Voda, led, tišina
-
-Voda je alat. Nije sramota. Nije „za slabiće”. Za stolom s dimom voda često odradi više posla od mudre rečenice.
-
-Led je odluka. Ne dogma. Ne grijeh. Svjesno da ili ne.
-
-Tišina je dio rituala. Ne rupa. Tko svaku tišinu puni dimom ili monologom, često bježi od stola koji bi mogao biti dobar.
-
-Tih naljev nije estetika za Instagram. To je poštovanje kruga koji sluša miris.
-
-Ne umači list u čašu. Ne grij brandy nad upaljačem. Ne pretvaraj čašu u laboratorij ako su ljudi došli na druženje. Ako su došli na degustaciju — reci to na ulazu. Dogovor spašava očekivanja.
-
----
-
-## Esej: Domaćin koji nudi ljestvicu
-
-Dobar domaćin nije onaj s najpunijom kutijom. To je onaj s najjasnijim izlazima.
-
-Ljestvica: blago → srednje → (možda) jače. 
-Izlaz: voda, kraća sesija, „stani kad želiš”, WC, zrak.
-
-Mentorski ton samo na upit. Inače gostoprimstvo. 
-Ispravke nasamo. 
-Nelagoda od nikotina bez srama. 
-Greške tiho.
-
-Ako gost ode i kaže „ugodno mi je bilo”, domaćin je pobijedio. Ako ode i kaže „naučio sam, ali…”, mentorstvo je bilo ispit.
-
----
-
-## Esej: Salon nije dnevna soba
-
-Cigar lounge ima domaćina. Domaćin ima očekivanja. Gospodin ih čita.
-
-Pozdrav. Mjesto. Higijena rezača. Dim gore. Telefon vani. Pepeo dostojanstven. Savjet na upit. Svoju bocu — ako smiješ — dijeli. Parfem u mjeri. Cigar, ne cigareta/vape, ako domaćin tako živi.
-
-Privatna terasa nije salon s cjenikom. Tu vrijedi gostoprimstvo, ne uvoz tuđih napojnica kao domaćeg zakona.
-
-Strogi salon i opuštena terasa nisu ista soba. Gospodin ne nameće krutost prijateljskoj večeri — niti kaos mjestu koje živi od tišine.
-
----
-
 ## Esej: HR terasa, Jadran, susjed
 
 Kod nas dim često živi na terasi. Vjetar s mora nije vjetar s kopna. Dim ide gore. Susjed ispod nije teorija.
 
-Legalnost nije ljubaznost. Znak „pušenje dopušteno” nije blanko za cigar-bombu uz obiteljski stol.
+Legalnost nije ljubaznost. Znak „pušenje dopušteno” nije blanko za tešku cigaru uz obiteljski stol.
 
 U kafiću pitaj kad je granica mutna. U zgradi biraj sat i smjer. Na Jadranu ne podcjenjuj buru. Na travnjaku ne pepeluj. U prolazu ne zauzimaj tuđi zrak.
 
 Gospodin vani čita vjetar prije ega.
-
----
-
-## Esej: Poklon koji otvara razgovor
-
-Dobar poklon ne zatvara usta cijenom. Otvara ih kontekstom.
-
-Bilješka o snazi i formatu. Boca koju bi i sam pio. Rezač koji radi. Poruka sutradan. Zadnja četvrtina boce podijeljena dok je živa.
-
-Duty-free ulov bez mjere često kaže manje od male kutije s misli. 
-Cijena naglas ubija dar. 
-Pola popušene zbunjuje. 
-Računovodstvo uzvrata nije bonton — kružnica jest.
-
----
-
-## Dvadeset večernjih slika (proza)
-
-### 1
-Kiša. Terasa mokra. Domaćin kaže: „Večeras čaša unutra.” Nitko ne gubi obraz. Svi dobivaju večer.
-
-### 2
-Prva cigara gosta. Rezač težak. Domaćin priča o moru dok list nalazi ritam. Ispit nestaje. Ostaje stol.
-
-### 3
-WhatsApp zvučnik. Netko ustaje: „Trideset sekundi.” Vraća se. Stol diše.
-
-### 4
-Snob ispravlja paljenje. Treći pita za film. Snob ostaje bez pozornice. Kasnije, nasamo, jedna blaga rečenica.
-
-### 5
-Boca „za jednog dana” napokon otvorena. Okus nije mit. Razgovor jest. Mit umire lijepo.
-
-### 6
-Gost blijedi. Voda. Zrak. Kraj dima. Sutra nema mema. Ima zahvalu.
-
-### 7
-Bura. Panatela pati. Stol se seli iza zida. Format se skraćuje. Ego uči geografiju.
-
-### 8
-Telefon gore. Jedno lice: ne. Kadar bez lica — ili bez fotke. Povjerenje ostaje.
-
-### 9
-U humidoru netko cijedi. „Pitajmo što je spremno.” Ruke miruju. Savjet kreće.
-
-### 10
-Isto ime, druga kutija. Objašnjenje bez „lažno”. Večer bez sudnice.
-
-### 11
-Poslovni balkon. Šef nudi ulazni ispit. Netko kaže: „Večeras samo kava.” Karakter nije bon.
-
-### 12
-Dva para. Jedan puši. Pepeljara ne dijeli stol na čiste i nečiste. Dim odmiče. Razgovor ostaje zajednički.
-
-### 13
-Gost ne pije alkohol. Nema prazne čaše „za atmosferu”. Ima vodu, dim po dogovoru, isti razgovor.
-
-### 14
-Neravnomjerno gorenje. Smiješak. Okret. Nastavak priče. Predavanje ostaje u džepu.
-
-### 15
-Zadnja u kutiji. Domaćin nudi srodnu. Napetost nestaje. Ego ne broji centimetre.
-
-### 16
-Hotel balkon. Dim u tuđe zavjese. Ugasi. Označeno mjesto. Hotel pamti mirise.
-
-### 17
-Švedski stol. Dim uz salatu. Odmak. Hrana nije tvoja degustacija.
-
-### 18
-Slavlje. Treća se nudi. Domaćin nudi izlaz. Sutra netko zahvali što nije morao biti heroj.
-
-### 19
-Solo. Nema publike. Ipak pepeljara. Ipak čist kraj. Navika bez aplauza.
-
-### 20
-Odlazak u jedanaest. Najavljen. Kraći format. Zahvala. Povratak ostaje moguć.
-
----
-
-## Vježbanka rečenica (kvalitetni niz, bez brojeva do 50)
-
-Umjesto „Moraš” — „Želiš li?” 
-Umjesto „Pravi znalac” — „Meni pomaže ovo…” 
-Umjesto „To se ne radi” — „Hoćeš li da ti pokažem nasamo?” 
-Umjesto „Još jednu” kao naredba — „Imamo vremena za kraću — ili stanemo?” 
-Umjesto cijene naglas — „Mislim da će sjesti uz ovo.” 
-Umjesto „Moje bolje” — „Ovo mi večeras paše.” 
-Umjesto „Ne smeta” — „Smeta li?” 
-Umjesto „Ne budi osjetljiv” — „Premjestit ću dim.” 
-Umjesto spolnih floskula — ništa; pusti ljude da biraju. 
-Umjesto ispravke pred svima — tišina, pa kasnije nasamo.
 
 ---
 
@@ -2590,442 +2168,9 @@ Umjesto ispravke pred svima — tišina, pa kasnije nasamo.
 
 ---
 
-## Kataloški precepti — zbijeni, bez mehaničkog brojanja
+# Dodatak B: kartice i scenariji za rahli prelom
 
-Gospodin primijeti tko žuri; ne zapali dok netko bira mjesto; ne zauzima kut da bi tjerao druge u dim; gleda čaše; čuje „ne” iz prvog puta.
-
-Gospodin zna stati; ne forsira treću; drži vodu; skraćuje format; ne mjeri uspjeh opušcima.
-
-Gospodin nudi izbor; pokazuje WC; drži pepeljaru; ne nestaje u telefonu; šalje zahvalu.
-
-Gospodin u salonu pita za mjesto; ne liže kapu; ne pali zvučnik; ne traži povlačenje; podržava lokal kupnjom.
-
-Gospodin vani čita vjetar; ne pepeljuje travnjak; ne puši u redove; pamti da dim ide gore; ne podcjenjuje buru.
-
-Gospodin ne stuba; ne sramoti; ne snima bez suglasnosti; ne nameće savjet; ne rangira markama ljude.
-
-Gospodin nudi izlaz; ostavlja prostor; završava čistije; ide na vrijeme; vraća se zbog lakoće, ne zbog egomanije.
-
----
-
-## Epigrami — izbor za margine
-
-- Dim je gost; gosti ne markiraju zidove. 
-- Pepeo je istina koju ego ne može prepraviti. 
-- Ponuda bez izlaza nije ponuda. 
-- Najbolji stol je onaj za kojim se diše. 
-- Uljudnost se vidi kad nitko ne gleda marku. 
-- Tko žuri pepeo, žuri i ljude. 
-- Savjet bez pitanja često je pritisak. 
-- Stubanje je kratak put do gorkog kraja. 
-- Voda nije sramota; voda je alat. 
-- Status ostaje na vratima. 
-- List ne treba tvoje CV. 
-- Plamen voli strpljenje više nego talent. 
-- Humidor pamti ruke bez pitanja. 
-- Most se ne gradi monologom. 
-- Domaćin se mjeri izlazima koje nudi. 
-- Salon pamti one koji misle da ga posjeduju. 
-- Vjetar razotkriva ego. 
-- Poklon s cijenom na glasu već je naplaćen. 
-- Tuđi prostor nije tvoja teorija slobode. 
-- Zahvala je pepeo koji ne smrdi. 
-- Tko ode na vrijeme, ostavi mjesta za povratak. 
-- Tko se smije sebi, lakše podnese tuđi pepeo. 
-- Bonton kojim udaraš nije bonton. 
-- Najbolji kompliment: ugodno mi je bilo s tobom.
-
----
-
-## Još o pairingu — praksa bez dogme
-
-Traži most. Priznaj sudar. Najavi treset. Opiši više nego sudi. Ne proglašavaj pobjednika. Bilježi što je sjelo. Ne nameći svoj omiljeni par. Kava može pomoći i pretjerati. Slatko može ublažiti i zamutiti. Visoki ABV ponekad drži puniji dim — orijentir, ne zakon. „Glatko” smije živjeti; preciznije je bolje kad krug to želi. Cigara nije uvijek protagonist; ponekad vodi čaša, ponekad razgovor.
-
----
-
-## Još o maherskim savjetima (i dalje se ne nameću)
-
-Reži manje nego misliš. Zapali ravnomjerno pa pusti. Voda je alat. Skraćivanje nije poraz. Bilježi mostove. Okreni cigaru prije drame. Ne spajaj najteže na startu. Ako peče, uspori. Drži upaljač pun. Uči imena za zahvalu, ne za ego. Pitaj prije ladice. Ne štipaj. Ne stubaj. Ne demonstriraj retrohale svakoj publici. Ne gradi toranj pepela za aplauz.
-
----
-
-## Završna vježba prije tiska (za autora/lektora)
-
-Pročitaj knjigu naglas u jednom dahu. Gdje zaspeš od ponavljanja — prorijedi. Gdje ego zvuči — omekšaj. Gdje nedostaje HR kontekst — dodaj terasu, ne tip. Gdje uđe rangiranje marki — izbaci. Gdje uđe američka naplata reza kao norma — izbaci. Gdje citat nije provjeren — parafraziraj ili makni.
-
-Zatim sjedi za stol. Primijeni troje. Ostalo će doći.
-
----
-
-# Dodatak D: proširena poglavlja u Bridgesovom dahu
-
----
-
-## Još o duhu — stranice za prelom
-
-Gospodin ne dolazi da pobijedi.
-
-Gospodin dolazi da sjedi.
-
-Gospodin zna razliku.
-
-Kad pobjeđivanje uđe u sobu, dim postane oružje, čaša postane dokaz, pepeo postane trofej. Kad sjedenje uđe u sobu, dim postane pozadina, čaša most, pepeo sitnica.
-
-Zato ova knjiga inzistira na sitnicama. Sitnice su mjesto gdje ego najčešće padne.
-
-Gospodin ne mora biti savršen. Mora biti popravljiv. Popravlja tiho. Ne najavljuje kajanje kao predstavu. Ne traži oproštaj tako da ponovi uvredu.
-
-Gospodin ne koristi riječ „bonton” da bi nekoga utišao. Ako mora vikati pravila, već je izgubio stol.
-
-### Blagi humor na ego
-
-Egomanija voli reći: „Opuštam se.” Zatim puši kao da gasi šumski požar.
-
-Egomanija voli reći: „Nije skupo.” Zatim kaže cijenu.
-
-Egomanija voli reći: „Samo savjet.” Zatim drži seminar.
-
-Gospodin se smije tome — osobito u sebi. Humor koji udara samo druge nije humor. To je sport.
-
-### Još zlatnih pravila u varijacijama
-
-Ako bi gestu primio kao ljubaznost, ponudi je. 
-Ako bi je osjetio kao pritisak, odustani. 
-Ako ne znaš je li ljubaznost ili pritisak — pitaj. 
-Ako ni nakon pitanja ne znaš — odustani. Bolje manje nego previše.
-
----
-
-## Još o prostoru — stranice za prelom
-
-Prostor je prvi gost. Dim je drugi. Ti si treći. Ako zaboraviš redoslijed, ostali će te podsjetiti kašljem, zatvorenim prozorom ili tišinom.
-
-Gospodin ne pregovara sa znakom. 
-Gospodin ne pregovara s djecom. 
-Gospodin ne pregovara s ljudima kojima dim smeta „malo”. Malo je često dovoljno.
-
-U tuđem domu pitaj na ulazu ili ranije. WhatsApp poruka „smijemo li na terasu?” nije birokracija. To je gostoprimstvo unaprijed.
-
-U vlastitom domu reci jasno što vrijedi. Gosti nisu telepati. Jasnoća je ljubaznost.
-
-### Terasa kao moralni test
-
-Terasa izgleda kao sloboda. Zato na njoj ego voli skijati.
-
-Dim ide gore. Vjetar okreće. Susjed živi. Gospodin bira sat, smjer, duljinu. Ne bira samo vlastiti užitak.
-
-Ako moraš birati između savršenog pepla i dobrog susjedstva, biraj susjedstvo. Pepeo će pasti i tako.
-
----
-
-## Još o ritmu — stranice za prelom
-
-Ritam nije metronom. Ritam je pažnja.
-
-Pauza između povlačenja daje listu dah i tebi uši. Crni pepeo kaže da si pretjerao. Razgovor kaže da netko još nije gotov s rečenicom. Telefon kaže da si drugdje.
-
-Gospodin bira biti ovdje.
-
-Ako mora biti drugdje, kaže to. Ne glumi prisutnost dok skrola.
-
-### Nikamo ne moram — tumačenje
-
-„Nigdje mi se ne žuri” nije floskula za ljude koji stvarno žure. Ako žuriš, reci. Uzmi kraće. Ugasi ranije. Bolje od lažne beskonačnosti.
-
-Ljudi cijene granicu. Granica je gostoprimstvo prema sutra.
-
----
-
-## Još o riječima — stranice za prelom
-
-Riječi grade stol brže od marki.
-
-Pohvala bez rangiranja. 
-Pitanje prije savjeta. 
-„Ne” bez komentara. 
-Zahvala konkretna. 
-Isprika kratka.
-
-Riječi koje kvare: moraš, pravi znalac, to se ne radi (naglas, bez pitanja), cijena, moje bolje, ne budi osjetljiv, samo malo ne smeta.
-
-Gospodin ne mora govoriti savršeno. Mora govoriti tako da drugi ostanu.
-
-### Kako reći dosta
-
-„Stajem ovdje.” 
-„Bilo je dovoljno.” 
-„Hvala, dalje samo čaša.”
-
-Dobar domaćin čuje to bez računa o potrošnji poklona. List nije dug. Večer nije dug. Ljudi nisu dug.
-
----
-
-## Još o povijesti — stranice za prelom
-
-Povijest lista nije ispit. To je podsjetnik na skromnost.
-
-Prije kutije bio je obrt. Prije marke bile su ruke. Prije tvog stola bio je tuđi rad.
-
-Gospodin to može reći u pet rečenica. U šestoj već predaje.
-
-Mitovi o herojima, otocima i embargima zanimljivi su kad netko pita. Kad netko ne pita, mitovi su buka.
-
-Globalni stol nije pad. To je širi krug. Ulaz nije jedan. Ispravan način da ne budeš težak — jest.
-
-„Tisuće ruku” ne treba patetika. Treba da ne lomiš list kao olovku i da ne bacaš pepeo kao konfeti.
-
----
-
-## Još o anatomiji — stranice za prelom
-
-Tri sloja: omot, vezivo, punilo. Dovoljno za stol.
-
-Format je vrijeme. Reci ga. 
-Boja nije čin. 
-Povlačenje nije moral. 
-Celofan nije pečat statusa.
-
-Kad biraš za gosta, biraj snagu i vrijeme. 
-Kad biraš za van, biraj zaklon. 
-Kad biraš za umor, biraj blaže nego misliš.
-
-Ne znaš? Pitaj u trgovini. Ljubaznost se pamti dulje od tvoje stručnosti.
-
----
-
-## Još o rezu, plamenu, pepelu — stranice za prelom
-
-Ne liži cap prije zajedničkog rezača. 
-Ne reži zubima na tuđem stolu. 
-Ne pali kao baklja usred sobe. 
-Ne stubaj. 
-Ne treperi pepeo kao kaznu. 
-Ne gradi toranj za aplauz. 
-Ne ostavljaj prsten pod stolom. 
-Ne ostavljaj upaljač na salveti. 
-Ne dijagnosticiraj tuđe povlačenje naglas.
-
-Prsten: skidaj ili ne — po školi i kontekstu, ne po dogmi. Smeće nije škola.
-
-Pepeo kao štit — dok je stabilan. Crno i vruće — uspori.
-
-Na kraju: mirni kraj. Dostojanstvo. Pepeljara. Zahvala.
-
----
-
-## Još o humidoru — stranice za prelom
-
-Tuđi humidor nije muzej u kojem si kustos. 
-Nije buvljak. 
-Nije laboratorij za prste.
-
-Pitaj. Gledaj. Ne štipaj. Ne prekapaj. Ne premještaj „ljepše”.
-
-U trgovini pitaj što je spremno za tvoje vrijeme večeras. Kupi. Zahvali. Ostavi tuđe listove na miru.
-
-Kod kuće: gostova kutija može stajati odvojeno. Red je gostoprimstvo.
-
-Ovo nije 65/65. Ovo je povjerenje.
-
----
-
-## Još o nuditi — stranice za prelom
-
-Nuditi znači nuditi vrijeme. 
-Izbor: blago i srednje. 
-Duljina: 30 / 60 / 90. 
-Alat uz ponudu. 
-Odbijenica bez nagovaranja. 
-Svoja boca: dijeli. 
-Zadnja: ne uzimaj bez riječi. 
-Povlačenje tuđe: ne. 
-Blaga cigara: bez omalovažavanja. 
-Cijena: šuti.
-
-Ako primaš dar, zahvali i nemoj ga gušiti žurbom. Ako moraš ići, reci. Dar nije ispit hrabrosti.
-
----
-
-## Još o čaši — stranice za prelom
-
-Čista čaša pobjeđuje marku čaše. 
-Voda standard. 
-Natoči gostu prvo. 
-Tih naljev. 
-Ne umači. 
-Ne grij nad plamenom. 
-Led svjesno. 
-Ne ispitaj spori gutljaj. 
-Ne degustiraj nasilno ljude koji žele druženje.
-
-Ako gost ne pije alkohol, stol ne umire. Dim po dogovoru, voda, razgovor — dovoljno za civilizaciju.
-
----
-
-## Još o salonu — stranice za prelom
-
-Ulaz: pozdrav + mjesto. 
-Rez: higijena. 
-Lokal: kupnjom. 
-Dim: od lica. 
-Telefon: vani, bez zvučnika. 
-Pepeo: dostojanstvo. 
-Savjet: na upit. 
-Svoja boca: dijeli ili nemoj donositi. 
-Parfem: mjera. 
-Samo cigar ako lokal tako živi.
-
-Ne uvozi tuđe tipove kao domaći zakon. 
-Ne rezerviraj pet fotelja za duha. 
-Ne snimaj lica. 
-Zahvali osoblju.
-
----
-
-## Još o vani — stranice za prelom
-
-Leđa vjetru. 
-Mlazni upaljač daleko od kose i papira. 
-Putna pepeljara. 
-Ne travnjak. 
-Ne fontana. 
-Ne more kao smeće. 
-Širok luk oko redova. 
-Auto samo uz pristanak. 
-Balkon: dim gore. 
-Jadran: bura. 
-Restoran: pitaj. 
-Priroda: nije pepeljara. 
-Vjenčanje i sprovod: čitaj sobu dvostruko.
-
-Legalno ≠ ljubazno.
-
----
-
-## Još o poklonu — stranice za prelom
-
-Kontekst > cijena. 
-Bilješka o snazi. 
-Boca koju bi pio. 
-Alat koji radi. 
-Poruka sutradan. 
-Podijeli zadnju četvrtinu. 
-Ne pola popušene. 
-Ne cijena naglas. 
-Ne javna zahvala na mrežama kao uvjet. 
-Ne računovodstvo — kružnica.
-
-Zapiši što je sjelo. Ne zapiši tuđu sramotu za anegdotu.
-
----
-
-## Još o tuđem stolu — stranice za prelom
-
-Restoran: pitaj. 
-Hotel: kućni red. 
-Posao: bez hijerarhijskog dima. 
-Tuđi dom: poruka unaprijed. 
-Taxi: pristanak. 
-Festival: ne blokiraj prolaz. 
-Tuđa zemlja: lokalna pravila. 
-Švedski stol: odmak od hrane.
-
-Gospodin na tuđem stolu pita više i tvrdi manje.
-
----
-
-## Tri zapovijedi — razrada za kraj
-
-**Pitaj prije plamena.** 
-Jer dim putuje dalje od namjere. Jer „ok” iz neugode nije pristanak. Jer prostor je prvi gost.
-
-**Ostavi prostor.** 
-U dimu — od lica. U čaši — bez forsiranja. U razgovoru — bez seminara. U vremenu — izlaz.
-
-**Ostavi čistije nego što si zatekao.**
-Pepeo. Čaša. Zahvala. Ne goreći stub. Ne celofan. Ne sramota.
-
-Ako ovo tri držiš, smiješ zaboraviti ostatak knjige. Ostatak je samo vježba.
-
----
-
-## Dvadeset malih monologa (pola stranice)
-
-1. Egomanija ulazi prva i sjeda na najbolje mjesto. Gospodin je pusti da sjedi — pa premjesti pepeljaru tako da dim ne ide u ljude. Ego voli mjesto. Gospodin voli zrak.
-
-2. Neznanje nije sramota. Sramota je pretvaranje. Reci „ne znam”. Stol će disati.
-
-3. Savjet voli publiku. Zato ga daj nasamo. Publika voli cirkus. Ti ne.
-
-4. Cijena voli pozornost. Zato je ostavi u trgovini. Stol voli mir.
-
-5. Stubanje voli dramu. Mirni kraj voli sutra. Izaberi sutra.
-
-6. Telefon voli biti važan. Stol voli biti dovoljan. Izaberi dovoljan.
-
-7. Mit voli poster. Večer voli pepeljaru. Izaberi pepeljaru.
-
-8. Snaga lista voli natjecanje. Mjera voli goste. Izaberi goste.
-
-9. Fotografija voli kadar. Povjerenje voli pitanje. Izaberi pitanje.
-
-10. Svoja boca voli izlog. Dijeljenje voli stol. Izaberi stol.
-
-11. Salon voli pravila. Ego voli iznimke. Izaberi pravila kuće.
-
-12. Terasa voli slobodu. Susjed voli mir. Izaberi kompromis.
-
-13. Mentorski ton voli pozornost. Gostoprimstvo voli lakoću. Izaberi lakoću dok te ne pitaju.
-
-14. Slavlje voli još jednu. Jutro voli granicu. Izaberi granicu na vrijeme.
-
-15. Solo voli nemar. Navika voli pepeljaru i kad nitko ne gleda. Izaberi naviku.
-
-16. Posao voli hijerarhiju. Dim je loš alat hijerarhije. Izaberi kavu ako trebaš izlaz.
-
-17. Kiša voli odgodu. Heroizam voli mokru terasu. Izaberi odgodu.
-
-18. Kolekcija voli čuvanje. Okus voli otvaranje. Izaberi živu bocu.
-
-19. Ispravka voli biti glasna. Popravak voli biti tih. Izaberi tih.
-
-20. Kraj voli zahvalu. Ego voli posljednju riječ. Izaberi zahvalu.
-
----
-
-## Završni krug epigrama (za kolofon)
-
-Uljudnost je kad drugi zaborave da si mogao biti težak. 
-Bonton nije policija ukusa. 
-Pitaj. Uspori. Zahvali. 
-Ostavi prostor. 
-Ugasi na vrijeme. 
-Vrati se zbog lakoće.
-
----
-
-## Kataloški precepti po temama (za kartice)
-
-### Pažnja
-Gospodin primijeti tko žuri prije nego otvori kutiju. Ne zapali dok netko još bira mjesto. Ne zauzima najbolji kut samo zbog vjetra ako time tjera druge u dim. Gleda jesu li čaše prazne. Čuje „ne” iz prvog puta.
-
-### Mjera
-Gospodin zna stati usred trećine. Ne forsira treću iz egomanije. Drži vodu kao saveznika. Skraćuje format kad soba zatraži. Ne mjeri uspjeh brojem opušaka.
-
-### Gostoprimstvo
-Gospodin nudi izbor, ne ispit. Pokazuje WC bez šale. Drži pepeljaru na dohvat. Ne nestaje u telefonu. Šalje zahvalu sutradan.
-
-### Salon
-Gospodin pita je li mjesto slobodno. Ne liže kapu prije zajedničkog rezača. Ne pali zvučnik. Ne traži povlačenje s tuđe cigare. Podržava lokal kupnjom, bez uvoza tuđih napojnica kao dogme.
-
-### Vani
-Gospodin čita vjetar. Ne pepeljuje travnjak. Ne puši u lica u redu. Na balkonu pamti da dim ide gore. Na Jadranu ne podcjenjuje buru.
-
-# Dodatak B: kartice za rahli prelom ( Bridgesov bijeli prostor )
-
-> U tisku: jedna kartica / precept po stranici ili polustranici. Serije su svedene na jedinstvene precepte; u prijelomu neka dišu kao vježbanka uljudnosti, ne kao udžbenik.
-
-*(Namjerno rahao niz — u tisku kao kratke jedinice s bijelim prostorom.)*
+*(Bridgesov bijeli prostor: kratke kartice i krivo→ljubazno. Kataloški nizovi svedeni na jedan set po temi.)*
 
 ## Kataloški niz — pažnja
 
@@ -3061,7 +2206,7 @@ Gospodin čita vjetar. Ne pepeljuje travnjak. Ne puši u lica u redu. Na balkonu
 
 - Gospodin ne liže kapu prije zajedničkog rezača.
 - Gospodin ne pali zvučnik.
-- Gospodin ne traži povlačenje s tuđe cigare.
+- Gospodin ne traži dim s tuđe cigare.
 - Gospodin podržava lokal kupnjom, bez uvoza tuđih napojnica kao dogme.
 - Gospodin pita je li mjesto slobodno.
 
@@ -3074,21 +2219,6 @@ Gospodin čita vjetar. Ne pepeljuje travnjak. Ne puši u lica u redu. Na balkonu
 - Gospodin na balkonu pamti da dim ide gore.
 - Gospodin na Jadranu ne podcjenjuje buru.
 - Gospodin čita vjetar.
-
----
-
-## Epigrami — prošireni krug
-
-- *Pepeo je istina koju ego ne može prepraviti.*
-- *Ponuda bez izlaza nije ponuda.*
-- *Najbolji stol je onaj za kojim se diše.*
-- *Uljudnost se vidi kad nitko ne gleda marku.*
-- *Tko žuri pepeo, žuri i ljude.*
-- *Savjet bez pitanja često je pritisak.*
-- *Stubanje je kratak put do gorkog kraja.*
-- *Voda nije sramota; voda je alat.*
-- *Status ostaje na vratima.*
-- *Dim je gost; gosti ne obilježavaju zidove.*
 
 ---
 
@@ -3200,53 +2330,13 @@ Umjesto „Moraš.” reci „Što ti više paše večeras?”
 
 ---
 
-## Kratki eseji — jedna stranica misli
-
-### O strpljenju
-
-Strpljenje nije sporost radi sporosti. Strpljenje je prostor da drugi završe rečenicu i da list zadiše. U praksi to znači: pitaj, uspori, zahvali.
-
-### O sramoti
-
-Sramota ne uči. Uči sigurno mjesto u kojem se smije pogriješiti i popraviti. U praksi to znači: pitaj, uspori, zahvali.
-
-### O novcu
-
-Novac kupuje kutiju. Ne kupuje uljudnost. Tko miješa to dvoje, plaća dvostruko: računom i društvom. U praksi to znači: pitaj, uspori, zahvali.
-
-### O tišini
-
-Tišina nije rupa koju treba napuniti dimom. Tišina je dio rituala. U praksi to znači: pitaj, uspori, zahvali.
-
-### O odlasku
-
-Odlazak na vrijeme dar je domaćinu i sebi. Lažna beskonačnost umara. U praksi to znači: pitaj, uspori, zahvali.
-
-### O učenju
-
-Uči se gledanjem i bilješkom. Ne javnim ispravljanjem. U praksi to znači: pitaj, uspori, zahvali.
-
-### O mirisu
-
-Miris putuje. Zato je suglasnost dio nepca drugih. U praksi to znači: pitaj, uspori, zahvali.
-
-### O alatu
-
-Alat služi. Kad alat postane pečat statusa, večer postaje izlog. U praksi to znači: pitaj, uspori, zahvali.
-
-### O zahvali
-
-Zahvala zatvara krug. Bez nje stol ostaje otvoren račun. U praksi to znači: pitaj, uspori, zahvali.
-
-### O egomaniji
-
-Egomanija voli najjači list, najglasniji naljev, najdužu priču. Stol voli mjeru. Gospodin bira stol. U praksi to znači: pitaj, uspori, zahvali.
+# Stražnji materijal
 
 ## Izvori
 
 Popularna literatura iza ovog teksta: javni vodiči, članci, videozapisi i podcasti. Naglasci su pisani za hrvatski kontekst — mjerodavni su lokalni klub, trgovina i terasa.
 
-Oblik kratkih pravila duguje tradiciji vodiča uljudnosti — prijevodu Johna Bridgesa *Kako biti gospodin* (Leo-commerce, 2001), te Debrettu i Emily Post. Sadržaj o cigari i stolu vlastit je za ovaj rukopis.
+Oblik kratkih pravila duguje tradiciji vodiča uljudnosti — prijevodu Johna Bridgesa *Kako biti gospodin* (Leo-commerce, 2001), te Debrettu i Emily Post kao školi forme, ne kao predlošku za prepisivanje. Sadržaj o cigari i stolu vlastit je za ovaj rukopis. Poster-mitovi (Churchill, Hemingway i slično) dolaze samo kao kontrast stolnim manirama — ne kao potvrđene anegdote ili epigrafi.
 
 - Beyond the Humidor (podcast) — https://podcasts.apple.com/us/podcast/beyond-the-humidor-a-cigar-podcast-for-the-rest-of-us/id1480171817
 - Casa de Montecristo — https://www.casademontecristo.com
@@ -3270,7 +2360,7 @@ Isti popis stoji na dnu Kluba u aplikaciji. Autor je liječnik; stolne napomene 
 
 **Vitola** — format cigare (oblik i veličina); za stolom često znači i dogovoreno vrijeme sesije.
 
-**Draw** — otpor pri povlačenju dima; „dobar draw” olakšava večer, loš nije moralni pad.
+**Draw** — otpor protoka (loan); „dobar draw” olakšava večer, loš nije moralni pad. Ne miješati s *dimom* kao brojivim gutljajem.
 
 **Canoeing** — nejednako gorenje (kao kanu); rješava se tiho, bez predstave.
 
@@ -3314,12 +2404,17 @@ Zahvala ide stolovima za kojima se učilo više od marki: prijateljima koji su r
 
 Lektor / urednik neka osobito pazi na:
 
-- hrvatski pravopis i tipografiju (crtice, navodnici, tuđice: *wrapper*, *draw*, *lounge*) 
-- konzistentnost „gospodin” kao figure uljudnosti (inkluzija) 
-- citate i parafraze — ništa ne predstavljati kao doslovni citat bez provjere 
-- lokalne HR običaje naspram američkih salonskih protokola (napojnice, naplata reza) 
-- strojno umnožena ponavljanja već su prorijeđena; preostalo ponavljanje figure „gospodin” namjeran je ritam, ne pogreška 
-- ciljanu duljinu ~100 str. u malom formatu: rahli slog, ne zbijati u udžbenik 
-- činjenice iz povijesti/tehnike ostaviti oprezne; po potrebi skratiti 
+- pravopis i tipografiju (crtice, navodnici, posuđenice: *wrapper*, *draw*, *lounge*)
+- dosljednost „gospodin” kao figure uljudnosti (inkluzija)
+- citate i parafraze — ništa kao doslovni citat bez provjere; drugi red epigrafa označen je kao parafraza
+- lokalne HR običaje naspram američkih lounge protokola (napojnica, cut fee) — nikad US tip/cut-fee kao lokalni zakon
+- preostalo ponavljanje figure „gospodin” namjeran je Bridgesov ritam; prorijediti samo gdje je prazno
+- cilj ~100 strana mali format: dodatak već očišćen od punjenja preloma; radije još rezati dodatak nego širiti jezgru
+- povijest/tehniku držati oprezno
+- pročitati naglas gl. 1, 2, 16, 17, 21 radi ritma prije tiska
+- **EN je zamrznuti izvor**; ovaj HR je književni prijevod Faze 2 — ne vraćati paralelno uređivanje rečenica EN↔HR
+- prijedlog / tržište / platforma ostaju izvan tijela knjige (`5017a44b-PROPOSAL-NOTES.md`)
+- **Craft:** jedno poglavlje = jedan posao; vinjete And–But–Therefore; bez rangiranja marki; bez medicinskog savjeta; bez AI-fluffa
+- **HR kanon:** *cigara* (padeži), *pepeo*, *domaćin*≠kuća-agens, *dim* (brojivi gutljaj) vs *draw*, finite glagoli umjesto infinitivnih lanaca
 
-*Kraj radnog drafta.*
+*Kraj hrvatskog rukopisa.*

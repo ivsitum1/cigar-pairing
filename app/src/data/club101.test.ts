@@ -69,6 +69,14 @@ describe("club 101 vodici", () => {
     expect(card!.body.en.length).toBeGreaterThanOrEqual(650);
   });
 
+  it("triple grill 2026-07-30: degustacijski redoslijed i higijena alata", () => {
+    expect(club101.tracks.drinks.map((c) => c.id)).toContain("d-tasting-order");
+    expect(club101.tracks.cigars.map((c) => c.id)).toContain("c-tool-hygiene");
+    const tasting = club101.tracks.drinks.find((c) => c.id === "d-tasting-order");
+    expect(tasting?.body.hr.toLowerCase()).toMatch(/blago|nepce|glencairn|voda/);
+    expect(tasting?.body.en.toLowerCase()).toMatch(/milder|palate|glencairn|water/);
+  });
+
   it("lekcije imaju katalog-dubinu (liste tipova / karakteristike)", () => {
     for (const track of TRACKS) {
       for (const card of club101.tracks[track]) {

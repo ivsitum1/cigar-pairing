@@ -9,6 +9,16 @@ updated: 2026-07-30
 
 ~500 riječi snapshot nedavne aktivnosti. Agent ažurira nakon svake značajnije operacije pisanja u wiki.
 
+> **2026-07-30:** Triple NotebookLM grill — `7b267552` Cigars daily · `6ccc327c` Omaha value · `30d6a797` Black Gold. Dumpovi `research/notebooklm-grill/{uuid}-*`. Wiki: value-vs-price-stol, rum-tasting-host, limited-edition-culture. App: Club `d-tasting-order`, 3 lexicon termina, mala-knjiga/`bonton.json` precepti. Gentleman EN/HR freeze netaknut.
+
+> **2026-07-30:** App sync: `mala-knjiga-pusackog-bontona.md` + `bonton.json` — kanon iz HR freeze (*dim* vs *draw*, BYOB, Jadran, finite glagoli, *sparivanje*). Testovi bonton.
+
+> **2026-07-30:** Faza 2 gotova — HR *Gospodin za stolom* zamrznut kao književni prijevod s EN freeze. `KAKO-BITI-GOSPODIN-ZA-STOLOM-DRAFT.md` (~13.5k riječi, Dodatak A/B usklađen s EN rezom). Kanon-prolaz: *dim* vs *draw*, *cigara*, finite glagoli. EN ostaje source of truth; app sync (`mala-knjiga` / `bonton.json`) kasnije.
+
+> **2026-07-30:** EN *Gentleman at the Table* **frozen** for HR translation. File: `docs/bonton/HOW-TO-BE-A-GENTLEMAN-AT-THE-TABLE-DRAFT.md` (~18k words after appendix cut). TOC synced to H2s; ch.11 retitled; ch.18 Adriatic sensory beat; Appendix A/B slimmed (cut layout-filler / Appendix D / mechanical essays); back matter honesty + editor note. HR draft header = read-only until Phase 2. Plan: `docs/superpowers/plans/2026-07-30-gentleman-en-finalize.md`. CROSSWALK + craft grill `5017a44b` remain reference.
+
+> **2026-07-30:** NotebookLM craft grill `5017a44b` (*Art and Craft of Showing Not Telling*, 44 izvora) → nonfiction priručnik. Dump: `docs/bonton/research/notebooklm-grill/5017a44b-*`. EN/HR draft: How-to-read (promise + desk use + Uber Reader=gost/domaćin), gl.1 miniature beat, vinjeta senzor, editor anti-overwrite. MCP id `writing-craft-publishing`. CROSSWALK ažuriran.
+
 > **2026-07-30:** Dnevnik večeri: ulaz C (DetailSheet + kartice sparivanja), pretraga kataloga pića + solo cigara, wishlist upit kad zaliha → 0, Kupovina restock. Don Tomas Clásico HR @ Tobacco Petica. Testovi 381/381.
 
 > **2026-07-30:** Club facts/kviz: *vlak* → **draw** (loan; otpor/protok). Kanon: *dim* = brojivi gutljaj; *vlak* zabranjen kao calque. Rez: „tri **uobičajena**” + fact „Jeste li znali?” (škare, casino, Cuban cut, pinch).

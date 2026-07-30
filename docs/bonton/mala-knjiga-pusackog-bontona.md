@@ -1,8 +1,8 @@
 # Mala knjiga pušačkog bontona
 
-> Radni rukopis za kasnije proširenje u pravu knjigu.
+> Kratki app-kanon. Sinkronizirano s zamrznutim rukopisom *Gospodin za stolom* (2026-07-30) — precepti, ne cijela knjiga.
 
-> Izvor u aplikaciji: `app/src/data/bonton.json` (HR/EN). Ovaj MD je hrvatski kanonski tekst za pisanje.
+> Aplikacija: `app/src/data/bonton.json` (HR/EN). Ovaj MD je hrvatski kanonski tekst za pisanje; EN ispod je referenca za app copy.
 
 
 ## Epigraf
@@ -23,6 +23,7 @@ Bonton nije policija ukusa. To je način da drugi udišu lakše dok ti uživaš.
 - Umjerenost: ritam koji ne grije duhan i ne grije društvo.
 - Domišljenost: rezač, pepeljara i voda već na stolu, bez improvizacije.
 - Skromnost: tvoja najdraža maduro nije obvezan ispit za gosta.
+- Unutarnja ljestvica: biraj i nudi ono što stvarno voliš — ne ono što zvuči skupo za stolom.
 
 ### Zlatno pravilo
 
@@ -46,7 +47,7 @@ Dim putuje dalje od tvoje dobre namjere. Prostor biraš prije plamena.
 ### U društvu
 
 - Jedan „ne, hvala” zatvara temu bez komentara.
-- Ne ispravljanje tuđeg ritma ili izbora pića naglas, savjet tek ako ga traže.
+- Ne ispravljaj tuđi ritam ili izbor pića naglas; savjet tek ako ga traže.
 
 
 ---
@@ -65,13 +66,16 @@ Nuditi cigaru znači nuditi vrijeme, ne samo list.
 
 ### Što ne raditi
 
-- Ne paliti tuđu cigaru bez pitanja (osim ako su rekli „upali mi”).
-- Ne ocjenjivati naglas tuđe povlačenje ili pepeo.
-- Ne uzimati zadnju iz kutije domaćina bez ponude.
+- Ne pali tuđu cigaru bez pitanja (osim ako su rekli „upali mi”).
+- Ne ocjenjuj naglas tuđi draw ili pepeo.
+- Ne uzimaj zadnju iz kutije domaćina bez ponude.
+- Ne traži dim s tuđe cigare.
 
 ### Dijeljenje boce
 
 - Prvo natoči gostu. Označi što je u dekanteru. Voda uz stol nije opcija, standard je.
+- Ako doneseš vlastitu bocu, dijeli što doneseš (BYOB).
+- Boca ili cigara čuvana za „posebnu priliku” koja ne dolazi — otvori i dijeli dok je na vrhuncu.
 
 
 ---
@@ -83,8 +87,8 @@ Gospodin (i dobra družbenica) ne žuri dimom da dokaže snagu. Žuri rijetko, i
 
 ### Ritam
 
-- Kratka povlačenja, pauze između. Crni vrući pepeo = upozorenje, ne trofej.
-- Razgovor ima prednost pred „još jednim gutljajem dima” dok netko priča.
+- Kratki dimovi, pauze između. Crni vrući pepeo = upozorenje, ne trofej.
+- Razgovor ima prednost pred „još jednim dimom” dok netko priča.
 - Mobitel licem dolje ili dalje, bonton stoljeća nije listanje ekrana.
 
 ### Prisutnost
@@ -125,7 +129,7 @@ Ono što ostane iza tebe govori glasnije od imena na prstenu.
 ## VI. Stol: čaša, voda, redoslijed
 
 
-Uparivanje za stolom mali je ritual, ne pozornica za taštinu.
+Sparivanje za stolom mali je ritual, ne pozornica za taštinu.
 
 ### Postavljanje
 
@@ -138,10 +142,14 @@ Uparivanje za stolom mali je ritual, ne pozornica za taštinu.
 - Miris pića → gutljaj → dim → gutljaj. Traži slaganje, ne pobjedu.
 - Prvo blaže, zatim snažnije, i u cigari i u čaši, kad vodiš večer.
 - Ako gost zaostaje, uspori svoj ritam; ne „vuči” naprijed sam.
+- Više boca: najviše pet–šest stavki; miris čaše prvo izdaleka; voda (sobna) između.
+- High-proof: ne aerirati u ustima kao vino; gost s cask strengthom sam bira kap vode.
 
 ### Riječi za stolom
 
 - Pohvala tuđeg izbora je bonton. Uspoređivanje „moje je bolje” nije.
+- O LE ili rijetkoj boci: priča o duhanu ili zanatu, ne o cijeni i ekskluzivnosti.
+- Bolje pitati nego glumiti stručnjaka s etikete koju ne poznaješ.
 
 
 ---
@@ -220,6 +228,7 @@ Vjetar i prolaznici mijenjaju pravila brže od humidora.
 - Na ulici: širok luk oko vrata zgrada i redova koji čekaju.
 - U taksiju / autu tuđeg vlasnika, samo uz jasan pristanak.
 - Balkoni iznad tuđih prozora: dim ide gore; biraj sat i smjer.
+- Na Jadranu vjetar s mora i s kopna nisu ista večer — prilagodi mjesto ili format.
 
 ### Javni prostor
 
@@ -259,13 +268,13 @@ Ako zapamtiš samo troje, neka bude ovo.
 
 ### Tri zapovijedi stola
 
-- Pitaj prije paljenja.
+- Pitaj prije plamena.
 - Ostavi dovoljno prostora drugima: u dimu, u čaši, u razgovoru.
 - Ostavi čistije nego što si zatekao: pepeo, čaša, zahvala.
 
 ### Za kraj
 
-- Bonton se uči kao uparivanje: bilješkom, ponavljanjem, bez glume.
+- Bonton se uči kao sparivanje: bilješkom, ponavljanjem, bez glume.
 - Najbolji kompliment nije „znaš pravila”, nego „ugodno mi je bilo s tobom”.
 
 
@@ -293,6 +302,7 @@ Manners are not the police of taste. They are how others can breathe easier whil
 - Moderation: a pace that does not scorch the leaf or the company.
 - Foresight: cutter, ashtray and water already on the table, no improvising.
 - Modesty: your favourite maduro is not an exam for the guest.
+- Inner scorecard: choose and offer what you truly like — not what sounds expensive at the table.
 
 ### Golden rule
 
@@ -338,10 +348,13 @@ To offer a cigar is to offer time, not only leaf.
 - Lighting another's cigar unasked (unless they said 'light me').
 - Judging their draw or ash out loud.
 - Taking the last from the host's box without an offer.
+- Asking for a puff of someone else's cigar.
 
 ### Sharing a bottle
 
 - Pour for the guest first. Label what is in the decanter. Water at the table is not optional, it is standard.
+- BYOB: share what you bring.
+- A bottle or cigar saved for a 'special occasion' that never comes — open and share while it is at its peak.
 
 
 ---
@@ -408,10 +421,14 @@ A pairing table is a small ritual, not a stage for ego.
 - Nose the drink → sip → smoke → sip. Look for a bridge, not a victory.
 - Milder first, then stronger: in both cigar and glass when you lead the evening.
 - If a guest lags, slow your pace; do not pull ahead alone.
+- Several bottles: five or six items at most; nose the glass from a distance first; room-temperature water between.
+- High-proof: do not aerate in the mouth like wine; with cask strength, the guest chooses the drop of water.
 
 ### Words at the table
 
 - Praising another's choice is manners. Ranking 'mine is better' is not.
+- On an LE or rare bottle: talk tobacco or craft, not price and exclusivity.
+- Better to ask than to bluff expertise on a label you do not know.
 
 
 ---
@@ -490,6 +507,7 @@ Wind and passers-by change the rules faster than a humidor.
 - On the street: a wide berth from doorways and waiting queues.
 - In a taxi / someone else's car, only with clear consent.
 - Balconies above others' windows: smoke rises; choose hour and direction.
+- On the Adriatic, sea wind and land wind are not the same evening — adjust place or format.
 
 ### Public space
 

@@ -3,8 +3,8 @@
 **Radni naslov:** Kako biti gospodin za stolom  
 **Podnaslov:** suvremeni vodič kroz cigaru, čašu i društvo  
 **Cilj:** ~28 000–35 000 riječi ≈ ~100 tiskanih str. (mali format, rahli slog)  
-**Draft:** `KAKO-BITI-GOSPODIN-ZA-STOLOM-DRAFT.md` (**ostvareno ~32 000 riječi**, 2026-07-19)  
-**Datum skice:** 2026-07-18 · **ažurirano:** 2026-07-19 · **status:** draft spreman za lekturu
+**Draft:** `KAKO-BITI-GOSPODIN-ZA-STOLOM-DRAFT.md` (**HR zamrznut 2026-07-30**, prijevod s EN) · **EN freeze:** `HOW-TO-BE-A-GENTLEMAN-AT-THE-TABLE-DRAFT.md`  
+**Datum skice:** 2026-07-18 · **ažurirano:** 2026-07-30 · **status:** EN + HR zamrznuti; app sync kasnije
 
 ---
 
