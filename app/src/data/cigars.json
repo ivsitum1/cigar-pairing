@@ -101039,16 +101039,19 @@
     "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 41,
-    "priceEUR": null,
+    "priceEUR": 5.2,
     "priceApprox": false,
-    "availabilityHR": [],
+    "availabilityHR": [
+      "Tobacco Petica (Branimir)"
+    ],
     "notes": {
-      "hr": "Honduras, Ecuador pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Honduras, Ecuador wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
+      "hr": "Honduras, Ecuador pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža. U HR: Polar Robusto i Gigante u Tobacco Petica, Branimir centar.",
+      "en": "Honduras, Ecuador wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather. In Croatia: Polar Robusto and Gigante at Tobacco Petica, Branimir Center."
     },
     "markets": [
       "EU",
-      "WW"
+      "WW",
+      "HR"
     ],
     "vitolas": [
       {
@@ -101071,7 +101074,7 @@
         "name": "Robusto",
         "format": "50 x 127mm",
         "smokeTimeMin": 49,
-        "priceEUR": null,
+        "priceEUR": 5.2,
         "url": null,
         "regionLinks": {
           "EU": {
@@ -101084,10 +101087,10 @@
         "lengthMM": 127
       },
       {
-        "name": "Gordo",
+        "name": "Gigante",
         "format": "60 x 159mm",
         "smokeTimeMin": 61,
-        "priceEUR": null,
+        "priceEUR": 6.2,
         "url": null,
         "regionLinks": {
           "EU": {

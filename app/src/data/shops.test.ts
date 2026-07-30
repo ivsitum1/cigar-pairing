@@ -37,11 +37,21 @@ describe("Tobacco Petica (Branimir centar)", () => {
     );
   });
 
+  it("La Estrella Polar (Robusto, Gigante) je ondje dostupna", () => {
+    const polar = byId("cig-la-estrella-polar");
+    expect(polar.markets).toContain("HR");
+    expect(polar.availabilityHR).toContain(TOBACCO_PETICA);
+    const byName = Object.fromEntries(polar.vitolas.map((v) => [v.name, v]));
+    expect(byName.Robusto?.priceEUR).toBe(5.2);
+    expect(byName.Gigante?.priceEUR).toBe(6.2);
+  });
+
   it("ducan bez kataloga ne dobiva link po proizvodu", () => {
     for (const id of [
       "cig-cao-bones",
       "cig-don-tomas-bundle",
       "cig-don-tomas-clasico",
+      "cig-la-estrella-polar",
     ]) {
       const shops = cigarShopLinks(byId(id)).map((l) => l.shop);
       expect(shops, id).not.toContain(TOBACCO_PETICA);
