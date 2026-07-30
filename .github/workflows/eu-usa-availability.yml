@@ -1,0 +1,65 @@
+name: EU/USA availability refresh
+
+# CigarWorld (EU product sitemap) + Holt's (USA brand sitemap) → uskladi
+# markets.EU / markets.USA i otvori PR. Cigars Daily nije u ovom toku.
+
+on:
+  schedule:
+    # utorak 04:27 UTC — dan nakon HR joba
+    - cron: "27 4 * * 2"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: eu-usa-availability
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch catalogues and reconcile
+        working-directory: app
+        run: python scripts/reconcile-eu-usa-availability.py --fetch
+
+      - name: Summarise the diff
+        working-directory: app
+        run: |
+          python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json, pathlib
+          r = json.loads(pathlib.Path("scripts/output/eu_usa_reconcile_report.json").read_text("utf-8"))
+          print(f"### EU/USA dostupnost — {r.get('snapshot_at')}\n")
+          print(f"- dodano EU: **{r['added_eu']}** · USA: **{r['added_usa']}**")
+          print(f"- maknuto EU: **{r['removed_eu']}** · USA: **{r['removed_usa']}**")
+          print(f"- markets EU: **{r['markets_remaining']['EU']}** · USA: **{r['markets_remaining']['USA']}**\n")
+          PY
+
+      - name: Open a PR when something changed
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: chore/eu-usa-availability-refresh
+          base: master
+          delete-branch: true
+          commit-message: "chore(data): refresh EU/USA availability from CigarWorld and Holt's"
+          title: "Osvježi dostupnost EU (CigarWorld) i USA (Holt's)"
+          body: |
+            Automatski tjedni prolaz: `scripts/reconcile-eu-usa-availability.py --fetch`.
+
+            - **EU:** CigarWorld product sitemap → discovery + soft keep
+            - **USA:** Holt's brand sitemap → soft keep postojećeg; discovery samo uz tvrdi URL dokaz
+            - Cigars Daily nije uključen
+
+            Detalji: `app/scripts/output/eu_usa_reconcile_report.json`.
+          add-paths: |
+            app/src/data/cigars.json
+            app/scripts/output/eu_usa_catalog_snapshot.json
+            app/scripts/output/eu_usa_reconcile_report.json

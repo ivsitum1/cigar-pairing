@@ -41,5 +41,8 @@ jobs:
       - name: HR availability reconcile logic
         working-directory: app
         run: python scripts/test_reconcile_hr.py
+      - name: EU/USA availability reconcile logic
+        working-directory: app
+        run: python scripts/test_reconcile_eu_usa.py
       - run: npm run build
         working-directory: app
