@@ -31,6 +31,12 @@ describe("Tobacco Petica (Branimir centar)", () => {
     expect(byId("cig-don-tomas-bundle").availabilityHR).toContain(
       TOBACCO_PETICA,
     );
+    const bundleByName = Object.fromEntries(
+      byId("cig-don-tomas-bundle").vitolas.map((v) => [v.name, v]),
+    );
+    expect(bundleByName.Rothschild?.priceEUR).toBe(2.8);
+    expect(bundleByName.Robusto?.priceEUR).toBe(3.6);
+    expect(bundleByName["Petit Corona"]?.priceEUR).toBe(3.6);
     expect(byId("cig-don-tomas-clasico").markets).toContain("HR");
     expect(byId("cig-don-tomas-clasico").availabilityHR).toContain(
       TOBACCO_PETICA,

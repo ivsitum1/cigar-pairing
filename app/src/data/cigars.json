@@ -60490,15 +60490,15 @@
       "kremasto"
     ],
     "smokeTimeMin": 50,
-    "priceEUR": 5.5,
-    "priceApprox": true,
+    "priceEUR": 2.8,
+    "priceApprox": false,
     "priceUrl": null,
     "vitolas": [
       {
         "name": "Petit Corona",
         "format": "42 x 127mm",
         "smokeTimeMin": 40,
-        "priceEUR": null,
+        "priceEUR": 3.6,
         "url": null,
         "ring": 42,
         "lengthMM": 127
@@ -60525,7 +60525,7 @@
         "name": "Rothschild",
         "format": "50 x 114mm",
         "smokeTimeMin": 45,
-        "priceEUR": null,
+        "priceEUR": 2.8,
         "url": null,
         "regionLinks": {
           "EU": {
@@ -60541,7 +60541,7 @@
         "name": "Robusto",
         "format": "50 x 127mm",
         "smokeTimeMin": 50,
-        "priceEUR": null,
+        "priceEUR": 3.6,
         "url": null,
         "ring": 50,
         "lengthMM": 127
@@ -60565,8 +60565,8 @@
       "Tobacco Petica (Branimir)"
     ],
     "notes": {
-      "hr": "Bundle izdanje bez kutije — ista tvornica, jednostavnije pakiranje. Blaži, zemljano-drvenast profil za svakodnevno pušenje po nižoj cijeni.",
-      "en": "The bundle release without the box — same factory, simpler packaging. A milder, earthy-woody everyday smoke at a lower price."
+      "hr": "Bundle izdanje bez kutije — ista tvornica, jednostavnije pakiranje. Blaži, zemljano-drvenast profil za svakodnevno pušenje po nižoj cijeni. U HR: Rothschild, Petit Corona i Robusto u Tobacco Petica, Branimir centar.",
+      "en": "The bundle release without the box — same factory, simpler packaging. A milder, earthy-woody everyday smoke at a lower price. In Croatia: Rothschild, Petit Corona and Robusto at Tobacco Petica, Branimir Center."
     },
     "regionLinks": {
       "EU": {
@@ -101032,9 +101032,7 @@
     "body": 3,
     "flavorTags": [
       "cedar",
-      "zacini",
-      "koza",
-      "kava"
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -101045,8 +101043,8 @@
       "Tobacco Petica (Branimir)"
     ],
     "notes": {
-      "hr": "Honduras, Ecuador pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža. U HR: Polar Robusto i Gigante u Tobacco Petica, Branimir centar.",
-      "en": "Honduras, Ecuador wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather. In Croatia: Polar Robusto and Gigante at Tobacco Petica, Branimir Center."
+      "hr": "Pristupačna honduraška mješavina: Ecuador pokrov, punjenje Nikaragva i Kolumbija — blaga do srednje snage, s drvenastim i orašastim notama te blagom slatkoćom. U HR: Polar Robusto i Gigante u Tobacco Petica, Branimir centar.",
+      "en": "A value Honduran blend with an Ecuadorian wrapper and Nicaraguan/Colombian filler — mild to medium, with wood, nuts and a gentle sweetness. In Croatia: Polar Robusto and Gigante at Tobacco Petica, Branimir Center."
     },
     "markets": [
       "EU",
@@ -101124,9 +101122,7 @@
     "body": 3,
     "flavorTags": [
       "cedar",
-      "zacini",
-      "koza",
-      "kava"
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -101135,8 +101131,8 @@
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Honduras, Indonesia pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Honduras, Indonesia wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
+      "hr": "Honduraška linija srednjeg tijela: Indonezija pokrov, gladak dim s drvenastim i orašastim notama te blagom slatkoćom — dulje pušenje bez premium cijene.",
+      "en": "A medium-bodied Honduran line with an Indonesian wrapper — smooth smoke with wood, nuts and a subtle sweetness; a long, easy format without a premium price."
     },
     "markets": [
       "EU",
@@ -101160,7 +101156,7 @@
         "lengthMM": 127
       },
       {
-        "name": "Gordo",
+        "name": "Gigante",
         "format": "60 x 159mm",
         "smokeTimeMin": 61,
         "priceEUR": null,
