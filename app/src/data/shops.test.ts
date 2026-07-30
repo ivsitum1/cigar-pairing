@@ -23,7 +23,7 @@ describe("Tobacco Petica (Branimir centar)", () => {
     expect(shop?.productHost).toBeUndefined();
   });
 
-  it("CAO Bones (Chicken Foot) i Don Tomas Bundle su ondje dostupni", () => {
+  it("CAO Bones, Don Tomas Bundle i Clásico su ondje dostupni", () => {
     expect(byId("cig-cao-bones").availabilityHR).toContain(TOBACCO_PETICA);
     expect(byId("cig-cao-bones").vitolas.map((v) => v.name)).toContain(
       "Chicken Foot",
@@ -31,10 +31,18 @@ describe("Tobacco Petica (Branimir centar)", () => {
     expect(byId("cig-don-tomas-bundle").availabilityHR).toContain(
       TOBACCO_PETICA,
     );
+    expect(byId("cig-don-tomas-clasico").markets).toContain("HR");
+    expect(byId("cig-don-tomas-clasico").availabilityHR).toContain(
+      TOBACCO_PETICA,
+    );
   });
 
   it("ducan bez kataloga ne dobiva link po proizvodu", () => {
-    for (const id of ["cig-cao-bones", "cig-don-tomas-bundle"]) {
+    for (const id of [
+      "cig-cao-bones",
+      "cig-don-tomas-bundle",
+      "cig-don-tomas-clasico",
+    ]) {
       const shops = cigarShopLinks(byId(id)).map((l) => l.shop);
       expect(shops, id).not.toContain(TOBACCO_PETICA);
     }

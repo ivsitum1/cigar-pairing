@@ -91,8 +91,8 @@ export interface ShoppingData {
 
 export const SHOPPING: ShoppingData = shoppingJson as ShoppingData;
 
-export const drinkById = (id: string): Drink | undefined =>
-  ALL_DRINKS.find((d) => d.id === id);
+export const drinkById = (id: string | null | undefined): Drink | undefined =>
+  id == null || id === "" ? undefined : ALL_DRINKS.find((d) => d.id === id);
 
 export const cigarById = (id: string): Cigar | undefined =>
   CIGARS.find((c) => c.id === id);

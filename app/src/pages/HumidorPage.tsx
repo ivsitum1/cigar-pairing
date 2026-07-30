@@ -501,7 +501,11 @@ function JournalCard({
               }`
             : entry.cigarId}
           <span className="text-zlato"> × </span>
-          {drink ? lx(drinkNameLoc(drink)) : entry.drinkId}
+          {drink
+            ? lx(drinkNameLoc(drink))
+            : entry.drinkId == null
+              ? t("session.soloLabel")
+              : entry.drinkId}
         </span>
         {entry.rating != null && (
           <span className="shrink-0 text-sm text-zlato-2">{entry.rating}/10</span>

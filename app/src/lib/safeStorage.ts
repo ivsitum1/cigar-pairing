@@ -44,16 +44,24 @@ function normalizeJournalEntry(value: unknown): JournalEntry | null {
   if (
     typeof v.id !== "string" ||
     typeof v.date !== "string" ||
-    typeof v.cigarId !== "string" ||
-    typeof v.drinkId !== "string"
+    typeof v.cigarId !== "string"
   ) {
+    return null;
+  }
+  // solo: null / nedostaje / prazan string; krivi tip = odbaci cijeli zapis
+  let drinkId: string | null;
+  if (v.drinkId === null || v.drinkId === undefined || v.drinkId === "") {
+    drinkId = null;
+  } else if (typeof v.drinkId === "string") {
+    drinkId = v.drinkId;
+  } else {
     return null;
   }
   return {
     id: v.id,
     date: v.date,
     cigarId: v.cigarId,
-    drinkId: v.drinkId,
+    drinkId,
     rating: normalizeRating(v.rating),
     note: typeof v.note === "string" ? v.note : "",
   };

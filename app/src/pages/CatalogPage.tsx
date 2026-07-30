@@ -20,11 +20,13 @@ import { useI18n, STYLE_LABELS, type StringKey } from "../i18n";
 import { Chip, SearchInput } from "../components/ui";
 import { CigarRow, DrinkRow } from "../components/cards";
 import { DetailSheet } from "../components/DetailSheet";
+import { EveningSessionSheet } from "../components/EveningSessionSheet";
 import { BrandSheet } from "../components/BrandSheet";
 import { LineSheet } from "../components/LineSheet";
 import { MarketFilter } from "../components/MarketFilter";
 import { VitolaPicker } from "../components/VitolaPicker";
 import { applyVitola, uniqueVitolas } from "../lib/cigarVitola";
+import { cigarItemId } from "../lib/cigarItemId";
 import {
   SHAPE_FAMILIES,
   cigarShapes,
@@ -121,6 +123,7 @@ export function CatalogPage({
   const [detail, setDetail] = useState<
     { kind: "cigar"; item: Cigar } | { kind: "drink"; item: Drink } | null
   >(null);
+  const [logCigar, setLogCigar] = useState<Cigar | null>(null);
   const [pendingCigar, setPendingCigar] = useState<Cigar | null>(null);
   const [brand, setBrand] = useState<string | null>(null);
   const [line, setLine] = useState<Cigar | null>(null);
@@ -815,7 +818,19 @@ export function CatalogPage({
               }
             : undefined
         }
+        onLogEvening={(cigar) => {
+          setDetail(null);
+          setLogCigar(cigar);
+        }}
       />
+      {logCigar && (
+        <EveningSessionSheet
+          cigars={[logCigar]}
+          drinks={[]}
+          initialCigarId={cigarItemId(logCigar)}
+          onClose={() => setLogCigar(null)}
+        />
+      )}
     </div>
   );
 }

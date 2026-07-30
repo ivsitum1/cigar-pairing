@@ -141,4 +141,45 @@ describe("normalizeCollectionPayload", () => {
     });
     expect(out?.items.a.rating).toBeNull();
   });
+
+  it("prihvaca solo zapis (drinkId null ili nedostaje)", () => {
+    const out = normalizeCollectionPayload({
+      items: {},
+      journal: [
+        {
+          id: "j-solo",
+          date: "2026-07-30",
+          cigarId: "cig-1",
+          drinkId: null,
+          rating: 8,
+          note: "solo",
+        },
+        {
+          id: "j-missing",
+          date: "2026-07-30",
+          cigarId: "cig-2",
+          rating: null,
+          note: "",
+        },
+      ],
+    });
+    expect(out?.journal).toEqual([
+      {
+        id: "j-solo",
+        date: "2026-07-30",
+        cigarId: "cig-1",
+        drinkId: null,
+        rating: 8,
+        note: "solo",
+      },
+      {
+        id: "j-missing",
+        date: "2026-07-30",
+        cigarId: "cig-2",
+        drinkId: null,
+        rating: null,
+        note: "",
+      },
+    ]);
+  });
 });
