@@ -4,9 +4,10 @@
 // večeras". Zato zaliha živi u zasebnoj pohrani i troši se kad zabilježiš večer.
 import { useMemo, useState } from "react";
 import type { Cigar, Drink } from "../types";
-import { brandDisplayName, cigarForItemId, drinkById } from "../data";
+import { ALL_DRINKS, brandDisplayName, cigarForItemId, drinkById } from "../data";
 import { useI18n, type StringKey } from "../i18n";
 import { Chip, SectionTitle } from "../components/ui";
+import { DrinkRow } from "../components/cards";
 import { drinkNameLoc } from "../lib/drinkName";
 import { removeJournalEntry, useCollection, type JournalEntry } from "../store/collection";
 import {
@@ -19,6 +20,7 @@ import {
   useHumidors,
 } from "../store/humidor";
 import { useMarket } from "../store/market";
+import { dedupeCollectionCigarIds } from "../lib/cigarItemId";
 import {
   MONTH_NAMES_EN,
   MONTH_NAMES_HR,
@@ -32,14 +34,21 @@ import {
 
 export function HumidorPage({
   onOpenCigar,
+  onOpenDrink,
 }: {
   onOpenCigar?: (cigar: Cigar) => void;
+  onOpenDrink?: (drink: Drink) => void;
 }) {
   const { t } = useI18n();
   const data = useHumidors();
+  const collection = useCollection();
   const [newName, setNewName] = useState("");
   const [renaming, setRenaming] = useState<string | null>(null);
   const [renameValue, setRenameValue] = useState("");
+
+  const ownedBottles = useMemo(() => {
+    return ALL_DRINKS.filter((d) => collection.items[d.id]?.owned);
+  }, [collection.items]);
 
   const active =
     data.humidors.find((h) => h.id === data.activeId) ?? data.humidors[0] ?? null;
@@ -182,6 +191,21 @@ export function HumidorPage({
           <QuickAdd humidorId={active.id} />
         </>
       )}
+
+      {ownedBottles.length > 0 && (
+        <>
+          <SectionTitle>{t("coll.drinks")}</SectionTitle>
+          <div className="space-y-2">
+            {ownedBottles.map((d) => (
+              <DrinkRow
+                key={d.id}
+                drink={d}
+                onClick={onOpenDrink ? () => onOpenDrink(d) : undefined}
+              />
+            ))}
+          </div>
+        </>
+      )}
     </div>
   );
 }
@@ -202,9 +226,11 @@ function QuickAdd({ humidorId }: { humidorId: string }) {
     const inHumidor = new Set(
       stock.filter((s) => s.humidorId === humidorId).map((s) => s.itemId),
     );
-    return Object.entries(collection.items)
+    const ids = Object.entries(collection.items)
       .filter(([id, state]) => state.owned && !inHumidor.has(id))
-      .map(([id]) => ({ id, cigar: cigarForItemId(id) }))
+      .map(([id]) => id);
+    return dedupeCollectionCigarIds(ids)
+      .map((id) => ({ id, cigar: cigarForItemId(id) }))
       // pića su isto u `items` — u humidor idu samo cigare
       .filter((row): row is { id: string; cigar: Cigar } => row.cigar != null)
       .sort((a, b) =>

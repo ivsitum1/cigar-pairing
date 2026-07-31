@@ -329,7 +329,10 @@ const STRINGS = {
   "coll.myRating": { hr: "Moja ocjena", en: "My rating" },
   "coll.note": { hr: "Bilješka", en: "Note" },
   "coll.notePlaceholder": { hr: "Dojmovi, uz što je pasalo…", en: "Impressions, what it paired with…" },
-  "coll.empty": { hr: "Kolekcija je prazna. Označi boce i cigare u katalozima ili ovdje.", en: "Collection is empty. Mark bottles and cigars in the catalogs or here." },
+  "coll.empty": {
+    hr: "Kolekcija je prazna. Označi Probano za cigare koje pušiš drugdje, ili Imam za vitole koje imaš a još nisu u humidoru.",
+    en: "Collection is empty. Mark Tried for cigars you smoke elsewhere, or Owned for vitolas you have that are not in a humidor yet.",
+  },
   "coll.export": { hr: "Izvoz podataka", en: "Export data" },
   "coll.import": { hr: "Uvoz podataka", en: "Import data" },
   "coll.journal": { hr: "Dnevnik sparivanja", en: "Pairing journal" },
@@ -339,8 +342,12 @@ const STRINGS = {
   "coll.delete": { hr: "Obriši", en: "Delete" },
   "coll.importOk": { hr: "Podaci uvezeni.", en: "Data imported." },
   "coll.importErr": { hr: "Neispravna datoteka.", en: "Invalid file." },
-  "coll.stats": { hr: "boca/cigara u kolekciji", en: "bottles/cigars in collection" },
-  "coll.historySection": { hr: "Probano / bilješke (nemam)", en: "Tried / notes (not owned)" },
+  "coll.stats": { hr: "u shortlistu / bez zalihe", en: "in shortlist / without stock" },
+  "coll.historySection": { hr: "Probano / shortlist", en: "Tried / shortlist" },
+  "coll.ownedNoStock": {
+    hr: "Imam (još nije u humidoru)",
+    en: "Owned (not in humidor yet)",
+  },
   "coll.drinks": { hr: "Pića", en: "Drinks" },
   // humidor
   "hum.title": { hr: "Humidor", en: "Humidor" },

@@ -55,3 +55,20 @@ export function vitolaFromItemId(
 }
 
 export const vitolaKeySlug = slug;
+
+/**
+ * Ako u setu postoji bare `cig-x` i bilo koji `cig-x@vitola`, sakrij bare —
+ * inače ista linija izgleda kao „N vitolas” pored konkretne veličine.
+ */
+export function dedupeCollectionCigarIds(ids: string[]): string[] {
+  const hasScoped = new Set<string>();
+  for (const id of ids) {
+    const { cigarId, vitolaSlug } = parseCigarItemId(id);
+    if (vitolaSlug) hasScoped.add(cigarId);
+  }
+  return ids.filter((id) => {
+    const { cigarId, vitolaSlug } = parseCigarItemId(id);
+    if (!vitolaSlug && hasScoped.has(cigarId)) return false;
+    return true;
+  });
+}

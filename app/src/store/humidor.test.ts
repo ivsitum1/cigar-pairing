@@ -247,3 +247,30 @@ describe("brzi unos iz kolekcije", () => {
     expect(h.humidorData().stock.every((s) => s.count === 1)).toBe(true);
   });
 });
+
+describe("remapHumidorAliases", () => {
+  it("spaja alias zalihu na kanonski itemId", async () => {
+    const { remapHumidorAliases } = await load();
+    const out = remapHumidorAliases({
+      humidors: [{ id: "h1", name: "Kuća", createdAt: "2026-01-01T00:00:00.000Z" }],
+      activeId: "h1",
+      stock: [
+        {
+          humidorId: "h1",
+          itemId: "cig-oliva-oliva-serie-v",
+          count: 2,
+          updatedAt: "2026-01-01T00:00:00.000Z",
+        },
+        {
+          humidorId: "h1",
+          itemId: "cig-oliva-serie-v",
+          count: 1,
+          updatedAt: "2026-01-02T00:00:00.000Z",
+        },
+      ],
+    });
+    expect(out.stock).toHaveLength(1);
+    expect(out.stock[0].itemId).toBe("cig-oliva-serie-v");
+    expect(out.stock[0].count).toBe(3);
+  });
+});

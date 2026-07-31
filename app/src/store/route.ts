@@ -3,7 +3,7 @@ import { useSyncExternalStore } from "react";
 
 export type Page = "pairing" | "catalog" | "collection" | "shopping" | "club";
 export type ClubView = "101" | "bonton" | "lexicon" | "dictionary" | "hr-guide" | "archetypes";
-/** Kolekcija ima tri prikaza: što imam, humidor sa zalihom, kalendar dnevnika. */
+/** Kolekcija: Humidor (zaliha+boce) | shortlist | kalendar dnevnika. */
 export type CollectionView = "collection" | "humidor" | "calendar";
 
 /** Catalog deep links: brand → line → vitola (Phase 4). */
@@ -22,7 +22,7 @@ export interface Route {
 
 const PAGES: readonly string[] = ["pairing", "catalog", "collection", "shopping", "club"];
 const CLUB_VIEWS: readonly string[] = ["101", "bonton", "lexicon", "dictionary", "hr-guide", "archetypes"];
-const COLLECTION_VIEWS: readonly string[] = ["humidor", "calendar"];
+const COLLECTION_VIEWS: readonly string[] = ["humidor", "collection", "calendar"];
 
 export function parseHash(hash: string): Route {
   const parts = hash.replace(/^#\/?/, "").split("/").filter(Boolean);
@@ -33,8 +33,12 @@ export function parseHash(hash: string): Route {
   if (page === "club" && CLUB_VIEWS.includes(parts[1])) {
     return { page, club: parts[1] as ClubView };
   }
-  if (page === "collection" && COLLECTION_VIEWS.includes(parts[1])) {
-    return { page, collection: parts[1] as CollectionView };
+  if (page === "collection") {
+    if (COLLECTION_VIEWS.includes(parts[1])) {
+      return { page, collection: parts[1] as CollectionView };
+    }
+    // #/collection bez podputa → Humidor (zaliha je prvi tab)
+    return { page, collection: "humidor" };
   }
   if (page === "catalog" && parts[1] === "brand" && parts[2]) {
     return {
@@ -65,8 +69,9 @@ export function routeToHash(r: Route): string {
   if (r.page === "club" && r.club) {
     return `#/${r.page}/${r.club}`;
   }
-  if (r.page === "collection" && r.collection && r.collection !== "collection") {
-    return `#/${r.page}/${r.collection}`;
+  if (r.page === "collection") {
+    const view = r.collection ?? "humidor";
+    return `#/${r.page}/${view}`;
   }
   if (r.page === "catalog" && r.catalog) {
     const c = r.catalog;

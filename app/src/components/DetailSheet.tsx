@@ -10,6 +10,7 @@ import { vitolaBlurb } from "../lib/vitolaInfo";
 import { resolveSamplerCigar } from "../lib/samplerLink";
 import { cigarItemId } from "../lib/cigarItemId";
 import { cigarDescription } from "../lib/cigarNote";
+import { needsVitolaPick } from "../lib/cigarVitola";
 import { Chip, Meter } from "./ui";
 import { BackButton } from "./BackButton";
 import {
@@ -101,13 +102,23 @@ export function DetailSheet({
         <div className="flex flex-wrap items-center gap-2">
           <Chip
             active={state.owned}
-            onClick={() =>
+            onClick={() => {
+              // multi-vitola linija bez odabrane veličine — Imam ide po vitoli
+              if (
+                active.kind === "cigar" &&
+                !state.owned &&
+                needsVitolaPick(active.item) &&
+                !active.item.selectedVitola
+              ) {
+                onOpenLine?.(active.item);
+                return;
+              }
               // kupljeno -> makni s liste zelja; skidanje "Imam" ne dira listu
               updateItem(
                 id,
                 state.owned ? { owned: false } : { owned: true, wishlist: false },
-              )
-            }
+              );
+            }}
           >
             ✓ {t("coll.owned")}
           </Chip>

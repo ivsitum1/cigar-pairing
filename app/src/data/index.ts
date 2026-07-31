@@ -13,7 +13,11 @@ import shoppingJson from "./shopping.json";
 import brandsJson from "./brands.json";
 import cigarIdAliasesJson from "./cigarIdAliases.json";
 import { applyVitola, resolveDefaultVitola } from "../lib/cigarVitola";
-import { parseCigarItemId, vitolaFromItemId } from "../lib/cigarItemId";
+import {
+  parseCigarItemId,
+  vitolaFromItemId,
+  VITOLA_ID_SEP,
+} from "../lib/cigarItemId";
 
 export const DRINKS: Record<DrinkCategory, Drink[]> = {
   rum: rums as unknown as Drink[],
@@ -131,6 +135,30 @@ export const brandSlug = (brand: string): string => slugifyLabel(brand);
 
 export const vitolaSlug = (v: Vitola | string): string =>
   slugifyLabel(typeof v === "string" ? v : v.name);
+
+/**
+ * Prati alias lanac do kanonskog string id-a (i kad zapis još nije u katalogu).
+ * Pića i nepoznati ključevi ostaju netaknuti.
+ */
+export function resolveCigarIdAlias(id: string): string {
+  let cur = id;
+  const seen = new Set<string>();
+  while (CIGAR_ID_ALIASES[cur] && !seen.has(cur)) {
+    seen.add(cur);
+    cur = CIGAR_ID_ALIASES[cur];
+  }
+  return cur;
+}
+
+/**
+ * Kanonski ključ stavke kolekcije/humidora: alias linije → live id,
+ * vitola-sufiks se zadržava (`alias@torpedo` → `canon@torpedo`).
+ */
+export function canonicalCigarItemId(itemId: string): string {
+  const { cigarId, vitolaSlug } = parseCigarItemId(itemId);
+  const canon = resolveCigarIdAlias(cigarId);
+  return vitolaSlug ? `${canon}${VITOLA_ID_SEP}${vitolaSlug}` : canon;
+}
 
 /** Prati cigarIdAliases.json do kanonskog zapisa (lanac aliasa). */
 export function resolveCigarId(id: string): Cigar | undefined {
