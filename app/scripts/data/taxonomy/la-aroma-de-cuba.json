@@ -2,12 +2,13 @@
   "brand": "La Aroma de Cuba",
   "renameBrand": null,
   "status": "done",
-  "reviewedAt": "2026-07-23",
+  "reviewedAt": "2026-08-01",
   "sources": [
     "https://ashtoncigar.com/",
     "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
     "phase3_w1_slice5 deterministic remaps",
-    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.1"
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.1",
+    "brand-line-split unify 2026-08-01 (Argyle/Bahia/Cain/Don Lino/Nat Sherman/Lunatic)"
   ],
   "lines": {
     "Connecticut": {
@@ -93,6 +94,9 @@
     "La Aroma del Caribe Mi Amor Valentino": {
       "line": "Mi Amor",
       "vitola": "Valentino"
+    },
+    "edicion especial no 5": {
+      "line": "Edición Especial #5"
     }
   },
   "vitolaRenames": {},

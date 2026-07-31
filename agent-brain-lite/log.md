@@ -9,8 +9,11 @@ updated: 2026-06-12
 
 | Datum | Događaj |
 |-------|---------|
+| 2026-08-01 | Orthography unify: Don Pepin→Don Pépin García; Aliados→Cuba Aliados; The Oscar→Oscar Valladares; 3711→3701 |
+| 2026-08-01 | House-line unify: CH/Foundation/Dunbarton children → kuća; linija zadržava ime marquea; blurbs objašnjavaju; 3738→3711 |
 | 2026-08-01 | Rum lab g/L Val 1: 17 boca (SB/Alko/FRP/Drejer) zamijenile stilsku procjenu; okusne note + flavorTags za tanke unose; skripte `apply-rum-lab-sugar.py` + `enrich-rum-taste-notes.py` |
 | 2026-07-31 | Rum cleanup: obrisani kombinirani/META unosi (12/18, Opthimus 15-18-21, Rodney/Chairman's/CDI/Trois Rivières/Goslings) kad postoje konkretne boce; katalog 330→321; Formidable +cigarHint; testovi OK |
+| 2026-08-01 | Brand-line unify: Argyle/Bahia/Cain/Don Lino/Nat Sherman/Lunatic→parent; apply-taxonomy source remap fix; La Aroma EE #5 |
 | 2026-07-31 | Four shops additive: Neptune sitemap + Exa curated Famous/C.Gars/La Couronne → cigars.json (2400→3756); baseline snapshot + ledger; UK/CH tip linka → izravan/pretraga |
 | 2026-07-31 | Coffee pairing overlay: `coffeePairing.ts` + model JSON; soft intensity/flavor/acidity rules wired into `scorePairing` |
 | 2026-07-30 | Triple NotebookLM grill (Cigars daily / Omaha / Black Gold) → wiki + Club `d-tasting-order` + lexicon + mala-knjiga/bonton |

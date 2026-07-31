@@ -17,6 +17,12 @@ updated: 2026-07-31
 
 > **2026-07-31:** Allez rum ingest (više batchova) → `rums.json` **305** boca. Skripte: `ingest-allez-rum-gaps.py` + `restore-allez-rum-batches.py` + `_run_allez_rum_full.py`; backup `scripts/output/rums-allez-latest.json` (OneDrive je jednom vratio stariju verziju).
 
+> **2026-08-01:** Orthography/parallel keys: Don Pepin→**Don Pépin García**; Aliados→**Cuba Aliados**; The Oscar→**Oscar Valladares** (linija The Oscar * na kartici). Katalog 3711→3701. Skripta `unify_orthography_brands.py`.
+
+> **2026-08-01:** House lines pod kuću + jasno označene: Four Kicks/La Imperiosa/Juarez/Mil Dias/Luminosa→**Crowned Heads**; Charter Oak/Tabernacle/Olmec/Menelik/El Güegüense/Wise Man→**Foundation**; Sobremesa/Mi Querida→**Dunbarton T&T**. Blurbs kažu da su imenovane linije kuće. Skripta `unify_house_lines.py`. Katalog 3738→3711.
+
+> **2026-08-01:** Brand≠line splits spojeni: Argyle Fumas, Bahia Blu, Cain*, Don Lino Fumas, Nat Sherman Host/Metropolitan/Timeless, Lunatic→JFR. Testovi integrity/data OK.
+
 > **2026-07-31:** Four shops → cigars.json (additive): baseline `baseline_four_shops_20260731`; Neptune sitemap (~4417) + Exa curated Famous/C.Gars/La Couronne; merge `merge_four_shops_additive.py` (nikad overwrite regionLinks; kubanke samo EU). Katalog 2400→3756; integrity/cigars.data/shops + tsc OK.
 
 > **2026-07-31:** Allez rum gap: +60 boca u `rums.json` (Martinique Clément/Depaz/HSE/J.M/Trois Rivières + A.H. Riise linija + Rodney/Banks/Chairman/CDI/Flor de Caña/Saint James 15). Cijene s Alleza; `priceUrl` kasnije (shop timeout). Skripta `ingest-allez-rum-gaps.py`. Katalog 193→253. Pairing testovi OK.

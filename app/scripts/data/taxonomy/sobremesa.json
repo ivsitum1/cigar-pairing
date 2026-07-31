@@ -1,21 +1,46 @@
 {
   "brand": "Sobremesa",
-  "renameBrand": null,
+  "renameBrand": "Dunbarton T&T",
   "status": "done",
-  "reviewedAt": "2026-07-24",
+  "reviewedAt": "2026-08-01",
   "sources": [
     "phase3_w3_w4_finish W3",
-    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3",
+    "house-line unify 2026-08-01 (CH / Foundation / Dunbarton — mark as named lines)"
   ],
   "lines": {
     "Fino": {
-      "line": "Fino"
+      "line": "Sobremesa Fino"
     },
     "Largo": {
-      "line": "Largo"
+      "line": "Sobremesa Largo"
     },
     "Short": {
-      "line": "Short"
+      "line": "Sobremesa Short"
+    },
+    "brulee": {
+      "line": "Sobremesa Brûlée"
+    },
+    "solita el americano": {
+      "line": "Sobremesa Solita El Americano"
+    },
+    "solita elegantes en cedros": {
+      "line": "Sobremesa Solita Elegantes en Cedros"
+    },
+    "solita gran imperiales": {
+      "line": "Sobremesa Solita Gran Imperiales"
+    },
+    "solita red": {
+      "line": "Sobremesa Solita Red"
+    },
+    "solita tiempo": {
+      "line": "Sobremesa Solita Tiempo"
+    },
+    "tapa negra 6 52": {
+      "line": "Sobremesa Tapa Negra"
+    },
+    "tapa negra gorda 55 8 48": {
+      "line": "Sobremesa Tapa Negra Gorda"
     }
   },
   "vitolaRenames": {},

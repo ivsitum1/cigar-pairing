@@ -1,23 +1,30 @@
 {
   "locale_twin_merges": [],
-  "semantic_merges": [],
-  "sampler_collapses": [],
-  "prefix_suspects": [
+  "semantic_merges": [
     {
-      "id": "cig-1502-emerald",
-      "brand": "1502",
-      "line": "Emerald",
-      "conflict": [
-        {
-          "name": "Emerald Lancero",
-          "format": "40 x 178mm"
-        },
-        {
-          "name": "Lancero",
-          "format": "40 x 189mm"
-        }
+      "id": "cig-don-pepin-garcia-pepin-garcia-vegas-cubanas",
+      "kept": "Generosos",
+      "dropped": [
+        "Generosos"
       ]
     },
+    {
+      "id": "cig-don-pepin-garcia-pepin-garcia-vegas-cubanas",
+      "kept": "Invictos",
+      "dropped": [
+        "Invictos"
+      ]
+    },
+    {
+      "id": "cig-don-pepin-garcia-pepin-garcia-vintage",
+      "kept": "Toro",
+      "dropped": [
+        "Toro"
+      ]
+    }
+  ],
+  "sampler_collapses": [],
+  "prefix_suspects": [
     {
       "id": "cig-a-flores-el-criollito",
       "brand": "A. Flores",
@@ -196,17 +203,47 @@
       ]
     },
     {
-      "id": "cig-don-pepin-garcia-pepin-garcia-original",
-      "brand": "Don Pépin García",
-      "line": "Pepin Garcia Original",
+      "id": "cig-dunbarton-t-t-sobremesa-brulee",
+      "brand": "Dunbarton T&T",
+      "line": "Sobremesa Brûlée",
       "conflict": [
         {
-          "name": "Gran Toro",
-          "format": "56 x 152mm"
+          "name": "Robusto",
+          "format": "50 x 124mm"
         },
         {
-          "name": "Gran Toro",
-          "format": "62 x 152mm"
+          "name": "Robusto",
+          "format": "52 x 127mm"
+        }
+      ]
+    },
+    {
+      "id": "cig-dunbarton-t-t-sobremesa-largo",
+      "brand": "Dunbarton T&T",
+      "line": "Sobremesa Largo",
+      "conflict": [
+        {
+          "name": "Robusto",
+          "format": "52 x 127mm"
+        },
+        {
+          "name": "Robusto",
+          "format": "52 x 133mm"
+        }
+      ]
+    },
+    {
+      "id": "cig-dunbarton-t-t-sobremesa-short",
+      "brand": "Dunbarton T&T",
+      "line": "Sobremesa Short",
+      "conflict": [
+        {
+          "name": "Churchill",
+          "format": "48 x 121mm"
+        },
+        {
+          "name": "Churchill",
+          "format": "48 x 182mm"
         }
       ]
     },
@@ -323,6 +360,36 @@
       "b": "Selva Fino",
       "format": "44 x 153mm",
       "price": 13.8
+    },
+    {
+      "id": "cig-foundation-tabernacle",
+      "brand": "Foundation",
+      "line": "Tabernacle",
+      "conflict": [
+        {
+          "name": "Corona",
+          "format": "42 x 140mm"
+        },
+        {
+          "name": "Corona",
+          "format": "46 x 133mm"
+        }
+      ]
+    },
+    {
+      "id": "cig-foundation-tabernacle",
+      "brand": "Foundation",
+      "line": "Tabernacle",
+      "conflict": [
+        {
+          "name": "Robusto",
+          "format": "50 x 124mm"
+        },
+        {
+          "name": "Robusto",
+          "format": "50 x 127mm"
+        }
+      ]
     },
     {
       "id": "cig-henry-clay-stalk-cut",
@@ -550,6 +617,21 @@
         {
           "name": "Torpedo",
           "format": "52 x 156mm"
+        }
+      ]
+    },
+    {
+      "id": "cig-nat-sherman-timeless-prestige",
+      "brand": "Nat Sherman",
+      "line": "Timeless Prestige",
+      "conflict": [
+        {
+          "name": "Robusto",
+          "format": "50 x 121mm"
+        },
+        {
+          "name": "Robusto",
+          "format": "50 x 127mm"
         }
       ]
     },
@@ -911,7 +993,15 @@
       ]
     }
   ],
-  "shared_region_urls": [],
+  "shared_region_urls": [
+    {
+      "url": "https://www.neptunecigar.com/cigars/cusano-18-paired-maduro-churchill",
+      "cigars": [
+        "cig-cusano-18-maduro",
+        "cig-cusano-18-paired-maduro"
+      ]
+    }
+  ],
   "duplicate_line_suspects": [
     {
       "brand": "Aganorsa Leaf",
@@ -942,6 +1032,13 @@
       "id_b": "cig-alec-bradley-project-40-maduro"
     },
     {
+      "brand": "Argyle",
+      "line_a": "Fumas",
+      "id_a": "cig-argyle-fumas",
+      "line_b": "Fumas Connecticut",
+      "id_b": "cig-argyle-fumas-connecticut"
+    },
+    {
       "brand": "Arturo Fuente",
       "line_a": "Don Carlos",
       "id_a": "cig-arturo-fuente-don-carlos",
@@ -961,6 +1058,13 @@
       "id_a": "cig-ashton-vsg",
       "line_b": "VSG (Virgin Sun Grown)",
       "id_b": "cig-ashton-vsg-virgin-sun-grown"
+    },
+    {
+      "brand": "Asylum",
+      "line_a": "13",
+      "id_a": "cig-asylum-13",
+      "line_b": "13 Connecticut",
+      "id_b": "cig-asylum-13-connecticut"
     },
     {
       "brand": "Balmoral",
@@ -1012,11 +1116,67 @@
       "id_b": "cig-casdagli-villa-exquisito"
     },
     {
+      "brand": "Crowned Heads",
+      "line_a": "Four Kicks",
+      "id_a": "cig-crowned-heads-four-kicks",
+      "line_b": "Four Kicks Mule Kick LE 2022",
+      "id_b": "cig-crowned-heads-four-kicks-mule-kick-le-2022"
+    },
+    {
+      "brand": "Crowned Heads",
+      "line_a": "La Imperiosa",
+      "id_a": "cig-crowned-heads-la-imperiosa",
+      "line_b": "la imperiosa double",
+      "id_b": "cig-crowned-heads-la-imperiosa-double"
+    },
+    {
+      "brand": "Crowned Heads",
+      "line_a": "La Imperiosa",
+      "id_a": "cig-crowned-heads-la-imperiosa",
+      "line_b": "la imperiosa dukes",
+      "id_b": "cig-crowned-heads-la-imperiosa-dukes"
+    },
+    {
+      "brand": "Crowned Heads",
+      "line_a": "La Imperiosa",
+      "id_a": "cig-crowned-heads-la-imperiosa",
+      "line_b": "la imperiosa gorda",
+      "id_b": "cig-crowned-heads-la-imperiosa-gorda"
+    },
+    {
+      "brand": "Crowned Heads",
+      "line_a": "La Imperiosa",
+      "id_a": "cig-crowned-heads-la-imperiosa",
+      "line_b": "la imperiosa magicos",
+      "id_b": "cig-crowned-heads-la-imperiosa-magicos"
+    },
+    {
+      "brand": "Crowned Heads",
+      "line_a": "Mil Dias",
+      "id_a": "cig-crowned-heads-mil-dias",
+      "line_b": "Mil Dias Des Deux LE 2025",
+      "id_b": "cig-crowned-heads-mil-dias-des-deux-le-2025"
+    },
+    {
       "brand": "Davidoff",
       "line_a": "Winston Churchill",
       "id_a": "cig-davidoff-winston-churchill",
       "line_b": "Winston Churchill The Late Hour",
       "id_b": "cig-davidoff-winston-churchill-the-late-hour"
+    },
+    {
+      "brand": "Don Lino",
+      "line_a": "Fumas",
+      "id_a": "cig-don-lino-fumas",
+      "line_b": "Fumas Connecticut",
+      "id_b": "cig-don-lino-fumas-connecticut"
+    },
+    {
+      "brand": "Don Pépin García",
+      "line_a": "Pepin Garcia Serie JJ",
+      "id_a": "cig-don-pepin-garcia-pepin-garcia-serie-jj",
+      "line_b": "Pepin Garcia Serie JJ 20th Anniversary",
+      "id_b": "cig-don-pepin-garcia-pepin-garcia-serie-jj-20th-anniversary"
     },
     {
       "brand": "Don Pépin García",
@@ -1097,6 +1257,118 @@
     },
     {
       "brand": "Dunbarton T&T",
+      "line_a": "Mi Querida",
+      "id_a": "cig-dunbarton-t-t-mi-querida",
+      "line_b": "Mi Querida Ancho Corto",
+      "id_b": "cig-dunbarton-t-t-mi-querida-ancho-corto"
+    },
+    {
+      "brand": "Dunbarton T&T",
+      "line_a": "Mi Querida",
+      "id_a": "cig-dunbarton-t-t-mi-querida",
+      "line_b": "Mi Querida Ancho Largo",
+      "id_b": "cig-dunbarton-t-t-mi-querida-ancho-largo"
+    },
+    {
+      "brand": "Dunbarton T&T",
+      "line_a": "Mi Querida",
+      "id_a": "cig-dunbarton-t-t-mi-querida",
+      "line_b": "Mi Querida Black Papasaka",
+      "id_b": "cig-dunbarton-t-t-mi-querida-black-papasaka"
+    },
+    {
+      "brand": "Dunbarton T&T",
+      "line_a": "Mi Querida",
+      "id_a": "cig-dunbarton-t-t-mi-querida",
+      "line_b": "Mi Querida Black Sakakhan",
+      "id_b": "cig-dunbarton-t-t-mi-querida-black-sakakhan"
+    },
+    {
+      "brand": "Dunbarton T&T",
+      "line_a": "Mi Querida",
+      "id_a": "cig-dunbarton-t-t-mi-querida",
+      "line_b": "Mi Querida Black Unicorn",
+      "id_b": "cig-dunbarton-t-t-mi-querida-black-unicorn"
+    },
+    {
+      "brand": "Dunbarton T&T",
+      "line_a": "Mi Querida",
+      "id_a": "cig-dunbarton-t-t-mi-querida",
+      "line_b": "Mi Querida Fino Largo",
+      "id_b": "cig-dunbarton-t-t-mi-querida-fino-largo"
+    },
+    {
+      "brand": "Dunbarton T&T",
+      "line_a": "Mi Querida",
+      "id_a": "cig-dunbarton-t-t-mi-querida",
+      "line_b": "Mi Querida Gordita",
+      "id_b": "cig-dunbarton-t-t-mi-querida-gordita"
+    },
+    {
+      "brand": "Dunbarton T&T",
+      "line_a": "Mi Querida",
+      "id_a": "cig-dunbarton-t-t-mi-querida",
+      "line_b": "Mi Querida Gorila",
+      "id_b": "cig-dunbarton-t-t-mi-querida-gorila"
+    },
+    {
+      "brand": "Dunbarton T&T",
+      "line_a": "Mi Querida",
+      "id_a": "cig-dunbarton-t-t-mi-querida",
+      "line_b": "Mi Querida Gran Búfalo",
+      "id_b": "cig-dunbarton-t-t-mi-querida-gran-bufalo"
+    },
+    {
+      "brand": "Dunbarton T&T",
+      "line_a": "Mi Querida",
+      "id_a": "cig-dunbarton-t-t-mi-querida",
+      "line_b": "Mi Querida Muy",
+      "id_b": "cig-dunbarton-t-t-mi-querida-muy"
+    },
+    {
+      "brand": "Dunbarton T&T",
+      "line_a": "Mi Querida",
+      "id_a": "cig-dunbarton-t-t-mi-querida",
+      "line_b": "Mi Querida Tripa Larga",
+      "id_b": "cig-dunbarton-t-t-mi-querida-tripa-larga"
+    },
+    {
+      "brand": "Dunbarton T&T",
+      "line_a": "Mi Querida",
+      "id_a": "cig-dunbarton-t-t-mi-querida",
+      "line_b": "Mi Querida Triqui Traca No. 448",
+      "id_b": "cig-dunbarton-t-t-mi-querida-triqui-traca-no-448"
+    },
+    {
+      "brand": "Dunbarton T&T",
+      "line_a": "Mi Querida",
+      "id_a": "cig-dunbarton-t-t-mi-querida",
+      "line_b": "Mi Querida Triqui Traca No. 552",
+      "id_b": "cig-dunbarton-t-t-mi-querida-triqui-traca-no-552"
+    },
+    {
+      "brand": "Dunbarton T&T",
+      "line_a": "Mi Querida",
+      "id_a": "cig-dunbarton-t-t-mi-querida",
+      "line_b": "Mi Querida Triqui Traca No. 648",
+      "id_b": "cig-dunbarton-t-t-mi-querida-triqui-traca-no-648"
+    },
+    {
+      "brand": "Dunbarton T&T",
+      "line_a": "Mi Querida",
+      "id_a": "cig-dunbarton-t-t-mi-querida",
+      "line_b": "Mi Querida Triqui Traca No. 652",
+      "id_b": "cig-dunbarton-t-t-mi-querida-triqui-traca-no-652"
+    },
+    {
+      "brand": "Dunbarton T&T",
+      "line_a": "Mi Querida",
+      "id_a": "cig-dunbarton-t-t-mi-querida",
+      "line_b": "Mi Querida Triqui Traca No. 764",
+      "id_b": "cig-dunbarton-t-t-mi-querida-triqui-traca-no-764"
+    },
+    {
+      "brand": "Dunbarton T&T",
       "line_a": "Sobremesa",
       "id_a": "cig-dunbarton-t-t-sobremesa",
       "line_b": "Sobremesa Brûlée",
@@ -1122,6 +1394,62 @@
       "id_a": "cig-dunbarton-t-t-sobremesa",
       "line_b": "Sobremesa Short",
       "id_b": "cig-dunbarton-t-t-sobremesa-short"
+    },
+    {
+      "brand": "Dunbarton T&T",
+      "line_a": "Sobremesa",
+      "id_a": "cig-dunbarton-t-t-sobremesa",
+      "line_b": "Sobremesa Solita El Americano",
+      "id_b": "cig-dunbarton-t-t-sobremesa-solita-el-americano"
+    },
+    {
+      "brand": "Dunbarton T&T",
+      "line_a": "Sobremesa",
+      "id_a": "cig-dunbarton-t-t-sobremesa",
+      "line_b": "Sobremesa Solita Elegantes en Cedros",
+      "id_b": "cig-dunbarton-t-t-sobremesa-solita-elegantes-en-cedros"
+    },
+    {
+      "brand": "Dunbarton T&T",
+      "line_a": "Sobremesa",
+      "id_a": "cig-dunbarton-t-t-sobremesa",
+      "line_b": "Sobremesa Solita Gran Imperiales",
+      "id_b": "cig-dunbarton-t-t-sobremesa-solita-gran-imperiales"
+    },
+    {
+      "brand": "Dunbarton T&T",
+      "line_a": "Sobremesa",
+      "id_a": "cig-dunbarton-t-t-sobremesa",
+      "line_b": "Sobremesa Solita Red",
+      "id_b": "cig-dunbarton-t-t-sobremesa-solita-red"
+    },
+    {
+      "brand": "Dunbarton T&T",
+      "line_a": "Sobremesa",
+      "id_a": "cig-dunbarton-t-t-sobremesa",
+      "line_b": "Sobremesa Solita Tiempo",
+      "id_b": "cig-dunbarton-t-t-sobremesa-solita-tiempo"
+    },
+    {
+      "brand": "Dunbarton T&T",
+      "line_a": "Sobremesa",
+      "id_a": "cig-dunbarton-t-t-sobremesa",
+      "line_b": "Sobremesa Tapa Negra",
+      "id_b": "cig-dunbarton-t-t-sobremesa-tapa-negra"
+    },
+    {
+      "brand": "Dunbarton T&T",
+      "line_a": "Sobremesa",
+      "id_a": "cig-dunbarton-t-t-sobremesa",
+      "line_b": "Sobremesa Tapa Negra Gorda",
+      "id_b": "cig-dunbarton-t-t-sobremesa-tapa-negra-gorda"
+    },
+    {
+      "brand": "Dunbarton T&T",
+      "line_a": "Sobremesa Tapa Negra",
+      "id_a": "cig-dunbarton-t-t-sobremesa-tapa-negra",
+      "line_b": "Sobremesa Tapa Negra Gorda",
+      "id_b": "cig-dunbarton-t-t-sobremesa-tapa-negra-gorda"
     },
     {
       "brand": "Eiroa",
@@ -1213,6 +1541,34 @@
       "id_a": "cig-jaime-garcia-garcia-reserva-especial",
       "line_b": "Garcia Reserva Especial Sucesor",
       "id_b": "cig-jaime-garcia-garcia-reserva-especial-sucesor"
+    },
+    {
+      "brand": "JFR",
+      "line_a": "Lunatic Maduro",
+      "id_a": "cig-jfr-lunatic-maduro",
+      "line_b": "lunatic maduro 10010",
+      "id_b": "cig-jfr-lunatic-maduro-10010"
+    },
+    {
+      "brand": "JFR",
+      "line_a": "Lunatic Maduro",
+      "id_a": "cig-jfr-lunatic-maduro",
+      "line_b": "lunatic maduro hombre libre 6 54",
+      "id_b": "cig-jfr-lunatic-maduro-hombre-libre-6-54"
+    },
+    {
+      "brand": "JFR",
+      "line_a": "Lunatic Maduro",
+      "id_a": "cig-jfr-lunatic-maduro",
+      "line_b": "lunatic maduro la loma",
+      "id_b": "cig-jfr-lunatic-maduro-la-loma"
+    },
+    {
+      "brand": "JFR",
+      "line_a": "Lunatic Maduro",
+      "id_a": "cig-jfr-lunatic-maduro",
+      "line_b": "lunatic maduro la montana",
+      "id_b": "cig-jfr-lunatic-maduro-la-montana"
     },
     {
       "brand": "Joya de Nicaragua",
@@ -2267,25 +2623,6 @@
       "status": "already_applied"
     },
     {
-      "canonical": "cig-don-pepin-original",
-      "absorbed": [
-        "cig-don-pepin-original-delicias",
-        "cig-don-pepin-original-gordos"
-      ],
-      "line": "Original",
-      "reason": "Size suffix \"Delicias\" of Original; not a separate commercial line.",
-      "status": "already_applied"
-    },
-    {
-      "canonical": "cig-don-pepin-vc",
-      "absorbed": [
-        "cig-don-pepin-vc-invictos"
-      ],
-      "line": "VC",
-      "reason": "Size suffix \"Invictos\" of VC; not a separate commercial line.",
-      "status": "already_applied"
-    },
-    {
       "canonical": "cig-don-zuarin-clar",
       "absorbed": [
         "cig-don-zuarin-clar-double"
@@ -2321,15 +2658,6 @@
       ],
       "line": "First 20 Years Colorado",
       "reason": "Size suffix \"Gordo\" of First 20 Years Colorado; not a separate commercial line.",
-      "status": "already_applied"
-    },
-    {
-      "canonical": "cig-el-gueguense-el-gueguense",
-      "absorbed": [
-        "cig-el-gueguense-el-gueguense-huaco"
-      ],
-      "line": "El Güegüense",
-      "reason": "Size suffix \"Huaco\" of El Güegüense; not a separate commercial line.",
       "status": "already_applied"
     },
     {
@@ -3053,15 +3381,6 @@
       "status": "already_applied"
     },
     {
-      "canonical": "cig-the-tabernacle-havana-seed-ct-142",
-      "absorbed": [
-        "cig-the-tabernacle-havana-seed-ct-142-doble"
-      ],
-      "line": "Havana Seed CT 142",
-      "reason": "Size suffix \"Doble\" of Havana Seed CT 142; not a separate commercial line.",
-      "status": "already_applied"
-    },
-    {
       "canonical": "cig-vedado-classic",
       "absorbed": [
         "cig-vedado-classic-mini"
@@ -3160,24 +3479,6 @@
       ],
       "line": "La Meridiana",
       "reason": "Size suffix \"Grande\" of La Meridiana; not a separate commercial line.",
-      "status": "already_applied"
-    },
-    {
-      "canonical": "cig-wise-man-corojo",
-      "absorbed": [
-        "cig-wise-man-corojo-doble"
-      ],
-      "line": "Corojo",
-      "reason": "Size suffix \"Doble\" of Corojo; not a separate commercial line.",
-      "status": "already_applied"
-    },
-    {
-      "canonical": "cig-wise-man-maduro",
-      "absorbed": [
-        "cig-wise-man-maduro-doble"
-      ],
-      "line": "Maduro",
-      "reason": "Size suffix \"Doble\" of Maduro; not a separate commercial line.",
       "status": "already_applied"
     },
     {
@@ -3522,7 +3823,7 @@
       "absorbed": [
         "cig-nat-sherman-timeless-prestige-divinos"
       ],
-      "line": "Prestige",
+      "line": "Timeless Prestige",
       "reason": "Suffix \"Divinos\" treated as size/named vitola of Prestige.",
       "status": "already_applied"
     },
@@ -6286,7 +6587,15 @@
     }
   ],
   "listing_demotions": [],
-  "price_url_scrubs": [],
+  "price_url_scrubs": [
+    {
+      "id": "cig-oliva-serie-v-melanio",
+      "line": "Serie V / Melanio",
+      "was": "https://www.cgarsltd.co.uk/oliva-serie-melanio-gran-reserva-robusto-cigar-single-p-13643.html",
+      "now": "https://havana-cigar-shop.com/proizvod/oliva-serie-v-melanio-figurado-10/",
+      "reason": "URL serie melanio ≠ line serie v"
+    }
+  ],
   "link_fixes": [
     {
       "id": "cig-oliva-serie-v",

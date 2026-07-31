@@ -2,11 +2,12 @@
   "brand": "Cuba Aliados",
   "renameBrand": null,
   "status": "done",
-  "reviewedAt": "2026-07-24",
+  "reviewedAt": "2026-08-01",
   "sources": [
     "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
     "phase3_w3_w4_finish W3",
-    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3",
+    "orthography/house unify 2026-08-01 (Don Pepin / Aliados / The Oscar)"
   ],
   "lines": {
     "Limitado Zeppelin": {
@@ -20,6 +21,12 @@
     },
     "Vintage": {
       "line": "Vintage"
+    },
+    "by epc": {
+      "line": "by EPC"
+    },
+    "natural": {
+      "line": "Natural"
     }
   },
   "vitolaRenames": {},
