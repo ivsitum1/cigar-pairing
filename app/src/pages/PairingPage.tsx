@@ -499,8 +499,19 @@ export function PairingPage() {
                       label: d.name,
                     }))
               }
+              enableReceipt={mode === "cigarToDrink"}
+              onConfirmCigar={(id, action) => {
+                if (action === "dismiss") return;
+                if (mode !== "cigarToDrink") return;
+                const c = resolveCigarId(id) ?? marketCigars.find((x) => x.id === id);
+                if (!c) return;
+                if (action === "pair") {
+                  pickCigar(c);
+                  return;
+                }
+                openCigar(c);
+              }}
               onMatch={(id) => {
-                // OCR prepoznato -> otvori karticu (može se odmah označiti u kolekciju)
                 if (mode === "cigarToDrink") {
                   const c = resolveCigarId(id) ?? marketCigars.find((x) => x.id === id);
                   if (c) openCigar(c);
