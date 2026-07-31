@@ -14,7 +14,7 @@ const CURATED_RUM_NOTE_IDS = [
   "rum-hampden-hlcf-classic-60",
   "rum-havana-club-tributo",
   "rum-mount-gay-1703",
-  "rum-admiral-rodney-st-lucia",
+  "rum-admiral-rodney-hms-formidable",
   "rum-appleton-estate-15-black-river",
   "rum-appleton-estate-21",
   "rum-chairman-s-reserve-1931",

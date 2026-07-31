@@ -2,12 +2,28 @@
 title: Session Hot Cache
 category: meta
 tags: [session, cache]
-updated: 2026-07-30
+updated: 2026-07-31
 ---
 
 # Session Hot Cache
 
 ~500 riječi snapshot nedavne aktivnosti. Agent ažurira nakon svake značajnije operacije pisanja u wiki.
+
+> **2026-08-01:** Rum lab/hidrometar Val 1: **17** boca dobile stvarni g/L (Systembolaget/FRP/Drejer) umjesto stilske procjene — mapa `scripts/data/rum-lab-sugar.json`. Okusne note + tagovi: tanki unosi popunjeni (notes ispod 80 → 0; tags ispod 3 → 0). Ostalih ~135 stilskih bez mjerenja nije dirano. Skripte `apply-rum-lab-sugar.py`, `enrich-rum-taste-notes.py`.
+
+> **2026-07-31:** Rum cleanup kombiniranih unosa: ako postoje obje polovice (npr. Flor 12+18) → briši `12/18`; ako samo jedna → preimenuj stari u drugu. Ne uvoziti „sa 2 čaše”. Obrisano 9 supersedanih/META; katalog **321**. Formidable dobio `cigarHint` (curatedNotes). Skripta `cleanup-combined-rums.py`.
+
+> **2026-07-31:** Allez rum enrichment: **181** boca — opisi HR+EN, šećer+boja (E150) u `additiveDetail`, urednički `qualityScore`. Izvori: AOC / dekl. proizvođača / stilska procjena (bez izmišljenih g/L). Skripte `enrich-allez-rums.py` + `enrich-allez-rums-b.py`. Katalog bio **330**, sad **321** nakon cleanup.
+
+> **2026-07-31:** Allez rum ingest (više batchova) → `rums.json` **305** boca. Skripte: `ingest-allez-rum-gaps.py` + `restore-allez-rum-batches.py` + `_run_allez_rum_full.py`; backup `scripts/output/rums-allez-latest.json` (OneDrive je jednom vratio stariju verziju).
+
+> **2026-07-31:** Four shops → cigars.json (additive): baseline `baseline_four_shops_20260731`; Neptune sitemap (~4417) + Exa curated Famous/C.Gars/La Couronne; merge `merge_four_shops_additive.py` (nikad overwrite regionLinks; kubanke samo EU). Katalog 2400→3756; integrity/cigars.data/shops + tsc OK.
+
+> **2026-07-31:** Allez rum gap: +60 boca u `rums.json` (Martinique Clément/Depaz/HSE/J.M/Trois Rivières + A.H. Riise linija + Rodney/Banks/Chairman/CDI/Flor de Caña/Saint James 15). Cijene s Alleza; `priceUrl` kasnije (shop timeout). Skripta `ingest-allez-rum-gaps.py`. Katalog 193→253. Pairing testovi OK.
+
+> **2026-07-31:** Coffee↔cigar overlay (`engine/coffeePairing.ts`): izvor znanja o kavi = Hoffmann *The World Atlas of Coffee*; cigar-pairing pravila izvedena (balance/intensity/harmony), ne doslovno iz knjige. Soft rules + `data/coffeePairingModel.json`. Body-first. Testovi OK.
+
+> **2026-07-31:** Cusano katalog: Bundle Selection (HR+EU) + **Honduras Bundle** (EU) + **18 Double Connecticut** / **18 Maduro** (USA). Maknut krivi Holts Connecticut s Bundlea. Taxonomy `cusano.json` done. Testovi integrity/cigars OK.
 
 > **2026-07-30:** Triple NotebookLM grill — `7b267552` Cigars daily · `6ccc327c` Omaha value · `30d6a797` Black Gold. Dumpovi `research/notebooklm-grill/{uuid}-*`. Wiki: value-vs-price-stol, rum-tasting-host, limited-edition-culture. App: Club `d-tasting-order`, 3 lexicon termina, mala-knjiga/`bonton.json` precepti. Gentleman EN/HR freeze netaknut.
 
