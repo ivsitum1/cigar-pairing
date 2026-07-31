@@ -117,6 +117,7 @@ describe("pairing engine — body-log kazna", () => {
       priceEUR: null,
       vitolas: [],
       markets: ["WW"],
+      availabilityHR: [],
       notes: { hr: "", en: "" },
     }) as Cigar;
 
