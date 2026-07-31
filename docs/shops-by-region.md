@@ -3,11 +3,11 @@
 Detaljan popis trgovina koje app koristi za "gdje kupiti" linkove. Izvor istine u
 kodu je `app/src/data/shops.ts`; ovaj dokument je čitljiva referenca uz njega.
 
-Filter regije (**Sve · Hrvatska · EU · USA**) u Katalogu i Pairingu radi ovako:
+Filter regije (**Sve · Hrvatska · Europa · USA**) u Katalogu i Pairingu radi ovako:
 
 - **Sve** (zadano, bez filtera) — prikazuje **sve** cigare, sortirano; u detalju
   cigare prikazuje trgovine svih regija u kojima je cigara dostupna.
-- **Hrvatska / EU / USA** — filtrira popis na cigare dostupne u toj regiji i
+- **Hrvatska / Europa / USA** — filtrira popis na cigare dostupne u toj regiji i
   prikazuje **samo** trgovine te regije.
 
 Dostupnost cigare po regiji dolazi iz `markets` polja svakog zapisa u
@@ -29,18 +29,24 @@ nazivu. **HR cijena je jedina scrapana** i prikazuje se i u filteru "Sve".
 
 | Trgovina | Link | Tip linka | Napomena |
 |----------|------|-----------|----------|
-| CigarWorld | <https://www.cigarworld.de/en> | pretraga po nazivu | Njemačka — dostava po EU |
+| CigarWorld | <https://www.cigarworld.de/en> | izravan / pretraga | Njemačka — dostava po Europi |
+| C.Gars Ltd | <https://www.cgarsltd.co.uk/> | izravan / pretraga | UK — najveći online specijalist (EMS Havana) |
+| La Couronne | <https://cigarpassion.ch/en/> | izravan / pretraga | Švicarska — ekskluzivni Habanos uvoznik |
 
+UK i Švicarska nisu EU države, ali u app filteru ulaze u regiju **Europa**
+zajedno s CigarWorldom — interni kod marketa ostaje `EU`.
 ## 🇺🇸 USA
 
 | Trgovina | Link | Tip linka | Napomena |
 |----------|------|-----------|----------|
-| Holt's | <https://www.holts.com/> | pretraga po nazivu | Philadelphia — klasična US kuća |
-| Cigars Daily | <https://cigarsdaily.com/> | pretraga po nazivu | US ponude i recenzije |
+| Holt's | <https://www.holts.com/> | listing / pretraga | Philadelphia — klasična US kuća |
+| Cigars Daily | <https://cigarsdaily.com/> | izravan / pretraga | US ponude i recenzije |
+| Famous Smoke | <https://www.famous-smoke.com/> | izravan / pretraga | Pennsylvania — velik katalog |
+| Neptune Cigar | <https://www.neptunecigar.com/> | izravan / pretraga | Florida — online + ducani |
 
-EU/USA trgovine nemaju scrapane linkove po proizvodu, pa app vodi na pretragu po
-`"{brand} {line}"`. Cijena se za EU/USA **ne prikazuje** (ne izmišlja se broj bez
-javnog izvora).
+Kad postoji `regionLinks.USA` ili product URL na poznatom `productHost`, app vodi
+izravno na proizvod; inače na pretragu `"{brand} {line}"`. EU/USA cijena se
+prikazuje samo kad je scrapana (`regionLinks.*.priceEUR`), inače `null`.
 
 ## Dodavanje / izmjena trgovine
 

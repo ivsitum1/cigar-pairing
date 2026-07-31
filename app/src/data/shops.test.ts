@@ -64,3 +64,25 @@ describe("Tobacco Petica (Branimir centar)", () => {
     }
   });
 });
+
+describe("EU UK / Švicarska referentne trgovine", () => {
+  it("C.Gars Ltd (UK) i La Couronne (CH) su u EU registru", () => {
+    const uk = SHOPS.find((s) => s.id === "cgars-uk");
+    const ch = SHOPS.find((s) => s.id === "la-couronne-ch");
+    expect(uk?.region).toBe("EU");
+    expect(uk?.productHost).toBe("cgarsltd.co.uk");
+    expect(uk?.home).toContain("cgarsltd.co.uk");
+    expect(ch?.region).toBe("EU");
+    expect(ch?.productHost).toBe("cigarpassion.ch");
+    expect(ch?.home).toContain("cigarpassion.ch");
+  });
+
+  it("EU cigara dobiva search linkove na C.Gars i La Couronne", () => {
+    const eu = cigars.find((c) => c.markets.includes("EU"));
+    expect(eu).toBeDefined();
+    const shops = cigarShopLinks(eu!).filter((l) => l.region === "EU").map((l) => l.shop);
+    expect(shops).toContain("CigarWorld");
+    expect(shops).toContain("C.Gars Ltd");
+    expect(shops).toContain("La Couronne");
+  });
+});

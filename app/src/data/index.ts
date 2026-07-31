@@ -331,13 +331,17 @@ export interface CigarShopLink {
 
 /**
  * Listing / brand pages — not a single product SKU.
- * Holt's /all-cigar-brands/*.html and Havana /product-brand/* are line/brand indexes.
+ * Holt's /all-cigar-brands/*.html, Havana /product-brand/*, Famous /brand(s|group)/,
+ * Neptune /cigar/ (line index; products live under /cigars/).
  */
 export function isLineListingUrl(url: string | null | undefined): boolean {
   if (!url) return false;
   return (
     /holts\.com\/cigars\/all-cigar-brands\/[^/?#]+\.html/i.test(url) ||
-    /\/(?:en\/)?product-brand\//i.test(url)
+    /\/(?:en\/)?product-brand\//i.test(url) ||
+    /famous-smoke\.com\/brands?\//i.test(url) ||
+    /famous-smoke\.com\/brandgroup\//i.test(url) ||
+    /neptunecigar\.com\/cigar\//i.test(url)
   );
 }
 

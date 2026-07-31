@@ -157,6 +157,29 @@ describe("cigars.json integrity", () => {
     expect(holts!.exact).toBe(false);
   });
 
+  it("Famous / Neptune brand i line stranice su listing, product URL-ovi nisu", () => {
+    expect(
+      isLineListingUrl("https://www.famous-smoke.com/brands/cusano-cigars/cusano-18"),
+    ).toBe(true);
+    expect(isLineListingUrl("https://www.famous-smoke.com/brand/cusano-18-cigars")).toBe(true);
+    expect(isLineListingUrl("https://www.neptunecigar.com/cigar/cusano-18")).toBe(true);
+    expect(
+      isLineListingUrl("https://www.famous-smoke.com/cusano-18-robusto-cigars-natural"),
+    ).toBe(false);
+    expect(isLineListingUrl("https://www.neptunecigar.com/cigars/cusano-18-robusto")).toBe(
+      false,
+    );
+  });
+
+  it("Cusano 18 ima exact USA linkove na Neptune i Famous", () => {
+    const ct = CIGARS.find((c) => c.id === "cig-cusano-18-double-connecticut")!;
+    const links = cigarShopLinks(ct).filter((l) => l.region === "USA" && l.exact);
+    expect(links.some((l) => l.shop === "Neptune Cigar")).toBe(true);
+    expect(links.some((l) => l.shop === "Famous Smoke")).toBe(true);
+    expect(ct.regionLinks?.USA?.url).toContain("neptunecigar.com");
+    expect(ct.vitolas.find((v) => v.name === "Robusto")?.url).toContain("famous-smoke.com");
+  });
+
   it("Serie V / Melanio priceUrl nije Serie O", () => {
     for (const id of ["cig-oliva-serie-v", "cig-oliva-serie-v-melanio"] as const) {
       const c = CIGARS.find((x) => x.id === id);
@@ -226,8 +249,12 @@ describe("cigars.json integrity", () => {
     expect(hosts("HR").some((h) => h.includes("humidor.hr"))).toBe(true);
     expect(hosts("HR").some((h) => h.includes("havana-cigar-shop.com"))).toBe(true);
     expect(hosts("EU").some((h) => h.includes("cigarworld.de"))).toBe(true);
+    expect(hosts("EU").some((h) => h.includes("cgarsltd.co.uk"))).toBe(true);
+    expect(hosts("EU").some((h) => h.includes("cigarpassion.ch"))).toBe(true);
     expect(hosts("USA").some((h) => h.includes("holts.com"))).toBe(true);
     expect(hosts("USA").some((h) => h.includes("cigarsdaily.com"))).toBe(true);
+    expect(hosts("USA").some((h) => h.includes("famous-smoke.com"))).toBe(true);
+    expect(hosts("USA").some((h) => h.includes("neptunecigar.com"))).toBe(true);
     // regije koje cigara ne pokriva se ne pojavljuju
     const hrOnly = CIGARS.find((c) => !c.markets.includes("EU") && !c.markets.includes("USA"));
     if (hrOnly) {
@@ -260,11 +287,40 @@ describe("cigars.json integrity", () => {
     expect(bad.map((c) => c.id)).toEqual([]);
   });
 
+  it("Cusano USA — Famous i Neptune exact product URL-ovi u katalogu", () => {
+    // Full four-shop inventory ingest is a separate ship; this commit wires
+    // Cusano 18 (+ related) product URLs on Famous/Neptune only.
+    const minByHost: Record<string, number> = {
+      "famous-smoke.com": 5,
+      "neptunecigar.com": 5,
+    };
+    const counts: Record<string, number> = Object.fromEntries(
+      Object.keys(minByHost).map((h) => [h, 0]),
+    );
+    const collect = (url: string | undefined) => {
+      if (!url) return;
+      for (const host of Object.keys(minByHost)) {
+        if (url.includes(host)) counts[host]! += 1;
+      }
+    };
+    for (const c of CIGARS) {
+      for (const link of Object.values(c.regionLinks ?? {})) collect(link.url);
+      collect(c.priceUrl);
+      for (const v of c.vitolas ?? []) {
+        collect(v.url);
+        for (const link of Object.values(v.regionLinks ?? {})) collect(link.url);
+      }
+    }
+    for (const [host, min] of Object.entries(minByHost)) {
+      expect(counts[host], host).toBeGreaterThanOrEqual(min);
+    }
+  });
+
   it("regionLinks — host odgovara regiji; EU/USA link postoji (listing ≠ exact)", () => {
     const hostByRegion: Record<string, string[]> = {
       HR: ["humidor.hr", "havana-cigar-shop.com"],
-      EU: ["cigarworld.de"],
-      USA: ["holts.com", "cigarsdaily.com"],
+      EU: ["cigarworld.de", "cgarsltd.co.uk", "cigarpassion.ch"],
+      USA: ["holts.com", "cigarsdaily.com", "famous-smoke.com", "neptunecigar.com"],
     };
     const bad: string[] = [];
     for (const c of CIGARS) {
