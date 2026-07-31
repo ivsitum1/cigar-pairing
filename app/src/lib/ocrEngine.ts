@@ -1,4 +1,4 @@
-/** Hybrid OCR: optional online API → embedded PaddleOCR.js → tesseract. */
+/** Hybrid OCR: tesseract for labels, paddleocr-js for receipts, optional API. */
 import { preprocessImage } from "./ocrPreprocess";
 import {
   apiBaseUrl,
@@ -48,13 +48,29 @@ function parsePaddleResult(result: unknown): { text: string; lines: OcrLine[] } 
   return { text: lines.map((l) => l.text).join("\n"), lines };
 }
 
+/** Reject empty / low-confidence paddle output so we can fall through to tesseract. */
+export function isUsableOcr(result: OcrEngineResult | null | undefined): boolean {
+  if (!result) return false;
+  const text = result.text.replace(/\s+/g, " ").trim();
+  if (text.length < 4) return false;
+  const confs = result.lines.map((l) => l.confidence).filter((c) => c > 0);
+  if (confs.length >= 2) {
+    const avg = confs.reduce((a, b) => a + b, 0) / confs.length;
+    // paddleocr-js scores are typically 0–1
+    if (avg < 0.35) return false;
+  }
+  // mostly digits / symbols → useless for brand matching
+  const letters = (text.match(/[a-zA-ZÀ-ž]/g) ?? []).length;
+  if (letters < 3) return false;
+  return true;
+}
+
 async function getPaddleJs(): Promise<PaddleInstance | null> {
   if (!paddleSingleton) {
     paddleSingleton = (async () => {
       try {
         const mod = await import("@paddleocr/paddleocr-js");
         if (!mod?.PaddleOCR?.create) return null;
-        // latin/en brand names on cigars & HR receipts
         const ocr = await mod.PaddleOCR.create({
           lang: "en",
           ocrVersion: "PP-OCRv5",
@@ -72,6 +88,38 @@ async function getPaddleJs(): Promise<PaddleInstance | null> {
     })();
   }
   return paddleSingleton;
+}
+
+/** Downscale huge phone photos — browser OCR chokes on 12MP+ shots. */
+async function downscaleForOcr(file: File, maxSide = 1600): Promise<Blob> {
+  try {
+    const bmp = await createImageBitmap(file);
+    const side = Math.max(bmp.width, bmp.height);
+    if (side <= maxSide) {
+      bmp.close();
+      return file;
+    }
+    const scale = maxSide / side;
+    const w = Math.max(1, Math.round(bmp.width * scale));
+    const h = Math.max(1, Math.round(bmp.height * scale));
+    const canvas = document.createElement("canvas");
+    canvas.width = w;
+    canvas.height = h;
+    const ctx = canvas.getContext("2d");
+    if (!ctx) {
+      bmp.close();
+      return file;
+    }
+    ctx.imageSmoothingQuality = "high";
+    ctx.drawImage(bmp, 0, 0, w, h);
+    bmp.close();
+    const blob = await new Promise<Blob | null>((resolve) =>
+      canvas.toBlob(resolve, "image/jpeg", 0.92),
+    );
+    return blob ?? file;
+  } catch {
+    return file;
+  }
 }
 
 async function ocrOnline(file: File): Promise<OcrEngineResult | null> {
@@ -109,7 +157,8 @@ async function ocrPaddleJs(file: File): Promise<OcrEngineResult | null> {
   try {
     const ocr = await getPaddleJs();
     if (!ocr) return null;
-    const raw = await ocr.predict(file);
+    const input = await downscaleForOcr(file);
+    const raw = await ocr.predict(input);
     const first = Array.isArray(raw) ? raw[0] : raw;
     const parsed = parsePaddleResult(first);
     if (!parsed.text.trim() && parsed.lines.length === 0) return null;
@@ -136,8 +185,9 @@ async function ocrTesseract(
   const worker = await createWorker(["eng", "spa"]);
   let text = "";
   try {
+    // labels/bands: sparse; receipts: column/auto (SPARSE shreds thermal tables)
     const modes =
-      mode === "receipt" ? [PSM.SINGLE_COLUMN, PSM.AUTO] : [PSM.SPARSE_TEXT];
+      mode === "receipt" ? [PSM.SINGLE_COLUMN, PSM.AUTO] : [PSM.SPARSE_TEXT, PSM.AUTO];
     for (const psm of modes) {
       await worker.setParameters({ tessedit_pageseg_mode: psm });
       for (const v of variants) {
@@ -157,25 +207,35 @@ async function ocrTesseract(
 }
 
 /**
- * PWA path: paddleocr-js (embedded) → tesseract.
- * Optional local/dev API when VITE_OCR_API_URL is set.
+ * Labels (cigar / bottle): tesseract first — previous PWA path that worked for bands.
+ * Receipts: paddleocr-js first (better on thermal tables), then tesseract.
+ * Optional local API when VITE_OCR_API_URL is set.
  */
 export async function recognizeImage(
   file: File,
   onStatus?: (msg: string) => void,
   mode: ScanMode = "cigar",
 ): Promise<OcrEngineResult> {
-  // Prefer embedded browser Paddle for GitHub Pages PWA; API only if configured.
   if (apiBaseUrl() && isOnlinePreferred()) {
     onStatus?.("online");
     const online = await ocrOnline(file);
-    if (online && (online.text.trim() || online.lines.length > 0)) return online;
+    if (isUsableOcr(online)) return online!;
   }
+
+  if (mode === "receipt") {
+    onStatus?.("paddle");
+    const paddle = await ocrPaddleJs(file);
+    if (isUsableOcr(paddle)) return paddle!;
+    onStatus?.("tesseract");
+    return ocrTesseract(file, mode);
+  }
+
+  onStatus?.("tesseract");
+  const tess = await ocrTesseract(file, mode);
+  if (isUsableOcr(tess)) return tess;
 
   onStatus?.("paddle");
   const paddle = await ocrPaddleJs(file);
-  if (paddle && (paddle.text.trim() || paddle.lines.length > 0)) return paddle;
-
-  onStatus?.("tesseract");
-  return ocrTesseract(file, mode);
+  if (isUsableOcr(paddle)) return paddle!;
+  return tess;
 }

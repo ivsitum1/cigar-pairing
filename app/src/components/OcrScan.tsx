@@ -1,5 +1,6 @@
-// OCR: fotografija → embedded PaddleOCR.js (PWA) / optional API / tesseract
-// Jedna cigara: potvrda → Sparivanje (ne auto-Imam). Račun: lista → batch Imam.
+// OCR: fotografija → tesseract (etikete) / paddleocr-js (računi) / optional API
+// Jedna cigara: potvrda → Sparivanje (ne auto-Imam). Boce: direktan match.
+// Račun: lista → batch Imam.
 import { useRef, useState } from "react";
 import { useI18n } from "../i18n";
 import { matchOcrText, tokenize, STOP, type OcrCandidate } from "../lib/ocrMatch";
@@ -13,6 +14,12 @@ export type { OcrCandidate };
 
 export type CigarConfirmAction = "pair" | "owned" | "detail" | "dismiss";
 
+function previewText(text: string, max = 72): string {
+  const compact = text.replace(/\s+/g, " ").trim();
+  if (!compact) return "";
+  return compact.length <= max ? compact : `${compact.slice(0, max)}…`;
+}
+
 export function OcrScan({
   candidates,
   onMatch,
@@ -24,6 +31,7 @@ export function OcrScan({
   candidates: OcrCandidate[];
   onMatch?: (id: string) => void;
   onText: (recognized: string) => void;
+  /** When set, cigar hits open confirm sheet. Drinks should omit this and use onMatch. */
   onConfirmCigar?: (id: string, action: CigarConfirmAction) => void;
   enableReceipt?: boolean;
   enableBand?: boolean;
@@ -41,6 +49,16 @@ export function OcrScan({
   } | null>(null);
   const [receiptRows, setReceiptRows] = useState<ReceiptLineMatch[] | null>(null);
 
+  const applyHit = (id: string, label: string, score: number, source: string) => {
+    if (onConfirmCigar) {
+      setCigarHit({ id, label, score, source });
+      setStatus(null);
+      return;
+    }
+    onMatch?.(id);
+    setStatus(null);
+  };
+
   const handleFile = async (file: File) => {
     setBusy(true);
     setStatus(t("ocr.working"));
@@ -50,13 +68,14 @@ export function OcrScan({
       const result = await recognizeImage(
         file,
         (phase) => {
-          setStatus(
-            phase === "paddle" ? t("ocr.workingPaddle") : t("ocr.working"),
-          );
+          if (phase === "paddle") setStatus(t("ocr.workingPaddle"));
+          else if (phase === "tesseract") setStatus(t("ocr.workingTess"));
+          else setStatus(t("ocr.working"));
         },
         mode,
       );
       const text = result.text;
+      const preview = previewText(text);
 
       if (mode === "receipt") {
         const rows = parseReceiptText(text, candidates);
@@ -64,9 +83,15 @@ export function OcrScan({
           const words = tokenize(text).filter((w) => !STOP.has(w));
           if (words.length > 0) {
             onText(words.sort((a, b) => b.length - a.length)[0]);
-            setStatus(t("ocr.partial"));
+            setStatus(
+              preview
+                ? `${t("ocr.partial")}: ${preview}`
+                : t("ocr.partial"),
+            );
           } else {
-            setStatus(t("ocr.noMatch"));
+            setStatus(
+              preview ? `${t("ocr.noMatch")}: ${preview}` : t("ocr.noMatch"),
+            );
           }
           return;
         }
@@ -76,45 +101,47 @@ export function OcrScan({
       }
 
       let bandHits: Awaited<ReturnType<typeof matchBandImage>> = [];
-      if (enableBand) {
+      if (enableBand && onConfirmCigar) {
         bandHits = await matchBandImage(file);
       }
       const fused = fuseOcrAndBand(text, candidates, bandHits);
       if (fused) {
-        setCigarHit({
-          id: fused.candidate.id,
-          label: fused.candidate.label,
-          score: fused.score,
-          source: fused.source,
-        });
-        setStatus(null);
+        applyHit(
+          fused.candidate.id,
+          fused.candidate.label,
+          fused.score,
+          fused.source,
+        );
         return;
       }
 
       const match = matchOcrText(text, candidates);
       if (match) {
-        setCigarHit({
-          id: match.candidate.id,
-          label: match.candidate.label,
-          score: match.score,
-          source: "text",
-        });
-        setStatus(null);
+        applyHit(
+          match.candidate.id,
+          match.candidate.label,
+          match.score,
+          "text",
+        );
         return;
       }
 
       const words = tokenize(text).filter((w) => !STOP.has(w));
       if (words.length > 0) {
         onText(words.sort((a, b) => b.length - a.length)[0]);
-        setStatus(t("ocr.partial"));
+        setStatus(
+          preview ? `${t("ocr.partial")}: ${preview}` : t("ocr.partial"),
+        );
       } else {
-        setStatus(t("ocr.noMatch"));
+        setStatus(
+          preview ? `${t("ocr.noMatch")}: ${preview}` : t("ocr.noMatch"),
+        );
       }
     } catch {
       setStatus(t("ocr.error"));
     } finally {
       setBusy(false);
-      setTimeout(() => setStatus(null), 4000);
+      setTimeout(() => setStatus(null), 5000);
     }
   };
 

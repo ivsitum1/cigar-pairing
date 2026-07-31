@@ -500,17 +500,22 @@ export function PairingPage() {
                     }))
               }
               enableReceipt={mode === "cigarToDrink"}
-              onConfirmCigar={(id, action) => {
-                if (action === "dismiss") return;
-                if (mode !== "cigarToDrink") return;
-                const c = resolveCigarId(id) ?? marketCigars.find((x) => x.id === id);
-                if (!c) return;
-                if (action === "pair") {
-                  pickCigar(c);
-                  return;
-                }
-                openCigar(c);
-              }}
+              enableBand={mode === "cigarToDrink"}
+              onConfirmCigar={
+                mode === "cigarToDrink"
+                  ? (id, action) => {
+                      if (action === "dismiss") return;
+                      const c =
+                        resolveCigarId(id) ?? marketCigars.find((x) => x.id === id);
+                      if (!c) return;
+                      if (action === "pair") {
+                        pickCigar(c);
+                        return;
+                      }
+                      openCigar(c);
+                    }
+                  : undefined
+              }
               onMatch={(id) => {
                 if (mode === "cigarToDrink") {
                   const c = resolveCigarId(id) ?? marketCigars.find((x) => x.id === id);
