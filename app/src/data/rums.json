@@ -8125,5 +8125,48 @@
    "hr": "Ratu Spiced: začinjena sestra Ratu Dark 5yo, egzotično podrijetlo (Fiji), blago slađen/začinjen profil.",
    "en": "Ratu Spiced: the spiced sibling of Ratu Dark 5yo, exotic origin (Fiji), a lightly sweetened/spiced profile."
   }
+ },
+ {
+  "id": "rum-foursquare-spiced",
+  "category": "rum",
+  "name": "Foursquare Spiced Rum",
+  "style": "spiced",
+  "region": "Barbados (spiced)",
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "zacini",
+   "vanilija",
+   "hrast"
+  ],
+  "additiveStatus": "flavored",
+  "additiveDetail": {
+   "hr": "Rijetki otočni začini + odležani rum (bez umjetnih sirupa, dekl.)",
+   "en": "Rare island spices + aged rum (no artificial syrups, declared)"
+  },
+  "additiveSource": "Deklaracija proizvođača (R.L. Seale/Foursquare — tajna mješavina začina, bez industrijskih sirupa)",
+  "qualityScore": 7.5,
+  "priceEUR": {
+   "min": 34,
+   "max": 34
+  },
+  "priceApprox": true,
+  "shopHR": "razno",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "neat": 2,
+   "water": 1,
+   "rocks": 2,
+   "highball": 3,
+   "cola": 2,
+   "best": "Highball / on the rocks"
+  },
+  "cigarHint": null,
+  "priceUrl": null,
+  "notes": {
+   "hr": "Foursquare Spiced Rum: rijetki otočni začini i odležani barbadoski rum po tajnoj recepturi obitelji Seale (R.L. Seale/Foursquare) — bez umjetnih sirupa i teških zaslađivača tipičnih za industrijske spiced rumove. Isti proizvođač kao ECS linija, najbolje ocijenjena u ovoj bazi.",
+   "en": "Foursquare Spiced Rum: rare island spices and aged Barbados rum, blended to a secret Seale family recipe (R.L. Seale/Foursquare) — no artificial syrups or heavy sweeteners typical of industrial spiced rums. Same producer as the ECS range, the top-rated line in this database."
+  }
  }
 ]
