@@ -74156,28 +74156,22 @@
         "priceEUR": 21.3,
         "url": "https://havana-cigar-shop.com/proizvod/davidoff-nicaragua-robusto-box-pressed-4/",
         "ring": 48,
-        "lengthMM": 127
+        "lengthMM": 127,
+        "regionLinks": {
+          "USA": {
+            "shop": "Neptune Cigar",
+            "url": "https://www.neptunecigar.com/cigars/davidoff-nicaragua-box-pressed-robusto"
+          }
+        }
       },
       {
         "name": "Robusto",
         "format": "50 x 127mm",
         "smokeTimeMin": 50,
         "priceEUR": 26.1,
-        "url": "https://www.neptunecigar.com/cigars/davidoff-nicaragua-robusto-tubos",
+        "url": null,
         "ring": 50,
-        "lengthMM": 127,
-        "regionLinks": {
-          "USA": {
-            "shop": "Neptune Cigar",
-            "url": "https://www.neptunecigar.com/cigars/davidoff-nicaragua-box-pressed-robusto"
-          },
-          "EU": {
-            "shop": "La Couronne",
-            "url": "https://cigarpassion.ch/en/boutique/cigares-dominicains/davidoff/davidoff-nicaragua/davidoff-nicaragua-robusto-tubos-12-cigares/",
-            "priceEUR": 283.5,
-            "priceApprox": true
-          }
-        }
+        "lengthMM": 127
       },
       {
         "name": "Robusto Tubos",
@@ -74186,7 +74180,15 @@
         "priceEUR": 26.9,
         "url": "https://havana-cigar-shop.com/proizvod/davidoff-nicaragua-robusto-tubos-4/",
         "ring": 50,
-        "lengthMM": 127
+        "lengthMM": 127,
+        "regionLinks": {
+          "EU": {
+            "shop": "La Couronne",
+            "url": "https://cigarpassion.ch/en/boutique/cigares-dominicains/davidoff/davidoff-nicaragua/davidoff-nicaragua-robusto-tubos-12-cigares/",
+            "priceEUR": 283.5,
+            "priceApprox": true
+          }
+        }
       },
       {
         "name": "Diadema",
