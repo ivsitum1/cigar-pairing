@@ -53,8 +53,9 @@ const fuzzyEquals = (a: string, b: string): boolean => {
 // egzaktan pogodak 2/1 boda (kao dosad), fuzzy pola vrijednosti
 function scoreTokens(candTokens: string[], textTokens: string[]): number {
   const textSet = new Set(textTokens);
+  const uniqueCand = [...new Set(candTokens)];
   let score = 0;
-  for (const t of candTokens) {
+  for (const t of uniqueCand) {
     if (textSet.has(t)) {
       score += t.length >= 5 ? 2 : 1;
     } else if (textTokens.some((x) => fuzzyEquals(t, x))) {
@@ -92,16 +93,20 @@ export function matchOcrText(
       if (anniversaryConflict(candTokens, textTokens)) continue;
       const score = scoreTokens(candTokens, textTokens);
       // coverage prefers "Serie V" over "Serie V Melanio" when Melanio is absent
-      const matched = candTokens.filter(
+      const uniqCand = [...new Set(candTokens)];
+      const matched = uniqCand.filter(
         (t) => textTokens.includes(t) || textTokens.some((x) => fuzzyEquals(t, x)),
       ).length;
-      const coverage = matched / candTokens.length;
+      const coverage = matched / uniqCand.length;
       if (
         score > bestScore ||
         (score === bestScore && coverage > bestCoverage) ||
         (score === bestScore &&
           coverage === bestCoverage &&
-          candTokens.length < (best ? tokenize(best.label).filter((t) => !STOP.has(t)).length : 999))
+          uniqCand.length <
+            (best
+              ? new Set(tokenize(best.label).filter((t) => !STOP.has(t))).size
+              : 999))
       ) {
         best = c;
         bestScore = score;
@@ -141,5 +146,49 @@ export function matchOcrText(
 
   // faza 2: najbolja linija unutar suzenog poola
   const { best, bestScore } = bestIn(pool);
-  return best && bestScore >= 2 ? { candidate: best, score: bestScore } : null;
+  if (!best || bestScore < 2) return null;
+
+  // Ako je pobjednik gola linija, a OCR eksplicitno spominje vitolu te linije,
+  // podigni na cig-x@vitola (inače Imam dobije default vitolu — npr. Robusto).
+  const upgraded = preferVitolaScoped(best, pool, textTokens);
+  return { candidate: upgraded, score: bestScore };
+}
+
+/**
+ * Upgrade bare `cig-x` → `cig-x@robusto` when OCR tokens include vitola-only words.
+ */
+export function preferVitolaScoped(
+  best: OcrCandidate,
+  pool: OcrCandidate[],
+  textTokens: string[],
+): OcrCandidate {
+  if (best.id.includes("@")) return best;
+  const prefix = `${best.id}@`;
+  const scoped = pool.filter((c) => c.id.startsWith(prefix));
+  if (scoped.length === 0) return best;
+
+  const bareToks = new Set(tokenize(best.label).filter((t) => !STOP.has(t)));
+  let pick: OcrCandidate | null = null;
+  let bestExtra = 0;
+  let bestCoverage = -1;
+
+  for (const c of scoped) {
+    const candToks = tokenize(c.label).filter((t) => !STOP.has(t));
+    const extra = candToks.filter((t) => !bareToks.has(t));
+    if (extra.length === 0) continue;
+    const hit = extra.filter(
+      (t) => textTokens.includes(t) || textTokens.some((x) => fuzzyEquals(t, x)),
+    );
+    if (hit.length === 0) continue;
+    const coverage = hit.length / extra.length;
+    if (
+      hit.length > bestExtra ||
+      (hit.length === bestExtra && coverage > bestCoverage)
+    ) {
+      bestExtra = hit.length;
+      bestCoverage = coverage;
+      pick = c;
+    }
+  }
+  return pick ?? best;
 }
