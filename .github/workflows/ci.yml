@@ -33,28 +33,20 @@ jobs:
         with:
           python-version: "3.12"
 
-      # Blokirajući gateovi — zeleni su i moraju takvi ostati.
-      - name: Taxonomy audit + curated descriptions --check
+      # Svih pet gateova je zeleno i blokira. `--check` varijante su citaci —
+      # ne pisu u scripts/output/, pa ne prljaju radno stablo.
+      - name: Taxonomy + vitola normalize --check
         working-directory: app
-        run: |
-          python scripts/taxonomy-audit.py --fail-on-new --check-only
-          python scripts/apply-cigar-descriptions.py --check
-      - name: HR availability reconcile logic
-        working-directory: app
-        run: python scripts/test_reconcile_hr.py
-
-      # NEBLOKIRAJUĆI: ova dva gatea prijavljuju nakupljeni drift u katalogu
-      # (~239 line-mergeva, 77 duplikat-sumnji). Nisu pokvareni — traže
-      # sadržajne odluke o spajanju linija, a automatsko spajanje bi moglo
-      # progutati zapise koji nisu duplikati. Dok se drift ne razriješi ručno,
-      # vrte se informativno da ostatak CI-ja može štititi master.
-      # TODO: kad se očisti, vratiti u blokirajući korak iznad.
-      - name: Catalog drift (informativno)
-        working-directory: app
-        continue-on-error: true
         run: |
           python scripts/apply-taxonomy.py --check --skip-normalize
           python scripts/normalize-vitolas.py --check
+          python scripts/taxonomy-audit.py --fail-on-new --check-only
+      - name: Curated cigar descriptions --check
+        working-directory: app
+        run: python scripts/apply-cigar-descriptions.py --check
+      - name: HR availability reconcile logic
+        working-directory: app
+        run: python scripts/test_reconcile_hr.py
 
       - run: npm run build
         working-directory: app

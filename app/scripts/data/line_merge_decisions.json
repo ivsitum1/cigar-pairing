@@ -291,15 +291,6 @@
     ],
     "reason": "Size suffix \"No. 10\" of Aged Maduro; not a separate commercial line."
   },
-  "cig-asylum-insidious": {
-    "absorb": [
-      "cig-asylum-insidious-short"
-    ],
-    "rename_absorbed_vitolas": {
-      "Corona": "Short Corona"
-    },
-    "reason": "Size suffix \"Short\" of Insidious; not a separate commercial line."
-  },
   "cig-avo-classic": {
     "absorb": [
       "cig-avo-classic-no-2",

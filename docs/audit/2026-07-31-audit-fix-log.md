@@ -252,3 +252,74 @@ backend 4/4, build prolazi.
   bez `aria-label`.
 - **Perf**: `cycle` u `useMemo` deps reskorira 2400 cigara na svaki klik
   „Sljedeći prijedlog".
+
+---
+
+## Val 5 — dva „teška" gatea: smetalo je, i to više nego što se činilo
+
+U Valu 4 ostavio sam `apply-taxonomy` i `normalize-vitolas` neblokirajuće uz
+opasku da traže sadržajne odluke. Mjerenje je pokazalo da je ta procjena bila
+kriva u oba smjera — jedan gate je bio bezopasan, drugi je skrivao **stvarni
+gubitak podataka**.
+
+### `apply-taxonomy` — bezopasan, bio je samo zaostatak
+
+Brojka „239 line-mergeva" dolazila je iz **druge** skripte. Ovaj gate je htio
+točno 3 izmjene, `input_records == output_records == 2400`, `aliases_added: 0`:
+
+- `priceUrl` za `cig-cusano-18-double-connecticut` i `cig-cusano-18-maduro`;
+- `cig-don-tomas-bundle`: `priceEUR` 2,8 → 3,6.
+
+Zadnja je **ispravak, ne rizik**: zadana vitola te linije je Robusto @ 3,6 €
+i app je već prikazivao 3,6 — pohranjeno polje je bilo zastarjelo (2,8 je bila
+Rothschildova cijena). Primijenjeno.
+
+### `normalize-vitolas` — skrivao je brisanje jedinog HR zapisa
+
+„239 line_merges" je brojač **razmatranih**, ne primijenjenih odluka. Stvarni
+učinak: **jedan** zapis bi nestao, 2400 → 2399.
+
+Taj zapis je `cig-asylum-insidious-short`, i **nije duplikat**:
+
+| | Insidious | Insidious Short |
+|---|---|---|
+| vitole | Short Corona 44×**142**mm, Robusto 50×127mm | Corona 44×**102**mm |
+| cijena | — | **9,40 €** |
+| HR | nema | **The Humidor** |
+
+Spajanje bi obrisalo jedini HR-dostupan zapis s cijenom, a njegovu vitolu ne
+bi ni prenijelo: odluka je nalagala preimenovanje `Corona` → `Short Corona`,
+što se sudara s postojećom 44×142mm i tiho ispada kao duplikat. Rezultat bi
+bio „Kupi" gumb na `Insidious` koji vodi na stranicu *Insidious Shorta* —
+krivi proizvod uz prikazanu cijenu.
+
+**Uzrok su dva izvora istine koja si proturječe:**
+
+| izvor | datum | kaže |
+|---|---|---|
+| `line_merge_decisions.json` | 25.07. (`5541fa4`) | spoji Short u Insidious |
+| `taxonomy/asylum.json` `keepSeparate` | 30.07. (`reviewedAt`, `status: done`) | drži ih odvojeno |
+
+Novija urednička revizija je rekla „odvojeno", ali stara instrukcija nije
+maknuta — i tiho je pobjeđivala, jer `apply_line_decisions` nikad nije
+konzultirao `keepSeparate`.
+
+### Popravak
+
+1. **Uklonjena zastarjela odluka** o spajanju iz `line_merge_decisions.json`
+   (281 → 280). Novija taksonomija je mjerodavna.
+2. **Trajni čuvar** `assert_no_keep_separate_conflicts()` u
+   `normalize-vitolas.py`: spajanje koje proturječi `keepSeparate` sada **pada
+   glasno** umjesto da progura brisanje. Provjereno vraćanjem proturječja —
+   skripta padne s imenom marke i uputom.
+3. **`--check` više ne piše** u `scripts/output/` (ni `apply-taxonomy` ni
+   `normalize-vitolas`). Prije su čitači prljali radno stablo u CI-ju.
+4. **Oba gatea vraćena u blokirajuće** u `ci.yml`; `continue-on-error` maknut.
+
+Provjera opsega prije zahvata: **61 marka** ima `keepSeparate` pravila i
+**281 odluka** o spajanju — sukob je bio točno **1**. Dakle jedna zastarjela
+instrukcija, ne sistemski drift.
+
+**Rezultat:** svih **5 CI gateova zeleno**, `--check` ne prlja stablo, katalog
+ostaje 2400 zapisa, `cig-asylum-insidious-short` netaknut (Corona 44×102mm,
+9,40 €, The Humidor). `tsc` čist, 435 testova, build prolazi, backend 4/4.

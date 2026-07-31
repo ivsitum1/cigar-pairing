@@ -37,6 +37,7 @@ DECISIONS = APP / "scripts/data/vitola_dedup_decisions.json"
 DIMFIX = APP / "scripts/data/dimension_fixes.json"
 LINE_MERGES = APP / "scripts/data/line_merge_decisions.json"
 LINK_FIXES = APP / "scripts/data/vitola_link_fixes.json"
+TAXONOMY_DIR = APP / "scripts/data/taxonomy"
 
 
 def load(p, default=None):
@@ -250,6 +251,71 @@ def _append_or_merge_vitola(canon, vitola, brand=None, line=None):
     merged = merge_group([cur, vitola], canon_name)
     canon["vitolas"] = [merged if v["name"] == target_name else v for v in canon["vitolas"]]
     return "merged"
+
+
+def _keep_separate_pairs() -> dict:
+    """{brand: {frozenset({lineA, lineB}), ...}} iz svih taksonomija.
+
+    `keepSeparate` je urednicka odluka da su dvije linije razliciti proizvodi.
+    """
+    pairs: dict = {}
+    for path in sorted(TAXONOMY_DIR.glob("*.json")):
+        try:
+            tax = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            continue
+        brand = tax.get("brand")
+        if not brand:
+            continue
+        for pair in tax.get("keepSeparate") or []:
+            if isinstance(pair, list) and len(pair) >= 2:
+                pairs.setdefault(brand, set()).add(
+                    frozenset(str(x).strip().lower() for x in pair)
+                )
+    return pairs
+
+
+def assert_no_keep_separate_conflicts(cigars, line_decisions) -> None:
+    """Spajanje ne smije pregaziti `keepSeparate` iz taksonomije.
+
+    Zateceno stanje koje je ovo iznjedrilo: line_merge_decisions.json je (23.7.)
+    nalagao da 'Insidious Short' upadne u 'Insidious', a asylum.json je (30.7.)
+    nakon revizije rekao da su to razliciti proizvodi. Starija instrukcija je
+    tiho pobjedivala i brisala jedini HR-dostupan zapis linije zajedno s
+    njegovom vitolom (Corona 44x102mm, 9,4 EUR) — jer je preimenovanje vitole
+    u 'Short Corona' sudaralo s postojecom 44x142mm i padalo kao duplikat.
+
+    Radije padni glasno nego progutaj zapis: dvije instrukcije koje si
+    proturjece trazi covjeka, ne tihi pobjednik po redoslijedu izvrsavanja.
+    """
+    by_id = {c["id"]: c for c in cigars}
+    keep = _keep_separate_pairs()
+    conflicts = []
+    for canon_id, spec in line_decisions.items():
+        if canon_id.startswith("_") or not isinstance(spec, dict):
+            continue
+        canon = by_id.get(canon_id)
+        if not canon:
+            continue
+        for absorbed_id in spec.get("absorb") or []:
+            absorbed = by_id.get(absorbed_id)
+            if not absorbed:
+                continue
+            pair = frozenset(
+                [str(canon.get("line", "")).lower(), str(absorbed.get("line", "")).lower()]
+            )
+            if pair in keep.get(canon.get("brand"), set()):
+                conflicts.append(
+                    f"{canon.get('brand')}: line_merge_decisions.json spaja "
+                    f"'{absorbed.get('line')}' ({absorbed_id}) u '{canon.get('line')}' "
+                    f"({canon_id}), ali taksonomija ih drzi u keepSeparate. "
+                    f"Makni odluku o spajanju ili keepSeparate — ne oboje."
+                )
+    if conflicts:
+        raise SystemExit(
+            "PROTURJECNE ODLUKE (spajanje bi obrisalo zapis):\n  "
+            + "\n  ".join(conflicts)
+        )
 
 
 def apply_line_decisions(cigars, line_decisions, audit):
@@ -817,6 +883,7 @@ def main():
     link_fixes = load(LINK_FIXES, {}) or {}
 
     audit = normalize(cigars, lexicon, decisions, dimfix)
+    assert_no_keep_separate_conflicts(cigars, line_decisions)
     cigars = apply_line_decisions(cigars, line_decisions, audit)
     demote_holts_listings(cigars, audit)
     scrub_mismatched_price_urls(cigars, audit)
@@ -825,8 +892,12 @@ def main():
     audit["shared_region_urls"] = shared_region_urls(cigars)
     after = json.dumps(cigars, ensure_ascii=False, indent=2) + "\n"
 
-    OUTDIR.mkdir(parents=True, exist_ok=True)
-    AUDIT.write_text(json.dumps(audit, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    # --check je citac: pisanje audita bi zaprljalo radno stablo u CI-ju
+    if not check:
+        OUTDIR.mkdir(parents=True, exist_ok=True)
+        AUDIT.write_text(
+            json.dumps(audit, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+        )
 
     stats = {
         "locale_twin_merges": len(audit["locale_twin_merges"]),
