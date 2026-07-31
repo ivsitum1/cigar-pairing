@@ -17,7 +17,11 @@ from .config import BAND_DIR
 
 log = logging.getLogger("band")
 
-_SAFE_ID = re.compile(r"^[\w.@+-]+$")
+# Tocka ostaje dopustena jer je vitola-scoped kljuc moze nositi
+# ("cig-ashton-aged-maduro@maduro-no.30"), ali sam ".." se odbija: raniji
+# "[\w.@+-]+" ga je propustao, pa je cigar_id=".." izlazio iz BAND_DIR i
+# pisao meta.json razinu iznad.
+_SAFE_ID = re.compile(r"^(?!\.*$)(?!.*\.\.)[\w.@+-]+$")
 
 _clip_model: Any | None = None
 _clip_preprocess: Any | None = None
@@ -35,6 +39,9 @@ def _cigar_dir(cigar_id: str) -> Path:
     if not _SAFE_ID.match(cigar_id):
         raise ValueError("invalid cigar_id")
     d = BAND_DIR / cigar_id
+    # pojas i naramenice: i da regex ikad popusti, put mora ostati u BAND_DIR
+    if not d.resolve().is_relative_to(BAND_DIR.resolve()):
+        raise ValueError("invalid cigar_id")
     d.mkdir(parents=True, exist_ok=True)
     return d
 

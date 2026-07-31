@@ -94,4 +94,24 @@ describe("hash route helpers", () => {
     );
     expect(routeToHash({ page: "collection" })).toBe("#/collection/humidor");
   });
+
+  // Neispravan postotni kod je rusio boot u bijeli ekran: parseHash se zove
+  // na module scopeu, pa je URIError isao neuhvacen kroz cijelu aplikaciju.
+  it("neispravan postotni kod ne baca (ostaje sirov segment)", () => {
+    expect(() => parseHash("#/catalog/line/%")).not.toThrow();
+    expect(() => parseHash("#/pairing/cigar/%E0%A4%A")).not.toThrow();
+    expect(() => parseHash("#/catalog/vitola/ok/%ZZ")).not.toThrow();
+
+    expect(parseHash("#/catalog/line/%")).toEqual({
+      page: "catalog",
+      catalog: { level: "line", cigarId: "%" },
+    });
+  });
+
+  it("ispravan postotni kod se i dalje dekodira", () => {
+    expect(parseHash("#/catalog/line/cig-a%20b")).toEqual({
+      page: "catalog",
+      catalog: { level: "line", cigarId: "cig-a b" },
+    });
+  });
 });

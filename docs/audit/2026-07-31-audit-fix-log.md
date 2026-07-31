@@ -124,3 +124,52 @@ import povlačio je ~96 kB gzip klupskog teksta u prvo učitavanje.
 `dist/index.html` preloadima ni u SW precache manifestu.
 
 `tsc` čist, 433 testa prolaze.
+
+---
+
+## Val 3 — robusnost
+
+### 3a. `parseHash` je rušio boot u bijeli ekran
+
+`decodeURIComponent` baca `URIError` na neispravnom postotnom kodu (`%`,
+`%E0%A4%A`). `parseHash` se zove na **module scopeu** (`route.ts:113`) i na
+svaki `hashchange`, pa je iznimka išla neuhvaćena — bijeli ekran iz kojeg se
+korisnik ne izvuče bez ručnog uređivanja URL-a. Dovoljno je da se podijeljeni
+deep-link iskvari u chat aplikaciji.
+
+**Popravak:** `safeDecode()` — neispravan segment ostaje sirov. Bolje izgubiti
+deep-link nego cijeli app. `app/src/store/route.ts` + 2 testa.
+
+### 3b. Nije postojao nijedan `ErrorBoundary`
+
+Svaka greška u renderu ili odbijeni `import()` lazy stranice = prazan ekran.
+Najizglednija putanja: PWA je `registerType: "prompt"`, korisnik ostaje na
+starom service workeru, u međuvremenu izađe deploy, stari hashirani chunk
+nestane s Pagesa → `ChunkLoadError`.
+
+**Popravak:** `app/src/components/ErrorBoundary.tsx`
+
+- razlikuje **zastarjeli chunk** ("izašla je nova verzija, osvježi") od opće
+  greške;
+- izričito kaže da su kolekcija i dnevnik na uređaju i nisu izgubljeni —
+  korisnik to inače ne može znati;
+- gumbi Osvježi / Natrag na početak;
+- dvojezično **bez i18n konteksta**, da radi i kad padne sam provider.
+
+Ugrađen na dva mjesta: u `main.tsx` oko `I18nProvider` (vanjska mreža) i u
+`App.tsx` oko `<Suspense>` s `key={page}` — pad jedne stranice ne odnosi
+navigaciju i promjena taba resetira granicu.
+
+### 3c. Backend: path traversal kroz `cigar_id`
+
+`band_service._SAFE_ID = ^[\w.@+-]+$` propuštao je `..`, pa je
+`POST /band/reference` s `cigar_id=".."` pisao `<uuid>.jpg` i **`meta.json`**
+razinu iznad `BAND_DIR` (potvrđeno reprodukcijom).
+
+**Popravak:** `^(?!\.*$)(?!.*\.\.)[\w.@+-]+$` — točka **ostaje** dopuštena jer
+je vitola-scoped ključ nosi (`cig-ashton-aged-maduro@maduro-no.30`), ali `..`
+i sami `.`/`...` padaju. Uz to `is_relative_to(BAND_DIR)` kao druga brana.
+`backend/tests/test_smoke.py` +2 testa (4 ukupno, prolaze).
+
+**Rezultat vala:** `tsc` čist, **435 testova** (433 + 2), build prolazi,
+backend 4/4.

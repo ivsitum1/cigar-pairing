@@ -38,5 +38,26 @@ class OcrSmokeTest(unittest.TestCase):
             self.assertGreater(hits[0].score, 0.5)
 
 
+
+class BandIdSafetyTest(unittest.TestCase):
+    """cigar_id ide ravno u putanju na disku — traversal mora pasti prije mkdir."""
+
+    def test_rejects_traversal_ids(self) -> None:
+        for bad in ("..", ".", "...", "a..b", "../..", "a/b", "", "a\\b"):
+            with self.subTest(cigar_id=bad):
+                with self.assertRaises(ValueError):
+                    band_service._cigar_dir(bad)
+
+    def test_accepts_normal_and_vitola_scoped_ids(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            band_service.BAND_DIR = Path(tmp)  # type: ignore[misc]
+            for good in ("cig-oliva-serie-v", "cig-ashton@maduro-no.30", "a@b+1"):
+                with self.subTest(cigar_id=good):
+                    d = band_service._cigar_dir(good)
+                    self.assertTrue(
+                        d.resolve().is_relative_to(Path(tmp).resolve())
+                    )
+
+
 if __name__ == "__main__":
     unittest.main()
