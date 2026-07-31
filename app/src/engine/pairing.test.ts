@@ -100,6 +100,76 @@ describe("pairing engine — poznati parovi iz Excela", () => {
   });
 });
 
+describe("pairing engine — body-log kazna", () => {
+  const stubCigar = (body: number, strength = 3): Cigar =>
+    ({
+      id: `stub-cig-${body}`,
+      brand: "Stub",
+      line: "Line",
+      vitola: "Robusto",
+      format: "", // bez ringa → geometrija neutralna
+      country: "NI",
+      wrapper: "Connecticut",
+      strength,
+      body,
+      flavorTags: [],
+      smokeTimeMin: 60,
+      priceEUR: null,
+      vitolas: [],
+      markets: ["WW"],
+      notes: { hr: "", en: "" },
+    }) as Cigar;
+
+  const stubDrink = (body: number): Drink =>
+    ({
+      id: `stub-drink-${body}`,
+      category: "rum",
+      name: "Stub drink",
+      style: "other",
+      region: "test",
+      body,
+      sweetness: 2,
+      flavorTags: [],
+      qualityScore: null,
+      priceEUR: null,
+      shopHR: "",
+      pairable: true,
+      serving: { best: "neat" },
+      notes: { hr: "", en: "" },
+    }) as Drink;
+
+  const expectedLogPenalty = (delta: number) =>
+    (12 / Math.log(2)) * Math.log(1 + delta);
+
+  it("Δ=1 → −12 (sidro; reason šuti ispod praga 2)", () => {
+    // body 3 vs 2: nije light-band, nije match → tiha kazna
+    const { score, reasons } = scorePairing(stubCigar(3), stubDrink(2));
+    expect(reasons.some((r) => r.rule === "body-mismatch")).toBe(false);
+    expect(reasons.some((r) => r.rule === "body-match")).toBe(false);
+    // base 36 − 12 = 24 (nema tagova / overwhelm / quality)
+    expect(score).toBe(Math.round(36 - expectedLogPenalty(1)));
+    expect(score).toBe(24);
+  });
+
+  it("Δ=2 → ≈ −19 (ne linearno −24)", () => {
+    const { reasons } = scorePairing(stubCigar(4), stubDrink(2));
+    const mm = reasons.find((r) => r.rule === "body-mismatch");
+    expect(mm).toBeDefined();
+    expect(mm!.score).toBe(-Math.round(expectedLogPenalty(2)));
+    expect(mm!.score).toBe(-19);
+    expect(mm!.score).not.toBe(-24);
+  });
+
+  it("Δ=4 → ≈ −28 (ne linearno −48)", () => {
+    const { reasons } = scorePairing(stubCigar(5), stubDrink(1));
+    const mm = reasons.find((r) => r.rule === "body-mismatch");
+    expect(mm).toBeDefined();
+    expect(mm!.score).toBe(-Math.round(expectedLogPenalty(4)));
+    expect(mm!.score).toBe(-28);
+    expect(mm!.score).not.toBe(-48);
+  });
+});
+
 describe("pairing engine — API", () => {
   it("pairCigarsForDrink vraca sortirano padajuce s objasnjenjima na oba jezika", () => {
     const hampden = byId(rums, "rum-hampden-estate-8");

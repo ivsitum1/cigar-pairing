@@ -64,7 +64,9 @@ export function scorePairing(
       },
     });
   } else {
-    const penalty = bodyDiff * WEIGHTS.bodyPerStep;
+    // Konkavna kazna: sidro Δ=1 → bodyPerStep; veliki Δ manje drastičan od linearnog.
+    const penalty =
+      (WEIGHTS.bodyPerStep / Math.log(2)) * Math.log(1 + bodyDiff);
     score -= penalty;
     if (bodyDiff >= 2) {
       const cigarHeavier = effCigar.body > effDrink.body;
