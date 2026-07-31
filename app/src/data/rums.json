@@ -8168,5 +8168,44 @@
    "hr": "Foursquare Spiced Rum: odležani barbadoski rum (R.L. Seale/Foursquare) blendan s pravim biljem i začinima — đumbirica, klinčić, cimet, zvjezdasti anis, citrus; suh i hrastov završetak s muškatnim oraščićem. Bez umjetnih aroma i bez dodanog šećera nakon destilacije (dekl.), za razliku od većine industrijskih spiced rumova. Isti proizvođač kao ECS linija, najbolje ocijenjena u ovoj bazi.",
    "en": "Foursquare Spiced Rum: aged Barbados rum (R.L. Seale/Foursquare) blended with real herbs and spices — gingerbread, clove, cinnamon, star anise, citrus; a dry, oaky finish with nutmeg. No artificial flavouring and no added sugar post-distillation (declared), unlike most industrial spiced rums. Same producer as the ECS range, the top-rated line in this database."
   }
+ },
+ {
+  "id": "rum-diplomatico-distillery-collection-no3-pot-still",
+  "category": "rum",
+  "name": "Diplomatico Distillery Collection N°3 Pot Still",
+  "style": "venezuela",
+  "region": "Venezuela",
+  "body": 3,
+  "sweetness": 2,
+  "flavorTags": [
+   "karamela",
+   "citrus",
+   "zacini"
+  ],
+  "additiveStatus": "clean",
+  "additiveDetail": {
+   "hr": "Bez aditiva (za razliku od standardne Diplomatico linije)",
+   "en": "No additives (unlike the standard Diplomatico range)"
+  },
+  "additiveSource": "Recenzije/testiranje (thelonecaner.com, malt-review.com) — bez šećera, rađeno od šećerne trščane meline umjesto melase",
+  "qualityScore": 8,
+  "priceEUR": null,
+  "shopHR": "allez.hr",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "neat": 3,
+   "water": 2,
+   "rocks": 2,
+   "highball": 0,
+   "cola": 0,
+   "best": "Čisto / kap vode"
+  },
+  "cigarHint": null,
+  "priceUrl": "https://allez.hr/shop/svi-proizvodi/diplomatico-distillery-collection-n-3-pot-still-rum-47-vol-07l-u-poklon-kutiji",
+  "notes": {
+   "hr": "Diplomatico Distillery Collection N°3 Pot Still: pot still izdanje, destilirano 2010., 8 godina u bivšim bourbon bačvama, rađeno od šećerne trščane meline (ne melase). Za razliku od standardne Diplomatico linije (Mantuano, Reserva Exclusiva), bez dodanog šećera. Suho, citrus, maslačasti toffee, maple, blaga ljutina začina na kraju. Cijena na allez.hr nije potvrđena.",
+   "en": "Diplomatico Distillery Collection N°3 Pot Still: a pot-still release, distilled 2010, aged 8 years in ex-bourbon barrels, made from sugarcane honey rather than molasses. Unlike the standard Diplomatico range (Mantuano, Reserva Exclusiva), no added sugar. Dry, citrus, buttery toffee, maple, a mild spicy heat on the finish. Price on allez.hr not confirmed."
+  }
  }
 ]
