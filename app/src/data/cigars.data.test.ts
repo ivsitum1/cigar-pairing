@@ -297,7 +297,7 @@ describe("cigars.json integrity", () => {
     const counts: Record<string, number> = Object.fromEntries(
       Object.keys(minByHost).map((h) => [h, 0]),
     );
-    const collect = (url: string | undefined) => {
+    const collect = (url: string | null | undefined) => {
       if (!url) return;
       for (const host of Object.keys(minByHost)) {
         if (url.includes(host)) counts[host]! += 1;
