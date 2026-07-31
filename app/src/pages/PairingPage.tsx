@@ -499,22 +499,8 @@ export function PairingPage() {
                       label: d.name,
                     }))
               }
-              enableReceipt={mode === "cigarToDrink"}
-              onConfirmCigar={(id, action) => {
-                // Nikad auto-Imam: Pairing je primarni CTA; owned je eksplicitan u OcrScan sheetu.
-                if (action === "dismiss") return;
-                if (mode !== "cigarToDrink") return;
-                const c = resolveCigarId(id) ?? marketCigars.find((x) => x.id === id);
-                if (!c) return;
-                if (action === "pair") {
-                  pickCigar(c);
-                  return;
-                }
-                // owned | detail — pokaži karticu (owned već spremljen u OcrScan)
-                openCigar(c);
-              }}
               onMatch={(id) => {
-                // pića i legacy: otvori karticu, bez auto-owned
+                // OCR prepoznato -> otvori karticu (može se odmah označiti u kolekciju)
                 if (mode === "cigarToDrink") {
                   const c = resolveCigarId(id) ?? marketCigars.find((x) => x.id === id);
                   if (c) openCigar(c);
