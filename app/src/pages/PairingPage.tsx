@@ -27,6 +27,7 @@ import { OcrScan } from "../components/OcrScan";
 import { VitolaPicker } from "../components/VitolaPicker";
 import { applyVitola, needsVitolaPick, uniqueVitolas } from "../lib/cigarVitola";
 import { cigarItemId } from "../lib/cigarItemId";
+import { buildCigarOcrCandidates } from "../lib/ocrCigarCandidates";
 import { drinkBuyLink } from "../lib/drinkBuyLink";
 import { drinkNameLoc, drinkNameHaystack } from "../lib/drinkName";
 import { readJsonStringArray } from "../lib/safeStorage";
@@ -142,6 +143,13 @@ export function PairingPage() {
           !excludedBrands.includes(c.brand),
       ),
     [market, excludedCountries, excludedBrands],
+  );
+
+  // Multi-vitola lines (Cusano Robusto vs Figurado) need scoped OCR ids
+  const cigarOcrCandidates = useMemo(
+    () =>
+      buildCigarOcrCandidates(marketCigars, (b) => brandDisplayName(b, market)),
+    [marketCigars, market],
   );
 
   const allCountries = useMemo(
@@ -489,11 +497,7 @@ export function PairingPage() {
             <OcrScan
               candidates={
                 mode === "cigarToDrink"
-                  ? marketCigars.map((c) => ({
-                      id: c.id,
-                      label: `${brandDisplayName(c.brand, market)} ${c.line}`,
-                      brand: c.brand,
-                    }))
+                  ? cigarOcrCandidates
                   : ALL_DRINKS.filter((d) => d.pairable).map((d) => ({
                       id: d.id,
                       label: d.name,
@@ -506,7 +510,9 @@ export function PairingPage() {
                   ? (id, action) => {
                       if (action === "dismiss") return;
                       const c =
-                        resolveCigarId(id) ?? marketCigars.find((x) => x.id === id);
+                        cigarForItemId(id) ??
+                        resolveCigarId(id) ??
+                        marketCigars.find((x) => x.id === id);
                       if (!c) return;
                       if (action === "pair") {
                         pickCigar(c);
@@ -518,7 +524,10 @@ export function PairingPage() {
               }
               onMatch={(id) => {
                 if (mode === "cigarToDrink") {
-                  const c = resolveCigarId(id) ?? marketCigars.find((x) => x.id === id);
+                  const c =
+                    cigarForItemId(id) ??
+                    resolveCigarId(id) ??
+                    marketCigars.find((x) => x.id === id);
                   if (c) openCigar(c);
                 } else {
                   const d = ALL_DRINKS.find((x) => x.id === id);

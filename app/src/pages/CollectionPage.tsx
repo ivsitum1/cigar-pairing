@@ -19,9 +19,8 @@ import { EveningSessionSheet } from "../components/EveningSessionSheet";
 import {
   cigarItemId,
   dedupeCollectionCigarIds,
-  vitolaKeySlug,
 } from "../lib/cigarItemId";
-import { uniqueVitolas } from "../lib/cigarVitola";
+import { buildCigarOcrCandidates } from "../lib/ocrCigarCandidates";
 import {
   ownedWithoutStockIds,
   shortlistItemIds,
@@ -134,24 +133,9 @@ export function CollectionPage({
     { id: "calendar", key: "hum.tabCalendar" },
   ];
 
-  const ocrCandidates = CIGARS.flatMap((c) => {
-    const brand = brandDisplayName(c.brand, market);
-    const base = {
-      id: c.id,
-      label: `${brand} ${c.line}`,
-      brand: c.brand,
-    };
-    const vitolas = uniqueVitolas(c);
-    if (vitolas.length <= 1) return [base];
-    return [
-      base,
-      ...vitolas.map((v) => ({
-        id: `${c.id}@${vitolaKeySlug(v.name)}`,
-        label: `${brand} ${c.line} ${v.name}`,
-        brand: c.brand,
-      })),
-    ];
-  });
+  const ocrCandidates = buildCigarOcrCandidates(CIGARS, (b) =>
+    brandDisplayName(b, market),
+  );
 
   const tabBar = (
     <div className="mt-4 grid grid-cols-3 gap-1 rounded-xl border border-dim/20 bg-cedar/60 p-1">
