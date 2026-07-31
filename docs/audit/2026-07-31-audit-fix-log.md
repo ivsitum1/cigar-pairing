@@ -173,3 +173,82 @@ i sami `.`/`...` padaju. Uz to `is_relative_to(BAND_DIR)` kao druga brana.
 
 **Rezultat vala:** `tsc` čist, **435 testova** (433 + 2), build prolazi,
 backend 4/4.
+
+---
+
+## Val 4 — CI koji opet nešto znači
+
+### Nalaz
+
+`ci.yml` je imao `push: branches-ignore: [master]`, pa **izravni pushevi na
+master nisu prolazili nikakvu provjeru** — a njih je 24 od zadnjih 30 commita.
+Tako je slomljen `tsc` (`6ed059d`) stigao na master i oborio deploy; jedini
+signal bio je crveni deploy run koji nitko ne gleda.
+
+Uz to su **4 od 5 Python gateova padala** na čistom HEAD-u, pa je i PR put bio
+crven — što je i objašnjavalo zaobilaženje.
+
+### Popravak
+
+**`apply-cigar-descriptions.py`** — nije pratio `cigarIdAliases.json`, pa je
+svako spajanje linija (Asylum 13) ostavljalo kurirani opis da visi na starom
+id-u. Dodan `resolve_id()` koji prati alias lanac, isto kao `resolveCigarId` u
+appu. Time su se primijenila i 2 zaostala opisa (4 retka u `cigars.json`,
+bez reformatiranja).
+
+**`taxonomy-audit.py`** — prijavljivao `Cusano · 18 paired maduro` bez unosa u
+taksonomiji. Provjerom se pokazalo da je to **tanki duplikat** od
+`cig-cusano-18-maduro` (isti proizvod — URL-ovi su `cusano-18-paired-maduro-*`):
+bez pokrova, veziva, punjenja i okusnih oznaka, s generičkom bilješkom i jednom
+vitolom, dok canonical ima punu listu listova, prave bilješke i 4 vitole.
+
+> Prije brisanja provjereno je nosi li duplikat išta jedinstveno. Jedini
+> kandidat bio je Neptune URL za Churchill — a canonical ga je **već imao** u
+> `regionLinks`. Dakle nula izgubljenih podataka. Uz to je dodan alias
+> `cig-cusano-18-paired-maduro → cig-cusano-18-maduro`, pa se i korisnikova
+> oznaka seli. Katalog: 2401 → 2400.
+
+**`ci.yml`**:
+
+- `push: branches: [master]` — master napokon prolazi provjeru;
+- blokirajući gateovi: `tsc`, testovi, `taxonomy-audit`, `apply-cigar-descriptions`,
+  `test_reconcile_hr`, `build`;
+- **neblokirajuće** (`continue-on-error`): `apply-taxonomy --check` i
+  `normalize-vitolas --check`. Ta dva prijavljuju nakupljeni drift
+  (~239 line-mergeva, 77 duplikat-sumnji). Nisu pokvarena — traže sadržajne
+  odluke, a **automatsko spajanje bi moglo progutati zapise koji nisu
+  duplikati**, pa ih namjerno nisam dirao. TODO u datoteci označava povratak u
+  blokirajući korak.
+- nov `backend` job — servis dosad nije imao **nikakvu** CI pokrivenost.
+  Instalira samo lagane ovisnosti (paddle/torch su neobavezni, servis ima stub
+  put), pa smoke testovi uključujući path-traversal čuvar vrte se u sekundama.
+
+**Rezultat:** blokirajući gateovi zeleni lokalno, `tsc` čist, 435 testova,
+backend 4/4, build prolazi.
+
+---
+
+## Sažetak
+
+| Val | Commit | Učinak |
+|---|---|---|
+| 1 | `28f0bae` | 50 ID-jeva pića više ne siroti korisničke oznake; registar + 9 testova |
+| 2 | `e263752` | prvo učitavanje 4 210 → 590 kB gzip (**−3,62 MB**) |
+| 3 | `89cbb05` | dva bijela ekrana zatvorena; backend traversal zatvoren |
+| 4 | ovaj | CI napokon pokriva master; 2 gatea popravljena, backend u CI-ju |
+
+### Namjerno nedirnuto
+
+- **Katalog drift** (239 line-mergeva) — sadržajne odluke, rizik za ne-duplikate.
+- **Age gate** — `VITE_AGE_GATE` postoji kao tip i komentar u `.env.example`
+  („leave unset (gate ON)"), ali mehanizam nije nigdje implementiran. Treba
+  odluka: implementirati ili maknuti obećanje iz dokumentacije.
+- **`AGENTS.md`** još tvrdi „There is no backend"; `README.md` ne spominje
+  backend, OCR ni CDN-ove (jsdelivr/HuggingFace/ModelScope) koje PWA gađa na
+  prvi OCR. Brojke u `README.md` su zastarjele (155/273/98/2395 → 321/275/101/2400).
+- **Backend**: nema ograničenja veličine uploada ni autentikacije, `Image.open`
+  na nepouzdanim bajtovima vraća 500 umjesto 400, `/health` učitava CLIP model.
+- **Pristupačnost**: 5 sheetova bez `role="dialog"`/Esc/focus trapa, `Meter`
+  bez `aria-label`.
+- **Perf**: `cycle` u `useMemo` deps reskorira 2400 cigara na svaki klik
+  „Sljedeći prijedlog".
