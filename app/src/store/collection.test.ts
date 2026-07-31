@@ -125,4 +125,106 @@ describe("remapCollectionAliases", () => {
     expect(out.items["cig-oliva-serie-v@torpedo"].owned).toBe(true);
     expect(out.journal[0].cigarId).toBe("cig-oliva-serie-v");
   });
+
+  // Kombinirani unosi pića ("Flor de Cana 12/18") razdvojeni su u zasebne boce.
+  // Korisnikova oznaka na starom ID-u mora preživjeti selidbu.
+  it("seli ocjenu i biljesku sa starog ID-a pica na nasljednika", async () => {
+    const { remapCollectionAliases } = await import("./collection");
+    const out = remapCollectionAliases({
+      items: {
+        "rum-flor-de-cana-12-18": {
+          owned: true,
+          tried: true,
+          wishlist: false,
+          rating: 8,
+          note: "kupljeno u Vrutku",
+        },
+      },
+      journal: [
+        {
+          id: "j1",
+          date: "2026-01-01",
+          cigarId: "cig-oliva-serie-v",
+          drinkId: "rum-flor-de-cana-12-18",
+          rating: 9,
+          note: "",
+        },
+      ],
+    });
+    expect(out.items["rum-flor-de-cana-12-18"]).toBeUndefined();
+    expect(out.items["rum-flor-de-cana-12"]).toEqual({
+      owned: true,
+      tried: true,
+      wishlist: false,
+      rating: 8,
+      note: "kupljeno u Vrutku",
+    });
+    expect(out.journal[0].drinkId).toBe("rum-flor-de-cana-12");
+  });
+
+  it("spaja stari i novi ID pica bez gubitka (ocjena = visa, biljeska ostaje)", async () => {
+    const { remapCollectionAliases } = await import("./collection");
+    const out = remapCollectionAliases({
+      items: {
+        "rum-flor-de-cana-12-18": {
+          owned: false,
+          tried: true,
+          wishlist: false,
+          rating: 9,
+          note: "stara biljeska",
+        },
+        "rum-flor-de-cana-12": {
+          owned: true,
+          tried: false,
+          wishlist: false,
+          rating: 6,
+          note: "",
+        },
+      },
+      journal: [],
+    });
+    expect(Object.keys(out.items)).toEqual(["rum-flor-de-cana-12"]);
+    expect(out.items["rum-flor-de-cana-12"]).toEqual({
+      owned: true,
+      tried: true,
+      wishlist: false,
+      rating: 9,
+      note: "stara biljeska",
+    });
+  });
+
+  it("solo zapis (drinkId null) ostaje solo", async () => {
+    const { remapCollectionAliases } = await import("./collection");
+    const out = remapCollectionAliases({
+      items: {},
+      journal: [
+        {
+          id: "j1",
+          date: "2026-01-01",
+          cigarId: "cig-oliva-serie-v",
+          drinkId: null,
+          rating: null,
+          note: "",
+        },
+      ],
+    });
+    expect(out.journal[0].drinkId).toBeNull();
+  });
+
+  it("nepoznat ID pica ostaje netaknut (ne brisemo sto ne razumijemo)", async () => {
+    const { remapCollectionAliases } = await import("./collection");
+    const out = remapCollectionAliases({
+      items: {
+        "rum-nepoznato-nesto": {
+          owned: true,
+          tried: false,
+          wishlist: false,
+          rating: 5,
+          note: "moje",
+        },
+      },
+      journal: [],
+    });
+    expect(out.items["rum-nepoznato-nesto"]?.rating).toBe(5);
+  });
 });

@@ -1,6 +1,6 @@
 // Kolekcija i dnevnik — localStorage, s export/import backupom.
 import { useSyncExternalStore } from "react";
-import { canonicalCigarItemId } from "../data";
+import { canonicalCigarItemId, canonicalDrinkId } from "../data";
 import { normalizeCollectionPayload } from "../lib/safeStorage";
 
 export interface ItemState {
@@ -41,16 +41,28 @@ function mergeItemState(a: ItemState, b: ItemState): ItemState {
   };
 }
 
+/**
+ * Ključ stavke je ili cigara (`cig-…`, moguće `@vitola`) ili piće.
+ * Cigarski alias ne smije dirati id pića i obratno, pa se kanonizacija bira
+ * po tome koja strana ključ uopće prepoznaje.
+ */
+function canonicalItemKey(id: string): string {
+  const asCigar = canonicalCigarItemId(id);
+  if (asCigar !== id) return asCigar;
+  return canonicalDrinkId(id);
+}
+
 /** Alias ključevi → kanonski id; spoji stanja ako oba postoje. */
 export function remapCollectionAliases(data: CollectionData): CollectionData {
   const items: Record<string, ItemState> = {};
   for (const [id, state] of Object.entries(data.items)) {
-    const canon = canonicalCigarItemId(id);
+    const canon = canonicalItemKey(id);
     items[canon] = items[canon] ? mergeItemState(items[canon], state) : state;
   }
   const journal = data.journal.map((j) => ({
     ...j,
     cigarId: canonicalCigarItemId(j.cigarId),
+    drinkId: j.drinkId == null ? null : canonicalDrinkId(j.drinkId),
   }));
   return { items, journal };
 }
