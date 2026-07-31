@@ -39,7 +39,14 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: ["**/*.{js,css,html,svg,png,json,woff2}"],
-        // data-cigars chunk + paddleocr-js; ONNX modeli se skidaju s CDN-a (ne u precache)
+        // PaddleOCR / ORT worker chunks are 10–27 MB — load on demand, not SW precache
+        globIgnores: [
+          "**/ocr-paddle-*.js",
+          "**/worker-entry-*.js",
+          "**/*ort-wasm*.js",
+          "**/*ort-wasm*.wasm",
+        ],
+        // data-cigars (~3 MB) still fits; OCR assets ignored above
         maximumFileSizeToCacheInBytes: 8 * 1024 * 1024,
         runtimeCaching: [
           {
