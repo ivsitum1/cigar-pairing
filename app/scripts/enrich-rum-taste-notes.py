@@ -24,9 +24,9 @@ RUMS = ROOT / "src" / "data" / "rums.json"
 OUT = HERE / "output"
 
 CANON = {
-    "citrus", "crveno-voce", "dim", "duhan", "ester-funk", "hrast", "kakao",
+    "citrus", "dim", "duhan", "ester-funk", "hrast", "kakao",
     "karamela", "kava", "melasa", "orasasti", "overproof", "slatko",
-    "suho-voce", "tamno-voce", "travnato", "tropsko-voce", "trska",
+    "suho-voce", "tamno-voce", "travnato", "tropsko-voce", "voce",
     "vanilija", "vegetalno", "zacini",
 }
 
@@ -47,7 +47,7 @@ STYLE_TAGS = {
     "demerara": ["melasa", "hrast", "zacini"],
     "st-lucia": ["vanilija", "duhan", "hrast"],
     "spiced": ["zacini", "vanilija", "karamela"],
-    "mixing": ["citrus", "trska", "tropsko-voce"],
+    "mixing": ["citrus", "travnato", "tropsko-voce"],
     "liqueur": ["slatko", "vanilija", "tropsko-voce"],
     "blend": ["vanilija", "hrast", "suho-voce"],
     "other": ["vanilija", "hrast", "karamela"],
@@ -68,7 +68,7 @@ NOTES: dict[str, tuple[str, str, list[str] | None]] = {
     "rum-planteray-3-stars-bijeli": (
         "Planteray 3 Stars (bijeli) — blending rum: tropsko voće, blagi arrak i svježe bilje. Primarno za koktele; uz laganu cigaru samo ako treba čist kontrast.",
         "Planteray 3 Stars (white) — blending rum: tropical fruit, light arrack and fresh herbs. Mainly for cocktails; with a light cigar only for clean contrast.",
-        ["tropsko-voce", "citrus", "trska"],
+        ["tropsko-voce", "citrus", "travnato"],
     ),
     "rum-planteray-original-dark": (
         "Planteray Original Dark — tamni blending stil: melasa, začini i karamela. Više koktel/rocks nego čisti sipper uz punu cigaru.",
@@ -128,7 +128,7 @@ NOTES: dict[str, tuple[str, str, list[str] | None]] = {
     "rum-opthimus-15-oporto": (
         "Opthimus 15 Solera Oporto (43%) — port finish: crveno voće, karamela i meki hrast. Čisto ili kap vode.",
         "Opthimus 15 Solera Oporto (43%) — port finish: red fruit, caramel and soft oak. Neat or a drop of water.",
-        ["crveno-voce", "karamela", "hrast"],
+        ["voce", "karamela", "hrast"],
     ),
     "rum-opthimus-18-cum-laude": (
         "Opthimus 18 Cum Laude (38%) — slatki dominikanski solera: vanilija, karamela i blagi hrast. Lagani sipper.",
@@ -183,7 +183,7 @@ NOTES: dict[str, tuple[str, str, list[str] | None]] = {
     "rum-savanna-traditionnel-reunion": (
         "Savanna Traditionnel (Réunion) — traditionnel stil: trska, blagi začini i suho voće. Poseban otok; čisto ili kap vode.",
         "Savanna Traditionnel (Réunion) — traditionnel style: cane, light spice and dried fruit. Distinct island; neat or a drop of water.",
-        ["trska", "zacini", "suho-voce"],
+        ["travnato", "zacini", "suho-voce"],
     ),
     "rum-rum-nation-barbados-panama-demerara": (
         "Rum Nation (Barbados/Panama/Demerara) — bottler serija: ovisno o destilatu suho voće, hrast ili melasa. Birajte bocu, ne marku.",
@@ -238,7 +238,7 @@ NOTES: dict[str, tuple[str, str, list[str] | None]] = {
     "rum-fortin-epopeya-paragvaj": (
         "Fortín Epopeya (Paragvaj) — rijetko podrijetlo: trska, karamela i blagi hrast. Kuriozitet; čisto.",
         "Fortín Epopeya (Paraguay) — rare origin: cane, caramel and soft oak. Curiosity; neat.",
-        ["trska", "karamela", "hrast"],
+        ["travnato", "karamela", "hrast"],
     ),
     "rum-goslings-black-seal": (
         "Gosling's Black Seal — bermudski dark: melasa, začini i tamni ton. Klasik za Dark'n'Stormy; i kao sipper.",
@@ -248,7 +248,7 @@ NOTES: dict[str, tuple[str, str, list[str] | None]] = {
     "rum-lazy-dodo-mauricijus": (
         "Lazy Dodo (Mauricijus) — single estate: suho voće, hrast i blaga trska. Suhiji otok; čisto.",
         "Lazy Dodo (Mauritius) — single estate: dried fruit, oak and light cane. Drier island; neat.",
-        ["suho-voce", "hrast", "trska"],
+        ["suho-voce", "hrast", "travnato"],
     ),
     "rum-matusalem-gran-reserva": (
         "Matusalem Gran Reserva — klasika cigar-zajednice: karamela, vanilija i meki hrast. Čisto uz maduro.",
@@ -298,12 +298,12 @@ NOTES: dict[str, tuple[str, str, list[str] | None]] = {
     "rum-ryoma-japan": (
         "Ryoma (Japan) — japanski rum od trske: čist, lagan, travnato-citrusni rub. Poseban sipper; čisto.",
         "Ryoma (Japan) — Japanese cane rum: clean, light, grassy-citrus edge. Distinct sipper; neat.",
-        ["trska", "citrus", "travnato"],
+        ["travnato", "citrus", "travnato"],
     ),
     "rum-sol-tarasco-4-yo-charanda": (
         "Sol Tarasco 4 YO (charanda) — meksička charanda: trska, blagi začini i suh ton. Kuriozitet; čisto.",
         "Sol Tarasco 4 YO (charanda) — Mexican charanda: cane, light spice and a dry tone. Curiosity; neat.",
-        ["trska", "zacini", "citrus"],
+        ["travnato", "zacini", "citrus"],
     ),
     "rum-bacardi-anejo-cuatro-4yo": (
         "Bacardi Añejo Cuatro — mlad 4 YO: vanilija, hrast i čist alkohol. Više koktel/highball nego teški sipper.",
@@ -323,7 +323,7 @@ NOTES: dict[str, tuple[str, str, list[str] | None]] = {
     "rum-havana-club-especial": (
         "Havana Club Especial — mlad kubanski rum: trska, blagi duhan i citrus. Najčešće highball ili lagani sip.",
         "Havana Club Especial — young Cuban rum: cane, light tobacco and citrus. Mostly highball or an easy sip.",
-        ["trska", "duhan", "citrus"],
+        ["travnato", "duhan", "citrus"],
     ),
     "rum-ratu-dark-5yo-fiji": (
         "Ratu Dark 5yo (Fiji) — fijijski dark: tropsko voće, melasa i blaga slatkoća. Egzotičan sipper.",
@@ -338,7 +338,7 @@ NOTES: dict[str, tuple[str, str, list[str] | None]] = {
     "rum-rom-club-white": (
         "Rom Club White (Mauricijus) — bijeli blending rum: citrus, trska i tropsko voće. Koktel baza.",
         "Rom Club White (Mauritius) — white blending rum: citrus, cane and tropical fruit. Cocktail base.",
-        ["citrus", "trska", "tropsko-voce"],
+        ["citrus", "travnato", "tropsko-voce"],
     ),
     "rum-ron-centenario-20": (
         "Ron Centenario 20 — kostarikanska solera: karamela, suho voće i gladak hrast. Jednostavan, sladak sipper.",
@@ -363,17 +363,17 @@ NOTES: dict[str, tuple[str, str, list[str] | None]] = {
     "rum-bacardi-carta-blanca-oro-negra": (
         "Bacardi Carta Blanca / Oro / Negra — globalni mixing standard: čist alkohol, citrus i blaga vanilija. Kokteli prije sippera.",
         "Bacardi Carta Blanca / Oro / Negra — global mixing standard: clean spirit, citrus and light vanilla. Cocktails before sipping.",
-        ["citrus", "vanilija", "trska"],
+        ["citrus", "vanilija", "travnato"],
     ),
     "rum-barcelo-blanco": (
         "Barceló Blanco — dominikanski bijeli: citrus, trska i čist alkohol. Mojito, cuba libre, highball.",
         "Barceló Blanco — Dominican white: citrus, cane and clean spirit. Mojito, cuba libre, highball.",
-        ["citrus", "trska", "tropsko-voce"],
+        ["citrus", "travnato", "tropsko-voce"],
     ),
     "rum-pampero-blanco": (
         "Pampero Blanco — venezuelanski bijeli: citrus i trska. Koktel baza, ne teški sipper.",
         "Pampero Blanco — Venezuelan white: citrus and cane. Cocktail base, not a heavy sipper.",
-        ["citrus", "trska", "tropsko-voce"],
+        ["citrus", "travnato", "tropsko-voce"],
     ),
     "rum-remedy-spiced": (
         "Remedy Spiced — njemački spiced stil: vanilija, začini i karamela. Rocks ili cola; uz cigaru samo za začinski kontrast.",
@@ -398,7 +398,7 @@ NOTES: dict[str, tuple[str, str, list[str] | None]] = {
     "rum-ron-cana-del-caribe-white": (
         "Ron Caña del Caribe White — osnovni bijeli rum: citrus, trska i čist alkohol. Koktel baza (mojito, cuba libre), ne teški sipper.",
         "Ron Caña del Caribe White — basic white rum: citrus, cane and clean spirit. Cocktail base (mojito, cuba libre), not a heavy sipper.",
-        ["citrus", "trska", "tropsko-voce"],
+        ["citrus", "travnato", "tropsko-voce"],
     ),
     "rum-sailor-jerry": (
         "Sailor Jerry (46%) — karipski spiced: vanilija, cimet i jači alkohol. Rocks ili cola.",
@@ -443,7 +443,7 @@ NOTES: dict[str, tuple[str, str, list[str] | None]] = {
     "rum-cdi-tricorne-white": (
         "CDI Tricorne White (43%) — bijeli blend: citrus, trska i čist alkohol. Koktel ili lagani kontrast uz cigaru.",
         "CDI Tricorne White (43%) — white blend: citrus, cane and clean spirit. Cocktail or light contrast with a cigar.",
-        ["citrus", "trska", "tropsko-voce"],
+        ["citrus", "travnato", "tropsko-voce"],
     ),
     "rum-papalin-5-overproof": (
         "Papalin 5 YO Overproof (57%) — jamajčanski overproof: esteri, tropsko voće i hrast. Kap vode obavezna.",
@@ -478,12 +478,12 @@ NOTES: dict[str, tuple[str, str, list[str] | None]] = {
     "rum-soccaron-white": (
         "Soccaron White — jednostavan kolonski bijeli rum: citrus, trska i tropsko voće. Koktel baza prije čiste čaše.",
         "Soccaron White — simple column white rum: citrus, cane and tropical fruit. Cocktail base before a neat glass.",
-        ["citrus", "trska", "tropsko-voce"],
+        ["citrus", "travnato", "tropsko-voce"],
     ),
     "rum-capitan-bucanero-blanco": (
         "Capitan Bucanero Blanco — dominikanski bijeli mikser: citrus, trska i čist alkohol.",
         "Capitan Bucanero Blanco — Dominican white mixer: citrus, cane and clean spirit.",
-        ["citrus", "trska", "tropsko-voce"],
+        ["citrus", "travnato", "tropsko-voce"],
     ),
     "rum-four-monkeys-svijetli-tamni": (
         "Four Monkey's (svijetli/tamni) — pristupačni rum za miješanje: karamela ili citrus ovisno o boji. Kokteli prije sippera.",
@@ -508,7 +508,7 @@ NOTES: dict[str, tuple[str, str, list[str] | None]] = {
     "rum-matusalem-platino": (
         "Matusalem Platino — bijeli/solera blender: citrus, vanilija i čist alkohol. Koktel ili lagani kontrast.",
         "Matusalem Platino — white/solera blender: citrus, vanilla and clean spirit. Cocktail or light contrast.",
-        ["citrus", "vanilija", "trska"],
+        ["citrus", "vanilija", "travnato"],
     ),
     "rum-flor-de-cana-5-clasico": (
         "Flor de Caña 5 YO Clásico — kratko odležani nikaragvanski: vanilija, hrast i orašasti ton. Čist dekl. stil.",
@@ -518,7 +518,7 @@ NOTES: dict[str, tuple[str, str, list[str] | None]] = {
     "rum-flor-de-cana-extra-seco-4": (
         "Flor de Caña Extra Seco 4 — suh bijeli nikaragvanski: citrus, trska i čist alkohol. Koktel standard.",
         "Flor de Caña Extra Seco 4 — dry Nicaraguan white: citrus, cane and clean spirit. Cocktail standard.",
-        ["citrus", "trska", "vanilija"],
+        ["citrus", "travnato", "vanilija"],
     ),
     "rum-flor-de-cana-4-oro": (
         "Flor de Caña 4 YO Oro — zlatni kratki anejo: vanilija, hrast i blago suho voće. Highball ili lagani sip.",
@@ -528,7 +528,7 @@ NOTES: dict[str, tuple[str, str, list[str] | None]] = {
     "rum-karukera-gold-premium": (
         "Karukera Gold Premium — guadeloupski gold/ambre: trska, citrus i blagi hrast. Agricole pristupačniji ton.",
         "Karukera Gold Premium — Guadeloupe gold/ambre: cane, citrus and soft oak. More approachable agricole tone.",
-        ["trska", "citrus", "hrast"],
+        ["travnato", "citrus", "hrast"],
     ),
     "rum-pyrat-xo-anguilla-blend": (
         "Pyrat XO — blend s narančom i slatkoćom: tropsko voće, vanilija i desertni ton. Liker-ish sipper.",
@@ -553,12 +553,12 @@ NOTES: dict[str, tuple[str, str, list[str] | None]] = {
     "rum-clement-creole-shrubb": (
         "Clément Créole Shrubb — narančasti rum-liker s Martiniquea: citrus, trska i gorka kora. Aperitiv ili desert.",
         "Clément Créole Shrubb — orange rum liqueur from Martinique: citrus, cane and bitter peel. Aperitif or dessert.",
-        ["citrus", "trska", "slatko"],
+        ["citrus", "travnato", "slatko"],
     ),
     "rum-jm-shrubb": (
         "J.M Shrubb — narančasti rum-liker Habitation Bellevue: citrus, trska i blaga slatkoća. Aperitiv.",
         "J.M Shrubb — Habitation Bellevue orange rum liqueur: citrus, cane and mild sweetness. Aperitif.",
-        ["citrus", "trska", "slatko"],
+        ["citrus", "travnato", "slatko"],
     ),
 }
 

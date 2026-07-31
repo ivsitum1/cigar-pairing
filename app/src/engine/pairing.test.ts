@@ -50,9 +50,10 @@ describe("pairing engine — poznati parovi iz Excela", () => {
   });
 
   it("dosladjeni rum + puna maduro cigara dobiva kontrast bonus (slatkoca presijece gorcinu)", () => {
-    const onyx = byId(rums, "rum-barcelo-imperial-onyx");
+    // sweetness >= 4; Onyx is now lab ~9 g/L (light) so use a still-sweet measured bottle
+    const zacapaXo = byId(rums, "rum-zacapa-xo");
     const padronMaduro = byId(cigars, "cig-padron-1964-anniversary"); // Maduro wrapper, body 4
-    const { reasons } = scorePairing(padronMaduro, onyx);
+    const { reasons } = scorePairing(padronMaduro, zacapaXo);
     expect(reasons.some((r) => r.rule === "contrast-sweet-maduro")).toBe(true);
   });
 
