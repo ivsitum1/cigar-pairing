@@ -71,3 +71,56 @@ pocrveni s uputom umjesto da korisnici tiho izgube podatke. Provjereno
 simulacijom (uklonjen `rum-mount-gay-xo` → test pao s očekivanom porukom).
 
 **Rezultat:** `tsc` čist, **433 testa prolaze** (424 + 9 novih).
+
+---
+
+## Val 2 — OCR bundle se učitavao svakom posjetitelju
+
+### Nalaz
+
+`vite.config.ts` je PaddleOCR/onnxruntime gurao u **imenovani** `manualChunks`
+chunk. Imenovani chunk rastopi granicu dinamičkog importa: iako
+`lib/ocrEngine.ts` koristi `await import("@paddleocr/paddleocr-js")`, entry je
+dobio **statični** import i `<link rel="modulepreload">`:
+
+```
+dist/assets/index-*.js:  from"./ocr-paddle-*.js"
+dist/index.html:         <link rel="modulepreload" href="…/ocr-paddle-*.js">
+```
+
+Chunk je **10,9 MB / 3,53 MB gzip** — povlačio ga je svaki posjetitelj, i onaj
+koji OCR nikad ne otvori.
+
+Raniji `558b4cd` je problem točno prepoznao, ali riješio krivu polovicu:
+izbacio ga je iz **Workbox precachea**, dok je `modulepreload` ostao.
+
+Uz to: `digestifs.json` (eager, preko `data/index.ts`) padao je u isti
+`data-misc` bucket kao `dictionary`/`lexicon`/`hrGuide`/`eveningArchetypes`/
+`clubSources` — sadržaj koji čita **samo lazy Club stranica**. Jedan eager
+import povlačio je ~96 kB gzip klupskog teksta u prvo učitavanje.
+
+### Popravak
+
+`app/vite.config.ts`:
+
+- OCR **izbačen iz `manualChunks`** → ostaje pravi lazy chunk iza `await import()`.
+- Ime chunka zadržano preko **`output.chunkFileNames`** (koji ne utječe na graf),
+  pa `globIgnores: ["**/ocr-paddle-*.js"]` i dalje pogađa.
+- `digestifs` + alias/registar datoteke → `data-meta`; ostatak `data/*.json`
+  vraća `undefined` pa ide uz svoju lazy stranicu.
+
+### Izmjereno
+
+| Prvo učitavanje (gzip) | prije | poslije |
+|---|---|---|
+| `ocr-paddle` | 3 526 kB | — (lazy) |
+| `data-misc` | 113 kB | — (uz Club) |
+| `data-meta` | 48 kB | 64 kB |
+| `index` | 60 kB | 64 kB |
+| ostalo (vendor, rums, whiskies, brandies, drinks-small, cigars) | 462 kB | 462 kB |
+| **ukupno** | **4 210 kB** | **590 kB** |
+
+**−3,62 MB gzip (−86 %).** Potvrđeno: `ocr-paddle` više nije u
+`dist/index.html` preloadima ni u SW precache manifestu.
+
+`tsc` čist, 433 testa prolaze.
