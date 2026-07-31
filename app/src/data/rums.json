@@ -7678,5 +7678,452 @@
    "hr": "Pitú (cachaça): Druga boca iz kombiniranog unosa — vlastiti profil. Profil ostaje u stilu cachaca (Brazil). Cachaça 51 i Pitú su masovne industrijske cachaçe — kolonski destilirane, nedozrele ili tek nakratko odmarane, i daleko najprodavaniji temelj za Caipirinhu u Brazilu. Nisu za čisto",
    "en": "Pitú (cachaça): Second bottle from the combined entry — its own profile. Profile stays in the cachaca style (Brazil). Cachaça 51 and Pitú are mass-market industrial cachaças — column-distilled, unaged or only briefly rested, and by far the biggest-selling Caipirinha base in Brazil. They are not fo"
   }
+ },
+ {
+  "id": "rum-barrum-classic-dark-reserves",
+  "category": "rum",
+  "name": "Barrum Reserves (The Classic Barrum)",
+  "style": "other",
+  "region": "Mauricijus",
+  "body": 3,
+  "sweetness": 4,
+  "flavorTags": [
+   "karamela",
+   "vanilija",
+   "hrast",
+   "dim"
+  ],
+  "additiveStatus": "sweetened",
+  "additiveDetail": {
+   "hr": "Blago slađen (procjena)",
+   "en": "Lightly sweetened (estimate)"
+  },
+  "additiveSource": "Stilska procjena (isti proizvođač — Litchquor — kao Gold of Mauritius i Rom Club) — nije lab mjerenje",
+  "qualityScore": 6,
+  "priceEUR": {
+   "min": 42.99,
+   "max": 42.99
+  },
+  "shopHR": "Vrutak",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "neat": 2,
+   "water": 2,
+   "rocks": 3,
+   "highball": 1,
+   "cola": 0,
+   "best": "On the rocks / kap vode"
+  },
+  "cigarHint": null,
+  "priceUrl": null,
+  "notes": {
+   "hr": "Barrum Reserves — The Classic Barrum: 7-godišnji melasni rum iz Mauricijusa, odležan u novim francuskim hrastovim bačvama. Karamela, vanilija, javorov sirup i dimljeno-drveni ton na kraju.",
+   "en": "Barrum Reserves — The Classic Barrum: a 7-year molasses rum from Mauritius, aged in new French oak. Caramel, vanilla, maple syrup, with a smoky, woody edge on the finish."
+  }
+ },
+ {
+  "id": "rum-bocatheva-master-distiller-selection",
+  "category": "rum",
+  "name": "Bocatheva Master Distiller Selection",
+  "style": "blend",
+  "region": "Dominikanska Republika i Jamajka",
+  "body": 3,
+  "sweetness": 2,
+  "flavorTags": [
+   "suho-voce",
+   "hrast"
+  ],
+  "additiveStatus": "light",
+  "additiveDetail": {
+   "hr": "Blagi dodatak (procjena)",
+   "en": "Light addition (estimate)"
+  },
+  "additiveSource": "Stilska procjena (ista linija kao Bocatheva 10/15 YO) — nije lab mjerenje",
+  "qualityScore": 6.5,
+  "priceEUR": {
+   "min": 41.79,
+   "max": 41.79
+  },
+  "shopHR": "Vrutak",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "neat": 2,
+   "water": 3,
+   "rocks": 2,
+   "highball": 1,
+   "cola": 0,
+   "best": "Čisto / kap vode"
+  },
+  "cigarHint": null,
+  "priceUrl": null,
+  "notes": {
+   "hr": "Bocatheva Master Distiller Selection: blend Dominikanske Republike i Jamajke, ulazni izraz iz iste linije kao Bocatheva 10 YO i 15 YO.",
+   "en": "Bocatheva Master Distiller Selection: a Dominican Republic & Jamaica blend, the entry expression in the same range as the Bocatheva 10 YO and 15 YO."
+  }
+ },
+ {
+  "id": "rum-bocatheva-100-pot-still",
+  "category": "rum",
+  "name": "Bocatheva 100% Pot Still",
+  "style": "blend",
+  "region": "Jamajka i Venezuela",
+  "body": 4,
+  "sweetness": 2,
+  "flavorTags": [
+   "suho-voce",
+   "hrast"
+  ],
+  "additiveStatus": "light",
+  "additiveDetail": {
+   "hr": "Blagi dodatak (procjena)",
+   "en": "Light addition (estimate)"
+  },
+  "additiveSource": "Stilska procjena (ista linija kao Bocatheva 10/15 YO) — nije lab mjerenje",
+  "qualityScore": 7,
+  "priceEUR": {
+   "min": 48.99,
+   "max": 48.99
+  },
+  "shopHR": "Vrutak",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "neat": 3,
+   "water": 3,
+   "rocks": 1,
+   "highball": 0,
+   "cola": 0,
+   "best": "Čisto / kap vode"
+  },
+  "cigarHint": null,
+  "priceUrl": null,
+  "notes": {
+   "hr": "Bocatheva 100% Pot Still: blend Jamajke i Venezuele, potpuno iz kotlova šaržnog tipa (pot still) — punija tekstura od standardnih Bocatheva izdanja.",
+   "en": "Bocatheva 100% Pot Still: a Jamaica & Venezuela blend, entirely pot-still distilled — fuller texture than the standard Bocatheva expressions."
+  }
+ },
+ {
+  "id": "rum-bocatheva-10-yo-venezuela",
+  "category": "rum",
+  "name": "Bocatheva 10 YO Venezuela",
+  "style": "venezuela",
+  "region": "Venezuela",
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "karamela",
+   "suho-voce"
+  ],
+  "additiveStatus": "light",
+  "additiveDetail": {
+   "hr": "Blagi dodatak (procjena)",
+   "en": "Light addition (estimate)"
+  },
+  "additiveSource": "Stilska procjena (blagi dodatak) — nije lab/hidrometar",
+  "qualityScore": 6.5,
+  "priceEUR": {
+   "min": 49.59,
+   "max": 49.59
+  },
+  "shopHR": "Vrutak",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "neat": 2,
+   "water": 3,
+   "rocks": 2,
+   "highball": 1,
+   "cola": 0,
+   "best": "Čisto / kap vode"
+  },
+  "cigarHint": null,
+  "priceUrl": null,
+  "notes": {
+   "hr": "Bocatheva 10 YO Venezuela: mlađa sestra Bocatheve 15 YO, isti venezuelanski profil karamele i suhog voća.",
+   "en": "Bocatheva 10 YO Venezuela: the younger sibling of the Bocatheva 15 YO, the same Venezuelan caramel and dried-fruit profile."
+  }
+ },
+ {
+  "id": "rum-botran-8",
+  "category": "rum",
+  "name": "Botran No.8",
+  "style": "solera",
+  "region": "Gvatemala (solera)",
+  "body": 2,
+  "sweetness": 3,
+  "flavorTags": [
+   "karamela",
+   "vanilija"
+  ],
+  "additiveStatus": "light",
+  "additiveDetail": {
+   "hr": "Blaga slatkoća (procjena)",
+   "en": "Light sweetness (estimate)"
+  },
+  "additiveSource": "Stilska procjena (ista solera linija kao Botran 12/15/18) — nije lab mjerenje",
+  "qualityScore": 6,
+  "priceEUR": {
+   "min": 27.34,
+   "max": 27.34
+  },
+  "priceApprox": true,
+  "shopHR": "Vrutak",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "neat": 2,
+   "water": 2,
+   "rocks": 3,
+   "highball": 1,
+   "cola": 0,
+   "best": "On the rocks (velika kocka)"
+  },
+  "cigarHint": null,
+  "priceUrl": null,
+  "notes": {
+   "hr": "Botran No.8: ulazna solera ekspresija, lakša i mlađa od Botran 12.",
+   "en": "Botran No.8: the entry solera expression, lighter and younger than the Botran 12."
+  }
+ },
+ {
+  "id": "rum-four-monkeys-svijetli-tamni",
+  "category": "rum",
+  "name": "Four Monkey's Rum (Svijetli/Tamni)",
+  "style": "mixing",
+  "region": "Njemačka",
+  "body": 2,
+  "sweetness": 3,
+  "flavorTags": [
+   "karamela"
+  ],
+  "additiveStatus": "unknown",
+  "additiveDetail": {
+   "hr": "Bez podataka o dodacima (nije mjereno)",
+   "en": "No additive data (not measured)"
+  },
+  "additiveSource": "Stilska procjena — nije lab/hidrometar",
+  "qualityScore": 4,
+  "priceEUR": {
+   "min": 9.99,
+   "max": 9.99
+  },
+  "shopHR": "Vrutak",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "neat": 1,
+   "water": 0,
+   "rocks": 2,
+   "highball": 3,
+   "cola": 2,
+   "best": "Koktel / highball"
+  },
+  "cigarHint": null,
+  "priceUrl": null,
+  "notes": {
+   "hr": "Four Monkey's (Valentić d.o.o.): pristupačan njemački rum za mješana pića, svijetla i tamna verzija; malo javnih podataka o profilu.",
+   "en": "Four Monkey's (Valentić d.o.o.): an affordable German rum for mixed drinks, light and dark versions; little public data on the profile."
+  }
+ },
+ {
+  "id": "rum-soccaron-white",
+  "category": "rum",
+  "name": "Soccaron White Rum",
+  "style": "mixing",
+  "region": "Francuska (kolonski)",
+  "body": 1,
+  "sweetness": 2,
+  "flavorTags": [],
+  "additiveStatus": "unknown",
+  "additiveDetail": {
+   "hr": "Bez podataka o dodacima (nije mjereno)",
+   "en": "No additive data (not measured)"
+  },
+  "additiveSource": "Stilska procjena — nije lab/hidrometar",
+  "qualityScore": 3.5,
+  "priceEUR": {
+   "min": 8.99,
+   "max": 8.99
+  },
+  "shopHR": "Vrutak",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "neat": 1,
+   "water": 0,
+   "rocks": 2,
+   "highball": 3,
+   "cola": 3,
+   "best": "Koktel / highball"
+  },
+  "cigarHint": null,
+  "priceUrl": null,
+  "notes": {
+   "hr": "Soccaron White: jednostavan kolonski bijeli rum za koktele (Les Grands Chais de France).",
+   "en": "Soccaron White: a simple column-still white rum for cocktails (Les Grands Chais de France)."
+  }
+ },
+ {
+  "id": "rum-timon-caribbean-spice",
+  "category": "rum",
+  "name": "Timón Caribbean Rum & Spice",
+  "style": "blend",
+  "region": "Dominikanska Republika, Nikaragva, Venezuela (blend)",
+  "body": 3,
+  "sweetness": 4,
+  "flavorTags": [
+   "karamela",
+   "vanilija"
+  ],
+  "additiveStatus": "flavored",
+  "additiveDetail": {
+   "hr": "Doslađen/aromatiziran (procjena)",
+   "en": "Sweetened/flavoured (estimate)"
+  },
+  "additiveSource": "Stilska procjena (slatki banana/karamela/vanilija profil) — nije lab mjerenje",
+  "qualityScore": 4.5,
+  "priceEUR": {
+   "min": 34.99,
+   "max": 34.99
+  },
+  "shopHR": "Vrutak",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "neat": 1,
+   "water": 1,
+   "rocks": 3,
+   "highball": 1,
+   "cola": 1,
+   "best": "On the rocks"
+  },
+  "cigarHint": null,
+  "priceUrl": null,
+  "notes": {
+   "hr": "Timón Caribbean Rum & Spice (Nicolaus, Slovačka): blend Dominikanske Republike, Nikaragve i Venezuele; slatki profil banane, maslaca i vanilije.",
+   "en": "Timón Caribbean Rum & Spice (Nicolaus, Slovakia): a blend of Dominican Republic, Nicaragua and Venezuela; a sweet banana, buttery-cookie and vanilla profile."
+  }
+ },
+ {
+  "id": "rum-capitan-bucanero-blanco",
+  "category": "rum",
+  "name": "Capitan Bucanero Blanco",
+  "style": "dominican",
+  "region": "Dominikanska Republika",
+  "body": 2,
+  "sweetness": 2,
+  "flavorTags": [],
+  "additiveStatus": "unknown",
+  "additiveDetail": {
+   "hr": "Bez podataka o dodacima (nije mjereno)",
+   "en": "No additive data (not measured)"
+  },
+  "additiveSource": "Stilska procjena — nije lab/hidrometar",
+  "qualityScore": 3.5,
+  "priceEUR": {
+   "min": 11.49,
+   "max": 11.49
+  },
+  "shopHR": "Vrutak",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "neat": 1,
+   "water": 0,
+   "rocks": 2,
+   "highball": 3,
+   "cola": 3,
+   "best": "Koktel / highball"
+  },
+  "cigarHint": null,
+  "priceUrl": null,
+  "notes": {
+   "hr": "Capitan Bucanero Blanco: bijela mikser-verzija, sestra Anejo/Reserva izdanja iz iste linije.",
+   "en": "Capitan Bucanero Blanco: the white mixing version, sibling of the Anejo/Reserva expressions in the same range."
+  }
+ },
+ {
+  "id": "rum-capitan-bucanero-elixir",
+  "category": "rum",
+  "name": "Capitan Bucanero Elixir 7 Años",
+  "style": "dominican",
+  "region": "Dominikanska Republika",
+  "body": 3,
+  "sweetness": 4,
+  "flavorTags": [
+   "karamela",
+   "vanilija"
+  ],
+  "additiveStatus": "flavored",
+  "additiveDetail": {
+   "hr": "Doslađen/aromatiziran (procjena)",
+   "en": "Sweetened/flavoured (estimate)"
+  },
+  "additiveSource": "Stilska procjena (aromatizirano/spiced) — nije lab mjerenje",
+  "qualityScore": 4,
+  "priceEUR": {
+   "min": 16.49,
+   "max": 16.49
+  },
+  "shopHR": "Vrutak",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "neat": 1,
+   "water": 1,
+   "rocks": 3,
+   "highball": 1,
+   "cola": 2,
+   "best": "On the rocks"
+  },
+  "cigarHint": null,
+  "priceUrl": null,
+  "notes": {
+   "hr": "Capitan Bucanero Elixir 7 Años: slatki, pristupačan profil karamele i vanilije, isti stil kao Anejo/Reserva iz iste linije.",
+   "en": "Capitan Bucanero Elixir 7 Años: a sweet, approachable caramel-vanilla profile, same house style as the Anejo/Reserva in the range."
+  }
+ },
+ {
+  "id": "rum-ratu-spiced-fiji",
+  "category": "rum",
+  "name": "Ratu Spiced (Fiji)",
+  "style": "other",
+  "region": "Fiji",
+  "body": 3,
+  "sweetness": 4,
+  "flavorTags": [
+   "karamela"
+  ],
+  "additiveStatus": "flavored",
+  "additiveDetail": {
+   "hr": "Doslađen/začinjen (procjena)",
+   "en": "Sweetened/spiced (estimate)"
+  },
+  "additiveSource": "Stilska procjena (isti proizvođač kao Ratu Dark 5yo) — nije lab mjerenje",
+  "qualityScore": 5,
+  "priceEUR": {
+   "min": 30.52,
+   "max": 30.52
+  },
+  "priceApprox": true,
+  "shopHR": "Vrutak",
+  "status": null,
+  "pairable": true,
+  "serving": {
+   "neat": 1,
+   "water": 1,
+   "rocks": 3,
+   "highball": 2,
+   "cola": 1,
+   "best": "Velika kocka leda"
+  },
+  "cigarHint": null,
+  "priceUrl": null,
+  "notes": {
+   "hr": "Ratu Spiced: začinjena sestra Ratu Dark 5yo, egzotično podrijetlo (Fiji), blago slađen/začinjen profil.",
+   "en": "Ratu Spiced: the spiced sibling of Ratu Dark 5yo, exotic origin (Fiji), a lightly sweetened/spiced profile."
+  }
  }
 ]
