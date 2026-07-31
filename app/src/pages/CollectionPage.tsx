@@ -239,6 +239,18 @@ export function CollectionPage({
         <div className="flex flex-wrap items-center justify-end gap-2">
           <OcrScan
             candidates={ocrCandidates}
+            enableReceipt
+            onConfirmCigar={(id, action) => {
+              if (action === "dismiss") return;
+              const cigar = cigarForItemId(id) ?? CIGARS.find((c) => c.id === id);
+              if (!cigar) return;
+              if (action === "pair" && onPair) {
+                closeSheets();
+                onPair({ kind: "cigar", item: cigar });
+                return;
+              }
+              openCigar(cigar);
+            }}
             onMatch={(id) => {
               const cigar = cigarForItemId(id) ?? CIGARS.find((c) => c.id === id);
               if (cigar) openCigar(cigar);

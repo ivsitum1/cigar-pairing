@@ -16,10 +16,13 @@ const normalize = (s: string) =>
 export const tokenize = (s: string) =>
   normalize(s)
     .split(/[^a-z0-9]+/)
-    .filter((t) => t.length >= 3);
+    // keep single-letter series marks (Serie V / O / G) from shop receipts
+    .filter((t) => t.length >= 3 || /^[a-z]$/.test(t));
 
 export const STOP = new Set(["rum", "ron", "rhum", "whisky", "whiskey", "cigar", "cigars",
-  "anos", "years", "old", "aged", "vol", "70cl", "700ml", "product", "the"]);
+  "anos", "years", "old", "aged", "vol", "70cl", "700ml", "product", "the",
+  // HR POS noise (avoids "TOTAL" → brand Total Flame)
+  "total", "ukupno", "platiti", "pdv", "eur", "kom", "visa", "kartice", "kartica"]);
 
 /** Levenshteinova udaljenost s ranim izlazom kad prijedje max. */
 function levenshtein(a: string, b: string, max: number): number {
@@ -61,6 +64,16 @@ function scoreTokens(candTokens: string[], textTokens: string[]): number {
   return score;
 }
 
+const YEARISH = /^(?:\d+(?:st|nd|rd|th)|\d{2,4})$/;
+
+/** "20th" in text must not promote a "10th Anniversary …" line via shared words. */
+function anniversaryConflict(candTokens: string[], textTokens: string[]): boolean {
+  const cY = candTokens.filter((t) => YEARISH.test(t));
+  const tY = textTokens.filter((t) => YEARISH.test(t));
+  if (cY.length === 0 || tY.length === 0) return false;
+  return !cY.some((y) => tY.includes(y));
+}
+
 /** Nadji kandidata s najboljim (fuzzy) poklapanjem; prvo suzi po brendu. */
 export function matchOcrText(
   text: string,
@@ -72,13 +85,27 @@ export function matchOcrText(
   const bestIn = (list: OcrCandidate[]) => {
     let best: OcrCandidate | null = null;
     let bestScore = 0;
+    let bestCoverage = -1;
     for (const c of list) {
       const candTokens = tokenize(c.label).filter((t) => !STOP.has(t));
       if (candTokens.length === 0) continue;
+      if (anniversaryConflict(candTokens, textTokens)) continue;
       const score = scoreTokens(candTokens, textTokens);
-      if (score > bestScore) {
+      // coverage prefers "Serie V" over "Serie V Melanio" when Melanio is absent
+      const matched = candTokens.filter(
+        (t) => textTokens.includes(t) || textTokens.some((x) => fuzzyEquals(t, x)),
+      ).length;
+      const coverage = matched / candTokens.length;
+      if (
+        score > bestScore ||
+        (score === bestScore && coverage > bestCoverage) ||
+        (score === bestScore &&
+          coverage === bestCoverage &&
+          candTokens.length < (best ? tokenize(best.label).filter((t) => !STOP.has(t)).length : 999))
+      ) {
         best = c;
         bestScore = score;
+        bestCoverage = coverage;
       }
     }
     return { best, bestScore };

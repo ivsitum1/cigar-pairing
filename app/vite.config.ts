@@ -39,18 +39,43 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: ["**/*.{js,css,html,svg,png,json,woff2}"],
-        // data-cigars chunk narastao s market katalogom (>2 MiB uncompressed,
-        // ~240 kB gzip na wire) — podigni limit da PWA i dalje radi offline
-        maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
+        // data-cigars chunk + paddleocr-js; ONNX modeli se skidaju s CDN-a (ne u precache)
+        maximumFileSizeToCacheInBytes: 8 * 1024 * 1024,
+        runtimeCaching: [
+          {
+            // PaddleOCR / ORT wasm + model assets (first OCR use)
+            urlPattern: ({ url }) =>
+              url.hostname.includes("jsdelivr.net") ||
+              url.hostname.includes("huggingface.co") ||
+              url.hostname.includes("modelscope.cn") ||
+              url.pathname.includes("onnxruntime") ||
+              url.pathname.endsWith(".wasm") ||
+              url.pathname.endsWith(".onnx"),
+            handler: "CacheFirst",
+            options: {
+              cacheName: "ocr-models",
+              expiration: { maxEntries: 40, maxAgeSeconds: 60 * 60 * 24 * 30 },
+            },
+          },
+        ],
       },
     }),
   ],
+  optimizeDeps: {
+    exclude: ["@paddleocr/paddleocr-js"],
+  },
+  worker: {
+    format: "es",
+  },
   build: {
     rollupOptions: {
       output: {
         // Indeksi po kategoriji (paralelni download + granularni cache).
         // Club atlas / club.json / 101 / bonton ostaju uz svoje lazy stranice.
         manualChunks(id: string) {
+          if (id.includes("@paddleocr/paddleocr-js") || id.includes("onnxruntime")) {
+            return "ocr-paddle";
+          }
           if (/\/src\/data\/.*\.json$/.test(id)) {
             if (
               id.includes("world_outline") ||
