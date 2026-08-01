@@ -214,11 +214,11 @@ vitolom, dok canonical ima punu listu listova, prave bilješke i 4 vitole.
 - blokirajući gateovi: `tsc`, testovi, `taxonomy-audit`, `apply-cigar-descriptions`,
   `test_reconcile_hr`, `build`;
 - **neblokirajuće** (`continue-on-error`): `apply-taxonomy --check` i
-  `normalize-vitolas --check`. Ta dva prijavljuju nakupljeni drift
-  (~239 line-mergeva, 77 duplikat-sumnji). Nisu pokvarena — traže sadržajne
-  odluke, a **automatsko spajanje bi moglo progutati zapise koji nisu
-  duplikati**, pa ih namjerno nisam dirao. TODO u datoteci označava povratak u
-  blokirajući korak.
+  `normalize-vitolas --check` — ~~nakupljeni drift, traže sadržajne odluke~~.
+  > ⚠️ **Povučeno u Valu 5.** Ta je procjena bila kriva: brojka „239" je bila
+  > iz druge skripte, `apply-taxonomy` je htio 3 bezopasne izmjene, a
+  > `normalize-vitolas` je skrivao **brisanje jednog zapisa koji nije
+  > duplikat**. Oba su od Vala 5 blokirajuća.
 - nov `backend` job — servis dosad nije imao **nikakvu** CI pokrivenost.
   Instalira samo lagane ovisnosti (paddle/torch su neobavezni, servis ima stub
   put), pa smoke testovi uključujući path-traversal čuvar vrte se u sekundama.
@@ -235,11 +235,11 @@ backend 4/4, build prolazi.
 | 1 | `28f0bae` | 50 ID-jeva pića više ne siroti korisničke oznake; registar + 9 testova |
 | 2 | `e263752` | prvo učitavanje 4 210 → 590 kB gzip (**−3,62 MB**) |
 | 3 | `89cbb05` | dva bijela ekrana zatvorena; backend traversal zatvoren |
-| 4 | ovaj | CI napokon pokriva master; 2 gatea popravljena, backend u CI-ju |
+| 4 | `f4d8462` | CI napokon pokriva master; 2 gatea popravljena, backend u CI-ju |
+| 5 | `b7b9bf6` | zastarjela odluka o spajanju brisala je zapis koji nije duplikat; svih 5 gateova blokira |
 
 ### Namjerno nedirnuto
 
-- **Katalog drift** (239 line-mergeva) — sadržajne odluke, rizik za ne-duplikate.
 - **Age gate** — `VITE_AGE_GATE` postoji kao tip i komentar u `.env.example`
   („leave unset (gate ON)"), ali mehanizam nije nigdje implementiran. Treba
   odluka: implementirati ili maknuti obećanje iz dokumentacije.
@@ -323,3 +323,33 @@ instrukcija, ne sistemski drift.
 **Rezultat:** svih **5 CI gateova zeleno**, `--check` ne prlja stablo, katalog
 ostaje 2400 zapisa, `cig-asylum-insidious-short` netaknut (Corona 44×102mm,
 9,40 €, The Humidor). `tsc` čist, 435 testova, build prolazi, backend 4/4.
+
+---
+
+## Val 6 — dokumentacija koja laže agentima
+
+`AGENTS.md` je i dalje tvrdio **„There is no backend"** — datoteka koju svaki
+sljedeći agent čita prvu. Uz `backend/` FastAPI servis u repou to je aktivno
+zavaravanje, a ne samo zastarjelost. `README.md` nije spominjao ni backend ni
+OCR ni CDN-ove, a brojke su odlutale kroz desetke regeneracija:
+155/273/98/2395 dok je stvarno 321/275/101/**2400**.
+
+### Popravak
+
+**`AGENTS.md`** — točan opis: PWA je isporučeni proizvod, `backend/` i
+`app/scripts/` su neobavezni i nisu dio deploya. Dodano i troje što bi
+sljedećeg agenta inače koštalo istog istraživanja:
+
+- svih 5 CI gateova nabrojano (i da su read-only);
+- **ID se nikad ne briše bez aliasa** — s razlogom (localStorage) i mjestom;
+- **`keepSeparate` nadjačava `line_merge_decisions.json`** — sukob prekida skriptu;
+- **OCR bundle mora ostati lazy** — zašto `manualChunks` ime ruši lazy granicu.
+
+**`README.md`** — osvježene brojke, dodan odjeljak o OCR-u (koji engine za što,
+da je bundle lazy, da modeli idu s jsDelivr/HuggingFace/ModelScope i da app
+**nije** offline-first za OCR modele) i o `backend/` servisu.
+
+**`app/src/data/readmeCounts.test.ts`** — 9 testova veže README brojke uz
+stvarne podatke. Brojke su odlutale jer ih ništa nije držalo; sad drži.
+
+**Rezultat:** `tsc` čist, **444 testa** (435 + 9).
