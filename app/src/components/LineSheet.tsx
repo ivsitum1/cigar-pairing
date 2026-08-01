@@ -1,5 +1,6 @@
 // Linija: priča + metrike + puna tablica vitola (Phase 4).
 import { useMemo } from "react";
+import { SheetShell } from "./SheetShell";
 import type { Cigar, Vitola } from "../types";
 import { brandInfo, brandDisplayName, resolveCigarId } from "../data";
 import { useI18n } from "../i18n";
@@ -36,14 +37,11 @@ export function LineSheet({
   const vitolas = useMemo(() => uniqueVitolas(cigar), [cigar]);
 
   return (
-    <div
-      className="fixed inset-0 z-50 flex items-end justify-center bg-black/60 sm:items-center"
-      onClick={onClose}
+    <SheetShell
+      onClose={onClose}
+      label={`${cigar.brand} ${cigar.line}`}
+      panelClassName="max-h-[88vh] w-full max-w-lg overflow-y-auto rounded-t-2xl border border-zlato/25 bg-humidor p-5 pb-8 sm:rounded-2xl"
     >
-      <div
-        className="max-h-[88vh] w-full max-w-lg overflow-y-auto rounded-t-2xl border border-zlato/25 bg-humidor p-5 pb-8 sm:rounded-2xl"
-        onClick={(e) => e.stopPropagation()}
-      >
         <div className="mx-auto mb-4 h-1 w-10 rounded-full bg-dim/40 sm:hidden" />
 
         <div className="mb-3">
@@ -143,8 +141,6 @@ export function LineSheet({
           className="mt-4 w-full rounded-lg border border-zlato/40 py-2.5 font-display text-sm uppercase tracking-widest text-zlato hover:bg-zlato/10"
         >
           {t("common.close")}
-        </button>
-      </div>
-    </div>
+        </button>    </SheetShell>
   );
 }

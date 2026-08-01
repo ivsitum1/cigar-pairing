@@ -17,6 +17,25 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 CIGARS = HERE.parent / "src" / "data" / "cigars.json"
 SOURCE = HERE / "cigar_descriptions.json"
+ALIASES = HERE.parent / "src" / "data" / "cigarIdAliases.json"
+
+
+def resolve_id(cigar_id: str, by_id: dict, aliases: dict) -> str | None:
+    """Prati cigarIdAliases.json do zivog zapisa (isto kao resolveCigarId u appu).
+
+    Bez ovoga svako spajanje linija (npr. Asylum 13) ostavi kurirani opis da
+    visi na starom id-u i obori CI, iako alias vec postoji i tocan je.
+    """
+    cur = cigar_id
+    seen = set()
+    while cur not in by_id:
+        if cur in seen:
+            return None
+        seen.add(cur)
+        cur = aliases.get(cur)
+        if cur is None:
+            return None
+    return cur
 
 
 def main() -> int:
@@ -27,13 +46,17 @@ def main() -> int:
     descriptions = json.loads(SOURCE.read_text(encoding="utf-8"))
     cigars = json.loads(CIGARS.read_text(encoding="utf-8"))
     by_id = {c["id"]: c for c in cigars}
+    aliases = json.loads(ALIASES.read_text(encoding="utf-8")).get("aliases", {})
 
-    missing = sorted(set(descriptions) - set(by_id))
+    missing = sorted(
+        cid for cid in descriptions if resolve_id(cid, by_id, aliases) is None
+    )
     changed = 0
     for cigar_id, text in descriptions.items():
-        cigar = by_id.get(cigar_id)
-        if cigar is None:
+        canonical = resolve_id(cigar_id, by_id, aliases)
+        if canonical is None:
             continue
+        cigar = by_id[canonical]
         if cigar.get("notes") != text:
             cigar["notes"] = {"hr": text["hr"], "en": text["en"]}
             changed += 1

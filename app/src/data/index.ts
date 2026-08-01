@@ -12,6 +12,7 @@ import cigarsJson from "./cigars.json";
 import shoppingJson from "./shopping.json";
 import brandsJson from "./brands.json";
 import cigarIdAliasesJson from "./cigarIdAliases.json";
+import drinkIdAliasesJson from "./drinkIdAliases.json";
 import { applyVitola, resolveDefaultVitola } from "../lib/cigarVitola";
 import {
   parseCigarItemId,
@@ -95,8 +96,32 @@ export interface ShoppingData {
 
 export const SHOPPING: ShoppingData = shoppingJson as ShoppingData;
 
-export const drinkById = (id: string | null | undefined): Drink | undefined =>
-  id == null || id === "" ? undefined : ALL_DRINKS.find((d) => d.id === id);
+const DRINK_ID_ALIASES: Record<string, string> =
+  (drinkIdAliasesJson as { aliases?: Record<string, string> }).aliases ?? {};
+
+const drinkByExactId = (id: string): Drink | undefined =>
+  ALL_DRINKS.find((d) => d.id === id);
+
+/**
+ * Piće iza ID-a, uz praćenje `drinkIdAliases.json` do kanonskog zapisa.
+ * Kad se kombinirani unos razdvoji ili preimenuje, stari ID i dalje razriješi —
+ * inače korisnikova oznaka Imam/ocjena/bilješka i zapis u dnevniku ostanu
+ * sirotčad (nevidljivi u Kolekciji, goli ID u dnevniku).
+ */
+export const drinkById = (id: string | null | undefined): Drink | undefined => {
+  if (id == null || id === "") return undefined;
+  let cur = id;
+  const seen = new Set<string>();
+  for (;;) {
+    const hit = drinkByExactId(cur);
+    if (hit) return hit;
+    if (seen.has(cur)) return undefined; // ciklus u aliasima
+    seen.add(cur);
+    const next = DRINK_ID_ALIASES[cur];
+    if (!next) return undefined;
+    cur = next;
+  }
+};
 
 export const cigarById = (id: string): Cigar | undefined =>
   CIGARS.find((c) => c.id === id);
@@ -158,6 +183,24 @@ export function canonicalCigarItemId(itemId: string): string {
   const { cigarId, vitolaSlug } = parseCigarItemId(itemId);
   const canon = resolveCigarIdAlias(cigarId);
   return vitolaSlug ? `${canon}${VITOLA_ID_SEP}${vitolaSlug}` : canon;
+}
+
+/**
+ * Kanonski ID pića: prati `drinkIdAliases.json` do živog zapisa.
+ * Nepoznat ID vraća se nepromijenjen — migracija ne smije brisati ono što
+ * ne razumije (možda je piće privremeno izvan kataloga).
+ */
+export function canonicalDrinkId(id: string): string {
+  let cur = id;
+  const seen = new Set<string>();
+  while (!drinkByExactId(cur)) {
+    if (seen.has(cur)) return id; // ciklus — ostavi kako je bilo
+    seen.add(cur);
+    const next = DRINK_ID_ALIASES[cur];
+    if (!next) return id;
+    cur = next;
+  }
+  return cur;
 }
 
 /** Prati cigarIdAliases.json do kanonskog zapisa (lanac aliasa). */

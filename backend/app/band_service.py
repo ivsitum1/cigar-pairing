@@ -1,7 +1,6 @@
 """Band reference storage + visual matching (CLIP when available, phash fallback)."""
 from __future__ import annotations
 
-import io
 import json
 import logging
 import re
@@ -14,10 +13,15 @@ import numpy as np
 from PIL import Image
 
 from .config import BAND_DIR
+from .images import load_rgb
 
 log = logging.getLogger("band")
 
-_SAFE_ID = re.compile(r"^[\w.@+-]+$")
+# Tocka ostaje dopustena jer je vitola-scoped kljuc moze nositi
+# ("cig-ashton-aged-maduro@maduro-no.30"), ali sam ".." se odbija: raniji
+# "[\w.@+-]+" ga je propustao, pa je cigar_id=".." izlazio iz BAND_DIR i
+# pisao meta.json razinu iznad.
+_SAFE_ID = re.compile(r"^(?!\.*$)(?!.*\.\.)[\w.@+-]+$")
 
 _clip_model: Any | None = None
 _clip_preprocess: Any | None = None
@@ -35,6 +39,9 @@ def _cigar_dir(cigar_id: str) -> Path:
     if not _SAFE_ID.match(cigar_id):
         raise ValueError("invalid cigar_id")
     d = BAND_DIR / cigar_id
+    # pojas i naramenice: i da regex ikad popusti, put mora ostati u BAND_DIR
+    if not d.resolve().is_relative_to(BAND_DIR.resolve()):
+        raise ValueError("invalid cigar_id")
     d.mkdir(parents=True, exist_ok=True)
     return d
 
@@ -47,7 +54,16 @@ def _load_meta(cigar_id: str) -> dict[str, Any]:
     p = _meta_path(cigar_id)
     if not p.exists():
         return {"refs": []}
-    return json.loads(p.read_text(encoding="utf-8"))
+    try:
+        meta = json.loads(p.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        # pokvaren meta.json inace obara SVAKI zahtjev na 500 dok ga netko
+        # rucno ne makne; radije se ponasaj kao da referenci nema
+        log.warning("unreadable meta.json for %s — treating as empty", cigar_id)
+        return {"refs": []}
+    if not isinstance(meta, dict) or not isinstance(meta.get("refs"), list):
+        return {"refs": []}
+    return meta
 
 
 def _save_meta(cigar_id: str, meta: dict[str, Any]) -> None:
@@ -112,7 +128,7 @@ def cosine(a: np.ndarray, b: np.ndarray) -> float:
 
 
 def add_reference(cigar_id: str, data: bytes) -> dict[str, Any]:
-    image = Image.open(io.BytesIO(data)).convert("RGB")
+    image = load_rgb(data)
     vec, method = embed_image(image)
     ref_id = uuid.uuid4().hex[:12]
     folder = _cigar_dir(cigar_id)
@@ -140,7 +156,7 @@ def list_references(cigar_id: str | None = None) -> list[dict[str, Any]]:
 
 
 def match_image(data: bytes, top_k: int = 5) -> list[BandHit]:
-    image = Image.open(io.BytesIO(data)).convert("RGB")
+    image = load_rgb(data)
     query, _method = embed_image(image)
     hits: list[BandHit] = []
     for cid_dir in BAND_DIR.iterdir():
@@ -164,10 +180,22 @@ def match_image(data: bytes, top_k: int = 5) -> list[BandHit]:
 
 
 def band_status() -> dict[str, Any]:
-    clip = _try_load_clip()
-    n_refs = len(list_references())
+    """Jeftin status za /health.
+
+    Ranije je ovo zvalo `_try_load_clip()` (ucitava ViT-B-32, stotine MB) i
+    `list_references()` (cita meta.json svakog direktorija) — health check je
+    tako bio najskuplji endpoint u servisu. Sada samo prijavljuje je li CLIP
+    vec ucitan i broji direktorije; puni broj referenci daje
+    `GET /band/references`.
+    """
+    loaded = _clip_model is not None
+    try:
+        n_cigars = sum(1 for p in BAND_DIR.iterdir() if p.is_dir())
+    except OSError:
+        n_cigars = 0
     return {
-        "clip": clip,
-        "method": "clip" if clip else "phash",
-        "references": n_refs,
+        # None = jos nismo ni pokusali; prvi /band/* poziv ce odluciti
+        "clip": loaded if _clip_tried else None,
+        "method": ("clip" if loaded else "phash") if _clip_tried else "undetermined",
+        "cigars_with_references": n_cigars,
     }

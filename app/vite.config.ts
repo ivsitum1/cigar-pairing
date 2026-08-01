@@ -77,12 +77,23 @@ export default defineConfig({
   build: {
     rollupOptions: {
       output: {
+        // Lazy OCR chunk zadrzava stabilno ime da ga workbox globIgnores i
+        // dalje prepozna — ime se dodjeljuje OVDJE, ne u manualChunks, jer
+        // manualChunks bi ga povukao u staticni graf entryja.
+        chunkFileNames(info) {
+          const ocr = (info.moduleIds ?? []).some(
+            (m) => m.includes("@paddleocr/paddleocr-js") || m.includes("onnxruntime"),
+          );
+          return ocr ? "assets/ocr-paddle-[hash].js" : "assets/[name]-[hash].js";
+        },
         // Indeksi po kategoriji (paralelni download + granularni cache).
         // Club atlas / club.json / 101 / bonton ostaju uz svoje lazy stranice.
         manualChunks(id: string) {
-          if (id.includes("@paddleocr/paddleocr-js") || id.includes("onnxruntime")) {
-            return "ocr-paddle";
-          }
+          // PaddleOCR/ORT NAMJERNO nema manualChunks ime: imenovani chunk
+          // rastopi granicu dinamickog importa, pa entry dobije statican
+          // import i <link modulepreload> na 10,9 MB (3,5 MB gzip) — svakom
+          // posjetitelju, i onom koji OCR nikad ne dotakne. Bez imena ostaje
+          // pravi lazy chunk iza `await import()` u lib/ocrEngine.ts.
           if (/\/src\/data\/.*\.json$/.test(id)) {
             if (
               id.includes("world_outline") ||
@@ -103,10 +114,22 @@ export default defineConfig({
             ) {
               return "data-drinks-small";
             }
-            if (id.includes("shopping.json") || id.includes("brands.json")) {
+            // digestifs + aliasi/registar su u eager grafu (data/index.ts).
+            // Sve ostalo (dictionary, lexicon, hrGuide, archetypes,
+            // clubSources) cita samo lazy Club stranica — bez imena ostaje
+            // uz nju umjesto da jedan eager import povuce ~96 kB gzip
+            // klupskog teksta u prvo ucitavanje.
+            if (
+              id.includes("shopping.json") ||
+              id.includes("brands.json") ||
+              id.includes("cigarIdAliases") ||
+              id.includes("drinkIdAliases") ||
+              id.includes("drinkIdRegistry") ||
+              id.includes("digestifs.json")
+            ) {
               return "data-meta";
             }
-            return "data-misc";
+            return undefined;
           }
           if (/node_modules\/(react|react-dom|scheduler)\//.test(id)) {
             return "vendor";

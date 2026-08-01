@@ -28,9 +28,14 @@ indeksima rangiranim po kvaliteti za sipping uz cigaru.
 - `app/` — Vite + React + TS + Tailwind PWA
   - Hash-routing s deep-linkovima: `#/pairing/cigar/<id>` i `#/pairing/drink/<id>`
     otvaraju pairing s odabranom stavkom (dijeljivi linkovi, back tipka radi)
-  - `src/data/*.json` — indeksi (155 rumova, 273 whiskyja, 98 brandy/grappa, 70 gin, 124 vina, 26 tequila, 33 kave, 2395 cigara);
+  - `src/data/*.json` — indeksi (321 rum, 275 whiskyja, 101 brandy/grappa, 70 gin,
+    124 vina, 26 tequila, 33 kave, 13 digestiva, 3700 cigara);
     build ih dijeli u odvojene chunkove (`data-cigars`, `data-whiskies`, `data-rums`…) radi
     paralelnog downloada i boljeg cachea
+  - **ID-jevi se nikad ne brišu.** Kolekcija i dnevnik žive u `localStorage` i
+    ključaju na te ID-jeve, pa uklonjen zapis tiho osiroti korisnikove oznake.
+    Kad se linija preimenuje ili razdvoji, nasljednik ide u `drinkIdAliases.json`
+    odnosno `cigarIdAliases.json`; `drinkIdRegistry.json` + testovi to čuvaju
   - Personalizacija: ocjene iz dnevnika lokalno naginju prijedloge (±5 bodova,
     s objašnjenjem); filter prilike (jutro/poslijepodne/večer); s pairing rezultata
     **Zabilježi večer** sprema spoj u dnevnik i može označiti stavke kao probane;
@@ -77,6 +82,18 @@ indeksima rangiranim po kvaliteti za sipping uz cigaru.
     - Rotirajući sadržaj: `club.json` (83 činjenice, 80 kviz pitanja)
     - **Kupi vs Traži online:** `src/lib/drinkBuyLink.ts` prikazuje **Kupi** samo kad URL izgleda kao stranica *tog* proizvoda (slug↔ime, bez kategorijskih `/katalog/` linkova); inače **Traži online**. Root cause fuzzy matcha u pipelineu dokumentiran u `docs/superpowers/plans/2026-07-17-content-rollout.md` (Task 0 runtime safeguard; Task 1b stroži match kasnije).
     - **Redoslijed content valova** (kurirane bilješke + `cigarHint` u katalogu): rum MASTER → whisky klasici → fortificirana vina/sherry → brandy/XO i HR vinjak → cigare s `profileEstimated` (vidi brainstorm spec).
+- **OCR** (`src/lib/ocrEngine.ts`, `components/OcrScan.tsx`) — fotografiraj
+  etiketu/prsten ili račun: `tesseract.js` za etikete, `@paddleocr/paddleocr-js`
+  za račune (bolji na termalnim tablicama), pa `lib/receiptParse.ts` složi
+  stavke u batch „Imam".
+  - OCR bundle je **lazy** (~10,9 MB) — povuče se tek na prvu upotrebu, nije u
+    prvom učitavanju ni u SW precacheu. Modeli se dohvaćaju s jsDelivr /
+    HuggingFace / ModelScope i keširaju (`ocr-models`, CacheFirst, 30 dana) —
+    app je offline-first za vlastite podatke, ali ne i za OCR modele.
+- `backend/` — **neobavezan lokalni FastAPI servis** (port 8787) za jači OCR
+  računa (PaddleOCR) i vizualno prepoznavanje prstena cigare. Nije dio deploya:
+  PWA ga zove samo ako je postavljen `VITE_OCR_API_URL`; bez toga (zadano na
+  GitHub Pagesu) koristi ugrađeni paddleocr-js. Vidi `backend/README.md`.
 - Deploy: push na `master` → GitHub Actions → GitHub Pages
 
 ## Podaci o kolekciji (imam / probao / ocjene / dnevnik)

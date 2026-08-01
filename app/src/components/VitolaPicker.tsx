@@ -1,4 +1,5 @@
 import type { Cigar, Vitola } from "../types";
+import { SheetShell } from "./SheetShell";
 import { useI18n } from "../i18n";
 import { uniqueVitolas } from "../lib/cigarVitola";
 import { vitolaBlurb } from "../lib/vitolaInfo";
@@ -18,14 +19,11 @@ export function VitolaPicker({
   const vitolas = uniqueVitolas(cigar);
 
   return (
-    <div
-      className="fixed inset-0 z-50 flex items-end justify-center bg-black/60 sm:items-center"
-      onClick={onBack}
+    <SheetShell
+      onClose={onBack}
+      label={`${cigar.brand} ${cigar.line}`}
+      panelClassName="max-h-[80vh] w-full max-w-lg overflow-y-auto rounded-t-2xl border border-zlato/25 bg-humidor p-5 pb-8 sm:rounded-2xl"
     >
-      <div
-        className="max-h-[80vh] w-full max-w-lg overflow-y-auto rounded-t-2xl border border-zlato/25 bg-humidor p-5 pb-8 sm:rounded-2xl"
-        onClick={(e) => e.stopPropagation()}
-      >
         <div className="mx-auto mb-4 h-1 w-10 rounded-full bg-dim/40 sm:hidden" />
         <div className="flex items-start justify-between gap-2">
           <div>
@@ -66,8 +64,6 @@ export function VitolaPicker({
               </button>
             );
           })}
-        </div>
-      </div>
-    </div>
+        </div>    </SheetShell>
   );
 }

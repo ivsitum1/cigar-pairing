@@ -24,11 +24,26 @@ const PAGES: readonly string[] = ["pairing", "catalog", "collection", "shopping"
 const CLUB_VIEWS: readonly string[] = ["101", "bonton", "lexicon", "dictionary", "hr-guide", "archetypes"];
 const COLLECTION_VIEWS: readonly string[] = ["humidor", "collection", "calendar"];
 
+/**
+ * decodeURIComponent baca URIError na neispravnom postotnom kodu ("%", "%E0%A4%A").
+ * parseHash se zove pri bootu (module scope) i na svaki hashchange, pa bi
+ * neuhvaćena iznimka srušila aplikaciju u bijeli ekran — iz kojeg se korisnik
+ * ne može izvući bez ručnog uređivanja URL-a. Neispravan segment radije
+ * ostavimo sirov: gore je izgubiti deep-link nego cijeli app.
+ */
+function safeDecode(segment: string): string {
+  try {
+    return decodeURIComponent(segment);
+  } catch {
+    return segment;
+  }
+}
+
 export function parseHash(hash: string): Route {
   const parts = hash.replace(/^#\/?/, "").split("/").filter(Boolean);
   const page: Page = PAGES.includes(parts[0]) ? (parts[0] as Page) : "pairing";
   if (page === "pairing" && (parts[1] === "cigar" || parts[1] === "drink") && parts[2]) {
-    return { page, pair: { kind: parts[1], id: decodeURIComponent(parts[2]) } };
+    return { page, pair: { kind: parts[1], id: safeDecode(parts[2]) } };
   }
   if (page === "club" && CLUB_VIEWS.includes(parts[1])) {
     return { page, club: parts[1] as ClubView };
@@ -43,13 +58,13 @@ export function parseHash(hash: string): Route {
   if (page === "catalog" && parts[1] === "brand" && parts[2]) {
     return {
       page,
-      catalog: { level: "brand", brandSlug: decodeURIComponent(parts[2]) },
+      catalog: { level: "brand", brandSlug: safeDecode(parts[2]) },
     };
   }
   if (page === "catalog" && parts[1] === "line" && parts[2]) {
     return {
       page,
-      catalog: { level: "line", cigarId: decodeURIComponent(parts[2]) },
+      catalog: { level: "line", cigarId: safeDecode(parts[2]) },
     };
   }
   if (page === "catalog" && parts[1] === "vitola" && parts[2] && parts[3]) {
@@ -57,8 +72,8 @@ export function parseHash(hash: string): Route {
       page,
       catalog: {
         level: "vitola",
-        cigarId: decodeURIComponent(parts[2]),
-        vitolaSlug: decodeURIComponent(parts[3]),
+        cigarId: safeDecode(parts[2]),
+        vitolaSlug: safeDecode(parts[3]),
       },
     };
   }

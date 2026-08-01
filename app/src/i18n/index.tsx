@@ -17,6 +17,24 @@ const STRINGS = {
     hr: "Spremanje nije uspjelo (prostor za pohranu pun je ili blokiran) — promjene vrijede samo do zatvaranja. Izvezi sigurnosnu kopiju u Kolekciji.",
     en: "Saving failed (storage full or blocked) — changes last only until you close the app. Export a backup from Collection.",
   },
+  // provjera dobi
+  "age.title": { hr: "Samo za punoljetne", en: "Adults only" },
+  "age.body": {
+    hr: "Ova aplikacija govori o cigarama i alkoholnim pićima. Sadržaj je namijenjen osobama od 18 godina i starijima.",
+    en: "This app covers cigars and alcoholic drinks. Its content is intended for people aged 18 and over.",
+  },
+  "age.confirm": { hr: "Imam 18 ili više", en: "I am 18 or older" },
+  "age.deny": { hr: "Nemam 18", en: "I am under 18" },
+  "age.deniedTitle": { hr: "Hvala na iskrenosti", en: "Thanks for being honest" },
+  "age.deniedBody": {
+    hr: "Sadržaj ove aplikacije nije namijenjen osobama mlađima od 18 godina. Slobodno je zatvori.",
+    en: "This app's content is not intended for people under 18. Feel free to close it.",
+  },
+  "age.deniedBack": { hr: "Pogriješio sam, vrati me", en: "That was a mistake, take me back" },
+  "age.disclaimer": {
+    hr: "Duhan i alkohol štete zdravlju. Uživaj odgovorno.",
+    en: "Tobacco and alcohol harm your health. Enjoy responsibly.",
+  },
   // klub
   "club.quote": { hr: "Citat dana", en: "Quote of the day" },
   "club.fact": { hr: "Znaš li…?", en: "Did you know…?" },
@@ -778,13 +796,26 @@ interface I18nCtx {
 const Ctx = createContext<I18nCtx>(null!);
 
 export function I18nProvider({ children }: { children: ReactNode }) {
+  // Ostatak aplikacije pristupa storageu obazrivo (safeStorage, oba storea), a
+  // ovdje je bilo golo: kad je storage blokiran (Safari private, stroga
+  // pravila kolacica), sam getter baca SecurityError i ruSi boot.
   const [lang, setLangState] = useState<Lang>(() => {
-    const resolved = resolveLang(localStorage.getItem("lang"));
+    let raw: string | null = null;
+    try {
+      raw = localStorage.getItem("lang");
+    } catch {
+      /* storage blokiran — ostajemo na zadanom jeziku */
+    }
+    const resolved = resolveLang(raw);
     document.documentElement.lang = resolved;
     return resolved;
   });
   const setLang = (l: Lang) => {
-    localStorage.setItem("lang", l);
+    try {
+      localStorage.setItem("lang", l);
+    } catch {
+      /* pun ili blokiran storage — jezik vrijedi do zatvaranja */
+    }
     setLangState(l);
     document.documentElement.lang = l;
   };

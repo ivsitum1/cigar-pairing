@@ -24529,8 +24529,8 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Linija 13 kuće Asylum (CLE / Tom Lazuka i Christian Eiroa) — ekstremni ring gauge, nikaragvanski Habano pokrov i puna snaga.",
-      "en": "Asylum's 13 line (CLE / Tom Lazuka and Christian Eiroa) — extreme ring gauges, Nicaraguan Habano wrapper, full strength."
+      "hr": "Asylum 13 je linija Christiana Eiroe i Toma Lazuke poznata po ekstremnim ringovima — nikaragvanski Habano pokrov i puna snaga, bez zaobilaženja.",
+      "en": "Asylum 13 is the Christian Eiroa and Tom Lazuka line known for extreme ring gauges — a Nicaraguan Habano wrapper and full strength, with nothing softened."
     },
     "markets": [
       "HR",
@@ -24681,8 +24681,8 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Asylum 13 Connecticut — blaga strana marke: ekvadorski Connecticut Shade nad hondureškim punjenjem, u velikim formatima.",
-      "en": "Asylum 13 Connecticut — the brand's mild side: Ecuadorian Connecticut Shade over Honduran filler, in oversized formats."
+      "hr": "Blaga strana Asyluma — ekvadorski Connecticut Shade nad hondureškim punjenjem, kremasto i orašasto, u istim velikim formatima kao ostatak marke.",
+      "en": "Asylum's mild side — Ecuadorian Connecticut Shade over Honduran filler, creamy and nutty, in the same oversized formats as the rest of the brand."
     },
     "markets": [
       "EU",
@@ -25704,8 +25704,8 @@
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Honduras, Connecticut pokrov — lagane snage, laganog tijela. Okusi: kremasto, cedrovina, orašasti tonovi.",
-      "en": "Honduras, Connecticut wrapper — mild in strength, light-bodied. Notes: creamy, cedar, nutty."
+      "hr": "Insidious je pristupačnija Asylum linija; Short je njezin kratki format s ekvadorskim Connecticut pokrovom — blago i brzo.",
+      "en": "Insidious is Asylum's more affordable line; Short is its compact size under an Ecuadorian Connecticut wrapper — mild and quick."
     },
     "markets": [
       "EU",
@@ -70202,62 +70202,6 @@
       }
     },
     "priceUrl": "https://www.famous-smoke.com/cusano-18-paired-maduro-robusto-cigars"
-  },
-  {
-    "id": "cig-cusano-18-paired-maduro",
-    "brand": "Cusano",
-    "line": "18 paired maduro",
-    "vitola": "Churchill",
-    "format": "47 x 178mm",
-    "country": "Dominikanska Republika",
-    "wrapper": "—",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [],
-    "profileEstimated": true,
-    "formatEstimated": true,
-    "smokeTimeMin": 84,
-    "priceEUR": null,
-    "priceUrl": "https://www.neptunecigar.com/cigars/cusano-18-paired-maduro-churchill",
-    "vitolas": [
-      {
-        "name": "Churchill",
-        "format": "47 x 178mm",
-        "smokeTimeMin": 84,
-        "priceEUR": null,
-        "url": "https://www.neptunecigar.com/cigars/cusano-18-paired-maduro-churchill",
-        "shape": "Churchill",
-        "ring": 47,
-        "lengthMM": 178,
-        "regionLinks": {
-          "USA": {
-            "shop": "Neptune Cigar",
-            "url": "https://www.neptunecigar.com/cigars/cusano-18-paired-maduro-churchill"
-          }
-        }
-      }
-    ],
-    "markets": [
-      "USA",
-      "WW"
-    ],
-    "regionLinks": {
-      "USA": {
-        "shop": "Neptune Cigar",
-        "url": "https://www.neptunecigar.com/cigars/cusano-18-paired-maduro-churchill"
-      }
-    },
-    "catalogSource": "market",
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Dominikanska Republika — linija iz trgovine Neptune Cigar.",
-      "en": "Dominican Republic — line from Neptune Cigar."
-    },
-    "sourceUrls": [
-      "https://www.neptunecigar.com/cigars/cusano-18-paired-maduro-churchill",
-      "https://www.neptunecigar.com/cigars/cusano-18-paired-maduro-robusto",
-      "https://www.neptunecigar.com/cigars/cusano-18-paired-maduro-toro"
-    ]
   },
   {
     "id": "cig-cusano-bundle-selection",

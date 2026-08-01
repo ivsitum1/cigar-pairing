@@ -228,6 +228,8 @@ export async function sharePairing(
   a.href = url;
   a.download = "pairing.png";
   a.click();
-  URL.revokeObjectURL(url);
+  // Sinkroni revoke odmah nakon click() zna prekinuti preuzimanje u dijelu
+  // preglednika — pusti da preuzimanje uhvati URL prije oslobadanja.
+  setTimeout(() => URL.revokeObjectURL(url), 60_000);
   return "downloaded";
 }

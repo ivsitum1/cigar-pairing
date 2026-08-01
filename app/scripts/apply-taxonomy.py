@@ -670,7 +670,9 @@ def main() -> None:
     auto = report.get("auto_pass") or {}
     report["auto_pass"] = {k: (v if len(v) <= 200 else v[:200] + [{"_truncated": len(v) - 200}]) for k, v in auto.items()}
 
-    write_json(OUT_DIR / "taxonomy_apply_report.json", report)
+    # --check je citac: pisanje izvjestaja bi zaprljalo radno stablo u CI-ju
+    if not args.check:
+        write_json(OUT_DIR / "taxonomy_apply_report.json", report)
 
     if args.check:
         summary = {

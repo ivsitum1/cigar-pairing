@@ -12,14 +12,17 @@ export function Meter({
   label?: string;
   accent?: string;
 }) {
+  // Rombovi su cisto vizualni — bez ovoga citac ekrana za "tijelo 3/5" ne
+  // dobije nista. Vrijednost izgovaramo jednom, na omotacu, a rombove skrivamo.
+  const spoken = label ? `${label} ${value}/${max}` : `${value}/${max}`;
   return (
-    <span className="inline-flex items-center gap-1.5">
+    <span className="inline-flex items-center gap-1.5" role="img" aria-label={spoken}>
       {label && (
-        <span className="text-micro uppercase tracking-widest text-dim">
+        <span aria-hidden="true" className="text-micro uppercase tracking-widest text-dim">
           {label}
         </span>
       )}
-      <span className="inline-flex items-center gap-[3px]">
+      <span aria-hidden="true" className="inline-flex items-center gap-[3px]">
         {Array.from({ length: max }, (_, i) => (
           <span
             key={i}

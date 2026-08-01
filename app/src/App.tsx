@@ -1,4 +1,4 @@
-import { Suspense, lazy } from "react";
+import { Suspense, lazy, useState } from "react";
 import { useI18n } from "./i18n";
 import { PairingPage } from "./pages/PairingPage";
 import { requestPairing } from "./store/pairingNav";
@@ -6,6 +6,9 @@ import { navigate, useRoute, type Page } from "./store/route";
 import { SystemBanners } from "./components/SystemBanners";
 import { MusicToggle } from "./components/MusicToggle";
 import { Footer } from "./components/Footer";
+import { ErrorBoundary } from "./components/ErrorBoundary";
+import { AgeGate } from "./components/AgeGate";
+import { shouldShowAgeGate } from "./lib/ageGate";
 import type { Cigar, Drink } from "./types";
 
 // pairing je pocetni ekran i ostaje u glavnom chunku; ostale stranice
@@ -34,6 +37,11 @@ const NAV: { id: Page; icon: string; key: "nav.pairing" | "nav.catalog" | "nav.c
 export default function App() {
   const { t, lang, setLang } = useI18n();
   const { page } = useRoute();
+  // Gate se rješava PRIJE ostatka aplikacije — sadržaj se ne smije nazrijeti
+  // ispod overlaya ni pročitati iz DOM-a čitačem ekrana.
+  const [ageOk, setAgeOk] = useState(() => !shouldShowAgeGate());
+
+  if (!ageOk) return <AgeGate onConfirm={() => setAgeOk(true)} />;
 
   const goToPairing = (target: { kind: "cigar"; item: Cigar } | { kind: "drink"; item: Drink }) => {
     requestPairing(
@@ -67,15 +75,20 @@ export default function App() {
       </header>
 
       <main className="flex-1 pb-24">
-        <Suspense
-          fallback={<div className="pt-16 text-center text-sm text-dim">…</div>}
-        >
-          {page === "pairing" && <PairingPage />}
-          {page === "catalog" && <CatalogPage onPair={goToPairing} />}
-          {page === "collection" && <CollectionPage onPair={goToPairing} />}
-          {page === "shopping" && <ShoppingPage onPair={goToPairing} />}
-          {page === "club" && <ClubPage />}
-        </Suspense>
+        {/* granica po stranici: pad lazy chunka ne odnosi i navigaciju.
+            `key` je stranica — promjena taba resetira granicu, pa greška na
+            jednoj stranici ne zaključa ostale. */}
+        <ErrorBoundary key={page} lang={lang}>
+          <Suspense
+            fallback={<div className="pt-16 text-center text-sm text-dim">…</div>}
+          >
+            {page === "pairing" && <PairingPage />}
+            {page === "catalog" && <CatalogPage onPair={goToPairing} />}
+            {page === "collection" && <CollectionPage onPair={goToPairing} />}
+            {page === "shopping" && <ShoppingPage onPair={goToPairing} />}
+            {page === "club" && <ClubPage />}
+          </Suspense>
+        </ErrorBoundary>
         <Footer />
       </main>
 
