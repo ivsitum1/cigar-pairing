@@ -441,3 +441,48 @@ teksta. Sada je omotač `role="img"` s `aria-label` („Tijelo 3/5"), a rombovi 
 tekstualna oznaka su `aria-hidden` da se vrijednost ne izgovori dvaput.
 
 **Rezultat:** `tsc` čist, 444 testa, build prolazi.
+
+---
+
+## Val 9 — tri sitnice iz nalaza
+
+- **`shareCard.ts`** — `URL.revokeObjectURL(url)` odmah nakon `a.click()` zna
+  prekinuti preuzimanje u dijelu preglednika. Odgođeno.
+- **`i18n/index.tsx`** — jedini goli pristup `localStorage`u u aplikaciji
+  (ostatak ide kroz `safeStorage` i storeove s `try/catch`). Kad je storage
+  blokiran (Safari private, stroga pravila kolačića), sam getter baca
+  `SecurityError` i ruši boot. Sada obavijeno; jezik tada vrijedi do zatvaranja.
+- **`store/humidor.ts`** — `exportHumidors()` vraćao je **živu referencu** na
+  interni `cache`, pa je pozivatelj mogao mutirati state mimo `persist()`a.
+  Sada kopija.
+
+---
+
+## Sažetak svih valova
+
+| Val | Commit | Učinak |
+|---|---|---|
+| 1 | `28f0bae` | 50 ID-jeva pića više ne siroti korisničke oznake; registar + 9 testova |
+| 2 | `e263752` | prvo učitavanje 4 210 → 590 kB gzip (**−3,62 MB**) |
+| 3 | `89cbb05` | dva bijela ekrana zatvorena; backend traversal zatvoren |
+| 4 | `f4d8462` | CI pokriva master; 2 gatea popravljena, backend u CI-ju |
+| 5 | `b7b9bf6` | zastarjela odluka o spajanju brisala je zapis koji nije duplikat |
+| 6 | `6055cbb` | `AGENTS.md` više ne tvrdi „no backend"; README + čuvar brojki |
+| 7 | `45f33f2` | backend: granica uploada, 400 umjesto 500, jeftin `/health`; 15 testova |
+| 8 | `9b55f39` | rotacija ne reskorira katalog (−44 ms/klik); sheetovi dobili dijalog semantiku |
+| 9 | ovaj | revokeObjectURL, i18n storage, exportHumidors |
+
+**Stanje:** `tsc` čist, **444 testa**, build prolazi, backend **15/15**,
+**svih 5 CI gateova zeleno i blokira**.
+
+### Ostaje za odluku (ne mogu je donijeti umjesto tebe)
+
+- **Age gate** — `VITE_AGE_GATE` postoji kao tip u `vite-env.d.ts` i komentar u
+  `.env.example` („leave unset (gate ON)"), ali mehanizam nije nigdje
+  implementiran, pa taj prekidač ne radi ništa. Implementirati ili maknuti
+  obećanje iz dokumentacije — trenutno se razilaze.
+- **Backend autentikacija** — nema je. Rizik je dokumentiran u
+  `backend/README.md` s preporukom `OCR_HOST=127.0.0.1`; pravo rješenje
+  (shared token) mijenja i klijenta i način pokretanja.
+- **Ovisnosti** — Vite 6→8, Vitest 3→4, `@vitejs/plugin-react` 4→6.
+  `npm audit`: 0 ranjivosti, pa nije hitno.

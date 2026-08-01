@@ -778,13 +778,26 @@ interface I18nCtx {
 const Ctx = createContext<I18nCtx>(null!);
 
 export function I18nProvider({ children }: { children: ReactNode }) {
+  // Ostatak aplikacije pristupa storageu obazrivo (safeStorage, oba storea), a
+  // ovdje je bilo golo: kad je storage blokiran (Safari private, stroga
+  // pravila kolacica), sam getter baca SecurityError i ruSi boot.
   const [lang, setLangState] = useState<Lang>(() => {
-    const resolved = resolveLang(localStorage.getItem("lang"));
+    let raw: string | null = null;
+    try {
+      raw = localStorage.getItem("lang");
+    } catch {
+      /* storage blokiran — ostajemo na zadanom jeziku */
+    }
+    const resolved = resolveLang(raw);
     document.documentElement.lang = resolved;
     return resolved;
   });
   const setLang = (l: Lang) => {
-    localStorage.setItem("lang", l);
+    try {
+      localStorage.setItem("lang", l);
+    } catch {
+      /* pun ili blokiran storage — jezik vrijedi do zatvaranja */
+    }
     setLangState(l);
     document.documentElement.lang = l;
   };
