@@ -49,6 +49,9 @@ export function AgeGate({ onConfirm }: { onConfirm: () => void }) {
             {t("age.title")}
           </h1>
           <p className="text-sm leading-relaxed text-papir">{t("age.body")}</p>
+          <p className="-mt-2 text-xs leading-relaxed text-dim">
+            {t("age.thresholds")}
+          </p>
           <div className="mt-1 flex w-full flex-col gap-2">
             <button
               type="button"

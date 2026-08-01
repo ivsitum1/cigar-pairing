@@ -20,15 +20,21 @@ const STRINGS = {
   // provjera dobi
   "age.title": { hr: "Samo za punoljetne", en: "Adults only" },
   "age.body": {
-    hr: "Ova aplikacija govori o cigarama i alkoholnim pićima. Sadržaj je namijenjen osobama od 18 godina i starijima.",
-    en: "This app covers cigars and alcoholic drinks. Its content is intended for people aged 18 and over.",
+    hr: "Ova aplikacija govori o cigarama i alkoholnim pićima. Otvori je samo ako si punoljetan/na za duhan i alkohol u svojoj zemlji.",
+    en: "This app covers cigars and alcoholic drinks. Continue only if you are of legal age for tobacco and alcohol where you live.",
   },
-  "age.confirm": { hr: "Imam 18 ili više", en: "I am 18 or older" },
-  "age.deny": { hr: "Nemam 18", en: "I am under 18" },
+  // Granica se razlikuje po zemlji, pa je gate ne tvrdi jednim brojem:
+  // HR i EU 18, SAD 21 (savezni Tobacco 21 + alkohol 21 u svim drzavama).
+  "age.thresholds": {
+    hr: "U Hrvatskoj i EU to je 18 godina, u SAD-u 21.",
+    en: "In Croatia and the EU that is 18; in the United States it is 21.",
+  },
+  "age.confirm": { hr: "Punoljetan/na sam", en: "I am of legal age" },
+  "age.deny": { hr: "Nisam", en: "I am not" },
   "age.deniedTitle": { hr: "Hvala na iskrenosti", en: "Thanks for being honest" },
   "age.deniedBody": {
-    hr: "Sadržaj ove aplikacije nije namijenjen osobama mlađima od 18 godina. Slobodno je zatvori.",
-    en: "This app's content is not intended for people under 18. Feel free to close it.",
+    hr: "Sadržaj ove aplikacije nije namijenjen maloljetnima. Slobodno je zatvori.",
+    en: "This app's content is not intended for minors. Feel free to close it.",
   },
   "age.deniedBack": { hr: "Pogriješio sam, vrati me", en: "That was a mistake, take me back" },
   "age.disclaimer": {
@@ -225,12 +231,12 @@ const STRINGS = {
     en: "Music: Night in Venice and No Frills Cumbia by Kevin MacLeod (incompetech.com), licensed under CC BY 4.0.",
   },
   "footer.tobacco": {
-    hr: "Prodaja duhana na daljinu u Hrvatskoj nije dopuštena — poveznice na cigare služe samo kao informacija. Samo za punoljetne (18+).",
-    en: "Distance sale of tobacco is not permitted in Croatia — cigar links are for reference only. Adults only (18+).",
+    hr: "Prodaja duhana na daljinu u Hrvatskoj nije dopuštena — poveznice na cigare služe samo kao informacija. Samo za osobe od {age} godina i starije.",
+    en: "Distance sale of tobacco is not permitted in Croatia — cigar links are for reference only. Ages {age} and over only.",
   },
   "footer.alcohol": {
-    hr: "Alkoholna pića su namijenjena punoljetnima (18+) — uživaj odgovorno.",
-    en: "Alcoholic drinks are for adults only (18+) — enjoy responsibly.",
+    hr: "Alkoholna pića namijenjena su osobama od {age} godina i starijima — uživaj odgovorno.",
+    en: "Alcoholic drinks are for ages {age} and over — enjoy responsibly.",
   },
   "footer.prices": {
     hr: "Cijene i dostupnost su okvirne i podložne promjeni — provjeri u trgovini.",

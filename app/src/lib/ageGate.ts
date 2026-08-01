@@ -4,7 +4,24 @@
 // `vite-env.d.ts` deklarirao tip, ali mehanizam nije postojao: prekidač nije
 // radio ništa. Ovo je ta obećana strana.
 
+import type { RegionFilter } from "../types";
+
 const KEY = "cigar-pairing-age-ok-v1";
+
+/**
+ * Zakonska dob za duhan I alkohol na odabranom tržištu.
+ *
+ * SAD: savezni Tobacco 21 (2019.) diže duhan na 21, a alkohol je 21 u svim
+ * saveznim državama. HR i ostatak EU: 18. Aplikacija je tvrdila 18 svugdje,
+ * što je za USA tržište netočno.
+ *
+ * `ALL` nije zemlja nego „bez filtera" — ostaje na 18 (EU/HR je matično
+ * tržište), a gate zato ne barata jednim brojem nego traži punoljetnost
+ * *u korisnikovoj zemlji*.
+ */
+export function legalAgeForMarket(market: RegionFilter): 18 | 21 {
+  return market === "USA" ? 21 : 18;
+}
 
 /**
  * Je li gate uključen za ovaj build.
