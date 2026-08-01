@@ -56,8 +56,8 @@ const STRINGS = {
   "club.bontonBackList": { hr: "Natrag na sadržaj", en: "Back to contents" },
   "club.lexicon": { hr: "Leksikon sparivanja", en: "Pairing language lexicon" },
   "club.lexiconTeaser": {
-    hr: "Kratak vodič za govor o spoju: kako opisati što spaja cigaru i piće — most (zajednička točka), tijelo, snaga, trećine i ritam.",
-    en: "A short guide to pairing speech: how to describe what connects a cigar and a drink — the bridge (a shared point), body, strength, thirds and rhythm.",
+    hr: "Kako opisati što spaja cigaru i piće — most (zajednička točka), tijelo, snaga, trećine i ritam.",
+    en: "How to describe what connects a cigar and a drink — the bridge (a shared point), body, strength, thirds and rhythm.",
   },
   "club.lexiconOpen": { hr: "Otvori leksikon", en: "Open the lexicon" },
   "club.lexiconSubtitle": { hr: "Jezik za stol", en: "Language for the table" },
