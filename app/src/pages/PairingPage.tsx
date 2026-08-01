@@ -187,8 +187,13 @@ export function PairingPage() {
     );
   }, [mode, query, marketCigars, drinkType]);
 
-  // cigara -> po jedan najbolji prijedlog po kategoriji (gin zadnji)
-  const drinkSuggestions = useMemo(() => {
+  // RANGIRANJE je odvojeno od ROTACIJE: gumb "Sljedeći prijedlog" mijenja samo
+  // `cycle`, a to ne dira poredak. Dok je `cycle` bio u deps ovog memo-a, svaki
+  // je klik iznova bodovao cijeli katalog (~2400 cigara ≈ 44 ms na desktopu,
+  // višestruko na mobitelu) da bi na kraju samo pomaknuo prozor.
+
+  // cigara -> rangirana pića po kategoriji (gin zadnji). Bez `cycle`.
+  const rankedDrinksByCategory = useMemo(() => {
     if (mode !== "cigarToDrink" || !selectedCigar) return null;
     let drinks = ALL_DRINKS;
     if (onlyMine) drinks = drinks.filter((d) => getItemState(d.id).owned);
@@ -204,34 +209,44 @@ export function PairingPage() {
     // Unutar kategorije: među izjednačenima presuđuje doba dana. Pojas se
     // računa po kategoriji jer kartica pokazuje po jedno piće iz svake — inače
     // bi jedan globalno najbolji par gušio razlikovanje u ostalim kategorijama.
-    // cycle 0 = stabilan #1; gumb rotira samo soft-band (različiti stilovi).
-    const perCategory = (cat: DrinkCategory) =>
-      rankByOccasion(
+    return SUGGEST_CATEGORIES.map((cat) => ({
+      category: cat,
+      list: rankByOccasion(
         ranked.filter((r) => r.item.category === cat),
         selectedCigar,
         occasion === "any" ? undefined : occasion,
-      );
+      ),
+    }));
+  }, [mode, selectedCigar, onlyMine, occasion, prefs]);
+
+  // cycle 0 = stabilan #1; gumb rotira samo soft-band (različiti stilovi).
+  const drinkSuggestions = useMemo(() => {
+    if (!rankedDrinksByCategory) return null;
     return {
-      cards: SUGGEST_CATEGORIES.map((cat) => {
-        const list = perCategory(cat);
-        const { pick, total } = stableBestRotate(list, cycle[cat] ?? 0, {
+      cards: rankedDrinksByCategory.map(({ category, list }) => {
+        const { pick, total } = stableBestRotate(list, cycle[category] ?? 0, {
           keyOf: (d) => d.style,
         });
-        return { category: cat, result: pick, total };
+        return { category, result: pick, total };
       }),
     };
-  }, [mode, selectedCigar, onlyMine, cycle, occasion, prefs]);
+  }, [rankedDrinksByCategory, cycle]);
 
-  // pice -> tocno 3 cigare RAZLICITIH brendova u soft-bandu (max−5);
-  // cycle 0 = vrh ljestvice; gumb pomiče prozor unutar pojasa
-  const cigarSuggestions = useMemo(() => {
+  // pice -> rangirane cigare. Bez `cycle`.
+  const rankedCigars = useMemo(() => {
     if (mode !== "drinkToCigar" || !selectedDrink) return null;
     let cigars = marketCigars;
     // "samo moje": linija se broji ako je posjedovana u bilo kojoj vitoli
     if (onlyMine) cigars = cigars.filter((c) => lineState(c.id).owned);
-    const ranked = pairCigarsForDrink(selectedDrink, cigars, prefs, serve);
-    if (ranked.length === 0) return { window: [], total: 0 };
-    const { window, total } = softBandWindow(ranked, {
+    return pairCigarsForDrink(selectedDrink, cigars, prefs, serve);
+  }, [mode, selectedDrink, onlyMine, marketCigars, prefs, serve]);
+
+  // tocno 3 cigare RAZLICITIH brendova u soft-bandu (max−5);
+  // cycle 0 = vrh ljestvice; gumb pomiče prozor unutar pojasa
+  const cigarSuggestions = useMemo(() => {
+    if (!rankedCigars || !selectedDrink) return null;
+    if (rankedCigars.length === 0) return { window: [], total: 0 };
+    const { window, total } = softBandWindow(rankedCigars, {
       anchorId: selectedDrink.id,
       dayKey: dayKey(),
       cycle: cycle["cigars"] ?? 0,
@@ -239,7 +254,7 @@ export function PairingPage() {
       keyOf: (c) => c.brand,
     });
     return { window, total };
-  }, [mode, selectedDrink, onlyMine, cycle, marketCigars, prefs, serve]);
+  }, [rankedCigars, selectedDrink, cycle]);
 
   // kandidati za večernji zapis: trenutno vidljivi prijedlozi
   const sessionDrinks: Drink[] = useMemo(() => {
