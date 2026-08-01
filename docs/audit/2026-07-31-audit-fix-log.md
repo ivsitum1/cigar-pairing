@@ -525,3 +525,36 @@ Detalji koji nisu očiti:
 - `role="dialog"`, `aria-modal`, `autoFocus` na potvrdi.
 
 **Rezultat:** `tsc` čist, **454 testa** (444 + 10), build prolazi.
+
+---
+
+## Val 11 — backend autentikacija (odluka: dodati token)
+
+Servis nije imao nikakvu provjeru, a zadani bind je `0.0.0.0` (odabran da ga
+Android build na istoj mreži dohvati — što znači da ga dohvate i svi ostali na
+toj mreži).
+
+### Popravak
+
+`Authorization: Bearer <token>` na **svemu osim `/health`**, kad je
+`OCR_API_TOKEN` postavljen. Prazan token = bez provjere, pa lokalni razvoj na
+`127.0.0.1` ostaje bez trenja.
+
+Zaštićen je i **`/ocr`**, ne samo endpointi koji pišu: to je računski
+najskuplja operacija u servisu, dakle najlakši način da netko s mreže zauzme
+procesor. Pravilo je time i jednostavnije za pamćenje — `/health` je otvoren,
+sve ostalo nije.
+
+- usporedba tokena ide kroz `secrets.compare_digest` (konstantno vrijeme);
+- **`/health` javlja `"auth": "token" | "none"`** — u kojem je načinu
+  pokrenuta instanca ne smije biti pretpostavka;
+- klijent šalje token preko `VITE_OCR_API_TOKEN`
+  (`lib/ocrTypes.ts → apiAuthHeaders()`), koji koriste i `bandMatch.ts` i
+  `ocrEngine.ts`;
+- `backend/README.md` dobiva odjeljak s generiranjem tokena i i dalje
+  preporučuje `OCR_HOST=127.0.0.1` kad LAN nije stvarno potreban.
+
+**Testovi:** `backend` **21** (bilo 15) — `/health` ostaje otvoren, 401 bez
+tokena i s krivim tokenom, prolaz s ispravnim, sva tri zaštićena endpointa.
+
+**Rezultat:** `tsc` čist, 454 testa, build prolazi, backend 21/21.

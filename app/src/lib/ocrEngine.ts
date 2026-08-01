@@ -1,6 +1,7 @@
 /** Hybrid OCR: tesseract for labels, paddleocr-js for receipts, optional API. */
 import { preprocessImage } from "./ocrPreprocess";
 import {
+  apiAuthHeaders,
   apiBaseUrl,
   isOnlinePreferred,
   type OcrEngineResult,
@@ -130,7 +131,12 @@ async function ocrOnline(file: File): Promise<OcrEngineResult | null> {
     body.append("file", file, file.name || "scan.jpg");
     const ctrl = new AbortController();
     const timer = setTimeout(() => ctrl.abort(), 45_000);
-    const res = await fetch(`${base}/ocr`, { method: "POST", body, signal: ctrl.signal });
+    const res = await fetch(`${base}/ocr`, {
+      method: "POST",
+      headers: apiAuthHeaders(),
+      body,
+      signal: ctrl.signal,
+    });
     clearTimeout(timer);
     if (!res.ok) return null;
     const data = (await res.json()) as {

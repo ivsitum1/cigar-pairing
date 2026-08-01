@@ -128,6 +128,68 @@ class ApiTest(unittest.TestCase):
         r = self.client.post("/band/match", files={"file": ("x.png", b"nope", "image/png")})
         self.assertEqual(r.status_code, 400)
 
+    def test_health_reports_auth_mode(self) -> None:
+        # bez tokena servis je otvoren — to mora biti vidljivo, ne pretpostavka
+        self.assertEqual(self.client.get("/health").json()["auth"], "none")
+
+
+@unittest.skipIf(TestClient is None, "fastapi nije instaliran")
+class TokenTest(unittest.TestCase):
+    """Kad je OCR_API_TOKEN postavljen, sve osim /health trazi zaglavlje."""
+
+    TOKEN = "tajna123"
+
+    def setUp(self) -> None:
+        from app import main
+
+        self._original = main.API_TOKEN
+        main.API_TOKEN = self.TOKEN
+        self.client = TestClient(main.app)
+
+    def tearDown(self) -> None:
+        from app import main
+
+        main.API_TOKEN = self._original
+
+    def auth(self) -> dict[str, str]:
+        return {"Authorization": f"Bearer {self.TOKEN}"}
+
+    def test_health_stays_open(self) -> None:
+        r = self.client.get("/health")
+        self.assertEqual(r.status_code, 200)
+        self.assertEqual(r.json()["auth"], "token")
+
+    def test_ocr_without_token_is_401(self) -> None:
+        r = self.client.post("/ocr", files={"file": ("x.png", png_bytes(), "image/png")})
+        self.assertEqual(r.status_code, 401)
+
+    def test_ocr_with_token_passes(self) -> None:
+        r = self.client.post(
+            "/ocr",
+            files={"file": ("x.png", png_bytes(), "image/png")},
+            headers=self.auth(),
+        )
+        self.assertEqual(r.status_code, 200)
+
+    def test_wrong_token_is_401(self) -> None:
+        r = self.client.post(
+            "/ocr",
+            files={"file": ("x.png", png_bytes(), "image/png")},
+            headers={"Authorization": "Bearer krivo"},
+        )
+        self.assertEqual(r.status_code, 401)
+
+    def test_write_endpoints_are_protected(self) -> None:
+        r = self.client.post(
+            "/band/reference",
+            data={"cigar_id": "cig-demo"},
+            files={"file": ("b.png", png_bytes(), "image/png")},
+        )
+        self.assertEqual(r.status_code, 401)
+        self.assertEqual(self.client.get("/band/references").status_code, 401)
+        r = self.client.post("/band/match", files={"file": ("b.png", png_bytes(), "image/png")})
+        self.assertEqual(r.status_code, 401)
+
 
 if __name__ == "__main__":
     unittest.main()

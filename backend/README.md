@@ -26,7 +26,7 @@ uvicorn app.main:app --host 0.0.0.0 --port 8787
 
 | Method | Path | Body | Notes |
 |--------|------|------|-------|
-| GET | `/health` | — | OCR/band engine status |
+| GET | `/health` | — | OCR/band engine status + auth mode (no token needed) |
 | POST | `/ocr` | `multipart file` | text + lines (not persisted) |
 | POST | `/band/reference` | `cigar_id` + `file` | store band photo + embedding |
 | GET | `/band/references?cigar_id=` | — | list refs |
@@ -42,16 +42,32 @@ Set app env: `VITE_OCR_API_URL=http://127.0.0.1:8787`
 | `BAND_REFS_DIR` | `backend/data/band_refs` | band reference storage |
 | `MAX_UPLOAD_BYTES` | `12582912` (12 MB) | per-request upload ceiling → `413` |
 | `MAX_IMAGE_PIXELS` | `50000000` | decompression-bomb guard → `400` |
+| `OCR_API_TOKEN` | *(empty)* | shared token; empty = **no auth** |
 | `OCR_HOST` / `OCR_PORT` | `0.0.0.0` / `8787` | bind address |
 
-## Security note
+## Authentication
 
-**There is no authentication.** `POST /band/reference` writes to disk and
-`GET /band/references` enumerates everything stored. That is fine on
-`127.0.0.1`, but the default bind is `0.0.0.0` so an Android build on the same
-network can reach it — which also means anyone else on that network can. Bind
-to `127.0.0.1` (`OCR_HOST=127.0.0.1`) unless you specifically need LAN access,
-and do not expose this service to the public internet as-is.
+Every endpoint **except `/health`** requires `Authorization: Bearer <token>`
+when `OCR_API_TOKEN` is set. Empty (the default) means no check — convenient
+for local development on `127.0.0.1`.
+
+**Set it whenever the service binds to `0.0.0.0`.** That is the default bind,
+chosen so an Android build on the same network can reach it — which also means
+everyone else on that network can. `/band/reference` writes to disk,
+`/band/references` enumerates what is stored, and `/ocr` runs the most
+expensive computation in the service.
+
+```bash
+OCR_API_TOKEN=$(python -c "import secrets;print(secrets.token_urlsafe(32))")
+uvicorn app.main:app --host 0.0.0.0 --port 8787
+```
+
+The app sends it via `VITE_OCR_API_TOKEN` (see `app/.env.example`); the two
+must match. `GET /health` reports `"auth": "token" | "none"` so you can verify
+which mode a running instance is in without guessing.
+
+Prefer `OCR_HOST=127.0.0.1` when you do not actually need LAN access. Do not
+expose this service to the public internet.
 
 Uploads are read in 1 MiB chunks and rejected past `MAX_UPLOAD_BYTES`; images
 are validated before decoding, so a non-image or oversized payload returns

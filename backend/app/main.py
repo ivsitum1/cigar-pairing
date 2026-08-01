@@ -1,14 +1,31 @@
 """FastAPI OCR + band-matching service."""
 from __future__ import annotations
 
-from fastapi import FastAPI, File, Form, HTTPException, UploadFile
+import secrets
+
+from fastapi import Depends, FastAPI, File, Form, Header, HTTPException, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 
 from . import band_service, ocr_service
-from .config import CORS_ORIGINS, IMAGE_TTL_HINT, MAX_UPLOAD_BYTES
+from .config import API_TOKEN, CORS_ORIGINS, IMAGE_TTL_HINT, MAX_UPLOAD_BYTES
 from .images import InvalidImage
 
 app = FastAPI(title="cigar-pairing-ocr", version="0.1.0")
+
+
+def require_token(authorization: str | None = Header(default=None)) -> None:
+    """Zastita za endpointe koji pisu na disk ili nabrajaju pohranjeno.
+
+    Prazan `OCR_API_TOKEN` znaci bez provjere — tako lokalni razvoj na
+    127.0.0.1 ostaje bez trenja. Cim se servis vezuje na 0.0.0.0 zbog APK-a,
+    token je jedino sto dijeli tvoj telefon od svih ostalih na mrezi.
+    """
+    if not API_TOKEN:
+        return  # otvoreno: lokalni razvoj na 127.0.0.1
+    expected = f"Bearer {API_TOKEN}"
+    # compare_digest: usporedba u konstantnom vremenu
+    if not authorization or not secrets.compare_digest(authorization, expected):
+        raise HTTPException(401, "missing or invalid token")
 
 
 async def read_upload(file: UploadFile) -> bytes:
@@ -50,10 +67,12 @@ def health() -> dict:
         "ocr": ocr_service.engine_status(),
         "band": band_service.band_status(),
         "image_ttl": IMAGE_TTL_HINT,
+        # klijent (i ti) trebate znati je li servis otvoren ili zasticen
+        "auth": "token" if API_TOKEN else "none",
     }
 
 
-@app.post("/ocr")
+@app.post("/ocr", dependencies=[Depends(require_token)])
 async def ocr(file: UploadFile = File(...)) -> dict:
     data = await read_upload(file)
     # request-scoped only — no disk write of the upload
@@ -71,7 +90,7 @@ async def ocr(file: UploadFile = File(...)) -> dict:
     }
 
 
-@app.post("/band/reference")
+@app.post("/band/reference", dependencies=[Depends(require_token)])
 async def band_reference(
     cigar_id: str = Form(...),
     file: UploadFile = File(...),
@@ -83,12 +102,12 @@ async def band_reference(
         raise HTTPException(400, str(e)) from e
 
 
-@app.get("/band/references")
+@app.get("/band/references", dependencies=[Depends(require_token)])
 def band_references(cigar_id: str | None = None) -> dict:
     return {"items": band_service.list_references(cigar_id)}
 
 
-@app.post("/band/match")
+@app.post("/band/match", dependencies=[Depends(require_token)])
 async def band_match(
     file: UploadFile = File(...),
     top_k: int = 5,

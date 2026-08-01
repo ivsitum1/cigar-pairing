@@ -1,5 +1,5 @@
 /** Client helpers for band reference upload + visual match fusion. */
-import { apiBaseUrl, isOnlinePreferred } from "./ocrTypes";
+import { apiAuthHeaders, apiBaseUrl, isOnlinePreferred } from "./ocrTypes";
 import type { OcrCandidate } from "./ocrMatch";
 import { matchOcrText } from "./ocrMatch";
 
@@ -20,7 +20,11 @@ export async function uploadBandReference(
     const body = new FormData();
     body.append("cigar_id", cigarId);
     body.append("file", file, file.name || "band.jpg");
-    const res = await fetch(`${base}/band/reference`, { method: "POST", body });
+    const res = await fetch(`${base}/band/reference`, {
+      method: "POST",
+      headers: apiAuthHeaders(),
+      body,
+    });
     if (!res.ok) return { ok: false, error: `http-${res.status}` };
     const data = (await res.json()) as { ref_id?: string };
     return { ok: true, refId: data.ref_id ?? "" };
@@ -35,7 +39,11 @@ export async function matchBandImage(file: File, topK = 5): Promise<BandMatch[]>
   try {
     const body = new FormData();
     body.append("file", file, file.name || "scan.jpg");
-    const res = await fetch(`${base}/band/match?top_k=${topK}`, { method: "POST", body });
+    const res = await fetch(`${base}/band/match?top_k=${topK}`, {
+      method: "POST",
+      headers: apiAuthHeaders(),
+      body,
+    });
     if (!res.ok) return [];
     const data = (await res.json()) as { matches?: BandMatch[] };
     return data.matches ?? [];
