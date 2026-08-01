@@ -1,44 +1,56 @@
 {
   "brand": "Don Pepin",
-  "renameBrand": null,
+  "renameBrand": "Don Pépin García",
   "status": "done",
-  "reviewedAt": "2026-07-24",
+  "reviewedAt": "2026-08-01",
   "sources": [
     "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
     "phase3_w2_finish deterministic remaps",
-    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3",
+    "orthography/house unify 2026-08-01 (Don Pepin / Aliados / The Oscar)"
   ],
   "lines": {
     "Clasicos 1950": {
-      "line": "Clasicos 1950"
+      "line": "Clásicos 1950"
     },
     "Clasicos 1979": {
-      "line": "Clasicos 1979"
+      "line": "Clásicos 1979"
     },
     "E.R.H": {
-      "line": "E.R.H"
+      "line": "Pepin Garcia E.R.H."
     },
     "Limited Edition Original 20th Anniversary 2023": {
-      "line": "Limited Edition Original 20th Anniversary 2023"
+      "line": "Original 20th Anniversary LE 2023"
     },
     "Original": {
-      "line": "Original"
+      "line": "Pepin Garcia Original"
     },
     "Series JJ Selectos": {
-      "line": "Series JJ Selectos"
+      "line": "Pepin Garcia Serie JJ",
+      "vitola": "Selectos"
     },
     "Series JJ Sublimes": {
-      "line": "Series JJ Sublimes"
+      "line": "Pepin Garcia Serie JJ",
+      "vitola": "Sublimes"
     },
     "VC": {
-      "line": "VC"
+      "line": "Pepin Garcia Vegas Cubanas"
+    },
+    "vegas cubanas generosos": {
+      "line": "Pepin Garcia Vegas Cubanas",
+      "vitola": "Generosos"
+    },
+    "vegas cubanas invictos": {
+      "line": "Pepin Garcia Vegas Cubanas",
+      "vitola": "Invictos"
+    },
+    "vintage edition": {
+      "line": "Pepin Garcia Vintage"
     }
   },
   "vitolaRenames": {},
   "shapes": {},
   "keepSeparate": [],
   "lineNotes": {},
-  "unresolved": [
-    "Don Pepin: brand name looks truncated/ambiguous — renameBrand later"
-  ]
+  "unresolved": []
 }

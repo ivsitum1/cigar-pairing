@@ -1,7 +1,7 @@
 {
   "taxonomy_files": 506,
   "taxonomy_files_total": 506,
-  "input_records": 2397,
+  "input_records": 3711,
   "auto_pass": {
     "P1": [],
     "P2": [],
@@ -18,6 +18,71 @@
   },
   "brand_renames": [
     {
+      "from": "Aliados",
+      "to": "Cuba Aliados",
+      "id": "cig-aliados-cabinet-edition"
+    },
+    {
+      "from": "Aliados",
+      "to": "Cuba Aliados",
+      "id": "cig-aliados-original-blend"
+    },
+    {
+      "from": "Don Pepin",
+      "to": "Don Pépin García",
+      "id": "cig-don-pepin-clasicos-1950"
+    },
+    {
+      "from": "Don Pepin",
+      "to": "Don Pépin García",
+      "id": "cig-don-pepin-clasicos-1979"
+    },
+    {
+      "from": "Don Pepin",
+      "to": "Don Pépin García",
+      "id": "cig-don-pepin-e-r-h"
+    },
+    {
+      "from": "Don Pepin",
+      "to": "Don Pépin García",
+      "id": "cig-don-pepin-limited-edition-original-20th-anniversary-2023"
+    },
+    {
+      "from": "Don Pepin",
+      "to": "Don Pépin García",
+      "id": "cig-don-pepin-original"
+    },
+    {
+      "from": "Don Pepin",
+      "to": "Don Pépin García",
+      "id": "cig-don-pepin-series-jj-selectos"
+    },
+    {
+      "from": "Don Pepin",
+      "to": "Don Pépin García",
+      "id": "cig-don-pepin-series-jj-sublimes"
+    },
+    {
+      "from": "Don Pepin",
+      "to": "Don Pépin García",
+      "id": "cig-don-pepin-vc"
+    },
+    {
+      "from": "Don Pepin",
+      "to": "Don Pépin García",
+      "id": "cig-don-pepin-vegas-cubanas-generosos"
+    },
+    {
+      "from": "Don Pepin",
+      "to": "Don Pépin García",
+      "id": "cig-don-pepin-vegas-cubanas-invictos"
+    },
+    {
+      "from": "Don Pepin",
+      "to": "Don Pépin García",
+      "id": "cig-don-pepin-vintage-edition"
+    },
+    {
       "from": "Man O' War",
       "to": "Man O' War",
       "id": "cig-man-o-war-o-war"
@@ -31,8 +96,203 @@
       "from": "Man O' War",
       "to": "Man O' War",
       "id": "cig-man-o-war-virtue"
+    },
+    {
+      "from": "The Oscar",
+      "to": "Oscar Valladares",
+      "id": "cig-the-oscar-11"
+    },
+    {
+      "from": "The Oscar",
+      "to": "Oscar Valladares",
+      "id": "cig-the-oscar-connecticut"
+    },
+    {
+      "from": "The Oscar",
+      "to": "Oscar Valladares",
+      "id": "cig-the-oscar-habano"
+    },
+    {
+      "from": "The Oscar",
+      "to": "Oscar Valladares",
+      "id": "cig-the-oscar-maduro"
     }
   ],
-  "aliases_added": [],
-  "output_records": 2397
+  "merges": [
+    {
+      "into": "cig-don-pepin-garcia-pepin-garcia-e-r-h",
+      "from": "cig-don-pepin-e-r-h"
+    },
+    {
+      "into": "cig-don-pepin-original",
+      "from": "cig-don-pepin-garcia-pepin-garcia-original"
+    },
+    {
+      "into": "cig-don-pepin-series-jj-selectos",
+      "from": "cig-don-pepin-series-jj-sublimes"
+    },
+    {
+      "into": "cig-don-pepin-series-jj-selectos",
+      "from": "cig-don-pepin-garcia-pepin-garcia-serie-jj"
+    },
+    {
+      "into": "cig-don-pepin-garcia-pepin-garcia-vegas-cubanas",
+      "from": "cig-don-pepin-vc"
+    },
+    {
+      "into": "cig-don-pepin-garcia-pepin-garcia-vegas-cubanas",
+      "from": "cig-don-pepin-garcia-don-pepin-garcia-generosos"
+    },
+    {
+      "into": "cig-don-pepin-garcia-pepin-garcia-vegas-cubanas",
+      "from": "cig-don-pepin-garcia-don-pepin-garcia-invictos"
+    },
+    {
+      "into": "cig-don-pepin-garcia-pepin-garcia-vegas-cubanas",
+      "from": "cig-don-pepin-vegas-cubanas-generosos"
+    },
+    {
+      "into": "cig-don-pepin-garcia-pepin-garcia-vegas-cubanas",
+      "from": "cig-don-pepin-vegas-cubanas-invictos"
+    },
+    {
+      "into": "cig-don-pepin-garcia-pepin-garcia-vintage",
+      "from": "cig-don-pepin-vintage-edition"
+    }
+  ],
+  "metric_conflicts": [
+    {
+      "id": "cig-don-pepin-original",
+      "metric": "strength",
+      "a": 3,
+      "b": 5
+    },
+    {
+      "id": "cig-don-pepin-original",
+      "metric": "body",
+      "a": 3,
+      "b": 5
+    }
+  ],
+  "aliases_added": [
+    {
+      "from": "cig-aliados-cabinet-edition",
+      "to": "cig-cuba-aliados-cabinet-edition"
+    },
+    {
+      "from": "cig-aliados-original-blend",
+      "to": "cig-cuba-aliados-original-blend"
+    },
+    {
+      "from": "cig-don-pepin-clasicos-1950",
+      "to": "cig-don-pepin-garcia-clasicos-1950"
+    },
+    {
+      "from": "cig-don-pepin-clasicos-1979",
+      "to": "cig-don-pepin-garcia-clasicos-1979"
+    },
+    {
+      "from": "cig-don-pepin-e-r-h",
+      "to": "cig-don-pepin-garcia-pepin-garcia-e-r-h"
+    },
+    {
+      "from": "cig-don-pepin-limited-edition-original-20th-anniversary-2023",
+      "to": "cig-don-pepin-garcia-original-20th-anniversary-le-2023"
+    },
+    {
+      "from": "cig-don-pepin-original",
+      "to": "cig-don-pepin-garcia-pepin-garcia-original"
+    },
+    {
+      "from": "cig-don-pepin-series-jj-selectos",
+      "to": "cig-don-pepin-garcia-pepin-garcia-serie-jj"
+    },
+    {
+      "from": "cig-don-pepin-series-jj-sublimes",
+      "to": "cig-don-pepin-garcia-pepin-garcia-serie-jj"
+    },
+    {
+      "from": "cig-don-pepin-vc",
+      "to": "cig-don-pepin-garcia-pepin-garcia-vegas-cubanas"
+    },
+    {
+      "from": "cig-don-pepin-garcia-don-pepin-garcia-generosos",
+      "to": "cig-don-pepin-garcia-pepin-garcia-vegas-cubanas"
+    },
+    {
+      "from": "cig-don-pepin-garcia-don-pepin-garcia-invictos",
+      "to": "cig-don-pepin-garcia-pepin-garcia-vegas-cubanas"
+    },
+    {
+      "from": "cig-don-pepin-vegas-cubanas-generosos",
+      "to": "cig-don-pepin-garcia-pepin-garcia-vegas-cubanas"
+    },
+    {
+      "from": "cig-don-pepin-vegas-cubanas-invictos",
+      "to": "cig-don-pepin-garcia-pepin-garcia-vegas-cubanas"
+    },
+    {
+      "from": "cig-don-pepin-vintage-edition",
+      "to": "cig-don-pepin-garcia-pepin-garcia-vintage"
+    },
+    {
+      "from": "cig-don-pepin-garcia-don-pepin-garcia-black-edition-1979",
+      "to": "cig-don-pepin-garcia-black-edition-1979"
+    },
+    {
+      "from": "cig-don-pepin-garcia-don-pepin-garcia-black-edition-2001-toro",
+      "to": "cig-don-pepin-garcia-black-edition-2001"
+    },
+    {
+      "from": "cig-don-pepin-garcia-don-pepin-garcia-delicias",
+      "to": "cig-don-pepin-garcia-delicias"
+    },
+    {
+      "from": "cig-don-pepin-garcia-don-pepin-garcia-exquisitos",
+      "to": "cig-don-pepin-garcia-exquisitos"
+    },
+    {
+      "from": "cig-don-pepin-garcia-don-pepin-garcia-imperiales",
+      "to": "cig-don-pepin-garcia-imperiales"
+    },
+    {
+      "from": "cig-don-pepin-garcia-don-pepin-garcia-lanceros",
+      "to": "cig-don-pepin-garcia-lanceros"
+    },
+    {
+      "from": "cig-don-pepin-garcia-don-pepin-garcia-series-jj-20th-anniversary",
+      "to": "cig-don-pepin-garcia-pepin-garcia-serie-jj-20th-anniversary"
+    },
+    {
+      "from": "cig-don-pepin-garcia-don-pepin-garcia-toro",
+      "to": "cig-don-pepin-garcia-toro"
+    },
+    {
+      "from": "cig-the-oscar-11",
+      "to": "cig-oscar-valladares-the-oscar-11"
+    },
+    {
+      "from": "cig-the-oscar-connecticut",
+      "to": "cig-oscar-valladares-the-oscar-connecticut"
+    },
+    {
+      "from": "cig-the-oscar-habano",
+      "to": "cig-oscar-valladares-the-oscar-habano"
+    },
+    {
+      "from": "cig-the-oscar-maduro",
+      "to": "cig-oscar-valladares-the-oscar-maduro"
+    }
+  ],
+  "aliases_skipped_live_collision": [
+    {
+      "from": "cig-crowned-heads-dias",
+      "to": "cig-crowned-heads-mil-dias"
+    },
+    {
+      "from": "cig-crowned-heads-mil-dias",
+      "to": "cig-crowned-heads-dias"
+    }
+  ],
+  "output_records": 3701
 }

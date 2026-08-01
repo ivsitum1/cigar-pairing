@@ -1,19 +1,38 @@
 {
   "brand": "Nat Sherman Timeless",
-  "renameBrand": null,
+  "renameBrand": "Nat Sherman",
   "status": "done",
-  "reviewedAt": "2026-07-24",
+  "reviewedAt": "2026-08-01",
   "sources": [
     "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
     "phase3_w3_w4_finish W3",
-    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3",
+    "brand-line-split unify 2026-08-01 (Argyle/Bahia/Cain/Don Lino/Nat Sherman/Lunatic)"
   ],
   "lines": {
     "Prestige": {
-      "line": "Prestige"
+      "line": "Timeless Prestige"
     },
     "Supreme 652": {
-      "line": "Supreme 652"
+      "line": "Timeless Supreme 652"
+    },
+    "2019 limited edition": {
+      "line": "Timeless 2019 Limited Edition"
+    },
+    "nicaragua 652t": {
+      "line": "Timeless Nicaragua 652T"
+    },
+    "nicaragua 749": {
+      "line": "Timeless Nicaragua 749"
+    },
+    "sterling": {
+      "line": "Timeless Sterling"
+    },
+    "supreme 546": {
+      "line": "Timeless Supreme 546"
+    },
+    "supreme 556": {
+      "line": "Timeless Supreme 556"
     }
   },
   "vitolaRenames": {},

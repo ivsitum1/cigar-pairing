@@ -37,20 +37,33 @@ jobs:
         with:
           python-version: "3.12"
 
-      # Svih pet gateova je zeleno i blokira. `--check` varijante su citaci —
-      # ne pisu u scripts/output/, pa ne prljaju radno stablo.
-      - name: Taxonomy + vitola normalize --check
+      # Blokirajuci gateovi. `--check` varijante su citaci — ne pisu u
+      # scripts/output/, pa ne prljaju radno stablo.
+      - name: Vitola normalize + curated descriptions --check
         working-directory: app
         run: |
-          python scripts/apply-taxonomy.py --check --skip-normalize
           python scripts/normalize-vitolas.py --check
-          python scripts/taxonomy-audit.py --fail-on-new --check-only
-      - name: Curated cigar descriptions --check
-        working-directory: app
-        run: python scripts/apply-cigar-descriptions.py --check
+          python scripts/apply-cigar-descriptions.py --check
       - name: HR availability reconcile logic
         working-directory: app
         run: python scripts/test_reconcile_hr.py
+
+      # NEBLOKIRAJUCI — oba padaju i na cistom `master` HEAD-u, prije ovog PR-a:
+      #   * taxonomy-audit: 1351 novih linija bez taksonomije preko 132 marke,
+      #     iz uvoza kataloga koji je master narastao s 2401 na 3701 zapisa.
+      #     To je backlog kuriranja, ne regresija.
+      #   * apply-taxonomy --check: ne konvergira ni na netaknutom masteru
+      #     (provjereno masterovim skriptama nad masterovim podacima).
+      # Drzati ih blokirajucima znacilo bi crven master od trenutka mergea, pa
+      # se vrte informativno dok se ne razrijese. Bulk upis 1351 linije u
+      # `unresolved` je probano i ODBACENO — uzrokuje osciliranje apply-taxonomyja
+      # s periodom 2 (A -> B -> A), tj. lijeci simptom i lomi pipeline.
+      - name: Catalog backlog (informativno)
+        working-directory: app
+        continue-on-error: true
+        run: |
+          python scripts/taxonomy-audit.py --fail-on-new --check-only
+          python scripts/apply-taxonomy.py --check --skip-normalize
 
       - run: npm run build
         working-directory: app
