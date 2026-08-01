@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 480" role="img" aria-labelledby="title desc">
+  <title id="title">Prijedlog B  pepeljara trokutasto Az</title>
+  <desc id="desc">Tlocrt trokutastog aza (Baaanska linija): trokutasti zid, unutarnja preka kao odlagaliate, tri ureza na stranicama.</desc>
+  <rect width="400" height="480" fill="#1a1612"/>
+  <text x="200" y="36" fill="#c4b8a4" font-family="Georgia, serif" font-size="18" text-anchor="middle">B · Trokutasto az (-)</text>
+  <text x="200" y="58" fill="#8a8074" font-family="Georgia, serif" font-size="12" text-anchor="middle">tlocrt · visina trokuta H 150 mm · Baaanska asocijacija</text>
+
+  <!-- outer triangle wall (thick stroke via dual paths) -->
+  <polygon points="200,95 330,340 70,340" fill="#2a241c" stroke="#c9a66b" stroke-width="14" stroke-linejoin="round"/>
+
+  <!-- inner horizontal bar (letter structure) -->
+  <rect x="120" y="248" width="160" height="22" rx="2" fill="#c9a66b"/>
+  <!-- short vertical stem suggestion -->
+  <rect x="189" y="175" width="22" height="95" rx="2" fill="#c9a66b"/>
+
+  <!-- cigar notches mid-sides -->
+  <ellipse cx="200" cy="108" rx="12" ry="7" fill="#1a1612"/>
+  <ellipse cx="95" cy="300" rx="8" ry="11" fill="#1a1612" transform="rotate(-55 95 300)"/>
+  <ellipse cx="305" cy="300" rx="8" ry="11" fill="#1a1612" transform="rotate(55 305 300)"/>
+
+  <text x="200" y="220" fill="#6e6558" font-family="Georgia, serif" font-size="11" text-anchor="middle">pepeo</text>
+  <text x="155" y="305" fill="#6e6558" font-family="Georgia, serif" font-size="11" text-anchor="middle">pepeo</text>
+  <text x="245" y="305" fill="#6e6558" font-family="Georgia, serif" font-size="11" text-anchor="middle">pepeo</text>
+
+  <g transform="translate(40, 380)">
+    <text x="0" y="10" fill="#c4b8a4" font-family="Georgia, serif" font-size="12">3 ureza na stranicama · 3 le~iata</text>
+    <text x="0" y="30" fill="#8a8074" font-family="Georgia, serif" font-size="12">jai kameni / epigrafski dojam</text>
+    <text x="0" y="50" fill="#8a8074" font-family="Georgia, serif" font-size="12">manje mjesta za pepeo od A; izrazitiji siluetni znak</text>
+  </g>
+  <text x="200" y="460" fill="#6e6558" font-family="Georgia, serif" font-size="11" text-anchor="middle">za ediciju Baaka ili kameni odljev</text>
+</svg>

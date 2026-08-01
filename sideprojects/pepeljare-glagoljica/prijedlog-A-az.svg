@@ -1,0 +1,28 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 480" role="img" aria-labelledby="title desc">
+  <title id="title">Prijedlog A — pepeljara uglato Az</title>
+  <desc id="desc">Tlocrt: kruzni rub s kriznim pregradama kao odlagalista za cigaru; cetiri lezista za pepeo.</desc>
+  <rect width="400" height="480" fill="#1a1612"/>
+  <text x="200" y="36" fill="#c4b8a4" font-family="Georgia, serif" font-size="18" text-anchor="middle">A · Az · uglata</text>
+  <text x="200" y="58" fill="#8a8074" font-family="Georgia, serif" font-size="12" text-anchor="middle">tlocrt · vanjski O 140 mm</text>
+  <circle cx="200" cy="220" r="120" fill="none" stroke="#c9a66b" stroke-width="14"/>
+  <circle cx="200" cy="220" r="106" fill="#2a241c"/>
+  <rect x="188" y="110" width="24" height="220" rx="2" fill="#c9a66b"/>
+  <rect x="90" y="208" width="220" height="24" rx="2" fill="#c9a66b"/>
+  <ellipse cx="200" cy="118" rx="11" ry="7" fill="#1a1612"/>
+  <ellipse cx="200" cy="322" rx="11" ry="7" fill="#1a1612"/>
+  <ellipse cx="98" cy="220" rx="7" ry="11" fill="#1a1612"/>
+  <ellipse cx="302" cy="220" rx="7" ry="11" fill="#1a1612"/>
+  <text x="145" y="175" fill="#6e6558" font-family="Georgia, serif" font-size="11" text-anchor="middle">pepeo</text>
+  <text x="255" y="175" fill="#6e6558" font-family="Georgia, serif" font-size="11" text-anchor="middle">pepeo</text>
+  <text x="145" y="280" fill="#6e6558" font-family="Georgia, serif" font-size="11" text-anchor="middle">pepeo</text>
+  <text x="255" y="280" fill="#6e6558" font-family="Georgia, serif" font-size="11" text-anchor="middle">pepeo</text>
+  <g transform="translate(40, 380)">
+    <rect width="16" height="10" fill="#c9a66b"/>
+    <text x="24" y="10" fill="#c4b8a4" font-family="Georgia, serif" font-size="12">zid / grede (slovo)</text>
+    <rect y="22" width="16" height="10" fill="#2a241c" stroke="#8a8074"/>
+    <text x="24" y="32" fill="#c4b8a4" font-family="Georgia, serif" font-size="12">dno lezista</text>
+    <ellipse cx="8" cy="50" rx="7" ry="4" fill="#1a1612" stroke="#8a8074"/>
+    <text x="24" y="54" fill="#c4b8a4" font-family="Georgia, serif" font-size="12">urez za cigaru (4)</text>
+  </g>
+  <text x="200" y="460" fill="#6e6558" font-family="Georgia, serif" font-size="11" text-anchor="middle">najcitljiviji · najfunkcionalniji · predlozeni default</text>
+</svg>
