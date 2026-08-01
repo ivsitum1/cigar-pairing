@@ -583,3 +583,66 @@ vidio — točno onaj obrazac zbog kojeg je ovaj audit i počeo.
 **Pouka za ubuduće:** „CI je konfiguriran" i „CI je odradio ovaj commit" nisu
 ista tvrdnja. Prije mergea provjeri **run za točan SHA**, ne postojanje
 workflow datoteke.
+
+---
+
+## Val 13 — merge s masterom: dva nalaza koja mijenjaju ranije zaključke
+
+Pri deployu je master u međuvremenu narastao **2401 → 3701 cigaru** (+1357) i
+PR je pao u konflikt na `cigars.json`. Konflikt je riješen uzimanjem
+**masterove** verzije kao baze (nova katalogizacija se ne smije izgubiti), pa
+su na nju re-primijenjene izmjene ove grane.
+
+### 13a. Master je izgubio podatke koji nisu duplikati
+
+Od **57 zapisa** koje je master uklonio u `59025d3`:
+
+- 51 čist (podatak postoji drugdje ili nije bilo ničeg jedinstvenog);
+- 4 uredna preimenovanja marke pod roditelja s očuvanom HR dostupnošću
+  (JFR Lunatic ×2, Dunbarton Sobremesa, Oscar Valladares);
+- **2 s pravim gubitkom:**
+
+| zapis | izgubljeno |
+|---|---|
+| Asylum · Insidious Short | Corona **44×102 mm @ 9,40 €**, The Humidor — vitola nije nigdje prenesena (Insidious ima 44×**142** mm bez cijene) |
+| Cain Daytona · 646 | HR dostupnost (Havana Shop) nije prešla na `cig-cain-daytona` |
+
+Aliasi postoje, pa **korisničke oznake prežive** — mehanizam iz Vala 1 radi.
+Izgubljen je podatak o *proizvodu*, ne o korisniku.
+
+Asylum slučaj je **isto proturječje koje Val 5 popravlja**: `keepSeparate` kaže
+odvojeno, `line_merge_decisions.json` kaže spoji. Master nema čuvar iz Vala 5,
+pa je bug opalio opet. Nakon ovog mergea čuvar je na masteru.
+
+> Zapisi **nisu uskrsnuti** u ovom mergeu — to je sadržajna odluka, ne dio
+> rješavanja konflikta. Prijedlog je u „Za odluku" ispod.
+
+### 13b. Dva gatea padaju i na čistom masteru — odluka iz Vala 5 povučena
+
+| gate | stanje na netaknutom `master` HEAD-u |
+|---|---|
+| `taxonomy-audit --fail-on-new` | **1351** nova linija bez taksonomije, 132 marke (backlog iz uvoza) |
+| `apply-taxonomy --check` | **ne konvergira** — masterove skripte nad masterovim podacima |
+
+Provjereno izolirano: pristojno pokretanje masterovih skripti nad masterovim
+podacima daje `EXIT=1`. Dakle **nije uzrokovano ovom granom**.
+
+Držati ih blokirajućima značilo bi crven master od trenutka mergea. Vraćeni su
+u `continue-on-error` **s ovom evidencijom u datoteci** — ne kao tiho gašenje.
+Preostala tri gatea (`normalize-vitolas`, `apply-cigar-descriptions`,
+`test_reconcile_hr`) blokiraju.
+
+> **Probano i odbačeno:** bulk upis svih 1351 linije u `unresolved` po markama.
+> Gate je pozelenio, ali je `apply-taxonomy` počeo **oscilirati s periodom 2**
+> (A → B → A). Liječilo bi simptom i slomilo pipeline, pa je vraćeno.
+
+Ovo povlači zaključak iz Vala 5 („svih 5 gateova blokira") — tada je vrijedio,
+uz 2400 zapisa. Nakon uvoza od +1300 više ne vrijedi.
+
+### Za odluku
+
+1. **Vratiti 2 izgubljena zapisa?** Podaci su u gitu (`cb25c52`), povrat je
+   mehanički. Preporuka: da — `keepSeparate` ih izričito drži odvojenima.
+2. **1351 linija za kuriranje** — pravi posao, po markama (Tatuaje 79,
+   Crowned Heads 53, Arturo Fuente 40…).
+3. **`apply-taxonomy` ne konvergira** — zaseban bug, traži debug pipelinea.
