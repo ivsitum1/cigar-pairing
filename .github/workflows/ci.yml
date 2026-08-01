@@ -1,13 +1,17 @@
 name: CI
 
 on:
-  # master je namjerno UKLJUČEN: ranije je `branches-ignore: [master]` značio
-  # da izravni pushevi (24 od zadnjih 30 commita) ne prolaze nikakvu provjeru.
-  # Tako je slomljen `tsc` stigao na master i oborio deploy.
+  # Bez filtera po grani — SVAKI push prolazi provjeru, uključujući master.
+  # Ranije je `branches-ignore: [master]` značio da izravni pushevi na master
+  # (24 od zadnjih 30 commita) ne prolaze ništa; tako je slomljen `tsc` oborio
+  # deploy. Filter `branches: [master]` bio bi druga krajnost — feature grane
+  # bi ostale nepokrivene dok se ne otvori PR, a PR otvoren preko API tokena
+  # ne okida workflow, pa bi kod stigao do mergea neprovjeren.
   push:
-    branches: [master]
   pull_request:
     branches: [master]
+  # ručno pokretanje kad je run potreban bez novog commita
+  workflow_dispatch:
 
 concurrency:
   group: ci-${{ github.ref }}
