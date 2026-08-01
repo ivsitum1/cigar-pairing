@@ -1,6 +1,10 @@
 import { describe, expect, it, beforeEach, vi } from "vitest";
+import { readFileSync } from "node:fs";
+import { dirname, resolve } from "node:path";
+import { fileURLToPath } from "node:url";
 import {
   forgetAgeConfirmation,
+  legalAgeForMarket,
   hasConfirmedAge,
   isAgeGateEnabled,
   rememberAgeConfirmed,
@@ -87,5 +91,50 @@ describe("age gate — treba li prikazati", () => {
   it("ne prikazuje se kad je isključen — i onda kad nije potvrđeno (QA)", () => {
     expect(shouldShowAgeGate(false, false)).toBe(false);
     expect(shouldShowAgeGate(false, true)).toBe(false);
+  });
+});
+
+describe("dobna granica po tržištu", () => {
+  // SAD: savezni Tobacco 21 (2019.) + alkohol 21 u svim državama.
+  // Aplikacija je ranije tvrdila 18 svugdje.
+  it("SAD je 21", () => {
+    expect(legalAgeForMarket("USA")).toBe(21);
+  });
+
+  it("HR i EU su 18", () => {
+    expect(legalAgeForMarket("HR")).toBe(18);
+    expect(legalAgeForMarket("EU")).toBe(18);
+  });
+
+  it("ALL (bez filtera) pada na 18 — matično tržište", () => {
+    expect(legalAgeForMarket("ALL")).toBe(18);
+  });
+});
+
+describe("tekstovi ne tvrde fiksnu dob", () => {
+  const i18n = readFileSync(
+    resolve(dirname(fileURLToPath(import.meta.url)), "..", "i18n", "index.tsx"),
+    "utf8",
+  );
+  const block = (key: string) => {
+    const i = i18n.indexOf(`"${key}"`);
+    return i === -1 ? "" : i18n.slice(i, i18n.indexOf("},", i));
+  };
+
+  it("gate ne navodi jedan broj kao univerzalnu granicu", () => {
+    // Granica ovisi o zemlji; gate traži punoljetnost "u svojoj zemlji",
+    // a oba praga stoje odvojeno u age.thresholds.
+    for (const key of ["age.body", "age.deniedBody"]) {
+      expect(block(key), key).not.toMatch(/\b(18|21)\b/);
+    }
+    expect(block("age.thresholds")).toMatch(/18/);
+    expect(block("age.thresholds")).toMatch(/21/);
+  });
+
+  it("footer disclaimeri koriste {age}, ne tvrdu vrijednost", () => {
+    for (const key of ["footer.tobacco", "footer.alcohol"]) {
+      expect(block(key), key).toContain("{age}");
+      expect(block(key), key).not.toMatch(/\b18\b/);
+    }
   });
 });

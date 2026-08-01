@@ -689,3 +689,41 @@ vraćeni zapis više ne guta. Da odluka ikad bude vraćena, čuvar
 
 **Rezultat:** `tsc` čist, 454 testa, build prolazi, backend 21/21, tri
 blokirajuća gatea zelena. README osvježen na 3701 (uhvatio `readmeCounts.test.ts`).
+
+---
+
+## Val 15 — dobna granica nije svugdje 18
+
+Age gate iz Vala 10 tvrdio je **18** bezuvjetno. Za SAD je to netočno: savezni
+**Tobacco 21** (prosinac 2019.) diže duhan na 21, a alkohol je 21 u svim
+saveznim državama. Aplikacija ima USA tržište, pa je taj tekst bio kriv za sve
+korisnike na njemu — i to na compliance kontroli, gdje netočnost najviše boli.
+
+Isti je broj stajao i u podnožju (`footer.tobacco`, `footer.alcohol`), koje se
+prikazuje na svakoj stranici.
+
+### Popravak
+
+**`legalAgeForMarket(market)`** — `USA` → 21, ostalo → 18. `ALL` nije zemlja
+nego „bez filtera", pa ostaje 18 (EU/HR je matično tržište).
+
+**Gate** (tržište još nije poznato pri prvom otvaranju) više **ne tvrdi jedan
+broj**. Traži punoljetnost *u korisnikovoj zemlji*, a oba praga stoje odvojeno:
+
+> „Otvori je samo ako si punoljetan/na za duhan i alkohol u svojoj zemlji."
+> „U Hrvatskoj i EU to je 18 godina, u SAD-u 21."
+
+To je točno bez obzira odakle korisnik dolazi i ne traži pogađanje jurisdikcije.
+Gumbi su prilagođeni („Punoljetan/na sam" umjesto „Imam 18 ili više").
+
+**Podnožje** zna odabrano tržište (`useMarket()`), pa broj prati njega:
+stringovi nose `{age}`, `Footer` ga zamjenjuje. USA → 21, ostalo → 18.
+
+### Čuvar
+
+`ageGate.test.ts` (15 testova, +5): granica po tržištu, i **tekstualni čuvar** —
+`age.body`/`age.deniedBody` ne smiju sadržavati broj, a `footer.tobacco`/
+`footer.alcohol` moraju koristiti `{age}` umjesto tvrde vrijednosti. Ako netko
+ubuduće upiše „18+" natrag, test pada.
+
+**Rezultat:** `tsc` čist, **459 testova** (454 + 5), build prolazi.
