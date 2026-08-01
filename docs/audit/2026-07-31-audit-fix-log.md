@@ -558,3 +558,28 @@ sve ostalo nije.
 tokena i s krivim tokenom, prolaz s ispravnim, sva tri zaštićena endpointa.
 
 **Rezultat:** `tsc` čist, 454 testa, build prolazi, backend 21/21.
+
+---
+
+## Val 12 — CI koji je izgledao uključeno, a nije pokrivao ništa
+
+Nađeno **pri pripremi deploya**, prije mergea.
+
+U Valu 4 sam `push: branches-ignore: [master]` zamijenio s
+`push: branches: [master]` da master napokon bude pokriven. Time su, međutim,
+**feature grane ostale bez CI-ja** dok se ne otvori PR — a to se odmah
+osvetilo: PR #113 je otvoren preko API tokena, a **GitHub ne okida workflow na
+događaje iz takvog tokena**. Rezultat: CI nije odradio **nijedan od 12
+commitova ovog audita**. Jedini run na grani bio je za napušteni commit iz
+prve sesije, i taj je pao.
+
+Da nisam prije mergea provjerio status umjesto da se oslonim na „testovi
+prolaze lokalno", u produkciju bi otišlo 12 commitova koje nikakav CI nije
+vidio — točno onaj obrazac zbog kojeg je ovaj audit i počeo.
+
+**Popravak:** `push` bez filtera po grani (svaka grana, uključujući master) +
+`workflow_dispatch` za ručno pokretanje bez novog commita.
+
+**Pouka za ubuduće:** „CI je konfiguriran" i „CI je odradio ovaj commit" nisu
+ista tvrdnja. Prije mergea provjeri **run za točan SHA**, ne postojanje
+workflow datoteke.
