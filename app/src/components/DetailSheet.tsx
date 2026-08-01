@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { SheetShell } from "./SheetShell";
 import type { Cigar, Drink } from "../types";
 import { useI18n, STYLE_LABELS, ADDITIVE_LABELS, ADDITIVE_RULES } from "../i18n";
 import { flavorLabel } from "../engine/rules";
@@ -70,15 +71,17 @@ export function DetailSheet({
   const pushCigar = (c: Cigar) =>
     setStack((s) => [...s, { kind: "cigar", item: c }]);
 
+  const sheetLabel =
+    active?.kind === "cigar"
+      ? `${active.item.brand} ${active.item.line}`
+      : (active?.item.name ?? "");
+
   return (
-    <div
-      className="fixed inset-0 z-50 flex items-end justify-center bg-black/60 sm:items-center"
-      onClick={onClose}
+    <SheetShell
+      onClose={onClose}
+      label={sheetLabel}
+      panelClassName="max-h-[85vh] w-full max-w-lg overflow-y-auto rounded-t-2xl border border-zlato/25 bg-humidor p-5 pb-8 sm:rounded-2xl"
     >
-      <div
-        className="max-h-[85vh] w-full max-w-lg overflow-y-auto rounded-t-2xl border border-zlato/25 bg-humidor p-5 pb-8 sm:rounded-2xl"
-        onClick={(e) => e.stopPropagation()}
-      >
         <div className="mx-auto mb-4 h-1 w-10 rounded-full bg-dim/40 sm:hidden" />
 
         <div className="mb-3">
@@ -194,8 +197,7 @@ export function DetailSheet({
         >
           {t("common.close")}
         </button>
-      </div>
-    </div>
+    </SheetShell>
   );
 }
 

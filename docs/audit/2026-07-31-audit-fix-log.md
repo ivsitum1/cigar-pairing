@@ -402,3 +402,42 @@ zatvoriti — dodavanje tokena mijenja i klijenta (`lib/bandMatch.ts`) i način
 pokretanja. Umjesto toga je rizik sada **eksplicitno dokumentiran** u
 `backend/README.md`, s preporukom `OCR_HOST=127.0.0.1` osim kad LAN stvarno
 treba. `uploadBandReference` se za sada ionako nigdje ne poziva iz appa.
+
+---
+
+## Val 8 — perf i pristupačnost
+
+### 8a. Rotacija prijedloga reskorirala je cijeli katalog
+
+`cycle` je bio u `useMemo` deps **zajedno s rangiranjem**, pa je svaki klik na
+„Sljedeći prijedlog" iznova bodovao cijeli katalog — da bi na kraju samo pomaknuo
+prozor. Rotacija ne mijenja poredak.
+
+Izmjereno na ovom stroju: `pairCigarsForDrink` nad **2400 cigara = 43,6 ms**
+(`pairDrinksForCigar` nad 963 pića = 13,4 ms). Na mobitelu višestruko, i to na
+svaki dodir.
+
+**Popravak:** rangiranje je svoj memo (bez `cycle`), rotacija svoj koji ovisi o
+njemu. Ponašanje nepromijenjeno — cycle 0 i dalje daje stabilan #1.
+
+### 8b. Modalni sheetovi bez ijedne a11y osobine
+
+Svih pet (`DetailSheet`, `LineSheet`, `BrandSheet`, `EveningSessionSheet`,
+`VitolaPicker`) bili su gola `<div>` s `onClick` na pozadini: bez `role`, bez
+`aria-modal`, bez Escapea, bez zamke fokusa i bez povrata fokusa. Čitač ekrana
+nije znao da je otvoren dijalog, tipkovnicom se iz njega nije dalo izaći, a
+pozadina je skrolala ispod.
+
+**Popravak:** jedan zajednički **`SheetShell`** — `role="dialog"`,
+`aria-modal`, `aria-label` s imenom stavke, Escape, Tab-zamka, povrat fokusa na
+element koji je sheet otvorio, i zaključan scroll pozadine. A11y sada živi na
+jednom mjestu; svaki novi sheet ga dobiva besplatno. Provjereno da nije ostao
+nijedan goli `fixed inset-0 z-50` overlay.
+
+### 8c. `Meter` je čitaču ekrana bio nevidljiv
+
+Tijelo/snaga/slatkoća crtali su se kao pet dekorativnih rombova bez ikakvog
+teksta. Sada je omotač `role="img"` s `aria-label` („Tijelo 3/5"), a rombovi i
+tekstualna oznaka su `aria-hidden` da se vrijednost ne izgovori dvaput.
+
+**Rezultat:** `tsc` čist, 444 testa, build prolazi.

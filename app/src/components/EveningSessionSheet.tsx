@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import { SheetShell } from "./SheetShell";
 import type { Cigar, Drink } from "../types";
 import { ALL_DRINKS, cigarById } from "../data";
 import { useI18n } from "../i18n";
@@ -161,14 +162,11 @@ export function EveningSessionSheet({
     (lineVitolas.length <= 1 || !!vitolaName || cigarId.includes("@"));
 
   return (
-    <div
-      className="fixed inset-0 z-50 flex items-end justify-center bg-black/60 sm:items-center"
-      onClick={onClose}
+    <SheetShell
+      onClose={onClose}
+      label={t("session.title")}
+      panelClassName="max-h-[90vh] w-full max-w-lg overflow-y-auto rounded-t-2xl border border-zlato/25 bg-humidor p-5 pb-8 sm:rounded-2xl"
     >
-      <div
-        className="max-h-[90vh] w-full max-w-lg overflow-y-auto rounded-t-2xl border border-zlato/25 bg-humidor p-5 pb-8 sm:rounded-2xl"
-        onClick={(e) => e.stopPropagation()}
-      >
         <div className="mb-3">
           <BackButton onClick={onClose}>{t("common.back")}</BackButton>
         </div>
@@ -343,8 +341,6 @@ export function EveningSessionSheet({
           >
             {t("session.save")}
           </button>
-        </div>
-      </div>
-    </div>
+        </div>    </SheetShell>
   );
 }
