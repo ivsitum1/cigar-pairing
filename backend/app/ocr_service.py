@@ -1,13 +1,14 @@
 """PaddleOCR wrapper with a lightweight stub when Paddle is not installed."""
 from __future__ import annotations
 
-import io
 import logging
 import os
 from dataclasses import dataclass
 from typing import Any
 
 from PIL import Image
+
+from .images import load_rgb
 
 # Windows / oneDNN PIR crash workaround (ArrayAttribute DoubleAttribute)
 os.environ.setdefault("FLAGS_use_mkldnn", "0")
@@ -162,7 +163,7 @@ def _parse_paddle_payload(raw: Any) -> OcrResult:
 
 
 def recognize_image_bytes(data: bytes) -> OcrResult:
-    image = Image.open(io.BytesIO(data)).convert("RGB")
+    image = load_rgb(data)
     engine = _load_paddle()
     if engine is None:
         return _stub_ocr(image)
@@ -187,8 +188,13 @@ def recognize_image_bytes(data: bytes) -> OcrResult:
 
 
 def engine_status() -> dict[str, Any]:
-    eng = _load_paddle()
+    """Jeftin status za /health — ne ucitava PaddleOCR.
+
+    Ranije je zvao `_load_paddle()`, pa je prvi health check povlacio cijeli
+    OCR stack. Motor se ucitava lijeno na prvi stvarni `/ocr` poziv.
+    """
     return {
-        "paddleocr": eng is not None,
+        # None = jos nismo ni pokusali ucitati motor
+        "paddleocr": (_engine is not None) if _engine_tried else None,
         "image_ttl": "request-scoped; not persisted",
     }

@@ -59,9 +59,10 @@ jobs:
         with:
           python-version: "3.12"
       # paddleocr/torch su neobavezni i teški — servis ima stub put bez njih,
-      # pa smoke testovi pokrivaju logiku (uklj. path-traversal čuvar) bez njih.
+      # pa testovi pokrivaju logiku (path traversal, granica uploada, 400 vs
+      # 500) bez njih. fastapi + multipart trebaju za HTTP razinu.
       - name: Install backend deps (bez teškog OCR stacka)
-        run: pip install pillow "numpy<2" imagehash
+        run: pip install pillow "numpy<2" imagehash fastapi python-multipart httpx
       - name: Backend smoke tests
         working-directory: backend
         run: python -m unittest discover -s tests -v

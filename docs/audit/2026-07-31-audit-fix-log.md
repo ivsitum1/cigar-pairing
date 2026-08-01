@@ -353,3 +353,52 @@ da je bundle lazy, da modeli idu s jsDelivr/HuggingFace/ModelScope i da app
 stvarne podatke. Brojke su odlutale jer ih ništa nije držalo; sad drži.
 
 **Rezultat:** `tsc` čist, **444 testa** (435 + 9).
+
+---
+
+## Val 7 — backend hardening
+
+Servis se prema `backend/README.md` vrti na `--host 0.0.0.0` (zbog Android
+buildа), dakle dohvatljiv je s mreže. U tom kontekstu tri stvari nisu bile u redu.
+
+### Nalaz i popravak
+
+**1. Upload bez gornje granice.** Sva tri endpointa radila su `await file.read()`
+— cijeli body u memoriju. Jedan veliki POST ruši servis.
+→ `read_upload()` čita u komadima od 1 MiB i odbija preko `MAX_UPLOAD_BYTES`
+(12 MB, s viškom za fotografiju računa) s **413**, prije nego primi sve.
+
+**2. Ne-slika je vraćala 500.** `Image.open` na nepouzdanim bajtovima baca
+`UnidentifiedImageError`, što je izlazilo kao serverska greška iako je krivnja
+klijentova. Uz to nije bilo brane za „decompression bomb" (mala datoteka,
+gigabajti piksela).
+→ novi `backend/app/images.py`: `load_rgb()` provjeri dimenzije **prije**
+`convert()` (koji tek alocira piksele) i baca `InvalidImage`; endpointi ga
+mapiraju na **400**. `MAX_IMAGE_PIXELS` = 50 Mpx.
+
+**3. `/health` je bio najskuplji endpoint.** `band_status()` je zvao
+`_try_load_clip()` (ViT-B-32, stotine MB), a `engine_status()` `_load_paddle()`
+— health check je povlačio cijeli ML stack.
+→ oba sada samo **prijavljuju** stanje (`None` = još nije ni pokušano), motori
+se učitavaju lijeno na prvi stvarni `/ocr` odnosno `/band/*` poziv.
+
+**Uz to:** pokvaren `meta.json` obarao je svaki zahtjev na 500 dok ga netko
+ručno ne makne — sada se tretira kao „nema referenci" uz upozorenje u logu.
+
+### Testovi
+
+`backend/tests/test_api.py` — **11 novih** (ukupno **15**, bilo 4), uključujući
+HTTP razinu preko `TestClient`: 400 za ne-sliku i praznu datoteku, 413 preko
+granice, 400 za traversal `cigar_id`, i da `/health` **ne** pokrene učitavanje
+motora (test eksplicitno resetira stanje pa ne mjeri redoslijed izvršavanja).
+
+CI `backend` job dobiva `fastapi python-multipart httpx`; paddle/torch i dalje
+nisu potrebni.
+
+### Namjerno nedirnuto
+
+**Autentikacije i dalje nema.** To je product odluka, ne bug koji mogu sam
+zatvoriti — dodavanje tokena mijenja i klijenta (`lib/bandMatch.ts`) i način
+pokretanja. Umjesto toga je rizik sada **eksplicitno dokumentiran** u
+`backend/README.md`, s preporukom `OCR_HOST=127.0.0.1` osim kad LAN stvarno
+treba. `uploadBandReference` se za sada ionako nigdje ne poziva iz appa.
