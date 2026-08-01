@@ -646,3 +646,46 @@ uz 2400 zapisa. Nakon uvoza od +1300 više ne vrijedi.
 2. **1351 linija za kuriranje** — pravi posao, po markama (Tatuaje 79,
    Crowned Heads 53, Arturo Fuente 40…).
 3. **`apply-taxonomy` ne konvergira** — zaseban bug, traži debug pipelinea.
+
+---
+
+## Val 14 — vraćeni izgubljeni podaci (odluka: vratiti)
+
+Nastavak Vala 13a. Pri povratu se pokazalo da su **dva slučaja različita**, pa
+ih ni popravak ne tretira isto.
+
+### Cain Daytona 646 — moja ranija tvrdnja bila je pretjerana
+
+Roditelj `cig-cain-daytona` **već ima** vitolu `646` (46×142 mm, **9,00 €**,
+Havana Shop URL), a `markets` sadrži `HR`. Taksonomija navodi `646` kao vitolu
+linije Daytona, `keepSeparate` je prazan — dakle **fold je bio ispravan** i
+podatak o proizvodu je prenesen.
+
+Nedostajala je samo oznaka `availabilityHR: ["Havana Shop"]`. Dodana.
+
+> Ispravak: u Valu 13 sam ovo naveo kao „izgubljenu HR dostupnost" u istom
+> rangu kao Asylum. Nije isto — ovdje je nedostajalo jedno polje, ne proizvod.
+
+### Asylum Insidious Short — stvaran gubitak, zapis vraćen
+
+Roditelj `cig-asylum-insidious` ima Short Coronu **44×142 mm** bez cijene i bez
+HR; izgubljena Corona **44×102 mm @ 9,40 €** (The Humidor) **nije nigdje**.
+Različite duljine = različite cigare, a `keepSeparate` ih izričito drži
+odvojenima.
+
+Zapis je vraćen iz `cb25c52` u cijelosti, na abecedno mjesto u katalogu.
+Katalog: 3700 → **3701**.
+
+**Alias uklonjen.** Master je imao `cig-asylum-insidious-short →
+cig-asylum-insidious`; sada kad je ID opet živ zapis, alias bi ga zasjenio i
+korisnikova oznaka vodila bi na krivu cigaru.
+
+### Zašto se neće ponoviti
+
+`normalize-vitolas --check` je **čist** (`changed: false`) — zastarjela odluka o
+spajanju uklonjena je u Valu 5 i taj je popravak sada na masteru, pa pipeline
+vraćeni zapis više ne guta. Da odluka ikad bude vraćena, čuvar
+`assert_no_keep_separate_conflicts()` prekida skriptu.
+
+**Rezultat:** `tsc` čist, 454 testa, build prolazi, backend 21/21, tri
+blokirajuća gatea zelena. README osvježen na 3701 (uhvatio `readmeCounts.test.ts`).

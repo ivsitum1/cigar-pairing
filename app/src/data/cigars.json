@@ -25006,6 +25006,67 @@
     "priceUrl": "https://www.neptunecigar.com/cigars/asylum-867-zero-48x7"
   },
   {
+    "id": "cig-asylum-insidious-short",
+    "brand": "Asylum",
+    "line": "Insidious Short",
+    "vitola": "Corona",
+    "format": "44 x 102mm",
+    "country": "Honduras",
+    "wrapper": "Ecuador Connecticut",
+    "strength": 2,
+    "body": 2,
+    "flavorTags": [
+      "kremasto",
+      "cedar",
+      "orasasti",
+      "med",
+      "trava-slatka"
+    ],
+    "profileEstimated": true,
+    "catalogSource": "market",
+    "smokeTimeMin": 45,
+    "priceEUR": 9.4,
+    "priceApprox": false,
+    "availabilityHR": [
+      "The Humidor"
+    ],
+    "notes": {
+      "hr": "Insidious je pristupačnija Asylum linija; Short je njezin kratki format s ekvadorskim Connecticut pokrovom — blago i brzo.",
+      "en": "Insidious is Asylum's more affordable line; Short is its compact size under an Ecuadorian Connecticut wrapper — mild and quick."
+    },
+    "markets": [
+      "HR",
+      "WW"
+    ],
+    "vitolas": [
+      {
+        "name": "Corona",
+        "format": "44 x 102mm",
+        "smokeTimeMin": 45,
+        "priceEUR": 9.4,
+        "url": "https://humidor.hr/hr/proizvod/asylum-13-insidious-short-corona-44-x-4/",
+        "regionLinks": {
+          "HR": {
+            "shop": "The Humidor",
+            "url": "https://humidor.hr/hr/proizvod/asylum-13-insidious-short-corona-44-x-4/",
+            "priceEUR": 9.4
+          }
+        },
+        "ring": 44,
+        "lengthMM": 102
+      }
+    ],
+    "regionLinks": {
+      "HR": {
+        "shop": "The Humidor",
+        "url": "https://humidor.hr/hr/proizvod/asylum-13-insidious-short-corona-44-x-4/",
+        "priceEUR": 9.4
+      }
+    },
+    "strengthFromShop": true,
+    "priceUrl": "https://humidor.hr/hr/proizvod/asylum-13-insidious-short-corona-44-x-4/"
+  },
+  {
     "id": "cig-asylum-april-fool-s-limited-edition-2023",
     "brand": "Asylum",
     "line": "april fool s limited edition 2023",
@@ -42975,7 +43036,9 @@
     "smokeTimeMin": 58,
     "priceEUR": 9.0,
     "priceApprox": false,
-    "availabilityHR": [],
+    "availabilityHR": [
+      "Havana Shop"
+    ],
     "notes": {
       "hr": "Nikaragva, Nicaraguan pokrov — pune snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Nicaragua, Nicaraguan wrapper — full in strength, medium-bodied. Notes: cedar, spices, leather."
