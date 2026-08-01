@@ -17,6 +17,24 @@ const STRINGS = {
     hr: "Spremanje nije uspjelo (prostor za pohranu pun je ili blokiran) — promjene vrijede samo do zatvaranja. Izvezi sigurnosnu kopiju u Kolekciji.",
     en: "Saving failed (storage full or blocked) — changes last only until you close the app. Export a backup from Collection.",
   },
+  // provjera dobi
+  "age.title": { hr: "Samo za punoljetne", en: "Adults only" },
+  "age.body": {
+    hr: "Ova aplikacija govori o cigarama i alkoholnim pićima. Sadržaj je namijenjen osobama od 18 godina i starijima.",
+    en: "This app covers cigars and alcoholic drinks. Its content is intended for people aged 18 and over.",
+  },
+  "age.confirm": { hr: "Imam 18 ili više", en: "I am 18 or older" },
+  "age.deny": { hr: "Nemam 18", en: "I am under 18" },
+  "age.deniedTitle": { hr: "Hvala na iskrenosti", en: "Thanks for being honest" },
+  "age.deniedBody": {
+    hr: "Sadržaj ove aplikacije nije namijenjen osobama mlađima od 18 godina. Slobodno je zatvori.",
+    en: "This app's content is not intended for people under 18. Feel free to close it.",
+  },
+  "age.deniedBack": { hr: "Pogriješio sam, vrati me", en: "That was a mistake, take me back" },
+  "age.disclaimer": {
+    hr: "Duhan i alkohol štete zdravlju. Uživaj odgovorno.",
+    en: "Tobacco and alcohol harm your health. Enjoy responsibly.",
+  },
   // klub
   "club.quote": { hr: "Citat dana", en: "Quote of the day" },
   "club.fact": { hr: "Znaš li…?", en: "Did you know…?" },

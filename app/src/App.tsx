@@ -1,4 +1,4 @@
-import { Suspense, lazy } from "react";
+import { Suspense, lazy, useState } from "react";
 import { useI18n } from "./i18n";
 import { PairingPage } from "./pages/PairingPage";
 import { requestPairing } from "./store/pairingNav";
@@ -7,6 +7,8 @@ import { SystemBanners } from "./components/SystemBanners";
 import { MusicToggle } from "./components/MusicToggle";
 import { Footer } from "./components/Footer";
 import { ErrorBoundary } from "./components/ErrorBoundary";
+import { AgeGate } from "./components/AgeGate";
+import { shouldShowAgeGate } from "./lib/ageGate";
 import type { Cigar, Drink } from "./types";
 
 // pairing je pocetni ekran i ostaje u glavnom chunku; ostale stranice
@@ -35,6 +37,11 @@ const NAV: { id: Page; icon: string; key: "nav.pairing" | "nav.catalog" | "nav.c
 export default function App() {
   const { t, lang, setLang } = useI18n();
   const { page } = useRoute();
+  // Gate se rješava PRIJE ostatka aplikacije — sadržaj se ne smije nazrijeti
+  // ispod overlaya ni pročitati iz DOM-a čitačem ekrana.
+  const [ageOk, setAgeOk] = useState(() => !shouldShowAgeGate());
+
+  if (!ageOk) return <AgeGate onConfirm={() => setAgeOk(true)} />;
 
   const goToPairing = (target: { kind: "cigar"; item: Cigar } | { kind: "drink"; item: Drink }) => {
     requestPairing(

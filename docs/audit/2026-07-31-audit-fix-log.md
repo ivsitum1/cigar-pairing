@@ -486,3 +486,42 @@ tekstualna oznaka su `aria-hidden` da se vrijednost ne izgovori dvaput.
   (shared token) mijenja i klijenta i način pokretanja.
 - **Ovisnosti** — Vite 6→8, Vitest 3→4, `@vitejs/plugin-react` 4→6.
   `npm audit`: 0 ranjivosti, pa nije hitno.
+
+---
+
+## Val 10 — age gate (odluka: implementirati)
+
+`.env.example` je opisivao gate („set to 0 or off during QA so the overlay is
+skipped. Production / store builds: leave unset (**gate ON**) or set to 1"), a
+`vite-env.d.ts` deklarirao tip — ali mehanizam nije postojao **nigdje** u
+`src/`. Prekidač nije radio ništa, pa build s neрostavljenom varijablom nije
+imao gate iako je dokumentacija tvrdila suprotno. To je stanje koje se otkrije
+tek na reviewu trgovine.
+
+### Popravak
+
+| Datoteka | Uloga |
+|---|---|
+| `app/src/lib/ageGate.ts` | čista logika, odvojena od UI-ja radi testova |
+| `app/src/components/AgeGate.tsx` | overlay |
+| `app/src/App.tsx` | gate se rješava prije ostatka aplikacije |
+| `app/src/i18n/index.tsx` | 8 novih stringova (hr + en) |
+| `app/src/lib/ageGate.test.ts` | 10 testova |
+
+**Ponašanje točno prema `.env.example`:** zadano UKLJUČEN; `VITE_AGE_GATE`
+`0`/`off`/`false`/`no` ga gasi (neosjetljivo na velika slova i razmake), sve
+ostalo ostavlja uključenim. Potvrda se pamti u `localStorage`
+(`cigar-pairing-age-ok-v1`), pa se ne pita svako otvaranje.
+
+Detalji koji nisu očiti:
+
+- Gate je **zamjena** za aplikaciju, ne modal preko nje — sadržaj se ne smije
+  nazrijeti ispod ni pročitati iz DOM-a čitačem ekrana.
+- Postoji i **„Nemam 18"** put s pristojnom porukom, plus izlaz za slučajni
+  krivi klik. Gate koji ima samo jedan gumb nije provjera nego formalnost.
+- Blokiran storage ne ruši ništa — tada se pita pri svakom otvaranju (radije
+  pitati dvaput nego propustiti).
+- Prebacivanje jezika radi i na gateu, prije ulaska u aplikaciju.
+- `role="dialog"`, `aria-modal`, `autoFocus` na potvrdi.
+
+**Rezultat:** `tsc` čist, **454 testa** (444 + 10), build prolazi.
