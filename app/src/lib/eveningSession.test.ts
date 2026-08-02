@@ -31,7 +31,7 @@ describe("logEveningSession", () => {
       rating: null,
       note: "",
     });
-    consumeFromStock.mockReturnValue("hum-1");
+    consumeFromStock.mockReturnValue({ humidorId: "hum-1", itemId: "cig-1" });
     totalStock.mockReturnValue(0);
   });
 
@@ -51,7 +51,11 @@ describe("logEveningSession", () => {
     });
     expect(updateItem).toHaveBeenCalledWith("cig-1", { tried: true });
     expect(updateItem).toHaveBeenCalledWith("rum-1", { tried: true });
-    expect(result).toEqual({ consumed: true, stockAfter: 0 });
+    expect(result).toEqual({
+      consumed: true,
+      consumedItemId: "cig-1",
+      stockAfter: 0,
+    });
   });
 
   it("solo: drinkId null, ne oznacava pice", async () => {
@@ -116,6 +120,25 @@ describe("logEveningSession", () => {
     expect(consumeFromStock).toHaveBeenCalledWith("cig-1@churchill");
   });
 
+  it("zaliha se broji na kljucu koji je stvarno skinut", async () => {
+    // zapis nosi vitolu, humidor zalihu vodi po liniji
+    consumeFromStock.mockReturnValue({ humidorId: "hum-1", itemId: "cig-1" });
+    totalStock.mockImplementation((id: string) => (id === "cig-1" ? 2 : 0));
+    const { logEveningSession } = await import("./eveningSession");
+    const result = logEveningSession({
+      cigarId: "cig-1@churchill",
+      drinkId: null,
+      rating: null,
+      note: "",
+    });
+    expect(totalStock).toHaveBeenCalledWith("cig-1");
+    expect(result).toEqual({
+      consumed: true,
+      consumedItemId: "cig-1",
+      stockAfter: 2,
+    });
+  });
+
   it("ne dira zalihu kad consumeStock nije trazen", async () => {
     consumeFromStock.mockReturnValue(null);
     totalStock.mockReturnValue(3);
@@ -128,7 +151,11 @@ describe("logEveningSession", () => {
       consumeStock: false,
     });
     expect(consumeFromStock).not.toHaveBeenCalled();
-    expect(result).toEqual({ consumed: false, stockAfter: 3 });
+    expect(result).toEqual({
+      consumed: false,
+      consumedItemId: null,
+      stockAfter: 3,
+    });
   });
 
   it("vraca consumed false kad nema zalihe", async () => {
@@ -141,6 +168,10 @@ describe("logEveningSession", () => {
       rating: null,
       note: "",
     });
-    expect(result).toEqual({ consumed: false, stockAfter: 0 });
+    expect(result).toEqual({
+      consumed: false,
+      consumedItemId: null,
+      stockAfter: 0,
+    });
   });
 });

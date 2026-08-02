@@ -8,6 +8,8 @@ import { ALL_DRINKS, brandDisplayName, cigarForItemId, drinkById } from "../data
 import { useI18n, type StringKey } from "../i18n";
 import { Chip, SectionTitle } from "../components/ui";
 import { DrinkRow } from "../components/cards";
+import { LastCigarPrompt } from "../components/LastCigarPrompt";
+import { shouldOfferWishlist } from "../lib/lastCigar";
 import { drinkNameLoc } from "../lib/drinkName";
 import { removeJournalEntry, useCollection, type JournalEntry } from "../store/collection";
 import {
@@ -45,6 +47,8 @@ export function HumidorPage({
   const [newName, setNewName] = useState("");
   const [renaming, setRenaming] = useState<string | null>(null);
   const [renameValue, setRenameValue] = useState("");
+  // zadnja skinuta cigara — ponuda za listu želja
+  const [lastCigarId, setLastCigarId] = useState<string | null>(null);
 
   const ownedBottles = useMemo(() => {
     return ALL_DRINKS.filter((d) => collection.items[d.id]?.owned);
@@ -180,7 +184,13 @@ export function HumidorPage({
                   cigar={row.cigar}
                   fallbackId={row.itemId}
                   count={row.count}
-                  onAdjust={(d) => adjustStock(active.id, row.itemId, d)}
+                  onAdjust={(d) => {
+                    adjustStock(active.id, row.itemId, d);
+                    // ručno skidanje je isto trošenje: zadnja cigara nudi listu želja
+                    if (d < 0 && shouldOfferWishlist(row.itemId)) {
+                      setLastCigarId(row.itemId);
+                    }
+                  }}
                   onClear={() => setStock(active.id, row.itemId, 0)}
                   onOpen={row.cigar && onOpenCigar ? () => onOpenCigar(row.cigar!) : undefined}
                 />
@@ -205,6 +215,10 @@ export function HumidorPage({
             ))}
           </div>
         </>
+      )}
+
+      {lastCigarId && (
+        <LastCigarPrompt itemId={lastCigarId} onDone={() => setLastCigarId(null)} />
       )}
     </div>
   );

@@ -16,6 +16,8 @@ export interface EveningSessionInput {
 export interface EveningSessionResult {
   /** true ako je stvarno skinuta jedna iz humidora */
   consumed: boolean;
+  /** Ključ zalihe koji je skinut — zna se razlikovati od zapisa po vitoli. */
+  consumedItemId: string | null;
   stockAfter: number;
 }
 
@@ -30,10 +32,10 @@ export function logEveningSession(input: EveningSessionInput): EveningSessionRes
     note,
   });
 
-  let consumed = false;
+  let consumedItemId: string | null = null;
   // popušena cigara odlazi iz zalihe — humidor prati stvarno stanje
   if (input.consumeStock !== false) {
-    consumed = consumeFromStock(input.cigarId) != null;
+    consumedItemId = consumeFromStock(input.cigarId)?.itemId ?? null;
   }
 
   if (input.markTried !== false) {
@@ -44,5 +46,11 @@ export function logEveningSession(input: EveningSessionInput): EveningSessionRes
     }
   }
 
-  return { consumed, stockAfter: totalStock(input.cigarId) };
+  return {
+    consumed: consumedItemId != null,
+    consumedItemId,
+    // zaliha se broji na ključu koji je stvarno skinut, inače bi zapis po
+    // vitoli gledao praznu policu dok linija u humidoru još stoji
+    stockAfter: totalStock(consumedItemId ?? input.cigarId),
+  };
 }
