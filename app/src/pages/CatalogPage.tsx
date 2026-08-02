@@ -5,6 +5,7 @@ import {
   DRINKS,
   ALL_BRANDS,
   BRAND_CATALOG,
+  DRINK_BRAND_CATALOG,
   brandDisplayName,
   brandFromSlug,
   brandSearchHaystack,
@@ -12,6 +13,9 @@ import {
   cigarsByBrand,
   cigarInRegion,
   cigarCountByRegion,
+  drinkBrand,
+  drinkBrandFromSlug,
+  drinkBrandSlug,
   resolveCigarId,
   vitolaSlug,
 } from "../data";
@@ -22,6 +26,8 @@ import { CigarRow, DrinkRow } from "../components/cards";
 import { DetailSheet } from "../components/DetailSheet";
 import { EveningSessionSheet } from "../components/EveningSessionSheet";
 import { BrandSheet } from "../components/BrandSheet";
+import { DrinkBrandSheet } from "../components/DrinkBrandSheet";
+import { FavoriteStar } from "../components/FavoriteStar";
 import { LineSheet } from "../components/LineSheet";
 import { MarketFilter } from "../components/MarketFilter";
 import { VitolaPicker } from "../components/VitolaPicker";
@@ -35,6 +41,7 @@ import {
 } from "../lib/vitolaShape";
 import { useMarket, setMarket } from "../store/market";
 import { navigate, useRoute } from "../store/route";
+import { favoriteKey, useFavoriteBrands } from "../store/favorites";
 
 const norm = (s: string) =>
   s.normalize("NFKD").replace(/[̀-ͯ]/g, "").toLowerCase();
@@ -116,6 +123,8 @@ export function CatalogPage({
   const [cleanOnly, setCleanOnly] = useState(false);
   // cigare se otvaraju na indeksu brendova; puni popis linija je iza "Brendovi" gumba
   const [browseBrands, setBrowseBrands] = useState(true);
+  // „samo omiljene marke" — vrijedi i za indeks marki i za ravan popis
+  const [favOnly, setFavOnly] = useState(false);
   const [limit, setLimit] = useState(120);
   const [showShops, setShowShops] = useState(false);
   const [sortBy, setSortBy] = useState<"quality" | "price" | "body" | "sweetness" | "strength" | "name">("quality");
@@ -127,13 +136,42 @@ export function CatalogPage({
   const [pendingCigar, setPendingCigar] = useState<Cigar | null>(null);
   const [brand, setBrand] = useState<string | null>(null);
   const [line, setLine] = useState<Cigar | null>(null);
+  const [dBrand, setDBrand] = useState<string | null>(null);
+  const [drinkBrandBack, setDrinkBrandBack] = useState<string | null>(null);
+  const favorites = useFavoriteBrands();
 
   const openBrand = (b: string) => {
     setDetail(null);
     setLine(null);
     setPendingCigar(null);
+    setDBrand(null);
     setBrand(b);
     navigate({ page: "catalog", catalog: { level: "brand", brandSlug: brandSlug(b) } });
+  };
+
+  const openDrinkBrand = (b: string) => {
+    setDetail(null);
+    setLine(null);
+    setPendingCigar(null);
+    setBrand(null);
+    setDBrand(b);
+    navigate({
+      page: "catalog",
+      catalog: { level: "drinkBrand", brandSlug: drinkBrandSlug(b) },
+    });
+  };
+
+  // Boca otvorena iz marke: zatvaranje detalja vraća u usporedbu marke, a ne
+  // na popis kategorije — inače se korisnik nakon svake boce mora vraćati ručno.
+  const openDrinkFromBrand = (d: Drink) => {
+    setDrinkBrandBack(dBrand);
+    setDBrand(null);
+    setDetail({ kind: "drink", item: d });
+  };
+
+  const openDrinkFromList = (d: Drink) => {
+    setDrinkBrandBack(null);
+    setDetail({ kind: "drink", item: d });
   };
 
   const openLine = (c: Cigar) => {
@@ -162,7 +200,19 @@ export function CatalogPage({
     setLine(null);
     setDetail(null);
     setPendingCigar(null);
+    setDBrand(null);
+    setDrinkBrandBack(null);
     navigate({ page: "catalog" });
+  };
+
+  const closeDetail = () => {
+    if (drinkBrandBack) {
+      const back = drinkBrandBack;
+      setDrinkBrandBack(null);
+      openDrinkBrand(back);
+      return;
+    }
+    clearCatalogFocus();
   };
 
   // Sync sheets from deep-link hash
@@ -176,7 +226,19 @@ export function CatalogPage({
         setLine(null);
         setDetail(null);
         setPendingCigar(null);
+        setDBrand(null);
         setBrand(b);
+      }
+      return;
+    }
+    if (focus.level === "drinkBrand") {
+      const b = drinkBrandFromSlug(focus.brandSlug);
+      if (b) {
+        setLine(null);
+        setDetail(null);
+        setPendingCigar(null);
+        setBrand(null);
+        setDBrand(b);
       }
       return;
     }
@@ -266,12 +328,42 @@ export function CatalogPage({
       if (market !== "ALL" && !cigarsByBrand(b.brand).some((c) => cigarInRegion(c, market))) {
         return false;
       }
+      if (favOnly && !favorites.has(favoriteKey("cigar", b.brand))) return false;
       return true;
     });
     return [...rows].sort((a, b) =>
       brandDisplayName(a.brand, market).localeCompare(brandDisplayName(b.brand, market)),
     );
-  }, [tab, browseBrands, query, market]);
+  }, [tab, browseBrands, query, market, favOnly, favorites]);
+
+  // Marke pića postoje samo unutar kategorije koja je otvorena — kuće s više
+  // kategorija (Nikka: whisky + gin) tako se pojave u obje kartice, a u pogledu
+  // marke se i dalje vide sve njihove boce.
+  const drinkBrandRows = useMemo(() => {
+    if (tab === "cigars" || !browseBrands) return [];
+    const nq = norm(query.trim());
+    return DRINK_BRAND_CATALOG.filter(
+      (b) =>
+        b.categories.includes(tab) &&
+        (!nq || norm(b.brand).includes(nq)) &&
+        (!favOnly || favorites.has(favoriteKey("drink", b.brand))),
+    );
+  }, [tab, browseBrands, query, favOnly, favorites]);
+
+  const drinkBrandAnchors = useMemo(() => {
+    const at = new Map<number, string>();
+    const letters = new Set<string>();
+    let prev = "";
+    drinkBrandRows.forEach((b, i) => {
+      const L = letterFor(b.brand);
+      letters.add(L);
+      if (L !== prev) {
+        at.set(i, L);
+        prev = L;
+      }
+    });
+    return { at, letters };
+  }, [drinkBrandRows]);
 
   const brandAnchors = useMemo(() => {
     const at = new Map<number, string>();
@@ -318,6 +410,9 @@ export function CatalogPage({
     setPuroOnly(false);
     setCleanOnly(false);
     setBrowseBrands(next === "cigars");
+    // omiljene su po vrsti; nošenje filtra u karticu bez ijedne omiljene marke
+    // izgleda kao prazan katalog
+    setFavOnly(false);
     setShowShops(false);
     setSortBy(next === "cigars" ? "name" : "quality");
   };
@@ -375,7 +470,8 @@ export function CatalogPage({
         (wrapperOriginFilter == null || c.wrapperOrigin === wrapperOriginFilter) &&
         (binderOriginFilter == null || c.binderOrigin === binderOriginFilter) &&
         (fillerOriginFilter == null || c.fillerOrigin === fillerOriginFilter) &&
-        (!puroOnly || c.isPuro === true),
+        (!puroOnly || c.isPuro === true) &&
+        (!favOnly || favorites.has(favoriteKey("cigar", c.brand))),
     );
     const by: Record<string, (a: Cigar, b: Cigar) => number> = {
       name: (a, b) =>
@@ -399,16 +495,24 @@ export function CatalogPage({
     market,
     sortBy,
     browseBrands,
+    favOnly,
+    favorites,
   ]);
 
   const drinks = useMemo(() => {
     if (tab === "cigars") return [];
-    const list = DRINKS[tab].filter(
-      (d) =>
-        (!q || `${d.name} ${d.region}`.toLowerCase().includes(q)) &&
-        (styleFilter == null || d.style === styleFilter) &&
-        (!cleanOnly || d.additiveStatus === "clean" || d.additiveStatus === "low"),
-    );
+    const list = DRINKS[tab].filter((d) => {
+      if (q && !`${d.name} ${d.region}`.toLowerCase().includes(q)) return false;
+      if (styleFilter != null && d.style !== styleFilter) return false;
+      if (cleanOnly && d.additiveStatus !== "clean" && d.additiveStatus !== "low") {
+        return false;
+      }
+      if (favOnly) {
+        const b = drinkBrand(d.id);
+        if (!b || !favorites.has(favoriteKey("drink", b))) return false;
+      }
+      return true;
+    });
     const mid = (d: Drink) =>
       d.priceEUR ? (d.priceEUR.min + d.priceEUR.max) / 2 : Number.MAX_SAFE_INTEGER;
     const by: Record<string, (a: Drink, b: Drink) => number> = {
@@ -418,7 +522,7 @@ export function CatalogPage({
       sweetness: (a, b) => b.sweetness - a.sweetness || (b.qualityScore ?? 0) - (a.qualityScore ?? 0),
     };
     return [...list].sort(by[sortBy] ?? by.quality);
-  }, [tab, q, styleFilter, cleanOnly, sortBy]);
+  }, [tab, q, styleFilter, cleanOnly, sortBy, favOnly, favorites]);
 
   useEffect(() => {
     setLimit(120);
@@ -434,15 +538,25 @@ export function CatalogPage({
     market,
     sortBy,
     browseBrands,
+    favOnly,
+    favorites,
   ]);
 
+  const favKind = tab === "cigars" ? "cigar" : "drink";
+  // Prazan popis pod „★ Omiljene" znači ili da marka nije označena, ili da ih
+  // uopće nema — druga poruka bez ove je zagonetka.
+  const emptyFavorites = ![...favorites].some((k) => k.startsWith(`${favKind}:`));
+
+  const brandModeCount = tab === "cigars" ? brandRows.length : drinkBrandRows.length;
+  const railLetters =
+    tab === "cigars" ? brandAnchors.letters : drinkBrandAnchors.letters;
   const showRail =
-    tab === "cigars" &&
     browseBrands &&
-    brandRows.length > 12 &&
+    brandModeCount > 12 &&
     !brand &&
     !line &&
     !detail &&
+    !dBrand &&
     !pendingCigar;
 
   return (
@@ -527,9 +641,15 @@ export function CatalogPage({
       )}
 
       <div className="no-scrollbar mt-2 flex gap-2 overflow-x-auto">
-        {tab === "cigars" && (
+        {/* Kava nema proizvođača ("Ristretto" je priprema), pa ni marke ni omiljene. */}
+        {tab !== "coffee" && (
           <Chip active={browseBrands} onClick={() => setBrowseBrands(!browseBrands)}>
             {t("brand.index")}
+          </Chip>
+        )}
+        {tab !== "coffee" && (
+          <Chip active={favOnly} onClick={() => setFavOnly(!favOnly)}>
+            {t("fav.only")}
           </Chip>
         )}
         {tab === "cigars" && (
@@ -553,20 +673,22 @@ export function CatalogPage({
             {t("filter.puro")}
           </Chip>
         )}
-        {tab !== "cigars" && tab !== "coffee" && tab !== "tequila" && (
+        {/* stil i „bez aditiva" filtriraju boce, a u pregledu marki boca nema */}
+        {tab !== "cigars" && tab !== "coffee" && tab !== "tequila" && !browseBrands && (
           <Chip active={cleanOnly} onClick={() => setCleanOnly(!cleanOnly)}>
             {t("filter.clean")}
           </Chip>
         )}
-        {styles.map((s) => (
-          <Chip
-            key={s}
-            active={styleFilter === s}
-            onClick={() => setStyleFilter(styleFilter === s ? null : s)}
-          >
-            {lx(STYLE_LABELS[s]) || s}
-          </Chip>
-        ))}
+        {!browseBrands &&
+          styles.map((s) => (
+            <Chip
+              key={s}
+              active={styleFilter === s}
+              onClick={() => setStyleFilter(styleFilter === s ? null : s)}
+            >
+              {lx(STYLE_LABELS[s]) || s}
+            </Chip>
+          ))}
       </div>
 
       {/* filter oblika (vitole) — samo u ravnom popisu cigara */}
@@ -706,14 +828,21 @@ export function CatalogPage({
 
       <div className="mt-3 text-xs text-dim">
         {browseBrands
-          ? `${brandRows.length} · ${t("brand.index")}`
+          ? `${tab === "cigars" ? brandRows.length : drinkBrandRows.length} · ${t("brand.index")}`
           : `${tab === "cigars" ? cigars.length : drinks.length} · ${
               tab === "cigars" ? t("cat.cigars") : t(`cat.${tab}` as const)
             }`}
       </div>
 
+      {favOnly && emptyFavorites && (
+        <p className="mt-2 rounded-xl border border-dim/20 bg-cedar/50 px-3 py-2.5 text-xs leading-relaxed text-dim">
+          {t("fav.none")}
+        </p>
+      )}
+
       <div className="mt-2 space-y-2">
         {browseBrands &&
+          tab === "cigars" &&
           brandRows.map((b, i) => {
             const anchor = brandAnchors.at.get(i);
             const linesInMarket = cigarsByBrand(b.brand).filter(
@@ -721,36 +850,81 @@ export function CatalogPage({
             );
             const lineCount = market === "ALL" ? b.lineCount : linesInMarket.length;
             return (
-              <button
+              <div
                 key={b.brand}
-                type="button"
                 id={anchor ? `ci-alpha-${anchor}` : undefined}
-                onClick={() => openBrand(b.brand)}
-                className="w-full scroll-mt-4 rounded-xl border border-dim/15 bg-cedar p-3 text-left transition-colors hover:border-zlato/40"
+                className="flex scroll-mt-4 items-start gap-2 rounded-xl border border-dim/15 bg-cedar p-3 transition-colors focus-within:border-zlato/40 hover:border-zlato/40"
               >
-                <div className="flex items-baseline justify-between gap-2">
-                  <span className="font-display text-base text-papir">
-                    {brandDisplayName(b.brand, market)}
-                  </span>
-                  {b.minPriceEUR != null && (
-                    <span className="shrink-0 text-xs text-dim">
-                      {t("brand.from")} {b.minPriceEUR.toFixed(b.minPriceEUR % 1 ? 2 : 0)} €
+                <button
+                  type="button"
+                  onClick={() => openBrand(b.brand)}
+                  className="min-w-0 flex-1 text-left"
+                >
+                  <div className="flex items-baseline justify-between gap-2">
+                    <span className="font-display text-base text-papir">
+                      {brandDisplayName(b.brand, market)}
                     </span>
-                  )}
-                </div>
-                <div className="mt-1 text-xs text-dim">
-                  {b.info ? cn(b.info.country) : ""}
-                  {b.info?.founded ? ` · ${b.info.founded}` : ""}
-                  {" · "}
-                  {lineCount} {t("brand.lines")}
-                  {b.hasAdditionalVitolas && market === "ALL" ? " · +" : ""}
-                </div>
-                {b.info && (
-                  <div className="mt-1.5 line-clamp-2 text-xs leading-relaxed text-dim/90">
-                    {lx(b.info.blurb)}
+                    {b.minPriceEUR != null && (
+                      <span className="shrink-0 text-xs text-dim">
+                        {t("brand.from")} {b.minPriceEUR.toFixed(b.minPriceEUR % 1 ? 2 : 0)} €
+                      </span>
+                    )}
                   </div>
-                )}
-              </button>
+                  <div className="mt-1 text-xs text-dim">
+                    {b.info ? cn(b.info.country) : ""}
+                    {b.info?.founded ? ` · ${b.info.founded}` : ""}
+                    {" · "}
+                    {lineCount} {t("brand.lines")}
+                    {b.hasAdditionalVitolas && market === "ALL" ? " · +" : ""}
+                  </div>
+                  {b.info && (
+                    <div className="mt-1.5 line-clamp-2 text-xs leading-relaxed text-dim/90">
+                      {lx(b.info.blurb)}
+                    </div>
+                  )}
+                </button>
+                <FavoriteStar kind="cigar" brand={b.brand} />
+              </div>
+            );
+          })}
+        {browseBrands &&
+          tab !== "cigars" &&
+          drinkBrandRows.map((b, i) => {
+            const anchor = drinkBrandAnchors.at.get(i);
+            return (
+              <div
+                key={b.brand}
+                id={anchor ? `ci-alpha-${anchor}` : undefined}
+                className="flex scroll-mt-4 items-start gap-2 rounded-xl border border-dim/15 bg-cedar p-3 transition-colors focus-within:border-zlato/40 hover:border-zlato/40"
+              >
+                <button
+                  type="button"
+                  onClick={() => openDrinkBrand(b.brand)}
+                  className="min-w-0 flex-1 text-left"
+                >
+                  <div className="flex items-baseline justify-between gap-2">
+                    <span className="font-display text-base text-papir">{b.brand}</span>
+                    {b.minPriceEUR != null && (
+                      <span className="shrink-0 text-xs text-dim">
+                        {t("brand.from")} {b.minPriceEUR.toFixed(0)} €
+                      </span>
+                    )}
+                  </div>
+                  <div className="mt-1 text-xs text-dim">
+                    {b.countries.length > 0 && `${b.countries.map(cn).join(", ")} · `}
+                    {b.count} {t("dbrand.bottles")}
+                    {b.bestQuality != null && (
+                      <span className="text-zlato-2"> · {b.bestQuality}/10</span>
+                    )}
+                  </div>
+                  {b.categories.length > 1 && (
+                    <div className="mt-1 text-micro uppercase tracking-widest text-dim/80">
+                      {b.categories.map((c) => t(`cat.${c}` as StringKey)).join(" · ")}
+                    </div>
+                  )}
+                </button>
+                <FavoriteStar kind="drink" brand={b.brand} />
+              </div>
             );
           })}
         {!browseBrands &&
@@ -770,19 +944,18 @@ export function CatalogPage({
             {t("catalog.showMore")} ({cigars.length - limit})
           </button>
         )}
-        {drinks.map((d, i) => (
-          <DrinkRow
-            key={d.id}
-            drink={d}
-            rank={i + 1}
-            onClick={() => setDetail({ kind: "drink", item: d })}
-          />
-        ))}
+        {!browseBrands &&
+          drinks.map((d, i) => (
+            <DrinkRow
+              key={d.id}
+              drink={d}
+              rank={i + 1}
+              onClick={() => openDrinkFromList(d)}
+            />
+          ))}
       </div>
 
-      {showRail && (
-        <AlphabetRail letters={brandAnchors.letters} onJump={jumpToLetter} />
-      )}
+      {showRail && <AlphabetRail letters={railLetters} onJump={jumpToLetter} />}
 
       {pendingCigar && (
         <VitolaPicker
@@ -796,6 +969,14 @@ export function CatalogPage({
         <BrandSheet brand={brand} onClose={clearCatalogFocus} onOpenLine={openLine} />
       )}
 
+      {dBrand && (
+        <DrinkBrandSheet
+          brand={dBrand}
+          onClose={clearCatalogFocus}
+          onOpenDrink={openDrinkFromBrand}
+        />
+      )}
+
       {line && (
         <LineSheet
           cigar={line}
@@ -807,8 +988,9 @@ export function CatalogPage({
 
       <DetailSheet
         target={detail}
-        onClose={clearCatalogFocus}
+        onClose={closeDetail}
         onOpenBrand={openBrand}
+        onOpenDrinkBrand={openDrinkBrand}
         onOpenLine={openLine}
         onPair={
           onPair

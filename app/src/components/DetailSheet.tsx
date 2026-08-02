@@ -3,7 +3,14 @@ import { SheetShell } from "./SheetShell";
 import type { Cigar, Drink } from "../types";
 import { useI18n, STYLE_LABELS, ADDITIVE_LABELS, ADDITIVE_RULES } from "../i18n";
 import { flavorLabel } from "../engine/rules";
-import { brandInfo, brandDisplayName, cigarShopLinks, cigarShopLinkPrice, formatPrice } from "../data";
+import {
+  brandInfo,
+  brandDisplayName,
+  cigarShopLinks,
+  cigarShopLinkPrice,
+  drinkBrand,
+  formatPrice,
+} from "../data";
 import { REGIONS } from "../data/shops";
 import { drinkBuyLink } from "../lib/drinkBuyLink";
 import { drinkNameLoc } from "../lib/drinkName";
@@ -14,6 +21,7 @@ import { cigarDescription } from "../lib/cigarNote";
 import { needsVitolaPick } from "../lib/cigarVitola";
 import { Chip, Meter } from "./ui";
 import { BackButton } from "./BackButton";
+import { FavoriteStar } from "./FavoriteStar";
 import {
   getItemState,
   updateItem,
@@ -33,6 +41,7 @@ export function DetailSheet({
   target,
   onClose,
   onOpenBrand,
+  onOpenDrinkBrand,
   onOpenLine,
   onPair,
   onLogEvening,
@@ -40,6 +49,8 @@ export function DetailSheet({
   target: Item | null;
   onClose: () => void;
   onOpenBrand?: (brand: string) => void;
+  /** Marka pića (izvedena iz imena) — vodi u usporedbu ostalih boca iste kuće. */
+  onOpenDrinkBrand?: (brand: string) => void;
   onOpenLine?: (cigar: Cigar) => void;
   onPair?: (target: Item) => void;
   /** Samo za cigare — otvara večernji zapis s ovom cigarom. */
@@ -96,7 +107,7 @@ export function DetailSheet({
             onOpenCigar={pushCigar}
           />
         ) : (
-          <DrinkDetails drink={active.item} />
+          <DrinkDetails drink={active.item} onOpenBrand={onOpenDrinkBrand} />
         )}
 
         <div className="band-rule my-4" />
@@ -426,13 +437,37 @@ function CigarDetails({
   );
 }
 
-function DrinkDetails({ drink }: { drink: Drink }) {
+function DrinkDetails({
+  drink,
+  onOpenBrand,
+}: {
+  drink: Drink;
+  onOpenBrand?: (brand: string) => void;
+}) {
   const { t, lx, sv, rgn, lang } = useI18n();
   const style = STYLE_LABELS[drink.style];
   const buy = drinkBuyLink(drink);
+  const brand = drinkBrand(drink.id);
   return (
     <>
-      <div className="font-display text-xl text-papir">{lx(drinkNameLoc(drink))}</div>
+      <div className="flex items-start justify-between gap-3">
+        <div className="min-w-0">
+          <div className="font-display text-xl text-papir">{lx(drinkNameLoc(drink))}</div>
+          {brand &&
+            (onOpenBrand ? (
+              <button
+                type="button"
+                onClick={() => onOpenBrand(brand)}
+                className="mt-0.5 text-xs uppercase tracking-widest text-zlato-2 hover:underline"
+              >
+                {brand} →
+              </button>
+            ) : (
+              <div className="mt-0.5 text-xs uppercase tracking-widest text-dim">{brand}</div>
+            ))}
+        </div>
+        {brand && <FavoriteStar kind="drink" brand={brand} />}
+      </div>
       <div className="mt-1 text-sm text-dim">
         {style ? lx(style) : drink.style} · {rgn(drink.region)}
         {drink.abv ? ` · ${drink.abv}%` : ""}

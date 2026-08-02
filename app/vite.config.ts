@@ -125,6 +125,7 @@ export default defineConfig({
               id.includes("cigarIdAliases") ||
               id.includes("drinkIdAliases") ||
               id.includes("drinkIdRegistry") ||
+              id.includes("drinkBrands") ||
               id.includes("digestifs.json")
             ) {
               return "data-meta";

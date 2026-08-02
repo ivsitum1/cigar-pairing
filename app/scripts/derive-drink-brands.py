@@ -23,6 +23,7 @@ import html
 import json
 import re
 import sys
+import unicodedata
 from pathlib import Path
 
 APP = Path(__file__).resolve().parent.parent
@@ -94,6 +95,34 @@ def derive_all(names: dict[str, str]) -> dict[str, str]:
     return {i: brand_for(n) for i, n in names.items()}
 
 
+def slugify(label: str) -> str:
+    """Isti slug kao `slugifyLabel` u src/data/index.ts (deep-link adresa marke)."""
+    s = unicodedata.normalize("NFKD", label)
+    s = "".join(c for c in s if not unicodedata.combining(c))
+    s = s.lower()
+    s = re.sub(r"['‘’`]", "", s)
+    s = re.sub(r"[^a-z0-9]+", "-", s)
+    return s.strip("-")
+
+
+def slug_collisions(brands: dict[str, str]) -> list[str]:
+    """Dvije marke na istom slugu = jedna je nedohvatljiva deep-linkom.
+
+    Skoro uvijek je uzrok isto ime pisano dvojako ("Gran Patron" / "Gran
+    Patron" s naglaskom) — dakle jedna kuca razlomljena na dvije marke. Ispravlja
+    se u drink_brand_overrides.json, ne ovdje.
+    """
+    seen: dict[str, str] = {}
+    out: list[str] = []
+    for brand in sorted(set(brands.values())):
+        slug = slugify(brand)
+        if slug in seen:
+            out.append(f"{slug}: {seen[slug]!r} / {brand!r}")
+        else:
+            seen[slug] = brand
+    return out
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--check", action="store_true")
@@ -111,6 +140,14 @@ def main() -> int:
     for cid, brand in overrides.items():
         if cid in brands:
             brands[cid] = brand
+
+    collisions = slug_collisions(brands)
+    if collisions:
+        print("Dvije marke dijele slug (ispravi u drink_brand_overrides.json):",
+              file=sys.stderr)
+        for c in collisions:
+            print(f"  {c}", file=sys.stderr)
+        return 1
 
     payload = {
         "_comment": (

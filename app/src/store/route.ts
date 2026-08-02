@@ -6,11 +6,16 @@ export type ClubView = "101" | "bonton" | "lexicon" | "dictionary" | "hr-guide" 
 /** Kolekcija: Humidor (zaliha+boce) | shortlist | kalendar dnevnika. */
 export type CollectionView = "collection" | "humidor" | "calendar";
 
-/** Catalog deep links: brand → line → vitola (Phase 4). */
+/**
+ * Catalog deep links: brand → line → vitola (Phase 4), plus marka pića.
+ * Marka pića ima svoju razinu jer su prostori imena odvojeni — „Nikka" kao
+ * marka pića i hipotetska istoimena marka cigara ne smiju dijeliti slug.
+ */
 export type CatalogFocus =
   | { level: "brand"; brandSlug: string }
   | { level: "line"; cigarId: string }
-  | { level: "vitola"; cigarId: string; vitolaSlug: string };
+  | { level: "vitola"; cigarId: string; vitolaSlug: string }
+  | { level: "drinkBrand"; brandSlug: string };
 
 export interface Route {
   page: Page;
@@ -61,6 +66,12 @@ export function parseHash(hash: string): Route {
       catalog: { level: "brand", brandSlug: safeDecode(parts[2]) },
     };
   }
+  if (page === "catalog" && parts[1] === "drink-brand" && parts[2]) {
+    return {
+      page,
+      catalog: { level: "drinkBrand", brandSlug: safeDecode(parts[2]) },
+    };
+  }
   if (page === "catalog" && parts[1] === "line" && parts[2]) {
     return {
       page,
@@ -93,6 +104,8 @@ export function routeToHash(r: Route): string {
     switch (c.level) {
       case "brand":
         return `#/catalog/brand/${encodeURIComponent(c.brandSlug)}`;
+      case "drinkBrand":
+        return `#/catalog/drink-brand/${encodeURIComponent(c.brandSlug)}`;
       case "line":
         return `#/catalog/line/${encodeURIComponent(c.cigarId)}`;
       case "vitola":

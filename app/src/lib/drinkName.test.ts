@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { drinkNameLoc, drinkNameHaystack } from "./drinkName";
+import { bottleLabel, drinkNameLoc, drinkNameHaystack } from "./drinkName";
 import { ALL_DRINKS } from "../data";
 import type { Drink } from "../types";
 
@@ -40,5 +40,32 @@ describe("drinkNameLoc — lokalizacija imena pića", () => {
     const hay = drinkNameHaystack(turska);
     expect(hay).toContain("Turska");
     expect(hay).toContain("Turkish");
+  });
+});
+
+// U usporednoj tablici marke ime marke se ponavlja u svakom retku, pa ga
+// kartica skida. Skidanje ne smije proizvesti prazan naziv.
+describe("bottleLabel — naziv boce unutar marke", () => {
+  it("skida ime marke s početka", () => {
+    expect(bottleLabel("GlenDronach 12", "GlenDronach")).toBe("12");
+    expect(bottleLabel("Foursquare Détente", "Foursquare")).toBe("Détente");
+  });
+
+  it("ime jednako marki ostaje cijelo", () => {
+    expect(bottleLabel("Zacapa", "Zacapa")).toBe("Zacapa");
+  });
+
+  // Marka je izvedena iz imena, ali ručne ispravke
+  // (scripts/data/drink_brand_overrides.json) znaju dati marku koja nije
+  // prefiks imena — tada je puno ime jedino smisleno.
+  it("ime koje ne počinje markom ostaje cijelo", () => {
+    expect(bottleLabel("Tokaji Aszú 5", "Royal Tokaji")).toBe("Tokaji Aszú 5");
+  });
+
+  it("nikad ne vraća prazan naziv", () => {
+    expect(bottleLabel("Nikka  ", "Nikka")).toBe("Nikka  ");
+    for (const d of ALL_DRINKS) {
+      expect(bottleLabel(d.name, d.name.split(" ")[0]).trim(), d.name).not.toBe("");
+    }
   });
 });

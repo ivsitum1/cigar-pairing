@@ -13,6 +13,7 @@ import {
 import { useI18n } from "../i18n";
 import { Meter } from "./ui";
 import { BackButton } from "./BackButton";
+import { FavoriteStar } from "./FavoriteStar";
 import { MarketFilter } from "./MarketFilter";
 import { useMarket } from "../store/market";
 
@@ -72,12 +73,19 @@ export function BrandSheet({
           <BackButton onClick={onClose}>{t("common.back")}</BackButton>
         </div>
 
-        <div className="font-display text-2xl tracking-wide text-zlato-2">{displayBrand}</div>
-        {info && (
-          <div className="mt-0.5 text-xs uppercase tracking-widest text-dim">
-            {cn(info.country)} · {info.founded}
+        <div className="flex items-start justify-between gap-3">
+          <div className="min-w-0">
+            <div className="font-display text-2xl tracking-wide text-zlato-2">
+              {displayBrand}
+            </div>
+            {info && (
+              <div className="mt-0.5 text-xs uppercase tracking-widest text-dim">
+                {cn(info.country)} · {info.founded}
+              </div>
+            )}
           </div>
-        )}
+          <FavoriteStar kind="cigar" brand={brand} size="lg" />
+        </div>
         {info && (
           <p className="mt-3 text-sm leading-relaxed text-papir/85">{lx(info.blurb)}</p>
         )}
