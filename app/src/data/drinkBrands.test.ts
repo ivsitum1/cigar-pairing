@@ -48,4 +48,32 @@ describe("marke pića", () => {
     const total = ALL_DRINK_BRANDS.reduce((n, b) => n + drinksByBrand(b).length, 0);
     expect(total).toBe(withBrand.length);
   });
+
+  // Kad dvije RAZLICITE marke dijele prvu rijec ("Black Tot" i "Black Bottle"),
+  // najdulji zajednicki prefiks ispadne goli krnjatak — algoritam ih ne moze
+  // razluciti bez znanja o svijetu. Prelazak kategorija je jak signal: isti
+  // proizvodac rijetko radi i gin i bourbon.
+  //
+  // Poznate iznimke su stvarni proizvodaci s vise kategorija.
+  it("jednorječna marka ne spaja različite proizvođače", () => {
+    const MULTI_CATEGORY_HOUSES = new Set([
+      "Nikka", // whisky + Coffey Gin
+      "Nonino", // grappa + amaro
+      "Antinori", // vino + grappa
+      "Gaja", // vino + grappa
+      "Ableforth's", // gin + rum
+      "AURA", // pelinkovac + gin
+    ]);
+    const suspects = ALL_DRINK_BRANDS.filter((b) => {
+      if (b.split(/\s+/).length !== 1 || MULTI_CATEGORY_HOUSES.has(b)) return false;
+      const cats = new Set(drinksByBrand(b).map((d) => d.category));
+      return cats.size > 1;
+    });
+    expect(
+      suspects,
+      "Marka od jedne riječi s bocama u više kategorija vjerojatno spaja dva proizvođača. " +
+        "Razdvoji ih u scripts/data/drink_brand_overrides.json, ili — ako je stvarno " +
+        "ista kuća — dopiši je u MULTI_CATEGORY_HOUSES.",
+    ).toEqual([]);
+  });
 });
