@@ -727,3 +727,94 @@ stringovi nose `{age}`, `Footer` ga zamjenjuje. USA → 21, ostalo → 18.
 ubuduće upiše „18+" natrag, test pada.
 
 **Rezultat:** `tsc` čist, **459 testova** (454 + 5), build prolazi.
+
+---
+
+## Val 16 — marke pića: izvedba, omiljene, pregled po marki
+
+Tri korisnička zahtjeva u jednom lancu, jer sva tri stoje na istoj rupi: **pića
+nemaju `brand` polje**. Provjereno je svih 959 zapisa u 8 kategorija — nijedan
+ga nema. Marka živi samo unutar `name`, pa je i gubitak marke iz podataka mogao
+proći neopaženo: nema polja koje bi ostalo prazno.
+
+### 16a — vraćeni prefiksi marki izgubljeni pri razdvajanju (`1afab4b`)
+
+Prijavljeno za kolumbijski rum: „No. 2 je ispravno označen, No. 1 fali brend".
+Podaci su pokazali obrnuto — slomljen je bio **`rum-no-2`**. Kad je kombinirani
+unos „A / B" razdvojen, drugoj polovici je ostao samo rep imena („No. 2"),
+bez kuće. Isti oblik nađen je na **19 mjesta** kroz rumove, whiskyje i konjake,
+plus **80 bilježaka** koje su propustile mehaniku splittera u korisnički tekst.
+
+Čuvar: `drinkNames.test.ts` — nijedno ime ne smije počinjati golim brojem ili
+„No.", jednorječna imena moraju biti poznate marke, a bilješke ne smiju
+sadržavati tragove pipelinea.
+
+### 16b — izvedba marke iz imena + omiljene marke (`4d8f300`)
+
+`scripts/derive-drink-brands.py` izvodi marku **podatkovno, ne ručnim popisom**:
+marka je najdulji zajednički prefiks svih boca koje dijele početak imena.
+Prva verzija (do 3 vodeće riječi) dala je 536 „marki" s 401 sirotanom
+(„Ardbeg Corryvreckan" kao vlastita marka); LCP pristup daje 385 marki.
+
+**Kava je izostavljena namjerno**: svih 33 zapisa su načini pripreme
+(Ristretto, Cold brew), podrijetla (Brazil Santos) ili recepti — pojam marke
+ondje ne postoji. Test to i tvrdi, da netko ubuduće ne „popravi" izostanak.
+
+`store/favorites.ts`: omiljene marke za cigare **i** pića, ključ nosi vrstu
+(`cigar:Padrón`, `drink:Foursquare`) jer se imena mogu preklapati.
+
+### 16c — razdvojene marke koje dijele samo prvu riječ (`4b82763`)
+
+Prijavljeno: „Black je Black Tot". LCP preko svih boca s istom prvom riječi daje
+goli krnjatak kad su to dvije **različite** kuće. Istim oblikom nađeno još troje
+(Four → Pillars/Monkey's/Roses, Monkey → 47/Shoulder, Royal → Salute/Tokaji).
+Šest kuća s više kategorija (Nikka, Nonino, Antinori, Gaja, Ableforth's, AURA)
+**namjerno** ostaje spojeno. Čuvar koristi prelazak kategorija kao signal.
+
+### 16d — sučelje: pregled „Marke" za pića, zvjezdica, usporedba
+
+**Kartica „Marke" kod pića** radi kao kod cigara, uz jednu namjernu razliku:
+cigare se otvaraju **na** indeksu marki, pića i dalje na rang-listi po
+kvaliteti. Ta je lista potpis aplikacije i skrivati je iza jednog klika bila bi
+regresija; „Marke" je zato filter koji korisnik uključi.
+
+**`DrinkBrandSheet`** — sve boce jedne kuće u jednoj tablici (naziv, ABV, tijelo,
+slatkoća, ocjena, cijena), s krajnostima u zlatu: najbolja ocjena i najniža
+cijena. Naziv gubi prefiks marke („GlenDronach 12" → „12"), stupac ABV nestaje
+kad ga nijedna boca nema, a natpisi unutar `Meter` ćelija su maknuti — zaglavlje
+stupca ih već imenuje, a natpis u svakom retku je gurao ocjenu i cijenu izvan
+ekrana telefona. Klik na bocu otvara **postojeći** detalj, a „Natrag" iz njega
+vraća **u marku**, ne na popis kategorije.
+
+**Zvjezdica** stoji na kartici marke (cigare i pića), u zaglavlju oba pregleda
+marke i u detalju boce. Namjerno je zaseban gumb pored kartice, a ne unutar nje:
+ugniježđeni gumb je neispravan HTML i klik bi otvarao marku umjesto oznake.
+Filter **„★ Omiljene"** vrijedi i za indeks marki i za ravan popis; kad omiljenih
+uopće nema, prazan popis objašnjava zašto.
+
+**Deep-link** `#/catalog/drink-brand/<slug>` je zasebna razina od
+`#/catalog/brand/<slug>` — prostori imena marki cigara i pića se ne dijele.
+
+**Omiljene idu u sigurnosnu kopiju** (`favoriteBrands` u Izvoz/Uvoz). Stariji
+backup nema taj ključ i tada oznake ostaju netaknute — uvoz praznog polja bi ih
+obrisao, a to nije ono što stara datoteka tvrdi.
+
+### Nalaz koji je ispao usput
+
+Novi test „slugovi su jedinstveni" odmah je pao: **`Gran Patron` i
+`Gran Patrón`** — ista kuća, dvojako prepisana u katalogu (PLATINUM bez
+naglaska, BURDEOS s njim). Slug im je isti, pa bi jedna od dvije marke bila
+nedohvatljiva deep-linkom. Riješeno ispravkom u `drink_brand_overrides.json`, a
+`derive-drink-brands.py` sada takvu koliziju **odbija** i traži ispravku — pa se
+sljedeći ovakav slučaj prijavi sam, na CI-ju.
+
+### Mjereno
+
+`tsc` čist · **490 testova** (476 + 14) · build prolazi · 389 marki pića.
+`drinkBrands.json` premješten u `data-meta` chunk: eager `index` chunk 78,9 →
+67,4 kB gzip (isti ukupni bajtovi, ali kod i podaci više ne ruše cache jedno
+drugom).
+
+Provjereno i u pregledniku (Chromium, 420 px): indeks marki, otvaranje marke,
+klik na bocu, povratak u marku, zvjezdica, „★ Omiljene" filter i deep-link —
+bez ijedne greške u konzoli.

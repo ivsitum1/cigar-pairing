@@ -60,6 +60,26 @@ describe("hash route helpers", () => {
     ).toBe("#/catalog/vitola/cig-la-galera-habano/chaveta");
   });
 
+  // Marka pića je zasebna razina: prostori imena marki cigara i pića se ne
+  // dijele, pa `#/catalog/brand/nikka` i `#/catalog/drink-brand/nikka` moraju
+  // ostati dvije različite adrese.
+  it("round-trips catalog drink-brand deep link", () => {
+    expect(parseHash("#/catalog/drink-brand/foursquare")).toEqual({
+      page: "catalog",
+      catalog: { level: "drinkBrand", brandSlug: "foursquare" },
+    });
+    expect(
+      routeToHash({
+        page: "catalog",
+        catalog: { level: "drinkBrand", brandSlug: "foursquare" },
+      }),
+    ).toBe("#/catalog/drink-brand/foursquare");
+
+    expect(parseHash("#/catalog/brand/nikka")).not.toEqual(
+      parseHash("#/catalog/drink-brand/nikka"),
+    );
+  });
+
   it("kolekcija ima podprikaze humidora, shortlista i kalendara", () => {
     expect(parseHash("#/collection/humidor")).toEqual({
       page: "collection",
