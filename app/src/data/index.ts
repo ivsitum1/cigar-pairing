@@ -13,6 +13,7 @@ import shoppingJson from "./shopping.json";
 import brandsJson from "./brands.json";
 import cigarIdAliasesJson from "./cigarIdAliases.json";
 import drinkIdAliasesJson from "./drinkIdAliases.json";
+import drinkBrandsJson from "./drinkBrands.json";
 import { applyVitola, resolveDefaultVitola } from "../lib/cigarVitola";
 import {
   parseCigarItemId,
@@ -122,6 +123,29 @@ export const drinkById = (id: string | null | undefined): Drink | undefined => {
     cur = next;
   }
 };
+
+/**
+ * Marka pića. Pića nemaju `brand` polje — marka živi unutar `name`, pa je
+ * izvedena skriptom (`scripts/derive-drink-brands.py`) u `drinkBrands.json`.
+ * Kava je namjerno izostavljena: „Ristretto" i „Cold brew" nisu marke.
+ */
+const DRINK_BRANDS: Record<string, string> =
+  (drinkBrandsJson as { brands?: Record<string, string> }).brands ?? {};
+
+export const drinkBrand = (id: string): string | undefined => DRINK_BRANDS[id];
+
+/** Sve marke pića, abecedno — za filter i pregled po marki. */
+export const ALL_DRINK_BRANDS: string[] = [
+  ...new Set(Object.values(DRINK_BRANDS)),
+].sort((a, b) => a.localeCompare(b));
+
+/** Boce jedne marke, najbolje ocijenjene prvo pa abecedno. */
+export function drinksByBrand(brand: string): Drink[] {
+  return ALL_DRINKS.filter((d) => DRINK_BRANDS[d.id] === brand).sort(
+    (a, b) =>
+      (b.qualityScore ?? 0) - (a.qualityScore ?? 0) || a.name.localeCompare(b.name),
+  );
+}
 
 export const cigarById = (id: string): Cigar | undefined =>
   CIGARS.find((c) => c.id === id);
