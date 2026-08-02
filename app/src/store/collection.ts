@@ -1,6 +1,6 @@
 // Kolekcija i dnevnik — localStorage, s export/import backupom.
 import { useSyncExternalStore } from "react";
-import { canonicalCigarItemId, canonicalDrinkId } from "../data";
+import { canonicalCigarStateKey, canonicalDrinkId } from "../data";
 import { normalizeCollectionPayload } from "../lib/safeStorage";
 
 export interface ItemState {
@@ -45,9 +45,13 @@ function mergeItemState(a: ItemState, b: ItemState): ItemState {
  * Ključ stavke je ili cigara (`cig-…`, moguće `@vitola`) ili piće.
  * Cigarski alias ne smije dirati id pića i obratno, pa se kanonizacija bira
  * po tome koja strana ključ uopće prepoznaje.
+ *
+ * Za cigare ide i korak dalje od aliasa: ključ se vraća na oblik koji kartica
+ * cigare stvarno čita i piše (`canonicalCigarStateKey`). Bez toga zapis s
+ * mrtvom vitolom ostaje visjeti na popisu Kolekcije, a nijedan gumb ga ne miče.
  */
 function canonicalItemKey(id: string): string {
-  const asCigar = canonicalCigarItemId(id);
+  const asCigar = canonicalCigarStateKey(id);
   if (asCigar !== id) return asCigar;
   return canonicalDrinkId(id);
 }
@@ -61,7 +65,7 @@ export function remapCollectionAliases(data: CollectionData): CollectionData {
   }
   const journal = data.journal.map((j) => ({
     ...j,
-    cigarId: canonicalCigarItemId(j.cigarId),
+    cigarId: canonicalCigarStateKey(j.cigarId),
     drinkId: j.drinkId == null ? null : canonicalDrinkId(j.drinkId),
   }));
   return { items, journal };
@@ -167,6 +171,18 @@ export function updateItem(id: string, patch: Partial<ItemState>) {
   } else {
     items[id] = next;
   }
+  persist({ ...cache, items });
+}
+
+/**
+ * Makni stavku s popisa Kolekcije — briše cijelo stanje odjednom
+ * (Imam / Probao / Želim / ocjena / bilješka). Gašenje kvačica jednu po jednu
+ * radi isto, ali popis mora imati i izlaz u jednom kliku.
+ */
+export function clearItem(id: string) {
+  if (!(id in cache.items)) return;
+  const items = { ...cache.items };
+  delete items[id];
   persist({ ...cache, items });
 }
 

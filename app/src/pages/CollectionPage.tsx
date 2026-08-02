@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef, useState, type ReactNode } from "react";
 import type { Cigar, Drink } from "../types";
 import {
   ALL_DRINKS,
@@ -26,6 +26,7 @@ import {
   shortlistItemIds,
 } from "../lib/collectionPanels";
 import {
+  clearItem,
   exportData,
   importData,
   removeJournalEntry,
@@ -37,6 +38,35 @@ import { exportHumidors, importHumidors, totalStock } from "../store/humidor";
 import { exportFavorites, importFavorites } from "../store/favorites";
 import { OcrScan } from "../components/OcrScan";
 import { useMarket } from "../store/market";
+
+/**
+ * Redak popisa Kolekcije + izlaz. Bez njega se stavka miče samo gašenjem svih
+ * kvačica u kartici, a ako ključ ne odgovara onome što kartica piše (stara
+ * vitola, oznaka na razini linije) ne miče se nikako.
+ */
+function CollectionEntry({
+  itemId,
+  children,
+}: {
+  itemId: string;
+  children: ReactNode;
+}) {
+  const { t } = useI18n();
+  return (
+    <div className="flex items-start gap-2">
+      <div className="min-w-0 flex-1">{children}</div>
+      <button
+        type="button"
+        onClick={() => clearItem(itemId)}
+        aria-label={t("coll.removeFromList")}
+        title={t("coll.removeFromList")}
+        className="mt-1 h-8 w-8 shrink-0 rounded-lg border border-dim/25 text-sm text-dim hover:border-oxblood/60 hover:text-oxblood"
+      >
+        ✕
+      </button>
+    </div>
+  );
+}
 
 export function CollectionPage({
   onPair,
@@ -51,6 +81,7 @@ export function CollectionPage({
     line,
     detail,
     openCigar,
+    openCigarCard,
     openVitola,
     openDrink,
     openLine,
@@ -281,11 +312,11 @@ export function CollectionPage({
           <SectionTitle>{t("coll.ownedNoStock")}</SectionTitle>
           <div className="space-y-2">
             {ownedNoStockCigars.map(({ id, cigar }) => (
-              <CigarRow
-                key={id}
-                cigar={cigar}
-                onClick={() => openCigar(cigar)}
-              />
+              <CollectionEntry key={id} itemId={id}>
+                {/* kartica baš tog ključa: što je ovdje označeno mora se i
+                    odavde moći odznačiti */}
+                <CigarRow cigar={cigar} onClick={() => openCigarCard(cigar)} />
+              </CollectionEntry>
             ))}
           </div>
         </>
@@ -296,14 +327,14 @@ export function CollectionPage({
           <SectionTitle>{t("coll.historySection")}</SectionTitle>
           <div className="space-y-2 opacity-80">
             {historyCigars.map(({ id, cigar }) => (
-              <CigarRow
-                key={id}
-                cigar={cigar}
-                onClick={() => openCigar(cigar)}
-              />
+              <CollectionEntry key={id} itemId={id}>
+                <CigarRow cigar={cigar} onClick={() => openCigarCard(cigar)} />
+              </CollectionEntry>
             ))}
             {historyDrinks.map((d) => (
-              <DrinkRow key={d.id} drink={d} onClick={() => openDrink(d)} />
+              <CollectionEntry key={d.id} itemId={d.id}>
+                <DrinkRow drink={d} onClick={() => openDrink(d)} />
+              </CollectionEntry>
             ))}
           </div>
         </>
