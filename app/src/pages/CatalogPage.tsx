@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import type { Cigar, Drink, DrinkCategory, Vitola } from "../types";
 import {
   CIGARS,
@@ -139,6 +139,7 @@ export function CatalogPage({
   const [dBrand, setDBrand] = useState<string | null>(null);
   const [drinkBrandBack, setDrinkBrandBack] = useState<string | null>(null);
   const favorites = useFavoriteBrands();
+  const prevCatalogFocus = useRef(route.catalog);
 
   const openBrand = (b: string) => {
     setDetail(null);
@@ -217,9 +218,24 @@ export function CatalogPage({
 
   // Sync sheets from deep-link hash
   useEffect(() => {
-    if (route.page !== "catalog") return;
+    if (route.page !== "catalog") {
+      prevCatalogFocus.current = undefined;
+      return;
+    }
     const focus = route.catalog;
-    if (!focus) return;
+    if (!focus) {
+      if (prevCatalogFocus.current) {
+        setBrand(null);
+        setLine(null);
+        setDetail(null);
+        setPendingCigar(null);
+        setDBrand(null);
+        setDrinkBrandBack(null);
+      }
+      prevCatalogFocus.current = focus;
+      return;
+    }
+    prevCatalogFocus.current = focus;
     if (focus.level === "brand") {
       const b = brandFromSlug(focus.brandSlug);
       if (b) {

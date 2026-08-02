@@ -78,4 +78,11 @@ describe("omiljene marke", () => {
     );
     expect(exportFavorites()).toEqual(["cigar:Oliva", "drink:Ardbeg"]);
   });
+
+  it("import ne brise omiljene kad su svi kljucevi nevaljani", async () => {
+    const { importFavorites, toggleFavoriteBrand, isFavoriteBrand } = await load();
+    toggleFavoriteBrand("drink", "Ardbeg");
+    expect(importFavorites(["bez-prefiksa", 42, ""])).toBe(false);
+    expect(isFavoriteBrand("drink", "Ardbeg")).toBe(true);
+  });
 });

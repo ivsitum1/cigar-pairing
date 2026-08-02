@@ -88,6 +88,7 @@ export function importFavorites(value: unknown): boolean {
   const valid = value.filter(
     (x): x is string => typeof x === "string" && /^(cigar|drink):.+/.test(x),
   );
+  if (value.length > 0 && valid.length === 0) return false;
   persist(new Set(valid));
   return true;
 }
