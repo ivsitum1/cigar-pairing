@@ -28,6 +28,16 @@ export function useCigarBrowseSheets() {
     }
   }, []);
 
+  /**
+   * Kartica baš te stavke, bez skretanja na izbor vitole. Popis Kolekcije
+   * prikazuje spremljeni ključ (može biti i na razini linije), pa kvačice u
+   * kartici moraju dirati taj isti ključ — inače se označeno ne može odznačiti.
+   */
+  const openCigarCard = useCallback((c: Cigar) => {
+    setLine(null);
+    setDetail({ kind: "cigar", item: c });
+  }, []);
+
   const openVitola = useCallback((c: Cigar, v: Vitola) => {
     const full = resolveCigarId(c.id) ?? c;
     setLine(null);
@@ -58,6 +68,7 @@ export function useCigarBrowseSheets() {
     detail,
     setDetail,
     openCigar,
+    openCigarCard,
     openVitola,
     openDrink,
     openLine,

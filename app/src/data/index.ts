@@ -16,6 +16,7 @@ import drinkIdAliasesJson from "./drinkIdAliases.json";
 import drinkBrandsJson from "./drinkBrands.json";
 import { applyVitola, resolveDefaultVitola } from "../lib/cigarVitola";
 import {
+  cigarItemId,
   parseCigarItemId,
   vitolaFromItemId,
   VITOLA_ID_SEP,
@@ -225,6 +226,22 @@ export function canonicalCigarItemId(itemId: string): string {
   const { cigarId, vitolaSlug } = parseCigarItemId(itemId);
   const canon = resolveCigarIdAlias(cigarId);
   return vitolaSlug ? `${canon}${VITOLA_ID_SEP}${vitolaSlug}` : canon;
+}
+
+/**
+ * Ključ stanja kolekcije/humidora koji sučelje stvarno može pročitati i
+ * prepisati. Kartica cigare radi po `cigarItemId(cigarForItemId(key))`, pa
+ * svaki ključ koji ne preživi taj krug postaje sirotan zapis: vidi se na
+ * popisu Kolekcije, ali nijedan gumb ga ne dira (npr. `cig-x@torpedo` nakon
+ * što je Torpedo izbačen iz linije, ili `cig-x@robusto` kad je liniji ostala
+ * samo jedna vitola). Ovdje se takav ključ vraća na ono što kartica piše.
+ *
+ * Nepoznata cigara ostaje netaknuta — migracija ne briše ono što ne razumije.
+ */
+export function canonicalCigarStateKey(itemId: string): string {
+  const canon = canonicalCigarItemId(itemId);
+  const cigar = cigarForItemId(canon);
+  return cigar ? cigarItemId(cigar) : canon;
 }
 
 /**
