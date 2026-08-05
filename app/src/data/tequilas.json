@@ -1,911 +1,911 @@
 [
- {
-  "id": "tq-don-julio-1942",
-  "category": "tequila",
-  "name": "DON JULIO 1942",
-  "style": "extra-anejo",
-  "region": "Jalisco, Meksiko",
-  "country": "Meksiko",
-  "abv": 40.0,
-  "body": 5,
-  "sweetness": 4,
-  "flavorTags": [
-   "hrast",
-   "kakao",
-   "vanilija",
-   "suho-voce"
-  ],
-  "qualityScore": 9.2,
-  "priceEUR": {
-   "min": 199.0,
-   "max": 199.0
+  {
+    "id": "tq-don-julio-1942",
+    "category": "tequila",
+    "name": "DON JULIO 1942",
+    "style": "extra-anejo",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "abv": 40.0,
+    "body": 5,
+    "sweetness": 4,
+    "flavorTags": [
+      "hrast",
+      "kakao",
+      "vanilija",
+      "suho-voce"
+    ],
+    "qualityScore": 9.2,
+    "priceEUR": {
+      "min": 199.0,
+      "max": 199.0
+    },
+    "priceApprox": false,
+    "shopHR": "ecuga.com",
+    "priceUrl": "https://allez.hr/shop/svi-proizvodi/don-julio-anejo-1942-40-07-l",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Cisto (snifter)"
+    },
+    "cigarHint": null,
+    "notes": {
+      "hr": "Extra añejo referent — gusto, desertno; maduro/oscuro, snifter.",
+      "en": "A reference ultra-premium sipper — dense, sweet oak body. Wants a full, slow cigar; not gin-style botanicals."
+    }
   },
-  "priceApprox": false,
-  "shopHR": "ecuga.com",
-  "priceUrl": "https://allez.hr/shop/svi-proizvodi/don-julio-anejo-1942-40-07-l",
-  "pairable": true,
-  "serving": {
-   "neat": 3,
-   "rocks": 2,
-   "best": "Cisto (snifter)"
+  {
+    "id": "tq-don-julio-anejo",
+    "category": "tequila",
+    "name": "DON JULIO ANEJO",
+    "style": "anejo",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "abv": 40.0,
+    "body": 4,
+    "sweetness": 3,
+    "flavorTags": [
+      "hrast",
+      "vanilija",
+      "karamela",
+      "agava"
+    ],
+    "qualityScore": 8.6,
+    "priceEUR": {
+      "min": 69.0,
+      "max": 69.0
+    },
+    "priceApprox": false,
+    "shopHR": "ecuga.com",
+    "priceUrl": "https://allez.hr/shop/svi-proizvodi/don-julio-70-tequila-crystal-claro-anejo-70th-anniversary-limited-edition-35-vol-07l-u-poklon-kutiji",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Cisto (snifter)"
+    },
+    "cigarHint": null,
+    "notes": {
+      "hr": "Vanilija i hrast; maduro ga dobro nosi.",
+      "en": "A sipping añejo — oak and cocoa carry maduro and fuller Habano profiles."
+    }
   },
-  "cigarHint": null,
-  "notes": {
-   "hr": "Extra añejo referent — gusto, desertno; maduro/oscuro, snifter.",
-   "en": "A reference ultra-premium sipper — dense, sweet oak body. Wants a full, slow cigar; not gin-style botanicals."
+  {
+    "id": "tq-don-julio-blanco",
+    "category": "tequila",
+    "name": "DON JULIO BLANCO",
+    "style": "blanco",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "abv": 40.0,
+    "body": 2,
+    "sweetness": 2,
+    "flavorTags": [
+      "agava",
+      "citrus",
+      "papar",
+      "biljno"
+    ],
+    "qualityScore": 8.5,
+    "priceEUR": {
+      "min": 50.0,
+      "max": 50.0
+    },
+    "priceApprox": false,
+    "shopHR": "ecuga.com",
+    "priceUrl": "https://allez.hr/shop/svi-proizvodi/don-julio-tequila-blanco-100-agave-38-vol-07l-u-poklon-kutiji",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Cisto / lagano ohlađeno"
+    },
+    "cigarHint": null,
+    "notes": {
+      "hr": "Referentni sipping blanco — čista agava i citrus uz laganu do srednju cigaru.",
+      "en": "A reference sipping blanco — clean agave and citrus. With a light to medium cigar, not a maduro bomb."
+    }
+  },
+  {
+    "id": "tq-don-julio-reposado",
+    "category": "tequila",
+    "name": "DON JULIO REPOSADO",
+    "style": "reposado",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "abv": 40.0,
+    "body": 3,
+    "sweetness": 3,
+    "flavorTags": [
+      "agava",
+      "hrast",
+      "vanilija",
+      "papar"
+    ],
+    "qualityScore": 8.4,
+    "priceEUR": {
+      "min": 65.0,
+      "max": 65.0
+    },
+    "priceApprox": false,
+    "shopHR": "ecuga.com",
+    "priceUrl": "https://allez.hr/shop/svi-proizvodi/don-julio-tequila-reposado-100-agave-38-vol-07l-u-poklon-kutiji",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Cisto ili velika kocka leda"
+    },
+    "cigarHint": null,
+    "notes": {
+      "hr": "Agava + hrast; uravnotežen uz Habano srednje snage.",
+      "en": "A bridge between agave and oak — a classic match with a medium Habano / natural cigar."
+    }
+  },
+  {
+    "id": "tq-herradura-anejo",
+    "category": "tequila",
+    "name": "HERRADURA ANEJO",
+    "style": "anejo",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "abv": 40.0,
+    "body": 4,
+    "sweetness": 3,
+    "flavorTags": [
+      "hrast",
+      "vanilija",
+      "karamela",
+      "agava"
+    ],
+    "qualityScore": 8.4,
+    "priceEUR": {
+      "min": 69.0,
+      "max": 69.0
+    },
+    "priceApprox": false,
+    "shopHR": "ecuga.com",
+    "priceUrl": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Cisto (snifter)"
+    },
+    "cigarHint": null,
+    "notes": {
+      "hr": "Añejo snaga uz maduro.",
+      "en": ""
+    }
+  },
+  {
+    "id": "tq-herradura-reposado",
+    "category": "tequila",
+    "name": "HERRADURA REPOSADO",
+    "style": "reposado",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "abv": 40.0,
+    "body": 3,
+    "sweetness": 3,
+    "flavorTags": [
+      "agava",
+      "hrast",
+      "vanilija",
+      "papar"
+    ],
+    "qualityScore": 8.3,
+    "priceEUR": {
+      "min": 49.0,
+      "max": 49.0
+    },
+    "priceApprox": false,
+    "shopHR": "ecuga.com",
+    "priceUrl": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Cisto ili velika kocka leda"
+    },
+    "cigarHint": null,
+    "notes": {
+      "hr": "Klasični reposado; Habano most.",
+      "en": "Longer barrel rest than many reposados — more oak and spice, good with a medium–full cigar."
+    }
+  },
+  {
+    "id": "tq-codigo-1530-anejo-tequila-38-vol-0-7l-u-poklon-kutiji",
+    "category": "tequila",
+    "name": "Código 1530 AÑEJO Tequila 38% Vol. 0,7l u poklon kutiji",
+    "style": "anejo",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "abv": 38.0,
+    "body": 3,
+    "sweetness": 3,
+    "flavorTags": [
+      "hrast",
+      "vanilija",
+      "karamela",
+      "agava"
+    ],
+    "qualityScore": 8.2,
+    "priceEUR": null,
+    "priceApprox": true,
+    "shopHR": "allez.hr",
+    "priceUrl": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Cisto (snifter)"
+    },
+    "cigarHint": null,
+    "notes": {
+      "hr": "Código — moderni sipping uz Habano.",
+      "en": ""
+    }
+  },
+  {
+    "id": "tq-codigo-1530-barrel-anejo-tequila-44-vol-0-7l-u-poklon-kutiji",
+    "category": "tequila",
+    "name": "Código 1530 BARREL AÑEJO Tequila 44% Vol. 0,7l u poklon kutiji",
+    "style": "anejo",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "abv": 44.0,
+    "body": 3,
+    "sweetness": 3,
+    "flavorTags": [
+      "hrast",
+      "vanilija",
+      "karamela",
+      "agava"
+    ],
+    "qualityScore": 8.2,
+    "priceEUR": null,
+    "priceApprox": true,
+    "shopHR": "allez.hr",
+    "priceUrl": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Cisto (snifter)"
+    },
+    "cigarHint": null,
+    "notes": {
+      "hr": "Código — moderni sipping uz Habano.",
+      "en": ""
+    }
+  },
+  {
+    "id": "tq-herradura-blanco",
+    "category": "tequila",
+    "name": "Herradura Blanco",
+    "style": "blanco",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "abv": 40.0,
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "agava",
+      "citrus",
+      "papar",
+      "biljno"
+    ],
+    "qualityScore": 8.2,
+    "priceEUR": {
+      "min": 45.0,
+      "max": 45.0
+    },
+    "priceApprox": false,
+    "shopHR": "Diskont Fumar / allez.hr",
+    "priceUrl": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Cisto / lagano ohlađeno"
+    },
+    "cigarHint": null,
+    "notes": {
+      "hr": "Zemljanija agava; dobro uz srednju cigaru.",
+      "en": "Classic Herradura agave — a touch earthier and pepperier than Don Julio. Good with a medium cigar."
+    },
+    "status": "META"
+  },
+  {
+    "id": "tq-herradura-tequila-anejo-100-de-agave-40-vol-0-7l-u-poklon-kutiji",
+    "category": "tequila",
+    "name": "Herradura Tequila AÑEJO 100% de Agave 40% Vol. 0,7l u poklon kutiji",
+    "style": "anejo",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "abv": 40.0,
+    "body": 3,
+    "sweetness": 3,
+    "flavorTags": [
+      "hrast",
+      "vanilija",
+      "karamela",
+      "agava"
+    ],
+    "qualityScore": 8.1,
+    "priceEUR": null,
+    "priceApprox": true,
+    "shopHR": "allez.hr",
+    "priceUrl": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Cisto (snifter)"
+    },
+    "cigarHint": null,
+    "notes": {
+      "hr": "Herradura — tradicionalni Jalisco profil.",
+      "en": ""
+    }
+  },
+  {
+    "id": "tq-herradura-tequila-ultra-anejo-100-de-agave-40-vol-0-7l",
+    "category": "tequila",
+    "name": "Herradura Tequila ULTRA AÑEJO 100% de Agave 40% Vol. 0,7l",
+    "style": "anejo",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "abv": 40.0,
+    "body": 3,
+    "sweetness": 3,
+    "flavorTags": [
+      "hrast",
+      "vanilija",
+      "karamela",
+      "agava"
+    ],
+    "qualityScore": 8.1,
+    "priceEUR": null,
+    "priceApprox": true,
+    "shopHR": "allez.hr",
+    "priceUrl": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Cisto ili velika kocka leda"
+    },
+    "cigarHint": null,
+    "notes": {
+      "hr": "Herradura — tradicionalni Jalisco profil.",
+      "en": ""
+    }
+  },
+  {
+    "id": "tq-patron-reposado",
+    "category": "tequila",
+    "name": "PATRON REPOSADO",
+    "style": "reposado",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "abv": 40.0,
+    "body": 3,
+    "sweetness": 3,
+    "flavorTags": [
+      "agava",
+      "hrast",
+      "vanilija",
+      "papar"
+    ],
+    "qualityScore": 8.1,
+    "priceEUR": {
+      "min": 63.0,
+      "max": 63.0
+    },
+    "priceApprox": false,
+    "shopHR": "ecuga.com",
+    "priceUrl": "https://allez.hr/shop/svi-proizvodi/patron-tequila-reposado-40-vol-07l-u-poklon-kutiji",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Cisto ili velika kocka leda"
+    },
+    "cigarHint": null,
+    "notes": {
+      "hr": "Reposado s blagim hrastom; Habano srednje.",
+      "en": "A softer reposado — vanilla and honey with a medium-bodied cigar."
+    }
+  },
+  {
+    "id": "tq-clase-azul-reposado",
+    "category": "tequila",
+    "name": "Clase Azul Reposado",
+    "style": "reposado",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "abv": 40.0,
+    "body": 3,
+    "sweetness": 4,
+    "flavorTags": [
+      "agava",
+      "hrast",
+      "vanilija",
+      "papar"
+    ],
+    "qualityScore": 8.0,
+    "priceEUR": {
+      "min": 150.0,
+      "max": 150.0
+    },
+    "priceApprox": false,
+    "shopHR": "allez.hr",
+    "priceUrl": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Cisto ili velika kocka leda"
+    },
+    "cigarHint": null,
+    "notes": {
+      "hr": "Prepoznatljiva keramika i slađi reposado profil — dio cijene je boca; uz srednju, ne prejake cigare.",
+      "en": "Distinctive ceramic and a sweeter reposado profile — part of the price is the bottle; with a medium, not overly strong cigar."
+    }
+  },
+  {
+    "id": "tq-casamigos-anejo",
+    "category": "tequila",
+    "name": "CASAMIGOS ANEJO",
+    "style": "anejo",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "abv": 40.0,
+    "body": 4,
+    "sweetness": 3,
+    "flavorTags": [
+      "hrast",
+      "vanilija",
+      "karamela",
+      "agava"
+    ],
+    "qualityScore": 8.0,
+    "priceEUR": {
+      "min": 85.0,
+      "max": 85.0
+    },
+    "priceApprox": false,
+    "shopHR": "ecuga.com",
+    "priceUrl": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Cisto (snifter)"
+    },
+    "cigarHint": null,
+    "notes": {
+      "hr": "Añejo — desertniji; maduro oprezno.",
+      "en": "A softer, dessert-leaning añejo — easy with a maduro without strain."
+    }
+  },
+  {
+    "id": "tq-patron-silver",
+    "category": "tequila",
+    "name": "Gran Patron Tequila PLATINUM Silver 100% de Agave 40% Vol. 0,7l u poklon kutiji",
+    "style": "blanco",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "abv": 40.0,
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "agava",
+      "citrus",
+      "papar",
+      "biljno"
+    ],
+    "qualityScore": 8.0,
+    "priceEUR": {
+      "min": 62.2,
+      "max": 62.2
+    },
+    "priceApprox": false,
+    "shopHR": "allez.hr",
+    "priceUrl": "https://allez.hr/shop/svi-proizvodi/patron-tequila-silver-40-vol-07-l-u-poklon-kutiji",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Cisto / lagano ohlađeno"
+    },
+    "cigarHint": null,
+    "notes": {
+      "hr": "Patrón — premium sipping uz srednju cigaru.",
+      "en": "A smooth premium blanco — a good entry for pairing with Connecticut or a mild Habano."
+    }
+  },
+  {
+    "id": "tq-patron-anejo",
+    "category": "tequila",
+    "name": "Gran Patrón Tequila BURDEOS Añejo 100% de Agave 40% Vol. 0,7l u drvenoj poklon kutiji",
+    "style": "anejo",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "abv": 40.0,
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "hrast",
+      "vanilija",
+      "karamela",
+      "agava"
+    ],
+    "qualityScore": 8.0,
+    "priceEUR": {
+      "min": 66.98,
+      "max": 66.98
+    },
+    "priceApprox": false,
+    "shopHR": "allez.hr",
+    "priceUrl": "https://allez.hr/shop/svi-proizvodi/patron-tequila-anejo-40-vol-07l-u-poklon-kutiji",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Cisto (snifter)"
+    },
+    "cigarHint": null,
+    "notes": {
+      "hr": "Patrón — premium sipping uz srednju cigaru.",
+      "en": "A smooth añejo with a nutty tone — with a medium–full evening cigar."
+    }
+  },
+  {
+    "id": "tq-casamigos-reposado",
+    "category": "tequila",
+    "name": "CASAMIGOS REPOSADO",
+    "style": "reposado",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "abv": 40.0,
+    "body": 3,
+    "sweetness": 3,
+    "flavorTags": [
+      "agava",
+      "hrast",
+      "vanilija",
+      "papar"
+    ],
+    "qualityScore": 7.9,
+    "priceEUR": {
+      "min": 80.0,
+      "max": 80.0
+    },
+    "priceApprox": false,
+    "shopHR": "ecuga.com",
+    "priceUrl": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Cisto ili velika kocka leda"
+    },
+    "cigarHint": null,
+    "notes": {
+      "hr": "Reposado s vanilijom; Habano.",
+      "en": "A popular, smooth reposado — easy to drink with a medium evening cigar."
+    }
+  },
+  {
+    "id": "tq-casamigos-mezcal",
+    "category": "tequila",
+    "name": "CASAMIGOS MEZCAL",
+    "style": "mezcal",
+    "region": "Oaxaca, Meksiko",
+    "country": "Meksiko",
+    "abv": 40.0,
+    "body": 3,
+    "sweetness": 3,
+    "flavorTags": [
+      "dim",
+      "agava",
+      "zemljano",
+      "papar"
+    ],
+    "qualityScore": 7.8,
+    "priceEUR": {
+      "min": 85.0,
+      "max": 85.0
+    },
+    "priceApprox": false,
+    "shopHR": "ecuga.com",
+    "priceUrl": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 1,
+      "best": "Cisto, sobna temperatura"
+    },
+    "cigarHint": null,
+    "notes": {
+      "hr": "Casamigos — gladak stil uz srednju cigaru.",
+      "en": ""
+    }
+  },
+  {
+    "id": "tq-arte-azul-extra-anejo-100-agave-azul-35-vol-1l",
+    "category": "tequila",
+    "name": "Arte Azul EXTRA AÑEJO 100% Agave Azul 35% Vol. 1l",
+    "style": "extra-anejo",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "abv": 40.0,
+    "body": 5,
+    "sweetness": 4,
+    "flavorTags": [
+      "hrast",
+      "kakao",
+      "vanilija",
+      "suho-voce"
+    ],
+    "qualityScore": 7.7,
+    "priceEUR": null,
+    "priceApprox": true,
+    "shopHR": "allez.hr",
+    "priceUrl": "https://allez.hr/shop/svi-proizvodi/arte-azul-extra-anejo-100-agave-azul-35-vol-1l",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Cisto ili velika kocka leda"
+    },
+    "cigarHint": null,
+    "notes": {
+      "hr": "Sipping tequila (extra-anejo) — čisto uz cigaru po snazi odležavanja.",
+      "en": ""
+    }
+  },
+  {
+    "id": "tq-el-mayor-extra-anejo-tequila-100-agave-40-vol-0-75l",
+    "category": "tequila",
+    "name": "El Mayor Extra Añejo Tequila 100% Agave 40% Vol. 0,75l",
+    "style": "extra-anejo",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "abv": 40.0,
+    "body": 5,
+    "sweetness": 4,
+    "flavorTags": [
+      "hrast",
+      "kakao",
+      "vanilija",
+      "suho-voce"
+    ],
+    "qualityScore": 7.7,
+    "priceEUR": null,
+    "priceApprox": true,
+    "shopHR": "allez.hr",
+    "priceUrl": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Cisto (snifter)"
+    },
+    "cigarHint": null,
+    "notes": {
+      "hr": "Sipping tequila (extra-anejo) — čisto uz cigaru po snazi odležavanja.",
+      "en": ""
+    }
+  },
+  {
+    "id": "tq-el-padrino-tequila-extra-anejo-100-puro-de-agave-40-vol-0-7l",
+    "category": "tequila",
+    "name": "El Padrino Tequila EXTRA AÑEJO 100% Puro de Agave 40% Vol. 0,7l",
+    "style": "extra-anejo",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "abv": 40.0,
+    "body": 5,
+    "sweetness": 4,
+    "flavorTags": [
+      "hrast",
+      "kakao",
+      "vanilija",
+      "suho-voce"
+    ],
+    "qualityScore": 7.7,
+    "priceEUR": null,
+    "priceApprox": true,
+    "shopHR": "allez.hr",
+    "priceUrl": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Cisto ili velika kocka leda"
+    },
+    "cigarHint": null,
+    "notes": {
+      "hr": "Sipping tequila (extra-anejo) — čisto uz cigaru po snazi odležavanja.",
+      "en": ""
+    }
+  },
+  {
+    "id": "tq-gran-cava-de-oro-tequila-extra-anejo-100-de-agave-azul-40-vol-0-7l",
+    "category": "tequila",
+    "name": "Gran Cava de Oro Tequila EXTRA AÑEJO 100% de Agave Azul 40% Vol. 0,7l",
+    "style": "extra-anejo",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "abv": 40.0,
+    "body": 5,
+    "sweetness": 4,
+    "flavorTags": [
+      "hrast",
+      "kakao",
+      "vanilija",
+      "suho-voce"
+    ],
+    "qualityScore": 7.7,
+    "priceEUR": null,
+    "priceApprox": true,
+    "shopHR": "allez.hr",
+    "priceUrl": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Cisto ili velika kocka leda"
+    },
+    "cigarHint": null,
+    "notes": {
+      "hr": "Sipping tequila (extra-anejo) — čisto uz cigaru po snazi odležavanja.",
+      "en": ""
+    }
+  },
+  {
+    "id": "tq-gran-cava-de-oro-tequila-extra-anejo-black-100-de-agave-azul-40-vol-0-7l",
+    "category": "tequila",
+    "name": "Gran Cava de Oro Tequila EXTRA AÑEJO BLACK 100% de Agave Azul 40% Vol. 0,7l",
+    "style": "extra-anejo",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "abv": 40.0,
+    "body": 5,
+    "sweetness": 4,
+    "flavorTags": [
+      "hrast",
+      "kakao",
+      "vanilija",
+      "suho-voce"
+    ],
+    "qualityScore": 7.7,
+    "priceEUR": null,
+    "priceApprox": true,
+    "shopHR": "allez.hr",
+    "priceUrl": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Cisto ili velika kocka leda"
+    },
+    "cigarHint": null,
+    "notes": {
+      "hr": "Sipping tequila (extra-anejo) — čisto uz cigaru po snazi odležavanja.",
+      "en": ""
+    }
+  },
+  {
+    "id": "tq-inicio-tequila-extra-anejo-100-agave-azul-40-vol-0-7l",
+    "category": "tequila",
+    "name": "Inicio Tequila EXTRA AÑEJO 100% Agave Azul 40% Vol. 0,7l",
+    "style": "extra-anejo",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "abv": 40.0,
+    "body": 5,
+    "sweetness": 4,
+    "flavorTags": [
+      "hrast",
+      "kakao",
+      "vanilija",
+      "suho-voce"
+    ],
+    "qualityScore": 7.7,
+    "priceEUR": null,
+    "priceApprox": true,
+    "shopHR": "allez.hr",
+    "priceUrl": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Cisto ili velika kocka leda"
+    },
+    "cigarHint": null,
+    "notes": {
+      "hr": "Sipping tequila (extra-anejo) — čisto uz cigaru po snazi odležavanja.",
+      "en": ""
+    }
+  },
+  {
+    "id": "tq-espolon-blanco",
+    "category": "tequila",
+    "name": "Espolòn Blanco",
+    "style": "blanco",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "abv": 40.0,
+    "body": 2,
+    "sweetness": 2,
+    "flavorTags": [
+      "agava",
+      "citrus",
+      "papar",
+      "biljno"
+    ],
+    "qualityScore": 7.5,
+    "priceEUR": {
+      "min": 28.0,
+      "max": 28.0
+    },
+    "priceApprox": false,
+    "shopHR": "allez.hr",
+    "priceUrl": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Cisto / lagano ohlađeno"
+    },
+    "cigarHint": null,
+    "notes": {
+      "hr": "Pristupačan 100% agave blanco — pošten ulaz za večer s lakšom cigarom.",
+      "en": "An approachable 100% agave blanco — a fair entry for an evening with a lighter cigar."
+    },
+    "status": "META"
+  },
+  {
+    "id": "tq-olmeca-altos-plata",
+    "category": "tequila",
+    "name": "Olmeca Altos Plata",
+    "style": "blanco",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "abv": 40.0,
+    "body": 2,
+    "sweetness": 2,
+    "flavorTags": [
+      "agava",
+      "citrus",
+      "papar",
+      "biljno"
+    ],
+    "qualityScore": 7.4,
+    "priceEUR": {
+      "min": 25.0,
+      "max": 25.0
+    },
+    "priceApprox": false,
+    "shopHR": "retail / allez.hr",
+    "priceUrl": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Cisto / lagano ohlađeno"
+    },
+    "cigarHint": null,
+    "notes": {
+      "hr": "Solidan value 100% agave; Connecticut.",
+      "en": "Budget 100% agave — cleaner than mixto Cuervo lines; for a light pairing or a margarita with a short cigar."
+    },
+    "status": "META"
   }
- },
- {
-  "id": "tq-don-julio-anejo",
-  "category": "tequila",
-  "name": "DON JULIO ANEJO",
-  "style": "anejo",
-  "region": "Jalisco, Meksiko",
-  "country": "Meksiko",
-  "abv": 40.0,
-  "body": 4,
-  "sweetness": 3,
-  "flavorTags": [
-   "hrast",
-   "vanilija",
-   "karamela",
-   "agava"
-  ],
-  "qualityScore": 8.6,
-  "priceEUR": {
-   "min": 69.0,
-   "max": 69.0
-  },
-  "priceApprox": false,
-  "shopHR": "ecuga.com",
-  "priceUrl": "https://allez.hr/shop/svi-proizvodi/don-julio-70-tequila-crystal-claro-anejo-70th-anniversary-limited-edition-35-vol-07l-u-poklon-kutiji",
-  "pairable": true,
-  "serving": {
-   "neat": 3,
-   "rocks": 2,
-   "best": "Cisto (snifter)"
-  },
-  "cigarHint": null,
-  "notes": {
-   "hr": "Vanilija i hrast; maduro ga dobro nosi.",
-   "en": "A sipping añejo — oak and cocoa carry maduro and fuller Habano profiles."
-  }
- },
- {
-  "id": "tq-don-julio-blanco",
-  "category": "tequila",
-  "name": "DON JULIO BLANCO",
-  "style": "blanco",
-  "region": "Jalisco, Meksiko",
-  "country": "Meksiko",
-  "abv": 40.0,
-  "body": 2,
-  "sweetness": 2,
-  "flavorTags": [
-   "agava",
-   "citrus",
-   "papar",
-   "biljno"
-  ],
-  "qualityScore": 8.5,
-  "priceEUR": {
-   "min": 50.0,
-   "max": 50.0
-  },
-  "priceApprox": false,
-  "shopHR": "ecuga.com",
-  "priceUrl": "https://allez.hr/shop/svi-proizvodi/don-julio-tequila-blanco-100-agave-38-vol-07l-u-poklon-kutiji",
-  "pairable": true,
-  "serving": {
-   "neat": 3,
-   "rocks": 2,
-   "best": "Cisto / lagano ohlađeno"
-  },
-  "cigarHint": null,
-  "notes": {
-   "hr": "Referentni sipping blanco — čista agava i citrus uz laganu do srednju cigaru.",
-   "en": "A reference sipping blanco — clean agave and citrus. With a light to medium cigar, not a maduro bomb."
-  }
- },
- {
-  "id": "tq-don-julio-reposado",
-  "category": "tequila",
-  "name": "DON JULIO REPOSADO",
-  "style": "reposado",
-  "region": "Jalisco, Meksiko",
-  "country": "Meksiko",
-  "abv": 40.0,
-  "body": 3,
-  "sweetness": 3,
-  "flavorTags": [
-   "agava",
-   "hrast",
-   "vanilija",
-   "papar"
-  ],
-  "qualityScore": 8.4,
-  "priceEUR": {
-   "min": 65.0,
-   "max": 65.0
-  },
-  "priceApprox": false,
-  "shopHR": "ecuga.com",
-  "priceUrl": "https://allez.hr/shop/svi-proizvodi/don-julio-tequila-reposado-100-agave-38-vol-07l-u-poklon-kutiji",
-  "pairable": true,
-  "serving": {
-   "neat": 3,
-   "rocks": 2,
-   "best": "Cisto ili velika kocka leda"
-  },
-  "cigarHint": null,
-  "notes": {
-   "hr": "Agava + hrast; uravnotežen uz Habano srednje snage.",
-   "en": "A bridge between agave and oak — a classic match with a medium Habano / natural cigar."
-  }
- },
- {
-  "id": "tq-herradura-anejo",
-  "category": "tequila",
-  "name": "HERRADURA ANEJO",
-  "style": "anejo",
-  "region": "Jalisco, Meksiko",
-  "country": "Meksiko",
-  "abv": 40.0,
-  "body": 4,
-  "sweetness": 3,
-  "flavorTags": [
-   "hrast",
-   "vanilija",
-   "karamela",
-   "agava"
-  ],
-  "qualityScore": 8.4,
-  "priceEUR": {
-   "min": 69.0,
-   "max": 69.0
-  },
-  "priceApprox": false,
-  "shopHR": "ecuga.com",
-  "priceUrl": null,
-  "pairable": true,
-  "serving": {
-   "neat": 3,
-   "rocks": 2,
-   "best": "Cisto (snifter)"
-  },
-  "cigarHint": null,
-  "notes": {
-   "hr": "Añejo snaga uz maduro.",
-   "en": ""
-  }
- },
- {
-  "id": "tq-herradura-reposado",
-  "category": "tequila",
-  "name": "HERRADURA REPOSADO",
-  "style": "reposado",
-  "region": "Jalisco, Meksiko",
-  "country": "Meksiko",
-  "abv": 40.0,
-  "body": 3,
-  "sweetness": 3,
-  "flavorTags": [
-   "agava",
-   "hrast",
-   "vanilija",
-   "papar"
-  ],
-  "qualityScore": 8.3,
-  "priceEUR": {
-   "min": 49.0,
-   "max": 49.0
-  },
-  "priceApprox": false,
-  "shopHR": "ecuga.com",
-  "priceUrl": null,
-  "pairable": true,
-  "serving": {
-   "neat": 3,
-   "rocks": 2,
-   "best": "Cisto ili velika kocka leda"
-  },
-  "cigarHint": null,
-  "notes": {
-   "hr": "Klasični reposado; Habano most.",
-   "en": "Longer barrel rest than many reposados — more oak and spice, good with a medium–full cigar."
-  }
- },
- {
-  "id": "tq-codigo-1530-anejo-tequila-38-vol-0-7l-u-poklon-kutiji",
-  "category": "tequila",
-  "name": "Código 1530 AÑEJO Tequila 38% Vol. 0,7l u poklon kutiji",
-  "style": "anejo",
-  "region": "Jalisco, Meksiko",
-  "country": "Meksiko",
-  "abv": 38.0,
-  "body": 3,
-  "sweetness": 3,
-  "flavorTags": [
-   "hrast",
-   "vanilija",
-   "karamela",
-   "agava"
-  ],
-  "qualityScore": 8.2,
-  "priceEUR": null,
-  "priceApprox": true,
-  "shopHR": "allez.hr",
-  "priceUrl": null,
-  "pairable": true,
-  "serving": {
-   "neat": 3,
-   "rocks": 2,
-   "best": "Cisto (snifter)"
-  },
-  "cigarHint": null,
-  "notes": {
-   "hr": "Código — moderni sipping uz Habano.",
-   "en": ""
-  }
- },
- {
-  "id": "tq-codigo-1530-barrel-anejo-tequila-44-vol-0-7l-u-poklon-kutiji",
-  "category": "tequila",
-  "name": "Código 1530 BARREL AÑEJO Tequila 44% Vol. 0,7l u poklon kutiji",
-  "style": "anejo",
-  "region": "Jalisco, Meksiko",
-  "country": "Meksiko",
-  "abv": 44.0,
-  "body": 3,
-  "sweetness": 3,
-  "flavorTags": [
-   "hrast",
-   "vanilija",
-   "karamela",
-   "agava"
-  ],
-  "qualityScore": 8.2,
-  "priceEUR": null,
-  "priceApprox": true,
-  "shopHR": "allez.hr",
-  "priceUrl": null,
-  "pairable": true,
-  "serving": {
-   "neat": 3,
-   "rocks": 2,
-   "best": "Cisto (snifter)"
-  },
-  "cigarHint": null,
-  "notes": {
-   "hr": "Código — moderni sipping uz Habano.",
-   "en": ""
-  }
- },
- {
-  "id": "tq-herradura-blanco",
-  "category": "tequila",
-  "name": "Herradura Blanco",
-  "style": "blanco",
-  "region": "Jalisco, Meksiko",
-  "country": "Meksiko",
-  "abv": 40.0,
-  "body": 3,
-  "sweetness": 2,
-  "flavorTags": [
-   "agava",
-   "citrus",
-   "papar",
-   "biljno"
-  ],
-  "qualityScore": 8.2,
-  "priceEUR": {
-   "min": 45.0,
-   "max": 45.0
-  },
-  "priceApprox": false,
-  "shopHR": "Diskont Fumar / allez.hr",
-  "priceUrl": null,
-  "pairable": true,
-  "serving": {
-   "neat": 3,
-   "rocks": 2,
-   "best": "Cisto / lagano ohlađeno"
-  },
-  "cigarHint": null,
-  "notes": {
-   "hr": "Zemljanija agava; dobro uz srednju cigaru.",
-   "en": "Classic Herradura agave — a touch earthier and pepperier than Don Julio. Good with a medium cigar."
-  },
-  "status": "META"
- },
- {
-  "id": "tq-herradura-tequila-anejo-100-de-agave-40-vol-0-7l-u-poklon-kutiji",
-  "category": "tequila",
-  "name": "Herradura Tequila AÑEJO 100% de Agave 40% Vol. 0,7l u poklon kutiji",
-  "style": "anejo",
-  "region": "Jalisco, Meksiko",
-  "country": "Meksiko",
-  "abv": 40.0,
-  "body": 3,
-  "sweetness": 3,
-  "flavorTags": [
-   "hrast",
-   "vanilija",
-   "karamela",
-   "agava"
-  ],
-  "qualityScore": 8.1,
-  "priceEUR": null,
-  "priceApprox": true,
-  "shopHR": "allez.hr",
-  "priceUrl": null,
-  "pairable": true,
-  "serving": {
-   "neat": 3,
-   "rocks": 2,
-   "best": "Cisto (snifter)"
-  },
-  "cigarHint": null,
-  "notes": {
-   "hr": "Herradura — tradicionalni Jalisco profil.",
-   "en": ""
-  }
- },
- {
-  "id": "tq-herradura-tequila-ultra-anejo-100-de-agave-40-vol-0-7l",
-  "category": "tequila",
-  "name": "Herradura Tequila ULTRA AÑEJO 100% de Agave 40% Vol. 0,7l",
-  "style": "anejo",
-  "region": "Jalisco, Meksiko",
-  "country": "Meksiko",
-  "abv": 40.0,
-  "body": 3,
-  "sweetness": 3,
-  "flavorTags": [
-   "hrast",
-   "vanilija",
-   "karamela",
-   "agava"
-  ],
-  "qualityScore": 8.1,
-  "priceEUR": null,
-  "priceApprox": true,
-  "shopHR": "allez.hr",
-  "priceUrl": null,
-  "pairable": true,
-  "serving": {
-   "neat": 3,
-   "rocks": 2,
-   "best": "Cisto ili velika kocka leda"
-  },
-  "cigarHint": null,
-  "notes": {
-   "hr": "Herradura — tradicionalni Jalisco profil.",
-   "en": ""
-  }
- },
- {
-  "id": "tq-patron-reposado",
-  "category": "tequila",
-  "name": "PATRON REPOSADO",
-  "style": "reposado",
-  "region": "Jalisco, Meksiko",
-  "country": "Meksiko",
-  "abv": 40.0,
-  "body": 3,
-  "sweetness": 3,
-  "flavorTags": [
-   "agava",
-   "hrast",
-   "vanilija",
-   "papar"
-  ],
-  "qualityScore": 8.1,
-  "priceEUR": {
-   "min": 63.0,
-   "max": 63.0
-  },
-  "priceApprox": false,
-  "shopHR": "ecuga.com",
-  "priceUrl": "https://allez.hr/shop/svi-proizvodi/patron-tequila-reposado-40-vol-07l-u-poklon-kutiji",
-  "pairable": true,
-  "serving": {
-   "neat": 3,
-   "rocks": 2,
-   "best": "Cisto ili velika kocka leda"
-  },
-  "cigarHint": null,
-  "notes": {
-   "hr": "Reposado s blagim hrastom; Habano srednje.",
-   "en": "A softer reposado — vanilla and honey with a medium-bodied cigar."
-  }
- },
- {
-  "id": "tq-clase-azul-reposado",
-  "category": "tequila",
-  "name": "Amor Mío Tequila Reposado 100% Agave Azul 40% Vol. 0,7l u poklon kutiji",
-  "style": "reposado",
-  "region": "Jalisco, Meksiko",
-  "country": "Meksiko",
-  "abv": 40.0,
-  "body": 3,
-  "sweetness": 4,
-  "flavorTags": [
-   "agava",
-   "hrast",
-   "vanilija",
-   "papar"
-  ],
-  "qualityScore": 8.0,
-  "priceEUR": {
-   "min": 150.0,
-   "max": 150.0
-  },
-  "priceApprox": false,
-  "shopHR": "allez.hr",
-  "priceUrl": null,
-  "pairable": true,
-  "serving": {
-   "neat": 3,
-   "rocks": 2,
-   "best": "Cisto ili velika kocka leda"
-  },
-  "cigarHint": null,
-  "notes": {
-   "hr": "Prepoznatljiva keramika i slađi reposado profil — dio cijene je boca; uz srednju, ne prejake cigare.",
-   "en": "Distinctive ceramic and a sweeter reposado profile — part of the price is the bottle; with a medium, not overly strong cigar."
-  }
- },
- {
-  "id": "tq-casamigos-anejo",
-  "category": "tequila",
-  "name": "CASAMIGOS ANEJO",
-  "style": "anejo",
-  "region": "Jalisco, Meksiko",
-  "country": "Meksiko",
-  "abv": 40.0,
-  "body": 4,
-  "sweetness": 3,
-  "flavorTags": [
-   "hrast",
-   "vanilija",
-   "karamela",
-   "agava"
-  ],
-  "qualityScore": 8.0,
-  "priceEUR": {
-   "min": 85.0,
-   "max": 85.0
-  },
-  "priceApprox": false,
-  "shopHR": "ecuga.com",
-  "priceUrl": null,
-  "pairable": true,
-  "serving": {
-   "neat": 3,
-   "rocks": 2,
-   "best": "Cisto (snifter)"
-  },
-  "cigarHint": null,
-  "notes": {
-   "hr": "Añejo — desertniji; maduro oprezno.",
-   "en": "A softer, dessert-leaning añejo — easy with a maduro without strain."
-  }
- },
- {
-  "id": "tq-patron-silver",
-  "category": "tequila",
-  "name": "Gran Patron Tequila PLATINUM Silver 100% de Agave 40% Vol. 0,7l u poklon kutiji",
-  "style": "blanco",
-  "region": "Jalisco, Meksiko",
-  "country": "Meksiko",
-  "abv": 40.0,
-  "body": 3,
-  "sweetness": 2,
-  "flavorTags": [
-   "agava",
-   "citrus",
-   "papar",
-   "biljno"
-  ],
-  "qualityScore": 8.0,
-  "priceEUR": {
-   "min": 62.2,
-   "max": 62.2
-  },
-  "priceApprox": false,
-  "shopHR": "allez.hr",
-  "priceUrl": "https://allez.hr/shop/svi-proizvodi/patron-tequila-silver-40-vol-07-l-u-poklon-kutiji",
-  "pairable": true,
-  "serving": {
-   "neat": 3,
-   "rocks": 2,
-   "best": "Cisto / lagano ohlađeno"
-  },
-  "cigarHint": null,
-  "notes": {
-   "hr": "Patrón — premium sipping uz srednju cigaru.",
-   "en": "A smooth premium blanco — a good entry for pairing with Connecticut or a mild Habano."
-  }
- },
- {
-  "id": "tq-patron-anejo",
-  "category": "tequila",
-  "name": "Gran Patrón Tequila BURDEOS Añejo 100% de Agave 40% Vol. 0,7l u drvenoj poklon kutiji",
-  "style": "anejo",
-  "region": "Jalisco, Meksiko",
-  "country": "Meksiko",
-  "abv": 40.0,
-  "body": 3,
-  "sweetness": 2,
-  "flavorTags": [
-   "hrast",
-   "vanilija",
-   "karamela",
-   "agava"
-  ],
-  "qualityScore": 8.0,
-  "priceEUR": {
-   "min": 66.98,
-   "max": 66.98
-  },
-  "priceApprox": false,
-  "shopHR": "allez.hr",
-  "priceUrl": "https://allez.hr/shop/svi-proizvodi/patron-tequila-anejo-40-vol-07l-u-poklon-kutiji",
-  "pairable": true,
-  "serving": {
-   "neat": 3,
-   "rocks": 2,
-   "best": "Cisto (snifter)"
-  },
-  "cigarHint": null,
-  "notes": {
-   "hr": "Patrón — premium sipping uz srednju cigaru.",
-   "en": "A smooth añejo with a nutty tone — with a medium–full evening cigar."
-  }
- },
- {
-  "id": "tq-casamigos-reposado",
-  "category": "tequila",
-  "name": "CASAMIGOS REPOSADO",
-  "style": "reposado",
-  "region": "Jalisco, Meksiko",
-  "country": "Meksiko",
-  "abv": 40.0,
-  "body": 3,
-  "sweetness": 3,
-  "flavorTags": [
-   "agava",
-   "hrast",
-   "vanilija",
-   "papar"
-  ],
-  "qualityScore": 7.9,
-  "priceEUR": {
-   "min": 80.0,
-   "max": 80.0
-  },
-  "priceApprox": false,
-  "shopHR": "ecuga.com",
-  "priceUrl": null,
-  "pairable": true,
-  "serving": {
-   "neat": 3,
-   "rocks": 2,
-   "best": "Cisto ili velika kocka leda"
-  },
-  "cigarHint": null,
-  "notes": {
-   "hr": "Reposado s vanilijom; Habano.",
-   "en": "A popular, smooth reposado — easy to drink with a medium evening cigar."
-  }
- },
- {
-  "id": "tq-casamigos-mezcal",
-  "category": "tequila",
-  "name": "CASAMIGOS MEZCAL",
-  "style": "mezcal",
-  "region": "Oaxaca, Meksiko",
-  "country": "Meksiko",
-  "abv": 40.0,
-  "body": 3,
-  "sweetness": 3,
-  "flavorTags": [
-   "dim",
-   "agava",
-   "zemljano",
-   "papar"
-  ],
-  "qualityScore": 7.8,
-  "priceEUR": {
-   "min": 85.0,
-   "max": 85.0
-  },
-  "priceApprox": false,
-  "shopHR": "ecuga.com",
-  "priceUrl": null,
-  "pairable": true,
-  "serving": {
-   "neat": 3,
-   "rocks": 1,
-   "best": "Cisto, sobna temperatura"
-  },
-  "cigarHint": null,
-  "notes": {
-   "hr": "Casamigos — gladak stil uz srednju cigaru.",
-   "en": ""
-  }
- },
- {
-  "id": "tq-arte-azul-extra-anejo-100-agave-azul-35-vol-1l",
-  "category": "tequila",
-  "name": "Arte Azul EXTRA AÑEJO 100% Agave Azul 35% Vol. 1l",
-  "style": "extra-anejo",
-  "region": "Jalisco, Meksiko",
-  "country": "Meksiko",
-  "abv": 40.0,
-  "body": 5,
-  "sweetness": 4,
-  "flavorTags": [
-   "hrast",
-   "kakao",
-   "vanilija",
-   "suho-voce"
-  ],
-  "qualityScore": 7.7,
-  "priceEUR": null,
-  "priceApprox": true,
-  "shopHR": "allez.hr",
-  "priceUrl": "https://allez.hr/shop/svi-proizvodi/arte-azul-extra-anejo-100-agave-azul-35-vol-1l",
-  "pairable": true,
-  "serving": {
-   "neat": 3,
-   "rocks": 2,
-   "best": "Cisto ili velika kocka leda"
-  },
-  "cigarHint": null,
-  "notes": {
-   "hr": "Sipping tequila (extra-anejo) — čisto uz cigaru po snazi odležavanja.",
-   "en": ""
-  }
- },
- {
-  "id": "tq-el-mayor-extra-anejo-tequila-100-agave-40-vol-0-75l",
-  "category": "tequila",
-  "name": "El Mayor Extra Añejo Tequila 100% Agave 40% Vol. 0,75l",
-  "style": "extra-anejo",
-  "region": "Jalisco, Meksiko",
-  "country": "Meksiko",
-  "abv": 40.0,
-  "body": 5,
-  "sweetness": 4,
-  "flavorTags": [
-   "hrast",
-   "kakao",
-   "vanilija",
-   "suho-voce"
-  ],
-  "qualityScore": 7.7,
-  "priceEUR": null,
-  "priceApprox": true,
-  "shopHR": "allez.hr",
-  "priceUrl": null,
-  "pairable": true,
-  "serving": {
-   "neat": 3,
-   "rocks": 2,
-   "best": "Cisto (snifter)"
-  },
-  "cigarHint": null,
-  "notes": {
-   "hr": "Sipping tequila (extra-anejo) — čisto uz cigaru po snazi odležavanja.",
-   "en": ""
-  }
- },
- {
-  "id": "tq-el-padrino-tequila-extra-anejo-100-puro-de-agave-40-vol-0-7l",
-  "category": "tequila",
-  "name": "El Padrino Tequila EXTRA AÑEJO 100% Puro de Agave 40% Vol. 0,7l",
-  "style": "extra-anejo",
-  "region": "Jalisco, Meksiko",
-  "country": "Meksiko",
-  "abv": 40.0,
-  "body": 5,
-  "sweetness": 4,
-  "flavorTags": [
-   "hrast",
-   "kakao",
-   "vanilija",
-   "suho-voce"
-  ],
-  "qualityScore": 7.7,
-  "priceEUR": null,
-  "priceApprox": true,
-  "shopHR": "allez.hr",
-  "priceUrl": null,
-  "pairable": true,
-  "serving": {
-   "neat": 3,
-   "rocks": 2,
-   "best": "Cisto ili velika kocka leda"
-  },
-  "cigarHint": null,
-  "notes": {
-   "hr": "Sipping tequila (extra-anejo) — čisto uz cigaru po snazi odležavanja.",
-   "en": ""
-  }
- },
- {
-  "id": "tq-gran-cava-de-oro-tequila-extra-anejo-100-de-agave-azul-40-vol-0-7l",
-  "category": "tequila",
-  "name": "Gran Cava de Oro Tequila EXTRA AÑEJO 100% de Agave Azul 40% Vol. 0,7l",
-  "style": "extra-anejo",
-  "region": "Jalisco, Meksiko",
-  "country": "Meksiko",
-  "abv": 40.0,
-  "body": 5,
-  "sweetness": 4,
-  "flavorTags": [
-   "hrast",
-   "kakao",
-   "vanilija",
-   "suho-voce"
-  ],
-  "qualityScore": 7.7,
-  "priceEUR": null,
-  "priceApprox": true,
-  "shopHR": "allez.hr",
-  "priceUrl": null,
-  "pairable": true,
-  "serving": {
-   "neat": 3,
-   "rocks": 2,
-   "best": "Cisto ili velika kocka leda"
-  },
-  "cigarHint": null,
-  "notes": {
-   "hr": "Sipping tequila (extra-anejo) — čisto uz cigaru po snazi odležavanja.",
-   "en": ""
-  }
- },
- {
-  "id": "tq-gran-cava-de-oro-tequila-extra-anejo-black-100-de-agave-azul-40-vol-0-7l",
-  "category": "tequila",
-  "name": "Gran Cava de Oro Tequila EXTRA AÑEJO BLACK 100% de Agave Azul 40% Vol. 0,7l",
-  "style": "extra-anejo",
-  "region": "Jalisco, Meksiko",
-  "country": "Meksiko",
-  "abv": 40.0,
-  "body": 5,
-  "sweetness": 4,
-  "flavorTags": [
-   "hrast",
-   "kakao",
-   "vanilija",
-   "suho-voce"
-  ],
-  "qualityScore": 7.7,
-  "priceEUR": null,
-  "priceApprox": true,
-  "shopHR": "allez.hr",
-  "priceUrl": null,
-  "pairable": true,
-  "serving": {
-   "neat": 3,
-   "rocks": 2,
-   "best": "Cisto ili velika kocka leda"
-  },
-  "cigarHint": null,
-  "notes": {
-   "hr": "Sipping tequila (extra-anejo) — čisto uz cigaru po snazi odležavanja.",
-   "en": ""
-  }
- },
- {
-  "id": "tq-inicio-tequila-extra-anejo-100-agave-azul-40-vol-0-7l",
-  "category": "tequila",
-  "name": "Inicio Tequila EXTRA AÑEJO 100% Agave Azul 40% Vol. 0,7l",
-  "style": "extra-anejo",
-  "region": "Jalisco, Meksiko",
-  "country": "Meksiko",
-  "abv": 40.0,
-  "body": 5,
-  "sweetness": 4,
-  "flavorTags": [
-   "hrast",
-   "kakao",
-   "vanilija",
-   "suho-voce"
-  ],
-  "qualityScore": 7.7,
-  "priceEUR": null,
-  "priceApprox": true,
-  "shopHR": "allez.hr",
-  "priceUrl": null,
-  "pairable": true,
-  "serving": {
-   "neat": 3,
-   "rocks": 2,
-   "best": "Cisto ili velika kocka leda"
-  },
-  "cigarHint": null,
-  "notes": {
-   "hr": "Sipping tequila (extra-anejo) — čisto uz cigaru po snazi odležavanja.",
-   "en": ""
-  }
- },
- {
-  "id": "tq-espolon-blanco",
-  "category": "tequila",
-  "name": "Espolòn Blanco",
-  "style": "blanco",
-  "region": "Jalisco, Meksiko",
-  "country": "Meksiko",
-  "abv": 40.0,
-  "body": 2,
-  "sweetness": 2,
-  "flavorTags": [
-   "agava",
-   "citrus",
-   "papar",
-   "biljno"
-  ],
-  "qualityScore": 7.5,
-  "priceEUR": {
-   "min": 28.0,
-   "max": 28.0
-  },
-  "priceApprox": false,
-  "shopHR": "allez.hr",
-  "priceUrl": null,
-  "pairable": true,
-  "serving": {
-   "neat": 3,
-   "rocks": 2,
-   "best": "Cisto / lagano ohlađeno"
-  },
-  "cigarHint": null,
-  "notes": {
-   "hr": "Pristupačan 100% agave blanco — pošten ulaz za večer s lakšom cigarom.",
-   "en": "An approachable 100% agave blanco — a fair entry for an evening with a lighter cigar."
-  },
-  "status": "META"
- },
- {
-  "id": "tq-olmeca-altos-plata",
-  "category": "tequila",
-  "name": "Olmeca Altos Plata",
-  "style": "blanco",
-  "region": "Jalisco, Meksiko",
-  "country": "Meksiko",
-  "abv": 40.0,
-  "body": 2,
-  "sweetness": 2,
-  "flavorTags": [
-   "agava",
-   "citrus",
-   "papar",
-   "biljno"
-  ],
-  "qualityScore": 7.4,
-  "priceEUR": {
-   "min": 25.0,
-   "max": 25.0
-  },
-  "priceApprox": false,
-  "shopHR": "retail / allez.hr",
-  "priceUrl": null,
-  "pairable": true,
-  "serving": {
-   "neat": 3,
-   "rocks": 2,
-   "best": "Cisto / lagano ohlađeno"
-  },
-  "cigarHint": null,
-  "notes": {
-   "hr": "Solidan value 100% agave; Connecticut.",
-   "en": "Budget 100% agave — cleaner than mixto Cuervo lines; for a light pairing or a margarita with a short cigar."
-  },
-  "status": "META"
- }
 ]
