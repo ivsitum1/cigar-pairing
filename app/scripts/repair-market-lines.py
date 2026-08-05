@@ -54,7 +54,13 @@ BLEND_WORDS = {
     "original", "white", "black", "blue", "red", "green", "gold", "silver",
     "platinum", "reserva", "reserve", "collection", "series", "serie", "cask",
     "barrel", "infused", "sampler", "gift", "pack", "box", "tin", "glastube",
+    "no", "lot", "batch", "serie", "vol",
 }
+
+# "No." bez broja je ostatak nakon sto je broj otisao u vitolu ("Mi Querida
+# Triqui Traca No." + vitole 448/552). Samo taj rep se skida — "Small Batch" i
+# "1926 Serie" su prava imena linija.
+DANGLING_NO = re.compile(r"(?i)^no\.?$")
 
 # Prava imena/oblici vitola — rep koji je jedno od njih je format, ne mjesavina.
 SHAPE_WORDS = {
@@ -188,7 +194,7 @@ def vitola_tail(tokens: list[str]) -> bool:
     """Je li rep (1-2 tokena) ime vitole, a ne druga mjesavina?"""
     if not tokens or len(tokens) > 2:
         return False
-    low = [t.lower() for t in tokens]
+    low = [t.lower().rstrip(".") for t in tokens]
     if len(low) == 1 and sku_size(low[0]):
         return True
     if any(t in BLEND_WORDS or re.fullmatch(r"\d+", t) for t in low):
@@ -234,7 +240,8 @@ def one_pass(cigars: list[dict], merged_log: list[str], renamed_log: list[str],
              alias_add: dict[str, str]) -> list[dict]:
     """Jedan prolaz; vraca preostale zapise. Prazan alias_add prirast = fiksna tocka."""
     targets = [c for c in cigars if c.get("catalogSource") == "market"
-               and (re.match(r"^[a-z0-9]", c["line"]) or parse_size(c["line"])[1])]
+               and (re.match(r"^[a-z0-9]", c["line"]) or parse_size(c["line"])[1]
+                    or re.search(r"(?i)\bno\.?$", c["line"]))]
     bases: dict[str, str] = {}
     sizes: dict[str, tuple[int, int] | None] = {}
     skus: dict[str, str] = {}
@@ -248,6 +255,11 @@ def one_pass(cigars: list[dict], merged_log: list[str], renamed_log: list[str],
             skus[c["id"]] = m.group(1)
 
     keys = group_key(targets, bases)
+    for cid, key in keys.items():
+        toks = key.split()
+        while len(toks) > 1 and DANGLING_NO.match(toks[-1]):
+            toks.pop()
+        keys[cid] = " ".join(toks)
     groups: dict[tuple[str, str], list[dict]] = defaultdict(list)
     display: dict[tuple[str, str], str] = {}
     for c in targets:
@@ -270,6 +282,14 @@ def one_pass(cigars: list[dict], merged_log: list[str], renamed_log: list[str],
 
     for (brand, key), members in sorted(groups.items()):
         line = display[(brand, key)]
+        toks = line.split()
+        while len(toks) > 1 and DANGLING_NO.match(toks[-1]):
+            toks.pop()                   # goli "No." na kraju imena nije podatak
+        if len(toks) == 1 and DANGLING_NO.match(toks[0]):
+            codes = [v["name"] for m in members for v in m["vitolas"]
+                     if sku_size(v["name"])]
+            toks = [f"No. {codes[0]}"] if len(codes) == 1 else toks
+        line = " ".join(toks)
         members = members + by_line.get((brand, line), [])
         orig = [(m["id"], m["line"]) for m in members]   # prije mutacije, za izvjestaj
         # vitola po clanu: rep imena kad postoji, inace vitola koju zapis nosi
