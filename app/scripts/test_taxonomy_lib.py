@@ -101,5 +101,18 @@ class TestShapeFit(unittest.TestCase):
         self.assertIsNone(shape_fits_dims("Not A Vitola", 50, 127))
 
 
+class TestTitleCasePossessive(unittest.TestCase):
+    def test_restores_lost_possessive(self):
+        self.assertEqual(title_case_line("devil s night"), "Devil's Night")
+        self.assertEqual(
+            title_case_line("blue eyed jack s revenge"), "Blue Eyed Jack's Revenge"
+        )
+
+    def test_keeps_serie_s_as_letter_not_possessive(self):
+        # La Gloria Cubana Serie S — "s" is a model letter, not 's
+        self.assertEqual(title_case_line("serie s gordo"), "Serie S Gordo")
+        self.assertEqual(title_case_line("series s robusto"), "Series S Robusto")
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)
