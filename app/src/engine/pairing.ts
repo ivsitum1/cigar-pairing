@@ -7,6 +7,7 @@ import { personalBrandReason, personalStyleReason, type PersonalPrefs } from "./
 import { applyServe } from "./serve";
 import { applyGeometry } from "./vitolaGeometry";
 import { occasionReasons, type Occasion } from "./occasion";
+import { drinkPackagingRank } from "../lib/drinkName";
 
 const clamp = (v: number, lo: number, hi: number) =>
   Math.max(lo, Math.min(hi, v));
@@ -20,7 +21,7 @@ export function scorePairing(
   prefs?: PersonalPrefs,
   serve?: ServeStyle,
   occasion?: Occasion,
-): { score: number; reasons: PairingReason[] } {
+): { score: number; rawScore: number; reasons: PairingReason[] } {
   const reasons: PairingReason[] = [];
   let score = WEIGHTS.base;
 
@@ -276,7 +277,8 @@ export function scorePairing(
   if (geoReason) reasons.push(geoReason);
   if (serveReason) reasons.push(serveReason);
 
-  return { score: clamp(Math.round(score), 0, 100), reasons };
+  // `score` je za prikaz (0–100), `rawScore` za rangiranje. Vidi PairingResult.
+  return { score: clamp(Math.round(score), 0, 100), rawScore: score, reasons };
 }
 
 export function pairDrinksForCigar(
@@ -291,12 +293,14 @@ export function pairDrinksForCigar(
       item,
       ...scorePairing(cigar, item, prefs, undefined, occasion),
     }))
-    // score pada; kod izjednacenih rezultata (npr. gomila spiced rumova na
+    // rawScore pada; kod izjednacenih rezultata (npr. gomila spiced rumova na
     // istom bodu) presuduje kvaliteta pa ime — deterministicki, ne redoslijed
-    // iz JSON-a
+    // iz JSON-a. Sortira se po NEZAOKRUZENOM rezultatu: prikazni je stisnut na
+    // 100, pa bi inace kvaliteta odlucivala umjesto slaganja s cigarom.
     .sort(
       (a, b) =>
-        b.score - a.score ||
+        b.rawScore - a.rawScore ||
+        drinkPackagingRank(a.item) - drinkPackagingRank(b.item) ||
         (b.item.qualityScore ?? 0) - (a.item.qualityScore ?? 0) ||
         a.item.name.localeCompare(b.item.name),
     );
@@ -313,7 +317,7 @@ export function pairCigarsForDrink(
     // kod izjednacenih rezultata deterministicki po imenu (brand + linija)
     .sort(
       (a, b) =>
-        b.score - a.score ||
+        b.rawScore - a.rawScore ||
         `${a.item.brand} ${a.item.line}`.localeCompare(`${b.item.brand} ${b.item.line}`),
     );
 }

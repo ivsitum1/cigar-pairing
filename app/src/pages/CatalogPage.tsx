@@ -32,6 +32,7 @@ import { LineSheet } from "../components/LineSheet";
 import { MarketFilter } from "../components/MarketFilter";
 import { VitolaPicker } from "../components/VitolaPicker";
 import { applyVitola, uniqueVitolas } from "../lib/cigarVitola";
+import { cigarLinePrice } from "../lib/cigarPrice";
 import { cigarItemId } from "../lib/cigarItemId";
 import {
   SHAPE_FAMILIES,
@@ -464,11 +465,10 @@ export function CatalogPage({
 
   const q = query.toLowerCase();
 
-  const cigarPrice = (c: Cigar): number => {
-    const priced = (c.vitolas ?? []).map((v) => v.priceEUR).filter((p): p is number => p != null);
-    if (priced.length) return Math.min(...priced);
-    return c.priceEUR ?? Number.MAX_SAFE_INTEGER;
-  };
+  // sortiranje po cijeni prati isti razrješivač kao prikazana cijena — inače
+  // se "najjeftinije prvo" ne poklapa s brojevima u popisu
+  const cigarPrice = (c: Cigar): number =>
+    cigarLinePrice(c, market).price ?? Number.MAX_SAFE_INTEGER;
 
   const cigars = useMemo(() => {
     if (tab !== "cigars" || browseBrands) return [];

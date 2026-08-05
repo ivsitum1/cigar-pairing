@@ -12,7 +12,7 @@ import {
 type Item = { id: string; brand: string };
 
 function r(id: string, brand: string, score: number): PairingResult<Item> {
-  return { item: { id, brand }, score, reasons: [] };
+  return { item: { id, brand }, score, rawScore: score, reasons: [] };
 }
 
 describe("softBandRank", () => {
@@ -214,5 +214,57 @@ describe("stableBestRotate", () => {
     const out = stableBestRotate([], 0, { keyOf });
     expect(out.pick).toBeUndefined();
     expect(out.total).toBe(0);
+  });
+});
+
+describe("stableBestRotate — sidro među izjednačenima", () => {
+  const tied = (): PairingResult<Item>[] => [
+    r("a", "A", 80),
+    r("b", "B", 80),
+    r("c", "C", 79.8),
+    r("d", "D", 60),
+  ];
+
+  it("bez sidra vraća prvi (staro ponašanje)", () => {
+    expect(stableBestRotate(tied(), 0, { keyOf: (i) => i.brand }).pick!.item.id).toBe("a");
+  });
+
+  it("sa sidrom bira među izjednačenima, deterministički", () => {
+    const picks = new Set<string>();
+    for (const anchor of ["cig-1", "cig-2", "cig-3", "cig-4", "cig-5", "cig-6"]) {
+      const p = stableBestRotate(tied(), 0, { keyOf: (i) => i.brand, anchorId: anchor });
+      picks.add(p.pick!.item.id);
+      // isti anchor -> isti izbor
+      expect(
+        stableBestRotate(tied(), 0, { keyOf: (i) => i.brand, anchorId: anchor }).pick!.item.id,
+      ).toBe(p.pick!.item.id);
+    }
+    expect(picks.size).toBeGreaterThan(1);
+    // nikad ne poseže za rezultatom izvan izjednačene skupine
+    expect(picks.has("d")).toBe(false);
+  });
+
+  it("sidro ne dira jasnog pobjednika", () => {
+    const clear = [r("a", "A", 90), r("b", "B", 80), r("c", "C", 70)];
+    for (const anchor of ["x", "y", "z", "w"]) {
+      expect(
+        stableBestRotate(clear, 0, { keyOf: (i) => i.brand, anchorId: anchor }).pick!.item.id,
+      ).toBe("a");
+    }
+  });
+
+  it("tieKeyOf sažima SKU-ove iste marke prije rotacije", () => {
+    const skus = [r("m1", "Monkey", 80), r("m2", "Monkey", 80), r("p1", "Plymouth", 80)];
+    const picks = new Set<string>();
+    for (const anchor of ["1", "2", "3", "4", "5", "6", "7", "8"]) {
+      picks.add(
+        stableBestRotate(skus, 0, {
+          keyOf: (i) => i.brand,
+          anchorId: anchor,
+          tieKeyOf: (i) => i.brand,
+        }).pick!.item.id,
+      );
+    }
+    expect([...picks].sort()).toEqual(["m1", "p1"]);
   });
 });

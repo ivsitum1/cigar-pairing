@@ -7,6 +7,7 @@ import { useI18n } from "../i18n";
 import { Meter } from "./ui";
 import { BackButton } from "./BackButton";
 import { uniqueVitolas } from "../lib/cigarVitola";
+import { formatEur, vitolaPriceForMarket } from "../lib/cigarPrice";
 import { vitolaBlurb } from "../lib/vitolaInfo";
 import { cigarDescription } from "../lib/cigarNote";
 import { useMarket } from "../store/market";
@@ -96,6 +97,9 @@ export function LineSheet({
           {vitolas.map((v) => {
             const blurb = vitolaBlurb(v.name, lang);
             const shape = v.shape && v.shape !== v.name ? v.shape : null;
+            // isti razrješivač kao popis i kartica — ranije je ovdje stajalo
+            // "provjeri cijenu" za vitolu čiju je cijenu kartica pokazivala
+            const { price, url, approx, region } = vitolaPriceForMarket(v, market);
             return (
               <button
                 key={v.name}
@@ -117,10 +121,14 @@ export function LineSheet({
                   )}
                 </div>
                 <div className="shrink-0 text-right text-xs text-zlato-2">
-                  {v.priceEUR != null ? `${v.priceEUR.toFixed(v.priceEUR % 1 ? 2 : 0)} €` : t("price.check")}
-                  {v.url ? (
+                  {price != null
+                    ? `${approx ? "~" : ""}${formatEur(price)}${
+                        market === "ALL" && region && region !== "HR" ? ` ${region}` : ""
+                      }`
+                    : t("price.check")}
+                  {url ? (
                     <a
-                      href={v.url}
+                      href={url}
                       target="_blank"
                       rel="noreferrer"
                       onClick={(e) => e.stopPropagation()}
