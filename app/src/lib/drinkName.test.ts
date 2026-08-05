@@ -72,15 +72,17 @@ describe("drinkNameLoc — scrape repovi (W4 display map)", () => {
   });
 
   it("varijante istog očišćenog imena ostaju razlučive", () => {
-    const a = drinkNameLoc(byId("br-tariquet-armagnac-vsop-40-vol-0-5l-u-poklon-kutiji"));
-    const b = drinkNameLoc(byId("br-tariquet-armagnac-vsop-40-vol-0-7l-u-poklon-kutiji"));
+    // No. 3 London Dry Gin: standard (0,7 l) vs isti u poklon kutiji sa čašom —
+    // oba imaju isti očišćeni naziv ali različite diskriminatore.
+    const a = drinkNameLoc(byId("gin-no-3-london-dry-gin-46-vol-0-7l"));
+    const b = drinkNameLoc(byId("gin-no-3-london-dry-gin-46-vol-0-7l-u-poklon-kutiji-sa-casom"));
     expect(a.hr).not.toBe(b.hr);
-    expect(a.hr).toMatch(/0,5/);
-    expect(b.hr).toMatch(/0,7/);
+    expect(a.hr).toContain("No. 3 London Dry Gin");
+    expect(b.hr).toMatch(/poklon/i);
   });
 
   it("haystack i dalje sadrži sirovo name (buy-link / pretraga)", () => {
-    const d = byId("br-hennessy-vs-40-vol-0-7l");
+    const d = byId("gin-no-3-london-dry-gin-46-vol-0-7l");
     expect(drinkNameHaystack(d)).toContain(d.name);
     expect(drinkNameHaystack(d)).toContain(drinkNameLoc(d).hr);
   });
