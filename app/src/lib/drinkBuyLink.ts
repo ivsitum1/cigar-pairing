@@ -378,20 +378,29 @@ const KIND_IN_NAME =
   /whisk|rum|gin|tequila|cognac|konjak|armagnac|calvados|brandy|vino|wine|port|sherry|champagne|sampanj|šampanj/i;
 
 /**
- * Google pretraga koja uvijek ima rezultate: BEZ navodnika (fraza pod
- * navodnicima za dugacka imena vrlo cesto vrati nula pogodaka), bez
- * "keyword stuffinga" — samo ocisceno ime + vrsta pica + "cijena".
+ * Ocisceno ime boce za pretragu u trgovini: bez navodnika, zagrada, kosih crta
+ * i postotka alkohola, najvise 7 rijeci (dulje fraze vracaju nula pogodaka).
+ * Bez vrste pica i "cijena" — to je specificno za Google (vidi `drinkSearchHref`).
  */
-export function drinkSearchHref(drink: Drink): string {
-  const words = drink.name
+export function drinkSearchName(drink: Drink): string {
+  return drink.name
     .replace(/['’"]/g, "")
     .replace(/[/|]/g, " ")
     .replace(/\([^)]*\)/g, " ")
     .replace(/\d+\s*%/g, " ")
     .split(/\s+/)
     .filter(Boolean)
-    .slice(0, 7);
-  const parts = [...words];
+    .slice(0, 7)
+    .join(" ");
+}
+
+/**
+ * Google pretraga koja uvijek ima rezultate: BEZ navodnika (fraza pod
+ * navodnicima za dugacka imena vrlo cesto vrati nula pogodaka), bez
+ * "keyword stuffinga" — samo ocisceno ime + vrsta pica + "cijena".
+ */
+export function drinkSearchHref(drink: Drink): string {
+  const parts = drinkSearchName(drink).split(" ").filter(Boolean);
   if (!KIND_IN_NAME.test(drink.name)) {
     parts.push(CATEGORY_HINT[drink.category] ?? "");
   }

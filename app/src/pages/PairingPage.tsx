@@ -28,7 +28,7 @@ import { VitolaPicker } from "../components/VitolaPicker";
 import { applyVitola, needsVitolaPick, uniqueVitolas } from "../lib/cigarVitola";
 import { cigarItemId } from "../lib/cigarItemId";
 import { buildCigarOcrCandidates } from "../lib/ocrCigarCandidates";
-import { drinkBuyLink } from "../lib/drinkBuyLink";
+import { drinkPrimaryLink } from "../lib/drinkShopLinks";
 import { drinkNameLoc, drinkNameHaystack } from "../lib/drinkName";
 import { readJsonStringArray } from "../lib/safeStorage";
 import { useMarket } from "../store/market";
@@ -716,7 +716,7 @@ export function PairingPage() {
                           : ""
                       }`}
                       price={formatPrice(result.item.priceEUR)}
-                      priceUrl={drinkBuyLink(result.item).href}
+                      priceUrl={drinkPrimaryLink(result.item).href}
                       onOpen={() => openDrink(result.item)}
                       onLog={() =>
                         openSession({

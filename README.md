@@ -129,6 +129,14 @@ Kad zatreba sync mobitel ↔ računalo:
   kataloga), inače fallback na pretragu. **„Gdje kupiti”** prikazuje izravni shop link samo kad
   URL izgleda kao stranica *tog* proizvoda; inače „Traži online” (fuzzy match kataloga inače
   često veže krivi SKU ili kategoriju — to je posebno vidljivo u Shopping → Praznine).
+- **Trgovine pićem** (`app/src/data/drinkShops.ts` — jedini izvor istine): potvrđenu stranicu
+  boce ima trećina zapisa (313/963; vino 2/124, rum 42/321), pa detalj boce više ne nudi samo
+  Google. Redoslijed: potvrđena stranica (*izravno*) → HR trgovine s pretragom po nazivu
+  (Tipsy, Cugaklik) → katalozi (allez.hr, ecuga.com, Roto, Vrutak, Vivat) → Wine-Searcher kao
+  svjetski cjenik. Trgovina bez provjerenog endpointa pretrage dobiva link na katalog
+  kategorije — URL se **ne izmišlja**. `shopHR` je urednička napomena, pa se prikazuje kao
+  „orijentir — provjeri zalihu” osim kad ista trgovina ima potvrđenu stranicu proizvoda.
+  Detaljno: **[docs/drink-shops-hr.md](docs/drink-shops-hr.md)**.
 
 ## Whisky indeks (pipeline)
 
