@@ -45,6 +45,7 @@ jobs:
           python scripts/normalize-vitolas.py --check
           python scripts/apply-cigar-descriptions.py --check
           python scripts/derive-drink-brands.py --check
+          python scripts/derive-drink-display-names.py --check
       - name: HR availability reconcile logic
         working-directory: app
         run: python scripts/test_reconcile_hr.py

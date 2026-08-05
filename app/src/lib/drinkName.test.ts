@@ -1,7 +1,10 @@
 import { describe, it, expect } from "vitest";
 import { bottleLabel, drinkNameLoc, drinkNameHaystack } from "./drinkName";
 import { ALL_DRINKS } from "../data";
+import displayNamesJson from "../data/drinkDisplayNames.json";
 import type { Drink } from "../types";
+
+const DISPLAY = (displayNamesJson as { names: Record<string, string> }).names;
 
 const byName = (frag: string): Drink => {
   const d = ALL_DRINKS.find((x) => x.name.includes(frag));
@@ -9,9 +12,15 @@ const byName = (frag: string): Drink => {
   return d;
 };
 
+const byId = (id: string): Drink => {
+  const d = ALL_DRINKS.find((x) => x.id === id);
+  if (!d) throw new Error(`missing drink id ${id}`);
+  return d;
+};
+
 describe("drinkNameLoc — lokalizacija imena pića", () => {
-  it("bez nameLoc: oba jezika padaju na sirovo name", () => {
-    const plain = ALL_DRINKS.find((d) => !d.nameLoc)!;
+  it("bez nameLoc i bez display mape: oba jezika padaju na sirovo name", () => {
+    const plain = ALL_DRINKS.find((d) => !d.nameLoc && !DISPLAY[d.id])!;
     expect(drinkNameLoc(plain)).toEqual({ hr: plain.name, en: plain.name });
   });
 
@@ -20,7 +29,6 @@ describe("drinkNameLoc — lokalizacija imena pića", () => {
     const loc = drinkNameLoc(turska);
     expect(loc.hr).toBe("Turska / domaća kava (džezva)");
     expect(loc.en).toBe("Turkish coffee (džezva)");
-    // vlastiti pojam se ne prevodi
     expect(loc.en).toContain("džezva");
 
     const vijet = byName("Vijetnamska");
@@ -43,6 +51,41 @@ describe("drinkNameLoc — lokalizacija imena pića", () => {
   });
 });
 
+describe("drinkNameLoc — scrape repovi (W4 display map)", () => {
+  const SCRAPE_JUNK = /%\s*Vol|u poklon kutij|&#|\d+[.,]?\d*\s*l\b/i;
+
+  it("nijedno prikazno ime u mapi ne nosi scrape rep", () => {
+    for (const [id, label] of Object.entries(DISPLAY)) {
+      expect(label, id).not.toMatch(/%\s*Vol|u poklon kutij|&#/i);
+    }
+  });
+
+  it("boce sa scrape repom u name dobiju očišćen prikaz", () => {
+    const tailed = ALL_DRINKS.filter((d) => SCRAPE_JUNK.test(d.name) && !d.nameLoc);
+    expect(tailed.length).toBeGreaterThan(0);
+    for (const d of tailed) {
+      const loc = drinkNameLoc(d);
+      expect(loc.hr, d.id).not.toMatch(/%\s*Vol|u poklon kutij|&#/i);
+      // sirovi name ostaje za buy-link
+      expect(d.name).toMatch(SCRAPE_JUNK);
+    }
+  });
+
+  it("varijante istog očišćenog imena ostaju razlučive", () => {
+    const a = drinkNameLoc(byId("br-tariquet-armagnac-vsop-40-vol-0-5l-u-poklon-kutiji"));
+    const b = drinkNameLoc(byId("br-tariquet-armagnac-vsop-40-vol-0-7l-u-poklon-kutiji"));
+    expect(a.hr).not.toBe(b.hr);
+    expect(a.hr).toMatch(/0,5/);
+    expect(b.hr).toMatch(/0,7/);
+  });
+
+  it("haystack i dalje sadrži sirovo name (buy-link / pretraga)", () => {
+    const d = byId("br-hennessy-vs-40-vol-0-7l");
+    expect(drinkNameHaystack(d)).toContain(d.name);
+    expect(drinkNameHaystack(d)).toContain(drinkNameLoc(d).hr);
+  });
+});
+
 // U usporednoj tablici marke ime marke se ponavlja u svakom retku, pa ga
 // kartica skida. Skidanje ne smije proizvesti prazan naziv.
 describe("bottleLabel — naziv boce unutar marke", () => {
@@ -55,9 +98,6 @@ describe("bottleLabel — naziv boce unutar marke", () => {
     expect(bottleLabel("Zacapa", "Zacapa")).toBe("Zacapa");
   });
 
-  // Marka je izvedena iz imena, ali ručne ispravke
-  // (scripts/data/drink_brand_overrides.json) znaju dati marku koja nije
-  // prefiks imena — tada je puno ime jedino smisleno.
   it("ime koje ne počinje markom ostaje cijelo", () => {
     expect(bottleLabel("Tokaji Aszú 5", "Royal Tokaji")).toBe("Tokaji Aszú 5");
   });
