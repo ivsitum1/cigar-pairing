@@ -71,6 +71,8 @@ export const TAG_ALIASES: Record<string, string> = {
   grassy: "travnato",
   herbal: "biljno",
   vegetal: "vegetalno",
+  // botanical / floral notes
+  kamilica: "cvjetno",
 };
 
 export const normalizeTag = (t: string): string => TAG_ALIASES[t] ?? t;
@@ -110,6 +112,8 @@ export const COMPLEMENTS: Record<string, string[]> = {
   agava: ["agava", "citrus", "papar", "biljno", "zemljano", "vanilija"],
   biljno: ["biljno", "agava", "travnato", "citrus", "vegetalno", "trava-slatka", "caj"],
   mlijeko: ["mlijeko", "kremasto", "vanilija", "kakao", "slatko"],
+  // savory/umami notes (coastal whiskies, aged rums) — complement earthy, leathery cigars
+  umami: ["umami", "mineralno", "koza", "zemljano", "duhan"],
 };
 
 // wrapper (regex) -> drink stilovi/tagovi koji mu prirodno pasu
@@ -195,6 +199,7 @@ export const TAG_LABELS: Record<string, LocalizedText> = {
   vegetalno: { hr: "vegetalno", en: "vegetal" },
   vino: { hr: "vino", en: "wine" },
   voce: { hr: "voće", en: "fruit" },
+  umami: { hr: "umami", en: "umami" },
   zacini: { hr: "začini", en: "spices" },
   "zacini-slatki": { hr: "slatki začini", en: "sweet spices" },
   zemljano: { hr: "zemljano", en: "earthy" },
