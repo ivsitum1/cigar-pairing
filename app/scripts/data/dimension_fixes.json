@@ -1432,5 +1432,17 @@
     "lmm": 102,
     "source": "https://havana-cigar-shop.com/proizvod/zino-nicaragua-half-corona-5/",
     "via": "wc-store-api:attributes"
+  },
+  "cig-1502-xo::Lancero": {
+    "ring": 40,
+    "lmm": 178,
+    "source": "https://www.neptunecigar.com/cigars/1502-xo-lancero-7--40",
+    "via": "shop-title:7 x 40"
+  },
+  "cig-1502-xo::Conquistador": {
+    "ring": 56,
+    "lmm": 152,
+    "source": "https://www.neptunecigar.com/cigars/1502-xo-conquistador-6--56",
+    "via": "shop-title:6 x 56"
   }
 }

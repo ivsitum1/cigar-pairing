@@ -336,6 +336,11 @@ export function PairingPage() {
     setPendingCigar(null);
   };
 
+  const openSelectedDetail = () => {
+    if (mode === "cigarToDrink" && selectedCigar) openCigar(selectedCigar);
+    else if (mode === "drinkToCigar" && selectedDrink) openDrink(selectedDrink);
+  };
+
   const pickDrink = (drink: Drink) => {
     setSelectedDrink(drink);
     setServe(undefined);
@@ -610,7 +615,22 @@ export function PairingPage() {
         <>
           <div className="mt-4 rounded-xl border border-zlato/40 bg-cedar p-3">
             <div className="flex items-center justify-between gap-2">
-              <div>
+              {/* cijeli blok otvara karticu odabrane stavke — iz sparivanja se
+                  do podataka o cigari inače nije moglo doći bez povratka u katalog */}
+              <div
+                onClick={openSelectedDetail}
+                role="button"
+                tabIndex={0}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter" || e.key === " ") {
+                    e.preventDefault();
+                    openSelectedDetail();
+                  }
+                }}
+                aria-label={t("pair.openInfo")}
+                title={t("pair.openInfo")}
+                className="min-w-0 cursor-pointer text-left"
+              >
                 <div className="font-display text-base text-papir">
                   {mode === "cigarToDrink"
                     ? `${brandDisplayName((selected as Cigar).brand, market)} ${(selected as Cigar).line}`

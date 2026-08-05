@@ -35,8 +35,12 @@ from taxonomy_lib import (
     normalize_format_string,
     normalize_line_key,
     parse_format,
+    shape_canon_index,
+    shape_fits_dims,
     shape_words,
+    split_bare_dimension_tail,
     split_trailing_dimensions,
+    title_case_line,
     toks,
     write_json,
 )
@@ -159,6 +163,29 @@ def strip_leading_brand_line_tokens(name: str, brand: str, line: str) -> str:
     return " ".join(parts[i:]) if len(parts) >= len(vt) else " ".join(w.title() for w in rest)
 
 
+def _smoke_from_length(length_mm: int) -> int:
+    """Same curve build-market-cigars.py uses when a shop states no burn time."""
+    return max(20, min(120, round(length_mm / 2.6)))
+
+
+def apply_stated_format(cigar: dict, vitola: dict, fmt: str) -> None:
+    """Replace an estimated size with one the shop title actually stated."""
+    ring, lmm = parse_format(fmt)
+    if ring is None or lmm is None:
+        return
+    old_lmm = vitola.get("lengthMM")
+    vitola["format"] = fmt
+    vitola["ring"] = ring
+    vitola["lengthMM"] = lmm
+    # only re-derive the burn estimate that the old length produced; a real
+    # burn time scraped from a shop is not a function of length, so it stays
+    if isinstance(old_lmm, int) and vitola.get("smokeTimeMin") == _smoke_from_length(old_lmm):
+        vitola["smokeTimeMin"] = _smoke_from_length(lmm)
+    cigar["format"] = fmt
+    cigar["smokeTimeMin"] = vitola.get("smokeTimeMin")
+    cigar["formatEstimated"] = False
+
+
 def sort_vitolas(vitolas: list) -> list:
     def key(v):
         ring = v.get("ring")
@@ -186,26 +213,42 @@ def _dims_conflict(a: dict, b: dict) -> bool:
 def auto_pass(cigars: list, report: dict) -> list:
     """Phase 1 deterministic floor (plan §5). Taxonomy remaps override afterward."""
     shapes = shape_words()
+    canon_index = shape_canon_index()
     auto = report.setdefault(
         "auto_pass",
-        {"P1": [], "P2": [], "P3": [], "P4": [], "P5": []},
+        {"P0": [], "P1": [], "P2": [], "P3": [], "P4": [], "P5": []},
     )
 
     # Snapshot raw lines so taxonomy files can still key on pre-auto strings.
     for c in cigars:
         c["_raw_line"] = c.get("line") or ""
 
-    # P1 — strip trailing dimensions from line into vitola.format when missing
+    # P0 — shop imports land lower-cased and de-punctuated; give them back the
+    # casing a product name has. Slug-neutral, so ids and aliases are untouched.
+    for c in cigars:
+        line = c.get("line") or ""
+        cased = title_case_line(line)
+        if cased != line:
+            c["line"] = cased
+            auto["P0"].append({"id": c.get("id"), "from": line, "to": cased})
+
+    # P1 — strip trailing dimensions from line into vitola.format
     for c in cigars:
         line = c.get("line") or ""
         split = split_trailing_dimensions(line)
-        if not split:
+        # `6"1/2 * 52` survives scraping as a bare `61 2 52` run; that tail is a
+        # dimension too, and a truer one than the size the importer guessed.
+        bare = None if split else split_bare_dimension_tail(line)
+        if not (split or bare):
             continue
-        new_line, fmt_hint = split
+        new_line, fmt_hint = split or bare
         c["line"] = new_line
         vitolas = c.get("vitolas") or []
         if len(vitolas) == 1 and format_missing(vitolas[0].get("format")):
             vitolas[0]["format"] = fmt_hint
+        elif bare and len(vitolas) == 1 and c.get("formatEstimated"):
+            # the importer only estimated this size — the title states it
+            apply_stated_format(c, vitolas[0], fmt_hint)
         elif not vitolas:
             c["vitolas"] = [
                 {
@@ -228,10 +271,25 @@ def auto_pass(cigars: list, report: dict) -> list:
         if len(vitolas) != 1:
             continue
         vname = (vitolas[0].get("name") or "").strip().lower()
+        rename_to = None
         if vname != sh and vname != sh.replace(" ", ""):
             # also accept exact last-token equality for multi-word shapes
             if vname != sh.split()[-1]:
-                continue
+                # The importer read a different shape out of the shop title, so
+                # one of the two is wrong. Only the dimensions can say which:
+                # take the line's shape when it fits the size and the recorded
+                # vitola provably does not. Anything less certain is left for
+                # a taxonomy file to decide.
+                ring = vitolas[0].get("ring")
+                lmm = vitolas[0].get("lengthMM")
+                canon_line_shape = canon_index.get(sh)
+                canon_vitola = canon_index.get(vname)
+                if not (
+                    shape_fits_dims(canon_vitola, ring, lmm) is False
+                    and shape_fits_dims(canon_line_shape, ring, lmm) is True
+                ):
+                    continue
+                rename_to = canon_line_shape
         low = line.strip().lower()
         if low == sh:
             continue  # would empty the line
@@ -242,9 +300,18 @@ def auto_pass(cigars: list, report: dict) -> list:
         if not new_line or new_line == line:
             continue
         c["line"] = new_line
-        if not vitolas[0].get("shape"):
+        entry = {"id": c.get("id"), "from": line, "to": new_line, "shape": sh}
+        if rename_to:
+            # keep the shop's own wording as the name ("Salomon"), the lexicon
+            # canon as the shape ("Figurado")
+            stated = line[cut:].strip() or sh.title()
+            entry["vitola"] = {"from": vitolas[0].get("name"), "to": stated}
+            vitolas[0]["name"] = stated
+            vitolas[0]["shape"] = rename_to
+            c["vitola"] = stated
+        elif not vitolas[0].get("shape"):
             vitolas[0]["shape"] = sh.title() if sh.islower() else sh
-        auto["P2"].append({"id": c.get("id"), "from": line, "to": new_line, "shape": sh})
+        auto["P2"].append(entry)
 
     # P3 — collapse lines equal after normalization within each brand
     by_brand: dict[str, list] = {}
