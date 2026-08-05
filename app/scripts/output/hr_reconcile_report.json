@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-07-30T08:18:14.771886+00:00",
-  "snapshot_at": "2026-07-30T08:08:23.660413+00:00",
-  "present_keys": 610,
+  "generated_at": "2026-08-05T21:05:47.454360+00:00",
+  "snapshot_at": "2026-08-05T21:05:45.948468+00:00",
+  "present_keys": 599,
   "removed_count": 3,
-  "added_count": 20,
+  "added_count": 15,
   "hr_without_source": 0,
-  "hr_markets_remaining": 378,
+  "hr_markets_remaining": 401,
   "removed": [
     {
-      "id": "cig-la-aurora-adn",
-      "brand": "La Aurora",
-      "line": "ADN",
+      "id": "cig-camacho-diploma",
+      "brand": "Camacho",
+      "line": "Diploma",
       "previous_availabilityHR": [
         "The Humidor",
         "Havana Shop"
@@ -18,29 +18,15 @@
       "previous_markets": [
         "HR",
         "EU",
-        "WW"
-      ],
-      "reason": "no-snapshot-match"
-    },
-    {
-      "id": "cig-oliva-master-blends-3",
-      "brand": "Oliva",
-      "line": "Master Blends 3",
-      "previous_availabilityHR": [
-        "The Humidor",
-        "Havana Shop"
-      ],
-      "previous_markets": [
-        "HR",
         "USA",
         "WW"
       ],
       "reason": "no-snapshot-match"
     },
     {
-      "id": "cig-perdomo-reserve",
-      "brand": "Perdomo",
-      "line": "Reserve",
+      "id": "cig-rocky-patel-vintage",
+      "brand": "Rocky Patel",
+      "line": "Vintage",
       "previous_availabilityHR": [
         "The Humidor",
         "Havana Shop"
@@ -48,6 +34,22 @@
       "previous_markets": [
         "HR",
         "EU",
+        "USA",
+        "WW"
+      ],
+      "reason": "no-snapshot-match"
+    },
+    {
+      "id": "cig-villa-zamorano-reserva",
+      "brand": "Villa Zamorano",
+      "line": "Reserva",
+      "previous_availabilityHR": [
+        "Havana Shop"
+      ],
+      "previous_markets": [
+        "HR",
+        "EU",
+        "USA",
         "WW"
       ],
       "reason": "no-snapshot-match"
@@ -55,164 +57,123 @@
   ],
   "added": [
     {
-      "id": "cig-a-flores-gran-reserva-corojo",
-      "brand": "A. Flores",
-      "line": "Gran Reserva Corojo",
-      "shops": [
-        "The Humidor"
-      ]
-    },
-    {
-      "id": "cig-a-flores-gran-reserva-desflorado",
-      "brand": "A. Flores",
-      "line": "Gran Reserva Desflorado",
-      "shops": [
-        "The Humidor"
-      ]
-    },
-    {
-      "id": "cig-a-flores-gran-reserva-maduro",
-      "brand": "A. Flores",
-      "line": "Gran Reserva Maduro",
-      "shops": [
-        "The Humidor"
-      ]
-    },
-    {
-      "id": "cig-aganorsa-leaf-signature-selection",
+      "id": "cig-aganorsa-leaf-validacion-connecticut-gran",
       "brand": "Aganorsa Leaf",
-      "line": "Signature Selection",
+      "line": "Validacion Connecticut Gran",
       "shops": [
         "The Humidor"
       ]
     },
     {
-      "id": "cig-aj-fernandez-20th-anniversary",
-      "brand": "AJ Fernandez",
-      "line": "20th Anniversary",
+      "id": "cig-aganorsa-leaf-validacion-corojo-gran",
+      "brand": "Aganorsa Leaf",
+      "line": "Validacion Corojo Gran",
       "shops": [
         "The Humidor"
       ]
     },
     {
-      "id": "cig-cle-corojo",
-      "brand": "CLE",
-      "line": "Corojo",
+      "id": "cig-aganorsa-leaf-validacion-habano-gran",
+      "brand": "Aganorsa Leaf",
+      "line": "Validacion Habano Gran",
       "shops": [
         "The Humidor"
       ]
     },
     {
-      "id": "cig-davidoff-maduro",
-      "brand": "Davidoff",
-      "line": "Maduro",
+      "id": "cig-aganorsa-leaf-validacion-maduro-gran",
+      "brand": "Aganorsa Leaf",
+      "line": "Validacion Maduro Gran",
       "shops": [
-        "Havana Shop",
         "The Humidor"
       ]
     },
     {
-      "id": "cig-davidoff-royal-release-2016",
-      "brand": "Davidoff",
-      "line": "Royal Release 2016",
+      "id": "cig-arturo-fuente-cuban",
+      "brand": "Arturo Fuente",
+      "line": "Cuban",
       "shops": [
         "Havana Shop"
       ]
     },
     {
-      "id": "cig-e-p-carrillo-maduro",
-      "brand": "E.P. Carrillo",
-      "line": "Maduro",
-      "shops": [
-        "Havana Shop"
-      ]
-    },
-    {
-      "id": "cig-flores-y-rodriguez-10th-anniversary",
-      "brand": "Flores y Rodriguez",
-      "line": "y Rodriguez 10th Anniversary",
+      "id": "cig-asylum-867-zero",
+      "brand": "Asylum",
+      "line": "867",
       "shops": [
         "The Humidor"
       ]
     },
     {
-      "id": "cig-joya-de-nicaragua-antano",
-      "brand": "Joya de Nicaragua",
-      "line": "Antaño",
-      "shops": [
-        "Havana Shop"
-      ]
-    },
-    {
-      "id": "cig-joya-de-nicaragua-antano-gran-reserva",
-      "brand": "Joya de Nicaragua",
-      "line": "Antaño Gran Reserva",
-      "shops": [
-        "Havana Shop"
-      ]
-    },
-    {
-      "id": "cig-joya-de-nicaragua-cuatro-cinco",
-      "brand": "Joya de Nicaragua",
-      "line": "Cuatro Cinco",
-      "shops": [
-        "Havana Shop"
-      ]
-    },
-    {
-      "id": "cig-karen-berger-berger-cameroon",
-      "brand": "Karen Berger",
-      "line": "Berger Cameroon",
+      "id": "cig-eiroa-prensado",
+      "brand": "Eiroa",
+      "line": "Prensado",
       "shops": [
         "The Humidor"
       ]
     },
     {
-      "id": "cig-karen-berger-berger-connecticut",
-      "brand": "Karen Berger",
-      "line": "Berger Connecticut",
+      "id": "cig-eiroa-robusto",
+      "brand": "Eiroa",
+      "line": "Robusto",
       "shops": [
         "The Humidor"
       ]
     },
     {
-      "id": "cig-la-galera-1936",
-      "brand": "La Galera",
-      "line": "1936",
+      "id": "cig-eiroa-the-first-20-years-diadema",
+      "brand": "Eiroa",
+      "line": "The First 20 Years",
       "shops": [
         "The Humidor"
       ]
     },
     {
-      "id": "cig-lunatic-maduro",
-      "brand": "Lunatic",
+      "id": "cig-eiroa-toro",
+      "brand": "Eiroa",
+      "line": "Toro",
+      "shops": [
+        "The Humidor"
+      ]
+    },
+    {
+      "id": "cig-flor-de-selva-robusto",
+      "brand": "Flor de Selva",
+      "line": "Robusto",
+      "shops": [
+        "Havana Shop"
+      ]
+    },
+    {
+      "id": "cig-jfr-maduro-super",
+      "brand": "JFR",
       "line": "Maduro",
       "shops": [
         "The Humidor"
       ]
     },
     {
-      "id": "cig-pdr-capa-sun-grown",
-      "brand": "PDR",
-      "line": "Capa Sun Grown",
+      "id": "cig-leaf-by-oscar-connecticut-sixty",
+      "brand": "Leaf by Oscar",
+      "line": "Connecticut Sixty",
       "shops": [
-        "The Humidor"
+        "Havana Shop"
       ]
     },
     {
-      "id": "cig-pdr-value-line-reserve",
-      "brand": "PDR",
-      "line": "Value Line Reserve",
+      "id": "cig-leaf-by-oscar-corojo-sixty",
+      "brand": "Leaf by Oscar",
+      "line": "Corojo Sixty",
       "shops": [
-        "The Humidor"
+        "Havana Shop"
       ]
     },
     {
-      "id": "cig-sobremesa-fino",
-      "brand": "Sobremesa",
-      "line": "Fino",
+      "id": "cig-villa-zamorano-el",
+      "brand": "Villa Zamorano",
+      "line": "El",
       "shops": [
-        "The Humidor"
+        "Havana Shop"
       ]
     }
   ]

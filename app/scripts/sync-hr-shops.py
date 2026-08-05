@@ -24,7 +24,11 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "src" / "data"
 CIGARS_JSON = DATA / "cigars.json"
 
-USER_AGENT = "Mozilla/5.0 (compatible; CigarRumSync/1.0)"
+# Humidor returns 403 for bot-like UAs; use a normal browser string.
+USER_AGENT = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+    "(KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
+)
 FRACTIONS = {"½": 0.5, "¼": 0.25, "¾": 0.75, "⅛": 0.125, "⅜": 0.375, "⅝": 0.625, "⅞": 0.875}
 FRACTION_CHARS = "".join(FRACTIONS)
 
@@ -374,7 +378,9 @@ def make_vitola_entry(row: dict) -> dict:
     }
 
 
-def find_or_create_cigar(cigars: list[dict], brand: str, product_name: str) -> dict:
+def find_or_create_cigar(
+    cigars: list[dict], brand: str, product_name: str, *, create: bool = True
+) -> dict | None:
     cid = detect_line_id(brand, product_name)
     if cid:
         for c in cigars:
@@ -405,6 +411,8 @@ def find_or_create_cigar(cigars: list[dict], brand: str, product_name: str) -> d
             for v in c.get("vitolas") or []:
                 if norm(v.get("name") or "") == vkey:
                     return c
+    if not create:
+        return None
     # novi entry
     new_id = f"cig-{slugify(brand)}-{slugify(line)}"
     if any(c["id"] == new_id for c in cigars):
@@ -519,6 +527,16 @@ def main() -> None:
     if sys.platform == "win32":
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
+    import argparse
+
+    ap = argparse.ArgumentParser()
+    ap.add_argument(
+        "--match-only",
+        action="store_true",
+        help="Update prices/vitolas on existing lines only; never create new cigar entries",
+    )
+    args = ap.parse_args()
+
     print("Dohvat Havana kataloga...", flush=True)
     havana = fetch_havana_catalog()
     print(f"  Havana: {len(havana)} proizvoda", flush=True)
@@ -532,14 +550,21 @@ def main() -> None:
     ))
     cigars = json.loads(CIGARS_JSON.read_text(encoding="utf-8"))
     known_brands = {c["brand"] for c in cigars} | set(BRAND_ALIASES.values())
+    before_count = len(cigars)
 
     touched: set[str] = set()
     added_vitolas = 0
+    unmatched = 0
 
     for row in merged:
         if row["brand"] not in known_brands:
             continue
-        cigar = find_or_create_cigar(cigars, row["brand"], row["name"])
+        cigar = find_or_create_cigar(
+            cigars, row["brand"], row["name"], create=not args.match_only
+        )
+        if cigar is None:
+            unmatched += 1
+            continue
         vit = make_vitola_entry(row)
         before = len(cigar.get("vitolas") or [])
         upsert_vitola(cigar, vit)
@@ -555,7 +580,12 @@ def main() -> None:
         print(f"  {c['brand']} | {c['line']}: {len(c['vitolas'])} vitola", flush=True)
 
     CIGARS_JSON.write_text(json.dumps(cigars, ensure_ascii=False, indent=1), encoding="utf-8")
-    print(f"\nGotovo: +{added_vitolas} vitola, {len(touched)} linija ažurirano.", flush=True)
+    created = len(cigars) - before_count
+    print(
+        f"\nGotovo: +{added_vitolas} vitola, {len(touched)} linija ažurirano"
+        f", +{created} novih linija, {unmatched} bez matcha.",
+        flush=True,
+    )
 
 
 if __name__ == "__main__":
