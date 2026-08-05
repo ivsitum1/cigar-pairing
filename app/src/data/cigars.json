@@ -74485,37 +74485,7 @@
         "priceEUR": 11.3,
         "url": "https://havana-cigar-shop.com/proizvod/davidoff-wsc-belicoso-4/",
         "ring": 46,
-        "lengthMM": 115
-      },
-      {
-        "name": "Robusto",
-        "format": "52 x 140mm",
-        "smokeTimeMin": 50,
-        "priceEUR": null,
-        "url": "https://www.neptunecigar.com/cigars/davidoff-winston-churchill-robusto",
-        "ring": 50,
-        "lengthMM": 127,
-        "regionLinks": {
-          "USA": {
-            "shop": "Neptune Cigar",
-            "url": "https://www.neptunecigar.com/cigars/davidoff-winston-churchill-robusto"
-          }
-        }
-      },
-      {
-        "name": "Toro",
-        "format": "54 x 152mm",
-        "smokeTimeMin": 65,
-        "priceEUR": null,
-        "url": "https://www.neptunecigar.com/cigars/davidoff-winston-churchill-toro",
-        "ring": 52,
-        "lengthMM": 152,
-        "regionLinks": {
-          "USA": {
-            "shop": "Neptune Cigar",
-            "url": "https://www.neptunecigar.com/cigars/davidoff-winston-churchill-toro"
-          }
-        }
+        "lengthMM": 114
       },
       {
         "name": "Churchill",
@@ -74529,6 +74499,36 @@
           "EU": {
             "shop": "La Couronne",
             "url": "https://cigarpassion.ch/en/boutique/cigares-dominicains/davidoff/davidoff-winston-churchill/davidoff-winston-churchill-churchill/"
+          }
+        }
+      },
+      {
+        "name": "Robusto",
+        "format": "52 x 140mm",
+        "smokeTimeMin": 50,
+        "priceEUR": null,
+        "url": "https://www.neptunecigar.com/cigars/davidoff-winston-churchill-robusto",
+        "ring": 52,
+        "lengthMM": 140,
+        "regionLinks": {
+          "USA": {
+            "shop": "Neptune Cigar",
+            "url": "https://www.neptunecigar.com/cigars/davidoff-winston-churchill-robusto"
+          }
+        }
+      },
+      {
+        "name": "Toro",
+        "format": "54 x 152mm",
+        "smokeTimeMin": 65,
+        "priceEUR": null,
+        "url": "https://www.neptunecigar.com/cigars/davidoff-winston-churchill-toro",
+        "ring": 54,
+        "lengthMM": 152,
+        "regionLinks": {
+          "USA": {
+            "shop": "Neptune Cigar",
+            "url": "https://www.neptunecigar.com/cigars/davidoff-winston-churchill-toro"
           }
         }
       }
