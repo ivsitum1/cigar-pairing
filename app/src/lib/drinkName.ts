@@ -44,7 +44,7 @@ export function drinkNameHaystack(d: Drink): string {
 // predloženo pice uz gotovo svaku cigaru samo zato što je abecedno ispalo prvo
 // među izjednačenima.
 const PACKAGING =
-  /u poklon kutij|gift ?box|in giftbox|kiosk set|ritual set|\bwith (?:shaker|glass)\b|sa[  ][cčć]a[sš]om|\d\s*x\s*0[.,]\d/i;
+  /u poklon kutij|gift ?box|in giftbox|kiosk set|ritual set|\bwith (?:shaker|glass)\b|sa[  ][cčć]a[sš]om|\d\s*x\s*0[.,]\d/i;
 
 /** 0 = obična boca, 1 = poklon/višebočno pakiranje. Samo za razrješenje neriješenog. */
 export function drinkPackagingRank(d: Drink): number {
