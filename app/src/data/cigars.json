@@ -149321,8 +149321,8 @@
   {
     "id": "cig-laura-chavin-classic-no-33",
     "brand": "Laura Chavin",
-    "line": "Classic No. 33",
-    "vitola": "Corona",
+    "line": "Classic",
+    "vitola": "No. 33",
     "format": "43 x 142mm",
     "country": "Dominikanska Republika",
     "wrapper": "Ecuador",
@@ -149350,7 +149350,7 @@
     ],
     "vitolas": [
       {
-        "name": "Corona",
+        "name": "No. 33",
         "format": "43 x 142mm",
         "smokeTimeMin": 55,
         "priceEUR": null,
@@ -149364,105 +149364,7 @@
         },
         "ring": 43,
         "lengthMM": 142
-      }
-    ],
-    "regionLinks": {
-      "EU": {
-        "shop": "CigarWorld",
-        "url": "https://www.cigarworld.de/en/zigarren/dominikanische-republik/laura-chavin-classic-no-33-corona-01120_40368",
-        "priceEUR": 17.0
-      }
-    },
-    "formatEstimated": true
-  },
-  {
-    "id": "cig-laura-chavin-classic-no-44",
-    "brand": "Laura Chavin",
-    "line": "Classic No. 44",
-    "vitola": "Belicoso",
-    "format": "51 x 140mm",
-    "country": "Dominikanska Republika",
-    "wrapper": "Ecuador",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
-    ],
-    "profileEstimated": true,
-    "catalogSource": "market",
-    "smokeTimeMin": 54,
-    "priceEUR": null,
-    "priceApprox": false,
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Dominikanska Republika, Ecuador pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Dominican Republic, Ecuador wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
-    },
-    "markets": [
-      "EU",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Belicoso",
-        "format": "51 x 140mm",
-        "smokeTimeMin": 54,
-        "priceEUR": null,
-        "url": null,
-        "regionLinks": {
-          "EU": {
-            "shop": "CigarWorld",
-            "url": "https://www.cigarworld.de/en/zigarren/dominikanische-republik/laura-chavin-classic-no-44-belicoso-01120_40369",
-            "priceEUR": 19.0
-          }
-        },
-        "ring": 51,
-        "lengthMM": 140
-      }
-    ],
-    "regionLinks": {
-      "EU": {
-        "shop": "CigarWorld",
-        "url": "https://www.cigarworld.de/en/zigarren/dominikanische-republik/laura-chavin-classic-no-44-belicoso-01120_40369",
-        "priceEUR": 19.0
-      }
-    },
-    "formatEstimated": true
-  },
-  {
-    "id": "cig-laura-chavin-classic-no-444",
-    "brand": "Laura Chavin",
-    "line": "Classic",
-    "vitola": "444",
-    "format": "44 x 102mm",
-    "country": "Dominikanska Republika",
-    "wrapper": "Ecuador",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
-    ],
-    "profileEstimated": true,
-    "catalogSource": "market",
-    "smokeTimeMin": 39,
-    "priceEUR": null,
-    "priceApprox": false,
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Dominikanska Republika, Ecuador pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Dominican Republic, Ecuador wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
-    },
-    "markets": [
-      "EU",
-      "WW"
-    ],
-    "vitolas": [
+      },
       {
         "name": "444",
         "format": "44 x 102mm",
@@ -149478,6 +149380,70 @@
         },
         "ring": 44,
         "lengthMM": 102
+      },
+      {
+        "name": "No. 66",
+        "format": "48 x 182mm",
+        "smokeTimeMin": 70,
+        "priceEUR": null,
+        "url": null,
+        "regionLinks": {
+          "EU": {
+            "shop": "CigarWorld",
+            "url": "https://www.cigarworld.de/en/zigarren/dominikanische-republik/laura-chavin-classic-no-66-churchill-01120_40371",
+            "priceEUR": 20.0
+          }
+        },
+        "ring": 48,
+        "lengthMM": 182
+      },
+      {
+        "name": "No. 55",
+        "format": "51 x 127mm",
+        "smokeTimeMin": 49,
+        "priceEUR": null,
+        "url": null,
+        "regionLinks": {
+          "EU": {
+            "shop": "CigarWorld",
+            "url": "https://www.cigarworld.de/en/zigarren/dominikanische-republik/laura-chavin-classic-no-55-robusto-01120_40370",
+            "priceEUR": 18.0
+          }
+        },
+        "ring": 51,
+        "lengthMM": 127
+      },
+      {
+        "name": "No. 44",
+        "format": "51 x 140mm",
+        "smokeTimeMin": 54,
+        "priceEUR": null,
+        "url": null,
+        "regionLinks": {
+          "EU": {
+            "shop": "CigarWorld",
+            "url": "https://www.cigarworld.de/en/zigarren/dominikanische-republik/laura-chavin-classic-no-44-belicoso-01120_40369",
+            "priceEUR": 19.0
+          }
+        },
+        "ring": 51,
+        "lengthMM": 140
+      },
+      {
+        "name": "No. 88",
+        "format": "51 x 144mm",
+        "smokeTimeMin": 55,
+        "priceEUR": null,
+        "url": null,
+        "regionLinks": {
+          "EU": {
+            "shop": "CigarWorld",
+            "url": "https://www.cigarworld.de/en/zigarren/dominikanische-republik/laura-chavin-classic-no-88-perfecto-01120_40372",
+            "priceEUR": 17.0
+          }
+        },
+        "ring": 51,
+        "lengthMM": 144
       },
       {
         "name": "555",
@@ -149499,178 +149465,7 @@
     "regionLinks": {
       "EU": {
         "shop": "CigarWorld",
-        "url": "https://www.cigarworld.de/en/zigarren/dominikanische-republik/laura-chavin-classic-no-444-diadema-01120_40374",
-        "priceEUR": 21.0
-      }
-    },
-    "formatEstimated": true
-  },
-  {
-    "id": "cig-laura-chavin-classic-no-55",
-    "brand": "Laura Chavin",
-    "line": "Classic No. 55",
-    "vitola": "Robusto",
-    "format": "51 x 127mm",
-    "country": "Dominikanska Republika",
-    "wrapper": "Ecuador",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
-    ],
-    "profileEstimated": true,
-    "catalogSource": "market",
-    "smokeTimeMin": 49,
-    "priceEUR": null,
-    "priceApprox": false,
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Dominikanska Republika, Ecuador pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Dominican Republic, Ecuador wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
-    },
-    "markets": [
-      "EU",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Robusto",
-        "format": "51 x 127mm",
-        "smokeTimeMin": 49,
-        "priceEUR": null,
-        "url": null,
-        "regionLinks": {
-          "EU": {
-            "shop": "CigarWorld",
-            "url": "https://www.cigarworld.de/en/zigarren/dominikanische-republik/laura-chavin-classic-no-55-robusto-01120_40370",
-            "priceEUR": 18.0
-          }
-        },
-        "ring": 51,
-        "lengthMM": 127
-      }
-    ],
-    "regionLinks": {
-      "EU": {
-        "shop": "CigarWorld",
-        "url": "https://www.cigarworld.de/en/zigarren/dominikanische-republik/laura-chavin-classic-no-55-robusto-01120_40370",
-        "priceEUR": 18.0
-      }
-    },
-    "formatEstimated": true
-  },
-  {
-    "id": "cig-laura-chavin-classic-no-66",
-    "brand": "Laura Chavin",
-    "line": "Classic No. 66",
-    "vitola": "Churchill",
-    "format": "48 x 182mm",
-    "country": "Dominikanska Republika",
-    "wrapper": "Ecuador",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
-    ],
-    "profileEstimated": true,
-    "catalogSource": "market",
-    "smokeTimeMin": 70,
-    "priceEUR": null,
-    "priceApprox": false,
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Dominikanska Republika, Ecuador pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Dominican Republic, Ecuador wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
-    },
-    "markets": [
-      "EU",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Churchill",
-        "format": "48 x 182mm",
-        "smokeTimeMin": 70,
-        "priceEUR": null,
-        "url": null,
-        "regionLinks": {
-          "EU": {
-            "shop": "CigarWorld",
-            "url": "https://www.cigarworld.de/en/zigarren/dominikanische-republik/laura-chavin-classic-no-66-churchill-01120_40371",
-            "priceEUR": 20.0
-          }
-        },
-        "ring": 48,
-        "lengthMM": 182
-      }
-    ],
-    "regionLinks": {
-      "EU": {
-        "shop": "CigarWorld",
-        "url": "https://www.cigarworld.de/en/zigarren/dominikanische-republik/laura-chavin-classic-no-66-churchill-01120_40371",
-        "priceEUR": 20.0
-      }
-    },
-    "formatEstimated": true
-  },
-  {
-    "id": "cig-laura-chavin-classic-no-88",
-    "brand": "Laura Chavin",
-    "line": "Classic No. 88",
-    "vitola": "Perfecto",
-    "format": "51 x 144mm",
-    "country": "Dominikanska Republika",
-    "wrapper": "Ecuador",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
-    ],
-    "profileEstimated": true,
-    "catalogSource": "market",
-    "smokeTimeMin": 55,
-    "priceEUR": null,
-    "priceApprox": false,
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Dominikanska Republika, Ecuador pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Dominican Republic, Ecuador wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
-    },
-    "markets": [
-      "EU",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Perfecto",
-        "format": "51 x 144mm",
-        "smokeTimeMin": 55,
-        "priceEUR": null,
-        "url": null,
-        "regionLinks": {
-          "EU": {
-            "shop": "CigarWorld",
-            "url": "https://www.cigarworld.de/en/zigarren/dominikanische-republik/laura-chavin-classic-no-88-perfecto-01120_40372",
-            "priceEUR": 17.0
-          }
-        },
-        "ring": 51,
-        "lengthMM": 144
-      }
-    ],
-    "regionLinks": {
-      "EU": {
-        "shop": "CigarWorld",
-        "url": "https://www.cigarworld.de/en/zigarren/dominikanische-republik/laura-chavin-classic-no-88-perfecto-01120_40372",
+        "url": "https://www.cigarworld.de/en/zigarren/dominikanische-republik/laura-chavin-classic-no-33-corona-01120_40368",
         "priceEUR": 17.0
       }
     },
@@ -150213,122 +150008,8 @@
   {
     "id": "cig-laura-chavin-virginy-no-1",
     "brand": "Laura Chavin",
-    "line": "Virginy No. 1",
-    "vitola": "Toro",
-    "format": "54 x 152mm",
-    "country": "Dominikanska Republika",
-    "wrapper": "Ecuador",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
-    ],
-    "profileEstimated": true,
-    "catalogSource": "market",
-    "smokeTimeMin": 58,
-    "priceEUR": null,
-    "priceApprox": false,
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Dominikanska Republika, Ecuador pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Dominican Republic, Ecuador wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
-    },
-    "markets": [
-      "EU",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Toro",
-        "format": "54 x 152mm",
-        "smokeTimeMin": 58,
-        "priceEUR": null,
-        "url": null,
-        "regionLinks": {
-          "EU": {
-            "shop": "CigarWorld",
-            "url": "https://www.cigarworld.de/en/zigarren/dominikanische-republik/laura-chavin-virginy-no-1-toro-edition-2020-90015517_40376",
-            "priceEUR": 30.0
-          }
-        },
-        "ring": 54,
-        "lengthMM": 152
-      }
-    ],
-    "regionLinks": {
-      "EU": {
-        "shop": "CigarWorld",
-        "url": "https://www.cigarworld.de/en/zigarren/dominikanische-republik/laura-chavin-virginy-no-1-toro-edition-2020-90015517_40376",
-        "priceEUR": 30.0
-      }
-    },
-    "formatEstimated": true
-  },
-  {
-    "id": "cig-laura-chavin-virginy-no-2",
-    "brand": "Laura Chavin",
-    "line": "Virginy No. 2",
-    "vitola": "Belicoso",
-    "format": "51 x 140mm",
-    "country": "Dominikanska Republika",
-    "wrapper": "Ecuador",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
-    ],
-    "profileEstimated": true,
-    "catalogSource": "market",
-    "smokeTimeMin": 54,
-    "priceEUR": null,
-    "priceApprox": false,
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Dominikanska Republika, Ecuador pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Dominican Republic, Ecuador wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
-    },
-    "markets": [
-      "EU",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Belicoso",
-        "format": "51 x 140mm",
-        "smokeTimeMin": 54,
-        "priceEUR": null,
-        "url": null,
-        "regionLinks": {
-          "EU": {
-            "shop": "CigarWorld",
-            "url": "https://www.cigarworld.de/en/zigarren/dominikanische-republik/laura-chavin-virginy-no-2-belicoso-edition-2020-90015517_43241",
-            "priceEUR": 22.0
-          }
-        },
-        "ring": 51,
-        "lengthMM": 140
-      }
-    ],
-    "regionLinks": {
-      "EU": {
-        "shop": "CigarWorld",
-        "url": "https://www.cigarworld.de/en/zigarren/dominikanische-republik/laura-chavin-virginy-no-2-belicoso-edition-2020-90015517_43241",
-        "priceEUR": 22.0
-      }
-    },
-    "formatEstimated": true
-  },
-  {
-    "id": "cig-laura-chavin-virginy-no-3",
-    "brand": "Laura Chavin",
-    "line": "Virginy No. 3",
-    "vitola": "Lonsdale",
+    "line": "Virginy",
+    "vitola": "No. 3",
     "format": "43 x 164mm",
     "country": "Dominikanska Republika",
     "wrapper": "Ecuador",
@@ -150356,7 +150037,7 @@
     ],
     "vitolas": [
       {
-        "name": "Lonsdale",
+        "name": "No. 3",
         "format": "43 x 164mm",
         "smokeTimeMin": 63,
         "priceEUR": null,
@@ -150370,13 +150051,45 @@
         },
         "ring": 43,
         "lengthMM": 164
+      },
+      {
+        "name": "No. 2",
+        "format": "51 x 140mm",
+        "smokeTimeMin": 54,
+        "priceEUR": null,
+        "url": null,
+        "regionLinks": {
+          "EU": {
+            "shop": "CigarWorld",
+            "url": "https://www.cigarworld.de/en/zigarren/dominikanische-republik/laura-chavin-virginy-no-2-belicoso-edition-2020-90015517_43241",
+            "priceEUR": 22.0
+          }
+        },
+        "ring": 51,
+        "lengthMM": 140
+      },
+      {
+        "name": "No. 1",
+        "format": "54 x 152mm",
+        "smokeTimeMin": 58,
+        "priceEUR": null,
+        "url": null,
+        "regionLinks": {
+          "EU": {
+            "shop": "CigarWorld",
+            "url": "https://www.cigarworld.de/en/zigarren/dominikanische-republik/laura-chavin-virginy-no-1-toro-edition-2020-90015517_40376",
+            "priceEUR": 30.0
+          }
+        },
+        "ring": 54,
+        "lengthMM": 152
       }
     ],
     "regionLinks": {
       "EU": {
         "shop": "CigarWorld",
-        "url": "https://www.cigarworld.de/en/zigarren/dominikanische-republik/laura-chavin-virginy-no-3-lonsdale-edition-2020-90015517_43242",
-        "priceEUR": 28.0
+        "url": "https://www.cigarworld.de/en/zigarren/dominikanische-republik/laura-chavin-virginy-no-1-toro-edition-2020-90015517_40376",
+        "priceEUR": 30.0
       }
     },
     "formatEstimated": true

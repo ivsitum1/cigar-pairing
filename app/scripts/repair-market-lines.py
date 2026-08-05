@@ -62,6 +62,13 @@ BLEND_WORDS = {
 # "1926 Serie" su prava imena linija.
 DANGLING_NO = re.compile(r"(?i)^no\.?$")
 
+# RUCNA IZNIMKA. Kod vecine marki je "No. 3" dio imena linije (La Aroma de Cuba
+# "Edición Especial No. 3"), pa se rep s brojem ne dira. Kod ovih marki je
+# obrnuto — broj je oznaka formata, a linija je ono ispred (Laura Chavin Classic
+# No. 33/44/55/66/88, Virginy No. 1/2/3). Iz podataka se to ne moze razluciti.
+NUMBERED_VITOLA_BRANDS = {"Laura Chavin"}
+NUMBERED_TAIL = re.compile(r"(?i)\bno\.?\s*\d+$")
+
 # Prava imena/oblici vitola — rep koji je jedno od njih je format, ne mjesavina.
 SHAPE_WORDS = {
     "robusto", "robustos", "toro", "toros", "churchill", "churchills", "lancero",
@@ -190,11 +197,13 @@ DANGLING = {"by", "de", "del", "of", "the", "and", "con", "with", "x", "y", "in"
             "from", "for", "la", "el", "las", "los", "du", "di", "da", "no"}
 
 
-def vitola_tail(tokens: list[str]) -> bool:
+def vitola_tail(tokens: list[str], numbered: bool = False) -> bool:
     """Je li rep (1-2 tokena) ime vitole, a ne druga mjesavina?"""
     if not tokens or len(tokens) > 2:
         return False
     low = [t.lower().rstrip(".") for t in tokens]
+    if numbered and len(low) == 2 and low[0] == "no" and re.fullmatch(r"\d+", low[1]):
+        return True                      # samo za NUMBERED_VITOLA_BRANDS
     if len(low) == 1 and sku_size(low[0]):
         return True
     if any(t in BLEND_WORDS or re.fullmatch(r"\d+", t) for t in low):
@@ -216,7 +225,8 @@ def group_key(records: list[dict], bases: dict[str, str]) -> dict[str, str]:
             toks = bases[r["id"]].split()
             support[" ".join(toks)].append((r, []))  # isti base = razlika samo u mjeri
             for cut in (1, 2):
-                if len(toks) > cut and vitola_tail(toks[-cut:]):
+                if len(toks) > cut and vitola_tail(
+                        toks[-cut:], brand in NUMBERED_VITOLA_BRANDS):
                     support[" ".join(toks[:-cut])].append((r, toks[-cut:]))
         taken: set[str] = set()
         for key in sorted(support, key=lambda k: (-len(k.split()), k)):
@@ -241,7 +251,9 @@ def one_pass(cigars: list[dict], merged_log: list[str], renamed_log: list[str],
     """Jedan prolaz; vraca preostale zapise. Prazan alias_add prirast = fiksna tocka."""
     targets = [c for c in cigars if c.get("catalogSource") == "market"
                and (re.match(r"^[a-z0-9]", c["line"]) or parse_size(c["line"])[1]
-                    or re.search(r"(?i)\bno\.?$", c["line"]))]
+                    or re.search(r"(?i)\bno\.?$", c["line"])
+                    or (c["brand"] in NUMBERED_VITOLA_BRANDS
+                        and NUMBERED_TAIL.search(c["line"])))]
     bases: dict[str, str] = {}
     sizes: dict[str, tuple[int, int] | None] = {}
     skus: dict[str, str] = {}
