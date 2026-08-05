@@ -191,23 +191,74 @@ describe("stableBestRotate", () => {
     expect(a.total).toBe(3); // soft band 92–87 keeps A,B,C; D out
   });
 
-  it("cycle advances only within soft band (style/key diverse)", () => {
+  it("prvi krug uzima po jedno iz svakog kljuca, pa ide u dubinu", () => {
     const ranked = [
       r("a1", "Demerara", 90),
-      r("a2", "Demerara", 89), // same key — dropped by diversity
+      r("a2", "Demerara", 89), // isti kljuc — dolazi na red u drugom krugu
       r("b1", "Cuba", 88),
       r("c1", "Agricole", 87),
-      r("d1", "Spiced", 70),
+      r("d1", "Spiced", 70), // izvan pojasa
     ];
-    const c0 = stableBestRotate(ranked, 0, { keyOf });
-    const c1 = stableBestRotate(ranked, 1, { keyOf });
-    const c2 = stableBestRotate(ranked, 2, { keyOf });
-    const c3 = stableBestRotate(ranked, 3, { keyOf }); // wraps
-    expect(c0.pick?.item.id).toBe("a1");
-    expect(c1.pick?.item.id).toBe("b1");
-    expect(c2.pick?.item.id).toBe("c1");
-    expect(c3.pick?.item.id).toBe("a1");
-    expect(c0.pool.map((x) => x.item.id)).toEqual(["a1", "b1", "c1"]);
+    const at = (cycle: number) => stableBestRotate(ranked, cycle, { keyOf });
+    expect(at(0).pick?.item.id).toBe("a1");
+    expect(at(1).pick?.item.id).toBe("b1");
+    expect(at(2).pick?.item.id).toBe("c1");
+    expect(at(3).pick?.item.id).toBe("a2");
+    expect(at(4).pick?.item.id).toBe("a1"); // krug se zatvara
+    expect(at(0).pool.map((x) => x.item.id)).toEqual(["a1", "b1", "c1", "a2"]);
+  });
+
+  it("pojas rezu boce ispod margine kad ih ima dovoljno", () => {
+    const ranked = [
+      r("a1", "A", 90),
+      r("b1", "B", 88),
+      r("c1", "C", 87),
+      r("d1", "D", 60),
+    ];
+    expect(stableBestRotate(ranked, 0, { keyOf }).pool.map((x) => x.item.id)).toEqual([
+      "a1",
+      "b1",
+      "c1",
+    ]);
+  });
+
+  it("usamljen vrh se dopuni ispod margine — gumb uvijek ima ponudu", () => {
+    const ranked = [r("a1", "A", 90), r("b1", "B", 70), r("c1", "C", 65), r("d", "D", 60)];
+    const out = stableBestRotate(ranked, 0, { keyOf });
+    expect(out.pool.map((x) => x.item.id)).toEqual(["a1", "b1", "c1"]);
+    expect(stableBestRotate(ranked, 1, { keyOf }).pick?.item.id).toBe("b1");
+  });
+
+  it("tieSeed rotira medu bodovno izjednacenima na vrhu", () => {
+    // isti profil, isti bodovi — engine ih doista ne razlikuje
+    const ranked = [
+      r("xo1", "XO", 76),
+      r("xo2", "XO", 76),
+      r("xo3", "XO", 76),
+      r("vsop", "VSOP", 74),
+    ];
+    const picks = new Set(
+      ["cig-1|2026-08-05", "cig-2|2026-08-05", "cig-3|2026-08-05"].map(
+        (seed) => stableBestRotate(ranked, 0, { keyOf, tieSeed: seed }).pick?.item.id,
+      ),
+    );
+    expect(picks.size).toBeGreaterThan(1);
+    // isto sjeme → isti izbor (stabilno kroz re-render i kroz dan)
+    const twice = ["a", "a"].map(
+      () =>
+        stableBestRotate(ranked, 0, { keyOf, tieSeed: "cig-1|2026-08-05" }).pick?.item
+          .id,
+    );
+    expect(twice[0]).toBe(twice[1]);
+    // bez sjemena ostaje stari, potpuno stabilan #1
+    expect(stableBestRotate(ranked, 0, { keyOf }).pick?.item.id).toBe("xo1");
+  });
+
+  it("tieSeed ne dira vrh kad izjednacenih nema", () => {
+    const ranked = [r("a", "A", 90), r("b", "B", 88)];
+    expect(
+      stableBestRotate(ranked, 0, { keyOf, tieSeed: "bilo sto" }).pick?.item.id,
+    ).toBe("a");
   });
 
   it("empty ranked yields empty pick", () => {
