@@ -1,28 +1,6 @@
 {
   "locale_twin_merges": [],
-  "semantic_merges": [
-    {
-      "id": "cig-don-pepin-garcia-pepin-garcia-vegas-cubanas",
-      "kept": "Generosos",
-      "dropped": [
-        "Generosos"
-      ]
-    },
-    {
-      "id": "cig-don-pepin-garcia-pepin-garcia-vegas-cubanas",
-      "kept": "Invictos",
-      "dropped": [
-        "Invictos"
-      ]
-    },
-    {
-      "id": "cig-don-pepin-garcia-pepin-garcia-vintage",
-      "kept": "Toro",
-      "dropped": [
-        "Toro"
-      ]
-    }
-  ],
+  "semantic_merges": [],
   "sampler_collapses": [],
   "prefix_suspects": [
     {
@@ -116,6 +94,21 @@
       ]
     },
     {
+      "id": "cig-asylum-pca-exclusive",
+      "brand": "Asylum",
+      "line": "PCA Exclusive",
+      "conflict": [
+        {
+          "name": "Robusto",
+          "format": "50 x 127mm"
+        },
+        {
+          "name": "Robusto",
+          "format": "60 x 152mm"
+        }
+      ]
+    },
+    {
       "id": "cig-cle-connecticut",
       "brand": "CLE",
       "line": "Connecticut",
@@ -199,6 +192,21 @@
         {
           "name": "Gordo",
           "format": "60 x 159mm"
+        }
+      ]
+    },
+    {
+      "id": "cig-don-lino-fumas-connecticut",
+      "brand": "Don Lino",
+      "line": "Fumas Connecticut",
+      "conflict": [
+        {
+          "name": "Robusto",
+          "format": "50 x 124mm"
+        },
+        {
+          "name": "Robusto",
+          "format": "50 x 127mm"
         }
       ]
     },
@@ -308,6 +316,21 @@
       ]
     },
     {
+      "id": "cig-excalibur-excalibur",
+      "brand": "Excalibur",
+      "line": "Excalibur",
+      "conflict": [
+        {
+          "name": "Epicure",
+          "format": "50 x 124mm"
+        },
+        {
+          "name": "Epicure",
+          "format": "50 x 133mm"
+        }
+      ]
+    },
+    {
       "id": "cig-factory-overrun-nicaragua",
       "brand": "Factory Overrun",
       "line": "Nicaragua",
@@ -388,6 +411,25 @@
         {
           "name": "Robusto",
           "format": "50 x 127mm"
+        }
+      ]
+    },
+    {
+      "id": "cig-gurkha-fat-boy",
+      "brand": "Gurkha",
+      "line": "Fat Boy",
+      "conflict": [
+        {
+          "name": "Robusto",
+          "format": "60 x 102mm"
+        },
+        {
+          "name": "Robusto",
+          "format": "66 x 127mm"
+        },
+        {
+          "name": "Robusto",
+          "format": "66 x 152mm"
         }
       ]
     },
@@ -993,15 +1035,7 @@
       ]
     }
   ],
-  "shared_region_urls": [
-    {
-      "url": "https://www.neptunecigar.com/cigars/cusano-18-paired-maduro-churchill",
-      "cigars": [
-        "cig-cusano-18-maduro",
-        "cig-cusano-18-paired-maduro"
-      ]
-    }
-  ],
+  "shared_region_urls": [],
   "duplicate_line_suspects": [
     {
       "brand": "Aganorsa Leaf",
@@ -1030,6 +1064,13 @@
       "id_a": "cig-alec-bradley-project-40",
       "line_b": "Project 40 Maduro",
       "id_b": "cig-alec-bradley-project-40-maduro"
+    },
+    {
+      "brand": "Angel",
+      "line_a": "Cuesta Shade",
+      "id_a": "cig-angel-cuesta-shade",
+      "line_b": "Cuesta Shade Double",
+      "id_b": "cig-angel-cuesta-shade-double"
     },
     {
       "brand": "Argyle",
@@ -1067,11 +1108,53 @@
       "id_b": "cig-asylum-13-connecticut"
     },
     {
+      "brand": "Asylum",
+      "line_a": "Insidious",
+      "id_a": "cig-asylum-insidious",
+      "line_b": "Insidious Short",
+      "id_b": "cig-asylum-insidious-short"
+    },
+    {
+      "brand": "Asylum",
+      "line_a": "PCA Exclusive",
+      "id_a": "cig-asylum-pca-exclusive",
+      "line_b": "PCA Exclusive 11 18",
+      "id_b": "cig-asylum-pca-exclusive-11-18"
+    },
+    {
+      "brand": "Asylum",
+      "line_a": "PCA Exclusive",
+      "id_a": "cig-asylum-pca-exclusive",
+      "line_b": "PCA Exclusive 2023 1118",
+      "id_b": "cig-asylum-pca-exclusive-2023-1118"
+    },
+    {
+      "brand": "Asylum",
+      "line_a": "PCA Exclusive",
+      "id_a": "cig-asylum-pca-exclusive",
+      "line_b": "PCA Exclusive 2025",
+      "id_b": "cig-asylum-pca-exclusive-2025"
+    },
+    {
       "brand": "Balmoral",
       "line_a": "Puro Dominicana",
       "id_a": "cig-balmoral-puro-dominicana",
       "line_b": "Puro Dominicana Masivo",
       "id_b": "cig-balmoral-puro-dominicana-masivo"
+    },
+    {
+      "brand": "Blackbird",
+      "line_a": "Superb",
+      "id_a": "cig-blackbird-superb",
+      "line_b": "Superb Gordo",
+      "id_b": "cig-blackbird-superb-gordo"
+    },
+    {
+      "brand": "Blackbird",
+      "line_a": "Superb",
+      "id_a": "cig-blackbird-superb",
+      "line_b": "Superb Pressed",
+      "id_b": "cig-blackbird-superb-pressed"
     },
     {
       "brand": "Caldwell",
@@ -1117,6 +1200,27 @@
     },
     {
       "brand": "Crowned Heads",
+      "line_a": "Blood Medicine Limited Edition 2025",
+      "id_a": "cig-crowned-heads-blood-medicine-limited-edition-2025",
+      "line_b": "Blood Medicine Limited Edition 2025 B Positive",
+      "id_b": "cig-crowned-heads-blood-medicine-limited-edition-2025-b-positive"
+    },
+    {
+      "brand": "Crowned Heads",
+      "line_a": "Broadway",
+      "id_a": "cig-crowned-heads-broadway",
+      "line_b": "Broadway Epicure",
+      "id_b": "cig-crowned-heads-broadway-epicure"
+    },
+    {
+      "brand": "Crowned Heads",
+      "line_a": "Broadway",
+      "id_a": "cig-crowned-heads-broadway",
+      "line_b": "Broadway Extra",
+      "id_b": "cig-crowned-heads-broadway-extra"
+    },
+    {
+      "brand": "Crowned Heads",
       "line_a": "Four Kicks",
       "id_a": "cig-crowned-heads-four-kicks",
       "line_b": "Four Kicks Mule Kick LE 2022",
@@ -1126,28 +1230,28 @@
       "brand": "Crowned Heads",
       "line_a": "La Imperiosa",
       "id_a": "cig-crowned-heads-la-imperiosa",
-      "line_b": "la imperiosa double",
+      "line_b": "La Imperiosa Double",
       "id_b": "cig-crowned-heads-la-imperiosa-double"
     },
     {
       "brand": "Crowned Heads",
       "line_a": "La Imperiosa",
       "id_a": "cig-crowned-heads-la-imperiosa",
-      "line_b": "la imperiosa dukes",
+      "line_b": "La Imperiosa Dukes",
       "id_b": "cig-crowned-heads-la-imperiosa-dukes"
     },
     {
       "brand": "Crowned Heads",
       "line_a": "La Imperiosa",
       "id_a": "cig-crowned-heads-la-imperiosa",
-      "line_b": "la imperiosa gorda",
+      "line_b": "La Imperiosa Gorda",
       "id_b": "cig-crowned-heads-la-imperiosa-gorda"
     },
     {
       "brand": "Crowned Heads",
       "line_a": "La Imperiosa",
       "id_a": "cig-crowned-heads-la-imperiosa",
-      "line_b": "la imperiosa magicos",
+      "line_b": "La Imperiosa Magicos",
       "id_b": "cig-crowned-heads-la-imperiosa-magicos"
     },
     {
@@ -1156,6 +1260,13 @@
       "id_a": "cig-crowned-heads-mil-dias",
       "line_b": "Mil Dias Des Deux LE 2025",
       "id_b": "cig-crowned-heads-mil-dias-des-deux-le-2025"
+    },
+    {
+      "brand": "Crowned Heads",
+      "line_a": "Moonflower",
+      "id_a": "cig-crowned-heads-moonflower",
+      "line_b": "Moonflower Gorda",
+      "id_b": "cig-crowned-heads-moonflower-gorda"
     },
     {
       "brand": "Davidoff",
@@ -1466,11 +1577,25 @@
       "id_b": "cig-eiroa-classic-colorado"
     },
     {
+      "brand": "Eiroa",
+      "line_a": "Dark 30th Anniversary",
+      "id_a": "cig-eiroa-dark-30th-anniversary",
+      "line_b": "Dark 30th Anniversary 11 18",
+      "id_b": "cig-eiroa-dark-30th-anniversary-11-18"
+    },
+    {
       "brand": "Eladio Diaz",
       "line_a": "La Diana",
       "id_a": "cig-eladio-diaz-la-diana",
       "line_b": "La Diana / Anniversary",
       "id_b": "cig-eladio-diaz-la-diana-anniversary"
+    },
+    {
+      "brand": "Esteban Carreras",
+      "line_a": "Las Canas",
+      "id_a": "cig-esteban-carreras-las-canas",
+      "line_b": "Las Canas Boolit",
+      "id_b": "cig-esteban-carreras-las-canas-boolit"
     },
     {
       "brand": "Flor de Copán",
@@ -1506,6 +1631,13 @@
       "id_a": "cig-gurkha-cellar-reserve-15-years",
       "line_b": "Cellar Reserve 15 Years Limitada",
       "id_b": "cig-gurkha-cellar-reserve-15-years-limitada"
+    },
+    {
+      "brand": "Gurkha",
+      "line_a": "Tres Decadas",
+      "id_a": "cig-gurkha-tres-decadas",
+      "line_b": "Tres Decadas Gran",
+      "id_b": "cig-gurkha-tres-decadas-gran"
     },
     {
       "brand": "Helvada",
@@ -1544,30 +1676,51 @@
     },
     {
       "brand": "JFR",
+      "line_a": "20th Anniversary Maduro Pressed",
+      "id_a": "cig-jfr-20th-anniversary-maduro-pressed",
+      "line_b": "20th Anniversary Maduro Pressed 770",
+      "id_b": "cig-jfr-20th-anniversary-maduro-pressed-770"
+    },
+    {
+      "brand": "JFR",
+      "line_a": "20th Anniversary Maduro Pressed",
+      "id_a": "cig-jfr-20th-anniversary-maduro-pressed",
+      "line_b": "20th Anniversary Maduro Pressed Gordito",
+      "id_b": "cig-jfr-20th-anniversary-maduro-pressed-gordito"
+    },
+    {
+      "brand": "JFR",
+      "line_a": "20th Anniversary Maduro Pressed",
+      "id_a": "cig-jfr-20th-anniversary-maduro-pressed",
+      "line_b": "20th Anniversary Maduro Pressed Titan",
+      "id_b": "cig-jfr-20th-anniversary-maduro-pressed-titan"
+    },
+    {
+      "brand": "JFR",
       "line_a": "Lunatic Maduro",
       "id_a": "cig-jfr-lunatic-maduro",
-      "line_b": "lunatic maduro 10010",
+      "line_b": "Lunatic Maduro 10010",
       "id_b": "cig-jfr-lunatic-maduro-10010"
     },
     {
       "brand": "JFR",
       "line_a": "Lunatic Maduro",
       "id_a": "cig-jfr-lunatic-maduro",
-      "line_b": "lunatic maduro hombre libre 6 54",
-      "id_b": "cig-jfr-lunatic-maduro-hombre-libre-6-54"
+      "line_b": "Lunatic Maduro Hombre Libre",
+      "id_b": "cig-jfr-lunatic-maduro-hombre-libre"
     },
     {
       "brand": "JFR",
       "line_a": "Lunatic Maduro",
       "id_a": "cig-jfr-lunatic-maduro",
-      "line_b": "lunatic maduro la loma",
+      "line_b": "Lunatic Maduro La Loma",
       "id_b": "cig-jfr-lunatic-maduro-la-loma"
     },
     {
       "brand": "JFR",
       "line_a": "Lunatic Maduro",
       "id_a": "cig-jfr-lunatic-maduro",
-      "line_b": "lunatic maduro la montana",
+      "line_b": "Lunatic Maduro La Montana",
       "id_b": "cig-jfr-lunatic-maduro-la-montana"
     },
     {
@@ -1620,6 +1773,13 @@
       "id_b": "cig-la-aurora-107-nicaragua"
     },
     {
+      "brand": "La Aurora",
+      "line_a": "Family Creed Perseverancia",
+      "id_a": "cig-la-aurora-family-creed-perseverancia",
+      "line_b": "Family Creed Perseverancia Gran",
+      "id_b": "cig-la-aurora-family-creed-perseverancia-gran"
+    },
+    {
       "brand": "La Galera",
       "line_a": "1936",
       "id_a": "cig-la-galera-1936",
@@ -1627,11 +1787,81 @@
       "id_b": "cig-la-galera-1936-box-pressed"
     },
     {
+      "brand": "La Gloria Cubana",
+      "line_a": "Intencion",
+      "id_a": "cig-la-gloria-cubana-intencion",
+      "line_b": "Intencion Gran",
+      "id_b": "cig-la-gloria-cubana-intencion-gran"
+    },
+    {
+      "brand": "La Gloria Cubana",
+      "line_a": "Los Gloriosos",
+      "id_a": "cig-la-gloria-cubana-los-gloriosos",
+      "line_b": "Los Gloriosos Grandioso",
+      "id_b": "cig-la-gloria-cubana-los-gloriosos-grandioso"
+    },
+    {
       "brand": "La Instructora",
       "line_a": "Perfection",
       "id_a": "cig-la-instructora-perfection",
       "line_b": "Perfection Extra",
       "id_b": "cig-la-instructora-perfection-extra"
+    },
+    {
+      "brand": "La Palina",
+      "line_a": "Goldie",
+      "id_a": "cig-la-palina-goldie",
+      "line_b": "Goldie Dalia",
+      "id_b": "cig-la-palina-goldie-dalia"
+    },
+    {
+      "brand": "La Palina",
+      "line_a": "Goldie",
+      "id_a": "cig-la-palina-goldie",
+      "line_b": "Goldie Laguito Especial",
+      "id_b": "cig-la-palina-goldie-laguito-especial"
+    },
+    {
+      "brand": "La Palina",
+      "line_a": "Goldie",
+      "id_a": "cig-la-palina-goldie",
+      "line_b": "Goldie Laguito No. 1",
+      "id_b": "cig-la-palina-goldie-laguito-no-1"
+    },
+    {
+      "brand": "La Palina",
+      "line_a": "Goldie",
+      "id_a": "cig-la-palina-goldie",
+      "line_b": "Goldie Laguito No. 2",
+      "id_b": "cig-la-palina-goldie-laguito-no-2"
+    },
+    {
+      "brand": "La Palina",
+      "line_a": "Goldie",
+      "id_a": "cig-la-palina-goldie",
+      "line_b": "Goldie Laguito No. 5",
+      "id_b": "cig-la-palina-goldie-laguito-no-5"
+    },
+    {
+      "brand": "La Palina",
+      "line_a": "Goldie",
+      "id_a": "cig-la-palina-goldie",
+      "line_b": "Goldie Laguito No6",
+      "id_b": "cig-la-palina-goldie-laguito-no6"
+    },
+    {
+      "brand": "La Palina",
+      "line_a": "Goldie",
+      "id_a": "cig-la-palina-goldie",
+      "line_b": "Goldie Prominente",
+      "id_b": "cig-la-palina-goldie-prominente"
+    },
+    {
+      "brand": "La Palina",
+      "line_a": "Goldie",
+      "id_a": "cig-la-palina-goldie",
+      "line_b": "Goldie Tbd",
+      "id_b": "cig-la-palina-goldie-tbd"
     },
     {
       "brand": "Lampert",
@@ -1702,6 +1932,48 @@
       "id_a": "cig-perdomo-20th-anniversary",
       "line_b": "20th Anniversary Maduro",
       "id_b": "cig-perdomo-20th-anniversary-maduro"
+    },
+    {
+      "brand": "Perdomo",
+      "line_a": "Legacy Ecuadorian Connecticut",
+      "id_a": "cig-perdomo-legacy-ecuadorian-connecticut",
+      "line_b": "Legacy Ecuadorian Connecticut Gran",
+      "id_b": "cig-perdomo-legacy-ecuadorian-connecticut-gran"
+    },
+    {
+      "brand": "Perdomo",
+      "line_a": "Legacy Nicaraguan Maduro",
+      "id_a": "cig-perdomo-legacy-nicaraguan-maduro",
+      "line_b": "Legacy Nicaraguan Maduro Gran",
+      "id_b": "cig-perdomo-legacy-nicaraguan-maduro-gran"
+    },
+    {
+      "brand": "Perdomo",
+      "line_a": "Legacy Nicaraguan Shade Grown",
+      "id_a": "cig-perdomo-legacy-nicaraguan-shade-grown",
+      "line_b": "Legacy Nicaraguan Shade Grown Gran",
+      "id_b": "cig-perdomo-legacy-nicaraguan-shade-grown-gran"
+    },
+    {
+      "brand": "Rocky Patel",
+      "line_a": "Sapphire",
+      "id_a": "cig-rocky-patel-sapphire",
+      "line_b": "Sapphire 60",
+      "id_b": "cig-rocky-patel-sapphire-60"
+    },
+    {
+      "brand": "Rocky Patel",
+      "line_a": "Sapphire",
+      "id_a": "cig-rocky-patel-sapphire",
+      "line_b": "Sapphire Gorda",
+      "id_b": "cig-rocky-patel-sapphire-gorda"
+    },
+    {
+      "brand": "Rocky Patel",
+      "line_a": "Thirtieth Anniversary",
+      "id_a": "cig-rocky-patel-thirtieth-anniversary",
+      "line_b": "Thirtieth Anniversary Limited Edition",
+      "id_b": "cig-rocky-patel-thirtieth-anniversary-limited-edition"
     },
     {
       "brand": "Rocky Patel",
@@ -2071,15 +2343,6 @@
       ],
       "line": "Aged Maduro",
       "reason": "Size suffix \"No. 10\" of Aged Maduro; not a separate commercial line.",
-      "status": "already_applied"
-    },
-    {
-      "canonical": "cig-asylum-insidious",
-      "absorbed": [
-        "cig-asylum-insidious-short"
-      ],
-      "line": "Insidious",
-      "reason": "Size suffix \"Short\" of Insidious; not a separate commercial line.",
       "status": "already_applied"
     },
     {
@@ -6587,15 +6850,7 @@
     }
   ],
   "listing_demotions": [],
-  "price_url_scrubs": [
-    {
-      "id": "cig-oliva-serie-v-melanio",
-      "line": "Serie V / Melanio",
-      "was": "https://www.cgarsltd.co.uk/oliva-serie-melanio-gran-reserva-robusto-cigar-single-p-13643.html",
-      "now": "https://havana-cigar-shop.com/proizvod/oliva-serie-v-melanio-figurado-10/",
-      "reason": "URL serie melanio ≠ line serie v"
-    }
-  ],
+  "price_url_scrubs": [],
   "link_fixes": [
     {
       "id": "cig-oliva-serie-v",
