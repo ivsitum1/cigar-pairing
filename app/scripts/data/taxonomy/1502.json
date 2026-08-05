@@ -2,12 +2,13 @@
   "brand": "1502",
   "renameBrand": null,
   "status": "done",
-  "reviewedAt": "2026-07-23",
+  "reviewedAt": "2026-08-05",
   "sources": [
     "https://1502cigars.com/",
     "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
     "phase3_w1_slice5 deterministic remaps",
-    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.1"
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.1",
+    "neptunecigar.com/cigars/1502-xo-* (brand 1502 + line XO; Torpedo/Lancero/Salomon/Conquistador su vitole)"
   ],
   "lines": {
     "Aniversario 10": {
@@ -46,14 +47,26 @@
       "line": "Special Edition Cachito White Connecticut"
     },
     "Special Edition XO Series": {
-      "line": "Special Edition XO Series"
+      "line": "XO"
+    },
+    "XO": {
+      "line": "XO"
+    },
+    "XO Conquistador": {
+      "line": "XO",
+      "vitola": "Conquistador"
+    },
+    "XO Gordo": {
+      "line": "XO",
+      "vitola": "Robusto Gordo",
+      "shape": "Gordo"
     },
     "Xo Conquistador": {
-      "line": "Special Edition XO Series",
+      "line": "XO",
       "vitola": "Conquistador"
     },
     "Xo Perfecto": {
-      "line": "Special Edition XO Series",
+      "line": "XO",
       "vitola": "Perfecto"
     }
   },

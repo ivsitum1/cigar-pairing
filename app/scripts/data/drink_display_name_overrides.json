@@ -1,14 +1,4 @@
 {
   "_comment": "Ručne ispravke prikaznih imena. Ključ = drink id, vrijednost = prikaz. Nadjačava heuristiku u derive-drink-display-names.py.",
-  "names": {
-    "br-choteau-de-laubade-xo": "Château de Laubade XO (alt)",
-    "br-hennessy-vs-40-vol-0-7l": "Hennessy VS 40%",
-    "br-hrvatski-lozovaza-vinjak-craft": "Hrvatski lozovača vinjak (craft, alt)",
-    "gin-aviation-gin-42-0-7-l": "Aviation Gin 42% 0,7 l",
-    "gin-aviation-gin-42-vol-0-7l": "Aviation Gin 42%",
-    "gin-dugave-gin-45-vol-0-7l": "Dugave Gin 45%",
-    "gin-plymouth-gin-41-2-vol-0-7l": "Plymouth Gin 41,2%",
-    "gin-sipsmith-london-dry-gin-41-6-vol-0-7l": "Sipsmith London Dry 41,6%",
-    "wh-elijah-craig-small-batch-kentucky-straight-bourbon-whiskey-47-0-7-l": "Elijah Craig Small Batch 47%"
-  }
+  "names": {}
 }

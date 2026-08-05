@@ -8,17 +8,17 @@ online.
 
 ## Zašto postoji
 
-Katalog ima potvrđen link na stranicu boce za trećinu zapisa (313 od 963) i to
+Katalog ima potvrđen link na stranicu boce za trećinu zapisa (324 od 946) i to
 vrlo neravnomjerno — scrape pokriva allez/ecuga:
 
 | Kategorija | Potvrđena stranica boce |
 |------------|-------------------------|
 | viski | 197 / 275 |
-| digestiv | 12 / 13 |
-| brendi/konjak | 32 / 101 |
-| gin | 20 / 70 |
+| digestiv | 13 / 13 |
+| brendi/konjak | 34 / 90 |
+| gin | 23 / 65 |
 | tequila | 8 / 26 |
-| rum | 42 / 321 |
+| rum | 47 / 320 |
 | vino | 2 / 124 |
 | kava | 0 / 33 |
 

@@ -1,0 +1,118 @@
+[
+  {
+    "id": "cig-davidoff-winston-toro",
+    "action": "fix_line_and_vitola",
+    "line": "Winston Churchill",
+    "vitola": "Toro",
+    "format": "54 x 152mm",
+    "reason": "neptune title/url: Winston Churchill + shape"
+  },
+  {
+    "id": "cig-diesel-vintage-series-gordo",
+    "action": "rename_vitola",
+    "vitola": "Robusto Gordo",
+    "format": "56 x 127mm",
+    "reason": "shop title shape+size (lexicon unknown)"
+  },
+  {
+    "id": "cig-diesel-vintage-series-natural-gordo",
+    "action": "rename_vitola",
+    "vitola": "Robusto Gordo",
+    "format": "56 x 127mm",
+    "reason": "shop title shape+size (lexicon unknown)"
+  },
+  {
+    "id": "cig-eiroa-toro",
+    "action": "rename_vitola",
+    "vitola": "Gran Toro",
+    "format": "60 x 152mm",
+    "reason": "title names Gran Toro; dims fit"
+  },
+  {
+    "id": "cig-el-viejo-continente-5-anos-salomon",
+    "action": "skip",
+    "reason": "no scrape"
+  },
+  {
+    "id": "cig-ferio-tego-timeless-sterling-gordo",
+    "action": "skip",
+    "reason": "no scrape"
+  },
+  {
+    "id": "cig-flor-de-las-antillas-toro",
+    "action": "skip",
+    "reason": "no scrape"
+  },
+  {
+    "id": "cig-gurkha-tyson-20-undisputed-habano-toro",
+    "action": "rename_vitola",
+    "vitola": "Gran Toro",
+    "format": "54 x 152mm",
+    "reason": "title dims fit Gran Toro, not Gordo"
+  },
+  {
+    "id": "cig-gurkha-tyson-20-undisputed-maduro-toro",
+    "action": "rename_vitola",
+    "vitola": "Gran Toro",
+    "format": "54 x 152mm",
+    "reason": "title dims fit Gran Toro, not Gordo"
+  },
+  {
+    "id": "cig-illusione-maduro-toro",
+    "action": "rename_vitola",
+    "vitola": "Gran Toro",
+    "format": "56 x 152mm",
+    "reason": "title dims fit Gran Toro, not Gordo"
+  },
+  {
+    "id": "cig-illusione-mj12-toro",
+    "action": "skip",
+    "reason": "title dims do not fit parsed shape Gordo"
+  },
+  {
+    "id": "cig-la-antiguedad-toro",
+    "action": "rename_vitola",
+    "vitola": "Gran Toro",
+    "format": "60 x 152mm",
+    "reason": "title names Gran Toro; dims fit"
+  },
+  {
+    "id": "cig-la-aurora-puro-vintage-2007-salomon",
+    "action": "skip",
+    "reason": "no scrape"
+  },
+  {
+    "id": "cig-la-gloria-cubana-serie-s-gordo",
+    "action": "skip",
+    "reason": "no scrape"
+  },
+  {
+    "id": "cig-la-rosa-de-sandiego-connecticut-toro",
+    "action": "rename_vitola",
+    "vitola": "Gran Toro",
+    "format": "54 x 152mm",
+    "reason": "title dims fit Gran Toro, not Gordo"
+  },
+  {
+    "id": "cig-my-father-no-6-toro",
+    "action": "rename_vitola",
+    "vitola": "Gran Toro",
+    "format": "60 x 152mm",
+    "reason": "title names Gran Toro; dims fit"
+  },
+  {
+    "id": "cig-saga-blend-no-7-toro",
+    "action": "skip",
+    "reason": "no scrape"
+  },
+  {
+    "id": "cig-el-pulpo-belicoso",
+    "action": "skip",
+    "reason": "no neptune url"
+  },
+  {
+    "id": "cig-el-pulpo-robusto",
+    "action": "skip",
+    "reason": "no neptune url"
+  }
+]

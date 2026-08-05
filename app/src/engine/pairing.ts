@@ -7,9 +7,41 @@ import { personalBrandReason, personalStyleReason, type PersonalPrefs } from "./
 import { applyServe } from "./serve";
 import { applyGeometry } from "./vitolaGeometry";
 import { occasionReasons, type Occasion } from "./occasion";
+import { drinkPackagingRank } from "../lib/drinkName";
 
-const clamp = (v: number, lo: number, hi: number) =>
-  Math.max(lo, Math.min(hi, v));
+/**
+ * Zbroj pravila prirodno ide od oko −12 do oko 119 (izmjereno na cijelom
+ * katalogu; teoretski jos sire). Prije se rezao na 0–100, pa su se vrhovi
+ * ljestvice slijepili na 100 i prikaz je gubio razliku bas ondje gdje je
+ * korisnik gleda.
+ *
+ * Umjesto rezanja, repovi se GLATKO stisnu:
+ *   - ispod 85 i iznad 10 prikaz je jednak zbroju (identiteta),
+ *   - iznad 85 se asimptotski priblizava 100,
+ *   - ispod 10 se asimptotski priblizava 0.
+ *
+ * Nagib je na oba koljena tocno 1, pa nema skoka; funkcija je strogo rastuca
+ * pa poredak ostaje isti. Vazno: SVI pragovi u appu (kurirano misljenje 80/45,
+ * ScoreBand 75/55, verdikti 82/68/52/38) su ispod 85, pa im se znacenje ne
+ * mijenja — 60 % i dalje znaci isto sto je znacilo.
+ *
+ * Normalizacija je namjerno FIKSNA funkcija bodova, a ne min-max unutar
+ * trenutne liste: isti par mora dati isti postotak bez obzira na to s cim je
+ * prikazan.
+ */
+const TOP_KNEE = 85;
+const LOW_KNEE = 10;
+
+export function displayScore(raw: number): number {
+  if (raw > TOP_KNEE) {
+    const span = 100 - TOP_KNEE;
+    return TOP_KNEE + span * (1 - Math.exp(-(raw - TOP_KNEE) / span));
+  }
+  if (raw < LOW_KNEE) {
+    return LOW_KNEE * Math.exp((raw - LOW_KNEE) / LOW_KNEE);
+  }
+  return raw;
+}
 
 const BODY_LABEL_HR = ["", "vrlo lagano", "lagano", "srednje", "puno", "vrlo puno"];
 const BODY_LABEL_EN = ["", "very light", "light", "medium", "full", "very full"];
@@ -20,7 +52,7 @@ export function scorePairing(
   prefs?: PersonalPrefs,
   serve?: ServeStyle,
   occasion?: Occasion,
-): { score: number; reasons: PairingReason[] } {
+): { score: number; rawScore: number; reasons: PairingReason[] } {
   const reasons: PairingReason[] = [];
   let score = WEIGHTS.base;
 
@@ -276,7 +308,8 @@ export function scorePairing(
   if (geoReason) reasons.push(geoReason);
   if (serveReason) reasons.push(serveReason);
 
-  return { score: clamp(Math.round(score), 0, 100), reasons };
+  // `score` je za prikaz (0–100, glatko stisnut), `rawScore` za rangiranje.
+  return { score: Math.round(displayScore(score)), rawScore: score, reasons };
 }
 
 export function pairDrinksForCigar(
@@ -291,12 +324,14 @@ export function pairDrinksForCigar(
       item,
       ...scorePairing(cigar, item, prefs, undefined, occasion),
     }))
-    // score pada; kod izjednacenih rezultata (npr. gomila spiced rumova na
+    // rawScore pada; kod izjednacenih rezultata (npr. gomila spiced rumova na
     // istom bodu) presuduje kvaliteta pa ime — deterministicki, ne redoslijed
-    // iz JSON-a
+    // iz JSON-a. Sortira se po NEZAOKRUZENOM rezultatu: prikazni je stisnut na
+    // 100, pa bi inace kvaliteta odlucivala umjesto slaganja s cigarom.
     .sort(
       (a, b) =>
-        b.score - a.score ||
+        b.rawScore - a.rawScore ||
+        drinkPackagingRank(a.item) - drinkPackagingRank(b.item) ||
         (b.item.qualityScore ?? 0) - (a.item.qualityScore ?? 0) ||
         a.item.name.localeCompare(b.item.name),
     );
@@ -313,7 +348,7 @@ export function pairCigarsForDrink(
     // kod izjednacenih rezultata deterministicki po imenu (brand + linija)
     .sort(
       (a, b) =>
-        b.score - a.score ||
+        b.rawScore - a.rawScore ||
         `${a.item.brand} ${a.item.line}`.localeCompare(`${b.item.brand} ${b.item.line}`),
     );
 }

@@ -162,6 +162,7 @@ const STRINGS = {
   "pair.pickDrink": { hr: "Odaberi piće", en: "Pick a drink" },
   "pair.search": { hr: "Pretraži…", en: "Search…" },
   "pair.why": { hr: "Zašto paše", en: "Why it works" },
+  "pair.openInfo": { hr: "Otvori podatke", en: "Open details" },
   "pair.match": { hr: "slaganje", en: "match" },
   "pair.onlyMine": { hr: "Samo moja kolekcija", en: "My collection only" },
   "pair.drinkTypeAll": { hr: "Sva pića", en: "All drinks" },
@@ -169,6 +170,10 @@ const STRINGS = {
   "pair.excelHint": { hr: "Urednička preporuka", en: "Curated recommendation" },
   "pair.curatedWarn": { hr: "Uredničko upozorenje", en: "Curated warning" },
   "pair.suggestions": { hr: "Prijedlozi", en: "Suggestions" },
+  "pair.noFlavorProfile": {
+    hr: "Za ovu cigaru nemamo profil okusa — prijedlozi su izvedeni samo iz tijela i snage, pa se među sličnim cigarama ponavljaju.",
+    en: "We have no flavour profile for this cigar — suggestions come from body and strength alone, so similar cigars get similar picks.",
+  },
   "pair.next": { hr: "Sljedeći prijedlog", en: "Next suggestion" },
   "pair.coffeeAlt": { hr: "Bezalkoholna opcija — kava", en: "Non-alcoholic option — coffee" },
   "session.log": { hr: "Zabilježi večer", en: "Log the evening" },
@@ -289,6 +294,14 @@ const STRINGS = {
   "price.marketNote": {
     hr: "Cijena vrijedi za odabrano tržište. Za druga tržišta koristi gumbe za kupnju.",
     en: "Price applies to the selected market. For other markets use the buy buttons.",
+  },
+  "price.snapshotNote": {
+    hr: "Cijena preuzeta {date}.",
+    en: "Price as of {date}.",
+  },
+  "price.staleNote": {
+    hr: "Cijena je starija od 3 mjeseca — provjeri u trgovini.",
+    en: "Price is older than 3 months — verify with the shop.",
   },
   "rate.qualityWhat": {
     hr: "Neovisna procjena kvalitete (1–10) unutar vlastitog stila — agregat javnih ocjena i recenzija. Dodaci se ne kažnjavaju u ocjeni, nego se zasebno deklariraju.",

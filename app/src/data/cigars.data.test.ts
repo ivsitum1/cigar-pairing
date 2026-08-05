@@ -131,12 +131,16 @@ describe("cigars.json integrity", () => {
     expect(serieG!.vitola.toLowerCase()).toBe("special g");
   });
 
-  it("Arturo Fuente Gran Reserva — zadana vitola, ~12 €, Cuban Corona na Humidoru", () => {
+  it("Arturo Fuente Gran Reserva — cijena linije je NAJNIŽA vitola, Cuban Corona na Humidoru", () => {
     const gr = CIGARS.find((c) => c.id === "cig-arturo-fuente-gran-reserva");
     expect(gr).toBeDefined();
+    // "od X €" mora značiti da je X stvarno najniža cijena u liniji
     const mp = cigarPriceForMarket(gr!, "HR");
-    expect(mp.price).toBeGreaterThanOrEqual(12);
-    expect(mp.price).toBeLessThanOrEqual(13);
+    const priced = (gr!.vitolas ?? [])
+      .map((v) => v.priceEUR)
+      .filter((p): p is number => p != null);
+    expect(mp.price).toBe(Math.min(...priced));
+    expect(mp.fromMany).toBe(true);
     const link = cigarLinkForMarket(gr!, "HR");
     expect(link).toContain("arturo-fuente-cuban-corona");
     expect(link).toContain("humidor.hr");
@@ -354,11 +358,12 @@ describe("cigars.json integrity", () => {
     expect(cigarLinkForMarket(gr, "ALL")).toContain("humidor.hr");
   });
 
-  it("HR buy gumb ne koristi regionLinks.HR kad se razlikuje od zadane vitole", () => {
-    // Blend 15: regionLinks.HR = Short Robusto 5.9, zadana = Robusto 6.3
+  it("HR buy gumb pokazuje cijenu vitole na koju vodi, ne regionLinks.HR", () => {
+    // Blend 15: vitole 5.9 / 6.3 / 6.7; regionLinks.HR = Short Robusto 5.9,
+    // a gumb Humidora vodi na Robusto — cijena uz gumb mora biti Robustova.
     const blend = CIGARS.find((c) => c.id === "cig-aj-fernandez-blend-15")!;
     expect(blend.regionLinks?.HR?.priceEUR).toBe(5.9);
-    expect(cigarPriceForMarket(blend, "HR").price).toBe(6.3);
+    expect(cigarPriceForMarket(blend, "HR").price).toBe(5.9); // "od" = najniža
     const humidor = cigarShopLinks(blend).find((l) => l.shop === "The Humidor");
     expect(humidor?.exact).toBe(true);
     expect(humidor?.url).toContain("blend-15-robusto");
@@ -377,14 +382,15 @@ describe("cigars.json integrity", () => {
     expect(cigarShopLinkPrice(esc, havana!).price).toBe(20.2);
   });
 
-  it("HR exact link ne pada na vitolu s drugom cijenom (Cubanitos ≠ Gran Reserva)", () => {
+  it("HR exact link i cijena uz njega opisuju ISTU vitolu (Gran Reserva)", () => {
     const gr = CIGARS.find((c) => c.id === "cig-arturo-fuente-gran-reserva")!;
     const havana = cigarShopLinks(gr).find((l) => l.shop === "Havana Cigar Shop");
-    // smije biti Corona (12.3 € = zadana cijena), ne Cubanitos (5 €)
     expect(havana?.exact).toBe(true);
-    expect(havana?.url ?? "").toContain("cuban-corona");
-    expect(havana?.url ?? "").not.toContain("cubanitos");
-    expect(cigarShopLinkPrice(gr, havana!).price).toBe(12.3);
+    // link vodi na najjeftiniju vitolu (Cubanitos 5 €) — a cijena uz gumb je
+    // upravo njena, ne cijena neke druge vitole iste linije
+    const linked = (gr.vitolas ?? []).find((v) => v.url === havana!.url);
+    expect(linked?.priceEUR).toBeDefined();
+    expect(cigarShopLinkPrice(gr, havana!).price).toBe(linked!.priceEUR);
   });
 
   it("HR exact buy cijena = cijena vitole na koju URL vodi", () => {

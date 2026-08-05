@@ -19,21 +19,30 @@ Standard commands are defined in `app/package.json` and mirrored by `.github/wor
 - Dev server: `npm run dev` (Vite, defaults to port 5173)
 
 ### CI gates (all blocking — `ci.yml` runs on pushes to `master` and on PRs)
-Beyond `tsc` / `npm test` / `npm run build`, five Python gates guard the catalog. They are **read-only** — they never write to `scripts/output/`:
+Beyond `tsc` / `npm test` / `npm run build`, six Python gates guard the catalog. They are **read-only** — they never write to `scripts/output/`:
 ```
 python scripts/apply-taxonomy.py --check --skip-normalize
 python scripts/normalize-vitolas.py --check
 python scripts/taxonomy-audit.py --fail-on-new --check-only
 python scripts/apply-cigar-descriptions.py --check
 python scripts/test_reconcile_hr.py
+python scripts/test_taxonomy_lib.py
 ```
 A separate `backend` job runs `python -m unittest discover -s tests` in `backend/`.
+
+### Price freshness (W3)
+- Each price point in `cigars.json` carries an optional `fetchedAt` (ISO `YYYY-MM-DD`) set by the scraping scripts.
+- **Quarterly refresh cadence (~every 3 months):** run `sync-hr-shops.py` (HR) and `enrich-region-links.py` (EU/USA) on Cursor locally. Both scripts now stamp `fetchedAt = today` automatically.
+- Exchange rates (`USD_TO_EUR`, `GBP_TO_EUR`, `CHF_TO_EUR`) live in `app/scripts/shop_common.py` with a date comment. Update them together with each quarterly scrape.
+- One-shot baseline stamp (offline, no network): `python scripts/stamp-fetched-at-baseline.py`. Sets `fetchedAt = 2026-07-01` on every price that lacks it. Run once after the W3 PR merges, then re-export with `export-indexes.py`.
+- UI: the DetailSheet shows "Cijena preuzeta {date}." when `fetchedAt` is present; prices older than 90 days show an orange stale warning. When `fetchedAt` is absent the generic market note is shown instead.
 
 ### Non-obvious notes
 - The dev server serves the app under the base path **`/cigar-pairing/`**, not `/`. Open `http://localhost:5173/cigar-pairing/` — the bare root path will not render the app. This base is set in `app/vite.config.ts` to match the GitHub Pages repo name.
 - Node 22 is expected (see CI). The package manager is **npm** (`app/package-lock.json`).
 - Deploy is automatic: push to `master` → GitHub Actions (`deploy.yml`) → GitHub Pages. Do not deploy manually.
 - **Never remove a drink or cigar id without an alias.** Collections and diaries live in `localStorage` and key on those ids; a removed id silently orphans the user's marks. Add the successor to `src/data/drinkIdAliases.json` / `cigarIdAliases.json`. `drinkIdRegistry.json` + `src/data/drinkIds.test.ts` enforce this.
+- **A line name is brand → line → vitola; dimensions belong to the vitola.** Shop titles arrive lower-cased with the size glued on (`1502 XO Torpedo 6"1/2 * 52` → line `xo 61 2 52`). `apply-taxonomy.py`'s auto-pass undoes that: P0 re-cases the line, P1 lifts a trailing size into `vitolas[].format`, P2 moves a trailing shape word into the vitola *only* when the dimensions disprove the recorded one. P0 is slug-neutral by design — casing must never mint a new cigar id. `src/data/cigarNomenclature.test.ts` guards the corpus, `scripts/test_taxonomy_lib.py` the rules.
 - **`keepSeparate` in `scripts/data/taxonomy/*.json` outranks `line_merge_decisions.json`.** A merge decision that contradicts it aborts `normalize-vitolas.py` — resolve by editing one of the two, not by suppressing the check.
 - The OCR bundle (~10.9 MB) must stay a **lazy** chunk. Do not give it a `manualChunks` name: that dissolves the dynamic-import boundary and puts it in the entry's `modulepreload`. It is named via `output.chunkFileNames` instead, so `globIgnores` still matches.
 - Since state is `localStorage`-only, a "hello world" smoke test is fully client-side: open the app → Pairing → pick a cigar → view scored drink pairings → "Zabilježi večer" to log an evening → confirm it appears under Kolekcija (Collection) diary.

@@ -2,7 +2,9 @@ import type { Cigar, Vitola } from "../types";
 import { SheetShell } from "./SheetShell";
 import { useI18n } from "../i18n";
 import { uniqueVitolas } from "../lib/cigarVitola";
+import { formatEur, vitolaPriceForMarket } from "../lib/cigarPrice";
 import { vitolaBlurb } from "../lib/vitolaInfo";
+import { useMarket } from "../store/market";
 
 // Modal: linija ima više formata -> odaberi vitolu.
 // Overlay (ne inline) da se uvijek otvori odmah, i kod dugih popisa.
@@ -16,6 +18,7 @@ export function VitolaPicker({
   onBack: () => void;
 }) {
   const { t, lang } = useI18n();
+  const market = useMarket();
   const vitolas = uniqueVitolas(cigar);
 
   return (
@@ -43,6 +46,7 @@ export function VitolaPicker({
         <div className="mt-3 space-y-1.5">
           {vitolas.map((v) => {
             const blurb = vitolaBlurb(v.name, lang);
+            const { price, approx } = vitolaPriceForMarket(v, market);
             return (
               <button
                 key={v.name}
@@ -55,7 +59,7 @@ export function VitolaPicker({
                   <span className="shrink-0 text-xs text-dim">
                     {v.format && v.format !== "—" ? `${v.format} · ` : ""}
                     {v.smokeTimeMin != null ? `⏱ ${v.smokeTimeMin}′` : ""}
-                    {v.priceEUR != null ? ` · ${v.priceEUR.toFixed(2)} €` : ""}
+                    {price != null ? ` · ${approx ? "~" : ""}${formatEur(price)}` : ""}
                   </span>
                 </div>
                 {blurb && (
