@@ -239,7 +239,7 @@ describe("stableBestRotate", () => {
     ];
     const picks = new Set(
       ["cig-1|2026-08-05", "cig-2|2026-08-05", "cig-3|2026-08-05"].map(
-        (seed) => stableBestRotate(ranked, 0, { keyOf, tieSeed: seed }).pick?.item.id,
+        (seed) => stableBestRotate(ranked, 0, { keyOf, anchorId: seed }).pick?.item.id,
       ),
     );
     expect(picks.size).toBeGreaterThan(1);
@@ -257,7 +257,7 @@ describe("stableBestRotate", () => {
   it("tieSeed ne dira vrh kad izjednacenih nema", () => {
     const ranked = [r("a", "A", 90), r("b", "B", 88)];
     expect(
-      stableBestRotate(ranked, 0, { keyOf, tieSeed: "bilo sto" }).pick?.item.id,
+      stableBestRotate(ranked, 0, { keyOf, anchorId: "bilo sto" }).pick?.item.id,
     ).toBe("a");
   });
 

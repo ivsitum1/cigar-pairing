@@ -26,8 +26,13 @@ import { POWER_TAGS, WEIGHTS, normalizeTags } from "./rules";
 export type OccasionFilter = "any" | "morning" | "afternoon" | "evening";
 export type Occasion = Exclude<OccasionFilter, "any">;
 
-/** Koliko bodova ispod najboljeg smije biti kandidat da ga prilika još smije pretaknuti. */
-export const OCCASION_BAND_MARGIN = 6;
+/**
+ * Koliko bodova ispod najboljeg smije biti kandidat da ga prilika još smije
+ * pretaknuti. Banda se računa po rawScore (nestisnutom), koji je veći od
+ * prikaznog kad su parovi jaki (iznad koljena pri 85). Margina je 12 da se
+ * poravna s prijašnjim ponašanjem koji je koristio prikazni score (0–100).
+ */
+export const OCCASION_BAND_MARGIN = 12;
 
 /**
  * Soft-only: ne isključuje pića. Raniji hard filter je blage cigare navečer

@@ -185,8 +185,9 @@ export function stableBestRotate<T extends { id: string }>(
 
   const margin = opts.margin ?? SOFT_BAND_MARGIN;
   const top = pickAmongTied(ranked, opts.anchorId, opts.tieKeyOf);
-  const diverse = diverseBy(ranked, opts.keyOf);
-  const band = softBand(diverse, margin);
+  // Build band from the full ranked list so that second-in-key items (e.g. a2
+  // when a1 is already at #1) are included in round-robin rotation.
+  const band = softBand(ranked, margin);
 
   const head = top;
 
