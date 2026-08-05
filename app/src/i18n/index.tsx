@@ -290,10 +290,6 @@ const STRINGS = {
   "common.searchOnline": { hr: "Traži online", en: "Search online" },
   "price.from": { hr: "od", en: "from" },
   "price.check": { hr: "provjeri cijenu", en: "check price" },
-  "price.snapshotNote": {
-    hr: "Cijene su snimka kataloga trgovine u trenutku preuzimanja podataka — u trgovini mogu biti drukčije.",
-    en: "Prices are a snapshot of the shop's catalogue when the data was fetched — the shop may show a different price.",
-  },
   "price.marketNote": {
     hr: "Cijena vrijedi za odabrano tržište. Za druga tržišta koristi gumbe za kupnju.",
     en: "Price applies to the selected market. For other markets use the buy buttons.",

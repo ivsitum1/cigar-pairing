@@ -705,9 +705,6 @@ function CigarBuyLinks({ cigar }: { cigar: Cigar }) {
           </div>
         ))}
       </div>
-      <p className="mt-1.5 text-micro leading-snug text-dim/70">
-        {t("price.snapshotNote")}
-      </p>
     </div>
   );
 }
