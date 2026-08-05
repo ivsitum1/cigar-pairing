@@ -28,8 +28,8 @@ indeksima rangiranim po kvaliteti za sipping uz cigaru.
 - `app/` — Vite + React + TS + Tailwind PWA
   - Hash-routing s deep-linkovima: `#/pairing/cigar/<id>` i `#/pairing/drink/<id>`
     otvaraju pairing s odabranom stavkom (dijeljivi linkovi, back tipka radi)
-  - `src/data/*.json` — indeksi (320 rum, 275 whiskyja, 90 brandy/grappa, 65 gin,
-    124 vina, 26 tequila, 33 kave, 13 digestiva, 3314 cigara);
+  - `src/data/*.json` — indeksi (321 rum, 275 whiskyja, 101 brandy/grappa, 70 gin,
+    124 vina, 26 tequila, 33 kave, 13 digestiva, 3647 cigara);
     build ih dijeli u odvojene chunkove (`data-cigars`, `data-whiskies`, `data-rums`…) radi
     paralelnog downloada i boljeg cachea
   - **ID-jevi se nikad ne brišu.** Kolekcija i dnevnik žive u `localStorage` i
@@ -68,12 +68,6 @@ indeksima rangiranim po kvaliteti za sipping uz cigaru.
   - `scripts/profile-cigars.py` — obogaćuje cigare bez profila (prazan flavorTags →
     izvodi snagu/tijelo/wrapper/okuse iz wrappera, marke i bilješki)
   - `scripts/dedupe-data.py` — uklanja duple ID-jeve nakon regeneracije (pokreni zadnje)
-  - `scripts/repair-market-lines.py` — market scrape upiše cijelo ime proizvoda u
-    `line` (malim slovima, s mjerom): vraća mjeru u vitolu, spaja vitole iste
-    linije i sređuje imena. Idempotentno, izvještaj u `scripts/output/`
-  - `scripts/repair-brand-line-split.py` — krivo razrezan brend/linija ("Casa" +
-    "Cuevas Maduro" → marka "Casa Cuevas"), održava `brands.json` 1:1
-  - što od kataloga još čeka podatke iz trgovina: [docs/catalog-scrape-todo.md](docs/catalog-scrape-todo.md)
   - `scripts/build-world-outline.mjs` — generira `src/data/world_outline.json`
     (monokromni atlas za Club kartu) iz Natural Earth land TopoJSON-a
   - `scripts/export-indexes.py` — generira `*_Index.xlsx` u root (git-ignorirano)
@@ -136,7 +130,7 @@ Kad zatreba sync mobitel ↔ računalo:
   URL izgleda kao stranica *tog* proizvoda; inače „Traži online” (fuzzy match kataloga inače
   često veže krivi SKU ili kategoriju — to je posebno vidljivo u Shopping → Praznine).
 - **Trgovine pićem** (`app/src/data/drinkShops.ts` — jedini izvor istine): potvrđenu stranicu
-  boce ima trećina zapisa (324/946; vino 2/124, rum 47/320), pa detalj boce više ne nudi samo
+  boce ima trećina zapisa (313/963; vino 2/124, rum 42/321), pa detalj boce više ne nudi samo
   Google. Redoslijed: potvrđena stranica (*izravno*) → HR trgovine s pretragom po nazivu
   (Tipsy, Cugaklik) → katalozi (allez.hr, ecuga.com, Roto, Vrutak, Vivat) → Wine-Searcher kao
   svjetski cjenik. Trgovina bez provjerenog endpointa pretrage dobiva link na katalog
