@@ -135,6 +135,8 @@ def parse_size(line: str) -> tuple[str, tuple[int, int] | None]:
     if (re.fullmatch(r"\d+", last) and not re.fullmatch(r"(19|20)\d\d", last)
             and prev not in {"no", "lot", "batch", "serie", "series", "vol"}):
         return line, None   # rep je slozena oznaka ("Miami 8 9 8 63"), ne cista mjera
+    if last.lower().rstrip(".") in {"no", "lot", "batch", "serie", "series", "vol"}:
+        return line, None   # "no 660" = vitola No. 660, ne 6 x 60
     return rest, (ring, round(inch * 25.4))
 
 
