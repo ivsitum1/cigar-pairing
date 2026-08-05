@@ -5,7 +5,7 @@
 
  "_note_isti_proizvodac": "Vise kategorija pod istom markom NIJE razlog za ispravku: Nikka radi whisky i Coffey Gin, Nonino grappu i amaro, Antinori i Gaja vino i grappu, Ableforth's gin i rum, Aura pelinkovac i gin. Te su namjerno ostavljene kao jedna marka.",
 
- "_note_kuca_u_imenu": "Treci razlog: ime boce ne pocinje imenom kuce ('H by Hine' -> 'H') ili kuca nosi genericnu prvu rijec pa najdulji prefiks stane na clanu ('Chateau du' umjesto 'Chateau du Tariquet'). Skripta to ne moze znati bez znanja o svijetu, a korisnik marku trazi po kuci.",
+ "_note_kuca_u_imenu": "Treci razlog: ime boce ne pocinje imenom kuce ('H by Hine' -> 'H') ili kuca nosi genericnu prvu rijec pa najdulji prefiks stane na clanu ('Chateau du' umjesto 'Chateau du Tariquet'). Skripta to ne moze znati bez znanja o svijetu, a korisnik marku trazi po kuci. Isto vrijedi za preimenovanu kucu: Plantation je postao Planteray, pa su tri zapisa davala tri marke — svi idu pod 'Plantation/Planteray'.",
 
  "brands": {
   "br-baron-de-sigognac-10-ans": "Baron de Sigognac",
@@ -39,6 +39,9 @@
   "rum-lazy-dodo-mauricijus": "Lazy Dodo",
   "rum-matusalem-gran-reserva": "Ron Matusalem",
   "rum-novo-fogo-cachaca": "Novo Fogo",
+  "rum-plantation-oftd": "Plantation/Planteray",
+  "rum-planteray-3-stars-bijeli": "Plantation/Planteray",
+  "rum-planteray-original-dark": "Plantation/Planteray",
   "rum-smith-cross": "Smith & Cross",
   "rum-sol-tarasco-4-yo-charanda": "Sol Tarasco",
   "rum-weber-haus-cachaca": "Weber Haus",
