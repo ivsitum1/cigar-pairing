@@ -73,6 +73,7 @@ function croatianStrings(): { where: string; text: string }[] {
     "engine/personal.ts",
     "engine/rules.ts",
     "engine/serve.ts",
+    "data/drinkShops.ts",
     "data/shops.ts",
     "lib/geo.ts",
     "lib/shareCard.ts",

@@ -13,6 +13,7 @@ import {
 } from "../data";
 import { REGIONS } from "../data/shops";
 import { drinkBuyLink } from "../lib/drinkBuyLink";
+import { drinkAvailabilityHR, drinkShopLinks } from "../lib/drinkShopLinks";
 import { drinkNameLoc } from "../lib/drinkName";
 import { vitolaBlurb } from "../lib/vitolaInfo";
 import { resolveSamplerCigar } from "../lib/samplerLink";
@@ -448,7 +449,7 @@ function DrinkDetails({
 }) {
   const { t, lx, sv, rgn, lang } = useI18n();
   const style = STYLE_LABELS[drink.style];
-  const buy = drinkBuyLink(drink);
+  const availability = drinkAvailabilityHR(drink);
   const brand = drinkBrand(drink.id);
   return (
     <>
@@ -495,7 +496,18 @@ function DrinkDetails({
           k={t("common.price")}
           v={`${drink.priceApprox ? t("common.approx") + " " : ""}${formatPrice(drink.priceEUR)}`}
         />
-        {drink.shopHR && <Row k={t("common.shop")} v={drink.shopHR} />}
+        {/* `shopHR` je urednička napomena, ne provjerena zaliha — bez potvrđene
+            stranice proizvoda prikazuje se kao orijentir, ne kao tvrdnja. */}
+        {availability && (
+          <Row
+            k={t("common.shop")}
+            v={
+              availability.verified
+                ? availability.text
+                : `${availability.text} · ${t("shops.indicative")}`
+            }
+          />
+        )}
         {drink.serving?.best && <Row k={t("common.serving")} v={sv(drink.serving.best)} />}
       </dl>
       <div className="mt-2 flex flex-wrap gap-1.5">
@@ -533,8 +545,57 @@ function DrinkDetails({
           </ul>
         </div>
       )}
-      <BuyLink href={buy.href} label={buy.label} />
+      <DrinkBuyLinks drink={drink} />
     </>
+  );
+}
+
+// Kupnja boce — trgovine u HR (izravna stranica boce gdje postoji, inače
+// pretraga/katalog) plus svjetski cjenik. Bez trgovina za kategoriju (kava)
+// ostaje jedan link na pretragu.
+function DrinkBuyLinks({ drink }: { drink: Drink }) {
+  const { t } = useI18n();
+  const links = drinkShopLinks(drink);
+  if (links.length === 0) {
+    const buy = drinkBuyLink(drink);
+    return <BuyLink href={buy.href} label={buy.label} />;
+  }
+  const hr = links.filter((l) => l.scope === "HR");
+  const ref = links.filter((l) => l.scope === "REF");
+  const KIND_LABEL = {
+    product: t("shops.direct"),
+    search: t("shops.search"),
+    browse: t("shops.browse"),
+    ref: t("price.check"),
+  } as const;
+  const group = (title: string, items: typeof links) =>
+    items.length === 0 ? null : (
+      <div className="mt-2">
+        <div className="mb-1 text-[10px] uppercase tracking-widest text-dim/80">{title}</div>
+        <div className="grid grid-cols-2 gap-2">
+          {items.map((l) => (
+            <a
+              key={l.shopId}
+              href={l.url}
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-lg border border-zlato/40 bg-zlato/10 px-2 py-2 text-center text-xs text-zlato-2 hover:bg-zlato/20"
+            >
+              {l.shop} <span className="text-[10px] text-dim">· {KIND_LABEL[l.kind]}</span> ↗
+            </a>
+          ))}
+        </div>
+      </div>
+    );
+  return (
+    <div className="mt-3">
+      <div className="mb-1 text-micro uppercase tracking-widest text-dim">{t("common.buy")}</div>
+      {group(t("market.HR"), hr)}
+      {group(t("shops.priceRef"), ref)}
+      {!hr.some((l) => l.kind === "product") && (
+        <p className="mt-1.5 text-micro leading-snug text-dim/70">{t("shops.drinkNoDirect")}</p>
+      )}
+    </div>
   );
 }
 

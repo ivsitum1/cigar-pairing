@@ -314,6 +314,13 @@ const STRINGS = {
   "shops.direct": { hr: "izravno", en: "direct" },
   "shops.search": { hr: "pretraga", en: "search" },
   "shops.walkIn": { hr: "na mjestu", en: "in store" },
+  "shops.browse": { hr: "katalog", en: "catalogue" },
+  "shops.priceRef": { hr: "Cijena u svijetu", en: "World prices" },
+  "shops.drinkNoDirect": {
+    hr: "Za ovu bocu nemamo potvrđenu stranicu proizvoda, pa poveznice vode na pretragu odnosno katalog trgovine.",
+    en: "We have no confirmed product page for this bottle, so the links lead to the shop's search or catalogue.",
+  },
+  "shops.indicative": { hr: "orijentir — provjeri zalihu", en: "indicative — check stock" },
   // opće
   "common.body": { hr: "Tijelo", en: "Body" },
   "common.strength": { hr: "Snaga", en: "Strength" },
