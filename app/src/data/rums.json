@@ -6282,51 +6282,6 @@
   }
  },
  {
-  "id": "rum-blanco",
-  "category": "rum",
-  "name": "Barcelo Blanco",
-  "style": "dominican",
-  "region": "Dominikanska Republika",
-  "body": 3,
-  "sweetness": 3,
-  "flavorTags": [
-   "karamela",
-   "vanilija",
-   "hrast"
-  ],
-  "additiveStatus": "unknown",
-  "additiveDetail": {
-   "hr": "Bez podataka o dodacima (nije mjereno)",
-   "en": "No additive data (not measured)"
-  },
-  "additiveSource": "Stilska procjena — nije lab/hidrometar",
-  "qualityScore": 4,
-  "priceEUR": {
-   "min": 22.99,
-   "max": 22.99
-  },
-  "shopHR": "Roto",
-  "status": null,
-  "pairable": true,
-  "serving": {
-   "neat": 0,
-   "water": 0,
-   "rocks": 1,
-   "highball": 3,
-   "cola": 3,
-   "best": "Koktel / cola"
-  },
-  "cigarHint": {
-   "hr": "Uz Blanco biraj cigaru prema tijelu 3/5 i zajedničkim notama (karamela, vanilija).",
-   "en": "With Blanco pick a cigar for body 3/5 and shared notes (karamela, vanilija)."
-  },
-  "priceUrl": null,
-  "notes": {
-   "hr": "Barcelo Blanco: Profil ostaje u stilu dominican (Dominikanska Republika). Pristupačni dominikanski rum; zlatna varijanta ima blagu karamelu.",
-   "en": "Barcelo Blanco: Profile stays in the dominican style (Dominikanska Republika). Approachable Dominican rum; the gold variant shows light caramel."
-  }
- },
- {
   "id": "rum-bumbu-original",
   "category": "rum",
   "name": "Bumbu Original",

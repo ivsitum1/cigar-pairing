@@ -448,52 +448,6 @@
     }
   },
   {
-    "id": "br-hennessy-xo-cognac-40-vol-0-7l-u-poklon-kutiji",
-    "category": "brandy",
-    "name": "Hennessy XO Cognac 40% Vol. 0,7l u poklon kutiji",
-    "style": "cognac-xo",
-    "region": "Cognac, Francuska",
-    "country": "Francuska",
-    "abv": 40.0,
-    "body": 4,
-    "sweetness": 3,
-    "flavorTags": [
-      "suho-voce",
-      "kakao",
-      "zacini",
-      "koza"
-    ],
-    "additiveStatus": "clean",
-    "additiveDetail": {
-      "hr": "Bez poznatih dodataka",
-      "en": "No known additives"
-    },
-    "additiveSource": "Excel MASTER",
-    "qualityScore": 8.5,
-    "priceEUR": {
-      "min": 170.0,
-      "max": 170.0
-    },
-    "priceApprox": false,
-    "shopHR": "allez.hr",
-    "status": "META",
-    "pairable": true,
-    "serving": {
-      "neat": 3,
-      "water": 2,
-      "rocks": 1,
-      "highball": 0,
-      "cola": 0,
-      "best": "Cisto (snifter)"
-    },
-    "cigarHint": null,
-    "priceUrl": null,
-    "notes": {
-      "hr": "Arhetip XO kategorije — bogat, čokoladno-začinski, stvoren za cigaru.",
-      "en": "The XO archetype — rich, chocolate-spice, made for a cigar."
-    }
-  },
-  {
     "id": "br-hennessy-xo-cognac-festive-experience-40-vol-0-7l-u-poklon-kutiji-posudi-za-led-s-2-case-i-hvataljkom-za-led",
     "category": "brandy",
     "name": "Hennessy XO Cognac Festive Experience 40% Vol. 0,7l u poklon kutiji  / posudi za led s 2 čaše i hvataljkom za led",
@@ -639,11 +593,13 @@
     "region": "Cognac (Fine Champagne), Francuska",
     "country": "Francuska",
     "abv": 40.0,
-    "body": 3,
+    "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "hrast",
-      "voce"
+      "suho-voce",
+      "kakao",
+      "zacini",
+      "koza"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -676,101 +632,9 @@
     }
   },
   {
-    "id": "br-remy-martin-xo-extra-old-cognac-fine-champagne-40-vol-0-7l-u-poklon-kutiji",
-    "category": "brandy",
-    "name": "Rémy Martin XO EXTRA OLD Cognac Fine Champagne 40% Vol. 0,7l u poklon kutiji",
-    "style": "cognac-xo",
-    "region": "Cognac (Fine Champagne), Francuska",
-    "country": "Francuska",
-    "abv": 40.0,
-    "body": 4,
-    "sweetness": 3,
-    "flavorTags": [
-      "suho-voce",
-      "kakao",
-      "zacini",
-      "koza"
-    ],
-    "additiveStatus": "clean",
-    "additiveDetail": {
-      "hr": "Bez poznatih dodataka",
-      "en": "No known additives"
-    },
-    "additiveSource": "Excel MASTER",
-    "qualityScore": 8.4,
-    "priceEUR": {
-      "min": 160.0,
-      "max": 160.0
-    },
-    "priceApprox": false,
-    "shopHR": "allez.hr",
-    "status": "META",
-    "pairable": true,
-    "serving": {
-      "neat": 3,
-      "water": 2,
-      "rocks": 1,
-      "highball": 0,
-      "cola": 0,
-      "best": "Cisto (snifter)"
-    },
-    "cigarHint": null,
-    "priceUrl": null,
-    "notes": {
-      "hr": "Raskošan, svilenkast XO — cvjetno-voćna dubina.",
-      "en": "Opulent, silky XO — floral-fruity depth."
-    }
-  },
-  {
     "id": "br-martell-xo",
     "category": "brandy",
     "name": "Martell XO",
-    "style": "cognac-xo",
-    "region": "Cognac, Francuska",
-    "country": "Francuska",
-    "abv": 40.0,
-    "body": 4,
-    "sweetness": 3,
-    "flavorTags": [
-      "suho-voce",
-      "kakao",
-      "zacini",
-      "koza"
-    ],
-    "additiveStatus": "clean",
-    "additiveDetail": {
-      "hr": "Bez poznatih dodataka",
-      "en": "No known additives"
-    },
-    "additiveSource": "Excel MASTER",
-    "qualityScore": 8.3,
-    "priceEUR": {
-      "min": 150.0,
-      "max": 150.0
-    },
-    "priceApprox": false,
-    "shopHR": "allez.hr",
-    "status": "META",
-    "pairable": true,
-    "serving": {
-      "neat": 3,
-      "water": 2,
-      "rocks": 1,
-      "highball": 0,
-      "cola": 0,
-      "best": "Cisto (snifter)"
-    },
-    "cigarHint": null,
-    "priceUrl": null,
-    "notes": {
-      "hr": "Suhi, borderies-bogat XO — orašasta elegancija uz srednju cigaru.",
-      "en": "Dry, Borderies-rich XO — nutty elegance with a medium cigar."
-    }
-  },
-  {
-    "id": "br-martell-xo-extra-old-cognac-40-vol-0-7l-u-poklon-kutiji",
-    "category": "brandy",
-    "name": "Martell XO Extra Old Cognac 40% Vol. 0,7l u poklon kutiji",
     "style": "cognac-xo",
     "region": "Cognac, Francuska",
     "country": "Francuska",
@@ -1317,50 +1181,6 @@
     "region": "Bas-Armagnac, Francuska",
     "country": "Francuska",
     "abv": 40.0,
-    "body": 3,
-    "sweetness": 3,
-    "flavorTags": [
-      "hrast",
-      "voce"
-    ],
-    "additiveStatus": "unknown",
-    "additiveDetail": {
-      "hr": "Nije deklarirano",
-      "en": "Not declared"
-    },
-    "additiveSource": "Excel MASTER",
-    "qualityScore": 8.0,
-    "priceEUR": {
-      "min": 60.0,
-      "max": 60.0
-    },
-    "priceApprox": false,
-    "shopHR": "allez.hr",
-    "status": "META",
-    "pairable": true,
-    "serving": {
-      "neat": 3,
-      "water": 2,
-      "rocks": 1,
-      "highball": 0,
-      "cola": 0,
-      "best": "Cisto (snifter)"
-    },
-    "cigarHint": null,
-    "priceUrl": null,
-    "notes": {
-      "hr": "Single-estate XO armagnac — ozbiljna alternativa XO konjaku uz cigaru.",
-      "en": "Single-estate XO armagnac — a serious alternative to XO cognac with a cigar."
-    }
-  },
-  {
-    "id": "br-choteau-de-laubade-xo",
-    "category": "brandy",
-    "name": "Château de Laubade XO",
-    "style": "armagnac",
-    "region": "Bas-Armagnac, Francuska",
-    "country": "Francuska",
-    "abv": 40,
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
@@ -1375,10 +1195,10 @@
       "en": "Not declared"
     },
     "additiveSource": "Excel MASTER",
-    "qualityScore": 8,
+    "qualityScore": 8.0,
     "priceEUR": {
-      "min": 60,
-      "max": 60
+      "min": 60.0,
+      "max": 60.0
     },
     "priceApprox": false,
     "shopHR": "allez.hr",
@@ -1673,12 +1493,13 @@
     "region": "Cognac, Francuska",
     "country": "Francuska",
     "abv": 40,
-    "body": 3,
+    "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "voce",
-      "vanilija",
-      "hrast"
+      "suho-voce",
+      "kakao",
+      "zacini",
+      "koza"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -2348,51 +2169,6 @@
     }
   },
   {
-    "id": "br-camus-very-special-intensely-aromatic-cognac-40-vol-0-7l",
-    "category": "brandy",
-    "name": "Camus VERY SPECIAL Intensely Aromatic Cognac 40% Vol. 0,7l",
-    "style": "cognac-vs",
-    "region": "Borderies, Francuska",
-    "country": "Francuska",
-    "abv": 40.0,
-    "body": 3,
-    "sweetness": 3,
-    "flavorTags": [
-      "voce",
-      "vanilija",
-      "hrast"
-    ],
-    "additiveStatus": "clean",
-    "additiveDetail": {
-      "hr": "Bez poznatih dodataka",
-      "en": "No known additives"
-    },
-    "additiveSource": "Excel MASTER",
-    "qualityScore": 7.5,
-    "priceEUR": {
-      "min": 110.0,
-      "max": 110.0
-    },
-    "priceApprox": false,
-    "shopHR": "allez.hr",
-    "status": "META",
-    "pairable": true,
-    "serving": {
-      "neat": 3,
-      "water": 2,
-      "rocks": 2,
-      "highball": 0,
-      "cola": 0,
-      "best": "Cisto ili velika kocka leda"
-    },
-    "cigarHint": null,
-    "priceUrl": null,
-    "notes": {
-      "hr": "Mirisni XO — cvjetno-medena raskoš.",
-      "en": "The perfumed XO — floral-honeyed opulence."
-    }
-  },
-  {
     "id": "br-camus-vs-intensely-aromatic",
     "category": "brandy",
     "name": "Camus VS Intensely Aromatic",
@@ -2461,10 +2237,10 @@
     "additiveSource": "Excel MASTER",
     "qualityScore": 7.5,
     "priceEUR": {
-      "min": 110.0,
-      "max": 110.0
+      "min": 40,
+      "max": 50
     },
-    "priceApprox": false,
+    "priceApprox": true,
     "shopHR": "allez.hr",
     "status": "META",
     "pairable": true,
@@ -2479,8 +2255,8 @@
     "cigarHint": null,
     "priceUrl": null,
     "notes": {
-      "hr": "Mirisni XO — cvjetno-medena raskoš.",
-      "en": "The perfumed XO — floral-honeyed opulence."
+      "hr": "VSOP iz Camusove „Intensity” destilacije — intenzivno voće i cvjetnost, mekši i jednostavniji od XO-a.",
+      "en": "A VSOP from Camus' “Intensity” distillation — intense fruit and florality, softer and simpler than the XO."
     }
   },
   {
@@ -2624,52 +2400,6 @@
     "id": "br-h-by-hine-vsop-fine-champagne-cognac-design-40-vol-0-7l-u-poklon-kutiji",
     "category": "brandy",
     "name": "H by Hine VSOP Fine Champagne Cognac Design 40% Vol. 0,7l u poklon kutiji",
-    "style": "cognac-vsop",
-    "region": "Cognac, Francuska",
-    "country": "Francuska",
-    "abv": 40.0,
-    "body": 3,
-    "sweetness": 3,
-    "flavorTags": [
-      "voce",
-      "vanilija",
-      "zacini",
-      "hrast"
-    ],
-    "additiveStatus": "clean",
-    "additiveDetail": {
-      "hr": "Bez poznatih dodataka",
-      "en": "No known additives"
-    },
-    "additiveSource": "Excel MASTER",
-    "qualityScore": 7.5,
-    "priceEUR": {
-      "min": 55.0,
-      "max": 55.0
-    },
-    "priceApprox": false,
-    "shopHR": "allez.hr",
-    "status": "META",
-    "pairable": true,
-    "serving": {
-      "neat": 3,
-      "water": 2,
-      "rocks": 1,
-      "highball": 0,
-      "cola": 0,
-      "best": "Cisto (snifter)"
-    },
-    "cigarHint": null,
-    "priceUrl": null,
-    "notes": {
-      "hr": "Britanski dvorski dobavljač — svjež, voćni stil.",
-      "en": "The British court's supplier — fresh, fruity style."
-    }
-  },
-  {
-    "id": "br-hine-rare-vsop-the-original-fine-champagne-cognac-40-vol-0-7l-u-poklon-kutiji",
-    "category": "brandy",
-    "name": "Hine RARE VSOP The Original Fine Champagne Cognac 40% Vol. 0,7l u poklon kutiji",
     "style": "cognac-vsop",
     "region": "Cognac, Francuska",
     "country": "Francuska",
@@ -2943,52 +2673,6 @@
     }
   },
   {
-    "id": "br-martell-cognac-cordon-bleu-extra-old-cognac-40-vol-0-7l-u-poklon-kutiji",
-    "category": "brandy",
-    "name": "Martell Cognac Cordon Bleu Extra Old Cognac 40% Vol. 0,7l u poklon kutiji",
-    "style": "cognac-xo",
-    "region": "Cognac, Francuska",
-    "country": "Francuska",
-    "abv": 40.0,
-    "body": 4,
-    "sweetness": 3,
-    "flavorTags": [
-      "suho-voce",
-      "kakao",
-      "zacini",
-      "koza"
-    ],
-    "additiveStatus": "clean",
-    "additiveDetail": {
-      "hr": "Bez poznatih dodataka",
-      "en": "No known additives"
-    },
-    "additiveSource": "Excel MASTER",
-    "qualityScore": 7.5,
-    "priceEUR": {
-      "min": 50.0,
-      "max": 50.0
-    },
-    "priceApprox": false,
-    "shopHR": "allez.hr",
-    "status": "META",
-    "pairable": true,
-    "serving": {
-      "neat": 3,
-      "water": 2,
-      "rocks": 2,
-      "highball": 0,
-      "cola": 0,
-      "best": "Cisto ili velika kocka leda"
-    },
-    "cigarHint": null,
-    "priceUrl": null,
-    "notes": {
-      "hr": "Suhlji, orašastiji stil (bez borderies slatkoće u VSOP-u; Cordon Bleu = klasik za cigare).",
-      "en": "Drier, nuttier style (Cordon Bleu is a cigar classic)."
-    }
-  },
-  {
     "id": "br-nonino-grappa-antica-cuvee-5",
     "category": "brandy",
     "name": "Nonino Grappa Riserva Antica Cuvée 5 YO",
@@ -3104,98 +2788,6 @@
     "notes": {
       "hr": "Od amarone komine — suho voće i toplina appassimenta.",
       "en": "From amarone pomace — dried fruit and appassimento warmth."
-    }
-  },
-  {
-    "id": "br-tariquet-armagnac-vsop-40-vol-0-5l-u-poklon-kutiji",
-    "category": "brandy",
-    "name": "Tariquet Armagnac VSOP 40% Vol. 0,5l u poklon kutiji",
-    "style": "armagnac",
-    "region": "Bas-Armagnac, Francuska",
-    "country": "Francuska",
-    "abv": 40.0,
-    "body": 4,
-    "sweetness": 3,
-    "flavorTags": [
-      "suho-voce",
-      "prune",
-      "zacini",
-      "hrast"
-    ],
-    "additiveStatus": "clean",
-    "additiveDetail": {
-      "hr": "Bez poznatih dodataka",
-      "en": "No known additives"
-    },
-    "additiveSource": "Excel MASTER",
-    "qualityScore": 7.5,
-    "priceEUR": {
-      "min": 38.0,
-      "max": 38.0
-    },
-    "priceApprox": false,
-    "shopHR": "allez.hr",
-    "status": "META",
-    "pairable": true,
-    "serving": {
-      "neat": 3,
-      "water": 2,
-      "rocks": 1,
-      "highball": 0,
-      "cola": 0,
-      "best": "Cisto (snifter)"
-    },
-    "cigarHint": null,
-    "priceUrl": null,
-    "notes": {
-      "hr": "Pristupačan armagnac — rustikalniji i suši od konjaka.",
-      "en": "Approachable armagnac — more rustic and drier than cognac."
-    }
-  },
-  {
-    "id": "br-tariquet-armagnac-vsop-40-vol-0-7l-u-poklon-kutiji",
-    "category": "brandy",
-    "name": "Tariquet Armagnac VSOP 40% Vol. 0,7l u poklon kutiji",
-    "style": "armagnac",
-    "region": "Bas-Armagnac, Francuska",
-    "country": "Francuska",
-    "abv": 40.0,
-    "body": 4,
-    "sweetness": 3,
-    "flavorTags": [
-      "suho-voce",
-      "prune",
-      "zacini",
-      "hrast"
-    ],
-    "additiveStatus": "clean",
-    "additiveDetail": {
-      "hr": "Bez poznatih dodataka",
-      "en": "No known additives"
-    },
-    "additiveSource": "Excel MASTER",
-    "qualityScore": 7.5,
-    "priceEUR": {
-      "min": 38.0,
-      "max": 38.0
-    },
-    "priceApprox": false,
-    "shopHR": "allez.hr",
-    "status": "META",
-    "pairable": true,
-    "serving": {
-      "neat": 3,
-      "water": 2,
-      "rocks": 1,
-      "highball": 0,
-      "cola": 0,
-      "best": "Cisto (snifter)"
-    },
-    "cigarHint": null,
-    "priceUrl": null,
-    "notes": {
-      "hr": "Pristupačan armagnac — rustikalniji i suši od konjaka.",
-      "en": "Approachable armagnac — more rustic and drier than cognac."
     }
   },
   {
@@ -3600,52 +3192,6 @@
     }
   },
   {
-    "id": "br-camus-vsop-borderies-single-estate-cognac-40-vol-0-7l-u-poklon-kutiji",
-    "category": "brandy",
-    "name": "Camus VSOP Borderies Single Estate Cognac 40% Vol. 0,7l u poklon kutiji",
-    "style": "cognac-vsop",
-    "region": "Borderies, Francuska",
-    "country": "Francuska",
-    "abv": 40.0,
-    "body": 3,
-    "sweetness": 3,
-    "flavorTags": [
-      "voce",
-      "vanilija",
-      "zacini",
-      "hrast"
-    ],
-    "additiveStatus": "clean",
-    "additiveDetail": {
-      "hr": "Bez poznatih dodataka",
-      "en": "No known additives"
-    },
-    "additiveSource": "Excel MASTER",
-    "qualityScore": 7.0,
-    "priceEUR": {
-      "min": 45.0,
-      "max": 45.0
-    },
-    "priceApprox": false,
-    "shopHR": "allez.hr",
-    "status": "META",
-    "pairable": true,
-    "serving": {
-      "neat": 3,
-      "water": 2,
-      "rocks": 2,
-      "highball": 0,
-      "cola": 0,
-      "best": "Cisto ili velika kocka leda"
-    },
-    "cigarHint": null,
-    "priceUrl": null,
-    "notes": {
-      "hr": "Borderies cvjetnost — mekan, mirisan konjak.",
-      "en": "Borderies florality — a soft, perfumed cognac."
-    }
-  },
-  {
     "id": "br-gran-duque-d-alba-solera-gran-reserva",
     "category": "brandy",
     "name": "Gran Duque d'Alba Solera Gran Reserva",
@@ -3963,6 +3509,51 @@
     }
   },
   {
+    "id": "br-courvoisier-vs",
+    "category": "brandy",
+    "name": "Courvoisier VS",
+    "style": "cognac-vs",
+    "region": "Cognac, Francuska",
+    "country": "Francuska",
+    "abv": 40.0,
+    "body": 3,
+    "sweetness": 3,
+    "flavorTags": [
+      "voce",
+      "cvjetno",
+      "vanilija"
+    ],
+    "additiveStatus": "unknown",
+    "additiveDetail": {
+      "hr": "Nije deklarirano",
+      "en": "Not declared"
+    },
+    "additiveSource": "Proizvođač ne deklarira",
+    "qualityScore": 6.9,
+    "priceEUR": {
+      "min": 36,
+      "max": 39
+    },
+    "priceApprox": true,
+    "shopHR": "ecuga.com",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 2,
+      "highball": 0,
+      "cola": 0,
+      "best": "Cisto ili velika kocka leda"
+    },
+    "cigarHint": null,
+    "priceUrl": "https://ecuga.com/proizvod/courvoisier-vs",
+    "notes": {
+      "hr": "Ulazni Courvoisier — zrelo voće i cvjetne note, mekši i jednostavniji od VSOP-a.",
+      "en": "The entry Courvoisier — ripe fruit and floral notes, softer and simpler than the VSOP."
+    }
+  },
+  {
     "id": "br-hennessy-vs",
     "category": "brandy",
     "name": "Hennessy VS",
@@ -3990,51 +3581,6 @@
     },
     "priceApprox": false,
     "shopHR": "svugdje",
-    "status": "META",
-    "pairable": true,
-    "serving": {
-      "neat": 3,
-      "water": 2,
-      "rocks": 2,
-      "highball": 0,
-      "cola": 0,
-      "best": "Cisto ili velika kocka leda"
-    },
-    "cigarHint": null,
-    "priceUrl": null,
-    "notes": {
-      "hr": "Mladi standard — oštriji, više za koktele nego finu cigaru.",
-      "en": "The young standard — sharper, more for cocktails than a fine cigar."
-    }
-  },
-  {
-    "id": "br-hennessy-vs-40-vol-0-7l",
-    "category": "brandy",
-    "name": "Hennessy VS 40% Vol. 0,7l",
-    "style": "cognac-vs",
-    "region": "Cognac, Francuska",
-    "country": "Francuska",
-    "abv": 40.0,
-    "body": 3,
-    "sweetness": 3,
-    "flavorTags": [
-      "voce",
-      "vanilija",
-      "hrast"
-    ],
-    "additiveStatus": "clean",
-    "additiveDetail": {
-      "hr": "Bez poznatih dodataka",
-      "en": "No known additives"
-    },
-    "additiveSource": "Excel MASTER",
-    "qualityScore": 6.8,
-    "priceEUR": {
-      "min": 35.0,
-      "max": 35.0
-    },
-    "priceApprox": false,
-    "shopHR": "allez.hr",
     "status": "META",
     "pairable": true,
     "serving": {
@@ -4310,51 +3856,6 @@
     "priceEUR": {
       "min": 20.0,
       "max": 20.0
-    },
-    "priceApprox": false,
-    "shopHR": "lokalni proizvođači",
-    "status": "META",
-    "pairable": true,
-    "serving": {
-      "neat": 3,
-      "water": 1,
-      "rocks": 3,
-      "highball": 0,
-      "cola": 0,
-      "best": "Cisto / on the rocks"
-    },
-    "cigarHint": null,
-    "priceUrl": null,
-    "notes": {
-      "hr": "Craft domaće rakije od grožđa — svježe i voćno, uz laganu cigaru na terasi.",
-      "en": "Croatian craft grape brandies — fresh and fruity, with a light cigar on the terrace."
-    }
-  },
-  {
-    "id": "br-hrvatski-lozovaza-vinjak-craft",
-    "category": "brandy",
-    "name": "Hrvatski lozovača / vinjak (craft)",
-    "style": "vinjak",
-    "region": "Hrvatska",
-    "country": "Hrvatska",
-    "abv": 40,
-    "body": 3,
-    "sweetness": 3,
-    "flavorTags": [
-      "grozdje",
-      "med",
-      "hrast"
-    ],
-    "additiveStatus": "unknown",
-    "additiveDetail": {
-      "hr": "Nije deklarirano",
-      "en": "Not declared"
-    },
-    "additiveSource": "Excel MASTER",
-    "qualityScore": 6,
-    "priceEUR": {
-      "min": 20,
-      "max": 20
     },
     "priceApprox": false,
     "shopHR": "lokalni proizvođači",
