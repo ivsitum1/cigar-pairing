@@ -16,7 +16,7 @@ only *adds* EU/USA (and an explicit HR product link mirror).
 import json
 from pathlib import Path
 
-from shop_common import REGIONS, SHOP_LABEL, best_offer, is_cuban, to_eur
+from shop_common import FETCH_DATE, REGIONS, SHOP_LABEL, best_offer, is_cuban, to_eur
 
 HERE = Path(__file__).resolve().parent
 DATA = HERE.parent / "src" / "data"
@@ -44,6 +44,7 @@ def region_links_from(unified_rec, cuban):
             entry["priceEUR"] = price
             if approx:
                 entry["priceApprox"] = True
+        entry["fetchedAt"] = FETCH_DATE
         links[region] = entry
     return links
 

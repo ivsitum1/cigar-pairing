@@ -15,7 +15,10 @@ import re
 import sys
 import time
 import unicodedata
+from datetime import date
 from pathlib import Path
+
+FETCH_DATE: str = date.today().isoformat()  # YYYY-MM-DD, nastaje pri pokretanju skripte
 
 import requests
 from bs4 import BeautifulSoup
@@ -365,13 +368,16 @@ def make_vitola_entry(row: dict) -> dict:
         _, pack = parse_pack_suffix(base_name)
         mm, ring = None, None
     fmt = f"{ring} x {mm}mm" if ring and mm else row.get("format", "")
-    return {
+    entry: dict = {
         "name": row["vitola"],
         "format": fmt or "—",
         "smokeTimeMin": smoke_minutes(mm, ring),
         "priceEUR": row.get("price"),
         "url": row.get("url"),
     }
+    if row.get("price") is not None:
+        entry["fetchedAt"] = FETCH_DATE
+    return entry
 
 
 def find_or_create_cigar(cigars: list[dict], brand: str, product_name: str) -> dict:
@@ -440,6 +446,7 @@ def upsert_vitola(cigar: dict, vitola_entry: dict) -> None:
         if norm(v["name"]) == key:
             if vitola_entry.get("priceEUR") is not None:
                 v["priceEUR"] = vitola_entry["priceEUR"]
+                v["fetchedAt"] = FETCH_DATE
             if vitola_entry.get("url"):
                 v["url"] = vitola_entry["url"]
             if vitola_entry.get("format") and vitola_entry["format"] != "—":

@@ -8,10 +8,15 @@ docs/superpowers/plans/2026-07-21-phase-b-c-execution-playbook.md
 from __future__ import annotations
 import re
 import unicodedata
+from datetime import date
 
-USD_TO_EUR = 0.92  # zakovani tečaj; USD ponude postaju priceApprox
-GBP_TO_EUR = 1.17  # zakovani; GBP → EUR approx
-CHF_TO_EUR = 1.05  # zakovani; CHF → EUR approx
+# Tečajevi osvježeni 2026-07-01 (ECB/Wise mid-market, zaokruženi).
+# Sljedeće osvježavanje: ~2026-10-01 (kvartalno).
+USD_TO_EUR = 0.91  # zakovani tečaj; USD ponude postaju priceApprox
+GBP_TO_EUR = 1.19  # zakovani; GBP → EUR approx
+CHF_TO_EUR = 1.06  # zakovani; CHF → EUR approx
+
+FETCH_DATE: str = date.today().isoformat()  # YYYY-MM-DD, postavlja se kad skripta radi
 REGIONS = ("HR", "EU", "USA")
 
 SHOP_LABEL = {
