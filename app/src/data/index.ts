@@ -559,17 +559,23 @@ export function cigarLinkForMarket(c: Cigar, region: RegionFilter): string {
   return `https://www.google.com/search?q=${encodeURIComponent(`${c.brand} ${c.line} cigar`)}`;
 }
 
+export interface ResolvedPrice {
+  price: number | null;
+  fromMany: boolean;
+  approx?: boolean;
+  /** ISO YYYY-MM-DD date when this price was scraped. Absent when unknown. */
+  fetchedAt?: string;
+}
+
 // Cijena SAMO kad je pouzdana (HR = humidor po vitoli). "ALL" prikazuje HR
 // cijenu (jedina koju stvarno imamo). EU/USA -> null (ne izmišljamo broj).
 // "fromMany" = ima više vitola s cijenama pa je ovo najniža ("od X €").
-export function cigarPriceForMarket(
-  c: Cigar,
-  region: RegionFilter,
-): { price: number | null; fromMany: boolean; approx?: boolean } {
+export function cigarPriceForMarket(c: Cigar, region: RegionFilter): ResolvedPrice {
   // EU/USA: scrapana "od" cijena na razini linije (USD->EUR nosi approx)
   if (region === "EU" || region === "USA") {
     const rl = c.regionLinks?.[region];
-    if (rl?.priceEUR != null) return { price: rl.priceEUR, fromMany: false, approx: rl.priceApprox };
+    if (rl?.priceEUR != null)
+      return { price: rl.priceEUR, fromMany: false, approx: rl.priceApprox, fetchedAt: rl.fetchedAt };
     return { price: null, fromMany: false };
   }
   if (region !== "HR" && region !== "ALL") return { price: null, fromMany: false };
@@ -582,6 +588,7 @@ export function cigarPriceForMarket(
     return {
       price: defaultVitola.priceEUR,
       fromMany: priced.length > 1 && max - min > 0.01,
+      fetchedAt: defaultVitola.fetchedAt,
     };
   }
 
@@ -592,6 +599,27 @@ export function cigarPriceForMarket(
   const min = Math.min(...priced.map((v) => v.priceEUR as number));
   const max = Math.max(...priced.map((v) => v.priceEUR as number));
   return { price: min, fromMany: max - min > 0.01 };
+}
+
+/**
+ * Najnoviji `fetchedAt` datum koji postoji u cijenama cigare (vitole i regionLinks).
+ * Koristi se za prikaz oznake svježine u UI-u.
+ */
+export function cigarLatestFetchedAt(c: Cigar): string | undefined {
+  const dates: string[] = [];
+  for (const region of ["HR", "EU", "USA"] as const) {
+    const rl = c.regionLinks?.[region];
+    if (rl?.priceEUR != null && rl.fetchedAt) dates.push(rl.fetchedAt);
+  }
+  for (const v of c.vitolas ?? []) {
+    if (v.priceEUR != null && v.fetchedAt) dates.push(v.fetchedAt);
+    for (const region of ["HR", "EU", "USA"] as const) {
+      const rl = v.regionLinks?.[region];
+      if (rl?.priceEUR != null && rl.fetchedAt) dates.push(rl.fetchedAt);
+    }
+  }
+  if (!dates.length) return undefined;
+  return [...dates].sort().at(-1);
 }
 
 /**

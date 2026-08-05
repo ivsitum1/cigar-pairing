@@ -8,6 +8,7 @@ import {
   brandDisplayName,
   cigarShopLinks,
   cigarShopLinkPrice,
+  cigarLatestFetchedAt,
   drinkBrand,
   formatPrice,
 } from "../data";
@@ -373,6 +374,7 @@ function CigarDetails({
 
       {/* kupnja po regiji — kad je filter na regiji prikazi samo tu, inace sve */}
       <CigarBuyLinks cigar={cigar} />
+      <CigarPriceNote cigar={cigar} />
       <div className="mt-2 flex flex-wrap items-center gap-1.5">
         {cigar.flavoured && (
           <span className="rounded-full border border-lista/50 bg-lista/15 px-2 py-0.5 text-micro uppercase tracking-wide text-lista">
@@ -611,6 +613,40 @@ function BuyLink({ href, label }: { href: string; label: "buy" | "search" }) {
     >
       {label === "buy" ? t("common.buy") : t("common.searchOnline")} ↗
     </a>
+  );
+}
+
+const STALE_DAYS = 90;
+
+/**
+ * Mala bilješka ispod gumba za kupnju: kad je cijena preuzeta i je li stara.
+ * Ne prikazuje se kad fetchedAt nedostaje — tada ostaje genericka napomena.
+ */
+function CigarPriceNote({ cigar }: { cigar: Cigar }) {
+  const { t, lang } = useI18n();
+  const fetchedAt = cigarLatestFetchedAt(cigar);
+  if (!fetchedAt) {
+    return (
+      <p className="mt-1.5 text-micro leading-snug text-dim/60">{t("price.marketNote")}</p>
+    );
+  }
+  const fetchedDate = new Date(fetchedAt);
+  const ageMs = Date.now() - fetchedDate.getTime();
+  const ageDays = ageMs / (1000 * 60 * 60 * 24);
+  const isStale = ageDays > STALE_DAYS;
+  const localDate = fetchedDate.toLocaleDateString(lang === "hr" ? "hr-HR" : "en-GB", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
+  const snapshotText = t("price.snapshotNote").replace("{date}", localDate);
+  return (
+    <div className="mt-1.5 space-y-0.5">
+      <p className="text-micro leading-snug text-dim/60">{snapshotText}</p>
+      {isStale && (
+        <p className="text-micro leading-snug text-orange-400/80">⚠ {t("price.staleNote")}</p>
+      )}
+    </div>
   );
 }
 

@@ -290,6 +290,14 @@ const STRINGS = {
     hr: "Cijena vrijedi za odabrano tržište. Za druga tržišta koristi gumbe za kupnju.",
     en: "Price applies to the selected market. For other markets use the buy buttons.",
   },
+  "price.snapshotNote": {
+    hr: "Cijena preuzeta {date}.",
+    en: "Price as of {date}.",
+  },
+  "price.staleNote": {
+    hr: "Cijena je starija od 3 mjeseca — provjeri u trgovini.",
+    en: "Price is older than 3 months — verify with the shop.",
+  },
   "rate.qualityWhat": {
     hr: "Neovisna procjena kvalitete (1–10) unutar vlastitog stila — agregat javnih ocjena i recenzija. Dodaci se ne kažnjavaju u ocjeni, nego se zasebno deklariraju.",
     en: "Independent quality estimate (1–10) within its own style — aggregated from public ratings and reviews. Additives are not penalized in the score; they are declared separately.",
