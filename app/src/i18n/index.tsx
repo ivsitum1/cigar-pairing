@@ -417,6 +417,7 @@ const STRINGS = {
     en: "Owned (not in humidor yet)",
   },
   "coll.drinks": { hr: "Pića", en: "Drinks" },
+  "coll.removeFromList": { hr: "Makni s popisa", en: "Remove from list" },
   // humidor
   "hum.title": { hr: "Humidor", en: "Humidor" },
   "hum.tabCollection": { hr: "Kolekcija", en: "Collection" },

@@ -76,6 +76,44 @@ describe("markOwnedBatch", () => {
   });
 });
 
+describe("clearItem", () => {
+  beforeAll(() => {
+    installMemoryStorage();
+  });
+
+  beforeEach(() => {
+    localStorage.clear();
+    vi.resetModules();
+  });
+
+  it("brise cijelo stanje stavke odjednom", async () => {
+    const { updateItem, clearItem, getItemState, exportData } = await import(
+      "./collection"
+    );
+    updateItem("cig-a", { owned: true, tried: true, rating: 8, note: "bilo" });
+    clearItem("cig-a");
+    expect(getItemState("cig-a")).toEqual({
+      owned: false,
+      tried: false,
+      wishlist: false,
+      rating: null,
+      note: "",
+    });
+    expect(JSON.parse(exportData()).items["cig-a"]).toBeUndefined();
+  });
+
+  it("ne dira dnevnik ni druge stavke", async () => {
+    const { updateItem, clearItem, addJournalEntry, getItemState, exportData } =
+      await import("./collection");
+    updateItem("cig-a", { owned: true });
+    updateItem("cig-b", { owned: true });
+    addJournalEntry({ cigarId: "cig-a", drinkId: null, rating: 9, note: "" });
+    clearItem("cig-a");
+    expect(getItemState("cig-b").owned).toBe(true);
+    expect(JSON.parse(exportData()).journal).toHaveLength(1);
+  });
+});
+
 describe("remapCollectionAliases", () => {
   it("spaja alias i kanonski kljuc Oliva Serie V", async () => {
     const { remapCollectionAliases } = await import("./collection");
@@ -209,6 +247,62 @@ describe("remapCollectionAliases", () => {
       ],
     });
     expect(out.journal[0].drinkId).toBeNull();
+  });
+
+  // Sirotani: kljuc koji kartica cigare nikad ne napise, pa ga se s popisa
+  // Kolekcije nije moglo ni odznaciti (vitola izbacena iz linije, ili linija
+  // svedena na jednu vitolu). Migracija ih vraca na kljuc koji kartica pise.
+  it("spusta kljuc s nepostojecom vitolom na razinu linije", async () => {
+    const { remapCollectionAliases } = await import("./collection");
+    const out = remapCollectionAliases({
+      items: {
+        "cig-1502-ruby@nepostojeca-vitola": {
+          owned: true,
+          tried: false,
+          wishlist: false,
+          rating: null,
+          note: "sirotan",
+        },
+      },
+      journal: [],
+    });
+    expect(out.items["cig-1502-ruby@nepostojeca-vitola"]).toBeUndefined();
+    expect(out.items["cig-1502-ruby"]?.note).toBe("sirotan");
+  });
+
+  it("spusta vitola-kljuc na liniju koja ima samo jednu vitolu", async () => {
+    const { remapCollectionAliases } = await import("./collection");
+    const out = remapCollectionAliases({
+      items: {
+        "cig-cao-60-torque@robusto": {
+          owned: false,
+          tried: true,
+          wishlist: false,
+          rating: 7,
+          note: "",
+        },
+      },
+      journal: [],
+    });
+    expect(out.items["cig-cao-60-torque@robusto"]).toBeUndefined();
+    expect(out.items["cig-cao-60-torque"]?.rating).toBe(7);
+  });
+
+  it("ziva vitola multi-vitola linije ostaje na svom kljucu", async () => {
+    const { remapCollectionAliases } = await import("./collection");
+    const out = remapCollectionAliases({
+      items: {
+        "cig-1502-ruby@torpedo": {
+          owned: true,
+          tried: false,
+          wishlist: false,
+          rating: null,
+          note: "",
+        },
+      },
+      journal: [],
+    });
+    expect(Object.keys(out.items)).toEqual(["cig-1502-ruby@torpedo"]);
   });
 
   it("nepoznat ID pica ostaje netaknut (ne brisemo sto ne razumijemo)", async () => {
