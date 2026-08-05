@@ -29,7 +29,7 @@ indeksima rangiranim po kvaliteti za sipping uz cigaru.
   - Hash-routing s deep-linkovima: `#/pairing/cigar/<id>` i `#/pairing/drink/<id>`
     otvaraju pairing s odabranom stavkom (dijeljivi linkovi, back tipka radi)
   - `src/data/*.json` — indeksi (321 rum, 275 whiskyja, 101 brandy/grappa, 70 gin,
-    124 vina, 26 tequila, 33 kave, 13 digestiva, 3647 cigara);
+    124 vina, 26 tequila, 33 kave, 13 digestiva, 3643 cigara);
     build ih dijeli u odvojene chunkove (`data-cigars`, `data-whiskies`, `data-rums`…) radi
     paralelnog downloada i boljeg cachea
   - **ID-jevi se nikad ne brišu.** Kolekcija i dnevnik žive u `localStorage` i
