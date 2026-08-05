@@ -53,9 +53,9 @@
     "body": 4,
     "sweetness": 2,
     "flavorTags": [
-      "dim",
+      "med",
       "hrast",
-      "med"
+      "suho-voce"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -100,8 +100,8 @@
     "sweetness": 1,
     "flavorTags": [
       "dim",
-      "kava",
-      "papar"
+      "iodin",
+      "medicinski"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -143,7 +143,8 @@
     "sweetness": 1,
     "flavorTags": [
       "dim",
-      "papar"
+      "iodin",
+      "medicinski"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -186,7 +187,7 @@
     "flavorTags": [
       "dim",
       "iodin",
-      "med"
+      "medicinski"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -227,9 +228,9 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "kremasto",
       "med",
-      "zacini"
+      "vanilija",
+      "kremasto"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -270,9 +271,8 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "citrus",
-      "hrast",
-      "suho-voce"
+      "dim",
+      "slane"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -313,7 +313,9 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "dim"
+      "suho-voce",
+      "kakao",
+      "karamela"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -354,9 +356,7 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "hrast",
-      "orasasti",
-      "suho-voce"
+      "hrast"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -397,9 +397,7 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "citrus",
-      "hrast",
-      "suho-voce"
+      "hrast"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -440,9 +438,9 @@
     "body": 4,
     "sweetness": 2,
     "flavorTags": [
-      "dim",
+      "med",
       "hrast",
-      "med"
+      "suho-voce"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -483,8 +481,8 @@
     "body": 4,
     "sweetness": 2,
     "flavorTags": [
-      "dim",
-      "papar",
+      "med",
+      "hrast",
       "suho-voce"
     ],
     "additiveStatus": "clean",
@@ -528,7 +526,7 @@
     "flavorTags": [
       "dim",
       "iodin",
-      "suho-voce"
+      "medicinski"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -570,8 +568,8 @@
     "sweetness": 1,
     "flavorTags": [
       "dim",
-      "hrast",
-      "iodin"
+      "iodin",
+      "medicinski"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -612,9 +610,9 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "anis",
-      "hrast",
-      "suho-voce"
+      "cvjetno",
+      "citrus",
+      "hrast"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -655,9 +653,9 @@
     "body": 5,
     "sweetness": 3,
     "flavorTags": [
-      "hrast",
-      "tamno-voce",
-      "zacini"
+      "suho-voce",
+      "med",
+      "cvjetno"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -747,7 +745,9 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "hrast"
+      "suho-voce",
+      "kakao",
+      "karamela"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -882,9 +882,9 @@
     "body": 4,
     "sweetness": 2,
     "flavorTags": [
-      "hrast",
-      "papar",
-      "zacini"
+      "med",
+      "vanilija",
+      "kremasto"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -929,8 +929,8 @@
     "sweetness": 2,
     "flavorTags": [
       "dim",
-      "suho-voce",
-      "zacini"
+      "iodin",
+      "medicinski"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -971,9 +971,9 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "kremasto",
       "med",
-      "zacini"
+      "vanilija",
+      "kremasto"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -1017,9 +1017,9 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "citrus",
-      "hrast",
-      "voce"
+      "dim",
+      "slane",
+      "overproof"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -1060,9 +1060,7 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "cvjetno",
-      "hrast",
-      "voce"
+      "hrast"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -1103,9 +1101,7 @@
     "body": 4,
     "sweetness": 4,
     "flavorTags": [
-      "cvjetno",
-      "suho-voce",
-      "tamno-voce"
+      "hrast"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -1146,9 +1142,9 @@
     "body": 4,
     "sweetness": 2,
     "flavorTags": [
-      "dim",
+      "med",
       "hrast",
-      "med"
+      "suho-voce"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -1189,7 +1185,7 @@
     "body": 4,
     "sweetness": 2,
     "flavorTags": [
-      "dim",
+      "med",
       "hrast",
       "suho-voce"
     ],
@@ -1232,7 +1228,7 @@
     "body": 4,
     "sweetness": 2,
     "flavorTags": [
-      "dim",
+      "med",
       "hrast",
       "suho-voce"
     ],
@@ -1276,8 +1272,9 @@
     "sweetness": 1,
     "flavorTags": [
       "dim",
-      "papar",
-      "suho-voce"
+      "iodin",
+      "medicinski",
+      "overproof"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -1319,8 +1316,9 @@
     "sweetness": 1,
     "flavorTags": [
       "dim",
-      "papar",
-      "suho-voce"
+      "iodin",
+      "medicinski",
+      "overproof"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -1404,9 +1402,9 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "anis",
-      "hrast",
-      "suho-voce"
+      "cvjetno",
+      "citrus",
+      "hrast"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -1447,9 +1445,9 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "anis",
-      "hrast",
-      "suho-voce"
+      "cvjetno",
+      "citrus",
+      "hrast"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -1490,9 +1488,7 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "cvjetno",
-      "hrast",
-      "med"
+      "hrast"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -1533,9 +1529,9 @@
     "body": 5,
     "sweetness": 4,
     "flavorTags": [
-      "cvjetno",
+      "suho-voce",
       "med",
-      "tamno-voce"
+      "cvjetno"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -1576,9 +1572,10 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "citrus",
-      "cvjetno",
-      "hrast"
+      "dim",
+      "iodin",
+      "medicinski",
+      "overproof"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -1705,9 +1702,7 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "hrast",
-      "vanilija",
-      "voce"
+      "hrast"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -1749,8 +1744,8 @@
     "sweetness": 2,
     "flavorTags": [
       "dim",
-      "med",
-      "suho-voce"
+      "iodin",
+      "medicinski"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -1792,8 +1787,8 @@
     "sweetness": 2,
     "flavorTags": [
       "dim",
-      "hrast",
-      "suho-voce"
+      "iodin",
+      "medicinski"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -1835,8 +1830,8 @@
     "sweetness": 2,
     "flavorTags": [
       "dim",
-      "karamela",
-      "suho-voce"
+      "iodin",
+      "medicinski"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -1878,8 +1873,8 @@
     "sweetness": 3,
     "flavorTags": [
       "dim",
-      "karamela",
-      "suho-voce"
+      "iodin",
+      "medicinski"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -1920,9 +1915,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "citrus",
-      "cvjetno",
-      "med"
+      "dim",
+      "iodin",
+      "medicinski"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -1963,9 +1958,9 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "hrast",
-      "orasasti",
-      "tamno-voce"
+      "dim",
+      "iodin",
+      "medicinski"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -2006,9 +2001,9 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "orasasti",
-      "suho-voce",
-      "tamno-voce"
+      "dim",
+      "iodin",
+      "medicinski"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -2049,9 +2044,9 @@
     "body": 5,
     "sweetness": 3,
     "flavorTags": [
-      "cedar",
-      "orasasti",
-      "suho-voce"
+      "dim",
+      "iodin",
+      "medicinski"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -2092,9 +2087,9 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "kremasto",
       "med",
-      "voce"
+      "vanilija",
+      "kremasto"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -2135,9 +2130,9 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "kremasto",
       "med",
-      "voce"
+      "vanilija",
+      "kremasto"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -2178,9 +2173,9 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "kremasto",
       "med",
-      "voce"
+      "vanilija",
+      "kremasto"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -2221,9 +2216,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "biljno",
-      "citrus",
-      "dim"
+      "dim",
+      "iodin",
+      "medicinski"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -2264,9 +2259,9 @@
     "body": 4,
     "sweetness": 2,
     "flavorTags": [
-      "citrus",
       "dim",
-      "med"
+      "iodin",
+      "medicinski"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -2307,9 +2302,9 @@
     "body": 4,
     "sweetness": 2,
     "flavorTags": [
-      "citrus",
       "dim",
-      "suho-voce"
+      "iodin",
+      "medicinski"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -2350,8 +2345,8 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "karamela",
       "med",
+      "hrast",
       "suho-voce"
     ],
     "additiveStatus": "clean",
@@ -2393,9 +2388,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "cvjetno",
-      "dim",
-      "med"
+      "med",
+      "hrast",
+      "suho-voce"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -2436,9 +2431,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "cvjetno",
-      "dim",
-      "med"
+      "med",
+      "hrast",
+      "suho-voce"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -2479,9 +2474,9 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "cvjetno",
-      "kremasto",
-      "voce"
+      "med",
+      "vanilija",
+      "kremasto"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -2522,9 +2517,9 @@
     "body": 3,
     "sweetness": 4,
     "flavorTags": [
-      "karamela",
-      "tropsko-voce",
-      "vanilija"
+      "suho-voce",
+      "med",
+      "cvjetno"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -2568,9 +2563,7 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "karamela",
-      "papar",
-      "vanilija"
+      "hrast"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -2615,8 +2608,8 @@
     "sweetness": 3,
     "flavorTags": [
       "karamela",
-      "papar",
-      "vanilija"
+      "vanilija",
+      "kokos"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -2661,8 +2654,9 @@
     "sweetness": 3,
     "flavorTags": [
       "karamela",
-      "papar",
-      "vanilija"
+      "vanilija",
+      "kokos",
+      "overproof"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -2707,8 +2701,8 @@
     "sweetness": 3,
     "flavorTags": [
       "karamela",
-      "papar",
-      "vanilija"
+      "vanilija",
+      "kokos"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -2753,8 +2747,8 @@
     "sweetness": 3,
     "flavorTags": [
       "karamela",
-      "papar",
-      "vanilija"
+      "vanilija",
+      "kokos"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -2798,7 +2792,7 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "zacini"
+      "hrast"
     ],
     "additiveStatus": "moderate",
     "additiveDetail": {
@@ -2890,7 +2884,7 @@
     "flavorTags": [
       "dim",
       "iodin",
-      "zacini"
+      "medicinski"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -2934,9 +2928,9 @@
     "body": 4,
     "sweetness": 2,
     "flavorTags": [
-      "hrast",
-      "med",
-      "suho-voce"
+      "cvjetno",
+      "citrus",
+      "hrast"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -2980,9 +2974,9 @@
     "body": 4,
     "sweetness": 2,
     "flavorTags": [
-      "hrast",
-      "med",
-      "suho-voce"
+      "cvjetno",
+      "citrus",
+      "hrast"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -3026,9 +3020,9 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "citrus",
       "suho-voce",
-      "vanilija"
+      "med",
+      "cvjetno"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -3072,9 +3066,9 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "cvjetno",
       "suho-voce",
-      "zacini"
+      "med",
+      "cvjetno"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -3118,9 +3112,9 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "kakao",
       "suho-voce",
-      "zacini"
+      "med",
+      "cvjetno"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -3164,9 +3158,9 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "hrast",
+      "suho-voce",
       "med",
-      "tamno-voce"
+      "cvjetno"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -3210,9 +3204,9 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "citrus",
       "suho-voce",
-      "vanilija"
+      "med",
+      "cvjetno"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -3256,9 +3250,9 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "cvjetno",
       "suho-voce",
-      "zacini"
+      "med",
+      "cvjetno"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -3302,9 +3296,9 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "kakao",
       "suho-voce",
-      "zacini"
+      "med",
+      "cvjetno"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -3348,9 +3342,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "cvjetno",
       "dim",
-      "voce"
+      "iodin",
+      "medicinski"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -3395,8 +3389,8 @@
     "sweetness": 3,
     "flavorTags": [
       "karamela",
-      "kremasto",
-      "voce"
+      "vanilija",
+      "kokos"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -3440,8 +3434,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "dim",
-      "med"
+      "med",
+      "hrast",
+      "suho-voce"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -3485,8 +3480,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "dim",
-      "med"
+      "med",
+      "hrast",
+      "suho-voce"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -3530,8 +3526,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "dim",
-      "med"
+      "med",
+      "hrast",
+      "suho-voce"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -3575,9 +3572,9 @@
     "body": 4,
     "sweetness": 2,
     "flavorTags": [
-      "dim",
-      "hrast",
-      "med"
+      "karamela",
+      "med",
+      "vanilija"
     ],
     "additiveStatus": "moderate",
     "additiveDetail": {
@@ -3621,9 +3618,9 @@
     "body": 4,
     "sweetness": 2,
     "flavorTags": [
-      "dim",
-      "hrast",
-      "med"
+      "karamela",
+      "med",
+      "vanilija"
     ],
     "additiveStatus": "moderate",
     "additiveDetail": {
@@ -3667,9 +3664,9 @@
     "body": 4,
     "sweetness": 2,
     "flavorTags": [
-      "dim",
-      "hrast",
-      "med"
+      "karamela",
+      "med",
+      "vanilija"
     ],
     "additiveStatus": "moderate",
     "additiveDetail": {
@@ -3715,7 +3712,7 @@
     "flavorTags": [
       "dim",
       "iodin",
-      "zacini"
+      "medicinski"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -3804,9 +3801,9 @@
     "body": 4,
     "sweetness": 2,
     "flavorTags": [
-      "hrast",
       "karamela",
-      "papar"
+      "vanilija",
+      "kokos"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -3850,9 +3847,7 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "hrast",
-      "karamela",
-      "papar"
+      "hrast"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -3896,9 +3891,7 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "hrast",
-      "karamela",
-      "papar"
+      "hrast"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -3942,8 +3935,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "kremasto",
-      "slatko"
+      "cvjetno",
+      "citrus",
+      "hrast"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -3987,9 +3981,9 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "citrus",
       "cvjetno",
-      "med"
+      "citrus",
+      "hrast"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -4123,9 +4117,9 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "med",
       "suho-voce",
-      "vanilija"
+      "med",
+      "cvjetno"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -4169,8 +4163,8 @@
     "body": 3,
     "sweetness": 4,
     "flavorTags": [
-      "cvjetno",
       "med",
+      "hrast",
       "suho-voce"
     ],
     "additiveStatus": "clean",
@@ -4215,9 +4209,9 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "hrast",
-      "karamela",
-      "suho-voce"
+      "suho-voce",
+      "med",
+      "cvjetno"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -4261,9 +4255,9 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "hrast",
-      "kakao",
-      "suho-voce"
+      "suho-voce",
+      "med",
+      "cvjetno"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -4307,9 +4301,9 @@
     "body": 4,
     "sweetness": 4,
     "flavorTags": [
+      "med",
       "hrast",
-      "tamno-voce",
-      "zacini"
+      "suho-voce"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -4353,9 +4347,9 @@
     "body": 5,
     "sweetness": 3,
     "flavorTags": [
-      "hrast",
-      "kakao",
-      "tamno-voce"
+      "suho-voce",
+      "med",
+      "cvjetno"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -4399,9 +4393,9 @@
     "body": 5,
     "sweetness": 3,
     "flavorTags": [
-      "hrast",
-      "karamela",
-      "tamno-voce"
+      "suho-voce",
+      "med",
+      "cvjetno"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -4445,9 +4439,9 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "cvjetno",
-      "karamela",
-      "vanilija"
+      "suho-voce",
+      "med",
+      "cvjetno"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -4491,7 +4485,9 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "hrast"
+      "suho-voce",
+      "kakao",
+      "karamela"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -4535,9 +4531,9 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "kremasto",
       "med",
-      "voce"
+      "vanilija",
+      "kremasto"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -4581,9 +4577,7 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "hrast",
-      "karamela",
-      "papar"
+      "hrast"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -4628,8 +4622,7 @@
     "sweetness": 3,
     "flavorTags": [
       "hrast",
-      "karamela",
-      "papar"
+      "overproof"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -4673,9 +4666,9 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "hrast",
       "karamela",
-      "papar"
+      "vanilija",
+      "kokos"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -4721,7 +4714,7 @@
     "flavorTags": [
       "karamela",
       "vanilija",
-      "zacini"
+      "maple"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -4765,9 +4758,9 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "citrus",
-      "hrast",
-      "suho-voce"
+      "karamela",
+      "vanilija",
+      "maple"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -4812,8 +4805,8 @@
     "sweetness": 5,
     "flavorTags": [
       "jabuka",
-      "karamela",
-      "vanilija"
+      "vanilija",
+      "slatko"
     ],
     "additiveStatus": "flavored",
     "additiveDetail": {
@@ -4858,8 +4851,8 @@
     "sweetness": 5,
     "flavorTags": [
       "karamela",
-      "tamno-voce",
-      "vanilija"
+      "vanilija",
+      "maple"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -4903,9 +4896,9 @@
     "body": 4,
     "sweetness": 2,
     "flavorTags": [
-      "hrast",
       "karamela",
-      "papar"
+      "vanilija",
+      "maple"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -4949,9 +4942,9 @@
     "body": 4,
     "sweetness": 2,
     "flavorTags": [
-      "hrast",
       "karamela",
-      "papar"
+      "vanilija",
+      "maple"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -4996,7 +4989,8 @@
     "sweetness": 5,
     "flavorTags": [
       "karamela",
-      "zacini"
+      "vanilija",
+      "maple"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -5041,8 +5035,8 @@
     "sweetness": 3,
     "flavorTags": [
       "karamela",
-      "kremasto",
-      "vanilija"
+      "vanilija",
+      "maple"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -5088,7 +5082,7 @@
     "flavorTags": [
       "karamela",
       "vanilija",
-      "zacini"
+      "maple"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -5132,9 +5126,9 @@
     "body": 2,
     "sweetness": 5,
     "flavorTags": [
-      "karamela",
       "med",
-      "vanilija"
+      "vanilija",
+      "slatko"
     ],
     "additiveStatus": "flavored",
     "additiveDetail": {
@@ -5180,7 +5174,7 @@
     "flavorTags": [
       "karamela",
       "vanilija",
-      "zacini"
+      "maple"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -5269,9 +5263,9 @@
     "body": 2,
     "sweetness": 5,
     "flavorTags": [
-      "karamela",
       "med",
-      "vanilija"
+      "vanilija",
+      "slatko"
     ],
     "additiveStatus": "flavored",
     "additiveDetail": {
@@ -5317,7 +5311,7 @@
     "flavorTags": [
       "karamela",
       "vanilija",
-      "zacini"
+      "maple"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -5406,9 +5400,9 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "cvjetno",
-      "kremasto",
-      "voce"
+      "med",
+      "vanilija",
+      "kremasto"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -5452,9 +5446,9 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "cvjetno",
-      "kremasto",
-      "voce"
+      "med",
+      "vanilija",
+      "kremasto"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -5498,9 +5492,9 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "cvjetno",
-      "kremasto",
-      "voce"
+      "tropsko-voce",
+      "vanilija",
+      "kremasto"
     ],
     "additiveStatus": "flavored",
     "additiveDetail": {
@@ -5544,9 +5538,9 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "citrus",
-      "cvjetno",
-      "vanilija"
+      "suho-voce",
+      "med",
+      "cvjetno"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -5590,9 +5584,9 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "kremasto",
       "med",
-      "voce"
+      "vanilija",
+      "kremasto"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -5636,9 +5630,9 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "karamela",
-      "kremasto",
-      "voce"
+      "med",
+      "vanilija",
+      "kremasto"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -5682,9 +5676,9 @@
     "body": 3,
     "sweetness": 4,
     "flavorTags": [
-      "kremasto",
-      "tamno-voce",
-      "voce"
+      "med",
+      "vanilija",
+      "kremasto"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -5728,9 +5722,9 @@
     "body": 3,
     "sweetness": 4,
     "flavorTags": [
-      "hrast",
-      "karamela",
-      "vanilija"
+      "med",
+      "vanilija",
+      "kremasto"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -5774,9 +5768,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "dim",
       "karamela",
-      "suho-voce"
+      "med",
+      "vanilija"
     ],
     "additiveStatus": "moderate",
     "additiveDetail": {
@@ -5820,9 +5814,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "dim",
-      "karamela",
-      "suho-voce"
+      "suho-voce",
+      "kakao",
+      "karamela"
     ],
     "additiveStatus": "moderate",
     "additiveDetail": {
@@ -5867,8 +5861,8 @@
     "sweetness": 3,
     "flavorTags": [
       "karamela",
-      "suho-voce",
-      "tamno-voce"
+      "med",
+      "vanilija"
     ],
     "additiveStatus": "moderate",
     "additiveDetail": {
@@ -5912,9 +5906,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "dim",
-      "suho-voce",
-      "umami"
+      "karamela",
+      "med",
+      "vanilija"
     ],
     "additiveStatus": "moderate",
     "additiveDetail": {
@@ -5958,9 +5952,9 @@
     "body": 4,
     "sweetness": 2,
     "flavorTags": [
-      "dim",
+      "karamela",
       "med",
-      "suho-voce"
+      "vanilija"
     ],
     "additiveStatus": "moderate",
     "additiveDetail": {
@@ -6004,9 +5998,9 @@
     "body": 4,
     "sweetness": 1,
     "flavorTags": [
-      "dim",
-      "papar",
-      "zacini"
+      "karamela",
+      "med",
+      "vanilija"
     ],
     "additiveStatus": "moderate",
     "additiveDetail": {
@@ -6051,7 +6045,7 @@
     "sweetness": 3,
     "flavorTags": [
       "karamela",
-      "travnato",
+      "med",
       "vanilija"
     ],
     "additiveStatus": "moderate",
@@ -6097,7 +6091,7 @@
     "sweetness": 3,
     "flavorTags": [
       "karamela",
-      "travnato",
+      "med",
       "vanilija"
     ],
     "additiveStatus": "moderate",
@@ -6142,9 +6136,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "dim",
-      "karamela",
-      "suho-voce"
+      "suho-voce",
+      "kakao",
+      "karamela"
     ],
     "additiveStatus": "moderate",
     "additiveDetail": {
@@ -6188,8 +6182,8 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "cvjetno",
-      "suho-voce",
+      "karamela",
+      "med",
       "vanilija"
     ],
     "additiveStatus": "moderate",
@@ -6234,8 +6228,8 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
+      "karamela",
       "med",
-      "suho-voce",
       "vanilija"
     ],
     "additiveStatus": "moderate",
@@ -6280,8 +6274,8 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "cvjetno",
-      "suho-voce",
+      "karamela",
+      "med",
       "vanilija"
     ],
     "additiveStatus": "moderate",
@@ -6326,8 +6320,8 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "cvjetno",
-      "suho-voce",
+      "karamela",
+      "med",
       "vanilija"
     ],
     "additiveStatus": "moderate",
@@ -6372,8 +6366,8 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "cvjetno",
-      "suho-voce",
+      "karamela",
+      "med",
       "vanilija"
     ],
     "additiveStatus": "moderate",
@@ -6418,9 +6412,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "dim",
-      "suho-voce",
-      "umami"
+      "karamela",
+      "med",
+      "vanilija"
     ],
     "additiveStatus": "moderate",
     "additiveDetail": {
@@ -6464,9 +6458,9 @@
     "body": 4,
     "sweetness": 2,
     "flavorTags": [
-      "dim",
+      "karamela",
       "med",
-      "suho-voce"
+      "vanilija"
     ],
     "additiveStatus": "moderate",
     "additiveDetail": {
@@ -6510,9 +6504,9 @@
     "body": 4,
     "sweetness": 2,
     "flavorTags": [
-      "dim",
+      "karamela",
       "med",
-      "suho-voce"
+      "vanilija"
     ],
     "additiveStatus": "moderate",
     "additiveDetail": {
@@ -6556,8 +6550,8 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "cvjetno",
-      "suho-voce",
+      "karamela",
+      "med",
       "vanilija"
     ],
     "additiveStatus": "moderate",
@@ -6602,8 +6596,8 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "cvjetno",
-      "suho-voce",
+      "karamela",
+      "med",
       "vanilija"
     ],
     "additiveStatus": "moderate",
@@ -6648,9 +6642,10 @@
     "body": 5,
     "sweetness": 2,
     "flavorTags": [
-      "dim",
-      "hrast",
-      "suho-voce"
+      "karamela",
+      "med",
+      "vanilija",
+      "overproof"
     ],
     "additiveStatus": "moderate",
     "additiveDetail": {
@@ -6694,8 +6689,8 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "cvjetno",
-      "suho-voce",
+      "karamela",
+      "med",
       "vanilija"
     ],
     "additiveStatus": "moderate",
@@ -6740,8 +6735,8 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "cvjetno",
-      "suho-voce",
+      "karamela",
+      "med",
       "vanilija"
     ],
     "additiveStatus": "moderate",
@@ -6786,9 +6781,9 @@
     "body": 4,
     "sweetness": 1,
     "flavorTags": [
-      "dim",
-      "papar",
-      "zacini"
+      "karamela",
+      "med",
+      "vanilija"
     ],
     "additiveStatus": "moderate",
     "additiveDetail": {
@@ -6832,9 +6827,9 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "cvjetno",
       "karamela",
-      "med"
+      "med",
+      "vanilija"
     ],
     "additiveStatus": "moderate",
     "additiveDetail": {
@@ -6878,9 +6873,11 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "koza",
       "tamno-voce",
-      "voce"
+      "kakao",
+      "koza",
+      "hrast",
+      "zacini"
     ],
     "qualityScore": 8,
     "priceEUR": {
@@ -7085,6 +7082,8 @@
     "sweetness": 3,
     "flavorTags": [
       "med",
+      "vanilija",
+      "suho-voce",
       "orasasti"
     ],
     "qualityScore": 7.5,
@@ -7330,8 +7329,9 @@
     "sweetness": 2,
     "flavorTags": [
       "citrus",
+      "med",
       "dim",
-      "umami"
+      "mineralno"
     ],
     "qualityScore": 7.5,
     "priceEUR": {
@@ -7370,8 +7370,10 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "citrus",
-      "kakao"
+      "naranca",
+      "kakao",
+      "suho-voce",
+      "hrast"
     ],
     "qualityScore": 7,
     "priceEUR": {
@@ -7493,8 +7495,8 @@
     "flavorTags": [
       "dim",
       "papar",
-      "umami",
-      "zacini"
+      "mineralno",
+      "citrus"
     ],
     "qualityScore": 8,
     "priceEUR": {
@@ -7617,8 +7619,8 @@
     "sweetness": 2,
     "flavorTags": [
       "citrus",
-      "kava",
-      "umami"
+      "vanilija",
+      "med"
     ],
     "qualityScore": 7.5,
     "priceEUR": {
@@ -7658,8 +7660,9 @@
     "sweetness": 1,
     "flavorTags": [
       "dim",
-      "iodin",
-      "medicinski"
+      "jod",
+      "mineralno",
+      "koza"
     ],
     "qualityScore": 8,
     "priceEUR": {
@@ -7699,7 +7702,8 @@
     "sweetness": 1,
     "flavorTags": [
       "dim",
-      "kava",
+      "citrus",
+      "mineralno",
       "papar"
     ],
     "qualityScore": 8,
@@ -7740,8 +7744,10 @@
     "sweetness": 2,
     "flavorTags": [
       "dim",
-      "kava",
-      "tamno-voce"
+      "tamno-voce",
+      "kakao",
+      "overproof",
+      "koza"
     ],
     "qualityScore": 9,
     "priceEUR": {
@@ -7780,9 +7786,9 @@
     "body": 4,
     "sweetness": 2,
     "flavorTags": [
-      "citrus",
       "dim",
-      "zacini"
+      "citrus",
+      "mineralno"
     ],
     "qualityScore": 7.5,
     "priceEUR": {
@@ -7821,9 +7827,10 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "biljno",
+      "dim",
       "citrus",
-      "dim"
+      "mineralno",
+      "trava-slatka"
     ],
     "qualityScore": 7.5,
     "priceEUR": {
@@ -7862,9 +7869,10 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "med",
+      "suho-voce",
       "orasasti",
-      "suho-voce"
+      "mineralno",
+      "karamela"
     ],
     "qualityScore": 8,
     "priceEUR": {
@@ -7945,8 +7953,9 @@
     "sweetness": 4,
     "flavorTags": [
       "karamela",
-      "kremasto",
-      "vanilija"
+      "vanilija",
+      "psenica",
+      "hrast"
     ],
     "qualityScore": 7,
     "priceEUR": {
@@ -7985,9 +7994,10 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "hrast",
       "karamela",
-      "vanilija"
+      "vanilija",
+      "zacini",
+      "orasasti"
     ],
     "qualityScore": 7,
     "priceEUR": {
@@ -8026,9 +8036,10 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "hrast",
       "karamela",
-      "vanilija"
+      "vanilija",
+      "med",
+      "hrast"
     ],
     "qualityScore": 7,
     "priceEUR": {
@@ -8067,8 +8078,10 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
+      "karamela",
       "hrast",
-      "koza"
+      "koza",
+      "suho-voce"
     ],
     "qualityScore": 8,
     "priceEUR": {
@@ -8107,8 +8120,9 @@
     "body": 4,
     "sweetness": 2,
     "flavorTags": [
-      "hrast",
       "karamela",
+      "zacini",
+      "hrast",
       "papar"
     ],
     "qualityScore": 7.5,
@@ -8149,8 +8163,10 @@
     "sweetness": 3,
     "flavorTags": [
       "karamela",
-      "med",
-      "vanilija"
+      "zacini",
+      "hrast",
+      "overproof",
+      "koza"
     ],
     "qualityScore": 8.5,
     "priceEUR": {
@@ -8189,9 +8205,10 @@
     "body": 4,
     "sweetness": 2,
     "flavorTags": [
-      "hrast",
       "karamela",
-      "papar"
+      "hrast",
+      "orasasti",
+      "kakao"
     ],
     "qualityScore": 7.5,
     "priceEUR": {
@@ -8230,9 +8247,10 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "hrast",
       "karamela",
-      "vanilija"
+      "vanilija",
+      "hrast",
+      "med"
     ],
     "qualityScore": 7,
     "priceEUR": {
@@ -8271,9 +8289,10 @@
     "body": 4,
     "sweetness": 2,
     "flavorTags": [
-      "dim",
-      "kremasto",
-      "zacini"
+      "zacini",
+      "papar",
+      "karamela",
+      "citrus"
     ],
     "qualityScore": 7.5,
     "priceEUR": {
@@ -8353,9 +8372,10 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "kremasto",
+      "suho-voce",
+      "zacini",
       "med",
-      "zacini"
+      "orasasti"
     ],
     "qualityScore": 8,
     "priceEUR": {
@@ -8394,9 +8414,10 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "kremasto",
       "voce",
-      "zacini"
+      "med",
+      "vanilija",
+      "trava-slatka"
     ],
     "qualityScore": 7.5,
     "priceEUR": {
@@ -8475,9 +8496,10 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "cvjetno",
+      "voce",
       "med",
-      "suho-voce"
+      "mizunara",
+      "zacini"
     ],
     "qualityScore": 8,
     "priceEUR": {
@@ -8516,8 +8538,9 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
+      "tropsko-voce",
       "med",
-      "tropsko-voce"
+      "vanilija"
     ],
     "qualityScore": 7.5,
     "priceEUR": {
@@ -8560,8 +8583,9 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
+      "tropsko-voce",
       "med",
-      "tropsko-voce"
+      "vanilija"
     ],
     "qualityScore": 7.5,
     "priceEUR": {
@@ -8769,8 +8793,10 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
+      "voce",
       "hrast",
-      "jabuka"
+      "med",
+      "orasasti"
     ],
     "qualityScore": 7.5,
     "priceEUR": {
@@ -8891,9 +8917,11 @@
     "body": 5,
     "sweetness": 1,
     "flavorTags": [
-      "citrus",
       "dim",
-      "papar"
+      "papar",
+      "tamno-voce",
+      "overproof",
+      "mineralno"
     ],
     "qualityScore": 8.5,
     "priceEUR": {
@@ -8933,8 +8961,9 @@
     "sweetness": 2,
     "flavorTags": [
       "dim",
-      "iodin",
-      "karamela"
+      "jod",
+      "suho-voce",
+      "koza"
     ],
     "qualityScore": 8,
     "priceEUR": {
@@ -8974,7 +9003,9 @@
     "sweetness": 2,
     "flavorTags": [
       "dim",
-      "travnato"
+      "overproof",
+      "citrus",
+      "mineralno"
     ],
     "qualityScore": 8.5,
     "priceEUR": {
@@ -9013,9 +9044,10 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
+      "suho-voce",
       "karamela",
       "orasasti",
-      "suho-voce"
+      "mineralno"
     ],
     "qualityScore": 8.5,
     "priceEUR": {
@@ -9095,9 +9127,11 @@
     "body": 5,
     "sweetness": 2,
     "flavorTags": [
-      "hrast",
       "karamela",
-      "papar"
+      "hrast",
+      "overproof",
+      "vanilija",
+      "orasasti"
     ],
     "qualityScore": 8,
     "priceEUR": {
@@ -9301,8 +9335,9 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "kremasto",
-      "med",
+      "suho-voce",
+      "orasasti",
+      "vino",
       "zacini"
     ],
     "qualityScore": 8,
@@ -9383,8 +9418,10 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "dim",
-      "med"
+      "med",
+      "voce",
+      "zacini",
+      "dim"
     ],
     "qualityScore": 7.5,
     "priceEUR": {
@@ -9427,9 +9464,10 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "dim",
-      "hrast",
-      "med"
+      "med",
+      "voce",
+      "zacini",
+      "dim"
     ],
     "qualityScore": 7.5,
     "priceEUR": {
@@ -9630,8 +9668,8 @@
     "body": 2,
     "sweetness": 3,
     "flavorTags": [
-      "jabuka",
       "med",
+      "voce",
       "vanilija"
     ],
     "additiveStatus": "unknown",
@@ -9671,9 +9709,8 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "med",
       "suho-voce",
-      "voce",
+      "med",
       "zacini"
     ],
     "additiveStatus": "unknown",
@@ -9713,6 +9750,7 @@
     "body": 2,
     "sweetness": 3,
     "flavorTags": [
+      "med",
       "karamela",
       "voce"
     ],
@@ -9753,9 +9791,9 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "kakao",
       "suho-voce",
-      "voce"
+      "kakao",
+      "med"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -9794,8 +9832,9 @@
     "body": 2,
     "sweetness": 3,
     "flavorTags": [
-      "hrast",
-      "zacini"
+      "med",
+      "zacini",
+      "cvjetno"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -9834,8 +9873,9 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "citrus",
-      "kakao"
+      "suho-voce",
+      "kakao",
+      "hrast"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -9993,8 +10033,8 @@
     "body": 2,
     "sweetness": 3,
     "flavorTags": [
-      "tropsko-voce",
-      "vanilija"
+      "vanilija",
+      "voce"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -10230,9 +10270,9 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "kremasto",
-      "med",
-      "vanilija"
+      "voce",
+      "vanilija",
+      "kremasto"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -10272,8 +10312,8 @@
     "sweetness": 4,
     "flavorTags": [
       "kakao",
-      "kremasto",
-      "vanilija"
+      "kava",
+      "kremasto"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -10312,9 +10352,8 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "kremasto",
-      "voce",
-      "zacini"
+      "suho-voce",
+      "vanilija"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -10353,9 +10392,9 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "hrast",
-      "kremasto",
-      "suho-voce"
+      "suho-voce",
+      "vanilija",
+      "hrast"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -10433,8 +10472,9 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "citrus",
-      "med"
+      "med",
+      "suho-voce",
+      "hrast"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -10513,8 +10553,9 @@
     "body": 1,
     "sweetness": 3,
     "flavorTags": [
+      "vanilija",
       "citrus",
-      "vanilija"
+      "kremasto"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -10553,8 +10594,9 @@
     "body": 2,
     "sweetness": 3,
     "flavorTags": [
+      "orasasti",
       "citrus",
-      "orasasti"
+      "kremasto"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -10593,9 +10635,9 @@
     "body": 3,
     "sweetness": 4,
     "flavorTags": [
-      "slatko",
-      "tamno-voce",
-      "voce"
+      "suho-voce",
+      "karamela",
+      "kakao"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -10714,9 +10756,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "citrus",
-      "med",
-      "voce"
+      "vanilija",
+      "kremasto",
+      "karamela"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -10755,8 +10797,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "dim",
-      "voce"
+      "voce",
+      "hrast",
+      "dim"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -10955,8 +10998,8 @@
     "sweetness": 3,
     "flavorTags": [
       "karamela",
-      "kremasto",
-      "voce"
+      "vanilija",
+      "cvjetno"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -10996,8 +11039,8 @@
     "sweetness": 3,
     "flavorTags": [
       "karamela",
-      "vanilija",
-      "voce"
+      "zacini",
+      "hrast"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -11036,8 +11079,8 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "hrast",
-      "karamela"
+      "karamela",
+      "vanilija"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -11116,9 +11159,9 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "hrast",
-      "karamela",
-      "papar"
+      "zacini",
+      "papar",
+      "vanilija"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -11316,8 +11359,8 @@
     "body": 2,
     "sweetness": 3,
     "flavorTags": [
+      "voce",
       "citrus",
-      "hrast",
       "vanilija"
     ],
     "additiveStatus": "unknown",
@@ -11516,8 +11559,9 @@
     "body": 2,
     "sweetness": 3,
     "flavorTags": [
+      "voce",
       "med",
-      "slatko"
+      "kremasto"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -11556,8 +11600,9 @@
     "body": 2,
     "sweetness": 3,
     "flavorTags": [
-      "dim",
-      "umami"
+      "med",
+      "voce",
+      "dim"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -11636,8 +11681,9 @@
     "body": 2,
     "sweetness": 3,
     "flavorTags": [
-      "dim",
-      "med"
+      "med",
+      "cvjetno",
+      "dim"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -11717,7 +11763,8 @@
     "sweetness": 3,
     "flavorTags": [
       "citrus",
-      "vanilija"
+      "vanilija",
+      "cvjetno"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -11795,9 +11842,9 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "hrast",
       "karamela",
-      "suho-voce"
+      "med",
+      "vanilija"
     ],
     "additiveStatus": "moderate",
     "additiveDetail": {

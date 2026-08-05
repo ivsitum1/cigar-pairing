@@ -8,8 +8,8 @@
     "body": 3,
     "sweetness": 1,
     "flavorTags": [
-      "borovica",
-      "tamno-voce",
+      "cvjetno",
+      "citrus",
       "zacini"
     ],
     "qualityScore": 9.2,
@@ -45,8 +45,8 @@
     "body": 3,
     "sweetness": 1,
     "flavorTags": [
-      "borovica",
-      "tamno-voce",
+      "cvjetno",
+      "citrus",
       "zacini"
     ],
     "qualityScore": 9.2,
@@ -87,8 +87,8 @@
     "body": 3,
     "sweetness": 1,
     "flavorTags": [
-      "borovica",
-      "tamno-voce",
+      "cvjetno",
+      "citrus",
       "zacini"
     ],
     "qualityScore": 9.2,
@@ -129,9 +129,9 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "biljno",
       "cvjetno",
-      "kamilica"
+      "citrus",
+      "zacini"
     ],
     "qualityScore": 8.8,
     "abv": 40.0,
@@ -171,9 +171,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "biljno",
+      "cvjetno",
       "citrus",
-      "papar"
+      "zacini"
     ],
     "qualityScore": 8.6,
     "abv": 40.0,
@@ -213,9 +213,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "biljno",
+      "cvjetno",
       "citrus",
-      "cvjetno"
+      "zacini"
     ],
     "qualityScore": 8.6,
     "abv": 40.0,
@@ -256,8 +256,7 @@
     "sweetness": 2,
     "flavorTags": [
       "biljno",
-      "travnato",
-      "zacini"
+      "citrus"
     ],
     "qualityScore": 8.5,
     "abv": 42.7,
@@ -293,8 +292,7 @@
     "sweetness": 2,
     "flavorTags": [
       "biljno",
-      "travnato",
-      "zacini"
+      "citrus"
     ],
     "qualityScore": 8.5,
     "abv": 42.7,
@@ -330,8 +328,7 @@
     "sweetness": 2,
     "flavorTags": [
       "biljno",
-      "travnato",
-      "zacini"
+      "citrus"
     ],
     "qualityScore": 8.5,
     "abv": 42.7,
@@ -367,8 +364,7 @@
     "sweetness": 2,
     "flavorTags": [
       "biljno",
-      "travnato",
-      "zacini"
+      "citrus"
     ],
     "qualityScore": 8.5,
     "abv": 42.7,
@@ -403,9 +399,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
+      "cvjetno",
       "citrus",
-      "kamilica",
-      "travnato"
+      "zacini"
     ],
     "qualityScore": 8.5,
     "abv": 40.0,
@@ -445,9 +441,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
+      "travnato",
       "citrus",
-      "cvjetno",
-      "travnato"
+      "biljno"
     ],
     "qualityScore": 8.4,
     "abv": 40.0,
@@ -487,9 +483,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "biljno",
+      "cvjetno",
       "citrus",
-      "papar"
+      "zacini"
     ],
     "qualityScore": 8.3,
     "abv": 45.7,
@@ -527,9 +523,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "biljno",
+      "cvjetno",
       "citrus",
-      "papar"
+      "zacini"
     ],
     "qualityScore": 8.3,
     "abv": 54.5,
@@ -567,9 +563,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "borovica",
+      "travnato",
       "citrus",
-      "travnato"
+      "biljno"
     ],
     "qualityScore": 8.3,
     "abv": 40.0,
@@ -588,8 +584,8 @@
       "best": "Martini ili G&T"
     },
     "cigarHint": {
-      "hr": "Connecticut — klasična borovica uz blagu cigaru",
-      "en": ""
+      "hr": "Čist London dry profil — most prema cigari je klasična borovica i citrus; pouzdan martini uz srednju cigaru, svježina protiv kremastog dima.",
+      "en": "A clean London dry profile — the bridge to a cigar is classic juniper and citrus; a dependable martini beside a medium cigar, freshness against creamy smoke."
     },
     "notes": {
       "hr": "Klasični London Dry craft; martini ili G&T uz Connecticut.",
@@ -609,9 +605,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "borovica",
+      "travnato",
       "citrus",
-      "travnato"
+      "biljno"
     ],
     "qualityScore": 8.3,
     "abv": 41.6,
@@ -651,7 +647,7 @@
     "body": 4,
     "sweetness": 1,
     "flavorTags": [
-      "borovica",
+      "cvjetno",
       "citrus",
       "zacini"
     ],
@@ -727,9 +723,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
+      "travnato",
       "biljno",
-      "borovica",
-      "korijen"
+      "citrus"
     ],
     "qualityScore": 8.2,
     "abv": 40.0,
@@ -748,8 +744,8 @@
       "best": "Martini ili G&T"
     },
     "cigarHint": {
-      "hr": "Connecticut — klasična borovica uz blagu cigaru",
-      "en": ""
+      "hr": "Mekši od klasičnog London dry — most je zaobljena borovica; dobar G&T uz srednju cigaru ili martini, gdje blaža žestina ne gazi kremasti dim.",
+      "en": "Softer than a classic London dry — the bridge is rounded juniper; a good G&T beside a medium cigar or a martini, where the gentler heat doesn't trample creamy smoke."
     },
     "notes": {
       "hr": "Mekši od London Dryja; neat/martini uz blagu cigaru.",
@@ -769,9 +765,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
+      "travnato",
       "biljno",
-      "borovica",
-      "korijen"
+      "citrus"
     ],
     "qualityScore": 8.2,
     "abv": 41.2,
@@ -810,8 +806,8 @@
     "sweetness": 3,
     "flavorTags": [
       "cvjetno",
-      "kamilica",
-      "med"
+      "citrus",
+      "zacini"
     ],
     "qualityScore": 8.1,
     "abv": 43.0,
@@ -846,9 +842,9 @@
     "body": 2,
     "sweetness": 2,
     "flavorTags": [
-      "citrus",
       "cvjetno",
-      "kamilica"
+      "citrus",
+      "zacini"
     ],
     "qualityScore": 8.1,
     "abv": 43.0,
@@ -884,8 +880,8 @@
     "sweetness": 3,
     "flavorTags": [
       "cvjetno",
-      "kamilica",
-      "slatko"
+      "citrus",
+      "zacini"
     ],
     "qualityScore": 8.1,
     "abv": 43.0,
@@ -920,8 +916,8 @@
     "body": 4,
     "sweetness": 2,
     "flavorTags": [
+      "cvjetno",
       "citrus",
-      "hrast",
       "zacini"
     ],
     "qualityScore": 8.0,
@@ -957,7 +953,7 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "biljno",
+      "cvjetno",
       "citrus",
       "zacini"
     ],
@@ -994,7 +990,7 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "biljno",
+      "cvjetno",
       "citrus",
       "zacini"
     ],
@@ -1020,48 +1016,6 @@
       "en": ""
     },
     "category": "gin",
-    "profileEstimated": false
-  },
-  {
-    "id": "gin-plymouth-gin-41-2-vol-0-7l",
-    "name": "Plymouth Gin",
-    "style": "plymouth",
-    "region": "Plymouth, UK",
-    "botanicalProfile": "classic-juniper",
-    "body": 3,
-    "sweetness": 2,
-    "flavorTags": [
-      "biljno",
-      "borovica",
-      "korijen"
-    ],
-    "qualityScore": 8.0,
-    "abv": 41.2,
-    "priceEUR": {
-      "min": 28.0,
-      "max": 28.0
-    },
-    "shopHR": "allez.hr",
-    "priceUrl": "",
-    "pairable": true,
-    "serving": {
-      "neat": 2,
-      "tonic": 3,
-      "martini": 3,
-      "best": "G&T ili martini",
-      "highball": 3
-    },
-    "cigarHint": {
-      "hr": "Mekši od klasičnog London dry — most je zaobljena borovica; dobar G&T uz srednju cigaru ili martini, gdje blaža žestina ne gazi kremasti dim.",
-      "en": "Softer than a classic London dry — the bridge is rounded juniper; a good G&T beside a medium cigar or a martini, where the gentler heat doesn't trample creamy smoke."
-    },
-    "notes": {
-      "hr": "Mekši od klasičnog London dry — dobar G&T uz srednju cigaru.",
-      "en": "Softer than a classic London dry — a good G&T with a medium cigar."
-    },
-    "meta": true,
-    "category": "gin",
-    "status": "META",
     "profileEstimated": false
   },
   {
@@ -1094,79 +1048,38 @@
       "best": "G&T s mediteranskim tonikom"
     },
     "cigarHint": {
-      "hr": "Connecticut / blagi Habano — biljno-citrusni gin",
-      "en": ""
-    },
-    "notes": {
-      "hr": "Lokalni craft gin — dobar uz blažu Habano.",
-      "en": ""
-    },
-    "category": "gin",
-    "meta": true,
-    "status": "META"
-  },
-  {
-    "id": "gin-dugave-gin-45-vol-0-7l",
-    "name": "Dugave Gin",
-    "style": "croatian",
-    "region": "Hrvatska",
-    "botanicalProfile": "mediterranean",
-    "body": 3,
-    "sweetness": 2,
-    "flavorTags": [
-      "juniper",
-      "mediterran",
-      "zacini"
-    ],
-    "qualityScore": 7.9,
-    "abv": 45.0,
-    "priceEUR": {
-      "min": 30.0,
-      "max": 30.0
-    },
-    "shopHR": "lokalno",
-    "priceUrl": "",
-    "pairable": true,
-    "serving": {
-      "neat": 2,
-      "tonic": 3,
-      "martini": 3,
-      "best": "G&T ili martini",
-      "highball": 3
-    },
-    "cigarHint": {
       "hr": "Lokalni craft s mediteranskim biljem — most je začinska svježina uz blažu Habano; G&T ili martini da botanika ostane u prvom planu, bez guranja tijela.",
       "en": "A local craft with Mediterranean herbs — the bridge is a herbal lift beside a milder Habano; a G&T or martini to keep the botanicals forward, without pushing body."
     },
     "notes": {
       "hr": "Lokalni craft gin — dobar uz blažu Habano.",
-      "en": "A local craft gin — good with a milder Habano."
+      "en": ""
     },
-    "meta": true,
     "category": "gin",
+    "meta": true,
     "status": "META"
   },
   {
     "id": "gin-beefeater-24",
-    "name": "BEEFEATER 24",
+    "name": "Beefeater 24",
     "style": "london-dry",
     "region": "London, UK",
     "botanicalProfile": "classic-juniper",
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
+      "travnato",
       "citrus",
-      "cvjetno",
-      "travnato"
+      "biljno"
     ],
     "qualityScore": 7.8,
     "abv": 40.0,
     "priceEUR": {
-      "min": 29.0,
-      "max": 29.0
+      "min": 29,
+      "max": 32.38
     },
-    "shopHR": "ecuga.com",
-    "priceUrl": null,
+    "shopHR": "allez.hr",
+    "priceUrl": "https://allez.hr/shop/svi-proizvodi/beefeater-24-dry-gin-45-07-l",
     "pairable": true,
     "serving": {
       "neat": 2,
@@ -1176,8 +1089,8 @@
       "best": "Martini ili G&T"
     },
     "cigarHint": {
-      "hr": "Connecticut — klasična borovica uz blagu cigaru",
-      "en": ""
+      "hr": "Čaj i citrus na London dry bazi — most je taninska gorčina čaja koja odgovara duhanskom začinu; lagana do srednja cigara, martini ili G&T kao aperitiv.",
+      "en": "Tea and citrus on a London dry base — the bridge is the tea's tannic edge meeting tobacco spice; a mild-to-medium cigar, martini or G&T as an aperitif."
     },
     "notes": {
       "hr": "Beefeater 24 — japanski sencha nijansa; solidan martini.",
@@ -1186,6 +1099,7 @@
     "category": "gin",
     "meta": true,
     "status": "META",
+    "priceApprox": true,
     "profileEstimated": false
   },
   {
@@ -1198,8 +1112,7 @@
     "sweetness": 2,
     "flavorTags": [
       "biljno",
-      "citrus",
-      "cvjetno"
+      "citrus"
     ],
     "qualityScore": 7.8,
     "abv": 41.0,
@@ -1235,8 +1148,7 @@
     "sweetness": 2,
     "flavorTags": [
       "biljno",
-      "citrus",
-      "travnato"
+      "citrus"
     ],
     "qualityScore": 7.8,
     "abv": 41.0,
@@ -1272,8 +1184,7 @@
     "sweetness": 2,
     "flavorTags": [
       "biljno",
-      "citrus",
-      "travnato"
+      "citrus"
     ],
     "qualityScore": 7.8,
     "abv": 41.0,
@@ -1309,8 +1220,7 @@
     "sweetness": 2,
     "flavorTags": [
       "biljno",
-      "citrus",
-      "voce"
+      "citrus"
     ],
     "qualityScore": 7.8,
     "abv": 41.0,
@@ -1337,90 +1247,6 @@
     "profileEstimated": false
   },
   {
-    "id": "gin-sipsmith-london-dry-gin-41-6-vol-0-7l",
-    "name": "Sipsmith",
-    "style": "london-dry",
-    "region": "London, UK",
-    "botanicalProfile": "classic-juniper",
-    "body": 3,
-    "sweetness": 2,
-    "flavorTags": [
-      "borovica",
-      "citrus",
-      "travnato"
-    ],
-    "qualityScore": 7.8,
-    "abv": 41.6,
-    "priceEUR": {
-      "min": 45.4,
-      "max": 45.4
-    },
-    "shopHR": "allez.hr",
-    "priceUrl": null,
-    "pairable": true,
-    "serving": {
-      "neat": 2,
-      "tonic": 3,
-      "martini": 3,
-      "best": "G&T ili martini",
-      "highball": 3
-    },
-    "cigarHint": {
-      "hr": "Čist London dry profil — most prema cigari je klasična borovica i citrus; pouzdan martini uz srednju cigaru, svježina protiv kremastog dima.",
-      "en": "A clean London dry profile — the bridge to a cigar is classic juniper and citrus; a dependable martini beside a medium cigar, freshness against creamy smoke."
-    },
-    "notes": {
-      "hr": "Čist London dry profil — pouzdan za martini.",
-      "en": "A clean London dry profile — dependable for a martini."
-    },
-    "meta": true,
-    "category": "gin",
-    "status": "META",
-    "profileEstimated": false
-  },
-  {
-    "id": "gin-beefeater-24-london-dry-gin-45-vol-0-7l",
-    "name": "Beefeater 24",
-    "style": "london-dry",
-    "region": "London, UK",
-    "botanicalProfile": "classic-juniper",
-    "body": 3,
-    "sweetness": 2,
-    "flavorTags": [
-      "citrus",
-      "cvjetno",
-      "travnato"
-    ],
-    "qualityScore": 7.7,
-    "abv": 45.0,
-    "priceEUR": {
-      "min": 32.38,
-      "max": 32.38
-    },
-    "shopHR": "allez.hr",
-    "priceUrl": "https://allez.hr/shop/svi-proizvodi/beefeater-24-dry-gin-45-07-l",
-    "pairable": true,
-    "serving": {
-      "neat": 2,
-      "tonic": 3,
-      "martini": 3,
-      "best": "G&T ili martini",
-      "highball": 3
-    },
-    "cigarHint": {
-      "hr": "Čaj i citrus na London dry bazi — most je taninska gorčina čaja koja odgovara duhanskom začinu; lagana do srednja cigara, martini ili G&T kao aperitiv.",
-      "en": "Tea and citrus on a London dry base — the bridge is the tea's tannic edge meeting tobacco spice; a mild-to-medium cigar, martini or G&T as an aperitif."
-    },
-    "notes": {
-      "hr": "Tea & citrus twist na London dry.",
-      "en": "A tea-and-citrus twist on London dry."
-    },
-    "meta": true,
-    "category": "gin",
-    "status": "META",
-    "profileEstimated": false
-  },
-  {
     "id": "gin-citadelle",
     "name": "CITADELLE",
     "style": "contemporary",
@@ -1429,9 +1255,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "anis",
-      "biljno",
-      "citrus"
+      "cvjetno",
+      "citrus",
+      "zacini"
     ],
     "qualityScore": 7.7,
     "abv": 40.0,
@@ -1469,9 +1295,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "anis",
-      "biljno",
-      "citrus"
+      "cvjetno",
+      "citrus",
+      "zacini"
     ],
     "qualityScore": 7.7,
     "abv": 44.0,
@@ -1506,9 +1332,9 @@
     "body": 4,
     "sweetness": 2,
     "flavorTags": [
-      "anis",
+      "cvjetno",
       "citrus",
-      "hrast"
+      "zacini"
     ],
     "qualityScore": 7.7,
     "abv": 45.2,
@@ -1543,9 +1369,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "biljno",
       "cvjetno",
-      "korijen"
+      "citrus",
+      "zacini"
     ],
     "qualityScore": 7.6,
     "abv": 40.0,
@@ -1585,9 +1411,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "biljno",
       "cvjetno",
-      "korijen"
+      "citrus",
+      "zacini"
     ],
     "qualityScore": 7.6,
     "abv": 40.0,
@@ -1606,8 +1432,8 @@
       "best": "Cisti ili martini"
     },
     "cigarHint": {
-      "hr": "Connecticut / blagi Habano — gusta botanika",
-      "en": ""
+      "hr": "American dry s cvjetno-anisnim tonom — nježan profil traži laganu Connecticut cigaru; most je svježina anisa i cvijeća uz laki, kremasti dim.",
+      "en": "An American dry with a floral-anise tone — the delicate profile wants a mild Connecticut cigar; the bridge is anise and floral lift beside light, creamy smoke."
     },
     "notes": {
       "hr": "Američki contemporary; čist uz blagu Habano.",
@@ -1615,48 +1441,6 @@
     },
     "category": "gin",
     "meta": true,
-    "status": "META",
-    "profileEstimated": false
-  },
-  {
-    "id": "gin-aviation-gin-42-vol-0-7l",
-    "name": "Aviation Gin",
-    "style": "contemporary",
-    "region": "SAD",
-    "botanicalProfile": "classic-juniper",
-    "body": 3,
-    "sweetness": 2,
-    "flavorTags": [
-      "biljno",
-      "cvjetno",
-      "korijen"
-    ],
-    "qualityScore": 7.6,
-    "abv": 42.0,
-    "priceEUR": {
-      "min": 34.0,
-      "max": 34.0
-    },
-    "shopHR": "allez.hr",
-    "priceUrl": "",
-    "pairable": true,
-    "serving": {
-      "neat": 3,
-      "tonic": 2,
-      "martini": 3,
-      "best": "Cisti ili martini",
-      "highball": 2
-    },
-    "cigarHint": {
-      "hr": "American dry s cvjetno-anisnim tonom — nježan profil traži laganu Connecticut cigaru; most je svježina anisa i cvijeća uz laki, kremasti dim.",
-      "en": "An American dry with a floral-anise tone — the delicate profile wants a mild Connecticut cigar; the bridge is anise and floral lift beside light, creamy smoke."
-    },
-    "notes": {
-      "hr": "American dry — cvjetno-anis profil, martini.",
-      "en": "American dry — a floral-anise profile, for a martini."
-    },
-    "meta": true,
-    "category": "gin",
     "status": "META",
     "profileEstimated": false
   },
@@ -1669,9 +1453,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "biljno",
       "cvjetno",
-      "korijen"
+      "citrus",
+      "zacini"
     ],
     "qualityScore": 7.6,
     "abv": 42.0,
@@ -1711,8 +1495,8 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "biljno",
-      "suho-voce",
+      "cvjetno",
+      "citrus",
       "zacini"
     ],
     "qualityScore": 7.6,
@@ -1748,8 +1532,8 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
+      "cvjetno",
       "citrus",
-      "kakao",
       "zacini"
     ],
     "qualityScore": 7.6,
@@ -1785,8 +1569,8 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "biljno",
-      "suho-voce",
+      "cvjetno",
+      "citrus",
       "zacini"
     ],
     "qualityScore": 7.6,
@@ -1822,8 +1606,8 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "biljno",
-      "suho-voce",
+      "cvjetno",
+      "citrus",
       "zacini"
     ],
     "qualityScore": 7.6,
@@ -1859,9 +1643,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
+      "travnato",
       "citrus",
-      "cvjetno",
-      "travnato"
+      "biljno"
     ],
     "qualityScore": 7.5,
     "abv": 41.3,
@@ -1901,9 +1685,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "borovica",
+      "travnato",
       "citrus",
-      "travnato"
+      "biljno"
     ],
     "qualityScore": 7.5,
     "abv": 43.1,
@@ -1939,8 +1723,8 @@
     "sweetness": 1,
     "flavorTags": [
       "biljno",
-      "borovica",
-      "citrus"
+      "citrus",
+      "zacini"
     ],
     "qualityScore": 7.4,
     "abv": 58.5,
@@ -1971,15 +1755,15 @@
   },
   {
     "id": "gin-plymouth-navy-strength-57-0-7-l",
-    "name": "Ableforth&#039;s Bathtub Gin Navy Strength 57% Vol. 0,7l",
+    "name": "Plymouth Navy Strength 57% 0,7 l",
     "style": "plymouth",
     "region": "Plymouth, UK",
     "botanicalProfile": "classic-juniper",
     "body": 4,
     "sweetness": 1,
     "flavorTags": [
-      "borovica",
-      "korijen",
+      "cvjetno",
+      "citrus",
       "zacini"
     ],
     "qualityScore": 7.4,
@@ -2011,16 +1795,16 @@
   },
   {
     "id": "gin-old-pilot-s-dalmatian-dry-gin-45-vol-0-7l",
-    "name": "Ableforth&#039;s Bathtub Gin Old Tom 42,4% Vol. 0,5l",
+    "name": "Old Pilot's Dalmatian Dry Gin 45% Vol. 0,7l",
     "style": "croatian",
     "region": "Hrvatska",
     "botanicalProfile": "mediterranean",
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "biljno",
       "cvjetno",
-      "travnato"
+      "citrus",
+      "zacini"
     ],
     "qualityScore": 7.4,
     "abv": 42.4,
@@ -2060,9 +1844,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "borovica",
+      "travnato",
       "citrus",
-      "korijen"
+      "biljno"
     ],
     "qualityScore": 7.3,
     "abv": 46.0,
@@ -2097,9 +1881,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "borovica",
+      "travnato",
       "citrus",
-      "korijen"
+      "biljno"
     ],
     "qualityScore": 7.3,
     "abv": 46.0,
@@ -2134,9 +1918,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "borovica",
+      "travnato",
       "citrus",
-      "zacini"
+      "biljno"
     ],
     "qualityScore": 7.2,
     "abv": 40.0,
@@ -2176,7 +1960,7 @@
     "body": 4,
     "sweetness": 2,
     "flavorTags": [
-      "biljno",
+      "cvjetno",
       "citrus",
       "zacini"
     ],
@@ -2216,8 +2000,8 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "biljno",
-      "tamno-voce",
+      "cvjetno",
+      "citrus",
       "zacini"
     ],
     "qualityScore": 7.0,
@@ -2256,9 +2040,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "biljno",
-      "borovica",
-      "citrus"
+      "cvjetno",
+      "citrus",
+      "zacini"
     ],
     "qualityScore": 7.0,
     "abv": 40.0,
@@ -2296,9 +2080,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "anis",
-      "biljno",
-      "citrus"
+      "cvjetno",
+      "citrus",
+      "zacini"
     ],
     "qualityScore": 7.0,
     "abv": 40.0,
@@ -2336,9 +2120,9 @@
     "body": 3,
     "sweetness": 1,
     "flavorTags": [
-      "biljno",
+      "cvjetno",
       "citrus",
-      "travnato"
+      "zacini"
     ],
     "qualityScore": 7.0,
     "abv": 40.0,
@@ -2376,9 +2160,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "biljno",
+      "cvjetno",
       "citrus",
-      "cvjetno"
+      "zacini"
     ],
     "qualityScore": 7.0,
     "abv": 40.0,
@@ -2416,9 +2200,9 @@
     "body": 2,
     "sweetness": 2,
     "flavorTags": [
-      "biljno",
+      "cvjetno",
       "citrus",
-      "cvjetno"
+      "zacini"
     ],
     "qualityScore": 7.0,
     "abv": 40.0,
@@ -2449,16 +2233,16 @@
   },
   {
     "id": "gin-roku-gin-the-japanese-craft-gin-43-vol-0-7l-u-poklon-kutiji-sa-casom",
-    "name": "Masahiro OKINAWA Gin The Japanese Craft Gin Recipe 01 47% Vol. 0,7l",
+    "name": "Roku Gin The Japanese Craft Gin 43% Vol. 0,7l u poklon kutiji sa čašom",
     "style": "contemporary",
     "region": "Japan",
     "botanicalProfile": "botanical",
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "citrus",
       "cvjetno",
-      "papar"
+      "citrus",
+      "zacini"
     ],
     "qualityScore": 7.0,
     "abv": 47.0,
@@ -2496,9 +2280,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "biljno",
-      "borovica",
-      "travnato"
+      "travnato",
+      "citrus",
+      "cvjetno"
     ],
     "qualityScore": 6.9,
     "abv": 40.0,
@@ -2536,9 +2320,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "biljno",
-      "borovica",
-      "citrus"
+      "travnato",
+      "citrus",
+      "cvjetno"
     ],
     "qualityScore": 6.8,
     "abv": 47.0,
@@ -2573,9 +2357,9 @@
     "body": 4,
     "sweetness": 1,
     "flavorTags": [
-      "borovica",
+      "travnato",
       "citrus",
-      "zacini"
+      "cvjetno"
     ],
     "qualityScore": 6.8,
     "abv": 57.0,
@@ -2610,9 +2394,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "biljno",
-      "kava",
-      "zacini"
+      "travnato",
+      "citrus",
+      "cvjetno"
     ],
     "qualityScore": 6.8,
     "abv": 47.0,
@@ -2647,9 +2431,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "biljno",
-      "borovica",
-      "citrus"
+      "travnato",
+      "citrus",
+      "cvjetno"
     ],
     "qualityScore": 6.8,
     "abv": 47.0,
@@ -2684,9 +2468,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "biljno",
-      "borovica",
-      "citrus"
+      "travnato",
+      "citrus",
+      "cvjetno"
     ],
     "qualityScore": 6.8,
     "abv": 49.3,
@@ -2721,9 +2505,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "biljno",
+      "travnato",
       "citrus",
-      "papar"
+      "cvjetno"
     ],
     "qualityScore": 6.8,
     "abv": 47.0,

@@ -10,9 +10,10 @@
     "body": 4,
     "sweetness": 4,
     "flavorTags": [
-      "cvjetno",
-      "med",
-      "suho-voce"
+      "suho-voce",
+      "kakao",
+      "zacini",
+      "koza"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -56,9 +57,10 @@
     "body": 4,
     "sweetness": 4,
     "flavorTags": [
-      "cvjetno",
-      "karamela",
-      "med"
+      "suho-voce",
+      "kakao",
+      "zacini",
+      "koza"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -99,9 +101,9 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "hrast",
-      "karamela",
-      "suho-voce"
+      "suho-voce",
+      "cokolada",
+      "zacini"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -145,9 +147,10 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "cvjetno",
-      "hrast",
-      "suho-voce"
+      "suho-voce",
+      "kakao",
+      "zacini",
+      "koza"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -191,9 +194,10 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "cvjetno",
-      "hrast",
-      "suho-voce"
+      "suho-voce",
+      "kakao",
+      "zacini",
+      "koza"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -237,8 +241,8 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "orasasti",
       "suho-voce",
+      "cokolada",
       "zacini"
     ],
     "additiveStatus": "unknown",
@@ -283,9 +287,9 @@
     "body": 5,
     "sweetness": 3,
     "flavorTags": [
-      "hrast",
-      "med",
-      "suho-voce"
+      "suho-voce",
+      "cokolada",
+      "zacini"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -328,9 +332,10 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "kakao",
       "suho-voce",
-      "voce"
+      "vanilija",
+      "kakao",
+      "hrast"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -369,9 +374,10 @@
     "body": 4,
     "sweetness": 2,
     "flavorTags": [
-      "hrast",
+      "suho-voce",
       "kakao",
-      "suho-voce"
+      "zacini",
+      "koza"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -415,55 +421,10 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "kakao",
       "suho-voce",
-      "zacini"
-    ],
-    "additiveStatus": "clean",
-    "additiveDetail": {
-      "hr": "Bez poznatih dodataka",
-      "en": "No known additives"
-    },
-    "additiveSource": "Excel MASTER",
-    "qualityScore": 8.5,
-    "priceEUR": {
-      "min": 170.0,
-      "max": 170.0
-    },
-    "priceApprox": false,
-    "shopHR": "allez.hr",
-    "status": "META",
-    "pairable": true,
-    "serving": {
-      "neat": 3,
-      "water": 2,
-      "rocks": 1,
-      "highball": 0,
-      "cola": 0,
-      "best": "Cisto (snifter)"
-    },
-    "cigarHint": null,
-    "priceUrl": null,
-    "notes": {
-      "hr": "Arhetip XO kategorije — bogat, čokoladno-začinski, stvoren za cigaru.",
-      "en": "The XO archetype — rich, chocolate-spice, made for a cigar."
-    },
-    "profileEstimated": false
-  },
-  {
-    "id": "br-hennessy-xo-cognac-40-vol-0-7l-u-poklon-kutiji",
-    "category": "brandy",
-    "name": "Hennessy XO Cognac 40% Vol. 0,7l u poklon kutiji",
-    "style": "cognac-xo",
-    "region": "Cognac, Francuska",
-    "country": "Francuska",
-    "abv": 40.0,
-    "body": 4,
-    "sweetness": 3,
-    "flavorTags": [
       "kakao",
-      "suho-voce",
-      "zacini"
+      "zacini",
+      "koza"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -507,9 +468,10 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "kakao",
       "suho-voce",
-      "zacini"
+      "kakao",
+      "zacini",
+      "koza"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -553,9 +515,10 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "kakao",
       "suho-voce",
-      "zacini"
+      "kakao",
+      "zacini",
+      "koza"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -599,9 +562,10 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "cvjetno",
-      "hrast",
-      "suho-voce"
+      "suho-voce",
+      "kakao",
+      "zacini",
+      "koza"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -645,9 +609,10 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "cvjetno",
       "suho-voce",
-      "zacini"
+      "kakao",
+      "zacini",
+      "koza"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -681,52 +646,6 @@
     "profileEstimated": false
   },
   {
-    "id": "br-remy-martin-xo-extra-old-cognac-fine-champagne-40-vol-0-7l-u-poklon-kutiji",
-    "category": "brandy",
-    "name": "Rémy Martin XO EXTRA OLD Cognac Fine Champagne 40% Vol. 0,7l u poklon kutiji",
-    "style": "cognac-xo",
-    "region": "Cognac (Fine Champagne), Francuska",
-    "country": "Francuska",
-    "abv": 40.0,
-    "body": 3,
-    "sweetness": 3,
-    "flavorTags": [
-      "cvjetno",
-      "suho-voce",
-      "zacini"
-    ],
-    "additiveStatus": "clean",
-    "additiveDetail": {
-      "hr": "Bez poznatih dodataka",
-      "en": "No known additives"
-    },
-    "additiveSource": "Excel MASTER",
-    "qualityScore": 8.4,
-    "priceEUR": {
-      "min": 160.0,
-      "max": 160.0
-    },
-    "priceApprox": false,
-    "shopHR": "allez.hr",
-    "status": "META",
-    "pairable": true,
-    "serving": {
-      "neat": 3,
-      "water": 2,
-      "rocks": 1,
-      "highball": 0,
-      "cola": 0,
-      "best": "Cisto (snifter)"
-    },
-    "cigarHint": null,
-    "priceUrl": null,
-    "notes": {
-      "hr": "Raskošan, svilenkast XO — cvjetno-voćna dubina.",
-      "en": "Opulent, silky XO — floral-fruity depth."
-    },
-    "profileEstimated": false
-  },
-  {
     "id": "br-martell-xo",
     "category": "brandy",
     "name": "Martell XO",
@@ -737,55 +656,10 @@
     "body": 4,
     "sweetness": 2,
     "flavorTags": [
-      "hrast",
-      "orasasti",
-      "suho-voce"
-    ],
-    "additiveStatus": "clean",
-    "additiveDetail": {
-      "hr": "Bez poznatih dodataka",
-      "en": "No known additives"
-    },
-    "additiveSource": "Excel MASTER",
-    "qualityScore": 8.3,
-    "priceEUR": {
-      "min": 150.0,
-      "max": 150.0
-    },
-    "priceApprox": false,
-    "shopHR": "allez.hr",
-    "status": "META",
-    "pairable": true,
-    "serving": {
-      "neat": 3,
-      "water": 2,
-      "rocks": 1,
-      "highball": 0,
-      "cola": 0,
-      "best": "Cisto (snifter)"
-    },
-    "cigarHint": null,
-    "priceUrl": null,
-    "notes": {
-      "hr": "Suhi, borderies-bogat XO — orašasta elegancija uz srednju cigaru.",
-      "en": "Dry, Borderies-rich XO — nutty elegance with a medium cigar."
-    },
-    "profileEstimated": false
-  },
-  {
-    "id": "br-martell-xo-extra-old-cognac-40-vol-0-7l-u-poklon-kutiji",
-    "category": "brandy",
-    "name": "Martell XO Extra Old Cognac 40% Vol. 0,7l u poklon kutiji",
-    "style": "cognac-xo",
-    "region": "Cognac, Francuska",
-    "country": "Francuska",
-    "abv": 40.0,
-    "body": 4,
-    "sweetness": 2,
-    "flavorTags": [
-      "hrast",
-      "orasasti",
-      "suho-voce"
+      "suho-voce",
+      "kakao",
+      "zacini",
+      "koza"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -829,9 +703,10 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "hrast",
-      "jabuka",
-      "karamela"
+      "suho-voce",
+      "kakao",
+      "zacini",
+      "koza"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -875,9 +750,10 @@
     "body": 3,
     "sweetness": 4,
     "flavorTags": [
-      "cvjetno",
-      "med",
-      "suho-voce"
+      "suho-voce",
+      "kakao",
+      "zacini",
+      "koza"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -921,9 +797,10 @@
     "body": 4,
     "sweetness": 2,
     "flavorTags": [
-      "karamela",
-      "orah",
-      "suho-voce"
+      "suho-voce",
+      "kakao",
+      "zacini",
+      "koza"
     ],
     "additiveStatus": "moderate",
     "additiveDetail": {
@@ -967,9 +844,10 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "cvjetno",
-      "hrast",
-      "voce"
+      "suho-voce",
+      "kakao",
+      "zacini",
+      "koza"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -1013,9 +891,10 @@
     "body": 4,
     "sweetness": 2,
     "flavorTags": [
-      "hrast",
+      "suho-voce",
       "kakao",
-      "suho-voce"
+      "zacini",
+      "koza"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -1059,9 +938,10 @@
     "body": 4,
     "sweetness": 2,
     "flavorTags": [
-      "hrast",
-      "koza",
-      "suho-voce"
+      "suho-voce",
+      "kakao",
+      "zacini",
+      "koza"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -1105,9 +985,9 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "karamela",
-      "orasasti",
-      "suho-voce"
+      "suho-voce",
+      "cokolada",
+      "zacini"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -1151,9 +1031,9 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "karamela",
-      "orasasti",
-      "suho-voce"
+      "suho-voce",
+      "cokolada",
+      "zacini"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -1197,8 +1077,8 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "orasasti",
       "suho-voce",
+      "cokolada",
       "zacini"
     ],
     "additiveStatus": "unknown",
@@ -1242,9 +1122,10 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "suho-voce",
+      "voce",
       "vanilija",
-      "voce"
+      "cvjetno",
+      "karamela"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -1283,9 +1164,9 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "hrast",
       "jabuka",
-      "zacini"
+      "cimet",
+      "hrast"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -1329,9 +1210,10 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "hrast",
-      "prune",
-      "suho-voce"
+      "suho-voce",
+      "kakao",
+      "zacini",
+      "koza"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -1365,52 +1247,6 @@
     "profileEstimated": false
   },
   {
-    "id": "br-choteau-de-laubade-xo",
-    "category": "brandy",
-    "name": "Château de Laubade XO",
-    "style": "armagnac",
-    "region": "Bas-Armagnac, Francuska",
-    "country": "Francuska",
-    "abv": 40,
-    "body": 4,
-    "sweetness": 3,
-    "flavorTags": [
-      "hrast",
-      "prune",
-      "suho-voce"
-    ],
-    "additiveStatus": "unknown",
-    "additiveDetail": {
-      "hr": "Nije deklarirano",
-      "en": "Not declared"
-    },
-    "additiveSource": "Excel MASTER",
-    "qualityScore": 8,
-    "priceEUR": {
-      "min": 60,
-      "max": 60
-    },
-    "priceApprox": false,
-    "shopHR": "allez.hr",
-    "status": "META",
-    "pairable": true,
-    "serving": {
-      "neat": 3,
-      "water": 2,
-      "rocks": 1,
-      "highball": 0,
-      "cola": 0,
-      "best": "Cisto (snifter)"
-    },
-    "cigarHint": null,
-    "priceUrl": null,
-    "notes": {
-      "hr": "Single-estate XO armagnac — ozbiljna alternativa XO konjaku uz cigaru.",
-      "en": "Single-estate XO armagnac — a serious alternative to XO cognac with a cigar."
-    },
-    "profileEstimated": false
-  },
-  {
     "id": "br-darroze-les-grands-assemblages-8",
     "category": "brandy",
     "name": "Darroze Les Grands Assemblages 8",
@@ -1421,9 +1257,10 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "citrus",
+      "suho-voce",
       "prune",
-      "voce"
+      "zacini",
+      "hrast"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -1467,9 +1304,10 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "hrast",
-      "karamela",
-      "prune"
+      "suho-voce",
+      "prune",
+      "zacini",
+      "hrast"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -1513,9 +1351,10 @@
     "body": 4,
     "sweetness": 2,
     "flavorTags": [
-      "hrast",
-      "kakao",
-      "suho-voce"
+      "voce",
+      "vanilija",
+      "zacini",
+      "hrast"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -1559,9 +1398,10 @@
     "body": 4,
     "sweetness": 2,
     "flavorTags": [
-      "hrast",
-      "kakao",
-      "suho-voce"
+      "voce",
+      "vanilija",
+      "zacini",
+      "hrast"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -1604,8 +1444,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "cvjetno",
-      "jabuka"
+      "voce",
+      "hrast",
+      "cvjetno"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -1644,9 +1485,10 @@
     "body": 5,
     "sweetness": 3,
     "flavorTags": [
-      "kakao",
       "suho-voce",
-      "zacini"
+      "kakao",
+      "zacini",
+      "koza"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -1687,9 +1529,10 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "cedar",
-      "orasasti",
-      "suho-voce"
+      "suho-voce",
+      "kakao",
+      "zacini",
+      "koza"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -1732,8 +1575,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
+      "vanilija",
       "hrast",
-      "vanilija"
+      "voce"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -1764,7 +1608,7 @@
   {
     "id": "br-osborne-carlos-i-solera-gran-reserva",
     "category": "brandy",
-    "name": "Osborne Carlos I Solera Gran Reserva",
+    "name": "Carlos I Solera Gran Reserva",
     "style": "brandy-de-jerez",
     "region": "Jerez, Španjolska",
     "country": "Španjolska",
@@ -1772,9 +1616,10 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "karamela",
       "orah",
-      "suho-voce"
+      "karamela",
+      "suho-voce",
+      "hrast"
     ],
     "additiveStatus": "moderate",
     "additiveDetail": {
@@ -1818,8 +1663,8 @@
     "body": 3,
     "sweetness": 1,
     "flavorTags": [
-      "citrus",
-      "cvjetno",
+      "voce",
+      "vanilija",
       "hrast"
     ],
     "additiveStatus": "unknown",
@@ -1867,9 +1712,9 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "cvjetno",
-      "hrast",
-      "voce"
+      "voce",
+      "vanilija",
+      "hrast"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -1916,9 +1761,10 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "cvjetno",
-      "hrast",
-      "suho-voce"
+      "suho-voce",
+      "kakao",
+      "zacini",
+      "koza"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -1962,9 +1808,10 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "vanilija",
       "voce",
-      "zacini"
+      "vanilija",
+      "zacini",
+      "hrast"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -2008,8 +1855,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "hrast",
-      "voce"
+      "suho-voce",
+      "cvjetno",
+      "hrast"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -2056,9 +1904,10 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "cvjetno",
+      "voce",
       "vanilija",
-      "voce"
+      "zacini",
+      "hrast"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -2102,9 +1951,10 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "cvjetno",
+      "voce",
       "vanilija",
-      "voce"
+      "zacini",
+      "hrast"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -2148,10 +1998,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "cvjetno",
-      "hrast",
+      "suho-voce",
       "vanilija",
-      "voce"
+      "cvjetno"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -2198,9 +2047,10 @@
     "body": 4,
     "sweetness": 4,
     "flavorTags": [
-      "karamela",
       "suho-voce",
-      "tamno-voce"
+      "kakao",
+      "zacini",
+      "koza"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -2243,9 +2093,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "hrast",
-      "jabuka",
-      "voce"
+      "voce",
+      "vanilija",
+      "hrast"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -2284,9 +2134,9 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "hrast",
-      "vanilija",
-      "voce"
+      "suho-voce",
+      "cokolada",
+      "zacini"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -2330,9 +2180,10 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "koza",
       "suho-voce",
-      "voce"
+      "prune",
+      "zacini",
+      "hrast"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -2366,51 +2217,6 @@
     "profileEstimated": true
   },
   {
-    "id": "br-camus-very-special-intensely-aromatic-cognac-40-vol-0-7l",
-    "category": "brandy",
-    "name": "Camus VERY SPECIAL Intensely Aromatic Cognac 40% Vol. 0,7l",
-    "style": "cognac-vs",
-    "region": "Borderies, Francuska",
-    "country": "Francuska",
-    "abv": 40.0,
-    "body": 3,
-    "sweetness": 3,
-    "flavorTags": [
-      "cvjetno",
-      "med"
-    ],
-    "additiveStatus": "clean",
-    "additiveDetail": {
-      "hr": "Bez poznatih dodataka",
-      "en": "No known additives"
-    },
-    "additiveSource": "Excel MASTER",
-    "qualityScore": 7.5,
-    "priceEUR": {
-      "min": 110.0,
-      "max": 110.0
-    },
-    "priceApprox": false,
-    "shopHR": "allez.hr",
-    "status": "META",
-    "pairable": true,
-    "serving": {
-      "neat": 3,
-      "water": 2,
-      "rocks": 2,
-      "highball": 0,
-      "cola": 0,
-      "best": "Cisto ili velika kocka leda"
-    },
-    "cigarHint": null,
-    "priceUrl": null,
-    "notes": {
-      "hr": "Mirisni XO — cvjetno-medena raskoš.",
-      "en": "The perfumed XO — floral-honeyed opulence."
-    },
-    "profileEstimated": true
-  },
-  {
     "id": "br-camus-vs-intensely-aromatic",
     "category": "brandy",
     "name": "Camus VS Intensely Aromatic",
@@ -2421,8 +2227,9 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "ester-funk",
-      "zacini"
+      "voce",
+      "vanilija",
+      "hrast"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -2466,9 +2273,10 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "cvjetno",
-      "hrast",
-      "voce"
+      "voce",
+      "vanilija",
+      "zacini",
+      "hrast"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -2478,10 +2286,10 @@
     "additiveSource": "Excel MASTER",
     "qualityScore": 7.5,
     "priceEUR": {
-      "min": 110.0,
-      "max": 110.0
+      "min": 40,
+      "max": 50
     },
-    "priceApprox": false,
+    "priceApprox": true,
     "shopHR": "allez.hr",
     "status": "META",
     "pairable": true,
@@ -2558,9 +2366,9 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "hrast",
       "jabuka",
-      "zacini"
+      "cimet",
+      "hrast"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -2604,9 +2412,10 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "citrus",
-      "hrast",
-      "prune"
+      "suho-voce",
+      "prune",
+      "zacini",
+      "hrast"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -2650,55 +2459,10 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "cvjetno",
-      "med",
-      "vanilija"
-    ],
-    "additiveStatus": "clean",
-    "additiveDetail": {
-      "hr": "Bez poznatih dodataka",
-      "en": "No known additives"
-    },
-    "additiveSource": "Excel MASTER",
-    "qualityScore": 7.5,
-    "priceEUR": {
-      "min": 55.0,
-      "max": 55.0
-    },
-    "priceApprox": false,
-    "shopHR": "allez.hr",
-    "status": "META",
-    "pairable": true,
-    "serving": {
-      "neat": 3,
-      "water": 2,
-      "rocks": 1,
-      "highball": 0,
-      "cola": 0,
-      "best": "Cisto (snifter)"
-    },
-    "cigarHint": null,
-    "priceUrl": null,
-    "notes": {
-      "hr": "Britanski dvorski dobavljač — svjež, voćni stil.",
-      "en": "The British court's supplier — fresh, fruity style."
-    },
-    "profileEstimated": false
-  },
-  {
-    "id": "br-hine-rare-vsop-the-original-fine-champagne-cognac-40-vol-0-7l-u-poklon-kutiji",
-    "category": "brandy",
-    "name": "Hine RARE VSOP The Original Fine Champagne Cognac 40% Vol. 0,7l u poklon kutiji",
-    "style": "cognac-vsop",
-    "region": "Cognac, Francuska",
-    "country": "Francuska",
-    "abv": 40.0,
-    "body": 3,
-    "sweetness": 3,
-    "flavorTags": [
-      "cvjetno",
-      "med",
-      "vanilija"
+      "voce",
+      "vanilija",
+      "zacini",
+      "hrast"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -2742,9 +2506,10 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "cvjetno",
-      "med",
-      "vanilija"
+      "voce",
+      "vanilija",
+      "zacini",
+      "hrast"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -2788,9 +2553,10 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "hrast",
-      "voce",
-      "zacini"
+      "suho-voce",
+      "prune",
+      "zacini",
+      "hrast"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -2834,9 +2600,10 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "hrast",
+      "suho-voce",
       "prune",
-      "suho-voce"
+      "zacini",
+      "hrast"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -2880,9 +2647,10 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "hrast",
+      "suho-voce",
       "prune",
-      "tamno-voce"
+      "zacini",
+      "hrast"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -2960,52 +2728,6 @@
       "hr": "Elegantniji Jerez (González Byass) — svjetliji od Mendoze.",
       "en": "The more elegant Jerez (González Byass) — brighter than Mendoza."
     }
-  },
-  {
-    "id": "br-martell-cognac-cordon-bleu-extra-old-cognac-40-vol-0-7l-u-poklon-kutiji",
-    "category": "brandy",
-    "name": "Martell Cognac Cordon Bleu Extra Old Cognac 40% Vol. 0,7l u poklon kutiji",
-    "style": "cognac-xo",
-    "region": "Cognac, Francuska",
-    "country": "Francuska",
-    "abv": 40.0,
-    "body": 4,
-    "sweetness": 2,
-    "flavorTags": [
-      "hrast",
-      "orasasti",
-      "suho-voce"
-    ],
-    "additiveStatus": "clean",
-    "additiveDetail": {
-      "hr": "Bez poznatih dodataka",
-      "en": "No known additives"
-    },
-    "additiveSource": "Excel MASTER",
-    "qualityScore": 7.5,
-    "priceEUR": {
-      "min": 50.0,
-      "max": 50.0
-    },
-    "priceApprox": false,
-    "shopHR": "allez.hr",
-    "status": "META",
-    "pairable": true,
-    "serving": {
-      "neat": 3,
-      "water": 2,
-      "rocks": 2,
-      "highball": 0,
-      "cola": 0,
-      "best": "Cisto ili velika kocka leda"
-    },
-    "cigarHint": null,
-    "priceUrl": null,
-    "notes": {
-      "hr": "Suhlji, orašastiji stil (bez borderies slatkoće u VSOP-u; Cordon Bleu = klasik za cigare).",
-      "en": "Drier, nuttier style (Cordon Bleu is a cigar classic)."
-    },
-    "profileEstimated": false
   },
   {
     "id": "br-nonino-grappa-antica-cuvee-5",
@@ -3096,9 +2818,9 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "jabuka",
       "suho-voce",
-      "voce"
+      "tamno-voce",
+      "vanilija"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -3127,98 +2849,6 @@
     "profileEstimated": true
   },
   {
-    "id": "br-tariquet-armagnac-vsop-40-vol-0-5l-u-poklon-kutiji",
-    "category": "brandy",
-    "name": "Tariquet Armagnac VSOP 40% Vol. 0,5l u poklon kutiji",
-    "style": "armagnac",
-    "region": "Bas-Armagnac, Francuska",
-    "country": "Francuska",
-    "abv": 40.0,
-    "body": 3,
-    "sweetness": 3,
-    "flavorTags": [
-      "citrus",
-      "hrast",
-      "prune"
-    ],
-    "additiveStatus": "clean",
-    "additiveDetail": {
-      "hr": "Bez poznatih dodataka",
-      "en": "No known additives"
-    },
-    "additiveSource": "Excel MASTER",
-    "qualityScore": 7.5,
-    "priceEUR": {
-      "min": 38.0,
-      "max": 38.0
-    },
-    "priceApprox": false,
-    "shopHR": "allez.hr",
-    "status": "META",
-    "pairable": true,
-    "serving": {
-      "neat": 3,
-      "water": 2,
-      "rocks": 1,
-      "highball": 0,
-      "cola": 0,
-      "best": "Cisto (snifter)"
-    },
-    "cigarHint": null,
-    "priceUrl": null,
-    "notes": {
-      "hr": "Pristupačan armagnac — rustikalniji i suši od konjaka.",
-      "en": "Approachable armagnac — more rustic and drier than cognac."
-    },
-    "profileEstimated": false
-  },
-  {
-    "id": "br-tariquet-armagnac-vsop-40-vol-0-7l-u-poklon-kutiji",
-    "category": "brandy",
-    "name": "Tariquet Armagnac VSOP 40% Vol. 0,7l u poklon kutiji",
-    "style": "armagnac",
-    "region": "Bas-Armagnac, Francuska",
-    "country": "Francuska",
-    "abv": 40.0,
-    "body": 3,
-    "sweetness": 3,
-    "flavorTags": [
-      "citrus",
-      "hrast",
-      "prune"
-    ],
-    "additiveStatus": "clean",
-    "additiveDetail": {
-      "hr": "Bez poznatih dodataka",
-      "en": "No known additives"
-    },
-    "additiveSource": "Excel MASTER",
-    "qualityScore": 7.5,
-    "priceEUR": {
-      "min": 38.0,
-      "max": 38.0
-    },
-    "priceApprox": false,
-    "shopHR": "allez.hr",
-    "status": "META",
-    "pairable": true,
-    "serving": {
-      "neat": 3,
-      "water": 2,
-      "rocks": 1,
-      "highball": 0,
-      "cola": 0,
-      "best": "Cisto (snifter)"
-    },
-    "cigarHint": null,
-    "priceUrl": null,
-    "notes": {
-      "hr": "Pristupačan armagnac — rustikalniji i suši od konjaka.",
-      "en": "Approachable armagnac — more rustic and drier than cognac."
-    },
-    "profileEstimated": false
-  },
-  {
     "id": "br-davidoff-xo-prestige-extra-old-cognac-40-vol-0-7l-u-poklon-kutiji",
     "category": "brandy",
     "name": "Davidoff XO Prestige Extra Old Cognac 40% Vol. 0,7l u poklon kutiji",
@@ -3229,9 +2859,10 @@
     "body": 4,
     "sweetness": 2,
     "flavorTags": [
-      "duhan",
-      "hrast",
-      "suho-voce"
+      "suho-voce",
+      "kakao",
+      "zacini",
+      "koza"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -3272,9 +2903,9 @@
     "body": 5,
     "sweetness": 3,
     "flavorTags": [
-      "kakao",
-      "suho-voce",
-      "zacini"
+      "voce",
+      "vanilija",
+      "hrast"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -3318,9 +2949,9 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "kakao",
-      "orasasti",
-      "suho-voce"
+      "voce",
+      "vanilija",
+      "hrast"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -3364,9 +2995,9 @@
     "body": 4,
     "sweetness": 2,
     "flavorTags": [
-      "hrast",
-      "koza",
-      "suho-voce"
+      "voce",
+      "vanilija",
+      "hrast"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -3410,9 +3041,9 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "citrus",
-      "hrast",
-      "voce"
+      "suho-voce",
+      "cokolada",
+      "zacini"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -3498,9 +3129,9 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "hrast",
       "jabuka",
-      "karamela"
+      "cimet",
+      "hrast"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -3544,9 +3175,9 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "hrast",
       "jabuka",
-      "karamela"
+      "cimet",
+      "hrast"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -3590,8 +3221,9 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "citrus",
-      "cvjetno",
+      "voce",
+      "vanilija",
+      "zacini",
       "hrast"
     ],
     "additiveStatus": "clean",
@@ -3619,52 +3251,6 @@
     },
     "cigarHint": null,
     "priceUrl": "https://allez.hr/shop/svi-proizvodi/camus-vsop-borderies-single-estate-cognac-40-vol-07l-u-poklon-kutiji",
-    "notes": {
-      "hr": "Borderies cvjetnost — mekan, mirisan konjak.",
-      "en": "Borderies florality — a soft, perfumed cognac."
-    },
-    "profileEstimated": false
-  },
-  {
-    "id": "br-camus-vsop-borderies-single-estate-cognac-40-vol-0-7l-u-poklon-kutiji",
-    "category": "brandy",
-    "name": "Camus VSOP Borderies Single Estate Cognac 40% Vol. 0,7l u poklon kutiji",
-    "style": "cognac-vsop",
-    "region": "Borderies, Francuska",
-    "country": "Francuska",
-    "abv": 40.0,
-    "body": 3,
-    "sweetness": 3,
-    "flavorTags": [
-      "citrus",
-      "cvjetno",
-      "hrast"
-    ],
-    "additiveStatus": "clean",
-    "additiveDetail": {
-      "hr": "Bez poznatih dodataka",
-      "en": "No known additives"
-    },
-    "additiveSource": "Excel MASTER",
-    "qualityScore": 7.0,
-    "priceEUR": {
-      "min": 45.0,
-      "max": 45.0
-    },
-    "priceApprox": false,
-    "shopHR": "allez.hr",
-    "status": "META",
-    "pairable": true,
-    "serving": {
-      "neat": 3,
-      "water": 2,
-      "rocks": 2,
-      "highball": 0,
-      "cola": 0,
-      "best": "Cisto ili velika kocka leda"
-    },
-    "cigarHint": null,
-    "priceUrl": null,
     "notes": {
       "hr": "Borderies cvjetnost — mekan, mirisan konjak.",
       "en": "Borderies florality — a soft, perfumed cognac."
@@ -3906,7 +3492,8 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "anis",
+      "karamela",
+      "suho-voce",
       "hrast"
     ],
     "additiveStatus": "unknown",
@@ -3989,6 +3576,51 @@
     }
   },
   {
+    "id": "br-courvoisier-vs",
+    "category": "brandy",
+    "name": "Courvoisier VS",
+    "style": "cognac-vs",
+    "region": "Cognac, Francuska",
+    "country": "Francuska",
+    "abv": 40.0,
+    "body": 3,
+    "sweetness": 3,
+    "flavorTags": [
+      "voce",
+      "cvjetno",
+      "vanilija"
+    ],
+    "additiveStatus": "unknown",
+    "additiveDetail": {
+      "hr": "Nije deklarirano",
+      "en": "Not declared"
+    },
+    "additiveSource": "Proizvođač ne deklarira",
+    "qualityScore": 6.9,
+    "priceEUR": {
+      "min": 36,
+      "max": 39
+    },
+    "priceApprox": true,
+    "shopHR": "ecuga.com",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 2,
+      "highball": 0,
+      "cola": 0,
+      "best": "Cisto ili velika kocka leda"
+    },
+    "cigarHint": null,
+    "priceUrl": "https://ecuga.com/proizvod/courvoisier-vs",
+    "notes": {
+      "hr": "Ulazni Courvoisier — zrelo voće i cvjetne note, mekši i jednostavniji od VSOP-a.",
+      "en": "The entry Courvoisier — ripe fruit and floral notes, softer and simpler than the VSOP."
+    }
+  },
+  {
     "id": "br-hennessy-vs",
     "category": "brandy",
     "name": "Hennessy VS",
@@ -3999,9 +3631,9 @@
     "body": 2,
     "sweetness": 3,
     "flavorTags": [
-      "hrast",
+      "voce",
       "vanilija",
-      "voce"
+      "hrast"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -4035,52 +3667,6 @@
     "profileEstimated": false
   },
   {
-    "id": "br-hennessy-vs-40-vol-0-7l",
-    "category": "brandy",
-    "name": "Hennessy VS 40% Vol. 0,7l",
-    "style": "cognac-vs",
-    "region": "Cognac, Francuska",
-    "country": "Francuska",
-    "abv": 40.0,
-    "body": 2,
-    "sweetness": 3,
-    "flavorTags": [
-      "hrast",
-      "vanilija",
-      "voce"
-    ],
-    "additiveStatus": "clean",
-    "additiveDetail": {
-      "hr": "Bez poznatih dodataka",
-      "en": "No known additives"
-    },
-    "additiveSource": "Excel MASTER",
-    "qualityScore": 6.8,
-    "priceEUR": {
-      "min": 35.0,
-      "max": 35.0
-    },
-    "priceApprox": false,
-    "shopHR": "allez.hr",
-    "status": "META",
-    "pairable": true,
-    "serving": {
-      "neat": 3,
-      "water": 2,
-      "rocks": 2,
-      "highball": 0,
-      "cola": 0,
-      "best": "Cisto ili velika kocka leda"
-    },
-    "cigarHint": null,
-    "priceUrl": null,
-    "notes": {
-      "hr": "Mladi standard — oštriji, više za koktele nego finu cigaru.",
-      "en": "The young standard — sharper, more for cocktails than a fine cigar."
-    },
-    "profileEstimated": false
-  },
-  {
     "id": "br-ararat-5-stars",
     "category": "brandy",
     "name": "Ararat 5 Stars",
@@ -4091,8 +3677,8 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "hrast",
-      "voce",
+      "suho-voce",
+      "cokolada",
       "zacini"
     ],
     "additiveStatus": "unknown",
@@ -4182,9 +3768,10 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "hrast",
+      "orah",
       "karamela",
-      "suho-voce"
+      "suho-voce",
+      "hrast"
     ],
     "additiveStatus": "moderate",
     "additiveDetail": {
@@ -4339,51 +3926,6 @@
     "priceEUR": {
       "min": 20.0,
       "max": 20.0
-    },
-    "priceApprox": false,
-    "shopHR": "lokalni proizvođači",
-    "status": "META",
-    "pairable": true,
-    "serving": {
-      "neat": 3,
-      "water": 1,
-      "rocks": 3,
-      "highball": 0,
-      "cola": 0,
-      "best": "Cisto / on the rocks"
-    },
-    "cigarHint": null,
-    "priceUrl": null,
-    "notes": {
-      "hr": "Craft domaće rakije od grožđa — svježe i voćno, uz laganu cigaru na terasi.",
-      "en": "Croatian craft grape brandies — fresh and fruity, with a light cigar on the terrace."
-    }
-  },
-  {
-    "id": "br-hrvatski-lozovaza-vinjak-craft",
-    "category": "brandy",
-    "name": "Hrvatski lozovača / vinjak (craft)",
-    "style": "vinjak",
-    "region": "Hrvatska",
-    "country": "Hrvatska",
-    "abv": 40,
-    "body": 3,
-    "sweetness": 3,
-    "flavorTags": [
-      "grozdje",
-      "med",
-      "hrast"
-    ],
-    "additiveStatus": "unknown",
-    "additiveDetail": {
-      "hr": "Nije deklarirano",
-      "en": "Not declared"
-    },
-    "additiveSource": "Excel MASTER",
-    "qualityScore": 6,
-    "priceEUR": {
-      "min": 20,
-      "max": 20
     },
     "priceApprox": false,
     "shopHR": "lokalni proizvođači",
