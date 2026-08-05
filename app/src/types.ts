@@ -85,9 +85,11 @@ export interface Vitola {
   shape?: string;
   ring?: number;
   lengthMM?: number;
+  // ISO datum (YYYY-MM-DD) kad je priceEUR preuzet iz HR trgovine.
+  fetchedAt?: string;
   // Linkovi na proizvod te KONKRETNE vitole po regiji (market katalog) — kad
   // korisnik izabere vitolu, kupnja/cijena vode na tu vitolu, ne na liniju.
-  regionLinks?: Partial<Record<Region, { shop: string; url: string; priceEUR?: number; priceApprox?: boolean }>>;
+  regionLinks?: Partial<Record<Region, { shop: string; url: string; priceEUR?: number; priceApprox?: boolean; fetchedAt?: string }>>;
 }
 
 export interface Cigar {
@@ -134,7 +136,7 @@ export interface Cigar {
   // Izravan link na proizvod + cijena po regiji (iz stvarnog scrape-a trgovina).
   // HR/EU/USA gdje postoji; EU/USA cijena je "od" na razini linije, USD->EUR
   // konverzija nosi priceApprox. Embargo: kubanke nemaju USA.
-  regionLinks?: Partial<Record<Region, { shop: string; url: string; priceEUR?: number; priceApprox?: boolean }>>;
+  regionLinks?: Partial<Record<Region, { shop: string; url: string; priceEUR?: number; priceApprox?: boolean; fetchedAt?: string }>>;
   // "market" = generirano iz scrape-a trgovina (build-market-cigars.py), za razliku
   // od kuriranih unosa; idempotentno regenerirano. Vidi Faza B/C playbook.
   catalogSource?: "market";
@@ -156,6 +158,15 @@ export interface PairingReason {
 
 export interface PairingResult<T> {
   item: T;
+  /** Prikazni rezultat: zaokružen i stisnut na 0–100. */
   score: number;
+  /**
+   * Rezultat prije zaokruživanja i stiskanja — jedini koji smije rangirati.
+   * Zbroj pravila zna prijeći 100 (base + body + note + kontrast + wrapper…),
+   * pa je prikazni rezultat zasićen: desetak pića završi na istih 100 i onda o
+   * pobjedniku odlučuje razrješenje neriješenog (kvaliteta), ne slaganje s
+   * cigarom. Zato se sortira i "soft band" računa po ovome.
+   */
+  rawScore: number;
   reasons: PairingReason[];
 }

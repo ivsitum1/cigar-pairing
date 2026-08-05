@@ -37,3 +37,16 @@ export function drinkNameHaystack(d: Drink): string {
   if (mapped) parts.push(mapped);
   return [...new Set(parts)].join(" ");
 }
+
+// Katalozi trgovina nose istu bocu i kao poklon-pakiranje ("… u poklon kutiji",
+// "3x0,05l", "with Shaker"). Kao ARTIKL su ravnopravni, ali kao PREPORUKA su
+// šum — "Monkey 47 Kiosk Set 41% Vol. 3x0,05l u poklon kutiji" je bilo prvo
+// predloženo pice uz gotovo svaku cigaru samo zato što je abecedno ispalo prvo
+// među izjednačenima.
+const PACKAGING =
+  /u poklon kutij|gift ?box|in giftbox|kiosk set|ritual set|\bwith (?:shaker|glass)\b|sa[  ][cčć]a[sš]om|\d\s*x\s*0[.,]\d/i;
+
+/** 0 = obična boca, 1 = poklon/višebočno pakiranje. Samo za razrješenje neriješenog. */
+export function drinkPackagingRank(d: Drink): number {
+  return PACKAGING.test(d.name) ? 1 : 0;
+}

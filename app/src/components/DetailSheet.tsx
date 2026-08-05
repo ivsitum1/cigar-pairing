@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { SheetShell } from "./SheetShell";
-import type { Cigar, Drink } from "../types";
+import type { Cigar, Drink, Region } from "../types";
 import { useI18n, STYLE_LABELS, ADDITIVE_LABELS, ADDITIVE_RULES } from "../i18n";
 import { flavorLabel } from "../engine/rules";
 import {
@@ -8,12 +8,14 @@ import {
   brandDisplayName,
   cigarShopLinks,
   cigarShopLinkPrice,
+  cigarLatestFetchedAt,
   drinkBrand,
   formatPrice,
 } from "../data";
 import { REGIONS } from "../data/shops";
 import { drinkBuyLink } from "../lib/drinkBuyLink";
 import { drinkAvailabilityHR, drinkShopLinks } from "../lib/drinkShopLinks";
+import { formatEur, vitolaPriceForMarket } from "../lib/cigarPrice";
 import { drinkNameLoc } from "../lib/drinkName";
 import { vitolaBlurb } from "../lib/vitolaInfo";
 import { resolveSamplerCigar } from "../lib/samplerLink";
@@ -233,6 +235,10 @@ function CigarDetails({
   const displayBrand = brandDisplayName(cigar.brand, market);
   const vitolaCrumb =
     cigar.vitolas.length === 1 ? cigar.vitolas[0].name : cigar.vitola;
+  // Bez odabranog tržišta ("Sve") cijena zna doći iz EU/USA kataloga — reci
+  // odakle je, da se HR i EU broj ne miješaju bez oznake.
+  const regionTag = (region: Region | null) =>
+    market === "ALL" && region && region !== "HR" ? ` ${region}` : "";
   return (
     <>
       {/* Brand › Line › Vitola — svaki crumb navigira gore */}
@@ -326,12 +332,9 @@ function CigarDetails({
         <div className="space-y-1">
           {cigar.vitolas.map((v) => {
             const blurb = vitolaBlurb(v.name, lang);
-            // cijena+link te vitole: HR (humidor) ili prva regija iz njenih regionLinks
-            const rl = v.regionLinks ?? {};
-            const region = (["HR", "EU", "USA"] as const).find((r) => rl[r]?.priceEUR != null);
-            const price = v.priceEUR ?? (region ? rl[region]!.priceEUR ?? null : null);
-            const url = v.url ?? (region ? rl[region]!.url : null);
-            const approx = v.priceEUR == null && region ? rl[region]!.priceApprox : false;
+            // cijena+link te vitole u ODABRANOM tržištu — isti razrješivač koji
+            // koristi popis i linija, pa je broj svugdje isti
+            const { price, url, approx, region } = vitolaPriceForMarket(v, market);
             return (
               <div
                 key={v.name}
@@ -345,10 +348,12 @@ function CigarDetails({
                     {price != null &&
                       (url ? (
                         <a href={url} target="_blank" rel="noreferrer" className="ml-1.5 text-zlato-2 underline decoration-zlato/40 underline-offset-2">
-                          {approx ? "~" : ""}{price.toFixed(2)} € ↗
+                          {approx ? "~" : ""}{formatEur(price)}{regionTag(region)} ↗
                         </a>
                       ) : (
-                        <span className="ml-1.5 text-zlato-2">{approx ? "~" : ""}{price.toFixed(2)} €</span>
+                        <span className="ml-1.5 text-zlato-2">
+                          {approx ? "~" : ""}{formatEur(price)}{regionTag(region)}
+                        </span>
                       ))}
                   </span>
                 </div>
@@ -373,6 +378,7 @@ function CigarDetails({
 
       {/* kupnja po regiji — kad je filter na regiji prikazi samo tu, inace sve */}
       <CigarBuyLinks cigar={cigar} />
+      <CigarPriceNote cigar={cigar} />
       <div className="mt-2 flex flex-wrap items-center gap-1.5">
         {cigar.flavoured && (
           <span className="rounded-full border border-lista/50 bg-lista/15 px-2 py-0.5 text-micro uppercase tracking-wide text-lista">
@@ -614,6 +620,40 @@ function BuyLink({ href, label }: { href: string; label: "buy" | "search" }) {
   );
 }
 
+const STALE_DAYS = 90;
+
+/**
+ * Mala bilješka ispod gumba za kupnju: kad je cijena preuzeta i je li stara.
+ * Ne prikazuje se kad fetchedAt nedostaje — tada ostaje genericka napomena.
+ */
+function CigarPriceNote({ cigar }: { cigar: Cigar }) {
+  const { t, lang } = useI18n();
+  const fetchedAt = cigarLatestFetchedAt(cigar);
+  if (!fetchedAt) {
+    return (
+      <p className="mt-1.5 text-micro leading-snug text-dim/60">{t("price.marketNote")}</p>
+    );
+  }
+  const fetchedDate = new Date(fetchedAt);
+  const ageMs = Date.now() - fetchedDate.getTime();
+  const ageDays = ageMs / (1000 * 60 * 60 * 24);
+  const isStale = ageDays > STALE_DAYS;
+  const localDate = fetchedDate.toLocaleDateString(lang === "hr" ? "hr-HR" : "en-GB", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
+  const snapshotText = t("price.snapshotNote").replace("{date}", localDate);
+  return (
+    <div className="mt-1.5 space-y-0.5">
+      <p className="text-micro leading-snug text-dim/60">{snapshotText}</p>
+      {isStale && (
+        <p className="text-micro leading-snug text-orange-400/80">⚠ {t("price.staleNote")}</p>
+      )}
+    </div>
+  );
+}
+
 // Kupnja po regiji — prikazuje SVE regije gdje je cigara dostupna (HR uz EU/USA,
 // da HR link ne bude skriven), svaka trgovina kao ravnopravan gumb s cijenom.
 function CigarBuyLinks({ cigar }: { cigar: Cigar }) {
@@ -639,7 +679,7 @@ function CigarBuyLinks({ cigar }: { cigar: Cigar }) {
                   const { price: priceNum, approx } = cigarShopLinkPrice(cigar, l);
                   const price =
                     priceNum != null
-                      ? `${approx ? "~" : ""}${priceNum.toFixed(priceNum % 1 ? 2 : 0)} €`
+                      ? `${approx ? "~" : ""}${formatEur(priceNum)}`
                       : null;
                   return (
                     <a

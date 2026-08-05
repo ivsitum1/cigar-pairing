@@ -30,6 +30,13 @@ python scripts/test_taxonomy_lib.py
 ```
 A separate `backend` job runs `python -m unittest discover -s tests` in `backend/`.
 
+### Price freshness (W3)
+- Each price point in `cigars.json` carries an optional `fetchedAt` (ISO `YYYY-MM-DD`) set by the scraping scripts.
+- **Quarterly refresh cadence (~every 3 months):** run `sync-hr-shops.py` (HR) and `enrich-region-links.py` (EU/USA) on Cursor locally. Both scripts now stamp `fetchedAt = today` automatically.
+- Exchange rates (`USD_TO_EUR`, `GBP_TO_EUR`, `CHF_TO_EUR`) live in `app/scripts/shop_common.py` with a date comment. Update them together with each quarterly scrape.
+- One-shot baseline stamp (offline, no network): `python scripts/stamp-fetched-at-baseline.py`. Sets `fetchedAt = 2026-07-01` on every price that lacks it. Run once after the W3 PR merges, then re-export with `export-indexes.py`.
+- UI: the DetailSheet shows "Cijena preuzeta {date}." when `fetchedAt` is present; prices older than 90 days show an orange stale warning. When `fetchedAt` is absent the generic market note is shown instead.
+
 ### Non-obvious notes
 - The dev server serves the app under the base path **`/cigar-pairing/`**, not `/`. Open `http://localhost:5173/cigar-pairing/` — the bare root path will not render the app. This base is set in `app/vite.config.ts` to match the GitHub Pages repo name.
 - Node 22 is expected (see CI). The package manager is **npm** (`app/package-lock.json`).

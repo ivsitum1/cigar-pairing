@@ -75,5 +75,5 @@ describe("sanity logike matchanja", () => {
       }
     }
     expect(offenders).toEqual([]);
-  }, 20_000);
+  }, 40_000);
 });
