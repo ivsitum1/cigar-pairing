@@ -33,9 +33,13 @@ OUT = DATA / "drinkDisplayNames.json"
 OVERRIDES = APP / "scripts" / "data" / "drink_display_name_overrides.json"
 FILES = ["rums", "whiskies", "brandies", "gins", "wines", "tequilas", "digestifs"]
 
-# Isti repovi kao derive-drink-brands.py + bare % (bez "Vol") / giftbox / čaša.
+# Isti repovi kao derive-drink-brands.py + giftbox / čaša. % samo kao ABV rep
+# (Vol, volumen ili kraj imena) — ne dirati 100% u nazivu proizvoda.
 TAIL = re.compile(
-    r"\s*(?:\d+[.,]?\d*\s*%(?:\s*Vol\.?)?.*|u poklon kutij.*|"
+    r"\s*(?:\d+[.,]?\d*\s*%\s*Vol\.?.*|"
+    r"\d+[.,]?\d*\s*%\s*\d+[.,]?\d*\s*l\b.*|"
+    r"\d+[.,]?\d*\s*%$|"
+    r"u poklon kutij.*|"
     r"\d+[.,]?\d*\s*l\b.*|MAGNUM.*|in Giftbox.*|"
     r"sa\s+[cčć]a[sš]om.*|in wooden case.*|&#0\d\d;.*)$",
     re.I,
