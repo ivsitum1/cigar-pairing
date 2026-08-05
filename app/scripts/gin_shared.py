@@ -182,11 +182,6 @@ def detect_style_region(name: str, ecuga_category: str = "") -> tuple[str, str, 
     text = f"{name} {ecuga_category}"
     for pattern, style, region, body, sweet, botanical, tags in STYLE_RULES:
         if re.search(pattern, text, re.IGNORECASE):
-            # refine mediterranean override after contemporary catch-all
-            if style == "contemporary" and re.search(
-                r"gin mare|nordés|nordes|malfy|portofino|mediterranean", text, re.I
-            ):
-                return "contemporary", "Mediteran", body, sweet, "mediterranean", ["biljno", "citrus", "travnato"]
             return style, region, body, sweet, botanical, list(tags)
     if re.search(r"london\s*dry|dry gin", text, re.I):
         return "london-dry", "Engleska", 3, 2, "classic-juniper", ["travnato", "citrus", "biljno"]

@@ -65,7 +65,7 @@ def build_worklist(min_bucket: int = 5) -> dict:
             "total": len(bottles),
             "distinct_profiles": len(bucket_counts),
             "largest_bucket": max(bucket_counts.values()),
-            "in_buckets_ge_5": sum(v for v in bucket_counts.values() if v >= 5),
+            "in_buckets_ge_5": sum(v for v in bucket_counts.values() if v >= min_bucket),
             "in_target_buckets": total_in_big,
         }
 
@@ -128,7 +128,7 @@ def main() -> int:
         return 0
 
     print(f"W2 drink profile worklist — buckets >= {args.min_bucket}")
-    print(f"{'Category':<12} {'Bottles':>7} {'Profiles':>9} {'Largest':>8} {'In>=5':>6}")
+    print(f"{'Category':<12} {'Bottles':>7} {'Profiles':>9} {'Largest':>8} {'In>=' + str(args.min_bucket):>6}")
     print("-" * 46)
     for cat, stats in result["per_category"].items():
         print(

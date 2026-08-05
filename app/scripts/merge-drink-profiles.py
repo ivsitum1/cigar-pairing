@@ -342,7 +342,7 @@ WHISKY_CURATED: list[tuple[str, int, int, list[str], bool]] = [
     # Elijah Craig: high rye Heaven Hill bourbon
     ("elijah-craig", 4, 3, ["karamela", "hrast", "papar"], False),
     # Highland Park — age/edition tiers ──
-    ("wh-highland-park.*30|wh-highland-park-30", 4, 2, ["suho-voce", "dim", "hrast"], False),
+    ("wh-highland-park.*30|wh-highland-park-30", 5, 2, ["suho-voce", "dim", "hrast"], False),
     ("wh-highland-park.*21|wh-highland-park-21", 4, 2, ["dim", "suho-voce", "hrast"], False),
     ("wh-highland-park.*18|wh-highland-park-18", 4, 2, ["med", "dim", "hrast"], False),
     ("wh-highland-park.*17|wh-highland-park-17", 3, 2, ["dim", "med", "cvjetno"], False),
@@ -353,12 +353,6 @@ WHISKY_CURATED: list[tuple[str, int, int, list[str], bool]] = [
     ("wh-the-macallan.*18.*sherry-oak|wh-macallan.*18.*sherry-oak", 4, 4, ["tamno-voce", "hrast", "zacini"], False),
     ("wh-the-macallan.*12.*sherry-oak|wh-macallan.*12.*sherry-oak", 3, 4, ["suho-voce", "cvjetno", "med"], False),
     # JW Blue Label — specific editions handled in JW section above
-    # ── Highland Park — age/edition tiers ──
-    ("wh-highland-park.*30|wh-highland-park-30", 5, 2, ["suho-voce", "dim", "hrast"], False),
-    ("wh-highland-park.*21|wh-highland-park-21", 4, 2, ["dim", "suho-voce", "hrast"], False),
-    ("wh-highland-park.*18|wh-highland-park-18", 4, 2, ["med", "dim", "hrast"], False),
-    ("wh-highland-park.*17|wh-highland-park-17", 3, 2, ["dim", "med", "cvjetno"], False),
-    ("wh-hunter-laing.*highland-park|wh-hunter.*highland-park", 4, 2, ["dim", "suho-voce", "papar"], False),
     # ── Blanton's — standard vs Gold vs SFTTB ──
     ("wh-blanton.*straight-from-the-barrel|wh-blanton.*sfttb", 5, 2, ["vanilija", "karamela", "papar"], False),
     ("wh-blanton.*gold|wh-blanton.*039.*gold|wh-blanton.*039-s-gold", 4, 3, ["vanilija", "karamela", "med"], False),
