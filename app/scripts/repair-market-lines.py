@@ -355,20 +355,23 @@ def one_pass(cigars: list[dict], merged_log: list[str], renamed_log: list[str],
         srcs = sorted({u for m in members for u in (m.get("sourceUrls") or [])})
         shops = sorted({s for m in members for s in m["availabilityHR"]})
 
+        primary = uniq[0]
         old_id = survivor["id"]
         survivor.update({
-            "id": new_id, "line": line, "vitola": uniq[0]["name"],
-            "format": uniq[0]["format"] or survivor["format"],
-            "smokeTimeMin": uniq[0]["smokeTimeMin"] or survivor["smokeTimeMin"],
+            "id": new_id, "line": line, "vitola": primary["name"],
+            "format": primary["format"] or survivor["format"],
+            "smokeTimeMin": primary["smokeTimeMin"] or survivor["smokeTimeMin"],
             "vitolas": uniq, "markets": markets, "availabilityHR": shops,
         })
         if wrappers:
             survivor["wrapper"] = max(set(wrappers), key=wrappers.count)
-        if links:
+        if primary.get("regionLinks"):
+            survivor["regionLinks"] = primary["regionLinks"]
+        elif links:
             survivor["regionLinks"] = links
         if srcs:
             survivor["sourceUrls"] = srcs
-        hr = links.get("HR")
+        hr = survivor.get("regionLinks", {}).get("HR")
         if hr and hr.get("priceEUR"):
             survivor["priceEUR"] = hr["priceEUR"]
 
