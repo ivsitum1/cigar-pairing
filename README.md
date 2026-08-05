@@ -28,7 +28,7 @@ indeksima rangiranim po kvaliteti za sipping uz cigaru.
 - `app/` — Vite + React + TS + Tailwind PWA
   - Hash-routing s deep-linkovima: `#/pairing/cigar/<id>` i `#/pairing/drink/<id>`
     otvaraju pairing s odabranom stavkom (dijeljivi linkovi, back tipka radi)
-  - `src/data/*.json` — indeksi (321 rum, 275 whiskyja, 101 brandy/grappa, 70 gin,
+  - `src/data/*.json` — indeksi (321 rum, 275 whiskyja, 102 brandy/grappa, 70 gin,
     124 vina, 26 tequila, 33 kave, 13 digestiva, 3701 cigara);
     build ih dijeli u odvojene chunkove (`data-cigars`, `data-whiskies`, `data-rums`…) radi
     paralelnog downloada i boljeg cachea
@@ -130,7 +130,7 @@ Kad zatreba sync mobitel ↔ računalo:
   URL izgleda kao stranica *tog* proizvoda; inače „Traži online” (fuzzy match kataloga inače
   često veže krivi SKU ili kategoriju — to je posebno vidljivo u Shopping → Praznine).
 - **Trgovine pićem** (`app/src/data/drinkShops.ts` — jedini izvor istine): potvrđenu stranicu
-  boce ima trećina zapisa (313/963; vino 2/124, rum 42/321), pa detalj boce više ne nudi samo
+  boce ima trećina zapisa (324/964; vino 2/124, rum 47/321), pa detalj boce više ne nudi samo
   Google. Redoslijed: potvrđena stranica (*izravno*) → HR trgovine s pretragom po nazivu
   (Tipsy, Cugaklik) → katalozi (allez.hr, ecuga.com, Roto, Vrutak, Vivat) → Wine-Searcher kao
   svjetski cjenik. Trgovina bez provjerenog endpointa pretrage dobiva link na katalog

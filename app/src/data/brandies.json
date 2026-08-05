@@ -3963,6 +3963,51 @@
     }
   },
   {
+    "id": "br-courvoisier-vs",
+    "category": "brandy",
+    "name": "Courvoisier VS",
+    "style": "cognac-vs",
+    "region": "Cognac, Francuska",
+    "country": "Francuska",
+    "abv": 40.0,
+    "body": 3,
+    "sweetness": 3,
+    "flavorTags": [
+      "voce",
+      "cvjetno",
+      "vanilija"
+    ],
+    "additiveStatus": "unknown",
+    "additiveDetail": {
+      "hr": "Nije deklarirano",
+      "en": "Not declared"
+    },
+    "additiveSource": "Proizvođač ne deklarira",
+    "qualityScore": 6.9,
+    "priceEUR": {
+      "min": 36,
+      "max": 39
+    },
+    "priceApprox": true,
+    "shopHR": "ecuga.com",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 2,
+      "highball": 0,
+      "cola": 0,
+      "best": "Cisto ili velika kocka leda"
+    },
+    "cigarHint": null,
+    "priceUrl": "https://ecuga.com/proizvod/courvoisier-vs",
+    "notes": {
+      "hr": "Ulazni Courvoisier — zrelo voće i cvjetne note, mekši i jednostavniji od VSOP-a.",
+      "en": "The entry Courvoisier — ripe fruit and floral notes, softer and simpler than the VSOP."
+    }
+  },
+  {
     "id": "br-hennessy-vs",
     "category": "brandy",
     "name": "Hennessy VS",

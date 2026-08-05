@@ -5,6 +5,8 @@
 
  "_note_isti_proizvodac": "Vise kategorija pod istom markom NIJE razlog za ispravku: Nikka radi whisky i Coffey Gin, Nonino grappu i amaro, Antinori i Gaja vino i grappu, Ableforth's gin i rum, Aura pelinkovac i gin. Te su namjerno ostavljene kao jedna marka.",
 
+ "_note_kuca_u_imenu": "Treci razlog: ime boce ne pocinje imenom kuce ('H by Hine' -> 'H') ili kuca nosi genericnu prvu rijec pa najdulji prefiks stane na clanu ('Chateau du' umjesto 'Chateau du Tariquet'). Skripta to ne moze znati bez znanja o svijetu, a korisnik marku trazi po kuci.",
+
  "brands": {
   "rum-black-tot-rum": "Black Tot",
   "rum-black-tot-mbr-2021": "Black Tot",
@@ -22,6 +24,12 @@
   "wh-monkey-shoulder": "Monkey Shoulder",
 
   "tq-patron-silver": "Gran Patrón",
+
+  "br-h-by-hine-vsop-fine-champagne-cognac-design-40-vol-0-7l-u-poklon-kutiji": "Hine",
+
+  "br-chateau-du-tariquet-vsop-bas-armagnac": "Château du Tariquet",
+  "br-tariquet-armagnac-vsop-40-vol-0-5l-u-poklon-kutiji": "Château du Tariquet",
+  "br-tariquet-armagnac-vsop-40-vol-0-7l-u-poklon-kutiji": "Château du Tariquet",
 
   "wh-royal-salute-21-chivas": "Royal Salute",
   "wine-tokaji-aszu-5": "Royal Tokaji",
