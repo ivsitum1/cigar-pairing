@@ -1,12 +1,21 @@
 // Prikazno ime pića po jeziku. Većina imena su vlastiti nazivi (GlenDronach,
 // Don Julio…) i jednaka su u oba jezika; opisna imena kave ("Turska kava",
 // "ledena", "tamna mješavina") nose `nameLoc` s prijevodom.
+// Scrape-repovi (% Vol, volumen, poklon kutija) čiste se u drinkDisplayNames.json
+// — sirovi `name` ostaje za buy-link i pretragu.
 
+import drinkDisplayNamesJson from "../data/drinkDisplayNames.json";
 import type { Drink, LocalizedText } from "../types";
 
-/** LocalizedText prikaznog imena — `nameLoc` ako postoji, inače sirovo `name`. */
+const DISPLAY_NAMES: Record<string, string> =
+  (drinkDisplayNamesJson as { names?: Record<string, string> }).names ?? {};
+
+/** LocalizedText prikaznog imena — nameLoc > display map > sirovo name. */
 export function drinkNameLoc(d: Drink): LocalizedText {
-  return d.nameLoc ?? { hr: d.name, en: d.name };
+  if (d.nameLoc) return d.nameLoc;
+  const cleaned = DISPLAY_NAMES[d.id];
+  if (cleaned) return { hr: cleaned, en: cleaned };
+  return { hr: d.name, en: d.name };
 }
 
 /**
@@ -22,5 +31,9 @@ export function bottleLabel(name: string, brand: string): string {
 
 /** Sve varijante imena (za pretragu neosjetljivu na jezik). */
 export function drinkNameHaystack(d: Drink): string {
-  return d.nameLoc ? `${d.name} ${d.nameLoc.hr} ${d.nameLoc.en}` : d.name;
+  const loc = drinkNameLoc(d);
+  const parts = [d.name, loc.hr, loc.en];
+  const mapped = DISPLAY_NAMES[d.id];
+  if (mapped) parts.push(mapped);
+  return [...new Set(parts)].join(" ");
 }

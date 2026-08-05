@@ -9,6 +9,8 @@ updated: 2026-07-31
 
 ~500 riječi snapshot nedavne aktivnosti. Agent ažurira nakon svake značajnije operacije pisanja u wiki.
 
+> **2026-08-05:** CONTINUATION OF Claude Code � handoff `.agent/task/handoff_2026-08-05-claude-continuation.md`. Cursor dovr�ava W4 + nomenklatura/~72 vitola curate.
+
 > **2026-08-01:** Rum lab/hidrometar Val 1: **17** boca dobile stvarni g/L (Systembolaget/FRP/Drejer) umjesto stilske procjene — mapa `scripts/data/rum-lab-sugar.json`. Okusne note + tagovi: tanki unosi popunjeni (notes ispod 80 → 0; tags ispod 3 → 0). Ostalih ~135 stilskih bez mjerenja nije dirano. Skripte `apply-rum-lab-sugar.py`, `enrich-rum-taste-notes.py`.
 
 > **2026-07-31:** Rum cleanup kombiniranih unosa: ako postoje obje polovice (npr. Flor 12+18) → briši `12/18`; ako samo jedna → preimenuj stari u drugu. Ne uvoziti „sa 2 čaše”. Obrisano 9 supersedanih/META; katalog **321**. Formidable dobio `cigarHint` (curatedNotes). Skripta `cleanup-combined-rums.py`.
