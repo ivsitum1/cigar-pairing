@@ -29,7 +29,7 @@ indeksima rangiranim po kvaliteti za sipping uz cigaru.
   - Hash-routing s deep-linkovima: `#/pairing/cigar/<id>` i `#/pairing/drink/<id>`
     otvaraju pairing s odabranom stavkom (dijeljivi linkovi, back tipka radi)
   - `src/data/*.json` — indeksi (320 rum, 275 whiskyja, 90 brandy/grappa, 65 gin,
-    124 vina, 26 tequila, 33 kave, 13 digestiva, 3326 cigara);
+    124 vina, 26 tequila, 33 kave, 13 digestiva, 3321 cigara);
     build ih dijeli u odvojene chunkove (`data-cigars`, `data-whiskies`, `data-rums`…) radi
     paralelnog downloada i boljeg cachea
   - **ID-jevi se nikad ne brišu.** Kolekcija i dnevnik žive u `localStorage` i
@@ -68,6 +68,12 @@ indeksima rangiranim po kvaliteti za sipping uz cigaru.
   - `scripts/profile-cigars.py` — obogaćuje cigare bez profila (prazan flavorTags →
     izvodi snagu/tijelo/wrapper/okuse iz wrappera, marke i bilješki)
   - `scripts/dedupe-data.py` — uklanja duple ID-jeve nakon regeneracije (pokreni zadnje)
+  - `scripts/repair-market-lines.py` — market scrape upiše cijelo ime proizvoda u
+    `line` (malim slovima, s mjerom): vraća mjeru u vitolu, spaja vitole iste
+    linije i sređuje imena. Idempotentno, izvještaj u `scripts/output/`
+  - `scripts/repair-brand-line-split.py` — krivo razrezan brend/linija ("Casa" +
+    "Cuevas Maduro" → marka "Casa Cuevas"), održava `brands.json` 1:1
+  - što od kataloga još čeka podatke iz trgovina: [docs/catalog-scrape-todo.md](docs/catalog-scrape-todo.md)
   - `scripts/build-world-outline.mjs` — generira `src/data/world_outline.json`
     (monokromni atlas za Club kartu) iz Natural Earth land TopoJSON-a
   - `scripts/export-indexes.py` — generira `*_Index.xlsx` u root (git-ignorirano)
