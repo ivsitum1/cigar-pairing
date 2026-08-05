@@ -95,6 +95,17 @@ def parse_size(text: str) -> tuple[int | None, int | None]:
     return None, None
 
 
+def guess_country(text: str) -> str | None:
+    low = (text or "").lower()
+    if "nicaragua" in low:
+        return "Nicaragua"
+    if "dominican" in low:
+        return "Dominican Republic"
+    if "honduras" in low:
+        return "Honduras"
+    return None
+
+
 def guess_vitola(text: str) -> str | None:
     low = f" {text.lower()} "
     for v in sorted(VITOLAS, key=len, reverse=True):
@@ -148,15 +159,14 @@ def parse_neptune_brand(html: str, brand: str) -> list[dict]:
         if not vitola:
             vitola = guess_vitola(slug_part.replace("-", " "))
         line = line_from_product(brand, title, vitola)
-        # country hint
-        country = None
-        low = plain[:8000].lower()
-        if "nicaragua" in low:
-            country = "Nicaragua"
-        elif "dominican" in low:
-            country = "Dominican Republic"
-        elif "honduras" in low:
-            country = "Honduras"
+        # country hint from text near this product, not the whole brand page
+        country = guess_country(slug_part.replace("-", " "))
+        if not country and tokens:
+            search_key = tokens[-1]
+            for m in re.finditer(re.escape(search_key), plain, re.I):
+                country = guess_country(plain[m.start() : m.start() + 400])
+                if country:
+                    break
         offers.append(
             {
                 "sourceShopId": "neptune_us",
