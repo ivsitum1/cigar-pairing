@@ -610,9 +610,9 @@
     ]
   },
   {
-    "id": "cig-1502-special-edition-blue-sapphire",
+    "id": "cig-1502-blue-sapphire",
     "brand": "1502",
-    "line": "Special Edition Blue Sapphire",
+    "line": "Blue Sapphire",
     "vitola": "Robusto Gordo",
     "format": "52 x 127mm",
     "country": "Nikaragva",
@@ -723,70 +723,9 @@
     ]
   },
   {
-    "id": "cig-1502-special-edition-cachito",
+    "id": "cig-1502-cachito",
     "brand": "1502",
-    "line": "Special Edition Cachito",
-    "vitola": "Lancero",
-    "format": "38 x 189mm",
-    "country": "Nikaragva",
-    "wrapper": "Nicaragua",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [
-      "kakao",
-      "kava",
-      "papar",
-      "kremasto",
-      "zemljano",
-      "orasasti"
-    ],
-    "profileEstimated": true,
-    "catalogSource": "market",
-    "smokeTimeMin": 73,
-    "priceEUR": null,
-    "priceApprox": false,
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Nikaragva, Nicaragua pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Nicaragua, Nicaragua wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
-    },
-    "markets": [
-      "EU",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Lancero",
-        "format": "38 x 189mm",
-        "smokeTimeMin": 73,
-        "priceEUR": null,
-        "url": null,
-        "regionLinks": {
-          "EU": {
-            "shop": "CigarWorld",
-            "url": "https://www.cigarworld.de/en/zigarren/nicaragua/1502-special-edition-cachito-lancero-90014552_49781",
-            "priceEUR": 7.0
-          }
-        },
-        "ring": 38,
-        "lengthMM": 189
-      }
-    ],
-    "regionLinks": {
-      "EU": {
-        "shop": "CigarWorld",
-        "url": "https://www.cigarworld.de/en/zigarren/nicaragua/1502-special-edition-cachito-lancero-90014552_49781",
-        "priceEUR": 7.0
-      }
-    },
-    "formatEstimated": true,
-    "wrapperOrigin": "Nikaragva",
-    "binderOrigin": "Honduras"
-  },
-  {
-    "id": "cig-1502-special-edition-cachito-original",
-    "brand": "1502",
-    "line": "Special Edition Cachito Original",
+    "line": "Cachito",
     "vitola": "Short Robusto",
     "format": "50 x 106mm",
     "country": "Nikaragva",
@@ -817,6 +756,22 @@
     ],
     "vitolas": [
       {
+        "name": "Lancero",
+        "format": "38 x 189mm",
+        "smokeTimeMin": 73,
+        "priceEUR": null,
+        "url": null,
+        "regionLinks": {
+          "EU": {
+            "shop": "CigarWorld",
+            "url": "https://www.cigarworld.de/en/zigarren/nicaragua/1502-special-edition-cachito-lancero-90014552_49781",
+            "priceEUR": 7.0
+          }
+        },
+        "ring": 38,
+        "lengthMM": 189
+      },
+      {
         "name": "Short Robusto",
         "format": "50 x 106mm",
         "smokeTimeMin": 41,
@@ -845,9 +800,9 @@
     "binderOrigin": "Honduras"
   },
   {
-    "id": "cig-1502-special-edition-cachito-white-connecticut",
+    "id": "cig-1502-cachito-white-connecticut",
     "brand": "1502",
-    "line": "Special Edition Cachito White Connecticut",
+    "line": "Cachito White Connecticut",
     "vitola": "Short Robusto",
     "format": "50 x 106mm",
     "country": "Nikaragva",
@@ -908,9 +863,9 @@
     "isPuro": false
   },
   {
-    "id": "cig-1502-special-edition-xo-series",
+    "id": "cig-1502-xo",
     "brand": "1502",
-    "line": "Special Edition XO Series",
+    "line": "XO",
     "vitola": "Conquistador",
     "format": "50 x 152mm",
     "country": "Nikaragva",
@@ -945,19 +900,40 @@
     "vitolas": [
       {
         "name": "Lancero",
-        "format": "40 x 189mm",
-        "smokeTimeMin": 73,
+        "format": "40 x 178mm",
+        "smokeTimeMin": 68,
         "priceEUR": null,
-        "url": "https://www.neptunecigar.com/cigars/1502-xo-churchill",
+        "url": "https://www.neptunecigar.com/cigars/1502-xo-lancero-7--40",
+        "shape": "Lancero",
         "regionLinks": {
           "EU": {
             "shop": "CigarWorld",
             "url": "https://www.cigarworld.de/en/zigarren/nicaragua/1502-special-edition-xo-series-lancero-box-pressed-90014552_49785",
             "priceEUR": 29.0
+          },
+          "USA": {
+            "shop": "Neptune Cigar",
+            "url": "https://www.neptunecigar.com/cigars/1502-xo-lancero-7--40"
           }
         },
         "ring": 40,
-        "lengthMM": 189
+        "lengthMM": 178
+      },
+      {
+        "name": "Churchill",
+        "format": "48 x 178mm",
+        "smokeTimeMin": 68,
+        "priceEUR": null,
+        "url": "https://www.neptunecigar.com/cigars/1502-xo-churchill",
+        "shape": "Churchill",
+        "regionLinks": {
+          "USA": {
+            "shop": "Neptune Cigar",
+            "url": "https://www.neptunecigar.com/cigars/1502-xo-churchill"
+          }
+        },
+        "ring": 48,
+        "lengthMM": 178
       },
       {
         "name": "Conquistador",
@@ -965,6 +941,17 @@
         "smokeTimeMin": 55,
         "priceEUR": 45.0,
         "url": "https://humidor.hr/hr/proizvod/1502-xo-conquistador-6-x-50/",
+        "regionLinks": {
+          "HR": {
+            "shop": "The Humidor",
+            "url": "https://humidor.hr/hr/proizvod/1502-xo-conquistador-6-x-50/",
+            "priceEUR": 45.0
+          },
+          "USA": {
+            "shop": "Neptune Cigar",
+            "url": "https://www.neptunecigar.com/cigars/1502-xo-conquistador-6--56"
+          }
+        },
         "ring": 50,
         "lengthMM": 152
       },
@@ -985,6 +972,22 @@
         "lengthMM": 152
       },
       {
+        "name": "Robusto Gordo",
+        "format": "52 x 127mm",
+        "smokeTimeMin": 49,
+        "priceEUR": null,
+        "url": "https://www.neptunecigar.com/cigars/1502-xo-robusto-gordo",
+        "shape": "Gordo",
+        "regionLinks": {
+          "USA": {
+            "shop": "Neptune Cigar",
+            "url": "https://www.neptunecigar.com/cigars/1502-xo-robusto-gordo"
+          }
+        },
+        "ring": 52,
+        "lengthMM": 127
+      },
+      {
         "name": "Perfecto",
         "format": "52 x 165mm",
         "smokeTimeMin": 65,
@@ -992,6 +995,38 @@
         "url": "https://humidor.hr/hr/proizvod/1502-xo-perfecto-6-1-2-x-52/",
         "ring": 52,
         "lengthMM": 165
+      },
+      {
+        "name": "Torpedo",
+        "format": "52 x 165mm",
+        "smokeTimeMin": 63,
+        "priceEUR": null,
+        "url": "https://www.neptunecigar.com/cigars/1502-xo-torpedo-61-2--52",
+        "shape": "Torpedo",
+        "regionLinks": {
+          "USA": {
+            "shop": "Neptune Cigar",
+            "url": "https://www.neptunecigar.com/cigars/1502-xo-torpedo-61-2--52"
+          }
+        },
+        "ring": 52,
+        "lengthMM": 165
+      },
+      {
+        "name": "Salomon",
+        "format": "58 x 178mm",
+        "smokeTimeMin": 68,
+        "priceEUR": null,
+        "url": "https://www.neptunecigar.com/cigars/1502-xo-salomon-7--58",
+        "shape": "Salomon",
+        "regionLinks": {
+          "USA": {
+            "shop": "Neptune Cigar",
+            "url": "https://www.neptunecigar.com/cigars/1502-xo-salomon-7--58"
+          }
+        },
+        "ring": 58,
+        "lengthMM": 178
       }
     ],
     "priceUrl": "https://humidor.hr/hr/proizvod/1502-xo-conquistador-6-x-50/",
@@ -1020,277 +1055,12 @@
     "fillerOrigin": "Nikaragva",
     "isPuro": true,
     "sourceUrls": [
-      "https://www.neptunecigar.com/cigars/1502-xo-churchill"
-    ]
-  },
-  {
-    "id": "cig-1502-xo-61-2-52",
-    "brand": "1502",
-    "line": "xo 61 2 52",
-    "vitola": "Torpedo",
-    "format": "52 x 156mm",
-    "country": "Nikaragva",
-    "wrapper": "—",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [],
-    "profileEstimated": true,
-    "formatEstimated": true,
-    "smokeTimeMin": 74,
-    "priceEUR": null,
-    "priceUrl": "https://www.neptunecigar.com/cigars/1502-xo-torpedo-61-2--52",
-    "vitolas": [
-      {
-        "name": "Torpedo",
-        "format": "52 x 156mm",
-        "smokeTimeMin": 74,
-        "priceEUR": null,
-        "url": "https://www.neptunecigar.com/cigars/1502-xo-torpedo-61-2--52",
-        "shape": "Torpedo",
-        "ring": 52,
-        "lengthMM": 156,
-        "regionLinks": {
-          "USA": {
-            "shop": "Neptune Cigar",
-            "url": "https://www.neptunecigar.com/cigars/1502-xo-torpedo-61-2--52"
-          }
-        }
-      }
-    ],
-    "markets": [
-      "USA",
-      "WW"
-    ],
-    "regionLinks": {
-      "USA": {
-        "shop": "Neptune Cigar",
-        "url": "https://www.neptunecigar.com/cigars/1502-xo-torpedo-61-2--52"
-      }
-    },
-    "catalogSource": "market",
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Nikaragva — linija iz trgovine Neptune Cigar.",
-      "en": "Nicaragua — line from Neptune Cigar."
-    },
-    "sourceUrls": [
+      "https://www.neptunecigar.com/cigars/1502-xo-churchill",
+      "https://www.neptunecigar.com/cigars/1502-xo-conquistador-6--56",
+      "https://www.neptunecigar.com/cigars/1502-xo-lancero-7--40",
+      "https://www.neptunecigar.com/cigars/1502-xo-robusto-gordo",
+      "https://www.neptunecigar.com/cigars/1502-xo-salomon-7--58",
       "https://www.neptunecigar.com/cigars/1502-xo-torpedo-61-2--52"
-    ]
-  },
-  {
-    "id": "cig-1502-xo-7-40",
-    "brand": "1502",
-    "line": "xo 7 40",
-    "vitola": "Lancero",
-    "format": "38 x 190mm",
-    "country": "Nikaragva",
-    "wrapper": "—",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [],
-    "profileEstimated": true,
-    "formatEstimated": true,
-    "smokeTimeMin": 90,
-    "priceEUR": null,
-    "priceUrl": "https://www.neptunecigar.com/cigars/1502-xo-lancero-7--40",
-    "vitolas": [
-      {
-        "name": "Lancero",
-        "format": "38 x 190mm",
-        "smokeTimeMin": 90,
-        "priceEUR": null,
-        "url": "https://www.neptunecigar.com/cigars/1502-xo-lancero-7--40",
-        "shape": "Lancero",
-        "ring": 38,
-        "lengthMM": 190,
-        "regionLinks": {
-          "USA": {
-            "shop": "Neptune Cigar",
-            "url": "https://www.neptunecigar.com/cigars/1502-xo-lancero-7--40"
-          }
-        }
-      }
-    ],
-    "markets": [
-      "USA",
-      "WW"
-    ],
-    "regionLinks": {
-      "USA": {
-        "shop": "Neptune Cigar",
-        "url": "https://www.neptunecigar.com/cigars/1502-xo-lancero-7--40"
-      }
-    },
-    "catalogSource": "market",
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Nikaragva — linija iz trgovine Neptune Cigar.",
-      "en": "Nicaragua — line from Neptune Cigar."
-    },
-    "sourceUrls": [
-      "https://www.neptunecigar.com/cigars/1502-xo-lancero-7--40"
-    ]
-  },
-  {
-    "id": "cig-1502-xo-conquistador-6-56",
-    "brand": "1502",
-    "line": "xo conquistador 6 56",
-    "vitola": "Robusto",
-    "format": "50 x 124mm",
-    "country": "Nikaragva",
-    "wrapper": "—",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [],
-    "profileEstimated": true,
-    "formatEstimated": true,
-    "smokeTimeMin": 59,
-    "priceEUR": null,
-    "priceUrl": "https://www.neptunecigar.com/cigars/1502-xo-conquistador-6--56",
-    "vitolas": [
-      {
-        "name": "Robusto",
-        "format": "50 x 124mm",
-        "smokeTimeMin": 59,
-        "priceEUR": null,
-        "url": "https://www.neptunecigar.com/cigars/1502-xo-conquistador-6--56",
-        "shape": "Robusto",
-        "ring": 50,
-        "lengthMM": 124,
-        "regionLinks": {
-          "USA": {
-            "shop": "Neptune Cigar",
-            "url": "https://www.neptunecigar.com/cigars/1502-xo-conquistador-6--56"
-          }
-        }
-      }
-    ],
-    "markets": [
-      "USA",
-      "WW"
-    ],
-    "regionLinks": {
-      "USA": {
-        "shop": "Neptune Cigar",
-        "url": "https://www.neptunecigar.com/cigars/1502-xo-conquistador-6--56"
-      }
-    },
-    "catalogSource": "market",
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Nikaragva — linija iz trgovine Neptune Cigar.",
-      "en": "Nicaragua — line from Neptune Cigar."
-    },
-    "sourceUrls": [
-      "https://www.neptunecigar.com/cigars/1502-xo-conquistador-6--56"
-    ]
-  },
-  {
-    "id": "cig-1502-xo-gordo",
-    "brand": "1502",
-    "line": "xo gordo",
-    "vitola": "Robusto",
-    "format": "50 x 124mm",
-    "country": "Nikaragva",
-    "wrapper": "—",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [],
-    "profileEstimated": true,
-    "formatEstimated": true,
-    "smokeTimeMin": 59,
-    "priceEUR": null,
-    "priceUrl": "https://www.neptunecigar.com/cigars/1502-xo-robusto-gordo",
-    "vitolas": [
-      {
-        "name": "Robusto",
-        "format": "50 x 124mm",
-        "smokeTimeMin": 59,
-        "priceEUR": null,
-        "url": "https://www.neptunecigar.com/cigars/1502-xo-robusto-gordo",
-        "shape": "Robusto",
-        "ring": 50,
-        "lengthMM": 124,
-        "regionLinks": {
-          "USA": {
-            "shop": "Neptune Cigar",
-            "url": "https://www.neptunecigar.com/cigars/1502-xo-robusto-gordo"
-          }
-        }
-      }
-    ],
-    "markets": [
-      "USA",
-      "WW"
-    ],
-    "regionLinks": {
-      "USA": {
-        "shop": "Neptune Cigar",
-        "url": "https://www.neptunecigar.com/cigars/1502-xo-robusto-gordo"
-      }
-    },
-    "catalogSource": "market",
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Nikaragva — linija iz trgovine Neptune Cigar.",
-      "en": "Nicaragua — line from Neptune Cigar."
-    },
-    "sourceUrls": [
-      "https://www.neptunecigar.com/cigars/1502-xo-robusto-gordo"
-    ]
-  },
-  {
-    "id": "cig-1502-xo-salomon-7-58",
-    "brand": "1502",
-    "line": "xo salomon 7 58",
-    "vitola": "Robusto",
-    "format": "50 x 124mm",
-    "country": "Nikaragva",
-    "wrapper": "—",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [],
-    "profileEstimated": true,
-    "formatEstimated": true,
-    "smokeTimeMin": 59,
-    "priceEUR": null,
-    "priceUrl": "https://www.neptunecigar.com/cigars/1502-xo-salomon-7--58",
-    "vitolas": [
-      {
-        "name": "Robusto",
-        "format": "50 x 124mm",
-        "smokeTimeMin": 59,
-        "priceEUR": null,
-        "url": "https://www.neptunecigar.com/cigars/1502-xo-salomon-7--58",
-        "shape": "Robusto",
-        "ring": 50,
-        "lengthMM": 124,
-        "regionLinks": {
-          "USA": {
-            "shop": "Neptune Cigar",
-            "url": "https://www.neptunecigar.com/cigars/1502-xo-salomon-7--58"
-          }
-        }
-      }
-    ],
-    "markets": [
-      "USA",
-      "WW"
-    ],
-    "regionLinks": {
-      "USA": {
-        "shop": "Neptune Cigar",
-        "url": "https://www.neptunecigar.com/cigars/1502-xo-salomon-7--58"
-      }
-    },
-    "catalogSource": "market",
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Nikaragva — linija iz trgovine Neptune Cigar.",
-      "en": "Nicaragua — line from Neptune Cigar."
-    },
-    "sourceUrls": [
-      "https://www.neptunecigar.com/cigars/1502-xo-salomon-7--58"
     ]
   },
   {
