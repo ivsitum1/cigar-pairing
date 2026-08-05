@@ -6,7 +6,7 @@
     "region": "World",
     "botanicalProfile": "botanical",
     "body": 3,
-    "sweetness": 2,
+    "sweetness": 1,
     "flavorTags": [
       "cvjetno",
       "citrus",
@@ -33,7 +33,8 @@
       "hr": "Referentni contemporary gin — gusta botanika; čist ili martini uz Connecticut/blagi Habano.",
       "en": ""
     },
-    "category": "gin"
+    "category": "gin",
+    "profileEstimated": false
   },
   {
     "id": "gin-monkey-47-schwarzwald-dry-gin-47-vol-0-5l",
@@ -42,7 +43,7 @@
     "region": "Schwarzwald, Njemačka",
     "botanicalProfile": "botanical",
     "body": 3,
-    "sweetness": 2,
+    "sweetness": 1,
     "flavorTags": [
       "cvjetno",
       "citrus",
@@ -74,7 +75,8 @@
     },
     "category": "gin",
     "meta": true,
-    "status": "META"
+    "status": "META",
+    "profileEstimated": false
   },
   {
     "id": "gin-monkey-47-schwarzwald-dry-gin-barrel-cut-47-vol-0-5l-u-poklon-kutiji",
@@ -83,7 +85,7 @@
     "region": "Schwarzwald, Njemačka",
     "botanicalProfile": "botanical",
     "body": 3,
-    "sweetness": 2,
+    "sweetness": 1,
     "flavorTags": [
       "cvjetno",
       "citrus",
@@ -115,7 +117,8 @@
     },
     "category": "gin",
     "meta": true,
-    "status": "META"
+    "status": "META",
+    "profileEstimated": false
   },
   {
     "id": "gin-hendrick-s-gin-41-4-vol-0-7l",
@@ -124,7 +127,7 @@
     "region": "Škotska",
     "botanicalProfile": "botanical",
     "body": 3,
-    "sweetness": 2,
+    "sweetness": 3,
     "flavorTags": [
       "cvjetno",
       "citrus",
@@ -156,7 +159,8 @@
     },
     "category": "gin",
     "meta": true,
-    "status": "META"
+    "status": "META",
+    "profileEstimated": false
   },
   {
     "id": "gin-four-pillars-rare-dry-gin-41-8-vol-0-7l",
@@ -197,7 +201,8 @@
     },
     "category": "gin",
     "meta": true,
-    "status": "META"
+    "status": "META",
+    "profileEstimated": false
   },
   {
     "id": "gin-the-botanist-islay-dry-gin-46-vol-0-7l",
@@ -238,7 +243,8 @@
     },
     "category": "gin",
     "meta": true,
-    "status": "META"
+    "status": "META",
+    "profileEstimated": false
   },
   {
     "id": "gin-gin-mare-capri-mediterranean-gin-42-7-vol-0-7l",
@@ -273,7 +279,8 @@
       "hr": "Mediteranska botanika (maslina, timijan); G&T ili neat uz blagi Habano.",
       "en": ""
     },
-    "category": "gin"
+    "category": "gin",
+    "profileEstimated": false
   },
   {
     "id": "gin-gin-mare-lantern-limited-edition-42-7-0-7-l",
@@ -308,7 +315,8 @@
       "hr": "Mediteranska botanika (maslina, timijan); G&T ili neat uz blagi Habano.",
       "en": ""
     },
-    "category": "gin"
+    "category": "gin",
+    "profileEstimated": false
   },
   {
     "id": "gin-gin-mare-mediterranean-gin-42-7-vol-0-7l-u-poklon-kutiji-s-2-case",
@@ -343,7 +351,8 @@
       "hr": "Mediteranska botanika (maslina, timijan); G&T ili neat uz blagi Habano.",
       "en": ""
     },
-    "category": "gin"
+    "category": "gin",
+    "profileEstimated": false
   },
   {
     "id": "gin-gin-mare-mediterranean-gin-magnum-42-7-vol-1-75l-u-poklon-kutiji",
@@ -378,7 +387,8 @@
       "hr": "Mediteranska botanika (maslina, timijan); G&T ili neat uz blagi Habano.",
       "en": ""
     },
-    "category": "gin"
+    "category": "gin",
+    "profileEstimated": false
   },
   {
     "id": "gin-nikka-coffey-gin-47-vol-0-7l",
@@ -419,7 +429,8 @@
     },
     "category": "gin",
     "meta": true,
-    "status": "META"
+    "status": "META",
+    "profileEstimated": false
   },
   {
     "id": "gin-tanqueray-no-ten-47-3-vol-0-7l",
@@ -460,7 +471,8 @@
     },
     "category": "gin",
     "meta": true,
-    "status": "META"
+    "status": "META",
+    "profileEstimated": false
   },
   {
     "id": "gin-ki-no-bi-kyoto-dry-gin-45-7-vol-0-7-l-u-poklon-kutiji",
@@ -499,7 +511,8 @@
       "hr": "Kyoto botanika; fin contemporary uz blagu cigaru.",
       "en": "Heuristic profile — contemporary, botanical"
     },
-    "category": "gin"
+    "category": "gin",
+    "profileEstimated": false
   },
   {
     "id": "gin-ki-no-bi-sei-kyoto-dry-gin-54-5-vol-0-7l-u-poklon-kutiji",
@@ -538,7 +551,8 @@
       "hr": "Kyoto botanika; fin contemporary uz blagu cigaru.",
       "en": "Heuristic profile — contemporary, botanical"
     },
-    "category": "gin"
+    "category": "gin",
+    "profileEstimated": false
   },
   {
     "id": "gin-sipsmith",
@@ -554,7 +568,7 @@
       "biljno"
     ],
     "qualityScore": 8.3,
-    "abv": 41.6,
+    "abv": 40.0,
     "priceEUR": {
       "min": 45.4,
       "max": 45.4
@@ -579,7 +593,8 @@
     },
     "category": "gin",
     "meta": true,
-    "status": "META"
+    "status": "META",
+    "profileEstimated": false
   },
   {
     "id": "gin-sipsmith-london-dry-gin-41-6-0-7-l",
@@ -620,7 +635,8 @@
     },
     "category": "gin",
     "meta": true,
-    "status": "META"
+    "status": "META",
+    "profileEstimated": false
   },
   {
     "id": "gin-sipsmith-v-j-o-p-gin-57-7-vol-0-7-l",
@@ -628,8 +644,8 @@
     "style": "contemporary",
     "region": "London, UK",
     "botanicalProfile": "botanical",
-    "body": 3,
-    "sweetness": 2,
+    "body": 4,
+    "sweetness": 1,
     "flavorTags": [
       "cvjetno",
       "citrus",
@@ -659,7 +675,8 @@
       "hr": "Klasični London Dry craft; martini ili G&T uz Connecticut.",
       "en": "Heuristic profile — contemporary, botanical"
     },
-    "category": "gin"
+    "category": "gin",
+    "profileEstimated": false
   },
   {
     "id": "gin-sipsmith-zesty-orange-gin-40-vol-0-7l",
@@ -711,7 +728,7 @@
       "citrus"
     ],
     "qualityScore": 8.2,
-    "abv": 41.2,
+    "abv": 40.0,
     "priceEUR": {
       "min": 28.0,
       "max": 28.0
@@ -736,7 +753,8 @@
     },
     "category": "gin",
     "meta": true,
-    "status": "META"
+    "status": "META",
+    "profileEstimated": false
   },
   {
     "id": "gin-plymouth-original-strength-41-2-0-7-l",
@@ -775,7 +793,8 @@
       "hr": "Mekši od London Dryja; neat/martini uz blagu cigaru.",
       "en": ""
     },
-    "category": "gin"
+    "category": "gin",
+    "profileEstimated": false
   },
   {
     "id": "gin-silent-pool-gin-43-vol-1l",
@@ -784,7 +803,7 @@
     "region": "World",
     "botanicalProfile": "botanical",
     "body": 3,
-    "sweetness": 2,
+    "sweetness": 3,
     "flavorTags": [
       "cvjetno",
       "citrus",
@@ -811,7 +830,8 @@
       "hr": "Engleski botanical; neat/martini uz blagu cigaru.",
       "en": ""
     },
-    "category": "gin"
+    "category": "gin",
+    "profileEstimated": false
   },
   {
     "id": "gin-silent-pool-rare-citrus-gin-43-vol-0-7l",
@@ -819,7 +839,7 @@
     "style": "contemporary",
     "region": "World",
     "botanicalProfile": "botanical",
-    "body": 3,
+    "body": 2,
     "sweetness": 2,
     "flavorTags": [
       "cvjetno",
@@ -847,7 +867,8 @@
       "hr": "Engleski botanical; neat/martini uz blagu cigaru.",
       "en": ""
     },
-    "category": "gin"
+    "category": "gin",
+    "profileEstimated": false
   },
   {
     "id": "gin-silent-pool-rose-gin-43-vol-0-7l",
@@ -856,7 +877,7 @@
     "region": "World",
     "botanicalProfile": "botanical",
     "body": 3,
-    "sweetness": 2,
+    "sweetness": 3,
     "flavorTags": [
       "cvjetno",
       "citrus",
@@ -883,7 +904,8 @@
       "hr": "Engleski botanical; neat/martini uz blagu cigaru.",
       "en": ""
     },
-    "category": "gin"
+    "category": "gin",
+    "profileEstimated": false
   },
   {
     "id": "gin-copperhead-london-dry-gin-barrel-aged-46-vol-0-5l",
@@ -891,7 +913,7 @@
     "style": "contemporary",
     "region": "World",
     "botanicalProfile": "botanical",
-    "body": 3,
+    "body": 4,
     "sweetness": 2,
     "flavorTags": [
       "cvjetno",
@@ -919,7 +941,8 @@
       "hr": "Belgijski premium dry; martini uz Connecticut.",
       "en": ""
     },
-    "category": "gin"
+    "category": "gin",
+    "profileEstimated": false
   },
   {
     "id": "gin-copperhead-london-dry-gin-black-batch-42-vol-0-5l",
@@ -955,7 +978,8 @@
       "hr": "Belgijski premium dry; martini uz Connecticut.",
       "en": ""
     },
-    "category": "gin"
+    "category": "gin",
+    "profileEstimated": false
   },
   {
     "id": "gin-copperhead-the-alchemist-039-s-gin-40-0-5-l",
@@ -991,7 +1015,8 @@
       "hr": "Belgijski premium dry; martini uz Connecticut.",
       "en": ""
     },
-    "category": "gin"
+    "category": "gin",
+    "profileEstimated": false
   },
   {
     "id": "gin-dugave-gin",
@@ -1007,7 +1032,7 @@
       "zacini"
     ],
     "qualityScore": 7.9,
-    "abv": 45.0,
+    "abv": 40.0,
     "priceEUR": {
       "min": 30.0,
       "max": 30.0
@@ -1048,7 +1073,7 @@
       "biljno"
     ],
     "qualityScore": 7.8,
-    "abv": 45.0,
+    "abv": 40.0,
     "priceEUR": {
       "min": 29,
       "max": 32.38
@@ -1074,7 +1099,8 @@
     "category": "gin",
     "meta": true,
     "status": "META",
-    "priceApprox": true
+    "priceApprox": true,
+    "profileEstimated": false
   },
   {
     "id": "gin-malfy-gin-con-limone-41-vol-0-7l-u-poklon-kutiji-sa-casom",
@@ -1082,7 +1108,7 @@
     "style": "contemporary",
     "region": "Mediteran",
     "botanicalProfile": "mediterranean",
-    "body": 3,
+    "body": 2,
     "sweetness": 2,
     "flavorTags": [
       "biljno",
@@ -1109,7 +1135,8 @@
       "hr": "Talijanski citrusni gin; G&T uz Connecticut.",
       "en": ""
     },
-    "category": "gin"
+    "category": "gin",
+    "profileEstimated": false
   },
   {
     "id": "gin-malfy-gin-mini-set-41-vol-4x0-05l-u-poklon-kutiji",
@@ -1144,7 +1171,8 @@
       "hr": "Talijanski citrusni gin; G&T uz Connecticut.",
       "en": ""
     },
-    "category": "gin"
+    "category": "gin",
+    "profileEstimated": false
   },
   {
     "id": "gin-malfy-gin-originale-41-vol-0-7l",
@@ -1179,7 +1207,8 @@
       "hr": "Talijanski citrusni gin; G&T uz Connecticut.",
       "en": ""
     },
-    "category": "gin"
+    "category": "gin",
+    "profileEstimated": false
   },
   {
     "id": "gin-malfy-gin-con-arancia-sicilian-blood-orange-41-vol-0-7l",
@@ -1187,7 +1216,7 @@
     "style": "contemporary",
     "region": "Mediteran",
     "botanicalProfile": "mediterranean",
-    "body": 3,
+    "body": 2,
     "sweetness": 2,
     "flavorTags": [
       "biljno",
@@ -1214,7 +1243,8 @@
       "hr": "Talijanski citrusni gin; G&T uz Connecticut.",
       "en": ""
     },
-    "category": "gin"
+    "category": "gin",
+    "profileEstimated": false
   },
   {
     "id": "gin-citadelle",
@@ -1253,7 +1283,8 @@
       "hr": "Francuski dry — uravnotežen uz Connecticut.",
       "en": ""
     },
-    "category": "gin"
+    "category": "gin",
+    "profileEstimated": false
   },
   {
     "id": "gin-citadelle-original-dry-gin-44-vol-0-7l",
@@ -1289,7 +1320,8 @@
       "hr": "Francuski dry — uravnotežen uz Connecticut.",
       "en": ""
     },
-    "category": "gin"
+    "category": "gin",
+    "profileEstimated": false
   },
   {
     "id": "gin-citadelle-reserve-gin-45-2-vol-0-7l",
@@ -1297,7 +1329,7 @@
     "style": "contemporary",
     "region": "World",
     "botanicalProfile": "botanical",
-    "body": 3,
+    "body": 4,
     "sweetness": 2,
     "flavorTags": [
       "cvjetno",
@@ -1325,7 +1357,8 @@
       "hr": "Francuski dry — uravnotežen uz Connecticut.",
       "en": ""
     },
-    "category": "gin"
+    "category": "gin",
+    "profileEstimated": false
   },
   {
     "id": "gin-aviation",
@@ -1366,7 +1399,8 @@
     },
     "category": "gin",
     "meta": true,
-    "status": "META"
+    "status": "META",
+    "profileEstimated": false
   },
   {
     "id": "gin-aviation-gin",
@@ -1382,7 +1416,7 @@
       "zacini"
     ],
     "qualityScore": 7.6,
-    "abv": 42.0,
+    "abv": 40.0,
     "priceEUR": {
       "min": 34.0,
       "max": 34.0
@@ -1407,7 +1441,8 @@
     },
     "category": "gin",
     "meta": true,
-    "status": "META"
+    "status": "META",
+    "profileEstimated": false
   },
   {
     "id": "gin-aviation-gin-42-0-7-l",
@@ -1448,7 +1483,8 @@
     },
     "category": "gin",
     "meta": true,
-    "status": "META"
+    "status": "META",
+    "profileEstimated": false
   },
   {
     "id": "gin-elephant-gin-miniature-tasting-set-45-7-vol-3x0-05l",
@@ -1484,7 +1520,8 @@
       "hr": "Afričke botanike; contemporary uz blagi Habano.",
       "en": ""
     },
-    "category": "gin"
+    "category": "gin",
+    "profileEstimated": false
   },
   {
     "id": "gin-elephant-gin-orange-amp-cocoa-40-vol-0-5l",
@@ -1493,7 +1530,7 @@
     "region": "World",
     "botanicalProfile": "botanical",
     "body": 3,
-    "sweetness": 2,
+    "sweetness": 3,
     "flavorTags": [
       "cvjetno",
       "citrus",
@@ -1520,7 +1557,8 @@
       "hr": "Afričke botanike; contemporary uz blagi Habano.",
       "en": ""
     },
-    "category": "gin"
+    "category": "gin",
+    "profileEstimated": false
   },
   {
     "id": "gin-elephant-london-dry-gin-45-0-5-l",
@@ -1556,7 +1594,8 @@
       "hr": "Afričke botanike; contemporary uz blagi Habano.",
       "en": ""
     },
-    "category": "gin"
+    "category": "gin",
+    "profileEstimated": false
   },
   {
     "id": "gin-elephant-satao-london-dry-gin-45-vol-0-5l",
@@ -1592,7 +1631,8 @@
       "hr": "Afričke botanike; contemporary uz blagi Habano.",
       "en": ""
     },
-    "category": "gin"
+    "category": "gin",
+    "profileEstimated": false
   },
   {
     "id": "gin-tanqueray-n-ten-distilled-gin-47-3-vol-0-7l",
@@ -1633,7 +1673,8 @@
     },
     "category": "gin",
     "meta": true,
-    "status": "META"
+    "status": "META",
+    "profileEstimated": false
   },
   {
     "id": "gin-tanqueray-london-dry-gin-43-1-vol-0-7l",
@@ -1669,7 +1710,8 @@
       "hr": "Klasični London Dry; martini/G&T uz blagu cigaru.",
       "en": ""
     },
-    "category": "gin"
+    "category": "gin",
+    "profileEstimated": false
   },
   {
     "id": "gin-aura-karbun-navy-strenght",
@@ -1677,8 +1719,8 @@
     "style": "croatian",
     "region": "Istra, Hrvatska",
     "botanicalProfile": "botanical",
-    "body": 3,
-    "sweetness": 2,
+    "body": 4,
+    "sweetness": 1,
     "flavorTags": [
       "biljno",
       "citrus",
@@ -1708,7 +1750,8 @@
       "hr": "Istarski Navy Strength gin (Destilerija Aura) — žitni destilat, borovica i samonikle biljke; filtriran kroz aktivni ugljen. Snaga 58,5 % vol.",
       "en": "Istrian Navy Strength gin (Destilerija Aura) — grain spirit, juniper and wild botanicals; charcoal-filtered. 58.5% ABV."
     },
-    "category": "gin"
+    "category": "gin",
+    "profileEstimated": false
   },
   {
     "id": "gin-plymouth-navy-strength-57-0-7-l",
@@ -1716,8 +1759,8 @@
     "style": "plymouth",
     "region": "Plymouth, UK",
     "botanicalProfile": "classic-juniper",
-    "body": 3,
-    "sweetness": 2,
+    "body": 4,
+    "sweetness": 1,
     "flavorTags": [
       "cvjetno",
       "citrus",
@@ -1747,7 +1790,8 @@
       "hr": "Pot-still character; neat oprezno uz srednju cigaru.",
       "en": "Heuristic profile — london-dry, classic-juniper"
     },
-    "category": "gin"
+    "category": "gin",
+    "profileEstimated": false
   },
   {
     "id": "gin-old-pilot-s-dalmatian-dry-gin-45-vol-0-7l",
@@ -1763,7 +1807,7 @@
       "zacini"
     ],
     "qualityScore": 7.4,
-    "abv": 45.0,
+    "abv": 42.4,
     "priceEUR": {
       "min": 35.0,
       "max": 35.0
@@ -1788,7 +1832,8 @@
     },
     "category": "gin",
     "meta": true,
-    "status": "META"
+    "status": "META",
+    "profileEstimated": false
   },
   {
     "id": "gin-no-3-london-dry-gin-46-vol-0-7l",
@@ -1824,7 +1869,8 @@
       "hr": "Sipping gin (london-dry) — neat/martini uz Connecticut ili blagi Habano.",
       "en": ""
     },
-    "category": "gin"
+    "category": "gin",
+    "profileEstimated": false
   },
   {
     "id": "gin-no-3-london-dry-gin-46-vol-0-7l-u-poklon-kutiji-sa-casom",
@@ -1860,7 +1906,8 @@
       "hr": "Sipping gin (london-dry) — neat/martini uz Connecticut ili blagi Habano.",
       "en": ""
     },
-    "category": "gin"
+    "category": "gin",
+    "profileEstimated": false
   },
   {
     "id": "gin-beefeater",
@@ -1901,7 +1948,8 @@
     },
     "category": "gin",
     "meta": true,
-    "status": "META"
+    "status": "META",
+    "profileEstimated": false
   },
   {
     "id": "gin-amuerte-coca-leaf-black-edition",
@@ -1909,7 +1957,7 @@
     "style": "contemporary",
     "region": "World",
     "botanicalProfile": "botanical",
-    "body": 3,
+    "body": 4,
     "sweetness": 2,
     "flavorTags": [
       "cvjetno",
@@ -1940,7 +1988,8 @@
       "hr": "Sipping gin (contemporary) — neat/martini uz Connecticut ili blagi Habano.",
       "en": ""
     },
-    "category": "gin"
+    "category": "gin",
+    "profileEstimated": false
   },
   {
     "id": "gin-amuerte-coca-leaf-red-edition",
@@ -1949,7 +1998,7 @@
     "region": "World",
     "botanicalProfile": "botanical",
     "body": 3,
-    "sweetness": 2,
+    "sweetness": 3,
     "flavorTags": [
       "cvjetno",
       "citrus",
@@ -1979,7 +2028,8 @@
       "hr": "Sipping gin (contemporary) — neat/martini uz Connecticut ili blagi Habano.",
       "en": ""
     },
-    "category": "gin"
+    "category": "gin",
+    "profileEstimated": false
   },
   {
     "id": "gin-amuerte-coca-leaf-white-edition",
@@ -2018,7 +2068,8 @@
       "hr": "Sipping gin (contemporary) — neat/martini uz Connecticut ili blagi Habano.",
       "en": ""
     },
-    "category": "gin"
+    "category": "gin",
+    "profileEstimated": false
   },
   {
     "id": "gin-amuerte-coca-leaf-gin-blue-edition",
@@ -2057,7 +2108,8 @@
       "hr": "Sipping gin (contemporary) — neat/martini uz Connecticut ili blagi Habano.",
       "en": ""
     },
-    "category": "gin"
+    "category": "gin",
+    "profileEstimated": false
   },
   {
     "id": "gin-amuerte-coca-leaf-gin-green-edition",
@@ -2066,7 +2118,7 @@
     "region": "World",
     "botanicalProfile": "botanical",
     "body": 3,
-    "sweetness": 2,
+    "sweetness": 1,
     "flavorTags": [
       "cvjetno",
       "citrus",
@@ -2096,7 +2148,8 @@
       "hr": "Sipping gin (contemporary) — neat/martini uz Connecticut ili blagi Habano.",
       "en": ""
     },
-    "category": "gin"
+    "category": "gin",
+    "profileEstimated": false
   },
   {
     "id": "gin-amuerte-coca-leaf-gin-orange-edition",
@@ -2135,7 +2188,8 @@
       "hr": "Sipping gin (contemporary) — neat/martini uz Connecticut ili blagi Habano.",
       "en": ""
     },
-    "category": "gin"
+    "category": "gin",
+    "profileEstimated": false
   },
   {
     "id": "gin-amuerte-coca-leaf-gin-yellow-edition",
@@ -2143,7 +2197,7 @@
     "style": "contemporary",
     "region": "World",
     "botanicalProfile": "botanical",
-    "body": 3,
+    "body": 2,
     "sweetness": 2,
     "flavorTags": [
       "cvjetno",
@@ -2174,7 +2228,8 @@
       "hr": "Sipping gin (contemporary) — neat/martini uz Connecticut ili blagi Habano.",
       "en": ""
     },
-    "category": "gin"
+    "category": "gin",
+    "profileEstimated": false
   },
   {
     "id": "gin-roku-gin-the-japanese-craft-gin-43-vol-0-7l-u-poklon-kutiji-sa-casom",
@@ -2190,7 +2245,7 @@
       "zacini"
     ],
     "qualityScore": 7.0,
-    "abv": 43.0,
+    "abv": 47.0,
     "priceEUR": {
       "min": 41.0,
       "max": 41.0
@@ -2213,7 +2268,8 @@
       "hr": "Sipping gin (contemporary) — neat/martini uz Connecticut ili blagi Habano.",
       "en": "Heuristic profile — contemporary, botanical"
     },
-    "category": "gin"
+    "category": "gin",
+    "profileEstimated": false
   },
   {
     "id": "gin-akori-premium",
@@ -2252,7 +2308,8 @@
       "hr": "Sipping gin (premium-dry) — neat/martini uz Connecticut ili blagi Habano.",
       "en": ""
     },
-    "category": "gin"
+    "category": "gin",
+    "profileEstimated": false
   },
   {
     "id": "gin-roby-marton-original-italian-premium-dry-gin-47-0-7-l",
@@ -2288,7 +2345,8 @@
       "hr": "Sipping gin (premium-dry) — neat/martini uz Connecticut ili blagi Habano.",
       "en": ""
     },
-    "category": "gin"
+    "category": "gin",
+    "profileEstimated": false
   },
   {
     "id": "gin-scapegrace-gold-premium-dry-gin-57-vol-0-7l",
@@ -2296,8 +2354,8 @@
     "style": "premium-dry",
     "region": "Engleska",
     "botanicalProfile": "classic-juniper",
-    "body": 3,
-    "sweetness": 2,
+    "body": 4,
+    "sweetness": 1,
     "flavorTags": [
       "travnato",
       "citrus",
@@ -2324,7 +2382,8 @@
       "hr": "Sipping gin (premium-dry) — neat/martini uz Connecticut ili blagi Habano.",
       "en": ""
     },
-    "category": "gin"
+    "category": "gin",
+    "profileEstimated": false
   },
   {
     "id": "gin-windspiel-premium-dry-caxambu-kaffee-gin-batch-001-47-vol-0-5l",
@@ -2360,7 +2419,8 @@
       "hr": "Sipping gin (premium-dry) — neat/martini uz Connecticut ili blagi Habano.",
       "en": ""
     },
-    "category": "gin"
+    "category": "gin",
+    "profileEstimated": false
   },
   {
     "id": "gin-windspiel-premium-dry-gin-47-0-5-l",
@@ -2396,7 +2456,8 @@
       "hr": "Sipping gin (premium-dry) — neat/martini uz Connecticut ili blagi Habano.",
       "en": ""
     },
-    "category": "gin"
+    "category": "gin",
+    "profileEstimated": false
   },
   {
     "id": "gin-windspiel-premium-dry-gin-reserve-49-3-vol-0-5l-in-wooden-case",
@@ -2432,7 +2493,8 @@
       "hr": "Sipping gin (premium-dry) — neat/martini uz Connecticut ili blagi Habano.",
       "en": ""
     },
-    "category": "gin"
+    "category": "gin",
+    "profileEstimated": false
   },
   {
     "id": "gin-windspiel-premium-dry-kampot-pfeffer-gin-batch-no-002-47-vol-0-5l",
@@ -2468,6 +2530,7 @@
       "hr": "Sipping gin (premium-dry) — neat/martini uz Connecticut ili blagi Habano.",
       "en": ""
     },
-    "category": "gin"
+    "category": "gin",
+    "profileEstimated": false
   }
 ]
