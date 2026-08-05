@@ -10,28 +10,26 @@
 | Data-quality plan (4 workstreama) | https://claude.ai/code/session_015pwQUH3RuLAoWuS66Ek9RW |
 | Nomenklatura + pairing info | https://claude.ai/code/session_01KgdmTUcoUbMQDoEHHWgisB |
 
-## Što je gotovo (pushano, ali nije na masteru)
+## Što je gotovo (pushano)
 
-- [x] Plan + mjerilo: `docs/superpowers/plans/2026-08-05-data-quality-four-workstreams.md` + `app/scripts/data-quality-report.py` (commit `613a0cb` na `claude/prices-brands-mismatch-6q2q35`)
-- [x] Nomenklatura P0–P2 + pairing klik na odabranu stavku: `claude/cigar-nomenclature-pairing-info-klrken` @ `7586126`
+- [x] Plan + mjerilo: u PR #122 (`fix/drink-display-names-w4`) iz `613a0cb`
+- [x] Nomenklatura P0–P2 + pairing klik: PR za `fix/cigar-nomenclature-curate` (rebase od `claude/cigar-nomenclature-pairing-info-klrken`)
+- [x] W4: `derive-drink-display-names.py` + `drinkNameLoc` + `drinkDisplayNames.json` — **PR #122**
+- [x] Vitola kuriranje + possessive (`Serie S`) — **isti nomenclature PR**
 
-## Što je izgubljeno (nikad commitano)
-
-- [x] W4: `derive-drink-display-names.py` + `drinkNameLoc` wiring + `drinkDisplayNames.json` — **Cursor prepisuje**
-- [ ] ~72 vitola kuriranje + possessive false-positive u `taxonomy_lib.py` — **Cursor rekonstruira**
-
-## Cursor dovršava (ovaj prolaz)
+## Cursor dovršio (ovaj prolaz)
 
 - [x] Handoff marker (ova datoteka) + `hot.md` red
-- [x] PR A: W4 prikazna imena pića (`fix/drink-display-names-w4`)
-- [ ] PR B: nomenklatura rebase + ~72 vitola curate + otvoreni PR
+- [x] PR A: W4 — https://github.com/ivsitum1/cigar-pairing/pull/122
+- [x] PR B: nomenklatura + curate — `fix/cigar-nomenclature-curate`
 
 ## Backlog za Claude Code (namjerno van ovog prolaza)
 
-- [ ] Rebase + PR cijele `claude/prices-brands-mismatch-6q2q35` (jedinstvena cijena, packaging rank, soft-band) — **osim** plana/reporta koji Cursor već izvlači u W4 PR
+- [ ] Rebase + PR cijele `claude/prices-brands-mismatch-6q2q35` (jedinstvena cijena, packaging rank, soft-band) — plan/report već u #122
 - [ ] W3 shema/UI `fetchedAt` (offline)
-- [ ] W1 `fold-market-vitolas.py` pa 🌐 Neptune scrape (Cursor lokalno ima mrežu)
-- [ ] W2 drink profile worklist pa 🌐 note scrape
+- [ ] W1 `fold-market-vitolas.py` pa Neptune scrape (Cursor lokalno ima mrežu)
+- [ ] W2 drink profile worklist pa note scrape
+- [ ] Preostali line-tail mismatchi bez Neptune URL / scrape fail (vidi `scripts/output/line_tail_vitola_worklist.json`)
 
 ## Pravila sudara (W4) — ne izgubi
 
