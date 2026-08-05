@@ -14,7 +14,7 @@ import brandsJson from "./brands.json";
 import cigarIdAliasesJson from "./cigarIdAliases.json";
 import drinkIdAliasesJson from "./drinkIdAliases.json";
 import drinkBrandsJson from "./drinkBrands.json";
-import { applyVitola, resolveDefaultVitola } from "../lib/cigarVitola";
+import { applyVitola, resolveDefaultVitola, uniqueVitolas } from "../lib/cigarVitola";
 import { cigarLinePrice, vitolaPriceForMarket } from "../lib/cigarPrice";
 import {
   cigarItemId,
@@ -566,38 +566,28 @@ export interface ResolvedPrice {
   fetchedAt?: string;
 }
 
-// Cijena SAMO kad je pouzdana (HR = humidor po vitoli). "ALL" prikazuje HR
-// cijenu (jedina koju stvarno imamo). EU/USA -> null (ne izmišljamo broj).
-// "fromMany" = ima više vitola s cijenama pa je ovo najniža ("od X €").
+/**
+ * Cijena linije za odabrano tržište — tanki omotač oko `cigarLinePrice`
+ * (lib/cigarPrice.ts). "fromMany" = prikazani broj je najniži u liniji.
+ * `fetchedAt` dolazi s najjeftinije vitole / regionLinka koji nosi taj broj.
+ */
 export function cigarPriceForMarket(c: Cigar, region: RegionFilter): ResolvedPrice {
-  // EU/USA: scrapana "od" cijena na razini linije (USD->EUR nosi approx)
-  if (region === "EU" || region === "USA") {
-    const rl = c.regionLinks?.[region];
-    if (rl?.priceEUR != null)
-      return { price: rl.priceEUR, fromMany: false, approx: rl.priceApprox, fetchedAt: rl.fetchedAt };
-    return { price: null, fromMany: false };
-  }
-  if (region !== "HR" && region !== "ALL") return { price: null, fromMany: false };
+  const p = cigarLinePrice(c, region);
+  if (p.price == null) return { price: null, fromMany: false };
 
-  const defaultVitola = resolveDefaultVitola(c);
-  if (defaultVitola?.priceEUR != null) {
-    const priced = (c.vitolas ?? []).filter((v) => v.priceEUR != null);
-    const min = priced.length ? Math.min(...priced.map((v) => v.priceEUR as number)) : defaultVitola.priceEUR;
-    const max = priced.length ? Math.max(...priced.map((v) => v.priceEUR as number)) : defaultVitola.priceEUR;
-    return {
-      price: defaultVitola.priceEUR,
-      fromMany: priced.length > 1 && max - min > 0.01,
-      fetchedAt: defaultVitola.fetchedAt,
-    };
+  let fetchedAt: string | undefined;
+  if (p.region === "HR" || region === "HR" || region === "ALL") {
+    const priced = uniqueVitolas(c)
+      .map((v) => ({ v, r: vitolaPriceForMarket(v, region) }))
+      .filter((x) => x.r.price === p.price);
+    const hit = priced[0]?.v;
+    if (hit?.fetchedAt) fetchedAt = hit.fetchedAt;
+    else if (hit?.regionLinks?.HR?.fetchedAt) fetchedAt = hit.regionLinks.HR.fetchedAt;
   }
-
-  const priced = (c.vitolas ?? []).filter((v) => v.priceEUR != null);
-  if (priced.length === 0) {
-    return { price: c.priceEUR ?? null, fromMany: false };
+  if (!fetchedAt && p.region && (p.region === "EU" || p.region === "USA")) {
+    fetchedAt = c.regionLinks?.[p.region]?.fetchedAt;
   }
-  const min = Math.min(...priced.map((v) => v.priceEUR as number));
-  const max = Math.max(...priced.map((v) => v.priceEUR as number));
-  return { price: min, fromMany: max - min > 0.01 };
+  return { price: p.price, fromMany: p.from, approx: p.approx, fetchedAt };
 }
 
 /**
