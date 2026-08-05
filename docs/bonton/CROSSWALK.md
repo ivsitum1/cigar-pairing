@@ -35,6 +35,10 @@ Zatim:
 | Body / ABV / Maduro–slatkoća | bilješke, ne engine | `app/src/engine/rules.ts` |
 | Obiteljske priče / arhetipovi | eseji / ton | `eveningArchetypes.json` |
 | Holt's / Oliva povijest | selektivno | Club 101 / facts — ne bonton |
+| Writing craft / handbook form (5017a44b) | `research/notebooklm-grill/5017a44b-*` + EN/HR draft How-to-read / editor notes | ne u app JSON |
+| **Triple grill 2026-07-30** (Cigars daily / Omaha / Black Gold) | `research/notebooklm-grill/{7b267552,6ccc327c,30d6a797}-*` + grill-inbox | Club `d-tasting-order`; lexicon 3 termina; `bonton.json` / mala-knjiga precepti |
+| **EN freeze 2026-07-30** | `HOW-TO-BE-A-GENTLEMAN-AT-THE-TABLE-DRAFT.md` = EN source of truth | app sync later from HR canon |
+| **HR freeze 2026-07-30 (Faza 2)** | `KAKO-BITI-GOSPODIN-ZA-STOLOM-DRAFT.md` = književni prijevod s EN (Dodatak A/B) | **synced** → `mala-knjiga` + `bonton.json` (2026-07-30) |
 
 ## NotebookLM bilježnice (share URL)
 
@@ -45,16 +49,20 @@ Zatim:
 | The cigar family Story | `7d62a4d2-8cfa-46f0-a41e-89604cc1a547` |
 | Rum 101 | `18ea7df7-bdc3-426c-b113-9083f48a936c` |
 | Black Gold / rum tasting | `30d6a797-93bc-49f1-88e7-471c607b027c` |
+| **Cigars daily** (grill 2026-07-30 → LE / pepeo / Club) | `7b267552-b11c-4f3a-9861-fdfc6e7e640a` |
+| **Omaha whiskey value ethics** (grill 2026-07-30 → anti-snob stol) | `6ccc327c-bf66-426b-b201-d39f12498750` |
 | Holt's | `5b8ae55e-d6bf-4cde-afb2-33492c1b241b` |
 | Cigar value & old school | `c4044fbd-39dd-47aa-b48a-24a9c2e41c23` |
 | Oliva / heritage | `5d9870a0-c12c-4ecf-98b4-f1c9243bcca4` |
 | **Bonton / etiquette** (grill 2026-07-19) | `adfe8fc8-de29-4919-a308-8284de395a3e` |
+| **Writing craft / publishing** (grill 2026-07-30 → handbook form) | `5017a44b-e896-4c56-aa47-8857912e67de` |
 
 Puni grill dumpovi (2026-07-18 + refresh):  
 `cursor/bonton-book-research-9b19` → `docs/bonton/research/notebooklm-grill/`  
 
-Lokalni dump 2026-07-19: `docs/bonton/notebooklm-grill/adfe8fc8-*`
-
+Lokalni dump 2026-07-19: `docs/bonton/notebooklm-grill/adfe8fc8-*`  
+Craft → priručnik 2026-07-30: `docs/bonton/research/notebooklm-grill/5017a44b-*`  
+Triple grill 2026-07-30: `docs/bonton/research/notebooklm-grill/{7b267552,6ccc327c,30d6a797}-*`
 ## Pravilo mergea
 
 - Teški extracti / NotebookLM odgovori s fusnotama → **samo** book-research grana (`DO-NOT-MERGE.md`).

@@ -51,21 +51,68 @@ export default defineConfig(({ mode }) => {
         },
         workbox: {
           globPatterns: ["**/*.{js,css,html,svg,png,json,woff2}"],
-          // data-cigars chunk narastao s market katalogom (>2 MiB uncompressed,
-          // ~240 kB gzip na wire) — podigni limit da PWA i dalje radi offline
-          maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
+          // PaddleOCR / ORT worker chunks are 10–27 MB — load on demand, not SW precache
+          globIgnores: [
+            "**/ocr-paddle-*.js",
+            "**/worker-entry-*.js",
+            "**/*ort-wasm*.js",
+            "**/*ort-wasm*.wasm",
+          ],
+          // data-cigars (~3 MB) still fits; OCR assets ignored above
+          maximumFileSizeToCacheInBytes: 8 * 1024 * 1024,
+          runtimeCaching: [
+            {
+              // PaddleOCR / ORT wasm + model assets (first OCR use)
+              urlPattern: ({ url }) =>
+                url.hostname.includes("jsdelivr.net") ||
+                url.hostname.includes("huggingface.co") ||
+                url.hostname.includes("modelscope.cn") ||
+                url.pathname.includes("onnxruntime") ||
+                url.pathname.endsWith(".wasm") ||
+                url.pathname.endsWith(".onnx"),
+              handler: "CacheFirst",
+              options: {
+                cacheName: "ocr-models",
+                expiration: { maxEntries: 40, maxAgeSeconds: 60 * 60 * 24 * 30 },
+              },
+            },
+          ],
         },
       }),
     ],
+    optimizeDeps: {
+      exclude: ["@paddleocr/paddleocr-js"],
+    },
+    worker: {
+      format: "es",
+    },
     build: {
       // odvojeni izlaz da se native bundle (relativni base, bez SW) nikad
       // ne moze slucajno deployati na Pages
       outDir: native ? "dist-native" : "dist",
       rollupOptions: {
         output: {
+          // Lazy OCR chunk zadrzava stabilno ime da ga workbox globIgnores i
+          // dalje prepozna — ime se dodjeljuje OVDJE, ne u manualChunks, jer
+          // manualChunks bi ga povukao u staticni graf entryja.
+          chunkFileNames(info) {
+            const ocr = (info.moduleIds ?? []).some(
+              (m) =>
+                m.includes("@paddleocr/paddleocr-js") ||
+                m.includes("onnxruntime"),
+            );
+            return ocr
+              ? "assets/ocr-paddle-[hash].js"
+              : "assets/[name]-[hash].js";
+          },
           // Indeksi po kategoriji (paralelni download + granularni cache).
           // Club atlas / club.json / 101 / bonton ostaju uz svoje lazy stranice.
           manualChunks(id: string) {
+            // PaddleOCR/ORT NAMJERNO nema manualChunks ime: imenovani chunk
+            // rastopi granicu dinamickog importa, pa entry dobije statican
+            // import i <link modulepreload> na 10,9 MB (3,5 MB gzip) — svakom
+            // posjetitelju, i onom koji OCR nikad ne dotakne. Bez imena ostaje
+            // pravi lazy chunk iza `await import()` u lib/ocrEngine.ts.
             if (/\/src\/data\/.*\.json$/.test(id)) {
               if (
                 id.includes("world_outline") ||
@@ -86,10 +133,23 @@ export default defineConfig(({ mode }) => {
               ) {
                 return "data-drinks-small";
               }
-              if (id.includes("shopping.json") || id.includes("brands.json")) {
+              // digestifs + aliasi/registar su u eager grafu (data/index.ts).
+              // Sve ostalo (dictionary, lexicon, hrGuide, archetypes,
+              // clubSources) cita samo lazy Club stranica — bez imena ostaje
+              // uz nju umjesto da jedan eager import povuce ~96 kB gzip
+              // klupskog teksta u prvo ucitavanje.
+              if (
+                id.includes("shopping.json") ||
+                id.includes("brands.json") ||
+                id.includes("cigarIdAliases") ||
+                id.includes("drinkIdAliases") ||
+                id.includes("drinkIdRegistry") ||
+                id.includes("drinkBrands") ||
+                id.includes("digestifs.json")
+              ) {
                 return "data-meta";
               }
-              return "data-misc";
+              return undefined;
             }
             if (/node_modules\/(react|react-dom|scheduler)\//.test(id)) {
               return "vendor";

@@ -15,3 +15,7 @@ Na **`master`** za app koristi:
 - [`../grill-inbox.md`](../grill-inbox.md) — kratke sirovine
 
 Lokalni untracked dumpovi u ovom folderu (ako ih vidiš) namijenjeni su commit-u na `cursor/bonton-book-research-9b19`.
+
+**Craft → handbook (2026-07-30):** `../research/notebooklm-grill/5017a44b-SYNTHESIS-2026-07-30.md` (+ RAW, PROPOSAL-NOTES). Bilježnica: writing craft / publishing — ne lounge etiquette.
+
+**Triple grill (2026-07-30):** `../research/notebooklm-grill/` — `7b267552` Cigars daily · `6ccc327c` Omaha value · `30d6a797` Black Gold refresh. Feed: wiki concepts + Club/lexicon/bonton (gentleman freeze netaknut).

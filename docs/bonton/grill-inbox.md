@@ -125,3 +125,27 @@
 - Plume vs plijesan — Club 101, ne bonton precept
 - Band on/off kontradikcija — već „bez dogme” u gl. 8
 - US tip/dress — fusnota, ne HR norma
+
+---
+
+## NotebookLM triple grill 2026-07-30
+
+**Bilježnice:** [Cigars daily](https://notebooklm.google.com/notebook/7b267552-b11c-4f3a-9861-fdfc6e7e640a) · [Omaha whiskey value](https://notebooklm.google.com/notebook/6ccc327c-bf66-426b-b201-d39f12498750) · [Black Gold](https://notebooklm.google.com/notebook/30d6a797-93bc-49f1-88e7-471c607b027c)  
+**Dumpovi:** `research/notebooklm-grill/7b267552-*`, `6ccc327c-*`, `30d6a797-*`
+
+### Vinjete (sirovine)
+
+- Instagram boca vs unutarnje nepce — gost hvali kutiju; domaćin tiho toči skromniju koju stvarno voli.
+- Boca koja čeka „posebnu priliku” — utorak navečer, čep van, dijeljenje bez ceremonije.
+- Krug kompetencije — gost pita „što je ovo?”; domaćin kaže „ne znam sve, ali evo što volim u njoj”.
+- LE flex — netko nabraja cijenu limitiranog sticka; treći pita za duhan/povijest mješavine.
+- Pet boca na stolu — gost gubi nit; domaćin skraćuje na tri i donosi vodu.
+
+### Ugrađeno u malu knjigu / `bonton.json` (ne samo inbox)
+
+- Unutarnja ljestvica; otvori i dijeli; LE = priča ne cijena; 5–6 stavki + miris izdaleka.
+
+### Ostaje inbox / kasnije (gentleman freeze)
+
+- Dulje vinjete u EN/HR gentleman draft — **ne** u ovom prolazu (freeze 2026-07-30).
+- Quiz pitanja u `club.json`.

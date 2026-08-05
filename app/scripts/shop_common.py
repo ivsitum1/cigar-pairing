@@ -10,18 +10,26 @@ import re
 import unicodedata
 
 USD_TO_EUR = 0.92  # zakovani tečaj; USD ponude postaju priceApprox
+GBP_TO_EUR = 1.17  # zakovani; GBP → EUR approx
+CHF_TO_EUR = 1.05  # zakovani; CHF → EUR approx
 REGIONS = ("HR", "EU", "USA")
 
 SHOP_LABEL = {
     "humidor_hr": "The Humidor",
     "havana_hr": "Havana Cigar Shop",
     "cigarworld_eu": "CigarWorld",
+    "cgars_uk": "C.Gars Ltd",
+    "la_couronne_ch": "La Couronne",
     "holts_us": "Holt's",
     "cigarsdaily_us": "Cigars Daily",
+    "famous_smoke_us": "Famous Smoke",
+    "neptune_us": "Neptune Cigar",
 }
 SHOP_REGION = {
     "humidor_hr": "HR", "havana_hr": "HR",
-    "cigarworld_eu": "EU", "holts_us": "USA", "cigarsdaily_us": "USA",
+    "cigarworld_eu": "EU", "cgars_uk": "EU", "la_couronne_ch": "EU",
+    "holts_us": "USA", "cigarsdaily_us": "USA",
+    "famous_smoke_us": "USA", "neptune_us": "USA",
 }
 
 
@@ -48,11 +56,16 @@ def is_cuban(country: str | None) -> bool:
 
 
 def to_eur(amount, currency) -> tuple[float | None, bool]:
-    """Vrati (priceEUR, approx). USD -> EUR uz zakovani tečaj (approx=True)."""
+    """Vrati (priceEUR, approx). USD/GBP/CHF -> EUR uz zakovani tečaj (approx=True)."""
     if amount is None:
         return None, False
-    if currency == "USD":
-        return round(amount * USD_TO_EUR, 2), True
+    cur = (currency or "EUR").upper()
+    if cur == "USD":
+        return round(float(amount) * USD_TO_EUR, 2), True
+    if cur == "GBP":
+        return round(float(amount) * GBP_TO_EUR, 2), True
+    if cur == "CHF":
+        return round(float(amount) * CHF_TO_EUR, 2), True
     return round(float(amount), 2), False
 
 

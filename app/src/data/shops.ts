@@ -2,8 +2,8 @@
 // linkove i za detaljan popis trgovina (Katalog → Trgovine).
 //
 // HR trgovine imaju `productHost` pa app prepoznaje izravne linkove na proizvod
-// iz kataloga (humidor.hr / havana-cigar-shop.com). EU/USA trgovine nemaju
-// scrapane linkove po proizvodu — koriste pretragu po nazivu (referentno).
+// iz kataloga (humidor.hr / havana-cigar-shop.com). EU/USA: `regionLinks` ili
+// `productHost` kad postoji scrapani product URL; inače pretraga po nazivu.
 import type { Region } from "../types";
 
 export interface Shop {
@@ -60,8 +60,33 @@ export const SHOPS: Shop[] = [
     name: "CigarWorld",
     region: "EU",
     home: "https://www.cigarworld.de/en",
+    productHost: "cigarworld.de",
     search: (q) => `https://www.cigarworld.de/en/search?q=${q}`,
-    note: { hr: "Njemačka — dostava po EU", en: "Germany — ships across the EU" },
+    note: { hr: "Njemačka — dostava po Europi", en: "Germany — ships across Europe" },
+  },
+  {
+    id: "cgars-uk",
+    name: "C.Gars Ltd",
+    region: "EU",
+    home: "https://www.cgarsltd.co.uk/",
+    productHost: "cgarsltd.co.uk",
+    search: (q) => `https://www.cgarsltd.co.uk/advanced_search_result.php?keywords=${q}`,
+    note: {
+      hr: "UK — najveći online specijalist (Havana EMS, New World)",
+      en: "UK — largest online specialist (Havana EMS, New World)",
+    },
+  },
+  {
+    id: "la-couronne-ch",
+    name: "La Couronne",
+    region: "EU",
+    home: "https://cigarpassion.ch/en/",
+    productHost: "cigarpassion.ch",
+    search: (q) => `https://cigarpassion.ch/en/?s=${q}`,
+    note: {
+      hr: "Švicarska — ekskluzivni Habanos uvoznik (Intertabak), širok premium katalog",
+      en: "Switzerland — exclusive Habanos importer (Intertabak), wide premium catalogue",
+    },
   },
   {
     id: "holts",
@@ -76,8 +101,33 @@ export const SHOPS: Shop[] = [
     name: "Cigars Daily",
     region: "USA",
     home: "https://cigarsdaily.com/",
+    productHost: "cigarsdaily.com",
     search: (q) => `https://cigarsdaily.com/?s=${q}`,
     note: { hr: "Američke ponude i recenzije", en: "US deals and reviews" },
+  },
+  {
+    id: "famous-smoke",
+    name: "Famous Smoke",
+    region: "USA",
+    home: "https://www.famous-smoke.com/",
+    productHost: "famous-smoke.com",
+    search: (q) => `https://www.famous-smoke.com/cigars?search=${q}`,
+    note: {
+      hr: "Pennsylvania — velik US katalog, value linije",
+      en: "Pennsylvania — large US catalogue, value lines",
+    },
+  },
+  {
+    id: "neptune",
+    name: "Neptune Cigar",
+    region: "USA",
+    home: "https://www.neptunecigar.com/",
+    productHost: "neptunecigar.com",
+    search: (q) => `https://www.neptunecigar.com/search?q=${q}`,
+    note: {
+      hr: "Florida — online + trgovine, česte value ponude",
+      en: "Florida — online + retail stores, frequent value deals",
+    },
   },
 ];
 

@@ -1,16 +1,63 @@
 {
   "brand": "Mi Querida",
-  "renameBrand": null,
+  "renameBrand": "Dunbarton T&T",
   "status": "done",
-  "reviewedAt": "2026-07-24",
+  "reviewedAt": "2026-08-01",
   "sources": [
     "phase3_w3_w4_finish W4",
-    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3",
+    "house-line unify 2026-08-01 (CH / Foundation / Dunbarton — mark as named lines)"
   ],
   "lines": {
     "Muy Grande": {
       "line": "Muy",
       "vitola": "Grande"
+    },
+    "Muy": {
+      "line": "Mi Querida Muy",
+      "vitola": "Grande"
+    },
+    "ancho corto": {
+      "line": "Mi Querida Ancho Corto"
+    },
+    "ancho largo": {
+      "line": "Mi Querida Ancho Largo"
+    },
+    "black papasaka": {
+      "line": "Mi Querida Black Papasaka"
+    },
+    "black sakakhan": {
+      "line": "Mi Querida Black Sakakhan"
+    },
+    "black unicorn": {
+      "line": "Mi Querida Black Unicorn"
+    },
+    "fino largo": {
+      "line": "Mi Querida Fino Largo"
+    },
+    "gordita": {
+      "line": "Mi Querida Gordita"
+    },
+    "gorila 6 60": {
+      "line": "Mi Querida Gorila"
+    },
+    "gran bufalo": {
+      "line": "Mi Querida Gran Búfalo"
+    },
+    "triqui traca no 448": {
+      "line": "Mi Querida Triqui Traca No. 448"
+    },
+    "triqui traca no 552": {
+      "line": "Mi Querida Triqui Traca No. 552"
+    },
+    "triqui traca no 648": {
+      "line": "Mi Querida Triqui Traca No. 648"
+    },
+    "triqui traca no 652": {
+      "line": "Mi Querida Triqui Traca No. 652"
+    },
+    "triqui traca no 764": {
+      "line": "Mi Querida Triqui Traca No. 764"
     }
   },
   "vitolaRenames": {},

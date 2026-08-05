@@ -2,19 +2,41 @@
   "brand": "Cusano",
   "renameBrand": null,
   "status": "done",
-  "reviewedAt": "2026-07-24",
-  "sources": [
-    "phase3_w3_w4_finish W4",
-    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
-  ],
+  "reviewedAt": "2026-07-31",
+    "sources": [
+      "CigarWorld brand page (Dominican Bundle + Honduras Bundle in stock)",
+      "Havana Cigar Shop Bundle Selection (HR)",
+      "Neptune Cigar + Famous Smoke Cusano 18 Double Connecticut / Paired Maduro (USA)",
+      "Removed false USA Holts Connecticut link from Bundle Selection",
+      "shops.ts: Famous Smoke + Neptune Cigar as USA shops"
+    ],
   "lines": {
+    "18 Double Connecticut": {
+      "line": "18 Double Connecticut"
+    },
+    "18 Maduro": {
+      "line": "18 Maduro"
+    },
     "Bundle Selection": {
       "line": "Bundle Selection"
+    },
+    "Honduras Bundle": {
+      "line": "Honduras Bundle"
     }
   },
   "vitolaRenames": {},
   "shapes": {},
-  "keepSeparate": [],
-  "lineNotes": {},
+  "keepSeparate": [
+    "18 Double Connecticut",
+    "18 Maduro",
+    "Bundle Selection",
+    "Honduras Bundle"
+  ],
+  "lineNotes": {
+    "Bundle Selection": "HR Havana name; EU CigarWorld = Dominican Bundle (same lineage).",
+    "Honduras Bundle": "EU CigarWorld active; not on HR Havana.",
+    "18 Double Connecticut": "USA primarily; EU sold out on CigarWorld.",
+    "18 Maduro": "USA primarily (Paired Maduro); EU sold out."
+  },
   "unresolved": []
 }

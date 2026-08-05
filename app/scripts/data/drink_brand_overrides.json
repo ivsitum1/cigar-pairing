@@ -1,0 +1,30 @@
+{
+ "_comment": "Rucne ispravke marki pica. NADJACAVAJU heuristiku iz derive-drink-brands.py i prezivljavaju regeneraciju. Ovdje idu slucajevi koje algoritam ne moze rijesiti bez znanja o svijetu — prije svega kad DVIJE RAZLICITE marke dijele prvu rijec, pa najdulji zajednicki prefiks ispadne goli krnjatak ('Black' umjesto 'Black Tot' i 'Black Bottle'). Ne dodaji ovdje marke koje heuristika vec tocno pogada.",
+
+ "_note_pravopis": "Drugi razlog za ispravku: ista kuca dvojako prepisana u katalogu. 'Gran Patron' (PLATINUM, bez naglaska) i 'Gran Patrón' (BURDEOS) su isti proizvodac, a slug im je isti — jedna bi od dvije marke bila nedohvatljiva deep-linkom. Skripta takvu koliziju odbija i trazi ispravku ovdje.",
+
+ "_note_isti_proizvodac": "Vise kategorija pod istom markom NIJE razlog za ispravku: Nikka radi whisky i Coffey Gin, Nonino grappu i amaro, Antinori i Gaja vino i grappu, Ableforth's gin i rum, Aura pelinkovac i gin. Te su namjerno ostavljene kao jedna marka.",
+
+ "brands": {
+  "rum-black-tot-rum": "Black Tot",
+  "rum-black-tot-mbr-2021": "Black Tot",
+  "wh-black-bottle": "Black Bottle",
+
+  "gin-four-pillars-rare-dry-gin-41-8-vol-0-7l": "Four Pillars",
+  "rum-four-monkeys-svijetli-tamni": "Four Monkey's Rum",
+  "wh-four-roses-bourbon": "Four Roses",
+  "wh-four-roses-single-barrel": "Four Roses",
+  "wh-four-roses-small-batch": "Four Roses",
+
+  "gin-monkey-47-kiosk-set-41-vol-3x0-05l-u-poklon-kutiji": "Monkey 47",
+  "gin-monkey-47-schwarzwald-dry-gin-47-vol-0-5l": "Monkey 47",
+  "gin-monkey-47-schwarzwald-dry-gin-barrel-cut-47-vol-0-5l-u-poklon-kutiji": "Monkey 47",
+  "wh-monkey-shoulder": "Monkey Shoulder",
+
+  "tq-patron-silver": "Gran Patrón",
+
+  "wh-royal-salute-21-chivas": "Royal Salute",
+  "wine-tokaji-aszu-5": "Royal Tokaji",
+  "wine-tokaji-essencia": "Royal Tokaji"
+ }
+}

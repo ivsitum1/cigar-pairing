@@ -3,14 +3,19 @@ import { useSyncExternalStore } from "react";
 
 export type Page = "pairing" | "catalog" | "collection" | "shopping" | "club";
 export type ClubView = "101" | "bonton" | "lexicon" | "dictionary" | "hr-guide" | "archetypes";
-/** Kolekcija ima tri prikaza: što imam, humidor sa zalihom, kalendar dnevnika. */
+/** Kolekcija: Humidor (zaliha+boce) | shortlist | kalendar dnevnika. */
 export type CollectionView = "collection" | "humidor" | "calendar";
 
-/** Catalog deep links: brand → line → vitola (Phase 4). */
+/**
+ * Catalog deep links: brand → line → vitola (Phase 4), plus marka pića.
+ * Marka pića ima svoju razinu jer su prostori imena odvojeni — „Nikka" kao
+ * marka pića i hipotetska istoimena marka cigara ne smiju dijeliti slug.
+ */
 export type CatalogFocus =
   | { level: "brand"; brandSlug: string }
   | { level: "line"; cigarId: string }
-  | { level: "vitola"; cigarId: string; vitolaSlug: string };
+  | { level: "vitola"; cigarId: string; vitolaSlug: string }
+  | { level: "drinkBrand"; brandSlug: string };
 
 export interface Route {
   page: Page;
@@ -22,30 +27,55 @@ export interface Route {
 
 const PAGES: readonly string[] = ["pairing", "catalog", "collection", "shopping", "club"];
 const CLUB_VIEWS: readonly string[] = ["101", "bonton", "lexicon", "dictionary", "hr-guide", "archetypes"];
-const COLLECTION_VIEWS: readonly string[] = ["humidor", "calendar"];
+const COLLECTION_VIEWS: readonly string[] = ["humidor", "collection", "calendar"];
+
+/**
+ * decodeURIComponent baca URIError na neispravnom postotnom kodu ("%", "%E0%A4%A").
+ * parseHash se zove pri bootu (module scope) i na svaki hashchange, pa bi
+ * neuhvaćena iznimka srušila aplikaciju u bijeli ekran — iz kojeg se korisnik
+ * ne može izvući bez ručnog uređivanja URL-a. Neispravan segment radije
+ * ostavimo sirov: gore je izgubiti deep-link nego cijeli app.
+ */
+function safeDecode(segment: string): string {
+  try {
+    return decodeURIComponent(segment);
+  } catch {
+    return segment;
+  }
+}
 
 export function parseHash(hash: string): Route {
   const parts = hash.replace(/^#\/?/, "").split("/").filter(Boolean);
   const page: Page = PAGES.includes(parts[0]) ? (parts[0] as Page) : "pairing";
   if (page === "pairing" && (parts[1] === "cigar" || parts[1] === "drink") && parts[2]) {
-    return { page, pair: { kind: parts[1], id: decodeURIComponent(parts[2]) } };
+    return { page, pair: { kind: parts[1], id: safeDecode(parts[2]) } };
   }
   if (page === "club" && CLUB_VIEWS.includes(parts[1])) {
     return { page, club: parts[1] as ClubView };
   }
-  if (page === "collection" && COLLECTION_VIEWS.includes(parts[1])) {
-    return { page, collection: parts[1] as CollectionView };
+  if (page === "collection") {
+    if (COLLECTION_VIEWS.includes(parts[1])) {
+      return { page, collection: parts[1] as CollectionView };
+    }
+    // #/collection bez podputa → Humidor (zaliha je prvi tab)
+    return { page, collection: "humidor" };
   }
   if (page === "catalog" && parts[1] === "brand" && parts[2]) {
     return {
       page,
-      catalog: { level: "brand", brandSlug: decodeURIComponent(parts[2]) },
+      catalog: { level: "brand", brandSlug: safeDecode(parts[2]) },
+    };
+  }
+  if (page === "catalog" && parts[1] === "drink-brand" && parts[2]) {
+    return {
+      page,
+      catalog: { level: "drinkBrand", brandSlug: safeDecode(parts[2]) },
     };
   }
   if (page === "catalog" && parts[1] === "line" && parts[2]) {
     return {
       page,
-      catalog: { level: "line", cigarId: decodeURIComponent(parts[2]) },
+      catalog: { level: "line", cigarId: safeDecode(parts[2]) },
     };
   }
   if (page === "catalog" && parts[1] === "vitola" && parts[2] && parts[3]) {
@@ -53,8 +83,8 @@ export function parseHash(hash: string): Route {
       page,
       catalog: {
         level: "vitola",
-        cigarId: decodeURIComponent(parts[2]),
-        vitolaSlug: decodeURIComponent(parts[3]),
+        cigarId: safeDecode(parts[2]),
+        vitolaSlug: safeDecode(parts[3]),
       },
     };
   }
@@ -65,14 +95,17 @@ export function routeToHash(r: Route): string {
   if (r.page === "club" && r.club) {
     return `#/${r.page}/${r.club}`;
   }
-  if (r.page === "collection" && r.collection && r.collection !== "collection") {
-    return `#/${r.page}/${r.collection}`;
+  if (r.page === "collection") {
+    const view = r.collection ?? "humidor";
+    return `#/${r.page}/${view}`;
   }
   if (r.page === "catalog" && r.catalog) {
     const c = r.catalog;
     switch (c.level) {
       case "brand":
         return `#/catalog/brand/${encodeURIComponent(c.brandSlug)}`;
+      case "drinkBrand":
+        return `#/catalog/drink-brand/${encodeURIComponent(c.brandSlug)}`;
       case "line":
         return `#/catalog/line/${encodeURIComponent(c.cigarId)}`;
       case "vitola":

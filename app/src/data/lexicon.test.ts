@@ -12,6 +12,9 @@ const REQUIRED_ENTRY_IDS = [
   "ritam",
   "rijeci-za-stol",
   "mini-vjezbe",
+  "unutarnja-ljestvica",
+  "limited-edition",
+  "cask-strength-gost",
 ] as const;
 
 describe("pairing leksikon", () => {

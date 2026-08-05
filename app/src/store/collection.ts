@@ -1,5 +1,6 @@
 // Kolekcija i dnevnik — localStorage, s export/import backupom.
 import { useSyncExternalStore } from "react";
+import { canonicalCigarStateKey, canonicalDrinkId } from "../data";
 import { normalizeCollectionPayload } from "../lib/safeStorage";
 
 export interface ItemState {
@@ -14,7 +15,8 @@ export interface JournalEntry {
   id: string;
   date: string; // ISO
   cigarId: string;
-  drinkId: string;
+  /** null = solo cigara, bez pića */
+  drinkId: string | null;
   rating: number | null;
   note: string;
 }
@@ -26,6 +28,49 @@ export interface CollectionData {
 
 const KEY = "cigar-pairing-collection-v1";
 
+function mergeItemState(a: ItemState, b: ItemState): ItemState {
+  return {
+    owned: a.owned || b.owned,
+    tried: a.tried || b.tried,
+    wishlist: a.wishlist || b.wishlist,
+    rating:
+      a.rating != null && b.rating != null
+        ? Math.max(a.rating, b.rating)
+        : (a.rating ?? b.rating),
+    note: a.note || b.note,
+  };
+}
+
+/**
+ * Ključ stavke je ili cigara (`cig-…`, moguće `@vitola`) ili piće.
+ * Cigarski alias ne smije dirati id pića i obratno, pa se kanonizacija bira
+ * po tome koja strana ključ uopće prepoznaje.
+ *
+ * Za cigare ide i korak dalje od aliasa: ključ se vraća na oblik koji kartica
+ * cigare stvarno čita i piše (`canonicalCigarStateKey`). Bez toga zapis s
+ * mrtvom vitolom ostaje visjeti na popisu Kolekcije, a nijedan gumb ga ne miče.
+ */
+function canonicalItemKey(id: string): string {
+  const asCigar = canonicalCigarStateKey(id);
+  if (asCigar !== id) return asCigar;
+  return canonicalDrinkId(id);
+}
+
+/** Alias ključevi → kanonski id; spoji stanja ako oba postoje. */
+export function remapCollectionAliases(data: CollectionData): CollectionData {
+  const items: Record<string, ItemState> = {};
+  for (const [id, state] of Object.entries(data.items)) {
+    const canon = canonicalItemKey(id);
+    items[canon] = items[canon] ? mergeItemState(items[canon], state) : state;
+  }
+  const journal = data.journal.map((j) => ({
+    ...j,
+    cigarId: canonicalCigarStateKey(j.cigarId),
+    drinkId: j.drinkId == null ? null : canonicalDrinkId(j.drinkId),
+  }));
+  return { items, journal };
+}
+
 let cache: CollectionData = load();
 const listeners = new Set<() => void>();
 
@@ -34,7 +79,7 @@ function load(): CollectionData {
     const raw = localStorage.getItem(KEY);
     if (raw) {
       const normalized = normalizeCollectionPayload(JSON.parse(raw));
-      if (normalized) return normalized;
+      if (normalized) return remapCollectionAliases(normalized);
     }
   } catch {
     // pokvaren zapis — kreni ispocetka
@@ -129,6 +174,36 @@ export function updateItem(id: string, patch: Partial<ItemState>) {
   persist({ ...cache, items });
 }
 
+/**
+ * Makni stavku s popisa Kolekcije — briše cijelo stanje odjednom
+ * (Imam / Probao / Želim / ocjena / bilješka). Gašenje kvačica jednu po jednu
+ * radi isto, ali popis mora imati i izlaz u jednom kliku.
+ */
+export function clearItem(id: string) {
+  if (!(id in cache.items)) return;
+  const items = { ...cache.items };
+  delete items[id];
+  persist({ ...cache, items });
+}
+
+/** Batch „Imam” after receipt confirmation — never called from single-cigar OCR. */
+export function markOwnedBatch(ids: string[]) {
+  const unique = [...new Set(ids.filter(Boolean))];
+  if (unique.length === 0) return;
+  const items = { ...cache.items };
+  for (const id of unique) {
+    const current = {
+      owned: items[id]?.owned ?? false,
+      tried: items[id]?.tried ?? false,
+      wishlist: items[id]?.wishlist ?? false,
+      rating: items[id]?.rating ?? null,
+      note: items[id]?.note ?? "",
+    };
+    items[id] = { ...current, owned: true, wishlist: false };
+  }
+  persist({ ...cache, items });
+}
+
 export function addJournalEntry(entry: Omit<JournalEntry, "id" | "date">) {
   const full: JournalEntry = {
     ...entry,
@@ -150,7 +225,7 @@ export function importData(json: string): boolean {
   try {
     const normalized = normalizeCollectionPayload(JSON.parse(json));
     if (!normalized) return false;
-    persist(normalized);
+    persist(remapCollectionAliases(normalized));
     return true;
   } catch {
     return false;

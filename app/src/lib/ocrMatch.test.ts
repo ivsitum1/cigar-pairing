@@ -59,6 +59,15 @@ describe("OCR matcher", () => {
     const m = matchOcrText("COHIBA PANETELA LARGA FINA", synth);
     expect(m?.candidate.id).toBe("right");
   });
+
+  it("Serie V bez Melanio ne bira Melanio liniju", () => {
+    const m = matchOcrText("Oliva Serie V Torpedo", cigarCandidates);
+    expect(m?.candidate.id).toBe("cig-oliva-serie-v");
+  });
+
+  it("zadrzava jedno-slovna serijska slova", () => {
+    expect(tokenize("Oliva Serie V")).toEqual(["oliva", "serie", "v"]);
+  });
 });
 
 describe("tokenize", () => {

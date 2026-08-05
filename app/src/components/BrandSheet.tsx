@@ -1,5 +1,6 @@
 // Brend: priča marke + popis linija (bez vitola imena — Phase 4).
 import { useMemo, useState } from "react";
+import { SheetShell } from "./SheetShell";
 import type { Cigar } from "../types";
 import {
   brandInfo,
@@ -12,6 +13,7 @@ import {
 import { useI18n } from "../i18n";
 import { Meter } from "./ui";
 import { BackButton } from "./BackButton";
+import { FavoriteStar } from "./FavoriteStar";
 import { MarketFilter } from "./MarketFilter";
 import { useMarket } from "../store/market";
 
@@ -60,26 +62,30 @@ export function BrandSheet({
   const headerVitolas = market === "ALL" ? node.vitolaCount : vitolaInMarket;
 
   return (
-    <div
-      className="fixed inset-0 z-50 flex items-end justify-center bg-black/60 sm:items-center"
-      onClick={onClose}
+    <SheetShell
+      onClose={onClose}
+      label={brand}
+      panelClassName="max-h-[88vh] w-full max-w-lg overflow-y-auto rounded-t-2xl border border-zlato/25 bg-humidor p-5 pb-8 sm:rounded-2xl"
     >
-      <div
-        className="max-h-[88vh] w-full max-w-lg overflow-y-auto rounded-t-2xl border border-zlato/25 bg-humidor p-5 pb-8 sm:rounded-2xl"
-        onClick={(e) => e.stopPropagation()}
-      >
         <div className="mx-auto mb-4 h-1 w-10 rounded-full bg-dim/40 sm:hidden" />
 
         <div className="mb-3">
           <BackButton onClick={onClose}>{t("common.back")}</BackButton>
         </div>
 
-        <div className="font-display text-2xl tracking-wide text-zlato-2">{displayBrand}</div>
-        {info && (
-          <div className="mt-0.5 text-xs uppercase tracking-widest text-dim">
-            {cn(info.country)} · {info.founded}
+        <div className="flex items-start justify-between gap-3">
+          <div className="min-w-0">
+            <div className="font-display text-2xl tracking-wide text-zlato-2">
+              {displayBrand}
+            </div>
+            {info && (
+              <div className="mt-0.5 text-xs uppercase tracking-widest text-dim">
+                {cn(info.country)} · {info.founded}
+              </div>
+            )}
           </div>
-        )}
+          <FavoriteStar kind="cigar" brand={brand} size="lg" />
+        </div>
         {info && (
           <p className="mt-3 text-sm leading-relaxed text-papir/85">{lx(info.blurb)}</p>
         )}
@@ -153,8 +159,7 @@ export function BrandSheet({
         >
           {t("common.close")}
         </button>
-      </div>
-    </div>
+    </SheetShell>
   );
 }
 

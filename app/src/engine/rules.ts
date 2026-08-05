@@ -5,7 +5,7 @@ import type { Lang, LocalizedText } from "../types";
 
 export const WEIGHTS = {
   base: 36,
-  bodyPerStep: 12, // kazna po koraku razlike tijela (0 razlike = pun bonus)
+  bodyPerStep: 12, // skala log body-kazne: vrijednost na Δ=1 (penalty = k·ln(1+Δ), k=bodyPerStep/ln2)
   bodyBonus: 18, // bonus za savrseni body match
   overwhelmPenalty: 12, // jaka cigara (4+) uz lagano pice (<=2)
   tagOverlap: 7, // po zajednickom tagu (cap 3)

@@ -350,6 +350,7 @@ def apply_taxonomy(cigars: list, tax_files: list[dict], report: dict) -> list:
         b = c.get("brand")
         if b in rename_map:
             report.setdefault("brand_renames", []).append({"from": b, "to": rename_map[b], "id": c.get("id")})
+            c["_original_brand"] = b
             c["brand"] = rename_map[b]
             c["_brand_renamed"] = True
 
@@ -364,13 +365,32 @@ def apply_taxonomy(cigars: list, tax_files: list[dict], report: dict) -> list:
                 if cand.get("renameBrand") == c.get("brand") or cand.get("brand") == c.get("brand"):
                     tf = cand
                     break
-        # Merge line maps: renameBrand *source* files first, destination taxonomy wins.
+        # Destination identity maps first; non-identity remaps from renameBrand
+        # *source* files win (so "Connecticut" under Argyle Fumas → "Fumas Connecticut"
+        # is not overwritten by Argyle's Connecticut→Connecticut).
         lines_map: dict = {}
-        for src, dst in rename_map.items():
-            if dst == c.get("brand") and src in by_brand:
-                lines_map.update(by_brand[src].get("lines") or {})
         if tf:
             lines_map.update(tf.get("lines") or {})
+        for src, dst in rename_map.items():
+            if dst != c.get("brand") or src not in by_brand:
+                continue
+            # Prefer the source file that this row actually came from when known
+            if c.get("_original_brand") and src != c.get("_original_brand"):
+                continue
+            for key, spec in (by_brand[src].get("lines") or {}).items():
+                new_line = (spec or {}).get("line", key)
+                if new_line != key or key not in lines_map:
+                    lines_map[key] = spec
+        # If we skipped other sources due to _original_brand, still allow their
+        # non-identity remaps only when this row has no original brand marker
+        if not c.get("_original_brand"):
+            for src, dst in rename_map.items():
+                if dst != c.get("brand") or src not in by_brand:
+                    continue
+                for key, spec in (by_brand[src].get("lines") or {}).items():
+                    new_line = (spec or {}).get("line", key)
+                    if new_line != key:
+                        lines_map[key] = spec
         if not lines_map:
             continue
         raw_line = c.get("_raw_line") or c.get("line") or ""
@@ -650,7 +670,9 @@ def main() -> None:
     auto = report.get("auto_pass") or {}
     report["auto_pass"] = {k: (v if len(v) <= 200 else v[:200] + [{"_truncated": len(v) - 200}]) for k, v in auto.items()}
 
-    write_json(OUT_DIR / "taxonomy_apply_report.json", report)
+    # --check je citac: pisanje izvjestaja bi zaprljalo radno stablo u CI-ju
+    if not args.check:
+        write_json(OUT_DIR / "taxonomy_apply_report.json", report)
 
     if args.check:
         summary = {

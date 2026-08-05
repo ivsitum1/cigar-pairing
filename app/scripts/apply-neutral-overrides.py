@@ -45,16 +45,50 @@ def apply_splits(items: list, splits: dict) -> list:
     return out
 
 
+VAGUE_SOURCES = {
+    "Procjena",
+    "Procjena (nije lab/hydro)",
+    "Procjena (solera)",
+    "Procjena (nije lab)",
+    "Procjena (Imperial linija doslazena)",
+}
+
+
+def honesty_sources(items: list) -> int:
+    """Rename bare 'Procjena' sources so UI does not look like lab evidence."""
+    n = 0
+    for d in items:
+        src = (d.get("additiveSource") or "").strip()
+        if src not in VAGUE_SOURCES:
+            continue
+        status = d.get("additiveStatus") or "unknown"
+        if "solera" in src.lower() or d.get("style") == "solera":
+            d["additiveSource"] = "Stilska procjena (solera) — nije lab/hidrometar"
+        elif status == "flavored":
+            d["additiveSource"] = "Stilska procjena (aromatizirano/spiced) — nije lab mjerenje"
+        elif status == "sweetened":
+            d["additiveSource"] = "Stilska procjena (doslađen profil) — nije lab/hidrometar"
+        elif status == "clean":
+            d["additiveSource"] = "Stilska procjena (čist profil) — nije lab mjerenje"
+        elif status == "light":
+            d["additiveSource"] = "Stilska procjena (blagi dodatak) — nije lab/hidrometar"
+        else:
+            d["additiveSource"] = "Stilska procjena — nije lab/hidrometar"
+        n += 1
+    return n
+
+
 def process(fname: str, set_key: str, split_key: str | None = None) -> None:
     path = DATA / fname
     items = json.loads(path.read_text(encoding="utf-8"))
     n = apply_sets(items, OVR.get(set_key, {}))
     if split_key:
         items = apply_splits(items, OVR.get(split_key, {}))
+    h = honesty_sources(items) if set_key == "rums" else 0
     path.write_text(
         json.dumps(items, ensure_ascii=False, indent=1) + "\n", encoding="utf-8"
     )
-    print(f"{fname}: {n} polja azurirano, {len(items)} zapisa")
+    print(f"{fname}: {n} polja azurirano, honesty {h}, {len(items)} zapisa")
 
 
 if __name__ == "__main__":

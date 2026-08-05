@@ -23,7 +23,7 @@ describe("Tobacco Petica (Branimir centar)", () => {
     expect(shop?.productHost).toBeUndefined();
   });
 
-  it("CAO Bones (Chicken Foot) i Don Tomas Bundle su ondje dostupni", () => {
+  it("CAO Bones, Don Tomas Bundle i Clásico su ondje dostupni", () => {
     expect(byId("cig-cao-bones").availabilityHR).toContain(TOBACCO_PETICA);
     expect(byId("cig-cao-bones").vitolas.map((v) => v.name)).toContain(
       "Chicken Foot",
@@ -31,12 +31,58 @@ describe("Tobacco Petica (Branimir centar)", () => {
     expect(byId("cig-don-tomas-bundle").availabilityHR).toContain(
       TOBACCO_PETICA,
     );
+    const bundleByName = Object.fromEntries(
+      byId("cig-don-tomas-bundle").vitolas.map((v) => [v.name, v]),
+    );
+    expect(bundleByName.Rothschild?.priceEUR).toBe(2.8);
+    expect(bundleByName.Robusto?.priceEUR).toBe(3.6);
+    expect(bundleByName["Petit Corona"]?.priceEUR).toBe(3.6);
+    expect(byId("cig-don-tomas-clasico").markets).toContain("HR");
+    expect(byId("cig-don-tomas-clasico").availabilityHR).toContain(
+      TOBACCO_PETICA,
+    );
+  });
+
+  it("La Estrella Polar (Robusto, Gigante) je ondje dostupna", () => {
+    const polar = byId("cig-la-estrella-polar");
+    expect(polar.markets).toContain("HR");
+    expect(polar.availabilityHR).toContain(TOBACCO_PETICA);
+    const byName = Object.fromEntries(polar.vitolas.map((v) => [v.name, v]));
+    expect(byName.Robusto?.priceEUR).toBe(5.2);
+    expect(byName.Gigante?.priceEUR).toBe(6.2);
   });
 
   it("ducan bez kataloga ne dobiva link po proizvodu", () => {
-    for (const id of ["cig-cao-bones", "cig-don-tomas-bundle"]) {
+    for (const id of [
+      "cig-cao-bones",
+      "cig-don-tomas-bundle",
+      "cig-don-tomas-clasico",
+      "cig-la-estrella-polar",
+    ]) {
       const shops = cigarShopLinks(byId(id)).map((l) => l.shop);
       expect(shops, id).not.toContain(TOBACCO_PETICA);
     }
+  });
+});
+
+describe("EU UK / Švicarska referentne trgovine", () => {
+  it("C.Gars Ltd (UK) i La Couronne (CH) su u EU registru", () => {
+    const uk = SHOPS.find((s) => s.id === "cgars-uk");
+    const ch = SHOPS.find((s) => s.id === "la-couronne-ch");
+    expect(uk?.region).toBe("EU");
+    expect(uk?.productHost).toBe("cgarsltd.co.uk");
+    expect(uk?.home).toContain("cgarsltd.co.uk");
+    expect(ch?.region).toBe("EU");
+    expect(ch?.productHost).toBe("cigarpassion.ch");
+    expect(ch?.home).toContain("cigarpassion.ch");
+  });
+
+  it("EU cigara dobiva search linkove na C.Gars i La Couronne", () => {
+    const eu = cigars.find((c) => c.markets.includes("EU"));
+    expect(eu).toBeDefined();
+    const shops = cigarShopLinks(eu!).filter((l) => l.region === "EU").map((l) => l.shop);
+    expect(shops).toContain("CigarWorld");
+    expect(shops).toContain("C.Gars Ltd");
+    expect(shops).toContain("La Couronne");
   });
 });

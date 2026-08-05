@@ -2,7 +2,14 @@
 
 ## Cursor Cloud specific instructions
 
-This repo is a single frontend-only product: a **Vite + React + TypeScript + Tailwind PWA** for cigar/drink pairing, living entirely in `app/`. The same bundle is also packaged as an Android app via **Capacitor** (`app/android/`, see `docs/android-apk.md`) — there is still no backend. There is no backend — all user data (collection, ratings, pairing diary) is stored in the browser's `localStorage`, per device. The Python scripts under `app/scripts/` are an **optional local data-regeneration pipeline** (scrape → Excel → JSON); they are not needed to lint, test, build, or run the app, and require local Excel files that are git-ignored.
+The shipped product is a **Vite + React + TypeScript + Tailwind PWA** for cigar/drink pairing, living entirely in `app/`. All user data (collection, ratings, pairing diary) is stored in the browser's `localStorage`, per device — there is no server-side account or database. The same bundle is also packaged as an Android app via **Capacitor** (`app/android/`, see `docs/android-apk.md`) on the long-lived `release/android` branch.
+
+Two things sit outside `app/` and are **not** part of the deployed site:
+
+- `backend/` — an **optional local FastAPI service** (`uvicorn app.main:app`, port 8787) for stronger receipt OCR (PaddleOCR) and cigar-band image matching. The PWA only calls it when `VITE_OCR_API_URL` is set; unset (the GitHub Pages default) the app uses the embedded `@paddleocr/paddleocr-js` and `tesseract.js` instead. Never required to lint, test, build, or run the app.
+- `app/scripts/` — an **optional local data-regeneration pipeline** (scrape → Excel → JSON). Requires local Excel files that are git-ignored. The `--check` variants of these scripts *are* CI gates (see below) and are read-only.
+
+Note that first OCR use fetches model assets from third-party CDNs (jsDelivr / HuggingFace / ModelScope) — the app is offline-first for its own data, but not for OCR models.
 
 ### Commands (run inside `app/`)
 Standard commands are defined in `app/package.json` and mirrored by `.github/workflows/ci.yml`:
@@ -12,9 +19,23 @@ Standard commands are defined in `app/package.json` and mirrored by `.github/wor
 - Dev server: `npm run dev` (Vite, defaults to port 5173)
 - Android: `npm run android:sync` (`build:native` + `cap sync android`), then `npm run android:open`/`android:apk`
 
+### CI gates (all blocking — `ci.yml` runs on pushes to `master` and on PRs)
+Beyond `tsc` / `npm test` / `npm run build`, five Python gates guard the catalog. They are **read-only** — they never write to `scripts/output/`:
+```
+python scripts/apply-taxonomy.py --check --skip-normalize
+python scripts/normalize-vitolas.py --check
+python scripts/taxonomy-audit.py --fail-on-new --check-only
+python scripts/apply-cigar-descriptions.py --check
+python scripts/test_reconcile_hr.py
+```
+A separate `backend` job runs `python -m unittest discover -s tests` in `backend/`.
+
 ### Non-obvious notes
 - The dev server serves the app under the base path **`/cigar-pairing/`**, not `/`. Open `http://localhost:5173/cigar-pairing/` — the bare root path will not render the app. This base is set in `app/vite.config.ts` to match the GitHub Pages repo name. The Android target (`--mode native`) instead builds to `app/dist-native` with a relative base and no service worker, because the WebView serves the app from `capacitor://localhost/`.
 - Building the APK needs JDK 21 + the Android SDK, neither of which is available in Cursor Cloud / Claude web sandboxes (`dl.google.com` is blocked). Verify Android changes by building the native web bundle and serving `app/dist-native` from the **root** path; the APK itself comes from the `Android APK` workflow artifact.
 - Node 22 is expected (see CI). The package manager is **npm** (`app/package-lock.json`).
 - Deploy is automatic: push to `master` → GitHub Actions (`deploy.yml`) → GitHub Pages. Do not deploy manually.
+- **Never remove a drink or cigar id without an alias.** Collections and diaries live in `localStorage` and key on those ids; a removed id silently orphans the user's marks. Add the successor to `src/data/drinkIdAliases.json` / `cigarIdAliases.json`. `drinkIdRegistry.json` + `src/data/drinkIds.test.ts` enforce this.
+- **`keepSeparate` in `scripts/data/taxonomy/*.json` outranks `line_merge_decisions.json`.** A merge decision that contradicts it aborts `normalize-vitolas.py` — resolve by editing one of the two, not by suppressing the check.
+- The OCR bundle (~10.9 MB) must stay a **lazy** chunk. Do not give it a `manualChunks` name: that dissolves the dynamic-import boundary and puts it in the entry's `modulepreload`. It is named via `output.chunkFileNames` instead, so `globIgnores` still matches.
 - Since state is `localStorage`-only, a "hello world" smoke test is fully client-side: open the app → Pairing → pick a cigar → view scored drink pairings → "Zabilježi večer" to log an evening → confirm it appears under Kolekcija (Collection) diary.

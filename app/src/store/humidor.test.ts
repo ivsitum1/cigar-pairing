@@ -94,7 +94,7 @@ describe("humidor", () => {
     h.setStock(b.id, "cig-x", 5);
     h.setActiveHumidor(b.id);
 
-    expect(h.consumeFromStock("cig-x")).toBe(b.id);
+    expect(h.consumeFromStock("cig-x")).toEqual({ humidorId: b.id, itemId: "cig-x" });
     expect(h.stockCount(b.id, "cig-x")).toBe(4);
     expect(h.stockCount(a.id, "cig-x")).toBe(2);
   });
@@ -106,7 +106,7 @@ describe("humidor", () => {
     h.setStock(a.id, "cig-x", 1);
     h.setActiveHumidor(b.id);
 
-    expect(h.consumeFromStock("cig-x")).toBe(a.id);
+    expect(h.consumeFromStock("cig-x")).toEqual({ humidorId: a.id, itemId: "cig-x" });
     expect(h.stockCount(a.id, "cig-x")).toBe(0);
   });
 
@@ -114,6 +114,60 @@ describe("humidor", () => {
     const h = await load();
     h.addHumidor("A");
     expect(h.consumeFromStock("cig-nema")).toBeNull();
+  });
+
+  it("zapis po vitoli skida zalihu vođenu po liniji", async () => {
+    const h = await load();
+    const a = h.addHumidor("A");
+    h.setStock(a.id, "cig-x", 1);
+
+    expect(h.consumeFromStock("cig-x@churchill")).toEqual({
+      humidorId: a.id,
+      itemId: "cig-x",
+    });
+    expect(h.stockCount(a.id, "cig-x")).toBe(0);
+  });
+
+  it("zapis po liniji skida jedinu vitolu te linije", async () => {
+    const h = await load();
+    const a = h.addHumidor("A");
+    h.setStock(a.id, "cig-x@churchill", 2);
+
+    expect(h.consumeFromStock("cig-x")).toEqual({
+      humidorId: a.id,
+      itemId: "cig-x@churchill",
+    });
+    expect(h.stockCount(a.id, "cig-x@churchill")).toBe(1);
+  });
+
+  it("ne pogađa vitolu kad ih linija ima više u zalihi", async () => {
+    const h = await load();
+    const a = h.addHumidor("A");
+    h.setStock(a.id, "cig-x@churchill", 2);
+    h.setStock(a.id, "cig-x@corona", 2);
+
+    expect(h.consumeFromStock("cig-x@robusto")).toBeNull();
+    expect(h.stockCount(a.id, "cig-x@churchill")).toBe(2);
+    expect(h.stockCount(a.id, "cig-x@corona")).toBe(2);
+  });
+
+  it("točan ključ ima prednost pred zalihom linije", async () => {
+    const h = await load();
+    const a = h.addHumidor("A");
+    h.setStock(a.id, "cig-x", 3);
+    h.setStock(a.id, "cig-x@churchill", 3);
+
+    expect(h.consumeFromStock("cig-x@churchill")?.itemId).toBe("cig-x@churchill");
+    expect(h.stockCount(a.id, "cig-x")).toBe(3);
+  });
+
+  it("ne dira ključ druge linije s istim prefiksom", async () => {
+    const h = await load();
+    const a = h.addHumidor("A");
+    h.setStock(a.id, "cig-x-reserva", 2);
+
+    expect(h.consumeFromStock("cig-x@churchill")).toBeNull();
+    expect(h.stockCount(a.id, "cig-x-reserva")).toBe(2);
   });
 
   it("preživljava ponovno učitavanje", async () => {
@@ -245,5 +299,32 @@ describe("brzi unos iz kolekcije", () => {
 
     expect(h.humidorData().stock).toHaveLength(3);
     expect(h.humidorData().stock.every((s) => s.count === 1)).toBe(true);
+  });
+});
+
+describe("remapHumidorAliases", () => {
+  it("spaja alias zalihu na kanonski itemId", async () => {
+    const { remapHumidorAliases } = await load();
+    const out = remapHumidorAliases({
+      humidors: [{ id: "h1", name: "Kuća", createdAt: "2026-01-01T00:00:00.000Z" }],
+      activeId: "h1",
+      stock: [
+        {
+          humidorId: "h1",
+          itemId: "cig-oliva-oliva-serie-v",
+          count: 2,
+          updatedAt: "2026-01-01T00:00:00.000Z",
+        },
+        {
+          humidorId: "h1",
+          itemId: "cig-oliva-serie-v",
+          count: 1,
+          updatedAt: "2026-01-02T00:00:00.000Z",
+        },
+      ],
+    });
+    expect(out.stock).toHaveLength(1);
+    expect(out.stock[0].itemId).toBe("cig-oliva-serie-v");
+    expect(out.stock[0].count).toBe(3);
   });
 });

@@ -17,6 +17,30 @@ const STRINGS = {
     hr: "Spremanje nije uspjelo (prostor za pohranu pun je ili blokiran) — promjene vrijede samo do zatvaranja. Izvezi sigurnosnu kopiju u Kolekciji.",
     en: "Saving failed (storage full or blocked) — changes last only until you close the app. Export a backup from Collection.",
   },
+  // provjera dobi
+  "age.title": { hr: "Samo za punoljetne", en: "Adults only" },
+  "age.body": {
+    hr: "Ova aplikacija govori o cigarama i alkoholnim pićima. Otvori je samo ako si punoljetan/na za duhan i alkohol u svojoj zemlji.",
+    en: "This app covers cigars and alcoholic drinks. Continue only if you are of legal age for tobacco and alcohol where you live.",
+  },
+  // Granica se razlikuje po zemlji, pa je gate ne tvrdi jednim brojem:
+  // HR i EU 18, SAD 21 (savezni Tobacco 21 + alkohol 21 u svim drzavama).
+  "age.thresholds": {
+    hr: "U Hrvatskoj i EU to je 18 godina, u SAD-u 21.",
+    en: "In Croatia and the EU that is 18; in the United States it is 21.",
+  },
+  "age.confirm": { hr: "Punoljetan/na sam", en: "I am of legal age" },
+  "age.deny": { hr: "Nisam", en: "I am not" },
+  "age.deniedTitle": { hr: "Hvala na iskrenosti", en: "Thanks for being honest" },
+  "age.deniedBody": {
+    hr: "Sadržaj ove aplikacije nije namijenjen maloljetnima. Slobodno je zatvori.",
+    en: "This app's content is not intended for minors. Feel free to close it.",
+  },
+  "age.deniedBack": { hr: "Pogriješio sam, vrati me", en: "That was a mistake, take me back" },
+  "age.disclaimer": {
+    hr: "Duhan i alkohol štete zdravlju. Uživaj odgovorno.",
+    en: "Tobacco and alcohol harm your health. Enjoy responsibly.",
+  },
   // klub
   "club.quote": { hr: "Citat dana", en: "Quote of the day" },
   "club.fact": { hr: "Znaš li…?", en: "Did you know…?" },
@@ -56,8 +80,8 @@ const STRINGS = {
   "club.bontonBackList": { hr: "Natrag na sadržaj", en: "Back to contents" },
   "club.lexicon": { hr: "Leksikon sparivanja", en: "Pairing language lexicon" },
   "club.lexiconTeaser": {
-    hr: "Kratak vodič za govor o spoju: kako opisati što spaja cigaru i piće — most (zajednička točka), tijelo, snaga, trećine i ritam.",
-    en: "A short guide to pairing speech: how to describe what connects a cigar and a drink — the bridge (a shared point), body, strength, thirds and rhythm.",
+    hr: "Kako opisati što spaja cigaru i piće — most (zajednička točka), tijelo, snaga, trećine i ritam.",
+    en: "How to describe what connects a cigar and a drink — the bridge (a shared point), body, strength, thirds and rhythm.",
   },
   "club.lexiconOpen": { hr: "Otvori leksikon", en: "Open the lexicon" },
   "club.lexiconSubtitle": { hr: "Jezik za stol", en: "Language for the table" },
@@ -148,6 +172,7 @@ const STRINGS = {
   "pair.next": { hr: "Sljedeći prijedlog", en: "Next suggestion" },
   "pair.coffeeAlt": { hr: "Bezalkoholna opcija — kava", en: "Non-alcoholic option — coffee" },
   "session.log": { hr: "Zabilježi večer", en: "Log the evening" },
+  "session.logThis": { hr: "Zabilježi ovaj spoj", en: "Log this pairing" },
   "session.title": { hr: "Večernji spoj", en: "Evening pairing" },
   "session.hint": {
     hr: "Spremi ovaj spoj u dnevnik — ocjena lokalno naginje buduće prijedloge.",
@@ -156,6 +181,19 @@ const STRINGS = {
   "session.markTried": { hr: "Označi cigaru i piće kao probano", en: "Mark cigar and drink as tried" },
   "session.save": { hr: "Spremi večer", en: "Save evening" },
   "session.saved": { hr: "Večer zabilježena.", en: "Evening logged." },
+  "session.recommendations": { hr: "Preporuke", en: "Recommendations" },
+  "session.customDrink": { hr: "Ostalo — pretraži katalog", en: "Other — search catalog" },
+  "session.solo": { hr: "Samo cigara", en: "Cigar only" },
+  "session.soloLabel": { hr: "solo", en: "solo" },
+  "session.searchDrink": { hr: "Traži piće…", en: "Search drinks…" },
+  "wish.lastTitle": { hr: "Zadnja iz humidora", en: "Last one in the humidor" },
+  "wish.lastBody": {
+    hr: "Ovo je bila zadnja u humidoru. Da je stavim na listu želja, da je vidiš kod kupnje?",
+    en: "That was the last one in your humidor. Add it to the wishlist so it shows up when you shop?",
+  },
+  "wish.lastAdd": { hr: "Na listu želja", en: "Add to wishlist" },
+  "wish.lastSkip": { hr: "Ne treba", en: "No thanks" },
+  "session.noRecommendations": { hr: "Nema preporuka — odaberi iz kataloga ili solo", en: "No recommendations — pick from catalog or solo" },
   "serve.title": { hr: "Kako serviraš?", en: "How do you serve it?" },
   "serve.neat": { hr: "Čisto", en: "Neat" },
   "serve.water": { hr: "Kap vode", en: "Splash of water" },
@@ -196,12 +234,12 @@ const STRINGS = {
     en: "Music: Night in Venice and No Frills Cumbia by Kevin MacLeod (incompetech.com), licensed under CC BY 4.0.",
   },
   "footer.tobacco": {
-    hr: "Prodaja duhana na daljinu u Hrvatskoj nije dopuštena — poveznice na cigare služe samo kao informacija. Samo za punoljetne (18+).",
-    en: "Distance sale of tobacco is not permitted in Croatia — cigar links are for reference only. Adults only (18+).",
+    hr: "Prodaja duhana na daljinu u Hrvatskoj nije dopuštena — poveznice na cigare služe samo kao informacija. Samo za osobe od {age} godina i starije.",
+    en: "Distance sale of tobacco is not permitted in Croatia — cigar links are for reference only. Ages {age} and over only.",
   },
   "footer.alcohol": {
-    hr: "Alkoholna pića su namijenjena punoljetnima (18+) — uživaj odgovorno.",
-    en: "Alcoholic drinks are for adults only (18+) — enjoy responsibly.",
+    hr: "Alkoholna pića namijenjena su osobama od {age} godina i starijima — uživaj odgovorno.",
+    en: "Alcoholic drinks are for ages {age} and over — enjoy responsibly.",
   },
   "footer.prices": {
     hr: "Cijene i dostupnost su okvirne i podložne promjeni — provjeri u trgovini.",
@@ -223,10 +261,27 @@ const STRINGS = {
   "common.vitolaCountSuffix": { hr: "vitola", en: "vitolas" },
   "coll.triedTitle": { hr: "Probano", en: "Tried" },
   "ocr.scan": { hr: "Fotografiraj etiketu", en: "Photograph the label" },
+  "ocr.scanReceipt": { hr: "Fotografiraj račun", en: "Photograph the receipt" },
   "ocr.working": { hr: "Prepoznajem…", en: "Recognizing…" },
+  "ocr.workingPaddle": { hr: "PaddleOCR (račun)…", en: "PaddleOCR (receipt)…" },
+  "ocr.workingTess": { hr: "Čitam etiketu…", en: "Reading label…" },
   "ocr.partial": { hr: "Nisam siguran — pogledaj rezultate pretrage", en: "Not sure — check the search results" },
-  "ocr.noMatch": { hr: "Tekst nije prepoznat. Pokušaj bliže, uz više svjetla.", en: "No text recognized. Try closer, with more light." },
-  "ocr.error": { hr: "Prepoznavanje nije uspjelo — prvi put je potrebna internetska veza.", en: "Recognition failed (first use needs internet)." },
+  "ocr.noMatch": { hr: "Nema pogodaka u katalogu. Pokušaj bliže / više svjetla.", en: "No catalog match. Try closer / more light." },
+  "ocr.error": { hr: "Prepoznavanje nije uspjelo.", en: "Recognition failed." },
+  "ocr.modeCigar": { hr: "Jedna cigara / etiketa", en: "Single cigar / label" },
+  "ocr.modeReceipt": { hr: "Račun", en: "Receipt" },
+  "ocr.modeCigarShort": { hr: "Cigara", en: "Cigar" },
+  "ocr.modeReceiptShort": { hr: "Račun", en: "Bill" },
+  "ocr.confirmTitle": { hr: "Prepoznato", en: "Recognized" },
+  "ocr.confirmHint": { hr: "Ne sprema se u Imam dok ne potvrdiš", en: "Not saved as Owned until you confirm" },
+  "ocr.actionPair": { hr: "Sparivanje", en: "Pairing" },
+  "ocr.actionOwned": { hr: "Označi Imam", en: "Mark as Owned" },
+  "ocr.actionDetail": { hr: "Samo detalj", en: "Details only" },
+  "ocr.actionWrong": { hr: "Nije to — zatvori", en: "Wrong — dismiss" },
+  "ocr.receiptTitle": { hr: "Cigare na računu", en: "Cigars on receipt" },
+  "ocr.receiptHint": { hr: "Provjeri popis pa unesi označene u Imam.", en: "Review the list, then add selected to Owned." },
+  "ocr.receiptCommit": { hr: "Unesi sve označeno u Imam", en: "Add selected to Owned" },
+  "ocr.receiptDone": { hr: "Dodano u Imam: {n}", en: "Added to Owned: {n}" },
   "common.buy": { hr: "Gdje kupiti", en: "Where to buy" },
   "common.searchOnline": { hr: "Traži online", en: "Search online" },
   "price.from": { hr: "od", en: "from" },
@@ -247,18 +302,25 @@ const STRINGS = {
   "rate.editorial": { hr: "neovisna procjena", en: "independent estimate" },
   "market.ALL": { hr: "Sve", en: "All" },
   "market.HR": { hr: "Hrvatska", en: "Croatia" },
-  "market.EU": { hr: "EU", en: "EU" },
+  "market.EU": { hr: "Europa", en: "Europe" },
   "market.USA": { hr: "SAD", en: "USA" },
   "market.WW": { hr: "Svijet", en: "Worldwide" },
   "shops.title": { hr: "Trgovine", en: "Shops" },
   "shops.intro": {
-    hr: "Gdje kupiti po regiji. Hrvatske trgovine imaju izravne poveznice na proizvod ondje gdje postoje; EU i SAD vode na pretragu po nazivu.",
-    en: "Where to buy by region. HR shops link directly to the product where available; EU/USA link to a search by name.",
+    hr: "Gdje kupiti po regiji. Hrvatske trgovine imaju izravne poveznice na proizvod ondje gdje postoje; Europa i SAD vode na pretragu po nazivu (ili izravno kad postoji scrapani link).",
+    en: "Where to buy by region. Croatian shops link directly to the product where available; Europe and USA link to a search by name (or direct when a scraped link exists).",
   },
   "shops.availableHere": { hr: "dostupno ovdje", en: "available here" },
   "shops.direct": { hr: "izravno", en: "direct" },
   "shops.search": { hr: "pretraga", en: "search" },
   "shops.walkIn": { hr: "na mjestu", en: "in store" },
+  "shops.browse": { hr: "katalog", en: "catalogue" },
+  "shops.priceRef": { hr: "Cijena u svijetu", en: "World prices" },
+  "shops.drinkNoDirect": {
+    hr: "Za ovu bocu nemamo potvrđenu stranicu proizvoda, pa poveznice vode na pretragu odnosno katalog trgovine.",
+    en: "We have no confirmed product page for this bottle, so the links lead to the shop's search or catalogue.",
+  },
+  "shops.indicative": { hr: "orijentir — provjeri zalihu", en: "indicative — check stock" },
   // opće
   "common.body": { hr: "Tijelo", en: "Body" },
   "common.strength": { hr: "Snaga", en: "Strength" },
@@ -304,6 +366,30 @@ const STRINGS = {
     hr: "Nema linija dostupnih na odabranom tržištu. Promijeni filtar iznad.",
     en: "No lines available in the selected market. Change the filter above.",
   },
+  // marke pića — izvedene iz imena, pa je i rječnik odvojen od cigara
+  "dbrand.bottles": { hr: "boca", en: "bottles" },
+  "dbrand.compare": { hr: "Usporedba", en: "Comparison" },
+  "dbrand.best": { hr: "najbolje ocijenjeno", en: "top rated" },
+  "dbrand.colName": { hr: "Boca", en: "Bottle" },
+  "dbrand.colAbv": { hr: "Alk.", en: "ABV" },
+  "dbrand.colBody": { hr: "Tijelo", en: "Body" },
+  "dbrand.colSweet": { hr: "Slatkoća", en: "Sweet" },
+  "dbrand.colQuality": { hr: "Ocjena", en: "Score" },
+  "dbrand.colPrice": { hr: "Cijena", en: "Price" },
+  "dbrand.openBottle": { hr: "Otvori bocu za cijeli opis.", en: "Open a bottle for the full profile." },
+  "dbrand.single": {
+    hr: "Marka ima samo jednu bocu — nema što usporediti.",
+    en: "Only one bottle in this brand — nothing to compare.",
+  },
+  "dbrand.spread": { hr: "Raspon", en: "Spread" },
+  // omiljene marke
+  "fav.add": { hr: "Dodaj u omiljene", en: "Add to favourites" },
+  "fav.remove": { hr: "Ukloni iz omiljenih", en: "Remove from favourites" },
+  "fav.only": { hr: "★ Omiljene", en: "★ Favourites" },
+  "fav.none": {
+    hr: "Još nema omiljenih marki. Zvjezdica na kartici marke pamti one kojima se vraćaš.",
+    en: "No favourite brands yet. The star on a brand card remembers the ones you return to.",
+  },
   "search.hits": { hr: "Rezultati", en: "Results" },
   "search.kindBrand": { hr: "marka", en: "brand" },
   "search.kindLine": { hr: "linija", en: "line" },
@@ -318,7 +404,10 @@ const STRINGS = {
   "coll.myRating": { hr: "Moja ocjena", en: "My rating" },
   "coll.note": { hr: "Bilješka", en: "Note" },
   "coll.notePlaceholder": { hr: "Dojmovi, uz što je pasalo…", en: "Impressions, what it paired with…" },
-  "coll.empty": { hr: "Kolekcija je prazna. Označi boce i cigare u katalozima ili ovdje.", en: "Collection is empty. Mark bottles and cigars in the catalogs or here." },
+  "coll.empty": {
+    hr: "Kolekcija je prazna. Označi Probano za cigare koje pušiš drugdje, ili Imam za vitole koje imaš a još nisu u humidoru.",
+    en: "Collection is empty. Mark Tried for cigars you smoke elsewhere, or Owned for vitolas you have that are not in a humidor yet.",
+  },
   "coll.export": { hr: "Izvoz podataka", en: "Export data" },
   "coll.import": { hr: "Uvoz podataka", en: "Import data" },
   "coll.journal": { hr: "Dnevnik sparivanja", en: "Pairing journal" },
@@ -328,9 +417,14 @@ const STRINGS = {
   "coll.delete": { hr: "Obriši", en: "Delete" },
   "coll.importOk": { hr: "Podaci uvezeni.", en: "Data imported." },
   "coll.importErr": { hr: "Neispravna datoteka.", en: "Invalid file." },
-  "coll.stats": { hr: "boca/cigara u kolekciji", en: "bottles/cigars in collection" },
-  "coll.historySection": { hr: "Probano / bilješke (nemam)", en: "Tried / notes (not owned)" },
+  "coll.stats": { hr: "u shortlistu / bez zalihe", en: "in shortlist / without stock" },
+  "coll.historySection": { hr: "Probano / shortlist", en: "Tried / shortlist" },
+  "coll.ownedNoStock": {
+    hr: "Imam (još nije u humidoru)",
+    en: "Owned (not in humidor yet)",
+  },
   "coll.drinks": { hr: "Pića", en: "Drinks" },
+  "coll.removeFromList": { hr: "Makni s popisa", en: "Remove from list" },
   // humidor
   "hum.title": { hr: "Humidor", en: "Humidor" },
   "hum.tabCollection": { hr: "Kolekcija", en: "Collection" },
@@ -496,6 +590,7 @@ export const STYLE_LABELS: Record<string, LocalizedText> = {
   grappa: { hr: "Grappa (odležana)", en: "Grappa (aged)" },
   "espresso-dark": { hr: "Espresso (tamni)", en: "Espresso (dark)" },
   "espresso-medium": { hr: "Espresso (medium)", en: "Espresso (medium)" },
+  americano: { hr: "Americano", en: "Americano" },
   turkish: { hr: "Turska/domaća", en: "Turkish" },
   moka: { hr: "Moka pot", en: "Moka pot" },
   "filter-light": { hr: "Filter (light roast)", en: "Filter (light roast)" },
@@ -742,13 +837,26 @@ interface I18nCtx {
 const Ctx = createContext<I18nCtx>(null!);
 
 export function I18nProvider({ children }: { children: ReactNode }) {
+  // Ostatak aplikacije pristupa storageu obazrivo (safeStorage, oba storea), a
+  // ovdje je bilo golo: kad je storage blokiran (Safari private, stroga
+  // pravila kolacica), sam getter baca SecurityError i ruSi boot.
   const [lang, setLangState] = useState<Lang>(() => {
-    const resolved = resolveLang(localStorage.getItem("lang"));
+    let raw: string | null = null;
+    try {
+      raw = localStorage.getItem("lang");
+    } catch {
+      /* storage blokiran — ostajemo na zadanom jeziku */
+    }
+    const resolved = resolveLang(raw);
     document.documentElement.lang = resolved;
     return resolved;
   });
   const setLang = (l: Lang) => {
-    localStorage.setItem("lang", l);
+    try {
+      localStorage.setItem("lang", l);
+    } catch {
+      /* pun ili blokiran storage — jezik vrijedi do zatvaranja */
+    }
     setLangState(l);
     document.documentElement.lang = l;
   };

@@ -34,6 +34,9 @@ const DATA_FILES = [
 function croatianStrings(): { where: string; text: string }[] {
   const out: { where: string; text: string }[] = [];
 
+  // region/country su HR prikaz korisniku (npr. "Jerez, Španjolska") — ne samo .hr
+  const HR_KEYS = new Set(["hr", "region", "country"]);
+
   const walk = (node: unknown, file: string, path: string) => {
     if (Array.isArray(node)) {
       node.forEach((v, i) => walk(v, file, `${path}[${i}]`));
@@ -41,8 +44,8 @@ function croatianStrings(): { where: string; text: string }[] {
     }
     if (node && typeof node === "object") {
       for (const [k, v] of Object.entries(node as Record<string, unknown>)) {
-        if (k === "hr" && typeof v === "string") {
-          out.push({ where: `${file}${path}.hr`, text: v });
+        if (HR_KEYS.has(k) && typeof v === "string") {
+          out.push({ where: `${file}${path}.${k}`, text: v });
         } else {
           walk(v, file, `${path}.${k}`);
         }
@@ -70,6 +73,7 @@ function croatianStrings(): { where: string; text: string }[] {
     "engine/personal.ts",
     "engine/rules.ts",
     "engine/serve.ts",
+    "data/drinkShops.ts",
     "data/shops.ts",
     "lib/geo.ts",
     "lib/shareCard.ts",
@@ -129,9 +133,14 @@ describe("hrvatski tekst", () => {
   it("bez ogoljenih dijakritika u čestim riječima", () => {
     expect(
       offenders(
-        /\b(voce|secer\w*|zacin\w*|slatkoca|gorcina|cokolad\w*|tresnj\w*|pjenusa\w*|bacv\w*|odlezan\w*|zavrsnic\w*|klasican|klasicn\w*|spanjolsk\w*|skriljevac|orasast\w*|dosladj\w*|dopust\w*|grozdj\w*|Dingac\w*)\b/,
+        /\b(voce|secer\w*|zacin\w*|slatkoca|gorcina|cokolad\w*|tresnj\w*|pjenusa\w*|bacv\w*|odlezan\w*|zavrsnic\w*|klasican|klasicn\w*|spanjolsk\w*|skotsk\w*|njemack\w*|madjarsk\w*|grck\w*|peljesac|plesivica|primosten|skriljevac|orasast\w*|dosladj\w*|dopust\w*|grozdj\w*|Dingac\w*)\b/,
       ),
     ).toEqual([]);
+  });
+
+  it("bez CP437 mojibakea dijakritika (┼á ≈ Š)", () => {
+    // UTF-8 Š (C5 A0) pročitan kao OEM/CP437 daje U+253C U+00E1
+    expect(offenders(/[─│┌┐└┘├┤┬┴┼═║╔╗╚╝╠╣╦╩╬]/)).toEqual([]);
   });
 
   it("ne propušta interne oznake okusa u tekst", () => {

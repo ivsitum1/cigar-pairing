@@ -1,32 +1,72 @@
-import { useMemo, useRef, useState } from "react";
+import { useRef, useState, type ReactNode } from "react";
 import type { Cigar, Drink } from "../types";
 import {
   ALL_DRINKS,
   CIGARS,
   brandDisplayName,
-  cigarById,
   cigarForItemId,
   drinkById,
 } from "../data";
 import { useI18n, type StringKey } from "../i18n";
-import { Chip, SectionTitle } from "../components/ui";
+import { Chip, SearchInput, SectionTitle } from "../components/ui";
 import { CigarRow, DrinkRow } from "../components/cards";
 import { drinkNameLoc } from "../lib/drinkName";
-import { DetailSheet } from "../components/DetailSheet";
-import { BackButton } from "../components/BackButton";
 import {
-  addJournalEntry,
+  CigarBrowseSheets,
+  useCigarBrowseSheets,
+} from "../components/useCigarBrowseSheets";
+import { EveningSessionSheet } from "../components/EveningSessionSheet";
+import {
+  cigarItemId,
+  dedupeCollectionCigarIds,
+} from "../lib/cigarItemId";
+import { buildCigarOcrCandidates } from "../lib/ocrCigarCandidates";
+import {
+  ownedWithoutStockIds,
+  shortlistItemIds,
+} from "../lib/collectionPanels";
+import {
+  clearItem,
   exportData,
   importData,
   removeJournalEntry,
   useCollection,
 } from "../store/collection";
-import { useMarket } from "../store/market";
 import { navigate, useRoute, type CollectionView } from "../store/route";
 import { HumidorPage, JournalCalendar } from "./HumidorPage";
-import { exportHumidors, importHumidors } from "../store/humidor";
-import { applyVitola, uniqueVitolas } from "../lib/cigarVitola";
-import { cigarItemId } from "../lib/cigarItemId";
+import { exportHumidors, importHumidors, totalStock } from "../store/humidor";
+import { exportFavorites, importFavorites } from "../store/favorites";
+import { OcrScan } from "../components/OcrScan";
+import { useMarket } from "../store/market";
+
+/**
+ * Redak popisa Kolekcije + izlaz. Bez njega se stavka miče samo gašenjem svih
+ * kvačica u kartici, a ako ključ ne odgovara onome što kartica piše (stara
+ * vitola, oznaka na razini linije) ne miče se nikako.
+ */
+function CollectionEntry({
+  itemId,
+  children,
+}: {
+  itemId: string;
+  children: ReactNode;
+}) {
+  const { t } = useI18n();
+  return (
+    <div className="flex items-start gap-2">
+      <div className="min-w-0 flex-1">{children}</div>
+      <button
+        type="button"
+        onClick={() => clearItem(itemId)}
+        aria-label={t("coll.removeFromList")}
+        title={t("coll.removeFromList")}
+        className="mt-1 h-8 w-8 shrink-0 rounded-lg border border-dim/25 text-sm text-dim hover:border-oxblood/60 hover:text-oxblood"
+      >
+        ✕
+      </button>
+    </div>
+  );
+}
 
 export function CollectionPage({
   onPair,
@@ -34,41 +74,66 @@ export function CollectionPage({
   onPair?: (target: { kind: "cigar"; item: Cigar } | { kind: "drink"; item: Drink }) => void;
 }) {
   const { t, lx, lang } = useI18n();
+  const market = useMarket();
   const route = useRoute();
   const data = useCollection();
-  const [detail, setDetail] = useState<
-    { kind: "cigar"; item: Cigar } | { kind: "drink"; item: Drink } | null
-  >(null);
+  const {
+    line,
+    detail,
+    openCigar,
+    openCigarCard,
+    openVitola,
+    openDrink,
+    openLine,
+    closeLine,
+    closeDetail,
+    closeSheets,
+  } = useCigarBrowseSheets();
   const [showAddPairing, setShowAddPairing] = useState(false);
+  const [logCigar, setLogCigar] = useState<Cigar | null>(null);
   const fileRef = useRef<HTMLInputElement>(null);
   const [importMsg, setImportMsg] = useState<string | null>(null);
+  const [ocrQuery, setOcrQuery] = useState("");
 
-  // "Imam" = stvarna kolekcija; ostalo (probano/ocjena/biljeska bez posjedovanja)
-  // ide u zasebnu povijest i nestaje iz kolekcije kad se makne "Imam"
-  const ownedIds = Object.entries(data.items)
-    .filter(([, s]) => s.owned)
-    .map(([id]) => id);
-  // stavke s liste želja žive u Kupovina — ne dupliciraj ih u povijesti Kolekcije
-  const historyIds = Object.entries(data.items)
-    .filter(([, s]) => !s.owned && !s.wishlist && (s.tried || s.rating != null || s.note))
+  // Tab Kolekcija: Imam bez stocka + shortlist (tried); wishlist živi u Kupovini
+  const ownedNoStockIds = dedupeCollectionCigarIds(
+    ownedWithoutStockIds(data.items, totalStock).filter(
+      (id) => cigarForItemId(id) != null,
+    ),
+  );
+  const historyIds = dedupeCollectionCigarIds(
+    shortlistItemIds(data.items).filter((id) => cigarForItemId(id) != null),
+  );
+  const historyDrinkIds = shortlistItemIds(data.items).filter(
+    (id) => cigarForItemId(id) == null && drinkById(id) != null,
+  );
+
+  const allOwnedCigarIds = Object.entries(data.items)
+    .filter(([id, s]) => s.owned && cigarForItemId(id) != null)
     .map(([id]) => id);
 
-  // kljuc cigare moze nositi vitolu (`cig-x@churchill`) — razrijesi ga u liniju
-  // s primijenjenom vitolom da red pokaze bas taj format
   const cigarsFor = (ids: string[]) =>
     ids
       .map((id) => ({ id, cigar: cigarForItemId(id) }))
       .filter((x): x is { id: string; cigar: Cigar } => x.cigar != null);
 
-  const myCigars = cigarsFor(ownedIds);
-  const myDrinks = ALL_DRINKS.filter((d) => ownedIds.includes(d.id));
+  const ownedNoStockCigars = cigarsFor(ownedNoStockIds);
   const historyCigars = cigarsFor(historyIds);
-  const historyDrinks = ALL_DRINKS.filter((d) => historyIds.includes(d.id));
+  const historyDrinks = ALL_DRINKS.filter((d) => historyDrinkIds.includes(d.id));
+  const ownedCigarsForLog = cigarsFor(
+    dedupeCollectionCigarIds(allOwnedCigarIds),
+  );
 
-  // backup nosi i humidore — inače bi se zaliha izgubila pri prijenosu uređaja
+  const panelCount =
+    ownedNoStockCigars.length + historyCigars.length + historyDrinks.length;
+
   const doExport = () => {
     const payload = JSON.stringify(
-      { ...JSON.parse(exportData()), humidors: exportHumidors() },
+      {
+        ...JSON.parse(exportData()),
+        humidors: exportHumidors(),
+        favoriteBrands: exportFavorites(),
+      },
       null,
       2,
     );
@@ -86,8 +151,14 @@ export function CollectionPage({
     const ok = importData(text);
     if (ok) {
       try {
-        const parsed = JSON.parse(text) as { humidors?: unknown };
+        const parsed = JSON.parse(text) as {
+          humidors?: unknown;
+          favoriteBrands?: unknown;
+        };
         if (parsed.humidors !== undefined) importHumidors(parsed.humidors);
+        // Stariji backup nema ključ — tada omiljene ostaju kakve jesu. Uvoz
+        // praznog polja bi ih obrisao, a to nije ono što stara datoteka kaže.
+        if (parsed.favoriteBrands !== undefined) importFavorites(parsed.favoriteBrands);
       } catch {
         // kolekcija je uvezena; humidori iz starijeg backupa jednostavno ne postoje
       }
@@ -96,13 +167,17 @@ export function CollectionPage({
     setTimeout(() => setImportMsg(null), 3000);
   };
 
-  // Kolekcija / Humidor / Kalendar — sve što je "moje" na jednom mjestu
-  const view = route.collection ?? "collection";
+  // Humidor | Kolekcija | Kalendar — zaliha prva, shortlist druga
+  const view = route.collection ?? "humidor";
   const tabs: { id: CollectionView; key: StringKey }[] = [
-    { id: "collection", key: "hum.tabCollection" },
     { id: "humidor", key: "hum.tabHumidor" },
+    { id: "collection", key: "hum.tabCollection" },
     { id: "calendar", key: "hum.tabCalendar" },
   ];
+
+  const ocrCandidates = buildCigarOcrCandidates(CIGARS, (b) =>
+    brandDisplayName(b, market),
+  );
 
   const tabBar = (
     <div className="mt-4 grid grid-cols-3 gap-1 rounded-xl border border-dim/20 bg-cedar/60 p-1">
@@ -124,25 +199,48 @@ export function CollectionPage({
     </div>
   );
 
+  const sheets = (
+    <>
+      <CigarBrowseSheets
+        line={line}
+        detail={detail}
+        onCloseLine={closeLine}
+        onOpenVitola={openVitola}
+        onCloseDetail={closeDetail}
+        onOpenLine={openLine}
+        onPair={
+          onPair
+            ? (target) => {
+                closeSheets();
+                onPair(target);
+              }
+            : undefined
+        }
+        onLogEvening={(cigar) => {
+          closeSheets();
+          setLogCigar(cigar);
+        }}
+      />
+      {logCigar && (
+        <EveningSessionSheet
+          cigars={[logCigar]}
+          drinks={[]}
+          initialCigarId={cigarItemId(logCigar)}
+          onClose={() => setLogCigar(null)}
+        />
+      )}
+    </>
+  );
+
   if (view === "humidor") {
     return (
       <div className="pb-4">
         {tabBar}
         <HumidorPage
-          onOpenCigar={(cigar) => setDetail({ kind: "cigar", item: cigar })}
+          onOpenCigar={(cigar) => openCigar(cigar)}
+          onOpenDrink={(drink) => openDrink(drink)}
         />
-        <DetailSheet
-          target={detail}
-          onClose={() => setDetail(null)}
-          onPair={
-            onPair
-              ? (target) => {
-                  setDetail(null);
-                  onPair(target);
-                }
-              : undefined
-          }
-        />
+        {sheets}
       </div>
     );
   }
@@ -159,14 +257,34 @@ export function CollectionPage({
   return (
     <div className="pb-4">
       {tabBar}
-      <div className="mt-4 flex items-center justify-between">
+      <div className="mt-4 flex items-center justify-between gap-2">
         <span className="text-sm text-dim">
-          <span className="font-display text-lg text-zlato-2">{ownedIds.length}</span>{" "}
+          <span className="font-display text-lg text-zlato-2">{panelCount}</span>{" "}
           {t("coll.stats")}
         </span>
-        <div className="flex gap-2">
-          <Chip onClick={doExport}>⭳ {t("coll.export")}</Chip>
-          <Chip onClick={() => fileRef.current?.click()}>⭱ {t("coll.import")}</Chip>
+        <div className="flex flex-wrap items-center justify-end gap-2">
+          <OcrScan
+            candidates={ocrCandidates}
+            enableReceipt
+            onConfirmCigar={(id, action) => {
+              if (action === "dismiss") return;
+              const cigar = cigarForItemId(id) ?? CIGARS.find((c) => c.id === id);
+              if (!cigar) return;
+              if (action === "pair" && onPair) {
+                closeSheets();
+                onPair({ kind: "cigar", item: cigar });
+                return;
+              }
+              openCigar(cigar);
+            }}
+            onMatch={(id) => {
+              const cigar = cigarForItemId(id) ?? CIGARS.find((c) => c.id === id);
+              if (cigar) openCigar(cigar);
+            }}
+            onText={setOcrQuery}
+          />
+          <Chip onClick={doExport}>{t("coll.export")}</Chip>
+          <Chip onClick={() => fileRef.current?.click()}>{t("coll.import")}</Chip>
           <input
             ref={fileRef}
             type="file"
@@ -176,60 +294,52 @@ export function CollectionPage({
           />
         </div>
       </div>
+      {ocrQuery ? (
+        <div className="mt-2">
+          <SearchInput value={ocrQuery} onChange={setOcrQuery} placeholder={t("pair.search")} />
+        </div>
+      ) : null}
       {importMsg && <p className="mt-2 text-xs text-zlato-2">{importMsg}</p>}
 
-      {ownedIds.length === 0 && historyIds.length === 0 && (
+      {panelCount === 0 && (
         <p className="mt-6 rounded-xl border border-dim/20 bg-cedar p-4 text-sm leading-relaxed text-dim">
           {t("coll.empty")}
         </p>
       )}
 
-      {myCigars.length > 0 && (
+      {ownedNoStockCigars.length > 0 && (
         <>
-          <SectionTitle>{t("cat.cigars")}</SectionTitle>
+          <SectionTitle>{t("coll.ownedNoStock")}</SectionTitle>
           <div className="space-y-2">
-            {myCigars.map(({ id, cigar }) => (
-              <CigarRow
-                key={id}
-                cigar={cigar}
-                onClick={() => setDetail({ kind: "cigar", item: cigar })}
-              />
+            {ownedNoStockCigars.map(({ id, cigar }) => (
+              <CollectionEntry key={id} itemId={id}>
+                {/* kartica baš tog ključa: što je ovdje označeno mora se i
+                    odavde moći odznačiti */}
+                <CigarRow cigar={cigar} onClick={() => openCigarCard(cigar)} />
+              </CollectionEntry>
             ))}
           </div>
         </>
       )}
 
-      {myDrinks.length > 0 && (
-        <>
-          <SectionTitle>{t("coll.drinks")}</SectionTitle>
-          <div className="space-y-2">
-            {myDrinks.map((d) => (
-              <DrinkRow key={d.id} drink={d} onClick={() => setDetail({ kind: "drink", item: d })} />
-            ))}
-          </div>
-        </>
-      )}
-
-      {/* probano/biljeske bez posjedovanja — ne racuna se u kolekciju */}
       {(historyCigars.length > 0 || historyDrinks.length > 0) && (
         <>
           <SectionTitle>{t("coll.historySection")}</SectionTitle>
           <div className="space-y-2 opacity-80">
             {historyCigars.map(({ id, cigar }) => (
-              <CigarRow
-                key={id}
-                cigar={cigar}
-                onClick={() => setDetail({ kind: "cigar", item: cigar })}
-              />
+              <CollectionEntry key={id} itemId={id}>
+                <CigarRow cigar={cigar} onClick={() => openCigarCard(cigar)} />
+              </CollectionEntry>
             ))}
             {historyDrinks.map((d) => (
-              <DrinkRow key={d.id} drink={d} onClick={() => setDetail({ kind: "drink", item: d })} />
+              <CollectionEntry key={d.id} itemId={d.id}>
+                <DrinkRow drink={d} onClick={() => openDrink(d)} />
+              </CollectionEntry>
             ))}
           </div>
         </>
       )}
 
-      {/* dnevnik */}
       <SectionTitle>{t("coll.journal")}</SectionTitle>
       <button
         onClick={() => setShowAddPairing(true)}
@@ -254,7 +364,11 @@ export function CollectionPage({
                       }`
                     : j.cigarId}
                   <span className="text-zlato"> × </span>
-                  {drink ? lx(drinkNameLoc(drink)) : j.drinkId}
+                  {drink
+                    ? lx(drinkNameLoc(drink))
+                    : j.drinkId == null
+                      ? t("session.soloLabel")
+                      : j.drinkId}
                 </span>
                 {j.rating != null && (
                   <span className="shrink-0 text-sm text-zlato-2">{j.rating}/10</span>
@@ -275,146 +389,23 @@ export function CollectionPage({
         })}
       </div>
 
-      {showAddPairing && <AddPairingSheet onClose={() => setShowAddPairing(false)} />}
-      <DetailSheet
-        target={detail}
-        onClose={() => setDetail(null)}
-        onPair={
-          onPair
-            ? (target) => {
-                setDetail(null);
-                onPair(target);
-              }
-            : undefined
-        }
-      />
-    </div>
-  );
-}
-
-function AddPairingSheet({ onClose }: { onClose: () => void }) {
-  const { t, lx } = useI18n();
-  const market = useMarket();
-  const [cigarId, setCigarId] = useState(CIGARS[0]?.id ?? "");
-  const [vitolaName, setVitolaName] = useState("");
-  const [drinkId, setDrinkId] = useState(ALL_DRINKS[0]?.id ?? "");
-  const [rating, setRating] = useState<string>("");
-  const [note, setNote] = useState("");
-
-  // linija s vise formata: zapis ide na konkretnu vitolu, ne na cijelu liniju
-  const lineVitolas = useMemo(() => {
-    const line = cigarById(cigarId);
-    return line ? uniqueVitolas(line) : [];
-  }, [cigarId]);
-
-  const save = () => {
-    const line = cigarById(cigarId);
-    const vitola = lineVitolas.find((v) => v.name === vitolaName);
-    addJournalEntry({
-      cigarId:
-        line && vitola && lineVitolas.length > 1
-          ? cigarItemId(applyVitola(line, vitola))
-          : cigarId,
-      drinkId,
-      rating: rating ? Number(rating) : null,
-      note,
-    });
-    onClose();
-  };
-
-  const selectCls =
-    "w-full rounded-lg border border-dim/25 bg-cedar px-3 py-2.5 text-sm text-papir focus:border-zlato/60 focus:outline-none";
-
-  return (
-    <div className="fixed inset-0 z-50 flex items-end justify-center bg-black/60 sm:items-center" onClick={onClose}>
-      <div
-        className="w-full max-w-lg rounded-t-2xl border border-zlato/25 bg-humidor p-5 pb-8 sm:rounded-2xl"
-        onClick={(e) => e.stopPropagation()}
-      >
-        <div className="mb-3">
-          <BackButton onClick={onClose}>{t("common.back")}</BackButton>
-        </div>
-        <h3 className="font-display text-lg text-papir">{t("coll.addPairing")}</h3>
-        <div className="mt-4 space-y-3">
-          <label className="block text-xs uppercase tracking-widest text-dim">
-            {t("common.cigar")}
-            <select
-              value={cigarId}
-              onChange={(e) => {
-                setCigarId(e.target.value);
-                setVitolaName("");
-              }}
-              className={`mt-1 ${selectCls}`}
-            >
-              {CIGARS.map((c) => (
-                <option key={c.id} value={c.id}>
-                  {brandDisplayName(c.brand, market)} {c.line}
-                </option>
-              ))}
-            </select>
-          </label>
-          {lineVitolas.length > 1 && (
-            <label className="block text-xs uppercase tracking-widest text-dim">
-              {t("common.vitola")}
-              <select
-                value={vitolaName}
-                onChange={(e) => setVitolaName(e.target.value)}
-                className={`mt-1 ${selectCls}`}
-              >
-                <option value="">—</option>
-                {lineVitolas.map((v) => (
-                  <option key={v.name} value={v.name}>
-                    {v.name}
-                    {v.format && v.format !== "—" ? ` · ${v.format}` : ""}
-                  </option>
-                ))}
-              </select>
-            </label>
-          )}
-          <label className="block text-xs uppercase tracking-widest text-dim">
-            {t("common.drink")}
-            <select value={drinkId} onChange={(e) => setDrinkId(e.target.value)} className={`mt-1 ${selectCls}`}>
-              {ALL_DRINKS.filter((d) => d.pairable).map((d) => (
-                <option key={d.id} value={d.id}>
-                  {lx(drinkNameLoc(d))}
-                </option>
-              ))}
-            </select>
-          </label>
-          <label className="block text-xs uppercase tracking-widest text-dim">
-            {t("coll.myRating")}
-            <select value={rating} onChange={(e) => setRating(e.target.value)} className={`mt-1 ${selectCls}`}>
-              <option value="">—</option>
-              {Array.from({ length: 10 }, (_, i) => 10 - i).map((v) => (
-                <option key={v} value={v}>
-                  {v}
-                </option>
-              ))}
-            </select>
-          </label>
-          <textarea
-            value={note}
-            onChange={(e) => setNote(e.target.value)}
-            placeholder={t("coll.notePlaceholder")}
-            rows={2}
-            className={selectCls}
-          />
-        </div>
-        <div className="mt-4 grid grid-cols-2 gap-2">
-          <button
-            onClick={onClose}
-            className="rounded-lg border border-dim/30 py-2.5 font-display text-xs uppercase tracking-widest text-dim"
-          >
-            {t("common.close")}
-          </button>
-          <button
-            onClick={save}
-            className="rounded-lg border border-zlato bg-zlato/15 py-2.5 font-display text-xs uppercase tracking-widest text-zlato-2"
-          >
-            {t("coll.save")}
-          </button>
-        </div>
-      </div>
+      {showAddPairing && (
+        <EveningSessionSheet
+          cigars={
+            ownedCigarsForLog.length > 0
+              ? ownedCigarsForLog.map(({ cigar }) => cigar)
+              : CIGARS
+          }
+          drinks={[]}
+          initialCigarId={
+            ownedCigarsForLog[0]
+              ? cigarItemId(ownedCigarsForLog[0].cigar)
+              : CIGARS[0]?.id
+          }
+          onClose={() => setShowAddPairing(false)}
+        />
+      )}
+      {sheets}
     </div>
   );
 }

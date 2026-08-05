@@ -150,4 +150,31 @@ Family Story: preferirati obiteljske / pouzdane izvore — već djelomično pokr
 
 ---
 
-*Zadnji sync s NotebookLM grillom: 2026-07-19 (`adfe8fc8` salon). Book dumpovi: `cursor/bonton-book-research-9b19` + lokalni `notebooklm-grill/adfe8fc8-*`.*
+*Zadnji sync s NotebookLM grillom: 2026-07-30 (triple: `7b267552` Cigars daily · `6ccc327c` Omaha value · `30d6a797` Black Gold refresh). Prije: 2026-07-19 (`adfe8fc8` salon).*
+
+---
+
+## 10. Triple grill 2026-07-30 — app feed
+
+**Dumpovi:** `docs/bonton/research/notebooklm-grill/{7b267552,6ccc327c,30d6a797}-*`
+
+### Ugrađeno u app (ovaj prolaz)
+
+| Sloj | Što |
+|------|-----|
+| Club 101 | `d-tasting-order` + `c-tool-hygiene` |
+| Leksikon | `unutarnja-ljestvica`, `limited-edition`, `cask-strength-gost` |
+| `bonton.json` / mala knjiga | Unutarnja ljestvica; otvori i dijeli; LE priča; 5–6 stavki; high-proof/voda |
+| Quiz (`club.json`) | 5 pitanja: pepeo kraj, rezač, LE, viski u boci, 5–6 stavki |
+| Katalog notes | Liga Privada No. 9 vs T52 (tehnički kontrast) |
+
+### Backlog (još nije / kasnije)
+
+| Stavka | Napomena |
+|--------|----------|
+| Soft UI CT↔kava / Maduro↔čokolada | već djelomično u Club pairing; ne novi score |
+| Gentleman EN/HR draft | **freeze** — treba eksplicitni OK za post-freeze delta |
+
+### SKIP (ne u engine)
+
+Buffett/ROI metafore; brand ranking; US BYOC tip fee; “cigar always protagonist” kao hard rule.

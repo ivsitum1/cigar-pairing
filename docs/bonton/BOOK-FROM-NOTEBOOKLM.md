@@ -120,3 +120,25 @@ Kanonski popis izvora živi na jednom mjestu i dijeli ga knjiga i Club: `app/src
 ---
 
 *Sync: 2026-07-18. Povezano s app backlogom na masteru.*
+
+---
+
+## 8. Triple grill 2026-07-30
+
+**Bilježnice:** Cigars daily (`7b267552`) · Omaha value (`6ccc327c`) · Black Gold refresh (`30d6a797`)  
+**Dumpovi:** `docs/bonton/research/notebooklm-grill/`  
+**Gentleman EN/HR draft:** **freeze** — ne dirati tijelo; feed u `grill-inbox` + `mala-knjiga` / app.
+
+### Knjižne teme (precept / vinjeta)
+
+| Tema | Gdje |
+|------|------|
+| Unutarnja ljestvica / anti-flex | mala knjiga I; inbox vinjeta Instagram |
+| Otvori i dijeli (ne trofejna vitrina) | mala knjiga III |
+| LE = priča, ne cijena | mala knjiga VI |
+| Degustacija: 5–6 stavki, miris izdaleka, voda | mala knjiga VI; Club `d-tasting-order` |
+| Pepeo / tempo (Cigars daily) | potvrda postojećeg V–VI |
+
+### Ne u knjigu
+
+ROI / aukcije; brand ranking; US tip/BYOC fee; destilacijska kemija; FOMO shopping liste.

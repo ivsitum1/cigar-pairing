@@ -1,0 +1,126 @@
+{
+  "_comment": "Verified sugar measurements only. Prefer Systembolaget/Alko lab over hydrometer. Do not copy a sibling expression's number. gLMax null = open upper bound (e.g. >66).",
+  "entries": {
+    "rum-botran-18-solera": {
+      "gL": 6,
+      "method": "lab",
+      "source": "Systembolaget 6 g/L (lip 2022); Rum Revelations sugar list",
+      "date": "2022-06",
+      "note": "Earlier SB reading 4 g/L (tra 2021); latest used."
+    },
+    "rum-barcelo-imperial-onyx": {
+      "gL": 9,
+      "method": "lab",
+      "source": "Systembolaget 9 g/L (tra 2021); Rum Revelations sugar list",
+      "date": "2021-04"
+    },
+    "rum-barcelo-gran-anejo": {
+      "gL": 6,
+      "method": "lab",
+      "source": "Systembolaget 6 g/L (svi 2025); Rum Revelations sugar list",
+      "date": "2025-05",
+      "note": "Earlier SB 4–5 g/L; latest used."
+    },
+    "rum-zacapa-centenario-23": {
+      "gL": 15,
+      "method": "lab",
+      "source": "Systembolaget 1,5 g/100 ml (=15 g/L) — Ron Zacapa Gran Reserva nr 50001",
+      "date": "2025-observed",
+      "note": "Older FRP hydrometer ~20 g/L (2014) superseded by current SB lab."
+    },
+    "rum-zacapa-xo": {
+      "gL": 22,
+      "method": "hydrometer",
+      "source": "Fat Rum Pirate hidrometar ~22 g/L (sij 2016) — Ron Zacapa XO",
+      "date": "2016-01",
+      "note": "SB order product page had no published sockerhalt at fetch time."
+    },
+    "rum-planteray-3-stars-bijeli": {
+      "gL": 9,
+      "method": "lab",
+      "source": "Systembolaget 0,9 g/100 ml (=9 g/L) — Planteray 3 Stars White",
+      "date": "2025-observed"
+    },
+    "rum-companero-elixir-orange-jamajka": {
+      "gL": 170,
+      "method": "lab",
+      "source": "Systembolaget 170 g/L (sij 2023); Rum Revelations sugar list",
+      "date": "2023-01",
+      "keepStatus": "flavored"
+    },
+    "rum-mount-gay-eclipse": {
+      "gL": 5,
+      "gLMin": 0,
+      "gLMax": 5,
+      "method": "hydrometer",
+      "source": "Fat Rum Pirate hidrometar 0–5 g/L (svi 2018) — Mount Gay Eclipse",
+      "date": "2018-05"
+    },
+    "rum-mount-gay-black-barrel": {
+      "gL": 5,
+      "gLMin": 0,
+      "gLMax": 5,
+      "method": "hydrometer",
+      "source": "Fat Rum Pirate hidrometar 0–5 g/L (svi 2015) — Mount Gay Black Barrel",
+      "date": "2015-05"
+    },
+    "rum-mount-gay-xo": {
+      "gL": 5,
+      "gLMin": 0,
+      "gLMax": 5,
+      "method": "hydrometer",
+      "source": "Fat Rum Pirate hidrometar 0–5 g/L (sij 2015) — Mount Gay Extra Old / XO",
+      "date": "2015-01"
+    },
+    "rum-ron-abuelo-anejo": {
+      "gL": 15,
+      "method": "hydrometer",
+      "source": "Fat Rum Pirate hidrometar ~15 g/L (tra 2017) — Ron Abuelo Añejo",
+      "date": "2017-04",
+      "note": "Not Abuelo XV / Centuria."
+    },
+    "rum-botran-12": {
+      "gL": 5,
+      "gLMin": 0,
+      "gLMax": 5,
+      "method": "hydrometer",
+      "source": "Fat Rum Pirate hidrometar 0–5 g/L (tra 2017) — Botran Añejo 12",
+      "date": "2017-04"
+    },
+    "rum-chairmans-forgotten-casks": {
+      "gL": 5,
+      "gLMin": 0,
+      "gLMax": 5,
+      "method": "hydrometer",
+      "source": "Fat Rum Pirate hidrometar 0–5 g/L (ožu 2014) — Chairman's Reserve The Forgotten Casks",
+      "date": "2014-03"
+    },
+    "rum-chairmans-spiced": {
+      "gL": 41,
+      "method": "hydrometer",
+      "source": "Fat Rum Pirate hidrometar ~41 g/L (stu 2014) — Chairman's Reserve Spiced",
+      "date": "2014-11",
+      "keepStatus": "flavored"
+    },
+    "rum-ah-riise-npu-very-rare": {
+      "gL": 82,
+      "method": "hydrometer",
+      "source": "Johnny Drejer (drecon.dk) hidrometar ~82 g/L — A.H. Riise Non Plus Ultra Very Rare",
+      "date": "pre-2020"
+    },
+    "rum-ah-riise-xo-port-cask": {
+      "gL": 48,
+      "method": "hydrometer",
+      "source": "Johnny Drejer (drecon.dk) hidrometar ~48 g/L — A.H. Riise XO Port Cask Finish",
+      "date": "pre-2020"
+    },
+    "rum-ah-riise-royal-danish-navy": {
+      "gL": 66,
+      "gLMin": 66,
+      "gLMax": null,
+      "method": "hydrometer",
+      "source": "Johnny Drejer (drecon.dk) hidrometar >66 g/L (40% label) — A.H. Riise Royal Danish Navy",
+      "date": "pre-2020"
+    }
+  }
+}

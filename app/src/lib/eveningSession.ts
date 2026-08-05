@@ -1,10 +1,11 @@
 // Zapis večeri u dnevnik + oznaka "probao" na obje stavke + skidanje iz humidora.
 import { addJournalEntry, getItemState, updateItem } from "../store/collection";
-import { consumeFromStock } from "../store/humidor";
+import { consumeFromStock, totalStock } from "../store/humidor";
 
 export interface EveningSessionInput {
   cigarId: string;
-  drinkId: string;
+  /** null / undefined = solo cigara */
+  drinkId?: string | null;
   rating: number | null;
   note: string;
   markTried?: boolean;
@@ -12,23 +13,44 @@ export interface EveningSessionInput {
   consumeStock?: boolean;
 }
 
+export interface EveningSessionResult {
+  /** true ako je stvarno skinuta jedna iz humidora */
+  consumed: boolean;
+  /** Ključ zalihe koji je skinut — zna se razlikovati od zapisa po vitoli. */
+  consumedItemId: string | null;
+  stockAfter: number;
+}
+
 /** Spremi spoj u dnevnik; po zadanome označi cigaru i piće kao probane. */
-export function logEveningSession(input: EveningSessionInput): void {
+export function logEveningSession(input: EveningSessionInput): EveningSessionResult {
   const note = input.note.trim();
+  const drinkId = input.drinkId ?? null;
   addJournalEntry({
     cigarId: input.cigarId,
-    drinkId: input.drinkId,
+    drinkId,
     rating: input.rating,
     note,
   });
 
+  let consumedItemId: string | null = null;
   // popušena cigara odlazi iz zalihe — humidor prati stvarno stanje
-  if (input.consumeStock !== false) consumeFromStock(input.cigarId);
-
-  if (input.markTried === false) return;
-
-  for (const id of [input.cigarId, input.drinkId]) {
-    const cur = getItemState(id);
-    if (!cur.tried) updateItem(id, { tried: true });
+  if (input.consumeStock !== false) {
+    consumedItemId = consumeFromStock(input.cigarId)?.itemId ?? null;
   }
+
+  if (input.markTried !== false) {
+    const ids = drinkId ? [input.cigarId, drinkId] : [input.cigarId];
+    for (const id of ids) {
+      const cur = getItemState(id);
+      if (!cur.tried) updateItem(id, { tried: true });
+    }
+  }
+
+  return {
+    consumed: consumedItemId != null,
+    consumedItemId,
+    // zaliha se broji na ključu koji je stvarno skinut, inače bi zapis po
+    // vitoli gledao praznu policu dok linija u humidoru još stoji
+    stockAfter: totalStock(consumedItemId ?? input.cigarId),
+  };
 }

@@ -1,6 +1,119 @@
 {
  "_comment": "Neutralne izmjene tona i neovisne ocjene — primjenjuje apply-neutral-overrides.py. Nacela: deklaracija umjesto osude; ocjena unutar vlastitog stila (agregat javnih ocjena/recenzija); sve je pairable — engine posteno boduje spoj. Izvori mjerenja: Systembolaget/Alko lab liste, javni hidrometrijski testovi (rumrevelations.com, thefatrumpirate.com).",
  "rums": {
+  "rum-el-dorado-12-demerara": {
+   "qualityScore": 8.0,
+   "additiveStatus": "clean",
+   "additiveDetail": {
+    "hr": "Suvremene boce: šećer tipično <3–6 g/L (lab/hidrometar); E150a moguć za boju",
+    "en": "Recent bottlings: sugar typically <3–6 g/L (lab/hydrometer); E150a possible for colour"
+   },
+   "additiveSource": "Systembolaget / Rum Revelations (<3 g/L); Fat Rum Pirate / Single Cask (~6 g/L hidrometar, novije boce)",
+   "sweetness": 2,
+   "notes": {
+    "hr": "Demerara 12: moderna boca gotovo bez doziranja šećera — melasa i tamno voće ostaju iz bačve. Čistiji i iskreniji profil od starijih slađenih serija; pouzdana baza uz srednje-jak dim.",
+    "en": "Demerara 12: modern bottles nearly undosed — molasses and dark fruit stay from the cask. Cleaner and more honest than older sweetened runs; a solid base with medium-full smoke."
+   }
+  },
+  "rum-el-dorado-15-demerara": {
+   "qualityScore": 8.0,
+   "additiveStatus": "clean",
+   "additiveDetail": {
+    "hr": "Suvremene boce: šećer ~6 g/L (Systembolaget 0,6 g/100 ml); starije serije bile su znatno slađe",
+    "en": "Recent bottlings: sugar ~6 g/L (Systembolaget 0.6 g/100 ml); older runs were much sweeter"
+   },
+   "additiveSource": "Systembolaget / Vinguiden (~6 g/L); starije hidrometrije 20–48 g/L zastarjele",
+   "sweetness": 2,
+   "notes": {
+    "hr": "Demerara 15: bogatiji hrast i začin od 12, uz slično nisku razinu šećera u novijim bocama. Sjajan uz maduro ili Cameroon.",
+    "en": "Demerara 15: richer oak and spice than the 12, with similarly low sugar in recent bottles. Excellent with maduro or Cameroon."
+   }
+  },
+  "rum-el-dorado-21": {
+   "qualityScore": 8.5,
+   "additiveStatus": "light",
+   "additiveDetail": {
+    "hr": "I dalje blaga obscuracija/karamel (~12–16 g/L ekv. u nekim mjerenjima); sporije smanjenje od 12/15",
+    "en": "Still mild obscuration/caramel (~12–16 g/L equiv. in some tests); slower reduction than 12/15"
+   },
+   "additiveSource": "Rhum Attitude obscuracija (nova vs. stara 21); sporiji efekt reformulacije zbog starosti blendova",
+   "sweetness": 3,
+   "notes": {
+    "hr": "Demerara 21: najkompleksniji core — pečeno voće i hrast. I dalje malo slađi/zaobljeniji od 12/15 zbog preostalog karamela; biraj kad želiš težinu uz puni dim.",
+    "en": "Demerara 21: the richest core — baked fruit and oak. Still a touch rounder than 12/15 from residual caramel; choose it when you want weight with full smoke."
+   }
+  },
+  "rum-avua-cachaca": {
+   "qualityScore": 7.5,
+   "notes": {
+    "hr": "Avuá je zanatska single-estate cachaça s Fazende da Quinta (Rio de Janeiro). Prata je nedozrela i bistra; posebne su verzije dozrele u domaćim brazilskim drvima — Amburana daje cimet, klinčić i tonku, Bálsamo smolu i med. Ozbiljan destilat za sipanje, unutar stila — ne iznad zrelih siping rumova.",
+    "en": "Avuá is an artisanal single-estate cachaça from Fazenda da Quinta (Rio de Janeiro). The Prata is unaged and clear; standout bottlings rest in native Brazilian woods — Amburana for cinnamon, clove and tonka, Bálsamo for resin and honey. A serious sipping spirit within its style — not above mature sipping rums."
+   }
+  },
+  "rum-novo-fogo-cachaca": {
+   "qualityScore": 7.5
+  },
+  "rum-weber-haus-cachaca": {
+   "qualityScore": 7.5
+  },
+  "rum-goslings-black-seal": {
+   "additiveStatus": "light",
+   "additiveDetail": {
+    "hr": "Dodani šećer ~10 g/L (lab)",
+    "en": "Added sugar ~10 g/L (lab)"
+   },
+   "additiveSource": "Systembolaget 1,0 g/100 ml (=10 g/L)"
+  },
+  "rum-ron-millonario-15": {
+   "additiveDetail": {
+    "hr": "Doslađen solera stil (tipično visoka slatkoća; nije svježe lab mjerenje)",
+    "en": "Sweetened solera style (typically high sweetness; not a fresh lab figure)"
+   },
+   "additiveSource": "Stilska klasifikacija solera + hidrometrijske serije zajednice (bez svježeg Systembolaget broja)"
+  },
+  "rum-ron-millonario-xo": {
+   "additiveDetail": {
+    "hr": "Doslađen solera stil (tipično visoka slatkoća; nije svježe lab mjerenje)",
+    "en": "Sweetened solera style (typically high sweetness; not a fresh lab figure)"
+   },
+   "additiveSource": "Stilska klasifikacija solera + hidrometrijske serije zajednice (bez svježeg Systembolaget broja)"
+  },
+  "rum-kirk-sweeney-gran-reserva": {
+   "additiveDetail": {
+    "hr": "Umjereno slađen (dominikanski/solera profil; nije lab)",
+    "en": "Moderately sweetened (Dominican/solera profile; not lab)"
+   },
+   "additiveSource": "Stilska procjena — nije lab/hidrometar"
+  },
+  "rum-companero-elixir-orange-jamajka": {
+   "pairable": true,
+   "region": "Spiced / liker (Jamajka)",
+   "qualityScore": 5.5,
+   "additiveDetail": {
+    "hr": "Dodana aroma naranče i šećer",
+    "en": "Added orange flavouring and sugar"
+   },
+   "notes": {
+    "hr": "Jamajčanska baza s dodanom narančom i šećerom — liker-profil (deklarirano na kategoriji).",
+    "en": "Jamaican base with added orange and sugar — liqueur profile (category-declared)."
+   }
+  },
+  "rum-black-tot-rum": {
+   "additiveSource": "Stilska procjena (navy blend; tipično bez jakog doziranja) — nije lab mjerenje"
+  },
+  "rum-planteray-original-dark": {
+   "additiveDetail": {
+    "hr": "Blagi dodatak / boja (Maison Ferrand transparentniji od solera kuća; nije lab broj)",
+    "en": "Light dose / colour (Maison Ferrand more transparent than solera houses; no lab figure)"
+   },
+   "additiveSource": "Stilska procjena — nije lab/hidrometar"
+  },
+  "rum-planteray-3-stars-bijeli": {
+   "additiveSource": "Stilska procjena (bijeli blending rum; tipično čist) — nije lab mjerenje"
+  },
+  "rum-barcelo-imperial-onyx": {
+   "additiveSource": "Stilska procjena (Imperial linija tipično doslađena) — nije lab mjerenje"
+  },
   "rum-foursquare-ecs-detente-2005": {
    "notes": {
     "hr": "Referentna točka Barbadosa — destilerija deklarira bez aditiva. Suho voće i hrast; odličan i uz cigaru.",
@@ -28,7 +141,7 @@
   "rum-diplomatico-reserva-exclusiva": {
    "qualityScore": 7.5,
    "additiveDetail": {
-    "hr": "Dodani secer ~15-20 g/L",
+    "hr": "Dodani šećer ~15-20 g/L",
     "en": "Added sugar ~15–20 g/L"
    },
    "additiveSource": "Alko/Systembolaget lab (novije boce ispod 20 g/L radi EU pravila)",
@@ -64,7 +177,7 @@
   "rum-pyrat-xo-anguilla-blend": {
    "qualityScore": 4.5,
    "additiveDetail": {
-    "hr": "Aroma narance, doslazen",
+    "hr": "Aroma naranče, doslazen",
     "en": "Orange flavouring, sweetened"
    },
    "notes": {
@@ -75,7 +188,7 @@
   "rum-a-h-riise-xo-family-reserve": {
    "qualityScore": 5.5,
    "additiveDetail": {
-    "hr": "Dodani secer (hidrometrija)",
+    "hr": "Dodani šećer (hidrometrija)",
     "en": "Added sugar (hydrometer)"
    },
    "notes": {
@@ -104,7 +217,7 @@
     "hrast"
    ],
    "additiveDetail": {
-    "hr": "Dodani secer (Alko lab; novije boce ispod 20 g/L)",
+    "hr": "Dodani šećer (Alko lab; novije boce ispod 20 g/L)",
     "en": "Added sugar (Alko lab; recent bottlings under 20 g/L)"
    },
    "additiveSource": "Alko/Systembolaget lab",
@@ -124,7 +237,7 @@
     "slatko"
    ],
    "additiveDetail": {
-    "hr": "Dodani: vanilija, cimet, naranca, klincic, kardamom",
+    "hr": "Dodani: vanilija, cimet, naranča, klinčić, kardamom",
     "en": "Added: vanilla, cinnamon, orange, clove, cardamom"
    },
    "additiveSource": "Deklaracija proizvodjaca (recept naveden na etiketi)",
@@ -138,7 +251,7 @@
    "region": "Kuba (elixir / liker)",
    "qualityScore": 6.0,
    "additiveDetail": {
-    "hr": "Dodani secer i suho grozdje (elixir kategorija)",
+    "hr": "Dodani šećer i suho grozdje (elixir kategorija)",
     "en": "Added sugar and raisins (elixir category)"
    },
    "additiveSource": "Deklaracija proizvodjaca",
@@ -152,26 +265,13 @@
    "region": "Spiced / aromatizirano (Jamajka)",
    "qualityScore": 6.0,
    "additiveDetail": {
-    "hr": "Dodane arome: vanilija, kokos, zacini",
+    "hr": "Dodane arome: vanilija, kokos, začini",
     "en": "Added flavourings: vanilla, coconut, spices"
    },
    "additiveSource": "Deklaracija proizvodjaca (Ferrand grupa)",
    "notes": {
     "hr": "Jamajčanska baza s dodanom vanilijom, kokosom i začinima (deklarirano). Uredno napravljen spiced iz Ferrand grupe.",
     "en": "Jamaican base with added vanilla, coconut and spices (declared). A well-made spiced rum from the Ferrand group."
-   }
-  },
-  "rum-companero-elixir-orange-jamajka": {
-   "pairable": true,
-   "region": "Spiced / liker (Jamajka)",
-   "qualityScore": 5.5,
-   "additiveDetail": {
-    "hr": "Dodana aroma narance i secer",
-    "en": "Added orange flavouring and sugar"
-   },
-   "notes": {
-    "hr": "Jamajčanska baza s dodanom narančom i šećerom — liker-profil (deklarirano na kategoriji).",
-    "en": "Jamaican base with added orange and sugar — liqueur profile (category-declared)."
    }
   },
   "rum-maraboo-brown": {
@@ -192,7 +292,7 @@
    "region": "Za mijesanje (elixir)",
    "qualityScore": 3.5,
    "additiveDetail": {
-    "hr": "Dodani secer/arome (kategorija elixir)",
+    "hr": "Dodani šećer/arome (kategorija elixir)",
     "en": "Added sugar/flavourings (elixir category)"
    },
    "notes": {
@@ -205,7 +305,7 @@
    "region": "Spiced / aromatizirano (Sejseli)",
    "qualityScore": 5.0,
    "additiveDetail": {
-    "hr": "Dodane arome i secer (38%, spirit drink)",
+    "hr": "Dodane arome i šećer (38%, spirit drink)",
     "en": "Added flavourings and sugar (38%, spirit drink)"
    },
    "additiveSource": "EU etiketa: spirit drink",
@@ -219,7 +319,7 @@
    "region": "Spiced / aromatizirano (Trinidad baza)",
    "qualityScore": 5.5,
    "additiveDetail": {
-    "hr": "Dodane arome (klincic, cimet, vanilija) i karamel boja; secer ~26 g/L",
+    "hr": "Dodane arome (klinčić, cimet, vanilija) i karamel boja; šećer ~26 g/L",
     "en": "Added flavourings (clove, cinnamon, vanilla) and caramel colour; sugar ~26 g/L"
    },
    "additiveSource": "Hidrometrijska mjerenja ~26 g/L",
@@ -271,7 +371,7 @@
    "region": "Spiced / aromatizirano (Indonezija)",
    "qualityScore": 5.0,
    "additiveDetail": {
-    "hr": "Dodane arome (vanilija, zacini)",
+    "hr": "Dodane arome (vanilija, začini)",
     "en": "Added flavourings (vanilla, spices)"
    },
    "notes": {
@@ -297,11 +397,11 @@
    "region": "Spiced / aromatizirano",
    "qualityScore": 4.5,
    "additiveDetail": {
-    "hr": "Dodane arome i secer",
+    "hr": "Dodane arome i šećer",
     "en": "Added flavourings and sugar"
    },
    "notes": {
-    "hr": "Njemački brend spiced ruma; slatki profil vanilije i začina.",
+    "hr": "Njemački marka spiced ruma; slatki profil vanilije i začina.",
     "en": "German spiced rum brand; sweet vanilla-spice profile."
    }
   },
@@ -310,7 +410,7 @@
    "region": "Spiced / aromatizirano",
    "qualityScore": 4.0,
    "additiveDetail": {
-    "hr": "Dodane arome i secer",
+    "hr": "Dodane arome i šećer",
     "en": "Added flavourings and sugar"
    },
    "notes": {
@@ -323,7 +423,7 @@
    "region": "Spiced / spirit drink (Danska)",
    "qualityScore": 5.0,
    "additiveDetail": {
-    "hr": "Dodani secer i arome",
+    "hr": "Dodani šećer i arome",
     "en": "Added sugar and flavourings"
    },
    "notes": {
@@ -336,7 +436,7 @@
    "region": "Spiced / aromatizirano",
    "qualityScore": 4.0,
    "additiveDetail": {
-    "hr": "Dodane arome i secer",
+    "hr": "Dodane arome i šećer",
     "en": "Added flavourings and sugar"
    },
    "notes": {
@@ -349,11 +449,11 @@
    "region": "Spiced / aromatizirano",
    "qualityScore": 4.5,
    "additiveDetail": {
-    "hr": "Dodane arome (vanilija, zacini) i secer",
+    "hr": "Dodane arome (vanilija, začini) i šećer",
     "en": "Added flavourings (vanilla, spices) and sugar"
    },
    "notes": {
-    "hr": "Najprodavaniji spiced brend na svijetu; vanilija i začini, najčešće s colom.",
+    "hr": "Najprodavaniji spiced marka na svijetu; vanilija i začini, najčešće s colom.",
     "en": "The world's best-selling spiced brand; vanilla and spice, usually with cola."
    }
   },
@@ -375,7 +475,7 @@
    "region": "Spiced / aromatizirano",
    "qualityScore": 5.0,
    "additiveDetail": {
-    "hr": "Dodane arome (vanilija, cimet) i secer",
+    "hr": "Dodane arome (vanilija, cimet) i šećer",
     "en": "Added flavourings (vanilla, cinnamon) and sugar"
    },
    "notes": {
@@ -401,7 +501,7 @@
    "region": "Spiced / aromatizirano",
    "qualityScore": 4.0,
    "additiveDetail": {
-    "hr": "Dodane vocne arome i secer",
+    "hr": "Dodane voćne arome i šećer",
     "en": "Added fruit flavourings and sugar"
    },
    "notes": {
@@ -414,7 +514,7 @@
    "region": "Liker (krem, na bazi ruma)",
    "qualityScore": 4.5,
    "additiveDetail": {
-    "hr": "Krem liker 15% (mlijecna baza, secer, arome)",
+    "hr": "Krem liker 15% (mliječna baza, šećer, arome)",
     "en": "Cream liqueur, 15% (dairy base, sugar, flavourings)"
    },
    "notes": {
@@ -427,7 +527,7 @@
    "region": "Liker (kokos, na bazi ruma)",
    "qualityScore": 5.0,
    "additiveDetail": {
-    "hr": "Kokosov liker 21% (secer i aroma kokosa)",
+    "hr": "Kokosov liker 21% (šećer i aroma kokosa)",
     "en": "Coconut liqueur, 21% (sugar and coconut flavouring)"
    },
    "notes": {
@@ -640,7 +740,7 @@
     ],
     "additiveStatus": "light",
     "additiveDetail": {
-     "hr": "Dodani secer ~20 g/L (hidrometrija)",
+     "hr": "Dodani šećer ~20 g/L (hidrometrija)",
      "en": "Added sugar ~20 g/L (hydrometer)"
     },
     "additiveSource": "Javni hidrometrijski testovi",
@@ -821,7 +921,7 @@
     ],
     "additiveStatus": "sweetened",
     "additiveDetail": {
-     "hr": "Dodani secer (Alko lab; novije boce ispod 20 g/L)",
+     "hr": "Dodani šećer (Alko lab; novije boce ispod 20 g/L)",
      "en": "Added sugar (Alko lab; recent bottlings under 20 g/L)"
     },
     "additiveSource": "Alko/Systembolaget lab",
@@ -863,7 +963,7 @@
     ],
     "additiveStatus": "sweetened",
     "additiveDetail": {
-     "hr": "Dodani secer (Alko lab; novije boce ispod 20 g/L)",
+     "hr": "Dodani šećer (Alko lab; novije boce ispod 20 g/L)",
      "en": "Added sugar (Alko lab; recent bottlings under 20 g/L)"
     },
     "additiveSource": "Alko/Systembolaget lab",
@@ -1412,7 +1512,7 @@
     "slatko"
    ],
    "additiveDetail": {
-    "hr": "Liker: dodana aroma jabuke i secer (35%)",
+    "hr": "Liker: dodana aroma jabuke i šećer (35%)",
     "en": "Liqueur: added apple flavouring and sugar (35%)"
    },
    "additiveSource": "Etiketa: whiskey specialty / liker",
@@ -1434,7 +1534,7 @@
     "slatko"
    ],
    "additiveDetail": {
-    "hr": "Liker: dodani med/aroma i secer (35%)",
+    "hr": "Liker: dodani med/aroma i šećer (35%)",
     "en": "Liqueur: added honey/flavouring and sugar (35%)"
    },
    "additiveSource": "Etiketa: whiskey specialty / liker",
@@ -1455,7 +1555,7 @@
     "slatko"
    ],
    "additiveDetail": {
-    "hr": "Liker: dodani med/aroma i secer (35%)",
+    "hr": "Liker: dodani med/aroma i šećer (35%)",
     "en": "Liqueur: added honey/flavouring and sugar (35%)"
    },
    "additiveSource": "Etiketa: liker",

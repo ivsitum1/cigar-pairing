@@ -4,9 +4,16 @@ import { ALL_DRINKS, CIGARS, DRINKS, SHOPPING, brandDisplayName, formatPrice } f
 import { useI18n, STYLE_LABELS, type StringKey } from "../i18n";
 import { Chip, SectionTitle } from "../components/ui";
 import { CigarRow, DrinkRow } from "../components/cards";
-import { DetailSheet } from "../components/DetailSheet";
+import {
+  CigarBrowseSheets,
+  useCigarBrowseSheets,
+} from "../components/useCigarBrowseSheets";
+import { EveningSessionSheet } from "../components/EveningSessionSheet";
 import { getItemState, lineState, useCollection } from "../store/collection";
+import { totalStock, lineTotalStock } from "../store/humidor";
 import { useMarket } from "../store/market";
+import { isShoppingWishlistItem } from "../lib/shoppingWishlist";
+import { cigarItemId } from "../lib/cigarItemId";
 import {
   buffetFive,
   buffetTotal,
@@ -37,9 +44,18 @@ export function ShoppingPage({
   const { t, lx } = useI18n();
   const market = useMarket();
   const collection = useCollection(); // re-render na promjene kolekcije/liste zelja
-  const [detail, setDetail] = useState<
-    { kind: "cigar"; item: Cigar } | { kind: "drink"; item: Drink } | null
-  >(null);
+  const {
+    line,
+    detail,
+    openCigar,
+    openVitola,
+    openDrink,
+    openLine,
+    closeLine,
+    closeDetail,
+    closeSheets,
+  } = useCigarBrowseSheets();
+  const [logCigar, setLogCigar] = useState<Cigar | null>(null);
   const [buffetCat, setBuffetCat] = useState<DrinkCategory>("rum");
   const [showPlan, setShowPlan] = useState(false);
   const [copied, setCopied] = useState(false);
@@ -52,15 +68,15 @@ export function ShoppingPage({
   const wishMark = (id: string) => (getItemState(id).wishlist ? "☆ " : "");
   const otherShopsLabel = t("shop.otherShops");
 
-  // ☆ lista zelja — pice + cigare, s ukupnim troskom
+  // ☆ lista zelja — pice + cigare, s ukupnim troskom (+ restock kad je owned a zaliha 0)
   const wishlistDrinks = ALL_DRINKS.filter((d) => {
     const s = getItemState(d.id);
-    return s.wishlist && !s.owned;
+    return isShoppingWishlistItem(s, totalStock(d.id));
   });
   // stanje se cuva po vitoli — linija je na listi zelja ako je bilo koja njena
   const wishlistCigars = CIGARS.filter((c) => {
     const s = lineState(c.id);
-    return s.wishlist && !s.owned;
+    return isShoppingWishlistItem(s, lineTotalStock(c.id));
   });
 
   // pillovi uvijek iz pune liste (brojevi se ne mijenjaju dok filtriraš)
@@ -187,8 +203,6 @@ export function ShoppingPage({
     rows: SHOPPING.tiers.filter((x) => x.tier === tier),
   }));
 
-  const openDrink = (d: Drink) => setDetail({ kind: "drink", item: d });
-
   return (
     <div className="pb-4">
       {/* ☆ 1) lista zelja */}
@@ -210,7 +224,7 @@ export function ShoppingPage({
                     <CigarRow
                       key={c.id}
                       cigar={c}
-                      onClick={() => setDetail({ kind: "cigar", item: c })}
+                      onClick={() => openCigar(c)}
                     />
                   ))}
                 </div>
@@ -448,18 +462,34 @@ export function ShoppingPage({
 
       <p className="mt-4 text-xs leading-relaxed text-dim/80">⚖ {t("shop.legalNote")}</p>
 
-      <DetailSheet
-        target={detail}
-        onClose={() => setDetail(null)}
+      <CigarBrowseSheets
+        line={line}
+        detail={detail}
+        onCloseLine={closeLine}
+        onOpenVitola={openVitola}
+        onCloseDetail={closeDetail}
+        onOpenLine={openLine}
         onPair={
           onPair
             ? (target) => {
-                setDetail(null);
+                closeSheets();
                 onPair(target);
               }
             : undefined
         }
+        onLogEvening={(cigar) => {
+          closeSheets();
+          setLogCigar(cigar);
+        }}
       />
+      {logCigar && (
+        <EveningSessionSheet
+          cigars={[logCigar]}
+          drinks={[]}
+          initialCigarId={cigarItemId(logCigar)}
+          onClose={() => setLogCigar(null)}
+        />
+      )}
     </div>
   );
 }

@@ -1,10 +1,13 @@
 import { useMemo, useState } from "react";
-import type { Cigar, Drink, LocalizedText } from "../types";
+import type { LocalizedText } from "../types";
 import { ALL_DRINKS, CIGARS } from "../data";
 import { useI18n } from "../i18n";
 import { Chip, SectionTitle } from "../components/ui";
 import { CigarRow, DrinkRow } from "../components/cards";
-import { DetailSheet } from "../components/DetailSheet";
+import {
+  CigarBrowseSheets,
+  useCigarBrowseSheets,
+} from "../components/useCigarBrowseSheets";
 import { COUNTRIES, cigarCountries, drinkCountries, type CountryInfo } from "../lib/geo";
 import club from "../data/club.json";
 import clubSources from "../data/clubSources.json";
@@ -97,9 +100,16 @@ export function ClubPage() {
   const [view, setView] = useState<"world" | "carib" | "europe">("world");
   const [country, setCountry] = useState<CountryInfo | null>(null);
   const [showSources, setShowSources] = useState(false);
-  const [detail, setDetail] = useState<
-    { kind: "cigar"; item: Cigar } | { kind: "drink"; item: Drink } | null
-  >(null);
+  const {
+    line,
+    detail,
+    openCigar,
+    openVitola,
+    openDrink,
+    openLine,
+    closeLine,
+    closeDetail,
+  } = useCigarBrowseSheets();
 
   // zemlje koje stvarno imaju proizvode + broj
   const countryCounts = useMemo(() => {
@@ -407,10 +417,10 @@ export function ClubPage() {
           </SectionTitle>
           <div className="space-y-2">
             {countryCigars.map((c) => (
-              <CigarRow key={c.id} cigar={c} onClick={() => setDetail({ kind: "cigar", item: c })} />
+              <CigarRow key={c.id} cigar={c} onClick={() => openCigar(c)} />
             ))}
             {countryDrinks.map((d) => (
-              <DrinkRow key={d.id} drink={d} onClick={() => setDetail({ kind: "drink", item: d })} />
+              <DrinkRow key={d.id} drink={d} onClick={() => openDrink(d)} />
             ))}
           </div>
         </>
@@ -446,7 +456,14 @@ export function ClubPage() {
         )}
       </div>
 
-      <DetailSheet target={detail} onClose={() => setDetail(null)} />
+      <CigarBrowseSheets
+        line={line}
+        detail={detail}
+        onCloseLine={closeLine}
+        onOpenVitola={openVitola}
+        onCloseDetail={closeDetail}
+        onOpenLine={openLine}
+      />
     </div>
   );
 }

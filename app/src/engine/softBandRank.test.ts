@@ -5,6 +5,7 @@ import {
   dayKey,
   softBand,
   softBandWindow,
+  stableBestRotate,
   stableHash,
 } from "./softBandRank";
 
@@ -136,6 +137,33 @@ describe("softBandRank", () => {
     expect(window).toHaveLength(3);
   });
 
+  it("stableTop pins cycle 0 to the head of the pool", () => {
+    const ranked = [
+      r("a", "A", 90),
+      r("b", "B", 90),
+      r("c", "C", 90),
+      r("d", "D", 90),
+      r("e", "E", 90),
+      r("f", "F", 90),
+    ];
+    const w0 = softBandWindow(ranked, {
+      anchorId: "drink-stable",
+      dayKey: "2026-07-26",
+      cycle: 0,
+      stableTop: true,
+      keyOf: (i: Item) => i.brand,
+    });
+    expect(w0.window.map((x) => x.item.id)).toEqual(["a", "b", "c"]);
+    const w1 = softBandWindow(ranked, {
+      anchorId: "drink-stable",
+      dayKey: "2026-07-26",
+      cycle: 1,
+      stableTop: true,
+      keyOf: (i: Item) => i.brand,
+    });
+    expect(w1.window.map((x) => x.item.id)).toEqual(["d", "e", "f"]);
+  });
+
   it("dayKey uses UTC YYYY-MM-DD", () => {
     expect(dayKey(new Date("2026-07-26T23:30:00.000Z"))).toBe("2026-07-26");
   });
@@ -143,5 +171,99 @@ describe("softBandRank", () => {
   it("stableHash is deterministic", () => {
     expect(stableHash("abc")).toBe(stableHash("abc"));
     expect(stableHash("abc")).not.toBe(stableHash("abd"));
+  });
+});
+
+describe("stableBestRotate", () => {
+  const keyOf = (i: Item) => i.brand;
+
+  it("cycle 0 is always absolute #1", () => {
+    const ranked = [
+      r("best", "A", 92),
+      r("b", "B", 91),
+      r("c", "C", 90),
+      r("d", "D", 70),
+    ];
+    const a = stableBestRotate(ranked, 0, { keyOf });
+    const b = stableBestRotate(ranked, 0, { keyOf });
+    expect(a.pick?.item.id).toBe("best");
+    expect(b.pick?.item.id).toBe("best");
+    expect(a.total).toBe(3); // soft band 92–87 keeps A,B,C; D out
+  });
+
+  it("prvi krug uzima po jedno iz svakog kljuca, pa ide u dubinu", () => {
+    const ranked = [
+      r("a1", "Demerara", 90),
+      r("a2", "Demerara", 89), // isti kljuc — dolazi na red u drugom krugu
+      r("b1", "Cuba", 88),
+      r("c1", "Agricole", 87),
+      r("d1", "Spiced", 70), // izvan pojasa
+    ];
+    const at = (cycle: number) => stableBestRotate(ranked, cycle, { keyOf });
+    expect(at(0).pick?.item.id).toBe("a1");
+    expect(at(1).pick?.item.id).toBe("b1");
+    expect(at(2).pick?.item.id).toBe("c1");
+    expect(at(3).pick?.item.id).toBe("a2");
+    expect(at(4).pick?.item.id).toBe("a1"); // krug se zatvara
+    expect(at(0).pool.map((x) => x.item.id)).toEqual(["a1", "b1", "c1", "a2"]);
+  });
+
+  it("pojas rezu boce ispod margine kad ih ima dovoljno", () => {
+    const ranked = [
+      r("a1", "A", 90),
+      r("b1", "B", 88),
+      r("c1", "C", 87),
+      r("d1", "D", 60),
+    ];
+    expect(stableBestRotate(ranked, 0, { keyOf }).pool.map((x) => x.item.id)).toEqual([
+      "a1",
+      "b1",
+      "c1",
+    ]);
+  });
+
+  it("usamljen vrh se dopuni ispod margine — gumb uvijek ima ponudu", () => {
+    const ranked = [r("a1", "A", 90), r("b1", "B", 70), r("c1", "C", 65), r("d", "D", 60)];
+    const out = stableBestRotate(ranked, 0, { keyOf });
+    expect(out.pool.map((x) => x.item.id)).toEqual(["a1", "b1", "c1"]);
+    expect(stableBestRotate(ranked, 1, { keyOf }).pick?.item.id).toBe("b1");
+  });
+
+  it("tieSeed rotira medu bodovno izjednacenima na vrhu", () => {
+    // isti profil, isti bodovi — engine ih doista ne razlikuje
+    const ranked = [
+      r("xo1", "XO", 76),
+      r("xo2", "XO", 76),
+      r("xo3", "XO", 76),
+      r("vsop", "VSOP", 74),
+    ];
+    const picks = new Set(
+      ["cig-1|2026-08-05", "cig-2|2026-08-05", "cig-3|2026-08-05"].map(
+        (seed) => stableBestRotate(ranked, 0, { keyOf, tieSeed: seed }).pick?.item.id,
+      ),
+    );
+    expect(picks.size).toBeGreaterThan(1);
+    // isto sjeme → isti izbor (stabilno kroz re-render i kroz dan)
+    const twice = ["a", "a"].map(
+      () =>
+        stableBestRotate(ranked, 0, { keyOf, tieSeed: "cig-1|2026-08-05" }).pick?.item
+          .id,
+    );
+    expect(twice[0]).toBe(twice[1]);
+    // bez sjemena ostaje stari, potpuno stabilan #1
+    expect(stableBestRotate(ranked, 0, { keyOf }).pick?.item.id).toBe("xo1");
+  });
+
+  it("tieSeed ne dira vrh kad izjednacenih nema", () => {
+    const ranked = [r("a", "A", 90), r("b", "B", 88)];
+    expect(
+      stableBestRotate(ranked, 0, { keyOf, tieSeed: "bilo sto" }).pick?.item.id,
+    ).toBe("a");
+  });
+
+  it("empty ranked yields empty pick", () => {
+    const out = stableBestRotate([], 0, { keyOf });
+    expect(out.pick).toBeUndefined();
+    expect(out.total).toBe(0);
   });
 });

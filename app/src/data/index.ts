@@ -12,8 +12,15 @@ import cigarsJson from "./cigars.json";
 import shoppingJson from "./shopping.json";
 import brandsJson from "./brands.json";
 import cigarIdAliasesJson from "./cigarIdAliases.json";
+import drinkIdAliasesJson from "./drinkIdAliases.json";
+import drinkBrandsJson from "./drinkBrands.json";
 import { applyVitola, resolveDefaultVitola } from "../lib/cigarVitola";
-import { parseCigarItemId, vitolaFromItemId } from "../lib/cigarItemId";
+import {
+  cigarItemId,
+  parseCigarItemId,
+  vitolaFromItemId,
+  VITOLA_ID_SEP,
+} from "../lib/cigarItemId";
 
 export const DRINKS: Record<DrinkCategory, Drink[]> = {
   rum: rums as unknown as Drink[],
@@ -91,8 +98,73 @@ export interface ShoppingData {
 
 export const SHOPPING: ShoppingData = shoppingJson as ShoppingData;
 
-export const drinkById = (id: string): Drink | undefined =>
+const DRINK_ID_ALIASES: Record<string, string> =
+  (drinkIdAliasesJson as { aliases?: Record<string, string> }).aliases ?? {};
+
+const drinkByExactId = (id: string): Drink | undefined =>
   ALL_DRINKS.find((d) => d.id === id);
+
+/**
+ * Piće iza ID-a, uz praćenje `drinkIdAliases.json` do kanonskog zapisa.
+ * Kad se kombinirani unos razdvoji ili preimenuje, stari ID i dalje razriješi —
+ * inače korisnikova oznaka Imam/ocjena/bilješka i zapis u dnevniku ostanu
+ * sirotčad (nevidljivi u Kolekciji, goli ID u dnevniku).
+ */
+export const drinkById = (id: string | null | undefined): Drink | undefined => {
+  if (id == null || id === "") return undefined;
+  let cur = id;
+  const seen = new Set<string>();
+  for (;;) {
+    const hit = drinkByExactId(cur);
+    if (hit) return hit;
+    if (seen.has(cur)) return undefined; // ciklus u aliasima
+    seen.add(cur);
+    const next = DRINK_ID_ALIASES[cur];
+    if (!next) return undefined;
+    cur = next;
+  }
+};
+
+/**
+ * Marka pića. Pića nemaju `brand` polje — marka živi unutar `name`, pa je
+ * izvedena skriptom (`scripts/derive-drink-brands.py`) u `drinkBrands.json`.
+ * Kava je namjerno izostavljena: „Ristretto" i „Cold brew" nisu marke.
+ */
+const DRINK_BRANDS: Record<string, string> =
+  (drinkBrandsJson as { brands?: Record<string, string> }).brands ?? {};
+
+export const drinkBrand = (id: string): string | undefined => DRINK_BRANDS[id];
+
+/** Sve marke pića, abecedno — za filter i pregled po marki. */
+export const ALL_DRINK_BRANDS: string[] = [
+  ...new Set(Object.values(DRINK_BRANDS)),
+].sort((a, b) => a.localeCompare(b));
+
+// Indeks marka → boce. Pregled po marki iscrta stotine kartica odjednom, a
+// linearno pretraživanje po svakoj marki bilo bi 390 × 930 usporedbi po renderu.
+const DRINKS_BY_BRAND: Map<string, Drink[]> = (() => {
+  const m = new Map<string, Drink[]>();
+  for (const d of ALL_DRINKS) {
+    const brand = DRINK_BRANDS[d.id];
+    if (!brand) continue;
+    const list = m.get(brand);
+    if (list) list.push(d);
+    else m.set(brand, [d]);
+  }
+  for (const list of m.values()) {
+    list.sort(
+      (a, b) =>
+        (b.qualityScore ?? 0) - (a.qualityScore ?? 0) || a.name.localeCompare(b.name),
+    );
+  }
+  return m;
+})();
+
+/** Boce jedne marke, najbolje ocijenjene prvo pa abecedno. Kopija — pozivatelji sortiraju. */
+export function drinksByBrand(brand: string): Drink[] {
+  const list = DRINKS_BY_BRAND.get(brand);
+  return list ? [...list] : [];
+}
 
 export const cigarById = (id: string): Cigar | undefined =>
   CIGARS.find((c) => c.id === id);
@@ -131,6 +203,64 @@ export const brandSlug = (brand: string): string => slugifyLabel(brand);
 
 export const vitolaSlug = (v: Vitola | string): string =>
   slugifyLabel(typeof v === "string" ? v : v.name);
+
+/**
+ * Prati alias lanac do kanonskog string id-a (i kad zapis još nije u katalogu).
+ * Pića i nepoznati ključevi ostaju netaknuti.
+ */
+export function resolveCigarIdAlias(id: string): string {
+  let cur = id;
+  const seen = new Set<string>();
+  while (CIGAR_ID_ALIASES[cur] && !seen.has(cur)) {
+    seen.add(cur);
+    cur = CIGAR_ID_ALIASES[cur];
+  }
+  return cur;
+}
+
+/**
+ * Kanonski ključ stavke kolekcije/humidora: alias linije → live id,
+ * vitola-sufiks se zadržava (`alias@torpedo` → `canon@torpedo`).
+ */
+export function canonicalCigarItemId(itemId: string): string {
+  const { cigarId, vitolaSlug } = parseCigarItemId(itemId);
+  const canon = resolveCigarIdAlias(cigarId);
+  return vitolaSlug ? `${canon}${VITOLA_ID_SEP}${vitolaSlug}` : canon;
+}
+
+/**
+ * Ključ stanja kolekcije/humidora koji sučelje stvarno može pročitati i
+ * prepisati. Kartica cigare radi po `cigarItemId(cigarForItemId(key))`, pa
+ * svaki ključ koji ne preživi taj krug postaje sirotan zapis: vidi se na
+ * popisu Kolekcije, ali nijedan gumb ga ne dira (npr. `cig-x@torpedo` nakon
+ * što je Torpedo izbačen iz linije, ili `cig-x@robusto` kad je liniji ostala
+ * samo jedna vitola). Ovdje se takav ključ vraća na ono što kartica piše.
+ *
+ * Nepoznata cigara ostaje netaknuta — migracija ne briše ono što ne razumije.
+ */
+export function canonicalCigarStateKey(itemId: string): string {
+  const canon = canonicalCigarItemId(itemId);
+  const cigar = cigarForItemId(canon);
+  return cigar ? cigarItemId(cigar) : canon;
+}
+
+/**
+ * Kanonski ID pića: prati `drinkIdAliases.json` do živog zapisa.
+ * Nepoznat ID vraća se nepromijenjen — migracija ne smije brisati ono što
+ * ne razumije (možda je piće privremeno izvan kataloga).
+ */
+export function canonicalDrinkId(id: string): string {
+  let cur = id;
+  const seen = new Set<string>();
+  while (!drinkByExactId(cur)) {
+    if (seen.has(cur)) return id; // ciklus — ostavi kako je bilo
+    seen.add(cur);
+    const next = DRINK_ID_ALIASES[cur];
+    if (!next) return id;
+    cur = next;
+  }
+  return cur;
+}
 
 /** Prati cigarIdAliases.json do kanonskog zapisa (lanac aliasa). */
 export function resolveCigarId(id: string): Cigar | undefined {
@@ -262,6 +392,66 @@ export function brandCatalogStats(brand: string): BrandCatalogStats {
 
 export const BRAND_CATALOG: BrandCatalogStats[] = ALL_BRANDS.map(brandCatalogStats);
 
+/**
+ * Indeks marke pića — isti obrazac kao BRAND_CATALOG za cigare, samo izveden
+ * iz imena (pića nemaju `brand` polje). Kuće s više kategorija (Nikka: whisky
+ * + gin) namjerno su jedna marka, pa `categories` zna imati više članova.
+ */
+export interface DrinkBrandStats {
+  brand: string;
+  slug: string;
+  count: number;
+  categories: DrinkCategory[];
+  countries: string[];
+  minPriceEUR: number | null;
+  bestQuality: number | null;
+}
+
+export function drinkBrandStats(brand: string): DrinkBrandStats {
+  const bottles = drinksByBrand(brand);
+  const categories: DrinkCategory[] = [];
+  const countries: string[] = [];
+  let minPrice: number | null = null;
+  let best: number | null = null;
+  for (const d of bottles) {
+    if (!categories.includes(d.category)) categories.push(d.category);
+    const origin = d.country ?? d.region;
+    if (origin && !countries.includes(origin)) countries.push(origin);
+    if (d.priceEUR && (minPrice == null || d.priceEUR.min < minPrice)) {
+      minPrice = d.priceEUR.min;
+    }
+    if (d.qualityScore != null && (best == null || d.qualityScore > best)) {
+      best = d.qualityScore;
+    }
+  }
+  return {
+    brand,
+    slug: slugifyLabel(brand),
+    count: bottles.length,
+    categories,
+    countries,
+    minPriceEUR: minPrice,
+    bestQuality: best,
+  };
+}
+
+export const DRINK_BRAND_CATALOG: DrinkBrandStats[] =
+  ALL_DRINK_BRANDS.map(drinkBrandStats);
+
+// Slug je izveden iz imena, pa se dvije marke mogu preslikati u isti slug
+// ("Bowmore" i "Bowmoré" hipotetski). Prva pobjeđuje i to je stabilno jer je
+// ALL_DRINK_BRANDS abecedan; test čuva da kolizija ne prođe nezapaženo.
+const DRINK_BRAND_BY_SLUG = new Map<string, string>();
+for (const b of DRINK_BRAND_CATALOG) {
+  if (!DRINK_BRAND_BY_SLUG.has(b.slug)) DRINK_BRAND_BY_SLUG.set(b.slug, b.brand);
+}
+
+export const drinkBrandSlug = (brand: string): string => slugifyLabel(brand);
+
+export function drinkBrandFromSlug(slug: string): string | undefined {
+  return DRINK_BRAND_BY_SLUG.get(slug);
+}
+
 // Je li cigara dostupna u odabranoj regiji. "ALL" = bez filtera (sve).
 export const cigarInRegion = (c: Cigar, f: RegionFilter): boolean =>
   f === "ALL" || c.markets.includes(f);
@@ -303,13 +493,17 @@ export interface CigarShopLink {
 
 /**
  * Listing / brand pages — not a single product SKU.
- * Holt's /all-cigar-brands/*.html and Havana /product-brand/* are line/brand indexes.
+ * Holt's /all-cigar-brands/*.html, Havana /product-brand/*, Famous /brand(s|group)/,
+ * Neptune /cigar/ (line index; products live under /cigars/).
  */
 export function isLineListingUrl(url: string | null | undefined): boolean {
   if (!url) return false;
   return (
     /holts\.com\/cigars\/all-cigar-brands\/[^/?#]+\.html/i.test(url) ||
-    /\/(?:en\/)?product-brand\//i.test(url)
+    /\/(?:en\/)?product-brand\//i.test(url) ||
+    /famous-smoke\.com\/brands?\//i.test(url) ||
+    /famous-smoke\.com\/brandgroup\//i.test(url) ||
+    /neptunecigar\.com\/cigar\//i.test(url)
   );
 }
 

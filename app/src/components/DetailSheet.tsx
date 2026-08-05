@@ -1,17 +1,30 @@
 import { useEffect, useState } from "react";
+import { SheetShell } from "./SheetShell";
 import type { Cigar, Drink } from "../types";
 import { useI18n, STYLE_LABELS, ADDITIVE_LABELS, ADDITIVE_RULES } from "../i18n";
 import { flavorLabel } from "../engine/rules";
-import { brandInfo, brandDisplayName, cigarShopLinks, cigarShopLinkPrice, formatPrice } from "../data";
+import {
+  brandInfo,
+  brandDisplayName,
+  cigarShopLinks,
+  cigarShopLinkPrice,
+  drinkBrand,
+  formatPrice,
+} from "../data";
 import { REGIONS } from "../data/shops";
 import { drinkBuyLink } from "../lib/drinkBuyLink";
+import { drinkAvailabilityHR, drinkShopLinks } from "../lib/drinkShopLinks";
 import { drinkNameLoc } from "../lib/drinkName";
 import { vitolaBlurb } from "../lib/vitolaInfo";
 import { resolveSamplerCigar } from "../lib/samplerLink";
 import { cigarItemId } from "../lib/cigarItemId";
 import { cigarDescription } from "../lib/cigarNote";
+import { needsVitolaPick } from "../lib/cigarVitola";
+import { shouldOfferWishlist } from "../lib/lastCigar";
 import { Chip, Meter } from "./ui";
 import { BackButton } from "./BackButton";
+import { FavoriteStar } from "./FavoriteStar";
+import { LastCigarPrompt } from "./LastCigarPrompt";
 import {
   getItemState,
   updateItem,
@@ -31,14 +44,20 @@ export function DetailSheet({
   target,
   onClose,
   onOpenBrand,
+  onOpenDrinkBrand,
   onOpenLine,
   onPair,
+  onLogEvening,
 }: {
   target: Item | null;
   onClose: () => void;
   onOpenBrand?: (brand: string) => void;
+  /** Marka pića (izvedena iz imena) — vodi u usporedbu ostalih boca iste kuće. */
+  onOpenDrinkBrand?: (brand: string) => void;
   onOpenLine?: (cigar: Cigar) => void;
   onPair?: (target: Item) => void;
+  /** Samo za cigare — otvara večernji zapis s ovom cigarom. */
+  onLogEvening?: (cigar: Cigar) => void;
 }) {
   const { t } = useI18n();
   useCollection();
@@ -66,15 +85,17 @@ export function DetailSheet({
   const pushCigar = (c: Cigar) =>
     setStack((s) => [...s, { kind: "cigar", item: c }]);
 
+  const sheetLabel =
+    active?.kind === "cigar"
+      ? `${active.item.brand} ${active.item.line}`
+      : (active?.item.name ?? "");
+
   return (
-    <div
-      className="fixed inset-0 z-50 flex items-end justify-center bg-black/60 sm:items-center"
-      onClick={onClose}
+    <SheetShell
+      onClose={onClose}
+      label={sheetLabel}
+      panelClassName="max-h-[85vh] w-full max-w-lg overflow-y-auto rounded-t-2xl border border-zlato/25 bg-humidor p-5 pb-8 sm:rounded-2xl"
     >
-      <div
-        className="max-h-[85vh] w-full max-w-lg overflow-y-auto rounded-t-2xl border border-zlato/25 bg-humidor p-5 pb-8 sm:rounded-2xl"
-        onClick={(e) => e.stopPropagation()}
-      >
         <div className="mx-auto mb-4 h-1 w-10 rounded-full bg-dim/40 sm:hidden" />
 
         <div className="mb-3">
@@ -89,7 +110,7 @@ export function DetailSheet({
             onOpenCigar={pushCigar}
           />
         ) : (
-          <DrinkDetails drink={active.item} />
+          <DrinkDetails drink={active.item} onOpenBrand={onOpenDrinkBrand} />
         )}
 
         <div className="band-rule my-4" />
@@ -98,13 +119,23 @@ export function DetailSheet({
         <div className="flex flex-wrap items-center gap-2">
           <Chip
             active={state.owned}
-            onClick={() =>
+            onClick={() => {
+              // multi-vitola linija bez odabrane veličine — Imam ide po vitoli
+              if (
+                active.kind === "cigar" &&
+                !state.owned &&
+                needsVitolaPick(active.item) &&
+                !active.item.selectedVitola
+              ) {
+                onOpenLine?.(active.item);
+                return;
+              }
               // kupljeno -> makni s liste zelja; skidanje "Imam" ne dira listu
               updateItem(
                 id,
                 state.owned ? { owned: false } : { owned: true, wishlist: false },
-              )
-            }
+              );
+            }}
           >
             ✓ {t("coll.owned")}
           </Chip>
@@ -164,14 +195,23 @@ export function DetailSheet({
           </button>
         )}
 
+        {active.kind === "cigar" && onLogEvening && (
+          <button
+            type="button"
+            onClick={() => onLogEvening(active.item)}
+            className="mt-2 w-full rounded-lg border border-zlato/40 py-2.5 font-display text-sm uppercase tracking-widest text-zlato hover:bg-zlato/10"
+          >
+            {t("session.log")}
+          </button>
+        )}
+
         <button
           onClick={onClose}
           className="mt-4 w-full rounded-lg border border-zlato/40 py-2.5 font-display text-sm uppercase tracking-widest text-zlato hover:bg-zlato/10"
         >
           {t("common.close")}
         </button>
-      </div>
-    </div>
+    </SheetShell>
   );
 }
 
@@ -400,13 +440,37 @@ function CigarDetails({
   );
 }
 
-function DrinkDetails({ drink }: { drink: Drink }) {
+function DrinkDetails({
+  drink,
+  onOpenBrand,
+}: {
+  drink: Drink;
+  onOpenBrand?: (brand: string) => void;
+}) {
   const { t, lx, sv, rgn, lang } = useI18n();
   const style = STYLE_LABELS[drink.style];
-  const buy = drinkBuyLink(drink);
+  const availability = drinkAvailabilityHR(drink);
+  const brand = drinkBrand(drink.id);
   return (
     <>
-      <div className="font-display text-xl text-papir">{lx(drinkNameLoc(drink))}</div>
+      <div className="flex items-start justify-between gap-3">
+        <div className="min-w-0">
+          <div className="font-display text-xl text-papir">{lx(drinkNameLoc(drink))}</div>
+          {brand &&
+            (onOpenBrand ? (
+              <button
+                type="button"
+                onClick={() => onOpenBrand(brand)}
+                className="mt-0.5 text-xs uppercase tracking-widest text-zlato-2 hover:underline"
+              >
+                {brand} →
+              </button>
+            ) : (
+              <div className="mt-0.5 text-xs uppercase tracking-widest text-dim">{brand}</div>
+            ))}
+        </div>
+        {brand && <FavoriteStar kind="drink" brand={brand} />}
+      </div>
       <div className="mt-1 text-sm text-dim">
         {style ? lx(style) : drink.style} · {rgn(drink.region)}
         {drink.abv ? ` · ${drink.abv}%` : ""}
@@ -432,7 +496,18 @@ function DrinkDetails({ drink }: { drink: Drink }) {
           k={t("common.price")}
           v={`${drink.priceApprox ? t("common.approx") + " " : ""}${formatPrice(drink.priceEUR)}`}
         />
-        {drink.shopHR && <Row k={t("common.shop")} v={drink.shopHR} />}
+        {/* `shopHR` je urednička napomena, ne provjerena zaliha — bez potvrđene
+            stranice proizvoda prikazuje se kao orijentir, ne kao tvrdnja. */}
+        {availability && (
+          <Row
+            k={t("common.shop")}
+            v={
+              availability.verified
+                ? availability.text
+                : `${availability.text} · ${t("shops.indicative")}`
+            }
+          />
+        )}
         {drink.serving?.best && <Row k={t("common.serving")} v={sv(drink.serving.best)} />}
       </dl>
       <div className="mt-2 flex flex-wrap gap-1.5">
@@ -470,8 +545,57 @@ function DrinkDetails({ drink }: { drink: Drink }) {
           </ul>
         </div>
       )}
-      <BuyLink href={buy.href} label={buy.label} />
+      <DrinkBuyLinks drink={drink} />
     </>
+  );
+}
+
+// Kupnja boce — trgovine u HR (izravna stranica boce gdje postoji, inače
+// pretraga/katalog) plus svjetski cjenik. Bez trgovina za kategoriju (kava)
+// ostaje jedan link na pretragu.
+function DrinkBuyLinks({ drink }: { drink: Drink }) {
+  const { t } = useI18n();
+  const links = drinkShopLinks(drink);
+  if (links.length === 0) {
+    const buy = drinkBuyLink(drink);
+    return <BuyLink href={buy.href} label={buy.label} />;
+  }
+  const hr = links.filter((l) => l.scope === "HR");
+  const ref = links.filter((l) => l.scope === "REF");
+  const KIND_LABEL = {
+    product: t("shops.direct"),
+    search: t("shops.search"),
+    browse: t("shops.browse"),
+    ref: t("price.check"),
+  } as const;
+  const group = (title: string, items: typeof links) =>
+    items.length === 0 ? null : (
+      <div className="mt-2">
+        <div className="mb-1 text-[10px] uppercase tracking-widest text-dim/80">{title}</div>
+        <div className="grid grid-cols-2 gap-2">
+          {items.map((l) => (
+            <a
+              key={l.shopId}
+              href={l.url}
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-lg border border-zlato/40 bg-zlato/10 px-2 py-2 text-center text-xs text-zlato-2 hover:bg-zlato/20"
+            >
+              {l.shop} <span className="text-[10px] text-dim">· {KIND_LABEL[l.kind]}</span> ↗
+            </a>
+          ))}
+        </div>
+      </div>
+    );
+  return (
+    <div className="mt-3">
+      <div className="mb-1 text-micro uppercase tracking-widest text-dim">{t("common.buy")}</div>
+      {group(t("market.HR"), hr)}
+      {group(t("shops.priceRef"), ref)}
+      {!hr.some((l) => l.kind === "product") && (
+        <p className="mt-1.5 text-micro leading-snug text-dim/70">{t("shops.drinkNoDirect")}</p>
+      )}
+    </div>
   );
 }
 
@@ -562,6 +686,8 @@ function HumidorControls({ itemId }: { itemId: string }) {
   const { t } = useI18n();
   const { humidors, stock, activeId } = useHumidors();
   const active = humidors.find((h) => h.id === activeId) ?? humidors[0];
+  // skidanje zadnje ovdje nudi listu želja, kao i u humidoru i u zapisu večeri
+  const [lastCigar, setLastCigar] = useState(false);
 
   const total = stock
     .filter((s) => s.itemId === itemId)
@@ -620,7 +746,11 @@ function HumidorControls({ itemId }: { itemId: string }) {
             <button
               type="button"
               aria-label="−1"
-              onClick={() => adjustStock(active.id, itemId, -1)}
+              onClick={() => {
+                if (inActive <= 0) return;
+                adjustStock(active.id, itemId, -1);
+                if (shouldOfferWishlist(itemId)) setLastCigar(true);
+              }}
               className="h-8 w-8 rounded-lg border border-dim/30 font-display text-base text-dim hover:border-zlato/50 hover:text-papir"
             >
               −
@@ -638,6 +768,10 @@ function HumidorControls({ itemId }: { itemId: string }) {
             </button>
           </div>
         </div>
+      )}
+
+      {lastCigar && (
+        <LastCigarPrompt itemId={itemId} onDone={() => setLastCigar(false)} />
       )}
     </div>
   );

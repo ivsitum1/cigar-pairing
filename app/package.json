@@ -21,6 +21,7 @@
     "@capacitor/core": "7.6.8",
     "@fontsource-variable/manrope": "^5.2.8",
     "@fontsource/marcellus": "^5.2.8",
+    "@paddleocr/paddleocr-js": "^0.4.2",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "tesseract.js": "^7.0.0"
