@@ -114,6 +114,20 @@ Označi na telefonu nakon instalacije:
 
 Poznate greške / napomene zapisati ovdje ili u Issueu na GitHubu.
 
+### Što je već provjereno (2026-08-05, sync s master)
+
+| Provjera | Rezultat |
+|----------|----------|
+| Merge `master` → `release/android` | OK (konflikti vite/AGENTS/README/lock riješeni) |
+| `npx tsc -b --noEmit`, `npm test` (530) | OK |
+| `npm run build` + `npm run build:native` | OK |
+| Native `index.html` relativni `./assets/…` | OK (HTTP 200 iz korijena) |
+| Service worker u `dist-native` | Nema (namjerno) |
+| Lazy chunkovi Catalog / Collection / Shopping / Club / OCR | Prisutni u `dist-native/assets` |
+| CI `android.yml` run 31021965372 | Zelen (~2m35s), artefakt APK |
+| APK na disku | `Downloads\cigar-pairing-debug-apk\app-debug.apk` (~36 MB) |
+| Hardverski Back / kamera / offline na fizičkom telefonu | **Vi** — checklist iznad |
+
 ---
 
 ## Lokalni build (opcionalno)
