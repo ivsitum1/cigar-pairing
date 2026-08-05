@@ -295,8 +295,10 @@ export function rankByOccasion<T extends Drink>(
 ): PairingResult<T>[] {
   if (!occasion || ranked.length < 2) return ranked;
 
-  const cutoff = ranked[0].score - margin;
-  const bandSize = ranked.findIndex((r) => r.score < cutoff);
+  // Pojas se racuna po NESTISNUTOM rezultatu: prikazni je stisnut pri vrhu, pa
+  // bi na saturiranom vrhu ljestvice pojas progutao i osjetno slabije parove.
+  const cutoff = ranked[0].rawScore - margin;
+  const bandSize = ranked.findIndex((r) => r.rawScore < cutoff);
   const end = bandSize === -1 ? ranked.length : bandSize;
   if (end < 2) return ranked;
 
@@ -309,7 +311,7 @@ export function rankByOccasion<T extends Drink>(
   const reordered = [...band].sort(
     (a, b) =>
       (affinity.get(b.item.id) ?? 0) - (affinity.get(a.item.id) ?? 0) ||
-      b.score - a.score ||
+      b.rawScore - a.rawScore ||
       (b.item.qualityScore ?? 0) - (a.item.qualityScore ?? 0) ||
       a.item.name.localeCompare(b.item.name),
   );
