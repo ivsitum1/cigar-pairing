@@ -8,7 +8,8 @@ import { logEveningSession } from "../lib/eveningSession";
 import { drinkNameLoc, drinkNameHaystack } from "../lib/drinkName";
 import { cigarItemId } from "../lib/cigarItemId";
 import { applyVitola, uniqueVitolas } from "../lib/cigarVitola";
-import { getItemState, updateItem } from "../store/collection";
+import { shouldOfferWishlist } from "../lib/lastCigar";
+import { LastCigarPrompt } from "./LastCigarPrompt";
 
 const SOLO = "__solo__";
 const CUSTOM = "__custom__";
@@ -96,6 +97,8 @@ export function EveningSessionSheet({
   const [rating, setRating] = useState<string>("");
   const [note, setNote] = useState("");
   const [markTried, setMarkTried] = useState(true);
+  // zadnja iz humidora: sheet ostaje montiran dok se ne odgovori na ponudu
+  const [lastCigarId, setLastCigarId] = useState<string | null>(null);
 
   const selectedOpt = cigarOptions.find((c) => c.key === cigarId);
   const lineForVitola = selectedOpt ? cigarById(selectedOpt.lineId) : undefined;
@@ -142,17 +145,14 @@ export function EveningSessionSheet({
       markTried,
     });
 
-    if (
-      result.consumed &&
-      result.stockAfter === 0 &&
-      !getItemState(finalCigarId).wishlist
-    ) {
-      if (window.confirm(t("session.wishlistAtZero"))) {
-        updateItem(finalCigarId, { wishlist: true });
-      }
+    onSaved?.();
+
+    // popušena zadnja iz humidora → ponuda za listu želja umjesto zatvaranja
+    if (shouldOfferWishlist(result.consumedItemId)) {
+      setLastCigarId(finalCigarId);
+      return;
     }
 
-    onSaved?.();
     onClose();
   };
 
@@ -160,6 +160,10 @@ export function EveningSessionSheet({
     !!cigarId &&
     (drinkMode === "solo" || !!drinkId) &&
     (lineVitolas.length <= 1 || !!vitolaName || cigarId.includes("@"));
+
+  if (lastCigarId) {
+    return <LastCigarPrompt itemId={lastCigarId} onDone={onClose} />;
+  }
 
   return (
     <SheetShell

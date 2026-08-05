@@ -219,18 +219,23 @@ export function PairingPage() {
     }));
   }, [mode, selectedCigar, onlyMine, occasion, prefs]);
 
-  // cycle 0 = stabilan #1; gumb rotira samo soft-band (različiti stilovi).
+  // cycle 0 = vrh; gumb rotira soft-band (prvo stilovi, pa dublje u stil).
+  // tieSeed: kad je vrh bodovno izjednačen (npr. 21 konjak s identičnim
+  // profilom u katalogu), boca se bira po cigari i danu umjesto da uvijek
+  // pobjeđuje ista — izbor ostaje stabilan kroz dan i kroz re-render.
   const drinkSuggestions = useMemo(() => {
-    if (!rankedDrinksByCategory) return null;
+    if (!rankedDrinksByCategory || !selectedCigar) return null;
+    const tieSeed = `${selectedCigar.id}|${dayKey()}`;
     return {
       cards: rankedDrinksByCategory.map(({ category, list }) => {
         const { pick, total } = stableBestRotate(list, cycle[category] ?? 0, {
           keyOf: (d) => d.style,
+          tieSeed,
         });
         return { category, result: pick, total };
       }),
     };
-  }, [rankedDrinksByCategory, cycle]);
+  }, [rankedDrinksByCategory, selectedCigar, cycle]);
 
   // pice -> rangirane cigare. Bez `cycle`.
   const rankedCigars = useMemo(() => {

@@ -19,9 +19,11 @@ import { resolveSamplerCigar } from "../lib/samplerLink";
 import { cigarItemId } from "../lib/cigarItemId";
 import { cigarDescription } from "../lib/cigarNote";
 import { needsVitolaPick } from "../lib/cigarVitola";
+import { shouldOfferWishlist } from "../lib/lastCigar";
 import { Chip, Meter } from "./ui";
 import { BackButton } from "./BackButton";
 import { FavoriteStar } from "./FavoriteStar";
+import { LastCigarPrompt } from "./LastCigarPrompt";
 import {
   getItemState,
   updateItem,
@@ -623,6 +625,8 @@ function HumidorControls({ itemId }: { itemId: string }) {
   const { t } = useI18n();
   const { humidors, stock, activeId } = useHumidors();
   const active = humidors.find((h) => h.id === activeId) ?? humidors[0];
+  // skidanje zadnje ovdje nudi listu želja, kao i u humidoru i u zapisu večeri
+  const [lastCigar, setLastCigar] = useState(false);
 
   const total = stock
     .filter((s) => s.itemId === itemId)
@@ -681,7 +685,11 @@ function HumidorControls({ itemId }: { itemId: string }) {
             <button
               type="button"
               aria-label="−1"
-              onClick={() => adjustStock(active.id, itemId, -1)}
+              onClick={() => {
+                if (inActive <= 0) return;
+                adjustStock(active.id, itemId, -1);
+                if (shouldOfferWishlist(itemId)) setLastCigar(true);
+              }}
               className="h-8 w-8 rounded-lg border border-dim/30 font-display text-base text-dim hover:border-zlato/50 hover:text-papir"
             >
               −
@@ -699,6 +707,10 @@ function HumidorControls({ itemId }: { itemId: string }) {
             </button>
           </div>
         </div>
+      )}
+
+      {lastCigar && (
+        <LastCigarPrompt itemId={itemId} onDone={() => setLastCigar(false)} />
       )}
     </div>
   );

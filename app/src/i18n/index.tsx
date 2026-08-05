@@ -186,10 +186,13 @@ const STRINGS = {
   "session.solo": { hr: "Samo cigara", en: "Cigar only" },
   "session.soloLabel": { hr: "solo", en: "solo" },
   "session.searchDrink": { hr: "Traži piće…", en: "Search drinks…" },
-  "session.wishlistAtZero": {
-    hr: "Zaliha je 0. Dodati na listu želja?",
-    en: "Stock is 0. Add to wishlist?",
+  "wish.lastTitle": { hr: "Zadnja iz humidora", en: "Last one in the humidor" },
+  "wish.lastBody": {
+    hr: "Ovo je bila zadnja u humidoru. Da je stavim na listu želja, da je vidiš kod kupnje?",
+    en: "That was the last one in your humidor. Add it to the wishlist so it shows up when you shop?",
   },
+  "wish.lastAdd": { hr: "Na listu želja", en: "Add to wishlist" },
+  "wish.lastSkip": { hr: "Ne treba", en: "No thanks" },
   "session.noRecommendations": { hr: "Nema preporuka — odaberi iz kataloga ili solo", en: "No recommendations — pick from catalog or solo" },
   "serve.title": { hr: "Kako serviraš?", en: "How do you serve it?" },
   "serve.neat": { hr: "Čisto", en: "Neat" },

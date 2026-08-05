@@ -114,8 +114,20 @@ export function softBandWindow<T>(
 
 /**
  * Stable #1 + button rotation among near-equals.
- * - cycle 0 always returns `ranked[0]` (no day-hash drift).
- * - later cycles walk a key-diverse soft band, with #1 pinned at index 0.
+ * - cycle 0 returns `ranked[0]` (ili, uz `tieSeed`, jednog od bodovno
+ *   izjednačenih s vrhom — vidi dolje).
+ * - prvi krug rotacije uzima po jedno piće iz svakog ključa (stila), kao i
+ *   prije; sljedeći krugovi idu u DUBINU istog ključa.
+ *
+ * Zašto dubina: kad katalog nema čime razlikovati boce (46 konjaka staje u
+ * dva profila — svi XO dijele tijelo, slatkoću i note), pojas na vrhu su
+ * deseci gotovo istih bodova. Stari pool je uzimao samo najbolju bocu po
+ * stilu, pa je „Sljedeći prijedlog” u konjaku često imao točno jednu opciju
+ * i kartica je zauvijek pokazivala istu bocu.
+ *
+ * `tieSeed` (npr. `cigarId|dan`) rotira među SAVRŠENO izjednačenima na vrhu.
+ * Kad engine doista ne razlikuje dvije boce, nema razloga da uvijek pobijedi
+ * ista — a sjeme drži izbor stabilnim kroz dan i kroz re-render.
  */
 export function stableBestRotate<T extends { id: string }>(
   ranked: PairingResult<T>[],
@@ -123,6 +135,9 @@ export function stableBestRotate<T extends { id: string }>(
   opts: {
     margin?: number;
     keyOf: (item: T) => string;
+    tieSeed?: string;
+    /** Najmanji broj ponuda; ispod margine se dopunjuje po bodovima. */
+    minPool?: number;
   },
 ): {
   pick: PairingResult<T> | undefined;
@@ -134,13 +149,41 @@ export function stableBestRotate<T extends { id: string }>(
   }
 
   const margin = opts.margin ?? SOFT_BAND_MARGIN;
-  const top = ranked[0];
-  const diverse = diverseBy(ranked, opts.keyOf);
-  const band = softBand(diverse, margin);
+  const band = softBand(ranked, margin);
 
-  const seen = new Set<string>([top.item.id]);
-  const pool: PairingResult<T>[] = [top];
+  const ties = band.filter((r) => r.score === ranked[0].score);
+  const head =
+    opts.tieSeed && ties.length > 1
+      ? ties[stableHash(opts.tieSeed) % ties.length]
+      : ranked[0];
+
+  const groups = new Map<string, PairingResult<T>[]>();
   for (const r of band) {
+    const key = opts.keyOf(r.item);
+    const list = groups.get(key);
+    if (list) list.push(r);
+    else groups.set(key, [r]);
+  }
+
+  const seen = new Set<string>([head.item.id]);
+  const pool: PairingResult<T>[] = [head];
+  const lists = [...groups.values()];
+  const depth = lists.reduce((max, l) => Math.max(max, l.length), 0);
+  for (let i = 0; i < depth; i++) {
+    for (const list of lists) {
+      const r = list[i];
+      if (!r || seen.has(r.item.id)) continue;
+      seen.add(r.item.id);
+      pool.push(r);
+    }
+  }
+
+  // kad vrh bježi za više od margine, pojas ostane sam — gumb „Sljedeći
+  // prijedlog” tada ne bi imao što ponuditi. Dopuni po bodovima, kao što
+  // softBandWindow pada na širi popis.
+  const minPool = opts.minPool ?? SOFT_BAND_WINDOW;
+  for (const r of ranked) {
+    if (pool.length >= minPool) break;
     if (seen.has(r.item.id)) continue;
     seen.add(r.item.id);
     pool.push(r);

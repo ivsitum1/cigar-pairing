@@ -7,6 +7,7 @@
 // Sve živi u localStorageu, po uređaju, kao i ostatak podataka aplikacije.
 import { useSyncExternalStore } from "react";
 import { canonicalCigarStateKey } from "../data";
+import { VITOLA_ID_SEP, parseCigarItemId } from "../lib/cigarItemId";
 
 export interface Humidor {
   id: string;
@@ -272,18 +273,62 @@ export function adjustStock(humidorId: string, itemId: string, delta: number) {
   setStock(humidorId, itemId, stockCount(humidorId, itemId) + delta);
 }
 
+export interface StockHit {
+  humidorId: string;
+  /** Ključ zalihe koji je stvarno pogođen — ne mora biti traženi ključ. */
+  itemId: string;
+}
+
+/** Prvo aktivni humidor, pa bilo koji drugi — zaliha je zaliha. */
+function pickStock(match: (s: HumidorStock) => boolean): HumidorStock | undefined {
+  return (
+    cache.stock.find((s) => s.count > 0 && s.humidorId === cache.activeId && match(s)) ??
+    cache.stock.find((s) => s.count > 0 && match(s))
+  );
+}
+
+/**
+ * Zaliha za traženi ključ, uz toleranciju na vitolu.
+ *
+ * Humidor se puni i po liniji (`cig-x`, Brzi unos iz kolekcije) i po vitoli
+ * (`cig-x@churchill`), a zapis večeri traži vitolu kad ih linija ima više.
+ * Bez tolerancije taj nesklad znači „nema te cigare u humidoru”: zaliha ostane
+ * netaknuta i nikad se ne dođe do nule. Zato:
+ *  1. točan ključ,
+ *  2. goli ključ linije (zaliha bez formata pokriva svaku vitolu),
+ *  3. jedini preostali ključ te linije — nema se s čim zamijeniti.
+ * Više različitih vitola u zalihi ostavljamo na miru: ne pogađamo koju je
+ * korisnik popušio.
+ */
+function findStockHit(itemId: string): StockHit | null {
+  const exact = pickStock((s) => s.itemId === itemId);
+  if (exact) return { humidorId: exact.humidorId, itemId: exact.itemId };
+
+  const { cigarId, vitolaSlug } = parseCigarItemId(itemId);
+  if (vitolaSlug) {
+    const line = pickStock((s) => s.itemId === cigarId);
+    if (line) return { humidorId: line.humidorId, itemId: line.itemId };
+  }
+
+  const prefix = cigarId + VITOLA_ID_SEP;
+  const sameLine = cache.stock.filter(
+    (s) => s.count > 0 && (s.itemId === cigarId || s.itemId.startsWith(prefix)),
+  );
+  const keys = new Set(sameLine.map((s) => s.itemId));
+  if (keys.size !== 1) return null;
+  const only = pickStock((s) => s.itemId === sameLine[0].itemId)!;
+  return { humidorId: only.humidorId, itemId: only.itemId };
+}
+
 /**
  * Skini jednu cigaru iz zalihe pri zapisu večeri. Traži humidor koji je stvarno
  * ima; bez pogotka ne mijenja ništa (cigara nije bila iz humidora).
  */
-export function consumeFromStock(itemId: string): string | null {
-  const hit =
-    cache.stock.find(
-      (s) => s.itemId === itemId && s.count > 0 && s.humidorId === cache.activeId,
-    ) ?? cache.stock.find((s) => s.itemId === itemId && s.count > 0);
+export function consumeFromStock(itemId: string): StockHit | null {
+  const hit = findStockHit(itemId);
   if (!hit) return null;
-  setStock(hit.humidorId, itemId, hit.count - 1);
-  return hit.humidorId;
+  adjustStock(hit.humidorId, hit.itemId, -1);
+  return hit;
 }
 
 export function exportHumidors(): HumidorData {
