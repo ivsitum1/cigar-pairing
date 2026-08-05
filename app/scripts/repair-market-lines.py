@@ -342,13 +342,17 @@ def one_pass(cigars: list[dict], merged_log: list[str], renamed_log: list[str],
             m["id"] == base_id, m["priceEUR"] or 0, -len(m["id"])))
         new_id = survivor["id"]
 
+        # Link na razini linije: prvi koji NOSI CIJENU (kartica prikazuje "od X €"),
+        # inace link primarne vitole, inace bilo koji. Kandidat prve ruke je
+        # primarna vitola — da linija ne nudi No. 3 a vodi na No. 1.
+        prim_links = (uniq[0].get("regionLinks") or {}) if uniq else {}
         links: dict = {}
         for region in ("HR", "EU", "USA"):
-            for m in [survivor] + members:
-                rl = (m.get("regionLinks") or {}).get(region)
-                if rl:
-                    links[region] = rl
-                    break
+            cands = [rl for rl in [prim_links.get(region)] if rl]
+            cands += [rl for m in [survivor] + members
+                      if (rl := (m.get("regionLinks") or {}).get(region))]
+            if cands:
+                links[region] = next((c for c in cands if c.get("priceEUR")), cands[0])
         markets = [mk for mk in ("HR", "EU", "USA", "WW")
                    if mk in {x for m in members for x in m["markets"]}]
         wrappers = [m["wrapper"] for m in members if m["wrapper"] != "—"]
@@ -365,9 +369,10 @@ def one_pass(cigars: list[dict], merged_log: list[str], renamed_log: list[str],
         })
         if wrappers:
             survivor["wrapper"] = max(set(wrappers), key=wrappers.count)
-        if primary.get("regionLinks"):
-            survivor["regionLinks"] = primary["regionLinks"]
-        elif links:
+        # link na razini linije mora voditi na PRIMARNU vitolu (inace kartica
+        # nudi No. 3 a link vodi na No. 1), ali po regiji: gdje primarna vitola
+        # nema link, ostaje spojeni iz clanova da linija ne izgubi HR pokrivenost
+        if links:
             survivor["regionLinks"] = links
         if srcs:
             survivor["sourceUrls"] = srcs
