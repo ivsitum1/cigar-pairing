@@ -8,12 +8,11 @@
     "country": "Francuska",
     "abv": 40.0,
     "body": 4,
-    "sweetness": 3,
+    "sweetness": 4,
     "flavorTags": [
-      "suho-voce",
-      "kakao",
-      "zacini",
-      "koza"
+      "cvjetno",
+      "med",
+      "suho-voce"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -43,7 +42,8 @@
     "notes": {
       "hr": "Fine Champagne elegancija — voćniji i mekši stil.",
       "en": "Fine Champagne elegance — a fruitier, softer style."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-hennessy-paradis-rare-cognac-40-vol-0-7l-u-poklon-kutiji",
@@ -54,12 +54,11 @@
     "country": "Francuska",
     "abv": 40.0,
     "body": 4,
-    "sweetness": 3,
+    "sweetness": 4,
     "flavorTags": [
-      "suho-voce",
-      "kakao",
-      "zacini",
-      "koza"
+      "cvjetno",
+      "karamela",
+      "med"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -86,7 +85,8 @@
     "notes": {
       "hr": "Paradis — ekstremni XO; gusta večer uz oscuro.",
       "en": ""
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-ararat-erebuni-30",
@@ -99,9 +99,9 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "suho-voce",
-      "cokolada",
-      "zacini"
+      "hrast",
+      "karamela",
+      "suho-voce"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -131,7 +131,8 @@
     "notes": {
       "hr": "Vrh asortimana (30 g.) — rezervni destilati iz najstarijih bačvi; cijena kolekcionarska.",
       "en": "The top of the range (30 y) — reserve distillates from the oldest casks; collector-level price."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-delamain-pale-dry-xo",
@@ -141,13 +142,12 @@
     "region": "Grande Champagne, Francuska",
     "country": "Francuska",
     "abv": 40.0,
-    "body": 4,
-    "sweetness": 3,
+    "body": 3,
+    "sweetness": 2,
     "flavorTags": [
-      "suho-voce",
-      "kakao",
-      "zacini",
-      "koza"
+      "cvjetno",
+      "hrast",
+      "suho-voce"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -177,7 +177,8 @@
     "notes": {
       "hr": "Najelegantniji suhi XO — bez doslađivanja i bojenja. Precizan izbor uz Connecticut.",
       "en": "The most elegant dry XO — no sweetening or colouring. Precizan pick with Connecticut."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-delamain-xo-grande-champagne-cognac-40-vol-0-7l-u-poklon-kutiji",
@@ -187,13 +188,12 @@
     "region": "Grande Champagne, Francuska",
     "country": "Francuska",
     "abv": 40.0,
-    "body": 4,
-    "sweetness": 3,
+    "body": 3,
+    "sweetness": 2,
     "flavorTags": [
-      "suho-voce",
-      "kakao",
-      "zacini",
-      "koza"
+      "cvjetno",
+      "hrast",
+      "suho-voce"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -223,7 +223,8 @@
     "notes": {
       "hr": "Najelegantniji suhi XO — bez doslađivanja i bojenja. Precizan izbor uz Connecticut.",
       "en": "The most elegant dry XO — no sweetening or colouring. Precizan pick with Connecticut."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-ararat-aznavour-25",
@@ -236,8 +237,8 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
+      "orasasti",
       "suho-voce",
-      "cokolada",
       "zacini"
     ],
     "additiveStatus": "unknown",
@@ -268,7 +269,8 @@
     "notes": {
       "hr": "Signature blend od 25 godina posvećen Aznavouru — svila i suho voće, kolekcionarski format.",
       "en": "A 25-year signature blend dedicated to Aznavour — silk and dried fruit, a collector's format."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-ararat-dvin-50",
@@ -281,9 +283,9 @@
     "body": 5,
     "sweetness": 3,
     "flavorTags": [
-      "suho-voce",
-      "cokolada",
-      "zacini"
+      "hrast",
+      "med",
+      "suho-voce"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -313,7 +315,8 @@
     "notes": {
       "hr": "Legendarni Dvin na 50 % — stil koji je Staljin slao Churchillu; gust, uljast, dugačak finiš.",
       "en": "The legendary Dvin at 50% — the style Stalin famously sent Churchill; dense, oily, long finish."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-berta-grappa-tre-soli-tre",
@@ -325,10 +328,9 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "suho-voce",
-      "vanilija",
       "kakao",
-      "hrast"
+      "suho-voce",
+      "voce"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -353,7 +355,8 @@
     "notes": {
       "hr": "Dugo odležana prestižna grappa od nebbiola — kakao, suho voće, duga završnica.",
       "en": "Long-aged prestige nebbiolo grappa — cocoa, dried fruit, long finish."
-    }
+    },
+    "profileEstimated": true
   },
   {
     "id": "br-frapin-chateau-de-fontpinot-xo",
@@ -364,12 +367,11 @@
     "country": "Francuska",
     "abv": 40.0,
     "body": 4,
-    "sweetness": 3,
+    "sweetness": 2,
     "flavorTags": [
-      "suho-voce",
+      "hrast",
       "kakao",
-      "zacini",
-      "koza"
+      "suho-voce"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -399,7 +401,8 @@
     "notes": {
       "hr": "Single-estate XO — suši, ozbiljan konjak za ozbiljnu cigaru.",
       "en": "Single-estate XO — drier, a serious cognac for a serious cigar."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-hennessy-xo",
@@ -412,10 +415,9 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "suho-voce",
       "kakao",
-      "zacini",
-      "koza"
+      "suho-voce",
+      "zacini"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -445,7 +447,8 @@
     "notes": {
       "hr": "Arhetip XO kategorije — bogat, čokoladno-začinski, stvoren za cigaru.",
       "en": "The XO archetype — rich, chocolate-spice, made for a cigar."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-hennessy-xo-cognac-40-vol-0-7l-u-poklon-kutiji",
@@ -458,10 +461,9 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "suho-voce",
       "kakao",
-      "zacini",
-      "koza"
+      "suho-voce",
+      "zacini"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -491,7 +493,8 @@
     "notes": {
       "hr": "Arhetip XO kategorije — bogat, čokoladno-začinski, stvoren za cigaru.",
       "en": "The XO archetype — rich, chocolate-spice, made for a cigar."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-hennessy-xo-cognac-festive-experience-40-vol-0-7l-u-poklon-kutiji-posudi-za-led-s-2-case-i-hvataljkom-za-led",
@@ -504,10 +507,9 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "suho-voce",
       "kakao",
-      "zacini",
-      "koza"
+      "suho-voce",
+      "zacini"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -537,7 +539,8 @@
     "notes": {
       "hr": "Arhetip XO kategorije — bogat, čokoladno-začinski, stvoren za cigaru.",
       "en": "The XO archetype — rich, chocolate-spice, made for a cigar."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-hennessy-xo-cognac-ice-ritual-set-40-vol-0-7l-u-poklon-kutiji-s-posudom-za-led",
@@ -550,10 +553,9 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "suho-voce",
       "kakao",
-      "zacini",
-      "koza"
+      "suho-voce",
+      "zacini"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -583,7 +585,8 @@
     "notes": {
       "hr": "Arhetip XO kategorije — bogat, čokoladno-začinski, stvoren za cigaru.",
       "en": "The XO archetype — rich, chocolate-spice, made for a cigar."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-hine-antique-xo",
@@ -593,13 +596,12 @@
     "region": "Fine Champagne, Francuska",
     "country": "Francuska",
     "abv": 40.0,
-    "body": 4,
+    "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "suho-voce",
-      "kakao",
-      "zacini",
-      "koza"
+      "cvjetno",
+      "hrast",
+      "suho-voce"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -629,7 +631,8 @@
     "notes": {
       "hr": "Rafinirani first-growth XO — svila u čaši.",
       "en": "Refined first-growth XO — silk in a glass."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-remy-martin-xo",
@@ -642,8 +645,9 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "hrast",
-      "voce"
+      "cvjetno",
+      "suho-voce",
+      "zacini"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -673,7 +677,8 @@
     "notes": {
       "hr": "Raskošan, svilenkast XO — cvjetno-voćna dubina.",
       "en": "Opulent, silky XO — floral-fruity depth."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-remy-martin-xo-extra-old-cognac-fine-champagne-40-vol-0-7l-u-poklon-kutiji",
@@ -683,13 +688,12 @@
     "region": "Cognac (Fine Champagne), Francuska",
     "country": "Francuska",
     "abv": 40.0,
-    "body": 4,
+    "body": 3,
     "sweetness": 3,
     "flavorTags": [
+      "cvjetno",
       "suho-voce",
-      "kakao",
-      "zacini",
-      "koza"
+      "zacini"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -719,7 +723,8 @@
     "notes": {
       "hr": "Raskošan, svilenkast XO — cvjetno-voćna dubina.",
       "en": "Opulent, silky XO — floral-fruity depth."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-martell-xo",
@@ -730,12 +735,11 @@
     "country": "Francuska",
     "abv": 40.0,
     "body": 4,
-    "sweetness": 3,
+    "sweetness": 2,
     "flavorTags": [
-      "suho-voce",
-      "kakao",
-      "zacini",
-      "koza"
+      "hrast",
+      "orasasti",
+      "suho-voce"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -765,7 +769,8 @@
     "notes": {
       "hr": "Suhi, borderies-bogat XO — orašasta elegancija uz srednju cigaru.",
       "en": "Dry, Borderies-rich XO — nutty elegance with a medium cigar."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-martell-xo-extra-old-cognac-40-vol-0-7l-u-poklon-kutiji",
@@ -776,12 +781,11 @@
     "country": "Francuska",
     "abv": 40.0,
     "body": 4,
-    "sweetness": 3,
+    "sweetness": 2,
     "flavorTags": [
-      "suho-voce",
-      "kakao",
-      "zacini",
-      "koza"
+      "hrast",
+      "orasasti",
+      "suho-voce"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -811,7 +815,8 @@
     "notes": {
       "hr": "Suhi, borderies-bogat XO — orašasta elegancija uz srednju cigaru.",
       "en": "Dry, Borderies-rich XO — nutty elegance with a medium cigar."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-boulard-calvados-xo",
@@ -821,13 +826,12 @@
     "region": "Pays d'Auge, Normandija",
     "country": "Francuska",
     "abv": 40,
-    "body": 4,
+    "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "suho-voce",
-      "kakao",
-      "zacini",
-      "koza"
+      "hrast",
+      "jabuka",
+      "karamela"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -857,7 +861,8 @@
     "notes": {
       "hr": "Dostupniji calvados — pečena jabuka i karamela.",
       "en": "The accessible calvados — baked apple and caramel."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-camus-xo-intensely-aromatic-cognac-40-vol-0-7l-u-poklon-kutiji",
@@ -867,13 +872,12 @@
     "region": "Borderies, Francuska",
     "country": "Francuska",
     "abv": 40.0,
-    "body": 4,
-    "sweetness": 3,
+    "body": 3,
+    "sweetness": 4,
     "flavorTags": [
-      "suho-voce",
-      "kakao",
-      "zacini",
-      "koza"
+      "cvjetno",
+      "med",
+      "suho-voce"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -903,7 +907,8 @@
     "notes": {
       "hr": "Mirisni XO — cvjetno-medena raskoš.",
       "en": "The perfumed XO — floral-honeyed opulence."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-carlos-i-imperial-xo",
@@ -914,12 +919,11 @@
     "country": "Španjolska",
     "abv": 40,
     "body": 4,
-    "sweetness": 3,
+    "sweetness": 2,
     "flavorTags": [
-      "suho-voce",
-      "kakao",
-      "zacini",
-      "koza"
+      "karamela",
+      "orah",
+      "suho-voce"
     ],
     "additiveStatus": "moderate",
     "additiveDetail": {
@@ -949,7 +953,8 @@
     "notes": {
       "hr": "Vrh Jerez brandyja — amontillado dubina, manje sladak od Mendoze.",
       "en": "The peak of Jerez brandy — amontillado depth, less sweet than Mendoza."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-courvoisier-xo",
@@ -959,13 +964,12 @@
     "region": "Cognac, Francuska",
     "country": "Francuska",
     "abv": 40,
-    "body": 4,
+    "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "suho-voce",
-      "kakao",
-      "zacini",
-      "koza"
+      "cvjetno",
+      "hrast",
+      "voce"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -995,7 +999,8 @@
     "notes": {
       "hr": "Mekan i pristupačan — jasmin i voće.",
       "en": "Soft and approachable — jasmine and fruit."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-frapin-vip-xo",
@@ -1006,12 +1011,11 @@
     "country": "Francuska",
     "abv": 40,
     "body": 4,
-    "sweetness": 3,
+    "sweetness": 2,
     "flavorTags": [
-      "suho-voce",
+      "hrast",
       "kakao",
-      "zacini",
-      "koza"
+      "suho-voce"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -1041,7 +1045,8 @@
     "notes": {
       "hr": "Single-estate XO — suši, ozbiljan konjak za ozbiljnu cigaru.",
       "en": "Single-estate XO — drier, a serious cognac for a serious cigar."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-frapin-xo-cigar-blend",
@@ -1052,12 +1057,11 @@
     "country": "Francuska",
     "abv": 40,
     "body": 4,
-    "sweetness": 3,
+    "sweetness": 2,
     "flavorTags": [
-      "suho-voce",
-      "kakao",
-      "zacini",
-      "koza"
+      "hrast",
+      "koza",
+      "suho-voce"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -1087,7 +1091,8 @@
     "notes": {
       "hr": "Single-estate XO — suši, ozbiljan konjak za ozbiljnu cigaru.",
       "en": "Single-estate XO — drier, a serious cognac for a serious cigar."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-ararat-nairi-20",
@@ -1100,9 +1105,9 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "suho-voce",
-      "cokolada",
-      "zacini"
+      "karamela",
+      "orasasti",
+      "suho-voce"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -1132,7 +1137,8 @@
     "notes": {
       "hr": "Stariji Ararat — dubina uz ozbiljnu cigaru.",
       "en": "The older Ararat — depth for a serious cigar."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-ararat-nairi-20-yo-40-vol-0-7l-u-poklon-kutiji",
@@ -1145,9 +1151,9 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "suho-voce",
-      "cokolada",
-      "zacini"
+      "karamela",
+      "orasasti",
+      "suho-voce"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -1177,7 +1183,8 @@
     "notes": {
       "hr": "Stariji Ararat — dubina uz ozbiljnu cigaru.",
       "en": "The older Ararat — depth for a serious cigar."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-ararat-vaspurakan-15",
@@ -1190,8 +1197,8 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
+      "orasasti",
       "suho-voce",
-      "cokolada",
       "zacini"
     ],
     "additiveStatus": "unknown",
@@ -1222,7 +1229,8 @@
     "notes": {
       "hr": "15 godina kavkaskog hrasta — duhan, orah i tamna čokolada; ozbiljna dubina.",
       "en": "Fifteen years in Caucasian oak — tobacco, walnut and dark chocolate; serious depth."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-berta-grappa-elisi",
@@ -1234,10 +1242,9 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "voce",
+      "suho-voce",
       "vanilija",
-      "cvjetno",
-      "karamela"
+      "voce"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -1262,7 +1269,8 @@
     "notes": {
       "hr": "Odležana grappa (0,5 l) iz barrique bačvi — vanilija, suho voće, mekoća. Vrh Piemonta.",
       "en": "Aged grappa (0.5 l) from barrique casks — vanilla, dried fruit, softness. Piedmont's finest."
-    }
+    },
+    "profileEstimated": true
   },
   {
     "id": "br-christian-drouin-xo-calvados",
@@ -1275,9 +1283,9 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
+      "hrast",
       "jabuka",
-      "cimet",
-      "hrast"
+      "zacini"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -1307,7 +1315,8 @@
     "notes": {
       "hr": "Zreli calvados — pečena jabuka, karamela, hrast; drugačiji cigar par.",
       "en": "Mature calvados — baked apple, caramel, oak; a different cigar partner."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-chateau-de-laubade-xo",
@@ -1317,11 +1326,12 @@
     "region": "Bas-Armagnac, Francuska",
     "country": "Francuska",
     "abv": 40.0,
-    "body": 3,
+    "body": 4,
     "sweetness": 3,
     "flavorTags": [
       "hrast",
-      "voce"
+      "prune",
+      "suho-voce"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -1351,7 +1361,8 @@
     "notes": {
       "hr": "Single-estate XO armagnac — ozbiljna alternativa XO konjaku uz cigaru.",
       "en": "Single-estate XO armagnac — a serious alternative to XO cognac with a cigar."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-choteau-de-laubade-xo",
@@ -1364,10 +1375,9 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "suho-voce",
-      "kakao",
-      "zacini",
-      "koza"
+      "hrast",
+      "prune",
+      "suho-voce"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -1397,7 +1407,8 @@
     "notes": {
       "hr": "Single-estate XO armagnac — ozbiljna alternativa XO konjaku uz cigaru.",
       "en": "Single-estate XO armagnac — a serious alternative to XO cognac with a cigar."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-darroze-les-grands-assemblages-8",
@@ -1407,13 +1418,12 @@
     "region": "Bas-Armagnac, Francuska",
     "country": "Francuska",
     "abv": 40.0,
-    "body": 4,
+    "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "suho-voce",
+      "citrus",
       "prune",
-      "zacini",
-      "hrast"
+      "voce"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -1443,7 +1453,8 @@
     "notes": {
       "hr": "Specijalist za armagnac — zemljana dubina, sjajno uz punije cigare.",
       "en": "The armagnac specialist — earthy depth, great with fuller cigars."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-delord-15-ans-bas-armagnac",
@@ -1456,10 +1467,9 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "suho-voce",
-      "prune",
-      "zacini",
-      "hrast"
+      "hrast",
+      "karamela",
+      "prune"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -1489,7 +1499,8 @@
     "notes": {
       "hr": "Najbolji omjer starosti i cijene u kategoriji — 15 godina ispod 55 ÔéČ.",
       "en": "Best age-to-price in the category — 15 years under ÔéČ55."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-frapin-vsop",
@@ -1499,13 +1510,12 @@
     "region": "Grande Champagne, Francuska",
     "country": "Francuska",
     "abv": 40,
-    "body": 3,
-    "sweetness": 3,
+    "body": 4,
+    "sweetness": 2,
     "flavorTags": [
-      "voce",
-      "vanilija",
-      "zacini",
-      "hrast"
+      "hrast",
+      "kakao",
+      "suho-voce"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -1535,7 +1545,8 @@
     "notes": {
       "hr": "Obiteljska kuća, 100% Grande Champagne — rafiniran value.",
       "en": "Family house, 100% Grande Champagne — refined value."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-frapin-vsop-grande-champagne",
@@ -1545,13 +1556,12 @@
     "region": "Grande Champagne, Francuska",
     "country": "Francuska",
     "abv": 40.0,
-    "body": 3,
-    "sweetness": 3,
+    "body": 4,
+    "sweetness": 2,
     "flavorTags": [
-      "voce",
-      "vanilija",
-      "zacini",
-      "hrast"
+      "hrast",
+      "kakao",
+      "suho-voce"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -1581,7 +1591,8 @@
     "notes": {
       "hr": "Obiteljska kuća, 100% Grande Champagne — rafiniran value.",
       "en": "Family house, 100% Grande Champagne — refined value."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-gaja-grappa-di-barolo",
@@ -1593,9 +1604,8 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "voce",
-      "hrast",
-      "cvjetno"
+      "cvjetno",
+      "jabuka"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -1620,7 +1630,8 @@
     "notes": {
       "hr": "Grappa od barolo komine kultne kuce Gaja (0,5 l) — fina, cvjetna, precizna.",
       "en": "Barolo-pomace grappa from the iconic Gaja house (0.5 l) — fine, floral, precise."
-    }
+    },
+    "profileEstimated": true
   },
   {
     "id": "br-hennessy-x-x-o-cognac-hors-d-039-age-40-vol-1l-u-poklon-kutiji",
@@ -1630,13 +1641,12 @@
     "region": "Cognac, Francuska",
     "country": "Francuska",
     "abv": 40.0,
-    "body": 4,
+    "body": 5,
     "sweetness": 3,
     "flavorTags": [
-      "suho-voce",
       "kakao",
-      "zacini",
-      "koza"
+      "suho-voce",
+      "zacini"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -1663,7 +1673,8 @@
     "notes": {
       "hr": "Heuristika — cognac-xo, cognac, xo",
       "en": ""
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-martell-cordon-bleu",
@@ -1674,11 +1685,11 @@
     "country": "Francuska",
     "abv": 40,
     "body": 3,
-    "sweetness": 3,
+    "sweetness": 2,
     "flavorTags": [
-      "voce",
-      "vanilija",
-      "hrast"
+      "cedar",
+      "orasasti",
+      "suho-voce"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -1708,7 +1719,8 @@
     "notes": {
       "hr": "Suhlji, orašastiji stil (bez borderies slatkoće u VSOP-u; Cordon Bleu = klasik za cigare).",
       "en": "Drier, nuttier style (Cordon Bleu is a cigar classic)."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-nonino-grappa-riserva-8",
@@ -1720,9 +1732,8 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "vanilija",
       "hrast",
-      "voce"
+      "vanilija"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -1747,7 +1758,8 @@
     "notes": {
       "hr": "8 godina u bačvama — elegantna, suha, s notama vanilije i hrasta.",
       "en": "Eight years in cask — elegant, dry, with vanilla and oak."
-    }
+    },
+    "profileEstimated": true
   },
   {
     "id": "br-osborne-carlos-i-solera-gran-reserva",
@@ -1760,10 +1772,9 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "orah",
       "karamela",
-      "suho-voce",
-      "hrast"
+      "orah",
+      "suho-voce"
     ],
     "additiveStatus": "moderate",
     "additiveDetail": {
@@ -1793,7 +1804,8 @@
     "notes": {
       "hr": "Vrh Jerez brandyja — amontillado dubina, manje sladak od Mendoze.",
       "en": "The peak of Jerez brandy — amontillado depth, less sweet than Mendoza."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-pierre-ferrand-1840",
@@ -1804,10 +1816,10 @@
     "country": "Francuska",
     "abv": 40.0,
     "body": 3,
-    "sweetness": 3,
+    "sweetness": 1,
     "flavorTags": [
-      "voce",
-      "vanilija",
+      "citrus",
+      "cvjetno",
       "hrast"
     ],
     "additiveStatus": "unknown",
@@ -1841,7 +1853,8 @@
     "notes": {
       "hr": "Pierre Ferrand 1840: Profil ostaje u stilu cognac-vsop (Grande Champagne, Francuska). Craft pristup, viši proof — konjak s karakterom.",
       "en": "Pierre Ferrand 1840: Profile stays in the cognac-vsop style (Grande Champagne, Francuska). Craft approach, higher proof — cognac with character."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-r-serve",
@@ -1854,9 +1867,9 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "voce",
-      "vanilija",
-      "hrast"
+      "cvjetno",
+      "hrast",
+      "voce"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -1889,7 +1902,8 @@
     "notes": {
       "hr": "Pierre Ferrand Réserve: Profil ostaje u stilu cognac-vsop (Grande Champagne, Francuska). Craft pristup, viši proof — konjak s karakterom.",
       "en": "Pierre Ferrand Réserve: Profile stays in the cognac-vsop style (Grande Champagne, Francuska). Craft approach, higher proof — cognac with character."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-gautier-xo",
@@ -1899,13 +1913,12 @@
     "region": "Cognac, Francuska",
     "country": "Francuska",
     "abv": 40,
-    "body": 4,
+    "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "suho-voce",
-      "kakao",
-      "zacini",
-      "koza"
+      "cvjetno",
+      "hrast",
+      "suho-voce"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -1935,7 +1948,8 @@
     "notes": {
       "hr": "Manji konjački dom s karakterom — elegantan XO, cvjetne note i dugačak finiš.",
       "en": "A smaller cognac house with character — elegant XO, floral notes and a long finish."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-hennessy-vsop",
@@ -1948,10 +1962,9 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "voce",
       "vanilija",
-      "zacini",
-      "hrast"
+      "voce",
+      "zacini"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -1981,7 +1994,8 @@
     "notes": {
       "hr": "Pouzdani VSOP — uravnotežen uz srednje cigare.",
       "en": "The dependable VSOP — balanced with medium cigars."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-martell-vsop",
@@ -1994,9 +2008,8 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "suho-voce",
-      "cvjetno",
-      "hrast"
+      "hrast",
+      "voce"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -2029,7 +2042,8 @@
     "notes": {
       "hr": "Martell VSOP (Borderies utjecaj) nudi voće, cvijet i uredan hrast u srednjem tijelu. Ulazna Martell linija za cognac uz cigaru.",
       "en": "Martell VSOP (Borderies influence) offers fruit, flower and tidy oak in medium body. An entry Martell line for cognac with a cigar."
-    }
+    },
+    "profileEstimated": true
   },
   {
     "id": "br-remy-martin-1738-accord-royal-cognac-fine-champagne-40-vol-0-7l-in-giftbox-with-shaker",
@@ -2042,10 +2056,9 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "voce",
+      "cvjetno",
       "vanilija",
-      "zacini",
-      "hrast"
+      "voce"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -2075,7 +2088,8 @@
     "notes": {
       "hr": "Bogatiji, tamniji Rémy — karamelno-čokoladni, odličan value za cigaru.",
       "en": "Richer, darker Rémy — caramel-chocolate, great cigar value."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-remy-martin-vsop",
@@ -2088,10 +2102,9 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "voce",
+      "cvjetno",
       "vanilija",
-      "zacini",
-      "hrast"
+      "voce"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -2121,7 +2134,8 @@
     "notes": {
       "hr": "Fine Champagne elegancija — voćniji i mekši stil.",
       "en": "Fine Champagne elegance — a fruitier, softer style."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-courvoisier-vsop",
@@ -2134,9 +2148,10 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "suho-voce",
+      "cvjetno",
+      "hrast",
       "vanilija",
-      "cvjetno"
+      "voce"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -2169,7 +2184,8 @@
     "notes": {
       "hr": "Courvoisier VSOP je cognac s voćnim i cvjetnim notama, vanilijom i umjerenim hrastom. Pristupačniji i lakši od XO linije.",
       "en": "Courvoisier VSOP is cognac with fruit and floral notes, vanilla and moderate oak. More approachable and lighter than the XO line."
-    }
+    },
+    "profileEstimated": true
   },
   {
     "id": "br-alfonso-xo-solera-gran-reserva",
@@ -2180,12 +2196,11 @@
     "country": "Španjolska",
     "abv": 40,
     "body": 4,
-    "sweetness": 3,
+    "sweetness": 4,
     "flavorTags": [
+      "karamela",
       "suho-voce",
-      "kakao",
-      "zacini",
-      "koza"
+      "tamno-voce"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -2215,7 +2230,8 @@
     "notes": {
       "hr": "Španjolski sherry-solera brandy — tamna slatkoća, klasik uz maduro cigaru.",
       "en": "Spanish sherry-solera brandy — dark sweetness, a maduro-cigar classic."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-antinori-grappa-tignanello",
@@ -2227,9 +2243,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "voce",
-      "vanilija",
-      "hrast"
+      "hrast",
+      "jabuka",
+      "voce"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -2254,7 +2270,8 @@
     "notes": {
       "hr": "Grappa od komine kultnog Tignanella (0,5 l) — voće i fini hrast.",
       "en": "Grappa from the pomace of the iconic Tignanello (0.5 l) — fruit and fine oak."
-    }
+    },
+    "profileEstimated": true
   },
   {
     "id": "br-ararat-10-akhtamar",
@@ -2264,12 +2281,12 @@
     "region": "Armenija",
     "country": "Armenija",
     "abv": 40.0,
-    "body": 4,
+    "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "suho-voce",
-      "cokolada",
-      "zacini"
+      "hrast",
+      "vanilija",
+      "voce"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -2299,7 +2316,8 @@
     "notes": {
       "hr": "Armenski klasik (Churchillov favorit) — duhansko-kakao profil, izvrstan uz cigaru za tu cijenu.",
       "en": "The Armenian classic (Churchill's favourite) — tobacco-cocoa profile, superb with a cigar at this price."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-baron-de-sigognac-10-ans",
@@ -2312,10 +2330,9 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
+      "koza",
       "suho-voce",
-      "prune",
-      "zacini",
-      "hrast"
+      "voce"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -2345,7 +2362,8 @@
     "notes": {
       "hr": "Pošten 10-godišnji armagnac — suho voće i koža za male novce.",
       "en": "Honest 10-year armagnac — dried fruit and leather for little money."
-    }
+    },
+    "profileEstimated": true
   },
   {
     "id": "br-camus-very-special-intensely-aromatic-cognac-40-vol-0-7l",
@@ -2358,9 +2376,8 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "voce",
-      "vanilija",
-      "hrast"
+      "cvjetno",
+      "med"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -2390,7 +2407,8 @@
     "notes": {
       "hr": "Mirisni XO — cvjetno-medena raskoš.",
       "en": "The perfumed XO — floral-honeyed opulence."
-    }
+    },
+    "profileEstimated": true
   },
   {
     "id": "br-camus-vs-intensely-aromatic",
@@ -2403,9 +2421,8 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "voce",
-      "vanilija",
-      "hrast"
+      "ester-funk",
+      "zacini"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -2435,7 +2452,8 @@
     "notes": {
       "hr": "Borderies cvjetnost u VS kategoriji — pristupačan ulaz u Camus.",
       "en": "Borderies florality in the VS category — an accessible entry to Camus."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-camus-vsop-intensely-aromatic-cognac-40-vol-0-7l-u-poklon-kutiji",
@@ -2448,10 +2466,9 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "voce",
-      "vanilija",
-      "zacini",
-      "hrast"
+      "cvjetno",
+      "hrast",
+      "voce"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -2481,7 +2498,8 @@
     "notes": {
       "hr": "Mirisni XO — cvjetno-medena raskoš.",
       "en": "The perfumed XO — floral-honeyed opulence."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-cardenal-mendoza-solera-gran-reserva",
@@ -2540,9 +2558,9 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
+      "hrast",
       "jabuka",
-      "cimet",
-      "hrast"
+      "zacini"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -2572,7 +2590,8 @@
     "notes": {
       "hr": "Jabučna rakija iz Normandije — svjež kontrast uz kremaste cigare.",
       "en": "Norman apple brandy — a fresh contrast to creamy cigars."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-chateau-du-tariquet-vsop-bas-armagnac",
@@ -2582,13 +2601,12 @@
     "region": "Bas-Armagnac, Francuska",
     "country": "Francuska",
     "abv": 40.0,
-    "body": 4,
+    "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "suho-voce",
-      "prune",
-      "zacini",
-      "hrast"
+      "citrus",
+      "hrast",
+      "prune"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -2618,7 +2636,8 @@
     "notes": {
       "hr": "Pristupačan armagnac — rustikalniji i suši od konjaka.",
       "en": "Approachable armagnac — more rustic and drier than cognac."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-h-by-hine-vsop-fine-champagne-cognac-design-40-vol-0-7l-u-poklon-kutiji",
@@ -2631,10 +2650,9 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "voce",
-      "vanilija",
-      "zacini",
-      "hrast"
+      "cvjetno",
+      "med",
+      "vanilija"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -2664,7 +2682,8 @@
     "notes": {
       "hr": "Britanski dvorski dobavljač — svjež, voćni stil.",
       "en": "The British court's supplier — fresh, fruity style."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-hine-rare-vsop-the-original-fine-champagne-cognac-40-vol-0-7l-u-poklon-kutiji",
@@ -2677,10 +2696,9 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "voce",
-      "vanilija",
-      "zacini",
-      "hrast"
+      "cvjetno",
+      "med",
+      "vanilija"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -2710,7 +2728,8 @@
     "notes": {
       "hr": "Britanski dvorski dobavljač — svjež, voćni stil.",
       "en": "The British court's supplier — fresh, fruity style."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-hine-rare-vsop",
@@ -2723,10 +2742,9 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "voce",
-      "vanilija",
-      "zacini",
-      "hrast"
+      "cvjetno",
+      "med",
+      "vanilija"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -2756,7 +2774,8 @@
     "notes": {
       "hr": "Britanski dvorski dobavljač — svjež, voćni stil.",
       "en": "The British court's supplier — fresh, fruity style."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-janneau-vsop-grand-armagnac-40-vol-0-7l-gb",
@@ -2766,13 +2785,12 @@
     "region": "Bas-Armagnac, Francuska",
     "country": "Francuska",
     "abv": 40.0,
-    "body": 4,
+    "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "suho-voce",
-      "prune",
-      "zacini",
-      "hrast"
+      "hrast",
+      "voce",
+      "zacini"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -2802,7 +2820,8 @@
     "notes": {
       "hr": "Pristupačan armagnac — rustikalniji i suši od konjaka.",
       "en": "Approachable armagnac — more rustic and drier than cognac."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-janneau-xo-grand-armagnac-40-vol-0-7l-gb",
@@ -2815,10 +2834,9 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "suho-voce",
+      "hrast",
       "prune",
-      "zacini",
-      "hrast"
+      "suho-voce"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -2848,7 +2866,8 @@
     "notes": {
       "hr": "Pristupačni XO armagnac — mekši, karamelni stil.",
       "en": "Accessible XO armagnac — a softer caramel style."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-janneau-xo-royal",
@@ -2861,10 +2880,9 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "suho-voce",
+      "hrast",
       "prune",
-      "zacini",
-      "hrast"
+      "tamno-voce"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -2894,7 +2912,8 @@
     "notes": {
       "hr": "Pristupačni XO armagnac — mekši, karamelni stil.",
       "en": "Accessible XO armagnac — a softer caramel style."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-lepanto-solera-gran-reserva",
@@ -2951,12 +2970,11 @@
     "country": "Francuska",
     "abv": 40.0,
     "body": 4,
-    "sweetness": 3,
+    "sweetness": 2,
     "flavorTags": [
-      "suho-voce",
-      "kakao",
-      "zacini",
-      "koza"
+      "hrast",
+      "orasasti",
+      "suho-voce"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -2986,7 +3004,8 @@
     "notes": {
       "hr": "Suhlji, orašastiji stil (bez borderies slatkoće u VSOP-u; Cordon Bleu = klasik za cigare).",
       "en": "Drier, nuttier style (Cordon Bleu is a cigar classic)."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-nonino-grappa-antica-cuvee-5",
@@ -3077,9 +3096,9 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
+      "jabuka",
       "suho-voce",
-      "tamno-voce",
-      "vanilija"
+      "voce"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -3104,7 +3123,8 @@
     "notes": {
       "hr": "Od amarone komine — suho voće i toplina appassimenta.",
       "en": "From amarone pomace — dried fruit and appassimento warmth."
-    }
+    },
+    "profileEstimated": true
   },
   {
     "id": "br-tariquet-armagnac-vsop-40-vol-0-5l-u-poklon-kutiji",
@@ -3114,13 +3134,12 @@
     "region": "Bas-Armagnac, Francuska",
     "country": "Francuska",
     "abv": 40.0,
-    "body": 4,
+    "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "suho-voce",
-      "prune",
-      "zacini",
-      "hrast"
+      "citrus",
+      "hrast",
+      "prune"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -3150,7 +3169,8 @@
     "notes": {
       "hr": "Pristupačan armagnac — rustikalniji i suši od konjaka.",
       "en": "Approachable armagnac — more rustic and drier than cognac."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-tariquet-armagnac-vsop-40-vol-0-7l-u-poklon-kutiji",
@@ -3160,13 +3180,12 @@
     "region": "Bas-Armagnac, Francuska",
     "country": "Francuska",
     "abv": 40.0,
-    "body": 4,
+    "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "suho-voce",
-      "prune",
-      "zacini",
-      "hrast"
+      "citrus",
+      "hrast",
+      "prune"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -3196,7 +3215,8 @@
     "notes": {
       "hr": "Pristupačan armagnac — rustikalniji i suši od konjaka.",
       "en": "Approachable armagnac — more rustic and drier than cognac."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-davidoff-xo-prestige-extra-old-cognac-40-vol-0-7l-u-poklon-kutiji",
@@ -3207,12 +3227,11 @@
     "country": "Francuska",
     "abv": 40.0,
     "body": 4,
-    "sweetness": 3,
+    "sweetness": 2,
     "flavorTags": [
-      "suho-voce",
-      "kakao",
-      "zacini",
-      "koza"
+      "duhan",
+      "hrast",
+      "suho-voce"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -3239,7 +3258,8 @@
     "notes": {
       "hr": "Heuristika — cognac-xo, cognac, xo",
       "en": ""
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-hennessy-xxo",
@@ -3249,12 +3269,12 @@
     "region": "Cognac, Francuska",
     "country": "Francuska",
     "abv": 40,
-    "body": 3,
+    "body": 5,
     "sweetness": 3,
     "flavorTags": [
-      "voce",
-      "vanilija",
-      "hrast"
+      "kakao",
+      "suho-voce",
+      "zacini"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -3284,7 +3304,8 @@
     "notes": {
       "hr": "Iznad XO-a — dugo odležane eau-de-vie, zaokružen i bogat.",
       "en": "Above XO — long-aged eaux-de-vie, rounded and rich."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-martell-chanteloup-xxo",
@@ -3294,12 +3315,12 @@
     "region": "Cognac, Francuska",
     "country": "Francuska",
     "abv": 40,
-    "body": 3,
+    "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "voce",
-      "vanilija",
-      "hrast"
+      "kakao",
+      "orasasti",
+      "suho-voce"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -3329,7 +3350,8 @@
     "notes": {
       "hr": "Iznad XO-a — elegantni Martellov stil s Borderies dubinom.",
       "en": "Above XO — Martell's elegant style with Borderies depth."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-martell-cohiba",
@@ -3339,12 +3361,12 @@
     "region": "Cognac, Francuska",
     "country": "Francuska",
     "abv": 40,
-    "body": 3,
-    "sweetness": 3,
+    "body": 4,
+    "sweetness": 2,
     "flavorTags": [
-      "voce",
-      "vanilija",
-      "hrast"
+      "hrast",
+      "koza",
+      "suho-voce"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -3374,7 +3396,8 @@
     "notes": {
       "hr": "Limitirano izdanje za cigarske entuzijaste — konjak blendiran za Cohiba cigaru.",
       "en": "Limited edition for cigar enthusiasts — cognac blended for the Cohiba cigar."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-ararat-ani-7",
@@ -3387,9 +3410,9 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "suho-voce",
-      "cokolada",
-      "zacini"
+      "citrus",
+      "hrast",
+      "voce"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -3419,7 +3442,8 @@
     "notes": {
       "hr": "Sedmogodišnji međukorak (0,5 l u HR ponudi) — mekši od Akhtamara, suho voće i vanilija.",
       "en": "The seven-year middle step (0.5 l in the Croatian offer) — softer than Akhtamar, dried fruit and vanilla."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-asbach-selection-extra-old-21-jears-40-vol-0-7l-u-poklon-kutiji",
@@ -3474,9 +3498,9 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
+      "hrast",
       "jabuka",
-      "cimet",
-      "hrast"
+      "karamela"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -3506,7 +3530,8 @@
     "notes": {
       "hr": "Dostupniji calvados — pečena jabuka i karamela.",
       "en": "The accessible calvados — baked apple and caramel."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-boulard-calvados-vsop",
@@ -3519,9 +3544,9 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
+      "hrast",
       "jabuka",
-      "cimet",
-      "hrast"
+      "karamela"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -3551,7 +3576,8 @@
     "notes": {
       "hr": "Dostupniji calvados — pečena jabuka i karamela.",
       "en": "The accessible calvados — baked apple and caramel."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-camus-vsop-borderies",
@@ -3564,9 +3590,8 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "voce",
-      "vanilija",
-      "zacini",
+      "citrus",
+      "cvjetno",
       "hrast"
     ],
     "additiveStatus": "clean",
@@ -3597,7 +3622,8 @@
     "notes": {
       "hr": "Borderies cvjetnost — mekan, mirisan konjak.",
       "en": "Borderies florality — a soft, perfumed cognac."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-camus-vsop-borderies-single-estate-cognac-40-vol-0-7l-u-poklon-kutiji",
@@ -3610,9 +3636,8 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "voce",
-      "vanilija",
-      "zacini",
+      "citrus",
+      "cvjetno",
       "hrast"
     ],
     "additiveStatus": "clean",
@@ -3643,7 +3668,8 @@
     "notes": {
       "hr": "Borderies cvjetnost — mekan, mirisan konjak.",
       "en": "Borderies florality — a soft, perfumed cognac."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-gran-duque-d-alba-solera-gran-reserva",
@@ -3880,8 +3906,7 @@
     "body": 4,
     "sweetness": 3,
     "flavorTags": [
-      "karamela",
-      "suho-voce",
+      "anis",
       "hrast"
     ],
     "additiveStatus": "unknown",
@@ -3915,7 +3940,8 @@
     "notes": {
       "hr": "Torres 20 Imperial: više hrasta i težine. Profil ostaje u stilu brandy-spanish (Katalonija, Španjolska). Katalonski value — pouzdan, mekan, dostupan.",
       "en": "Torres 20 Imperial: more oak and weight. Profile stays in the brandy-spanish style (Katalonija, Španjolska). Catalan value — reliable, soft, widely available."
-    }
+    },
+    "profileEstimated": true
   },
   {
     "id": "br-torres-20",
@@ -3970,12 +3996,12 @@
     "region": "Cognac, Francuska",
     "country": "Francuska",
     "abv": 40.0,
-    "body": 3,
+    "body": 2,
     "sweetness": 3,
     "flavorTags": [
-      "voce",
+      "hrast",
       "vanilija",
-      "hrast"
+      "voce"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -4005,7 +4031,8 @@
     "notes": {
       "hr": "Mladi standard — oštriji, više za koktele nego finu cigaru.",
       "en": "The young standard — sharper, more for cocktails than a fine cigar."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-hennessy-vs-40-vol-0-7l",
@@ -4015,12 +4042,12 @@
     "region": "Cognac, Francuska",
     "country": "Francuska",
     "abv": 40.0,
-    "body": 3,
+    "body": 2,
     "sweetness": 3,
     "flavorTags": [
-      "voce",
+      "hrast",
       "vanilija",
-      "hrast"
+      "voce"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -4050,7 +4077,8 @@
     "notes": {
       "hr": "Mladi standard — oštriji, više za koktele nego finu cigaru.",
       "en": "The young standard — sharper, more for cocktails than a fine cigar."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-ararat-5-stars",
@@ -4063,8 +4091,8 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "suho-voce",
-      "cokolada",
+      "hrast",
+      "voce",
       "zacini"
     ],
     "additiveStatus": "unknown",
@@ -4095,7 +4123,8 @@
     "notes": {
       "hr": "Ulaz u Ararat asortiman (5 g.) — vedar, voćan, pun okusa za tu cijenu.",
       "en": "The entry to the Ararat range (5 y) — bright, fruity, full-flavoured for the price."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-asbach-8-privatbrand",
@@ -4150,13 +4179,12 @@
     "region": "Jerez, Španjolska",
     "country": "Španjolska",
     "abv": 40.0,
-    "body": 4,
+    "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "orah",
+      "hrast",
       "karamela",
-      "suho-voce",
-      "hrast"
+      "suho-voce"
     ],
     "additiveStatus": "moderate",
     "additiveDetail": {
@@ -4189,7 +4217,8 @@
     "notes": {
       "hr": "Fundador Supremo 12: Profil ostaje u stilu brandy-de-jerez (Jerez, Španjolska). Budget Jerez — sladak, jednostavan, uz opuštenu večer.",
       "en": "Fundador Supremo 12: Profile stays in the brandy-de-jerez style (Jerez, Španjolska). Budget Jerez — sweet, simple, for a relaxed evening."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "br-sherry-cask",

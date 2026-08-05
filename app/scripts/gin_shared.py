@@ -51,13 +51,97 @@ ECUGA_CATEGORIES: list[tuple[str, str, str]] = [
 
 # pattern, style, region, body, sweetness, botanicalProfile, tags
 STYLE_RULES: list[tuple[str, str, str, int, int, str, list[str]]] = [
-    (r"plymouth|black friars", "plymouth", "Plymouth, Engleska", 3, 2, "classic-juniper", ["travnato", "biljno", "citrus"]),
-    (r"beefeater|tanqueray|bombay|broker|sipsmith|no\.?\s*3|fords|hayman's|city of london", "london-dry", "Engleska", 3, 2, "classic-juniper", ["travnato", "citrus", "biljno"]),
-    (r"hendrick|monkey 47|botanist|roku|ki\s*no\s*bi|kinobi|malfy|gin mare|nordes|elephant|citadelle|g'?vine|silent pool|the illusionist|copperhead|aviation|bathtub|bobby", "contemporary", "World", 3, 2, "botanical", ["cvjetno", "citrus", "zacini"]),
-    (r"gin mare|nordés|nordes|malfy|portofino|mediterranean", "contemporary", "Mediteran", 3, 2, "mediterranean", ["biljno", "citrus", "travnato"]),
-    (r"roku|ki no bi|kinobi|nikka|etsu|japanese", "contemporary", "Japan", 3, 2, "botanical", ["cvjetno", "citrus", "zacini"]),
-    (r"aura|maraska|badel|croati|istra|dalma|hrvatsk", "croatian", "Hrvatska", 3, 2, "botanical", ["biljno", "citrus", "zacini"]),
-    (r"tanqueray\s+no|no\.?\s*ten|ten\b|sipsmith v\.?j\.?o\.?p|premium", "premium-dry", "Engleska", 3, 2, "classic-juniper", ["travnato", "citrus", "cvjetno"]),
+    # ── Brand-specific rules (most specific first) ──────────────────────────────
+    # Monkey 47: 47 botanicals incl. blackberries, lingonberries, spruce (producer)
+    (r"monkey\s*47", "contemporary", "Schwarzwald, Njema\u010dka", 3, 1, "botanical", ["borovica", "tamno-voce", "zacini"]),
+    # Hendrick's: rose, cucumber, chamomile, elderflower (producer)
+    (r"hendrick", "contemporary", "\u0160kotska", 3, 3, "botanical", ["cvjetno", "kamilica", "biljno"]),
+    # The Botanist: 22 Islay botanicals (producer)
+    (r"botanist", "contemporary", "Islay, \u0160kotska", 3, 2, "botanical", ["biljno", "cvjetno", "citrus"]),
+    # Ki No Bi: yuzu, sansho pepper, ginger, green tea (Kyoto Distillery)
+    (r"ki\s*no\s*bi|kinobi", "contemporary", "Kyoto, Japan", 3, 2, "botanical", ["citrus", "papar", "biljno"]),
+    # Roku: sakura, yuzu, sansho pepper (Suntory)
+    (r"\broku\b", "contemporary", "Japan", 3, 2, "botanical", ["cvjetno", "citrus", "papar"]),
+    # Nikka Coffey Gin: grain-forward, Japanese citrus (Nikka)
+    (r"nikka.*coffey.*gin|nikka.*gin", "contemporary", "Japan", 3, 2, "botanical", ["citrus", "travnato", "kamilica"]),
+    # Silent Pool editions
+    (r"silent pool.*rose", "contemporary", "World", 3, 3, "botanical", ["cvjetno", "kamilica", "slatko"]),
+    (r"silent pool.*rare citrus|silent pool.*citrus", "contemporary", "World", 2, 2, "botanical", ["citrus", "cvjetno", "kamilica"]),
+    (r"silent pool", "contemporary", "World", 3, 3, "botanical", ["cvjetno", "kamilica", "med"]),
+    # Copperhead editions
+    (r"copperhead.*barrel", "contemporary", "World", 4, 2, "botanical", ["zacini", "hrast", "citrus"]),
+    (r"copperhead.*black batch", "contemporary", "World", 3, 2, "botanical", ["zacini", "citrus", "biljno"]),
+    (r"copperhead.*alchemist", "contemporary", "World", 3, 2, "botanical", ["citrus", "zacini", "biljno"]),
+    (r"copperhead", "contemporary", "World", 3, 2, "botanical", ["zacini", "citrus", "korijen"]),
+    # Citadelle Reserve: aged (producer)
+    (r"citadelle.*reserve", "contemporary", "Francuska", 4, 2, "botanical", ["anis", "hrast", "citrus"]),
+    (r"citadelle", "contemporary", "Francuska", 3, 2, "botanical", ["anis", "biljno", "citrus"]),
+    # Aviation: lavender, sarsaparilla, rose petal (producer)
+    (r"aviation", "contemporary", "SAD", 3, 2, "botanical", ["cvjetno", "biljno", "korijen"]),
+    # Elephant Gin editions
+    (r"elephant.*orange", "contemporary", "World", 3, 3, "botanical", ["citrus", "kakao", "zacini"]),
+    (r"elephant", "contemporary", "World", 3, 2, "botanical", ["biljno", "suho-voce", "zacini"]),
+    # Amuerte Coca Leaf editions
+    (r"amuerte.*red", "contemporary", "World", 3, 3, "botanical", ["tamno-voce", "biljno", "zacini"]),
+    (r"amuerte.*black", "contemporary", "World", 4, 2, "botanical", ["biljno", "zacini", "citrus"]),
+    (r"amuerte.*orange", "contemporary", "World", 3, 2, "botanical", ["citrus", "biljno", "cvjetno"]),
+    (r"amuerte.*yellow", "contemporary", "World", 2, 2, "botanical", ["citrus", "cvjetno", "biljno"]),
+    (r"amuerte.*blue", "contemporary", "World", 3, 2, "botanical", ["biljno", "anis", "citrus"]),
+    (r"amuerte.*green", "contemporary", "World", 3, 1, "botanical", ["biljno", "travnato", "citrus"]),
+    (r"amuerte.*white", "contemporary", "World", 3, 2, "botanical", ["borovica", "citrus", "biljno"]),
+    (r"amuerte", "contemporary", "World", 3, 2, "botanical", ["biljno", "citrus", "zacini"]),
+    # Sipsmith editions
+    (r"sipsmith.*v\.?j\.?o\.?p|sipsmith.*vjop", "premium-dry", "London, UK", 4, 1, "classic-juniper", ["borovica", "citrus", "zacini"]),
+    (r"sipsmith.*zesty|sipsmith.*orange", "london-dry", "Engleska", 3, 2, "classic-juniper", ["citrus", "biljno", "travnato"]),
+    (r"sipsmith", "london-dry", "London, UK", 3, 2, "classic-juniper", ["borovica", "citrus", "travnato"]),
+    # Gin Mare: olive, rosemary, thyme, basil (producer)
+    (r"gin mare", "contemporary", "Mediteran", 3, 2, "mediterranean", ["biljno", "travnato", "zacini"]),
+    # Malfy editions
+    (r"malfy.*arancia|malfy.*orange", "contemporary", "Mediteran", 2, 2, "mediterranean", ["citrus", "voce", "biljno"]),
+    (r"malfy.*limone|malfy.*lemon", "contemporary", "Mediteran", 2, 2, "mediterranean", ["citrus", "biljno", "cvjetno"]),
+    (r"malfy", "contemporary", "Mediteran", 3, 2, "mediterranean", ["citrus", "biljno", "travnato"]),
+    # Four Pillars: Australian botanicals, Tassie pepperberry (producer)
+    (r"four pillars", "contemporary", "Australija", 3, 2, "botanical", ["biljno", "papar", "citrus"]),
+    # ── Plymouth (root spice recipe) ──────────────────────────────────────────
+    (r"plymouth.*navy", "plymouth", "Plymouth, UK", 4, 1, "classic-juniper", ["borovica", "korijen", "zacini"]),
+    (r"plymouth|black friars", "plymouth", "Plymouth, UK", 3, 2, "classic-juniper", ["borovica", "korijen", "biljno"]),
+    # ── London Dry & variants ─────────────────────────────────────────────────
+    # Beefeater 24: green tea + standard botanicals (producer)
+    (r"beefeater.*24", "london-dry", "London, UK", 3, 2, "classic-juniper", ["travnato", "citrus", "cvjetno"]),
+    # Beefeater standard: traditional recipe incl. coriander, licorice, angelica
+    (r"beefeater", "london-dry", "London, UK", 3, 2, "classic-juniper", ["borovica", "citrus", "zacini"]),
+    # Tanqueray No. Ten: grapefruit, lime blossom, chamomile (producer)
+    (r"tanqueray\s+no\.?\s*ten|tanqueray\s+n\.?\s*ten|tanqueray.*10", "premium-dry", "London, UK", 3, 2, "classic-juniper", ["citrus", "cvjetno", "travnato"]),
+    # Tanqueray standard: classic London dry
+    (r"tanqueray", "london-dry", "Engleska", 3, 2, "classic-juniper", ["borovica", "citrus", "travnato"]),
+    # No. 3: angelica root, cardamom, coriander (producer)
+    (r"no\.?\s*3\b|number\s*three", "london-dry", "Engleska", 3, 2, "classic-juniper", ["borovica", "korijen", "citrus"]),
+    # Windspiel editions
+    (r"windspiel.*pfeffer|windspiel.*kampot", "premium-dry", "Njema\u010dka", 3, 2, "botanical", ["papar", "biljno", "citrus"]),
+    (r"windspiel.*kaffee|windspiel.*caxambu", "premium-dry", "Njema\u010dka", 3, 2, "botanical", ["kava", "zacini", "biljno"]),
+    (r"windspiel", "premium-dry", "Njema\u010dka", 3, 2, "classic-juniper", ["borovica", "citrus", "biljno"]),
+    # Scapegrace Gold: navy-strength premium NZ dry
+    (r"scapegrace.*gold", "premium-dry", "Engleska", 4, 1, "classic-juniper", ["borovica", "citrus", "zacini"]),
+    # Akori, Roby Marton: Italian premium dry
+    (r"akori", "premium-dry", "Engleska", 3, 2, "classic-juniper", ["biljno", "borovica", "travnato"]),
+    (r"roby\s*marton", "premium-dry", "Italija", 3, 2, "classic-juniper", ["biljno", "borovica", "citrus"]),
+    # Generic premium-dry fallback
+    (r"premium.*dry|dry.*premium", "premium-dry", "Engleska", 3, 2, "classic-juniper", ["borovica", "citrus", "biljno"]),
+    # ── Mediterranean ────────────────────────────────────────────────────────
+    (r"nordes", "contemporary", "Galicija, \u0160panjolska", 3, 2, "mediterranean", ["biljno", "citrus", "travnato"]),
+    (r"nordes|nordés|portofino|mediterranean", "contemporary", "Mediteran", 3, 2, "mediterranean", ["biljno", "citrus", "travnato"]),
+    # ── Japanese ──────────────────────────────────────────────────────────────
+    (r"roku|ki no bi|kinobi|nikka|etsu|japanese", "contemporary", "Japan", 3, 2, "botanical", ["cvjetno", "citrus", "papar"]),
+    # ── Croatian ──────────────────────────────────────────────────────────────
+    # Aura Karbun: navy strength, charcoal (producer)
+    (r"aura.*karbun", "croatian", "Istra, Hrvatska", 4, 1, "botanical", ["biljno", "borovica", "citrus"]),
+    (r"aura|maraska|badel|croati|istra|dalma|hrvatsk|dugave|dalmatian|dalmatinski|old pilot", "croatian", "Hrvatska", 3, 2, "botanical", ["biljno", "citrus", "zacini"]),
+    # Old Pilot's Dalmatian: Dalmatian lavender, rosemary (producer)
+    (r"old pilot|dalmatian.*gin", "croatian", "Hrvatska", 3, 2, "mediterranean", ["biljno", "cvjetno", "travnato"]),
+    # ── Generic London dry fallback ───────────────────────────────────────────
+    (r"london\s*dry|dry gin|bombay|broker|fords|hayman|city of london|gordons|gordon's", "london-dry", "Engleska", 3, 2, "classic-juniper", ["borovica", "citrus", "travnato"]),
+    # ── Generic contemporary fallback ─────────────────────────────────────────
+    (r"contemporary|g'?vine|the illusionist|bathtub|bobby", "contemporary", "World", 3, 2, "botanical", ["cvjetno", "citrus", "zacini"]),
 ]
 
 NON_PAIRABLE_RE = re.compile(
