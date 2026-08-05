@@ -42,6 +42,19 @@ GENERIC = {
     "viña", "san", "santa", "dom", "ile", "isle",
 }
 
+# Vezne rijeci koje DRZE ime marke na okupu: "Wray & Nephew", "Baron de
+# Sigognac", "Concha y Toro", "Gold of Mauritius", "Château du Tariquet".
+# Rezanje na prvoj rijeci ondje daje krnjatak ("Wray", "Baron", "Château du").
+# Clanovi ("la", "el") namjerno NISU ovdje: "Hidalgo La Gitana Manzanilla" je
+# Hidalgo, a ne "Hidalgo La Gitana".
+CONNECTORS = {
+    "&", "and", "y", "e", "de", "del", "della", "di", "du", "des", "da", "dos",
+    "of", "van", "von", "zu",
+}
+
+# Najvise rijeci u imenu marke — brana protiv gutanja cijelog naziva boce.
+MAX_BRAND_WORDS = 4
+
 # Scrape repovi koji nisu dio imena.
 TAIL = re.compile(
     r"\s*(?:\d+[.,]?\d*\s*%\s*Vol\.?.*|u poklon kutij.*|"
@@ -58,6 +71,35 @@ def clean(name: str) -> str:
 
 def _norm(w: str) -> str:
     return w.strip("(),.'’\"").lower()
+
+
+def _namelike(w: str) -> bool:
+    """Rijec koja moze biti dio imena: pocinje slovom, nije broj ni zagrada."""
+    s = w.strip("(),.'’\"")
+    return bool(s) and s[0].isalpha() and not s[0].islower()
+
+
+def _span_connectors(words: list[str], take: int) -> int:
+    """Prosiri odabir preko veznih rijeci ("&", "de", "y", "of"...).
+
+    Dva slucaja: vezna rijec je zadnja uzeta ("Château du" -> + "Tariquet") ili
+    je sljedeca ("Wray" + "&" + "Nephew"). Staje na svemu ostalom, pa opisni
+    rep ("Overproof", "Reserva", "10 Ans") nikad ne udje u marku.
+    """
+    while take < len(words) and take < MAX_BRAND_WORDS:
+        last = _norm(words[take - 1])
+        nxt = _norm(words[take])
+        if last in CONNECTORS and _namelike(words[take]):
+            take += 1
+        elif (
+            nxt in CONNECTORS
+            and take + 1 < len(words)
+            and _namelike(words[take + 1])
+        ):
+            take += 2
+        else:
+            break
+    return min(take, len(words))
 
 
 def derive_all(names: dict[str, str]) -> dict[str, str]:
@@ -77,7 +119,7 @@ def derive_all(names: dict[str, str]) -> dict[str, str]:
         group = [n for n in values if tuple(_norm(w) for w in n.split()[:level]) == key]
         if len(group) < 2:
             take = 2 if _norm(words[0]) in GENERIC and len(words) > 1 else 1
-            return " ".join(words[:take])
+            return " ".join(words[: _span_connectors(words, take)])
         split = [g.split() for g in group]
         lcp: list[str] = []
         for i in range(min(len(s) for s in split)):

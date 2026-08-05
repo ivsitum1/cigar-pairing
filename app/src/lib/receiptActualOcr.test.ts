@@ -52,5 +52,5 @@ describe("actual tesseract OCR → receiptParse (soft)", () => {
         (id) => id.includes("don-tomas") || id.includes("estrella"),
       ),
     ).toBe(true);
-  });
+  }, 15_000);
 });

@@ -169,6 +169,10 @@ const STRINGS = {
   "pair.excelHint": { hr: "Urednička preporuka", en: "Curated recommendation" },
   "pair.curatedWarn": { hr: "Uredničko upozorenje", en: "Curated warning" },
   "pair.suggestions": { hr: "Prijedlozi", en: "Suggestions" },
+  "pair.noFlavorProfile": {
+    hr: "Za ovu cigaru nemamo profil okusa — prijedlozi su izvedeni samo iz tijela i snage, pa se među sličnim cigarama ponavljaju.",
+    en: "We have no flavour profile for this cigar — suggestions come from body and strength alone, so similar cigars get similar picks.",
+  },
   "pair.next": { hr: "Sljedeći prijedlog", en: "Next suggestion" },
   "pair.coffeeAlt": { hr: "Bezalkoholna opcija — kava", en: "Non-alcoholic option — coffee" },
   "session.log": { hr: "Zabilježi večer", en: "Log the evening" },

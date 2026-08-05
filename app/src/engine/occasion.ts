@@ -26,8 +26,13 @@ import { POWER_TAGS, WEIGHTS, normalizeTags } from "./rules";
 export type OccasionFilter = "any" | "morning" | "afternoon" | "evening";
 export type Occasion = Exclude<OccasionFilter, "any">;
 
-/** Koliko bodova ispod najboljeg smije biti kandidat da ga prilika još smije pretaknuti. */
-export const OCCASION_BAND_MARGIN = 6;
+/**
+ * Koliko bodova ispod najboljeg smije biti kandidat da ga prilika još smije
+ * pretaknuti. Banda se računa po rawScore (nestisnutom), koji je veći od
+ * prikaznog kad su parovi jaki (iznad koljena pri 85). Margina je 12 da se
+ * poravna s prijašnjim ponašanjem koji je koristio prikazni score (0–100).
+ */
+export const OCCASION_BAND_MARGIN = 12;
 
 /**
  * Soft-only: ne isključuje pića. Raniji hard filter je blage cigare navečer
@@ -295,8 +300,10 @@ export function rankByOccasion<T extends Drink>(
 ): PairingResult<T>[] {
   if (!occasion || ranked.length < 2) return ranked;
 
-  const cutoff = ranked[0].score - margin;
-  const bandSize = ranked.findIndex((r) => r.score < cutoff);
+  // Pojas se racuna po NESTISNUTOM rezultatu: prikazni je stisnut pri vrhu, pa
+  // bi na saturiranom vrhu ljestvice pojas progutao i osjetno slabije parove.
+  const cutoff = ranked[0].rawScore - margin;
+  const bandSize = ranked.findIndex((r) => r.rawScore < cutoff);
   const end = bandSize === -1 ? ranked.length : bandSize;
   if (end < 2) return ranked;
 
@@ -309,7 +316,7 @@ export function rankByOccasion<T extends Drink>(
   const reordered = [...band].sort(
     (a, b) =>
       (affinity.get(b.item.id) ?? 0) - (affinity.get(a.item.id) ?? 0) ||
-      b.score - a.score ||
+      b.rawScore - a.rawScore ||
       (b.item.qualityScore ?? 0) - (a.item.qualityScore ?? 0) ||
       a.item.name.localeCompare(b.item.name),
   );

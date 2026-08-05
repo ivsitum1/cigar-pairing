@@ -9,6 +9,7 @@ import { cigarItemId } from "../lib/cigarItemId";
 import { cigarDescription } from "../lib/cigarNote";
 import { totalStock, useHumidors } from "../store/humidor";
 import { uniqueVitolas } from "../lib/cigarVitola";
+import { formatEur } from "../lib/cigarPrice";
 
 // Cijena cigare koja odgovara odabranom tržištu (HR = konkretna, ostalo = "provjeri")
 export function CigarPrice({ cigar }: { cigar: Cigar }) {
@@ -22,7 +23,7 @@ export function CigarPrice({ cigar }: { cigar: Cigar }) {
     <span>
       {fromMany ? `${t("price.from")} ` : ""}
       {approx ? "~" : ""}
-      {price.toFixed(price % 1 ? 2 : 0)} €
+      {formatEur(price)}
     </span>
   );
 }

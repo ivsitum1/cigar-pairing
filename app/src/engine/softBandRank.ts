@@ -24,14 +24,20 @@ export function brandDiverse<T extends { brand: string }>(
   return diverseBy(ranked, (item) => item.brand);
 }
 
-/** Keep results within `margin` points of the top score. */
+/**
+ * Keep results within `margin` points of the top score.
+ * Uses the unclamped `rawScore`: the displayed score saturates at 100, which
+ * would sweep dozens of unrelated bottles into the band.
+ */
+const bandScore = <T>(r: PairingResult<T>): number => r.rawScore ?? r.score;
+
 export function softBand<T>(
   ranked: PairingResult<T>[],
   margin: number = SOFT_BAND_MARGIN,
 ): PairingResult<T>[] {
   if (ranked.length === 0) return [];
-  const maxScore = ranked[0].score;
-  return ranked.filter((r) => r.score >= maxScore - margin);
+  const maxScore = bandScore(ranked[0]);
+  return ranked.filter((r) => bandScore(r) >= maxScore - margin);
 }
 
 /** UTC calendar day `YYYY-MM-DD` (stable for the UTC day). */
@@ -113,21 +119,47 @@ export function softBandWindow<T>(
 }
 
 /**
+ * Ravnopravni prvi rezultati unutar ovoliko bodova. Namjerno usko: rotacija
+ * ispod smije birati SAMO među stvarno izjednačenima.
+ */
+export const TIE_EPSILON = 0.5;
+
+/**
+ * Prvi rezultat, ali kad ih je više izjednačenih (unutar TIE_EPSILON) bira se
+ * deterministički po sidru. Bez sidra vraća `ranked[0]` — staro ponašanje.
+ */
+function pickAmongTied<T extends { id: string }>(
+  ranked: PairingResult<T>[],
+  anchorId?: string,
+  tieKeyOf?: (item: T) => string,
+): PairingResult<T> {
+  const first = ranked[0];
+  if (!anchorId) return first;
+  const best = bandScore(first);
+  const tied: PairingResult<T>[] = [];
+  const seen = new Set<string>();
+  for (const r of ranked) {
+    if (best - bandScore(r) > TIE_EPSILON) break;
+    const key = tieKeyOf ? tieKeyOf(r.item) : r.item.id;
+    if (seen.has(key)) continue;
+    seen.add(key);
+    tied.push(r);
+  }
+  if (tied.length <= 1) return first;
+  return tied[stableHash(anchorId) % tied.length];
+}
+
+/**
  * Stable #1 + button rotation among near-equals.
- * - cycle 0 returns `ranked[0]` (ili, uz `tieSeed`, jednog od bodovno
- *   izjednačenih s vrhom — vidi dolje).
- * - prvi krug rotacije uzima po jedno piće iz svakog ključa (stila), kao i
- *   prije; sljedeći krugovi idu u DUBINU istog ključa.
+ * - cycle 0 is stable per `anchorId` (no day-hash drift).
+ * - later cycles walk a key-diverse soft band, with #1 pinned at index 0.
  *
- * Zašto dubina: kad katalog nema čime razlikovati boce (46 konjaka staje u
- * dva profila — svi XO dijele tijelo, slatkoću i note), pojas na vrhu su
- * deseci gotovo istih bodova. Stari pool je uzimao samo najbolju bocu po
- * stilu, pa je „Sljedeći prijedlog” u konjaku često imao točno jednu opciju
- * i kartica je zauvijek pokazivala istu bocu.
- *
- * `tieSeed` (npr. `cigarId|dan`) rotira među SAVRŠENO izjednačenima na vrhu.
- * Kad engine doista ne razlikuje dvije boce, nema razloga da uvijek pobijedi
- * ista — a sjeme drži izbor stabilnim kroz dan i kroz re-render.
+ * Zašto `anchorId`: unutar kategorije pića dijele gotovo isti profil (37 od 70
+ * ginova ima identične tagove, tijelo i slatkoću), pa uz većinu cigara ispadne
+ * neriješeno na vrhu. Bez sidra bi razrješenje neriješenog (kvaliteta, pa ime)
+ * uz SVAKU cigaru izbacilo istu bocu. Sidro na id cigare bira među
+ * izjednačenima deterministički, ali različito po cigari — nikad ne pretječe
+ * boce koje su stvarno bolje pogođene (razlika > TIE_EPSILON).
  */
 export function stableBestRotate<T extends { id: string }>(
   ranked: PairingResult<T>[],
@@ -135,7 +167,10 @@ export function stableBestRotate<T extends { id: string }>(
   opts: {
     margin?: number;
     keyOf: (item: T) => string;
-    tieSeed?: string;
+    /** Cigara/piće za koje se predlaže — sidro rotacije među izjednačenima. */
+    anchorId?: string;
+    /** Ključ po kojem se izjednačeni sažimaju (npr. marka), da rotacija ne šeta po SKU-ovima iste boce. */
+    tieKeyOf?: (item: T) => string;
     /** Najmanji broj ponuda; ispod margine se dopunjuje po bodovima. */
     minPool?: number;
   },
@@ -149,13 +184,12 @@ export function stableBestRotate<T extends { id: string }>(
   }
 
   const margin = opts.margin ?? SOFT_BAND_MARGIN;
+  const top = pickAmongTied(ranked, opts.anchorId, opts.tieKeyOf);
+  // Build band from the full ranked list so that second-in-key items (e.g. a2
+  // when a1 is already at #1) are included in round-robin rotation.
   const band = softBand(ranked, margin);
 
-  const ties = band.filter((r) => r.score === ranked[0].score);
-  const head =
-    opts.tieSeed && ties.length > 1
-      ? ties[stableHash(opts.tieSeed) % ties.length]
-      : ranked[0];
+  const head = top;
 
   const groups = new Map<string, PairingResult<T>[]>();
   for (const r of band) {
@@ -179,7 +213,7 @@ export function stableBestRotate<T extends { id: string }>(
   }
 
   // kad vrh bježi za više od margine, pojas ostane sam — gumb „Sljedeći
-  // prijedlog” tada ne bi imao što ponuditi. Dopuni po bodovima, kao što
+  // prijedlog" tada ne bi imao što ponuditi. Dopuni po bodovima, kao što
   // softBandWindow pada na širi popis.
   const minPool = opts.minPool ?? SOFT_BAND_WINDOW;
   for (const r of ranked) {

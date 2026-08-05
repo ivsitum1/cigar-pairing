@@ -1,17 +1,19 @@
 import { describe, it, expect } from "vitest";
-import { scorePairing, pairCigarsForDrink, pairDrinksForCigar } from "./pairing";
+import { displayScore, scorePairing, pairCigarsForDrink, pairDrinksForCigar } from "./pairing";
 import type { Cigar, Drink } from "../types";
 import cigarsData from "../data/cigars.json";
 import rumsData from "../data/rums.json";
 import coffeesData from "../data/coffees.json";
 import winesData from "../data/wines.json";
 import brandiesData from "../data/brandies.json";
+import ginsData from "../data/gins.json";
 
 const cigars = cigarsData as Cigar[];
 const rums = rumsData as unknown as Drink[];
 const coffees = coffeesData as unknown as Drink[];
 const wines = winesData as unknown as Drink[];
 const brandies = brandiesData as unknown as Drink[];
+const gins = ginsData as unknown as Drink[];
 
 const byId = <T extends { id: string }>(arr: T[], id: string): T => {
   const found = arr.find((x) => x.id === id);
@@ -276,5 +278,85 @@ describe("pairing engine — Holts-style editorial validation", () => {
     expect(scorePairing(padron, zacapa).score).toBeGreaterThan(
       scorePairing(macanudo, zacapa).score,
     );
+  });
+});
+
+describe("rangiranje ne smije ovisiti o zasićenju prikaznog rezultata", () => {
+  it("vrh ljestvice se više ne slijepi na 100", () => {
+    // Cohiba + kognaci: zbroj pravila prelazi 100 kod nekoliko boca. Prije su
+    // se sve prikazivale kao 100 i vrh je odlučivala kvaliteta pića.
+    const cohiba = byId(cigars, "cig-cohiba-linea-clasica");
+    const ranked = pairDrinksForCigar(cohiba, brandies);
+    const over = ranked.filter((r) => r.rawScore > 100);
+    expect(over.length).toBeGreaterThan(1);
+    // strop je nestao — nijedan od njih se više ne prikazuje kao 100
+    expect(over.every((r) => r.score < 100)).toBe(true);
+    expect(ranked.every((r) => r.score > 0)).toBe(true);
+    // gdje se zbroj stvarno razlikuje, razlikuje se i prikaz
+    const top = ranked[0];
+    const lower = ranked.find((r) => top.rawScore - r.rawScore >= 5);
+    expect(lower).toBeDefined();
+    expect(top.score).toBeGreaterThan(lower!.score);
+  });
+
+  it("poredak je po rawScore, ne po prikaznom rezultatu", () => {
+    const cohiba = byId(cigars, "cig-cohiba-linea-clasica");
+    const ranked = pairDrinksForCigar(cohiba, [...brandies, ...rums, ...wines]);
+    for (let i = 1; i < ranked.length; i++) {
+      expect(ranked[i - 1].rawScore).toBeGreaterThanOrEqual(ranked[i].rawScore);
+    }
+  });
+
+  it("poklon-pakiranje ne pretječe običnu bocu kad je rezultat isti", () => {
+    const cohiba = byId(cigars, "cig-cohiba-linea-clasica");
+    const ranked = pairDrinksForCigar(cohiba, gins);
+    expect(ranked[0].item.name).not.toMatch(/poklon kutij|kiosk set/i);
+  });
+});
+
+describe("displayScore — normalizacija umjesto rezanja", () => {
+  it("sredina skale je nepromijenjena (svi pragovi u appu žive ondje)", () => {
+    for (const v of [10, 25, 38, 45, 52, 55, 60, 68, 75, 80, 82, 85]) {
+      expect(displayScore(v)).toBeCloseTo(v, 6);
+    }
+  });
+
+  it("strogo raste — poredak se ne može preokrenuti", () => {
+    let prev = -Infinity;
+    for (let raw = -60; raw <= 160; raw += 0.25) {
+      const d = displayScore(raw);
+      expect(d).toBeGreaterThan(prev);
+      prev = d;
+    }
+  });
+
+  it("ostaje unutar 0–100 i za rezultate izvan izmjerenog raspona", () => {
+    for (const raw of [-200, -40, -12, 0, 119, 145, 300]) {
+      const d = displayScore(raw);
+      expect(d).toBeGreaterThan(0);
+      expect(d).toBeLessThan(100);
+    }
+  });
+
+  it("nema skoka na koljenima (nagib 1 s obje strane)", () => {
+    for (const knee of [10, 85]) {
+      const left = (displayScore(knee) - displayScore(knee - 0.001)) / 0.001;
+      const right = (displayScore(knee + 0.001) - displayScore(knee)) / 0.001;
+      expect(right).toBeCloseTo(left, 2);
+      expect(right).toBeCloseTo(1, 2);
+    }
+  });
+
+  it("rep razdvaja ono što je prije bilo slijepljeno na 100", () => {
+    const spread = [100, 105, 110, 119].map((r) => Math.round(displayScore(r)));
+    expect(new Set(spread).size).toBe(spread.length);
+  });
+
+  it("prikazani postotak pada niz ljestvicu", () => {
+    const cohiba = byId(cigars, "cig-cohiba-linea-clasica");
+    const ranked = pairDrinksForCigar(cohiba, [...brandies, ...rums, ...wines]);
+    for (let i = 1; i < ranked.length; i++) {
+      expect(ranked[i - 1].score).toBeGreaterThanOrEqual(ranked[i].score);
+    }
   });
 });

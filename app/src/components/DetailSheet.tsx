@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { SheetShell } from "./SheetShell";
-import type { Cigar, Drink } from "../types";
+import type { Cigar, Drink, Region } from "../types";
 import { useI18n, STYLE_LABELS, ADDITIVE_LABELS, ADDITIVE_RULES } from "../i18n";
 import { flavorLabel } from "../engine/rules";
 import {
@@ -15,6 +15,7 @@ import {
 import { REGIONS } from "../data/shops";
 import { drinkBuyLink } from "../lib/drinkBuyLink";
 import { drinkAvailabilityHR, drinkShopLinks } from "../lib/drinkShopLinks";
+import { formatEur, vitolaPriceForMarket } from "../lib/cigarPrice";
 import { drinkNameLoc } from "../lib/drinkName";
 import { vitolaBlurb } from "../lib/vitolaInfo";
 import { resolveSamplerCigar } from "../lib/samplerLink";
@@ -234,6 +235,10 @@ function CigarDetails({
   const displayBrand = brandDisplayName(cigar.brand, market);
   const vitolaCrumb =
     cigar.vitolas.length === 1 ? cigar.vitolas[0].name : cigar.vitola;
+  // Bez odabranog tržišta ("Sve") cijena zna doći iz EU/USA kataloga — reci
+  // odakle je, da se HR i EU broj ne miješaju bez oznake.
+  const regionTag = (region: Region | null) =>
+    market === "ALL" && region && region !== "HR" ? ` ${region}` : "";
   return (
     <>
       {/* Brand › Line › Vitola — svaki crumb navigira gore */}
@@ -327,12 +332,9 @@ function CigarDetails({
         <div className="space-y-1">
           {cigar.vitolas.map((v) => {
             const blurb = vitolaBlurb(v.name, lang);
-            // cijena+link te vitole: HR (humidor) ili prva regija iz njenih regionLinks
-            const rl = v.regionLinks ?? {};
-            const region = (["HR", "EU", "USA"] as const).find((r) => rl[r]?.priceEUR != null);
-            const price = v.priceEUR ?? (region ? rl[region]!.priceEUR ?? null : null);
-            const url = v.url ?? (region ? rl[region]!.url : null);
-            const approx = v.priceEUR == null && region ? rl[region]!.priceApprox : false;
+            // cijena+link te vitole u ODABRANOM tržištu — isti razrješivač koji
+            // koristi popis i linija, pa je broj svugdje isti
+            const { price, url, approx, region } = vitolaPriceForMarket(v, market);
             return (
               <div
                 key={v.name}
@@ -346,10 +348,12 @@ function CigarDetails({
                     {price != null &&
                       (url ? (
                         <a href={url} target="_blank" rel="noreferrer" className="ml-1.5 text-zlato-2 underline decoration-zlato/40 underline-offset-2">
-                          {approx ? "~" : ""}{price.toFixed(2)} € ↗
+                          {approx ? "~" : ""}{formatEur(price)}{regionTag(region)} ↗
                         </a>
                       ) : (
-                        <span className="ml-1.5 text-zlato-2">{approx ? "~" : ""}{price.toFixed(2)} €</span>
+                        <span className="ml-1.5 text-zlato-2">
+                          {approx ? "~" : ""}{formatEur(price)}{regionTag(region)}
+                        </span>
                       ))}
                   </span>
                 </div>
@@ -675,7 +679,7 @@ function CigarBuyLinks({ cigar }: { cigar: Cigar }) {
                   const { price: priceNum, approx } = cigarShopLinkPrice(cigar, l);
                   const price =
                     priceNum != null
-                      ? `${approx ? "~" : ""}${priceNum.toFixed(priceNum % 1 ? 2 : 0)} €`
+                      ? `${approx ? "~" : ""}${formatEur(priceNum)}`
                       : null;
                   return (
                     <a

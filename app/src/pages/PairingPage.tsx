@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import type { Cigar, Drink, DrinkCategory, PairingResult, ServeStyle, Vitola } from "../types";
-import { ALL_DRINKS, CIGARS, brandDisplayName, brandSearchHaystack, cigarInRegion, cigarForItemId, cigarLinkForMarket, cigarPriceForMarket, drinkById, formatPrice, resolveCigarId } from "../data";
+import { ALL_DRINKS, CIGARS, brandDisplayName, brandSearchHaystack, cigarInRegion, cigarForItemId, cigarLinkForMarket, cigarPriceForMarket, drinkBrand, drinkById, formatPrice, resolveCigarId } from "../data";
 import { pairCigarsForDrink, pairDrinksForCigar } from "../engine/pairing";
 import { dayKey, softBandWindow, stableBestRotate } from "../engine/softBandRank";
 import { buildPrefs } from "../engine/personal";
@@ -26,6 +26,7 @@ import { ritualHint } from "../lib/cigarRitual";
 import { OcrScan } from "../components/OcrScan";
 import { VitolaPicker } from "../components/VitolaPicker";
 import { applyVitola, needsVitolaPick, uniqueVitolas } from "../lib/cigarVitola";
+import { formatEur, vitolaPriceForMarket } from "../lib/cigarPrice";
 import { cigarItemId } from "../lib/cigarItemId";
 import { buildCigarOcrCandidates } from "../lib/ocrCigarCandidates";
 import { drinkPrimaryLink } from "../lib/drinkShopLinks";
@@ -225,12 +226,14 @@ export function PairingPage() {
   // pobjeđuje ista — izbor ostaje stabilan kroz dan i kroz re-render.
   const drinkSuggestions = useMemo(() => {
     if (!rankedDrinksByCategory || !selectedCigar) return null;
-    const tieSeed = `${selectedCigar.id}|${dayKey()}`;
     return {
       cards: rankedDrinksByCategory.map(({ category, list }) => {
         const { pick, total } = stableBestRotate(list, cycle[category] ?? 0, {
           keyOf: (d) => d.style,
-          tieSeed,
+          // sidro na cigaru: među izjednačenim bocama (a unutar kategorije ih je
+          // većina) svaka cigara dobiva svoju, a ne uvijek istu najskuplju
+          anchorId: cigarItemId(selectedCigar),
+          tieKeyOf: (d) => drinkBrand(d.id) ?? d.name,
         });
         return { category, result: pick, total };
       }),
@@ -684,6 +687,16 @@ export function PairingPage() {
 
           <SectionTitle>{t("pair.suggestions")}</SectionTitle>
 
+          {/* Bez profila okusa engine ima samo tijelo i snagu — reci to, umjesto
+              da prijedlog izgleda kao da je pogođen po notama. */}
+          {mode === "cigarToDrink" &&
+            selectedCigar &&
+            selectedCigar.flavorTags.length === 0 && (
+              <p className="mb-2 rounded-lg border border-dim/25 bg-cedar/60 px-3 py-2 text-micro leading-snug text-dim">
+                ≈ {t("pair.noFlavorProfile")}
+              </p>
+            )}
+
           {/* CIGARA -> kategorije (gin zadnji) */}
           {drinkSuggestions && (
             <div className="space-y-3">
@@ -756,7 +769,7 @@ export function PairingPage() {
                 const mp = cigarPriceForMarket(r.item, market);
                 const priceStr =
                   mp.price != null
-                    ? `${mp.fromMany ? t("price.from") + " " : ""}${mp.price.toFixed(mp.price % 1 ? 2 : 0)} €`
+                    ? `${mp.fromMany ? t("price.from") + " " : ""}${mp.approx ? "~" : ""}${formatEur(mp.price)}`
                     : t("price.check");
                 return (
                   <ResultCard
@@ -890,6 +903,7 @@ function ResultCard({
   onLog?: () => void;
 }) {
   const { t, lx, lang } = useI18n();
+  const market = useMarket();
   const [open, setOpen] = useState(false);
   const [shareMsg, setShareMsg] = useState<string | null>(null);
   const positive = result.reasons.filter((r) => r.score > 0);
@@ -966,20 +980,26 @@ function ResultCard({
       )}
       {vitolas && vitolas.length > 0 && (
         <div className="no-scrollbar mt-2 flex gap-1.5 overflow-x-auto">
-          {vitolas.map((v) => (
-            <span
-              key={v.name}
-              className="inline-flex shrink-0 items-center gap-1 rounded-md border border-dim/25 px-2 py-1 text-micro text-papir/85"
-            >
-              {v.name}
-              {v.smokeTimeMin != null && (
-                <span className="text-dim">⏱{v.smokeTimeMin}′</span>
-              )}
-              {v.priceEUR != null && (
-                <span className="text-zlato-2">{v.priceEUR.toFixed(1)}€</span>
-              )}
-            </span>
-          ))}
+          {vitolas.map((v) => {
+            const vp = vitolaPriceForMarket(v, market);
+            return (
+              <span
+                key={v.name}
+                className="inline-flex shrink-0 items-center gap-1 rounded-md border border-dim/25 px-2 py-1 text-micro text-papir/85"
+              >
+                {v.name}
+                {v.smokeTimeMin != null && (
+                  <span className="text-dim">⏱{v.smokeTimeMin}′</span>
+                )}
+                {vp.price != null && (
+                  <span className="text-zlato-2">
+                    {vp.approx ? "~" : ""}
+                    {formatEur(vp.price)}
+                  </span>
+                )}
+              </span>
+            );
+          })}
         </div>
       )}
       {!weak && (

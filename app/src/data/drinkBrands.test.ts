@@ -49,6 +49,55 @@ describe("marke pića", () => {
     expect(total).toBe(withBrand.length);
   });
 
+  // Boca koja je jedina s tom prvom rijecju nema s cim usporediti prefiks, pa
+  // je heuristika rezala na prvu rijec — "Sailor" umjesto "Sailor Jerry".
+  // Vezne rijeci ("&", "de", "y", "of") skripta drzi na okupu sama; ostalo je
+  // rijeseno u scripts/data/drink_brand_overrides.json.
+  it("dvorječne marke nisu odrezane na prvu riječ", () => {
+    const expected: Record<string, string> = {
+      "rum-sailor-jerry": "Sailor Jerry",
+      "rum-smith-cross": "Smith & Cross",
+      "rum-wray-nephew-overproof-63": "Wray & Nephew",
+      "rum-sol-tarasco-4-yo-charanda": "Sol Tarasco",
+      "rum-captain-morgan-spiced-white-black": "Captain Morgan",
+      "rum-gold-of-mauritius-dark-heritage-solera": "Gold of Mauritius",
+      "wh-buffalo-trace": "Buffalo Trace",
+      "wh-makers-mark": "Maker's Mark",
+      "wh-woodford-reserve": "Woodford Reserve",
+      "wh-knob-creek-9": "Knob Creek",
+      "br-baron-de-sigognac-10-ans": "Baron de Sigognac",
+      "br-cardenal-mendoza-solera-gran-reserva": "Cardenal Mendoza",
+      "wine-don-melchor": "Concha y Toro",
+      "wine-moet-brut-imperial": "Moet & Chandon",
+      "wine-veuve-clicquot-yellow": "Veuve Clicquot",
+    };
+    const wrong: string[] = [];
+    for (const [id, brand] of Object.entries(expected)) {
+      const got = drinkBrand(id);
+      if (got !== brand) wrong.push(`${id}: ${got} ≠ ${brand}`);
+    }
+    expect(wrong).toEqual([]);
+  });
+
+  // Marka je kuca, ne kuca + vrsta pica ("Boulard Calvados", "Berta Grappa").
+  it("marka ne nosi vrstu pića u imenu", () => {
+    const KIND = /\b(rum|rhum|gin|whisky|whiskey|calvados|grappa|vinjak|armagnac|cognac|tequila|vodka|liqueur|liker)\b/i;
+    // Iznimke: vrsta JEST dio registriranog imena marke.
+    const OK = new Set([
+      "Rhum J.M",
+      "Four Monkey's Rum",
+      "Gin Mare",
+      "The Bush Rum",
+      "Rum Exchange",
+      "Rum Nation",
+      "Hrvatski lozovača / vinjak (craft)", // generički unos, nije marka
+    ]);
+    const bad = ALL_DRINK_BRANDS.filter(
+      (b) => !OK.has(b) && b.split(/\s+/).length > 1 && KIND.test(b),
+    );
+    expect(bad).toEqual([]);
+  });
+
   // Kad dvije RAZLICITE marke dijele prvu rijec ("Black Tot" i "Black Bottle"),
   // najdulji zajednicki prefiks ispadne goli krnjatak — algoritam ih ne moze
   // razluciti bez znanja o svijetu. Prelazak kategorija je jak signal: isti
