@@ -28,18 +28,18 @@ CIGARS_JSON = DATA / "cigars.json"
 DRY_RUN = "--dry-run" in sys.argv
 
 
-def stamp_vitola(v: dict) -> bool:
-    """Vrati True ako je nešto promijenjeno."""
-    changed = False
+def stamp_vitola(v: dict) -> int:
+    """Vrati broj promijenjenih točaka cijena."""
+    stamped = 0
     if v.get("priceEUR") is not None and not v.get("fetchedAt"):
         v["fetchedAt"] = BASELINE_DATE
-        changed = True
+        stamped += 1
     for region in ("HR", "EU", "USA"):
         rl = (v.get("regionLinks") or {}).get(region)
         if rl and rl.get("priceEUR") is not None and not rl.get("fetchedAt"):
             rl["fetchedAt"] = BASELINE_DATE
-            changed = True
-    return changed
+            stamped += 1
+    return stamped
 
 
 def stamp_cigar(c: dict) -> int:
@@ -51,8 +51,7 @@ def stamp_cigar(c: dict) -> int:
             rl["fetchedAt"] = BASELINE_DATE
             stamped += 1
     for v in c.get("vitolas") or []:
-        if stamp_vitola(v):
-            stamped += 1
+        stamped += stamp_vitola(v)
     return stamped
 
 

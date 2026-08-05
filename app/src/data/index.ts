@@ -608,14 +608,14 @@ export function cigarPriceForMarket(c: Cigar, region: RegionFilter): ResolvedPri
 export function cigarLatestFetchedAt(c: Cigar): string | undefined {
   const dates: string[] = [];
   for (const region of ["HR", "EU", "USA"] as const) {
-    const fa = c.regionLinks?.[region]?.fetchedAt;
-    if (fa) dates.push(fa);
+    const rl = c.regionLinks?.[region];
+    if (rl?.priceEUR != null && rl.fetchedAt) dates.push(rl.fetchedAt);
   }
   for (const v of c.vitolas ?? []) {
-    if (v.fetchedAt) dates.push(v.fetchedAt);
+    if (v.priceEUR != null && v.fetchedAt) dates.push(v.fetchedAt);
     for (const region of ["HR", "EU", "USA"] as const) {
-      const fa = v.regionLinks?.[region]?.fetchedAt;
-      if (fa) dates.push(fa);
+      const rl = v.regionLinks?.[region];
+      if (rl?.priceEUR != null && rl.fetchedAt) dates.push(rl.fetchedAt);
     }
   }
   if (!dates.length) return undefined;

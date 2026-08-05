@@ -44,7 +44,7 @@ def region_links_from(unified_rec, cuban):
             entry["priceEUR"] = price
             if approx:
                 entry["priceApprox"] = True
-        entry["fetchedAt"] = FETCH_DATE
+            entry["fetchedAt"] = FETCH_DATE
         links[region] = entry
     return links
 
