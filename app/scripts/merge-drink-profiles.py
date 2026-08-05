@@ -37,13 +37,13 @@ RAW = HERE / "output" / "drink_notes_raw.json"
 # All known canonical tags (kept broad to avoid silent drops).
 # New gin tags added: borovica, kamilica, anis, korijen
 CANON = {
-    "anis", "biljno", "borovica", "cedar", "citrus", "cokolada", "cvjetno",
+    "anis", "biljno", "borovica", "cedar", "citrus", "cmet", "cokolada", "cvjetno",
     "dim", "duhan", "ester-funk", "grozdje", "hrast", "iodin", "jabuka",
     "kakao", "karamela", "kamilica", "kava", "kokos", "korijen", "koza",
-    "kremasto", "maple", "med", "medicinski", "melasa", "mineralno", "orasasti",
-    "orah", "overproof", "papar", "prune", "slatko", "suho-voce", "tamno-voce",
-    "travnato", "tropsko-voce", "umami", "vanilija", "vegetalno", "voce",
-    "zacini",
+    "kremasto", "maple", "med", "medicinski", "melasa", "mineralno", "morski",
+    "orasasti", "orah", "overproof", "papar", "prune", "slatko", "suho-voce",
+    "tamno-voce", "travnato", "tropsko-voce", "umami", "vanilija", "vegetalno",
+    "voce", "zacini",
 }
 
 # Croatian + English term → canonical tag
@@ -339,11 +339,6 @@ WHISKY_CURATED: list[tuple[str, int, int, list[str], bool]] = [
     ("wh-the-benriach.*21|wh-benriach.*21", 3, 3, ["cvjetno", "med", "hrast"], False),
     ("wh-benriach.*16|wh-benriach-the-sixteen", 3, 3, ["voce", "vanilija", "hrast"], False),
     ("wh-benriach.*12", 3, 3, ["voce", "citrus", "hrast"], False),
-    # Blanton's: single barrel Buffalo Trace, spicy vanilla
-    ("wh-blanton", 4, 3, ["vanilija", "karamela", "papar"], False),
-    # Michter's Small Batch Sour Mash / Unblended American
-    ("wh-michter.*sour-mash|wh-michter.*unblended-american", 3, 2, ["papar", "karamela", "hrast"], False),
-    ("wh-michter", 4, 2, ["papar", "karamela", "hrast"], False),
     # Elijah Craig: high rye Heaven Hill bourbon
     ("elijah-craig", 4, 3, ["karamela", "hrast", "papar"], False),
     # Highland Park — age/edition tiers ──
@@ -842,8 +837,10 @@ def apply_profiles(
         # 1) Check curated first
         result = match_curated(bid, curated)
         if result:
-            new_body, new_sweet, new_tags, estimated = result
-            source = "curated"
+            new_body, new_sweet, curated_tags, estimated = result
+            if curated_tags:
+                new_tags = curated_tags
+                source = "curated"
 
         # 2) Scraped text (only if no curated match, or if curated didn't give tags)
         if new_tags is None and bid in scraped and scraped[bid].get("text"):

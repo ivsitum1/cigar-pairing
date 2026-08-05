@@ -135,9 +135,9 @@ STYLE_RULES: list[tuple[str, str, str, int, int, str, list[str]]] = [
     # ── Croatian ──────────────────────────────────────────────────────────────
     # Aura Karbun: navy strength, charcoal (producer)
     (r"aura.*karbun", "croatian", "Istra, Hrvatska", 4, 1, "botanical", ["biljno", "borovica", "citrus"]),
-    (r"aura|maraska|badel|croati|istra|dalma|hrvatsk|dugave|dalmatian|dalmatinski|old pilot", "croatian", "Hrvatska", 3, 2, "botanical", ["biljno", "citrus", "zacini"]),
     # Old Pilot's Dalmatian: Dalmatian lavender, rosemary (producer)
     (r"old pilot|dalmatian.*gin", "croatian", "Hrvatska", 3, 2, "mediterranean", ["biljno", "cvjetno", "travnato"]),
+    (r"aura|maraska|badel|croati|istra|dalma|hrvatsk|dugave|dalmatian|dalmatinski", "croatian", "Hrvatska", 3, 2, "botanical", ["biljno", "citrus", "zacini"]),
     # ── Generic London dry fallback ───────────────────────────────────────────
     (r"london\s*dry|dry gin|bombay|broker|fords|hayman|city of london|gordons|gordon's", "london-dry", "Engleska", 3, 2, "classic-juniper", ["borovica", "citrus", "travnato"]),
     # ── Generic contemporary fallback ─────────────────────────────────────────
