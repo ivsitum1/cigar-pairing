@@ -145,10 +145,19 @@ def title_case_line(line: str) -> str:
         return line
     words = s.split()
     out: list[str] = []
+    shapes = shape_words()
+    letter_hosts = {"serie", "series", "capa", "edicion", "edición", "edicao"}
     for i, w in enumerate(words):
         # lone "s" is a lost possessive: "devil s night" → "Devil's Night"
+        # BUT not when it is a letter designation before a shape (Serie S Gordo)
+        # or after serie/series/capa — those stay as "S".
         if w == "s" and out and re.search(r"[A-Za-z]$", out[-1]):
-            out[-1] += "'s"
+            prev = out[-1].lower()
+            nxt = words[i + 1].lower() if i + 1 < len(words) else ""
+            if prev in letter_hosts or nxt in shapes:
+                out.append("S")
+            else:
+                out[-1] += "'s"
             continue
         # lone "d" before a vowel is an elision: "fume d amour" → "Fume d'Amour"
         if w == "d" and i + 1 < len(words) and words[i + 1][:1] in "aeiou":
