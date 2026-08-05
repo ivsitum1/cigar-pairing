@@ -158,6 +158,15 @@ export interface PairingReason {
 
 export interface PairingResult<T> {
   item: T;
+  /** Prikazni rezultat: zaokružen i stisnut na 0–100. */
   score: number;
+  /**
+   * Rezultat prije zaokruživanja i stiskanja — jedini koji smije rangirati.
+   * Zbroj pravila zna prijeći 100 (base + body + note + kontrast + wrapper…),
+   * pa je prikazni rezultat zasićen: desetak pića završi na istih 100 i onda o
+   * pobjedniku odlučuje razrješenje neriješenog (kvaliteta), ne slaganje s
+   * cigarom. Zato se sortira i "soft band" računa po ovome.
+   */
+  rawScore: number;
   reasons: PairingReason[];
 }

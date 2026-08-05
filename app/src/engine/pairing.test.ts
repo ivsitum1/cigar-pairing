@@ -6,12 +6,14 @@ import rumsData from "../data/rums.json";
 import coffeesData from "../data/coffees.json";
 import winesData from "../data/wines.json";
 import brandiesData from "../data/brandies.json";
+import ginsData from "../data/gins.json";
 
 const cigars = cigarsData as Cigar[];
 const rums = rumsData as unknown as Drink[];
 const coffees = coffeesData as unknown as Drink[];
 const wines = winesData as unknown as Drink[];
 const brandies = brandiesData as unknown as Drink[];
+const gins = ginsData as unknown as Drink[];
 
 const byId = <T extends { id: string }>(arr: T[], id: string): T => {
   const found = arr.find((x) => x.id === id);
@@ -276,5 +278,35 @@ describe("pairing engine — Holts-style editorial validation", () => {
     expect(scorePairing(padron, zacapa).score).toBeGreaterThan(
       scorePairing(macanudo, zacapa).score,
     );
+  });
+});
+
+describe("rangiranje ne smije ovisiti o zasićenju prikaznog rezultata", () => {
+  it("rawScore prelazi 100, prikazni je stisnut", () => {
+    // Cohiba + kognaci: zbroj pravila prelazi 100, pa ih se desetak prikazuje
+    // kao 100. Prije se sortiralo po tom broju i vrh je odlučivala kvaliteta.
+    const cohiba = byId(cigars, "cig-cohiba-linea-clasica");
+    const ranked = pairDrinksForCigar(cohiba, brandies);
+    const saturated = ranked.filter((r) => r.score === 100);
+    expect(saturated.length).toBeGreaterThan(1);
+    expect(saturated[0].rawScore).toBeGreaterThan(100);
+    // unutar zasićene skupine rawScore i dalje pada monotono
+    for (let i = 1; i < saturated.length; i++) {
+      expect(saturated[i - 1].rawScore).toBeGreaterThanOrEqual(saturated[i].rawScore);
+    }
+  });
+
+  it("poredak je po rawScore, ne po prikaznom rezultatu", () => {
+    const cohiba = byId(cigars, "cig-cohiba-linea-clasica");
+    const ranked = pairDrinksForCigar(cohiba, [...brandies, ...rums, ...wines]);
+    for (let i = 1; i < ranked.length; i++) {
+      expect(ranked[i - 1].rawScore).toBeGreaterThanOrEqual(ranked[i].rawScore);
+    }
+  });
+
+  it("poklon-pakiranje ne pretječe običnu bocu kad je rezultat isti", () => {
+    const cohiba = byId(cigars, "cig-cohiba-linea-clasica");
+    const ranked = pairDrinksForCigar(cohiba, gins);
+    expect(ranked[0].item.name).not.toMatch(/poklon kutij|kiosk set/i);
   });
 });
