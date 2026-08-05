@@ -246,7 +246,7 @@ describe("stableBestRotate", () => {
     // isto sjeme → isti izbor (stabilno kroz re-render i kroz dan)
     const twice = ["a", "a"].map(
       () =>
-        stableBestRotate(ranked, 0, { keyOf, tieSeed: "cig-1|2026-08-05" }).pick?.item
+        stableBestRotate(ranked, 0, { keyOf, anchorId: "cig-1|2026-08-05" }).pick?.item
           .id,
     );
     expect(twice[0]).toBe(twice[1]);
