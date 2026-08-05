@@ -58,7 +58,40 @@ ostavi krnje ime. Trebaju prave dimenzije iz trgovine:
 - **Courvoisier VS** — dodan s približnih **36–39 €** (Stridon 35,99 €,
   Roto 38,99 €); ecuga link nije bilo moguće otvoriti kroz proxy.
 
-## 5. Market stubovi koji dupliraju kuriranu liniju
+## 5. Boce koje su ispale iz kataloga jer im je ime otišlo na tuđi zapis
+
+Scrape je na četiri zapisa upisao ime (i ABV) sa susjednog reda; ID, `priceUrl` i
+bilješka su bili točni, pa su imena vraćena po njima:
+
+| ID | ime koje je stajalo | vraćeno na |
+|----|--------------------|------------|
+| `gin-plymouth-navy-strength-57-0-7-l` | Ableforth's Bathtub Gin Navy Strength | Plymouth Navy Strength 57 % |
+| `gin-old-pilot-s-dalmatian-dry-gin-45-vol-0-7l` | Ableforth's Bathtub Gin Old Tom | Old Pilot's Dalmatian Dry Gin 45 % |
+| `gin-roku-gin-…-sa-casom` | Masahiro OKINAWA Gin | Roku Gin The Japanese Craft Gin 43 % |
+| `tq-clase-azul-reposado` | Amor Mío Tequila Reposado | Clase Azul Reposado |
+
+Posljedica: **Ableforth's Bathtub Gin (Navy Strength i Old Tom), Masahiro OKINAWA
+Gin i Amor Mío Reposado** nemaju vlastiti zapis — ime im je bio jedini trag.
+Ako ih allez.hr drži, treba ih dodati kao nove boce. Provjeri i ostale zapise
+istim testom:
+
+```
+python3 - <<'EOF'
+import json,re,unicodedata
+def slug(t):
+    t=unicodedata.normalize("NFKD",t or ""); t="".join(c for c in t if not unicodedata.combining(c)).lower()
+    return re.sub(r"[^a-z0-9]+","-",t).strip("-")
+for f in ["rums","whiskies","brandies","gins","wines","tequilas","digestifs"]:
+    for d in json.load(open(f'app/src/data/{f}.json')):
+        first=[t for t in re.sub(r'^(rum|wh|br|gin|wine|tq|dg)-','',d['id']).split('-') if len(t)>3][:1]
+        if first and first[0] not in slug(d['name']).split('-'):
+            print(f, d['id'], '|', d['name'])
+EOF
+```
+
+(Apostrofi u ID-u — `wh-makers-mark` / „Maker's Mark" — su lažni pozitivi.)
+
+## 6. Market stubovi koji dupliraju kuriranu liniju
 
 Neptune stub čije je ime skraćeno ime kurirane linije iste marke opisuje isti
 proizvod, ali s izmišljenim dimenzijama. Davidoff je riješen ručno (`Winston` i

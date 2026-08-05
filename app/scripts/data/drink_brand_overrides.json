@@ -3,14 +3,13 @@
 
  "_note_pravopis": "Drugi razlog za ispravku: ista kuca dvojako prepisana u katalogu. 'Gran Patron' (PLATINUM, bez naglaska) i 'Gran Patrón' (BURDEOS) su isti proizvodac, a slug im je isti — jedna bi od dvije marke bila nedohvatljiva deep-linkom. Skripta takvu koliziju odbija i trazi ispravku ovdje.",
 
- "_note_isti_proizvodac": "Vise kategorija pod istom markom NIJE razlog za ispravku: Nikka radi whisky i Coffey Gin, Nonino grappu i amaro, Antinori i Gaja vino i grappu, Ableforth's gin i rum, Aura pelinkovac i gin. Te su namjerno ostavljene kao jedna marka.",
+ "_note_isti_proizvodac": "Vise kategorija pod istom markom NIJE razlog za ispravku: Nikka radi whisky i Coffey Gin, Nonino grappu i amaro, Antinori i Gaja vino i grappu, Aura pelinkovac i gin. Te su namjerno ostavljene kao jedna marka.",
 
  "_note_kuca_u_imenu": "Treci razlog: ime boce ne pocinje imenom kuce ('H by Hine' -> 'H') ili kuca nosi genericnu prvu rijec pa najdulji prefiks stane na clanu ('Chateau du' umjesto 'Chateau du Tariquet'). Skripta to ne moze znati bez znanja o svijetu, a korisnik marku trazi po kuci. Isto vrijedi za preimenovanu kucu: Plantation je postao Planteray, pa su tri zapisa davala tri marke — svi idu pod 'Plantation/Planteray'.",
 
  "brands": {
   "br-baron-de-sigognac-10-ans": "Baron de Sigognac",
   "br-cardenal-mendoza-solera-gran-reserva": "Cardenal Mendoza",
-  "br-carlos-i-imperial-xo": "Carlos I",
   "br-chateau-de-laubade-xo": "Château de Laubade",
   "br-chateau-du-tariquet-vsop-bas-armagnac": "Château du Tariquet",
   "br-gran-duque-d-alba-solera-gran-reserva": "Gran Duque d'Alba",
@@ -22,6 +21,8 @@
   "dg-fernet-branca": "Fernet Branca",
 
   "gin-four-pillars-rare-dry-gin-41-8-vol-0-7l": "Four Pillars",
+  "gin-old-pilot-s-dalmatian-dry-gin-45-vol-0-7l": "Old Pilot's",
+  "gin-roby-marton-original-italian-premium-dry-gin-47-0-7-l": "Roby Marton",
   "gin-monkey-47-kiosk-set-41-vol-3x0-05l-u-poklon-kutiji": "Monkey 47",
   "gin-monkey-47-schwarzwald-dry-gin-47-vol-0-5l": "Monkey 47",
   "gin-monkey-47-schwarzwald-dry-gin-barrel-cut-47-vol-0-5l-u-poklon-kutiji": "Monkey 47",
@@ -40,6 +41,7 @@
   "rum-matusalem-gran-reserva": "Ron Matusalem",
   "rum-novo-fogo-cachaca": "Novo Fogo",
   "rum-plantation-oftd": "Plantation/Planteray",
+  "rum-sailor-jerry": "Sailor Jerry",
   "rum-planteray-3-stars-bijeli": "Plantation/Planteray",
   "rum-planteray-original-dark": "Plantation/Planteray",
   "rum-smith-cross": "Smith & Cross",
@@ -49,10 +51,13 @@
 
   "tq-gran-cava-de-oro-tequila-extra-anejo-100-de-agave-azul-40-vol-0-7l": "Gran Cava de Oro",
   "tq-gran-cava-de-oro-tequila-extra-anejo-black-100-de-agave-azul-40-vol-0-7l": "Gran Cava de Oro",
+  "tq-arte-azul-extra-anejo-100-agave-azul-35-vol-1l": "Arte Azul",
+  "tq-clase-azul-reposado": "Clase Azul",
   "tq-patron-silver": "Gran Patrón",
 
   "wh-black-bottle": "Black Bottle",
   "wh-buffalo-trace": "Buffalo Trace",
+  "wh-canadian-club-1858": "Canadian Club",
   "wh-compass-box-spice-tree-blended-malt-46-vol-0-7l-u-poklon-kutiji": "Compass Box",
   "wh-crown-royal": "Crown Royal",
   "wh-eagle-rare-10": "Eagle Rare",

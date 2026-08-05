@@ -54,7 +54,20 @@ BLEND_WORDS = {
     "original", "white", "black", "blue", "red", "green", "gold", "silver",
     "platinum", "reserva", "reserve", "collection", "series", "serie", "cask",
     "barrel", "infused", "sampler", "gift", "pack", "box", "tin", "glastube",
+    "no", "lot", "batch", "serie", "vol",
 }
+
+# "No." bez broja je ostatak nakon sto je broj otisao u vitolu ("Mi Querida
+# Triqui Traca No." + vitole 448/552). Samo taj rep se skida — "Small Batch" i
+# "1926 Serie" su prava imena linija.
+DANGLING_NO = re.compile(r"(?i)^no\.?$")
+
+# RUCNA IZNIMKA. Kod vecine marki je "No. 3" dio imena linije (La Aroma de Cuba
+# "Edición Especial No. 3"), pa se rep s brojem ne dira. Kod ovih marki je
+# obrnuto — broj je oznaka formata, a linija je ono ispred (Laura Chavin Classic
+# No. 33/44/55/66/88, Virginy No. 1/2/3). Iz podataka se to ne moze razluciti.
+NUMBERED_VITOLA_BRANDS = {"Laura Chavin"}
+NUMBERED_TAIL = re.compile(r"(?i)\bno\.?\s*\d+$")
 
 # Prava imena/oblici vitola — rep koji je jedno od njih je format, ne mjesavina.
 SHAPE_WORDS = {
@@ -135,6 +148,8 @@ def parse_size(line: str) -> tuple[str, tuple[int, int] | None]:
     if (re.fullmatch(r"\d+", last) and not re.fullmatch(r"(19|20)\d\d", last)
             and prev not in {"no", "lot", "batch", "serie", "series", "vol"}):
         return line, None   # rep je slozena oznaka ("Miami 8 9 8 63"), ne cista mjera
+    if last.lower().rstrip(".") in {"no", "lot", "batch", "serie", "series", "vol"}:
+        return line, None   # "no 660" = vitola No. 660, ne 6 x 60
     return rest, (ring, round(inch * 25.4))
 
 
@@ -182,11 +197,13 @@ DANGLING = {"by", "de", "del", "of", "the", "and", "con", "with", "x", "y", "in"
             "from", "for", "la", "el", "las", "los", "du", "di", "da", "no"}
 
 
-def vitola_tail(tokens: list[str]) -> bool:
+def vitola_tail(tokens: list[str], numbered: bool = False) -> bool:
     """Je li rep (1-2 tokena) ime vitole, a ne druga mjesavina?"""
     if not tokens or len(tokens) > 2:
         return False
-    low = [t.lower() for t in tokens]
+    low = [t.lower().rstrip(".") for t in tokens]
+    if numbered and len(low) == 2 and low[0] == "no" and re.fullmatch(r"\d+", low[1]):
+        return True                      # samo za NUMBERED_VITOLA_BRANDS
     if len(low) == 1 and sku_size(low[0]):
         return True
     if any(t in BLEND_WORDS or re.fullmatch(r"\d+", t) for t in low):
@@ -208,7 +225,8 @@ def group_key(records: list[dict], bases: dict[str, str]) -> dict[str, str]:
             toks = bases[r["id"]].split()
             support[" ".join(toks)].append((r, []))  # isti base = razlika samo u mjeri
             for cut in (1, 2):
-                if len(toks) > cut and vitola_tail(toks[-cut:]):
+                if len(toks) > cut and vitola_tail(
+                        toks[-cut:], brand in NUMBERED_VITOLA_BRANDS):
                     support[" ".join(toks[:-cut])].append((r, toks[-cut:]))
         taken: set[str] = set()
         for key in sorted(support, key=lambda k: (-len(k.split()), k)):
@@ -232,7 +250,10 @@ def one_pass(cigars: list[dict], merged_log: list[str], renamed_log: list[str],
              alias_add: dict[str, str]) -> list[dict]:
     """Jedan prolaz; vraca preostale zapise. Prazan alias_add prirast = fiksna tocka."""
     targets = [c for c in cigars if c.get("catalogSource") == "market"
-               and (re.match(r"^[a-z0-9]", c["line"]) or parse_size(c["line"])[1])]
+               and (re.match(r"^[a-z0-9]", c["line"]) or parse_size(c["line"])[1]
+                    or re.search(r"(?i)\bno\.?$", c["line"])
+                    or (c["brand"] in NUMBERED_VITOLA_BRANDS
+                        and NUMBERED_TAIL.search(c["line"])))]
     bases: dict[str, str] = {}
     sizes: dict[str, tuple[int, int] | None] = {}
     skus: dict[str, str] = {}
@@ -246,6 +267,11 @@ def one_pass(cigars: list[dict], merged_log: list[str], renamed_log: list[str],
             skus[c["id"]] = m.group(1)
 
     keys = group_key(targets, bases)
+    for cid, key in keys.items():
+        toks = key.split()
+        while len(toks) > 1 and DANGLING_NO.match(toks[-1]):
+            toks.pop()
+        keys[cid] = " ".join(toks)
     groups: dict[tuple[str, str], list[dict]] = defaultdict(list)
     display: dict[tuple[str, str], str] = {}
     for c in targets:
@@ -268,6 +294,14 @@ def one_pass(cigars: list[dict], merged_log: list[str], renamed_log: list[str],
 
     for (brand, key), members in sorted(groups.items()):
         line = display[(brand, key)]
+        toks = line.split()
+        while len(toks) > 1 and DANGLING_NO.match(toks[-1]):
+            toks.pop()                   # goli "No." na kraju imena nije podatak
+        if len(toks) == 1 and DANGLING_NO.match(toks[0]):
+            codes = [v["name"] for m in members for v in m["vitolas"]
+                     if sku_size(v["name"])]
+            toks = [f"No. {codes[0]}"] if len(codes) == 1 else toks
+        line = " ".join(toks)
         members = members + by_line.get((brand, line), [])
         orig = [(m["id"], m["line"]) for m in members]   # prije mutacije, za izvjestaj
         # vitola po clanu: rep imena kad postoji, inace vitola koju zapis nosi
@@ -308,33 +342,41 @@ def one_pass(cigars: list[dict], merged_log: list[str], renamed_log: list[str],
             m["id"] == base_id, m["priceEUR"] or 0, -len(m["id"])))
         new_id = survivor["id"]
 
+        # Link na razini linije: prvi koji NOSI CIJENU (kartica prikazuje "od X €"),
+        # inace link primarne vitole, inace bilo koji. Kandidat prve ruke je
+        # primarna vitola — da linija ne nudi No. 3 a vodi na No. 1.
+        prim_links = (uniq[0].get("regionLinks") or {}) if uniq else {}
         links: dict = {}
         for region in ("HR", "EU", "USA"):
-            for m in [survivor] + members:
-                rl = (m.get("regionLinks") or {}).get(region)
-                if rl:
-                    links[region] = rl
-                    break
+            cands = [rl for rl in [prim_links.get(region)] if rl]
+            cands += [rl for m in [survivor] + members
+                      if (rl := (m.get("regionLinks") or {}).get(region))]
+            if cands:
+                links[region] = next((c for c in cands if c.get("priceEUR")), cands[0])
         markets = [mk for mk in ("HR", "EU", "USA", "WW")
                    if mk in {x for m in members for x in m["markets"]}]
         wrappers = [m["wrapper"] for m in members if m["wrapper"] != "—"]
         srcs = sorted({u for m in members for u in (m.get("sourceUrls") or [])})
         shops = sorted({s for m in members for s in m["availabilityHR"]})
 
+        primary = uniq[0]
         old_id = survivor["id"]
         survivor.update({
-            "id": new_id, "line": line, "vitola": uniq[0]["name"],
-            "format": uniq[0]["format"] or survivor["format"],
-            "smokeTimeMin": uniq[0]["smokeTimeMin"] or survivor["smokeTimeMin"],
+            "id": new_id, "line": line, "vitola": primary["name"],
+            "format": primary["format"] or survivor["format"],
+            "smokeTimeMin": primary["smokeTimeMin"] or survivor["smokeTimeMin"],
             "vitolas": uniq, "markets": markets, "availabilityHR": shops,
         })
         if wrappers:
             survivor["wrapper"] = max(set(wrappers), key=wrappers.count)
+        # link na razini linije mora voditi na PRIMARNU vitolu (inace kartica
+        # nudi No. 3 a link vodi na No. 1), ali po regiji: gdje primarna vitola
+        # nema link, ostaje spojeni iz clanova da linija ne izgubi HR pokrivenost
         if links:
             survivor["regionLinks"] = links
         if srcs:
             survivor["sourceUrls"] = srcs
-        hr = links.get("HR")
+        hr = survivor.get("regionLinks", {}).get("HR")
         if hr and hr.get("priceEUR"):
             survivor["priceEUR"] = hr["priceEUR"]
 
