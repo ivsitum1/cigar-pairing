@@ -162,6 +162,7 @@ const STRINGS = {
   "pair.pickDrink": { hr: "Odaberi piće", en: "Pick a drink" },
   "pair.search": { hr: "Pretraži…", en: "Search…" },
   "pair.why": { hr: "Zašto paše", en: "Why it works" },
+  "pair.openInfo": { hr: "Otvori podatke", en: "Open details" },
   "pair.match": { hr: "slaganje", en: "match" },
   "pair.onlyMine": { hr: "Samo moja kolekcija", en: "My collection only" },
   "pair.drinkTypeAll": { hr: "Sva pića", en: "All drinks" },

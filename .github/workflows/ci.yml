@@ -49,6 +49,9 @@ jobs:
       - name: HR availability reconcile logic
         working-directory: app
         run: python scripts/test_reconcile_hr.py
+      - name: Taxonomy line helpers (dimenzije / velika slova u imenu linije)
+        working-directory: app
+        run: python scripts/test_taxonomy_lib.py
 
       # NEBLOKIRAJUCI — oba padaju i na cistom `master` HEAD-u, prije ovog PR-a:
       #   * taxonomy-audit: 1351 novih linija bez taksonomije preko 132 marke,
