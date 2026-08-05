@@ -98,6 +98,21 @@ def _sort_key(pair):
     return (-score, c.get("id") or "")
 
 
+def _merge_vitola_fields(dst: dict, src: dict) -> None:
+    """Fill missing shop fields on dst from src (same rules as apply-taxonomy.merge_vitolas)."""
+    for field in ("format", "smokeTimeMin", "priceEUR", "url", "shape"):
+        if dst.get(field) in (None, "", DASH) and src.get(field) not in (None, "", DASH):
+            dst[field] = src[field]
+    rl = dict(dst.get("regionLinks") or {})
+    for reg, link in (src.get("regionLinks") or {}).items():
+        if reg not in rl:
+            rl[reg] = link
+        elif reg == "HR" and link.get("url") and "humidor" in (link.get("url") or ""):
+            rl[reg] = link
+    if rl:
+        dst["regionLinks"] = rl
+
+
 def apply_fold(
     cigars: list,
     groups: dict[tuple[str, str], list],
@@ -136,26 +151,33 @@ def apply_fold(
                 alias_pairs.append((old_id, survivor_id))
             by_id[survivor_id] = survivor
 
-        existing_vit_names_lower = {
-            (v.get("name") or "").lower()
+        vitolas_by_name_lower = {
+            (v.get("name") or "").lower(): v
             for v in (survivor.get("vitolas") or [])
         }
 
         for c, last_word in sorted(members, key=lambda x: x[0]["id"]):
             old_vit = copy.deepcopy((c.get("vitolas") or [{}])[0])
             new_vit_name = last_word
+            key = new_vit_name.lower()
 
-            # Don't add a duplicate name (may already exist on the survivor)
-            if new_vit_name.lower() not in existing_vit_names_lower:
+            if key not in vitolas_by_name_lower:
                 # Promote generic shape name (e.g. "Robusto") to vitola.shape
                 generic = old_vit.get("name") or ""
-                if generic and generic.lower() != new_vit_name.lower():
+                if generic and generic.lower() != key:
                     old_vit["shape"] = generic
                 old_vit["name"] = new_vit_name
                 if not survivor.get("vitolas"):
                     survivor["vitolas"] = []
                 survivor["vitolas"].append(old_vit)
-                existing_vit_names_lower.add(new_vit_name.lower())
+                vitolas_by_name_lower[key] = old_vit
+            else:
+                existing = vitolas_by_name_lower[key]
+                generic = old_vit.get("name") or ""
+                if generic and generic.lower() != key:
+                    if existing.get("shape") in (None, "", DASH):
+                        existing["shape"] = generic
+                _merge_vitola_fields(existing, old_vit)
 
             # All member IDs (including the one we used as the base) get aliased
             if c["id"] != survivor_id:

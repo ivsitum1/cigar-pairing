@@ -23,6 +23,7 @@ Usage (run from app/):
 from __future__ import annotations
 
 import argparse
+import importlib.util
 import json
 import re
 import sys
@@ -34,35 +35,15 @@ from taxonomy_lib import CIGARS_PATH, OUT_DIR, load_json, write_json  # noqa: E4
 
 RAW = OUT_DIR / "neptune_raw.json"
 
-# ---------------------------------------------------------------------------
-# Flavour-tag word map (same as merge-flavor-enrichment.py)
-# ---------------------------------------------------------------------------
-WORD_TO_TAG: list[tuple[str, str]] = [
-    (r"cocoa|chocolate|chocolat", "kakao"),
-    (r"coffee|espresso|mocha", "kava"),
-    (r"pepper|peppery", "papar"),
-    (r"cream|creamy|creme", "kremasto"),
-    (r"cedar", "cedar"),
-    (r"earth|earthy|soil", "zemljano"),
-    (r"nut|hazelnut|almond|walnut|pecan|cashew", "orasasti"),
-    (r"leather", "koza"),
-    (r"spice|spicy", "zacini"),
-    (r"sweet spice", "zacini-slatki"),
-    (r"honey", "med"),
-    (r"caramel", "karamela"),
-    (r"vanilla", "vanilija"),
-    (r"citrus|lemon|orange|lime|grapefruit", "citrus"),
-    (r"floral|flower|rose|jasmine", "cvjetno"),
-    (r"dried fruit|dried fig|raisin", "suho-voce"),
-    (r"dark fruit|dark berry|blackberry|plum", "tamno-voce"),
-    (r"fruit|berry|cherry", "suho-voce"),
-    (r"wood|woody|oak|cedar wood|toasted|roasted", "drvo"),
-    (r"molasses", "melasa"),
-    (r"grass|hay|barnyard", "trava-slatka"),
-    (r"tobacco", "duhan"),
-    (r"smoke|smoky", "dim"),
-    (r"sweet(?:ness)?", "slatko"),
-]
+# Reuse the canonical word→tag map from merge-flavor-enrichment.py
+_mfe_spec = importlib.util.spec_from_file_location(
+    "merge_flavor_enrichment",
+    Path(__file__).resolve().parent / "merge-flavor-enrichment.py",
+)
+_mfe = importlib.util.module_from_spec(_mfe_spec)
+assert _mfe_spec.loader is not None
+_mfe_spec.loader.exec_module(_mfe)
+tags_from_text = _mfe.tags_from_text
 
 WRAPPER_FROM_TEXT: list[tuple[str, str]] = [
     (r"maduro|oscuro|broadleaf|san andr", "Maduro"),
@@ -129,26 +110,17 @@ def _to_hr_country(text: str) -> str | None:
     low = (text or "").lower().strip()
     if not low:
         return None
-    # Try exact match first
     if low in COUNTRY_HR:
         return COUNTRY_HR[low]
-    # Try substring match
-    for key, val in COUNTRY_HR.items():
+    matched: list[str] = []
+    for key in sorted(COUNTRY_HR, key=len, reverse=True):
         if key in low:
-            return val
-    # Check if it looks like a country but in Croatian already (keep it)
+            val = COUNTRY_HR[key]
+            if val not in matched:
+                matched.append(val)
+    if len(matched) == 1:
+        return matched[0]
     return None
-
-
-def _tags_from_text(text: str) -> list[str]:
-    low = (text or "").lower()
-    tags: list[str] = []
-    seen: set[str] = set()
-    for pat, tag in WORD_TO_TAG:
-        if tag not in seen and re.search(pat, low):
-            tags.append(tag)
-            seen.add(tag)
-    return tags
 
 
 def _wrapper_from_text(text: str) -> str | None:
@@ -218,12 +190,13 @@ def merge_one(cigar: dict, raw: dict) -> bool:
     if isinstance(strength_raw, int) and 1 <= strength_raw <= 5:
         if cigar.get("profileEstimated") or cigar.get("strength") is None:
             cigar["strength"] = strength_raw
+            cigar["body"] = strength_raw
             cigar["strengthFromShop"] = True
             changed = True
 
     # ── flavorTags from description ──────────────────────────────────────────
     if not cigar.get("flavorTags") and desc:
-        tags = _tags_from_text(desc)
+        tags = tags_from_text(desc)
         if len(tags) >= 2:
             cigar["flavorTags"] = tags
             cigar["profileEstimated"] = False
