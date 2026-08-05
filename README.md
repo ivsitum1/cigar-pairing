@@ -28,7 +28,7 @@ indeksima rangiranim po kvaliteti za sipping uz cigaru.
 - `app/` — Vite + React + TS + Tailwind PWA
   - Hash-routing s deep-linkovima: `#/pairing/cigar/<id>` i `#/pairing/drink/<id>`
     otvaraju pairing s odabranom stavkom (dijeljivi linkovi, back tipka radi)
-  - src/data/*.json — indeksi (320 rum, 275 whiskyja, 90 brandy/grappa, 65 gin,
+  - `src/data/*.json` — indeksi (320 rum, 275 whiskyja, 90 brandy/grappa, 65 gin,
     124 vina, 26 tequila, 33 kave, 13 digestiva, 3643 cigara);
     build ih dijeli u odvojene chunkove (`data-cigars`, `data-whiskies`, `data-rums`…) radi
     paralelnog downloada i boljeg cachea
