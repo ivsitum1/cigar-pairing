@@ -481,6 +481,14 @@ function exactProductUrl(c: Cigar, host: string): string | null {
     );
     if (samePrice?.url) return samePrice.url;
   }
+  for (const v of c.vitolas ?? []) {
+    for (const link of Object.values(v.regionLinks ?? {})) {
+      if (link?.url?.includes(host) && !isLineListingUrl(link.url)) return link.url;
+    }
+  }
+  for (const url of c.sourceUrls ?? []) {
+    if (url.includes(host) && !isLineListingUrl(url)) return url;
+  }
   return null;
 }
 

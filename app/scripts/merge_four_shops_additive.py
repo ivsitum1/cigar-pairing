@@ -174,11 +174,14 @@ def find_line(by_brand, exact, brand: str, line: str) -> dict | None:
     bs, ls = slug(brand), slug(line)
     if (bs, ls) in exact:
         return exact[(bs, ls)]
+    best = None
+    best_len = -1
     for c in by_brand.get(bs, []):
         cl = slug(c.get("line", ""))
-        if ls and (ls in cl or cl in ls):
-            return c
-    return None
+        if ls and cl and (ls in cl or cl in ls) and len(cl) > best_len:
+            best = c
+            best_len = len(cl)
+    return best
 
 
 def find_vitola(c: dict, name: str | None, ring: int | None, length_mm: int | None):

@@ -72,7 +72,7 @@ def main() -> None:
                 match, how = c, "exact"
                 break
         if not match:
-            for c in cands:
+            for c in sorted(cands, key=lambda x: len(slug(x["line"])), reverse=True):
                 ls = slug(c["line"])
                 bs = slug(c["brand"])
                 if ls and len(ls) >= 4 and ls in url and (bs in url or slug(brand) in url):
