@@ -686,6 +686,7 @@ function HumidorControls({ itemId }: { itemId: string }) {
               type="button"
               aria-label="−1"
               onClick={() => {
+                if (inActive <= 0) return;
                 adjustStock(active.id, itemId, -1);
                 if (shouldOfferWishlist(itemId)) setLastCigar(true);
               }}

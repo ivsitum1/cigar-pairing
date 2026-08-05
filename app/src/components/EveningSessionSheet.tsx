@@ -149,7 +149,7 @@ export function EveningSessionSheet({
 
     // popušena zadnja iz humidora → ponuda za listu želja umjesto zatvaranja
     if (shouldOfferWishlist(result.consumedItemId)) {
-      setLastCigarId(result.consumedItemId);
+      setLastCigarId(finalCigarId);
       return;
     }
 

@@ -3,8 +3,9 @@
 // Odluka stoji ovdje, a ne u komponenti, jer je isti trenutak dolazi s dva
 // mjesta: zapis večeri (EveningSessionSheet) i ručno skidanje u humidoru
 // (−1 na kartici zalihe).
-import { getItemState } from "../store/collection";
-import { totalStock } from "../store/humidor";
+import { lineState } from "../store/collection";
+import { lineTotalStock } from "../store/humidor";
+import { parseCigarItemId } from "./cigarItemId";
 
 /**
  * Nakon što je zaliha već smanjena: treba li ponuditi listu želja?
@@ -15,6 +16,7 @@ import { totalStock } from "../store/humidor";
  */
 export function shouldOfferWishlist(itemId: string | null): boolean {
   if (!itemId) return false;
-  if (totalStock(itemId) > 0) return false;
-  return !getItemState(itemId).wishlist;
+  const { cigarId } = parseCigarItemId(itemId);
+  if (lineTotalStock(cigarId) > 0) return false;
+  return !lineState(cigarId).wishlist;
 }
