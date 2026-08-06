@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import {
   drinkAvailabilityHR,
   drinkPrimaryLink,
+  drinkRegionAvailability,
   drinkShopLinks,
   verifiedProductUrl,
 } from "./drinkShopLinks";
@@ -89,11 +90,13 @@ describe("drinkShopLinks", () => {
     expect(drinkShopLinks(d).some((l) => l.kind === "product")).toBe(false);
   });
 
-  it("svjetski cjenik je zadnji i vodi na Wine-Searcher", () => {
+  it("svjetski cjenik dolazi pred web izlaz i vodi na Wine-Searcher", () => {
     const links = drinkShopLinks(base({ name: "H by Hine VSOP", category: "brandy" }));
-    const last = links[links.length - 1]!;
-    expect(last.kind).toBe("ref");
-    expect(last.url).toBe("https://www.wine-searcher.com/find/H+by+Hine+VSOP");
+    const ref = links.find((l) => l.kind === "ref")!;
+    expect(ref.url).toBe("https://www.wine-searcher.com/find/H+by+Hine+VSOP");
+    // bez potvrđene boce zadnji je izlaz na web (Google), a ne trgovina
+    expect(links[links.length - 1]!.kind).toBe("web");
+    expect(links.indexOf(ref)).toBe(links.length - 2);
   });
 
   it("vino dobiva vinoteke, ne kataloge žestice", () => {
@@ -103,14 +106,18 @@ describe("drinkShopLinks", () => {
     expect(ids).not.toContain("allez");
   });
 
-  it("kava nema HR trgovinu u registru — lista je prazna", () => {
-    expect(drinkShopLinks(base({ name: "Cogito Bourbon", category: "coffee" }))).toEqual([]);
+  it("kava nema trgovinu ni u jednoj regiji — ostaje samo web pretraga", () => {
+    const links = drinkShopLinks(base({ name: "Cogito Bourbon", category: "coffee" }));
+    expect(links.map((l) => l.kind)).toEqual(["web"]);
+    expect(links[0].url).toContain("google.com/search");
   });
 
-  it("ne pretrpava karticu — najviše pet HR poveznica", () => {
+  it("ne pretrpava karticu — najviše tri HR poveznice i jedan katalog", () => {
     for (const category of ["rum", "whisky", "gin", "brandy", "tequila", "wine"] as const) {
       const links = drinkShopLinks(base({ name: "Neka boca", category, priceUrl: null }));
-      expect(links.filter((l) => l.scope === "HR").length, category).toBeLessThanOrEqual(5);
+      const hr = links.filter((l) => l.scope === "HR");
+      expect(hr.length, category).toBeLessThanOrEqual(3);
+      expect(hr.filter((l) => l.kind === "browse").length, category).toBeLessThanOrEqual(1);
     }
   });
 
@@ -120,6 +127,70 @@ describe("drinkShopLinks", () => {
       expect(l.url.startsWith("https://"), l.url).toBe(true);
       expect(l.url).not.toContain(" ");
     }
+  });
+});
+
+describe("police po regiji (HR / EU / SAD)", () => {
+  it("žestica dobiva EU i USA pretragu po nazivu, ne izmišljen URL", () => {
+    const links = drinkShopLinks(base({ name: "Doorly's 12", priceUrl: null }));
+    const eu = links.filter((l) => l.scope === "EU");
+    const usa = links.filter((l) => l.scope === "USA");
+    expect(eu.map((l) => l.shopId)).toEqual(["whisky-exchange"]);
+    expect(usa.map((l) => l.shopId)).toEqual(["total-wine"]);
+    for (const l of [...eu, ...usa]) {
+      expect(l.kind).toBe("search");
+      // ime je očišćeno kao i za HR pretragu (bez apostrofa i postotaka)
+      expect(decodeURIComponent(l.url)).toContain("Doorlys 12");
+    }
+  });
+
+  it("regije idu redom HR → EU → SAD → cjenik → web", () => {
+    const links = drinkShopLinks(base({ name: "Doorly's 12", priceUrl: null }));
+    const order: string[] = links.map((l) => l.scope);
+    const first = (s: string) => order.indexOf(s);
+    expect(first("HR")).toBeLessThan(first("EU"));
+    expect(first("EU")).toBeLessThan(first("USA"));
+    expect(first("USA")).toBeLessThan(first("REF"));
+    expect(order[order.length - 1]).toBe("WEB");
+  });
+
+  it("vino nema EU trgovinu u registru — ostaje HR, SAD, cjenik i web", () => {
+    const links = drinkShopLinks(base({ name: "Dingač Barrique", category: "wine" }));
+    expect(links.some((l) => l.scope === "EU")).toBe(false);
+    expect(links.some((l) => l.scope === "WEB")).toBe(true);
+  });
+
+  it("potvrđena stranica boce gasi web izlaz", () => {
+    const links = drinkShopLinks(
+      base({ name: "Hampden HLCF Classic 60%", priceUrl: HAMPDEN, shopHR: "allez.hr" }),
+    );
+    expect(links.some((l) => l.kind === "web")).toBe(false);
+  });
+});
+
+describe("drinkRegionAvailability", () => {
+  it("potvrđena HR stranica vrijedi i za EU, ali ne za SAD", () => {
+    expect(
+      drinkRegionAvailability(
+        base({ name: "Hampden HLCF Classic 60%", priceUrl: HAMPDEN, shopHR: "allez.hr" }),
+      ),
+    ).toEqual({ HR: "confirmed", EU: "viaHR", USA: "unknown" });
+  });
+
+  it("sam shopHR je orijentir, ne potvrda", () => {
+    expect(drinkRegionAvailability(base({ shopHR: "allez.hr" }))).toEqual({
+      HR: "listed",
+      EU: "listed",
+      USA: "unknown",
+    });
+  });
+
+  it("bez ijednog podatka ne tvrdi ništa", () => {
+    expect(drinkRegionAvailability(base({ shopHR: "", priceUrl: null }))).toEqual({
+      HR: "unknown",
+      EU: "unknown",
+      USA: "unknown",
+    });
   });
 });
 

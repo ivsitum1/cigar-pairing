@@ -327,13 +327,29 @@ const STRINGS = {
   "shops.direct": { hr: "izravno", en: "direct" },
   "shops.search": { hr: "pretraga", en: "search" },
   "shops.walkIn": { hr: "na mjestu", en: "in store" },
+  // Holt's i sl. imaju stranicu cijele linije, ne pojedine vitole — ista je za
+  // svaku veličinu, pa se tako i označava umjesto da glumi "izravno".
+  "shops.linePage": { hr: "stranica linije", en: "line page" },
   "shops.browse": { hr: "katalog", en: "catalogue" },
   "shops.priceRef": { hr: "Cijena u svijetu", en: "World prices" },
   "shops.drinkNoDirect": {
-    hr: "Za ovu bocu nemamo potvrđenu stranicu proizvoda, pa poveznice vode na pretragu odnosno katalog trgovine.",
-    en: "We have no confirmed product page for this bottle, so the links lead to the shop's search or catalogue.",
+    hr: "Za ovu bocu nemamo potvrđenu stranicu proizvoda, pa poveznice vode na pretragu odnosno katalog trgovine — a zadnji gumb traži bocu na webu.",
+    en: "We have no confirmed product page for this bottle, so the links lead to the shop's search or catalogue — and the last button searches the web.",
   },
   "shops.indicative": { hr: "orijentir — provjeri zalihu", en: "indicative — check stock" },
+  "shops.webSearch": { hr: "pretraga na webu", en: "web search" },
+  "shops.notOnShelves": {
+    hr: "Nema na poznatim policama",
+    en: "Not on any known shelf",
+  },
+  // dostupnost boce po regiji — koliko app zna, ne koliko pretpostavlja
+  "avail.confirmed": { hr: "potvrđena stranica boce", en: "confirmed product page" },
+  "avail.listed": { hr: "orijentir — provjeri zalihu", en: "indicative — check stock" },
+  "avail.euViaHr": {
+    hr: "potvrđeno u HR, a Hrvatska je u EU",
+    en: "confirmed in Croatia, which is in the EU",
+  },
+  "avail.unknown": { hr: "nemamo podatak — pretraži", en: "no data — search" },
   // opće
   "common.body": { hr: "Tijelo", en: "Body" },
   "common.strength": { hr: "Snaga", en: "Strength" },

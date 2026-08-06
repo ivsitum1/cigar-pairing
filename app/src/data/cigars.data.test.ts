@@ -3,7 +3,8 @@ import cigarsData from "./cigars.json";
 import brandsData from "./brands.json";
 import { CIGARS, cigarLinkForMarket, cigarPriceForMarket, cigarShopLinks, cigarShopLinkPrice, ALL_BRANDS, BRAND_CATALOG, isLineListingUrl } from "./index";
 import { classifyVitola, cigarShapes } from "../lib/vitolaShape";
-import type { Cigar } from "../types";
+import { urlFitsVitola } from "../lib/vitolaLinkMatch";
+import type { Cigar, Region } from "../types";
 
 describe("cigars.json integrity", () => {
   it("nema dupliciranih id-eva u izvornom JSON-u", () => {
@@ -333,13 +334,29 @@ describe("cigars.json integrity", () => {
         if (!hostByRegion[region].some((h) => host.includes(h))) {
           bad.push(`${c.id}: ${region} -> ${host}`);
         }
-        // EU/USA regionLink mora biti u cigarShopLinks; Holts listing = exact:false
+        // EU/USA regionLink mora biti u cigarShopLinks; Holts listing = exact:false.
+        // Iznimka: linija s jednom vitolom čije ime slug OPOVRGNE — takav link
+        // vodi na drugu vitolu, pa se zamjenjuje pretragom (lib/vitolaLinkMatch).
         if (region !== "HR") {
+          const only = c.vitolas?.length === 1 ? c.vitolas[0] : null;
+          const listing = /holts\.com\/cigars\/all-cigar-brands\//i.test(link.url);
+          const disproven =
+            only != null &&
+            !listing &&
+            // sidro cijene linije ostaje: gumb bez linka uz prikazanu cijenu
+            // je gori od linka na proizvod iz kojeg ta cijena dolazi
+            link.url !== c.priceUrl &&
+            link.url !== only.url &&
+            only.regionLinks?.[region as Region]?.url !== link.url &&
+            !urlFitsVitola(link.url, only.name, `${c.brand} ${c.line}`);
           const sl = cigarShopLinks(c).find(
             (l) => l.region === region && l.url === link.url,
           );
+          if (disproven) {
+            if (sl) bad.push(`${c.id}: ${region} link krive vitole je ostao u ponudi`);
+            continue;
+          }
           if (!sl) bad.push(`${c.id}: ${region} regionLink nije u cigarShopLinks`);
-          const listing = /holts\.com\/cigars\/all-cigar-brands\//i.test(link.url);
           if (listing && sl?.exact) {
             bad.push(`${c.id}: Holts listing ne smije biti exact`);
           }

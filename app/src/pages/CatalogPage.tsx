@@ -35,6 +35,13 @@ import { applyVitola, uniqueVitolas } from "../lib/cigarVitola";
 import { cigarLinePrice } from "../lib/cigarPrice";
 import { cigarItemId } from "../lib/cigarItemId";
 import {
+  cycleSort,
+  directedComparator,
+  sortArrow,
+  type SortDir,
+  type SortState,
+} from "../lib/sortToggle";
+import {
   SHAPE_FAMILIES,
   cigarShapes,
   firstVitolaOfShape,
@@ -54,6 +61,22 @@ const letterFor = (s: string) => {
 };
 
 const RAIL = ["#", ..."ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("")];
+
+type SortKey = "quality" | "price" | "body" | "sweetness" | "strength" | "name";
+
+// Smjer prvog klika: cijena i naziv rastu (jeftinije/A prvo), ocjene padaju
+// (najbolje/najjače prvo). Drugi klik okreće, treći gasi — vidi lib/sortToggle.
+const SORT_DEFAULT_DIR: Record<SortKey, SortDir> = {
+  quality: "desc",
+  price: "asc",
+  body: "desc",
+  sweetness: "desc",
+  strength: "desc",
+  name: "asc",
+};
+
+const CIGAR_SORTS: SortKey[] = ["name", "price", "body", "strength"];
+const DRINK_SORTS: SortKey[] = ["quality", "price", "body", "sweetness"];
 
 type CatalogSearchHit =
   | { kind: "brand"; brand: string }
@@ -128,7 +151,9 @@ export function CatalogPage({
   const [favOnly, setFavOnly] = useState(false);
   const [limit, setLimit] = useState(120);
   const [showShops, setShowShops] = useState(false);
-  const [sortBy, setSortBy] = useState<"quality" | "price" | "body" | "sweetness" | "strength" | "name">("quality");
+  // null = bez ručnog sortiranja (zadani poredak kartice: cigare po nazivu,
+  // pića po kvaliteti). Chip ciklira zadani smjer → obrnuti → isključeno.
+  const [sort, setSort] = useState<SortState<SortKey> | null>(null);
   const market = useMarket();
   const [detail, setDetail] = useState<
     { kind: "cigar"; item: Cigar } | { kind: "drink"; item: Drink } | null
@@ -431,7 +456,9 @@ export function CatalogPage({
     // izgleda kao prazan katalog
     setFavOnly(false);
     setShowShops(false);
-    setSortBy(next === "cigars" ? "name" : "quality");
+    // promjena kartice gasi ručno sortiranje — svaka kartica ima svoj zadani
+    // poredak (cigare po nazivu, pića po kvaliteti)
+    setSort(null);
   };
 
   const styles = useMemo(() => {
@@ -489,7 +516,9 @@ export function CatalogPage({
         (!puroOnly || c.isPuro === true) &&
         (!favOnly || favorites.has(favoriteKey("cigar", c.brand))),
     );
-    const by: Record<string, (a: Cigar, b: Cigar) => number> = {
+    // svaki komparator je pisan u SVOM zadanom smjeru (SORT_DEFAULT_DIR);
+    // suprotan smjer nastaje obrtanjem u directedComparator
+    const by: Partial<Record<SortKey, (a: Cigar, b: Cigar) => number>> = {
       name: (a, b) =>
         brandDisplayName(a.brand, market).localeCompare(brandDisplayName(b.brand, market)) ||
         a.line.localeCompare(b.line),
@@ -497,7 +526,9 @@ export function CatalogPage({
       body: (a, b) => b.body - a.body,
       strength: (a, b) => b.strength - a.strength,
     };
-    return [...list].sort(by[sortBy] ?? by.name);
+    const cmp = sort ? by[sort.key] : undefined;
+    if (!cmp || !sort) return [...list].sort(by.name!);
+    return [...list].sort(directedComparator(cmp, SORT_DEFAULT_DIR[sort.key], sort.dir));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [
     tab,
@@ -509,7 +540,7 @@ export function CatalogPage({
     fillerOriginFilter,
     puroOnly,
     market,
-    sortBy,
+    sort,
     browseBrands,
     favOnly,
     favorites,
@@ -531,14 +562,16 @@ export function CatalogPage({
     });
     const mid = (d: Drink) =>
       d.priceEUR ? (d.priceEUR.min + d.priceEUR.max) / 2 : Number.MAX_SAFE_INTEGER;
-    const by: Record<string, (a: Drink, b: Drink) => number> = {
+    const by: Partial<Record<SortKey, (a: Drink, b: Drink) => number>> = {
       quality: (a, b) => (b.qualityScore ?? 0) - (a.qualityScore ?? 0),
       price: (a, b) => mid(a) - mid(b),
       body: (a, b) => b.body - a.body || (b.qualityScore ?? 0) - (a.qualityScore ?? 0),
       sweetness: (a, b) => b.sweetness - a.sweetness || (b.qualityScore ?? 0) - (a.qualityScore ?? 0),
     };
-    return [...list].sort(by[sortBy] ?? by.quality);
-  }, [tab, q, styleFilter, cleanOnly, sortBy, favOnly, favorites]);
+    const cmp = sort ? by[sort.key] : undefined;
+    if (!cmp || !sort) return [...list].sort(by.quality!);
+    return [...list].sort(directedComparator(cmp, SORT_DEFAULT_DIR[sort.key], sort.dir));
+  }, [tab, q, styleFilter, cleanOnly, sort, favOnly, favorites]);
 
   useEffect(() => {
     setLimit(120);
@@ -552,7 +585,7 @@ export function CatalogPage({
     fillerOriginFilter,
     puroOnly,
     market,
-    sortBy,
+    sort,
     browseBrands,
     favOnly,
     favorites,
@@ -782,13 +815,14 @@ export function CatalogPage({
           <span className="shrink-0 text-micro uppercase tracking-widest text-dim">
             {t("sort.label")}
           </span>
-          {(tab === "cigars"
-            ? (["name", "price", "body", "strength"] as const)
-            : (["quality", "price", "body", "sweetness"] as const)
-          ).map((s) => (
-            <Chip key={s} active={sortBy === s} onClick={() => setSortBy(s)}>
+          {(tab === "cigars" ? CIGAR_SORTS : DRINK_SORTS).map((s) => (
+            <Chip
+              key={s}
+              active={sort?.key === s}
+              onClick={() => setSort((cur) => cycleSort(cur, s, SORT_DEFAULT_DIR[s]))}
+            >
               {t(`sort.${s}` as StringKey)}
-              {sortBy === s ? (s === "price" || s === "name" ? " ↑" : " ↓") : ""}
+              {sortArrow(sort, s)}
             </Chip>
           ))}
         </div>
