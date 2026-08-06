@@ -1,6 +1,6 @@
 {
-  "taxonomy_files": 506,
-  "taxonomy_files_total": 506,
+  "taxonomy_files": 508,
+  "taxonomy_files_total": 508,
   "input_records": 3328,
   "auto_pass": {
     "P0": [],
@@ -35,6 +35,733 @@
       "id": "cig-man-o-war-virtue"
     }
   ],
-  "aliases_added": [],
-  "output_records": 3328
+  "merges": [
+    {
+      "into": "cig-asylum-pca-exclusive",
+      "from": "cig-asylum-pca-exclusive-2025"
+    },
+    {
+      "into": "cig-black-label-trading-company-morph-vintage-2020",
+      "from": "cig-black-label-trading-company-morph-vintage-2022"
+    },
+    {
+      "into": "cig-brick-house-bricktoberfest",
+      "from": "cig-brick-house-bricktoberfest-2025"
+    },
+    {
+      "into": "cig-cavalier-geneve-cavalier-geneve-le-2025",
+      "from": "cig-cavalier-geneve-cavalier-geneve-le-2026"
+    },
+    {
+      "into": "cig-cle-pca-exclusive-2023",
+      "from": "cig-cle-pca-exclusive-2025"
+    },
+    {
+      "into": "cig-crowned-heads-blood-medicine-limited-edition-2024",
+      "from": "cig-crowned-heads-blood-medicine-limited-edition-2025"
+    },
+    {
+      "into": "cig-davidoff-chef-s-edition-2017",
+      "from": "cig-davidoff-chef-s-edition-2018"
+    },
+    {
+      "into": "cig-davidoff-chef-s-edition-2017",
+      "from": "cig-davidoff-chef-s-edition-2025"
+    },
+    {
+      "into": "cig-eiroa-pca-exclusive",
+      "from": "cig-eiroa-pca-exclusive-2025"
+    },
+    {
+      "into": "cig-ferio-tego-timeless-taa-exclusive-2024",
+      "from": "cig-ferio-tego-timeless-taa-exclusive-2025"
+    },
+    {
+      "into": "cig-gran-habano-vintage-2004",
+      "from": "cig-gran-habano-vintage-2006"
+    },
+    {
+      "into": "cig-gran-habano-vintage-2004",
+      "from": "cig-gran-habano-vintage-2002"
+    },
+    {
+      "into": "cig-kristoff-gc-signature-series-pca-2026",
+      "from": "cig-kristoff-gc-signature-series-pca-2022"
+    },
+    {
+      "into": "cig-la-aurora-hors-d-age",
+      "from": "cig-la-aurora-hors-d-age-2024"
+    },
+    {
+      "into": "cig-tatuaje-cojonu",
+      "from": "cig-tatuaje-cojonu-2012"
+    }
+  ],
+  "metric_conflicts": [
+    {
+      "id": "cig-cavalier-geneve-cavalier-geneve-le-2025",
+      "metric": "strength",
+      "a": 3,
+      "b": 5
+    },
+    {
+      "id": "cig-cavalier-geneve-cavalier-geneve-le-2025",
+      "metric": "body",
+      "a": 3,
+      "b": 5
+    },
+    {
+      "id": "cig-eiroa-pca-exclusive",
+      "metric": "strength",
+      "a": 3,
+      "b": 5
+    },
+    {
+      "id": "cig-eiroa-pca-exclusive",
+      "metric": "body",
+      "a": 3,
+      "b": 5
+    },
+    {
+      "id": "cig-ferio-tego-timeless-taa-exclusive-2024",
+      "metric": "strength",
+      "a": 5,
+      "b": 3
+    },
+    {
+      "id": "cig-ferio-tego-timeless-taa-exclusive-2024",
+      "metric": "body",
+      "a": 5,
+      "b": 3
+    },
+    {
+      "id": "cig-gran-habano-vintage-2004",
+      "metric": "strength",
+      "a": 2,
+      "b": 4
+    },
+    {
+      "id": "cig-la-aurora-hors-d-age",
+      "metric": "strength",
+      "a": 5,
+      "b": 3
+    },
+    {
+      "id": "cig-la-aurora-hors-d-age",
+      "metric": "body",
+      "a": 5,
+      "b": 3
+    },
+    {
+      "id": "cig-tatuaje-cojonu",
+      "metric": "strength",
+      "a": 3,
+      "b": 5
+    },
+    {
+      "id": "cig-tatuaje-cojonu",
+      "metric": "body",
+      "a": 3,
+      "b": 5
+    }
+  ],
+  "aliases_added": [
+    {
+      "from": "cig-arturo-fuente-limited-edition-unnamed-reserve-grand-2021",
+      "to": "cig-arturo-fuente-limited-edition-unnamed-reserve-grand"
+    },
+    {
+      "from": "cig-arturo-fuente-unnamed-reserve-2021",
+      "to": "cig-arturo-fuente-unnamed-reserve"
+    },
+    {
+      "from": "cig-asylum-april-fool-s-limited-edition-2023",
+      "to": "cig-asylum-april-fool-s"
+    },
+    {
+      "from": "cig-asylum-limitada-2025",
+      "to": "cig-asylum-limitada"
+    },
+    {
+      "from": "cig-asylum-pca-exclusive-2025",
+      "to": "cig-asylum-pca-exclusive"
+    },
+    {
+      "from": "cig-avo-expressions-limited-edition-2024",
+      "to": "cig-avo-expressions"
+    },
+    {
+      "from": "cig-avo-improvisation-limited-edition-2017",
+      "to": "cig-avo-improvisation"
+    },
+    {
+      "from": "cig-avo-limited-editions-expressions-2024",
+      "to": "cig-avo-limited-editions-expressions"
+    },
+    {
+      "from": "cig-avo-seasons-fall-limited-edition-2023",
+      "to": "cig-avo-seasons-fall"
+    },
+    {
+      "from": "cig-avo-seasons-spring-limited-edition-2023",
+      "to": "cig-avo-seasons-spring"
+    },
+    {
+      "from": "cig-avo-seasons-summer-limited-edition-2023",
+      "to": "cig-avo-seasons-summer"
+    },
+    {
+      "from": "cig-avo-seasons-winter-limited-edition-2023",
+      "to": "cig-avo-seasons-winter"
+    },
+    {
+      "from": "cig-black-label-trading-company-morph-vintage-2020",
+      "to": "cig-black-label-trading-company-morph-vintage"
+    },
+    {
+      "from": "cig-black-label-trading-company-morph-vintage-2022",
+      "to": "cig-black-label-trading-company-morph-vintage"
+    },
+    {
+      "from": "cig-brick-house-bricktoberfest-2025",
+      "to": "cig-brick-house-bricktoberfest"
+    },
+    {
+      "from": "cig-brick-house-is-on-fire-taa-exclusive-2025",
+      "to": "cig-brick-house-is-on-fire-taa-exclusive"
+    },
+    {
+      "from": "cig-cavalier-geneve-cavalier-geneve-le-2025",
+      "to": "cig-cavalier-geneve-cavalier-geneve"
+    },
+    {
+      "from": "cig-cavalier-geneve-cavalier-geneve-le-2026",
+      "to": "cig-cavalier-geneve-cavalier-geneve"
+    },
+    {
+      "from": "cig-cavalier-geneve-cavalier-geneve-the-green-jacket-2026",
+      "to": "cig-cavalier-geneve-cavalier-geneve-the-green-jacket"
+    },
+    {
+      "from": "cig-cle-limitada-2025",
+      "to": "cig-cle-limitada"
+    },
+    {
+      "from": "cig-cle-pca-exclusive-2023",
+      "to": "cig-cle-pca-exclusive"
+    },
+    {
+      "from": "cig-cle-pca-exclusive-2025",
+      "to": "cig-cle-pca-exclusive"
+    },
+    {
+      "from": "cig-crowned-heads-blood-medicine-limited-edition-2024",
+      "to": "cig-crowned-heads-blood-medicine"
+    },
+    {
+      "from": "cig-crowned-heads-blood-medicine-limited-edition-2025",
+      "to": "cig-crowned-heads-blood-medicine"
+    },
+    {
+      "from": "cig-crowned-heads-four-kicks-mule-kick-le-2022",
+      "to": "cig-crowned-heads-four-kicks-mule-kick"
+    },
+    {
+      "from": "cig-crowned-heads-juarez-bulldozer-le-2025",
+      "to": "cig-crowned-heads-juarez-bulldozer"
+    },
+    {
+      "from": "cig-crowned-heads-juarez-mini-dozer-le-2026",
+      "to": "cig-crowned-heads-juarez-mini-dozer"
+    },
+    {
+      "from": "cig-crowned-heads-mil-dias-des-deux-le-2025",
+      "to": "cig-crowned-heads-mil-dias-des-deux"
+    },
+    {
+      "from": "cig-crowned-heads-taa-exclusive-2024",
+      "to": "cig-crowned-heads-taa-exclusive"
+    },
+    {
+      "from": "cig-crowned-heads-the-lost-angel-taa-2023",
+      "to": "cig-crowned-heads-the-lost-angel-taa"
+    },
+    {
+      "from": "cig-dalay-limitada-2023",
+      "to": "cig-dalay-limitada"
+    },
+    {
+      "from": "cig-davidoff-chef-s-edition-2017",
+      "to": "cig-davidoff-chef-s-edition"
+    },
+    {
+      "from": "cig-davidoff-chef-s-edition-2018",
+      "to": "cig-davidoff-chef-s-edition"
+    },
+    {
+      "from": "cig-davidoff-chef-s-edition-2025",
+      "to": "cig-davidoff-chef-s-edition"
+    },
+    {
+      "from": "cig-davidoff-discovery-le-2022",
+      "to": "cig-davidoff-discovery"
+    },
+    {
+      "from": "cig-davidoff-exclusive-croatia-2021",
+      "to": "cig-davidoff-exclusive-croatia"
+    },
+    {
+      "from": "cig-davidoff-intenso-le-2020",
+      "to": "cig-davidoff-intenso"
+    },
+    {
+      "from": "cig-davidoff-limited-edition-art-2016",
+      "to": "cig-davidoff-limited-edition-art"
+    },
+    {
+      "from": "cig-davidoff-master-selection-2012",
+      "to": "cig-davidoff-master-selection"
+    },
+    {
+      "from": "cig-davidoff-royal-release-2016",
+      "to": "cig-davidoff-royal-release"
+    },
+    {
+      "from": "cig-davidoff-winston-le-2025",
+      "to": "cig-davidoff-winston"
+    },
+    {
+      "from": "cig-davidoff-year-of-the-dragon-2024",
+      "to": "cig-davidoff-year-of-the-dragon"
+    },
+    {
+      "from": "cig-davidoff-year-of-the-ox-2021",
+      "to": "cig-davidoff-year-of-the-ox"
+    },
+    {
+      "from": "cig-davidoff-year-of-the-rabbit-2023",
+      "to": "cig-davidoff-year-of-the-rabbit"
+    },
+    {
+      "from": "cig-davidoff-year-of-the-rat-2020",
+      "to": "cig-davidoff-year-of-the-rat"
+    },
+    {
+      "from": "cig-davidoff-year-of-the-snake-2025",
+      "to": "cig-davidoff-year-of-the-snake"
+    },
+    {
+      "from": "cig-diesel-tempest-taa-2024",
+      "to": "cig-diesel-tempest-taa"
+    },
+    {
+      "from": "cig-don-diego-edicion-limitada-special-edition-2025",
+      "to": "cig-don-diego-edicion-limitada-special-edition"
+    },
+    {
+      "from": "cig-dos-jotas-infinity-2020",
+      "to": "cig-dos-jotas-infinity"
+    },
+    {
+      "from": "cig-e-p-carrillo-short-run-2023",
+      "to": "cig-e-p-carrillo-short-run"
+    },
+    {
+      "from": "cig-eiroa-limitada-2025",
+      "to": "cig-eiroa-limitada"
+    },
+    {
+      "from": "cig-eiroa-pca-exclusive-2025",
+      "to": "cig-eiroa-pca-exclusive"
+    },
+    {
+      "from": "cig-ferio-tego-timeless-taa-exclusive-2024",
+      "to": "cig-ferio-tego-timeless-taa-exclusive"
+    },
+    {
+      "from": "cig-ferio-tego-timeless-taa-exclusive-2025",
+      "to": "cig-ferio-tego-timeless-taa-exclusive"
+    },
+    {
+      "from": "cig-flor-de-las-antillas-san-andres-taa-2025",
+      "to": "cig-flor-de-las-antillas-san-andres-taa"
+    },
+    {
+      "from": "cig-flor-de-selva-ano-del-conejo-2023",
+      "to": "cig-flor-de-selva-ano-del-conejo"
+    },
+    {
+      "from": "cig-flor-de-selva-year-of-the-dragon-2024",
+      "to": "cig-flor-de-selva-year-of-the-dragon"
+    },
+    {
+      "from": "cig-flor-de-selva-year-of-the-horse-2026",
+      "to": "cig-flor-de-selva-year-of-the-horse"
+    },
+    {
+      "from": "cig-flor-de-selva-year-of-the-rabbit-2023",
+      "to": "cig-flor-de-selva-year-of-the-rabbit"
+    },
+    {
+      "from": "cig-gran-habano-vintage-2004",
+      "to": "cig-gran-habano-vintage"
+    },
+    {
+      "from": "cig-gran-habano-vintage-2006",
+      "to": "cig-gran-habano-vintage"
+    },
+    {
+      "from": "cig-gran-habano-vintage-2002",
+      "to": "cig-gran-habano-vintage"
+    },
+    {
+      "from": "cig-griffin-s-nicaragua-special-edition-2016",
+      "to": "cig-griffin-s-nicaragua-special-edition"
+    },
+    {
+      "from": "cig-gurkha-year-of-the-dragon-2024",
+      "to": "cig-gurkha-year-of-the-dragon"
+    },
+    {
+      "from": "cig-henk-maori-la-dona-edicion-limitada-2018",
+      "to": "cig-henk-maori-maori-la-dona-edicion-limitada"
+    },
+    {
+      "from": "cig-illusione-ultra-mkultra-2026",
+      "to": "cig-illusione-ultra-mkultra"
+    },
+    {
+      "from": "cig-kristoff-gc-signature-series-intertabac-2023",
+      "to": "cig-kristoff-gc-signature-series-intertabac"
+    },
+    {
+      "from": "cig-kristoff-gc-signature-series-pca-2026",
+      "to": "cig-kristoff-gc-signature-series-pca"
+    },
+    {
+      "from": "cig-kristoff-gc-signature-series-pca-2022",
+      "to": "cig-kristoff-gc-signature-series-pca"
+    },
+    {
+      "from": "cig-la-aurora-hors-d-age-2024",
+      "to": "cig-la-aurora-hors-d-age"
+    },
+    {
+      "from": "cig-la-aurora-limited-editions-hors-d-age-2020",
+      "to": "cig-la-aurora-limited-editions-hors-d-age"
+    },
+    {
+      "from": "cig-la-aurora-puro-vintage-2009",
+      "to": "cig-la-aurora-puro-vintage"
+    },
+    {
+      "from": "cig-la-flor-dominicana-apollonia-taa-2025",
+      "to": "cig-la-flor-dominicana-apollonia-taa"
+    },
+    {
+      "from": "cig-la-flor-dominicana-miami-super-bowl-football-2020",
+      "to": "cig-la-flor-dominicana-miami-super-bowl-football"
+    },
+    {
+      "from": "cig-la-galera-year-of-the-horse-limited-edition-2026",
+      "to": "cig-la-galera-year-of-the-horse"
+    },
+    {
+      "from": "cig-macanudo-limited-edition-vintage-2010",
+      "to": "cig-macanudo-limited-edition-vintage"
+    },
+    {
+      "from": "cig-macanudo-vintage-2006",
+      "to": "cig-macanudo-vintage"
+    },
+    {
+      "from": "cig-marca-fina-brazil-edicion-limitada-2023",
+      "to": "cig-marca-fina-fina-brazil-edicion-limitada"
+    },
+    {
+      "from": "cig-marca-fina-dominicana-edicion-limitada-2023",
+      "to": "cig-marca-fina-fina-dominicana-edicion-limitada"
+    },
+    {
+      "from": "cig-marca-fina-ecuador-edicion-limitada-2024",
+      "to": "cig-marca-fina-fina-ecuador-edicion-limitada"
+    },
+    {
+      "from": "cig-marca-fina-panama-edicion-limitada-2024",
+      "to": "cig-marca-fina-fina-panama-edicion-limitada"
+    },
+    {
+      "from": "cig-marca-fina-panama-maduro-edicion-limitada-2024",
+      "to": "cig-marca-fina-fina-panama-maduro-edicion-limitada"
+    },
+    {
+      "from": "cig-mata-hari-limited-edition-2024",
+      "to": "cig-mata-hari-hari"
+    },
+    {
+      "from": "cig-oliva-edicion-ano-2024",
+      "to": "cig-oliva-edicion-ano"
+    },
+    {
+      "from": "cig-oliva-extra-edicion-ano-2025",
+      "to": "cig-oliva-extra-edicion-ano"
+    },
+    {
+      "from": "cig-oliva-year-of-snake-2025",
+      "to": "cig-oliva-year-of-snake"
+    },
+    {
+      "from": "cig-oscar-valladares-ciseron-2018",
+      "to": "cig-oscar-valladares-ciseron"
+    },
+    {
+      "from": "cig-privada-club-lca-reserva-vintage-2022",
+      "to": "cig-privada-cigar-club-club-lca-reserva-vintage"
+    },
+    {
+      "from": "cig-rocky-patel-limited-editions-year-of-dragon-2024",
+      "to": "cig-rocky-patel-limited-editions-year-of-dragon"
+    },
+    {
+      "from": "cig-rocky-patel-limited-editions-year-of-snake-2025",
+      "to": "cig-rocky-patel-limited-editions-year-of-snake"
+    },
+    {
+      "from": "cig-rocky-patel-taa-exclusivo-2020",
+      "to": "cig-rocky-patel-taa-exclusivo"
+    },
+    {
+      "from": "cig-rocky-patel-year-of-the-snake-2025",
+      "to": "cig-rocky-patel-year-of-the-snake"
+    },
+    {
+      "from": "cig-rojas-street-taco-cinco-de-mayo-le-2026",
+      "to": "cig-rojas-street-taco-cinco-de-mayo"
+    },
+    {
+      "from": "cig-spartanos-limitada-2022",
+      "to": "cig-spartanos-limitada"
+    },
+    {
+      "from": "cig-tabacos-mata-fina-monte-pascoal-selection-2015",
+      "to": "cig-tabacos-mata-fina-monte-pascoal-selection"
+    },
+    {
+      "from": "cig-tatuaje-cojonu-2012",
+      "to": "cig-tatuaje-cojonu"
+    },
+    {
+      "from": "cig-tatuaje-pca-2023",
+      "to": "cig-tatuaje-pca"
+    },
+    {
+      "from": "cig-tatuaje-taa-exclusive-2023",
+      "to": "cig-tatuaje-taa-exclusive"
+    },
+    {
+      "from": "cig-toscano-originale-2018",
+      "to": "cig-toscano-origina"
+    },
+    {
+      "from": "cig-vegafina-year-of-the-snake-2025",
+      "to": "cig-vegafina-year-of-the-snake"
+    },
+    {
+      "from": "cig-villiger-edicion-limitada-2024",
+      "to": "cig-villiger-edicion-limitada"
+    }
+  ],
+  "aliases_retargeted": [
+    {
+      "from": "cig-asylum-pca-exclusive-2025-6-52",
+      "was": "cig-asylum-pca-exclusive-2025",
+      "to": "cig-asylum-pca-exclusive"
+    },
+    {
+      "from": "cig-brick-house-bricktoberfest-2025-73-4-48",
+      "was": "cig-brick-house-bricktoberfest-2025",
+      "to": "cig-brick-house-bricktoberfest"
+    },
+    {
+      "from": "cig-brick-house-is-on-fire-taa-exclusive-2025-6-50",
+      "was": "cig-brick-house-is-on-fire-taa-exclusive-2025",
+      "to": "cig-brick-house-is-on-fire-taa-exclusive"
+    },
+    {
+      "from": "cig-cavalier-geneve-cavalier-geneve-le-2025-61-4-50",
+      "was": "cig-cavalier-geneve-cavalier-geneve-le-2025",
+      "to": "cig-cavalier-geneve-cavalier-geneve"
+    },
+    {
+      "from": "cig-cavalier-geneve-cavalier-geneve-le-2026-61-2-47",
+      "was": "cig-cavalier-geneve-cavalier-geneve-le-2026",
+      "to": "cig-cavalier-geneve-cavalier-geneve"
+    },
+    {
+      "from": "cig-cavalier-geneve-cavalier-geneve-the-green-jacket-2026-7-47",
+      "was": "cig-cavalier-geneve-cavalier-geneve-the-green-jacket-2026",
+      "to": "cig-cavalier-geneve-cavalier-geneve-the-green-jacket"
+    },
+    {
+      "from": "cig-cle-pca-exclusive-2025-6-52",
+      "was": "cig-cle-pca-exclusive-2025",
+      "to": "cig-cle-pca-exclusive"
+    },
+    {
+      "from": "cig-crowned-heads-blood-medicine-limited-edition-2025-5-52",
+      "was": "cig-crowned-heads-blood-medicine-limited-edition-2025",
+      "to": "cig-crowned-heads-blood-medicine"
+    },
+    {
+      "from": "cig-crowned-heads-blood-medicine-limited-edition-2025-51-2-56",
+      "was": "cig-crowned-heads-blood-medicine-limited-edition-2025",
+      "to": "cig-crowned-heads-blood-medicine"
+    },
+    {
+      "from": "cig-crowned-heads-blood-medicine-limited-edition-2025-6-54",
+      "was": "cig-crowned-heads-blood-medicine-limited-edition-2025",
+      "to": "cig-crowned-heads-blood-medicine"
+    },
+    {
+      "from": "cig-crowned-heads-juarez-bulldozer-le-2025-51-2-58",
+      "was": "cig-crowned-heads-juarez-bulldozer-le-2025",
+      "to": "cig-crowned-heads-juarez-bulldozer"
+    },
+    {
+      "from": "cig-crowned-heads-juarez-mini-dozer-le-2026-4-58",
+      "was": "cig-crowned-heads-juarez-mini-dozer-le-2026",
+      "to": "cig-crowned-heads-juarez-mini-dozer"
+    },
+    {
+      "from": "cig-davidoff-chefs-edition-2025",
+      "was": "cig-davidoff-chef-s-edition-2025",
+      "to": "cig-davidoff-chef-s-edition"
+    },
+    {
+      "from": "cig-e-p-carrillo-epc-short-run-2023",
+      "was": "cig-e-p-carrillo-short-run-2023",
+      "to": "cig-e-p-carrillo-short-run"
+    },
+    {
+      "from": "cig-eiroa-pca-exclusive-2025-6-52",
+      "was": "cig-eiroa-pca-exclusive-2025",
+      "to": "cig-eiroa-pca-exclusive"
+    },
+    {
+      "from": "cig-ferio-tego-timeless-taa-exclusive-2025-6-50",
+      "was": "cig-ferio-tego-timeless-taa-exclusive-2025",
+      "to": "cig-ferio-tego-timeless-taa-exclusive"
+    },
+    {
+      "from": "cig-flor-de-las-antillas-san-andres-taa-2025-5-52",
+      "was": "cig-flor-de-las-antillas-san-andres-taa-2025",
+      "to": "cig-flor-de-las-antillas-san-andres-taa"
+    },
+    {
+      "from": "cig-flor-de-las-antillas-san-andres-taa-2025-6-54",
+      "was": "cig-flor-de-las-antillas-san-andres-taa-2025",
+      "to": "cig-flor-de-las-antillas-san-andres-taa"
+    },
+    {
+      "from": "cig-flor-de-selva-2023-year-of-rabbit",
+      "was": "cig-flor-de-selva-year-of-the-rabbit-2023",
+      "to": "cig-flor-de-selva-year-of-the-rabbit"
+    },
+    {
+      "from": "cig-flor-de-selva-2024-year-of-dragon",
+      "was": "cig-flor-de-selva-year-of-the-dragon-2024",
+      "to": "cig-flor-de-selva-year-of-the-dragon"
+    },
+    {
+      "from": "cig-flor-de-selva-2026-year-of-horse",
+      "was": "cig-flor-de-selva-year-of-the-horse-2026",
+      "to": "cig-flor-de-selva-year-of-the-horse"
+    },
+    {
+      "from": "cig-flor-de-selva-ano-del-dragon",
+      "was": "cig-flor-de-selva-year-of-the-dragon-2024",
+      "to": "cig-flor-de-selva-year-of-the-dragon"
+    },
+    {
+      "from": "cig-four-kicks-mule-kick-le-2022",
+      "was": "cig-crowned-heads-four-kicks-mule-kick-le-2022",
+      "to": "cig-crowned-heads-four-kicks-mule-kick"
+    },
+    {
+      "from": "cig-illusione-ultra-mkultra-2026-51-8-42",
+      "was": "cig-illusione-ultra-mkultra-2026",
+      "to": "cig-illusione-ultra-mkultra"
+    },
+    {
+      "from": "cig-la-aurora-hors-d-age-2024-53-4-54",
+      "was": "cig-la-aurora-hors-d-age-2024",
+      "to": "cig-la-aurora-hors-d-age"
+    },
+    {
+      "from": "cig-la-flor-dominicana-apollonia-taa-2025-61-2-44",
+      "was": "cig-la-flor-dominicana-apollonia-taa-2025",
+      "to": "cig-la-flor-dominicana-apollonia-taa"
+    },
+    {
+      "from": "cig-mil-dias-des-deux-le-2025-61-8-42",
+      "was": "cig-crowned-heads-mil-dias-des-deux-le-2025",
+      "to": "cig-crowned-heads-mil-dias-des-deux"
+    },
+    {
+      "from": "cig-rojas-street-taco-cinco-de-mayo-le-2026-6-54",
+      "was": "cig-rojas-street-taco-cinco-de-mayo-le-2026",
+      "to": "cig-rojas-street-taco-cinco-de-mayo"
+    },
+    {
+      "from": "cig-vegafina-year-of-snake-2025",
+      "was": "cig-vegafina-year-of-the-snake-2025",
+      "to": "cig-vegafina-year-of-the-snake"
+    },
+    {
+      "from": "cig-cle-pca-exclusive-2023-526",
+      "was": "cig-cle-pca-exclusive-2023",
+      "to": "cig-cle-pca-exclusive"
+    },
+    {
+      "from": "cig-cle-pca-exclusive-2023-606",
+      "was": "cig-cle-pca-exclusive-2023",
+      "to": "cig-cle-pca-exclusive"
+    },
+    {
+      "from": "cig-oscar-valladares-ciseron-2018-black",
+      "was": "cig-oscar-valladares-ciseron-2018",
+      "to": "cig-oscar-valladares-ciseron"
+    },
+    {
+      "from": "cig-oscar-valladares-ciseron-2018-blue",
+      "was": "cig-oscar-valladares-ciseron-2018",
+      "to": "cig-oscar-valladares-ciseron"
+    },
+    {
+      "from": "cig-oscar-valladares-ciseron-2018-green",
+      "was": "cig-oscar-valladares-ciseron-2018",
+      "to": "cig-oscar-valladares-ciseron"
+    },
+    {
+      "from": "cig-tatuaje-cojonu-2012-broadleaf",
+      "was": "cig-tatuaje-cojonu-2012",
+      "to": "cig-tatuaje-cojonu"
+    },
+    {
+      "from": "cig-tatuaje-cojonu-2012-corojo",
+      "was": "cig-tatuaje-cojonu-2012",
+      "to": "cig-tatuaje-cojonu"
+    },
+    {
+      "from": "cig-tatuaje-cojonu-2012-habano",
+      "was": "cig-tatuaje-cojonu-2012",
+      "to": "cig-tatuaje-cojonu"
+    },
+    {
+      "from": "cig-tatuaje-cojonu-2012-sumatra",
+      "was": "cig-tatuaje-cojonu-2012",
+      "to": "cig-tatuaje-cojonu"
+    }
+  ],
+  "output_records": 3313
 }
