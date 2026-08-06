@@ -27,9 +27,33 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "src" / "data"
 CIGARS_JSON = DATA / "cigars.json"
 
-USER_AGENT = "Mozilla/5.0 (compatible; CigarRumSync/1.0)"
+# Browser-like UA: Havana WC Store API često vraća prazan/HTML odgovor
+# bot-sync UA-u, a tjedni HR refresh onda padne na r.json().
+USER_AGENT = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+    "(KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
+)
 FRACTIONS = {"½": 0.5, "¼": 0.25, "¾": 0.75, "⅛": 0.125, "⅜": 0.375, "⅝": 0.625, "⅞": 0.875}
 FRACTION_CHARS = "".join(FRACTIONS)
+
+
+def _response_json(r: requests.Response, *, label: str):
+    """Parsira JSON ili prekida s čitljivom greškom (umjesto JSONDecodeError)."""
+    ctype = (r.headers.get("Content-Type") or "").lower()
+    if "json" not in ctype and r.text and r.text.lstrip()[:1] not in ("{", "["):
+        preview = (r.text or "").strip().replace("\n", " ")[:120]
+        raise SystemExit(
+            f"Dohvat '{label}' nije JSON (HTTP {r.status_code}, Content-Type={ctype!r}). "
+            f"Pregled: {preview!r}"
+        )
+    try:
+        return r.json()
+    except requests.exceptions.JSONDecodeError as exc:
+        preview = (r.text or "").strip().replace("\n", " ")[:120]
+        raise SystemExit(
+            f"Dohvat '{label}' nije parsabilan JSON (HTTP {r.status_code}). "
+            f"Pregled: {preview!r}"
+        ) from exc
 
 
 def parse_length_inches(raw: str) -> float:
@@ -283,10 +307,19 @@ def fetch_havana_catalog() -> list[dict]:
         )
         r = session.get(url, timeout=30)
         if r.status_code != 200:
+            if page == 1:
+                raise SystemExit(
+                    f"Dohvat 'havana' HTTP {r.status_code} na prvoj stranici — "
+                    "katalog nije dohvaćen."
+                )
             break
-        batch = r.json()
+        batch = _response_json(r, label=f"havana page={page}")
         if not batch:
             break
+        if not isinstance(batch, list):
+            raise SystemExit(
+                f"Dohvat 'havana' očekuje listu proizvoda, dobio {type(batch).__name__}."
+            )
         for p in batch:
             permalink = p.get("permalink", "")
             if "/en/" in permalink:
