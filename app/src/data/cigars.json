@@ -151805,17 +151805,17 @@
     "id": "cig-la-galera-85th-anniversary",
     "brand": "La Galera",
     "line": "85th Anniversary",
-    "vitola": "Toro",
+    "vitola": "Connecticut Shade Toro",
     "format": "52 x 152mm",
     "country": "Dominikanska Republika",
-    "wrapper": "Habano Ecuador",
+    "wrapper": "Connecticut Shade / Connecticut Broadleaf",
     "strength": 3,
     "body": 3,
     "flavorTags": [
-      "cedar",
-      "zacini",
       "med",
-      "orasasti"
+      "zacini",
+      "koza",
+      "cedar"
     ],
     "smokeTimeMin": 60,
     "priceEUR": 19.5,
@@ -151824,8 +151824,8 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Jubilarno izdanje Tabacalere Palme (La Galera) za 85 godina tvornice — jedan format, Toro.",
-      "en": "Anniversary release from Tabacalera Palma (La Galera) marking 85 years — a single size, Toro."
+      "hr": "Jubilarno izdanje za 85 godina Tabacalere Palme, u dva pokrova iste veličine (Toro 6 x 52): ekvadorski Connecticut Shade koji je blendao Jose 'Jochy' Blanco — prirodno slatko uz dašak začina — i američki Connecticut Broadleaf, blend njegovog sina Jose Manuela — kožasto uz začine. Oba dijele Corojo vezni list i Criollo '98 / Piloto Cubano punjenje iz Dominikanske Republike. Kutija od 20 nosi 10 i 10; izdanje je ograničeno na 2021 kutiju.",
+      "en": "Anniversary release marking 85 years of Tabacalera Palma, offered in two wrappers on the same size (Toro 6 x 52): an Ecuadorian Connecticut Shade blended by Jose 'Jochy' Blanco — naturally sweet with a hint of spice — and a US Connecticut Broadleaf blended by his son Jose Manuel — leathery with spice. Both share a Dominican Corojo binder and Criollo '98 / Piloto Cubano filler. A box of 20 holds 10 of each; the run is limited to 2021 boxes."
     },
     "markets": [
       "HR",
@@ -151834,17 +151834,21 @@
     ],
     "vitolas": [
       {
-        "name": "Toro",
+        "name": "Broadleaf Toro",
+        "format": "52 x 152mm",
+        "smokeTimeMin": 60,
+        "priceEUR": 19.5,
+        "url": null,
+        "ring": 52,
+        "lengthMM": 152,
+        "fetchedAt": "2026-07-01"
+      },
+      {
+        "name": "Connecticut Shade Toro",
         "format": "52 x 152mm",
         "smokeTimeMin": 60,
         "priceEUR": 19.5,
         "url": "https://humidor.hr/en/proizvod/la-galera-85th-anniversary-toro/",
-        "regionLinks": {
-          "USA": {
-            "shop": "Neptune Cigar",
-            "url": "https://www.neptunecigar.com/cigars/la-galera-85th-anniversary-limited-edition-toro-box"
-          }
-        },
         "ring": 52,
         "lengthMM": 152,
         "fetchedAt": "2026-07-01"
@@ -151862,7 +151866,14 @@
         "shop": "Neptune Cigar",
         "url": "https://www.neptunecigar.com/cigars/la-galera-85th-anniversary-limited-edition-toro-box"
       }
-    }
+    },
+    "binder": "Corojo",
+    "binderOrigin": "Dominikanska Republika",
+    "filler": "Criollo '98 / Piloto Cubano",
+    "fillerOrigin": "Dominikanska Republika",
+    "sourceUrls": [
+      "https://humidor.hr/hr/proizvod/la-galera-85th-anniversary-toro/"
+    ]
   },
   {
     "id": "cig-la-galera-anemoi",

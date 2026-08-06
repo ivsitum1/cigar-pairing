@@ -3,6 +3,7 @@ import cigarsData from "./cigars.json";
 import brandsData from "./brands.json";
 import { CIGARS, cigarLinkForMarket, cigarPriceForMarket, cigarShopLinks, cigarShopLinkPrice, ALL_BRANDS, BRAND_CATALOG, isLineListingUrl } from "./index";
 import { classifyVitola, cigarShapes } from "../lib/vitolaShape";
+import { applyVitola, uniqueVitolas } from "../lib/cigarVitola";
 import { urlFitsVitola } from "../lib/vitolaLinkMatch";
 import type { Cigar, Region } from "../types";
 
@@ -195,14 +196,26 @@ describe("cigars.json integrity", () => {
     }
   });
 
-  it("La Galera 85th Anniversary je jubilarni Toro, ne Habano linija", () => {
+  it("La Galera 85th Anniversary — oba pokrova, ne Habano linija", () => {
     // Shop kategorija "85th Anniversary / Habano" uvukla je cijelu Habano
     // liniju u jubilarnu, pa je korisniku pisalo "od 6,40 €" za Habano Half
-    // Coronu, a pravi jubilarni Toro (19,50 €) se gubio među njima.
+    // Coronu, a jubilarni Toro (19,50 €) se gubio među njima.
+    // Izdanje ima DVIJE varijante iste veličine — Connecticut Shade i
+    // Broadleaf — koje se razlikuju po pokrovu i blenderu, ne po formatu.
     const a = CIGARS.find((c) => c.id === "cig-la-galera-85th-anniversary")!;
-    expect(a.vitolas.map((v) => v.name)).toEqual(["Toro"]);
-    expect(a.priceEUR).toBe(19.5);
-    for (const url of [a.priceUrl ?? "", a.regionLinks?.HR?.url ?? "", a.vitolas[0].url ?? ""]) {
+    const vitolas = uniqueVitolas(a);
+    expect(vitolas.map((v) => v.name)).toEqual(["Broadleaf Toro", "Connecticut Shade Toro"]);
+    // trgovina ima jednu stranicu za obje — dedupe po URL-u ne smije pojesti drugu
+    expect(vitolas).toHaveLength(2);
+    for (const v of vitolas) {
+      expect(v.priceEUR, v.name).toBe(19.5);
+      expect(v.format, v.name).toBe("52 x 152mm");
+      // i varijanta bez vlastitog URL-a vodi na stranicu proizvoda
+      expect(applyVitola(a, v).priceUrl ?? "", v.name).toContain(
+        "la-galera-85th-anniversary-toro",
+      );
+    }
+    for (const url of [a.priceUrl ?? "", a.regionLinks?.HR?.url ?? ""]) {
       expect(url).toContain("la-galera-85th-anniversary-toro");
       expect(url).not.toContain("la-galera-habano");
     }
