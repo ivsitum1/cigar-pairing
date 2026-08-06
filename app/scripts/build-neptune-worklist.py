@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build a worklist of Neptune Cigar URLs for cigars that still lack flavorTags.
+"""Build a worklist of Neptune Cigar URLs for cigars needing shop profiles.
 
 Output: scripts/output/neptune_worklist.json
   [{
@@ -11,7 +11,8 @@ Output: scripts/output/neptune_worklist.json
   }, ...]
 
 Selection rules:
-  - No flavorTags on the record
+  - No flavorTags, OR profileEstimated==True (heuristic stubs — shop text
+    should overwrite them via merge-neptune-profiles.py)
   - At least one vitola has a neptune URL
   - Pick the first neptune URL found (any vitola)
 
@@ -47,10 +48,17 @@ def _neptune_url(c: dict) -> tuple[str | None, str | None]:
     return None, None
 
 
+def _needs_shop_profile(c: dict) -> bool:
+    """True when the record has no tags or only a heuristic estimated profile."""
+    if not c.get("flavorTags"):
+        return True
+    return c.get("profileEstimated") is True
+
+
 def build(cigars: list) -> list:
     items = []
     for c in cigars:
-        if c.get("flavorTags"):
+        if not _needs_shop_profile(c):
             continue
         url, vname = _neptune_url(c)
         if not url:

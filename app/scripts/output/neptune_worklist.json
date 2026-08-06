@@ -1,5 +1,54 @@
 [
   {
+    "id": "cig-1502-black-gold",
+    "brand": "1502",
+    "line": "Black Gold",
+    "vitola": "Lancero",
+    "url": "https://www.neptunecigar.com/cigars/1502-black-gold-conquistador"
+  },
+  {
+    "id": "cig-1502-emerald",
+    "brand": "1502",
+    "line": "Emerald",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/1502-emerald-toro"
+  },
+  {
+    "id": "cig-1502-ruby",
+    "brand": "1502",
+    "line": "Ruby",
+    "vitola": "Lancero",
+    "url": "https://www.neptunecigar.com/cigars/1502-ruby-conquistador"
+  },
+  {
+    "id": "cig-1502-special-edition-blue-sapphire",
+    "brand": "1502",
+    "line": "Special Edition Blue Sapphire",
+    "vitola": "Lancero",
+    "url": "https://www.neptunecigar.com/cigars/1502-blue-sapphire-lancero"
+  },
+  {
+    "id": "cig-1502-xo",
+    "brand": "1502",
+    "line": "XO",
+    "vitola": "Lancero",
+    "url": "https://www.neptunecigar.com/cigars/1502-xo-lancero-7--40"
+  },
+  {
+    "id": "cig-a-flores-gran-reserva-desflorado",
+    "brand": "A. Flores",
+    "line": "Gran Reserva Desflorado",
+    "vitola": "Half Corona",
+    "url": "https://www.neptunecigar.com/cigars/a-flores-1975-gran-reserva-desflorado-grand-toro"
+  },
+  {
+    "id": "cig-adv-barbarroja-s-invasion",
+    "brand": "ADVentura",
+    "line": "Barbarroja's Invasion",
+    "vitola": "Corona",
+    "url": "https://www.neptunecigar.com/cigars/adventura-barbarroja-s-invasion-corona"
+  },
+  {
     "id": "cig-adventura-blackfin-s-parlay",
     "brand": "ADVentura",
     "line": "Blackfin's Parlay",
@@ -21,6 +70,20 @@
     "url": "https://www.neptunecigar.com/cigars/adventura-blue-eyed-jacks-revenge-corona"
   },
   {
+    "id": "cig-adv-conqueror",
+    "brand": "ADVentura",
+    "line": "Conqueror",
+    "vitola": "Emperor’s Edition",
+    "url": "https://www.neptunecigar.com/cigars/adventura-the-conqueror-capitan"
+  },
+  {
+    "id": "cig-adv-explorer",
+    "brand": "ADVentura",
+    "line": "Explorer",
+    "vitola": "Corona Gorda",
+    "url": "https://www.neptunecigar.com/cigars/adventura-the-explorer-gran-toro"
+  },
+  {
     "id": "cig-adventura-la-llorona",
     "brand": "ADVentura",
     "line": "La Llorona",
@@ -28,11 +91,46 @@
     "url": "https://www.neptunecigar.com/cigars/adventura-la-llorona-corona"
   },
   {
+    "id": "cig-adv-navigator",
+    "brand": "ADVentura",
+    "line": "Navigator",
+    "vitola": "Pinzon",
+    "url": "https://www.neptunecigar.com/cigars/adventura-the-navigator-cabral"
+  },
+  {
+    "id": "cig-adv-royal-return",
+    "brand": "ADVentura",
+    "line": "Royal Return",
+    "vitola": "Lancero",
+    "url": "https://www.neptunecigar.com/cigars/adventura-the-royal-return-king-s-golden-tooth"
+  },
+  {
     "id": "cig-aganorsa-leaf-rare-leaf-reserve-titan-corojo",
     "brand": "Aganorsa Leaf",
     "line": "Rare Leaf Reserve Titan Corojo",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/aganorsa-leaf-rare-leaf-reserve-titan-corojo"
+  },
+  {
+    "id": "cig-aganorsa-leaf-signature-selection",
+    "brand": "Aganorsa Leaf",
+    "line": "Signature Selection",
+    "vitola": "Gorda",
+    "url": "https://www.neptunecigar.com/cigars/aganorsa-leaf-signature-selection-maduro-corona-gorda"
+  },
+  {
+    "id": "cig-aganorsa-leaf-signature-selection-maduro",
+    "brand": "Aganorsa Leaf",
+    "line": "Signature Selection Maduro",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/aganorsa-leaf-signature-selection-maduro-robusto"
+  },
+  {
+    "id": "cig-aganorsa-leaf-supreme-leaf",
+    "brand": "Aganorsa Leaf",
+    "line": "Supreme Leaf",
+    "vitola": "Euro",
+    "url": "https://www.neptunecigar.com/cigars/aganorsa-leaf-supreme-leaf-royal-perfecto"
   },
   {
     "id": "cig-aganorsa-leaf-validacion-connecticut-gran",
@@ -119,6 +217,13 @@
     "url": "https://www.neptunecigar.com/cigars/aging-room-quattro-nicaragua-concerto"
   },
   {
+    "id": "cig-aging-room-quattro-nicaragua-maestro",
+    "brand": "Aging Room",
+    "line": "Quattro Nicaragua Maestro",
+    "vitola": "Belicoso",
+    "url": "https://www.neptunecigar.com/cigars/aging-room-quattro-nicaragua-maestro"
+  },
+  {
     "id": "cig-aging-room-quattro-original-vibrato",
     "brand": "Aging Room",
     "line": "Quattro Original Vibrato",
@@ -140,11 +245,39 @@
     "url": "https://www.neptunecigar.com/cigars/aging-room-rare-collection-festivo"
   },
   {
+    "id": "cig-aj-fernandez-20th-anniversary",
+    "brand": "AJ Fernandez",
+    "line": "20th Anniversary",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/aj-fernandez-20th-anniversary-toro"
+  },
+  {
     "id": "cig-aladino-250th",
     "brand": "Aladino",
     "line": "250th",
     "vitola": "Toro",
     "url": "https://www.neptunecigar.com/cigars/aladino-250th-toro-6--52"
+  },
+  {
+    "id": "cig-aladino-85-aniversario-reserva",
+    "brand": "Aladino",
+    "line": "85 Aniversario Reserva",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/aladino-85-aniversario-reserva-robusto-5--50"
+  },
+  {
+    "id": "cig-aladino-cameroon",
+    "brand": "Aladino",
+    "line": "Cameroon",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/aladino-cameroon-robusto"
+  },
+  {
+    "id": "cig-aladino-cameroon-reserva",
+    "brand": "Aladino",
+    "line": "Cameroon Reserva",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/aladino-cameroon-reserva-toro"
   },
   {
     "id": "cig-aladino-candela",
@@ -168,6 +301,20 @@
     "url": "https://www.neptunecigar.com/cigars/aladino-classic-toro"
   },
   {
+    "id": "cig-aladino-connecticut",
+    "brand": "Aladino",
+    "line": "Connecticut",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/aladino-connecticut-robusto"
+  },
+  {
+    "id": "cig-aladino-corojo-reserva",
+    "brand": "Aladino",
+    "line": "Corojo Reserva",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/aladino-corojo-reserva-le-robusto"
+  },
+  {
     "id": "cig-aladino-corona",
     "brand": "Aladino",
     "line": "Corona",
@@ -180,6 +327,13 @@
     "line": "Elegante",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/aladino-elegante"
+  },
+  {
+    "id": "cig-aladino-fuma-noche",
+    "brand": "Aladino",
+    "line": "Fuma Noche",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/aladino-fuma-noche-super-toro"
   },
   {
     "id": "cig-aladino-gorbusto-chimp",
@@ -224,6 +378,13 @@
     "url": "https://www.neptunecigar.com/cigars/aladino-habano-toro-vintage-selection"
   },
   {
+    "id": "cig-aladino-maduro",
+    "brand": "Aladino",
+    "line": "Maduro",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/aladino-maduro-box-pressed-robusto"
+  },
+  {
     "id": "cig-aladino-patton",
     "brand": "Aladino",
     "line": "Patton",
@@ -259,6 +420,27 @@
     "url": "https://www.neptunecigar.com/cigars/alec-bradley-30-years-robusto-5--52"
   },
   {
+    "id": "cig-alec-bradley-american-classic",
+    "brand": "Alec Bradley",
+    "line": "American Classic",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/alec-bradley-american-classic-blend-robusto"
+  },
+  {
+    "id": "cig-alec-bradley-american-sun-grown",
+    "brand": "Alec Bradley",
+    "line": "American Sun Grown",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/alec-bradley-american-sun-grown-churchill"
+  },
+  {
+    "id": "cig-alec-bradley-blind-faith",
+    "brand": "Alec Bradley",
+    "line": "Blind Faith",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/alec-bradley-blind-faith-robusto"
+  },
+  {
     "id": "cig-alec-bradley-chunk-maduro",
     "brand": "Alec Bradley",
     "line": "Chunk Maduro",
@@ -287,6 +469,20 @@
     "url": "https://www.neptunecigar.com/cigars/alec-bradley-chunk-shade-xl-4--60"
   },
   {
+    "id": "cig-alec-bradley-connecticut",
+    "brand": "Alec Bradley",
+    "line": "Connecticut",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/alec-bradley-connecticut-torpedo"
+  },
+  {
+    "id": "cig-alec-bradley-coyol",
+    "brand": "Alec Bradley",
+    "line": "Coyol",
+    "vitola": "Petit Lancero",
+    "url": "https://www.neptunecigar.com/cigars/alec-bradley-coyol-double-churchill"
+  },
+  {
     "id": "cig-alec-bradley-do-not-disturb",
     "brand": "Alec Bradley",
     "line": "Do Not Disturb",
@@ -294,11 +490,32 @@
     "url": "https://www.neptunecigar.com/cigars/alec-bradley-do-not-disturb-robusto-5--50"
   },
   {
+    "id": "cig-alec-bradley-double-broadleaf",
+    "brand": "Alec Bradley",
+    "line": "Double Broadleaf",
+    "vitola": "Corona",
+    "url": "https://www.neptunecigar.com/cigars/alec-bradley-double-broadleaf-chunk"
+  },
+  {
+    "id": "cig-alec-bradley-family-blend",
+    "brand": "Alec Bradley",
+    "line": "Family Blend",
+    "vitola": "T11",
+    "url": "https://www.neptunecigar.com/cigars/alec-bradley-family-blend-the-lineage-robusto"
+  },
+  {
     "id": "cig-alec-bradley-filthy-ghooligan",
     "brand": "Alec Bradley",
     "line": "Filthy Ghooligan",
     "vitola": "Toro",
     "url": "https://www.neptunecigar.com/cigars/alec-bradley-filthy-ghooligan-toro"
+  },
+  {
+    "id": "cig-alec-bradley-filthy-hooligan",
+    "brand": "Alec Bradley",
+    "line": "Filthy Hooligan",
+    "vitola": "Filthy Hooligan",
+    "url": "https://www.neptunecigar.com/cigars/alec-bradley-filthy-hooligan"
   },
   {
     "id": "cig-alec-bradley-fine-and-rare-a11-fyt",
@@ -350,6 +567,55 @@
     "url": "https://www.neptunecigar.com/cigars/alec-bradley-its-a-boy"
   },
   {
+    "id": "cig-alec-bradley-kintsugi",
+    "brand": "Alec Bradley",
+    "line": "Kintsugi",
+    "vitola": "Kintsugi",
+    "url": "https://www.neptunecigar.com/cigars/alec-bradley-kintsugi-wabi-sabi-6--52"
+  },
+  {
+    "id": "cig-alec-bradley-magic-toast",
+    "brand": "Alec Bradley",
+    "line": "Magic Toast",
+    "vitola": "Magic Toast Robusto",
+    "url": "https://www.neptunecigar.com/cigars/alec-bradley-magic-toast-toro"
+  },
+  {
+    "id": "cig-alec-bradley-maxx",
+    "brand": "Alec Bradley",
+    "line": "MAXX",
+    "vitola": "Nano",
+    "url": "https://www.neptunecigar.com/cigars/alec-bradley-maxx-the-fix"
+  },
+  {
+    "id": "cig-alec-bradley-medalist",
+    "brand": "Alec Bradley",
+    "line": "Medalist",
+    "vitola": "Churchill",
+    "url": "https://www.neptunecigar.com/cigars/alec-bradley-medalist-gordo"
+  },
+  {
+    "id": "cig-alec-bradley-mundial",
+    "brand": "Alec Bradley",
+    "line": "Mundial",
+    "vitola": "PL4",
+    "url": "https://www.neptunecigar.com/cigars/alec-bradley-mundial-pl-no-4"
+  },
+  {
+    "id": "cig-alec-bradley-nica-puro",
+    "brand": "Alec Bradley",
+    "line": "Nica Puro",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/alec-bradley-nica-puro-bajito"
+  },
+  {
+    "id": "cig-alec-bradley-nica-puro-rosado",
+    "brand": "Alec Bradley",
+    "line": "Nica Puro Rosado",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/alec-bradley-nica-puro-rosado-torpedo"
+  },
+  {
     "id": "cig-alec-bradley-occidental-reserve",
     "brand": "Alec Bradley",
     "line": "Occidental Reserve",
@@ -357,11 +623,53 @@
     "url": "https://www.neptunecigar.com/cigars/alec-bradley-occidental-reserve-robusto"
   },
   {
+    "id": "cig-alec-bradley-post-embargo",
+    "brand": "Alec Bradley",
+    "line": "Post Embargo",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/alec-bradley-post-embargo-blend-code-b15-robusto"
+  },
+  {
+    "id": "cig-alec-bradley-project-40",
+    "brand": "Alec Bradley",
+    "line": "Project 40",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/alec-bradley-project-40-robusto"
+  },
+  {
+    "id": "cig-alec-bradley-project-40-maduro",
+    "brand": "Alec Bradley",
+    "line": "Project 40 Maduro",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/alec-bradley-project-40-maduro-robusto"
+  },
+  {
+    "id": "cig-alec-bradley-safe-keepings",
+    "brand": "Alec Bradley",
+    "line": "Safe Keepings",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/alec-bradley-safe-keepings-gordo"
+  },
+  {
     "id": "cig-alec-bradley-taa-exclusive-le",
     "brand": "Alec Bradley",
     "line": "TAA Exclusive LE",
     "vitola": "Toro",
     "url": "https://www.neptunecigar.com/cigars/alec-bradley-taa-exclusive-le-toro"
+  },
+  {
+    "id": "cig-alec-bradley-tempus",
+    "brand": "Alec Bradley",
+    "line": "Tempus",
+    "vitola": "Limited",
+    "url": "https://www.neptunecigar.com/cigars/alec-bradley-tempus-medius-6"
+  },
+  {
+    "id": "cig-alec-bradley-texas",
+    "brand": "Alec Bradley",
+    "line": "Texas",
+    "vitola": "Lancero",
+    "url": "https://www.neptunecigar.com/cigars/alec-bradley-texas-lancero"
   },
   {
     "id": "cig-angel-cuesta",
@@ -455,6 +763,13 @@
     "url": "https://www.neptunecigar.com/cigars/arturo-fuente-casa-fuente-808-maduro"
   },
   {
+    "id": "cig-arturo-fuente-chateau-fuente",
+    "brand": "Arturo Fuente",
+    "line": "Chateau Fuente",
+    "vitola": "Chateau Churchill",
+    "url": "https://www.neptunecigar.com/cigars/arturo-fuente-chateau-fuente"
+  },
+  {
     "id": "cig-arturo-fuente-churchill",
     "brand": "Arturo Fuente",
     "line": "Churchill",
@@ -474,6 +789,13 @@
     "line": "Especiales",
     "vitola": "Conquistador",
     "url": "https://www.neptunecigar.com/cigars/arturo-fuente-especiales-conquistador"
+  },
+  {
+    "id": "cig-arturo-fuente-hemingway",
+    "brand": "Arturo Fuente",
+    "line": "Hemingway",
+    "vitola": "Short Story",
+    "url": "https://www.neptunecigar.com/cigars/arturo-fuente-hemingway-classic-maduro"
   },
   {
     "id": "cig-arturo-fuente-maduro",
@@ -574,6 +896,20 @@
     "url": "https://www.neptunecigar.com/cigars/arturo-fuente-rare-pink-vs-work-of-art"
   },
   {
+    "id": "cig-arturo-fuente-seleccion-d-oro",
+    "brand": "Arturo Fuente",
+    "line": "Seleccion d'Oro",
+    "vitola": "Imperial",
+    "url": "https://www.neptunecigar.com/cigars/arturo-fuente-seleccion-d-oro-corona-imperial"
+  },
+  {
+    "id": "cig-arturo-fuente-special-selection-brevas-royales-maduro",
+    "brand": "Arturo Fuente",
+    "line": "Special Selection Brevas Royales Maduro",
+    "vitola": "Petit Corona",
+    "url": "https://www.neptunecigar.com/cigars/arturo-fuente-maduro-petit-corona"
+  },
+  {
     "id": "cig-arturo-fuente-sun-grown-chateau-royal-salute",
     "brand": "Arturo Fuente",
     "line": "Sun Grown Chateau Royal Salute",
@@ -581,11 +917,25 @@
     "url": "https://www.neptunecigar.com/cigars/arturo-fuente-sun-grown-chateau-royal-salute"
   },
   {
-    "id": "cig-arturo-fuente-unnamed-reserve-2021",
+    "id": "cig-arturo-fuente-unnamed-reserve",
     "brand": "Arturo Fuente",
-    "line": "Unnamed Reserve 2021",
+    "line": "Unnamed Reserve",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/arturo-fuente-unnamed-reserve-2021"
+  },
+  {
+    "id": "cig-ashton-aged-maduro",
+    "brand": "Ashton",
+    "line": "Aged Maduro",
+    "vitola": "Corona",
+    "url": "https://www.neptunecigar.com/cigars/ashton-aged-maduro-no-10"
+  },
+  {
+    "id": "cig-ashton-cabinet",
+    "brand": "Ashton",
+    "line": "Cabinet",
+    "vitola": "Belicoso",
+    "url": "https://www.neptunecigar.com/cigars/ashton-cabinet-belicoso"
   },
   {
     "id": "cig-ashton-connecticut",
@@ -616,6 +966,20 @@
     "url": "https://www.neptunecigar.com/cigars/ashton-premium-house-selection-sun-grown-toro-6--50"
   },
   {
+    "id": "cig-ashton-symmetry",
+    "brand": "Ashton",
+    "line": "Symmetry",
+    "vitola": "Symmetry",
+    "url": "https://www.neptunecigar.com/cigars/ashton-symmetry-belicoso"
+  },
+  {
+    "id": "cig-ashton-vsg",
+    "brand": "Ashton",
+    "line": "VSG",
+    "vitola": "VSG Robusto",
+    "url": "https://www.neptunecigar.com/cigars/ashton-vsg-tres-mystique"
+  },
+  {
     "id": "cig-asylum-12-medulla-maduro",
     "brand": "Asylum",
     "line": "12 Medulla Maduro",
@@ -630,9 +994,23 @@
     "url": "https://www.neptunecigar.com/cigars/asylum-867-auntie-46x5"
   },
   {
-    "id": "cig-asylum-april-fool-s-limited-edition-2023",
+    "id": "cig-asylum-867-midnight-oil",
     "brand": "Asylum",
-    "line": "April Fool's Limited Edition 2023",
+    "line": "867 Midnight Oil",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/asylum-867-midnight-oil-70x7"
+  },
+  {
+    "id": "cig-asylum-867-zero",
+    "brand": "Asylum",
+    "line": "867 Zero",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/asylum-867-zero-48x7"
+  },
+  {
+    "id": "cig-asylum-april-fool-s",
+    "brand": "Asylum",
+    "line": "April Fool's",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/asylum-april-fool-s-limited-edition-2023"
   },
@@ -686,6 +1064,13 @@
     "url": "https://www.neptunecigar.com/cigars/asylum-devils-night-50x5-pack"
   },
   {
+    "id": "cig-asylum-insidious",
+    "brand": "Asylum",
+    "line": "Insidious",
+    "vitola": "Short Corona",
+    "url": "https://www.neptunecigar.com/cigars/asylum-insidious-toro"
+  },
+  {
     "id": "cig-asylum-pca-exclusive",
     "brand": "Asylum",
     "line": "PCA Exclusive",
@@ -707,13 +1092,6 @@
     "url": "https://www.neptunecigar.com/cigars/asylum-pca-exclusive-2023-1118"
   },
   {
-    "id": "cig-asylum-pca-exclusive-2025",
-    "brand": "Asylum",
-    "line": "PCA Exclusive 2025",
-    "vitola": "Robusto",
-    "url": "https://www.neptunecigar.com/cigars/asylum-pca-exclusive-2025-52x6-6--52"
-  },
-  {
     "id": "cig-asylum-premium",
     "brand": "Asylum",
     "line": "Premium",
@@ -721,11 +1099,32 @@
     "url": "https://www.neptunecigar.com/cigars/asylum-premium-44x4"
   },
   {
+    "id": "cig-asylum-schizo",
+    "brand": "Asylum",
+    "line": "Schizo",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/asylum-schizo-50-6"
+  },
+  {
+    "id": "cig-asylum-schizo-maduro",
+    "brand": "Asylum",
+    "line": "Schizo Maduro",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/asylum-schizo-maduro-5x50"
+  },
+  {
     "id": "cig-asylum-sensorium",
     "brand": "Asylum",
     "line": "Sensorium",
     "vitola": "1118",
     "url": "https://www.neptunecigar.com/cigars/asylum-sensorium-1118"
+  },
+  {
+    "id": "cig-asylum-straight-jacket",
+    "brand": "Asylum",
+    "line": "Straight Jacket",
+    "vitola": "Double",
+    "url": "https://www.neptunecigar.com/cigars/asylum-straight-jacket-toro-gordo"
   },
   {
     "id": "cig-asylum-ten-limited-edition",
@@ -763,6 +1162,13 @@
     "url": "https://www.neptunecigar.com/cigars/ave-maria-lionheart"
   },
   {
+    "id": "cig-avo-classic",
+    "brand": "Avo",
+    "line": "Classic",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/avo-classic-puritos"
+  },
+  {
     "id": "cig-avo-domaine",
     "brand": "Avo",
     "line": "Domaine",
@@ -770,11 +1176,39 @@
     "url": "https://www.neptunecigar.com/cigars/avo-domaine-10"
   },
   {
-    "id": "cig-avo-expressions-limited-edition-2024",
+    "id": "cig-avo-expresivo",
     "brand": "Avo",
-    "line": "Expressions Limited Edition 2024",
+    "line": "Expresivo",
+    "vitola": "Churchill",
+    "url": "https://www.neptunecigar.com/cigars/avo-expresivo-churchill-7--48"
+  },
+  {
+    "id": "cig-avo-expressions",
+    "brand": "Avo",
+    "line": "Expressions",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/avo-expressions-limited-edition-2024"
+  },
+  {
+    "id": "cig-avo-heritage",
+    "brand": "Avo",
+    "line": "Heritage",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/avo-heritage-short-robusto"
+  },
+  {
+    "id": "cig-avo-heritage-special",
+    "brand": "Avo",
+    "line": "Heritage Special",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/avo-heritage-special-toro"
+  },
+  {
+    "id": "cig-avo-improvisation",
+    "brand": "Avo",
+    "line": "Improvisation",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/avo-improvisation-limited-edition-2017"
   },
   {
     "id": "cig-avo-improvisation-30-year-le",
@@ -789,13 +1223,6 @@
     "line": "Improvisation LE",
     "vitola": "2021",
     "url": "https://www.neptunecigar.com/cigars/avo-improvisation-le-2021"
-  },
-  {
-    "id": "cig-avo-improvisation-limited-edition-2017",
-    "brand": "Avo",
-    "line": "Improvisation Limited Edition 2017",
-    "vitola": "Robusto",
-    "url": "https://www.neptunecigar.com/cigars/avo-improvisation-limited-edition-2017"
   },
   {
     "id": "cig-avo-maduro-30-years",
@@ -826,30 +1253,30 @@
     "url": "https://www.neptunecigar.com/cigars/avo-robusto"
   },
   {
-    "id": "cig-avo-seasons-fall-limited-edition-2023",
+    "id": "cig-avo-seasons-fall",
     "brand": "Avo",
-    "line": "Seasons Fall Limited Edition 2023",
+    "line": "Seasons Fall",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/avo-seasons-fall-limited-edition-2023"
   },
   {
-    "id": "cig-avo-seasons-spring-limited-edition-2023",
+    "id": "cig-avo-seasons-spring",
     "brand": "Avo",
-    "line": "Seasons Spring Limited Edition 2023",
+    "line": "Seasons Spring",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/avo-seasons-spring-limited-edition-2023"
   },
   {
-    "id": "cig-avo-seasons-summer-limited-edition-2023",
+    "id": "cig-avo-seasons-summer",
     "brand": "Avo",
-    "line": "Seasons Summer Limited Edition 2023",
+    "line": "Seasons Summer",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/avo-seasons-summer-limited-edition-2023"
   },
   {
-    "id": "cig-avo-seasons-winter-limited-edition-2023",
+    "id": "cig-avo-seasons-winter",
     "brand": "Avo",
-    "line": "Seasons Winter Limited Edition 2023",
+    "line": "Seasons Winter",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/avo-seasons-winter-limited-edition-2023"
   },
@@ -859,6 +1286,20 @@
     "line": "Signature 30 Years",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/avo-signature-30-years-robusto"
+  },
+  {
+    "id": "cig-avo-syncro",
+    "brand": "Avo",
+    "line": "Syncro",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/avo-syncro-south-america-ritmo-robusto"
+  },
+  {
+    "id": "cig-avo-syncro-nicaragua-fogata",
+    "brand": "Avo",
+    "line": "Syncro Nicaragua Fogata",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/avo-syncro-nicaragua-fogata-robusto"
   },
   {
     "id": "cig-avo-unexpected",
@@ -873,6 +1314,13 @@
     "line": "XO Intermezzo",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/avo-xo-intermezzo-tubo"
+  },
+  {
+    "id": "cig-avo-xo-legato",
+    "brand": "Avo",
+    "line": "XO Legato",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/avo-xo-legato-tubos"
   },
   {
     "id": "cig-avo-xo-series",
@@ -917,6 +1365,13 @@
     "url": "https://www.neptunecigar.com/cigars/baccarat-luchadores"
   },
   {
+    "id": "cig-baccarat-maduro",
+    "brand": "Baccarat",
+    "line": "Maduro",
+    "vitola": "Churchill",
+    "url": "https://www.neptunecigar.com/cigars/baccarat-maduro-belicoso"
+  },
+  {
     "id": "cig-baccarat-no-1",
     "brand": "Baccarat",
     "line": "No. 1",
@@ -936,6 +1391,13 @@
     "line": "Rothschild",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/baccarat-rothschild"
+  },
+  {
+    "id": "cig-baccarat-the-game",
+    "brand": "Baccarat",
+    "line": "The Game",
+    "vitola": "Gordo",
+    "url": "https://www.neptunecigar.com/cigars/baccarat-havana-the-game-gordo"
   },
   {
     "id": "cig-baccarat-toro",
@@ -959,11 +1421,60 @@
     "url": "https://www.neptunecigar.com/cigars/balmoral-serie-signatura-dueto-ovacio"
   },
   {
+    "id": "cig-balmoral-serie-signaturas-dueto",
+    "brand": "Balmoral",
+    "line": "Serie Signaturas Dueto",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/balmoral-serie-signaturas-dueto-gran-toro"
+  },
+  {
     "id": "cig-balmoral-serie-signaturas-paso-doble",
     "brand": "Balmoral",
     "line": "Serie Signaturas Paso Doble",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/balmoral-serie-signaturas-paso-doble-robusto"
+  },
+  {
+    "id": "cig-black-label-trading-company-bishops-blend",
+    "brand": "Black Label Trading Company",
+    "line": "Bishops Blend",
+    "vitola": "Lancero",
+    "url": "https://www.neptunecigar.com/cigars/black-label-trading-company-bishops-blend-corona-larga"
+  },
+  {
+    "id": "cig-black-label-trading-company-last-rites",
+    "brand": "Black Label Trading Company",
+    "line": "Last Rites",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/black-label-trading-company-last-rites-box-pressed-robusto"
+  },
+  {
+    "id": "cig-black-label-trading-company-lawless",
+    "brand": "Black Label Trading Company",
+    "line": "Lawless",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/black-label-trading-company-lawless-grand-toro"
+  },
+  {
+    "id": "cig-black-label-trading-company-royalty",
+    "brand": "Black Label Trading Company",
+    "line": "Royalty",
+    "vitola": "Corona",
+    "url": "https://www.neptunecigar.com/cigars/black-label-trading-company-royalty-grand-toro"
+  },
+  {
+    "id": "cig-black-label-trading-company-salvation",
+    "brand": "Black Label Trading Company",
+    "line": "Salvation",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/black-label-trading-company-salvation-robusto"
+  },
+  {
+    "id": "cig-black-label-trading-company-santa-muerte",
+    "brand": "Black Label Trading Company",
+    "line": "Santa Muerte",
+    "vitola": "Lancero",
+    "url": "https://www.neptunecigar.com/cigars/black-label-trading-company-santa-muerte-short-robusto"
   },
   {
     "id": "cig-black-works-studio-boondock-saint",
@@ -994,6 +1505,20 @@
     "url": "https://www.neptunecigar.com/cigars/blackbird-crow-doble-toro"
   },
   {
+    "id": "cig-blackbird-crow-san-andres",
+    "brand": "Blackbird",
+    "line": "Crow San Andres",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/blackbird-crow-robusto"
+  },
+  {
+    "id": "cig-blackbird-cuco-criollo",
+    "brand": "Blackbird",
+    "line": "Cuco Criollo",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/blackbird-cuco-robusto"
+  },
+  {
     "id": "cig-blackbird-cuco-gran",
     "brand": "Blackbird",
     "line": "Cuco Gran",
@@ -1001,11 +1526,25 @@
     "url": "https://www.neptunecigar.com/cigars/blackbird-cuco-gran-toro"
   },
   {
+    "id": "cig-blackbird-finch-sumatra",
+    "brand": "Blackbird",
+    "line": "Finch Sumatra",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/blackbird-finch-robusto"
+  },
+  {
     "id": "cig-blackbird-hawk-cubra-gran",
     "brand": "Blackbird",
     "line": "Hawk Cubra Gran",
     "vitola": "Toro",
     "url": "https://www.neptunecigar.com/cigars/blackbird-hawk-cubra-gran-toro"
+  },
+  {
+    "id": "cig-blackbird-jackdaw-connecticut",
+    "brand": "Blackbird",
+    "line": "Jackdaw Connecticut",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/blackbird-jackdaw-robusto"
   },
   {
     "id": "cig-blackbird-jackdaw-gran",
@@ -1041,6 +1580,13 @@
     "line": "Rook Gran",
     "vitola": "Toro",
     "url": "https://www.neptunecigar.com/cigars/blackbird-rook-gran-toro"
+  },
+  {
+    "id": "cig-blackbird-rook-sumatra",
+    "brand": "Blackbird",
+    "line": "Rook Sumatra",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/blackbird-rook-robusto"
   },
   {
     "id": "cig-blackbird-superb",
@@ -1123,13 +1669,6 @@
     "id": "cig-brick-house-bricktoberfest",
     "brand": "Brick House",
     "line": "Bricktoberfest",
-    "vitola": "2023",
-    "url": "https://www.neptunecigar.com/cigars/brick-house-bricktoberfest-2023-toro"
-  },
-  {
-    "id": "cig-brick-house-bricktoberfest-2025",
-    "brand": "Brick House",
-    "line": "Bricktoberfest 2025",
     "vitola": "Churchill",
     "url": "https://www.neptunecigar.com/cigars/brick-house-bricktoberfest-2025-churchill-73-4--48"
   },
@@ -1141,6 +1680,13 @@
     "url": "https://www.neptunecigar.com/cigars/brick-house-churchill"
   },
   {
+    "id": "cig-brick-house-connecticut",
+    "brand": "Brick House",
+    "line": "Connecticut",
+    "vitola": "Larga Corona",
+    "url": "https://www.neptunecigar.com/cigars/brick-house-double-connecticut-mighty-mighty"
+  },
+  {
     "id": "cig-brick-house-corona",
     "brand": "Brick House",
     "line": "Corona",
@@ -1148,9 +1694,16 @@
     "url": "https://www.neptunecigar.com/cigars/brick-house-corona"
   },
   {
-    "id": "cig-brick-house-is-on-fire-taa-exclusive-2025",
+    "id": "cig-brick-house-double-connecticut",
     "brand": "Brick House",
-    "line": "Is on Fire TAA Exclusive 2025",
+    "line": "Double Connecticut",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/brick-house-double-connecticut-toro"
+  },
+  {
+    "id": "cig-brick-house-is-on-fire-taa-exclusive",
+    "brand": "Brick House",
+    "line": "Is on Fire TAA Exclusive",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/brick-house-is-on-fire-taa-exclusive-2025-6--50"
   },
@@ -1160,6 +1713,13 @@
     "line": "Larga",
     "vitola": "Corona",
     "url": "https://www.neptunecigar.com/cigars/brick-house-corona-larga"
+  },
+  {
+    "id": "cig-brick-house-maduro",
+    "brand": "Brick House",
+    "line": "Maduro",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/brick-house-toro-maduro"
   },
   {
     "id": "cig-brick-house-mighty-mighty",
@@ -1211,6 +1771,55 @@
     "url": "https://www.neptunecigar.com/cigars/buffalo-trace-churchill"
   },
   {
+    "id": "cig-cain-daytona",
+    "brand": "Cain",
+    "line": "Daytona",
+    "vitola": "550",
+    "url": "https://www.neptunecigar.com/cigars/cain-daytona-550"
+  },
+  {
+    "id": "cig-cain-f",
+    "brand": "Cain",
+    "line": "F",
+    "vitola": "654T",
+    "url": "https://www.neptunecigar.com/cigars/cain-f-654t"
+  },
+  {
+    "id": "cig-cain-habano",
+    "brand": "Cain",
+    "line": "Habano",
+    "vitola": "550",
+    "url": "https://www.neptunecigar.com/cigars/cain-habano-550"
+  },
+  {
+    "id": "cig-cain-maduro",
+    "brand": "Cain",
+    "line": "Maduro",
+    "vitola": "550",
+    "url": "https://www.neptunecigar.com/cigars/cain-maduro-550"
+  },
+  {
+    "id": "cig-caldwell-blind-man-s-bluff",
+    "brand": "Caldwell",
+    "line": "Blind Man's Bluff",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/caldwell-blind-man-s-bluff-maduro-magnum"
+  },
+  {
+    "id": "cig-caldwell-blind-man-s-bluff-connecticut",
+    "brand": "Caldwell",
+    "line": "Blind Man's Bluff Connecticut",
+    "vitola": "Corona",
+    "url": "https://www.neptunecigar.com/cigars/caldwell-blind-man-s-bluff-connecticut-robusto"
+  },
+  {
+    "id": "cig-caldwell-blind-man-s-bluff-maduro",
+    "brand": "Caldwell",
+    "line": "Blind Man's Bluff Maduro",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/caldwell-blind-man-s-bluff-maduro-robusto"
+  },
+  {
     "id": "cig-caldwell-blind-mans-bluff",
     "brand": "Caldwell",
     "line": "Blind Mans Bluff",
@@ -1218,11 +1827,74 @@
     "url": "https://www.neptunecigar.com/cigars/caldwell-blind-mans-bluff-magnum"
   },
   {
+    "id": "cig-caldwell-eastern-standard",
+    "brand": "Caldwell",
+    "line": "Eastern Standard",
+    "vitola": "Manzanita",
+    "url": "https://www.neptunecigar.com/cigars/caldwell-eastern-standard-corretto"
+  },
+  {
+    "id": "cig-caldwell-long-live-the-king",
+    "brand": "Caldwell",
+    "line": "Long Live The King",
+    "vitola": "My Style is Jalapeno",
+    "url": "https://www.neptunecigar.com/cigars/caldwell-long-live-the-king-petit-double-wide-short-churchill"
+  },
+  {
+    "id": "cig-caldwell-long-live-the-queen",
+    "brand": "Caldwell",
+    "line": "Long Live The Queen",
+    "vitola": "Queen's Sword",
+    "url": "https://www.neptunecigar.com/cigars/caldwell-long-live-the-queen-maduro-queens-chalice"
+  },
+  {
+    "id": "cig-caldwell-the-king-is-dead",
+    "brand": "Caldwell",
+    "line": "The King Is Dead",
+    "vitola": "Manzanita",
+    "url": "https://www.neptunecigar.com/cigars/caldwell-the-king-is-dead-the-last-payday"
+  },
+  {
+    "id": "cig-camacho-american-barrel-aged",
+    "brand": "Camacho",
+    "line": "American Barrel Aged",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/camacho-american-barrel-aged-robusto"
+  },
+  {
+    "id": "cig-camacho-broadleaf",
+    "brand": "Camacho",
+    "line": "Broadleaf",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/camacho-broadleaf-robusto"
+  },
+  {
     "id": "cig-camacho-coyolar",
     "brand": "Camacho",
     "line": "Coyolar",
     "vitola": "Rothschild",
     "url": "https://www.neptunecigar.com/cigars/camacho-coyolar-rothschild"
+  },
+  {
+    "id": "cig-camacho-criollo",
+    "brand": "Camacho",
+    "line": "Criollo",
+    "vitola": "Corona",
+    "url": "https://www.neptunecigar.com/cigars/camacho-criollo-toro"
+  },
+  {
+    "id": "cig-camacho-diploma",
+    "brand": "Camacho",
+    "line": "Diploma",
+    "vitola": "Diploma Robusto",
+    "url": "https://www.neptunecigar.com/cigars/camacho-diploma-limited-robusto"
+  },
+  {
+    "id": "cig-camacho-ecuador",
+    "brand": "Camacho",
+    "line": "Ecuador",
+    "vitola": "Gordo",
+    "url": "https://www.neptunecigar.com/cigars/camacho-ecuador-gordo"
   },
   {
     "id": "cig-camacho-factory-unleashed",
@@ -1274,6 +1946,13 @@
     "url": "https://www.neptunecigar.com/cigars/camacho-limited-edition-2025-toro-6--52"
   },
   {
+    "id": "cig-camacho-triple-maduro",
+    "brand": "Camacho",
+    "line": "Triple Maduro",
+    "vitola": "Petit",
+    "url": "https://www.neptunecigar.com/cigars/camacho-triple-maduro-gordo"
+  },
+  {
     "id": "cig-cao-60-torque",
     "brand": "CAO",
     "line": "60 Torque",
@@ -1288,6 +1967,34 @@
     "url": "https://www.neptunecigar.com/cigars/cao-amazon-anaconda"
   },
   {
+    "id": "cig-cao-amazon-basin",
+    "brand": "CAO",
+    "line": "Amazon Basin",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/cao-amazon-basin"
+  },
+  {
+    "id": "cig-cao-amazon-basin-extra-anejo",
+    "brand": "CAO",
+    "line": "Amazon Basin Extra Anejo",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/cao-amazon-basin-extra-anejo"
+  },
+  {
+    "id": "cig-cao-america",
+    "brand": "CAO",
+    "line": "America",
+    "vitola": "Monument",
+    "url": "https://www.neptunecigar.com/cigars/cao-america-monument"
+  },
+  {
+    "id": "cig-cao-arcana",
+    "brand": "CAO",
+    "line": "Arcana",
+    "vitola": "Thunder Smoke",
+    "url": "https://www.neptunecigar.com/cigars/cao-arcana-stokk-belicoso-61-2--52"
+  },
+  {
     "id": "cig-cao-bella-vanilla",
     "brand": "CAO",
     "line": "Bella Vanilla",
@@ -1295,11 +2002,46 @@
     "url": "https://www.neptunecigar.com/cigars/cao-bella-vanilla-corona"
   },
   {
+    "id": "cig-cao-bones",
+    "brand": "CAO",
+    "line": "Bones",
+    "vitola": "Chicken Foot",
+    "url": "https://www.neptunecigar.com/cigars/cao-bones-maltese-cross-gigante"
+  },
+  {
+    "id": "cig-cao-bx3",
+    "brand": "CAO",
+    "line": "BX3",
+    "vitola": "Brazillian Times Three",
+    "url": "https://www.neptunecigar.com/cigars/cao-bx3-robusto"
+  },
+  {
+    "id": "cig-cao-cameroon",
+    "brand": "CAO",
+    "line": "Cameroon",
+    "vitola": "Perfecto",
+    "url": "https://www.neptunecigar.com/cigars/cao-cameroon-perfecto"
+  },
+  {
     "id": "cig-cao-cherrybomb",
     "brand": "CAO",
     "line": "Cherrybomb",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/cao-cherrybomb-tubos"
+  },
+  {
+    "id": "cig-cao-colombia",
+    "brand": "CAO",
+    "line": "Colombia",
+    "vitola": "Magdalena",
+    "url": "https://www.neptunecigar.com/cigars/cao-colombia-bogota"
+  },
+  {
+    "id": "cig-cao-consigliere",
+    "brand": "CAO",
+    "line": "Consigliere",
+    "vitola": "Consigliere",
+    "url": "https://www.neptunecigar.com/cigars/cao-consigliere-soldier"
   },
   {
     "id": "cig-cao-eileens-dream",
@@ -1323,11 +2065,39 @@
     "url": "https://www.neptunecigar.com/cigars/cao-fasa-sombra-toro-6--50"
   },
   {
+    "id": "cig-cao-flathead",
+    "brand": "CAO",
+    "line": "Flathead",
+    "vitola": "Flathead V554",
+    "url": "https://www.neptunecigar.com/cigars/cao-flathead-v642-piston"
+  },
+  {
+    "id": "cig-cao-fuma-em-corda",
+    "brand": "CAO",
+    "line": "Fuma Em Corda",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/cao-fuma-em-corda-toro"
+  },
+  {
+    "id": "cig-cao-gold",
+    "brand": "CAO",
+    "line": "Gold",
+    "vitola": "Gold Corona",
+    "url": "https://www.neptunecigar.com/cigars/cao-gold-label-robusto"
+  },
+  {
     "id": "cig-cao-italia",
     "brand": "CAO",
     "line": "Italia",
     "vitola": "Ciao",
     "url": "https://www.neptunecigar.com/cigars/cao-italia-ciao"
+  },
+  {
+    "id": "cig-cao-maduro",
+    "brand": "CAO",
+    "line": "Maduro",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/cao-surplus-maduro-gigante-6--60"
   },
   {
     "id": "cig-cao-moontrance",
@@ -1337,11 +2107,39 @@
     "url": "https://www.neptunecigar.com/cigars/cao-moontrance-corona"
   },
   {
+    "id": "cig-cao-mx2",
+    "brand": "CAO",
+    "line": "MX2",
+    "vitola": "Gordo",
+    "url": "https://www.neptunecigar.com/cigars/cao-mx2-toro"
+  },
+  {
     "id": "cig-cao-nicaragua",
     "brand": "CAO",
     "line": "Nicaragua",
     "vitola": "Granada",
     "url": "https://www.neptunecigar.com/cigars/cao-nicaragua-granada"
+  },
+  {
+    "id": "cig-cao-orellana",
+    "brand": "CAO",
+    "line": "Orellana",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/cao-orellana-limited-edition-toro"
+  },
+  {
+    "id": "cig-cao-pilon",
+    "brand": "CAO",
+    "line": "Pilon",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/cao-pilon-churchill"
+  },
+  {
+    "id": "cig-cao-session",
+    "brand": "CAO",
+    "line": "Session",
+    "vitola": "Session",
+    "url": "https://www.neptunecigar.com/cigars/cao-session-shop"
   },
   {
     "id": "cig-cao-surplus-shade",
@@ -1358,102 +2156,11 @@
     "url": "https://www.neptunecigar.com/cigars/cao-surplus-sweet-robusto-5--50"
   },
   {
-    "id": "cig-casa-carrillo-2025-taa-exclusive",
-    "brand": "Casa",
-    "line": "Carrillo 2025 TAA Exclusive",
-    "vitola": "Robusto",
-    "url": "https://www.neptunecigar.com/cigars/casa-carrillo-2025-taa-exclusive-6--54"
-  },
-  {
-    "id": "cig-casa-carrillo-ascend-peak",
-    "brand": "Casa",
-    "line": "Carrillo Ascend Peak",
-    "vitola": "Robusto",
-    "url": "https://www.neptunecigar.com/cigars/casa-carrillo-ascend-peak-61-4--58"
-  },
-  {
-    "id": "cig-casa-carrillo-ascend-ridge",
-    "brand": "Casa",
-    "line": "Carrillo Ascend Ridge",
-    "vitola": "Robusto",
-    "url": "https://www.neptunecigar.com/cigars/casa-carrillo-ascend-ridge-6--52"
-  },
-  {
-    "id": "cig-casa-carrillo-ascend-saddle",
-    "brand": "Casa",
-    "line": "Carrillo Ascend Saddle",
-    "vitola": "Robusto",
-    "url": "https://www.neptunecigar.com/cigars/casa-carrillo-ascend-saddle-5--50"
-  },
-  {
-    "id": "cig-casa-cuevas",
-    "brand": "Casa",
-    "line": "Cuevas",
-    "vitola": "Connecticut",
-    "url": "https://www.neptunecigar.com/cigars/casa-cuevas-connecticut-toro"
-  },
-  {
-    "id": "cig-casa-cuevas-la-mandarria",
-    "brand": "Casa",
-    "line": "Cuevas La Mandarria",
-    "vitola": "Toro",
-    "url": "https://www.neptunecigar.com/cigars/casa-cuevas-la-mandarria-toro"
-  },
-  {
-    "id": "cig-casa-cuevas-limited-edition-habano-flaco",
-    "brand": "Casa",
-    "line": "Cuevas Limited Edition Habano Flaco",
-    "vitola": "Robusto",
-    "url": "https://www.neptunecigar.com/cigars/casa-cuevas-limited-edition-habano-flaco"
-  },
-  {
-    "id": "cig-casa-cuevas-limited-edition-maduro-flaco",
-    "brand": "Casa",
-    "line": "Cuevas Limited Edition Maduro Flaco",
-    "vitola": "Robusto",
-    "url": "https://www.neptunecigar.com/cigars/casa-cuevas-limited-edition-maduro-flaco"
-  },
-  {
-    "id": "cig-casa-cuevas-patrimonio-gordo",
-    "brand": "Casa",
-    "line": "Cuevas Patrimonio Gordo",
-    "vitola": "Robusto Gordo",
-    "url": "https://www.neptunecigar.com/cigars/casa-cuevas-patrimonio-robusto-gordo"
-  },
-  {
-    "id": "cig-casa-cuevas-reserva",
-    "brand": "Casa",
-    "line": "Cuevas Reserva",
-    "vitola": "Maduro",
-    "url": "https://www.neptunecigar.com/cigars/casa-cuevas-reserva-maduro-toro"
-  },
-  {
-    "id": "cig-casa-cuevas-sangre-nueva",
-    "brand": "Casa",
-    "line": "Cuevas Sangre Nueva",
-    "vitola": "Robusto",
-    "url": "https://www.neptunecigar.com/cigars/casa-cuevas-sangre-nueva-robusto"
-  },
-  {
-    "id": "cig-casa-de-garcia-centenario-gold-label",
-    "brand": "Casa",
-    "line": "De Garcia Centenario Gold Label",
-    "vitola": "Robusto",
-    "url": "https://www.neptunecigar.com/cigars/casa-de-garcia-centenario-gold-label-robusto"
-  },
-  {
-    "id": "cig-casa-de-garcia-centenario-red-label",
-    "brand": "Casa",
-    "line": "De Garcia Centenario Red Label",
-    "vitola": "Robusto",
-    "url": "https://www.neptunecigar.com/cigars/casa-de-garcia-centenario-red-label-robusto"
-  },
-  {
-    "id": "cig-casa-de-garcia-maduro",
-    "brand": "Casa",
-    "line": "De Garcia Maduro",
-    "vitola": "Robusto",
-    "url": "https://www.neptunecigar.com/cigars/casa-de-garcia-maduro-robusto"
+    "id": "cig-cao-zocalo",
+    "brand": "CAO",
+    "line": "Zocalo",
+    "vitola": "Gordo",
+    "url": "https://www.neptunecigar.com/cigars/cao-zocalo-gigante"
   },
   {
     "id": "cig-casa-1910-mexigars-colorado",
@@ -1468,6 +2175,125 @@
     "line": "Mexigars Hba",
     "vitola": "Toro",
     "url": "https://www.neptunecigar.com/cigars/casa-1910-mexigars-hba-toro-6--52"
+  },
+  {
+    "id": "cig-casa-carrillo-2025-taa-exclusive",
+    "brand": "Casa Carrillo",
+    "line": "2025 TAA Exclusive",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/casa-carrillo-2025-taa-exclusive-6--54"
+  },
+  {
+    "id": "cig-casa-carrillo-ascend-peak",
+    "brand": "Casa Carrillo",
+    "line": "Ascend Peak",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/casa-carrillo-ascend-peak-61-4--58"
+  },
+  {
+    "id": "cig-casa-carrillo-ascend-ridge",
+    "brand": "Casa Carrillo",
+    "line": "Ascend Ridge",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/casa-carrillo-ascend-ridge-6--52"
+  },
+  {
+    "id": "cig-casa-carrillo-ascend-saddle",
+    "brand": "Casa Carrillo",
+    "line": "Ascend Saddle",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/casa-carrillo-ascend-saddle-5--50"
+  },
+  {
+    "id": "cig-casa-cuevas",
+    "brand": "Casa Cuevas",
+    "line": "Classic",
+    "vitola": "Connecticut",
+    "url": "https://www.neptunecigar.com/cigars/casa-cuevas-connecticut-toro"
+  },
+  {
+    "id": "cig-casa-cuevas-la-mandarria",
+    "brand": "Casa Cuevas",
+    "line": "La Mandarria",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/casa-cuevas-la-mandarria-toro"
+  },
+  {
+    "id": "cig-casa-cuevas-limited-edition-habano-flaco",
+    "brand": "Casa Cuevas",
+    "line": "Limited Edition Habano Flaco",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/casa-cuevas-limited-edition-habano-flaco"
+  },
+  {
+    "id": "cig-casa-cuevas-limited-edition-maduro-flaco",
+    "brand": "Casa Cuevas",
+    "line": "Limited Edition Maduro Flaco",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/casa-cuevas-limited-edition-maduro-flaco"
+  },
+  {
+    "id": "cig-casa-cuevas-patrimonio-gordo",
+    "brand": "Casa Cuevas",
+    "line": "Patrimonio Gordo",
+    "vitola": "Robusto Gordo",
+    "url": "https://www.neptunecigar.com/cigars/casa-cuevas-patrimonio-robusto-gordo"
+  },
+  {
+    "id": "cig-casa-cuevas-reserva",
+    "brand": "Casa Cuevas",
+    "line": "Reserva",
+    "vitola": "Maduro",
+    "url": "https://www.neptunecigar.com/cigars/casa-cuevas-reserva-maduro-toro"
+  },
+  {
+    "id": "cig-casa-cuevas-sangre-nueva",
+    "brand": "Casa Cuevas",
+    "line": "Sangre Nueva",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/casa-cuevas-sangre-nueva-robusto"
+  },
+  {
+    "id": "cig-casa-de-garcia-centenario-gold-label",
+    "brand": "Casa de García",
+    "line": "Centenario Gold Label",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/casa-de-garcia-centenario-gold-label-robusto"
+  },
+  {
+    "id": "cig-casa-de-garcia-centenario-red-label",
+    "brand": "Casa de García",
+    "line": "Centenario Red Label",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/casa-de-garcia-centenario-red-label-robusto"
+  },
+  {
+    "id": "cig-casa-de-garcia-connecticut",
+    "brand": "Casa de García",
+    "line": "Connecticut",
+    "vitola": "Corona",
+    "url": "https://www.neptunecigar.com/cigars/casa-de-garcia-connecticut-magnum"
+  },
+  {
+    "id": "cig-casa-de-garcia-maduro",
+    "brand": "Casa de García",
+    "line": "Maduro",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/casa-de-garcia-maduro-robusto"
+  },
+  {
+    "id": "cig-casa-fernandez-miami-reserva",
+    "brand": "Casa Fernández",
+    "line": "Miami Reserva",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/casa-fernandez-miami-reserva-toro"
+  },
+  {
+    "id": "cig-casa-magna-colorado",
+    "brand": "Casa Magna",
+    "line": "Colorado",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/casa-magna-colorado-robusto"
   },
   {
     "id": "cig-casa-magna-connecticut",
@@ -1498,6 +2324,13 @@
     "url": "https://www.neptunecigar.com/cigars/casa-magna-jalapa-claro-gran-toro"
   },
   {
+    "id": "cig-casa-magna-liga-f",
+    "brand": "Casa Magna",
+    "line": "Liga F",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/casa-magna-liga-f-toro"
+  },
+  {
     "id": "cig-casa-magna-maduro-taa-exclusive-press",
     "brand": "Casa Magna",
     "line": "Maduro TAA Exclusive Press",
@@ -1526,6 +2359,13 @@
     "url": "https://www.neptunecigar.com/cigars/casdagli-brothers-of-the-sabre-brave-robusto"
   },
   {
+    "id": "cig-casdagli-cabinet-selection",
+    "brand": "Casdagli",
+    "line": "Cabinet Selection",
+    "vitola": "Rosetta",
+    "url": "https://www.neptunecigar.com/cigars/casdagli-cabinet-selection-rosetta-maduro"
+  },
+  {
     "id": "cig-casdagli-daughters-of-the-wind-calico",
     "brand": "Casdagli",
     "line": "Daughters of the Wind Calico",
@@ -1547,6 +2387,27 @@
     "url": "https://www.neptunecigar.com/cigars/casdagli-dboiss-db-52"
   },
   {
+    "id": "cig-casdagli-traditional",
+    "brand": "Casdagli",
+    "line": "Traditional",
+    "vitola": "Grand Cafe Maduro",
+    "url": "https://www.neptunecigar.com/cigars/casdagli-traditional-cotton-tail"
+  },
+  {
+    "id": "cig-cavalier-geneve-bii-viso-jalapa",
+    "brand": "Cavalier Genève",
+    "line": "BII Viso Jalapa",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/cavalier-geneve-bii-viso-jalapa-robusto"
+  },
+  {
+    "id": "cig-cavalier-geneve-cavalier-geneve",
+    "brand": "Cavalier Genève",
+    "line": "Cavalier Geneve",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/cavalier-geneve-le-2026-61-2--47"
+  },
+  {
     "id": "cig-cavalier-geneve-cavalier-geneve-10th-anniversary",
     "brand": "Cavalier Genève",
     "line": "Cavalier Geneve 10th Anniversary",
@@ -1561,20 +2422,6 @@
     "url": "https://www.neptunecigar.com/cigars/cavalier-geneve-black-series-ii-robusto"
   },
   {
-    "id": "cig-cavalier-geneve-cavalier-geneve-le-2025",
-    "brand": "Cavalier Genève",
-    "line": "Cavalier Geneve LE 2025",
-    "vitola": "Robusto",
-    "url": "https://www.neptunecigar.com/cigars/cavalier-geneve-le-2025-61-4--50"
-  },
-  {
-    "id": "cig-cavalier-geneve-cavalier-geneve-le-2026",
-    "brand": "Cavalier Genève",
-    "line": "Cavalier Geneve LE 2026",
-    "vitola": "Robusto",
-    "url": "https://www.neptunecigar.com/cigars/cavalier-geneve-le-2026-61-2--47"
-  },
-  {
     "id": "cig-cavalier-geneve-cavalier-geneve-prospektor",
     "brand": "Cavalier Genève",
     "line": "Cavalier Geneve Prospektor",
@@ -1582,11 +2429,18 @@
     "url": "https://www.neptunecigar.com/cigars/cavalier-geneve-prospektor-toro"
   },
   {
-    "id": "cig-cavalier-geneve-cavalier-geneve-the-green-jacket-2026",
+    "id": "cig-cavalier-geneve-cavalier-geneve-the-green-jacket",
     "brand": "Cavalier Genève",
-    "line": "Cavalier Geneve the Green Jacket 2026",
+    "line": "Cavalier Geneve the Green Jacket",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/cavalier-geneve-the-green-jacket-2026-7--47"
+  },
+  {
+    "id": "cig-cavalier-geneve-white-series",
+    "brand": "Cavalier Genève",
+    "line": "White Series",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/cavalier-geneve-white-series-toro"
   },
   {
     "id": "cig-chateau-real-shade-crystale",
@@ -1617,6 +2471,34 @@
     "url": "https://www.neptunecigar.com/cigars/cibao-cibaitos-cigarillos"
   },
   {
+    "id": "cig-cle-25th-anniversary",
+    "brand": "CLE",
+    "line": "25th Anniversary",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/cle-25th-anniversary-toro"
+  },
+  {
+    "id": "cig-cle-chele",
+    "brand": "CLE",
+    "line": "Chele",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/cle-chele-robusto"
+  },
+  {
+    "id": "cig-cle-connecticut",
+    "brand": "CLE",
+    "line": "Connecticut",
+    "vitola": "Short Corona",
+    "url": "https://www.neptunecigar.com/cigars/cle-connecticut-11-18"
+  },
+  {
+    "id": "cig-cle-corojo",
+    "brand": "CLE",
+    "line": "Corojo",
+    "vitola": "Short Corona",
+    "url": "https://www.neptunecigar.com/cigars/cle-corojo-11-18-6--54"
+  },
+  {
     "id": "cig-cle-habano",
     "brand": "CLE",
     "line": "Habano",
@@ -1624,18 +2506,18 @@
     "url": "https://www.neptunecigar.com/cigars/cle-habano-440"
   },
   {
-    "id": "cig-cle-pca-exclusive-2023",
+    "id": "cig-cle-pca-exclusive",
     "brand": "CLE",
-    "line": "PCA Exclusive 2023",
+    "line": "PCA Exclusive",
     "vitola": "526",
     "url": "https://www.neptunecigar.com/cigars/cle-pca-exclusive-2023-526"
   },
   {
-    "id": "cig-cle-pca-exclusive-2025",
+    "id": "cig-cle-prieto",
     "brand": "CLE",
-    "line": "PCA Exclusive 2025",
+    "line": "Prieto",
     "vitola": "Robusto",
-    "url": "https://www.neptunecigar.com/cigars/cle-pca-exclusive-2025-52x6-6--52"
+    "url": "https://www.neptunecigar.com/cigars/cle--prieto-robusto"
   },
   {
     "id": "cig-cornelius-anthony-cornelius-anthony-aerial",
@@ -1645,16 +2527,23 @@
     "url": "https://www.neptunecigar.com/cigars/cornelius-anthony-aerial-toro"
   },
   {
-    "id": "cig-crowned-heads-blood-medicine-limited-edition-2024",
-    "brand": "Crowned Heads",
-    "line": "Blood Medicine Limited Edition 2024",
+    "id": "cig-cornelius-amp-anthony-daddy-mac",
+    "brand": "Cornelius & Anthony",
+    "line": "Daddy Mac",
     "vitola": "Toro",
-    "url": "https://www.neptunecigar.com/cigars/crowned-heads-blood-medicine-limited-edition-2024-toro"
+    "url": "https://www.neptunecigar.com/cigars/cornelius-anthony-daddy-mac-toro"
   },
   {
-    "id": "cig-crowned-heads-blood-medicine-limited-edition-2025",
+    "id": "cig-crowned-heads-belgian-blue",
     "brand": "Crowned Heads",
-    "line": "Blood Medicine Limited Edition 2025",
+    "line": "Belgian Blue",
+    "vitola": "Gordo",
+    "url": "https://www.neptunecigar.com/cigars/crowned-heads-belgian-blue-le-2025-51-2--56"
+  },
+  {
+    "id": "cig-crowned-heads-blood-medicine",
+    "brand": "Crowned Heads",
+    "line": "Blood Medicine",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/crowned-heads-blood-medicine-limited-edition-2025-robusto-5--52"
   },
@@ -1708,6 +2597,13 @@
     "url": "https://www.neptunecigar.com/cigars/crowned-heads-coroneta-maduro-baron"
   },
   {
+    "id": "cig-crowned-heads-four-kicks",
+    "brand": "Crowned Heads",
+    "line": "Four Kicks",
+    "vitola": "Lancero",
+    "url": "https://www.neptunecigar.com/cigars/crowned-heads-four-kicks-corona-gorda"
+  },
+  {
     "id": "cig-crowned-heads-jericho-hill",
     "brand": "Crowned Heads",
     "line": "Jericho Hill",
@@ -1736,9 +2632,9 @@
     "url": "https://www.neptunecigar.com/cigars/crowned-heads-juarez-chihuahua"
   },
   {
-    "id": "cig-crowned-heads-juarez-bulldozer-le-2025",
+    "id": "cig-crowned-heads-juarez-bulldozer",
     "brand": "Crowned Heads",
-    "line": "Juarez Bulldozer LE 2025",
+    "line": "Juarez Bulldozer",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/crowned-heads-juarez-bulldozer-le-2025-51-2--58"
   },
@@ -1750,9 +2646,9 @@
     "url": "https://www.neptunecigar.com/cigars/crowned-heads-juarez-jack-brown"
   },
   {
-    "id": "cig-crowned-heads-juarez-mini-dozer-le-2026",
+    "id": "cig-crowned-heads-juarez-mini-dozer",
     "brand": "Crowned Heads",
-    "line": "Juarez Mini Dozer LE 2026",
+    "line": "Juarez Mini Dozer",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/crowned-heads-juarez-mini-dozer-le-2026-4--58"
   },
@@ -1762,6 +2658,13 @@
     "line": "Juarez Willy Lee",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/crowned-heads-juarez-willy-lee"
+  },
+  {
+    "id": "cig-crowned-heads-la-imperiosa",
+    "brand": "Crowned Heads",
+    "line": "La Imperiosa",
+    "vitola": "Gorda",
+    "url": "https://www.neptunecigar.com/cigars/crowned-heads-la-imperiosa-corona-gorda"
   },
   {
     "id": "cig-crowned-heads-la-vereda-no",
@@ -1785,9 +2688,16 @@
     "url": "https://www.neptunecigar.com/cigars/crowned-heads-le-patissier-no-2"
   },
   {
-    "id": "cig-crowned-heads-mil-dias-des-deux-le-2025",
+    "id": "cig-crowned-heads-mil-dias",
     "brand": "Crowned Heads",
-    "line": "Mil Dias Des Deux LE 2025",
+    "line": "Mil Dias",
+    "vitola": "Gorda Corona",
+    "url": "https://www.neptunecigar.com/cigars/crowned-heads-mil-dias-maduro-edmundo"
+  },
+  {
+    "id": "cig-crowned-heads-mil-dias-des-deux",
+    "brand": "Crowned Heads",
+    "line": "Mil Dias Des Deux",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/mil-dias-des-deux-le-2025-61-8--42"
   },
@@ -1806,9 +2716,9 @@
     "url": "https://www.neptunecigar.com/cigars/crowned-heads-moonflower-corona-gorda-6--46"
   },
   {
-    "id": "cig-crowned-heads-taa-exclusive-2024",
+    "id": "cig-crowned-heads-taa-exclusive",
     "brand": "Crowned Heads",
-    "line": "TAA Exclusive 2024",
+    "line": "TAA Exclusive",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/crowned-heads-taa-exclusive-2024"
   },
@@ -1820,9 +2730,9 @@
     "url": "https://www.neptunecigar.com/cigars/crowned-heads-tennessee-waltz"
   },
   {
-    "id": "cig-crowned-heads-the-lost-angel-taa-2023",
+    "id": "cig-crowned-heads-the-lost-angel-taa",
     "brand": "Crowned Heads",
-    "line": "The Lost Angel TAA 2023",
+    "line": "The Lost Angel TAA",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/crowned-heads-the-lost-angel-taa-2023"
   },
@@ -1853,6 +2763,20 @@
     "line": "Natural",
     "vitola": "Torpedo",
     "url": "https://www.neptunecigar.com/cigars/cuba-aliados-natural-torpedo"
+  },
+  {
+    "id": "cig-cuesta-rey-7",
+    "brand": "Cuesta Rey",
+    "line": "#7",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/cuesta-rey-centenario-robusto-no-7-maduro"
+  },
+  {
+    "id": "cig-cuesta-rey-9",
+    "brand": "Cuesta Rey",
+    "line": "#9",
+    "vitola": "Piramide",
+    "url": "https://www.neptunecigar.com/cigars/cuesta-rey-centro-fino-sungrown-pyramid-no-9"
   },
   {
     "id": "cig-cuesta-rey-centenario",
@@ -1904,6 +2828,13 @@
     "url": "https://www.neptunecigar.com/cigars/cumpay-robusto-tubes"
   },
   {
+    "id": "cig-dalay-nicaragua",
+    "brand": "Dalay",
+    "line": "Nicaragua",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/dalay-nicaragua-gran-toro"
+  },
+  {
     "id": "cig-davidoff-12-assortment",
     "brand": "Davidoff",
     "line": "12 Assortment",
@@ -1932,6 +2863,13 @@
     "url": "https://www.neptunecigar.com/cigars/davidoff-9-cigar-assortment"
   },
   {
+    "id": "cig-davidoff-chef-s-edition",
+    "brand": "Davidoff",
+    "line": "Chef's Edition",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/davidoff-chef-s-edition-2025-toro-61-4--52"
+  },
+  {
     "id": "cig-davidoff-colorado-claro-double-r",
     "brand": "Davidoff",
     "line": "Colorado Claro Double R",
@@ -1946,9 +2884,16 @@
     "url": "https://www.neptunecigar.com/cigars/davidoff-colorado-claro-special-r"
   },
   {
-    "id": "cig-davidoff-intenso-le-2020",
+    "id": "cig-davidoff-dominicana",
     "brand": "Davidoff",
-    "line": "Intenso LE 2020",
+    "line": "Dominicana",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/davidoff-dominicana-robusto"
+  },
+  {
+    "id": "cig-davidoff-intenso",
+    "brand": "Davidoff",
+    "line": "Intenso",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/davidoff-robusto-intenso-le-2020"
   },
@@ -1960,11 +2905,25 @@
     "url": "https://www.neptunecigar.com/cigars/davidoff-limited-edition-2022-gran-toro"
   },
   {
+    "id": "cig-davidoff-maduro",
+    "brand": "Davidoff",
+    "line": "Maduro",
+    "vitola": "Short Corona",
+    "url": "https://www.neptunecigar.com/cigars/davidoff-dominican-maduro-primeros"
+  },
+  {
     "id": "cig-davidoff-millenium-petite",
     "brand": "Davidoff",
     "line": "Millenium Petite",
     "vitola": "Corona",
     "url": "https://www.neptunecigar.com/cigars/davidoff-millenium-petite-corona"
+  },
+  {
+    "id": "cig-davidoff-millennium",
+    "brand": "Davidoff",
+    "line": "Millennium",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/davidoff-millennium-toro"
   },
   {
     "id": "cig-davidoff-mini-cigarillos",
@@ -1981,11 +2940,25 @@
     "url": "https://www.neptunecigar.com/cigars/davidoff-oro-blanco-toro"
   },
   {
+    "id": "cig-davidoff-puro-dominicano",
+    "brand": "Davidoff",
+    "line": "Puro Dominicano",
+    "vitola": "Larga Corona",
+    "url": "https://www.neptunecigar.com/cigars/davidoff-puro-dominicano-corona-larga-57-8--44"
+  },
+  {
     "id": "cig-davidoff-real-especiales-7-le-2019",
     "brand": "Davidoff",
     "line": "Real Especiales 7 LE 2019",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/davidoff-robusto-real-especiales-7-le-2019"
+  },
+  {
+    "id": "cig-davidoff-royal-release",
+    "brand": "Davidoff",
+    "line": "Royal Release",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/davidoff-royal-release-robusto"
   },
   {
     "id": "cig-davidoff-selection-white-of-3",
@@ -2002,18 +2975,18 @@
     "url": "https://www.neptunecigar.com/cigars/davidoff-special-53-le-2020"
   },
   {
+    "id": "cig-davidoff-winston",
+    "brand": "Davidoff",
+    "line": "Winston",
+    "vitola": "Churchill",
+    "url": "https://www.neptunecigar.com/cigars/davidoff-winston-churchill-le-2025-churchill"
+  },
+  {
     "id": "cig-davidoff-winston-late-hour",
     "brand": "Davidoff",
     "line": "Winston Late Hour",
     "vitola": "Churchill",
     "url": "https://www.neptunecigar.com/cigars/davidoff-winston-churchill-late-hour-churchill"
-  },
-  {
-    "id": "cig-davidoff-winston-le-2025",
-    "brand": "Davidoff",
-    "line": "Winston LE 2025",
-    "vitola": "Churchill",
-    "url": "https://www.neptunecigar.com/cigars/davidoff-winston-churchill-le-2025-churchill"
   },
   {
     "id": "cig-davidoff-year-of-the-dog-2018-gran",
@@ -2030,9 +3003,9 @@
     "url": "https://www.neptunecigar.com/cigars/davidoff-year-of-the-horse-61-2--55"
   },
   {
-    "id": "cig-davidoff-year-of-the-ox-2021",
+    "id": "cig-davidoff-year-of-the-ox",
     "brand": "Davidoff",
-    "line": "Year of the Ox 2021",
+    "line": "Year of the Ox",
     "vitola": "Gordo",
     "url": "https://www.neptunecigar.com/cigars/davidoff-year-of-the-ox-2021-gordo"
   },
@@ -2044,9 +3017,9 @@
     "url": "https://www.neptunecigar.com/cigars/davidoff-year-of-the-pig-2019-gran-toro"
   },
   {
-    "id": "cig-davidoff-year-of-the-rat-2020",
+    "id": "cig-davidoff-year-of-the-rat",
     "brand": "Davidoff",
-    "line": "Year of the Rat 2020",
+    "line": "Year of the Rat",
     "vitola": "Toro",
     "url": "https://www.neptunecigar.com/cigars/davidoff-year-of-the-rat-2020-toro"
   },
@@ -2058,6 +3031,27 @@
     "url": "https://www.neptunecigar.com/cigars/davidoff-year-of-the-tiger-2022-piramides"
   },
   {
+    "id": "cig-diamond-crown-3",
+    "brand": "Diamond Crown",
+    "line": "#3",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/diamond-crown-toro-no-3"
+  },
+  {
+    "id": "cig-diamond-crown-4",
+    "brand": "Diamond Crown",
+    "line": "#4",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/diamond-crown-maduro-robusto-no-4"
+  },
+  {
+    "id": "cig-diamond-crown-5",
+    "brand": "Diamond Crown",
+    "line": "#5",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/diamond-crown-robusto-no-5"
+  },
+  {
     "id": "cig-diamond-crown-black-diamond",
     "brand": "Diamond Crown",
     "line": "Black Diamond",
@@ -2065,11 +3059,25 @@
     "url": "https://www.neptunecigar.com/cigars/diamond-crown-black-diamond-emerald"
   },
   {
+    "id": "cig-diamond-crown-julius-caeser",
+    "brand": "Diamond Crown",
+    "line": "Julius Caeser",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/diamond-crown-julius-caeser-robusto"
+  },
+  {
     "id": "cig-diamond-crown-maduro-pyramid-no-7",
     "brand": "Diamond Crown",
     "line": "Maduro Pyramid No. 7",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/diamond-crown-maduro-pyramid-no-7"
+  },
+  {
+    "id": "cig-diamond-crown-maximus",
+    "brand": "Diamond Crown",
+    "line": "Maximus",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/diamond-crown-maximus-double-belicoso-no-10"
   },
   {
     "id": "cig-diamond-crown-no",
@@ -2084,6 +3092,13 @@
     "line": "Bbq Series Burnt Ends",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/diesel-bbq-series-burnt-ends-5--56"
+  },
+  {
+    "id": "cig-diesel-crucible",
+    "brand": "Diesel",
+    "line": "Crucible",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/diesel-crucible-toro"
   },
   {
     "id": "cig-diesel-delirium",
@@ -2149,9 +3164,9 @@
     "url": "https://www.neptunecigar.com/cigars/diesel-sunday-gravy-san-marzano"
   },
   {
-    "id": "cig-diesel-tempest-taa-2024",
+    "id": "cig-diesel-tempest-taa",
     "brand": "Diesel",
-    "line": "Tempest TAA 2024",
+    "line": "Tempest TAA",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/diesel-tempest-taa-2024"
   },
@@ -2205,6 +3220,13 @@
     "url": "https://www.neptunecigar.com/cigars/don-diego-robusto"
   },
   {
+    "id": "cig-don-julio-punta-espada",
+    "brand": "Don Julio",
+    "line": "Punta Espada",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/don-julio-punta-espada-gigante"
+  },
+  {
     "id": "cig-don-lino-africa",
     "brand": "Don Lino",
     "line": "Africa",
@@ -2231,6 +3253,13 @@
     "line": "Africa Tembo Gran",
     "vitola": "Toro",
     "url": "https://www.neptunecigar.com/cigars/don-lino-africa-tembo-gran-toro"
+  },
+  {
+    "id": "cig-don-lino-fumas-connecticut",
+    "brand": "Don Lino",
+    "line": "Fumas Connecticut",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/don-lino-connecticut-robusto"
   },
   {
     "id": "cig-don-lino-habanitos-cigarillos",
@@ -2282,11 +3311,39 @@
     "url": "https://www.neptunecigar.com/cigars/don-pepin-garcia-lanceros"
   },
   {
+    "id": "cig-don-pepin-garcia-pepin-garcia-20th-anniversary",
+    "brand": "Don Pépin García",
+    "line": "Pepin Garcia 20th Anniversary",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/don-pepin-garcia-20th-anniversary-limited-edition-2023-toro"
+  },
+  {
+    "id": "cig-don-pepin-garcia-pepin-garcia-clasico-20th-anniversary",
+    "brand": "Don Pépin García",
+    "line": "Pepin Garcia Clasico 20th Anniversary",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/don-pepin-garcia-clasico-20th-anniversary-61-2--52"
+  },
+  {
     "id": "cig-don-pepin-garcia-pepin-garcia-serie-jj-20th-anniversary",
     "brand": "Don Pépin García",
     "line": "Pepin Garcia Serie JJ 20th Anniversary",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/don-pepin-garcia-series-jj-20th-anniversary"
+  },
+  {
+    "id": "cig-don-pepin-garcia-pepin-garcia-vegas-cubanas",
+    "brand": "Don Pépin García",
+    "line": "Pepin Garcia Vegas Cubanas",
+    "vitola": "Generosos",
+    "url": "https://www.neptunecigar.com/cigars/don-pepin-garcia-generosos"
+  },
+  {
+    "id": "cig-don-pepin-garcia-pepin-garcia-vintage",
+    "brand": "Don Pépin García",
+    "line": "Pepin Garcia Vintage",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/don-pepin-vintage-edition-toro"
   },
   {
     "id": "cig-don-pepin-garcia-toro",
@@ -2338,11 +3395,39 @@
     "url": "https://www.neptunecigar.com/cigars/mi-querida-gran-bufalo"
   },
   {
+    "id": "cig-dunbarton-t-t-mi-querida-muy",
+    "brand": "Dunbarton T&T",
+    "line": "Mi Querida Muy",
+    "vitola": "Grande",
+    "url": "https://www.neptunecigar.com/cigars/mi-querida-muy-gordo-grande"
+  },
+  {
     "id": "cig-dunbarton-t-t-mi-querida-triqui-traca-no",
     "brand": "Dunbarton T&T",
     "line": "Mi Querida Triqui Traca No.",
     "vitola": "448",
     "url": "https://www.neptunecigar.com/cigars/mi-querida-triqui-traca-no-448"
+  },
+  {
+    "id": "cig-dunbarton-t-t-sobremesa-brulee",
+    "brand": "Dunbarton T&T",
+    "line": "Sobremesa Brûlée",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/sobremesa-brulee-robusto"
+  },
+  {
+    "id": "cig-dunbarton-t-t-sobremesa-largo",
+    "brand": "Dunbarton T&T",
+    "line": "Sobremesa Largo",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/sobremesa-solita-robusto-largo"
+  },
+  {
+    "id": "cig-dunbarton-t-t-sobremesa-short",
+    "brand": "Dunbarton T&T",
+    "line": "Sobremesa Short",
+    "vitola": "Churchill",
+    "url": "https://www.neptunecigar.com/cigars/sobremesa--solita-short-churchill"
   },
   {
     "id": "cig-dunbarton-t-t-sobremesa-solita",
@@ -2387,6 +3472,13 @@
     "url": "https://www.neptunecigar.com/cigars/sobremesa-tapa-negra-corona-gorda-55-8--48"
   },
   {
+    "id": "cig-eiroa-cbt-maduro",
+    "brand": "Eiroa",
+    "line": "CBT Maduro",
+    "vitola": "Lancero",
+    "url": "https://www.neptunecigar.com/cigars/eiroa-cbt-maduro-robusto"
+  },
+  {
     "id": "cig-eiroa-dark-1118",
     "brand": "Eiroa",
     "line": "Dark 1118",
@@ -2415,6 +3507,13 @@
     "url": "https://www.neptunecigar.com/cigars/eiroa-dark-natural-550"
   },
   {
+    "id": "cig-eiroa-jamastran",
+    "brand": "Eiroa",
+    "line": "Jamastran",
+    "vitola": "11/18",
+    "url": "https://www.neptunecigar.com/cigars/eiroa-jamastran-11-18"
+  },
+  {
     "id": "cig-eiroa-lancero",
     "brand": "Eiroa",
     "line": "Lancero",
@@ -2427,13 +3526,6 @@
     "line": "PCA Exclusive",
     "vitola": "2022",
     "url": "https://www.neptunecigar.com/cigars/eiroa-pca-exclusive-2022-60x6"
-  },
-  {
-    "id": "cig-eiroa-pca-exclusive-2025",
-    "brand": "Eiroa",
-    "line": "PCA Exclusive 2025",
-    "vitola": "Robusto",
-    "url": "https://www.neptunecigar.com/cigars/eiroa-pca-exclusive-2025-52x6-6--52"
   },
   {
     "id": "cig-eiroa-prensado",
@@ -2604,6 +3696,13 @@
     "url": "https://www.neptunecigar.com/cigars/el-titan-de-bronze-nicaragua-toro-6--52"
   },
   {
+    "id": "cig-el-titan-de-bronze-redemption",
+    "brand": "El Titan",
+    "line": "de Bronze Redemption",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/el-titan-de-bronze-redemption-robusto"
+  },
+  {
     "id": "cig-el-viejo-continente-5-anos-edicion-pitagoras",
     "brand": "El Viejo Continente",
     "line": "5 Anos Edicion Pitagoras",
@@ -2625,6 +3724,13 @@
     "url": "https://www.neptunecigar.com/cigars/el-viejo-continente-classic-brevium"
   },
   {
+    "id": "cig-el-viejo-continente-connecticut",
+    "brand": "El Viejo Continente",
+    "line": "Connecticut",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/el-viejo-continente-connecticut-toro"
+  },
+  {
     "id": "cig-el-viejo-continente-edicion-esteli",
     "brand": "El Viejo Continente",
     "line": "Edicion Esteli",
@@ -2632,11 +3738,25 @@
     "url": "https://www.neptunecigar.com/cigars/el-viejo-continente-edicion-esteli"
   },
   {
+    "id": "cig-el-viejo-continente-maduro",
+    "brand": "El Viejo Continente",
+    "line": "Maduro",
+    "vitola": "Lancero",
+    "url": "https://www.neptunecigar.com/cigars/el-viejo-continente-maduro-gran-major"
+  },
+  {
     "id": "cig-el-viejo-continente-mare-nostrum",
     "brand": "El Viejo Continente",
     "line": "Mare Nostrum",
     "vitola": "Culebras",
     "url": "https://www.neptunecigar.com/cigars/el-viejo-continente-mare-nostrum-culebras"
+  },
+  {
+    "id": "cig-esteban-carreras-cashmere",
+    "brand": "Esteban Carreras",
+    "line": "Carreras Cashmere",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/esteban-carreras-cashmere-toro"
   },
   {
     "id": "cig-esteban-carreras-cashmere-sixty",
@@ -2772,6 +3892,13 @@
     "url": "https://www.neptunecigar.com/cigars/excalibur-cigarillos"
   },
   {
+    "id": "cig-excalibur-excalibur",
+    "brand": "Excalibur",
+    "line": "Excalibur",
+    "vitola": "Epicure",
+    "url": "https://www.neptunecigar.com/cigars/excalibur-epicure"
+  },
+  {
     "id": "cig-excalibur-illusione-no-1",
     "brand": "Excalibur",
     "line": "Illusione No. 1",
@@ -2863,6 +3990,13 @@
     "url": "https://www.neptunecigar.com/cigars/ferio-tego-summa-corona-gorda"
   },
   {
+    "id": "cig-ferio-tego-summa",
+    "brand": "Ferio Tego",
+    "line": "Tego Summa",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/ferio-tego-summa-robusto"
+  },
+  {
     "id": "cig-ferio-tego-timeless-limited-10-years",
     "brand": "Ferio Tego",
     "line": "Timeless Limited 10 Years",
@@ -2898,18 +4032,18 @@
     "url": "https://www.neptunecigar.com/cigars/ferio-tego-timeless-supreme-554"
   },
   {
-    "id": "cig-ferio-tego-timeless-taa-exclusive-2024",
+    "id": "cig-ferio-tego-timeless-taa-exclusive",
     "brand": "Ferio Tego",
-    "line": "Timeless TAA Exclusive 2024",
-    "vitola": "Toro",
-    "url": "https://www.neptunecigar.com/cigars/ferio-tego-timeless-taa-exclusive-2024-toro"
-  },
-  {
-    "id": "cig-ferio-tego-timeless-taa-exclusive-2025",
-    "brand": "Ferio Tego",
-    "line": "Timeless TAA Exclusive 2025",
+    "line": "Timeless TAA Exclusive",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/ferio-tego-timeless-taa-exclusive-2025-6--50"
+  },
+  {
+    "id": "cig-flor-de-las-antillas-10th-anniversary",
+    "brand": "Flor de las Antillas",
+    "line": "10th Anniversary",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/flor-de-las-antillas-10th-anniversary-le-2022-toro"
   },
   {
     "id": "cig-flor-de-las-antillas-belicoso",
@@ -2919,6 +4053,13 @@
     "url": "https://www.neptunecigar.com/cigars/flor-de-las-antillas-belicoso"
   },
   {
+    "id": "cig-flor-de-las-antillas-maduro",
+    "brand": "Flor de las Antillas",
+    "line": "Maduro",
+    "vitola": "Corona",
+    "url": "https://www.neptunecigar.com/cigars/flor-de-las-antillas-maduro-corona"
+  },
+  {
     "id": "cig-flor-de-las-antillas-robusto",
     "brand": "Flor de las Antillas",
     "line": "Robusto",
@@ -2926,9 +4067,9 @@
     "url": "https://www.neptunecigar.com/cigars/flor-de-las-antillas-robusto"
   },
   {
-    "id": "cig-flor-de-las-antillas-san-andres-taa-2025",
+    "id": "cig-flor-de-las-antillas-san-andres-taa",
     "brand": "Flor de las Antillas",
-    "line": "San Andres TAA 2025",
+    "line": "San Andres TAA",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/flor-de-las-antillas-san-andres-taa-2025-robusto-5--52"
   },
@@ -2940,9 +4081,9 @@
     "url": "https://www.neptunecigar.com/cigars/flor-de-las-antillas-toro-gordo"
   },
   {
-    "id": "cig-flor-de-selva-ano-del-conejo-2023",
+    "id": "cig-flor-de-selva-ano-del-conejo",
     "brand": "Flor de Selva",
-    "line": "Ano Del Conejo 2023",
+    "line": "Ano Del Conejo",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/flor-de-selva-ano-del-conejo-2023"
   },
@@ -2952,6 +4093,13 @@
     "line": "Ano Del Dragon 2024 Doble",
     "vitola": "Corona",
     "url": "https://www.neptunecigar.com/cigars/flor-de-selva-ano-del-dragon-2024-doble-corona"
+  },
+  {
+    "id": "cig-flor-de-selva-maduro-no-15",
+    "brand": "Flor de Selva",
+    "line": "Maduro No. 15",
+    "vitola": "Figurado",
+    "url": "https://www.neptunecigar.com/cigars/flor-de-selva-no-15"
   },
   {
     "id": "cig-flor-de-selva-petits-cigares",
@@ -2996,11 +4144,53 @@
     "url": "https://www.neptunecigar.com/cigars/flor-de-selva-robusto-tubes"
   },
   {
+    "id": "cig-foundation-10-year-aniversario",
+    "brand": "Foundation",
+    "line": "10 Year Aniversario",
+    "vitola": "Figurado",
+    "url": "https://www.neptunecigar.com/cigars/foundation-10-year-aniversario-salomon-7--58"
+  },
+  {
+    "id": "cig-foundation-charter-oak",
+    "brand": "Foundation",
+    "line": "Charter Oak",
+    "vitola": "Shade Lancero",
+    "url": "https://www.neptunecigar.com/cigars/foundation-charter-oak-connecticut-toro"
+  },
+  {
+    "id": "cig-foundation-el-gueguense",
+    "brand": "Foundation",
+    "line": "El Güegüense",
+    "vitola": "Huaco",
+    "url": "https://www.neptunecigar.com/cigars/el-gueguense-toro-huaco"
+  },
+  {
+    "id": "cig-foundation-menelik",
+    "brand": "Foundation",
+    "line": "Menelik",
+    "vitola": "Menelik Robusto",
+    "url": "https://www.neptunecigar.com/cigars/foundation-menelik-toro"
+  },
+  {
     "id": "cig-foundation-metapa",
     "brand": "Foundation",
     "line": "Metapa",
     "vitola": "Claro",
     "url": "https://www.neptunecigar.com/cigars/foundation-metapa-claro-robusto"
+  },
+  {
+    "id": "cig-foundation-olmec",
+    "brand": "Foundation",
+    "line": "Olmec",
+    "vitola": "Olmec Claro Robusto",
+    "url": "https://www.neptunecigar.com/cigars/foundation-olmec-claro-corona-gorda"
+  },
+  {
+    "id": "cig-foundation-tabernacle",
+    "brand": "Foundation",
+    "line": "Tabernacle",
+    "vitola": "Lancero",
+    "url": "https://www.neptunecigar.com/cigars/the-tabernacle-lancero"
   },
   {
     "id": "cig-foundation-the-upsetters",
@@ -3038,11 +4228,25 @@
     "url": "https://www.neptunecigar.com/cigars/foundation-the-upsetters-the-original-rude-boy"
   },
   {
+    "id": "cig-fratello-arlequin",
+    "brand": "Fratello",
+    "line": "Arlequin",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/fratello-arlequin-robusto"
+  },
+  {
     "id": "cig-fratello-bianco-fuoco",
     "brand": "Fratello",
     "line": "Bianco Fuoco",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/fratello-bianco-fuoco"
+  },
+  {
+    "id": "cig-fratello-bianco-i",
+    "brand": "Fratello",
+    "line": "Bianco I",
+    "vitola": "Corona",
+    "url": "https://www.neptunecigar.com/cigars/fratello-bianco-iv"
   },
   {
     "id": "cig-fratello-bianco-nero-riserva",
@@ -3073,6 +4277,13 @@
     "url": "https://www.neptunecigar.com/cigars/fratello-camo-sweet-tip-toro"
   },
   {
+    "id": "cig-fratello-classico",
+    "brand": "Fratello",
+    "line": "Classico",
+    "vitola": "Short Robusto",
+    "url": "https://www.neptunecigar.com/cigars/fratello-classico-corona"
+  },
+  {
     "id": "cig-fratello-edizione-di-carnevale",
     "brand": "Fratello",
     "line": "Edizione Di Carnevale",
@@ -3092,6 +4303,13 @@
     "line": "Navetta 60 Enterprise",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/fratello-navetta-60-enterprise"
+  },
+  {
+    "id": "cig-fratello-navetta-discovery",
+    "brand": "Fratello",
+    "line": "Navetta Discovery",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/fratello-navetta-robusto-discovery"
   },
   {
     "id": "cig-fratello-navetta-endeavour",
@@ -3213,6 +4431,20 @@
     "url": "https://www.neptunecigar.com/cigars/gispert-toro"
   },
   {
+    "id": "cig-gran-habano-black-dahlia",
+    "brand": "Gran Habano",
+    "line": "Black Dahlia",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/gran-habano-stk-black-dahlia-gran-robusto"
+  },
+  {
+    "id": "cig-gran-habano-blue-in-green",
+    "brand": "Gran Habano",
+    "line": "Blue in Green",
+    "vitola": "Churchill",
+    "url": "https://www.neptunecigar.com/cigars/gran-habano-blue-in-green-churchill"
+  },
+  {
     "id": "cig-gran-habano-corojo-no-5",
     "brand": "Gran Habano",
     "line": "Corojo No. 5",
@@ -3269,6 +4501,13 @@
     "url": "https://www.neptunecigar.com/cigars/gurkha-blendmasters-cask-ambassador"
   },
   {
+    "id": "cig-gurkha-cellar-reserve-15-years",
+    "brand": "Gurkha",
+    "line": "Cellar Reserve 15 Years",
+    "vitola": "Hedonism",
+    "url": "https://www.neptunecigar.com/cigars/gurkha-cellar-reserve-15-years-solara"
+  },
+  {
     "id": "cig-gurkha-cellar-reserve-18-year",
     "brand": "Gurkha",
     "line": "Cellar Reserve 18 Year",
@@ -3297,11 +4536,25 @@
     "url": "https://www.neptunecigar.com/cigars/gurkha-cellar-reserve-platinum-hedonism"
   },
   {
+    "id": "cig-gurkha-classic",
+    "brand": "Gurkha",
+    "line": "Classic",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/gurkha-the-classic-havana-blend-robusto"
+  },
+  {
     "id": "cig-gurkha-fat-boy",
     "brand": "Gurkha",
     "line": "Fat Boy",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/gurkha-fat-boy-4--60"
+  },
+  {
+    "id": "cig-gurkha-ghost",
+    "brand": "Gurkha",
+    "line": "Ghost",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/gurkha-ghost-shadow"
   },
   {
     "id": "cig-gurkha-grand-age-humidor-with-60",
@@ -3311,11 +4564,46 @@
     "url": "https://www.neptunecigar.com/cigars/gurkha-grand-age-humidor-with-60-cigars"
   },
   {
+    "id": "cig-gurkha-grand-reserve-maduro",
+    "brand": "Gurkha",
+    "line": "Grand Reserve Maduro",
+    "vitola": "Churchill",
+    "url": "https://www.neptunecigar.com/cigars/gurkha-grand-reserve-maduro-churchill"
+  },
+  {
+    "id": "cig-gurkha-heritage",
+    "brand": "Gurkha",
+    "line": "Heritage",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/gurkha-heritage-toro"
+  },
+  {
+    "id": "cig-gurkha-heritage-maduro",
+    "brand": "Gurkha",
+    "line": "Heritage Maduro",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/gurkha-heritage-maduro-toro"
+  },
+  {
+    "id": "cig-gurkha-marquesa",
+    "brand": "Gurkha",
+    "line": "Marquesa",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/gurkha-marquesa-robusto"
+  },
+  {
     "id": "cig-gurkha-nicaragua-cask-collection",
     "brand": "Gurkha",
     "line": "Nicaragua Cask Collection",
     "vitola": "Toro",
     "url": "https://www.neptunecigar.com/cigars/gurkha-nicaragua-cask-collection-toro-6--54"
+  },
+  {
+    "id": "cig-gurkha-nicaragua-series",
+    "brand": "Gurkha",
+    "line": "Nicaragua Series",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/gurkha-nicaragua-series-magnum"
   },
   {
     "id": "cig-gurkha-private-select-ron-abuelo",
@@ -3332,6 +4620,20 @@
     "url": "https://www.neptunecigar.com/cigars/gurkha-real-magnum"
   },
   {
+    "id": "cig-gurkha-revenant-corojo",
+    "brand": "Gurkha",
+    "line": "Revenant Corojo",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/gurkha-revenant-corojo-robusto"
+  },
+  {
+    "id": "cig-gurkha-revenant-maduro",
+    "brand": "Gurkha",
+    "line": "Revenant Maduro",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/gurkha-revenant-maduro-robusto"
+  },
+  {
     "id": "cig-gurkha-rogue",
     "brand": "Gurkha",
     "line": "Rogue",
@@ -3339,11 +4641,32 @@
     "url": "https://www.neptunecigar.com/cigars/gurkha-rogue-armageddon"
   },
   {
+    "id": "cig-gurkha-royal-challenge",
+    "brand": "Gurkha",
+    "line": "Royal Challenge",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/gurkha-royal-challenge-robusto"
+  },
+  {
     "id": "cig-gurkha-san-miguel-petite",
     "brand": "Gurkha",
     "line": "San Miguel Petite",
     "vitola": "Corona",
     "url": "https://www.neptunecigar.com/cigars/gurkha-san-miguel-petite-corona"
+  },
+  {
+    "id": "cig-gurkha-special-edition-bourbon-collection-natural-glastube",
+    "brand": "Gurkha",
+    "line": "Special Edition Bourbon Collection Natural Glastube",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/gurkha-bourbon-collection-toro-natural"
+  },
+  {
+    "id": "cig-gurkha-treinta-30th-anniversary",
+    "brand": "Gurkha",
+    "line": "Treinta 30th Anniversary",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/gurkha-treinta-toro"
   },
   {
     "id": "cig-gurkha-treinta-magnum",
@@ -3388,9 +4711,16 @@
     "url": "https://www.neptunecigar.com/cigars/gurkha-v-by-oscar-valladares-taa-2024-exclusive"
   },
   {
-    "id": "cig-gurkha-year-of-the-dragon-2024",
+    "id": "cig-gurkha-wicked-indie",
     "brand": "Gurkha",
-    "line": "Year of the Dragon 2024",
+    "line": "Wicked Indie",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/gurkha-wicked-indie-toro"
+  },
+  {
+    "id": "cig-gurkha-year-of-the-dragon",
+    "brand": "Gurkha",
+    "line": "Year of the Dragon",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/gurkha-year-of-the-dragon-2024"
   },
@@ -3430,6 +4760,20 @@
     "url": "https://www.neptunecigar.com/cigars/henry-clay-maduro-brevas"
   },
   {
+    "id": "cig-henry-clay-stalk-cut",
+    "brand": "Henry Clay",
+    "line": "Stalk Cut",
+    "vitola": "Corona Gorda",
+    "url": "https://www.neptunecigar.com/cigars/henry-clay-stalk-cut-gran-corona"
+  },
+  {
+    "id": "cig-henry-clay-war-hawk",
+    "brand": "Henry Clay",
+    "line": "War Hawk",
+    "vitola": "Corona",
+    "url": "https://www.neptunecigar.com/cigars/henry-clay-war-hawk-corona"
+  },
+  {
     "id": "cig-hiram-solomon-hiram-solomon-entered-apprentice",
     "brand": "Hiram & Solomon",
     "line": "Hiram Solomon Entered Apprentice",
@@ -3456,6 +4800,20 @@
     "line": "Hiram Solomon Veiled Prophet Grand Monarch",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/hiram-solomon-veiled-prophet-grand-monarch"
+  },
+  {
+    "id": "cig-hiram-amp-solomon-master-mason",
+    "brand": "Hiram & Solomon",
+    "line": "Master Mason",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/hiram-solomon-master-mason-robusto"
+  },
+  {
+    "id": "cig-hiram-amp-solomon-traveling-man",
+    "brand": "Hiram & Solomon",
+    "line": "Traveling Man",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/hiram-solomon-traveling-man-robusto"
   },
   {
     "id": "cig-illusione-2021-taa-exclusive",
@@ -3584,9 +4942,9 @@
     "url": "https://www.neptunecigar.com/cigars/illusione-the-group-of-five-rb"
   },
   {
-    "id": "cig-illusione-ultra-mkultra-2026",
+    "id": "cig-illusione-ultra-mkultra",
     "brand": "Illusione",
-    "line": "Ultra Mkultra 2026",
+    "line": "Ultra Mkultra",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/illusione-ultra-mkultra-2026-51-8--42"
   },
@@ -3596,6 +4954,13 @@
     "line": "Ultra Op No. 9",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/illusione-ultra-op-no-9"
+  },
+  {
+    "id": "cig-jaime-garcia-garcia-reserva-especial",
+    "brand": "Jaime García",
+    "line": "Garcia Reserva Especial",
+    "vitola": "Grande Corona",
+    "url": "https://www.neptunecigar.com/cigars/jaime-garcia-reserva-especial-sucesor-le-2024-torpedo"
   },
   {
     "id": "cig-jaime-garcia-jaime-garcia-reserva",
@@ -3752,6 +5117,27 @@
     "url": "https://www.neptunecigar.com/cigars/jfr-xt-maduro-770"
   },
   {
+    "id": "cig-joya-de-nicaragua-antano",
+    "brand": "Joya de Nicaragua",
+    "line": "Antaño",
+    "vitola": "Lancero",
+    "url": "https://www.neptunecigar.com/cigars/joya-de-nicaragua-antano-1970-big-bull"
+  },
+  {
+    "id": "cig-joya-de-nicaragua-cabinetta",
+    "brand": "Joya de Nicaragua",
+    "line": "Cabinetta",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/joya-de-nicaragua-cabinetta-robusto"
+  },
+  {
+    "id": "cig-joya-de-nicaragua-cinco-de-cinco",
+    "brand": "Joya de Nicaragua",
+    "line": "Cinco de Cinco",
+    "vitola": "Gordo",
+    "url": "https://www.neptunecigar.com/cigars/joya-de-nicaragua-cinco-de-cinco-robusto-gordo"
+  },
+  {
     "id": "cig-joya-de-nicaragua-clasico-green-room-selection-diadema-le",
     "brand": "Joya de Nicaragua",
     "line": "Clasico Green Room Selection Diadema LE",
@@ -3759,11 +5145,39 @@
     "url": "https://www.neptunecigar.com/cigars/joya-de-nicaragua-clasico-green-room-selection-diadema-le-6--54"
   },
   {
+    "id": "cig-joya-de-nicaragua-cuatro-cinco",
+    "brand": "Joya de Nicaragua",
+    "line": "Cuatro Cinco",
+    "vitola": "Doble",
+    "url": "https://www.neptunecigar.com/cigars/joya-de-nicaragua-cuatro-cinco-torpedo"
+  },
+  {
+    "id": "cig-joya-de-nicaragua-rosalones-reserva",
+    "brand": "Joya de Nicaragua",
+    "line": "Rosalones Reserva",
+    "vitola": "R550",
+    "url": "https://www.neptunecigar.com/cigars/joya-de-nicaragua-rosalones-reserva-rr550-5--50"
+  },
+  {
+    "id": "cig-kafie-1901-connecticut",
+    "brand": "Kafie",
+    "line": "1901 Connecticut",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/kafie-1901-connecticut-robusto"
+  },
+  {
     "id": "cig-kafie-1901-df-maduro",
     "brand": "Kafie",
     "line": "1901 Df Maduro",
     "vitola": "Belicoso",
     "url": "https://www.neptunecigar.com/cigars/kafie-1901-df-maduro-belicoso"
+  },
+  {
+    "id": "cig-kafie-1901-san-andres",
+    "brand": "Kafie",
+    "line": "1901 San Andres",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/kafie-1901-san-andres-robusto"
   },
   {
     "id": "cig-kafie-1901-serie-l-natural",
@@ -3815,11 +5229,116 @@
     "url": "https://www.neptunecigar.com/cigars/kristoff-2025-pca-signature-series-box-pressed-toro-61-4--54"
   },
   {
+    "id": "cig-kristoff-685-woodlawn",
+    "brand": "Kristoff",
+    "line": "685 Woodlawn",
+    "vitola": "Perfecto",
+    "url": "https://www.neptunecigar.com/cigars/kristoff-685-woodlawn-perfecto"
+  },
+  {
+    "id": "cig-kristoff-cameroon",
+    "brand": "Kristoff",
+    "line": "Cameroon",
+    "vitola": "Figurado",
+    "url": "https://www.neptunecigar.com/cigars/kristoff-cameroon-churchill"
+  },
+  {
     "id": "cig-kristoff-connectiut",
     "brand": "Kristoff",
     "line": "Connectiut",
     "vitola": "Churchill",
     "url": "https://www.neptunecigar.com/cigars/kristoff-connectiut-churchill"
+  },
+  {
+    "id": "cig-kristoff-corojo-limitada",
+    "brand": "Kristoff",
+    "line": "Corojo Limitada",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/kristoff-corojo-limitada-churchill"
+  },
+  {
+    "id": "cig-kristoff-criollo",
+    "brand": "Kristoff",
+    "line": "Criollo",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/kristoff-criollo-robusto"
+  },
+  {
+    "id": "cig-kristoff-gc-signature-series",
+    "brand": "Kristoff",
+    "line": "GC Signature Series",
+    "vitola": "Churchill",
+    "url": "https://www.neptunecigar.com/cigars/kristoff-gc-signature-series-660"
+  },
+  {
+    "id": "cig-kristoff-habano",
+    "brand": "Kristoff",
+    "line": "Habano",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/kristoff-habano-churchill"
+  },
+  {
+    "id": "cig-kristoff-kristania",
+    "brand": "Kristoff",
+    "line": "Kristania",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/kristoff-kristania-60"
+  },
+  {
+    "id": "cig-kristoff-kristania-maduro",
+    "brand": "Kristoff",
+    "line": "Kristania Maduro",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/kristoff-kristania-maduro"
+  },
+  {
+    "id": "cig-kristoff-ligero-maduro",
+    "brand": "Kristoff",
+    "line": "Ligero Maduro",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/kristoff-ligero-maduro-robusto"
+  },
+  {
+    "id": "cig-kristoff-maduro",
+    "brand": "Kristoff",
+    "line": "Maduro",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/kristoff-maduro-matador"
+  },
+  {
+    "id": "cig-kristoff-san-andres",
+    "brand": "Kristoff",
+    "line": "San Andres",
+    "vitola": "Churchill",
+    "url": "https://www.neptunecigar.com/cigars/kristoff-san-andres-660"
+  },
+  {
+    "id": "cig-kristoff-shade-grown",
+    "brand": "Kristoff",
+    "line": "Shade Grown",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/kristoff-shade-grown-robusto"
+  },
+  {
+    "id": "cig-kristoff-sumatra",
+    "brand": "Kristoff",
+    "line": "Sumatra",
+    "vitola": "Lancero",
+    "url": "https://www.neptunecigar.com/cigars/kristoff-sumatra-matador"
+  },
+  {
+    "id": "cig-kristoff-veinte",
+    "brand": "Kristoff",
+    "line": "Veinte",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/kristoff-veinte-20th-anniversary-robusto"
+  },
+  {
+    "id": "cig-kristoff-vengeance",
+    "brand": "Kristoff",
+    "line": "Vengeance",
+    "vitola": "Lancero",
+    "url": "https://www.neptunecigar.com/cigars/kristoff-vengeance-660"
   },
   {
     "id": "cig-la-antiguedad-grande",
@@ -3836,6 +5355,13 @@
     "url": "https://www.neptunecigar.com/cigars/la-antiguedad-robusto"
   },
   {
+    "id": "cig-la-antiguedad-super",
+    "brand": "La Antiguedad",
+    "line": "Super",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/la-antiguedad-super-toro"
+  },
+  {
     "id": "cig-la-antiguedad-toro",
     "brand": "La Antiguedad",
     "line": "Toro",
@@ -3850,11 +5376,32 @@
     "url": "https://www.neptunecigar.com/cigars/la-aroma-de-cuba-churchill"
   },
   {
+    "id": "cig-la-aroma-de-cuba-connecticut",
+    "brand": "La Aroma de Cuba",
+    "line": "Connecticut",
+    "vitola": "Corona",
+    "url": "https://www.neptunecigar.com/cigars/la-aroma-de-cuba-connecticut-corona"
+  },
+  {
+    "id": "cig-la-aroma-de-cuba-edicion-especial-5",
+    "brand": "La Aroma de Cuba",
+    "line": "Edición Especial #5",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/la-aroma-de-cuba-edicion-especial-no-5"
+  },
+  {
     "id": "cig-la-aroma-de-cuba-el-jefe",
     "brand": "La Aroma de Cuba",
     "line": "El Jefe",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/la-aroma-de-cuba-el-jefe"
+  },
+  {
+    "id": "cig-la-aroma-de-cuba-habano-reserve",
+    "brand": "La Aroma de Cuba",
+    "line": "Habano Reserve",
+    "vitola": "Monarch",
+    "url": "https://www.neptunecigar.com/cigars/la-aroma-de-cuba-habano-reserve-monarch-6--52"
   },
   {
     "id": "cig-la-aroma-de-cuba-immensa",
@@ -3864,11 +5411,32 @@
     "url": "https://www.neptunecigar.com/cigars/la-aroma-de-cuba-immensa"
   },
   {
+    "id": "cig-la-aroma-de-cuba-mi-amor",
+    "brand": "La Aroma de Cuba",
+    "line": "Mi Amor",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/la-aroma-de-cuba-mi-amor-valentino"
+  },
+  {
     "id": "cig-la-aroma-de-cuba-monarch",
     "brand": "La Aroma de Cuba",
     "line": "Monarch",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/la-aroma-de-cuba-monarch"
+  },
+  {
+    "id": "cig-la-aroma-de-cuba-noblesse",
+    "brand": "La Aroma de Cuba",
+    "line": "Noblesse",
+    "vitola": "Viceroy",
+    "url": "https://www.neptunecigar.com/cigars/la-aroma-de-cuba-noblesse-regency"
+  },
+  {
+    "id": "cig-la-aroma-de-cuba-pasion",
+    "brand": "La Aroma de Cuba",
+    "line": "Pasión",
+    "vitola": "Corona Gorda",
+    "url": "https://www.neptunecigar.com/cigars/la-aroma-de-cuba-pasion-encanto"
   },
   {
     "id": "cig-la-aroma-de-cuba-robusto",
@@ -3885,11 +5453,25 @@
     "url": "https://www.neptunecigar.com/cigars/la-aroma-de-cuba-rothschild"
   },
   {
+    "id": "cig-la-aroma-de-cuba-small-batch",
+    "brand": "La Aroma de Cuba",
+    "line": "Small Batch",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/la-aroma-de-cuba-small-batch-toro-6--52"
+  },
+  {
     "id": "cig-la-aurora-100-anos-edicion-especial",
     "brand": "La Aurora",
     "line": "100 Anos Edicion Especial",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/la-aurora-100-anos-robusto-edicion-especial"
+  },
+  {
+    "id": "cig-la-aurora-107-ecuador",
+    "brand": "La Aurora",
+    "line": "107 Ecuador",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/la-aurora-107-ecuador-robusto"
   },
   {
     "id": "cig-la-aurora-115th",
@@ -3941,6 +5523,13 @@
     "url": "https://www.neptunecigar.com/cigars/la-aurora-3-cigar-promo"
   },
   {
+    "id": "cig-la-aurora-connecticut-1987",
+    "brand": "La Aurora",
+    "line": "Connecticut 1987",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/la-aurora-1987-robusto"
+  },
+  {
     "id": "cig-la-aurora-dominican-dna",
     "brand": "La Aurora",
     "line": "Dominican Dna",
@@ -3953,6 +5542,13 @@
     "line": "Especiales",
     "vitola": "Gorda",
     "url": "https://www.neptunecigar.com/cigars/la-aurora-especiales-corona-gorda"
+  },
+  {
+    "id": "cig-la-aurora-family-creed-fuerte-sol",
+    "brand": "La Aurora",
+    "line": "Family Creed Fuerte Sol",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/la-aurora-family-creed-fuerte-sol-robusto-5--50"
   },
   {
     "id": "cig-la-aurora-family-creed-perseverancia",
@@ -3976,11 +5572,11 @@
     "url": "https://www.neptunecigar.com/cigars/la-aurora-hors-d-age-2022-toro"
   },
   {
-    "id": "cig-la-aurora-hors-d-age-2024",
+    "id": "cig-la-aurora-limited-editions-100-anos-tribute",
     "brand": "La Aurora",
-    "line": "Hors d'Age 2024",
-    "vitola": "Toro",
-    "url": "https://www.neptunecigar.com/cigars/la-aurora-hors-d-age-2024-toro-53-4--54"
+    "line": "Limited Editions 100 Anos Tribute",
+    "vitola": "Belicoso",
+    "url": "https://www.neptunecigar.com/cigars/la-aurora-100-anos-churchill"
   },
   {
     "id": "cig-la-aurora-preferido-cameroon-platinum-tube",
@@ -4004,18 +5600,18 @@
     "url": "https://www.neptunecigar.com/cigars/la-aurora-preferido-maduro-ruby-tubes"
   },
   {
+    "id": "cig-la-aurora-puro-vintage",
+    "brand": "La Aurora",
+    "line": "Puro Vintage",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/la-aurora-puro-vintage-2009"
+  },
+  {
     "id": "cig-la-aurora-puro-vintage-2007-salomon",
     "brand": "La Aurora",
     "line": "Puro Vintage 2007 Salomon",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/la-aurora-puro-vintage-2007-salomon"
-  },
-  {
-    "id": "cig-la-aurora-puro-vintage-2009",
-    "brand": "La Aurora",
-    "line": "Puro Vintage 2009",
-    "vitola": "Robusto",
-    "url": "https://www.neptunecigar.com/cigars/la-aurora-puro-vintage-2009"
   },
   {
     "id": "cig-la-aurora-small-batch-lot-no-007",
@@ -4030,6 +5626,13 @@
     "line": "Stravaganza",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/la-aurora-stravaganza"
+  },
+  {
+    "id": "cig-la-barba-red",
+    "brand": "La Barba",
+    "line": "Red",
+    "vitola": "Corona",
+    "url": "https://www.neptunecigar.com/cigars/la-barba-red-corona"
   },
   {
     "id": "cig-la-duena-petit-no",
@@ -4081,9 +5684,9 @@
     "url": "https://www.neptunecigar.com/cigars/la-flor-dominicana-55th-anniversary-emeraude-litto-gomez"
   },
   {
-    "id": "cig-la-flor-dominicana-apollonia-taa-2025",
+    "id": "cig-la-flor-dominicana-apollonia-taa",
     "brand": "La Flor Dominicana",
-    "line": "Apollonia TAA 2025",
+    "line": "Apollonia TAA",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/la-flor-dominicana-apollonia-taa-2025-61-2--44"
   },
@@ -4123,6 +5726,13 @@
     "url": "https://www.neptunecigar.com/cigars/la-flor-dominicana-colorado-oscuro-no-2"
   },
   {
+    "id": "cig-la-flor-dominicana-double-ligero",
+    "brand": "La Flor Dominicana",
+    "line": "Double Ligero",
+    "vitola": "Chisel",
+    "url": "https://www.neptunecigar.com/cigars/la-flor-dominicana-double-ligero-chisel"
+  },
+  {
     "id": "cig-la-flor-dominicana-double-press",
     "brand": "La Flor Dominicana",
     "line": "Double Press",
@@ -4135,6 +5745,20 @@
     "line": "El Carajon",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/la-flor-dominicana-el-carajon"
+  },
+  {
+    "id": "cig-la-flor-dominicana-la-nox",
+    "brand": "La Flor Dominicana",
+    "line": "La Nox",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/la-flor-dominicana-la-nox"
+  },
+  {
+    "id": "cig-la-flor-dominicana-la-volcada",
+    "brand": "La Flor Dominicana",
+    "line": "La Volcada",
+    "vitola": "Churchill",
+    "url": "https://www.neptunecigar.com/cigars/la-flor-dominicana-la-volcada"
   },
   {
     "id": "cig-la-flor-dominicana-ligero-cabinet-oscuro",
@@ -4165,9 +5789,9 @@
     "url": "https://www.neptunecigar.com/cigars/la-flor-dominicana-maduro-cabinet-no-6"
   },
   {
-    "id": "cig-la-flor-dominicana-miami-super-bowl-football-2020",
+    "id": "cig-la-flor-dominicana-miami-super-bowl-football",
     "brand": "La Flor Dominicana",
-    "line": "Miami Super Bowl Football 2020",
+    "line": "Miami Super Bowl Football",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/la-flor-dominicana-miami-super-bowl-football-2020"
   },
@@ -4186,11 +5810,25 @@
     "url": "https://www.neptunecigar.com/cigars/la-flor-dominicana-oro-tubo-no-6-maduro"
   },
   {
+    "id": "cig-la-flor-dominicana-reserva-especial",
+    "brand": "La Flor Dominicana",
+    "line": "Reserva Especial",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/la-flor-dominicana-reserva-especial-el-jocko-maduro"
+  },
+  {
     "id": "cig-la-flor-dominicana-salomon-unico-of-10",
     "brand": "La Flor Dominicana",
     "line": "Salomon Unico of 10",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/la-flor-dominicana-salomon-unico-box-of-10"
+  },
+  {
+    "id": "cig-la-flor-dominicana-solis",
+    "brand": "La Flor Dominicana",
+    "line": "Solis",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/la-flor-dominicana-solis-toro-extra"
   },
   {
     "id": "cig-la-flor-dominicana-special-football-edition",
@@ -4207,11 +5845,25 @@
     "url": "https://www.neptunecigar.com/cigars/la-flor-dominicana-tcfka-m-natural"
   },
   {
+    "id": "cig-la-galera-1936",
+    "brand": "La Galera",
+    "line": "1936",
+    "vitola": "Pegador",
+    "url": "https://www.neptunecigar.com/cigars/la-galera-1936-box-pressed-pegador-corona-gorda"
+  },
+  {
     "id": "cig-la-galera-80th-anniversary-pressed-limited-edition",
     "brand": "La Galera",
     "line": "80th Anniversary Pressed Limited Edition",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/la-galera-80th-anniversary-box-pressed-limited-edition"
+  },
+  {
+    "id": "cig-la-galera-anemoi",
+    "brand": "La Galera",
+    "line": "Anemoi",
+    "vitola": "Boreas",
+    "url": "https://www.neptunecigar.com/cigars/la-galera-anemoi-zephyrus"
   },
   {
     "id": "cig-la-galera-cabeza-caracol",
@@ -4228,6 +5880,20 @@
     "url": "https://www.neptunecigar.com/cigars/la-galera-habno-lancero-perillas"
   },
   {
+    "id": "cig-la-galera-imperial-jade",
+    "brand": "La Galera",
+    "line": "Imperial Jade",
+    "vitola": "Chiquito",
+    "url": "https://www.neptunecigar.com/cigars/la-galera-imperial-jade-corona"
+  },
+  {
+    "id": "cig-la-galera-maduro",
+    "brand": "La Galera",
+    "line": "Maduro",
+    "vitola": "Chaveta",
+    "url": "https://www.neptunecigar.com/cigars/la-galera-maduro-chaveta-robusto"
+  },
+  {
     "id": "cig-la-galera-minis-cigarillos",
     "brand": "La Galera",
     "line": "Minis Cigarillos",
@@ -4242,9 +5908,9 @@
     "url": "https://www.neptunecigar.com/cigars/la-galera-year-of-the-dragon-toro"
   },
   {
-    "id": "cig-la-galera-year-of-the-horse-limited-edition-2026",
+    "id": "cig-la-galera-year-of-the-horse",
     "brand": "La Galera",
-    "line": "Year of the Horse Limited Edition 2026",
+    "line": "Year of the Horse",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/la-galera-year-of-the-horse-limited-edition-2026"
   },
@@ -4256,11 +5922,32 @@
     "url": "https://www.neptunecigar.com/cigars/la-gloria-cubana-8th-street-toro"
   },
   {
+    "id": "cig-la-gloria-cubana-churchill",
+    "brand": "La Gloria Cubana",
+    "line": "Churchill",
+    "vitola": "Churchill",
+    "url": "https://www.neptunecigar.com/cigars/la-gloria-cubana-churchill"
+  },
+  {
+    "id": "cig-la-gloria-cubana-coleccion-reserva",
+    "brand": "La Gloria Cubana",
+    "line": "Coleccion Reserva",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/la-gloria-cubana-coleccion-reserva-robusto"
+  },
+  {
     "id": "cig-la-gloria-cubana-corojo-de-oro-limited-edition",
     "brand": "La Gloria Cubana",
     "line": "Corojo De Oro Limited Edition",
     "vitola": "Toro",
     "url": "https://www.neptunecigar.com/cigars/la-gloria-cubana-corojo-de-oro-limited-edition-toro"
+  },
+  {
+    "id": "cig-la-gloria-cubana-corona-gorda",
+    "brand": "La Gloria Cubana",
+    "line": "Corona Gorda",
+    "vitola": "Corona Gorda",
+    "url": "https://www.neptunecigar.com/cigars/la-gloria-cubana-corona-gorda"
   },
   {
     "id": "cig-la-gloria-cubana-criollo-de-oro",
@@ -4275,6 +5962,13 @@
     "line": "Esteli",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/la-gloria-cubana-esteli-robusto"
+  },
+  {
+    "id": "cig-la-gloria-cubana-glorias",
+    "brand": "La Gloria Cubana",
+    "line": "Glorias",
+    "vitola": "Petit Corona",
+    "url": "https://www.neptunecigar.com/cigars/la-gloria-cubana-natural-glorias"
   },
   {
     "id": "cig-la-gloria-cubana-intencion",
@@ -4303,6 +5997,13 @@
     "line": "Los Gloriosos Grandioso",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/la-gloria-cubana-los-gloriosos-grandioso-7--58"
+  },
+  {
+    "id": "cig-la-gloria-cubana-maduro",
+    "brand": "La Gloria Cubana",
+    "line": "Maduro",
+    "vitola": "Churchill",
+    "url": "https://www.neptunecigar.com/cigars/la-gloria-cubana-maduro-wavell"
   },
   {
     "id": "cig-la-gloria-cubana-medio-tiempo",
@@ -4522,6 +6223,13 @@
     "url": "https://www.neptunecigar.com/cigars/la-palina-nicaragua-connecticut-robusto"
   },
   {
+    "id": "cig-la-palina-red-label",
+    "brand": "La Palina",
+    "line": "Red Label",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/la-palina-red-label-robusto"
+  },
+  {
     "id": "cig-la-palina-silver-label-taa",
     "brand": "La Palina",
     "line": "Silver Label TAA",
@@ -4548,6 +6256,13 @@
     "line": "Connecticut Toro",
     "vitola": "Gran Toro",
     "url": "https://www.neptunecigar.com/cigars/la-rosa-de-sandiego-connecticut-toro-gordo"
+  },
+  {
+    "id": "cig-la-rosa-de-sandiego-connecticut",
+    "brand": "La Rosa de Sandiego",
+    "line": "de Sandiego Connecticut",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/la-rosa-de-sandiego-connecticut-robusto"
   },
   {
     "id": "cig-la-rosa-de-sandiego-habano",
@@ -4599,6 +6314,13 @@
     "url": "https://www.neptunecigar.com/cigars/leaf-by-oscar-sumatra-toro"
   },
   {
+    "id": "cig-luciano-dreamer",
+    "brand": "Luciano",
+    "line": "Dreamer",
+    "vitola": "Lancero",
+    "url": "https://www.neptunecigar.com/cigars/luciano-the-dreamer-hermoso-no-4"
+  },
+  {
     "id": "cig-luciano-eleve-sublime",
     "brand": "Luciano",
     "line": "Eleve Sublime",
@@ -4613,11 +6335,25 @@
     "url": "https://www.neptunecigar.com/cigars/luciano-foreign-affair-toro-extra"
   },
   {
+    "id": "cig-luciano-maria-lucia",
+    "brand": "Luciano",
+    "line": "Maria Lucia",
+    "vitola": "Corona Gorda",
+    "url": "https://www.neptunecigar.com/cigars/luciano-maria-lucia-double-robusto"
+  },
+  {
     "id": "cig-luciano-the-machinist",
     "brand": "Luciano",
     "line": "The Machinist",
     "vitola": "Toro",
     "url": "https://www.neptunecigar.com/cigars/luciano-the-machinist-toro-6--52"
+  },
+  {
+    "id": "cig-luciano-underrated",
+    "brand": "Luciano",
+    "line": "Underrated",
+    "vitola": "Corona Gorda",
+    "url": "https://www.neptunecigar.com/cigars/luciano-underrated-robusto"
   },
   {
     "id": "cig-macanudo-1968",
@@ -4627,11 +6363,32 @@
     "url": "https://www.neptunecigar.com/cigars/macanudo-1968-robusto"
   },
   {
+    "id": "cig-macanudo-cafe",
+    "brand": "Macanudo",
+    "line": "Café",
+    "vitola": "Petit Corona",
+    "url": "https://www.neptunecigar.com/cigars/macanudo-cafe-baron-de-rothschild"
+  },
+  {
+    "id": "cig-macanudo-cru-royale",
+    "brand": "Macanudo",
+    "line": "Cru Royale",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/macanudo-cru-royale-robusto"
+  },
+  {
     "id": "cig-macanudo-ecuadorian-shade",
     "brand": "Macanudo",
     "line": "Ecuadorian Shade",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/macanudo-ecuadorian-shade-robusto-5--50"
+  },
+  {
+    "id": "cig-macanudo-emissary-espana",
+    "brand": "Macanudo",
+    "line": "Emissary Espana",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/macanudo-emissary-espana-churchill"
   },
   {
     "id": "cig-macanudo-emissary-france",
@@ -4648,11 +6405,39 @@
     "url": "https://www.neptunecigar.com/cigars/macanudo-estate-reserve-flint-knoll-no-2-toro"
   },
   {
+    "id": "cig-macanudo-gold-label",
+    "brand": "Macanudo",
+    "line": "Gold Label",
+    "vitola": "Gold Label Petit Corona",
+    "url": "https://www.neptunecigar.com/cigars/macanudo-gold-label-shakespeare"
+  },
+  {
+    "id": "cig-macanudo-hampton-court",
+    "brand": "Macanudo",
+    "line": "Hampton Court",
+    "vitola": "Hampton Court Robusto",
+    "url": "https://www.neptunecigar.com/cigars/macanudo-maduro-hampton-court"
+  },
+  {
+    "id": "cig-macanudo-heritage-nuevo",
+    "brand": "Macanudo",
+    "line": "Heritage Nuevo",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/macanudo-heritage-nuevo-robusto"
+  },
+  {
     "id": "cig-macanudo-heritage-reserve",
     "brand": "Macanudo",
     "line": "Heritage Reserve",
     "vitola": "Churchill",
     "url": "https://www.neptunecigar.com/cigars/macanudo-heritage-reserve-churchill"
+  },
+  {
+    "id": "cig-macanudo-limited-edition-vintage",
+    "brand": "Macanudo",
+    "line": "Limited Edition Vintage",
+    "vitola": "Torpedo",
+    "url": "https://www.neptunecigar.com/cigars/macanudo-vintage-2010-torpedo"
   },
   {
     "id": "cig-macanudo-maduro",
@@ -4697,11 +6482,25 @@
     "url": "https://www.neptunecigar.com/cigars/macanudo-sumatra-robusto-5--50"
   },
   {
-    "id": "cig-macanudo-vintage-2006",
+    "id": "cig-macanudo-vintage",
     "brand": "Macanudo",
-    "line": "Vintage 2006",
+    "line": "Vintage",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/macanudo-vintage-2006-robusto"
+  },
+  {
+    "id": "cig-matilde-exposure-no-1",
+    "brand": "Matilde",
+    "line": "Exposure No. 1",
+    "vitola": "Lonsdale",
+    "url": "https://www.neptunecigar.com/cigars/matilde-limited-exposure-no-1-lonsdale"
+  },
+  {
+    "id": "cig-matilde-exposure-no-2",
+    "brand": "Matilde",
+    "line": "Exposure No. 2",
+    "vitola": "Lonsdale",
+    "url": "https://www.neptunecigar.com/cigars/matilde-limited-exposure-no-2-lonsdale"
   },
   {
     "id": "cig-matilde-limited-exposure-no-3",
@@ -4709,6 +6508,55 @@
     "line": "Limited Exposure No. 3",
     "vitola": "Lonsdale",
     "url": "https://www.neptunecigar.com/cigars/matilde-limited-exposure-no-3-lonsdale-6--42"
+  },
+  {
+    "id": "cig-matilde-oscura",
+    "brand": "Matilde",
+    "line": "Oscura",
+    "vitola": "Corona",
+    "url": "https://www.neptunecigar.com/cigars/matilde-oscura-toro-bravo-61-2--54"
+  },
+  {
+    "id": "cig-matilde-para-jose-seijas",
+    "brand": "Matilde",
+    "line": "Para Jose Seijas",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/matilde-para-jose-seijas-toro"
+  },
+  {
+    "id": "cig-matilde-quadrata",
+    "brand": "Matilde",
+    "line": "Quadrata",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/matilde-quadrata-robusto"
+  },
+  {
+    "id": "cig-matilde-renacer",
+    "brand": "Matilde",
+    "line": "Renacer",
+    "vitola": "Corona",
+    "url": "https://www.neptunecigar.com/cigars/matilde-renacer-toro-bravo"
+  },
+  {
+    "id": "cig-matilde-serena",
+    "brand": "Matilde",
+    "line": "Serena",
+    "vitola": "Corona",
+    "url": "https://www.neptunecigar.com/cigars/matilde-serena-toro-bravo"
+  },
+  {
+    "id": "cig-matilde-serena-maduro",
+    "brand": "Matilde",
+    "line": "Serena Maduro",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/matilde-serena-maduro-robusto"
+  },
+  {
+    "id": "cig-matilde-special-edition",
+    "brand": "Matilde",
+    "line": "Special Edition",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/matilde-special-edition-toro"
   },
   {
     "id": "cig-micallef-black",
@@ -4795,6 +6643,13 @@
     "url": "https://www.neptunecigar.com/cigars/micallef-purple-robusto-5--52"
   },
   {
+    "id": "cig-micallef-reata",
+    "brand": "Micallef",
+    "line": "Reata",
+    "vitola": "Churchill",
+    "url": "https://www.neptunecigar.com/cigars/micallef-reata-churchill"
+  },
+  {
     "id": "cig-micallef-red",
     "brand": "Micallef",
     "line": "Red",
@@ -4830,11 +6685,74 @@
     "url": "https://www.neptunecigar.com/cigars/my-father-10th-anniversary-limited-edition-2018"
   },
   {
+    "id": "cig-my-father-blue",
+    "brand": "My Father",
+    "line": "Blue",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/my-father-blue-petit-robusto-41-2--50"
+  },
+  {
+    "id": "cig-my-father-connecticut",
+    "brand": "My Father",
+    "line": "Connecticut",
+    "vitola": "Corona",
+    "url": "https://www.neptunecigar.com/cigars/my-father-connecticut-toro-gordo"
+  },
+  {
+    "id": "cig-my-father-el-centurion",
+    "brand": "My Father",
+    "line": "El Centurion",
+    "vitola": "El Centurion H",
+    "url": "https://www.neptunecigar.com/cigars/my-father-el-centurion-h2kct-corona"
+  },
+  {
+    "id": "cig-my-father-garcia-garcia",
+    "brand": "My Father",
+    "line": "Garcia & Garcia",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/my-father-garcia-garcia-toro-deluxe"
+  },
+  {
     "id": "cig-my-father-garcia-and-garcia-deluxe",
     "brand": "My Father",
     "line": "Garcia and Garcia Deluxe",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/my-father-garcia-and-garcia-robusto-deluxe"
+  },
+  {
+    "id": "cig-my-father-la-gran-oferta",
+    "brand": "My Father",
+    "line": "La Gran Oferta",
+    "vitola": "Lancero",
+    "url": "https://www.neptunecigar.com/cigars/my-father-la-gran-oferta-lancero"
+  },
+  {
+    "id": "cig-my-father-la-lealtad",
+    "brand": "My Father",
+    "line": "La Lealtad",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/my-father-la-lealtad-toro-6--54"
+  },
+  {
+    "id": "cig-my-father-la-opulencia",
+    "brand": "My Father",
+    "line": "La Opulencia",
+    "vitola": "Petit",
+    "url": "https://www.neptunecigar.com/cigars/my-father-la-opulencia-petite"
+  },
+  {
+    "id": "cig-my-father-la-promesa",
+    "brand": "My Father",
+    "line": "La Promesa",
+    "vitola": "Petit En Cedros",
+    "url": "https://www.neptunecigar.com/cigars/my-father-la-promesa-lancero"
+  },
+  {
+    "id": "cig-my-father-le-bijou-1922",
+    "brand": "My Father",
+    "line": "Le Bijou 1922",
+    "vitola": "Petit Robusto",
+    "url": "https://www.neptunecigar.com/cigars/my-father-le-bijou-1922-petit-robusto"
   },
   {
     "id": "cig-my-father-no",
@@ -4858,6 +6776,27 @@
     "url": "https://www.neptunecigar.com/cigars/my-father-no-6-toro-gordo"
   },
   {
+    "id": "cig-my-father-the-judge",
+    "brand": "My Father",
+    "line": "The Judge",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/my-father-the-judge-corona-gorda"
+  },
+  {
+    "id": "cig-nat-sherman-epoca",
+    "brand": "Nat Sherman",
+    "line": "Epoca",
+    "vitola": "Perfecto",
+    "url": "https://www.neptunecigar.com/cigars/nat-sherman-epoca-breva"
+  },
+  {
+    "id": "cig-nat-sherman-metropolitan-maduro",
+    "brand": "Nat Sherman",
+    "line": "Metropolitan Maduro",
+    "vitola": "Gordo",
+    "url": "https://www.neptunecigar.com/cigars/nat-sherman-metropolitan-maduro-petite"
+  },
+  {
     "id": "cig-nat-sherman-timeless-2019-limited-edition",
     "brand": "Nat Sherman",
     "line": "Timeless 2019 Limited Edition",
@@ -4870,6 +6809,20 @@
     "line": "Timeless Nicaragua",
     "vitola": "749",
     "url": "https://www.neptunecigar.com/cigars/nat-sherman-timeless-nicaragua-749-churchill"
+  },
+  {
+    "id": "cig-nat-sherman-timeless-prestige",
+    "brand": "Nat Sherman",
+    "line": "Timeless Prestige",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/nat-sherman-timeless-prestige-5"
+  },
+  {
+    "id": "cig-nat-sherman-timeless-sterling",
+    "brand": "Nat Sherman",
+    "line": "Timeless Sterling",
+    "vitola": "Churchill",
+    "url": "https://www.neptunecigar.com/cigars/nat-sherman-timeless-sterling-churchill"
   },
   {
     "id": "cig-nat-sherman-timeless-supreme",
@@ -4907,6 +6860,13 @@
     "url": "https://www.neptunecigar.com/cigars/nub-nuance-triple-roast-354"
   },
   {
+    "id": "cig-oliva-master-blends-3",
+    "brand": "Oliva",
+    "line": "Master Blends 3",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/oliva-master-blends-3-robusto"
+  },
+  {
     "id": "cig-onyx-reserve-churchill",
     "brand": "Onyx Reserve",
     "line": "Churchill",
@@ -4928,9 +6888,9 @@
     "url": "https://www.neptunecigar.com/cigars/onyx-reserve-toro"
   },
   {
-    "id": "cig-oscar-valladares-ciseron-2018",
+    "id": "cig-oscar-valladares-ciseron",
     "brand": "Oscar Valladares",
-    "line": "Ciseron 2018",
+    "line": "Ciseron",
     "vitola": "Black",
     "url": "https://www.neptunecigar.com/cigars/oscar-valladares-ciseron-2018-black"
   },
@@ -4970,11 +6930,39 @@
     "url": "https://www.neptunecigar.com/cigars/oscar-valladares-heaven-and-hell-claro-toro"
   },
   {
+    "id": "cig-oscar-valladares-mcfly",
+    "brand": "Oscar Valladares",
+    "line": "McFly",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/oscar-valladares-mcfly-toro"
+  },
+  {
+    "id": "cig-oscar-valladares-plan-b-connecticut",
+    "brand": "Oscar Valladares",
+    "line": "Plan B Connecticut",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/oscar-valladares-plan-b-connecticut-toro"
+  },
+  {
     "id": "cig-oscar-valladares-plan-b-habano",
     "brand": "Oscar Valladares",
     "line": "Plan B Habano",
     "vitola": "Toro",
     "url": "https://www.neptunecigar.com/cigars/oscar-valladares-plan-b-habano-toro"
+  },
+  {
+    "id": "cig-oscar-valladares-plan-b-maduro",
+    "brand": "Oscar Valladares",
+    "line": "Plan B Maduro",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/oscar-valladares-plan-b-maduro-toro"
+  },
+  {
+    "id": "cig-oscar-valladares-super-fly-connecticut",
+    "brand": "Oscar Valladares",
+    "line": "Super Fly Connecticut",
+    "vitola": "Corona",
+    "url": "https://www.neptunecigar.com/cigars/oscar-valladares-super-fly-connecticut-corona"
   },
   {
     "id": "cig-oscar-valladares-superfly-super",
@@ -4991,11 +6979,67 @@
     "url": "https://www.neptunecigar.com/cigars/the-oscar-connecticut-robusto"
   },
   {
+    "id": "cig-oscar-valladares-wild-hunter-oscuro",
+    "brand": "Oscar Valladares",
+    "line": "Wild Hunter Oscuro",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/oscar-valladares-wild-hunter-oscuro-toro"
+  },
+  {
     "id": "cig-padilla-miami-8-and-11",
     "brand": "Padilla",
     "line": "Miami 8 and 11",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/padilla-miami-8-and-11-robusto"
+  },
+  {
+    "id": "cig-padron-6000",
+    "brand": "Padrón",
+    "line": "#6000",
+    "vitola": "Torpedo",
+    "url": "https://www.neptunecigar.com/cigars/padron-series-6000-torpedo"
+  },
+  {
+    "id": "cig-padron-1926-serie",
+    "brand": "Padrón",
+    "line": "1926 Serie",
+    "vitola": "No.6",
+    "url": "https://www.neptunecigar.com/cigars/padron-1926-serie-no-1-maduro"
+  },
+  {
+    "id": "cig-padron-60th-anniversary",
+    "brand": "Padrón",
+    "line": "60th Anniversary",
+    "vitola": "Perfecto",
+    "url": "https://www.neptunecigar.com/cigars/padron-60th-anniversary-maduro"
+  },
+  {
+    "id": "cig-padron-black",
+    "brand": "Padrón",
+    "line": "Black",
+    "vitola": "Torpedo",
+    "url": "https://www.neptunecigar.com/cigars/padron-taa-black-no-89-maduro"
+  },
+  {
+    "id": "cig-padron-damaso",
+    "brand": "Padrón",
+    "line": "Damaso",
+    "vitola": "No. 8",
+    "url": "https://www.neptunecigar.com/cigars/padron-damaso-no-8"
+  },
+  {
+    "id": "cig-padron-family-reserve",
+    "brand": "Padrón",
+    "line": "Family Reserve",
+    "vitola": "85 Years",
+    "url": "https://www.neptunecigar.com/cigars/padron-family-reserve-no-45-maduro"
+  },
+  {
+    "id": "cig-padron-maduro",
+    "brand": "Padrón",
+    "line": "Maduro",
+    "vitola": "Panetela",
+    "url": "https://www.neptunecigar.com/cigars/padron-series-4000-maduro"
   },
   {
     "id": "cig-padron-padron-1964-annivesary-hermoso-natural",
@@ -5019,6 +7063,13 @@
     "url": "https://www.neptunecigar.com/cigars/padron-series-2000"
   },
   {
+    "id": "cig-patoro-brasil",
+    "brand": "Patoro",
+    "line": "Brasil",
+    "vitola": "Belicoso",
+    "url": "https://www.neptunecigar.com/cigars/patoro-brasil-belicoso"
+  },
+  {
     "id": "cig-patoro-churchill",
     "brand": "Patoro",
     "line": "Churchill",
@@ -5040,6 +7091,13 @@
     "url": "https://www.neptunecigar.com/cigars/patoro-cuvee-royale-xxv-63-10--53"
   },
   {
+    "id": "cig-patoro-gran-anejo-reserva",
+    "brand": "Patoro",
+    "line": "Gran Añejo Reserva",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/patoro-gran-anejo-reserva-toro"
+  },
+  {
     "id": "cig-patoro-robusto",
     "brand": "Patoro",
     "line": "Robusto",
@@ -5047,11 +7105,25 @@
     "url": "https://www.neptunecigar.com/cigars/patoro-robusto"
   },
   {
+    "id": "cig-patoro-terre-blanche",
+    "brand": "Patoro",
+    "line": "Terre Blanche",
+    "vitola": "Lancero",
+    "url": "https://www.neptunecigar.com/cigars/patoro--terre-blanche-lancero"
+  },
+  {
     "id": "cig-patoro-toro",
     "brand": "Patoro",
     "line": "Toro",
     "vitola": "Toro",
     "url": "https://www.neptunecigar.com/cigars/patoro-toro"
+  },
+  {
+    "id": "cig-patoro-va",
+    "brand": "Patoro",
+    "line": "VA",
+    "vitola": "Extra Robusto",
+    "url": "https://www.neptunecigar.com/cigars/patoro-va-xo-extra-salomones"
   },
   {
     "id": "cig-pdr-el-vinyet-classico",
@@ -5073,6 +7145,41 @@
     "line": "El Vinyet Wide",
     "vitola": "Churchill",
     "url": "https://www.neptunecigar.com/cigars/pdr-el-vinyet-wide-churchill-51-8--58"
+  },
+  {
+    "id": "cig-perdomo-20th-anniversary",
+    "brand": "Perdomo",
+    "line": "20th Anniversary",
+    "vitola": "20th Maduro Robusto",
+    "url": "https://www.neptunecigar.com/cigars/perdomo-20th-anniversary-sun-grown-r56"
+  },
+  {
+    "id": "cig-perdomo-30th-anniversary-maduro",
+    "brand": "Perdomo",
+    "line": "30th Anniversary Maduro",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/perdomo-30th-anniversary-maduro-epicure"
+  },
+  {
+    "id": "cig-perdomo-30th-anniversary-sun-grown",
+    "brand": "Perdomo",
+    "line": "30th Anniversary Sun Grown",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/perdomo-30th-anniversary-sun-grown-robusto"
+  },
+  {
+    "id": "cig-perdomo-craft-series-pilsner",
+    "brand": "Perdomo",
+    "line": "Craft Series Pilsner",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/perdomo-craft-series-pilsner-robusto"
+  },
+  {
+    "id": "cig-perdomo-double-aged",
+    "brand": "Perdomo",
+    "line": "Double Aged",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/perdomo-double-aged-12-year-connecticut-robusto"
   },
   {
     "id": "cig-perdomo-estate-seleccion-vintage-connecticut",
@@ -5101,6 +7208,41 @@
     "line": "Estate Seleccion Vintage Sun Grown Aristocrata 7",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/perdomo-estate-seleccion-vintage-sun-grown-aristocrata-7"
+  },
+  {
+    "id": "cig-perdomo-fresco-connecticut",
+    "brand": "Perdomo",
+    "line": "Fresco Connecticut",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/perdomo-fresco-toro"
+  },
+  {
+    "id": "cig-perdomo-fresco-maduro",
+    "brand": "Perdomo",
+    "line": "Fresco Maduro",
+    "vitola": "Churchill",
+    "url": "https://www.neptunecigar.com/cigars/perdomo-fresco-maduro-churchill"
+  },
+  {
+    "id": "cig-perdomo-fresco-sun-grown",
+    "brand": "Perdomo",
+    "line": "Fresco Sun Grown",
+    "vitola": "Churchill",
+    "url": "https://www.neptunecigar.com/cigars/perdomo-fresco-sun-grown-churchill"
+  },
+  {
+    "id": "cig-perdomo-habano-connecticut",
+    "brand": "Perdomo",
+    "line": "Habano Connecticut",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/perdomo-habano-connecticut-robusto"
+  },
+  {
+    "id": "cig-perdomo-habano-maduro",
+    "brand": "Perdomo",
+    "line": "Habano Maduro",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/perdomo-habano-maduro-robusto"
   },
   {
     "id": "cig-perdomo-habano-sungrown",
@@ -5166,6 +7308,20 @@
     "url": "https://www.neptunecigar.com/cigars/perdomo-legacy-nicaraguan-shade-grown-gran-belicoso-6--60"
   },
   {
+    "id": "cig-perdomo-lot-23",
+    "brand": "Perdomo",
+    "line": "Lot 23",
+    "vitola": "Lot 23 Petit",
+    "url": "https://www.neptunecigar.com/cigars/perdomo-lot-23-belicoso"
+  },
+  {
+    "id": "cig-perdomo-reserve",
+    "brand": "Perdomo",
+    "line": "Reserve",
+    "vitola": "Reserve Champagne Corona",
+    "url": "https://www.neptunecigar.com/cigars/perdomo-reserve-champagne-robusto"
+  },
+  {
     "id": "cig-perdomo-small-batch-series-connecticut",
     "brand": "Perdomo",
     "line": "Small Batch Series Connecticut",
@@ -5187,11 +7343,25 @@
     "url": "https://www.neptunecigar.com/cigars/perdomo-small-batch-series-sun-grown-rothschild"
   },
   {
+    "id": "cig-perla-del-mar-corojo",
+    "brand": "Perla del Mar",
+    "line": "Corojo",
+    "vitola": "Corona Gorda",
+    "url": "https://www.neptunecigar.com/cigars/perla-del-mar-corojo-corona-gorda"
+  },
+  {
     "id": "cig-perla-del-mar-double",
     "brand": "Perla del Mar",
     "line": "Double",
     "vitola": "Toro",
     "url": "https://www.neptunecigar.com/cigars/perla-del-mar-double-toro"
+  },
+  {
+    "id": "cig-perla-del-mar-maduro",
+    "brand": "Perla del Mar",
+    "line": "Maduro",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/perla-del-mar-maduro-robusto"
   },
   {
     "id": "cig-perla-del-mar-robusto",
@@ -5213,6 +7383,13 @@
     "line": "Toro",
     "vitola": "Toro",
     "url": "https://www.neptunecigar.com/cigars/perla-del-mar-toro"
+  },
+  {
+    "id": "cig-plasencia-alma-del-cielo",
+    "brand": "Plasencia",
+    "line": "Alma del Cielo",
+    "vitola": "Alma del Cielo",
+    "url": "https://www.neptunecigar.com/cigars/plasencia-alma-del-cielo-celeste-47-8--52"
   },
   {
     "id": "cig-plasencia-reserva-organica",
@@ -5262,6 +7439,13 @@
     "line": "Legacy",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/platinum-nova-legacy"
+  },
+  {
+    "id": "cig-platinum-nova-batch",
+    "brand": "Platinum Nova",
+    "line": "Nova Batch",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/platinum-nova-batch-toro"
   },
   {
     "id": "cig-platinum-nova-park-avenue",
@@ -5334,6 +7518,20 @@
     "url": "https://www.neptunecigar.com/cigars/platinum-nova-torpedo"
   },
   {
+    "id": "cig-quesada-1974",
+    "brand": "Quesada",
+    "line": "1974",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/quesada-1974-robusto-5--50"
+  },
+  {
+    "id": "cig-quesada-40th-anniversary",
+    "brand": "Quesada",
+    "line": "40th Anniversary",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/quesada-40th-anniversary-robusto"
+  },
+  {
     "id": "cig-quesada-50th-anniversary-prensado",
     "brand": "Quesada",
     "line": "50th Anniversary Prensado",
@@ -5346,6 +7544,13 @@
     "line": "Don Manolo 79",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/quesada-don-manolo-79-6--52"
+  },
+  {
+    "id": "cig-quesada-holiday-keg",
+    "brand": "Quesada",
+    "line": "Holiday Keg",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/quesada-keg-lonsdale"
   },
   {
     "id": "cig-quesada-oktoberfest",
@@ -5404,11 +7609,32 @@
     "url": "https://www.neptunecigar.com/cigars/quorum-corona"
   },
   {
+    "id": "cig-quorum-double",
+    "brand": "Quorum",
+    "line": "Double",
+    "vitola": "Gordo",
+    "url": "https://www.neptunecigar.com/cigars/quorum-double-gordo"
+  },
+  {
+    "id": "cig-quorum-maduro",
+    "brand": "Quorum",
+    "line": "Maduro",
+    "vitola": "Corona",
+    "url": "https://www.neptunecigar.com/cigars/quorum-maduro-corona"
+  },
+  {
     "id": "cig-quorum-robusto",
     "brand": "Quorum",
     "line": "Robusto",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/quorum-robusto"
+  },
+  {
+    "id": "cig-quorum-shade",
+    "brand": "Quorum",
+    "line": "Shade",
+    "vitola": "Petit Corona",
+    "url": "https://www.neptunecigar.com/cigars/quorum-shade-tres-petit-corona"
   },
   {
     "id": "cig-quorum-short",
@@ -5439,11 +7665,25 @@
     "url": "https://www.neptunecigar.com/cigars/quorum-variety-toro-20-cigar-bundle"
   },
   {
+    "id": "cig-rocky-patel-15th-anniversary",
+    "brand": "Rocky Patel",
+    "line": "15th Anniversary",
+    "vitola": "Torpedo",
+    "url": "https://www.neptunecigar.com/cigars/rocky-patel-15th-anniversary-robusto"
+  },
+  {
     "id": "cig-rocky-patel-alr-second-edition",
     "brand": "Rocky Patel",
     "line": "Alr Second Edition",
     "vitola": "Toro",
     "url": "https://www.neptunecigar.com/cigars/rocky-patel-alr-second-edition-toro"
+  },
+  {
+    "id": "cig-rocky-patel-conviction",
+    "brand": "Rocky Patel",
+    "line": "Conviction",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/rocky-patel-conviction-toro"
   },
   {
     "id": "cig-rocky-patel-cswc-mareva",
@@ -5453,11 +7693,67 @@
     "url": "https://www.neptunecigar.com/cigars/rocky-patel-cswc-mareva"
   },
   {
+    "id": "cig-rocky-patel-dark-star",
+    "brand": "Rocky Patel",
+    "line": "Dark Star",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/rocky-patel-dark-star-robusto"
+  },
+  {
+    "id": "cig-rocky-patel-dbs",
+    "brand": "Rocky Patel",
+    "line": "DBS",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/rocky-patel-dbs-robusto"
+  },
+  {
+    "id": "cig-rocky-patel-disciple",
+    "brand": "Rocky Patel",
+    "line": "Disciple",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/rocky-patel-disciple-half-corona"
+  },
+  {
+    "id": "cig-rocky-patel-edge",
+    "brand": "Rocky Patel",
+    "line": "Edge",
+    "vitola": "Edge Briefcase",
+    "url": "https://www.neptunecigar.com/cigars/rocky-patel-the-edge-corojo-torpedo"
+  },
+  {
+    "id": "cig-rocky-patel-emerald",
+    "brand": "Rocky Patel",
+    "line": "Emerald",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/rocky-patel-emerald-robusto"
+  },
+  {
+    "id": "cig-rocky-patel-fifty",
+    "brand": "Rocky Patel",
+    "line": "Fifty",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/rocky-patel-fifty-toro"
+  },
+  {
+    "id": "cig-rocky-patel-fifty-five",
+    "brand": "Rocky Patel",
+    "line": "Fifty Five",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/rocky-patel-fifty-five-robusto"
+  },
+  {
     "id": "cig-rocky-patel-freedom",
     "brand": "Rocky Patel",
     "line": "Freedom",
     "vitola": "Connecticut",
     "url": "https://www.neptunecigar.com/cigars/rocky-patel-freedom-connecticut-robusto"
+  },
+  {
+    "id": "cig-rocky-patel-gold-label",
+    "brand": "Rocky Patel",
+    "line": "Gold Label",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/rocky-patel-gold-label-robusto"
   },
   {
     "id": "cig-rocky-patel-lb1",
@@ -5481,11 +7777,46 @@
     "url": "https://www.neptunecigar.com/cigars/rocky-patel-mystery-5-pack-extra-small"
   },
   {
+    "id": "cig-rocky-patel-number-6",
+    "brand": "Rocky Patel",
+    "line": "Number 6",
+    "vitola": "Corona",
+    "url": "https://www.neptunecigar.com/cigars/rocky-patel-number-6-corona"
+  },
+  {
     "id": "cig-rocky-patel-old-world-reserve-maduro",
     "brand": "Rocky Patel",
     "line": "Old World Reserve Maduro",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/rocky-patel-old-world-reserve-maduro-robusto"
+  },
+  {
+    "id": "cig-rocky-patel-olde-world-reserve-corojo",
+    "brand": "Rocky Patel",
+    "line": "Olde World Reserve Corojo",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/rocky-patel-olde-world-reserve-corojo-toro"
+  },
+  {
+    "id": "cig-rocky-patel-olde-world-reserve-maduro",
+    "brand": "Rocky Patel",
+    "line": "Olde World Reserve Maduro",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/rocky-patel-olde-world-reserve-maduro-toro"
+  },
+  {
+    "id": "cig-rocky-patel-quarter-century",
+    "brand": "Rocky Patel",
+    "line": "Quarter Century",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/rocky-patel-quarter-century-robusto"
+  },
+  {
+    "id": "cig-rocky-patel-royale",
+    "brand": "Rocky Patel",
+    "line": "Royale",
+    "vitola": "Corona",
+    "url": "https://www.neptunecigar.com/cigars/rocky-patel-royale-colossal"
   },
   {
     "id": "cig-rocky-patel-sapphire",
@@ -5516,9 +7847,16 @@
     "url": "https://www.neptunecigar.com/cigars/rocky-patel-special-edition-robusto"
   },
   {
-    "id": "cig-rocky-patel-taa-exclusivo-2020",
+    "id": "cig-rocky-patel-sun-grown",
     "brand": "Rocky Patel",
-    "line": "TAA Exclusivo 2020",
+    "line": "Sun Grown",
+    "vitola": "Sun Grown",
+    "url": "https://www.neptunecigar.com/cigars/rocky-patel-sun-grown-maduro-toro"
+  },
+  {
+    "id": "cig-rocky-patel-taa-exclusivo",
+    "brand": "Rocky Patel",
+    "line": "TAA Exclusivo",
     "vitola": "Toro",
     "url": "https://www.neptunecigar.com/cigars/rocky-patel-taa-exclusivo-2020-toro"
   },
@@ -5537,6 +7875,20 @@
     "url": "https://www.neptunecigar.com/cigars/rocky-patel-thirtieth-anniversary-limited-edition-toro-tubo-61-2--52"
   },
   {
+    "id": "cig-rocky-patel-vintage",
+    "brand": "Rocky Patel",
+    "line": "Vintage",
+    "vitola": "Vintage 1990 Robusto",
+    "url": "https://www.neptunecigar.com/cigars/rocky-patel-vintage-1990-churchill"
+  },
+  {
+    "id": "cig-rocky-patel-white-label",
+    "brand": "Rocky Patel",
+    "line": "White Label",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/rocky-patel-white-label-churchill"
+  },
+  {
     "id": "cig-rocky-patel-winter-collection",
     "brand": "Rocky Patel",
     "line": "Winter Collection",
@@ -5551,18 +7903,53 @@
     "url": "https://www.neptunecigar.com/cigars/rocky-patel-year-of-the-horse-7--48"
   },
   {
-    "id": "cig-rocky-patel-year-of-the-snake-2025",
+    "id": "cig-rocky-patel-year-of-the-snake",
     "brand": "Rocky Patel",
-    "line": "Year of the Snake 2025",
+    "line": "Year of the Snake",
     "vitola": "Toro",
     "url": "https://www.neptunecigar.com/cigars/rocky-patel-year-of-the-snake-2025-toro"
   },
   {
-    "id": "cig-rojas-street-taco-cinco-de-mayo-le-2026",
+    "id": "cig-rojas-10th-anniversary",
     "brand": "Rojas",
-    "line": "Street Taco Cinco De Mayo LE 2026",
+    "line": "10th Anniversary",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/rojas-10th-anniversary-toro-6--50"
+  },
+  {
+    "id": "cig-rojas-bluebonnets",
+    "brand": "Rojas",
+    "line": "Bluebonnets",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/rojas-bluebonnet-robusto"
+  },
+  {
+    "id": "cig-rojas-street-taco-cinco-de-mayo",
+    "brand": "Rojas",
+    "line": "Street Taco Cinco De Mayo",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/rojas-street-taco-cinco-de-mayo-le-2026-6--54"
+  },
+  {
+    "id": "cig-rojas-street-tacos-al-pastor",
+    "brand": "Rojas",
+    "line": "Street Tacos Al Pastor",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/rojas-street-tacos-al-pastor-robusto-5--50"
+  },
+  {
+    "id": "cig-rojas-street-tacos-barbacoa",
+    "brand": "Rojas",
+    "line": "Street Tacos Barbacoa",
+    "vitola": "Short",
+    "url": "https://www.neptunecigar.com/cigars/rojas-street-tacos-barbacoa-gordo-6--60"
+  },
+  {
+    "id": "cig-rojas-street-tacos-carnitas",
+    "brand": "Rojas",
+    "line": "Street Tacos Carnitas",
+    "vitola": "Short",
+    "url": "https://www.neptunecigar.com/cigars/rojas-street-tacos-carnitas-gordo-6--60"
   },
   {
     "id": "cig-room101-hit-and-run-redux",
@@ -5573,15 +7960,15 @@
   },
   {
     "id": "cig-rough-rider-senoritas",
-    "brand": "Rough",
-    "line": "Rider Senoritas",
+    "brand": "Rough Rider",
+    "line": "Senoritas",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/rough-rider-senoritas-41-4--26"
   },
   {
     "id": "cig-rough-rider-sweets",
-    "brand": "Rough",
-    "line": "Rider Sweets",
+    "brand": "Rough Rider",
+    "line": "Sweets",
     "vitola": "Connecticut",
     "url": "https://www.neptunecigar.com/cigars/rough-rider-sweets-connecticut-lonsdale"
   },
@@ -5649,6 +8036,13 @@
     "url": "https://www.neptunecigar.com/cigars/san-cristobal-clasico"
   },
   {
+    "id": "cig-san-cristobal-elegancia",
+    "brand": "San Cristobal",
+    "line": "Elegancia",
+    "vitola": "Corona",
+    "url": "https://www.neptunecigar.com/cigars/san-cristobal-elegancia-pyramid"
+  },
+  {
     "id": "cig-san-cristobal-golden-hour-angelico",
     "brand": "San Cristobal",
     "line": "Golden Hour Angelico",
@@ -5682,6 +8076,13 @@
     "line": "Ovation",
     "vitola": "Opulence",
     "url": "https://www.neptunecigar.com/cigars/san-cristobal-ovation-opulence"
+  },
+  {
+    "id": "cig-san-cristobal-quintessence",
+    "brand": "San Cristobal",
+    "line": "Quintessence",
+    "vitola": "Corona Gorda",
+    "url": "https://www.neptunecigar.com/cigars/san-cristobal-quintessence-epicure"
   },
   {
     "id": "cig-san-cristobal-revelation",
@@ -5740,6 +8141,13 @@
     "url": "https://www.neptunecigar.com/cigars/southern-draw-300-hands-maduro-petite-edmundo"
   },
   {
+    "id": "cig-southern-draw-cedrus",
+    "brand": "Southern Draw",
+    "line": "Cedrus",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/southern-draw-cedrus-belicoso-fino"
+  },
+  {
     "id": "cig-southern-draw-decennium",
     "brand": "Southern Draw",
     "line": "Decennium",
@@ -5754,11 +8162,32 @@
     "url": "https://www.neptunecigar.com/cigars/southern-draw-evening-primrose-robusto"
   },
   {
+    "id": "cig-southern-draw-firethorn",
+    "brand": "Southern Draw",
+    "line": "Firethorn",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/southern-draw-firethorn-toro"
+  },
+  {
+    "id": "cig-southern-draw-jacob-s-ladder-brimstone",
+    "brand": "Southern Draw",
+    "line": "Jacob's Ladder Brimstone",
+    "vitola": "Perfecto",
+    "url": "https://www.neptunecigar.com/cigars/southern-draw-jacob-s-ladder-brimstone-perfecto"
+  },
+  {
     "id": "cig-southern-draw-jacobs-ladder",
     "brand": "Southern Draw",
     "line": "Jacobs Ladder",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/southern-draw-jacobs-ladder-robusto"
+  },
+  {
+    "id": "cig-southern-draw-kudzu",
+    "brand": "Southern Draw",
+    "line": "Kudzu",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/southern-draw-kudzu-toro"
   },
   {
     "id": "cig-southern-draw-manzanita",
@@ -5789,11 +8218,32 @@
     "url": "https://www.neptunecigar.com/cigars/southern-draw-quickdraw-habano-corona-gorda"
   },
   {
+    "id": "cig-southern-draw-rose-of-sharon",
+    "brand": "Southern Draw",
+    "line": "Rose of Sharon",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/southern-draw-rose-of-sharon-toro"
+  },
+  {
     "id": "cig-southern-draw-rose-sharon",
     "brand": "Southern Draw",
     "line": "Rose Sharon",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/southern-draw-rose-sharon-robusto"
+  },
+  {
+    "id": "cig-tabacos-baez-serie-sf",
+    "brand": "Tabacos Baez",
+    "line": "Serie SF",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/tabacos-baez-serie-sf-robusto"
+  },
+  {
+    "id": "cig-tatascan-connecticut",
+    "brand": "Tatascan",
+    "line": "Connecticut",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/tatascan-connecticut-gordo"
   },
   {
     "id": "cig-tatascan-habano",
@@ -5808,6 +8258,13 @@
     "line": "Yellow Series",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/tatascan-yellow-series-robusto"
+  },
+  {
+    "id": "cig-tatuaje-10th-anniversary",
+    "brand": "Tatuaje",
+    "line": "10th Anniversary",
+    "vitola": "Belle Encre",
+    "url": "https://www.neptunecigar.com/cigars/tatuaje-10th-anniversary-belle-encre-tuxtla"
   },
   {
     "id": "cig-tatuaje-20th-grand-chasseur",
@@ -5831,11 +8288,32 @@
     "url": "https://www.neptunecigar.com/cigars/tatuaje-avion-13-corojo-67-8--52"
   },
   {
+    "id": "cig-tatuaje-black",
+    "brand": "Tatuaje",
+    "line": "Black",
+    "vitola": "Gorda Corona",
+    "url": "https://www.neptunecigar.com/cigars/tatuaje-black-petite-lancero"
+  },
+  {
+    "id": "cig-tatuaje-boris-karloff",
+    "brand": "Tatuaje",
+    "line": "Boris Karloff",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/tatuaje-boris-karloff-robusto-51-4--52"
+  },
+  {
     "id": "cig-tatuaje-broadleaf-limited-extra",
     "brand": "Tatuaje",
     "line": "Broadleaf Limited Extra",
     "vitola": "Lonsdale",
     "url": "https://www.neptunecigar.com/cigars/tatuaje-broadleaf-limited-lonsdale-extra"
+  },
+  {
+    "id": "cig-tatuaje-cabaiguan",
+    "brand": "Tatuaje",
+    "line": "Cabaiguan",
+    "vitola": "Cabaiguan Imperiales",
+    "url": "https://www.neptunecigar.com/cigars/tatuaje-cabaiguan-guapos-maduro-toro-grande"
   },
   {
     "id": "cig-tatuaje-capa-especial-belle-encre",
@@ -5873,13 +8351,6 @@
     "url": "https://www.neptunecigar.com/cigars/tatuaje-cojonu-2015"
   },
   {
-    "id": "cig-tatuaje-cojonu-2012",
-    "brand": "Tatuaje",
-    "line": "Cojonu 2012",
-    "vitola": "Broadleaf",
-    "url": "https://www.neptunecigar.com/cigars/tatuaje-cojonu-2012-broadleaf"
-  },
-  {
     "id": "cig-tatuaje-cojonu-2018-broadleaf",
     "brand": "Tatuaje",
     "line": "Cojonu 2018 Broadleaf",
@@ -5894,6 +8365,13 @@
     "url": "https://www.neptunecigar.com/cigars/tatuaje-cojonu-two-12s-2nd-edition"
   },
   {
+    "id": "cig-tatuaje-el-triunfador",
+    "brand": "Tatuaje",
+    "line": "El Triunfador",
+    "vitola": "Lancero",
+    "url": "https://www.neptunecigar.com/cigars/tatuaje-el-triunfador-broadleaf-original-lancero"
+  },
+  {
     "id": "cig-tatuaje-el22",
     "brand": "Tatuaje",
     "line": "El22",
@@ -5906,6 +8384,13 @@
     "line": "Escasos",
     "vitola": "E",
     "url": "https://www.neptunecigar.com/cigars/tatuaje-escasos-e"
+  },
+  {
+    "id": "cig-tatuaje-fausto",
+    "brand": "Tatuaje",
+    "line": "Fausto",
+    "vitola": "Fausto Toro",
+    "url": "https://www.neptunecigar.com/cigars/tatuaje-fausto-ft127-robusto"
   },
   {
     "id": "cig-tatuaje-havana-vi",
@@ -6097,9 +8582,16 @@
     "url": "https://www.neptunecigar.com/cigars/tatuaje-negociant-monopole-no-3-short-churchill"
   },
   {
-    "id": "cig-tatuaje-pca-2023",
+    "id": "cig-tatuaje-nuevitas",
     "brand": "Tatuaje",
-    "line": "PCA 2023",
+    "line": "Nuevitas",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/tatuaje-nuevitas-esteli"
+  },
+  {
+    "id": "cig-tatuaje-pca",
+    "brand": "Tatuaje",
+    "line": "PCA",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/tatuaje-pca-2023"
   },
@@ -6139,6 +8631,13 @@
     "url": "https://www.neptunecigar.com/cigars/tatuaje-pork-tenderloin-51-8--52"
   },
   {
+    "id": "cig-tatuaje-reserva-broadleaf",
+    "brand": "Tatuaje",
+    "line": "Reserva Broadleaf",
+    "vitola": "Reserva Broadleaf Robusto",
+    "url": "https://www.neptunecigar.com/cigars/tatuaje-reserva-broadleaf-especiales"
+  },
+  {
     "id": "cig-tatuaje-rl22",
     "brand": "Tatuaje",
     "line": "Rl22",
@@ -6153,11 +8652,18 @@
     "url": "https://www.neptunecigar.com/cigars/tatuaje-t110-corojo-43-8--52"
   },
   {
-    "id": "cig-tatuaje-taa-exclusive-2023",
+    "id": "cig-tatuaje-taa-exclusive",
     "brand": "Tatuaje",
-    "line": "TAA Exclusive 2023",
+    "line": "TAA Exclusive",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/tatuaje-taa-exclusive-2023"
+  },
+  {
+    "id": "cig-tatuaje-tattoo",
+    "brand": "Tatuaje",
+    "line": "Tattoo",
+    "vitola": "Petit Corona",
+    "url": "https://www.neptunecigar.com/cigars/tatuaje-tattoo-adivino"
   },
   {
     "id": "cig-tatuaje-the-7th-gorda",
@@ -6193,6 +8699,20 @@
     "line": "The Wolfman Redux LE Numbered of 13",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/tatuaje-the-wolfman-redux-le-numbered-box-of-13"
+  },
+  {
+    "id": "cig-tatuaje-tuxtla",
+    "brand": "Tatuaje",
+    "line": "Tuxtla",
+    "vitola": "Belle Encre",
+    "url": "https://www.neptunecigar.com/cigars/tatuaje-lomo-de-cerdo-tuxtla"
+  },
+  {
+    "id": "cig-tatuaje-unicos",
+    "brand": "Tatuaje",
+    "line": "Unicos",
+    "vitola": "Torpedo",
+    "url": "https://www.neptunecigar.com/cigars/tatuaje-miami-unicos"
   },
   {
     "id": "cig-toscano-1492",
@@ -6258,6 +8778,13 @@
     "url": "https://www.neptunecigar.com/cigars/toscano-italia"
   },
   {
+    "id": "cig-toscano-master-aged",
+    "brand": "Toscano",
+    "line": "Master Aged",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/toscano-master-aged-series-1"
+  },
+  {
     "id": "cig-toscano-modigliani",
     "brand": "Toscano",
     "line": "Modigliani",
@@ -6272,9 +8799,9 @@
     "url": "https://www.neptunecigar.com/cigars/toscano-nobile"
   },
   {
-    "id": "cig-toscano-originale-2018",
+    "id": "cig-toscano-origina",
     "brand": "Toscano",
-    "line": "Originale 2018",
+    "line": "Origina",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/toscano-originale-2018"
   },
@@ -6314,6 +8841,13 @@
     "url": "https://www.neptunecigar.com/cigars/villa-zamorano-churchill-7--48"
   },
   {
+    "id": "cig-villa-zamorano-danli",
+    "brand": "Villa Zamorano",
+    "line": "Danli",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/villa-zamorano-danli-robusto"
+  },
+  {
     "id": "cig-villa-zamorano-el",
     "brand": "Villa Zamorano",
     "line": "El",
@@ -6342,11 +8876,32 @@
     "url": "https://www.neptunecigar.com/cigars/villa-zamorano-robusto"
   },
   {
+    "id": "cig-villiger-1888",
+    "brand": "Villiger",
+    "line": "1888",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/villiger-1888-nicaragua-coronita"
+  },
+  {
+    "id": "cig-villiger-1888-nicaragua",
+    "brand": "Villiger",
+    "line": "1888 Nicaragua",
+    "vitola": "Churchill",
+    "url": "https://www.neptunecigar.com/cigars/villiger-1888-nicaragua-churchill"
+  },
+  {
     "id": "cig-villiger-black-mini-sumatra",
     "brand": "Villiger",
     "line": "Black Mini Sumatra",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/villiger-black-mini-sumatra"
+  },
+  {
+    "id": "cig-villiger-cuellar-black-forest",
+    "brand": "Villiger",
+    "line": "Cuellar Black Forest",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/villiger-cuellar-black-forest-robusto"
   },
   {
     "id": "cig-villiger-cuellar-caribe",
@@ -6363,11 +8918,39 @@
     "url": "https://www.neptunecigar.com/cigars/villiger-cuellar-connecticut-kreme-churchill"
   },
   {
+    "id": "cig-villiger-export",
+    "brand": "Villiger",
+    "line": "Export",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/villiger-export-maduro"
+  },
+  {
     "id": "cig-villiger-green-mini-caipirinha",
     "brand": "Villiger",
     "line": "Green Mini Caipirinha",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/villiger-green-mini-caipirinha"
+  },
+  {
+    "id": "cig-villiger-la-capitana",
+    "brand": "Villiger",
+    "line": "La Capitana",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/villiger-la-capitana-robusto"
+  },
+  {
+    "id": "cig-villiger-la-flor-de-ynclan",
+    "brand": "Villiger",
+    "line": "La Flor de Ynclan",
+    "vitola": "Churchill",
+    "url": "https://www.neptunecigar.com/cigars/villiger-la-flor-de-ynclan-churchill"
+  },
+  {
+    "id": "cig-villiger-la-vencedora",
+    "brand": "Villiger",
+    "line": "La Vencedora",
+    "vitola": "Toro",
+    "url": "https://www.neptunecigar.com/cigars/villiger-la-vencedora-toro"
   },
   {
     "id": "cig-villiger-limited-release-no",
@@ -6403,6 +8986,20 @@
     "line": "Red Mini Vanilla",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/villiger-red-mini-vanilla"
+  },
+  {
+    "id": "cig-villiger-san-doro-claro",
+    "brand": "Villiger",
+    "line": "San Doro Claro",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/villiger-san-doro-claro-robusto"
+  },
+  {
+    "id": "cig-villiger-san-doro-colorado",
+    "brand": "Villiger",
+    "line": "San Doro Colorado",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/villiger-san-doro-colorado-robusto"
   },
   {
     "id": "cig-villiger-sunny-mini",
@@ -6475,6 +9072,13 @@
     "url": "https://www.neptunecigar.com/cigars/warped-corto-maduro-x46-41-2--46"
   },
   {
+    "id": "cig-warped-don-reynaldo",
+    "brand": "Warped",
+    "line": "Don Reynaldo",
+    "vitola": "Robusto",
+    "url": "https://www.neptunecigar.com/cigars/warped-don-reynaldo-coronas-de-luxe"
+  },
+  {
     "id": "cig-warped-eagles-descent-especial",
     "brand": "Warped",
     "line": "Eagles Descent Especial",
@@ -6538,6 +9142,13 @@
     "url": "https://www.neptunecigar.com/cigars/warped-la-colmena-unico-especial"
   },
   {
+    "id": "cig-warped-la-hacienda",
+    "brand": "Warped",
+    "line": "La Hacienda",
+    "vitola": "Corona",
+    "url": "https://www.neptunecigar.com/cigars/warped-la-hacienda-superiores"
+  },
+  {
     "id": "cig-warped-la-relatos",
     "brand": "Warped",
     "line": "La Relatos",
@@ -6592,6 +9203,13 @@
     "line": "Serie Gran Reserva",
     "vitola": "Robusto",
     "url": "https://www.neptunecigar.com/cigars/warped-serie-gran-reserva"
+  },
+  {
+    "id": "cig-zino-honduras",
+    "brand": "Zino",
+    "line": "Honduras",
+    "vitola": "Half Corona",
+    "url": "https://www.neptunecigar.com/cigars/zino-honduras-half-corona-4--44"
   },
   {
     "id": "cig-zino-platinum-crown-series",

@@ -18,13 +18,13 @@ damo. Ova četiri toka uklanjaju te limite.
 
 | | brojka | cilj |
 |---|---|---|
-| **W1** cigara bez `flavorTags` | 1355 / 3701 (36,6 %) | < 300 |
-| **W1** wrapper `—` | 1415 | < 300 |
+| **W1** cigara bez `flavorTags` | 1355 → **70** | < 300 |
+| **W1** wrapper `—` | 1415 → **104** | < 300 |
 | **W1** ime linije izvedeno iz URL sluga | 1692 → **0** (metrika precizirana) | < 200 |
-| **W1** najveći profilni bucket | 1355 (36,6 %) | < 15 % |
-| **W2** boca u profilnim bucketima ≥ 5 | 440 / 930 (47,3 %) | < 15 % |
-| **W3** cijena s oznakom datuma preuzimanja | 0 / 3427 | 100 % |
-| **W4** imena pića sa sirovim repom scrapea | 78 / 930 | 0 |
+| **W1** najveći profilni bucket | 1355 (36,6 %) → **239 (7,2 %)** | < 15 % |
+| **W2** boca u profilnim bucketima ≥ 5 | 440 / 930 (47,3 %) → **7,3 %** | < 15 % |
+| **W3** cijena s oznakom datuma preuzimanja | 0 / 3427 → **100 %** | 100 % |
+| **W4** imena pića sa sirovim repom scrapea | 78 / 930 → **0** | 0 |
 
 Zašto to boli: 1355 cigara bez ijednog taga ima zadano tijelo 3 / snagu 3, pa im
 engine **matematički mora** dati isti prijedlog. Isto s druge strane — 37 od 70
@@ -110,22 +110,24 @@ Ne pokreći ga kao rješenje W1.
 
 ### Korak 2 — 🌐 Neptune scrape (Cursor)
 
-- [ ] `scripts/build-neptune-worklist.py` (ovdje): id + Neptune URL za svaki
-      zapis bez tagova → `scripts/output/neptune_worklist.json`
-- [ ] 🌐 `scripts/scrape-neptune-profiles.py` (Cursor): Playwright, chromium,
+- [x] `scripts/build-neptune-worklist.py` (ovdje): id + Neptune URL za zapise
+      bez tagova **ili** `profileEstimated` → `scripts/output/neptune_worklist.json`
+- [x] 🌐 `scripts/scrape-neptune-profiles.py` (Cursor): Playwright, chromium,
       pauza 1,5–2 s, jedna sesija; po stranici izvuci: opis, `Strength`,
       wrapper/binder/filler, zemlju → `scripts/output/neptune_raw.json`
-- [ ] Sirovi JSON commitaj — da se merge može ponoviti bez ponovnog scrapea
+- [x] Sirovi JSON commitaj — da se merge može ponoviti bez ponovnog scrapea
 
 ### Korak 3 — Merge (offline, ovdje)
 
-- [ ] `scripts/merge-neptune-profiles.py`: EN riječi trgovine → postojeći
+- [x] `scripts/merge-neptune-profiles.py`: EN riječi trgovine → postojeći
       rječnik tagova (iskoristi inverz `describe-lines.TAG_EN`, isti pristup kao
-      `merge-flavor-enrichment.py`)
-- [ ] `strength`/`body` iz Neptuneove ocjene → `strengthFromShop: true`
-- [ ] `profileEstimated: false` **samo** kad tagovi dolaze iz teksta trgovine
-- [ ] Idempotentno po id-u; ne dira zapise koji već imaju tagove
-- [ ] Provjera: `no_flavor_tags` < 300, `largest_profile_share_pct` < 15 %
+      `merge-flavor-enrichment.py`); **overwrite kad `profileEstimated`**
+- [x] `strength`/`body` iz Neptuneove ocjene → `strengthFromShop: true`
+- [x] `profileEstimated: false` **samo** kad tagovi dolaze iz teksta trgovine
+      (osim `catalogSource=="market"`)
+- [x] Idempotentno po id-u; kurirani (non-estimated) tagovi netaknuti
+- [x] Provjera: `no_flavor_tags` < 300, `largest_profile_share_pct` < 15 %
+  <!-- 2026-08-06: nakon Neptune scrape + stub reprofile s ORIGIN_ACCENT → 7.2% -->
 
 **Gotovo kad:** najveći profilni bucket < 15 % kataloga i `npm test` zelen.
 
