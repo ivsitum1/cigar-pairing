@@ -25,8 +25,12 @@ on:
 permissions:
   contents: write
 
+# NE zove se "pages": run 31126813954 zaglavio je u stanju iz kojeg ga GitHub
+# ne da ni otkazati ("Cannot cancel a workflow re-run that has not yet queued")
+# i drži tu grupu, pa novi runovi u njoj nisu ni nastajali — merge PR-a #143
+# nije pokrenuo deploy. Vlastito ime grupe zaobilazi zombija.
 concurrency:
-  group: pages
+  group: pages-branch-deploy
   cancel-in-progress: true
 
 jobs:
