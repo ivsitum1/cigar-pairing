@@ -74992,72 +74992,6 @@
     }
   },
   {
-    "id": "cig-davidoff-winston",
-    "brand": "Davidoff",
-    "line": "Winston",
-    "vitola": "Churchill",
-    "format": "47 x 178mm",
-    "country": "Dominikanska Republika",
-    "wrapper": "Ecuadorian",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [
-      "papar",
-      "orasasti",
-      "karamela",
-      "citrus",
-      "drvo",
-      "duhan",
-      "slatko"
-    ],
-    "profileEstimated": true,
-    "formatEstimated": true,
-    "smokeTimeMin": 84,
-    "priceEUR": null,
-    "priceUrl": "https://www.neptunecigar.com/cigars/davidoff-winston-churchill-le-2025-churchill",
-    "vitolas": [
-      {
-        "name": "Churchill",
-        "format": "47 x 178mm",
-        "smokeTimeMin": 84,
-        "priceEUR": null,
-        "url": "https://www.neptunecigar.com/cigars/davidoff-winston-churchill-le-2025-churchill",
-        "shape": "Churchill",
-        "ring": 47,
-        "lengthMM": 178,
-        "regionLinks": {
-          "USA": {
-            "shop": "Neptune Cigar",
-            "url": "https://www.neptunecigar.com/cigars/davidoff-winston-churchill-le-2025-churchill"
-          }
-        }
-      }
-    ],
-    "markets": [
-      "USA",
-      "WW"
-    ],
-    "regionLinks": {
-      "USA": {
-        "shop": "Neptune Cigar",
-        "url": "https://www.neptunecigar.com/cigars/davidoff-winston-churchill-le-2025-churchill"
-      }
-    },
-    "catalogSource": "market",
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Dominikanska Republika — linija iz trgovine Neptune Cigar.",
-      "en": "Dominican Republic — line from Neptune Cigar."
-    },
-    "sourceUrls": [
-      "https://www.neptunecigar.com/cigars/davidoff-winston-churchill-le-2025-churchill"
-    ],
-    "wrapperOrigin": "Ekvador",
-    "binderOrigin": "Meksiko",
-    "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
-  },
-  {
     "id": "cig-davidoff-winston-churchill",
     "brand": "Davidoff",
     "line": "Winston Churchill",
@@ -75085,8 +75019,8 @@
       "en": "Ecuadorian habano wrapper (Dominican Republic); balanced, medium in strength. Notes of coffee, dark fruit, spice. Churchill tribute toro; refined complexity."
     },
     "markets": [
-      "HR",
       "EU",
+      "HR",
       "USA",
       "WW"
     ],
@@ -75129,6 +75063,10 @@
           "EU": {
             "shop": "La Couronne",
             "url": "https://cigarpassion.ch/en/boutique/cigares-dominicains/davidoff/davidoff-winston-churchill/davidoff-winston-churchill-churchill/"
+          },
+          "USA": {
+            "shop": "Neptune Cigar",
+            "url": "https://www.neptunecigar.com/cigars/davidoff-winston-churchill-le-2025-churchill"
           }
         }
       },
@@ -75193,7 +75131,11 @@
     "isPuro": false,
     "sourceUrls": [
       "https://www.neptunecigar.com/cigars/davidoff-winston-churchill-petit-corona"
-    ]
+    ],
+    "flavoured": false,
+    "strengthFromShop": true,
+    "formatEstimated": true,
+    "profileEstimated": true
   },
   {
     "id": "cig-davidoff-winston-churchill-the-late-hour",
@@ -240323,9 +240265,9 @@
     "strengthFromShop": true
   },
   {
-    "id": "cig-toscano-origina",
+    "id": "cig-toscano-originale",
     "brand": "Toscano",
-    "line": "Origina",
+    "line": "Originale",
     "vitola": "Robusto",
     "format": "50 x 124mm",
     "country": "Italija",
