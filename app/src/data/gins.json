@@ -8,8 +8,8 @@
     "body": 3,
     "sweetness": 1,
     "flavorTags": [
-      "cvjetno",
-      "citrus",
+      "borovica",
+      "tamno-voce",
       "zacini"
     ],
     "qualityScore": 9.2,
@@ -45,8 +45,8 @@
     "body": 3,
     "sweetness": 1,
     "flavorTags": [
-      "cvjetno",
-      "citrus",
+      "borovica",
+      "tamno-voce",
       "zacini"
     ],
     "qualityScore": 9.2,
@@ -87,8 +87,8 @@
     "body": 3,
     "sweetness": 1,
     "flavorTags": [
-      "cvjetno",
-      "citrus",
+      "borovica",
+      "tamno-voce",
       "zacini"
     ],
     "qualityScore": 9.2,
@@ -129,9 +129,9 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
+      "biljno",
       "cvjetno",
-      "citrus",
-      "zacini"
+      "kamilica"
     ],
     "qualityScore": 8.8,
     "abv": 40.0,
@@ -171,9 +171,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "cvjetno",
+      "biljno",
       "citrus",
-      "zacini"
+      "papar"
     ],
     "qualityScore": 8.6,
     "abv": 40.0,
@@ -213,9 +213,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "cvjetno",
+      "biljno",
       "citrus",
-      "zacini"
+      "cvjetno"
     ],
     "qualityScore": 8.6,
     "abv": 40.0,
@@ -256,7 +256,8 @@
     "sweetness": 2,
     "flavorTags": [
       "biljno",
-      "citrus"
+      "travnato",
+      "zacini"
     ],
     "qualityScore": 8.5,
     "abv": 42.7,
@@ -292,7 +293,8 @@
     "sweetness": 2,
     "flavorTags": [
       "biljno",
-      "citrus"
+      "travnato",
+      "zacini"
     ],
     "qualityScore": 8.5,
     "abv": 42.7,
@@ -328,7 +330,8 @@
     "sweetness": 2,
     "flavorTags": [
       "biljno",
-      "citrus"
+      "travnato",
+      "zacini"
     ],
     "qualityScore": 8.5,
     "abv": 42.7,
@@ -364,7 +367,8 @@
     "sweetness": 2,
     "flavorTags": [
       "biljno",
-      "citrus"
+      "travnato",
+      "zacini"
     ],
     "qualityScore": 8.5,
     "abv": 42.7,
@@ -399,9 +403,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "cvjetno",
       "citrus",
-      "zacini"
+      "kamilica",
+      "travnato"
     ],
     "qualityScore": 8.5,
     "abv": 40.0,
@@ -441,9 +445,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "travnato",
       "citrus",
-      "biljno"
+      "cvjetno",
+      "travnato"
     ],
     "qualityScore": 8.4,
     "abv": 40.0,
@@ -483,9 +487,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "cvjetno",
+      "biljno",
       "citrus",
-      "zacini"
+      "papar"
     ],
     "qualityScore": 8.3,
     "abv": 45.7,
@@ -523,9 +527,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "cvjetno",
+      "biljno",
       "citrus",
-      "zacini"
+      "papar"
     ],
     "qualityScore": 8.3,
     "abv": 54.5,
@@ -563,9 +567,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "travnato",
+      "borovica",
       "citrus",
-      "biljno"
+      "travnato"
     ],
     "qualityScore": 8.3,
     "abv": 40.0,
@@ -605,9 +609,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "travnato",
+      "borovica",
       "citrus",
-      "biljno"
+      "travnato"
     ],
     "qualityScore": 8.3,
     "abv": 41.6,
@@ -647,7 +651,7 @@
     "body": 4,
     "sweetness": 1,
     "flavorTags": [
-      "cvjetno",
+      "borovica",
       "citrus",
       "zacini"
     ],
@@ -723,9 +727,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "travnato",
       "biljno",
-      "citrus"
+      "borovica",
+      "korijen"
     ],
     "qualityScore": 8.2,
     "abv": 40.0,
@@ -765,9 +769,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "travnato",
       "biljno",
-      "citrus"
+      "borovica",
+      "korijen"
     ],
     "qualityScore": 8.2,
     "abv": 41.2,
@@ -806,8 +810,8 @@
     "sweetness": 3,
     "flavorTags": [
       "cvjetno",
-      "citrus",
-      "zacini"
+      "kamilica",
+      "med"
     ],
     "qualityScore": 8.1,
     "abv": 43.0,
@@ -842,9 +846,9 @@
     "body": 2,
     "sweetness": 2,
     "flavorTags": [
-      "cvjetno",
       "citrus",
-      "zacini"
+      "cvjetno",
+      "kamilica"
     ],
     "qualityScore": 8.1,
     "abv": 43.0,
@@ -880,8 +884,8 @@
     "sweetness": 3,
     "flavorTags": [
       "cvjetno",
-      "citrus",
-      "zacini"
+      "kamilica",
+      "slatko"
     ],
     "qualityScore": 8.1,
     "abv": 43.0,
@@ -916,8 +920,8 @@
     "body": 4,
     "sweetness": 2,
     "flavorTags": [
-      "cvjetno",
       "citrus",
+      "hrast",
       "zacini"
     ],
     "qualityScore": 8.0,
@@ -953,7 +957,7 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "cvjetno",
+      "biljno",
       "citrus",
       "zacini"
     ],
@@ -990,7 +994,7 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "cvjetno",
+      "biljno",
       "citrus",
       "zacini"
     ],
@@ -1068,9 +1072,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "travnato",
       "citrus",
-      "biljno"
+      "cvjetno",
+      "travnato"
     ],
     "qualityScore": 7.8,
     "abv": 40.0,
@@ -1112,7 +1116,8 @@
     "sweetness": 2,
     "flavorTags": [
       "biljno",
-      "citrus"
+      "citrus",
+      "cvjetno"
     ],
     "qualityScore": 7.8,
     "abv": 41.0,
@@ -1148,7 +1153,8 @@
     "sweetness": 2,
     "flavorTags": [
       "biljno",
-      "citrus"
+      "citrus",
+      "travnato"
     ],
     "qualityScore": 7.8,
     "abv": 41.0,
@@ -1184,7 +1190,8 @@
     "sweetness": 2,
     "flavorTags": [
       "biljno",
-      "citrus"
+      "citrus",
+      "travnato"
     ],
     "qualityScore": 7.8,
     "abv": 41.0,
@@ -1220,7 +1227,8 @@
     "sweetness": 2,
     "flavorTags": [
       "biljno",
-      "citrus"
+      "citrus",
+      "voce"
     ],
     "qualityScore": 7.8,
     "abv": 41.0,
@@ -1255,9 +1263,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "cvjetno",
-      "citrus",
-      "zacini"
+      "anis",
+      "biljno",
+      "citrus"
     ],
     "qualityScore": 7.7,
     "abv": 40.0,
@@ -1295,9 +1303,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "cvjetno",
-      "citrus",
-      "zacini"
+      "anis",
+      "biljno",
+      "citrus"
     ],
     "qualityScore": 7.7,
     "abv": 44.0,
@@ -1332,9 +1340,9 @@
     "body": 4,
     "sweetness": 2,
     "flavorTags": [
-      "cvjetno",
+      "anis",
       "citrus",
-      "zacini"
+      "hrast"
     ],
     "qualityScore": 7.7,
     "abv": 45.2,
@@ -1369,9 +1377,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
+      "biljno",
       "cvjetno",
-      "citrus",
-      "zacini"
+      "korijen"
     ],
     "qualityScore": 7.6,
     "abv": 40.0,
@@ -1411,9 +1419,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
+      "biljno",
       "cvjetno",
-      "citrus",
-      "zacini"
+      "korijen"
     ],
     "qualityScore": 7.6,
     "abv": 40.0,
@@ -1453,9 +1461,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
+      "biljno",
       "cvjetno",
-      "citrus",
-      "zacini"
+      "korijen"
     ],
     "qualityScore": 7.6,
     "abv": 42.0,
@@ -1495,8 +1503,8 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "cvjetno",
-      "citrus",
+      "biljno",
+      "suho-voce",
       "zacini"
     ],
     "qualityScore": 7.6,
@@ -1532,8 +1540,8 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "cvjetno",
       "citrus",
+      "kakao",
       "zacini"
     ],
     "qualityScore": 7.6,
@@ -1569,8 +1577,8 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "cvjetno",
-      "citrus",
+      "biljno",
+      "suho-voce",
       "zacini"
     ],
     "qualityScore": 7.6,
@@ -1606,8 +1614,8 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "cvjetno",
-      "citrus",
+      "biljno",
+      "suho-voce",
       "zacini"
     ],
     "qualityScore": 7.6,
@@ -1643,9 +1651,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "travnato",
       "citrus",
-      "biljno"
+      "cvjetno",
+      "travnato"
     ],
     "qualityScore": 7.5,
     "abv": 41.3,
@@ -1685,9 +1693,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "travnato",
+      "borovica",
       "citrus",
-      "biljno"
+      "travnato"
     ],
     "qualityScore": 7.5,
     "abv": 43.1,
@@ -1723,8 +1731,8 @@
     "sweetness": 1,
     "flavorTags": [
       "biljno",
-      "citrus",
-      "zacini"
+      "borovica",
+      "citrus"
     ],
     "qualityScore": 7.4,
     "abv": 58.5,
@@ -1762,8 +1770,8 @@
     "body": 4,
     "sweetness": 1,
     "flavorTags": [
-      "cvjetno",
-      "citrus",
+      "borovica",
+      "korijen",
       "zacini"
     ],
     "qualityScore": 7.4,
@@ -1802,9 +1810,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
+      "biljno",
       "cvjetno",
-      "citrus",
-      "zacini"
+      "travnato"
     ],
     "qualityScore": 7.4,
     "abv": 42.4,
@@ -1844,9 +1852,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "travnato",
+      "borovica",
       "citrus",
-      "biljno"
+      "korijen"
     ],
     "qualityScore": 7.3,
     "abv": 46.0,
@@ -1881,9 +1889,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "travnato",
+      "borovica",
       "citrus",
-      "biljno"
+      "korijen"
     ],
     "qualityScore": 7.3,
     "abv": 46.0,
@@ -1918,9 +1926,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "travnato",
+      "borovica",
       "citrus",
-      "biljno"
+      "zacini"
     ],
     "qualityScore": 7.2,
     "abv": 40.0,
@@ -1960,7 +1968,7 @@
     "body": 4,
     "sweetness": 2,
     "flavorTags": [
-      "cvjetno",
+      "biljno",
       "citrus",
       "zacini"
     ],
@@ -2000,8 +2008,8 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "cvjetno",
-      "citrus",
+      "biljno",
+      "tamno-voce",
       "zacini"
     ],
     "qualityScore": 7.0,
@@ -2040,9 +2048,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "cvjetno",
-      "citrus",
-      "zacini"
+      "biljno",
+      "borovica",
+      "citrus"
     ],
     "qualityScore": 7.0,
     "abv": 40.0,
@@ -2080,9 +2088,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "cvjetno",
-      "citrus",
-      "zacini"
+      "anis",
+      "biljno",
+      "citrus"
     ],
     "qualityScore": 7.0,
     "abv": 40.0,
@@ -2120,9 +2128,9 @@
     "body": 3,
     "sweetness": 1,
     "flavorTags": [
-      "cvjetno",
+      "biljno",
       "citrus",
-      "zacini"
+      "travnato"
     ],
     "qualityScore": 7.0,
     "abv": 40.0,
@@ -2160,9 +2168,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "cvjetno",
+      "biljno",
       "citrus",
-      "zacini"
+      "cvjetno"
     ],
     "qualityScore": 7.0,
     "abv": 40.0,
@@ -2200,9 +2208,9 @@
     "body": 2,
     "sweetness": 2,
     "flavorTags": [
-      "cvjetno",
+      "biljno",
       "citrus",
-      "zacini"
+      "cvjetno"
     ],
     "qualityScore": 7.0,
     "abv": 40.0,
@@ -2240,9 +2248,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "cvjetno",
       "citrus",
-      "zacini"
+      "cvjetno",
+      "papar"
     ],
     "qualityScore": 7.0,
     "abv": 47.0,
@@ -2280,9 +2288,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "travnato",
-      "citrus",
-      "cvjetno"
+      "biljno",
+      "borovica",
+      "travnato"
     ],
     "qualityScore": 6.9,
     "abv": 40.0,
@@ -2320,9 +2328,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "travnato",
-      "citrus",
-      "cvjetno"
+      "biljno",
+      "borovica",
+      "citrus"
     ],
     "qualityScore": 6.8,
     "abv": 47.0,
@@ -2357,9 +2365,9 @@
     "body": 4,
     "sweetness": 1,
     "flavorTags": [
-      "travnato",
+      "borovica",
       "citrus",
-      "cvjetno"
+      "zacini"
     ],
     "qualityScore": 6.8,
     "abv": 57.0,
@@ -2394,9 +2402,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "travnato",
-      "citrus",
-      "cvjetno"
+      "biljno",
+      "kava",
+      "zacini"
     ],
     "qualityScore": 6.8,
     "abv": 47.0,
@@ -2431,9 +2439,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "travnato",
-      "citrus",
-      "cvjetno"
+      "biljno",
+      "borovica",
+      "citrus"
     ],
     "qualityScore": 6.8,
     "abv": 47.0,
@@ -2468,9 +2476,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "travnato",
-      "citrus",
-      "cvjetno"
+      "biljno",
+      "borovica",
+      "citrus"
     ],
     "qualityScore": 6.8,
     "abv": 49.3,
@@ -2505,9 +2513,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "travnato",
+      "biljno",
       "citrus",
-      "cvjetno"
+      "papar"
     ],
     "qualityScore": 6.8,
     "abv": 47.0,
