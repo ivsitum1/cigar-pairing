@@ -199,7 +199,10 @@ def merge_one(cigar: dict, raw: dict) -> bool:
         tags = tags_from_text(desc)
         if len(tags) >= 2:
             cigar["flavorTags"] = tags
-            cigar["profileEstimated"] = False
+            # Market records are inherently shop-sourced, so their profile
+            # remains "estimated" even after Neptune tag enrichment.
+            if cigar.get("catalogSource") != "market":
+                cigar["profileEstimated"] = False
             changed = True
 
     return changed

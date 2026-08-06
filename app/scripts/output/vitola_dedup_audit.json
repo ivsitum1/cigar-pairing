@@ -104,7 +104,26 @@
         },
         {
           "name": "Robusto",
+          "format": "52 x 152mm"
+        },
+        {
+          "name": "Robusto",
           "format": "60 x 152mm"
+        }
+      ]
+    },
+    {
+      "id": "cig-cavalier-geneve-cavalier-geneve",
+      "brand": "Cavalier Genève",
+      "line": "Cavalier Geneve",
+      "conflict": [
+        {
+          "name": "Robusto",
+          "format": "47 x 165mm"
+        },
+        {
+          "name": "Robusto",
+          "format": "50 x 159mm"
         }
       ]
     },
@@ -124,6 +143,21 @@
       ]
     },
     {
+      "id": "cig-crowned-heads-blood-medicine",
+      "brand": "Crowned Heads",
+      "line": "Blood Medicine",
+      "conflict": [
+        {
+          "name": "Toro",
+          "format": "52 x 152mm"
+        },
+        {
+          "name": "Toro",
+          "format": "54 x 152mm"
+        }
+      ]
+    },
+    {
       "id": "cig-cumpay-short",
       "brand": "Cumpay",
       "line": "Short",
@@ -133,9 +167,9 @@
       "price": 11.9
     },
     {
-      "id": "cig-davidoff-chef-s-edition-2025",
+      "id": "cig-davidoff-chef-s-edition",
       "brand": "Davidoff",
-      "line": "Chef's Edition 2025",
+      "line": "Chef's Edition",
       "conflict": [
         {
           "name": "Toro",
@@ -143,7 +177,7 @@
         },
         {
           "name": "Toro",
-          "format": "53 x 152mm"
+          "format": "54 x 152mm"
         }
       ]
     },
@@ -1206,11 +1240,18 @@
       "id_b": "cig-asylum-pca-exclusive-2023-1118"
     },
     {
-      "brand": "Asylum",
-      "line_a": "PCA Exclusive",
-      "id_a": "cig-asylum-pca-exclusive",
-      "line_b": "PCA Exclusive 2025",
-      "id_b": "cig-asylum-pca-exclusive-2025"
+      "brand": "Avo",
+      "line_a": "Improvisation",
+      "id_a": "cig-avo-improvisation",
+      "line_b": "Improvisation 30 Year LE",
+      "id_b": "cig-avo-improvisation-30-year-le"
+    },
+    {
+      "brand": "Avo",
+      "line_a": "Improvisation",
+      "id_a": "cig-avo-improvisation",
+      "line_b": "Improvisation LE",
+      "id_b": "cig-avo-improvisation-le"
     },
     {
       "brand": "Balmoral",
@@ -1239,13 +1280,6 @@
       "id_a": "cig-blackbird-superb",
       "line_b": "Superb Pressed",
       "id_b": "cig-blackbird-superb-pressed"
-    },
-    {
-      "brand": "Brick House",
-      "line_a": "Bricktoberfest",
-      "id_a": "cig-brick-house-bricktoberfest",
-      "line_b": "Bricktoberfest 2025",
-      "id_b": "cig-brick-house-bricktoberfest-2025"
     },
     {
       "brand": "Caldwell",
@@ -1297,55 +1331,6 @@
       "id_b": "cig-cao-fasa-sombra"
     },
     {
-      "brand": "Casa",
-      "line_a": "Cuevas",
-      "id_a": "cig-casa-cuevas",
-      "line_b": "Cuevas La Mandarria",
-      "id_b": "cig-casa-cuevas-la-mandarria"
-    },
-    {
-      "brand": "Casa",
-      "line_a": "Cuevas",
-      "id_a": "cig-casa-cuevas",
-      "line_b": "Cuevas Limited Edition Habano Flaco",
-      "id_b": "cig-casa-cuevas-limited-edition-habano-flaco"
-    },
-    {
-      "brand": "Casa",
-      "line_a": "Cuevas",
-      "id_a": "cig-casa-cuevas",
-      "line_b": "Cuevas Limited Edition Maduro Flaco",
-      "id_b": "cig-casa-cuevas-limited-edition-maduro-flaco"
-    },
-    {
-      "brand": "Casa",
-      "line_a": "Cuevas",
-      "id_a": "cig-casa-cuevas",
-      "line_b": "Cuevas Patrimonio Gordo",
-      "id_b": "cig-casa-cuevas-patrimonio-gordo"
-    },
-    {
-      "brand": "Casa",
-      "line_a": "Cuevas",
-      "id_a": "cig-casa-cuevas",
-      "line_b": "Cuevas Reserva",
-      "id_b": "cig-casa-cuevas-reserva"
-    },
-    {
-      "brand": "Casa",
-      "line_a": "Cuevas",
-      "id_a": "cig-casa-cuevas",
-      "line_b": "Cuevas Sangre Nueva",
-      "id_b": "cig-casa-cuevas-sangre-nueva"
-    },
-    {
-      "brand": "Casa",
-      "line_a": "de Torres",
-      "id_a": "cig-casa-de-torres",
-      "line_b": "de Torres Edición Famoso",
-      "id_b": "cig-casa-de-torres-edicion-famoso"
-    },
-    {
       "brand": "Casa Fernández",
       "line_a": "Miami Reserva",
       "id_a": "cig-casa-fernandez-miami-reserva",
@@ -1367,11 +1352,46 @@
       "id_b": "cig-casdagli-villa-exquisito"
     },
     {
+      "brand": "Cavalier Genève",
+      "line_a": "Cavalier Geneve",
+      "id_a": "cig-cavalier-geneve-cavalier-geneve",
+      "line_b": "Cavalier Geneve 10th Anniversary",
+      "id_b": "cig-cavalier-geneve-cavalier-geneve-10th-anniversary"
+    },
+    {
+      "brand": "Cavalier Genève",
+      "line_a": "Cavalier Geneve",
+      "id_a": "cig-cavalier-geneve-cavalier-geneve",
+      "line_b": "Cavalier Geneve Black Series II",
+      "id_b": "cig-cavalier-geneve-cavalier-geneve-black-series-ii"
+    },
+    {
+      "brand": "Cavalier Genève",
+      "line_a": "Cavalier Geneve",
+      "id_a": "cig-cavalier-geneve-cavalier-geneve",
+      "line_b": "Cavalier Geneve Prospektor",
+      "id_b": "cig-cavalier-geneve-cavalier-geneve-prospektor"
+    },
+    {
+      "brand": "Cavalier Genève",
+      "line_a": "Cavalier Geneve",
+      "id_a": "cig-cavalier-geneve-cavalier-geneve",
+      "line_b": "Cavalier Geneve the Green Jacket",
+      "id_b": "cig-cavalier-geneve-cavalier-geneve-the-green-jacket"
+    },
+    {
       "brand": "Crowned Heads",
-      "line_a": "Blood Medicine Limited Edition 2025",
-      "id_a": "cig-crowned-heads-blood-medicine-limited-edition-2025",
+      "line_a": "Blood Medicine",
+      "id_a": "cig-crowned-heads-blood-medicine",
       "line_b": "Blood Medicine Limited Edition 2025 B Positive",
       "id_b": "cig-crowned-heads-blood-medicine-limited-edition-2025-b-positive"
+    },
+    {
+      "brand": "Crowned Heads",
+      "line_a": "Blood Medicine",
+      "id_a": "cig-crowned-heads-blood-medicine",
+      "line_b": "Blood Medicine Limited Edition 2026 B Positive",
+      "id_b": "cig-crowned-heads-blood-medicine-limited-edition-2026-b-positive"
     },
     {
       "brand": "Crowned Heads",
@@ -1391,8 +1411,8 @@
       "brand": "Crowned Heads",
       "line_a": "Four Kicks",
       "id_a": "cig-crowned-heads-four-kicks",
-      "line_b": "Four Kicks Mule Kick LE 2022",
-      "id_b": "cig-crowned-heads-four-kicks-mule-kick-le-2022"
+      "line_b": "Four Kicks Mule Kick",
+      "id_b": "cig-crowned-heads-four-kicks-mule-kick"
     },
     {
       "brand": "Crowned Heads",
@@ -1412,8 +1432,8 @@
       "brand": "Crowned Heads",
       "line_a": "Juarez",
       "id_a": "cig-crowned-heads-juarez",
-      "line_b": "Juarez Bulldozer LE 2025",
-      "id_b": "cig-crowned-heads-juarez-bulldozer-le-2025"
+      "line_b": "Juarez Bulldozer",
+      "id_b": "cig-crowned-heads-juarez-bulldozer"
     },
     {
       "brand": "Crowned Heads",
@@ -1433,8 +1453,8 @@
       "brand": "Crowned Heads",
       "line_a": "Juarez",
       "id_a": "cig-crowned-heads-juarez",
-      "line_b": "Juarez Mini Dozer LE 2026",
-      "id_b": "cig-crowned-heads-juarez-mini-dozer-le-2026"
+      "line_b": "Juarez Mini Dozer",
+      "id_b": "cig-crowned-heads-juarez-mini-dozer"
     },
     {
       "brand": "Crowned Heads",
@@ -1454,8 +1474,8 @@
       "brand": "Crowned Heads",
       "line_a": "Mil Dias",
       "id_a": "cig-crowned-heads-mil-dias",
-      "line_b": "Mil Dias Des Deux LE 2025",
-      "id_b": "cig-crowned-heads-mil-dias-des-deux-le-2025"
+      "line_b": "Mil Dias Des Deux",
+      "id_b": "cig-crowned-heads-mil-dias-des-deux"
     },
     {
       "brand": "Crowned Heads",
@@ -1470,6 +1490,34 @@
       "id_a": "cig-cuesta-rey-centenario",
       "line_b": "Centenario No. 60",
       "id_b": "cig-cuesta-rey-centenario-no-60"
+    },
+    {
+      "brand": "Davidoff",
+      "line_a": "Royal Release",
+      "id_a": "cig-davidoff-royal-release",
+      "line_b": "Royal Release Salomones",
+      "id_b": "cig-davidoff-royal-release-salomones"
+    },
+    {
+      "brand": "Davidoff",
+      "line_a": "Winston",
+      "id_a": "cig-davidoff-winston",
+      "line_b": "Winston Churchill",
+      "id_b": "cig-davidoff-winston-churchill"
+    },
+    {
+      "brand": "Davidoff",
+      "line_a": "Winston",
+      "id_a": "cig-davidoff-winston",
+      "line_b": "Winston Churchill The Late Hour",
+      "id_b": "cig-davidoff-winston-churchill-the-late-hour"
+    },
+    {
+      "brand": "Davidoff",
+      "line_a": "Winston",
+      "id_a": "cig-davidoff-winston",
+      "line_b": "Winston Late Hour",
+      "id_b": "cig-davidoff-winston-late-hour"
     },
     {
       "brand": "Davidoff",
@@ -1773,13 +1821,6 @@
       "id_b": "cig-eiroa-dark-30th-anniversary-11-18"
     },
     {
-      "brand": "Eiroa",
-      "line_a": "PCA Exclusive",
-      "id_a": "cig-eiroa-pca-exclusive",
-      "line_b": "PCA Exclusive 2025",
-      "id_b": "cig-eiroa-pca-exclusive-2025"
-    },
-    {
       "brand": "Eladio Diaz",
       "line_a": "La Diana",
       "id_a": "cig-eladio-diaz-la-diana",
@@ -1885,6 +1926,13 @@
       "id_b": "cig-gran-habano-corojo-no-5-maduro"
     },
     {
+      "brand": "Griffin's",
+      "line_a": "Nicaragua",
+      "id_a": "cig-griffin-s-nicaragua",
+      "line_b": "Nicaragua Special Edition",
+      "id_b": "cig-griffin-s-nicaragua-special-edition"
+    },
+    {
       "brand": "Gurkha",
       "line_a": "Cellar Reserve 15 Years",
       "id_a": "cig-gurkha-cellar-reserve-15-years",
@@ -1911,6 +1959,13 @@
       "id_a": "cig-helvada-medio-filler",
       "line_b": "Medio Filler 1973 Maduro",
       "id_b": "cig-helvada-medio-filler-1973-maduro"
+    },
+    {
+      "brand": "Henk Maori",
+      "line_a": "Maori La Dona",
+      "id_a": "cig-henk-maori-la-dona",
+      "line_b": "Maori La Dona Edición Limitada",
+      "id_b": "cig-henk-maori-maori-la-dona-edicion-limitada"
     },
     {
       "brand": "HR Cigars",
@@ -2046,6 +2101,20 @@
       "id_b": "cig-joya-de-nicaragua-cuatro-cinco-reserva-especial"
     },
     {
+      "brand": "Kristoff",
+      "line_a": "GC Signature Series",
+      "id_a": "cig-kristoff-gc-signature-series",
+      "line_b": "GC Signature Series Intertabac",
+      "id_b": "cig-kristoff-gc-signature-series-intertabac"
+    },
+    {
+      "brand": "Kristoff",
+      "line_a": "GC Signature Series",
+      "id_a": "cig-kristoff-gc-signature-series",
+      "line_b": "GC Signature Series PCA",
+      "id_b": "cig-kristoff-gc-signature-series-pca"
+    },
+    {
       "brand": "La Aurora",
       "line_a": "107",
       "id_a": "cig-la-aurora-107",
@@ -2075,10 +2144,10 @@
     },
     {
       "brand": "La Aurora",
-      "line_a": "Hors d'Age",
-      "id_a": "cig-la-aurora-hors-d-age",
-      "line_b": "Hors d'Age 2024",
-      "id_b": "cig-la-aurora-hors-d-age-2024"
+      "line_a": "Puro Vintage",
+      "id_a": "cig-la-aurora-puro-vintage",
+      "line_b": "Puro Vintage 2007 Salomon",
+      "id_b": "cig-la-aurora-puro-vintage-2007-salomon"
     },
     {
       "brand": "La Flor Dominicana",
@@ -2152,6 +2221,13 @@
     },
     {
       "brand": "Macanudo",
+      "line_a": "Limited Edition",
+      "id_a": "cig-macanudo-limited-edition",
+      "line_b": "Limited Edition Vintage",
+      "id_b": "cig-macanudo-limited-edition-vintage"
+    },
+    {
+      "brand": "Macanudo",
       "line_a": "Maduro",
       "id_a": "cig-macanudo-maduro",
       "line_b": "Maduro Baron De Rothschild",
@@ -2177,6 +2253,62 @@
       "id_a": "cig-macanudo-maduro",
       "line_b": "Maduro Vintage 1997",
       "id_b": "cig-macanudo-maduro-vintage-1997"
+    },
+    {
+      "brand": "Marca Fina",
+      "line_a": "Fina Brazil",
+      "id_a": "cig-marca-fina-brazil",
+      "line_b": "Fina Brazil Edición Limitada",
+      "id_b": "cig-marca-fina-fina-brazil-edicion-limitada"
+    },
+    {
+      "brand": "Marca Fina",
+      "line_a": "Fina Dominicana",
+      "id_a": "cig-marca-fina-dominicana",
+      "line_b": "Fina Dominicana Edicion Limitada",
+      "id_b": "cig-marca-fina-fina-dominicana-edicion-limitada"
+    },
+    {
+      "brand": "Marca Fina",
+      "line_a": "Fina Ecuador",
+      "id_a": "cig-marca-fina-ecuador",
+      "line_b": "Fina Ecuador Edicion Limitada",
+      "id_b": "cig-marca-fina-fina-ecuador-edicion-limitada"
+    },
+    {
+      "brand": "Marca Fina",
+      "line_a": "Fina Panama",
+      "id_a": "cig-marca-fina-panama",
+      "line_b": "Fina Panama Edicion Limitada",
+      "id_b": "cig-marca-fina-fina-panama-edicion-limitada"
+    },
+    {
+      "brand": "Marca Fina",
+      "line_a": "Fina Panama",
+      "id_a": "cig-marca-fina-panama",
+      "line_b": "Fina Panama Maduro Edición Limitada",
+      "id_b": "cig-marca-fina-fina-panama-maduro-edicion-limitada"
+    },
+    {
+      "brand": "Marca Fina",
+      "line_a": "Fina Panama Maduro",
+      "id_a": "cig-marca-fina-panama-maduro",
+      "line_b": "Fina Panama Maduro Edición Limitada",
+      "id_b": "cig-marca-fina-fina-panama-maduro-edicion-limitada"
+    },
+    {
+      "brand": "Mata Hari",
+      "line_a": "Hari",
+      "id_a": "cig-mata-hari-hari",
+      "line_b": "Hari Courtisane",
+      "id_b": "cig-mata-hari-courtisane"
+    },
+    {
+      "brand": "Mata Hari",
+      "line_a": "Hari",
+      "id_a": "cig-mata-hari-hari",
+      "line_b": "Hari Java Exotica",
+      "id_b": "cig-mata-hari-java-exotica"
     },
     {
       "brand": "Micallef",
@@ -2229,10 +2361,59 @@
     },
     {
       "brand": "Oscar Valladares",
-      "line_a": "Ciseron 2018",
-      "id_a": "cig-oscar-valladares-ciseron-2018",
+      "line_a": "Ciseron",
+      "id_a": "cig-oscar-valladares-ciseron",
       "line_b": "Ciseron 2018 Deep Purple",
       "id_b": "cig-oscar-valladares-ciseron-2018-deep-purple"
+    },
+    {
+      "brand": "Oscar Valladares",
+      "line_a": "Ciseron",
+      "id_a": "cig-oscar-valladares-ciseron",
+      "line_b": "Ciseron Edition Black",
+      "id_b": "cig-oscar-valladares-ciseron-edition-black"
+    },
+    {
+      "brand": "Oscar Valladares",
+      "line_a": "Ciseron",
+      "id_a": "cig-oscar-valladares-ciseron",
+      "line_b": "Ciseron Edition Blue",
+      "id_b": "cig-oscar-valladares-ciseron-edition-blue"
+    },
+    {
+      "brand": "Oscar Valladares",
+      "line_a": "Ciseron",
+      "id_a": "cig-oscar-valladares-ciseron",
+      "line_b": "Ciseron Edition Deep Purple",
+      "id_b": "cig-oscar-valladares-ciseron-edition-deep-purple"
+    },
+    {
+      "brand": "Oscar Valladares",
+      "line_a": "Ciseron",
+      "id_a": "cig-oscar-valladares-ciseron",
+      "line_b": "Ciseron Edition Gray",
+      "id_b": "cig-oscar-valladares-ciseron-edition-gray"
+    },
+    {
+      "brand": "Oscar Valladares",
+      "line_a": "Ciseron",
+      "id_a": "cig-oscar-valladares-ciseron",
+      "line_b": "Ciseron Edition Green",
+      "id_b": "cig-oscar-valladares-ciseron-edition-green"
+    },
+    {
+      "brand": "Oscar Valladares",
+      "line_a": "Ciseron",
+      "id_a": "cig-oscar-valladares-ciseron",
+      "line_b": "Ciseron Edition Red",
+      "id_b": "cig-oscar-valladares-ciseron-edition-red"
+    },
+    {
+      "brand": "Oscar Valladares",
+      "line_a": "Ciseron",
+      "id_a": "cig-oscar-valladares-ciseron",
+      "line_b": "Ciseron Edition Yellow",
+      "id_b": "cig-oscar-valladares-ciseron-edition-yellow"
     },
     {
       "brand": "Oscar Valladares",
@@ -2490,13 +2671,6 @@
       "brand": "Tatuaje",
       "line_a": "Cojonu",
       "id_a": "cig-tatuaje-cojonu",
-      "line_b": "Cojonu 2012",
-      "id_b": "cig-tatuaje-cojonu-2012"
-    },
-    {
-      "brand": "Tatuaje",
-      "line_a": "Cojonu",
-      "id_a": "cig-tatuaje-cojonu",
       "line_b": "Cojonu 2018 Broadleaf",
       "id_b": "cig-tatuaje-cojonu-2018-broadleaf"
     },
@@ -2642,6 +2816,13 @@
     },
     {
       "brand": "Tatuaje",
+      "line_a": "PCA",
+      "id_a": "cig-tatuaje-pca",
+      "line_b": "PCA 2025 Exclusive",
+      "id_b": "cig-tatuaje-pca-2025-exclusive"
+    },
+    {
+      "brand": "Tatuaje",
       "line_a": "Unicos",
       "id_a": "cig-tatuaje-unicos",
       "line_b": "Unicos & Special",
@@ -2688,6 +2869,62 @@
       "id_a": "cig-villa-zamorano-danli",
       "line_b": "Danli Corto 46",
       "id_b": "cig-villa-zamorano-danli-corto-46"
+    },
+    {
+      "brand": "Villiger",
+      "line_a": "Edicion Limitada",
+      "id_a": "cig-villiger-edicion-limitada",
+      "line_b": "Edicion Limitada 1888 Nicaragua Gran Reserva",
+      "id_b": "cig-villiger-edicion-limitada-1888-nicaragua-gran-reserva"
+    },
+    {
+      "brand": "Villiger",
+      "line_a": "Edicion Limitada",
+      "id_a": "cig-villiger-edicion-limitada",
+      "line_b": "Edicion Limitada 2022 Nicaragua",
+      "id_b": "cig-villiger-edicion-limitada-2022-nicaragua"
+    },
+    {
+      "brand": "Villiger",
+      "line_a": "Edicion Limitada",
+      "id_a": "cig-villiger-edicion-limitada",
+      "line_b": "Edicion Limitada 2025 Edicion Alemana",
+      "id_b": "cig-villiger-edicion-limitada-2025-edicion-alemana"
+    },
+    {
+      "brand": "Villiger",
+      "line_a": "Edicion Limitada",
+      "id_a": "cig-villiger-edicion-limitada",
+      "line_b": "Edicion Limitada 2025 Nicaragua",
+      "id_b": "cig-villiger-edicion-limitada-2025-nicaragua"
+    },
+    {
+      "brand": "Villiger",
+      "line_a": "Edicion Limitada",
+      "id_a": "cig-villiger-edicion-limitada",
+      "line_b": "Edicion Limitada Celebration 2024 Fina",
+      "id_b": "cig-villiger-edicion-limitada-celebration-2024-fina"
+    },
+    {
+      "brand": "Villiger",
+      "line_a": "Edicion Limitada",
+      "id_a": "cig-villiger-edicion-limitada",
+      "line_b": "Edicion Limitada Private Cellar #7511",
+      "id_b": "cig-villiger-edicion-limitada-private-cellar-7511"
+    },
+    {
+      "brand": "Villiger",
+      "line_a": "Edicion Limitada",
+      "id_a": "cig-villiger-edicion-limitada",
+      "line_b": "Edicion Limitada Private Cellar #7527",
+      "id_b": "cig-villiger-edicion-limitada-private-cellar-7527"
+    },
+    {
+      "brand": "Villiger",
+      "line_a": "Edicion Limitada",
+      "id_a": "cig-villiger-edicion-limitada",
+      "line_b": "Edicion Limitada Private Cellar #7571",
+      "id_b": "cig-villiger-edicion-limitada-private-cellar-7571"
     },
     {
       "brand": "Warped",
@@ -7480,15 +7717,7 @@
     }
   ],
   "listing_demotions": [],
-  "price_url_scrubs": [
-    {
-      "id": "cig-oliva-serie-v-melanio",
-      "line": "Serie V / Melanio",
-      "was": "https://www.cgarsltd.co.uk/oliva-serie-melanio-gran-reserva-robusto-cigar-single-p-13643.html",
-      "now": "https://havana-cigar-shop.com/proizvod/oliva-serie-v-melanio-figurado-10/",
-      "reason": "URL serie melanio ≠ line serie v"
-    }
-  ],
+  "price_url_scrubs": [],
   "link_fixes": [
     {
       "id": "cig-oliva-serie-v",
