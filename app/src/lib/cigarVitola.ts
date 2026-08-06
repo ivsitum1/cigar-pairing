@@ -1,6 +1,36 @@
-import type { Cigar, Vitola } from "../types";
+import type { Cigar, Region, Vitola } from "../types";
+import { urlFitsVitola } from "./vitolaLinkMatch";
 
 const norm = (s: string) => s.trim().toLowerCase();
+
+const ALL_REGIONS: Region[] = ["HR", "EU", "USA"];
+
+/**
+ * EU/USA linkovi (i cijene) za odabranu vitolu.
+ *
+ * Vitolin vlastiti `regionLinks` uvijek pobjeđuje — scrapan je za nju.
+ * Linijski link se nasljeđuje samo kad slug proizvoda odgovara imenu vitole:
+ * inače je to stranica druge vitole iste linije (CigarWorld/Holt's zna imati
+ * samo jednu), pa bi svaka vitola vodila na isti krivi proizvod i pokazivala
+ * njegovu cijenu.
+ */
+function regionLinksForVitola(
+  cigar: Cigar,
+  vitola: Vitola,
+): Cigar["regionLinks"] | undefined {
+  const out: NonNullable<Cigar["regionLinks"]> = {};
+  const context = `${cigar.brand} ${cigar.line}`;
+  for (const region of ALL_REGIONS) {
+    const own = vitola.regionLinks?.[region];
+    if (own) {
+      out[region] = own;
+      continue;
+    }
+    const line = cigar.regionLinks?.[region];
+    if (line?.url && urlFitsVitola(line.url, vitola.name, context)) out[region] = line;
+  }
+  return Object.keys(out).length > 0 ? out : undefined;
+}
 
 // Locale-normalizirani ključ proizvoda: /en/ i /hr/ stranice iste cigare vode
 // na isti proizvod. Koristi se kao sigurnosna mreža protiv locale-blizanaca
@@ -156,7 +186,7 @@ export function applyVitola(cigar: Cigar, vitola: Vitola): Cigar {
     priceEUR: vitola.priceEUR ?? cigar.priceEUR,
     priceUrl: resolvedPriceUrl,
     // odabir vitole → kupnja/cijena po regiji vode na TU vitolu (market katalog)
-    regionLinks: vitola.regionLinks ?? cigar.regionLinks,
+    regionLinks: regionLinksForVitola(cigar, vitola),
     // prikaži SAMO odabranu vitolu (ne cijeli popis) — kad tražiš Robusto,
     // Churchill i Half Corona te ne zanimaju
     vitolas: [vitola],

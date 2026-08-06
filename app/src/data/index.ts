@@ -16,6 +16,7 @@ import drinkIdAliasesJson from "./drinkIdAliases.json";
 import drinkBrandsJson from "./drinkBrands.json";
 import { applyVitola, resolveDefaultVitola, uniqueVitolas } from "../lib/cigarVitola";
 import { cigarLinePrice, vitolaPriceForMarket } from "../lib/cigarPrice";
+import { bestVitolaUrl, urlFitsVitola } from "../lib/vitolaLinkMatch";
 import {
   cigarItemId,
   parseCigarItemId,
@@ -56,6 +57,62 @@ function dedupeCigars(cigars: Cigar[]): Cigar[] {
   );
 }
 
+const hostOfUrl = (url: string): string => {
+  try {
+    return new URL(url).hostname.toLowerCase();
+  } catch {
+    return "";
+  }
+};
+
+/**
+ * Scrape zna vitoli pripisati proizvod SESTRINSKE vitole (Robusto → Toro,
+ * Lancero → Torpedo — 331 od 4884 linkova u katalogu). Takav link je i kriva
+ * cijena, jer `priceEUR` pripada tom drugom proizvodu.
+ *
+ * Ovdje se to čisti jednom, na ulazu u app, pa svi prikazi (popis vitola,
+ * cijena, gumbi kupnje) vide isto: ako linija ima product URL te vitole na
+ * istom hostu (`sourceUrls`), link se zamijeni njime i cijena otpada; inače
+ * link otpada i ostaje pretraga po nazivu.
+ */
+function sanitizeVitolaLinks(c: Cigar): Cigar {
+  const vitolas = c.vitolas ?? [];
+  if (vitolas.length === 0) return c;
+  const context = `${c.brand} ${c.line}`;
+  let touched = false;
+
+  const next = vitolas.map((v) => {
+    const links = v.regionLinks;
+    if (!links) return v;
+    const kept: NonNullable<Vitola["regionLinks"]> = {};
+    let changed = false;
+    for (const region of REGIONS) {
+      const link = links[region];
+      if (!link?.url) continue;
+      if (urlFitsVitola(link.url, v.name, context)) {
+        kept[region] = link;
+        continue;
+      }
+      changed = true;
+      const host = hostOfUrl(link.url);
+      const better = host
+        ? bestVitolaUrl(
+            (c.sourceUrls ?? []).filter((u) => hostOfUrl(u) === host),
+            v.name,
+            context,
+          )
+        : null;
+      // cijena je pripadala krivom proizvodu — ne seli se na novi URL
+      if (better) kept[region] = { shop: link.shop, url: better };
+    }
+    if (!changed) return v;
+    touched = true;
+    return { ...v, regionLinks: Object.keys(kept).length > 0 ? kept : undefined };
+  });
+
+  return touched ? { ...c, vitolas: next } : c;
+}
+
 export const ALL_DRINKS: Drink[] = [
   ...DRINKS.rum,
   ...DRINKS.whisky,
@@ -67,7 +124,7 @@ export const ALL_DRINKS: Drink[] = [
   ...DRINKS.digestif,
 ];
 
-export const CIGARS: Cigar[] = dedupeCigars(cigarsJson as Cigar[]);
+export const CIGARS: Cigar[] = dedupeCigars(cigarsJson as Cigar[]).map(sanitizeVitolaLinks);
 
 export interface ShoppingTier {
   tier: string;
@@ -468,6 +525,17 @@ export const cigarCountByRegion: Record<Region, number> = {
 // cijeni (zadana vitola / priceUrl / vitola iste cijene). Ne padati na
 // proizvoljnu vitolu istog hosta (npr. Cubanitos umjesto Gran Reserva).
 function exactProductUrl(c: Cigar, host: string, region: Region): string | null {
+  const shown = uniqueVitolas(c);
+  // Prikaz jedne vitole: kandidati s tog hosta biraju se po imenu vitole, ne
+  // "prvi koji nađem" — inače Maduro Robusto otvori Robusto ili Short Churchill.
+  const only = shown.length === 1 ? shown[0] : null;
+  const context = `${c.brand} ${c.line}`;
+  const pick = (urls: string[]): string | null => {
+    const usable = urls.filter((u) => u.includes(host) && !isLineListingUrl(u));
+    if (usable.length === 0) return null;
+    if (!only) return usable[0];
+    return bestVitolaUrl(usable, only.name, context);
+  };
   const dv = resolveDefaultVitola(c);
   if (dv?.url && dv.url.includes(host) && !isLineListingUrl(dv.url)) return dv.url;
   if (c.priceUrl?.includes(host) && !isLineListingUrl(c.priceUrl)) return c.priceUrl;
@@ -480,15 +548,16 @@ function exactProductUrl(c: Cigar, host: string, region: Region): string | null 
     });
     if (samePrice?.url) return samePrice.url;
   }
-  for (const v of c.vitolas ?? []) {
-    for (const link of Object.values(v.regionLinks ?? {})) {
-      if (link?.url?.includes(host) && !isLineListingUrl(link.url)) return link.url;
-    }
-  }
-  for (const url of c.sourceUrls ?? []) {
-    if (url.includes(host) && !isLineListingUrl(url)) return url;
-  }
-  return null;
+  const fromVitolaLinks = pick(
+    (c.vitolas ?? []).flatMap((v) =>
+      Object.values(v.regionLinks ?? {})
+        .map((link) => link?.url)
+        .filter((u): u is string => Boolean(u)),
+    ),
+  );
+  if (fromVitolaLinks) return fromVitolaLinks;
+  // sourceUrls zna imati po jedan proizvod za SVAKU vitolu linije
+  return pick([...(c.sourceUrls ?? [])]);
 }
 
 export interface CigarShopLink {
@@ -496,6 +565,11 @@ export interface CigarShopLink {
   shop: string;
   url: string;
   exact: boolean; // true = izravan link na proizvod; false = pretraga / listing linije
+  /**
+   * Što se zapravo otvara: stranica proizvoda, stranica cijele LINIJE (Holt's
+   * i sl. — ista je za svaku vitolu, pa se tako i označava) ili pretraga.
+   */
+  kind: "product" | "line" | "search";
 }
 
 /**
@@ -517,21 +591,56 @@ export function isLineListingUrl(url: string | null | undefined): boolean {
 // Linkovi na trgovine za sve regije u kojima je cigara dostupna. HR koristi
 // izravan link na proizvod gdje postoji (humidor/havana), inače pretragu;
 // EU/USA: scrapani regionLinks kad postoje (listing = exact:false), inače search.
+/**
+ * Upit za pretragu u trgovini. Kad je u prikazu jedna konkretna vitola, ime
+ * vitole ulazi u upit — inače svaka vitola linije šalje isti upit i korisnik
+ * završi na istoj stranici bez obzira što je odabrao.
+ */
+export function cigarSearchQuery(c: Cigar): string {
+  const vitolas = uniqueVitolas(c);
+  const vitola = vitolas.length === 1 ? vitolas[0].name : null;
+  const line = `${c.brand} ${c.line}`.trim();
+  if (!vitola) return line;
+  // ime vitole zna već biti u imenu linije ("Serie V Melanio Robusto")
+  const has = line.toLowerCase().includes(vitola.toLowerCase());
+  return has ? line : `${line} ${vitola}`.trim();
+}
+
+/**
+ * Linijski EU/USA link kad je u prikazu jedna vitola: prihvati ga samo ako je
+ * to link TE vitole (vitolin vlastiti scrape) ili slug odgovara njenom imenu.
+ * Inače je to stranica druge vitole iste linije — vidi lib/vitolaLinkMatch.
+ */
+function regionLinkForShownVitola(c: Cigar, region: Region) {
+  const rl = c.regionLinks?.[region];
+  if (!rl?.url) return undefined;
+  const vitolas = uniqueVitolas(c);
+  if (vitolas.length !== 1) return rl; // cijela linija — link je linijski
+  const v = vitolas[0];
+  if (v.regionLinks?.[region]?.url === rl.url) return rl;
+  // stranica cijele linije (Holt's listing) nije tvrdnja o vitoli, ali ni
+  // kriva — pusti je; guard cilja krive PROIZVODE
+  if (isLineListingUrl(rl.url)) return rl;
+  return urlFitsVitola(rl.url, v.name, `${c.brand} ${c.line}`) ? rl : undefined;
+}
+
 export function cigarShopLinks(c: Cigar): CigarShopLink[] {
-  const q = encodeURIComponent(`${c.brand} ${c.line}`.trim());
+  const q = encodeURIComponent(cigarSearchQuery(c));
   const out: CigarShopLink[] = [];
   for (const region of REGIONS) {
     if (!c.markets.includes(region)) continue;
     // scrapani izravan link na proizvod za EU/USA (HR ostaje na vlastitim
     // product linkovima iz vitola/priceUrl kao izvoru istine)
-    const rl = region === "HR" ? undefined : c.regionLinks?.[region];
+    const rl = region === "HR" ? undefined : regionLinkForShownVitola(c, region);
     let usedShop: string | null = null;
     if (rl?.url) {
+      const listing = isLineListingUrl(rl.url);
       out.push({
         region,
         shop: rl.shop,
         url: rl.url,
-        exact: !isLineListingUrl(rl.url),
+        exact: !listing,
+        kind: listing ? "line" : "product",
       });
       usedShop = rl.shop;
     }
@@ -541,11 +650,13 @@ export function cigarShopLinks(c: Cigar): CigarShopLink[] {
       // dostupnost se deklarira preko `availabilityHR`
       if (shop.walkIn) continue;
       const exact = shop.productHost ? exactProductUrl(c, shop.productHost, region) : null;
+      const listing = exact != null && isLineListingUrl(exact);
       out.push({
         region,
         shop: shop.name,
         url: exact ?? shop.search(q),
-        exact: exact != null && !isLineListingUrl(exact),
+        exact: exact != null && !listing,
+        kind: exact == null ? "search" : listing ? "line" : "product",
       });
     }
   }
@@ -638,7 +749,10 @@ export function cigarShopLinkPrice(
     }
     if (c.priceUrl === link.url && c.priceEUR != null) return { price: c.priceEUR };
   }
-  if (link.region === "EU" || link.region === "USA") {
+  // Stranica cijele linije (Holt's listing) nosi "od" cijenu linije — uz gumb
+  // odabrane vitole to izgleda kao njena cijena, pa se ne prikazuje; gumb tada
+  // nosi oznaku "stranica linije".
+  if ((link.region === "EU" || link.region === "USA") && link.kind !== "line") {
     const rl = c.regionLinks?.[link.region];
     if (rl && rl.shop === link.shop && rl.priceEUR != null) {
       return { price: rl.priceEUR, approx: rl.priceApprox };

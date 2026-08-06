@@ -14,7 +14,11 @@
 //   ref     — svjetski cjenik (wine-searcher) za orijentir kad boce nema u HR.
 import type { DrinkCategory, LocalizedText } from "../types";
 
-export type DrinkShopScope = "HR" | "REF";
+/**
+ * Regija police. HR/EU/USA prate isti raspored kao trgovine cigarama
+ * (`shops.ts` — UK i CH žive pod "EU"), REF je svjetski cjenik.
+ */
+export type DrinkShopScope = "HR" | "EU" | "USA" | "REF";
 
 export interface DrinkShop {
   id: string;
@@ -168,6 +172,37 @@ export const DRINK_SHOPS: DrinkShop[] = [
     note: {
       hr: "Vinoteka s webshopom — hrvatska i uvozna vina",
       en: "Wine shop with a webshop — Croatian and imported wines",
+    },
+  },
+  // EU / USA: samo trgovine kojima znamo endpoint pretrage po nazivu. Ostale
+  // (Drinks&Co, Conalco, Wine.com…) namjerno nisu ovdje — URL se ne izmišlja,
+  // a nepotvrđen upit vodi na praznu stranicu, što je gore od Google pretrage.
+  {
+    id: "whisky-exchange",
+    name: "The Whisky Exchange",
+    scope: "EU",
+    home: "https://www.thewhiskyexchange.com/",
+    productHost: "thewhiskyexchange.com",
+    categories: SPIRITS,
+    search: (name) =>
+      `https://www.thewhiskyexchange.com/search?q=${encodeURIComponent(name)}`,
+    note: {
+      hr: "London — najveći europski specijalist za žesticu, dostava po EU",
+      en: "London — largest European spirits specialist, ships across the EU",
+    },
+  },
+  {
+    id: "total-wine",
+    name: "Total Wine & More",
+    scope: "USA",
+    home: "https://www.totalwine.com/",
+    productHost: "totalwine.com",
+    categories: [...SPIRITS, "wine"],
+    search: (name) =>
+      `https://www.totalwine.com/search/all?text=${encodeURIComponent(name)}`,
+    note: {
+      hr: "SAD — velik lanac; zaliha i dostava ovise o saveznoj državi",
+      en: "USA — large chain; stock and delivery depend on the state",
     },
   },
   {

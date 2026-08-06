@@ -125,18 +125,36 @@ Kad zatreba sync mobitel ↔ računalo:
   na proizvod gdje postoji, EU/USA vode na pretragu po nazivu. HR cijena je jedina
   scrapana pa se prikazuje i u "Sve"; EU/USA nemaju cijenu (ne izmišlja se broj).
   Detaljan popis: **Katalog → Trgovine** (`docs/shops-by-region.md`).
+- **Link mora pripadati odabranoj vitoli** (`app/src/lib/vitolaLinkMatch.ts`):
+  `regionLinks` na razini linije nose jedan scrapani proizvod (npr. CigarWorld „Bellas Artes
+  Maduro Gordo”), pa su prije sve vitole te linije otvarale istu — krivu — vitolu i nasljeđivale
+  njenu cijenu (1416 od 3372 nasljeđivanja u katalogu). Uz to je i sam scrape znao vitoli
+  pripisati sestrinski proizvod (Robusto → Toro; 331 od 4884 linkova) — to se čisti jednom, na
+  ulazu (`sanitizeVitolaLinks` u `src/data/index.ts`): ako linija ima product URL te vitole na
+  istom hostu (`sourceUrls`), link se zamijeni njime i **cijena otpada** (pripadala je drugom
+  proizvodu); inače link otpada. Što ostane bez linka postaje **pretraga koja nosi ime odabrane
+  vitole**. Stranica cijele linije (Holt's `all-cigar-brands/…`) ostaje, ali je označena
+  „stranica linije” i bez cijene — ista je za svaku veličinu.
 - Cijene pića: točni linkovi na allez.hr/ecuga.com gdje postoje (rum, whisky i brandy iz Excel
   kataloga), inače fallback na pretragu. **„Gdje kupiti”** prikazuje izravni shop link samo kad
   URL izgleda kao stranica *tog* proizvoda; inače „Traži online” (fuzzy match kataloga inače
   često veže krivi SKU ili kategoriju — to je posebno vidljivo u Shopping → Praznine).
-- **Trgovine pićem** (`app/src/data/drinkShops.ts` — jedini izvor istine): potvrđenu stranicu
-  boce ima trećina zapisa (313/963; vino 2/124, rum 42/321), pa detalj boce više ne nudi samo
-  Google. Redoslijed: potvrđena stranica (*izravno*) → HR trgovine s pretragom po nazivu
-  (Tipsy, Cugaklik) → katalozi (allez.hr, ecuga.com, Roto, Vrutak, Vivat) → Wine-Searcher kao
-  svjetski cjenik. Trgovina bez provjerenog endpointa pretrage dobiva link na katalog
-  kategorije — URL se **ne izmišlja**. `shopHR` je urednička napomena, pa se prikazuje kao
-  „orijentir — provjeri zalihu” osim kad ista trgovina ima potvrđenu stranicu proizvoda.
+- **Trgovine pićem po regiji** (`app/src/data/drinkShops.ts` — jedini izvor istine):
+  potvrđenu stranicu boce ima trećina zapisa (313/963; vino 2/124, rum 42/321), pa detalj
+  boce slaže police **HR → Europa → SAD → svjetski cjenik → web**. HR: potvrđena stranica
+  (*izravno*) → najviše dvije pretrage po nazivu (Tipsy, Cugaklik) → najviše jedan katalog
+  (allez.hr, ecuga.com, Roto, Vrutak, Vivat). EU: The Whisky Exchange; SAD: Total Wine —
+  jedine dvije kojima znamo endpoint pretrage, ostale se ne dodaju jer se URL **ne izmišlja**.
+  Kad boce nema ni na jednoj potvrđenoj polici, zadnji gumb je **Google pretraga** — prije je
+  na njeno mjesto išao zid kataloških linkova na kojima te boce nema.
+  Uz svaku regiju piše koliko app zna: *potvrđena stranica boce* / *orijentir — provjeri
+  zalihu* / *nemamo podatak*. EU nasljeđuje HR (Hrvatska je u EU), za SAD se ništa ne
+  pretpostavlja. `shopHR` je urednička napomena, pa ostaje orijentir osim kad ista trgovina
+  ima potvrđenu stranicu proizvoda.
   Detaljno: **[docs/drink-shops-hr.md](docs/drink-shops-hr.md)**.
+- **Sortiranje u Katalogu** je tri-stanje: prvi klik zadani smjer (cijena uzlazno, ocjene
+  silazno), drugi klik obrnuti smjer, treći gasi sortiranje i vraća zadani poredak kartice
+  (`app/src/lib/sortToggle.ts`).
 
 ## Whisky indeks (pipeline)
 

@@ -34,9 +34,28 @@ pouzdano**.
 | `search` | pretraga | trgovina ima pretragu po nazivu — link stvarno traži tu bocu, ali pogodak nije zajamčen |
 | `browse` | katalog | trgovinu znamo, ali ne i njen endpoint pretrage → link vodi na katalog kategorije (nikad na izmišljen URL) |
 | `ref` | provjeri cijenu | svjetski cjenik (Wine-Searcher) — orijentir za cijenu i za to drži li bocu itko |
+| `web` | pretraga na webu | Google — izlaz kad boce nema ni na jednoj potvrđenoj polici (prikazuje se samo bez `product` linka) |
 
-Redoslijed u detalju boce: potvrđena stranica → trgovine s pretragom →
-katalozi → svjetski cjenik. Najviše pet HR poveznica po boci.
+Redoslijed u detalju boce ide **po regiji**: 🇭🇷 HR → 🇪🇺 Europa → 🇺🇸 SAD →
+svjetski cjenik → web. Unutar regije: potvrđena stranica → pretrage po nazivu
+(najviše dvije) → katalog (najviše jedan). Prije je HR nudio do pet gumba, od
+kojih je većina bila katalog kategorije — klik bi otvorio policu na kojoj te
+boce nema.
+
+## Dostupnost po regiji
+
+Uz svaku regiju u detalju piše koliko app **zna**, ne koliko pretpostavlja
+(`drinkRegionAvailability` u `lib/drinkShopLinks.ts`):
+
+| Status | Tekst u appu | Kad |
+|--------|--------------|-----|
+| `confirmed` | potvrđena stranica boce | `priceUrl` je potvrđena stranica te boce u trgovini te regije |
+| `viaHR` | potvrđeno u HR, a Hrvatska je u EU | samo za EU: potvrda dolazi s hrvatske police |
+| `listed` | orijentir — provjeri zalihu | postoji urednički `shopHR`, bez potvrde |
+| `unknown` | nemamo podatak — pretraži | app nema ništa; ostaje pretraga u trgovinama i na webu |
+
+EU nasljeđuje HR jer je Hrvatska u EU („HR polica je i EU polica”). Za SAD se
+ne pretpostavlja ništa — scrape američkih polica ne postoji.
 
 ## 🇭🇷 Hrvatska
 
@@ -50,7 +69,20 @@ katalozi → svjetski cjenik. Najviše pet HR poveznica po boci.
 | Vrutak | <https://www.vrutak.hr/> | katalog | žestica | velik odjel u trgovini |
 | Vivat fina vina | <https://www.vivat-finavina.hr/> | katalog | vino | vinoteka s webshopom |
 
-Kava nema trgovinu u registru — ondje ostaje jedan link na web pretragu.
+Kava nema trgovinu ni u jednoj regiji — ondje ostaje samo web pretraga.
+
+## 🇪🇺 Europa i 🇺🇸 SAD
+
+| Trgovina | Regija | Link | Tip linka | Kategorije | Napomena |
+|----------|--------|------|-----------|------------|----------|
+| The Whisky Exchange | EU | <https://www.thewhiskyexchange.com/> | pretraga po nazivu (`/search?q=`) | žestica | London — dostava po EU |
+| Total Wine & More | SAD | <https://www.totalwine.com/> | pretraga po nazivu (`/search/all?text=`) | žestica, vino | zaliha i dostava ovise o saveznoj državi |
+
+Namjerno kratko: u registar ulazi samo trgovina kojoj je endpoint pretrage
+provjeren. Drinks&Co, Conalco, Wine.com i slične nisu ovdje — nepotvrđen upit
+vodi na praznu stranicu, što je gore od Google pretrage koja ionako stoji na
+kraju popisa. UK i CH žive pod „EU”, isto kao u registru trgovina cigarama
+(`shops.ts`).
 
 ## 🌍 Referenca
 

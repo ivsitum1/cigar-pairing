@@ -14,7 +14,12 @@ import {
 } from "../data";
 import { REGIONS } from "../data/shops";
 import { drinkBuyLink } from "../lib/drinkBuyLink";
-import { drinkAvailabilityHR, drinkShopLinks } from "../lib/drinkShopLinks";
+import {
+  DRINK_REGIONS,
+  drinkAvailabilityHR,
+  drinkRegionAvailability,
+  drinkShopLinks,
+} from "../lib/drinkShopLinks";
 import { formatEur, vitolaPriceForMarket } from "../lib/cigarPrice";
 import { drinkNameLoc } from "../lib/drinkName";
 import { vitolaBlurb } from "../lib/vitolaInfo";
@@ -556,9 +561,9 @@ function DrinkDetails({
   );
 }
 
-// Kupnja boce — trgovine u HR (izravna stranica boce gdje postoji, inače
-// pretraga/katalog) plus svjetski cjenik. Bez trgovina za kategoriju (kava)
-// ostaje jedan link na pretragu.
+// Kupnja boce po regiji: HR → Europa → SAD → svjetski cjenik, a na kraju izlaz
+// na web kad nijedna polica nije potvrđena. Uz svaku regiju piše KOLIKO app
+// zna o dostupnosti — potvrđena stranica boce, urednički orijentir ili ništa.
 function DrinkBuyLinks({ drink }: { drink: Drink }) {
   const { t } = useI18n();
   const links = drinkShopLinks(drink);
@@ -566,39 +571,63 @@ function DrinkBuyLinks({ drink }: { drink: Drink }) {
     const buy = drinkBuyLink(drink);
     return <BuyLink href={buy.href} label={buy.label} />;
   }
-  const hr = links.filter((l) => l.scope === "HR");
+  const availability = drinkRegionAvailability(drink);
   const ref = links.filter((l) => l.scope === "REF");
+  const web = links.filter((l) => l.scope === "WEB");
   const KIND_LABEL = {
     product: t("shops.direct"),
     search: t("shops.search"),
     browse: t("shops.browse"),
     ref: t("price.check"),
+    web: t("shops.webSearch"),
   } as const;
-  const group = (title: string, items: typeof links) =>
-    items.length === 0 ? null : (
+  const buttons = (items: typeof links) => (
+    <div className="grid grid-cols-2 gap-2">
+      {items.map((l) => (
+        <a
+          key={`${l.scope}-${l.shopId}`}
+          href={l.url}
+          target="_blank"
+          rel="noreferrer"
+          className="rounded-lg border border-zlato/40 bg-zlato/10 px-2 py-2 text-center text-xs text-zlato-2 hover:bg-zlato/20"
+        >
+          {l.shop} <span className="text-[10px] text-dim">· {KIND_LABEL[l.kind]}</span> ↗
+        </a>
+      ))}
+    </div>
+  );
+  const group = (title: string, items: typeof links, status?: string) =>
+    items.length === 0 && !status ? null : (
       <div className="mt-2">
-        <div className="mb-1 text-[10px] uppercase tracking-widest text-dim/80">{title}</div>
-        <div className="grid grid-cols-2 gap-2">
-          {items.map((l) => (
-            <a
-              key={l.shopId}
-              href={l.url}
-              target="_blank"
-              rel="noreferrer"
-              className="rounded-lg border border-zlato/40 bg-zlato/10 px-2 py-2 text-center text-xs text-zlato-2 hover:bg-zlato/20"
-            >
-              {l.shop} <span className="text-[10px] text-dim">· {KIND_LABEL[l.kind]}</span> ↗
-            </a>
-          ))}
+        <div className="mb-1 flex flex-wrap items-baseline gap-x-2">
+          <span className="text-[10px] uppercase tracking-widest text-dim/80">{title}</span>
+          {status && <span className="text-micro text-dim/70">{status}</span>}
         </div>
+        {items.length > 0 && buttons(items)}
       </div>
     );
+  const statusText = (r: (typeof DRINK_REGIONS)[number]) => {
+    const s = availability[r];
+    if (s === "confirmed") return t("avail.confirmed");
+    if (s === "viaHR") return t("avail.euViaHr");
+    if (s === "listed") return t("avail.listed");
+    return t("avail.unknown");
+  };
   return (
     <div className="mt-3">
       <div className="mb-1 text-micro uppercase tracking-widest text-dim">{t("common.buy")}</div>
-      {group(t("market.HR"), hr)}
+      {DRINK_REGIONS.map((r) => (
+        <div key={r}>
+          {group(
+            t(`market.${r}` as Parameters<typeof t>[0]),
+            links.filter((l) => l.scope === r),
+            statusText(r),
+          )}
+        </div>
+      ))}
       {group(t("shops.priceRef"), ref)}
-      {!hr.some((l) => l.kind === "product") && (
+      {group(t("shops.notOnShelves"), web)}
+      {!links.some((l) => l.kind === "product") && (
         <p className="mt-1.5 text-micro leading-snug text-dim/70">{t("shops.drinkNoDirect")}</p>
       )}
     </div>
@@ -694,7 +723,12 @@ function CigarBuyLinks({ cigar }: { cigar: Cigar }) {
                         <span className="text-zlato-2">· {price}</span>
                       ) : (
                         <span className="text-[10px] text-dim">
-                          · {l.exact ? t("shops.direct") : t("shops.search")}
+                          ·{" "}
+                          {l.kind === "product"
+                            ? t("shops.direct")
+                            : l.kind === "line"
+                              ? t("shops.linePage")
+                              : t("shops.search")}
                         </span>
                       )}{" "}
                       ↗
