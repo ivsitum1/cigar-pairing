@@ -41,6 +41,28 @@ describe("urlFitsVitola", () => {
     expect(urlFitsVitola("https://x.hr/proizvod/linija-torpedo", "Toro", "Linija")).toBe(false);
   });
 
+  it("isti oblik pod drugim imenom prolazi (gran ≈ grande, spojene riječi)", () => {
+    // CigarWorld piše "toro-grande" ondje gdje katalog kaže "Gran Toro"
+    expect(
+      urlFitsVitola(
+        "https://www.cigarworld.de/en/zigarren/x/belmore-maduro-toro-grande-90003597_32334",
+        "Gran Toro",
+        "Belmore Maduro",
+      ),
+    ).toBe(true);
+    expect(
+      urlFitsVitola(
+        "https://www.cigarworld.de/en/zigarren/x/dominus-mmxx-jerusalemkreuz-halfcorona-90015540_41110",
+        "Half Corona",
+        "Dominus MMXX Jerusalemkreuz",
+      ),
+    ).toBe(true);
+    // ali sličan korijen nije isti oblik
+    expect(urlFitsVitola("https://x.hr/proizvod/linija-coronado", "Corona", "Linija")).toBe(
+      false,
+    );
+  });
+
   it("ime bez značajnih riječi ne može opovrgnuti link", () => {
     expect(urlFitsVitola("https://x.hr/proizvod/linija-toro", "No. 2", "Linija")).toBe(true);
   });

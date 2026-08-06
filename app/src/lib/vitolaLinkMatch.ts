@@ -68,15 +68,52 @@ const slugOf = (url: string): string => {
 const isDiscriminating = (t: string, known: string[]): boolean =>
   !GENERIC.has(t) && !isDimensionToken(t) && !tokenPresent(t, known);
 
-/** "robusto" ≈ "robustos", ali "toro" ≠ "torpedo". */
+/**
+ * Isti oblik pod drugim imenom: trgovine miješaju španjolski i njemački red
+ * riječi ("Gran Toro" = "toro-grande"). Prefiksno uspoređivanje bi ovo riješilo,
+ * ali bi zajedno s tim izjednačilo i Corona s Coronado — zato popis, ne pravilo.
+ */
+const SYNONYMS: string[][] = [
+  ["gran", "grande", "grand"],
+  ["petit", "petite", "petits"],
+  ["doble", "double"],
+  ["corto", "corta", "short"],
+];
+
+const synonymsOf = (t: string): string[] =>
+  SYNONYMS.find((group) => group.includes(t)) ?? [t];
+
+/** "robusto" ≈ "robustos" ≈ "gran/grande", ali "toro" ≠ "torpedo". */
 const tokenPresent = (token: string, pool: string[]): boolean =>
-  pool.some((u) => u === token || u === token + "s" || token === u + "s");
+  synonymsOf(token).some((t) =>
+    pool.some((u) => u === t || u === t + "s" || t === u + "s"),
+  );
+
+const joined = (s: string): string => strip(s).replace(/[^a-z0-9]+/g, "");
+
+/**
+ * Ime vitole zalijepljeno u slug bez razdjelnika ("…kreuz-halfcorona-90015540").
+ * Iza pogotka ne smije stajati slovo — inače bi "Corona" pristajala i na
+ * "coronado", što je druga cigara.
+ */
+const joinedContains = (slug: string, vitolaName: string): boolean => {
+  const needle = joined(vitolaName);
+  if (needle.length < 4) return false;
+  const hay = joined(slug);
+  for (let i = hay.indexOf(needle); i >= 0; i = hay.indexOf(needle, i + 1)) {
+    const after = hay[i + needle.length];
+    if (after === undefined || !/[a-z]/.test(after)) return true;
+  }
+  return false;
+};
 
 /** Slug doslovno sadrži svaku riječ iz imena vitole. */
 function strictFit(url: string, vitolaName: string): boolean {
   const wanted = tokenize(vitolaName);
   if (wanted.length === 0) return false;
-  const slugTokens = tokenize(slugOf(url));
+  const slug = slugOf(url);
+  if (joinedContains(slug, vitolaName)) return true;
+  const slugTokens = tokenize(slug);
   return wanted.every((t) => tokenPresent(t, slugTokens));
 }
 
@@ -126,8 +163,10 @@ export function urlFitsVitola(
   if (!url) return false;
   const wanted = tokenize(vitolaName);
   if (wanted.length === 0) return true; // "No. 2" — nema čime opovrgnuti
-  const slugTokens = tokenize(slugOf(url));
+  const slug = slugOf(url);
+  const slugTokens = tokenize(slug);
   if (slugTokens.length === 0) return true;
+  if (joinedContains(slug, vitolaName)) return true;
 
   const missing = wanted.filter((t) => !tokenPresent(t, slugTokens));
   if (missing.length === 0) return true;

@@ -128,7 +128,7 @@ Kad zatreba sync mobitel ↔ računalo:
 - **Link mora pripadati odabranoj vitoli** (`app/src/lib/vitolaLinkMatch.ts`):
   `regionLinks` na razini linije nose jedan scrapani proizvod (npr. CigarWorld „Bellas Artes
   Maduro Gordo”), pa su prije sve vitole te linije otvarale istu — krivu — vitolu i nasljeđivale
-  njenu cijenu (1414 od 3372 nasljeđivanja u katalogu). Uz to je i sam scrape znao vitoli
+  njenu cijenu (1416 od 3372 nasljeđivanja u katalogu). Uz to je i sam scrape znao vitoli
   pripisati sestrinski proizvod (Robusto → Toro; 331 od 4884 linkova) — to se čisti jednom, na
   ulazu (`sanitizeVitolaLinks` u `src/data/index.ts`): ako linija ima product URL te vitole na
   istom hostu (`sourceUrls`), link se zamijeni njime i **cijena otpada** (pripadala je drugom
