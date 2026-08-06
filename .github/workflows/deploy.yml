@@ -1,21 +1,36 @@
 name: Deploy to GitHub Pages
 
+# Objava ide preko `gh-pages` grane, NE preko `actions/deploy-pages`.
+#
+# Zašto: artifact-deploy varijanta traži job vezan uz `github-pages`
+# environment, a takav job 2026-08-06 nije uspio dobiti runner ni u jednom od
+# šest pokušaja — `runner_id: 0`, bez logova, otkazan točno nakon 15 minuta u
+# redu čekanja. `build` job je na istom runu dobivao runner za 3 sekunde i
+# prolazio u minuti, a environment nema nijedan protection rule (provjereno:
+# bez required reviewers i wait timera, `master` dopušten). Dakle zapinjao je
+# Pages/Deployments sloj, ne naš build.
+#
+# Ova varijanta gura gotov `app/dist` na granu običnim git pushom, pa Pages
+# servira granu. Uvjet: Settings → Pages → Source = "Deploy from a branch",
+# grana `gh-pages`, mapa `/ (root)`.
+#
+# Povratak na staro: `git revert` ovog commita + Source natrag na
+# "GitHub Actions".
+
 on:
   push:
     branches: [master]
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 concurrency:
   group: pages
   cancel-in-progress: true
 
 jobs:
-  build:
+  build-and-publish:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -30,16 +45,22 @@ jobs:
         working-directory: app
       - run: npm run build
         working-directory: app
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: app/dist
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Publish app/dist to gh-pages
+        working-directory: app/dist
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          # Pages inače provuče izlaz kroz Jekyll i pojede mape s "_" prefiksom
+          touch .nojekyll
+          git init -q
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -qm "deploy: ${GITHUB_SHA}"
+          # grana je čisti snapshot builda, pa je force push namjeran
+          git push -q -f \
+            "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" \
+            HEAD:gh-pages
+          echo "objavljeno na gh-pages: ${GITHUB_SHA}"
