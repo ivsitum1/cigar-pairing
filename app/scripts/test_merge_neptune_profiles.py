@@ -82,6 +82,26 @@ class MergeOverwriteTests(unittest.TestCase):
         self.assertTrue(cigar.get("profileEstimated"))
         self.assertGreaterEqual(len(cigar.get("flavorTags") or []), 2)
 
+    def test_mild_house_strength_not_raised_by_shop(self):
+        cigar = {
+            "id": "cig-macanudo-cafe",
+            "brand": "Macanudo",
+            "flavorTags": ["kremasto", "cedar", "orasasti", "med", "trava-slatka"],
+            "profileEstimated": True,
+            "wrapper": "Connecticut shade",
+            "strength": 1,
+            "body": 1,
+        }
+        raw = {
+            "description": "A medium-bodied Connecticut shade cigar with cream notes.",
+            "strength": 3,
+            "wrapper": "Connecticut",
+        }
+        merge.merge_one(cigar, raw)
+        self.assertEqual(cigar["strength"], 1)
+        self.assertEqual(cigar["body"], 1)
+        self.assertNotEqual(cigar.get("strengthFromShop"), True)
+
 
 class WorklistSelectionTests(unittest.TestCase):
     def test_includes_estimated_with_neptune_url(self):

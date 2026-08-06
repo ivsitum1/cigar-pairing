@@ -22571,7 +22571,7 @@
     "format": "52 x 152mm",
     "country": "Dominikanska Republika",
     "wrapper": "Broadleaf",
-    "strength": 3,
+    "strength": 2,
     "body": 3,
     "flavorTags": [
       "kremasto",
@@ -22707,7 +22707,6 @@
         "fetchedAt": "2026-07-01"
       }
     },
-    "strengthFromShop": true,
     "filler": "Dominican",
     "wrapperOrigin": "SAD",
     "binderOrigin": "Dominikanska Republika",
@@ -109838,7 +109837,7 @@
     "format": "54 x 178mm",
     "country": "Honduras",
     "wrapper": "Honduras",
-    "strength": 3,
+    "strength": 2,
     "body": 3,
     "flavorTags": [
       "cedar",
@@ -109899,8 +109898,7 @@
     "priceUrl": "https://www.neptunecigar.com/cigars/flor-de-selva-no-15",
     "wrapperOrigin": "Honduras",
     "binderOrigin": "Honduras",
-    "fillerOrigin": "Honduras",
-    "strengthFromShop": true
+    "fillerOrigin": "Honduras"
   },
   {
     "id": "cig-flor-de-selva-no-20",
@@ -165587,14 +165585,14 @@
     "format": "52 x 152mm",
     "country": "Dominikanska Republika",
     "wrapper": "Connecticut shade",
-    "strength": 3,
-    "body": 3,
+    "strength": 1,
+    "body": 1,
     "flavorTags": [
       "kremasto",
+      "cedar",
       "orasasti",
-      "drvo",
-      "dim",
-      "slatko"
+      "med",
+      "trava-slatka"
     ],
     "smokeTimeMin": 65,
     "priceEUR": 14.0,
@@ -165659,7 +165657,7 @@
       }
     ],
     "priceUrl": "https://humidor.hr/hr/proizvod/macanudo-cafe-crystal-5%c2%bd-x-50/",
-    "profileEstimated": false,
+    "profileEstimated": true,
     "regionLinks": {
       "HR": {
         "shop": "The Humidor",
@@ -165690,8 +165688,7 @@
       "https://www.neptunecigar.com/cigars/macanudo-cafe-portofino",
       "https://www.neptunecigar.com/cigars/macanudo-cafe-hyde-park"
     ],
-    "fillerOrigin": "Meksiko",
-    "strengthFromShop": true
+    "fillerOrigin": "Meksiko"
   },
   {
     "id": "cig-macanudo-criollo-98",
@@ -247838,7 +247835,7 @@
     "format": "50 x 140mm",
     "country": "Dominikanska Republika",
     "wrapper": "San Andrés Maduro",
-    "strength": 3,
+    "strength": 2,
     "body": 3,
     "flavorTags": [
       "kakao",
@@ -247890,7 +247887,6 @@
       }
     },
     "flavoured": false,
-    "strengthFromShop": true,
     "formatEstimated": false,
     "profileEstimated": false,
     "sourceUrls": [
@@ -248091,8 +248087,8 @@
     "format": "47 x 182mm",
     "country": "Nikaragva",
     "wrapper": "Ecuador",
-    "strength": 3,
-    "body": 3,
+    "strength": 2,
+    "body": 2,
     "flavorTags": [
       "kakao",
       "papar",
@@ -248216,8 +248212,7 @@
     "formatEstimated": true,
     "priceUrl": "https://www.neptunecigar.com/cigars/villiger-1888-nicaragua-churchill",
     "binderOrigin": "Nikaragva",
-    "fillerOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "fillerOrigin": "Nikaragva"
   },
   {
     "id": "cig-villiger-black-mini-sumatra",
@@ -256017,8 +256012,8 @@
     "format": "50 x 152mm",
     "country": "Honduras",
     "wrapper": "Jamastran",
-    "strength": 3,
-    "body": 3,
+    "strength": 2,
+    "body": 2,
     "flavorTags": [
       "kremasto",
       "cedar",
@@ -256134,8 +256129,7 @@
     "binderOrigin": "Ekvador",
     "priceUrl": "https://www.neptunecigar.com/cigars/zino-honduras-toro-6--50",
     "wrapperOrigin": "Honduras",
-    "fillerOrigin": "Honduras",
-    "strengthFromShop": true
+    "fillerOrigin": "Honduras"
   },
   {
     "id": "cig-zino-nicaragua",

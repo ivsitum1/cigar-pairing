@@ -64,6 +64,19 @@ STRENGTH_MAP_TEXT_TO_INT = {
     "medium/full": 4, "full/medium": 4,
 }
 
+# Houses whose catalog baseline is mild — Neptune description text often
+# mis-labels them "medium". Never *raise* an already-mild strength via shop.
+MILD_HOUSE_BRANDS = {
+    "Macanudo",
+    "Ashton",
+    "Flor de Selva",
+    "Zino",
+    "Cusano",
+    "Villiger",
+    "Villa Zamorano",
+    "Fonseca",
+}
+
 DASH = "\u2014"
 
 # English → Croatian country name translations (for Neptune-provided origin text)
@@ -191,10 +204,22 @@ def merge_one(cigar: dict, raw: dict) -> bool:
     # ── strength ──────────────────────────────────────────────────────────────
     if isinstance(strength_raw, int) and 1 <= strength_raw <= 5:
         if cigar.get("profileEstimated") or cigar.get("strength") is None:
-            cigar["strength"] = strength_raw
-            cigar["body"] = strength_raw
-            cigar["strengthFromShop"] = True
-            changed = True
+            cur = cigar.get("strength")
+            brand = cigar.get("brand") or ""
+            # Do not raise an already-mild house profile to "medium+" from
+            # noisy shop description text (breaks agricole / mild pairing tests).
+            if (
+                brand in MILD_HOUSE_BRANDS
+                and isinstance(cur, int)
+                and cur <= 2
+                and strength_raw > cur
+            ):
+                pass
+            else:
+                cigar["strength"] = strength_raw
+                cigar["body"] = strength_raw
+                cigar["strengthFromShop"] = True
+                changed = True
 
     # ── flavorTags from description ──────────────────────────────────────────
     # Heuristic stubs (profileEstimated) must yield to real shop text; curated
