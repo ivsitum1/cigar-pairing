@@ -7,14 +7,16 @@ Output: app/src/data/cigars.json  (updated in place, idempotent per id)
 Merge rules (per cigar record):
   - Only touches records whose id is present in neptune_raw.json
   - Never overwrites existing flavorTags / strength / wrapper with a shop value
-    if the record already has them from a curated / non-market source
+    if the record already has them from a curated / non-estimated source
   - strength + body: only set if record has profileEstimated==True or has no
     strength at all; sets strengthFromShop=True
   - wrapper: only set if record currently has "—"
-  - flavorTags: accumulated from description text via the standard word→tag map
-    (same mapping used by merge-flavor-enrichment.py); only set when at least
-    2 tags found — otherwise the text is too sparse to be useful
+  - flavorTags: from description text via the standard word→tag map
+    (same mapping used by merge-flavor-enrichment.py); applied when the
+    record has no tags OR profileEstimated==True (heuristic stubs yield to
+    shop text). Requires at least 2 tags — otherwise the text is too sparse
   - profileEstimated: set to False when tags come from Neptune shop text
+    (except catalogSource=="market", which stays estimated)
 
 Usage (run from app/):
   python scripts/merge-neptune-profiles.py
@@ -195,15 +197,22 @@ def merge_one(cigar: dict, raw: dict) -> bool:
             changed = True
 
     # ── flavorTags from description ──────────────────────────────────────────
-    if not cigar.get("flavorTags") and desc:
+    # Heuristic stubs (profileEstimated) must yield to real shop text; curated
+    # non-estimated tags are left alone.
+    allow_tags = (not cigar.get("flavorTags")) or cigar.get("profileEstimated") is True
+    if allow_tags and desc:
         tags = tags_from_text(desc)
         if len(tags) >= 2:
-            cigar["flavorTags"] = tags
+            before = list(cigar.get("flavorTags") or [])
+            if before != tags:
+                cigar["flavorTags"] = tags
+                changed = True
             # Market records are inherently shop-sourced, so their profile
             # remains "estimated" even after Neptune tag enrichment.
             if cigar.get("catalogSource") != "market":
-                cigar["profileEstimated"] = False
-            changed = True
+                if cigar.get("profileEstimated") is not False:
+                    cigar["profileEstimated"] = False
+                    changed = True
 
     return changed
 

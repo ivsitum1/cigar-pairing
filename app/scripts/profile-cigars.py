@@ -50,6 +50,29 @@ WRAPPER_PATTERNS = [
     ("habano", r"habano|sun.?grown|sungrown|colorado|rosado|medio tiempo|cuban seed"),
 ]
 
+# Zemlja → jedan akcent-tag (kurirani regionalni karakter; i dalje profileEstimated).
+# Razbija identične Habano stubove (3/3 + cedar/kava/koza/zacini) bez izmišljanja
+# shop nota. Ne dira zapise s strengthFromShop / kuriranim tagovima.
+ORIGIN_ACCENT = {
+    "Nikaragva": "papar",
+    "Dominikanska Republika": "kremasto",
+    "Honduras": "drvo",
+    "Kostarika": "cvjetno",
+    "Kuba": "duhan",
+    "Brazil": "zemljano",
+    "Indonezija": "zacini-slatki",
+    "Ekvador": "orasasti",
+    "Meksiko": "kakao",
+    "SAD": "med",
+    "Njemačka": "drvo",
+    "Panama": "trava-slatka",
+    "Filipini": "orasasti",
+    "Peru": "zemljano",
+    "Kolumbija": "kava",
+    "Jamajka": "med",
+    "Haiti": "zemljano",
+}
+
 # marka -> (delta_snaga, delta_tijelo) — karakter kuce
 BRAND_BIAS = {
     "Joya de Nicaragua": (1, 1), "La Flor Dominicana": (1, 1), "Foundation Cigar Company": (1, 1),
@@ -190,14 +213,74 @@ def enrich(c: dict) -> None:
         c["profileEstimated"] = True
 
 
+def _stub_tag_sets() -> set[tuple[str, ...]]:
+    return {tuple(sorted(v[2])) for v in WRAPPER_BASE.values()}
+
+
+def is_pure_stub(c: dict) -> bool:
+    """True for empty tags or exact WRAPPER_BASE tag lists (no shop/keyword mix)."""
+    tags = tuple(sorted(c.get("flavorTags") or []))
+    if not tags:
+        return True
+    return tags in _stub_tag_sets()
+
+
+def apply_origin_accent(c: dict) -> bool:
+    """Append one curated country accent tag. Returns True if tags changed."""
+    accent = ORIGIN_ACCENT.get(c.get("country") or "")
+    if not accent:
+        return False
+    tags = list(c.get("flavorTags") or [])
+    if accent in tags:
+        return False
+    c["flavorTags"] = (tags + [accent])[:6]
+    return True
+
+
 def main():
+    import argparse
+
+    ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
+    ap.add_argument(
+        "--reprofile-stubs",
+        action="store_true",
+        help=(
+            "Re-run enrich + origin accent on profileEstimated stubs only "
+            "(skips strengthFromShop / non-stub tag sets)."
+        ),
+    )
+    ap.add_argument("--dry-run", action="store_true")
+    args = ap.parse_args()
+
     cigars = json.loads(CIGARS.read_text(encoding="utf-8"))
     n = 0
     for c in cigars:
-        if not c.get("flavorTags"):  # samo generirane stubove
+        if args.reprofile_stubs:
+            if c.get("profileEstimated") is not True:
+                continue
+            if c.get("strengthFromShop"):
+                continue
+            if not is_pure_stub(c):
+                continue
+            enrich(c)
+            apply_origin_accent(c)
+            n += 1
+        elif not c.get("flavorTags"):  # samo generirane stubove
             enrich(c)
             n += 1
-    CIGARS.write_text(json.dumps(cigars, ensure_ascii=False, indent=1), encoding="utf-8")
+
+    if args.dry_run:
+        from collections import Counter
+
+        buckets = Counter(
+            (c["body"], c["strength"], tuple(sorted(c.get("flavorTags") or [])))
+            for c in cigars
+        )
+        top_n = buckets.most_common(1)[0][1]
+        print(f"dry-run: would touch {n} cigars; largest bucket {top_n} ({100 * top_n / len(cigars):.1f}%)")
+        return
+
+    CIGARS.write_text(json.dumps(cigars, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
     from collections import Counter
     sb = Counter((c["strength"], c["body"]) for c in cigars)
