@@ -50243,6 +50243,705 @@
     "binderOrigin": "Indonezija"
   },
   {
+    "id": "cig-casa-1910-as-de-oro",
+    "brand": "Casa 1910",
+    "line": "As De Oro",
+    "vitola": "De Oro",
+    "format": "54 x 152mm",
+    "country": "Meksiko",
+    "wrapper": "Habano",
+    "strength": 3,
+    "body": 4,
+    "flavorTags": [
+      "cedar",
+      "zacini",
+      "koza",
+      "kava"
+    ],
+    "smokeTimeMin": 45,
+    "priceEUR": 14.0,
+    "priceApprox": false,
+    "availabilityHR": [
+      "Havana Shop",
+      "The Humidor"
+    ],
+    "notes": {
+      "hr": "Casa 1910 nosi ime po godini meksičke revolucije, a linije po njezinim likovima i motivima. As de Oro je izdanje s meksičkim San Andrés duhanom — zemljano i slatko.",
+      "en": "Casa 1910 is named for the year of the Mexican Revolution, its lines for its figures and motifs. As de Oro is the San Andrés release — earthy and sweet."
+    },
+    "markets": [
+      "HR",
+      "EU",
+      "USA",
+      "WW"
+    ],
+    "vitolas": [
+      {
+        "name": "De Oro",
+        "format": "54 x 152mm",
+        "smokeTimeMin": 45,
+        "priceEUR": 14.0,
+        "url": "https://havana-cigar-shop.com/proizvod/casa-1910-as-de-oro-10/",
+        "ring": 54,
+        "lengthMM": 152,
+        "fetchedAt": "2026-07-01"
+      }
+    ],
+    "priceUrl": "https://havana-cigar-shop.com/proizvod/casa-1910-as-de-oro-10/",
+    "profileEstimated": true,
+    "regionLinks": {
+      "HR": {
+        "shop": "Havana Cigar Shop",
+        "url": "https://havana-cigar-shop.com/proizvod/casa-1910-as-de-oro-10/",
+        "priceEUR": 14.0,
+        "fetchedAt": "2026-07-01"
+      },
+      "EU": {
+        "shop": "CigarWorld",
+        "url": "https://www.cigarworld.de/en/zigarren/nicaragua/casa-1910-cavalry-edition-as-de-oro-toro-90017030_58879",
+        "priceEUR": 16.5,
+        "fetchedAt": "2026-07-01"
+      },
+      "USA": {
+        "shop": "Neptune Cigar",
+        "url": "https://www.neptunecigar.com/cigars/casa-1910-cavalry-edition-as-de-oro"
+      }
+    },
+    "binder": "Meksiko",
+    "filler": "Nikaragva",
+    "wrapperOrigin": "Ekvador",
+    "binderOrigin": "Meksiko",
+    "fillerOrigin": "Nikaragva",
+    "isPuro": false
+  },
+  {
+    "id": "cig-casa-1910-cuchillo-parado",
+    "brand": "Casa 1910",
+    "line": "Cuchillo Parado",
+    "vitola": "Cuchillo Parado",
+    "format": "50 x 127mm",
+    "country": "Meksiko",
+    "wrapper": "Sumatra seed (Meksiko)",
+    "strength": 3,
+    "body": 4,
+    "flavorTags": [
+      "cedar",
+      "zacini",
+      "koza",
+      "kava"
+    ],
+    "smokeTimeMin": 45,
+    "priceEUR": 14.0,
+    "priceApprox": false,
+    "availabilityHR": [
+      "Havana Shop",
+      "The Humidor"
+    ],
+    "notes": {
+      "hr": "Cuchillo Parado nosi ime mjesta gdje je počela meksička revolucija — San Andrés puro: tamno, zemljano, s kakaom i suhim voćem.",
+      "en": "Cuchillo Parado is named for the village where the Mexican revolution began — a San Andrés puro: dark, earthy, cocoa and dried fruit."
+    },
+    "markets": [
+      "HR",
+      "EU",
+      "USA",
+      "WW"
+    ],
+    "vitolas": [
+      {
+        "name": "Cuchillo Parado",
+        "format": "50 x 127mm",
+        "smokeTimeMin": 45,
+        "priceEUR": 14.0,
+        "url": "https://havana-cigar-shop.com/proizvod/casa-1910-cuchillo-parado-10/",
+        "ring": 50,
+        "lengthMM": 127,
+        "regionLinks": {
+          "USA": {
+            "shop": "Neptune Cigar",
+            "url": "https://www.neptunecigar.com/cigars/casa-1910-cuchillo-parado-toro-6--52"
+          }
+        },
+        "fetchedAt": "2026-07-01"
+      }
+    ],
+    "priceUrl": "https://havana-cigar-shop.com/proizvod/casa-1910-cuchillo-parado-10/",
+    "regionLinks": {
+      "HR": {
+        "shop": "Havana Cigar Shop",
+        "url": "https://havana-cigar-shop.com/proizvod/casa-1910-cuchillo-parado-10/",
+        "priceEUR": 14.0,
+        "fetchedAt": "2026-07-01"
+      },
+      "EU": {
+        "shop": "CigarWorld",
+        "url": "https://www.cigarworld.de/en/zigarren/mexiko/casa-1910-revolutionary-edition-cuchillo-parado-90016305_50024",
+        "priceEUR": 13.9,
+        "fetchedAt": "2026-07-01"
+      },
+      "USA": {
+        "shop": "Neptune Cigar",
+        "url": "https://www.neptunecigar.com/cigars/casa-1910-revolutionary-edition-cuchillo-parado"
+      }
+    },
+    "binder": "Meksiko",
+    "filler": "Meksiko",
+    "wrapperOrigin": "Meksiko",
+    "binderOrigin": "Meksiko",
+    "fillerOrigin": "Meksiko",
+    "isPuro": true,
+    "sourceUrls": [
+      "https://www.neptunecigar.com/cigars/casa-1910-cuchillo-parado-toro-6--52"
+    ]
+  },
+  {
+    "id": "cig-casa-1910-jilguero",
+    "brand": "Casa 1910",
+    "line": "Jilguero",
+    "vitola": "Jilguero",
+    "format": "60 x 152mm",
+    "country": "Meksiko",
+    "wrapper": "Habano",
+    "strength": 3,
+    "body": 4,
+    "flavorTags": [
+      "cedar",
+      "zacini",
+      "koza",
+      "kava"
+    ],
+    "smokeTimeMin": 50,
+    "priceEUR": 14.5,
+    "priceApprox": false,
+    "availabilityHR": [
+      "Havana Shop",
+      "The Humidor"
+    ],
+    "notes": {
+      "hr": "Jilguero je jedan od blažih Casa 1910 blendova — meksički duhan u finijem, cvjetnijem izdanju.",
+      "en": "Jilguero is one of Casa 1910's milder blends — Mexican leaf in a finer, more floral register."
+    },
+    "markets": [
+      "HR",
+      "EU",
+      "USA",
+      "WW"
+    ],
+    "vitolas": [
+      {
+        "name": "Jilguero",
+        "format": "60 x 152mm",
+        "smokeTimeMin": 50,
+        "priceEUR": 14.5,
+        "url": "https://havana-cigar-shop.com/proizvod/casa-1910-jilguero-10/",
+        "ring": 60,
+        "lengthMM": 152,
+        "fetchedAt": "2026-07-01"
+      }
+    ],
+    "priceUrl": "https://havana-cigar-shop.com/proizvod/casa-1910-jilguero-10/",
+    "profileEstimated": true,
+    "regionLinks": {
+      "HR": {
+        "shop": "Havana Cigar Shop",
+        "url": "https://havana-cigar-shop.com/proizvod/casa-1910-jilguero-10/",
+        "priceEUR": 14.5,
+        "fetchedAt": "2026-07-01"
+      },
+      "EU": {
+        "shop": "CigarWorld",
+        "url": "https://www.cigarworld.de/en/zigarren/nicaragua/casa-1910-cavalry-edition-jilguero-gordo-90017030_58881",
+        "priceEUR": 16.9,
+        "fetchedAt": "2026-07-01"
+      },
+      "USA": {
+        "shop": "Neptune Cigar",
+        "url": "https://www.neptunecigar.com/cigars/casa-1910-cavalry-edition-jilguero"
+      }
+    },
+    "binder": "San Andrés",
+    "filler": "Jalapa, Ometepe, Seco, Viso",
+    "wrapperOrigin": "Ekvador",
+    "binderOrigin": "Meksiko"
+  },
+  {
+    "id": "cig-casa-1910-la-coronela",
+    "brand": "Casa 1910",
+    "line": "La Coronela",
+    "vitola": "La Coronela",
+    "format": "58 x 140mm",
+    "country": "Meksiko",
+    "wrapper": "Habano",
+    "strength": 3,
+    "body": 4,
+    "flavorTags": [
+      "cedar",
+      "zacini",
+      "koza",
+      "kava"
+    ],
+    "smokeTimeMin": 45,
+    "priceEUR": 20.5,
+    "priceApprox": false,
+    "availabilityHR": [
+      "Havana Shop",
+      "The Humidor"
+    ],
+    "notes": {
+      "hr": "La Coronela nosi ime po ženama koje su vodile revolucionarne odrede — punija Casa 1910 linija s izraženim začinom.",
+      "en": "La Coronela is named for the women who led revolutionary units — a fuller Casa 1910 line with pronounced spice."
+    },
+    "markets": [
+      "HR",
+      "EU",
+      "USA",
+      "WW"
+    ],
+    "vitolas": [
+      {
+        "name": "La Coronela",
+        "format": "58 x 140mm",
+        "smokeTimeMin": 45,
+        "priceEUR": 20.5,
+        "url": "https://havana-cigar-shop.com/proizvod/casa-1910-la-coronela-10/",
+        "ring": 58,
+        "lengthMM": 140,
+        "fetchedAt": "2026-07-01"
+      }
+    ],
+    "priceUrl": "https://havana-cigar-shop.com/proizvod/casa-1910-la-coronela-10/",
+    "profileEstimated": true,
+    "regionLinks": {
+      "HR": {
+        "shop": "Havana Cigar Shop",
+        "url": "https://havana-cigar-shop.com/proizvod/casa-1910-la-coronela-10/",
+        "priceEUR": 20.5,
+        "fetchedAt": "2026-07-01"
+      },
+      "EU": {
+        "shop": "CigarWorld",
+        "url": "https://www.cigarworld.de/en/zigarren/dominikanische-republik/casa-1910-soldadera-edition-la-coronela-majestuoso-90017031_58884",
+        "priceEUR": 20.0,
+        "fetchedAt": "2026-07-01"
+      },
+      "USA": {
+        "shop": "Neptune Cigar",
+        "url": "https://www.neptunecigar.com/cigars/casa-1910-soldadera-edition-la-coronela-majestuoso"
+      }
+    },
+    "binder": "Brazil",
+    "filler": "Meksiko/Dominikanska Republika",
+    "wrapperOrigin": "Ekvador",
+    "binderOrigin": "Brazil"
+  },
+  {
+    "id": "cig-casa-1910-lucero",
+    "brand": "Casa 1910",
+    "line": "Lucero",
+    "vitola": "Lucero",
+    "format": "54 x 152mm",
+    "country": "Meksiko",
+    "wrapper": "Habano",
+    "strength": 3,
+    "body": 4,
+    "flavorTags": [
+      "cedar",
+      "zacini",
+      "koza",
+      "kava"
+    ],
+    "smokeTimeMin": 50,
+    "priceEUR": 18.0,
+    "priceApprox": false,
+    "availabilityHR": [
+      "Havana Shop",
+      "The Humidor"
+    ],
+    "notes": {
+      "hr": "Lucero je Casa 1910 blend srednje snage — meksički duhan s kakao-zemljanim tonom i mirnim gorenjem.",
+      "en": "Lucero is Casa 1910's medium blend — Mexican leaf with a cocoa-and-earth tone and a calm burn."
+    },
+    "markets": [
+      "HR",
+      "EU",
+      "USA",
+      "WW"
+    ],
+    "vitolas": [
+      {
+        "name": "Lucero",
+        "format": "54 x 152mm",
+        "smokeTimeMin": 50,
+        "priceEUR": 18.0,
+        "url": "https://havana-cigar-shop.com/proizvod/casa-1910-lucero-10/",
+        "ring": 54,
+        "lengthMM": 152,
+        "fetchedAt": "2026-07-01"
+      }
+    ],
+    "priceUrl": "https://havana-cigar-shop.com/proizvod/casa-1910-lucero-10/",
+    "profileEstimated": true,
+    "regionLinks": {
+      "HR": {
+        "shop": "Havana Cigar Shop",
+        "url": "https://havana-cigar-shop.com/proizvod/casa-1910-lucero-10/",
+        "priceEUR": 18.0,
+        "fetchedAt": "2026-07-01"
+      },
+      "EU": {
+        "shop": "CigarWorld",
+        "url": "https://www.cigarworld.de/en/zigarren/nicaragua/casa-1910-cavalry-edition-lucero-torpedo-90017030_58880",
+        "priceEUR": 15.9,
+        "fetchedAt": "2026-07-01"
+      },
+      "USA": {
+        "shop": "Neptune Cigar",
+        "url": "https://www.neptunecigar.com/cigars/casa-1910-cavalry-edition-lucero"
+      }
+    },
+    "binder": "San Andrés",
+    "filler": "Jalapa, Ometepe, Seco, Viso",
+    "wrapperOrigin": "Ekvador",
+    "binderOrigin": "Meksiko"
+  },
+  {
+    "id": "cig-casa-1910-mexigars-colorado",
+    "brand": "Casa 1910",
+    "line": "Mexigars Colorado",
+    "vitola": "Toro",
+    "format": "52 x 152mm",
+    "country": "Meksiko",
+    "wrapper": "Maduro",
+    "strength": 3,
+    "body": 3,
+    "flavorTags": [
+      "zemljano",
+      "zacini",
+      "duhan"
+    ],
+    "profileEstimated": true,
+    "formatEstimated": false,
+    "smokeTimeMin": 72,
+    "priceEUR": null,
+    "priceUrl": "https://www.neptunecigar.com/cigars/casa-1910-mexigars-colorado-toro-6--52",
+    "vitolas": [
+      {
+        "name": "Toro",
+        "format": "52 x 152mm",
+        "smokeTimeMin": 72,
+        "priceEUR": null,
+        "url": "https://www.neptunecigar.com/cigars/casa-1910-mexigars-colorado-toro-6--52",
+        "shape": "Toro",
+        "ring": 52,
+        "lengthMM": 152,
+        "regionLinks": {
+          "USA": {
+            "shop": "Neptune Cigar",
+            "url": "https://www.neptunecigar.com/cigars/casa-1910-mexigars-colorado-toro-6--52"
+          }
+        }
+      }
+    ],
+    "markets": [
+      "USA",
+      "WW"
+    ],
+    "regionLinks": {
+      "USA": {
+        "shop": "Neptune Cigar",
+        "url": "https://www.neptunecigar.com/cigars/casa-1910-mexigars-colorado-toro-6--52"
+      }
+    },
+    "catalogSource": "market",
+    "availabilityHR": [],
+    "notes": {
+      "hr": "Meksiko — linija iz trgovine Neptune Cigar.",
+      "en": "Mexico — line from Neptune Cigar."
+    },
+    "sourceUrls": [
+      "https://www.neptunecigar.com/cigars/casa-1910-mexigars-colorado-toro-6--52"
+    ],
+    "wrapperOrigin": "Meksiko",
+    "binderOrigin": "Meksiko",
+    "strengthFromShop": true
+  },
+  {
+    "id": "cig-casa-1910-mexigars-hba",
+    "brand": "Casa 1910",
+    "line": "Mexigars Hba",
+    "vitola": "Toro",
+    "format": "52 x 152mm",
+    "country": "Meksiko",
+    "wrapper": "Habano",
+    "strength": 3,
+    "body": 3,
+    "flavorTags": [],
+    "profileEstimated": true,
+    "formatEstimated": false,
+    "smokeTimeMin": 72,
+    "priceEUR": null,
+    "priceUrl": "https://www.neptunecigar.com/cigars/casa-1910-mexigars-hba-toro-6--52",
+    "vitolas": [
+      {
+        "name": "Toro",
+        "format": "52 x 152mm",
+        "smokeTimeMin": 72,
+        "priceEUR": null,
+        "url": "https://www.neptunecigar.com/cigars/casa-1910-mexigars-hba-toro-6--52",
+        "shape": "Toro",
+        "ring": 52,
+        "lengthMM": 152,
+        "regionLinks": {
+          "USA": {
+            "shop": "Neptune Cigar",
+            "url": "https://www.neptunecigar.com/cigars/casa-1910-mexigars-hba-toro-6--52"
+          }
+        }
+      }
+    ],
+    "markets": [
+      "USA",
+      "WW"
+    ],
+    "regionLinks": {
+      "USA": {
+        "shop": "Neptune Cigar",
+        "url": "https://www.neptunecigar.com/cigars/casa-1910-mexigars-hba-toro-6--52"
+      }
+    },
+    "catalogSource": "market",
+    "availabilityHR": [],
+    "notes": {
+      "hr": "Meksiko — linija iz trgovine Neptune Cigar.",
+      "en": "Mexico — line from Neptune Cigar."
+    },
+    "sourceUrls": [
+      "https://www.neptunecigar.com/cigars/casa-1910-mexigars-hba-toro-6--52"
+    ],
+    "binderOrigin": "Meksiko"
+  },
+  {
+    "id": "cig-casa-1910-sampetrina",
+    "brand": "Casa 1910",
+    "line": "Sampetrina",
+    "vitola": "Sampetrina",
+    "format": "50 x 127mm",
+    "country": "Meksiko",
+    "wrapper": "Habano",
+    "strength": 3,
+    "body": 4,
+    "flavorTags": [
+      "cedar",
+      "zacini",
+      "koza",
+      "kava"
+    ],
+    "smokeTimeMin": 50,
+    "priceEUR": 16.0,
+    "priceApprox": false,
+    "availabilityHR": [
+      "Havana Shop",
+      "The Humidor"
+    ],
+    "notes": {
+      "hr": "Sampetrina je jedno od izdanja Casa 1910 s meksičkim duhanom — prepoznatljiv zemljano-slatki profil kuće.",
+      "en": "Sampetrina is one of Casa 1910's Mexican-leaf releases — the house's recognisable earthy-sweet profile."
+    },
+    "markets": [
+      "HR",
+      "EU",
+      "USA",
+      "WW"
+    ],
+    "vitolas": [
+      {
+        "name": "Sampetrina",
+        "format": "50 x 127mm",
+        "smokeTimeMin": 50,
+        "priceEUR": 16.0,
+        "url": "https://havana-cigar-shop.com/proizvod/casa-1910-sampetrina-10/",
+        "ring": 50,
+        "lengthMM": 127,
+        "fetchedAt": "2026-07-01"
+      }
+    ],
+    "priceUrl": "https://havana-cigar-shop.com/proizvod/casa-1910-sampetrina-10/",
+    "profileEstimated": true,
+    "regionLinks": {
+      "HR": {
+        "shop": "Havana Cigar Shop",
+        "url": "https://havana-cigar-shop.com/proizvod/casa-1910-sampetrina-10/",
+        "priceEUR": 16.0,
+        "fetchedAt": "2026-07-01"
+      },
+      "EU": {
+        "shop": "CigarWorld",
+        "url": "https://www.cigarworld.de/en/zigarren/dominikanische-republik/casa-1910-soldadera-edition-sampetrina-robusto-90017031_58882",
+        "priceEUR": 14.5,
+        "fetchedAt": "2026-07-01"
+      },
+      "USA": {
+        "shop": "Neptune Cigar",
+        "url": "https://www.neptunecigar.com/cigars/casa-1910-soldadera-edition-sampetrina-robusto"
+      }
+    },
+    "binder": "Dominican Republic",
+    "filler": "Dominican Republic, Mexico",
+    "wrapperOrigin": "SAD",
+    "binderOrigin": "Dominikanska Republika"
+  },
+  {
+    "id": "cig-casa-1910-teniente-angela",
+    "brand": "Casa 1910",
+    "line": "Teniente Angela",
+    "vitola": "Teniente Angela",
+    "format": "52 x 152mm",
+    "country": "Meksiko",
+    "wrapper": "Habano",
+    "strength": 3,
+    "body": 4,
+    "flavorTags": [
+      "cedar",
+      "zacini",
+      "koza",
+      "kava"
+    ],
+    "smokeTimeMin": 45,
+    "priceEUR": 14.5,
+    "priceApprox": false,
+    "availabilityHR": [
+      "Havana Shop",
+      "The Humidor"
+    ],
+    "notes": {
+      "hr": "Teniente Angela je nazvana po revolucionarki Ángeli Jiménez — punija Casa 1910 cigara s tamnim pokrovom.",
+      "en": "Teniente Angela is named for the revolutionary Ángela Jiménez — a fuller Casa 1910 under a dark wrapper."
+    },
+    "markets": [
+      "HR",
+      "EU",
+      "USA",
+      "WW"
+    ],
+    "vitolas": [
+      {
+        "name": "Teniente Angela",
+        "format": "52 x 152mm",
+        "smokeTimeMin": 45,
+        "priceEUR": 14.5,
+        "url": "https://havana-cigar-shop.com/proizvod/casa-1910-teniente-angela-10/",
+        "ring": 52,
+        "lengthMM": 152,
+        "fetchedAt": "2026-07-01"
+      }
+    ],
+    "priceUrl": "https://havana-cigar-shop.com/proizvod/casa-1910-teniente-angela-10/",
+    "profileEstimated": true,
+    "regionLinks": {
+      "HR": {
+        "shop": "Havana Cigar Shop",
+        "url": "https://havana-cigar-shop.com/proizvod/casa-1910-teniente-angela-10/",
+        "priceEUR": 14.5,
+        "fetchedAt": "2026-07-01"
+      },
+      "EU": {
+        "shop": "CigarWorld",
+        "url": "https://www.cigarworld.de/en/zigarren/dominikanische-republik/casa-1910-soldadera-edition-teniente-angela-toro-90017031_58883",
+        "priceEUR": 16.9,
+        "fetchedAt": "2026-07-01"
+      },
+      "USA": {
+        "shop": "Neptune Cigar",
+        "url": "https://www.neptunecigar.com/cigars/casa-1910-soldadera-edition-teniente-angela-toro"
+      }
+    },
+    "binder": "Meksiko/Dominikanska Republika",
+    "filler": "Dominikanska Republika/Nikaragva",
+    "wrapperOrigin": "Ekvador",
+    "binderOrigin": "Dominikanska Republika"
+  },
+  {
+    "id": "cig-casa-1910-tierra-blanca",
+    "brand": "Casa 1910",
+    "line": "Tierra Blanca",
+    "vitola": "Tierra Blanca",
+    "format": "54 x 152mm",
+    "country": "Meksiko",
+    "wrapper": "Habano",
+    "strength": 3,
+    "body": 4,
+    "flavorTags": [
+      "cedar",
+      "zacini",
+      "koza",
+      "kava"
+    ],
+    "smokeTimeMin": 45,
+    "priceEUR": 15.5,
+    "priceApprox": false,
+    "availabilityHR": [
+      "Havana Shop",
+      "The Humidor"
+    ],
+    "notes": {
+      "hr": "Tierra Blanca je blaži kraj Casa 1910 ponude — svjetliji pokrov i kremastiji, mekši dim.",
+      "en": "Tierra Blanca is the milder end of Casa 1910's range — a lighter wrapper and a creamier, softer smoke."
+    },
+    "markets": [
+      "HR",
+      "EU",
+      "USA",
+      "WW"
+    ],
+    "vitolas": [
+      {
+        "name": "Tierra Blanca",
+        "format": "54 x 152mm",
+        "smokeTimeMin": 45,
+        "priceEUR": 15.5,
+        "url": "https://havana-cigar-shop.com/proizvod/casa-1910-tierra-blanca-10/",
+        "ring": 54,
+        "lengthMM": 152,
+        "regionLinks": {
+          "USA": {
+            "shop": "Neptune Cigar",
+            "url": "https://www.neptunecigar.com/cigars/casa-1910-revolutionary-edition-tierra-blanca"
+          }
+        },
+        "fetchedAt": "2026-07-01"
+      }
+    ],
+    "priceUrl": "https://havana-cigar-shop.com/proizvod/casa-1910-tierra-blanca-10/",
+    "profileEstimated": true,
+    "regionLinks": {
+      "HR": {
+        "shop": "Havana Cigar Shop",
+        "url": "https://havana-cigar-shop.com/proizvod/casa-1910-tierra-blanca-10/",
+        "priceEUR": 15.5,
+        "fetchedAt": "2026-07-01"
+      },
+      "EU": {
+        "shop": "CigarWorld",
+        "url": "https://www.cigarworld.de/en/zigarren/mexiko/casa-1910-revolutionary-edition-tierra-blanca-90016305_58872",
+        "priceEUR": 15.9,
+        "fetchedAt": "2026-07-01"
+      },
+      "USA": {
+        "shop": "Neptune Cigar",
+        "url": "https://www.neptunecigar.com/cigars/casa-1910-tierra-blanca-robusto-5--50"
+      }
+    },
+    "binder": "Meksiko",
+    "filler": "Meksiko",
+    "wrapperOrigin": "Meksiko",
+    "binderOrigin": "Meksiko",
+    "fillerOrigin": "Meksiko",
+    "isPuro": true,
+    "sourceUrls": [
+      "https://www.neptunecigar.com/cigars/casa-1910-revolutionary-edition-tierra-blanca"
+    ]
+  },
+  {
     "id": "cig-casa-carrillo-2025-taa-exclusive",
     "brand": "Casa Carrillo",
     "line": "2025 TAA Exclusive",
@@ -51721,70 +52420,6 @@
     "fillerOrigin": "Nikaragva"
   },
   {
-    "id": "cig-casa-de-garcia-maduro",
-    "brand": "Casa de García",
-    "line": "Maduro",
-    "vitola": "Robusto",
-    "format": "50 x 124mm",
-    "country": "Nikaragva",
-    "wrapper": "Maduro",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [
-      "kakao",
-      "cedar",
-      "zacini",
-      "duhan"
-    ],
-    "profileEstimated": true,
-    "formatEstimated": true,
-    "smokeTimeMin": 59,
-    "priceEUR": null,
-    "priceUrl": "https://www.neptunecigar.com/cigars/casa-de-garcia-maduro-robusto",
-    "vitolas": [
-      {
-        "name": "Robusto",
-        "format": "50 x 124mm",
-        "smokeTimeMin": 59,
-        "priceEUR": null,
-        "url": "https://www.neptunecigar.com/cigars/casa-de-garcia-maduro-robusto",
-        "shape": "Robusto",
-        "ring": 50,
-        "lengthMM": 124,
-        "regionLinks": {
-          "USA": {
-            "shop": "Neptune Cigar",
-            "url": "https://www.neptunecigar.com/cigars/casa-de-garcia-maduro-robusto"
-          }
-        }
-      }
-    ],
-    "markets": [
-      "USA",
-      "WW"
-    ],
-    "regionLinks": {
-      "USA": {
-        "shop": "Neptune Cigar",
-        "url": "https://www.neptunecigar.com/cigars/casa-de-garcia-maduro-robusto"
-      }
-    },
-    "catalogSource": "market",
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Nikaragva — linija iz trgovine Neptune Cigar.",
-      "en": "Nicaragua — line from Neptune Cigar."
-    },
-    "sourceUrls": [
-      "https://www.neptunecigar.com/cigars/casa-de-garcia-maduro-robusto",
-      "https://www.neptunecigar.com/cigars/casa-de-garcia-maduro-churchill"
-    ],
-    "wrapperOrigin": "SAD",
-    "binderOrigin": "SAD",
-    "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
-  },
-  {
     "id": "cig-casa-de-garcia-connecticut",
     "brand": "Casa de García",
     "line": "Connecticut",
@@ -51942,6 +52577,70 @@
     "priceUrl": "https://www.neptunecigar.com/cigars/casa-de-garcia-connecticut-magnum"
   },
   {
+    "id": "cig-casa-de-garcia-maduro",
+    "brand": "Casa de García",
+    "line": "Maduro",
+    "vitola": "Robusto",
+    "format": "50 x 124mm",
+    "country": "Nikaragva",
+    "wrapper": "Maduro",
+    "strength": 3,
+    "body": 3,
+    "flavorTags": [
+      "kakao",
+      "cedar",
+      "zacini",
+      "duhan"
+    ],
+    "profileEstimated": true,
+    "formatEstimated": true,
+    "smokeTimeMin": 59,
+    "priceEUR": null,
+    "priceUrl": "https://www.neptunecigar.com/cigars/casa-de-garcia-maduro-robusto",
+    "vitolas": [
+      {
+        "name": "Robusto",
+        "format": "50 x 124mm",
+        "smokeTimeMin": 59,
+        "priceEUR": null,
+        "url": "https://www.neptunecigar.com/cigars/casa-de-garcia-maduro-robusto",
+        "shape": "Robusto",
+        "ring": 50,
+        "lengthMM": 124,
+        "regionLinks": {
+          "USA": {
+            "shop": "Neptune Cigar",
+            "url": "https://www.neptunecigar.com/cigars/casa-de-garcia-maduro-robusto"
+          }
+        }
+      }
+    ],
+    "markets": [
+      "USA",
+      "WW"
+    ],
+    "regionLinks": {
+      "USA": {
+        "shop": "Neptune Cigar",
+        "url": "https://www.neptunecigar.com/cigars/casa-de-garcia-maduro-robusto"
+      }
+    },
+    "catalogSource": "market",
+    "availabilityHR": [],
+    "notes": {
+      "hr": "Nikaragva — linija iz trgovine Neptune Cigar.",
+      "en": "Nicaragua — line from Neptune Cigar."
+    },
+    "sourceUrls": [
+      "https://www.neptunecigar.com/cigars/casa-de-garcia-maduro-robusto",
+      "https://www.neptunecigar.com/cigars/casa-de-garcia-maduro-churchill"
+    ],
+    "wrapperOrigin": "SAD",
+    "binderOrigin": "SAD",
+    "fillerOrigin": "Dominikanska Republika",
+    "strengthFromShop": true
+  },
+  {
     "id": "cig-casa-de-nicaragua",
     "brand": "Casa de Nicaragua",
     "line": "Classic",
@@ -52046,6 +52745,65 @@
         "shop": "CigarWorld",
         "url": "https://www.cigarworld.de/en/zigarren/nicaragua/casa-de-nicaragua-coronas-90013787_29681",
         "priceEUR": 3.6,
+        "fetchedAt": "2026-07-01"
+      }
+    },
+    "formatEstimated": true
+  },
+  {
+    "id": "cig-casa-de-torres-bold",
+    "brand": "Casa de Torres",
+    "line": "Bold",
+    "vitola": "Short Robusto",
+    "format": "64 x 106mm",
+    "country": "Nikaragva",
+    "wrapper": "Ecuador",
+    "strength": 4,
+    "body": 4,
+    "flavorTags": [
+      "cedar",
+      "zacini",
+      "koza",
+      "kava"
+    ],
+    "profileEstimated": true,
+    "catalogSource": "market",
+    "smokeTimeMin": 41,
+    "priceEUR": null,
+    "priceApprox": false,
+    "availabilityHR": [],
+    "notes": {
+      "hr": "Nikaragva, Ecuador pokrov — jače snage, punijeg tijela. Okusi: cedrovina, začini, koža.",
+      "en": "Nicaragua, Ecuador wrapper — medium-full in strength, fuller-bodied. Notes: cedar, spices, leather."
+    },
+    "markets": [
+      "EU",
+      "WW"
+    ],
+    "vitolas": [
+      {
+        "name": "Short Robusto",
+        "format": "64 x 106mm",
+        "smokeTimeMin": 41,
+        "priceEUR": null,
+        "url": null,
+        "regionLinks": {
+          "EU": {
+            "shop": "CigarWorld",
+            "url": "https://www.cigarworld.de/en/zigarren/nicaragua/casa-de-torres-bold-short-robusto-01313_31689",
+            "priceEUR": 8.2,
+            "fetchedAt": "2026-07-01"
+          }
+        },
+        "ring": 64,
+        "lengthMM": 106
+      }
+    ],
+    "regionLinks": {
+      "EU": {
+        "shop": "CigarWorld",
+        "url": "https://www.cigarworld.de/en/zigarren/nicaragua/casa-de-torres-bold-short-robusto-01313_31689",
+        "priceEUR": 8.2,
         "fetchedAt": "2026-07-01"
       }
     },
@@ -52293,65 +53051,6 @@
         "shop": "CigarWorld",
         "url": "https://www.cigarworld.de/en/zigarren/nicaragua/casa-de-torres-half-corona-01313_5871",
         "priceEUR": 5.6,
-        "fetchedAt": "2026-07-01"
-      }
-    },
-    "formatEstimated": true
-  },
-  {
-    "id": "cig-casa-de-torres-bold",
-    "brand": "Casa de Torres",
-    "line": "Bold",
-    "vitola": "Short Robusto",
-    "format": "64 x 106mm",
-    "country": "Nikaragva",
-    "wrapper": "Ecuador",
-    "strength": 4,
-    "body": 4,
-    "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
-    ],
-    "profileEstimated": true,
-    "catalogSource": "market",
-    "smokeTimeMin": 41,
-    "priceEUR": null,
-    "priceApprox": false,
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Nikaragva, Ecuador pokrov — jače snage, punijeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Nicaragua, Ecuador wrapper — medium-full in strength, fuller-bodied. Notes: cedar, spices, leather."
-    },
-    "markets": [
-      "EU",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Short Robusto",
-        "format": "64 x 106mm",
-        "smokeTimeMin": 41,
-        "priceEUR": null,
-        "url": null,
-        "regionLinks": {
-          "EU": {
-            "shop": "CigarWorld",
-            "url": "https://www.cigarworld.de/en/zigarren/nicaragua/casa-de-torres-bold-short-robusto-01313_31689",
-            "priceEUR": 8.2,
-            "fetchedAt": "2026-07-01"
-          }
-        },
-        "ring": 64,
-        "lengthMM": 106
-      }
-    ],
-    "regionLinks": {
-      "EU": {
-        "shop": "CigarWorld",
-        "url": "https://www.cigarworld.de/en/zigarren/nicaragua/casa-de-torres-bold-short-robusto-01313_31689",
-        "priceEUR": 8.2,
         "fetchedAt": "2026-07-01"
       }
     },
@@ -52657,705 +53356,6 @@
       }
     },
     "formatEstimated": true
-  },
-  {
-    "id": "cig-casa-1910-as-de-oro",
-    "brand": "Casa 1910",
-    "line": "As De Oro",
-    "vitola": "De Oro",
-    "format": "54 x 152mm",
-    "country": "Meksiko",
-    "wrapper": "Habano",
-    "strength": 3,
-    "body": 4,
-    "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
-    ],
-    "smokeTimeMin": 45,
-    "priceEUR": 14.0,
-    "priceApprox": false,
-    "availabilityHR": [
-      "Havana Shop",
-      "The Humidor"
-    ],
-    "notes": {
-      "hr": "Casa 1910 nosi ime po godini meksičke revolucije, a linije po njezinim likovima i motivima. As de Oro je izdanje s meksičkim San Andrés duhanom — zemljano i slatko.",
-      "en": "Casa 1910 is named for the year of the Mexican Revolution, its lines for its figures and motifs. As de Oro is the San Andrés release — earthy and sweet."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "De Oro",
-        "format": "54 x 152mm",
-        "smokeTimeMin": 45,
-        "priceEUR": 14.0,
-        "url": "https://havana-cigar-shop.com/proizvod/casa-1910-as-de-oro-10/",
-        "ring": 54,
-        "lengthMM": 152,
-        "fetchedAt": "2026-07-01"
-      }
-    ],
-    "priceUrl": "https://havana-cigar-shop.com/proizvod/casa-1910-as-de-oro-10/",
-    "profileEstimated": true,
-    "regionLinks": {
-      "HR": {
-        "shop": "Havana Cigar Shop",
-        "url": "https://havana-cigar-shop.com/proizvod/casa-1910-as-de-oro-10/",
-        "priceEUR": 14.0,
-        "fetchedAt": "2026-07-01"
-      },
-      "EU": {
-        "shop": "CigarWorld",
-        "url": "https://www.cigarworld.de/en/zigarren/nicaragua/casa-1910-cavalry-edition-as-de-oro-toro-90017030_58879",
-        "priceEUR": 16.5,
-        "fetchedAt": "2026-07-01"
-      },
-      "USA": {
-        "shop": "Neptune Cigar",
-        "url": "https://www.neptunecigar.com/cigars/casa-1910-cavalry-edition-as-de-oro"
-      }
-    },
-    "binder": "Meksiko",
-    "filler": "Nikaragva",
-    "wrapperOrigin": "Ekvador",
-    "binderOrigin": "Meksiko",
-    "fillerOrigin": "Nikaragva",
-    "isPuro": false
-  },
-  {
-    "id": "cig-casa-1910-cuchillo-parado",
-    "brand": "Casa 1910",
-    "line": "Cuchillo Parado",
-    "vitola": "Cuchillo Parado",
-    "format": "50 x 127mm",
-    "country": "Meksiko",
-    "wrapper": "Sumatra seed (Meksiko)",
-    "strength": 3,
-    "body": 4,
-    "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
-    ],
-    "smokeTimeMin": 45,
-    "priceEUR": 14.0,
-    "priceApprox": false,
-    "availabilityHR": [
-      "Havana Shop",
-      "The Humidor"
-    ],
-    "notes": {
-      "hr": "Cuchillo Parado nosi ime mjesta gdje je počela meksička revolucija — San Andrés puro: tamno, zemljano, s kakaom i suhim voćem.",
-      "en": "Cuchillo Parado is named for the village where the Mexican revolution began — a San Andrés puro: dark, earthy, cocoa and dried fruit."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Cuchillo Parado",
-        "format": "50 x 127mm",
-        "smokeTimeMin": 45,
-        "priceEUR": 14.0,
-        "url": "https://havana-cigar-shop.com/proizvod/casa-1910-cuchillo-parado-10/",
-        "ring": 50,
-        "lengthMM": 127,
-        "regionLinks": {
-          "USA": {
-            "shop": "Neptune Cigar",
-            "url": "https://www.neptunecigar.com/cigars/casa-1910-cuchillo-parado-toro-6--52"
-          }
-        },
-        "fetchedAt": "2026-07-01"
-      }
-    ],
-    "priceUrl": "https://havana-cigar-shop.com/proizvod/casa-1910-cuchillo-parado-10/",
-    "regionLinks": {
-      "HR": {
-        "shop": "Havana Cigar Shop",
-        "url": "https://havana-cigar-shop.com/proizvod/casa-1910-cuchillo-parado-10/",
-        "priceEUR": 14.0,
-        "fetchedAt": "2026-07-01"
-      },
-      "EU": {
-        "shop": "CigarWorld",
-        "url": "https://www.cigarworld.de/en/zigarren/mexiko/casa-1910-revolutionary-edition-cuchillo-parado-90016305_50024",
-        "priceEUR": 13.9,
-        "fetchedAt": "2026-07-01"
-      },
-      "USA": {
-        "shop": "Neptune Cigar",
-        "url": "https://www.neptunecigar.com/cigars/casa-1910-revolutionary-edition-cuchillo-parado"
-      }
-    },
-    "binder": "Meksiko",
-    "filler": "Meksiko",
-    "wrapperOrigin": "Meksiko",
-    "binderOrigin": "Meksiko",
-    "fillerOrigin": "Meksiko",
-    "isPuro": true,
-    "sourceUrls": [
-      "https://www.neptunecigar.com/cigars/casa-1910-cuchillo-parado-toro-6--52"
-    ]
-  },
-  {
-    "id": "cig-casa-1910-jilguero",
-    "brand": "Casa 1910",
-    "line": "Jilguero",
-    "vitola": "Jilguero",
-    "format": "60 x 152mm",
-    "country": "Meksiko",
-    "wrapper": "Habano",
-    "strength": 3,
-    "body": 4,
-    "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
-    ],
-    "smokeTimeMin": 50,
-    "priceEUR": 14.5,
-    "priceApprox": false,
-    "availabilityHR": [
-      "Havana Shop",
-      "The Humidor"
-    ],
-    "notes": {
-      "hr": "Jilguero je jedan od blažih Casa 1910 blendova — meksički duhan u finijem, cvjetnijem izdanju.",
-      "en": "Jilguero is one of Casa 1910's milder blends — Mexican leaf in a finer, more floral register."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Jilguero",
-        "format": "60 x 152mm",
-        "smokeTimeMin": 50,
-        "priceEUR": 14.5,
-        "url": "https://havana-cigar-shop.com/proizvod/casa-1910-jilguero-10/",
-        "ring": 60,
-        "lengthMM": 152,
-        "fetchedAt": "2026-07-01"
-      }
-    ],
-    "priceUrl": "https://havana-cigar-shop.com/proizvod/casa-1910-jilguero-10/",
-    "profileEstimated": true,
-    "regionLinks": {
-      "HR": {
-        "shop": "Havana Cigar Shop",
-        "url": "https://havana-cigar-shop.com/proizvod/casa-1910-jilguero-10/",
-        "priceEUR": 14.5,
-        "fetchedAt": "2026-07-01"
-      },
-      "EU": {
-        "shop": "CigarWorld",
-        "url": "https://www.cigarworld.de/en/zigarren/nicaragua/casa-1910-cavalry-edition-jilguero-gordo-90017030_58881",
-        "priceEUR": 16.9,
-        "fetchedAt": "2026-07-01"
-      },
-      "USA": {
-        "shop": "Neptune Cigar",
-        "url": "https://www.neptunecigar.com/cigars/casa-1910-cavalry-edition-jilguero"
-      }
-    },
-    "binder": "San Andrés",
-    "filler": "Jalapa, Ometepe, Seco, Viso",
-    "wrapperOrigin": "Ekvador",
-    "binderOrigin": "Meksiko"
-  },
-  {
-    "id": "cig-casa-1910-la-coronela",
-    "brand": "Casa 1910",
-    "line": "La Coronela",
-    "vitola": "La Coronela",
-    "format": "58 x 140mm",
-    "country": "Meksiko",
-    "wrapper": "Habano",
-    "strength": 3,
-    "body": 4,
-    "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
-    ],
-    "smokeTimeMin": 45,
-    "priceEUR": 20.5,
-    "priceApprox": false,
-    "availabilityHR": [
-      "Havana Shop",
-      "The Humidor"
-    ],
-    "notes": {
-      "hr": "La Coronela nosi ime po ženama koje su vodile revolucionarne odrede — punija Casa 1910 linija s izraženim začinom.",
-      "en": "La Coronela is named for the women who led revolutionary units — a fuller Casa 1910 line with pronounced spice."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "La Coronela",
-        "format": "58 x 140mm",
-        "smokeTimeMin": 45,
-        "priceEUR": 20.5,
-        "url": "https://havana-cigar-shop.com/proizvod/casa-1910-la-coronela-10/",
-        "ring": 58,
-        "lengthMM": 140,
-        "fetchedAt": "2026-07-01"
-      }
-    ],
-    "priceUrl": "https://havana-cigar-shop.com/proizvod/casa-1910-la-coronela-10/",
-    "profileEstimated": true,
-    "regionLinks": {
-      "HR": {
-        "shop": "Havana Cigar Shop",
-        "url": "https://havana-cigar-shop.com/proizvod/casa-1910-la-coronela-10/",
-        "priceEUR": 20.5,
-        "fetchedAt": "2026-07-01"
-      },
-      "EU": {
-        "shop": "CigarWorld",
-        "url": "https://www.cigarworld.de/en/zigarren/dominikanische-republik/casa-1910-soldadera-edition-la-coronela-majestuoso-90017031_58884",
-        "priceEUR": 20.0,
-        "fetchedAt": "2026-07-01"
-      },
-      "USA": {
-        "shop": "Neptune Cigar",
-        "url": "https://www.neptunecigar.com/cigars/casa-1910-soldadera-edition-la-coronela-majestuoso"
-      }
-    },
-    "binder": "Brazil",
-    "filler": "Meksiko/Dominikanska Republika",
-    "wrapperOrigin": "Ekvador",
-    "binderOrigin": "Brazil"
-  },
-  {
-    "id": "cig-casa-1910-lucero",
-    "brand": "Casa 1910",
-    "line": "Lucero",
-    "vitola": "Lucero",
-    "format": "54 x 152mm",
-    "country": "Meksiko",
-    "wrapper": "Habano",
-    "strength": 3,
-    "body": 4,
-    "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
-    ],
-    "smokeTimeMin": 50,
-    "priceEUR": 18.0,
-    "priceApprox": false,
-    "availabilityHR": [
-      "Havana Shop",
-      "The Humidor"
-    ],
-    "notes": {
-      "hr": "Lucero je Casa 1910 blend srednje snage — meksički duhan s kakao-zemljanim tonom i mirnim gorenjem.",
-      "en": "Lucero is Casa 1910's medium blend — Mexican leaf with a cocoa-and-earth tone and a calm burn."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Lucero",
-        "format": "54 x 152mm",
-        "smokeTimeMin": 50,
-        "priceEUR": 18.0,
-        "url": "https://havana-cigar-shop.com/proizvod/casa-1910-lucero-10/",
-        "ring": 54,
-        "lengthMM": 152,
-        "fetchedAt": "2026-07-01"
-      }
-    ],
-    "priceUrl": "https://havana-cigar-shop.com/proizvod/casa-1910-lucero-10/",
-    "profileEstimated": true,
-    "regionLinks": {
-      "HR": {
-        "shop": "Havana Cigar Shop",
-        "url": "https://havana-cigar-shop.com/proizvod/casa-1910-lucero-10/",
-        "priceEUR": 18.0,
-        "fetchedAt": "2026-07-01"
-      },
-      "EU": {
-        "shop": "CigarWorld",
-        "url": "https://www.cigarworld.de/en/zigarren/nicaragua/casa-1910-cavalry-edition-lucero-torpedo-90017030_58880",
-        "priceEUR": 15.9,
-        "fetchedAt": "2026-07-01"
-      },
-      "USA": {
-        "shop": "Neptune Cigar",
-        "url": "https://www.neptunecigar.com/cigars/casa-1910-cavalry-edition-lucero"
-      }
-    },
-    "binder": "San Andrés",
-    "filler": "Jalapa, Ometepe, Seco, Viso",
-    "wrapperOrigin": "Ekvador",
-    "binderOrigin": "Meksiko"
-  },
-  {
-    "id": "cig-casa-1910-mexigars-colorado",
-    "brand": "Casa 1910",
-    "line": "Mexigars Colorado",
-    "vitola": "Toro",
-    "format": "52 x 152mm",
-    "country": "Meksiko",
-    "wrapper": "Maduro",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [
-      "zemljano",
-      "zacini",
-      "duhan"
-    ],
-    "profileEstimated": true,
-    "formatEstimated": false,
-    "smokeTimeMin": 72,
-    "priceEUR": null,
-    "priceUrl": "https://www.neptunecigar.com/cigars/casa-1910-mexigars-colorado-toro-6--52",
-    "vitolas": [
-      {
-        "name": "Toro",
-        "format": "52 x 152mm",
-        "smokeTimeMin": 72,
-        "priceEUR": null,
-        "url": "https://www.neptunecigar.com/cigars/casa-1910-mexigars-colorado-toro-6--52",
-        "shape": "Toro",
-        "ring": 52,
-        "lengthMM": 152,
-        "regionLinks": {
-          "USA": {
-            "shop": "Neptune Cigar",
-            "url": "https://www.neptunecigar.com/cigars/casa-1910-mexigars-colorado-toro-6--52"
-          }
-        }
-      }
-    ],
-    "markets": [
-      "USA",
-      "WW"
-    ],
-    "regionLinks": {
-      "USA": {
-        "shop": "Neptune Cigar",
-        "url": "https://www.neptunecigar.com/cigars/casa-1910-mexigars-colorado-toro-6--52"
-      }
-    },
-    "catalogSource": "market",
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Meksiko — linija iz trgovine Neptune Cigar.",
-      "en": "Mexico — line from Neptune Cigar."
-    },
-    "sourceUrls": [
-      "https://www.neptunecigar.com/cigars/casa-1910-mexigars-colorado-toro-6--52"
-    ],
-    "wrapperOrigin": "Meksiko",
-    "binderOrigin": "Meksiko",
-    "strengthFromShop": true
-  },
-  {
-    "id": "cig-casa-1910-mexigars-hba",
-    "brand": "Casa 1910",
-    "line": "Mexigars Hba",
-    "vitola": "Toro",
-    "format": "52 x 152mm",
-    "country": "Meksiko",
-    "wrapper": "Habano",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [],
-    "profileEstimated": true,
-    "formatEstimated": false,
-    "smokeTimeMin": 72,
-    "priceEUR": null,
-    "priceUrl": "https://www.neptunecigar.com/cigars/casa-1910-mexigars-hba-toro-6--52",
-    "vitolas": [
-      {
-        "name": "Toro",
-        "format": "52 x 152mm",
-        "smokeTimeMin": 72,
-        "priceEUR": null,
-        "url": "https://www.neptunecigar.com/cigars/casa-1910-mexigars-hba-toro-6--52",
-        "shape": "Toro",
-        "ring": 52,
-        "lengthMM": 152,
-        "regionLinks": {
-          "USA": {
-            "shop": "Neptune Cigar",
-            "url": "https://www.neptunecigar.com/cigars/casa-1910-mexigars-hba-toro-6--52"
-          }
-        }
-      }
-    ],
-    "markets": [
-      "USA",
-      "WW"
-    ],
-    "regionLinks": {
-      "USA": {
-        "shop": "Neptune Cigar",
-        "url": "https://www.neptunecigar.com/cigars/casa-1910-mexigars-hba-toro-6--52"
-      }
-    },
-    "catalogSource": "market",
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Meksiko — linija iz trgovine Neptune Cigar.",
-      "en": "Mexico — line from Neptune Cigar."
-    },
-    "sourceUrls": [
-      "https://www.neptunecigar.com/cigars/casa-1910-mexigars-hba-toro-6--52"
-    ],
-    "binderOrigin": "Meksiko"
-  },
-  {
-    "id": "cig-casa-1910-sampetrina",
-    "brand": "Casa 1910",
-    "line": "Sampetrina",
-    "vitola": "Sampetrina",
-    "format": "50 x 127mm",
-    "country": "Meksiko",
-    "wrapper": "Habano",
-    "strength": 3,
-    "body": 4,
-    "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
-    ],
-    "smokeTimeMin": 50,
-    "priceEUR": 16.0,
-    "priceApprox": false,
-    "availabilityHR": [
-      "Havana Shop",
-      "The Humidor"
-    ],
-    "notes": {
-      "hr": "Sampetrina je jedno od izdanja Casa 1910 s meksičkim duhanom — prepoznatljiv zemljano-slatki profil kuće.",
-      "en": "Sampetrina is one of Casa 1910's Mexican-leaf releases — the house's recognisable earthy-sweet profile."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Sampetrina",
-        "format": "50 x 127mm",
-        "smokeTimeMin": 50,
-        "priceEUR": 16.0,
-        "url": "https://havana-cigar-shop.com/proizvod/casa-1910-sampetrina-10/",
-        "ring": 50,
-        "lengthMM": 127,
-        "fetchedAt": "2026-07-01"
-      }
-    ],
-    "priceUrl": "https://havana-cigar-shop.com/proizvod/casa-1910-sampetrina-10/",
-    "profileEstimated": true,
-    "regionLinks": {
-      "HR": {
-        "shop": "Havana Cigar Shop",
-        "url": "https://havana-cigar-shop.com/proizvod/casa-1910-sampetrina-10/",
-        "priceEUR": 16.0,
-        "fetchedAt": "2026-07-01"
-      },
-      "EU": {
-        "shop": "CigarWorld",
-        "url": "https://www.cigarworld.de/en/zigarren/dominikanische-republik/casa-1910-soldadera-edition-sampetrina-robusto-90017031_58882",
-        "priceEUR": 14.5,
-        "fetchedAt": "2026-07-01"
-      },
-      "USA": {
-        "shop": "Neptune Cigar",
-        "url": "https://www.neptunecigar.com/cigars/casa-1910-soldadera-edition-sampetrina-robusto"
-      }
-    },
-    "binder": "Dominican Republic",
-    "filler": "Dominican Republic, Mexico",
-    "wrapperOrigin": "SAD",
-    "binderOrigin": "Dominikanska Republika"
-  },
-  {
-    "id": "cig-casa-1910-teniente-angela",
-    "brand": "Casa 1910",
-    "line": "Teniente Angela",
-    "vitola": "Teniente Angela",
-    "format": "52 x 152mm",
-    "country": "Meksiko",
-    "wrapper": "Habano",
-    "strength": 3,
-    "body": 4,
-    "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
-    ],
-    "smokeTimeMin": 45,
-    "priceEUR": 14.5,
-    "priceApprox": false,
-    "availabilityHR": [
-      "Havana Shop",
-      "The Humidor"
-    ],
-    "notes": {
-      "hr": "Teniente Angela je nazvana po revolucionarki Ángeli Jiménez — punija Casa 1910 cigara s tamnim pokrovom.",
-      "en": "Teniente Angela is named for the revolutionary Ángela Jiménez — a fuller Casa 1910 under a dark wrapper."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Teniente Angela",
-        "format": "52 x 152mm",
-        "smokeTimeMin": 45,
-        "priceEUR": 14.5,
-        "url": "https://havana-cigar-shop.com/proizvod/casa-1910-teniente-angela-10/",
-        "ring": 52,
-        "lengthMM": 152,
-        "fetchedAt": "2026-07-01"
-      }
-    ],
-    "priceUrl": "https://havana-cigar-shop.com/proizvod/casa-1910-teniente-angela-10/",
-    "profileEstimated": true,
-    "regionLinks": {
-      "HR": {
-        "shop": "Havana Cigar Shop",
-        "url": "https://havana-cigar-shop.com/proizvod/casa-1910-teniente-angela-10/",
-        "priceEUR": 14.5,
-        "fetchedAt": "2026-07-01"
-      },
-      "EU": {
-        "shop": "CigarWorld",
-        "url": "https://www.cigarworld.de/en/zigarren/dominikanische-republik/casa-1910-soldadera-edition-teniente-angela-toro-90017031_58883",
-        "priceEUR": 16.9,
-        "fetchedAt": "2026-07-01"
-      },
-      "USA": {
-        "shop": "Neptune Cigar",
-        "url": "https://www.neptunecigar.com/cigars/casa-1910-soldadera-edition-teniente-angela-toro"
-      }
-    },
-    "binder": "Meksiko/Dominikanska Republika",
-    "filler": "Dominikanska Republika/Nikaragva",
-    "wrapperOrigin": "Ekvador",
-    "binderOrigin": "Dominikanska Republika"
-  },
-  {
-    "id": "cig-casa-1910-tierra-blanca",
-    "brand": "Casa 1910",
-    "line": "Tierra Blanca",
-    "vitola": "Tierra Blanca",
-    "format": "54 x 152mm",
-    "country": "Meksiko",
-    "wrapper": "Habano",
-    "strength": 3,
-    "body": 4,
-    "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
-    ],
-    "smokeTimeMin": 45,
-    "priceEUR": 15.5,
-    "priceApprox": false,
-    "availabilityHR": [
-      "Havana Shop",
-      "The Humidor"
-    ],
-    "notes": {
-      "hr": "Tierra Blanca je blaži kraj Casa 1910 ponude — svjetliji pokrov i kremastiji, mekši dim.",
-      "en": "Tierra Blanca is the milder end of Casa 1910's range — a lighter wrapper and a creamier, softer smoke."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Tierra Blanca",
-        "format": "54 x 152mm",
-        "smokeTimeMin": 45,
-        "priceEUR": 15.5,
-        "url": "https://havana-cigar-shop.com/proizvod/casa-1910-tierra-blanca-10/",
-        "ring": 54,
-        "lengthMM": 152,
-        "regionLinks": {
-          "USA": {
-            "shop": "Neptune Cigar",
-            "url": "https://www.neptunecigar.com/cigars/casa-1910-revolutionary-edition-tierra-blanca"
-          }
-        },
-        "fetchedAt": "2026-07-01"
-      }
-    ],
-    "priceUrl": "https://havana-cigar-shop.com/proizvod/casa-1910-tierra-blanca-10/",
-    "profileEstimated": true,
-    "regionLinks": {
-      "HR": {
-        "shop": "Havana Cigar Shop",
-        "url": "https://havana-cigar-shop.com/proizvod/casa-1910-tierra-blanca-10/",
-        "priceEUR": 15.5,
-        "fetchedAt": "2026-07-01"
-      },
-      "EU": {
-        "shop": "CigarWorld",
-        "url": "https://www.cigarworld.de/en/zigarren/mexiko/casa-1910-revolutionary-edition-tierra-blanca-90016305_58872",
-        "priceEUR": 15.9,
-        "fetchedAt": "2026-07-01"
-      },
-      "USA": {
-        "shop": "Neptune Cigar",
-        "url": "https://www.neptunecigar.com/cigars/casa-1910-tierra-blanca-robusto-5--50"
-      }
-    },
-    "binder": "Meksiko",
-    "filler": "Meksiko",
-    "wrapperOrigin": "Meksiko",
-    "binderOrigin": "Meksiko",
-    "fillerOrigin": "Meksiko",
-    "isPuro": true,
-    "sourceUrls": [
-      "https://www.neptunecigar.com/cigars/casa-1910-revolutionary-edition-tierra-blanca"
-    ]
   },
   {
     "id": "cig-casa-fernandez-miami-reserva",
