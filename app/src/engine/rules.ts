@@ -73,6 +73,10 @@ export const TAG_ALIASES: Record<string, string> = {
   vegetal: "vegetalno",
   // botanical / floral notes
   kamilica: "cvjetno",
+  // maritime/sea notes (coastal/Islay whiskies) → mineral
+  morski: "mineralno",
+  // cinnamon variant (Jack Daniel's Fire scrape artefact) → same as cimet
+  cmet: "zacini-slatki",
 };
 
 export const normalizeTag = (t: string): string => TAG_ALIASES[t] ?? t;
