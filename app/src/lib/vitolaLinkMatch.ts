@@ -70,12 +70,7 @@ const isDiscriminating = (t: string, known: string[]): boolean =>
 
 /** "robusto" ≈ "robustos", ali "toro" ≠ "torpedo". */
 const tokenPresent = (token: string, pool: string[]): boolean =>
-  pool.some(
-    (u) =>
-      u === token ||
-      (token.length >= 4 && u.startsWith(token)) ||
-      (u.length >= 4 && token.startsWith(u)),
-  );
+  pool.some((u) => u === token || u === token + "s" || token === u + "s");
 
 /** Slug doslovno sadrži svaku riječ iz imena vitole. */
 function strictFit(url: string, vitolaName: string): boolean {
