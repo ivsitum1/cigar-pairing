@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T21:07:17.596134+00:00",
+  "generated_at": "2026-08-06T02:51:49.626843+00:00",
   "fetch": {
     "probed_at": null,
     "full_catalog_fetch": false,
@@ -17,8 +17,8 @@
       "USA": 1264
     }
   },
-  "removed_count": 0,
-  "removed_eu": 0,
+  "removed_count": 1,
+  "removed_eu": 1,
   "removed_usa": 0,
   "added_count": 0,
   "added_eu": 0,
@@ -108,9 +108,23 @@
     "USA": 0
   },
   "markets_remaining": {
-    "EU": 1711,
-    "USA": 1951
+    "EU": 1724,
+    "USA": 1922
   },
-  "removed": [],
+  "removed": [
+    {
+      "id": "cig-padron-1964-anniversary",
+      "brand": "Padrón",
+      "line": "1964 Anniversary",
+      "region": "EU",
+      "catalogSource": null,
+      "previous_markets": [
+        "EU",
+        "USA",
+        "WW"
+      ],
+      "reason": "no-proof-no-snapshot-match"
+    }
+  ],
   "added": []
 }

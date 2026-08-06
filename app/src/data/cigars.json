@@ -981,8 +981,8 @@
       "en": "Nicaragua, Nicaragua wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
     },
     "markets": [
-      "EU",
       "HR",
+      "EU",
       "USA",
       "WW"
     ],
@@ -1857,9 +1857,9 @@
       "en": "Dominican Republic, Criollo wrapper — medium-full in strength, fuller-bodied. Notes: pepper, spices, leather."
     },
     "markets": [
+      "HR",
       "EU",
-      "WW",
-      "HR"
+      "WW"
     ],
     "vitolas": [
       {
@@ -2048,9 +2048,9 @@
       "en": "Dominican Republic, San Andrés wrapper — medium in strength, fuller-bodied. Notes: cocoa, coffee, caramel."
     },
     "markets": [
+      "HR",
       "EU",
-      "WW",
-      "HR"
+      "WW"
     ],
     "vitolas": [
       {
@@ -5526,6 +5526,7 @@
       }
     ],
     "markets": [
+      "HR",
       "USA",
       "WW"
     ],
@@ -5536,7 +5537,9 @@
       }
     },
     "catalogSource": "market",
-    "availabilityHR": [],
+    "availabilityHR": [
+      "The Humidor"
+    ],
     "notes": {
       "hr": "Nikaragva — linija iz trgovine Neptune Cigar.",
       "en": "Nicaragua — line from Neptune Cigar."
@@ -5592,6 +5595,7 @@
       }
     ],
     "markets": [
+      "HR",
       "USA",
       "WW"
     ],
@@ -5602,7 +5606,9 @@
       }
     },
     "catalogSource": "market",
-    "availabilityHR": [],
+    "availabilityHR": [
+      "The Humidor"
+    ],
     "notes": {
       "hr": "Nikaragva — linija iz trgovine Neptune Cigar.",
       "en": "Nicaragua — line from Neptune Cigar."
@@ -5656,6 +5662,7 @@
       }
     ],
     "markets": [
+      "HR",
       "USA",
       "WW"
     ],
@@ -5666,7 +5673,9 @@
       }
     },
     "catalogSource": "market",
-    "availabilityHR": [],
+    "availabilityHR": [
+      "The Humidor"
+    ],
     "notes": {
       "hr": "Nikaragva — linija iz trgovine Neptune Cigar.",
       "en": "Nicaragua — line from Neptune Cigar."
@@ -5719,6 +5728,7 @@
       }
     ],
     "markets": [
+      "HR",
       "USA",
       "WW"
     ],
@@ -5729,7 +5739,9 @@
       }
     },
     "catalogSource": "market",
-    "availabilityHR": [],
+    "availabilityHR": [
+      "The Humidor"
+    ],
     "notes": {
       "hr": "Nikaragva — linija iz trgovine Neptune Cigar.",
       "en": "Nicaragua — line from Neptune Cigar."
@@ -6387,6 +6399,7 @@
       }
     ],
     "markets": [
+      "HR",
       "USA",
       "WW"
     ],
@@ -6397,7 +6410,9 @@
       }
     },
     "catalogSource": "market",
-    "availabilityHR": [],
+    "availabilityHR": [
+      "The Humidor"
+    ],
     "notes": {
       "hr": "Nikaragva — linija iz trgovine Neptune Cigar.",
       "en": "Nicaragua — line from Neptune Cigar."
@@ -19891,6 +19906,7 @@
       }
     ],
     "markets": [
+      "HR",
       "USA",
       "WW"
     ],
@@ -19901,7 +19917,9 @@
       }
     },
     "catalogSource": "market",
-    "availabilityHR": [],
+    "availabilityHR": [
+      "Havana Shop"
+    ],
     "notes": {
       "hr": "Dominikanska Republika — linija iz trgovine Neptune Cigar.",
       "en": "Dominican Republic — line from Neptune Cigar."
@@ -20843,6 +20861,7 @@
       }
     ],
     "markets": [
+      "HR",
       "USA",
       "WW"
     ],
@@ -20853,7 +20872,9 @@
       }
     },
     "catalogSource": "market",
-    "availabilityHR": [],
+    "availabilityHR": [
+      "Havana Shop"
+    ],
     "notes": {
       "hr": "Dominikanska Republika — linija iz trgovine Neptune Cigar.",
       "en": "Dominican Republic — line from Neptune Cigar."
@@ -24423,8 +24444,8 @@
       "en": "Asylum's mild side — Ecuadorian Connecticut Shade over Honduran filler, creamy and nutty, in the same oversized formats as the rest of the brand."
     },
     "markets": [
-      "EU",
       "HR",
+      "EU",
       "USA",
       "WW"
     ],
@@ -25481,16 +25502,18 @@
     "smokeTimeMin": 49,
     "priceEUR": null,
     "priceApprox": false,
-    "availabilityHR": [],
+    "availabilityHR": [
+      "The Humidor"
+    ],
     "notes": {
       "hr": "Insidious je pristupačnija Asylum linija; Short je njezin kratki format s ekvadorskim Connecticut pokrovom — blago i brzo.",
       "en": "Insidious is Asylum's more affordable line; Short is its compact size under an Ecuadorian Connecticut wrapper — mild and quick."
     },
     "markets": [
+      "HR",
       "EU",
       "USA",
-      "WW",
-      "HR"
+      "WW"
     ],
     "vitolas": [
       {
@@ -43017,8 +43040,8 @@
       "en": "Nicaragua, Nicaraguan wrapper — full in strength, medium-bodied. Notes: cedar, spices, leather."
     },
     "markets": [
-      "EU",
       "HR",
+      "EU",
       "USA",
       "WW"
     ],
@@ -45276,16 +45299,12 @@
     "smokeTimeMin": 50,
     "priceEUR": 11.4,
     "priceApprox": false,
-    "availabilityHR": [
-      "The Humidor",
-      "Havana Shop"
-    ],
+    "availabilityHR": [],
     "notes": {
       "hr": "Honduras, Habano pokrov — pune snage, punijeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Habano wrapper (Honduras); powerful, for seasoned smokers. Notes of cedar, spice, leather. Diploma series; medium-full balance."
     },
     "markets": [
-      "HR",
       "EU",
       "USA",
       "WW"
@@ -46109,6 +46128,7 @@
       }
     ],
     "markets": [
+      "HR",
       "USA",
       "WW"
     ],
@@ -46119,7 +46139,9 @@
       }
     },
     "catalogSource": "market",
-    "availabilityHR": [],
+    "availabilityHR": [
+      "Havana Shop"
+    ],
     "notes": {
       "hr": "Dominikanska Republika — linija iz trgovine Neptune Cigar.",
       "en": "Dominican Republic — line from Neptune Cigar."
@@ -73437,10 +73459,10 @@
       "en": "Dominican Republic, Ecuador wrapper — medium-full in strength, fuller-bodied. Notes: cocoa, coffee, caramel."
     },
     "markets": [
+      "HR",
       "EU",
       "USA",
-      "WW",
-      "HR"
+      "WW"
     ],
     "vitolas": [
       {
@@ -73626,6 +73648,7 @@
       }
     ],
     "markets": [
+      "HR",
       "USA",
       "WW"
     ],
@@ -73636,7 +73659,9 @@
       }
     },
     "catalogSource": "market",
-    "availabilityHR": [],
+    "availabilityHR": [
+      "Havana Shop"
+    ],
     "notes": {
       "hr": "Dominikanska Republika — linija iz trgovine Neptune Cigar.",
       "en": "Dominican Republic — line from Neptune Cigar."
@@ -87229,9 +87254,9 @@
       }
     ],
     "markets": [
+      "HR",
       "EU",
-      "WW",
-      "HR"
+      "WW"
     ],
     "availabilityHR": [
       "Tobacco Petica (Branimir)"
@@ -92953,8 +92978,8 @@
       "en": "Nicaragua, Ecuador Habano wrapper — medium-full in strength, medium-bodied. Notes: cedar, spices, leather."
     },
     "markets": [
-      "EU",
       "HR",
+      "EU",
       "USA",
       "WW"
     ],
@@ -95102,9 +95127,9 @@
       "en": "Dominican Republic, Connecticut Broadleaf wrapper — full in strength, fuller-bodied. Notes: cocoa, coffee, caramel."
     },
     "markets": [
+      "HR",
       "USA",
-      "WW",
-      "HR"
+      "WW"
     ],
     "vitolas": [
       {
@@ -97124,6 +97149,7 @@
       }
     ],
     "markets": [
+      "HR",
       "USA",
       "WW"
     ],
@@ -97134,7 +97160,9 @@
       }
     },
     "catalogSource": "market",
-    "availabilityHR": [],
+    "availabilityHR": [
+      "The Humidor"
+    ],
     "notes": {
       "hr": "Honduras — linija iz trgovine Neptune Cigar.",
       "en": "Honduras — line from Neptune Cigar."
@@ -97188,6 +97216,7 @@
       }
     ],
     "markets": [
+      "HR",
       "USA",
       "WW"
     ],
@@ -97198,7 +97227,9 @@
       }
     },
     "catalogSource": "market",
-    "availabilityHR": [],
+    "availabilityHR": [
+      "The Humidor"
+    ],
     "notes": {
       "hr": "Honduras — linija iz trgovine Neptune Cigar.",
       "en": "Honduras — line from Neptune Cigar."
@@ -97383,6 +97414,7 @@
       }
     ],
     "markets": [
+      "HR",
       "USA",
       "WW"
     ],
@@ -97393,7 +97425,9 @@
       }
     },
     "catalogSource": "market",
-    "availabilityHR": [],
+    "availabilityHR": [
+      "The Humidor"
+    ],
     "notes": {
       "hr": "Honduras — linija iz trgovine Neptune Cigar.",
       "en": "Honduras — line from Neptune Cigar."
@@ -108614,6 +108648,7 @@
       }
     ],
     "markets": [
+      "HR",
       "USA",
       "WW"
     ],
@@ -108624,7 +108659,9 @@
       }
     },
     "catalogSource": "market",
-    "availabilityHR": [],
+    "availabilityHR": [
+      "Havana Shop"
+    ],
     "notes": {
       "hr": "Honduras — linija iz trgovine Neptune Cigar.",
       "en": "Honduras — line from Neptune Cigar."
@@ -109513,6 +109550,7 @@
       }
     ],
     "markets": [
+      "HR",
       "USA",
       "WW"
     ],
@@ -109523,7 +109561,9 @@
       }
     },
     "catalogSource": "market",
-    "availabilityHR": [],
+    "availabilityHR": [
+      "Havana Shop"
+    ],
     "notes": {
       "hr": "Honduras — linija iz trgovine Neptune Cigar.",
       "en": "Honduras — line from Neptune Cigar."
@@ -110150,9 +110190,9 @@
       "en": "Dominican Republic, H-2000 wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
     },
     "markets": [
+      "HR",
       "EU",
-      "WW",
-      "HR"
+      "WW"
     ],
     "vitolas": [
       {
@@ -132102,6 +132142,7 @@
       }
     ],
     "markets": [
+      "HR",
       "USA",
       "WW"
     ],
@@ -132112,7 +132153,9 @@
       }
     },
     "catalogSource": "market",
-    "availabilityHR": [],
+    "availabilityHR": [
+      "The Humidor"
+    ],
     "notes": {
       "hr": "Nikaragva — linija iz trgovine Neptune Cigar.",
       "en": "Nicaragua — line from Neptune Cigar."
@@ -132674,9 +132717,9 @@
       "en": "Nicaragua, San Andrés wrapper — medium in strength, fuller-bodied. Notes: cocoa, coffee, caramel."
     },
     "markets": [
+      "HR",
       "EU",
-      "WW",
-      "HR"
+      "WW"
     ],
     "vitolas": [
       {
@@ -136586,12 +136629,15 @@
     "smokeTimeMin": 58,
     "priceEUR": null,
     "priceApprox": false,
-    "availabilityHR": [],
+    "availabilityHR": [
+      "The Humidor"
+    ],
     "notes": {
       "hr": "Nikaragva, Connecticut, H-2000 pokrov — lagane snage, laganog tijela. Okusi: kremasto, cedrovina, orašasti tonovi.",
       "en": "Nicaragua, Connecticut, H-2000 wrapper — mild in strength, light-bodied. Notes: creamy, cedar, nutty."
     },
     "markets": [
+      "HR",
       "EU",
       "WW"
     ],
@@ -136655,9 +136701,9 @@
       "en": "Nicaragua, Cameroon wrapper — mild in strength, medium-bodied. Notes: sweet spices, cedar, nutty."
     },
     "markets": [
+      "HR",
       "EU",
-      "WW",
-      "HR"
+      "WW"
     ],
     "vitolas": [
       {
@@ -136862,9 +136908,9 @@
       "en": "Nicaragua, Ecuador wrapper — mild in strength, light-bodied. Notes: creamy, cedar, nutty."
     },
     "markets": [
+      "HR",
       "EU",
-      "WW",
-      "HR"
+      "WW"
     ],
     "vitolas": [
       {
@@ -147588,9 +147634,9 @@
       "en": "A value Honduran blend with an Ecuadorian wrapper and Nicaraguan/Colombian filler — mild to medium, with wood, nuts and a gentle sweetness. In Croatia: Polar Robusto and Gigante at Tobacco Petica, Branimir Center."
     },
     "markets": [
+      "HR",
       "EU",
-      "WW",
-      "HR"
+      "WW"
     ],
     "vitolas": [
       {
@@ -151122,6 +151168,7 @@
       }
     ],
     "markets": [
+      "HR",
       "USA",
       "WW"
     ],
@@ -151132,7 +151179,9 @@
       }
     },
     "catalogSource": "market",
-    "availabilityHR": [],
+    "availabilityHR": [
+      "The Humidor"
+    ],
     "notes": {
       "hr": "Dominikanska Republika — linija iz trgovine Neptune Cigar.",
       "en": "Dominican Republic — line from Neptune Cigar."
@@ -154653,6 +154702,7 @@
       }
     ],
     "markets": [
+      "HR",
       "USA",
       "WW"
     ],
@@ -154663,7 +154713,9 @@
       }
     },
     "catalogSource": "market",
-    "availabilityHR": [],
+    "availabilityHR": [
+      "The Humidor"
+    ],
     "notes": {
       "hr": "Dominikanska Republika — linija iz trgovine Neptune Cigar.",
       "en": "Dominican Republic — line from Neptune Cigar."
@@ -159857,6 +159909,7 @@
       }
     ],
     "markets": [
+      "HR",
       "USA",
       "WW"
     ],
@@ -159867,7 +159920,9 @@
       }
     },
     "catalogSource": "market",
-    "availabilityHR": [],
+    "availabilityHR": [
+      "Havana Shop"
+    ],
     "notes": {
       "hr": "Honduras — linija iz trgovine Neptune Cigar.",
       "en": "Honduras — line from Neptune Cigar."
@@ -159921,6 +159976,7 @@
       }
     ],
     "markets": [
+      "HR",
       "USA",
       "WW"
     ],
@@ -159931,7 +159987,9 @@
       }
     },
     "catalogSource": "market",
-    "availabilityHR": [],
+    "availabilityHR": [
+      "Havana Shop"
+    ],
     "notes": {
       "hr": "Honduras — linija iz trgovine Neptune Cigar.",
       "en": "Honduras — line from Neptune Cigar."
@@ -183454,6 +183512,7 @@
       }
     ],
     "markets": [
+      "HR",
       "USA",
       "WW"
     ],
@@ -183464,7 +183523,9 @@
       }
     },
     "catalogSource": "market",
-    "availabilityHR": [],
+    "availabilityHR": [
+      "Havana Shop"
+    ],
     "notes": {
       "hr": "Honduras — linija iz trgovine Neptune Cigar.",
       "en": "Honduras — line from Neptune Cigar."
@@ -189436,7 +189497,6 @@
     "priceEUR": 22,
     "priceApprox": true,
     "markets": [
-      "EU",
       "USA",
       "WW"
     ],
@@ -195305,9 +195365,9 @@
       "en": "Dominican Republic, H-2000 wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
     },
     "markets": [
+      "HR",
       "EU",
-      "WW",
-      "HR"
+      "WW"
     ],
     "vitolas": [
       {
@@ -196020,9 +196080,9 @@
       "en": "Dominican Republic, Connecticut wrapper — mild in strength, light-bodied. Notes: creamy, cedar, nutty."
     },
     "markets": [
+      "HR",
       "EU",
-      "WW",
-      "HR"
+      "WW"
     ],
     "vitolas": [
       {
@@ -201485,9 +201545,9 @@
       "en": "Nicaragua, Indonesia wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
     },
     "markets": [
+      "HR",
       "EU",
-      "WW",
-      "HR"
+      "WW"
     ],
     "vitolas": [
       {
@@ -204187,6 +204247,7 @@
       }
     ],
     "markets": [
+      "HR",
       "USA",
       "WW"
     ],
@@ -204197,7 +204258,9 @@
       }
     },
     "catalogSource": "market",
-    "availabilityHR": [],
+    "availabilityHR": [
+      "Havana Shop"
+    ],
     "notes": {
       "hr": "Nikaragva — linija iz trgovine Neptune Cigar.",
       "en": "Nicaragua — line from Neptune Cigar."
@@ -218023,16 +218086,12 @@
     "smokeTimeMin": 50,
     "priceEUR": 13.0,
     "priceApprox": false,
-    "availabilityHR": [
-      "The Humidor",
-      "Havana Shop"
-    ],
+    "availabilityHR": [],
     "notes": {
       "hr": "Honduras, Connecticut broadleaf maduro pokrov — srednje snage, punijeg tijela. Okusi: kakao, kava, karamela.",
       "en": "Connecticut broadleaf maduro wrapper (Honduras); balanced, medium in strength. Notes of cocoa, coffee, caramel. 1990 maduro; sweet and approachable."
     },
     "markets": [
-      "HR",
       "EU",
       "USA",
       "WW"
@@ -245417,6 +245476,7 @@
       }
     ],
     "markets": [
+      "HR",
       "USA",
       "WW"
     ],
@@ -245427,7 +245487,9 @@
       }
     },
     "catalogSource": "market",
-    "availabilityHR": [],
+    "availabilityHR": [
+      "Havana Shop"
+    ],
     "notes": {
       "hr": "Honduras — linija iz trgovine Neptune Cigar.",
       "en": "Honduras — line from Neptune Cigar."
@@ -245585,15 +245647,12 @@
     "smokeTimeMin": 45,
     "priceEUR": 7,
     "priceApprox": true,
-    "availabilityHR": [
-      "Havana Shop"
-    ],
+    "availabilityHR": [],
     "notes": {
       "hr": "Honduraški value — pošten, blag-srednji dnevni dim.",
       "en": "Honduran value — honest mild-medium daily smoke."
     },
     "markets": [
-      "HR",
       "EU",
       "USA",
       "WW"
@@ -250488,6 +250547,7 @@
       }
     ],
     "markets": [
+      "HR",
       "USA",
       "WW"
     ],
@@ -250498,7 +250558,9 @@
       }
     },
     "catalogSource": "market",
-    "availabilityHR": [],
+    "availabilityHR": [
+      "The Humidor"
+    ],
     "notes": {
       "hr": "Nikaragva — linija iz trgovine Neptune Cigar.",
       "en": "Nicaragua — line from Neptune Cigar."
@@ -250547,6 +250609,7 @@
       }
     ],
     "markets": [
+      "HR",
       "USA",
       "WW"
     ],
@@ -250557,7 +250620,9 @@
       }
     },
     "catalogSource": "market",
-    "availabilityHR": [],
+    "availabilityHR": [
+      "The Humidor"
+    ],
     "notes": {
       "hr": "Nikaragva — linija iz trgovine Neptune Cigar.",
       "en": "Nicaragua — line from Neptune Cigar."

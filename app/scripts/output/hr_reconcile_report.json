@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-05T21:05:47.454360+00:00",
-  "snapshot_at": "2026-08-05T21:05:45.948468+00:00",
+  "generated_at": "2026-08-06T02:51:36.671197+00:00",
+  "snapshot_at": "2026-08-06T02:51:31.676671+00:00",
   "present_keys": 599,
   "removed_count": 3,
-  "added_count": 15,
+  "added_count": 25,
   "hr_without_source": 0,
-  "hr_markets_remaining": 401,
+  "hr_markets_remaining": 403,
   "removed": [
     {
       "id": "cig-camacho-diploma",
@@ -89,6 +89,14 @@
       ]
     },
     {
+      "id": "cig-aging-room-quattro-nicaragua",
+      "brand": "Aging Room",
+      "line": "Quattro Nicaragua",
+      "shops": [
+        "The Humidor"
+      ]
+    },
+    {
       "id": "cig-arturo-fuente-cuban",
       "brand": "Arturo Fuente",
       "line": "Cuban",
@@ -97,11 +105,27 @@
       ]
     },
     {
-      "id": "cig-asylum-867-zero",
-      "brand": "Asylum",
-      "line": "867",
+      "id": "cig-arturo-fuente-maduro",
+      "brand": "Arturo Fuente",
+      "line": "Maduro",
       "shops": [
-        "The Humidor"
+        "Havana Shop"
+      ]
+    },
+    {
+      "id": "cig-camacho-limited-edition-2025",
+      "brand": "Camacho",
+      "line": "Limited Edition 2025",
+      "shops": [
+        "Havana Shop"
+      ]
+    },
+    {
+      "id": "cig-davidoff-millenium-petite",
+      "brand": "Davidoff",
+      "line": "Millenium Petite",
+      "shops": [
+        "Havana Shop"
       ]
     },
     {
@@ -121,19 +145,19 @@
       ]
     },
     {
-      "id": "cig-eiroa-the-first-20-years-diadema",
-      "brand": "Eiroa",
-      "line": "The First 20 Years",
-      "shops": [
-        "The Humidor"
-      ]
-    },
-    {
       "id": "cig-eiroa-toro",
       "brand": "Eiroa",
       "line": "Toro",
       "shops": [
         "The Humidor"
+      ]
+    },
+    {
+      "id": "cig-flor-de-selva-ano-del-dragon-2024-doble",
+      "brand": "Flor de Selva",
+      "line": "Ano Del Dragon 2024 Doble",
+      "shops": [
+        "Havana Shop"
       ]
     },
     {
@@ -145,9 +169,33 @@
       ]
     },
     {
-      "id": "cig-jfr-maduro-super",
+      "id": "cig-jfr-corojo",
       "brand": "JFR",
-      "line": "Maduro",
+      "line": "Corojo",
+      "shops": [
+        "The Humidor"
+      ]
+    },
+    {
+      "id": "cig-karen-berger-25th-anniversary",
+      "brand": "Karen Berger",
+      "line": "Berger 25th Anniversary",
+      "shops": [
+        "The Humidor"
+      ]
+    },
+    {
+      "id": "cig-la-galera-cabeza-caracol",
+      "brand": "La Galera",
+      "line": "Cabeza Caracol",
+      "shops": [
+        "The Humidor"
+      ]
+    },
+    {
+      "id": "cig-la-instructora-pressed",
+      "brand": "La Instructora",
+      "line": "Pressed",
       "shops": [
         "The Humidor"
       ]
@@ -169,11 +217,43 @@
       ]
     },
     {
+      "id": "cig-oscar-valladares-ciseron",
+      "brand": "Oscar Valladares",
+      "line": "Ciseron",
+      "shops": [
+        "Havana Shop"
+      ]
+    },
+    {
+      "id": "cig-plasencia-year-of-the",
+      "brand": "Plasencia",
+      "line": "Year of the",
+      "shops": [
+        "Havana Shop"
+      ]
+    },
+    {
       "id": "cig-villa-zamorano-el",
       "brand": "Villa Zamorano",
       "line": "El",
       "shops": [
         "Havana Shop"
+      ]
+    },
+    {
+      "id": "cig-viva-la-vida-robusto",
+      "brand": "Viva La Vida",
+      "line": "Robusto",
+      "shops": [
+        "The Humidor"
+      ]
+    },
+    {
+      "id": "cig-viva-la-vida-toro",
+      "brand": "Viva La Vida",
+      "line": "Toro",
+      "shops": [
+        "The Humidor"
       ]
     }
   ]
