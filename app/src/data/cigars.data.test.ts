@@ -195,6 +195,23 @@ describe("cigars.json integrity", () => {
     }
   });
 
+  it("La Galera 85th Anniversary je jubilarni Toro, ne Habano linija", () => {
+    // Shop kategorija "85th Anniversary / Habano" uvukla je cijelu Habano
+    // liniju u jubilarnu, pa je korisniku pisalo "od 6,40 €" za Habano Half
+    // Coronu, a pravi jubilarni Toro (19,50 €) se gubio među njima.
+    const a = CIGARS.find((c) => c.id === "cig-la-galera-85th-anniversary")!;
+    expect(a.vitolas.map((v) => v.name)).toEqual(["Toro"]);
+    expect(a.priceEUR).toBe(19.5);
+    for (const url of [a.priceUrl ?? "", a.regionLinks?.HR?.url ?? "", a.vitolas[0].url ?? ""]) {
+      expect(url).toContain("la-galera-85th-anniversary-toro");
+      expect(url).not.toContain("la-galera-habano");
+    }
+    // Habano vitole nisu izgubljene — žive u svojoj liniji
+    const habano = CIGARS.find((c) => c.id === "cig-la-galera-habano")!;
+    expect(habano.vitolas.length).toBeGreaterThanOrEqual(6);
+    expect(cigarLinkForMarket(a, "HR")).toContain("la-galera-85th-anniversary-toro");
+  });
+
   it("Nub Maduro ne vodi na Havana brand listing (Cameroon i ostale linije)", () => {
     const m = CIGARS.find((c) => c.id === "cig-nub-maduro-460");
     expect(m).toBeDefined();

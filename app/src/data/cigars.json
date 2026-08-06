@@ -151805,8 +151805,8 @@
     "id": "cig-la-galera-85th-anniversary",
     "brand": "La Galera",
     "line": "85th Anniversary",
-    "vitola": "Robusto Chaveta",
-    "format": "50 x 127mm",
+    "vitola": "Toro",
+    "format": "52 x 152mm",
     "country": "Dominikanska Republika",
     "wrapper": "Habano Ecuador",
     "strength": 3,
@@ -151817,15 +151817,15 @@
       "med",
       "orasasti"
     ],
-    "smokeTimeMin": 50,
-    "priceEUR": 11.2,
+    "smokeTimeMin": 60,
+    "priceEUR": 19.5,
     "priceApprox": false,
     "availabilityHR": [
       "The Humidor"
     ],
     "notes": {
-      "hr": "Tradicionalna dominikanska tvornica (Tabacalera Palma) — uravnotežen, aromatičan.",
-      "en": "Traditional Dominican factory (Tabacalera Palma) — balanced, aromatic."
+      "hr": "Jubilarno izdanje Tabacalere Palme (La Galera) za 85 godina tvornice — jedan format, Toro.",
+      "en": "Anniversary release from Tabacalera Palma (La Galera) marking 85 years — a single size, Toro."
     },
     "markets": [
       "HR",
@@ -151834,88 +151834,28 @@
     ],
     "vitolas": [
       {
-        "name": "Lancero",
-        "format": "38 x 184mm",
-        "smokeTimeMin": 65,
-        "priceEUR": 12.5,
-        "url": "https://humidor.hr/en/proizvod/la-galera-habano-lancero-7-25-x-38/",
-        "ring": 38,
-        "lengthMM": 184,
-        "fetchedAt": "2026-07-01"
-      },
-      {
-        "name": "Bonchero No.4",
-        "format": "42 x 140mm",
-        "smokeTimeMin": 50,
-        "priceEUR": 9.5,
-        "url": "https://humidor.hr/en/proizvod/la-galera-habano-bonchero-no-4-5-5-x-42/",
-        "ring": 42,
-        "lengthMM": 140,
-        "fetchedAt": "2026-07-01"
-      },
-      {
-        "name": "Half Corona",
-        "format": "46 x 89mm",
-        "smokeTimeMin": 30,
-        "priceEUR": 6.4,
-        "url": "https://humidor.hr/en/proizvod/la-galera-habano-half-corona-3-%c2%bd-x-46/",
-        "ring": 46,
-        "lengthMM": 89,
-        "fetchedAt": "2026-07-01"
-      },
-      {
-        "name": "Cabeza Caracol Churchill",
-        "format": "47 x 178mm",
-        "smokeTimeMin": 65,
-        "priceEUR": 13.3,
-        "url": "https://humidor.hr/en/proizvod/la-galera-habano-cabeza-caracol-7-x-47/",
-        "ring": 47,
-        "lengthMM": 178,
-        "fetchedAt": "2026-07-01"
-      },
-      {
-        "name": "Robusto Chaveta",
-        "format": "50 x 127mm",
-        "smokeTimeMin": 50,
-        "priceEUR": 11.2,
-        "url": "https://humidor.hr/en/proizvod/la-galera-habano-robusto-chaveta-5-x-50-2/",
-        "ring": 50,
-        "lengthMM": 127,
-        "fetchedAt": "2026-07-01"
-      },
-      {
-        "name": "Anniversary Toro",
+        "name": "Toro",
         "format": "52 x 152mm",
         "smokeTimeMin": 60,
         "priceEUR": 19.5,
         "url": "https://humidor.hr/en/proizvod/la-galera-85th-anniversary-toro/",
-        "ring": 52,
-        "lengthMM": 152,
-        "fetchedAt": "2026-07-01"
-      },
-      {
-        "name": "Toro",
-        "format": "54 x 152mm",
-        "smokeTimeMin": 60,
-        "priceEUR": 11.9,
-        "url": "https://humidor.hr/en/proizvod/la-galera-habano-toro-el-lector-6-x-54/",
-        "ring": 54,
-        "lengthMM": 152,
         "regionLinks": {
           "USA": {
             "shop": "Neptune Cigar",
             "url": "https://www.neptunecigar.com/cigars/la-galera-85th-anniversary-limited-edition-toro-box"
           }
         },
+        "ring": 52,
+        "lengthMM": 152,
         "fetchedAt": "2026-07-01"
       }
     ],
-    "priceUrl": "https://humidor.hr/en/proizvod/la-galera-habano-robusto-chaveta-5-x-50-2/",
+    "priceUrl": "https://humidor.hr/en/proizvod/la-galera-85th-anniversary-toro/",
     "regionLinks": {
       "HR": {
         "shop": "The Humidor",
-        "url": "https://humidor.hr/hr/proizvod/la-galera-habano-half-corona-3-%c2%bd-x-46/",
-        "priceEUR": 6.4,
+        "url": "https://humidor.hr/hr/proizvod/la-galera-85th-anniversary-toro/",
+        "priceEUR": 19.5,
         "fetchedAt": "2026-07-01"
       },
       "USA": {
