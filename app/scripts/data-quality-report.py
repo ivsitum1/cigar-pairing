@@ -19,9 +19,13 @@ from pathlib import Path
 DATA = Path(__file__).resolve().parent.parent / "src" / "data"
 DRINK_FILES = ["rums", "whiskies", "brandies", "gins", "wines", "tequilas", "digestifs"]
 
-# Ime linije izvedeno iz URL sluga: sadrži dimenzije/brojeve ili je cijelo malim
-# slovima ("xo 61 2 52", "serie r no", "pca exclusive").
-SLUG_LINE = re.compile(r"\d")
+# URL slugovi u imenima linija su uvijek malim slovima ("xo 61 2 52",
+# "serie r no", "pca exclusive").  Pravi nazivi imaju barem jedno veliko slovo,
+# ili su isključivo znamenke/simboli (serijski broj, godina, ordinal).
+_LOWER_LETTER = re.compile(r"[a-z]")
+_UPPER_LETTER = re.compile(r"[A-Z]")
+# Ordinali poput "115th", "250th" su oznake obljetnice, ne slug-ovi.
+_ORDINAL_ONLY = re.compile(r"^\d+(th|st|nd|rd)$", re.I)
 
 # Rep scrapea u imenu boce: jakost, volumen, pakiranje, HTML entitet.
 NAME_TAIL = re.compile(
@@ -32,8 +36,27 @@ NAME_TAIL = re.compile(
 
 
 def junk_line(c: dict) -> bool:
+    """True kad ime linije izgleda kao neočišćeni URL slug.
+
+    URL slug je tekst samo malim slovima ("xo 61 2 52", "serie r no").
+    Sljedeće nije slug i nije označeno:
+    - Barem jedno veliko slovo → pravi naziv proizvoda (Title Case):
+      "Padrón 1926", "Asylum 13", "20th Anniversary Maduro", "La Aurora 107"
+    - Nema slova uopće → serijski broj / godina / oznaka: 858, 1926, #3
+    - Čisti ordinal → oznaka obljetnice: "115th", "250th"
+    Dimenzijski repovi ("xo 61 2 52") su implicitno pokriveni trećim pravilom:
+    sadrže mala slova i nisu ordinali, pa i dalje prolaze ovim filtrom.
+    """
     line = c.get("line", "")
-    return bool(SLUG_LINE.search(line)) or (bool(line) and line == line.lower())
+    if not line:
+        return False
+    if _UPPER_LETTER.search(line):
+        return False
+    if not _LOWER_LETTER.search(line):
+        return False
+    if _ORDINAL_ONLY.match(line):
+        return False
+    return True
 
 
 def cigar_profiles(cigars: list[dict]) -> dict:
@@ -43,11 +66,19 @@ def cigar_profiles(cigars: list[dict]) -> dict:
         for c in cigars
     )
     top = buckets.most_common(1)[0]
+    slug_examples: list[str] = []
+    slug_count = 0
+    for c in cigars:
+        if junk_line(c):
+            slug_count += 1
+            if len(slug_examples) < 10:
+                slug_examples.append(c.get("line", ""))
     return {
         "total": len(cigars),
         "no_flavor_tags": len(thin),
         "no_wrapper": sum(1 for c in cigars if c.get("wrapper") == "—"),
-        "slug_line_names": sum(1 for c in cigars if junk_line(c)),
+        "slug_line_names": slug_count,
+        "slug_line_examples": slug_examples,
         "distinct_profiles": len(buckets),
         "largest_profile_bucket": top[1],
         "largest_profile_share_pct": round(100 * top[1] / len(cigars), 1),

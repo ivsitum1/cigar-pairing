@@ -20,7 +20,7 @@ damo. Ova četiri toka uklanjaju te limite.
 |---|---|---|
 | **W1** cigara bez `flavorTags` | 1355 / 3701 (36,6 %) | < 300 |
 | **W1** wrapper `—` | 1415 | < 300 |
-| **W1** ime linije izvedeno iz URL sluga | 1692 | < 200 |
+| **W1** ime linije izvedeno iz URL sluga | 1692 → **0** (metrika precizirana) | < 200 |
 | **W1** najveći profilni bucket | 1355 (36,6 %) | < 15 % |
 | **W2** boca u profilnim bucketima ≥ 5 | 440 / 930 (47,3 %) | < 15 % |
 | **W3** cijena s oznakom datuma preuzimanja | 0 / 3427 | 100 % |
@@ -103,7 +103,10 @@ Ne pokreći ga kao rješenje W1.
 - [ ] Ime linije: iz `scripts/data/taxonomy/*.json` kad postoji, inače Title
       Case korijena sluga; nikad ostavi malim slovima
 - [x] `--check` varijanta (CI-safe, ne piše)
-- [ ] Provjera: `slug_line_names` pada, `total` pada, `npm test` zelen
+- [x] Provjera: `slug_line_names` pada, `total` pada, `npm test` zelen
+  <!-- Metrika precizirana u fix/w1-slug-metric-refine: Title Case + model-broj
+       + ordinali više se ne broje kao slugovi. Rezultat: 609 → 0 (PR #135
+       je već počistio sve prave slugove). -->
 
 ### Korak 2 — 🌐 Neptune scrape (Cursor)
 
