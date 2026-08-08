@@ -9,10 +9,13 @@ import {
   useCigarBrowseSheets,
 } from "../components/useCigarBrowseSheets";
 import { EveningSessionSheet } from "../components/EveningSessionSheet";
-import { getItemState, lineState, useCollection } from "../store/collection";
+import { getItemState, useCollection } from "../store/collection";
 import { totalStock, lineTotalStock } from "../store/humidor";
 import { useMarket } from "../store/market";
-import { isShoppingWishlistItem } from "../lib/shoppingWishlist";
+import {
+  isShoppingWishlistItem,
+  shoppingWishlistLineIds,
+} from "../lib/shoppingWishlist";
 import { cigarItemId } from "../lib/cigarItemId";
 import {
   buffetFive,
@@ -73,11 +76,17 @@ export function ShoppingPage({
     const s = getItemState(d.id);
     return isShoppingWishlistItem(s, totalStock(d.id));
   });
-  // stanje se cuva po vitoli — linija je na listi zelja ako je bilo koja njena
-  const wishlistCigars = CIGARS.filter((c) => {
-    const s = lineState(c.id);
-    return isShoppingWishlistItem(s, lineTotalStock(c.id));
-  });
+  // stanje se cuva po vitoli — linija je na listi zelja ako je bilo koja njena,
+  // a zaliha se broji na tom istom kljucu (potroseni Figurado ne cekaju Robusti)
+  const wishlistLines = useMemo(
+    () =>
+      shoppingWishlistLineIds(collection.items, {
+        item: totalStock,
+        line: lineTotalStock,
+      }),
+    [collection.items],
+  );
+  const wishlistCigars = CIGARS.filter((c) => wishlistLines.has(c.id));
 
   // pillovi uvijek iz pune liste (brojevi se ne mijenjaju dok filtriraš)
   const wishlistShops = groupWishlistByShop(

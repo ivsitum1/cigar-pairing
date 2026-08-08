@@ -4,14 +4,14 @@
 // večeras". Zato zaliha živi u zasebnoj pohrani i troši se kad zabilježiš večer.
 import { useMemo, useState } from "react";
 import type { Cigar, Drink } from "../types";
-import { ALL_DRINKS, brandDisplayName, cigarForItemId, drinkById } from "../data";
-import { useI18n, type StringKey } from "../i18n";
+import { ALL_DRINKS, brandDisplayName, cigarForItemId } from "../data";
+import { useI18n } from "../i18n";
 import { Chip, SectionTitle } from "../components/ui";
 import { DrinkRow } from "../components/cards";
 import { LastCigarPrompt } from "../components/LastCigarPrompt";
+import { JournalEntryCard } from "../components/JournalEntryCard";
 import { shouldOfferWishlist } from "../lib/lastCigar";
-import { drinkNameLoc } from "../lib/drinkName";
-import { removeJournalEntry, useCollection, type JournalEntry } from "../store/collection";
+import { useCollection } from "../store/collection";
 import {
   addHumidor,
   adjustStock,
@@ -393,8 +393,7 @@ function StockRow({
 
 /** Kalendar dnevnika: mjesec, dani sa zapisima, detalji odabranog dana. */
 export function JournalCalendar() {
-  const { t, lx, lang } = useI18n();
-  const market = useMarket();
+  const { t, lang } = useI18n();
   const { journal } = useCollection();
   const today = new Date();
   const [cursor, setCursor] = useState({
@@ -495,73 +494,22 @@ export function JournalCalendar() {
       ) : (
         <div className="space-y-2">
           {selectedEntries.map((entry) => (
-            <JournalCard
+            <JournalEntryCard
               key={entry.id}
               entry={entry}
-              market={market}
-              lang={lang}
-              lx={lx}
-              t={t}
+              // premješten zapis odlazi s ovog dana — kalendar ide za njim,
+              // inače izgleda kao da je nestao
+              onMoved={(dayKey) => {
+                const moved = new Date(`${dayKey}T00:00:00`);
+                if (!Number.isNaN(moved.getTime())) {
+                  setCursor({ year: moved.getFullYear(), month: moved.getMonth() });
+                }
+                setSelected(dayKey);
+              }}
             />
           ))}
         </div>
       )}
-    </div>
-  );
-}
-
-function JournalCard({
-  entry,
-  market,
-  lang,
-  lx,
-  t,
-}: {
-  entry: JournalEntry;
-  market: ReturnType<typeof useMarket>;
-  lang: "hr" | "en";
-  lx: (text: { hr: string; en: string }) => string;
-  t: (key: StringKey) => string;
-}) {
-  const cigar = cigarForItemId(entry.cigarId);
-  const drink: Drink | undefined = drinkById(entry.drinkId);
-  // 24-satni zapis na hrvatskom; engleski ostaje na 12-satnom
-  const time = new Date(entry.date).toLocaleTimeString(
-    lang === "hr" ? "hr-HR" : "en-GB",
-    { hour: "2-digit", minute: "2-digit" },
-  );
-
-  return (
-    <div className="rounded-xl border border-dim/15 bg-cedar p-3">
-      <div className="flex items-baseline justify-between gap-2">
-        <span className="font-display text-sm text-papir">
-          {cigar
-            ? `${brandDisplayName(cigar.brand, market)} ${cigar.line}${
-                cigar.selectedVitola ? ` ${cigar.selectedVitola}` : ""
-              }`
-            : entry.cigarId}
-          <span className="text-zlato"> × </span>
-          {drink
-            ? lx(drinkNameLoc(drink))
-            : entry.drinkId == null
-              ? t("session.soloLabel")
-              : entry.drinkId}
-        </span>
-        {entry.rating != null && (
-          <span className="shrink-0 text-sm text-zlato-2">{entry.rating}/10</span>
-        )}
-      </div>
-      <div className="mt-1 text-xs text-dim">
-        {time}
-        {entry.note && ` — ${entry.note}`}
-      </div>
-      <button
-        type="button"
-        onClick={() => removeJournalEntry(entry.id)}
-        className="mt-2 text-xs text-oxblood/80 hover:text-oxblood"
-      >
-        {t("coll.delete")}
-      </button>
     </div>
   );
 }

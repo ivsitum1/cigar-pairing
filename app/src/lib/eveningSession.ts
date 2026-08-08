@@ -11,6 +11,8 @@ export interface EveningSessionInput {
   markTried?: boolean;
   /** false = ne diraj zalihu (npr. cigara nije bila iz humidora). */
   consumeStock?: boolean;
+  /** ISO trenutak večeri; bez njega je zapis „sada”. */
+  date?: string;
 }
 
 export interface EveningSessionResult {
@@ -30,6 +32,7 @@ export function logEveningSession(input: EveningSessionInput): EveningSessionRes
     drinkId,
     rating: input.rating,
     note,
+    date: input.date,
   });
 
   let consumedItemId: string | null = null;

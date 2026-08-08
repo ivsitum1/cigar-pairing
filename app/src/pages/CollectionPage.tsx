@@ -10,12 +10,12 @@ import {
 import { useI18n, type StringKey } from "../i18n";
 import { Chip, SearchInput, SectionTitle } from "../components/ui";
 import { CigarRow, DrinkRow } from "../components/cards";
-import { drinkNameLoc } from "../lib/drinkName";
 import {
   CigarBrowseSheets,
   useCigarBrowseSheets,
 } from "../components/useCigarBrowseSheets";
 import { EveningSessionSheet } from "../components/EveningSessionSheet";
+import { JournalEntryCard } from "../components/JournalEntryCard";
 import {
   cigarItemId,
   dedupeCollectionCigarIds,
@@ -29,7 +29,6 @@ import {
   clearItem,
   exportData,
   importData,
-  removeJournalEntry,
   useCollection,
 } from "../store/collection";
 import { navigate, useRoute, type CollectionView } from "../store/route";
@@ -73,7 +72,7 @@ export function CollectionPage({
 }: {
   onPair?: (target: { kind: "cigar"; item: Cigar } | { kind: "drink"; item: Drink }) => void;
 }) {
-  const { t, lx, lang } = useI18n();
+  const { t } = useI18n();
   const market = useMarket();
   const route = useRoute();
   const data = useCollection();
@@ -351,42 +350,9 @@ export function CollectionPage({
         <p className="mt-3 text-sm leading-relaxed text-dim">{t("coll.journalEmpty")}</p>
       )}
       <div className="mt-3 space-y-2">
-        {data.journal.map((j) => {
-          const cigar = cigarForItemId(j.cigarId);
-          const drink = drinkById(j.drinkId);
-          return (
-            <div key={j.id} className="rounded-xl border border-dim/15 bg-cedar p-3">
-              <div className="flex items-baseline justify-between gap-2">
-                <span className="font-display text-sm text-papir">
-                  {cigar
-                    ? `${cigar.brand} ${cigar.line}${
-                        cigar.selectedVitola ? ` ${cigar.selectedVitola}` : ""
-                      }`
-                    : j.cigarId}
-                  <span className="text-zlato"> × </span>
-                  {drink
-                    ? lx(drinkNameLoc(drink))
-                    : j.drinkId == null
-                      ? t("session.soloLabel")
-                      : j.drinkId}
-                </span>
-                {j.rating != null && (
-                  <span className="shrink-0 text-sm text-zlato-2">{j.rating}/10</span>
-                )}
-              </div>
-              <div className="mt-1 text-xs text-dim">
-                {new Date(j.date).toLocaleDateString(lang === "hr" ? "hr-HR" : "en-GB")}
-                {j.note && ` — ${j.note}`}
-              </div>
-              <button
-                onClick={() => removeJournalEntry(j.id)}
-                className="mt-2 text-xs text-oxblood/80 hover:text-oxblood"
-              >
-                {t("coll.delete")}
-              </button>
-            </div>
-          );
-        })}
+        {data.journal.map((j) => (
+          <JournalEntryCard key={j.id} entry={j} />
+        ))}
       </div>
 
       {showAddPairing && (

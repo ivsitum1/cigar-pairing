@@ -204,13 +204,47 @@ export function markOwnedBatch(ids: string[]) {
   persist({ ...cache, items });
 }
 
-export function addJournalEntry(entry: Omit<JournalEntry, "id" | "date">) {
+/** Dnevnik stoji najnoviji prvi — zapis unesen naknadno mora sjesti na svoje mjesto. */
+const sortJournal = (journal: JournalEntry[]): JournalEntry[] =>
+  [...journal].sort((a, b) => b.date.localeCompare(a.date));
+
+/** ISO datum koji se da pročitati; sve ostalo pada na trenutak zapisa. */
+function usableDate(value: string | undefined): string | null {
+  if (!value) return null;
+  const parsed = new Date(value);
+  return Number.isNaN(parsed.getTime()) ? null : parsed.toISOString();
+}
+
+/**
+ * `date` je neobavezan: bez njega je zapis „sada”, s njime se bilježi večer
+ * koja je već bila (jučerašnja cigara unesena danas).
+ */
+export function addJournalEntry(
+  entry: Omit<JournalEntry, "id" | "date"> & { date?: string },
+) {
   const full: JournalEntry = {
     ...entry,
     id: `j-${Date.now()}-${Math.random().toString(36).slice(2, 7)}`,
-    date: new Date().toISOString(),
+    date: usableDate(entry.date) ?? new Date().toISOString(),
   };
-  persist({ ...cache, journal: [full, ...cache.journal] });
+  persist({ ...cache, journal: sortJournal([full, ...cache.journal]) });
+}
+
+/** Ispravak već spremljenog zapisa — zasad datum (kalendar ga premješta na drugi dan). */
+export function updateJournalEntry(
+  id: string,
+  patch: Partial<Omit<JournalEntry, "id">>,
+) {
+  const date = "date" in patch ? usableDate(patch.date) : null;
+  if ("date" in patch && !date) return; // neispravan datum ne smije pojesti zapis
+  let changed = false;
+  const journal = cache.journal.map((j) => {
+    if (j.id !== id) return j;
+    changed = true;
+    return { ...j, ...patch, date: date ?? j.date };
+  });
+  if (!changed) return;
+  persist({ ...cache, journal: sortJournal(journal) });
 }
 
 export function removeJournalEntry(id: string) {

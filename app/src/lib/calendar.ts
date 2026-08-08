@@ -19,6 +19,38 @@ export function localDayKey(date: Date): string {
   return `${y}-${m}-${d}`;
 }
 
+/** `HH:MM` u lokalnoj zoni — vrijednost za `<input type="time">`. */
+export function localTimeValue(date: Date): string {
+  const h = String(date.getHours()).padStart(2, "0");
+  const m = String(date.getMinutes()).padStart(2, "0");
+  return `${h}:${m}`;
+}
+
+const DAY_RE = /^(\d{4})-(\d{2})-(\d{2})$/;
+const TIME_RE = /^(\d{1,2}):(\d{2})$/;
+
+/**
+ * ISO trenutak iz vrijednosti `<input type="date">` (+ opcionalno `type="time"`).
+ *
+ * `new Date("2026-08-07")` bi bio UTC ponoć, a to je u hrvatskoj zoni večer
+ * prethodnog dana — zapis bi skočio na krivi dan u kalendaru. Zato se dijelovi
+ * slažu ručno, u lokalnoj zoni. Vraća `null` za nepostojeći datum (31.02.).
+ */
+export function isoFromLocalParts(dayKey: string, time?: string): string | null {
+  const d = DAY_RE.exec(dayKey);
+  if (!d) return null;
+  const t = time ? TIME_RE.exec(time) : null;
+  if (time && !t) return null;
+  const hours = t ? Number(t[1]) : 0;
+  const minutes = t ? Number(t[2]) : 0;
+  if (hours > 23 || minutes > 59) return null;
+  const date = new Date(Number(d[1]), Number(d[2]) - 1, Number(d[3]), hours, minutes);
+  if (Number.isNaN(date.getTime())) return null;
+  // 31.02. bi se prelio u ožujak — takav unos nije datum koji je korisnik mislio
+  if (localDayKey(date) !== dayKey) return null;
+  return date.toISOString();
+}
+
 /** Ponedjeljak = 0 (hrvatski tjedan počinje ponedjeljkom). */
 const mondayIndex = (date: Date): number => (date.getDay() + 6) % 7;
 

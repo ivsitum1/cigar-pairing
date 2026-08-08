@@ -322,3 +322,77 @@ describe("remapCollectionAliases", () => {
     expect(out.items["rum-nepoznato-nesto"]?.rating).toBe(5);
   });
 });
+
+describe("dnevnik i datumi", () => {
+  beforeAll(() => {
+    installMemoryStorage();
+  });
+
+  beforeEach(() => {
+    localStorage.clear();
+    vi.resetModules();
+  });
+
+  const entry = (over: Record<string, unknown> = {}) => ({
+    cigarId: "cig-a",
+    drinkId: null,
+    rating: null,
+    note: "",
+    ...over,
+  });
+
+  it("bez datuma zapisuje trenutak unosa", async () => {
+    const { addJournalEntry, exportData } = await import("./collection");
+    const before = Date.now();
+    addJournalEntry(entry());
+    const [saved] = JSON.parse(exportData()).journal;
+    expect(new Date(saved.date).getTime()).toBeGreaterThanOrEqual(before - 1000);
+  });
+
+  it("prima zadani datum — jucerasnja cigara unesena danas", async () => {
+    const { addJournalEntry, exportData } = await import("./collection");
+    const yesterday = new Date(2026, 7, 7, 21, 15).toISOString();
+    addJournalEntry(entry({ date: yesterday }));
+    expect(JSON.parse(exportData()).journal[0].date).toBe(yesterday);
+  });
+
+  it("neispravan datum pada na sada, ne kvari zapis", async () => {
+    const { addJournalEntry, exportData } = await import("./collection");
+    addJournalEntry(entry({ date: "nije datum" }));
+    const [saved] = JSON.parse(exportData()).journal;
+    expect(Number.isNaN(new Date(saved.date).getTime())).toBe(false);
+  });
+
+  it("drzi dnevnik poredan najnoviji prvi i kad je unos naknadan", async () => {
+    const { addJournalEntry, exportData } = await import("./collection");
+    addJournalEntry(entry({ cigarId: "cig-novi", date: new Date(2026, 7, 8, 20, 0).toISOString() }));
+    addJournalEntry(entry({ cigarId: "cig-stari", date: new Date(2026, 7, 1, 20, 0).toISOString() }));
+    expect(JSON.parse(exportData()).journal.map((j: { cigarId: string }) => j.cigarId)).toEqual([
+      "cig-novi",
+      "cig-stari",
+    ]);
+  });
+
+  it("updateJournalEntry premjesta zapis na drugi dan", async () => {
+    const { addJournalEntry, updateJournalEntry, exportData } = await import("./collection");
+    addJournalEntry(entry({ date: new Date(2026, 7, 8, 12, 0).toISOString() }));
+    const id = JSON.parse(exportData()).journal[0].id;
+    const moved = new Date(2026, 7, 7, 21, 15).toISOString();
+    updateJournalEntry(id, { date: moved });
+    const [saved] = JSON.parse(exportData()).journal;
+    expect(saved.date).toBe(moved);
+    expect(saved.cigarId).toBe("cig-a");
+  });
+
+  it("updateJournalEntry ignorira neispravan datum i nepoznat id", async () => {
+    const { addJournalEntry, updateJournalEntry, exportData } = await import("./collection");
+    const original = new Date(2026, 7, 8, 12, 0).toISOString();
+    addJournalEntry(entry({ date: original }));
+    const id = JSON.parse(exportData()).journal[0].id;
+    updateJournalEntry(id, { date: "nije datum" });
+    updateJournalEntry("j-nepostojeci", { date: new Date(2026, 0, 1).toISOString() });
+    const journal = JSON.parse(exportData()).journal;
+    expect(journal).toHaveLength(1);
+    expect(journal[0].date).toBe(original);
+  });
+});

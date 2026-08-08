@@ -35,6 +35,21 @@ describe("logEveningSession", () => {
     totalStock.mockReturnValue(0);
   });
 
+  it("prosljeduje odabrani datum vecere u dnevnik", async () => {
+    const { logEveningSession } = await import("./eveningSession");
+    const yesterday = new Date(2026, 7, 7, 21, 15).toISOString();
+    logEveningSession({
+      cigarId: "cig-1",
+      drinkId: null,
+      rating: null,
+      note: "",
+      date: yesterday,
+    });
+    expect(addJournalEntry).toHaveBeenCalledWith(
+      expect.objectContaining({ date: yesterday }),
+    );
+  });
+
   it("zapisuje dnevnik i oznacava obje stavke kao probane", async () => {
     const { logEveningSession } = await import("./eveningSession");
     const result = logEveningSession({

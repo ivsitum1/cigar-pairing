@@ -9,6 +9,7 @@ import { drinkNameLoc, drinkNameHaystack } from "../lib/drinkName";
 import { cigarItemId } from "../lib/cigarItemId";
 import { applyVitola, uniqueVitolas } from "../lib/cigarVitola";
 import { shouldOfferWishlist } from "../lib/lastCigar";
+import { isoFromLocalParts, localDayKey, localTimeValue } from "../lib/calendar";
 import { LastCigarPrompt } from "./LastCigarPrompt";
 
 const SOLO = "__solo__";
@@ -94,6 +95,10 @@ export function EveningSessionSheet({
     return drinkOptions[0]?.id ?? null;
   });
   const [drinkQuery, setDrinkQuery] = useState("");
+  // večer se često bilježi dan poslije — datum je polje, a ne trenutak spremanja
+  const [day, setDay] = useState(() => localDayKey(new Date()));
+  const [time, setTime] = useState(() => localTimeValue(new Date()));
+  const todayKey = useMemo(() => localDayKey(new Date()), []);
   const [rating, setRating] = useState<string>("");
   const [note, setNote] = useState("");
   const [markTried, setMarkTried] = useState(true);
@@ -127,9 +132,12 @@ export function EveningSessionSheet({
 
   const resolvedDrinkId = drinkMode === "solo" ? null : drinkId;
 
+  const loggedAt = isoFromLocalParts(day, time);
+
   const save = () => {
     if (!cigarId) return;
     if (drinkMode !== "solo" && !drinkId) return;
+    if (!loggedAt) return;
 
     let finalCigarId = cigarId;
     if (lineForVitola && lineVitolas.length > 1 && vitolaName) {
@@ -143,6 +151,7 @@ export function EveningSessionSheet({
       rating: rating ? Number(rating) : null,
       note,
       markTried,
+      date: loggedAt,
     });
 
     onSaved?.();
@@ -158,6 +167,7 @@ export function EveningSessionSheet({
 
   const canSave =
     !!cigarId &&
+    !!loggedAt &&
     (drinkMode === "solo" || !!drinkId) &&
     (lineVitolas.length <= 1 || !!vitolaName || cigarId.includes("@"));
 
@@ -178,6 +188,31 @@ export function EveningSessionSheet({
         <p className="mt-1 text-sm leading-relaxed text-dim">{t("session.hint")}</p>
 
         <div className="mt-4 space-y-3">
+          <div className="grid grid-cols-2 gap-2">
+            <label className="block text-xs uppercase tracking-widest text-dim">
+              {t("session.date")}
+              <input
+                type="date"
+                value={day}
+                max={todayKey}
+                onChange={(e) => setDay(e.target.value)}
+                className={`mt-1 ${selectCls}`}
+              />
+            </label>
+            <label className="block text-xs uppercase tracking-widest text-dim">
+              {t("session.time")}
+              <input
+                type="time"
+                value={time}
+                onChange={(e) => setTime(e.target.value)}
+                className={`mt-1 ${selectCls}`}
+              />
+            </label>
+          </div>
+          {day !== todayKey && (
+            <p className="text-xs text-zlato-2">{t("session.datePast")}</p>
+          )}
+
           <label className="block text-xs uppercase tracking-widest text-dim">
             {t("common.cigar")}
             <select

@@ -1,7 +1,9 @@
 import { describe, expect, it } from "vitest";
 import {
   groupByDay,
+  isoFromLocalParts,
   localDayKey,
+  localTimeValue,
   monthGrid,
   shiftMonth,
 } from "./calendar";
@@ -80,5 +82,36 @@ describe("shiftMonth", () => {
 
   it("ostaje u godini kad ne treba prijelaz", () => {
     expect(shiftMonth(2026, 5, 1)).toEqual({ year: 2026, month: 6 });
+  });
+});
+
+describe("localTimeValue", () => {
+  it("nadopunjuje nulama u 24-satnom obliku", () => {
+    expect(localTimeValue(new Date(2026, 7, 7, 9, 5))).toBe("09:05");
+    expect(localTimeValue(new Date(2026, 7, 7, 21, 30))).toBe("21:30");
+  });
+});
+
+describe("isoFromLocalParts", () => {
+  it("slaze trenutak u lokalnoj zoni, ne u UTC-u", () => {
+    const iso = isoFromLocalParts("2026-08-07", "21:15");
+    expect(iso).not.toBeNull();
+    const back = new Date(iso!);
+    expect(localDayKey(back)).toBe("2026-08-07");
+    expect(localTimeValue(back)).toBe("21:15");
+  });
+
+  it("bez vremena pada na pocetak dana", () => {
+    const iso = isoFromLocalParts("2026-08-07");
+    expect(localDayKey(new Date(iso!))).toBe("2026-08-07");
+    expect(localTimeValue(new Date(iso!))).toBe("00:00");
+  });
+
+  it("odbija nepostojeci i neispravan unos", () => {
+    expect(isoFromLocalParts("2026-02-31", "10:00")).toBeNull();
+    expect(isoFromLocalParts("7.8.2026.", "10:00")).toBeNull();
+    expect(isoFromLocalParts("", "10:00")).toBeNull();
+    expect(isoFromLocalParts("2026-08-07", "25:00")).toBeNull();
+    expect(isoFromLocalParts("2026-08-07", "nije vrijeme")).toBeNull();
   });
 });
