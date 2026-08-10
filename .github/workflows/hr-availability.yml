@@ -31,7 +31,8 @@ jobs:
           python-version: "3.12"
 
       - name: Install scrape deps
-        run: pip install requests beautifulsoup4
+        # lxml: BeautifulSoup parser used by sync-hr-shops.fetch_humidor_catalog
+        run: pip install requests beautifulsoup4 lxml
 
       - name: Fetch HR catalogues and reconcile
         id: reconcile
