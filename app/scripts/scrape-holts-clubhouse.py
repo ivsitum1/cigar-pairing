@@ -2,7 +2,12 @@
 """Scrape Holt's Clubhouse editorial (pairings + cigar-101) into a local corpus.
 
 Does NOT scrape Magento product listings (/all-cigar-brands/).
-Output: ../../01_work/output/holts-clubhouse/
+Output: ../../01_work/output/holts-clubhouse/ — **git-ignored, stays local.**
+
+The scraped text is Holt's copyrighted editorial, not ours: it is a reading
+corpus for research only. Never commit the output, never redistribute it, and
+never copy its wording into app content — cite the source instead
+(app/src/data/clubSources.json). See NOTICE.md.
 """
 from __future__ import annotations
 

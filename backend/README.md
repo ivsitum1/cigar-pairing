@@ -84,3 +84,8 @@ python -m unittest discover -s tests -v
 Paddle/torch are not needed — the service has a stub path, and the tests cover
 path traversal, the upload ceiling, and `400`-vs-`500` behaviour without them.
 CI runs this as a separate `backend` job.
+
+## License
+
+AGPL-3.0-only, like the rest of the code in this repo — see [`../LICENSE`](../LICENSE)
+and [`../NOTICE.md`](../NOTICE.md).

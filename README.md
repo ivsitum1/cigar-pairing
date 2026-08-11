@@ -5,6 +5,20 @@ indeksima rangiranim po kvaliteti za sipping uz cigaru.
 
 **Live:** https://ivsitum1.github.io/cigar-pairing/ (instalabilno na mobitel, radi offline)
 
+## Licenca
+
+Repo nije jednorodan, pa ni licenca nije jedna:
+
+- **Kod** (`app/src/` osim `data/`, `app/scripts/`, `backend/`) — [**AGPL-3.0-only**](LICENSE).
+  Copyleft s mrežnom klauzulom: tko app hosta, mora ponuditi izvorni kod svoje verzije.
+- **Sadržaj i podaci** (`app/src/data/*.json`, `docs/`, `marketing/`) —
+  [**CC BY-NC-SA 4.0**](LICENSE-CONTENT). Atribucija, nekomercijalno, isti uvjeti.
+- **Izuzeto:** glazba (Kevin MacLeod, CC BY 4.0), fontovi (OFL-1.1), Natural Earth
+  (public domain), nazivi marki (žigovi vlasnika), rukopis knjige (sva prava pridržana,
+  nije na ovoj grani).
+
+Točna karta po putanjama i sve atribucije: **[NOTICE.md](NOTICE.md)**.
+
 ## Uređivačka politika: neutralno i informativno
 
 - **Deklaracija umjesto osude.** Sve što ima dodatke ostaje na popisu; app

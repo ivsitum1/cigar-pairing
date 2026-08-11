@@ -21,7 +21,18 @@ __pycache__/
 agent-brain-lite/.agent/memory/
 agent-brain-lite/.obsidian/workspace.json
 
-# NotebookLM full grill dumps → commit on cursor/bonton-book-research-9b19
-# (see docs/bonton/CROSSWALK.md). Keep only README on master.
-docs/bonton/notebooklm-grill/*
-!docs/bonton/notebooklm-grill/README.md
+# Rukopis knjige i istraživanje NIKAD ne idu na master — knjiga se planira
+# prodavati, a sve na masteru je pod CC BY-NC-SA 4.0 (vidi NOTICE.md §3.2).
+# Rad na knjizi živi na book granama; vidi docs/bonton/CROSSWALK.md.
+docs/bonton/*-DRAFT.md
+docs/bonton/*-OUTLINE.md
+docs/bonton/mala-knjiga-pusackog-bontona.md
+docs/bonton/BOOK-FROM-NOTEBOOKLM.md
+docs/bonton/grill-inbox.md
+docs/bonton/research/
+docs/bonton/images/
+docs/bonton/notebooklm-grill/
+
+# Scrapeani tuđi urednički tekst (holts.com) — istraživački korpus, ostaje
+# lokalno. Tuđe autorsko djelo, ne može se licencirati ni redistribuirati.
+01_work/output/holts-clubhouse/

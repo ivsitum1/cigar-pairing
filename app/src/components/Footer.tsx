@@ -2,8 +2,12 @@ import { useI18n } from "../i18n";
 import { legalAgeForMarket } from "../lib/ageGate";
 import { useMarket } from "../store/market";
 
-// Podnožje: autorska prava, licenca glazbe (CC BY 3.0 — obavezna atribucija) i
-// pravni disclaimeri (duhan, cijene, procjene podataka, zdravlje).
+// Podnožje: licence (kod AGPL-3.0, sadržaj CC BY-NC-SA 4.0), poveznica na
+// izvorni kod, licenca glazbe (CC BY 4.0 — obavezna atribucija) i pravni
+// disclaimeri (duhan, cijene, procjene podataka, zdravlje).
+// Poveznica na repo nije ukras: AGPLv3 §13 traži da korisnici koji s appom
+// komuniciraju preko mreže dobiju ponudu izvornog koda.
+const REPO_URL = "https://github.com/ivsitum1/cigar-pairing";
 export function Footer() {
   const { t } = useI18n();
   // Dobna granica nije ista svugdje: SAD 21 (Tobacco 21 + alkohol), EU/HR 18.
@@ -15,7 +19,17 @@ export function Footer() {
   return (
     <footer className="mt-10 border-t border-zlato/20 pt-4 text-micro leading-relaxed text-dim/80">
       <div className="band-rule mb-3" />
-      <p className="text-dim">{t("footer.copyright")}</p>
+      <p className="text-dim">
+        {t("footer.copyright")}{" "}
+        <a
+          href={REPO_URL}
+          target="_blank"
+          rel="noreferrer"
+          className="text-zlato/80 underline decoration-zlato/30 underline-offset-2 hover:text-zlato-2"
+        >
+          {t("footer.source")}
+        </a>
+      </p>
       <p className="mt-1.5">
         {t("footer.music")}{" "}
         <a

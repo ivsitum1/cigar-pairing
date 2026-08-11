@@ -2,12 +2,18 @@
 
 **Repo:** [ivsitum1/cigar-pairing](https://github.com/ivsitum1/cigar-pairing)
 
+> **Rukopis knjige nije na `master`.** Knjiga se planira prodavati, pa rukopis i
+> istraživački materijal stoje **izvan javne grane** i nisu pokriveni licencama
+> ovog repoa (sva prava pridržana — vidi [`NOTICE.md`](../../NOTICE.md) §3.2).
+> Na `master` dolazi samo ono što app stvarno isporučuje: `bonton.json`.
+
 | Što | Gdje u GitHubu | Grana |
 |-----|----------------|-------|
 | App (PWA, Club, pairing engine, `bonton.json`) | `app/`, `docs/bonton/APP-FROM-NOTEBOOKLM.md` | **`master`** |
-| Knjižni rukopis (kratki kanon u appu) | `docs/bonton/mala-knjiga-pusackog-bontona.md` | **`master`** (+ sync na book) |
-| Istraživački korpus + NotebookLM dumpovi | `docs/bonton/research/` | **`cursor/bonton-book-research-9b19`** (ne merge u master) |
-| Grill inbox (kratki bullets) | `docs/bonton/grill-inbox.md` | **`master`** |
+| Knjižni rukopis EN/HR (`*-DRAFT.md`, outline) | `docs/bonton/` | **`claude/bonton-app-message-q4tx7n`** (najnovija verzija) |
+| Kratki kanon za app (`mala-knjiga-pusackog-bontona.md`) | `docs/bonton/` | **`cursor/bonton-md-manuscript-9b19`**, **`cursor/bonton-book-research-9b19`** |
+| Istraživački korpus + NotebookLM dumpovi | `docs/bonton/research/`, `docs/bonton/images/` | **`cursor/bonton-book-research-9b19`**, **`claude/bonton-app-message-q4tx7n`** |
+| Grill inbox (kratki bullets) | `docs/bonton/grill-inbox.md` | **`claude/bonton-app-message-q4tx7n`** |
 
 ## Kako imati sve lokalno
 
@@ -16,14 +22,17 @@
 git checkout master
 git pull
 
-# Istraživanje za knjigu (paralelni worktree — ne miješa working tree)
+# Knjiga (paralelni worktree — ne miješa working tree i ne vuče rukopis na master)
 git fetch origin
-git worktree add ../cigar-pairing-book cursor/bonton-book-research-9b19
+git worktree add ../cigar-pairing-book claude/bonton-app-message-q4tx7n
 ```
 
 Zatim:
 - App rad: folder `cigar_and_rum` na `master`
-- Knjiga / NotebookLM dumpovi: `../cigar-pairing-book/docs/bonton/research/`
+- Knjiga / rukopis / NotebookLM dumpovi: `../cigar-pairing-book/docs/bonton/`
+
+**Rukopis se ne vraća na `master`.** Kad je poglavlje spremno za app, prenosi se
+samo gotov tekst u `app/src/data/bonton.json` — nikad izvorna `.md` datoteka.
 
 ## Mapiranje sadržaja
 
@@ -60,10 +69,14 @@ Zatim:
 Puni grill dumpovi (2026-07-18 + refresh):  
 `cursor/bonton-book-research-9b19` → `docs/bonton/research/notebooklm-grill/`  
 
-Lokalni dump 2026-07-19: `docs/bonton/notebooklm-grill/adfe8fc8-*`  
+Dump 2026-07-19: `docs/bonton/notebooklm-grill/adfe8fc8-*` (book grana)  
 Craft → priručnik 2026-07-30: `docs/bonton/research/notebooklm-grill/5017a44b-*`  
 Triple grill 2026-07-30: `docs/bonton/research/notebooklm-grill/{7b267552,6ccc327c,30d6a797}-*`
+
 ## Pravilo mergea
 
-- Teški extracti / NotebookLM odgovori s fusnotama → **samo** book-research grana (`DO-NOT-MERGE.md`).
+- Teški extracti / NotebookLM odgovori s fusnotama → **samo** book grane (`DO-NOT-MERGE.md`).
+- Rukopis (`*-DRAFT.md`, outline, `mala-knjiga-pusackog-bontona.md`), `research/` i
+  `images/` **nikad ne idu na `master`** — `.gitignore` ih drži vani, a razlog je
+  licencni: sve na `master` je pod CC BY-NC-SA 4.0, a rukopis mora ostati zatvoren.
 - Kad je poglavlje spremno za app: prenesi **originalan** HR/EN tekst u `app/src/data/bonton.json` (i po potrebi Club JSON) PR-om na `master` — ne cijeli research folder.
