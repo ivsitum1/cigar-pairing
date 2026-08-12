@@ -8,6 +8,9 @@
 
 export const BRAND_SIZE = 200;
 export const BRAND_VIEWBOX = "0 0 200 200";
+/** Okvir stisnut na sam prsten banderole — bez zraka oko njega, za lockup
+ *  gdje se vrh znaka poravnava s vrhom slova. */
+export const MARK_VIEWBOX_TIGHT = "17 39 166 122";
 
 /** Banderola — vanjski prsten banda. */
 export const MARK_RING = "M 17.00 100.00 A 83.00 61.00 0 1 0 183.00 100.00 A 83.00 61.00 0 1 0 17.00 100.00 Z M 24.00 100.00 A 76.00 53.10 0 1 0 176.00 100.00 A 76.00 53.10 0 1 0 24.00 100.00 Z";

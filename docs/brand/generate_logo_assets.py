@@ -164,6 +164,9 @@ def mono(putanja: str, tinta: str = "#000000") -> str:
     )
 
 
+MARK_TIGHT = f"{C - 83:.0f} {C - 61:.0f} {2 * 83:.0f} {2 * 61:.0f}"
+
+
 BRAND_ART_TS = f"""// GENERIRANO — ne uređivati ručno.
 // Izvor: docs/brand/generate_logo_assets.py (`python docs/brand/generate_logo_assets.py`)
 //
@@ -174,6 +177,9 @@ BRAND_ART_TS = f"""// GENERIRANO — ne uređivati ručno.
 
 export const BRAND_SIZE = {VB};
 export const BRAND_VIEWBOX = "0 0 {VB} {VB}";
+/** Okvir stisnut na sam prsten banderole — bez zraka oko njega, za lockup
+ *  gdje se vrh znaka poravnava s vrhom slova. */
+export const MARK_VIEWBOX_TIGHT = "{MARK_TIGHT}";
 
 /** Banderola — vanjski prsten banda. */
 export const MARK_RING = "{MARK_RING}";

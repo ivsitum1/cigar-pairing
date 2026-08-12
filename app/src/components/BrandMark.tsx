@@ -15,6 +15,7 @@ import {
   MARK_LIQUID_CLIP,
   MARK_LIQUID_Y,
   MARK_MONO,
+  MARK_VIEWBOX_TIGHT,
   MARK_RING,
   SEAL_BODY,
   SEAL_MONO,
@@ -29,6 +30,12 @@ type MarkProps = {
   title?: string;
   /** Jedna boja (currentColor), bez tekućine u drugoj nijansi — tisak, žig. */
   mono?: boolean;
+  /**
+   * Okvir stisnut na sam prsten, bez zraka oko njega. Znak tada ispunjava
+   * svoju kutiju, pa se u lockupu može poravnati s vrhom slova; kvadratni
+   * okvir bi za istu vidljivu visinu tražio osjetno širu kutiju.
+   */
+  tight?: boolean;
 };
 
 function a11y(title?: string) {
@@ -37,17 +44,18 @@ function a11y(title?: string) {
     : ({ "aria-hidden": true, focusable: false } as const);
 }
 
-export function BrandMark({ className = "h-8 w-8", title, mono }: MarkProps) {
+export function BrandMark({ className = "h-8 w-8", title, mono, tight }: MarkProps) {
   const clip = useId();
+  const box = tight ? MARK_VIEWBOX_TIGHT : BRAND_VIEWBOX;
   if (mono) {
     return (
-      <svg viewBox={BRAND_VIEWBOX} className={className} {...a11y(title)}>
+      <svg viewBox={box} className={className} {...a11y(title)}>
         <path d={MARK_MONO} fill="currentColor" fillRule="evenodd" />
       </svg>
     );
   }
   return (
-    <svg viewBox={BRAND_VIEWBOX} className={className} {...a11y(title)}>
+    <svg viewBox={box} className={className} {...a11y(title)}>
       <defs>
         <clipPath id={clip}>
           <path d={MARK_LIQUID_CLIP} />
@@ -125,7 +133,8 @@ export function BrandWordmark({ className = "" }: { className?: string }) {
 export function BrandLockup({ className = "" }: { className?: string }) {
   return (
     <div className={`flex items-center gap-2.5 ${className}`}>
-      <BrandMark className="h-9 w-9 shrink-0 text-zlato-2" />
+      {/* vrh znaka stoji na istoj liniji kao vrh slova C */}
+      <BrandMark tight className="mt-[2px] h-[34px] w-auto shrink-0 self-start text-zlato-2" />
       <BrandWordmark />
     </div>
   );
