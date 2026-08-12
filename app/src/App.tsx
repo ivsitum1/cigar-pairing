@@ -6,6 +6,7 @@ import { navigate, useRoute, type Page } from "./store/route";
 import { SystemBanners } from "./components/SystemBanners";
 import { MusicToggle } from "./components/MusicToggle";
 import { Footer } from "./components/Footer";
+import { BrandLockup } from "./components/BrandMark";
 import { ErrorBoundary } from "./components/ErrorBoundary";
 import { AgeGate } from "./components/AgeGate";
 import { shouldShowAgeGate } from "./lib/ageGate";
@@ -55,13 +56,8 @@ export default function App() {
   return (
     <div className="mx-auto flex min-h-screen max-w-2xl flex-col overflow-x-hidden px-4">
       {/* header — cigar band stil */}
-      <header className="flex items-center justify-between pb-2 pt-5">
-        <div>
-          <div className="font-display text-lg uppercase tracking-[0.25em] text-zlato-2">
-            Cigar <span className="text-oxblood">&</span> Pairing
-          </div>
-          <div className="band-rule mt-1.5" />
-        </div>
+      <header className="flex items-center justify-between gap-3 pb-2 pt-5">
+        <BrandLockup />
         <div className="flex items-center gap-2">
           <MusicToggle />
           <button

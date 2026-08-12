@@ -13,27 +13,46 @@ export default defineConfig({
       // prompt: korisnik dobije "nova verzija" traku umjesto tihe zamjene
       // usred koristenja; hashirani asseti cine rucni cacheId bump nepotrebnim
       registerType: "prompt",
-      includeAssets: ["icon.svg"],
+      includeAssets: ["icon.svg", "apple-touch-icon.png"],
       manifest: {
         name: "Cigar & Drink Pairing",
         short_name: "Pairing",
         description:
           "Pairing vodič za cigare i pića — rum, whisky, konjak, gin, kava",
-        theme_color: "#1a1512",
-        background_color: "#1a1512",
+        // ista boja kao --color-humidor u index.css: traka preglednika i
+        // splash se nastavljaju na pozadinu appa umjesto da je gase
+        theme_color: "#201812",
+        background_color: "#201812",
         display: "standalone",
         start_url: "/cigar-pairing/",
+        // "any" i "maskable" su NAMJERNO odvojene datoteke: maskable ikonu
+        // Android reže u krug, pa pečat u njoj ima 16 % zraka i punu podlogu.
+        // Ista slika u obje uloge znači ili odrezan znak ili znak koji pluta
+        // premalen u kvadratu.
         icons: [
           {
             src: "icon-192.png",
             sizes: "192x192",
             type: "image/png",
+            purpose: "any",
           },
           {
             src: "icon-512.png",
             sizes: "512x512",
             type: "image/png",
-            purpose: "any maskable",
+            purpose: "any",
+          },
+          {
+            src: "icon-512-maskable.png",
+            sizes: "512x512",
+            type: "image/png",
+            purpose: "maskable",
+          },
+          {
+            src: "icon.svg",
+            sizes: "any",
+            type: "image/svg+xml",
+            purpose: "any",
           },
         ],
       },

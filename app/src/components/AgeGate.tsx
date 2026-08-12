@@ -5,6 +5,7 @@
 import { useState } from "react";
 import { useI18n } from "../i18n";
 import { rememberAgeConfirmed } from "../lib/ageGate";
+import { BrandSeal, BrandWordmark } from "./BrandMark";
 
 export function AgeGate({ onConfirm }: { onConfirm: () => void }) {
   const { t, lang, setLang } = useI18n();
@@ -22,12 +23,9 @@ export function AgeGate({ onConfirm }: { onConfirm: () => void }) {
       aria-label={t("age.title")}
       className="mx-auto flex min-h-screen max-w-md flex-col items-center justify-center gap-5 px-6 text-center"
     >
-      <div>
-        <div className="font-display text-lg uppercase tracking-[0.25em] text-zlato-2">
-          Cigar <span className="text-oxblood">&</span> Pairing
-        </div>
-        <div className="band-rule mt-1.5" />
-      </div>
+      {/* Prvi ekran koji korisnik vidi — ovdje znak stoji sam, u punoj formi. */}
+      <BrandSeal className="h-20 w-20" title="Cigar & Drink Pairing" />
+      <BrandWordmark className="-mt-2" />
 
       {denied ? (
         <>

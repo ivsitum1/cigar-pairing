@@ -94,6 +94,10 @@ indeksima rangiranim po kvaliteti za sipping uz cigaru.
   računa (PaddleOCR) i vizualno prepoznavanje prstena cigare. Nije dio deploya:
   PWA ga zove samo ako je postavljen `VITE_OCR_API_URL`; bez toga (zadano na
   GitHub Pagesu) koristi ugrađeni paddleocr-js. Vidi `backend/README.md`.
+- `docs/brand/` — znak i pravila korištenja (`LOGO.md`). Sve ikone, SVG-ovi i
+  `app/src/components/brandArt.ts` su **ispis** skripte
+  `python docs/brand/generate_logo_assets.py` — ne uređivati ručno; geometrija
+  se mijenja u skripti. Odbačeni smjerovi: `docs/brand/LOGO_BRAINSTORM.md`.
 - Deploy: push na `master` → GitHub Actions → GitHub Pages
 
 ## Podaci o kolekciji (imam / probao / ocjene / dnevnik)
