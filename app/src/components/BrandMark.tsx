@@ -100,12 +100,21 @@ export function BrandSeal({ className = "h-16 w-16", title, mono }: MarkProps) {
   );
 }
 
-/** Ime + zlatna linija, bez znaka — ide ispod pečata, gdje bi znak bio dvaput. */
+/**
+ * Ime + zlatna linija, bez znaka — ide ispod pečata, gdje bi znak bio dvaput.
+ *
+ * Dva reda, jer par nose "Cigar & Drink": `&` obećava dvije stvari, a pairing
+ * je radnja, ne druga stvar. "Pairing" zato stoji ispod, kao opis — i vidljivo
+ * ime tako ostaje podskup punog imena iz manifesta i naslova.
+ */
 export function BrandWordmark({ className = "" }: { className?: string }) {
   return (
     <div className={className}>
-      <div className="font-display text-lg uppercase tracking-[0.25em] text-zlato-2">
-        Cigar <span className="text-oxblood">&</span> Pairing
+      <div className="font-display text-lg uppercase leading-none tracking-[0.25em] text-zlato-2">
+        Cigar <span className="text-oxblood">&</span> Drink
+      </div>
+      <div className="mt-1 font-display text-micro uppercase tracking-[0.42em] text-zlato">
+        Pairing
       </div>
       <div className="band-rule mt-1.5" />
     </div>

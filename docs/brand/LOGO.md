@@ -12,6 +12,20 @@ Isti unutarnji oval i ista razina pića vežu ih u jedno: prsten banda gledan od
 čaše, a puna donja trećina je piće u njoj. To je cijeli sadržaj znaka — cigara i piće u
 jednom obliku, bez ilustracije.
 
+## Ime
+
+**Cigar & Drink Pairing** — jedno ime, svugdje, bez iznimke: zaglavlje, dobna potvrda,
+naslov stranice, manifest (`name` i `short_name`), share sheet, podnožje, flyer, README.
+
+Zašto to ime, a ne kraće: par nose *Cigar & Drink* (`&` obećava dvije stvari, a pairing je
+radnja, ne druga stvar), dok *Pairing* kaže što app s tim parom radi. Ime k tome **lijepo
+podnosi rezanje** — launcher koji ga skrati na "Cigar & Drink" i dalje pokazuje ispravno
+ime, a ne krnji fragment.
+
+U znaku se ime postavlja u **dva reda** — `CIGAR & DRINK` iznad razmaknutog `PAIRING`. To
+nije drugo ime nego tipografska hijerarhija istog imena; nikad ga ne skraćivati u tekstu.
+`&` je u boji žara, jedino mjesto gdje ta boja dodiruje ime.
+
 ## Regeneracija
 
 ```bash

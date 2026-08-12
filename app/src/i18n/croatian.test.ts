@@ -94,8 +94,9 @@ function croatianStrings(): { where: string; text: string }[] {
 
 const strings = croatianStrings();
 
-// Ime aplikacije ("Cigar & Pairing") je vlastito ime, ne prijevodna riječ.
-const APP_NAME = /Cigar\s*&\s*Pairing/i;
+// Ime aplikacije ("Cigar & Drink Pairing") je vlastito ime, ne prijevodna
+// riječ. Kraći oblik "Cigar & Pairing" ostaje pokriven zbog starijih nizova.
+const APP_NAME = /Cigar\s*&\s*(Drink\s*)?Pairing/i;
 
 /** Prijavi do 5 primjera da poruka o grešci bude upotrebljiva. */
 const offenders = (re: RegExp): string[] =>

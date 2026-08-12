@@ -231,8 +231,8 @@ const STRINGS = {
   },
   "common.strengthReal": { hr: "snaga iz ocjene trgovine", en: "strength from shop rating" },
   "footer.copyright": {
-    hr: "© 2026 Cigar & Pairing. Sva prava pridržana.",
-    en: "© 2026 Cigar & Pairing. All rights reserved.",
+    hr: "© 2026 Cigar & Drink Pairing. Sva prava pridržana.",
+    en: "© 2026 Cigar & Drink Pairing. All rights reserved.",
   },
   "footer.music": {
     hr: "Glazba: Night in Venice i No Frills Cumbia, Kevin MacLeod (incompetech.com), licenca CC BY 4.0.",
