@@ -16,10 +16,10 @@ export default defineConfig({
       includeAssets: ["icon.svg", "apple-touch-icon.png"],
       manifest: {
         name: "Cigar & Drink Pairing",
-        // Jedno ime svugdje — i na početnom zaslonu. Launcher kratke oznake
-        // reže na ~12 znakova, pa se vidi "Cigar & Drink…"; to je i dalje
-        // ispravno ime, za razliku od trećeg imena u short_name.
-        short_name: "Cigar & Drink Pairing",
+        // Nije drugo ime nego isto ime, rezano tamo gdje mi želimo: launcher
+        // kratku oznaku reže na ~12 znakova, pa bi puno ime dalo "Cigar &
+        // Drink…". Ovako rez pada na granici riječi, bez trotočja.
+        short_name: "Cigar & Drink",
         description:
           "Pairing vodič za cigare i pića — rum, whisky, konjak, gin, kava",
         // ista boja kao --color-humidor u index.css: traka preglednika i

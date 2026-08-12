@@ -15,12 +15,15 @@ jednom obliku, bez ilustracije.
 ## Ime
 
 **Cigar & Drink Pairing** — jedno ime, svugdje, bez iznimke: zaglavlje, dobna potvrda,
-naslov stranice, manifest (`name` i `short_name`), share sheet, podnožje, flyer, README.
+naslov stranice, manifest, share sheet, podnožje, flyer, README.
 
 Zašto to ime, a ne kraće: par nose *Cigar & Drink* (`&` obećava dvije stvari, a pairing je
 radnja, ne druga stvar), dok *Pairing* kaže što app s tim parom radi. Ime k tome **lijepo
-podnosi rezanje** — launcher koji ga skrati na "Cigar & Drink" i dalje pokazuje ispravno
-ime, a ne krnji fragment.
+podnosi rezanje** — skraćeno na "Cigar & Drink" i dalje je ispravno, a ne krnji fragment.
+
+Jedina skraćena pojava je `short_name` u manifestu (`Cigar & Drink`), i to nije drugo ime
+nego isto ime rezano na granici riječi: launcher kratku oznaku ionako reže na ~12 znakova,
+pa bi puno ime dalo "Cigar & Drink…". Rez radimo mi, ne sustav.
 
 U znaku se ime postavlja u **dva reda** — `CIGAR & DRINK` iznad razmaknutog `PAIRING`. To
 nije drugo ime nego tipografska hijerarhija istog imena; nikad ga ne skraćivati u tekstu.
