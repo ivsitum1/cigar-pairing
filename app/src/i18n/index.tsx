@@ -490,6 +490,7 @@ const STRINGS = {
   },
   "hum.calendarPickDay": { hr: "Odaberi dan za detalje.", en: "Pick a day to see the details." },
   "hum.calendarDayEmpty": { hr: "Toga dana nema zapisa.", en: "Nothing logged that day." },
+  "hum.editDate": { hr: "Datum", en: "Date" },
   "hum.today": { hr: "Danas", en: "Today" },
   "hum.prevMonth": { hr: "Prethodni mjesec", en: "Previous month" },
   "hum.nextMonth": { hr: "Sljedeći mjesec", en: "Next month" },

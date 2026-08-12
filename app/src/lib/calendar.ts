@@ -111,3 +111,32 @@ export const MONTH_NAMES_EN = [
 
 export const WEEKDAY_SHORT_HR = ["pon", "uto", "sri", "čet", "pet", "sub", "ned"] as const;
 export const WEEKDAY_SHORT_EN = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"] as const;
+
+/**
+ * Zamijeni lokalni kalendarski dan u ISO vremenskoj oznaci, zadrži sat/minutu.
+ * Neispravan `dayKey` ili `iso` → `null`.
+ */
+export function applyLocalDayToIso(iso: string, dayKey: string): string | null {
+  const prev = new Date(iso);
+  if (Number.isNaN(prev.getTime())) return null;
+  const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(dayKey);
+  if (!m) return null;
+  const y = Number(m[1]);
+  const month = Number(m[2]) - 1;
+  const d = Number(m[3]);
+  const next = new Date(
+    y,
+    month,
+    d,
+    prev.getHours(),
+    prev.getMinutes(),
+    prev.getSeconds(),
+    prev.getMilliseconds(),
+  );
+  if (Number.isNaN(next.getTime())) return null;
+  // JavaScript Date prelijeva nepostojeće dane (31.2. → ožujak); odbaci to.
+  if (next.getFullYear() !== y || next.getMonth() !== month || next.getDate() !== d) {
+    return null;
+  }
+  return next.toISOString();
+}

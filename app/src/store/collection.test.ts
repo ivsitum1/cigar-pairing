@@ -322,3 +322,34 @@ describe("remapCollectionAliases", () => {
     expect(out.items["rum-nepoznato-nesto"]?.rating).toBe(5);
   });
 });
+
+describe("updateJournalEntry", () => {
+  beforeAll(() => {
+    installMemoryStorage();
+  });
+
+  beforeEach(() => {
+    localStorage.clear();
+    vi.resetModules();
+  });
+
+  it("mijenja datum i bilješku", async () => {
+    const { addJournalEntry, updateJournalEntry, exportData } = await import("./collection");
+    addJournalEntry({ cigarId: "cig-a", drinkId: null, rating: 8, note: "prva" });
+    const id = JSON.parse(exportData()).journal[0].id as string;
+    const nextDate = new Date(2026, 6, 15, 18, 30).toISOString();
+    updateJournalEntry(id, { date: nextDate, note: "  ispravljeno  " });
+    const entry = JSON.parse(exportData()).journal[0];
+    expect(entry.date).toBe(new Date(nextDate).toISOString());
+    expect(entry.note).toBe("ispravljeno");
+  });
+
+  it("ne dira zapis kad je datum neispravan", async () => {
+    const { addJournalEntry, updateJournalEntry, exportData } = await import("./collection");
+    addJournalEntry({ cigarId: "cig-a", drinkId: null, rating: 8, note: "prva" });
+    const before = JSON.parse(exportData()).journal[0];
+    updateJournalEntry(before.id, { date: "nije-datum", note: "ne bi smjelo" });
+    const after = JSON.parse(exportData()).journal[0];
+    expect(after).toEqual(before);
+  });
+});

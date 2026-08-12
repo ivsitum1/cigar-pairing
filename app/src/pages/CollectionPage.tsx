@@ -30,6 +30,7 @@ import {
   exportData,
   importData,
   removeJournalEntry,
+  updateJournalEntry,
   useCollection,
 } from "../store/collection";
 import { navigate, useRoute, type CollectionView } from "../store/route";
@@ -38,6 +39,7 @@ import { exportHumidors, importHumidors, totalStock } from "../store/humidor";
 import { exportFavorites, importFavorites } from "../store/favorites";
 import { OcrScan } from "../components/OcrScan";
 import { useMarket } from "../store/market";
+import { applyLocalDayToIso, localDayKey } from "../lib/calendar";
 
 /**
  * Redak popisa Kolekcije + izlaz. Bez njega se stavka miče samo gašenjem svih
@@ -354,6 +356,7 @@ export function CollectionPage({
         {data.journal.map((j) => {
           const cigar = cigarForItemId(j.cigarId);
           const drink = drinkById(j.drinkId);
+          const dayValue = localDayKey(new Date(j.date));
           return (
             <div key={j.id} className="rounded-xl border border-dim/15 bg-cedar p-3">
               <div className="flex items-baseline justify-between gap-2">
@@ -378,6 +381,22 @@ export function CollectionPage({
                 {new Date(j.date).toLocaleDateString(lang === "hr" ? "hr-HR" : "en-GB")}
                 {j.note && ` — ${j.note}`}
               </div>
+              <label className="mt-2 flex items-center gap-2 text-xs text-dim">
+                <span className="shrink-0">{t("hum.editDate")}</span>
+                <input
+                  type="date"
+                  value={dayValue}
+                  aria-label={t("hum.editDate")}
+                  onChange={(e) => {
+                    const nextKey = e.target.value;
+                    if (!nextKey || nextKey === dayValue) return;
+                    const nextIso = applyLocalDayToIso(j.date, nextKey);
+                    if (!nextIso) return;
+                    updateJournalEntry(j.id, { date: nextIso });
+                  }}
+                  className="min-w-0 flex-1 rounded-md border border-dim/30 bg-ink/40 px-2 py-1 text-papir [color-scheme:dark]"
+                />
+              </label>
               <button
                 onClick={() => removeJournalEntry(j.id)}
                 className="mt-2 text-xs text-oxblood/80 hover:text-oxblood"

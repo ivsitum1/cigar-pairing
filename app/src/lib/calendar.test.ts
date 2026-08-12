@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import {
+  applyLocalDayToIso,
   groupByDay,
   localDayKey,
   monthGrid,
@@ -80,5 +81,27 @@ describe("shiftMonth", () => {
 
   it("ostaje u godini kad ne treba prijelaz", () => {
     expect(shiftMonth(2026, 5, 1)).toEqual({ year: 2026, month: 6 });
+  });
+});
+
+describe("applyLocalDayToIso", () => {
+  it("mijenja dan, zadržava sat", () => {
+    const iso = new Date(2026, 6, 29, 20, 15, 30).toISOString();
+    const next = applyLocalDayToIso(iso, "2026-07-15");
+    expect(next).not.toBeNull();
+    const d = new Date(next!);
+    expect(localDayKey(d)).toBe("2026-07-15");
+    expect(d.getHours()).toBe(20);
+    expect(d.getMinutes()).toBe(15);
+  });
+
+  it("odbija nepostojeći dan", () => {
+    const iso = new Date(2026, 0, 15, 12, 0).toISOString();
+    expect(applyLocalDayToIso(iso, "2026-02-31")).toBeNull();
+  });
+
+  it("odbija loš ključ ili ISO", () => {
+    expect(applyLocalDayToIso("nije datum", "2026-07-15")).toBeNull();
+    expect(applyLocalDayToIso(new Date().toISOString(), "7/15/2026")).toBeNull();
   });
 });

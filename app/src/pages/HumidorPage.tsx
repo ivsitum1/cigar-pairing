@@ -11,7 +11,7 @@ import { DrinkRow } from "../components/cards";
 import { LastCigarPrompt } from "../components/LastCigarPrompt";
 import { shouldOfferWishlist } from "../lib/lastCigar";
 import { drinkNameLoc } from "../lib/drinkName";
-import { removeJournalEntry, useCollection, type JournalEntry } from "../store/collection";
+import { removeJournalEntry, updateJournalEntry, useCollection, type JournalEntry } from "../store/collection";
 import {
   addHumidor,
   adjustStock,
@@ -28,6 +28,7 @@ import {
   MONTH_NAMES_HR,
   WEEKDAY_SHORT_EN,
   WEEKDAY_SHORT_HR,
+  applyLocalDayToIso,
   groupByDay,
   localDayKey,
   monthGrid,
@@ -502,6 +503,13 @@ export function JournalCalendar() {
               lang={lang}
               lx={lx}
               t={t}
+              onDateMoved={(dayKey) => {
+                setSelected(dayKey);
+                const [y, m] = dayKey.split("-").map(Number);
+                if (Number.isFinite(y) && Number.isFinite(m)) {
+                  setCursor({ year: y, month: m - 1 });
+                }
+              }}
             />
           ))}
         </div>
@@ -516,12 +524,14 @@ function JournalCard({
   lang,
   lx,
   t,
+  onDateMoved,
 }: {
   entry: JournalEntry;
   market: ReturnType<typeof useMarket>;
   lang: "hr" | "en";
   lx: (text: { hr: string; en: string }) => string;
   t: (key: StringKey) => string;
+  onDateMoved?: (dayKey: string) => void;
 }) {
   const cigar = cigarForItemId(entry.cigarId);
   const drink: Drink | undefined = drinkById(entry.drinkId);
@@ -530,6 +540,7 @@ function JournalCard({
     lang === "hr" ? "hr-HR" : "en-GB",
     { hour: "2-digit", minute: "2-digit" },
   );
+  const dayValue = localDayKey(new Date(entry.date));
 
   return (
     <div className="rounded-xl border border-dim/15 bg-cedar p-3">
@@ -555,6 +566,23 @@ function JournalCard({
         {time}
         {entry.note && ` — ${entry.note}`}
       </div>
+      <label className="mt-2 flex items-center gap-2 text-xs text-dim">
+        <span className="shrink-0">{t("hum.editDate")}</span>
+        <input
+          type="date"
+          value={dayValue}
+          aria-label={t("hum.editDate")}
+          onChange={(e) => {
+            const nextKey = e.target.value;
+            if (!nextKey || nextKey === dayValue) return;
+            const nextIso = applyLocalDayToIso(entry.date, nextKey);
+            if (!nextIso) return;
+            updateJournalEntry(entry.id, { date: nextIso });
+            onDateMoved?.(nextKey);
+          }}
+          className="min-w-0 flex-1 rounded-md border border-dim/30 bg-ink/40 px-2 py-1 text-papir [color-scheme:dark]"
+        />
+      </label>
       <button
         type="button"
         onClick={() => removeJournalEntry(entry.id)}

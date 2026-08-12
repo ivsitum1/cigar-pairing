@@ -9,7 +9,17 @@ updated: 2026-07-31
 
 ~500 riječi snapshot nedavne aktivnosti. Agent ažurira nakon svake značajnije operacije pisanja u wiki.
 
-> **2026-08-05:** CONTINUATION OF Claude Code � handoff `.agent/task/handoff_2026-08-05-claude-continuation.md`. Cursor dovr�ava W4 + nomenklatura/~72 vitola curate.
+> **2026-08-12:** Kalendar dnevnika: korekcija datuma — `updateJournalEntry`, `applyLocalDayToIso`, date input na JournalCard + Collection journal; HR/EN `hum.editDate`.
+
+> **2026-08-12:** Logo refine: snifter unutar tijela (bez cijepanja), −15°, taper head, oxblood band + zlato-2 rubovi. PWA + `LOGO_PHILOSOPHY.md` ažurirani.
+
+> **2026-08-11:** Logo mark **Negativni band** (cigara + snifter prorez, zlato/humidor/oxblood). Skice `docs/brand/logo-sketches/`; philosophy `docs/brand/LOGO_PHILOSOPHY.md`; PWA `app/public/icon.svg` + 192/512. Regenerator `generate_logo_assets.py`.
+
+> **2026-08-11:** Full vitola catalogs (pagefetch): Neptune sitemap **6489** (100% project URL overlap 2196/2196), Cigarworld sitemap_en **6488** (3124/3160), Cigarsdaily WP sitemap **1619** (31/31), Cigarpassion Luigi **2269**, Humidor/Havana prior. Famous/C.Gars CF-limited (partial). Holt's sitemap = brand pages only. Report `sideprojects/pagefetch/output/vitola_compare/report.json`.
+
+> **2026-08-11:** pagefetch vitola katalog: Humidor 312/312, Havana WC API 426, Cigarpassion Luigi Box API → **2252** unique SKU (site/API `total_hits` 2293 = 41 dup id). Skripte `crawl_cigarpassion_luigi.py`, `rebuild_vitola_report.py`; report `sideprojects/pagefetch/output/vitola_compare/report.json`. Usporedba na product URL, ne line.
+
+> **2026-08-05:** CONTINUATION OF Claude Code � handoff `.agent/task/handoff_2026-08-05-claude-continuation.md`. Cursor dovr�ava W4 + nomenklatura/~72 vitola curate.
 
 > **2026-08-01:** Rum lab/hidrometar Val 1: **17** boca dobile stvarni g/L (Systembolaget/FRP/Drejer) umjesto stilske procjene — mapa `scripts/data/rum-lab-sugar.json`. Okusne note + tagovi: tanki unosi popunjeni (notes ispod 80 → 0; tags ispod 3 → 0). Ostalih ~135 stilskih bez mjerenja nije dirano. Skripte `apply-rum-lab-sugar.py`, `enrich-rum-taste-notes.py`.
 

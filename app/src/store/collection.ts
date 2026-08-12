@@ -213,6 +213,29 @@ export function addJournalEntry(entry: Omit<JournalEntry, "id" | "date">) {
   persist({ ...cache, journal: [full, ...cache.journal] });
 }
 
+/** Ažuriraj zapis dnevnika (npr. korekcija datuma u kalendaru). */
+export function updateJournalEntry(id: string, patch: Partial<Omit<JournalEntry, "id">>) {
+  const idx = cache.journal.findIndex((j) => j.id === id);
+  if (idx < 0) return;
+  const current = cache.journal[idx];
+  let nextDate = current.date;
+  if (patch.date != null) {
+    const parsed = new Date(patch.date);
+    if (Number.isNaN(parsed.getTime())) return;
+    nextDate = parsed.toISOString();
+  }
+  const next: JournalEntry = {
+    ...current,
+    ...patch,
+    id: current.id,
+    date: nextDate,
+    note: patch.note != null ? patch.note.trim() : current.note,
+  };
+  const journal = cache.journal.slice();
+  journal[idx] = next;
+  persist({ ...cache, journal });
+}
+
 export function removeJournalEntry(id: string) {
   persist({ ...cache, journal: cache.journal.filter((j) => j.id !== id) });
 }
