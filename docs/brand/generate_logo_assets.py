@@ -71,6 +71,23 @@ def wobble(cx: float, cy: float, rx: float, ry: float, lobes: int, amp: float, p
     )
 
 
+def razina(cx: float, cy: float, rx: float, ry: float, y: float, steps: int = 160) -> str:
+    """Zatvoreni oblik pića: dio elipse ispod razine `y`. Jednobojna verzija ne
+    može klipati pravokutnik — sve mora stati u jednu putanju s evenodd."""
+    dy = (y - cy) / ry
+    dy = max(-1.0, min(1.0, dy))
+    t0 = math.asin(dy)  # desna strana, y = cy + ry*sin t
+    pts = [(cx + rx * math.cos(t0), y)]
+    for i in range(1, steps + 1):
+        t = t0 + (math.pi - 2 * t0) * i / steps  # preko dna do lijeve strane
+        pts.append((cx + rx * math.cos(t), cy + ry * math.sin(t)))
+    return (
+        f"M {pts[0][0]:.2f} {pts[0][1]:.2f} "
+        + " ".join(f"L {x:.2f} {y:.2f}" for x, y in pts[1:])
+        + " Z"
+    )
+
+
 # --- Geometrija -------------------------------------------------------------
 # Banderola
 MARK_RING = ring(C, C, 83, 61, bok=7.0, vrh=7.9)
@@ -83,6 +100,19 @@ SEAL_BODY = wobble(C, C, 92, 84, lobes=5, amp=6, phase=1.1)
 SEAL_RING = ring(C, C, 55, 41, bok=5.5, vrh=6.2)
 SEAL_LIQUID_CLIP = ellipse_path(C, C, 49.5, 34.8)
 SEAL_LIQUID_Y = 112
+
+# Jednobojno: jedna boja, sve u jednoj putanji s fill-rule="evenodd".
+#
+# Banderola u jednoj boji ostaje pozitiv (prsten + keyline + puno piće), a
+# pečat se mora obrnuti: masa je tinta, pa banderola u njoj postaje izrez —
+# parnost preklapanja radi posao (masa 1× → tinta, prsten 2× → izrez,
+# unutrašnjost 3× → tinta, piće 4× → izrez).
+MARK_MONO = " ".join(
+    [MARK_RING, MARK_KEYLINE, razina(C, C, 67.5, 46.0, MARK_LIQUID_Y)]
+)
+SEAL_MONO = " ".join(
+    [SEAL_BODY, SEAL_RING, razina(C, C, 49.5, 34.8, SEAL_LIQUID_Y)]
+)
 
 
 def svg_open(title: str, size: int = VB) -> str:
@@ -125,6 +155,15 @@ def seal(background: str | None = None, pad: float = 0.0) -> str:
     )
 
 
+def mono(putanja: str, tinta: str = "#000000") -> str:
+    """Jedna boja, jedna putanja — za tisak u jednoj boji, graviranje, žig,
+    faks-kvalitetu i svaku podlogu na kojoj dvije nijanse ne prežive."""
+    return (
+        svg_open("Cigar &amp; Drink Pairing")
+        + f'  <path d="{putanja}" fill="{tinta}" fill-rule="evenodd"/>\n</svg>\n'
+    )
+
+
 BRAND_ART_TS = f"""// GENERIRANO — ne uređivati ručno.
 // Izvor: docs/brand/generate_logo_assets.py (`python docs/brand/generate_logo_assets.py`)
 //
@@ -151,6 +190,13 @@ export const SEAL_BODY = "{SEAL_BODY}";
 export const SEAL_RING = "{SEAL_RING}";
 export const SEAL_LIQUID_CLIP = "{SEAL_LIQUID_CLIP}";
 export const SEAL_LIQUID_Y = {SEAL_LIQUID_Y};
+
+// Jednobojne verzije — cijeli znak u jednoj putanji, crta se s
+// fill-rule="evenodd". Banderola ostaje pozitiv, pečat je izrez u masi.
+/** Banderola u jednoj boji. */
+export const MARK_MONO = "{MARK_MONO}";
+/** Pečat u jednoj boji. */
+export const SEAL_MONO = "{SEAL_MONO}";
 """
 
 
@@ -188,6 +234,11 @@ def main() -> None:
         BRAND / "logo-mark.svg": mark(),
         BRAND / "logo-mark-papir.svg": mark(linija=KOZA),
         BRAND / "logo-seal.svg": seal(),
+        # Jednobojno — crna za svijetlu podlogu, bijela za tamnu
+        BRAND / "logo-mark-mono.svg": mono(MARK_MONO),
+        BRAND / "logo-mark-mono-invert.svg": mono(MARK_MONO, "#ffffff"),
+        BRAND / "logo-seal-mono.svg": mono(SEAL_MONO),
+        BRAND / "logo-seal-mono-invert.svg": mono(SEAL_MONO, "#ffffff"),
         # PWA / favicon — ikona je pečat bez podloge; podlogu dobiva samo tamo
         # gdje je platforma traži (maskable, iOS).
         PUBLIC / "icon.svg": seal(),
@@ -219,6 +270,10 @@ def main() -> None:
         (mark(), BRAND / "logo-mark-512.png", 512, DUHAN),
         (mark(linija=KOZA), BRAND / "logo-mark-papir-512.png", 512, PAPIR),
         (seal(), BRAND / "logo-seal-512.png", 512, DUHAN),
+        (mono(MARK_MONO), BRAND / "logo-mark-mono-512.png", 512, "#ffffff"),
+        (mono(SEAL_MONO), BRAND / "logo-seal-mono-512.png", 512, "#ffffff"),
+        (mono(MARK_MONO, "#ffffff"), BRAND / "logo-mark-mono-invert-512.png", 512, "#000000"),
+        (mono(SEAL_MONO, "#ffffff"), BRAND / "logo-seal-mono-invert-512.png", 512, "#000000"),
     ]
     for markup, out, size, bg in rasters:
         cairosvg.svg2png(

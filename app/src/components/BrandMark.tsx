@@ -14,8 +14,10 @@ import {
   MARK_KEYLINE,
   MARK_LIQUID_CLIP,
   MARK_LIQUID_Y,
+  MARK_MONO,
   MARK_RING,
   SEAL_BODY,
+  SEAL_MONO,
   SEAL_LIQUID_CLIP,
   SEAL_LIQUID_Y,
   SEAL_RING,
@@ -25,6 +27,8 @@ type MarkProps = {
   className?: string;
   /** Znak je dekoracija uz ispisano ime; postavi samo ako stoji sam. */
   title?: string;
+  /** Jedna boja (currentColor), bez tekućine u drugoj nijansi — tisak, žig. */
+  mono?: boolean;
 };
 
 function a11y(title?: string) {
@@ -33,8 +37,15 @@ function a11y(title?: string) {
     : ({ "aria-hidden": true, focusable: false } as const);
 }
 
-export function BrandMark({ className = "h-8 w-8", title }: MarkProps) {
+export function BrandMark({ className = "h-8 w-8", title, mono }: MarkProps) {
   const clip = useId();
+  if (mono) {
+    return (
+      <svg viewBox={BRAND_VIEWBOX} className={className} {...a11y(title)}>
+        <path d={MARK_MONO} fill="currentColor" fillRule="evenodd" />
+      </svg>
+    );
+  }
   return (
     <svg viewBox={BRAND_VIEWBOX} className={className} {...a11y(title)}>
       <defs>
@@ -57,8 +68,16 @@ export function BrandMark({ className = "h-8 w-8", title }: MarkProps) {
   );
 }
 
-export function BrandSeal({ className = "h-16 w-16", title }: MarkProps) {
+export function BrandSeal({ className = "h-16 w-16", title, mono }: MarkProps) {
   const clip = useId();
+  if (mono) {
+    // U jednoj boji masa je tinta, pa banderola u njoj postaje izrez.
+    return (
+      <svg viewBox={BRAND_VIEWBOX} className={className} {...a11y(title)}>
+        <path d={SEAL_MONO} fill="currentColor" fillRule="evenodd" />
+      </svg>
+    );
+  }
   return (
     <svg viewBox={BRAND_VIEWBOX} className={className} {...a11y(title)}>
       <defs>

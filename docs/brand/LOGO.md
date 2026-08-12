@@ -26,6 +26,8 @@ u toj skripti. Sve ostalo je njezin ispis i ne uređuje se ručno:
 | `docs/brand/logo-mark.svg` | banderola, zlato — tamna podloga |
 | `docs/brand/logo-mark-papir.svg` | banderola, koža — svijetla podloga |
 | `docs/brand/logo-seal.svg` | pečat |
+| `docs/brand/logo-mark-mono.svg`, `logo-seal-mono.svg` | jedna boja (crna) — svijetla podloga |
+| `docs/brand/logo-mark-mono-invert.svg`, `logo-seal-mono-invert.svg` | jedna boja (bijela) — tamna podloga |
 | `docs/brand/*-512.png` | rasterski preview |
 | `app/public/icon.svg` | favicon + PWA ikona (pečat, bez podloge) |
 | `app/public/icon-192.png`, `icon-512.png` | PWA `purpose: any` |
@@ -57,6 +59,18 @@ naziv za čitač ekrana kad stoji sam.
 4. **Razina pića je vodoravna i uvijek u donjoj trećini.** Nagnuta razina čita kao greška.
 5. **Ikona bez podloge, osim gdje platforma traži drukčije** — maskable i iOS.
 6. **Žar (oxblood) nije dio znaka.** Ostaje rezerviran za `&` u imenu i za upozorenja u UI-u.
+
+## Jednobojna verzija
+
+Za tisak u jednoj boji, graviranje, žig, vez i svaku podlogu na kojoj dvije nijanse ne prežive.
+Cijeli znak je **jedna putanja s `fill-rule="evenodd"`** — bez maski, prozirnosti i preklopa,
+onako kako to traži rezač i tiskar.
+
+- **Banderola** ostaje pozitiv: prsten, keyline i puna razina pića u istoj boji.
+- **Pečat se obrće**: masa je tinta, pa banderola u njoj postaje izrez. Parnost preklapanja
+  radi posao — masa 1×, prsten 2× (izrez), unutrašnjost 3×, piće 4× (izrez).
+- Ne rekonstruirati jednobojnu verziju uklanjanjem boja iz obojene — pečat bi nestao u masi.
+- U aplikaciji: `<BrandMark mono />` i `<BrandSeal mono />`, boja iz `currentColor`.
 
 ## Paleta znaka
 
