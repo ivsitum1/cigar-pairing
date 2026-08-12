@@ -1,8 +1,8 @@
 # Logo — brainstorm (sidequest)
 
-Šest smjerova za znak Cigar & Drink Pairinga. Ništa od ovoga nije primijenjeno na app —
-`app/public/icon.svg` i PNG-ovi su netaknuti, sve živi na grani
-`claude/cigar-rum-logo-redesign-h8kjsv`.
+Šest smjerova za znak Cigar & Drink Pairinga. **Izabrano: 01 Banderola + 05 Pečat**, i
+provedeno kroz app — specifikacija konačnog znaka je u [`LOGO.md`](LOGO.md). Ovaj dokument
+ostaje zapis odluke: što je razmatrano i zašto ostalo nije prošlo.
 
 Skice: `docs/brand/concepts/*.svg` (+ PNG preview na tamnoj i svijetloj podlozi).
 Regeneracija: `python docs/brand/concepts/generate_concepts.py` — svi radijusi, nepravilnost
@@ -89,10 +89,12 @@ ide u zaglavlje i na papir, puna verzija na početni zaslon, gdje masa pobjeđuj
 je riješen jedini stvarni problem: ikona koja mora preživjeti 16 px pored znaka koji mora
 podnijeti veliki format.
 
-## Ako ide dalje
+## Provedeno
 
-1. **Optički ispravak elipse** — zlatna linija na vrhu i dnu mora biti nijansu deblja od
-   bočne, inače oval izgleda stisnuto.
-2. **Jednobojna varijanta** za tisak, pečate i favicon fallback.
-3. **Maskable ikona** — Android reže u krug, pečatu treba ~10 % zraka sa svih strana.
-4. Tek onda `app/public/icon.svg`, `icon-192.png`, `icon-512.png` i `<meta name="theme-color">`.
+1. **Optički ispravak elipse** — potez prstena na vrhu i dnu je 7,9 naprama 7,0 sa strane.
+2. **Kožna varijanta za papir** — zlato tamo ne drži kontrast.
+3. **Maskable ikona** s 16 % zraka i punom podlogom, odvojena od `purpose: any`.
+4. `app/public/icon.svg`, PNG-ovi, `apple-touch-icon`, manifest i `theme-color` (`#201812`).
+5. Znak u UI-u (`<BrandMark />`, `<BrandSeal />`) i na hero dijelu flyera.
+
+Detalji i pravila korištenja: [`LOGO.md`](LOGO.md).
