@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Spoj">
+  <defs>
+    <clipPath id="s-a"><ellipse cx="100.0" cy="100.0" rx="80" ry="43" transform="rotate(-27 100.0 100.0)"/></clipPath>
+  </defs>
+  <g clip-path="url(#s-a)">
+    <ellipse cx="100.0" cy="100.0" rx="80" ry="43" transform="rotate(27 100.0 100.0)" fill="#a9662f"/>
+  </g>
+  <ellipse cx="100.0" cy="100.0" rx="80" ry="43" transform="rotate(-27 100.0 100.0)" fill="none" stroke="#c9a35c" stroke-width="6"/>
+  <ellipse cx="100.0" cy="100.0" rx="80" ry="43" transform="rotate(27 100.0 100.0)" fill="none" stroke="#c9a35c" stroke-width="6"/>
+</svg>
