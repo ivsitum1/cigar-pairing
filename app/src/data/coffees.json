@@ -353,6 +353,8 @@
   "flavorTags": [
    "zemljano",
    "koza",
+   "duhan",
+   "drvo",
    "kakao",
    "zacini"
   ],
@@ -757,6 +759,39 @@
   }
  },
  {
+  "id": "cf-burundi-washed",
+  "category": "coffee",
+  "name": "Filter — Burundi washed (light-medium)",
+  "nameLoc": {
+   "hr": "Filter — Burundi oprano (light-medium)",
+   "en": "Filter — Burundi washed (light-medium)"
+  },
+  "style": "filter-light",
+  "region": "Kayanza, Burundi",
+  "country": "Burundi",
+  "abv": null,
+  "body": 2,
+  "sweetness": 3,
+  "flavorTags": [
+   "ribiz",
+   "voce",
+   "citrus",
+   "jabuka"
+  ],
+  "qualityScore": 8,
+  "priceEUR": null,
+  "shopHR": "Cogito / Quahwa",
+  "pairable": true,
+  "serving": {
+   "best": "V60 / aeropress"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Bobičasto voće i crvena jabuka — svjež kontrast uz Cameroon ili kraći Habano.",
+   "en": "Berry fruit and red apple — a fresh contrast with Cameroon or a shorter Habano."
+  }
+ },
+ {
   "id": "cf-pour-over-costa-rica",
   "category": "coffee",
   "name": "Pour-over — Costa Rica honey process",
@@ -786,6 +821,39 @@
   "notes": {
    "hr": "Medena slatkoća i voće — uz laganu cigaru, ne uz peaty ili maduro ekstrem.",
    "en": "Honeyed sweetness and fruit — with a light cigar, not a peaty or maduro extreme."
+  }
+ },
+ {
+  "id": "cf-panama-geisha",
+  "category": "coffee",
+  "name": "Pour-over — Panama Geisha (light)",
+  "nameLoc": {
+   "hr": "Pour-over — Panama Geisha (light)",
+   "en": "Pour-over — Panama Geisha (light)"
+  },
+  "style": "filter-light",
+  "region": "Boquete, Panama",
+  "country": "Panama",
+  "abv": null,
+  "body": 1,
+  "sweetness": 3,
+  "flavorTags": [
+   "cvjetno",
+   "citrus",
+   "bergamot",
+   "caj"
+  ],
+  "qualityScore": 9,
+  "priceEUR": null,
+  "shopHR": "specialty",
+  "pairable": true,
+  "serving": {
+   "best": "V60 / Kalita"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Čajno-cvjetna elegancija — samo uz najblaži Connecticut; jaka cigara je pregazi.",
+   "en": "Tea-like floral elegance — only with the mildest Connecticut; a strong cigar steamrolls it."
   }
  },
  {
@@ -849,8 +917,40 @@
   },
   "cigarHint": null,
   "notes": {
-   "hr": "Razvodnjeniji od espressa — manje intenziteta, duže praćenje uz srednju cigaru.",
-   "en": "More diluted than espresso — less intensity, longer pacing with a medium cigar."
+   "hr": "Više vode od espressa — često više gorčine i pepela (pre-ekstrakcija); uz srednju cigaru, ne uz nježni Shade.",
+   "en": "More water than espresso — often more bitterness and ash (over-extraction); with a medium cigar, not delicate Shade."
+  }
+ },
+ {
+  "id": "cf-americano",
+  "category": "coffee",
+  "name": "Caffè americano",
+  "nameLoc": {
+   "hr": "Caffè americano",
+   "en": "Caffè americano"
+  },
+  "style": "americano",
+  "region": "Italija (stil)",
+  "country": "—",
+  "abv": null,
+  "body": 3,
+  "sweetness": 2,
+  "flavorTags": [
+   "kakao",
+   "orasasti",
+   "gorko"
+  ],
+  "qualityScore": 7,
+  "priceEUR": null,
+  "shopHR": "svugdje",
+  "pairable": true,
+  "serving": {
+   "best": "Espresso + vruća voda (~1:1)"
+  },
+  "cigarHint": null,
+  "notes": {
+   "hr": "Espresso razrijeđen vodom — srednji TDS, blaži ulaz uz cigaru; skini cremu za čišći okus.",
+   "en": "Espresso diluted with water — medium TDS, softer entry with a cigar; skim crema for a cleaner cup."
   }
  },
  {

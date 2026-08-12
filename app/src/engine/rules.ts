@@ -24,6 +24,14 @@ export const WEIGHTS = {
   // večeri radi izbor unutar izjednačenih (engine/occasion → rankByOccasion).
   occasionFit: 5,
   occasionMild: 3,
+  // Coffee overlay (engine/coffeePairing.ts) — soft nudges; each < bodyPerStep.
+  coffeeIntensityMatch: 6,
+  coffeeIntensityMismatch: 6,
+  coffeeDelicateBridge: 5,
+  coffeeDelicateOverwhelm: 5,
+  coffeeFlavorBridge: 5,
+  coffeeAcidityContrast: 5,
+  coffeeSweetMellow: 4,
 };
 
 // sinonimi/varijante iz scrape podataka -> kanonski tag koji engine boduje
@@ -54,6 +62,7 @@ export const TAG_ALIASES: Record<string, string> = {
   maple: "karamela",
   orah: "orasasti",
   naranca: "citrus",
+  bergamot: "citrus",
   grozdje: "voce",
   menta: "travnato",
   mediterran: "travnato",

@@ -7,6 +7,7 @@ import { personalBrandReason, personalStyleReason, type PersonalPrefs } from "./
 import { applyServe } from "./serve";
 import { applyGeometry } from "./vitolaGeometry";
 import { occasionReasons, type Occasion } from "./occasion";
+import { coffeePairingReasons } from "./coffeePairing";
 import { drinkPackagingRank } from "../lib/drinkName";
 
 /**
@@ -301,6 +302,14 @@ export function scorePairing(
   })) {
     score += reason.score;
     reasons.push(reason);
+  }
+
+  // 9) Coffee-specific overlay (intensity, bridges, contrast) — only for coffee
+  if (effDrink.category === "coffee") {
+    for (const reason of coffeePairingReasons(effCigar, effDrink)) {
+      score += reason.score;
+      reasons.push(reason);
+    }
   }
 
   // objašnjenja geometrije i serve stila (score 0 — efekt je već u body/strength,

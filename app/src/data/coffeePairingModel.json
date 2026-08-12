@@ -1,0 +1,324 @@
+{
+  "meta": {
+    "source": "The World Atlas of Coffee: From Beans to Brewing — coffees explored, explained and enjoyed (James Hoffmann; Mitchell Beazley)",
+    "sourceKind": "book",
+    "derivedVia": "Distilled notes + pairing heuristics for this app (coffee perception, origins, roast/process); cigar-side rules are application of the book's balance/intensity/harmony principles, not a cigar chapter from the book.",
+    "purpose": "App-ready data model for a coffee<->cigar pairing engine",
+    "note": "Attribute coffee knowledge to Hoffmann's atlas. Do not treat cigar pairing scores as verbatim book content. Validate empirically before shipping weight changes."
+  },
+  "perceptionFramework": {
+    "tongueBasicTastes": [
+      "acidity",
+      "sweetness",
+      "bitterness",
+      "saltiness",
+      "savoriness"
+    ],
+    "nasalAromas": "Complex descriptors (chocolate, berries, caramel) sensed retronasally via olfactory bulb",
+    "mouthfeel": "Physical texture/weight sensed on palate; modeled separately from taste and aroma"
+  },
+  "tasteAttributes": {
+    "acidity": {
+      "positiveDescriptors": [
+        "bright",
+        "lively",
+        "crisp",
+        "juicy",
+        "refreshing",
+        "apple-like",
+        "citrus-like"
+      ],
+      "negativeDescriptors": [
+        "sour",
+        "sharp",
+        "vinegary"
+      ],
+      "correlations": "Higher-density beans and lighter roasts increase acidity; degrades quickly through roast development"
+    },
+    "sweetness": {
+      "desirability": "high",
+      "origin": "Fruit ripeness / sugar content of the cherry",
+      "roastDynamics": "Bell curve; peaks between acidity high and bitterness high"
+    },
+    "bitterness": {
+      "roastRelationship": "Increases roughly linearly with roast time/darkness",
+      "signals": [
+        "over-extraction",
+        "Robusta presence (~2x caffeine)"
+      ],
+      "descriptors": [
+        "ashy",
+        "harsh",
+        "burnt rubber (Robusta-specific)"
+      ]
+    }
+  },
+  "bodyMouthfeel": {
+    "intensityScale": [
+      "Light/Tea-like",
+      "Medium",
+      "Rich/Creamy/Heavy"
+    ],
+    "descriptors": [
+      "buttery",
+      "silky",
+      "delicate",
+      "mousy",
+      "elastic"
+    ],
+    "processingImpact": {
+      "naturalDry": "higher body / heavier",
+      "washed": "cleaner / lighter",
+      "semiWashedGilingBasah": "softer, rounder, heavier-bodied"
+    }
+  },
+  "flavorFamilies": {
+    "floral": [
+      "jasmine",
+      "bergamot/Earl Grey",
+      "delicate"
+    ],
+    "fruity": {
+      "berry": [
+        "blueberry",
+        "strawberry",
+        "blackcurrant"
+      ],
+      "citrus": [
+        "lemon",
+        "lime",
+        "orange blossom"
+      ],
+      "pomeStone": [
+        "red apple",
+        "red grape",
+        "cherry"
+      ],
+      "tropical": [
+        "mango",
+        "pineapple",
+        "melon"
+      ]
+    },
+    "nuttyCocoa": [
+      "chocolate",
+      "caramel",
+      "toffee",
+      "roasted nuts"
+    ],
+    "herbalSavory": [
+      "onion-like (Pacamara)",
+      "spice",
+      "tobacco",
+      "leather",
+      "wood"
+    ],
+    "earthy": [
+      "musty",
+      "swamp green",
+      "forest floor"
+    ]
+  },
+  "qualityMetrics": {
+    "cleanliness": "Absence of off-tastes / unusual astringency",
+    "balance": "Whether elements are harmonious or one is 'too loud'",
+    "aftertaste": "Sensation after swallowing; quinic acid -> clean finish; dark fruit/spice may linger by origin",
+    "complexity": "Diversity of flavor layers; higher in high-altitude hand-picked Arabica"
+  },
+  "defects": {
+    "phenolic": [
+      "harsh",
+      "metallic",
+      "paint-stripper",
+      "sulfur-like"
+    ],
+    "fermentation": [
+      "boozy",
+      "dirty",
+      "rotten fruit",
+      "wild ferment"
+    ],
+    "environmentalStorage": [
+      "barnyard",
+      "manure",
+      "cardboard/stale",
+      "woody",
+      "flat"
+    ],
+    "potatoDefect": "Raw potato-skin aroma (Burundi/Rwanda)"
+  },
+  "origins": {
+    "species": {
+      "arabica": {
+        "latin": "Coffea arabica",
+        "profile": "Superior flavor, high acidity & complexity; specialty standard"
+      },
+      "robusta": {
+        "latin": "Coffea canephora",
+        "profile": "Woody/burnt rubber, very low acidity, heavy body, ~2x caffeine"
+      }
+    },
+    "varieties": [
+      {
+        "name": "Typica",
+        "notes": "Original variety; excellent cup, low yield"
+      },
+      {
+        "name": "Bourbon",
+        "notes": "Prized distinctive sweetness"
+      },
+      {
+        "name": "Caturra",
+        "notes": "Bourbon mutation; quality rises with altitude"
+      },
+      {
+        "name": "Geisha",
+        "notes": "Exceptionally aromatic, floral, citrusy; light tea-like body"
+      },
+      {
+        "name": "SL-28",
+        "notes": "Kenyan; distinct blackcurrant"
+      },
+      {
+        "name": "SL-34",
+        "notes": "Similar to SL-28, slightly lower quality"
+      },
+      {
+        "name": "Pacamara",
+        "notes": "Large bean; chocolate + fruit, risk of herbal/onion notes"
+      }
+    ],
+    "terroirAltitude": {
+      "terroir": "Combined geography + climate effect on flavor",
+      "altitudeEffect": "Higher altitude -> denser beans -> higher acidity + more unusual flavor",
+      "gradingProxy": "Strictly Hard Bean / Strictly High Grown ~ >1200-1300 m (Central America)"
+    },
+    "processing": {
+      "washed": "Higher acidity, more complexity, clean cup",
+      "natural": "Adds fruit (blueberry/strawberry/tropical); high body; higher defect risk",
+      "honeyPulpNatural": "More sweetness & body than washed",
+      "semiWashedGilingBasah": "Much lower acidity, higher body; wood/earth/spice"
+    },
+    "roastLevels": {
+      "light": "Preserves acidity, fruit, intrinsic origin flavors",
+      "medium": "Balances acidity/bitterness at peak sweetness",
+      "dark": "High body & bitterness; acidity lost; generic roast flavor replaces origin"
+    },
+    "regions": {
+      "Ethiopia": "Floral (jasmine), citrus (bergamot), candied/tropical fruit",
+      "Kenya": "Intense acidity, bright complexity, blackcurrant",
+      "Burundi/Rwanda": "Complex berry, juicy acidity, red apple/grape",
+      "Brazil": "Low acidity, heavy body, very sweet, chocolate/nutty",
+      "Colombia": "Wide range: heavy/chocolatey to jammy/sweet/fruity",
+      "Costa Rica": "Clean, sweet, light-bodied",
+      "Guatemala": "Sweet/fruity to rich/chocolatey",
+      "Panama": "Aromatic, floral, citrusy (Geisha-driven)",
+      "Indonesia (semi-washed)": "Heavy-bodied, earthy, woody, spicy; little acidity",
+      "Islands (Jamaica/Cuba/Dominican)": "Clean, sweet, mild; low-middling acidity"
+    }
+  },
+  "pairingEngine": {
+    "principles": [
+      "balance",
+      "intensity matching",
+      "flavor harmony"
+    ],
+    "matchingDimensions": [
+      {
+        "key": "intensityStrength",
+        "coffeeProxy": "TDS",
+        "rule": "High TDS (espresso) -> high-intensity partners; low TDS -> lighter partners"
+      },
+      {
+        "key": "bodyMouthfeel",
+        "scale": [
+          "Tea-like/Delicate",
+          "Rich/Heavy"
+        ]
+      },
+      {
+        "key": "roastLevel",
+        "effect": "Drives bitterness vs acidity balance"
+      },
+      {
+        "key": "dominantFlavorFamily",
+        "families": [
+          "Floral",
+          "Fruity",
+          "Nutty/Cocoa",
+          "Herbal/Savory/Spicy",
+          "Earthy/Woody"
+        ]
+      },
+      {
+        "key": "secondaryAnchors",
+        "values": [
+          "acidity",
+          "sweetness",
+          "aftertasteLength"
+        ]
+      }
+    ],
+    "rules": {
+      "complementary": {
+        "description": "Match Flavor Family + Roast Profile",
+        "example": "Dark-roast Brazil (nutty/chocolate) with cocoa/roasted-nut partner",
+        "logic": "IF Coffee.FlavorFamily == Partner.FlavorFamily AND Coffee.Intensity == Partner.Intensity THEN Compatibility = HIGH"
+      },
+      "contrasting": {
+        "description": "Use one attribute to refresh/cut through the other",
+        "example": "High-acidity washed Kenya as palate cleanser for heavy earthy partner",
+        "logic": "IF Partner.Body == HEAVY THEN SELECT Coffee.Acidity == HIGH (cleanser) OR Coffee.Sweetness == HIGH (mellowing)"
+      },
+      "bodyStrengthMatching": {
+        "rule": "Match tactile weight so neither obscures the other",
+        "highBodyCoffees": "Natural/Dry, Giling Basah -> full-bodied/heavy partners",
+        "lowBodyCoffees": "Fully washed/cleaner -> more delicate partners so complexity isn't lost"
+      }
+    },
+    "flavorBridges": [
+      {
+        "bridge": "Spicy/Tobacco/Leather",
+        "coffees": [
+          "Semi-washed Indonesian (Sumatra)"
+        ],
+        "mechanism": "Inherent tobacco/spice/wood -> complementary to similar profiles"
+      },
+      {
+        "bridge": "Nutty/Caramel",
+        "coffees": [
+          "Brazil",
+          "some Colombian"
+        ],
+        "mechanism": "Approachable, sweet, low acidity -> stable partners for sweet profiles"
+      },
+      {
+        "bridge": "Floral/Citrus",
+        "coffees": [
+          "Ethiopian washed",
+          "Panamanian Geisha"
+        ],
+        "mechanism": "Elegant, tea-like -> require most delicate partners to avoid being overpowered"
+      }
+    ],
+    "scoring": {
+      "formula": "PairingScore = (B * 0.4) + (I * 0.3) + (F * 0.3)",
+      "weights": {
+        "bodyMatch": 0.4,
+        "intensityRoastBalance": 0.3,
+        "flavorSynergy": 0.3
+      },
+      "components": {
+        "B_bodyMatch": "1.0 if Coffee.Body == Partner.Body exactly; 0.5 if one step apart",
+        "I_intensityRoastBalance": "Higher if Coffee.RoastLevel (bitterness indicator) aligns with partner's perceived strength",
+        "F_flavorSynergy": {
+          "complementaryBridge": 1,
+          "successfulContrast": 0.5,
+          "negativeTastes": -1
+        }
+      },
+      "bodyFirstRule": "Compatibility = (1 - ABS(Coffee.BodyLevel - Partner.BodyLevel)) * Weight",
+      "priorityNote": "Always match tactile body before flavor notes; a heavy partner drowns a tea-like coffee regardless of flavor similarity"
+    }
+  }
+}

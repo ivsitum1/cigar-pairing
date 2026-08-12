@@ -9,6 +9,12 @@ updated: 2026-07-31
 
 ~500 riječi snapshot nedavne aktivnosti. Agent ažurira nakon svake značajnije operacije pisanja u wiki.
 
+> **2026-08-12:** Coffee audit: `coffees.json` +3 (americano, Burundi, Panama Geisha); Sumatra duhan/drvo; `coffeePairing` wired u `pairing.ts` + WEIGHTS; `coffees.catalog.test.ts`.
+
+> **2026-08-12:** Club 101 Pića: `d-wine-table`, `d-coffee`, `d-tequila` u `club101.json`.
+
+> **2026-08-12:** NotebookLM grill kava: Hoffmann *World Atlas* (`e2f2af38` = `e2f4c754` alt URL). Dump `docs/bonton/research/notebooklm-grill/e2f2af38-*`; MCP id `coffee-hoffmann-atlas`.
+
 > **2026-08-12:** Kalendar dnevnika: korekcija datuma — `updateJournalEntry`, `applyLocalDayToIso`, date input na JournalCard + Collection journal; HR/EN `hum.editDate`.
 
 > **2026-08-12:** Logo refine: snifter unutar tijela (bez cijepanja), −15°, taper head, oxblood band + zlato-2 rubovi. PWA + `LOGO_PHILOSOPHY.md` ažurirani.
