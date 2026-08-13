@@ -6,11 +6,13 @@ import { brandInfo, brandDisplayName, resolveCigarId } from "../data";
 import { useI18n } from "../i18n";
 import { Meter } from "./ui";
 import { BackButton } from "./BackButton";
-import { uniqueVitolas } from "../lib/cigarVitola";
+import { applyVitola, needsVitolaPick, uniqueVitolas } from "../lib/cigarVitola";
 import { formatEur, vitolaPriceForMarket } from "../lib/cigarPrice";
 import { vitolaBlurb } from "../lib/vitolaInfo";
 import { cigarDescription } from "../lib/cigarNote";
+import { cigarItemId } from "../lib/cigarItemId";
 import { useMarket } from "../store/market";
+import { totalStock, useHumidors } from "../store/humidor";
 
 function dimLabel(v: Vitola): string {
   if (v.ring != null && v.lengthMM != null) return `${v.ring} × ${v.lengthMM} mm`;
@@ -31,11 +33,14 @@ export function LineSheet({
 }) {
   const { t, cn, lang } = useI18n();
   const market = useMarket();
+  useHumidors();
   const description = cigarDescription(raw, lang);
   const cigar = resolveCigarId(raw.id) ?? raw;
   const info = brandInfo(cigar.brand);
   const displayBrand = brandDisplayName(cigar.brand, market);
   const vitolas = useMemo(() => uniqueVitolas(cigar), [cigar]);
+  const unassignedPool = totalStock(cigar.id);
+  const showUnassignedBanner = unassignedPool > 0 && needsVitolaPick(cigar);
 
   return (
     <SheetShell
@@ -93,6 +98,12 @@ export function LineSheet({
           </span>
         </div>
 
+        {showUnassignedBanner && (
+          <p className="mb-2 text-xs text-dim">
+            {t("hum.unassignedLine")}: {unassignedPool}
+          </p>
+        )}
+
         <div className="space-y-1.5">
           {vitolas.map((v) => {
             const blurb = vitolaBlurb(v.name, lang);
@@ -100,6 +111,7 @@ export function LineSheet({
             // isti razrješivač kao popis i kartica — ranije je ovdje stajalo
             // "provjeri cijenu" za vitolu čiju je cijenu kartica pokazivala
             const { price, url, approx, region } = vitolaPriceForMarket(v, market);
+            const n = totalStock(cigarItemId(applyVitola(cigar, v)));
             return (
               <button
                 key={v.name}
@@ -126,6 +138,7 @@ export function LineSheet({
                         market === "ALL" && region && region !== "HR" ? ` ${region}` : ""
                       }`
                     : t("price.check")}
+                  {n > 0 && <div className="text-micro text-zlato-2">⌂ {n}</div>}
                   {url ? (
                     <a
                       href={url}
