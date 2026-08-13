@@ -288,36 +288,17 @@ function pickStock(match: (s: HumidorStock) => boolean): HumidorStock | undefine
 }
 
 /**
- * Zaliha za traženi ključ, uz toleranciju na vitolu.
- *
- * Humidor se puni i po liniji (`cig-x`, Brzi unos iz kolekcije) i po vitoli
- * (`cig-x@churchill`), a zapis večeri traži vitolu kad ih linija ima više.
- * Bez tolerancije taj nesklad znači „nema te cigare u humidoru”: zaliha ostane
- * netaknuta i nikad se ne dođe do nule. Zato:
- *  1. točan ključ,
- *  2. goli ključ linije (zaliha bez formata pokriva svaku vitolu),
- *  3. jedini preostali ključ te linije — nema se s čim zamijeniti.
- * Više različitih vitola u zalihi ostavljamo na miru: ne pogađamo koju je
- * korisnik popušio.
+ * Zaliha za traženi ključ kad je u zalihi ostala samo jedna vitola te linije —
+ * zapis po liniji (`cig-x`) može skinuti taj jedini ključ.
  */
-function findStockHit(itemId: string): StockHit | null {
-  const exact = pickStock((s) => s.itemId === itemId);
-  if (exact) return { humidorId: exact.humidorId, itemId: exact.itemId };
-
-  const { cigarId, vitolaSlug } = parseCigarItemId(itemId);
-  if (vitolaSlug) {
-    const line = pickStock((s) => s.itemId === cigarId);
-    if (line) return { humidorId: line.humidorId, itemId: line.itemId };
-  }
-
+function findSingleVitolaHit(cigarId: string): HumidorStock | null {
   const prefix = cigarId + VITOLA_ID_SEP;
   const sameLine = cache.stock.filter(
     (s) => s.count > 0 && (s.itemId === cigarId || s.itemId.startsWith(prefix)),
   );
   const keys = new Set(sameLine.map((s) => s.itemId));
   if (keys.size !== 1) return null;
-  const only = pickStock((s) => s.itemId === sameLine[0].itemId)!;
-  return { humidorId: only.humidorId, itemId: only.itemId };
+  return pickStock((s) => s.itemId === sameLine[0].itemId) ?? null;
 }
 
 /**
@@ -325,10 +306,29 @@ function findStockHit(itemId: string): StockHit | null {
  * ima; bez pogotka ne mijenja ništa (cigara nije bila iz humidora).
  */
 export function consumeFromStock(itemId: string): StockHit | null {
-  const hit = findStockHit(itemId);
-  if (!hit) return null;
-  adjustStock(hit.humidorId, hit.itemId, -1);
-  return hit;
+  const hit =
+    cache.stock.find(
+      (s) => s.itemId === itemId && s.count > 0 && s.humidorId === cache.activeId,
+    ) ??
+    cache.stock.find((s) => s.itemId === itemId && s.count > 0);
+  if (hit) {
+    setStock(hit.humidorId, hit.itemId, hit.count - 1);
+    return { humidorId: hit.humidorId, itemId: hit.itemId };
+  }
+  const { cigarId, vitolaSlug } = parseCigarItemId(itemId);
+  if (vitolaSlug) {
+    const pool =
+      cache.stock.find(
+        (s) => s.itemId === cigarId && s.count > 0 && s.humidorId === cache.activeId,
+      ) ?? cache.stock.find((s) => s.itemId === cigarId && s.count > 0);
+    if (!pool) return null;
+    setStock(pool.humidorId, pool.itemId, pool.count - 1);
+    return { humidorId: pool.humidorId, itemId: pool.itemId };
+  }
+  const single = findSingleVitolaHit(cigarId);
+  if (!single) return null;
+  setStock(single.humidorId, single.itemId, single.count - 1);
+  return { humidorId: single.humidorId, itemId: single.itemId };
 }
 
 export function exportHumidors(): HumidorData {
