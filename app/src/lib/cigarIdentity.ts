@@ -2,7 +2,12 @@ import type { Cigar } from "../types";
 import { parseCigarItemId, vitolaFromItemId } from "./cigarItemId";
 import { applyVitola, needsVitolaPick, type CigarSheetOpen } from "./cigarVitola";
 
-export type StockRow = { itemId: string; count: number };
+export type StockRow = {
+  itemId: string;
+  count: number;
+  humidorId?: string;
+  updatedAt?: string;
+};
 
 export function resolveSheetFromItemId(
   itemId: string,
@@ -32,4 +37,47 @@ export function explainStock(itemId: string, rows: StockRow[]) {
       r.count > 0,
   );
   return { exact, unassignedLine, siblings };
+}
+
+function sameHumidor(row: StockRow, humidorId: string): boolean {
+  return row.humidorId === undefined || row.humidorId === humidorId;
+}
+
+/**
+ * Premjesti 1 komad s golog id-a linije na konkretnu vitolu u istom humidoru.
+ * Ne dira druge kutije. Bez sluga ili bez bazena vraća iste redove.
+ */
+export function bindStockToVitola(
+  rows: StockRow[],
+  humidorId: string,
+  itemId: string,
+): StockRow[] {
+  const { cigarId, vitolaSlug } = parseCigarItemId(itemId);
+  if (!vitolaSlug) return rows;
+
+  const lineRow = rows.find((r) => r.itemId === cigarId && sameHumidor(r, humidorId));
+  if (!lineRow || lineRow.count <= 0) return rows;
+
+  let foundVitola = false;
+  const next = rows.map((r) => {
+    if (r.itemId === cigarId && sameHumidor(r, humidorId)) {
+      return { ...r, count: r.count - 1 };
+    }
+    if (r.itemId === itemId && sameHumidor(r, humidorId)) {
+      foundVitola = true;
+      return { ...r, count: r.count + 1 };
+    }
+    return r;
+  });
+
+  if (!foundVitola) {
+    next.push({
+      itemId,
+      count: 1,
+      humidorId,
+      updatedAt: lineRow.updatedAt,
+    });
+  }
+
+  return next.filter((r) => r.count > 0);
 }

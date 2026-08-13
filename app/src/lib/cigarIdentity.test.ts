@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import type { Cigar } from "../types";
 import { cigarItemId, parseCigarItemId } from "./cigarItemId";
 import {
+  bindStockToVitola,
   explainStock,
   resolveSheetFromItemId,
   type StockRow,
@@ -84,5 +85,17 @@ describe("explainStock", () => {
     const e = explainStock("cig-x", rows);
     expect(e.exact).toBe(4);
     expect(e.unassignedLine).toBe(0);
+  });
+});
+
+describe("bindStockToVitola", () => {
+  it("bindStockToVitola prebacuje 1 s golog id-a na vitolu", () => {
+    const next = bindStockToVitola(
+      [{ humidorId: "h", itemId: "cig-x", count: 3, updatedAt: "t" }],
+      "h",
+      "cig-x@churchill",
+    );
+    expect(next.find((s) => s.itemId === "cig-x")?.count).toBe(2);
+    expect(next.find((s) => s.itemId === "cig-x@churchill")?.count).toBe(1);
   });
 });

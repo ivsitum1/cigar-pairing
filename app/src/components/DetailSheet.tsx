@@ -24,7 +24,8 @@ import { formatEur, vitolaPriceForMarket } from "../lib/cigarPrice";
 import { drinkNameLoc } from "../lib/drinkName";
 import { vitolaBlurb } from "../lib/vitolaInfo";
 import { resolveSamplerCigar } from "../lib/samplerLink";
-import { cigarItemId } from "../lib/cigarItemId";
+import { cigarItemId, parseCigarItemId } from "../lib/cigarItemId";
+import { explainStock } from "../lib/cigarIdentity";
 import { cigarDescription } from "../lib/cigarNote";
 import { needsVitolaPick } from "../lib/cigarVitola";
 import { shouldOfferWishlist } from "../lib/lastCigar";
@@ -782,9 +783,12 @@ function HumidorControls({ itemId }: { itemId: string }) {
     );
   }
 
-  const inActive = active
-    ? (stock.find((s) => s.humidorId === active.id && s.itemId === itemId)?.count ?? 0)
-    : 0;
+  const activeRows = active
+    ? stock.filter((s) => s.humidorId === active.id)
+    : [];
+  const { exact, unassignedLine } = explainStock(itemId, activeRows);
+  const { cigarId } = parseCigarItemId(itemId);
+  const showBind = exact === 0 && unassignedLine > 0;
 
   return (
     <div className="mt-4 rounded-lg border border-dim/20 bg-cedar/60 p-3">
@@ -821,7 +825,7 @@ function HumidorControls({ itemId }: { itemId: string }) {
               type="button"
               aria-label="−1"
               onClick={() => {
-                if (inActive <= 0) return;
+                if (exact <= 0) return;
                 adjustStock(active.id, itemId, -1);
                 if (shouldOfferWishlist(itemId)) setLastCigar(true);
               }}
@@ -830,7 +834,7 @@ function HumidorControls({ itemId }: { itemId: string }) {
               −
             </button>
             <span className="min-w-[2ch] text-center font-display text-lg text-zlato-2">
-              {inActive}
+              {exact}
             </span>
             <button
               type="button"
@@ -841,6 +845,24 @@ function HumidorControls({ itemId }: { itemId: string }) {
               +
             </button>
           </div>
+        </div>
+      )}
+
+      {active && showBind && (
+        <div className="mt-2 flex items-center justify-between gap-3">
+          <span className="min-w-0 text-sm text-papir/90">
+            {t("hum.unassignedLine")}: {unassignedLine}
+          </span>
+          <button
+            type="button"
+            onClick={() => {
+              adjustStock(active.id, cigarId, -1);
+              adjustStock(active.id, itemId, 1);
+            }}
+            className="shrink-0 rounded-lg border border-zlato/40 px-2 py-1.5 font-display text-xs uppercase tracking-widest text-zlato hover:bg-zlato/10"
+          >
+            {t("hum.bindOne")}
+          </button>
         </div>
       )}
 

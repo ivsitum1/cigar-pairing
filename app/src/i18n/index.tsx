@@ -513,6 +513,8 @@ const STRINGS = {
   "hum.quickAddShow": { hr: "Prikaži", en: "Show" },
   "hum.quickAddHide": { hr: "Sakrij", en: "Hide" },
   "hum.vitolaUnspecified": { hr: "vitola nije odabrana", en: "vitola not chosen" },
+  "hum.unassignedLine": { hr: "Na liniji, bez vitole", en: "On the line, no vitola" },
+  "hum.bindOne": { hr: "Veži 1 uz ovu vitolu", en: "Bind 1 to this vitola" },
   // shopping
   "shop.tiers": { hr: "Plan kolekcije po razinama", en: "Collection plan by tiers" },
   "shop.tier": { hr: "Razina", en: "Tier" },
