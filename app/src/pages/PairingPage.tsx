@@ -424,6 +424,10 @@ export function PairingPage() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [route]);
 
+  useEffect(() => {
+    setCycle((c) => (c.cigars ? { ...c, cigars: 0 } : c));
+  }, [market]);
+
   return (
     <div className="pb-4">
       {/* mode toggle */}
@@ -461,16 +465,19 @@ export function PairingPage() {
         />
       )}
 
-      {/* market birac — uvijek vidljiv (i u custom načinu) */}
-      <div className="mt-3 flex flex-wrap items-center gap-2">
-        <MarketFilter label={t("pair.market")} className="min-w-0 flex-1" />
+      {/* tržište: puna širina ispod načina, uvijek vidljivo (i kad je boca odabrana).
+          App ima overflow-x-hidden — stari chipovi u jednom redu su se odrezali. */}
+      <div className="mt-3">
+        <MarketFilter label={t("pair.availability")} />
         {mode !== "custom" && (
-          <Chip
-            active={showPrefs || excludedCountries.length > 0 || excludedBrands.length > 0}
-            onClick={() => setShowPrefs(!showPrefs)}
-          >
-            ⚙ {excludedCountries.length + excludedBrands.length || ""}
-          </Chip>
+          <div className="mt-2">
+            <Chip
+              active={showPrefs || excludedCountries.length > 0 || excludedBrands.length > 0}
+              onClick={() => setShowPrefs(!showPrefs)}
+            >
+              ⚙ {excludedCountries.length + excludedBrands.length || ""}
+            </Chip>
+          </div>
         )}
       </div>
 

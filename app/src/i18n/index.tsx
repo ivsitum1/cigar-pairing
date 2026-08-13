@@ -211,6 +211,7 @@ const STRINGS = {
   "share.downloaded": { hr: "Kartica preuzeta (PNG).", en: "Card downloaded (PNG)." },
   "share.failed": { hr: "Dijeljenje nije uspjelo.", en: "Sharing failed." },
   "pair.market": { hr: "Gdje kupuješ cigare?", en: "Where do you buy cigars?" },
+  "pair.availability": { hr: "Dostupne u", en: "Available in" },
   "pair.prefs": { hr: "Postavke (zemlje / marke)", en: "Preferences (countries / brands)" },
   "pair.prefsHint": { hr: "Klikni da isključiš iz prijedloga", en: "Click to exclude from suggestions" },
   "shop.otherShops": { hr: "ostalo", en: "other" },
