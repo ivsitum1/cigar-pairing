@@ -116,6 +116,36 @@ describe("humidor", () => {
     expect(h.consumeFromStock("cig-nema")).toBeNull();
   });
 
+  it("consumeFromStock na vitoli skida nerazvrstani bazen linije", async () => {
+    const h = await load();
+    const box = h.addHumidor("Kuća");
+    h.setStock(box.id, "cig-x", 3);
+    expect(h.consumeFromStock("cig-x@churchill")).toEqual({
+      humidorId: box.id,
+      itemId: "cig-x",
+    });
+    expect(h.stockCount(box.id, "cig-x")).toBe(2);
+    expect(h.stockCount(box.id, "cig-x@churchill")).toBe(0);
+  });
+
+  it("consumeFromStock ne dira sibling vitolu", async () => {
+    const h = await load();
+    const box = h.addHumidor("Kuća");
+    h.setStock(box.id, "cig-x@corona", 2);
+    expect(h.consumeFromStock("cig-x@churchill")).toBeNull();
+    expect(h.stockCount(box.id, "cig-x@corona")).toBe(2);
+  });
+
+  it("točan vitola ključ ima prednost pred bazenom", async () => {
+    const h = await load();
+    const box = h.addHumidor("Kuća");
+    h.setStock(box.id, "cig-x", 5);
+    h.setStock(box.id, "cig-x@churchill", 1);
+    h.consumeFromStock("cig-x@churchill");
+    expect(h.stockCount(box.id, "cig-x@churchill")).toBe(0);
+    expect(h.stockCount(box.id, "cig-x")).toBe(5);
+  });
+
   it("zapis po vitoli skida zalihu vođenu po liniji", async () => {
     const h = await load();
     const a = h.addHumidor("A");
