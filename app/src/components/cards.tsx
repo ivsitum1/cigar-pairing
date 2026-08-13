@@ -7,8 +7,8 @@ import { useMarket } from "../store/market";
 import { drinkNameLoc } from "../lib/drinkName";
 import { cigarItemId } from "../lib/cigarItemId";
 import { cigarDescription } from "../lib/cigarNote";
-import { totalStock, useHumidors } from "../store/humidor";
-import { uniqueVitolas } from "../lib/cigarVitola";
+import { lineTotalStock, totalStock, useHumidors } from "../store/humidor";
+import { needsVitolaPick, uniqueVitolas } from "../lib/cigarVitola";
 import { formatEur } from "../lib/cigarPrice";
 
 // Cijena cigare koja odgovara odabranom tržištu (HR = konkretna, ostalo = "provjeri")
@@ -29,10 +29,12 @@ export function CigarPrice({ cigar }: { cigar: Cigar }) {
 }
 
 /** Koliko ih je u humidorima — brojka je korisnija od točke kad zaliha postoji. */
-function StockBadge({ id }: { id: string }) {
+function StockBadge({ cigar }: { cigar: Cigar }) {
   const { t } = useI18n();
   useHumidors();
-  const count = totalStock(id);
+  const count = needsVitolaPick(cigar)
+    ? lineTotalStock(cigar.id)
+    : totalStock(cigarItemId(cigar));
   if (count <= 0) return null;
   return (
     <span
@@ -94,7 +96,7 @@ export function CigarRow({
         <span className="font-display text-base text-papir">
           {displayBrand} <span className="text-zlato-2">{cigar.line}</span>
           <OwnedDot id={cigarItemId(cigar)} />
-          <StockBadge id={cigarItemId(cigar)} />
+          <StockBadge cigar={cigar} />
         </span>
         <span className="shrink-0 text-xs text-dim">
           <CigarPrice cigar={cigar} />
