@@ -239,6 +239,13 @@ describe("integritet podataka", () => {
     expect(broken).toEqual([]);
   });
 
+  it("alias izvor nije živ id (inače resolveCigarId nikad ne prati alias)", () => {
+    const aliases = (aliasFile as { aliases?: Record<string, string> }).aliases ?? {};
+    const ids = new Set(CIGARS.map((c) => c.id));
+    const live = Object.keys(aliases).filter((frm) => ids.has(frm));
+    expect(live).toEqual([]);
+  });
+
   it("vitole unutar linije sortirane po ring, lengthMM, name (kad ring postoji)", () => {
     for (const c of CIGARS) {
       const vs = c.vitolas ?? [];

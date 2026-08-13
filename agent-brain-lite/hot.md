@@ -9,6 +9,8 @@ updated: 2026-07-31
 
 ~500 riječi snapshot nedavne aktivnosti. Agent ažurira nakon svake značajnije operacije pisanja u wiki.
 
+> **2026-08-13:** Cusano HR duhovi (linije *Cusano* / *Petit*): `sync-hr-shops` iz Havana naziva radio je lažne linije; `LINE_RULES` je ciljao nestali `cig-cusano`. Katalog u gitu već ima 4 prave linije. Popravak: LINE_RULES + alias follow, *petit panatela* kao vitola, aliasi + absorb odluke. Ne vrtiti `normalize-vitolas.py` bez `--check` (presloži cijeli katalog).
+
 > **2026-08-12:** Coffee audit: `coffees.json` +3 (americano, Burundi, Panama Geisha); Sumatra duhan/drvo; `coffeePairing` wired u `pairing.ts` + WEIGHTS; `coffees.catalog.test.ts`.
 
 > **2026-08-12:** Club 101 Pića: `d-wine-table`, `d-coffee`, `d-tequila` u `club101.json`.

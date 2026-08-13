@@ -9,6 +9,7 @@ Namjerno bez pytesta — CI za Python korake ovdje vrti gole skripte.
 from __future__ import annotations
 
 import importlib.util
+import json
 import sys
 from pathlib import Path
 
@@ -202,6 +203,45 @@ print("\nwalk-in trgovine iz shops.ts")
 detected = M.walk_in_shops()
 check("Tobacco Petica je prepoznata", "Tobacco Petica (Branimir)" in detected, True)
 check("online trgovine nisu walk-in", "The Humidor" in detected, False)
+
+print("\nsync-hr-shops Cusano parser")
+spec_sync = importlib.util.spec_from_file_location(
+    "sync_hr_shops", ROOT / "sync-hr-shops.py"
+)
+sync = importlib.util.module_from_spec(spec_sync)
+assert spec_sync.loader is not None
+spec_sync.loader.exec_module(sync)
+
+check(
+    "Petit Panatela nije linija Petit",
+    sync.line_name_from_product("Cusano", "Bundle Selection by Cusano Petit Panatela"),
+    "Cusano",
+)
+check(
+    "Short Robusto prazan rest pada na brand (LINE_RULES hvata id)",
+    sync.line_name_from_product("Cusano", "Bundle Selection by Cusano Short Robusto"),
+    "Cusano",
+)
+check(
+    "Petit Panatela vitola",
+    sync.vitola_from_product("Bundle Selection by Cusano Petit Panatela", "Cusano"),
+    "Petit Panatela",
+)
+cid = sync.detect_line_id("Cusano", "Bundle Selection by Cusano Robusto")
+check("Cusano HR proizvod ide na Bundle Selection", cid, "cig-cusano-bundle-selection")
+
+live_ids = {
+    c["id"]
+    for c in json.loads((ROOT.parent / "src" / "data" / "cigars.json").read_text(encoding="utf-8"))
+}
+stale = []
+for _brand, _kw, rule_id in sync.LINE_RULES:
+    if not rule_id:
+        continue
+    resolved = sync.resolve_catalog_id(rule_id)
+    if resolved not in live_ids:
+        stale.append(f"{rule_id} -> {resolved}")
+check("LINE_RULES ciljevi su živi id-evi", stale, [])
 
 if FAILURES:
     print(f"\nPALO: {len(FAILURES)}")

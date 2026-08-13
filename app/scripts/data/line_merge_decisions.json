@@ -5156,5 +5156,93 @@
       "Torpedo": "Inmenso Torpedo"
     },
     "reason": "Inmenso is a larger ring size of del Ré Gold (CW Robusto Inmenso 60x127 / Torpedo Inmenso 62x154), not a separate commercial line."
+  },
+  "cig-cusano-bundle-selection": {
+    "absorb": [
+      "cig-cusano-cusano",
+      "cig-cusano-petit"
+    ],
+    "reason": "HR shop sync created a duplicate line from a product title (filler note and/or shared Havana/Humidor URL). Fold into the curated line."
+  },
+  "cig-cohiba-linea-clasica": {
+    "absorb": [
+      "cig-cohiba-cohiba"
+    ],
+    "reason": "HR shop sync created a duplicate line from a product title (filler note and/or shared Havana/Humidor URL). Fold into the curated line."
+  },
+  "cig-cohiba-maduro-5": {
+    "absorb": [
+      "cig-cohiba-maduro-genios-25"
+    ],
+    "reason": "HR shop sync created a duplicate line from a product title (filler note and/or shared Havana/Humidor URL). Fold into the curated line."
+  },
+  "cig-davidoff-winston-churchill": {
+    "absorb": [
+      "cig-davidoff-wsc-belicoso",
+      "cig-davidoff-wsc-petit-panetela"
+    ],
+    "reason": "HR shop sync created a duplicate line from a product title (filler note and/or shared Havana/Humidor URL). Fold into the curated line."
+  },
+  "cig-davidoff-millennium": {
+    "absorb": [
+      "cig-davidoff-millenium-robusto-tubos"
+    ],
+    "reason": "HR shop sync created a duplicate line from a product title (filler note and/or shared Havana/Humidor URL). Fold into the curated line."
+  },
+  "cig-drew-estate-liga-privada-unico-serie": {
+    "absorb": [
+      "cig-drew-estate-liga-privada-10-seleccion-de-mercado-toro-6-x-52"
+    ],
+    "reason": "HR shop sync created a duplicate line from a product title (filler note and/or shared Havana/Humidor URL). Fold into the curated line."
+  },
+  "cig-drew-estate-liga-privada-no-9": {
+    "absorb": [
+      "cig-drew-estate-liga-privada-no-9-toro-6-x-52"
+    ],
+    "reason": "HR shop sync created a duplicate line from a product title (filler note and/or shared Havana/Humidor URL). Fold into the curated line."
+  },
+  "cig-la-ley-la-ley": {
+    "absorb": [
+      "cig-la-ley-robusto-5-x-50"
+    ],
+    "reason": "HR shop sync created a duplicate line from a product title (filler note and/or shared Havana/Humidor URL). Fold into the curated line."
+  },
+  "cig-leaf-by-oscar-by-oscar-corojo": {
+    "absorb": [
+      "cig-leaf-by-oscar-lancero-corojo"
+    ],
+    "reason": "HR shop sync created a duplicate line from a product title (filler note and/or shared Havana/Humidor URL). Fold into the curated line."
+  },
+  "cig-padilla-88th-aniversario": {
+    "absorb": [
+      "cig-padilla-88th-figurado-aniversario-6-x-60"
+    ],
+    "reason": "HR shop sync created a duplicate line from a product title (filler note and/or shared Havana/Humidor URL). Fold into the curated line."
+  },
+  "cig-arturo-fuente-opus-x": {
+    "absorb": [
+      "cig-arturo-fuente-opusx-perfecxion-x-6-1-4-x-48",
+      "cig-chateau-a-fuente-fuente-fuente-opusx-reserva-d-chateau"
+    ],
+    "reason": "HR shop sync created a duplicate line from a product title (filler note and/or shared Havana/Humidor URL). Fold into the curated line."
+  },
+  "cig-la-galera-anemoi": {
+    "absorb": [
+      "cig-la-galera-eurus-5-1-2-x-48"
+    ],
+    "reason": "HR shop sync created a duplicate line from a product title (filler note and/or shared Havana/Humidor URL). Fold into the curated line."
+  },
+  "cig-arturo-fuente-don-carlos": {
+    "absorb": [
+      "cig-carlos-a-fuente-don-carlos"
+    ],
+    "reason": "HR shop sync created a duplicate line from a product title (filler note and/or shared Havana/Humidor URL). Fold into the curated line."
+  },
+  "cig-davidoff-primeros": {
+    "absorb": [
+      "cig-dominican-primeros-by-davidoff-dominican",
+      "cig-dominican-davidoff-primeros-dominican-maduro-4-1-2-x-34"
+    ],
+    "reason": "HR shop sync created a duplicate line from a product title (filler note and/or shared Havana/Humidor URL). Fold into the curated line."
   }
 }

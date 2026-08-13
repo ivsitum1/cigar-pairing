@@ -26,6 +26,7 @@ from bs4 import BeautifulSoup
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "src" / "data"
 CIGARS_JSON = DATA / "cigars.json"
+ALIASES_JSON = DATA / "cigarIdAliases.json"
 
 # Humidor returns 403 for bot-like UAs; use a normal browser string.
 USER_AGENT = (
@@ -122,6 +123,9 @@ def smoke_minutes(length_mm: int | None, ring: int | None) -> int:
 BRAND_ALIASES = {
     "bundle selection by cusano": "Cusano",
     "cusano": "Cusano",
+    "a. fuente": "Arturo Fuente",
+    "a fuente": "Arturo Fuente",
+    "primeros by davidoff": "Davidoff",
     "arturo fuente": "Arturo Fuente",
     "joya de nicaragua": "Joya de Nicaragua",
     "joya silver": "Joya de Nicaragua",
@@ -146,15 +150,15 @@ BRAND_ALIASES = {
 # (brand_norm, line keywords in product name) -> existing id or None (create new)
 LINE_RULES: list[tuple[str, tuple[str, ...], str | None]] = [
     ("arturo fuente", ("hemingway",), "cig-arturo-fuente-hemingway"),
-    ("arturo fuente", ("opus", "opusx"), "cig-fuente-opus-x"),
-    ("arturo fuente", ("don carlos",), None),
+    ("arturo fuente", ("opus", "opusx"), "cig-arturo-fuente-opus-x"),
+    ("arturo fuente", ("don carlos",), "cig-arturo-fuente-don-carlos"),
     ("arturo fuente", ("anejo", "añejo"), None),
     ("arturo fuente", ("brevas",), None),
     ("arturo fuente", ("curly head",), None),
     ("arturo fuente", ("chateau",), None),
     ("arturo fuente", ("gran reserva", "exquisitos", "petit corona", "cuban corona", "cubanitos"), "cig-arturo-fuente-gran-reserva"),
     ("joya de nicaragua", ("antano 1970", "antano gran reserva", "antano ct"), "cig-joya-de-nicaragua-antano"),
-    ("joya de nicaragua", ("joya red", "red robusto"), "cig-joya-red"),
+    ("joya de nicaragua", ("joya red", "red robusto"), "cig-joya-de-nicaragua-joya-red"),
     ("joya de nicaragua", ("joya silver",), None),
     ("joya de nicaragua", ("joya black",), None),
     ("joya de nicaragua", ("numero uno", "número uno"), None),
@@ -162,31 +166,35 @@ LINE_RULES: list[tuple[str, tuple[str, ...], str | None]] = [
     ("joya de nicaragua", ("cinco decadas", "cinco décadas"), None),
     ("joya de nicaragua", ("clasico medio siglo", "clásico medio siglo"), None),
     ("joya de nicaragua", ("rosalones",), None),
-    ("cusano", (), "cig-cusano"),
+    ("cusano", (), "cig-cusano-bundle-selection"),
+    ("davidoff", ("primeros",), "cig-davidoff-primeros"),
     ("aj fernandez", ("blend 15",), "cig-aj-fernandez-blend-15"),
     ("aj fernandez", ("last call",), "cig-aj-fernandez-last-call"),
-    ("aj fernandez", ("enclave",), "cig-aj-fernandez-aj-enclave"),
+    ("aj fernandez", ("enclave",), "cig-aj-fernandez-enclave"),
     ("aj fernandez", ("bellas artes",), "cig-aj-fernandez-bellas-artes"),
     ("aj fernandez", ("dias de gloria",), "cig-aj-fernandez-dias-de-gloria"),
-    ("aj fernandez", ("san lotano",), "cig-aj-fernandez-aj-san-lotano"),
+    ("aj fernandez", ("san lotano",), "cig-aj-fernandez-san-lotano"),
     ("aj fernandez", ("20th anniversary",), "cig-aj-fernandez-20th-anniversary"),
     ("aj fernandez", ("dorado sampler",), "cig-aj-fernandez-new-world-dorado-sampler"),
     ("aj fernandez", ("new world sampler",), "cig-aj-fernandez-new-world-sampler"),
     ("aj fernandez", ("premium sampler",), "cig-aj-fernandez-premium-sampler"),
     ("aj fernandez", ("toro sampler",), "cig-aj-fernandez-toro-sampler"),
     ("aj fernandez", ("new world",), "cig-aj-fernandez-new-world"),
-    ("drew estate", ("liga privada",), "cig-drew-estate-de-liga-privada"),
-    ("drew estate", ("undercrown",), "cig-drew-estate-de-undercrown"),
-    ("drew estate", ("herrera",), "cig-drew-estate-de-herrera"),
-    ("drew estate", ("acid",), "cig-drew-estate-de-acid"),
-    ("padrón", ("1926",), "cig-padron-1926"),
-    ("padron", ("1926",), "cig-padron-1926"),
-    ("padrón", ("1964",), "cig-padron-padron-1964"),
-    ("padron", ("1964",), "cig-padron-padron-1964"),
-    ("padrón", ("damaso",), "cig-padron-padron-damaso"),
-    ("padron", ("damaso",), "cig-padron-padron-damaso"),
-    ("padrón", ("family reserve",), "cig-padron-padron-family-reserve"),
-    ("padron", ("family reserve",), "cig-padron-padron-family-reserve"),
+    ("drew estate", ("liga privada no. 9", "liga privada no 9", "liga privada no.9"), "cig-drew-estate-liga-privada-no-9"),
+    ("drew estate", ("liga privada t52", "liga privada t 52"), "cig-drew-estate-liga-privada-t52"),
+    ("drew estate", ("unico", "seleccion de mercado"), "cig-drew-estate-liga-privada-unico-serie"),
+    ("drew estate", ("undercrown 10",), "cig-drew-estate-undercrown-10"),
+    ("drew estate", ("undercrown",), "cig-drew-estate-undercrown"),
+    ("drew estate", ("herrera",), "cig-drew-estate-herrera-esteli"),
+    ("drew estate", ("acid",), "cig-drew-estate-acid"),
+    ("padrón", ("1926",), "cig-padron-1926-serie"),
+    ("padron", ("1926",), "cig-padron-1926-serie"),
+    ("padrón", ("1964",), "cig-padron-1964-anniversary-series"),
+    ("padron", ("1964",), "cig-padron-1964-anniversary-series"),
+    ("padrón", ("damaso",), "cig-padron-damaso"),
+    ("padron", ("damaso",), "cig-padron-damaso"),
+    ("padrón", ("family reserve",), "cig-padron-family-reserve"),
+    ("padron", ("family reserve",), "cig-padron-family-reserve"),
 ]
 
 
@@ -214,6 +222,24 @@ def detect_brand(product_name: str, detectors: list[tuple[str, str]]) -> str | N
     return None
 
 
+def load_id_aliases() -> dict[str, str]:
+    raw = json.loads(ALIASES_JSON.read_text(encoding="utf-8"))
+    return raw.get("aliases") or {}
+
+
+def resolve_catalog_id(cid: str | None, aliases: dict[str, str] | None = None) -> str | None:
+    """Prati cigarIdAliases do živog id-a (stari LINE_RULES ciljevi)."""
+    if not cid:
+        return None
+    table = aliases if aliases is not None else load_id_aliases()
+    cur = cid
+    seen: set[str] = set()
+    while cur in table and cur not in seen:
+        seen.add(cur)
+        cur = table[cur]
+    return cur
+
+
 def detect_line_id(brand: str, product_name: str) -> str | None:
     bnorm = norm(brand)
     low = norm(product_name)
@@ -221,7 +247,7 @@ def detect_line_id(brand: str, product_name: str) -> str | None:
         if brand_key != bnorm:
             continue
         if not keywords or any(kw in low for kw in keywords if kw):
-            return cid
+            return resolve_catalog_id(cid)
     return None
 
 
@@ -245,8 +271,9 @@ def line_name_from_product(brand: str, product_name: str) -> str:
     rest = re.sub(r"/\d+$", "", rest).strip()
     # ukloni vitola na kraju (robusto, toro...)
     for vit in ("robusto grande", "double robusto", "short robusto", "petit corona",
+                "petit panatela", "petit panetela",
                 "robusto", "toro", "churchill", "corona", "figurado", "lonsdale",
-                "panatela", "torpedo", "gordo", "diadema", "consul", "machito"):
+                "panatela", "panetela", "torpedo", "gordo", "diadema", "consul", "machito"):
         if rest == vit or rest.endswith(" " + vit):
             rest = rest[: -len(vit)].strip() if rest != vit else ""
             break
@@ -263,8 +290,9 @@ def vitola_from_product(product_name: str, brand: str) -> str:
     low = re.sub(r"/\d+$", "", low).strip()
     # zadnji tokeni kao vitola
     for vit in ("Robusto Grande", "Double Robusto", "Short Robusto", "Petit Corona",
+                "Petit Panatela", "Petit Panetela",
                 "Gran Consul", "Gran Cónsul", "Robusto", "Toro", "Churchill", "Corona",
-                "Figurado", "Lonsdale", "Panatela", "Torpedo", "Gordo", "Diadema",
+                "Figurado", "Lonsdale", "Panatela", "Panetela", "Torpedo", "Gordo", "Diadema",
                 "Machito", "Signature", "Classic", "Short Story", "Best Seller",
                 "Exquisitos", "Petit Corona", "Cuban Corona", "Cubanitos", "PerfecXion X"):
         if norm(vit) in low or low.endswith(norm(vit)):

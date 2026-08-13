@@ -9,6 +9,7 @@ updated: 2026-06-12
 
 | Datum | Događaj |
 |-------|---------|
+| 2026-08-13 | Cusano HR-sync duhovi: parser + LINE_RULES (živi id, petit panatela), aliasi `cig-cusano-cusano`/`petit` → Bundle Selection, absorb odluke za isti obrazac. Katalog u gitu već čist (4 linije). |
 | 2026-08-12 | Kalendar: korekcija datuma dnevnika (`updateJournalEntry` + date input na JournalCard/Collection) |
 | 2026-08-11 | Logo: Negativni band (cigara + snifter prorez); skice + LOGO_PHILOSOPHY; PWA icon.svg/192/512 |
 | 2026-08-01 | Orthography unify: Don Pepin→Don Pépin García; Aliados→Cuba Aliados; The Oscar→Oscar Valladares; 3711→3701 |

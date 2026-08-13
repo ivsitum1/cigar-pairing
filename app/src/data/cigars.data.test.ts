@@ -1,7 +1,7 @@
 import { describe, it, expect } from "vitest";
 import cigarsData from "./cigars.json";
 import brandsData from "./brands.json";
-import { CIGARS, cigarLinkForMarket, cigarPriceForMarket, cigarShopLinks, cigarShopLinkPrice, ALL_BRANDS, BRAND_CATALOG, isLineListingUrl } from "./index";
+import { CIGARS, cigarLinkForMarket, cigarPriceForMarket, cigarShopLinks, cigarShopLinkPrice, ALL_BRANDS, BRAND_CATALOG, isLineListingUrl, resolveCigarId } from "./index";
 import { classifyVitola, cigarShapes } from "../lib/vitolaShape";
 import { applyVitola, uniqueVitolas } from "../lib/cigarVitola";
 import { urlFitsVitola } from "../lib/vitolaLinkMatch";
@@ -175,6 +175,24 @@ describe("cigars.json integrity", () => {
     expect(isLineListingUrl("https://www.neptunecigar.com/cigars/cusano-18-robusto")).toBe(
       false,
     );
+  });
+
+  it("Cusano ima četiri linije; HR je samo Bundle Selection", () => {
+    const rows = CIGARS.filter((c) => c.brand === "Cusano");
+    expect(rows.map((c) => c.line).sort()).toEqual([
+      "18 Double Connecticut",
+      "18 Maduro",
+      "Bundle Selection",
+      "Honduras Bundle",
+    ]);
+    expect(CIGARS.find((c) => c.id === "cig-cusano-cusano")).toBeUndefined();
+    expect(CIGARS.find((c) => c.id === "cig-cusano-petit")).toBeUndefined();
+    const hr = rows.filter((c) => c.markets.includes("HR"));
+    expect(hr.map((c) => c.id)).toEqual(["cig-cusano-bundle-selection"]);
+    expect(hr[0].notes.hr).not.toMatch(/Sinkronizirano iz HR trgovina/i);
+    expect(resolveCigarId("cig-cusano")?.id).toBe("cig-cusano-bundle-selection");
+    expect(resolveCigarId("cig-cusano-cusano")?.id).toBe("cig-cusano-bundle-selection");
+    expect(resolveCigarId("cig-cusano-petit")?.id).toBe("cig-cusano-bundle-selection");
   });
 
   it("Cusano 18 ima exact USA linkove na Neptune i Famous", () => {
