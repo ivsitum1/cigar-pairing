@@ -25,9 +25,10 @@ import { buildShareCardModel, sharePairing } from "../lib/shareCard";
 import { ritualHint } from "../lib/cigarRitual";
 import { OcrScan } from "../components/OcrScan";
 import { VitolaPicker } from "../components/VitolaPicker";
-import { applyVitola, needsVitolaPick, uniqueVitolas } from "../lib/cigarVitola";
+import { resolveSheetFromItemId } from "../lib/cigarIdentity";
+import { cigarItemId, parseCigarItemId } from "../lib/cigarItemId";
+import { applyVitola } from "../lib/cigarVitola";
 import { formatEur, vitolaPriceForMarket } from "../lib/cigarPrice";
-import { cigarItemId } from "../lib/cigarItemId";
 import { buildCigarOcrCandidates } from "../lib/ocrCigarCandidates";
 import { drinkPrimaryLink } from "../lib/drinkShopLinks";
 import { drinkNameLoc, drinkNameHaystack } from "../lib/drinkName";
@@ -318,21 +319,32 @@ export function PairingPage() {
     navigate({ page: "pairing" }, { replace: true });
   };
 
-  const pickCigar = (raw: Cigar) => {
-    const cigar = resolveCigarId(raw.id) ?? raw;
-    if (needsVitolaPick(cigar)) {
-      setPendingCigar(cigar);
-      return;
+  const applyPairingSheet = (decision: ReturnType<typeof resolveSheetFromItemId>) => {
+    if (decision.mode === "detail") {
+      setSelectedCigar(decision.cigar);
+      setPendingCigar(null);
+    } else {
+      setPendingCigar(decision.cigar);
+      setSelectedCigar(null);
     }
-    const vitolas = uniqueVitolas(cigar);
-    setSelectedCigar(vitolas.length === 1 ? applyVitola(cigar, vitolas[0]) : cigar);
-    navigate({ page: "pairing", pair: { kind: "cigar", id: cigar.id } });
+  };
+
+  const pickCigar = (raw: Cigar) => {
+    const line = resolveCigarId(raw.id) ?? raw;
+    const decision = resolveSheetFromItemId(cigarItemId(raw), line);
+    applyPairingSheet(decision);
+    if (decision.mode === "line") return;
+    navigate({
+      page: "pairing",
+      pair: { kind: "cigar", id: cigarItemId(decision.cigar) },
+    });
   };
 
   const confirmVitola = (vitola: Vitola) => {
     if (!pendingCigar) return;
-    setSelectedCigar(applyVitola(pendingCigar, vitola));
-    navigate({ page: "pairing", pair: { kind: "cigar", id: pendingCigar.id } });
+    const applied = applyVitola(pendingCigar, vitola);
+    setSelectedCigar(applied);
+    navigate({ page: "pairing", pair: { kind: "cigar", id: cigarItemId(applied) } });
     setPendingCigar(null);
   };
 
@@ -356,15 +368,9 @@ export function PairingPage() {
       setMode("cigarToDrink");
       setSelectedDrink(null);
       setQuery(`${brandDisplayName(intent.cigar.brand, market)} ${intent.cigar.line}`);
-      const cigar = resolveCigarId(intent.cigar.id) ?? intent.cigar;
-      if (needsVitolaPick(cigar)) {
-        setPendingCigar(cigar);
-        setSelectedCigar(null);
-      } else {
-        const vitolas = uniqueVitolas(cigar);
-        setSelectedCigar(vitolas.length === 1 ? applyVitola(cigar, vitolas[0]) : cigar);
-        setPendingCigar(null);
-      }
+      const line = resolveCigarId(intent.cigar.id) ?? intent.cigar;
+      const decision = resolveSheetFromItemId(cigarItemId(intent.cigar), line);
+      applyPairingSheet(decision);
     } else {
       setMode("drinkToCigar");
       setSelectedCigar(null);
@@ -392,23 +398,17 @@ export function PairingPage() {
       return;
     }
     if (pair.kind === "cigar") {
-      if (selectedCigar?.id === pair.id || pendingCigar?.id === pair.id) return;
-      const cigar = resolveCigarId(pair.id);
-      if (!cigar) return;
+      if (selectedCigar && cigarItemId(selectedCigar) === pair.id) return;
+      const line =
+        resolveCigarId(pair.id) ??
+        resolveCigarId(parseCigarItemId(pair.id).cigarId);
+      if (!line) return;
+      const decision = resolveSheetFromItemId(pair.id, line);
       setMode("cigarToDrink");
       setSelectedDrink(null);
       setCycle({});
-      setQuery(`${brandDisplayName(cigar.brand, market)} ${cigar.line}`);
-      // podijeljeni link na liniju s više formata pita za vitolu, isto kao
-      // odabir kroz UI — inače bi dnevnik i zaliha išli na cijelu liniju
-      if (needsVitolaPick(cigar)) {
-        setPendingCigar(cigar);
-        setSelectedCigar(null);
-      } else {
-        const vitolas = uniqueVitolas(cigar);
-        setSelectedCigar(vitolas.length === 1 ? applyVitola(cigar, vitolas[0]) : cigar);
-        setPendingCigar(null);
-      }
+      setQuery(`${brandDisplayName(line.brand, market)} ${line.line}`);
+      applyPairingSheet(decision);
     } else {
       if (selectedDrink?.id === pair.id) return;
       const drink = drinkById(pair.id);

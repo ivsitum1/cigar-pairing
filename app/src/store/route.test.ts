@@ -134,4 +134,17 @@ describe("hash route helpers", () => {
       catalog: { level: "line", cigarId: "cig-a b" },
     });
   });
+
+  it("pairing hash nosi itemId s vitolom", () => {
+    const r = {
+      page: "pairing" as const,
+      pair: { kind: "cigar" as const, id: "cig-x@churchill" },
+    };
+    expect(parseHash(routeToHash(r))).toEqual(r);
+    expect(routeToHash(r)).toBe("#/pairing/cigar/cig-x%40churchill");
+    expect(parseHash("#/pairing/cigar/cig-x%40churchill")).toEqual({
+      page: "pairing",
+      pair: { kind: "cigar", id: "cig-x@churchill" },
+    });
+  });
 });

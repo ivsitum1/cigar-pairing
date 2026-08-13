@@ -10,6 +10,7 @@ import { BrandLockup } from "./components/BrandMark";
 import { ErrorBoundary } from "./components/ErrorBoundary";
 import { AgeGate } from "./components/AgeGate";
 import { shouldShowAgeGate } from "./lib/ageGate";
+import { cigarItemId } from "./lib/cigarItemId";
 import type { Cigar, Drink } from "./types";
 
 // pairing je pocetni ekran i ostaje u glavnom chunku; ostale stranice
@@ -50,7 +51,13 @@ export default function App() {
         ? { mode: "cigarToDrink", cigar: target.item }
         : { mode: "drinkToCigar", drink: target.item },
     );
-    navigate({ page: "pairing", pair: { kind: target.kind, id: target.item.id } });
+    navigate({
+      page: "pairing",
+      pair: {
+        kind: target.kind,
+        id: target.kind === "cigar" ? cigarItemId(target.item) : target.item.id,
+      },
+    });
   };
 
   return (
