@@ -11,6 +11,7 @@ from __future__ import annotations
 import importlib.util
 import json
 import sys
+import types
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
@@ -205,6 +206,17 @@ check("Tobacco Petica je prepoznata", "Tobacco Petica (Branimir)" in detected, T
 check("online trgovine nisu walk-in", "The Humidor" in detected, False)
 
 print("\nsync-hr-shops Cusano parser")
+# CI Python job does not install scraper deps; stub before loading the module.
+try:
+    import requests  # noqa: F401
+    import bs4  # noqa: F401
+except ImportError:
+    _req = types.ModuleType("requests")
+    _req.Session = type("Session", (), {})  # type: ignore[attr-defined]
+    sys.modules["requests"] = _req
+    _bs4 = types.ModuleType("bs4")
+    _bs4.BeautifulSoup = object  # type: ignore[attr-defined]
+    sys.modules["bs4"] = _bs4
 spec_sync = importlib.util.spec_from_file_location(
     "sync_hr_shops", ROOT / "sync-hr-shops.py"
 )
