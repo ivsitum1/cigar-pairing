@@ -22,7 +22,7 @@ import {
   useHumidors,
 } from "../store/humidor";
 import { useMarket } from "../store/market";
-import { dedupeCollectionCigarIds } from "../lib/cigarItemId";
+import { dedupeCollectionCigarIds, parseCigarItemId } from "../lib/cigarItemId";
 import {
   MONTH_NAMES_EN,
   MONTH_NAMES_HR,
@@ -39,7 +39,7 @@ export function HumidorPage({
   onOpenCigar,
   onOpenDrink,
 }: {
-  onOpenCigar?: (cigar: Cigar) => void;
+  onOpenCigar?: (itemId: string) => void;
   onOpenDrink?: (drink: Drink) => void;
 }) {
   const { t } = useI18n();
@@ -193,7 +193,7 @@ export function HumidorPage({
                     }
                   }}
                   onClear={() => setStock(active.id, row.itemId, 0)}
-                  onOpen={row.cigar && onOpenCigar ? () => onOpenCigar(row.cigar!) : undefined}
+                  onOpen={onOpenCigar ? () => onOpenCigar(row.itemId) : undefined}
                 />
               ))}
             </div>
@@ -342,6 +342,9 @@ function StockRow({
   const title = cigar
     ? `${brandDisplayName(cigar.brand, market)} ${cigar.line}`
     : fallbackId;
+  const { vitolaSlug } = parseCigarItemId(fallbackId);
+  const sizeLabel = cigar?.selectedVitola
+    ?? (vitolaSlug ? vitolaSlug : t("hum.vitolaUnspecified"));
 
   return (
     <div className="rounded-xl border border-dim/15 bg-cedar p-3">
@@ -355,7 +358,7 @@ function StockRow({
           <div className="truncate font-display text-base text-papir">{title}</div>
           {cigar && (
             <div className="mt-0.5 truncate text-xs text-dim">
-              {cigar.selectedVitola ?? cigar.vitola} · {cigar.wrapper} · {cn(cigar.country)}
+              {sizeLabel} · {cigar.wrapper} · {cn(cigar.country)}
             </div>
           )}
         </button>

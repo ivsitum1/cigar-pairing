@@ -84,6 +84,7 @@ export function CollectionPage({
     detail,
     openCigar,
     openCigarCard,
+    openItemId,
     openVitola,
     openDrink,
     openLine,
@@ -239,7 +240,7 @@ export function CollectionPage({
       <div className="pb-4">
         {tabBar}
         <HumidorPage
-          onOpenCigar={(cigar) => openCigar(cigar)}
+          onOpenCigar={(itemId) => openItemId(itemId)}
           onOpenDrink={(drink) => openDrink(drink)}
         />
         {sheets}

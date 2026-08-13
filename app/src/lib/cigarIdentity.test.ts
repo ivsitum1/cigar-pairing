@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import type { Cigar } from "../types";
-import { cigarItemId } from "./cigarItemId";
+import { cigarItemId, parseCigarItemId } from "./cigarItemId";
 import {
   explainStock,
   resolveSheetFromItemId,
@@ -53,6 +53,16 @@ describe("resolveSheetFromItemId", () => {
     const single = { ...line, vitolas: [line.vitolas[0]] };
     const d = resolveSheetFromItemId("cig-x", single);
     expect(d.mode).toBe("detail");
+  });
+
+  it("openItemId mora slati spremljeni itemId, ne ogoljeni cigarId", () => {
+    const itemId = "cig-x@churchill";
+    const { cigarId } = parseCigarItemId(itemId);
+    expect(resolveSheetFromItemId(cigarId, line).mode).toBe("line");
+    const d = resolveSheetFromItemId(itemId, line);
+    expect(d.mode).toBe("detail");
+    if (d.mode !== "detail") throw new Error("expected detail");
+    expect(d.cigar.selectedVitola).toBe("Churchill");
   });
 });
 

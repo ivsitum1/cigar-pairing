@@ -1,6 +1,8 @@
 import { useCallback, useState } from "react";
 import type { Cigar, Drink, Vitola } from "../types";
 import { resolveCigarId } from "../data";
+import { resolveSheetFromItemId } from "../lib/cigarIdentity";
+import { parseCigarItemId } from "../lib/cigarItemId";
 import { applyVitola, resolveCigarSheetOpen } from "../lib/cigarVitola";
 import { LineSheet } from "./LineSheet";
 import { DetailSheet } from "./DetailSheet";
@@ -38,6 +40,25 @@ export function useCigarBrowseSheets() {
     setDetail({ kind: "cigar", item: c });
   }, []);
 
+  /**
+   * Humidor / spremljeni ključ: `cig-x@churchill` nije katalog-id, pa
+   * `resolveCigarId(itemId)` padne — linija se traži preko `cigarId`.
+   * Goli `cig-x` ostaje bazen bez vitole (LineSheet ako ih linija ima više).
+   */
+  const openItemId = useCallback((itemId: string) => {
+    const { cigarId } = parseCigarItemId(itemId);
+    const line = resolveCigarId(itemId) ?? resolveCigarId(cigarId);
+    if (!line) return;
+    const decision = resolveSheetFromItemId(itemId, line);
+    if (decision.mode === "line") {
+      setDetail(null);
+      setLine(decision.cigar);
+    } else {
+      setLine(null);
+      setDetail({ kind: "cigar", item: decision.cigar });
+    }
+  }, []);
+
   const openVitola = useCallback((c: Cigar, v: Vitola) => {
     const full = resolveCigarId(c.id) ?? c;
     setLine(null);
@@ -69,6 +90,7 @@ export function useCigarBrowseSheets() {
     setDetail,
     openCigar,
     openCigarCard,
+    openItemId,
     openVitola,
     openDrink,
     openLine,
