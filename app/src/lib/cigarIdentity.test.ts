@@ -98,4 +98,15 @@ describe("bindStockToVitola", () => {
     expect(next.find((s) => s.itemId === "cig-x")?.count).toBe(2);
     expect(next.find((s) => s.itemId === "cig-x@churchill")?.count).toBe(1);
   });
+
+  it("drugi bind s praznim bazenom ne dodaje vitolu", () => {
+    const afterFirst = bindStockToVitola(
+      [{ humidorId: "h", itemId: "cig-x", count: 1, updatedAt: "t" }],
+      "h",
+      "cig-x@churchill",
+    );
+    const afterSecond = bindStockToVitola(afterFirst, "h", "cig-x@churchill");
+    expect(afterSecond.find((s) => s.itemId === "cig-x")).toBeUndefined();
+    expect(afterSecond.find((s) => s.itemId === "cig-x@churchill")?.count).toBe(1);
+  });
 });

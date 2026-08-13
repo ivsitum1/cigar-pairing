@@ -43,6 +43,7 @@ import {
   addHumidor,
   adjustStock,
   setActiveHumidor,
+  stockCount,
   useHumidors,
 } from "../store/humidor";
 
@@ -856,6 +857,8 @@ function HumidorControls({ itemId }: { itemId: string }) {
           <button
             type="button"
             onClick={() => {
+              if (!parseCigarItemId(itemId).vitolaSlug) return;
+              if (stockCount(active.id, cigarId) <= 0) return;
               adjustStock(active.id, cigarId, -1);
               adjustStock(active.id, itemId, 1);
             }}
