@@ -253,6 +253,16 @@ export function lineTotalStock(cigarId: string): number {
     .reduce((sum, s) => sum + s.count, 0);
 }
 
+/**
+ * Zaliha koju taj ključ pokriva: ključ s vitolom broji samo svoju veličinu,
+ * goli ključ linije cijelu liniju (takva stavka ne zna za formate, pa je
+ * „imam je” istinito dok god ijedna vitola stoji u kutiji).
+ */
+export function stockForItemKey(itemId: string): number {
+  const { cigarId, vitolaSlug } = parseCigarItemId(itemId);
+  return vitolaSlug ? totalStock(itemId) : lineTotalStock(cigarId);
+}
+
 /** Postavi točan broj; 0 miče zapis (praznu zalihu ne čuvamo). */
 export function setStock(humidorId: string, itemId: string, count: number) {
   if (!cache.humidors.some((h) => h.id === humidorId)) return;

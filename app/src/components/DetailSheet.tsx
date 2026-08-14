@@ -34,6 +34,7 @@ import {
 import { cigarDescription } from "../lib/cigarNote";
 import { needsVitolaPick } from "../lib/cigarVitola";
 import { shouldOfferWishlist } from "../lib/lastCigar";
+import { claimOwnedForStock, releaseOwnedIfEmpty } from "../lib/stockOwnership";
 import { Chip, Meter } from "./ui";
 import { BackButton } from "./BackButton";
 import { FavoriteStar } from "./FavoriteStar";
@@ -800,6 +801,7 @@ function HumidorControls({ cigar, itemId }: { cigar: Cigar; itemId: string }) {
             }
             const created = addHumidor(t("hum.defaultName"));
             adjustStock(created.id, itemId, 1);
+            claimOwnedForStock(itemId);
           }}
           className="mt-4 w-full rounded-lg border border-zlato/40 py-2.5 font-display text-xs uppercase tracking-widest text-zlato hover:bg-zlato/10"
         >
@@ -810,7 +812,9 @@ function HumidorControls({ cigar, itemId }: { cigar: Cigar; itemId: string }) {
             cigar={line}
             onPick={(vitola) => {
               const created = addHumidor(t("hum.defaultName"));
-              adjustStock(created.id, vitolaStockId(line, vitola), 1);
+              const target = vitolaStockId(line, vitola);
+              adjustStock(created.id, target, 1);
+              claimOwnedForStock(target);
               setPick(false);
             }}
             onBack={() => setPick(false)}
@@ -883,6 +887,8 @@ function HumidorControls({ cigar, itemId }: { cigar: Cigar; itemId: string }) {
               onClick={() => {
                 if (inActive <= 0) return;
                 adjustStock(active.id, itemId, -1);
+                // zaliha na nuli gasi „Imam” — popis kolekcije prati stvarnost
+                releaseOwnedIfEmpty(itemId);
                 if (shouldOfferWishlist(itemId)) setLastCigar(true);
               }}
               className="h-8 w-8 rounded-lg border border-dim/30 font-display text-base text-dim hover:border-zlato/50 hover:text-papir"
@@ -895,7 +901,10 @@ function HumidorControls({ cigar, itemId }: { cigar: Cigar; itemId: string }) {
             <button
               type="button"
               aria-label="+1"
-              onClick={() => adjustStock(active.id, itemId, 1)}
+              onClick={() => {
+                adjustStock(active.id, itemId, 1);
+                claimOwnedForStock(itemId);
+              }}
               className="h-8 w-8 rounded-lg border border-dim/30 font-display text-base text-dim hover:border-zlato/50 hover:text-papir"
             >
               +
@@ -943,7 +952,11 @@ function HumidorControls({ cigar, itemId }: { cigar: Cigar; itemId: string }) {
         <VitolaPicker
           cigar={line}
           onPick={(vitola) => {
-            if (active) adjustStock(active.id, vitolaStockId(line, vitola), 1);
+            if (active) {
+              const target = vitolaStockId(line, vitola);
+              adjustStock(active.id, target, 1);
+              claimOwnedForStock(target);
+            }
             setPick(false);
           }}
           onBack={() => setPick(false)}

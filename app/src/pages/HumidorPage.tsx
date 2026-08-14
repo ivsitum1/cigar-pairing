@@ -33,6 +33,7 @@ import {
   vitolasNotInStock,
 } from "../lib/humidorVitola";
 import { uniqueVitolas } from "../lib/cigarVitola";
+import { claimOwnedForStock, releaseOwnedIfEmpty } from "../lib/stockOwnership";
 import {
   MONTH_NAMES_EN,
   MONTH_NAMES_HR,
@@ -112,8 +113,13 @@ export function HumidorPage({
   const applyPick = (vitola: Vitola) => {
     if (!pick || !active) return;
     const target = vitolaStockId(pick.line, vitola);
-    if (pick.fromItemId) moveStock(active.id, pick.fromItemId, target);
-    else adjustStock(active.id, target, 1);
+    if (pick.fromItemId) {
+      // premještanje nije trošenje — zaliha samo dobiva ime
+      moveStock(active.id, pick.fromItemId, target);
+    } else {
+      adjustStock(active.id, target, 1);
+    }
+    claimOwnedForStock(target);
     setPick(null);
   };
 
@@ -237,10 +243,18 @@ export function HumidorPage({
                   }
                   onAdjust={(itemId, d) => {
                     adjustStock(active.id, itemId, d);
-                    // ručno skidanje je isto trošenje: zadnja cigara nudi listu želja
-                    if (d < 0 && shouldOfferWishlist(itemId)) setLastCigarId(itemId);
+                    if (d > 0) claimOwnedForStock(itemId);
+                    // ručno skidanje je isto trošenje: „Imam” prati zalihu,
+                    // a zadnja cigara nudi listu želja
+                    if (d < 0) {
+                      releaseOwnedIfEmpty(itemId);
+                      if (shouldOfferWishlist(itemId)) setLastCigarId(itemId);
+                    }
                   }}
-                  onClear={(itemId) => setStock(active.id, itemId, 0)}
+                  onClear={(itemId) => {
+                    setStock(active.id, itemId, 0);
+                    releaseOwnedIfEmpty(itemId);
+                  }}
                   onOpen={onOpenCigar}
                 />
               ))}
@@ -368,9 +382,13 @@ function QuickAdd({ humidorId }: { humidorId: string }) {
                 <button
                   key={id}
                   type="button"
-                  onClick={() =>
-                    needsVitola ? setPick(cigar) : adjustStock(humidorId, id, 1)
-                  }
+                  onClick={() => {
+                    if (needsVitola) {
+                      setPick(cigar);
+                      return;
+                    }
+                    adjustStock(humidorId, id, 1);
+                  }}
                   className="flex w-full items-center justify-between gap-3 rounded-lg border border-dim/15 bg-cedar px-3 py-2 text-left hover:border-zlato/40"
                 >
                   <span className="min-w-0">
@@ -400,7 +418,9 @@ function QuickAdd({ humidorId }: { humidorId: string }) {
         <VitolaPicker
           cigar={pick}
           onPick={(vitola) => {
-            adjustStock(humidorId, vitolaStockId(pick, vitola), 1);
+            const target = vitolaStockId(pick, vitola);
+            adjustStock(humidorId, target, 1);
+            claimOwnedForStock(target);
             setPick(null);
           }}
           onBack={() => setPick(null)}

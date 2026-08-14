@@ -5,6 +5,7 @@ const getItemState = vi.fn();
 const updateItem = vi.fn();
 const consumeFromStock = vi.fn();
 const totalStock = vi.fn();
+const stockForItemKey = vi.fn();
 
 vi.mock("../store/collection", () => ({
   addJournalEntry: (...args: unknown[]) => addJournalEntry(...args),
@@ -15,6 +16,7 @@ vi.mock("../store/collection", () => ({
 vi.mock("../store/humidor", () => ({
   consumeFromStock: (...args: unknown[]) => consumeFromStock(...args),
   totalStock: (...args: unknown[]) => totalStock(...args),
+  stockForItemKey: (...args: unknown[]) => stockForItemKey(...args),
 }));
 
 describe("logEveningSession", () => {
@@ -24,6 +26,8 @@ describe("logEveningSession", () => {
     updateItem.mockReset();
     consumeFromStock.mockReset();
     totalStock.mockReset();
+    stockForItemKey.mockReset();
+    stockForItemKey.mockReturnValue(0);
     getItemState.mockReturnValue({
       owned: false,
       tried: false,
@@ -55,6 +59,7 @@ describe("logEveningSession", () => {
       consumed: true,
       consumedItemId: "cig-1",
       stockAfter: 0,
+      releasedOwned: false,
     });
   });
 
@@ -136,6 +141,7 @@ describe("logEveningSession", () => {
       consumed: true,
       consumedItemId: "cig-1",
       stockAfter: 2,
+      releasedOwned: false,
     });
   });
 
@@ -155,6 +161,7 @@ describe("logEveningSession", () => {
       consumed: false,
       consumedItemId: null,
       stockAfter: 3,
+      releasedOwned: false,
     });
   });
 
@@ -172,6 +179,47 @@ describe("logEveningSession", () => {
       consumed: false,
       consumedItemId: null,
       stockAfter: 0,
+      releasedOwned: false,
     });
+  });
+
+  it("popusena zadnja gasi oznaku „Imam”", async () => {
+    getItemState.mockReturnValue({
+      owned: true,
+      tried: true,
+      wishlist: false,
+      rating: null,
+      note: "",
+    });
+    stockForItemKey.mockReturnValue(0);
+    const { logEveningSession } = await import("./eveningSession");
+    const result = logEveningSession({
+      cigarId: "cig-1@toro",
+      drinkId: null,
+      rating: null,
+      note: "",
+    });
+    expect(result.releasedOwned).toBe(true);
+    expect(updateItem).toHaveBeenCalledWith("cig-1", { owned: false });
+  });
+
+  it("dok jos ima zalihe „Imam” ostaje", async () => {
+    getItemState.mockReturnValue({
+      owned: true,
+      tried: true,
+      wishlist: false,
+      rating: null,
+      note: "",
+    });
+    stockForItemKey.mockReturnValue(2);
+    const { logEveningSession } = await import("./eveningSession");
+    const result = logEveningSession({
+      cigarId: "cig-1@toro",
+      drinkId: null,
+      rating: null,
+      note: "",
+    });
+    expect(result.releasedOwned).toBe(false);
+    expect(updateItem).not.toHaveBeenCalledWith("cig-1", { owned: false });
   });
 });

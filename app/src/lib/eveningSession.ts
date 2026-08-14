@@ -1,6 +1,7 @@
 // Zapis večeri u dnevnik + oznaka "probao" na obje stavke + skidanje iz humidora.
 import { addJournalEntry, getItemState, updateItem } from "../store/collection";
 import { consumeFromStock, totalStock } from "../store/humidor";
+import { releaseOwnedIfEmpty } from "./stockOwnership";
 
 export interface EveningSessionInput {
   cigarId: string;
@@ -19,6 +20,8 @@ export interface EveningSessionResult {
   /** Ključ zalihe koji je skinut — zna se razlikovati od zapisa po vitoli. */
   consumedItemId: string | null;
   stockAfter: number;
+  /** true = bila je zadnja, pa je oznaka „Imam” ugašena. */
+  releasedOwned: boolean;
 }
 
 /** Spremi spoj u dnevnik; po zadanome označi cigaru i piće kao probane. */
@@ -46,11 +49,16 @@ export function logEveningSession(input: EveningSessionInput): EveningSessionRes
     }
   }
 
+  // popušena zadnja → više je nemaš: „Imam” se gasi da popis ne raste zauvijek
+  const releasedOwned =
+    consumedItemId != null ? releaseOwnedIfEmpty(consumedItemId) : false;
+
   return {
     consumed: consumedItemId != null,
     consumedItemId,
     // zaliha se broji na ključu koji je stvarno skinut, inače bi zapis po
     // vitoli gledao praznu policu dok linija u humidoru još stoji
     stockAfter: totalStock(consumedItemId ?? input.cigarId),
+    releasedOwned,
   };
 }

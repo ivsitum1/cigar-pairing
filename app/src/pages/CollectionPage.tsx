@@ -1,4 +1,4 @@
-import { useRef, useState, type ReactNode } from "react";
+import { useMemo, useRef, useState, type ReactNode } from "react";
 import type { Cigar, Drink } from "../types";
 import {
   ALL_DRINKS,
@@ -25,6 +25,13 @@ import {
   ownedWithoutStockIds,
   shortlistItemIds,
 } from "../lib/collectionPanels";
+import {
+  smokerProfile,
+  type SmokerProfile,
+  type TriedCigar,
+} from "../lib/smokerProfile";
+import { cigarShapes } from "../lib/vitolaShape";
+import { flavorLabel } from "../engine/rules";
 import {
   clearItem,
   exportData,
@@ -70,6 +77,133 @@ function CollectionEntry({
   );
 }
 
+const STYLE_KEYS: Record<
+  SmokerProfile["style"],
+  { title: StringKey; body: StringKey }
+> = {
+  novice: { title: "score.styleNovice", body: "score.styleNoviceBody" },
+  mild: { title: "score.styleMild", body: "score.styleMildBody" },
+  balanced: { title: "score.styleBalanced", body: "score.styleBalancedBody" },
+  full: { title: "score.styleFull", body: "score.styleFullBody" },
+  strong: { title: "score.styleStrong", body: "score.styleStrongBody" },
+};
+
+/** Jedna brojka sa svojim natpisom. */
+function ScoreStat({ value, label }: { value: string; label: string }) {
+  return (
+    <div className="rounded-lg border border-dim/15 bg-humidor/50 px-2.5 py-2 text-center">
+      <div className="font-display text-xl leading-none text-zlato-2">{value}</div>
+      <div className="mt-1 text-micro leading-snug text-dim">{label}</div>
+    </div>
+  );
+}
+
+function ScoreFact({ label, value }: { label: string; value: string }) {
+  return (
+    <div className="flex items-baseline justify-between gap-3 border-t border-dim/10 pt-1.5">
+      <span className="shrink-0 text-micro uppercase tracking-widest text-dim">{label}</span>
+      <span className="min-w-0 truncate text-sm text-papir/90">{value}</span>
+    </div>
+  );
+}
+
+/**
+ * Zbroj probanog: koliko, kako ocijenjeno i kakav si pušač. Zamjenjuje popis
+ * „Probano” — popis je rastao, a ništa nije govorio.
+ */
+function SmokerScoreboard({ profile }: { profile: SmokerProfile }) {
+  const { t, lx, cn, lang } = useI18n();
+  const market = useMarket();
+  const style = STYLE_KEYS[profile.style];
+
+  if (profile.tried === 0 && profile.evenings === 0) {
+    return (
+      <p className="rounded-xl border border-dim/20 bg-cedar p-4 text-sm leading-relaxed text-dim">
+        {t("score.empty")}
+      </p>
+    );
+  }
+
+  const bestCigar = profile.best ? cigarForItemId(profile.best.itemId) : undefined;
+  const bestDrink = profile.topDrink ? drinkById(profile.topDrink.value) : undefined;
+  const oneDecimal = (v: number) => v.toFixed(1);
+
+  return (
+    <div className="rounded-xl border border-zlato/25 bg-cedar p-3">
+      <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
+        <ScoreStat value={String(profile.tried)} label={t("score.tried")} />
+        <ScoreStat value={String(profile.evenings)} label={t("score.evenings")} />
+        <ScoreStat
+          value={profile.avgRating != null ? oneDecimal(profile.avgRating) : "—"}
+          label={`${t("score.avgRating")} (${profile.rated} ${t("score.rated")})`}
+        />
+        <ScoreStat value={String(profile.triedDrinks)} label={t("score.triedDrinks")} />
+      </div>
+
+      <div className="mt-3 rounded-lg border border-zlato/20 bg-zlato/5 px-3 py-2">
+        <div className="text-micro uppercase tracking-widest text-dim">
+          {t("score.style")}
+        </div>
+        <div className="font-display text-base text-zlato-2">{t(style.title)}</div>
+        <p className="mt-0.5 text-xs leading-relaxed text-papir/85">{t(style.body)}</p>
+      </div>
+
+      <div className="mt-3 space-y-1.5">
+        {profile.avgStrength != null && profile.avgBody != null && (
+          <ScoreFact
+            label={t("score.strengthBody")}
+            value={`${oneDecimal(profile.avgStrength)} / ${oneDecimal(profile.avgBody)}`}
+          />
+        )}
+        {profile.topShape && (
+          <ScoreFact
+            label={t("score.topShape")}
+            value={`${t(`shape.${profile.topShape.value}` as StringKey)} · ${profile.topShape.count}×`}
+          />
+        )}
+        {profile.topCountry && (
+          <ScoreFact
+            label={t("score.topCountry")}
+            value={`${cn(profile.topCountry.value)} · ${profile.topCountry.count}×`}
+          />
+        )}
+        {profile.topWrapper && (
+          <ScoreFact
+            label={t("score.topWrapper")}
+            value={`${profile.topWrapper.value} · ${profile.topWrapper.count}×`}
+          />
+        )}
+        {profile.topFlavors.length > 0 && (
+          <ScoreFact
+            label={t("score.topFlavors")}
+            value={profile.topFlavors
+              .map((f) => flavorLabel(f.value, lang))
+              .join(" · ")}
+          />
+        )}
+        {bestDrink && profile.topDrink && (
+          <ScoreFact
+            label={t("score.topDrink")}
+            value={`${lx(drinkNameLoc(bestDrink))} · ${profile.topDrink.count}×`}
+          />
+        )}
+        {profile.best && (
+          <ScoreFact
+            label={t("score.best")}
+            value={`${
+              bestCigar
+                ? `${brandDisplayName(bestCigar.brand, market)} ${bestCigar.line}${
+                    bestCigar.selectedVitola ? ` ${bestCigar.selectedVitola}` : ""
+                  }`
+                : profile.best.itemId
+            } · ${profile.best.rating}/10`}
+          />
+        )}
+      </div>
+    </div>
+  );
+}
+
 export function CollectionPage({
   onPair,
 }: {
@@ -95,6 +229,8 @@ export function CollectionPage({
   const [logCigar, setLogCigar] = useState<Cigar | null>(null);
   const fileRef = useRef<HTMLInputElement>(null);
   const [importMsg, setImportMsg] = useState<string | null>(null);
+  // popis probanih postoji samo za ispravke — zbroj je ono što se gleda
+  const [showHistory, setShowHistory] = useState(false);
   const [ocrQuery, setOcrQuery] = useState("");
 
   // Tab Kolekcija: Imam bez stocka + shortlist (tried); wishlist živi u Kupovini
@@ -109,6 +245,35 @@ export function CollectionPage({
   const historyDrinkIds = shortlistItemIds(data.items).filter(
     (id) => cigarForItemId(id) == null && drinkById(id) != null,
   );
+
+  /**
+   * Profil pušača: zbroj svega probanog, a ne popis. Ulaze sve cigare koje su
+   * označene s „Probano” ili nose ocjenu — bez obzira imaš li ih još.
+   */
+  const profile = useMemo(() => {
+    const tried: TriedCigar[] = [];
+    for (const [id, state] of Object.entries(data.items)) {
+      if (!state.tried && state.rating == null) continue;
+      const cigar = cigarForItemId(id);
+      if (!cigar) continue;
+      // linija s više formata ne zna koji je pušen — oblik tada ne ulazi u zbroj
+      const shapes = cigarShapes(cigar);
+      tried.push({
+        itemId: id,
+        strength: cigar.strength,
+        body: cigar.body,
+        country: cigar.country,
+        wrapper: cigar.wrapper,
+        flavorTags: cigar.flavorTags,
+        shape: shapes.size === 1 ? [...shapes][0] : null,
+        rating: state.rating,
+      });
+    }
+    const triedDrinks = Object.entries(data.items).filter(
+      ([id, s]) => (s.tried || s.rating != null) && drinkById(id) != null,
+    ).length;
+    return smokerProfile(tried, triedDrinks, data.journal);
+  }, [data]);
 
   const allOwnedCigarIds = Object.entries(data.items)
     .filter(([id, s]) => s.owned && cigarForItemId(id) != null)
@@ -125,9 +290,6 @@ export function CollectionPage({
   const ownedCigarsForLog = cigarsFor(
     dedupeCollectionCigarIds(allOwnedCigarIds),
   );
-
-  const panelCount =
-    ownedNoStockCigars.length + historyCigars.length + historyDrinks.length;
 
   const doExport = () => {
     const payload = JSON.stringify(
@@ -261,7 +423,9 @@ export function CollectionPage({
       {tabBar}
       <div className="mt-4 flex items-center justify-between gap-2">
         <span className="text-sm text-dim">
-          <span className="font-display text-lg text-zlato-2">{panelCount}</span>{" "}
+          <span className="font-display text-lg text-zlato-2">
+            {ownedNoStockCigars.length}
+          </span>{" "}
           {t("coll.stats")}
         </span>
         <div className="flex flex-wrap items-center justify-end gap-2">
@@ -303,12 +467,6 @@ export function CollectionPage({
       ) : null}
       {importMsg && <p className="mt-2 text-xs text-zlato-2">{importMsg}</p>}
 
-      {panelCount === 0 && (
-        <p className="mt-6 rounded-xl border border-dim/20 bg-cedar p-4 text-sm leading-relaxed text-dim">
-          {t("coll.empty")}
-        </p>
-      )}
-
       {ownedNoStockCigars.length > 0 && (
         <>
           <SectionTitle>{t("coll.ownedNoStock")}</SectionTitle>
@@ -324,21 +482,34 @@ export function CollectionPage({
         </>
       )}
 
+      <SectionTitle>{t("score.title")}</SectionTitle>
+      <SmokerScoreboard profile={profile} />
+
       {(historyCigars.length > 0 || historyDrinks.length > 0) && (
         <>
-          <SectionTitle>{t("coll.historySection")}</SectionTitle>
-          <div className="space-y-2 opacity-80">
-            {historyCigars.map(({ id, cigar }) => (
-              <CollectionEntry key={id} itemId={id}>
-                <CigarRow cigar={cigar} onClick={() => openCigarCard(cigar)} />
-              </CollectionEntry>
-            ))}
-            {historyDrinks.map((d) => (
-              <CollectionEntry key={d.id} itemId={d.id}>
-                <DrinkRow drink={d} onClick={() => openDrink(d)} />
-              </CollectionEntry>
-            ))}
+          <div className="mt-2">
+            <Chip onClick={() => setShowHistory((v) => !v)}>
+              {showHistory ? t("score.hideList") : t("score.showList")} (
+              {historyCigars.length + historyDrinks.length})
+            </Chip>
           </div>
+          {showHistory && (
+            <>
+              <p className="mt-2 text-xs leading-relaxed text-dim">{t("score.listHint")}</p>
+              <div className="mt-2 space-y-2 opacity-80">
+                {historyCigars.map(({ id, cigar }) => (
+                  <CollectionEntry key={id} itemId={id}>
+                    <CigarRow cigar={cigar} onClick={() => openCigarCard(cigar)} />
+                  </CollectionEntry>
+                ))}
+                {historyDrinks.map((d) => (
+                  <CollectionEntry key={d.id} itemId={d.id}>
+                    <DrinkRow drink={d} onClick={() => openDrink(d)} />
+                  </CollectionEntry>
+                ))}
+              </div>
+            </>
+          )}
         </>
       )}
 
