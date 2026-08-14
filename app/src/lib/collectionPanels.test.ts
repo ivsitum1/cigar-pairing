@@ -46,7 +46,7 @@ describe("collectionPanels filters", () => {
     expect(shortlistItemIds(items).sort()).toEqual(["a", "d", "e"]);
   });
 
-  it("ownedWithoutStock gleda totalStock po kljucu", () => {
+  it("ownedWithoutStock gleda zalihu po kljucu", () => {
     const items: Record<string, ItemState> = {
       "cig-x@robusto": blank({ owned: true }),
       "cig-y@churchill": blank({ owned: true }),
@@ -54,5 +54,17 @@ describe("collectionPanels filters", () => {
     };
     const stock = (id: string) => (id === "cig-x@robusto" ? 2 : 0);
     expect(ownedWithoutStockIds(items, stock)).toEqual(["cig-y@churchill"]);
+  });
+
+  it("stavka s racuna (goli id linije) nestaje kad linija dobije zalihu", () => {
+    // OCR racuna daje id linije; u humidor stavka ulazi pod vitolom, pa
+    // brojac mora biti onaj koji goli kljuc razumije kao „cijela linija"
+    const items: Record<string, ItemState> = { "cig-x": blank({ owned: true }) };
+    const lineAware = (id: string) => (id === "cig-x" ? 3 : 0);
+    const exactOnly = (id: string) => (id === "cig-x@robusto" ? 3 : 0);
+
+    expect(ownedWithoutStockIds(items, lineAware)).toEqual([]);
+    // s brojacem koji gleda samo tocan kljuc stavka bi zauvijek ostala na popisu
+    expect(ownedWithoutStockIds(items, exactOnly)).toEqual(["cig-x"]);
   });
 });
