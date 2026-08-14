@@ -11,8 +11,6 @@ const STRINGS = {
   "nav.shopping": { hr: "Kupnja", en: "Shopping" },
   "nav.club": { hr: "Klub", en: "Club" },
   // sustav
-  "sys.updateReady": { hr: "Nova verzija je spremna.", en: "A new version is ready." },
-  "sys.reload": { hr: "Osvježi", en: "Reload" },
   "sys.storageFail": {
     hr: "Spremanje nije uspjelo (prostor za pohranu pun je ili blokiran) — promjene vrijede samo do zatvaranja. Izvezi sigurnosnu kopiju u Kolekciji.",
     en: "Saving failed (storage full or blocked) — changes last only until you close the app. Export a backup from Collection.",

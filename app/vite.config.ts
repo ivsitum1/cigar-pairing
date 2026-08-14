@@ -10,9 +10,14 @@ export default defineConfig({
     react(),
     tailwindcss(),
     VitePWA({
-      // prompt: korisnik dobije "nova verzija" traku umjesto tihe zamjene
-      // usred koristenja; hashirani asseti cine rucni cacheId bump nepotrebnim
-      registerType: "prompt",
+      // autoUpdate: nova verzija se preuzme i primijeni sama.
+      //
+      // Ranije je stajao "prompt", pa je uredaj servirao staru verziju sve dok
+      // korisnik ne bi kliknuo traku "nova verzija" — a traka se pojavljivala
+      // samo pri ucitavanju stranice, sto kod instaliranog PWA-a zna znaciti
+      // danima. Objavljena promjena tada naprosto "nije live".
+      // Hashirani asseti cine rucni cacheId bump nepotrebnim.
+      registerType: "autoUpdate",
       includeAssets: ["icon.svg", "apple-touch-icon.png"],
       manifest: {
         name: "Cigar & Drink Pairing",
@@ -60,6 +65,10 @@ export default defineConfig({
         ],
       },
       workbox: {
+        // novi service worker preuzima kontrolu odmah, bez cekanja da se
+        // zatvore sve kartice — inace autoUpdate ceka isto sto i prompt
+        clientsClaim: true,
+        skipWaiting: true,
         globPatterns: ["**/*.{js,css,html,svg,png,json,woff2}"],
         // PaddleOCR / ORT worker chunks are 10–27 MB — load on demand, not SW precache
         globIgnores: [
