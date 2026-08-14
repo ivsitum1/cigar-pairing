@@ -1,5 +1,12 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import type { Cigar, Drink, DrinkCategory, Vitola } from "../types";
+import type {
+  Cigar,
+  CoffeeRoastLevel,
+  CoffeeSpecies,
+  Drink,
+  DrinkCategory,
+  Vitola,
+} from "../types";
 import {
   CIGARS,
   DRINKS,
@@ -140,6 +147,10 @@ export function CatalogPage({
   const [styleFilter, setStyleFilter] = useState<string | null>(null);
   const [strengthFilter, setStrengthFilter] = useState<number | null>(null);
   const [shapeFilter, setShapeFilter] = useState<ShapeFamily | null>(null);
+  // kava: tri okomite osi — priprema (styleFilter), prženje, zrno + zemlja
+  const [roastFilter, setRoastFilter] = useState<CoffeeRoastLevel | null>(null);
+  const [beanFilter, setBeanFilter] = useState<CoffeeSpecies | null>(null);
+  const [originFilter, setOriginFilter] = useState<string | null>(null);
   const [wrapperOriginFilter, setWrapperOriginFilter] = useState<string | null>(null);
   const [binderOriginFilter, setBinderOriginFilter] = useState<string | null>(null);
   const [fillerOriginFilter, setFillerOriginFilter] = useState<string | null>(null);
@@ -456,6 +467,9 @@ export function CatalogPage({
     // izgleda kao prazan katalog
     setFavOnly(false);
     setShowShops(false);
+    setRoastFilter(null);
+    setBeanFilter(null);
+    setOriginFilter(null);
     // promjena kartice gasi ručno sortiranje — svaka kartica ima svoj zadani
     // poredak (cigare po nazivu, pića po kvaliteti)
     setSort(null);
@@ -471,6 +485,25 @@ export function CatalogPage({
         return true;
       })
       .map((d) => d.style);
+  }, [tab]);
+
+  /** Prženja, zrna i zemlje kojih na kartici kave stvarno ima. */
+  const coffeeFacets = useMemo(() => {
+    if (tab !== "coffee") return { roasts: [], beans: [], origins: [] };
+    const roasts = new Set<CoffeeRoastLevel>();
+    const beans = new Set<CoffeeSpecies>();
+    const origins = new Set<string>();
+    for (const d of DRINKS.coffee) {
+      if (d.roast) roasts.add(d.roast);
+      if (d.species) beans.add(d.species);
+      // "—" = priprema bez jednog podrijetla (ristretto, cappuccino…)
+      if (d.country && d.country !== "—") origins.add(d.country);
+    }
+    return {
+      roasts: (["light", "medium", "dark"] as CoffeeRoastLevel[]).filter((r) => roasts.has(r)),
+      beans: (["arabica", "robusta", "blend"] as CoffeeSpecies[]).filter((b) => beans.has(b)),
+      origins: [...origins].sort((a, b) => a.localeCompare(b, "hr")),
+    };
   }, [tab]);
 
   const leafOriginOptions = useMemo(() => {
@@ -551,6 +584,9 @@ export function CatalogPage({
     const list = DRINKS[tab].filter((d) => {
       if (q && !`${d.name} ${d.region}`.toLowerCase().includes(q)) return false;
       if (styleFilter != null && d.style !== styleFilter) return false;
+      if (roastFilter != null && d.roast !== roastFilter) return false;
+      if (beanFilter != null && d.species !== beanFilter) return false;
+      if (originFilter != null && d.country !== originFilter) return false;
       if (cleanOnly && d.additiveStatus !== "clean" && d.additiveStatus !== "low") {
         return false;
       }
@@ -571,7 +607,7 @@ export function CatalogPage({
     const cmp = sort ? by[sort.key] : undefined;
     if (!cmp || !sort) return [...list].sort(by.quality!);
     return [...list].sort(directedComparator(cmp, SORT_DEFAULT_DIR[sort.key], sort.dir));
-  }, [tab, q, styleFilter, cleanOnly, sort, favOnly, favorites]);
+  }, [tab, q, styleFilter, roastFilter, beanFilter, originFilter, cleanOnly, sort, favOnly, favorites]);
 
   useEffect(() => {
     setLimit(120);
@@ -739,6 +775,56 @@ export function CatalogPage({
             </Chip>
           ))}
       </div>
+
+      {/* kava: prženje / zrno / zemlja — priprema je gore, među stilovima */}
+      {tab === "coffee" && !browseBrands && coffeeFacets.roasts.length > 1 && (
+        <div className="no-scrollbar mt-2 flex items-center gap-2 overflow-x-auto">
+          <span className="shrink-0 text-micro uppercase tracking-widest text-dim">
+            {t("filter.roast")}
+          </span>
+          {coffeeFacets.roasts.map((r) => (
+            <Chip
+              key={r}
+              active={roastFilter === r}
+              onClick={() => setRoastFilter(roastFilter === r ? null : r)}
+            >
+              {t(`roast.${r}` as StringKey)}
+            </Chip>
+          ))}
+        </div>
+      )}
+      {tab === "coffee" && !browseBrands && coffeeFacets.beans.length > 1 && (
+        <div className="no-scrollbar mt-2 flex items-center gap-2 overflow-x-auto">
+          <span className="shrink-0 text-micro uppercase tracking-widest text-dim">
+            {t("filter.bean")}
+          </span>
+          {coffeeFacets.beans.map((b) => (
+            <Chip
+              key={b}
+              active={beanFilter === b}
+              onClick={() => setBeanFilter(beanFilter === b ? null : b)}
+            >
+              {t(`bean.${b}` as StringKey)}
+            </Chip>
+          ))}
+        </div>
+      )}
+      {tab === "coffee" && !browseBrands && coffeeFacets.origins.length > 1 && (
+        <div className="no-scrollbar mt-2 flex items-center gap-2 overflow-x-auto">
+          <span className="shrink-0 text-micro uppercase tracking-widest text-dim">
+            {t("filter.country")}
+          </span>
+          {coffeeFacets.origins.map((o) => (
+            <Chip
+              key={o}
+              active={originFilter === o}
+              onClick={() => setOriginFilter(originFilter === o ? null : o)}
+            >
+              {cn(o)}
+            </Chip>
+          ))}
+        </div>
+      )}
 
       {/* filter oblika (vitole) — samo u ravnom popisu cigara */}
       {tab === "cigars" && !browseBrands && (

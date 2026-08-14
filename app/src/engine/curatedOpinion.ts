@@ -7,7 +7,7 @@
 
 import type { Cigar, Drink, LocalizedText, PairingReason } from "../types";
 import { drinkNameLoc } from "../lib/drinkName";
-import { WEIGHTS, flavorLabel, normalizeTags } from "./rules";
+import { WEIGHTS, flavorLabel, normalizeTags, pairingStyleKey } from "./rules";
 
 const BODY_HR = ["", "vrlo lagano", "lagano", "srednje", "puno", "vrlo puno"];
 const BODY_EN = ["", "very light", "light", "medium", "full", "very full"];
@@ -45,7 +45,9 @@ function wrapperLabel(kind: ReturnType<typeof wrapperKind>, raw: string): string
 }
 
 function drinkProfile(drink: Drink): string {
-  const { category, style, body, sweetness } = drink;
+  const { category, body, sweetness } = drink;
+  // kod kave spojeni ključ (priprema + prženje) — pravila ispod čitaju "dark"
+  const style = pairingStyleKey(drink);
   if (category === "rum") {
     if (style === "barbados" || /foursquare|doorly|barbados/i.test(drink.name))
       return "clean-barbados";

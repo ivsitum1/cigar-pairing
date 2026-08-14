@@ -21,7 +21,7 @@ import type {
   PairingReason,
   PairingResult,
 } from "../types";
-import { POWER_TAGS, WEIGHTS, normalizeTags } from "./rules";
+import { POWER_TAGS, WEIGHTS, normalizeTags, pairingStyleKey } from "./rules";
 
 export type OccasionFilter = "any" | "morning" | "afternoon" | "evening";
 export type Occasion = Exclude<OccasionFilter, "any">;
@@ -93,6 +93,7 @@ const STYLE_CLOCK: Record<string, Clock> = {
   turkish: clock(0.75, 0.5, 0),
   moka: clock(1, 0.25, -0.25),
   spiked: clock(-1, 0, 1.25), // kava s likerom — poslije večere, ne u osam ujutro
+  instant: clock(1.25, 0.25, -0.75), // uredska šalica: jutro, ne večer
 
   // rum
   agricole: clock(1, 0.75, -0.25),
@@ -184,7 +185,7 @@ export function occasionAffinity(
   { cigar, drink }: OccasionInput,
 ): number {
   let a = CATEGORY_CLOCK[drink.category][occasion];
-  a += STYLE_CLOCK[drink.style]?.[occasion] ?? 0;
+  a += STYLE_CLOCK[pairingStyleKey(drink)]?.[occasion] ?? 0;
 
   // relativno prema cigari, ne apsolutni "body 4 uvečer"
   const lean = drink.body - cigar.body;

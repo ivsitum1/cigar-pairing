@@ -26,7 +26,7 @@ describe("README brojke prate podatke", () => {
     ["gin", DRINKS.gin.length],
     ["vina", DRINKS.wine.length],
     ["tequila", DRINKS.tequila.length],
-    ["kave", DRINKS.coffee.length],
+    ["kava", DRINKS.coffee.length], // "38 kava" — genitiv množine, kao i ostale
     ["digestiva", DRINKS.digestif.length],
     ["cigara", CIGARS.length],
   ];

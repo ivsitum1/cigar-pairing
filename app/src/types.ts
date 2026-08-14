@@ -32,6 +32,9 @@ export interface PriceRange {
   max: number;
 }
 
+export type CoffeeRoastLevel = "light" | "medium" | "dark";
+export type CoffeeSpecies = "arabica" | "robusta" | "blend";
+
 export interface Serving {
   neat?: number; // 0-3 (x, ~, +, ++)
   water?: number;
@@ -50,7 +53,16 @@ export interface Drink {
   // vlastiti pojmovi (džezva, cà phê sữa đá) ostaju nepromijenjeni.
   // Ako izostane, koristi se `name` u oba jezika.
   nameLoc?: LocalizedText;
+  /**
+   * Vrsta/polica pića. Kod kave je to PRIPREMA (espresso, filter, s mlijekom,
+   * instant…) — prženje i zrno imaju svoja polja, jer su to tri okomite osi:
+   * ista Etiopija je druga kava kao V60 i kao espresso.
+   */
   style: string;
+  /** Kava: stupanj prženja. Ostale kategorije ga nemaju. */
+  roast?: CoffeeRoastLevel;
+  /** Kava: vrsta zrna. */
+  species?: CoffeeSpecies;
   region: string;
   country?: string;
   abv?: number | null;
