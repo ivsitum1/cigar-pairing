@@ -1,6 +1,13 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { Cigar, Drink, DrinkCategory } from "../types";
-import { ALL_DRINKS, CIGARS, DRINKS, SHOPPING, brandDisplayName, formatPrice } from "../data";
+import {
+  ALL_DRINKS,
+  DRINKS,
+  SHOPPING,
+  brandDisplayName,
+  cigarForItemId,
+  formatPrice,
+} from "../data";
 import { useI18n, STYLE_LABELS, type StringKey } from "../i18n";
 import { Chip, SectionTitle } from "../components/ui";
 import { CigarRow, DrinkRow } from "../components/cards";
@@ -9,11 +16,28 @@ import {
   useCigarBrowseSheets,
 } from "../components/useCigarBrowseSheets";
 import { EveningSessionSheet } from "../components/EveningSessionSheet";
-import { getItemState, lineState, useCollection } from "../store/collection";
-import { totalStock, lineTotalStock } from "../store/humidor";
+import { getItemState, useCollection } from "../store/collection";
+import { totalStock, lineTotalStock, useHumidors } from "../store/humidor";
 import { useMarket } from "../store/market";
-import { isShoppingWishlistItem } from "../lib/shoppingWishlist";
-import { cigarItemId } from "../lib/cigarItemId";
+import { isRestockItem, isShoppingWishlistItem } from "../lib/shoppingWishlist";
+import {
+  cigarItemId,
+  dedupeCollectionCigarIds,
+  parseCigarItemId,
+} from "../lib/cigarItemId";
+import { drinkNameLoc } from "../lib/drinkName";
+import { vitolaFamily, vitolaFamilyLabel, type VitolaFamily } from "../lib/vitolaFamily";
+import {
+  EMPTY_BUY_FILTERS,
+  type BuyFilterable,
+  buyTotal,
+  familyCounts,
+  filterBuyEntries,
+  hasActiveBuyFilters,
+  sortBuyEntries,
+  type BuyFilters,
+  type BuySort,
+} from "../lib/shoppingFilters";
 import {
   buffetFive,
   buffetTotal,
@@ -36,14 +60,27 @@ const CATEGORIES: DrinkCategory[] = [
   "digestif",
 ];
 
+/**
+ * Redak Kupovine — cigara (ključ nosi vitolu) ili boca, u obliku koji filteri
+ * i sortiranje razumiju bez granjanja po vrsti.
+ */
+type BuyEntry = BuyFilterable & {
+  key: string;
+  /** true = imaš je, ali je zaliha 0 → ide u „Dopuna zalihe”, ne u želje. */
+  restock: boolean;
+  /** Ime trgovine kako stoji u podacima (za dijeljenje popisa). */
+  shopRaw?: string | null;
+} & ({ kind: "cigar"; cigar: Cigar } | { kind: "drink"; drink: Drink });
+
 export function ShoppingPage({
   onPair,
 }: {
   onPair?: (target: { kind: "cigar"; item: Cigar } | { kind: "drink"; item: Drink }) => void;
 }) {
-  const { t, lx } = useI18n();
+  const { t, lx, lang } = useI18n();
   const market = useMarket();
   const collection = useCollection(); // re-render na promjene kolekcije/liste zelja
+  const { stock: humidors } = useHumidors(); // zaliha odlucuje sto je „dopuna"
   const {
     line,
     detail,
@@ -59,7 +96,8 @@ export function ShoppingPage({
   const [buffetCat, setBuffetCat] = useState<DrinkCategory>("rum");
   const [showPlan, setShowPlan] = useState(false);
   const [copied, setCopied] = useState(false);
-  const [selectedShop, setSelectedShop] = useState<string | null>(null);
+  const [filters, setFilters] = useState<BuyFilters>(EMPTY_BUY_FILTERS);
+  const [sort, setSort] = useState<BuySort>("name");
   const shopFilterRef = useRef<HTMLDivElement>(null);
   const shopFilterScrollSkip = useRef(true);
 
@@ -68,50 +106,89 @@ export function ShoppingPage({
   const wishMark = (id: string) => (getItemState(id).wishlist ? "☆ " : "");
   const otherShopsLabel = t("shop.otherShops");
 
-  // ☆ lista zelja — pice + cigare, s ukupnim troskom (+ restock kad je owned a zaliha 0)
-  const wishlistDrinks = ALL_DRINKS.filter((d) => {
-    const s = getItemState(d.id);
-    return isShoppingWishlistItem(s, totalStock(d.id));
-  });
-  // stanje se cuva po vitoli — linija je na listi zelja ako je bilo koja njena
-  const wishlistCigars = CIGARS.filter((c) => {
-    const s = lineState(c.id);
-    return isShoppingWishlistItem(s, lineTotalStock(c.id));
-  });
+  /**
+   * Sve što ide na Kupovinu, u jednom obliku — cigara po VITOLI (ključ nosi
+   * odabranu veličinu, kao humidor i dnevnik) i boca po id-u. `restock` dijeli
+   * popis na dvoje: „želim kupiti” i „imam je, ali je nema u humidoru”.
+   */
+  const buyEntries = useMemo<BuyEntry[]>(() => {
+    const cigarKeys = Object.keys(collection.items).filter((id) => {
+      if (cigarForItemId(id) == null) return false;
+      const { cigarId, vitolaSlug } = parseCigarItemId(id);
+      // goli ključ linije pokriva sve njezine vitole
+      const stock = vitolaSlug ? totalStock(id) : lineTotalStock(cigarId);
+      return isShoppingWishlistItem(getItemState(id), stock);
+    });
+
+    const cigars: BuyEntry[] = dedupeCollectionCigarIds(cigarKeys).flatMap((key) => {
+      const cigar = cigarForItemId(key);
+      if (!cigar) return [];
+      const { cigarId, vitolaSlug } = parseCigarItemId(key);
+      const stock = vitolaSlug ? totalStock(key) : lineTotalStock(cigarId);
+      const vitola = cigar.selectedVitola ?? cigar.vitola;
+      return [
+        {
+          kind: "cigar",
+          key,
+          cigar,
+          name: `${brandDisplayName(cigar.brand, market)} ${cigar.line}`,
+          price: cigar.priceEUR,
+          shopKey: wishlistShopKey(cigar.availabilityHR?.[0], otherShopsLabel),
+          shopRaw: cigar.availabilityHR?.[0],
+          family: vitolaFamily(vitola),
+          restock: isRestockItem(getItemState(key), stock),
+        },
+      ];
+    });
+
+    const drinks: BuyEntry[] = ALL_DRINKS.filter((d) =>
+      isShoppingWishlistItem(getItemState(d.id), totalStock(d.id)),
+    ).map((d) => ({
+      kind: "drink",
+      key: d.id,
+      drink: d,
+      name: lx(drinkNameLoc(d)),
+      price: d.priceEUR?.min ?? null,
+      shopKey: wishlistShopKey(d.shopHR, otherShopsLabel),
+      shopRaw: d.shopHR,
+      family: null,
+      restock: isRestockItem(getItemState(d.id), totalStock(d.id)),
+    }));
+
+    return [...cigars, ...drinks];
+    // getItemState/totalStock citaju modul-cache; ovisnosti su store snapshoti
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [collection, humidors, market, otherShopsLabel, lx]);
 
   // pillovi uvijek iz pune liste (brojevi se ne mijenjaju dok filtriraš)
   const wishlistShops = groupWishlistByShop(
-    [
-      ...wishlistCigars.map((c) => ({
-        shop: c.availabilityHR?.[0],
-        price: c.priceEUR,
-      })),
-      ...wishlistDrinks.map((d) => ({
-        shop: d.shopHR,
-        price: d.priceEUR?.min ?? null,
-      })),
-    ],
+    buyEntries.map((e) => ({ shop: e.shopKey, price: e.price })),
     otherShopsLabel,
   );
+  const vitolaFamilies = familyCounts(buyEntries);
+  const hasCigars = buyEntries.some((e) => e.kind === "cigar");
+  const hasDrinks = buyEntries.some((e) => e.kind === "drink");
 
-  const visibleCigars =
-    selectedShop == null
-      ? wishlistCigars
-      : wishlistCigars.filter(
-          (c) => wishlistShopKey(c.availabilityHR?.[0], otherShopsLabel) === selectedShop,
-        );
-  const visibleDrinks =
-    selectedShop == null
-      ? wishlistDrinks
-      : wishlistDrinks.filter(
-          (d) => wishlistShopKey(d.shopHR, otherShopsLabel) === selectedShop,
-        );
-  const wishlistDrinkGroups = groupWishlistDrinksByCategory(visibleDrinks, CATEGORIES);
-  const wishlistTotal =
-    visibleDrinks.reduce((s, d) => s + (d.priceEUR?.min ?? 0), 0) +
-    visibleCigars.reduce((s, c) => s + (c.priceEUR ?? 0), 0);
+  const visible = sortBuyEntries(filterBuyEntries(buyEntries, filters), sort);
+  const wishVisible = visible.filter((e) => !e.restock);
+  const restockVisible = visible.filter((e) => e.restock);
 
-  // nakon filtera lista iznad se skraćuje — chipovi ostanu u središtu viewporta
+  const cigarsOf = (list: BuyEntry[]) =>
+    list.filter((e): e is BuyEntry & { kind: "cigar"; cigar: Cigar } => e.kind === "cigar");
+  const drinksOf = (list: BuyEntry[]) =>
+    list
+      .filter((e): e is BuyEntry & { kind: "drink"; drink: Drink } => e.kind === "drink")
+      .map((e) => e.drink);
+
+  const wishlistDrinkGroups = groupWishlistDrinksByCategory(
+    drinksOf(wishVisible),
+    CATEGORIES,
+  );
+  const wishlistTotal = buyTotal(wishVisible);
+  const restockTotal = buyTotal(restockVisible);
+  const filtersActive = hasActiveBuyFilters(filters);
+
+  // nakon filtera lista ispod se skraćuje — chipovi ostanu u središtu viewporta
   useEffect(() => {
     if (shopFilterScrollSkip.current) {
       shopFilterScrollSkip.current = false;
@@ -123,21 +200,27 @@ export function ShoppingPage({
       el.scrollIntoView({ behavior: "smooth", block: "center" });
     });
     return () => cancelAnimationFrame(id);
-  }, [selectedShop]);
+  }, [filters]);
 
   const toggleShop = (shop: string) =>
-    setSelectedShop((cur) => (cur === shop ? null : shop));
+    setFilters((f) => ({ ...f, shop: f.shop === shop ? null : shop }));
+  const toggleFamily = (family: VitolaFamily) =>
+    setFilters((f) => ({ ...f, family: f.family === family ? null : family }));
 
   const shareWishlist = async () => {
+    const shareItems = (list: BuyEntry[]) =>
+      list.map((e) => ({
+        name: e.kind === "cigar" && e.cigar.selectedVitola
+          ? `${e.name} — ${e.cigar.selectedVitola}`
+          : e.name,
+        price: e.price,
+        shop: e.shopRaw ?? undefined,
+      }));
     const text = wishlistTextSections(
       [
         {
           title: t("cat.cigars"),
-          items: visibleCigars.map((c) => ({
-            name: `${brandDisplayName(c.brand, market)} ${c.line}`,
-            price: c.priceEUR,
-            shop: c.availabilityHR?.[0],
-          })),
+          items: shareItems(cigarsOf(wishVisible)),
         },
         ...wishlistDrinkGroups.map(({ category, drinks }) => ({
           title: t(`cat.${category}` as StringKey),
@@ -147,6 +230,8 @@ export function ShoppingPage({
             shop: d.shopHR,
           })),
         })),
+        // dopuna zalihe ide u isti popis, ali pod svojim naslovom
+        { title: t("shop.restockTitle"), items: shareItems(restockVisible) },
       ],
       t("shop.total"),
     );
@@ -205,44 +290,147 @@ export function ShoppingPage({
 
   return (
     <div className="pb-4">
-      {/* ☆ 1) lista zelja */}
+      {/* ☆ 1) lista zelja + dopuna zalihe — dva popisa, ne jedan */}
       <SectionTitle>☆ {t("coll.wishlistTitle")}</SectionTitle>
-      {wishlistDrinks.length === 0 && wishlistCigars.length === 0 ? (
+      {buyEntries.length === 0 ? (
         <p className="rounded-xl border border-dim/20 bg-cedar p-4 text-sm leading-relaxed text-dim">
           {t("shop.wishlistEmpty")}
         </p>
       ) : (
         <>
-          <div className="space-y-4">
-            {visibleCigars.length > 0 && (
-              <div>
-                <div className="mb-1.5 font-display text-xs uppercase tracking-[0.2em] text-zlato">
+          {/* filteri iznad popisa — u trgovini se prvo suzi, pa gleda */}
+          <div ref={shopFilterRef} className="space-y-1.5">
+            {hasCigars && hasDrinks && (
+              <div className="flex flex-wrap gap-1.5">
+                <Chip
+                  active={filters.kind === "all"}
+                  onClick={() => setFilters((f) => ({ ...f, kind: "all" }))}
+                >
+                  {t("shop.filterAll")}
+                </Chip>
+                <Chip
+                  active={filters.kind === "cigar"}
+                  onClick={() =>
+                    setFilters((f) => ({
+                      ...f,
+                      kind: f.kind === "cigar" ? "all" : "cigar",
+                    }))
+                  }
+                >
                   {t("cat.cigars")}
-                </div>
-                <div className="space-y-2">
-                  {visibleCigars.map((c) => (
-                    <CigarRow
-                      key={c.id}
-                      cigar={c}
-                      onClick={() => openCigar(c)}
-                    />
-                  ))}
-                </div>
+                </Chip>
+                <Chip
+                  active={filters.kind === "drink"}
+                  onClick={() =>
+                    setFilters((f) => ({
+                      ...f,
+                      kind: f.kind === "drink" ? "all" : "drink",
+                      // vitola je pitanje o cigarama — uz pića nema smisla
+                      family: f.kind === "drink" ? f.family : null,
+                    }))
+                  }
+                >
+                  {t("shop.filterDrinks")}
+                </Chip>
               </div>
             )}
-            {wishlistDrinkGroups.map(({ category, drinks }) => (
-              <div key={category}>
-                <div className="mb-1.5 font-display text-xs uppercase tracking-[0.2em] text-zlato">
-                  {t(`cat.${category}` as StringKey)}
-                </div>
-                <div className="space-y-2">
-                  {drinks.map((d) => (
-                    <DrinkRow key={d.id} drink={d} onClick={() => openDrink(d)} />
-                  ))}
-                </div>
+
+            {wishlistShops.length > 1 && (
+              <div className="flex flex-wrap gap-1.5">
+                <span className="self-center text-micro uppercase tracking-widest text-dim">
+                  {t("shop.filterShop")}
+                </span>
+                {wishlistShops.map((g) => (
+                  <Chip
+                    key={g.shop}
+                    active={filters.shop === g.shop}
+                    onClick={() => toggleShop(g.shop)}
+                  >
+                    {g.shop}: {g.count}×{g.total > 0 ? ` · ~${g.total.toFixed(0)} €` : ""}
+                  </Chip>
+                ))}
               </div>
-            ))}
+            )}
+
+            {vitolaFamilies.length > 1 && filters.kind !== "drink" && (
+              <div className="flex flex-wrap gap-1.5">
+                <span className="self-center text-micro uppercase tracking-widest text-dim">
+                  {t("shop.filterVitola")}
+                </span>
+                {vitolaFamilies.map((g) => (
+                  <Chip
+                    key={g.family}
+                    active={filters.family === g.family}
+                    onClick={() => toggleFamily(g.family)}
+                  >
+                    {vitolaFamilyLabel(g.family, lang)}: {g.count}×
+                  </Chip>
+                ))}
+              </div>
+            )}
+
+            <div className="flex flex-wrap gap-1.5">
+              <span className="self-center text-micro uppercase tracking-widest text-dim">
+                {t("shop.sort")}
+              </span>
+              {(
+                [
+                  ["name", t("shop.sortName")],
+                  ["priceAsc", t("shop.sortPriceAsc")],
+                  ["priceDesc", t("shop.sortPriceDesc")],
+                ] as [BuySort, string][]
+              ).map(([key, label]) => (
+                <Chip key={key} active={sort === key} onClick={() => setSort(key)}>
+                  {label}
+                </Chip>
+              ))}
+              {filtersActive && (
+                <Chip onClick={() => setFilters(EMPTY_BUY_FILTERS)}>
+                  ✕ {t("shop.filterReset")}
+                </Chip>
+              )}
+            </div>
           </div>
+
+          {visible.length === 0 && (
+            <p className="mt-3 rounded-xl border border-dim/20 bg-cedar p-3 text-sm text-dim">
+              {t("shop.filterNoHits")}
+            </p>
+          )}
+
+          {wishVisible.length > 0 && (
+            <div className="mt-3 space-y-4">
+              {cigarsOf(wishVisible).length > 0 && (
+                <div>
+                  <div className="mb-1.5 font-display text-xs uppercase tracking-[0.2em] text-zlato">
+                    {t("cat.cigars")}
+                  </div>
+                  <div className="space-y-2">
+                    {cigarsOf(wishVisible).map((e) => (
+                      <CigarRow
+                        key={e.key}
+                        cigar={e.cigar}
+                        onClick={() => openCigar(e.cigar)}
+                      />
+                    ))}
+                  </div>
+                </div>
+              )}
+              {wishlistDrinkGroups.map(({ category, drinks }) => (
+                <div key={category}>
+                  <div className="mb-1.5 font-display text-xs uppercase tracking-[0.2em] text-zlato">
+                    {t(`cat.${category}` as StringKey)}
+                  </div>
+                  <div className="space-y-2">
+                    {drinks.map((d) => (
+                      <DrinkRow key={d.id} drink={d} onClick={() => openDrink(d)} />
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+
           <div className="mt-2 flex items-center justify-between gap-2">
             <Chip onClick={shareWishlist}>
               {copied ? `✓ ${t("shop.copied")}` : `⇪ ${t("shop.share")}`}
@@ -253,20 +441,34 @@ export function ShoppingPage({
               </span>
             )}
           </div>
-          {wishlistShops.length >= 1 && (
-            <div ref={shopFilterRef} className="mt-2 flex flex-wrap gap-1.5">
-              <Chip active={selectedShop == null} onClick={() => setSelectedShop(null)}>
-                {t("shop.filterAll")}
-              </Chip>
-              {wishlistShops.map((g) => (
-                <Chip
-                  key={g.shop}
-                  active={selectedShop === g.shop}
-                  onClick={() => toggleShop(g.shop)}
-                >
-                  {g.shop}: {g.count}×{g.total > 0 ? ` · ~${g.total.toFixed(0)} €` : ""}
-                </Chip>
-              ))}
+
+          {/* drugi popis: imaš ih, ali ih nema u humidoru */}
+          {restockVisible.length > 0 && (
+            <div className="mt-4 rounded-xl border border-oxblood/30 bg-oxblood/5 p-3">
+              <div className="font-display text-xs uppercase tracking-[0.2em] text-zlato">
+                {t("shop.restockTitle")}
+              </div>
+              <p className="mt-1 text-xs leading-relaxed text-dim">
+                {t("shop.restockHint")}
+              </p>
+              <div className="mt-2 space-y-2">
+                {restockVisible.map((e) =>
+                  e.kind === "cigar" ? (
+                    <CigarRow
+                      key={e.key}
+                      cigar={e.cigar}
+                      onClick={() => openCigar(e.cigar)}
+                    />
+                  ) : (
+                    <DrinkRow key={e.key} drink={e.drink} onClick={() => openDrink(e.drink)} />
+                  ),
+                )}
+              </div>
+              {restockTotal > 0 && (
+                <div className="mt-2 text-right text-sm text-zlato-2">
+                  {t("shop.total")}: ~{restockTotal.toFixed(0)} €
+                </div>
+              )}
             </div>
           )}
         </>
