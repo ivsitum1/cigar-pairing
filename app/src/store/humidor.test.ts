@@ -151,6 +151,15 @@ describe("humidor", () => {
     expect(h.stockCount(a.id, "cig-x@corona")).toBe(2);
   });
 
+  it("popušena vitola ne skida drugu vitolu iste linije", async () => {
+    const h = await load();
+    const a = h.addHumidor("A");
+    h.setStock(a.id, "cig-x@toro", 2);
+
+    expect(h.consumeFromStock("cig-x@robusto")).toBeNull();
+    expect(h.stockCount(a.id, "cig-x@toro")).toBe(2);
+  });
+
   it("točan ključ ima prednost pred zalihom linije", async () => {
     const h = await load();
     const a = h.addHumidor("A");
@@ -168,6 +177,64 @@ describe("humidor", () => {
 
     expect(h.consumeFromStock("cig-x@churchill")).toBeNull();
     expect(h.stockCount(a.id, "cig-x-reserva")).toBe(2);
+  });
+
+  it("moveStock daje vitolu staroj zalihi vođenoj po liniji", async () => {
+    const h = await load();
+    const a = h.addHumidor("A");
+    h.setStock(a.id, "cig-x", 3);
+
+    h.moveStock(a.id, "cig-x", "cig-x@robusto");
+
+    expect(h.stockCount(a.id, "cig-x")).toBe(0);
+    expect(h.stockCount(a.id, "cig-x@robusto")).toBe(3);
+  });
+
+  it("moveStock zbraja kad odredište već postoji", async () => {
+    const h = await load();
+    const a = h.addHumidor("A");
+    h.setStock(a.id, "cig-x", 2);
+    h.setStock(a.id, "cig-x@toro", 1);
+
+    h.moveStock(a.id, "cig-x", "cig-x@toro");
+
+    expect(h.stockCount(a.id, "cig-x@toro")).toBe(3);
+    expect(h.humidorData().stock.map((s) => s.itemId)).toEqual(["cig-x@toro"]);
+  });
+
+  it("moveStock može prebaciti samo dio zalihe", async () => {
+    const h = await load();
+    const a = h.addHumidor("A");
+    h.setStock(a.id, "cig-x", 5);
+
+    h.moveStock(a.id, "cig-x", "cig-x@figurado", 2);
+
+    expect(h.stockCount(a.id, "cig-x")).toBe(3);
+    expect(h.stockCount(a.id, "cig-x@figurado")).toBe(2);
+  });
+
+  it("moveStock ne izmišlja zalihu koje nema", async () => {
+    const h = await load();
+    const a = h.addHumidor("A");
+    h.moveStock(a.id, "cig-x", "cig-x@robusto");
+    expect(h.humidorData().stock).toHaveLength(0);
+  });
+
+  it("lineStock skuplja sve vitole jedne linije u tom humidoru", async () => {
+    const h = await load();
+    const a = h.addHumidor("A");
+    const b = h.addHumidor("B");
+    h.setStock(a.id, "cig-x@robusto", 3);
+    h.setStock(a.id, "cig-x@figurado", 2);
+    h.setStock(a.id, "cig-x-reserva", 4);
+    h.setStock(b.id, "cig-x@toro", 1);
+
+    const rows = h.lineStock(a.id, "cig-x");
+    expect(rows.map((s) => s.itemId).sort()).toEqual([
+      "cig-x@figurado",
+      "cig-x@robusto",
+    ]);
+    expect(rows.reduce((sum, s) => sum + s.count, 0)).toBe(5);
   });
 
   it("preživljava ponovno učitavanje", async () => {

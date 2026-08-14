@@ -481,6 +481,18 @@ const STRINGS = {
   },
   "hum.addToHumidor": { hr: "U humidor", en: "To humidor" },
   "hum.inHumidor": { hr: "U humidoru", en: "In humidor" },
+  "hum.stockByVitola": { hr: "Po vitolama", en: "By vitola" },
+  "hum.addVitola": { hr: "Dodaj vitolu", en: "Add vitola" },
+  "hum.setVitola": { hr: "Odredi vitolu", en: "Set vitola" },
+  "hum.vitolaMissing": { hr: "Vitola nije određena", en: "Vitola not set" },
+  "hum.vitolaMissingHint": {
+    hr: "Humidor broji svaku vitolu zasebno — odredi koja je ovo da stanje odgovara zapisu večeri.",
+    en: "The humidor counts each vitola separately — set which one this is so the stock matches your evening log.",
+  },
+  "hum.pickVitolaToAdd": {
+    hr: "Odaberi vitolu koja ide u humidor",
+    en: "Pick the vitola going into the humidor",
+  },
   "hum.pickHumidor": { hr: "Odaberi humidor", en: "Pick a humidor" },
   "hum.smokeOne": { hr: "Popušio jednu", en: "Smoked one" },
   "hum.totalPieces": { hr: "komada ukupno", en: "pieces in total" },
