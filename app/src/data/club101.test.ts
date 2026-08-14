@@ -68,6 +68,12 @@ describe("club 101 vodici", () => {
     const coffee = club101.tracks.drinks.find((c) => c.id === "d-coffee");
     expect(coffee?.body.hr.toLowerCase()).toMatch(/espresso/);
     expect(coffee?.body.en.toLowerCase()).toMatch(/espresso/);
+    // kućni zanat iz grilla: datum prženja, omjer, čista oprema, voda
+    expect(coffee?.body.hr).toMatch(/datum prženja/i);
+    expect(coffee?.body.hr).toMatch(/60 g kave na litru/);
+    expect(coffee?.body.hr.toLowerCase()).toMatch(/vod[ae]/);
+    expect(coffee?.body.en.toLowerCase()).toMatch(/roast date/);
+    expect(coffee?.body.en).toMatch(/60 g of coffee per litre/);
 
     const tequila = club101.tracks.drinks.find((c) => c.id === "d-tequila");
     expect(tequila?.body.hr.toLowerCase()).toMatch(/blanco/);
