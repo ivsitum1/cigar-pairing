@@ -74,6 +74,9 @@ describe("club 101 vodici", () => {
     expect(coffee?.body.hr.toLowerCase()).toMatch(/vod[ae]/);
     expect(coffee?.body.en.toLowerCase()).toMatch(/roast date/);
     expect(coffee?.body.en).toMatch(/60 g of coffee per litre/);
+    // sedam kombinacija: svaka priprema ima svoj redak i primjer iz kataloga
+    expect(coffee?.body.hr).toContain("Za svaku pripremu");
+    expect(coffee?.body.en).toContain("For each preparation");
 
     const tequila = club101.tracks.drinks.find((c) => c.id === "d-tequila");
     expect(tequila?.body.hr.toLowerCase()).toMatch(/blanco/);

@@ -23,14 +23,35 @@ const REQUIRED_ARCHETYPE_IDS = [
   "espresso-short-vitola",
 ] as const;
 
+/** Sedam kombinacija kava x cigara — po jedna za svaku pripremu. */
+const COFFEE_ARCHETYPE_IDS = [
+  "coffee-espresso",
+  "coffee-lungo",
+  "coffee-americano",
+  "coffee-filter-light",
+  "coffee-filter-dark",
+  "coffee-milk",
+  "coffee-turkish",
+] as const;
+
 const data = eveningArchetypes as EveningArchetypes;
 
 describe("vecernji arhetipovi", () => {
-  it("ima naslov, uvod i sest zadanih arhetipova redom", () => {
+  it("ima naslov, uvod i sest vecernjih pa sedam kavenih arhetipova redom", () => {
     expect(data.title.hr.length && data.title.en.length).toBeTruthy();
     expect(data.intro.hr.length && data.intro.en.length).toBeTruthy();
-    expect(data.entries.length).toBeGreaterThanOrEqual(6);
-    expect(data.entries.map((entry) => entry.id)).toEqual(REQUIRED_ARCHETYPE_IDS);
+    expect(data.entries.map((entry) => entry.id)).toEqual([
+      ...REQUIRED_ARCHETYPE_IDS,
+      ...COFFEE_ARCHETYPE_IDS,
+    ]);
+  });
+
+  it("kavena sedmorka pokriva svaku pripremu i nosi oznaku coffee", () => {
+    for (const id of COFFEE_ARCHETYPE_IDS) {
+      const entry = data.entries.find((e) => e.id === id);
+      expect(entry, id).toBeDefined();
+      expect(entry!.styleTags, id).toContain("coffee");
+    }
   });
 
   it("svaki arhetip je dvojezicni esej sa stilskim oznakama", () => {
