@@ -25,37 +25,50 @@ export interface CoffeeProfile {
   flavorFamily: CoffeeFlavorFamily;
 }
 
-const DARK_STYLES = new Set([
+// `style` kod kave nosi PRIPREMU; prženje je vlastito polje (`roast`).
+// Stari, spojeni ključevi ("espresso-dark", "filter-light") ostaju pokriveni
+// kao zaliha za zapise koji još nisu migrirani.
+const LEGACY_DARK_STYLES = new Set([
   "espresso-dark",
   "filter-dark",
   "turkish",
   "moka",
 ]);
-const LIGHT_STYLES = new Set(["filter-light"]);
-const HIGH_TDS_STYLES = new Set([
-  "espresso-dark",
-  "espresso-medium",
+const LEGACY_LIGHT_STYLES = new Set(["filter-light"]);
+
+/** Priprema koja daje gust ekstrakt (visok TDS) bez obzira na zrno. */
+const HIGH_TDS_PREPS = new Set([
+  "espresso",
+  "ristretto",
   "turkish",
   "moka",
+  "espresso-dark",
+  "espresso-medium",
 ]);
 // Americano = espresso + hot water → medium TDS (body drives the rest).
-const LOW_TDS_STYLES = new Set(["filter-light", "cold"]);
+const LOW_TDS_PREPS = new Set(["cold-brew", "cold", "filter-light"]);
 
 /** Region / name hints for acidity & origin character. */
 function regionBlob(drink: Drink): string {
   return `${drink.region ?? ""} ${drink.country ?? ""} ${drink.name}`.toLowerCase();
 }
 
-function inferRoast(style: string): CoffeeRoast {
-  if (DARK_STYLES.has(style)) return "dark";
-  if (LIGHT_STYLES.has(style)) return "light";
+function inferRoast(drink: Drink): CoffeeRoast {
+  if (drink.roast) return drink.roast;
+  if (LEGACY_DARK_STYLES.has(drink.style)) return "dark";
+  if (LEGACY_LIGHT_STYLES.has(drink.style)) return "light";
   return "medium";
 }
 
-function inferIntensity(style: string, body: number): CoffeeIntensity {
+/**
+ * Gustoća šalice: prvo priprema, pa tijelo. Svijetli filter je čajan i kad je
+ * zrno bogato; espresso je gust i kad je zrno svijetlo.
+ */
+function inferIntensity(style: string, roast: CoffeeRoast, body: number): CoffeeIntensity {
   if (style === "americano") return "medium";
-  if (HIGH_TDS_STYLES.has(style) || body >= 4.5) return "high";
-  if (LOW_TDS_STYLES.has(style) || body <= 2) return "low";
+  if (HIGH_TDS_PREPS.has(style) || body >= 4.5) return "high";
+  if (LOW_TDS_PREPS.has(style) || (style === "filter" && roast === "light")) return "low";
+  if (body <= 2) return "low";
   return "medium";
 }
 
@@ -120,10 +133,10 @@ function inferFlavorFamily(tags: string[], blob: string): CoffeeFlavorFamily {
 
 export function inferCoffeeProfile(drink: Drink): CoffeeProfile {
   const tags = normalizeTags(drink.flavorTags);
-  const roast = inferRoast(drink.style);
+  const roast = inferRoast(drink);
   return {
     roast,
-    intensity: inferIntensity(drink.style, drink.body),
+    intensity: inferIntensity(drink.style, roast, drink.body),
     acidity: inferAcidity(drink, roast, tags),
     flavorFamily: inferFlavorFamily(tags, regionBlob(drink)),
   };

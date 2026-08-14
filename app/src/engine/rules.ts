@@ -1,7 +1,7 @@
 // Kalibracija pairing enginea — tezine i tablice komplementarnih okusa.
 // Mijenjaj ovdje ako zelis drugacije ponasanje prijedloga.
 
-import type { Lang, LocalizedText } from "../types";
+import type { Drink, Lang, LocalizedText } from "../types";
 
 export const WEIGHTS = {
   base: 36,
@@ -128,6 +128,37 @@ export const COMPLEMENTS: Record<string, string[]> = {
   // savory/umami notes (coastal whiskies, aged rums) — complement earthy, leathery cigars
   umami: ["umami", "mineralno", "koza", "zemljano", "duhan"],
 };
+
+/**
+ * Ključ stila za pravila sparivanja.
+ *
+ * Kod kave `style` nosi PRIPREMU (espresso, filter, s mlijekom…), a prženje
+ * živi u `roast` — to su dvije okomite osi i katalog ih tako i pita. Pravila
+ * ispod (wrapper afinitet, sat dana, kurirana poruka) pisana su nad spojenim
+ * ključem iz doba kad je jedno polje nosilo oboje, pa se on ovdje ponovno
+ * sastavlja: espresso + dark → `espresso-dark`, filter + light → `filter-light`.
+ * Ostale kategorije prolaze nepromijenjene.
+ */
+export function pairingStyleKey(
+  drink: Pick<Drink, "category" | "style"> & Partial<Pick<Drink, "roast">>,
+): string {
+  if (drink.category !== "coffee") return drink.style;
+  const roast = drink.roast ?? "medium";
+  switch (drink.style) {
+    // ristretto i lungo su ista obitelj ekstrakcije kao espresso
+    case "espresso":
+    case "ristretto":
+    case "lungo":
+      return `espresso-${roast === "light" ? "medium" : roast}`;
+    case "filter":
+    case "french-press":
+      return `filter-${roast}`;
+    case "cold-brew":
+      return "cold";
+    default:
+      return drink.style;
+  }
+}
 
 // wrapper (regex) -> drink stilovi/tagovi koji mu prirodno pasu
 export const WRAPPER_AFFINITY: {

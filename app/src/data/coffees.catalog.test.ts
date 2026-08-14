@@ -45,6 +45,46 @@ describe("coffees catalog — Hoffmann regional alignment", () => {
     expect(inferCoffeeProfile(sumatra).flavorFamily).toBe("earthy");
   });
 
+  it("tri okomite osi: priprema, prženje i zrno stoje odvojeno", () => {
+    const PREPS = new Set([
+      "espresso",
+      "ristretto",
+      "lungo",
+      "americano",
+      "moka",
+      "turkish",
+      "filter",
+      "french-press",
+      "cold-brew",
+      "milk",
+      "instant",
+      "spiked",
+    ]);
+    for (const c of coffees) {
+      // stari spojeni ključ ("espresso-dark") ne smije se vratiti u podatke
+      expect(c.style, c.id).not.toMatch(/-(light|medium|dark)$/);
+      expect(PREPS.has(c.style), `${c.id}: nepoznata priprema ${c.style}`).toBe(true);
+      expect(["light", "medium", "dark"], c.id).toContain(c.roast);
+      expect(["arabica", "robusta", "blend"], c.id).toContain(c.species);
+    }
+  });
+
+  it("kava vođena podrijetlom ima zemlju, priprema bez podrijetla nema", () => {
+    const origin = coffees.find((c) => c.id === "cf-v60-ethiopia")!;
+    expect(origin.country).toBe("Etiopija");
+    // ristretto nije ni jedna zemlja — to je način pripreme
+    expect(coffees.find((c) => c.id === "cf-ristretto")!.country).toBe("—");
+  });
+
+  it("instant je u katalogu, ali pošteno ocijenjen", () => {
+    const instants = coffees.filter((c) => c.style === "instant");
+    expect(instants.length).toBeGreaterThanOrEqual(1);
+    for (const c of instants) {
+      expect(c.pairable, `${c.id} mora biti pairable — engine ga boduje, ne cenzurira`).toBe(true);
+      expect(c.qualityScore ?? 0).toBeLessThanOrEqual(4);
+    }
+  });
+
   it("americano postoji za medium-TDS stil", () => {
     const am = coffees.find((c) => c.id === "cf-americano")!;
     expect(am.style).toBe("americano");

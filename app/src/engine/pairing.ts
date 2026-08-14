@@ -2,7 +2,15 @@
 // Svako pravilo koje pridonese rezultatu generira dvojezicno objasnjenje.
 
 import type { Cigar, Drink, PairingReason, PairingResult, ServeStyle } from "../types";
-import { COMPLEMENTS, POWER_TAGS, WEIGHTS, WRAPPER_AFFINITY, flavorLabel, normalizeTags } from "./rules";
+import {
+  COMPLEMENTS,
+  POWER_TAGS,
+  WEIGHTS,
+  WRAPPER_AFFINITY,
+  flavorLabel,
+  normalizeTags,
+  pairingStyleKey,
+} from "./rules";
 import { personalBrandReason, personalStyleReason, type PersonalPrefs } from "./personal";
 import { applyServe } from "./serve";
 import { applyGeometry } from "./vitolaGeometry";
@@ -216,7 +224,7 @@ export function scorePairing(
   // 4) Wrapper afinitet — tanka vitola pojačava wrapper-forward bonus (geometrija)
   for (const wa of WRAPPER_AFFINITY) {
     if (!wa.wrapper.test(effCigar.wrapper)) continue;
-    const styleHit = wa.styles.includes(effDrink.style);
+    const styleHit = wa.styles.includes(pairingStyleKey(effDrink));
     const tagHit = drinkTags.some((t) => wa.tags.includes(t));
     if (styleHit || tagHit) {
       const pts = WEIGHTS.wrapperMatch + wrapperForwardBonus;
