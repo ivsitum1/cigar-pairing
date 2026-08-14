@@ -100,6 +100,21 @@ describe("„Imam” prati zalihu", () => {
     expect(claimOwnedForStock("cig-y@robusto")).toBe(false);
   });
 
+  it("stavka s računa seli oznaku na vitolu kojom je složena u humidor", async () => {
+    const { transferOwnedToVitola, collection, humidor } = await load();
+    const box = humidor.addHumidor("A");
+    // OCR računa označi liniju: „imam je, još nije u kutiji"
+    collection.updateItem("cig-x", { owned: true, rating: 8 });
+
+    humidor.adjustStock(box.id, "cig-x@robusto", 1);
+    transferOwnedToVitola("cig-x", "cig-x@robusto");
+
+    expect(collection.getItemState("cig-x@robusto").owned).toBe(true);
+    expect(collection.getItemState("cig-x").owned).toBe(false);
+    // ocjena s linije se ne gubi
+    expect(collection.getItemState("cig-x").rating).toBe(8);
+  });
+
   it("kupljeno s liste želja skida zvjezdicu", async () => {
     const { claimOwnedForStock, collection, humidor } = await load();
     const box = humidor.addHumidor("A");

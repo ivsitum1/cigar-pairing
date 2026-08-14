@@ -36,3 +36,18 @@ export function claimOwnedForStock(itemId: string): boolean {
   updateItem(itemId, { owned: true, wishlist: false });
   return true;
 }
+
+/**
+ * Neraspoređena stavka („kupio sam, još nije u kutiji") složena je u humidor
+ * pod konkretnom vitolom — oznaka seli s golog ključa linije na tu vitolu.
+ *
+ * Bez toga bi goli ključ zauvijek ostao na popisu „Imam (još nije u humidoru)":
+ * zaliha te linije jest veća od nule, ali stoji na drugom ključu, pa ga ni
+ * `releaseOwnedIfEmpty` ne bi ugasio. Ocjena i bilješka s linije ostaju.
+ */
+export function transferOwnedToVitola(fromItemId: string, toItemId: string) {
+  claimOwnedForStock(toItemId);
+  if (fromItemId === toItemId) return;
+  if (!getItemState(fromItemId).owned) return;
+  updateItem(fromItemId, { owned: false });
+}

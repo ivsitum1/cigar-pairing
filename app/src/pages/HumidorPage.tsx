@@ -33,7 +33,11 @@ import {
   vitolasNotInStock,
 } from "../lib/humidorVitola";
 import { uniqueVitolas } from "../lib/cigarVitola";
-import { claimOwnedForStock, releaseOwnedIfEmpty } from "../lib/stockOwnership";
+import {
+  claimOwnedForStock,
+  releaseOwnedIfEmpty,
+  transferOwnedToVitola,
+} from "../lib/stockOwnership";
 import {
   MONTH_NAMES_EN,
   MONTH_NAMES_HR,
@@ -310,7 +314,9 @@ function QuickAdd({ humidorId }: { humidorId: string }) {
   const collection = useCollection();
   const { stock } = useHumidors();
   const [open, setOpen] = useState(true);
-  const [pick, setPick] = useState<Cigar | null>(null);
+  // {cigar, sourceId}: sourceId je ključ iz kolekcije (najčešće goli id linije
+  // s računa), pa oznaka „Imam” može preseliti na vitolu koja ide u kutiju
+  const [pick, setPick] = useState<{ cigar: Cigar; sourceId: string } | null>(null);
 
   const owned = useMemo(() => {
     const mine = stock.filter((s) => s.humidorId === humidorId);
@@ -384,10 +390,11 @@ function QuickAdd({ humidorId }: { humidorId: string }) {
                   type="button"
                   onClick={() => {
                     if (needsVitola) {
-                      setPick(cigar);
+                      setPick({ cigar, sourceId: id });
                       return;
                     }
                     adjustStock(humidorId, id, 1);
+                    claimOwnedForStock(id);
                   }}
                   className="flex w-full items-center justify-between gap-3 rounded-lg border border-dim/15 bg-cedar px-3 py-2 text-left hover:border-zlato/40"
                 >
@@ -416,11 +423,12 @@ function QuickAdd({ humidorId }: { humidorId: string }) {
 
       {pick && (
         <VitolaPicker
-          cigar={pick}
+          cigar={pick.cigar}
           onPick={(vitola) => {
-            const target = vitolaStockId(pick, vitola);
+            const target = vitolaStockId(pick.cigar, vitola);
             adjustStock(humidorId, target, 1);
-            claimOwnedForStock(target);
+            // stavka s računa („imam liniju”) sada je konkretna vitola u kutiji
+            transferOwnedToVitola(pick.sourceId, target);
             setPick(null);
           }}
           onBack={() => setPick(null)}

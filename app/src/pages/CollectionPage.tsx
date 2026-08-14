@@ -42,7 +42,7 @@ import {
 } from "../store/collection";
 import { navigate, useRoute, type CollectionView } from "../store/route";
 import { HumidorPage, JournalCalendar } from "./HumidorPage";
-import { exportHumidors, importHumidors, totalStock } from "../store/humidor";
+import { exportHumidors, importHumidors, stockForItemKey } from "../store/humidor";
 import { exportFavorites, importFavorites } from "../store/favorites";
 import { OcrScan } from "../components/OcrScan";
 import { useMarket } from "../store/market";
@@ -235,7 +235,7 @@ export function CollectionPage({
 
   // Tab Kolekcija: Imam bez stocka + shortlist (tried); wishlist živi u Kupovini
   const ownedNoStockIds = dedupeCollectionCigarIds(
-    ownedWithoutStockIds(data.items, totalStock).filter(
+    ownedWithoutStockIds(data.items, stockForItemKey).filter(
       (id) => cigarForItemId(id) != null,
     ),
   );
