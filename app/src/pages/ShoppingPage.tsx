@@ -26,15 +26,17 @@ import {
   parseCigarItemId,
 } from "../lib/cigarItemId";
 import { drinkNameLoc } from "../lib/drinkName";
-import { vitolaFamily, vitolaFamilyLabel, type VitolaFamily } from "../lib/vitolaFamily";
+import { cigarShapes, type ShapeFamily } from "../lib/vitolaShape";
 import {
   EMPTY_BUY_FILTERS,
   type BuyFilterable,
   buyTotal,
-  familyCounts,
+  countryCounts,
   filterBuyEntries,
   hasActiveBuyFilters,
+  shapeCounts,
   sortBuyEntries,
+  strengthCounts,
   type BuyFilters,
   type BuySort,
 } from "../lib/shoppingFilters";
@@ -77,7 +79,7 @@ export function ShoppingPage({
 }: {
   onPair?: (target: { kind: "cigar"; item: Cigar } | { kind: "drink"; item: Drink }) => void;
 }) {
-  const { t, lx, lang } = useI18n();
+  const { t, lx, cn } = useI18n();
   const market = useMarket();
   const collection = useCollection(); // re-render na promjene kolekcije/liste zelja
   const { stock: humidors } = useHumidors(); // zaliha odlucuje sto je „dopuna"
@@ -125,7 +127,9 @@ export function ShoppingPage({
       if (!cigar) return [];
       const { cigarId, vitolaSlug } = parseCigarItemId(key);
       const stock = vitolaSlug ? totalStock(key) : lineTotalStock(cigarId);
-      const vitola = cigar.selectedVitola ?? cigar.vitola;
+      // isti razvrstavač oblika kao Katalog; linija bez odabrane vitole nema
+      // jedan format, pa na filter oblika ne ulazi
+      const shapes = cigarShapes(cigar);
       return [
         {
           kind: "cigar",
@@ -135,7 +139,9 @@ export function ShoppingPage({
           price: cigar.priceEUR,
           shopKey: wishlistShopKey(cigar.availabilityHR?.[0], otherShopsLabel),
           shopRaw: cigar.availabilityHR?.[0],
-          family: vitolaFamily(vitola),
+          shape: shapes.size === 1 ? [...shapes][0] : null,
+          strength: cigar.strength,
+          country: cigar.country,
           restock: isRestockItem(getItemState(key), stock),
         },
       ];
@@ -151,7 +157,9 @@ export function ShoppingPage({
       price: d.priceEUR?.min ?? null,
       shopKey: wishlistShopKey(d.shopHR, otherShopsLabel),
       shopRaw: d.shopHR,
-      family: null,
+      shape: null,
+      strength: null,
+      country: null,
       restock: isRestockItem(getItemState(d.id), totalStock(d.id)),
     }));
 
@@ -165,7 +173,9 @@ export function ShoppingPage({
     buyEntries.map((e) => ({ shop: e.shopKey, price: e.price })),
     otherShopsLabel,
   );
-  const vitolaFamilies = familyCounts(buyEntries);
+  const shapes = shapeCounts(buyEntries);
+  const strengths = strengthCounts(buyEntries);
+  const countries = countryCounts(buyEntries);
   const hasCigars = buyEntries.some((e) => e.kind === "cigar");
   const hasDrinks = buyEntries.some((e) => e.kind === "drink");
 
@@ -204,8 +214,12 @@ export function ShoppingPage({
 
   const toggleShop = (shop: string) =>
     setFilters((f) => ({ ...f, shop: f.shop === shop ? null : shop }));
-  const toggleFamily = (family: VitolaFamily) =>
-    setFilters((f) => ({ ...f, family: f.family === family ? null : family }));
+  const toggleShape = (shape: ShapeFamily) =>
+    setFilters((f) => ({ ...f, shape: f.shape === shape ? null : shape }));
+  const toggleStrength = (strength: number) =>
+    setFilters((f) => ({ ...f, strength: f.strength === strength ? null : strength }));
+  const toggleCountry = (country: string) =>
+    setFilters((f) => ({ ...f, country: f.country === country ? null : country }));
 
   const shareWishlist = async () => {
     const shareItems = (list: BuyEntry[]) =>
@@ -325,8 +339,10 @@ export function ShoppingPage({
                     setFilters((f) => ({
                       ...f,
                       kind: f.kind === "drink" ? "all" : "drink",
-                      // vitola je pitanje o cigarama — uz pića nema smisla
-                      family: f.kind === "drink" ? f.family : null,
+                      // format / jačina / zemlja su pitanja o cigarama
+                      shape: f.kind === "drink" ? f.shape : null,
+                      strength: f.kind === "drink" ? f.strength : null,
+                      country: f.kind === "drink" ? f.country : null,
                     }))
                   }
                 >
@@ -352,18 +368,52 @@ export function ShoppingPage({
               </div>
             )}
 
-            {vitolaFamilies.length > 1 && filters.kind !== "drink" && (
+            {filters.kind !== "drink" && shapes.length > 1 && (
               <div className="flex flex-wrap gap-1.5">
                 <span className="self-center text-micro uppercase tracking-widest text-dim">
-                  {t("shop.filterVitola")}
+                  {t("filter.shape")}
                 </span>
-                {vitolaFamilies.map((g) => (
+                {shapes.map((g) => (
                   <Chip
-                    key={g.family}
-                    active={filters.family === g.family}
-                    onClick={() => toggleFamily(g.family)}
+                    key={g.value}
+                    active={filters.shape === g.value}
+                    onClick={() => toggleShape(g.value)}
                   >
-                    {vitolaFamilyLabel(g.family, lang)}: {g.count}×
+                    {t(`shape.${g.value}` as StringKey)}: {g.count}×
+                  </Chip>
+                ))}
+              </div>
+            )}
+
+            {filters.kind !== "drink" && strengths.length > 1 && (
+              <div className="flex flex-wrap gap-1.5">
+                <span className="self-center text-micro uppercase tracking-widest text-dim">
+                  {t("filter.strength")}
+                </span>
+                {strengths.map((g) => (
+                  <Chip
+                    key={g.value}
+                    active={filters.strength === g.value}
+                    onClick={() => toggleStrength(g.value)}
+                  >
+                    {g.value}: {g.count}×
+                  </Chip>
+                ))}
+              </div>
+            )}
+
+            {filters.kind !== "drink" && countries.length > 1 && (
+              <div className="flex flex-wrap gap-1.5">
+                <span className="self-center text-micro uppercase tracking-widest text-dim">
+                  {t("filter.country")}
+                </span>
+                {countries.map((g) => (
+                  <Chip
+                    key={g.value}
+                    active={filters.country === g.value}
+                    onClick={() => toggleCountry(g.value)}
+                  >
+                    {cn(g.value)}: {g.count}×
                   </Chip>
                 ))}
               </div>

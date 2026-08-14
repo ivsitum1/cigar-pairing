@@ -78,7 +78,6 @@ function croatianStrings(): { where: string; text: string }[] {
     "lib/geo.ts",
     "lib/shareCard.ts",
     "lib/shoppingPicks.ts",
-    "lib/vitolaFamily.ts",
     "lib/vitolaInfo.ts",
   ];
   // `hr: "…"` i `labelHr: "…"` — oba se prikazuju korisniku

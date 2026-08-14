@@ -2,11 +2,13 @@ import { describe, expect, it } from "vitest";
 import {
   EMPTY_BUY_FILTERS,
   buyTotal,
-  familyCounts,
+  countryCounts,
   filterBuyEntries,
   hasActiveBuyFilters,
   matchesBuyFilters,
+  shapeCounts,
   sortBuyEntries,
+  strengthCounts,
   type BuyFilterable,
 } from "./shoppingFilters";
 
@@ -14,21 +16,25 @@ const cigar = (
   name: string,
   price: number | null,
   shopKey: string,
-  family: BuyFilterable["family"],
-): BuyFilterable => ({ kind: "cigar", name, price, shopKey, family });
+  shape: BuyFilterable["shape"],
+  strength = 3,
+  country = "Nikaragva",
+): BuyFilterable => ({ kind: "cigar", name, price, shopKey, shape, strength, country });
 
 const drink = (name: string, price: number | null, shopKey: string): BuyFilterable => ({
   kind: "drink",
   name,
   price,
   shopKey,
-  family: null,
+  shape: null,
+  strength: null,
+  country: null,
 });
 
 const LIST: BuyFilterable[] = [
-  cigar("Oliva Serie V", 12, "humidor.hr", "robusto"),
-  cigar("Don Tomas", 8, "ostalo", "toro"),
-  cigar("Partagas", null, "humidor.hr", "robusto"),
+  cigar("Oliva Serie V", 12, "humidor.hr", "robusto", 4, "Nikaragva"),
+  cigar("Don Tomas", 8, "ostalo", "toro", 2, "Honduras"),
+  cigar("Partagas", null, "humidor.hr", "robusto", 4, "Kuba"),
   drink("Diplomatico", 35, "vivat.hr"),
   drink("Zacapa", 45, "humidor.hr"),
 ];
@@ -50,27 +56,44 @@ describe("filtriranje popisa za kupnju", () => {
     expect(hits.map((e) => e.name)).toEqual(["Oliva Serie V", "Partagas", "Zacapa"]);
   });
 
-  it("filtrira po vrsti vitole; pića na tom filteru ispadaju", () => {
-    const hits = filterBuyEntries(LIST, { ...EMPTY_BUY_FILTERS, family: "robusto" });
+  it("filtrira po obliku; pića na tom filteru ispadaju", () => {
+    const hits = filterBuyEntries(LIST, { ...EMPTY_BUY_FILTERS, shape: "robusto" });
     expect(hits.map((e) => e.name)).toEqual(["Oliva Serie V", "Partagas"]);
+  });
+
+  it("filtrira po jačini i zemlji", () => {
+    expect(
+      filterBuyEntries(LIST, { ...EMPTY_BUY_FILTERS, strength: 4 }).map((e) => e.name),
+    ).toEqual(["Oliva Serie V", "Partagas"]);
+    expect(
+      filterBuyEntries(LIST, { ...EMPTY_BUY_FILTERS, country: "Kuba" }).map((e) => e.name),
+    ).toEqual(["Partagas"]);
   });
 
   it("filteri se zbrajaju", () => {
     const hits = filterBuyEntries(LIST, {
       kind: "cigar",
       shop: "humidor.hr",
-      family: "robusto",
+      shape: "robusto",
+      strength: 4,
+      country: "Kuba",
     });
-    expect(hits.map((e) => e.name)).toEqual(["Oliva Serie V", "Partagas"]);
+    expect(hits.map((e) => e.name)).toEqual(["Partagas"]);
     expect(
-      matchesBuyFilters(LIST[1], { kind: "cigar", shop: "humidor.hr", family: "robusto" }),
+      matchesBuyFilters(LIST[0], {
+        ...EMPTY_BUY_FILTERS,
+        shape: "robusto",
+        country: "Kuba",
+      }),
     ).toBe(false);
   });
 
   it("prepoznaje da je filter aktivan", () => {
     expect(hasActiveBuyFilters({ ...EMPTY_BUY_FILTERS, shop: "humidor.hr" })).toBe(true);
     expect(hasActiveBuyFilters({ ...EMPTY_BUY_FILTERS, kind: "drink" })).toBe(true);
-    expect(hasActiveBuyFilters({ ...EMPTY_BUY_FILTERS, family: "toro" })).toBe(true);
+    expect(hasActiveBuyFilters({ ...EMPTY_BUY_FILTERS, shape: "toro" })).toBe(true);
+    expect(hasActiveBuyFilters({ ...EMPTY_BUY_FILTERS, strength: 1 })).toBe(true);
+    expect(hasActiveBuyFilters({ ...EMPTY_BUY_FILTERS, country: "Kuba" })).toBe(true);
   });
 });
 
@@ -113,11 +136,32 @@ describe("sortiranje popisa za kupnju", () => {
 });
 
 describe("brojevi uz filtere", () => {
-  it("vrste vitola idu od kratkih prema dugima, samo one prisutne", () => {
-    expect(familyCounts(LIST)).toEqual([
-      { family: "robusto", count: 2 },
-      { family: "toro", count: 1 },
+  it("oblici idu redoslijedom Kataloga, samo oni prisutni", () => {
+    expect(shapeCounts(LIST)).toEqual([
+      { value: "robusto", count: 2 },
+      { value: "toro", count: 1 },
     ]);
+  });
+
+  it("jačine idu od najblaže prema najjačoj", () => {
+    expect(strengthCounts(LIST)).toEqual([
+      { value: 2, count: 1 },
+      { value: 4, count: 2 },
+    ]);
+  });
+
+  it("zemlje idu po brojnosti", () => {
+    expect(countryCounts(LIST)).toEqual([
+      { value: "Honduras", count: 1 },
+      { value: "Kuba", count: 1 },
+      { value: "Nikaragva", count: 1 },
+    ]);
+  });
+
+  it("pića ne ulaze u brojeve cigarskih filtera", () => {
+    expect(shapeCounts([drink("Zacapa", 45, "humidor.hr")])).toEqual([]);
+    expect(strengthCounts([drink("Zacapa", 45, "humidor.hr")])).toEqual([]);
+    expect(countryCounts([drink("Zacapa", 45, "humidor.hr")])).toEqual([]);
   });
 
   it("ukupno preskače stavke bez cijene", () => {
