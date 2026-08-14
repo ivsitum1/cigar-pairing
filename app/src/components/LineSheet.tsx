@@ -10,7 +10,9 @@ import { uniqueVitolas } from "../lib/cigarVitola";
 import { formatEur, vitolaPriceForMarket } from "../lib/cigarPrice";
 import { vitolaBlurb } from "../lib/vitolaInfo";
 import { cigarDescription } from "../lib/cigarNote";
+import { vitolaStockId } from "../lib/humidorVitola";
 import { useMarket } from "../store/market";
+import { totalStock, useHumidors } from "../store/humidor";
 
 function dimLabel(v: Vitola): string {
   if (v.ring != null && v.lengthMM != null) return `${v.ring} × ${v.lengthMM} mm`;
@@ -31,6 +33,7 @@ export function LineSheet({
 }) {
   const { t, cn, lang } = useI18n();
   const market = useMarket();
+  useHumidors();
   const description = cigarDescription(raw, lang);
   const cigar = resolveCigarId(raw.id) ?? raw;
   const info = brandInfo(cigar.brand);
@@ -100,6 +103,8 @@ export function LineSheet({
             // isti razrješivač kao popis i kartica — ranije je ovdje stajalo
             // "provjeri cijenu" za vitolu čiju je cijenu kartica pokazivala
             const { price, url, approx, region } = vitolaPriceForMarket(v, market);
+            // koliko ih te veličine stoji u humidorima — zaliha ide po vitoli
+            const stock = totalStock(vitolaStockId(cigar, v));
             return (
               <button
                 key={v.name}
@@ -108,7 +113,17 @@ export function LineSheet({
                 className="flex w-full items-start justify-between gap-3 rounded-lg border border-dim/15 bg-cedar px-3 py-2.5 text-left hover:border-zlato/40"
               >
                 <div className="min-w-0">
-                  <div className="truncate font-display text-sm text-papir">{v.name}</div>
+                  <div className="truncate font-display text-sm text-papir">
+                    {v.name}
+                    {stock > 0 && (
+                      <span
+                        className="ml-1.5 rounded-full border border-zlato/40 px-1.5 py-0.5 align-middle text-micro text-zlato-2"
+                        title={t("hum.inHumidor")}
+                      >
+                        ⌂ {stock}
+                      </span>
+                    )}
+                  </div>
                   <div className="mt-0.5 truncate text-xs text-dim">
                     {[shape, dimLabel(v), v.smokeTimeMin != null ? `⏱ ${v.smokeTimeMin}′` : null]
                       .filter(Boolean)

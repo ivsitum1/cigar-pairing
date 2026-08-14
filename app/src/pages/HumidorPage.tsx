@@ -3,18 +3,20 @@
 // Kolekcija odgovara na "poznajem li ovu liniju", humidor na "koliko ih imam
 // večeras". Zato zaliha živi u zasebnoj pohrani i troši se kad zabilježiš večer.
 import { useMemo, useState } from "react";
-import type { Cigar, Drink } from "../types";
+import type { Cigar, Drink, Vitola } from "../types";
 import { ALL_DRINKS, brandDisplayName, cigarForItemId, drinkById } from "../data";
 import { useI18n, type StringKey } from "../i18n";
 import { Chip, SectionTitle } from "../components/ui";
 import { DrinkRow } from "../components/cards";
 import { LastCigarPrompt } from "../components/LastCigarPrompt";
+import { VitolaPicker } from "../components/VitolaPicker";
 import { shouldOfferWishlist } from "../lib/lastCigar";
 import { drinkNameLoc } from "../lib/drinkName";
 import { removeJournalEntry, updateJournalEntry, useCollection, type JournalEntry } from "../store/collection";
 import {
   addHumidor,
   adjustStock,
+  moveStock,
   removeHumidor,
   renameHumidor,
   setActiveHumidor,
@@ -22,7 +24,15 @@ import {
   useHumidors,
 } from "../store/humidor";
 import { useMarket } from "../store/market";
-import { dedupeCollectionCigarIds } from "../lib/cigarItemId";
+import { dedupeCollectionCigarIds, parseCigarItemId } from "../lib/cigarItemId";
+import {
+  groupStockByLine,
+  stockNeedsVitola,
+  stockVitolaName,
+  vitolaStockId,
+  vitolasNotInStock,
+} from "../lib/humidorVitola";
+import { uniqueVitolas } from "../lib/cigarVitola";
 import {
   MONTH_NAMES_EN,
   MONTH_NAMES_HR,
@@ -43,6 +53,7 @@ export function HumidorPage({
   onOpenDrink?: (drink: Drink) => void;
 }) {
   const { t } = useI18n();
+  const market = useMarket();
   const data = useHumidors();
   const collection = useCollection();
   const [newName, setNewName] = useState("");
@@ -50,6 +61,8 @@ export function HumidorPage({
   const [renameValue, setRenameValue] = useState("");
   // zadnja skinuta cigara — ponuda za listu želja
   const [lastCigarId, setLastCigarId] = useState<string | null>(null);
+  // izbor vitole: dodavanje nove veličine ili određivanje stare zalihe po liniji
+  const [pick, setPick] = useState<{ line: Cigar; fromItemId?: string } | null>(null);
 
   const ownedBottles = useMemo(() => {
     return ALL_DRINKS.filter((d) => collection.items[d.id]?.owned);
@@ -58,19 +71,51 @@ export function HumidorPage({
   const active =
     data.humidors.find((h) => h.id === data.activeId) ?? data.humidors[0] ?? null;
 
-  const rows = useMemo(() => {
+  /**
+   * Zaliha ide po vitoli: jedna kartica po liniji, unutar nje red za svaku
+   * veličinu (3 Robusta, 2 Figurada, 1 Toro). Stara zaliha vođena po liniji
+   * ostaje vidljiva kao red bez određene vitole, s gumbom koji je razrješava.
+   */
+  const groups = useMemo(() => {
     if (!active) return [];
-    return data.stock
-      .filter((s) => s.humidorId === active.id)
-      .map((s) => ({ ...s, cigar: cigarForItemId(s.itemId) }))
-      .sort((a, b) => {
-        const an = a.cigar ? `${a.cigar.brand} ${a.cigar.line}` : a.itemId;
-        const bn = b.cigar ? `${b.cigar.brand} ${b.cigar.line}` : b.itemId;
-        return an.localeCompare(bn);
-      });
-  }, [data.stock, active]);
+    const mine = data.stock.filter((s) => s.humidorId === active.id);
+    return groupStockByLine(mine)
+      .map((group) => {
+        const line = cigarForItemId(group.cigarId);
+        const title = line
+          ? `${brandDisplayName(line.brand, market)} ${line.line}`
+          : group.cigarId;
+        const rows = group.entries
+          .map((s) => ({
+            itemId: s.itemId,
+            count: s.count,
+            cigar: cigarForItemId(s.itemId),
+            vitola: stockVitolaName(line, s.itemId),
+            needsVitola: stockNeedsVitola(line, s.itemId),
+          }))
+          .sort((a, b) => (a.vitola ?? "").localeCompare(b.vitola ?? ""));
+        const addable = line ? vitolasNotInStock(line, group.entries.map((s) => s.itemId)) : [];
+        return {
+          ...group,
+          line,
+          title,
+          rows,
+          // linija s jednim formatom nema što birati
+          addableVitolas: line && uniqueVitolas(line).length > 1 ? addable : [],
+        };
+      })
+      .sort((a, b) => a.title.localeCompare(b.title));
+  }, [data.stock, active, market]);
 
-  const totalPieces = rows.reduce((sum, r) => sum + r.count, 0);
+  const totalPieces = groups.reduce((sum, g) => sum + g.total, 0);
+
+  const applyPick = (vitola: Vitola) => {
+    if (!pick || !active) return;
+    const target = vitolaStockId(pick.line, vitola);
+    if (pick.fromItemId) moveStock(active.id, pick.fromItemId, target);
+    else adjustStock(active.id, target, 1);
+    setPick(null);
+  };
 
   const create = () => {
     addHumidor(newName || t("hum.defaultName"));
@@ -175,25 +220,28 @@ export function HumidorPage({
           )}
 
           <SectionTitle>{t("hum.stock")}</SectionTitle>
-          {rows.length === 0 ? (
+          {groups.length === 0 ? (
             <p className="text-sm leading-relaxed text-dim">{t("hum.stockEmpty")}</p>
           ) : (
             <div className="space-y-2">
-              {rows.map((row) => (
-                <StockRow
-                  key={row.itemId}
-                  cigar={row.cigar}
-                  fallbackId={row.itemId}
-                  count={row.count}
-                  onAdjust={(d) => {
-                    adjustStock(active.id, row.itemId, d);
+              {groups.map((group) => (
+                <LineStockCard
+                  key={group.cigarId}
+                  title={group.title}
+                  total={group.total}
+                  rows={group.rows}
+                  canAddVitola={group.addableVitolas.length > 0}
+                  onAddVitola={() => group.line && setPick({ line: group.line })}
+                  onSetVitola={(itemId) =>
+                    group.line && setPick({ line: group.line, fromItemId: itemId })
+                  }
+                  onAdjust={(itemId, d) => {
+                    adjustStock(active.id, itemId, d);
                     // ručno skidanje je isto trošenje: zadnja cigara nudi listu želja
-                    if (d < 0 && shouldOfferWishlist(row.itemId)) {
-                      setLastCigarId(row.itemId);
-                    }
+                    if (d < 0 && shouldOfferWishlist(itemId)) setLastCigarId(itemId);
                   }}
-                  onClear={() => setStock(active.id, row.itemId, 0)}
-                  onOpen={row.cigar && onOpenCigar ? () => onOpenCigar(row.cigar!) : undefined}
+                  onClear={(itemId) => setStock(active.id, itemId, 0)}
+                  onOpen={onOpenCigar}
                 />
               ))}
             </div>
@@ -221,6 +269,14 @@ export function HumidorPage({
       {lastCigarId && (
         <LastCigarPrompt itemId={lastCigarId} onDone={() => setLastCigarId(null)} />
       )}
+
+      {pick && (
+        <VitolaPicker
+          cigar={pick.line}
+          onPick={applyPick}
+          onBack={() => setPick(null)}
+        />
+      )}
     </div>
   );
 }
@@ -229,6 +285,10 @@ export function HumidorPage({
  * Brzi unos: sve što je u kolekciji označeno s „Imam”, a još nije u ovom
  * humidoru. Dodir dodaje jedan komad i stavka nestaje s popisa — punjenje
  * humidora tako ide bez otvaranja kataloga za svaku cigaru.
+ *
+ * Linija s više formata nema jedan „komad”: dodir otvara izbor vitole i u
+ * humidor ide ključ te vitole. Bez toga bi zaliha opet sjela na goli ključ
+ * linije, a svaka bi vitola pokazivala stanje 0.
  */
 function QuickAdd({ humidorId }: { humidorId: string }) {
   const { t, cn } = useI18n();
@@ -236,10 +296,13 @@ function QuickAdd({ humidorId }: { humidorId: string }) {
   const collection = useCollection();
   const { stock } = useHumidors();
   const [open, setOpen] = useState(true);
+  const [pick, setPick] = useState<Cigar | null>(null);
 
   const owned = useMemo(() => {
-    const inHumidor = new Set(
-      stock.filter((s) => s.humidorId === humidorId).map((s) => s.itemId),
+    const mine = stock.filter((s) => s.humidorId === humidorId);
+    const inHumidor = new Set(mine.map((s) => s.itemId));
+    const linesInHumidor = new Set(
+      mine.map((s) => parseCigarItemId(s.itemId).cigarId),
     );
     const ids = Object.entries(collection.items)
       .filter(([id, state]) => state.owned && !inHumidor.has(id))
@@ -248,6 +311,13 @@ function QuickAdd({ humidorId }: { humidorId: string }) {
       .map((id) => ({ id, cigar: cigarForItemId(id) }))
       // pića su isto u `items` — u humidor idu samo cigare
       .filter((row): row is { id: string; cigar: Cigar } => row.cigar != null)
+      .map((row) => ({ ...row, needsVitola: stockNeedsVitola(row.cigar, row.id) }))
+      // liniju koja je već u humidoru ne nudimo dvaput: nove veličine se
+      // dodaju gumbom „Dodaj vitolu” na njezinoj kartici
+      .filter(
+        (row) =>
+          !row.needsVitola || !linesInHumidor.has(parseCigarItemId(row.id).cigarId),
+      )
       .sort((a, b) =>
         `${a.cigar.brand} ${a.cigar.line}`.localeCompare(
           `${b.cigar.brand} ${b.cigar.line}`,
@@ -277,10 +347,13 @@ function QuickAdd({ humidorId }: { humidorId: string }) {
               <Chip onClick={() => setOpen((v) => !v)}>
                 {open ? t("hum.quickAddHide") : `${t("hum.quickAddShow")} (${owned.length})`}
               </Chip>
-              {open && (
+              {open && owned.some((row) => !row.needsVitola) && (
                 <Chip
                   onClick={() => {
-                    for (const row of owned) adjustStock(humidorId, row.id, 1);
+                    // vitolu ne pogađamo — linije s više formata ostaju na popisu
+                    for (const row of owned) {
+                      if (!row.needsVitola) adjustStock(humidorId, row.id, 1);
+                    }
                   }}
                 >
                   + {t("hum.quickAddAll")}
@@ -291,11 +364,13 @@ function QuickAdd({ humidorId }: { humidorId: string }) {
 
           {open && (
             <div className="mt-2 space-y-1.5">
-              {owned.map(({ id, cigar }) => (
+              {owned.map(({ id, cigar, needsVitola }) => (
                 <button
                   key={id}
                   type="button"
-                  onClick={() => adjustStock(humidorId, id, 1)}
+                  onClick={() =>
+                    needsVitola ? setPick(cigar) : adjustStock(humidorId, id, 1)
+                  }
                   className="flex w-full items-center justify-between gap-3 rounded-lg border border-dim/15 bg-cedar px-3 py-2 text-left hover:border-zlato/40"
                 >
                   <span className="min-w-0">
@@ -303,7 +378,9 @@ function QuickAdd({ humidorId }: { humidorId: string }) {
                       {brandDisplayName(cigar.brand, market)} {cigar.line}
                     </span>
                     <span className="block truncate text-micro text-dim">
-                      {cigar.selectedVitola ?? cigar.vitola} · {cn(cigar.country)}
+                      {needsVitola
+                        ? t("hum.pickVitolaToAdd")
+                        : `${cigar.selectedVitola ?? cigar.vitola} · ${cn(cigar.country)}`}
                     </span>
                   </span>
                   <span
@@ -318,76 +395,157 @@ function QuickAdd({ humidorId }: { humidorId: string }) {
           )}
         </>
       )}
+
+      {pick && (
+        <VitolaPicker
+          cigar={pick}
+          onPick={(vitola) => {
+            adjustStock(humidorId, vitolaStockId(pick, vitola), 1);
+            setPick(null);
+          }}
+          onBack={() => setPick(null)}
+        />
+      )}
     </>
   );
 }
 
-function StockRow({
-  cigar,
-  fallbackId,
-  count,
+interface VitolaStockRow {
+  itemId: string;
+  count: number;
+  cigar: Cigar | undefined;
+  /** null = zaliha još nema određenu vitolu (stari zapis po liniji). */
+  vitola: string | null;
+  needsVitola: boolean;
+}
+
+/**
+ * Jedna linija u humidoru: naslov s ukupnim brojem, pa red po vitoli. Brojevi
+ * se vode po vitoli jer po vitoli idu i kolekcija, dnevnik i kartica cigare —
+ * inače „u humidoru 6” i „stanje 0” na Robustu govore o dva različita ključa.
+ */
+function LineStockCard({
+  title,
+  total,
+  rows,
+  canAddVitola,
+  onAddVitola,
+  onSetVitola,
   onAdjust,
   onClear,
   onOpen,
 }: {
-  cigar: Cigar | undefined;
-  fallbackId: string;
-  count: number;
-  onAdjust: (delta: number) => void;
-  onClear: () => void;
-  onOpen?: () => void;
+  title: string;
+  total: number;
+  rows: VitolaStockRow[];
+  canAddVitola: boolean;
+  onAddVitola: () => void;
+  onSetVitola: (itemId: string) => void;
+  onAdjust: (itemId: string, delta: number) => void;
+  onClear: (itemId: string) => void;
+  onOpen?: (cigar: Cigar) => void;
 }) {
   const { t, cn } = useI18n();
-  const market = useMarket();
-  const title = cigar
-    ? `${brandDisplayName(cigar.brand, market)} ${cigar.line}`
-    : fallbackId;
+  const first = rows.find((r) => r.cigar)?.cigar;
 
   return (
     <div className="rounded-xl border border-dim/15 bg-cedar p-3">
-      <div className="flex items-start justify-between gap-3">
-        <button
-          type="button"
-          onClick={onOpen}
-          disabled={!onOpen}
-          className="min-w-0 flex-1 text-left disabled:cursor-default"
-        >
+      <div className="flex items-baseline justify-between gap-3">
+        <div className="min-w-0">
           <div className="truncate font-display text-base text-papir">{title}</div>
-          {cigar && (
+          {first && (
             <div className="mt-0.5 truncate text-xs text-dim">
-              {cigar.selectedVitola ?? cigar.vitola} · {cigar.wrapper} · {cn(cigar.country)}
+              {first.wrapper} · {cn(first.country)}
             </div>
           )}
-        </button>
-        <div className="flex shrink-0 items-center gap-2">
-          <button
-            type="button"
-            aria-label="−1"
-            onClick={() => onAdjust(-1)}
-            className="h-8 w-8 rounded-lg border border-dim/30 font-display text-base text-dim hover:border-zlato/50 hover:text-papir"
-          >
-            −
-          </button>
-          <span className="min-w-[2ch] text-center font-display text-lg text-zlato-2">
-            {count}
-          </span>
-          <button
-            type="button"
-            aria-label="+1"
-            onClick={() => onAdjust(1)}
-            className="h-8 w-8 rounded-lg border border-dim/30 font-display text-base text-dim hover:border-zlato/50 hover:text-papir"
-          >
-            +
-          </button>
         </div>
+        <span className="shrink-0 text-xs text-dim">
+          {total} {t("hum.cigarsCount")}
+        </span>
       </div>
-      <button
-        type="button"
-        onClick={onClear}
-        className="mt-2 text-xs text-oxblood/80 hover:text-oxblood"
-      >
-        {t("coll.delete")}
-      </button>
+
+      <div className="mt-2 space-y-1.5">
+        {rows.map((row) => (
+          <div
+            key={row.itemId}
+            className="rounded-lg border border-dim/15 bg-humidor/40 px-2.5 py-2"
+          >
+            <div className="flex items-center justify-between gap-3">
+              <button
+                type="button"
+                onClick={row.cigar && onOpen ? () => onOpen(row.cigar!) : undefined}
+                disabled={!row.cigar || !onOpen}
+                className="min-w-0 flex-1 text-left disabled:cursor-default"
+              >
+                <span className="block truncate text-sm text-papir">
+                  {row.vitola ?? t("hum.vitolaMissing")}
+                </span>
+                {/* dimenzije samo uz određenu vitolu — inače su to mjere
+                    zadanog formata linije, a ovdje se ne zna koji je */}
+                {row.vitola && row.cigar?.format && row.cigar.format !== "—" && (
+                  <span className="block truncate text-micro text-dim">
+                    {row.cigar.format}
+                  </span>
+                )}
+              </button>
+              <div className="flex shrink-0 items-center gap-2">
+                <button
+                  type="button"
+                  aria-label="−1"
+                  onClick={() => onAdjust(row.itemId, -1)}
+                  className="h-8 w-8 rounded-lg border border-dim/30 font-display text-base text-dim hover:border-zlato/50 hover:text-papir"
+                >
+                  −
+                </button>
+                <span className="min-w-[2ch] text-center font-display text-lg text-zlato-2">
+                  {row.count}
+                </span>
+                <button
+                  type="button"
+                  aria-label="+1"
+                  onClick={() => onAdjust(row.itemId, 1)}
+                  className="h-8 w-8 rounded-lg border border-dim/30 font-display text-base text-dim hover:border-zlato/50 hover:text-papir"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+
+            {row.needsVitola && (
+              <div className="mt-1.5 flex flex-wrap items-center gap-2">
+                <span className="min-w-0 flex-1 text-micro leading-snug text-dim">
+                  {t("hum.vitolaMissingHint")}
+                </span>
+                <button
+                  type="button"
+                  onClick={() => onSetVitola(row.itemId)}
+                  className="shrink-0 rounded-md border border-zlato/40 px-2 py-1 text-micro uppercase tracking-widest text-zlato hover:bg-zlato/10"
+                >
+                  {t("hum.setVitola")}
+                </button>
+              </div>
+            )}
+
+            <button
+              type="button"
+              onClick={() => onClear(row.itemId)}
+              className="mt-1.5 text-micro text-oxblood/80 hover:text-oxblood"
+            >
+              {t("coll.delete")}
+            </button>
+          </div>
+        ))}
+      </div>
+
+      {canAddVitola && (
+        <button
+          type="button"
+          onClick={onAddVitola}
+          className="mt-2 rounded-md border border-zlato/40 px-2.5 py-1.5 text-micro uppercase tracking-widest text-zlato hover:bg-zlato/10"
+        >
+          + {t("hum.addVitola")}
+        </button>
+      )}
     </div>
   );
 }

@@ -273,6 +273,35 @@ export function adjustStock(humidorId: string, itemId: string, delta: number) {
   setStock(humidorId, itemId, stockCount(humidorId, itemId) + delta);
 }
 
+/**
+ * Prebaci zalihu s jednog ključa na drugi unutar istog humidora — tako stara
+ * zaliha vođena po liniji („3 komada te linije”) dobiva vitolu, bez ponovnog
+ * unosa. Odredište koje već postoji se zbraja.
+ */
+export function moveStock(
+  humidorId: string,
+  fromItemId: string,
+  toItemId: string,
+  count?: number,
+) {
+  if (fromItemId === toItemId) return;
+  const available = stockCount(humidorId, fromItemId);
+  if (available <= 0) return;
+  const moved = Math.min(available, Math.max(1, Math.floor(count ?? available)));
+  setStock(humidorId, fromItemId, available - moved);
+  setStock(humidorId, toItemId, stockCount(humidorId, toItemId) + moved);
+}
+
+/** Zaliha cijele linije u jednom humidoru — ključ linije + sve njezine vitole. */
+export function lineStock(humidorId: string, cigarId: string): HumidorStock[] {
+  const prefix = cigarId + VITOLA_ID_SEP;
+  return cache.stock.filter(
+    (s) =>
+      s.humidorId === humidorId &&
+      (s.itemId === cigarId || s.itemId.startsWith(prefix)),
+  );
+}
+
 export interface StockHit {
   humidorId: string;
   /** Ključ zalihe koji je stvarno pogođen — ne mora biti traženi ključ. */
@@ -290,15 +319,13 @@ function pickStock(match: (s: HumidorStock) => boolean): HumidorStock | undefine
 /**
  * Zaliha za traženi ključ, uz toleranciju na vitolu.
  *
- * Humidor se puni i po liniji (`cig-x`, Brzi unos iz kolekcije) i po vitoli
- * (`cig-x@churchill`), a zapis večeri traži vitolu kad ih linija ima više.
- * Bez tolerancije taj nesklad znači „nema te cigare u humidoru”: zaliha ostane
- * netaknuta i nikad se ne dođe do nule. Zato:
+ * Humidor se puni po vitoli (`cig-x@churchill`), ali stare kutije znaju imati
+ * zalihu na golom ključu linije (`cig-x`). Zato:
  *  1. točan ključ,
- *  2. goli ključ linije (zaliha bez formata pokriva svaku vitolu),
- *  3. jedini preostali ključ te linije — nema se s čim zamijeniti.
- * Više različitih vitola u zalihi ostavljamo na miru: ne pogađamo koju je
- * korisnik popušio.
+ *  2. goli ključ linije — zaliha bez formata pokriva svaku vitolu,
+ *  3. zapis BEZ vitole skida jedini format te linije koji je na stanju.
+ * Vitola se nikad ne mijenja drugom vitolom: popušeni Robusto ne smije skinuti
+ * Toro s police, pa makar Toro bio jedino što je ostalo od te linije.
  */
 function findStockHit(itemId: string): StockHit | null {
   const exact = pickStock((s) => s.itemId === itemId);
@@ -307,7 +334,7 @@ function findStockHit(itemId: string): StockHit | null {
   const { cigarId, vitolaSlug } = parseCigarItemId(itemId);
   if (vitolaSlug) {
     const line = pickStock((s) => s.itemId === cigarId);
-    if (line) return { humidorId: line.humidorId, itemId: line.itemId };
+    return line ? { humidorId: line.humidorId, itemId: line.itemId } : null;
   }
 
   const prefix = cigarId + VITOLA_ID_SEP;

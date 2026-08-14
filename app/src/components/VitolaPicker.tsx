@@ -4,7 +4,9 @@ import { useI18n } from "../i18n";
 import { uniqueVitolas } from "../lib/cigarVitola";
 import { formatEur, vitolaPriceForMarket } from "../lib/cigarPrice";
 import { vitolaBlurb } from "../lib/vitolaInfo";
+import { vitolaStockId } from "../lib/humidorVitola";
 import { useMarket } from "../store/market";
+import { totalStock, useHumidors } from "../store/humidor";
 
 // Modal: linija ima više formata -> odaberi vitolu.
 // Overlay (ne inline) da se uvijek otvori odmah, i kod dugih popisa.
@@ -19,6 +21,7 @@ export function VitolaPicker({
 }) {
   const { t, lang } = useI18n();
   const market = useMarket();
+  useHumidors();
   const vitolas = uniqueVitolas(cigar);
 
   return (
@@ -47,6 +50,8 @@ export function VitolaPicker({
           {vitolas.map((v) => {
             const blurb = vitolaBlurb(v.name, lang);
             const { price, approx } = vitolaPriceForMarket(v, market);
+            // zaliha baš te vitole — vidi se odmah pri izboru, ne tek poslije
+            const stock = totalStock(vitolaStockId(cigar, v));
             return (
               <button
                 key={v.name}
@@ -55,7 +60,17 @@ export function VitolaPicker({
                 className="w-full rounded-lg border border-dim/15 bg-cedar px-3 py-2.5 text-left hover:border-zlato/40"
               >
                 <div className="flex items-baseline justify-between gap-2">
-                  <span className="text-sm text-papir">{v.name}</span>
+                  <span className="text-sm text-papir">
+                    {v.name}
+                    {stock > 0 && (
+                      <span
+                        className="ml-1.5 rounded-full border border-zlato/40 px-1.5 py-0.5 align-middle text-micro text-zlato-2"
+                        title={t("hum.inHumidor")}
+                      >
+                        ⌂ {stock}
+                      </span>
+                    )}
+                  </span>
                   <span className="shrink-0 text-xs text-dim">
                     {v.format && v.format !== "—" ? `${v.format} · ` : ""}
                     {v.smokeTimeMin != null ? `⏱ ${v.smokeTimeMin}′` : ""}
