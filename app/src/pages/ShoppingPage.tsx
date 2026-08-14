@@ -362,7 +362,9 @@ export function ShoppingPage({
                     active={filters.shop === g.shop}
                     onClick={() => toggleShop(g.shop)}
                   >
-                    {g.shop}: {g.count}×{g.total > 0 ? ` · ~${g.total.toFixed(0)} €` : ""}
+                    {/* samo broj stavki — zbroj po trgovini stoji ispod popisa,
+                        u traci filtera je bio šum i lomio chipove u dva reda */}
+                    {g.shop}: {g.count}×
                   </Chip>
                 ))}
               </div>
