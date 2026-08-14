@@ -38,8 +38,8 @@
 |------|-----------|--------|
 | Pairing engine | Keep body-first; B/I/F style weights; don’t invent new hard scores from chat formulas without tests | soft — empirical validate |
 | Catalog tags | **Audited** 2026-08-12: +americano, +Burundi, +Panama Geisha; Sumatra duhan/drvo; `coffees.catalog.test.ts` |
-| Club 101 `d-coffee` | Pass D–E bullets + brew styles + pace + water | **next content task** |
-| Club facts | defects NO-list; roast date; 60 g/L; clean gear | backlog |
+| Club 101 `d-coffee` | Pass D–E bullets + brew styles + pace + water | **Done** — styles, pace, bridges, NO-list, house craft |
+| Club facts | defects NO-list; roast date; 60 g/L; clean gear; water | **Done** 2026-08-14 — `d-coffee` -> „Kucni zanat” / „House craft” |
 | Hard filters | Never promote phenolic / potato / wild ferment / vinegary under-extract / ashy over-extract as “character” | editorial rule |
 
 ---
@@ -82,5 +82,7 @@ Finite verbs (HR canon). No infinitive stacks.
 ## 7. Next actions
 
 1. ~~Implement `d-coffee` (+ `d-wine-table` / `d-tequila`)~~ done 2026-08-12.  
-2. Optional: audit `coffees.json` tags vs regional grill map.  
-3. `e2f4c754` = same notebook (alternate URL); no separate grill needed.
+2. ~~Optional: audit `coffees.json` tags vs regional grill map.~~ done 2026-08-12.  
+3. `e2f4c754` = same notebook (alternate URL); no separate grill needed.  
+4. ~~Club facts -> house craft in `d-coffee`~~ done 2026-08-14 (roast date, grind, 60 g/L, clean gear, water, bean storage).  
+5. ~~Catalog: split prep / roast / bean~~ done 2026-08-14 (`style` = prep, `roast`, `species` + `country`; instant added).
