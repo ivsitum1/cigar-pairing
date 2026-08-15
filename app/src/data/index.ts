@@ -339,6 +339,10 @@ export interface BrandInfo {
   country: string;
   founded: string;
   blurb: { hr: string; en: string };
+  /** Jedna rečenica: u čemu je ta kuća naj. Postoji samo gdje je stvarno znamo. */
+  signature?: { hr: string; en: string };
+  /** Priča o kući — kako je nastala i što je oblikovalo njezin stil. */
+  story?: { hr: string; en: string };
   /** Market-specific display name (e.g. La Aroma de Cuba → del Caribe in HR/EU). */
   displayNames?: Partial<Record<"HR" | "EU" | "USA", string>>;
 }
