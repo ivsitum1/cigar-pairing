@@ -118,22 +118,33 @@ Put od pušenja do kataloga ide ovako:
    i otvara **već popunjenu GitHub prijavu**. App je statična stranica i nema
    gdje čuvati ključ, pa ne piše u repo sama — prijavu šalje čovjek, pod svojim
    imenom. Tko nema GitHub račun, kopira isti tekst i pošalje ga kako mu drago.
-3. U repou:
+3. U repou, sve prijave odjednom:
 
    ```bash
    cd app
-   python3 scripts/import-taste-report.py prijava.md   # ili < stdin
+   python3 scripts/fetch-taste-reports.py     # pokupi s GitHuba (oznaka „dojmovi")
    python3 scripts/apply-taste-reports.py
    ```
 
-   Prva skripta upisuje dojam u `src/data/tasteReports.json` (po osobi i cigari;
-   novija ocjena iste osobe zamjenjuje stariju). Druga ga primjenjuje na
+   `fetch-taste-reports.py` koristi `gh` ako je instaliran (radi i za privatni
+   repo), inače `GITHUB_TOKEN` iz okoline, inače ide bez prijave — javni repo
+   tada dopušta 60 zahtjeva na sat. Ništa ne piše na GitHub: prijavu zatvara
+   čovjek kad provjeri diff. Za pojedinačnu prijavu ili tekst koji je stigao
+   mimo GitHuba postoji ručni put:
+
+   ```bash
+   python3 scripts/import-taste-report.py prijava.md   # ili < stdin
+   ```
+
+   Dojmovi se upisuju u `src/data/tasteReports.json` (po osobi i cigari; novija
+   ocjena iste osobe zamjenjuje stariju, ocjena drugoga stoji uz nju), a
+   `apply-taste-reports.py` ih primjenjuje na
    `cigars.json`: kad istu cigaru ocijeni više ljudi uzima se prosjek, remi
    prema gore, a zapis dobiva `strengthFromTasting` s brojem ocjenjivača i
    prestaje biti `profileEstimated` — pa ga spajanja iz trgovina više ne diraju.
 
-`apply-taste-reports.py --check` je blokirajući CI gate, pa katalog i zapisani
-dojmovi ne mogu tiho razići.
+`apply-taste-reports.py --check` je blokirajući CI gate, pa se katalog i
+zapisani dojmovi ne mogu tiho razići.
 
 ### Plan za kasnije: cloud sync (faza 2)
 
