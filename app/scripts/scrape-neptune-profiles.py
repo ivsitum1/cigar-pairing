@@ -37,22 +37,38 @@ OUT = OUT_DIR / "neptune_raw.json"
 
 PAUSE = 1.8  # seconds between requests
 
-# Strength parsing from description text
+# Strength parsing from description text.
+#
+# REDOSLIJED JE DIO ZNACENJA: prvi pogodak pobjeduje, pa raspon ("medium to
+# full") mora stajati PRIJE svoje krajnje tocke ("full"). Dok je "full-strength"
+# stajao prvi, opis "a medium-full strength puro" padao je na 5 umjesto na 4 —
+# `.` u uzorku hvata i razmak i crticu, a \b stoji i iza crtice. To je 209
+# cigara u katalogu ocijenilo punu tocku prejakima (i tijelo uz njih, jer
+# merge-neptune-profiles.py tijelo prepisuje snagom).
 STRENGTH_PATTERNS = [
+    # rasponi prvo — inace ih progutaju jednoclani uzorci ispod
+    (r"\bmedium.full\b|\bmedium.to.full\b|\bfull.to.medium\b", 4),
+    (r"\bmild.to.medium\b|\bmedium.to.mild\b|\bmild.medium\b", 2),
     (r"\bfull.bodied\b", 5),
     (r"\bfull.strength\b", 5),
     (r"\bvery full\b", 5),
-    (r"\bmedium.full\b|\bmedium.to.full\b|\bfull.to.medium\b", 4),
     (r"\bmedium.bodied\b|\bmedium.strength\b", 3),
     (r"\bmedium\b", 3),
-    (r"\bmild.to.medium\b|\bmedium.to.mild\b", 2),
     (r"\bmild.bodied\b|\bmild.strength\b", 2),
     (r"\bvery mild\b|\blight\b", 1),
 ]
 
+# Dvoblendni proizvodi (dual-ended cigare, kutije s dva blenda) opisu OBA kraja
+# u istom tekstu: "mild to medium ... full-bodied". Tu nijedan uzorak nije
+# istina o cijeloj kutiji, pa uzimamo sredinu umjesto da odlucuje redoslijed.
+MILD_RANGE = re.compile(r"\bmild.to.medium\b|\bmedium.to.mild\b|\bmild.medium\b")
+FULL_MARK = re.compile(r"\bfull.bodied\b|\bfull.strength\b|\bvery full\b")
+
 
 def _parse_strength_from_text(text: str) -> int | None:
     low = (text or "").lower()
+    if MILD_RANGE.search(low) and FULL_MARK.search(low):
+        return 3
     for pat, val in STRENGTH_PATTERNS:
         if re.search(pat, low):
             return val

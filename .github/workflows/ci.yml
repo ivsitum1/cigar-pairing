@@ -52,6 +52,9 @@ jobs:
       - name: Taxonomy line helpers (dimenzije / velika slova u imenu linije)
         working-directory: app
         run: python scripts/test_taxonomy_lib.py
+      - name: Snaga iz opisa (redoslijed uzoraka — raspon prije krajnje tocke)
+        working-directory: app
+        run: python scripts/test_neptune_strength.py
 
       # NEBLOKIRAJUCI — oba padaju i na cistom `master` HEAD-u, prije ovog PR-a:
       #   * taxonomy-audit: 1351 novih linija bez taksonomije preko 132 marke,
