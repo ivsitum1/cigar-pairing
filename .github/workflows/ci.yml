@@ -47,6 +47,7 @@ jobs:
           python scripts/derive-drink-brands.py --check
           python scripts/derive-drink-display-names.py --check
           python scripts/normalize-profile-axes.py --check
+          python scripts/merge-cigarworld-aroma.py --check
       - name: HR availability reconcile logic
         working-directory: app
         run: python scripts/test_reconcile_hr.py
