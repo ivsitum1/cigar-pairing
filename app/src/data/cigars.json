@@ -109670,7 +109670,7 @@
   {
     "id": "cig-flor-de-selva-fino",
     "brand": "Flor de Selva",
-    "line": "Fino",
+    "line": "Classic Fino",
     "vitola": "Fino",
     "format": "44 x 153mm",
     "country": "Honduras",
@@ -110365,7 +110365,7 @@
   {
     "id": "cig-flor-de-selva-tempo",
     "brand": "Flor de Selva",
-    "line": "Tempo",
+    "line": "Classic Tempo",
     "vitola": "Tempo",
     "format": "60 x 152mm",
     "country": "Honduras",
@@ -182616,6 +182616,15 @@
           }
         },
         "fetchedAt": "2026-07-01"
+      },
+      {
+        "name": "Serie O Toro",
+        "format": "50 x 152mm",
+        "smokeTimeMin": 60,
+        "priceEUR": null,
+        "url": null,
+        "ring": 50,
+        "lengthMM": 152
       },
       {
         "name": "Tubos",

@@ -54,6 +54,12 @@ import {
   firstVitolaOfShape,
   type ShapeFamily,
 } from "../lib/vitolaShape";
+import {
+  matchesAnySearch,
+  matchesAnyToken,
+  matchesSearch,
+  searchTokens,
+} from "../lib/searchMatch";
 import { useMarket, setMarket } from "../store/market";
 import { navigate, useRoute } from "../store/route";
 import { favoriteKey, useFavoriteBrands } from "../store/favorites";
@@ -314,15 +320,16 @@ export function CatalogPage({
 
   // Trostruki search hitovi (brand / line / vitola) kad je upit ≥ 2 znaka
   const searchHits = useMemo((): CatalogSearchHit[] => {
-    const nq = norm(query.trim());
-    if (tab !== "cigars" || nq.length < 2) return [];
+    const nq = query.trim();
+    const tokens = searchTokens(nq);
+    if (tab !== "cigars" || tokens.join("").length < 2) return [];
     const hits: CatalogSearchHit[] = [];
     const seenBrand = new Set<string>();
     const seenLine = new Set<string>();
     const seenVitola = new Set<string>();
 
     for (const b of ALL_BRANDS) {
-      if (!norm(brandSearchHaystack(b)).includes(nq) || seenBrand.has(b)) continue;
+      if (!matchesSearch(brandSearchHaystack(b), nq) || seenBrand.has(b)) continue;
       seenBrand.add(b);
       hits.push({ kind: "brand", brand: b });
       if (hits.length >= 8) break;
@@ -331,17 +338,23 @@ export function CatalogPage({
     for (const c of CIGARS) {
       if (!cigarInRegion(c, market)) continue;
       const display = brandDisplayName(c.brand, market);
-      const lineHit =
-        norm(c.line).includes(nq) ||
-        norm(`${c.brand} ${c.line}`).includes(nq) ||
-        norm(`${display} ${c.line}`).includes(nq) ||
-        norm(brandSearchHaystack(c.brand)).includes(nq);
+      const lineHit = matchesAnySearch(
+        [
+          c.line,
+          `${c.brand} ${c.line}`,
+          `${display} ${c.line}`,
+          brandSearchHaystack(c.brand),
+        ],
+        nq,
+      );
       if (lineHit && !seenLine.has(c.id)) {
         seenLine.add(c.id);
         hits.push({ kind: "line", cigar: c });
       }
       for (const v of c.vitolas ?? []) {
-        if (!norm(v.name).includes(nq)) continue;
+        // vitola se traži zajedno s linijom: „classic tempo" pogađa Tempo
+        // unutar linije Classic, a ne traži obje riječi u imenu vitole
+        if (!matchesAnySearch([v.name, `${c.brand} ${c.line} ${v.name}`], nq)) continue;
         const key = `${c.id}::${v.name}`;
         if (seenVitola.has(key)) continue;
         seenVitola.add(key);
@@ -362,19 +375,21 @@ export function CatalogPage({
   }, [tab, query, market]);
 
   const matchedBrands = useMemo(() => {
-    const nq = norm(query.trim());
-    if (tab !== "cigars" || nq.length < 2 || browseBrands) return [];
-    return ALL_BRANDS.filter((b) => norm(brandSearchHaystack(b)).includes(nq)).slice(0, 4);
+    const nq = query.trim();
+    if (tab !== "cigars" || searchTokens(nq).join("").length < 2 || browseBrands) return [];
+    return ALL_BRANDS.filter((b) => matchesAnyToken(brandSearchHaystack(b), nq)).slice(0, 4);
   }, [tab, query, browseBrands]);
 
   const brandRows = useMemo(() => {
     if (tab !== "cigars" || !browseBrands) return [];
     const nq = norm(query.trim());
     const rows = BRAND_CATALOG.filter((b) => {
+      // kazalo marki traži marku, a ne cijeli naziv s kutije — dovoljna je
+      // jedna riječ upita, inače „Oliva Serie O Toro" daje prazno kazalo
       if (
         nq &&
-        !norm(brandSearchHaystack(b.brand)).includes(nq) &&
-        !norm(b.info?.country ?? "").includes(nq)
+        !matchesAnyToken(brandSearchHaystack(b.brand), nq) &&
+        !matchesAnyToken(b.info?.country ?? "", nq)
       ) {
         return false;
       }
@@ -398,7 +413,7 @@ export function CatalogPage({
     return DRINK_BRAND_CATALOG.filter(
       (b) =>
         b.categories.includes(tab) &&
-        (!nq || norm(b.brand).includes(nq)) &&
+        (!nq || matchesAnyToken(b.brand, nq)) &&
         (!favOnly || favorites.has(favoriteKey("drink", b.brand))),
     );
   }, [tab, browseBrands, query, favOnly, favorites]);
@@ -535,12 +550,12 @@ export function CatalogPage({
     const list = CIGARS.filter(
       (c) =>
         cigarInRegion(c, market) &&
-        (!q ||
-          norm(
-            `${brandSearchHaystack(c.brand)} ${c.line} ${c.vitola} ${c.wrapper} ${c.country} ${(c.vitolas ?? [])
-              .map((v) => v.name)
-              .join(" ")}`,
-          ).includes(norm(q))) &&
+        matchesSearch(
+          `${brandSearchHaystack(c.brand)} ${brandDisplayName(c.brand, market)} ${c.line} ${c.vitola} ${c.wrapper} ${c.country} ${(c.vitolas ?? [])
+            .map((v) => v.name)
+            .join(" ")}`,
+          q,
+        ) &&
         (strengthFilter == null || c.strength === strengthFilter) &&
         (shapeFilter == null || cigarShapes(c).has(shapeFilter)) &&
         (wrapperOriginFilter == null || c.wrapperOrigin === wrapperOriginFilter) &&
@@ -582,7 +597,7 @@ export function CatalogPage({
   const drinks = useMemo(() => {
     if (tab === "cigars") return [];
     const list = DRINKS[tab].filter((d) => {
-      if (q && !`${d.name} ${d.region}`.toLowerCase().includes(q)) return false;
+      if (!matchesSearch(`${d.name} ${d.region} ${d.style}`, q)) return false;
       if (styleFilter != null && d.style !== styleFilter) return false;
       if (roastFilter != null && d.roast !== roastFilter) return false;
       if (beanFilter != null && d.species !== beanFilter) return false;
