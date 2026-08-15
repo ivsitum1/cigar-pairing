@@ -768,10 +768,12 @@ DESCRIPTIONS: dict[str, tuple[str, str]] = {
         "longer-aged leaf.",
     ),
     "cig-flor-de-selva-tempo": (
-        "Tempo je kraći Flor de Selva format — ista hondureška elegancija u cigari za "
-        "pola sata.",
-        "Tempo is the shorter Flor de Selva — the same Honduran elegance in a half-hour "
-        "cigar.",
+        "Najdeblji format Classic Collectiona: 60 ring na šest inča daje obilje "
+        "hladnog, mekog dima i dobrih sat i četvrt mira. Snaga ostaje hondureški "
+        "umjerena — veličina je ta koja impresionira, ne nikotin.",
+        "The thickest format in the Classic Collection: a 60 ring over six inches "
+        "gives masses of cool, soft smoke and a good hour and a quarter. The strength "
+        "stays Honduran-moderate — it is the size that impresses, not the nicotine.",
     ),
     "cig-flor-de-selva-year-of-the-dragon-2024": (
         "Izdanje za kinesku godinu zmaja — ograničena Flor de Selva serija s posebnim "
