@@ -33,6 +33,8 @@ import { drinkPrimaryLink } from "../lib/drinkShopLinks";
 import { drinkNameLoc, drinkNameHaystack } from "../lib/drinkName";
 import { readJsonStringArray } from "../lib/safeStorage";
 import { useMarket } from "../store/market";
+import { useTasteProfiles } from "../store/tasteProfile";
+import { withTasteAll } from "../lib/tasteProfile";
 import { consumePairingIntent, usePairingNavVersion } from "../store/pairingNav";
 import { navigate, useRoute } from "../store/route";
 import { CustomPairing } from "./CustomPairing";
@@ -135,15 +137,20 @@ export function PairingPage() {
 
   const selected = mode === "cigarToDrink" ? selectedCigar : selectedDrink;
 
+  // tvoja ocjena snage i tijela ulazi prije bodovanja, ne poslije
+  const taste = useTasteProfiles();
   const marketCigars = useMemo(
     () =>
-      CIGARS.filter(
-        (c) =>
-          cigarInRegion(c, market) &&
-          !excludedCountries.includes(c.country) &&
-          !excludedBrands.includes(c.brand),
+      withTasteAll(
+        CIGARS.filter(
+          (c) =>
+            cigarInRegion(c, market) &&
+            !excludedCountries.includes(c.country) &&
+            !excludedBrands.includes(c.brand),
+        ),
+        taste,
       ),
-    [market, excludedCountries, excludedBrands],
+    [market, excludedCountries, excludedBrands, taste],
   );
 
   // Multi-vitola lines (Cusano Robusto vs Figurado) need scoped OCR ids

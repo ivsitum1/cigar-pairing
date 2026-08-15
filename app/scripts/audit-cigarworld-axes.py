@@ -15,8 +15,19 @@ pokazatelj za tijelo tau ~0.39 (n=57) — preslabo da bi se broj upisao u
 katalog kao da je mjeren. Aroma-radar se koristi ondje gdje mjeri ono sto
 tvrdi da mjeri: okusne oznake (merge-cigarworld-aroma.py).
 
+DRUGI PROLAZ, jer je prva mjera mogla biti prestroga: tau kaznjava izjednacene
+poretke na stisnutoj ljestvici, pa je usporedena i prosjecna greska. Ondje je
+CigarWorld izgledao dvostruko tocnije od heuristike pokrova (MAE 0.44 naspram
+0.79 za snagu, uz unakrsnu provjeru "izostavi jedan"). Zato je dodana i treca
+usporedba — protiv predvidanja koje ne zna nista i uvijek kaze 3. Ona je
+razrijesila stvar: konstanta ima MAE 0.42, CigarWorld 0.40. Niska greska nije
+dolazila od znanja nego od vracanja na sredinu; CigarWorld za 52 cigare
+predvida 49 puta "3". Heuristika grijesi vise, ali se razastire po 1–5, a
+pairing zivi od razlika, ne od prosjeka.
+
 Pokreni iz app/:  python3 scripts/audit-cigarworld-axes.py
 """
+import collections
 import json
 from itertools import combinations
 from pathlib import Path
@@ -104,6 +115,36 @@ def main() -> int:
     probe("props.aroma strength", lambda b: (b.get("props") or {}).get("aroma strength"), "body")
     probe("aroma tezak-lagan", aroma_gap, "body")
     print("\nTau blizu 0 znaci da ocjena ne poznaje poredak koji opis tvrdi.")
+
+    print("\nProsjecna greska, i protiv predvidanja koje uvijek kaze isto:")
+    for axis, key in (("strength", "strength"), ("body", "smoke volume")):
+        ids = [c for c, b in shop.items() if (b.get("props") or {}).get(key) and stated.get(c, {}).get(axis)]
+        if len(ids) < 5:
+            continue
+        truth = [stated[c][axis] for c in ids]
+        const = round(sum(truth) / len(truth))
+        mae_const = sum(abs(const - t) for t in truth) / len(truth)
+        # najbolje moguce linearno preslikavanje 1-10 -> 1-5
+        best = min(
+            (
+                sum(
+                    abs(min(5, max(1, round(a / 10 * (shop[c]["props"][key]) + b / 2))) - stated[c][axis])
+                    for c in ids
+                )
+                / len(ids),
+                a,
+                b,
+            )
+            for a in range(2, 9)
+            for b in range(-6, 9)
+        )
+        spread = collections.Counter(
+            min(5, max(1, round(best[1] / 10 * shop[c]["props"][key] + best[2] / 2))) for c in ids
+        )
+        print(f"  {axis:<8} n={len(ids):3d}  uvijek {const}: MAE={mae_const:.2f}   CigarWorld: MAE={best[0]:.2f}")
+        print(f"           CigarWorld predvida: {dict(sorted(spread.items()))}  (stvarno: {dict(sorted(collections.Counter(truth).items()))})")
+    print("\nAko CigarWorld ne pobjedi konstantu, njegova niska greska je vracanje")
+    print("na sredinu, a ne znanje — i katalogu ne donosi nista.")
     return 0
 
 

@@ -132,6 +132,11 @@ export interface Cigar {
   body: number; // 1-5 (punoca dima)
   flavorTags: string[];
   profileEstimated?: boolean; // profil izveden heuristikom (profile-cigars.py), ne degustacijom
+  /**
+   * Runtime oznaka (NIJE u JSON-u): snaga i tijelo dolaze iz korisnikove ocjene
+   * nakon pušenja (`store/tasteProfile`), a ne iz kataloga. Postavlja `withTaste`.
+   */
+  profileFromUser?: boolean;
   smokeTimeMin: number;
   priceEUR: number | null;
   priceApprox?: boolean;

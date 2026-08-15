@@ -10,6 +10,8 @@ import { cigarItemId } from "../lib/cigarItemId";
 import { applyVitola, uniqueVitolas } from "../lib/cigarVitola";
 import { shouldOfferWishlist } from "../lib/lastCigar";
 import { LastCigarPrompt } from "./LastCigarPrompt";
+import { TastePrompt } from "./TastePrompt";
+import { getTasteProfile } from "../store/tasteProfile";
 
 const SOLO = "__solo__";
 const CUSTOM = "__custom__";
@@ -99,6 +101,8 @@ export function EveningSessionSheet({
   const [markTried, setMarkTried] = useState(true);
   // zadnja iz humidora: sheet ostaje montiran dok se ne odgovori na ponudu
   const [lastCigarId, setLastCigarId] = useState<string | null>(null);
+  // pitanje o snazi i tijelu ide nakon spremanja, i samo kad ocjene jos nema
+  const [tasteCigarId, setTasteCigarId] = useState<string | null>(null);
 
   const selectedOpt = cigarOptions.find((c) => c.key === cigarId);
   const lineForVitola = selectedOpt ? cigarById(selectedOpt.lineId) : undefined;
@@ -147,9 +151,16 @@ export function EveningSessionSheet({
 
     onSaved?.();
 
-    // popušena zadnja iz humidora → ponuda za listu želja umjesto zatvaranja
+    // Dva pitanja mogu doći nakon spremanja; lista želja ima prednost jer je
+    // vezana uz trenutak (zaliha je upravo pala na nulu), a ocjena ostaje
+    // dostupna na kartici cigare i kasnije.
     if (shouldOfferWishlist(result.consumedItemId)) {
       setLastCigarId(finalCigarId);
+      return;
+    }
+    // pitaj samo jednom po liniji — tko je već ocijenio, ne odgovara opet
+    if (!getTasteProfile(finalCigarId)) {
+      setTasteCigarId(finalCigarId);
       return;
     }
 
@@ -162,7 +173,23 @@ export function EveningSessionSheet({
     (lineVitolas.length <= 1 || !!vitolaName || cigarId.includes("@"));
 
   if (lastCigarId) {
-    return <LastCigarPrompt itemId={lastCigarId} onDone={onClose} />;
+    return (
+      <LastCigarPrompt
+        itemId={lastCigarId}
+        onDone={() => {
+          if (!getTasteProfile(lastCigarId)) {
+            setLastCigarId(null);
+            setTasteCigarId(lastCigarId);
+            return;
+          }
+          onClose();
+        }}
+      />
+    );
+  }
+
+  if (tasteCigarId) {
+    return <TastePrompt itemId={tasteCigarId} onDone={onClose} />;
   }
 
   return (

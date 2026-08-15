@@ -10,6 +10,8 @@ import { useI18n, STYLE_LABELS, type StringKey } from "../i18n";
 import { Meter, ScoreBand, SearchInput } from "../components/ui";
 import { ServeChips } from "../components/ServeChips";
 import { useMarket } from "../store/market";
+import { useTasteProfiles } from "../store/tasteProfile";
+import { withTasteAll } from "../lib/tasteProfile";
 
 const norm = (s: string) =>
   s.normalize("NFKD").replace(/[̀-ͯ]/g, "").toLowerCase();
@@ -30,9 +32,11 @@ export function CustomPairing({
   const [serve, setServe] = useState<ServeStyle | undefined>(undefined);
   const [picking, setPicking] = useState<"cigar" | "drink" | null>("cigar");
 
+  // tvoja ocjena snage i tijela ulazi prije bodovanja, ne poslije
+  const taste = useTasteProfiles();
   const marketCigars = useMemo(
-    () => CIGARS.filter((c) => cigarInRegion(c, market)),
-    [market],
+    () => withTasteAll(CIGARS.filter((c) => cigarInRegion(c, market)), taste),
+    [market, taste],
   );
   const drinks = useMemo(() => ALL_DRINKS.filter((d) => d.pairable), []);
 
