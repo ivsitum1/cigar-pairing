@@ -8,6 +8,7 @@ Dvije stvari koje se lako slome, a tiho:
 Pokreni iz app/:  python scripts/test_taste_reports.py
 """
 import importlib.util
+import json
 import unittest
 from pathlib import Path
 
@@ -23,6 +24,7 @@ def _load(name: str, filename: str):
 
 imp = _load("imp", "import-taste-report.py")
 app = _load("app_", "apply-taste-reports.py")
+fetch = _load("fetch_", "fetch-taste-reports.py")
 
 BODY = """Dojmovi nakon pušenja — **Ivan**, 1 cigara.
 
@@ -87,6 +89,81 @@ class TestAverage(unittest.TestCase):
         self.assertEqual(app.average([2, 2, 5]), 3)
         self.assertEqual(app.average([5, 5, 5]), 5)
         self.assertEqual(app.average([1, 1]), 1)
+
+
+class TestMergeAcrossPeople(unittest.TestCase):
+    """Kljuc je (osoba, cigara) — dvoje ljudi ne prepisuje jedno drugo."""
+
+    @staticmethod
+    def _payload(by, strength, at="2026-08-15T12:00:00.000Z"):
+        return {
+            "kind": "cigar-pairing-taste-report",
+            "by": by,
+            "at": at,
+            "reports": [{"cigarId": "cig-x", "strength": strength, "body": 3, "at": at}],
+        }
+
+    @staticmethod
+    def _resolve(cid):
+        return cid if cid == "cig-x" else None
+
+    def test_two_people_stand_side_by_side(self):
+        kept = {}
+        imp.merge_payload(kept, self._payload("Ivan", 2), self._resolve)
+        imp.merge_payload(kept, self._payload("Kolega", 4), self._resolve)
+        self.assertEqual(len(kept), 2)
+        self.assertEqual({r["strength"] for r in kept.values()}, {2, 4})
+
+    def test_same_person_updates_in_place(self):
+        kept = {}
+        imp.merge_payload(kept, self._payload("Ivan", 2), self._resolve)
+        _, added, updated, _ = imp.merge_payload(kept, self._payload("Ivan", 5), self._resolve)
+        self.assertEqual((added, updated), (0, 1))
+        self.assertEqual(len(kept), 1)
+        self.assertEqual(next(iter(kept.values()))["strength"], 5)
+
+    def test_repeating_the_same_report_changes_nothing(self):
+        kept = {}
+        imp.merge_payload(kept, self._payload("Ivan", 2), self._resolve, source="repo#1")
+        before = json.loads(json.dumps(list(kept.values())))
+        _, added, updated, _ = imp.merge_payload(
+            kept, self._payload("Ivan", 2), self._resolve, source="repo#1"
+        )
+        self.assertEqual((added, updated), (0, 0))
+        self.assertEqual(list(kept.values()), before)
+
+    def test_unsigned_report_is_refused(self):
+        with self.assertRaises(ValueError):
+            imp.merge_payload({}, self._payload("  ", 3), self._resolve)
+
+    def test_unknown_cigar_is_skipped_not_invented(self):
+        payload = self._payload("Ivan", 3)
+        payload["reports"][0]["cigarId"] = "cig-ne-postoji"
+        kept = {}
+        _, added, _, skipped = imp.merge_payload(kept, payload, self._resolve)
+        self.assertEqual((added, skipped), (0, 1))
+        self.assertEqual(kept, {})
+
+
+class TestFetch(unittest.TestCase):
+    def test_pull_requests_are_not_impressions(self):
+        rows = [
+            {"number": 1, "body": "x"},
+            {"number": 2, "body": "y", "pull_request": {"url": "…"}},
+        ]
+        fetch._via_gh = lambda path: rows
+        out = fetch.fetch_issues("owner/repo", "dojmovi", "all")
+        self.assertEqual([r["number"] for r in out], [1])
+
+    def test_reads_gh_paginated_output(self):
+        # `gh api --paginate` zna nanizati vise JSON nizova jedan za drugim
+        class FakeRun:
+            stdout = '[{"number": 1}]\n[{"number": 2}]\n'
+
+        fetch.shutil.which = lambda _: "/usr/bin/gh"
+        fetch.subprocess.run = lambda *a, **k: FakeRun()
+        rows = fetch._via_gh("/repos/x/y/issues?state=all")
+        self.assertEqual([r["number"] for r in rows], [1, 2])
 
 
 if __name__ == "__main__":

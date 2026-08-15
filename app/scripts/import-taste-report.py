@@ -72,21 +72,30 @@ def clamp(n) -> int | None:
     return max(1, min(5, v))
 
 
-def main() -> int:
-    ap = argparse.ArgumentParser()
-    ap.add_argument("file", nargs="?", help="datoteka s prijavom; bez nje se čita stdin")
-    ap.add_argument("--dry-run", action="store_true", help="ne piši, samo pokaži")
-    args = ap.parse_args()
+def load_store() -> dict[tuple[str, str], dict]:
+    """Zapisani dojmovi, kljucevani po (osoba, cigara)."""
+    store = json.loads(STORE.read_text(encoding="utf-8"))
+    return {(r["by"], r["cigarId"]): r for r in store.get("reports", [])}
 
-    text = Path(args.file).read_text(encoding="utf-8") if args.file else sys.stdin.read()
-    payload = extract_payload(text)
+
+def save_store(kept: dict[tuple[str, str], dict]) -> int:
+    reports = sorted(kept.values(), key=lambda r: (r["cigarId"], r["by"]))
+    STORE.write_text(
+        json.dumps({"reports": reports}, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+    return len(reports)
+
+
+def merge_payload(kept, payload, resolve, source: str | None = None) -> tuple[str, int, int, int]:
+    """Jedan izvjestaj u zapis. Vraca (potpis, novih, izmijenjenih, preskocenih).
+
+    Kljuc je (osoba, cigara): novija ocjena iste osobe zamjenjuje stariju, a
+    ocjena drugoga stoji uz nju. `source` je trag odakle je dosla (broj prijave).
+    """
     by = str(payload.get("by") or "").strip()
     if not by:
-        raise SystemExit("izvjestaj nije potpisan — bez imena se ocjene ne mogu razlikovati")
-
-    resolve = resolver()
-    store = json.loads(STORE.read_text(encoding="utf-8"))
-    kept = {(r["by"], r["cigarId"]): r for r in store.get("reports", [])}
+        raise ValueError("izvjestaj nije potpisan")
 
     added = updated = skipped = 0
     for entry in payload.get("reports") or []:
@@ -98,6 +107,8 @@ def main() -> int:
         key = (by, cid)
         row = {"by": by, "cigarId": cid, "strength": s, "body": b,
                "at": str(entry.get("at") or payload.get("at") or "")}
+        if source:
+            row["source"] = source
         if key in kept:
             if kept[key] != row:
                 updated += 1
@@ -105,15 +116,27 @@ def main() -> int:
         else:
             kept[key] = row
             added += 1
+    return by, added, updated, skipped
 
-    reports = sorted(kept.values(), key=lambda r: (r["cigarId"], r["by"]))
-    print(f"{by}: novih {added}, izmijenjenih {updated}, preskocenih {skipped}; ukupno {len(reports)}")
+
+def main() -> int:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("file", nargs="?", help="datoteka s prijavom; bez nje se čita stdin")
+    ap.add_argument("--dry-run", action="store_true", help="ne piši, samo pokaži")
+    args = ap.parse_args()
+
+    text = Path(args.file).read_text(encoding="utf-8") if args.file else sys.stdin.read()
+    payload = extract_payload(text)
+    kept = load_store()
+    try:
+        by, added, updated, skipped = merge_payload(kept, payload, resolver())
+    except ValueError:
+        raise SystemExit("izvjestaj nije potpisan — bez imena se ocjene ne mogu razlikovati")
+
+    print(f"{by}: novih {added}, izmijenjenih {updated}, preskocenih {skipped}; ukupno {len(kept)}")
     if args.dry_run:
         return 0
-    STORE.write_text(
-        json.dumps({"reports": reports}, ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8",
-    )
+    save_store(kept)
     print(f"-> {STORE}")
     print("Sada: python3 scripts/apply-taste-reports.py")
     return 0
