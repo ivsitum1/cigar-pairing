@@ -110386,8 +110386,8 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Najdeblji format Classic Collectiona: 60 ring na šest inča daje obilje hladnog, mekog dima i sat i pol mira. Snaga ostaje hondureški umjerena — veličina je ta koja impresionira, ne nikotin.",
-      "en": "The thickest format in the Classic Collection: a 60 ring over six inches gives masses of cool, soft smoke and ninety unhurried minutes. The strength stays Honduran-moderate — it is the size that impresses, not the nicotine."
+      "hr": "Najdeblji format Classic Collectiona: 60 ring na šest inča daje obilje hladnog, mekog dima i dobrih sat i četvrt mira. Snaga ostaje hondureški umjerena — veličina je ta koja impresionira, ne nikotin.",
+      "en": "The thickest format in the Classic Collection: a 60 ring over six inches gives masses of cool, soft smoke and a good hour and a quarter. The strength stays Honduran-moderate — it is the size that impresses, not the nicotine."
     },
     "markets": [
       "HR",
@@ -204553,6 +204553,36 @@
         "ring": 52,
         "lengthMM": 124,
         "fetchedAt": "2026-07-01"
+      },
+      {
+        "name": "Boreal",
+        "format": "54 x 156mm",
+        "smokeTimeMin": 65,
+        "priceEUR": null,
+        "url": "https://www.neptunecigar.com/cigars/plasencia-alma-del-cielo-boreal-61-8--54",
+        "ring": 54,
+        "lengthMM": 156,
+        "regionLinks": {
+          "USA": {
+            "shop": "Neptune Cigar",
+            "url": "https://www.neptunecigar.com/cigars/plasencia-alma-del-cielo-boreal-61-8--54"
+          }
+        }
+      },
+      {
+        "name": "Amanecer",
+        "format": "60 x 152mm",
+        "smokeTimeMin": 75,
+        "priceEUR": null,
+        "url": "https://www.neptunecigar.com/cigars/plasencia-alma-del-cielo-amanecer-6--60",
+        "ring": 60,
+        "lengthMM": 152,
+        "regionLinks": {
+          "USA": {
+            "shop": "Neptune Cigar",
+            "url": "https://www.neptunecigar.com/cigars/plasencia-alma-del-cielo-amanecer-6--60"
+          }
+        }
       }
     ],
     "priceUrl": "https://www.neptunecigar.com/cigars/plasencia-alma-del-cielo-celeste-47-8--52",
