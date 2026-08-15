@@ -126,7 +126,11 @@ function wrapperVerdict(
     };
   }
 
-  if (profile === "agricole" && kind === "connecticut") {
+  // Agricole nije jedan profil. Mladi blanc/VSOP je travnat i lagan; XO,
+  // millésime i single barrel odležali su u hrastu i nose tijelo 4–5. Vegetalni
+  // argument vrijedi samo za lagani kraj — za odležane bi opisivao piće koje
+  // nije u čaši.
+  if (profile === "agricole" && drink.body <= 3 && kind === "connecticut") {
     return {
       hr: `Travnati agricole i svijetli Connecticut dijele svježi, vegetalni registar.`,
       en: `Grassy agricole and a light Connecticut share the same fresh, vegetal register.`,
@@ -166,6 +170,7 @@ function wrapperWarning(
   profile: string,
   kind: ReturnType<typeof wrapperKind>,
   cigar: Cigar,
+  drinkBody: number,
 ): { hr: string; en: string } | null {
   if (profile === "clean-barbados" && kind === "natural") {
     return {
@@ -179,7 +184,10 @@ function wrapperWarning(
       en: `this estery, full rum needs a stronger cigar — a mild Connecticut would disappear quickly.`,
     };
   }
-  if (profile === "agricole" && (kind === "maduro" || cigar.body >= 4)) {
+  // Samo lagani agricole (blanc, VSOP). Odležani XO nosi tijelo 4–5 i uz punu
+  // cigaru stoji ravnopravno — ondje bi ovo objašnjenje opisivalo krivo piće,
+  // a takvih je parova bilo 2950.
+  if (profile === "agricole" && drinkBody <= 3 && (kind === "maduro" || cigar.body >= 4)) {
     return {
       hr: `travnati agricole voli laganu do srednju cigaru — ovako puna pregazila bi vegetalne note.`,
       en: `grassy agricole prefers a mild-to-medium cigar — this much body would swamp the vegetal notes.`,
@@ -313,7 +321,12 @@ function warningBody(
   drink: Drink,
   reasons: PairingReason[],
 ): { hr: string; en: string } {
-  const specific = wrapperWarning(drinkProfile(drink), wrapperKind(cigar.wrapper), cigar);
+  const specific = wrapperWarning(
+    drinkProfile(drink),
+    wrapperKind(cigar.wrapper),
+    cigar,
+    drink.body,
+  );
   if (specific) return specific;
   // najteza kazna iz enginea vec nosi objasnjenje (body-mismatch, overwhelm...)
   const worst = reasons.filter((r) => r.score < 0).sort((a, b) => a.score - b.score)[0];

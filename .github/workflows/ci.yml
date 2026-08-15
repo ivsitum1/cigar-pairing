@@ -46,13 +46,14 @@ jobs:
           python scripts/apply-cigar-descriptions.py --check
           python scripts/derive-drink-brands.py --check
           python scripts/derive-drink-display-names.py --check
+          python scripts/normalize-profile-axes.py --check
       - name: HR availability reconcile logic
         working-directory: app
         run: python scripts/test_reconcile_hr.py
       - name: Taxonomy line helpers (dimenzije / velika slova u imenu linije)
         working-directory: app
         run: python scripts/test_taxonomy_lib.py
-      - name: Snaga iz opisa (redoslijed uzoraka — raspon prije krajnje tocke)
+      - name: Snaga i tijelo iz opisa (redoslijed uzoraka, dvije osi)
         working-directory: app
         run: python scripts/test_neptune_strength.py
 

@@ -37,25 +37,54 @@ OUT = OUT_DIR / "neptune_raw.json"
 
 PAUSE = 1.8  # seconds between requests
 
-# Strength parsing from description text.
+# Snaga i tijelo iz opisa — DVIJE OSI, ne jedan broj.
+#
+# Neptuneov tekst ih uredno razlikuje: "-bodied" govori o tijelu (koliko je dim
+# gust i tezak), "strength / strong / potent" o snazi (koliko nikotina nosi).
+# Cigara zna biti full-bodied a medium-strength (Asylum Schizo, Avo Signature
+# 30 Years) — to je poznat par, ne greska u tekstu. Od 1366 opisa njih 641
+# govori SAMO o tijelu, 282 SAMO o snazi, 42 o oboje. Dok se citao jedan broj,
+# oba su polja dobivala istu vrijednost, pa je velik dio kataloga imao tijelo =
+# snaga bez ijednog izvora koji to tvrdi.
 #
 # REDOSLIJED JE DIO ZNACENJA: prvi pogodak pobjeduje, pa raspon ("medium to
 # full") mora stajati PRIJE svoje krajnje tocke ("full"). Dok je "full-strength"
 # stajao prvi, opis "a medium-full strength puro" padao je na 5 umjesto na 4 —
-# `.` u uzorku hvata i razmak i crticu, a \b stoji i iza crtice. To je 209
-# cigara u katalogu ocijenilo punu tocku prejakima (i tijelo uz njih, jer
-# merge-neptune-profiles.py tijelo prepisuje snagom).
-STRENGTH_PATTERNS = [
-    # rasponi prvo — inace ih progutaju jednoclani uzorci ispod
-    (r"\bmedium.full\b|\bmedium.to.full\b|\bfull.to.medium\b", 4),
-    (r"\bmild.to.medium\b|\bmedium.to.mild\b|\bmild.medium\b", 2),
+# `.` u uzorku hvata i razmak i crticu, a \b stoji i iza crtice.
+
+# Os tijela: trazi se izricito "-bodied".
+BODY_PATTERNS = [
+    (r"\bmedium.to.full.bodied\b|\bmedium.full.bodied\b|\bfull.to.medium.bodied\b", 4),
+    (r"\bmild.to.medium.bodied\b|\bmedium.to.mild.bodied\b", 2),
+    (r"\bvery full.bodied\b", 5),
     (r"\bfull.bodied\b", 5),
-    (r"\bfull.strength\b", 5),
+    (r"\bmedium.bodied\b", 3),
+    (r"\bmild.bodied\b|\blight.bodied\b", 2),
+]
+
+# Os snage: trazi se izricito snaga (strength / strong / potent / powerhouse).
+STRENGTH_PATTERNS = [
+    (r"\bmedium.to.full.(?:strength|strong)\b|\bmedium.full.(?:strength|strong)\b", 4),
+    (r"\bmild.to.medium.(?:strength|strong)\b|\bmedium.to.mild.(?:strength|strong)\b", 2),
+    # samo rijeci koje nose ljestvicu. "potent", "bold", "powerhouse" su
+    # reklamni pridjevi bez mjere — Neptune ih lijepi i na kremaste Connecticute
+    # ("a potent yet flavorful smoke" uz light brown wrapper i note vrhnja), pa
+    # bi od njih blage cigare ispale najjace u katalogu.
+    (r"\bfull.(?:strength|strong)\b|\bvery strong\b", 5),
+    (r"\bmedium.(?:strength|strong)\b", 3),
+    (r"\bmild.(?:strength|strong)\b", 2),
+]
+
+# Bez osi: "a medium to full cigar". Cita se kao ukupan dojam i sluzi samo kad
+# nijedna os nije izrecena — merge onda iz njega izvede obje po karakteru
+# pokrova, umjesto da ih izjednaci.
+OVERALL_PATTERNS = [
+    (r"\bmedium.to.full\b|\bmedium.full\b|\bfull.to.medium\b", 4),
+    (r"\bmild.to.medium\b|\bmedium.to.mild\b|\bmild.medium\b", 2),
     (r"\bvery full\b", 5),
-    (r"\bmedium.bodied\b|\bmedium.strength\b", 3),
+    (r"\bvery mild\b", 1),
     (r"\bmedium\b", 3),
-    (r"\bmild.bodied\b|\bmild.strength\b", 2),
-    (r"\bvery mild\b|\blight\b", 1),
+    (r"\bmild\b", 2),
 ]
 
 # Dvoblendni proizvodi (dual-ended cigare, kutije s dva blenda) opisu OBA kraja
@@ -65,14 +94,31 @@ MILD_RANGE = re.compile(r"\bmild.to.medium\b|\bmedium.to.mild\b|\bmild.medium\b"
 FULL_MARK = re.compile(r"\bfull.bodied\b|\bfull.strength\b|\bvery full\b")
 
 
-def _parse_strength_from_text(text: str) -> int | None:
-    low = (text or "").lower()
-    if MILD_RANGE.search(low) and FULL_MARK.search(low):
-        return 3
-    for pat, val in STRENGTH_PATTERNS:
-        if re.search(pat, low):
+def _first_match(text: str, patterns: list[tuple[str, int]]) -> int | None:
+    for pat, val in patterns:
+        if re.search(pat, text):
             return val
     return None
+
+
+def parse_profile_from_text(text: str) -> dict:
+    """Opis -> {"strength": int|None, "body": int|None, "overall": int|None}.
+
+    Sve tri smiju biti None: opis koji o jacini ne govori nista ne smije nista
+    ni tvrditi. `overall` se puni samo kad nijedna os nije izrecena.
+    """
+    low = (text or "").lower()
+    if not low:
+        return {"strength": None, "body": None, "overall": None}
+    if MILD_RANGE.search(low) and FULL_MARK.search(low):
+        # dva blenda u istoj kutiji — sredina, za obje osi
+        return {"strength": 3, "body": 3, "overall": None}
+    body = _first_match(low, BODY_PATTERNS)
+    strength = _first_match(low, STRENGTH_PATTERNS)
+    overall = None
+    if body is None and strength is None:
+        overall = _first_match(low, OVERALL_PATTERNS)
+    return {"strength": strength, "body": body, "overall": overall}
 
 
 def parse_page(html: str) -> dict:
@@ -89,9 +135,11 @@ def parse_page(html: str) -> dict:
         desc = re.sub(r"\s+", " ", desc)
         if len(desc) > 40:
             result["description"] = desc
-            s = _parse_strength_from_text(desc)
-            if s:
-                result["strength"] = s
+            prof = parse_profile_from_text(desc)
+            for key in ("strength", "body", "overall"):
+                if prof[key]:
+                    result[key] = prof[key]
+            if any(prof.values()):
                 result["strength_source"] = "description_text"
 
     # ── Spec table rows ──────────────────────────────────────────────────────
