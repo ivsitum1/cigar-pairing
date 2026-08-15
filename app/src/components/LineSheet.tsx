@@ -4,7 +4,7 @@ import { SheetShell } from "./SheetShell";
 import type { Cigar, Vitola } from "../types";
 import { brandInfo, brandDisplayName, resolveCigarId } from "../data";
 import { useI18n } from "../i18n";
-import { Meter } from "./ui";
+import { TasteMeters } from "./TasteMeters";
 import { BackButton } from "./BackButton";
 import { uniqueVitolas } from "../lib/cigarVitola";
 import { formatEur, vitolaPriceForMarket } from "../lib/cigarPrice";
@@ -76,10 +76,7 @@ export function LineSheet({
           {info?.founded ? ` · ${info.founded}` : ""}
         </div>
 
-        <div className="mt-3 flex flex-wrap gap-x-5 gap-y-2">
-          <Meter value={cigar.strength} label={t("common.strength")} accent="var(--color-oxblood)" />
-          <Meter value={cigar.body} label={t("common.body")} />
-        </div>
+        <TasteMeters cigar={cigar} />
 
         {description && (
           <p className="mt-3 text-sm leading-relaxed text-papir/85">{description}</p>

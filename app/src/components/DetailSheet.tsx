@@ -51,6 +51,9 @@ import {
   useCollection,
 } from "../store/collection";
 import { useMarket } from "../store/market";
+import { useTasteProfiles } from "../store/tasteProfile";
+import { withTaste } from "../lib/tasteProfile";
+import { TasteMeters } from "./TasteMeters";
 import {
   addHumidor,
   adjustStock,
@@ -250,6 +253,10 @@ function CigarDetails({
 }) {
   const { t, lx, cn, lang } = useI18n();
   const market = useMarket();
+  // tvoja ocjena, kad postoji, nadjačava katalogovu procjenu i ovdje i u pairingu
+  const taste = useTasteProfiles();
+  const shown = withTaste(cigar, taste);
+  const mine = shown.profileFromUser === true;
   const description = cigarDescription(cigar, lang);
   const brand = brandInfo(cigar.brand);
   const displayBrand = brandDisplayName(cigar.brand, market);
@@ -339,10 +346,7 @@ function CigarDetails({
           ) : null}
         </div>
       )}
-      <div className="mt-3 flex flex-wrap gap-x-5 gap-y-2">
-        <Meter value={cigar.strength} label={t("common.strength")} accent="var(--color-oxblood)" />
-        <Meter value={cigar.body} label={t("common.body")} />
-      </div>
+      <TasteMeters cigar={cigar} />
 
       {/* vitole s vremenom pusenja i cijenom */}
       <div className="mt-3">
@@ -414,12 +418,12 @@ function CigarDetails({
         <p className="mt-3 text-sm leading-relaxed text-papir/85">{description}</p>
       )}
       {/* poštene oznake izvora podataka */}
-      {(cigar.profileEstimated || cigar.formatEstimated || cigar.strengthFromShop) && (
+      {(shown.profileEstimated || cigar.formatEstimated || (cigar.strengthFromShop && !mine)) && (
         <div className="mt-1.5 space-y-0.5">
-          {cigar.profileEstimated && (
+          {shown.profileEstimated && (
             <p className="text-micro leading-snug text-dim/70">≈ {t("common.estimatedProfile")}</p>
           )}
-          {cigar.strengthFromShop && (
+          {cigar.strengthFromShop && !mine && (
             <p className="text-micro leading-snug text-dim/70">✓ {t("common.strengthReal")}</p>
           )}
           {cigar.formatEstimated && (
