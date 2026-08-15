@@ -7,8 +7,11 @@
 // Pravilo je jednostavno: zaliha padne na nulu → „Imam” se gasi. Ono što si
 // kupio a još nisi složio u humidor ostaje netaknuto (takva stavka nikad nije
 // ni imala zalihu), pa popis i dalje radi svoj posao.
+import type { Cigar } from "../types";
 import { getItemState, updateItem } from "../store/collection";
-import { stockForItemKey } from "../store/humidor";
+import { adjustStock, stockForItemKey } from "../store/humidor";
+import { cigarItemId } from "./cigarItemId";
+import { samplerParts } from "./samplerStock";
 
 /**
  * Pozvati NAKON što je zaliha smanjena. Vraća true kad je oznaka ugašena.
@@ -50,4 +53,23 @@ export function transferOwnedToVitola(fromItemId: string, toItemId: string) {
   if (fromItemId === toItemId) return;
   if (!getItemState(fromItemId).owned) return;
   updateItem(fromItemId, { owned: false });
+}
+
+/**
+ * Sampler u humidor ulazi razložen: na stanje idu njegove vitole, ne kutija.
+ *
+ * Vraća broj zabilježenih cigara (0 = katalog ne zna sadržaj paketa, pa
+ * pozivatelj neka doda paket kao i dosad). Oznaka „Imam” seli s kutije na
+ * sadržaj — kutije nakon raspakiranja više nema.
+ */
+export function unpackSamplerIntoStock(humidorId: string, cigar: Cigar): number {
+  const parts = samplerParts(cigar);
+  if (parts.length === 0) return 0;
+  for (const part of parts) {
+    adjustStock(humidorId, part.itemId, part.count);
+    claimOwnedForStock(part.itemId);
+  }
+  const boxId = cigarItemId(cigar);
+  if (getItemState(boxId).owned) updateItem(boxId, { owned: false });
+  return parts.reduce((sum, p) => sum + p.count, 0);
 }

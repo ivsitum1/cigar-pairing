@@ -7590,6 +7590,15 @@
         "ring": 54,
         "lengthMM": 165,
         "fetchedAt": "2026-07-01"
+      },
+      {
+        "name": "Connecticut Toro",
+        "format": "54 x 165mm",
+        "smokeTimeMin": 65,
+        "priceEUR": null,
+        "url": null,
+        "ring": 54,
+        "lengthMM": 165
       }
     ],
     "priceUrl": "https://humidor.hr/en/proizvod/enclave-broadleaf-robusto-5-x-52/",
@@ -8053,6 +8062,15 @@
         "fetchedAt": "2026-07-01"
       },
       {
+        "name": "Puro Especial Toro",
+        "format": "52 x 152mm",
+        "smokeTimeMin": 60,
+        "priceEUR": null,
+        "url": null,
+        "ring": 52,
+        "lengthMM": 152
+      },
+      {
         "name": "Decenio Robusto",
         "format": "54 x 140mm",
         "smokeTimeMin": 55,
@@ -8382,6 +8400,15 @@
         "fetchedAt": "2026-07-01"
       },
       {
+        "name": "Requiem Habano Toro",
+        "format": "54 x 152mm",
+        "smokeTimeMin": 60,
+        "priceEUR": null,
+        "url": null,
+        "ring": 54,
+        "lengthMM": 152
+      },
+      {
         "name": "Oval Pyramid",
         "format": "54 x 165mm",
         "smokeTimeMin": 65,
@@ -8471,7 +8498,13 @@
         "fetchedAt": "2026-07-01"
       }
     },
-    "lineup": []
+    "lineup": [
+      "New World Puro Especial Toro",
+      "New World Toro Redondo",
+      "San Lotano Requiem Habano Toro",
+      "Enclave Connecticut Toro",
+      "Bellas Artes Toro"
+    ]
   },
   {
     "id": "cig-aksum-claro",

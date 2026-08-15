@@ -37,7 +37,9 @@ import {
   claimOwnedForStock,
   releaseOwnedIfEmpty,
   transferOwnedToVitola,
+  unpackSamplerIntoStock,
 } from "../lib/stockOwnership";
+import { isSampler, samplerPieceCount } from "../lib/samplerStock";
 import {
   MONTH_NAMES_EN,
   MONTH_NAMES_HR,
@@ -331,7 +333,12 @@ function QuickAdd({ humidorId }: { humidorId: string }) {
       .map((id) => ({ id, cigar: cigarForItemId(id) }))
       // pića su isto u `items` — u humidor idu samo cigare
       .filter((row): row is { id: string; cigar: Cigar } => row.cigar != null)
-      .map((row) => ({ ...row, needsVitola: stockNeedsVitola(row.cigar, row.id) }))
+      .map((row) => ({
+        ...row,
+        needsVitola: stockNeedsVitola(row.cigar, row.id),
+        // paket se ne stavlja u kutiju kao komad — razlaže se na svoje vitole
+        sampler: isSampler(row.cigar) ? samplerPieceCount(row.cigar) : 0,
+      }))
       // liniju koja je već u humidoru ne nudimo dvaput: nove veličine se
       // dodaju gumbom „Dodaj vitolu” na njezinoj kartici
       .filter(
@@ -384,11 +391,14 @@ function QuickAdd({ humidorId }: { humidorId: string }) {
 
           {open && (
             <div className="mt-2 space-y-1.5">
-              {owned.map(({ id, cigar, needsVitola }) => (
+              {owned.map(({ id, cigar, needsVitola, sampler }) => (
                 <button
                   key={id}
                   type="button"
                   onClick={() => {
+                    if (sampler > 0 && unpackSamplerIntoStock(humidorId, cigar) > 0) {
+                      return;
+                    }
                     if (needsVitola) {
                       setPick({ cigar, sourceId: id });
                       return;
@@ -403,9 +413,11 @@ function QuickAdd({ humidorId }: { humidorId: string }) {
                       {brandDisplayName(cigar.brand, market)} {cigar.line}
                     </span>
                     <span className="block truncate text-micro text-dim">
-                      {needsVitola
-                        ? t("hum.pickVitolaToAdd")
-                        : `${cigar.selectedVitola ?? cigar.vitola} · ${cn(cigar.country)}`}
+                      {sampler > 0
+                        ? `${t("hum.samplerUnpack")} · ${sampler} ${t("hum.cigarsCount")}`
+                        : needsVitola
+                          ? t("hum.pickVitolaToAdd")
+                          : `${cigar.selectedVitola ?? cigar.vitola} · ${cn(cigar.country)}`}
                     </span>
                   </span>
                   <span
