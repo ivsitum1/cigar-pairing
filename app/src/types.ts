@@ -159,6 +159,11 @@ export interface Cigar {
   catalogSource?: "market";
   formatEstimated?: boolean; // duljina procijenjena iz vitole (shop bez dimenzije)
   strengthFromShop?: boolean; // snaga iz stvarnog shop-ocjenjivanja, ne heuristike
+  /**
+   * Broj ljudi koji su cigaru stvarno popušili i ocijenili (scripts/apply-taste-reports.py).
+   * Nadjačava svaku procjenu — i shop i heuristiku.
+   */
+  strengthFromTasting?: number;
   flavoured?: boolean; // aromatizirana/infuzirana (shop oznaka)
   sourceUrls?: string[];
   availabilityHR: string[];

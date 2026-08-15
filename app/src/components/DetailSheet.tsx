@@ -418,12 +418,20 @@ function CigarDetails({
         <p className="mt-3 text-sm leading-relaxed text-papir/85">{description}</p>
       )}
       {/* poštene oznake izvora podataka */}
-      {(shown.profileEstimated || cigar.formatEstimated || (cigar.strengthFromShop && !mine)) && (
+      {(shown.profileEstimated ||
+        cigar.formatEstimated ||
+        (cigar.strengthFromTasting && !mine) ||
+        (cigar.strengthFromShop && !mine)) && (
         <div className="mt-1.5 space-y-0.5">
           {shown.profileEstimated && (
             <p className="text-micro leading-snug text-dim/70">≈ {t("common.estimatedProfile")}</p>
           )}
-          {cigar.strengthFromShop && !mine && (
+          {!!cigar.strengthFromTasting && !mine && (
+            <p className="text-micro leading-snug text-dim/70">
+              ★ {t("common.strengthTasted")} ({cigar.strengthFromTasting})
+            </p>
+          )}
+          {cigar.strengthFromShop && !cigar.strengthFromTasting && !mine && (
             <p className="text-micro leading-snug text-dim/70">✓ {t("common.strengthReal")}</p>
           )}
           {cigar.formatEstimated && (

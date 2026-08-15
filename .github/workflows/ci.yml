@@ -48,6 +48,7 @@ jobs:
           python scripts/derive-drink-display-names.py --check
           python scripts/normalize-profile-axes.py --check
           python scripts/merge-cigarworld-aroma.py --check
+          python scripts/apply-taste-reports.py --check
       - name: HR availability reconcile logic
         working-directory: app
         run: python scripts/test_reconcile_hr.py
@@ -57,6 +58,9 @@ jobs:
       - name: Snaga i tijelo iz opisa (redoslijed uzoraka, dvije osi)
         working-directory: app
         run: python scripts/test_neptune_strength.py
+      - name: Dojmovi iz prijave (izvlačenje bloka, prosjek više ocjenjivača)
+        working-directory: app
+        run: python scripts/test_taste_reports.py
 
       # NEBLOKIRAJUCI — oba padaju i na cistom `master` HEAD-u, prije ovog PR-a:
       #   * taxonomy-audit: 1351 novih linija bez taksonomije preko 132 marke,
