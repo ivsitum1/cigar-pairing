@@ -4068,10 +4068,11 @@
         "name": "Connecticut Toro",
         "format": "52 x 159mm",
         "smokeTimeMin": 60,
-        "priceEUR": null,
+        "priceEUR": 15,
         "url": null,
         "ring": 52,
-        "lengthMM": 159
+        "lengthMM": 159,
+        "fetchedAt": "2026-08-15"
       },
       {
         "name": "Connecticut Robusto",
