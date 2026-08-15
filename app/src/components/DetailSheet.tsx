@@ -460,6 +460,16 @@ function CigarDetails({
           <p className="mt-1 text-xs leading-relaxed text-papir/80">
             {lx(brand.blurb)}
           </p>
+          {brand.signature && (
+            <p className="mt-1.5 text-xs leading-relaxed text-zlato-2">
+              ◈ {lx(brand.signature)}
+            </p>
+          )}
+          {brand.story && (
+            <p className="mt-1.5 text-xs leading-relaxed text-papir/70">
+              {lx(brand.story)}
+            </p>
+          )}
         </div>
       )}
     </>

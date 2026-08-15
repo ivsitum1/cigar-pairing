@@ -89,6 +89,14 @@ export function BrandSheet({
         {info && (
           <p className="mt-3 text-sm leading-relaxed text-papir/85">{lx(info.blurb)}</p>
         )}
+        {info?.signature && (
+          <p className="mt-2 rounded-lg border border-zlato/25 bg-zlato/5 px-3 py-2 text-sm leading-relaxed text-zlato-2">
+            ◈ {lx(info.signature)}
+          </p>
+        )}
+        {info?.story && (
+          <p className="mt-2 text-sm leading-relaxed text-papir/80">{lx(info.story)}</p>
+        )}
 
         <div className="band-rule my-4" />
 
