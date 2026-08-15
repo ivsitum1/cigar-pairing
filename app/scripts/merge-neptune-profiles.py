@@ -47,6 +47,24 @@ assert _mfe_spec.loader is not None
 _mfe_spec.loader.exec_module(_mfe)
 tags_from_text = _mfe.tags_from_text
 
+
+def _load_module(filename: str):
+    spec = importlib.util.spec_from_file_location(
+        filename.replace("-", "_").removesuffix(".py"),
+        Path(__file__).resolve().parent / filename,
+    )
+    mod = importlib.util.module_from_spec(spec)
+    assert spec.loader is not None
+    spec.loader.exec_module(mod)
+    return mod
+
+
+# Isti citac opisa koji je opis i napisao u neptune_raw.json, i ista heuristika
+# pokrova koju katalog inace koristi — nijedan prag se ovdje ne izmislja ispocetka.
+_neptune = _load_module("scrape-neptune-profiles.py")
+_profile = _load_module("profile-cigars.py")
+parse_profile_from_text = _neptune.parse_profile_from_text
+
 WRAPPER_FROM_TEXT: list[tuple[str, str]] = [
     (r"maduro|oscuro|broadleaf|san andr", "Maduro"),
     (r"corojo", "Corojo"),
@@ -150,6 +168,53 @@ def _format_missing(v) -> bool:
     return v is None or str(v).strip() in {"", "—", "-", "–"}
 
 
+def _house_gap(cigar: dict) -> int:
+    """Koliko je tijelo punije od snage za OVAKAV pokrov, po katalogovoj heuristici.
+
+    Maduro nosi gusto tijelo uz umjerenu snagu (+1), Connecticut je i lagan i
+    blag (0), corojo vuce na snagu. Taj razmak je jedino sto imamo kad opis
+    govori samo o jednoj osi — bolje nego izjednaciti ih, jer izjednacavanje
+    tvrdi nesto sto nijedan izvor ne kaze.
+    """
+    probe = {
+        "brand": cigar.get("brand", ""),
+        "line": cigar.get("line", ""),
+        "vitola": cigar.get("vitola", ""),
+        "wrapper": cigar.get("wrapper", ""),
+        "country": cigar.get("country", ""),
+        "notes": cigar.get("notes", {}),
+    }
+    try:
+        _profile.enrich(probe)
+    except Exception:  # noqa: BLE001 — heuristika nikad ne smije srusiti merge
+        return 0
+    return int(probe.get("body", 3)) - int(probe.get("strength", 3))
+
+
+def _resolve_axes(cigar: dict, raw: dict) -> tuple[int | None, int | None]:
+    """(snaga, tijelo) iz Neptuneova opisa; None znaci "opis o tome ne govori"."""
+    prof = raw.get("body") or raw.get("overall") or raw.get("strength")
+    if prof is None:
+        return None, None
+    parsed = parse_profile_from_text(raw.get("description") or "")
+    # neptune_raw.json je izvor; opis je uz njega, pa se citaju oba i uzima sto ima
+    strength = parsed["strength"] if parsed["strength"] is not None else raw.get("strength")
+    body = parsed["body"] if parsed["body"] is not None else raw.get("body")
+    overall = parsed["overall"] if parsed["overall"] is not None else raw.get("overall")
+
+    if body is None and strength is None:
+        if overall is None:
+            return None, None
+        body = overall  # ukupan dojam je najblizi tijelu; snaga se izvodi ispod
+
+    gap = _house_gap(cigar)
+    if body is None:
+        body = _profile.clamp(strength + gap)
+    elif strength is None:
+        strength = _profile.clamp(body - gap)
+    return int(strength), int(body)
+
+
 def merge_one(cigar: dict, raw: dict) -> bool:
     """Apply neptune raw data to a single cigar record. Return True if changed."""
     changed = False
@@ -201,36 +266,52 @@ def merge_one(cigar: dict, raw: dict) -> bool:
             cigar["country"] = hr_origin
             changed = True
 
-    # ── strength ──────────────────────────────────────────────────────────────
-    if isinstance(strength_raw, int) and 1 <= strength_raw <= 5:
-        if cigar.get("profileEstimated") or cigar.get("strength") is None:
-            cur = cigar.get("strength")
-            brand = cigar.get("brand") or ""
-            # Do not raise an already-mild house profile to "medium+" from
-            # noisy shop description text (breaks agricole / mild pairing tests).
-            if (
-                brand in MILD_HOUSE_BRANDS
-                and isinstance(cur, int)
-                and cur <= 2
-                and strength_raw > cur
-            ):
-                pass
-            else:
-                cigar["strength"] = strength_raw
-                cigar["body"] = strength_raw
+    # ── strength + body ───────────────────────────────────────────────────────
+    # Dvije osi, dva izvora. Opis koji govori samo o jednoj ne smije odrediti
+    # obje: druga se izvodi iz karaktera pokrova (razmak koji WRAPPER_BASE drzi
+    # izmedu tijela i snage za tu vrstu pokrova), pa maduro ostane punijeg
+    # tijela nego snage, a Connecticut obrnuto.
+    if cigar.get("profileEstimated") or cigar.get("strength") is None:
+        s_new, b_new = _resolve_axes(cigar, raw)
+        cur = cigar.get("strength")
+        brand = cigar.get("brand") or ""
+        # Do not raise an already-mild house profile to "medium+" from
+        # noisy shop description text (breaks agricole / mild pairing tests).
+        mild_house_guard = (
+            brand in MILD_HOUSE_BRANDS
+            and isinstance(cur, int)
+            and cur <= 2
+            and s_new is not None
+            and s_new > cur
+        )
+        if not mild_house_guard:
+            if s_new is not None and cigar.get("strength") != s_new:
+                cigar["strength"] = s_new
+                changed = True
+            if b_new is not None and cigar.get("body") != b_new:
+                cigar["body"] = b_new
+                changed = True
+            if (s_new is not None or b_new is not None) and not cigar.get("strengthFromShop"):
                 cigar["strengthFromShop"] = True
                 changed = True
 
     # ── flavorTags from description ──────────────────────────────────────────
-    # Heuristic stubs (profileEstimated) must yield to real shop text; curated
-    # non-estimated tags are left alone.
+    # DOPUNA, NE ZAMJENA. Prije je Neptuneov popis brisao postojeci, pa se gubilo
+    # ono sto blurb slucajno nije spomenuo: Macanudu Cafeu je nestala oznaka
+    # `trava-slatka` (travnata slatkoca Connecticut pokrova) i s njom pao
+    # kalibracijski par iz Excela — agricole rum trazi upravo tu oznaku. Ni jedan
+    # izvor nije potpun: heuristika zna sto pokrov tipicno nosi, blurb zna sto je
+    # pisac te cigare zapisao. Unija je bolja procjena od bilo kojeg samog, a uz
+    # to je idempotentna — drugo pokretanje nema sto dodati.
+    # Postojece oznake idu prve: rez na 6 tada odnosi visak, a ne temelj.
     allow_tags = (not cigar.get("flavorTags")) or cigar.get("profileEstimated") is True
     if allow_tags and desc:
         tags = tags_from_text(desc)
         if len(tags) >= 2:
             before = list(cigar.get("flavorTags") or [])
-            if before != tags:
-                cigar["flavorTags"] = tags
+            merged = list(dict.fromkeys([*before, *tags]))[:6]
+            if before != merged:
+                cigar["flavorTags"] = merged
                 changed = True
             # Market records are inherently shop-sourced, so their profile
             # remains "estimated" even after Neptune tag enrichment.
