@@ -262,7 +262,9 @@
       "vanilija",
       "suho-voce",
       "duhan",
-      "slatko"
+      "slatko",
+      "drvo",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -499,7 +501,9 @@
     "flavorTags": [
       "zemljano",
       "orasasti",
-      "drvo"
+      "drvo",
+      "kremasto",
+      "papar"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -3319,7 +3323,9 @@
       "kakao",
       "cedar",
       "orasasti",
-      "duhan"
+      "duhan",
+      "drvo",
+      "kremasto"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -5124,7 +5130,11 @@
     "body": 3,
     "flavorTags": [
       "cedar",
-      "zemljano"
+      "zemljano",
+      "drvo",
+      "kremasto",
+      "koza",
+      "papar"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -5284,7 +5294,11 @@
     "body": 4,
     "flavorTags": [
       "cedar",
-      "zemljano"
+      "zemljano",
+      "drvo",
+      "kakao",
+      "kava",
+      "koza"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -6530,7 +6544,10 @@
     "flavorTags": [
       "kakao",
       "cedar",
-      "zemljano"
+      "zemljano",
+      "kremasto",
+      "kava",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -6962,7 +6979,10 @@
     "body": 4,
     "flavorTags": [
       "duhan",
-      "dim"
+      "dim",
+      "kakao",
+      "kava",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -8810,7 +8830,8 @@
       "cedar",
       "zemljano",
       "zacini",
-      "duhan"
+      "duhan",
+      "trava-slatka"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -9251,7 +9272,10 @@
     "flavorTags": [
       "papar",
       "cedar",
-      "duhan"
+      "duhan",
+      "kremasto",
+      "kakao",
+      "kava"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -10366,7 +10390,9 @@
       "kakao",
       "kava",
       "cedar",
-      "orasasti"
+      "orasasti",
+      "drvo",
+      "kremasto"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -10642,7 +10668,10 @@
     "flavorTags": [
       "kremasto",
       "cedar",
-      "zacini"
+      "zacini",
+      "papar",
+      "kava",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -11036,7 +11065,9 @@
     "flavorTags": [
       "kremasto",
       "orasasti",
-      "cvjetno"
+      "cvjetno",
+      "drvo",
+      "koza"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -11142,7 +11173,10 @@
     "flavorTags": [
       "orasasti",
       "koza",
-      "duhan"
+      "duhan",
+      "drvo",
+      "kremasto",
+      "zemljano"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -11443,7 +11477,9 @@
       "kava",
       "zemljano",
       "zacini",
-      "slatko"
+      "slatko",
+      "drvo",
+      "papar"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -12580,7 +12616,9 @@
       "kakao",
       "zemljano",
       "zacini",
-      "slatko"
+      "slatko",
+      "kremasto",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -13260,7 +13298,9 @@
       "kremasto",
       "vanilija",
       "cvjetno",
-      "slatko"
+      "slatko",
+      "drvo",
+      "koza"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -13353,7 +13393,10 @@
     "flavorTags": [
       "kava",
       "zemljano",
-      "slatko"
+      "slatko",
+      "kakao",
+      "drvo",
+      "kremasto"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -13548,7 +13591,10 @@
     "body": 3,
     "flavorTags": [
       "zacini",
-      "duhan"
+      "duhan",
+      "drvo",
+      "kremasto",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -13879,7 +13925,9 @@
       "orasasti",
       "koza",
       "zacini",
-      "citrus"
+      "citrus",
+      "drvo",
+      "kremasto"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -15563,7 +15611,8 @@
       "zacini",
       "koza",
       "kava",
-      "papar"
+      "papar",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -22458,7 +22507,9 @@
       "kava",
       "vanilija",
       "duhan",
-      "slatko"
+      "slatko",
+      "drvo",
+      "kremasto"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -22648,7 +22699,9 @@
       "kremasto",
       "orasasti",
       "dim",
-      "slatko"
+      "slatko",
+      "kakao",
+      "koza"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -24488,11 +24541,12 @@
     "strength": 2,
     "body": 2,
     "flavorTags": [
+      "drvo",
+      "kava",
       "kremasto",
       "cedar",
       "orasasti",
-      "med",
-      "trava-slatka"
+      "med"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -25864,7 +25918,8 @@
       "zacini",
       "koza",
       "kava",
-      "papar"
+      "papar",
+      "trava-slatka"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -27857,7 +27912,8 @@
       "zacini",
       "koza",
       "kava",
-      "kremasto"
+      "kremasto",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -27920,7 +27976,8 @@
       "zacini",
       "koza",
       "kava",
-      "kremasto"
+      "kremasto",
+      "slatko"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -28678,7 +28735,9 @@
       "kremasto",
       "cedar",
       "zemljano",
-      "karamela"
+      "karamela",
+      "drvo",
+      "kava"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -30395,11 +30454,12 @@
     "strength": 1,
     "body": 1,
     "flavorTags": [
+      "drvo",
+      "slatko",
       "kremasto",
       "cedar",
       "orasasti",
-      "med",
-      "trava-slatka"
+      "med"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -30750,11 +30810,12 @@
     "strength": 1,
     "body": 1,
     "flavorTags": [
+      "drvo",
       "kremasto",
+      "trava-slatka",
       "cedar",
       "orasasti",
-      "med",
-      "trava-slatka"
+      "med"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -30934,7 +30995,8 @@
       "zacini",
       "koza",
       "kava",
-      "kremasto"
+      "kremasto",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -31075,9 +31137,11 @@
     "strength": 3,
     "body": 3,
     "flavorTags": [
-      "cedar",
-      "zacini",
+      "drvo",
+      "papar",
+      "kakao",
       "koza",
+      "kremasto",
       "kava"
     ],
     "profileEstimated": true,
@@ -31453,7 +31517,8 @@
       "zacini",
       "koza",
       "kava",
-      "drvo"
+      "drvo",
+      "papar"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -31661,7 +31726,8 @@
       "zacini",
       "drvo",
       "karamela",
-      "kremasto"
+      "kremasto",
+      "papar"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -32114,6 +32180,7 @@
     "strength": 1,
     "body": 1,
     "flavorTags": [
+      "drvo",
       "kremasto",
       "cedar",
       "orasasti",
@@ -33048,7 +33115,8 @@
       "zacini",
       "koza",
       "kava",
-      "papar"
+      "papar",
+      "kakao"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -33110,7 +33178,8 @@
       "papar",
       "zemljano",
       "zacini",
-      "slatko"
+      "slatko",
+      "kava"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -33388,7 +33457,8 @@
       "zacini",
       "koza",
       "kava",
-      "papar"
+      "papar",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -33694,7 +33764,9 @@
       "papar",
       "koza",
       "drvo",
-      "duhan"
+      "duhan",
+      "kremasto",
+      "slatko"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -34754,7 +34826,8 @@
       "zacini",
       "koza",
       "kava",
-      "papar"
+      "papar",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -35175,7 +35248,8 @@
       "zacini",
       "koza",
       "kava",
-      "papar"
+      "papar",
+      "kremasto"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -35939,7 +36013,10 @@
     "flavorTags": [
       "kakao",
       "zacini",
-      "duhan"
+      "duhan",
+      "drvo",
+      "kava",
+      "zemljano"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -36157,7 +36234,8 @@
       "kremasto",
       "zacini",
       "duhan",
-      "dim"
+      "dim",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -36703,7 +36781,10 @@
     "flavorTags": [
       "papar",
       "duhan",
-      "slatko"
+      "slatko",
+      "drvo",
+      "koza",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -36977,7 +37058,8 @@
       "zacini",
       "koza",
       "kava",
-      "kremasto"
+      "kremasto",
+      "slatko"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -37978,7 +38060,8 @@
       "zacini",
       "koza",
       "kava",
-      "kremasto"
+      "kremasto",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -39717,7 +39800,8 @@
       "zacini",
       "koza",
       "kava",
-      "papar"
+      "papar",
+      "kremasto"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -41999,6 +42083,7 @@
     "body": 1,
     "flavorTags": [
       "kremasto",
+      "koza",
       "cedar",
       "orasasti",
       "med",
@@ -42777,7 +42862,8 @@
       "zacini",
       "koza",
       "kava",
-      "kremasto"
+      "kremasto",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -43130,7 +43216,8 @@
       "zacini",
       "koza",
       "kava",
-      "kremasto"
+      "kremasto",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -43769,7 +43856,9 @@
     "flavorTags": [
       "kakao",
       "papar",
-      "drvo"
+      "drvo",
+      "kava",
+      "zemljano"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -43910,7 +43999,10 @@
     "flavorTags": [
       "kakao",
       "papar",
-      "drvo"
+      "drvo",
+      "kava",
+      "zemljano",
+      "koza"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -45741,7 +45833,10 @@
     "flavorTags": [
       "zemljano",
       "koza",
-      "zacini"
+      "zacini",
+      "orasasti",
+      "kremasto",
+      "kakao"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -46278,7 +46373,8 @@
       "zacini",
       "koza",
       "kava",
-      "drvo"
+      "drvo",
+      "voce"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -46905,9 +47001,11 @@
     "strength": 3,
     "body": 4,
     "flavorTags": [
+      "drvo",
+      "zemljano",
+      "trava-slatka",
       "kakao",
       "zacini",
-      "drvo",
       "karamela"
     ],
     "profileEstimated": true,
@@ -47150,7 +47248,9 @@
       "zemljano",
       "suho-voce",
       "duhan",
-      "slatko"
+      "slatko",
+      "kakao",
+      "kremasto"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -47347,7 +47447,8 @@
       "zacini",
       "koza",
       "kava",
-      "papar"
+      "papar",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -47581,7 +47682,10 @@
     "flavorTags": [
       "orasasti",
       "vanilija",
-      "drvo"
+      "drvo",
+      "zemljano",
+      "kremasto",
+      "kakao"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -48740,7 +48844,8 @@
       "zacini",
       "koza",
       "kava",
-      "kremasto"
+      "kremasto",
+      "papar"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -49954,7 +50059,8 @@
       "zacini",
       "koza",
       "kava",
-      "kremasto"
+      "kremasto",
+      "zemljano"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -50080,11 +50186,12 @@
     "strength": 1,
     "body": 1,
     "flavorTags": [
+      "drvo",
+      "papar",
       "kremasto",
       "cedar",
       "orasasti",
-      "med",
-      "trava-slatka"
+      "med"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -50210,11 +50317,12 @@
     "strength": 1,
     "body": 1,
     "flavorTags": [
+      "drvo",
+      "papar",
       "kremasto",
-      "cedar",
       "orasasti",
-      "med",
-      "trava-slatka"
+      "zemljano",
+      "cedar"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -52618,7 +52726,10 @@
     "body": 2,
     "flavorTags": [
       "duhan",
-      "dim"
+      "dim",
+      "kremasto",
+      "drvo",
+      "slatko"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -54115,7 +54226,9 @@
       "papar",
       "zemljano",
       "zacini",
-      "slatko"
+      "slatko",
+      "kremasto",
+      "koza"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -54676,7 +54789,8 @@
       "zacini",
       "koza",
       "kava",
-      "kakao"
+      "kakao",
+      "slatko"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -54917,8 +55031,9 @@
     "flavorTags": [
       "kakao",
       "kava",
-      "karamela",
+      "drvo",
       "slatko",
+      "karamela",
       "zemljano"
     ],
     "profileEstimated": true,
@@ -54982,7 +55097,8 @@
       "zacini",
       "koza",
       "kava",
-      "kakao"
+      "kakao",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -55044,7 +55160,8 @@
       "zacini",
       "koza",
       "kava",
-      "kakao"
+      "kakao",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -55249,7 +55366,8 @@
       "cedar",
       "zemljano",
       "orasasti",
-      "zacini"
+      "zacini",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -55647,7 +55765,8 @@
       "cedar",
       "koza",
       "zacini",
-      "kava"
+      "kava",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -56073,7 +56192,8 @@
       "zacini",
       "koza",
       "kava",
-      "kremasto"
+      "kremasto",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -56200,7 +56320,8 @@
       "zacini",
       "koza",
       "kava",
-      "kremasto"
+      "kremasto",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -56327,7 +56448,8 @@
       "zacini",
       "koza",
       "cedar",
-      "kremasto"
+      "kremasto",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -56661,7 +56783,8 @@
       "zacini",
       "koza",
       "kava",
-      "cvjetno"
+      "cvjetno",
+      "kremasto"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -56785,7 +56908,8 @@
       "cedar",
       "vanilija",
       "drvo",
-      "dim"
+      "dim",
+      "koza"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -56927,7 +57051,8 @@
       "zacini",
       "koza",
       "kava",
-      "cvjetno"
+      "cvjetno",
+      "trava-slatka"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -58078,7 +58203,8 @@
       "zacini",
       "koza",
       "kava",
-      "drvo"
+      "drvo",
+      "voce"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -58193,7 +58319,8 @@
       "zacini",
       "koza",
       "kava",
-      "drvo"
+      "drvo",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -58253,7 +58380,8 @@
       "zacini",
       "koza",
       "kava",
-      "drvo"
+      "drvo",
+      "zemljano"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -58373,7 +58501,8 @@
       "zacini",
       "koza",
       "kava",
-      "drvo"
+      "drvo",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -58530,7 +58659,9 @@
     "body": 3,
     "flavorTags": [
       "zemljano",
-      "slatko"
+      "slatko",
+      "koza",
+      "kremasto"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -58719,7 +58850,8 @@
       "zacini",
       "koza",
       "kava",
-      "kremasto"
+      "kremasto",
+      "papar"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -58782,7 +58914,8 @@
       "zacini",
       "koza",
       "cedar",
-      "kremasto"
+      "kremasto",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -58841,11 +58974,12 @@
     "strength": 1,
     "body": 1,
     "flavorTags": [
+      "drvo",
       "kremasto",
-      "cedar",
       "orasasti",
-      "med",
-      "trava-slatka"
+      "koza",
+      "cedar",
+      "med"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -58969,7 +59103,8 @@
       "zacini",
       "koza",
       "kava",
-      "kremasto"
+      "kremasto",
+      "trava-slatka"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -59031,7 +59166,8 @@
       "zacini",
       "koza",
       "kava",
-      "kremasto"
+      "kremasto",
+      "zemljano"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -59978,7 +60114,8 @@
       "zacini",
       "koza",
       "kava",
-      "drvo"
+      "drvo",
+      "kremasto"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -60053,10 +60190,12 @@
     "strength": 3,
     "body": 4,
     "flavorTags": [
+      "kremasto",
+      "slatko",
+      "orasasti",
       "kakao",
       "zacini",
-      "drvo",
-      "karamela"
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -60135,7 +60274,8 @@
       "zacini",
       "koza",
       "kava",
-      "drvo"
+      "drvo",
+      "trava-slatka"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -60681,7 +60821,8 @@
       "zacini",
       "koza",
       "kava",
-      "papar"
+      "papar",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -60794,7 +60935,8 @@
       "zacini",
       "koza",
       "kava",
-      "drvo"
+      "drvo",
+      "zemljano"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -60851,10 +60993,12 @@
     "strength": 3,
     "body": 4,
     "flavorTags": [
-      "kakao",
-      "zacini",
       "drvo",
-      "karamela"
+      "kremasto",
+      "orasasti",
+      "koza",
+      "kakao",
+      "zacini"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -60975,7 +61119,8 @@
       "zacini",
       "koza",
       "kava",
-      "papar"
+      "papar",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -61036,7 +61181,8 @@
       "zacini",
       "koza",
       "kava",
-      "papar"
+      "papar",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -61227,7 +61373,9 @@
       "kremasto",
       "cedar",
       "orasasti",
-      "vanilija"
+      "vanilija",
+      "papar",
+      "trava-slatka"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -61316,7 +61464,9 @@
     "flavorTags": [
       "kremasto",
       "orasasti",
-      "zacini"
+      "zacini",
+      "papar",
+      "slatko"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -61497,7 +61647,9 @@
       "kava",
       "papar",
       "zemljano",
-      "duhan"
+      "duhan",
+      "drvo",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -61637,10 +61789,12 @@
     "strength": 3,
     "body": 3,
     "flavorTags": [
+      "kremasto",
+      "drvo",
+      "trava-slatka",
+      "slatko",
       "zemljano",
-      "cedar",
-      "orasasti",
-      "zacini"
+      "cedar"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -63434,7 +63588,8 @@
       "zacini",
       "koza",
       "kava",
-      "drvo"
+      "drvo",
+      "trava-slatka"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -63761,7 +63916,8 @@
       "zacini",
       "koza",
       "kava",
-      "papar"
+      "papar",
+      "kremasto"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -64011,7 +64167,8 @@
       "zacini",
       "koza",
       "kava",
-      "drvo"
+      "drvo",
+      "papar"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -64314,7 +64471,11 @@
     "body": 4,
     "flavorTags": [
       "zacini",
-      "dim"
+      "dim",
+      "kremasto",
+      "drvo",
+      "kakao",
+      "kava"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -66633,7 +66794,9 @@
       "kakao",
       "papar",
       "zacini",
-      "dim"
+      "dim",
+      "drvo",
+      "kremasto"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -67615,7 +67778,8 @@
       "zacini",
       "koza",
       "kava",
-      "drvo"
+      "drvo",
+      "kremasto"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -68739,7 +68903,8 @@
       "zacini",
       "koza",
       "kava",
-      "papar"
+      "papar",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -69390,11 +69555,12 @@
     "strength": 1,
     "body": 1,
     "flavorTags": [
+      "drvo",
       "kremasto",
+      "koza",
       "cedar",
       "orasasti",
-      "med",
-      "trava-slatka"
+      "med"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -71472,7 +71638,8 @@
       "zacini",
       "koza",
       "kava",
-      "drvo"
+      "drvo",
+      "kremasto"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -71682,7 +71849,8 @@
       "zacini",
       "koza",
       "kava",
-      "kremasto"
+      "kremasto",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -72305,7 +72473,8 @@
       "zacini",
       "koza",
       "kava",
-      "papar"
+      "papar",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -72386,7 +72555,8 @@
       "zacini",
       "drvo",
       "karamela",
-      "papar"
+      "papar",
+      "zemljano"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -74676,7 +74846,8 @@
       "zacini",
       "koza",
       "kava",
-      "kremasto"
+      "kremasto",
+      "drvo"
     ],
     "smokeTimeMin": 40,
     "priceEUR": 7.35,
@@ -75463,7 +75634,8 @@
       "zacini",
       "koza",
       "kava",
-      "kremasto"
+      "kremasto",
+      "trava-slatka"
     ],
     "smokeTimeMin": 45,
     "priceEUR": 74.4,
@@ -76515,7 +76687,8 @@
       "zacini",
       "koza",
       "kava",
-      "kremasto"
+      "kremasto",
+      "drvo"
     ],
     "smokeTimeMin": 45,
     "priceEUR": 71.5,
@@ -78586,7 +78759,8 @@
       "zacini",
       "koza",
       "kava",
-      "kremasto"
+      "kremasto",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -78711,7 +78885,8 @@
       "zacini",
       "koza",
       "kava",
-      "papar"
+      "papar",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -78808,7 +78983,8 @@
       "zacini",
       "koza",
       "kava",
-      "papar"
+      "papar",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -82365,6 +82541,7 @@
     "strength": 1,
     "body": 1,
     "flavorTags": [
+      "papar",
       "kremasto",
       "cedar",
       "orasasti",
@@ -82500,7 +82677,8 @@
       "zacini",
       "koza",
       "kava",
-      "kremasto"
+      "kremasto",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -82590,6 +82768,7 @@
     "strength": 1,
     "body": 1,
     "flavorTags": [
+      "drvo",
       "kremasto",
       "cedar",
       "orasasti",
@@ -82771,7 +82950,8 @@
       "zacini",
       "koza",
       "kava",
-      "cvjetno"
+      "cvjetno",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -82833,7 +83013,8 @@
       "zacini",
       "koza",
       "kava",
-      "cvjetno"
+      "cvjetno",
+      "kremasto"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -82957,7 +83138,8 @@
       "zacini",
       "koza",
       "kava",
-      "cvjetno"
+      "cvjetno",
+      "kremasto"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -83019,7 +83201,8 @@
       "zacini",
       "koza",
       "kava",
-      "cvjetno"
+      "cvjetno",
+      "kremasto"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -83081,7 +83264,8 @@
       "zacini",
       "koza",
       "kava",
-      "cvjetno"
+      "cvjetno",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -83261,11 +83445,12 @@
     "strength": 2,
     "body": 2,
     "flavorTags": [
+      "papar",
       "kremasto",
+      "koza",
+      "zemljano",
       "cedar",
-      "orasasti",
-      "med",
-      "trava-slatka"
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -83472,11 +83657,12 @@
     "strength": 1,
     "body": 1,
     "flavorTags": [
-      "kremasto",
-      "cedar",
+      "drvo",
       "orasasti",
-      "med",
-      "trava-slatka"
+      "kremasto",
+      "kava",
+      "cedar",
+      "med"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -83601,7 +83787,8 @@
       "zacini",
       "koza",
       "kava",
-      "papar"
+      "papar",
+      "zemljano"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -83852,7 +84039,8 @@
       "zacini",
       "koza",
       "kava",
-      "papar"
+      "papar",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -87311,7 +87499,8 @@
       "zacini",
       "koza",
       "kava",
-      "drvo"
+      "drvo",
+      "slatko"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -87492,7 +87681,8 @@
       "zacini",
       "koza",
       "kava",
-      "kremasto"
+      "kremasto",
+      "slatko"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -87693,11 +87883,12 @@
     "strength": 3,
     "body": 4,
     "flavorTags": [
-      "kakao",
+      "zemljano",
+      "papar",
       "kava",
+      "kakao",
       "karamela",
-      "slatko",
-      "zemljano"
+      "slatko"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -88032,7 +88223,8 @@
       "zacini",
       "koza",
       "kava",
-      "papar"
+      "papar",
+      "kakao"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -89120,11 +89312,12 @@
     "strength": 3,
     "body": 4,
     "flavorTags": [
-      "kakao",
-      "kava",
-      "karamela",
+      "drvo",
+      "zemljano",
+      "kremasto",
       "slatko",
-      "zemljano"
+      "kava",
+      "koza"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -89199,10 +89392,12 @@
     "strength": 3,
     "body": 3,
     "flavorTags": [
+      "drvo",
+      "trava-slatka",
+      "kremasto",
       "cedar",
       "zacini",
-      "koza",
-      "kava"
+      "koza"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -89258,6 +89453,8 @@
     "strength": 3,
     "body": 3,
     "flavorTags": [
+      "kremasto",
+      "drvo",
       "zemljano",
       "cedar",
       "orasasti",
@@ -89427,11 +89624,12 @@
     "strength": 3,
     "body": 4,
     "flavorTags": [
-      "kakao",
       "kava",
-      "karamela",
+      "drvo",
       "slatko",
-      "zemljano"
+      "papar",
+      "trava-slatka",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -89608,11 +89806,12 @@
     "strength": 3,
     "body": 4,
     "flavorTags": [
+      "zemljano",
+      "papar",
       "kakao",
       "kava",
       "karamela",
-      "slatko",
-      "zemljano"
+      "slatko"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -93659,7 +93858,10 @@
     "flavorTags": [
       "kakao",
       "cedar",
-      "slatko"
+      "slatko",
+      "drvo",
+      "kremasto",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -93741,7 +93943,10 @@
     "flavorTags": [
       "kakao",
       "cedar",
-      "slatko"
+      "slatko",
+      "drvo",
+      "papar",
+      "kremasto"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -95071,7 +95276,8 @@
       "zacini",
       "koza",
       "kava",
-      "drvo"
+      "drvo",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -95262,7 +95468,8 @@
       "zacini",
       "drvo",
       "karamela",
-      "kremasto"
+      "kremasto",
+      "kava"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -96212,7 +96419,8 @@
       "zacini",
       "koza",
       "kava",
-      "kremasto"
+      "kremasto",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -98955,7 +99163,8 @@
       "zacini",
       "koza",
       "kava",
-      "zacini-slatki"
+      "zacini-slatki",
+      "kremasto"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -99017,7 +99226,8 @@
       "zacini",
       "koza",
       "kava",
-      "zacini-slatki"
+      "zacini-slatki",
+      "kremasto"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -100096,7 +100306,8 @@
       "zacini",
       "koza",
       "kava",
-      "cvjetno"
+      "cvjetno",
+      "kremasto"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -100398,7 +100609,8 @@
       "zacini",
       "koza",
       "kava",
-      "cvjetno"
+      "cvjetno",
+      "kremasto"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -101453,9 +101665,11 @@
     "strength": 3,
     "body": 3,
     "flavorTags": [
+      "drvo",
+      "koza",
+      "kremasto",
       "cedar",
       "zacini",
-      "koza",
       "kava"
     ],
     "profileEstimated": true,
@@ -102056,7 +102270,9 @@
       "kava",
       "kremasto",
       "zacini",
-      "dim"
+      "dim",
+      "drvo",
+      "trava-slatka"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -102674,7 +102890,8 @@
       "zacini",
       "koza",
       "kava",
-      "papar"
+      "papar",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -103090,7 +103307,8 @@
       "zacini",
       "koza",
       "kava",
-      "kremasto"
+      "kremasto",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -103514,7 +103732,8 @@
       "zacini",
       "koza",
       "kava",
-      "kremasto"
+      "kremasto",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -103623,6 +103842,7 @@
     "strength": 1,
     "body": 1,
     "flavorTags": [
+      "drvo",
       "kremasto",
       "cedar",
       "orasasti",
@@ -105967,7 +106187,8 @@
       "zacini",
       "koza",
       "kava",
-      "kremasto"
+      "kremasto",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -106149,7 +106370,8 @@
       "zacini",
       "koza",
       "kava",
-      "drvo"
+      "drvo",
+      "kremasto"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -108214,7 +108436,8 @@
       "zacini",
       "koza",
       "kava",
-      "drvo"
+      "drvo",
+      "kremasto"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -108502,7 +108725,8 @@
       "zacini",
       "koza",
       "kava",
-      "kremasto"
+      "kremasto",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -110762,7 +110986,8 @@
       "zacini",
       "koza",
       "kava",
-      "drvo"
+      "drvo",
+      "trava-slatka"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -110884,7 +111109,8 @@
       "zacini",
       "koza",
       "kava",
-      "kremasto"
+      "kremasto",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -114628,7 +114854,8 @@
       "koza",
       "zacini",
       "dim",
-      "kava"
+      "kava",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -114691,7 +114918,8 @@
       "koza",
       "zacini",
       "dim",
-      "kava"
+      "kava",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -115010,7 +115238,8 @@
       "zacini",
       "koza",
       "kava",
-      "papar"
+      "papar",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -117219,7 +117448,8 @@
       "cedar",
       "orasasti",
       "zacini",
-      "drvo"
+      "drvo",
+      "papar"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -117787,7 +118017,8 @@
       "zacini",
       "koza",
       "kava",
-      "drvo"
+      "drvo",
+      "zemljano"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -118928,7 +119159,8 @@
       "zacini",
       "koza",
       "kava",
-      "kremasto"
+      "kremasto",
+      "papar"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -120405,7 +120637,10 @@
     "flavorTags": [
       "kakao",
       "kava",
-      "zacini"
+      "zacini",
+      "drvo",
+      "zemljano",
+      "koza"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -120509,7 +120744,9 @@
       "kakao",
       "kava",
       "papar",
-      "zemljano"
+      "zemljano",
+      "drvo",
+      "kremasto"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -120614,7 +120851,8 @@
       "zacini",
       "koza",
       "kava",
-      "papar"
+      "papar",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -121441,7 +121679,8 @@
       "kremasto",
       "zacini",
       "duhan",
-      "slatko"
+      "slatko",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -121638,7 +121877,9 @@
       "cedar",
       "karamela",
       "citrus",
-      "dim"
+      "dim",
+      "drvo",
+      "kremasto"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -122008,6 +122249,7 @@
     "strength": 1,
     "body": 1,
     "flavorTags": [
+      "drvo",
       "kremasto",
       "cedar",
       "orasasti",
@@ -122657,7 +122899,8 @@
       "orasasti",
       "drvo",
       "duhan",
-      "dim"
+      "dim",
+      "kremasto"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -124182,9 +124425,11 @@
     "strength": 3,
     "body": 4,
     "flavorTags": [
+      "drvo",
+      "zemljano",
+      "trava-slatka",
       "kakao",
       "zacini",
-      "drvo",
       "karamela"
     ],
     "profileEstimated": true,
@@ -124247,7 +124492,8 @@
       "zacini",
       "koza",
       "kava",
-      "drvo"
+      "drvo",
+      "zemljano"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -124409,7 +124655,8 @@
       "zacini",
       "koza",
       "kava",
-      "papar"
+      "papar",
+      "kremasto"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -124968,11 +125215,12 @@
     "strength": 1,
     "body": 1,
     "flavorTags": [
+      "drvo",
       "kremasto",
+      "papar",
+      "trava-slatka",
       "cedar",
-      "orasasti",
-      "med",
-      "trava-slatka"
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -125069,7 +125317,8 @@
       "zacini",
       "koza",
       "kava",
-      "kremasto"
+      "kremasto",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -125148,7 +125397,8 @@
       "zacini",
       "koza",
       "kava",
-      "kremasto"
+      "kremasto",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -126071,9 +126321,11 @@
     "strength": 3,
     "body": 4,
     "flavorTags": [
+      "drvo",
+      "trava-slatka",
+      "kremasto",
       "kakao",
       "zacini",
-      "drvo",
       "karamela"
     ],
     "profileEstimated": true,
@@ -126195,7 +126447,8 @@
       "zacini",
       "koza",
       "kava",
-      "drvo"
+      "drvo",
+      "trava-slatka"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -126252,6 +126505,7 @@
     "strength": 3,
     "body": 4,
     "flavorTags": [
+      "trava-slatka",
       "kakao",
       "zacini",
       "drvo",
@@ -126313,10 +126567,11 @@
     "body": 1,
     "flavorTags": [
       "kremasto",
-      "cedar",
+      "papar",
       "orasasti",
-      "med",
-      "trava-slatka"
+      "kava",
+      "drvo",
+      "cedar"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -126914,7 +127169,9 @@
       "kava",
       "kremasto",
       "zacini",
-      "duhan"
+      "duhan",
+      "drvo",
+      "zemljano"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -129824,7 +130081,8 @@
       "zacini",
       "koza",
       "kava",
-      "cvjetno"
+      "cvjetno",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -131568,9 +131826,10 @@
     "strength": 1,
     "body": 1,
     "flavorTags": [
+      "drvo",
+      "orasasti",
       "kremasto",
       "cedar",
-      "orasasti",
       "med",
       "trava-slatka"
     ],
@@ -132582,7 +132841,8 @@
       "zacini",
       "koza",
       "kava",
-      "papar"
+      "papar",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -136673,7 +136933,11 @@
     "body": 3,
     "flavorTags": [
       "kakao",
-      "vanilija"
+      "vanilija",
+      "zemljano",
+      "drvo",
+      "papar",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -138715,7 +138979,8 @@
       "zacini",
       "koza",
       "kava",
-      "drvo"
+      "drvo",
+      "kremasto"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -138776,7 +139041,8 @@
       "zacini",
       "koza",
       "kava",
-      "drvo"
+      "drvo",
+      "zemljano"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -139027,7 +139293,8 @@
     "flavorTags": [
       "zemljano",
       "zacini",
-      "drvo"
+      "drvo",
+      "koza"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -139112,7 +139379,8 @@
       "kremasto",
       "cedar",
       "orasasti",
-      "slatko"
+      "slatko",
+      "kava"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -139210,7 +139478,8 @@
       "zacini",
       "koza",
       "kava",
-      "kremasto"
+      "kremasto",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -139422,7 +139691,10 @@
     "body": 3,
     "flavorTags": [
       "zacini",
-      "slatko"
+      "slatko",
+      "drvo",
+      "kremasto",
+      "koza"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -139559,7 +139831,8 @@
       "kava",
       "melasa",
       "dim",
-      "slatko"
+      "slatko",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -139732,7 +140005,8 @@
       "zacini",
       "koza",
       "kava",
-      "kremasto"
+      "kremasto",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -140246,7 +140520,8 @@
       "cedar",
       "orasasti",
       "zacini",
-      "kremasto"
+      "kremasto",
+      "koza"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -140324,7 +140599,9 @@
       "kakao",
       "kava",
       "duhan",
-      "slatko"
+      "slatko",
+      "kremasto",
+      "zemljano"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -140525,7 +140802,8 @@
       "cedar",
       "orasasti",
       "zacini",
-      "kremasto"
+      "kremasto",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -141160,7 +141438,9 @@
     "flavorTags": [
       "orasasti",
       "zacini",
-      "slatko"
+      "slatko",
+      "drvo",
+      "kremasto"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -141415,7 +141695,8 @@
       "kava",
       "kremasto",
       "zacini",
-      "slatko"
+      "slatko",
+      "zemljano"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -142341,7 +142622,8 @@
       "zacini",
       "koza",
       "kava",
-      "papar"
+      "papar",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -142473,7 +142755,8 @@
       "zacini",
       "koza",
       "kava",
-      "papar"
+      "papar",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -143408,11 +143691,12 @@
     "strength": 5,
     "body": 4,
     "flavorTags": [
-      "kakao",
-      "kava",
-      "karamela",
-      "slatko",
-      "zemljano"
+      "drvo",
+      "zemljano",
+      "papar",
+      "koza",
+      "kremasto",
+      "kakao"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -143887,7 +144171,8 @@
       "zacini",
       "drvo",
       "duhan",
-      "slatko"
+      "slatko",
+      "kremasto"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -144494,9 +144779,9 @@
     "strength": 3,
     "body": 4,
     "flavorTags": [
+      "drvo",
       "kakao",
       "zacini",
-      "drvo",
       "karamela"
     ],
     "profileEstimated": true,
@@ -145035,7 +145320,8 @@
       "zacini",
       "koza",
       "kava",
-      "kremasto"
+      "kremasto",
+      "papar"
     ],
     "smokeTimeMin": 50,
     "priceEUR": 9.0,
@@ -145338,7 +145624,8 @@
       "cedar",
       "orasasti",
       "zacini-slatki",
-      "zacini"
+      "zacini",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -145436,7 +145723,8 @@
       "cedar",
       "orasasti",
       "zacini-slatki",
-      "zacini"
+      "zacini",
+      "papar"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -146057,7 +146345,10 @@
     "flavorTags": [
       "cedar",
       "zacini",
-      "citrus"
+      "citrus",
+      "drvo",
+      "koza",
+      "zemljano"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -146859,7 +147150,8 @@
       "zacini",
       "koza",
       "kava",
-      "kremasto"
+      "kremasto",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -148067,7 +148359,8 @@
       "zacini",
       "koza",
       "kava",
-      "cvjetno"
+      "cvjetno",
+      "papar"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -148129,7 +148422,8 @@
       "zacini",
       "koza",
       "kava",
-      "papar"
+      "papar",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -148727,7 +149021,10 @@
     "body": 3,
     "flavorTags": [
       "cedar",
-      "orasasti"
+      "orasasti",
+      "drvo",
+      "koza",
+      "zemljano"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -148806,7 +149103,8 @@
       "zacini",
       "koza",
       "kava",
-      "cvjetno"
+      "cvjetno",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -151289,7 +151587,8 @@
       "zacini",
       "koza",
       "kava",
-      "drvo"
+      "drvo",
+      "papar"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -155809,7 +156108,8 @@
       "zacini",
       "koza",
       "kava",
-      "papar"
+      "papar",
+      "kremasto"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -155982,7 +156282,8 @@
       "zacini",
       "drvo",
       "karamela",
-      "kremasto"
+      "kremasto",
+      "zemljano"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -157481,7 +157782,10 @@
     "flavorTags": [
       "papar",
       "zemljano",
-      "dim"
+      "dim",
+      "kremasto",
+      "drvo",
+      "slatko"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -158467,7 +158771,8 @@
       "zacini",
       "drvo",
       "karamela",
-      "papar"
+      "papar",
+      "zemljano"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -158595,7 +158900,8 @@
       "zacini",
       "koza",
       "kava",
-      "papar"
+      "papar",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -159060,7 +159366,8 @@
       "zacini",
       "koza",
       "kava",
-      "cvjetno"
+      "cvjetno",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -159122,7 +159429,8 @@
       "zacini",
       "koza",
       "kava",
-      "cvjetno"
+      "cvjetno",
+      "papar"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -160428,7 +160736,8 @@
       "zacini",
       "koza",
       "kava",
-      "zemljano"
+      "zemljano",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -162198,7 +162507,8 @@
       "zacini",
       "koza",
       "kava",
-      "papar"
+      "papar",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -163434,11 +163744,12 @@
     "strength": 1,
     "body": 1,
     "flavorTags": [
+      "drvo",
+      "zemljano",
       "kremasto",
       "cedar",
       "orasasti",
-      "med",
-      "trava-slatka"
+      "med"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -164346,7 +164657,11 @@
     "body": 3,
     "flavorTags": [
       "kakao",
-      "zacini"
+      "zacini",
+      "drvo",
+      "papar",
+      "kremasto",
+      "koza"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -164433,10 +164748,12 @@
     "strength": 5,
     "body": 5,
     "flavorTags": [
-      "papar",
-      "zacini",
-      "koza",
-      "cedar"
+      "drvo",
+      "slatko",
+      "kakao",
+      "kava",
+      "zemljano",
+      "papar"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -164613,7 +164930,8 @@
       "zacini",
       "drvo",
       "karamela",
-      "papar"
+      "papar",
+      "trava-slatka"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -165376,7 +165694,8 @@
       "papar",
       "kremasto",
       "zemljano",
-      "slatko"
+      "slatko",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -166726,7 +167045,8 @@
       "zacini",
       "koza",
       "kava",
-      "kremasto"
+      "kremasto",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -166787,7 +167107,11 @@
     "body": 1,
     "flavorTags": [
       "vanilija",
-      "drvo"
+      "drvo",
+      "trava-slatka",
+      "koza",
+      "zemljano",
+      "kremasto"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -166853,6 +167177,7 @@
     "strength": 3,
     "body": 4,
     "flavorTags": [
+      "slatko",
       "kakao",
       "kava",
       "zemljano",
@@ -167730,10 +168055,12 @@
     "strength": 5,
     "body": 3,
     "flavorTags": [
-      "cedar",
-      "zacini",
+      "kremasto",
+      "kava",
+      "zemljano",
+      "papar",
       "koza",
-      "kava"
+      "cedar"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -168263,7 +168590,8 @@
       "zacini",
       "koza",
       "kava",
-      "papar"
+      "papar",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -170380,7 +170708,8 @@
       "kava",
       "kremasto",
       "cedar",
-      "dim"
+      "dim",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -170662,7 +170991,8 @@
       "papar",
       "koza",
       "drvo",
-      "slatko"
+      "slatko",
+      "zemljano"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -170772,7 +171102,8 @@
       "kremasto",
       "zemljano",
       "orasasti",
-      "slatko"
+      "slatko",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -171149,8 +171480,8 @@
     "body": 1,
     "flavorTags": [
       "kremasto",
-      "cedar",
       "orasasti",
+      "cedar",
       "med",
       "trava-slatka"
     ],
@@ -171635,7 +171966,8 @@
       "zacini",
       "koza",
       "kava",
-      "papar"
+      "papar",
+      "kremasto"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -171695,7 +172027,8 @@
       "zacini",
       "koza",
       "kava",
-      "papar"
+      "papar",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -171883,7 +172216,8 @@
       "zacini",
       "koza",
       "kava",
-      "drvo"
+      "drvo",
+      "zemljano"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -174320,7 +174654,8 @@
       "zacini",
       "koza",
       "kava",
-      "papar"
+      "papar",
+      "zemljano"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -174750,7 +175085,8 @@
       "zacini",
       "koza",
       "kava",
-      "drvo"
+      "drvo",
+      "kakao"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -174810,7 +175146,8 @@
       "zacini",
       "koza",
       "kava",
-      "drvo"
+      "drvo",
+      "kremasto"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -175147,11 +175484,12 @@
     "strength": 1,
     "body": 1,
     "flavorTags": [
+      "drvo",
       "kremasto",
+      "trava-slatka",
+      "voce",
       "cedar",
-      "orasasti",
-      "med",
-      "trava-slatka"
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -175632,6 +175970,7 @@
     "strength": 1,
     "body": 1,
     "flavorTags": [
+      "drvo",
       "kremasto",
       "cedar",
       "orasasti",
@@ -179371,7 +179710,8 @@
       "zacini",
       "koza",
       "kava",
-      "papar"
+      "papar",
+      "kremasto"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -179433,7 +179773,8 @@
       "zacini",
       "koza",
       "kava",
-      "papar"
+      "papar",
+      "kremasto"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -179529,7 +179870,8 @@
       "zacini",
       "koza",
       "kava",
-      "papar"
+      "papar",
+      "kakao"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -183118,7 +183460,8 @@
       "zacini",
       "koza",
       "cedar",
-      "cvjetno"
+      "cvjetno",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -183198,7 +183541,8 @@
       "zacini",
       "koza",
       "cedar",
-      "cvjetno"
+      "cvjetno",
+      "voce"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -183360,7 +183704,8 @@
       "zacini",
       "koza",
       "kava",
-      "papar"
+      "papar",
+      "kremasto"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -184394,7 +184739,8 @@
       "zacini",
       "koza",
       "cedar",
-      "drvo"
+      "drvo",
+      "kremasto"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -186048,7 +186394,8 @@
       "zacini",
       "koza",
       "kava",
-      "drvo"
+      "drvo",
+      "kremasto"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -186108,7 +186455,8 @@
       "zacini",
       "koza",
       "kava",
-      "drvo"
+      "drvo",
+      "kremasto"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -186168,7 +186516,8 @@
       "zacini",
       "koza",
       "kava",
-      "drvo"
+      "drvo",
+      "kremasto"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -186228,7 +186577,8 @@
       "zacini",
       "koza",
       "cedar",
-      "drvo"
+      "drvo",
+      "kremasto"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -186503,7 +186853,8 @@
       "zacini",
       "koza",
       "kava",
-      "drvo"
+      "drvo",
+      "kremasto"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -186983,7 +187334,9 @@
       "zemljano",
       "zacini",
       "dim",
-      "slatko"
+      "slatko",
+      "orasasti",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -187131,7 +187484,8 @@
       "zacini",
       "koza",
       "kava",
-      "drvo"
+      "drvo",
+      "kremasto"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -187831,7 +188185,9 @@
     "flavorTags": [
       "papar",
       "kremasto",
-      "zacini"
+      "zacini",
+      "drvo",
+      "slatko"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -189404,7 +189760,8 @@
       "zacini",
       "koza",
       "kava",
-      "papar"
+      "papar",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -193297,7 +193654,8 @@
       "zacini",
       "koza",
       "kava",
-      "kremasto"
+      "kremasto",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -193395,7 +193753,8 @@
       "zacini",
       "koza",
       "kava",
-      "kremasto"
+      "kremasto",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -193554,7 +193913,8 @@
       "zacini",
       "koza",
       "kava",
-      "drvo"
+      "drvo",
+      "trava-slatka"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -193611,10 +193971,12 @@
     "strength": 4,
     "body": 5,
     "flavorTags": [
+      "kremasto",
+      "slatko",
+      "trava-slatka",
+      "voce",
       "kakao",
-      "zacini",
-      "drvo",
-      "karamela"
+      "zacini"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -194038,7 +194400,8 @@
       "zacini",
       "koza",
       "kava",
-      "drvo"
+      "drvo",
+      "trava-slatka"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -194095,9 +194458,10 @@
     "strength": 3,
     "body": 4,
     "flavorTags": [
+      "drvo",
+      "voce",
       "kakao",
       "zacini",
-      "drvo",
       "karamela"
     ],
     "profileEstimated": true,
@@ -204099,7 +204463,8 @@
       "zacini",
       "drvo",
       "karamela",
-      "papar"
+      "papar",
+      "kremasto"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -204242,7 +204607,8 @@
       "zacini",
       "koza",
       "kava",
-      "papar"
+      "papar",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -207736,7 +208102,8 @@
       "zacini",
       "koza",
       "kava",
-      "kremasto"
+      "kremasto",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -207878,7 +208245,8 @@
       "zacini",
       "koza",
       "cedar",
-      "kremasto"
+      "kremasto",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -208054,7 +208422,8 @@
       "zacini",
       "koza",
       "kava",
-      "kremasto"
+      "kremasto",
+      "kakao"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -208210,7 +208579,8 @@
       "zacini",
       "koza",
       "kava",
-      "kremasto"
+      "kremasto",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -208272,7 +208642,8 @@
       "zacini",
       "koza",
       "kava",
-      "kremasto"
+      "kremasto",
+      "slatko"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -208397,7 +208768,8 @@
       "zacini",
       "koza",
       "kava",
-      "kremasto"
+      "kremasto",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -208595,7 +208967,8 @@
       "zacini",
       "koza",
       "kava",
-      "papar"
+      "papar",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -209260,7 +209633,8 @@
       "zacini",
       "koza",
       "kava",
-      "kremasto"
+      "kremasto",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -210386,7 +210760,9 @@
       "papar",
       "cedar",
       "suho-voce",
-      "slatko"
+      "slatko",
+      "drvo",
+      "kremasto"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -210688,7 +211064,8 @@
       "zacini",
       "koza",
       "cedar",
-      "kremasto"
+      "kremasto",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -211532,11 +211909,12 @@
     "strength": 1,
     "body": 1,
     "flavorTags": [
-      "kremasto",
-      "cedar",
       "orasasti",
-      "med",
-      "trava-slatka"
+      "drvo",
+      "trava-slatka",
+      "kremasto",
+      "slatko",
+      "koza"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -212232,7 +212610,10 @@
     "flavorTags": [
       "papar",
       "cedar",
-      "dim"
+      "dim",
+      "drvo",
+      "orasasti",
+      "kakao"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -212877,11 +213258,12 @@
     "strength": 1,
     "body": 1,
     "flavorTags": [
+      "drvo",
       "kremasto",
-      "cedar",
-      "orasasti",
-      "med",
-      "trava-slatka"
+      "slatko",
+      "koza",
+      "zemljano",
+      "cedar"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -212995,7 +213377,8 @@
       "zacini",
       "koza",
       "kava",
-      "kremasto"
+      "kremasto",
+      "zemljano"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -213142,7 +213525,8 @@
       "zacini",
       "koza",
       "kava",
-      "drvo"
+      "drvo",
+      "kremasto"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -213333,7 +213717,8 @@
       "zacini",
       "koza",
       "kava",
-      "drvo"
+      "drvo",
+      "kremasto"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -215405,7 +215790,8 @@
       "zacini",
       "koza",
       "cedar",
-      "drvo"
+      "drvo",
+      "zemljano"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -216051,10 +216437,12 @@
     "strength": 5,
     "body": 5,
     "flavorTags": [
+      "drvo",
+      "papar",
+      "slatko",
       "cedar",
       "zacini",
-      "koza",
-      "kava"
+      "koza"
     ],
     "smokeTimeMin": 50,
     "priceEUR": null,
@@ -216140,10 +216528,12 @@
     "strength": 4,
     "body": 4,
     "flavorTags": [
-      "cedar",
-      "zacini",
+      "drvo",
+      "papar",
       "koza",
-      "kava"
+      "zemljano",
+      "cedar",
+      "zacini"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -216752,7 +217142,8 @@
       "zacini",
       "koza",
       "kava",
-      "papar"
+      "papar",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -216816,7 +217207,8 @@
       "zacini",
       "koza",
       "kava",
-      "papar"
+      "papar",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -216880,7 +217272,8 @@
       "zacini",
       "koza",
       "kava",
-      "papar"
+      "papar",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -217204,7 +217597,8 @@
       "zacini",
       "koza",
       "kava",
-      "drvo"
+      "drvo",
+      "kremasto"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -217598,7 +217992,8 @@
       "zemljano",
       "vanilija",
       "duhan",
-      "slatko"
+      "slatko",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -218784,7 +219179,8 @@
       "koza",
       "zacini",
       "dim",
-      "kava"
+      "kava",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -221383,7 +221779,8 @@
       "zacini",
       "citrus",
       "dim",
-      "slatko"
+      "slatko",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -222310,7 +222707,8 @@
       "zacini",
       "koza",
       "kava",
-      "papar"
+      "papar",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -222550,7 +222948,8 @@
       "zacini",
       "koza",
       "kava",
-      "papar"
+      "papar",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -222664,7 +223063,8 @@
       "zacini",
       "koza",
       "kava",
-      "papar"
+      "papar",
+      "zemljano"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -223828,7 +224228,8 @@
       "zacini",
       "koza",
       "kava",
-      "kremasto"
+      "kremasto",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -224944,7 +225345,8 @@
       "zacini",
       "koza",
       "kava",
-      "kremasto"
+      "kremasto",
+      "papar"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -226726,11 +227128,12 @@
     "strength": 1,
     "body": 1,
     "flavorTags": [
+      "drvo",
+      "trava-slatka",
+      "orasasti",
       "kremasto",
       "cedar",
-      "orasasti",
-      "med",
-      "trava-slatka"
+      "med"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -228054,11 +228457,12 @@
     "strength": 1,
     "body": 1,
     "flavorTags": [
+      "drvo",
       "kremasto",
-      "cedar",
-      "orasasti",
-      "med",
-      "trava-slatka"
+      "trava-slatka",
+      "koza",
+      "zemljano",
+      "cedar"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -228155,7 +228559,8 @@
       "zacini",
       "koza",
       "kava",
-      "kremasto"
+      "kremasto",
+      "kakao"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -228673,7 +229078,8 @@
       "zacini",
       "drvo",
       "karamela",
-      "kremasto"
+      "kremasto",
+      "koza"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -229132,7 +229538,8 @@
       "zacini",
       "koza",
       "kava",
-      "kremasto"
+      "kremasto",
+      "kakao"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -229270,11 +229677,12 @@
     "strength": 1,
     "body": 1,
     "flavorTags": [
+      "drvo",
       "kremasto",
-      "cedar",
       "orasasti",
-      "med",
-      "trava-slatka"
+      "zemljano",
+      "koza",
+      "cedar"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -229671,7 +230079,8 @@
       "zacini",
       "koza",
       "kava",
-      "papar"
+      "papar",
+      "kakao"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -229866,7 +230275,8 @@
       "zacini",
       "koza",
       "kava",
-      "cvjetno"
+      "cvjetno",
+      "kremasto"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -230093,7 +230503,8 @@
       "zacini",
       "koza",
       "kava",
-      "kremasto"
+      "kremasto",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -230155,7 +230566,8 @@
       "zacini",
       "koza",
       "cedar",
-      "kremasto"
+      "kremasto",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -230217,7 +230629,8 @@
       "zacini",
       "koza",
       "kava",
-      "kremasto"
+      "kremasto",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -230436,10 +230849,12 @@
     "strength": 3,
     "body": 4,
     "flavorTags": [
-      "kakao",
-      "zacini",
       "drvo",
-      "karamela"
+      "papar",
+      "kremasto",
+      "slatko",
+      "kava",
+      "koza"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -232630,7 +233045,8 @@
       "zacini",
       "koza",
       "kava",
-      "orasasti"
+      "orasasti",
+      "kremasto"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -232692,7 +233108,8 @@
       "zacini",
       "koza",
       "kava",
-      "orasasti"
+      "orasasti",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -232754,7 +233171,8 @@
       "zacini",
       "koza",
       "kava",
-      "orasasti"
+      "orasasti",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -233289,7 +233707,8 @@
       "zacini",
       "drvo",
       "karamela",
-      "orasasti"
+      "orasasti",
+      "slatko"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -240471,7 +240890,8 @@
       "zacini",
       "koza",
       "kava",
-      "papar"
+      "papar",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -240534,7 +240954,8 @@
       "zacini",
       "koza",
       "kava",
-      "papar"
+      "papar",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -240597,7 +241018,8 @@
       "zacini",
       "koza",
       "kava",
-      "papar"
+      "papar",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -240660,7 +241082,8 @@
       "zacini",
       "koza",
       "kava",
-      "papar"
+      "papar",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -242318,10 +242741,11 @@
     "body": 1,
     "flavorTags": [
       "kremasto",
+      "drvo",
+      "voce",
+      "kava",
       "cedar",
-      "orasasti",
-      "med",
-      "trava-slatka"
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -242384,7 +242808,8 @@
       "zacini",
       "drvo",
       "karamela",
-      "kremasto"
+      "kremasto",
+      "papar"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -243203,7 +243628,8 @@
       "zacini",
       "koza",
       "kava",
-      "papar"
+      "papar",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -243266,7 +243692,8 @@
       "zacini",
       "koza",
       "kava",
-      "papar"
+      "papar",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -243389,7 +243816,8 @@
       "zacini",
       "koza",
       "kava",
-      "kremasto"
+      "kremasto",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -243452,7 +243880,8 @@
       "zacini",
       "koza",
       "kava",
-      "kremasto"
+      "kremasto",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -243515,7 +243944,8 @@
       "zacini",
       "koza",
       "kava",
-      "kremasto"
+      "kremasto",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -244111,7 +244541,8 @@
       "zacini",
       "koza",
       "kava",
-      "kremasto"
+      "kremasto",
+      "papar"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -244263,10 +244694,12 @@
     "strength": 3,
     "body": 3,
     "flavorTags": [
+      "kava",
+      "drvo",
+      "papar",
+      "orasasti",
       "cedar",
-      "zacini",
-      "koza",
-      "kava"
+      "zacini"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -244510,7 +244943,8 @@
       "cedar",
       "orasasti",
       "zacini",
-      "kremasto"
+      "kremasto",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -244656,8 +245090,9 @@
     "body": 2,
     "flavorTags": [
       "kremasto",
-      "cedar",
+      "slatko",
       "orasasti",
+      "cedar",
       "med",
       "trava-slatka"
     ],
@@ -245105,7 +245540,8 @@
       "zacini",
       "koza",
       "kava",
-      "kremasto"
+      "kremasto",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -245284,7 +245720,8 @@
       "zacini",
       "koza",
       "kava",
-      "kremasto"
+      "kremasto",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -245346,7 +245783,8 @@
       "zacini",
       "koza",
       "kava",
-      "cvjetno"
+      "cvjetno",
+      "zemljano"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -245503,7 +245941,8 @@
       "zacini",
       "koza",
       "kava",
-      "cvjetno"
+      "cvjetno",
+      "kremasto"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -245731,7 +246170,8 @@
       "zacini",
       "koza",
       "kava",
-      "cvjetno"
+      "cvjetno",
+      "kremasto"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -245794,7 +246234,8 @@
       "zacini",
       "koza",
       "kava",
-      "cvjetno"
+      "cvjetno",
+      "zemljano"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -245857,7 +246298,8 @@
       "zacini",
       "koza",
       "kava",
-      "cvjetno"
+      "cvjetno",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -246365,7 +246807,8 @@
       "zacini",
       "drvo",
       "karamela",
-      "papar"
+      "papar",
+      "kremasto"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -246728,7 +247171,8 @@
       "zacini",
       "koza",
       "kava",
-      "papar"
+      "papar",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -248052,7 +248496,8 @@
       "zacini",
       "koza",
       "kava",
-      "kremasto"
+      "kremasto",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -249030,11 +249475,12 @@
     "strength": 1,
     "body": 1,
     "flavorTags": [
+      "drvo",
+      "trava-slatka",
       "kremasto",
+      "koza",
       "cedar",
-      "orasasti",
-      "med",
-      "trava-slatka"
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -249275,7 +249721,8 @@
       "zacini",
       "koza",
       "kava",
-      "kremasto"
+      "kremasto",
+      "zemljano"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -249404,7 +249851,8 @@
       "zacini",
       "koza",
       "kava",
-      "kremasto"
+      "kremasto",
+      "zemljano"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -249970,7 +250418,9 @@
     "flavorTags": [
       "kakao",
       "cedar",
-      "citrus"
+      "citrus",
+      "kremasto",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -251170,7 +251620,8 @@
       "zacini",
       "koza",
       "kava",
-      "drvo"
+      "drvo",
+      "orasasti"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -253309,7 +253760,8 @@
       "zacini",
       "koza",
       "kava",
-      "papar"
+      "papar",
+      "drvo"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -255237,7 +255689,8 @@
       "zacini",
       "koza",
       "kava",
-      "drvo"
+      "drvo",
+      "slatko"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -255545,6 +255998,7 @@
     "body": 4,
     "flavorTags": [
       "kakao",
+      "slatko",
       "zacini",
       "drvo",
       "karamela"
@@ -255982,7 +256436,8 @@
       "zacini",
       "koza",
       "kava",
-      "drvo"
+      "drvo",
+      "papar"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
