@@ -214,6 +214,30 @@ const STRINGS = {
   "taste.mine": { hr: "tvoja ocjena", en: "your rating" },
   "taste.edit": { hr: "Ocijeni snagu i tijelo", en: "Rate strength and body" },
   "taste.clear": { hr: "Vrati na katalog", en: "Back to catalog value" },
+  "report.title": { hr: "Pošalji dojmove", en: "Send your impressions" },
+  "report.hint": {
+    hr: "Tvoje ocjene snage i tijela mogu ući u katalog, pa ih vidi svatko tko koristi app. Prijava se otvara na GitHubu već popunjena — samo je pošalješ.",
+    en: "Your strength and body ratings can go into the catalog, so everyone using the app sees them. The report opens on GitHub pre-filled — you just submit it.",
+  },
+  "report.who": { hr: "Tko ocjenjuje", en: "Who is rating" },
+  "report.whoPlaceholder": { hr: "tvoje ime ili nadimak", en: "your name or nickname" },
+  "report.count": { hr: "Ocijenjenih cigara", en: "Cigars rated" },
+  "report.empty": {
+    hr: "Još nema nijedne ocjene. Zabilježi večer pa odgovori na pitanje o snazi i tijelu.",
+    en: "No ratings yet. Log an evening, then answer the strength and body question.",
+  },
+  "report.github": { hr: "Otvori prijavu na GitHubu", en: "Open the report on GitHub" },
+  "report.copy": { hr: "Kopiraj tekst", en: "Copy the text" },
+  "report.copied": { hr: "Kopirano ✓", en: "Copied ✓" },
+  "report.tooLong": {
+    hr: "Previše ocjena za jednu poveznicu — kopiraj tekst i pošalji ga kako ti odgovara.",
+    en: "Too many ratings for a single link — copy the text and send it however suits you.",
+  },
+  "report.privacy": {
+    hr: "Šalju se samo ocjene i ime koje sam upišeš. Dnevnik, humidor i bilješke ostaju na uređaju.",
+    en: "Only the ratings and the name you type are sent. Journal, humidor and notes stay on the device.",
+  },
+  "report.open": { hr: "Dojmovi za katalog", en: "Impressions for the catalog" },
   "session.noRecommendations": { hr: "Nema preporuka — odaberi iz kataloga ili solo", en: "No recommendations — pick from catalog or solo" },
   "serve.title": { hr: "Kako serviraš?", en: "How do you serve it?" },
   "serve.neat": { hr: "Čisto", en: "Neat" },
@@ -247,6 +271,10 @@ const STRINGS = {
     en: "length estimated from the vitola (shop didn't state dimensions)",
   },
   "common.strengthReal": { hr: "snaga iz ocjene trgovine", en: "strength from shop rating" },
+  "common.strengthTasted": {
+    hr: "ocijenjeno pušenjem — broj ocjenjivača",
+    en: "rated by smoking it — number of tasters",
+  },
   "footer.copyright": {
     hr: "© 2026 Cigar & Drink Pairing. Sva prava pridržana.",
     en: "© 2026 Cigar & Drink Pairing. All rights reserved.",

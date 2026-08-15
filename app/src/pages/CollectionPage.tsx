@@ -44,6 +44,8 @@ import { navigate, useRoute, type CollectionView } from "../store/route";
 import { HumidorPage, JournalCalendar } from "./HumidorPage";
 import { exportHumidors, importHumidors, stockForItemKey } from "../store/humidor";
 import { exportFavorites, importFavorites } from "../store/favorites";
+import { exportTasteProfiles, importTasteProfiles } from "../store/tasteProfile";
+import { TasteReportSheet } from "../components/TasteReportSheet";
 import { OcrScan } from "../components/OcrScan";
 import { useMarket } from "../store/market";
 import { applyLocalDayToIso, localDayKey } from "../lib/calendar";
@@ -229,6 +231,7 @@ export function CollectionPage({
   const [logCigar, setLogCigar] = useState<Cigar | null>(null);
   const fileRef = useRef<HTMLInputElement>(null);
   const [importMsg, setImportMsg] = useState<string | null>(null);
+  const [reportOpen, setReportOpen] = useState(false);
   // popis probanih postoji samo za ispravke — zbroj je ono što se gleda
   const [showHistory, setShowHistory] = useState(false);
   const [ocrQuery, setOcrQuery] = useState("");
@@ -297,6 +300,7 @@ export function CollectionPage({
         ...JSON.parse(exportData()),
         humidors: exportHumidors(),
         favoriteBrands: exportFavorites(),
+        tasteProfiles: exportTasteProfiles(),
       },
       null,
       2,
@@ -318,11 +322,13 @@ export function CollectionPage({
         const parsed = JSON.parse(text) as {
           humidors?: unknown;
           favoriteBrands?: unknown;
+          tasteProfiles?: unknown;
         };
         if (parsed.humidors !== undefined) importHumidors(parsed.humidors);
         // Stariji backup nema ključ — tada omiljene ostaju kakve jesu. Uvoz
         // praznog polja bi ih obrisao, a to nije ono što stara datoteka kaže.
         if (parsed.favoriteBrands !== undefined) importFavorites(parsed.favoriteBrands);
+        if (parsed.tasteProfiles !== undefined) importTasteProfiles(parsed.tasteProfiles);
       } catch {
         // kolekcija je uvezena; humidori iz starijeg backupa jednostavno ne postoje
       }
@@ -365,6 +371,7 @@ export function CollectionPage({
 
   const sheets = (
     <>
+      {reportOpen && <TasteReportSheet onClose={() => setReportOpen(false)} />}
       <CigarBrowseSheets
         line={line}
         detail={detail}
@@ -449,6 +456,7 @@ export function CollectionPage({
             }}
             onText={setOcrQuery}
           />
+          <Chip onClick={() => setReportOpen(true)}>{t("report.open")}</Chip>
           <Chip onClick={doExport}>{t("coll.export")}</Chip>
           <Chip onClick={() => fileRef.current?.click()}>{t("coll.import")}</Chip>
           <input

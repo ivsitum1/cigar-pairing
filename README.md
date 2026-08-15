@@ -105,6 +105,36 @@ indeksima rangiranim po kvaliteti za sipping uz cigaru.
 Spremaju se **lokalno u pregledniku** (localStorage), po uređaju. Backup:
 Kolekcija → Export/Import JSON. Nema accounta ni slanja podataka ikamo.
 
+### Dojmovi više ljudi → natrag u katalog
+
+Snagu i tijelo katalog za velik dio linija samo procjenjuje. Jedini izvor koji
+ne procjenjuje nego zna je onaj tko je cigaru popušio, a app koristi više ljudi.
+Put od pušenja do kataloga ide ovako:
+
+1. Nakon zabilježene večeri app pita **„Kako ti je sjela?”** — snaga i tijelo,
+   jednom po liniji. Ocjena odmah nadjačava katalog *na tom uređaju* i mijenja
+   preporuke (`store/tasteProfile.ts`).
+2. Kolekcija → **Dojmovi za katalog** skuplja sve ocjene s uređaja, traži potpis
+   i otvara **već popunjenu GitHub prijavu**. App je statična stranica i nema
+   gdje čuvati ključ, pa ne piše u repo sama — prijavu šalje čovjek, pod svojim
+   imenom. Tko nema GitHub račun, kopira isti tekst i pošalje ga kako mu drago.
+3. U repou:
+
+   ```bash
+   cd app
+   python3 scripts/import-taste-report.py prijava.md   # ili < stdin
+   python3 scripts/apply-taste-reports.py
+   ```
+
+   Prva skripta upisuje dojam u `src/data/tasteReports.json` (po osobi i cigari;
+   novija ocjena iste osobe zamjenjuje stariju). Druga ga primjenjuje na
+   `cigars.json`: kad istu cigaru ocijeni više ljudi uzima se prosjek, remi
+   prema gore, a zapis dobiva `strengthFromTasting` s brojem ocjenjivača i
+   prestaje biti `profileEstimated` — pa ga spajanja iz trgovina više ne diraju.
+
+`apply-taste-reports.py --check` je blokirajući CI gate, pa katalog i zapisani
+dojmovi ne mogu tiho razići.
+
 ### Plan za kasnije: cloud sync (faza 2)
 
 Kad zatreba sync mobitel ↔ računalo:
