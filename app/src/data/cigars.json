@@ -110371,14 +110371,14 @@
     "country": "Honduras",
     "wrapper": "Habano",
     "strength": 2,
-    "body": 2,
+    "body": 3,
     "flavorTags": [
       "cedar",
       "zacini",
       "koza",
       "kava"
     ],
-    "smokeTimeMin": 50,
+    "smokeTimeMin": 75,
     "priceEUR": 17.1,
     "priceApprox": false,
     "availabilityHR": [
@@ -110386,8 +110386,8 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Tempo je kraći Flor de Selva format — ista hondureška elegancija u cigari za pola sata.",
-      "en": "Tempo is the shorter Flor de Selva — the same Honduran elegance in a half-hour cigar."
+      "hr": "Najdeblji format Classic Collectiona: 60 ring na šest inča daje obilje hladnog, mekog dima i sat i pol mira. Snaga ostaje hondureški umjerena — veličina je ta koja impresionira, ne nikotin.",
+      "en": "The thickest format in the Classic Collection: a 60 ring over six inches gives masses of cool, soft smoke and ninety unhurried minutes. The strength stays Honduran-moderate — it is the size that impresses, not the nicotine."
     },
     "markets": [
       "HR",
@@ -110399,7 +110399,7 @@
       {
         "name": "Tempo",
         "format": "60 x 152mm",
-        "smokeTimeMin": 50,
+        "smokeTimeMin": 75,
         "priceEUR": 17.1,
         "url": "https://havana-cigar-shop.com/proizvod/flor-de-selva-tempo-20/",
         "ring": 60,
@@ -204513,8 +204513,8 @@
     "id": "cig-plasencia-alma-del-cielo",
     "brand": "Plasencia",
     "line": "Alma del Cielo",
-    "vitola": "Alma del Cielo",
-    "format": "52 x 152mm",
+    "vitola": "Celeste",
+    "format": "52 x 124mm",
     "country": "Nikaragva",
     "wrapper": "Habano",
     "strength": 5,
@@ -204526,7 +204526,7 @@
       "zacini",
       "slatko"
     ],
-    "smokeTimeMin": 65,
+    "smokeTimeMin": 50,
     "priceEUR": 16.6,
     "priceApprox": false,
     "availabilityHR": [
@@ -204534,8 +204534,8 @@
       "Havana Shop"
     ],
     "notes": {
-      "hr": "Alma del Cielo: linija marke Plasencia.",
-      "en": "Alma del Cielo: a Plasencia line."
+      "hr": "Alma del Cielo je najmirniji član Alma obitelji: Plasencijin organski duhan vođen prema kremastoj, cedrovo-začinskoj strani umjesto prema snazi.",
+      "en": "Alma del Cielo is the calmest member of the Alma family: Plasencia's organic tobacco steered toward the creamy, cedar-and-spice side rather than toward power."
     },
     "markets": [
       "HR",
@@ -204545,18 +204545,18 @@
     ],
     "vitolas": [
       {
-        "name": "Alma del Cielo",
-        "format": "52 x 152mm",
-        "smokeTimeMin": 65,
+        "name": "Celeste",
+        "format": "52 x 124mm",
+        "smokeTimeMin": 50,
         "priceEUR": 16.6,
         "url": "https://www.neptunecigar.com/cigars/plasencia-alma-del-cielo-celeste-47-8--52",
         "ring": 52,
-        "lengthMM": 152,
+        "lengthMM": 124,
         "fetchedAt": "2026-07-01"
       }
     ],
     "priceUrl": "https://www.neptunecigar.com/cigars/plasencia-alma-del-cielo-celeste-47-8--52",
-    "profileEstimated": false,
+    "profileEstimated": true,
     "regionLinks": {
       "HR": {
         "shop": "The Humidor",
