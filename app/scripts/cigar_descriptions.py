@@ -612,6 +612,14 @@ DESCRIPTIONS: dict[str, tuple[str, str]] = {
         "Ernesto Padilla's 88th anniversary release — a Nicaraguan blend with "
         "longer-aged tobaccos and a fuller, spicier profile than the regular range.",
     ),
+    "cig-plasencia-alma-del-cielo": (
+        "„Duša neba” — nikaragvanski puro iz Alma serije, uzgojen na visini i u "
+        "hladnijoj klimi. Kremasta tekstura, tiha slatkoća, cedar, blagi pekarski "
+        "začin i kava; srednje do pune snage, robusna ali uglađena.",
+        "The soul of the sky — a Nicaraguan puro from the Alma series, grown at high "
+        "elevation in a colder climate. Creamy texture, quiet sweetness, cedar, light "
+        "baking spice and coffee; medium-full, robust but refined.",
+    ),
     "cig-plasencia-alma-del-fuego": (
         "Alma del Fuego koristi duhan uzgojen na vulkanskom tlu otoka Ometepe — "
         "Plasencia ga opisuje kao 'dušu vatre'; mineralno, začinjeno i izrazito "
