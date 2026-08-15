@@ -34,7 +34,12 @@ import {
 import { cigarDescription } from "../lib/cigarNote";
 import { needsVitolaPick } from "../lib/cigarVitola";
 import { shouldOfferWishlist } from "../lib/lastCigar";
-import { claimOwnedForStock, releaseOwnedIfEmpty } from "../lib/stockOwnership";
+import {
+  claimOwnedForStock,
+  releaseOwnedIfEmpty,
+  unpackSamplerIntoStock,
+} from "../lib/stockOwnership";
+import { isSampler, samplerPieceCount } from "../lib/samplerStock";
 import { Chip, Meter } from "./ui";
 import { BackButton } from "./BackButton";
 import { FavoriteStar } from "./FavoriteStar";
@@ -785,6 +790,8 @@ function HumidorControls({ cigar, itemId }: { cigar: Cigar; itemId: string }) {
   const { cigarId } = parseCigarItemId(itemId);
   const line = resolveCigarId(cigarId) ?? cigar;
   const needsVitola = stockNeedsVitola(line, itemId);
+  // paket (sampler) nije komad zalihe nego pet cigara — vidi lib/samplerStock
+  const samplerPieces = isSampler(cigar) ? samplerPieceCount(cigar) : 0;
   const total = stock
     .filter((s) => s.itemId === itemId)
     .reduce((sum, s) => sum + s.count, 0);
@@ -800,12 +807,16 @@ function HumidorControls({ cigar, itemId }: { cigar: Cigar; itemId: string }) {
               return;
             }
             const created = addHumidor(t("hum.defaultName"));
+            // paket ide razložen: na stanje idu njegove vitole, ne kutija
+            if (samplerPieces > 0 && unpackSamplerIntoStock(created.id, cigar) > 0) {
+              return;
+            }
             adjustStock(created.id, itemId, 1);
             claimOwnedForStock(itemId);
           }}
           className="mt-4 w-full rounded-lg border border-zlato/40 py-2.5 font-display text-xs uppercase tracking-widest text-zlato hover:bg-zlato/10"
         >
-          + {t("hum.addToHumidor")}
+          + {samplerPieces > 0 ? t("hum.samplerUnpack") : t("hum.addToHumidor")}
         </button>
         {pick && (
           <VitolaPicker
@@ -872,7 +883,21 @@ function HumidorControls({ cigar, itemId }: { cigar: Cigar; itemId: string }) {
         </div>
       )}
 
-      {active && !needsVitola && (
+      {/* paket: jedan gumb koji ga razloži na police, bez brojača komada */}
+      {active && samplerPieces > 0 && (
+        <div className="mt-2">
+          <p className="text-micro leading-snug text-dim">{t("hum.samplerHint")}</p>
+          <button
+            type="button"
+            onClick={() => unpackSamplerIntoStock(active.id, cigar)}
+            className="mt-1.5 w-full rounded-lg border border-zlato/40 py-2 font-display text-xs uppercase tracking-widest text-zlato hover:bg-zlato/10"
+          >
+            {t("hum.samplerUnpack")} · {samplerPieces} {t("hum.cigarsCount")}
+          </button>
+        </div>
+      )}
+
+      {active && !needsVitola && samplerPieces === 0 && (
         <div className="mt-2 flex items-center justify-between gap-3">
           <span className="min-w-0 truncate text-sm text-papir/90">
             {active.name}
@@ -914,7 +939,7 @@ function HumidorControls({ cigar, itemId }: { cigar: Cigar; itemId: string }) {
       )}
 
       {/* linija bez odabrane veličine: humidor prima vitolu, ne liniju */}
-      {active && needsVitola && (
+      {active && needsVitola && samplerPieces === 0 && (
         <div className="mt-2">
           <p className="text-micro leading-snug text-dim">{t("hum.vitolaMissingHint")}</p>
           <button

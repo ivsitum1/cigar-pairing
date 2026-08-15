@@ -526,6 +526,11 @@ const STRINGS = {
   "hum.addToHumidor": { hr: "U humidor", en: "To humidor" },
   "hum.inHumidor": { hr: "U humidoru", en: "In humidor" },
   "hum.stockByVitola": { hr: "Po vitolama", en: "By vitola" },
+  "hum.samplerUnpack": { hr: "Rasporedi paket", en: "Unpack the sampler" },
+  "hum.samplerHint": {
+    hr: "Paket ulazi u humidor razložen — svaka cigara iz njega ide na stanje zasebno, pa ih možeš pušiti i bilježiti jednu po jednu.",
+    en: "The sampler goes into the humidor unpacked — each cigar lands in stock on its own, so you can smoke and log them one at a time.",
+  },
   "hum.addVitola": { hr: "Dodaj vitolu", en: "Add vitola" },
   "hum.setVitola": { hr: "Odredi vitolu", en: "Set vitola" },
   "hum.vitolaMissing": { hr: "Vitola nije određena", en: "Vitola not set" },

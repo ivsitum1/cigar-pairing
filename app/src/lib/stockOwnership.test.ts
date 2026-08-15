@@ -115,6 +115,28 @@ describe("„Imam” prati zalihu", () => {
     expect(collection.getItemState("cig-x").rating).toBe(8);
   });
 
+  it("sampler ulazi u humidor razložen na svoje vitole", async () => {
+    const { unpackSamplerIntoStock, collection, humidor } = await load();
+    const { default: cigarsData } = await import("../data/cigars.json");
+    const cigars = cigarsData as unknown as { id: string }[];
+    const sampler = cigars.find((c) => c.id === "cig-aj-fernandez-toro-sampler")!;
+    const box = humidor.addHumidor("A");
+    collection.updateItem("cig-aj-fernandez-toro-sampler", { owned: true });
+
+    const pieces = unpackSamplerIntoStock(box.id, sampler as never);
+
+    expect(pieces).toBe(5);
+    // kutije nema na stanju — na polici su cigare
+    expect(humidor.stockCount(box.id, "cig-aj-fernandez-toro-sampler")).toBe(0);
+    expect(humidor.stockCount(box.id, "cig-aj-fernandez-enclave@connecticut-toro")).toBe(1);
+    expect(humidor.stockCount(box.id, "cig-aj-fernandez-bellas-artes@hybrid-toro")).toBe(1);
+    // oznaka „Imam" seli s kutije na sadržaj
+    expect(collection.getItemState("cig-aj-fernandez-toro-sampler").owned).toBe(false);
+    expect(
+      collection.getItemState("cig-aj-fernandez-enclave@connecticut-toro").owned,
+    ).toBe(true);
+  });
+
   it("kupljeno s liste želja skida zvjezdicu", async () => {
     const { claimOwnedForStock, collection, humidor } = await load();
     const box = humidor.addHumidor("A");
