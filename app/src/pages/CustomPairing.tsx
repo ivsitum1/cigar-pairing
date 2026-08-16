@@ -102,22 +102,22 @@ export function CustomPairing({
           <div className="mt-3 grid grid-cols-2 gap-3 text-xs">
             <button
               onClick={() => onOpenDetail({ kind: "cigar", item: cigar! })}
-              className="rounded-lg border border-dim/20 bg-humidor/40 p-2 text-left"
+              className="flex min-w-0 flex-col rounded-lg border border-dim/20 bg-humidor/40 p-2 text-left"
             >
               <div className="font-display text-papir">{cigar!.brand} {cigar!.line}</div>
-              <div className="mt-1 flex gap-3">
-                <Meter value={cigar!.strength} label={t("common.strength")} accent="var(--color-oxblood)" />
-                <Meter value={cigar!.body} label={t("common.body")} />
+              <div className="mt-auto flex flex-col gap-1 pt-1.5">
+                <Meter block value={cigar!.strength} label={t("common.strength")} accent="var(--color-oxblood)" />
+                <Meter block value={cigar!.body} label={t("common.body")} />
               </div>
             </button>
             <button
               onClick={() => onOpenDetail({ kind: "drink", item: drink! })}
-              className="rounded-lg border border-dim/20 bg-humidor/40 p-2 text-left"
+              className="flex min-w-0 flex-col rounded-lg border border-dim/20 bg-humidor/40 p-2 text-left"
             >
               <div className="font-display text-papir">{lx(drinkNameLoc(drink!))}</div>
-              <div className="mt-1 flex gap-3">
-                <Meter value={drink!.body} label={t("common.body")} />
-                <Meter value={drink!.sweetness} label={t("common.sweetness")} accent="var(--color-lista)" />
+              <div className="mt-auto flex flex-col gap-1 pt-1.5">
+                <Meter block value={drink!.body} label={t("common.body")} />
+                <Meter block value={drink!.sweetness} label={t("common.sweetness")} accent="var(--color-lista)" />
               </div>
             </button>
           </div>

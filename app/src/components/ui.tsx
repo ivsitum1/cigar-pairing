@@ -6,23 +6,40 @@ export function Meter({
   max = 5,
   label,
   accent = "var(--color-zlato)",
+  block = false,
 }: {
   value: number;
   max?: number;
   label?: string;
   accent?: string;
+  // block = vlastiti red pune sirine: natpis lijevo, rombovi uz desni rub.
+  // Bez toga natpis i rombovi stoje u nizu i u uskom stupcu iscure van kartice.
+  block?: boolean;
 }) {
   // Rombovi su cisto vizualni — bez ovoga citac ekrana za "tijelo 3/5" ne
   // dobije nista. Vrijednost izgovaramo jednom, na omotacu, a rombove skrivamo.
   const spoken = label ? `${label} ${value}/${max}` : `${value}/${max}`;
   return (
-    <span className="inline-flex items-center gap-1.5" role="img" aria-label={spoken}>
+    <span
+      className={
+        block
+          ? "flex w-full items-center justify-between gap-2"
+          : "inline-flex items-center gap-1.5"
+      }
+      role="img"
+      aria-label={spoken}
+    >
       {label && (
-        <span aria-hidden="true" className="text-micro uppercase tracking-widest text-dim">
+        <span
+          aria-hidden="true"
+          className={`text-micro uppercase text-dim ${
+            block ? "min-w-0 truncate tracking-wider" : "tracking-widest"
+          }`}
+        >
           {label}
         </span>
       )}
-      <span aria-hidden="true" className="inline-flex items-center gap-[3px]">
+      <span aria-hidden="true" className="inline-flex shrink-0 items-center gap-[3px]">
         {Array.from({ length: max }, (_, i) => (
           <span
             key={i}
