@@ -28,6 +28,15 @@ STORE = DATA / "tasteReports.json"
 CIGARS = DATA / "cigars.json"
 
 
+def taster_key(row: dict) -> str:
+    """Jedan covjek: potpis prijave kad ga ima, inace ime.
+
+    Dva nadimka istog covjeka nisu dvoje ljudi, a `strengthFromTasting` tvrdi
+    koliko je ljudi cigaru stvarno pusilo.
+    """
+    return str(row.get("byId") or row.get("by") or "")
+
+
 def average(values: list[int]) -> int:
     """Prosjek, remi prema gore. 3 i 4 -> 4, ne 3."""
     total = sum(values)
@@ -44,14 +53,14 @@ def main() -> int:
     cigars = json.loads(CIGARS.read_text(encoding="utf-8"))
     by_id = {c["id"]: c for c in cigars}
 
-    grouped: dict[str, dict[str, list[int]]] = collections.defaultdict(
+    grouped: dict[str, dict[str, list]] = collections.defaultdict(
         lambda: {"strength": [], "body": [], "by": []}
     )
     for r in reports:
         g = grouped[r["cigarId"]]
         g["strength"].append(int(r["strength"]))
         g["body"].append(int(r["body"]))
-        g["by"].append(r["by"])
+        g["by"].append(taster_key(r))
 
     changed = []
     missing = []

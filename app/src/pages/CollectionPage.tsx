@@ -44,7 +44,12 @@ import { navigate, useRoute, type CollectionView } from "../store/route";
 import { HumidorPage, JournalCalendar } from "./HumidorPage";
 import { exportHumidors, importHumidors, stockForItemKey } from "../store/humidor";
 import { exportFavorites, importFavorites } from "../store/favorites";
-import { exportTasteProfiles, importTasteProfiles } from "../store/tasteProfile";
+import {
+  exportTasteProfiles,
+  importTasteProfiles,
+  useTasteProfiles,
+} from "../store/tasteProfile";
+import { withTaste } from "../lib/tasteProfile";
 import { TasteReportSheet } from "../components/TasteReportSheet";
 import { OcrScan } from "../components/OcrScan";
 import { useMarket } from "../store/market";
@@ -215,6 +220,7 @@ export function CollectionPage({
   const market = useMarket();
   const route = useRoute();
   const data = useCollection();
+  const taste = useTasteProfiles();
   const {
     line,
     detail,
@@ -252,13 +258,17 @@ export function CollectionPage({
   /**
    * Profil pušača: zbroj svega probanog, a ne popis. Ulaze sve cigare koje su
    * označene s „Probano” ili nose ocjenu — bez obzira imaš li ih još.
+   *
+   * Snaga i tijelo idu kroz `withTaste`: profil se zove „moj”, pa se ne smije
+   * računati iz katalogove procjene kad za tu liniju postoji tvoja ocjena.
    */
   const profile = useMemo(() => {
     const tried: TriedCigar[] = [];
     for (const [id, state] of Object.entries(data.items)) {
       if (!state.tried && state.rating == null) continue;
-      const cigar = cigarForItemId(id);
-      if (!cigar) continue;
+      const raw = cigarForItemId(id);
+      if (!raw) continue;
+      const cigar = withTaste(raw, taste);
       // linija s više formata ne zna koji je pušen — oblik tada ne ulazi u zbroj
       const shapes = cigarShapes(cigar);
       tried.push({
@@ -276,7 +286,7 @@ export function CollectionPage({
       ([id, s]) => (s.tried || s.rating != null) && drinkById(id) != null,
     ).length;
     return smokerProfile(tried, triedDrinks, data.journal);
-  }, [data]);
+  }, [data, taste]);
 
   const allOwnedCigarIds = Object.entries(data.items)
     .filter(([id, s]) => s.owned && cigarForItemId(id) != null)

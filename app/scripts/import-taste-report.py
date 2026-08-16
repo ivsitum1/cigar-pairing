@@ -10,6 +10,11 @@ Zapis je po osobi i cigari: nova ocjena iste osobe za istu cigaru zamjenjuje
 staru, ocjena druge osobe stoji uz nju. Tko je ocijenio ostaje zapisano — bez
 potpisa prosjek dvoje ljudi nije prosjek nego zbrka.
 
+"Osoba" je `byId` kad ga izvjestaj nosi (stabilan potpis prijave, `g_…`), inace
+ime. Nadimak se lako razlikuje medu uredajima istog covjeka, i tada je isti
+glas ulazio u prosjek dvaput; potpis to zatvara. Izvjestaj bez potpisa prolazi
+kao i prije — stariji app i onaj bez prijave nisu izgubili put do kataloga.
+
 Pokreni iz app/:
     python3 scripts/import-taste-report.py < prijava.txt
     python3 scripts/import-taste-report.py prijava.txt
@@ -72,14 +77,19 @@ def clamp(n) -> int | None:
     return max(1, min(5, v))
 
 
+def taster_key(row: dict) -> str:
+    """Jedan covjek: potpis prijave kad postoji, inace ime."""
+    return str(row.get("byId") or row.get("by") or "").strip()
+
+
 def load_store() -> dict[tuple[str, str], dict]:
     """Zapisani dojmovi, kljucevani po (osoba, cigara)."""
     store = json.loads(STORE.read_text(encoding="utf-8"))
-    return {(r["by"], r["cigarId"]): r for r in store.get("reports", [])}
+    return {(taster_key(r), r["cigarId"]): r for r in store.get("reports", [])}
 
 
 def save_store(kept: dict[tuple[str, str], dict]) -> int:
-    reports = sorted(kept.values(), key=lambda r: (r["cigarId"], r["by"]))
+    reports = sorted(kept.values(), key=lambda r: (r["cigarId"], taster_key(r)))
     STORE.write_text(
         json.dumps({"reports": reports}, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
@@ -92,9 +102,13 @@ def merge_payload(kept, payload, resolve, source: str | None = None) -> tuple[st
 
     Kljuc je (osoba, cigara): novija ocjena iste osobe zamjenjuje stariju, a
     ocjena drugoga stoji uz nju. `source` je trag odakle je dosla (broj prijave).
+
+    Osoba je `byId` kad izvjestaj nosi potpis prijave; ime tada ostaje zapisano
+    samo za ljudsko oko i smije se mijenjati bez posljedica za spajanje.
     """
     by = str(payload.get("by") or "").strip()
-    if not by:
+    by_id = str(payload.get("byId") or "").strip()
+    if not by and not by_id:
         raise ValueError("izvjestaj nije potpisan")
 
     added = updated = skipped = 0
@@ -104,9 +118,11 @@ def merge_payload(kept, payload, resolve, source: str | None = None) -> tuple[st
         if cid is None or s is None or b is None:
             skipped += 1
             continue
-        key = (by, cid)
         row = {"by": by, "cigarId": cid, "strength": s, "body": b,
                "at": str(entry.get("at") or payload.get("at") or "")}
+        if by_id:
+            row["byId"] = by_id
+        key = (taster_key(row), cid)
         if source:
             row["source"] = source
         if key in kept:
@@ -116,7 +132,7 @@ def merge_payload(kept, payload, resolve, source: str | None = None) -> tuple[st
         else:
             kept[key] = row
             added += 1
-    return by, added, updated, skipped
+    return (by or by_id), added, updated, skipped
 
 
 def main() -> int:
