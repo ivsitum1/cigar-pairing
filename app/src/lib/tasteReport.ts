@@ -26,6 +26,13 @@ export interface TasteReport {
   kind: typeof REPORT_KIND;
   v: number;
   by: string;
+  /**
+   * Stabilan potpis prijavljenog računa (`g_…`, vidi lib/googleIdentity).
+   * Kad ga ima, skripte spajaju po njemu umjesto po imenu, pa isti čovjek s
+   * dva uređaja više ne ulazi u prosjek dvaput. Izostaje kad prijave nema —
+   * stari oblik izvještaja i dalje prolazi kroz cijeli lanac.
+   */
+  byId?: string;
   at: string;
   reports: TasteReportEntry[];
 }
@@ -36,6 +43,7 @@ export function buildTasteReport(
   by: string,
   cigarById: (id: string) => Cigar | undefined,
   now: Date = new Date(),
+  byId = "",
 ): TasteReport {
   const reports: TasteReportEntry[] = Object.entries(profiles)
     .map(([cigarId, p]) => {
@@ -49,10 +57,12 @@ export function buildTasteReport(
       };
     })
     .sort((a, b) => a.label.localeCompare(b.label));
+  const signed = byId.trim();
   return {
     kind: REPORT_KIND,
     v: REPORT_VERSION,
     by: by.trim(),
+    ...(signed ? { byId: signed } : {}),
     at: now.toISOString(),
     reports,
   };

@@ -62,6 +62,19 @@ describe("izvještaj o dojmovima", () => {
     expect(md).toContain("| Bolívar Belicosos | 5 | 4 |");
   });
 
+  it("potpis prijave putuje u blok, jer skripta po njemu spaja", () => {
+    const r = buildTasteReport(profiles, "Ivan", lookup, new Date(), "g_abc123abc123");
+    expect(r.byId).toBe("g_abc123abc123");
+    const md = reportMarkdown(r);
+    const block = /```json\s*(\{[\s\S]*?\})\s*```/.exec(md);
+    expect(JSON.parse(block![1]).byId).toBe("g_abc123abc123");
+  });
+
+  it("bez prijave nema praznog potpisa — stari oblik ostaje netaknut", () => {
+    const r = buildTasteReport(profiles, "Ivan", lookup, new Date(), "   ");
+    expect("byId" in r).toBe(false);
+  });
+
   it("naslov kaže tko i koliko", () => {
     expect(reportTitle(buildTasteReport(profiles, "Ivan", lookup))).toBe("Dojmovi: Ivan — 2 cigara");
     expect(reportTitle(buildTasteReport({}, "", lookup))).toBe("Dojmovi: nepotpisano — 0 cigara");

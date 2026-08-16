@@ -94,6 +94,11 @@ indeksima rangiranim po kvaliteti za sipping uz cigaru.
   računa (PaddleOCR) i vizualno prepoznavanje prstena cigare. Nije dio deploya:
   PWA ga zove samo ako je postavljen `VITE_OCR_API_URL`; bez toga (zadano na
   GitHub Pagesu) koristi ugrađeni paddleocr-js. Vidi `backend/README.md`.
+- Prijava Google računom u „Dojmovi za katalog" — **neobavezna i zadano
+  ugašena**. Bez `VITE_GOOGLE_CLIENT_ID` se nigdje ne nudi i Googleova skripta
+  se ne učitava. Služi samo da potpis istog čovjeka ostane isti s više uređaja
+  (u repo ide haš, e-mail nikad). Nije provjeren identitet — vidi
+  `docs/google-prijava.md`.
 - `docs/brand/` — znak i pravila korištenja (`LOGO.md`). Sve ikone, SVG-ovi i
   `app/src/components/brandArt.ts` su **ispis** skripte
   `python docs/brand/generate_logo_assets.py` — ne uređivati ručno; geometrija

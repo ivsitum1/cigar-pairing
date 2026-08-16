@@ -1,11 +1,18 @@
 // „Pošalji dojmove” — sve ocjene iz ovog preglednika, spremne za repo.
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { SheetShell } from "./SheetShell";
 import { BackButton } from "./BackButton";
 import { useI18n } from "../i18n";
 import { cigarById } from "../data";
 import { useTasteProfiles } from "../store/tasteProfile";
 import { setTaster, useTaster } from "../store/taster";
+import { clearAccount, setAccount, useAccount } from "../store/account";
+import {
+  forgetGoogleAutoSelect,
+  isGoogleConfigured,
+  renderGoogleButton,
+  tasterIdFromSub,
+} from "../lib/googleIdentity";
 import {
   buildTasteReport,
   githubIssueUrl,
@@ -17,12 +24,32 @@ export function TasteReportSheet({ onClose }: { onClose: () => void }) {
   const { t } = useI18n();
   const profiles = useTasteProfiles();
   const taster = useTaster();
-  const [name, setName] = useState(taster);
+  const account = useAccount();
+  const [name, setName] = useState(account?.name || taster);
   const [copied, setCopied] = useState(false);
+  const googleSlot = useRef<HTMLDivElement>(null);
+
+  // Googleov gumb se iscrtava tek kad prijave nema i kad je client ID postavljen
+  // — build bez njega ne povlači Googleovu skriptu uopće.
+  useEffect(() => {
+    const slot = googleSlot.current;
+    if (!slot || account || !isGoogleConfigured()) return;
+    let live = true;
+    void renderGoogleButton(slot, (identity) => {
+      void tasterIdFromSub(identity.sub).then((tasterId) => {
+        if (!live) return;
+        setAccount({ name: identity.name, tasterId, at: new Date().toISOString() });
+        if (identity.name) setName(identity.name);
+      });
+    });
+    return () => {
+      live = false;
+    };
+  }, [account]);
 
   const report = useMemo(
-    () => buildTasteReport(profiles, name, (id) => cigarById(id)),
-    [profiles, name],
+    () => buildTasteReport(profiles, name, (id) => cigarById(id), new Date(), account?.tasterId),
+    [profiles, name, account],
   );
   const url = useMemo(() => githubIssueUrl(report), [report]);
   const tooLong = issueUrlTooLong(url);
@@ -56,6 +83,39 @@ export function TasteReportSheet({ onClose }: { onClose: () => void }) {
       </div>
       <h3 className="font-display text-lg text-papir">{t("report.title")}</h3>
       <p className="mt-1 text-sm leading-relaxed text-dim">{t("report.hint")}</p>
+
+      {isGoogleConfigured() && (
+        <div className="mt-4 rounded-lg border border-dim/20 bg-cedar/60 p-3">
+          {account ? (
+            <div className="flex items-center justify-between gap-3">
+              <div className="min-w-0">
+                <div className="text-micro uppercase tracking-widest text-dim">
+                  {t("account.signedIn")}
+                </div>
+                <div className="truncate font-display text-sm text-papir">
+                  {account.name || t("account.noName")}
+                </div>
+                <div className="text-micro text-dim/70">{account.tasterId}</div>
+              </div>
+              <button
+                type="button"
+                onClick={() => {
+                  void forgetGoogleAutoSelect();
+                  clearAccount();
+                }}
+                className="shrink-0 rounded-full border border-dim/30 px-2.5 py-1 text-micro uppercase tracking-widest text-dim"
+              >
+                {t("account.signOut")}
+              </button>
+            </div>
+          ) : (
+            <>
+              <p className="text-micro leading-snug text-dim">{t("account.why")}</p>
+              <div ref={googleSlot} className="mt-2 flex justify-center" />
+            </>
+          )}
+        </div>
+      )}
 
       <label className="mt-4 block text-xs uppercase tracking-widest text-dim">
         {t("report.who")}

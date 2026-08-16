@@ -136,6 +136,69 @@ class TestMergeAcrossPeople(unittest.TestCase):
         with self.assertRaises(ValueError):
             imp.merge_payload({}, self._payload("  ", 3), self._resolve)
 
+
+class TestSignedIdentity(unittest.TestCase):
+    """Potpis prijave (`byId`) je jaci od nadimka, ali ga ne trazi."""
+
+    @staticmethod
+    def _payload(by, strength, by_id=None):
+        at = "2026-08-16T12:00:00.000Z"
+        payload = {
+            "kind": "cigar-pairing-taste-report",
+            "by": by,
+            "at": at,
+            "reports": [{"cigarId": "cig-x", "strength": strength, "body": 3, "at": at}],
+        }
+        if by_id:
+            payload["byId"] = by_id
+        return payload
+
+    @staticmethod
+    def _resolve(cid):
+        return cid if cid == "cig-x" else None
+
+    def test_same_person_two_nicknames_is_one_person(self):
+        # isti covjek, dva uredaja, dva razlicito upisana nadimka
+        kept = {}
+        imp.merge_payload(kept, self._payload("Ivan", 2, "g_abc123abc123"), self._resolve)
+        _, added, updated, _ = imp.merge_payload(
+            kept, self._payload("ivan s mobitela", 5, "g_abc123abc123"), self._resolve
+        )
+        self.assertEqual((added, updated), (0, 1))
+        self.assertEqual(len(kept), 1)
+        row = next(iter(kept.values()))
+        self.assertEqual((row["strength"], row["by"]), (5, "ivan s mobitela"))
+
+    def test_two_accounts_still_stand_side_by_side(self):
+        kept = {}
+        imp.merge_payload(kept, self._payload("Ivan", 2, "g_aaaaaaaaaaaa"), self._resolve)
+        imp.merge_payload(kept, self._payload("Ivan", 4, "g_bbbbbbbbbbbb"), self._resolve)
+        self.assertEqual(len(kept), 2)
+
+    def test_report_without_signature_still_merges_by_name(self):
+        kept = {}
+        imp.merge_payload(kept, self._payload("Kolega", 2), self._resolve)
+        _, added, updated, _ = imp.merge_payload(kept, self._payload("Kolega", 3), self._resolve)
+        self.assertEqual((added, updated), (0, 1))
+        self.assertEqual(len(kept), 1)
+        self.assertNotIn("byId", next(iter(kept.values())))
+
+    def test_signature_alone_is_signature_enough(self):
+        kept = {}
+        by, added, _, _ = imp.merge_payload(
+            kept, self._payload("", 3, "g_cccccccccccc"), self._resolve
+        )
+        self.assertEqual((by, added), ("g_cccccccccccc", 1))
+
+    def test_taster_count_follows_the_signature(self):
+        # dva nadimka jednog potpisa + jedan nepotpisan = dvoje ljudi, ne troje
+        rows = [
+            {"by": "Ivan", "byId": "g_abc123abc123"},
+            {"by": "ivan s mobitela", "byId": "g_abc123abc123"},
+            {"by": "Kolega"},
+        ]
+        self.assertEqual(len({app.taster_key(r) for r in rows}), 2)
+
     def test_unknown_cigar_is_skipped_not_invented(self):
         payload = self._payload("Ivan", 3)
         payload["reports"][0]["cigarId"] = "cig-ne-postoji"
