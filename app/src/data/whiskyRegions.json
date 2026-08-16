@@ -1,0 +1,215 @@
+{
+  "regions": [
+    {
+      "id": "speyside",
+      "label": {
+        "hr": "Speyside",
+        "en": "Speyside"
+      },
+      "summary": {
+        "hr": "Voće, med i cvijet — najgušća destilerijska dolina na svijetu.",
+        "en": "Fruit, honey and blossom — the densest distilling valley in the world."
+      },
+      "body": {
+        "hr": "Uz rijeku Spey stoji oko polovice svih škotskih destilerija, pa je Speyside prije gustoća nego stil. Ipak, kuća do kuće drži prepoznatljiv ton: jabuka, kruška, med i vanilija, rijetko treset.\n\nDVIJE ŠKOLE\n• Voćna — bourbon bačva, svijetlo i cvjetno (Glenlivet, Glenfiddich, Benriach).\n• Sherry — oloroso i PX bačve, grožđice, smokva i tamna čokolada (Macallan, Glenfarclas, Aberlour).\n\nUZ CIGARU\n• Voćni Speyside traži blag pokrov — Connecticut Shade, corona ili panatela.\n• Sherry Speyside podnese Habano i maduro; slatkoća bačve hvata papar i kavu iz dima.",
+        "en": "About half of Scotland's distilleries stand along the river Spey, so Speyside is density before it is a style. Even so, the houses share a recognisable tone: apple, pear, honey and vanilla, and rarely peat.\n\nTWO SCHOOLS\n• Fruity — bourbon casks, bright and floral (Glenlivet, Glenfiddich, Benriach).\n• Sherry — oloroso and PX casks, raisin, fig and dark chocolate (Macallan, Glenfarclas, Aberlour).\n\nWITH A CIGAR\n• Fruity Speyside wants a mild wrapper — Connecticut Shade, a corona or a panatela.\n• Sherry Speyside carries Habano and maduro; the cask sweetness catches the pepper and coffee in the smoke."
+      }
+    },
+    {
+      "id": "highland",
+      "label": {
+        "hr": "Highlands",
+        "en": "Highlands"
+      },
+      "summary": {
+        "hr": "Najveća i najšarolikija regija — od laganog sjevera do punog zapada.",
+        "en": "The largest and most varied region — light in the north, full-bodied in the west."
+      },
+      "body": {
+        "hr": "Highlands je površinom golem i zato nema jedan okus; ima četiri kuta koja se međusobno ne liče.\n\nČETIRI KUTA\n• Sjeverni — vrijesak, med i sol (Glenmorangie, Dalmore, Clynelish).\n• Južni — lagano i suho, blizu Lowland tonu (Aberfeldy, Edradour).\n• Istočni — čvrsto i žitno, često sherry (GlenDronach, Fettercairn).\n• Zapadni — punije tijelo i dašak dima (Oban, Ben Nevis).\n\nUZ CIGARU\n• Sjeverni i južni Highland idu uz srednje tijelo — robusto s Ecuador ili Connecticut pokrovom.\n• Zapadni i sherry-istočni nose i punu Nikaragvu.",
+        "en": "The Highlands is vast, so it has no single taste; it has four corners that do not resemble one another.\n\nFOUR CORNERS\n• Northern — heather, honey and salt (Glenmorangie, Dalmore, Clynelish).\n• Southern — light and dry, close to the Lowland tone (Aberfeldy, Edradour).\n• Eastern — firm and cereal-led, often sherried (GlenDronach, Fettercairn).\n• Western — fuller body and a wisp of smoke (Oban, Ben Nevis).\n\nWITH A CIGAR\n• Northern and southern Highland suit a medium body — a robusto in an Ecuador or Connecticut wrapper.\n• Western and sherried eastern bottlings carry full Nicaraguan blends too."
+      }
+    },
+    {
+      "id": "islay",
+      "label": {
+        "hr": "Islay",
+        "en": "Islay"
+      },
+      "summary": {
+        "hr": "Treset, jod i morska sol — najprepoznatljiviji whisky na svijetu.",
+        "en": "Peat, iodine and sea salt — the most recognisable whisky in the world."
+      },
+      "body": {
+        "hr": "Islay je otok od tresetišta i vjetra. Ječam se suši nad tresetnom vatrom, dim uđe u zrno i ostane do čaše — mjeri se u ppm fenola, a bačva ga s godinama pripitomi, ali ne izbriše.\n\nTRI JAČINE\n• Južna obala — najdimnije, medicinsko i slano (Ardbeg, Lagavulin, Laphroaig).\n• Sredina i sjever — blaži dim uz voće (Bowmore, Caol Ila; Bunnahabhain često i bez treseta).\n• Nove kuće — Kilchoman i Bruichladdich voze cijeli raspon, od nedimljenog do vrlo visokih ppm vrijednosti.\n\nUZ CIGARU\n• Dim uz dim radi samo kad je cigara dovoljno jaka — maduro, oscuro, puna Nikaragva.\n• Nježan Connecticut Shade Islay pregazi; ostavi ga za kraj večeri, ne za početak.",
+        "en": "Islay is an island of peat bog and wind. The barley is dried over a peat fire, the smoke enters the grain and stays there all the way to the glass — it is measured in ppm of phenols, and years in cask tame it without erasing it.\n\nTHREE INTENSITIES\n• South shore — the smokiest, medicinal and saline (Ardbeg, Lagavulin, Laphroaig).\n• Centre and north — gentler smoke over fruit (Bowmore, Caol Ila; Bunnahabhain often unpeated).\n• Newer houses — Kilchoman and Bruichladdich run the whole range, from unpeated to very high ppm.\n\nWITH A CIGAR\n• Smoke on smoke only works when the cigar is strong enough — maduro, oscuro, full Nicaraguan.\n• A delicate Connecticut Shade is flattened by Islay; save it for the end of the evening, not the start."
+      }
+    },
+    {
+      "id": "islands",
+      "label": {
+        "hr": "Otoci",
+        "en": "Islands"
+      },
+      "summary": {
+        "hr": "Orkney, Skye, Jura, Arran — sol i dim, svaki otok svojim tempom.",
+        "en": "Orkney, Skye, Jura, Arran — salt and smoke, each island at its own pace."
+      },
+      "body": {
+        "hr": "Službeno Otoci nisu zasebna regija — Scotch Whisky Regulations ih broje pod Highlands. U praksi se izdvajaju jer dijele morski ton koji kopno nema, pa ih tako vodi i ovaj katalog.\n\nOTOK PO OTOK\n• Orkney — vrijesak i suhi dim (Highland Park), uz nedimljenu stranu (Scapa).\n• Skye — papar, sol i dim u istoj čaši (Talisker).\n• Jura, Arran, Mull — od voćnog do dimljenog, ovisno o izdanju.\n\nUZ CIGARU\n• Slani ton lijepo veže s maduro pokrovom i kavom iz dima.\n• Srednji otočni dim je najsigurniji most kad Islay djeluje prejako.",
+        "en": "Officially the Islands are not a region of their own — the Scotch Whisky Regulations count them under the Highlands. In practice they are set apart because they share a maritime tone the mainland lacks, and this catalogue follows that usage.\n\nISLAND BY ISLAND\n• Orkney — heather and dry smoke (Highland Park), alongside an unpeated side (Scapa).\n• Skye — pepper, salt and smoke in one glass (Talisker).\n• Jura, Arran, Mull — fruity through smoky, depending on the release.\n\nWITH A CIGAR\n• The saline tone binds well with a maduro wrapper and the coffee note in the smoke.\n• Moderate island smoke is the safest bridge when Islay feels like too much."
+      }
+    },
+    {
+      "id": "lowland",
+      "label": {
+        "hr": "Lowlands",
+        "en": "Lowlands"
+      },
+      "summary": {
+        "hr": "Lagano, travnato i suho — klasičan aperitiv, često trostruko destilirano.",
+        "en": "Light, grassy and dry — the classic aperitif, often triple distilled."
+      },
+      "body": {
+        "hr": "Lowlands leži južno od crte Greenock–Dundee. Dugo je bio regija u opadanju, a danas ga nove destilerije vraćaju. Tradicija je trostruka destilacija, koja daje lakši i čišći destilat.\n\nŠTO OČEKIVATI\n• Trava, limun, sijeno i keks; rijetko treset.\n• Niže tijelo od Speysidea, pa se pije mlađi i hladniji.\n• Kuće — Auchentoshan, Glenkinchie, Bladnoch, Daftmill.\n\nUZ CIGARU\n• Traži najblaži kraj police: Connecticut Shade, panatela, lancero.\n• Uz punu cigaru nestane — Lowland je piće prve trećine večeri, ne zadnje.",
+        "en": "The Lowlands lie south of the Greenock–Dundee line. For a long time the region was in decline; new distilleries are bringing it back. The tradition here is triple distillation, which yields a lighter, cleaner spirit.\n\nWHAT TO EXPECT\n• Grass, lemon, hay and biscuit; peat is rare.\n• Lower body than Speyside, so it is drunk younger and cooler.\n• Houses — Auchentoshan, Glenkinchie, Bladnoch, Daftmill.\n\nWITH A CIGAR\n• It wants the mildest end of the shelf: Connecticut Shade, a panatela, a lancero.\n• A full cigar erases it — Lowland belongs to the first third of the evening, not the last."
+      }
+    },
+    {
+      "id": "campbeltown",
+      "label": {
+        "hr": "Campbeltown",
+        "en": "Campbeltown"
+      },
+      "summary": {
+        "hr": "Tri destilerije, jedan grad — sol, ulje i voće u istoj čaši.",
+        "en": "Three distilleries, one town — salt, oil and fruit in the same glass."
+      },
+      "body": {
+        "hr": "Campbeltown je nekad imao preko trideset destilerija i zvao se glavnim gradom whiskyja. Danas ih ima tri (Springbank, Glen Scotia, Glengyle/Kilkerran), a status regije zadržao je jer je stil doista svoj.\n\nPOTPIS\n• Slano-uljasta tekstura, voće i blagi dim — sve odjednom.\n• Springbank i dalje sve radi u vlastitoj kući, od slada do boce.\n• Male serije, pa cijene i dostupnost skaču.\n\nUZ CIGARU\n• Uljasta tekstura podnosi punije cigare bez da ih pregazi.\n• Odličan srednji put kad je Islay prejak, a Speyside preslab.",
+        "en": "Campbeltown once held more than thirty distilleries and called itself the whisky capital of the world. Three remain (Springbank, Glen Scotia, Glengyle/Kilkerran), and it kept its regional status because the style really is its own.\n\nSIGNATURE\n• A salty, oily texture with fruit and light smoke — all at once.\n• Springbank still does everything in house, from malting to bottling.\n• Small batches, so prices and availability swing.\n\nWITH A CIGAR\n• The oily texture stands up to fuller cigars without being flattened.\n• An excellent middle path when Islay is too much and Speyside too little."
+      }
+    }
+  ],
+  "styles": [
+    {
+      "id": "speyside-fruity",
+      "note": {
+        "hr": "Speyside iz bourbon bačve: jabuka, kruška, med i vanilija, bez treseta.",
+        "en": "Speyside from a bourbon cask: apple, pear, honey and vanilla, no peat."
+      }
+    },
+    {
+      "id": "speyside-sherry",
+      "note": {
+        "hr": "Speyside dozrio u oloroso ili PX bačvi, pa nosi grožđice, smokvu i tamnu čokoladu.",
+        "en": "Speyside matured in oloroso or PX casks, carrying raisin, fig and dark chocolate."
+      }
+    },
+    {
+      "id": "islay-peated",
+      "note": {
+        "hr": "Ječam sušen nad tresetom daje dim, jod i sol; jačina se mjeri u ppm fenola.",
+        "en": "Barley dried over peat gives smoke, iodine and salt; intensity is measured in ppm of phenols."
+      }
+    },
+    {
+      "id": "island",
+      "note": {
+        "hr": "Otočni malt izvan Islaya: morska sol i blaži dim (Orkney, Skye, Jura, Arran).",
+        "en": "Island malt outside Islay: sea salt and gentler smoke (Orkney, Skye, Jura, Arran)."
+      }
+    },
+    {
+      "id": "highland",
+      "note": {
+        "hr": "Najšira polica: vrijesak i med na sjeveru, punije tijelo i dašak dima na zapadu.",
+        "en": "The widest shelf: heather and honey in the north, fuller body and a wisp of smoke in the west."
+      }
+    },
+    {
+      "id": "lowland",
+      "note": {
+        "hr": "Često trostruko destiliran, pa je najlakši škotski stil: trava, limun i sijeno.",
+        "en": "Often triple distilled, the lightest Scottish style: grass, lemon and hay."
+      }
+    },
+    {
+      "id": "campbeltown",
+      "note": {
+        "hr": "Slano-uljasta tekstura s voćem i blagim dimom; u gradu su ostale tri destilerije.",
+        "en": "A salty, oily texture with fruit and light smoke; three distilleries remain in the town."
+      }
+    },
+    {
+      "id": "blended-scotch",
+      "note": {
+        "hr": "Mješavina sladnog i žitnog whiskyja: žitni dio daje mekoću, sladni karakter.",
+        "en": "A blend of malt and grain whisky: grain brings softness, malt brings character."
+      }
+    },
+    {
+      "id": "bourbon",
+      "note": {
+        "hr": "Najmanje 51 % kukuruza i nova opaljena hrastova bačva: vanilija, karamela i kokos.",
+        "en": "At least 51% corn and new charred oak: vanilla, caramel and coconut."
+      }
+    },
+    {
+      "id": "tennessee",
+      "note": {
+        "hr": "Bourbon recept plus Lincoln County Process, filtriranje kroz javorov ugljen prije bačve.",
+        "en": "A bourbon recipe plus the Lincoln County Process, maple charcoal filtering before the cask."
+      }
+    },
+    {
+      "id": "rye",
+      "note": {
+        "hr": "Najmanje 51 % raži donosi papar, kopar i suhi začin; prirodan most prema Habano cigari.",
+        "en": "At least 51% rye brings pepper, dill and dry spice; a natural bridge to a Habano cigar."
+      }
+    },
+    {
+      "id": "irish-pot-still",
+      "note": {
+        "hr": "Irski specijalitet od sladnog i nesladnog ječma u pot stillu: kremasto, uljasto, začinjeno.",
+        "en": "The Irish speciality of malted and unmalted barley in a pot still: creamy, oily, spicy."
+      }
+    },
+    {
+      "id": "irish-single-malt",
+      "note": {
+        "hr": "Sladni ječam iz jedne irske destilerije, najčešće trostruko destiliran i bez treseta.",
+        "en": "Malted barley from a single Irish distillery, usually triple distilled and unpeated."
+      }
+    },
+    {
+      "id": "irish-blend",
+      "note": {
+        "hr": "Mješavina pot still, sladnog i žitnog whiskyja; najmekši i najpitkiji irski stil.",
+        "en": "A blend of pot still, malt and grain whiskey; the softest, easiest-drinking Irish style."
+      }
+    },
+    {
+      "id": "japanese",
+      "note": {
+        "hr": "Škotski postupak s japanskom preciznošću; mizunara hrast dodaje tamjan i sandalovinu.",
+        "en": "Scottish method with Japanese precision; mizunara oak adds incense and sandalwood."
+      }
+    },
+    {
+      "id": "world",
+      "note": {
+        "hr": "Whisky izvan klasičnih zemalja; Tajvan, Indija i Australija u toplini zriju znatno brže.",
+        "en": "Whisky beyond the classic countries; Taiwan, India and Australia mature far faster in the heat."
+      }
+    },
+    {
+      "id": "liqueur",
+      "note": {
+        "hr": "Liker na bazi whiskyja s medom, biljem i šećerom; slađi i slabiji od destilata.",
+        "en": "A whisky-based liqueur with honey, herbs and sugar; sweeter and weaker than the spirit."
+      }
+    }
+  ]
+}

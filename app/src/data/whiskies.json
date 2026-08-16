@@ -350,7 +350,7 @@
     "name": "Benriach THE THIRTY 30 YO Single Malt Four Cask Matured",
     "style": "world",
     "region": "Speyside, Škotska",
-    "country": "World",
+    "country": "Škotska",
     "abv": 46.0,
     "body": 4,
     "sweetness": 3,
@@ -393,7 +393,7 @@
     "name": "Benriach THE TWENTY FIVE 25 YO Single Malt Four Cask Matured",
     "style": "world",
     "region": "Speyside, Škotska",
-    "country": "World",
+    "country": "Škotska",
     "abv": 46.0,
     "body": 4,
     "sweetness": 3,
@@ -1056,7 +1056,7 @@
     "name": "Benriach 22 YO Triple Distilled Three Cask Matured",
     "style": "world",
     "region": "Speyside, Škotska",
-    "country": "World",
+    "country": "Škotska",
     "abv": 46.8,
     "body": 3,
     "sweetness": 3,
@@ -1099,7 +1099,7 @@
     "name": "Benriach 27 YO CASK EDITION Pedro Ximénez Vintage 1994",
     "style": "world",
     "region": "Speyside, Škotska",
-    "country": "World",
+    "country": "Škotska",
     "abv": 53.7,
     "body": 4,
     "sweetness": 4,
@@ -1486,7 +1486,7 @@
     "name": "The BenRiach 21 YO Four-Cask Maturation",
     "style": "world",
     "region": "Speyside, Škotska",
-    "country": "World",
+    "country": "Škotska",
     "abv": 46.0,
     "body": 3,
     "sweetness": 3,
@@ -1657,7 +1657,7 @@
     "category": "whisky",
     "name": "Edradour 21 YO Oloroso Cask Finish 1995",
     "style": "speyside-sherry",
-    "region": "Sherry cask, Škotska",
+    "region": "Highlands, Škotska",
     "country": "Škotska",
     "abv": 56.2,
     "body": 4,
@@ -1701,7 +1701,7 @@
     "name": "Benriach THE SIXTEEN 16 YO Single Malt Three Cask Matured",
     "style": "world",
     "region": "Speyside, Škotska",
-    "country": "World",
+    "country": "Škotska",
     "abv": 43.0,
     "body": 3,
     "sweetness": 3,
@@ -9535,7 +9535,8 @@
     "notes": {
       "hr": "Australski single malt dovršen u bačvama od ginger beera (48%, 0,5 l) — začin đumbira iz bačve, ne iz arome. Limitirano izdanje.",
       "en": "Australian single malt finished in ginger beer casks (48%, 0.5 l) — the ginger spice comes from the cask, not flavouring. Limited release."
-    }
+    },
+    "country": "Australija"
   },
   {
     "id": "wh-edradour-cream-liqueur",
@@ -9574,7 +9575,8 @@
     "notes": {
       "hr": "Krem liker male Highland destilerije — desertni stil poput irish creama, na bazi single malta. Po EU pravilima liker, ne whisky.",
       "en": "A cream liqueur from the small Highland distillery — Irish-cream-style dessert profile on a single malt base. Legally a liqueur, not whisky, under EU rules."
-    }
+    },
+    "country": "Škotska"
   },
   {
     "id": "wh-chivas-regal-12",
