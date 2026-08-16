@@ -668,6 +668,8 @@ const STRINGS = {
   "filter.strength": { hr: "Snaga", en: "Strength" },
   "filter.shape": { hr: "Oblik", en: "Shape" },
   "filter.country": { hr: "Zemlja", en: "Country" },
+  "filter.scotchRegion": { hr: "Regija", en: "Region" },
+  "whisky.regionMore": { hr: "Više o regiji", en: "More on the region" },
   "filter.roast": { hr: "Prženje", en: "Roast" },
   "filter.bean": { hr: "Zrno", en: "Bean" },
   "roast.light": { hr: "Svijetlo", en: "Light" },
@@ -839,6 +841,8 @@ export const COUNTRY_LABELS: Record<string, string> = {
   Kolumbija: "Colombia",
   Honduras: "Honduras",
   SAD: "USA",
+  // zemlje koje na EN izgledaju isto (Japan, Wales) nisu ovdje — cn() ih vrati kakve jesu
+  Kanada: "Canada",
 };
 
 // ceste "najbolji nacin" serviranja iz podataka -> engleski prikaz

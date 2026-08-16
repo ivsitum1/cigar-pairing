@@ -83,6 +83,18 @@ describe("integritet podataka", () => {
     }
   });
 
+  // Filter po zemlji u katalogu grupira po `country`, pa svaka rupa u tom polju
+  // otvara chip "undefined". Regres: sest BenRiacha (Speyside) vodilo se kao
+  // "World", a Starward i Edradour Cream nisu imali zemlju uopce.
+  it("svaki whisky ima zemlju, a skotska regija se poklapa sa zemljom", () => {
+    for (const d of DRINKS.whisky) {
+      expect(d.country?.length, `${d.id} country`).toBeGreaterThan(0);
+      if ((d.region ?? "").includes("Škotska")) {
+        expect(d.country, `${d.id} — regija je skotska, zemlja nije`).toBe("Škotska");
+      }
+    }
+  });
+
   it("sva pica su pairable — engine posteno boduje, ne cenzurira", () => {
     for (const d of ALL_DRINKS) {
       expect(d.pairable, d.id).toBe(true);
