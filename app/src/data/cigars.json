@@ -109963,6 +109963,167 @@
     "isPuro": false
   },
   {
+    "id": "cig-flor-de-selva-fino",
+    "brand": "Flor de Selva",
+    "line": "Classic Fino",
+    "vitola": "Fino",
+    "format": "44 x 153mm",
+    "country": "Honduras",
+    "wrapper": "Habano",
+    "strength": 2,
+    "body": 2,
+    "flavorTags": [
+      "cedar",
+      "zacini",
+      "koza",
+      "kava"
+    ],
+    "smokeTimeMin": 50,
+    "priceEUR": 13.8,
+    "priceApprox": false,
+    "availabilityHR": [
+      "Havana Shop",
+      "The Humidor"
+    ],
+    "notes": {
+      "hr": "Vitki Flor de Selva format — tanak ring naglašava pokrov i elegantnu, cvjetnu stranu hondureškog blenda.",
+      "en": "The slim Flor de Selva — a thin ring that puts the wrapper and the blend's elegant, floral side forward."
+    },
+    "markets": [
+      "HR",
+      "EU",
+      "USA",
+      "WW"
+    ],
+    "vitolas": [
+      {
+        "name": "Fino",
+        "format": "44 x 153mm",
+        "smokeTimeMin": 50,
+        "priceEUR": 13.8,
+        "url": "https://havana-cigar-shop.com/proizvod/flor-de-selva-fino-25/",
+        "ring": 44,
+        "lengthMM": 153,
+        "fetchedAt": "2026-07-01"
+      },
+      {
+        "name": "Selva Fino",
+        "format": "44 x 153mm",
+        "smokeTimeMin": 45,
+        "priceEUR": 13.8,
+        "url": "https://havana-cigar-shop.com/proizvod/flor-de-selva-fino-4/",
+        "ring": 44,
+        "lengthMM": 153,
+        "fetchedAt": "2026-07-01"
+      }
+    ],
+    "priceUrl": "https://havana-cigar-shop.com/proizvod/flor-de-selva-fino-25/",
+    "regionLinks": {
+      "HR": {
+        "shop": "Havana Cigar Shop",
+        "url": "https://havana-cigar-shop.com/proizvod/flor-de-selva-fino-25/",
+        "priceEUR": 13.8,
+        "fetchedAt": "2026-07-01"
+      },
+      "EU": {
+        "shop": "CigarWorld",
+        "url": "https://www.cigarworld.de/en/zigarren/honduras/flor-de-selva-classic-fino-grand-corona-01204_407",
+        "priceEUR": 10.8,
+        "fetchedAt": "2026-07-01"
+      },
+      "USA": {
+        "shop": "Neptune Cigar",
+        "url": "https://www.neptunecigar.com/cigars/flor-de-selva-fino"
+      }
+    },
+    "binder": "Honduras",
+    "filler": "Honduras",
+    "wrapperOrigin": "Honduras",
+    "binderOrigin": "Honduras",
+    "fillerOrigin": "Honduras",
+    "isPuro": true
+  },
+  {
+    "id": "cig-flor-de-selva-tempo",
+    "brand": "Flor de Selva",
+    "line": "Classic Tempo",
+    "vitola": "Tempo",
+    "format": "60 x 152mm",
+    "country": "Honduras",
+    "wrapper": "Habano",
+    "strength": 2,
+    "body": 3,
+    "flavorTags": [
+      "cedar",
+      "zacini",
+      "koza",
+      "kava"
+    ],
+    "smokeTimeMin": 75,
+    "priceEUR": 17.1,
+    "priceApprox": false,
+    "availabilityHR": [
+      "Havana Shop",
+      "The Humidor"
+    ],
+    "notes": {
+      "hr": "Najdeblji format Classic Collectiona: 60 ring na šest inča daje obilje hladnog, mekog dima i dobrih sat i četvrt mira. Snaga ostaje hondureški umjerena — veličina je ta koja impresionira, ne nikotin.",
+      "en": "The thickest format in the Classic Collection: a 60 ring over six inches gives masses of cool, soft smoke and a good hour and a quarter. The strength stays Honduran-moderate — it is the size that impresses, not the nicotine."
+    },
+    "markets": [
+      "HR",
+      "EU",
+      "USA",
+      "WW"
+    ],
+    "vitolas": [
+      {
+        "name": "Tempo",
+        "format": "60 x 152mm",
+        "smokeTimeMin": 75,
+        "priceEUR": 17.1,
+        "url": "https://havana-cigar-shop.com/proizvod/flor-de-selva-tempo-20/",
+        "ring": 60,
+        "lengthMM": 152,
+        "regionLinks": {
+          "USA": {
+            "shop": "Neptune Cigar",
+            "url": "https://www.neptunecigar.com/cigars/flor-de-selva-tempo-aged"
+          }
+        },
+        "fetchedAt": "2026-07-01"
+      }
+    ],
+    "priceUrl": "https://havana-cigar-shop.com/proizvod/flor-de-selva-tempo-20/",
+    "regionLinks": {
+      "HR": {
+        "shop": "Havana Cigar Shop",
+        "url": "https://havana-cigar-shop.com/proizvod/flor-de-selva-tempo-20/",
+        "priceEUR": 17.1,
+        "fetchedAt": "2026-07-01"
+      },
+      "EU": {
+        "shop": "CigarWorld",
+        "url": "https://www.cigarworld.de/en/zigarren/honduras/flor-de-selva-classic-tempo-robusto-grande-01204_28680",
+        "priceEUR": 13.7,
+        "fetchedAt": "2026-07-01"
+      },
+      "USA": {
+        "shop": "Neptune Cigar",
+        "url": "https://www.neptunecigar.com/cigars/flor-de-selva-tempo"
+      }
+    },
+    "binder": "Honduras",
+    "filler": "Honduras",
+    "wrapperOrigin": "Honduras",
+    "binderOrigin": "Honduras",
+    "fillerOrigin": "Honduras",
+    "isPuro": true,
+    "sourceUrls": [
+      "https://www.neptunecigar.com/cigars/flor-de-selva-tempo-aged"
+    ]
+  },
+  {
     "id": "cig-flor-de-selva-clasica",
     "brand": "Flor de Selva",
     "line": "Clásica",
@@ -110128,87 +110289,6 @@
         "fetchedAt": "2026-07-01"
       }
     }
-  },
-  {
-    "id": "cig-flor-de-selva-fino",
-    "brand": "Flor de Selva",
-    "line": "Classic Fino",
-    "vitola": "Fino",
-    "format": "44 x 153mm",
-    "country": "Honduras",
-    "wrapper": "Habano",
-    "strength": 2,
-    "body": 2,
-    "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
-    ],
-    "smokeTimeMin": 50,
-    "priceEUR": 13.8,
-    "priceApprox": false,
-    "availabilityHR": [
-      "Havana Shop",
-      "The Humidor"
-    ],
-    "notes": {
-      "hr": "Vitki Flor de Selva format — tanak ring naglašava pokrov i elegantnu, cvjetnu stranu hondureškog blenda.",
-      "en": "The slim Flor de Selva — a thin ring that puts the wrapper and the blend's elegant, floral side forward."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Fino",
-        "format": "44 x 153mm",
-        "smokeTimeMin": 50,
-        "priceEUR": 13.8,
-        "url": "https://havana-cigar-shop.com/proizvod/flor-de-selva-fino-25/",
-        "ring": 44,
-        "lengthMM": 153,
-        "fetchedAt": "2026-07-01"
-      },
-      {
-        "name": "Selva Fino",
-        "format": "44 x 153mm",
-        "smokeTimeMin": 45,
-        "priceEUR": 13.8,
-        "url": "https://havana-cigar-shop.com/proizvod/flor-de-selva-fino-4/",
-        "ring": 44,
-        "lengthMM": 153,
-        "fetchedAt": "2026-07-01"
-      }
-    ],
-    "priceUrl": "https://havana-cigar-shop.com/proizvod/flor-de-selva-fino-25/",
-    "regionLinks": {
-      "HR": {
-        "shop": "Havana Cigar Shop",
-        "url": "https://havana-cigar-shop.com/proizvod/flor-de-selva-fino-25/",
-        "priceEUR": 13.8,
-        "fetchedAt": "2026-07-01"
-      },
-      "EU": {
-        "shop": "CigarWorld",
-        "url": "https://www.cigarworld.de/en/zigarren/honduras/flor-de-selva-classic-fino-grand-corona-01204_407",
-        "priceEUR": 10.8,
-        "fetchedAt": "2026-07-01"
-      },
-      "USA": {
-        "shop": "Neptune Cigar",
-        "url": "https://www.neptunecigar.com/cigars/flor-de-selva-fino"
-      }
-    },
-    "binder": "Honduras",
-    "filler": "Honduras",
-    "wrapperOrigin": "Honduras",
-    "binderOrigin": "Honduras",
-    "fillerOrigin": "Honduras",
-    "isPuro": true
   },
   {
     "id": "cig-flor-de-selva-grand-presse-maduro",
@@ -110823,86 +110903,6 @@
     },
     "sourceUrls": [
       "https://www.neptunecigar.com/cigars/flor-de-selva-taster"
-    ]
-  },
-  {
-    "id": "cig-flor-de-selva-tempo",
-    "brand": "Flor de Selva",
-    "line": "Classic Tempo",
-    "vitola": "Tempo",
-    "format": "60 x 152mm",
-    "country": "Honduras",
-    "wrapper": "Habano",
-    "strength": 2,
-    "body": 3,
-    "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
-    ],
-    "smokeTimeMin": 75,
-    "priceEUR": 17.1,
-    "priceApprox": false,
-    "availabilityHR": [
-      "Havana Shop",
-      "The Humidor"
-    ],
-    "notes": {
-      "hr": "Najdeblji format Classic Collectiona: 60 ring na šest inča daje obilje hladnog, mekog dima i dobrih sat i četvrt mira. Snaga ostaje hondureški umjerena — veličina je ta koja impresionira, ne nikotin.",
-      "en": "The thickest format in the Classic Collection: a 60 ring over six inches gives masses of cool, soft smoke and a good hour and a quarter. The strength stays Honduran-moderate — it is the size that impresses, not the nicotine."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Tempo",
-        "format": "60 x 152mm",
-        "smokeTimeMin": 75,
-        "priceEUR": 17.1,
-        "url": "https://havana-cigar-shop.com/proizvod/flor-de-selva-tempo-20/",
-        "ring": 60,
-        "lengthMM": 152,
-        "regionLinks": {
-          "USA": {
-            "shop": "Neptune Cigar",
-            "url": "https://www.neptunecigar.com/cigars/flor-de-selva-tempo-aged"
-          }
-        },
-        "fetchedAt": "2026-07-01"
-      }
-    ],
-    "priceUrl": "https://havana-cigar-shop.com/proizvod/flor-de-selva-tempo-20/",
-    "regionLinks": {
-      "HR": {
-        "shop": "Havana Cigar Shop",
-        "url": "https://havana-cigar-shop.com/proizvod/flor-de-selva-tempo-20/",
-        "priceEUR": 17.1,
-        "fetchedAt": "2026-07-01"
-      },
-      "EU": {
-        "shop": "CigarWorld",
-        "url": "https://www.cigarworld.de/en/zigarren/honduras/flor-de-selva-classic-tempo-robusto-grande-01204_28680",
-        "priceEUR": 13.7,
-        "fetchedAt": "2026-07-01"
-      },
-      "USA": {
-        "shop": "Neptune Cigar",
-        "url": "https://www.neptunecigar.com/cigars/flor-de-selva-tempo"
-      }
-    },
-    "binder": "Honduras",
-    "filler": "Honduras",
-    "wrapperOrigin": "Honduras",
-    "binderOrigin": "Honduras",
-    "fillerOrigin": "Honduras",
-    "isPuro": true,
-    "sourceUrls": [
-      "https://www.neptunecigar.com/cigars/flor-de-selva-tempo-aged"
     ]
   },
   {
