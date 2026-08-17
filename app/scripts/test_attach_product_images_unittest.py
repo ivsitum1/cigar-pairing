@@ -13,6 +13,7 @@ _SPEC.loader.exec_module(_MOD)
 is_http_image = _MOD.is_http_image
 parse_allez_listing = _MOD.parse_allez_listing
 pick_offer_image = _MOD.pick_offer_image
+extract_product_image = _MOD.extract_product_image
 
 
 class AllezListingParseTests(unittest.TestCase):
@@ -30,6 +31,42 @@ class AllezListingParseTests(unittest.TestCase):
     def test_rejects_placeholder(self) -> None:
         self.assertFalse(is_http_image("https://shop.example/placeholder.png"))
         self.assertTrue(is_http_image("https://havana-cigar-shop.com/wp-content/uploads/x.png"))
+
+    def test_extracts_og_image(self) -> None:
+        html = '<meta property="og:image" content="https://www.cigarworld.de/bilder/detail/big/13801.jpg">'
+        img = extract_product_image(html, "https://www.cigarworld.de/en/zigarren/x")
+        self.assertEqual(img, "https://www.cigarworld.de/bilder/detail/big/13801.jpg")
+
+    def test_skips_share_logo(self) -> None:
+        html = '<meta property="og:image" content="https://images.famous-smoke.com/image/upload/v1/main/site/fss_share.jpg">'
+        img = extract_product_image(html, "https://www.famous-smoke.com/x")
+        self.assertIsNone(img)
+
+    def test_extracts_ecuga_product_thumbnail(self) -> None:
+        html = (
+            '{"props":{"pageProps":{"product":{"media":['
+            '{"url":"https://ecuga.com/media/thumbnails/products/aberlour_12_thumbnail_4096.jpg"}'
+            "]}}}"
+        )
+        img = extract_product_image(html, "https://ecuga.com/proizvod/aberlour-12-double-cask")
+        self.assertEqual(
+            img,
+            "https://ecuga.com/media/thumbnails/products/aberlour_12_thumbnail_4096.jpg",
+        )
+
+    def test_rewrites_ecuga_katalog_to_product_page(self) -> None:
+        url = (
+            "https://ecuga.com/katalog/whisky/skotski-maltgrain-whisky/"
+            "aberlour-12-double-cask"
+        )
+        self.assertEqual(
+            _MOD.shop_fetch_url(url),
+            "https://ecuga.com/proizvod/aberlour-12-double-cask",
+        )
+        self.assertEqual(
+            _MOD.shop_fetch_url("https://www.cigarworld.de/en/zigarren/x"),
+            "https://www.cigarworld.de/en/zigarren/x",
+        )
 
     def test_prefers_hr_shop_image(self) -> None:
         img = pick_offer_image(
