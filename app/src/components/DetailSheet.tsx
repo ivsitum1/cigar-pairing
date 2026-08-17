@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { SheetShell } from "./SheetShell";
 import type { Cigar, Drink, Region } from "../types";
-import { useI18n, STYLE_LABELS, ADDITIVE_LABELS, ADDITIVE_RULES } from "../i18n";
+import { useI18n, STYLE_LABELS, ADDITIVE_LABELS, ADDITIVE_RULES, COFFEE_ROAST_LABELS, COFFEE_PROCESS_LABELS, COFFEE_SPECIES_LABELS } from "../i18n";
 import { flavorLabel } from "../engine/rules";
 import {
   brandInfo,
@@ -540,6 +540,23 @@ function DrinkDetails({
             v={`${lx(ADDITIVE_LABELS[drink.additiveStatus])}${drink.additiveDetail ? ` (${lx(drink.additiveDetail)})` : ""}`}
           />
         )}
+        {drink.coffeeDetail && (
+          <>
+            <Row k={t("common.roast")} v={lx(COFFEE_ROAST_LABELS[drink.coffeeDetail.roast])} />
+            {drink.coffeeDetail.process && (
+              <Row
+                k={t("common.process")}
+                v={lx(COFFEE_PROCESS_LABELS[drink.coffeeDetail.process])}
+              />
+            )}
+            {drink.coffeeDetail.species && (
+              <Row
+                k={t("common.species")}
+                v={lx(COFFEE_SPECIES_LABELS[drink.coffeeDetail.species])}
+              />
+            )}
+          </>
+        )}
         <Row
           k={t("common.price")}
           v={`${drink.priceApprox ? t("common.approx") + " " : ""}${formatPrice(drink.priceEUR)}`}
@@ -577,6 +594,14 @@ function DrinkDetails({
       {lx(drink.notes) && (
         <p className="mt-3 text-sm leading-relaxed text-papir/85">
           {lx(drink.notes)}
+        </p>
+      )}
+      {drink.cigarHint && lx(drink.cigarHint) && (
+        <p className="mt-3 text-sm leading-relaxed text-papir/85">
+          <span className="mb-1 block text-[10px] uppercase tracking-widest text-dim">
+            {t("common.cigarHint")}
+          </span>
+          {lx(drink.cigarHint)}
         </p>
       )}
       {drink.lineup && drink.lineup.length > 0 && (

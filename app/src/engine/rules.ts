@@ -32,6 +32,12 @@ export const WEIGHTS = {
   coffeeFlavorBridge: 5,
   coffeeAcidityContrast: 5,
   coffeeSweetMellow: 4,
+  coffeeMilkMellow: 4,
+  coffeeMilkMask: 5,
+  coffeeMilkHeavy: 6,
+  coffeeProcessBridge: 5,
+  coffeeSpikedWeight: 4,
+  coffeeSpikedDelicate: 5,
 };
 
 // sinonimi/varijante iz scrape podataka -> kanonski tag koji engine boduje

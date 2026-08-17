@@ -54,7 +54,14 @@ describe("club 101 vodici", () => {
   it("pica 101 pokriva gin, stolno vino, kavu i tekilu", () => {
     const drinkIds = club101.tracks.drinks.map((c) => c.id);
     expect(drinkIds).toEqual(
-      expect.arrayContaining(["d-gin-pairing", "d-wine-table", "d-coffee", "d-tequila"]),
+      expect.arrayContaining([
+        "d-gin-pairing",
+        "d-wine-table",
+        "d-coffee",
+        "d-coffee-roast",
+        "d-coffee-process",
+        "d-tequila",
+      ]),
     );
     expect(club101.tracks.tips.map((c) => c.id)).toContain("t-coffee-espresso");
     expect(club101.tracks.tips.find((c) => c.id === "t-notebook")?.body.hr).toContain(
@@ -77,6 +84,14 @@ describe("club 101 vodici", () => {
     // sedam kombinacija: svaka priprema ima svoj redak i primjer iz kataloga
     expect(coffee?.body.hr).toContain("Za svaku pripremu");
     expect(coffee?.body.en).toContain("For each preparation");
+
+    const roast = club101.tracks.drinks.find((c) => c.id === "d-coffee-roast");
+    expect(roast?.body.hr.toLowerCase()).toMatch(/prženj/);
+    expect(roast?.body.en.toLowerCase()).toMatch(/roast/);
+
+    const process = club101.tracks.drinks.find((c) => c.id === "d-coffee-process");
+    expect(process?.body.hr.toLowerCase()).toMatch(/oprana/);
+    expect(process?.body.en.toLowerCase()).toMatch(/washed/);
 
     const tequila = club101.tracks.drinks.find((c) => c.id === "d-tequila");
     expect(tequila?.body.hr.toLowerCase()).toMatch(/blanco/);

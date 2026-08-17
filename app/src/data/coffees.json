@@ -7,9 +7,7 @@
    "hr": "Espresso — talijanska tamna mješavina (80/20)",
    "en": "Espresso — Italian dark blend (80/20)"
   },
-  "style": "espresso",
-  "roast": "dark",
-  "species": "blend",
+  "style": "espresso-dark",
   "region": "Italija (blend)",
   "country": "—",
   "abv": null,
@@ -29,19 +27,25 @@
   "serving": {
    "best": "Espresso (30 ml)"
   },
-  "cigarHint": null,
+  "cigarHint": {
+   "hr": "Most su kakao, crema i gorčina; biraj puniju Habano ili maduro cigaru i drži vodu na stolu.",
+   "en": "The bridge is cocoa, crema and bitterness; pick a fuller Habano or maduro and keep water on the table."
+  },
   "notes": {
-   "hr": "Klasični bar espresso s robustom — gust, gorak, intenzivan. Nosi maduro i punu cigaru.",
-   "en": "Classic bar espresso with robusta — dense, bitter, intense. Carries maduro and full cigars."
+   "hr": "Klasični bar espresso s udjelom robuste: gust, gorak, s debelom cremom. Tamno prženje gubi voćnu kiselost i ostavlja kakao, pepeo i zemlju. Nosi maduro i punu Habano cigaru; blagi Connecticut ostaje ispod šalice.",
+   "en": "Classic bar espresso with robusta: dense, bitter, thick crema. Dark roast drops fruit acidity and leaves cocoa, ash and earth. It carries maduro and a full Habano; a mild Connecticut sits under the cup."
+  },
+  "coffeeDetail": {
+   "roast": "dark",
+   "process": "blend",
+   "species": "blend"
   }
  },
  {
   "id": "cf-espresso-arabica-medium",
   "category": "coffee",
   "name": "Espresso — 100% arabica, medium roast",
-  "style": "espresso",
-  "roast": "medium",
-  "species": "arabica",
+  "style": "espresso-medium",
   "region": "specialty blend",
   "country": "—",
   "abv": null,
@@ -60,19 +64,25 @@
   "serving": {
    "best": "Espresso (30-36 ml)"
   },
-  "cigarHint": null,
+  "cigarHint": {
+   "hr": "Voće i karamela prate srednju Habano cigaru; maduro je pretežak za ovu slatkoću.",
+   "en": "Fruit and caramel follow a medium Habano; maduro is too heavy for this sweetness."
+  },
   "notes": {
-   "hr": "Specialty espresso — slađi i voćniji od bar mješavine, uz srednje cigare.",
-   "en": "Specialty espresso — sweeter and fruitier than bar blends, with medium cigars."
+   "hr": "Specialty espresso od 100 % arabice, srednje pržen. Slađi je i voćniji od barske mješavine, s manje gorčine u aftertasteu. Ide uz srednje Habano i Cameroon cigare; maduro ga lako pregazi.",
+   "en": "Specialty espresso from 100% arabica, medium roast. Sweeter and fruitier than a bar blend, with less bitter aftertaste. It suits medium Habano and Cameroon; maduro easily overruns it."
+  },
+  "coffeeDetail": {
+   "roast": "medium",
+   "process": "blend",
+   "species": "arabica"
   }
  },
  {
   "id": "cf-ristretto",
   "category": "coffee",
   "name": "Ristretto",
-  "style": "ristretto",
-  "roast": "dark",
-  "species": "blend",
+  "style": "espresso-dark",
   "region": "—",
   "country": "—",
   "abv": null,
@@ -90,19 +100,25 @@
   "serving": {
    "best": "Ristretto (20 ml)"
   },
-  "cigarHint": null,
+  "cigarHint": {
+   "hr": "Kratka šalica, kratka cigara: mali gutljaji uz robusto ili belicoso, ne uz churchill.",
+   "en": "Short cup, short cigar: small sips with a robusto or belicoso, not a Churchill."
+  },
   "notes": {
-   "hr": "Koncentriraniji, slađi ekstrakt — mali gutljaji uz jaku, kratku cigaru.",
-   "en": "More concentrated, sweeter extraction — small sips with a strong short cigar."
+   "hr": "Kraća ekstrakcija, manji volumen, veća slatkoća u odnosu na obični espresso. Gorčina ostaje, ali je kraća. Mali gutljaji uz kratku, jaku cigaru; dugi Churchill traži doppio ili french press.",
+   "en": "Shorter extraction, smaller volume, more sweetness than a regular espresso. Bitterness stays, but it is briefer. Small sips with a short, strong cigar; a long Churchill wants a doppio or a french press."
+  },
+  "coffeeDetail": {
+   "roast": "dark",
+   "process": "blend",
+   "species": "blend"
   }
  },
  {
   "id": "cf-doppio",
   "category": "coffee",
   "name": "Doppio espresso",
-  "style": "espresso",
-  "roast": "dark",
-  "species": "blend",
+  "style": "espresso-dark",
   "region": "—",
   "country": "—",
   "abv": null,
@@ -121,10 +137,18 @@
   "serving": {
    "best": "Doppio (60 ml)"
   },
-  "cigarHint": null,
+  "cigarHint": {
+   "hr": "Volumen šalice prati dugu, punu cigaru; ritam je gutljaj na trećinu, ne na svaki dim.",
+   "en": "Cup volume follows a long, full cigar; sip once per third, not on every puff."
+  },
   "notes": {
-   "hr": "Dupla doza za dugu, punu cigaru — standard cigar-lounge kombinacija.",
-   "en": "Double dose for a long full cigar — the standard cigar-lounge combination."
+   "hr": "Dva espressa u jednoj šalici: volumen i kofein za dugu sesiju. Gorčina i kakao drže ritam kroz zadnju trećinu cigare. Standard u cigar loungeu uz punu Habano ili maduro cigaru.",
+   "en": "Two espressos in one cup: volume and caffeine for a long session. Bitterness and cocoa keep pace through the cigar's final third. Lounge standard with a full Habano or maduro."
+  },
+  "coffeeDetail": {
+   "roast": "dark",
+   "process": "blend",
+   "species": "blend"
   }
  },
  {
@@ -136,8 +160,6 @@
    "en": "Turkish coffee (džezva)"
   },
   "style": "turkish",
-  "roast": "dark",
-  "species": "blend",
   "region": "Balkan / Turska",
   "country": "—",
   "abv": null,
@@ -156,10 +178,18 @@
   "serving": {
    "best": "Džezva, polako, uz rahat-lokum"
   },
-  "cigarHint": null,
+  "cigarHint": {
+   "hr": "Gustoća i začin vole zemljanu, jaku cigaru; šećer u džezvi lijepi maduro, ne Shade.",
+   "en": "Density and spice like an earthy, strong cigar; sugar in the pot glues maduro, not Shade."
+  },
   "notes": {
-   "hr": "Gusta, mutna, meditativna — tradicionalni par snažnim i zemljanim cigarama. Sa šećerom postaje most prema maduru.",
-   "en": "Thick, muddy, meditative — the traditional partner of strong earthy cigars. With sugar it bridges to maduro."
+   "hr": "Fino mljevena kava kuha se u džezvi i pije s talogom. Gusta je, mutna i začinska; šećer se dodaje u loncu, ne u šalici. Tradicionalni par zemljanim, jakim cigarama; sa šećerom postaje most prema maduru.",
+   "en": "Very fine grind simmered in a cezve and drunk with the grounds. Thick, muddy, spicy; sugar goes in the pot, not the cup. Traditional with earthy, strong cigars; sweetened, it bridges to maduro."
+  },
+  "coffeeDetail": {
+   "roast": "dark",
+   "process": "blend",
+   "species": "blend"
   }
  },
  {
@@ -167,8 +197,6 @@
   "category": "coffee",
   "name": "Moka pot (Bialetti)",
   "style": "moka",
-  "roast": "dark",
-  "species": "blend",
   "region": "Italija",
   "country": "—",
   "abv": null,
@@ -186,10 +214,18 @@
   "serving": {
    "best": "Moka, kućni ritual"
   },
-  "cigarHint": null,
+  "cigarHint": {
+   "hr": "Kućni most uz srednju do punu cigaru; jači od filtera, pa Connecticut brzo utone.",
+   "en": "A home bridge with a medium to full cigar; stronger than filter, so Connecticut sinks quickly."
+  },
   "notes": {
-   "hr": "Kućni talijanski standard — jači od filtera, mekši od espressa.",
-   "en": "The Italian home standard — stronger than filter, softer than espresso."
+   "hr": "Para gura vodu kroz mljevenu kavu na štednjaku. Jača je od filtera, mekša od pravog espressa, s kakaoom i blagom gorčinom. Kućni ritual uz srednju do punu cigaru, bez potrebe za strojem.",
+   "en": "Stovetop steam pushes water through the grounds. Stronger than filter, softer than true espresso, with cocoa and mild bitterness. A home ritual with a medium to full cigar, no machine required."
+  },
+  "coffeeDetail": {
+   "roast": "dark",
+   "process": "blend",
+   "species": "blend"
   }
  },
  {
@@ -200,9 +236,7 @@
    "hr": "V60 filter — Etiopija Yirgacheffe (light roast)",
    "en": "V60 filter — Ethiopia Yirgacheffe (light roast)"
   },
-  "style": "filter",
-  "roast": "light",
-  "species": "arabica",
+  "style": "filter-light",
   "region": "Yirgacheffe, Etiopija",
   "country": "Etiopija",
   "abv": null,
@@ -221,10 +255,18 @@
   "serving": {
    "best": "V60 / pour-over"
   },
-  "cigarHint": null,
+  "cigarHint": {
+   "hr": "Čajno tijelo traži najblaži Connecticut; jači dim briše jasmin prije nego se šalica ohladi.",
+   "en": "Tea-like body wants the mildest Connecticut; stronger smoke wipes the jasmine before the cup cools."
+  },
   "notes": {
-   "hr": "Cvjetno-citrusna, čajna — samo uz najblaže Connecticut cigare, inače je dim pregazi.",
-   "en": "Floral-citrus, tea-like — only with the mildest Connecticut cigars or the smoke drowns it."
+   "hr": "Oprana Yirgacheffe, svijetlo prženje: jasmin, bergamot, čajno tijelo. Kiselost je visoka, TDS nizak. Samo uz najblaži Connecticut ili Cameroon; puna cigara prekrije šalicu prije trećeg dima.",
+   "en": "Washed Yirgacheffe, light roast: jasmine, bergamot, tea-like body. Acidity is high, TDS is low. Only with the mildest Connecticut or Cameroon; a full cigar covers the cup before the third puff."
+  },
+  "coffeeDetail": {
+   "roast": "light",
+   "process": "washed",
+   "species": "arabica"
   }
  },
  {
@@ -235,9 +277,7 @@
    "hr": "Filter — Kenija AA (light-medium)",
    "en": "Filter — Kenya AA (light-medium)"
   },
-  "style": "filter",
-  "roast": "light",
-  "species": "arabica",
+  "style": "filter-light",
   "region": "Nyeri, Kenija",
   "country": "Kenija",
   "abv": null,
@@ -256,10 +296,18 @@
   "serving": {
    "best": "V60 / aeropress"
   },
-  "cigarHint": null,
+  "cigarHint": {
+   "hr": "Kiselost čisti nepce uz Cameroon ili kratki Habano; maduro i ribiz se tuku.",
+   "en": "Acidity cleanses the palate with Cameroon or a short Habano; maduro and currant fight."
+  },
   "notes": {
-   "hr": "Svijetla kiselost crnog ribiza — uz blage, svježe cigare.",
-   "en": "Bright blackcurrant acidity — with mild fresh cigars."
+   "hr": "Kenijski AA iz Nyerija: crni ribiz, limunska kiselost, vino u aftertasteu. Oprana obrada drži čašu čistom. Radi kao kontrast uz Cameroon ili kraći Habano; maduro i ova kiselost se tuku.",
+   "en": "Kenyan AA from Nyeri: blackcurrant, lemon acidity, a winey finish. Washed process keeps the cup clean. Works as contrast with Cameroon or a shorter Habano; maduro and this acidity fight."
+  },
+  "coffeeDetail": {
+   "roast": "light",
+   "process": "washed",
+   "species": "arabica"
   }
  },
  {
@@ -270,9 +318,7 @@
    "hr": "Filter — Kolumbija (medium roast)",
    "en": "Filter — Colombia (medium roast)"
   },
-  "style": "filter",
-  "roast": "medium",
-  "species": "arabica",
+  "style": "filter-medium",
   "region": "Huila, Kolumbija",
   "country": "Kolumbija",
   "abv": null,
@@ -291,19 +337,25 @@
   "serving": {
    "best": "Filter / french press"
   },
-  "cigarHint": null,
+  "cigarHint": {
+   "hr": "Srednje tijelo prati srednju Habano cigaru; svestran ulaz kad ne znaš koju kavu kuhati.",
+   "en": "Medium body follows a medium Habano; a versatile start when you do not know which coffee to brew."
+  },
   "notes": {
-   "hr": "Uravnotežena klasika — karamela i jabuka, svestrana uz srednje cigare.",
-   "en": "The balanced classic — caramel and apple, versatile with medium cigars."
+   "hr": "Huila, oprana, srednje prženje: karamela, crvena jabuka, orah. Najsvestranija filtar kava u katalogu. Prati srednje Habano cigare bez borbe; ni prelagana za Connecticut ni preslaba za umjereni maduro.",
+   "en": "Huila, washed, medium roast: caramel, red apple, nut. The most versatile filter coffee in the catalogue. It follows a medium Habano without a fight; neither too light for Connecticut nor too weak for a moderate maduro."
+  },
+  "coffeeDetail": {
+   "roast": "medium",
+   "process": "washed",
+   "species": "arabica"
   }
  },
  {
   "id": "cf-brazil-santos",
   "category": "coffee",
   "name": "Brazil Santos / Cerrado (medium)",
-  "style": "filter",
-  "roast": "medium",
-  "species": "arabica",
+  "style": "filter-medium",
   "region": "Minas Gerais, Brazil",
   "country": "Brazil",
   "abv": null,
@@ -321,10 +373,18 @@
   "serving": {
    "best": "Espresso / moka / filter"
   },
-  "cigarHint": null,
+  "cigarHint": {
+   "hr": "Kakao i orah su najsigurniji most; maduro i Habano sjede, cvjetni Connecticut malo gubi.",
+   "en": "Cocoa and nut are the safest bridge; maduro and Habano sit well, floral Connecticut loses a little."
+  },
   "notes": {
-   "hr": "Orašasto-čokoladni, niska kiselost — najsigurniji izbor za većinu cigara.",
-   "en": "Nutty-chocolatey, low acidity — the safest pairing default for most cigars."
+   "hr": "Cerrado ili Santos, često natural: niska kiselost, kakao, lješnjak, karamela. To je zadana kava uz većinu cigara jer ništa ne vrišti. Maduro i Habano sjede mirno; cvjetni Connecticut gubi malo sjaja, ali prolazi.",
+   "en": "Cerrado or Santos, often natural: low acidity, cocoa, hazelnut, caramel. The default coffee with most cigars because nothing shouts. Maduro and Habano sit calmly; a floral Connecticut loses a little sparkle but still works."
+  },
+  "coffeeDetail": {
+   "roast": "medium",
+   "process": "natural",
+   "species": "arabica"
   }
  },
  {
@@ -335,9 +395,7 @@
    "hr": "Gvatemala Antigua (medium)",
    "en": "Guatemala Antigua (medium)"
   },
-  "style": "filter",
-  "roast": "medium",
-  "species": "arabica",
+  "style": "filter-medium",
   "region": "Antigua, Gvatemala",
   "country": "Gvatemala",
   "abv": null,
@@ -356,19 +414,25 @@
   "serving": {
    "best": "Filter / espresso"
   },
-  "cigarHint": null,
+  "cigarHint": {
+   "hr": "Začin i kakao vole Habano pokrov; Connecticut je preblag za vulkansku gustoću.",
+   "en": "Spice and cocoa like a Habano wrapper; Connecticut is too mild for the volcanic density."
+  },
   "notes": {
-   "hr": "Vulkanska kava — kakao sa začinima i daškom dima, voli Habano pokrov.",
-   "en": "Volcanic coffee — cocoa with spice and a whiff of smoke, loves Habano wrappers."
+   "hr": "Vulkanski Antigua: kakao, začin, dašak dima uz srednje tijelo. Oprana obrada drži čistoću, a visina daje gustoću zrna. Voli Habano pokrov; Connecticut je preblag, oscuro pretežak.",
+   "en": "Volcanic Antigua: cocoa, spice, a whiff of smoke at medium body. Washed process keeps it clean; altitude densifies the bean. It likes a Habano wrapper; Connecticut is too mild, oscuro too heavy."
+  },
+  "coffeeDetail": {
+   "roast": "medium",
+   "process": "washed",
+   "species": "arabica"
   }
  },
  {
   "id": "cf-sumatra-mandheling",
   "category": "coffee",
   "name": "Sumatra Mandheling (dark)",
-  "style": "filter",
-  "roast": "dark",
-  "species": "arabica",
+  "style": "filter-dark",
   "region": "Sumatra, Indonezija",
   "country": "Indonezija",
   "abv": null,
@@ -389,19 +453,25 @@
   "serving": {
    "best": "French press / filter"
   },
-  "cigarHint": null,
+  "cigarHint": {
+   "hr": "Duhan, drvo i zemlja u šalici traže isti registar u dimu: Habano, ne Shade.",
+   "en": "Tobacco, wood and earth in the cup want the same register in the smoke: Habano, not Shade."
+  },
   "notes": {
-   "hr": "Zemljana, teška, sirupasta — kava koja izgleda i ponaša se kao maduro cigara.",
-   "en": "Earthy, heavy, syrupy — the coffee that looks and acts like a maduro cigar."
+   "hr": "Giling basah (poluprana) Sumatra: niska kiselost, sirupasto tijelo, duhan, drvo, zemlja, koža. Kava koja izgleda kao Habano cigara u šalici. Prirodan most uz zemljani dim; Connecticut ostaje bez posla.",
+   "en": "Giling basah (semi-washed) Sumatra: low acidity, syrupy body, tobacco, wood, earth, leather. The coffee that looks like a Habano cigar in a cup. A natural bridge with earthy smoke; Connecticut has nothing to do."
+  },
+  "coffeeDetail": {
+   "roast": "dark",
+   "process": "semi-washed",
+   "species": "arabica"
   }
  },
  {
   "id": "cf-monsooned-malabar",
   "category": "coffee",
   "name": "India Monsooned Malabar (espresso)",
-  "style": "espresso",
-  "roast": "dark",
-  "species": "arabica",
+  "style": "espresso-dark",
   "region": "Malabar, Indija",
   "country": "Indija",
   "abv": null,
@@ -420,19 +490,25 @@
   "serving": {
    "best": "Espresso"
   },
-  "cigarHint": null,
+  "cigarHint": {
+   "hr": "Bez kiselosti, s duhanom: prirodan srodnik cigare; biraj Habano ili maduro.",
+   "en": "No acidity, with tobacco: a natural relative of the cigar; pick Habano or maduro."
+  },
   "notes": {
-   "hr": "Monsunska obrada daje duhansko-zemljani profil bez kiselosti — prirodan srodnik cigare.",
-   "en": "Monsooning gives a tobacco-earth profile with no acidity — the cigar's natural relative."
+   "hr": "Monsunska obrada na Malabaru: zrno upija vlagu, kiselost nestaje, ostaju duhan, začin i kakao. Espresso iz ovog zrna ponaša se kao srodnik cigare. Traži Habano ili maduro, ne Shade.",
+   "en": "Monsoon process on the Malabar coast: the bean takes up humidity, acidity vanishes, tobacco, spice and cocoa remain. Espresso from this bean behaves like a relative of the cigar. It wants Habano or maduro, not Shade."
+  },
+  "coffeeDetail": {
+   "roast": "dark",
+   "process": "monsoon",
+   "species": "arabica"
   }
  },
  {
   "id": "cf-cuba-serrano",
   "category": "coffee",
   "name": "Cubita / Cuba Serrano (dark)",
-  "style": "espresso",
-  "roast": "dark",
-  "species": "arabica",
+  "style": "espresso-dark",
   "region": "Sierra Maestra, Kuba",
   "country": "Kuba",
   "abv": null,
@@ -451,19 +527,25 @@
   "serving": {
    "best": "Espresso / cafecito sa šećerom"
   },
-  "cigarHint": null,
+  "cigarHint": {
+   "hr": "Teritorijalni spoj uz kubansku cigaru; cafecito sa šećerom lijepi zadnju trećinu.",
+   "en": "A terroir match with a Cuban cigar; sweet cafecito glues the final third."
+  },
   "notes": {
-   "hr": "Kubanska kava uz kubansku cigaru — logičan teritorijalni spoj; cafecito sa šećerom klasika.",
-   "en": "Cuban coffee with a Cuban cigar — the logical terroir match; sweet cafecito is the classic."
+   "hr": "Sierra Maestra, tamnije prženje: kakao, duhan, karamela, niska kiselost. Teritorijalni spoj uz kubansku cigaru drži se logike, ne magije. Cafecito sa šećerom je lokalni ritam; bez šećera ostaje suši most.",
+   "en": "Sierra Maestra, darker roast: cocoa, tobacco, caramel, low acidity. The terroir match with a Cuban cigar is logic, not magic. Sweet cafecito is the local pace; unsweetened it stays a drier bridge."
+  },
+  "coffeeDetail": {
+   "roast": "dark",
+   "process": "washed",
+   "species": "arabica"
   }
  },
  {
   "id": "cf-jamaica-blue-mountain",
   "category": "coffee",
   "name": "Jamaica Blue Mountain (medium)",
-  "style": "filter",
-  "roast": "medium",
-  "species": "arabica",
+  "style": "filter-medium",
   "region": "Blue Mountains, Jamajka",
   "country": "Jamajka",
   "abv": null,
@@ -482,10 +564,18 @@
   "serving": {
    "best": "Filter, bez mlijeka"
   },
-  "cigarHint": null,
+  "cigarHint": {
+   "hr": "Glatkoća voli elegantnu, srednje blagu cigaru bez mlijeka; maduro je pregrub.",
+   "en": "Smoothness likes an elegant, mild-to-medium cigar without milk; maduro is too coarse."
+  },
   "notes": {
-   "hr": "Luksuzno glatka, bez gorčine — special occasion uz Davidoff ili Cohibu.",
-   "en": "Luxuriously smooth, no bitterness — special occasion with a Davidoff or Cohiba."
+   "hr": "Glatka, medena, niske gorčine; oprana, srednje prženje. Skupa je jer je zonirana i rijetka, ne jer je 'najbolja uz cigaru'. Posebna prilika uz elegantnu, srednje blagu cigaru (Davidoff, blaža Cohiba), bez mlijeka.",
+   "en": "Smooth, honeyed, low bitterness; washed, medium roast. It is expensive because it is zoned and scarce, not because it is 'best with a cigar'. A special-occasion cup with an elegant, mild-to-medium cigar (Davidoff, milder Cohiba), no milk."
+  },
+  "coffeeDetail": {
+   "roast": "medium",
+   "process": "washed",
+   "species": "arabica"
   }
  },
  {
@@ -496,9 +586,7 @@
    "hr": "Etiopija natural process (medium-light)",
    "en": "Ethiopia natural process (medium-light)"
   },
-  "style": "filter",
-  "roast": "light",
-  "species": "arabica",
+  "style": "filter-light",
   "region": "Sidamo/Guji, Etiopija",
   "country": "Etiopija",
   "abv": null,
@@ -517,10 +605,18 @@
   "serving": {
    "best": "Filter / aeropress"
   },
-  "cigarHint": null,
+  "cigarHint": {
+   "hr": "Borovnica i vino rade kao kontrast uz kratki, začinski Habano, ne uz puni maduro.",
+   "en": "Blueberry and wine work as contrast with a short, spicy Habano, not a full maduro."
+  },
   "notes": {
-   "hr": "Voćna bomba (borovnica, vino) — kontrastni spoj uz začinsku cigaru.",
-   "en": "A fruit bomb (blueberry, wine) — contrast pairing with a spicy cigar."
+   "hr": "Sidamo ili Guji, sušena trešnja: borovnica, vino, cvijet, više tijela nego oprana Yirgacheffe. Voćni kontrast uz začinski Habano kratkog formata. Puna maduro cigara pretvara voće u džem i gubi čistoću.",
+   "en": "Sidamo or Guji, dried in cherry: blueberry, wine, flower, more body than washed Yirgacheffe. A fruit contrast with a spicy short Habano. A full maduro turns the fruit to jam and loses cleanliness."
+  },
+  "coffeeDetail": {
+   "roast": "light",
+   "process": "natural",
+   "species": "arabica"
   }
  },
  {
@@ -531,9 +627,7 @@
    "hr": "French press — tamna mješavina",
    "en": "French press — dark blend"
   },
-  "style": "french-press",
-  "roast": "dark",
-  "species": "blend",
+  "style": "filter-dark",
   "region": "blend",
   "country": "—",
   "abv": null,
@@ -551,19 +645,25 @@
   "serving": {
    "best": "French press, 4 min"
   },
-  "cigarHint": null,
+  "cigarHint": {
+   "hr": "Duga šalica, duga cigara: spor ritam, kakao i zemlja uz punije tijelo.",
+   "en": "Long cup, long cigar: a slow pace, cocoa and earth with fuller body."
+  },
   "notes": {
-   "hr": "Puna tekstura s taloškom — duga šalica za dugu cigaru.",
-   "en": "Full texture with sediment — a long cup for a long cigar."
+   "hr": "Tamna mješavina, četiri minute u preši, talog u šalici. Puna tekstura, kakao i zemlja, niska kiselost. Duga šalica za dugu cigaru; ritam je sporiji nego kod espressa, pa se dim i gutljaj lakše izmjenjuju.",
+   "en": "Dark blend, four minutes in the press, sediment in the cup. Full texture, cocoa and earth, low acidity. A long cup for a long cigar; the pace is slower than espresso, so smoke and sip trade places more easily."
+  },
+  "coffeeDetail": {
+   "roast": "dark",
+   "process": "blend",
+   "species": "blend"
   }
  },
  {
   "id": "cf-cold-brew",
   "category": "coffee",
   "name": "Cold brew",
-  "style": "cold-brew",
-  "roast": "medium",
-  "species": "arabica",
+  "style": "cold",
   "region": "—",
   "country": "—",
   "abv": null,
@@ -581,10 +681,18 @@
   "serving": {
    "best": "Hladno, velika kocka leda"
   },
-  "cigarHint": null,
+  "cigarHint": {
+   "hr": "Ljetni most uz srednju cigaru; čuvaj gustoću, ne razvodni ledom do vode.",
+   "en": "A summer bridge with a medium cigar; keep the density, do not water it down with ice."
+  },
   "notes": {
-   "hr": "Niska kiselost, čokoladna glatkoća — ljetni spoj uz srednju cigaru na terasi.",
-   "en": "Low acidity, chocolate smoothness — the summer terrace pairing with a medium cigar."
+   "hr": "Hladna ekstrakcija 12–24 sata: niska kiselost, čokoladna glatkoća, srednje tijelo. Ljetna terasa uz srednju cigaru. Led ne smije rastopiti šalicu do vode; gustoća mora ostati, inače dim ostaje sam.",
+   "en": "Cold extraction 12–24 hours: low acidity, chocolate smoothness, medium body. A summer terrace with a medium cigar. Ice must not melt the cup to water; density has to stay, or the smoke is left alone."
+  },
+  "coffeeDetail": {
+   "roast": "medium",
+   "process": "blend",
+   "species": "blend"
   }
  },
  {
@@ -592,8 +700,6 @@
   "category": "coffee",
   "name": "Cappuccino / flat white",
   "style": "milk",
-  "roast": "medium",
-  "species": "blend",
   "region": "—",
   "country": "—",
   "abv": null,
@@ -612,10 +718,19 @@
   "serving": {
    "best": "Jutro, uz laganu cigaru"
   },
-  "cigarHint": null,
+  "cigarHint": {
+   "hr": "Mlijeko omekšava papar uz Connecticut; maduro se gubi u pjeni.",
+   "en": "Milk softens pepper with Connecticut; maduro disappears in the foam."
+  },
   "notes": {
-   "hr": "Mliječna kremastost prigušuje gorčinu — omekšava spoj, ide uz Connecticut.",
-   "en": "Milk creaminess mutes bitterness — softens the pairing, goes with Connecticut."
+   "hr": "Espresso plus mlijeko i pjena. Mlijeko omekšava papar i nikotin, ali pokriva cvjetne i mineralne note. Jutarnji spoj uz Connecticut ili blagi natural; Habano još prolazi, maduro se gubi u pjeni.",
+   "en": "Espresso plus milk and foam. Milk softens pepper and nicotine, but covers floral and mineral notes. A morning match with Connecticut or a mild natural; Habano still passes, maduro disappears in the foam."
+  },
+  "coffeeDetail": {
+   "roast": "medium",
+   "process": "blend",
+   "species": "blend",
+   "milk": true
   }
  },
  {
@@ -623,8 +738,6 @@
   "category": "coffee",
   "name": "Espresso macchiato",
   "style": "milk",
-  "roast": "medium",
-  "species": "blend",
   "region": "—",
   "country": "—",
   "abv": null,
@@ -642,10 +755,19 @@
   "serving": {
    "best": "Macchiato"
   },
-  "cigarHint": null,
+  "cigarHint": {
+   "hr": "Kap mlijeka skida gorčinu, a šalica i dalje nosi srednju do punu cigaru.",
+   "en": "A dash of milk takes the bitterness off, and the cup still carries a medium to full cigar."
+  },
   "notes": {
-   "hr": "Espresso s kapi mlijeka — zadržava snagu, dodaje mekoću.",
-   "en": "Espresso with a dash of milk — keeps the power, adds softness."
+   "hr": "Espresso označen kapi mlijeka: snaga šalice ostaje, gorčina se malo skine. Kompromis između čistog espressa i cappuccina. Srednja do puna cigara i dalje drži ritam; cvjetni filter ovdje nema smisla.",
+   "en": "Espresso marked with a dash of milk: the cup's power stays, bitterness eases a little. A compromise between straight espresso and cappuccino. A medium to full cigar still keeps pace; a floral filter has no business here."
+  },
+  "coffeeDetail": {
+   "roast": "dark",
+   "process": "blend",
+   "species": "blend",
+   "milk": true
   }
  },
  {
@@ -653,8 +775,6 @@
   "category": "coffee",
   "name": "Irish coffee",
   "style": "spiked",
-  "roast": "medium",
-  "species": "blend",
   "region": "Irska",
   "country": "—",
   "abv": 8,
@@ -673,10 +793,19 @@
   "serving": {
    "best": "Topao, sa šlagom"
   },
-  "cigarHint": null,
+  "cigarHint": {
+   "hr": "Viski i šlag traže srednju cigaru poslije jela; jutarnji Connecticut utone.",
+   "en": "Whiskey and cream want a medium cigar after a meal; a morning Connecticut sinks."
+  },
   "notes": {
-   "hr": "Kava + irski viski + šlag — dvostruki spoj u jednoj čaši, uz srednju cigaru.",
-   "en": "Coffee + Irish whiskey + cream — a double pairing in one glass, with a medium cigar."
+   "hr": "Topla kava, irski viski, šećer i šlag. Dva mosta u jednoj čaši: prženje i žestica. Traži srednju cigaru poslije jela; Connecticut utone, a najjači maduro pretvara slatkoću u ljepilo.",
+   "en": "Hot coffee, Irish whiskey, sugar and cream. Two bridges in one glass: roast and spirit. It wants a medium cigar after a meal; Connecticut sinks, and the strongest maduro turns the sweetness to glue."
+  },
+  "coffeeDetail": {
+   "roast": "medium",
+   "process": "blend",
+   "species": "blend",
+   "milk": true
   }
  },
  {
@@ -684,8 +813,6 @@
   "category": "coffee",
   "name": "Carajillo / caffè corretto",
   "style": "spiked",
-  "roast": "medium",
-  "species": "blend",
   "region": "Španjolska / Italija",
   "country": "—",
   "abv": 12,
@@ -703,19 +830,25 @@
   "serving": {
    "best": "Espresso + 43/Licor, brandy ili rum"
   },
-  "cigarHint": null,
+  "cigarHint": {
+   "hr": "Mali gutljaj žestice uz srednju do punu cigaru; slatki liker uz Shade nema strukture.",
+   "en": "A small sip of spirit with a medium to full cigar; sweet liqueur with Shade has no structure."
+  },
   "notes": {
-   "hr": "'Popravljena' kava — espresso ojačan žesticom; mediteranska cigar tradicija.",
-   "en": "'Corrected' coffee — espresso fortified with spirit; a Mediterranean cigar tradition."
+   "hr": "Espresso 'popravljen' žesticom (Licor 43, brandy ili rum). Mediteranski nered koji radi kad je gutljaj mali. Srednja do puna cigara; slatki liker uz Shade pretvara dim u desert bez strukture.",
+   "en": "Espresso 'corrected' with spirit (Licor 43, brandy or rum). A Mediterranean mess that works when the sip is small. Medium to full cigar; a sweet liqueur with Shade turns the smoke into dessert without structure."
+  },
+  "coffeeDetail": {
+   "roast": "dark",
+   "process": "blend",
+   "species": "blend"
   }
  },
  {
   "id": "cf-decaf-quality",
   "category": "coffee",
   "name": "Specialty decaf (sugarcane process)",
-  "style": "filter",
-  "roast": "medium",
-  "species": "arabica",
+  "style": "filter-medium",
   "region": "Kolumbija (EA decaf)",
   "country": "Kolumbija",
   "abv": null,
@@ -733,10 +866,18 @@
   "serving": {
    "best": "Filter / espresso, večer"
   },
-  "cigarHint": null,
+  "cigarHint": {
+   "hr": "Večernja cigara bez kofeina; biraj po tijelu šalice, ne po 'decaf' stigmi.",
+   "en": "An evening cigar without caffeine; choose by the cup's body, not by a 'decaf' stigma."
+  },
   "notes": {
-   "hr": "Večernja cigara bez kofeina — moderna decaf obrada čuva okus.",
-   "en": "An evening cigar without caffeine — modern decaf processing keeps the flavour."
+   "hr": "Kolumbijski EA / sugarcane decaf, srednje prženje. Kofein je skinut, karamela i kakao ostaju dovoljno čitki. Večernja cigara kad ne želiš drugi espresso; sparivanje prati tijelo, ne kofein.",
+   "en": "Colombian EA / sugarcane decaf, medium roast. Caffeine is gone; caramel and cocoa stay readable enough. An evening cigar when you do not want a second espresso; pairing follows body, not caffeine."
+  },
+  "coffeeDetail": {
+   "roast": "medium",
+   "process": "washed",
+   "species": "arabica"
   }
  },
  {
@@ -747,9 +888,7 @@
    "hr": "Café Cubano (zaslađeni espresso)",
    "en": "Café Cubano (sweetened espresso)"
   },
-  "style": "espresso",
-  "roast": "dark",
-  "species": "blend",
+  "style": "espresso-dark",
   "region": "Kuba / diaspora",
   "country": "Kuba",
   "abv": null,
@@ -768,19 +907,25 @@
   "serving": {
    "best": "Espresso + demerara u cremi"
   },
-  "cigarHint": null,
+  "cigarHint": {
+   "hr": "Šećer u cremi lijepi kratku maduro ili cuban-style cigaru; Connecticut postaje bombon.",
+   "en": "Sugar in the crema glues a short maduro or Cuban-style cigar; Connecticut becomes candy."
+  },
   "notes": {
-   "hr": "Kubanska tradicija — gorčina i šećer u istoj šalici. Uz kratku maduro ili cuban-style cigaru.",
-   "en": "Cuban tradition — bitterness and sugar in the same cup. With a short maduro or Cuban-style cigar."
+   "hr": "Espresso u kojem se demerara ubije u cremu: gorčina i šećer u istoj šalici. Kubanska navika uz kratku, zemljanu cigaru. Šećer lijepi zadnju trećinu madura; Connecticut postaje bombon.",
+   "en": "Espresso with demerara beaten into the crema: bitterness and sugar in the same cup. A Cuban habit with a short, earthy cigar. Sugar glues a maduro's final third; Connecticut becomes candy."
+  },
+  "coffeeDetail": {
+   "roast": "dark",
+   "process": "blend",
+   "species": "blend"
   }
  },
  {
   "id": "cf-aeropress-brazil",
   "category": "coffee",
   "name": "AeroPress — Brazil (chocolate nut)",
-  "style": "filter",
-  "roast": "medium",
-  "species": "arabica",
+  "style": "filter-medium",
   "region": "Brazil",
   "country": "Brazil",
   "abv": null,
@@ -802,10 +947,18 @@
   "serving": {
    "best": "AeroPress, 200–220 ml"
   },
-  "cigarHint": null,
+  "cigarHint": {
+   "hr": "Čokolada i orah mirno prate srednju Connecticut ili Habano cigaru.",
+   "en": "Chocolate and nut calmly follow a medium Connecticut or Habano."
+  },
   "notes": {
-   "hr": "Čokoladno-orašasti Brazil — miran most uz srednju Connecticut / Habano cigaru.",
-   "en": "Chocolate-nut Brazil — a calm bridge with a medium Connecticut / Habano cigar."
+   "hr": "Kratka, čista ekstrakcija brazilskog zrna: kakao, orah, karamela, srednje tijelo. Mirniji od espressa, gušći od V60. Most uz srednju Connecticut ili Habano cigaru; nema što vrišti ni s jedne strane.",
+   "en": "Short, clean extraction of a Brazilian bean: cocoa, nut, caramel, medium body. Calmer than espresso, denser than V60. A bridge with a medium Connecticut or Habano; nothing shouts on either side."
+  },
+  "coffeeDetail": {
+   "roast": "medium",
+   "process": "natural",
+   "species": "arabica"
   }
  },
  {
@@ -816,9 +969,7 @@
    "hr": "Filter — Burundi oprano (light-medium)",
    "en": "Filter — Burundi washed (light-medium)"
   },
-  "style": "filter",
-  "roast": "light",
-  "species": "arabica",
+  "style": "filter-light",
   "region": "Kayanza, Burundi",
   "country": "Burundi",
   "abv": null,
@@ -837,21 +988,27 @@
   "serving": {
    "best": "V60 / aeropress"
   },
-  "cigarHint": null,
+  "cigarHint": {
+   "hr": "Sočna kiselost voli Cameroon ili kratki Habano; puna nikaragvanska pregazi voće.",
+   "en": "Juicy acidity likes Cameroon or a short Habano; a full Nicaraguan overruns the fruit."
+  },
   "notes": {
-   "hr": "Bobičasto voće i crvena jabuka — svjež kontrast uz Cameroon ili kraći Habano.",
-   "en": "Berry fruit and red apple — a fresh contrast with Cameroon or a shorter Habano."
+   "hr": "Oprani Kayanza: ribiz, crvena jabuka, sočna kiselost, lagano tijelo. Svjež kontrast uz Cameroon ili kraći Habano. Geisha-tanka cigara radi; puna nikaragvanska pregazi voće u jednom dimu.",
+   "en": "Washed Kayanza: currant, red apple, juicy acidity, light body. A fresh contrast with Cameroon or a shorter Habano. A Geisha-thin cigar works; a full Nicaraguan overruns the fruit in one puff."
+  },
+  "coffeeDetail": {
+   "roast": "light",
+   "process": "washed",
+   "species": "arabica"
   }
  },
  {
   "id": "cf-pour-over-costa-rica",
   "category": "coffee",
   "name": "Pour-over — Costa Rica honey process",
-  "style": "filter",
-  "roast": "light",
-  "species": "arabica",
+  "style": "filter-light",
   "region": "Costa Rica",
-  "country": "Kostarika",
+  "country": "Costa Rica",
   "abv": null,
   "body": 2,
   "sweetness": 3,
@@ -871,10 +1028,18 @@
   "serving": {
    "best": "V60 / Kalita, jutro–popodne"
   },
-  "cigarHint": null,
+  "cigarHint": {
+   "hr": "Med i citrus uz laganu cigaru ujutro; maduro ostavi za tamniju šalicu.",
+   "en": "Honey and citrus with a light morning cigar; leave maduro for a darker cup."
+  },
   "notes": {
-   "hr": "Medena slatkoća i voće — uz laganu cigaru, ne uz peaty ili maduro ekstrem.",
-   "en": "Honeyed sweetness and fruit — with a light cigar, not a peaty or maduro extreme."
+   "hr": "Honey (pulp natural) obrada: više slatkoće i tijela nego oprana, manje fermenta nego natural. Citrus i med, čisto lagano tijelo. Uz laganu cigaru ujutro; peaty i maduro ekstrem ostaju za drugi čin.",
+   "en": "Honey (pulp-natural) process: more sweetness and body than washed, less ferment than natural. Citrus and honey, clean light body. With a light cigar in the morning; peaty and maduro extremes wait for a later act."
+  },
+  "coffeeDetail": {
+   "roast": "light",
+   "process": "honey",
+   "species": "arabica"
   }
  },
  {
@@ -885,9 +1050,7 @@
    "hr": "Pour-over — Panama Geisha (light)",
    "en": "Pour-over — Panama Geisha (light)"
   },
-  "style": "filter",
-  "roast": "light",
-  "species": "arabica",
+  "style": "filter-light",
   "region": "Boquete, Panama",
   "country": "Panama",
   "abv": null,
@@ -906,19 +1069,25 @@
   "serving": {
    "best": "V60 / Kalita"
   },
-  "cigarHint": null,
+  "cigarHint": {
+   "hr": "Samo najblaži Connecticut; jača cigara ovu šalicu obriše, ne 'ne paše'.",
+   "en": "Only the mildest Connecticut; a stronger cigar wipes this cup out, it does not merely 'mismatch'."
+  },
   "notes": {
-   "hr": "Čajno-cvjetna elegancija — samo uz najblaži Connecticut; jaka cigara je pregazi.",
-   "en": "Tea-like floral elegance — only with the mildest Connecticut; a strong cigar steamrolls it."
+   "hr": "Bergamot, jasmin, čajno tijelo; oprana, visoka nadmorska visina, svijetlo prženje. Najdelikatnija šalica u katalogu. Samo uz najblaži Connecticut. Jaka cigara ne 'ne paše' — ona ovu kavu obriše.",
+   "en": "Bergamot, jasmine, tea-like body; washed, high altitude, light roast. The most delicate cup in the catalogue. Only with the mildest Connecticut. A strong cigar does not 'mismatch' — it wipes this coffee out."
+  },
+  "coffeeDetail": {
+   "roast": "light",
+   "process": "washed",
+   "species": "arabica"
   }
  },
  {
   "id": "cf-yemen-mocha",
   "category": "coffee",
   "name": "Yemen Mocha (natural)",
-  "style": "filter",
-  "roast": "dark",
-  "species": "arabica",
+  "style": "filter-dark",
   "region": "Jemen",
   "country": "Jemen",
   "abv": null,
@@ -941,10 +1110,18 @@
   "serving": {
    "best": "Filter / espresso blend"
   },
-  "cigarHint": null,
+  "cigarHint": {
+   "hr": "Gusti kakao i začin vole maduro; svijetlo prženje ovdje nema partnera.",
+   "en": "Dense cocoa and spice like maduro; a light roast has no partner here."
+  },
   "notes": {
-   "hr": "Gusti, začinski mocha profil — prirodan most uz maduro i tamne note cigare.",
-   "en": "A dense, spicy mocha profile — a natural bridge with maduro and dark cigar notes."
+   "hr": "Prirodna (sušena) jemenska mocha: gusto tijelo, kakao, suho voće, začin, dašak dima. Stari trgovački profil, ne specialty moda. Most uz maduro i tamne note; filter-light partner ovdje nema što tražiti.",
+   "en": "Natural (dried) Yemeni mocha: dense body, cocoa, dried fruit, spice, a whiff of smoke. An old trade profile, not specialty fashion. A bridge with maduro and dark notes; a filter-light partner has no business here."
+  },
+  "coffeeDetail": {
+   "roast": "dark",
+   "process": "natural",
+   "species": "arabica"
   }
  },
  {
@@ -955,9 +1132,7 @@
    "hr": "Lungo (duži espresso)",
    "en": "Lungo (longer espresso)"
   },
-  "style": "lungo",
-  "roast": "medium",
-  "species": "blend",
+  "style": "espresso-medium",
   "region": "Italija (stil)",
   "country": "—",
   "abv": null,
@@ -975,10 +1150,18 @@
   "serving": {
    "best": "Lungo 60–90 ml"
   },
-  "cigarHint": null,
+  "cigarHint": {
+   "hr": "Pepeo i gorčina dulje ekstrakcije vole srednju cigaru, ne njezni Shade.",
+   "en": "Ash and bitterness from a longer extraction like a medium cigar, not delicate Shade."
+  },
   "notes": {
-   "hr": "Više vode od espressa — često više gorčine i pepela (pre-ekstrakcija); uz srednju cigaru, ne uz nježni Shade.",
-   "en": "More water than espresso — often more bitterness and ash (over-extraction); with a medium cigar, not delicate Shade."
+   "hr": "Dulji espresso (60–90 ml): više vode kroz istu kavu, često više gorčine i pepela jer ekstrakcija predugo traje. Srednja cigara još drži; njezni Shade i ovaj pepeo se zbrajaju na krivu stranu.",
+   "en": "Longer espresso (60–90 ml): more water through the same coffee, often more bitterness and ash because extraction runs too long. A medium cigar still holds; delicate Shade and this ash add up the wrong way."
+  },
+  "coffeeDetail": {
+   "roast": "medium",
+   "process": "blend",
+   "species": "blend"
   }
  },
  {
@@ -990,8 +1173,6 @@
    "en": "Caffè americano"
   },
   "style": "americano",
-  "roast": "medium",
-  "species": "blend",
   "region": "Italija (stil)",
   "country": "—",
   "abv": null,
@@ -1009,10 +1190,18 @@
   "serving": {
    "best": "Espresso + vruća voda (~1:1)"
   },
-  "cigarHint": null,
+  "cigarHint": {
+   "hr": "Srednji TDS olakšava ritam uz srednju cigaru; skinuta crema drži šalicu čistom.",
+   "en": "Medium TDS eases the pace with a medium cigar; skimmed crema keeps the cup clean."
+  },
   "notes": {
-   "hr": "Espresso razrijeđen vodom — srednji TDS, blaži ulaz uz cigaru; skini cremu za čišći okus.",
-   "en": "Espresso diluted with water — medium TDS, softer entry with a cigar; skim crema for a cleaner cup."
+   "hr": "Espresso razrijeđen vrućom vodom: srednji TDS, blaži ulaz, lakše ritmirati s dimom. Crema u vodi zna gorko sjesti; skinuta crema daje čišću šalicu. Svestran uz srednje cigare, bez težine doppia.",
+   "en": "Espresso diluted with hot water: medium TDS, softer entry, easier to pace with smoke. Crema in the water can sit bitter; skimmed crema gives a cleaner cup. Versatile with medium cigars, without a doppio's weight."
+  },
+  "coffeeDetail": {
+   "roast": "medium",
+   "process": "blend",
+   "species": "blend"
   }
  },
  {
@@ -1020,8 +1209,6 @@
   "category": "coffee",
   "name": "Cortado",
   "style": "milk",
-  "roast": "medium",
-  "species": "blend",
   "region": "Španjolska / specialty",
   "country": "—",
   "abv": null,
@@ -1039,10 +1226,19 @@
   "serving": {
    "best": "Espresso + malo mlijeka 1:1"
   },
-  "cigarHint": null,
+  "cigarHint": {
+   "hr": "Malo mlijeka uz blagu do srednju cigaru poslijepodne; manje skriva od cappuccina.",
+   "en": "A little milk with a mild to medium afternoon cigar; it hides less than a cappuccino."
+  },
   "notes": {
-   "hr": "Mlijeko ublažava gorčinu — uz blagu do srednju cigaru poslijepodne.",
-   "en": "Milk softens bitterness — with a mild to medium afternoon cigar."
+   "hr": "Jednaki dijelovi espressa i toplo mlijeko, bez velike pjene. Gorčina se skine, kakao ostaje. Poslijepodne uz blagu do srednju cigaru; manje skriva note od cappuccina, manje udara od čistog espressa.",
+   "en": "Equal parts espresso and warm milk, little foam. Bitterness eases, cocoa stays. Afternoon with a mild to medium cigar; it hides less than a cappuccino and hits less than straight espresso."
+  },
+  "coffeeDetail": {
+   "roast": "medium",
+   "process": "blend",
+   "species": "blend",
+   "milk": true
   }
  },
  {
@@ -1050,8 +1246,6 @@
   "category": "coffee",
   "name": "Flat white",
   "style": "milk",
-  "roast": "medium",
-  "species": "blend",
   "region": "ANZ / specialty",
   "country": "—",
   "abv": null,
@@ -1069,10 +1263,19 @@
   "serving": {
    "best": "Doppio + mikro-pjena"
   },
-  "cigarHint": null,
+  "cigarHint": {
+   "hr": "Više kave nego cappuccino: Connecticut ili blagi natural; maduro vidi zavjesu.",
+   "en": "More coffee than a cappuccino: Connecticut or a mild natural; maduro sees a curtain."
+  },
   "notes": {
-   "hr": "Više kave nego cappuccino — kremasti most uz Connecticut ili blagi natural.",
-   "en": "More coffee than a cappuccino — a creamy bridge with Connecticut or a mild natural."
+   "hr": "Doppio pod tankom mikro-pjenom: više kave nego cappuccino, manje mlijeka nego latte. Kremasti most uz Connecticut ili blagi natural. Maduro i dalje vidi mlijeko kao zavjesu.",
+   "en": "Doppio under a thin microfoam: more coffee than a cappuccino, less milk than a latte. A creamy bridge with Connecticut or a mild natural. Maduro still sees the milk as a curtain."
+  },
+  "coffeeDetail": {
+   "roast": "medium",
+   "process": "blend",
+   "species": "blend",
+   "milk": true
   }
  },
  {
@@ -1083,9 +1286,7 @@
    "hr": "Vijetnamska ledena kava (cà phê sữa đá)",
    "en": "Vietnamese iced coffee (cà phê sữa đá)"
   },
-  "style": "milk",
-  "roast": "dark",
-  "species": "robusta",
+  "style": "cold",
   "region": "Vijetnam",
   "country": "Vijetnam",
   "abv": null,
@@ -1103,10 +1304,19 @@
   "serving": {
    "best": "Phin + kondenzirano mlijeko, led"
   },
-  "cigarHint": null,
+  "cigarHint": {
+   "hr": "Slatki hladni kontrast uz kratku, začinsku cigaru; dugi format se lijepi.",
+   "en": "A sweet cold contrast with a short, spicy cigar; a long format sticks."
+  },
   "notes": {
-   "hr": "Gusti, slatki hladni profil — kontrast uz kratku, začinsku cigaru po vrućini.",
-   "en": "A dense, sweet cold profile — contrast with a short, spicy cigar in the heat."
+   "hr": "Phin kava, često robusta, s kondenziranim mlijekom i ledom. Gust, sladak, hladan profil niske kiselosti. Kontrast uz kratku, začinsku cigaru na vrućini; dugi Churchill i ova slatkoća se lijepe.",
+   "en": "Phin coffee, often robusta, with condensed milk and ice. Dense, sweet, cold, low acidity. Contrast with a short, spicy cigar in the heat; a long Churchill and this sweetness stick together."
+  },
+  "coffeeDetail": {
+   "roast": "dark",
+   "process": "blend",
+   "species": "robusta",
+   "milk": true
   }
  },
  {
@@ -1114,8 +1324,6 @@
   "category": "coffee",
   "name": "Espresso + cognac (corretto)",
   "style": "spiked",
-  "roast": "medium",
-  "species": "blend",
   "region": "Francuska / Italija",
   "country": "—",
   "abv": 12,
@@ -1133,10 +1341,18 @@
   "serving": {
    "best": "Espresso + 10–15 ml VSOP"
   },
-  "cigarHint": null,
+  "cigarHint": {
+   "hr": "Konjak u šalici traži srednju do punu cigaru nakon jela, ne jutarnji Shade.",
+   "en": "Cognac in the cup wants a medium to full cigar after a meal, not a morning Shade."
+  },
   "notes": {
-   "hr": "Kava i konjak u istoj šalici — dvostruki most uz srednju do punu cigaru.",
-   "en": "Coffee and cognac in the same cup — a double bridge with a medium to full cigar."
+   "hr": "Espresso s 10–15 ml VSOP konjaka u istoj šalici. Kakao, hrast i karamela iz oba sastojka. Dvostruki most uz srednju do punu cigaru nakon jela; jutarnji Connecticut ovdje nema što tražiti.",
+   "en": "Espresso with 10–15 ml VSOP cognac in the same cup. Cocoa, oak and caramel from both parts. A double bridge with a medium to full cigar after a meal; a morning Connecticut has no business here."
+  },
+  "coffeeDetail": {
+   "roast": "dark",
+   "process": "blend",
+   "species": "blend"
   }
  },
  {
@@ -1147,9 +1363,7 @@
    "hr": "Batch brew — tamna prženica (filter)",
    "en": "Batch brew — dark roast (filter)"
   },
-  "style": "filter",
-  "roast": "dark",
-  "species": "blend",
+  "style": "filter-dark",
   "region": "blend",
   "country": "—",
   "abv": null,
@@ -1168,10 +1382,450 @@
   "serving": {
    "best": "Filter 200–250 ml"
   },
-  "cigarHint": null,
+  "cigarHint": {
+   "hr": "Jednostavan most uz srednju cigaru dok je kava vruća i nije prekuhana.",
+   "en": "A simple bridge with a medium cigar while the coffee is hot and not stewed."
+  },
   "notes": {
-   "hr": "Jednostavna tamna filter kava — pouzdan most uz srednju cigaru.",
-   "en": "Simple dark filter coffee — a reliable bridge with a medium cigar."
+   "hr": "Uredska ili barske tamna filter kava, veći volumen. Kakao, dim, gorčina, niska kiselost. Pouzdan, neuzbudljiv most uz srednju cigaru. Nije specialty; radi dok je vruća i nije prekuhana.",
+   "en": "Office or bar dark filter coffee, larger volume. Cocoa, smoke, bitterness, low acidity. A reliable, unexciting bridge with a medium cigar. Not specialty; it works while hot and not stewed."
+  },
+  "coffeeDetail": {
+   "roast": "dark",
+   "process": "blend",
+   "species": "blend"
+  }
+ },
+ {
+  "id": "cf-franck-jubilarna",
+  "category": "coffee",
+  "name": "Franck Jubilarna Original",
+  "nameLoc": {
+   "hr": "Franck Jubilarna Original (Ciglica)",
+   "en": "Franck Jubilarna Original"
+  },
+  "style": "turkish",
+  "region": "Srednja i Južna Amerika, Azija (blend)",
+  "country": "Hrvatska",
+  "abv": null,
+  "body": 4,
+  "sweetness": 2,
+  "flavorTags": [
+   "kakao",
+   "zemljano"
+  ],
+  "qualityScore": 7,
+  "priceEUR": null,
+  "shopHR": "svugdje",
+  "pairable": true,
+  "serving": {
+   "best": "Džezva: 2 žličice na 100 ml, do pjene, 3–5 min"
+  },
+  "cigarHint": {
+   "hr": "Čokolada i gustoća džezve nose srednju do punu cigaru s kakaom; Connecticut ostaje tanak uz Ciglicu.",
+   "en": "Chocolate and cezve density carry a medium-to-full cocoa cigar; Connecticut stays thin beside the Ciglica."
+  },
+  "notes": {
+   "hr": "Zagrebačka Ciglica: Franck miješa arabicu i robustu iz Srednje i Južne Amerike i Azije. Kuća je zove kraljicom zbog punog čokoladnog okusa. Kuha se u džezvi — dvije žličice na sto mililitara, do pjene, pa tri do pet minuta stajanja. Gusta je i poznata; uz nju sjeda srednja do puna cigara s kakaom, ne Shade.",
+   "en": "Zagreb’s Ciglica: Franck blends arabica and robusta from Central and South America and Asia. The house calls it the queen for a full chocolate flavour. It is made in a cezve — two spoons per 100 ml, heated to foam, then left three to five minutes. Dense and familiar; it sits with a medium-to-full cocoa cigar, not Shade."
+  },
+  "coffeeDetail": {
+   "roast": "medium",
+   "process": "blend",
+   "species": "blend"
+  }
+ },
+ {
+  "id": "cf-franck-crema",
+  "category": "coffee",
+  "name": "Franck Crema",
+  "style": "turkish",
+  "region": "Hrvatska (blend)",
+  "country": "Hrvatska",
+  "abv": null,
+  "body": 4,
+  "sweetness": 2,
+  "flavorTags": [
+   "kakao",
+   "kremasto"
+  ],
+  "qualityScore": 7,
+  "priceEUR": null,
+  "shopHR": "svugdje",
+  "pairable": true,
+  "serving": {
+   "best": "Džezva ili preljev vrućom vodom"
+  },
+  "cigarHint": {
+   "hr": "Pjena i kakao vole srednju Habano cigaru; šećer u džezvi lijepi maduro, ne Shade.",
+   "en": "Foam and cocoa like a medium Habano; sugar in the pot glues maduro, not Shade."
+  },
+  "notes": {
+   "hr": "Franck Crema je najfinije mljevena turska kava: bogata pjena i kremaste note čokolade i kakaovca. Kuha se u džezvi ili se prelije vrućom vodom. Nije 3-u-1 s mlijekom i šećerom — to je drugi proizvod. Uz čistu Cremu ide srednja Habano cigara; zaslađena u loncu podnosi i maduro.",
+   "en": "Franck Crema is finest-ground Turkish coffee: rich foam and creamy chocolate and cocoa notes. Brew it in a cezve or pour over with hot water. It is not the 3-in-1 with milk and sugar — that is a different SKU. Straight Crema wants a medium Habano; sweetened in the pot it can carry maduro."
+  },
+  "coffeeDetail": {
+   "roast": "medium",
+   "process": "blend",
+   "species": "blend"
+  }
+ },
+ {
+  "id": "cf-franck-espresso",
+  "category": "coffee",
+  "name": "Franck Espresso",
+  "style": "espresso-medium",
+  "region": "Hrvatska (blend)",
+  "country": "Hrvatska",
+  "abv": null,
+  "body": 4,
+  "sweetness": 3,
+  "flavorTags": [
+   "karamela",
+   "orasasti",
+   "voce"
+  ],
+  "qualityScore": 7,
+  "priceEUR": null,
+  "shopHR": "svugdje",
+  "pairable": true,
+  "serving": {
+   "best": "Espresso (30 ml)"
+  },
+  "cigarHint": {
+   "hr": "Karamela i lješnjak prate srednju Habano cigaru; maduro je težak za ovo voće.",
+   "en": "Caramel and hazelnut follow a medium Habano; maduro is heavy for this fruit."
+  },
+  "notes": {
+   "hr": "Franckov vakuumirani espresso za kućni aparat: svilenkasta tekstura, crema, karamela, lješnjak i blago voće. Kuća ga drži za cijeli dan, ne samo za jutarnji shot. Ide uz srednju Habano cigaru dok je šalica vruća.",
+   "en": "Franck’s vacuum-packed espresso for a home machine: silky texture, crema, caramel, hazelnut and mild fruit. The house presents it for the whole day, not only a morning shot. It suits a medium Habano while the cup is hot."
+  },
+  "coffeeDetail": {
+   "roast": "medium",
+   "process": "blend",
+   "species": "blend"
+  }
+ },
+ {
+  "id": "cf-illy-classico",
+  "category": "coffee",
+  "name": "illy Classico",
+  "style": "espresso-medium",
+  "region": "Italija (9 arabica podrijetla)",
+  "country": "Italija",
+  "abv": null,
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "karamela",
+   "cvjetno",
+   "voce"
+  ],
+  "qualityScore": 8,
+  "priceEUR": null,
+  "shopHR": "svugdje",
+  "pairable": true,
+  "serving": {
+   "best": "Espresso (30 ml)"
+  },
+  "cigarHint": {
+   "hr": "Jasmin i karamela traže srednju, ne pretešku cigaru; maduro pregazi cvijet.",
+   "en": "Jasmine and caramel want a medium cigar, not a heavy one; maduro drowns the flower."
+  },
+  "notes": {
+   "hr": "illy Classico je ista 100 % arabica mješavina (devet podrijetla), srednje pržena. Kuća navodi gladak, baršunast okus s karamelom, narančinim cvijetom i jasminom te slatkast aftertaste. Nema gorčine barske robuste. Uz nju ostaje srednja Habano ili Cameroon cigara; maduro je pretežak.",
+   "en": "illy Classico is the same 100% arabica blend (nine origins), medium roast. The house cites a smooth, velvety cup with caramel, orange blossom and jasmine and a sweet aftertaste. It lacks bar-robusta bitterness. It keeps a medium Habano or Cameroon; maduro is too heavy."
+  },
+  "coffeeDetail": {
+   "roast": "medium",
+   "process": "blend",
+   "species": "arabica"
+  }
+ },
+ {
+  "id": "cf-illy-intenso",
+  "category": "coffee",
+  "name": "illy Intenso",
+  "style": "espresso-dark",
+  "region": "Italija (9 arabica podrijetla)",
+  "country": "Italija",
+  "abv": null,
+  "body": 4,
+  "sweetness": 2,
+  "flavorTags": [
+   "kakao",
+   "suho-voce",
+   "orasasti"
+  ],
+  "qualityScore": 8,
+  "priceEUR": null,
+  "shopHR": "svugdje",
+  "pairable": true,
+  "serving": {
+   "best": "Espresso (30 ml)"
+  },
+  "cigarHint": {
+   "hr": "Kakao i tamnije prženje nose puniju Habano ili maduro cigaru; Connecticut ostaje ispod šalice.",
+   "en": "Cocoa and the darker roast carry a fuller Habano or maduro; Connecticut sits under the cup."
+  },
+  "notes": {
+   "hr": "Ista illyeva 100 % arabica, dulje pržena do tamnog profila Intenso. Službeno: aromatičan okus, kakao i suho voće, pun aftertaste. Nema robuste, pa gorčina dolazi od prženja, ne od vrste. Nosi puniju Habano i maduro cigaru bolje nego Classico.",
+   "en": "The same illy 100% arabica, roasted longer to the dark Intenso profile. Official: aromatic cup, cocoa and dried fruit, full aftertaste. No robusta, so bitterness comes from roast, not species. It carries a fuller Habano and maduro better than Classico."
+  },
+  "coffeeDetail": {
+   "roast": "dark",
+   "process": "blend",
+   "species": "arabica"
+  }
+ },
+ {
+  "id": "cf-lavazza-qualita-rossa",
+  "category": "coffee",
+  "name": "Lavazza Qualità Rossa",
+  "style": "espresso-medium",
+  "region": "Brazil, Afrika, jugoistočna Azija",
+  "country": "Italija",
+  "abv": null,
+  "body": 4,
+  "sweetness": 2,
+  "flavorTags": [
+   "kakao",
+   "kremasto",
+   "orasasti"
+  ],
+  "qualityScore": 7,
+  "priceEUR": null,
+  "shopHR": "svugdje",
+  "pairable": true,
+  "serving": {
+   "best": "Espresso ili moka"
+  },
+  "cigarHint": {
+   "hr": "Čokolada i tijelo nose srednju do punu Habano cigaru; Shade uz Rossa ostaje tanak.",
+   "en": "Chocolate and body carry a medium-to-full Habano; Shade stays thin beside Rossa."
+  },
+  "notes": {
+   "hr": "Lavazza Qualità Rossa: uglavnom brazilska arabica i afrička robusta, srednje prženje, intenzitet 5/10. Kuća je opisuje kao tamnu, baršunastu, s notom čokolade — punog tijela, bez objavljenog omjera zrna. Radi u espressu i moki. Uz nju ide srednja do puna Habano cigara, ne Connecticut.",
+   "en": "Lavazza Qualità Rossa: mainly Brazilian arabica and African robustas, medium roast, intensity 5/10. The house calls it dark-coloured and velvety, with chocolate — full body, no published bean ratio. It works as espresso or moka. It wants a medium-to-full Habano, not Connecticut."
+  },
+  "coffeeDetail": {
+   "roast": "medium",
+   "process": "blend",
+   "species": "blend"
+  }
+ },
+ {
+  "id": "cf-lavazza-qualita-oro",
+  "category": "coffee",
+  "name": "Lavazza Qualità Oro",
+  "style": "espresso-medium",
+  "region": "Srednja i Južna Amerika",
+  "country": "Italija",
+  "abv": null,
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "cvjetno",
+   "voce",
+   "kremasto"
+  ],
+  "qualityScore": 7.5,
+  "priceEUR": null,
+  "shopHR": "svugdje",
+  "pairable": true,
+  "serving": {
+   "best": "Espresso (30 ml)"
+  },
+  "cigarHint": {
+   "hr": "Cvijet i voće prate lakšu do srednju Habano cigaru; maduro pregazi Orov profil.",
+   "en": "Flower and fruit follow a lighter-to-medium Habano; maduro overruns Oro’s profile."
+  },
+  "notes": {
+   "hr": "Lavazza Qualità Oro je 100 % arabica iz Srednje i Južne Amerike, srednje pržena, intenzitet 5/10. Službeno: baršunasto tijelo, cvjetne i voćne note. Nema robuste, pa je mekša od Rosse. Uz nju ostaje lakša do srednja Habano cigara; maduro je pretežak.",
+   "en": "Lavazza Qualità Oro is 100% arabica from Central and South America, medium roast, intensity 5/10. Official: velvety body, floral and fruity notes. No robusta, so it is softer than Rossa. It keeps a lighter-to-medium Habano; maduro is too heavy."
+  },
+  "coffeeDetail": {
+   "roast": "medium",
+   "process": "blend",
+   "species": "arabica"
+  }
+ },
+ {
+  "id": "cf-julius-meinl-vienna-espresso",
+  "category": "coffee",
+  "name": "Julius Meinl Vienna Line Espresso",
+  "style": "espresso-medium",
+  "region": "Austrija (blend)",
+  "country": "Austrija",
+  "abv": null,
+  "body": 4,
+  "sweetness": 3,
+  "flavorTags": [
+   "kakao",
+   "orasasti",
+   "voce"
+  ],
+  "qualityScore": 7.5,
+  "priceEUR": null,
+  "shopHR": "svugdje",
+  "pairable": true,
+  "serving": {
+   "best": "Espresso / automat"
+  },
+  "cigarHint": {
+   "hr": "Tamna čokolada i prženi orašasti most prema srednjoj Habano cigari; voće drži maduro podalje.",
+   "en": "Dark chocolate and roasted nuts bridge to a medium Habano; the fruit keeps maduro at bay."
+  },
+  "notes": {
+   "hr": "Julius Meinl Vienna Line Espresso: 100 % arabica, srednje prženje (na njihovoj ljestvici 4, srednje do tamno). Kuća navodi tamnu čokoladu i pržene orašaste, puno tijelo, slatko i voćno. Nije talijanska robusta-mješavina. Ide uz srednju Habano cigaru; maduro lako pregazi voće.",
+   "en": "Julius Meinl Vienna Line Espresso: 100% arabica, medium roast (their scale 4, medium to dark). The house cites dark chocolate and roasted nuts, full body, sweet and fruity. It is not an Italian robusta blend. It suits a medium Habano; maduro easily overruns the fruit."
+  },
+  "coffeeDetail": {
+   "roast": "medium",
+   "process": "blend",
+   "species": "arabica"
+  }
+ },
+ {
+  "id": "cf-segafredo-intermezzo",
+  "category": "coffee",
+  "name": "Segafredo Intermezzo",
+  "style": "espresso-dark",
+  "region": "Italija (blend)",
+  "country": "Italija",
+  "abv": null,
+  "body": 5,
+  "sweetness": 2,
+  "flavorTags": [
+   "kakao",
+   "orasasti",
+   "zacini"
+  ],
+  "qualityScore": 7,
+  "priceEUR": null,
+  "shopHR": "svugdje",
+  "pairable": true,
+  "serving": {
+   "best": "Espresso ili moka"
+  },
+  "cigarHint": {
+   "hr": "Tamno prženje i robusta nose punu Habano ili maduro cigaru; Connecticut nestaje uz Intermezzo.",
+   "en": "Dark roast and robusta carry a full Habano or maduro; Connecticut vanishes beside Intermezzo."
+  },
+  "notes": {
+   "hr": "Segafredo Intermezzo je tamno pržena mješavina s robustom: visok intenzitet, badem, čokolada, suho voće i začin. Kuća je namijenjuje espressu i moki. Gusta je i jutarnja; uz nju ide puna Habano ili maduro cigara, ne Shade.",
+   "en": "Segafredo Intermezzo is a dark-roast blend with robusta: high intensity, almond, chocolate, dried fruit and spice. The house points it at espresso and moka. Dense and morning-like; it wants a full Habano or maduro, not Shade."
+  },
+  "coffeeDetail": {
+   "roast": "dark",
+   "process": "blend",
+   "species": "blend"
+  }
+ },
+ {
+  "id": "cf-franck-jubilarna-intense",
+  "category": "coffee",
+  "name": "Franck Jubilarna Intense",
+  "style": "turkish",
+  "region": "Srednja i Južna Amerika, Afrika, Azija (blend)",
+  "country": "Hrvatska",
+  "abv": null,
+  "body": 5,
+  "sweetness": 2,
+  "flavorTags": [
+   "kakao",
+   "zacini-slatki"
+  ],
+  "qualityScore": 7,
+  "priceEUR": null,
+  "shopHR": "svugdje",
+  "pairable": true,
+  "serving": {
+   "best": "Džezva: 2 žličice na 100 ml, do pjene, 3–5 min"
+  },
+  "cigarHint": {
+   "hr": "Tamna čokolada i slatki začin nose punu Habano ili maduro cigaru; Connecticut uz Intense ostaje tanak.",
+   "en": "Dark chocolate and sweet spice carry a full Habano or maduro; Connecticut stays thin beside Intense."
+  },
+  "notes": {
+   "hr": "Franckova Ciglica u tamnijem ruhu: arabica i robusta iz Srednje i Južne Amerike, Afrike i Azije. Kuća navodi tamnu čokoladu i slatke začine, intenzitet 4,5 od 5. Kuha se u džezvi kao Original. Gusta je i jutarnja; uz nju ide puna Habano ili maduro cigara, ne Shade.",
+   "en": "Franck’s Ciglica in a darker cut: arabica and robusta from Central and South America, Africa and Asia. The house cites dark chocolate and sweet spices, intensity 4.5 of 5. Brewed in a cezve like Original. Dense and morning-like; it wants a full Habano or maduro, not Shade."
+  },
+  "coffeeDetail": {
+   "roast": "dark",
+   "process": "blend",
+   "species": "blend"
+  }
+ },
+ {
+  "id": "cf-franck-jubilarna-sensual",
+  "category": "coffee",
+  "name": "Franck Jubilarna Sensual",
+  "style": "turkish",
+  "region": "Srednja i Južna Amerika, Azija (blend)",
+  "country": "Hrvatska",
+  "abv": null,
+  "body": 3,
+  "sweetness": 3,
+  "flavorTags": [
+   "kakao",
+   "orasasti",
+   "kremasto"
+  ],
+  "qualityScore": 7,
+  "priceEUR": null,
+  "shopHR": "svugdje",
+  "pairable": true,
+  "serving": {
+   "best": "Džezva: 2 žličice na 100 ml, do pjene, 3–5 min"
+  },
+  "cigarHint": {
+   "hr": "Mliječna čokolada i lješnjak prate srednju Habano cigaru; maduro pregazi ovu nježniju Ciglicu.",
+   "en": "Milk chocolate and hazelnut follow a medium Habano; maduro overruns this gentler Ciglica."
+  },
+  "notes": {
+   "hr": "Mekša sestra Originala: arabica i robusta, baršunast okus, mliječna čokolada i lješnjak. Franck joj daje intenzitet 3,5 od 5. Nije 3-u-1 s mlijekom — čokolada je u zrnu. Kuha se u džezvi. Uz nju ostaje srednja Habano cigara; maduro je pretežak.",
+   "en": "The softer sister of Original: arabica and robusta, a velvety cup, milk chocolate and hazelnut. Franck rates it 3.5 of 5. It is not a 3-in-1 with milk — the chocolate is in the bean. Brewed in a cezve. It keeps a medium Habano; maduro is too heavy."
+  },
+  "coffeeDetail": {
+   "roast": "medium",
+   "process": "blend",
+   "species": "blend"
+  }
+ },
+ {
+  "id": "cf-franck-bonus-espresso",
+  "category": "coffee",
+  "name": "Franck Bonus Espresso",
+  "style": "espresso-dark",
+  "region": "Južna Amerika, Azija (blend)",
+  "country": "Hrvatska",
+  "abv": null,
+  "body": 5,
+  "sweetness": 2,
+  "flavorTags": [
+   "kakao",
+   "kremasto"
+  ],
+  "qualityScore": 7,
+  "priceEUR": null,
+  "shopHR": "ugostiteljstvo / Franck shop",
+  "pairable": true,
+  "serving": {
+   "best": "Espresso (25–30 ml, aparat)"
+  },
+  "cigarHint": {
+   "hr": "Tamna čokolada i gusta crema nose punu Habano ili maduro cigaru; Connecticut nestaje uz Bonus.",
+   "en": "Dark chocolate and thick crema carry a full Habano or maduro; Connecticut vanishes beside Bonus."
+  },
+  "notes": {
+   "hr": "Franckov ugostiteljski espresso u zrnu: Južna Amerika i Azija, intenzitet 8,5 od 10. Kuća ističe tamnu čokoladu i bogatu, postojanu pjenu. Nije supermarketska Ciglica — ide na aparat, 25–30 ml. Uz nju sjeda puna Habano ili maduro cigara, ne Shade.",
+   "en": "Franck’s food-service espresso beans: South America and Asia, intensity 8.5 of 10. The house highlights dark chocolate and a rich, lasting crema. It is not the supermarket Ciglica — it belongs on a machine, 25–30 ml. It sits with a full Habano or maduro, not Shade."
+  },
+  "coffeeDetail": {
+   "roast": "dark",
+   "process": "blend",
+   "species": "blend"
   }
  },
  {
@@ -1202,10 +1856,18 @@
   "serving": {
    "best": "Šalica (200 ml), voda ~90 °C"
   },
-  "cigarHint": null,
+  "cigarHint": {
+   "hr": "Ravna gorčina drži blagu cigaru na toploj podlozi; puna Habano ostaje sama.",
+   "en": "Flat bitterness holds a mild cigar on a warm base; a full Habano sits alone."
+  },
   "notes": {
    "hr": "Sušeni ekstrakt, uglavnom robusta: ravna gorčina bez arome svježe kave. Uz cigaru radi kao topla neutralna podloga — ne pojačava ništa, ali ni ne smeta blažem dimu. Kad je izbor između instanta i ničega, uzmi manje šećera i više vode.",
    "en": "Dried extract, mostly robusta: flat bitterness without fresh-coffee aroma. With a cigar it works as a warm neutral base — it lifts nothing, but does not fight a milder smoke either. When the choice is instant or nothing, take less sugar and more water."
+  },
+  "coffeeDetail": {
+   "roast": "dark",
+   "process": "blend",
+   "species": "blend"
   }
  },
  {
@@ -1236,10 +1898,19 @@
   "serving": {
    "best": "Šalica (200 ml), voda ~90 °C"
   },
-  "cigarHint": null,
+  "cigarHint": {
+   "hr": "Šećer i prah prekrivaju dim; uz 3-u-1 radije drži vodu, ne cigaru.",
+   "en": "Sugar and powder blanket the smoke; with 3-in-1 keep water, not a cigar."
+  },
   "notes": {
    "hr": "Šećer i mliječni prah prekrivaju i zrno i cigaru — fine note nestanu, ostaje slatkoća. Uz blagu cigaru guši sve što bi se imalo osjetiti; ako je to jedino pri ruci, radije popij vodu uz dim.",
    "en": "Sugar and milk powder blanket both the bean and the cigar — fine notes vanish and only sweetness remains. With a mild cigar it drowns everything worth tasting; if it is all you have, drink water alongside the smoke instead."
+  },
+  "coffeeDetail": {
+   "roast": "dark",
+   "process": "blend",
+   "species": "blend",
+   "milk": true
   }
  }
 ]
