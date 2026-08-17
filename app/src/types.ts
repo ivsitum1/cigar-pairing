@@ -186,6 +186,8 @@ export interface Cigar {
   sourceUrls?: string[];
   availabilityHR: string[];
   notes: LocalizedText;
+  /** Optional 1–10 editorial score when present; most cigars omit it. */
+  qualityScore?: number | null;
   // Za samplere/gift-packove: popis linija cigara koje pakiranje sadrzi.
   lineup?: string[];
 }

@@ -67,6 +67,12 @@ const BUDGET_FALLBACK: Partial<Record<GiftBudget, GiftBudget>> = {
 
 const BEGINNER_SHAPES = new Set<ShapeFamily>(["corona", "robusto"]);
 
+/** Poklon nije svakodnevni bundle. Pića imaju 1–10; cigare taj broj nemaju,
+ *  pa uz cijenu i trgovinu ispadaju bundle/value linije i aromatizirane. */
+export const MIN_GIFT_QUALITY = 7;
+
+const BARGAIN_LINE = /\bbundle\b|\bvalue\b|closeout|\bseconds\b|\bbudget\b/i;
+
 /** Za „u blizini”: ALL tretiramo kao HR (domaće trgovine). */
 export function giftRegion(market: RegionFilter): Region {
   return market === "ALL" || market === "HR" ? "HR" : market;
@@ -90,12 +96,17 @@ export function cigarGiftEligible(c: Cigar, region: Region): boolean {
   // Samo cigare s poznatom cijenom (~10 % kataloga). Neprijedložena cigara
   // nije poklon — praznina se rješava scrapom, ne mekšim filterom.
   if (cigarPrice(c, region) == null) return false;
+  if (c.flavoured) return false;
+  if (BARGAIN_LINE.test(`${c.brand} ${c.line}`)) return false;
+  const scored = c.qualityScore;
+  if (scored != null && scored < MIN_GIFT_QUALITY) return false;
   if (region === "HR") return c.availabilityHR.length > 0;
   return c.markets.includes(region);
 }
 
 export function drinkGiftEligible(d: Drink, region: Region): boolean {
   if (!d.pairable || drinkMid(d) == null) return false;
+  if (d.qualityScore == null || d.qualityScore < MIN_GIFT_QUALITY) return false;
   if (region === "HR") return Boolean(d.shopHR?.trim());
   return d.priceEUR != null;
 }
@@ -149,23 +160,18 @@ function intensityStrengthRange(intensity: GiftIntensity): { min: number; max: n
     case "bold":
       return { min: 4, max: 5 };
     case "medium":
+      return { min: 3, max: 3 };
     case "unknown":
-    default:
       return { min: 2, max: 4 };
+    default: {
+      const _exhaustive: never = intensity;
+      return _exhaustive;
+    }
   }
 }
 
 function intensityBodyRange(intensity: GiftIntensity): { min: number; max: number } {
-  switch (intensity) {
-    case "mild":
-      return { min: 1, max: 2 };
-    case "bold":
-      return { min: 4, max: 5 };
-    case "medium":
-    case "unknown":
-    default:
-      return { min: 2, max: 4 };
-  }
+  return intensityStrengthRange(intensity);
 }
 
 function cigarMatchesIntensity(c: Cigar, intensity: GiftIntensity): boolean {
@@ -219,9 +225,16 @@ function cigarPool(
     )
     .sort(
       (a, b) =>
-        a.strength - b.strength ||
-        (cigarPrice(a, region) ?? 9999) - (cigarPrice(b, region) ?? 9999),
+        intensityCenterDist(a.strength, intensity) -
+          intensityCenterDist(b.strength, intensity) ||
+        (cigarPrice(b, region) ?? 0) - (cigarPrice(a, region) ?? 0),
     );
+}
+
+function intensityCenterDist(value: number, intensity: GiftIntensity): number {
+  const { min, max } = intensityStrengthRange(intensity);
+  const center = (min + max) / 2;
+  return Math.abs(value - center);
 }
 
 function pairingPick(
@@ -244,7 +257,10 @@ function pairingPick(
         return p != null && p <= (band.max ?? Infinity) + 0.01;
       })
       .sort(
-        (a, b) => (cigarPrice(a, region) ?? 0) - (cigarPrice(b, region) ?? 0),
+        (a, b) =>
+          intensityCenterDist(a.strength, answers.intensity) -
+            intensityCenterDist(b.strength, answers.intensity) ||
+          (cigarPrice(b, region) ?? 0) - (cigarPrice(a, region) ?? 0),
       );
 
     for (const cigar of cigarsInBand.slice(0, 16)) {
@@ -388,18 +404,15 @@ export function findGifts(
   const exclude = new Set(opts?.excludeIds ?? []);
 
   const attempts: GiftAnswers[] = [answers];
-  if (answers.intensity !== "unknown") {
-    attempts.push({ ...answers, intensity: "unknown" });
-  }
   if (answers.drink !== "unknown") {
-    attempts.push({ ...answers, intensity: "unknown", drink: "unknown" });
+    attempts.push({ ...answers, drink: "unknown" });
   }
   if (answers.shape === "pairing") {
-    attempts.push({ ...answers, intensity: "unknown", drink: "unknown", shape: "cigar" });
-    attempts.push({ ...answers, intensity: "unknown", drink: "unknown", shape: "bottle" });
+    attempts.push({ ...answers, drink: "unknown", shape: "cigar" });
+    attempts.push({ ...answers, drink: "unknown", shape: "bottle" });
   }
   if (answers.shape === "cigar") {
-    attempts.push({ ...answers, intensity: "unknown", shape: "bottle" });
+    attempts.push({ ...answers, shape: "bottle" });
   }
 
   for (const attempt of attempts) {
