@@ -5,10 +5,10 @@
 // they are not a chapter from the atlas. Soft nudges only (< bodyPerStep).
 // Reference model: data/coffeePairingModel.json — validate weights empirically.
 
-import type { Cigar, Drink, PairingReason } from "../types";
+import type { Cigar, CoffeeRoast, Drink, PairingReason } from "../types";
 import { WEIGHTS, normalizeTags } from "./rules";
 
-export type CoffeeRoast = "light" | "medium" | "dark";
+export type { CoffeeRoast };
 export type CoffeeIntensity = "low" | "medium" | "high";
 export type CoffeeAcidity = "low" | "medium" | "high";
 export type CoffeeFlavorFamily =
@@ -25,28 +25,21 @@ export interface CoffeeProfile {
   flavorFamily: CoffeeFlavorFamily;
 }
 
-// `style` kod kave nosi PRIPREMU; prženje je vlastito polje (`roast`).
-// Stari, spojeni ključevi ("espresso-dark", "filter-light") ostaju pokriveni
-// kao zaliha za zapise koji još nisu migrirani.
-const LEGACY_DARK_STYLES = new Set([
+const DARK_STYLES = new Set([
   "espresso-dark",
   "filter-dark",
   "turkish",
   "moka",
 ]);
-const LEGACY_LIGHT_STYLES = new Set(["filter-light"]);
-
-/** Priprema koja daje gust ekstrakt (visok TDS) bez obzira na zrno. */
-const HIGH_TDS_PREPS = new Set([
-  "espresso",
-  "ristretto",
-  "turkish",
-  "moka",
+const LIGHT_STYLES = new Set(["filter-light"]);
+const HIGH_TDS_STYLES = new Set([
   "espresso-dark",
   "espresso-medium",
+  "turkish",
+  "moka",
 ]);
 // Americano = espresso + hot water → medium TDS (body drives the rest).
-const LOW_TDS_PREPS = new Set(["cold-brew", "cold", "filter-light"]);
+const LOW_TDS_STYLES = new Set(["filter-light", "cold"]);
 
 /** Region / name hints for acidity & origin character. */
 function regionBlob(drink: Drink): string {
@@ -54,25 +47,26 @@ function regionBlob(drink: Drink): string {
 }
 
 function inferRoast(drink: Drink): CoffeeRoast {
-  if (drink.roast) return drink.roast;
-  if (LEGACY_DARK_STYLES.has(drink.style)) return "dark";
-  if (LEGACY_LIGHT_STYLES.has(drink.style)) return "light";
+  if (drink.coffeeDetail?.roast) return drink.coffeeDetail.roast;
+  if (DARK_STYLES.has(drink.style)) return "dark";
+  if (LIGHT_STYLES.has(drink.style)) return "light";
   return "medium";
 }
 
-/**
- * Gustoća šalice: prvo priprema, pa tijelo. Svijetli filter je čajan i kad je
- * zrno bogato; espresso je gust i kad je zrno svijetlo.
- */
-function inferIntensity(style: string, roast: CoffeeRoast, body: number): CoffeeIntensity {
+function inferIntensity(drink: Drink): CoffeeIntensity {
+  const style = drink.style;
   if (style === "americano") return "medium";
-  if (HIGH_TDS_PREPS.has(style) || body >= 4.5) return "high";
-  if (LOW_TDS_PREPS.has(style) || (style === "filter" && roast === "light")) return "low";
-  if (body <= 2) return "low";
+  if (drink.coffeeDetail?.species === "robusta") return "high";
+  if (HIGH_TDS_STYLES.has(style) || drink.body >= 4.5) return "high";
+  if (LOW_TDS_STYLES.has(style) || drink.body <= 2) return "low";
   return "medium";
 }
 
 function inferAcidity(drink: Drink, roast: CoffeeRoast, tags: string[]): CoffeeAcidity {
+  const process = drink.coffeeDetail?.process;
+  if (drink.coffeeDetail?.species === "robusta") return "low";
+  if (process === "semi-washed" || process === "monsoon") return "low";
+  if (process === "washed" && roast === "light") return "high";
   const blob = regionBlob(drink);
   if (
     /etiop|ethiop|kenij|kenya|burundi|rwanda|yirgacheffe|sidamo|guji|nyeri|panama|geisha|costa rica/.test(
@@ -95,10 +89,14 @@ function inferAcidity(drink: Drink, roast: CoffeeRoast, tags: string[]): CoffeeA
   return "medium";
 }
 
-function inferFlavorFamily(tags: string[], blob: string): CoffeeFlavorFamily {
-  // Regional earthy (Giling Basah / monsoon) wins over cocoa tags.
-  if (/sumatra|indonez|giling|malabar/.test(blob)) {
+function inferFlavorFamily(drink: Drink, tags: string[], blob: string): CoffeeFlavorFamily {
+  const process = drink.coffeeDetail?.process;
+  // Giling basah / monsoon wins over cocoa tags.
+  if (process === "semi-washed" || process === "monsoon" || /sumatra|indonez|giling|malabar/.test(blob)) {
     return "earthy";
+  }
+  if (process === "natural" && (tags.includes("voce") || tags.includes("tamno-voce") || tags.includes("borovnica"))) {
+    return "fruity";
   }
   const earthyTags = tags.filter((t) =>
     t === "zemljano" || t === "koza" || t === "duhan",
@@ -131,14 +129,18 @@ function inferFlavorFamily(tags: string[], blob: string): CoffeeFlavorFamily {
   return "nuttyCocoa";
 }
 
+function hasMilk(drink: Drink): boolean {
+  return drink.coffeeDetail?.milk === true || drink.style === "milk";
+}
+
 export function inferCoffeeProfile(drink: Drink): CoffeeProfile {
   const tags = normalizeTags(drink.flavorTags);
   const roast = inferRoast(drink);
   return {
     roast,
-    intensity: inferIntensity(drink.style, roast, drink.body),
+    intensity: inferIntensity(drink),
     acidity: inferAcidity(drink, roast, tags),
-    flavorFamily: inferFlavorFamily(tags, regionBlob(drink)),
+    flavorFamily: inferFlavorFamily(drink, tags, regionBlob(drink)),
   };
 }
 
@@ -248,6 +250,11 @@ export function coffeePairingReasons(
   ) {
     bridge = "nutty";
   } else if (
+    profile.flavorFamily === "herbalSavory" &&
+    cigarTags.some((t) => SPICY_CIGAR.has(t) || EARTHY_CIGAR.has(t))
+  ) {
+    bridge = "earthy";
+  } else if (
     (profile.flavorFamily === "floral" || profile.flavorFamily === "fruity") &&
     cigarTags.some((t) => FLORAL_CIGAR.has(t)) &&
     cigar.body <= 3
@@ -308,6 +315,83 @@ export function coffeePairingReasons(
         en: "Coffee sweetness softens spicy or earthy smoke.",
       },
     });
+  }
+
+  // Milk: softens pepper, hides nuance, loses to full cigars
+  if (hasMilk(drink)) {
+    if (cigarTags.some((t) => SPICY_CIGAR.has(t)) && cigar.body <= 3) {
+      reasons.push({
+        rule: "coffee-milk-mellow",
+        score: WEIGHTS.coffeeMilkMellow,
+        text: {
+          hr: "Mlijeko omekšava papar u dimu, pa blaga do srednja cigara ostaje čitka.",
+          en: "Milk softens pepper in the smoke, so a mild-to-medium cigar stays readable.",
+        },
+      });
+    }
+    if (
+      cigarTags.some((t) => t === "cvjetno" || t === "citrus") ||
+      (cigar.body <= 2 && cigar.strength <= 2 && profile.flavorFamily === "floral")
+    ) {
+      reasons.push({
+        rule: "coffee-milk-mask",
+        score: -WEIGHTS.coffeeMilkMask,
+        text: {
+          hr: "Mlijeko pokriva cvjetne i mineralne note — fina cigara ostaje iza zavjese.",
+          en: "Milk covers floral and mineral notes — a fine cigar stays behind a curtain.",
+        },
+      });
+    }
+    if (cigar.body >= 4 && cigar.strength >= 4) {
+      reasons.push({
+        rule: "coffee-milk-heavy",
+        score: -WEIGHTS.coffeeMilkHeavy,
+        text: {
+          hr: "Puna, jaka cigara pregazi mliječnu šalicu; biraj espresso ili french press.",
+          en: "A full, strong cigar overruns a milky cup; pick espresso or french press.",
+        },
+      });
+    }
+  }
+
+  // Natural process: fruit body as contrast with a cigar light enough to keep it
+  if (
+    drink.coffeeDetail?.process === "natural" &&
+    (profile.flavorFamily === "fruity" || drink.sweetness >= 4) &&
+    cigar.body <= 3 &&
+    cigar.strength <= 3
+  ) {
+    reasons.push({
+      rule: "coffee-natural-fruit",
+      score: WEIGHTS.coffeeProcessBridge,
+      text: {
+        hr: "Natural obrada diže voće i tijelo — kontrast uz cigaru koja još ostavlja prostora.",
+        en: "Natural process lifts fruit and body — contrast with a cigar that still leaves room.",
+      },
+    });
+  }
+
+  // Spiked coffee sits with after-dinner weight
+  if (drink.style === "spiked") {
+    if (cigar.body >= 3 && cigar.strength >= 3) {
+      reasons.push({
+        rule: "coffee-spiked-weight",
+        score: WEIGHTS.coffeeSpikedWeight,
+        text: {
+          hr: "Kava s žesticom nosi srednju do punu cigaru nakon jela.",
+          en: "Coffee with spirit carries a medium to full cigar after a meal.",
+        },
+      });
+    } else if (cigar.body <= 2) {
+      reasons.push({
+        rule: "coffee-spiked-delicate",
+        score: -WEIGHTS.coffeeSpikedDelicate,
+        text: {
+          hr: "Žestica u šalici pregazi blagu cigaru; ostavi Shade za jutarnji filter.",
+          en: "Spirit in the cup overruns a mild cigar; leave Shade for morning filter.",
+        },
+      });
+    }
   }
 
   return reasons;

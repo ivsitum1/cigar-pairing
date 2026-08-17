@@ -5,9 +5,10 @@ Pica, za razliku od cigara, nemaju `brand` polje — marka zivi samo unutar
 `name`. Ovo je izvodi jednom, u datoteku koja se moze pregledati i rucno
 ispraviti, umjesto da se pogadanje ukopa u osam podatkovnih datoteka.
 
-KAVA JE NAMJERNO IZOSTAVLJENA: sva 33 zapisa su nacini pripreme (Ristretto,
-Cold brew), podrijetla (Brazil Santos) ili recepti (Irish coffee) — pojam
-marke ondje ne postoji.
+STILSKA KAVA (Ristretto, Cold brew, Brazil Santos, Irish coffee) NAMJERNO
+NEMA MARKU: to su nacini pripreme i podrijetla. Imenovane mjesavine
+(Franck, illy, Lavazza…) idu kroz drink_brand_overrides.json i NE prolaze
+heuristiku — inace bi "Espresso — talijanska…" postalo marka "Espresso".
 
 Rucne ispravke idu u scripts/data/drink_brand_overrides.json i uvijek
 nadjacavaju heuristiku; ponovno pokretanje ih ne gazi.
@@ -31,7 +32,8 @@ DATA = APP / "src" / "data"
 OUT = DATA / "drinkBrands.json"
 OVERRIDES = APP / "scripts" / "data" / "drink_brand_overrides.json"
 
-# Kava nema marke — vidi docstring.
+# Stilska kava nije u FILES (heuristika bi od "Espresso — …" napravila marku).
+# Imenovane mjesavine ulaze kroz overrides, vidi main().
 FILES = ["rums", "whiskies", "brandies", "gins", "wines", "tequilas", "digestifs"]
 
 # Rijeci koje same ne mogu biti marka: clanovi, "ron/rhum" (= rum), oznake
@@ -178,9 +180,18 @@ def main() -> int:
     for f in FILES:
         for d in json.loads((DATA / f"{f}.json").read_text(encoding="utf-8")):
             names[d["id"]] = clean(d.get("name", ""))
+    coffee_ids = {
+        d["id"]
+        for d in json.loads((DATA / "coffees.json").read_text(encoding="utf-8"))
+    }
     brands = derive_all(names)
     for cid, brand in overrides.items():
         if cid in brands:
+            brands[cid] = brand
+        elif cid.startswith("cf-"):
+            if cid not in coffee_ids:
+                print(f"override za nepostojeću kavu: {cid}", file=sys.stderr)
+                return 1
             brands[cid] = brand
 
     collisions = slug_collisions(brands)
@@ -197,7 +208,7 @@ def main() -> int:
             "Generira scripts/derive-drink-brands.py. Rucne ispravke NE upisuj "
             "ovdje nego u scripts/data/drink_brand_overrides.json — one "
             "nadjacavaju heuristiku i prezivljavaju regeneraciju. "
-            "Kava je namjerno izostavljena: nema pojam marke."
+            "Stilska kava nema marku; imenovane mjesavine idu kroz overrides."
         ),
         "brands": dict(sorted(brands.items())),
     }

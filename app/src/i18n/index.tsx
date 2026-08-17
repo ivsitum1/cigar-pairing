@@ -418,6 +418,10 @@ const STRINGS = {
   "common.lineup": { hr: "Boce u seriji", en: "Bottles in the series" },
   "common.samplerContents": { hr: "Cigare u pakiranju", en: "Cigars in the pack" },
   "common.additives": { hr: "Aditivi", en: "Additives" },
+  "common.roast": { hr: "Prženje", en: "Roast" },
+  "common.process": { hr: "Obrada", en: "Process" },
+  "common.species": { hr: "Vrsta", en: "Species" },
+  "common.cigarHint": { hr: "Uz cigaru", en: "With a cigar" },
   "common.close": { hr: "Zatvori", en: "Close" },
   "common.time": { hr: "Vrijeme", en: "Time" },
   "common.shop": { hr: "Trgovina", en: "Shop" },
@@ -965,6 +969,27 @@ export const ADDITIVE_LABELS: Record<string, LocalizedText> = {
   flavored: { hr: "Aromatiziran", en: "Flavoured" },
   fortified: { hr: "Fortificirano", en: "Fortified" },
   unknown: { hr: "Nepoznato", en: "Unknown" },
+};
+
+export const COFFEE_ROAST_LABELS: Record<string, LocalizedText> = {
+  light: { hr: "svijetlo", en: "light" },
+  medium: { hr: "srednje", en: "medium" },
+  dark: { hr: "tamno", en: "dark" },
+};
+
+export const COFFEE_PROCESS_LABELS: Record<string, LocalizedText> = {
+  washed: { hr: "oprana", en: "washed" },
+  natural: { hr: "natural (sušena trešnja)", en: "natural (dried in cherry)" },
+  honey: { hr: "honey (pulp natural)", en: "honey (pulp natural)" },
+  "semi-washed": { hr: "poluprana (giling basah)", en: "semi-washed (giling basah)" },
+  monsoon: { hr: "monsunska", en: "monsooned" },
+  blend: { hr: "mješavina", en: "blend" },
+};
+
+export const COFFEE_SPECIES_LABELS: Record<string, LocalizedText> = {
+  arabica: { hr: "arabica", en: "arabica" },
+  robusta: { hr: "robusta", en: "robusta" },
+  blend: { hr: "mješavina arabica/robusta", en: "arabica/robusta blend" },
 };
 
 // Neutralna pravila po kategoriji — što je zakonski dopušteno dodati.

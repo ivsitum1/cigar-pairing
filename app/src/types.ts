@@ -33,7 +33,23 @@ export interface PriceRange {
 }
 
 export type CoffeeRoastLevel = "light" | "medium" | "dark";
+export type CoffeeRoast = CoffeeRoastLevel;
+export type CoffeeProcess =
+  | "washed"
+  | "natural"
+  | "honey"
+  | "semi-washed"
+  | "monsoon"
+  | "blend";
 export type CoffeeSpecies = "arabica" | "robusta" | "blend";
+
+export interface CoffeeDetail {
+  roast: CoffeeRoast;
+  process?: CoffeeProcess;
+  species?: CoffeeSpecies;
+  /** True when milk/cream is part of the drink, not just the bean. */
+  milk?: boolean;
+}
 
 export interface Serving {
   neat?: number; // 0-3 (x, ~, +, ++)
@@ -80,6 +96,8 @@ export interface Drink {
   pairable: boolean;
   serving: Serving;
   cigarHint?: LocalizedText | null;
+  /** Coffee only — roast/process/species shown on the drink sheet. */
+  coffeeDetail?: CoffeeDetail;
   priceUrl?: string | null; // izvor cijene / gdje kupiti
   notes: LocalizedText;
   // Za unose koji predstavljaju seriju/raspon (npr. Foursquare ECS), a ne
