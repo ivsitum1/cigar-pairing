@@ -20,6 +20,12 @@ describe("productImageUrl", () => {
     expect(productImageUrl("drink", "wh-does-not-exist")).toBeNull();
   });
 
+  it("maps 1502 Black Gold from the Humidor product photo used on the detail sheet", () => {
+    expect(productImageUrl("cigar", "cig-1502-black-gold")).toMatch(
+      /^https:\/\/humidor\.hr\//,
+    );
+  });
+
   it("only maps ids that exist in the app catalogs", () => {
     const cigarSet = new Set(CIGARS.map((c) => c.id));
     const drinkSet = new Set(ALL_DRINKS.map((d) => d.id));

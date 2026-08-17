@@ -305,37 +305,37 @@ function CigarDetails({
       </div>
 
       <div className="flex items-start gap-3">
+        <div className="min-w-0 flex-1">
+          <div className="font-display text-xl text-papir">
+            {displayBrand}{" "}
+            <span className="text-zlato-2">{cigar.line}</span>
+            {vitolaCrumb && vitolaCrumb !== cigar.line ? (
+              <span className="text-papir/80"> · {vitolaCrumb}</span>
+            ) : null}
+          </div>
+          <div className="mt-1 text-sm text-dim">
+            {cn(cigar.country)} · {cigar.wrapper}
+            {cigar.isPuro === true ? ` · ${t("leaf.puro")}` : null}
+            {onOpenBrand && (
+              <>
+                {" · "}
+                <button
+                  type="button"
+                  onClick={() => onOpenBrand(cigar.brand)}
+                  className="text-zlato hover:text-zlato-2"
+                >
+                  {t("brand.viewAll")} →
+                </button>
+              </>
+            )}
+          </div>
+        </div>
         {photo && (
           <ProductThumb
             src={photo}
             alt={`${displayBrand} ${cigar.line}`}
           />
         )}
-        <div className="min-w-0 flex-1">
-      <div className="font-display text-xl text-papir">
-        {displayBrand}{" "}
-        <span className="text-zlato-2">{cigar.line}</span>
-        {vitolaCrumb && vitolaCrumb !== cigar.line ? (
-          <span className="text-papir/80"> · {vitolaCrumb}</span>
-        ) : null}
-      </div>
-      <div className="mt-1 text-sm text-dim">
-        {cn(cigar.country)} · {cigar.wrapper}
-        {cigar.isPuro === true ? ` · ${t("leaf.puro")}` : null}
-        {onOpenBrand && (
-          <>
-            {" · "}
-            <button
-              type="button"
-              onClick={() => onOpenBrand(cigar.brand)}
-              className="text-zlato hover:text-zlato-2"
-            >
-              {t("brand.viewAll")} →
-            </button>
-          </>
-        )}
-      </div>
-        </div>
       </div>
       {(cigar.wrapperOrigin || cigar.binderOrigin || cigar.fillerOrigin) && (
         <div className="mt-1.5 space-y-0.5 text-xs text-dim/90">
@@ -516,14 +516,7 @@ function DrinkDetails({
   return (
     <>
       <div className="flex items-start justify-between gap-3">
-        <div className="flex min-w-0 items-start gap-3">
-          {photo && (
-            <ProductThumb
-              src={photo}
-              alt={lx(drinkNameLoc(drink))}
-            />
-          )}
-          <div className="min-w-0">
+        <div className="min-w-0 flex-1">
           <div className="font-display text-xl text-papir">{lx(drinkNameLoc(drink))}</div>
           {brand &&
             (onOpenBrand ? (
@@ -537,9 +530,16 @@ function DrinkDetails({
             ) : (
               <div className="mt-0.5 text-xs uppercase tracking-widest text-dim">{brand}</div>
             ))}
-          </div>
         </div>
-        {brand && <FavoriteStar kind="drink" brand={brand} />}
+        <div className="flex shrink-0 items-start gap-2">
+          {photo && (
+            <ProductThumb
+              src={photo}
+              alt={lx(drinkNameLoc(drink))}
+            />
+          )}
+          {brand && <FavoriteStar kind="drink" brand={brand} />}
+        </div>
       </div>
       <div className="mt-1 text-sm text-dim">
         {style ? lx(style) : drink.style} · {rgn(drink.region)}
