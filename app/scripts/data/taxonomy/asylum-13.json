@@ -2,10 +2,11 @@
   "brand": "Asylum 13",
   "renameBrand": "Asylum",
   "status": "done",
-  "reviewedAt": "2026-07-30",
+  "reviewedAt": "2026-08-17",
   "sources": [
     "phase3_w3_w4_finish W3",
-    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3",
+    "Humidor HR 2026-08-17: 13 family under brand Asylum"
   ],
   "lines": {
     "13": {
@@ -14,36 +15,38 @@
     "Asylum 13": {
       "line": "13"
     },
-    "Connecticut": {
-      "line": "13 Connecticut"
-    },
     "13 Connecticut": {
       "line": "13 Connecticut"
     },
-    "Insidious Short": {
-      "line": "Insidious Short"
+    "Connecticut": {
+      "line": "13 Connecticut"
     },
-    "Pandemonium": {
-      "line": "13 Pandemonium"
-    },
-    "13 Pandemonium": {
-      "line": "13 Pandemonium"
+    "13 Corojo": {
+      "line": "13 Corojo"
     },
     "Corojo Seventy": {
       "line": "13 Corojo",
       "vitola": "Seventy"
     },
-    "13 Corojo": {
-      "line": "13 Corojo"
+    "13 Medulla Oblongata": {
+      "line": "13 Medulla Oblongata"
     },
     "Medulla Oblongata": {
       "line": "13 Medulla Oblongata"
     },
-    "13 Medulla Oblongata": {
-      "line": "13 Medulla Oblongata"
+    "13 Pandemonium": {
+      "line": "13 Pandemonium"
+    },
+    "Pandemonium": {
+      "line": "13 Pandemonium"
+    },
+    "Insidious Short": {
+      "line": "Insidious Short"
     }
   },
-  "vitolaRenames": {},
+  "vitolaRenames": {
+    "13::Gordo": "Gran Toro"
+  },
   "shapes": {},
   "keepSeparate": [],
   "lineNotes": {
