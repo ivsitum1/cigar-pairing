@@ -56,6 +56,19 @@ export const SHOPS: Shop[] = [
     },
   },
   {
+    id: "aficionado-zg",
+    name: "Aficionado",
+    region: "HR",
+    home: "https://www.aficionado.hr/",
+    // fizicki ducan bez web kataloga — search vodi na naslovnicu
+    search: () => "https://www.aficionado.hr/",
+    walkIn: true,
+    note: {
+      hr: "Zagreb — dućan bez web kataloga, kupnja na mjestu",
+      en: "Zagreb — walk-in shop, no online catalogue",
+    },
+  },
+  {
     id: "cigarworld",
     name: "CigarWorld",
     region: "EU",

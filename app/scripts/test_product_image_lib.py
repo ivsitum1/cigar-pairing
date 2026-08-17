@@ -202,11 +202,11 @@ class TestTolerancija(unittest.TestCase):
 
 
 def _scraper():
-    """scrape-product-images.py ima crticu u imenu, pa ide preko importliba."""
+    """fetch-product-images.py ima crticu u imenu, pa ide preko importliba."""
     import importlib.util
 
-    put = Path(__file__).resolve().parent / "scrape-product-images.py"
-    spec = importlib.util.spec_from_file_location("scrape_product_images", put)
+    put = Path(__file__).resolve().parent / "fetch-product-images.py"
+    spec = importlib.util.spec_from_file_location("fetch_product_images", put)
     modul = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(modul)
     return modul
@@ -243,6 +243,24 @@ class TestIzborSlikeSaStranice(unittest.TestCase):
     def test_preskace_ugradjenu_data_sliku(self):
         page = '<meta property="og:image" content="data:image/png;base64,iVBOR">'
         self.assertIsNone(self.s.slika_sa_stranice(page, "https://shop.de/p"))
+
+
+class TestPoznateAdrese(unittest.TestCase):
+    """Prvi izvor adrese je popis kojim aplikacija vec radi."""
+
+    def test_cita_productImages_json(self):
+        s = _scraper()
+        cigare = s.poznate_slike("cigars")
+        pica = s.poznate_slike("drinks")
+        # popis je dio repoa i pokriva gotovo cijeli katalog
+        self.assertGreater(len(cigare), 1000)
+        self.assertGreater(len(pica), 100)
+        self.assertTrue(all(u.startswith("http") for u in list(cigare.values())[:50]))
+
+    def test_svaka_stavka_kataloga_je_u_worklisti(self):
+        s = _scraper()
+        self.assertGreater(len(s.worklist("cigars")), 3000)
+        self.assertGreater(len(s.worklist("drinks")), 900)
 
 
 class TestRedoslijedDuckana(unittest.TestCase):

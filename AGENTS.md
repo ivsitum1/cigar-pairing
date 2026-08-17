@@ -41,15 +41,18 @@ A separate `backend` job runs `python -m unittest discover -s tests` in `backend
 - UI: the DetailSheet shows "Cijena preuzeta {date}." when `fetchedAt` is present; prices older than 90 days show an orange stale warning. When `fetchedAt` is absent the generic market note is shown instead.
 
 ### Fotografije proizvoda
-- Kartica cigare i boce prikazuje sliku iz `app/public/img/products/<vrsta>/<id>.webp`,
-  a popis (dimenzije, postupak, izvor) živi u `app/src/data/productImages.json`.
-- **Slike nisu preduvjet.** Kad je popis prazan, `lib/productImage.ts` vraća `null`
-  i kartica se crta bez pojasa sa slikom — nijedan test ni build ne ovisi o njima.
-- Dobavljanje ide lokalno (`scripts/scrape-product-images.py`, treba mrežu prema
-  dućanima), obrada s Pillowom (`scripts/normalize-product-images.py`). Originali u
-  `scripts/output/product-images/` su git-ignorirani; u repo ulazi samo obrađeni WebP.
-- Podloga se **miče u prozirno**, ne prebojava. Fotografija bez jednolične podloge
-  se ne reže nego dobiva `framed` i ide u okvir.
+- **Dva popisa, i ne smiju se pomiješati.** `src/data/productImages.json` = adresa
+  slike kod dućana (puni `attach-product-images.py`); `src/data/productImagesLocal.json`
+  = obrađene slike u `public/img/products/` (puni `normalize-product-images.py`).
+  Skripta za obradu **ne dira** prvi popis — pregazila bi ono čime app radi danas.
+- `lib/productImage.ts` bira: obrađena ako postoji, inače dućanska. Zato obrada može
+  stati na pola, a nijedna kartica ne ostaje bez slike.
+- Lanac: `attach-product-images.py` (adrese) → `fetch-product-images.py` (preuzimanje,
+  treba mrežu) → `normalize-product-images.py` (podloge, treba Pillow). Originali u
+  `scripts/output/product-images/` su git-ignorirani.
+- Podloga se **miče u prozirno**, ne prebojava. Fotografija bez jednolične podloge se
+  ne reže nego dobiva `framed`. `ProductThumb` crta plohu iza slike samo kad ona
+  **nije** `cutout`.
 
 ### Non-obvious notes
 - The dev server serves the app under the base path **`/cigar-pairing/`**, not `/`. Open `http://localhost:5173/cigar-pairing/` — the bare root path will not render the app. This base is set in `app/vite.config.ts` to match the GitHub Pages repo name.

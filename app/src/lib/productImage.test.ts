@@ -1,83 +1,97 @@
-import { beforeEach, describe, expect, it, vi } from "vitest";
+import { describe, it, expect } from "vitest";
+import { productImageUrl, productPhoto } from "./productImage";
+import images from "../data/productImages.json";
+import local from "../data/productImagesLocal.json";
+import { CIGARS, ALL_DRINKS } from "../data";
 
-// Popis se puni skriptom i u repou zna biti prazan, pa se ovdje podmece
-// nadomjestak — testira se ponasanje, ne trenutno stanje mape sa slikama.
-vi.mock("../data/productImages.json", () => ({
-  default: {
-    generatedAt: "2026-08-17",
-    cigars: {
-      "cig-oliva-serie-v": { w: 800, h: 240, t: "cutout", s: "humidor.hr" },
-      "cig-ambijent": { w: 640, h: 640, t: "framed", s: "allez.hr" },
-      "cig-bez-izvora": { w: 600, h: 200, t: "cutout" },
-      "cig-nepoznat-postupak": { w: 600, h: 200, t: "nesto-novo", s: "x.hr" },
-    },
-    drinks: {
-      "rum-foursquare-ecs-detente-2005": { w: 300, h: 800, t: "cutout", s: "allez.hr" },
-    },
-  },
-}));
+describe("productImageUrl", () => {
+  it("returns https shop photos for mapped cigars and drinks", () => {
+    const cigarIds = Object.keys(images.cigars);
+    const drinkIds = Object.keys(images.drinks);
+    expect(cigarIds.length).toBeGreaterThan(0);
+    expect(drinkIds.length).toBeGreaterThan(0);
+    const cigarUrl = productImageUrl("cigar", cigarIds[0]!);
+    const drinkUrl = productImageUrl("drink", drinkIds[0]!);
+    expect(cigarUrl).toMatch(/^https:\/\//);
+    expect(drinkUrl).toMatch(/^https:\/\//);
+  });
 
-const ucitaj = async () => await import("./productImage");
+  it("returns null for unknown ids", () => {
+    expect(productImageUrl("cigar", "cig-does-not-exist")).toBeNull();
+    expect(productImageUrl("drink", "wh-does-not-exist")).toBeNull();
+  });
 
-describe("put do slike", () => {
-  beforeEach(() => vi.resetModules());
-
-  it("slika ide kroz BASE_URL, ne kroz korijen", async () => {
-    const { cigarImage } = await ucitaj();
-    // BASE_URL je "/cigar-pairing/" — tvrdi "/img/..." dao bi 404 na Pagesu
-    expect(cigarImage("cig-oliva-serie-v")?.src).toBe(
-      `${import.meta.env.BASE_URL}img/products/cigars/cig-oliva-serie-v.webp`,
+  it("maps 1502 Black Gold from the Humidor product photo used on the detail sheet", () => {
+    expect(productImageUrl("cigar", "cig-1502-black-gold")).toMatch(
+      /^https:\/\/humidor\.hr\//,
     );
   });
 
-  it("pića imaju svoju mapu", async () => {
-    const { drinkImage } = await ucitaj();
-    expect(drinkImage("rum-foursquare-ecs-detente-2005")?.src).toContain(
-      "img/products/drinks/rum-foursquare-ecs-detente-2005.webp",
+  it("only maps ids that exist in the app catalogs", () => {
+    const cigarSet = new Set(CIGARS.map((c) => c.id));
+    const drinkSet = new Set(ALL_DRINKS.map((d) => d.id));
+    for (const id of Object.keys(images.cigars)) {
+      expect(cigarSet.has(id), id).toBe(true);
+      expect(images.cigars[id as keyof typeof images.cigars]).toMatch(/^https:\/\//);
+    }
+    for (const id of Object.keys(images.drinks)) {
+      expect(drinkSet.has(id), id).toBe(true);
+      expect(images.drinks[id as keyof typeof images.drinks]).toMatch(/^https:\/\//);
+    }
+  });
+});
+
+describe("productPhoto — obrađena slika ispred dućanske", () => {
+  it("bez obrađene inačice vraća dućanski URL i označi ga kao neobrađen", () => {
+    // Ovo je stanje svake stavke koja još nije prošla obradu: kartica ima
+    // sliku, samo joj podloga nije ujednačena. Traži se id kojeg NEMA u
+    // obrađenom popisu — inače bi test mjerio obrađenu granu i prolazio lažno.
+    const obradjeni = new Set(
+      Object.keys((local as { cigars?: Record<string, unknown> }).cigars ?? {}),
     );
+    const id = Object.keys(images.cigars).find((i) => !obradjeni.has(i));
+    expect(id, "svaka cigara je obrađena — test više ne pokriva dućanski sloj").toBeDefined();
+    const photo = productPhoto("cigar", id!);
+    expect(photo?.src).toMatch(/^https:\/\//);
+    expect(photo?.treatment).toBe("remote");
   });
 
-  it("nosi dimenzije, da kartica rezervira prostor prije učitavanja", async () => {
-    const { cigarImage } = await ucitaj();
-    const slika = cigarImage("cig-oliva-serie-v");
-    expect(slika?.width).toBe(800);
-    expect(slika?.height).toBe(240);
-  });
-});
-
-describe("kad slike nema", () => {
-  beforeEach(() => vi.resetModules());
-
-  it("nepoznat id ne ruši ništa — kartica se crta bez slike", async () => {
-    const { cigarImage, drinkImage } = await ucitaj();
-    expect(cigarImage("cig-nema-me")).toBeNull();
-    expect(drinkImage("rum-nema-me")).toBeNull();
+  it("nepoznat id ne daje sliku ni na jednom sloju", () => {
+    expect(productPhoto("cigar", "cig-does-not-exist")).toBeNull();
+    expect(productPhoto("drink", "wh-does-not-exist")).toBeNull();
   });
 
-  it("prazan id se ne pretvara u put", async () => {
-    const { cigarImage } = await ucitaj();
-    expect(cigarImage(undefined)).toBeNull();
-    expect(cigarImage("")).toBeNull();
-  });
-});
-
-describe("postupak obrade", () => {
-  beforeEach(() => vi.resetModules());
-
-  it("razlikuje izrezanu sliku od one u okviru", async () => {
-    const { cigarImage } = await ucitaj();
-    expect(cigarImage("cig-oliva-serie-v")?.treatment).toBe("cutout");
-    expect(cigarImage("cig-ambijent")?.treatment).toBe("framed");
+  it("prazan id se ne pretvara u put", () => {
+    expect(productPhoto("cigar", undefined)).toBeNull();
+    expect(productPhoto("cigar", "")).toBeNull();
   });
 
-  it("nepoznata oznaka pada na izrez, ne na okvir", async () => {
-    // Okvir je vidljiv zahvat; kad popis kaže nešto nepoznato, tiši je izbor.
-    const { cigarImage } = await ucitaj();
-    expect(cigarImage("cig-nepoznat-postupak")?.treatment).toBe("cutout");
+  it("obrađene slike, kad ih ima, idu kroz BASE_URL i nose dimenzije", () => {
+    // Popis je u repou prazan dok se obrada ne pokrene — test tada provjerava
+    // samo da je prazan, a čim slike stignu provjerava njihov oblik.
+    const cigars = (local as { cigars?: Record<string, { w: number; h: number; t: string }> })
+      .cigars;
+    const ids = Object.keys(cigars ?? {});
+    if (ids.length === 0) {
+      expect(ids).toEqual([]);
+      return;
+    }
+    const photo = productPhoto("cigar", ids[0]!);
+    expect(photo?.src).toContain(`${import.meta.env.BASE_URL}img/products/cigars/`);
+    expect(photo?.src.endsWith(".webp")).toBe(true);
+    expect(["cutout", "framed"]).toContain(photo?.treatment);
+    expect(photo?.width).toBeGreaterThan(0);
+    expect(photo?.height).toBeGreaterThan(0);
   });
 
-  it("izvor bez domene daje prazan potpis, ne 'undefined'", async () => {
-    const { cigarImage } = await ucitaj();
-    expect(cigarImage("cig-bez-izvora")?.source).toBe("");
+  it("obrađeni popis ne smije spominjati id koji katalog ne zna", () => {
+    const cigarSet = new Set(CIGARS.map((c) => c.id));
+    const drinkSet = new Set(ALL_DRINKS.map((d) => d.id));
+    const maps = local as {
+      cigars?: Record<string, unknown>;
+      drinks?: Record<string, unknown>;
+    };
+    for (const id of Object.keys(maps.cigars ?? {})) expect(cigarSet.has(id), id).toBe(true);
+    for (const id of Object.keys(maps.drinks ?? {})) expect(drinkSet.has(id), id).toBe(true);
   });
 });

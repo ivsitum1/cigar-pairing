@@ -34,7 +34,7 @@ CIGARS = DATA / "cigars.json"
 HR_HOSTS = ("humidor.hr", "havana-cigar-shop.com")
 SHOP_FROM_SOURCE = {
     "humidor": "The Humidor",
-    "havana": "Havana Shop",
+    "havana": "Havana Cigar Shop",
 }
 SHOPS_TS = APP / "src" / "data" / "shops.ts"
 
@@ -238,7 +238,7 @@ def reconcile(
             if has_hard_hr_proof(c):
                 if not c.get("availabilityHR"):
                     c["availabilityHR"] = sorted(
-                        {"The Humidor", "Havana Shop"} | set(kept_walk_in)
+                        {"The Humidor", "Havana Cigar Shop"} | set(kept_walk_in)
                     )
                 _ensure_hr_market(c, prev_markets)
                 continue
@@ -274,7 +274,7 @@ def reconcile(
         if has_hard_hr_proof(c):
             # zadrži HR; normaliziraj availability ako prazan a ima dokaz
             if not c.get("availabilityHR"):
-                filled = shops or {"The Humidor", "Havana Shop"}
+                filled = shops or {"The Humidor", "Havana Cigar Shop"}
                 c["availabilityHR"] = sorted(set(filled) | set(kept_walk_in))
             _ensure_hr_market(c, prev_markets)
             continue

@@ -422,6 +422,7 @@ const STRINGS = {
   "common.process": { hr: "Obrada", en: "Process" },
   "common.species": { hr: "Vrsta", en: "Species" },
   "common.cigarHint": { hr: "Uz cigaru", en: "With a cigar" },
+  "common.productPhoto": { hr: "Slika proizvoda", en: "Product photo" },
   "common.close": { hr: "Zatvori", en: "Close" },
   "common.time": { hr: "Vrijeme", en: "Time" },
   "common.shop": { hr: "Trgovina", en: "Shop" },
@@ -700,6 +701,23 @@ const STRINGS = {
     hr: "U tvom rasponu nema dovoljno — prikazujemo nešto nešto jeftinije.",
     en: "Nothing strong enough in your band — showing something a little cheaper.",
   },
+  "gift.match": { hr: "Slaganje", en: "Match" },
+  "gift.minMatchNote": {
+    hr: "Cigaru i piće nudimo zajedno samo kad slaganje prijeđe 80 %. Kombinacija koja ne ide lošiji je poklon od dvije zasebne stvari koje idu.",
+    en: "We only offer a cigar and a drink together when the match clears 80%. A combination that does not work is a worse gift than two separate things that do.",
+  },
+  "gift.noPairing": {
+    hr: "U ovom rasponu nijedna kombinacija nije prešla 80 %, pa cigara i piće idu zasebno.",
+    en: "No combination cleared 80% in this band, so the cigar and the drink come separately.",
+  },
+  "gift.swappedNote": {
+    hr: "U traženoj kategoriji nema pogotka u ovom rasponu — ovo je najbliža koja ima. Traženo:",
+    en: "Nothing in the requested category fits this band — this is the nearest one that does. Asked for:",
+  },
+  "gift.safeDefault": {
+    hr: "Na sva pitanja stoji „ne znam”, pa biramo siguran poklon: pristupačan format i srednja jačina, klasična kategorija u čaši, 20–40 €. Nudimo tri različite stvari — kombinaciju, bocu i cigaru — jer ne znamo ni puši li osoba. Odgovori na bilo koje pitanje i prijedlog se izoštrava.",
+    en: "Every answer is “not sure”, so we pick a safe gift: an approachable format at medium strength, a classic category in the glass, €20–40. You get three different things — a combination, a bottle and a cigar — because we do not even know whether they smoke. Answer any one question and the suggestion sharpens.",
+  },
   "gift.shop": { hr: "Trgovina", en: "Shop" },
   "gift.buyDrink": { hr: "Kupi piće", en: "Buy drink" },
   "gift.checkShop": { hr: "Provjeri u trgovini", en: "Check in shop" },
@@ -735,8 +753,6 @@ const STRINGS = {
   "leaf.binder": { hr: "Vezni list", en: "Binder" },
   "leaf.filler": { hr: "Punjenje", en: "Filler" },
   "leaf.puro": { hr: "Puro", en: "Puro" },
-  // fotografija proizvoda — potpis ispod slike govori s cijeg je duckana
-  "photo.source": { hr: "foto:", en: "photo:" },
   // sortiranje
   "sort.label": { hr: "Poredaj", en: "Sort" },
   "sort.quality": { hr: "Kvaliteta", en: "Quality" },

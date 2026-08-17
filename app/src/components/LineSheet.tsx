@@ -5,8 +5,8 @@ import type { Cigar, Vitola } from "../types";
 import { brandInfo, brandDisplayName, resolveCigarId } from "../data";
 import { useI18n } from "../i18n";
 import { TasteMeters } from "./TasteMeters";
-import { ProductPhoto } from "./ProductPhoto";
-import { cigarImage } from "../lib/productImage";
+import { ProductThumb } from "./ProductThumb";
+import { productPhoto } from "../lib/productImage";
 import { BackButton } from "./BackButton";
 import { uniqueVitolas } from "../lib/cigarVitola";
 import { formatEur, vitolaPriceForMarket } from "../lib/cigarPrice";
@@ -41,6 +41,7 @@ export function LineSheet({
   const info = brandInfo(cigar.brand);
   const displayBrand = brandDisplayName(cigar.brand, market);
   const vitolas = useMemo(() => uniqueVitolas(cigar), [cigar]);
+  const photo = productPhoto("cigar", cigar.id);
 
   return (
     <SheetShell
@@ -54,34 +55,41 @@ export function LineSheet({
           <BackButton onClick={onClose}>{t("common.back")}</BackButton>
         </div>
 
-        <ProductPhoto
-          image={cigarImage(cigar.id)}
-          alt={`${displayBrand} ${cigar.line}`}
-          kind="cigar"
-        />
+        {/* Slika stoji uz naziv linije, jednako kao na kartici vitole — ista
+            stavka ne smije se u dva sheeta prikazivati na dva nacina. */}
+        <div className="flex items-start gap-3">
+          <div className="min-w-0 flex-1">
+            <div className="text-xs text-dim">
+              {onOpenBrand ? (
+                <button
+                  type="button"
+                  onClick={() => onOpenBrand(cigar.brand)}
+                  className="underline decoration-zlato/40 underline-offset-2 hover:text-zlato-2"
+                >
+                  {displayBrand}
+                </button>
+              ) : (
+                displayBrand
+              )}
+              {" › "}
+              <span className="text-zlato-2">{cigar.line}</span>
+            </div>
 
-        <div className="text-xs text-dim">
-          {onOpenBrand ? (
-            <button
-              type="button"
-              onClick={() => onOpenBrand(cigar.brand)}
-              className="underline decoration-zlato/40 underline-offset-2 hover:text-zlato-2"
-            >
-              {displayBrand}
-            </button>
-          ) : (
-            displayBrand
+            <div className="mt-1 font-display text-2xl tracking-wide text-papir">
+              {cigar.line}
+            </div>
+            <div className="mt-0.5 text-xs uppercase tracking-widest text-dim">
+              {cn(cigar.country)} · {cigar.wrapper}
+              {info?.founded ? ` · ${info.founded}` : ""}
+            </div>
+          </div>
+          {photo && (
+            <ProductThumb
+              src={photo.src}
+              treatment={photo.treatment}
+              alt={`${displayBrand} ${cigar.line}`}
+            />
           )}
-          {" › "}
-          <span className="text-zlato-2">{cigar.line}</span>
-        </div>
-
-        <div className="mt-1 font-display text-2xl tracking-wide text-papir">
-          {cigar.line}
-        </div>
-        <div className="mt-0.5 text-xs uppercase tracking-widest text-dim">
-          {cn(cigar.country)} · {cigar.wrapper}
-          {info?.founded ? ` · ${info.founded}` : ""}
         </div>
 
         <TasteMeters cigar={cigar} />

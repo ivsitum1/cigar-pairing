@@ -50,6 +50,12 @@ def scrape_allez_page(html: str) -> list[dict]:
         price = None
         if price_m:
             price = float(price_m.group(1).replace(",", "."))
+        img_m = re.search(r'<img[^>]+src="([^"]+)"', part)
+        image = img_m.group(1) if img_m else None
+        if image and image.startswith("//"):
+            image = "https:" + image
+        elif image and image.startswith("/"):
+            image = "https://allez.hr" + image
         items.append(
             {
                 "name": name,
@@ -57,6 +63,7 @@ def scrape_allez_page(html: str) -> list[dict]:
                 "shop": "allez.hr",
                 "url": href,
                 "source": "allez",
+                "image": image,
             }
         )
     return items

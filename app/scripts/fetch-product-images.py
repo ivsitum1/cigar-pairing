@@ -1,19 +1,23 @@
 #!/usr/bin/env python3
-"""Preuzmi fotografije proizvoda s duckanskih stranica koje katalog vec zna.
+"""Preuzmi fotografije proizvoda koje aplikacija vec prikazuje.
 
-Nista se ne pretrazuje i nista se ne pogadja: svaka cigara i svaka boca u
-katalogu vec nose URL proizvoda (`vitolas[].url`, `regionLinks`, `sourceUrls`,
-`priceUrl`). Ovdje se te iste stranice otvore jos jednom i s njih se uzme
-sluzbena fotografija proizvoda.
+Drugi korak od tri:
 
-ODAKLE SLIKA. Redom: `og:image` (duckani ga postavljaju na glavnu fotografiju
-proizvoda), pa JSON-LD `Product.image`, pa `<link rel="image_src">`. Ako nema
-nijednog — preskace se. Prvi `<img>` sa stranice se NE uzima: to je redovito
-logo duckana ili ikona kosarice.
+    attach-product-images.py   nadje ADRESU slike kod duckana -> productImages.json
+    fetch-product-images.py    preuzme te slike               -> output/product-images/raw/
+    normalize-product-images.py obradi podloge                -> public/img/products/
 
-REDOSLIJED IZVORA. Za cigare prvo HR duckan (Humidor/Havana), pa EU
-(CigarWorld), pa USA (Neptune/Famous) — bliski duckan ima veci izgled da drzi
-bas onu kutiju koja se kod nas i prodaje. Za boce ide `priceUrl`.
+Aplikacija te slike danas prikazuje izravno s tudjeg posluzitelja, svaku na
+podlozi koju je taj duckan koristio — bijela kod Humidora i CigarWorlda, crna
+kod Neptunea, drvo kod Alleza. Da bi se podloge dale ujednaciti, slika mora
+prvo doci k nama; to radi ova skripta.
+
+ODAKLE ADRESA. Prvenstveno iz `productImages.json` — tamo je vec razrijeseno
+koja je fotografija ciji proizvod, pa se stranice ne otvaraju ponovno. Za
+stavke kojih u tom popisu nema, otvara se stranica proizvoda koju katalog zna
+(`vitolas[].url`, `regionLinks`, `priceUrl`) i s nje se cita `og:image`, pa
+JSON-LD `Product.image`, pa `<link rel="image_src">`. Prvi `<img>` sa stranice
+se NE uzima: to je redovito logo duckana ili ikona kosarice.
 
 Izlaz:
   output/product-images/raw/<vrsta>/<id>.<ext>   originali, netaknuti
@@ -23,9 +27,9 @@ Skripta je pristojna prema duckanima: pauza izmedju zahtjeva, resume po
 zadanom (vec preuzeto se preskace) i staje na prvi znak blokade.
 
 Pokreni iz app/:
-    python3 scripts/scrape-product-images.py --kind cigars --limit 50
-    python3 scripts/scrape-product-images.py --kind drinks
-    python3 scripts/scrape-product-images.py --force        # ponovno sve
+    python3 scripts/fetch-product-images.py --kind cigars --limit 50
+    python3 scripts/fetch-product-images.py --kind drinks
+    python3 scripts/fetch-product-images.py --force        # ponovno sve
 """
 from __future__ import annotations
 
@@ -45,6 +49,8 @@ DATA = HERE.parent / "src" / "data"
 OUT = HERE / "output"
 RAW_DIR = OUT / "product-images" / "raw"
 INDEX = OUT / "product_images_raw.json"
+
+MANIFEST = DATA / "productImages.json"
 
 DRINK_FILES = (
     "rums.json",
@@ -182,17 +188,30 @@ def stranice_pica(drink: dict) -> list[str]:
     return poredano
 
 
+def poznate_slike(vrsta: str) -> dict[str, str]:
+    """id -> izravna adresa slike, iz popisa koji aplikacija vec koristi."""
+    if not MANIFEST.exists():
+        return {}
+    popis = json.loads(MANIFEST.read_text(encoding="utf-8"))
+    mapa = popis.get(vrsta) or {}
+    return {i: u for i, u in mapa.items() if isinstance(u, str) and u.startswith("http")}
+
+
 def worklist(vrsta: str) -> list[tuple[str, list[str]]]:
+    """(id, stranice) po stavci — stranice se citaju samo ako slike nema u popisu."""
     if vrsta == "cigars":
-        cigare = json.loads((DATA / "cigars.json").read_text(encoding="utf-8"))
-        return [(c["id"], stranice_cigare(c)) for c in cigare]
-    stavke: list[tuple[str, list[str]]] = []
-    for ime in DRINK_FILES:
-        put = DATA / ime
-        if not put.exists():
-            continue
-        for d in json.loads(put.read_text(encoding="utf-8")):
-            stavke.append((d["id"], stranice_pica(d)))
+        stavke = [
+            (c["id"], stranice_cigare(c))
+            for c in json.loads((DATA / "cigars.json").read_text(encoding="utf-8"))
+        ]
+    else:
+        stavke = []
+        for ime in DRINK_FILES:
+            put = DATA / ime
+            if not put.exists():
+                continue
+            for d in json.loads(put.read_text(encoding="utf-8")):
+                stavke.append((d["id"], stranice_pica(d)))
     return stavke
 
 
@@ -224,18 +243,57 @@ def main() -> int:
     indeks.setdefault(args.kind, {})
     vec = indeks[args.kind]
 
+    izravne = poznate_slike(args.kind)
     stavke = worklist(args.kind)
-    posao = [(i, u) for i, u in stavke if u and (args.force or i not in vec)]
+    posao = [
+        (i, u) for i, u in stavke if (u or i in izravne) and (args.force or i not in vec)
+    ]
     if args.limit:
         posao = posao[: args.limit]
 
-    print(f"{args.kind}: {len(stavke)} u katalogu, {len(posao)} za preuzeti")
+    print(
+        f"{args.kind}: {len(stavke)} u katalogu, {len(izravne)} s poznatom adresom, "
+        f"{len(posao)} za preuzeti"
+    )
     odredisce = RAW_DIR / args.kind
     odredisce.mkdir(parents=True, exist_ok=True)
+
+    def spremi(pid: str, url_slike: str, izvor_stranice: str) -> bool:
+        """Preuzmi jednu sliku i upisi je u indeks. False = nije upotrebljiva."""
+        slika = dohvati(url_slike)
+        time.sleep(args.pause)
+        if not slika or len(slika[0]) < NAJMANJE_BAJTOVA:
+            return False
+        nastavak = VRSTE_SLIKA.get(slika[1], Path(urllib.parse.urlparse(url_slike).path).suffix)
+        if nastavak.lower() not in (".jpg", ".jpeg", ".png", ".webp"):
+            return False
+        datoteka = odredisce / f"{pid}{nastavak}"
+        datoteka.write_bytes(slika[0])
+        vec[pid] = {
+            "page": izvor_stranice,
+            "image": url_slike,
+            "file": f"{args.kind}/{datoteka.name}",
+            "bytes": len(slika[0]),
+            "fetchedAt": date.today().isoformat(),
+        }
+        print(f"    ✓ {datoteka.name} ({len(slika[0]) // 1024} kB)")
+        return True
 
     uspjeh = 0
     for n, (pid, stranice) in enumerate(posao, 1):
         print(f"[{n}/{len(posao)}] {pid}")
+
+        # 1) adresa je vec poznata — stranica se ne otvara
+        izravna = izravne.get(pid)
+        if izravna and spremi(pid, izravna, izravna):
+            uspjeh += 1
+            if n % 25 == 0:
+                INDEX.write_text(
+                    json.dumps(indeks, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+                )
+            continue
+
+        # 2) inace: otvori stranicu proizvoda i procitaj og:image
         for stranica in stranice[:3]:
             html_bytes = dohvati(stranica)
             time.sleep(args.pause)
@@ -245,25 +303,9 @@ def main() -> int:
             url_slike = slika_sa_stranice(page, stranica)
             if not url_slike:
                 continue
-            slika = dohvati(url_slike)
-            time.sleep(args.pause)
-            if not slika or len(slika[0]) < NAJMANJE_BAJTOVA:
-                continue
-            nastavak = VRSTE_SLIKA.get(slika[1], Path(urllib.parse.urlparse(url_slike).path).suffix)
-            if nastavak.lower() not in (".jpg", ".jpeg", ".png", ".webp"):
-                continue
-            datoteka = odredisce / f"{pid}{nastavak}"
-            datoteka.write_bytes(slika[0])
-            vec[pid] = {
-                "page": stranica,
-                "image": url_slike,
-                "file": f"{args.kind}/{datoteka.name}",
-                "bytes": len(slika[0]),
-                "fetchedAt": date.today().isoformat(),
-            }
-            uspjeh += 1
-            print(f"    ✓ {datoteka.name} ({len(slika[0]) // 1024} kB)")
-            break
+            if spremi(pid, url_slike, stranica):
+                uspjeh += 1
+                break
         else:
             print("    — nema upotrebljive slike")
 

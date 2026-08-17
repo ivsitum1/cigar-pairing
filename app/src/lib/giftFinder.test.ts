@@ -1,12 +1,17 @@
 import { describe, expect, it } from "vitest";
 import { ALL_DRINKS, CIGARS } from "../data";
+import { scorePairing } from "../engine/pairing";
 import {
   allGiftAnswerCombos,
   cigarGiftEligible,
   drinkGiftEligible,
   findGifts,
   giftRegion,
+  isBlankGiftAnswers,
   MIN_GIFT_QUALITY,
+  MIN_PAIRING_SCORE,
+  neighbourCategories,
+  type GiftAnswers,
   type GiftBudget,
 } from "./giftFinder";
 
@@ -158,11 +163,22 @@ describe("giftFinder", () => {
     if (picks.length === 2) expect(picks[0].id).not.toBe(picks[1].id);
   });
 
+  // Jedan prolaz kroz svih 1600 kombinacija odgovora — sve što mora vrijediti
+  // za svaki mogući upitnik provjerava se ovdje, da se katalog ne pretražuje
+  // dvaput (prolaz traje oko minute). Prolaz je async i svakih stotinjak
+  // kombinacija pušta event loop: inače vitest worker ne stigne javiti napredak
+  // i cijeli run padne na "Timeout calling onTaskUpdate".
   it(
-    "svaka kombinacija odgovora daje barem jedan prijedlog u HR",
-    () => {
+    "svaka kombinacija odgovora daje prijedlog u budžetu i iznad praga slaganja",
+    async () => {
       const empty: string[] = [];
+      const weak: string[] = [];
+      let since = 0;
       for (const answers of allGiftAnswerCombos()) {
+        if (++since >= 100) {
+          since = 0;
+          await new Promise((r) => setTimeout(r, 0));
+        }
         const picks = findGifts(answers, CATALOG, "HR");
         if (picks.length === 0) empty.push(JSON.stringify(answers));
         for (const p of picks) {
@@ -171,13 +187,185 @@ describe("giftFinder", () => {
           if (p.price != null && !p.fellBackBudget) {
             expect(p.price).toBeLessThanOrEqual(max + 0.01);
           }
+          if (p.kind !== "pairing") continue;
+          expect(p.cigar).toBeTruthy();
+          expect(p.drink).toBeTruthy();
+          // matchScore je isti broj koji korisnik vidi na kartici
+          const real = scorePairing(p.cigar!, p.drink!).score;
+          expect(p.matchScore).toBe(real);
+          if (real < MIN_PAIRING_SCORE) weak.push(`${real}% ${JSON.stringify(answers)}`);
         }
       }
-      expect(empty.length).toBeLessThan(allGiftAnswerCombos().length * 0.05);
-      if (empty.length > 0) {
-        expect(empty.length).toBeLessThanOrEqual(5);
-      }
+      expect(empty).toEqual([]);
+      expect(weak).toEqual([]);
     },
     300_000,
   );
+
+  it("radije cigara i boca zasebno nego slaba kombinacija", () => {
+    // Do 20 € u HR poolu ne postoji nijedan par whisky + cigara iznad praga.
+    const picks = findGifts(
+      {
+        recipient: "regular",
+        budget: "under20",
+        drink: "whisky",
+        intensity: "medium",
+        shape: "pairing",
+      },
+      CATALOG,
+      "HR",
+    );
+    expect(picks.length).toBeGreaterThan(0);
+    expect(picks.every((p) => p.kind !== "pairing")).toBe(true);
+    expect(picks.every((p) => p.droppedPairing)).toBe(true);
+  });
+
+  // ——— 0 pogodaka → susjedna kategorija ———
+
+  it("susjedstvo kategorija je definirano i ne vrti se u prazno", () => {
+    for (const cat of ["whisky", "rum", "brandy", "wine"] as const) {
+      const near = neighbourCategories(cat);
+      expect(near.length).toBeGreaterThan(0);
+      expect(near).not.toContain(cat);
+      expect(new Set(near).size).toBe(near.length);
+    }
+    expect(neighbourCategories("whisky")[0]).toBe("brandy");
+  });
+
+  it("kad u traženoj kategoriji nema pogotka, ide NAJBLIŽA koja ima — s oznakom", () => {
+    // Prazne ćelije u HR poklon-poolu i prvi susjed koji u njima ima bocu.
+    const cases = [
+      { asked: "wine", intensity: "medium", budget: "40to60", expect: "brandy" },
+      { asked: "tequila", intensity: "medium", budget: "20to40", expect: "rum" },
+      // whisky do 20 €: brandy i rum su također prazni, pa se ide na treći susjed
+      { asked: "whisky", intensity: "medium", budget: "under20", expect: "wine" },
+    ] as const;
+
+    for (const c of cases) {
+      const picks = findGifts(
+        {
+          recipient: "drinks-only",
+          budget: c.budget,
+          drink: c.asked,
+          intensity: c.intensity,
+          shape: "bottle",
+        },
+        CATALOG,
+        "HR",
+      );
+      expect(picks.length).toBeGreaterThan(0);
+      for (const p of picks) {
+        expect(p.drink).toBeTruthy();
+        expect(p.drink!.category).toBe(c.expect);
+        expect(p.swappedFromCategory).toBe(c.asked);
+        expect(neighbourCategories(c.asked)).toContain(p.drink!.category);
+        // budžet i dalje vrijedi — mijenja se kategorija, ne cijena
+        if (!p.fellBackBudget) expect(p.price!).toBeLessThanOrEqual(BAND_MAX[c.budget] + 0.01);
+      }
+    }
+  });
+
+  it("kategorija se ne mijenja kad u traženoj ima pogodaka", () => {
+    const picks = findGifts(
+      {
+        recipient: "regular",
+        budget: "40to60",
+        drink: "rum",
+        intensity: "medium",
+        shape: "pairing",
+      },
+      CATALOG,
+      "HR",
+    );
+    const withDrink = picks.filter((p) => p.drink);
+    expect(withDrink.length).toBeGreaterThan(0);
+    for (const p of withDrink) {
+      expect(p.drink!.category).toBe("rum");
+      expect(p.swappedFromCategory).toBeUndefined();
+    }
+  });
+
+  // ——— svih pet „ne znam” ———
+
+  it("isBlankGiftAnswers prepoznaje samo potpuno prazan upitnik", () => {
+    const blank: GiftAnswers = {
+      recipient: "unknown",
+      budget: "unknown",
+      drink: "unknown",
+      intensity: "unknown",
+      shape: "unknown",
+    };
+    expect(isBlankGiftAnswers(blank)).toBe(true);
+    expect(isBlankGiftAnswers({ ...blank, budget: "20to40" })).toBe(false);
+  });
+
+  it("svih pet „ne znam” daje siguran, raznolik i objašnjen izbor", () => {
+    const blank: GiftAnswers = {
+      recipient: "unknown",
+      budget: "unknown",
+      drink: "unknown",
+      intensity: "unknown",
+      shape: "unknown",
+    };
+    const picks = findGifts(blank, CATALOG, "HR");
+
+    expect(picks.length).toBe(3);
+    // svaki prijedlog je označen kao siguran profil (UI to objašnjava)
+    expect(picks.every((p) => p.safeDefault)).toBe(true);
+    // tri različita scenarija, ne tri varijante istoga
+    expect(new Set(picks.map((p) => p.kind)).size).toBe(3);
+    // boca ide ispred cigare — ne znamo ni puši li osoba
+    expect(picks.map((p) => p.kind)).toEqual(["pairing", "drink", "cigar"]);
+
+    for (const p of picks) {
+      // srednji budžet, nikad preko 40 €
+      expect(p.price).not.toBeNull();
+      expect(p.price!).toBeLessThanOrEqual(40.01);
+      // pristupačna cigara: nikad iznad snage 3
+      if (p.cigar) expect(p.cigar.strength).toBeLessThanOrEqual(3);
+      // bez egzotike u čaši kad ne znamo što osoba pije
+      if (p.drink) expect(["whisky", "rum", "brandy", "wine"]).toContain(p.drink.category);
+      // kombinacija i dalje mora proći prag
+      if (p.kind === "pairing") expect(p.matchScore!).toBeGreaterThanOrEqual(MIN_PAIRING_SCORE);
+    }
+    // dvije različite kategorije pića u tri prijedloga
+    const cats = picks.filter((p) => p.drink).map((p) => p.drink!.category);
+    expect(new Set(cats).size).toBe(cats.length);
+  });
+
+  it("„ne znam” samo na jedno pitanje ne pokreće siguran profil", () => {
+    const picks = findGifts(
+      {
+        recipient: "regular",
+        budget: "60to100",
+        drink: "unknown",
+        intensity: "bold",
+        shape: "cigar",
+      },
+      CATALOG,
+      "HR",
+    );
+    expect(picks.length).toBeGreaterThan(0);
+    expect(picks.some((p) => p.safeDefault)).toBe(false);
+    const cigar = picks.find((p) => p.kind === "cigar");
+    expect(cigar?.cigar?.strength).toBeGreaterThanOrEqual(4);
+  });
+
+  it("proturječni odgovori (početnik + jače stvari) daju najjače što je sigurno", () => {
+    const picks = findGifts(
+      {
+        recipient: "beginner",
+        budget: "under20",
+        drink: "whisky",
+        intensity: "bold",
+        shape: "cigar",
+      },
+      CATALOG,
+      "HR",
+    );
+    expect(picks.length).toBeGreaterThan(0);
+    const cigar = picks.find((p) => p.cigar)?.cigar;
+    expect(cigar).toBeTruthy();
+    expect(cigar!.strength).toBe(3);
+  });
 });

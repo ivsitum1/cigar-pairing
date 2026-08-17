@@ -1,18 +1,23 @@
 #!/usr/bin/env python3
 """Preuzete fotografije -> ujednacene slike koje aplikacija prikazuje.
 
-Ulaz:  output/product-images/raw/<vrsta>/<id>.<ext>  (scrape-product-images.py)
+Ulaz:  output/product-images/raw/<vrsta>/<id>.<ext>  (fetch-product-images.py)
 Izlaz: public/img/products/<vrsta>/<id>.webp         (WebP s prozirnom podlogom)
-       src/data/productImages.json                  (popis za aplikaciju)
+       src/data/productImagesLocal.json             (popis obradjenih)
+
+PISE U ODVOJEN POPIS. `productImages.json` je popis adresa kod duckana i njime
+aplikacija radi i bez ijedne obradjene slike; ovdje mu se NE dira sadrzaj.
+Obradjene idu u `productImagesLocal.json`, a `lib/productImage.ts` bira:
+obradjena ako postoji, inace duckanska. Tako obrada moze stati na pola i
+aplikacija i dalje pokazuje sve slike.
 
 Sav posao oko podloge radi `product_image_lib`; ovdje je samo prolaz kroz
 datoteke, izvjestaj i popis. Idempotentno je — slika koja se nije promijenila
 daje isti izlaz, pa ponovno pokretanje ne mijenja repo.
 
-Popis nosi po stavci sirinu, visinu, postupak ("cutout" ili "framed") i domenu
-s koje je slika preuzeta. Sirina i visina su tu da kartica rezervira prostor
-prije nego se slika ucita (bez poskakivanja sadrzaja), a domena da se zna
-odakle je sto doslo.
+Popis nosi po stavci sirinu, visinu i postupak ("cutout" ili "framed").
+Sirina i visina su tu da kartica rezervira prostor prije nego se slika ucita,
+a postupak da zna crta li plohu iza slike ili ne.
 
 Pokreni iz app/:
     python3 scripts/normalize-product-images.py
@@ -35,7 +40,7 @@ APP = HERE.parent
 RAW_DIR = HERE / "output" / "product-images" / "raw"
 RAW_INDEX = HERE / "output" / "product_images_raw.json"
 IZLAZ_DIR = APP / "public" / "img" / "products"
-MANIFEST = APP / "src" / "data" / "productImages.json"
+MANIFEST = APP / "src" / "data" / "productImagesLocal.json"
 IZVJESTAJ = HERE / "output" / "product_images_report.json"
 
 VRSTE = ("cigars", "drinks")
@@ -90,11 +95,11 @@ def obradi_vrstu(vrsta: str, limit: int, sirina: int, provjera: bool) -> tuple[d
             "w": izvjestaj.sirina,
             "h": izvjestaj.visina,
             "t": izvjestaj.postupak,
-            "s": _domena((izvori_vrste.get(pid) or {}).get("page")),
         }
         redci.append(
             {
                 "id": pid,
+                "izvor": _domena((izvori_vrste.get(pid) or {}).get("image")),
                 "postupak": izvjestaj.postupak,
                 "podloga": izvjestaj.podloga,
                 "udio_ruba": izvjestaj.udio_ruba,
@@ -121,11 +126,18 @@ def main() -> int:
     vrste = args.kind or list(VRSTE)
     if not RAW_DIR.exists():
         print(f"Nema preuzetih slika u {RAW_DIR.relative_to(APP)} — prvo pokreni")
-        print("  python3 scripts/scrape-product-images.py")
+        print("  python3 scripts/fetch-product-images.py")
         # Prazan ulaz nije greska: repo se klonira bez slika i CI mora proci.
         return 0
 
-    manifest = {"generatedAt": date.today().isoformat()}
+    manifest = {
+        "note": (
+            "Obradjene slike u public/img/products/ — puni "
+            "scripts/normalize-product-images.py. Prazno = jos nijedna nije obradjena, "
+            "pa app koristi dućanske URL-ove iz productImages.json."
+        ),
+        "generatedAt": date.today().isoformat(),
+    }
     svi_redci: list[dict] = []
     for vrsta in vrste:
         if not (RAW_DIR / vrsta).exists():
