@@ -465,7 +465,7 @@ def find_or_create_cigar(
         "smokeTimeMin": 45,
         "priceEUR": None,
         "priceApprox": False,
-        "availabilityHR": ["Havana Shop", "The Humidor"],
+        "availabilityHR": ["Havana Cigar Shop", "The Humidor"],
         "notes": {"hr": f"Sinkronizirano iz HR trgovina — {line}.", "en": ""},
         "markets": ["HR", "EU", "USA", "WW"],
         "vitolas": [],
@@ -550,8 +550,8 @@ def finalize_cigar(cigar: dict) -> None:
     if ref.get("format") and ref["format"] != "—":
         cigar["format"] = ref["format"]
     cigar["smokeTimeMin"] = ref.get("smokeTimeMin") or cigar.get("smokeTimeMin", 45)
-    if "Havana Shop" not in cigar.get("availabilityHR", []):
-        cigar.setdefault("availabilityHR", []).append("Havana Shop")
+    if "Havana Cigar Shop" not in cigar.get("availabilityHR", []):
+        cigar.setdefault("availabilityHR", []).append("Havana Cigar Shop")
     if "The Humidor" not in cigar.get("availabilityHR", []):
         cigar.setdefault("availabilityHR", []).append("The Humidor")
     if "HR" not in (cigar.get("markets") or []):

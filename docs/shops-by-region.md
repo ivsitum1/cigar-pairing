@@ -19,11 +19,18 @@ Dostupnost cigare po regiji dolazi iz `markets` polja svakog zapisa u
 |----------|------|-----------|----------|
 | The Humidor | <https://humidor.hr/hr/> | izravan link na proizvod (gdje postoji) | Zagreb — cijene po vitoli |
 | Havana Cigar Shop | <https://havana-cigar-shop.com/> | izravan link na proizvod (gdje postoji) | provjera dobi na ulazu |
+| Tobacco Petica (Branimir) | <https://www.branimir.hr/minglanje/trgovine/tobacco-petica> | bez linka po proizvodu (`walkIn`) | Zagreb, Branimir centar — kupnja na mjestu |
+| Aficionado | <https://www.aficionado.hr/> | bez linka po proizvodu (`walkIn`) | Zagreb — kupnja na mjestu |
 
-HR trgovine imaju scrapane linkove na proizvod u katalogu, pa app vodi izravno na
-stranicu te cigare kad taj link postoji (prednost ima link zadane vitole radi
-sklada s prikazanom cijenom). Ako izravnog linka nema, koristi se pretraga po
-nazivu. **HR cijena je jedina scrapana** i prikazuje se i u filteru "Sve".
+Prve dvije trgovine imaju scrapane linkove na proizvod u katalogu, pa app vodi
+izravno na stranicu te cigare kad taj link postoji (prednost ima link zadane
+vitole radi sklada s prikazanom cijenom). Ako izravnog linka nema, koristi se
+pretraga po nazivu. **HR cijena je jedina scrapana** i prikazuje se i u filteru
+"Sve".
+
+Trgovina bez web kataloga nosi `walkIn: true`: pojavljuje se u popisu trgovina i
+može stajati u `availabilityHR`, ali **ne** dobiva link po proizvodu — pretraga
+po nazivu na stranici koja nema katalog vodi u prazno.
 
 ## 🇪🇺 Europa
 

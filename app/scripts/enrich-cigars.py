@@ -327,7 +327,7 @@ def main():
 
         if not c.get("priceUrl"):
             slug = BRAND_SLUGS.get(c["brand"])
-            c["priceUrl"] = HAVANA.format(slug) if slug and "Havana Shop" in c["availabilityHR"] else None
+            c["priceUrl"] = HAVANA.format(slug) if slug and "Havana Cigar Shop" in c["availabilityHR"] else None
 
     (DATA / "cigars.json").write_text(
         json.dumps(cigars, ensure_ascii=False, indent=1), encoding="utf-8")

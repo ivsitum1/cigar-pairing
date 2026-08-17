@@ -29,7 +29,10 @@ indeksima rangiranim po kvaliteti za sipping uz cigaru.
   - Hash-routing s deep-linkovima: `#/pairing/cigar/<id>` i `#/pairing/drink/<id>`
     otvaraju pairing s odabranom stavkom (dijeljivi linkovi, back tipka radi);
     `#/shopping/gift` je poklon u pet pitanja (cigara, boca ili kombinacija,
-    s cijenom u trgovini u blizini; razredi do 20 / 20–40 / 40–60 / 60–100 €)
+    s cijenom u trgovini u blizini; razredi do 20 / 20–40 / 40–60 / 60–100 €).
+    Kombinacija cigare i pića izlazi samo iznad 80 % slaganja; kad u traženoj
+    kategoriji nema pogotka, prijedlog prelazi na najbližu susjednu (whisky →
+    brandy → rum → vino) prije nego što dira budžet ili oblik poklona
   - `src/data/*.json` — indeksi (320 rum, 274 whiskyja, 90 brandy/grappa, 65 gin,
     124 vina, 26 tequila, 50 kava, 13 digestiva, 3315 cigara);
     build ih dijeli u odvojene chunkove (`data-cigars`, `data-whiskies`, `data-rums`…) radi
@@ -170,7 +173,9 @@ Kad zatreba sync mobitel ↔ računalo:
 - Online prodaja duhana u HR nije dozvoljena — linkovi na cigare su referentni
   (humidor.hr prikazuje cijene po vitoli; havana-cigar-shop.com ima age-gate).
 - **Trgovine po regiji** (`app/src/data/shops.ts` — jedini izvor istine):
-  HR = The Humidor + Havana Cigar Shop; EU = CigarWorld (cigarworld.de/en);
+  HR = The Humidor + Havana Cigar Shop, uz Tobacco Peticu i Aficionado kao
+  dućane bez web kataloga (`walkIn` — bez linka po proizvodu);
+  EU = CigarWorld (cigarworld.de/en);
   USA = Holt's + Cigars Daily. Filter u Katalogu/Pairingu (**Sve · HR · EU · USA**;
   zadano **Sve** = bez filtera → sve cigare, sortirano) mijenja i popis cigara i
   prikazane trgovine. Detalj cigare grupira linkove po regiji; HR daje izravan link

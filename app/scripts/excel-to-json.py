@@ -330,7 +330,7 @@ def extract_shopping(wb):
         {"name": "Lidl", "location": "HR", "note": {"hr": "Planteray, Havana Club, Dos Maderas, La Hechicera — akcije", "en": "Planteray, Havana Club, Dos Maderas, La Hechicera — good deals"}},
         {"name": "Vivat Finavina", "location": "Zagreb", "note": {"hr": "Vise dessert/spiced; cisti: El Dorado 12, Pampero", "en": "Leans dessert/spiced; clean picks: El Dorado 12, Pampero"}},
         {"name": "Vrutak", "location": "Zagreb", "note": {"hr": "Premium/limited izdanja", "en": "Premium/limited releases"}},
-        {"name": "Havana Shop (Camelot)", "location": "Zagreb, Split, Rovinj (+ Ljubljana)", "note": {"hr": "Ekskluzivni uvoznik Habanos i Davidoff cigara za HR/SLO — havana-cigar-shop.com", "en": "Exclusive Habanos & Davidoff cigar importer for Croatia/Slovenia — havana-cigar-shop.com"}},
+        {"name": "Havana Cigar Shop (Camelot)", "location": "Zagreb, Split, Rovinj (+ Ljubljana)", "note": {"hr": "Ekskluzivni uvoznik Habanos i Davidoff cigara za HR/SLO — havana-cigar-shop.com", "en": "Exclusive Habanos & Davidoff cigar importer for Croatia/Slovenia — havana-cigar-shop.com"}},
         {"name": "The Humidor / Premium Cigars", "location": "Petrinjska 5 + Centar Kaptol, Zagreb", "note": {"hr": "Ista firma, 2 lokacije — New World boutique + kubanke, humidor.hr (cijene po vitoli)", "en": "Same company, 2 locations — New World boutique + Cubans, humidor.hr (per-vitola prices)"}},
         {"name": "Trafike / iCigara", "location": "HR", "note": {"hr": "VegaFina i cigarilosi u boljim trafikama; online prodaja duhana u HR nije dozvoljena", "en": "VegaFina and cigarillos in better tobacco kiosks; online tobacco sales are not allowed in Croatia"}},
     ]
