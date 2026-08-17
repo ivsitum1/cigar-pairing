@@ -41,12 +41,12 @@ export const BUCKETS: Partial<Record<DrinkCategory, StyleBucket[]>> = {
     { id: "dessert", label: { hr: "Desertno", en: "Dessert" }, styles: ["dessert-wine"] },
   ],
   coffee: [
-    { id: "espresso", label: { hr: "Espresso", en: "Espresso" }, styles: ["espresso", "ristretto", "lungo", "americano"] },
-    { id: "filter", label: { hr: "Filter", en: "Filter" }, styles: ["filter", "french-press"] },
+    { id: "espresso", label: { hr: "Espresso", en: "Espresso" }, styles: ["espresso", "espresso-dark", "espresso-medium", "ristretto", "lungo", "americano"] },
+    { id: "filter", label: { hr: "Filter", en: "Filter" }, styles: ["filter", "filter-light", "filter-medium", "filter-dark", "french-press"] },
     // instant stoji uz kuhanje bez aparata; kvalitetom nikad ne pobjeđuje
     // tursku ni moku, pa preporuku ne kvari — ali nijedan stil ne ispada
     { id: "classic", label: { hr: "Klasika / turska", en: "Classic / Turkish" }, styles: ["turkish", "moka", "instant"] },
-    { id: "milk", label: { hr: "S mlijekom / hladno", en: "With milk / cold" }, styles: ["milk", "cold-brew"] },
+    { id: "milk", label: { hr: "S mlijekom / hladno", en: "With milk / cold" }, styles: ["milk", "cold-brew", "cold"] },
     { id: "spiked", label: { hr: "S alkoholom", en: "Spiked" }, styles: ["spiked"] },
   ],
   tequila: [
