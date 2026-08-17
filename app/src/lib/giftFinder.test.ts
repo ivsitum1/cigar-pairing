@@ -6,6 +6,7 @@ import {
   drinkGiftEligible,
   findGifts,
   giftRegion,
+  MIN_GIFT_QUALITY,
   type GiftBudget,
 } from "./giftFinder";
 
@@ -36,6 +37,35 @@ describe("giftFinder", () => {
   it("piće bez shopHR nije HR poklon", () => {
     const ok = ALL_DRINKS.filter((d) => drinkGiftEligible(d, "HR"));
     expect(ok.length).toBeGreaterThan(50);
+    expect(ok.every((d) => (d.qualityScore ?? 0) >= MIN_GIFT_QUALITY)).toBe(true);
+  });
+
+  it("Don Tomas Bundle i pića ispod 7 nisu u gift poolu", () => {
+    const bundle = CIGARS.find((c) => c.id === "cig-don-tomas-bundle");
+    expect(bundle).toBeTruthy();
+    expect(cigarGiftEligible(bundle!, "HR")).toBe(false);
+    const weak = ALL_DRINKS.find(
+      (d) => d.pairable && d.qualityScore != null && d.qualityScore < MIN_GIFT_QUALITY,
+    );
+    if (weak) expect(drinkGiftEligible(weak, "HR")).toBe(false);
+  });
+
+  it("treće pitanje (navečer) mijenja prijedlog", () => {
+    const base = {
+      recipient: "regular" as const,
+      budget: "20to40" as const,
+      drink: "whisky" as const,
+      shape: "bottle" as const,
+    };
+    const mild = findGifts({ ...base, intensity: "mild" }, CATALOG, "HR");
+    const bold = findGifts({ ...base, intensity: "bold" }, CATALOG, "HR");
+    const mildDrink = mild.find((p) => p.drink)?.drink;
+    const boldDrink = bold.find((p) => p.drink)?.drink;
+    expect(mildDrink).toBeTruthy();
+    expect(boldDrink).toBeTruthy();
+    expect(mildDrink!.id).not.toBe(boldDrink!.id);
+    expect(mildDrink!.body).toBeLessThanOrEqual(2);
+    expect(boldDrink!.body).toBeGreaterThanOrEqual(4);
   });
 
   it("budžet se nikad ne prekorači — boca, cigara i kombinacija", () => {
