@@ -49,14 +49,20 @@
             "shop": "CigarWorld",
             "url": "https://www.cigarworld.de/en/zigarren/nicaragua/1502-special-edition-anniversario-10-toro-90014552_48244",
             "priceEUR": 16.0,
-            "fetchedAt": "2026-07-01"
+            "fetchedAt": "2026-07-01",
+            "inStock": false,
+            "stockFetchedAt": "2026-08-17"
           },
           "USA": {
             "shop": "Neptune Cigar",
-            "url": "https://www.neptunecigar.com/cigars/1502-aniversario-10-toro"
+            "url": "https://www.neptunecigar.com/cigars/1502-aniversario-10-toro",
+            "inStock": true,
+            "stockFetchedAt": "2026-08-17"
           }
         },
-        "fetchedAt": "2026-07-01"
+        "fetchedAt": "2026-07-01",
+        "inStock": true,
+        "stockFetchedAt": "2026-08-17"
       }
     ],
     "priceUrl": "https://humidor.hr/hr/proizvod/1502-aniversario-10-toro-6-x-50/",
@@ -66,17 +72,23 @@
         "shop": "The Humidor",
         "url": "https://humidor.hr/hr/proizvod/1502-aniversario-10-toro-6-x-50/",
         "priceEUR": 21.0,
-        "fetchedAt": "2026-07-01"
+        "fetchedAt": "2026-07-01",
+        "inStock": true,
+        "stockFetchedAt": "2026-08-17"
       },
       "EU": {
         "shop": "CigarWorld",
         "url": "https://www.cigarworld.de/en/zigarren/nicaragua/1502-special-edition-anniversario-10-toro-90014552_48244",
         "priceEUR": 16.0,
-        "fetchedAt": "2026-07-01"
+        "fetchedAt": "2026-07-01",
+        "inStock": false,
+        "stockFetchedAt": "2026-08-17"
       },
       "USA": {
         "shop": "Neptune Cigar",
-        "url": "https://www.neptunecigar.com/cigars/1502-aniversario-10-toro"
+        "url": "https://www.neptunecigar.com/cigars/1502-aniversario-10-toro",
+        "inStock": true,
+        "stockFetchedAt": "2026-08-17"
       }
     },
     "flavoured": false,
@@ -86,7 +98,9 @@
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Meksiko",
     "fillerOrigin": "Nikaragva",
-    "isPuro": false
+    "isPuro": false,
+    "inStock": true,
+    "stockFetchedAt": "2026-08-17"
   },
   {
     "id": "cig-1502-black-gold",
@@ -134,15 +148,21 @@
             "shop": "CigarWorld",
             "url": "https://www.cigarworld.de/en/zigarren/nicaragua/1502-black-gold-lancero-box-pressed-90014428_44606",
             "priceEUR": 10.5,
-            "fetchedAt": "2026-07-01"
+            "fetchedAt": "2026-07-01",
+            "inStock": false,
+            "stockFetchedAt": "2026-08-17"
           },
           "USA": {
             "shop": "Neptune Cigar",
-            "url": "https://www.neptunecigar.com/cigars/1502-black-gold-lancero"
+            "url": "https://www.neptunecigar.com/cigars/1502-black-gold-lancero",
+            "inStock": true,
+            "stockFetchedAt": "2026-08-17"
           }
         },
         "ring": 38,
-        "lengthMM": 189
+        "lengthMM": 189,
+        "inStock": false,
+        "stockFetchedAt": "2026-08-17"
       },
       {
         "name": "Robusto",
@@ -155,11 +175,15 @@
             "shop": "CigarWorld",
             "url": "https://www.cigarworld.de/en/zigarren/nicaragua/1502-black-gold-robusto-90014428_38864",
             "priceEUR": 10.5,
-            "fetchedAt": "2026-07-01"
+            "fetchedAt": "2026-07-01",
+            "inStock": false,
+            "stockFetchedAt": "2026-08-17"
           }
         },
         "ring": 50,
-        "lengthMM": 127
+        "lengthMM": 127,
+        "inStock": true,
+        "stockFetchedAt": "2026-08-17"
       },
       {
         "name": "Toro",
@@ -172,16 +196,22 @@
             "shop": "CigarWorld",
             "url": "https://www.cigarworld.de/en/zigarren/nicaragua/1502-black-gold-toro-90014428_33121",
             "priceEUR": 11.0,
-            "fetchedAt": "2026-07-01"
+            "fetchedAt": "2026-07-01",
+            "inStock": false,
+            "stockFetchedAt": "2026-08-17"
           },
           "USA": {
             "shop": "Neptune Cigar",
-            "url": "https://www.neptunecigar.com/cigars/1502-black-gold-toro"
+            "url": "https://www.neptunecigar.com/cigars/1502-black-gold-toro",
+            "inStock": true,
+            "stockFetchedAt": "2026-08-17"
           }
         },
         "ring": 50,
         "lengthMM": 152,
-        "fetchedAt": "2026-07-01"
+        "fetchedAt": "2026-07-01",
+        "inStock": true,
+        "stockFetchedAt": "2026-08-17"
       },
       {
         "name": "Perfecto",
@@ -194,11 +224,15 @@
             "shop": "CigarWorld",
             "url": "https://www.cigarworld.de/en/zigarren/nicaragua/1502-black-gold-perfecto-90014428_60326",
             "priceEUR": 11.0,
-            "fetchedAt": "2026-07-01"
+            "fetchedAt": "2026-07-01",
+            "inStock": false,
+            "stockFetchedAt": "2026-08-17"
           }
         },
         "ring": 52,
-        "lengthMM": 144
+        "lengthMM": 144,
+        "inStock": true,
+        "stockFetchedAt": "2026-08-17"
       },
       {
         "name": "Torpedo",
@@ -211,11 +245,15 @@
             "shop": "CigarWorld",
             "url": "https://www.cigarworld.de/en/zigarren/nicaragua/1502-black-gold-torpedo-90014428_36469",
             "priceEUR": 11.5,
-            "fetchedAt": "2026-07-01"
+            "fetchedAt": "2026-07-01",
+            "inStock": false,
+            "stockFetchedAt": "2026-08-17"
           }
         },
         "ring": 52,
-        "lengthMM": 154
+        "lengthMM": 154,
+        "inStock": true,
+        "stockFetchedAt": "2026-08-17"
       }
     ],
     "regionLinks": {
@@ -223,17 +261,23 @@
         "shop": "The Humidor",
         "url": "https://humidor.hr/hr/proizvod/1502-black-gold-toro-6-x-50/",
         "priceEUR": 15.0,
-        "fetchedAt": "2026-07-01"
+        "fetchedAt": "2026-07-01",
+        "inStock": true,
+        "stockFetchedAt": "2026-08-17"
       },
       "EU": {
         "shop": "CigarWorld",
         "url": "https://www.cigarworld.de/en/zigarren/nicaragua/1502-black-gold-lancero-box-pressed-90014428_44606",
         "priceEUR": 10.5,
-        "fetchedAt": "2026-07-01"
+        "fetchedAt": "2026-07-01",
+        "inStock": false,
+        "stockFetchedAt": "2026-08-17"
       },
       "USA": {
         "shop": "Neptune Cigar",
-        "url": "https://www.neptunecigar.com/cigars/1502-black-gold-toro"
+        "url": "https://www.neptunecigar.com/cigars/1502-black-gold-toro",
+        "inStock": true,
+        "stockFetchedAt": "2026-08-17"
       }
     },
     "formatEstimated": true,
@@ -246,7 +290,9 @@
       "https://www.neptunecigar.com/cigars/1502-black-gold-conquistador",
       "https://www.neptunecigar.com/cigars/1502-black-gold-corona"
     ],
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "inStock": true,
+    "stockFetchedAt": "2026-08-17"
   },
   {
     "id": "cig-1502-emerald",
@@ -296,16 +342,22 @@
             "shop": "CigarWorld",
             "url": "https://www.cigarworld.de/en/zigarren/nicaragua/1502-emerald-lancero-90014426_33114",
             "priceEUR": 9.9,
-            "fetchedAt": "2026-07-01"
+            "fetchedAt": "2026-07-01",
+            "inStock": false,
+            "stockFetchedAt": "2026-08-17"
           },
           "USA": {
             "shop": "Neptune Cigar",
-            "url": "https://www.neptunecigar.com/cigars/1502-emerald-torpedo"
+            "url": "https://www.neptunecigar.com/cigars/1502-emerald-torpedo",
+            "inStock": true,
+            "stockFetchedAt": "2026-08-17"
           }
         },
         "ring": 40,
         "lengthMM": 178,
-        "fetchedAt": "2026-07-01"
+        "fetchedAt": "2026-07-01",
+        "inStock": false,
+        "stockFetchedAt": "2026-08-17"
       },
       {
         "name": "Robusto",
@@ -318,16 +370,22 @@
             "shop": "CigarWorld",
             "url": "https://www.cigarworld.de/en/zigarren/nicaragua/1502-emerald-robusto-90014426_38865",
             "priceEUR": 8.1,
-            "fetchedAt": "2026-07-01"
+            "fetchedAt": "2026-07-01",
+            "inStock": false,
+            "stockFetchedAt": "2026-08-17"
           },
           "USA": {
             "shop": "Neptune Cigar",
-            "url": "https://www.neptunecigar.com/cigars/1502-emerald-robusto"
+            "url": "https://www.neptunecigar.com/cigars/1502-emerald-robusto",
+            "inStock": true,
+            "stockFetchedAt": "2026-08-17"
           }
         },
         "ring": 50,
         "lengthMM": 127,
-        "fetchedAt": "2026-07-01"
+        "fetchedAt": "2026-07-01",
+        "inStock": true,
+        "stockFetchedAt": "2026-08-17"
       },
       {
         "name": "Toro",
@@ -340,11 +398,15 @@
             "shop": "CigarWorld",
             "url": "https://www.cigarworld.de/en/zigarren/nicaragua/1502-emerald-toro-90014426_33115",
             "priceEUR": 11.0,
-            "fetchedAt": "2026-07-01"
+            "fetchedAt": "2026-07-01",
+            "inStock": false,
+            "stockFetchedAt": "2026-08-17"
           }
         },
         "ring": 50,
-        "lengthMM": 152
+        "lengthMM": 152,
+        "inStock": true,
+        "stockFetchedAt": "2026-08-17"
       },
       {
         "name": "Perfecto",
@@ -357,11 +419,15 @@
             "shop": "CigarWorld",
             "url": "https://www.cigarworld.de/en/zigarren/nicaragua/1502-emerald-perfecto-90014426_59767",
             "priceEUR": 11.0,
-            "fetchedAt": "2026-07-01"
+            "fetchedAt": "2026-07-01",
+            "inStock": false,
+            "stockFetchedAt": "2026-08-17"
           }
         },
         "ring": 52,
-        "lengthMM": 144
+        "lengthMM": 144,
+        "inStock": true,
+        "stockFetchedAt": "2026-08-17"
       }
     ],
     "regionLinks": {
@@ -369,17 +435,23 @@
         "shop": "The Humidor",
         "url": "https://humidor.hr/hr/proizvod/1502-emerald-lancero-7-x-40/",
         "priceEUR": 14.5,
-        "fetchedAt": "2026-07-01"
+        "fetchedAt": "2026-07-01",
+        "inStock": false,
+        "stockFetchedAt": "2026-08-17"
       },
       "EU": {
         "shop": "CigarWorld",
         "url": "https://www.cigarworld.de/en/zigarren/nicaragua/1502-emerald-robusto-90014426_38865",
         "priceEUR": 8.1,
-        "fetchedAt": "2026-07-01"
+        "fetchedAt": "2026-07-01",
+        "inStock": false,
+        "stockFetchedAt": "2026-08-17"
       },
       "USA": {
         "shop": "Neptune Cigar",
-        "url": "https://www.neptunecigar.com/cigars/1502-emerald-toro"
+        "url": "https://www.neptunecigar.com/cigars/1502-emerald-toro",
+        "inStock": true,
+        "stockFetchedAt": "2026-08-17"
       }
     },
     "formatEstimated": true,
@@ -393,7 +465,9 @@
       "https://www.neptunecigar.com/cigars/1502-emerald-corona"
     ],
     "fillerOrigin": "Meksiko",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "inStock": false,
+    "stockFetchedAt": "2026-08-17"
   },
   {
     "id": "cig-1502-nicaragua",
@@ -441,10 +515,14 @@
         "regionLinks": {
           "USA": {
             "shop": "Neptune Cigar",
-            "url": "https://www.neptunecigar.com/cigars/1502-nicaragua-churchill"
+            "url": "https://www.neptunecigar.com/cigars/1502-nicaragua-churchill",
+            "inStock": true,
+            "stockFetchedAt": "2026-08-17"
           }
         },
-        "fetchedAt": "2026-07-01"
+        "fetchedAt": "2026-07-01",
+        "inStock": true,
+        "stockFetchedAt": "2026-08-17"
       },
       {
         "name": "Robusto",
@@ -458,10 +536,14 @@
         "regionLinks": {
           "USA": {
             "shop": "Neptune Cigar",
-            "url": "https://www.neptunecigar.com/cigars/1502-nicaragua-robusto"
+            "url": "https://www.neptunecigar.com/cigars/1502-nicaragua-robusto",
+            "inStock": true,
+            "stockFetchedAt": "2026-08-17"
           }
         },
-        "fetchedAt": "2026-07-01"
+        "fetchedAt": "2026-07-01",
+        "inStock": false,
+        "stockFetchedAt": "2026-08-17"
       }
     ],
     "priceUrl": "https://humidor.hr/hr/proizvod/1502-nicaragua-churchill-7-x48/",
@@ -470,23 +552,31 @@
         "shop": "The Humidor",
         "url": "https://humidor.hr/hr/proizvod/1502-nicaragua-churchill-7-x48/",
         "priceEUR": 16.5,
-        "fetchedAt": "2026-07-01"
+        "fetchedAt": "2026-07-01",
+        "inStock": true,
+        "stockFetchedAt": "2026-08-17"
       },
       "EU": {
         "shop": "CigarWorld",
         "url": "https://www.cigarworld.de/en/zigarren/nicaragua/1502-nicaragua-churchill-90014425_33940",
         "priceEUR": 8.5,
-        "fetchedAt": "2026-07-01"
+        "fetchedAt": "2026-07-01",
+        "inStock": false,
+        "stockFetchedAt": "2026-08-17"
       },
       "USA": {
         "shop": "Neptune Cigar",
-        "url": "https://www.neptunecigar.com/cigars/1502-nicaragua-robusto"
+        "url": "https://www.neptunecigar.com/cigars/1502-nicaragua-robusto",
+        "inStock": true,
+        "stockFetchedAt": "2026-08-17"
       }
     },
     "flavoured": false,
     "strengthFromShop": false,
     "formatEstimated": false,
-    "profileEstimated": false
+    "profileEstimated": false,
+    "inStock": true,
+    "stockFetchedAt": "2026-08-17"
   },
   {
     "id": "cig-1502-ruby",
@@ -535,15 +625,21 @@
             "shop": "CigarWorld",
             "url": "https://www.cigarworld.de/en/zigarren/nicaragua/1502-ruby-lancero-box-pressed-90014427_44607",
             "priceEUR": 9.9,
-            "fetchedAt": "2026-07-01"
+            "fetchedAt": "2026-07-01",
+            "inStock": false,
+            "stockFetchedAt": "2026-08-17"
           },
           "USA": {
             "shop": "Neptune Cigar",
-            "url": "https://www.neptunecigar.com/cigars/1502-ruby-lancero"
+            "url": "https://www.neptunecigar.com/cigars/1502-ruby-lancero",
+            "inStock": true,
+            "stockFetchedAt": "2026-08-17"
           }
         },
         "ring": 38,
-        "lengthMM": 189
+        "lengthMM": 189,
+        "inStock": false,
+        "stockFetchedAt": "2026-08-17"
       },
       {
         "name": "Toro",
@@ -556,16 +652,22 @@
             "shop": "CigarWorld",
             "url": "https://www.cigarworld.de/en/zigarren/nicaragua/1502-ruby-toro-90014427_33118",
             "priceEUR": 8.5,
-            "fetchedAt": "2026-07-01"
+            "fetchedAt": "2026-07-01",
+            "inStock": false,
+            "stockFetchedAt": "2026-08-17"
           },
           "USA": {
             "shop": "Neptune Cigar",
-            "url": "https://www.neptunecigar.com/cigars/1502-ruby-toro"
+            "url": "https://www.neptunecigar.com/cigars/1502-ruby-toro",
+            "inStock": true,
+            "stockFetchedAt": "2026-08-17"
           }
         },
         "ring": 50,
         "lengthMM": 152,
-        "fetchedAt": "2026-07-01"
+        "fetchedAt": "2026-07-01",
+        "inStock": true,
+        "stockFetchedAt": "2026-08-17"
       },
       {
         "name": "Perfecto",
@@ -578,11 +680,15 @@
             "shop": "CigarWorld",
             "url": "https://www.cigarworld.de/en/zigarren/nicaragua/1502-ruby-perfecto-90014427_56381",
             "priceEUR": 11.0,
-            "fetchedAt": "2026-07-01"
+            "fetchedAt": "2026-07-01",
+            "inStock": false,
+            "stockFetchedAt": "2026-08-17"
           }
         },
         "ring": 52,
-        "lengthMM": 144
+        "lengthMM": 144,
+        "inStock": true,
+        "stockFetchedAt": "2026-08-17"
       },
       {
         "name": "Torpedo",
@@ -595,11 +701,15 @@
             "shop": "CigarWorld",
             "url": "https://www.cigarworld.de/en/zigarren/nicaragua/1502-ruby-torpedo-90014427_33119",
             "priceEUR": 9.1,
-            "fetchedAt": "2026-07-01"
+            "fetchedAt": "2026-07-01",
+            "inStock": false,
+            "stockFetchedAt": "2026-08-17"
           }
         },
         "ring": 52,
-        "lengthMM": 154
+        "lengthMM": 154,
+        "inStock": true,
+        "stockFetchedAt": "2026-08-17"
       },
       {
         "name": "Ruby Conquistador",
@@ -609,7 +719,9 @@
         "url": "https://humidor.hr/hr/proizvod/1502-ruby-conquistador-6-x-56/",
         "ring": 56,
         "lengthMM": 152,
-        "fetchedAt": "2026-07-01"
+        "fetchedAt": "2026-07-01",
+        "inStock": false,
+        "stockFetchedAt": "2026-08-17"
       }
     ],
     "regionLinks": {
@@ -617,17 +729,23 @@
         "shop": "The Humidor",
         "url": "https://humidor.hr/hr/proizvod/1502-ruby-toro-6-x-50/",
         "priceEUR": 15.0,
-        "fetchedAt": "2026-07-01"
+        "fetchedAt": "2026-07-01",
+        "inStock": true,
+        "stockFetchedAt": "2026-08-17"
       },
       "EU": {
         "shop": "CigarWorld",
         "url": "https://www.cigarworld.de/en/zigarren/nicaragua/1502-ruby-toro-90014427_33118",
         "priceEUR": 8.5,
-        "fetchedAt": "2026-07-01"
+        "fetchedAt": "2026-07-01",
+        "inStock": false,
+        "stockFetchedAt": "2026-08-17"
       },
       "USA": {
         "shop": "Neptune Cigar",
-        "url": "https://www.neptunecigar.com/cigars/1502-ruby-robusto"
+        "url": "https://www.neptunecigar.com/cigars/1502-ruby-robusto",
+        "inStock": true,
+        "stockFetchedAt": "2026-08-17"
       }
     },
     "formatEstimated": true,
@@ -640,7 +758,9 @@
       "https://www.neptunecigar.com/cigars/1502-ruby-conquistador",
       "https://www.neptunecigar.com/cigars/1502-ruby-corona"
     ],
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "inStock": true,
+    "stockFetchedAt": "2026-08-17"
   },
   {
     "id": "cig-1502-special-edition-blue-sapphire",
@@ -686,11 +806,15 @@
             "shop": "CigarWorld",
             "url": "https://www.cigarworld.de/en/zigarren/nicaragua/1502-special-edition-blue-sapphire-lancero-90014552_41219",
             "priceEUR": 11.0,
-            "fetchedAt": "2026-07-01"
+            "fetchedAt": "2026-07-01",
+            "inStock": false,
+            "stockFetchedAt": "2026-08-17"
           }
         },
         "ring": 38,
-        "lengthMM": 189
+        "lengthMM": 189,
+        "inStock": false,
+        "stockFetchedAt": "2026-08-17"
       },
       {
         "name": "Robusto Gordo",
@@ -706,10 +830,14 @@
             "shop": "CigarWorld",
             "url": "https://www.cigarworld.de/en/zigarren/nicaragua/1502-special-edition-blue-sapphire-robusto-gordo-90014552_45059",
             "priceEUR": 11.9,
-            "fetchedAt": "2026-07-01"
+            "fetchedAt": "2026-07-01",
+            "inStock": true,
+            "stockFetchedAt": "2026-08-17"
           }
         },
-        "fetchedAt": "2026-07-01"
+        "fetchedAt": "2026-07-01",
+        "inStock": true,
+        "stockFetchedAt": "2026-08-17"
       },
       {
         "name": "Toro",
@@ -722,11 +850,15 @@
             "shop": "CigarWorld",
             "url": "https://www.cigarworld.de/en/zigarren/nicaragua/1502-special-edition-blue-sapphire-toro-gordo-90014552_33942",
             "priceEUR": 12.9,
-            "fetchedAt": "2026-07-01"
+            "fetchedAt": "2026-07-01",
+            "inStock": false,
+            "stockFetchedAt": "2026-08-17"
           }
         },
         "ring": 52,
-        "lengthMM": 152
+        "lengthMM": 152,
+        "inStock": true,
+        "stockFetchedAt": "2026-08-17"
       }
     ],
     "priceUrl": "https://humidor.hr/hr/proizvod/1502-blue-sapphire-robusto-gordo-5-x-52/",
@@ -735,17 +867,23 @@
         "shop": "The Humidor",
         "url": "https://humidor.hr/hr/proizvod/1502-blue-sapphire-robusto-gordo-5-x-52/",
         "priceEUR": 15.5,
-        "fetchedAt": "2026-07-01"
+        "fetchedAt": "2026-07-01",
+        "inStock": true,
+        "stockFetchedAt": "2026-08-17"
       },
       "EU": {
         "shop": "CigarWorld",
         "url": "https://www.cigarworld.de/en/zigarren/nicaragua/1502-special-edition-blue-sapphire-lancero-90014552_41219",
         "priceEUR": 11.0,
-        "fetchedAt": "2026-07-01"
+        "fetchedAt": "2026-07-01",
+        "inStock": false,
+        "stockFetchedAt": "2026-08-17"
       },
       "USA": {
         "shop": "Neptune Cigar",
-        "url": "https://www.neptunecigar.com/cigars/1502-blue-sapphire-lancero"
+        "url": "https://www.neptunecigar.com/cigars/1502-blue-sapphire-lancero",
+        "inStock": false,
+        "stockFetchedAt": "2026-08-17"
       }
     },
     "flavoured": false,
@@ -758,7 +896,9 @@
     "isPuro": true,
     "sourceUrls": [
       "https://www.neptunecigar.com/cigars/1502-blue-sapphire-robusto"
-    ]
+    ],
+    "inStock": true,
+    "stockFetchedAt": "2026-08-17"
   },
   {
     "id": "cig-1502-special-edition-cachito",
@@ -804,7 +944,9 @@
             "shop": "CigarWorld",
             "url": "https://www.cigarworld.de/en/zigarren/nicaragua/1502-special-edition-cachito-lancero-90014552_49781",
             "priceEUR": 7.0,
-            "fetchedAt": "2026-07-01"
+            "fetchedAt": "2026-07-01",
+            "inStock": false,
+            "stockFetchedAt": "2026-08-17"
           }
         },
         "ring": 38,
@@ -816,7 +958,9 @@
         "shop": "CigarWorld",
         "url": "https://www.cigarworld.de/en/zigarren/nicaragua/1502-special-edition-cachito-lancero-90014552_49781",
         "priceEUR": 7.0,
-        "fetchedAt": "2026-07-01"
+        "fetchedAt": "2026-07-01",
+        "inStock": false,
+        "stockFetchedAt": "2026-08-17"
       }
     },
     "formatEstimated": true,
@@ -867,7 +1011,9 @@
             "shop": "CigarWorld",
             "url": "https://www.cigarworld.de/en/zigarren/nicaragua/1502-special-edition-cachito-short-robusto-original-90014552_41374",
             "priceEUR": 7.0,
-            "fetchedAt": "2026-07-01"
+            "fetchedAt": "2026-07-01",
+            "inStock": true,
+            "stockFetchedAt": "2026-08-17"
           }
         },
         "ring": 50,
@@ -879,7 +1025,9 @@
         "shop": "CigarWorld",
         "url": "https://www.cigarworld.de/en/zigarren/nicaragua/1502-special-edition-cachito-short-robusto-original-90014552_41374",
         "priceEUR": 7.0,
-        "fetchedAt": "2026-07-01"
+        "fetchedAt": "2026-07-01",
+        "inStock": true,
+        "stockFetchedAt": "2026-08-17"
       }
     },
     "formatEstimated": true,
@@ -930,7 +1078,9 @@
             "shop": "CigarWorld",
             "url": "https://www.cigarworld.de/en/zigarren/nicaragua/1502-special-edition-cachito-short-robusto-white-connecticut-90014552_65404",
             "priceEUR": 7.0,
-            "fetchedAt": "2026-07-01"
+            "fetchedAt": "2026-07-01",
+            "inStock": false,
+            "stockFetchedAt": "2026-08-17"
           }
         },
         "ring": 50,
@@ -942,7 +1092,9 @@
         "shop": "CigarWorld",
         "url": "https://www.cigarworld.de/en/zigarren/nicaragua/1502-special-edition-cachito-short-robusto-white-connecticut-90014552_65404",
         "priceEUR": 7.0,
-        "fetchedAt": "2026-07-01"
+        "fetchedAt": "2026-07-01",
+        "inStock": false,
+        "stockFetchedAt": "2026-08-17"
       }
     },
     "formatEstimated": true,
@@ -1002,7 +1154,9 @@
             "shop": "CigarWorld",
             "url": "https://www.cigarworld.de/en/zigarren/nicaragua/1502-special-edition-xo-series-lancero-box-pressed-90014552_49785",
             "priceEUR": 29.0,
-            "fetchedAt": "2026-07-01"
+            "fetchedAt": "2026-07-01",
+            "inStock": true,
+            "stockFetchedAt": "2026-08-17"
           },
           "USA": {
             "shop": "Neptune Cigar",
@@ -1051,7 +1205,9 @@
         "url": "https://humidor.hr/hr/proizvod/1502-xo-perfecto-6-1-2-x-52/",
         "ring": 52,
         "lengthMM": 165,
-        "fetchedAt": "2026-07-01"
+        "fetchedAt": "2026-07-01",
+        "inStock": true,
+        "stockFetchedAt": "2026-08-17"
       },
       {
         "name": "Torpedo",
@@ -1083,7 +1239,9 @@
             "url": "https://www.neptunecigar.com/cigars/1502-xo-conquistador-6--56"
           }
         },
-        "fetchedAt": "2026-07-01"
+        "fetchedAt": "2026-07-01",
+        "inStock": true,
+        "stockFetchedAt": "2026-08-17"
       },
       {
         "name": "Salomon",
@@ -1108,17 +1266,23 @@
         "shop": "The Humidor",
         "url": "https://humidor.hr/hr/proizvod/1502-xo-conquistador-6-x-50/",
         "priceEUR": 45.0,
-        "fetchedAt": "2026-07-01"
+        "fetchedAt": "2026-07-01",
+        "inStock": true,
+        "stockFetchedAt": "2026-08-17"
       },
       "EU": {
         "shop": "CigarWorld",
         "url": "https://www.cigarworld.de/en/zigarren/nicaragua/1502-special-edition-xo-series-lancero-box-pressed-90014552_49785",
         "priceEUR": 29.0,
-        "fetchedAt": "2026-07-01"
+        "fetchedAt": "2026-07-01",
+        "inStock": true,
+        "stockFetchedAt": "2026-08-17"
       },
       "USA": {
         "shop": "Neptune Cigar",
-        "url": "https://www.neptunecigar.com/cigars/1502-xo"
+        "url": "https://www.neptunecigar.com/cigars/1502-xo",
+        "inStock": false,
+        "stockFetchedAt": "2026-08-17"
       }
     },
     "flavoured": false,
@@ -1131,7 +1295,9 @@
     "isPuro": true,
     "sourceUrls": [
       "https://www.neptunecigar.com/cigars/1502-xo-churchill"
-    ]
+    ],
+    "inStock": true,
+    "stockFetchedAt": "2026-08-17"
   },
   {
     "id": "cig-5-vegas-classic",
@@ -2547,12 +2713,16 @@
             "shop": "The Humidor",
             "url": "https://humidor.hr/hr/proizvod/accomplice-classic-robusto-5-x-55/",
             "priceEUR": 14.0,
-            "fetchedAt": "2026-07-01"
+            "fetchedAt": "2026-07-01",
+            "inStock": true,
+            "stockFetchedAt": "2026-08-17"
           }
         },
         "ring": 55,
         "lengthMM": 127,
-        "fetchedAt": "2026-07-01"
+        "fetchedAt": "2026-07-01",
+        "inStock": true,
+        "stockFetchedAt": "2026-08-17"
       }
     ],
     "regionLinks": {
@@ -2560,11 +2730,15 @@
         "shop": "The Humidor",
         "url": "https://humidor.hr/hr/proizvod/accomplice-classic-robusto-5-x-55/",
         "priceEUR": 14.0,
-        "fetchedAt": "2026-07-01"
+        "fetchedAt": "2026-07-01",
+        "inStock": true,
+        "stockFetchedAt": "2026-08-17"
       }
     },
     "strengthFromShop": true,
-    "priceUrl": "https://humidor.hr/hr/proizvod/accomplice-classic-robusto-5-x-55/"
+    "priceUrl": "https://humidor.hr/hr/proizvod/accomplice-classic-robusto-5-x-55/",
+    "inStock": true,
+    "stockFetchedAt": "2026-08-17"
   },
   {
     "id": "cig-adrian-magnus-1808",
@@ -4094,7 +4268,9 @@
             "url": "https://www.neptunecigar.com/cigars/aganorsa-leaf-aniversario-corojo-robusto"
           }
         },
-        "fetchedAt": "2026-07-01"
+        "fetchedAt": "2026-07-01",
+        "inStock": true,
+        "stockFetchedAt": "2026-08-17"
       },
       {
         "name": "Corojo Robusto",
@@ -4104,7 +4280,9 @@
         "url": "https://humidor.hr/en/proizvod/aganorsa-leaf-aniversario-corojo-robusto-5-x-54/",
         "ring": 54,
         "lengthMM": 127,
-        "fetchedAt": "2026-07-01"
+        "fetchedAt": "2026-07-01",
+        "inStock": true,
+        "stockFetchedAt": "2026-08-17"
       },
       {
         "name": "Maduro Robusto",
@@ -4114,7 +4292,9 @@
         "url": "https://humidor.hr/en/proizvod/aganorsa-leaf-aniversario-maduro-robusto-5-x-54/",
         "ring": 54,
         "lengthMM": 127,
-        "fetchedAt": "2026-07-01"
+        "fetchedAt": "2026-07-01",
+        "inStock": true,
+        "stockFetchedAt": "2026-08-17"
       },
       {
         "name": "Corojo Toro",
@@ -4124,7 +4304,9 @@
         "url": "https://humidor.hr/en/proizvod/aganorsa-leaf-aniversario-corojo-toro-6-x-58/",
         "ring": 58,
         "lengthMM": 152,
-        "fetchedAt": "2026-07-01"
+        "fetchedAt": "2026-07-01",
+        "inStock": true,
+        "stockFetchedAt": "2026-08-17"
       }
     ],
     "priceUrl": "https://humidor.hr/en/proizvod/aganorsa-leaf-aniversario-connecticut-robusto-5-x-54/",
@@ -4133,7 +4315,9 @@
         "shop": "The Humidor",
         "url": "https://humidor.hr/hr/proizvod/aganorsa-leaf-aniversario-connecticut-robusto-5-x-54/",
         "priceEUR": 13.5,
-        "fetchedAt": "2026-07-01"
+        "fetchedAt": "2026-07-01",
+        "inStock": false,
+        "stockFetchedAt": "2026-08-17"
       },
       "EU": {
         "shop": "CigarWorld",
@@ -4164,7 +4348,9 @@
       "https://www.neptunecigar.com/cigars/aganorsa-leaf-aniversario-25-edicion-limitada",
       "https://www.neptunecigar.com/cigars/aganorsa-leaf-aniversario-connecticut-tubo-6--52",
       "https://www.neptunecigar.com/cigars/aganorsa-leaf-aniversario-connecticut-box-pressed-robusto"
-    ]
+    ],
+    "inStock": true,
+    "stockFetchedAt": "2026-08-17"
   },
   {
     "id": "cig-aganorsa-leaf-arsenio",
@@ -4217,7 +4403,9 @@
             "url": "https://www.neptunecigar.com/cigars/aganorsa-leaf-arsenio-toro"
           }
         },
-        "fetchedAt": "2026-07-01"
+        "fetchedAt": "2026-07-01",
+        "inStock": false,
+        "stockFetchedAt": "2026-08-17"
       }
     ],
     "priceUrl": "https://humidor.hr/hr/proizvod/aganorsa-leaf-arsenio-robusto-5-%c2%bc-x-54/",
@@ -4227,7 +4415,9 @@
         "shop": "The Humidor",
         "url": "https://humidor.hr/hr/proizvod/aganorsa-leaf-arsenio-robusto-5-%c2%bc-x-54/",
         "priceEUR": 13.0,
-        "fetchedAt": "2026-07-01"
+        "fetchedAt": "2026-07-01",
+        "inStock": false,
+        "stockFetchedAt": "2026-08-17"
       },
       "EU": {
         "shop": "CigarWorld",
@@ -4250,7 +4440,9 @@
     "sourceUrls": [
       "https://www.neptunecigar.com/cigars/aganorsa-leaf-arsenio-toro",
       "https://www.neptunecigar.com/cigars/aganorsa-leaf-arsenio-corona"
-    ]
+    ],
+    "inStock": false,
+    "stockFetchedAt": "2026-08-17"
   },
   {
     "id": "cig-aganorsa-leaf-cerberus",
@@ -4594,7 +4786,9 @@
             "url": "https://www.neptunecigar.com/cigars/aganorsa-leaf-validacion-connecticut--toro"
           }
         },
-        "fetchedAt": "2026-07-01"
+        "fetchedAt": "2026-07-01",
+        "inStock": false,
+        "stockFetchedAt": "2026-08-17"
       }
     ],
     "priceUrl": "https://humidor.hr/hr/proizvod/aganorsa-leaf-la-validacion-connecticut-gran-robusto-5-x-54/",
@@ -4603,7 +4797,9 @@
         "shop": "The Humidor",
         "url": "https://humidor.hr/hr/proizvod/aganorsa-leaf-la-validacion-connecticut-gran-robusto-5-x-54/",
         "priceEUR": 10.0,
-        "fetchedAt": "2026-07-01"
+        "fetchedAt": "2026-07-01",
+        "inStock": false,
+        "stockFetchedAt": "2026-08-17"
       },
       "EU": {
         "shop": "CigarWorld",
@@ -4621,7 +4817,9 @@
     },
     "sourceUrls": [
       "https://www.neptunecigar.com/cigars/aganorsa-leaf-validacion-connecticut--toro"
-    ]
+    ],
+    "inStock": false,
+    "stockFetchedAt": "2026-08-17"
   },
   {
     "id": "cig-aganorsa-leaf-la-validacion-corojo",
@@ -4670,7 +4868,9 @@
             "url": "https://www.neptunecigar.com/cigars/aganorsa-leaf-validacion-corojo-toro"
           }
         },
-        "fetchedAt": "2026-07-01"
+        "fetchedAt": "2026-07-01",
+        "inStock": false,
+        "stockFetchedAt": "2026-08-17"
       },
       {
         "name": "Corojo Gran Robusto",
@@ -4680,7 +4880,9 @@
         "url": "https://humidor.hr/en/proizvod/aganorsa-leaf-la-validacion-corojo-gran-robusto-5-x-54/",
         "ring": 54,
         "lengthMM": 127,
-        "fetchedAt": "2026-07-01"
+        "fetchedAt": "2026-07-01",
+        "inStock": true,
+        "stockFetchedAt": "2026-08-17"
       },
       {
         "name": "Habano Gran Robusto",
@@ -4719,7 +4921,9 @@
         "shop": "The Humidor",
         "url": "https://humidor.hr/hr/proizvod/aganorsa-leaf-la-validacion-corojo-gran-robusto-5-x-54/",
         "priceEUR": 10.0,
-        "fetchedAt": "2026-07-01"
+        "fetchedAt": "2026-07-01",
+        "inStock": false,
+        "stockFetchedAt": "2026-08-17"
       },
       "USA": {
         "shop": "Cigars Daily",
@@ -4735,7 +4939,9 @@
     "profileEstimated": false,
     "sourceUrls": [
       "https://www.neptunecigar.com/cigars/aganorsa-leaf-validacion-corojo-toro"
-    ]
+    ],
+    "inStock": false,
+    "stockFetchedAt": "2026-08-17"
   },
   {
     "id": "cig-aganorsa-leaf-la-validacion-habano",
@@ -24312,6 +24518,118 @@
     "formatEstimated": true
   },
   {
+    "id": "cig-asylum-asylum",
+    "brand": "Asylum",
+    "line": "Asylum",
+    "vitola": "Gordo",
+    "format": "60 x 152mm",
+    "country": "Nikaragva",
+    "wrapper": "Habano",
+    "strength": 4,
+    "body": 4,
+    "flavorTags": [
+      "cedar",
+      "zacini",
+      "koza",
+      "kava"
+    ],
+    "profileEstimated": true,
+    "catalogSource": "market",
+    "smokeTimeMin": 58,
+    "priceEUR": null,
+    "priceApprox": false,
+    "availabilityHR": [],
+    "notes": {
+      "hr": "Nikaragva, Habano pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
+      "en": "Nicaragua, H-2000 wrapper — medium-full in strength, fuller-bodied. Notes: cedar, spices, leather."
+    },
+    "markets": [
+      "EU",
+      "USA",
+      "WW"
+    ],
+    "vitolas": [
+      {
+        "name": "Short Corona",
+        "format": "44 x 142mm",
+        "smokeTimeMin": 55,
+        "priceEUR": null,
+        "url": null,
+        "regionLinks": {
+          "EU": {
+            "shop": "CigarWorld",
+            "url": "https://www.cigarworld.de/en/zigarren/nicaragua/asylum-short-corona-44-x-4-90014017_34041",
+            "priceEUR": 6.6,
+            "fetchedAt": "2026-07-01"
+          }
+        },
+        "ring": 44,
+        "lengthMM": 142
+      },
+      {
+        "name": "Robusto",
+        "format": "50 x 127mm",
+        "smokeTimeMin": 49,
+        "priceEUR": null,
+        "url": null,
+        "regionLinks": {
+          "EU": {
+            "shop": "CigarWorld",
+            "url": "https://www.cigarworld.de/en/zigarren/nicaragua/asylum-robusto-50-x-5-90014017_30752",
+            "priceEUR": 7.5,
+            "fetchedAt": "2026-07-01"
+          }
+        },
+        "ring": 50,
+        "lengthMM": 127
+      },
+      {
+        "name": "Gordo",
+        "format": "60 x 152mm",
+        "smokeTimeMin": 58,
+        "priceEUR": null,
+        "url": null,
+        "ring": 60,
+        "lengthMM": 152
+      },
+      {
+        "name": "Gran Toro",
+        "format": "60 x 159mm",
+        "smokeTimeMin": 61,
+        "priceEUR": null,
+        "url": null,
+        "regionLinks": {
+          "EU": {
+            "shop": "CigarWorld",
+            "url": "https://www.cigarworld.de/en/zigarren/nicaragua/asylum-toro-gordo-60-x-6-90014017_30753",
+            "priceEUR": 11.2,
+            "fetchedAt": "2026-07-01"
+          }
+        },
+        "ring": 60,
+        "lengthMM": 159
+      }
+    ],
+    "regionLinks": {
+      "USA": {
+        "shop": "Holt's",
+        "url": "https://www.holts.com/cigars/all-cigar-brands/asylum.html",
+        "priceEUR": 8.65,
+        "priceApprox": true,
+        "fetchedAt": "2026-07-01"
+      },
+      "EU": {
+        "shop": "CigarWorld",
+        "url": "https://www.cigarworld.de/en/zigarren/nicaragua/asylum-toro-gordo-60-x-6-90014017_30753",
+        "priceEUR": 11.2,
+        "fetchedAt": "2026-07-01"
+      }
+    },
+    "strengthFromShop": true,
+    "flavoured": false,
+    "formatEstimated": true
+  },
+  {
     "id": "cig-asylum-12-medulla-maduro",
     "brand": "Asylum",
     "line": "12 Medulla Maduro",
@@ -24428,15 +24746,6 @@
         "ring": 50,
         "lengthMM": 127,
         "fetchedAt": "2026-07-01"
-      },
-      {
-        "name": "Gordo",
-        "format": "60 x 152mm",
-        "smokeTimeMin": 58,
-        "priceEUR": null,
-        "url": null,
-        "ring": 60,
-        "lengthMM": 152
       },
       {
         "name": "Gran Toro",
@@ -25423,118 +25732,6 @@
     "wrapperOrigin": "Honduras",
     "binderOrigin": "Honduras",
     "fillerOrigin": "Honduras"
-  },
-  {
-    "id": "cig-asylum-asylum",
-    "brand": "Asylum",
-    "line": "Asylum",
-    "vitola": "Gordo",
-    "format": "60 x 152mm",
-    "country": "Nikaragva",
-    "wrapper": "Habano",
-    "strength": 4,
-    "body": 4,
-    "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
-    ],
-    "profileEstimated": true,
-    "catalogSource": "market",
-    "smokeTimeMin": 58,
-    "priceEUR": null,
-    "priceApprox": false,
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Nikaragva, Habano pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Nicaragua, H-2000 wrapper — medium-full in strength, fuller-bodied. Notes: cedar, spices, leather."
-    },
-    "markets": [
-      "EU",
-      "USA",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Short Corona",
-        "format": "44 x 142mm",
-        "smokeTimeMin": 55,
-        "priceEUR": null,
-        "url": null,
-        "regionLinks": {
-          "EU": {
-            "shop": "CigarWorld",
-            "url": "https://www.cigarworld.de/en/zigarren/nicaragua/asylum-short-corona-44-x-4-90014017_34041",
-            "priceEUR": 6.6,
-            "fetchedAt": "2026-07-01"
-          }
-        },
-        "ring": 44,
-        "lengthMM": 142
-      },
-      {
-        "name": "Robusto",
-        "format": "50 x 127mm",
-        "smokeTimeMin": 49,
-        "priceEUR": null,
-        "url": null,
-        "regionLinks": {
-          "EU": {
-            "shop": "CigarWorld",
-            "url": "https://www.cigarworld.de/en/zigarren/nicaragua/asylum-robusto-50-x-5-90014017_30752",
-            "priceEUR": 7.5,
-            "fetchedAt": "2026-07-01"
-          }
-        },
-        "ring": 50,
-        "lengthMM": 127
-      },
-      {
-        "name": "Gordo",
-        "format": "60 x 152mm",
-        "smokeTimeMin": 58,
-        "priceEUR": null,
-        "url": null,
-        "ring": 60,
-        "lengthMM": 152
-      },
-      {
-        "name": "Gran Toro",
-        "format": "60 x 159mm",
-        "smokeTimeMin": 61,
-        "priceEUR": null,
-        "url": null,
-        "regionLinks": {
-          "EU": {
-            "shop": "CigarWorld",
-            "url": "https://www.cigarworld.de/en/zigarren/nicaragua/asylum-toro-gordo-60-x-6-90014017_30753",
-            "priceEUR": 11.2,
-            "fetchedAt": "2026-07-01"
-          }
-        },
-        "ring": 60,
-        "lengthMM": 159
-      }
-    ],
-    "regionLinks": {
-      "USA": {
-        "shop": "Holt's",
-        "url": "https://www.holts.com/cigars/all-cigar-brands/asylum.html",
-        "priceEUR": 8.65,
-        "priceApprox": true,
-        "fetchedAt": "2026-07-01"
-      },
-      "EU": {
-        "shop": "CigarWorld",
-        "url": "https://www.cigarworld.de/en/zigarren/nicaragua/asylum-toro-gordo-60-x-6-90014017_30753",
-        "priceEUR": 11.2,
-        "fetchedAt": "2026-07-01"
-      }
-    },
-    "strengthFromShop": true,
-    "flavoured": false,
-    "formatEstimated": true
   },
   {
     "id": "cig-asylum-cool-brew",
