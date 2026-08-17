@@ -24455,6 +24455,24 @@
         "ring": 60,
         "lengthMM": 152,
         "fetchedAt": "2026-07-01"
+      },
+      {
+        "name": "Hercule",
+        "format": "70 x 178mm",
+        "smokeTimeMin": 68,
+        "priceEUR": 14.4,
+        "url": "https://humidor.hr/hr/proizvod/asylum-13-hercule-7-x-70/",
+        "regionLinks": {
+          "HR": {
+            "shop": "The Humidor",
+            "url": "https://humidor.hr/hr/proizvod/asylum-13-hercule-7-x-70/",
+            "priceEUR": 14.4,
+            "fetchedAt": "2026-08-06"
+          }
+        },
+        "ring": 70,
+        "lengthMM": 178,
+        "fetchedAt": "2026-08-06"
       }
     ],
     "regionLinks": {
@@ -24527,7 +24545,8 @@
       "https://www.neptunecigar.com/cigars/asylum-13-medulla-50x5",
       "https://www.neptunecigar.com/cigars/asylum-13-oblongata-maduro-80x6",
       "https://www.neptunecigar.com/cigars/asylum-13-oblongata-maduro-70x7",
-      "https://www.neptunecigar.com/cigars/asylum-13-arabian-nights-660-6--60"
+      "https://www.neptunecigar.com/cigars/asylum-13-arabian-nights-660-6--60",
+      "https://humidor.hr/hr/proizvod/asylum-13-hercule-7-x-70/"
     ]
   },
   {
@@ -24664,6 +24683,162 @@
     "priceUrl": "https://humidor.hr/hr/proizvod/asylum-13-connecticut-toro-6-x-52/",
     "flavoured": false,
     "formatEstimated": true
+  },
+  {
+    "id": "cig-asylum-13-corojo",
+    "brand": "Asylum",
+    "line": "13 Corojo",
+    "vitola": "Toro",
+    "format": "52 x 152mm",
+    "country": "Nikaragva",
+    "wrapper": "Honduran",
+    "strength": 3,
+    "body": 3,
+    "flavorTags": [
+      "zacini",
+      "citrus",
+      "duhan",
+      "dim",
+      "slatko"
+    ],
+    "profileEstimated": true,
+    "formatEstimated": false,
+    "smokeTimeMin": 58,
+    "priceEUR": 11.9,
+    "priceUrl": "https://humidor.hr/hr/proizvod/asylum-13-corojo-toro-6-x-52/",
+    "vitolas": [
+      {
+        "name": "Toro",
+        "format": "52 x 152mm",
+        "smokeTimeMin": 58,
+        "priceEUR": 11.9,
+        "url": "https://humidor.hr/hr/proizvod/asylum-13-corojo-toro-6-x-52/",
+        "regionLinks": {
+          "HR": {
+            "shop": "The Humidor",
+            "url": "https://humidor.hr/hr/proizvod/asylum-13-corojo-toro-6-x-52/",
+            "priceEUR": 11.9,
+            "fetchedAt": "2026-08-06"
+          }
+        },
+        "ring": 52,
+        "lengthMM": 152,
+        "fetchedAt": "2026-08-06"
+      },
+      {
+        "name": "Seventy",
+        "format": "70 x 178mm",
+        "smokeTimeMin": 68,
+        "priceEUR": null,
+        "url": "https://www.neptunecigar.com/cigars/asylum-corojo-seventy",
+        "ring": 70,
+        "lengthMM": 178,
+        "regionLinks": {
+          "USA": {
+            "shop": "Neptune Cigar",
+            "url": "https://www.neptunecigar.com/cigars/asylum-corojo-seventy"
+          }
+        }
+      }
+    ],
+    "markets": [
+      "HR",
+      "USA",
+      "WW"
+    ],
+    "regionLinks": {
+      "USA": {
+        "shop": "Neptune Cigar",
+        "url": "https://www.neptunecigar.com/cigars/asylum-corojo-seventy"
+      },
+      "HR": {
+        "shop": "The Humidor",
+        "url": "https://humidor.hr/hr/proizvod/asylum-13-corojo-toro-6-x-52/",
+        "priceEUR": 11.9,
+        "fetchedAt": "2026-08-06"
+      }
+    },
+    "catalogSource": "market",
+    "availabilityHR": [
+      "The Humidor"
+    ],
+    "notes": {
+      "hr": "Corojo pokrov na nikaragvanskoj smjesi Asylum 13 — u Hrvatskoj se prodaje Toro 6 x 52.",
+      "en": "A Corojo wrapper over the Asylum 13 Nicaraguan blend — the 6 x 52 Toro is the one sold in Croatia."
+    },
+    "sourceUrls": [
+      "https://www.neptunecigar.com/cigars/asylum-corojo-seventy",
+      "https://humidor.hr/hr/proizvod/asylum-13-corojo-toro-6-x-52/"
+    ],
+    "wrapperOrigin": "Honduras",
+    "binderOrigin": "Honduras",
+    "fillerOrigin": "Honduras",
+    "priceApprox": false
+  },
+  {
+    "id": "cig-asylum-13-medulla-oblongata",
+    "brand": "Asylum",
+    "line": "13 Medulla Oblongata",
+    "vitola": "Robusto",
+    "format": "50 x 127mm",
+    "country": "Nikaragva",
+    "wrapper": "Habano",
+    "strength": 5,
+    "body": 3,
+    "flavorTags": [
+      "cedar",
+      "zacini",
+      "koza",
+      "kava"
+    ],
+    "profileEstimated": true,
+    "catalogSource": "market",
+    "smokeTimeMin": 49,
+    "priceEUR": 11.5,
+    "priceApprox": false,
+    "availabilityHR": [
+      "The Humidor"
+    ],
+    "notes": {
+      "hr": "Medulla Oblongata je Asylum 13 u klasičnom robusto formatu — nikaragvanska smjesa, Habano pokrov.",
+      "en": "Medulla Oblongata is Asylum 13 in the classic robusto format — a Nicaraguan blend under a Habano wrapper."
+    },
+    "markets": [
+      "HR",
+      "WW"
+    ],
+    "vitolas": [
+      {
+        "name": "Robusto",
+        "format": "50 x 127mm",
+        "smokeTimeMin": 49,
+        "priceEUR": 11.5,
+        "url": "https://humidor.hr/hr/proizvod/asylum-13-medulla-oblongata-5-x-50/",
+        "regionLinks": {
+          "HR": {
+            "shop": "The Humidor",
+            "url": "https://humidor.hr/hr/proizvod/asylum-13-medulla-oblongata-5-x-50/",
+            "priceEUR": 11.5,
+            "fetchedAt": "2026-08-06"
+          }
+        },
+        "ring": 50,
+        "lengthMM": 127,
+        "fetchedAt": "2026-08-06"
+      }
+    ],
+    "regionLinks": {
+      "HR": {
+        "shop": "The Humidor",
+        "url": "https://humidor.hr/hr/proizvod/asylum-13-medulla-oblongata-5-x-50/",
+        "priceEUR": 11.5,
+        "fetchedAt": "2026-08-06"
+      }
+    },
+    "priceUrl": "https://humidor.hr/hr/proizvod/asylum-13-medulla-oblongata-5-x-50/",
+    "sourceUrls": [
+      "https://humidor.hr/hr/proizvod/asylum-13-medulla-oblongata-5-x-50/"
+    ]
   },
   {
     "id": "cig-asylum-13-pandemonium",
@@ -25013,9 +25188,28 @@
             "url": "https://www.neptunecigar.com/cigars/asylum-april-fool-s-limited-edition-2023"
           }
         }
+      },
+      {
+        "name": "Gordo",
+        "format": "90 x 229mm",
+        "smokeTimeMin": 88,
+        "priceEUR": 55.0,
+        "url": "https://humidor.hr/hr/proizvod/asylum-13-april-fools-9-x-90/",
+        "regionLinks": {
+          "HR": {
+            "shop": "The Humidor",
+            "url": "https://humidor.hr/hr/proizvod/asylum-13-april-fools-9-x-90/",
+            "priceEUR": 55.0,
+            "fetchedAt": "2026-08-06"
+          }
+        },
+        "ring": 90,
+        "lengthMM": 229,
+        "fetchedAt": "2026-08-06"
       }
     ],
     "markets": [
+      "HR",
       "USA",
       "WW"
     ],
@@ -25023,16 +25217,25 @@
       "USA": {
         "shop": "Neptune Cigar",
         "url": "https://www.neptunecigar.com/cigars/asylum-april-fool-s-limited-edition-2023"
+      },
+      "HR": {
+        "shop": "The Humidor",
+        "url": "https://humidor.hr/hr/proizvod/asylum-13-april-fools-9-x-90/",
+        "priceEUR": 55.0,
+        "fetchedAt": "2026-08-06"
       }
     },
     "catalogSource": "market",
-    "availabilityHR": [],
+    "availabilityHR": [
+      "The Humidor"
+    ],
     "notes": {
       "hr": "Nikaragva — linija iz trgovine Neptune Cigar.",
       "en": "Nicaragua — line from Neptune Cigar."
     },
     "sourceUrls": [
-      "https://www.neptunecigar.com/cigars/asylum-april-fool-s-limited-edition-2023"
+      "https://www.neptunecigar.com/cigars/asylum-april-fool-s-limited-edition-2023",
+      "https://humidor.hr/hr/proizvod/asylum-13-april-fools-9-x-90/"
     ],
     "wrapperOrigin": "Honduras",
     "binderOrigin": "Honduras",
@@ -25392,69 +25595,6 @@
     "binderOrigin": "Honduras",
     "fillerOrigin": "Honduras",
     "strengthFromShop": true
-  },
-  {
-    "id": "cig-asylum-corojo-seventy",
-    "brand": "Asylum",
-    "line": "Corojo Seventy",
-    "vitola": "Robusto",
-    "format": "50 x 124mm",
-    "country": "Nikaragva",
-    "wrapper": "Honduran",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [
-      "zacini",
-      "citrus",
-      "duhan",
-      "dim",
-      "slatko"
-    ],
-    "profileEstimated": true,
-    "formatEstimated": true,
-    "smokeTimeMin": 59,
-    "priceEUR": null,
-    "priceUrl": "https://www.neptunecigar.com/cigars/asylum-corojo-seventy",
-    "vitolas": [
-      {
-        "name": "Robusto",
-        "format": "50 x 124mm",
-        "smokeTimeMin": 59,
-        "priceEUR": null,
-        "url": "https://www.neptunecigar.com/cigars/asylum-corojo-seventy",
-        "shape": "Robusto",
-        "ring": 50,
-        "lengthMM": 124,
-        "regionLinks": {
-          "USA": {
-            "shop": "Neptune Cigar",
-            "url": "https://www.neptunecigar.com/cigars/asylum-corojo-seventy"
-          }
-        }
-      }
-    ],
-    "markets": [
-      "USA",
-      "WW"
-    ],
-    "regionLinks": {
-      "USA": {
-        "shop": "Neptune Cigar",
-        "url": "https://www.neptunecigar.com/cigars/asylum-corojo-seventy"
-      }
-    },
-    "catalogSource": "market",
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Nikaragva — linija iz trgovine Neptune Cigar.",
-      "en": "Nicaragua — line from Neptune Cigar."
-    },
-    "sourceUrls": [
-      "https://www.neptunecigar.com/cigars/asylum-corojo-seventy"
-    ],
-    "wrapperOrigin": "Honduras",
-    "binderOrigin": "Honduras",
-    "fillerOrigin": "Honduras"
   },
   {
     "id": "cig-asylum-devil-s-night-smoke-the-night-away",
@@ -45500,11 +45640,10 @@
         "name": "Corojo Toro",
         "format": "52 x 152mm",
         "smokeTimeMin": 65,
-        "priceEUR": 11.9,
-        "url": "https://humidor.hr/hr/proizvod/asylum-13-corojo-toro-6-x-52/",
+        "priceEUR": null,
+        "url": null,
         "ring": 52,
-        "lengthMM": 152,
-        "fetchedAt": "2026-07-01"
+        "lengthMM": 152
       },
       {
         "name": "Churchill",
