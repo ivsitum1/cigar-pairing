@@ -152,6 +152,17 @@ export function GiftPage({
       ) : (
         <>
           <p className="mb-2 text-xs text-dim">{t("gift.pricedNote")}</p>
+          {results.some((p) => p.safeDefault) && (
+            <p className="mb-3 rounded-xl border border-zlato/25 bg-zlato/5 p-3 text-xs leading-relaxed text-papir/85">
+              {t("gift.safeDefault")}
+            </p>
+          )}
+          {results.some((p) => p.kind === "pairing") && (
+            <p className="mb-2 text-xs leading-relaxed text-dim">{t("gift.minMatchNote")}</p>
+          )}
+          {results.some((p) => p.droppedPairing) && (
+            <p className="mb-2 text-xs leading-relaxed text-dim">{t("gift.noPairing")}</p>
+          )}
           {results.length === 0 ? (
             <p className="rounded-xl border border-dim/20 bg-cedar p-4 text-sm text-dim">
               {t("gift.empty")}
@@ -250,6 +261,17 @@ function GiftResultCard({
           <span className="shrink-0 font-display text-sm text-papir">{formatEur(pick.price)}</span>
         )}
       </div>
+      {pick.matchScore != null && (
+        <p className="mt-1 font-display text-xs uppercase tracking-widest text-zlato-2">
+          {t("gift.match")} {pick.matchScore} %
+        </p>
+      )}
+      {pick.swappedFromCategory && (
+        <p className="mt-1 text-xs text-dim">
+          {t("gift.swappedNote")}{" "}
+          <span className="text-papir/90">{t(`cat.${pick.swappedFromCategory}`)}</span>
+        </p>
+      )}
       {pick.fellBackBudget && (
         <p className="mt-1 text-xs text-dim">{t("gift.fellBackBudget")}</p>
       )}

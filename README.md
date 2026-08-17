@@ -29,7 +29,10 @@ indeksima rangiranim po kvaliteti za sipping uz cigaru.
   - Hash-routing s deep-linkovima: `#/pairing/cigar/<id>` i `#/pairing/drink/<id>`
     otvaraju pairing s odabranom stavkom (dijeljivi linkovi, back tipka radi);
     `#/shopping/gift` je poklon u pet pitanja (cigara, boca ili kombinacija,
-    s cijenom u trgovini u blizini; razredi do 20 / 20–40 / 40–60 / 60–100 €)
+    s cijenom u trgovini u blizini; razredi do 20 / 20–40 / 40–60 / 60–100 €).
+    Kombinacija cigare i pića izlazi samo iznad 80 % slaganja; kad u traženoj
+    kategoriji nema pogotka, prijedlog prelazi na najbližu susjednu (whisky →
+    brandy → rum → vino) prije nego što dira budžet ili oblik poklona
   - `src/data/*.json` — indeksi (320 rum, 274 whiskyja, 90 brandy/grappa, 65 gin,
     124 vina, 26 tequila, 50 kava, 13 digestiva, 3315 cigara);
     build ih dijeli u odvojene chunkove (`data-cigars`, `data-whiskies`, `data-rums`…) radi

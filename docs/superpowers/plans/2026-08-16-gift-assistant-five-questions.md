@@ -143,3 +143,66 @@ Closing row: „Počni ispočetka" and „Otvori u katalogu" (deep link via exis
 2. **Q5 „Set za početnika" depends on accessory shop links** that currently live inside `club101.json` lesson cards. If that coupling feels wrong, lift them to their own `accessories.json` first — but that is a separate change, not part of this one.
 3. **Two or three results?** Recommend three when the budget band is wide (60–120 €, 120 €+), two when it is narrow — otherwise the low band repeats itself.
 4. **Not doing:** saving gift results, sharing them, or a "gift history". A gift is a one-off; `localStorage` stays for collection and diary.
+
+---
+
+## Revizija 2026-08-17 — prag slaganja, susjedna kategorija, prazan upitnik
+
+Tri pravila dodana nakon prvog kruga korištenja. Sva tri žive u `giftFinder.ts`;
+UI ih samo prikazuje.
+
+### 1. Kombinacija mora prijeći 80 %
+
+`MIN_PAIRING_SCORE = 80` na prikaznoj skali sparivanja (isti broj koji korisnik
+vidi kao postotak). Prije toga je kartica „Cigara i piće" uzimala prvi par koji
+stane u budžet — izmjereno na cijelom katalogu, četvrtina prijedloga bila je
+ispod 50 % (najgori 23 %). Kombinacija koja ne ide gori je poklon od dvije
+zasebne stvari koje idu.
+
+Posljedica: jačinu para nosi **cigara** (odgovor „kakav je navečer"), a piće
+bira engine. Dvostruki filter po jačini izbacivao je upravo one parove koje
+pravilo `body-match` najbolje ocjenjuje.
+
+### 2. Nula pogodaka → susjedna kategorija, pa tek onda budžet i oblik
+
+`CATEGORY_NEIGHBOURS` (whisky → brandy → rum → vino; bačvom zrele žestice su
+međusobno najbliže, vino sjedi uz brandy). Ljestvica popuštanja u
+`buildAttempts`, od najmanjeg ustupka prema najvećem:
+
+1. sve točno kako je rečeno,
+2. susjedna kategorija pića — **isti budžet, ista jačina**,
+3. isto to s niže police (nikad skuplje od odgovora),
+4. drugi oblik poklona (kombinacija → cigara i boca zasebno).
+
+Zamjena kategorije ide prije spuštanja cijene: budžet je korisnikovo tvrdo
+ograničenje, kategorija je pretpostavka o tuđem ukusu. Svaki ustupak nosi
+oznaku na kartici (`swappedFromCategory`, `fellBackBudget`, `droppedPairing`).
+
+### 3. Svih pet „ne znam"
+
+Presjek praznih filtera davao je nasumičan rezultat (izmjereno: kombinacija na
+39 % i boca gina). Taj slučaj sada hvata `isBlankGiftAnswers` i zamjenjuje ga
+jednim namjerno odabranim profilom (`SAFE_DEFAULT_ANSWERS`):
+
+- pristupačan format (corona/robusto) i snaga do 3,
+- srednja jačina — sredina ljestvice, ondje je najviše parova iznad praga,
+- 20–40 €,
+- samo klasične kategorije u čaši (`CLASSIC_GIFT_CATEGORIES`) — bez gina, kave
+  i digestiva kad ne znamo što osoba pije,
+- **tri različite stvari** (kombinacija, boca, cigara), s bocom ispred cigare:
+  ne znamo ni puši li osoba, a boca radi u oba slučaja.
+
+Kartice nose `safeDefault` pa UI objašnjava zašto je izbor takav i poziva na
+odgovor na bilo koje pitanje.
+
+### Mjereno nakon izmjene (HR, svih 1600 kombinacija odgovora)
+
+| | prije | poslije |
+|---|---|---|
+| kombinacija ispod 80 % | 460 od 552 | 0 od 2132 |
+| kombinacija bez ijednog prijedloga | 6 | 0 |
+| prosječno slaganje predloženog para | ≈54 % (procjena iz histograma) | 84,2 % |
+
+Proturječni odgovori (npr. „tek je na početku" + „voli jače stvari") više ne
+daju prazan presjek: strop primatelja pobjeđuje, ali se traži najjače unutar
+njega (`cigarStrengthRange`).

@@ -1,6 +1,14 @@
 // Poklon u pet pitanja — odgovori postaju filteri nad postojećim katalogom i
 // pairing engineom. Bez novog modela bodovanja; cijena i blizina trgovine su
 // tvrdi uvjeti (poklon bez cijene nije poklon).
+//
+// Tri pravila drže kvalitetu prijedloga:
+//  1. Kombinacija cigare i pića ide van samo ako slaganje prijeđe MIN_PAIRING_SCORE.
+//  2. Kad u traženoj kategoriji pića nema ni jednog pogotka, spušta se na
+//     SUSJEDNU kategoriju (whisky → brandy → rum → vino), pa tek onda mijenja
+//     oblik poklona.
+//  3. Kad su svih pet odgovora „ne znam”, ne radi se presjek praznih filtera
+//     nego se bira namjerno siguran profil (SAFE_DEFAULT_ANSWERS).
 import type { Cigar, Drink, DrinkCategory, LocalizedText, Region, RegionFilter } from "../types";
 import { cigarLinePrice } from "./cigarPrice";
 import { pairDrinksForCigar } from "../engine/pairing";
@@ -39,6 +47,14 @@ export interface GiftPick {
   shop: string | null;
   why: LocalizedText;
   fellBackBudget?: boolean;
+  /** Postotak slaganja para (samo kind === "pairing"); uvijek ≥ MIN_PAIRING_SCORE. */
+  matchScore?: number;
+  /** Kategorija pića koju je korisnik tražio, kad u njoj nije bilo pogotka. */
+  swappedFromCategory?: DrinkCategory;
+  /** Tražena je kombinacija, ali nijedna nije prešla prag — ide zasebno. */
+  droppedPairing?: boolean;
+  /** Svih pet odgovora „ne znam” — vrijedi siguran profil. */
+  safeDefault?: boolean;
   region: Region;
 }
 
@@ -70,6 +86,67 @@ const BEGINNER_SHAPES = new Set<ShapeFamily>(["corona", "robusto"]);
 /** Poklon nije svakodnevni bundle. Pića imaju 1–10; cigare taj broj nemaju,
  *  pa uz cijenu i trgovinu ispadaju bundle/value linije i aromatizirane. */
 export const MIN_GIFT_QUALITY = 7;
+
+/** Kombinacija koja „ne ide” gori je poklon od dvije zasebne stvari koje idu.
+ *  Prag je na prikaznoj skali sparivanja (ista brojka koju korisnik vidi kao
+ *  postotak), pa ono što piše na kartici i ono što filtrira jest isti broj. */
+export const MIN_PAIRING_SCORE = 80;
+
+/** Koliko se cigara i pića boduje po budžetnom pojasu. Prag od 80 % traži da se
+ *  pretraži više od prvog pogotka, ali ne cijeli katalog (≈220 000 parova).
+ *  Mjereno na HR poolu: ove brojke daju jednak broj parova kao neograničeno
+ *  skeniranje, uz najgori slučaj od ~24 000 bodovanja (≈0,2 s) po pojasu. */
+const PAIR_CIGAR_SCAN = 120;
+const PAIR_DRINK_SCAN = 200;
+
+/** Kad korisnik ne zna što osoba pije, ne nudimo gin ni kavu — poklon-boca bez
+ *  informacije o ukusu ostaje u klasičnim kategorijama. */
+const CLASSIC_GIFT_CATEGORIES: DrinkCategory[] = ["whisky", "rum", "brandy", "wine"];
+
+/** Susjedstvo kategorija: bačvom zrele žestice su međusobno najbliže, vino i
+ *  porto sjede uz brandy. Redoslijed je „sljedeći najbliži”, ne abecedni. */
+const CATEGORY_NEIGHBOURS: Record<DrinkCategory, DrinkCategory[]> = {
+  whisky: ["brandy", "rum", "wine"],
+  rum: ["brandy", "whisky", "wine"],
+  brandy: ["whisky", "rum", "wine"],
+  wine: ["brandy", "rum", "whisky"],
+  tequila: ["rum", "whisky", "brandy"],
+  gin: ["tequila", "whisky", "rum"],
+  digestif: ["brandy", "wine", "rum"],
+  coffee: ["rum", "brandy", "whisky"],
+};
+
+export function neighbourCategories(cat: DrinkCategory): DrinkCategory[] {
+  return CATEGORY_NEIGHBOURS[cat] ?? [];
+}
+
+/** Svih pet „ne znam”. Prazan presjek filtera dao bi nasumičan rezultat, pa se
+ *  taj slučaj rješava jednim namjerno odabranim profilom (vidi
+ *  SAFE_DEFAULT_ANSWERS), a prijedlozi nose oznaku safeDefault. */
+export function isBlankGiftAnswers(a: GiftAnswers): boolean {
+  return (
+    a.recipient === "unknown" &&
+    a.budget === "unknown" &&
+    a.drink === "unknown" &&
+    a.intensity === "unknown" &&
+    a.shape === "unknown"
+  );
+}
+
+/** Siguran poklon za osobu o kojoj ne znamo ništa:
+ *  - recipient „unknown” → snaga do 3 i klasičan format (corona/robusto),
+ *  - intensity „medium” → sredina ljestvice, ondje je najviše parova iznad praga,
+ *  - budget „unknown” → 20–40 € (isti default kao i inače),
+ *  - drink „unknown” → samo klasične kategorije,
+ *  - redoslijed prijedloga: kombinacija (ako prijeđe prag) → boca → cigara,
+ *    jer ne znamo ni puši li osoba, a boca radi u oba slučaja. */
+const SAFE_DEFAULT_ANSWERS: GiftAnswers = {
+  recipient: "unknown",
+  budget: "unknown",
+  drink: "unknown",
+  intensity: "medium",
+  shape: "unknown",
+};
 
 const BARGAIN_LINE = /\bbundle\b|\bvalue\b|closeout|\bseconds\b|\bbudget\b/i;
 
@@ -126,6 +203,7 @@ function filterByBudget<T>(
   items: T[],
   priceOf: (t: T) => number | null,
   budget: GiftBudget,
+  allowCheaper: boolean,
 ): { items: T[]; fellBack: boolean } {
   let band = resolveBudget(budget);
   let fellBack = false;
@@ -134,7 +212,7 @@ function filterByBudget<T>(
     const p = priceOf(x);
     return p != null && inBudget(p, band);
   });
-  while (filtered.length === 0 && currentBudget !== "unknown") {
+  while (allowCheaper && filtered.length === 0 && currentBudget !== "unknown") {
     const next = BUDGET_FALLBACK[currentBudget];
     if (!next) break;
     currentBudget = next;
@@ -174,8 +252,23 @@ function intensityBodyRange(intensity: GiftIntensity): { min: number; max: numbe
   return intensityStrengthRange(intensity);
 }
 
-function cigarMatchesIntensity(c: Cigar, intensity: GiftIntensity): boolean {
+/** Jačina cigare mora poštovati i odgovor „kakav je navečer” i strop primatelja.
+ *  Kad se ne sijeku („tek je na početku” + „voli jače stvari”), strop pobjeđuje,
+ *  ali se traži najjače što je unutar njega — inače bi presjek bio prazan i
+ *  proturječan par odgovora ne bi dao ništa. */
+function cigarStrengthRange(
+  recipient: GiftRecipient,
+  intensity: GiftIntensity,
+): { min: number; max: number } {
   const { min, max } = intensityStrengthRange(intensity);
+  const cap = recipientStrengthCap(recipient);
+  if (cap == null) return { min, max };
+  if (min > cap) return { min: cap, max: cap };
+  return { min, max: Math.min(max, cap) };
+}
+
+function cigarMatchesIntensity(c: Cigar, recipient: GiftRecipient, intensity: GiftIntensity): boolean {
+  const { min, max } = cigarStrengthRange(recipient, intensity);
   return c.strength >= min && c.strength <= max;
 }
 
@@ -185,8 +278,6 @@ function drinkMatchesIntensity(d: Drink, intensity: GiftIntensity): boolean {
 }
 
 function cigarMatchesRecipient(c: Cigar, recipient: GiftRecipient): boolean {
-  const cap = recipientStrengthCap(recipient);
-  if (cap != null && c.strength > cap) return false;
   if (recipient === "beginner" || recipient === "unknown") {
     const shapes = cigarShapes(c);
     if (shapes.size > 0 && ![...shapes].some((s) => BEGINNER_SHAPES.has(s))) return false;
@@ -199,10 +290,12 @@ function drinkPool(
   pref: GiftDrinkPref,
   region: Region,
   intensity: GiftIntensity,
+  opts?: { ignoreIntensity?: boolean },
 ): Drink[] {
   let pool = drinks.filter((d) => drinkGiftEligible(d, region));
   if (pref !== "unknown") pool = pool.filter((d) => d.category === pref);
-  pool = pool.filter((d) => drinkMatchesIntensity(d, intensity));
+  else pool = pool.filter((d) => CLASSIC_GIFT_CATEGORIES.includes(d.category));
+  if (!opts?.ignoreIntensity) pool = pool.filter((d) => drinkMatchesIntensity(d, intensity));
   return pool.sort(
     (a, b) =>
       (b.qualityScore ?? 0) - (a.qualityScore ?? 0) ||
@@ -221,81 +314,114 @@ function cigarPool(
       (c) =>
         cigarGiftEligible(c, region) &&
         cigarMatchesRecipient(c, recipient) &&
-        cigarMatchesIntensity(c, intensity),
+        cigarMatchesIntensity(c, recipient, intensity),
     )
     .sort(
       (a, b) =>
-        intensityCenterDist(a.strength, intensity) -
-          intensityCenterDist(b.strength, intensity) ||
+        intensityCenterDist(a.strength, recipient, intensity) -
+          intensityCenterDist(b.strength, recipient, intensity) ||
         (cigarPrice(b, region) ?? 0) - (cigarPrice(a, region) ?? 0),
     );
 }
 
-function intensityCenterDist(value: number, intensity: GiftIntensity): number {
-  const { min, max } = intensityStrengthRange(intensity);
+function intensityCenterDist(
+  value: number,
+  recipient: GiftRecipient,
+  intensity: GiftIntensity,
+): number {
+  const { min, max } = cigarStrengthRange(recipient, intensity);
   const center = (min + max) / 2;
   return Math.abs(value - center);
 }
 
-function pairingPick(
+/** Kombinacije iznad praga slaganja, najviše `limit` komada.
+ *
+ *  Jačinu nosi CIGARA (odgovor „kakav je navečer”), a piće bira pairing engine:
+ *  dvostruki filter po jačini izbacivao bi upravo parove koje pravilo body-match
+ *  najbolje ocjenjuje (npr. srednja cigara + puno piće). Prag od 80 % ionako
+ *  jamči da se tijela slažu. */
+function pairingPicks(
   cigars: Cigar[],
   drinks: Drink[],
   answers: GiftAnswers,
   region: Region,
   exclude: Set<string>,
-): GiftPick | null {
+  limit: number,
+  allowCheaper: boolean,
+): GiftPick[] {
   const cigarCandidates = cigarPool(cigars, region, answers.recipient, answers.intensity);
-  const drinkCandidates = drinkPool(drinks, answers.drink, region, answers.intensity);
+  const drinkCandidates = drinkPool(drinks, answers.drink, region, answers.intensity, {
+    ignoreIntensity: true,
+  }).filter((d) => !exclude.has(`d:${d.id}`));
+  if (cigarCandidates.length === 0 || drinkCandidates.length === 0) return [];
+
+  const cheapestDrink = Math.min(...drinkCandidates.map((d) => drinkMid(d) ?? Infinity));
+  const out: GiftPick[] = [];
+  const usedDrinks = new Set<string>();
 
   let currentBudget = answers.budget;
   let fellBack = false;
-  while (true) {
+  while (out.length < limit) {
     const band = resolveBudget(currentBudget);
+    const ceiling = (band.max ?? Infinity) - cheapestDrink + 0.01;
+    // Cigare koje same pojedu cijeli pojas preskačemo odmah — uz njih nijedno
+    // piće ne stane u budžet, a trošile bi mjesta u skeniranju.
     const cigarsInBand = cigarCandidates
       .filter((c) => {
+        if (exclude.has(`c:${c.id}`)) return false;
         const p = cigarPrice(c, region);
-        return p != null && p <= (band.max ?? Infinity) + 0.01;
+        return p != null && p <= ceiling;
       })
-      .sort(
-        (a, b) =>
-          intensityCenterDist(a.strength, answers.intensity) -
-            intensityCenterDist(b.strength, answers.intensity) ||
-          (cigarPrice(b, region) ?? 0) - (cigarPrice(a, region) ?? 0),
-      );
+      .slice(0, PAIR_CIGAR_SCAN);
 
-    for (const cigar of cigarsInBand.slice(0, 16)) {
-      if (exclude.has(`c:${cigar.id}`)) continue;
+    for (const cigar of cigarsInBand) {
+      if (out.length >= limit) break;
       const cp = cigarPrice(cigar, region)!;
-      const drinksFit = drinkCandidates.filter((d) => {
-        const dp = drinkMid(d);
-        return dp != null && inBudget(cp + dp, band);
-      });
+      const drinksFit = drinkCandidates
+        .filter((d) => {
+          if (usedDrinks.has(d.id)) return false;
+          const dp = drinkMid(d);
+          return dp != null && inBudget(cp + dp, band);
+        })
+        // Tijelo pića je najjače pravilo u bodovanju, pa se prvo boduju pića
+        // blizu tijela cigare — inače bi rezanje na PAIR_DRINK_SCAN odsjeklo
+        // baš one koje prelaze prag.
+        .sort(
+          (a, b) =>
+            Math.abs(a.body - cigar.body) - Math.abs(b.body - cigar.body) ||
+            (b.qualityScore ?? 0) - (a.qualityScore ?? 0),
+        )
+        .slice(0, PAIR_DRINK_SCAN);
       if (drinksFit.length === 0) continue;
-      const ranked = pairDrinksForCigar(cigar, drinksFit);
-      const top = ranked[0];
+
+      const top = pairDrinksForCigar(cigar, drinksFit).find(
+        (r) => r.score >= MIN_PAIRING_SCORE && !exclude.has(`pair:${cigar.id}:${r.item.id}`),
+      );
       if (!top) continue;
-      const id = `pair:${cigar.id}:${top.item.id}`;
-      if (exclude.has(id)) continue;
+
       const dp = drinkMid(top.item)!;
-      return {
-        id,
+      usedDrinks.add(top.item.id);
+      out.push({
+        id: `pair:${cigar.id}:${top.item.id}`,
         kind: "pairing",
         cigar,
         drink: top.item,
         price: cp + dp,
         shop: cigarShopName(cigar, region) ?? top.item.shopHR ?? null,
         why: pairingBlurb(cigar, top.item, top.reasons, top.score),
+        matchScore: top.score,
         fellBackBudget: fellBack,
         region,
-      };
+      });
     }
 
+    if (out.length > 0 || !allowCheaper) break;
     const next = currentBudget === "unknown" ? undefined : BUDGET_FALLBACK[currentBudget];
     if (!next) break;
     currentBudget = next;
     fellBack = true;
   }
-  return null;
+  return out;
 }
 
 function bottlePick(
@@ -303,10 +429,15 @@ function bottlePick(
   answers: GiftAnswers,
   region: Region,
   exclude: Set<string>,
+  allowCheaper: boolean,
 ): GiftPick | null {
   const pool = drinkPool(drinks, answers.drink, region, answers.intensity);
-  const { items, fellBack } = filterByBudget(pool, drinkMid, answers.budget);
-  const drink = items.find((d) => !exclude.has(`d:${d.id}`));
+  const { items, fellBack } = filterByBudget(pool, drinkMid, answers.budget, allowCheaper);
+  const free = items.filter((d) => !exclude.has(`d:${d.id}`));
+  // Tri prijedloga iz iste kategorije nisu izbor. Kad korisnik nije rekao što
+  // osoba pije, boca radije dolazi iz kategorije koja još nije upotrijebljena.
+  const drink =
+    free.find((d) => !exclude.has(`cat:${d.category}`)) ?? free[0];
   if (!drink) return null;
   return {
     id: `d:${drink.id}`,
@@ -325,9 +456,15 @@ function cigarPick(
   answers: GiftAnswers,
   region: Region,
   exclude: Set<string>,
+  allowCheaper: boolean,
 ): GiftPick | null {
   const pool = cigarPool(cigars, region, answers.recipient, answers.intensity);
-  const { items, fellBack } = filterByBudget(pool, (c) => cigarPrice(c, region), answers.budget);
+  const { items, fellBack } = filterByBudget(
+    pool,
+    (c) => cigarPrice(c, region),
+    answers.budget,
+    allowCheaper,
+  );
   const cigar = items.find((c) => !exclude.has(`c:${c.id}`));
   if (!cigar) return null;
   return {
@@ -348,50 +485,165 @@ function resolveShape(shape: GiftShape, recipient: GiftRecipient): Exclude<GiftS
   return "pairing";
 }
 
-function takePicks(builders: (() => GiftPick | null)[]): GiftPick[] {
+type PickBuilder = (exclude: Set<string>) => GiftPick | GiftPick[] | null;
+
+/** Gradi do tri prijedloga redom, s rastućim skupom već potrošenih artikala —
+ *  ista cigara ne smije biti i u kombinaciji i kao samostalan prijedlog. */
+function takePicks(exclude: Set<string>, builders: PickBuilder[]): GiftPick[] {
   const out: GiftPick[] = [];
-  const used = new Set<string>();
+  const used = new Set(exclude);
+  const seenIds = new Set<string>();
   for (const build of builders) {
-    const pick = build();
-    if (!pick || used.has(pick.id)) continue;
-    used.add(pick.id);
-    out.push(pick);
     if (out.length >= 3) break;
+    const res = build(used);
+    const list = res == null ? [] : Array.isArray(res) ? res : [res];
+    for (const pick of list) {
+      if (out.length >= 3) break;
+      if (seenIds.has(pick.id)) continue;
+      seenIds.add(pick.id);
+      used.add(pick.id);
+      if (pick.cigar) used.add(`c:${pick.cigar.id}`);
+      if (pick.drink) {
+        used.add(`d:${pick.drink.id}`);
+        used.add(`cat:${pick.drink.category}`);
+      }
+      out.push(pick);
+    }
   }
   return out;
 }
+
+const PRIMARY_KIND: Record<Exclude<GiftShape, "unknown">, GiftPickKind> = {
+  cigar: "cigar",
+  bottle: "drink",
+  pairing: "pairing",
+};
 
 function findGiftsOnce(
   answers: GiftAnswers,
   catalog: GiftCatalog,
   region: Region,
   exclude: Set<string>,
+  opts: { safeDefault: boolean; requirePrimary: boolean; allowCheaper: boolean },
 ): GiftPick[] {
   const shape = resolveShape(answers.shape, answers.recipient);
-  const cigar = () => cigarPick(catalog.cigars, answers, region, exclude);
-  const bottle = () => bottlePick(catalog.drinks, answers, region, exclude);
-  const pair = () => pairingPick(catalog.cigars, catalog.drinks, answers, region, exclude);
+  const cheap = opts.allowCheaper;
+  const cigar: PickBuilder = (ex) => cigarPick(catalog.cigars, answers, region, ex, cheap);
+  const bottle: PickBuilder = (ex) => bottlePick(catalog.drinks, answers, region, ex, cheap);
+  const pairs =
+    (limit: number): PickBuilder =>
+    (ex) =>
+      pairingPicks(catalog.cigars, catalog.drinks, answers, region, ex, limit, cheap);
 
-  if (answers.recipient === "drinks-only") {
-    const first = bottle();
-    const skip = new Set(exclude);
-    if (first) skip.add(first.id);
-    const second = bottlePick(catalog.drinks, answers, region, skip);
-    return [first, second].filter(Boolean) as GiftPick[];
+  const picks = (() => {
+    if (answers.recipient === "drinks-only") return takePicks(exclude, [bottle, bottle]);
+    switch (shape) {
+      case "cigar":
+        return takePicks(exclude, [cigar, pairs(1), bottle]);
+      case "bottle":
+        return takePicks(exclude, [bottle, pairs(1), cigar]);
+      case "pairing":
+        // Tražena je kombinacija → nudimo do tri kombinacije, a ne jednu pa
+        // dvije samostalne stvari.
+        //
+        // Kod svih pet „ne znam” radimo obrnuto: jedna kombinacija, pa boca, pa
+        // cigara. Ne znamo ni puši li osoba, pa je bolje pokriti tri različita
+        // scenarija nego tri varijante istoga; boca ide ispred cigare jer radi
+        // u oba slučaja.
+        return takePicks(
+          exclude,
+          opts.safeDefault ? [pairs(1), bottle, cigar] : [pairs(3), cigar, bottle],
+        );
+      default: {
+        const _exhaustive: never = shape;
+        return _exhaustive;
+      }
+    }
+  })();
+
+  // Dok ljestvica popuštanja još ima koraka, pokušaj se broji kao neuspješan
+  // ako nema traženog oblika: inače bi cigara „za popunu” pojela korak u kojem
+  // bi susjedna kategorija dala pravu kombinaciju.
+  if (opts.requirePrimary) {
+    const wanted =
+      answers.recipient === "drinks-only" ? "drink" : PRIMARY_KIND[shape];
+    if (!picks.some((p) => p.kind === wanted)) return [];
   }
+  return picks;
+}
 
-  switch (shape) {
-    case "cigar":
-      return takePicks([cigar, pair, bottle]);
-    case "bottle":
-      return takePicks([bottle, pair, cigar]);
-    case "pairing":
-      return takePicks([pair, cigar, bottle]);
-    default: {
-      const _exhaustive: never = shape;
-      return _exhaustive;
+interface GiftAttempt {
+  answers: GiftAnswers;
+  /** Tražena kategorija pića, kad se odstupilo od nje. */
+  swappedFromCategory?: DrinkCategory;
+  /** Kombinacija je pala ispod praga, pa se cigara i piće nude zasebno. */
+  droppedPairing?: boolean;
+  /** Smije se sići u niži cjenovni pojas (nikad u viši). */
+  allowCheaper?: boolean;
+  /** Zadnji koraci uzimaju što god ima — bolje išta nego prazan ekran. */
+  lenient?: boolean;
+}
+
+/** Ljestvica popuštanja. Redoslijed nije slučajan — ide od najmanjeg ustupka
+ *  prema najvećem:
+ *
+ *    1. sve točno kako je rečeno,
+ *    2. SUSJEDNA kategorija pića (pa bilo koja klasična) — isti budžet, ista jačina,
+ *    3. isto to, ali s niže police (nikad skuplje od odgovora),
+ *    4. drugi OBLIK poklona (kombinacija → cigara i boca zasebno).
+ *
+ *  Zamjena kategorije ide PRIJE spuštanja cijene: budžet je korisnikovo tvrdo
+ *  ograničenje, a kategorija je pretpostavka o tuđem ukusu. */
+function buildAttempts(answers: GiftAnswers): GiftAttempt[] {
+  const out: GiftAttempt[] = [];
+  const requested = answers.drink;
+  const shape = resolveShape(answers.shape, answers.recipient);
+  // Kod „samo cigara” kategorija pića ne mijenja glavni prijedlog, pa se
+  // ljestvica kategorija preskače.
+  const categoryLadder: GiftDrinkPref[] =
+    shape === "cigar" || requested === "unknown"
+      ? []
+      : [...neighbourCategories(requested), "unknown"];
+
+  for (const allowCheaper of [false, true]) {
+    out.push({ answers, allowCheaper });
+    for (const cat of categoryLadder) {
+      out.push({
+        answers: { ...answers, drink: cat },
+        swappedFromCategory: requested === "unknown" ? undefined : requested,
+        allowCheaper,
+      });
     }
   }
+
+  if (shape === "pairing") {
+    // Nijedna kategorija nije dala par iznad praga: radije cigara i boca
+    // zasebno nego kombinacija koja ne ide.
+    out.push({
+      answers: { ...answers, shape: "cigar" },
+      droppedPairing: true,
+      allowCheaper: true,
+      lenient: true,
+    });
+    out.push({
+      answers: { ...answers, drink: "unknown", shape: "cigar" },
+      droppedPairing: true,
+      swappedFromCategory: requested === "unknown" ? undefined : requested,
+      allowCheaper: true,
+      lenient: true,
+    });
+  }
+  if (shape === "cigar") {
+    out.push({ answers: { ...answers, shape: "bottle" }, allowCheaper: true, lenient: true });
+  }
+  if (shape === "bottle") {
+    out.push({ answers: { ...answers, shape: "cigar" }, allowCheaper: true, lenient: true });
+  }
+  // Posljednji korak nikad ne inzistira na obliku — ako u katalogu uopće ima
+  // nečega za ovo tržište, prijedlog izlazi.
+  out.push({ answers, allowCheaper: true, lenient: true });
+
+  return out;
 }
 
 export function findGifts(
@@ -402,25 +654,37 @@ export function findGifts(
 ): GiftPick[] {
   const region = giftRegion(market);
   const exclude = new Set(opts?.excludeIds ?? []);
+  const safeDefault = isBlankGiftAnswers(answers);
+  const effective = safeDefault ? SAFE_DEFAULT_ANSWERS : answers;
 
-  const attempts: GiftAnswers[] = [answers];
-  if (answers.drink !== "unknown") {
-    attempts.push({ ...answers, drink: "unknown" });
-  }
-  if (answers.shape === "pairing") {
-    attempts.push({ ...answers, drink: "unknown", shape: "cigar" });
-    attempts.push({ ...answers, drink: "unknown", shape: "bottle" });
-  }
-  if (answers.shape === "cigar") {
-    attempts.push({ ...answers, shape: "bottle" });
+  const annotate = (picks: GiftPick[], attempt: GiftAttempt): GiftPick[] =>
+    picks.map((pick) => ({
+      ...pick,
+      ...(safeDefault ? { safeDefault: true } : null),
+      ...(attempt.droppedPairing ? { droppedPairing: true } : null),
+      ...(attempt.swappedFromCategory != null &&
+      pick.drink != null &&
+      pick.drink.category !== attempt.swappedFromCategory
+        ? { swappedFromCategory: attempt.swappedFromCategory }
+        : null),
+    }));
+
+  // Prvi korak koji zadovolji traženi oblik pobjeđuje. Kad se siđe na popustljive
+  // korake, jedan usamljen prijedlog nije dobar ishod — zapamti ga, ali nastavi
+  // tražiti korak koji nudi barem dvije stvari (npr. cigaru i bocu zasebno).
+  let best: GiftPick[] = [];
+  for (const attempt of buildAttempts(effective)) {
+    const picks = findGiftsOnce(attempt.answers, catalog, region, exclude, {
+      safeDefault,
+      requirePrimary: !attempt.lenient,
+      allowCheaper: Boolean(attempt.allowCheaper),
+    });
+    if (picks.length === 0) continue;
+    if (!attempt.lenient || picks.length >= 2) return annotate(picks, attempt);
+    if (best.length === 0) best = annotate(picks, attempt);
   }
 
-  for (const attempt of attempts) {
-    const picks = findGiftsOnce(attempt, catalog, region, exclude);
-    if (picks.length > 0) return picks;
-  }
-
-  return [];
+  return best;
 }
 
 export function allGiftAnswerCombos(): GiftAnswers[] {
