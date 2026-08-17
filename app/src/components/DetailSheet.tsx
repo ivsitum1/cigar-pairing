@@ -43,7 +43,7 @@ import { isSampler, samplerPieceCount } from "../lib/samplerStock";
 import { Chip, Meter } from "./ui";
 import { BackButton } from "./BackButton";
 import { ProductThumb } from "./ProductThumb";
-import { productImageUrl } from "../lib/productImage";
+import { productPhoto } from "../lib/productImage";
 import { FavoriteStar } from "./FavoriteStar";
 import { LastCigarPrompt } from "./LastCigarPrompt";
 import { VitolaPicker } from "./VitolaPicker";
@@ -262,7 +262,7 @@ function CigarDetails({
   const description = cigarDescription(cigar, lang);
   const brand = brandInfo(cigar.brand);
   const displayBrand = brandDisplayName(cigar.brand, market);
-  const photo = productImageUrl("cigar", cigar.id);
+  const photo = productPhoto("cigar", cigar.id);
   const vitolaCrumb =
     cigar.vitolas.length === 1 ? cigar.vitolas[0].name : cigar.vitola;
   // Bez odabranog tržišta ("Sve") cijena zna doći iz EU/USA kataloga — reci
@@ -332,7 +332,8 @@ function CigarDetails({
         </div>
         {photo && (
           <ProductThumb
-            src={photo}
+            src={photo.src}
+            treatment={photo.treatment}
             alt={`${displayBrand} ${cigar.line}`}
           />
         )}
@@ -512,7 +513,7 @@ function DrinkDetails({
   const style = STYLE_LABELS[drink.style];
   const availability = drinkAvailabilityHR(drink);
   const brand = drinkBrand(drink.id);
-  const photo = productImageUrl("drink", drink.id);
+  const photo = productPhoto("drink", drink.id);
   return (
     <>
       <div className="flex items-start justify-between gap-3">
@@ -534,7 +535,8 @@ function DrinkDetails({
         <div className="flex shrink-0 items-start gap-2">
           {photo && (
             <ProductThumb
-              src={photo}
+              src={photo.src}
+              treatment={photo.treatment}
               alt={lx(drinkNameLoc(drink))}
             />
           )}

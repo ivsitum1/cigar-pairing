@@ -5,4 +5,5 @@ dev-dist
 .DS_Store
 tsconfig.tsbuildinfo
 scripts/output/cigar_unified_catalog.json
+scripts/output/product-images/
 scripts/.cache/
