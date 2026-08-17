@@ -49,6 +49,7 @@ jobs:
           python scripts/normalize-profile-axes.py --check
           python scripts/merge-cigarworld-aroma.py --check
           python scripts/apply-taste-reports.py --check
+          python scripts/merge-leaf-details.py --check
       - name: HR availability reconcile logic
         working-directory: app
         run: python scripts/test_reconcile_hr.py
@@ -61,6 +62,16 @@ jobs:
       - name: Dojmovi iz prijave (izvlačenje bloka, prosjek više ocjenjivača)
         working-directory: app
         run: python scripts/test_taste_reports.py
+      - name: List i punjenje iz dućanskih redaka (kubansko sjeme ≠ kubanski duhan)
+        working-directory: app
+        run: python scripts/test_merge_leaf_details.py
+      # Obrada slika treba Pillow; instalira se samo za ovaj korak, aplikacija
+      # ga ne koristi (slike se obradjuju lokalno, u repo ulazi gotov WebP).
+      - name: Ujednačavanje podloga na fotografijama proizvoda
+        working-directory: app
+        run: |
+          pip install --quiet Pillow
+          python scripts/test_product_image_lib.py
 
       # NEBLOKIRAJUCI — oba padaju i na cistom `master` HEAD-u, prije ovog PR-a:
       #   * taxonomy-audit: 1351 novih linija bez taksonomije preko 132 marke,

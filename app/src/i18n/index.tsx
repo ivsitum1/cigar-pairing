@@ -735,6 +735,8 @@ const STRINGS = {
   "leaf.binder": { hr: "Vezni list", en: "Binder" },
   "leaf.filler": { hr: "Punjenje", en: "Filler" },
   "leaf.puro": { hr: "Puro", en: "Puro" },
+  // fotografija proizvoda — potpis ispod slike govori s cijeg je duckana
+  "photo.source": { hr: "foto:", en: "photo:" },
   // sortiranje
   "sort.label": { hr: "Poredaj", en: "Sort" },
   "sort.quality": { hr: "Kvaliteta", en: "Quality" },

@@ -69,6 +69,13 @@ indeksima rangiranim po kvaliteti za sipping uz cigaru.
   - `scripts/enrich-cigars.py` — vitole/cijene/linkovi iz humidor.hr scrape podataka
   - `scripts/profile-cigars.py` — obogaćuje cigare bez profila (prazan flavorTags →
     izvodi snagu/tijelo/wrapper/okuse iz wrappera, marke i bilješki)
+  - `scripts/merge-leaf-details.py` — vezni list i punjenje (sorta + podrijetlo) iz
+    `neptune_raw.json` i `cigarworld_flavor_raw.json`; popunjava samo prazno,
+    `--check` je CI gate, `--dry-run` ispisuje što bi upisao
+  - `scripts/scrape-product-images.py` — fotografije proizvoda s dućanskih stranica
+    koje katalog već zna (`og:image` → `scripts/output/product-images/raw/`, git-ignorirano)
+  - `scripts/normalize-product-images.py` — miče podlogu s tih fotografija i sprema
+    WebP u `public/img/products/` + popis u `src/data/productImages.json` (traži Pillow)
   - `scripts/dedupe-data.py` — uklanja duple ID-jeve nakon regeneracije (pokreni zadnje)
   - `scripts/build-world-outline.mjs` — generira `src/data/world_outline.json`
     (monokromni atlas za Club kartu) iz Natural Earth land TopoJSON-a
@@ -294,3 +301,42 @@ python scripts/pipeline.py --category tequila --scrape
 
 Izvor: [allez.hr/shop/tequila-mezcal](https://allez.hr/shop/tequila-mezcal).
 Mixto/aromatizirano van MASTER-a; mezcal u MASTER samo uz quality ≥ 7.
+
+## Fotografije proizvoda (cigare i boce)
+
+Kartica cigare i kartica boce nose fotografiju proizvoda iznad naziva. Slike
+dolaze s istih dućanskih stranica koje katalog već drži u podacima
+(`vitolas[].url`, `regionLinks`, `priceUrl`) — ništa se ne pretražuje i ništa
+se ne pogađa.
+
+**Problem koji rješava obrada.** Svaki dućan snima na svojoj podlozi: Humidor i
+CigarWorld na bijeloj, Neptune često na crnoj, Allez na smeđem drvu. Poredane u
+istoj kartici izgledaju kao da su iz tri različite aplikacije.
+
+**Rješenje.** Podloga se ne prebojava u jednu boju nego se **miče** — postaje
+prozirna, pa slika sjedne na pozadinu koju crta sama aplikacija. Ujednačenost je
+time posljedica, a ne pogađanje nijanse: promijeni li se tema kartice, slike idu
+za njom bez ponovne obrade.
+
+Podloga se čita s vijenca piksela uz rub slike (proizvod je u sredini). Miču se
+samo pikseli koji su boje podloge **i** povezani s rubom — zato bijeli natpis na
+cigari preživi bijelu podlogu umjesto da ostane rupa. Fotografija bez jednolične
+podloge (ruka, stol, ambijent) se **ne** reže: dobiva oznaku `framed` i prikazuje
+se u okviru. Uz izrez ide i blago poravnanje svjetline, pa podsvijetlo i
+presvijetlo snimljen proizvod ne odskaču jedan od drugoga.
+
+```powershell
+cd app
+pip install Pillow
+python scripts/scrape-product-images.py --kind cigars   # traži mrežu, radi lokalno
+python scripts/scrape-product-images.py --kind drinks
+python scripts/normalize-product-images.py              # obrada + popis za app
+```
+
+Originali ostaju u `scripts/output/product-images/raw/` i **ne idu u git** (tuđe
+fotografije u punoj veličini). U repo ulazi samo obrađeni WebP u
+`public/img/products/` i popis `src/data/productImages.json`.
+
+Dok slika nema, popis je prazan i kartica se crta točno kao prije — nijedan
+zaslon ne ovisi o tome je li skripta pokrenuta. Ispod slike stoji potpis s
+domenom s koje je preuzeta.

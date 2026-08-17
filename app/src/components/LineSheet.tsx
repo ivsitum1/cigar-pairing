@@ -5,6 +5,8 @@ import type { Cigar, Vitola } from "../types";
 import { brandInfo, brandDisplayName, resolveCigarId } from "../data";
 import { useI18n } from "../i18n";
 import { TasteMeters } from "./TasteMeters";
+import { ProductPhoto } from "./ProductPhoto";
+import { cigarImage } from "../lib/productImage";
 import { BackButton } from "./BackButton";
 import { uniqueVitolas } from "../lib/cigarVitola";
 import { formatEur, vitolaPriceForMarket } from "../lib/cigarPrice";
@@ -51,6 +53,12 @@ export function LineSheet({
         <div className="mb-3">
           <BackButton onClick={onClose}>{t("common.back")}</BackButton>
         </div>
+
+        <ProductPhoto
+          image={cigarImage(cigar.id)}
+          alt={`${displayBrand} ${cigar.line}`}
+          kind="cigar"
+        />
 
         <div className="text-xs text-dim">
           {onOpenBrand ? (

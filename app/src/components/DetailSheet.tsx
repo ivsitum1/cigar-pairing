@@ -41,6 +41,8 @@ import {
 } from "../lib/stockOwnership";
 import { isSampler, samplerPieceCount } from "../lib/samplerStock";
 import { Chip, Meter } from "./ui";
+import { ProductPhoto } from "./ProductPhoto";
+import { cigarImage, drinkImage } from "../lib/productImage";
 import { BackButton } from "./BackButton";
 import { FavoriteStar } from "./FavoriteStar";
 import { LastCigarPrompt } from "./LastCigarPrompt";
@@ -268,6 +270,11 @@ function CigarDetails({
     market === "ALL" && region && region !== "HR" ? ` ${region}` : "";
   return (
     <>
+      <ProductPhoto
+        image={cigarImage(cigar.id)}
+        alt={`${displayBrand} ${cigar.line}`}
+        kind="cigar"
+      />
       {/* Brand › Line › Vitola — svaki crumb navigira gore */}
       <div className="mb-2 flex flex-wrap items-center gap-x-1.5 text-xs text-dim">
         {onOpenBrand ? (
@@ -501,6 +508,7 @@ function DrinkDetails({
   const brand = drinkBrand(drink.id);
   return (
     <>
+      <ProductPhoto image={drinkImage(drink.id)} alt={lx(drinkNameLoc(drink))} kind="drink" />
       <div className="flex items-start justify-between gap-3">
         <div className="min-w-0">
           <div className="font-display text-xl text-papir">{lx(drinkNameLoc(drink))}</div>

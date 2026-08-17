@@ -25,8 +25,11 @@ python scripts/apply-taxonomy.py --check --skip-normalize
 python scripts/normalize-vitolas.py --check
 python scripts/taxonomy-audit.py --fail-on-new --check-only
 python scripts/apply-cigar-descriptions.py --check
+python scripts/merge-leaf-details.py --check
 python scripts/test_reconcile_hr.py
 python scripts/test_taxonomy_lib.py
+python scripts/test_merge_leaf_details.py
+python scripts/test_product_image_lib.py   # traži Pillow; CI ga instalira za taj korak
 ```
 A separate `backend` job runs `python -m unittest discover -s tests` in `backend/`.
 
@@ -36,6 +39,17 @@ A separate `backend` job runs `python -m unittest discover -s tests` in `backend
 - Exchange rates (`USD_TO_EUR`, `GBP_TO_EUR`, `CHF_TO_EUR`) live in `app/scripts/shop_common.py` with a date comment. Update them together with each quarterly scrape.
 - One-shot baseline stamp (offline, no network): `python scripts/stamp-fetched-at-baseline.py`. Sets `fetchedAt = 2026-07-01` on every price that lacks it. Run once after the W3 PR merges, then re-export with `export-indexes.py`.
 - UI: the DetailSheet shows "Cijena preuzeta {date}." when `fetchedAt` is present; prices older than 90 days show an orange stale warning. When `fetchedAt` is absent the generic market note is shown instead.
+
+### Fotografije proizvoda
+- Kartica cigare i boce prikazuje sliku iz `app/public/img/products/<vrsta>/<id>.webp`,
+  a popis (dimenzije, postupak, izvor) živi u `app/src/data/productImages.json`.
+- **Slike nisu preduvjet.** Kad je popis prazan, `lib/productImage.ts` vraća `null`
+  i kartica se crta bez pojasa sa slikom — nijedan test ni build ne ovisi o njima.
+- Dobavljanje ide lokalno (`scripts/scrape-product-images.py`, treba mrežu prema
+  dućanima), obrada s Pillowom (`scripts/normalize-product-images.py`). Originali u
+  `scripts/output/product-images/` su git-ignorirani; u repo ulazi samo obrađeni WebP.
+- Podloga se **miče u prozirno**, ne prebojava. Fotografija bez jednolične podloge
+  se ne reže nego dobiva `framed` i ide u okvir.
 
 ### Non-obvious notes
 - The dev server serves the app under the base path **`/cigar-pairing/`**, not `/`. Open `http://localhost:5173/cigar-pairing/` — the bare root path will not render the app. This base is set in `app/vite.config.ts` to match the GitHub Pages repo name.
