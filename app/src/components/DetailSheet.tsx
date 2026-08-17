@@ -42,6 +42,8 @@ import {
 import { isSampler, samplerPieceCount } from "../lib/samplerStock";
 import { Chip, Meter } from "./ui";
 import { BackButton } from "./BackButton";
+import { ProductThumb } from "./ProductThumb";
+import { productImageUrl } from "../lib/productImage";
 import { FavoriteStar } from "./FavoriteStar";
 import { LastCigarPrompt } from "./LastCigarPrompt";
 import { VitolaPicker } from "./VitolaPicker";
@@ -260,6 +262,7 @@ function CigarDetails({
   const description = cigarDescription(cigar, lang);
   const brand = brandInfo(cigar.brand);
   const displayBrand = brandDisplayName(cigar.brand, market);
+  const photo = productImageUrl("cigar", cigar.id);
   const vitolaCrumb =
     cigar.vitolas.length === 1 ? cigar.vitolas[0].name : cigar.vitola;
   // Bez odabranog tržišta ("Sve") cijena zna doći iz EU/USA kataloga — reci
@@ -301,27 +304,37 @@ function CigarDetails({
         ) : null}
       </div>
 
-      <div className="font-display text-xl text-papir">
-        {displayBrand}{" "}
-        <span className="text-zlato-2">{cigar.line}</span>
-        {vitolaCrumb && vitolaCrumb !== cigar.line ? (
-          <span className="text-papir/80"> · {vitolaCrumb}</span>
-        ) : null}
-      </div>
-      <div className="mt-1 text-sm text-dim">
-        {cn(cigar.country)} · {cigar.wrapper}
-        {cigar.isPuro === true ? ` · ${t("leaf.puro")}` : null}
-        {onOpenBrand && (
-          <>
-            {" · "}
-            <button
-              type="button"
-              onClick={() => onOpenBrand(cigar.brand)}
-              className="text-zlato hover:text-zlato-2"
-            >
-              {t("brand.viewAll")} →
-            </button>
-          </>
+      <div className="flex items-start gap-3">
+        <div className="min-w-0 flex-1">
+          <div className="font-display text-xl text-papir">
+            {displayBrand}{" "}
+            <span className="text-zlato-2">{cigar.line}</span>
+            {vitolaCrumb && vitolaCrumb !== cigar.line ? (
+              <span className="text-papir/80"> · {vitolaCrumb}</span>
+            ) : null}
+          </div>
+          <div className="mt-1 text-sm text-dim">
+            {cn(cigar.country)} · {cigar.wrapper}
+            {cigar.isPuro === true ? ` · ${t("leaf.puro")}` : null}
+            {onOpenBrand && (
+              <>
+                {" · "}
+                <button
+                  type="button"
+                  onClick={() => onOpenBrand(cigar.brand)}
+                  className="text-zlato hover:text-zlato-2"
+                >
+                  {t("brand.viewAll")} →
+                </button>
+              </>
+            )}
+          </div>
+        </div>
+        {photo && (
+          <ProductThumb
+            src={photo}
+            alt={`${displayBrand} ${cigar.line}`}
+          />
         )}
       </div>
       {(cigar.wrapperOrigin || cigar.binderOrigin || cigar.fillerOrigin) && (
@@ -499,10 +512,11 @@ function DrinkDetails({
   const style = STYLE_LABELS[drink.style];
   const availability = drinkAvailabilityHR(drink);
   const brand = drinkBrand(drink.id);
+  const photo = productImageUrl("drink", drink.id);
   return (
     <>
       <div className="flex items-start justify-between gap-3">
-        <div className="min-w-0">
+        <div className="min-w-0 flex-1">
           <div className="font-display text-xl text-papir">{lx(drinkNameLoc(drink))}</div>
           {brand &&
             (onOpenBrand ? (
@@ -517,7 +531,15 @@ function DrinkDetails({
               <div className="mt-0.5 text-xs uppercase tracking-widest text-dim">{brand}</div>
             ))}
         </div>
-        {brand && <FavoriteStar kind="drink" brand={brand} />}
+        <div className="flex shrink-0 items-start gap-2">
+          {photo && (
+            <ProductThumb
+              src={photo}
+              alt={lx(drinkNameLoc(drink))}
+            />
+          )}
+          {brand && <FavoriteStar kind="drink" brand={brand} />}
+        </div>
       </div>
       <div className="mt-1 text-sm text-dim">
         {style ? lx(style) : drink.style} · {rgn(drink.region)}

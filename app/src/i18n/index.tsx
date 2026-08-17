@@ -422,6 +422,7 @@ const STRINGS = {
   "common.process": { hr: "Obrada", en: "Process" },
   "common.species": { hr: "Vrsta", en: "Species" },
   "common.cigarHint": { hr: "Uz cigaru", en: "With a cigar" },
+  "common.productPhoto": { hr: "Slika proizvoda", en: "Product photo" },
   "common.close": { hr: "Zatvori", en: "Close" },
   "common.time": { hr: "Vrijeme", en: "Time" },
   "common.shop": { hr: "Trgovina", en: "Shop" },
