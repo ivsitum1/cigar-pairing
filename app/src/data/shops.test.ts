@@ -65,6 +65,29 @@ describe("Tobacco Petica (Branimir centar)", () => {
   });
 });
 
+describe("Aficionado (Zagreb)", () => {
+  it("registriran je kao HR trgovina bez web kataloga", () => {
+    const shop = SHOPS.find((s) => s.id === "aficionado-zg");
+    expect(shop).toBeDefined();
+    expect(shop?.name).toBe("Aficionado");
+    expect(shop?.region).toBe("HR");
+    expect(shop?.walkIn).toBe(true);
+    expect(shop?.productHost).toBeUndefined();
+    expect(shop?.home).toBe("https://www.aficionado.hr/");
+    // bez kataloga nema smislene pretrage po proizvodu — oba vode na naslovnicu
+    expect(shop?.search("cohiba")).toBe(shop?.home);
+  });
+
+  it("ne dodaje link po proizvodu nijednoj HR cigari", () => {
+    const hr = cigars.filter((c) => c.markets.includes("HR")).slice(0, 40);
+    expect(hr.length).toBeGreaterThan(0);
+    for (const c of hr) {
+      const urls = cigarShopLinks(c).map((l) => l.url);
+      expect(urls.some((u) => u.includes("aficionado.hr")), c.id).toBe(false);
+    }
+  });
+});
+
 describe("EU UK / Švicarska referentne trgovine", () => {
   it("C.Gars Ltd (UK) i La Couronne (CH) su u EU registru", () => {
     const uk = SHOPS.find((s) => s.id === "cgars-uk");
