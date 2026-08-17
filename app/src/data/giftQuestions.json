@@ -1,0 +1,156 @@
+[
+  {
+    "id": "recipient",
+    "prompt": {
+      "hr": "Kako stoji s cigarom?",
+      "en": "How do they stand with cigars?"
+    },
+    "options": [
+      {
+        "id": "regular",
+        "label": {
+          "hr": "Već je navika",
+          "en": "Already a habit"
+        }
+      },
+      {
+        "id": "beginner",
+        "label": {
+          "hr": "Tek je na početku",
+          "en": "Just getting started"
+        }
+      },
+      {
+        "id": "drinks-only",
+        "label": {
+          "hr": "Ne puši — poklon je piće",
+          "en": "Doesn't smoke — the gift is a drink"
+        }
+      },
+      {
+        "id": "unknown",
+        "label": {
+          "hr": "Ne znam",
+          "en": "Not sure"
+        }
+      }
+    ]
+  },
+  {
+    "id": "budget",
+    "prompt": {
+      "hr": "Koliko želiš potrošiti?",
+      "en": "What is your budget?"
+    },
+    "options": [
+      {
+        "id": "under20",
+        "label": { "hr": "Do 20 €", "en": "Up to €20" }
+      },
+      {
+        "id": "20to40",
+        "label": { "hr": "20–40 €", "en": "€20–40" }
+      },
+      {
+        "id": "40to60",
+        "label": { "hr": "40–60 €", "en": "€40–60" }
+      },
+      {
+        "id": "60to100",
+        "label": { "hr": "60–100 €", "en": "€60–100" }
+      },
+      {
+        "id": "unknown",
+        "label": { "hr": "Ne znam", "en": "Not sure" }
+      }
+    ]
+  },
+  {
+    "id": "intensity",
+    "prompt": {
+      "hr": "Kakav je navečer?",
+      "en": "What are they like in the evening?"
+    },
+    "options": [
+      {
+        "id": "mild",
+        "label": {
+          "hr": "Tihi, spor, voli mir",
+          "en": "Quiet, slow, likes peace"
+        }
+      },
+      {
+        "id": "medium",
+        "label": {
+          "hr": "Društven, voli stol",
+          "en": "Sociable, likes the table"
+        }
+      },
+      {
+        "id": "bold",
+        "label": {
+          "hr": "Oštar, voli jače stvari",
+          "en": "Sharp, likes stronger things"
+        }
+      },
+      {
+        "id": "unknown",
+        "label": {
+          "hr": "Ne znam",
+          "en": "Not sure"
+        }
+      }
+    ]
+  },
+  {
+    "id": "drink",
+    "prompt": {
+      "hr": "Što voli u čaši?",
+      "en": "What do they like in the glass?"
+    },
+    "options": [
+      { "id": "whisky", "label": { "hr": "Whisky", "en": "Whisky" } },
+      { "id": "rum", "label": { "hr": "Rum", "en": "Rum" } },
+      { "id": "brandy", "label": { "hr": "Konjak / brandy", "en": "Brandy / cognac" } },
+      { "id": "wine", "label": { "hr": "Vino", "en": "Wine" } },
+      { "id": "unknown", "label": { "hr": "Ne znam", "en": "Not sure" } }
+    ]
+  },
+  {
+    "id": "shape",
+    "prompt": {
+      "hr": "Kakav poklon?",
+      "en": "What kind of gift?"
+    },
+    "options": [
+      {
+        "id": "cigar",
+        "label": {
+          "hr": "Cigara",
+          "en": "A cigar"
+        }
+      },
+      {
+        "id": "bottle",
+        "label": {
+          "hr": "Boca",
+          "en": "A bottle"
+        }
+      },
+      {
+        "id": "pairing",
+        "label": {
+          "hr": "Cigara i piće",
+          "en": "Cigar and drink"
+        }
+      },
+      {
+        "id": "unknown",
+        "label": {
+          "hr": "Ne znam",
+          "en": "Not sure"
+        }
+      }
+    ]
+  }
+]
