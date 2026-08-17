@@ -19,6 +19,7 @@ import { EveningSessionSheet } from "../components/EveningSessionSheet";
 import { getItemState, useCollection } from "../store/collection";
 import { totalStock, lineTotalStock, useHumidors } from "../store/humidor";
 import { useMarket } from "../store/market";
+import { navigate } from "../store/route";
 import { isRestockItem, isShoppingWishlistItem } from "../lib/shoppingWishlist";
 import {
   cigarItemId,
@@ -304,6 +305,18 @@ export function ShoppingPage({
 
   return (
     <div className="pb-4">
+      <SectionTitle>{t("gift.nav")}</SectionTitle>
+      <div className="mb-6 rounded-xl border border-zlato/25 bg-cedar p-4">
+        <p className="text-sm leading-relaxed text-papir/90">{t("gift.entryTeaser")}</p>
+        <button
+          type="button"
+          onClick={() => navigate({ page: "shopping", shopping: "gift" })}
+          className="mt-3 w-full rounded-lg border border-zlato/40 py-2.5 font-display text-xs uppercase tracking-widest text-zlato hover:bg-zlato/10"
+        >
+          {t("gift.entryOpen")} →
+        </button>
+      </div>
+
       {/* ☆ 1) lista zelja + dopuna zalihe — dva popisa, ne jedan */}
       <SectionTitle>☆ {t("coll.wishlistTitle")}</SectionTitle>
       {buyEntries.length === 0 ? (
