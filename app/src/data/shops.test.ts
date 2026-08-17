@@ -65,6 +65,32 @@ describe("Tobacco Petica (Branimir centar)", () => {
   });
 });
 
+describe("availabilityHR imena", () => {
+  // Ista trgovina znala je stajati pod dva imena ("Havana Shop" na 291 cigari,
+  // "Havana Cigar Shop" na 7). Ime iz availabilityHR ide u prikaz i u poklon
+  // („Trgovina: …"), pa mora doslovno odgovarati registru iz shops.ts.
+  it("svako ime je registrirana HR trgovina", () => {
+    const known = new Set(SHOPS.filter((s) => s.region === "HR").map((s) => s.name));
+    const seen = new Set<string>();
+    for (const c of cigars) for (const name of c.availabilityHR) seen.add(name);
+    expect(seen.size).toBeGreaterThan(0);
+    expect([...seen].filter((n) => !known.has(n))).toEqual([]);
+  });
+
+  it("Havana Cigar Shop je jedini oblik tog imena", () => {
+    const raw = JSON.stringify(cigars);
+    expect(raw).not.toContain("Havana Shop");
+    const havana = cigars.filter((c) => c.availabilityHR.includes("Havana Cigar Shop"));
+    expect(havana.length).toBeGreaterThan(250);
+  });
+
+  it("nijedna cigara ne navodi istu trgovinu dvaput", () => {
+    for (const c of cigars) {
+      expect(new Set(c.availabilityHR).size, c.id).toBe(c.availabilityHR.length);
+    }
+  });
+});
+
 describe("Aficionado (Zagreb)", () => {
   it("registriran je kao HR trgovina bez web kataloga", () => {
     const shop = SHOPS.find((s) => s.id === "aficionado-zg");
