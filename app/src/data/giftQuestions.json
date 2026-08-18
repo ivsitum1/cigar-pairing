@@ -60,6 +60,10 @@
         "label": { "hr": "60–100 €", "en": "€60–100" }
       },
       {
+        "id": "over100",
+        "label": { "hr": "100 € i više", "en": "€100+" }
+      },
+      {
         "id": "unknown",
         "label": { "hr": "Ne znam", "en": "Not sure" }
       }

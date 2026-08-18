@@ -3,17 +3,23 @@ import { ALL_DRINKS, CIGARS } from "../data";
 import { scorePairing } from "../engine/pairing";
 import {
   allGiftAnswerCombos,
+  bucketForDrink,
   cigarGiftEligible,
   drinkGiftEligible,
   findGifts,
   giftRegion,
+  giftShelfApplies,
   isBlankGiftAnswers,
   MIN_GIFT_QUALITY,
   MIN_PAIRING_SCORE,
   neighbourCategories,
+  OWNED_STYLES_NONE,
+  uncoveredStyleBuckets,
+  visibleGiftSteps,
   type GiftAnswers,
   type GiftBudget,
 } from "./giftFinder";
+import { BUCKETS } from "./shoppingPicks";
 
 const CATALOG = { cigars: CIGARS, drinks: ALL_DRINKS };
 
@@ -22,6 +28,7 @@ const BAND_MAX: Record<GiftBudget, number> = {
   "20to40": 40,
   "40to60": 60,
   "60to100": 100,
+  over100: Number.POSITIVE_INFINITY,
   unknown: 40,
 };
 
@@ -74,7 +81,7 @@ describe("giftFinder", () => {
   });
 
   it("budžet se nikad ne prekorači — boca, cigara i kombinacija", () => {
-    const budgets: GiftBudget[] = ["under20", "20to40", "40to60", "60to100"];
+    const budgets: GiftBudget[] = ["under20", "20to40", "40to60", "60to100", "over100"];
     const shapes = ["bottle", "cigar", "pairing"] as const;
     for (const budget of budgets) {
       for (const shape of shapes) {
@@ -95,7 +102,7 @@ describe("giftFinder", () => {
         }
       }
     }
-  });
+  }, 30_000);
 
   it("cigara vraća cigaru, boca bocu, kombinacija oboje", () => {
     const cigar = findGifts(
@@ -175,7 +182,7 @@ describe("giftFinder", () => {
       const weak: string[] = [];
       let since = 0;
       for (const answers of allGiftAnswerCombos()) {
-        if (++since >= 100) {
+        if (++since >= 40) {
           since = 0;
           await new Promise((r) => setTimeout(r, 0));
         }
@@ -199,7 +206,7 @@ describe("giftFinder", () => {
       expect(empty).toEqual([]);
       expect(weak).toEqual([]);
     },
-    300_000,
+    600_000,
   );
 
   it("radije cigara i boca zasebno nego slaba kombinacija", () => {
@@ -218,7 +225,7 @@ describe("giftFinder", () => {
     expect(picks.length).toBeGreaterThan(0);
     expect(picks.every((p) => p.kind !== "pairing")).toBe(true);
     expect(picks.every((p) => p.droppedPairing)).toBe(true);
-  });
+  }, 20_000);
 
   // ——— 0 pogodaka → susjedna kategorija ———
 
@@ -367,5 +374,137 @@ describe("giftFinder", () => {
     const cigar = picks.find((p) => p.cigar)?.cigar;
     expect(cigar).toBeTruthy();
     expect(cigar!.strength).toBe(3);
+  });
+});
+
+describe("poklon — polica, segment, 100 €+", () => {
+  it("visibleGiftSteps dodaje policu samo kad znamo piće i oblik nije cigara", () => {
+    const base: GiftAnswers = {
+      recipient: "regular",
+      budget: "40to60",
+      drink: "whisky",
+      intensity: "medium",
+      shape: "bottle",
+    };
+    expect(giftShelfApplies(base)).toBe(true);
+    expect(visibleGiftSteps(base)).toEqual([
+      "recipient",
+      "budget",
+      "intensity",
+      "drink",
+      "shape",
+      "ownedStyles",
+      "drinkPick",
+    ]);
+    expect(visibleGiftSteps({ ...base, shape: "cigar" })).toHaveLength(5);
+    expect(visibleGiftSteps({ ...base, drink: "unknown" })).toHaveLength(5);
+  });
+
+  it("ne znam preskače prvi bucket; ništa od toga otvara sve", () => {
+    const whisky = BUCKETS.whisky!;
+    expect(uncoveredStyleBuckets("whisky", []).map((b) => b.id)).toEqual(
+      whisky.slice(1).map((b) => b.id),
+    );
+    expect(uncoveredStyleBuckets("whisky", [OWNED_STYLES_NONE])).toHaveLength(whisky.length);
+    expect(uncoveredStyleBuckets("whisky", ["scotch"]).map((b) => b.id)).not.toContain("scotch");
+  });
+
+  it("rupa uz scotch na polici ne predlaže scotch", () => {
+    const picks = findGifts(
+      {
+        recipient: "drinks-only",
+        budget: "40to60",
+        drink: "whisky",
+        intensity: "medium",
+        shape: "bottle",
+        ownedStyles: ["scotch"],
+        drinkPick: "gap",
+      },
+      CATALOG,
+      "HR",
+    );
+    const bottles = picks.filter((p) => p.drink);
+    expect(bottles.length).toBeGreaterThan(0);
+    for (const p of bottles) {
+      const bucket = bucketForDrink(p.drink!);
+      expect(bucket?.id).not.toBe("scotch");
+      expect(p.why.hr).toMatch(/polici/);
+    }
+  });
+
+  it("vrh i omjer u istom pojasu daju različite boce kad katalog to dopušta", () => {
+    const attempts = [
+      { budget: "20to40" as const, drink: "whisky" as const },
+      { budget: "40to60" as const, drink: "whisky" as const },
+      { budget: "60to100" as const, drink: "whisky" as const },
+      { budget: "40to60" as const, drink: "rum" as const },
+      { budget: "20to40" as const, drink: "rum" as const },
+      { budget: "40to60" as const, drink: "brandy" as const },
+    ];
+    const split = attempts.some((c) => {
+      const base = {
+        recipient: "drinks-only" as const,
+        intensity: "medium" as const,
+        shape: "bottle" as const,
+        ...c,
+      };
+      const top = findGifts({ ...base, drinkPick: "top" }, CATALOG, "HR").find((p) => p.drink);
+      const value = findGifts({ ...base, drinkPick: "value" }, CATALOG, "HR").find((p) => p.drink);
+      return Boolean(top?.drink && value?.drink && top.drink.id !== value.drink.id);
+    });
+    expect(split).toBe(true);
+  });
+
+  it("kad su svi stilovi na polici, rupa pada na vrh uz noGapLeft", () => {
+    const allWhisky = (BUCKETS.whisky ?? []).map((b) => b.id);
+    const picks = findGifts(
+      {
+        recipient: "drinks-only",
+        budget: "40to60",
+        drink: "whisky",
+        intensity: "medium",
+        shape: "bottle",
+        ownedStyles: allWhisky,
+        drinkPick: "gap",
+      },
+      CATALOG,
+      "HR",
+    );
+    expect(picks.length).toBeGreaterThan(0);
+    expect(picks.some((p) => p.noGapLeft)).toBe(true);
+    const top = findGifts(
+      {
+        recipient: "drinks-only",
+        budget: "40to60",
+        drink: "whisky",
+        intensity: "medium",
+        shape: "bottle",
+        drinkPick: "top",
+      },
+      CATALOG,
+      "HR",
+    ).find((p) => p.drink);
+    const gap = picks.find((p) => p.drink);
+    expect(gap?.drink?.id).toBe(top?.drink?.id);
+  });
+
+  it("over100 ne ide ispod 100 € osim uz fellBackBudget", () => {
+    const picks = findGifts(
+      {
+        recipient: "drinks-only",
+        budget: "over100",
+        drink: "whisky",
+        intensity: "bold",
+        shape: "bottle",
+      },
+      CATALOG,
+      "HR",
+    );
+    expect(picks.length).toBeGreaterThan(0);
+    for (const p of picks) {
+      expect(p.price).not.toBeNull();
+      if (!p.fellBackBudget) expect(p.price!).toBeGreaterThanOrEqual(99.99);
+      else expect(p.price!).toBeLessThanOrEqual(100.01);
+    }
   });
 });

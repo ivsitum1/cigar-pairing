@@ -2,7 +2,7 @@ import { useMemo, useState } from "react";
 import type { Cigar, Drink } from "../types";
 import { ALL_DRINKS, CIGARS } from "../data";
 import giftQuestions from "../data/giftQuestions.json";
-import { useI18n } from "../i18n";
+import { useI18n, type StringKey } from "../i18n";
 import { Chip, SectionTitle } from "../components/ui";
 import { MarketFilter } from "../components/MarketFilter";
 import { CigarRow, DrinkRow } from "../components/cards";
@@ -14,13 +14,18 @@ import { useMarket } from "../store/market";
 import { navigate } from "../store/route";
 import { drinkPrimaryLink } from "../lib/drinkShopLinks";
 import { formatEur } from "../lib/cigarPrice";
+import { BUCKETS } from "../lib/shoppingPicks";
 import {
   findGifts,
+  OWNED_STYLES_NONE,
+  visibleGiftSteps,
   type GiftAnswers,
+  type GiftDrinkPick,
   type GiftPick,
+  type GiftWizardStep,
 } from "../lib/giftFinder";
 
-type QuestionId = keyof GiftAnswers;
+type CoreQuestionId = "recipient" | "budget" | "intensity" | "drink" | "shape";
 
 const EMPTY_ANSWERS: GiftAnswers = {
   recipient: "unknown",
@@ -28,7 +33,11 @@ const EMPTY_ANSWERS: GiftAnswers = {
   drink: "unknown",
   intensity: "unknown",
   shape: "unknown",
+  ownedStyles: [],
+  drinkPick: "unknown",
 };
+
+const DRINK_PICK_OPTIONS: GiftDrinkPick[] = ["gap", "top", "value", "unknown"];
 
 export function GiftPage({
   onPair,
@@ -45,21 +54,50 @@ export function GiftPage({
   const sheets = useCigarBrowseSheets();
 
   const catalog = useMemo(() => ({ cigars: CIGARS, drinks: ALL_DRINKS }), []);
+  const steps = visibleGiftSteps(answers);
+  const safeStep = Math.min(step, steps.length - 1);
+  const stepId: GiftWizardStep = steps[safeStep] ?? "recipient";
 
   const results = useMemo(() => {
     if (!done) return [];
     return findGifts(answers, catalog, market, { seed, excludeIds: exclude });
   }, [answers, catalog, market, seed, exclude, done]);
 
-  const q = giftQuestions[step];
-  const currentVal = q ? answers[q.id as QuestionId] : undefined;
+  const q = giftQuestions.find((item) => item.id === stepId);
+  const currentVal = q ? answers[q.id as CoreQuestionId] : undefined;
 
-  const setAnswer = (id: QuestionId, value: GiftAnswers[QuestionId]) => {
-    setAnswers((a) => ({ ...a, [id]: value }));
+  const setCoreAnswer = (id: CoreQuestionId, value: string) => {
+    setAnswers((a) => {
+      const next = { ...a, [id]: value } as GiftAnswers;
+      if (id === "drink") next.ownedStyles = [];
+      if (id === "shape" && value === "cigar") {
+        next.ownedStyles = [];
+        next.drinkPick = "unknown";
+      }
+      return next;
+    });
+  };
+
+  const toggleOwnedStyle = (id: string) => {
+    setAnswers((a) => {
+      const cur = a.ownedStyles ?? [];
+      if (id === "unknown") return { ...a, ownedStyles: [] };
+      if (id === OWNED_STYLES_NONE) {
+        return {
+          ...a,
+          ownedStyles: cur.length === 1 && cur[0] === OWNED_STYLES_NONE ? [] : [OWNED_STYLES_NONE],
+        };
+      }
+      const withoutNone = cur.filter((x) => x !== OWNED_STYLES_NONE);
+      const next = withoutNone.includes(id)
+        ? withoutNone.filter((x) => x !== id)
+        : [...withoutNone, id];
+      return { ...a, ownedStyles: next };
+    });
   };
 
   const next = () => {
-    if (step < giftQuestions.length - 1) setStep((s) => s + 1);
+    if (safeStep < steps.length - 1) setStep(safeStep + 1);
     else {
       setDone(true);
       setSeed(0);
@@ -70,10 +108,10 @@ export function GiftPage({
   const back = () => {
     if (done) {
       setDone(false);
-      setStep(giftQuestions.length - 1);
+      setStep(visibleGiftSteps(answers).length - 1);
       return;
     }
-    if (step > 0) setStep((s) => s - 1);
+    if (safeStep > 0) setStep(safeStep - 1);
   };
 
   const restart = () => {
@@ -109,29 +147,40 @@ export function GiftPage({
       {!done ? (
         <>
           <div className="mb-4 flex justify-center gap-2">
-            {giftQuestions.map((_, i) => (
+            {steps.map((id, i) => (
               <span
-                key={i}
-                className={`h-2 w-2 rounded-full ${i === step ? "bg-zlato" : i < step ? "bg-zlato/40" : "bg-dim/30"}`}
+                key={id}
+                className={`h-2 w-2 rounded-full ${i === safeStep ? "bg-zlato" : i < safeStep ? "bg-zlato/40" : "bg-dim/30"}`}
               />
             ))}
           </div>
 
-          <h2 className="font-display text-lg text-papir">{lx(q.prompt)}</h2>
-          <div className="mt-3 flex flex-wrap gap-2">
-            {q.options.map((opt) => (
-              <Chip
-                key={opt.id}
-                active={currentVal === opt.id}
-                onClick={() => setAnswer(q.id as QuestionId, opt.id as GiftAnswers[QuestionId])}
-              >
-                {lx(opt.label)}
-              </Chip>
-            ))}
-          </div>
+          {stepId === "ownedStyles" ? (
+            <OwnedStylesStep answers={answers} onToggle={toggleOwnedStyle} />
+          ) : stepId === "drinkPick" ? (
+            <DrinkPickStep
+              value={answers.drinkPick ?? "unknown"}
+              onChange={(value) => setAnswers((a) => ({ ...a, drinkPick: value }))}
+            />
+          ) : q ? (
+            <>
+              <h2 className="font-display text-lg text-papir">{lx(q.prompt)}</h2>
+              <div className="mt-3 flex flex-wrap gap-2">
+                {q.options.map((opt) => (
+                  <Chip
+                    key={opt.id}
+                    active={currentVal === opt.id}
+                    onClick={() => setCoreAnswer(q.id as CoreQuestionId, opt.id)}
+                  >
+                    {lx(opt.label)}
+                  </Chip>
+                ))}
+              </div>
+            </>
+          ) : null}
 
           <div className="mt-6 flex gap-2">
-            {step > 0 && (
+            {safeStep > 0 && (
               <button
                 type="button"
                 onClick={back}
@@ -145,7 +194,7 @@ export function GiftPage({
               onClick={next}
               className="flex-1 rounded-lg border border-zlato/50 bg-zlato/10 py-2.5 font-display text-xs uppercase tracking-widest text-zlato-2"
             >
-              {step < giftQuestions.length - 1 ? t("gift.next") : t("gift.show")}
+              {safeStep < steps.length - 1 ? t("gift.next") : t("gift.show")}
             </button>
           </div>
         </>
@@ -162,6 +211,9 @@ export function GiftPage({
           )}
           {results.some((p) => p.droppedPairing) && (
             <p className="mb-2 text-xs leading-relaxed text-dim">{t("gift.noPairing")}</p>
+          )}
+          {results.some((p) => p.noGapLeft) && (
+            <p className="mb-2 text-xs leading-relaxed text-dim">{t("gift.noGapLeft")}</p>
           )}
           {results.length === 0 ? (
             <p className="rounded-xl border border-dim/20 bg-cedar p-4 text-sm text-dim">
@@ -275,6 +327,12 @@ function GiftResultCard({
       {pick.fellBackBudget && (
         <p className="mt-1 text-xs text-dim">{t("gift.fellBackBudget")}</p>
       )}
+      {pick.noGapLeft && (
+        <p className="mt-1 text-xs text-dim">{t("gift.noGapLeft")}</p>
+      )}
+      {pick.styleBucket && pick.kind === "pairing" && (
+        <p className="mt-1 text-xs text-dim">{lx(pick.styleBucket.label)}</p>
+      )}
       {pick.shop && (
         <p className="mt-1 text-xs text-dim">
           {t("gift.shop")}: <span className="text-papir/90">{pick.shop}</span>
@@ -351,5 +409,71 @@ function GiftResultCard({
         </button>
       </div>
     </article>
+  );
+}
+
+function OwnedStylesStep({
+  answers,
+  onToggle,
+}: {
+  answers: GiftAnswers;
+  onToggle: (id: string) => void;
+}) {
+  const { t, lx } = useI18n();
+  const owned = answers.ownedStyles ?? [];
+  const buckets = answers.drink !== "unknown" ? (BUCKETS[answers.drink] ?? []) : [];
+  const unknownActive = owned.length === 0;
+  const noneActive = owned.length === 1 && owned[0] === OWNED_STYLES_NONE;
+
+  return (
+    <>
+      <h2 className="font-display text-lg text-papir">{t("gift.ownedStyles")}</h2>
+      <div className="mt-3 flex flex-wrap gap-2">
+        {buckets.map((bucket) => (
+          <Chip
+            key={bucket.id}
+            active={!unknownActive && !noneActive && owned.includes(bucket.id)}
+            onClick={() => onToggle(bucket.id)}
+          >
+            {lx(bucket.label)}
+          </Chip>
+        ))}
+        <Chip active={noneActive} onClick={() => onToggle(OWNED_STYLES_NONE)}>
+          {t("gift.ownedStylesNone")}
+        </Chip>
+        <Chip active={unknownActive} onClick={() => onToggle("unknown")}>
+          {t("gift.ownedStylesUnknown")}
+        </Chip>
+      </div>
+    </>
+  );
+}
+
+const DRINK_PICK_LABEL: Record<GiftDrinkPick, StringKey> = {
+  gap: "gift.drinkPick.gap",
+  top: "gift.drinkPick.top",
+  value: "gift.drinkPick.value",
+  unknown: "gift.drinkPick.unknown",
+};
+
+function DrinkPickStep({
+  value,
+  onChange,
+}: {
+  value: GiftDrinkPick;
+  onChange: (value: GiftDrinkPick) => void;
+}) {
+  const { t } = useI18n();
+  return (
+    <>
+      <h2 className="font-display text-lg text-papir">{t("gift.drinkPick")}</h2>
+      <div className="mt-3 flex flex-wrap gap-2">
+        {DRINK_PICK_OPTIONS.map((opt) => (
+          <Chip key={opt} active={value === opt} onClick={() => onChange(opt)}>
+            {t(DRINK_PICK_LABEL[opt])}
+          </Chip>
+        ))}
+      </div>
+    </>
   );
 }

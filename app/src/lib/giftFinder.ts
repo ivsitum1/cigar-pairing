@@ -1,6 +1,8 @@
-// Poklon u pet pitanja — odgovori postaju filteri nad postojećim katalogom i
-// pairing engineom. Bez novog modela bodovanja; cijena i blizina trgovine su
+// Poklon u nekoliko pitanja — odgovori postaju filteri nad postojećim katalogom
+// i pairing engineom. Bez novog modela bodovanja; cijena i blizina trgovine su
 // tvrdi uvjeti (poklon bez cijene nije poklon).
+// Polica i način odabira boce (rupa / vrh / omjer) dolaze iz pitanja, ne iz
+// tuđe kolekcije — isti bucketi i ranking kao na Kupnji.
 //
 // Tri pravila drže kvalitetu prijedloga:
 //  1. Kombinacija cigare i pića ide van samo ako slaganje prijeđe MIN_PAIRING_SCORE.
@@ -14,12 +16,22 @@ import { cigarLinePrice } from "./cigarPrice";
 import { pairDrinksForCigar } from "../engine/pairing";
 import { pairingBlurb } from "../engine/pairingExplain";
 import { cigarShapes, type ShapeFamily } from "./vitolaShape";
+import {
+  BUCKETS,
+  drinkByQuality,
+  drinkValueScore,
+  type StyleBucket,
+} from "./shoppingPicks";
 
 export type GiftRecipient = "regular" | "beginner" | "drinks-only" | "unknown";
-export type GiftBudget = "under20" | "20to40" | "40to60" | "60to100" | "unknown";
+export type GiftBudget = "under20" | "20to40" | "40to60" | "60to100" | "over100" | "unknown";
 export type GiftDrinkPref = DrinkCategory | "unknown";
 export type GiftIntensity = "mild" | "medium" | "bold" | "unknown";
 export type GiftShape = "cigar" | "bottle" | "pairing" | "unknown";
+export type GiftDrinkPick = "gap" | "top" | "value" | "unknown";
+
+/** Q6 „ništa od toga” — svi segmenti su rupe, nije isto što i „ne znam”. */
+export const OWNED_STYLES_NONE = "none";
 
 export interface GiftAnswers {
   recipient: GiftRecipient;
@@ -27,6 +39,9 @@ export interface GiftAnswers {
   drink: GiftDrinkPref;
   intensity: GiftIntensity;
   shape: GiftShape;
+  /** Bucket id-evi s police; prazno = ne znam; `OWNED_STYLES_NONE` = ništa od toga. */
+  ownedStyles?: string[];
+  drinkPick?: GiftDrinkPick;
 }
 
 export type GiftPickKind = "cigar" | "drink" | "pairing";
@@ -55,6 +70,10 @@ export interface GiftPick {
   droppedPairing?: boolean;
   /** Svih pet odgovora „ne znam” — vrijedi siguran profil. */
   safeDefault?: boolean;
+  /** Tražena je rupa, ali svi navedeni stilovi već su na polici. */
+  noGapLeft?: boolean;
+  /** Segment iz kojeg dolazi boca (rupa / objašnjenje na kartici). */
+  styleBucket?: StyleBucket;
   region: Region;
 }
 
@@ -73,9 +92,11 @@ const BUDGET_BANDS: Record<Exclude<GiftBudget, "unknown">, BudgetBand> = {
   "20to40": { min: 20, max: 40 },
   "40to60": { min: 40, max: 60 },
   "60to100": { min: 60, max: 100 },
+  over100: { min: 100, max: null },
 };
 
 const BUDGET_FALLBACK: Partial<Record<GiftBudget, GiftBudget>> = {
+  over100: "60to100",
   "60to100": "40to60",
   "40to60": "20to40",
   "20to40": "under20",
@@ -118,6 +139,116 @@ const CATEGORY_NEIGHBOURS: Record<DrinkCategory, DrinkCategory[]> = {
 
 export function neighbourCategories(cat: DrinkCategory): DrinkCategory[] {
   return CATEGORY_NEIGHBOURS[cat] ?? [];
+}
+
+/** Polica i način odabira boce imaju smisla samo kad znamo kategoriju i
+ *  poklon nije sama cigara. */
+export function giftShelfApplies(answers: GiftAnswers): boolean {
+  return answers.drink !== "unknown" && answers.shape !== "cigar";
+}
+
+export type GiftWizardStep =
+  | "recipient"
+  | "budget"
+  | "intensity"
+  | "drink"
+  | "shape"
+  | "ownedStyles"
+  | "drinkPick";
+
+const CORE_WIZARD_STEPS: GiftWizardStep[] = [
+  "recipient",
+  "budget",
+  "intensity",
+  "drink",
+  "shape",
+];
+
+export function visibleGiftSteps(answers: GiftAnswers): GiftWizardStep[] {
+  if (giftShelfApplies(answers)) return [...CORE_WIZARD_STEPS, "ownedStyles", "drinkPick"];
+  return CORE_WIZARD_STEPS;
+}
+
+export function ownedStyleIds(answers: GiftAnswers): string[] {
+  return answers.ownedStyles ?? [];
+}
+
+/** `unknown` + označena polica ponaša se kao rupa. */
+export function resolveDrinkPick(answers: GiftAnswers): GiftDrinkPick {
+  const pick = answers.drinkPick ?? "unknown";
+  if (pick !== "unknown") return pick;
+  return ownedStyleIds(answers).length > 0 ? "gap" : "unknown";
+}
+
+export function bucketForDrink(d: Drink): StyleBucket | undefined {
+  return (BUCKETS[d.category] ?? []).find((b) => b.styles.includes(d.style));
+}
+
+/**
+ * Segmenti iz kojih smije doći boca-rupa.
+ * Prazna polica („ne znam”) preskače prvi, najčešći bucket.
+ * `OWNED_STYLES_NONE` otvara sve buckete.
+ */
+export function uncoveredStyleBuckets(
+  category: DrinkCategory,
+  ownedStyles: string[],
+): StyleBucket[] {
+  const buckets = BUCKETS[category] ?? [];
+  if (ownedStyles.includes(OWNED_STYLES_NONE)) return buckets;
+  if (ownedStyles.length === 0) return buckets.slice(1);
+  return buckets.filter((b) => !ownedStyles.includes(b.id));
+}
+
+function drinkInBuckets(d: Drink, buckets: StyleBucket[]): boolean {
+  return buckets.some((b) => b.styles.includes(d.style));
+}
+
+function sortDrinksForPick(pool: Drink[], pick: GiftDrinkPick): Drink[] {
+  if (pick === "value" || pick === "gap") {
+    return [...pool].sort(
+      (a, b) => drinkValueScore(b) - drinkValueScore(a) || drinkByQuality(a, b),
+    );
+  }
+  return [...pool].sort(drinkByQuality);
+}
+
+function gapWhy(bucket: StyleBucket): LocalizedText {
+  return {
+    hr: `Na polici još nema segmenta „${bucket.label.hr}” — ovo ga pokriva.`,
+    en: `The “${bucket.label.en}” segment is still open — this covers it.`,
+  };
+}
+
+function topWhy(): LocalizedText {
+  return {
+    hr: "Vrh kategorije u ovom rasponu.",
+    en: "Top of the category in this band.",
+  };
+}
+
+function valueWhy(): LocalizedText {
+  return {
+    hr: "Najbolji omjer cijene i kvalitete u ovom rasponu.",
+    en: "Best value for money in this band.",
+  };
+}
+
+function drinkWhy(
+  drink: Drink,
+  pick: GiftDrinkPick,
+  noGapLeft: boolean,
+): { why: LocalizedText; styleBucket?: StyleBucket; noGapLeft?: boolean } {
+  const bucket = bucketForDrink(drink);
+  if (pick === "gap" && !noGapLeft && bucket) {
+    return { why: gapWhy(bucket), styleBucket: bucket };
+  }
+  if (pick === "top" || noGapLeft) {
+    return { why: topWhy(), styleBucket: bucket, ...(noGapLeft ? { noGapLeft: true } : null) };
+  }
+  if (pick === "value") {
+    return { why: valueWhy(), styleBucket: bucket };
+  }
+  return { why: drink.notes, styleBucket: bucket };
 }
 
 /** Svih pet „ne znam”. Prazan presjek filtera dao bi nasumičan rezultat, pa se
@@ -285,22 +416,56 @@ function cigarMatchesRecipient(c: Cigar, recipient: GiftRecipient): boolean {
   return true;
 }
 
+interface DrinkPoolOpts {
+  ignoreIntensity?: boolean;
+  ownedStyles?: string[];
+  drinkPick?: GiftDrinkPick;
+}
+
+function gapBucketsForPref(
+  pref: GiftDrinkPref,
+  ownedStyles: string[],
+): { buckets: StyleBucket[]; noGapLeft: boolean } {
+  if (pref === "unknown") return { buckets: [], noGapLeft: false };
+  const all = BUCKETS[pref] ?? [];
+  const uncovered = uncoveredStyleBuckets(pref, ownedStyles);
+  if (all.length > 0 && uncovered.length === 0) {
+    return { buckets: [], noGapLeft: true };
+  }
+  return { buckets: uncovered, noGapLeft: false };
+}
+
 function drinkPool(
   drinks: Drink[],
   pref: GiftDrinkPref,
   region: Region,
   intensity: GiftIntensity,
-  opts?: { ignoreIntensity?: boolean },
+  opts?: DrinkPoolOpts,
 ): Drink[] {
   let pool = drinks.filter((d) => drinkGiftEligible(d, region));
   if (pref !== "unknown") pool = pool.filter((d) => d.category === pref);
   else pool = pool.filter((d) => CLASSIC_GIFT_CATEGORIES.includes(d.category));
   if (!opts?.ignoreIntensity) pool = pool.filter((d) => drinkMatchesIntensity(d, intensity));
-  return pool.sort(
-    (a, b) =>
-      (b.qualityScore ?? 0) - (a.qualityScore ?? 0) ||
-      (drinkMid(a) ?? 9999) - (drinkMid(b) ?? 9999),
-  );
+
+  const pick = resolveDrinkPick({
+    recipient: "unknown",
+    budget: "unknown",
+    drink: pref,
+    intensity,
+    shape: "bottle",
+    ownedStyles: opts?.ownedStyles,
+    drinkPick: opts?.drinkPick,
+  });
+  let effectivePick = pick;
+  if (pick === "gap") {
+    const gap = gapBucketsForPref(pref, opts?.ownedStyles ?? []);
+    if (gap.noGapLeft) effectivePick = "top";
+    else if (gap.buckets.length > 0) {
+      const narrowed = pool.filter((d) => drinkInBuckets(d, gap.buckets));
+      if (narrowed.length > 0) pool = narrowed;
+    }
+  }
+  return sortDrinksForPick(pool, effectivePick);
 }
 
 function cigarPool(
@@ -352,8 +517,14 @@ function pairingPicks(
   const cigarCandidates = cigarPool(cigars, region, answers.recipient, answers.intensity);
   const drinkCandidates = drinkPool(drinks, answers.drink, region, answers.intensity, {
     ignoreIntensity: true,
+    ownedStyles: ownedStyleIds(answers),
+    drinkPick: answers.drinkPick,
   }).filter((d) => !exclude.has(`d:${d.id}`));
   if (cigarCandidates.length === 0 || drinkCandidates.length === 0) return [];
+  const drinkRank = new Map(drinkCandidates.map((d, i) => [d.id, i]));
+  const pickMode = resolveDrinkPick(answers);
+  const gap = gapBucketsForPref(answers.drink, ownedStyleIds(answers));
+  const noGapLeft = pickMode === "gap" && gap.noGapLeft;
 
   const cheapestDrink = Math.min(...drinkCandidates.map((d) => drinkMid(d) ?? Infinity));
   const out: GiftPick[] = [];
@@ -389,6 +560,7 @@ function pairingPicks(
         .sort(
           (a, b) =>
             Math.abs(a.body - cigar.body) - Math.abs(b.body - cigar.body) ||
+            (drinkRank.get(a.id) ?? 9999) - (drinkRank.get(b.id) ?? 9999) ||
             (b.qualityScore ?? 0) - (a.qualityScore ?? 0),
         )
         .slice(0, PAIR_DRINK_SCAN);
@@ -401,6 +573,7 @@ function pairingPicks(
 
       const dp = drinkMid(top.item)!;
       usedDrinks.add(top.item.id);
+      const bucket = bucketForDrink(top.item);
       out.push({
         id: `pair:${cigar.id}:${top.item.id}`,
         kind: "pairing",
@@ -411,6 +584,8 @@ function pairingPicks(
         why: pairingBlurb(cigar, top.item, top.reasons, top.score),
         matchScore: top.score,
         fellBackBudget: fellBack,
+        ...(noGapLeft ? { noGapLeft: true } : null),
+        ...(bucket ? { styleBucket: bucket } : null),
         region,
       });
     }
@@ -431,7 +606,10 @@ function bottlePick(
   exclude: Set<string>,
   allowCheaper: boolean,
 ): GiftPick | null {
-  const pool = drinkPool(drinks, answers.drink, region, answers.intensity);
+  const pool = drinkPool(drinks, answers.drink, region, answers.intensity, {
+    ownedStyles: ownedStyleIds(answers),
+    drinkPick: answers.drinkPick,
+  });
   const { items, fellBack } = filterByBudget(pool, drinkMid, answers.budget, allowCheaper);
   const free = items.filter((d) => !exclude.has(`d:${d.id}`));
   // Tri prijedloga iz iste kategorije nisu izbor. Kad korisnik nije rekao što
@@ -439,14 +617,20 @@ function bottlePick(
   const drink =
     free.find((d) => !exclude.has(`cat:${d.category}`)) ?? free[0];
   if (!drink) return null;
+  const pickMode = resolveDrinkPick(answers);
+  const gap = gapBucketsForPref(answers.drink, ownedStyleIds(answers));
+  const noGapLeft = pickMode === "gap" && gap.noGapLeft;
+  const explained = drinkWhy(drink, noGapLeft ? "top" : pickMode, noGapLeft);
   return {
     id: `d:${drink.id}`,
     kind: "drink",
     drink,
     price: drinkMid(drink),
     shop: drink.shopHR ?? null,
-    why: drink.notes,
+    why: explained.why,
     fellBackBudget: fellBack,
+    ...(explained.noGapLeft ? { noGapLeft: true } : null),
+    ...(explained.styleBucket ? { styleBucket: explained.styleBucket } : null),
     region,
   };
 }
@@ -609,7 +793,7 @@ function buildAttempts(answers: GiftAnswers): GiftAttempt[] {
     out.push({ answers, allowCheaper });
     for (const cat of categoryLadder) {
       out.push({
-        answers: { ...answers, drink: cat },
+        answers: { ...answers, drink: cat, ownedStyles: [], drinkPick: "unknown" },
         swappedFromCategory: requested === "unknown" ? undefined : requested,
         allowCheaper,
       });
@@ -626,7 +810,7 @@ function buildAttempts(answers: GiftAnswers): GiftAttempt[] {
       lenient: true,
     });
     out.push({
-      answers: { ...answers, drink: "unknown", shape: "cigar" },
+      answers: { ...answers, drink: "unknown", shape: "cigar", ownedStyles: [], drinkPick: "unknown" },
       droppedPairing: true,
       swappedFromCategory: requested === "unknown" ? undefined : requested,
       allowCheaper: true,
@@ -689,7 +873,7 @@ export function findGifts(
 
 export function allGiftAnswerCombos(): GiftAnswers[] {
   const recipients: GiftRecipient[] = ["regular", "beginner", "drinks-only", "unknown"];
-  const budgets: GiftBudget[] = ["under20", "20to40", "40to60", "60to100", "unknown"];
+  const budgets: GiftBudget[] = ["under20", "20to40", "40to60", "60to100", "over100", "unknown"];
   const drinks: GiftDrinkPref[] = ["whisky", "rum", "brandy", "wine", "unknown"];
   const intensities: GiftIntensity[] = ["mild", "medium", "bold", "unknown"];
   const shapes: GiftShape[] = ["cigar", "bottle", "pairing", "unknown"];

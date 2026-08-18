@@ -26,7 +26,7 @@ describe("giftQuestions.json", () => {
   it("id opcija odgovaraju GiftAnswers unionu", () => {
     const allowed: Record<string, Set<string>> = {
       recipient: new Set(["regular", "beginner", "drinks-only", "unknown"]),
-      budget: new Set(["under20", "20to40", "40to60", "60to100", "unknown"]),
+      budget: new Set(["under20", "20to40", "40to60", "60to100", "over100", "unknown"]),
       drink: new Set(["whisky", "rum", "brandy", "wine", "unknown"]),
       intensity: new Set(["mild", "medium", "bold", "unknown"]),
       shape: new Set(["cigar", "bottle", "pairing", "unknown"]),

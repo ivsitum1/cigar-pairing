@@ -5,9 +5,9 @@ tags: [session, cache]
 updated: 2026-08-18
 ---
 
-> **2026-08-18:** Katalog house-line: shop-split linije vraćene pod Ashton/Padilla/My Father/Tatuaje/La Galera/Nicarao/Villiger. Cuban Fonseca, H. Upmann, Montecristo ostaju zasebno. `productPhoto` prati `cigarIdAliases`. Humidorova slika za Tailgate i La Ley.
-
 > **2026-08-18:** Gift finder: uz pet jezgrenih pitanja, uvjetna polica (BUCKETS) i način odabira boce (rupa / vrh / omjer). Budžet `over100`. Ne čita tuđu kolekciju. Naslov: „Poklon u nekoliko pitanja”.
+
+> **2026-08-18:** Katalog house-line: shop-split linije vraćene pod Ashton/Padilla/My Father/Tatuaje/La Galera/Nicarao/Villiger. Cuban Fonseca, H. Upmann, Montecristo ostaju zasebno. `productPhoto` prati `cigarIdAliases`. Humidorova slika za Tailgate i La Ley.
 
 > **2026-08-17:** Gift chooser `#/shopping/gift`: pet pitanja (osoba + budžet do 20 / 20–40 / 40–60 / 60–100 €) → cigara, boca ili kombinacija s cijenom u blizini. Zbroj kombinacije ostaje u pojasu.
 
