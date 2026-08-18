@@ -1,10 +1,12 @@
-# Kako biti gospodin za stolom — skica sadržaja (zaključana)
+# Gospodin uz cigaru — skica sadržaja
 
-**Radni naslov:** Kako biti gospodin za stolom  
+**Radni naslov:** Gospodin uz cigaru  
 **Podnaslov:** suvremeni vodič kroz cigaru, čašu i društvo  
-**Cilj:** ~28 000–35 000 riječi ≈ ~100 tiskanih str. (mali format, rahli slog)  
-**Draft:** `KAKO-BITI-GOSPODIN-ZA-STOLOM-DRAFT.md` (**HR zamrznut 2026-07-30**, prijevod s EN) · **EN freeze:** `HOW-TO-BE-A-GENTLEMAN-AT-THE-TABLE-DRAFT.md`  
-**Datum skice:** 2026-07-18 · **ažurirano:** 2026-07-30 · **status:** EN + HR zamrznuti; app sync kasnije
+**Cilj:** ~28 000–35 000 riječi ≈ ~100 tiskanih str. (mali format, rahli slog) — kvaliteta, ne punjenje  
+**Draft:** `GOSPODIN-UZ-CIGARU-DRAFT.md` (**HR odleđen 2026-08-18**, grana `book/gospodin-uz-cigaru`) · **EN naslov ostaje:** `HOW-TO-BE-A-GENTLEMAN-AT-THE-TABLE-DRAFT.md`  
+**Datum skice:** 2026-07-18 · **ažurirano:** 2026-08-18 · **status:** HR identitet *uz cigaru*; app sync kasnije
+
+Stara konstrukcija *Kako biti gospodin za stolom* odbačena. *Za stolom* u tijelu ostaje samo kad je riječ o stvarnom stolu. *Vinjeta* u HR → *situacija*.
 
 ---
 
@@ -32,7 +34,7 @@
 - **Sadržaj** (u draftu)
 
 ### I. Duh i prostor
-1. Što je gospodin za stolom
+1. Što je gospodin uz cigaru
 2. Zlatno pravilo i moderni logorski plamen
 3. Prostor i suglasnost
 4. Ritam i prisutnost
@@ -49,10 +51,10 @@
 ### III. Stol i društvo
 12. Nuditi i dijeliti
 13. Čaša, voda, redoslijed
-14. Uparivanje bez taštine
+14. Sparivanje bez taštine
 15. Domaćin i gost
-16. Salon i klub *(prošireno 2026-07-19: pepeljara≠kanta, kampiranje, fraze; vinjete „ja još veće”, celofan)*
-17. Deset vinjeta za stolom
+16. Salon i klub *(prošireno 2026-07-19: pepeljara≠kanta, kampiranje, fraze; situacije „ja još veće”, celofan)*
+17. Deset situacija
 
 ### IV. Svijet i sjećanje
 18. Vani, terasa, Jadran, prolaz
@@ -62,13 +64,13 @@
 
 ### Stražnji materijal
 - Izvori i napomene
-- Rječnik stolnih riječi
+- Rječnik riječi uz cigaru
 - Zahvale
 - Napomena za lekturu
 
 ---
 
-## Vinjete (obavezno u gl. 17 ili ugrađene)
+## Situacije (obavezno u gl. 17 ili ugrađene)
 
 1. Lizanje kape  
 2. Zvučnik na mobitelu  
@@ -89,23 +91,25 @@
 
 I Duh · II Prostor · III Nuditi · IV Tempo · V Pepeo · VI Stol · VII Domaćin · **VIII Salon i klub** · IX Vani · X Poklon · XI Zadnja riječ
 
+Ne sinkronizirati s knjigom dok se ne naredi. App ostaje na `master`.
+
 ---
 
-## Izvori za kraj knjige (radni popis)
+## Izvori za kraj knjige
 
-Neutralan popis, jedan red po izvoru (stranici), usklađen s `app/src/data/clubSources.json` (Club footer):
+Neutralan popis, jedan red po izvoru (stranici), usklađen s `app/src/data/clubSources.json` i s `docs/bonton/research/scraped/sources-index.md`:
 
 - Beyond the Humidor, Casa de Montecristo, Cigar Aficionado, CigarLounges, cigars.com  
 - Gentleman’s Gazette, Holt’s Clubhouse, JR Cigars, La Aurora, The Manual, VDG, Whisky.com, Wikipedia  
-- Bridges / Debrett / Emily Post — tradicija forme kratkih pravila  
-- Kanon aplikacije: `mala-knjiga-pusackog-bontona.md`
+- Bridges / Debrett / Emily Post — škola forme kratkih pravila, ne predložak za prepisivanje  
+- Arhiva extracta: grana `cursor/bonton-book-research-9b19` (`docs/bonton/research/CATALOG.md`)
 
 ---
 
 ## Urednička ograničenja (podsjetnik)
 
 - Ne brand ranking; ne US tip kao HR norma; ne tehnički 65/65 kao bonton  
-- Autor je liječnik: stolne napomene o nikotinu/želucu **nisu** medicinski savjet  
+- Autor je liječnik: napomene o nikotinu/želucu **nisu** medicinski savjet  
 - Originalan ton; inkluzivno (domaćin/gost); humor na snobizam, ne na početnika  
 - Ne YouTube idiom u kanonskom tekstu  
-- Reference na kraju knjige
+- Reference na kraju knjige samo od pročitanog / scrapanog

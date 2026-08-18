@@ -5,7 +5,8 @@
 | Što | Gdje u GitHubu | Grana |
 |-----|----------------|-------|
 | App (PWA, Club, pairing engine, `bonton.json`) | `app/`, `docs/bonton/APP-FROM-NOTEBOOKLM.md` | **`master`** |
-| Knjižni rukopis (kratki kanon u appu) | `docs/bonton/mala-knjiga-pusackog-bontona.md` | **`master`** (+ sync na book) |
+| Knjižni rukopis (kratki kanon u appu) | `docs/bonton/mala-knjiga-pusackog-bontona.md` | **`master`** (ne dirati dok se ne naredi sync) |
+| Duga knjiga (*Gospodin uz cigaru* / *The Gentleman at the Table*) | `GOSPODIN-UZ-CIGARU-DRAFT.md`, `HOW-TO-BE-A-GENTLEMAN-AT-THE-TABLE-DRAFT.md` | **`book/gospodin-uz-cigaru`** (ne merge u master) |
 | Istraživački korpus + NotebookLM dumpovi | `docs/bonton/research/` | **`cursor/bonton-book-research-9b19`** (ne merge u master) |
 | Grill inbox (kratki bullets) | `docs/bonton/grill-inbox.md` | **`master`** |
 
@@ -30,7 +31,7 @@ Zatim:
 | Tema iz NotebookLM | Knjiga (book branch) | App (`master`) |
 |--------------------|----------------------|----------------|
 | Lounge precepts | rukopis + `BOOK-FROM-NOTEBOOKLM.md` | `bonton.json` **VIII. Salon i klub** (`b-lounge`); Club quiz |
-| Higijena rezača / pepeo / telefon | vignette u knjizi | Club 101 lekcija; bonton V–VIII |
+| Higijena rezača / pepeo / telefon | situacija u knjizi | Club 101 lekcija; bonton V–VIII |
 | Čaša, voda, led, tempo gutljaja | stol / piće poglavlja | Club 101; pairing UI hints |
 | Body / ABV / Maduro–slatkoća | bilješke, ne engine | `app/src/engine/rules.ts` |
 | Obiteljske priče / arhetipovi | eseji / ton | `eveningArchetypes.json` |

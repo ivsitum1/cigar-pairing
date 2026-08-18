@@ -31,7 +31,7 @@
 14. Padrón timeline *(brand history — optional)*  
 15. Churchill Index *(humour — optional / tone check)*
 
-## Best fits for *Kako biti gospodin za stolom*
+## Best fits for *Gospodin uz cigaru*
 
 Priority for etiquette chapters (embedded in HR + EN drafts):
 

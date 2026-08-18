@@ -5,7 +5,7 @@ tags: [session, cache]
 updated: 2026-07-31
 ---
 
-> **2026-08-17:** Gift chooser `#/shopping/gift`: pet pitanja (osoba + budžet do 20 / 20–40 / 40–60 / 60–100 €) → cigara, boca ili kombinacija s cijenom u blizini. Zbroj kombinacije ostaje u pojasu.
+> **2026-08-18:** Knjiga bontona na `book/gospodin-uz-cigaru` (ne merge). HR naslov *Gospodin uz cigaru*; *vinjeta* → *situacija*; pagefetch reference u `docs/bonton/research/scraped/`. App `mala-knjiga` netaknuta.
 
 # Session Hot Cache
 

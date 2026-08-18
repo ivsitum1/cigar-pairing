@@ -1,6 +1,6 @@
-# Grill inbox — sirovina za Malu knjigu pušačkog bontona
+# Grill inbox — sirovina za *Gospodin uz cigaru*
 
-> Bilježnica za sakupljanje, ne za pisanje poglavlja. Kanonski rukopis ostaje u `mala-knjiga-pusackog-bontona.md`.
+> Bilježnica za sakupljanje, ne za pisanje poglavlja. Knjižni rukopis: `GOSPODIN-UZ-CIGARU-DRAFT.md` (grana `book/gospodin-uz-cigaru`). App kratki kanon ostaje `mala-knjiga-pusackog-bontona.md` na `master` dok se ne naredi sync.
 
 ---
 

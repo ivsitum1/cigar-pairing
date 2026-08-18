@@ -331,6 +331,8 @@ Myth loves heroes with cigars in their mouths. The table loves people who put ou
 
 The Hemingway and Churchill tropes are lovely on a poster. For the evening they are less useful than an ashtray and water. A gentleman may love the myth — and may leave it on the shelf while the guests are seated.
 
+The old smoking room in a house or club was often a withdrawal from mixed company. A gentleman today does the opposite: he stays with the people and manages the smoke, instead of leaving the company behind a door.
+
 ### Precepts
 
 A gentleman knows a little history so as to be humbler, not louder.
@@ -340,6 +342,8 @@ A gentleman does not use "authenticity" as a cudgel.
 A gentleman respects the craft without pathos.
 
 A gentleman distinguishes legend from hospitality.
+
+A gentleman does not use smoke as an excuse to leave the company he came to sit with.
 
 ### Vignette: a lecture in the middle of the first smoke
 
@@ -815,6 +819,12 @@ A heavily peated drink in a small room needs a warning or a way out to the terra
 
 Coffee with a smoke can be a splendid bridge — and a double hit if everything is heavy. A gentleman does not force an espresso alongside the strongest leaf as proof of endurance.
 
+### An inner scale
+
+Offer what you would drink yourself. A bottle that stays on the shelf "for Instagram" while something else goes in the glass is not generosity. Open and share, or leave the trophy case alone.
+
+Five or six things on the table is enough. Smell from a distance, water between sips. A parade of bottles tires the palate and the talk.
+
 ### Precepts
 
 A gentleman looks for a bridge.
@@ -826,6 +836,10 @@ A gentleman describes more than he judges.
 A gentleman gives warning of heavy peat.
 
 A gentleman does not mock someone else's vocabulary.
+
+A gentleman offers what he would drink himself.
+
+A gentleman does not make a parade of fifteen bottles.
 
 ### Vignette: "smooth"
 
@@ -2345,8 +2359,10 @@ The form of short rules owes a debt to the tradition of courtesy guides — John
 - VDG Cigars — https://vdg-cigars.com
 - Whisky.com — https://www.whisky.com
 - Wikipedia — cigar etiquette — https://en.wikipedia.org/wiki/Cigar_etiquette
+- Wine-Searcher (spirits) — https://www.wine-searcher.com/spirits
+- Drinkology — https://www.drinkology.de
 
-The same list appears at the foot of Club in the app. The author is a physician; table notes on pace and nicotine are part of the etiquette, not medical advice.
+The same list appears at the foot of Club in the app. Articles for the 2026-08-18 pass are dumped on branch `book/gospodin-uz-cigaru` under `docs/bonton/research/scraped/`. The author is a physician; notes on pace and nicotine are part of the etiquette, not medical advice.
 
 ---
 

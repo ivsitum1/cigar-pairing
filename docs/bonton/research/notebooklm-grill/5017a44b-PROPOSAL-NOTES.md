@@ -14,7 +14,7 @@
 
 **PROJECT fill:**
 
-> If readers open *The Gentleman at the Table* / *Gospodin za stolom*, they will feel easier as guest or host at a smoke-and-glass table, because the book gives short precepts, vignettes (wrong → kindly), and a clear measure — without brand rankings or exams.
+> If readers open *The Gentleman at the Table* / *Gospodin uz cigaru*, they will feel easier as guest or host with a cigar and a glass, because the book gives short precepts, situations (wrong → kindly), and a clear measure — without brand rankings or exams.
 
 ---
 
@@ -72,7 +72,7 @@ Peers to name in proposal only (not in book):
 | Item | State |
 |------|--------|
 | EN working draft | `HOW-TO-BE-A-GENTLEMAN-AT-THE-TABLE-DRAFT.md` |
-| HR working draft | `KAKO-BITI-GOSPODIN-ZA-STOLOM-DRAFT.md` |
+| HR working draft | `GOSPODIN-UZ-CIGARU-DRAFT.md` |
 | Short app canon | `mala-knjiga-pusackog-bontona.md` |
 | Craft grill | `5017a44b-SYNTHESIS-2026-07-30.md` |
 | Word count | ~32k (short for some traditional nonfiction desks — may need substance expansion *or* pitch as small-format handbook) |

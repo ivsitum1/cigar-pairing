@@ -127,7 +127,7 @@ Kanonski popis izvora živi na jednom mjestu i dijeli ga knjiga i Club: `app/src
 
 **Bilježnice:** Cigars daily (`7b267552`) · Omaha value (`6ccc327c`) · Black Gold refresh (`30d6a797`)  
 **Dumpovi:** `docs/bonton/research/notebooklm-grill/`  
-**Gentleman EN/HR draft:** **freeze** — ne dirati tijelo; feed u `grill-inbox` + `mala-knjiga` / app.
+**Gentleman EN draft:** naslov ostaje. **HR:** *Gospodin uz cigaru* na `book/gospodin-uz-cigaru` (2026-08-18). App `mala-knjiga` / `bonton.json` se ne dira dok se ne naredi.
 
 ### Knjižne teme (precept / vinjeta)
 

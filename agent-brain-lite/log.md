@@ -9,6 +9,7 @@ updated: 2026-06-12
 
 | Datum | Događaj |
 |-------|---------|
+| 2026-08-18 | Knjiga: grana `book/gospodin-uz-cigaru`; HR *Gospodin uz cigaru*; situacija umjesto vinjete; pagefetch `docs/bonton/research/scraped/`; app mala-knjiga netaknuta |
 | 2026-08-17 | Gift chooser: `#/shopping/gift`, pet pitanja, razredi do 20 / 20–40 / 40–60 / 60–100 €; poklon cigara / boca / kombinacija; zbroj u budžetu |
 | 2026-08-13 | Cusano HR-sync duhovi: parser + LINE_RULES (živi id, petit panatela), aliasi `cig-cusano-cusano`/`petit` → Bundle Selection, absorb odluke za isti obrazac. Katalog u gitu već čist (4 linije). |
 | 2026-08-12 | Kalendar: korekcija datuma dnevnika (`updateJournalEntry` + date input na JournalCard/Collection) |
