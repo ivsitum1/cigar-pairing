@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
+from urllib.parse import urlparse
 
 import openpyxl
 
@@ -85,12 +86,18 @@ def load_existing() -> list[dict]:
 
 
 def find_existing(name: str, existing: list[dict]) -> dict | None:
+    target_tokens = match_tokens(name)
     best, best_score = None, 0
     for item in existing:
-        score = token_overlap(name, item["name"])
+        item_tokens = match_tokens(item["name"])
+        score = len(target_tokens & item_tokens)
+        if score < 3 and not (
+            target_tokens.issubset(item_tokens) or item_tokens.issubset(target_tokens)
+        ):
+            continue
         if score > best_score:
             best, best_score = item, score
-    return best if best and best_score >= 2 else None
+    return best if best else None
 
 
 def extract_tequilas(wb, existing: list[dict]) -> list[dict]:
@@ -142,8 +149,10 @@ def extract_tequilas(wb, existing: list[dict]) -> list[dict]:
             serving = {k: v for k, v in best_match["serving"].items() if v is not None}
             if "best" not in serving:
                 serving["best"] = serving_for_style(style)["best"]
+            hint_hr = best_match.get("cigarHintHr")
         else:
             serving = serving_for_style(style)
+            hint_hr = None
 
         cat = find_best_catalog_match(name_str, catalog)
         price_eur = parse_price_eur(price_raw)
@@ -155,6 +164,7 @@ def extract_tequilas(wb, existing: list[dict]) -> list[dict]:
 
         prev = find_existing(name_str, existing)
         seed_notes = (prev or {}).get("notes") or {}
+        prev_hint = (prev or {}).get("cigarHint") or {}
         hr_note = comment
         if (not hr_note or hr_note.startswith("Heuristika")) and seed_notes.get("hr"):
             hr_note = seed_notes["hr"]
@@ -171,6 +181,20 @@ def extract_tequilas(wb, existing: list[dict]) -> list[dict]:
             if prev.get("style"):
                 style = prev["style"]
 
+        shop_hr = shop or "allez.hr"
+        effective_price_url = price_url or (prev or {}).get("priceUrl")
+        if effective_price_url:
+            host = urlparse(effective_price_url).netloc
+            if host:
+                shop_hr = host
+
+        cigar_hint = None
+        if hint_hr or prev_hint.get("hr") or prev_hint.get("en"):
+            cigar_hint = {
+                "hr": hint_hr or prev_hint.get("hr") or "",
+                "en": prev_hint.get("en", ""),
+            }
+
         item = {
             "id": cid,
             "category": "tequila" if style != "mezcal" else "tequila",
@@ -185,11 +209,11 @@ def extract_tequilas(wb, existing: list[dict]) -> list[dict]:
             "qualityScore": quality_f,
             "priceEUR": {"min": price_eur, "max": price_eur} if price_eur else None,
             "priceApprox": price_eur is None,
-            "shopHR": shop or "allez.hr",
-            "priceUrl": price_url or (prev or {}).get("priceUrl"),
+            "shopHR": shop_hr,
+            "priceUrl": effective_price_url,
             "pairable": is_pairable(name_str, style, category, quality_f),
             "serving": serving,
-            "cigarHint": (prev or {}).get("cigarHint"),
+            "cigarHint": cigar_hint,
             "notes": {
                 "hr": hr_note,
                 "en": seed_notes.get("en", ""),
@@ -197,6 +221,11 @@ def extract_tequilas(wb, existing: list[dict]) -> list[dict]:
         }
         if status:
             item["status"] = status
+        if status == "META":
+            item["meta"] = True
+            low_name = name_str.lower()
+            if "poklon" in low_name or "gift" in low_name or "mini" in low_name:
+                item["pairable"] = False
 
         if cid in seen_ids:
             continue
