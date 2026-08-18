@@ -25,6 +25,7 @@ from gin_shared import (
     serving_for_style,
     slugify,
     token_overlap,
+    unique_hint_match,
 )
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -181,10 +182,15 @@ def extract_gins(wb, existing: list[dict]) -> list[dict]:
             if sr.get("gift") != my_gift:
                 continue
             overlap = len(my_tokens & sr["tokens"])
+            if sr.get("profile"):
+                if overlap < 2:
+                    continue
+            elif not unique_hint_match(name_str, sr["name"]):
+                continue
             if overlap > best_score:
                 best_match, best_score = sr, overlap
         excel_hint_hr = excel_hint_en = None
-        if best_match and best_score >= 2:
+        if best_match:
             serving = {k: v for k, v in best_match["serving"].items() if v is not None}
             if "best" not in serving:
                 serving["best"] = serving_for_style(style, botanical)["best"]
@@ -213,6 +219,11 @@ def extract_gins(wb, existing: list[dict]) -> list[dict]:
         if cid in aliases:
             cid = aliases[cid]
             prev = existing_by_id.get(cid, prev)
+        if prev is None and cid not in existing_by_id:
+            # Re-apply must not mint ids; live JSON + registry stay intact.
+            continue
+        if prev is None:
+            prev = existing_by_id[cid]
         display_name = name_str
         if prev and token_overlap(name_str, prev["name"]) >= 2 and len(prev["name"]) < len(name_str):
             if is_gift_sku(prev["name"]) == my_gift:

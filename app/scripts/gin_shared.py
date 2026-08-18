@@ -2,6 +2,7 @@
 """Shared helpers for gin catalog scrape, Excel build, and JSON export."""
 from __future__ import annotations
 
+import html
 import re
 import unicodedata
 from typing import Any
@@ -36,6 +37,7 @@ __all__ = [
     "serving_for_style",
     "slugify",
     "token_overlap",
+    "unique_hint_match",
 ]
 
 GIN_STOP = {
@@ -43,6 +45,74 @@ GIN_STOP = {
     "poklon", "kutiji", "u", "in", "gb", "limited", "edition", "l", "de", "la",
     "le", "du", "des", "with", "glass", "casa", "bottle",
 }
+
+# Possessive leftover from "Pilot's" / &#039;s, and the numeric entity body.
+_JUNK_TOKENS = {"039", "s"}
+_VOLUME_TOKEN_RE = re.compile(r"^0*\d+l$")
+_WEAK_BRAND_FIRST = {"old", "new", "no", "sir", "el", "st"}
+
+
+def _folded_alnum(name: str) -> str:
+    text = html.unescape(name or "")
+    return unicodedata.normalize("NFKD", text.lower()).encode("ascii", "ignore").decode()
+
+
+def _is_dropped_token(t: str) -> bool:
+    if t in GIN_STOP or t in _JUNK_TOKENS:
+        return True
+    if t.isdigit() and len(t) <= 2:
+        return True
+    return bool(_VOLUME_TOKEN_RE.fullmatch(t))
+
+
+def match_tokens(name: str) -> set[str]:
+    toks = set(re.findall(r"[a-z0-9]+", _folded_alnum(name)))
+    return {t for t in toks if not _is_dropped_token(t)}
+
+
+def _ordered_content_tokens(name: str) -> list[str]:
+    ordered: list[str] = []
+    seen: set[str] = set()
+    for t in re.findall(r"[a-z0-9]+", _folded_alnum(name)):
+        if t in seen or _is_dropped_token(t):
+            continue
+        seen.add(t)
+        ordered.append(t)
+    return ordered
+
+
+def _brand_tokens(name: str) -> list[str]:
+    """First distinctive token, or first two when the opener is a weak word (Old Pilot)."""
+    ordered = _ordered_content_tokens(name)
+    if not ordered:
+        return []
+    if ordered[0] in _WEAK_BRAND_FIRST and len(ordered) >= 2:
+        return ordered[:2]
+    return ordered[:1]
+
+
+def _name_core(name: str) -> str:
+    text = _folded_alnum(name)
+    text = re.sub(r"\d+(?:[.,]\d+)?\s*%.*", " ", text)
+    text = re.sub(r"\b0*[.,]?\d+\s*l\b", " ", text)
+    parts = [p for p in re.findall(r"[a-z0-9]+", text) if not _is_dropped_token(p)]
+    return " ".join(parts)
+
+
+def unique_hint_match(bottle: str, excel: str) -> bool:
+    """Excel unique cigar copy: brand-level or near-name, not generic overlap ≥ 2."""
+    brand = _brand_tokens(excel)
+    if brand and set(brand) <= match_tokens(bottle):
+        return True
+    a, b = _name_core(bottle), _name_core(excel)
+    if len(a) < 8 or len(b) < 8:
+        return False
+    return a in b or b in a
+
+
+def token_overlap(a: str, b: str) -> int:
+    return len(match_tokens(a) & match_tokens(b))
+
 
 ALLEZ_LISTS = [
     ("https://allez.hr/shop/gin1", "gin"),
@@ -159,20 +229,6 @@ PREMIUM_BRANDS = {
     "roku", "ki no bi", "citadelle", "copperhead", "silent pool", "no. 3",
     "plymouth", "malfy", "elephant",
 }
-
-
-def match_tokens(name: str) -> set[str]:
-    toks = set(
-        re.findall(
-            r"[a-z0-9]+",
-            unicodedata.normalize("NFKD", name.lower()).encode("ascii", "ignore").decode(),
-        )
-    )
-    return {t for t in toks if t not in GIN_STOP and not (t.isdigit() and len(t) <= 2)}
-
-
-def token_overlap(a: str, b: str) -> int:
-    return len(match_tokens(a) & match_tokens(b))
 
 
 def extract_abv(name: str) -> float | None:
