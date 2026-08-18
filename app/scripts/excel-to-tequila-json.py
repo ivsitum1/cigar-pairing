@@ -85,15 +85,38 @@ def load_existing() -> list[dict]:
     return []
 
 
+GIFT_MARKERS = {"poklon", "gift", "giftbox", "kutiji", "drvenoj", "mini"}
+
+
+def _is_gift_sku(name: str) -> bool:
+    toks = match_tokens(name)
+    if toks & GIFT_MARKERS:
+        return True
+    low = name.lower()
+    return "gran patron" in low or "gran patrón" in low
+
+
 def find_existing(name: str, existing: list[dict]) -> dict | None:
     target_tokens = match_tokens(name)
+    target_gift = _is_gift_sku(name)
     best, best_score = None, 0
     for item in existing:
         item_tokens = match_tokens(item["name"])
+        item_gift = _is_gift_sku(item["name"])
         score = len(target_tokens & item_tokens)
-        if score < 3 and not (
-            target_tokens.issubset(item_tokens) or item_tokens.issubset(target_tokens)
-        ):
+        subset = target_tokens.issubset(item_tokens) or item_tokens.issubset(target_tokens)
+        if score < 3 and not subset:
+            continue
+        # No 2-token subset steal: short line name must not attach to longer gift title
+        if score <= 2 and not subset:
+            continue
+        if target_gift != item_gift and score <= 2:
+            continue
+        shorter_len = min(len(target_tokens), len(item_tokens))
+        longer_len = max(len(target_tokens), len(item_tokens))
+        if longer_len >= shorter_len + 3 and score <= 2:
+            continue
+        if item_gift and len(target_tokens) <= 3 and score <= 2 and not target_tokens.issubset(item_tokens):
             continue
         if score > best_score:
             best, best_score = item, score
@@ -223,9 +246,7 @@ def extract_tequilas(wb, existing: list[dict]) -> list[dict]:
             item["status"] = status
         if status == "META":
             item["meta"] = True
-            low_name = name_str.lower()
-            if "poklon" in low_name or "gift" in low_name or "mini" in low_name:
-                item["pairable"] = False
+            item["pairable"] = False
 
         if cid in seen_ids:
             continue
