@@ -246,7 +246,6 @@ def extract_tequilas(wb, existing: list[dict]) -> list[dict]:
             item["status"] = status
         if status == "META":
             item["meta"] = True
-            item["pairable"] = False
 
         if cid in seen_ids:
             continue
