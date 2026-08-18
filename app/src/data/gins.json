@@ -6,7 +6,7 @@
     "region": "Schwarzwald, Njemačka",
     "botanicalProfile": "botanical",
     "body": 3,
-    "sweetness": 2,
+    "sweetness": 1,
     "flavorTags": [
       "borovica",
       "tamno-voce",
@@ -33,8 +33,8 @@
       "en": "The bridge to a cigar is dense botanicals and juniper; as a martini the concentration holds a mild-to-medium cigar — Connecticut or a younger Habano, where freshness cuts creamy smoke."
     },
     "notes": {
-      "hr": "Referentni contemporary gin — složen botanički profil, odličan čist ili u martiniu.",
-      "en": "The reference contemporary gin — a complex botanical profile, excellent neat or in a martini."
+      "hr": "Monkey 47 slaže 47 schwarzwaldskih botanika, uključujući borovicu i tamno voće. Čist ili martini drži gusti profil uz Connecticut ili mlađu Habano, gdje svježina reže kremasti dim.",
+      "en": "Monkey 47 layers 47 Black Forest botanicals, including juniper and dark berries. Neat or a martini holds the dense profile beside Connecticut or a younger Habano, where freshness cuts creamy smoke."
     },
     "category": "gin",
     "profileEstimated": false,
@@ -48,7 +48,7 @@
     "region": "Schwarzwald, Njemačka",
     "botanicalProfile": "botanical",
     "body": 3,
-    "sweetness": 2,
+    "sweetness": 1,
     "flavorTags": [
       "borovica",
       "tamno-voce",
@@ -76,11 +76,12 @@
     },
     "notes": {
       "hr": "Referentni contemporary gin — složen botanički profil, odličan čist ili u martiniu.",
-      "en": ""
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin",
     "meta": true,
-    "status": "META"
+    "status": "META",
+    "profileEstimated": false
   },
   {
     "id": "gin-the-botanist-islay-dry-gin-46-vol-0-7l",
@@ -92,8 +93,8 @@
     "sweetness": 2,
     "flavorTags": [
       "biljno",
-      "cvjetno",
-      "citrus"
+      "citrus",
+      "cvjetno"
     ],
     "qualityScore": 8.8,
     "abv": 40.0,
@@ -116,8 +117,8 @@
       "en": "The bridge to a cigar is Islay's green, herbal botanicals; it wants a mild-to-medium cigar — neat or a martini, where the herbal lift refreshes creamy Connecticut smoke."
     },
     "notes": {
-      "hr": "Islay bilje + juniper — kompleksan čist sipper.",
-      "en": "Islay botanicals plus juniper — a complex neat sipper."
+      "hr": "The Botanist nosi 22 islayska bilja uz borovicu. Čist ili martini drži zeleni, travnati profil uz Connecticut, gdje biljna svježina osvježava kremasti dim.",
+      "en": "The Botanist carries 22 Islay botanicals beside juniper. Neat or a martini holds the green, herbal profile beside Connecticut, where the herbal lift refreshes creamy smoke."
     },
     "category": "gin",
     "profileEstimated": false,
@@ -158,8 +159,8 @@
       "en": "The bridge to a cigar is citrus and spice; as a martini it holds a medium cigar, the citrus lift cutting milder, creamy smoke without overpowering it."
     },
     "notes": {
-      "hr": "Australijski premium — složen, odličan čist.",
-      "en": "An Australian premium — complex, excellent neat."
+      "hr": "Four Pillars Rare Dry nosi australski citrus i papreni začin. Martini drži čašu uz srednju cigaru, a citrusna svježina reže blaži, kremasti dim.",
+      "en": "Four Pillars Rare Dry carries Australian citrus and peppery spice. A martini holds the glass beside a medium cigar, and the citrus lift cuts milder, creamy smoke."
     },
     "category": "gin",
     "profileEstimated": false,
@@ -173,11 +174,11 @@
     "region": "Škotska",
     "botanicalProfile": "botanical",
     "body": 3,
-    "sweetness": 2,
+    "sweetness": 3,
     "flavorTags": [
+      "biljno",
       "cvjetno",
-      "kamilica",
-      "biljno"
+      "kamilica"
     ],
     "qualityScore": 8.5,
     "abv": 40.0,
@@ -200,8 +201,8 @@
       "en": "The floral profile (rose, cucumber) is delicate — the bridge is freshness, not body; it wants a mild Connecticut cigar, where a G&T or martini works as a refresher beside light smoke."
     },
     "notes": {
-      "hr": "Klasičan cvjetni profil — pairing s blažom Connecticut cigarom.",
-      "en": "A classic floral profile — pairs with a milder Connecticut cigar."
+      "hr": "Hendrick's nosi ružu, krastavac i kamilicu. Cvjetni profil traži blažu Connecticut cigaru; G&T ili martini drži sparivanje svježim, bez guranja tijela.",
+      "en": "Hendrick's carries rose, cucumber and chamomile. The floral profile wants a milder Connecticut cigar; a G&T or martini keeps the match fresh, without pushing body."
     },
     "category": "gin",
     "profileEstimated": false,
@@ -218,8 +219,8 @@
     "sweetness": 2,
     "flavorTags": [
       "citrus",
-      "travnato",
-      "kamilica"
+      "kamilica",
+      "travnato"
     ],
     "qualityScore": 8.5,
     "abv": 40.0,
@@ -242,8 +243,8 @@
       "en": "The Japanese citrus (yuzu, apple) is elegant and light; the bridge is citrus freshness with a mild Connecticut or Cameroon cigar — neat or a martini to keep the profile concentrated."
     },
     "notes": {
-      "hr": "Japanski citrus gin — čist ili martini.",
-      "en": "A Japanese citrus gin — neat or in a martini."
+      "hr": "Nikka Coffey Gin ide iz Coffey kotla na ječmu i kukuruzu, s japanskim citrusom. Čist ili martini drži yuzu uz blagu Connecticut ili Cameroon cigaru.",
+      "en": "Nikka Coffey Gin comes off a Coffey still on barley and corn, with Japanese citrus. Neat or a martini holds yuzu beside a mild Connecticut or Cameroon cigar."
     },
     "category": "gin",
     "profileEstimated": false,
@@ -284,8 +285,8 @@
       "en": "The Japanese citrus (yuzu, apple) is elegant and light; the bridge is citrus freshness with a mild Connecticut or Cameroon cigar — neat or a martini to keep the profile concentrated."
     },
     "notes": {
-      "hr": "Japanski citrus gin — čist ili martini.",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin",
     "meta": true,
@@ -300,8 +301,8 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "borovica",
       "citrus",
+      "cvjetno",
       "travnato"
     ],
     "qualityScore": 8.4,
@@ -325,8 +326,8 @@
       "en": "A citrus-forward London dry — the bridge to a cigar is coriander and citrus; the classic martini holds a medium Habano, the spiced botanicals settling against a Habano wrapper."
     },
     "notes": {
-      "hr": "Premium London dry — citrus-forward, martini klasik.",
-      "en": "A premium London dry — citrus-forward, a martini classic."
+      "hr": "Nevjerojatni small batch džin napravljen u posudi broj 10 Tanqueray distilerije, citrusan i pun tijela. IWSC 2017 - GOLD Gin - Contemporary Styles",
+      "en": "A London dry — juniper and citrus; a martini or G&T holds the profile beside a Connecticut cigar."
     },
     "category": "gin",
     "profileEstimated": false,
@@ -367,8 +368,8 @@
       "en": "A citrus-forward London dry — the bridge to a cigar is coriander and citrus; the classic martini holds a medium Habano, the spiced botanicals settling against a Habano wrapper."
     },
     "notes": {
-      "hr": "Premium London dry — citrus-forward, martini klasik.",
-      "en": "A premium London dry — citrus-forward, a martini classic."
+      "hr": "Tanqueray No. Ten diže svježi citrus (grejp, naranča) na London dry bazi. Martini drži čašu koncentriranom uz srednju Habano, a koriander sjeda uz Habano pokrov.",
+      "en": "Tanqueray No. Ten lifts fresh citrus (grapefruit, orange) on a London dry base. A martini keeps the glass concentrated beside a medium Habano, and coriander settles against a Habano wrapper."
     },
     "category": "gin",
     "profileEstimated": false,
@@ -410,7 +411,7 @@
     },
     "notes": {
       "hr": "HR premium gin — mediteranski botanički karakter.",
-      "en": ""
+      "en": "A Mediterranean gin — herbs and citrus; a G&T keeps the match fresh beside Connecticut."
     },
     "category": "gin"
   },
@@ -448,8 +449,8 @@
       "en": "Mediterranean botanicals (rosemary, sage, juniper) bridge to a Habano wrapper; best as a G&T or martini beside a medium cigar — the herbal lift tracking earthy smoke."
     },
     "notes": {
-      "hr": "HR premium gin — mediteranski botanički karakter.",
-      "en": "A Croatian premium gin — Mediterranean botanical character."
+      "hr": "Old Pilot's Dalmatian nosi ružmarin, kadulju i borovicu. G&T ili martini drži mediteransko bilje uz srednju Habano, gdje začinska svježina prati zemljasti dim.",
+      "en": "Old Pilot's Dalmatian carries rosemary, sage and juniper. A G&T or martini holds the Mediterranean herbs beside a medium Habano, where the herbal lift tracks earthy smoke."
     },
     "category": "gin",
     "profileEstimated": false,
@@ -491,7 +492,7 @@
     },
     "notes": {
       "hr": "Belgijski premium dry; martini uz Connecticut.",
-      "en": ""
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin",
     "profileEstimated": false
@@ -530,8 +531,8 @@
       "en": "The Capri edition carries olive and citrus beside a Connecticut or mild Habano. A G&T with Mediterranean tonic keeps the match fresh, and the herbs track creamy smoke."
     },
     "notes": {
-      "hr": "Mediteranska botanika (maslina, timijan); G&T ili neat uz blagi Habano.",
-      "en": ""
+      "hr": "Capri izdanje Gin Marea nosi maslinu i citrus na mediteranskoj bazi. G&T s mediteranskim tonikom drži sparivanje svježim uz Connecticut ili blagu Habano.",
+      "en": "Gin Mare's Capri edition carries olive and citrus on a Mediterranean base. A G&T with Mediterranean tonic keeps the match fresh beside Connecticut or a mild Habano."
     },
     "category": "gin",
     "profileEstimated": false
@@ -571,7 +572,7 @@
     },
     "notes": {
       "hr": "Mediteranska botanika (maslina, timijan); G&T ili neat uz blagi Habano.",
-      "en": ""
+      "en": "A Mediterranean gin — herbs and citrus; a G&T keeps the match fresh beside Connecticut."
     },
     "category": "gin",
     "profileEstimated": false
@@ -611,7 +612,7 @@
     },
     "notes": {
       "hr": "Mediteranska botanika (maslina, timijan); G&T ili neat uz blagi Habano.",
-      "en": ""
+      "en": "A Mediterranean gin — herbs and citrus; a G&T keeps the match fresh beside Connecticut."
     },
     "category": "gin",
     "profileEstimated": false,
@@ -653,7 +654,7 @@
     },
     "notes": {
       "hr": "Mediteranska botanika (maslina, timijan); G&T ili neat uz blagi Habano.",
-      "en": ""
+      "en": "A Mediterranean gin — herbs and citrus; a G&T keeps the match fresh beside Connecticut."
     },
     "category": "gin",
     "profileEstimated": false,
@@ -694,8 +695,8 @@
       "en": "Softer than a classic London dry — the bridge is rounded juniper; a good G&T beside a medium cigar or a martini, where the gentler heat doesn't trample creamy smoke."
     },
     "notes": {
-      "hr": "Mekši od klasičnog London dry — dobar G&T uz srednju cigaru.",
-      "en": ""
+      "hr": "Plymouth je mekši od klasičnog London drya — zaobljena borovica i korijen. G&T ili martini drži profil uz srednju cigaru, bez da žestina zgazi kremasti dim.",
+      "en": "Plymouth is softer than a classic London dry — rounded juniper and root. A G&T or martini holds the profile beside a medium cigar, without the heat flattening creamy smoke."
     },
     "category": "gin",
     "profileEstimated": false,
@@ -736,12 +737,13 @@
       "en": "A local craft with Mediterranean herbs — the bridge is a herbal lift beside a milder Habano; a G&T or martini to keep the botanicals forward, without pushing body."
     },
     "notes": {
-      "hr": "Lokalni craft gin — dobar uz blažu Habano.",
-      "en": ""
+      "hr": "Dugave je lokalni craft s mediteranskim biljem. G&T ili martini drži botaniku u prvom planu uz blažu Habano, bez guranja tijela u maduro.",
+      "en": "Dugave is a local craft gin with Mediterranean herbs. A G&T or martini keeps the botanicals forward beside a milder Habano, without pushing body into a maduro."
     },
     "category": "gin",
     "meta": true,
-    "status": "META"
+    "status": "META",
+    "profileEstimated": false
   },
   {
     "id": "gin-silent-pool-rose-gin-43-vol-0-7l",
@@ -778,7 +780,7 @@
     },
     "notes": {
       "hr": "Engleski botanical; neat/martini uz blagu cigaru.",
-      "en": ""
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin",
     "profileEstimated": false
@@ -789,12 +791,12 @@
     "style": "contemporary",
     "region": "Francuska",
     "botanicalProfile": "botanical",
-    "body": 3,
+    "body": 4,
     "sweetness": 2,
     "flavorTags": [
       "anis",
-      "biljno",
-      "citrus"
+      "citrus",
+      "hrast"
     ],
     "qualityScore": 7.8,
     "abv": 45.2,
@@ -818,7 +820,7 @@
     },
     "notes": {
       "hr": "Francuski dry — uravnotežen uz Connecticut.",
-      "en": ""
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin",
     "profileEstimated": false
@@ -858,7 +860,7 @@
     },
     "notes": {
       "hr": "Afričke botanike; contemporary uz blagi Habano.",
-      "en": ""
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin",
     "profileEstimated": false
@@ -898,7 +900,7 @@
     },
     "notes": {
       "hr": "Afričke botanike; contemporary uz blagi Habano.",
-      "en": ""
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin",
     "profileEstimated": false
@@ -938,7 +940,7 @@
     },
     "notes": {
       "hr": "Sipping gin (london-dry) — neat/martini uz Connecticut ili blagi Habano.",
-      "en": ""
+      "en": "A London dry — juniper and citrus; a martini or G&T holds the profile beside a Connecticut cigar."
     },
     "category": "gin",
     "profileEstimated": false
@@ -978,7 +980,7 @@
     },
     "notes": {
       "hr": "Sipping gin (london-dry) — neat/martini uz Connecticut ili blagi Habano.",
-      "en": ""
+      "en": "A London dry — juniper and citrus; a martini or G&T holds the profile beside a Connecticut cigar."
     },
     "category": "gin",
     "profileEstimated": false,
@@ -1020,7 +1022,7 @@
     },
     "notes": {
       "hr": "Čist London dry profil — pouzdan za martini.",
-      "en": ""
+      "en": "A London dry — juniper and citrus; a martini or G&T holds the profile beside a Connecticut cigar."
     },
     "category": "gin",
     "profileEstimated": false,
@@ -1061,8 +1063,8 @@
       "en": "A clean London dry profile — the bridge to a cigar is classic juniper and citrus; a dependable martini beside a medium cigar, freshness against creamy smoke."
     },
     "notes": {
-      "hr": "Čist London dry profil — pouzdan za martini.",
-      "en": ""
+      "hr": "Sipsmith London Dry iz Hammersmitha drži klasičnu borovicu i citrus. Martini ostavlja profil suh uz Connecticut ili blagu Habano, a svježina reže kremasti dim.",
+      "en": "Sipsmith London Dry from Hammersmith holds classic juniper and citrus. A martini leaves the profile dry beside Connecticut or a mild Habano, and the lift cuts creamy smoke."
     },
     "category": "gin",
     "profileEstimated": false,
@@ -1103,8 +1105,8 @@
       "en": "Tea and citrus on a London dry base — the bridge is the tea's tannic edge meeting tobacco spice; a mild-to-medium cigar, martini or G&T as an aperitif."
     },
     "notes": {
-      "hr": "Tea & citrus twist na London dry.",
-      "en": ""
+      "hr": "London dry — borovica i citrus; martini ili G&T drži profil uz Connecticut cigaru.",
+      "en": "A London dry — juniper and citrus; a martini or G&T holds the profile beside a Connecticut cigar."
     },
     "category": "gin",
     "profileEstimated": false,
@@ -1120,9 +1122,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "travnato",
       "citrus",
-      "cvjetno"
+      "cvjetno",
+      "travnato"
     ],
     "qualityScore": 7.7,
     "abv": 40.0,
@@ -1130,7 +1132,7 @@
       "min": 29.0,
       "max": 29.0
     },
-    "shopHR": "ecuga.com",
+    "shopHR": "allez.hr",
     "priceUrl": "https://allez.hr/shop/svi-proizvodi/beefeater-24-dry-gin-45-07-l",
     "pairable": true,
     "serving": {
@@ -1145,8 +1147,8 @@
       "en": "Tea and citrus on a London dry base — the bridge is the tea's tannic edge meeting tobacco spice; a mild-to-medium cigar, martini or G&T as an aperitif."
     },
     "notes": {
-      "hr": "Tea & citrus twist na London dry.",
-      "en": ""
+      "hr": "Beefeater 24 dodaje zeleni čaj i citrus na London dry bazu. Martini ili G&T drži taninsku gorčinu čaja uz duhanski začin lagane do srednje cigare.",
+      "en": "Beefeater 24 adds green tea and citrus to a London dry base. A martini or G&T holds the tea's tannic edge against tobacco spice on a mild-to-medium cigar."
     },
     "category": "gin",
     "profileEstimated": false,
@@ -1188,7 +1190,7 @@
     },
     "notes": {
       "hr": "American dry — cvjetno-anis profil, martini.",
-      "en": ""
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin",
     "profileEstimated": false,
@@ -1230,7 +1232,7 @@
     },
     "notes": {
       "hr": "American dry — cvjetno-anis profil, martini.",
-      "en": ""
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin",
     "profileEstimated": false,
@@ -1271,8 +1273,8 @@
       "en": "An American dry with a floral-anise tone — the delicate profile wants a mild Connecticut cigar; the bridge is anise and floral lift beside light, creamy smoke."
     },
     "notes": {
-      "hr": "American dry — cvjetno-anis profil, martini.",
-      "en": ""
+      "hr": "Aviation je američki dry s cvjetno-anisnim tonom (lavanda, ruža). Martini drži nježan profil uz laganu Connecticut cigaru i laki, kremasti dim.",
+      "en": "Aviation is an American dry with a floral-anise tone (lavender, rose). A martini holds the delicate profile beside a mild Connecticut cigar and light, creamy smoke."
     },
     "category": "gin",
     "profileEstimated": false,
@@ -1314,7 +1316,7 @@
     },
     "notes": {
       "hr": "Belgijski premium dry; martini uz Connecticut.",
-      "en": ""
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin",
     "profileEstimated": false
@@ -1354,7 +1356,7 @@
     },
     "notes": {
       "hr": "Belgijski premium dry; martini uz Connecticut.",
-      "en": ""
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin",
     "profileEstimated": false
@@ -1394,7 +1396,7 @@
     },
     "notes": {
       "hr": "Afričke botanike; contemporary uz blagi Habano.",
-      "en": ""
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin",
     "profileEstimated": false,
@@ -1436,7 +1438,7 @@
     },
     "notes": {
       "hr": "Afričke botanike; contemporary uz blagi Habano.",
-      "en": ""
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin",
     "profileEstimated": false
@@ -1476,7 +1478,7 @@
     },
     "notes": {
       "hr": "Talijanski citrusni gin; G&T uz Connecticut.",
-      "en": ""
+      "en": "A Mediterranean gin — herbs and citrus; a G&T keeps the match fresh beside Connecticut."
     },
     "category": "gin",
     "profileEstimated": false,
@@ -1518,7 +1520,7 @@
     },
     "notes": {
       "hr": "Talijanski citrusni gin; G&T uz Connecticut.",
-      "en": ""
+      "en": "A Mediterranean gin — herbs and citrus; a G&T keeps the match fresh beside Connecticut."
     },
     "category": "gin",
     "profileEstimated": false,
@@ -1560,7 +1562,7 @@
     },
     "notes": {
       "hr": "Talijanski citrusni gin; G&T uz Connecticut.",
-      "en": ""
+      "en": "A Mediterranean gin — herbs and citrus; a G&T keeps the match fresh beside Connecticut."
     },
     "category": "gin",
     "profileEstimated": false,
@@ -1602,7 +1604,7 @@
     },
     "notes": {
       "hr": "Talijanski citrusni gin; G&T uz Connecticut.",
-      "en": ""
+      "en": "A Mediterranean gin — herbs and citrus; a G&T keeps the match fresh beside Connecticut."
     },
     "category": "gin",
     "profileEstimated": false
@@ -1641,8 +1643,8 @@
       "en": "Sicilian lemon wants a mild Connecticut cigar, not a maduro. A G&T keeps the peel forward, and the herbs track light smoke without adding body."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, mediterranean",
-      "en": ""
+      "hr": "Mediteranski gin — bilje i citrus; G&T drži sparivanje svježim uz Connecticut.",
+      "en": "A Mediterranean gin — herbs and citrus; a G&T keeps the match fresh beside Connecticut."
     },
     "category": "gin"
   },
@@ -1681,7 +1683,7 @@
     },
     "notes": {
       "hr": "Sipping gin (premium-dry) — neat/martini uz Connecticut ili blagi Habano.",
-      "en": ""
+      "en": "A London dry — juniper and citrus; a martini or G&T holds the profile beside a Connecticut cigar."
     },
     "category": "gin",
     "profileEstimated": false
@@ -1720,8 +1722,8 @@
       "en": "Floral chamomile and honey want Connecticut, not maduro. Neat or a martini keeps the profile soft, and the lift cuts creamy smoke without adding body."
     },
     "notes": {
-      "hr": "Engleski botanical; neat/martini uz blagu cigaru.",
-      "en": ""
+      "hr": "Silent Pool se puni na samom prekrasnom i mističnom Silent Pool jezeru u Surreyu. Punog je tijela i svjež, s dubinom, čistoćom i iznad svega okusom. Proizvodi se od 24 jedinstvenih biljaka a bogat i smrekom ispunjen okus pomiješan je s cvjetnim slojevima lavande, kamilice, kvrgav",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin",
     "profileEstimated": false
@@ -1761,7 +1763,7 @@
     },
     "notes": {
       "hr": "Engleski botanical; neat/martini uz blagu cigaru.",
-      "en": ""
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin",
     "profileEstimated": false
@@ -1801,7 +1803,7 @@
     },
     "notes": {
       "hr": "Klasični London Dry craft; martini ili G&T uz Connecticut.",
-      "en": ""
+      "en": "A London dry — juniper and citrus; a martini or G&T holds the profile beside a Connecticut cigar."
     },
     "category": "gin"
   },
@@ -1840,7 +1842,7 @@
     },
     "notes": {
       "hr": "Sipping gin (premium-dry) — neat/martini uz Connecticut ili blagi Habano.",
-      "en": ""
+      "en": "A London dry — juniper and citrus; a martini or G&T holds the profile beside a Connecticut cigar."
     },
     "category": "gin",
     "profileEstimated": false,
@@ -1853,8 +1855,8 @@
     "style": "contemporary",
     "region": "London, UK",
     "botanicalProfile": "botanical",
-    "body": 3,
-    "sweetness": 2,
+    "body": 4,
+    "sweetness": 1,
     "flavorTags": [
       "borovica",
       "citrus",
@@ -1881,8 +1883,8 @@
       "en": "A clean London dry profile — the bridge to a cigar is classic juniper and citrus; a dependable martini beside a medium cigar, freshness against creamy smoke."
     },
     "notes": {
-      "hr": "Klasični London Dry craft; martini ili G&T uz Connecticut.",
-      "en": "Heuristic profile — contemporary, botanical"
+      "hr": "Ako, kao i mi, mislite da je bobica smreke pravi prvak botaničkog svijeta, onda ćete voljeti Sipsmithov V.J.O.P. (Very Junipery Over Proof). Napravljen je na sličan nacin kao i Sipsmithov regularni džin, osim što je borovica pojačana na maksimum dok je džin još uvijek u Prudenceu",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin",
     "profileEstimated": false
@@ -1922,7 +1924,7 @@
     },
     "notes": {
       "hr": "Francuski dry — uravnotežen uz Connecticut.",
-      "en": ""
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin",
     "profileEstimated": false
@@ -1962,7 +1964,7 @@
     },
     "notes": {
       "hr": "Referentni contemporary gin — gusta botanika; čist ili martini uz Connecticut/blagi Habano.",
-      "en": ""
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin",
     "profileEstimated": false,
@@ -2003,8 +2005,8 @@
       "en": "Classic juniper sits beside a Connecticut or a mild Habano. A martini keeps the profile concentrated, and the lift cuts creamy smoke without flattening the cigar."
     },
     "notes": {
-      "hr": "Heuristika — london-dry, classic-juniper",
-      "en": ""
+      "hr": "London dry — borovica i citrus; martini ili G&T drži profil uz Connecticut cigaru.",
+      "en": "A London dry — juniper and citrus; a martini or G&T holds the profile beside a Connecticut cigar."
     },
     "category": "gin"
   },
@@ -2042,8 +2044,8 @@
       "en": "Kyoto botanicals (yuzu, hinoki, sansho pepper) are precise and floral; the bridge is citrus lift and peppery spice beside a mild-to-medium cigar — neat or a martini."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin",
     "meta": true,
@@ -2083,8 +2085,8 @@
       "en": "Kyoto botanicals (yuzu, hinoki, sansho pepper) are precise and floral; the bridge is citrus lift and peppery spice beside a mild-to-medium cigar — neat or a martini."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin",
     "meta": true,
@@ -2124,8 +2126,8 @@
       "en": "The reinforced Kyoto version at 54.5% — more body than the standard KI NO BI; it carries a medium cigar neat or with a drop of water, the peppery sansho bridging to a Habano wrapper."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin",
     "meta": true,
@@ -2165,8 +2167,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin",
     "meta": true,
@@ -2178,8 +2180,8 @@
     "style": "plymouth",
     "region": "Plymouth, UK",
     "botanicalProfile": "classic-juniper",
-    "body": 3,
-    "sweetness": 2,
+    "body": 4,
+    "sweetness": 1,
     "flavorTags": [
       "borovica",
       "korijen",
@@ -2206,8 +2208,8 @@
       "en": "Navy strength 57% — concentrated juniper and heat hold even a maduro; neat or with a drop of water beside a full cigar, a classic 'third act' with espresso (dark chocolate + juniper carrying maduro wrapper caramel)."
     },
     "notes": {
-      "hr": "Pot-still character; neat oprezno uz srednju cigaru.",
-      "en": "Heuristic profile — london-dry, classic-juniper"
+      "hr": "Plymouth džin visoke snage - bogat i ukusan džin koji se dostavlja Kraljevskoj mornarici gotovo 200 godina. \\r\\n IWSC 2017 - SILVER Gin - Contemporary Styles \\r\\n San Francisco World Spirits Competition 2018 - GOLD Gin \\r\\n",
+      "en": "A London dry — juniper and citrus; a martini or G&T holds the profile beside a Connecticut cigar."
     },
     "category": "gin",
     "profileEstimated": false
@@ -2247,7 +2249,7 @@
     },
     "notes": {
       "hr": "Mekši od London Dryja; neat/martini uz blagu cigaru.",
-      "en": ""
+      "en": "A London dry — juniper and citrus; a martini or G&T holds the profile beside a Connecticut cigar."
     },
     "category": "gin",
     "profileEstimated": false
@@ -2287,7 +2289,7 @@
     },
     "notes": {
       "hr": "Sipping gin (premium-dry) — neat/martini uz Connecticut ili blagi Habano.",
-      "en": ""
+      "en": "A London dry — juniper and citrus; a martini or G&T holds the profile beside a Connecticut cigar."
     },
     "category": "gin",
     "profileEstimated": false
@@ -2327,7 +2329,7 @@
     },
     "notes": {
       "hr": "Sipping gin (premium-dry) — neat/martini uz Connecticut ili blagi Habano.",
-      "en": ""
+      "en": "A London dry — juniper and citrus; a martini or G&T holds the profile beside a Connecticut cigar."
     },
     "category": "gin",
     "profileEstimated": false
@@ -2367,7 +2369,7 @@
     },
     "notes": {
       "hr": "Sipping gin (premium-dry) — neat/martini uz Connecticut ili blagi Habano.",
-      "en": ""
+      "en": "A London dry — juniper and citrus; a martini or G&T holds the profile beside a Connecticut cigar."
     },
     "category": "gin",
     "profileEstimated": false
@@ -2407,7 +2409,7 @@
     },
     "notes": {
       "hr": "Sipping gin (premium-dry) — neat/martini uz Connecticut ili blagi Habano.",
-      "en": ""
+      "en": "A London dry — juniper and citrus; a martini or G&T holds the profile beside a Connecticut cigar."
     },
     "category": "gin",
     "profileEstimated": false
@@ -2486,8 +2488,8 @@
       "en": "Tea and citrus on a London dry base — the bridge is the tea's tannic edge meeting tobacco spice; a mild-to-medium cigar, martini or G&T as an aperitif."
     },
     "notes": {
-      "hr": "Heuristika — london-dry, classic-juniper",
-      "en": ""
+      "hr": "London dry — borovica i citrus; martini ili G&T drži profil uz Connecticut cigaru.",
+      "en": "A London dry — juniper and citrus; a martini or G&T holds the profile beside a Connecticut cigar."
     },
     "category": "gin"
   },
@@ -2525,8 +2527,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -2560,12 +2562,12 @@
       "best": "Cisti ili martini"
     },
     "cigarHint": {
-      "hr": "Gusta botanika traži Connecticut ili blagu Habano. Čist ili martini drži profil, a citrus i začin režu kremasti dim.",
-      "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
+      "hr": "Bačveno odležani FEW zgušnjava tijelo; čist nosi srednju Habano. Cvjetni citrus i začin i dalje režu dim, a slatki maduro lako preuzme večer.",
+      "en": "Barrel-aged FEW densifies the body; neat it carries a medium Habano. Floral citrus and spice still cut the smoke, and a sugary maduro easily takes over."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -2603,8 +2605,8 @@
       "en": "Classic juniper sits beside a Connecticut or a mild Habano. A martini keeps the profile concentrated, and the lift cuts creamy smoke without flattening the cigar."
     },
     "notes": {
-      "hr": "Heuristika — london-dry, classic-juniper",
-      "en": ""
+      "hr": "London dry — borovica i citrus; martini ili G&T drži profil uz Connecticut cigaru.",
+      "en": "A London dry — juniper and citrus; a martini or G&T holds the profile beside a Connecticut cigar."
     },
     "category": "gin"
   },
@@ -2642,8 +2644,8 @@
       "en": "A herbal-citrus gin wants a Connecticut or a mild Habano. Olive and Mediterranean herbs track creamy smoke, and a G&T keeps the match fresh."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, mediterranean",
-      "en": ""
+      "hr": "Mediteranski gin — bilje i citrus; G&T drži sparivanje svježim uz Connecticut.",
+      "en": "A Mediterranean gin — herbs and citrus; a G&T keeps the match fresh beside Connecticut."
     },
     "category": "gin"
   },
@@ -2681,8 +2683,8 @@
       "en": "A New Zealand premium dry sits beside a Connecticut or a mild Habano. A martini keeps the juniper clean, and citrus cuts creamy smoke without pushing body."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin",
     "meta": true,
@@ -2722,8 +2724,8 @@
       "en": "A New Zealand premium dry sits beside a Connecticut or a mild Habano. A martini keeps the juniper clean, and citrus cuts creamy smoke without pushing body."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin",
     "meta": true,
@@ -2763,8 +2765,8 @@
       "en": "A New Zealand premium dry sits beside a Connecticut or a mild Habano. A martini keeps the juniper clean, and citrus cuts creamy smoke without pushing body."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin",
     "meta": true,
@@ -2804,8 +2806,8 @@
       "en": "A New Zealand premium dry sits beside a Connecticut or a mild Habano. A martini keeps the juniper clean, and citrus cuts creamy smoke without pushing body."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin",
     "meta": true,
@@ -2845,8 +2847,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin",
     "meta": true,
@@ -2887,7 +2889,7 @@
     },
     "notes": {
       "hr": "Francuski dry — uravnotežen uz Connecticut.",
-      "en": ""
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin",
     "profileEstimated": false
@@ -2926,8 +2928,8 @@
       "en": "A New Zealand premium dry sits beside a Connecticut or a mild Habano. A martini keeps the juniper clean, and citrus cuts creamy smoke without pushing body."
     },
     "notes": {
-      "hr": "Heuristika — premium-dry, classic-juniper",
-      "en": ""
+      "hr": "London dry — borovica i citrus; martini ili G&T drži profil uz Connecticut cigaru.",
+      "en": "A London dry — juniper and citrus; a martini or G&T holds the profile beside a Connecticut cigar."
     },
     "category": "gin"
   },
@@ -2966,7 +2968,7 @@
     },
     "notes": {
       "hr": "Klasični London Dry; martini/G&T uz blagu cigaru.",
-      "en": ""
+      "en": "A London dry — juniper and citrus; a martini or G&T holds the profile beside a Connecticut cigar."
     },
     "category": "gin",
     "profileEstimated": false
@@ -3005,8 +3007,8 @@
       "en": "Classic juniper sits beside a Connecticut or a mild Habano. A martini keeps the profile concentrated, and the lift cuts creamy smoke without flattening the cigar."
     },
     "notes": {
-      "hr": "Heuristika — premium-dry, classic-juniper",
-      "en": ""
+      "hr": "London dry — borovica i citrus; martini ili G&T drži profil uz Connecticut cigaru.",
+      "en": "A London dry — juniper and citrus; a martini or G&T holds the profile beside a Connecticut cigar."
     },
     "category": "gin"
   },
@@ -3029,7 +3031,7 @@
       "min": 65.0,
       "max": 65.0
     },
-    "shopHR": "ecuga.com",
+    "shopHR": "allez.hr",
     "priceUrl": "https://allez.hr/shop/svi-proizvodi/amuerte-coca-leaf-gin-black-edition-43-07-l",
     "pairable": true,
     "serving": {
@@ -3044,8 +3046,8 @@
       "en": "The black edition densifies coca leaf and spice; it carries a medium Habano neat. Bitter botanicals cut creamy smoke, and a sugary maduro easily takes over."
     },
     "notes": {
-      "hr": "Sipping gin (contemporary) — neat/martini uz Connecticut ili blagi Habano.",
-      "en": ""
+      "hr": "Amuerte Coca Leaf Gin je napravljen od selekcije egzotičnih sastojaka uključujući lišće koke iz Perua, tamarillo, papayu i pitayu, između ostalih. Puni se u posebno stiliziranoj boci obloženoj zlatnim listovima.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin",
     "profileEstimated": false
@@ -3059,8 +3061,8 @@
     "body": 3,
     "sweetness": 3,
     "flavorTags": [
-      "tamno-voce",
       "biljno",
+      "tamno-voce",
       "zacini"
     ],
     "qualityScore": 7.0,
@@ -3084,8 +3086,8 @@
       "en": "The red edition sweetens with dark fruit; it wants a mild to medium Habano, not an oscuro. A G&T keeps the fruit fresh, and the herbs track light smoke."
     },
     "notes": {
-      "hr": "Sipping gin (contemporary) — neat/martini uz Connecticut ili blagi Habano.",
-      "en": ""
+      "hr": "Destilat klasičnog biljnog gina oplemenjen lišćem peruanske koke i cijenjenim Pineberryjem: voće nalik na jagodu, ali bijele boje, okusom podsjeća na ananas i bez fragarije, alergena jagode.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin",
     "profileEstimated": false,
@@ -3111,7 +3113,7 @@
       "min": 65.0,
       "max": 65.0
     },
-    "shopHR": "ecuga.com",
+    "shopHR": "allez.hr",
     "priceUrl": "https://allez.hr/shop/svi-proizvodi/amuerte-coca-leaf-gin-white-edition-43-vol-07l",
     "pairable": true,
     "serving": {
@@ -3126,8 +3128,8 @@
       "en": "The white edition stays closer to juniper; it wants a Connecticut or a mild Habano. A martini keeps the profile dry, and citrus cuts creamy smoke."
     },
     "notes": {
-      "hr": "Sipping gin (contemporary) — neat/martini uz Connecticut ili blagi Habano.",
-      "en": ""
+      "hr": "Amuerte Coca Leaf Gin je napravljen od selekcije egzotičnih sastojaka uključujući lišće koke iz Perua, tamarillo, papayu i pitayu, između ostalih. Puni se u posebno stiliziranoj boci obloženoj zlatnim listovima.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin",
     "profileEstimated": false
@@ -3141,8 +3143,8 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "biljno",
       "anis",
+      "biljno",
       "citrus"
     ],
     "qualityScore": 7.0,
@@ -3166,8 +3168,8 @@
       "en": "The blue edition lifts anise and citrus; it wants a mild Connecticut cigar. A martini keeps fennel in check, so a soapy finish does not land on the smoke."
     },
     "notes": {
-      "hr": "Sipping gin (contemporary) — neat/martini uz Connecticut ili blagi Habano.",
-      "en": ""
+      "hr": "Amuerte Coca Leaf Gin Blue Edition izuzetan je gin destiliran od lišća peruanske koke. Proizveden u Belgiji, gin kombinira niz neobičnih sastojaka uključujući egzotično voće iz Južne Amerike i prepoznatljivo lišće koke. Amuerte Coca Gin nudi još ekskluzivniji okus zahvaljujući iz",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin",
     "profileEstimated": false,
@@ -3184,8 +3186,8 @@
     "sweetness": 1,
     "flavorTags": [
       "biljno",
-      "travnato",
-      "citrus"
+      "citrus",
+      "travnato"
     ],
     "qualityScore": 7.0,
     "abv": 40.0,
@@ -3208,8 +3210,8 @@
       "en": "The green edition is grassier and drier; it wants Connecticut. A G&T holds the green tone beside light smoke, and the body does not carry a maduro."
     },
     "notes": {
-      "hr": "Sipping gin (contemporary) — neat/martini uz Connecticut ili blagi Habano.",
-      "en": ""
+      "hr": "Amuerte Coca Leaf Gin je izvanredan gin. Kao što ime sugerira, bazira se na lišću koke, a okusi se kreću od gorkih do blago slatkih. Obogaćen raznim botaničkim sastojcima i dodatkom curube, vrste marakuje banane, Amuerte Coca Leaf Gin Green Edition rezultira kompleksnom aromom. K",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin",
     "profileEstimated": false,
@@ -3225,8 +3227,8 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "citrus",
       "biljno",
+      "citrus",
       "cvjetno"
     ],
     "qualityScore": 7.0,
@@ -3250,8 +3252,8 @@
       "en": "The orange edition lifts peel and flower; it wants a mild Connecticut cigar. A G&T leaves citrus forward beside creamy smoke."
     },
     "notes": {
-      "hr": "Sipping gin (contemporary) — neat/martini uz Connecticut ili blagi Habano.",
-      "en": ""
+      "hr": "Amuerte Coca Leaf Gin izuzetan je gin destiliran od peruanskog lišća koke, koje se nekada koristilo u Carstvu Inka za borbu protiv gladi i bolesti. Proizveden u Belgiji, ovaj gin kombinira niz neobičnih sastojaka, uključujući egzotično voće iz Južne Amerike i karakteristično lišć",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin",
     "profileEstimated": false,
@@ -3267,9 +3269,9 @@
     "body": 2,
     "sweetness": 2,
     "flavorTags": [
+      "biljno",
       "citrus",
-      "cvjetno",
-      "biljno"
+      "cvjetno"
     ],
     "qualityScore": 7.0,
     "abv": 40.0,
@@ -3292,8 +3294,8 @@
       "en": "The yellow edition stays bright and floral; it wants Connecticut, not Habano. A G&T keeps the match drinkable, and the peel bitterness cuts light smoke."
     },
     "notes": {
-      "hr": "Sipping gin (contemporary) — neat/martini uz Connecticut ili blagi Habano.",
-      "en": ""
+      "hr": "Ova ekskluzivna mješavina kombinira živahne okuse mamoncilla, slične mangu i ličiju, s tajnom formulom, stvorenom kako bi vaše ljetne trenutke podigla na višu razinu nezaboravnim okusom. Gladak, egzotičan i beskrajno osvježavajući, Amuerte Yellow dizajniran je za one koji odbijaj",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin",
     "profileEstimated": false,
@@ -3334,8 +3336,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin",
     "meta": true,
@@ -3375,8 +3377,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin",
     "meta": true,
@@ -3416,8 +3418,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin",
     "meta": true,
@@ -3457,8 +3459,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -3496,8 +3498,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -3535,8 +3537,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -3574,10 +3576,11 @@
       "en": "A Japanese craft (sakura, sencha, sansho) — the bridge is green tea and floral spice beside a mild-to-medium cigar; a martini holds the profile, a G&T works as an aperitif."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Roku nosi sakuru, senchu i sansho papar na japanskoj bazi. Martini drži zeleni čaj i cvjetni začin uz laganu do srednju cigaru; G&T radi kao aperitiv.",
+      "en": "Roku carries sakura, sencha and sansho pepper on a Japanese base. A martini holds green tea and floral spice beside a mild-to-medium cigar; a G&T works as an aperitif."
     },
-    "category": "gin"
+    "category": "gin",
+    "profileEstimated": false
   },
   {
     "id": "gin-ransom-old-tom-gin-44-0-75-l",
@@ -3613,8 +3616,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -3669,9 +3672,11 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "biljno",
       "borovica",
-      "travnato"
+      "citrus",
+      "cvjetno",
+      "tamno-voce",
+      "zacini"
     ],
     "qualityScore": 6.9,
     "abv": 40.0,
@@ -3694,10 +3699,11 @@
       "en": "A Spanish premium dry sits beside Connecticut; juniper and a grassy tone cut creamy smoke. A martini keeps the profile dry with a shorter cigar."
     },
     "notes": {
-      "hr": "Heuristika — premium-dry, classic-juniper",
-      "en": ""
+      "hr": "Akori Gin Chury Blossom rezultat je prave kombinacije žitnog alkohola, uglavnom na bazi riže, borovice i sugestivnog odabira biljaka inspiriranih Japanom, među kojima se ističe cvijet trešnje. Svježina borovice, nježne note zmajevog voća, citrusne nijanse kumkvata i blago začinje",
+      "en": "A London dry — juniper and citrus; a martini or G&T holds the profile beside a Connecticut cigar."
     },
-    "category": "gin"
+    "category": "gin",
+    "profileEstimated": false
   },
   {
     "id": "gin-akori-premium",
@@ -3734,7 +3740,7 @@
     },
     "notes": {
       "hr": "Sipping gin (premium-dry) — neat/martini uz Connecticut ili blagi Habano.",
-      "en": ""
+      "en": "A London dry — juniper and citrus; a martini or G&T holds the profile beside a Connecticut cigar."
     },
     "category": "gin",
     "profileEstimated": false
@@ -3773,8 +3779,8 @@
       "en": "A Spanish premium dry sits beside Connecticut; juniper and a grassy tone cut creamy smoke. A martini keeps the profile dry with a shorter cigar."
     },
     "notes": {
-      "hr": "Heuristika — premium-dry, classic-juniper",
-      "en": ""
+      "hr": "London dry — borovica i citrus; martini ili G&T drži profil uz Connecticut cigaru.",
+      "en": "A London dry — juniper and citrus; a martini or G&T holds the profile beside a Connecticut cigar."
     },
     "category": "gin"
   },
@@ -3812,8 +3818,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -3851,8 +3857,8 @@
       "en": "Classic juniper sits beside a Connecticut or a mild Habano. A martini keeps the profile concentrated, and the lift cuts creamy smoke without flattening the cigar."
     },
     "notes": {
-      "hr": "Heuristika — london-dry, classic-juniper",
-      "en": ""
+      "hr": "London dry — borovica i citrus; martini ili G&T drži profil uz Connecticut cigaru.",
+      "en": "A London dry — juniper and citrus; a martini or G&T holds the profile beside a Connecticut cigar."
     },
     "category": "gin"
   },
@@ -3890,8 +3896,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin",
     "meta": true,
@@ -3931,8 +3937,8 @@
       "en": "Classic juniper sits beside a Connecticut or a mild Habano. A martini keeps the profile concentrated, and the lift cuts creamy smoke without flattening the cigar."
     },
     "notes": {
-      "hr": "Heuristika — london-dry, classic-juniper",
-      "en": ""
+      "hr": "London dry — borovica i citrus; martini ili G&T drži profil uz Connecticut cigaru.",
+      "en": "A London dry — juniper and citrus; a martini or G&T holds the profile beside a Connecticut cigar."
     },
     "category": "gin"
   },
@@ -3970,8 +3976,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -4009,8 +4015,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -4048,8 +4054,8 @@
       "en": "Angelica and cardamom on a London dry base sit beside a Connecticut or a mild Habano. A martini keeps the juniper concentrated, and the root note tracks tobacco spice."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -4087,8 +4093,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -4126,8 +4132,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -4165,8 +4171,8 @@
       "en": "Classic juniper sits beside a Connecticut or a mild Habano. A martini keeps the profile concentrated, and the lift cuts creamy smoke without flattening the cigar."
     },
     "notes": {
-      "hr": "Heuristika — london-dry, classic-juniper",
-      "en": ""
+      "hr": "London dry — borovica i citrus; martini ili G&T drži profil uz Connecticut cigaru.",
+      "en": "A London dry — juniper and citrus; a martini or G&T holds the profile beside a Connecticut cigar."
     },
     "category": "gin"
   },
@@ -4204,8 +4210,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -4243,8 +4249,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -4282,8 +4288,8 @@
       "en": "Navy strength with Istrian charcoal carries a medium to full Habano. Neat or with a drop of water holds juniper against earthy smoke; a G&T is too dilute for this heat."
     },
     "notes": {
-      "hr": "Heuristika — croatian, botanical",
-      "en": ""
+      "hr": "Hrvatski gin — mediteransko bilje; G&T ili martini uz Connecticut do blage Habano.",
+      "en": "A Croatian gin — Mediterranean herbs; a G&T or martini beside Connecticut through to a mild Habano."
     },
     "category": "gin"
   },
@@ -4321,8 +4327,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -4360,8 +4366,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -4399,8 +4405,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -4438,8 +4444,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -4477,8 +4483,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -4516,8 +4522,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -4555,8 +4561,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -4594,8 +4600,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -4633,8 +4639,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -4672,8 +4678,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -4711,8 +4717,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -4750,8 +4756,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -4789,8 +4795,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -4828,8 +4834,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin",
     "meta": true,
@@ -4869,8 +4875,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin",
     "meta": true,
@@ -4910,8 +4916,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin",
     "meta": true,
@@ -4951,8 +4957,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -4990,8 +4996,8 @@
       "en": "Classic juniper sits beside a Connecticut or a mild Habano. A martini keeps the profile concentrated, and the lift cuts creamy smoke without flattening the cigar."
     },
     "notes": {
-      "hr": "Heuristika — london-dry, classic-juniper",
-      "en": ""
+      "hr": "London dry — borovica i citrus; martini ili G&T drži profil uz Connecticut cigaru.",
+      "en": "A London dry — juniper and citrus; a martini or G&T holds the profile beside a Connecticut cigar."
     },
     "category": "gin"
   },
@@ -5029,8 +5035,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -5068,8 +5074,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -5107,8 +5113,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -5146,8 +5152,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -5185,8 +5191,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -5224,8 +5230,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -5263,8 +5269,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -5302,8 +5308,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -5341,8 +5347,8 @@
       "en": "A herbal-citrus gin wants a Connecticut or a mild Habano. Olive and Mediterranean herbs track creamy smoke, and a G&T keeps the match fresh."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, mediterranean",
-      "en": ""
+      "hr": "Mediteranski gin — bilje i citrus; G&T drži sparivanje svježim uz Connecticut.",
+      "en": "A Mediterranean gin — herbs and citrus; a G&T keeps the match fresh beside Connecticut."
     },
     "category": "gin"
   },
@@ -5380,8 +5386,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -5419,8 +5425,8 @@
       "en": "Classic juniper sits beside a Connecticut or a mild Habano. A martini keeps the profile concentrated, and the lift cuts creamy smoke without flattening the cigar."
     },
     "notes": {
-      "hr": "Heuristika — london-dry, classic-juniper",
-      "en": ""
+      "hr": "London dry — borovica i citrus; martini ili G&T drži profil uz Connecticut cigaru.",
+      "en": "A London dry — juniper and citrus; a martini or G&T holds the profile beside a Connecticut cigar."
     },
     "category": "gin"
   },
@@ -5458,8 +5464,8 @@
       "en": "Classic juniper sits beside a Connecticut or a mild Habano. A martini keeps the profile concentrated, and the lift cuts creamy smoke without flattening the cigar."
     },
     "notes": {
-      "hr": "Heuristika — london-dry, classic-juniper",
-      "en": ""
+      "hr": "London dry — borovica i citrus; martini ili G&T drži profil uz Connecticut cigaru.",
+      "en": "A London dry — juniper and citrus; a martini or G&T holds the profile beside a Connecticut cigar."
     },
     "category": "gin",
     "meta": true,
@@ -5499,8 +5505,8 @@
       "en": "Classic juniper sits beside a Connecticut or a mild Habano. A martini keeps the profile concentrated, and the lift cuts creamy smoke without flattening the cigar."
     },
     "notes": {
-      "hr": "Heuristika — london-dry, classic-juniper",
-      "en": ""
+      "hr": "London dry — borovica i citrus; martini ili G&T drži profil uz Connecticut cigaru.",
+      "en": "A London dry — juniper and citrus; a martini or G&T holds the profile beside a Connecticut cigar."
     },
     "category": "gin",
     "meta": true,
@@ -5540,8 +5546,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin",
     "meta": true,
@@ -5581,8 +5587,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -5620,8 +5626,8 @@
       "en": "Classic juniper sits beside a Connecticut or a mild Habano. A martini keeps the profile concentrated, and the lift cuts creamy smoke without flattening the cigar."
     },
     "notes": {
-      "hr": "Heuristika — london-dry, classic-juniper",
-      "en": ""
+      "hr": "London dry — borovica i citrus; martini ili G&T drži profil uz Connecticut cigaru.",
+      "en": "A London dry — juniper and citrus; a martini or G&T holds the profile beside a Connecticut cigar."
     },
     "category": "gin"
   },
@@ -5659,8 +5665,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -5698,8 +5704,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -5737,8 +5743,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -5776,8 +5782,8 @@
       "en": "Classic juniper sits beside a Connecticut or a mild Habano. A martini keeps the profile concentrated, and the lift cuts creamy smoke without flattening the cigar."
     },
     "notes": {
-      "hr": "Heuristika — london-dry, classic-juniper",
-      "en": ""
+      "hr": "London dry — borovica i citrus; martini ili G&T drži profil uz Connecticut cigaru.",
+      "en": "A London dry — juniper and citrus; a martini or G&T holds the profile beside a Connecticut cigar."
     },
     "category": "gin"
   },
@@ -5815,8 +5821,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -5854,8 +5860,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -5893,8 +5899,8 @@
       "en": "Classic juniper sits beside a Connecticut or a mild Habano. A martini keeps the profile concentrated, and the lift cuts creamy smoke without flattening the cigar."
     },
     "notes": {
-      "hr": "Heuristika — premium-dry, classic-juniper",
-      "en": ""
+      "hr": "London dry — borovica i citrus; martini ili G&T drži profil uz Connecticut cigaru.",
+      "en": "A London dry — juniper and citrus; a martini or G&T holds the profile beside a Connecticut cigar."
     },
     "category": "gin"
   },
@@ -5932,8 +5938,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -5971,8 +5977,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -6010,8 +6016,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -6049,8 +6055,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -6063,9 +6069,8 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "cvjetno",
-      "citrus",
-      "zacini"
+      "biljno",
+      "cvjetno"
     ],
     "qualityScore": 6.5,
     "abv": 40.0,
@@ -6088,10 +6093,11 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Blossom Organic je napravljen od 17 botaničkih sastojaka pažljivo odabranih i inspiriranih prirodnim parkom Sierra Mariola. U potpunosti iskorištavajući vremenske uvjete regije Costa Blanca, s delikatnošću izražava cvjetanje tih mediteranskih krajolika. Destilacija se vrši iz mal",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
-    "category": "gin"
+    "category": "gin",
+    "profileEstimated": false
   },
   {
     "id": "gin-bombay-sapphire-east",
@@ -6102,7 +6108,7 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "borovica",
+      "biljno",
       "citrus",
       "travnato"
     ],
@@ -6127,10 +6133,11 @@
       "en": "Classic juniper sits beside a Connecticut or a mild Habano. A martini keeps the profile concentrated, and the lift cuts creamy smoke without flattening the cigar."
     },
     "notes": {
-      "hr": "Heuristika — london-dry, classic-juniper",
-      "en": ""
+      "hr": "Bombay Sapphire East je nova linija kao nastavak izvornog Bombay Sapphirea koji se temelji na receptu iz 1761. Kroz biljne sastojke se i dalje propušta alkoholna para kako bi eterična ulja i arome nastavila hlapiti s alkoholom do kondenzacije i na kraju se zajedno botiljiraju. Os",
+      "en": "A London dry — juniper and citrus; a martini or G&T holds the profile beside a Connecticut cigar."
     },
-    "category": "gin"
+    "category": "gin",
+    "profileEstimated": false
   },
   {
     "id": "gin-brockman-s",
@@ -6166,8 +6173,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -6178,10 +6185,12 @@
     "region": "World",
     "botanicalProfile": "botanical",
     "body": 3,
-    "sweetness": 2,
+    "sweetness": 4,
     "flavorTags": [
-      "cvjetno",
+      "biljno",
+      "borovica",
       "citrus",
+      "slatko",
       "zacini"
     ],
     "qualityScore": 6.5,
@@ -6205,10 +6214,11 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Brockmans Orange Kiss je živahan gin (70 cl) destiliran u Velikoj Britaniji s 40% alkohola koji miješa tradicionalne botaničke sastojke sa svježim valencijskim narančama i triple secom, nudeći pikantan, suncem okupan profil okusa. Ima glatko, svilenkasto nepce s notama citrusa, b",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
-    "category": "gin"
+    "category": "gin",
+    "profileEstimated": false
   },
   {
     "id": "gin-brunswick-gin-aces-diamonds",
@@ -6244,8 +6254,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -6283,8 +6293,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -6297,9 +6307,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "cvjetno",
+      "biljno",
       "citrus",
-      "zacini"
+      "papar"
     ],
     "qualityScore": 6.5,
     "abv": 40.0,
@@ -6322,10 +6332,11 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Brunswick Aces Spades Gin sadrži, među ostalim biljkama, australsku limunsku mirtu, tasmanski planinski papar i zeleni kardamom. Gin je bio prvo punjenje alkoholnih pića iz destilerije Brunswick Aces, koja se nalazi u Australiji i obično proizvodi bezalkoholna žestoka pića. Desti",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
-    "category": "gin"
+    "category": "gin",
+    "profileEstimated": false
   },
   {
     "id": "gin-bloom-london-dry-gin-40-0-7-l",
@@ -6361,8 +6372,8 @@
       "en": "Classic juniper sits beside a Connecticut or a mild Habano. A martini keeps the profile concentrated, and the lift cuts creamy smoke without flattening the cigar."
     },
     "notes": {
-      "hr": "Heuristika — london-dry, classic-juniper",
-      "en": ""
+      "hr": "London dry — borovica i citrus; martini ili G&T drži profil uz Connecticut cigaru.",
+      "en": "A London dry — juniper and citrus; a martini or G&T holds the profile beside a Connecticut cigar."
     },
     "category": "gin"
   },
@@ -6400,8 +6411,8 @@
       "en": "Classic juniper sits beside a Connecticut or a mild Habano. A martini keeps the profile concentrated, and the lift cuts creamy smoke without flattening the cigar."
     },
     "notes": {
-      "hr": "Heuristika — london-dry, classic-juniper",
-      "en": ""
+      "hr": "London dry — borovica i citrus; martini ili G&T drži profil uz Connecticut cigaru.",
+      "en": "A London dry — juniper and citrus; a martini or G&T holds the profile beside a Connecticut cigar."
     },
     "category": "gin",
     "meta": true,
@@ -6441,8 +6452,8 @@
       "en": "Classic juniper sits beside a Connecticut or a mild Habano. A martini keeps the profile concentrated, and the lift cuts creamy smoke without flattening the cigar."
     },
     "notes": {
-      "hr": "Heuristika — london-dry, classic-juniper",
-      "en": ""
+      "hr": "London dry — borovica i citrus; martini ili G&T drži profil uz Connecticut cigaru.",
+      "en": "A London dry — juniper and citrus; a martini or G&T holds the profile beside a Connecticut cigar."
     },
     "category": "gin"
   },
@@ -6480,8 +6491,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -6519,8 +6530,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -6558,8 +6569,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -6597,8 +6608,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -6636,8 +6647,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -6675,8 +6686,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin",
     "meta": true,
@@ -6716,8 +6727,8 @@
       "en": "Classic juniper sits beside a Connecticut or a mild Habano. A martini keeps the profile concentrated, and the lift cuts creamy smoke without flattening the cigar."
     },
     "notes": {
-      "hr": "Heuristika — london-dry, classic-juniper",
-      "en": ""
+      "hr": "London dry — borovica i citrus; martini ili G&T drži profil uz Connecticut cigaru.",
+      "en": "A London dry — juniper and citrus; a martini or G&T holds the profile beside a Connecticut cigar."
     },
     "category": "gin"
   },
@@ -6755,8 +6766,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -6794,8 +6805,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -6833,8 +6844,8 @@
       "en": "Classic juniper sits beside a Connecticut or a mild Habano. A martini keeps the profile concentrated, and the lift cuts creamy smoke without flattening the cigar."
     },
     "notes": {
-      "hr": "Heuristika — london-dry, classic-juniper",
-      "en": ""
+      "hr": "London dry — borovica i citrus; martini ili G&T drži profil uz Connecticut cigaru.",
+      "en": "A London dry — juniper and citrus; a martini or G&T holds the profile beside a Connecticut cigar."
     },
     "category": "gin"
   },
@@ -6844,11 +6855,14 @@
     "style": "contemporary",
     "region": "World",
     "botanicalProfile": "botanical",
-    "body": 3,
-    "sweetness": 2,
+    "body": 2,
+    "sweetness": 4,
     "flavorTags": [
-      "cvjetno",
+      "anis",
+      "biljno",
       "citrus",
+      "kava",
+      "slatko",
       "zacini"
     ],
     "qualityScore": 6.5,
@@ -6872,10 +6886,11 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Doživite sve što sunčana Kalifornija nudi uz ovaj divni irski gin s citrusnim okusom! Intrigantan izraz Drumshanbo Gunpowder Irish gina koji kombinira svoju uobičajenu mješavinu biljnih sastojaka, uključujući Gunpowder čaj, sa živopisnom, osvježavajućom kalifornijskom narančom. I",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
-    "category": "gin"
+    "category": "gin",
+    "profileEstimated": false
   },
   {
     "id": "gin-drumshanbo-gunpowder-keramicka-boca",
@@ -6883,11 +6898,9 @@
     "style": "contemporary",
     "region": "World",
     "botanicalProfile": "botanical",
-    "body": 3,
+    "body": 2,
     "sweetness": 2,
     "flavorTags": [
-      "cvjetno",
-      "citrus",
       "zacini"
     ],
     "qualityScore": 6.5,
@@ -6911,10 +6924,11 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "U početku lansirana kao globalna ekskluziva za putovanja u zračnoj luci Dublin, ova ograničena serija keramičke boce Drumshanbo Gunpowder Irish Gin je svježi novi dizajn za proizvod iz The Shed Distillery. Drumshanbo Gunpowder Irish Gin sporo je destiliran i ručno izrađen od 11 b",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
-    "category": "gin"
+    "category": "gin",
+    "profileEstimated": false
   },
   {
     "id": "gin-dictador-ortodoxy-colombian-aged-white-gin-43-vol-0-7",
@@ -6950,8 +6964,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -6989,8 +7003,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -7028,8 +7042,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -7067,8 +7081,8 @@
       "en": "Classic juniper sits beside a Connecticut or a mild Habano. A martini keeps the profile concentrated, and the lift cuts creamy smoke without flattening the cigar."
     },
     "notes": {
-      "hr": "Heuristika — london-dry, classic-juniper",
-      "en": ""
+      "hr": "London dry — borovica i citrus; martini ili G&T drži profil uz Connecticut cigaru.",
+      "en": "A London dry — juniper and citrus; a martini or G&T holds the profile beside a Connecticut cigar."
     },
     "category": "gin"
   },
@@ -7106,8 +7120,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -7145,8 +7159,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -7184,8 +7198,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -7223,8 +7237,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -7262,8 +7276,8 @@
       "en": "Classic juniper sits beside a Connecticut or a mild Habano. A martini keeps the profile concentrated, and the lift cuts creamy smoke without flattening the cigar."
     },
     "notes": {
-      "hr": "Heuristika — london-dry, classic-juniper",
-      "en": ""
+      "hr": "London dry — borovica i citrus; martini ili G&T drži profil uz Connecticut cigaru.",
+      "en": "A London dry — juniper and citrus; a martini or G&T holds the profile beside a Connecticut cigar."
     },
     "category": "gin"
   },
@@ -7301,8 +7315,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -7340,8 +7354,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin",
     "meta": true,
@@ -7381,8 +7395,8 @@
       "en": "Classic juniper sits beside a Connecticut or a mild Habano. A martini keeps the profile concentrated, and the lift cuts creamy smoke without flattening the cigar."
     },
     "notes": {
-      "hr": "Heuristika — london-dry, classic-juniper",
-      "en": ""
+      "hr": "London dry — borovica i citrus; martini ili G&T drži profil uz Connecticut cigaru.",
+      "en": "A London dry — juniper and citrus; a martini or G&T holds the profile beside a Connecticut cigar."
     },
     "category": "gin"
   },
@@ -7420,8 +7434,8 @@
       "en": "Classic juniper sits beside a Connecticut or a mild Habano. A martini keeps the profile concentrated, and the lift cuts creamy smoke without flattening the cigar."
     },
     "notes": {
-      "hr": "Heuristika — london-dry, classic-juniper",
-      "en": ""
+      "hr": "London dry — borovica i citrus; martini ili G&T drži profil uz Connecticut cigaru.",
+      "en": "A London dry — juniper and citrus; a martini or G&T holds the profile beside a Connecticut cigar."
     },
     "category": "gin",
     "meta": true,
@@ -7461,8 +7475,8 @@
       "en": "Classic juniper sits beside a Connecticut or a mild Habano. A martini keeps the profile concentrated, and the lift cuts creamy smoke without flattening the cigar."
     },
     "notes": {
-      "hr": "Heuristika — london-dry, classic-juniper",
-      "en": ""
+      "hr": "London dry — borovica i citrus; martini ili G&T drži profil uz Connecticut cigaru.",
+      "en": "A London dry — juniper and citrus; a martini or G&T holds the profile beside a Connecticut cigar."
     },
     "category": "gin"
   },
@@ -7500,8 +7514,8 @@
       "en": "Classic juniper sits beside a Connecticut or a mild Habano. A martini keeps the profile concentrated, and the lift cuts creamy smoke without flattening the cigar."
     },
     "notes": {
-      "hr": "Heuristika — london-dry, classic-juniper",
-      "en": ""
+      "hr": "London dry — borovica i citrus; martini ili G&T drži profil uz Connecticut cigaru.",
+      "en": "A London dry — juniper and citrus; a martini or G&T holds the profile beside a Connecticut cigar."
     },
     "category": "gin",
     "meta": true,
@@ -7541,8 +7555,8 @@
       "en": "Classic juniper sits beside a Connecticut or a mild Habano. A martini keeps the profile concentrated, and the lift cuts creamy smoke without flattening the cigar."
     },
     "notes": {
-      "hr": "Heuristika — london-dry, classic-juniper",
-      "en": ""
+      "hr": "London dry — borovica i citrus; martini ili G&T drži profil uz Connecticut cigaru.",
+      "en": "A London dry — juniper and citrus; a martini or G&T holds the profile beside a Connecticut cigar."
     },
     "category": "gin"
   },
@@ -7580,8 +7594,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -7619,8 +7633,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -7655,8 +7669,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -7694,10 +7708,11 @@
       "en": "Tea and citrus on a London dry base — the bridge is the tea's tannic edge meeting tobacco spice; a mild-to-medium cigar, martini or G&T as an aperitif."
     },
     "notes": {
-      "hr": "Heuristika — london-dry, classic-juniper",
-      "en": ""
+      "hr": "Beefeater Blood Orange Gin je novi gin jarkog okusa. Osnivač Beefeatera James Burrough ručno je odabrao naranče s londonske tržnice Covent Garden 1876. kako bi napravio Orange Gin. Krasi ga savršen spoj svježih citrusnih okusa crvene naranče, lijepo usklađenih s klasičnim notama ",
+      "en": "A London dry — juniper and citrus; a martini or G&T holds the profile beside a Connecticut cigar."
     },
-    "category": "gin"
+    "category": "gin",
+    "profileEstimated": false
   },
   {
     "id": "gin-bombay-original",
@@ -7733,8 +7748,8 @@
       "en": "Classic juniper sits beside a Connecticut or a mild Habano. A martini keeps the profile concentrated, and the lift cuts creamy smoke without flattening the cigar."
     },
     "notes": {
-      "hr": "Heuristika — london-dry, classic-juniper",
-      "en": ""
+      "hr": "London dry — borovica i citrus; martini ili G&T drži profil uz Connecticut cigaru.",
+      "en": "A London dry — juniper and citrus; a martini or G&T holds the profile beside a Connecticut cigar."
     },
     "category": "gin"
   },
@@ -7772,8 +7787,8 @@
       "en": "Classic juniper sits beside a Connecticut or a mild Habano. A martini keeps the profile concentrated, and the lift cuts creamy smoke without flattening the cigar."
     },
     "notes": {
-      "hr": "Heuristika — london-dry, classic-juniper",
-      "en": ""
+      "hr": "London dry — borovica i citrus; martini ili G&T drži profil uz Connecticut cigaru.",
+      "en": "A London dry — juniper and citrus; a martini or G&T holds the profile beside a Connecticut cigar."
     },
     "category": "gin"
   },
@@ -7811,8 +7826,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -7850,8 +7865,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -7889,8 +7904,8 @@
       "en": "Angelica and cardamom on a London dry base sit beside a Connecticut or a mild Habano. A martini keeps the juniper concentrated, and the root note tracks tobacco spice."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   },
@@ -7928,8 +7943,8 @@
       "en": "Classic juniper sits beside a Connecticut or a mild Habano. A martini keeps the profile concentrated, and the lift cuts creamy smoke without flattening the cigar."
     },
     "notes": {
-      "hr": "Heuristika — london-dry, classic-juniper",
-      "en": ""
+      "hr": "London dry — borovica i citrus; martini ili G&T drži profil uz Connecticut cigaru.",
+      "en": "A London dry — juniper and citrus; a martini or G&T holds the profile beside a Connecticut cigar."
     },
     "category": "gin"
   },
@@ -7967,8 +7982,8 @@
       "en": "Dense botanicals want a Connecticut or a mild Habano. Neat or a martini holds the profile, and citrus and spice cut creamy smoke."
     },
     "notes": {
-      "hr": "Heuristika — contemporary, botanical",
-      "en": ""
+      "hr": "Contemporary gin — gusta botanika; čist ili martini drži profil uz blažu cigaru.",
+      "en": "A contemporary gin — dense botanicals; neat or a martini holds the profile beside a milder cigar."
     },
     "category": "gin"
   }

@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import type { Drink } from "../types";
+import ginsJson from "./gins.json";
 import rumsJson from "./rums.json";
 import tequilasJson from "./tequilas.json";
 
@@ -45,8 +46,26 @@ const TEQUILA_CURATED_IDS = [
   "tq-clase-azul-reposado",
 ] as const;
 
+const GIN_CURATED_IDS = [
+  "gin-monkey-47-schwarzwald-dry-gin-47-vol-0-5l",
+  "gin-hendrick-s-gin-41-4-vol-0-7l",
+  "gin-tanqueray-no-ten-47-3-vol-0-7l",
+  "gin-the-botanist-islay-dry-gin-46-vol-0-7l",
+  "gin-gin-mare-capri-mediterranean-gin-42-7-vol-0-7l",
+  "gin-plymouth-gin",
+  "gin-sipsmith-london-dry-gin-41-6-0-7-l",
+  "gin-nikka-coffey-gin-47-vol-0-7l",
+  "gin-four-pillars-rare-dry-gin-41-8-vol-0-7l",
+  "gin-old-pilot-s-dalmatian-dry-gin-45-vol-0-7l",
+  "gin-dugave-gin",
+  "gin-beefeater-24",
+  "gin-aviation-gin-42-0-7-l",
+  "gin-roku-japanese-craft-gin-43-0-7-l",
+] as const;
+
 const rums = rumsJson as Drink[];
 const tequilas = tequilasJson as Drink[];
+const gins = ginsJson as Drink[];
 
 describe("kurirane biljeske za rumove", () => {
   it("val 1 ima dovoljno duge HR biljeske i HR cigarHint", () => {
@@ -73,6 +92,20 @@ describe("kurirane biljeske za tequilu", () => {
       expect(t?.notes.en.length, id).toBeGreaterThanOrEqual(80);
       expect(t?.cigarHint?.hr?.length ?? 0, id).toBeGreaterThanOrEqual(80);
       expect(t?.cigarHint?.en?.length ?? 0, id).toBeGreaterThanOrEqual(80);
+    }
+  });
+});
+
+describe("kurirane biljeske za gin", () => {
+  it("referentni set ima dovoljno duge HR+EN biljeske i cigarHint", () => {
+    for (const id of GIN_CURATED_IDS) {
+      const g = gins.find((item) => item.id === id);
+
+      expect(g, id).toBeDefined();
+      expect(g?.notes.hr.length, id).toBeGreaterThanOrEqual(80);
+      expect(g?.notes.en.length, id).toBeGreaterThanOrEqual(80);
+      expect(g?.cigarHint?.hr?.length ?? 0, id).toBeGreaterThanOrEqual(80);
+      expect(g?.cigarHint?.en?.length ?? 0, id).toBeGreaterThanOrEqual(80);
     }
   });
 });
