@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import type { Drink } from "../types";
 import rumsJson from "./rums.json";
+import tequilasJson from "./tequilas.json";
 
 const CURATED_RUM_NOTE_IDS = [
   "rum-foursquare-ecs-detente-2005",
@@ -29,7 +30,23 @@ const CURATED_RUM_NOTE_IDS = [
   "rum-worthy-park-109",
 ] as const;
 
+const TEQUILA_CURATED_IDS = [
+  "tq-don-julio-blanco",
+  "tq-don-julio-reposado",
+  "tq-don-julio-anejo",
+  "tq-don-julio-1942",
+  "tq-patron-silver",
+  "tq-patron-reposado",
+  "tq-patron-anejo",
+  "tq-casamigos-reposado",
+  "tq-casamigos-anejo",
+  "tq-casamigos-mezcal",
+  "tq-espolon-blanco",
+  "tq-clase-azul-reposado",
+] as const;
+
 const rums = rumsJson as Drink[];
+const tequilas = tequilasJson as Drink[];
 
 describe("kurirane biljeske za rumove", () => {
   it("val 1 ima dovoljno duge HR biljeske i HR cigarHint", () => {
@@ -42,6 +59,20 @@ describe("kurirane biljeske za rumove", () => {
       expect(rum, id).toBeDefined();
       expect(rum?.notes.hr.length, id).toBeGreaterThanOrEqual(80);
       expect(rum?.cigarHint?.hr?.length, id).toBeGreaterThan(0);
+    }
+  });
+});
+
+describe("kurirane biljeske za tequilu", () => {
+  it("referentni set ima dovoljno duge HR+EN biljeske i cigarHint", () => {
+    for (const id of TEQUILA_CURATED_IDS) {
+      const t = tequilas.find((item) => item.id === id);
+
+      expect(t, id).toBeDefined();
+      expect(t?.notes.hr.length, id).toBeGreaterThanOrEqual(80);
+      expect(t?.notes.en.length, id).toBeGreaterThanOrEqual(80);
+      expect(t?.cigarHint?.hr?.length ?? 0, id).toBeGreaterThanOrEqual(80);
+      expect(t?.cigarHint?.en?.length ?? 0, id).toBeGreaterThanOrEqual(80);
     }
   });
 });
