@@ -1,6 +1,6 @@
 {
   "brand": "El Vinyet",
-  "renameBrand": null,
+  "renameBrand": "PDR",
   "status": "done",
   "reviewedAt": "2026-07-24",
   "sources": [
@@ -9,7 +9,8 @@
   ],
   "lines": {
     "Robusto": {
-      "line": "Robusto"
+      "line": "El Vinyet",
+      "vitola": "Robusto"
     }
   },
   "vitolaRenames": {},

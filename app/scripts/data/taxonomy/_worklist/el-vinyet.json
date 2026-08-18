@@ -1,10 +1,17 @@
 {
   "brand": "El Vinyet",
-  "renameBrand": null,
-  "status": "todo",
-  "reviewedAt": null,
-  "sources": [],
-  "lines": {},
+  "renameBrand": "PDR",
+  "status": "done",
+  "reviewedAt": "2026-08-18",
+  "sources": [
+    "humidor.hr/product/el-vinyet-robusto-5x52"
+  ],
+  "lines": {
+    "Robusto": {
+      "line": "El Vinyet",
+      "vitola": "Robusto"
+    }
+  },
   "vitolaRenames": {},
   "shapes": {},
   "keepSeparate": [],

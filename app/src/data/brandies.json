@@ -819,7 +819,9 @@
       "hr": "Vrh Jerez brandyja — amontillado dubina, manje sladak od Mendoze.",
       "en": "The peak of Jerez brandy — amontillado depth, less sweet than Mendoza."
     },
-    "profileEstimated": false
+    "profileEstimated": false,
+    "inStock": false,
+    "stockFetchedAt": "2026-08-18"
   },
   {
     "id": "br-courvoisier-xo",
@@ -865,7 +867,9 @@
       "hr": "Mekan i pristupačan — jasmin i voće.",
       "en": "Soft and approachable — jasmine and fruit."
     },
-    "profileEstimated": false
+    "profileEstimated": false,
+    "inStock": true,
+    "stockFetchedAt": "2026-08-18"
   },
   {
     "id": "br-frapin-vip-xo",
@@ -911,7 +915,9 @@
       "hr": "Single-estate XO — suši, ozbiljan konjak za ozbiljnu cigaru.",
       "en": "Single-estate XO — drier, a serious cognac for a serious cigar."
     },
-    "profileEstimated": false
+    "profileEstimated": false,
+    "inStock": true,
+    "stockFetchedAt": "2026-08-18"
   },
   {
     "id": "br-frapin-xo-cigar-blend",
@@ -957,7 +963,9 @@
       "hr": "Single-estate XO — suši, ozbiljan konjak za ozbiljnu cigaru.",
       "en": "Single-estate XO — drier, a serious cognac for a serious cigar."
     },
-    "profileEstimated": false
+    "profileEstimated": false,
+    "inStock": true,
+    "stockFetchedAt": "2026-08-18"
   },
   {
     "id": "br-ararat-nairi-20",
@@ -1365,7 +1373,9 @@
       "hr": "Obiteljska kuća, 100% Grande Champagne — rafiniran value.",
       "en": "Family house, 100% Grande Champagne — refined value."
     },
-    "profileEstimated": false
+    "profileEstimated": false,
+    "inStock": true,
+    "stockFetchedAt": "2026-08-18"
   },
   {
     "id": "br-frapin-vsop-grande-champagne",
@@ -1768,7 +1778,9 @@
       "hr": "Manji konjački dom s karakterom — elegantan XO, cvjetne note i dugačak finiš.",
       "en": "A smaller cognac house with character — elegant XO, floral notes and a long finish."
     },
-    "profileEstimated": false
+    "profileEstimated": false,
+    "inStock": false,
+    "stockFetchedAt": "2026-08-18"
   },
   {
     "id": "br-hennessy-vsop",
@@ -2050,7 +2062,9 @@
       "hr": "Španjolski sherry-solera brandy — tamna slatkoća, klasik uz maduro cigaru.",
       "en": "Spanish sherry-solera brandy — dark sweetness, a maduro-cigar classic."
     },
-    "profileEstimated": false
+    "profileEstimated": false,
+    "inStock": true,
+    "stockFetchedAt": "2026-08-18"
   },
   {
     "id": "br-antinori-grappa-tignanello",
@@ -2227,7 +2241,9 @@
       "hr": "Borderies cvjetnost u VS kategoriji — pristupačan ulaz u Camus.",
       "en": "Borderies florality in the VS category — an accessible entry to Camus."
     },
-    "profileEstimated": false
+    "profileEstimated": false,
+    "inStock": true,
+    "stockFetchedAt": "2026-08-18"
   },
   {
     "id": "br-camus-vsop-intensely-aromatic-cognac-40-vol-0-7l-u-poklon-kutiji",
@@ -2895,7 +2911,9 @@
       "hr": "Iznad XO-a — dugo odležane eau-de-vie, zaokružen i bogat.",
       "en": "Above XO — long-aged eaux-de-vie, rounded and rich."
     },
-    "profileEstimated": false
+    "profileEstimated": false,
+    "inStock": true,
+    "stockFetchedAt": "2026-08-18"
   },
   {
     "id": "br-martell-chanteloup-xxo",
@@ -2941,7 +2959,9 @@
       "hr": "Iznad XO-a — elegantni Martellov stil s Borderies dubinom.",
       "en": "Above XO — Martell's elegant style with Borderies depth."
     },
-    "profileEstimated": false
+    "profileEstimated": false,
+    "inStock": false,
+    "stockFetchedAt": "2026-08-18"
   },
   {
     "id": "br-martell-cohiba",
@@ -3575,7 +3595,9 @@
       "hr": "Ulazni Courvoisier — zrelo voće i cvjetne note, mekši i jednostavniji od VSOP-a.",
       "en": "The entry Courvoisier — ripe fruit and floral notes, softer and simpler than the VSOP."
     },
-    "profileEstimated": true
+    "profileEstimated": true,
+    "inStock": true,
+    "stockFetchedAt": "2026-08-18"
   },
   {
     "id": "br-hennessy-vs",
