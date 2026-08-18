@@ -374,7 +374,7 @@
     "priceApprox": false,
     "shopHR": "allez.hr",
     "priceUrl": null,
-    "pairable": false,
+    "pairable": true,
     "serving": {
       "neat": 3,
       "rocks": 2,
@@ -415,7 +415,7 @@
     "priceApprox": false,
     "shopHR": "allez.hr",
     "priceUrl": null,
-    "pairable": false,
+    "pairable": true,
     "serving": {
       "neat": 3,
       "rocks": 2,
@@ -573,7 +573,7 @@
     "priceApprox": false,
     "shopHR": "allez.hr",
     "priceUrl": null,
-    "pairable": false,
+    "pairable": true,
     "serving": {
       "neat": 3,
       "rocks": 2,
@@ -622,7 +622,7 @@
     },
     "cigarHint": {
       "hr": "Dim espadina i slatka agava traže cigaru sa začinom i čvršćom teksturom; kakao neka prati, ali neka ne vodi večer.",
-      "en": "Habano / maduro — vanilla and oak suit a medium-full cigar."
+      "en": "Espadín smoke and sweet agave want a cigar with spice and firmer texture; cocoa may follow, but it should not lead the evening."
     },
     "notes": {
       "hr": "Dim espadina i slatka agava traže cigaru sa začinom i čvršćim ritmom; kakao neka ostane u drugom planu.",
@@ -692,7 +692,7 @@
     "priceApprox": false,
     "shopHR": "allez.hr",
     "priceUrl": "https://allez.hr/shop/svi-proizvodi/patron-tequila-anejo-40-vol-07l-u-poklon-kutiji",
-    "pairable": false,
+    "pairable": true,
     "serving": {
       "neat": 3,
       "rocks": 2,
@@ -733,7 +733,7 @@
     "priceApprox": false,
     "shopHR": "Diskont Fumar / allez.hr",
     "priceUrl": null,
-    "pairable": false,
+    "pairable": true,
     "serving": {
       "neat": 3,
       "rocks": 2,
@@ -930,7 +930,7 @@
     "priceApprox": false,
     "shopHR": "allez.hr",
     "priceUrl": null,
-    "pairable": false,
+    "pairable": true,
     "serving": {
       "neat": 3,
       "rocks": 2,
@@ -1056,7 +1056,7 @@
       "best": "Cisto ili velika kocka leda"
     },
     "cigarHint": {
-      "hr": "Slađi reposado i meka vanilija traže srednju cigaru koja ostaje elegantna; cijena boce je visoka, ali pairing ne mora biti težak.",
+      "hr": "Slađi reposado i meka vanilija traže srednju cigaru koja ostaje elegantna; cijena boce je visoka, ali sparivanje ne mora biti težak.",
       "en": "A sweeter reposado and soft vanilla want a medium cigar that stays elegant; the bottle is pricey, but the pairing need not feel heavy."
     },
     "notes": {
@@ -1088,7 +1088,7 @@
     "priceApprox": false,
     "shopHR": "allez.hr",
     "priceUrl": null,
-    "pairable": false,
+    "pairable": true,
     "serving": {
       "neat": 3,
       "rocks": 2,
@@ -1168,7 +1168,7 @@
     "priceApprox": false,
     "shopHR": "allez.hr",
     "priceUrl": null,
-    "pairable": false,
+    "pairable": true,
     "serving": {
       "neat": 3,
       "rocks": 2,
@@ -1209,14 +1209,14 @@
     "priceApprox": false,
     "shopHR": "allez.hr",
     "priceUrl": null,
-    "pairable": false,
+    "pairable": true,
     "serving": {
       "neat": 3,
       "rocks": 2,
       "best": "Cisto ili velika kocka leda"
     },
     "cigarHint": {
-      "hr": "Slađi reposado i meka vanilija traže srednju cigaru koja ostaje elegantna; cijena boce je visoka, ali pairing ne mora biti težak.",
+      "hr": "Slađi reposado i meka vanilija traže srednju cigaru koja ostaje elegantna; cijena boce je visoka, ali sparivanje ne mora biti težak.",
       "en": "A sweeter reposado and soft vanilla want a medium cigar that stays elegant; the bottle is pricey, but the pairing need not feel heavy."
     },
     "notes": {
@@ -1289,7 +1289,7 @@
     "priceApprox": false,
     "shopHR": "allez.hr",
     "priceUrl": "https://allez.hr/shop/svi-proizvodi/patron-tequila-silver-40-vol-07-l-u-poklon-kutiji",
-    "pairable": false,
+    "pairable": true,
     "serving": {
       "neat": 3,
       "rocks": 2,
@@ -1408,7 +1408,7 @@
     "priceApprox": false,
     "shopHR": "allez.hr",
     "priceUrl": null,
-    "pairable": false,
+    "pairable": true,
     "serving": {
       "neat": 3,
       "rocks": 2,
@@ -1644,7 +1644,7 @@
     "priceApprox": false,
     "shopHR": "allez.hr",
     "priceUrl": null,
-    "pairable": false,
+    "pairable": true,
     "serving": {
       "neat": 3,
       "rocks": 2,
@@ -1652,7 +1652,7 @@
     },
     "cigarHint": {
       "hr": "Otvoren, pošten blanco nosi lakšu cigaru bez napora; citrus i papar rade najbolje kada je format kraći i življi.",
-      "en": "Medium-strength Habano — agave and oak carry a medium cigar."
+      "en": "An open, honest blanco carries a lighter cigar without strain; citrus and pepper work best when the format is shorter and livelier."
     },
     "notes": {
       "hr": "Pristupačan 100% agave blanco — pošten ulaz za večer s lakšom cigarom.",
@@ -1685,7 +1685,7 @@
     "priceApprox": false,
     "shopHR": "retail / allez.hr",
     "priceUrl": null,
-    "pairable": false,
+    "pairable": true,
     "serving": {
       "neat": 3,
       "rocks": 2,
