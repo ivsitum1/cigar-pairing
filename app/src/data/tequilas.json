@@ -13,7 +13,9 @@
       "hrast",
       "kakao",
       "vanilija",
-      "suho-voce"
+      "suho-voce",
+      "tropsko-voce",
+      "zacini"
     ],
     "qualityScore": 9.2,
     "priceEUR": {
@@ -36,7 +38,8 @@
     "notes": {
       "hr": "Referentni ultra-premium siping — gusto, slatko hrastovo tijelo. Traži punu, sporu cigaru; ne uz gin-stil botaniku.",
       "en": "A reference ultra-premium sipper — dense, sweet oak body. Wants a full, slow cigar; not gin-style botanicals."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "tq-don-julio-anejo",
@@ -785,9 +788,10 @@
       "en": "Habano / maduro — vanilla and oak. Oak and cocoa want a medium-full cigar that stays dry in the finish."
     },
     "notes": {
-      "hr": "Glatki añejo s orasastim tonom — uz srednje–punu večernju cigaru.",
-      "en": "A smooth añejo with a nutty tone — with a medium–full evening cigar."
-    }
+      "hr": "PATRÓN Tequila je uvijek bila na čelu vrhunske izrade alkoholnih pića i ističe se kao jedan od rijetkih brendova koji nastavljaju proizvoditi tekilu na teži način: ručno, s prirodnim sastojcima. PATRÓN Añejo odležava najmanje 12 mjeseci u malim bačvama od bijelog hrasta, razvijaj",
+      "en": "PATRÓN Tequila je uvijek bila na čelu vrhunske izrade alkoholnih pića i ističe se kao jedan od rijetkih brendova koji nastavljaju proizvoditi tekilu na teži način: ručno, s prirodnim sastojcima. PATRÓN Añejo odležava najmanje 12 mjeseci u malim bačvama od bijelog hrasta, razvijaj"
+    },
+    "profileEstimated": false
   },
   {
     "id": "tq-herradura-anejo",
@@ -881,7 +885,8 @@
       "agava",
       "hrast",
       "vanilija",
-      "papar"
+      "papar",
+      "citrus"
     ],
     "qualityScore": 8.0,
     "priceEUR": {
@@ -902,9 +907,10 @@
       "en": "Medium-strength Habano — agave + oak. Vanilla and gentle oak carry a medium cigar without smothering the agave."
     },
     "notes": {
-      "hr": "Reposado s hrastom i vanilijom — uz srednju cigaru.",
-      "en": "A reposado with oak and vanilla — with a medium cigar."
-    }
+      "hr": "TekilA Alta Azul Reposado izrađuje se isključivo od 100% plave Weber agave uzgojene u visoravnima Jalisca, poznatima po proizvodnji slađe agave bogatije mineralima. Svaka boca ponosno nosi službene NOM i CRT certifikate, koji jamče autentičnost, kvalitetu i pridržavanje tradicion",
+      "en": "TekilA Alta Azul Reposado izrađuje se isključivo od 100% plave Weber agave uzgojene u visoravnima Jalisca, poznatima po proizvodnji slađe agave bogatije mineralima. Svaka boca ponosno nosi službene NOM i CRT certifikate, koji jamče autentičnost, kvalitetu i pridržavanje tradicion"
+    },
+    "profileEstimated": false
   },
   {
     "id": "tq-amor-mio-tequila-reposado-100-agave-azul-40-vol-0-7l-u-poklon-kutiji",
@@ -1434,7 +1440,7 @@
     "country": "Meksiko",
     "abv": 40.0,
     "body": 2,
-    "sweetness": 2,
+    "sweetness": 4,
     "flavorTags": [
       "agava",
       "citrus",
@@ -1462,7 +1468,8 @@
     "notes": {
       "hr": "Glatki premium blanco — dobra ulazna točka za pairing s Connecticutom ili blagim Habano.",
       "en": "A smooth premium blanco — a good entry for pairing with Connecticut or a mild Habano."
-    }
+    },
+    "profileEstimated": false
   },
   {
     "id": "tq-casamigos-anejo",

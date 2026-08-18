@@ -37,17 +37,19 @@ RAW = HERE / "output" / "drink_notes_raw.json"
 # All known canonical tags (kept broad to avoid silent drops).
 # New gin tags added: borovica, kamilica, anis, korijen
 CANON = {
-    "anis", "biljno", "borovica", "cedar", "citrus", "cmet", "cokolada", "cvjetno",
+    "agava", "anis", "biljno", "borovica", "cedar", "citrus", "cmet", "cokolada", "cvjetno",
     "dim", "duhan", "ester-funk", "grozdje", "hrast", "iodin", "jabuka",
     "kakao", "karamela", "kamilica", "kava", "kokos", "korijen", "koza",
     "kremasto", "maple", "med", "medicinski", "melasa", "mineralno", "morski",
     "orasasti", "orah", "overproof", "papar", "prune", "slatko", "suho-voce",
     "tamno-voce", "travnato", "tropsko-voce", "umami", "vanilija", "vegetalno",
-    "voce", "zacini",
+    "voce", "zacini", "zemljano",
 }
 
 # Croatian + English term → canonical tag
 WORD_TO_TAG: list[tuple[str, str]] = [
+    (r"agave|agava", "agava"),
+    (r"earth(?:y)?|zemljan", "zemljano"),
     # Gin-specific
     (r"juniper|borovica|smreka|borovi|wacholder", "borovica"),
     (r"camomile|chamomile|kamilica", "kamilica"),
@@ -828,26 +830,49 @@ def apply_profiles(
         source = "unchanged"
         estimated = True
 
-        # 1) Check curated first
+        # 1) Documented curated (estimated=False) first
+        documented = None
+        estimated_curated = None
         result = match_curated(bid, curated)
         if result:
-            new_body, new_sweet, curated_tags, estimated = result
-            if curated_tags:
-                new_tags = curated_tags
-                source = "curated"
+            if not result[3]:
+                documented = result
+            else:
+                estimated_curated = result
 
-        # 2) Scraped text (only if no curated match, or if curated didn't give tags)
+        if documented:
+            old_tags = bottle.get("flavorTags") or []
+            # Tequila W2: do not replace already-calibrated tags with a shorter curated list
+            if not (category == "tequila" and len(old_tags) >= 3):
+                new_body, new_sweet, curated_tags, estimated = documented
+                if curated_tags:
+                    new_tags = curated_tags
+                    source = "curated"
+
+        # 2) Scraped PDP text — beats generic estimated curated, never invents tags
         if new_tags is None and bid in scraped and scraped[bid].get("text"):
-            raw_tags = tags_from_text(scraped[bid]["text"])
-            if raw_tags:
-                new_tags = raw_tags
-                source = "scraped"
-                estimated = False
+            old_tags = bottle.get("flavorTags") or []
+            if not (category == "tequila" and len(old_tags) >= 3):
+                raw_tags = tags_from_text(scraped[bid]["text"])
+                if raw_tags:
+                    new_tags = raw_tags
+                    source = "scraped"
+                    estimated = False
 
-        # 3) Existing notes text
+        # 3) Generic estimated curated only fills thin profiles
+        if new_tags is None and estimated_curated:
+            old_tags = bottle.get("flavorTags") or []
+            if len(old_tags) < 3:
+                new_body, new_sweet, curated_tags, estimated = estimated_curated
+                if curated_tags:
+                    new_tags = curated_tags
+                    source = "curated_estimated"
+
+        # 4) Existing notes text — only when tags are still thin
         if new_tags is None:
             existing_notes = (bottle.get("notes") or {}).get("en", "") or (bottle.get("notes") or {}).get("hr", "")
-            if existing_notes:
+            old_tags = bottle.get("flavorTags") or []
+            if existing_notes and len(old_tags) < 3:
                 raw_tags = tags_from_text(existing_notes)
                 if raw_tags and len(raw_tags) >= 2:
                     new_tags = raw_tags
