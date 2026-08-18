@@ -40,6 +40,14 @@ A separate `backend` job runs `python -m unittest discover -s tests` in `backend
 - One-shot baseline stamp (offline, no network): `python scripts/stamp-fetched-at-baseline.py`. Sets `fetchedAt = 2026-07-01` on every price that lacks it. Run once after the W3 PR merges, then re-export with `export-indexes.py`.
 - UI: the DetailSheet shows "Cijena preuzeta {date}." when `fetchedAt` is present; prices older than 90 days show an orange stale warning. When `fetchedAt` is absent the generic market note is shown instead.
 
+### Stock freshness (weekly ping)
+- Product-page stock (`inStock`, `stockFetchedAt`) is separate from quarterly price scrapes. It lives on the same JSON nodes as shop links (`regionLinks`, vitola `url`, drink `priceUrl`).
+- **Weekly local refresh:** `python scripts/refresh-availability.py` pings known product URLs only — no catalogue recrawl. Use `--stale-days 14` to skip recently pinged links; `--hosts humidor.hr,allez.hr` for a targeted pass.
+- **Windows Task Scheduler:** `powershell -File scripts/schedule-availability-refresh.ps1 -Install` registers Sunday 09:00; `-RunNow` for manual. The task does not commit — review `git diff` on catalog JSON before shipping.
+- **Overlay merge:** after pulling master, re-apply saved pings with `python scripts/apply-stock-overlay.py` (`scripts/output/stock_overlay.json`).
+- UI: DetailSheet buy buttons show "Na zalihi" / "Nema na zalihi" when `stockFetchedAt` is present; older than 14 days shows a stale hint. Missing fields → no stock claim.
+- Distinct from **`hr-availability.yml`**: that workflow reconciles which cigars appear in HR at all (`availabilityHR` / `markets.HR`), not shelf stock on a known URL.
+
 ### Fotografije proizvoda
 - **Dva popisa, i ne smiju se pomiješati.** `src/data/productImages.json` = adresa
   slike kod dućana (puni `attach-product-images.py`); `src/data/productImagesLocal.json`

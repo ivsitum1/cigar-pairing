@@ -24,6 +24,7 @@ import {
 import { formatEur, vitolaPriceForMarket } from "../lib/cigarPrice";
 import { drinkNameLoc } from "../lib/drinkName";
 import { vitolaBlurb } from "../lib/vitolaInfo";
+import { cigarLinkStockView, drinkStockView, type StockView } from "../lib/shopStock";
 import { resolveSamplerCigar } from "../lib/samplerLink";
 import { cigarItemId, parseCigarItemId } from "../lib/cigarItemId";
 import {
@@ -647,15 +648,40 @@ function DrinkDetails({
   );
 }
 
+function StockBadge({ view }: { view: StockView | null }) {
+  const { t } = useI18n();
+  if (!view) return null;
+  const label = view.inStock ? t("stock.in") : t("stock.out");
+  const tone = view.inStock ? "text-emerald-400/90" : "text-orange-400/90";
+  return (
+    <span className={`block text-[10px] leading-tight ${tone}`}>
+      {label}
+      {view.stale && (
+        <span className="text-dim/70"> · {t("stock.stale")}</span>
+      )}
+    </span>
+  );
+}
+
 // Kupnja boce po regiji: HR → Europa → SAD → svjetski cjenik, a na kraju izlaz
 // na web kad nijedna polica nije potvrđena. Uz svaku regiju piše KOLIKO app
 // zna o dostupnosti — potvrđena stranica boce, urednički orijentir ili ništa.
 function DrinkBuyLinks({ drink }: { drink: Drink }) {
   const { t } = useI18n();
   const links = drinkShopLinks(drink);
+  const shelf = drinkStockView(drink);
   if (links.length === 0) {
     const buy = drinkBuyLink(drink);
-    return <BuyLink href={buy.href} label={buy.label} />;
+    return (
+      <>
+        <BuyLink href={buy.href} label={buy.label} />
+        {shelf && (
+          <p className="mt-1 text-center">
+            <StockBadge view={shelf} />
+          </p>
+        )}
+      </>
+    );
   }
   const availability = drinkRegionAvailability(drink);
   const ref = links.filter((l) => l.scope === "REF");
@@ -669,17 +695,22 @@ function DrinkBuyLinks({ drink }: { drink: Drink }) {
   } as const;
   const buttons = (items: typeof links) => (
     <div className="grid grid-cols-2 gap-2">
-      {items.map((l) => (
-        <a
-          key={`${l.scope}-${l.shopId}`}
-          href={l.url}
-          target="_blank"
-          rel="noreferrer"
-          className="rounded-lg border border-zlato/40 bg-zlato/10 px-2 py-2 text-center text-xs text-zlato-2 hover:bg-zlato/20"
-        >
-          {l.shop} <span className="text-[10px] text-dim">· {KIND_LABEL[l.kind]}</span> ↗
-        </a>
-      ))}
+      {items.map((l) => {
+        const linkShelf =
+          l.kind === "product" ? drinkStockView(drink) : null;
+        return (
+          <a
+            key={`${l.scope}-${l.shopId}`}
+            href={l.url}
+            target="_blank"
+            rel="noreferrer"
+            className="rounded-lg border border-zlato/40 bg-zlato/10 px-2 py-2 text-center text-xs text-zlato-2 hover:bg-zlato/20"
+          >
+            {l.shop} <span className="text-[10px] text-dim">· {KIND_LABEL[l.kind]}</span> ↗
+            <StockBadge view={linkShelf} />
+          </a>
+        );
+      })}
     </div>
   );
   const group = (title: string, items: typeof links, status?: string) =>
@@ -796,6 +827,7 @@ function CigarBuyLinks({ cigar }: { cigar: Cigar }) {
                     priceNum != null
                       ? `${approx ? "~" : ""}${formatEur(priceNum)}`
                       : null;
+                  const linkShelf = cigarLinkStockView(cigar, l.url, l.kind);
                   return (
                     <a
                       key={l.shop}
@@ -818,6 +850,7 @@ function CigarBuyLinks({ cigar }: { cigar: Cigar }) {
                         </span>
                       )}{" "}
                       ↗
+                      <StockBadge view={linkShelf} />
                     </a>
                   );
                 })}

@@ -53,6 +53,11 @@ jobs:
       - name: HR availability reconcile logic
         working-directory: app
         run: python scripts/test_reconcile_hr.py
+      - name: Shop stock ping helpers (parse + catalog apply)
+        working-directory: app
+        run: |
+          python scripts/test_stock_parse.py
+          python scripts/test_availability_catalog.py
       - name: Taxonomy line helpers (dimenzije / velika slova u imenu linije)
         working-directory: app
         run: python scripts/test_taxonomy_lib.py

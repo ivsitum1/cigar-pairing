@@ -22,6 +22,20 @@ export type Region = "HR" | "EU" | "USA";
 // Filter u UI-u: "ALL" = bez filtera (prikaži sve), inače konkretna regija.
 export type RegionFilter = "ALL" | Region;
 
+/** Tjedni ping poznatog URL-a — odvojeno od kvartalnog `fetchedAt` na cijeni. */
+export interface StockFields {
+  inStock?: boolean;
+  stockFetchedAt?: string;
+}
+
+export interface ShopLink extends StockFields {
+  shop: string;
+  url: string;
+  priceEUR?: number;
+  priceApprox?: boolean;
+  fetchedAt?: string;
+}
+
 export interface LocalizedText {
   hr: string;
   en: string;
@@ -99,6 +113,8 @@ export interface Drink {
   /** Coffee only — roast/process/species shown on the drink sheet. */
   coffeeDetail?: CoffeeDetail;
   priceUrl?: string | null; // izvor cijene / gdje kupiti
+  inStock?: boolean;
+  stockFetchedAt?: string;
   notes: LocalizedText;
   // Za unose koji predstavljaju seriju/raspon (npr. Foursquare ECS), a ne
   // jednu bocu: popis izdanja koji se prikaze kad se detalj otvori.
@@ -111,6 +127,8 @@ export interface Vitola {
   smokeTimeMin: number | null;
   priceEUR: number | null;
   url: string | null; // link na proizvod (humidor.hr)
+  inStock?: boolean;
+  stockFetchedAt?: string;
   // Generic family (Robusto, Toro, …). When the maker uses the generic name, name === shape.
   shape?: string;
   ring?: number;
@@ -119,7 +137,7 @@ export interface Vitola {
   fetchedAt?: string;
   // Linkovi na proizvod te KONKRETNE vitole po regiji (market katalog) — kad
   // korisnik izabere vitolu, kupnja/cijena vode na tu vitolu, ne na liniju.
-  regionLinks?: Partial<Record<Region, { shop: string; url: string; priceEUR?: number; priceApprox?: boolean; fetchedAt?: string }>>;
+  regionLinks?: Partial<Record<Region, ShopLink>>;
 }
 
 export interface Cigar {
@@ -159,6 +177,8 @@ export interface Cigar {
   priceEUR: number | null;
   priceApprox?: boolean;
   priceUrl?: string | null; // izvor cijene / gdje kupiti
+  inStock?: boolean;
+  stockFetchedAt?: string;
   vitolas: Vitola[];
   /**
    * Runtime oznaka (NIJE u JSON-u): ime vitole koju je korisnik izabrao iz
@@ -171,7 +191,7 @@ export interface Cigar {
   // Izravan link na proizvod + cijena po regiji (iz stvarnog scrape-a trgovina).
   // HR/EU/USA gdje postoji; EU/USA cijena je "od" na razini linije, USD->EUR
   // konverzija nosi priceApprox. Embargo: kubanke nemaju USA.
-  regionLinks?: Partial<Record<Region, { shop: string; url: string; priceEUR?: number; priceApprox?: boolean; fetchedAt?: string }>>;
+  regionLinks?: Partial<Record<Region, ShopLink>>;
   // "market" = generirano iz scrape-a trgovina (build-market-cigars.py), za razliku
   // od kuriranih unosa; idempotentno regenerirano. Vidi Faza B/C playbook.
   catalogSource?: "market";

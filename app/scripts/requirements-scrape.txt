@@ -1,0 +1,6 @@
+# Optional scrape extras for weekly stock pings.
+# Parser tests and CI do not need this.
+#
+#   pip install -r scripts/requirements-scrape.txt
+#   scrapling install
+scrapling[fetchers]>=0.3

@@ -355,6 +355,12 @@ const STRINGS = {
     hr: "Cijena je starija od 3 mjeseca — provjeri u trgovini.",
     en: "Price is older than 3 months — verify with the shop.",
   },
+  "stock.in": { hr: "Na zalihi", en: "In stock" },
+  "stock.out": { hr: "Nema na zalihi", en: "Out of stock" },
+  "stock.stale": {
+    hr: "provjeri — podatak stariji od 14 dana",
+    en: "check — data older than 14 days",
+  },
   "rate.qualityWhat": {
     hr: "Neovisna procjena kvalitete (1–10) unutar vlastitog stila — agregat javnih ocjena i recenzija. Dodaci se ne kažnjavaju u ocjeni, nego se zasebno deklariraju.",
     en: "Independent quality estimate (1–10) within its own style — aggregated from public ratings and reviews. Additives are not penalized in the score; they are declared separately.",
