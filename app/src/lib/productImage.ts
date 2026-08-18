@@ -1,5 +1,7 @@
 import images from "../data/productImages.json";
 import local from "../data/productImagesLocal.json";
+import cigarAliasFile from "../data/cigarIdAliases.json";
+import drinkAliasFile from "../data/drinkIdAliases.json";
 
 /**
  * Fotografije proizvoda — dva sloja, jedan odgovor.
@@ -40,6 +42,30 @@ type LocalMaps = { cigars?: Record<string, LocalUnos>; drinks?: Record<string, L
 
 const MAPS = images as UrlMaps;
 const LOCAL = local as LocalMaps;
+const CIGAR_ALIASES: Record<string, string> =
+  (cigarAliasFile as { aliases?: Record<string, string> }).aliases ?? {};
+const DRINK_ALIASES: Record<string, string> =
+  (drinkAliasFile as { aliases?: Record<string, string> }).aliases ?? {};
+
+function followAlias(kind: "cigar" | "drink", id: string): string {
+  const map = kind === "cigar" ? CIGAR_ALIASES : DRINK_ALIASES;
+  let cur = id;
+  const seen = new Set<string>();
+  while (map[cur] && !seen.has(cur)) {
+    seen.add(cur);
+    cur = map[cur];
+  }
+  return cur;
+}
+
+/** Živi ključ slike: kanonski ID ako ima fotografiju, inače original. */
+function photoId(kind: "cigar" | "drink", id: string): string {
+  const canon = followAlias(kind, id);
+  const map = kind === "cigar" ? MAPS.cigars : MAPS.drinks;
+  if (map[canon]) return canon;
+  if (map[id]) return id;
+  return canon;
+}
 
 /**
  * Vite servira aplikaciju pod `/cigar-pairing/`, ne pod korijenom. Tvrdo
@@ -57,7 +83,7 @@ function base(): string {
  */
 export function productImageUrl(kind: "cigar" | "drink", id: string): string | null {
   const map = kind === "cigar" ? MAPS.cigars : MAPS.drinks;
-  const url = map[id];
+  const url = map[photoId(kind, id)];
   return typeof url === "string" && url.startsWith("http") ? url : null;
 }
 
@@ -71,11 +97,13 @@ export function productImageUrl(kind: "cigar" | "drink", id: string): string | n
 export function productPhoto(kind: "cigar" | "drink", id: string | undefined): ProductPhoto | null {
   if (!id) return null;
   const vrsta = kind === "cigar" ? "cigars" : "drinks";
+  const lookup = photoId(kind, id);
+  const localKey = LOCAL[vrsta]?.[lookup] ? lookup : id;
 
-  const obradjena = LOCAL[vrsta]?.[id];
+  const obradjena = LOCAL[vrsta]?.[localKey];
   if (obradjena) {
     return {
-      src: `${base()}img/products/${vrsta}/${encodeURIComponent(id)}.webp`,
+      src: `${base()}img/products/${vrsta}/${encodeURIComponent(localKey)}.webp`,
       // Okvir je vidljiv zahvat; kad popis kaže nešto nepoznato, tiši je izbor.
       treatment: obradjena.t === "framed" ? "framed" : "cutout",
       width: obradjena.w,

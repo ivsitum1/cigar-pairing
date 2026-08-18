@@ -19,6 +19,8 @@ cigar_and_rum — Cigar & Rum / knjiga bontona
 - Draft bontona: `docs/bonton/`
 - 2026-07-25: Flavor enrichment — CigarWorld HTTP scrape + Famous Smoke via Cursor browser session (22 shop lines); ops learning in `agent-brain-lite/knowledge/learnings/shop-flavor-scrape.md`
 - 2026-07-31: Four shops additive ingest (Famous, Neptune, C.Gars, La Couronne) — never overwrite regionLinks; baseline snapshot first; do not run regenerative `build-market-cigars.py` for this path
+- 2026-08-18: House-line catalog fold — shop-title splits under parent (3313→3293); skip Cuban vs New World homonyms; product photos follow aliases
+- 2026-08-18: Gift finder — polica/segment iz pitanja (rupa, vrh, omjer), budžet 100 €+, bez tuđe kolekcije
 - 2026-08-17: Gift chooser `#/shopping/gift` — pet pitanja, razredi do 20 / 20–40 / 40–60 / 60–100 €, poklon cigara / boca / kombinacija, samo artikli s cijenom u odabranom tržištu
 - 2026-08-01: House-line taxonomy — Crowned Heads / Foundation / Dunbarton children under parent; line name keeps marque; blurbs explain named lines
 

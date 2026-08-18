@@ -35951,8 +35951,8 @@
   },
   {
     "id": "cig-benchmade-maduro",
-    "brand": "Benchmade",
-    "line": "Maduro",
+    "brand": "Ashton",
+    "line": "Benchmade Maduro",
     "vitola": "Robusto",
     "format": "50 x 127mm",
     "country": "Nikaragva",
@@ -36040,8 +36040,8 @@
   },
   {
     "id": "cig-benchmade-natural",
-    "brand": "Benchmade",
-    "line": "Natural",
+    "brand": "Ashton",
+    "line": "Benchmade Natural",
     "vitola": "Robusto",
     "format": "50 x 127mm",
     "country": "Nikaragva",
@@ -36128,8 +36128,8 @@
   },
   {
     "id": "cig-benchmade-sun-grown",
-    "brand": "Benchmade",
-    "line": "Sun Grown",
+    "brand": "Ashton",
+    "line": "Benchmade Sun Grown",
     "vitola": "Robusto",
     "format": "50 x 127mm",
     "country": "Nikaragva",
@@ -91054,8 +91054,8 @@
   },
   {
     "id": "cig-dominus-mmxx-astkreuz",
-    "brand": "Dominus",
-    "line": "MMXX Astkreuz",
+    "brand": "Padilla",
+    "line": "Dominus MMXX Astkreuz",
     "vitola": "Corona",
     "format": "42 x 142mm",
     "country": "Kostarika",
@@ -91120,8 +91120,8 @@
   },
   {
     "id": "cig-dominus-mmxx-jerusalemkreuz",
-    "brand": "Dominus",
-    "line": "MMXX Jerusalemkreuz",
+    "brand": "Padilla",
+    "line": "Dominus MMXX Jerusalemkreuz",
     "vitola": "Half Corona",
     "format": "42 x 105mm",
     "country": "Kostarika",
@@ -91187,8 +91187,8 @@
   },
   {
     "id": "cig-dominus-mmxx-patoncerkreuz",
-    "brand": "Dominus",
-    "line": "MMXX Patoncerkreuz",
+    "brand": "Padilla",
+    "line": "Dominus MMXX Patoncerkreuz",
     "vitola": "Robusto",
     "format": "52 x 127mm",
     "country": "Kostarika",
@@ -91254,8 +91254,8 @@
   },
   {
     "id": "cig-dominus-mmxx-santiagokreuz",
-    "brand": "Dominus",
-    "line": "MMXX Santiagokreuz",
+    "brand": "Padilla",
+    "line": "Dominus MMXX Santiagokreuz",
     "vitola": "Robusto",
     "format": "52 x 127mm",
     "country": "Kostarika",
@@ -91320,8 +91320,8 @@
   },
   {
     "id": "cig-dominus-mmxx-tatzenkreuz",
-    "brand": "Dominus",
-    "line": "MMXX Tatzenkreuz",
+    "brand": "Padilla",
+    "line": "Dominus MMXX Tatzenkreuz",
     "vitola": "Gordo",
     "format": "52 x 159mm",
     "country": "Kostarika",
@@ -91387,8 +91387,8 @@
   },
   {
     "id": "cig-dominus-mmxx-templerkreuz",
-    "brand": "Dominus",
-    "line": "MMXX Templerkreuz",
+    "brand": "Padilla",
+    "line": "Dominus MMXX Templerkreuz",
     "vitola": "Figurado",
     "format": "50 x 178mm",
     "country": "Kostarika",
@@ -91454,8 +91454,8 @@
   },
   {
     "id": "cig-dominus-mmxx-wiederkreuz",
-    "brand": "Dominus",
-    "line": "MMXX Wiederkreuz",
+    "brand": "Padilla",
+    "line": "Dominus MMXX Wiederkreuz",
     "vitola": "Piramide",
     "format": "50 x 158mm",
     "country": "Kostarika",
@@ -107812,201 +107812,6 @@
     "formatEstimated": true
   },
   {
-    "id": "cig-el-centurion-el-centurion",
-    "brand": "El Centurion",
-    "line": "El Centurion",
-    "vitola": "Gran Toro",
-    "format": "58 x 165mm",
-    "country": "Nikaragva",
-    "wrapper": "Nicaraguan",
-    "strength": 5,
-    "body": 3,
-    "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
-    ],
-    "profileEstimated": true,
-    "catalogSource": "market",
-    "smokeTimeMin": 63,
-    "priceEUR": null,
-    "priceApprox": false,
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Nikaragva, Nicaraguan pokrov — pune snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Nicaragua, Nicaraguan wrapper — full in strength, medium-bodied. Notes: cedar, spices, leather."
-    },
-    "markets": [
-      "USA",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Gran Toro",
-        "format": "58 x 165mm",
-        "smokeTimeMin": 63,
-        "priceEUR": null,
-        "url": null,
-        "ring": 58,
-        "lengthMM": 165
-      }
-    ],
-    "regionLinks": {
-      "USA": {
-        "shop": "Holt's",
-        "url": "https://www.holts.com/cigars/all-cigar-brands/el-centurion.html",
-        "priceEUR": 9.11,
-        "priceApprox": true,
-        "fetchedAt": "2026-07-01"
-      }
-    },
-    "strengthFromShop": true
-  },
-  {
-    "id": "cig-el-centurion-h-2k-ct",
-    "brand": "El Centurion",
-    "line": "H-2K-CT",
-    "vitola": "Corona",
-    "format": "48 x 140mm",
-    "country": "Nikaragva",
-    "wrapper": "Connecticut Habano",
-    "strength": 3,
-    "body": 2,
-    "flavorTags": [
-      "kremasto",
-      "cedar",
-      "orasasti",
-      "med",
-      "trava-slatka"
-    ],
-    "profileEstimated": true,
-    "catalogSource": "market",
-    "smokeTimeMin": 54,
-    "priceEUR": null,
-    "priceApprox": false,
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Nikaragva, Connecticut Habano pokrov — srednje snage, laganog tijela. Okusi: kremasto, cedrovina, orašasti tonovi.",
-      "en": "Nicaragua, Connecticut Habano wrapper — medium in strength, light-bodied. Notes: creamy, cedar, nutty."
-    },
-    "markets": [
-      "USA",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Corona",
-        "format": "48 x 140mm",
-        "smokeTimeMin": 54,
-        "priceEUR": null,
-        "url": null,
-        "ring": 48,
-        "lengthMM": 140
-      },
-      {
-        "name": "Toro",
-        "format": "52 x 152mm",
-        "smokeTimeMin": 58,
-        "priceEUR": null,
-        "url": null,
-        "ring": 52,
-        "lengthMM": 152
-      },
-      {
-        "name": "Gran Toro",
-        "format": "58 x 165mm",
-        "smokeTimeMin": 63,
-        "priceEUR": null,
-        "url": null,
-        "ring": 58,
-        "lengthMM": 165
-      }
-    ],
-    "regionLinks": {
-      "USA": {
-        "shop": "Holt's",
-        "url": "https://www.holts.com/cigars/all-cigar-brands/el-centurion-h-2k-ct.html",
-        "priceEUR": 8.19,
-        "priceApprox": true,
-        "fetchedAt": "2026-07-01"
-      }
-    },
-    "strengthFromShop": true
-  },
-  {
-    "id": "cig-el-centurion-h2kct",
-    "brand": "El Centurion",
-    "line": "H2kct",
-    "vitola": "Toro",
-    "format": "52 x 152mm",
-    "country": "Nikaragva",
-    "wrapper": "USA Pennsylvania",
-    "strength": 5,
-    "body": 5,
-    "flavorTags": [
-      "cedar",
-      "orasasti",
-      "zacini",
-      "med",
-      "dim"
-    ],
-    "profileEstimated": true,
-    "formatEstimated": true,
-    "smokeTimeMin": 72,
-    "priceEUR": null,
-    "priceUrl": "https://www.neptunecigar.com/cigars/el-centurion-h2kct-toro",
-    "vitolas": [
-      {
-        "name": "Toro",
-        "format": "52 x 152mm",
-        "smokeTimeMin": 72,
-        "priceEUR": null,
-        "url": "https://www.neptunecigar.com/cigars/el-centurion-h2kct-toro",
-        "shape": "Toro",
-        "ring": 52,
-        "lengthMM": 152,
-        "regionLinks": {
-          "USA": {
-            "shop": "Neptune Cigar",
-            "url": "https://www.neptunecigar.com/cigars/el-centurion-h2kct-toro",
-            "inStock": true,
-            "stockFetchedAt": "2026-08-17"
-          }
-        },
-        "inStock": true,
-        "stockFetchedAt": "2026-08-17"
-      }
-    ],
-    "markets": [
-      "USA",
-      "WW"
-    ],
-    "regionLinks": {
-      "USA": {
-        "shop": "Neptune Cigar",
-        "url": "https://www.neptunecigar.com/cigars/el-centurion-h2kct-toro",
-        "inStock": true,
-        "stockFetchedAt": "2026-08-17"
-      }
-    },
-    "catalogSource": "market",
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Nikaragva — linija iz trgovine Neptune Cigar.",
-      "en": "Nicaragua — line from Neptune Cigar."
-    },
-    "sourceUrls": [
-      "https://www.neptunecigar.com/cigars/el-centurion-h2kct-toro"
-    ],
-    "wrapperOrigin": "SAD",
-    "binderOrigin": "Nikaragva",
-    "fillerOrigin": "Nikaragva",
-    "strengthFromShop": true,
-    "inStock": true,
-    "stockFetchedAt": "2026-08-17"
-  },
-  {
     "id": "cig-el-copey-claro",
     "brand": "El Copey",
     "line": "Claro",
@@ -116846,58 +116651,6 @@
     "binderOrigin": "Nikaragva"
   },
   {
-    "id": "cig-fausto-avion-12",
-    "brand": "Fausto",
-    "line": "Avion 12",
-    "vitola": "Perfecto",
-    "format": "52 x 143mm",
-    "country": "Nikaragva",
-    "wrapper": "Ecuador Habano",
-    "strength": 5,
-    "body": 3,
-    "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
-    ],
-    "profileEstimated": true,
-    "catalogSource": "market",
-    "smokeTimeMin": 55,
-    "priceEUR": null,
-    "priceApprox": false,
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Nikaragva, Ecuador Habano pokrov — pune snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Nicaragua, Ecuador Habano wrapper — full in strength, medium-bodied. Notes: cedar, spices, leather."
-    },
-    "markets": [
-      "USA",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Perfecto",
-        "format": "52 x 143mm",
-        "smokeTimeMin": 55,
-        "priceEUR": null,
-        "url": null,
-        "ring": 52,
-        "lengthMM": 143
-      }
-    ],
-    "regionLinks": {
-      "USA": {
-        "shop": "Holt's",
-        "url": "https://www.holts.com/cigars/all-cigar-brands/fausto.html",
-        "priceEUR": 9.2,
-        "priceApprox": true,
-        "fetchedAt": "2026-07-01"
-      }
-    },
-    "strengthFromShop": true
-  },
-  {
     "id": "cig-ferio-tego-limited-edition-elegancia",
     "brand": "Ferio Tego",
     "line": "Limited Edition Elegancia",
@@ -119322,8 +119075,8 @@
   },
   {
     "id": "cig-flor-de-las-antillas-10th-anniversary",
-    "brand": "Flor de las Antillas",
-    "line": "10th Anniversary",
+    "brand": "My Father",
+    "line": "Flor de las Antillas 10th Anniversary",
     "vitola": "Toro",
     "format": "52 x 165mm",
     "country": "Nikaragva",
@@ -119383,169 +119136,9 @@
     "stockFetchedAt": "2026-08-17"
   },
   {
-    "id": "cig-flor-de-las-antillas-belicoso",
-    "brand": "Flor de las Antillas",
-    "line": "Belicoso",
-    "vitola": "Belicoso",
-    "format": "52 x 152mm",
-    "country": "Nikaragva",
-    "wrapper": "Nicaraguan",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [
-      "papar",
-      "kremasto",
-      "orasasti",
-      "zacini",
-      "dim"
-    ],
-    "profileEstimated": true,
-    "formatEstimated": true,
-    "smokeTimeMin": 72,
-    "priceEUR": null,
-    "priceUrl": "https://www.neptunecigar.com/cigars/flor-de-las-antillas-belicoso",
-    "vitolas": [
-      {
-        "name": "Belicoso",
-        "format": "52 x 152mm",
-        "smokeTimeMin": 72,
-        "priceEUR": null,
-        "url": "https://www.neptunecigar.com/cigars/flor-de-las-antillas-belicoso",
-        "shape": "Belicoso",
-        "ring": 52,
-        "lengthMM": 152,
-        "regionLinks": {
-          "USA": {
-            "shop": "Neptune Cigar",
-            "url": "https://www.neptunecigar.com/cigars/flor-de-las-antillas-belicoso",
-            "inStock": true,
-            "stockFetchedAt": "2026-08-17"
-          }
-        },
-        "inStock": true,
-        "stockFetchedAt": "2026-08-17"
-      }
-    ],
-    "markets": [
-      "USA",
-      "WW"
-    ],
-    "regionLinks": {
-      "USA": {
-        "shop": "Neptune Cigar",
-        "url": "https://www.neptunecigar.com/cigars/flor-de-las-antillas-belicoso",
-        "inStock": true,
-        "stockFetchedAt": "2026-08-17"
-      }
-    },
-    "catalogSource": "market",
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Nikaragva — linija iz trgovine Neptune Cigar.",
-      "en": "Nicaragua — line from Neptune Cigar."
-    },
-    "sourceUrls": [
-      "https://www.neptunecigar.com/cigars/flor-de-las-antillas-belicoso"
-    ],
-    "wrapperOrigin": "Nikaragva",
-    "binderOrigin": "Nikaragva",
-    "fillerOrigin": "Nikaragva",
-    "strengthFromShop": true,
-    "inStock": true,
-    "stockFetchedAt": "2026-08-17"
-  },
-  {
-    "id": "cig-flor-de-las-antillas-de-las-antillas",
-    "brand": "Flor de las Antillas",
-    "line": "de las Antillas",
-    "vitola": "Robusto",
-    "format": "50 x 127mm",
-    "country": "Nikaragva",
-    "wrapper": "Nicaraguan",
-    "strength": 4,
-    "body": 3,
-    "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
-    ],
-    "profileEstimated": true,
-    "catalogSource": "market",
-    "smokeTimeMin": 49,
-    "priceEUR": null,
-    "priceApprox": false,
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Nikaragva, Nicaraguan pokrov — jače snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Nicaragua, Nicaraguan wrapper — medium-full in strength, medium-bodied. Notes: cedar, spices, leather."
-    },
-    "markets": [
-      "USA",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Robusto",
-        "format": "50 x 127mm",
-        "smokeTimeMin": 49,
-        "priceEUR": null,
-        "url": null,
-        "ring": 50,
-        "lengthMM": 127
-      },
-      {
-        "name": "Belicoso",
-        "format": "52 x 140mm",
-        "smokeTimeMin": 54,
-        "priceEUR": null,
-        "url": null,
-        "ring": 52,
-        "lengthMM": 140
-      },
-      {
-        "name": "Toro",
-        "format": "52 x 152mm",
-        "smokeTimeMin": 58,
-        "priceEUR": null,
-        "url": null,
-        "ring": 52,
-        "lengthMM": 152
-      },
-      {
-        "name": "Gran Toro",
-        "format": "56 x 165mm",
-        "smokeTimeMin": 63,
-        "priceEUR": null,
-        "url": null,
-        "ring": 56,
-        "lengthMM": 165
-      },
-      {
-        "name": "Gran Toro",
-        "format": "60 x 152mm",
-        "smokeTimeMin": 58,
-        "priceEUR": null,
-        "url": null,
-        "ring": 60,
-        "lengthMM": 152
-      }
-    ],
-    "regionLinks": {
-      "USA": {
-        "shop": "Holt's",
-        "url": "https://www.holts.com/cigars/all-cigar-brands/flor-de-las-antillas.html",
-        "priceEUR": 8.37,
-        "priceApprox": true,
-        "fetchedAt": "2026-07-01"
-      }
-    },
-    "strengthFromShop": true
-  },
-  {
     "id": "cig-flor-de-las-antillas-maduro",
-    "brand": "Flor de las Antillas",
-    "line": "Maduro",
+    "brand": "My Father",
+    "line": "Flor de las Antillas Maduro",
     "vitola": "Corona",
     "format": "46 x 143mm",
     "country": "Nikaragva",
@@ -119645,81 +119238,9 @@
     "stockFetchedAt": "2026-08-17"
   },
   {
-    "id": "cig-flor-de-las-antillas-robusto",
-    "brand": "Flor de las Antillas",
-    "line": "Robusto",
-    "vitola": "Robusto",
-    "format": "50 x 124mm",
-    "country": "Nikaragva",
-    "wrapper": "Nicaraguan",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [
-      "papar",
-      "kremasto",
-      "orasasti",
-      "zacini",
-      "dim"
-    ],
-    "profileEstimated": true,
-    "formatEstimated": true,
-    "smokeTimeMin": 59,
-    "priceEUR": null,
-    "priceUrl": "https://www.neptunecigar.com/cigars/flor-de-las-antillas-robusto",
-    "vitolas": [
-      {
-        "name": "Robusto",
-        "format": "50 x 124mm",
-        "smokeTimeMin": 59,
-        "priceEUR": null,
-        "url": "https://www.neptunecigar.com/cigars/flor-de-las-antillas-robusto",
-        "shape": "Robusto",
-        "ring": 50,
-        "lengthMM": 124,
-        "regionLinks": {
-          "USA": {
-            "shop": "Neptune Cigar",
-            "url": "https://www.neptunecigar.com/cigars/flor-de-las-antillas-robusto",
-            "inStock": true,
-            "stockFetchedAt": "2026-08-17"
-          }
-        },
-        "inStock": true,
-        "stockFetchedAt": "2026-08-17"
-      }
-    ],
-    "markets": [
-      "USA",
-      "WW"
-    ],
-    "regionLinks": {
-      "USA": {
-        "shop": "Neptune Cigar",
-        "url": "https://www.neptunecigar.com/cigars/flor-de-las-antillas-robusto",
-        "inStock": true,
-        "stockFetchedAt": "2026-08-17"
-      }
-    },
-    "catalogSource": "market",
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Nikaragva — linija iz trgovine Neptune Cigar.",
-      "en": "Nicaragua — line from Neptune Cigar."
-    },
-    "sourceUrls": [
-      "https://www.neptunecigar.com/cigars/flor-de-las-antillas-robusto"
-    ],
-    "wrapperOrigin": "Nikaragva",
-    "binderOrigin": "Nikaragva",
-    "fillerOrigin": "Nikaragva",
-    "strengthFromShop": true,
-    "inStock": true,
-    "stockFetchedAt": "2026-08-17"
-  },
-  {
     "id": "cig-flor-de-las-antillas-san-andres-taa",
-    "brand": "Flor de las Antillas",
-    "line": "San Andres TAA",
+    "brand": "My Father",
+    "line": "Flor de las Antillas San Andres TAA",
     "vitola": "Robusto",
     "format": "52 x 127mm",
     "country": "Nikaragva",
@@ -119808,81 +119329,6 @@
     "binderOrigin": "Nikaragva",
     "fillerOrigin": "Nikaragva",
     "inStock": false,
-    "stockFetchedAt": "2026-08-17"
-  },
-  {
-    "id": "cig-flor-de-las-antillas-toro",
-    "brand": "Flor de las Antillas",
-    "line": "Toro",
-    "vitola": "Gordo",
-    "format": "60 x 152mm",
-    "country": "Nikaragva",
-    "wrapper": "Nicaraguan",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [
-      "papar",
-      "kremasto",
-      "orasasti",
-      "zacini",
-      "dim"
-    ],
-    "profileEstimated": true,
-    "formatEstimated": true,
-    "smokeTimeMin": 72,
-    "priceEUR": null,
-    "priceUrl": "https://www.neptunecigar.com/cigars/flor-de-las-antillas-toro-gordo",
-    "vitolas": [
-      {
-        "name": "Gordo",
-        "format": "60 x 152mm",
-        "smokeTimeMin": 72,
-        "priceEUR": null,
-        "url": "https://www.neptunecigar.com/cigars/flor-de-las-antillas-toro-gordo",
-        "shape": "Gordo",
-        "ring": 60,
-        "lengthMM": 152,
-        "regionLinks": {
-          "USA": {
-            "shop": "Neptune Cigar",
-            "url": "https://www.neptunecigar.com/cigars/flor-de-las-antillas-toro-gordo",
-            "inStock": true,
-            "stockFetchedAt": "2026-08-17"
-          }
-        },
-        "inStock": true,
-        "stockFetchedAt": "2026-08-17"
-      }
-    ],
-    "markets": [
-      "USA",
-      "WW"
-    ],
-    "regionLinks": {
-      "USA": {
-        "shop": "Neptune Cigar",
-        "url": "https://www.neptunecigar.com/cigars/flor-de-las-antillas-toro-gordo",
-        "inStock": true,
-        "stockFetchedAt": "2026-08-17"
-      }
-    },
-    "catalogSource": "market",
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Nikaragva — linija iz trgovine Neptune Cigar.",
-      "en": "Nicaragua — line from Neptune Cigar."
-    },
-    "sourceUrls": [
-      "https://www.neptunecigar.com/cigars/flor-de-las-antillas-toro-gordo",
-      "https://www.neptunecigar.com/cigars/flor-de-las-antillas-toro",
-      "https://www.neptunecigar.com/cigars/flor-de-las-antillas-toro-grande",
-      "https://www.neptunecigar.com/cigars/flor-de-las-antillas-toro-tubo"
-    ],
-    "wrapperOrigin": "Nikaragva",
-    "binderOrigin": "Nikaragva",
-    "fillerOrigin": "Nikaragva",
-    "strengthFromShop": true,
-    "inStock": true,
     "stockFetchedAt": "2026-08-17"
   },
   {
@@ -155403,345 +154849,6 @@
     "stockFetchedAt": "2026-08-17"
   },
   {
-    "id": "cig-la-antiguedad-grande",
-    "brand": "La Antiguedad",
-    "line": "Grande",
-    "vitola": "Corona",
-    "format": "42 x 140mm",
-    "country": "Nikaragva",
-    "wrapper": "Habano",
-    "strength": 5,
-    "body": 5,
-    "flavorTags": [
-      "kakao",
-      "papar",
-      "suho-voce",
-      "duhan",
-      "slatko"
-    ],
-    "profileEstimated": true,
-    "formatEstimated": true,
-    "smokeTimeMin": 66,
-    "priceEUR": null,
-    "priceUrl": "https://www.neptunecigar.com/cigars/la-antiguedad-corona-grande",
-    "vitolas": [
-      {
-        "name": "Corona",
-        "format": "42 x 140mm",
-        "smokeTimeMin": 66,
-        "priceEUR": null,
-        "url": "https://www.neptunecigar.com/cigars/la-antiguedad-corona-grande",
-        "shape": "Corona",
-        "ring": 42,
-        "lengthMM": 140,
-        "regionLinks": {
-          "USA": {
-            "shop": "Neptune Cigar",
-            "url": "https://www.neptunecigar.com/cigars/la-antiguedad-corona-grande",
-            "inStock": true,
-            "stockFetchedAt": "2026-08-17"
-          }
-        },
-        "inStock": true,
-        "stockFetchedAt": "2026-08-17"
-      }
-    ],
-    "markets": [
-      "USA",
-      "WW"
-    ],
-    "regionLinks": {
-      "USA": {
-        "shop": "Neptune Cigar",
-        "url": "https://www.neptunecigar.com/cigars/la-antiguedad-corona-grande",
-        "inStock": true,
-        "stockFetchedAt": "2026-08-17"
-      }
-    },
-    "catalogSource": "market",
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Nikaragva — linija iz trgovine Neptune Cigar.",
-      "en": "Nicaragua — line from Neptune Cigar."
-    },
-    "sourceUrls": [
-      "https://www.neptunecigar.com/cigars/la-antiguedad-corona-grande"
-    ],
-    "wrapperOrigin": "Ekvador",
-    "fillerOrigin": "Nikaragva",
-    "strengthFromShop": true,
-    "binder": "Criollo",
-    "inStock": true,
-    "stockFetchedAt": "2026-08-17"
-  },
-  {
-    "id": "cig-la-antiguedad-la-antiguedad",
-    "brand": "La Antiguedad",
-    "line": "La Antiguedad",
-    "vitola": "Robusto",
-    "format": "52 x 133mm",
-    "country": "Nikaragva",
-    "wrapper": "Ecuador Habano",
-    "strength": 5,
-    "body": 3,
-    "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
-    ],
-    "profileEstimated": true,
-    "catalogSource": "market",
-    "smokeTimeMin": 51,
-    "priceEUR": null,
-    "priceApprox": false,
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Nikaragva, Ecuador Habano pokrov — pune snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Nicaragua, Ecuador Habano wrapper — full in strength, medium-bodied. Notes: cedar, spices, leather."
-    },
-    "markets": [
-      "USA",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Robusto",
-        "format": "52 x 133mm",
-        "smokeTimeMin": 51,
-        "priceEUR": null,
-        "url": null,
-        "ring": 52,
-        "lengthMM": 133
-      },
-      {
-        "name": "Gran Toro",
-        "format": "60 x 152mm",
-        "smokeTimeMin": 58,
-        "priceEUR": null,
-        "url": null,
-        "ring": 60,
-        "lengthMM": 152
-      }
-    ],
-    "regionLinks": {
-      "USA": {
-        "shop": "Holt's",
-        "url": "https://www.holts.com/cigars/all-cigar-brands/la-antiguedad.html",
-        "priceEUR": 8.0,
-        "priceApprox": true,
-        "fetchedAt": "2026-07-01"
-      }
-    },
-    "strengthFromShop": true
-  },
-  {
-    "id": "cig-la-antiguedad-robusto",
-    "brand": "La Antiguedad",
-    "line": "Robusto",
-    "vitola": "Robusto",
-    "format": "50 x 124mm",
-    "country": "Nikaragva",
-    "wrapper": "Habano",
-    "strength": 5,
-    "body": 5,
-    "flavorTags": [
-      "kakao",
-      "papar",
-      "suho-voce",
-      "duhan",
-      "slatko"
-    ],
-    "profileEstimated": true,
-    "formatEstimated": true,
-    "smokeTimeMin": 59,
-    "priceEUR": null,
-    "priceUrl": "https://www.neptunecigar.com/cigars/la-antiguedad-robusto",
-    "vitolas": [
-      {
-        "name": "Robusto",
-        "format": "50 x 124mm",
-        "smokeTimeMin": 59,
-        "priceEUR": null,
-        "url": "https://www.neptunecigar.com/cigars/la-antiguedad-robusto",
-        "shape": "Robusto",
-        "ring": 50,
-        "lengthMM": 124,
-        "regionLinks": {
-          "USA": {
-            "shop": "Neptune Cigar",
-            "url": "https://www.neptunecigar.com/cigars/la-antiguedad-robusto",
-            "inStock": true,
-            "stockFetchedAt": "2026-08-17"
-          }
-        },
-        "inStock": true,
-        "stockFetchedAt": "2026-08-17"
-      }
-    ],
-    "markets": [
-      "USA",
-      "WW"
-    ],
-    "regionLinks": {
-      "USA": {
-        "shop": "Neptune Cigar",
-        "url": "https://www.neptunecigar.com/cigars/la-antiguedad-robusto",
-        "inStock": true,
-        "stockFetchedAt": "2026-08-17"
-      }
-    },
-    "catalogSource": "market",
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Nikaragva — linija iz trgovine Neptune Cigar.",
-      "en": "Nicaragua — line from Neptune Cigar."
-    },
-    "sourceUrls": [
-      "https://www.neptunecigar.com/cigars/la-antiguedad-robusto"
-    ],
-    "wrapperOrigin": "Ekvador",
-    "fillerOrigin": "Nikaragva",
-    "strengthFromShop": true,
-    "binder": "Criollo",
-    "inStock": true,
-    "stockFetchedAt": "2026-08-17"
-  },
-  {
-    "id": "cig-la-antiguedad-super",
-    "brand": "La Antiguedad",
-    "line": "Super",
-    "vitola": "Toro",
-    "format": "56 x 178mm",
-    "country": "Nikaragva",
-    "wrapper": "Ecuador Habano",
-    "strength": 5,
-    "body": 5,
-    "flavorTags": [
-      "kakao",
-      "papar",
-      "suho-voce",
-      "duhan",
-      "slatko"
-    ],
-    "profileEstimated": true,
-    "catalogSource": "market",
-    "smokeTimeMin": 68,
-    "priceEUR": null,
-    "priceApprox": false,
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Nikaragva, Ecuador Habano pokrov — pune snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Nicaragua, Ecuador Habano wrapper — full in strength, medium-bodied. Notes: cedar, spices, leather."
-    },
-    "markets": [
-      "USA",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Toro",
-        "format": "56 x 178mm",
-        "smokeTimeMin": 68,
-        "priceEUR": null,
-        "url": "https://www.neptunecigar.com/cigars/la-antiguedad-super-toro",
-        "ring": 56,
-        "lengthMM": 178,
-        "inStock": true,
-        "stockFetchedAt": "2026-08-17"
-      }
-    ],
-    "regionLinks": {
-      "USA": {
-        "shop": "Holt's",
-        "url": "https://www.holts.com/cigars/all-cigar-brands/la-antiguedad.html",
-        "priceEUR": 9.29,
-        "priceApprox": true,
-        "fetchedAt": "2026-07-01"
-      }
-    },
-    "strengthFromShop": true,
-    "priceUrl": "https://www.neptunecigar.com/cigars/la-antiguedad-super-toro",
-    "wrapperOrigin": "Ekvador",
-    "fillerOrigin": "Nikaragva",
-    "binder": "Criollo",
-    "inStock": true,
-    "stockFetchedAt": "2026-08-17"
-  },
-  {
-    "id": "cig-la-antiguedad-toro",
-    "brand": "La Antiguedad",
-    "line": "Toro",
-    "vitola": "Gran Toro",
-    "format": "60 x 152mm",
-    "country": "Nikaragva",
-    "wrapper": "Habano",
-    "strength": 5,
-    "body": 5,
-    "flavorTags": [
-      "kakao",
-      "papar",
-      "suho-voce",
-      "duhan",
-      "slatko"
-    ],
-    "profileEstimated": true,
-    "formatEstimated": true,
-    "smokeTimeMin": 72,
-    "priceEUR": null,
-    "priceUrl": "https://www.neptunecigar.com/cigars/la-antiguedad-toro-gordo",
-    "vitolas": [
-      {
-        "name": "Gran Toro",
-        "format": "60 x 152mm",
-        "smokeTimeMin": 72,
-        "priceEUR": null,
-        "url": "https://www.neptunecigar.com/cigars/la-antiguedad-toro-gordo",
-        "shape": "Gordo",
-        "ring": 60,
-        "lengthMM": 152,
-        "regionLinks": {
-          "USA": {
-            "shop": "Neptune Cigar",
-            "url": "https://www.neptunecigar.com/cigars/la-antiguedad-toro-gordo",
-            "inStock": true,
-            "stockFetchedAt": "2026-08-17"
-          }
-        },
-        "inStock": true,
-        "stockFetchedAt": "2026-08-17"
-      }
-    ],
-    "markets": [
-      "USA",
-      "WW"
-    ],
-    "regionLinks": {
-      "USA": {
-        "shop": "Neptune Cigar",
-        "url": "https://www.neptunecigar.com/cigars/la-antiguedad-toro-gordo",
-        "inStock": true,
-        "stockFetchedAt": "2026-08-17"
-      }
-    },
-    "catalogSource": "market",
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Nikaragva — linija iz trgovine Neptune Cigar.",
-      "en": "Nicaragua — line from Neptune Cigar."
-    },
-    "sourceUrls": [
-      "https://www.neptunecigar.com/cigars/la-antiguedad-toro-gordo",
-      "https://www.neptunecigar.com/cigars/la-antiguedad-toro"
-    ],
-    "wrapperOrigin": "Ekvador",
-    "fillerOrigin": "Nikaragva",
-    "strengthFromShop": true,
-    "binder": "Criollo",
-    "inStock": true,
-    "stockFetchedAt": "2026-08-17"
-  },
-  {
     "id": "cig-la-aroma-de-cuba-base-line",
     "brand": "La Aroma de Cuba",
     "line": "Base Line",
@@ -162706,111 +161813,6 @@
     "binderOrigin": "Nikaragva"
   },
   {
-    "id": "cig-la-capitana-la-capitana",
-    "brand": "La Capitana",
-    "line": "La Capitana",
-    "vitola": "Churchill",
-    "format": "48 x 182mm",
-    "country": "Nikaragva",
-    "wrapper": "Ecuador",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava",
-      "papar",
-      "drvo"
-    ],
-    "profileEstimated": true,
-    "catalogSource": "market",
-    "smokeTimeMin": 70,
-    "priceEUR": null,
-    "priceApprox": false,
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Nikaragva, Ecuador pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Nicaragua, Ecuador wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
-    },
-    "markets": [
-      "EU",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Churchill",
-        "format": "48 x 182mm",
-        "smokeTimeMin": 70,
-        "priceEUR": null,
-        "url": null,
-        "regionLinks": {
-          "EU": {
-            "shop": "CigarWorld",
-            "url": "https://www.cigarworld.de/en/zigarren/nicaragua/la-capitana-churchill-90012743_62111",
-            "priceEUR": 12.0,
-            "fetchedAt": "2026-07-01",
-            "inStock": false,
-            "stockFetchedAt": "2026-08-17"
-          }
-        },
-        "ring": 48,
-        "lengthMM": 182
-      },
-      {
-        "name": "Robusto",
-        "format": "50 x 127mm",
-        "smokeTimeMin": 49,
-        "priceEUR": null,
-        "url": null,
-        "regionLinks": {
-          "EU": {
-            "shop": "CigarWorld",
-            "url": "https://www.cigarworld.de/en/zigarren/nicaragua/la-capitana-robusto-90012743_62110",
-            "priceEUR": 11.0,
-            "fetchedAt": "2026-07-01",
-            "inStock": false,
-            "stockFetchedAt": "2026-08-17"
-          }
-        },
-        "ring": 50,
-        "lengthMM": 127
-      },
-      {
-        "name": "Toro",
-        "format": "50 x 152mm",
-        "smokeTimeMin": 58,
-        "priceEUR": null,
-        "url": null,
-        "regionLinks": {
-          "EU": {
-            "shop": "CigarWorld",
-            "url": "https://www.cigarworld.de/en/zigarren/nicaragua/la-capitana-toro-90012743_65999",
-            "priceEUR": 11.5,
-            "fetchedAt": "2026-07-01",
-            "inStock": false,
-            "stockFetchedAt": "2026-08-17"
-          }
-        },
-        "ring": 50,
-        "lengthMM": 152
-      }
-    ],
-    "regionLinks": {
-      "EU": {
-        "shop": "CigarWorld",
-        "url": "https://www.cigarworld.de/en/zigarren/nicaragua/la-capitana-robusto-90012743_62110",
-        "priceEUR": 11.0,
-        "fetchedAt": "2026-07-01",
-        "inStock": false,
-        "stockFetchedAt": "2026-08-17"
-      }
-    },
-    "formatEstimated": true,
-    "wrapperOrigin": "Ekvador",
-    "binderOrigin": "Nikaragva"
-  },
-  {
     "id": "cig-la-chaveta-white",
     "brand": "La Chaveta",
     "line": "White",
@@ -162955,219 +161957,6 @@
       }
     },
     "strengthFromShop": true
-  },
-  {
-    "id": "cig-la-duena-la-duena",
-    "brand": "La Duena",
-    "line": "La Duena",
-    "vitola": "Short Robusto",
-    "format": "52 x 114mm",
-    "country": "Nikaragva",
-    "wrapper": "Connecticut Broadleaf",
-    "strength": 3,
-    "body": 4,
-    "flavorTags": [
-      "kakao",
-      "kava",
-      "karamela",
-      "slatko",
-      "zemljano"
-    ],
-    "profileEstimated": true,
-    "catalogSource": "market",
-    "smokeTimeMin": 44,
-    "priceEUR": null,
-    "priceApprox": false,
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Nikaragva, Connecticut Broadleaf pokrov — srednje snage, punijeg tijela. Okusi: kakao, kava, karamela.",
-      "en": "Nicaragua, Connecticut Broadleaf wrapper — medium in strength, fuller-bodied. Notes: cocoa, coffee, caramel."
-    },
-    "markets": [
-      "USA",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Short Robusto",
-        "format": "52 x 114mm",
-        "smokeTimeMin": 44,
-        "priceEUR": null,
-        "url": null,
-        "ring": 52,
-        "lengthMM": 114
-      }
-    ],
-    "regionLinks": {
-      "USA": {
-        "shop": "Holt's",
-        "url": "https://www.holts.com/cigars/all-cigar-brands/la-duena.html",
-        "priceEUR": 6.9,
-        "priceApprox": true,
-        "fetchedAt": "2026-07-01"
-      }
-    },
-    "strengthFromShop": true
-  },
-  {
-    "id": "cig-la-duena-petit-no",
-    "brand": "La Duena",
-    "line": "Petit No.",
-    "format": "50 x 124mm",
-    "country": "Nikaragva",
-    "wrapper": "Maduro",
-    "strength": 5,
-    "body": 5,
-    "flavorTags": [
-      "papar",
-      "zemljano",
-      "koza"
-    ],
-    "profileEstimated": true,
-    "formatEstimated": true,
-    "smokeTimeMin": 59,
-    "priceEUR": null,
-    "priceUrl": "https://www.neptunecigar.com/cigars/la-duena-petit-robusto-no-11",
-    "vitolas": [
-      {
-        "name": "7",
-        "format": "38 x 190mm",
-        "smokeTimeMin": 90,
-        "priceEUR": null,
-        "url": "https://www.neptunecigar.com/cigars/la-duena-petit-lancero-no-7",
-        "shape": "Lancero",
-        "ring": 38,
-        "lengthMM": 190,
-        "regionLinks": {
-          "USA": {
-            "shop": "Neptune Cigar",
-            "url": "https://www.neptunecigar.com/cigars/la-duena-petit-lancero-no-7",
-            "inStock": true,
-            "stockFetchedAt": "2026-08-17"
-          }
-        },
-        "inStock": true,
-        "stockFetchedAt": "2026-08-17"
-      },
-      {
-        "name": "11",
-        "format": "50 x 124mm",
-        "smokeTimeMin": 59,
-        "priceEUR": null,
-        "url": "https://www.neptunecigar.com/cigars/la-duena-petit-robusto-no-11",
-        "shape": "Robusto",
-        "ring": 50,
-        "lengthMM": 124,
-        "regionLinks": {
-          "USA": {
-            "shop": "Neptune Cigar",
-            "url": "https://www.neptunecigar.com/cigars/la-duena-petit-robusto-no-11",
-            "inStock": false,
-            "stockFetchedAt": "2026-08-17"
-          }
-        },
-        "inStock": false,
-        "stockFetchedAt": "2026-08-17"
-      }
-    ],
-    "markets": [
-      "USA",
-      "WW"
-    ],
-    "regionLinks": {
-      "USA": {
-        "shop": "Neptune Cigar",
-        "url": "https://www.neptunecigar.com/cigars/la-duena-petit-robusto-no-11",
-        "inStock": false,
-        "stockFetchedAt": "2026-08-17"
-      }
-    },
-    "catalogSource": "market",
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Nikaragva — linija iz trgovine Neptune Cigar.",
-      "en": "Nicaragua — line from Neptune Cigar."
-    },
-    "sourceUrls": [
-      "https://www.neptunecigar.com/cigars/la-duena-petit-robusto-no-11"
-    ],
-    "vitola": "11",
-    "wrapperOrigin": "SAD",
-    "binderOrigin": "Nikaragva",
-    "fillerOrigin": "Nikaragva",
-    "strengthFromShop": true,
-    "inStock": false,
-    "stockFetchedAt": "2026-08-17"
-  },
-  {
-    "id": "cig-la-duena-toro-no13",
-    "brand": "La Duena",
-    "line": "Toro No13",
-    "vitola": "Gordo",
-    "format": "60 x 152mm",
-    "country": "Nikaragva",
-    "wrapper": "Maduro",
-    "strength": 5,
-    "body": 5,
-    "flavorTags": [
-      "papar",
-      "zemljano",
-      "koza"
-    ],
-    "profileEstimated": true,
-    "formatEstimated": true,
-    "smokeTimeMin": 72,
-    "priceEUR": null,
-    "priceUrl": "https://www.neptunecigar.com/cigars/la-duena-toro-gordo-no13",
-    "vitolas": [
-      {
-        "name": "Gordo",
-        "format": "60 x 152mm",
-        "smokeTimeMin": 72,
-        "priceEUR": null,
-        "url": "https://www.neptunecigar.com/cigars/la-duena-toro-gordo-no13",
-        "shape": "Gordo",
-        "ring": 60,
-        "lengthMM": 152,
-        "regionLinks": {
-          "USA": {
-            "shop": "Neptune Cigar",
-            "url": "https://www.neptunecigar.com/cigars/la-duena-toro-gordo-no13",
-            "inStock": true,
-            "stockFetchedAt": "2026-08-17"
-          }
-        },
-        "inStock": true,
-        "stockFetchedAt": "2026-08-17"
-      }
-    ],
-    "markets": [
-      "USA",
-      "WW"
-    ],
-    "regionLinks": {
-      "USA": {
-        "shop": "Neptune Cigar",
-        "url": "https://www.neptunecigar.com/cigars/la-duena-toro-gordo-no13",
-        "inStock": true,
-        "stockFetchedAt": "2026-08-17"
-      }
-    },
-    "catalogSource": "market",
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Nikaragva — linija iz trgovine Neptune Cigar.",
-      "en": "Nicaragua — line from Neptune Cigar."
-    },
-    "sourceUrls": [
-      "https://www.neptunecigar.com/cigars/la-duena-toro-gordo-no13"
-    ],
-    "wrapperOrigin": "SAD",
-    "binderOrigin": "Nikaragva",
-    "fillerOrigin": "Nikaragva",
-    "strengthFromShop": true,
-    "inStock": true,
-    "stockFetchedAt": "2026-08-17"
   },
   {
     "id": "cig-la-estrella-cubana",
@@ -170864,8 +169653,8 @@
   },
   {
     "id": "cig-la-instructora-delicado",
-    "brand": "La Instructora",
-    "line": "Delicado",
+    "brand": "La Galera",
+    "line": "La Instructora Delicado",
     "vitola": "Robusto",
     "format": "50 x 127mm",
     "country": "Dominikanska Republika",
@@ -170955,8 +169744,8 @@
   },
   {
     "id": "cig-la-instructora-perfection",
-    "brand": "La Instructora",
-    "line": "Perfection",
+    "brand": "La Galera",
+    "line": "La Instructora Perfection",
     "vitola": "Short Robusto",
     "format": "52 x 114mm",
     "country": "Dominikanska Republika",
@@ -171044,8 +169833,8 @@
   },
   {
     "id": "cig-la-instructora-perfection-extra",
-    "brand": "La Instructora",
-    "line": "Perfection Extra",
+    "brand": "La Galera",
+    "line": "La Instructora Perfection Extra",
     "vitola": "Belicoso",
     "format": "57 x 152mm",
     "country": "Dominikanska Republika",
@@ -171128,8 +169917,8 @@
   },
   {
     "id": "cig-la-instructora-pressed",
-    "brand": "La Instructora",
-    "line": "Pressed",
+    "brand": "La Galera",
+    "line": "La Instructora Pressed",
     "format": "50 x 124mm",
     "country": "Dominikanska Republika",
     "wrapper": "Brazilian",
@@ -171281,265 +170070,6 @@
     "filler": "Criollo 98",
     "inStock": true,
     "stockFetchedAt": "2026-08-17"
-  },
-  {
-    "id": "cig-la-ley-la-ley",
-    "brand": "La Ley",
-    "line": "La Ley",
-    "vitola": "Robusto",
-    "format": "50 x 127mm",
-    "country": "Nikaragva",
-    "wrapper": "Nicaragua",
-    "strength": 4,
-    "body": 3,
-    "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
-    ],
-    "profileEstimated": true,
-    "catalogSource": "market",
-    "smokeTimeMin": 60,
-    "priceEUR": 17.0,
-    "priceApprox": false,
-    "availabilityHR": [
-      "The Humidor"
-    ],
-    "notes": {
-      "hr": "Nikaragva, Nicaragua pokrov — jače snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Nicaragua, Nicaragua wrapper — medium-full in strength, medium-bodied. Notes: cedar, spices, leather."
-    },
-    "markets": [
-      "HR",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Robusto",
-        "format": "50 x 127mm",
-        "smokeTimeMin": 60,
-        "priceEUR": 17.0,
-        "url": "https://humidor.hr/hr/proizvod/la-ley-robusto-5-x-50/",
-        "regionLinks": {
-          "HR": {
-            "shop": "The Humidor",
-            "url": "https://humidor.hr/hr/proizvod/la-ley-robusto-5-x-50/",
-            "priceEUR": 17.0,
-            "fetchedAt": "2026-07-01",
-            "inStock": false,
-            "stockFetchedAt": "2026-08-17"
-          }
-        },
-        "ring": 50,
-        "lengthMM": 127,
-        "fetchedAt": "2026-07-01",
-        "inStock": false,
-        "stockFetchedAt": "2026-08-17"
-      }
-    ],
-    "regionLinks": {
-      "HR": {
-        "shop": "The Humidor",
-        "url": "https://humidor.hr/hr/proizvod/la-ley-robusto-5-x-50/",
-        "priceEUR": 17.0,
-        "fetchedAt": "2026-07-01",
-        "inStock": false,
-        "stockFetchedAt": "2026-08-17"
-      }
-    },
-    "strengthFromShop": true,
-    "priceUrl": "https://humidor.hr/hr/proizvod/la-ley-robusto-5-x-50/",
-    "inStock": false,
-    "stockFetchedAt": "2026-08-17"
-  },
-  {
-    "id": "cig-la-ley-nicarao",
-    "brand": "La Ley",
-    "line": "Nicarao",
-    "vitola": "Petit Corona",
-    "format": "43 x 121mm",
-    "country": "Nikaragva",
-    "wrapper": "Nicaragua",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava",
-      "papar",
-      "kremasto"
-    ],
-    "profileEstimated": true,
-    "catalogSource": "market",
-    "smokeTimeMin": 47,
-    "priceEUR": null,
-    "priceApprox": false,
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Nikaragva, Nicaragua pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Nicaragua, Nicaragua wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
-    },
-    "markets": [
-      "EU",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Petit Corona",
-        "format": "43 x 121mm",
-        "smokeTimeMin": 47,
-        "priceEUR": null,
-        "url": null,
-        "regionLinks": {
-          "EU": {
-            "shop": "CigarWorld",
-            "url": "https://www.cigarworld.de/en/zigarren/nicaragua/la-ley-mareva-petit-corona-90013466_28081",
-            "priceEUR": 9.2,
-            "fetchedAt": "2026-07-01",
-            "inStock": false,
-            "stockFetchedAt": "2026-08-17"
-          }
-        },
-        "ring": 43,
-        "lengthMM": 121
-      }
-    ],
-    "regionLinks": {
-      "EU": {
-        "shop": "CigarWorld",
-        "url": "https://www.cigarworld.de/en/zigarren/nicaragua/la-ley-mareva-petit-corona-90013466_28081",
-        "priceEUR": 9.2,
-        "fetchedAt": "2026-07-01",
-        "inStock": false,
-        "stockFetchedAt": "2026-08-17"
-      }
-    },
-    "formatEstimated": true,
-    "wrapperOrigin": "Nikaragva",
-    "binderOrigin": "Nikaragva"
-  },
-  {
-    "id": "cig-la-libertad-la-libertad",
-    "brand": "La Libertad",
-    "line": "La Libertad",
-    "vitola": "Corona",
-    "format": "43 x 142mm",
-    "country": "Nikaragva",
-    "wrapper": "Criollo",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [
-      "zemljano",
-      "cedar",
-      "orasasti",
-      "zacini",
-      "papar"
-    ],
-    "profileEstimated": true,
-    "catalogSource": "market",
-    "smokeTimeMin": 55,
-    "priceEUR": null,
-    "priceApprox": false,
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Nikaragva, Criollo pokrov — srednje snage, srednjeg tijela. Okusi: zemljani tonovi, cedrovina, orašasti tonovi.",
-      "en": "Nicaragua, Criollo wrapper — medium in strength, medium-bodied. Notes: earthy, cedar, nutty."
-    },
-    "markets": [
-      "EU",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Corona",
-        "format": "43 x 142mm",
-        "smokeTimeMin": 55,
-        "priceEUR": null,
-        "url": null,
-        "regionLinks": {
-          "EU": {
-            "shop": "CigarWorld",
-            "url": "https://www.cigarworld.de/en/zigarren/nicaragua/la-libertad-corona-01213_3463",
-            "priceEUR": 8.8,
-            "fetchedAt": "2026-07-01",
-            "inStock": false,
-            "stockFetchedAt": "2026-08-17"
-          }
-        },
-        "ring": 43,
-        "lengthMM": 142
-      },
-      {
-        "name": "Robusto",
-        "format": "52 x 127mm",
-        "smokeTimeMin": 49,
-        "priceEUR": null,
-        "url": null,
-        "regionLinks": {
-          "EU": {
-            "shop": "CigarWorld",
-            "url": "https://www.cigarworld.de/en/zigarren/nicaragua/la-libertad-robusto-01213_3464",
-            "priceEUR": 10.0,
-            "fetchedAt": "2026-07-01",
-            "inStock": false,
-            "stockFetchedAt": "2026-08-17"
-          }
-        },
-        "ring": 52,
-        "lengthMM": 127
-      },
-      {
-        "name": "Gran Toro",
-        "format": "54 x 159mm",
-        "smokeTimeMin": 61,
-        "priceEUR": null,
-        "url": null,
-        "regionLinks": {
-          "EU": {
-            "shop": "CigarWorld",
-            "url": "https://www.cigarworld.de/en/zigarren/nicaragua/la-libertad-gran-toro-01213_19948",
-            "priceEUR": 11.0,
-            "fetchedAt": "2026-07-01",
-            "inStock": false,
-            "stockFetchedAt": "2026-08-17"
-          }
-        },
-        "ring": 54,
-        "lengthMM": 159
-      },
-      {
-        "name": "Gordo",
-        "format": "60 x 159mm",
-        "smokeTimeMin": 61,
-        "priceEUR": null,
-        "url": null,
-        "regionLinks": {
-          "EU": {
-            "shop": "CigarWorld",
-            "url": "https://www.cigarworld.de/en/zigarren/nicaragua/la-libertad-gordito-01213_54186",
-            "priceEUR": 7.5,
-            "fetchedAt": "2026-07-01",
-            "inStock": false,
-            "stockFetchedAt": "2026-08-17"
-          }
-        },
-        "ring": 60,
-        "lengthMM": 159
-      }
-    ],
-    "regionLinks": {
-      "EU": {
-        "shop": "CigarWorld",
-        "url": "https://www.cigarworld.de/en/zigarren/nicaragua/la-libertad-gordito-01213_54186",
-        "priceEUR": 7.5,
-        "fetchedAt": "2026-07-01",
-        "inStock": false,
-        "stockFetchedAt": "2026-08-17"
-      }
-    },
-    "formatEstimated": true
   },
   {
     "id": "cig-la-magdalena-classic",
@@ -193667,6 +192197,15 @@
     ],
     "vitolas": [
       {
+        "name": "Corona",
+        "format": "48 x 140mm",
+        "smokeTimeMin": 54,
+        "priceEUR": null,
+        "url": null,
+        "ring": 48,
+        "lengthMM": 140
+      },
+      {
         "name": "El Centurion H",
         "format": "52 x 152mm",
         "smokeTimeMin": 70,
@@ -193676,6 +192215,35 @@
         "lengthMM": 152,
         "inStock": true,
         "stockFetchedAt": "2026-08-17"
+      },
+      {
+        "name": "Toro",
+        "format": "52 x 152mm",
+        "smokeTimeMin": 72,
+        "priceEUR": null,
+        "url": "https://www.neptunecigar.com/cigars/el-centurion-h2kct-toro",
+        "shape": "Toro",
+        "ring": 52,
+        "lengthMM": 152,
+        "regionLinks": {
+          "USA": {
+            "shop": "Neptune Cigar",
+            "url": "https://www.neptunecigar.com/cigars/el-centurion-h2kct-toro",
+            "inStock": true,
+            "stockFetchedAt": "2026-08-17"
+          }
+        },
+        "inStock": true,
+        "stockFetchedAt": "2026-08-17"
+      },
+      {
+        "name": "Gran Toro",
+        "format": "58 x 165mm",
+        "smokeTimeMin": 63,
+        "priceEUR": null,
+        "url": null,
+        "ring": 58,
+        "lengthMM": 165
       }
     ],
     "priceUrl": "https://www.neptunecigar.com/cigars/my-father-el-centurion-h2kct-corona",
@@ -193692,7 +192260,9 @@
         "url": "https://cigarsdaily.com/product/my-father-el-centurion-robusto-5-75x50/",
         "priceEUR": 7.73,
         "priceApprox": true,
-        "fetchedAt": "2026-07-01"
+        "fetchedAt": "2026-07-01",
+        "inStock": true,
+        "stockFetchedAt": "2026-08-17"
       }
     },
     "binder": "Nicaragua",
@@ -193734,9 +192304,29 @@
     },
     "markets": [
       "EU",
+      "USA",
       "WW"
     ],
     "vitolas": [
+      {
+        "name": "Robusto",
+        "format": "50 x 127mm",
+        "smokeTimeMin": 49,
+        "priceEUR": null,
+        "url": "https://www.neptunecigar.com/cigars/flor-de-las-antillas-robusto",
+        "ring": 50,
+        "lengthMM": 127,
+        "regionLinks": {
+          "USA": {
+            "shop": "Neptune Cigar",
+            "url": "https://www.neptunecigar.com/cigars/flor-de-las-antillas-robusto",
+            "inStock": true,
+            "stockFetchedAt": "2026-08-17"
+          }
+        },
+        "inStock": true,
+        "stockFetchedAt": "2026-08-17"
+      },
       {
         "name": "Flor de las Antillas Robusto",
         "format": "52 x 127mm",
@@ -193745,6 +192335,35 @@
         "url": null,
         "ring": 52,
         "lengthMM": 127
+      },
+      {
+        "name": "Belicoso",
+        "format": "52 x 152mm",
+        "smokeTimeMin": 72,
+        "priceEUR": null,
+        "url": "https://www.neptunecigar.com/cigars/flor-de-las-antillas-belicoso",
+        "shape": "Belicoso",
+        "ring": 52,
+        "lengthMM": 152,
+        "regionLinks": {
+          "USA": {
+            "shop": "Neptune Cigar",
+            "url": "https://www.neptunecigar.com/cigars/flor-de-las-antillas-belicoso",
+            "inStock": true,
+            "stockFetchedAt": "2026-08-17"
+          }
+        },
+        "inStock": true,
+        "stockFetchedAt": "2026-08-17"
+      },
+      {
+        "name": "Toro",
+        "format": "52 x 152mm",
+        "smokeTimeMin": 58,
+        "priceEUR": null,
+        "url": null,
+        "ring": 52,
+        "lengthMM": 152
       },
       {
         "name": "Flor de las Antillas Toro",
@@ -193763,6 +192382,35 @@
         "url": null,
         "ring": 55,
         "lengthMM": 178
+      },
+      {
+        "name": "Gran Toro",
+        "format": "56 x 165mm",
+        "smokeTimeMin": 63,
+        "priceEUR": null,
+        "url": null,
+        "ring": 56,
+        "lengthMM": 165
+      },
+      {
+        "name": "Gordo",
+        "format": "60 x 152mm",
+        "smokeTimeMin": 72,
+        "priceEUR": null,
+        "url": "https://www.neptunecigar.com/cigars/flor-de-las-antillas-toro-gordo",
+        "shape": "Gordo",
+        "ring": 60,
+        "lengthMM": 152,
+        "regionLinks": {
+          "USA": {
+            "shop": "Neptune Cigar",
+            "url": "https://www.neptunecigar.com/cigars/flor-de-las-antillas-toro-gordo",
+            "inStock": true,
+            "stockFetchedAt": "2026-08-17"
+          }
+        },
+        "inStock": true,
+        "stockFetchedAt": "2026-08-17"
       }
     ],
     "priceUrl": null,
@@ -193772,6 +192420,15 @@
         "url": "https://www.cigarworld.de/en/zigarren/nicaragua/my-father-cigars-flor-de-las-antillas-sun-grown-robusto-90012298_25978",
         "priceEUR": 10.8,
         "fetchedAt": "2026-07-01"
+      },
+      "USA": {
+        "shop": "Neptune Cigar",
+        "url": "https://www.neptunecigar.com/cigars/flor-de-las-antillas-belicoso",
+        "inStock": true,
+        "stockFetchedAt": "2026-08-17",
+        "priceEUR": 8.37,
+        "priceApprox": true,
+        "fetchedAt": "2026-07-01"
       }
     },
     "binder": "Nicaragua",
@@ -193779,7 +192436,9 @@
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Nikaragva",
     "fillerOrigin": "Nikaragva",
-    "isPuro": false
+    "isPuro": false,
+    "inStock": true,
+    "stockFetchedAt": "2026-08-17"
   },
   {
     "id": "cig-my-father-fonseca",
@@ -194083,9 +192742,29 @@
       "hr": "Tamni Habano Rosado Oscuro omot — bogato, papreno i kožnato, puno tijelo.",
       "en": "Dark Habano Rosado Oscuro wrapper — rich, peppery and leathery, full body."
     },
-    "priceUrl": null,
+    "priceUrl": "https://www.neptunecigar.com/cigars/la-antiguedad-robusto",
     "profileEstimated": true,
     "vitolas": [
+      {
+        "name": "Corona",
+        "format": "42 x 140mm",
+        "smokeTimeMin": 66,
+        "priceEUR": null,
+        "url": "https://www.neptunecigar.com/cigars/la-antiguedad-corona-grande",
+        "shape": "Corona",
+        "ring": 42,
+        "lengthMM": 140,
+        "regionLinks": {
+          "USA": {
+            "shop": "Neptune Cigar",
+            "url": "https://www.neptunecigar.com/cigars/la-antiguedad-corona-grande",
+            "inStock": true,
+            "stockFetchedAt": "2026-08-17"
+          }
+        },
+        "inStock": true,
+        "stockFetchedAt": "2026-08-17"
+      },
       {
         "name": "Corona Grande",
         "format": "46 x 140mm",
@@ -194100,18 +192779,49 @@
         "format": "52 x 127mm",
         "smokeTimeMin": 50,
         "priceEUR": null,
-        "url": null,
+        "url": "https://www.neptunecigar.com/cigars/la-antiguedad-robusto",
         "ring": 52,
-        "lengthMM": 127
+        "lengthMM": 127,
+        "regionLinks": {
+          "USA": {
+            "shop": "Neptune Cigar",
+            "url": "https://www.neptunecigar.com/cigars/la-antiguedad-robusto",
+            "inStock": true,
+            "stockFetchedAt": "2026-08-17"
+          }
+        },
+        "inStock": true,
+        "stockFetchedAt": "2026-08-17"
       },
       {
         "name": "Toro",
         "format": "54 x 152mm",
         "smokeTimeMin": 60,
         "priceEUR": null,
-        "url": null,
+        "url": "https://www.neptunecigar.com/cigars/la-antiguedad-super-toro",
         "ring": 54,
-        "lengthMM": 152
+        "lengthMM": 152,
+        "inStock": true,
+        "stockFetchedAt": "2026-08-17"
+      },
+      {
+        "name": "Gran Toro",
+        "format": "60 x 152mm",
+        "smokeTimeMin": 58,
+        "priceEUR": null,
+        "url": "https://www.neptunecigar.com/cigars/la-antiguedad-toro-gordo",
+        "ring": 60,
+        "lengthMM": 152,
+        "regionLinks": {
+          "USA": {
+            "shop": "Neptune Cigar",
+            "url": "https://www.neptunecigar.com/cigars/la-antiguedad-toro-gordo",
+            "inStock": true,
+            "stockFetchedAt": "2026-08-17"
+          }
+        },
+        "inStock": true,
+        "stockFetchedAt": "2026-08-17"
       }
     ],
     "regionLinks": {
@@ -194126,13 +192836,18 @@
         "url": "https://cigarsdaily.com/product/la-antiguedad/",
         "priceEUR": 8.83,
         "priceApprox": true,
-        "fetchedAt": "2026-07-01"
+        "fetchedAt": "2026-07-01",
+        "inStock": true,
+        "stockFetchedAt": "2026-08-17"
       }
     },
     "binder": "Nicaragua",
     "filler": "Nicaragua",
     "binderOrigin": "Nikaragva",
-    "fillerOrigin": "Nikaragva"
+    "fillerOrigin": "Nikaragva",
+    "inStock": true,
+    "stockFetchedAt": "2026-08-17",
+    "wrapperOrigin": "Ekvador"
   },
   {
     "id": "cig-my-father-la-duena",
@@ -194164,9 +192879,59 @@
     },
     "markets": [
       "EU",
+      "USA",
       "WW"
     ],
     "vitolas": [
+      {
+        "name": "7",
+        "format": "38 x 190mm",
+        "smokeTimeMin": 90,
+        "priceEUR": null,
+        "url": "https://www.neptunecigar.com/cigars/la-duena-petit-lancero-no-7",
+        "shape": "Lancero",
+        "ring": 38,
+        "lengthMM": 190,
+        "regionLinks": {
+          "USA": {
+            "shop": "Neptune Cigar",
+            "url": "https://www.neptunecigar.com/cigars/la-duena-petit-lancero-no-7",
+            "inStock": true,
+            "stockFetchedAt": "2026-08-17"
+          }
+        },
+        "inStock": true,
+        "stockFetchedAt": "2026-08-17"
+      },
+      {
+        "name": "11",
+        "format": "50 x 124mm",
+        "smokeTimeMin": 59,
+        "priceEUR": null,
+        "url": "https://www.neptunecigar.com/cigars/la-duena-petit-robusto-no-11",
+        "shape": "Robusto",
+        "ring": 50,
+        "lengthMM": 124,
+        "regionLinks": {
+          "USA": {
+            "shop": "Neptune Cigar",
+            "url": "https://www.neptunecigar.com/cigars/la-duena-petit-robusto-no-11",
+            "inStock": false,
+            "stockFetchedAt": "2026-08-17"
+          }
+        },
+        "inStock": false,
+        "stockFetchedAt": "2026-08-17"
+      },
+      {
+        "name": "Short Robusto",
+        "format": "52 x 114mm",
+        "smokeTimeMin": 44,
+        "priceEUR": null,
+        "url": null,
+        "ring": 52,
+        "lengthMM": 114
+      },
       {
         "name": "Petit No. 11",
         "format": "52 x 127mm",
@@ -194183,6 +192948,26 @@
         },
         "ring": 52,
         "lengthMM": 127
+      },
+      {
+        "name": "Gordo",
+        "format": "60 x 152mm",
+        "smokeTimeMin": 72,
+        "priceEUR": null,
+        "url": "https://www.neptunecigar.com/cigars/la-duena-toro-gordo-no13",
+        "shape": "Gordo",
+        "ring": 60,
+        "lengthMM": 152,
+        "regionLinks": {
+          "USA": {
+            "shop": "Neptune Cigar",
+            "url": "https://www.neptunecigar.com/cigars/la-duena-toro-gordo-no13",
+            "inStock": true,
+            "stockFetchedAt": "2026-08-17"
+          }
+        },
+        "inStock": true,
+        "stockFetchedAt": "2026-08-17"
       }
     ],
     "regionLinks": {
@@ -194191,9 +192976,23 @@
         "url": "https://www.cigarworld.de/en/zigarren/nicaragua/my-father-cigars-la-duena-petit-robusto-no-11-90013379_27741",
         "priceEUR": 8.9,
         "fetchedAt": "2026-07-01"
+      },
+      "USA": {
+        "shop": "Holt's",
+        "url": "https://www.holts.com/cigars/all-cigar-brands/la-duena.html",
+        "priceEUR": 6.9,
+        "priceApprox": true,
+        "fetchedAt": "2026-07-01",
+        "inStock": false,
+        "stockFetchedAt": "2026-08-17"
       }
     },
-    "formatEstimated": true
+    "formatEstimated": true,
+    "inStock": false,
+    "stockFetchedAt": "2026-08-17",
+    "wrapperOrigin": "SAD",
+    "binderOrigin": "Nikaragva",
+    "fillerOrigin": "Nikaragva"
   },
   {
     "id": "cig-my-father-la-gran-oferta",
@@ -196919,34 +195718,67 @@
     "profileEstimated": true,
     "catalogSource": "market",
     "smokeTimeMin": 49,
-    "priceEUR": null,
+    "priceEUR": 17.0,
     "priceApprox": false,
-    "availabilityHR": [],
+    "availabilityHR": [
+      "The Humidor"
+    ],
     "notes": {
       "hr": "Nikaragva, Nicaragua pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
       "en": "Nicaragua, Nicaragua wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
     },
     "markets": [
+      "HR",
       "EU",
       "WW"
     ],
     "vitolas": [
       {
+        "name": "Petit Corona",
+        "format": "43 x 121mm",
+        "smokeTimeMin": 47,
+        "priceEUR": null,
+        "url": null,
+        "regionLinks": {
+          "EU": {
+            "shop": "CigarWorld",
+            "url": "https://www.cigarworld.de/en/zigarren/nicaragua/la-ley-mareva-petit-corona-90013466_28081",
+            "priceEUR": 9.2,
+            "fetchedAt": "2026-07-01",
+            "inStock": false,
+            "stockFetchedAt": "2026-08-17"
+          }
+        },
+        "ring": 43,
+        "lengthMM": 121
+      },
+      {
         "name": "Robusto",
         "format": "50 x 127mm",
         "smokeTimeMin": 49,
-        "priceEUR": null,
-        "url": null,
+        "priceEUR": 17.0,
+        "url": "https://humidor.hr/hr/proizvod/la-ley-robusto-5-x-50/",
         "regionLinks": {
           "EU": {
             "shop": "CigarWorld",
             "url": "https://www.cigarworld.de/en/zigarren/nicaragua/nicarao-la-ley-robusto-90013466_28082",
             "priceEUR": 15.7,
             "fetchedAt": "2026-07-01"
+          },
+          "HR": {
+            "shop": "The Humidor",
+            "url": "https://humidor.hr/hr/proizvod/la-ley-robusto-5-x-50/",
+            "priceEUR": 17.0,
+            "fetchedAt": "2026-07-01",
+            "inStock": false,
+            "stockFetchedAt": "2026-08-17"
           }
         },
         "ring": 50,
-        "lengthMM": 127
+        "lengthMM": 127,
+        "fetchedAt": "2026-07-01",
+        "inStock": false,
+        "stockFetchedAt": "2026-08-17"
       }
     ],
     "regionLinks": {
@@ -196954,12 +195786,25 @@
         "shop": "CigarWorld",
         "url": "https://www.cigarworld.de/en/zigarren/nicaragua/nicarao-la-ley-robusto-90013466_28082",
         "priceEUR": 15.7,
-        "fetchedAt": "2026-07-01"
+        "fetchedAt": "2026-07-01",
+        "inStock": false,
+        "stockFetchedAt": "2026-08-17"
+      },
+      "HR": {
+        "shop": "The Humidor",
+        "url": "https://humidor.hr/hr/proizvod/la-ley-robusto-5-x-50/",
+        "priceEUR": 17.0,
+        "fetchedAt": "2026-07-01",
+        "inStock": false,
+        "stockFetchedAt": "2026-08-17"
       }
     },
     "formatEstimated": true,
     "wrapperOrigin": "Nikaragva",
-    "binderOrigin": "Nikaragva"
+    "binderOrigin": "Nikaragva",
+    "priceUrl": "https://humidor.hr/hr/proizvod/la-ley-robusto-5-x-50/",
+    "inStock": false,
+    "stockFetchedAt": "2026-08-17"
   },
   {
     "id": "cig-nicarao-la-preferida",
@@ -256131,6 +254976,15 @@
     ],
     "vitolas": [
       {
+        "name": "Perfecto",
+        "format": "52 x 143mm",
+        "smokeTimeMin": 55,
+        "priceEUR": null,
+        "url": null,
+        "ring": 52,
+        "lengthMM": 143
+      },
+      {
         "name": "Fausto Toro",
         "format": "52 x 152mm",
         "smokeTimeMin": 65,
@@ -270687,10 +269541,30 @@
       "en": "Nicaragua, Habano wrapper — medium-full in strength, light-bodied. Notes: cedar, spices, leather."
     },
     "markets": [
+      "EU",
       "USA",
       "WW"
     ],
     "vitolas": [
+      {
+        "name": "Robusto",
+        "format": "50 x 127mm",
+        "smokeTimeMin": 49,
+        "priceEUR": null,
+        "url": null,
+        "regionLinks": {
+          "EU": {
+            "shop": "CigarWorld",
+            "url": "https://www.cigarworld.de/en/zigarren/nicaragua/la-capitana-robusto-90012743_62110",
+            "priceEUR": 11.0,
+            "fetchedAt": "2026-07-01",
+            "inStock": false,
+            "stockFetchedAt": "2026-08-17"
+          }
+        },
+        "ring": 50,
+        "lengthMM": 127
+      },
       {
         "name": "Toro",
         "format": "50 x 152mm",
@@ -270704,6 +269578,14 @@
             "shop": "Neptune Cigar",
             "url": "https://www.neptunecigar.com/cigars/villiger-la-capitana-toro",
             "inStock": true,
+            "stockFetchedAt": "2026-08-17"
+          },
+          "EU": {
+            "shop": "CigarWorld",
+            "url": "https://www.cigarworld.de/en/zigarren/nicaragua/la-capitana-toro-90012743_65999",
+            "priceEUR": 11.5,
+            "fetchedAt": "2026-07-01",
+            "inStock": false,
             "stockFetchedAt": "2026-08-17"
           }
         },
@@ -270719,7 +269601,17 @@
         "ring": 50,
         "lengthMM": 178,
         "inStock": true,
-        "stockFetchedAt": "2026-08-17"
+        "stockFetchedAt": "2026-08-17",
+        "regionLinks": {
+          "EU": {
+            "shop": "CigarWorld",
+            "url": "https://www.cigarworld.de/en/zigarren/nicaragua/la-capitana-churchill-90012743_62111",
+            "priceEUR": 12.0,
+            "fetchedAt": "2026-07-01",
+            "inStock": false,
+            "stockFetchedAt": "2026-08-17"
+          }
+        }
       }
     ],
     "regionLinks": {
@@ -270729,6 +269621,14 @@
         "priceEUR": 2.53,
         "priceApprox": true,
         "fetchedAt": "2026-07-01"
+      },
+      "EU": {
+        "shop": "CigarWorld",
+        "url": "https://www.cigarworld.de/en/zigarren/nicaragua/la-capitana-robusto-90012743_62110",
+        "priceEUR": 11.0,
+        "fetchedAt": "2026-07-01",
+        "inStock": false,
+        "stockFetchedAt": "2026-08-17"
       }
     },
     "strengthFromShop": true,
@@ -270863,6 +269763,7 @@
     "priceEUR": 7,
     "priceApprox": true,
     "markets": [
+      "EU",
       "USA",
       "WW"
     ],
@@ -270873,13 +269774,80 @@
     },
     "vitolas": [
       {
+        "name": "Corona",
+        "format": "43 x 142mm",
+        "smokeTimeMin": 55,
+        "priceEUR": null,
+        "url": null,
+        "regionLinks": {
+          "EU": {
+            "shop": "CigarWorld",
+            "url": "https://www.cigarworld.de/en/zigarren/nicaragua/la-libertad-corona-01213_3463",
+            "priceEUR": 8.8,
+            "fetchedAt": "2026-07-01",
+            "inStock": false,
+            "stockFetchedAt": "2026-08-17"
+          }
+        },
+        "ring": 43,
+        "lengthMM": 142
+      },
+      {
         "name": "Robusto",
         "format": "50 x 127mm",
         "smokeTimeMin": 50,
         "priceEUR": null,
         "url": null,
         "ring": 50,
-        "lengthMM": 127
+        "lengthMM": 127,
+        "regionLinks": {
+          "EU": {
+            "shop": "CigarWorld",
+            "url": "https://www.cigarworld.de/en/zigarren/nicaragua/la-libertad-robusto-01213_3464",
+            "priceEUR": 10.0,
+            "fetchedAt": "2026-07-01",
+            "inStock": false,
+            "stockFetchedAt": "2026-08-17"
+          }
+        }
+      },
+      {
+        "name": "Gran Toro",
+        "format": "54 x 159mm",
+        "smokeTimeMin": 61,
+        "priceEUR": null,
+        "url": null,
+        "regionLinks": {
+          "EU": {
+            "shop": "CigarWorld",
+            "url": "https://www.cigarworld.de/en/zigarren/nicaragua/la-libertad-gran-toro-01213_19948",
+            "priceEUR": 11.0,
+            "fetchedAt": "2026-07-01",
+            "inStock": false,
+            "stockFetchedAt": "2026-08-17"
+          }
+        },
+        "ring": 54,
+        "lengthMM": 159
+      },
+      {
+        "name": "Gordo",
+        "format": "60 x 159mm",
+        "smokeTimeMin": 61,
+        "priceEUR": null,
+        "url": null,
+        "regionLinks": {
+          "EU": {
+            "shop": "CigarWorld",
+            "url": "https://www.cigarworld.de/en/zigarren/nicaragua/la-libertad-gordito-01213_54186",
+            "priceEUR": 7.5,
+            "fetchedAt": "2026-07-01",
+            "inStock": false,
+            "stockFetchedAt": "2026-08-17"
+          }
+        },
+        "ring": 60,
+        "lengthMM": 159
       }
     ],
     "priceUrl": null,
@@ -270890,6 +269858,14 @@
         "priceEUR": 2.3,
         "priceApprox": true,
         "fetchedAt": "2026-07-01"
+      },
+      "EU": {
+        "shop": "CigarWorld",
+        "url": "https://www.cigarworld.de/en/zigarren/nicaragua/la-libertad-gordito-01213_54186",
+        "priceEUR": 7.5,
+        "fetchedAt": "2026-07-01",
+        "inStock": false,
+        "stockFetchedAt": "2026-08-17"
       }
     },
     "wrapperOrigin": "Ekvador"

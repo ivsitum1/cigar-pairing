@@ -27,6 +27,18 @@ describe("productImageUrl", () => {
     );
   });
 
+  it("follows cigarIdAliases so a folded shop-split id still has a photo", () => {
+    const folded = productImageUrl("cigar", "cig-tailgate-by-karen-berger");
+    const live = productImageUrl("cigar", "cig-karen-berger-tailgate");
+    expect(live).toMatch(/^https:\/\/humidor\.hr\//);
+    expect(folded).toBe(live);
+
+    const leyFolded = productImageUrl("cigar", "cig-la-ley-la-ley");
+    const leyLive = productImageUrl("cigar", "cig-nicarao-la-ley");
+    expect(leyLive).toMatch(/^https:\/\/humidor\.hr\//);
+    expect(leyFolded).toBe(leyLive);
+  });
+
   it("only maps ids that exist in the app catalogs", () => {
     const cigarSet = new Set(CIGARS.map((c) => c.id));
     const drinkSet = new Set(ALL_DRINKS.map((d) => d.id));
