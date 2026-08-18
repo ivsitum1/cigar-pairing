@@ -676,14 +676,14 @@ const STRINGS = {
   "shop.legalNote": { hr: "Internetska prodaja duhana u Hrvatskoj nije dopuštena — cijene cigara informativne su, a kupnja je moguća samo u trgovini.", en: "Online tobacco sales are not permitted in Croatia — cigar prices are indicative only, and purchases can be made solely in store." },
   // gift chooser
   "gift.nav": { hr: "Poklon", en: "Gift" },
-  "gift.title": { hr: "Poklon u pet pitanja", en: "A gift in five questions" },
+  "gift.title": { hr: "Poklon u nekoliko pitanja", en: "A gift in a few questions" },
   "gift.intro": {
-    hr: "Pet pitanja o osobi — prijedlog s cijenom i trgovinom u blizini. Ne moraš znati ništa o cigarima.",
-    en: "Five questions about the person — a priced suggestion from a shop near you. You do not need to know anything about cigars.",
+    hr: "Nekoliko pitanja o osobi — prijedlog s cijenom i trgovinom u blizini. Ne moraš znati ništa o cigarima. Ako znaš što već pije, prijedlog se izoštrava.",
+    en: "A few questions about the person — a priced suggestion from a shop near you. You do not need to know anything about cigars. If you know what they already drink, the suggestion sharpens.",
   },
   "gift.entryTeaser": {
-    hr: "Ne znaš što kupiti? Reci kakva je osoba, koliko želiš potrošiti, i dobiješ dva ili tri prijedloga s cijenom i trgovinom u blizini.",
-    en: "Not sure what to buy? Say what the person is like and what you can spend, and you get two or three suggestions with a price and a shop nearby.",
+    hr: "Ne znaš što kupiti? Reci kakva je osoba, koliko želiš potrošiti, i što već ima na polici — dobiješ dva ili tri prijedloga s cijenom i trgovinom u blizini.",
+    en: "Not sure what to buy? Say what the person is like, what you can spend, and what is already on their shelf — you get two or three suggestions with a price and a shop nearby.",
   },
   "gift.entryOpen": { hr: "Pokreni poklon", en: "Start the gift finder" },
   "gift.nearby": { hr: "Tržište / trgovine u blizini", en: "Market / shops nearby" },
@@ -729,6 +729,18 @@ const STRINGS = {
   "gift.checkShop": { hr: "Provjeri u trgovini", en: "Check in shop" },
   "gift.openPairing": { hr: "Otvori sparivanje", en: "Open pairing" },
   "gift.reroll": { hr: "Zamijeni", en: "Swap" },
+  "gift.ownedStyles": { hr: "Što već ima na polici?", en: "What is already on the shelf?" },
+  "gift.ownedStylesNone": { hr: "Ništa od toga", en: "None of these" },
+  "gift.ownedStylesUnknown": { hr: "Ne znam", en: "Not sure" },
+  "gift.drinkPick": { hr: "Kako da biramo bocu?", en: "How should we choose the bottle?" },
+  "gift.drinkPick.gap": { hr: "Ono čega još nema", en: "Something they do not have yet" },
+  "gift.drinkPick.top": { hr: "Vrh kategorije", en: "Top of the category" },
+  "gift.drinkPick.value": { hr: "Najbolji omjer", en: "Best value" },
+  "gift.drinkPick.unknown": { hr: "Ne znam", en: "Not sure" },
+  "gift.noGapLeft": {
+    hr: "Svi navedeni stilovi već su na polici — nudimo vrh kategorije u tvom rasponu.",
+    en: "Every style you named is already on the shelf — showing the top of the category in your band.",
+  },
   // filteri
   "filter.style": { hr: "Stil", en: "Style" },
   "filter.strength": { hr: "Snaga", en: "Strength" },
