@@ -20,10 +20,17 @@ describe("imena pića nose marku", () => {
     "citadelle",
     "aviation",
     "paddy",
+    "alkkemist",
+    "amazzoni",
+    "bathtub",
+    "brooklyn",
+    "broker's",
+    "brockman's",
+    "bulldog",
   ]);
 
   // Prave marke koje pocinju brojem — nisu fragmenti.
-  const NUMERIC_BRANDS = /^No\. 3 London Dry Gin/;
+  const NUMERIC_BRANDS = /^No\. 3 London Dry Gin|^No\. 209 Gin/;
 
   it("nijedno ime ne počinje golim brojem ili 'No.'", () => {
     const bad = ALL_DRINKS.filter((d) => /^(No\.?\s*\d|\d)/.test(d.name.trim()))
