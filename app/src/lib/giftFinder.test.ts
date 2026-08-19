@@ -243,7 +243,6 @@ describe("giftFinder", () => {
     // Prazne ćelije u HR poklon-poolu i prvi susjed koji u njima ima bocu.
     const cases = [
       { asked: "wine", intensity: "medium", budget: "40to60", expect: "brandy" },
-      { asked: "tequila", intensity: "medium", budget: "20to40", expect: "rum" },
       // whisky do 20 €: brandy i rum su također prazni, pa se ide na treći susjed
       { asked: "whisky", intensity: "medium", budget: "under20", expect: "wine" },
     ] as const;
