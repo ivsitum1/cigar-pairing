@@ -128,6 +128,8 @@ export interface Drink {
 export interface Vitola {
   name: string;
   format: string | null; // "50 x 127mm"
+  /** Known retail EAN/UPC codes for this exact vitola. */
+  barcodes?: string[];
   smokeTimeMin: number | null;
   priceEUR: number | null;
   url: string | null; // link na proizvod (humidor.hr)
@@ -149,6 +151,8 @@ export interface Cigar {
   brand: string;
   line: string;
   vitola: string; // default vitola
+  /** Rare line-level barcode(s) when one code covers the whole line, not one vitola. */
+  barcodes?: string[];
   format: string;
   country: string;
   wrapper: string;

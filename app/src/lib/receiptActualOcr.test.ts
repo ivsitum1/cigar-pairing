@@ -3,17 +3,12 @@ import { readFileSync, existsSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { describe, it, expect } from "vitest";
+import { buildCigarOcrCandidates } from "./ocrCigarCandidates";
 import { parseReceiptText } from "./receiptParse";
-import type { OcrCandidate } from "./ocrMatch";
 import cigarsData from "../data/cigars.json";
+import type { Cigar } from "../types";
 
-const cigarCandidates: OcrCandidate[] = (
-  cigarsData as { id: string; brand: string; line: string }[]
-).map((c) => ({
-  id: c.id,
-  label: `${c.brand} ${c.line}`,
-  brand: c.brand,
-}));
+const cigarCandidates = buildCigarOcrCandidates(cigarsData as Cigar[]);
 
 const fixtureDir = join(
   dirname(fileURLToPath(import.meta.url)),
@@ -42,14 +37,14 @@ describe("actual tesseract OCR → receiptParse (soft)", () => {
     ).toBe(true);
   });
 
-  it("tobacco-shop-5-2024 finds Don Tomas bundle or La Estrella", () => {
+  it("tobacco-shop-5-2024 finds Don Tomas bundle vitola or La Estrella", () => {
     const text = loadActual("tobacco-shop-5-2024-07-30");
     expect(text).toBeTruthy();
     const rows = parseReceiptText(text!, cigarCandidates);
     const ids = rows.map((r) => r.candidate?.id ?? "");
     expect(
       ids.some(
-        (id) => id.includes("don-tomas") || id.includes("estrella"),
+        (id) => id === "cig-don-tomas-bundle@rothschild" || id.includes("estrella"),
       ),
     ).toBe(true);
   }, 15_000);

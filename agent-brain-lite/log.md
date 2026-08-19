@@ -2,13 +2,15 @@
 title: Activity Log
 category: meta
 tags: [log, changelog]
-updated: 2026-08-18
+updated: 2026-08-19
 ---
 
 # Activity Log
 
 | Datum | Događaj |
 |-------|---------|
+| 2026-08-19 | App: naknadna ocjena večeri u `journal` — u `CollectionPage` journal listi i u `JournalCalendar` (`JournalCard`) dodan dropdown “Ocjena večeri” kad `journal.rating` nedostaje; uveden je hint da se ne mijenja “Moja ocjena”. |
+| 2026-08-19 | OCR: riješen TypeScript blocker za offline OCR pack (warm/reset) + dodani i sinkani EAN-ovi u `barcodeCatalog.json` (Don Tomas Churchill/Robusto, Romeo y Julieta Churchill, Plasencia Alma Fuerte Robustus); `sync-cigar-barcodes.py --check` i fokalni OCR/barcode Vitest prolazi. |
 | 2026-08-18 | Pića: The Humidor (236 SKU) spojen na postojeće boce — 32 izravna `priceUrl` (praznine, bez krađe allez/ecuga). Havana webshop nema katalog boca. |
 | 2026-08-18 | Katalog: house-line fold (Benchmade, Dominus MMXX, El Centurion, Fausto, FDA, La Antiguedad, La Capitana, La Duena, La Instructora, La Ley, La Libertad) → roditelj; Fonseca/Upmann/Montecristo netaknuti. 3313→3293. Slike prate alias. |
 | 2026-08-18 | Gift: polica + segment (rupa / vrh / omjer) iz pitanja, ne iz tuđe kolekcije; budžet 100 €+; naslov više nije „pet pitanja” |

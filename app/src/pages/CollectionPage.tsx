@@ -52,6 +52,7 @@ import {
 import { withTaste } from "../lib/tasteProfile";
 import { TasteReportSheet } from "../components/TasteReportSheet";
 import { OcrScan } from "../components/OcrScan";
+import { OcrPackPanel } from "../components/OcrPackPanel";
 import { useMarket } from "../store/market";
 import { applyLocalDayToIso, localDayKey } from "../lib/calendar";
 
@@ -478,6 +479,7 @@ export function CollectionPage({
           />
         </div>
       </div>
+      <OcrPackPanel />
       {ocrQuery ? (
         <div className="mt-2">
           <SearchInput value={ocrQuery} onChange={setOcrQuery} placeholder={t("pair.search")} />
@@ -578,7 +580,7 @@ export function CollectionPage({
                       aria-label={t("coll.eveningRating")}
                     >
                       <option value="" disabled>
-                        ?
+                        —
                       </option>
                       {Array.from({ length: 10 }, (_, i) => 10 - i).map((v) => (
                         <option key={v} value={v}>
@@ -593,6 +595,11 @@ export function CollectionPage({
                 {new Date(j.date).toLocaleDateString(lang === "hr" ? "hr-HR" : "en-GB")}
                 {j.note && ` — ${j.note}`}
               </div>
+              {j.rating == null && (
+                <p className="mt-1 text-[11px] leading-relaxed text-dim/80">
+                  {t("coll.eveningRatingHint")}
+                </p>
+              )}
               <label className="mt-2 flex items-center gap-2 text-xs text-dim">
                 <span className="shrink-0">{t("hum.editDate")}</span>
                 <input
