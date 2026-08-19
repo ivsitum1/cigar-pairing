@@ -107,9 +107,13 @@ export interface Drink {
   priceApprox?: boolean;
   shopHR: string;
   status?: string | null; // META / IMAS / PROBAO iz Excela
+  /** Poklon kutija / duplikat SKU — nije referentna boca za sparivanje. */
+  meta?: boolean;
   pairable: boolean;
   serving: Serving;
   cigarHint?: LocalizedText | null;
+  /** Profil izveden heuristikom, ne degustacijom / shop PDP-om. */
+  profileEstimated?: boolean;
   /** Coffee only — roast/process/species shown on the drink sheet. */
   coffeeDetail?: CoffeeDetail;
   priceUrl?: string | null; // izvor cijene / gdje kupiti

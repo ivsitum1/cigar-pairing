@@ -112,6 +112,7 @@ describe("marke pića", () => {
       "Rhum J.M",
       "Four Monkey's Rum",
       "Gin Mare",
+      "Gin & P",
       "The Bush Rum",
       "Rum Exchange",
       "Rum Nation",
@@ -137,6 +138,10 @@ describe("marke pića", () => {
       "Gaja", // vino + grappa
       "Ableforth's", // gin + rum
       "AURA", // pelinkovac + gin
+      "Dictador", // rum + gin
+      "Kavalan", // whisky + gin
+      "Poli", // grappa + gin
+      "Tobermory", // whisky + gin
     ]);
     const suspects = ALL_DRINK_BRANDS.filter((b) => {
       if (b.split(/\s+/).length !== 1 || MULTI_CATEGORY_HOUSES.has(b)) return false;
