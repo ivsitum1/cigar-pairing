@@ -494,6 +494,11 @@ const STRINGS = {
   "coll.wishlistTitle": { hr: "Lista želja (za kupnju)", en: "Wishlist (to buy)" },
   "coll.onWishlist": { hr: "Na listi želja", en: "On wishlist" },
   "coll.myRating": { hr: "Moja ocjena", en: "My rating" },
+  "coll.eveningRating": { hr: "Ocjena ve?eri", en: "Evening rating" },
+  "coll.eveningRatingHint": {
+    hr: "Vrijedi samo za ovu zabilje?enu ve?er. Ne mijenja Moju ocjenu cigare.",
+    en: "Only applies to this logged evening. It does not change your cigar?s My rating.",
+  },
   "coll.note": { hr: "Bilješka", en: "Note" },
   "coll.notePlaceholder": { hr: "Dojmovi, uz što je pasalo…", en: "Impressions, what it paired with…" },
   "coll.export": { hr: "Izvoz podataka", en: "Export data" },
