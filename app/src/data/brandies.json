@@ -381,11 +381,11 @@
     "additiveSource": "Excel MASTER",
     "qualityScore": 8.5,
     "priceEUR": {
-      "min": 95.0,
-      "max": 95.0
+     "min": 135.0,
+     "max": 135.0
     },
     "priceApprox": false,
-    "shopHR": "allez.hr",
+    "shopHR": "humidor.hr",
     "status": "META",
     "pairable": true,
     "serving": {
@@ -397,7 +397,7 @@
       "best": "Cisto (snifter)"
     },
     "cigarHint": null,
-    "priceUrl": null,
+    "priceUrl": "https://humidor.hr/hr/proizvod/frapin-fontpinot-xo-070-l/",
     "notes": {
       "hr": "Single-estate XO — suši, ozbiljan konjak za ozbiljnu cigaru.",
       "en": "Single-estate XO — drier, a serious cognac for a serious cigar."
@@ -660,11 +660,11 @@
     "additiveSource": "Excel MASTER",
     "qualityScore": 8.3,
     "priceEUR": {
-      "min": 150.0,
-      "max": 150.0
+     "min": 215.0,
+     "max": 215.0
     },
     "priceApprox": false,
-    "shopHR": "allez.hr",
+    "shopHR": "humidor.hr",
     "status": "META",
     "pairable": true,
     "serving": {
@@ -676,7 +676,7 @@
       "best": "Cisto (snifter)"
     },
     "cigarHint": null,
-    "priceUrl": null,
+    "priceUrl": "https://humidor.hr/hr/proizvod/martell-xo-070-l/",
     "notes": {
       "hr": "Suhi, borderies-bogat XO — orašasta elegancija uz srednju cigaru.",
       "en": "Dry, Borderies-rich XO — nutty elegance with a medium cigar."
@@ -1130,7 +1130,7 @@
       "min": 65,
       "max": 80
     },
-    "priceApprox": true,
+    "priceApprox": false,
     "shopHR": "allez.hr",
     "status": null,
     "pairable": true,
@@ -1447,7 +1447,7 @@
       "min": 85,
       "max": 110
     },
-    "priceApprox": true,
+    "priceApprox": false,
     "shopHR": "allez.hr",
     "status": null,
     "pairable": true,
@@ -2636,11 +2636,11 @@
     "additiveSource": "Excel MASTER",
     "qualityScore": 7.5,
     "priceEUR": {
-      "min": 55.0,
-      "max": 55.0
+     "min": 69.0,
+     "max": 69.0
     },
     "priceApprox": false,
-    "shopHR": "allez.hr",
+    "shopHR": "humidor.hr",
     "status": "META",
     "pairable": true,
     "serving": {
@@ -2652,7 +2652,7 @@
       "best": "Cisto (snifter)"
     },
     "cigarHint": null,
-    "priceUrl": null,
+    "priceUrl": "https://humidor.hr/hr/proizvod/armagnac-janneau-xo-royal-grand-070-l/",
     "notes": {
       "hr": "Pristupačni XO armagnac — mekši, karamelni stil.",
       "en": "Accessible XO armagnac — a softer caramel style."
@@ -2730,7 +2730,7 @@
       "min": 45,
       "max": 60
     },
-    "priceApprox": true,
+    "priceApprox": false,
     "shopHR": "allez.hr",
     "status": null,
     "pairable": true,

@@ -78,10 +78,18 @@ describe("drinkShopLinks", () => {
     const links = drinkShopLinks(
       base({ name: "Hampden HLCF Classic (60%)", priceUrl: null }),
     );
-    const tipsy = links.find((l) => l.shopId === "tipsy");
-    expect(tipsy?.url).toContain("tipsy.hr/?s=");
-    expect(decodeURIComponent(tipsy!.url)).toContain("Hampden HLCF Classic");
-    expect(tipsy!.url).not.toContain("%25"); // postotak alkohola ispada iz upita
+    const humidor = links.find((l) => l.shopId === "humidor");
+    expect(humidor?.url).toContain("humidor.hr/?s=");
+    expect(humidor?.url).toContain("post_type=product");
+    expect(decodeURIComponent(humidor!.url)).toContain("Hampden HLCF Classic");
+    expect(humidor!.url).not.toContain("%25");
+  });
+
+  it("The Humidor je prva HR pretraga (cigare i piće u istoj trgovini)", () => {
+    const hr = drinkShopLinks(base({ name: "Doorly's 12", priceUrl: null })).filter(
+      (l) => l.scope === "HR",
+    );
+    expect(hr[0]).toMatchObject({ shopId: "humidor", kind: "search" });
   });
 
   it("kategorijski URL u priceUrl ne prolazi kao potvrđena boca", () => {

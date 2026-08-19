@@ -23,13 +23,16 @@ const base = (over: Partial<Drink>): Drink =>
   }) as Drink;
 
 describe("isDrinkProductUrl", () => {
-  it("prihvaca allez / ecuga product path", () => {
+  it("prihvaca allez / ecuga / humidor product path", () => {
     expect(
       isDrinkProductUrl(
         "https://allez.hr/shop/svi-proizvodi/hampden-hlcf-classic-estate-pure-single-jamaican-rum-60-vol-07l-u-poklon-kutiji",
       ),
     ).toBe(true);
     expect(isDrinkProductUrl("https://ecuga.com/proizvod/courvoisier-xo")).toBe(true);
+    expect(
+      isDrinkProductUrl("https://humidor.hr/hr/proizvod/lagavulin-10yo-070-l/"),
+    ).toBe(true);
   });
 
   it("odbija katalog / kategoriju", () => {
@@ -56,6 +59,12 @@ describe("urlMatchesDrinkName", () => {
       urlMatchesDrinkName(
         "Hampden HLCF Classic 60%",
         "https://allez.hr/shop/svi-proizvodi/hampden-hlcf-classic-estate-pure-single-jamaican-rum-60-vol-07l-u-poklon-kutiji",
+      ),
+    ).toBe(true);
+    expect(
+      urlMatchesDrinkName(
+        "Lagavulin 10 YO",
+        "https://humidor.hr/hr/proizvod/lagavulin-10yo-070-l/",
       ),
     ).toBe(true);
   });

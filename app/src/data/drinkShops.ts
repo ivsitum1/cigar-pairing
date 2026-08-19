@@ -7,11 +7,15 @@
 // i gumb je vodio na Google — tvrdnja o dostupnosti bez pokrica. Ovdje se
 // razdvaja sto app zna:
 //   product — potvrdena stranica te boce (slug se poklapa s imenom),
+//             trenutno allez / ecuga / humidor scrape,
 //   search  — trgovina ima pretragu po nazivu (WordPress `?s=`), pa link
 //             stvarno trazi tu bocu, ali pogodak nije zajamcen,
 //   browse  — trgovinu znamo, ali ne i njen endpoint pretrage: link vodi na
 //             katalog kategorije (nikad na izmisljeni URL),
 //   ref     — svjetski cjenik (wine-searcher) za orijentir kad boce nema u HR.
+//
+// Havana Cigar Shop webshop nema katalog boca (samo cigare i pribor).
+// Havana 22 je lounge — pića na šanku, ne webshop SKU.
 import type { DrinkCategory, LocalizedText } from "../types";
 
 /**
@@ -44,6 +48,29 @@ const SPIRITS: DrinkCategory[] = ["rum", "whisky", "gin", "brandy", "tequila", "
 // Redoslijed u nizu je samo registar; prikaz slaze `drinkShopLinks`
 // (potvrdena boca prva, pa trgovine s pretragom, pa katalozi).
 export const DRINK_SHOPS: DrinkShop[] = [
+  {
+    id: "humidor",
+    name: "The Humidor",
+    scope: "HR",
+    home: "https://humidor.hr/hr/",
+    productHost: "humidor.hr",
+    categories: [...SPIRITS, "wine"],
+    search: (name) =>
+      `https://humidor.hr/?s=${encodeURIComponent(name)}&post_type=product`,
+    browse: {
+      rum: "https://humidor.hr/hr/kategorija-proizvoda/alkoholna-pica/rum/",
+      whisky: "https://humidor.hr/hr/kategorija-proizvoda/alkoholna-pica/viski/",
+      gin: "https://humidor.hr/hr/kategorija-proizvoda/alkoholna-pica/gin/",
+      brandy: "https://humidor.hr/hr/kategorija-proizvoda/alkoholna-pica/konjak/",
+      tequila: "https://humidor.hr/hr/kategorija-proizvoda/alkoholna-pica/tekila/",
+      digestif: "https://humidor.hr/hr/kategorija-proizvoda/alkoholna-pica/liker/",
+      wine: "https://humidor.hr/hr/kategorija-proizvoda/alkoholna-pica/vino/",
+    },
+    note: {
+      hr: "Zagreb — cigare i žestica u istoj trgovini; izravan link kad je boca u katalogu",
+      en: "Zagreb — cigars and spirits in the same shop; direct link when the bottle is in the catalogue",
+    },
+  },
   {
     id: "allez",
     name: "allez.hr",

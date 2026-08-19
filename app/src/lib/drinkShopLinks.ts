@@ -106,8 +106,8 @@ export function drinkShopLinks(drink: Drink): DrinkShopLink[] {
     out.push({
       shopId: productShop?.id ?? "shop",
       shop: productShop?.name ?? hostOf(product),
-      // potvrdena stranica dolazi iz HR scrapea (allez/ecuga), osim ako host
-      // kaze drugacije
+      // potvrdena stranica dolazi iz HR scrapea (allez/ecuga/humidor), osim
+      // ako host kaze drugacije
       scope: productShop?.scope ?? "HR",
       url: product,
       kind: "product",
