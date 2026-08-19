@@ -1,13 +1,12 @@
-# The Gentleman at the Table
+﻿# The Gentleman at the Table
 
 ## A Modern Guide to the Cigar, the Glass, and Good Company
 
-*EN manuscript frozen for HR translation · 2026-07-30*
+Working English manuscript, current main draft.
 
-> **Source of truth:** this English file. Parts I–IV are the core; Appendix A/B keep only unique vignettes, checklists, soundbites, and cards for loose typesetting (~100 small-format pages). Chapter craft: miniature beat + precepts; no lecture / brand catalog; anti-overwrite. Do not parallel-edit the HR draft — Phase 2 is a literary translation from this freeze. Proposal / market notes: `docs/bonton/research/notebooklm-grill/5017a44b-PROPOSAL-NOTES.md`. App short canon: `mala-knjiga-pusackog-bontona.md`.
+> **Current draft note:** this English file is now the main working manuscript. Parts I-IV are the core; Appendix A/B keep only unique vignettes, checklists, soundbites, and cards for loose typesetting (~100 small-format pages). Chapter craft: miniature beat + precepts; no lecture, no brand catalogue, no overwrite. Proposal and market notes stay outside the book body: `docs/bonton/research/notebooklm-grill/5017a44b-PROPOSAL-NOTES.md`.
 
 ---
-
 
 ### Dedication
 
@@ -331,7 +330,7 @@ Myth loves heroes with cigars in their mouths. The table loves people who put ou
 
 The Hemingway and Churchill tropes are lovely on a poster. For the evening they are less useful than an ashtray and water. A gentleman may love the myth — and may leave it on the shelf while the guests are seated.
 
-### Precepts
+### In practice
 
 A gentleman knows a little history so as to be humbler, not louder.
 
@@ -387,7 +386,7 @@ A gentleman does not say "Maduro is for real men". He says: "This one is darker 
 
 A good draw makes the evening easier. A bad draw is not a moral failing. It is a technical moment. A gentleman handles it quietly — or asks the host — without a public diagnosis of someone else's cigar.
 
-### Precepts
+### In practice
 
 A gentleman knows the anatomy enough to explain, not to impress.
 
@@ -455,7 +454,7 @@ If you are asked what you do, state your practice. Not as a law.
 
 *Figure: the band without dogma (Studio draft).*
 
-### Precepts
+### In practice
 
 A gentleman does not lick the cap before a shared cutter.
 
@@ -505,7 +504,7 @@ If you must answer a message, say: "Thirty seconds" and step out — or leave th
 
 The best evenings are held by the feeling that you have nowhere to be. If you do, say so at the start. People will adjust the format and the tempo. False infinity is as tiring as false intimacy.
 
-### Precepts
+### In practice
 
 A gentleman slows down when the ash blackens.
 
@@ -549,7 +548,7 @@ If you offer from your own humidor, offer a choice — not "take whatever you fi
 
 This is not a manual on humidity percentages. The numbers live in the 101. Here lives the relationship: someone else's leaf is not your field for research without permission.
 
-### Precepts
+### In practice
 
 A gentleman asks before the drawer.
 
@@ -607,7 +606,7 @@ Only on request. Briefly. Without an audience. Without "a real connoisseur".
 
 If you are not asked, smoke your own and be pleasant. That is the hardest master's trick.
 
-### Precepts
+### In practice
 
 A gentleman keeps his tricks for the moment they are asked for.
 
@@ -675,7 +674,7 @@ If someone gave you a good box, it is wise to return the attention later — not
 
 For a guest just entering the world of the leaf, a milder and shorter one often holds the table better than a "real" heavy one. A gentleman offers this without belittling. "For relaxing" sounds better than "for beginners" — though the meaning is the same: don't throw someone into the deep end just so you look brave.
 
-### Precepts
+### In practice
 
 A gentleman offers time, not just a leaf.
 
@@ -727,7 +726,7 @@ Pour in moderation. Top up when the guest's glass runs low, without interrogatin
 
 ### The order
 
-Smell the drink → sip → smoke → sip. Look for a bridge, not a victory.
+Smell the drink -> sip -> smoke -> sip. Look for a bridge, not a victory.
 
 Milder first, then stronger — in both the cigar and the glass, when you're leading the evening. If you start with a smoke bomb and a full maduro, the rest of the evening may be only recovery.
 
@@ -749,7 +748,7 @@ Water cleans the palate, softens the hit, brings back the conversation. A gentle
 
 If a guest doesn't drink alcohol, the ritual doesn't fall apart. Smoke, water, conversation — the table still stands. An empty glass "for form's sake" is not compulsory. Respect is.
 
-### Precepts
+### In practice
 
 A gentleman sets out water before wisdom.
 
@@ -815,7 +814,7 @@ A heavily peated drink in a small room needs a warning or a way out to the terra
 
 Coffee with a smoke can be a splendid bridge — and a double hit if everything is heavy. A gentleman does not force an espresso alongside the strongest leaf as proof of endurance.
 
-### Precepts
+### In practice
 
 A gentleman looks for a bridge.
 
@@ -889,7 +888,7 @@ If a guest goes pale, sweats, falls silent: water, a little something sweet if i
 
 A host who quietly saves the evening is a greater master of the table than one who lectures about nicotine.
 
-### Precepts
+### In practice
 
 A good host offers a ladder and an exit.
 
@@ -951,15 +950,17 @@ In some countries there are rigid rules about tipping, dress, and those who only
 
 Some lounges are stricter than church. Some are as relaxed as a terrace. A gentleman reads the room. He doesn't impose Davidoff rigidity on a friendly evening — nor friendly chaos on a place that lives by silence.
 
-### Precepts
+### In practice
 
-A gentleman in a lounge pays with respect for the space.
+In practice, good manners in a lounge begin before the cigar is lit. They begin with the way you enter, the way you take a seat, and the way you show that you understand you are in someone else's space.
 
-A gentleman in a club does not treat the staff as servants of his ego.
+A gentleman in a lounge pays first with respect for the room. He does not act as if buying a cigar has bought him the air, the staff, or the silence of everyone nearby.
 
-A gentleman on a private terrace does not quote foreign price lists.
+In a club, he does not treat the staff as servants of his ego. They are keeping the room habitable for everyone. That alone deserves restraint.
 
-A gentleman stubs out nowhere.
+On a private terrace, he does not quote foreign price lists, lounge customs, or stories from better-known houses abroad as if they were local law. A friend's terrace is not an imported ritual. It is a human one.
+
+And he stubs out nowhere. Not in a flowerpot, not on the stone, not in a half-empty glass. Cleanliness is not a finishing touch. It is part of the evening's tone.
 
 ### Vignette: a speakerphone on the mobile
 
@@ -989,7 +990,7 @@ Kindly: "Flavour comes with the flame — shall we light and compare." Cellophan
 
 ## 17. Ten vignettes at the table
 
-*Situation → wrong → kindly.*
+*Situation  ->  wrong  ->  kindly.*
 
 ### 1. Licking the cap
 
@@ -1115,17 +1116,11 @@ Balconies, windows, hotel corridors: the house rules count for more than your ha
 
 Where smoking is allowed, measure still holds. Where it isn't — that's the end of it. A gentleman does not negotiate with a sign.
 
-### Precepts
+### In practice
 
-A gentleman outdoors reads the wind before the ego.
+Outdoors, the first courtesy is spatial awareness. A gentleman reads the wind before he starts caring about his own mood. He lights away from faces, keeps the ember under control, and makes sure his smoke does not become a message for the neighbour.
 
-A gentleman does not ash someone else's lawn.
-
-A gentleman on a balcony remembers that smoke travels up.
-
-A gentleman in a passage does not take up someone else's air.
-
-A gentleman at a café asks when the line is unclear.
+That awareness holds everywhere: on a balcony, smoke travels upward; in a passage, the air is shared; in a café, the “allowed” signal is never a blank permit for a whole new kind of mess. If the line is unclear, he asks staff instead of guessing. If the ground is someone else's, he keeps ash off someone else's lawn.
 
 ### Vignette: the neighbour below
 
@@ -1133,15 +1128,11 @@ Smoke drifts onto the lower terrace. The neighbour coughs out of politeness. Wro
 
 ### More on outdoors
 
-A gentleman does not leave butts — cigars or otherwise — as a trace of civilisation.
+A gentleman does not leave butts, cigars or otherwise, as a trace of civilisation. Outdoors is still someone’s shared space: a ground to respect, a trail to keep clean, and a quiet to protect.
 
-A gentleman does not light up next to children at a playground "because it's outside".
+He also keeps the “outside” argument from becoming a loophole. Children at a playground are not a loophole. Weddings and funerals are not neutral markets for smoke. The room is read twice, not once, because the social meaning is already present before the first draw.
 
-A gentleman on a boat or ferry respects the marked zones without a philosophy of freedom.
-
-A gentleman camping does not treat the forest as an ashtray.
-
-A gentleman at a wedding or a funeral reads the room twice as carefully. Smoke is not a neutral gesture at every gathering.
+On boats, ferries, and other marked spaces, he respects zones the way he respects rules at a table. There is no philosophy of freedom in ignoring boundaries. On a camping ground, the forest is not an ashtray. If you smoke, you leave less than you arrived with.
 
 ### A wise thought
 
@@ -1179,17 +1170,11 @@ Note down what sat well: vitola, drink, bridge, people, time. A collection in a 
 
 Don't expose someone else's weaknesses at the table as an anecdote elsewhere. That is not humour. That is a betrayal of the table.
 
-### Precepts
+### In practice
 
-A gentleman gives with context.
+In practice, a gentleman gives with context: he offers what fits the table tonight, not what looks impressive in the moment. He gives thanks concretely, in one short message that keeps the evening present after the smoke is gone.
 
-A gentleman gives thanks concretely.
-
-A gentleman shares the bottle while it lives.
-
-A gentleman notes bridges, not other people's falls.
-
-A gentleman does not turn a price into a message.
+He shares the bottle while it still belongs to the company, not as a prize to be preserved until the taste becomes a photograph. And when he speaks about what mattered, he notes bridges, not other people’s missteps. He never turns a price into a message. Money may buy access, but manners buy comfort.
 
 ### Vignette: the gift-price
 
@@ -1237,15 +1222,17 @@ Ask at the door or earlier by message. "May we go out on the terrace?" is better
 
 Consent. Air. The smell that lingers. A gentleman would rather wait for a stop than "conquer" the cabin.
 
-### Precepts
+### In practice
 
-A gentleman asks more at someone else's table.
+When the table is not yours, questions are not weakness. They are the price of courtesy.
 
-A gentleman does not wage war with signs.
+A gentleman asks more at someone else's table because the burden of interpretation belongs to the guest, not to the host. It is better to ask one small question than to leave one large smell behind you.
 
-A gentleman does not use smoke as a business tool of power.
+He does not wage war with signs. If a notice says no smoking, the conversation is over. There is nothing worldly or sophisticated about arguing with a wall.
 
-A gentleman leaves someone else's space cleaner.
+He also does not use smoke as a business tool of power. A cigar offered as a test of loyalty, rank, or masculine composure is already a bad cigar, whatever its wrapper may be.
+
+And when he leaves, he leaves someone else's space cleaner, calmer, and easier than he found it. That is the real sign that the evening was civilised.
 
 ### Vignette: the hotel balcony
 
@@ -1275,15 +1262,15 @@ If you've reached the end of this book, you don't have to quote it at the table.
 
 ### The last precepts
 
-A gentleman goes home on time.
+A gentleman goes home on time. He knows that every good evening has a point beyond which it begins to spend tomorrow.
 
-A gentleman does not leave a burning stub as a monument.
+He does not leave a burning stub behind him as a monument to how much he enjoyed himself. Ash is not memory. It is cleaning.
 
-A gentleman sends a short thank-you the next day.
+He sends a short thank-you the next day, not as ceremony but as proof that the evening remained with him after the smoke had gone.
 
-A gentleman does not turn the evening into content without consent.
+He does not turn the evening into content without consent. A table may be memorable and still belong only to those who sat there.
 
-A gentleman knows that silence, too, is hospitality.
+And he knows that silence, too, is hospitality. Not every pause needs a lesson, a joke, or a louder anecdote to rescue it.
 
 ### A wise thought at the close
 
@@ -1307,55 +1294,59 @@ A gentleman does not use smoke to "claim" space in the room the way an animal cl
 
 A gentleman, if he sees that someone isn't enjoying himself, does not raise the volume of the talk about the leaf. He lowers the demands of the evening.
 
-### More on moderation
+### Why moderation matters
 
 Moderation is not poverty of spirit. Moderation is room for tomorrow.
 
-A gentleman doesn't have to "empty out the evening" to prove he knows how to live. The one who leaves on time also knows how to live.
+A gentleman doesn't have to empty out the evening to prove he knows how to live. The person who leaves a little unspent often understands pleasure better than the person who exhausts it.
 
-A gentleman does not measure success by the number of cigars lit. He measures it by the number of people who would sit with him again.
+This matters because smoke and drink tempt people into false ideas of abundance. More time, more bottles, more cigars, more proof of stamina. Yet most memorable evenings are not the ones in which the table was pushed to its limit. They are the ones in which nobody had to recover from the host.
 
-A gentleman drinks water even when "there's no need". The habit saves more than a heroic thirst.
+A gentleman does not measure success by the number of cigars lit. He measures it by the number of people who would gladly sit with him again next week.
 
-### More on resourcefulness
+He also drinks water before there is "a reason". That habit sounds almost dull when written down. At the table, it is a quiet form of foresight. It saves more evenings than heroic thirst ever has.
 
-Resourcefulness is when the ashtray arrives before the first ash.
+### What resourcefulness looks like
 
-Resourcefulness is when you have a spare lighter, not when you give a speech about the brand of your lighter.
+Resourcefulness rarely looks glamorous. It looks like small foresight.
 
-Resourcefulness is when you know where the toilet is before a guest has to ask in a whisper.
+It is when the ashtray arrives before the first ash, so that nobody has to improvise with a saucer or glance around in embarrassment.
 
-Resourcefulness is when there's enough room on the table for glasses and elbows — not just for your box as a central altar.
+It is when you have a spare lighter, not when you give a speech about the pedigree of your own.
 
-### More on humility
+It is when you know where the toilet is, where the water is, and where an extra chair might be found before a guest has to ask in a lowered voice.
 
-Humility is when your favourite box is not the only language you speak.
+It is also spatial. A resourceful host leaves enough room on the table for glasses, elbows, ashtrays, and comfort, not just for his own box displayed like a central altar.
 
-Humility is when you admit: "I don't know this." That sentence often opens a better conversation than false expertise.
+### What humility looks like
 
-Humility is when you let another be more expert than you without competing.
+Humility begins when your favourite box is no longer the only language you speak.
 
-Humility is when you don't photograph your own ash as if it were an art performance — unless everyone agrees to the joke.
+It is there when you can say, plainly, "I don't know this." That sentence often opens a better conversation than borrowed expertise ever could.
+
+It is there when someone else at the table knows more than you do and you do not immediately turn the moment into a contest. Knowledge shared in peace is attractive. Knowledge defended like territory is tiring.
+
+It is there, too, in small vanities. You do not photograph your own ash as if it were a minor artwork unless everyone is already in on the joke. You do not turn every object on the table into evidence of taste. Sometimes the most elegant thing a person can do is simply enjoy what is there.
 
 ### Situations: spirit in practice
 
-**Two couples, one smokes.** The ashtray goes so that it doesn't split the table into "clean" and "unclean". The smoke moves aside. The conversation stays shared.
+**Two couples, one smokes.** The ashtray should not divide the table into the pure and the impure. Place it so the smoke can drift away, and keep the conversation shared.
 
-**Someone offers a third.** The host says: "We have time for a shorter one — or we stop here and leave room for tomorrow." The ladder goes down, without insult.
+**Someone offers a third.** This is where measure shows itself. The host may say, "We have time for a shorter one, or we stop here and leave room for tomorrow." The tone goes down without anyone being corrected.
 
-**A guest asks for advice.** The host gives two details, not twenty. Then asks: "Do you want more, or shall we let the leaf do its work?"
+**A guest asks for advice.** Give two details, not twenty. Then ask whether he wants more, or whether the leaf may now do its own work.
 
-**Only a strong vitola in the house.** Honestly: "I don't have a milder one, but here's a shorter one — or let's just open a glass." Better than silent improvisation that ends in awkwardness.
+**Only a strong vitola in the house.** Honest limitation is kinder than bad improvisation. "I don't have a milder one, but I do have a shorter one, or we can simply open a glass" is better than pushing someone into an evening he did not choose.
 
-**A cigar and a cigarette at the same table.** The first to ask for a window was no nuisance. He was the steward of the air.
+**A cigar and a cigarette at the same table.** The first person to ask for a window is not a nuisance. He is often the steward of the air.
 
-**The host's phone.** If he must take it, he puts it out or leaves it in the ashtray with a word. He doesn't vanish into the hall with a burning stub as if he alone will guard the house.
+**The host's phone.** If he must answer, he says so, sets the moment in order, and either puts the cigar out or leaves it safely with a word. He does not disappear into the hall as if everyone else had been hired to wait for him.
 
-**A guest cuts the last third short.** The host doesn't count centimetres. The host says: "Whatever suits you."
+**A guest cuts the last third short.** The host does not count centimetres. He says, "Whatever suits you," and means it.
 
-**A guest brings his own without warning.** Often it's a kindness. Sometimes it's clumsiness. The host receives the gift, doesn't hold a judgment on protocol — unless it repeats as a rule without agreement.
+**A guest brings his own without warning.** Often it is a kindness. Sometimes it is merely clumsy timing. The courteous host receives the gesture before judging the protocol, unless the habit repeats and begins to overrun the house.
 
-**A guest doesn't drink alcohol.** The ritual is shortened to smoke, water, conversation. Not to an empty glass "for the atmosphere" if it's a bother.
+**A guest doesn't drink alcohol.** Then the ritual becomes smoke, water, and conversation. It does not need an empty glass as stage dressing.
 
 ### Mini-epigrams for Part I
 
@@ -1367,21 +1358,27 @@ Humility is when you don't photograph your own ash as if it were an art performa
 
 ### Archetype of the evening: the quiet solo
 
-Sometimes a gentleman smokes alone. Even then, measure holds: space, ash, a clean departure. Solo is not an excuse for mess. Solo is a practice of attention without an audience.
+Sometimes a gentleman smokes alone. Even then, measure holds. The ash still needs a place, the room still needs air, and the evening still deserves a clean departure.
+
+Solo smoking is not an excuse for mess simply because nobody is there to witness it. In some ways it is the stricter test. Without an audience, one discovers whether one's manners were conviction or theatre.
 
 ### Archetype of the evening: the mentoring table
 
-The host knows more. That's why he talks less. He offers a ladder. He corrects in private. Guests leave wiser — and more relaxed. If they leave only wiser, the mentorship was an exam.
+The host knows more. That is precisely why he talks less.
+
+He offers a ladder rather than a performance. He corrects in private, explains only what helps, and stops before knowledge turns into pressure. Guests should leave wiser, yes, but also more relaxed. If they leave only wiser, the mentorship was too close to an exam.
 
 ### Archetype of the evening: the celebration
 
-Louder, more glasses, more risk of going overboard. The gentleman then guards the room: water, tempo, signs of fatigue. A celebration that ends in shame did not succeed.
+Celebrations are louder, fuller, and more vulnerable to excess. That is exactly why a gentleman becomes more watchful in them, not less.
+
+He guards the room by simple means: water, tempo, a glance at who is tiring, and the courage to lower the pitch before the evening tips into self-display. A celebration that ends in embarrassment has mistaken noise for success.
 
 ---
 
-## Expansion to Part II — more on leaf and flame
+## Part II on leaf and flame, without the exam tone
 
-### History: five more short notes
+### A little history, without an exam
 
 **Craft, not magic.** The leaf is cured, fermented, selected, rolled. A gentleman respects this when he doesn't snap a cigar like a pencil and doesn't throw ash around as if it were free.
 
@@ -1393,7 +1390,7 @@ Louder, more glasses, more risk of going overboard. The gentleman then guards th
 
 **The craft today.** Family stories, factories, clubs — all of it can be lovely context. It need not be a lecture between the first and second draw.
 
-### Anatomy: more for the table
+### What you can explain at the table
 
 A gentleman need not know every leaf name in Spanish to be courteous. He must know how to ask: "What's the strength?" and to respect the answer.
 
@@ -1403,49 +1400,62 @@ A gentleman does not open five boxes "to show off the riches". He opens one thou
 
 A gentleman treats cellophane, tube and box as practical questions, not as ranks.
 
-### Cut and light: more precepts
+### Cut and light, without spectacle
 
 A gentleman does not cut with his teeth at someone else's table. That is no rustic charm. It is a bad film.
 
 A gentleman does not "check" the cut by blowing ash into someone else's face.
+He fixes the burn over his own ashtray, quietly.
 
 A gentleman does not hold a flame in the middle of the room like a torch.
+He lights with care, keeping heat and eyes separate.
 
 A gentleman, if he uses matches, does not toss the head into the ashtray while it still lives as a little act of revenge.
+He strikes, uses, and disposes safely, without turning small tools into drama.
 
 A gentleman does not light three cigars at once "for the guests" without asking whether they want them at all.
+If they want, he lights one by one. If they don't, he doesn't pretend it was for them.
 
 A gentleman does not demonstrate the lighting so long that the leaf dies of the performance.
+He keeps it brief, then steps back so the evening can continue.
 
-### Ash: more
+### Ash discipline
 
 A gentleman does not build the ash into a tower to earn applause. If it falls — it fell. Carry on.
 
 A gentleman does not shake ash into someone else's glass. It sounds impossible until it happens.
+When ash falls, he pauses and clears the rim.
 
 A gentleman, at the end of the evening, empties the ashtray if that's the role of the guest who stays to the end — or he asks. He doesn't leave the ash as a monument.
+He cleans either with the right timing or with a simple question.
 
 A gentleman does not put it out in a plant, in the soil of a pot, in bread. Civilisation has ashtrays.
 
-### Tempo: more
+### Tempo: don't rush to prove
 
 A gentleman does not smoke "to keep up" while others are only just sitting down.
+He waits for the table's pace, not for his own impulse.
 
 A gentleman does not use smoke as a way of not speaking all evening — unless it was agreed that silence is wanted. Even then, ash and space still hold.
 
 A gentleman does not look at his watch with every draw. He looks at the people.
+He measures presence by attention, not by puffs.
 
 A gentleman, if he must catch a train, says so at the start and chooses a shorter format. Better than fleeing in the middle of the third.
 
-### Humidor: more
+### The humidor as hospitality
 
 A gentleman does not open someone else's humidor "just to smell" without asking. A smell, too, is an entry.
+He asks first, then looks briefly and leaves things as he found them.
 
 A gentleman does not move someone else's boxes to "arrange them more nicely". The order is theirs.
+If he helps, he helps exactly as requested.
 
 A gentleman in a shop does not treat the staff as Google with legs. He asks a question, listens, gives thanks.
+He doesn't crowd the counter or grab without waiting.
 
 A gentleman does not buy "for the strength of the ego" and then leave the guest what he wouldn't light himself.
+He keeps the selection honest: what fits the guest, not what proves the buyer.
 
 ### Five master's tips — expanded to ten (and still not imposed)
 
@@ -1473,69 +1483,61 @@ A gentleman does not buy "for the strength of the ego" and then leave the guest 
 
 ### Offering: more scenes
 
-A gentleman does not offer a cigar to children "as a joke". A joke is not a universal currency.
+Offering is not a mechanical act. It depends on the room, the age of the company, the mood, and what the evening can carry.
 
-A gentleman does not offer a cigar as consolation for someone's grief without a feel for the moment. Sometimes silence is the better gift.
+A gentleman does not offer a cigar to children as a joke. A joke is not a universal currency, and initiation is not play when the body is not ready for it.
 
-A gentleman does not offer "the same one the star smokes". He offers what suits the evening.
+He also does not offer a cigar as consolation for someone's grief without first feeling the moment. Sometimes silence, tea, or a hand on the shoulder is the better gift.
 
-A gentleman, when he shares a box, does not count out loud who took "the more expensive one".
+He does not offer "the same one the star smokes" as if fame were flavour. He offers what suits the evening.
 
-A gentleman does not ask for a gifted cigar to be returned "preserved". A gift is a gift.
+When he shares a box, he does not count out loud who took the more expensive one. The minute arithmetic enters the room, hospitality leaves it.
+
+And he does not ask for a gifted cigar to be returned preserved. A gift is a gift. Once offered, it belongs to the recipient's evening, not to the giver's continuing supervision.
 
 ### The glass: more
 
-A gentleman does not compete over who can "sniff" harder.
+The glass has its own manners, and most of them are quieter than enthusiasts imagine.
 
-A gentleman does not explain every ester as if he were in a laboratory — unless the audience wants it.
+A gentleman does not compete over who can sniff harder. Aroma is not arm-wrestling.
 
-A gentleman does not leave a bottle open all night "because it must breathe" if that spoils tomorrow's guests. Again: measure.
+He does not explain every ester as if he were in a laboratory unless the audience truly wants that kind of evening. Precision is welcome when invited. It is exhausting when imposed.
 
-A gentleman does not mix other people's leftovers into one glass "so it's not wasted". Ask.
+He does not leave a bottle open all night because "it must breathe" if that spoils tomorrow's guests. Again, measure.
 
-A gentleman does not use someone else's glass "just for a sip".
+He does not mix other people's leftovers into one glass in the name of thrift without asking first. He does not use someone else's glass "just for a sip" as if personal rims were communal property.
 
 ### Pairing: more bridges (without dogma)
 
-A gentleman knows that coffee can illuminate a heavy leaf — and that it can overdo it.
+Pairing is where vanity often dresses itself as expertise, so this is precisely where gentleness matters.
 
-A gentleman knows that sweetness sometimes softens the hit — and that it is not a cure for everything.
+A gentleman knows that coffee can illuminate a heavy leaf and also overdo it. He knows that sweetness sometimes softens the hit and also solves less than people hope. He knows that peat can be either a classic bridge or a full collision, and that a warning given kindly is a kindness, not a lecture.
 
-A gentleman knows that peat can be a classic or a collision. A warning is a kindness.
-
-A gentleman does not claim that "everything goes with everything" to avoid a thought — nor that "nothing goes" to look strict.
-
-A gentleman notes his own bridges. Other people's are their own.
+What he does not do is pretend that everything goes with everything because thinking would take effort, nor that nothing goes because severity looks impressive. He experiments, notes what worked for him, and leaves room for other people's tongues to disagree.
 
 ### Host/guest: more
 
-A gentleman as host does not vanish into his phone while guests light up for the first time.
+The host and the guest fail in different ways, but both failures usually begin in self-importance.
 
-A gentleman as guest does not criticise the furniture, the humidity, the choice of music and the choice of leaf all in one sentence.
+A gentleman as host does not vanish into his phone while guests light up for the first time. First embers are part of hosting.
 
-A gentleman as the third knows how to be a bridge: pour the water, change the subject, suggest the terrace.
+A gentleman as guest does not criticise the furniture, the humidity, the choice of music, and the choice of leaf all in one sentence, as if he had been invited to inspect rather than to share.
 
-A gentleman does not "rescue" someone else's evening by taking it over.
+A gentleman as the third person at the table often does the most useful work. He pours water, changes the subject, suggests the terrace, lowers the temperature. He bridges.
 
-A gentleman, when the ladder is set too high, lowers it without saying "you people don't know".
+What he does not do is "rescue" someone else's evening by taking it over. And when the ladder is set too high, he lowers it without saying, "you people don't know." Correction that humiliates is only vanity in a tidy coat.
 
 ### The lounge: more
 
-A gentleman does not reserve five armchairs for one friend who "might come".
+Lounges reward those who understand that membership of a room is not ownership of it.
 
-A gentleman does not haggle loudly over prices as if he were at a market — unless that's the local tone of the place. Read the room.
+A gentleman does not reserve five armchairs for one friend who "might come". He does not haggle loudly over prices as if he were in a street market, unless that really is the local tone and everyone shares it. He reads the room before he performs in it.
 
-A gentleman does not film other people's faces for content.
+He does not film other people's faces for content, nor hold a monologue about how a "real lounge" looked in 1998. Nostalgia is not etiquette.
 
-A gentleman does not hold a monologue about how "a real lounge" looked in 1998.
+He does not bring a cigarette because it is "similar". It is not similar to those for whom the place is meant. He does not demand a free cut as a human right, either. He asks for clarity on the house rules and then respects them.
 
-A gentleman does not bring a cigarette "because it's similar". It is not similar to those for whom the place is meant.
-
-A gentleman does not demand a free cut as a human right. He asks for clarity on the house rules — and respects it.
-
-A gentleman does not sit at the edge of someone else's conversation and enter with a correction.
-
-A gentleman thanks the staff. A small thing. A large one.
+And he does not sit at the edge of someone else's conversation only to enter with a correction. If he leaves any trace, let it be gratitude. Thanks to the staff is a small thing in sound and a large thing in meaning.
 
 ### Vignettes — expanded versions
 
@@ -1815,26 +1817,26 @@ If you remember only this sequence, the lounge won't hate you.
 
 ## Twenty small vignettes (one sentence + the fix)
 
-1. A guest taps ash into a coffee cup → bring an ashtray, not a comment.
-2. Someone stubs out → next time model a calm ending.
-3. Someone smokes in a face → change places, don't escalate.
-4. Someone rates a brand out loud by its price → change the subject.
-5. Someone forces a third → offer a way out.
-6. Someone disappears onto the phone → come back with an apology, not an ego.
-7. Someone photographs without asking → "wait, ask X".
-8. Someone corrects a cut → "shall I show you in private?"
-9. Someone offers a puff → "thanks, I have my own".
-10. Someone squeezes the leaf → "let's ask what's ready".
-11. Someone moralises about additives → "say what you feel in the glass".
-12. Someone warms brandy over the flame → offer a glass without the show.
-13. Someone dips the leaf → "I'll keep mine separate".
-14. Someone is late and expects everyone to wait with a lit cigar → agree in advance.
-15. Someone brings a vape into the lounge → ask the host, respect the answer.
-16. Someone talks over a toast → wait for the ash and the silence.
-17. Someone leaves ash on the rim of a pot → move it to the ashtray quietly.
-18. Someone brags about the tower → don't applaud.
-19. Someone shames the one who felt unwell → break off the joke, bring water.
-20. Someone says "real/fake" about a name → "different story, let's just enjoy tonight".
+1. A guest taps ash into a coffee cup  ->  bring an ashtray, not a comment.
+2. Someone stubs out  ->  next time model a calm ending.
+3. Someone smokes in a face  ->  change places, don't escalate.
+4. Someone rates a brand out loud by its price  ->  change the subject.
+5. Someone forces a third  ->  offer a way out.
+6. Someone disappears onto the phone  ->  come back with an apology, not an ego.
+7. Someone photographs without asking  ->  "wait, ask X".
+8. Someone corrects a cut  ->  "shall I show you in private?"
+9. Someone offers a puff  ->  "thanks, I have my own".
+10. Someone squeezes the leaf  ->  "let's ask what's ready".
+11. Someone moralises about additives  ->  "say what you feel in the glass".
+12. Someone warms brandy over the flame  ->  offer a glass without the show.
+13. Someone dips the leaf  ->  "I'll keep mine separate".
+14. Someone is late and expects everyone to wait with a lit cigar  ->  agree in advance.
+15. Someone brings a vape into the lounge  ->  ask the host, respect the answer.
+16. Someone talks over a toast  ->  wait for the ash and the silence.
+17. Someone leaves ash on the rim of a pot  ->  move it to the ashtray quietly.
+18. Someone brags about the tower  ->  don't applaud.
+19. Someone shames the one who felt unwell  ->  break off the joke, bring water.
+20. Someone says "real/fake" about a name  ->  "different story, let's just enjoy tonight".
 
 ---
 
@@ -2164,7 +2166,7 @@ A gentleman outdoors reads the wind before the ego.
 
 # Appendix B: cards and scenarios for the loose layout
 
-*(Bridges-style white space: short cards and wrong→kindly scenarios. Catalogue series thinned to one card-set per theme.)*
+*(Bridges-style white space: short cards and wrong -> kindly scenarios. Catalogue series thinned to one card-set per theme.)*
 
 ## Catalogue series — attention
 
@@ -2326,65 +2328,85 @@ Instead of "You have to." say "What suits you better tonight?"
 
 # Back matter
 
-## Sources
+## Bibliography and source note
 
-The popular literature behind this text: public guides, articles, videos and podcasts. The emphasis is written for the Croatian context — the local club, shop and terrace set the tone.
+This book is grounded in popular-publicistic material: etiquette guides, cigar and spirits publications, podcasts, and manufacturer or retailer education pages. Those sources informed tone, customs, terminology, and recurring table situations. The manuscript itself remains an original synthesis written for a Croatian social setting, with the local club, shop, terrace, and host-guest dynamic setting the practical frame.
 
-The form of short rules owes a debt to the tradition of courtesy guides — John Bridges's *How to Be a Gentleman* (Leo-commerce, 2001), along with Debrett and Emily Post as schools of form, not sources to copy. The content about the cigar and the table is original to this manuscript. Poster myths (Churchill, Hemingway, and the like) appear only as contrast with table manners — not as verified anecdotes or epigraphs.
+In form, the book owes a clear debt to the courtesy-guide tradition, especially John Bridges, Debrett, and Emily Post. They are used here as models of shape and civility, not as prose to copy. Poster myths around famous cigar figures appear only as contrast material unless independently verified.
 
-- Beyond the Humidor (podcast) — https://podcasts.apple.com/us/podcast/beyond-the-humidor-a-cigar-podcast-for-the-rest-of-us/id1480171817
-- Casa de Montecristo — https://www.casademontecristo.com
-- Cigar Aficionado — https://www.cigaraficionado.com
-- CigarLounges — https://www.cigarlounges.co
-- cigars.com — https://www.cigars.com
-- Gentleman’s Gazette — https://www.gentlemansgazette.com
-- Holt’s Clubhouse — https://www.holts.com/clubhouse
-- JR Cigars — https://www.jrcigars.com
-- La Aurora — https://www.laaurora.com
-- The Manual — https://www.themanual.com
-- VDG Cigars — https://vdg-cigars.com
-- Whisky.com — https://www.whisky.com
-- Wikipedia — cigar etiquette — https://en.wikipedia.org/wiki/Cigar_etiquette
+### Selected bibliography
 
-The same list appears at the foot of Club in the app. The author is a physician; table notes on pace and nicotine are part of the etiquette, not medical advice.
+Beyond the Humidor. *Beyond the Humidor: A Cigar Podcast for the Rest of Us*. Podcast. Apple Podcasts. Accessed August 19, 2026. [https://podcasts.apple.com/us/podcast/beyond-the-humidor-a-cigar-podcast-for-the-rest-of-us/id1480171817](https://podcasts.apple.com/us/podcast/beyond-the-humidor-a-cigar-podcast-for-the-rest-of-us/id1480171817).
+
+Bridges, John. *How to Be a Gentleman*. Leo-Commerce, 2001.
+
+Casa de Montecristo. Website. Accessed August 19, 2026. [https://www.casademontecristo.com](https://www.casademontecristo.com).
+
+Cigar Aficionado. Website. Accessed August 19, 2026. [https://www.cigaraficionado.com](https://www.cigaraficionado.com).
+
+CigarLounges. Website. Accessed August 19, 2026. [https://www.cigarlounges.co](https://www.cigarlounges.co).
+
+cigars.com. Website. Accessed August 19, 2026. [https://www.cigars.com](https://www.cigars.com).
+
+Debrett’s. Website. Accessed August 19, 2026. [https://debretts.com](https://debretts.com).
+
+Emily Post Institute. Website. Accessed August 19, 2026. [https://emilypost.com](https://emilypost.com).
+
+Gentleman’s Gazette. Website. Accessed August 19, 2026. [https://www.gentlemansgazette.com](https://www.gentlemansgazette.com).
+
+Holt’s Clubhouse. Website. Accessed August 19, 2026. [https://www.holts.com/clubhouse](https://www.holts.com/clubhouse).
+
+JR Cigars. Website. Accessed August 19, 2026. [https://www.jrcigars.com](https://www.jrcigars.com).
+
+La Aurora. Website. Accessed August 19, 2026. [https://www.laaurora.com](https://www.laaurora.com).
+
+The Manual. Website. Accessed August 19, 2026. [https://www.themanual.com](https://www.themanual.com).
+
+VDG Cigars. Website. Accessed August 19, 2026. [https://vdg-cigars.com](https://vdg-cigars.com).
+
+Whisky.com. Website. Accessed August 19, 2026. [https://www.whisky.com](https://www.whisky.com).
+
+Wikipedia contributors. "Cigar etiquette." *Wikipedia*. Accessed August 19, 2026. [https://en.wikipedia.org/wiki/Cigar_etiquette](https://en.wikipedia.org/wiki/Cigar_etiquette).
+
+The same roster can appear in shorter form in the app, but this book version keeps the bibliography in a more formal reference style. The author is a physician; passages on pace, stomach, and nicotine discomfort belong to etiquette and self-measure, not to medical instruction.
 
 ---
 
 ## A glossary of table words
 
-**Vitola** — the format of a cigar (shape and size); at the table it often also means the agreed length of the session.
+**Vitola**: cigar shape and size; at the table it can also mean the agreed session length.
 
-**Draw** — the resistance when drawing the smoke; a "good draw" makes the evening easier, a bad one is no moral failing.
+**Draw**: the resistance when drawing the smoke; a “good draw” makes the evening easier.
 
-**Canoeing** — an uneven burn (like a canoe); fixed quietly, without a show.
+**Canoeing**: uneven burn; fix quietly, without a show.
 
-**Wrapper** — the outer leaf; it strongly shapes the first impression.
+**Wrapper**: the outer leaf; it shapes the first impression.
 
-**Binder** — the leaf that holds the shape.
+**Binder**: leaf that holds the cigar’s shape.
 
-**Filler** — the blend at the core.
+**Filler**: the blend in the core.
 
-**Maduro** — in table talk often a mark of a darker, often sweeter wrapper impression; not a "higher rank".
+**Maduro**: a darker, often sweeter wrapper impression; not a “higher rank”.
 
-**Connecticut** — in talk often a mark of a lighter, often milder impression; not a "lower rank".
+**Connecticut**: a lighter, often milder wrapper impression; not a “lower rank”.
 
-**Cut** — the opening of the cap; less is often more.
+**Cut**: the opening of the cap; less is often more.
 
-**Torch** — the jet lighter; useful and dangerous at the wrong moment.
+**Torch**: the jet lighter; useful, but risky if used at the wrong moment.
 
-**Ash as a shield** — stable ash can protect the burn; black, hot ash is a sign to slow down.
+**Ash as a shield**: stable ash protects the burn; black, hot ash means slow down.
 
-**RH** — relative humidity in storage; the details belong to the 101, not to etiquette.
+**RH**: how humid it is in storage.
 
-**Pairing** — the matching of glass and smoke; a bridge, not a victory.
+**Pairing**: matching drink with smoke—smooth, not competitive.
 
-**BYOB** — bring your own bottle; if you bring it, share it.
+**BYOB**: bring your own bottle, and share it.
 
-**Cigar lounge** — a lounge / club; someone else's space with its own expectations.
+**Cigar lounge**: shared room with house manners.
 
-**Band** — the paper ring on the cigar; the schools of removal differ — without dogma, without litter under the table.
+**Band**: the paper ring; remove it by local custom.
 
-**Nic-sick** — nicotine discomfort; water, air, measure, without shame.
+**Nic-sick**: nicotine discomfort; slow down and take water/air.
 
 ---
 
@@ -2406,7 +2428,7 @@ Let the copy-editor / editor pay particular attention to:
 - target ~100 pages small format: appendix already cut of layout-filler and mechanical essay stacks; prefer further appendix cuts over padding the core
 - keep history/technique facts cautious
 - read chapters 1, 2, 16, 17, 21 aloud for cadence before locking print
-- **EN is the frozen source of truth** after the freeze line at the top of this file; do not parallel-edit the HR draft — Phase 2 is a literary translation from EN
+- **EN is now the active source draft** for further writing; treat the HR manuscript as a downstream translation/reference, not the place for new development
 - proposal, market comps, and platform stats stay out of the book body (see `docs/bonton/research/notebooklm-grill/5017a44b-PROPOSAL-NOTES.md`)
 - **Handbook craft:** each core chapter one job; vignettes And–But–Therefore with a concrete beat where the page feels abstract; no brand rankings; no medical advice; no AI fluff
 
