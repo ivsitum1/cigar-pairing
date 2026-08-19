@@ -552,7 +552,7 @@ export function CatalogPage({
         cigarInRegion(c, market) &&
         matchesSearch(
           `${brandSearchHaystack(c.brand)} ${brandDisplayName(c.brand, market)} ${c.line} ${c.vitola} ${c.wrapper} ${c.country} ${(c.vitolas ?? [])
-            .map((v) => v.name)
+            .map((v) => [v.name, v.shape, v.format].filter(Boolean).join(" "))
             .join(" ")}`,
           q,
         ) &&

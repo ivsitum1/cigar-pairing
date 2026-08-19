@@ -51,8 +51,8 @@ export const SHOPS: Shop[] = [
     search: () => "https://www.branimir.hr/minglanje/trgovine/tobacco-petica",
     walkIn: true,
     note: {
-      hr: "Zagreb, Branimir centar — ducan bez web kataloga, kupnja na mjestu",
-      en: "Zagreb, Branimir centar — walk-in shop, no online catalogue",
+      hr: "Zagreb, Branimir centar — dobavlja od Havana Cigar Shopa, djelomična Havana ponuda. Dućan bez web kataloga, kupnja na mjestu.",
+      en: "Zagreb, Branimir Center — stocks a subset of Havana Cigar Shop. Walk-in, no online catalogue.",
     },
   },
   {

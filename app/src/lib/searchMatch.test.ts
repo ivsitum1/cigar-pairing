@@ -8,7 +8,7 @@ const cigars = cigarsData as Cigar[];
 /** Isti opis koji katalog sastavlja za popis cigara. */
 const hay = (c: Cigar) =>
   `${c.brand} ${c.line} ${c.vitola} ${c.wrapper} ${c.country} ${(c.vitolas ?? [])
-    .map((v) => v.name)
+    .map((v) => [v.name, v.shape, v.format].filter(Boolean).join(" "))
     .join(" ")}`;
 
 const findByQuery = (q: string) => cigars.filter((c) => matchesSearch(hay(c), q));
@@ -57,6 +57,20 @@ describe("pretraga nad stvarnim katalogom", () => {
     expect(hits.map((c) => c.id)).toContain("cig-oliva-serie-o");
     const serieO = cigars.find((c) => c.id === "cig-oliva-serie-o")!;
     expect(serieO.vitolas.map((v) => v.name)).toContain("Serie O Toro");
+  });
+
+  it("Oliva Serie G mali perfecto (Special G) se nalazi po obliku i dimenziji", () => {
+    const g = cigars.find((c) => c.id === "cig-oliva-serie-g")!;
+    const special = g.vitolas.find((v) => v.name === "Special G")!;
+    expect(special.shape).toBe("Perfecto");
+    expect(special.ring).toBe(48);
+    expect(special.lengthMM).toBe(95);
+    expect(findByQuery("oliva serie g perfecto").map((c) => c.id)).toContain(
+      "cig-oliva-serie-g",
+    );
+    expect(findByQuery("oliva special g 48").map((c) => c.id)).toContain(
+      "cig-oliva-serie-g",
+    );
   });
 
   it("upit s viškom riječi i dalje pogađa", () => {

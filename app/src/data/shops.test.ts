@@ -21,6 +21,15 @@ describe("Tobacco Petica (Branimir centar)", () => {
     expect(shop?.region).toBe("HR");
     expect(shop?.walkIn).toBe(true);
     expect(shop?.productHost).toBeUndefined();
+    expect(shop?.note.hr).toMatch(/Havana/);
+  });
+
+  it("Oliva Serie G Special G je ondje (Havana cijena, djelomična ponuda)", () => {
+    const g = byId("cig-oliva-serie-g");
+    expect(g.availabilityHR).toContain(TOBACCO_PETICA);
+    expect(g.availabilityHR).toContain("Havana Cigar Shop");
+    const special = g.vitolas.find((v) => v.name === "Special G");
+    expect(special?.priceEUR).toBe(7.05);
   });
 
   it("CAO Bones, Don Tomas Bundle i Clásico su ondje dostupni", () => {
@@ -58,6 +67,7 @@ describe("Tobacco Petica (Branimir centar)", () => {
       "cig-don-tomas-bundle",
       "cig-don-tomas-clasico",
       "cig-la-estrella-polar",
+      "cig-oliva-serie-g",
     ]) {
       const shops = cigarShopLinks(byId(id)).map((l) => l.shop);
       expect(shops, id).not.toContain(TOBACCO_PETICA);

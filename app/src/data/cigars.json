@@ -149315,8 +149315,8 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Karen Berger je marku pokrenula da nastavi ostavštinu svog supruga, poznatog kao Don Kiki; cigare se valjaju u Tabacalera Estelí u Nikaragvi. K-Fire je punija linija serije.",
-      "en": "Karen Berger started the brand to continue the legacy of her husband, known as Don Kiki; the cigars are rolled at Tabacalera Estelí in Nicaragua. K-Fire is the series' fuller line."
+      "hr": "K-Fire je punija linija Karen Berger: tamni meksički San Andrés maduro pokriva ekvadorski havanski vezivo i nikaragvansko punjenje. Začinjeno-slatka, s notama začina, zemlje i kave.",
+      "en": "K-Fire is Karen Berger's fuller line: a dark Mexican San Andrés maduro wrapper over an Ecuadorian Havana binder and Nicaraguan filler. Spicy-sweet, with spice, earth, and coffee."
     },
     "markets": [
       "HR",
@@ -150349,8 +150349,8 @@
       "Havana Cigar Shop"
     ],
     "notes": {
-      "hr": "Izdanje K by Karen Berger valjano kod AJ Fernandeza — nikaragvansko punjenje i punija, začinjenija interpretacija linije.",
-      "en": "The K by Karen Berger release rolled at AJ Fernandez — Nicaraguan filler and a fuller, spicier reading of the line."
+      "hr": "Za 25 godina u industriji Karen Berger se udružila s AJ Fernandezom. Connecticut Habano Broadleaf pokrov, meksički San Andrés vezivo i nikaragvansko punjenje — srednje do pune snage, kremasto s pikantnošću, kavom i slatkoćom.",
+      "en": "For 25 years in the trade Karen Berger joined AJ Fernandez. Connecticut Habano Broadleaf wrapper, Mexican San Andrés binder and Nicaraguan filler — medium to full, creamy with spice, coffee, and sweetness."
     },
     "markets": [
       "HR",
@@ -198984,7 +198984,7 @@
     "brand": "Oliva",
     "line": "Serie G",
     "vitola": "Special G",
-    "format": "49 x 95mm",
+    "format": "48 x 95mm",
     "country": "Nikaragva",
     "wrapper": "Cameroon",
     "strength": 2,
@@ -198995,16 +198995,17 @@
       "karamela",
       "cedar"
     ],
-    "smokeTimeMin": 45,
+    "smokeTimeMin": 40,
     "priceEUR": 7.05,
     "priceApprox": false,
     "availabilityHR": [
       "Havana Cigar Shop",
-      "The Humidor"
+      "The Humidor",
+      "Tobacco Petica (Branimir)"
     ],
     "notes": {
-      "hr": "Value legenda — blaga-srednja, kava i lješnjak, uvijek konzistentna.",
-      "en": "Value legend — mild-medium, coffee and hazelnut, always consistent."
+      "hr": "Value legenda — blaga-srednja, kava i lješnjak, uvijek konzistentna. Mali perfecto (3¾\" × 48). U HR i u Tobacco Petica (Branimir), po Havana cijeni.",
+      "en": "Value legend — mild-medium, coffee and hazelnut, always consistent. Small perfecto (3¾\" × 48). In Croatia also at Tobacco Petica (Branimir), at Havana's price."
     },
     "markets": [
       "HR",
@@ -199015,21 +199016,22 @@
     "vitolas": [
       {
         "name": "Special G",
-        "format": "49 x 95mm",
-        "smokeTimeMin": 45,
+        "format": "48 x 95mm",
+        "shape": "Perfecto",
+        "smokeTimeMin": 40,
         "priceEUR": 7.05,
         "url": "https://havana-cigar-shop.com/proizvod/oliva-serie-g-special-g-25/",
-        "ring": 49,
+        "ring": 48,
         "lengthMM": 95,
         "regionLinks": {
           "USA": {
             "shop": "Neptune Cigar",
-            "url": "https://www.neptunecigar.com/cigars/oliva-serie-g-figurado",
+            "url": "https://www.neptunecigar.com/cigars/oliva-serie-g-special-g",
             "inStock": true,
             "stockFetchedAt": "2026-08-17"
           }
         },
-        "fetchedAt": "2026-07-01"
+        "fetchedAt": "2026-08-18"
       },
       {
         "name": "Serie G Robusto",
@@ -199060,7 +199062,7 @@
         "shop": "Havana Cigar Shop",
         "url": "https://havana-cigar-shop.com/proizvod/oliva-serie-g-special-g-25/",
         "priceEUR": 7.05,
-        "fetchedAt": "2026-07-01"
+        "fetchedAt": "2026-08-18"
       },
       "EU": {
         "shop": "CigarWorld",
@@ -269528,9 +269530,7 @@
       "cedar",
       "zacini",
       "citrus",
-      "slatko",
-      "drvo",
-      "kremasto"
+      "slatko"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
