@@ -59,6 +59,11 @@ indeksima rangiranim po kvaliteti za sipping uz cigaru.
     kalibracije Excela, `--list` za pregled koraka); ručno nabrajanje ispod ostaje
     kao referenca
   - `scripts/excel-to-json.py` — regenerira rums.json + shopping.json iz lokalnog Excela
+  - `scripts/scrape-rumratings.py` + `scripts/compare-rumratings.py` — ocjene zajednice s
+    rumratings.com i usporedba s našim `qualityScore` (po bodu i po rangu); izvještaj
+    `scripts/output/rumratings_report.md` nosi i kandidate za katalog te izvorne citate
+    za Club/Bonton (**prerada obavezna, ne doslovno**). Runbook:
+    `docs/superpowers/plans/2026-08-20-rumratings-crosscheck.md`
   - `scripts/export-serve-corrections.py` + `scripts/fix-excel-data.py` — ispravni podaci za Excel Serviranje + Cigare
   - `scripts/scrape-whisky-catalog.py` — scrape allez.hr + ecuga.com → whisky_catalog_raw.json
   - `scripts/build-whisky-excel.py` — gradi Whisky_Kolekcija_Checklist.xlsx iz raw kataloga

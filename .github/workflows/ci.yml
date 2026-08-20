@@ -67,6 +67,9 @@ jobs:
       - name: Dojmovi iz prijave (izvlačenje bloka, prosjek više ocjenjivača)
         working-directory: app
         run: python scripts/test_taste_reports.py
+      - name: RumRatings parser i spajanje imena (12 YO ≠ 15 YO)
+        working-directory: app
+        run: python scripts/test_rumratings.py
       - name: List i punjenje iz dućanskih redaka (kubansko sjeme ≠ kubanski duhan)
         working-directory: app
         run: python scripts/test_merge_leaf_details.py
