@@ -24,12 +24,6 @@ import requests
 from bs4 import BeautifulSoup
 
 ROOT = Path(__file__).resolve().parent.parent
-SCRIPTS = Path(__file__).resolve().parent
-if str(SCRIPTS) not in sys.path:
-    sys.path.insert(0, str(SCRIPTS))
-
-from catalog_ask_queue import ask_item, save_ask_queue
-
 DATA = ROOT / "src" / "data"
 CIGARS_JSON = DATA / "cigars.json"
 ALIASES_JSON = DATA / "cigarIdAliases.json"
@@ -596,47 +590,15 @@ def main() -> None:
     touched: set[str] = set()
     added_vitolas = 0
     unmatched = 0
-    ask_rows: list[dict] = []
-    unknown_brand_seen: set[str] = set()
 
     for row in merged:
         if row["brand"] not in known_brands:
-            bkey = norm(row["brand"])
-            if bkey not in unknown_brand_seen:
-                unknown_brand_seen.add(bkey)
-                ask_rows.append(
-                    ask_item(
-                        kind="cigar-unknown-brand",
-                        question=(
-                            f"Marka {row['brand']!r} nije u katalogu. "
-                            "Dodati kao novu marku/liniju, ili mapirati na postojeću (alias)?"
-                        ),
-                        name=row["name"],
-                        shop=row.get("shop"),
-                        url=row.get("url"),
-                        extra={"brand": row["brand"], "price": row.get("price")},
-                    )
-                )
-            unmatched += 1
             continue
         cigar = find_or_create_cigar(
             cigars, row["brand"], row["name"], create=not args.match_only
         )
         if cigar is None:
             unmatched += 1
-            ask_rows.append(
-                ask_item(
-                    kind="cigar-unmatched-line",
-                    question=(
-                        "Poznata marka, ali linija se nije pouzdano spojila "
-                        "(--match-only ili nejasan naziv). Koja je to linija?"
-                    ),
-                    name=row["name"],
-                    shop=row.get("shop"),
-                    url=row.get("url"),
-                    extra={"brand": row["brand"], "price": row.get("price")},
-                )
-            )
             continue
         vit = make_vitola_entry(row)
         before = len(cigar.get("vitolas") or [])
@@ -654,13 +616,9 @@ def main() -> None:
 
     CIGARS_JSON.write_text(json.dumps(cigars, ensure_ascii=False, indent=1), encoding="utf-8")
     created = len(cigars) - before_count
-    if ask_rows:
-        ask_path = save_ask_queue(ask_rows, merge=True)
-        print(f"Ask queue: {len(ask_rows)} pitanja -> {ask_path}", flush=True)
     print(
         f"\nGotovo: +{added_vitolas} vitola, {len(touched)} linija ažurirano"
-        f", +{created} novih linija, {unmatched} bez matcha"
-        f", {len(unknown_brand_seen)} nepoznatih marki.",
+        f", +{created} novih linija, {unmatched} bez matcha.",
         flush=True,
     )
 

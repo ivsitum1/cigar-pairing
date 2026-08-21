@@ -34,37 +34,8 @@ SHOP_META = {
     "miva": {"label": "Miva", "host": "miva.com.hr"},
     "roto": {"label": "webshop.rotodinamic.hr", "host": "webshop.rotodinamic.hr"},
     "humidor": {"label": "humidor.hr", "host": "humidor.hr"},
-    "allez": {"label": "allez.hr", "host": "allez.hr"},
-    "ecuga": {"label": "ecuga.com", "host": "ecuga.com"},
     "coolitura": {"label": "Cooltura", "host": None},  # no catalog
 }
-
-# Category shelves used for product URL discovery (not shown as buy links).
-ALLEZ_LISTS = [
-    ("https://allez.hr/shop/rum4", "rum"),
-    ("https://allez.hr/shop/whiskey", "whisky"),
-    ("https://allez.hr/shop/gin1", "gin"),
-    ("https://allez.hr/shop/cognac-calvados-armagnac", "brandy"),
-    ("https://allez.hr/shop/tequila-mezcal", "tequila"),
-    ("https://allez.hr/shop/absinthe-brandy-grappa-sake", "digestif"),
-    # "svi-proizvodi" skipped: duplicates dedicated shelves and slows scrape (~170 pages)
-]
-
-ECUGA_HTML_LISTS = [
-    ("https://ecuga.com/katalog/rum", "rum"),
-    ("https://ecuga.com/katalog/whisky", "whisky"),
-    ("https://ecuga.com/katalog/gin", "gin"),
-    ("https://ecuga.com/katalog/spirits-and-liqueurs", "spirits"),
-]
-
-# Saleor storefront is SPA — HTML often has zero /proizvod/ cards. Playwright
-# intercepts the GraphQL product lists the browser already loads.
-ECUGA_PLAYWRIGHT_PAGES = [
-    ("https://ecuga.com/katalog/rum", "rum"),
-    ("https://ecuga.com/katalog/whisky", "whisky"),
-    ("https://ecuga.com/katalog/gin", "gin"),
-    ("https://ecuga.com/katalog/spirits-and-liqueurs", "spirits"),
-]
 
 TIPSY_CATEGORIES = [
     "https://tipsy.hr/zestice/whiskey-zestice/",
@@ -429,259 +400,6 @@ def scrape_humidor() -> list[dict]:
     return kept
 
 
-def allez_page_items(html: str, category: str) -> list[dict]:
-    """Parse allez.hr product grid (same markup as tequila scrape)."""
-    items: list[dict] = []
-    parts = html.split('class="product-image"')
-    for part in parts[1:]:
-        href_m = re.search(r'<a href="([^"]+)"', part)
-        alt_m = re.search(r'alt="([^"]+)"', part)
-        if not href_m or not alt_m:
-            continue
-        href = href_m.group(1)
-        if not href.startswith("http"):
-            href = "https://allez.hr" + href
-        if "/shop/svi-proizvodi/" not in href and "/shop/" not in href:
-            continue
-        # category shelves themselves are not products
-        if href.rstrip("/").count("/") < 5:
-            continue
-        name = BeautifulSoup(alt_m.group(1), "html.parser").get_text(strip=True)
-        if not name or MINI_RE.search(name):
-            continue
-        price_m = re.search(
-            r'class="product-price"[^>]*>\s*([\d]{1,4}[.,][\d]{2})\s*€',
-            part,
-        )
-        if not price_m:
-            price_m = re.search(r"([\d]{1,4}[.,][\d]{2})\s*€", part[:8000])
-        price = float(price_m.group(1).replace(",", ".")) if price_m else None
-        items.append(
-            {
-                "shop": "allez",
-                "shopLabel": SHOP_META["allez"]["label"],
-                "name": name,
-                "price_eur": price,
-                "url": href.split("?")[0],
-                "category": category,
-            }
-        )
-    return items
-
-
-def allez_max_page(html: str, base_path: str) -> int:
-    pages = [int(p) for p in re.findall(rf"{re.escape(base_path)}\?page=(\d+)", html)]
-    return max(pages) if pages else 1
-
-
-def scrape_allez() -> list[dict]:
-    print("allez.hr …")
-    out: list[dict] = []
-    seen: set[str] = set()
-    for base_url, category in ALLEZ_LISTS:
-        base_path = base_url.replace("https://allez.hr", "")
-        try:
-            first = fetch(base_url)
-        except urllib.error.HTTPError as e:
-            print(f"  skip {base_url}: {e}")
-            continue
-        max_page = allez_max_page(first, base_path)
-        for page in range(1, max_page + 1):
-            url = base_url if page == 1 else f"{base_url}?page={page}"
-            html = first if page == 1 else fetch(url)
-            for it in allez_page_items(html, category):
-                if it["url"] in seen:
-                    continue
-                seen.add(it["url"])
-                out.append(it)
-            time.sleep(0.3)
-        print(f"  {category} -> {len(seen)} unique so far ({max_page} pages)")
-    print(f"  allez total {len(out)}")
-    return out
-
-
-def scrape_ecuga_html() -> list[dict]:
-    """SSR/static product cards when present (often empty on Saleor SPA pages)."""
-    out: list[dict] = []
-    seen: set[str] = set()
-    for base_url, category in ECUGA_HTML_LISTS:
-        page = 1
-        empty_streak = 0
-        while page <= 60:
-            url = base_url if page == 1 else f"{base_url}?page={page}"
-            try:
-                html = fetch(url)
-            except urllib.error.HTTPError:
-                break
-            soup = BeautifulSoup(html, "html.parser")
-            batch = 0
-            for a in soup.select('a[href*="/proizvod/"]'):
-                href = a.get("href") or ""
-                if href.startswith("/"):
-                    href = urljoin("https://ecuga.com", href)
-                href = href.split("?")[0].rstrip("/")
-                if "/proizvod/" not in href or href in seen:
-                    continue
-                name = a.get_text(" ", strip=True) or (a.get("aria-label") or "").strip()
-                if not name or len(name) < 3 or MINI_RE.search(name):
-                    continue
-                parent = a.find_parent(["article", "li", "div"])
-                price = None
-                if parent is not None:
-                    price = parse_price(parent.get_text(" ", strip=True))
-                seen.add(href)
-                out.append(
-                    {
-                        "shop": "ecuga",
-                        "shopLabel": SHOP_META["ecuga"]["label"],
-                        "name": name,
-                        "price_eur": price,
-                        "url": href,
-                        "category": category,
-                    }
-                )
-                batch += 1
-            if batch == 0:
-                empty_streak += 1
-                if empty_streak >= 2:
-                    break
-            else:
-                empty_streak = 0
-            page += 1
-            time.sleep(0.35)
-        print(f"  html {category} -> {len(seen)} unique so far")
-    return out
-
-
-def scrape_ecuga_playwright() -> list[dict]:
-    """Capture Saleor GraphQL product edges while scrolling category pages."""
-    from playwright.sync_api import sync_playwright
-
-    print("  ecuga Playwright + GraphQL …")
-    out: list[dict] = []
-    seen_slugs: set[str] = set()
-    # (category_hint, products payload)
-    captured: list[tuple[str, dict]] = []
-    current_cat = {"value": "unknown"}
-
-    def on_response(response) -> None:
-        if "graphql" not in response.url or response.status != 200:
-            return
-        try:
-            body = response.json()
-        except Exception:
-            return
-        products = (body.get("data") or {}).get("products")
-        if products and products.get("edges"):
-            captured.append((current_cat["value"], products))
-
-    with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
-        page = browser.new_page()
-        page.on("response", on_response)
-        page.goto("https://ecuga.com/katalog/rum", wait_until="domcontentloaded", timeout=60000)
-        for sel in ['button:has-text("Dopusti sve")', 'button:has-text("Dopusti selektirane")']:
-            try:
-                page.locator(sel).first.click(timeout=4000)
-                break
-            except Exception:
-                pass
-
-        for url, category in ECUGA_PLAYWRIGHT_PAGES:
-            current_cat["value"] = category
-            before = len(captured)
-            try:
-                page.goto(url, wait_until="networkidle", timeout=90000)
-            except Exception:
-                try:
-                    page.goto(url, wait_until="domcontentloaded", timeout=60000)
-                except Exception as exc:
-                    print(f"  skip {url}: {exc}")
-                    continue
-            page.wait_for_timeout(2500)
-            stagnant = 0
-            last_edges = 0
-            for _ in range(24):
-                page.mouse.wheel(0, 4000)
-                page.wait_for_timeout(900)
-                # Saleor often exposes a load-more control
-                for sel in (
-                    'button:has-text("Učitaj")',
-                    'button:has-text("Load more")',
-                    'button:has-text("Prikaži više")',
-                    '[data-test="loadMoreProducts"]',
-                ):
-                    try:
-                        loc = page.locator(sel).first
-                        if loc.is_visible(timeout=300):
-                            loc.click(timeout=2000)
-                            page.wait_for_timeout(1200)
-                    except Exception:
-                        pass
-                edge_n = sum(
-                    len((b.get("edges") or []))
-                    for _, b in captured[before:]
-                )
-                if edge_n <= last_edges:
-                    stagnant += 1
-                    if stagnant >= 4:
-                        break
-                else:
-                    stagnant = 0
-                    last_edges = edge_n
-            cat_count = 0
-            for cat_hint, batch in captured[before:]:
-                for edge in batch.get("edges") or []:
-                    node = edge.get("node") or {}
-                    slug_p = node.get("slug") or ""
-                    if not slug_p or slug_p in seen_slugs:
-                        continue
-                    name = (node.get("name") or "").strip()
-                    if not name or MINI_RE.search(name):
-                        continue
-                    seen_slugs.add(slug_p)
-                    pricing = ((node.get("pricing") or {}).get("priceRange") or {}).get("start") or {}
-                    gross = pricing.get("gross") or {}
-                    amount = gross.get("amount")
-                    out.append(
-                        {
-                            "shop": "ecuga",
-                            "shopLabel": SHOP_META["ecuga"]["label"],
-                            "name": name,
-                            "price_eur": float(amount) if amount is not None else None,
-                            "url": f"https://ecuga.com/proizvod/{slug_p}",
-                            "category": cat_hint or category,
-                        }
-                    )
-                    cat_count += 1
-            print(f"  pw {category} -> {cat_count}")
-        browser.close()
-    return out
-
-
-def scrape_ecuga() -> list[dict]:
-    """Ecuga katalog: HTML first, Playwright GraphQL when shelves are empty."""
-    print("ecuga.com …")
-    html_items = scrape_ecuga_html()
-    by_cat: dict[str, int] = {}
-    for it in html_items:
-        by_cat[it.get("category") or ""] = by_cat.get(it.get("category") or "", 0) + 1
-    need_pw = by_cat.get("rum", 0) < 5 or by_cat.get("whisky", 0) < 5
-    if need_pw:
-        try:
-            pw_items = scrape_ecuga_playwright()
-        except Exception as exc:
-            print(f"  WARNING: ecuga Playwright failed: {exc}")
-            pw_items = []
-        seen = {it["url"] for it in html_items}
-        for it in pw_items:
-            if it["url"] not in seen:
-                seen.add(it["url"])
-                html_items.append(it)
-    print(f"  ecuga total {len(html_items)}")
-    return html_items
-
-
 def scrape_tipsy() -> list[dict]:
     print("tipsy.hr …")
     # Prefer Store API for whisky/rum; HTML for other cats
@@ -747,8 +465,8 @@ def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument(
         "--shops",
-        default="tipsy,cugaklik,miva,roto,humidor,allez,ecuga",
-        help="Comma list: tipsy,cugaklik,miva,roto,humidor,allez,ecuga,coolitura",
+        default="tipsy,cugaklik,miva,roto,humidor",
+        help="Comma list: tipsy,cugaklik,miva,roto,humidor,coolitura",
     )
     ap.add_argument(
         "--merge",
@@ -775,10 +493,6 @@ def main() -> None:
             all_items.extend(scrape_roto())
         elif shop == "humidor":
             all_items.extend(scrape_humidor())
-        elif shop == "allez":
-            all_items.extend(scrape_allez())
-        elif shop == "ecuga":
-            all_items.extend(scrape_ecuga())
         else:
             raise SystemExit(f"unknown shop: {shop}")
 

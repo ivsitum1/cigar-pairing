@@ -15,10 +15,6 @@ Merge rules (per cigar record):
     (same mapping used by merge-flavor-enrichment.py); applied when the
     record has no tags OR profileEstimated==True (heuristic stubs yield to
     shop text). Requires at least 2 tags — otherwise the text is too sparse
-  - notes: fill English from Neptune description when current notes are empty
-    or attribute-template / market stubs (same idea as cigarNote.ts strip).
-    Does not overwrite curated bilingual notes (profileEstimated==False with
-    real prose). Market rows keep profileEstimated True.
   - profileEstimated: set to False when tags come from Neptune shop text
     (except catalogSource=="market", which stays estimated)
 
@@ -29,7 +25,6 @@ Usage (run from app/):
 from __future__ import annotations
 
 import argparse
-import html as html_mod
 import importlib.util
 import json
 import re
@@ -101,64 +96,6 @@ MILD_HOUSE_BRANDS = {
 }
 
 DASH = "\u2014"
-
-NOTES_MAX = 480
-
-# Attribute-template notes — mirror app/src/lib/cigarNote.ts GENERATED_* patterns.
-_GENERATED_NOTE_RE = [
-    re.compile(r"—\s*(?:vrlo lagane|lagane|srednje|jače|pune)\s+snage", re.I),
-    re.compile(r"(?:pokrov|wrapper)\s*\([^)]*\);", re.I),
-    re.compile(r"^Okusi:", re.I),
-    re.compile(
-        r"—\s*(?:very mild|mild|medium|medium-full|full)\s+in strength",
-        re.I,
-    ),
-    re.compile(r"^Notes(?::| of)", re.I),
-    re.compile(r"^Aromatizirana$", re.I),
-    re.compile(r"^Flavoured/infused$", re.I),
-    re.compile(r"Heuristika\s*—", re.I),
-    re.compile(r"Automatski unos|Auto-added from", re.I),
-]
-
-
-def _clean_shop_prose(text: str) -> str:
-    text = html_mod.unescape(text or "")
-    text = re.sub(r"<[^>]+>", " ", text)
-    text = text.replace("\xa0", " ").replace("&nbsp;", " ")
-    text = re.sub(r"\s+", " ", text).strip()
-    return text
-
-
-def _truncate_prose(text: str, limit: int = NOTES_MAX) -> str:
-    if len(text) <= limit:
-        return text
-    cut = text[:limit]
-    if "." in cut:
-        return cut.rsplit(".", 1)[0].rstrip() + "."
-    if " " in cut:
-        return cut.rsplit(" ", 1)[0].rstrip() + "…"
-    return cut
-
-
-def is_generated_or_thin_note(text: str | None) -> bool:
-    """True when the note is empty, stub, or attribute-template prose."""
-    if not text or not str(text).strip():
-        return True
-    bare = str(text).strip()
-    if len(bare) < 40:
-        return True
-    return any(rx.search(bare) for rx in _GENERATED_NOTE_RE)
-
-
-def notes_need_shop_prose(cigar: dict) -> bool:
-    notes = cigar.get("notes") or {}
-    hr = notes.get("hr") if isinstance(notes, dict) else ""
-    en = notes.get("en") if isinstance(notes, dict) else ""
-    if cigar.get("profileEstimated") is False:
-        # Curated / previously confirmed — only fill if both sides are empty stubs.
-        return is_generated_or_thin_note(hr) and is_generated_or_thin_note(en)
-    return is_generated_or_thin_note(hr) and is_generated_or_thin_note(en)
-
 
 # English → Croatian country name translations (for Neptune-provided origin text)
 COUNTRY_HR: dict[str, str] = {
@@ -378,26 +315,6 @@ def merge_one(cigar: dict, raw: dict) -> bool:
                 changed = True
             # Market records are inherently shop-sourced, so their profile
             # remains "estimated" even after Neptune tag enrichment.
-            if cigar.get("catalogSource") != "market":
-                if cigar.get("profileEstimated") is not False:
-                    cigar["profileEstimated"] = False
-                    changed = True
-
-    # ── notes from Neptune description (real shop prose) ─────────────────────
-    # UI (cigarNote.ts) already hides attribute templates. Fill English from the
-    # shop blurb when both languages are empty/stub; HR falls back to EN in UI
-    # until a Croatian rewrite exists. Never overwrite curated bilingual notes.
-    if desc and notes_need_shop_prose(cigar):
-        prose = _truncate_prose(_clean_shop_prose(desc))
-        if len(prose) >= 80:
-            notes = dict(cigar.get("notes") or {})
-            before = (notes.get("hr"), notes.get("en"))
-            notes["en"] = prose
-            if is_generated_or_thin_note(notes.get("hr")):
-                notes["hr"] = ""
-            if (notes.get("hr"), notes.get("en")) != before:
-                cigar["notes"] = notes
-                changed = True
             if cigar.get("catalogSource") != "market":
                 if cigar.get("profileEstimated") is not False:
                     cigar["profileEstimated"] = False
