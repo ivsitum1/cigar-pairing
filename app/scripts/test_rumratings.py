@@ -86,9 +86,11 @@ LIVE_PAGE = """
 </body></html>
 """
 
+# Prefer a literal prefix (no bare `?` wildcard): Python 3.12 treats `?` as
+# one-char wildcard and would block `/rum/12-x`; 3.14 treats it more literally.
 ROBOTS_FIXTURE = """
 User-Agent: *
-Disallow: /rum?
+Disallow: /rum?sort=
 Disallow: /like/
 Disallow: /prices/
 crawl-delay: 30
