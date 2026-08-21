@@ -33,8 +33,8 @@ indeksima rangiranim po kvaliteti za sipping uz cigaru.
     Kombinacija cigare i pića izlazi samo iznad 80 % slaganja; kad u traženoj
     kategoriji nema pogotka, prijedlog prelazi na najbližu susjednu (whisky →
     brandy → rum → vino) prije nego što dira budžet ili oblik poklona
-  - `src/data/*.json` — indeksi (320 rum, 274 whiskyja, 90 brandy/grappa, 200 gin,
-    124 vina, 43 tequila, 50 kava, 13 digestiva, 3293 cigara);
+  - `src/data/*.json` — indeksi (323 rum, 274 whiskyja, 90 brandy/grappa, 200 gin,
+    124 vina, 26 tequila, 50 kava, 13 digestiva, 3293 cigara);
     build ih dijeli u odvojene chunkove (`data-cigars`, `data-whiskies`, `data-rums`…) radi
     paralelnog downloada i boljeg cachea
   - **ID-jevi se nikad ne brišu.** Kolekcija i dnevnik žive u `localStorage` i

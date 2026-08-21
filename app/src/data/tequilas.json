@@ -20,7 +20,7 @@
       "max": 199.0
     },
     "priceApprox": false,
-    "shopHR": "ecuga.com",
+    "shopHR": "allez.hr",
     "priceUrl": "https://allez.hr/shop/svi-proizvodi/don-julio-anejo-1942-40-07-l",
     "pairable": true,
     "serving": {
@@ -28,9 +28,12 @@
       "rocks": 2,
       "best": "Cisto (snifter)"
     },
-    "cigarHint": null,
+    "cigarHint": {
+      "hr": "Gusto, desertno i polirano tijelo traži sporu punu cigaru; držite format dulji, a nikako agresivan nikotinski udar.",
+      "en": "Dense, dessert-leaning, polished body wants a slow full cigar; keep the format longer, never an aggressive nicotine hit."
+    },
     "notes": {
-      "hr": "Extra añejo referent — gusto, desertno; maduro/oscuro, snifter.",
+      "hr": "Referentni ultra-premium siping — gusto, slatko hrastovo tijelo. Traži punu, sporu cigaru; ne uz gin-stil botaniku.",
       "en": "A reference ultra-premium sipper — dense, sweet oak body. Wants a full, slow cigar; not gin-style botanicals."
     },
     "profileEstimated": false
@@ -56,7 +59,7 @@
       "max": 69.0
     },
     "priceApprox": false,
-    "shopHR": "ecuga.com",
+    "shopHR": "allez.hr",
     "priceUrl": "https://allez.hr/shop/svi-proizvodi/don-julio-70-tequila-crystal-claro-anejo-70th-anniversary-limited-edition-35-vol-07l-u-poklon-kutiji",
     "pairable": true,
     "serving": {
@@ -64,10 +67,13 @@
       "rocks": 2,
       "best": "Cisto (snifter)"
     },
-    "cigarHint": null,
+    "cigarHint": {
+      "hr": "Hrast, kakao i karamela traže srednje punu do punu cigaru; preslatki maduro lako preuzme večer pa ga držite pod kontrolom.",
+      "en": "Oak, cocoa and caramel want a medium-full to full cigar; a sugary maduro easily takes over, so keep it in check."
+    },
     "notes": {
-      "hr": "Vanilija i hrast; maduro ga dobro nosi.",
-      "en": "A sipping añejo — oak and cocoa carry maduro and fuller Habano profiles."
+      "hr": "Sipping añejo — hrast, vanilija i kakao nose maduro i puniji Habano. Sparivanje radi kad cigara ostane suha u finišu.",
+      "en": "A sipping añejo — oak, vanilla and cocoa carry maduro and a fuller Habano. The match holds when the cigar stays dry in the finish."
     },
     "profileEstimated": false
   },
@@ -92,7 +98,7 @@
       "max": 50.0
     },
     "priceApprox": false,
-    "shopHR": "ecuga.com",
+    "shopHR": "allez.hr",
     "priceUrl": "https://allez.hr/shop/svi-proizvodi/don-julio-tequila-blanco-100-agave-38-vol-07l-u-poklon-kutiji",
     "pairable": true,
     "serving": {
@@ -100,9 +106,12 @@
       "rocks": 2,
       "best": "Cisto / lagano ohlađeno"
     },
-    "cigarHint": null,
+    "cigarHint": {
+      "hr": "Svježa agava i citrus drže Connecticut ili kraću Habano cigaru; papar u listu i papar u čaši pojačavaju se bez sudara.",
+      "en": "Connecticut or a mild Habano — clean agave and citrus suit a light to medium cigar; leave a heavy maduro for another evening."
+    },
     "notes": {
-      "hr": "Referentni sipping blanco — čista agava i citrus uz laganu do srednju cigaru.",
+      "hr": "Referentni sipping blanco — čista agava i citrus. Uz laganu do srednju cigaru, ne uz maduro bombu.",
       "en": "A reference sipping blanco — clean agave and citrus. With a light to medium cigar, not a maduro bomb."
     },
     "profileEstimated": false
@@ -128,7 +137,7 @@
       "max": 65.0
     },
     "priceApprox": false,
-    "shopHR": "ecuga.com",
+    "shopHR": "allez.hr",
     "priceUrl": "https://allez.hr/shop/svi-proizvodi/don-julio-tequila-reposado-100-agave-38-vol-07l-u-poklon-kutiji",
     "pairable": true,
     "serving": {
@@ -136,9 +145,12 @@
       "rocks": 2,
       "best": "Cisto ili velika kocka leda"
     },
-    "cigarHint": null,
+    "cigarHint": {
+      "hr": "Agava još vodi riječ, ali hrast i vanilija već nose srednju Habano cigaru; drugi dim dolazi mekše nego uz čist blanco.",
+      "en": "Agave still leads, but oak and vanilla already carry a medium Habano; the second puff arrives softer than with a straight blanco."
+    },
     "notes": {
-      "hr": "Agava + hrast; uravnotežen uz Habano srednje snage.",
+      "hr": "Most između agave i hrasta — klasičan spoj sa srednjom Habano / natural cigarom.",
       "en": "A bridge between agave and oak — a classic match with a medium Habano / natural cigar."
     },
     "profileEstimated": false
@@ -172,10 +184,13 @@
       "rocks": 2,
       "best": "Cisto (snifter)"
     },
-    "cigarHint": null,
+    "cigarHint": {
+      "hr": "Habano / maduro — vanilija i hrast. Klasični añejo traži srednje punu cigaru koja drži hrast bez prevelike slatkoće.",
+      "en": "Habano / maduro — vanilla and oak. A classic añejo wants a medium-full cigar that holds oak without too much sweetness."
+    },
     "notes": {
-      "hr": "Añejo snaga uz maduro.",
-      "en": ""
+      "hr": "Klasični añejo s više hrasta i začina; najbolje ide uz srednje punu cigaru koja ne gura previše slatkoće.",
+      "en": "A classic anejo with more oak and spice; best with a medium-full cigar that does not push too much sweetness."
     },
     "profileEstimated": true
   },
@@ -208,9 +223,12 @@
       "rocks": 2,
       "best": "Cisto ili velika kocka leda"
     },
-    "cigarHint": null,
+    "cigarHint": {
+      "hr": "Agava još ostaje živa, ali hrast i vanilija već nose srednju cigaru; pustite da drugi dim dođe nakon prvog gutljaja.",
+      "en": "Agave is still lively, but oak and vanilla already carry a medium cigar; let the second draw come after the first sip."
+    },
     "notes": {
-      "hr": "Klasični reposado; Habano most.",
+      "hr": "Duže odležavanje u bačvi nego mnogi reposado — više hrasta i začina, dobro uz srednje–punu cigaru.",
       "en": "Longer barrel rest than many reposados — more oak and spice, good with a medium–full cigar."
     },
     "profileEstimated": true
@@ -241,10 +259,13 @@
       "rocks": 2,
       "best": "Cisto (snifter)"
     },
-    "cigarHint": null,
+    "cigarHint": {
+      "hr": "Habano / maduro — vanilija i hrast. Hrast i kakao traže srednje punu cigaru koja ostaje suha u finišu.",
+      "en": "Habano / maduro — vanilla and oak. Oak and cocoa want a medium-full cigar that stays dry in the finish."
+    },
     "notes": {
-      "hr": "Código — moderni sipping uz Habano.",
-      "en": ""
+      "hr": "Añejo s više vanilije i hrasta nego svježine traži srednje punu cigaru koja drži ritam bez agresivne slatkoće.",
+      "en": "An anejo with more vanilla and oak than freshness, suited to a medium-full cigar that keeps its rhythm without aggressive sweetness."
     },
     "profileEstimated": true
   },
@@ -274,10 +295,13 @@
       "rocks": 2,
       "best": "Cisto (snifter)"
     },
-    "cigarHint": null,
+    "cigarHint": {
+      "hr": "Habano / maduro — vanilija i hrast. Hrast i kakao traže srednje punu cigaru koja ostaje suha u finišu.",
+      "en": "Habano / maduro — vanilla and oak. Oak and cocoa want a medium-full cigar that stays dry in the finish."
+    },
     "notes": {
-      "hr": "Código — moderni sipping uz Habano.",
-      "en": ""
+      "hr": "Jača bačva i viši alkohol traže puniju cigaru s paprom i drvom; sparivanje voli spor tempo i duži finiš.",
+      "en": "More barrel and higher alcohol call for a fuller cigar with pepper and wood; the pairing prefers a slow pace and a longer finish."
     },
     "profileEstimated": true
   },
@@ -310,9 +334,12 @@
       "rocks": 2,
       "best": "Cisto / lagano ohlađeno"
     },
-    "cigarHint": null,
+    "cigarHint": {
+      "hr": "Connecticut / blagi Habano — čista agava. Agava i citrus drže lakšu do srednju cigaru bez teškog završetka.",
+      "en": "Connecticut / mild Habano — clean agave. Agave and citrus hold a light to medium cigar without a heavy finish."
+    },
     "notes": {
-      "hr": "Zemljanija agava; dobro uz srednju cigaru.",
+      "hr": "Klasična herradurina agava — malo zemljanija i peprijastija od Don Julia. Dobro uz srednju cigaru.",
       "en": "Classic Herradura agave — a touch earthier and pepperier than Don Julio. Good with a medium cigar."
     },
     "status": "META",
@@ -344,10 +371,13 @@
       "rocks": 2,
       "best": "Cisto (snifter)"
     },
-    "cigarHint": null,
+    "cigarHint": {
+      "hr": "Habano / maduro — vanilija i hrast. Hrast i kakao traže srednje punu cigaru koja ostaje suha u finišu.",
+      "en": "Habano / maduro — vanilla and oak. Oak and cocoa want a medium-full cigar that stays dry in the finish."
+    },
     "notes": {
-      "hr": "Herradura — tradicionalni Jalisco profil.",
-      "en": ""
+      "hr": "Klasični añejo s hrastom i kakaom voli maduro ili puniji Habano; cigara neka bude zaobljena, ne gruba.",
+      "en": "A classic anejo of oak and cocoa that likes maduro or a fuller Habano; the cigar should stay rounded, not rough."
     },
     "profileEstimated": true
   },
@@ -377,10 +407,13 @@
       "rocks": 2,
       "best": "Cisto ili velika kocka leda"
     },
-    "cigarHint": null,
+    "cigarHint": {
+      "hr": "Habano / maduro — vanilija i hrast. Hrast i kakao traže srednje punu cigaru koja ostaje suha u finišu.",
+      "en": "Habano / maduro — vanilla and oak. Oak and cocoa want a medium-full cigar that stays dry in the finish."
+    },
     "notes": {
-      "hr": "Herradura — tradicionalni Jalisco profil.",
-      "en": ""
+      "hr": "Poliran, odležan profil s više hrasta nego svježine traži mirniju cigaru srednje do pune snage i uredan finiš.",
+      "en": "A polished, mature profile with more oak than freshness; it wants a calmer medium-full cigar and a tidy finish."
     },
     "profileEstimated": true
   },
@@ -405,7 +438,7 @@
       "max": 63.0
     },
     "priceApprox": false,
-    "shopHR": "ecuga.com",
+    "shopHR": "allez.hr",
     "priceUrl": "https://allez.hr/shop/svi-proizvodi/patron-tequila-reposado-40-vol-07l-u-poklon-kutiji",
     "pairable": true,
     "serving": {
@@ -413,10 +446,13 @@
       "rocks": 2,
       "best": "Cisto ili velika kocka leda"
     },
-    "cigarHint": null,
+    "cigarHint": {
+      "hr": "Mekši reposado s medom i vanilijom traži srednju cigaru; hrast se lijepo veže kad omot ne gura previše kakaa.",
+      "en": "A softer reposado with honey and vanilla wants a medium cigar; oak binds well when the wrapper does not push too much cocoa."
+    },
     "notes": {
-      "hr": "Reposado s blagim hrastom; Habano srednje.",
-      "en": "A softer reposado — vanilla and honey with a medium-bodied cigar."
+      "hr": "Mekši reposado s vanilijom i medom. Sparivanje sjeda uz srednje tijelo cigare, kad hrast ostane u pozadini a agava još diše.",
+      "en": "A softer reposado with vanilla and honey. It sits well with a medium-bodied cigar when oak stays behind and the agave still breathes."
     },
     "profileEstimated": false
   },
@@ -437,8 +473,8 @@
     ],
     "qualityScore": 8.0,
     "priceEUR": {
-     "min": 245.0,
-     "max": 245.0
+      "min": 245.0,
+      "max": 245.0
     },
     "priceApprox": false,
     "shopHR": "humidor.hr",
@@ -449,10 +485,13 @@
       "rocks": 2,
       "best": "Cisto ili velika kocka leda"
     },
-    "cigarHint": null,
+    "cigarHint": {
+      "hr": "Slađi reposado i meka vanilija traže srednju cigaru koja ostaje elegantna; cijena boce je visoka, ali sparivanje ne mora biti teško.",
+      "en": "A sweeter reposado and soft vanilla want a medium cigar that stays elegant; the bottle is pricey, but the match need not feel heavy."
+    },
     "notes": {
       "hr": "Prepoznatljiva keramika i slađi reposado profil — dio cijene je boca; uz srednju, ne prejake cigare.",
-      "en": "Distinctive ceramic and a sweeter reposado profile — part of the price is the bottle; with a medium, not overly strong cigar."
+      "en": "Distinctive ceramics and a sweeter reposado profile — part of the price is the bottle; with a medium, not overly strong cigar."
     },
     "profileEstimated": false
   },
@@ -485,12 +524,15 @@
       "rocks": 2,
       "best": "Cisto (snifter)"
     },
-    "cigarHint": null,
-    "notes": {
-      "hr": "Añejo — desertniji; maduro oprezno.",
-      "en": "A softer, dessert-leaning añejo — easy with a maduro without strain."
+    "cigarHint": {
+      "hr": "Mekši, desertniji añejo nosi maduro bez svađe, ali bolji je kada cigara zadrži papar i suhi kakao umjesto šećera.",
+      "en": "A softer, dessert-leaning añejo carries maduro without conflict, but works best when the cigar keeps pepper and dry cocoa instead of sugar."
     },
-    "profileEstimated": true
+    "notes": {
+      "hr": "Mekši, desertniji añejo. Lako ide uz maduro, ali bolji je kad cigara zadrži papar i suhi kakao umjesto šećera.",
+      "en": "A softer, dessert-leaning añejo. It goes easily with maduro, but it is better when the cigar keeps pepper and dry cocoa instead of sugar."
+    },
+    "profileEstimated": false
   },
   {
     "id": "tq-patron-silver",
@@ -521,10 +563,13 @@
       "rocks": 2,
       "best": "Cisto / lagano ohlađeno"
     },
-    "cigarHint": null,
+    "cigarHint": {
+      "hr": "Connecticut / blagi Habano — čista agava. Svježiji profil drži lakšu cigaru i življi, kraći format večeri.",
+      "en": "Connecticut / mild Habano — clean agave. A fresher profile suits a lighter cigar and a livelier, shorter evening format."
+    },
     "notes": {
-      "hr": "Patrón — premium sipping uz srednju cigaru.",
-      "en": "A smooth premium blanco — a good entry for pairing with Connecticut or a mild Habano."
+      "hr": "Glatki premium blanco — dobra ulazna točka za sparivanje s Connecticutom ili blagim Habano; slatkoća ostaje meka, ne gusta.",
+      "en": "A smooth premium blanco — a good entry with Connecticut or a mild Habano; the sweetness stays soft, not heavy."
     },
     "profileEstimated": false
   },
@@ -557,10 +602,13 @@
       "rocks": 2,
       "best": "Cisto (snifter)"
     },
-    "cigarHint": null,
+    "cigarHint": {
+      "hr": "Habano / maduro — vanilija i hrast. Hrast i kakao traže srednje punu cigaru koja ostaje suha u finišu.",
+      "en": "Habano / maduro — vanilla and oak. Oak and cocoa want a medium-full cigar that stays dry in the finish."
+    },
     "notes": {
-      "hr": "Patrón — premium sipping uz srednju cigaru.",
-      "en": "A smooth añejo with a nutty tone — with a medium–full evening cigar."
+      "hr": "Patrón Añejo odležava u malim bačvama bijelog hrasta. Hrast, vanilija i karamela nose srednje punu cigaru; držite finiš suhim.",
+      "en": "Patrón Añejo rests in small white-oak barrels. Oak, vanilla and caramel carry a medium-full cigar; keep the finish dry, not sugary."
     },
     "profileEstimated": false
   },
@@ -593,12 +641,15 @@
       "rocks": 2,
       "best": "Cisto ili velika kocka leda"
     },
-    "cigarHint": null,
-    "notes": {
-      "hr": "Reposado s vanilijom; Habano.",
-      "en": "A popular, smooth reposado — easy to drink with a medium evening cigar."
+    "cigarHint": {
+      "hr": "Agava još ostaje živa, ali hrast i vanilija već nose srednju cigaru; pustite da drugi dim dođe nakon prvog gutljaja.",
+      "en": "Agave is still lively, but oak and vanilla already carry a medium cigar; let the second puff come after the first sip."
     },
-    "profileEstimated": true
+    "notes": {
+      "hr": "Popularan, glatki reposado. Lako se pije uz srednju večernju cigaru; pustite da prvi dim sjedne prije drugog gutljaja.",
+      "en": "A popular, smooth reposado. It drinks easily with a medium evening cigar; let the first puff settle before the second sip."
+    },
+    "profileEstimated": false
   },
   {
     "id": "tq-casamigos-mezcal",
@@ -630,10 +681,13 @@
       "rocks": 1,
       "best": "Cisto, sobna temperatura"
     },
-    "cigarHint": null,
+    "cigarHint": {
+      "hr": "Corojo / oscura — dim uz dim. Gladak mezcal drži srednju cigaru; dim neka bude slojevit, ne sirupast.",
+      "en": "Corojo / oscuro — smoke with smoke. A smooth mezcal holds a medium cigar; keep the smoke layered, not syrupy."
+    },
     "notes": {
-      "hr": "Casamigos — gladak stil uz srednju cigaru.",
-      "en": ""
+      "hr": "Casamigos mezcal u glatkom stilu. Sparivanje drži srednju cigaru; dim neka bude slojevit uz zemlju i papar, ne sirupast.",
+      "en": "Casamigos mezcal in a smoother style. It holds a medium cigar; keep the smoke layered with earth and pepper, not syrupy."
     }
   },
   {
@@ -662,10 +716,13 @@
       "rocks": 2,
       "best": "Cisto ili velika kocka leda"
     },
-    "cigarHint": null,
+    "cigarHint": {
+      "hr": "Maduro / oscuro — gusta večer. Gusto tijelo voli sporu punu cigaru, ali ne i slatki višak.",
+      "en": "Maduro / oscuro — a dense evening. Full body likes a slow full cigar, not a sugary excess."
+    },
     "notes": {
-      "hr": "Sipping tequila (extra-anejo) — čisto uz cigaru po snazi odležavanja.",
-      "en": ""
+      "hr": "Dubok hrast, karamela i topliji finiš traže sporiju, puniju cigaru; slatkoća neka ostane u ravnoteži s paprom.",
+      "en": "Deep oak, caramel, and a warmer finish call for a slower, fuller cigar; keep the sweetness in balance with pepper."
     },
     "profileEstimated": true
   },
@@ -695,10 +752,13 @@
       "rocks": 2,
       "best": "Cisto (snifter)"
     },
-    "cigarHint": null,
+    "cigarHint": {
+      "hr": "Maduro / oscuro — gusta večer. Gusto tijelo voli sporu punu cigaru, ali ne i slatki višak.",
+      "en": "Maduro / oscuro — a dense evening. Full body likes a slow full cigar, not a sugary excess."
+    },
     "notes": {
-      "hr": "Sipping tequila (extra-anejo) — čisto uz cigaru po snazi odležavanja.",
-      "en": ""
+      "hr": "Odležani slojevi karamele i hrasta nose puniju večernju cigaru; birajte profil koji ne gubi korak u finišu.",
+      "en": "Mature layers of caramel and oak support a fuller evening cigar; choose a profile that keeps pace into the finish."
     },
     "profileEstimated": true
   },
@@ -728,10 +788,13 @@
       "rocks": 2,
       "best": "Cisto ili velika kocka leda"
     },
-    "cigarHint": null,
+    "cigarHint": {
+      "hr": "Maduro / oscuro — gusta večer. Gusto tijelo voli sporu punu cigaru, ali ne i slatki višak.",
+      "en": "Maduro / oscuro — a dense evening. Full body likes a slow full cigar, not a sugary excess."
+    },
     "notes": {
-      "hr": "Sipping tequila (extra-anejo) — čisto uz cigaru po snazi odležavanja.",
-      "en": ""
+      "hr": "Topliji extra añejo s desertnim tonom traži cigaru srednje pune snage, s kakaom i urednom zemljanom bazom.",
+      "en": "A warmer extra anejo with a dessert tone wants a medium-full cigar with cocoa and a tidy earthy base."
     },
     "profileEstimated": true
   },
@@ -761,10 +824,13 @@
       "rocks": 2,
       "best": "Cisto ili velika kocka leda"
     },
-    "cigarHint": null,
+    "cigarHint": {
+      "hr": "Maduro / oscuro — gusta večer. Gusto tijelo voli sporu punu cigaru, ali ne i slatki višak.",
+      "en": "Maduro / oscuro — a dense evening. Full body likes a slow full cigar, not a sugary excess."
+    },
     "notes": {
-      "hr": "Sipping tequila (extra-anejo) — čisto uz cigaru po snazi odležavanja.",
-      "en": ""
+      "hr": "Bogati extra añejo nosi karamelu, suho voće i hrast; ide uz puniju večernju cigaru, ne uz lagani Connecticut.",
+      "en": "A rich extra anejo of caramel, dried fruit, and oak; best with a fuller evening cigar, not a light Connecticut."
     },
     "profileEstimated": true
   },
@@ -794,10 +860,13 @@
       "rocks": 2,
       "best": "Cisto ili velika kocka leda"
     },
-    "cigarHint": null,
+    "cigarHint": {
+      "hr": "Maduro / oscuro — gusta večer. Gusto tijelo voli sporu punu cigaru, ali ne i slatki višak.",
+      "en": "Maduro / oscuro — a dense evening. Full body likes a slow full cigar, not a sugary excess."
+    },
     "notes": {
-      "hr": "Sipping tequila (extra-anejo) — čisto uz cigaru po snazi odležavanja.",
-      "en": ""
+      "hr": "Tamni, slađi extra añejo traži puniju cigaru i večernji ritam; najbolje radi kad papar ostane čišći od sladora.",
+      "en": "A darker, sweeter extra anejo that prefers a fuller cigar and an evening pace; it works best when the pepper stays cleaner than the sugar."
     },
     "profileEstimated": true
   },
@@ -827,10 +896,13 @@
       "rocks": 2,
       "best": "Cisto ili velika kocka leda"
     },
-    "cigarHint": null,
+    "cigarHint": {
+      "hr": "Maduro / oscuro — gusta večer. Gusto tijelo voli sporu punu cigaru, ali ne i slatki višak.",
+      "en": "Maduro / oscuro — a dense evening. Full body likes a slow full cigar, not a sugary excess."
+    },
     "notes": {
-      "hr": "Sipping tequila (extra-anejo) — čisto uz cigaru po snazi odležavanja.",
-      "en": ""
+      "hr": "Extra añejo s naglašenom bačvom i toplinom najbolje sjeda uz sporiji dim, kakao i tamniji omotač cigare.",
+      "en": "This extra anejo leans on barrel warmth and works best with a slower puff, cocoa, and a darker wrapper."
     },
     "profileEstimated": true
   },
@@ -863,13 +935,16 @@
       "rocks": 2,
       "best": "Cisto / lagano ohlađeno"
     },
-    "cigarHint": null,
+    "cigarHint": {
+      "hr": "Otvoren, pošten blanco nosi lakšu cigaru bez napora; citrus i papar rade najbolje kada je format kraći i življi.",
+      "en": "An open, honest blanco carries a lighter cigar without strain; citrus and pepper work best when the format is shorter and livelier."
+    },
     "notes": {
-      "hr": "Pristupačan 100% agave blanco — pošten ulaz za večer s lakšom cigarom.",
+      "hr": "Pristupačan 100% agave blanco — pošten ulaz za večer s lakšom cigarom. Citrus i papar rade kad format ostane kraći i življi.",
       "en": "An approachable 100% agave blanco — a fair entry for an evening with a lighter cigar."
     },
     "status": "META",
-    "profileEstimated": true
+    "profileEstimated": false
   },
   {
     "id": "tq-olmeca-altos-plata",
@@ -900,9 +975,12 @@
       "rocks": 2,
       "best": "Cisto / lagano ohlađeno"
     },
-    "cigarHint": null,
+    "cigarHint": {
+      "hr": "Connecticut / blagi Habano — čista agava. Svježiji profil drži lakšu cigaru i življi, kraći format večeri.",
+      "en": "Connecticut / mild Habano — clean agave. A fresher profile suits a lighter cigar and a livelier, shorter evening format."
+    },
     "notes": {
-      "hr": "Solidan value 100% agave; Connecticut.",
+      "hr": "Budžetni 100% agave — čistiji od mixto Cuervo linija; za lagano sparivanje ili margaritu uz kratku cigaru.",
       "en": "Budget 100% agave — cleaner than mixto Cuervo lines; for a light pairing or a margarita with a short cigar."
     },
     "status": "META",
