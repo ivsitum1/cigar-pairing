@@ -60,16 +60,16 @@
     },
     "qualityScore": 8,
     "priceEUR": {
-      "min": 20,
-      "max": 20
+      "min": 21.3,
+      "max": 21.3
     },
     "priceApprox": false,
-    "shopHR": "ecuga.com",
+    "shopHR": "Miva",
     "pairable": true,
     "serving": {
       "best": "Čisto"
     },
-    "priceUrl": "https://ecuga.com/proizvod/unicum-zwack",
+    "priceUrl": "https://www.miva.com.hr/asortiman/proizvod-2154-zwack-unicum",
     "notes": {
       "hr": "Mađarska ikona od 1790. — tamniji i gorkiji od Becherovke. Neat uz punu cigaru; tradicija kaže jedan gutljaj nakon jela.",
       "en": "Hungarian icon since 1790 — darker and more bitter than Becherovka. Neat with a full cigar; tradition calls for one sip after the meal."
@@ -172,10 +172,10 @@
     },
     "qualityScore": 8,
     "priceEUR": {
-      "min": 35,
-      "max": 45
+      "min": 22.0,
+      "max": 22.0
     },
-    "priceApprox": true,
+    "priceApprox": false,
     "shopHR": "allez.hr",
     "pairable": true,
     "serving": {
@@ -215,7 +215,7 @@
       "min": 13,
       "max": 15
     },
-    "priceApprox": true,
+    "priceApprox": false,
     "shopHR": "ecuga.com",
     "pairable": true,
     "serving": {
@@ -257,7 +257,7 @@
       "min": 55,
       "max": 65
     },
-    "priceApprox": true,
+    "priceApprox": false,
     "shopHR": "allez.hr",
     "pairable": true,
     "serving": {
@@ -330,7 +330,7 @@
       "min": 30,
       "max": 40
     },
-    "priceApprox": true,
+    "priceApprox": false,
     "shopHR": "allez.hr",
     "pairable": true,
     "serving": {
@@ -402,10 +402,10 @@
     },
     "qualityScore": 7,
     "priceEUR": {
-      "min": 25,
-      "max": 35
+      "min": 25.3,
+      "max": 25.3
     },
-    "priceApprox": true,
+    "priceApprox": false,
     "shopHR": "allez.hr",
     "pairable": true,
     "serving": {
@@ -439,8 +439,8 @@
     },
     "qualityScore": 7,
     "priceEUR": {
-      "min": 26,
-      "max": 26
+      "min": 26.0,
+      "max": 26.0
     },
     "priceApprox": false,
     "shopHR": "ecuga.com",
