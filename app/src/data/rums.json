@@ -1062,8 +1062,8 @@
     "additiveSource": "Proizvodjac dekl.",
     "qualityScore": 8.5,
     "priceEUR": {
-     "min": 58.0,
-     "max": 58.0
+      "min": 58.0,
+      "max": 58.0
     },
     "shopHR": "humidor.hr",
     "status": "META",
@@ -1698,8 +1698,8 @@
     "additiveSource": "Rhum Attitude obscuracija (nova vs. stara 21); sporiji efekt reformulacije zbog starosti blendova",
     "qualityScore": 8.5,
     "priceEUR": {
-     "min": 109.0,
-     "max": 109.0
+      "min": 109.0,
+      "max": 109.0
     },
     "shopHR": "humidor.hr",
     "status": null,
@@ -2191,8 +2191,8 @@
     "additiveSource": "Izvor: vrlo nizak (sherry, malo dosage)",
     "qualityScore": 7.5,
     "priceEUR": {
-     "min": 49.0,
-     "max": 49.0
+      "min": 49.0,
+      "max": 49.0
     },
     "shopHR": "humidor.hr",
     "status": "META",
@@ -3469,8 +3469,8 @@
     "additiveSource": "Systembolaget: slazen",
     "qualityScore": 7,
     "priceEUR": {
-     "min": 69.0,
-     "max": 69.0
+      "min": 69.0,
+      "max": 69.0
     },
     "shopHR": "humidor.hr",
     "status": null,
@@ -5286,8 +5286,8 @@
     "additiveSource": "Sugar list: doslazen",
     "qualityScore": 5,
     "priceEUR": {
-     "min": 45,
-     "max": 45
+      "min": 45,
+      "max": 45
     },
     "shopHR": "humidor.hr",
     "status": null,
@@ -6071,7 +6071,7 @@
   {
     "id": "rum-don-papa-7",
     "category": "rum",
-    "name": "Don Papa 7",
+    "name": "Don Papa 7 (Small Batch)",
     "style": "spiced",
     "region": "Filipini (Negros)",
     "abv": 40,
@@ -6092,8 +6092,8 @@
     "additiveSource": "Objavljeni lab/hidrometrijski testovi; Systembolaget",
     "qualityScore": 5.5,
     "priceEUR": {
-     "min": 47.5,
-     "max": 47.5
+      "min": 47.5,
+      "max": 47.5
     },
     "shopHR": "humidor.hr",
     "status": null,
@@ -8389,8 +8389,8 @@
       "best": "Čisto / kap vode"
     },
     "priceEUR": {
-     "min": 21.9,
-     "max": 21.9
+      "min": 21.9,
+      "max": 21.9
     },
     "shopHR": "humidor.hr",
     "status": null,
@@ -8561,8 +8561,8 @@
       "best": "Čisto / kap vode"
     },
     "priceEUR": {
-     "min": 135.0,
-     "max": 135.0
+      "min": 135.0,
+      "max": 135.0
     },
     "shopHR": "humidor.hr",
     "status": null,
@@ -14009,5 +14009,150 @@
       "hr": "Papalin Réunion 10 YO (50%) — Papalin linija (etiketa na Allezu). Stilski čist pure single; boja od bačve.",
       "en": "Papalin Réunion 10 YO (50%) — Papalin line (label on Allez). Style-wise clean pure single; colour from cask."
     }
+  },
+  {
+    "id": "rum-santa-teresa-1796",
+    "category": "rum",
+    "name": "Santa Teresa 1796",
+    "style": "venezuela",
+    "region": "Venezuela (solera)",
+    "abv": 40,
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "hrast",
+      "karamela",
+      "vanilija",
+      "suho-voce"
+    ],
+    "additiveStatus": "moderate",
+    "additiveDetail": {
+      "hr": "Solera; umjereno doslađen profil (stilska procjena)",
+      "en": "Solera; moderately sweetened profile (stylistic estimate)"
+    },
+    "additiveSource": "Stilska procjena — nije lab/hidrometar",
+    "qualityScore": 7.5,
+    "priceEUR": {
+      "min": 45,
+      "max": 55
+    },
+    "shopHR": "razno",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 3,
+      "highball": 1,
+      "cola": 0,
+      "best": "Čisto / velika kocka leda"
+    },
+    "cigarHint": {
+      "hr": "Most su suhi hrast i blaga karamela; radi uz srednju connecticut ili blagu maduro.",
+      "en": "The bridge is dry oak and soft caramel; works with a medium Connecticut or a mild maduro."
+    },
+    "priceUrl": null,
+    "notes": {
+      "hr": "Santa Teresa 1796 (40%) — venezuelanski solera s Hacienda Santa Teresa (Aragua). Suši je od tipičnih slatkih solera; hrast, karamela i suho voće. RumRatings ~7,5 uz stotine glasova.",
+      "en": "Santa Teresa 1796 (40%) — Venezuelan solera from Hacienda Santa Teresa (Aragua). Drier than typical sweet soleras: oak, caramel and dried fruit. RumRatings ~7.5 across hundreds of votes."
+    },
+    "profileEstimated": true,
+    "lineup": "Santa Teresa"
+  },
+  {
+    "id": "rum-zaya-gran-reserva-12",
+    "category": "rum",
+    "name": "Zaya Gran Reserva 12",
+    "style": "trinidad",
+    "region": "Trinidad i Tobago",
+    "abv": 40,
+    "body": 3,
+    "sweetness": 5,
+    "flavorTags": [
+      "karamela",
+      "vanilija",
+      "kakao"
+    ],
+    "additiveStatus": "sweetened",
+    "additiveDetail": {
+      "hr": "Jako doslađen dessert stil (stilska procjena / spirit drink)",
+      "en": "Heavily sweetened dessert style (stylistic estimate / spirit drink)"
+    },
+    "additiveSource": "Stilska procjena — nije lab/hidrometar",
+    "qualityScore": 5.5,
+    "priceEUR": {
+      "min": 35,
+      "max": 50
+    },
+    "shopHR": "razno",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 2,
+      "water": 1,
+      "rocks": 3,
+      "highball": 1,
+      "cola": 1,
+      "best": "Velika kocka leda"
+    },
+    "cigarHint": {
+      "hr": "Desertni most: karamela i čokolada; biraj blagu do srednju maduro ili connecticut s kremom.",
+      "en": "Dessert bridge: caramel and chocolate; pick a mild–medium maduro or a creamy Connecticut."
+    },
+    "priceUrl": null,
+    "notes": {
+      "hr": "Zaya Gran Reserva 12 (40%) — trinidadski blend poznat po jakoj slatkoći (vanilija, karamela, kakao). U EU često kao spirit drink. Ocjena unutar doslađenog stila, ne prema ocjeni zajednice koja voli slatko.",
+      "en": "Zaya Gran Reserva 12 (40%) — Trinidad blend known for heavy sweetness (vanilla, caramel, cocoa). Often labelled a spirit drink in the EU. Scored within the sweetened style, not to the community's sweet tooth."
+    },
+    "profileEstimated": true,
+    "lineup": "Zaya"
+  },
+  {
+    "id": "rum-planteray-barbados-5",
+    "category": "rum",
+    "name": "Plantation Barbados 5 YO",
+    "style": "barbados",
+    "region": "Barbados",
+    "abv": 40,
+    "body": 2,
+    "sweetness": 2,
+    "flavorTags": [
+      "tropsko-voce",
+      "vanilija",
+      "hrast"
+    ],
+    "additiveStatus": "moderate",
+    "additiveDetail": {
+      "hr": "Maison Ferrand linija; blago doziranje tipično za Grand Reserve (stilska procjena)",
+      "en": "Maison Ferrand line; light dosing typical of Grand Reserve (stylistic estimate)"
+    },
+    "additiveSource": "Stilska procjena — nije lab/hidrometar",
+    "qualityScore": 7.5,
+    "priceEUR": {
+      "min": 28,
+      "max": 38
+    },
+    "shopHR": "razno",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 2,
+      "water": 2,
+      "rocks": 2,
+      "highball": 2,
+      "cola": 1,
+      "best": "Čisto ili rocks"
+    },
+    "cigarHint": {
+      "hr": "Ulazni Barbados: tropsko voće i meki hrast; uz laganu do srednju connecticut ili mild maduro.",
+      "en": "Entry Barbados: tropical fruit and soft oak; with a light–medium Connecticut or mild maduro."
+    },
+    "priceUrl": null,
+    "notes": {
+      "hr": "Plantation/Planteray Barbados 5 YO (Grand Reserve, 40%) — ulazni odležani Barbados Maison Ferranda (West Indies Rum Distillery). Tropsko voće, vanilija, blagi hrast. Ime na etiketi može biti Plantation ili Planteray.",
+      "en": "Plantation/Planteray Barbados 5 YO (Grand Reserve, 40%) — Maison Ferrand's entry aged Barbados (West Indies Rum Distillery). Tropical fruit, vanilla, soft oak. Labels may still say Plantation or Planteray."
+    },
+    "profileEstimated": true,
+    "lineup": "Planteray"
   }
 ]

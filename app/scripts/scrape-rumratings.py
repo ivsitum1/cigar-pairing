@@ -121,6 +121,10 @@ def main() -> None:
                     help="'rums' fetches only bottles that look like ours")
     ap.add_argument("--discover", choices=["sitemap", "listing"], default="sitemap",
                     help="sitemap is the live catalogue; listing is a JS shell")
+    ap.add_argument("--url-file", default="",
+                    help="JSON list of {url} or plain URL lines — fetch these detail pages")
+    ap.add_argument("--merge", action="store_true",
+                    help="merge fetched records into existing rumratings_raw.json (by url)")
     ap.add_argument("--parse-only", action="store_true", help="use cached HTML only, no network")
     args = ap.parse_args()
 
@@ -131,6 +135,25 @@ def main() -> None:
         detail_pages = cached_detail_pages()
         print(f"parse-only: {len(detail_pages)} cached detail pages")
         pages = [(p.read_text("utf-8", "replace"), cache_url_from_path(p.name)) for p in detail_pages]
+    elif args.url_file:
+        path = Path(args.url_file)
+        text = path.read_text("utf-8")
+        if path.suffix.lower() == ".json":
+            data = json.loads(text)
+            urls = [row["url"] if isinstance(row, dict) else row for row in data]
+        else:
+            urls = [ln.strip() for ln in text.splitlines() if ln.strip() and not ln.startswith("#")]
+        if args.limit:
+            urls = urls[: args.limit]
+        print(f"url-file: {len(urls)} detail pages from {path.name}")
+        pages = []
+        for i, url in enumerate(urls, 1):
+            html = fetcher.get(url)
+            if html is None:
+                continue
+            pages.append((html, url))
+            if i % 10 == 0 or i == len(urls):
+                print(f"  {i}/{len(urls)} fetched")
     else:
         if args.discover == "sitemap":
             urls = load_sitemap(offline=False)
@@ -165,7 +188,20 @@ def main() -> None:
             misses.append({"url": url, "cache": str(fetcher.cache_path(url))})
 
     records.sort(key=lambda r: (-(r["rating"] or 0), -(r["votes"] or 0)))
+    if args.merge and RAW.exists():
+        by_url = {r["url"]: r for r in json.loads(RAW.read_text("utf-8"))}
+        for rec in records:
+            by_url[rec["url"]] = rec
+        records = sorted(by_url.values(), key=lambda r: (-(r["rating"] or 0), -(r["votes"] or 0)))
+        print(f"merged → {len(records)} total records")
     RAW.write_text(json.dumps(records, ensure_ascii=False, indent=1) + "\n", "utf-8")
+    if args.merge and MISSES.exists():
+        old_miss = {m["url"]: m for m in json.loads(MISSES.read_text("utf-8"))}
+        for m in misses:
+            old_miss[m["url"]] = m
+        # Drop misses that we successfully parsed this run.
+        ok = {r["url"] for r in records}
+        misses = [m for u, m in old_miss.items() if u not in ok]
     MISSES.write_text(json.dumps(misses, ensure_ascii=False, indent=1) + "\n", "utf-8")
 
     with_reviews = sum(1 for r in records if r["reviews"])

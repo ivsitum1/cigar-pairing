@@ -7,13 +7,13 @@ razlika u *rangu* unutar svake liste.
 
 ## 1. Koliko se poklapamo
 
-- Boca u našem indeksu: **320**
-- Boca s RumRatingsa (≥ 25 glasova): **103** od 160 skinutih
-- Spojeno po imenu: **102**
-- Spearman (poklapanje redoslijeda): **0.518**
-- Prosječna apsolutna razlika: **0.93** boda; sustavni pomak (mi − oni): **-0.18**
-- Unutar ±0,5 boda: **36** / 102
-- Isti rang (±20 percentila): **52** / 102
+- Boca u našem indeksu: **323**
+- Boca s RumRatingsa (≥ 25 glasova): **107** od 165 skinutih
+- Spojeno po imenu: **106**
+- Spearman (poklapanje redoslijeda): **0.521**
+- Prosječna apsolutna razlika: **0.92** boda; sustavni pomak (mi − oni): **-0.19**
+- Unutar ±0,5 boda: **39** / 106
+- Isti rang (±20 percentila): **56** / 106
 
 ## 2. Gdje se ne slažemo
 
@@ -44,6 +44,7 @@ razlika u *rangu* unutar svake liste.
 | A.H. Riise 1888 Copenhagen Gold Medal | 5.5 | 7.3 | -1.80 | 127 |
 | A.H. Riise Black Barrel Navy Spiced | 5 | 6.7 | -1.70 | 64 |
 | Chairman's Reserve Spiced Original | 5.5 | 7.2 | -1.70 | 220 |
+| Zaya Gran Reserva 12 | 5.5 | 7.2 | -1.70 | 631 |
 | A.H. Riise Non Plus Ultra Very Rare | 6.2 | 7.8 | -1.60 | 210 |
 | A.H. Riise Royal Danish Navy Naval Cadet | 5.5 | 7.1 | -1.60 | 29 |
 | A.H. Riise XO Reserve Christmas Limited | 5.5 | 7.1 | -1.60 | 88 |
@@ -70,30 +71,30 @@ razlika u *rangu* unutar svake liste.
 | Boca | naš percentil | njihov | Δ |
 | --- | ---: | ---: | ---: |
 | Ron Centenario 30 | 0.17 | 0.99 | -0.82 |
-| Ron Centenario 1985 (20 YO) | 0.10 | 0.87 | -0.77 |
-| A.H. Riise Non Plus Ultra Black Edition | 0.28 | 0.90 | -0.62 |
-| A.H. Riise XO Reserve 175 Years Anniversary | 0.17 | 0.73 | -0.56 |
+| Ron Centenario 1985 (20 YO) | 0.09 | 0.87 | -0.78 |
+| A.H. Riise Non Plus Ultra Black Edition | 0.28 | 0.91 | -0.63 |
+| A.H. Riise XO Reserve 175 Years Anniversary | 0.17 | 0.74 | -0.57 |
 | Saint James XO (agricole) | 0.79 | 0.25 | +0.54 |
-| Clément VSOP (agricole) | 0.83 | 0.32 | +0.51 |
-| Zacapa Centenario 23 | 0.42 | 0.93 | -0.51 |
-| A.H. Riise Non Plus Ultra Very Rare | 0.28 | 0.77 | -0.49 |
+| Clément VSOP (agricole) | 0.83 | 0.32 | +0.52 |
+| Zacapa Centenario 23 | 0.41 | 0.93 | -0.52 |
+| A.H. Riise Non Plus Ultra Very Rare | 0.28 | 0.78 | -0.50 |
 | A.H. Riise Family Reserve Solera 1838 | 0.17 | 0.65 | -0.48 |
 | A.H. Riise XO Royal Reserve Kong Haakon | 0.17 | 0.65 | -0.48 |
-| A.H. Riise Non Plus Ultra Ambre d'Or | 0.25 | 0.70 | -0.45 |
-| Ron Millonario 15 Reserva Especial | 0.33 | 0.77 | -0.45 |
-| A.H. Riise 1888 Copenhagen Gold Medal | 0.17 | 0.60 | -0.44 |
-| Havana Club 7 Anos | 0.68 | 0.25 | +0.43 |
-| Chairman's Reserve Spiced Original | 0.17 | 0.57 | -0.40 |
-| Opthimus 25 Malt Whisky Finish | 0.61 | 1.00 | -0.38 |
-| Zafra Master Reserve 21 | 0.54 | 0.90 | -0.36 |
-| A.H. Riise Royal Danish Navy Naval Cadet | 0.17 | 0.53 | -0.36 |
-| A.H. Riise XO Reserve Christmas Limited | 0.17 | 0.53 | -0.36 |
-| Kirk and Sweeney 18 Reserva | 0.42 | 0.08 | +0.33 |
+| Ron Millonario 15 Reserva Especial | 0.33 | 0.78 | -0.46 |
+| A.H. Riise Non Plus Ultra Ambre d'Or | 0.25 | 0.71 | -0.46 |
+| A.H. Riise 1888 Copenhagen Gold Medal | 0.17 | 0.61 | -0.44 |
+| Havana Club 7 Anos | 0.69 | 0.25 | +0.43 |
+| Chairman's Reserve Spiced Original | 0.17 | 0.57 | -0.41 |
+| Zaya Gran Reserva 12 | 0.17 | 0.57 | -0.41 |
+| Opthimus 25 Malt Whisky Finish | 0.62 | 1.00 | -0.38 |
+| Zafra Master Reserve 21 | 0.54 | 0.91 | -0.37 |
+| A.H. Riise Royal Danish Navy Naval Cadet | 0.17 | 0.52 | -0.36 |
+| A.H. Riise XO Reserve Christmas Limited | 0.17 | 0.52 | -0.36 |
+| Kirk and Sweeney 18 Reserva | 0.41 | 0.09 | +0.33 |
 | Clément Select Barrel | 0.54 | 0.21 | +0.33 |
 | Barcelo Imperial Onyx | 0.33 | 0.65 | -0.32 |
-| A.H. Riise Royal Danish Navy | 0.17 | 0.49 | -0.32 |
-| A.H. Riise XO Reserve Superior Cask | 0.17 | 0.49 | -0.32 |
-| Eminente Reserva 7 | 0.83 | 0.53 | +0.30 |
+| Eminente Reserva 7 | 0.83 | 0.52 | +0.31 |
+| A.H. Riise Royal Danish Navy | 0.17 | 0.48 | -0.31 |
 
 ## 3. Boce koje nemamo, a zajednica ih drži visoko
 
@@ -103,7 +104,7 @@ razlika u *rangu* unutar svake liste.
 Kandidati za `rums.json` — provjeri dostupnost u HR prije unosa (`shopHR`).
 
 
-## 4. Materijal za Club — priče i zanimljivosti (58 boca)
+## 4. Materijal za Club — priče i zanimljivosti (61 boca)
 
 **Izvorni citati, za uredničku preradu — ne kopirati doslovno u `club.json`.**
 
@@ -253,6 +254,12 @@ Kandidati za `rums.json` — provjeri dostupnost u HR prije unosa (`shopHR`).
 ### Barcelo Gran Anejo (6.1 / 261 gl.) — https://rumratings.com/rum/97-barcelo-gran-anejo
 - Molasses, fruit, and sugar are not the centerpiece of this Anejo.
 
+### Don Papa 7 (Small Batch) (5.6 / 1026 gl.) — https://rumratings.com/rum/1052-don-papa-small-batch
+- I've been able to taste this rum at the Paris RumFest in 2014.
+- Next time you're in the Philippines I dare you to visit this charming boutique distillery...
+- Perhaps spend an evening sampling their rum and experiencing the terroir of the region.
+- I'm sure a day at the distillery, which absolutely isn't some industrial beverage facility, would be very beautiful and romantic...
+
 ### The Kraken Black Spiced (6.0 / 1948 gl.) — https://rumratings.com/rum/482-kraken-black-spiced
 - A caramel/treacley heavy molasses like smell.
 
@@ -381,7 +388,12 @@ Kandidati za `rums.json` — provjeri dostupnost u HR prije unosa (`shopHR`).
 - This Jamaican rum is a blend of copper pot distilled molasses based rums that have been aged between 4 and 12 years in American white oak ex-bourbon barrels.
 - Jämfört med t ex Appleton Estate rare blend så är det mycket smak i den här.
 
-## 5. Materijal za knjigu o bontonu (90 boca)
+### Santa Teresa 1796 (7.5 / 774 gl.) — https://rumratings.com/rum/870-santa-teresa-1796
+- Smells and tastes of caramel, butterscotch, molasses, honey, vanilla, and a light oak.
+- I find it quite similar in style to the popular Venezuelan rum, but with much less sugar and some added complexity from the solera aging process.
+- Slight hints of molasses and nutmeg with a little oak.
+
+## 5. Materijal za knjigu o bontonu (94 boca)
 
 Zapažanja o serviranju, čaši, ritmu i dijeljenju za stolom. Isto pravilo:
 polazište za pisanje, ne citat.
@@ -579,12 +591,3 @@ ijedan broj iz gornjih tablica uzmeš zdravo za gotovo.
 
 | Naše ime | Njihovo ime | poklapanje |
 | --- | --- | ---: |
-
-## Uredničke napomene (prolaz 2026-08-21)
-
-- Skinuto **160** boca iz kataloga (162 URL-a; 2 stranice bez ocjene ostaju miss, ne nula: Mauritius Rom Club White, CDI 2022 14 YO).
-- Sitemap ima ~13 165 boca; spoj s naših 320 iznad praga 0,70 dao je **162** URL-a. Dio 3 (boce koje nemamo) prazan je namjerno: nismo vukli cijeli sitemap (robots `crawl-delay: 30` → višednevni posao).
-- Usporedba s `--floor 0.70` — pet slabih spojeva s praga 0,55 (Riise XO↔Christmas, Jylland↔Frogman, CDI Jamaica 5↔Navy Strength, Flor de Caña Blanco↔Gran Reserva, CDI Spiced↔Caraibes) **nisu** u tablicama.
-- Sustavni obrazac u dijelu 2: solera/slatki profili (Centenario, Zacapa, Riise, Barceló) zajednica hvali više; agricole (Clément VSOP, Saint James XO) mi držimo više. To je razlika ljestvice, ne nalog za mijenjanje `qualityScore` po boci.
-- Club: u `club.json` ušle tri provjerene zanimljivosti (Doorly's = Foursquare; Dos Maderas 5+3; Admiral Rodney HMS Formidable / Saintes 1782). Recenzijski mit da je Wray Overproof originalni Mai Tai iz 1944. **nije** unesen — original je koristio 17-godišnji Wray, ne bijeli overproof.
-- Bonton: poglavlje VI već pokriva čašu, vodu uz high-proof i prvi gutljaj. Citati iz recenzija nisu lijepljeni. Ako se bude dograđivalo: overproof (Wray) je prvo mixer; agricole često otvara kap vode; ECS ne suditi na prvom dimu.

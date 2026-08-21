@@ -2,8 +2,10 @@
 title: Session Hot Cache
 category: meta
 tags: [session, cache]
-updated: 2026-08-19
+updated: 2026-08-21
 ---
+
+> **2026-08-21:** RumRatings dio 3 → unesene boce koje nismo imali: Santa Teresa 1796, Zaya Gran Reserva 12, Plantation Barbados 5 YO (`rums.json` 323). Don Papa Small Batch = alias ime na Don Papa 7. Worktree `.worktrees/rumratings-crosscheck`.
 
 > **2026-08-19:** Oliva Serie G Special G (3¾×48 perfecto, ring 48, EAN 814539011594). Havana 7,05 €; kupnja u Tobacco Petica (Branimir) — Petica dobavlja od Havane, djelomična ponuda, ne cijeli Havana katalog.
 
