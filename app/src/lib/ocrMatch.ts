@@ -7,6 +7,24 @@ export interface OcrCandidate {
   brand?: string; // omogucuje dvofazni matching (prvo brend, pa linija)
 }
 
+const GENERIC_VITOLA_TOKENS = new Set([
+  "churchill",
+  "robusto",
+  "rothschild",
+  "corona",
+  "gordo",
+  "gigante",
+  "toro",
+  "torpedo",
+  "lancero",
+  "belicoso",
+  "perfecto",
+  "figurado",
+  "panatela",
+  "lonsdale",
+  "salomon",
+]);
+
 const normalize = (s: string) =>
   s
     .normalize("NFKD")
@@ -75,6 +93,19 @@ function anniversaryConflict(candTokens: string[], textTokens: string[]): boolea
   return !cY.some((y) => tY.includes(y));
 }
 
+function countMatchedTokens(candTokens: string[], textTokens: string[]): number {
+  const uniqCand = [...new Set(candTokens)];
+  return uniqCand.filter(
+    (t) => textTokens.includes(t) || textTokens.some((x) => fuzzyEquals(t, x)),
+  ).length;
+}
+
+function hasMeaningfulNonVitolaHit(candTokens: string[], textTokens: string[]): boolean {
+  return candTokens
+    .filter((t) => !GENERIC_VITOLA_TOKENS.has(t))
+    .some((t) => textTokens.includes(t) || textTokens.some((x) => fuzzyEquals(t, x)));
+}
+
 /** Nadji kandidata s najboljim (fuzzy) poklapanjem; prvo suzi po brendu. */
 export function matchOcrText(
   text: string,
@@ -91,12 +122,11 @@ export function matchOcrText(
       const candTokens = tokenize(c.label).filter((t) => !STOP.has(t));
       if (candTokens.length === 0) continue;
       if (anniversaryConflict(candTokens, textTokens)) continue;
+      if (!hasMeaningfulNonVitolaHit(candTokens, textTokens)) continue;
       const score = scoreTokens(candTokens, textTokens);
       // coverage prefers "Serie V" over "Serie V Melanio" when Melanio is absent
       const uniqCand = [...new Set(candTokens)];
-      const matched = uniqCand.filter(
-        (t) => textTokens.includes(t) || textTokens.some((x) => fuzzyEquals(t, x)),
-      ).length;
+      const matched = countMatchedTokens(candTokens, textTokens);
       const coverage = matched / uniqCand.length;
       if (
         score > bestScore ||

@@ -96567,7 +96567,10 @@
         "url": null,
         "ring": 42,
         "lengthMM": 127,
-        "fetchedAt": "2026-07-01"
+        "fetchedAt": "2026-07-01",
+        "barcodes": [
+          "8720400383177"
+        ]
       },
       {
         "name": "Corona",
@@ -96585,7 +96588,10 @@
         "priceEUR": null,
         "url": null,
         "ring": 48,
-        "lengthMM": 178
+        "lengthMM": 178,
+        "barcodes": [
+          "8720400690503"
+        ]
       },
       {
         "name": "Rothschild",
@@ -96605,7 +96611,10 @@
         },
         "ring": 50,
         "lengthMM": 114,
-        "fetchedAt": "2026-07-01"
+        "fetchedAt": "2026-07-01",
+        "barcodes": [
+          "8720400383184"
+        ]
       },
       {
         "name": "Robusto",
@@ -96615,7 +96624,10 @@
         "url": null,
         "ring": 50,
         "lengthMM": 127,
-        "fetchedAt": "2026-07-01"
+        "fetchedAt": "2026-07-01",
+        "barcodes": [
+          "8720400469192"
+        ]
       },
       {
         "name": "Toro",
@@ -151307,7 +151319,10 @@
     "strengthFromShop": true,
     "priceUrl": "https://humidor.hr/hr/proizvod/k-by-karen-berger-connecticut-toro-6-x-52/",
     "inStock": false,
-    "stockFetchedAt": "2026-08-17"
+    "stockFetchedAt": "2026-08-17",
+    "barcodes": [
+      "7427025683965"
+    ]
   },
   {
     "id": "cig-karen-berger-habano",
@@ -197623,7 +197638,10 @@
         },
         "fetchedAt": "2026-07-01",
         "inStock": false,
-        "stockFetchedAt": "2026-08-17"
+        "stockFetchedAt": "2026-08-17",
+        "barcodes": [
+          "814539011549"
+        ]
       },
       {
         "name": "Toro",
@@ -199031,7 +199049,10 @@
             "stockFetchedAt": "2026-08-17"
           }
         },
-        "fetchedAt": "2026-08-18"
+        "fetchedAt": "2026-08-18",
+        "barcodes": [
+          "814539011594"
+        ]
       },
       {
         "name": "Serie G Robusto",
@@ -199053,7 +199074,10 @@
         "lengthMM": 127,
         "fetchedAt": "2026-07-01",
         "inStock": false,
-        "stockFetchedAt": "2026-08-17"
+        "stockFetchedAt": "2026-08-17",
+        "barcodes": [
+          "814539011624"
+        ]
       }
     ],
     "priceUrl": "https://havana-cigar-shop.com/proizvod/oliva-serie-g-special-g-25/",
@@ -199177,7 +199201,10 @@
         "lengthMM": 152,
         "fetchedAt": "2026-07-01",
         "inStock": false,
-        "stockFetchedAt": "2026-08-17"
+        "stockFetchedAt": "2026-08-17",
+        "barcodes": [
+          "814539011839"
+        ]
       },
       {
         "name": "Serie O Churchill",
@@ -199294,7 +199321,10 @@
         "url": "https://havana-cigar-shop.com/proizvod/oliva-serie-v-no-4-24/",
         "ring": 43,
         "lengthMM": 102,
-        "fetchedAt": "2026-07-01"
+        "fetchedAt": "2026-07-01",
+        "barcodes": [
+          "814539013130"
+        ]
       },
       {
         "name": "Belicoso",
@@ -199829,7 +199859,10 @@
         "lengthMM": 127,
         "fetchedAt": "2026-07-01",
         "inStock": true,
-        "stockFetchedAt": "2026-08-17"
+        "stockFetchedAt": "2026-08-17",
+        "barcodes": [
+          "071610524958"
+        ]
       },
       {
         "name": "Toro",
@@ -215146,7 +215179,10 @@
         },
         "fetchedAt": "2026-07-01",
         "inStock": true,
-        "stockFetchedAt": "2026-08-17"
+        "stockFetchedAt": "2026-08-17",
+        "barcodes": [
+          "816229015691"
+        ]
       },
       {
         "name": "Gordo",
@@ -222283,7 +222319,11 @@
             "stockFetchedAt": "2026-08-17"
           }
         },
-        "fetchedAt": "2026-07-01"
+        "fetchedAt": "2026-07-01",
+        "barcodes": [
+          "810134310841",
+          "810134310858"
+        ]
       },
       {
         "name": "Fuerte Eduardo",
@@ -241088,7 +241128,10 @@
         "url": "https://havana-cigar-shop.com/proizvod/romeo-y-julieta-churchill-non-tubos-25/",
         "ring": 47,
         "lengthMM": 178,
-        "fetchedAt": "2026-07-01"
+        "fetchedAt": "2026-07-01",
+        "barcodes": [
+          "8500001030188"
+        ]
       },
       {
         "name": "Short Churchill",

@@ -52,6 +52,7 @@ import {
 import { withTaste } from "../lib/tasteProfile";
 import { TasteReportSheet } from "../components/TasteReportSheet";
 import { OcrScan } from "../components/OcrScan";
+import { OcrPackPanel } from "../components/OcrPackPanel";
 import { useMarket } from "../store/market";
 import { applyLocalDayToIso, localDayKey } from "../lib/calendar";
 
@@ -478,6 +479,7 @@ export function CollectionPage({
           />
         </div>
       </div>
+      <OcrPackPanel />
       {ocrQuery ? (
         <div className="mt-2">
           <SearchInput value={ocrQuery} onChange={setOcrQuery} placeholder={t("pair.search")} />
@@ -562,14 +564,42 @@ export function CollectionPage({
                       ? t("session.soloLabel")
                       : j.drinkId}
                 </span>
-                {j.rating != null && (
+                {j.rating != null ? (
                   <span className="shrink-0 text-sm text-zlato-2">{j.rating}/10</span>
+                ) : (
+                  <label className="shrink-0 inline-flex items-center gap-2 text-xs text-dim">
+                    <span>{t("coll.eveningRating")}</span>
+                    <select
+                      value=""
+                      onChange={(e) =>
+                        updateJournalEntry(j.id, {
+                          rating: e.target.value ? Number(e.target.value) : null,
+                        })
+                      }
+                      className="rounded-md border border-dim/30 bg-cedar px-2 py-1 text-sm text-papir focus:border-zlato/60 [color-scheme:dark]"
+                      aria-label={t("coll.eveningRating")}
+                    >
+                      <option value="" disabled>
+                        —
+                      </option>
+                      {Array.from({ length: 10 }, (_, i) => 10 - i).map((v) => (
+                        <option key={v} value={v}>
+                          {v}/10
+                        </option>
+                      ))}
+                    </select>
+                  </label>
                 )}
               </div>
               <div className="mt-1 text-xs text-dim">
                 {new Date(j.date).toLocaleDateString(lang === "hr" ? "hr-HR" : "en-GB")}
                 {j.note && ` — ${j.note}`}
               </div>
+              {j.rating == null && (
+                <p className="mt-1 text-[11px] leading-relaxed text-dim/80">
+                  {t("coll.eveningRatingHint")}
+                </p>
+              )}
               <label className="mt-2 flex items-center gap-2 text-xs text-dim">
                 <span className="shrink-0">{t("hum.editDate")}</span>
                 <input

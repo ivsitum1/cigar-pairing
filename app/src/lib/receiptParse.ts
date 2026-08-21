@@ -1,5 +1,6 @@
 /** Heuristic receipt line parsing → catalog matches (HR shop formats). */
 import { matchOcrText, tokenize, STOP, type OcrCandidate } from "./ocrMatch";
+import { lookupBarcodeInText, type BarcodeHit } from "./ocrBarcode";
 
 export interface ReceiptLineMatch {
   raw: string;
@@ -7,6 +8,8 @@ export interface ReceiptLineMatch {
   score: number;
   qty: number;
   selected: boolean;
+  barcode: BarcodeHit | null;
+  barcodeCandidate: OcrCandidate | null;
 }
 
 const BOILERPLATE =
@@ -50,6 +53,14 @@ const ABBREV: Array<[RegExp, string]> = [
   [/\bserie\s*6\b/gi, "serie g"],
 ];
 
+const BRAND_RESCUE: Array<[RegExp, string]> = [
+  [/\b(?:dov?t(?:om|ol|on)[a-z]{1,6}|dontolias?|dontolia>?|dontomas|don\s*tovias)\b/gi, "don tomas"],
+  [/\b(?:r[oa]?ths?[cg]h?[il]{1,2}d|roh?s?ch[il]{1,2}d|rothsghld)\b/gi, "rothschild"],
+  [/\b(?:church|chrchll|churc?hill?)\b/gi, "churchill"],
+  [/\b(?:peroond|perdom0)\b/gi, "perdomo"],
+  [/\b(?:estrela|estrelaa?)\b/gi, "estrella"],
+];
+
 function extractQty(line: string): { qty: number; rest: string } {
   const kom = line.match(QTY_KOM);
   if (kom) {
@@ -76,6 +87,7 @@ export function cleanReceiptProductName(line: string): string {
   // trailing money columns: 15,85 15,85 or 5.80
   s = s.replace(/(?:^|\s)\d{1,4}[,.]\d{2}(?:\s|$)/g, " ");
   s = s.replace(/\b\d{1,3}\s*%/g, " ");
+  for (const [re, repl] of BRAND_RESCUE) s = s.replace(re, repl);
   for (const [re, repl] of ABBREV) s = s.replace(re, repl);
   s = s.replace(/\s+/g, " ").trim();
   // "by Cusano" → keep Cusano tokens
@@ -101,6 +113,7 @@ export function parseReceiptText(
   text: string,
   candidates: OcrCandidate[],
 ): ReceiptLineMatch[] {
+  const candidateById = new Map(candidates.map((c) => [c.id, c]));
   const rawLines = text
     .split(/\n+/)
     .map((l) => l.replace(/\s+/g, " ").trim())
@@ -112,25 +125,55 @@ export function parseReceiptText(
   for (const raw of rawLines) {
     if (isNoise(raw)) continue;
     const { qty, rest } = extractQty(raw);
+    const barcode = lookupBarcodeInText(raw);
+    const barcodeCandidate = barcode ? (candidateById.get(barcode.itemId) ?? null) : null;
     const cleaned = cleanReceiptProductName(rest);
-    if (!cleaned || isNoise(cleaned)) continue;
+    if ((!cleaned || isNoise(cleaned)) && !barcodeCandidate) continue;
     // need at least one “product-like” token after cleaning
-    if (tokenize(cleaned).filter((w) => !STOP.has(w)).length < 2) continue;
+    if (
+      tokenize(cleaned).filter((w) => !STOP.has(w)).length < 2 &&
+      !barcodeCandidate
+    ) continue;
 
-    const hit = matchOcrText(cleaned, candidates);
-    if (!hit) continue;
-    if (seen.has(hit.candidate.id)) {
-      const prev = out.find((x) => x.candidate?.id === hit.candidate.id);
-      if (prev) prev.qty += qty;
+    const hit = cleaned ? matchOcrText(cleaned, candidates) : null;
+    const chosen = hit?.candidate ?? barcodeCandidate;
+    if (!chosen) continue;
+    const sameAsBarcode = barcodeCandidate && hit?.candidate
+      ? barcodeCandidate.id === hit.candidate.id
+      : false;
+    const selected = barcodeCandidate
+      ? sameAsBarcode || !hit
+      : Boolean(hit && hit.score >= 2);
+    const effectiveScore = hit?.score ?? (barcodeCandidate ? 1.5 : 0);
+    if (seen.has(chosen.id)) {
+      const prev = out.find((x) => x.candidate?.id === chosen.id);
+      if (prev) {
+        prev.qty += qty;
+        prev.selected ||= selected;
+        prev.score = Math.max(prev.score, effectiveScore);
+
+        // Prefer barcode evidence that matches the chosen (OCR-selected) candidate.
+        // This avoids a scenario where the first occurrence shows "EAN hint" but later
+        // lines confirm the same cigar id with a matching barcode.
+        if (selected && barcodeCandidate?.id === chosen.id) {
+          prev.barcode = barcode;
+          prev.barcodeCandidate = barcodeCandidate;
+        } else if (!prev.barcodeCandidate && barcodeCandidate) {
+          prev.barcodeCandidate = barcodeCandidate;
+          prev.barcode = barcode;
+        }
+      }
       continue;
     }
-    seen.add(hit.candidate.id);
+    seen.add(chosen.id);
     out.push({
-      raw: cleaned,
-      candidate: hit.candidate,
-      score: hit.score,
+      raw: cleaned || raw,
+      candidate: chosen,
+      score: effectiveScore,
       qty,
-      selected: hit.score >= 2,
+      selected,
+      barcode,
+      barcodeCandidate,
     });
   }
 
@@ -143,6 +186,8 @@ export function parseReceiptText(
         score: hit.score,
         qty: 1,
         selected: true,
+        barcode: null,
+        barcodeCandidate: null,
       });
     }
   }

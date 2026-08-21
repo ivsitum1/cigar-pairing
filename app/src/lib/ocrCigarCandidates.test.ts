@@ -54,4 +54,14 @@ describe("buildCigarOcrCandidates", () => {
     const m = matchOcrText("Oliva Serie V Torpedo/24", allCands());
     expect(m?.candidate.id).toBe("cig-oliva-serie-v@torpedo");
   });
+
+  it("uses barcode hint when receipt row text is too weak on its own", () => {
+    const rows = parseReceiptText(
+      "ARTIKL 8720400383184 1 KOM 3,60 3,60",
+      allCands(),
+    );
+    expect(rows[0]?.candidate?.id).toBe("cig-don-tomas-bundle@rothschild");
+    expect(rows[0]?.barcodeCandidate?.id).toBe("cig-don-tomas-bundle@rothschild");
+    expect(rows[0]?.selected).toBe(true);
+  });
 });

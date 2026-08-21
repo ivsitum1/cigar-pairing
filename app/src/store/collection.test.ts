@@ -352,4 +352,25 @@ describe("updateJournalEntry", () => {
     const after = JSON.parse(exportData()).journal[0];
     expect(after).toEqual(before);
   });
+
+  it("mijenja rating dnevnika", async () => {
+    const { addJournalEntry, updateJournalEntry, exportData } = await import("./collection");
+    addJournalEntry({ cigarId: "cig-a", drinkId: null, rating: null, note: "" });
+    const id = JSON.parse(exportData()).journal[0].id as string;
+    updateJournalEntry(id, { rating: 9 });
+    const entry = JSON.parse(exportData()).journal[0];
+    expect(entry.rating).toBe(9);
+  });
+
+  it("mijenja samo journal rating, ne i opcu ocjenu stavke", async () => {
+    const { addJournalEntry, updateJournalEntry, updateItem, getItemState } = await import(
+      "./collection"
+    );
+    updateItem("cig-a", { tried: true, rating: 7 });
+    addJournalEntry({ cigarId: "cig-a", drinkId: null, rating: null, note: "" });
+    const { exportData } = await import("./collection");
+    const id = JSON.parse(exportData()).journal[0].id as string;
+    updateJournalEntry(id, { rating: 9 });
+    expect(getItemState("cig-a").rating).toBe(7);
+  });
 });
