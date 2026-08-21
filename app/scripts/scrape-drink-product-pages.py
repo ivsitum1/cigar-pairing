@@ -26,6 +26,7 @@ HERE = Path(__file__).resolve().parent
 DATA = HERE.parent / "src" / "data"
 OUT = HERE / "output" / "drink_pdp_raw.json"
 NOTES_RAW = HERE / "output" / "drink_notes_raw.json"
+LISTINGS = HERE / "output" / "drink_shop_listings_raw.json"
 UA = {
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -72,6 +73,100 @@ def host_ok(url: str) -> bool:
     except Exception:
         return False
     return any(h.endswith(a) for a in ALLOW_HOSTS)
+
+
+def is_katalog_url(url: str) -> bool:
+    """Ecuga category shelves — HTML has no product tasting copy."""
+    path = urllib.parse.urlparse(url).path.lower()
+    return "/katalog/" in path and "/proizvod/" not in path
+
+
+def is_product_url(url: str) -> bool:
+    return bool(url) and host_ok(url) and not is_katalog_url(url)
+
+
+def _name_tokens(name: str) -> set[str]:
+    raw = re.findall(r"[a-z0-9]+", (name or "").lower())
+    stop = {
+        "the", "of", "and", "yo", "vol", "old", "years", "year", "single", "malt",
+        "scotch", "whisky", "whiskey", "giftbox", "gift", "box", "poklon", "kutiji",
+        "u", "in", "gb", "l", "cl", "ml", "rum", "gin", "tequila", "de", "la",
+    }
+    out: set[str] = set()
+    for t in raw:
+        if t in stop or len(t) < 2:
+            continue
+        if t.isdigit():
+            # Keep ages (12, 15, 18…) — drop volumes / ABV-ish noise.
+            n = int(t)
+            if 3 <= n <= 60:
+                out.add(t)
+            continue
+        out.add(t)
+    return out
+
+
+def load_listing_candidates() -> list[dict]:
+    if not LISTINGS.exists():
+        return []
+    try:
+        blob = json.loads(LISTINGS.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return []
+    items = blob.get("items") if isinstance(blob, dict) else blob
+    out: list[dict] = []
+    for row in items or []:
+        url = (row.get("url") or "").strip()
+        if not is_product_url(url):
+            continue
+        name = row.get("name") or ""
+        out.append({"url": url, "name": name, "tokens": _name_tokens(name)})
+    return out
+
+
+def prefer_product_url(drink: dict, current: str, listings: list[dict]) -> str:
+    """Replace Ecuga /katalog/ (and other non-PDP) links with a listing product URL."""
+    if is_product_url(current):
+        return current
+    drink_toks = _name_tokens(drink.get("name") or "")
+    if len(drink_toks) < 2 or not listings:
+        return current
+    drink_ages = {t for t in drink_toks if t.isdigit()}
+    best_url = current
+    best_score = 0.0
+    for row in listings:
+        inter = drink_toks & row["tokens"]
+        if len(inter) < 2:
+            continue
+        row_ages = {t for t in row["tokens"] if t.isdigit()}
+        # Never cross ages (Redbreast 15 ↛ Redbreast 12).
+        if drink_ages and row_ages and drink_ages.isdisjoint(row_ages):
+            continue
+        if drink_ages and not (drink_ages & row_ages):
+            # Listing has no age while drink does — allow, but do not prefer.
+            age_bonus = 0.0
+        elif drink_ages and drink_ages & row_ages:
+            age_bonus = 0.35
+        else:
+            age_bonus = 0.0
+        score = len(inter) / max(len(drink_toks), 1) + age_bonus
+        try:
+            cur_host = urllib.parse.urlparse(current).netloc.lower().removeprefix("www.")
+            row_host = urllib.parse.urlparse(row["url"]).netloc.lower().removeprefix("www.")
+        except Exception:
+            cur_host = row_host = ""
+        if cur_host and row_host and (
+            row_host == cur_host or row_host.endswith(cur_host) or cur_host.endswith(row_host)
+        ):
+            score += 0.25
+        if "/proizvod/" in row["url"]:
+            score += 0.1
+        if score > best_score:
+            best_score = score
+            best_url = row["url"]
+    if best_score >= 0.5 and is_product_url(best_url):
+        return best_url
+    return current
 
 
 def is_junk(text: str) -> bool:
@@ -141,26 +236,56 @@ def _editorjs_texts(html: str) -> list[str]:
             t = _clean(inner)
             if _usable(t):
                 found.append(t)
-    uniq: list[str] = []
-    seen: set[str] = set()
-    for t in sorted(found, key=len, reverse=True):
-        key = t[:80].lower()
-        if key in seen:
+    return found
+
+
+def _ldjson_texts(html: str) -> list[str]:
+    found: list[str] = []
+    for m in re.finditer(
+        r'<script[^>]+type=["\']application/ld\+json["\'][^>]*>(.*?)</script>',
+        html,
+        re.I | re.S,
+    ):
+        raw = m.group(1).strip()
+        try:
+            data = json.loads(raw)
+        except json.JSONDecodeError:
             continue
-        seen.add(key)
-        uniq.append(t)
-    return uniq[:4]
+        items = data if isinstance(data, list) else [data]
+        stack = list(items)
+        while stack:
+            item = stack.pop()
+            if isinstance(item, list):
+                stack.extend(item)
+                continue
+            if not isinstance(item, dict):
+                continue
+            if "@graph" in item and isinstance(item["@graph"], list):
+                stack.extend(item["@graph"])
+            typ = item.get("@type")
+            types = {typ} if isinstance(typ, str) else set(typ or [])
+            if types & {"Product", "ProductGroup", "Offer"} or item.get("description"):
+                t = _clean(str(item.get("description") or ""))
+                if _usable(t):
+                    found.append(t)
+    return found
 
 
 def extract_text(html: str) -> dict:
+    # Pull structured blobs before stripping <script> tags.
+    structured = _editorjs_texts(html) + _ldjson_texts(html)
     soup = BeautifulSoup(html, "html.parser")
     for tag in soup(["script", "style", "noscript", "nav", "footer", "header"]):
         tag.decompose()
-    chunks: list[str] = []
+    chunks: list[str] = list(structured)
     for sel in [
         ".single-product-text",
+        ".product__description",
+        ".product-single__description",
+        ".rte",
         ".woocommerce-product-details__short-description",
         "#tab-description",
+        ".woocommerce-Tabs-panel--description",
         ".product-description",
         ".product-short-description",
         "[itemprop=description]",
@@ -180,7 +305,6 @@ def extract_text(html: str) -> dict:
         t = _clean(meta["content"])
         if _usable(t):
             chunks.append(t)
-    chunks.extend(_editorjs_texts(html))
     uniq: list[str] = []
     seen: set[str] = set()
     for t in sorted(chunks, key=len, reverse=True):
@@ -249,6 +373,7 @@ def main() -> None:
     args = ap.parse_args()
 
     file_list = args.files or FILES
+    listings = load_listing_candidates()
     existing: dict[str, dict] = {}
     if args.resume and OUT.exists():
         prev = json.loads(OUT.read_text(encoding="utf-8"))
@@ -257,13 +382,17 @@ def main() -> None:
                 existing[row["id"]] = row
 
     jobs = []
+    skipped_katalog = 0
     for fname in file_list:
         path = DATA / fname
         if not path.exists():
             continue
         for d in json.loads(path.read_text(encoding="utf-8")):
-            url = d.get("priceUrl")
+            url = prefer_product_url(d, d.get("priceUrl") or "", listings)
             if not url or not host_ok(url):
+                continue
+            if is_katalog_url(url):
+                skipped_katalog += 1
                 continue
             prev_row = existing.get(d["id"]) if args.resume else None
             if prev_row and len(prev_row.get("text") or "") >= args.min_text:
@@ -283,7 +412,10 @@ def main() -> None:
         }
         existing = {k: v for k, v in existing.items() if k in keep_ids}
 
-    print(f"PDP jobs: {len(jobs)} (resume keep {len(existing)})")
+    print(
+        f"PDP jobs: {len(jobs)} (resume keep {len(existing)}; "
+        f"listings={len(listings)}; skipped_katalog={skipped_katalog})"
+    )
     by_id = dict(existing)
     ok = fail = 0
     for i, job in enumerate(jobs, 1):
