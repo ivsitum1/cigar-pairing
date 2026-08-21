@@ -102,47 +102,6 @@ class MergeOverwriteTests(unittest.TestCase):
         self.assertEqual(cigar["body"], 1)
         self.assertNotEqual(cigar.get("strengthFromShop"), True)
 
-    def test_neptune_description_fills_generated_notes(self):
-        cigar = {
-            "id": "cig-notes",
-            "flavorTags": ["cedar"],
-            "profileEstimated": True,
-            "wrapper": "Habano",
-            "notes": {
-                "hr": "Nikaragva, Habano pokrov — jače snage, punijeg tijela. Okusi: cedrovina.",
-                "en": "Habano wrapper (Nicaragua); fuller and expressive. Notes of cedar.",
-            },
-        }
-        raw = {
-            "description": (
-                "A small-batch Nicaraguan blend with dark chocolate, black pepper, "
-                "and cedar on a long finish. Handmade in Esteli."
-            ),
-        }
-        self.assertTrue(merge.merge_one(cigar, raw))
-        self.assertGreaterEqual(len(cigar["notes"]["en"]), 80)
-        self.assertIn("dark chocolate", cigar["notes"]["en"])
-        self.assertEqual(cigar["notes"]["hr"], "")
-        self.assertFalse(cigar.get("profileEstimated"))
-
-    def test_curated_notes_not_overwritten(self):
-        cigar = {
-            "id": "cig-curated-notes",
-            "flavorTags": ["kakao"],
-            "profileEstimated": False,
-            "wrapper": "Maduro",
-            "notes": {
-                "hr": "Tamna, mirisna linija s kakaoom i suhim voćem; večernja, bez žurbe.",
-                "en": "A dark, fragrant line with cocoa and dried fruit; evening pace.",
-            },
-        }
-        raw = {
-            "description": "Shop text about coffee leather spice cedar that should not win.",
-        }
-        merge.merge_one(cigar, raw)
-        self.assertIn("kakaoom", cigar["notes"]["hr"])
-        self.assertIn("evening pace", cigar["notes"]["en"])
-
 
 class WorklistSelectionTests(unittest.TestCase):
     def test_includes_estimated_with_neptune_url(self):

@@ -62,23 +62,22 @@
     "additiveSource": "Standard kategorije porto",
     "qualityScore": 8.0,
     "priceEUR": {
-      "min": 37.0,
-      "max": 37.0
+      "min": 36.3,
+      "max": 36.3
     },
-    "shopHR": "allez.hr",
+    "shopHR": "Vivat fina vina",
     "status": null,
     "pairable": true,
     "serving": {
       "best": "Casa za porto, 14-16 C"
     },
     "cigarHint": null,
-    "priceUrl": "https://allez.hr/shop/svi-proizvodi/w-j-grahams-tawny-port-10-years-old-20-vol-075l-u-poklon-kutiji",
+    "priceUrl": null,
     "notes": {
       "hr": "Tawny odležan 10 godina u drvu , orašasti plodovi, karamela, suho voće. Klasičan izbor uz cigaru srednje punoće.",
       "en": "Tawny aged 10 years in wood , nuts, caramel, dried fruit. A classic pick with a medium-bodied cigar."
     },
-    "profileEstimated": true,
-    "priceApprox": false
+    "profileEstimated": true
   },
   {
     "id": "wine-grahams-tawny-20",
@@ -103,22 +102,21 @@
     "additiveSource": "Standard kategorije porto",
     "qualityScore": 8.5,
     "priceEUR": {
-      "min": 63.0,
-      "max": 63.0
+      "min": 63.9,
+      "max": 63.9
     },
-    "shopHR": "allez.hr",
+    "shopHR": "vivat-finavina.hr",
     "status": null,
     "pairable": true,
     "serving": {
       "best": "Casa za porto, 14-16 C"
     },
     "cigarHint": null,
-    "priceUrl": "https://allez.hr/shop/svi-proizvodi/w-j-grahams-tawny-port-20-years-old-20-vol-075l-u-poklon-kutiji",
+    "priceUrl": "https://www.vivat-finavina.hr/proizvod/grahams-tawny-port-20-y-o/",
     "notes": {
       "hr": "Dublja, koncentriranija verzija , pečeni orasi, datulje, fina oksidativna kompleksnost. Jedan od najboljih univerzalnih partnera cigari.",
       "en": "Deeper and more concentrated , roasted nuts, dates, fine oxidative complexity. One of the best all-round cigar partners."
-    },
-    "priceApprox": false
+    }
   },
   {
     "id": "wine-sandeman-tawny-20",
@@ -1290,18 +1288,18 @@
     "additiveSource": "Standard kategorije vino",
     "qualityScore": 7.5,
     "priceEUR": {
-      "min": 15.6,
-      "max": 15.6
+      "min": 18.0,
+      "max": 28.0
     },
-    "priceApprox": false,
-    "shopHR": "Miva",
+    "priceApprox": true,
+    "shopHR": "Vinoteke / Kozlović webshop",
     "status": null,
     "pairable": true,
     "serving": {
       "best": "Ohladjeno, 8-10 C"
     },
     "cigarHint": null,
-    "priceUrl": "https://www.miva.com.hr/asortiman/proizvod-68-kozlovic-muskat-momjanski",
+    "priceUrl": null,
     "notes": {
       "hr": "Istarski aromatski dragulj , ruža, med, muškatni orah; slatko ali živo.",
       "en": "An Istrian aromatic gem , rose, honey, nutmeg; sweet but lively."
@@ -2151,8 +2149,7 @@
     "sweetness": 1,
     "flavorTags": [
       "travnato",
-      "zacini",
-      "zemljano"
+      "zacini"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -2241,22 +2238,22 @@
     "additiveSource": "Standard kategorije vino",
     "qualityScore": 8.0,
     "priceEUR": {
-      "min": 25.1,
-      "max": 25.1
+      "min": 25,
+      "max": 40
     },
-    "shopHR": "Miva",
+    "shopHR": "Vivat fina vina / vinoteke",
     "status": null,
     "pairable": true,
     "serving": {
       "best": "Velika casa, 16-18 C"
     },
     "cigarHint": null,
-    "priceUrl": "https://www.miva.com.hr/asortiman/proizvod-341-korta-katarina-plavac-mali",
+    "priceUrl": null,
     "notes": {
       "hr": "Korta Katarina: ureden, medunarodni stil plavca. Dobar most prema Novom svijetu uz cigaru.",
       "en": "Korta Katarina: polished, international Plavac style. A good bridge to New World with a cigar."
     },
-    "priceApprox": false
+    "priceApprox": true
   },
   {
     "id": "wine-madirazza-dingac",
@@ -2793,22 +2790,22 @@
     "additiveSource": "Standard kategorije vino",
     "qualityScore": 7.5,
     "priceEUR": {
-      "min": 22.6,
-      "max": 22.6
+      "min": 20,
+      "max": 35
     },
-    "shopHR": "Miva",
+    "shopHR": "Vivat fina vina / vinoteke",
     "status": null,
     "pairable": true,
     "serving": {
       "best": "Velika casa, 16-18 C"
     },
     "cigarHint": null,
-    "priceUrl": "https://www.miva.com.hr/asortiman/proizvod-798-rizman-tribidrag",
+    "priceUrl": null,
     "notes": {
       "hr": "Rizman Tribidrag: isto sortno ime, bačveniji stil. Punije tijelo uz maduro.",
       "en": "Rizman Tribidrag: same variety, more barrel-led style. Fuller body with maduro."
     },
-    "priceApprox": false
+    "priceApprox": true
   },
   {
     "id": "wine-saints-hills-dingac",
@@ -2831,22 +2828,22 @@
     "additiveSource": "Standard kategorije vino",
     "qualityScore": 8.5,
     "priceEUR": {
-      "min": 60.0,
-      "max": 60.0
+      "min": 35,
+      "max": 55
     },
-    "shopHR": "Miva",
+    "shopHR": "Vivat fina vina / vinoteke",
     "status": null,
     "pairable": true,
     "serving": {
       "best": "Velika casa, 16-18 C"
     },
     "cigarHint": null,
-    "priceUrl": "https://www.miva.com.hr/asortiman/proizvod-303-saints-hills-dingac",
+    "priceUrl": null,
     "notes": {
       "hr": "Saints Hills: moderniji, bačveni Dingač; crno voće i vanilija. Snaga uz maduro.",
       "en": "Saints Hills: a more modern, barrel-aged Dingac; black fruit and vanilla. Power with maduro."
     },
-    "priceApprox": false,
+    "priceApprox": true,
     "profileEstimated": true
   },
   {
@@ -2911,22 +2908,22 @@
     "additiveSource": "Standard kategorije vino",
     "qualityScore": 8.5,
     "priceEUR": {
-      "min": 15.98,
-      "max": 15.98
+      "min": 28,
+      "max": 45
     },
-    "shopHR": "Miva",
+    "shopHR": "Madirazza / vinoteke",
     "status": null,
     "pairable": true,
     "serving": {
       "best": "Velika casa, 16-18 C"
     },
     "cigarHint": null,
-    "priceUrl": "https://www.miva.com.hr/asortiman/proizvod-241-skaramuca-dingac",
+    "priceUrl": null,
     "notes": {
       "hr": "Skaramuča s položaja Dingač: zreli plavac, suha trešnja, začini. Vrh HR crvenog uz Habano.",
       "en": "Skaramuca from the Dingac site: ripe Plavac, dried cherry, spice. Peak Croatian red with Habano."
     },
-    "priceApprox": false
+    "priceApprox": true
   },
   {
     "id": "wine-testament-babic",
@@ -2950,22 +2947,22 @@
     "additiveSource": "Standard kategorije vino",
     "qualityScore": 8.0,
     "priceEUR": {
-      "min": 16.0,
-      "max": 16.0
+      "min": 18,
+      "max": 30
     },
-    "shopHR": "Miva",
+    "shopHR": "Vivat fina vina / vinoteke",
     "status": null,
     "pairable": true,
     "serving": {
       "best": "Velika casa, 16-18 C"
     },
     "cigarHint": null,
-    "priceUrl": "https://www.miva.com.hr/asortiman/proizvod-855-testament-babic",
+    "priceUrl": null,
     "notes": {
       "hr": "Testament: moderno primostensko babić; mineralnost i crvena trešnja. Karakter uz srednje-punu cigaru.",
       "en": "Testament: modern Primosten Babic; minerality and red cherry. Character with a medium-full cigar."
     },
-    "priceApprox": false
+    "priceApprox": true
   },
   {
     "id": "wine-pesquera-ribera",
@@ -3380,18 +3377,18 @@
     "additiveSource": "Standard kategorije vino",
     "qualityScore": 8.0,
     "priceEUR": {
-      "min": 36.32,
-      "max": 36.32
+      "min": 20.0,
+      "max": 30.0
     },
-    "priceApprox": false,
-    "shopHR": "Miva",
+    "priceApprox": true,
+    "shopHR": "Vinoteke / Miva",
     "status": null,
     "pairable": true,
     "serving": {
       "best": "Velika casa, 16-18 C"
     },
     "cigarHint": null,
-    "priceUrl": "https://www.miva.com.hr/asortiman/proizvod-65-coronica-gran-teran",
+    "priceUrl": null,
     "notes": {
       "hr": "Istarski teran ozbiljnog izdanja , divlja kupina, željezo, zemlja; markantna kiselina.",
       "en": "A serious Istrian teran , wild blackberry, iron, earth; striking acidity."
@@ -3771,22 +3768,22 @@
     "additiveSource": "Standard kategorije vino",
     "qualityScore": 8.0,
     "priceEUR": {
-      "min": 20.82,
-      "max": 20.82
+      "min": 14,
+      "max": 24
     },
-    "shopHR": "Miva",
+    "shopHR": "Vivat fina vina / vinoteke",
     "status": null,
     "pairable": true,
     "serving": {
       "best": "Ohladjeno, 8-10 C"
     },
     "cigarHint": null,
-    "priceUrl": "https://www.miva.com.hr/asortiman/proizvod-1884-stina-posip",
+    "priceUrl": null,
     "notes": {
       "hr": "Stina Posip: mineralan, mediteranski bijeli. Uz blagu cigaru ili aperitiv.",
       "en": "Stina Posip: mineral Mediterranean white. With a mild cigar or as an aperitif."
     },
-    "priceApprox": false
+    "priceApprox": true
   },
   {
     "id": "wine-dr-loosen-kabinett",
@@ -3850,22 +3847,22 @@
     "additiveSource": "Standard kategorije vino",
     "qualityScore": 7.5,
     "priceEUR": {
-      "min": 9.48,
-      "max": 9.48
+      "min": 9,
+      "max": 16
     },
-    "shopHR": "Miva",
+    "shopHR": "Konzum / vinoteke",
     "status": null,
     "pairable": true,
     "serving": {
       "best": "Dobro ohladjeno, 6-8 C"
     },
     "cigarHint": null,
-    "priceUrl": "https://www.miva.com.hr/asortiman/proizvod-1134-enjingi-grasevina",
+    "priceUrl": null,
     "notes": {
       "hr": "Enjingi: malo bogatija grasevina; med i jabuka. Kontrast uz Connecticut.",
       "en": "Enjingi: a slightly richer Grasevina; honey and apple. Contrast with Connecticut."
     },
-    "priceApprox": false,
+    "priceApprox": true,
     "profileEstimated": true
   },
   {
@@ -3929,22 +3926,22 @@
     "additiveSource": "Standard kategorije vino",
     "qualityScore": 7.5,
     "priceEUR": {
-      "min": 15.98,
-      "max": 15.98
+      "min": 10,
+      "max": 18
     },
-    "shopHR": "Miva",
+    "shopHR": "Konzum / vinoteke",
     "status": null,
     "pairable": true,
     "serving": {
       "best": "Dobro ohladjeno, 6-8 C"
     },
     "cigarHint": null,
-    "priceUrl": "https://www.miva.com.hr/asortiman/proizvod-1103-kozlovic-malvazija",
+    "priceUrl": null,
     "notes": {
       "hr": "Kozlović: istarska klasika; breskva i bagrem. Svjezina uz blagu cigaru.",
       "en": "Kozlovic: Istrian classic; peach and acacia. Freshness with a mild cigar."
     },
-    "priceApprox": false
+    "priceApprox": true
   },
   {
     "id": "wine-krauthaker-grasevina",
@@ -3967,22 +3964,22 @@
     "additiveSource": "Standard kategorije vino",
     "qualityScore": 7.5,
     "priceEUR": {
-      "min": 12.98,
-      "max": 12.98
+      "min": 8,
+      "max": 14
     },
-    "shopHR": "Miva",
+    "shopHR": "Konzum / vinoteke",
     "status": null,
     "pairable": true,
     "serving": {
       "best": "Dobro ohladjeno, 6-8 C"
     },
     "cigarHint": null,
-    "priceUrl": "https://www.miva.com.hr/asortiman/proizvod-128-krauthaker-grasevina",
+    "priceUrl": null,
     "notes": {
       "hr": "Krauthaker: standard HR bijelog; jabuka i citrus. Samo uz najblažu cigaru.",
       "en": "Krauthaker: HR white standard; apple and citrus. Only with the mildest cigar."
     },
-    "priceApprox": false,
+    "priceApprox": true,
     "profileEstimated": true
   },
   {

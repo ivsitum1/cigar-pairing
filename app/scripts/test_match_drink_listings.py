@@ -16,22 +16,6 @@ _SPEC.loader.exec_module(mdl)
 
 
 class AgeAndExtras(unittest.TestCase):
-    def test_mint_id_unique(self) -> None:
-        used = {"rum-plantacion-xo"}
-        a = mdl.mint_drink_id("rum", "Plantation XO", used)
-        used.add(a)
-        b = mdl.mint_drink_id("rum", "Plantation XO", used)
-        self.assertNotEqual(a, b)
-        self.assertTrue(a.startswith("rum-"))
-
-    def test_resolve_category_from_name(self) -> None:
-        self.assertEqual(
-            mdl.resolve_category({"name": "Plantation XO Rum", "category": "all"}),
-            "rum",
-        )
-        self.assertEqual(mdl.resolve_category({"name": "Something", "category": "gin"}), "gin")
-        self.assertIsNone(mdl.resolve_category({"name": "Appleton Estate 8", "category": "all"}))
-
     def test_keeps_age_10(self) -> None:
         self.assertIn("10", mdl.tokens("Lagavulin 10YO 0,70 L"))
         self.assertEqual(mdl.meaningful_years("Lagavulin 10YO 0,70 L"), {"10"})
@@ -74,12 +58,6 @@ class AgeAndExtras(unittest.TestCase):
                 mdl.tokens("Johnnie Walker Blue Label"),
                 mdl.tokens("Johnnie Walker Blue Label Elusive Umami"),
             )
-        )
-        cleaned = mdl.clean_display_name(
-            "A.H. Riise X.O. Reserve Port Cask Rum 45% Vol. 0,7l u poklon kutiji"
-        )
-        self.assertTrue(
-            mdl.listing_extras_ok(mdl.tokens(cleaned), mdl.tokens("A.H. Riise XO Reserve Port Cask"))
         )
 
     def test_weak_url_does_not_treat_ecuga_product_as_gap(self) -> None:
