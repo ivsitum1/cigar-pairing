@@ -45,6 +45,10 @@ import { HumidorPage, JournalCalendar } from "./HumidorPage";
 import { exportHumidors, importHumidors, stockForItemKey } from "../store/humidor";
 import { exportFavorites, importFavorites } from "../store/favorites";
 import {
+  exportShoppingPlan,
+  importShoppingPlan,
+} from "../store/shoppingPlan";
+import {
   exportTasteProfiles,
   importTasteProfiles,
   useTasteProfiles,
@@ -311,6 +315,7 @@ export function CollectionPage({
         ...JSON.parse(exportData()),
         humidors: exportHumidors(),
         favoriteBrands: exportFavorites(),
+        shoppingPlan: exportShoppingPlan(),
         tasteProfiles: exportTasteProfiles(),
       },
       null,
@@ -333,12 +338,14 @@ export function CollectionPage({
         const parsed = JSON.parse(text) as {
           humidors?: unknown;
           favoriteBrands?: unknown;
+          shoppingPlan?: unknown;
           tasteProfiles?: unknown;
         };
         if (parsed.humidors !== undefined) importHumidors(parsed.humidors);
         // Stariji backup nema ključ — tada omiljene ostaju kakve jesu. Uvoz
         // praznog polja bi ih obrisao, a to nije ono što stara datoteka kaže.
         if (parsed.favoriteBrands !== undefined) importFavorites(parsed.favoriteBrands);
+        if (parsed.shoppingPlan !== undefined) importShoppingPlan(parsed.shoppingPlan);
         if (parsed.tasteProfiles !== undefined) importTasteProfiles(parsed.tasteProfiles);
       } catch {
         // kolekcija je uvezena; humidori iz starijeg backupa jednostavno ne postoje
