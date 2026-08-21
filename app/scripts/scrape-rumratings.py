@@ -4,38 +4,44 @@
 Output: app/scripts/output/rumratings_raw.json
 Cache:  app/scripts/output/rumratings_cache/*.html (git-ignored, re-parsable)
 
-  python scripts/scrape-rumratings.py                    # crawl listings, follow pagination
-  python scripts/scrape-rumratings.py --max-pages 5      # short probe first
-  python scripts/scrape-rumratings.py --targets rums     # only bottles already in rums.json
-  python scripts/scrape-rumratings.py --parse-only       # rebuild JSON from cache, no network
+  python scripts/scrape-rumratings.py --targets rums --limit 8   # probe
+  python scripts/scrape-rumratings.py --targets rums             # our catalogue
+  python scripts/scrape-rumratings.py --parse-only               # rebuild JSON from cache
 
-The crawl is discovery-driven: it starts from `--start`, collects every
-/brands/<id>-<slug> link it sees and follows rel=next / ?page=N. robots.txt
-is obeyed; a disallowed URL is skipped, not fetched.
+Discovery defaults to the sitemap published in robots.txt (S3). The HTML
+listing at /?sort=rating is a JS shell with a handful of featured bottles,
+so it is a fallback, not the main crawl. robots.txt crawl-delay (30s as of
+2026-08-21) is the floor between requests; --delay cannot go below it.
 
 Pages the parser cannot read are written to output/rumratings_misses.json
-with their cache path, so a selector fix costs a re-parse and no requests.
+with their cache path. A miss is reported, never stored as a zero.
 """
 from __future__ import annotations
 
 import argparse
+import gzip
 import json
-import urllib.parse
+import urllib.request
 from pathlib import Path
 
 from rumratings_shared import (
     BASE,
     CACHE_DIR,
     OUT_DIR,
+    SITEMAP_URL,
+    USER_AGENT,
     Fetcher,
-    best_match,
+    cache_url_from_path,
+    catalog_target_urls,
     detail_links,
     next_page_url,
     parse_detail,
+    sitemap_rum_urls,
 )
 
 RAW = OUT_DIR / "rumratings_raw.json"
 MISSES = OUT_DIR / "rumratings_misses.json"
+SITEMAP_CACHE = CACHE_DIR / "sitemap.xml"
 RUMS = Path(__file__).resolve().parent.parent / "src" / "data" / "rums.json"
 
 DEFAULT_START = f"{BASE}/?sort=rating"
@@ -63,28 +69,58 @@ def crawl_listings(fetcher: Fetcher, start: str, max_pages: int) -> list[str]:
     return list(urls)
 
 
-def target_urls_from_catalog(fetcher: Fetcher, max_pages: int) -> list[str]:
-    """Detail URLs whose name matches something already in rums.json."""
+def load_sitemap(offline: bool) -> list[str]:
+    """Bottle URLs from the gzip sitemap. Cached as XML; S3 is not rumratings.com."""
+    if SITEMAP_CACHE.exists():
+        xml = SITEMAP_CACHE.read_text("utf-8", "replace")
+        urls = sitemap_rum_urls(xml)
+        print(f"sitemap cache: {len(urls)} bottle URLs")
+        return urls
+    if offline:
+        print("parse-only: no sitemap cache")
+        return []
+    print(f"fetching sitemap {SITEMAP_URL}")
+    req = urllib.request.Request(SITEMAP_URL, headers={"User-Agent": USER_AGENT})
+    with urllib.request.urlopen(req, timeout=60) as resp:
+        raw = resp.read()
+    try:
+        xml = gzip.decompress(raw).decode("utf-8", "replace")
+    except OSError:
+        xml = raw.decode("utf-8", "replace")
+    SITEMAP_CACHE.parent.mkdir(parents=True, exist_ok=True)
+    SITEMAP_CACHE.write_text(xml, "utf-8")
+    urls = sitemap_rum_urls(xml)
+    print(f"sitemap: {len(urls)} bottle URLs")
+    return urls
+
+
+def target_urls_from_catalog(detail_urls: list[str]) -> list[str]:
     catalog = json.loads(RUMS.read_text("utf-8"))
-    urls = crawl_listings(fetcher, DEFAULT_START, max_pages)
-    keep: list[str] = []
-    for url in urls:
-        slug = urllib.parse.urlparse(url).path.rsplit("-", 0)[0]
-        name = slug.split("/")[-1].split("-", 1)[-1].replace("-", " ")
-        hit, _ = best_match(name, catalog, floor=0.6)
-        if hit:
-            keep.append(url)
+    keep = catalog_target_urls(detail_urls, catalog, floor=0.7)
+    print(f"catalogue match: {len(keep)}/{len(catalog)} bottles above floor 0.70")
     return keep
+
+
+def cached_detail_pages() -> list[Path]:
+    pages = []
+    for path in sorted(CACHE_DIR.glob("*.html")):
+        name = path.name
+        if name.startswith("rum-") or name.startswith("brands-"):
+            pages.append(path)
+    return pages
 
 
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--start", default=DEFAULT_START, help="listing URL to crawl from")
+    ap.add_argument("--start", default=DEFAULT_START, help="listing URL (discover=listing)")
     ap.add_argument("--max-pages", type=int, default=40, help="listing pages to follow")
     ap.add_argument("--limit", type=int, default=0, help="stop after N detail pages (0 = all)")
-    ap.add_argument("--delay", type=float, default=1.5, help="seconds between requests")
+    ap.add_argument("--delay", type=float, default=1.5,
+                    help="seconds between requests; raised to robots.txt crawl-delay")
     ap.add_argument("--targets", choices=["all", "rums"], default="all",
                     help="'rums' fetches only bottles that look like ours")
+    ap.add_argument("--discover", choices=["sitemap", "listing"], default="sitemap",
+                    help="sitemap is the live catalogue; listing is a JS shell")
     ap.add_argument("--parse-only", action="store_true", help="use cached HTML only, no network")
     args = ap.parse_args()
 
@@ -92,16 +128,21 @@ def main() -> None:
     fetcher = Fetcher(delay=args.delay, offline=args.parse_only)
 
     if args.parse_only:
-        detail_pages = sorted(CACHE_DIR.glob("brands-*.html"))
+        detail_pages = cached_detail_pages()
         print(f"parse-only: {len(detail_pages)} cached detail pages")
-        pages = [(p.read_text("utf-8", "replace"), _url_from_cache(p)) for p in detail_pages]
+        pages = [(p.read_text("utf-8", "replace"), cache_url_from_path(p.name)) for p in detail_pages]
     else:
-        print(f"crawling listings from {args.start}")
-        urls = (
-            target_urls_from_catalog(fetcher, args.max_pages)
-            if args.targets == "rums"
-            else crawl_listings(fetcher, args.start, args.max_pages)
-        )
+        if args.discover == "sitemap":
+            urls = load_sitemap(offline=False)
+        else:
+            print(f"crawling listings from {args.start}")
+            urls = crawl_listings(fetcher, args.start, args.max_pages)
+        if args.targets == "rums":
+            urls = target_urls_from_catalog(urls)
+        elif args.discover == "sitemap" and not args.limit:
+            print("refusing to fetch the whole sitemap without --limit or --targets rums")
+            print(f"  {len(urls)} bottles; crawl-delay makes that a multi-day job")
+            return
         if args.limit:
             urls = urls[: args.limit]
         print(f"{len(urls)} detail pages to fetch")
@@ -111,7 +152,7 @@ def main() -> None:
             if html is None:
                 continue
             pages.append((html, url))
-            if i % 25 == 0:
+            if i % 10 == 0 or i == len(urls):
                 print(f"  {i}/{len(urls)} fetched")
 
     records: list[dict] = []
@@ -128,17 +169,12 @@ def main() -> None:
     MISSES.write_text(json.dumps(misses, ensure_ascii=False, indent=1) + "\n", "utf-8")
 
     with_reviews = sum(1 for r in records if r["reviews"])
-    print(f"\nwrote {len(records)} rums → {RAW.relative_to(RAW.parent.parent.parent)}")
-    print(f"  {with_reviews} with review text, {len(misses)} pages unparsed → {MISSES.name}")
+    rel = RAW.relative_to(RAW.parent.parent.parent)
+    print(f"\nwrote {len(records)} rums -> {rel}")
+    print(f"  {with_reviews} with review text, {len(misses)} pages unparsed -> {MISSES.name}")
     print(f"  fetch stats: {fetcher.stats}")
     if misses:
         print("  inspect a miss, fix the selector in rumratings_shared.py, re-run --parse-only")
-
-
-def _url_from_cache(path: Path) -> str:
-    """Cache names are <path-slug>.<hash>.html — recover the source path."""
-    slug = path.name.rsplit(".", 2)[0]
-    return f"{BASE}/{slug.replace('brands-', 'brands/', 1)}"
 
 
 if __name__ == "__main__":

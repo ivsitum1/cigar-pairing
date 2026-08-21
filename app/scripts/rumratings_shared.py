@@ -28,6 +28,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 
 BASE = "https://rumratings.com"
+SITEMAP_URL = "http://s3.amazonaws.com/images.rumratings.com/sitemaps/sitemap.xml.gz"
 USER_AGENT = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
     "(KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
@@ -37,11 +38,62 @@ HERE = Path(__file__).resolve().parent
 OUT_DIR = HERE / "output"
 CACHE_DIR = OUT_DIR / "rumratings_cache"
 
-# RumRatings detail pages live under /brands/<numeric-id>-<slug>.
-DETAIL_RE = re.compile(r"^/brands/(\d+)(?:-([a-z0-9-]+))?/?$", re.I)
+# Live site uses /rum/<id>-<slug>; older bookmarks and fixtures used /brands/.
+DETAIL_RE = re.compile(r"^/(?:brands|rum)/(\d+)(?:-([a-z0-9-]+))?/?$", re.I)
+HERO_RATING_RE = re.compile(
+    r"(?is)<big\b[^>]*>\s*(\d{1,2}(?:[.,]\d)?)\s*</big>\s*<span\b[^>]*>\s*/\s*10"
+)
+HERO_VOTES_RE = re.compile(
+    r"(?is)<span\b[^>]*>\s*([\d,.]+)\s*ratings?\s*</span>"
+)
+COMPANY_RE = re.compile(
+    r'(?is)<a\b[^>]+href=["\'][^"\']*/companies/\d+-[^"\']+["\'][^>]*>(.*?)</a>'
+)
 
 
 # ---------------------------------------------------------------- fetching
+
+
+def parse_robots(text: str) -> urllib.robotparser.RobotFileParser:
+    """Parse a robots.txt body. Callers fetch the file with our User-Agent.
+
+    `RobotFileParser.read()` uses Python's default urllib UA. rumratings.com
+    answers that with 403, which the stdlib treats as 'disallow everything'.
+    """
+    rp = urllib.robotparser.RobotFileParser()
+    rp.parse(text.splitlines())
+    return rp
+
+
+def cache_url_from_path(filename: str) -> str:
+    """Invert Fetcher.cache_path naming: rum-12-x.hash.html -> /rum/12-x."""
+    slug = Path(filename).name.rsplit(".", 2)[0]
+    kind, _, rest = slug.partition("-")
+    if kind in ("rum", "brands") and rest:
+        return f"{BASE}/{kind}/{rest}"
+    return f"{BASE}/{slug.replace('-', '/', 1)}"
+
+
+def name_from_detail_url(url: str) -> str:
+    """Slug after the numeric id, spaces for matching against rums.json names."""
+    leaf = urllib.parse.urlparse(url).path.rstrip("/").rsplit("/", 1)[-1]
+    leaf = re.sub(r"^\d+-", "", leaf)
+    return leaf.replace("-", " ")
+
+
+def sitemap_rum_urls(xml_text: str) -> list[str]:
+    """Bottle detail URLs from a sitemap document (companies/home dropped)."""
+    urls: list[str] = []
+    seen: set[str] = set()
+    for loc in re.findall(r"<loc>\s*(.*?)\s*</loc>", xml_text):
+        loc = html_mod.unescape(loc).strip().rstrip("/")
+        path = urllib.parse.urlparse(loc).path
+        if not DETAIL_RE.match(path):
+            continue
+        if loc not in seen:
+            seen.add(loc)
+            urls.append(loc)
+    return urls
 
 
 @dataclass
@@ -53,6 +105,7 @@ class Fetcher:
     cache_dir: Path = CACHE_DIR
     offline: bool = False
     _robots: urllib.robotparser.RobotFileParser | None = field(default=None, init=False)
+    _crawl_delay: float = field(default=0.0, init=False)
     _last: float = field(default=0.0, init=False)
     stats: dict[str, int] = field(default_factory=lambda: {"cache": 0, "net": 0, "error": 0})
 
@@ -61,16 +114,35 @@ class Fetcher:
         slug = re.sub(r"[^a-z0-9]+", "-", urllib.parse.urlparse(url).path.lower()).strip("-")
         return self.cache_dir / f"{slug[:60] or 'root'}.{digest}.html"
 
-    def allowed(self, url: str) -> bool:
-        if self._robots is None:
+    def _load_robots(self) -> None:
+        if self._robots is not None or self.offline:
+            return
+        robots_url = urllib.parse.urljoin(BASE, "/robots.txt")
+        req = urllib.request.Request(
+            robots_url, headers={"User-Agent": USER_AGENT, "Accept-Language": "en;q=0.9"}
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=self.timeout) as resp:
+                text = resp.read().decode(resp.headers.get_content_charset() or "utf-8", "replace")
+        except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError, OSError):
             rp = urllib.robotparser.RobotFileParser()
-            rp.set_url(urllib.parse.urljoin(BASE, "/robots.txt"))
-            try:
-                rp.read()
-            except Exception:
-                # Unreadable robots.txt is not a licence to crawl.
-                rp.disallow_all = True
+            rp.disallow_all = True
             self._robots = rp
+            self._crawl_delay = 0.0
+            print("  robots.txt unreadable — refusing to crawl")
+            return
+        self._robots = parse_robots(text)
+        delay = self._robots.crawl_delay(USER_AGENT)
+        if delay is None:
+            delay = self._robots.crawl_delay("*")
+        self._crawl_delay = float(delay or 0)
+        if self._crawl_delay:
+            print(f"  robots.txt crawl-delay {self._crawl_delay:.0f}s")
+
+    def allowed(self, url: str) -> bool:
+        self._load_robots()
+        if self._robots is None:
+            return True
         return self._robots.can_fetch(USER_AGENT, url)
 
     def get(self, url: str) -> str | None:
@@ -84,7 +156,7 @@ class Fetcher:
             self.stats["error"] += 1
             print(f"  robots.txt disallows {url} — skipped")
             return None
-        wait = self.delay - (time.time() - self._last)
+        wait = max(self.delay, self._crawl_delay) - (time.time() - self._last)
         if wait > 0:
             time.sleep(wait)
         req = urllib.request.Request(
@@ -207,6 +279,14 @@ def parse_detail(page: str, url: str) -> dict | None:
         rating = votes = None
 
     if strategy is None:
+        hero = HERO_RATING_RE.search(page)
+        if hero:
+            rating = _num(hero.group(1))
+            votes_hit = HERO_VOTES_RE.search(page)
+            votes = _num(votes_hit.group(1).replace(",", "")) if votes_hit else None
+            strategy = "hero"
+
+    if strategy is None:
         micro_rating = re.search(r'itemprop=["\']ratingValue["\'][^>]*content=["\']([\d.,]+)', page)
         micro_votes = re.search(r'itemprop=["\'](?:ratingCount|reviewCount)["\'][^>]*content=["\'](\d+)', page)
         if micro_rating:
@@ -222,6 +302,11 @@ def parse_detail(page: str, url: str) -> dict | None:
             title = re.search(r"(?is)<title[^>]*>(.*?)</title>", page)
             if title:
                 name = re.split(r"\s*[|–-]\s*Rum ?Ratings", strip_tags(title.group(1)))[0].strip() or None
+
+    if not brand:
+        company = COMPANY_RE.search(page)
+        if company:
+            brand = strip_tags(company.group(1)) or None
 
     text = strip_tags(page)
     if rating is None:
@@ -257,6 +342,9 @@ def parse_detail(page: str, url: str) -> dict | None:
 REVIEW_BLOCK_RE = re.compile(
     r'(?is)<(?:div|li|article)[^>]*class=["\'][^"\']*(?:review|comment)[^"\']*["\'][^>]*>(.*?)</(?:div|li|article)>'
 )
+REVIEW_TEXT_RE = re.compile(
+    r'(?is)<p[^>]*class=["\'][^"\']*review-text[^"\']*["\'][^>]*>(.*?)</p>'
+)
 
 
 def parse_reviews(page: str, limit: int = 40) -> list[dict]:
@@ -267,19 +355,25 @@ def parse_reviews(page: str, limit: int = 40) -> list[dict]:
     """
     out: list[dict] = []
     seen: set[str] = set()
-    for block in REVIEW_BLOCK_RE.finditer(page):
-        body = strip_tags(block.group(1))
+
+    def add(body: str) -> bool:
         body = re.sub(r"\s+", " ", body).strip()
         if len(body) < 40:
-            continue
+            return False
         key = body[:120].lower()
         if key in seen:
-            continue
+            return False
         seen.add(key)
         score = re.match(r"^(\d{1,2}(?:[.,]\d)?)\s", body)
         out.append({"text": body[:1200], "score": _num(score.group(1)) if score else None})
-        if len(out) >= limit:
-            break
+        return True
+
+    for block in REVIEW_TEXT_RE.finditer(page):
+        if add(strip_tags(block.group(1))) and len(out) >= limit:
+            return out
+    for block in REVIEW_BLOCK_RE.finditer(page):
+        if add(strip_tags(block.group(1))) and len(out) >= limit:
+            return out
     return out
 
 
@@ -328,12 +422,17 @@ def match_score(left: str, right: str) -> float:
     """0..1 similarity. A number clash (12 vs 15 YO) hard-fails to 0."""
     lw, ln = tokens(left)
     rw, rn = tokens(right)
+    return score_from_tokens(lw, ln, rw, rn)
+
+
+def score_from_tokens(
+    lw: frozenset[str], ln: frozenset[str], rw: frozenset[str], rn: frozenset[str]
+) -> float:
     if not lw or not rw:
         return 0.0
     if ln and rn and not (ln & rn):
         return 0.0
     if bool(ln) != bool(rn) and (ln | rn):
-        # One side names an age the other omits: possible, but not a strong match.
         penalty = 0.15
     else:
         penalty = 0.0
@@ -346,6 +445,46 @@ def match_score(left: str, right: str) -> float:
     if denom <= 0:
         return 0.0
     return max(0.0, weight(shared) / denom - penalty)
+
+
+def catalog_target_urls(
+    detail_urls: list[str], catalog: list[dict], floor: float = 0.7
+) -> list[str]:
+    """One RumRatings URL per catalogue bottle, greedy by match score.
+
+    Sitemap is ~13k URLs; an inverted index on strong tokens keeps this
+    linear in catalogue size instead of a 13k × 320 scan.
+    """
+    named: list[tuple[str, frozenset[str], frozenset[str]]] = []
+    index: dict[str, list[int]] = {}
+    for i, url in enumerate(detail_urls):
+        words, nums = tokens(name_from_detail_url(url))
+        named.append((url, words, nums))
+        for tok in words:
+            if tok not in SOFT:
+                index.setdefault(tok, []).append(i)
+
+    claimed: set[str] = set()
+    chosen: list[str] = []
+    for bottle in catalog:
+        ours = bottle.get("name") or ""
+        ow, on = tokens(ours)
+        candidates: set[int] = set()
+        for tok in ow:
+            if tok not in SOFT:
+                candidates.update(index.get(tok, ()))
+        best_url, best_s = None, 0.0
+        for i in candidates:
+            url, rw, rn = named[i]
+            if url in claimed:
+                continue
+            score = score_from_tokens(ow, on, rw, rn)
+            if score > best_s:
+                best_url, best_s = url, score
+        if best_url and best_s >= floor:
+            claimed.add(best_url)
+            chosen.append(best_url)
+    return chosen
 
 
 def best_match(name: str, candidates: list[dict], key: str = "name", floor: float = 0.55):

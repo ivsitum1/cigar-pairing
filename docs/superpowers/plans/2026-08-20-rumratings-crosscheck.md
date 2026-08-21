@@ -1,8 +1,14 @@
 # RumRatings × naš indeks — provjera ocjena i lov na materijal
 
-**Status:** alat isporučen, prolaz nad živim podacima čeka mrežu.
+**Status:** alat prilagođen živom siteu (2026-08-21); lokalni prolaz nad katalogom.
 **Skripte:** `app/scripts/scrape-rumratings.py`, `app/scripts/compare-rumratings.py`,
 `app/scripts/rumratings_shared.py`, test `app/scripts/test_rumratings.py` (CI gate).
+
+Živi site (provjereno 2026-08-21): detalj je `/rum/<id>-<slug>` (ne `/brands/`);
+ocjena je `<big>7.8</big>/10` u turbo-frameu, bez JSON-LD. Listing `/?sort=rating`
+je JS ljuska (~5 boca). Otkriće ide sitemapom iz `robots.txt` (S3).
+`crawl-delay: 30`. `RobotFileParser.read()` s Python UA dobiva 403 i lažno
+zabranjuje sve — fetcher zato čita robots.txt našim User-Agentom.
 
 ## Zašto
 
@@ -24,8 +30,8 @@ na njihovoj stranici, ne neprovjeren kod.
 ## Pokretanje (iz `app/`)
 
 ```bash
-python scripts/scrape-rumratings.py --max-pages 3 --limit 30   # kratka proba
-python scripts/scrape-rumratings.py                            # puni prolaz
+python scripts/scrape-rumratings.py --targets rums --limit 8   # kratka proba
+python scripts/scrape-rumratings.py --targets rums             # naš katalog (~320 boca)
 python scripts/compare-rumratings.py --min-votes 25 --gap 1.2
 ```
 
@@ -34,7 +40,8 @@ python scripts/compare-rumratings.py --min-votes 25 --gap 1.2
 - Stranice koje parser nije pročitao završe u `rumratings_misses.json` zajedno s
   putanjom u cacheu. **Miss se prijavljuje, ne izmišlja se nula** — nula bi ušla
   u prosjek i pokvarila usporedbu.
-- `robots.txt` se poštuje; razmak među zahtjevima je `--delay` (default 1,5 s).
+- `robots.txt` se poštuje; razmak je `max(--delay, crawl-delay)` — na siteu je
+  **30 s**. Puni sitemap (~13k) bez `--limit`/`--targets rums` skripta odbija.
 
 ## Što izlazi
 
