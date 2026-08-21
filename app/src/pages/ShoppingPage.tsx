@@ -51,6 +51,11 @@ import {
   wishlistShopKey,
   wishlistTextSections,
 } from "../lib/shoppingPicks";
+import {
+  planRowKey,
+  togglePlanRow,
+  useShoppingPlanOwned,
+} from "../store/shoppingPlan";
 
 const CATEGORIES: DrinkCategory[] = [
   "rum",
@@ -84,6 +89,7 @@ export function ShoppingPage({
   const market = useMarket();
   const collection = useCollection(); // re-render na promjene kolekcije/liste zelja
   const { stock: humidors } = useHumidors(); // zaliha odlucuje sto je „dopuna"
+  const planOwned = useShoppingPlanOwned(); // kvačice „Moj plan” (localStorage)
   const {
     line,
     detail,
@@ -588,6 +594,7 @@ export function ShoppingPage({
 
       {/* 3) preporuke po segmentu — vrh / omjer / pristupacno */}
       <SectionTitle>{t("shop.segments")}</SectionTitle>
+      <p className="mb-2 text-xs leading-relaxed text-dim">{t("shop.segmentsHint")}</p>
       <div className="space-y-3">
         {segments.map(({ cat, picks }) => (
           <div key={cat} className="rounded-xl border border-dim/15 bg-cedar p-3">
@@ -668,8 +675,9 @@ export function ShoppingPage({
         </div>
       )}
 
-      {/* 5) moj plan (rum tierovi iz Excela) — sklopivo */}
+      {/* 5) moj plan (rum tierovi) — sklopivo; kvačice su ručne */}
       <SectionTitle>{t("shop.myPlan")}</SectionTitle>
+      <p className="mb-2 text-xs leading-relaxed text-dim">{t("shop.myPlanHint")}</p>
       <button
         onClick={() => setShowPlan(!showPlan)}
         className="w-full rounded-lg border border-dim/25 py-2 font-display text-xs uppercase tracking-widest text-dim hover:border-zlato/40"
@@ -684,31 +692,41 @@ export function ShoppingPage({
                 {t("shop.tier")} {tier}
               </div>
               <div className="space-y-1.5">
-                {rows.map((row, i) => (
-                  <div
-                    key={i}
-                    className={`flex items-start gap-3 rounded-lg border p-2.5 ${
-                      row.owned ? "border-lista/40 bg-lista/10" : "border-dim/15 bg-cedar"
-                    }`}
-                  >
-                    <span
-                      className={`mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full border text-xs ${
-                        row.owned ? "border-lista text-lista" : "border-dim/40 text-transparent"
+                {rows.map((row, i) => {
+                  const owned = planOwned.has(planRowKey(tier, row.bottleTarget));
+                  return (
+                    <div
+                      key={i}
+                      className={`flex items-start gap-3 rounded-lg border p-2.5 ${
+                        owned ? "border-lista/40 bg-lista/10" : "border-dim/15 bg-cedar"
                       }`}
                     >
-                      ✓
-                    </span>
-                    <div className="min-w-0">
-                      <div className="text-sm text-papir">
-                        <span className="text-dim">{lx(row.styleTarget)}:</span> {row.bottleTarget}
-                      </div>
-                      <div className="mt-0.5 text-xs text-dim">
-                        {lx(row.profile)}
-                        {row.priceSource && ` · ${row.priceSource}`}
+                      <button
+                        type="button"
+                        aria-pressed={owned}
+                        aria-label={owned ? t("shop.tierUnmark") : t("shop.tierMark")}
+                        onClick={() => togglePlanRow(tier, row.bottleTarget)}
+                        className={`mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full border text-xs transition-colors ${
+                          owned
+                            ? "border-lista bg-lista/20 text-lista hover:bg-lista/30"
+                            : "border-dim/40 text-transparent hover:border-zlato/50 hover:text-zlato/40"
+                        }`}
+                      >
+                        ✓
+                      </button>
+                      <div className="min-w-0">
+                        <div className="text-sm text-papir">
+                          <span className="text-dim">{lx(row.styleTarget)}:</span>{" "}
+                          {row.bottleTarget}
+                        </div>
+                        <div className="mt-0.5 text-xs text-dim">
+                          {lx(row.profile)}
+                          {row.priceSource && ` · ${row.priceSource}`}
+                        </div>
                       </div>
                     </div>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
             </div>
           ))}
