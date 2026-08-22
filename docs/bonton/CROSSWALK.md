@@ -4,8 +4,10 @@
 
 | Što | Gdje u GitHubu | Grana |
 |-----|----------------|-------|
-| App (PWA, Club, pairing engine, `bonton.json`) | `app/`, `docs/bonton/APP-FROM-NOTEBOOKLM.md` | **`master`** |
-| Knjižni rukopis (kratki kanon u appu) | `docs/bonton/mala-knjiga-pusackog-bontona.md` | **`master`** (+ sync na book) |
+| App (PWA, Club, pairing engine, `bonton.json`) | `app/`, `docs/bonton/README.md` | **`master`** |
+| EN rukopis (source of truth) | `docs/bonton/HOW-TO-BE-A-GENTLEMAN-AT-THE-TABLE-DRAFT.md` | **`master`** |
+| HR književni prijevod (downstream) | `docs/bonton/KAKO-BITI-GOSPODIN-ZA-STOLOM-DRAFT.md` | **`master`** |
+| Kratki kanon u appu | `app/src/data/bonton.json` + `mala-knjiga` sync | **`master`** |
 | Istraživački korpus + NotebookLM dumpovi | `docs/bonton/research/` | **`cursor/bonton-book-research-9b19`** (ne merge u master) |
 | Grill inbox (kratki bullets) | `docs/bonton/grill-inbox.md` | **`master`** |
 
@@ -25,20 +27,21 @@ Zatim:
 - App rad: folder `cigar_and_rum` na `master`
 - Knjiga / NotebookLM dumpovi: `../cigar-pairing-book/docs/bonton/research/`
 
-## Mapiranje sadržaja
+## Mapiranje sadržaja (2026-08-22 enrichment)
 
-| Tema iz NotebookLM | Knjiga (book branch) | App (`master`) |
-|--------------------|----------------------|----------------|
-| Lounge precepts | rukopis + `BOOK-FROM-NOTEBOOKLM.md` | `bonton.json` **VIII. Salon i klub** (`b-lounge`); Club quiz |
-| Higijena rezača / pepeo / telefon | vignette u knjizi | Club 101 lekcija; bonton V–VIII |
-| Čaša, voda, led, tempo gutljaja | stol / piće poglavlja | Club 101; pairing UI hints |
-| Body / ABV / Maduro–slatkoća | bilješke, ne engine | `app/src/engine/rules.ts` |
-| Obiteljske priče / arhetipovi | eseji / ton | `eveningArchetypes.json` |
-| Holt's / Oliva povijest | selektivno | Club 101 / facts — ne bonton |
-| Writing craft / handbook form (5017a44b) | `research/notebooklm-grill/5017a44b-*` + EN/HR draft How-to-read / editor notes | ne u app JSON |
-| **Triple grill 2026-07-30** (Cigars daily / Omaha / Black Gold) | `research/notebooklm-grill/{7b267552,6ccc327c,30d6a797}-*` + grill-inbox | Club `d-tasting-order`; lexicon 3 termina; `bonton.json` / mala-knjiga precepti |
-| **EN freeze 2026-07-30** | `HOW-TO-BE-A-GENTLEMAN-AT-THE-TABLE-DRAFT.md` = EN source of truth | app sync later from HR canon |
-| **HR freeze 2026-07-30 (Faza 2)** | `KAKO-BITI-GOSPODIN-ZA-STOLOM-DRAFT.md` = književni prijevod s EN (Dodatak A/B) | **synced** → `mala-knjiga` + `bonton.json` (2026-07-30) |
+| Tema | EN rukopis | HR rukopis | App |
+|------|------------|------------|-----|
+| Riječi za stol / „ne paše mi” | Ch 5 + Interlude | Ch 5 | `lexicon.json` → `rijeci-za-stol` |
+| Kušanje: red, voda, nos izdaleka | Ch 13 | Ch 13 | `bonton.json` → `b-table` |
+| Rum etiketa (E150a, 5+3, distillery-first) | Ch 14 | Ch 14 | `dictionary.json` + Club `d-rum-reading-label` + `lexicon` `distillery-first` |
+| Nikotin bez srama; snaga vs tijelo | Ch 15 | Ch 15 | `bonton.json` → `b-host`; `lexicon` → `snaga-vs-tijelo` |
+| Tuđi stol; vjetar; strani običaji | Ch 20 | Ch 20 | `bonton.json` → `b-outdoors`; Club `t-foreign-table` |
+| Unutarnja ljestvica / LE | Expansion I | (po potrebi) | `lexicon` → `unutarnja-ljestvica`, `limited-edition` |
+| Lounge precepts | Ch 16 | Ch 16 | `bonton.json` → `b-lounge` |
+| **Citati / epigraf (tisak)** | Back matter *Notes on quotations* | *Napomene o citatima* | nema app JSON — politika u rukopisu |
+| Body / ABV / Maduro–slatkoća | bilješke | — | `app/src/engine/` (ne bonton eseji) |
+| **EN freeze** | `HOW-TO-BE-…-DRAFT.md` = source of truth | sync nakon EN pass | app sync iz kanona |
+| **HR freeze** | — | `KAKO-BITI-…-DRAFT.md` | kratki isječci → `bonton.json` |
 
 ## NotebookLM bilježnice (share URL)
 
@@ -57,13 +60,11 @@ Zatim:
 | **Bonton / etiquette** (grill 2026-07-19) | `adfe8fc8-de29-4919-a308-8284de395a3e` |
 | **Writing craft / publishing** (grill 2026-07-30 → handbook form) | `5017a44b-e896-4c56-aa47-8857912e67de` |
 
-Puni grill dumpovi (2026-07-18 + refresh):  
-`cursor/bonton-book-research-9b19` → `docs/bonton/research/notebooklm-grill/`  
+Puni grill dumpovi:  
+`cursor/bonton-book-research-9b19` → `docs/bonton/research/notebooklm-grill/`
 
-Lokalni dump 2026-07-19: `docs/bonton/notebooklm-grill/adfe8fc8-*`  
-Craft → priručnik 2026-07-30: `docs/bonton/research/notebooklm-grill/5017a44b-*`  
-Triple grill 2026-07-30: `docs/bonton/research/notebooklm-grill/{7b267552,6ccc327c,30d6a797}-*`
 ## Pravilo mergea
 
 - Teški extracti / NotebookLM odgovori s fusnotama → **samo** book-research grana (`DO-NOT-MERGE.md`).
-- Kad je poglavlje spremno za app: prenesi **originalan** HR/EN tekst u `app/src/data/bonton.json` (i po potrebi Club JSON) PR-om na `master` — ne cijeli research folder.
+- Kad je poglavlje spremno za app: prenesi **sažet** HR/EN tekst u `app/src/data/bonton.json` (i po potrebi Club / lexicon) PR-om na `master` — ne cijeli research folder.
+- `bonton.test.ts` drži **11** poglavlja; novo znanje ide u postojeće `id`-ove, ne kao 12. poglavlje.

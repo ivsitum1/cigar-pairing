@@ -6,51 +6,58 @@
 
 ## Situacije stola (pitanja za gosta / domaćina)
 
-- Gost stiže s 15 min zakašnjenja dok je domaćin već upalio prvu — smije li domaćin nastaviti ili čekati? *Provjeriti: tko prvi pali kad je već „dogovoreno vrijeme”?*
-- Dva para na istom stolu, jedan puša, drugi ne — gdje se postavi pepeljara da ne dijeli prostor s netipičnim gostom?
-- Netko nudi „još jednu” nakon treće — koje riječi domaćin koristi da spusti ljestvicu bez da zvuči kao odbijanje gosta?
-- Gost pita za savjet o rezacu / drawu — koliko detalja je ljubazno prije nego postane mini-lekcija?
-- Domaćin ima samo jednu jaču vitolu; gost traži blažu — je li iskren „nemam, ali evo ove kraće” bolji od tihe improvizacije?
-- Na stolu se miješaju cigar i cigarete — tko prvi pita za prozor / terasu?
-- Razgovor se prekine telefonskim pozivom domaćina — ostavlja li se dim u pepeljari ili se ugasi dok traje poziv?
-- Gost želi skratiti zadnju trećinu — kako domaćin reagira bez komentara o „potrošnji” poklona?
-- Netko donese vlastitu cigaru bez najave — kad je to gostoprimstvo, a kad neugodno?
-- Dijeljenje boce: gost ne pije alkohol — ostaje li prazna čaša na stolu ili se ritual skraćuje?
+> Status 2026-08-22: većina ušla u Expansion *Situations* (EN+HR) na grani `docs/bonton-ch-enrichment` (PR #190). Ostaje provjera citata / literature niže.
+
+- [x] Gost stiže s 15 min zakašnjenja dok je domaćin već upalio prvu
+- [x] Dva para na istom stolu, jedan puša, drugi ne — pepeljara
+- [x] „Još jednu” nakon treće — spuštanje ljestvice
+- [x] Savjet o rezaču / drawu — dva detalja, pa pitanje
+- [x] Samo jača vitola — iskrena granica / kraća
+- [x] Cigar + cigarete — tko pita za prozor
+- [x] Telefonski poziv domaćina — pepeo / gašenje / riječ
+- [x] Skraćivanje zadnje trećine — bez brojanja centimetara
+- [x] Vlastita cigara bez najave — primiti gestu
+- [x] Gost ne pije alkohol — bez prazne čaše „za formu”
 
 ---
 
 ## Lokalni HR običaji (terasa, klub, restoran)
 
-- **Terasa iznad susjednog balkona:** u praksi ljudi puše „prema van”, ali dim ide gore — bilježiti stvarne fraze susjeda („samo malo prozora”) vs. znakovi u zgradi.
-- **Kafić s vanjskim stolovima:** gdje je pepeljara na stolu dovoljna, a gdje traži eksplicitno pitanje osoblja?
-- **Klub / privatni prostor:** postoji li neformalno pravilo „prvi dim domaćina”, pa tek onda gosti?
-- **Restoran s djelomično pokrivenom terasom:** granica između „pušačkog” i „obiteljskog” dijela — što ljudi rade kad nema oznake?
-- **Ljetni vikend na Jadranu:** vjetar s mora vs. vjetar s kopna — kratke bilješke s terasa (bez imenovanja lokacija u knjizi?)
-- **Poklon u HR:** tuba od 3–5 cigara iz specijalizirane trgovine vs. duty-free — što se smatra „pristojno”, a što „previše”?
-- **Humidor kod kuće:** gost donese kutiju — ući u domaćinov humidor ili držati odvojeno do večeri?
-- **Zabrana u stanu, terasa dopuštena:** kako se najavljuje dim gostu koji dolazi prvi put (WhatsApp poruka vs. usmeno na ulazu)?
+- [x] **Terasa iznad susjednog balkona** — Ch 18/20 + Expansion
+- [x] **Kafić s vanjskim stolovima** — pepeljara ≠ blanko dopuštenje; pitaj osoblje
+- [x] **Klub / privatni prostor** — često prvi plamen domaćina (Expansion)
+- [x] **Restoran, napola natkrivena terasa** — pitaj osoblje kad nema oznake
+- [x] **Jadran** — vjetar s mora vs. s kopna
+- [x] **Poklon u HR** — specijalistička trgovina vs. duty-free volumen
+- [x] **Humidor** — gostova kutija po strani dok se ne pozove spajanje
+- [x] **Stan zabrana / terasa OK** — poruka prije dolaska
 
 ---
 
-## Citati / atribucije za provjeru
+## Citati / atribucije — riješeno za tisak (2026-08-22)
 
-- *„Manners are not the police of taste”* — već u rukopisu; potražiti starije britanske izvore istog duha (Debrett? Post? Hardy?) — **samo atribucija, ne copy-paste**.
-- Churchill + cigar anegdote — koje su potvrđene, koje urban legend? Označiti: provjera prije epigrafa ili fusnote.
-- Hemingway / Cuba / cigar — previše korišten u pop kulturi; treba li uopće u knjigu ili samo kao kontrast „mit vs. stol”?
-- Winston / Grant / generalski cigar trope — isti filter: potvrđen citat ili samo slika?
-- Hrvatski izvor: postoji li lokalni aforist / publicist o pušenju, gostoprimstvu, „meri”? (književnost, ne forum).
-- *„A gentleman knows when to leave”* — varijante u etiquette knjigama; usporediti dužinu i ton s našim poglavljem IV.
+Uredničke odluke stoje u EN/HR stražnjem materijalu: *Notes on quotations* / *Napomene o citatima*. Sažetak:
+
+- [x] *„Etiquette / Bonton nije policija ukusa”* — **autorov** epigraf; ne Debrett/Post/Hardy
+- [x] Drugi red epigrafa — **parafraza** (ne Shaw, ne doslovni citat)
+- [x] Churchill / Hemingway / generalski trope — samo **mit vs stol**; bez epigrafa i „citata”
+- [x] *„Gentleman knows when to leave”* — poslovično; u knjizi autorovi precepti (*gost zna kad stati*)
+- [x] HR književni aforizam o pušenju — **nema**; lokalni ton s terase/kluba
+- [x] *Mudra misao* / *A wise thought* — autorovi precepti, bez lažnih atribucija
+- [x] Bridges bibliografija — EN: Rutledge Hill Press (John Bridges + Bryan Curtis); HR: + Leo-commerce prijevod 2001
+
+Otvoreno samo za kasniji urednički dodatak (nije blokada tiska): primarni izvor ako se ikad želi fusnota uz povijesnu anegdotu.
 
 ---
 
 ## „Ne radi se o ukusu” — vignette (sirovine)
 
-- Domaćin insistira na XO-u, gost bi radije vodu — vignette: kako se večer spašava bez objašnjavanja ukusa.
-- Netko kaže „ne volim dim” jednom rečenicom; drugi gost nastavi filozofirati o terroiru — kontrast ponašanja, ne ocjena ukusa.
-- Prejak dim u maloj sobi; domaćin ne primjećuje, gost ne želi biti neotesan — trenutak kad bonton = prostor, ne vitola.
-- „Moja je bolja” usporedba na stolu — kratka scena: što kaže treći koji ne puša?
-- Canoeing na tuđoj cigari — već u knjizi; bilježiti **nova** realna varijanta (krivi rez, prebrzo paljenje) bez ponavljanja gotovog teksta iz poglavlja VII.
-- Domaćin fotografira stol za društvene mreže bez pitanja — dim, čaše, lica: pitanje suglasnosti, ne estetike kadra.
+- [x] XO vs voda — Expansion Situations
+- [x] „Ne volim dim” + terroir predavanje — Expansion
+- [x] Prejak dim u maloj sobi — Expansion
+- [x] „Moja je bolja” / treći koji ne puši — Expansion
+- [x] Krivi rez / prebrzo paljenje (canoeing varijanta) — Expansion
+- [x] Fotografija stola bez pristanka — Expansion + Ch 15/17
 
 ---
 
@@ -58,13 +65,13 @@
 
 | Naslov / autor | Zašto na listi | Status |
 |----------------|----------------|--------|
-| Debrett's *A-Z of Modern Manners* (ili ekvivalent) | Struktura kratkih precepta, ne sadržaj o cigar | za čitanje |
-| Emily Post — odabrana poglavlja o gostoprimstvu | Ton „ljubaznost bez snobizma” | za čitanje |
+| Debrett's *A-Z of Modern Manners* (ili ekvivalent) | Struktura kratkih precepta, ne sadržaj o cigar | forma OK; bez lažnih citata |
+| Emily Post — odabrana poglavlja o gostoprimstvu | Ton „ljubaznost bez snobizma” | forma OK; bez lažnih citata |
 | *The Cigar Companion* (M. Perelman) | Tehnički kontekst, ne bonton — granica 101 vs. bonton | selektivno |
 | Min Ron Nee — ilustracije / katalog | Vizualni ritam knjige, ne tekst za kopiranje | inspiracija |
-| Klasične britanske „short rules” knjige (Hardy, itd.) | Epigraf i duh poglavlja I | usporedba forme |
-| HR: vodiči vikendice / lifestyle (ako postoje o terasama, gostima) | Lokalni kontekst bez datiranja trgovina | potražiti |
-| Znanstveni / zdravstveni izvori o pasivnom dimu | Samo za granicu poglavlja II — bez propovijedi | citat provjera |
+| Klasične britanske „short rules” knjige (Hardy, itd.) | Epigraf i duh poglavlja I | **epigraf = autorov**, ne Hardy citat |
+| HR: vodiči vikendice / lifestyle (ako postoje o terasama, gostima) | Lokalni kontekst bez datiranja trgovina | nije citatni izvor |
+| Znanstveni / zdravstveni izvori o pasivnom dimu | Samo za granicu poglavlja II — bez propovijedi | **ne citirati** u epigrafu; bonton ≠ medicina |
 | Memo: `2026-07-17-content-brainstorm.md` §6 | Kutovi sakupljanja | već u projektu |
 
 ---

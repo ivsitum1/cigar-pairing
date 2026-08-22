@@ -17,8 +17,12 @@ To those who know that smoke is only an excuse to sit down — and to those stil
 ### Epigraph
 
 > Etiquette is not the police of taste. It is a way for others to breathe more easily while you enjoy yourself.
+>
+> — the author
 
-> A gentleman is a person who makes the lives of others more pleasant. — paraphrase in the spirit of classic courtesy guides (not a verified verbatim quotation)
+> A gentleman is a person who makes the lives of others more pleasant.
+>
+> — paraphrase in the spirit of classic courtesy guides (not a verified verbatim quotation; not to be attributed to a named author)
 
 ---
 
@@ -245,6 +249,8 @@ A gentleman praises someone else's choice without the comparison "mine is better
 - "Do you have time for a longer one, or a shorter one?"
 - "Is smoke all right here, or better outside?"
 - "Would you like advice, or just company?"
+- "What do you taste in this — sweet, dry, something else?"
+- "Shall we compare two bottles, or stay with one tonight?"
 
 The second question often saves more than the first piece of advice.
 
@@ -269,6 +275,10 @@ A good host hears this without a comment about the "waste" of a gift.
 "Not my profile tonight" is better than silent suffering.
 
 "I'd rather have water alongside your smoke" is better than false enthusiasm.
+
+"That sits in a different register for me" saves an evening when the bridge isn't there — without calling anyone wrong.
+
+"You don't have to finish the cigar" is a host's gift, not an insult.
 
 A gentleman receives such sentences as information, not as an insult.
 
@@ -748,6 +758,18 @@ Water cleans the palate, softens the hit, brings back the conversation. A gentle
 
 If a guest doesn't drink alcohol, the ritual doesn't fall apart. Smoke, water, conversation — the table still stands. An empty glass "for form's sake" is not compulsory. Respect is.
 
+### When you lead a tasting (rum or whisky)
+
+If you are hosting more than one bottle, the evening needs order more than it needs volume.
+
+Five or six items is enough for learning; more blurs comparison. Start mild in both aroma and alcohol, in cigar and glass. Spirits at room temperature, neat — ice and highballs are a different ritual for another night.
+
+Nose the glass from a distance first, then closer. High-proof vapour can sting if you dive in. A gentle swirl is not forbidden; a theatrical one that fills the room with alcohol is another matter.
+
+Reset the palate with room-temperature water between sips and draws. More water than alcohol through the session is not weakness — it is how guests still taste the last glass.
+
+Do not aerate cask-strength spirit in the mouth as if it were wine. Offer water; let the guest choose the drop.
+
 ### In practice
 
 A gentleman sets out water before wisdom.
@@ -761,6 +783,10 @@ A gentleman pours quietly.
 A gentleman: mild first, then stronger — when he leads.
 
 A gentleman does not interrogate why someone drinks slowly.
+
+When he leads a tasting, a gentleman stops before the palate is tired.
+
+When he leads a tasting, a gentleman noses from a distance first.
 
 ### Vignette: a loud pour
 
@@ -801,6 +827,18 @@ A high alcohol percentage sometimes "holds" a fuller smoke better than a thin si
 ### Sweetness and caution
 
 Sweeter profiles sometimes like darker wrappers. Lighter wrappers sometimes like cleaner, drier lines. A declaration of additives in rums — where it exists — is worth more than marketing fog. A gentleman does not moralise about additives as if they were a sin; he speaks clearly when he knows, and stays quiet when he doesn't.
+
+### Reading a rum label without theatre
+
+Dark glass is not always old spirit. **E150a** is permitted caramel colour in rum (and in Scotch whisky). It evens the look of the bottle; it does not, by itself, tell you how the liquid tastes. A gentleman listens to the palate, not only to the hue.
+
+**Age numbers** are not all the same kind of promise. Twelve years on one label is not the same story as a solera-style blend, nor the same as **5+3** on a bottle such as Dos Maderas — five years in rum casks, then three in sherry wood. The plus is a bridge between two phases, not a sum you can read as "eight years in one place."
+
+**Distillery-first** bottles — houses such as Foursquare or Doorly's on Barbados, where the maker and cask path are named — help an honest table conversation. A generic "Caribbean blend" with no address is harder to judge before opening. That is not snobbery; it is clarity.
+
+When you are training your palate, one transparent bottle and one rounder, sweeter one make a better evening than five declarations of rarity. Compare, note, don't preach.
+
+If someone at the table knows less than you do, translate the label into hospitality, not into an exam. If you know less than the label pretends, say so. That, too, is manners.
 
 ### The word "smooth"
 
@@ -856,9 +894,11 @@ Ask about strength, smokiness and time before you open the box.
 
 Keep a mild and a medium cigar and an approachable drink at the start. The peat bomb and the full maduro can come later — if ever.
 
+For a beginner, offer a milder or shorter vitola — sometimes called a "golf" stick in passing conversation. Do not force a premium format to prove the host. The evening is hospitality, not an entrance exam.
+
 Show where the ashtray and the toilet are. Small things save the evening.
 
-Don't push "one more" when the guest is full.
+Offer "one more" once, with a real exit. Do not push until the guest yields. Full is full.
 
 Keep a mentoring tone only when it's asked for. Otherwise keep to hospitality.
 
@@ -868,11 +908,13 @@ Now and then, gently, check that everyone is well — without turning the table 
 
 Bring a small gift if it's the custom — a bottle, a small box, nothing excessive.
 
-Respect the order in the humidor. Don't rummage.
+Respect the order in the humidor. Don't rummage. Don't squeeze the leaves as if you were testing fruit at a market — ask what is ready for tonight.
 
 Give thanks concretely: "That amontillado with the Connecticut…" is better than a general "great time".
 
 Cutting the last third short is not weakness. It is measure.
+
+If you bring a bottle where custom allows, share it — or leave it in the car. Drinking only your own in someone else's lounge is not generosity.
 
 If you're running late, let them know. The host is not obliged to keep the first smoke in a state of suspension like an eternal flame — but a good host and a good guest agree on the rhythm.
 
@@ -884,9 +926,17 @@ A gentleman does not turn a mistake into a performance. Nor into someone else's 
 
 ### Nicotine discomfort — without shame
 
-If a guest goes pale, sweats, falls silent: water, a little something sweet if it helps, air, a shorter session. No jokes about "weakness". No heroic tale of how you "hold it".
+Strength is nicotine — how hard the leaf hits head and chest. Body is the fullness of smoke and flavour. They can diverge: a full maduro can sit medium in strength; a mild Connecticut can still feel round in the mouth. A host who confuses the two often offers the wrong ladder.
+
+If a guest goes pale, sweats, falls silent, or simply stops talking: water, a little something sweet if it helps, air, a shorter session. No jokes about "weakness". No heroic tale of how you "hold it". No betting on who will last.
+
+Slow the pace before you reach for a stronger drink. Coffee can sharpen nicotine; it is not a cure. Retrohale — sending smoke through the nose — is a tasting tool, not a duty; on a strong cigar it can tip a guest over the edge.
+
+What the host may say quietly: "More water?" "Shall we pause five minutes?" "There's a shorter one if you'd like." What the guest may say without apology: "I'll stop here — that was enough for me."
 
 A host who quietly saves the evening is a greater master of the table than one who lectures about nicotine.
+
+What happened at the table stays at the table. Do not retell another's discomfort as an anecdote, a meme, or a photograph. That is not wit. It is betrayal dressed as humour.
 
 ### In practice
 
@@ -897,6 +947,8 @@ A good guest knows when to stop.
 A gentleman handles mistakes quietly.
 
 A gentleman does not shame a body that says enough.
+
+A gentleman does not photograph someone else's discomfort — at the table or the morning after.
 
 A gentleman gives thanks concretely.
 
@@ -1190,6 +1242,10 @@ A gentleman, when he receives a gift, does not grade it in front of the giver li
 
 A gentleman does not use a gift to get into someone else's humidor "on the principle of a return" without an invitation.
 
+A gentleman, when a guest brings a closed box, does not treat the house humidor as a warehouse that must absorb it before the evening begins.
+
+In Croatia, a small tube or box from a specialist shop often lands better than an oversized duty-free haul. Measure is the message; volume is not.
+
 ### A wise thought
 
 *The best gift is remembered by the evening, not by the receipt.*
@@ -1198,29 +1254,65 @@ A gentleman does not use a gift to get into someone else's humidor "on the princ
 
 ## 20. When the table is not yours
 
-Someone else's space calls for a double measure.
+Someone else's space calls for a double measure: ask before the flame, and leave cleaner and calmer than you found it.
+
+### The rule before detail
+
+Where smoking is forbidden, the conversation is over. There is nothing sophisticated about arguing with a sign, a detector, or a waiter who did not write the house policy.
+
+Where smoking is allowed, measure still applies. Permission is not licence to fill the room.
 
 ### Restaurant
 
 Where you may, ask how far. Where you may not, you may not. The staff are not there to run your philosophical debate about freedom.
 
-Don't take up the space of someone else's dessert at the neighbouring table with your ashtray.
+Sit with your back to the wind when you can; do not send smoke into the neighbouring table's dessert or into the doorway where people queue.
+
+A travel ashtray or a small tin beats ash on the lawn, the planter, or the stone ledge. The ashtray is not a bin — bands and cellophane go in the rubbish.
 
 ### Hotel
 
-Corridors, rooms with detectors, shared terraces — the house rules. A gentleman reads the house rules before lighting up "just on the balcony" in the direction of someone else's window.
+Corridors, rooms with detectors, shared terraces — read the house rules before lighting up "just on the balcony" toward someone else's window. Smoke rises. Curtains remember.
+
+Wrong: "The balcony is mine." Kindly: put it out, move, or go to a designated spot. A hotel remembers smells longer than its guests.
+
+### Outdoors and wind
+
+Wind and passers-by change the rules faster than a humidor. On the Adriatic, sea wind and land wind are not the same evening — adjust the place, the format, or postpone.
+
+A panatela in open wind wants shelter; blame the table, not the guest's choice of vitola. A jet torch stays clear of hair, napkins, and dry plants.
+
+On the street, give doorways and waiting lines a wide berth. "It's free out here" is not an argument when smoke lands on someone who did not choose your evening.
 
 ### Business and business balconies
 
 Business smoke is not an excuse for hierarchy. A boss who offers a cigar as an entrance exam is a poor host. A colleague who smokes only to be closer to the boss is a poor guest of his own character. If you smoke, smoke like people — not as a strategy.
 
+At a fair, a festival, or an office terrace, do not block the passage with smoke and a chair. Do not light near the buffet while others are eating.
+
 ### Someone else's home
 
 Ask at the door or earlier by message. "May we go out on the terrace?" is better than an assumption. If smoking is banned in the flat, the terrace is not automatically your stage — agree on it.
 
+A host who must decline smoke can say so clearly before arrival: "We're glad you're coming — ours is a smoke-free flat; the terrace if the weather allows." Clarity beats awkwardness at the door.
+
 ### Car, taxi, boat
 
 Consent. Air. The smell that lingers. A gentleman would rather wait for a stop than "conquer" the cabin.
+
+In someone else's car or a taxi, only with clear permission — and with the window in mind. On a boat, the wind that felt gentle at the pier may turn cruel ten metres out.
+
+### Foreign customs, local table
+
+In a foreign country, read the local rules before quoting your own lounge habits. A cut fee, a dress code, or a tipping ritual from abroad is not local law on a friend's terrace in Croatia.
+
+Support a cigar lounge or shop by buying or by following its clear rules. On a private terrace you are a guest at a home, not a customer in an imported salon.
+
+### Neighbours and the Adriatic terrace
+
+Smoke rises. A terrace above another balcony is still someone else's air. Back to the wind, a shorter format if non-smokers sit below, and a willingness to move or pause when a neighbour asks for a window — that is manners, not defeat.
+
+On the coast, sea wind and land wind rewrite the same table. Adjust place or format; do not blame the vitola for a bad seat.
 
 ### In practice
 
@@ -1237,6 +1329,14 @@ And when he leaves, he leaves someone else's space cleaner, calmer, and easier t
 ### Vignette: the hotel balcony
 
 Smoke drifts into the curtains of the neighbouring room. Wrong: "The balcony is mine." Kindly: put it out, move, or go to a designated spot. A hotel remembers smells better than its guests.
+
+### Vignette: the terrace assumption
+
+A guest lights on the terrace without asking. The host wanted dinner inside — the wind carries smoke back through the kitchen door. Kindly: message before you arrive. "May we smoke outside if the weather allows?" costs one sentence and saves an evening.
+
+### Vignette: the loyalty cigar
+
+After a meeting, the senior figure offers a full maduro "to see who is serious." Wrong for the host: the cigar is a test, not hospitality. Wrong for the guest: smoking to curry favour. Kindly: a shorter format for whoever wants it, water for everyone, and no rank read into who finishes.
 
 ---
 
@@ -1328,6 +1428,16 @@ It is there when someone else at the table knows more than you do and you do not
 
 It is there, too, in small vanities. You do not photograph your own ash as if it were a minor artwork unless everyone is already in on the joke. You do not turn every object on the table into evidence of taste. Sometimes the most elegant thing a person can do is simply enjoy what is there.
 
+### Inner scorecard — price is not the evening
+
+The outer scorecard is the heavy box, the limited band, the loudest price. The inner scorecard is whether the leaf and the glass actually pleased you — and whether the people would sit with you again.
+
+A gentleman offers what he truly likes, not what sounds expensive when named aloud. "This humbler bottle works for me tonight" is courtesy, not apology.
+
+A limited edition cigar is a story of tobacco and time, not a rank above a guest who brought a regular line. Praise the blend if you must praise; don't rank people by the band.
+
+The dividend of a good bottle or a good box is paid when it is opened and shared — not when it is photographed and returned to the shelf. A special bottle saved for a special day that never arrives has already missed its evening.
+
 ### Situations: spirit in practice
 
 **Two couples, one smokes.** The ashtray should not divide the table into the pure and the impure. Place it so the smoke can drift away, and keep the conversation shared.
@@ -1347,6 +1457,32 @@ It is there, too, in small vanities. You do not photograph your own ash as if it
 **A guest brings his own without warning.** Often it is a kindness. Sometimes it is merely clumsy timing. The courteous host receives the gesture before judging the protocol, unless the habit repeats and begins to overrun the house.
 
 **A guest doesn't drink alcohol.** Then the ritual becomes smoke, water, and conversation. It does not need an empty glass as stage dressing.
+
+**A guest arrives after you have lit.** Wrong: cold rebuke, or theatrical extinguishing as punishment. Kindly: "Welcome — I've just started; take the rhythm that suits you." If the evening was timed together, a short message before you light is courtesy; once lit, hospitality outranks the clock.
+
+**A guest asks how to cut or draw.** Two details, then a question: "Do you want more, or shall the leaf do the work?" A mini-lecture turns hospitality into an exam.
+
+**"One more" after the third.** The host may lower the ladder without rejecting the guest: "We have a shorter one, or we stop here and leave room for tomorrow." Measure spoken as an offer, not as a scolding.
+
+**A guest brings a box for the humidor.** Receive the gift; do not empty it into the house stock as if inventory were the point. Keep it aside until the evening needs it, unless the host clearly invites the merge.
+
+**Someone lifts a phone to photograph the table.** Faces need consent. Hands, ash, and glasses can be anonymous. Social media is not more important than trust.
+
+**The host insists on XO; the guest wants water.** Save the evening without defending taste. Pour the water as if it belonged to the ritual. Keep the XO for those who asked. Preference is not a debate.
+
+**"I don't like smoke" — said once.** The room adjusts: window, shorter format, or a clean pause. The wrong reply is a lecture on leaf and terroir. One sentence of dislike is already the whole argument.
+
+**Smoke too heavy in a small room.** The host who notices moves air or format before anyone must complain. The guest who notices may ask for a window without apology. Space is manners; the vitola is only the trigger.
+
+**"Mine is better" at the table.** The third person — especially a non-smoker — need not score the match. A change of subject, a pour of water, a step to the terrace: that is enough. Ranking leaves is not conversation.
+
+**A bad cut or a rushed light on someone else's cigar.** Fix quietly over your own ashtray if it is yours to fix. If it is theirs, offer a tool once, then let them own the leaf. Spectacle over a canoeing burn humiliates the evening more than the ash does.
+
+**Private club or closed circle: who lights first?** Often the host sets the tempo with the first flame. Guests wait a beat. It is not dogma — it is reading the room before you claim the air.
+
+**Restaurant terrace, half covered, no clear mark.** Ask staff where the line sits between the smoking edge and the family tables. Guessing is how evenings sour. Permission is local, not philosophical.
+
+**Flat bans smoke; terrace is allowed — first visit.** A short message before arrival beats a surprise at the door: "Glad you're coming — ours is smoke-free indoors; terrace if the weather allows." Clarity is hospitality.
 
 ### Mini-epigrams for Part I
 
@@ -1515,6 +1651,10 @@ A gentleman knows that coffee can illuminate a heavy leaf and also overdo it. He
 
 What he does not do is pretend that everything goes with everything because thinking would take effort, nor that nothing goes because severity looks impressive. He experiments, notes what worked for him, and leaves room for other people's tongues to disagree.
 
+When a pairing does not land, he says so without drama: "This doesn't sit with me tonight — let's try differently," or "This glass on its own, this smoke on its own — that's fine too." Three sentences often save more than a lecture on bridges.
+
+When the bottle is rum, he reads the label as a guest reads a house rule: take what is clear, leave what is marketing fog. Dark colour, solera language, and a bold age number are three different kinds of speech. He does not add them together in his head and call the result wisdom.
+
 ### Host/guest: more
 
 The host and the guest fail in different ways, but both failures usually begin in self-importance.
@@ -1665,6 +1805,26 @@ Clarity before arrival is better than awkwardness at the door.
 - "Shall we get some air for five minutes?"
 - "Shall we switch to a shorter one?"
 - "More water?"
+
+### How to speak about pairing
+
+- "For me the bridge is caramel — what do you taste?"
+- "This sits in a different register — let's try water between."
+- "The dark colour fooled me; the taste is lighter than the glass."
+- "One transparent rum and one rounder one — enough for tonight."
+
+### How to ask in someone else's space
+
+- "Is smoke all right here — and how far may we go?"
+- "May we go out on the terrace if the weather allows?"
+- "Is this seat free, or is someone holding it?"
+- "House rules on cutters — shared or my own?"
+
+### When the body says enough
+
+- "I'll stop here — that was just enough for me."
+- "More water, please — I'm fine with a pause."
+- "Shorter format for me tonight, if you have one."
 
 ### What to steer clear of
 
@@ -2324,6 +2484,14 @@ Instead of "A man must." say "This bridge is new to me."
 
 Instead of "You have to." say "What suits you better tonight?"
 
+Instead of "This rum is twelve years, so it must be serious." say "What do you taste — oak, vanilla, or something else?"
+
+Instead of "Limited edition — you should feel honoured." say "Tell me about the tobacco in this one."
+
+Instead of "Just keep smoking, it'll pass." say "More water? We can pause or switch shorter."
+
+Instead of "That's not allowed — but one puff won't matter." say nothing; put it out or go where it is allowed.
+
 ---
 
 # Back matter
@@ -2332,41 +2500,53 @@ Instead of "You have to." say "What suits you better tonight?"
 
 This book is grounded in popular-publicistic material: etiquette guides, cigar and spirits publications, podcasts, and manufacturer or retailer education pages. Those sources informed tone, customs, terminology, and recurring table situations. The manuscript itself remains an original synthesis written for a Croatian social setting, with the local club, shop, terrace, and host-guest dynamic setting the practical frame.
 
-In form, the book owes a clear debt to the courtesy-guide tradition, especially John Bridges, Debrett, and Emily Post. They are used here as models of shape and civility, not as prose to copy. Poster myths around famous cigar figures appear only as contrast material unless independently verified.
+In form, the book owes a clear debt to the courtesy-guide tradition, especially John Bridges (with Bryan Curtis), Debrett, and Emily Post. They are used here as models of shape and civility, not as prose to copy. Poster myths around famous cigar figures appear only as contrast material unless independently verified.
+
+### Notes on quotations and attributions (print policy)
+
+For publication, treat the following as settled editorial decisions — not open research:
+
+1. **Epigraph, line one** (*Etiquette is not the police of taste…*) is **authorial**. Print it as the book's own voice. Do not attribute it to Debrett, Post, Hardy, or any other named source.
+2. **Epigraph, line two** (*A gentleman is a person who makes the lives of others more pleasant*) is a **paraphrase** of a recurring courtesy-guide idea. It is **not** a verified verbatim quotation. Do not attribute it to George Bernard Shaw or any other named author (popular misattributions circulate online). Keep the paraphrase label in print.
+3. **Chapter closes** headed *A wise thought* are authorial precepts, not borrowed epigrams. Set them without quotation marks or fake ascriptions.
+4. **Churchill / Hemingway / “general’s cigar” tropes** appear in the body only as **poster myth versus table practice**. They are never printed as verified anecdotes, epigraphs, or footnoted quotations unless a primary source is added later by the editor.
+5. **“A gentleman knows when to leave”** (and close cousins) is treated as **proverbial etiquette sense**, kin to older counsel on timely departure (e.g. the spirit of Chesterfield’s advice on leaving while still welcome). In this book the working precepts are authorial (*A good guest knows when to stop*, and similar). Do not invent a neat attributed slogan for Chapter IV.
+6. **No Croatian literary aphorist** on smoking hospitality is cited. Local colour comes from terrace, club, and host-guest practice — not from a forced national epigraph.
+7. **House rule:** nothing in the book body may wear quotation marks as a historical citation unless the editor has verified the wording and the source appears in the bibliography or a footnote.
 
 ### Selected bibliography
 
-Beyond the Humidor. *Beyond the Humidor: A Cigar Podcast for the Rest of Us*. Podcast. Apple Podcasts. Accessed August 19, 2026. [https://podcasts.apple.com/us/podcast/beyond-the-humidor-a-cigar-podcast-for-the-rest-of-us/id1480171817](https://podcasts.apple.com/us/podcast/beyond-the-humidor-a-cigar-podcast-for-the-rest-of-us/id1480171817).
+Beyond the Humidor. *Beyond the Humidor: A Cigar Podcast for the Rest of Us*. Podcast. Apple Podcasts. Accessed August 22, 2026. [https://podcasts.apple.com/us/podcast/beyond-the-humidor-a-cigar-podcast-for-the-rest-of-us/id1480171817](https://podcasts.apple.com/us/podcast/beyond-the-humidor-a-cigar-podcast-for-the-rest-of-us/id1480171817).
 
-Bridges, John. *How to Be a Gentleman*. Leo-Commerce, 2001.
+Bridges, John, and Bryan Curtis. *How to Be a Gentleman: A Contemporary Guide to Common Courtesy*. Nashville: Rutledge Hill Press, 1998 (later printings 2001).
 
-Casa de Montecristo. Website. Accessed August 19, 2026. [https://www.casademontecristo.com](https://www.casademontecristo.com).
+Casa de Montecristo. Website. Accessed August 22, 2026. [https://www.casademontecristo.com](https://www.casademontecristo.com).
 
-Cigar Aficionado. Website. Accessed August 19, 2026. [https://www.cigaraficionado.com](https://www.cigaraficionado.com).
+Cigar Aficionado. Website. Accessed August 22, 2026. [https://www.cigaraficionado.com](https://www.cigaraficionado.com).
 
-CigarLounges. Website. Accessed August 19, 2026. [https://www.cigarlounges.co](https://www.cigarlounges.co).
+CigarLounges. Website. Accessed August 22, 2026. [https://www.cigarlounges.co](https://www.cigarlounges.co).
 
-cigars.com. Website. Accessed August 19, 2026. [https://www.cigars.com](https://www.cigars.com).
+cigars.com. Website. Accessed August 22, 2026. [https://www.cigars.com](https://www.cigars.com).
 
-Debrett’s. Website. Accessed August 19, 2026. [https://debretts.com](https://debretts.com).
+Debrett’s. Website. Accessed August 22, 2026. [https://www.debretts.com](https://www.debretts.com).
 
-Emily Post Institute. Website. Accessed August 19, 2026. [https://emilypost.com](https://emilypost.com).
+Emily Post Institute. Website. Accessed August 22, 2026. [https://emilypost.com](https://emilypost.com).
 
-Gentleman’s Gazette. Website. Accessed August 19, 2026. [https://www.gentlemansgazette.com](https://www.gentlemansgazette.com).
+Gentleman’s Gazette. Website. Accessed August 22, 2026. [https://www.gentlemansgazette.com](https://www.gentlemansgazette.com).
 
-Holt’s Clubhouse. Website. Accessed August 19, 2026. [https://www.holts.com/clubhouse](https://www.holts.com/clubhouse).
+Holt’s Clubhouse. Website. Accessed August 22, 2026. [https://www.holts.com/clubhouse](https://www.holts.com/clubhouse).
 
-JR Cigars. Website. Accessed August 19, 2026. [https://www.jrcigars.com](https://www.jrcigars.com).
+JR Cigars. Website. Accessed August 22, 2026. [https://www.jrcigars.com](https://www.jrcigars.com).
 
-La Aurora. Website. Accessed August 19, 2026. [https://www.laaurora.com](https://www.laaurora.com).
+La Aurora. Website. Accessed August 22, 2026. [https://www.laaurora.com](https://www.laaurora.com).
 
-The Manual. Website. Accessed August 19, 2026. [https://www.themanual.com](https://www.themanual.com).
+The Manual. Website. Accessed August 22, 2026. [https://www.themanual.com](https://www.themanual.com).
 
-VDG Cigars. Website. Accessed August 19, 2026. [https://vdg-cigars.com](https://vdg-cigars.com).
+VDG Cigars. Website. Accessed August 22, 2026. [https://vdg-cigars.com](https://vdg-cigars.com).
 
-Whisky.com. Website. Accessed August 19, 2026. [https://www.whisky.com](https://www.whisky.com).
+Whisky.com. Website. Accessed August 22, 2026. [https://www.whisky.com](https://www.whisky.com).
 
-Wikipedia contributors. "Cigar etiquette." *Wikipedia*. Accessed August 19, 2026. [https://en.wikipedia.org/wiki/Cigar_etiquette](https://en.wikipedia.org/wiki/Cigar_etiquette).
+Wikipedia contributors. “Cigar etiquette.” *Wikipedia*. Accessed August 22, 2026. [https://en.wikipedia.org/wiki/Cigar_etiquette](https://en.wikipedia.org/wiki/Cigar_etiquette).
 
 The same roster can appear in shorter form in the app, but this book version keeps the bibliography in a more formal reference style. The author is a physician; passages on pace, stomach, and nicotine discomfort belong to etiquette and self-measure, not to medical instruction.
 
@@ -2408,6 +2588,20 @@ The same roster can appear in shorter form in the app, but this book version kee
 
 **Nic-sick**: nicotine discomfort; slow down and take water/air.
 
+**E150a**: caramel colour permitted in rum and Scotch; dark bottle ≠ old spirit.
+
+**Solera (rum)**: often a blending style; the word on the label is not always proof of the oldest drop in the glass.
+
+**5+3 (age notation)**: e.g. Dos Maderas — years in rum wood, then years in sherry wood; the plus is not a single sum.
+
+**Distillery-first**: when the label names the maker and cask path (e.g. Foursquare, Doorly's) rather than an anonymous regional blend.
+
+**Bridge**: the shared note that lets smoke and sip recognise each other — not a contest won by the louder flavour.
+
+**Golf stick**: colloquial for a milder, often shorter cigar — pace and strength, not a formal grade.
+
+**Strength vs body**: strength is nicotine hit; body is smoke density and flavour fullness — they need not match.
+
 ---
 
 ## Acknowledgements
@@ -2422,7 +2616,7 @@ Let the copy-editor / editor pay particular attention to:
 
 - spelling and typography (dashes, quotation marks, loanwords: *wrapper*, *draw*, *lounge*)
 - consistency of "the gentleman" as a figure of courtesy (inclusion)
-- quotations and paraphrases — nothing presented as a verbatim quote without verification; epigraph line two is labelled paraphrase
+- quotations and paraphrases — follow *Notes on quotations and attributions*; epigraph line one = author; line two = labelled paraphrase; no Churchill/Hemingway “quotes” without primary source
 - local Croatian customs versus American lounge protocols (tipping, cut fees) — never import US tip/cut-fee as local law
 - remaining repetition of "the gentleman" is a deliberate Bridges rhythm, not an error; thin only where empty
 - target ~100 pages small format: appendix already cut of layout-filler and mechanical essay stacks; prefer further appendix cuts over padding the core

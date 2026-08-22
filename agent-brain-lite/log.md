@@ -9,6 +9,7 @@ updated: 2026-08-22
 
 | Datum | Događaj |
 |-------|---------|
+| 2026-08-22 | Bonton EN draft Ch 15 + 20: nikotin bez srama, snaga/tijelo, golf vitola; tuđi prostor, vjetar, strani običaji; interlude fraze + glossary. |
 | 2026-08-22 | Paralelna nadopuna znanja: Club JSON (rječnik rum etiketa, 101 `d-rum-reading-label` / `t-foreign-table`, leksikon `distillery-first`, HR vodič `moj-plan-app`, bonton app nikotin + tuđi prostor); pairing UI — `pairingNarrative` u proširenoj kartici; `docs/bonton/README.md`; brain concepts pairing-mechanism, club-content-map, book-app-bonton-sync. |
 | 2026-08-19 | App: naknadna ocjena večeri u `journal` — u `CollectionPage` journal listi i u `JournalCalendar` (`JournalCard`) dodan dropdown “Ocjena večeri” kad `journal.rating` nedostaje; uveden je hint da se ne mijenja “Moja ocjena”. |
 | 2026-08-19 | OCR: riješen TypeScript blocker za offline OCR pack (warm/reset) + dodani i sinkani EAN-ovi u `barcodeCatalog.json` (Don Tomas Churchill/Robusto, Romeo y Julieta Churchill, Plasencia Alma Fuerte Robustus); `sync-cigar-barcodes.py --check` i fokalni OCR/barcode Vitest prolazi. |

@@ -5,6 +5,8 @@ tags: [session, cache]
 updated: 2026-08-22
 ---
 
+> **2026-08-22:** Bonton EN rukopis — Ch 15 (nikotin, snaga/tijelo, golf vitola) + Ch 20 (vjetar, tuđi prostor, strani običaji); interlude + workbook + glossary.
+
 > **2026-08-22:** Paralelna nadopuna znanja — Club (rječnik rum etiketa, 101 `d-rum-reading-label`, leksikon `distillery-first`, HR vodič `moj-plan-app`, bonton app nikotin/tuđi prostor); pairing UI prikazuje `pairingNarrative` u proširenoj kartici; `docs/bonton/README.md` + brain concepts (pairing-mechanism, club-content-map, book-app-bonton-sync).
 
 > **2026-08-21:** Profili manje heuristički — PDP scrape (JSON-LD + zamjena Ecuga `/katalog/` → product URL); drink enrich ~90 + 63 whisky notes; Neptune opisi → `notes.en` na ~351 cigara (`merge-neptune-profiles`).
