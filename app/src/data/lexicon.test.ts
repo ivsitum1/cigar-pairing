@@ -15,6 +15,7 @@ const REQUIRED_ENTRY_IDS = [
   "unutarnja-ljestvica",
   "limited-edition",
   "cask-strength-gost",
+  "distillery-first",
 ] as const;
 
 describe("pairing leksikon", () => {

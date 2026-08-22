@@ -5,7 +5,7 @@ import { pairCigarsForDrink, pairDrinksForCigar } from "../engine/pairing";
 import { dayKey, softBandWindow, stableBestRotate } from "../engine/softBandRank";
 import { buildPrefs } from "../engine/personal";
 import { curatedPairingOpinion } from "../engine/curatedOpinion";
-import { pairingBlurb } from "../engine/pairingExplain";
+import { pairingBlurb, pairingNarrative } from "../engine/pairingExplain";
 import {
   occasionKeep,
   rankByOccasion,
@@ -960,6 +960,7 @@ function ResultCard({
     result.score,
   );
   const blurb = pairingBlurb(cigar, drink, result.reasons, result.score);
+  const narrative = pairingNarrative(cigar, drink, result.reasons, result.score);
   // par koji nosi kurirano upozorenje nije preporuka: priguši karticu i ne vodi
   // pozitivnim blurbom (inače "note se nadopunjuju" proturječi "ne preporučujemo")
   const weak = pairingOpinion?.tone === "warning";
@@ -1064,6 +1065,7 @@ function ResultCard({
       )}
       {open && (
         <div className="mt-2 space-y-2 border-t border-dim/15 pt-2">
+          <p className="text-xs leading-relaxed text-papir/85">{lx(narrative)}</p>
           <ul className="space-y-1">
             {(weak ? [...negative, ...positive] : [...positive, ...negative]).map((r, i) =>
               r.score < 0 ? (

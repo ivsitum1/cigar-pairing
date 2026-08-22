@@ -34,6 +34,9 @@ Lagani agentic mozak za uredske, medicinsko-znanstvene i izdavačke zadatke. Wik
 - [[knowledge/concepts/value-vs-price-stol\|Vrijednost vs cijena za stolom]]
 - [[knowledge/concepts/rum-tasting-host\|Domaćin rum degustacije uz cigaru]]
 - [[knowledge/concepts/limited-edition-culture\|Limited edition kultura za stolom]]
+- [[knowledge/concepts/pairing-mechanism\|Mehanizam sparivanja (app)]]
+- [[knowledge/concepts/club-content-map\|Club — mapa sadržaja]]
+- [[knowledge/concepts/book-app-bonton-sync\|Knjiga bontona ↔ app]]
 - [[knowledge/references/pravo-osnove\|Pravo — bazalni pojmovi (ne pravni savjet)]]
 - [[knowledge/entities/agent-rules-parent\|Agent Rules (roditeljski mozak)]]
 
