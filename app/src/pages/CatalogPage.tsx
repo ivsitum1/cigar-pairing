@@ -29,6 +29,7 @@ import {
 import { SHOPS, REGIONS } from "../data/shops";
 import { useI18n, STYLE_LABELS, type StringKey } from "../i18n";
 import { Chip, SearchInput } from "../components/ui";
+import { LessonBody } from "../components/LessonBody";
 import { CigarRow, DrinkRow } from "../components/cards";
 import { DetailSheet } from "../components/DetailSheet";
 import { EveningSessionSheet } from "../components/EveningSessionSheet";
@@ -54,6 +55,14 @@ import {
   firstVitolaOfShape,
   type ShapeFamily,
 } from "../lib/vitolaShape";
+import {
+  SCOTCH_REGIONS,
+  SCOTLAND,
+  scotchRegionCard,
+  scotchRegionOf,
+  whiskyStyleNote,
+  type ScotchRegion,
+} from "../lib/scotchRegion";
 import {
   matchesAnySearch,
   matchesAnyToken,
@@ -157,6 +166,8 @@ export function CatalogPage({
   const [roastFilter, setRoastFilter] = useState<CoffeeRoastLevel | null>(null);
   const [beanFilter, setBeanFilter] = useState<CoffeeSpecies | null>(null);
   const [originFilter, setOriginFilter] = useState<string | null>(null);
+  // whisky: škotska regija je podfilter zemlje — ima smisla tek kad je izabrana Škotska
+  const [scotchFilter, setScotchFilter] = useState<ScotchRegion | null>(null);
   const [wrapperOriginFilter, setWrapperOriginFilter] = useState<string | null>(null);
   const [binderOriginFilter, setBinderOriginFilter] = useState<string | null>(null);
   const [fillerOriginFilter, setFillerOriginFilter] = useState<string | null>(null);
@@ -485,6 +496,7 @@ export function CatalogPage({
     setRoastFilter(null);
     setBeanFilter(null);
     setOriginFilter(null);
+    setScotchFilter(null);
     // promjena kartice gasi ručno sortiranje — svaka kartica ima svoj zadani
     // poredak (cigare po nazivu, pića po kvaliteti)
     setSort(null);
@@ -502,23 +514,52 @@ export function CatalogPage({
       .map((d) => d.style);
   }, [tab]);
 
-  /** Prženja, zrna i zemlje kojih na kartici kave stvarno ima. */
+  /** Prženja i zrna kojih na kartici kave stvarno ima. */
   const coffeeFacets = useMemo(() => {
-    if (tab !== "coffee") return { roasts: [], beans: [], origins: [] };
+    if (tab !== "coffee") return { roasts: [], beans: [] };
     const roasts = new Set<CoffeeRoastLevel>();
     const beans = new Set<CoffeeSpecies>();
-    const origins = new Set<string>();
     for (const d of DRINKS.coffee) {
       if (d.roast) roasts.add(d.roast);
       if (d.species) beans.add(d.species);
-      // "—" = priprema bez jednog podrijetla (ristretto, cappuccino…)
-      if (d.country && d.country !== "—") origins.add(d.country);
     }
     return {
       roasts: (["light", "medium", "dark"] as CoffeeRoastLevel[]).filter((r) => roasts.has(r)),
       beans: (["arabica", "robusta", "blend"] as CoffeeSpecies[]).filter((b) => beans.has(b)),
-      origins: [...origins].sort((a, b) => a.localeCompare(b, "hr")),
     };
+  }, [tab]);
+
+  /**
+   * Zemlje podrijetla na kartici, s brojem boca — najbrojnija prva. Kava ih
+   * ima od početka; whisky ih dobiva jer je zemlja prva grana njegove karte
+   * (Škotska → regija). Ostale kartice zemlju ne prikazuju: rum i brandy je
+   * već nose u stilu, pa bi red chipova bio duplikat.
+   */
+  const originFacets = useMemo(() => {
+    if (tab !== "coffee" && tab !== "whisky") return [];
+    const counts = new Map<string, number>();
+    for (const d of DRINKS[tab]) {
+      // "—" = priprema bez jednog podrijetla (ristretto, cappuccino…)
+      if (!d.country || d.country === "—") continue;
+      counts.set(d.country, (counts.get(d.country) ?? 0) + 1);
+    }
+    return [...counts.entries()]
+      .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "hr"))
+      .map(([country, count]) => ({ country, count }));
+  }, [tab]);
+
+  /** Škotske regije koje u katalogu stvarno imaju boce, s brojem. */
+  const scotchFacets = useMemo(() => {
+    if (tab !== "whisky") return [];
+    const counts = new Map<ScotchRegion, number>();
+    for (const d of DRINKS.whisky) {
+      const r = scotchRegionOf(d);
+      if (r) counts.set(r, (counts.get(r) ?? 0) + 1);
+    }
+    return SCOTCH_REGIONS.filter((r) => counts.has(r)).map((r) => ({
+      region: r,
+      count: counts.get(r)!,
+    }));
   }, [tab]);
 
   const leafOriginOptions = useMemo(() => {
@@ -602,6 +643,7 @@ export function CatalogPage({
       if (roastFilter != null && d.roast !== roastFilter) return false;
       if (beanFilter != null && d.species !== beanFilter) return false;
       if (originFilter != null && d.country !== originFilter) return false;
+      if (scotchFilter != null && scotchRegionOf(d) !== scotchFilter) return false;
       if (cleanOnly && d.additiveStatus !== "clean" && d.additiveStatus !== "low") {
         return false;
       }
@@ -622,7 +664,19 @@ export function CatalogPage({
     const cmp = sort ? by[sort.key] : undefined;
     if (!cmp || !sort) return [...list].sort(by.quality!);
     return [...list].sort(directedComparator(cmp, SORT_DEFAULT_DIR[sort.key], sort.dir));
-  }, [tab, q, styleFilter, roastFilter, beanFilter, originFilter, cleanOnly, sort, favOnly, favorites]);
+  }, [
+    tab,
+    q,
+    styleFilter,
+    roastFilter,
+    beanFilter,
+    originFilter,
+    scotchFilter,
+    cleanOnly,
+    sort,
+    favOnly,
+    favorites,
+  ]);
 
   useEffect(() => {
     setLimit(120);
@@ -824,21 +878,73 @@ export function CatalogPage({
           ))}
         </div>
       )}
-      {tab === "coffee" && !browseBrands && coffeeFacets.origins.length > 1 && (
+      {!browseBrands && originFacets.length > 1 && (
         <div className="no-scrollbar mt-2 flex items-center gap-2 overflow-x-auto">
           <span className="shrink-0 text-micro uppercase tracking-widest text-dim">
             {t("filter.country")}
           </span>
-          {coffeeFacets.origins.map((o) => (
+          {originFacets.map(({ country, count }) => (
             <Chip
-              key={o}
-              active={originFilter === o}
-              onClick={() => setOriginFilter(originFilter === o ? null : o)}
+              key={country}
+              active={originFilter === country}
+              onClick={() => {
+                const next = originFilter === country ? null : country;
+                setOriginFilter(next);
+                // regija je grana Škotske — čim se zemlja promijeni, otpada
+                if (next !== SCOTLAND) setScotchFilter(null);
+              }}
             >
-              {cn(o)}
+              {cn(country)}
+              <span className="ml-1.5 tabular-nums text-dim/70">{count}</span>
             </Chip>
           ))}
         </div>
+      )}
+
+      {/* škotske regije — druga grana karte, vidljiva kad je Škotska izabrana */}
+      {tab === "whisky" && !browseBrands && originFilter === SCOTLAND && (
+        <div className="no-scrollbar mt-2 flex items-center gap-2 overflow-x-auto">
+          <span className="shrink-0 text-micro uppercase tracking-widest text-dim">
+            {t("filter.scotchRegion")}
+          </span>
+          {scotchFacets.map(({ region, count }) => (
+            <Chip
+              key={region}
+              active={scotchFilter === region}
+              onClick={() => setScotchFilter(scotchFilter === region ? null : region)}
+            >
+              {lx(scotchRegionCard(region).label)}
+              <span className="ml-1.5 tabular-nums text-dim/70">{count}</span>
+            </Chip>
+          ))}
+        </div>
+      )}
+
+      {/* pouka uz izbor: regija ima cijelu karticu, vrsta jedan redak */}
+      {tab === "whisky" && !browseBrands && scotchFilter != null && (
+        <article className="mt-3 rounded-xl border border-zlato/25 bg-cedar/60 px-3.5 py-3">
+          <h3 className="font-display text-micro uppercase tracking-[0.18em] text-zlato">
+            {lx(scotchRegionCard(scotchFilter).label)}
+          </h3>
+          <p className="mt-1 text-xs leading-relaxed text-papir/80">
+            {lx(scotchRegionCard(scotchFilter).summary)}
+          </p>
+          <details className="group mt-2">
+            <summary className="cursor-pointer list-none text-micro uppercase tracking-widest text-dim hover:text-zlato">
+              {t("whisky.regionMore")}
+            </summary>
+            <div className="mt-1.5 border-t border-dim/15 pt-2">
+              <LessonBody text={lx(scotchRegionCard(scotchFilter).body)} />
+            </div>
+          </details>
+        </article>
+      )}
+      {tab === "whisky" && !browseBrands && styleFilter != null && whiskyStyleNote(styleFilter) && (
+        <p className="mt-2.5 border-l-2 border-zlato/40 pl-3 text-xs leading-relaxed text-papir/75">
+          <span className="font-medium text-papir">{lx(STYLE_LABELS[styleFilter]) || styleFilter}</span>
+          <span className="text-dim"> — </span>
+          {lx(whiskyStyleNote(styleFilter))}
+        </p>
       )}
 
       {/* filter oblika (vitole) — samo u ravnom popisu cigara */}

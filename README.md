@@ -194,6 +194,16 @@ Kad zatreba sync mobitel ↔ računalo:
   na proizvod gdje postoji, EU/USA vode na pretragu po nazivu. HR cijena je jedina
   scrapana pa se prikazuje i u "Sve"; EU/USA nemaju cijenu (ne izmišlja se broj).
   Detaljan popis: **Katalog → Trgovine** (`docs/shops-by-region.md`).
+- **Whisky: zemlja → škotska regija** (`app/src/lib/scotchRegion.ts`,
+  `app/src/data/whiskyRegions.json`). Kartica whiskyja ima red **Zemlja** (s brojem boca),
+  a kad je odabrana Škotska otvara se drugi red — **Regija**: Speyside, Islay, Highlands,
+  Otoci, Campbeltown, Lowlands. Regija se ne drži kao zasebno polje nego se izvodi iz
+  `region` niza ("Orkney, Škotska" → `islands`); blendovi (`Škotska (blend)`) i nezabilježeno
+  `Škotska` namjerno ostaju bez regije — blend miješa više njih. Pet je regija službeno
+  (Scotch Whisky Regulations 2009); **Otoci su praksa, ne propis** — zakonski su dio Highlanda,
+  a kartica to izrijekom kaže. Uz odabranu regiju ide objašnjenje (sažetak + „Više o regiji"),
+  a uz odabranu vrstu jedan redak pouke; duga verzija je lekcija **Klub 101 → Pića →
+  „Škotske regije: karta okusa"**.
 - **Link mora pripadati odabranoj vitoli** (`app/src/lib/vitolaLinkMatch.ts`):
   `regionLinks` na razini linije nose jedan scrapani proizvod (npr. CigarWorld „Bellas Artes
   Maduro Gordo”), pa su prije sve vitole te linije otvarale istu — krivu — vitolu i nasljeđivale

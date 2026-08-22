@@ -18,12 +18,11 @@ Standard commands are defined in `app/package.json` and mirrored by `.github/wor
 - Build: `npm run build` (`tsc -b && vite build`)
 - Dev server: `npm run dev` (Vite, defaults to port 5173)
 
-### CI gates (all blocking — `ci.yml` runs on pushes to `master` and on PRs)
-Beyond `tsc` / `npm test` / `npm run build`, six Python gates guard the catalog. They are **read-only** — they never write to `scripts/output/`:
+### CI gates (`ci.yml` runs on pushes to `master` and on PRs)
+Beyond `tsc` / `npm test` / `npm run build`, Python gates guard the catalog. They are **read-only** — they never write to `scripts/output/`. Blocking:
 ```
 python scripts/apply-taxonomy.py --check --skip-normalize
 python scripts/normalize-vitolas.py --check
-python scripts/taxonomy-audit.py --fail-on-new --check-only
 python scripts/apply-cigar-descriptions.py --check
 python scripts/merge-leaf-details.py --check
 python scripts/test_reconcile_hr.py
@@ -31,6 +30,15 @@ python scripts/test_taxonomy_lib.py
 python scripts/test_merge_leaf_details.py
 python scripts/test_product_image_lib.py   # traži Pillow; CI ga instalira za taj korak
 ```
+`ci.yml` runs several more `--check` writers in the same blocking step (`derive-drink-brands`, `derive-drink-display-names`, `normalize-profile-axes`, `merge-cigarworld-aroma`, `apply-taste-reports`) plus `test_neptune_strength.py` and `test_taste_reports.py` — treat `ci.yml` as the source of truth, not this list.
+
+**One gate is deliberately non-blocking** (`continue-on-error: true`) and fails on `master` today:
+```
+python scripts/taxonomy-audit.py --fail-on-new --check-only   # 925 violations
+```
+910 lines across 127 brands have no taxonomy entry, and 15 brands have no taxonomy file at all — a curation backlog from the import that grew the catalog from 2401 to 3701 records, worked down brand by brand. A red line here is expected; do **not** "fix" it by bulk-writing lines into `unresolved` (tried, rejected: it makes `apply-taxonomy` oscillate with period 2).
+
+If `apply-taxonomy --check` reports `changed: true` with all `auto_pass_counts` at 0, the pending write is usually just record **order**: it sorts by a raw `.lower()` on brand+line, where accented letters sort after all of ASCII (`Clásica` belongs after `Classic Tempo`). Run the writer once (`python scripts/apply-taxonomy.py --skip-normalize`) and diff — if no record's content changed, it was only the sort.
 A separate `backend` job runs `python -m unittest discover -s tests` in `backend/`.
 
 ### Price freshness (W3)
