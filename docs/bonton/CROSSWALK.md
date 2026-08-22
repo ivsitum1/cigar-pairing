@@ -38,6 +38,7 @@ Zatim:
 | Tuđi stol; vjetar; strani običaji | Ch 20 | Ch 20 | `bonton.json` → `b-outdoors`; Club `t-foreign-table` |
 | Unutarnja ljestvica / LE | Expansion I | (po potrebi) | `lexicon` → `unutarnja-ljestvica`, `limited-edition` |
 | Lounge precepts | Ch 16 | Ch 16 | `bonton.json` → `b-lounge` |
+| **Citati / epigraf (tisak)** | Back matter *Notes on quotations* | *Napomene o citatima* | nema app JSON — politika u rukopisu |
 | Body / ABV / Maduro–slatkoća | bilješke | — | `app/src/engine/` (ne bonton eseji) |
 | **EN freeze** | `HOW-TO-BE-…-DRAFT.md` = source of truth | sync nakon EN pass | app sync iz kanona |
 | **HR freeze** | — | `KAKO-BITI-…-DRAFT.md` | kratki isječci → `bonton.json` |

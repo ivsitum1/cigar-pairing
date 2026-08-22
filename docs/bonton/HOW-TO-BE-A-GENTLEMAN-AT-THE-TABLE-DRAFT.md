@@ -17,8 +17,12 @@ To those who know that smoke is only an excuse to sit down — and to those stil
 ### Epigraph
 
 > Etiquette is not the police of taste. It is a way for others to breathe more easily while you enjoy yourself.
+>
+> — the author
 
-> A gentleman is a person who makes the lives of others more pleasant. — paraphrase in the spirit of classic courtesy guides (not a verified verbatim quotation)
+> A gentleman is a person who makes the lives of others more pleasant.
+>
+> — paraphrase in the spirit of classic courtesy guides (not a verified verbatim quotation; not to be attributed to a named author)
 
 ---
 
@@ -2496,41 +2500,53 @@ Instead of "That's not allowed — but one puff won't matter." say nothing; put 
 
 This book is grounded in popular-publicistic material: etiquette guides, cigar and spirits publications, podcasts, and manufacturer or retailer education pages. Those sources informed tone, customs, terminology, and recurring table situations. The manuscript itself remains an original synthesis written for a Croatian social setting, with the local club, shop, terrace, and host-guest dynamic setting the practical frame.
 
-In form, the book owes a clear debt to the courtesy-guide tradition, especially John Bridges, Debrett, and Emily Post. They are used here as models of shape and civility, not as prose to copy. Poster myths around famous cigar figures appear only as contrast material unless independently verified.
+In form, the book owes a clear debt to the courtesy-guide tradition, especially John Bridges (with Bryan Curtis), Debrett, and Emily Post. They are used here as models of shape and civility, not as prose to copy. Poster myths around famous cigar figures appear only as contrast material unless independently verified.
+
+### Notes on quotations and attributions (print policy)
+
+For publication, treat the following as settled editorial decisions — not open research:
+
+1. **Epigraph, line one** (*Etiquette is not the police of taste…*) is **authorial**. Print it as the book's own voice. Do not attribute it to Debrett, Post, Hardy, or any other named source.
+2. **Epigraph, line two** (*A gentleman is a person who makes the lives of others more pleasant*) is a **paraphrase** of a recurring courtesy-guide idea. It is **not** a verified verbatim quotation. Do not attribute it to George Bernard Shaw or any other named author (popular misattributions circulate online). Keep the paraphrase label in print.
+3. **Chapter closes** headed *A wise thought* are authorial precepts, not borrowed epigrams. Set them without quotation marks or fake ascriptions.
+4. **Churchill / Hemingway / “general’s cigar” tropes** appear in the body only as **poster myth versus table practice**. They are never printed as verified anecdotes, epigraphs, or footnoted quotations unless a primary source is added later by the editor.
+5. **“A gentleman knows when to leave”** (and close cousins) is treated as **proverbial etiquette sense**, kin to older counsel on timely departure (e.g. the spirit of Chesterfield’s advice on leaving while still welcome). In this book the working precepts are authorial (*A good guest knows when to stop*, and similar). Do not invent a neat attributed slogan for Chapter IV.
+6. **No Croatian literary aphorist** on smoking hospitality is cited. Local colour comes from terrace, club, and host-guest practice — not from a forced national epigraph.
+7. **House rule:** nothing in the book body may wear quotation marks as a historical citation unless the editor has verified the wording and the source appears in the bibliography or a footnote.
 
 ### Selected bibliography
 
-Beyond the Humidor. *Beyond the Humidor: A Cigar Podcast for the Rest of Us*. Podcast. Apple Podcasts. Accessed August 19, 2026. [https://podcasts.apple.com/us/podcast/beyond-the-humidor-a-cigar-podcast-for-the-rest-of-us/id1480171817](https://podcasts.apple.com/us/podcast/beyond-the-humidor-a-cigar-podcast-for-the-rest-of-us/id1480171817).
+Beyond the Humidor. *Beyond the Humidor: A Cigar Podcast for the Rest of Us*. Podcast. Apple Podcasts. Accessed August 22, 2026. [https://podcasts.apple.com/us/podcast/beyond-the-humidor-a-cigar-podcast-for-the-rest-of-us/id1480171817](https://podcasts.apple.com/us/podcast/beyond-the-humidor-a-cigar-podcast-for-the-rest-of-us/id1480171817).
 
-Bridges, John. *How to Be a Gentleman*. Leo-Commerce, 2001.
+Bridges, John, and Bryan Curtis. *How to Be a Gentleman: A Contemporary Guide to Common Courtesy*. Nashville: Rutledge Hill Press, 1998 (later printings 2001).
 
-Casa de Montecristo. Website. Accessed August 19, 2026. [https://www.casademontecristo.com](https://www.casademontecristo.com).
+Casa de Montecristo. Website. Accessed August 22, 2026. [https://www.casademontecristo.com](https://www.casademontecristo.com).
 
-Cigar Aficionado. Website. Accessed August 19, 2026. [https://www.cigaraficionado.com](https://www.cigaraficionado.com).
+Cigar Aficionado. Website. Accessed August 22, 2026. [https://www.cigaraficionado.com](https://www.cigaraficionado.com).
 
-CigarLounges. Website. Accessed August 19, 2026. [https://www.cigarlounges.co](https://www.cigarlounges.co).
+CigarLounges. Website. Accessed August 22, 2026. [https://www.cigarlounges.co](https://www.cigarlounges.co).
 
-cigars.com. Website. Accessed August 19, 2026. [https://www.cigars.com](https://www.cigars.com).
+cigars.com. Website. Accessed August 22, 2026. [https://www.cigars.com](https://www.cigars.com).
 
-Debrett’s. Website. Accessed August 19, 2026. [https://debretts.com](https://debretts.com).
+Debrett’s. Website. Accessed August 22, 2026. [https://www.debretts.com](https://www.debretts.com).
 
-Emily Post Institute. Website. Accessed August 19, 2026. [https://emilypost.com](https://emilypost.com).
+Emily Post Institute. Website. Accessed August 22, 2026. [https://emilypost.com](https://emilypost.com).
 
-Gentleman’s Gazette. Website. Accessed August 19, 2026. [https://www.gentlemansgazette.com](https://www.gentlemansgazette.com).
+Gentleman’s Gazette. Website. Accessed August 22, 2026. [https://www.gentlemansgazette.com](https://www.gentlemansgazette.com).
 
-Holt’s Clubhouse. Website. Accessed August 19, 2026. [https://www.holts.com/clubhouse](https://www.holts.com/clubhouse).
+Holt’s Clubhouse. Website. Accessed August 22, 2026. [https://www.holts.com/clubhouse](https://www.holts.com/clubhouse).
 
-JR Cigars. Website. Accessed August 19, 2026. [https://www.jrcigars.com](https://www.jrcigars.com).
+JR Cigars. Website. Accessed August 22, 2026. [https://www.jrcigars.com](https://www.jrcigars.com).
 
-La Aurora. Website. Accessed August 19, 2026. [https://www.laaurora.com](https://www.laaurora.com).
+La Aurora. Website. Accessed August 22, 2026. [https://www.laaurora.com](https://www.laaurora.com).
 
-The Manual. Website. Accessed August 19, 2026. [https://www.themanual.com](https://www.themanual.com).
+The Manual. Website. Accessed August 22, 2026. [https://www.themanual.com](https://www.themanual.com).
 
-VDG Cigars. Website. Accessed August 19, 2026. [https://vdg-cigars.com](https://vdg-cigars.com).
+VDG Cigars. Website. Accessed August 22, 2026. [https://vdg-cigars.com](https://vdg-cigars.com).
 
-Whisky.com. Website. Accessed August 19, 2026. [https://www.whisky.com](https://www.whisky.com).
+Whisky.com. Website. Accessed August 22, 2026. [https://www.whisky.com](https://www.whisky.com).
 
-Wikipedia contributors. "Cigar etiquette." *Wikipedia*. Accessed August 19, 2026. [https://en.wikipedia.org/wiki/Cigar_etiquette](https://en.wikipedia.org/wiki/Cigar_etiquette).
+Wikipedia contributors. “Cigar etiquette.” *Wikipedia*. Accessed August 22, 2026. [https://en.wikipedia.org/wiki/Cigar_etiquette](https://en.wikipedia.org/wiki/Cigar_etiquette).
 
 The same roster can appear in shorter form in the app, but this book version keeps the bibliography in a more formal reference style. The author is a physician; passages on pace, stomach, and nicotine discomfort belong to etiquette and self-measure, not to medical instruction.
 
@@ -2600,7 +2616,7 @@ Let the copy-editor / editor pay particular attention to:
 
 - spelling and typography (dashes, quotation marks, loanwords: *wrapper*, *draw*, *lounge*)
 - consistency of "the gentleman" as a figure of courtesy (inclusion)
-- quotations and paraphrases — nothing presented as a verbatim quote without verification; epigraph line two is labelled paraphrase
+- quotations and paraphrases — follow *Notes on quotations and attributions*; epigraph line one = author; line two = labelled paraphrase; no Churchill/Hemingway “quotes” without primary source
 - local Croatian customs versus American lounge protocols (tipping, cut fees) — never import US tip/cut-fee as local law
 - remaining repetition of "the gentleman" is a deliberate Bridges rhythm, not an error; thin only where empty
 - target ~100 pages small format: appendix already cut of layout-filler and mechanical essay stacks; prefer further appendix cuts over padding the core

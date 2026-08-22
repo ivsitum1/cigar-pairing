@@ -34,14 +34,19 @@
 
 ---
 
-## Citati / atribucije za provjeru
+## Citati / atribucije — riješeno za tisak (2026-08-22)
 
-- *„Manners are not the police of taste”* — već u rukopisu; potražiti starije britanske izvore istog duha (Debrett? Post? Hardy?) — **samo atribucija, ne copy-paste**.
-- Churchill + cigar anegdote — koje su potvrđene, koje urban legend? Označiti: provjera prije epigrafa ili fusnote.
-- Hemingway / Cuba / cigar — previše korišten u pop kulturi; treba li uopće u knjigu ili samo kao kontrast „mit vs. stol”?
-- Winston / Grant / generalski cigar trope — isti filter: potvrđen citat ili samo slika?
-- Hrvatski izvor: postoji li lokalni aforist / publicist o pušenju, gostoprimstvu, „meri”? (književnost, ne forum).
-- *„A gentleman knows when to leave”* — varijante u etiquette knjigama; usporediti dužinu i ton s našim poglavljem IV.
+Uredničke odluke stoje u EN/HR stražnjem materijalu: *Notes on quotations* / *Napomene o citatima*. Sažetak:
+
+- [x] *„Etiquette / Bonton nije policija ukusa”* — **autorov** epigraf; ne Debrett/Post/Hardy
+- [x] Drugi red epigrafa — **parafraza** (ne Shaw, ne doslovni citat)
+- [x] Churchill / Hemingway / generalski trope — samo **mit vs stol**; bez epigrafa i „citata”
+- [x] *„Gentleman knows when to leave”* — poslovično; u knjizi autorovi precepti (*gost zna kad stati*)
+- [x] HR književni aforizam o pušenju — **nema**; lokalni ton s terase/kluba
+- [x] *Mudra misao* / *A wise thought* — autorovi precepti, bez lažnih atribucija
+- [x] Bridges bibliografija — EN: Rutledge Hill Press (John Bridges + Bryan Curtis); HR: + Leo-commerce prijevod 2001
+
+Otvoreno samo za kasniji urednički dodatak (nije blokada tiska): primarni izvor ako se ikad želi fusnota uz povijesnu anegdotu.
 
 ---
 
@@ -60,13 +65,13 @@
 
 | Naslov / autor | Zašto na listi | Status |
 |----------------|----------------|--------|
-| Debrett's *A-Z of Modern Manners* (ili ekvivalent) | Struktura kratkih precepta, ne sadržaj o cigar | za čitanje |
-| Emily Post — odabrana poglavlja o gostoprimstvu | Ton „ljubaznost bez snobizma” | za čitanje |
+| Debrett's *A-Z of Modern Manners* (ili ekvivalent) | Struktura kratkih precepta, ne sadržaj o cigar | forma OK; bez lažnih citata |
+| Emily Post — odabrana poglavlja o gostoprimstvu | Ton „ljubaznost bez snobizma” | forma OK; bez lažnih citata |
 | *The Cigar Companion* (M. Perelman) | Tehnički kontekst, ne bonton — granica 101 vs. bonton | selektivno |
 | Min Ron Nee — ilustracije / katalog | Vizualni ritam knjige, ne tekst za kopiranje | inspiracija |
-| Klasične britanske „short rules” knjige (Hardy, itd.) | Epigraf i duh poglavlja I | usporedba forme |
-| HR: vodiči vikendice / lifestyle (ako postoje o terasama, gostima) | Lokalni kontekst bez datiranja trgovina | potražiti |
-| Znanstveni / zdravstveni izvori o pasivnom dimu | Samo za granicu poglavlja II — bez propovijedi | citat provjera |
+| Klasične britanske „short rules” knjige (Hardy, itd.) | Epigraf i duh poglavlja I | **epigraf = autorov**, ne Hardy citat |
+| HR: vodiči vikendice / lifestyle (ako postoje o terasama, gostima) | Lokalni kontekst bez datiranja trgovina | nije citatni izvor |
+| Znanstveni / zdravstveni izvori o pasivnom dimu | Samo za granicu poglavlja II — bez propovijedi | **ne citirati** u epigrafu; bonton ≠ medicina |
 | Memo: `2026-07-17-content-brainstorm.md` §6 | Kutovi sakupljanja | već u projektu |
 
 ---

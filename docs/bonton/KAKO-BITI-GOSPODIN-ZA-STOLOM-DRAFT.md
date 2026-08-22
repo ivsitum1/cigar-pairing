@@ -18,8 +18,12 @@ Onima koji znaju da je dim samo izgovor da se sjedne — i onima koji još uče 
 ### Epigraf
 
 > Bonton nije policija ukusa. To je način da drugi udišu lakše dok ti uživaš.
+>
+> — autor
 
-> Gospodin je osoba koja život drugih čini ugodnijim. — parafraza u duhu klasičnih vodiča uljudnosti (nije provjeren doslovni citat)
+> Gospodin je osoba koja život drugih čini ugodnijim.
+>
+> — parafraza u duhu klasičnih vodiča uljudnosti (nije provjeren doslovni citat; ne pripisivati imenovanom autoru)
 
 ---
 
@@ -2444,23 +2448,55 @@ Umjesto „Moraš.” reci „Što ti više paše večeras?”
 
 Popularna literatura iza ovog teksta: javni vodiči, članci, videozapisi i podcasti. Naglasci su pisani za hrvatski kontekst — mjerodavni su lokalni klub, trgovina i terasa.
 
-Oblik kratkih pravila duguje tradiciji vodiča uljudnosti — prijevodu Johna Bridgesa *Kako biti gospodin* (Leo-commerce, 2001), te Debrettu i Emily Post kao školi forme, ne kao predlošku za prepisivanje. Sadržaj o cigari i stolu vlastit je za ovaj rukopis. Poster-mitovi (Churchill, Hemingway i slično) dolaze samo kao kontrast stolnim manirama — ne kao potvrđene anegdote ili epigrafi.
+Oblik kratkih pravila duguje tradiciji vodiča uljudnosti — John Bridges i Bryan Curtis, *How to Be a Gentleman* (Rutledge Hill Press, 1998; kasniji otisci), hrvatski prijevod *Kako biti gospodin* (Leo-commerce, 2001), te Debrettu i Emily Post kao školi forme, ne kao predlošku za prepisivanje. Sadržaj o cigari i stolu vlastit je za ovaj rukopis. Poster-mitovi (Churchill, Hemingway i slično) dolaze samo kao kontrast stolnim manirama — ne kao potvrđene anegdote ili epigrafi.
 
-- Beyond the Humidor (podcast) — https://podcasts.apple.com/us/podcast/beyond-the-humidor-a-cigar-podcast-for-the-rest-of-us/id1480171817
-- Casa de Montecristo — https://www.casademontecristo.com
-- Cigar Aficionado — https://www.cigaraficionado.com
-- CigarLounges — https://www.cigarlounges.co
-- cigars.com — https://www.cigars.com
-- Gentleman’s Gazette — https://www.gentlemansgazette.com
-- Holt’s Clubhouse — https://www.holts.com/clubhouse
-- JR Cigars — https://www.jrcigars.com
-- La Aurora — https://www.laaurora.com
-- The Manual — https://www.themanual.com
-- VDG Cigars — https://vdg-cigars.com
-- Whisky.com — https://www.whisky.com
-- Wikipedia — cigar etiquette — https://en.wikipedia.org/wiki/Cigar_etiquette
+### Napomene o citatima i atribucijama (politika za tisak)
 
-Isti popis stoji na dnu Kluba u aplikaciji. Autor je liječnik; stolne napomene o ritmu i nikotinu dio su bontona, ne liječnički savjet.
+Za objavu vrijede ove uredničke odluke — ne otvorena istraživanja:
+
+1. **Epigraf, prvi red** (*Bonton nije policija ukusa…*) **autorov** je. Ne pripisivati Debrettu, Postu, Hardyju ni drugom imenu.
+2. **Epigraf, drugi red** (*Gospodin je osoba…*) **parafraza** je uobičajene ideje vodiča uljudnosti. Nije potvrđen doslovni citat. Ne pripisivati Georgeu Bernardu Shawu ni drugom imenu (mrežne krive atribucije kruže). U tisku zadržati oznaku parafraze.
+3. **Završeci** *Mudra misao* autorovi su precepti, ne posuđeni epigrami. Bez navodnika i lažnih atribucija.
+4. **Churchill / Hemingway / „generalska cigara”** u tijelu knjige samo kao **poster-mit naspram stola**. Nikad kao potvrđena anegdota, epigraf ili fusnota dok urednik ne doda primarni izvor.
+5. **„Gospodin zna kad otići”** (i srodne fraze) tretirati kao **poslovični smisao** bontona (u duhu starijih savjeta o pravovremenom odlasku, npr. Chesterfield). U ovoj knjizi radni precepti su autorovi (*Dobar gost zna kad stati* i slično). Ne izmišljati uredan citat za gl. IV.
+6. **Nema hrvatskog književnog aforizma** o pušačkom gostoprimstvu u izvorima. Lokalni ton dolazi s terase, iz kluba i odnosa domaćin–gost — ne iz forsirana nacionalnog epigrafa.
+7. **Kućno pravilo:** u tijelu knjige ništa ne nosi navodnike kao povijesni citat dok urednik ne potvrdi tekst i izvor u bibliografiji ili fusnoti.
+
+### Odabrana bibliografija
+
+Beyond the Humidor. *Beyond the Humidor: A Cigar Podcast for the Rest of Us*. Podcast. Apple Podcasts. Pristupljeno 22. kolovoza 2026. https://podcasts.apple.com/us/podcast/beyond-the-humidor-a-cigar-podcast-for-the-rest-of-us/id1480171817
+
+Bridges, John, i Bryan Curtis. *How to Be a Gentleman: A Contemporary Guide to Common Courtesy*. Nashville: Rutledge Hill Press, 1998 (kasniji otisci 2001). Hrvatski prijevod: *Kako biti gospodin*. Leo-commerce, 2001.
+
+Casa de Montecristo. Mrežna stranica. Pristupljeno 22. kolovoza 2026. https://www.casademontecristo.com
+
+Cigar Aficionado. Mrežna stranica. Pristupljeno 22. kolovoza 2026. https://www.cigaraficionado.com
+
+CigarLounges. Mrežna stranica. Pristupljeno 22. kolovoza 2026. https://www.cigarlounges.co
+
+cigars.com. Mrežna stranica. Pristupljeno 22. kolovoza 2026. https://www.cigars.com
+
+Debrett’s. Mrežna stranica. Pristupljeno 22. kolovoza 2026. https://www.debretts.com
+
+Emily Post Institute. Mrežna stranica. Pristupljeno 22. kolovoza 2026. https://emilypost.com
+
+Gentleman’s Gazette. Mrežna stranica. Pristupljeno 22. kolovoza 2026. https://www.gentlemansgazette.com
+
+Holt’s Clubhouse. Mrežna stranica. Pristupljeno 22. kolovoza 2026. https://www.holts.com/clubhouse
+
+JR Cigars. Mrežna stranica. Pristupljeno 22. kolovoza 2026. https://www.jrcigars.com
+
+La Aurora. Mrežna stranica. Pristupljeno 22. kolovoza 2026. https://www.laaurora.com
+
+The Manual. Mrežna stranica. Pristupljeno 22. kolovoza 2026. https://www.themanual.com
+
+VDG Cigars. Mrežna stranica. Pristupljeno 22. kolovoza 2026. https://vdg-cigars.com
+
+Whisky.com. Mrežna stranica. Pristupljeno 22. kolovoza 2026. https://www.whisky.com
+
+Wikipedia contributors. „Cigar etiquette.” *Wikipedia*. Pristupljeno 22. kolovoza 2026. https://en.wikipedia.org/wiki/Cigar_etiquette
+
+Isti popis može stajati kraće na dnu Kluba u aplikaciji; knjižna verzija drži formalniji oblik. Autor je liječnik; stolne napomene o ritmu i nikotinu dio su bontona, ne liječnički savjet.
 
 ---
 
@@ -2514,7 +2550,7 @@ Lektor / urednik neka osobito pazi na:
 
 - pravopis i tipografiju (crtice, navodnici, posuđenice: *wrapper*, *draw*, *lounge*)
 - dosljednost „gospodin” kao figure uljudnosti (inkluzija)
-- citate i parafraze — ništa kao doslovni citat bez provjere; drugi red epigrafa označen je kao parafraza
+- citate i parafraze — slijediti *Napomene o citatima*; epigraf 1 = autor; epigraf 2 = parafraza; bez Churchill/Hemingway „citata” bez primarnog izvora
 - lokalne HR običaje naspram američkih lounge protokola (napojnica, cut fee) — nikad US tip/cut-fee kao lokalni zakon
 - preostalo ponavljanje figure „gospodin” namjeran je Bridgesov ritam; prorijediti samo gdje je prazno
 - cilj ~100 strana mali format: dodatak već očišćen od punjenja preloma; radije još rezati dodatak nego širiti jezgru
