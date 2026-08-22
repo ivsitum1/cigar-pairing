@@ -21,7 +21,7 @@ function Run-Captions($channel, $useCookies = $false) {
     Write-Host "=== captions $channel ===" -ForegroundColor Cyan
     if ($useCookies) {
         if (-not (Test-Path $cookies)) {
-            Write-Warning "missing cookies: $cookies — export fresh cookies.txt first"
+            Write-Warning "missing cookies: $cookies - export fresh cookies.txt first"
             return 1
         }
         python youtube-batch.py captions --channel $channel --cookies "data/youtube/cookies.txt"
