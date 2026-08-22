@@ -1247,6 +1247,10 @@ Gospodin kad primi dar, ne ocjenjuje ga pred darivateljem kao sudac.
 
 Gospodin ne koristi poklon da bi ušao u tuđi humidor „po principu uzvrata” bez poziva.
 
+Gospodin kad gost donese zatvorenu kutiju ne tretira kućni humidor kao skladište koje je mora progutati prije večeri.
+
+U Hrvatskoj mala tuba ili kutija iz specijalizirane trgovine često sjedne bolje od pretjeranog duty-free tereta. Mjera je poruka; volumen nije.
+
 ### Mudra misao
 
 *Najbolji poklon pamti se po večeri, ne po računu.*
@@ -1308,6 +1312,12 @@ U tuđem autu ili taksiju samo uz jasan pristanak — i s obzirom na prozor. Na 
 U stranoj zemlji čitaj lokalna pravila prije nego citiraš svoje lounge navike. Cut fee, dress code ili ritual napojnice iz inozemstva nije lokalni zakon na prijateljevoj terasi u Hrvatskoj.
 
 Podrži cigar lounge ili trgovinu kupnjom ili poštivanjem jasnih pravila. Na privatnoj terasi gost si u domu, ne mušterija u uvezenom salonu.
+
+### Susjedi i jadranska terasa
+
+Dim se penje. Terasa iznad tuđeg balkona i dalje je tuđi zrak. Leđa vjetru, kraći format ako ispod sjede nepušači, i spremnost da se makneš ili staneš kad susjed zamoli za prozor — to je bonton, ne poraz.
+
+Na obali vjetar s mora i s kopna prepisuju isti stol. Prilagodi mjesto ili format; ne krivi vitolu zbog lošeg sjedala.
 
 ### Precepti
 
@@ -1428,6 +1438,16 @@ Skromnost je kad ne fotografiraš svoj pepeo kao da je umjetnički performans �
 **Gost donese vlastitu bez najave.** Često je to ljubaznost. Ponekad je nespretnost. Domaćin primi dar, ne drži sud o protokolu — osim ako se ponavlja kao pravilo bez dogovora.
 
 **Gost ne pije alkohol.** Ritual se skraćuje na dim, vodu, razgovor. Ne na praznu čašu „za atmosferu” ako smeta.
+
+**Gost stiže nakon što si zapalio.** Krivo: hladna ukor ili teatralno gašenje kao kazna. Ljubaznije: „Dobrodošao — tek sam počeo; uzmi ritam koji ti odgovara.” Ako je večer dogovorena zajedno, kratka poruka prije paljenja je bonton; kad je već upaljeno, gostoprimstvo nadmašuje sat.
+
+**Gost pita kako rezati ili vući.** Dva detalja, pa pitanje: „Želiš li još, ili neka list radi?” Mini-predavanje pretvara gostoprimstvo u ispit.
+
+**„Još jedna” nakon treće.** Domaćin može spustiti ljestvicu bez odbijanja gosta: „Imamo kraću, ili stanemo ovdje i ostavimo mjesta za sutra.” Mjera kao ponuda, ne kao ukor.
+
+**Gost donese kutiju za humidor.** Primi dar; ne isprazni je u kućne zalihe kao da je inventura poanta. Drži je po strani dok večer ne zatreba, osim ako domaćin jasno pozove spajanje.
+
+**Netko digne telefon da fotka stol.** Lica traže pristanak. Ruke, pepeo i čaše mogu biti anonimni. Društvene mreže nisu važnije od povjerenja.
 
 ### Mini-epigrami za dio I
 

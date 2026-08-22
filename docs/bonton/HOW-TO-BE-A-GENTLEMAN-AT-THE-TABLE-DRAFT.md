@@ -1238,6 +1238,10 @@ A gentleman, when he receives a gift, does not grade it in front of the giver li
 
 A gentleman does not use a gift to get into someone else's humidor "on the principle of a return" without an invitation.
 
+A gentleman, when a guest brings a closed box, does not treat the house humidor as a warehouse that must absorb it before the evening begins.
+
+In Croatia, a small tube or box from a specialist shop often lands better than an oversized duty-free haul. Measure is the message; volume is not.
+
 ### A wise thought
 
 *The best gift is remembered by the evening, not by the receipt.*
@@ -1299,6 +1303,12 @@ In someone else's car or a taxi, only with clear permission — and with the win
 In a foreign country, read the local rules before quoting your own lounge habits. A cut fee, a dress code, or a tipping ritual from abroad is not local law on a friend's terrace in Croatia.
 
 Support a cigar lounge or shop by buying or by following its clear rules. On a private terrace you are a guest at a home, not a customer in an imported salon.
+
+### Neighbours and the Adriatic terrace
+
+Smoke rises. A terrace above another balcony is still someone else's air. Back to the wind, a shorter format if non-smokers sit below, and a willingness to move or pause when a neighbour asks for a window — that is manners, not defeat.
+
+On the coast, sea wind and land wind rewrite the same table. Adjust place or format; do not blame the vitola for a bad seat.
 
 ### In practice
 
@@ -1443,6 +1453,16 @@ The dividend of a good bottle or a good box is paid when it is opened and shared
 **A guest brings his own without warning.** Often it is a kindness. Sometimes it is merely clumsy timing. The courteous host receives the gesture before judging the protocol, unless the habit repeats and begins to overrun the house.
 
 **A guest doesn't drink alcohol.** Then the ritual becomes smoke, water, and conversation. It does not need an empty glass as stage dressing.
+
+**A guest arrives after you have lit.** Wrong: cold rebuke, or theatrical extinguishing as punishment. Kindly: "Welcome — I've just started; take the rhythm that suits you." If the evening was timed together, a short message before you light is courtesy; once lit, hospitality outranks the clock.
+
+**A guest asks how to cut or draw.** Two details, then a question: "Do you want more, or shall the leaf do the work?" A mini-lecture turns hospitality into an exam.
+
+**"One more" after the third.** The host may lower the ladder without rejecting the guest: "We have a shorter one, or we stop here and leave room for tomorrow." Measure spoken as an offer, not as a scolding.
+
+**A guest brings a box for the humidor.** Receive the gift; do not empty it into the house stock as if inventory were the point. Keep it aside until the evening needs it, unless the host clearly invites the merge.
+
+**Someone lifts a phone to photograph the table.** Faces need consent. Hands, ash, and glasses can be anonymous. Social media is not more important than trust.
 
 ### Mini-epigrams for Part I
 
