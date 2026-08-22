@@ -39,6 +39,7 @@ Zatim:
 | Unutarnja ljestvica / LE | Expansion I | (po potrebi) | `lexicon` → `unutarnja-ljestvica`, `limited-edition` |
 | Lounge precepts | Ch 16 | Ch 16 | `bonton.json` → `b-lounge` |
 | **Citati / epigraf (tisak)** | Back matter *Notes on quotations* | *Napomene o citatima* | nema app JSON — politika u rukopisu |
+| **Arhetipi večeri** | Expansion (solo…poklon/put) | Expansion (isto) | Club `t-evening-shape` |
 | Body / ABV / Maduro–slatkoća | bilješke | — | `app/src/engine/` (ne bonton eseji) |
 | **EN freeze** | `HOW-TO-BE-…-DRAFT.md` = source of truth | sync nakon EN pass | app sync iz kanona |
 | **HR freeze** | — | `KAKO-BITI-…-DRAFT.md` | kratki isječci → `bonton.json` |

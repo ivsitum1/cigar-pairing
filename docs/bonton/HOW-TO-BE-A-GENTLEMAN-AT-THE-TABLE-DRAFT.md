@@ -1510,6 +1510,36 @@ Celebrations are louder, fuller, and more vulnerable to excess. That is exactly 
 
 He guards the room by simple means: water, tempo, a glance at who is tiring, and the courage to lower the pitch before the evening tips into self-display. A celebration that ends in embarrassment has mistaken noise for success.
 
+### Archetype of the evening: two friends
+
+Two chairs, one ashtray, no performance. Conversation leads; smoke follows. A gentleman does not turn friendship into a seminar on brands, nor into a race for who lasts longer. If the talk needs a pause, the leaf can wait. If the leaf needs a pause, the talk can carry the table.
+
+The gift of this evening is simplicity: water within reach, phones face down, and the freedom to stop without explaining the calendar.
+
+### Archetype of the evening: the business balcony
+
+Rank does not choose the vitola. A gentleman with authority offers a milder path and a clean exit: coffee, a shorter format, or no smoke at all. A gentleman without rank may decline without theatre: "Tonight I'll keep to the glass."
+
+Smoke used as a loyalty test is poor strategy. Smoke used as shared air, with consent and an exit, can still leave room for work tomorrow.
+
+### Archetype of the evening: the Adriatic terrace
+
+Wind first, then the leaf. Sea breeze and land breeze rewrite the same table; a gentleman moves chairs, shortens the format, or waits. Neighbours below are part of the company even when they never sit down.
+
+Ash is not confetti. The terrace wins when laundry and windows are considered before the first light — not after the first complaint.
+
+### Archetype of the evening: the family compromise
+
+Someone at the table does not smoke. The evening does not split into the pure and the impure. Smoke moves aside; conversation stays shared. A gentleman does not recruit, and does not exile.
+
+If the house is smoke-free indoors, the terrace is negotiated — by message before arrival when guests are new. Clarity is hospitality; surprise at the door is not.
+
+### Archetype of the evening: the gift and the last before a trip
+
+A gift arrives with context: strength, length, when to open. Volume is not generosity. A tube from a specialist shop often lands better than an oversized haul.
+
+The evening before a journey prefers a shorter format and an early, clean goodbye. A gentleman announces the boundary while the welcome is still warm. People keep that measure longer than a false infinity.
+
 ---
 
 ## Part II on leaf and flame, without the exam tone
