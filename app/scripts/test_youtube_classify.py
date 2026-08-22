@@ -6,7 +6,9 @@ import unittest
 
 from youtube_classify_lib import (
     TAG_BAR_TECHNIQUE,
+    TAG_CIGAR,
     TAG_COCKTAIL,
+    TAG_ETIQUETTE,
     TAG_RUM,
     TAG_SKIP,
     TAG_WHISKY,
@@ -36,6 +38,14 @@ class ClassifyVideoTests(unittest.TestCase):
         tags = classify_video("Stop drinking rum wrong — glassware tips", "Use a Glencairn")
         self.assertIn(TAG_BAR_TECHNIQUE, tags)
         self.assertIn(TAG_RUM, tags)
+
+    def test_cigar_title(self) -> None:
+        tags = classify_video("Padron 1964 Anniversary robusto review", "")
+        self.assertIn(TAG_CIGAR, tags)
+
+    def test_etiquette(self) -> None:
+        tags = classify_video("Table manners every gentleman should know", "")
+        self.assertIn(TAG_ETIQUETTE, tags)
 
     def test_unknown_becomes_skip(self) -> None:
         tags = classify_video("Hello from the pub garden", "nice weather today")

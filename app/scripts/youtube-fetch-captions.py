@@ -56,7 +56,11 @@ def _pick_vtt(tmpdir: Path) -> tuple[Path | None, str]:
     return None, "none"
 
 
-def fetch_captions_for_video(video_id: str) -> tuple[str, str, str | None]:
+def fetch_captions_for_video(
+    video_id: str,
+    *,
+    cookies_from_browser: str | None = None,
+) -> tuple[str, str, str | None]:
     """Returns (status, source, text_or_error). status: ok|missing|error|unavailable."""
     url = f"https://www.youtube.com/watch?v={video_id}"
     with tempfile.TemporaryDirectory(prefix="ytcap_") as td:
@@ -72,8 +76,10 @@ def fetch_captions_for_video(video_id: str) -> tuple[str, str, str | None]:
             "--no-warnings",
             "-o",
             outtmpl,
-            url,
         ]
+        if cookies_from_browser:
+            args.extend(["--cookies-from-browser", cookies_from_browser])
+        args.append(url)
         proc = run_yt_dlp(args, timeout=180)
         path, source = _pick_vtt(Path(td))
         if path and path.exists():
@@ -122,6 +128,11 @@ def main() -> None:
         help="Only missing/error: members-only→unavailable offline; else re-fetch",
     )
     parser.add_argument("--pause", type=float, default=PAUSE_S)
+    parser.add_argument(
+        "--cookies-from-browser",
+        default=None,
+        help="Pass through to yt-dlp (e.g. chrome, edge) for age-gated videos",
+    )
     args = parser.parse_args()
 
     ensure_yt_dlp()
@@ -164,7 +175,10 @@ def main() -> None:
 
         print(f"  captions {vid}: {rec.get('title', '')[:60]}", flush=True)
         try:
-            status, source, payload = fetch_captions_for_video(vid)
+            status, source, payload = fetch_captions_for_video(
+                vid,
+                cookies_from_browser=args.cookies_from_browser,
+            )
         except Exception as e:  # noqa: BLE001 — persist and continue
             status, source, payload = "error", "none", str(e)
 

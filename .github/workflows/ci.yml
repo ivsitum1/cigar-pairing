@@ -70,6 +70,12 @@ jobs:
       - name: RumRatings parser i spajanje imena (12 YO ≠ 15 YO)
         working-directory: app
         run: python scripts/test_rumratings.py
+      - name: YouTube corpus (classify / match / cigar enrichments)
+        working-directory: app
+        run: |
+          python -m unittest discover -s scripts -p "test_youtube*.py" -q
+          python -m unittest discover -s scripts -p "test_summarize*.py" -q
+          python scripts/apply-youtube-cigar-enrichment.py --check
       - name: List i punjenje iz dućanskih redaka (kubansko sjeme ≠ kubanski duhan)
         working-directory: app
         run: python scripts/test_merge_leaf_details.py
