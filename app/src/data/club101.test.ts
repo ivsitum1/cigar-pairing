@@ -57,6 +57,7 @@ describe("club 101 vodici", () => {
       expect.arrayContaining([
         "d-gin-pairing",
         "d-wine-table",
+        "d-rum-reading-label",
         "d-coffee",
         "d-coffee-roast",
         "d-coffee-process",
@@ -96,6 +97,11 @@ describe("club 101 vodici", () => {
     const tequila = club101.tracks.drinks.find((c) => c.id === "d-tequila");
     expect(tequila?.body.hr.toLowerCase()).toMatch(/blanco/);
     expect(tequila?.body.en.toLowerCase()).toMatch(/blanco/);
+
+    const rumReading = club101.tracks.drinks.find((c) => c.id === "d-rum-reading-label");
+    expect(rumReading?.body.hr.toLowerCase()).toMatch(/destilerij|etiket/);
+    expect(rumReading?.body.en.toLowerCase()).toMatch(/distiller|label/);
+    expect(rumReading?.body.hr.toLowerCase()).toMatch(/smooth/);
   });
 
   it("pica 101 pokriva biljne digestive", () => {
