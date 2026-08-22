@@ -26,9 +26,13 @@ Local caption dumps for Club / rum research live under
 cd app
 python scripts/youtube-batch.py captions --all-enabled
 # Age-gated channels (e.g. Holt's): pass browser cookies once
-python scripts/youtube-batch.py captions --channel holtscigars --cookies-from-browser chrome
+python scripts/youtube-batch.py captions --channel holtscigars --cookies scripts/data/youtube/cookies.txt
 # Or Netscape cookies.txt (preferred on Windows Chrome 127+)
-python scripts/youtube-fetch-captions.py --channel holtscigars --cookies scripts/data/youtube/cookies.txt
+python scripts/youtube-fetch-captions.py --channel holtscigars --cookies data/youtube/cookies.txt
+# Ops helpers
+python scripts/youtube-caption-status.py
+python scripts/youtube-reset-age-gate.py --channel holtscigars
+powershell -File scripts/youtube-run-corpus-phases.ps1 -Phase 1A
 ```
 
 Age-gate / members-only videos are marked `captionStatus: unavailable` so resume does not hammer them.

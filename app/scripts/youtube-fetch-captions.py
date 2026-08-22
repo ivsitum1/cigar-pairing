@@ -32,6 +32,8 @@ from youtube_common import (
     vtt_to_plain,
 )
 
+HERE = Path(__file__).resolve().parent
+
 if hasattr(sys.stdout, "buffer"):
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
 if hasattr(sys.stderr, "buffer"):
@@ -81,7 +83,15 @@ def fetch_captions_for_video(
             outtmpl,
         ]
         if cookies_file:
-            args.extend(["--cookies", cookies_file])
+            cf = Path(cookies_file)
+            if not cf.is_file():
+                raise FileNotFoundError(f"cookies file not found: {cookies_file}")
+            # yt-dlp on Windows mis-parses drive-letter paths (C:\...) as browser cookies.
+            try:
+                cookie_arg = cf.relative_to(HERE).as_posix()
+            except ValueError:
+                cookie_arg = cf.resolve().as_posix()
+            args.extend(["--cookies", cookie_arg])
         elif cookies_from_browser:
             args.extend(["--cookies-from-browser", cookies_from_browser])
         args.append(url)
@@ -153,8 +163,16 @@ def main() -> None:
         raise SystemExit("Empty inventory ΓÇö run youtube-inventory.py first")
 
     cookies_file = args.cookies
-    if cookies_file and not Path(cookies_file).is_file():
-        raise SystemExit(f"cookies file not found: {cookies_file}")
+    if cookies_file:
+        cf = Path(cookies_file)
+        if not cf.is_file():
+            for candidate in (Path.cwd() / cookies_file, HERE / cookies_file, HERE.parent / cookies_file):
+                if candidate.is_file():
+                    cf = candidate
+                    break
+        if not cf.is_file():
+            raise SystemExit(f"cookies file not found: {cookies_file}")
+        cookies_file = str(cf)
     has_cookies = bool(cookies_file or args.cookies_from_browser)
 
     done = 0
