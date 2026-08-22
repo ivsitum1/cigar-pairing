@@ -2,13 +2,14 @@
 title: Activity Log
 category: meta
 tags: [log, changelog]
-updated: 2026-08-19
+updated: 2026-08-22
 ---
 
 # Activity Log
 
 | Datum | Događaj |
 |-------|---------|
+| 2026-08-22 | Paralelna nadopuna znanja: Club JSON (rječnik rum etiketa, 101 `d-rum-reading-label` / `t-foreign-table`, leksikon `distillery-first`, HR vodič `moj-plan-app`, bonton app nikotin + tuđi prostor); pairing UI — `pairingNarrative` u proširenoj kartici; `docs/bonton/README.md`; brain concepts pairing-mechanism, club-content-map, book-app-bonton-sync. |
 | 2026-08-19 | App: naknadna ocjena večeri u `journal` — u `CollectionPage` journal listi i u `JournalCalendar` (`JournalCard`) dodan dropdown “Ocjena večeri” kad `journal.rating` nedostaje; uveden je hint da se ne mijenja “Moja ocjena”. |
 | 2026-08-19 | OCR: riješen TypeScript blocker za offline OCR pack (warm/reset) + dodani i sinkani EAN-ovi u `barcodeCatalog.json` (Don Tomas Churchill/Robusto, Romeo y Julieta Churchill, Plasencia Alma Fuerte Robustus); `sync-cigar-barcodes.py --check` i fokalni OCR/barcode Vitest prolazi. |
 | 2026-08-18 | Pića: The Humidor (236 SKU) spojen na postojeće boce — 32 izravna `priceUrl` (praznine, bez krađe allez/ecuga). Havana webshop nema katalog boca. |
