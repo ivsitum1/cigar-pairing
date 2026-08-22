@@ -1,4 +1,7 @@
 # -*- coding: utf-8 -*-
+"""Schema tests for curated YouTube rum/cigar enrichments (no network)."""
+from __future__ import annotations
+
 import json
 import unittest
 from pathlib import Path
@@ -67,7 +70,8 @@ class YoutubeCigarEnrichmentTests(unittest.TestCase):
             self.assertFalse(forbidden, f"{cigar_id} has forbidden keys: {forbidden}")
             hr = notes["hr"].lower()
             self.assertNotIn(" short filler", hr, cigar_id)
-            self.assertNotIn("wrapper", hr, cigar_id)
+            self.assertNotRegex(hr, r"\bwrapper\b", cigar_id)
+            self.assertNotRegex(hr, r"\bcigar\b", cigar_id)
 
     def test_cigar_enrichment_ids_exist_in_catalog(self):
         payload = json.loads(CIGAR_ENRICH.read_text(encoding="utf-8"))

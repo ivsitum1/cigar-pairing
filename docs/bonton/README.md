@@ -24,10 +24,14 @@ Tri sloja: **rukopis knjige**, **app (PWA)** i **brain-lite wiki**. Ne miješaj 
 
 | Poglavlje rukopisa | App dom |
 |--------------------|---------|
-| Ch 15 — nicotine discomfort | `bonton.json` → `b-host` (Nikotin bez srama) |
-| Ch 20 — when the table is not yours | `bonton.json` → `b-outdoors` (Tuđi prostor) + Club 101 `t-foreign-table` |
 | Ch 5 — words at the table | `lexicon.json` → `rijeci-za-stol` |
-| Rum label literacy | `dictionary.json` + Club 101 `d-rum-reading-label` |
+| Ch 13 — tasting host order | `bonton.json` → `b-table` |
+| Ch 14 — rum label literacy | `dictionary.json` + Club 101 `d-rum-reading-label` + `lexicon` `distillery-first` |
+| Ch 15 — nicotine / strength vs body | `bonton.json` → `b-host` (+ `lexicon` `snaga-vs-tijelo`) |
+| Ch 20 — when the table is not yours | `bonton.json` → `b-outdoors` + Club 101 `t-foreign-table` |
+| Expansion — inner scorecard / LE | `lexicon.json` → `unutarnja-ljestvica`, `limited-edition` |
+
+Detaljna mapa: [`CROSSWALK.md`](./CROSSWALK.md).
 
 ## Sparivanje (mehanizam)
 

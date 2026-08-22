@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """Fetch EN captions for inventoried videos (no media download).
 
@@ -130,7 +130,7 @@ def main() -> None:
     parser.add_argument(
         "--resolve-pending",
         action="store_true",
-        help="Only missing/error: members-only→unavailable offline; else re-fetch",
+        help="Only missing/error: members-onlyΓåÆunavailable offline; else re-fetch",
     )
     parser.add_argument("--pause", type=float, default=PAUSE_S)
     parser.add_argument(
@@ -150,7 +150,7 @@ def main() -> None:
     inv = load_inventory(args.channel)
     videos = list(inv.get("videos") or [])
     if not videos:
-        raise SystemExit("Empty inventory — run youtube-inventory.py first")
+        raise SystemExit("Empty inventory ΓÇö run youtube-inventory.py first")
 
     cookies_file = args.cookies
     if cookies_file and not Path(cookies_file).is_file():
@@ -200,7 +200,7 @@ def main() -> None:
                 cookies_from_browser=args.cookies_from_browser,
                 cookies_file=cookies_file,
             )
-        except Exception as e:  # noqa: BLE001 — persist and continue
+        except Exception as e:  # noqa: BLE001 ΓÇö persist and continue
             status, source, payload = "error", "none", str(e)
 
         if status == "ok":
