@@ -29,6 +29,42 @@ let ephemeral: { status: OcrPackStatus; progress: string | null; lastError: stri
 };
 let warmed = false;
 
+/** useSyncExternalStore uspoređuje referencu — novi objekt svaki put = beskonačan re-render. */
+let snapshotCache: Snapshot = {
+  status: "not_installed",
+  lastError: null,
+  progress: null,
+};
+
+function buildSnapshot(): Snapshot {
+  if (ephemeral.status === "downloading") {
+    return {
+      status: "downloading",
+      lastError: ephemeral.lastError,
+      progress: ephemeral.progress,
+    };
+  }
+  const s = readStored();
+  return {
+    status: s.status,
+    lastError: s.lastError ?? null,
+    progress: null,
+  };
+}
+
+function snapshot(): Snapshot {
+  const next = buildSnapshot();
+  if (
+    snapshotCache.status === next.status &&
+    snapshotCache.lastError === next.lastError &&
+    snapshotCache.progress === next.progress
+  ) {
+    return snapshotCache;
+  }
+  snapshotCache = next;
+  return snapshotCache;
+}
+
 function readStored(): Stored {
   try {
     const raw = localStorage.getItem(KEY);
@@ -57,24 +93,13 @@ function notify() {
   listeners.forEach((l) => l());
 }
 
-function snapshot(): Snapshot {
-  if (ephemeral.status === "downloading") {
-    return {
-      status: "downloading",
-      lastError: ephemeral.lastError,
-      progress: ephemeral.progress,
-    };
-  }
-  const s = readStored();
-  return {
-    status: s.status,
-    lastError: s.lastError ?? null,
-    progress: null,
-  };
-}
-
 export function getOcrPackStatus(): OcrPackStatus {
   return snapshot().status;
+}
+
+/** Za testove: useSyncExternalStore traži stabilnu referencu između notify poziva. */
+export function getOcrPackSnapshot(): Snapshot {
+  return snapshot();
 }
 
 export function isOcrPackReady(): boolean {

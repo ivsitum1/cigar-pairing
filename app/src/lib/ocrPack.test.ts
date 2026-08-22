@@ -38,4 +38,14 @@ describe("ocrPack", () => {
     uninstallOcrPack();
     expect(getOcrPackStatus()).toBe("not_installed");
   });
+
+  it("snapshot ostaje ista referenca dok se stanje ne promijeni", async () => {
+    const { getOcrPackSnapshot, uninstallOcrPack } = await import("./ocrPack");
+    const a = getOcrPackSnapshot();
+    const b = getOcrPackSnapshot();
+    expect(a).toBe(b);
+    uninstallOcrPack();
+    const c = getOcrPackSnapshot();
+    expect(c).toBe(a);
+  });
 });
