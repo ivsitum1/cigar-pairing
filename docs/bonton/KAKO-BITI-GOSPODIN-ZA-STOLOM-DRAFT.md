@@ -1489,6 +1489,36 @@ Domaćin zna više. Zato priča manje. Nudi ljestvicu. Ispravlja nasamo. Gosti o
 
 Glasnije, više čaša, više rizika od pretjerivanja. Gospodin tada čuva sobu: voda, tempo, znakovi umora. Slavlje koje završi sramotom nije uspjelo.
 
+### Arhetip večeri: dva prijatelja
+
+Dva stolca, jedna pepeljara, bez predstave. Razgovor vodi; dim prati. Gospodin ne pretvara prijateljstvo u seminar o markama, ni u utrku tko dulje izdrži. Ako razgovoru treba predah, list može pričekati. Ako listu treba predah, razgovor drži stol.
+
+Dar te večeri je jednostavnost: voda nadohvat, telefoni okrenuti, sloboda stati bez objašnjavanja kalendara.
+
+### Arhetip večeri: poslovni balkon
+
+Čin ne bira vitolu. Gospodin s autoritetom nudi blaži put i čist izlaz: kavu, kraći format ili uopće bez dima. Gospodin bez čina može odbiti bez teatra: „Večeras ostajem uz čašu.”
+
+Dim kao test lojalnosti loša je strategija. Dim kao zajednički zrak, uz pristanak i izlaz, još može ostaviti mjesta za sutrašnji posao.
+
+### Arhetip večeri: jadranska terasa
+
+Prvo vjetar, onda list. Puh s mora i puh s kopna prepisuju isti stol; gospodin miče stolce, skraćuje format ili čeka. Susjedi dolje dio su društva i kad nikad ne sjednu.
+
+Pepeo nije konfeti. Terasa pobjeđuje kad se rublje i prozori razmisle prije prvog plamena — ne nakon prve žalbe.
+
+### Arhetip večeri: obiteljski kompromis
+
+Netko za stolom ne puši. Večer se ne dijeli na čiste i nečiste. Dim ode u stranu; razgovor ostaje zajednički. Gospodin ne vrbuje i ne prognaje.
+
+Ako je stan bez dima unutra, terasa se dogovara — porukom prije dolaska kad su gosti novi. Jasnoća je gostoprimstvo; iznenađenje na vratima nije.
+
+### Arhetip večeri: poklon i zadnja prije puta
+
+Dar stiže s kontekstom: jačina, duljina, kad otvoriti. Volumen nije darežljivost. Tuba iz specijalizirane trgovine često bolje sjedne od prevelikog ulova.
+
+Večer prije puta voli kraći format i rani, čist oproštaj. Gospodin najavi granicu dok je dobrodošlica još topla. Ljudi pamte tu mjeru dulje od lažne beskonačnosti.
+
 ---
 
 ## Proširenje uz II. dio — još o listu i plamenu
