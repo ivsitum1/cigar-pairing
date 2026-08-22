@@ -4,7 +4,7 @@
 
 Usage:
   python scripts/youtube-fetch-captions.py --channel stevethebarmanuk --limit 5
-  python scripts/youtube-fetch-captions.py --channel stevethebarmanuk
+  python scripts/youtube-fetch-captions.py --channel holtscigars --cookies scripts/data/youtube/cookies.txt
   python scripts/youtube-fetch-captions.py --channel stevethebarmanuk --force
   python scripts/youtube-fetch-captions.py --channel stevethebarmanuk --resolve-pending
 """
@@ -56,7 +56,12 @@ def _pick_vtt(tmpdir: Path) -> tuple[Path | None, str]:
     return None, "none"
 
 
-def fetch_captions_for_video(video_id: str) -> tuple[str, str, str | None]:
+def fetch_captions_for_video(
+    video_id: str,
+    *,
+    cookies_from_browser: str | None = None,
+    cookies_file: str | None = None,
+) -> tuple[str, str, str | None]:
     """Returns (status, source, text_or_error). status: ok|missing|error|unavailable."""
     url = f"https://www.youtube.com/watch?v={video_id}"
     with tempfile.TemporaryDirectory(prefix="ytcap_") as td:
@@ -69,11 +74,17 @@ def fetch_captions_for_video(video_id: str) -> tuple[str, str, str | None]:
             "en.*,en",
             "--sub-format",
             "vtt",
+            # Age-gate videos often have no downloadable media formats; captions still work.
+            "--ignore-no-formats-error",
             "--no-warnings",
             "-o",
             outtmpl,
-            url,
         ]
+        if cookies_file:
+            args.extend(["--cookies", cookies_file])
+        elif cookies_from_browser:
+            args.extend(["--cookies-from-browser", cookies_from_browser])
+        args.append(url)
         proc = run_yt_dlp(args, timeout=180)
         path, source = _pick_vtt(Path(td))
         if path and path.exists():
@@ -122,6 +133,16 @@ def main() -> None:
         help="Only missing/error: members-only→unavailable offline; else re-fetch",
     )
     parser.add_argument("--pause", type=float, default=PAUSE_S)
+    parser.add_argument(
+        "--cookies-from-browser",
+        default=None,
+        help="Pass through to yt-dlp (e.g. chrome, edge) for age-gated videos",
+    )
+    parser.add_argument(
+        "--cookies",
+        default=None,
+        help="Netscape cookies.txt path (preferred on Windows Chrome 127+; DPAPI blocks --cookies-from-browser)",
+    )
     args = parser.parse_args()
 
     ensure_yt_dlp()
@@ -130,6 +151,11 @@ def main() -> None:
     videos = list(inv.get("videos") or [])
     if not videos:
         raise SystemExit("Empty inventory — run youtube-inventory.py first")
+
+    cookies_file = args.cookies
+    if cookies_file and not Path(cookies_file).is_file():
+        raise SystemExit(f"cookies file not found: {cookies_file}")
+    has_cookies = bool(cookies_file or args.cookies_from_browser)
 
     done = 0
     ok = missing = errors = skipped = unavailable = offline_unavail = 0
@@ -150,8 +176,13 @@ def main() -> None:
             skipped += 1
             continue
 
-        # Offline close-out for known members-only / private errors
-        if rec.get("captionStatus") == "error" and is_access_denied_error(rec.get("error")):
+        # Offline close-out for members-only / private / age-gate WITHOUT cookies.
+        # When cookies are supplied, retry age-gate and similar access errors online.
+        if (
+            rec.get("captionStatus") == "error"
+            and is_access_denied_error(rec.get("error"))
+            and not has_cookies
+        ):
             mark_unavailable(rec, rec.get("error"))
             save_video(rec)
             row["captionStatus"] = "unavailable"
@@ -164,7 +195,11 @@ def main() -> None:
 
         print(f"  captions {vid}: {rec.get('title', '')[:60]}", flush=True)
         try:
-            status, source, payload = fetch_captions_for_video(vid)
+            status, source, payload = fetch_captions_for_video(
+                vid,
+                cookies_from_browser=args.cookies_from_browser,
+                cookies_file=cookies_file,
+            )
         except Exception as e:  # noqa: BLE001 — persist and continue
             status, source, payload = "error", "none", str(e)
 

@@ -14,6 +14,7 @@ HERE = Path(__file__).resolve().parent
 CHANNELS_PATH = HERE / "data" / "youtube" / "channels.json"
 OUTPUT_ROOT = HERE / "output" / "youtube"
 RUMS_PATH = HERE.parent / "src" / "data" / "rums.json"
+CIGARS_PATH = HERE.parent / "src" / "data" / "cigars.json"
 
 CaptionStatus = str  # ok | missing | error | unavailable
 CaptionSource = str  # manual | auto | none
@@ -28,6 +29,11 @@ _ACCESS_DENIED_MARKERS = (
     "video unavailable",
     "has been removed",
     "account associated with this video has been terminated",
+    # Age-gate / cookie wall — needs --cookies-from-browser to retry
+    "sign in to confirm your age",
+    "confirm your age",
+    "age-restricted",
+    "login required",
 )
 
 
@@ -73,6 +79,10 @@ def classify_path(channel_id: str) -> Path:
 
 def proposals_path(channel_id: str) -> Path:
     return channel_dir(channel_id) / "rum_match_proposals.json"
+
+
+def cigar_proposals_path(channel_id: str) -> Path:
+    return channel_dir(channel_id) / "cigar_match_proposals.json"
 
 
 def log_path(channel_id: str) -> Path:
