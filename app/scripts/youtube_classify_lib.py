@@ -6,18 +6,22 @@ import re
 from typing import Iterable
 
 TAG_RUM = "rum"
+TAG_CIGAR = "cigar"
 TAG_COCKTAIL = "cocktail"
 TAG_WHISKY = "whisky"
 TAG_OTHER_SPIRIT = "other-spirit"
 TAG_BAR_TECHNIQUE = "bar-technique"
+TAG_ETIQUETTE = "etiquette"
 TAG_SKIP = "skip"
 
 ALL_TAGS = (
     TAG_RUM,
+    TAG_CIGAR,
     TAG_COCKTAIL,
     TAG_WHISKY,
     TAG_OTHER_SPIRIT,
     TAG_BAR_TECHNIQUE,
+    TAG_ETIQUETTE,
     TAG_SKIP,
 )
 
@@ -26,6 +30,15 @@ _RUM = re.compile(
     r"foursquare|appleton|havana.?club|doorly|mount.?gay|"
     r"diplomatico|zacapa|plantation|el.?dorado|clairin|"
     r"jamaican|barbados|martinique|guyanese)\b",
+    re.I,
+)
+_CIGAR = re.compile(
+    r"\b(cigar|cigars|habano|puro|vitola|robusto|toro|corona|"
+    r"churchill|figurado|maduro|connecticut|wrapper|binder|"
+    r"cohiba|padron|davidoff|oliva|montecristo|partagas|"
+    r"rocky\s+patel|my\s+father|tatuaje|drew\s+estate|"
+    r"arturo\s+fuente|perdomo|ashton|plasencia|camacho|"
+    r"macanudo|la\s+aurora|aj\s+fernandez)\b",
     re.I,
 )
 _COCKTAIL = re.compile(
@@ -54,6 +67,12 @@ _SKIP = re.compile(
     r"subscribe|giveaway.?only)\b",
     re.I,
 )
+_ETIQUETTE = re.compile(
+    r"\b(etiquette|manners|gentleman|gentlemen|dining|table.?manners|"
+    r"napkin|cutlery|deportment|protocol|bonton|formal.?wear|"
+    r"thank.?you.?note|RSVP)\b",
+    re.I,
+)
 
 
 def _blob(title: str, text: str, text_chars: int = 800) -> str:
@@ -67,6 +86,8 @@ def classify_video(title: str, text: str = "") -> list[str]:
     tags: list[str] = []
     if _RUM.search(blob):
         tags.append(TAG_RUM)
+    if _CIGAR.search(blob):
+        tags.append(TAG_CIGAR)
     if _COCKTAIL.search(blob):
         tags.append(TAG_COCKTAIL)
     if _WHISKY.search(blob):
@@ -75,6 +96,8 @@ def classify_video(title: str, text: str = "") -> list[str]:
         tags.append(TAG_OTHER_SPIRIT)
     if _TECH.search(blob):
         tags.append(TAG_BAR_TECHNIQUE)
+    if _ETIQUETTE.search(blob):
+        tags.append(TAG_ETIQUETTE)
     if not tags:
         if _SKIP.search(blob):
             tags.append(TAG_SKIP)
