@@ -271,6 +271,10 @@ Dobar domaćin čuje to bez komentara o „potrošnji” poklona.
 
 „Radije bih vodu uz tvoj dim” bolje je od lažnog oduševljenja.
 
+„To mi sjeda u drugi registar” spašava večer kad mosta nema — bez da ikoga proglašavaš krivim.
+
+„Ne moraš završiti cigaru” dar je domaćina, ne uvreda.
+
 Gospodin prima takve rečenice kao informaciju, ne kao uvredu.
 
 ### Vinjeta: snob u jednoj rečenici
@@ -749,6 +753,18 @@ Voda čisti nepce, ublažava udar, vraća razgovor. Gospodin ne ismijava vodu. G
 
 Ako gost ne pije alkohol, ritual se ne raspada. Dim, voda, razgovor — stol i dalje stoji. Prazna čaša „za formu” nije obavezna. Poštovanje jest.
 
+### Kad vodiš kušanje (rum ili whisky)
+
+Ako vodiš više od jedne boce, večeri treba red više nego volumen.
+
+Pet ili šest stavki dovoljno je za učenje; više zamagljuje usporedbu. Počni blago i u aromi i u alkoholu, u cigari i u čaši. Žestoka na sobnoj temperaturi, čista — led i long drink drugi su ritual, za drugu noć.
+
+Mirisi čašu prvo izdaleka, pa bliže. Visoki postotak može pecati ako zaroniš odmah. Blagi zavrtaj nije zabranjen; teatralni koji napuni sobu alkoholom jest druga stvar.
+
+Vrati nepce vodom sobne temperature između gutljaja i dimova. Više vode nego alkohola kroz sesiju nije slabost — tako gosti još okuse i zadnju čašu.
+
+Ne aeriraj cask strength u ustima kao vino. Ponudi vodu; neka gost izabere kap.
+
 ### Precepti
 
 Gospodin postavlja vodu prije mudrosti.
@@ -802,6 +818,18 @@ Visoki postotak alkohola ponekad „drži” puniji dim bolje od tankog gutljaja
 ### Slatkoća i oprez
 
 Slađi profili ponekad vole tamnije omote. Svjetliji omoti ponekad vole čistije, suše linije. Deklaracija dodataka u rumovima — gdje postoji — vrijedi više od marketinške magle. Gospodin ne moralizira o dodacima kao o grijehu; govori jasno kad zna, i šuti kad ne zna.
+
+### Čitanje etikete ruma bez kazališta
+
+Tamno staklo nije uvijek star duh. **E150a** dopuštena je karamelna boja u rumu (i u škotskom whiskyju). Izjednačuje izgled boce; sama po sebi ne kaže kako tekućina miriše. Gospodin sluša nepce, ne samo nijansu.
+
+**Brojke starosti** nisu sve iste vrste obećanja. Dvanaest godina na jednoj etiketi nije ista priča kao solera-stil, niti isto što **5+3** na boci poput Dos Maderas — pet godina u rumovim bačvama, zatim tri u sherryju. Plus je most između dviju faza, ne zbroj koji možeš pročitati kao „osam godina na jednom mjestu”.
+
+Boce **distillery-first** — kuće poput Foursquarea ili Doorly'sa na Barbadosu, gdje su navedeni proizvođač i put bačve — pomažu poštenom razgovoru za stolom. Opći „Caribbean blend” bez adrese teže je suditi prije otvaranja. To nije snobizam; to je jasnoća.
+
+Kad vježbaš nepce, jedna prozirna i jedna zaobljenija, slađa boca daju bolju večer od pet izjava o rijetkosti. Usporedi, zabilježi, ne propovijedaj.
+
+Ako netko za stolom zna manje od tebe, prevedi etiketu u gostoprimstvo, ne u ispit. Ako znaš manje nego što etiketa glumi, reci to. I to je bonton.
 
 ### Riječ „glatko”
 
@@ -857,9 +885,11 @@ Pitaj za snagu, dimljenost i vrijeme prije nego otvoriš kutiju.
 
 Drži blagu i srednju cigaru te pristupačno piće na startu. Tresetna bomba i puna maduro mogu doći kasnije — ako ikad.
 
+Za početnika ponudi blažu ili kraću vitolu — u prolazu se kaže i „golf” stick. Ne forsira premium format da dokažeš domaćina. Večer je gostoprimstvo, ne ulazni ispit.
+
 Pokaži gdje je pepeljara i WC. Sitnice spašavaju večer.
 
-Ne forsiraj „još jednu” kad je gost sit.
+Ponudi „još jednu” jednom, s pravim izlazom. Ne forsiraj dok gost ne popusti. Sit je sit.
 
 Drži mentorski ton samo kad ga traže. Inače drži gostoprimstvo.
 
@@ -869,11 +899,13 @@ Povremeno, nježno, provjeri je li svima dobro — bez da pretvoriš stol u ordi
 
 Donesi mali dar ako je običaj — bocu, malu kutiju, ništa pretjerano.
 
-Poštuj red u humidoru. Ne prekapaj.
+Poštuj red u humidoru. Ne prekapaj. Ne stišći listove kao voće na tržnici — pitaj što je spremno za večeras.
 
 Zahvali konkretno: „Taj amontillado uz Connecticut…” bolje je od općeg „super bilo”.
 
 Skraćivanje zadnje trećine nije slabost. To je mjera.
+
+Ako doneseš bocu gdje običaj dopušta, podijeli je — ili je ostavi u autu. Piti samo svoje u tuđem salonu nije darežljivost.
 
 Ako kasniš, javi. Domaćin nije dužan držati prvi dim u stanju mirovanja kao vječnu vatru — ali dobar domaćin i dobar gost dogovore ritam.
 
@@ -885,9 +917,17 @@ Gospodin ne pretvara grešku u predstavu. Ni u tuđu sramotu.
 
 ### Nelagoda od nikotina — bez srama
 
-Ako gost blijedi, znoji se, utihne: voda, malo slatkog ako pomaže, zrak, kraća sesija. Bez šale na račun „slabosti”. Bez herojske priče kako ti „držiš”.
+Snaga je nikotin — koliko list udara u glavu i prsa. Tijelo je gustoća dima i okusa. Mogu se razići: puni maduro može sjediti srednje po snazi; blagi Connecticut i dalje može biti zaobljen u ustima. Domaćin koji ih miješa često nudi krivu ljestvicu.
+
+Ako gost blijedi, znoji se, utihne ili prestane govoriti: voda, malo slatkog ako pomaže, zrak, kraća sesija. Bez šale na račun „slabosti”. Bez herojske priče kako ti „držiš”. Bez kladionice tko će izdržati.
+
+Uspori tempo prije nego posegneš za jačim pićem. Kava može pooštriti nikotin; nije lijek. Retrohale — dim kroz nos — alat je kušanja, ne dužnost; na jakoj cigari može prebaciti gosta.
+
+Što domaćin može tiho reći: „Još vode?” „Pet minuta stanke?” „Imam kraću ako želiš.” Što gost može reći bez isprike: „Stajem ovdje — bilo je dovoljno.”
 
 Domaćin koji spašava večer tiho veći je gospodar stola od onoga koji drži predavanje o nikotinu.
+
+Što se dogodilo za stolom ostaje za stolom. Ne prepričavaj tuđu nelagodu kao anegdotu, meme ili fotografiju. To nije duhovitost. To je izdaja u obliku humora.
 
 ### Precepti
 
@@ -898,6 +938,8 @@ Dobar gost zna stati.
 Gospodin greške rješava tiho.
 
 Gospodin ne sramoti tijelo koje kaže dosta.
+
+Gospodin ne fotografira tuđu nelagodu — ni za stolom ni sutradan.
 
 Gospodin zahvaljuje konkretno.
 
@@ -1213,29 +1255,59 @@ Gospodin ne koristi poklon da bi ušao u tuđi humidor „po principu uzvrata”
 
 ## 20. Kad stol nije tvoj
 
-Tuđi prostor traži dvostruku mjeru.
+Tuđi prostor traži dvostruku mjeru: pitaj prije plamena i ostavi čistije i mirnije nego što si zatekao.
+
+### Pravilo prije detalja
+
+Gdje je pušenje zabranjeno, razgovor je gotov. Nema ničeg sofisticiranog u svađi sa znakom, detektorom ili konobarom koji nije pisao kućni red.
+
+Gdje je dopušteno, mjera i dalje vrijedi. Dozvola nije licencija da napuniš sobu.
 
 ### Restoran
 
 Gdje smiješ, pitaj kako daleko. Gdje ne smiješ, ne smiješ. Osoblje nije tu da vodi tvoju filozofsku raspravu o slobodi.
 
-Ne zauzimaj pepeljarom prostor tuđeg deserta za susjednim stolom.
+Sjedi leđima vjetru kad možeš; ne šalji dim u desert susjednog stola ni u ulaz gdje ljudi čekaju.
+
+Putna pepeljara ili mala limenka bolja je od pepela na travnjaku, u tegli ili na kamenoj polici. Pepeljara nije koš — trake i celofan idu u smeće.
 
 ### Hotel
 
-Hodnici, sobe s detektorima, zajedničke terase — pravila kuće. Gospodin čita kućni red prije nego zapali „samo na balkonu” u smjeru tuđeg prozora.
+Hodnici, sobe s detektorima, zajedničke terase — pročitaj kućni red prije nego zapališ „samo na balkonu” prema tuđem prozoru. Dim se penje. Zavjese pamte.
+
+Krivo: „Balkon je moj.” Ljubaznije: ugasi, pomakni se ili idi na označeno mjesto. Hotel pamti mirise dulje od gostiju.
+
+### Vani i vjetar
+
+Vjetar i prolaznici mijenjaju pravila brže od humidora. Na Jadranu bura i jugo nisu ista večer — prilagodi mjesto, format ili odgodi.
+
+Panatela na otvorenom vjetru traži zaklon; krivi stol, ne gostov izbor vitole. Jet baklja daleko od kose, salveta i suhog bilja.
+
+Na ulici daj širok luk oko ulaza i redova. „Slobodno je vani” nije argument kad dim pada na nekoga tko nije birao tvoju večer.
 
 ### Posao i poslovni balkoni
 
 Poslovni dim nije izgovor za hijerarhiju. Šef koji nudi cigaru kao ulazni ispit loš je domaćin. Kolega koji puše samo da bi bio bliže šefu loš je gost vlastitog karaktera. Ako pušite, pušite kao ljudi — ne kao strategija.
 
+Na sajmu, festivalu ili uredskoj terasi ne blokiraj prolaz dimom i stolicom. Ne pali blizu švedskog stola dok drugi jedu.
+
 ### Tuđi dom
 
 Pitaj na ulazu ili ranije porukom. „Smijemo li na terasu?” bolje je od pretpostavke. Ako je zabrana u stanu, terasa nije automatski tvoja pozornica — dogovorite.
 
+Domaćin koji mora odbiti dim može to jasno reći prije dolaska: „Drago nam je što dolazite — kod nas je stan bez dima; terasa ako vrijeme dopusti.” Jasnoća bolja je od neugode na vratima.
+
 ### Auto, taxi, brod
 
 Pristanak. Zrak. Miris koji ostaje. Gospodin radije pričeka stajalište nego da „osvoji” kabinu.
+
+U tuđem autu ili taksiju samo uz jasan pristanak — i s obzirom na prozor. Na brodu vjetar koji je na molu bio blag može deset metara vani postati okrutan.
+
+### Strani običaji, lokalni stol
+
+U stranoj zemlji čitaj lokalna pravila prije nego citiraš svoje lounge navike. Cut fee, dress code ili ritual napojnice iz inozemstva nije lokalni zakon na prijateljevoj terasi u Hrvatskoj.
+
+Podrži cigar lounge ili trgovinu kupnjom ili poštivanjem jasnih pravila. Na privatnoj terasi gost si u domu, ne mušterija u uvezenom salonu.
 
 ### Precepti
 
