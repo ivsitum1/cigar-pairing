@@ -1,4 +1,4 @@
-# YouTube sources (research corpus)
+﻿# YouTube sources (research corpus)
 
 Local caption dumps for Club / rum research live under
 `app/scripts/output/youtube/` (gitignored). They are **not** shipped in the PWA.
@@ -27,9 +27,10 @@ cd app
 python scripts/youtube-batch.py captions --all-enabled
 # Age-gated channels (e.g. Holt's): pass browser cookies once
 python scripts/youtube-batch.py captions --channel holtscigars --cookies-from-browser chrome
+# Or Netscape cookies.txt (preferred on Windows Chrome 127+)
+python scripts/youtube-fetch-captions.py --channel holtscigars --cookies scripts/data/youtube/cookies.txt
 ```
 
 Age-gate / members-only videos are marked `captionStatus: unavailable` so resume does not hammer them.
-
 
 See `docs/superpowers/specs/2026-08-21-youtube-rum-corpus-design.md`.
