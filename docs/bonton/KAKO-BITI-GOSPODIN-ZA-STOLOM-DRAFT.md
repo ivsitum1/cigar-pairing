@@ -1449,6 +1449,22 @@ Skromnost je kad ne fotografiraš svoj pepeo kao da je umjetnički performans �
 
 **Netko digne telefon da fotka stol.** Lica traže pristanak. Ruke, pepeo i čaše mogu biti anonimni. Društvene mreže nisu važnije od povjerenja.
 
+**Domaćin gura XO, gost želi vodu.** Večer se spašava bez obrane ukusa. Natoči vodu kao da pripada ritualu. XO ostaje onima koji su ga tražili. Preferencija nije rasprava.
+
+**„Ne volim dim” — jednom rečenicom.** Soba se prilagodi: prozor, kraći format ili čist predah. Krivi odgovor je predavanje o listu i terroiru. Jedna rečenica odbojnosti već jest cijeli argument.
+
+**Prejak dim u maloj sobi.** Domaćin koji primijeti pomiče zrak ili format prije nego netko mora žaliti. Gost koji primijeti smije pitati za prozor bez isprike. Prostor je bonton; vitola je samo okidač.
+
+**„Moja je bolja” za stolom.** Treći — pogotovo netko tko ne puši — ne sudi utakmicu. Promjena teme, gutljaj vode, korak na terasu: to je dovoljno. Rangiranje listova nije razgovor.
+
+**Krivi rez ili prebrzo paljenje na tuđoj cigari.** Ako je tvoja, popravi tiho nad vlastitom pepeljarom. Ako je tuđa, jednom ponudi alat, pa pusti vlasnika lista. Spektakl oko „kanuinga” više ponižava večer nego pepeo.
+
+**Privatni klub ili zatvoreni krug: tko pali prvi?** Često domaćin postavi tempo prvim plamenom. Gosti pričekaju trenutak. To nije dogma — to je čitanje sobe prije nego prisvojiš zrak.
+
+**Restoranska terasa, napola natkrivena, bez jasne oznake.** Pitaj osoblje gdje je granica između pušačkog ruba i obiteljskih stolova. Nagađanje kvari večer. Dopuštenje je lokalno, ne filozofsko.
+
+**U stanu zabrana, na terasi smije — prvi dolazak.** Kratka poruka prije dolaska bolja je od iznenađenja na vratima: „Drago nam je što dolaziš — kod nas je stan bez dima; terasa ako vrijeme dopusti.” Jasnoća je gostoprimstvo.
+
 ### Mini-epigrami za dio I
 
 - *Tko mora biti najpametniji za stolom, rijetko bude najdraži.*

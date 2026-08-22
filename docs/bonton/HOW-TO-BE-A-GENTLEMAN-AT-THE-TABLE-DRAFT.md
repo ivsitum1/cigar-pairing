@@ -1464,6 +1464,22 @@ The dividend of a good bottle or a good box is paid when it is opened and shared
 
 **Someone lifts a phone to photograph the table.** Faces need consent. Hands, ash, and glasses can be anonymous. Social media is not more important than trust.
 
+**The host insists on XO; the guest wants water.** Save the evening without defending taste. Pour the water as if it belonged to the ritual. Keep the XO for those who asked. Preference is not a debate.
+
+**"I don't like smoke" — said once.** The room adjusts: window, shorter format, or a clean pause. The wrong reply is a lecture on leaf and terroir. One sentence of dislike is already the whole argument.
+
+**Smoke too heavy in a small room.** The host who notices moves air or format before anyone must complain. The guest who notices may ask for a window without apology. Space is manners; the vitola is only the trigger.
+
+**"Mine is better" at the table.** The third person — especially a non-smoker — need not score the match. A change of subject, a pour of water, a step to the terrace: that is enough. Ranking leaves is not conversation.
+
+**A bad cut or a rushed light on someone else's cigar.** Fix quietly over your own ashtray if it is yours to fix. If it is theirs, offer a tool once, then let them own the leaf. Spectacle over a canoeing burn humiliates the evening more than the ash does.
+
+**Private club or closed circle: who lights first?** Often the host sets the tempo with the first flame. Guests wait a beat. It is not dogma — it is reading the room before you claim the air.
+
+**Restaurant terrace, half covered, no clear mark.** Ask staff where the line sits between the smoking edge and the family tables. Guessing is how evenings sour. Permission is local, not philosophical.
+
+**Flat bans smoke; terrace is allowed — first visit.** A short message before arrival beats a surprise at the door: "Glad you're coming — ours is smoke-free indoors; terrace if the weather allows." Clarity is hospitality.
+
 ### Mini-epigrams for Part I
 
 - *He who must be the smartest at the table is rarely the most beloved.*

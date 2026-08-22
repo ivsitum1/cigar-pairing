@@ -6,29 +6,31 @@
 
 ## Situacije stola (pitanja za gosta / domaćina)
 
-- Gost stiže s 15 min zakašnjenja dok je domaćin već upalio prvu — smije li domaćin nastaviti ili čekati? *Provjeriti: tko prvi pali kad je već „dogovoreno vrijeme”?*
-- Dva para na istom stolu, jedan puša, drugi ne — gdje se postavi pepeljara da ne dijeli prostor s netipičnim gostom?
-- Netko nudi „još jednu” nakon treće — koje riječi domaćin koristi da spusti ljestvicu bez da zvuči kao odbijanje gosta?
-- Gost pita za savjet o rezacu / drawu — koliko detalja je ljubazno prije nego postane mini-lekcija?
-- Domaćin ima samo jednu jaču vitolu; gost traži blažu — je li iskren „nemam, ali evo ove kraće” bolji od tihe improvizacije?
-- Na stolu se miješaju cigar i cigarete — tko prvi pita za prozor / terasu?
-- Razgovor se prekine telefonskim pozivom domaćina — ostavlja li se dim u pepeljari ili se ugasi dok traje poziv?
-- Gost želi skratiti zadnju trećinu — kako domaćin reagira bez komentara o „potrošnji” poklona?
-- Netko donese vlastitu cigaru bez najave — kad je to gostoprimstvo, a kad neugodno?
-- Dijeljenje boce: gost ne pije alkohol — ostaje li prazna čaša na stolu ili se ritual skraćuje?
+> Status 2026-08-22: većina ušla u Expansion *Situations* (EN+HR) na grani `docs/bonton-ch-enrichment` (PR #190). Ostaje provjera citata / literature niže.
+
+- [x] Gost stiže s 15 min zakašnjenja dok je domaćin već upalio prvu
+- [x] Dva para na istom stolu, jedan puša, drugi ne — pepeljara
+- [x] „Još jednu” nakon treće — spuštanje ljestvice
+- [x] Savjet o rezaču / drawu — dva detalja, pa pitanje
+- [x] Samo jača vitola — iskrena granica / kraća
+- [x] Cigar + cigarete — tko pita za prozor
+- [x] Telefonski poziv domaćina — pepeo / gašenje / riječ
+- [x] Skraćivanje zadnje trećine — bez brojanja centimetara
+- [x] Vlastita cigara bez najave — primiti gestu
+- [x] Gost ne pije alkohol — bez prazne čaše „za formu”
 
 ---
 
 ## Lokalni HR običaji (terasa, klub, restoran)
 
-- **Terasa iznad susjednog balkona:** u praksi ljudi puše „prema van”, ali dim ide gore — bilježiti stvarne fraze susjeda („samo malo prozora”) vs. znakovi u zgradi.
-- **Kafić s vanjskim stolovima:** gdje je pepeljara na stolu dovoljna, a gdje traži eksplicitno pitanje osoblja?
-- **Klub / privatni prostor:** postoji li neformalno pravilo „prvi dim domaćina”, pa tek onda gosti?
-- **Restoran s djelomično pokrivenom terasom:** granica između „pušačkog” i „obiteljskog” dijela — što ljudi rade kad nema oznake?
-- **Ljetni vikend na Jadranu:** vjetar s mora vs. vjetar s kopna — kratke bilješke s terasa (bez imenovanja lokacija u knjizi?)
-- **Poklon u HR:** tuba od 3–5 cigara iz specijalizirane trgovine vs. duty-free — što se smatra „pristojno”, a što „previše”?
-- **Humidor kod kuće:** gost donese kutiju — ući u domaćinov humidor ili držati odvojeno do večeri?
-- **Zabrana u stanu, terasa dopuštena:** kako se najavljuje dim gostu koji dolazi prvi put (WhatsApp poruka vs. usmeno na ulazu)?
+- [x] **Terasa iznad susjednog balkona** — Ch 18/20 + Expansion
+- [x] **Kafić s vanjskim stolovima** — pepeljara ≠ blanko dopuštenje; pitaj osoblje
+- [x] **Klub / privatni prostor** — često prvi plamen domaćina (Expansion)
+- [x] **Restoran, napola natkrivena terasa** — pitaj osoblje kad nema oznake
+- [x] **Jadran** — vjetar s mora vs. s kopna
+- [x] **Poklon u HR** — specijalistička trgovina vs. duty-free volumen
+- [x] **Humidor** — gostova kutija po strani dok se ne pozove spajanje
+- [x] **Stan zabrana / terasa OK** — poruka prije dolaska
 
 ---
 
@@ -45,12 +47,12 @@
 
 ## „Ne radi se o ukusu” — vignette (sirovine)
 
-- Domaćin insistira na XO-u, gost bi radije vodu — vignette: kako se večer spašava bez objašnjavanja ukusa.
-- Netko kaže „ne volim dim” jednom rečenicom; drugi gost nastavi filozofirati o terroiru — kontrast ponašanja, ne ocjena ukusa.
-- Prejak dim u maloj sobi; domaćin ne primjećuje, gost ne želi biti neotesan — trenutak kad bonton = prostor, ne vitola.
-- „Moja je bolja” usporedba na stolu — kratka scena: što kaže treći koji ne puša?
-- Canoeing na tuđoj cigari — već u knjizi; bilježiti **nova** realna varijanta (krivi rez, prebrzo paljenje) bez ponavljanja gotovog teksta iz poglavlja VII.
-- Domaćin fotografira stol za društvene mreže bez pitanja — dim, čaše, lica: pitanje suglasnosti, ne estetike kadra.
+- [x] XO vs voda — Expansion Situations
+- [x] „Ne volim dim” + terroir predavanje — Expansion
+- [x] Prejak dim u maloj sobi — Expansion
+- [x] „Moja je bolja” / treći koji ne puši — Expansion
+- [x] Krivi rez / prebrzo paljenje (canoeing varijanta) — Expansion
+- [x] Fotografija stola bez pristanka — Expansion + Ch 15/17
 
 ---
 
