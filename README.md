@@ -27,9 +27,14 @@ indeksima rangiranim po kvaliteti za sipping uz cigaru.
 
 - `app/` — Vite + React + TS + Tailwind PWA
   - Hash-routing s deep-linkovima: `#/pairing/cigar/<id>` i `#/pairing/drink/<id>`
-    otvaraju pairing s odabranom stavkom (dijeljivi linkovi, back tipka radi)
-  - `src/data/*.json` — indeksi (320 rum, 274 whiskyja, 90 brandy/grappa, 65 gin,
-    124 vina, 26 tequila, 38 kava, 13 digestiva, 3315 cigara);
+    otvaraju pairing s odabranom stavkom (dijeljivi linkovi, back tipka radi);
+    `#/shopping/gift` je poklon u pet pitanja (cigara, boca ili kombinacija,
+    s cijenom u trgovini u blizini; razredi do 20 / 20–40 / 40–60 / 60–100 €).
+    Kombinacija cigare i pića izlazi samo iznad 80 % slaganja; kad u traženoj
+    kategoriji nema pogotka, prijedlog prelazi na najbližu susjednu (whisky →
+    brandy → rum → vino) prije nego što dira budžet ili oblik poklona
+  - `src/data/*.json` — indeksi (323 rum, 274 whiskyja, 90 brandy/grappa, 200 gin,
+    124 vina, 26 tequila, 50 kava, 13 digestiva, 3293 cigara);
     build ih dijeli u odvojene chunkove (`data-cigars`, `data-whiskies`, `data-rums`…) radi
     paralelnog downloada i boljeg cachea
   - **ID-jevi se nikad ne brišu.** Kolekcija i dnevnik žive u `localStorage` i
@@ -54,6 +59,11 @@ indeksima rangiranim po kvaliteti za sipping uz cigaru.
     kalibracije Excela, `--list` za pregled koraka); ručno nabrajanje ispod ostaje
     kao referenca
   - `scripts/excel-to-json.py` — regenerira rums.json + shopping.json iz lokalnog Excela
+  - `scripts/scrape-rumratings.py` + `scripts/compare-rumratings.py` — ocjene zajednice s
+    rumratings.com i usporedba s našim `qualityScore` (po bodu i po rangu); izvještaj
+    `scripts/output/rumratings_report.md` nosi i kandidate za katalog te izvorne citate
+    za Club/Bonton (**prerada obavezna, ne doslovno**). Runbook:
+    `docs/superpowers/plans/2026-08-20-rumratings-crosscheck.md`
   - `scripts/export-serve-corrections.py` + `scripts/fix-excel-data.py` — ispravni podaci za Excel Serviranje + Cigare
   - `scripts/scrape-whisky-catalog.py` — scrape allez.hr + ecuga.com → whisky_catalog_raw.json
   - `scripts/build-whisky-excel.py` — gradi Whisky_Kolekcija_Checklist.xlsx iz raw kataloga
@@ -67,6 +77,13 @@ indeksima rangiranim po kvaliteti za sipping uz cigaru.
   - `scripts/enrich-cigars.py` — vitole/cijene/linkovi iz humidor.hr scrape podataka
   - `scripts/profile-cigars.py` — obogaćuje cigare bez profila (prazan flavorTags →
     izvodi snagu/tijelo/wrapper/okuse iz wrappera, marke i bilješki)
+  - `scripts/merge-leaf-details.py` — vezni list i punjenje (sorta + podrijetlo) iz
+    `neptune_raw.json` i `cigarworld_flavor_raw.json`; popunjava samo prazno,
+    `--check` je CI gate, `--dry-run` ispisuje što bi upisao
+  - `scripts/attach-product-images.py` — nađe adrese fotografija kod dućana → `src/data/productImages.json`
+  - `scripts/fetch-product-images.py` — preuzme te slike u `scripts/output/product-images/raw/` (git-ignorirano)
+  - `scripts/normalize-product-images.py` — makne im podlogu i spremi WebP u
+    `public/img/products/` + popis u `src/data/productImagesLocal.json` (traži Pillow)
   - `scripts/dedupe-data.py` — uklanja duple ID-jeve nakon regeneracije (pokreni zadnje)
   - `scripts/build-world-outline.mjs` — generira `src/data/world_outline.json`
     (monokromni atlas za Club kartu) iz Natural Earth land TopoJSON-a
@@ -168,7 +185,9 @@ Kad zatreba sync mobitel ↔ računalo:
 - Online prodaja duhana u HR nije dozvoljena — linkovi na cigare su referentni
   (humidor.hr prikazuje cijene po vitoli; havana-cigar-shop.com ima age-gate).
 - **Trgovine po regiji** (`app/src/data/shops.ts` — jedini izvor istine):
-  HR = The Humidor + Havana Cigar Shop; EU = CigarWorld (cigarworld.de/en);
+  HR = The Humidor + Havana Cigar Shop, uz Tobacco Peticu i Aficionado kao
+  dućane bez web kataloga (`walkIn` — bez linka po proizvodu);
+  EU = CigarWorld (cigarworld.de/en);
   USA = Holt's + Cigars Daily. Filter u Katalogu/Pairingu (**Sve · HR · EU · USA**;
   zadano **Sve** = bez filtera → sve cigare, sortirano) mijenja i popis cigara i
   prikazane trgovine. Detalj cigare grupira linkove po regiji; HR daje izravan link
@@ -302,3 +321,48 @@ python scripts/pipeline.py --category tequila --scrape
 
 Izvor: [allez.hr/shop/tequila-mezcal](https://allez.hr/shop/tequila-mezcal).
 Mixto/aromatizirano van MASTER-a; mezcal u MASTER samo uz quality ≥ 7.
+
+## Fotografije proizvoda (cigare i boce)
+
+Kartica cigare i kartica boce nose fotografiju proizvoda uz naziv. Slike su
+dućanske (`attach-product-images.py` ih poveže s katalogom u
+`productImages.json`) — ništa se ne izmišlja.
+
+**Dva sloja, jedan odgovor.** `productImages.json` drži adresu kod dućana i
+njime app radi i bez ijedne obrađene slike. `productImagesLocal.json` drži
+obrađene, u `public/img/products/`. `lib/productImage.ts` bira: obrađena ako
+postoji, inače dućanska. Obrada zato može stati na pola, a kartica i dalje ima
+sliku.
+
+**Problem koji rješava obrada.** Svaki dućan snima na svojoj podlozi: Humidor i
+CigarWorld na bijeloj, Neptune često na crnoj, Allez na smeđem drvu. Poredane u
+istoj kartici izgledaju kao da su iz tri različite aplikacije.
+
+**Rješenje.** Podloga se ne prebojava u jednu boju nego se **miče** — postaje
+prozirna, pa slika sjedne na pozadinu koju crta sama aplikacija. Ujednačenost je
+time posljedica, a ne pogađanje nijanse: promijeni li se tema kartice, slike idu
+za njom bez ponovne obrade.
+
+Podloga se čita s vijenca piksela uz rub slike (proizvod je u sredini). Miču se
+samo pikseli koji su boje podloge **i** povezani s rubom — zato bijeli natpis na
+cigari preživi bijelu podlogu umjesto da ostane rupa. Fotografija bez jednolične
+podloge (ruka, stol, ambijent) se **ne** reže: dobiva oznaku `framed` i prikazuje
+se u okviru. Uz izrez ide i blago poravnanje svjetline, pa podsvijetlo i
+presvijetlo snimljen proizvod ne odskaču jedan od drugoga.
+
+```powershell
+cd app
+pip install Pillow
+python scripts/fetch-product-images.py --kind cigars   # traži mrežu, radi lokalno
+python scripts/fetch-product-images.py --kind drinks
+python scripts/normalize-product-images.py             # obrada + popis za app
+```
+
+Originali ostaju u `scripts/output/product-images/raw/` i **ne idu u git** (tuđe
+fotografije u punoj veličini). U repo ulazi samo obrađeni WebP u
+`public/img/products/` i popis `src/data/productImagesLocal.json`.
+
+Obrađena slika prikazuje se bez plohe iza sebe (podloge više nema), a
+neobrađena zadržava tamnu zaobljenu plohu koja tuđu pozadinu drži unutar
+jednog oblika. Okvir je u oba slučaja jednake veličine, pa visina kartice ne
+ovisi o tome je li obrada pokrenuta.

@@ -96,4 +96,51 @@ HVALA
     const bundle = rows.find((r) => r.candidate?.id === "cig-don-tomas-bundle");
     expect(bundle?.qty).toBe(10);
   });
+
+  it("rescues noisy Don Tomas tokens instead of falling onto generic vitolas", () => {
+    const rows = parseReceiptText(
+      [
+        "DOVTOMAS CHRCHLL 1 KOM 3,90 3,90",
+        "DOVTOLIAS ROTHSGHLD 1 KOM 3,60 3,60",
+        "DONTOLIA> BUNDLE NIC ROTHSCHILD 10 KOM",
+      ].join("\n"),
+      cigarCandidates,
+    );
+    const found = ids(rows);
+    expect(found.some((id) => id?.startsWith("cig-don-tomas"))).toBe(true);
+    expect(found.every((id) => !id?.includes("romeo-y-julieta"))).toBe(true);
+    expect(found.every((id) => !id?.includes("quorum"))).toBe(true);
+  });
+
+  it("deduplicates receipt rows and upgrades selection when later barcode confirms", () => {
+    const candidates: OcrCandidate[] = [
+      {
+        id: "cig-oliva-serie-g@special-g",
+        label: "Oliva Serie G Special G",
+        brand: "Oliva",
+      },
+      {
+        id: "cig-oliva-serie-g@double-robusto",
+        label: "Oliva Serie G Double Robusto",
+        brand: "Oliva",
+      },
+    ];
+
+    // 814539011624 => Double Robusto (barcode hint conflicts with OCR-selected Special G)
+    // 814539011594 => Special G (barcode confirms the same chosen id)
+    const rows = parseReceiptText(
+      [
+        "OLIVA SERIE G SPECIAL G 1 KOM 3,60 3,60 814539011624",
+        "OLIVA SERIE G SPECIAL G 1 KOM 3,60 3,60 814539011594",
+      ].join("\n"),
+      candidates,
+    );
+
+    expect(rows).toHaveLength(1);
+    const r = rows[0];
+    expect(r.candidate?.id).toBe("cig-oliva-serie-g@special-g");
+    expect(r.qty).toBe(2);
+    expect(r.selected).toBe(true);
+    expect(r.barcodeCandidate?.id).toBe("cig-oliva-serie-g@special-g");
+  });
 });

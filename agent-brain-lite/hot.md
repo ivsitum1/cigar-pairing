@@ -2,8 +2,30 @@
 title: Session Hot Cache
 category: meta
 tags: [session, cache]
-updated: 2026-07-31
+updated: 2026-08-22
 ---
+
+> **2026-08-22:** Bonton EN rukopis — Ch 15 (nikotin, snaga/tijelo, golf vitola) + Ch 20 (vjetar, tuđi prostor, strani običaji); interlude + workbook + glossary.
+
+> **2026-08-22:** Paralelna nadopuna znanja — Club (rječnik rum etiketa, 101 `d-rum-reading-label`, leksikon `distillery-first`, HR vodič `moj-plan-app`, bonton app nikotin/tuđi prostor); pairing UI prikazuje `pairingNarrative` u proširenoj kartici; `docs/bonton/README.md` + brain concepts (pairing-mechanism, club-content-map, book-app-bonton-sync).
+
+> **2026-08-21:** Profili manje heuristički — PDP scrape (JSON-LD + zamjena Ecuga `/katalog/` → product URL); drink enrich ~90 + 63 whisky notes; Neptune opisi → `notes.en` na ~351 cigara (`merge-neptune-profiles`).
+
+> **2026-08-21:** Kupovina — jasnije razlike (praznine / segmenti / petorka / moj plan) u hintovima; „Moj plan” kvačice editable + localStorage (`shoppingPlan.ts`), u backupu s kolekcijom.
+
+> **2026-08-21:** RumRatings dio 3 → unesene boce koje nismo imali: Santa Teresa 1796, Zaya Gran Reserva 12, Plantation Barbados 5 YO (`rums.json` 323). Don Papa Small Batch = alias ime na Don Papa 7. Worktree `.worktrees/rumratings-crosscheck`.
+
+> **2026-08-19:** Oliva Serie G Special G (3¾×48 perfecto, ring 48, EAN 814539011594). Havana 7,05 €; kupnja u Tobacco Petica (Branimir) — Petica dobavlja od Havane, djelomična ponuda, ne cijeli Havana katalog.
+>
+> **2026-08-19:** App: naknadna ocjena večeri u `journal` — u `CollectionPage` journal listi i u `JournalCalendar` (`JournalCard`) dodan dropdown “Ocjena večeri” kad `journal.rating` nedostaje; ocjena se sprema samo u taj zapis (ne diramo “Moja ocjena”).
+
+> **2026-08-19:** OCR paket + barkodi: riješen TypeScript blocker za offline OCR pack (`ocrEngine.warmOcrEngines/resetOcrEngines` + i18n ključevi), zatim proširen `barcodeCatalog.json` EAN-ovima za Don Tomas Bundle Churchill/Robusto, Romeo y Julieta Churchill i Plasencia Alma Fuerte Robustus; pokrenut `sync-cigar-barcodes.py --check` i prođeni fokalni OCR testovi (`ocrMatch/receiptParse/ocrCigarCandidates/ocrPack/ocrBarcode/receiptActualOcr`).
+>
+> **2026-08-18:** Katalog house-line: shop-split linije vraćene pod Ashton/Padilla/My Father/Tatuaje/La Galera/Nicarao/Villiger. Cuban Fonseca, H. Upmann, Montecristo ostaju zasebno. `productPhoto` prati `cigarIdAliases`. Humidorova slika za Tailgate i La Ley.
+
+> **2026-08-18:** Gift finder: uz pet jezgrenih pitanja, uvjetna polica (BUCKETS) i način odabira boce (rupa / vrh / omjer). Budžet `over100`. Ne čita tuđu kolekciju. Naslov: „Poklon u nekoliko pitanja”.
+
+> **2026-08-17:** Gift chooser `#/shopping/gift`: pet pitanja (osoba + budžet do 20 / 20–40 / 40–60 / 60–100 €) → cigara, boca ili kombinacija s cijenom u blizini. Zbroj kombinacije ostaje u pojasu.
 
 # Session Hot Cache
 

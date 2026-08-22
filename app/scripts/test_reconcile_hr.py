@@ -72,8 +72,8 @@ def run(cigars, present, walk_in=frozenset(), present_vitola=None):
 print("otkrivanje nove ponude")
 # Cigara bez ijedne HR oznake koju trgovina sada drzi -> mora dobiti HR.
 c = cig(id="cig-perla", brand="Perla", line="de Calvano")
-removed, added = run([c], {("perla", "de calvano"): {"Havana Shop"}})
-check("nova ponuda dobiva availabilityHR", c["availabilityHR"], ["Havana Shop"])
+removed, added = run([c], {("perla", "de calvano"): {"Havana Cigar Shop"}})
+check("nova ponuda dobiva availabilityHR", c["availabilityHR"], ["Havana Cigar Shop"])
 check("nova ponuda dobiva markets.HR", "HR" in c["markets"], True)
 check("prijavljena je kao dodana", [a["id"] for a in added], ["cig-perla"])
 
@@ -97,9 +97,9 @@ c = cig(
 removed, added = run(
     [c],
     {},  # line "646" nije u snapshotu
-    present_vitola={("cain daytona", "corona"): {"Havana Shop"}},
+    present_vitola={("cain daytona", "corona"): {"Havana Cigar Shop"}},
 )
-check("market+vitola dobiva Havana", c["availabilityHR"], ["Havana Shop"])
+check("market+vitola dobiva Havana", c["availabilityHR"], ["Havana Cigar Shop"])
 check("market+vitola dobiva markets.HR", "HR" in c["markets"], True)
 check("market+vitola prijavljen kao dodan", [a["id"] for a in added], ["cig-cain-646"])
 
@@ -117,7 +117,7 @@ check("market walk-in ostaje", c["availabilityHR"], ["Tobacco Petica (Branimir)"
 check("market walk-in dobiva markets.HR", "HR" in c["markets"], True)
 
 print("\nuklanjanje zastarjele ponude")
-c = cig(id="cig-stara", availabilityHR=["Havana Shop"], markets=["HR", "EU", "WW"])
+c = cig(id="cig-stara", availabilityHR=["Havana Cigar Shop"], markets=["HR", "EU", "WW"])
 removed, added = run([c], {})
 check("nestala iz ponude gubi HR", (c["availabilityHR"], c["markets"]), ([], ["EU", "WW"]))
 check("prijavljena je kao maknuta", [r["id"] for r in removed], ["cig-stara"])
@@ -140,19 +140,19 @@ c = cig(
 )
 removed, added = run(
     [c],
-    {("don tomas", "bundle"): {"Havana Shop"}},
+    {("don tomas", "bundle"): {"Havana Cigar Shop"}},
     walk_in={"Tobacco Petica (Branimir)"},
 )
 check(
     "walk-in i online stoje zajedno",
     c["availabilityHR"],
-    ["Havana Shop", "Tobacco Petica (Branimir)"],
+    ["Havana Cigar Shop", "Tobacco Petica (Branimir)"],
 )
 
 # Online trgovina koja nestane iz snapshota se mice, walk-in ostaje.
 c = cig(
     id="cig-mix",
-    availabilityHR=["Havana Shop", "Tobacco Petica (Branimir)"],
+    availabilityHR=["Havana Cigar Shop", "Tobacco Petica (Branimir)"],
     markets=["HR", "EU", "WW"],
 )
 removed, added = run([c], {}, walk_in={"Tobacco Petica (Branimir)"})

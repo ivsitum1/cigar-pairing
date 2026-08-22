@@ -2,22 +2,48 @@
   "brand": "Asylum",
   "renameBrand": null,
   "status": "done",
-  "reviewedAt": "2026-07-30",
+  "reviewedAt": "2026-08-17",
   "sources": [
     "https://asylumcigars.com/",
     "seed-taxonomy-from-legacy.py / line_merge_decisions.json",
     "phase3_w2_slice1 deterministic remaps",
-    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3",
+    "Humidor HR 2026-08-17: 13 family (Hercule, Corojo Toro, Medulla Oblongata, Pandemonium, April Fool's Gordo)"
   ],
   "lines": {
+    "13": {
+      "line": "13"
+    },
+    "13 Connecticut": {
+      "line": "13 Connecticut"
+    },
+    "Connecticut": {
+      "line": "Connecticut"
+    },
+    "13 Corojo": {
+      "line": "13 Corojo"
+    },
+    "Corojo Seventy": {
+      "line": "13 Corojo",
+      "vitola": "Seventy"
+    },
+    "13 Medulla Oblongata": {
+      "line": "13 Medulla Oblongata"
+    },
+    "Medulla Oblongata": {
+      "line": "13 Medulla Oblongata"
+    },
+    "13 Pandemonium": {
+      "line": "13 Pandemonium"
+    },
+    "Pandemonium": {
+      "line": "13 Pandemonium"
+    },
     "867 Midnight Oil Midnight Oil": {
       "line": "867 Midnight Oil"
     },
     "867 Zero Zero": {
       "line": "867 Zero"
-    },
-    "Connecticut": {
-      "line": "Connecticut"
     },
     "Flavoured Cool Brew": {
       "line": "Flavoured",
@@ -37,6 +63,9 @@
     },
     "Insidious": {
       "line": "Insidious"
+    },
+    "Insidious Short": {
+      "line": "Insidious Short"
     },
     "Limitada 2025": {
       "line": "Limitada"
@@ -69,42 +98,16 @@
       "line": "Year 10",
       "vitola": "11/18"
     },
-    "13": {
-      "line": "13"
-    },
-    "13 Connecticut": {
-      "line": "13 Connecticut"
-    },
-    "Insidious Short": {
-      "line": "Insidious Short"
-    },
     "April Fool's Limited Edition 2023": {
       "line": "April Fool's"
     },
     "PCA Exclusive 2025": {
       "line": "PCA Exclusive"
-    },
-    "Pandemonium": {
-      "line": "13 Pandemonium"
-    },
-    "13 Pandemonium": {
-      "line": "13 Pandemonium"
-    },
-    "Corojo Seventy": {
-      "line": "13 Corojo",
-      "vitola": "Seventy"
-    },
-    "13 Corojo": {
-      "line": "13 Corojo"
-    },
-    "Medulla Oblongata": {
-      "line": "13 Medulla Oblongata"
-    },
-    "13 Medulla Oblongata": {
-      "line": "13 Medulla Oblongata"
     }
   },
-  "vitolaRenames": {},
+  "vitolaRenames": {
+    "13::Gordo": "Gran Toro"
+  },
   "shapes": {},
   "keepSeparate": [
     [
@@ -118,8 +121,54 @@
     [
       "Insidious",
       "Insidious Short"
+    ],
+    [
+      "13",
+      "13 Connecticut"
+    ],
+    [
+      "13",
+      "13 Corojo"
+    ],
+    [
+      "13",
+      "13 Medulla Oblongata"
+    ],
+    [
+      "13",
+      "13 Pandemonium"
+    ],
+    [
+      "13 Connecticut",
+      "13 Corojo"
+    ],
+    [
+      "13 Connecticut",
+      "13 Medulla Oblongata"
+    ],
+    [
+      "13 Connecticut",
+      "13 Pandemonium"
+    ],
+    [
+      "13 Corojo",
+      "13 Medulla Oblongata"
+    ],
+    [
+      "13 Corojo",
+      "13 Pandemonium"
+    ],
+    [
+      "13 Medulla Oblongata",
+      "13 Pandemonium"
     ]
   ],
-  "lineNotes": {},
+  "lineNotes": {
+    "13": "Core Asylum 13 blend. Vitolas already on the line: Robusto, Gran Toro (Humidor Toro Gordo 6×60), Hercule (7×70). Empty Gordo stub at the same 60×152 as Gran Toro is folded into Gran Toro.",
+    "13 Connecticut": "Distinct Connecticut-wrapper blend; not the premium family line Connecticut.",
+    "13 Corojo": "Corojo blend. Seventy (former standalone line) is a vitola; Toro is the Humidor size.",
+    "13 Medulla Oblongata": "Own blend, not a vitola of 13. Humidor lists Robusto 5×50.",
+    "13 Pandemonium": "Own long-format line (all 8½″). Humidor SKU is 8½×52; keep the existing Presidente vitola name rather than minting a new one."
+  },
   "unresolved": []
 }

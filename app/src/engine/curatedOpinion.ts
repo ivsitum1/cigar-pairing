@@ -78,8 +78,19 @@ function drinkProfile(drink: Drink): string {
     return "still-wine";
   }
   if (category === "coffee") {
-    if (/dark|espresso-dark/i.test(style)) return "dark-coffee";
-    return "light-coffee";
+    if (drink.coffeeDetail?.milk || style === "milk") return "milk-coffee";
+    if (style === "spiked") return "spiked-coffee";
+    if (
+      drink.coffeeDetail?.process === "semi-washed" ||
+      drink.coffeeDetail?.process === "monsoon"
+    ) {
+      return "earthy-coffee";
+    }
+    if (/dark|espresso-dark|turkish|moka/i.test(style) || drink.coffeeDetail?.roast === "dark") {
+      return "dark-coffee";
+    }
+    if (style === "filter-light" || drink.coffeeDetail?.roast === "light") return "light-coffee";
+    return "nutty-coffee";
   }
   return body >= 4 ? "full-spirit" : body <= 2 ? "light-spirit" : "balanced-spirit";
 }
@@ -141,6 +152,41 @@ function wrapperVerdict(
     return {
       hr: `Tamna kava i maduro wrapper dijele kakao i karamelu — prirodan, desertni smjer.`,
       en: `Dark coffee and maduro share cocoa and caramel — a natural dessert direction.`,
+    };
+  }
+
+  if (profile === "light-coffee" && kind === "connecticut") {
+    return {
+      hr: `Svijetla kava i Connecticut dijele nježan, čajni ritam.`,
+      en: `Light coffee and Connecticut share a gentle, tea-like pace.`,
+    };
+  }
+
+  if (profile === "milk-coffee" && kind === "connecticut") {
+    return {
+      hr: `Mlijeko i ${w} omekšavaju papar — jutarnji, kremasti smjer.`,
+      en: `Milk and ${w} soften pepper — a morning, creamy direction.`,
+    };
+  }
+
+  if (profile === "earthy-coffee" && (kind === "habano" || kind === "maduro")) {
+    return {
+      hr: `Zemljana kava i ${w} dijele duhan i drvo — isti registar u šalici i dimu.`,
+      en: `Earthy coffee and ${w} share tobacco and wood — the same register in cup and smoke.`,
+    };
+  }
+
+  if (profile === "nutty-coffee" && (kind === "habano" || kind === "connecticut" || kind === "natural")) {
+    return {
+      hr: `Oražasto-kakao kava i ${w} sjede bez borbe — miran, svestran most.`,
+      en: `Nutty-cocoa coffee and ${w} sit without a fight — a calm, versatile bridge.`,
+    };
+  }
+
+  if (profile === "spiked-coffee" && (kind === "habano" || kind === "maduro")) {
+    return {
+      hr: `Kava s žesticom i ${w} dijele težinu poslije jela.`,
+      en: `Coffee with spirit and ${w} share after-dinner weight.`,
     };
   }
 
@@ -209,6 +255,24 @@ function wrapperWarning(
     return {
       hr: `ovako delikatno piće traži laganiju cigaru — puni dim ostaje sam na sceni.`,
       en: `such a delicate drink needs a lighter cigar — the full smoke ends up alone on stage.`,
+    };
+  }
+  if (profile === "milk-coffee" && (kind === "maduro" || cigar.body >= 4)) {
+    return {
+      hr: `mliječna šalica ne nosi ovako pun dim — espresso ili french press bolje stoje.`,
+      en: `a milky cup cannot carry this much smoke — espresso or french press stand better.`,
+    };
+  }
+  if (profile === "earthy-coffee" && kind === "connecticut" && cigar.strength <= 2) {
+    return {
+      hr: `zemljana, teška kava pregazi blagi Connecticut — Habano drži duhan i drvo.`,
+      en: `earthy, heavy coffee overruns a mild Connecticut — Habano holds the tobacco and wood.`,
+    };
+  }
+  if (profile === "spiked-coffee" && kind === "connecticut") {
+    return {
+      hr: `žestica u kavi pregazi blagi Connecticut — ostavi Shade za jutarnji filter.`,
+      en: `spirit in the coffee overruns a mild Connecticut — leave Shade for morning filter.`,
     };
   }
   return null;

@@ -49,9 +49,15 @@ jobs:
           python scripts/normalize-profile-axes.py --check
           python scripts/merge-cigarworld-aroma.py --check
           python scripts/apply-taste-reports.py --check
+          python scripts/merge-leaf-details.py --check
       - name: HR availability reconcile logic
         working-directory: app
         run: python scripts/test_reconcile_hr.py
+      - name: Shop stock ping helpers (parse + catalog apply)
+        working-directory: app
+        run: |
+          python scripts/test_stock_parse.py
+          python scripts/test_availability_catalog.py
       - name: Taxonomy line helpers (dimenzije / velika slova u imenu linije)
         working-directory: app
         run: python scripts/test_taxonomy_lib.py
@@ -61,6 +67,25 @@ jobs:
       - name: Dojmovi iz prijave (izvlačenje bloka, prosjek više ocjenjivača)
         working-directory: app
         run: python scripts/test_taste_reports.py
+      - name: RumRatings parser i spajanje imena (12 YO ≠ 15 YO)
+        working-directory: app
+        run: python scripts/test_rumratings.py
+      - name: YouTube corpus (classify / match / cigar enrichments)
+        working-directory: app
+        run: |
+          python -m unittest discover -s scripts -p "test_youtube*.py" -q
+          python -m unittest discover -s scripts -p "test_summarize*.py" -q
+          python scripts/apply-youtube-cigar-enrichment.py --check
+      - name: List i punjenje iz dućanskih redaka (kubansko sjeme ≠ kubanski duhan)
+        working-directory: app
+        run: python scripts/test_merge_leaf_details.py
+      # Obrada slika treba Pillow; instalira se samo za ovaj korak, aplikacija
+      # ga ne koristi (slike se obradjuju lokalno, u repo ulazi gotov WebP).
+      - name: Ujednačavanje podloga na fotografijama proizvoda
+        working-directory: app
+        run: |
+          pip install --quiet Pillow
+          python scripts/test_product_image_lib.py
 
       # apply-taxonomy --check je od sada BLOKIRAJUCI. Ranije je stajao ovdje uz
       # biljesku „ne konvergira ni na netaknutom masteru" — to vise ne stoji.

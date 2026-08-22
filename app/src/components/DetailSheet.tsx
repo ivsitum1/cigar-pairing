@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { SheetShell } from "./SheetShell";
 import type { Cigar, Drink, Region } from "../types";
-import { useI18n, STYLE_LABELS, ADDITIVE_LABELS, ADDITIVE_RULES } from "../i18n";
+import { useI18n, STYLE_LABELS, ADDITIVE_LABELS, ADDITIVE_RULES, COFFEE_ROAST_LABELS, COFFEE_PROCESS_LABELS, COFFEE_SPECIES_LABELS } from "../i18n";
 import { flavorLabel } from "../engine/rules";
 import {
   brandInfo,
@@ -24,6 +24,7 @@ import {
 import { formatEur, vitolaPriceForMarket } from "../lib/cigarPrice";
 import { drinkNameLoc } from "../lib/drinkName";
 import { vitolaBlurb } from "../lib/vitolaInfo";
+import { cigarLinkStockView, drinkStockView, type StockView } from "../lib/shopStock";
 import { resolveSamplerCigar } from "../lib/samplerLink";
 import { cigarItemId, parseCigarItemId } from "../lib/cigarItemId";
 import {
@@ -42,6 +43,8 @@ import {
 import { isSampler, samplerPieceCount } from "../lib/samplerStock";
 import { Chip, Meter } from "./ui";
 import { BackButton } from "./BackButton";
+import { ProductThumb } from "./ProductThumb";
+import { productPhoto } from "../lib/productImage";
 import { FavoriteStar } from "./FavoriteStar";
 import { LastCigarPrompt } from "./LastCigarPrompt";
 import { VitolaPicker } from "./VitolaPicker";
@@ -260,6 +263,7 @@ function CigarDetails({
   const description = cigarDescription(cigar, lang);
   const brand = brandInfo(cigar.brand);
   const displayBrand = brandDisplayName(cigar.brand, market);
+  const photo = productPhoto("cigar", cigar.id);
   const vitolaCrumb =
     cigar.vitolas.length === 1 ? cigar.vitolas[0].name : cigar.vitola;
   // Bez odabranog tržišta ("Sve") cijena zna doći iz EU/USA kataloga — reci
@@ -301,27 +305,38 @@ function CigarDetails({
         ) : null}
       </div>
 
-      <div className="font-display text-xl text-papir">
-        {displayBrand}{" "}
-        <span className="text-zlato-2">{cigar.line}</span>
-        {vitolaCrumb && vitolaCrumb !== cigar.line ? (
-          <span className="text-papir/80"> · {vitolaCrumb}</span>
-        ) : null}
-      </div>
-      <div className="mt-1 text-sm text-dim">
-        {cn(cigar.country)} · {cigar.wrapper}
-        {cigar.isPuro === true ? ` · ${t("leaf.puro")}` : null}
-        {onOpenBrand && (
-          <>
-            {" · "}
-            <button
-              type="button"
-              onClick={() => onOpenBrand(cigar.brand)}
-              className="text-zlato hover:text-zlato-2"
-            >
-              {t("brand.viewAll")} →
-            </button>
-          </>
+      <div className="flex items-start gap-3">
+        <div className="min-w-0 flex-1">
+          <div className="font-display text-xl text-papir">
+            {displayBrand}{" "}
+            <span className="text-zlato-2">{cigar.line}</span>
+            {vitolaCrumb && vitolaCrumb !== cigar.line ? (
+              <span className="text-papir/80"> · {vitolaCrumb}</span>
+            ) : null}
+          </div>
+          <div className="mt-1 text-sm text-dim">
+            {cn(cigar.country)} · {cigar.wrapper}
+            {cigar.isPuro === true ? ` · ${t("leaf.puro")}` : null}
+            {onOpenBrand && (
+              <>
+                {" · "}
+                <button
+                  type="button"
+                  onClick={() => onOpenBrand(cigar.brand)}
+                  className="text-zlato hover:text-zlato-2"
+                >
+                  {t("brand.viewAll")} →
+                </button>
+              </>
+            )}
+          </div>
+        </div>
+        {photo && (
+          <ProductThumb
+            src={photo.src}
+            treatment={photo.treatment}
+            alt={`${displayBrand} ${cigar.line}`}
+          />
         )}
       </div>
       {(cigar.wrapperOrigin || cigar.binderOrigin || cigar.fillerOrigin) && (
@@ -499,10 +514,11 @@ function DrinkDetails({
   const style = STYLE_LABELS[drink.style];
   const availability = drinkAvailabilityHR(drink);
   const brand = drinkBrand(drink.id);
+  const photo = productPhoto("drink", drink.id);
   return (
     <>
       <div className="flex items-start justify-between gap-3">
-        <div className="min-w-0">
+        <div className="min-w-0 flex-1">
           <div className="font-display text-xl text-papir">{lx(drinkNameLoc(drink))}</div>
           {brand &&
             (onOpenBrand ? (
@@ -517,7 +533,16 @@ function DrinkDetails({
               <div className="mt-0.5 text-xs uppercase tracking-widest text-dim">{brand}</div>
             ))}
         </div>
-        {brand && <FavoriteStar kind="drink" brand={brand} />}
+        <div className="flex shrink-0 items-start gap-2">
+          {photo && (
+            <ProductThumb
+              src={photo.src}
+              treatment={photo.treatment}
+              alt={lx(drinkNameLoc(drink))}
+            />
+          )}
+          {brand && <FavoriteStar kind="drink" brand={brand} />}
+        </div>
       </div>
       <div className="mt-1 text-sm text-dim">
         {style ? lx(style) : drink.style} · {rgn(drink.region)}
@@ -539,6 +564,23 @@ function DrinkDetails({
             k={t("common.additives")}
             v={`${lx(ADDITIVE_LABELS[drink.additiveStatus])}${drink.additiveDetail ? ` (${lx(drink.additiveDetail)})` : ""}`}
           />
+        )}
+        {drink.coffeeDetail && (
+          <>
+            <Row k={t("common.roast")} v={lx(COFFEE_ROAST_LABELS[drink.coffeeDetail.roast])} />
+            {drink.coffeeDetail.process && (
+              <Row
+                k={t("common.process")}
+                v={lx(COFFEE_PROCESS_LABELS[drink.coffeeDetail.process])}
+              />
+            )}
+            {drink.coffeeDetail.species && (
+              <Row
+                k={t("common.species")}
+                v={lx(COFFEE_SPECIES_LABELS[drink.coffeeDetail.species])}
+              />
+            )}
+          </>
         )}
         <Row
           k={t("common.price")}
@@ -579,6 +621,14 @@ function DrinkDetails({
           {lx(drink.notes)}
         </p>
       )}
+      {drink.cigarHint && lx(drink.cigarHint) && (
+        <p className="mt-3 text-sm leading-relaxed text-papir/85">
+          <span className="mb-1 block text-[10px] uppercase tracking-widest text-dim">
+            {t("common.cigarHint")}
+          </span>
+          {lx(drink.cigarHint)}
+        </p>
+      )}
       {drink.lineup && drink.lineup.length > 0 && (
         <div className="mt-3 rounded-lg border border-dim/20 bg-cedar/60 p-3">
           <div className="text-[10px] uppercase tracking-widest text-dim">
@@ -598,15 +648,40 @@ function DrinkDetails({
   );
 }
 
+function StockBadge({ view }: { view: StockView | null }) {
+  const { t } = useI18n();
+  if (!view) return null;
+  const label = view.inStock ? t("stock.in") : t("stock.out");
+  const tone = view.inStock ? "text-emerald-400/90" : "text-orange-400/90";
+  return (
+    <span className={`block text-[10px] leading-tight ${tone}`}>
+      {label}
+      {view.stale && (
+        <span className="text-dim/70"> · {t("stock.stale")}</span>
+      )}
+    </span>
+  );
+}
+
 // Kupnja boce po regiji: HR → Europa → SAD → svjetski cjenik, a na kraju izlaz
 // na web kad nijedna polica nije potvrđena. Uz svaku regiju piše KOLIKO app
 // zna o dostupnosti — potvrđena stranica boce, urednički orijentir ili ništa.
 function DrinkBuyLinks({ drink }: { drink: Drink }) {
   const { t } = useI18n();
   const links = drinkShopLinks(drink);
+  const shelf = drinkStockView(drink);
   if (links.length === 0) {
     const buy = drinkBuyLink(drink);
-    return <BuyLink href={buy.href} label={buy.label} />;
+    return (
+      <>
+        <BuyLink href={buy.href} label={buy.label} />
+        {shelf && (
+          <p className="mt-1 text-center">
+            <StockBadge view={shelf} />
+          </p>
+        )}
+      </>
+    );
   }
   const availability = drinkRegionAvailability(drink);
   const ref = links.filter((l) => l.scope === "REF");
@@ -620,17 +695,22 @@ function DrinkBuyLinks({ drink }: { drink: Drink }) {
   } as const;
   const buttons = (items: typeof links) => (
     <div className="grid grid-cols-2 gap-2">
-      {items.map((l) => (
-        <a
-          key={`${l.scope}-${l.shopId}`}
-          href={l.url}
-          target="_blank"
-          rel="noreferrer"
-          className="rounded-lg border border-zlato/40 bg-zlato/10 px-2 py-2 text-center text-xs text-zlato-2 hover:bg-zlato/20"
-        >
-          {l.shop} <span className="text-[10px] text-dim">· {KIND_LABEL[l.kind]}</span> ↗
-        </a>
-      ))}
+      {items.map((l) => {
+        const linkShelf =
+          l.kind === "product" ? drinkStockView(drink) : null;
+        return (
+          <a
+            key={`${l.scope}-${l.shopId}`}
+            href={l.url}
+            target="_blank"
+            rel="noreferrer"
+            className="rounded-lg border border-zlato/40 bg-zlato/10 px-2 py-2 text-center text-xs text-zlato-2 hover:bg-zlato/20"
+          >
+            {l.shop} <span className="text-[10px] text-dim">· {KIND_LABEL[l.kind]}</span> ↗
+            <StockBadge view={linkShelf} />
+          </a>
+        );
+      })}
     </div>
   );
   const group = (title: string, items: typeof links, status?: string) =>
@@ -747,6 +827,7 @@ function CigarBuyLinks({ cigar }: { cigar: Cigar }) {
                     priceNum != null
                       ? `${approx ? "~" : ""}${formatEur(priceNum)}`
                       : null;
+                  const linkShelf = cigarLinkStockView(cigar, l.url, l.kind);
                   return (
                     <a
                       key={l.shop}
@@ -769,6 +850,7 @@ function CigarBuyLinks({ cigar }: { cigar: Cigar }) {
                         </span>
                       )}{" "}
                       ↗
+                      <StockBadge view={linkShelf} />
                     </a>
                   );
                 })}

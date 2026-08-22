@@ -29,10 +29,15 @@ export function legalAgeForMarket(market: RegionFilter): 18 | 21 {
  * točno kako `.env.example` opisuje.
  */
 export function isAgeGateEnabled(
-  raw: string | undefined = import.meta.env.VITE_AGE_GATE,
+  raw: string | undefined,
 ): boolean {
   const v = raw?.trim().toLowerCase();
   return !(v === "0" || v === "off" || v === "false" || v === "no");
+}
+
+/** Je li gate uključen za ovaj build, prema `VITE_AGE_GATE`. */
+export function isAgeGateEnabledFromEnv(): boolean {
+  return isAgeGateEnabled(import.meta.env.VITE_AGE_GATE);
 }
 
 /** Je li korisnik već potvrdio dob na ovom uređaju. */
@@ -65,7 +70,7 @@ export function forgetAgeConfirmation(): void {
 
 /** Treba li overlay prikazati na ovom otvaranju. */
 export function shouldShowAgeGate(
-  enabled: boolean = isAgeGateEnabled(),
+  enabled: boolean = isAgeGateEnabledFromEnv(),
   confirmed: boolean = hasConfirmedAge(),
 ): boolean {
   return enabled && !confirmed;

@@ -170,6 +170,61 @@ describe("coffeePairingReasons — overlay", () => {
     const rules = coffeePairingReasons(spicy, brazil).map((r) => r.rule);
     expect(rules).toContain("coffee-sweet-mellow");
   });
+
+  it("cappuccino + začinska srednja cigara: milk mellow", () => {
+    const cap = byId(coffees, "cf-cappuccino");
+    const spicy = stubCigar({
+      body: 3,
+      strength: 3,
+      wrapper: "Habano",
+      flavorTags: ["zacini", "papar"],
+    });
+    const rules = coffeePairingReasons(spicy, cap).map((r) => r.rule);
+    expect(rules).toContain("coffee-milk-mellow");
+  });
+
+  it("cappuccino + puna jaka cigara: milk heavy", () => {
+    const cap = byId(coffees, "cf-cappuccino");
+    const heavy = stubCigar({
+      body: 5,
+      strength: 5,
+      wrapper: "Maduro",
+      flavorTags: ["zemljano", "kakao"],
+    });
+    const rules = coffeePairingReasons(heavy, cap).map((r) => r.rule);
+    expect(rules).toContain("coffee-milk-heavy");
+  });
+
+  it("ethiopia natural + srednja cigara: natural fruit", () => {
+    const nat = byId(coffees, "cf-ethiopia-natural");
+    const mid = stubCigar({
+      body: 3,
+      strength: 3,
+      wrapper: "Habano",
+      flavorTags: ["zacini", "voce"],
+    });
+    expect(nat.coffeeDetail?.process).toBe("natural");
+    const rules = coffeePairingReasons(mid, nat).map((r) => r.rule);
+    expect(rules).toContain("coffee-natural-fruit");
+  });
+
+  it("irish coffee + puna cigara: spiked weight; + blaga: delicate", () => {
+    const irish = byId(coffees, "cf-irish-coffee");
+    const full = stubCigar({
+      body: 4,
+      strength: 4,
+      wrapper: "Habano",
+      flavorTags: ["kakao"],
+    });
+    const mild = stubCigar({
+      body: 1,
+      strength: 1,
+      wrapper: "Connecticut",
+      flavorTags: ["kremasto"],
+    });
+    expect(coffeePairingReasons(full, irish).map((r) => r.rule)).toContain("coffee-spiked-weight");
+    expect(coffeePairingReasons(mild, irish).map((r) => r.rule)).toContain("coffee-spiked-delicate");
+  });
 });
 
 describe("scorePairing — coffee overlay wired in", () => {

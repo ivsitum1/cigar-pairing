@@ -34,7 +34,9 @@
     "notes": {
       "hr": "Češki nacionalni bitter od 1807. — cimet i klinčić u ledene čaši. Uz cigaru radi kao digestiv nakon jela, ne kao koktel baza.",
       "en": "Czech national bitter since 1807 — cinnamon and clove in an ice-cold glass. With a cigar it works as an after-dinner digestif, not a cocktail base."
-    }
+    },
+    "inStock": true,
+    "stockFetchedAt": "2026-08-18"
   },
   {
     "id": "dg-unicum-zwack",
@@ -71,7 +73,9 @@
     "notes": {
       "hr": "Mađarska ikona od 1790. — tamniji i gorkiji od Becherovke. Neat uz punu cigaru; tradicija kaže jedan gutljaj nakon jela.",
       "en": "Hungarian icon since 1790 — darker and more bitter than Becherovka. Neat with a full cigar; tradition calls for one sip after the meal."
-    }
+    },
+    "inStock": true,
+    "stockFetchedAt": "2026-08-18"
   },
   {
     "id": "dg-fernet-branca",
@@ -108,7 +112,9 @@
       "hr": "Klasični milanski fernet — intenzivna menta i gorka biljna tajna. Servirajte ledeno hladno; uz cigar nakon večere, ne prije.",
       "en": "The classic Milanese fernet — intense mint and a bitter herbal secret. Serve ice-cold; with a cigar after dinner, not before."
     },
-    "profileEstimated": true
+    "profileEstimated": true,
+    "inStock": true,
+    "stockFetchedAt": "2026-08-18"
   },
   {
     "id": "dg-averna",
@@ -141,7 +147,9 @@
     "notes": {
       "hr": "Sicilijski amaro od 1868. — pristupačniji od ferneta, blaža slatko-gorka ravnoteža. Neat ili s ledom uz medium do punu cigaru.",
       "en": "Sicilian amaro since 1868 — more approachable than fernet, a gentler sweet-bitter balance. Neat or on ice with medium to full cigars."
-    }
+    },
+    "inStock": true,
+    "stockFetchedAt": "2026-08-18"
   },
   {
     "id": "dg-nonino-amaro",
@@ -213,7 +221,7 @@
     "serving": {
       "best": "Čisto, ledeno hladno"
     },
-    "priceUrl": "https://ecuga.com/katalog/jagermeister-070-l/",
+    "priceUrl": "https://ecuga.com/proizvod/jagermeister-070-l",
     "notes": {
       "hr": "Njemački biljni liker iz Wolfenbüttela, na tržištu od 1935. — 56 biljaka, korijena i začina, s anisom i gorkom narančom ispod izražene slatkoće. Tradicionalno se pije ledeno hladan, a uz cigaru ga treba shvatiti kao digestiv nakon jela, ne kao aperitiv.",
       "en": "The German herbal liqueur from Wolfenbüttel, on the market since 1935 — 56 herbs, roots and spices, with anise and bitter orange under a pronounced sweetness. Traditionally served ice-cold; alongside a cigar treat it as an after-dinner digestif, not an aperitif."
@@ -444,7 +452,9 @@
     "notes": {
       "hr": "Istarski craft pelinkovac — gorki, pelin-forward profil. Lokalni digestiv uz cigaru; hladniji servis smanjuje gorkoću.",
       "en": "Istrian craft pelinkovac — bitter, wormwood-forward profile. A local digestif with cigars; colder service tames the bitterness."
-    }
+    },
+    "inStock": true,
+    "stockFetchedAt": "2026-08-18"
   },
   {
     "id": "dg-agwa",
@@ -481,6 +491,8 @@
     "notes": {
       "hr": "Jedinstvena boca — koka-list, menta i zeleni čaj. Nema zamjene u katalogu; neat ili s ledom uz medium cigaru.",
       "en": "A one-of-a-kind bottle — coca leaf, mint and green tea. No substitute in the catalog; neat or on ice with a medium cigar."
-    }
+    },
+    "inStock": true,
+    "stockFetchedAt": "2026-08-18"
   }
 ]

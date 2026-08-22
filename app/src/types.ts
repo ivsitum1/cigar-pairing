@@ -22,6 +22,20 @@ export type Region = "HR" | "EU" | "USA";
 // Filter u UI-u: "ALL" = bez filtera (prikaži sve), inače konkretna regija.
 export type RegionFilter = "ALL" | Region;
 
+/** Tjedni ping poznatog URL-a — odvojeno od kvartalnog `fetchedAt` na cijeni. */
+export interface StockFields {
+  inStock?: boolean;
+  stockFetchedAt?: string;
+}
+
+export interface ShopLink extends StockFields {
+  shop: string;
+  url: string;
+  priceEUR?: number;
+  priceApprox?: boolean;
+  fetchedAt?: string;
+}
+
 export interface LocalizedText {
   hr: string;
   en: string;
@@ -33,7 +47,23 @@ export interface PriceRange {
 }
 
 export type CoffeeRoastLevel = "light" | "medium" | "dark";
+export type CoffeeRoast = CoffeeRoastLevel;
+export type CoffeeProcess =
+  | "washed"
+  | "natural"
+  | "honey"
+  | "semi-washed"
+  | "monsoon"
+  | "blend";
 export type CoffeeSpecies = "arabica" | "robusta" | "blend";
+
+export interface CoffeeDetail {
+  roast: CoffeeRoast;
+  process?: CoffeeProcess;
+  species?: CoffeeSpecies;
+  /** True when milk/cream is part of the drink, not just the bean. */
+  milk?: boolean;
+}
 
 export interface Serving {
   neat?: number; // 0-3 (x, ~, +, ++)
@@ -77,10 +107,18 @@ export interface Drink {
   priceApprox?: boolean;
   shopHR: string;
   status?: string | null; // META / IMAS / PROBAO iz Excela
+  /** Poklon kutija / duplikat SKU — nije referentna boca za sparivanje. */
+  meta?: boolean;
   pairable: boolean;
   serving: Serving;
   cigarHint?: LocalizedText | null;
+  /** Profil izveden heuristikom, ne degustacijom / shop PDP-om. */
+  profileEstimated?: boolean;
+  /** Coffee only — roast/process/species shown on the drink sheet. */
+  coffeeDetail?: CoffeeDetail;
   priceUrl?: string | null; // izvor cijene / gdje kupiti
+  inStock?: boolean;
+  stockFetchedAt?: string;
   notes: LocalizedText;
   // Za unose koji predstavljaju seriju/raspon (npr. Foursquare ECS), a ne
   // jednu bocu: popis izdanja koji se prikaze kad se detalj otvori.
@@ -90,9 +128,13 @@ export interface Drink {
 export interface Vitola {
   name: string;
   format: string | null; // "50 x 127mm"
+  /** Known retail EAN/UPC codes for this exact vitola. */
+  barcodes?: string[];
   smokeTimeMin: number | null;
   priceEUR: number | null;
   url: string | null; // link na proizvod (humidor.hr)
+  inStock?: boolean;
+  stockFetchedAt?: string;
   // Generic family (Robusto, Toro, …). When the maker uses the generic name, name === shape.
   shape?: string;
   ring?: number;
@@ -101,7 +143,7 @@ export interface Vitola {
   fetchedAt?: string;
   // Linkovi na proizvod te KONKRETNE vitole po regiji (market katalog) — kad
   // korisnik izabere vitolu, kupnja/cijena vode na tu vitolu, ne na liniju.
-  regionLinks?: Partial<Record<Region, { shop: string; url: string; priceEUR?: number; priceApprox?: boolean; fetchedAt?: string }>>;
+  regionLinks?: Partial<Record<Region, ShopLink>>;
 }
 
 export interface Cigar {
@@ -109,6 +151,8 @@ export interface Cigar {
   brand: string;
   line: string;
   vitola: string; // default vitola
+  /** Rare line-level barcode(s) when one code covers the whole line, not one vitola. */
+  barcodes?: string[];
   format: string;
   country: string;
   wrapper: string;
@@ -141,6 +185,8 @@ export interface Cigar {
   priceEUR: number | null;
   priceApprox?: boolean;
   priceUrl?: string | null; // izvor cijene / gdje kupiti
+  inStock?: boolean;
+  stockFetchedAt?: string;
   vitolas: Vitola[];
   /**
    * Runtime oznaka (NIJE u JSON-u): ime vitole koju je korisnik izabrao iz
@@ -153,7 +199,7 @@ export interface Cigar {
   // Izravan link na proizvod + cijena po regiji (iz stvarnog scrape-a trgovina).
   // HR/EU/USA gdje postoji; EU/USA cijena je "od" na razini linije, USD->EUR
   // konverzija nosi priceApprox. Embargo: kubanke nemaju USA.
-  regionLinks?: Partial<Record<Region, { shop: string; url: string; priceEUR?: number; priceApprox?: boolean; fetchedAt?: string }>>;
+  regionLinks?: Partial<Record<Region, ShopLink>>;
   // "market" = generirano iz scrape-a trgovina (build-market-cigars.py), za razliku
   // od kuriranih unosa; idempotentno regenerirano. Vidi Faza B/C playbook.
   catalogSource?: "market";
@@ -168,6 +214,8 @@ export interface Cigar {
   sourceUrls?: string[];
   availabilityHR: string[];
   notes: LocalizedText;
+  /** Optional 1–10 editorial score when present; most cigars omit it. */
+  qualityScore?: number | null;
   // Za samplere/gift-packove: popis linija cigara koje pakiranje sadrzi.
   lineup?: string[];
 }

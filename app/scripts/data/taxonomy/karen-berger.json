@@ -2,14 +2,15 @@
   "brand": "Karen Berger",
   "renameBrand": null,
   "status": "done",
-  "reviewedAt": "2026-07-24",
+  "reviewedAt": "2026-08-18",
   "sources": [
     "phase3_w2_finish deterministic remaps",
-    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3",
+    "fold shop-title splits (K. Fire / Tailgate / 25th) 2026-08-18"
   ],
   "lines": {
     "Berger 25th Anniversary": {
-      "line": "Berger 25th Anniversary"
+      "line": "25th Anniversary"
     },
     "Berger Cameroon": {
       "line": "Berger Cameroon"
@@ -33,7 +34,7 @@
       "line": "Berger Maduro"
     },
     "Berger Tailgate": {
-      "line": "Berger Tailgate"
+      "line": "Tailgate"
     },
     "K by Karen Berger Cameroon": {
       "line": "Cameroon"
@@ -52,6 +53,24 @@
     },
     "Habano": {
       "line": "Habano"
+    },
+    "K-Fire": {
+      "line": "K-Fire"
+    },
+    "K-Fire by Karen Berger": {
+      "line": "K-Fire"
+    },
+    "Tailgate": {
+      "line": "Tailgate"
+    },
+    "by Karen Berger": {
+      "line": "Tailgate"
+    },
+    "25th Anniversary": {
+      "line": "25th Anniversary"
+    },
+    "K by Karen Berger": {
+      "line": "25th Anniversary"
     }
   },
   "vitolaRenames": {},

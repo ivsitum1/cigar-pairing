@@ -4,7 +4,9 @@
 import { useRef, useState } from "react";
 import { useI18n } from "../i18n";
 import { matchOcrText, tokenize, STOP, type OcrCandidate } from "../lib/ocrMatch";
+import { detectBarcodeFromImage, lookupBarcodeInText } from "../lib/ocrBarcode";
 import { recognizeImage } from "../lib/ocrEngine";
+import { ensureOcrPackWarm } from "../lib/ocrPack";
 import { fuseOcrAndBand, matchBandImage } from "../lib/bandMatch";
 import { parseReceiptText, type ReceiptLineMatch } from "../lib/receiptParse";
 import { markOwnedBatch } from "../store/collection";
@@ -65,6 +67,7 @@ export function OcrScan({
     setCigarHit(null);
     setReceiptRows(null);
     try {
+      await ensureOcrPackWarm();
       const result = await recognizeImage(
         file,
         (phase) => {
@@ -100,6 +103,12 @@ export function OcrScan({
         return;
       }
 
+      const barcodeHit =
+        (await detectBarcodeFromImage(file)) ?? lookupBarcodeInText(text);
+      const barcodeCandidate = barcodeHit
+        ? (candidates.find((c) => c.id === barcodeHit.itemId) ?? null)
+        : null;
+
       let bandHits: Awaited<ReturnType<typeof matchBandImage>> = [];
       if (enableBand && onConfirmCigar) {
         bandHits = await matchBandImage(file);
@@ -122,6 +131,16 @@ export function OcrScan({
           match.candidate.label,
           match.score,
           "text",
+        );
+        return;
+      }
+
+      if (barcodeCandidate && barcodeHit) {
+        applyHit(
+          barcodeCandidate.id,
+          barcodeCandidate.label,
+          100,
+          barcodeHit.source === "detector" ? "barcode-fallback-detector" : "barcode-fallback-text",
         );
         return;
       }
@@ -308,6 +327,15 @@ export function OcrScan({
                     <p className="text-xs text-dim">
                       ×{row.qty} · {row.raw}
                     </p>
+                    {row.barcodeCandidate && row.barcodeCandidate.id !== row.candidate?.id ? (
+                      <p className="text-[11px] text-zlato-2/85">
+                        EAN hint: {row.barcodeCandidate.label}
+                      </p>
+                    ) : row.barcode ? (
+                      <p className="text-[11px] text-zlato-2/85">
+                        EAN potvrda: {row.barcode.code}
+                      </p>
+                    ) : null}
                   </div>
                 </li>
               ))}

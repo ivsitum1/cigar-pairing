@@ -4929,6 +4929,83 @@
       "category": "drink"
     },
     {
+      "id": "dos-maderas-age-notation",
+      "term": {
+        "hr": "Dos Maderas 5+3 (oznaka starosti)",
+        "en": "Dos Maderas 5+3 (age notation)"
+      },
+      "def": {
+        "hr": "Oznaka gdje broj prije plusa znači godine u rumu, a broj poslije plusa godine u sherry bačvi.",
+        "en": "A label where the number before the plus is years in rum casks, and the number after is years in sherry casks."
+      },
+      "body": {
+        "hr": "Dos Maderas 5+3 ne znači „osam godina” na jednom mjestu — znači pet godina u rum bačvama, zatim tri u sherry bačvama. Takva oznaka opisuje put, ne jednu kalendarsku starost.\n\nPri čitanju etikete\n• Plus je most između dviju faza — ne zbrajaj brojeve kao da su isti tip starenja.\n• Sherry faza dodaje orašaste i suho-voćne note koje često prate maduro pokrov.\n• Usporedba s „12 years” rumom — druga logika; pitaj što je stvarno u bačvi, ne samo zbroj.\n\nU aplikaciji\n• Polje starosti i opis stila pomažu razlikovati solera, dvostruku bačvu i marketinški broj na etiketi.",
+        "en": "Dos Maderas 5+3 does not mean «eight years» in one place — it means five years in rum casks, then three in sherry casks. The notation describes a path, not a single calendar age.\n\nReading the label\n• The plus bridges two phases — do not add the numbers as if they were the same kind of aging.\n• The sherry phase adds nutty and dried-fruit notes that often suit maduro wrappers.\n• Compared with a «12 years» rum — different logic; ask what was actually in the cask, not only the sum.\n\nIn the app\n• Age fields and style notes help separate solera, double-cask and marketing numbers on the label."
+      },
+      "aliases": [
+        "5+3",
+        "double cask age"
+      ],
+      "seeAlso": [
+        "rum-solera",
+        "rum-barrel-aging",
+        "sherry"
+      ],
+      "category": "drink"
+    },
+    {
+      "id": "e150-rum-colour",
+      "term": {
+        "hr": "E150a (boja u rumu)",
+        "en": "E150a (rum colour)"
+      },
+      "def": {
+        "hr": "Dozvoljeni karamelni aditiv koji tamni rum — ne mijenja sam po sebi okus, ali utječe na očekivanja.",
+        "en": "Permitted caramel additive that darkens rum — it does not automatically change taste, but it shapes expectations."
+      },
+      "body": {
+        "hr": "E150a je karamel boja dopuštena u rumu (i u scotch whiskyju). Tamnija boča ne znači automatski stariji destilat — ponekad je samo boja.\n\nŠto provjeriti\n• Tamni rum bez deklaracije starosti — boja može biti stil, ne dokaz godina.\n• U EU rumu dopušten je i dodani šećer do granice — boja i slatkoća nisu isto pitanje.\n• „Bez aditiva” / transparentne kuće — stilski izbor, ne moralna ocjena.\n\nPri sparivanju\n• Previše očekivanja od tamne boje može zavarati nepce — slušaj okus, ne nijansu stakla.\n• Slađi, tamniji rum — zalijepi zadnju trećinu; uz Connecticut traži čistiji profil.",
+        "en": "E150a is caramel colour permitted in rum (and in Scotch whisky). A darker bottle does not automatically mean older spirit — sometimes it is only colour.\n\nWhat to check\n• Dark rum without a declared age — colour may be style, not proof of years.\n• In EU rum, added sugar is also allowed within limits — colour and sweetness are not the same question.\n• «No additives» / transparent houses — a stylistic choice, not a moral verdict.\n\nWhen pairing\n• Expecting depth from colour alone can fool the palate — listen to taste, not glass hue.\n• Sweeter, darker rum can glue the final third; with Connecticut, look for a cleaner profile."
+      },
+      "aliases": [
+        "caramel colour",
+        "E150",
+        "rum colour"
+      ],
+      "seeAlso": [
+        "rum-gold",
+        "rum-barrel-aging",
+        "abv"
+      ],
+      "category": "drink"
+    },
+    {
+      "id": "rum-distillery-first",
+      "term": {
+        "hr": "Distillery-first rum (Foursquare / Doorly's)",
+        "en": "Distillery-first rum (Foursquare / Doorly's)"
+      },
+      "def": {
+        "hr": "Rum gdje je glavna priča destilerija i stil bačve, a ne marketinški blend bez lica.",
+        "en": "Rum where the distillery and cask style lead the story, not an anonymous marketing blend."
+      },
+      "body": {
+        "hr": "Distillery-first znači da etiketa nosi ime destilerije i stil (npr. Foursquare, Doorly's): znaš tko je destilirao, kako je stario i što je u staklu. Suprotno su generički „Caribbean blend” bez adrese.\n\nZa stol\n• Foursquare — Barbados, često jasna deklaracija bačve i starosti; dobar model za učenje bez aditiva.\n• Doorly's — isti kućni stil, pristupačniji ulaz; XO i 12 YO često nose orašaste note uz maduro.\n• Usporedba s „solera” rumom — ovdje je put destilerije, ne samo slatkoća miješanja.\n\nPri sparivanju\n• Čistiji profil lakše se čita uz Connecticut ili srednju Habano cigaru.\n• Cask strength iz iste kuće traži puniju cigaru ili kap vode — isto pravilo kao za whisky.",
+        "en": "Distillery-first means the label carries the distillery and style (e.g. Foursquare, Doorly's): you know who distilled, how it aged and what is in the glass. The opposite is a generic «Caribbean blend» with no address.\n\nAt the table\n• Foursquare — Barbados, often clear cask and age statements; a good model for learning without additives.\n• Doorly's — same house style, an easier entry; XO and 12 YO often carry nutty notes with maduro.\n• Compared with «solera» rum — here the distillery path matters, not only blending sweetness.\n\nWhen pairing\n• Cleaner profiles read more easily with Connecticut or a medium Habano cigar.\n• Cask strength from the same house wants a fuller cigar or a drop of water — same rule as whisky."
+      },
+      "aliases": [
+        "Foursquare",
+        "Doorly's",
+        "Barbados rum"
+      ],
+      "seeAlso": [
+        "e150-rum-colour",
+        "rum-barrel-aging",
+        "rum-solera"
+      ],
+      "category": "drink"
+    },
+    {
       "id": "thirds-pairing",
       "term": {
         "hr": "Sparivanje po trećinama",

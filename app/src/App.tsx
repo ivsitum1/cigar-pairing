@@ -23,6 +23,9 @@ const CollectionPage = lazy(() =>
 const ShoppingPage = lazy(() =>
   import("./pages/ShoppingPage").then((m) => ({ default: m.ShoppingPage })),
 );
+const GiftPage = lazy(() =>
+  import("./pages/GiftPage").then((m) => ({ default: m.GiftPage })),
+);
 const ClubPage = lazy(() =>
   import("./pages/ClubPage").then((m) => ({ default: m.ClubPage })),
 );
@@ -37,7 +40,7 @@ const NAV: { id: Page; icon: string; key: "nav.pairing" | "nav.catalog" | "nav.c
 
 export default function App() {
   const { t, lang, setLang } = useI18n();
-  const { page } = useRoute();
+  const { page, shopping } = useRoute();
   // Gate se rješava PRIJE ostatka aplikacije — sadržaj se ne smije nazrijeti
   // ispod overlaya ni pročitati iz DOM-a čitačem ekrana.
   const [ageOk, setAgeOk] = useState(() => !shouldShowAgeGate());
@@ -81,7 +84,12 @@ export default function App() {
             {page === "pairing" && <PairingPage />}
             {page === "catalog" && <CatalogPage onPair={goToPairing} />}
             {page === "collection" && <CollectionPage onPair={goToPairing} />}
-            {page === "shopping" && <ShoppingPage onPair={goToPairing} />}
+            {page === "shopping" && shopping === "gift" && (
+              <GiftPage onPair={goToPairing} />
+            )}
+            {page === "shopping" && shopping !== "gift" && (
+              <ShoppingPage onPair={goToPairing} />
+            )}
             {page === "club" && <ClubPage />}
           </Suspense>
         </ErrorBoundary>

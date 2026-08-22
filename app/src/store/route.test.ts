@@ -134,4 +134,11 @@ describe("hash route helpers", () => {
       catalog: { level: "line", cigarId: "cig-a b" },
     });
   });
+
+  it("round-trips shopping gift subroute", () => {
+    expect(parseHash("#/shopping/gift")).toEqual({ page: "shopping", shopping: "gift" });
+    expect(routeToHash({ page: "shopping", shopping: "gift" })).toBe("#/shopping/gift");
+    expect(parseHash("#/shopping")).toEqual({ page: "shopping" });
+    expect(routeToHash({ page: "shopping" })).toBe("#/shopping");
+  });
 });

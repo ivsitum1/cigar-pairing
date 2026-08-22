@@ -41,12 +41,12 @@ export const BUCKETS: Partial<Record<DrinkCategory, StyleBucket[]>> = {
     { id: "dessert", label: { hr: "Desertno", en: "Dessert" }, styles: ["dessert-wine"] },
   ],
   coffee: [
-    { id: "espresso", label: { hr: "Espresso", en: "Espresso" }, styles: ["espresso", "ristretto", "lungo", "americano"] },
-    { id: "filter", label: { hr: "Filter", en: "Filter" }, styles: ["filter", "french-press"] },
+    { id: "espresso", label: { hr: "Espresso", en: "Espresso" }, styles: ["espresso", "espresso-dark", "espresso-medium", "ristretto", "lungo", "americano"] },
+    { id: "filter", label: { hr: "Filter", en: "Filter" }, styles: ["filter", "filter-light", "filter-medium", "filter-dark", "french-press"] },
     // instant stoji uz kuhanje bez aparata; kvalitetom nikad ne pobjeđuje
     // tursku ni moku, pa preporuku ne kvari — ali nijedan stil ne ispada
     { id: "classic", label: { hr: "Klasika / turska", en: "Classic / Turkish" }, styles: ["turkish", "moka", "instant"] },
-    { id: "milk", label: { hr: "S mlijekom / hladno", en: "With milk / cold" }, styles: ["milk", "cold-brew"] },
+    { id: "milk", label: { hr: "S mlijekom / hladno", en: "With milk / cold" }, styles: ["milk", "cold-brew", "cold"] },
     { id: "spiked", label: { hr: "S alkoholom", en: "Spiked" }, styles: ["spiked"] },
   ],
   tequila: [
@@ -94,16 +94,26 @@ export const BUCKETS: Partial<Record<DrinkCategory, StyleBucket[]>> = {
 
 // za rangiranje koristimo SREDINU raspona — kombinirani zapisi (min jeftine
 // boce + ocjena skupe) inace nepravedno pobjedjuju sve ostale
-const price = (d: Drink): number | null =>
-  d.priceEUR ? (d.priceEUR.min + d.priceEUR.max) / 2 : null;
+export function drinkMidPrice(d: Drink): number | null {
+  if (!d.priceEUR) return null;
+  return (d.priceEUR.min + d.priceEUR.max) / 2;
+}
 
-const byQuality = (a: Drink, b: Drink) =>
-  (b.qualityScore ?? 0) - (a.qualityScore ?? 0) ||
-  (price(a) ?? 9999) - (price(b) ?? 9999);
+export function drinkByQuality(a: Drink, b: Drink): number {
+  return (
+    (b.qualityScore ?? 0) - (a.qualityScore ?? 0) ||
+    (drinkMidPrice(a) ?? 9999) - (drinkMidPrice(b) ?? 9999)
+  );
+}
 
 /** Vrijednost = kvaliteta uz blagu kaznu za cijenu (25 EUR ~ 0.5 boda). */
-const valueScore = (d: Drink) =>
-  (d.qualityScore ?? 0) - (price(d) ?? 100) * 0.02;
+export function drinkValueScore(d: Drink): number {
+  return (d.qualityScore ?? 0) - (drinkMidPrice(d) ?? 100) * 0.02;
+}
+
+const price = drinkMidPrice;
+const byQuality = drinkByQuality;
+const valueScore = drinkValueScore;
 
 // bife petorka: najbolja ocjena uz razuman strop cijene po boci
 const BUFFET_PRICE_CAP = 120;

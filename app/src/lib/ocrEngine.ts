@@ -15,6 +15,16 @@ type PaddleInstance = {
 
 let paddleSingleton: Promise<PaddleInstance | null> | null = null;
 
+export type OcrWarmPhase = "paddle" | "tesseract";
+
+/**
+ * Resetira runtime cache-a za offline OCR modele.
+ * Koristi se kada korisnik ukloni OCR pack.
+ */
+export function resetOcrEngines(): void {
+  paddleSingleton = null;
+}
+
 function parsePaddleResult(result: unknown): { text: string; lines: OcrLine[] } {
   const lines: OcrLine[] = [];
   if (!result || typeof result !== "object") {
@@ -89,6 +99,22 @@ async function getPaddleJs(): Promise<PaddleInstance | null> {
     })();
   }
   return paddleSingleton;
+}
+
+/**
+ * Preload / warmup offline OCR engine-a tako da first scan ne “puca” u hladnom startu.
+ * Vraća false ako se Paddle ne može inicijalizirati (tesseract se ionako učitava po scan-u).
+ */
+export async function warmOcrEngines(
+  onPhase?: (phase: OcrWarmPhase) => void,
+): Promise<boolean> {
+  onPhase?.("paddle");
+  const paddle = await getPaddleJs();
+  if (!paddle) return false;
+
+  onPhase?.("tesseract");
+  await import("tesseract.js");
+  return true;
 }
 
 /** Downscale huge phone photos — browser OCR chokes on 12MP+ shots. */

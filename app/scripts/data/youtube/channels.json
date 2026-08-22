@@ -1,0 +1,121 @@
+{
+  "channels": [
+    {
+      "id": "stevethebarmanuk",
+      "handle": "@StevetheBarmanUK",
+      "url": "https://www.youtube.com/@StevetheBarmanUK",
+      "langs": ["en"],
+      "priority": 1,
+      "enabled": true,
+      "topics": ["rum", "cocktail", "spirits"]
+    },
+    {
+      "id": "bottledverdict",
+      "handle": "@BottledVerdict",
+      "url": "https://www.youtube.com/@BottledVerdict",
+      "langs": ["en"],
+      "priority": 2,
+      "enabled": true,
+      "topics": ["spirits"]
+    },
+    {
+      "id": "cigarsdaily",
+      "handle": "@CigarsDaily",
+      "url": "https://www.youtube.com/@CigarsDaily",
+      "langs": ["en"],
+      "priority": 2,
+      "enabled": true,
+      "topics": ["cigar"]
+    },
+    {
+      "id": "holtscigars",
+      "handle": "@holtscigars",
+      "url": "https://www.youtube.com/@holtscigars",
+      "langs": ["en"],
+      "priority": 2,
+      "enabled": true,
+      "topics": ["cigar"]
+    },
+    {
+      "id": "cigarrnation",
+      "handle": "@CigarrNation",
+      "url": "https://www.youtube.com/@CigarrNation",
+      "langs": ["en"],
+      "priority": 2,
+      "enabled": true,
+      "topics": ["cigar"]
+    },
+    {
+      "id": "rumverdict",
+      "handle": "@RumVerdict",
+      "url": "https://www.youtube.com/@RumVerdict",
+      "langs": ["en"],
+      "priority": 2,
+      "enabled": true,
+      "topics": ["rum"]
+    },
+    {
+      "id": "cigaraficionado",
+      "handle": "@cigaraficionado",
+      "url": "https://www.youtube.com/@cigaraficionado",
+      "langs": ["en"],
+      "priority": 2,
+      "enabled": true,
+      "topics": ["cigar"]
+    },
+    {
+      "id": "mayfaircigarledger",
+      "handle": "@MayfairCigarLedger",
+      "url": "https://www.youtube.com/@MayfairCigarLedger",
+      "langs": ["en"],
+      "priority": 2,
+      "enabled": true,
+      "topics": ["cigar"]
+    },
+    {
+      "id": "gentlemenscollective",
+      "handle": "@GentlemensCollectiveOfficial",
+      "url": "https://www.youtube.com/@GentlemensCollectiveOfficial",
+      "langs": ["en"],
+      "priority": 2,
+      "enabled": true,
+      "topics": ["cigar", "lifestyle"]
+    },
+    {
+      "id": "cigarsdotcom",
+      "handle": "@Cigarsdotcom",
+      "url": "https://www.youtube.com/@Cigarsdotcom",
+      "langs": ["en"],
+      "priority": 2,
+      "enabled": true,
+      "topics": ["cigar"]
+    },
+    {
+      "id": "liquidinfo",
+      "handle": "@LiquidInfo1",
+      "url": "https://www.youtube.com/@LiquidInfo1",
+      "langs": ["en"],
+      "priority": 2,
+      "enabled": true,
+      "topics": ["spirits"]
+    },
+    {
+      "id": "therumrevival",
+      "handle": "@therumrevival",
+      "url": "https://www.youtube.com/@therumrevival",
+      "langs": ["en"],
+      "priority": 2,
+      "enabled": true,
+      "topics": ["rum"]
+    },
+    {
+      "id": "williamhansonetiquette",
+      "handle": "@WilliamHansonEtiquette",
+      "url": "https://www.youtube.com/@WilliamHansonEtiquette",
+      "langs": ["en"],
+      "priority": 2,
+      "enabled": true,
+      "topics": ["etiquette", "bonton"]
+    }
+  ]
+}

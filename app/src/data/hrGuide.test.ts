@@ -9,6 +9,7 @@ const REQUIRED_SECTION_IDS = [
   "cijena-link-app",
   "prvi-kit",
   "sezona-zaliha",
+  "moj-plan-app",
   "poklon",
 ] as const;
 
@@ -26,7 +27,7 @@ type HrGuide = {
 const guide = hrGuide as HrGuide;
 
 describe("HR vodic kupnje", () => {
-  it("ima sedam zadanih odjeljaka redom", () => {
+  it("ima osam zadanih odjeljaka redom", () => {
     expect(guide.title.hr.length && guide.title.en.length).toBeTruthy();
     expect(guide.intro.hr.length && guide.intro.en.length).toBeTruthy();
     expect(guide.sections.map((section) => section.id)).toEqual(REQUIRED_SECTION_IDS);

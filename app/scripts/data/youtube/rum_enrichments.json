@@ -1,0 +1,117 @@
+{
+  "version": 1,
+  "channelId": "stevethebarmanuk",
+  "description": "Curated notes/cigarHint from YouTube corpus themes (original copy; not transcript paste). Human review before merge.",
+  "enrichments": {
+    "rum-worthy-park-109": {
+      "sourceVideoIds": ["5jON5hPAYmw"],
+      "notes": {
+        "hr": "Worthy Park 109 (54,5 %, pot still) — tamni jamajčanski profil: demerara, karamela i blagi kola ton, uz malo tropskog voća i začina. Duga fermentacija daje puno tijelo bez teške slatkoće. Čisto s kap vode, rum punch ili dark & stormy; litra je value, ali računaj na jači gutljaj.",
+        "en": "Worthy Park 109 (54.5%, pot still) — dark Jamaican profile: demerara, caramel and a subtle cola note, with a touch of tropical fruit and spice. Long fermentation gives body without heavy sweetness. Neat with a drop of water, rum punch or dark & stormy; the litre format is good value, but expect a bolder sip."
+      },
+      "cigarHint": {
+        "hr": "Tamni jamajčanski profil traži srednju do punu cigaru — Habano ili maduro s hrastom i kakao mostom. Connecticut se gubi iza karamela; overproof traži kraći gutljaj između dimova.",
+        "en": "This dark Jamaican profile wants a medium-to-full cigar — Habano or maduro with oak and cocoa as the bridge. Connecticut gets lost behind the caramel; at this ABV, keep sips smaller between puffs."
+      }
+    },
+    "rum-plantation-oftd": {
+      "sourceVideoIds": ["Pfm0mdaRd1o"],
+      "notes": {
+        "hr": "Plantation OFTD (69 %) — blend Barbados, Jamajke i Guyane: čokolada, suho voće, karamela i blaga vanilija, uz toplinu bez teške slatkoće (proizvođač navodi nula doziranja). Tiki i mai tai klasičan, ali i sipper s kap vode.",
+        "en": "Plantation OFTD (69%) — Barbados, Jamaica and Guyana blend: chocolate, dried fruit, caramel and soft vanilla, with warmth but not heavy sweetness (producer states zero dosage). A tiki and mai tai staple, but also a sipper with a drop of water."
+      },
+      "cigarHint": {
+        "hr": "Visoki alkohol i tamne note traže maduro ili puni Habano — most je čokolada i karamela, ne citrus. Gutljaj neka bude manji nego kod 40 % rumova.",
+        "en": "High ABV and dark notes call for maduro or a full Habano — bridge on chocolate and caramel, not citrus. Keep sips smaller than you would at 40%."
+      }
+    },
+    "rum-worthy-park-single-estate": {
+      "sourceVideoIds": ["MX5Z-a70yM8"],
+      "notes": {
+        "hr": "Worthy Park Single Estate Reserve (45 %) — glađi jamajčanski estate nego overproof linija: tropsko voće, začin i diskretan funk bez agresivne slatkoće. Čist profil od bačve; kap vode otvara estere.",
+        "en": "Worthy Park Single Estate Reserve (45%) — a smoother Jamaican estate than the overproof line: tropical fruit, spice and discreet funk without aggressive sweetness. Clean cask profile; a drop of water opens the esters."
+      },
+      "cigarHint": {
+        "hr": "Srednje tijelo i esterski rub — robusto Habano ili zreliji corojo; lagani Connecticut može ostati bez mosta. Prva trećina cigare često najbolja.",
+        "en": "Medium body with an estery edge — Habano robusto or a riper corojo; light Connecticut may never find a bridge. The cigar's first third often works best."
+      }
+    },
+    "rum-sailor-jerry": {
+      "sourceVideoIds": ["JXEFoQuRWos", "ItLvFNRREBM"],
+      "notes": {
+        "hr": "Sailor Jerry (46 %) — spiced karipski profil: vanilija, cimet i toplina, više alkohola nego kod tipičnih spiced rumova. Namijenjen koktelima (cola, ginger beer); neat uz cigaru rijetko je prvi izbor.",
+        "en": "Sailor Jerry (46%) — spiced Caribbean profile: vanilla, cinnamon and warmth, higher proof than many spiced rums. Built for cocktails (cola, ginger beer); neat with a cigar is rarely the first choice."
+      },
+      "cigarHint": {
+        "hr": "Ako ide uz dim, biraj laganu Connecticut ili panatelu — šećer i začin lako preglase nijanse. Za ozbiljno sparivanje prebaci se na aged destilat bez aromatizacije.",
+        "en": "If you pair it with smoke, pick a light Connecticut or panatela — sugar and spice easily cover nuance. For a serious pairing, switch to an aged unflavoured rum."
+      }
+    },
+    "rum-angostura-1919": {
+      "sourceVideoIds": ["gbvNmdrlKtA"],
+      "notes": {
+        "hr": "Angostura 1919 — trinidadski blend: karamela, hrast i zrelo voće, suhiji nego solera slatkoća. Dobar value sipper; čisto ili s kap vode uz srednju cigaru.",
+        "en": "Angostura 1919 — Trinidad blend: caramel, oak and ripe fruit, drier than solera sweetness. Good-value sipper; neat or with a drop of water and a medium cigar."
+      },
+      "cigarHint": {
+        "hr": "Karamela i hrast traže Habano srednjeg tijela — Connecticut može djelovati prazno. Izbjegni vrlo mlade tanine u vinu iste večeri.",
+        "en": "Caramel and oak want a medium-bodied Habano — Connecticut can feel empty. Avoid very young wine tannins in the same evening."
+      }
+    },
+    "rum-havana-club-7-anos": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Havana Club 7 años — kubanski anejo referenca: duhan, koža i suho voće, bez teške slatkoće. Value sipper uz cigaru; čisto ili s malo vode.",
+        "en": "Havana Club 7 años — benchmark Cuban añejo: tobacco, leather and dried fruit without heavy sweetness. Value sipper with a cigar; neat or with a little water."
+      },
+      "cigarHint": {
+        "hr": "Duhan i koža u čaši traže Habano s zemljastim ili cedar mostom — ne prejake maduro slatkoće. Dobra večera za robusto u drugoj trećini.",
+        "en": "Tobacco and leather in the glass want a Habano with an earthy or cedar bridge — not the sweetest maduro. A robusto in the second third fits well."
+      }
+    },
+    "rum-mount-gay-eclipse": {
+      "sourceVideoIds": ["-G7FaCatFIA"],
+      "notes": {
+        "hr": "Mount Gay Eclipse — pristupačni barbadoski blend: citrus, lagani hrast i voće. Koktel i highball prije teškog sippera; profil tipično čist s malo šećera.",
+        "en": "Mount Gay Eclipse — approachable Barbados blend: citrus, light oak and fruit. Cocktails and highballs before a heavy sipper; profile typically clean with modest sugar."
+      },
+      "cigarHint": {
+        "hr": "Lagano tijelo — Connecticut, Cameroon ili kraći format prije nego što uvezeš maduro. Usporedi s jačim barbadosom (Black Barrel) iste večeri.",
+        "en": "Light body — Connecticut, Cameroon or a shorter format before you reach for maduro. Compare with a bolder Barbados (Black Barrel) the same evening."
+      }
+    },
+    "rum-mount-gay-black-barrel": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Mount Gay Black Barrel — tostirani hrast, suho voće i vanilija; puniji od Eclipsea, i dalje barbadoski „entry premium”. Čisto ili rocks uz srednju cigaru.",
+        "en": "Mount Gay Black Barrel — toasted oak, dried fruit and vanilla; fuller than Eclipse, still Barbados 'entry premium'. Neat or on the rocks with a medium cigar."
+      },
+      "cigarHint": {
+        "hr": "Vanilija i tostirani hrast — Habano robusto ili blagi maduro. Prva trećina + prvi gutljaj najčešće otkriju most.",
+        "en": "Vanilla and toasted oak — Habano robusto or a gentle maduro. First third + first sip usually reveal the bridge."
+      }
+    },
+    "rum-foursquare-sovereignty": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Foursquare Sovereignty (ECS, cask strength) — vrh barbados single blended linije: suho voće, hrast i esteri bez doziranog šećera (deklaracija destilerije). Spor sipper; kap vode preporučena.",
+        "en": "Foursquare Sovereignty (ECS, cask strength) — top of the Barbados single blended line: dried fruit, oak and esters with no dosed sugar (distillery declaration). Slow sipper; a drop of water recommended."
+      },
+      "cigarHint": {
+        "hr": "Puno tijelo i suh hrast — maduro ili puni Habano; Connecticut je premalen partner. Dim i gutljaj drži u sporom ritmu.",
+        "en": "Full body and dry oak — maduro or a full Habano; Connecticut is too small a partner. Keep smoke and sip on a slow rhythm."
+      }
+    },
+    "rum-doorly-s-12-foursquare": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Doorly's 12 (Foursquare) — suh barbados single blend: hrast, suho voće, vanilija. Bez doziranog šećera; pouzdana boca za učenje „čistog” profila uz cigaru.",
+        "en": "Doorly's 12 (Foursquare) — dry Barbados single blend: oak, dried fruit, vanilla. No dosed sugar; a reliable bottle for learning a 'clean' profile with a cigar."
+      },
+      "cigarHint": {
+        "hr": "Vanilija u suhom hrastu — cedar ili orašasti dim (Cameroon, zreliji Habano). Izbjegni spiced rum u istoj večeri.",
+        "en": "Vanilla in dry oak — cedar or nutty smoke (Cameroon, riper Habano). Skip spiced rum the same evening."
+      }
+    }
+  }
+}

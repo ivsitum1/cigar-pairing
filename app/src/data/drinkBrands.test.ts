@@ -5,11 +5,27 @@ import { describe, expect, it } from "vitest";
 import { ALL_DRINKS, ALL_DRINK_BRANDS, drinkBrand, drinksByBrand } from "./index";
 
 describe("marke pića", () => {
-  // Kava nema proizvođača — "Ristretto", "Cold brew", "Brazil Santos" su
-  // priprema i podrijetlo. Namjerno je izvan pojma marke.
-  const withBrand = ALL_DRINKS.filter((d) => d.category !== "coffee");
+  // Stilska kava (Ristretto, Brazil Santos) nema proizvođača. Imenovane
+  // mješavine (Franck, illy…) imaju marku iz overrides.
+  const NAMED_COFFEE: Record<string, string> = {
+    "cf-franck-bonus-espresso": "Franck",
+    "cf-franck-crema": "Franck",
+    "cf-franck-espresso": "Franck",
+    "cf-franck-jubilarna": "Franck",
+    "cf-franck-jubilarna-intense": "Franck",
+    "cf-franck-jubilarna-sensual": "Franck",
+    "cf-illy-classico": "illy",
+    "cf-illy-intenso": "illy",
+    "cf-julius-meinl-vienna-espresso": "Julius Meinl",
+    "cf-lavazza-qualita-oro": "Lavazza",
+    "cf-lavazza-qualita-rossa": "Lavazza",
+    "cf-segafredo-intermezzo": "Segafredo",
+  };
+  const withBrand = ALL_DRINKS.filter(
+    (d) => d.category !== "coffee" || d.id in NAMED_COFFEE,
+  );
 
-  it("svako piće osim kave ima marku", () => {
+  it("svako piće osim stilske kave ima marku", () => {
     const missing = withBrand.filter((d) => !drinkBrand(d.id)).map((d) => d.id);
     expect(
       missing,
@@ -17,10 +33,19 @@ describe("marke pića", () => {
     ).toEqual([]);
   });
 
-  it("kava namjerno nema marku", () => {
+  it("stilska kava nema marku; imenovane mješavine imaju", () => {
     const coffee = ALL_DRINKS.filter((d) => d.category === "coffee");
     expect(coffee.length).toBeGreaterThan(0);
-    expect(coffee.filter((d) => drinkBrand(d.id)).map((d) => d.id)).toEqual([]);
+    const styleBranded = coffee
+      .filter((d) => !(d.id in NAMED_COFFEE) && drinkBrand(d.id))
+      .map((d) => d.id);
+    expect(styleBranded).toEqual([]);
+    const wrong: string[] = [];
+    for (const [id, brand] of Object.entries(NAMED_COFFEE)) {
+      const got = drinkBrand(id);
+      if (got !== brand) wrong.push(`${id}: ${got} ≠ ${brand}`);
+    }
+    expect(wrong).toEqual([]);
   });
 
   it("svaka marka ima barem jednu bocu", () => {
@@ -44,7 +69,7 @@ describe("marke pića", () => {
     }
   });
 
-  it("zbroj boca po markama pokriva sva ne-kavena pića", () => {
+  it("zbroj boca po markama pokriva sva pića koja imaju marku", () => {
     const total = ALL_DRINK_BRANDS.reduce((n, b) => n + drinksByBrand(b).length, 0);
     expect(total).toBe(withBrand.length);
   });
@@ -87,6 +112,7 @@ describe("marke pića", () => {
       "Rhum J.M",
       "Four Monkey's Rum",
       "Gin Mare",
+      "Gin & P",
       "The Bush Rum",
       "Rum Exchange",
       "Rum Nation",
@@ -112,6 +138,10 @@ describe("marke pića", () => {
       "Gaja", // vino + grappa
       "Ableforth's", // gin + rum
       "AURA", // pelinkovac + gin
+      "Dictador", // rum + gin
+      "Kavalan", // whisky + gin
+      "Poli", // grappa + gin
+      "Tobermory", // whisky + gin
     ]);
     const suspects = ALL_DRINK_BRANDS.filter((b) => {
       if (b.split(/\s+/).length !== 1 || MULTI_CATEGORY_HOUSES.has(b)) return false;

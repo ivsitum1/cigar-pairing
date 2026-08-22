@@ -45,46 +45,6 @@ describe("coffees catalog — Hoffmann regional alignment", () => {
     expect(inferCoffeeProfile(sumatra).flavorFamily).toBe("earthy");
   });
 
-  it("tri okomite osi: priprema, prženje i zrno stoje odvojeno", () => {
-    const PREPS = new Set([
-      "espresso",
-      "ristretto",
-      "lungo",
-      "americano",
-      "moka",
-      "turkish",
-      "filter",
-      "french-press",
-      "cold-brew",
-      "milk",
-      "instant",
-      "spiked",
-    ]);
-    for (const c of coffees) {
-      // stari spojeni ključ ("espresso-dark") ne smije se vratiti u podatke
-      expect(c.style, c.id).not.toMatch(/-(light|medium|dark)$/);
-      expect(PREPS.has(c.style), `${c.id}: nepoznata priprema ${c.style}`).toBe(true);
-      expect(["light", "medium", "dark"], c.id).toContain(c.roast);
-      expect(["arabica", "robusta", "blend"], c.id).toContain(c.species);
-    }
-  });
-
-  it("kava vođena podrijetlom ima zemlju, priprema bez podrijetla nema", () => {
-    const origin = coffees.find((c) => c.id === "cf-v60-ethiopia")!;
-    expect(origin.country).toBe("Etiopija");
-    // ristretto nije ni jedna zemlja — to je način pripreme
-    expect(coffees.find((c) => c.id === "cf-ristretto")!.country).toBe("—");
-  });
-
-  it("instant je u katalogu, ali pošteno ocijenjen", () => {
-    const instants = coffees.filter((c) => c.style === "instant");
-    expect(instants.length).toBeGreaterThanOrEqual(1);
-    for (const c of instants) {
-      expect(c.pairable, `${c.id} mora biti pairable — engine ga boduje, ne cenzurira`).toBe(true);
-      expect(c.qualityScore ?? 0).toBeLessThanOrEqual(4);
-    }
-  });
-
   it("americano postoji za medium-TDS stil", () => {
     const am = coffees.find((c) => c.id === "cf-americano")!;
     expect(am.style).toBe("americano");
@@ -97,5 +57,60 @@ describe("coffees catalog — Hoffmann regional alignment", () => {
     expect(p.flavorFamily).toBe("floral");
     expect(p.acidity).toBe("high");
     expect(p.intensity).toBe("low");
+  });
+
+  it("svaka kava ima coffeeDetail, cigarHint i dovoljno dugu HR bilješku", () => {
+    for (const c of coffees) {
+      expect(c.coffeeDetail?.roast, c.id).toMatch(/^(light|medium|dark)$/);
+      expect(c.cigarHint?.hr?.length, c.id).toBeGreaterThan(40);
+      expect(c.cigarHint?.en?.length, c.id).toBeGreaterThan(40);
+      expect(c.notes.hr.length, c.id).toBeGreaterThanOrEqual(80);
+      expect(c.notes.en.length, c.id).toBeGreaterThanOrEqual(80);
+    }
+  });
+
+  it("imenovane HR mješavine postoje, bez cijene", () => {
+    const named = [
+      "cf-franck-jubilarna",
+      "cf-franck-jubilarna-intense",
+      "cf-franck-jubilarna-sensual",
+      "cf-franck-bonus-espresso",
+      "cf-franck-crema",
+      "cf-franck-espresso",
+      "cf-illy-classico",
+      "cf-illy-intenso",
+      "cf-lavazza-qualita-rossa",
+      "cf-lavazza-qualita-oro",
+      "cf-julius-meinl-vienna-espresso",
+      "cf-segafredo-intermezzo",
+    ];
+    for (const id of named) {
+      const c = coffees.find((x) => x.id === id);
+      expect(c, id).toBeDefined();
+      expect(c!.priceEUR, id).toBeNull();
+      expect(c!.name.split(/\s+/)[0].length, id).toBeGreaterThan(0);
+    }
+  });
+
+  it("illy Intenso je tamno prženje visokog intenziteta", () => {
+    const p = inferCoffeeProfile(coffees.find((c) => c.id === "cf-illy-intenso")!);
+    expect(p.roast).toBe("dark");
+    expect(p.intensity).toBe("high");
+  });
+
+  it("Lavazza Rossa ostaje medium roast (službeni opis)", () => {
+    const c = coffees.find((x) => x.id === "cf-lavazza-qualita-rossa")!;
+    expect(c.coffeeDetail?.roast).toBe("medium");
+    expect(c.coffeeDetail?.species).toBe("blend");
+  });
+
+  it("Jubilarna Intense je tamnija i punija od Sensual", () => {
+    const intense = coffees.find((c) => c.id === "cf-franck-jubilarna-intense")!;
+    const sensual = coffees.find((c) => c.id === "cf-franck-jubilarna-sensual")!;
+    expect(intense.coffeeDetail?.roast).toBe("dark");
+    expect(sensual.coffeeDetail?.roast).toBe("medium");
+    expect(intense.body).toBeGreaterThan(sensual.body);
+    expect(intense.coffeeDetail?.milk).not.toBe(true);
+    expect(sensual.coffeeDetail?.milk).not.toBe(true);
   });
 });

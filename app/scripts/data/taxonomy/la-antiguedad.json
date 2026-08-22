@@ -1,18 +1,28 @@
 {
   "brand": "La Antiguedad",
-  "renameBrand": null,
+  "renameBrand": "My Father",
   "status": "done",
-  "reviewedAt": "2026-07-24",
+  "reviewedAt": "2026-08-18",
   "sources": [
     "phase3_w3_w4_finish W3",
-    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3"
+    "docs/superpowers/plans/2026-07-23-cigar-taxonomy-brand-line-vitola.md §7.3",
+    "house-line fold under My Father 2026-08-18"
   ],
   "lines": {
     "La Antiguedad": {
       "line": "La Antiguedad"
     },
+    "Grande": {
+      "line": "La Antiguedad"
+    },
     "Super": {
-      "line": "Super"
+      "line": "La Antiguedad"
+    },
+    "Robusto": {
+      "line": "La Antiguedad"
+    },
+    "Toro": {
+      "line": "La Antiguedad"
     }
   },
   "vitolaRenames": {},

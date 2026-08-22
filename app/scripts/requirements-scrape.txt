@@ -1,0 +1,9 @@
+# Optional scrape extras for weekly stock pings.
+# Parser tests and CI do not need this.
+#
+#   pip install -r scripts/requirements-scrape.txt
+#   scrapling install
+scrapling[fetchers]>=0.3
+
+# YouTube rum corpus (inventory + captions) — local only; not used in CI.
+yt-dlp>=2024.8.0

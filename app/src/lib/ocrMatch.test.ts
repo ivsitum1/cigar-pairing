@@ -65,6 +65,11 @@ describe("OCR matcher", () => {
     expect(m?.candidate.id).toBe("cig-oliva-serie-v");
   });
 
+  it("ne mapira goli genericni format na prvi tudji brand", () => {
+    expect(matchOcrText("CHURCHILL", cigarCandidates)).toBeNull();
+    expect(matchOcrText("ROBUSTO", cigarCandidates)).toBeNull();
+  });
+
   it("zadrzava jedno-slovna serijska slova", () => {
     expect(tokenize("Oliva Serie V")).toEqual(["oliva", "serie", "v"]);
   });

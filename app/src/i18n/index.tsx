@@ -339,6 +339,18 @@ const STRINGS = {
   "ocr.receiptHint": { hr: "Provjeri popis pa unesi označene u Imam.", en: "Review the list, then add selected to Owned." },
   "ocr.receiptCommit": { hr: "Unesi sve označeno u Imam", en: "Add selected to Owned" },
   "ocr.receiptDone": { hr: "Dodano u Imam: {n}", en: "Added to Owned: {n}" },
+  // Offline OCR pack (Paddle ONNX / Tesseract warmup)
+  "ocr.packTitle": { hr: "Offline OCR paket", en: "Offline OCR pack" },
+  "ocr.packHint": {
+    hr: "Preuzimanje opcionalnih modela za offline prepoznavanje. Nakon toga se OCR brže i stabilnije pokreće, uz manje oslanjanje na mrežu.",
+    en: "Download optional models for offline recognition. Afterwards OCR starts faster and more reliably, with less reliance on the network.",
+  },
+  "ocr.packStatusReady": { hr: "Spreman", en: "Ready" },
+  "ocr.packStatusDownloading": { hr: "Preuzimam…", en: "Downloading…" },
+  "ocr.packStatusFailed": { hr: "Neuspjelo", en: "Failed" },
+  "ocr.packStatusOff": { hr: "Isključeno", en: "Off" },
+  "ocr.packInstall": { hr: "Preuzmi", en: "Install" },
+  "ocr.packUninstall": { hr: "Obriši", en: "Uninstall" },
   "common.buy": { hr: "Gdje kupiti", en: "Where to buy" },
   "common.searchOnline": { hr: "Traži online", en: "Search online" },
   "price.from": { hr: "od", en: "from" },
@@ -354,6 +366,12 @@ const STRINGS = {
   "price.staleNote": {
     hr: "Cijena je starija od 3 mjeseca — provjeri u trgovini.",
     en: "Price is older than 3 months — verify with the shop.",
+  },
+  "stock.in": { hr: "Na zalihi", en: "In stock" },
+  "stock.out": { hr: "Nema na zalihi", en: "Out of stock" },
+  "stock.stale": {
+    hr: "provjeri — podatak stariji od 14 dana",
+    en: "check — data older than 14 days",
   },
   "rate.qualityWhat": {
     hr: "Neovisna procjena kvalitete (1–10) unutar vlastitog stila — agregat javnih ocjena i recenzija. Dodaci se ne kažnjavaju u ocjeni, nego se zasebno deklariraju.",
@@ -418,6 +436,11 @@ const STRINGS = {
   "common.lineup": { hr: "Boce u seriji", en: "Bottles in the series" },
   "common.samplerContents": { hr: "Cigare u pakiranju", en: "Cigars in the pack" },
   "common.additives": { hr: "Aditivi", en: "Additives" },
+  "common.roast": { hr: "Prženje", en: "Roast" },
+  "common.process": { hr: "Obrada", en: "Process" },
+  "common.species": { hr: "Vrsta", en: "Species" },
+  "common.cigarHint": { hr: "Uz cigaru", en: "With a cigar" },
+  "common.productPhoto": { hr: "Slika proizvoda", en: "Product photo" },
   "common.close": { hr: "Zatvori", en: "Close" },
   "common.time": { hr: "Vrijeme", en: "Time" },
   "common.shop": { hr: "Trgovina", en: "Shop" },
@@ -483,6 +506,11 @@ const STRINGS = {
   "coll.wishlistTitle": { hr: "Lista želja (za kupnju)", en: "Wishlist (to buy)" },
   "coll.onWishlist": { hr: "Na listi želja", en: "On wishlist" },
   "coll.myRating": { hr: "Moja ocjena", en: "My rating" },
+  "coll.eveningRating": { hr: "Ocjena večeri", en: "Evening rating" },
+  "coll.eveningRatingHint": {
+    hr: "Vrijedi samo za ovu zabilježenu večer. Ne mijenja Moju ocjenu cigare.",
+    en: "Only applies to this logged evening. It does not change your cigar’s My rating.",
+  },
   "coll.note": { hr: "Bilješka", en: "Note" },
   "coll.notePlaceholder": { hr: "Dojmovi, uz što je pasalo…", en: "Impressions, what it paired with…" },
   "coll.export": { hr: "Izvoz podataka", en: "Export data" },
@@ -578,6 +606,10 @@ const STRINGS = {
   },
   "hum.addToHumidor": { hr: "U humidor", en: "To humidor" },
   "hum.inHumidor": { hr: "U humidoru", en: "In humidor" },
+  "hum.lineInHumidor": {
+    hr: "U humidoru (bilo koja vitola ove linije)",
+    en: "In humidor (any vitola of this line)",
+  },
   "hum.stockByVitola": { hr: "Po vitolama", en: "By vitola" },
   "hum.samplerUnpack": { hr: "Rasporedi paket", en: "Unpack the sampler" },
   "hum.samplerHint": {
@@ -651,18 +683,101 @@ const STRINGS = {
   "shop.copied": { hr: "Kopirano", en: "Copied" },
   "shop.wishlistNote": { hr: "Lista želja u potpunosti je tvoja: na nju ulazi samo ono što sam označiš zvjezdicom. Preporuke u nastavku ne mijenjaju je niti se ravnaju prema njoj.", en: "The wishlist is entirely yours: only items you star yourself appear on it. The recommendations below neither change it nor take it into account." },
   "shop.gaps": { hr: "Praznine u kolekciji", en: "Gaps in the collection" },
-  "shop.gapsHint": { hr: "Segmenti u kojima još nemaš nijednu bocu, uz prijedlog kojom ih popuniti. Plan se sam ažurira prema onome što označiš oznakom „Imam”.", en: "Segments in which you do not yet own a single bottle, with a suggestion to fill each. The plan updates itself as you mark bottles as owned." },
+  "shop.gapsHint": {
+    hr: "Što još nedostaje prema oznaci „Imam”: stilovi bez ijedne boce, uz jedan prijedlog za svaki. Čita se iz kolekcije i samo se ažurira — nije lista želja, nije petorka za bife, nije tvoj ručni plan.",
+    en: "What you still lack by your “Owned” marks: styles with no bottle yet, plus one suggestion each. It reads from the collection and updates itself — not the wishlist, not the buffet five, not your manual plan.",
+  },
   "shop.gapsDone": { hr: "Svi su segmenti pokriveni — kolekcija obuhvaća cijeli spektar. 🥃", en: "Every segment is covered — your collection spans the full spectrum. 🥃" },
   "shop.segments": { hr: "Preporuke po segmentima", en: "Recommendations by segment" },
+  "shop.segmentsHint": {
+    hr: "Po kategoriji tri uredničke boce: vrh, omjer cijene i kvalitete, i pristupačno do 30 €. Rangiranje unutar kategorije — ne karta rupa (to su praznine) i ne pet boca za jedan stol (to je petorka).",
+    en: "Per category, three curated bottles: top, value, and affordable up to €30. Ranking within the category — not a map of gaps (that is Gaps) and not five bottles for one table (that is the buffet five).",
+  },
   "shop.pickTop": { hr: "Vrh ponude", en: "Top of the range" },
   "shop.pickValue": { hr: "Najbolji omjer cijene i kvalitete", en: "Best value for money" },
   "shop.pickBudget": { hr: "Pristupačno (do 30 €)", en: "Affordable (up to €30)" },
   "shop.buffet": { hr: "Petorka za bife", en: "The buffet five" },
-  "shop.buffetHint": { hr: "Pet najboljih boca koje zajedno daju presjek kategorije: iz svakoga segmenta po jedna, s najvišom ocjenom uz razuman strop cijene (120 € po boci). Boce koje već imaš preskaču se. Ova je preporuka neovisna o tvojoj listi želja — ono što je već na listi nosi oznaku ☆.", en: "The five best bottles that together cover the category: one per segment, highest rating within a sensible price cap (€120 a bottle). Bottles you already own are skipped. This recommendation is independent of your wishlist — anything already on the list is marked ☆." },
+  "shop.buffetHint": {
+    hr: "Pet boca za jedan stol u odabranoj kategoriji: iz svakog stila po jedna, najbolja ocjena uz strop 120 €. Cilj je presjek za bife, ne popuna rupa ni tri rangirane cijene. Boce koje već imaš preskaču se; ☆ = već na listi želja.",
+    en: "Five bottles for one table in the chosen category: one per style, best score under a €120 ceiling. The aim is a buffet cross-section, not filling gaps or three ranked price bands. Bottles you already own are skipped; ☆ = already on the wishlist.",
+  },
   "shop.myPlan": { hr: "Moj plan", en: "My plan" },
+  "shop.myPlanHint": {
+    hr: "Tvoja ručna checklista rum stilova po razinama S–C. Stavi ili makni kvačicu — sprema se na ovom uređaju. Ne mijenja se sama kad označiš „Imam” na boci (za to su praznine).",
+    en: "Your manual checklist of rum styles by tiers S–C. Tick or untick — it saves on this device. It does not update itself when you mark a bottle as owned (that is what Gaps does).",
+  },
   "shop.tierDone": { hr: "Nabavljeno", en: "Acquired" },
+  "shop.tierMark": { hr: "Označi kao nabavljeno", en: "Mark as acquired" },
+  "shop.tierUnmark": { hr: "Makni oznaku nabavljeno", en: "Clear acquired mark" },
   "shop.shops": { hr: "Trgovine", en: "Shops" },
   "shop.legalNote": { hr: "Internetska prodaja duhana u Hrvatskoj nije dopuštena — cijene cigara informativne su, a kupnja je moguća samo u trgovini.", en: "Online tobacco sales are not permitted in Croatia — cigar prices are indicative only, and purchases can be made solely in store." },
+  // gift chooser
+  "gift.nav": { hr: "Poklon", en: "Gift" },
+  "gift.title": { hr: "Poklon u nekoliko pitanja", en: "A gift in a few questions" },
+  "gift.intro": {
+    hr: "Nekoliko pitanja o osobi — prijedlog s cijenom i trgovinom u blizini. Ne moraš znati ništa o cigarima. Ako znaš što već pije, prijedlog se izoštrava.",
+    en: "A few questions about the person — a priced suggestion from a shop near you. You do not need to know anything about cigars. If you know what they already drink, the suggestion sharpens.",
+  },
+  "gift.entryTeaser": {
+    hr: "Ne znaš što kupiti? Reci kakva je osoba, koliko želiš potrošiti, i što već ima na polici — dobiješ dva ili tri prijedloga s cijenom i trgovinom u blizini.",
+    en: "Not sure what to buy? Say what the person is like, what you can spend, and what is already on their shelf — you get two or three suggestions with a price and a shop nearby.",
+  },
+  "gift.entryOpen": { hr: "Pokreni poklon", en: "Start the gift finder" },
+  "gift.nearby": { hr: "Tržište / trgovine u blizini", en: "Market / shops nearby" },
+  "gift.back": { hr: "Natrag", en: "Back" },
+  "gift.next": { hr: "Dalje", en: "Next" },
+  "gift.show": { hr: "Prikaži prijedloge", en: "Show suggestions" },
+  "gift.pricedNote": {
+    hr: "Prikazujemo samo artikle čiju cijenu znamo — zato je izbor manji nego u katalogu.",
+    en: "We only show items whose price we know — so the pool is smaller than in the catalogue.",
+  },
+  "gift.empty": {
+    hr: "U ovom rasponu i tržištu nema dovoljno artikala s cijenom. Probaj drugi budžet ili tržište.",
+    en: "Not enough priced items in this budget and market. Try another budget band or market.",
+  },
+  "gift.restart": { hr: "Počni ispočetka", en: "Start over" },
+  "gift.editAnswers": { hr: "Uredi odgovore", en: "Edit answers" },
+  "gift.kind.bottle": { hr: "Jedna boca", en: "One bottle" },
+  "gift.kind.cigar": { hr: "Cigara", en: "A cigar" },
+  "gift.kind.pairing": { hr: "Cigara i piće", en: "Cigar and drink" },
+  "gift.fellBackBudget": {
+    hr: "U tvom rasponu nema dovoljno — prikazujemo nešto nešto jeftinije.",
+    en: "Nothing strong enough in your band — showing something a little cheaper.",
+  },
+  "gift.match": { hr: "Slaganje", en: "Match" },
+  "gift.minMatchNote": {
+    hr: "Cigaru i piće nudimo zajedno samo kad slaganje prijeđe 80 %. Kombinacija koja ne ide lošiji je poklon od dvije zasebne stvari koje idu.",
+    en: "We only offer a cigar and a drink together when the match clears 80%. A combination that does not work is a worse gift than two separate things that do.",
+  },
+  "gift.noPairing": {
+    hr: "U ovom rasponu nijedna kombinacija nije prešla 80 %, pa cigara i piće idu zasebno.",
+    en: "No combination cleared 80% in this band, so the cigar and the drink come separately.",
+  },
+  "gift.swappedNote": {
+    hr: "U traženoj kategoriji nema pogotka u ovom rasponu — ovo je najbliža koja ima. Traženo:",
+    en: "Nothing in the requested category fits this band — this is the nearest one that does. Asked for:",
+  },
+  "gift.safeDefault": {
+    hr: "Na sva pitanja stoji „ne znam”, pa biramo siguran poklon: pristupačan format i srednja jačina, klasična kategorija u čaši, 20–40 €. Nudimo tri različite stvari — kombinaciju, bocu i cigaru — jer ne znamo ni puši li osoba. Odgovori na bilo koje pitanje i prijedlog se izoštrava.",
+    en: "Every answer is “not sure”, so we pick a safe gift: an approachable format at medium strength, a classic category in the glass, €20–40. You get three different things — a combination, a bottle and a cigar — because we do not even know whether they smoke. Answer any one question and the suggestion sharpens.",
+  },
+  "gift.shop": { hr: "Trgovina", en: "Shop" },
+  "gift.buyDrink": { hr: "Kupi piće", en: "Buy drink" },
+  "gift.checkShop": { hr: "Provjeri u trgovini", en: "Check in shop" },
+  "gift.openPairing": { hr: "Otvori sparivanje", en: "Open pairing" },
+  "gift.reroll": { hr: "Zamijeni", en: "Swap" },
+  "gift.ownedStyles": { hr: "Što već ima na polici?", en: "What is already on the shelf?" },
+  "gift.ownedStylesNone": { hr: "Ništa od toga", en: "None of these" },
+  "gift.ownedStylesUnknown": { hr: "Ne znam", en: "Not sure" },
+  "gift.drinkPick": { hr: "Kako da biramo bocu?", en: "How should we choose the bottle?" },
+  "gift.drinkPick.gap": { hr: "Ono čega još nema", en: "Something they do not have yet" },
+  "gift.drinkPick.top": { hr: "Vrh kategorije", en: "Top of the category" },
+  "gift.drinkPick.value": { hr: "Najbolji omjer", en: "Best value" },
+  "gift.drinkPick.unknown": { hr: "Ne znam", en: "Not sure" },
+  "gift.noGapLeft": {
+    hr: "Svi navedeni stilovi već su na polici — nudimo vrh kategorije u tvom rasponu.",
+    en: "Every style you named is already on the shelf — showing the top of the category in your band.",
+  },
   // filteri
   "filter.style": { hr: "Stil", en: "Style" },
   "filter.strength": { hr: "Snaga", en: "Strength" },
@@ -687,6 +802,11 @@ const STRINGS = {
   "shape.figurado": { hr: "Figurado", en: "Figurado" },
   "filter.maxPrice": { hr: "Cijena do", en: "Price up to" },
   "filter.clean": { hr: "Samo čisti (bez aditiva)", en: "Clean only (no additives)" },
+  "filter.rumClass": { hr: "Klasa", en: "Class" },
+  "rumFlag.spiced": { hr: "Spiced", en: "Spiced" },
+  "rumFlag.liqueur": { hr: "Liker", en: "Liqueur" },
+  "rumFlag.mixing": { hr: "Mixing", en: "Mixing" },
+  "rumFlag.clean": { hr: "Čisti / sipping", en: "Clean / sipping" },
   "filter.wrapper": { hr: "Pokrovni list", en: "Wrapper" },
   "filter.binder": { hr: "Vezni list", en: "Binder" },
   "filter.filler": { hr: "Punjenje", en: "Filler" },
@@ -969,6 +1089,27 @@ export const ADDITIVE_LABELS: Record<string, LocalizedText> = {
   flavored: { hr: "Aromatiziran", en: "Flavoured" },
   fortified: { hr: "Fortificirano", en: "Fortified" },
   unknown: { hr: "Nepoznato", en: "Unknown" },
+};
+
+export const COFFEE_ROAST_LABELS: Record<string, LocalizedText> = {
+  light: { hr: "svijetlo", en: "light" },
+  medium: { hr: "srednje", en: "medium" },
+  dark: { hr: "tamno", en: "dark" },
+};
+
+export const COFFEE_PROCESS_LABELS: Record<string, LocalizedText> = {
+  washed: { hr: "oprana", en: "washed" },
+  natural: { hr: "natural (sušena trešnja)", en: "natural (dried in cherry)" },
+  honey: { hr: "honey (pulp natural)", en: "honey (pulp natural)" },
+  "semi-washed": { hr: "poluprana (giling basah)", en: "semi-washed (giling basah)" },
+  monsoon: { hr: "monsunska", en: "monsooned" },
+  blend: { hr: "mješavina", en: "blend" },
+};
+
+export const COFFEE_SPECIES_LABELS: Record<string, LocalizedText> = {
+  arabica: { hr: "arabica", en: "arabica" },
+  robusta: { hr: "robusta", en: "robusta" },
+  blend: { hr: "mješavina arabica/robusta", en: "arabica/robusta blend" },
 };
 
 // Neutralna pravila po kategoriji — što je zakonski dopušteno dodati.

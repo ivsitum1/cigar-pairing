@@ -224,6 +224,18 @@ export function ClubPage() {
         </button>
       </div>
 
+      <SectionTitle>{t("gift.nav")}</SectionTitle>
+      <div className="rounded-xl border border-zlato/25 bg-cedar p-4">
+        <p className="text-sm leading-relaxed text-papir/90">{t("gift.entryTeaser")}</p>
+        <button
+          type="button"
+          onClick={() => navigate({ page: "shopping", shopping: "gift" })}
+          className="mt-3 w-full rounded-lg border border-zlato/40 py-2.5 font-display text-xs uppercase tracking-widest text-zlato hover:bg-zlato/10"
+        >
+          {t("gift.entryOpen")} →
+        </button>
+      </div>
+
       {/* leksikon — jezik za pairing */}
       <SectionTitle>{t("club.lexicon")}</SectionTitle>
       <div className="rounded-xl border border-zlato/25 bg-cedar p-4">

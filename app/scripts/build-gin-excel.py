@@ -6,6 +6,7 @@ Pokretanje: python scripts/build-gin-excel.py
 from __future__ import annotations
 
 import json
+import re
 from collections import defaultdict
 from pathlib import Path
 
@@ -34,7 +35,14 @@ HEADER_FILL = PatternFill("solid", fgColor="2C211A")
 HEADER_FONT = Font(bold=True, color="C9A35C")
 TITLE_FONT = Font(bold=True, size=12, color="9C4433")
 
-MASTER_CAP = 80
+# Cover the full pairable allez listing (~70–90 sipping SKUs plus gift META rows).
+MASTER_CAP = 250
+
+GIFT_RE = re.compile(
+    r"poklon|gift\s*box|giftbox|\bkutiji\b|miniset|mini\s*set|tasting\s*set|"
+    r"baubles|kiosk\s*set|sa čašom|s čašom|s 2 čaš|with glass|with 2",
+    re.I,
+)
 
 
 def style_header(ws, row: int, ncols: int) -> None:
@@ -70,6 +78,47 @@ def find_seed(name: str, seeds: dict[str, dict]) -> dict | None:
         if score > best_score:
             best, best_score = seed, score
     return best if best and best_score >= 2 else None
+
+
+def is_gift_sku(name: str) -> bool:
+    return bool(GIFT_RE.search(name or ""))
+
+
+def core_name_key(name: str) -> str:
+    text = GIFT_RE.sub(" ", name.lower())
+    text = re.sub(r"\d+[.,]?\d*\s*%.*", " ", text)
+    text = re.sub(r"\d+[.,]\d+\s*l\b", " ", text)
+    text = re.sub(r"[^a-z0-9]+", " ", text)
+    return " ".join(text.split())
+
+
+def pick_primary(rows: list[dict]) -> dict:
+    def rank(row: dict) -> tuple:
+        return (
+            not is_gift_sku(row["name"]),
+            bool(row.get("url")),
+            0 if row.get("status") == "META" else 1,
+            row.get("quality") or 0,
+            len(row["name"]),
+        )
+
+    return max(rows, key=rank)
+
+
+def mark_gift_and_duplicate_meta(rows: list[dict]) -> None:
+    by_core: dict[str, list[dict]] = defaultdict(list)
+    for row in rows:
+        by_core[core_name_key(row["name"])].append(row)
+    for group in by_core.values():
+        primary = pick_primary(group)
+        for row in group:
+            if is_gift_sku(row["name"]):
+                row["status"] = "META"
+            elif row is not primary and len(group) > 1:
+                row["status"] = "META"
+            elif row is primary and row.get("url") and not is_gift_sku(row["name"]):
+                # Shop SKU is the sipping row; seed META must not hide it.
+                row["status"] = ""
 
 
 def enrich_row(item: dict, seed: dict | None) -> dict:
@@ -113,7 +162,11 @@ def enrich_row(item: dict, seed: dict | None) -> dict:
         "note": note,
         "pairable": is_pairable(name, style, quality),
         "seed": seed is not None,
-        "status": (seed or {}).get("status") or ("META" if seed and seed.get("meta") else ""),
+        "status": (
+            (seed or {}).get("status")
+            or ("META" if seed and seed.get("meta") else "")
+            or ("META" if is_gift_sku(name) else "")
+        ),
     }
 
 
@@ -147,22 +200,26 @@ def select_master(all_rows: list[dict], seeds: dict[str, dict]) -> list[dict]:
     master: list[dict] = []
     seen: set[str] = set()
 
+    def add_row(row: dict) -> None:
+        if len(master) >= MASTER_CAP:
+            return
+        key = row["name"][:60]
+        if key in seen:
+            return
+        seen.add(key)
+        master.append(row)
+
+    # Seeds first, then the rest of the pairable listing (not only quality ≥ 6.8).
     for row in all_rows:
         if row["seed"] or any(token_overlap(row["name"], sn) >= 3 for sn in seed_names):
-            key = row["name"][:60]
-            if key not in seen and row["pairable"]:
-                seen.add(key)
-                master.append(row)
+            if row["pairable"]:
+                add_row(row)
 
     for row in all_rows:
-        if len(master) >= MASTER_CAP:
-            break
-        if row["quality"] >= 6.8 and row["pairable"]:
-            key = row["name"][:60]
-            if key not in seen:
-                seen.add(key)
-                master.append(row)
+        if row["pairable"]:
+            add_row(row)
 
+    mark_gift_and_duplicate_meta(master)
     master.sort(key=lambda r: (-r["quality"], r["name"]))
     return master
 

@@ -21,6 +21,7 @@ const DATA_FILES = [
   "digestifs.json",
   "eveningArchetypes.json",
   "gins.json",
+  "giftQuestions.json",
   "hrGuide.json",
   "lexicon.json",
   "rums.json",
@@ -78,6 +79,7 @@ function croatianStrings(): { where: string; text: string }[] {
     "lib/geo.ts",
     "lib/shareCard.ts",
     "lib/shoppingPicks.ts",
+    "lib/giftFinder.ts",
     "lib/vitolaInfo.ts",
   ];
   // `hr: "…"` i `labelHr: "…"` — oba se prikazuju korisniku

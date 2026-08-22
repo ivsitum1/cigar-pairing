@@ -3,6 +3,8 @@ import { useSyncExternalStore } from "react";
 
 export type Page = "pairing" | "catalog" | "collection" | "shopping" | "club";
 export type ClubView = "101" | "bonton" | "lexicon" | "dictionary" | "hr-guide" | "archetypes";
+/** Kupnja: lista želja ili vođeni poklon (#/shopping/gift). */
+export type ShoppingView = "shopping" | "gift";
 /** Kolekcija: Humidor (zaliha+boce) | shortlist | kalendar dnevnika. */
 export type CollectionView = "collection" | "humidor" | "calendar";
 
@@ -20,6 +22,7 @@ export type CatalogFocus =
 export interface Route {
   page: Page;
   collection?: CollectionView;
+  shopping?: ShoppingView;
   pair?: { kind: "cigar" | "drink"; id: string };
   club?: ClubView;
   catalog?: CatalogFocus;
@@ -60,6 +63,9 @@ export function parseHash(hash: string): Route {
     // #/collection bez podputa → Humidor (zaliha je prvi tab)
     return { page, collection: "humidor" };
   }
+  if (page === "shopping" && parts[1] === "gift") {
+    return { page, shopping: "gift" };
+  }
   if (page === "catalog" && parts[1] === "brand" && parts[2]) {
     return {
       page,
@@ -94,6 +100,9 @@ export function parseHash(hash: string): Route {
 export function routeToHash(r: Route): string {
   if (r.page === "club" && r.club) {
     return `#/${r.page}/${r.club}`;
+  }
+  if (r.page === "shopping" && r.shopping === "gift") {
+    return "#/shopping/gift";
   }
   if (r.page === "collection") {
     const view = r.collection ?? "humidor";

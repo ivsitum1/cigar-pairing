@@ -960,10 +960,10 @@
     "via": "wc-store-api:attributes"
   },
   "cig-oliva-serie-g::Special G": {
-    "ring": 49,
+    "ring": 48,
     "lmm": 95,
-    "source": "https://havana-cigar-shop.com/proizvod/oliva-serie-g-special-g-25/",
-    "via": "wc-store-api:attributes"
+    "source": "https://www.neptunecigar.com/cigars/oliva-serie-g-special-g",
+    "via": "manufacturer/Neptune 3.75x48 Perfecto (Havana WC API wrongly said ring 49)"
   },
   "cig-oliva-oliva-serie-v::V No.4": {
     "ring": 43,

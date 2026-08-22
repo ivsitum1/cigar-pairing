@@ -21,6 +21,15 @@ describe("Tobacco Petica (Branimir centar)", () => {
     expect(shop?.region).toBe("HR");
     expect(shop?.walkIn).toBe(true);
     expect(shop?.productHost).toBeUndefined();
+    expect(shop?.note.hr).toMatch(/Havana/);
+  });
+
+  it("Oliva Serie G Special G je ondje (Havana cijena, djelomična ponuda)", () => {
+    const g = byId("cig-oliva-serie-g");
+    expect(g.availabilityHR).toContain(TOBACCO_PETICA);
+    expect(g.availabilityHR).toContain("Havana Cigar Shop");
+    const special = g.vitolas.find((v) => v.name === "Special G");
+    expect(special?.priceEUR).toBe(7.05);
   });
 
   it("CAO Bones, Don Tomas Bundle i Clásico su ondje dostupni", () => {
@@ -58,9 +67,59 @@ describe("Tobacco Petica (Branimir centar)", () => {
       "cig-don-tomas-bundle",
       "cig-don-tomas-clasico",
       "cig-la-estrella-polar",
+      "cig-oliva-serie-g",
     ]) {
       const shops = cigarShopLinks(byId(id)).map((l) => l.shop);
       expect(shops, id).not.toContain(TOBACCO_PETICA);
+    }
+  });
+});
+
+describe("availabilityHR imena", () => {
+  // Ista trgovina znala je stajati pod dva imena ("Havana Shop" na 291 cigari,
+  // "Havana Cigar Shop" na 7). Ime iz availabilityHR ide u prikaz i u poklon
+  // („Trgovina: …"), pa mora doslovno odgovarati registru iz shops.ts.
+  it("svako ime je registrirana HR trgovina", () => {
+    const known = new Set(SHOPS.filter((s) => s.region === "HR").map((s) => s.name));
+    const seen = new Set<string>();
+    for (const c of cigars) for (const name of c.availabilityHR) seen.add(name);
+    expect(seen.size).toBeGreaterThan(0);
+    expect([...seen].filter((n) => !known.has(n))).toEqual([]);
+  });
+
+  it("Havana Cigar Shop je jedini oblik tog imena", () => {
+    const raw = JSON.stringify(cigars);
+    expect(raw).not.toContain("Havana Shop");
+    const havana = cigars.filter((c) => c.availabilityHR.includes("Havana Cigar Shop"));
+    expect(havana.length).toBeGreaterThan(250);
+  });
+
+  it("nijedna cigara ne navodi istu trgovinu dvaput", () => {
+    for (const c of cigars) {
+      expect(new Set(c.availabilityHR).size, c.id).toBe(c.availabilityHR.length);
+    }
+  });
+});
+
+describe("Aficionado (Zagreb)", () => {
+  it("registriran je kao HR trgovina bez web kataloga", () => {
+    const shop = SHOPS.find((s) => s.id === "aficionado-zg");
+    expect(shop).toBeDefined();
+    expect(shop?.name).toBe("Aficionado");
+    expect(shop?.region).toBe("HR");
+    expect(shop?.walkIn).toBe(true);
+    expect(shop?.productHost).toBeUndefined();
+    expect(shop?.home).toBe("https://www.aficionado.hr/");
+    // bez kataloga nema smislene pretrage po proizvodu — oba vode na naslovnicu
+    expect(shop?.search("cohiba")).toBe(shop?.home);
+  });
+
+  it("ne dodaje link po proizvodu nijednoj HR cigari", () => {
+    const hr = cigars.filter((c) => c.markets.includes("HR")).slice(0, 40);
+    expect(hr.length).toBeGreaterThan(0);
+    for (const c of hr) {
+      const urls = cigarShopLinks(c).map((l) => l.url);
+      expect(urls.some((u) => u.includes("aficionado.hr")), c.id).toBe(false);
     }
   });
 });

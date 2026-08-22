@@ -43,10 +43,23 @@ def scrape_allez_page(html: str) -> list[dict]:
         if not href.startswith("http"):
             href = "https://allez.hr" + href
         name = alt_m.group(1).strip()
-        price_m = re.search(r"([\d]{1,4}[.,][\d]{2})\s*€", part[:1500])
+        # Product-action SVGs sit between image and price; the old 1500-char
+        # window never reached class="product-price".
+        price_m = re.search(
+            r'class="product-price"[^>]*>\s*([\d]{1,4}[.,][\d]{2})\s*€',
+            part,
+        )
+        if not price_m:
+            price_m = re.search(r"([\d]{1,4}[.,][\d]{2})\s*€", part[:8000])
         price = None
         if price_m:
             price = float(price_m.group(1).replace(",", "."))
+        img_m = re.search(r'<img[^>]+src="([^"]+)"', part)
+        image = img_m.group(1) if img_m else None
+        if image and image.startswith("//"):
+            image = "https:" + image
+        elif image and image.startswith("/"):
+            image = "https://allez.hr" + image
         items.append(
             {
                 "name": name,
@@ -54,6 +67,7 @@ def scrape_allez_page(html: str) -> list[dict]:
                 "shop": "allez.hr",
                 "url": href,
                 "source": "allez",
+                "image": image,
             }
         )
     return items
