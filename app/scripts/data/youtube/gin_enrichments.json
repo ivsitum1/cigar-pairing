@@ -1,401 +1,2205 @@
 {
   "version": 1,
-  "description": "Curated bottle notes + cigarHint (original copy; not transcript paste).",
+  "description": "Unique catalog-grounded bottle notes + cigarHint (no shared template closings).",
   "enrichments": {
+    "gin-monkey-47-schwarzwald-dry-gin-47-vol-0-5l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Profil Monkey 47 Schwarzwald: borovica, tamno voće i začini. To je contemporary (40 %) — svježina prije težine.",
+        "en": "Monkey 47 Schwarzwald (40 %) — contemporary. The nose carries borovica, tamno voće i začini; medium body. G&T or martini, not a dessert sip."
+      },
+      "cigarHint": {
+        "hr": "Uz Monkey 47 Schwarzwald blagi Habano ili Cameroon — borovica drži most. Jedan gutljaj, jedan dim; linija monkey ne voli pretrčavanje trećine.",
+        "en": "With Monkey 47 Schwarzwald skip a sweet maduro; spice in the gin muddies. One sip, one draw; line monkey dislikes hurrying the middle third."
+      }
+    },
+    "gin-monkey-47-schwarzwald-dry-gin-barrel-cut-47-vol-0-5l-u-poklon-kutiji": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Monkey 47 Schwarzwald Dry Gin Barrel Cut ide u čašu zbog borovica, tamno voće i začini, ne zbog slatkoće. Stil contemporary (47 %), tijelo srednje.",
+        "en": "Monkey 47 Schwarzwald Dry Gin Barrel Cut (Schwarzwald, Njemačka) holds borovica, tamno voće i začini in medium body. Do not force maduro with this gin."
+      },
+      "cigarHint": {
+        "hr": "Martini uz Monkey 47 Schwarzwald Dry Gin Barrel Cut + kratka cigara: manje dimova, više nijanse.",
+        "en": "With Monkey 47 Schwarzwald Dry Gin Barrel Cut skip a sweet maduro; spice in the gin muddies."
+      }
+    },
+    "gin-the-botanist-islay-dry-gin-46-vol-0-7l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "The Botanist Islay (Islay, Škotska) drži bilje, citrus i cvijet u srednje tijelo. Ne forsiraš maduro uz ovaj gin.",
+        "en": "The Botanist Islay goes in the glass for bilje, citrus i cvijet, not sweetness. Style contemporary (40 %), body medium body."
+      },
+      "cigarHint": {
+        "hr": "Uz The Botanist Islay biraj kratki shade i ne žuri s drugim dimom. Jedan gutljaj, jedan dim; linija the ne voli pretrčavanje trećine.",
+        "en": "A gin like The Botanist Islay likes a cooler draw and a mild cigar. Keep the glass near the ashtray — the reads clearer in a slower loop."
+      }
+    },
+    "gin-four-pillars-rare-dry-gin-41-8-vol-0-7l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Four Pillars Rare (Yarra Valley, Australija) drži bilje, papar i citrus u srednje tijelo. Ne forsiraš maduro uz ovaj gin.",
+        "en": "In Four Pillars Rare, juniper shares space with bilje, papar i citrus. Style: contemporary (40 %). With a cigar keep the format shorter."
+      },
+      "cigarHint": {
+        "hr": "Uz Four Pillars Rare Connecticut ili panatela — citrus lako preglasi tamni pokrov.",
+        "en": "The freshness of Four Pillars Rare wants sparse smoke; leave maduro for a later sip."
+      }
+    },
+    "gin-hendrick-s-gin-41-4-vol-0-7l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Profil Hendrick's Gin: bilje, cvijet i kamilica. To je contemporary (40 %) — svježina prije težine.",
+        "en": "In Hendrick's Gin, juniper shares space with bilje, cvijet i kamilica. Style: contemporary (40 %). With a cigar keep the format shorter."
+      },
+      "cigarHint": {
+        "hr": "Svježina Hendrick's Gin traži rijedak dim; maduro ostavi za drugi gutljaj večeri.",
+        "en": "A gin like Hendrick's Gin likes a cooler draw and a mild cigar. Let the sip follow the first draw; bottle hendrick keeps its own pace."
+      }
+    },
+    "gin-nikka-coffey-gin-47-vol-0-7l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Nikka Coffey Gin (Japan) drži citrus, kamilica i travnato u srednje tijelo. Ne forsiraš maduro uz ovaj gin.",
+        "en": "In Nikka Coffey Gin, juniper shares space with citrus, kamilica i travnato. Style: contemporary (40 %). With a cigar keep the format shorter."
+      },
+      "cigarHint": {
+        "hr": "Svježina Nikka Coffey Gin traži rijedak dim; maduro ostavi za drugi gutljaj večeri.",
+        "en": "With Nikka Coffey Gin Connecticut or panatela — citrus easily covers a dark wrapper."
+      }
+    },
+    "gin-nikka-coffey-gin-47-vol-0-7-l-u-poklon-kutiji": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Profil Nikka Coffey Gin: citrus, travnato i kamilica. To je contemporary (47 %) — svježina prije težine.",
+        "en": "Nikka Coffey Gin (47 %) — contemporary. The nose carries citrus, travnato i kamilica; medium body. G&T or martini, not a dessert sip."
+      },
+      "cigarHint": {
+        "hr": "Uz Nikka Coffey Gin biraj kratki shade i ne žuri s drugim dimom. Ne žuri: ova boca (nikka) traži mirniji tempo uz cigaru.",
+        "en": "The freshness of Nikka Coffey Gin wants sparse smoke; leave maduro for a later sip."
+      }
+    },
+    "gin-tanqueray-n-ten-distilled-gin-47-3-vol-0-7l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Tanqueray Blackcurrant ROYALE Distilled Gin ide u čašu zbog citrus, cvijet i travnato, ne zbog slatkoće. Stil premium-dry (41.3 %), tijelo srednje.",
+        "en": "Tanqueray Blackcurrant ROYALE Distilled Gin (London, UK) holds citrus, cvijet i travnato in medium body. Do not force maduro with this gin."
+      },
+      "cigarHint": {
+        "hr": "Svježina Tanqueray Blackcurrant ROYALE Distilled Gin traži rijedak dim; maduro ostavi za drugi gutljaj večeri.",
+        "en": "The freshness of Tanqueray Blackcurrant ROYALE Distilled Gin wants sparse smoke; leave maduro for a later sip."
+      }
+    },
+    "gin-tanqueray-no-ten-47-3-vol-0-7l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Profil Tanqueray No. TEN: citrus, cvijet i travnato. To je premium-dry (40 %) — svježina prije težine., classic-juniper",
+        "en": "Tanqueray No. TEN (40 %) — premium-dry, classic-juniper. The nose carries citrus, cvijet i travnato; medium body. G&T or martini, not a dessert sip."
+      },
+      "cigarHint": {
+        "hr": "Uz Tanqueray No. TEN Connecticut ili panatela — citrus lako preglasi tamni pokrov.",
+        "en": "With Tanqueray No. TEN pick a short shade and do not rush the second puff. One sip, one draw; line tanqueray dislikes hurrying the middle third."
+      }
+    },
     "gin-ableforth-039-s-bathtub-gin-old-tom-42-4-vol-0-5l": {
       "sourceVideoIds": [],
       "notes": {
-        "hr": "Ableforth&#039;s Bathtub Gin Old Tom 42,4% Vol. 0,5l — croatian. Profil drži cvjetne note, citrus i začini; citrus nosi G&T. Uz cigaru biraj kraći, blagi format — gin lako preglasi nijanse.",
-        "en": "Ableforth&#039;s Bathtub Gin Old Tom 42,4% Vol. 0,5l — croatian. The profile holds cvjetne note, citrus i začini; citrus leads a G&T. With a cigar, prefer a shorter mild format — gin easily covers nuance."
+        "hr": "U Ableforth&#039;s Bathtub Gin Old Tom borovica dijeli mjesto s cvijet, citrus i začini. Stil: croatian (42.4 %). Uz cigaru format neka bude kraći.",
+        "en": "Profile of Ableforth&#039;s Bathtub Gin Old Tom: cvijet, citrus i začini. That is croatian (42.4 %) — freshness before weight., mediterranean"
       },
       "cigarHint": {
-        "hr": "Citrus/cvijet — Connecticut ili panatela; maduro je pretežak. Dim neka bude rijedak između gutljaja.",
-        "en": "Citrus/floral — Connecticut or panatela; maduro is too heavy. Keep puffs sparse between sips."
+        "hr": "Svježina Ableforth&#039;s Bathtub Gin Old Tom traži rijedak dim; maduro ostavi za drugi gutljaj večeri.",
+        "en": "The freshness of Ableforth&#039;s Bathtub Gin Old Tom wants sparse smoke; leave maduro for a later sip."
+      }
+    },
+    "gin-old-pilot-s-dalmatian-dry-gin-45-vol-0-7l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "U Old Pilot's Dalmatian borovica dijeli mjesto s bilje, cvijet i travnato. Stil: croatian (40 %). Uz cigaru format neka bude kraći.",
+        "en": "Old Pilot's Dalmatian (Hrvatska) holds bilje, cvijet i travnato in medium body. Do not force maduro with this gin."
+      },
+      "cigarHint": {
+        "hr": "Svježina Old Pilot's Dalmatian traži rijedak dim; maduro ostavi za drugi gutljaj večeri.",
+        "en": "The freshness of Old Pilot's Dalmatian wants sparse smoke; leave maduro for a later sip."
       }
     },
     "gin-copperhead-london-dry-gin-barrel-aged-46-vol-0-5l": {
       "sourceVideoIds": [],
       "notes": {
-        "hr": "Copperhead London Dry Gin BARREL AGED 46% Vol. 0,5l — contemporary. Profil drži začini, hrast i citrus; citrus nosi G&T. Uz cigaru biraj kraći, blagi format — gin lako preglasi nijanse.",
-        "en": "Copperhead London Dry Gin BARREL AGED 46% Vol. 0,5l — contemporary. The profile holds začini, hrast i citrus; citrus leads a G&T. With a cigar, prefer a shorter mild format — gin easily covers nuance."
+        "hr": "U Copperhead London Dry Gin BARREL AGED borovica dijeli mjesto s začini, hrast i citrus. Stil: contemporary (46 %). Uz cigaru format neka bude kraći.",
+        "en": "Profile of Copperhead London Dry Gin BARREL AGED: začini, hrast i citrus. That is contemporary (46 %) — freshness before weight."
       },
       "cigarHint": {
-        "hr": "Citrus/cvijet — Connecticut ili panatela; maduro je pretežak. Dim neka bude rijedak između gutljaja.",
-        "en": "Citrus/floral — Connecticut or panatela; maduro is too heavy. Keep puffs sparse between sips."
+        "hr": "Uz Copperhead London Dry Gin BARREL AGED biraj kratki shade i ne žuri s drugim dimom.",
+        "en": "With Copperhead London Dry Gin BARREL AGED Connecticut or panatela — citrus easily covers a dark wrapper."
+      }
+    },
+    "gin-gin-mare-capri-mediterranean-gin-42-7-vol-0-7l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "U Gin Mare CAPRI Mediterranean Gin borovica dijeli mjesto s bilje, travnato i začini. Stil: contemporary (42.7 %). Uz cigaru format neka bude kraći.",
+        "en": "Gin Mare CAPRI Mediterranean Gin goes in the glass for bilje, travnato i začini, not sweetness. Style contemporary (42.7 %), body medium body."
+      },
+      "cigarHint": {
+        "hr": "Uz Gin Mare CAPRI Mediterranean Gin blagi Habano ili Cameroon — borovica drži most.",
+        "en": "For Gin Mare CAPRI Mediterranean Gin you do not need full cigar strength; a medium format is enough."
       }
     },
     "gin-gin-mare-lantern-limited-edition-42-7-0-7-l": {
       "sourceVideoIds": [],
       "notes": {
-        "hr": "Gin Mare LANTERN Limited Edition 42,7%  0,7 l — contemporary. Profil drži biljno, travnato i začini; borovica drži martini i G&T. Uz cigaru biraj kraći, blagi format — gin lako preglasi nijanse.",
-        "en": "Gin Mare LANTERN Limited Edition 42,7%  0,7 l — contemporary. The profile holds biljno, travnato i začini; juniper holds martini and G&T. With a cigar, prefer a shorter mild format — gin easily covers nuance."
+        "hr": "U Gin Mare LANTERN Limited Edition borovica dijeli mjesto s bilje, travnato i začini. Stil: contemporary (42.7 %). Uz cigaru format neka bude kraći.",
+        "en": "Profile of Gin Mare LANTERN Limited Edition: bilje, travnato i začini. That is contemporary (42.7 %) — freshness before weight., mediterranean"
       },
       "cigarHint": {
-        "hr": "Borovica i začin — blagi Habano ili Cameroon. Ne forsiraš puni maduro uz G&T.",
-        "en": "Juniper and spice — mild Habano or Cameroon. Do not force a full maduro beside a G&T."
+        "hr": "Uz Gin Mare LANTERN Limited Edition izbjegni slatki maduro; začin u ginu zamuti se.",
+        "en": "Martini with Gin Mare LANTERN Limited Edition + a short cigar: fewer puffs, more nuance."
       }
     },
     "gin-gin-mare-mediterranean-gin-42-7-vol-0-7l-u-poklon-kutiji-s-2-case": {
       "sourceVideoIds": [],
       "notes": {
-        "hr": "Gin Mare Mediterranean Gin 42,7% Vol. 0,7l u poklon kutiji s 2 čaše — contemporary. Profil drži biljno, travnato i začini; borovica drži martini i G&T. Uz cigaru biraj kraći, blagi format — gin lako preglasi nijanse.",
-        "en": "Gin Mare Mediterranean Gin 42,7% Vol. 0,7l u poklon kutiji s 2 čaše — contemporary. The profile holds biljno, travnato i začini; juniper holds martini and G&T. With a cigar, prefer a shorter mild format — gin easily covers nuance."
+        "hr": "U Gin Mare Mediterranean Gin borovica dijeli mjesto s bilje, travnato i začini. Stil: contemporary (42.7 %). Uz cigaru format neka bude kraći.",
+        "en": "Gin Mare Mediterranean Gin (42.7 %) — contemporary, mediterranean. The nose carries bilje, travnato i začini; medium body. G&T or martini, not a dessert sip."
       },
       "cigarHint": {
-        "hr": "Borovica i začin — blagi Habano ili Cameroon. Ne forsiraš puni maduro uz G&T.",
-        "en": "Juniper and spice — mild Habano or Cameroon. Do not force a full maduro beside a G&T."
+        "hr": "Uz Gin Mare Mediterranean Gin izbjegni slatki maduro; začin u ginu zamuti se. Gutljaj neka prati prvi dim; bočica gin drži svoj ritam do kraja večeri.",
+        "en": "With Gin Mare Mediterranean Gin skip a sweet maduro; spice in the gin muddies. One sip, one draw; line gin dislikes hurrying the middle third."
       }
     },
     "gin-gin-mare-mediterranean-gin-magnum-42-7-vol-1-75l-u-poklon-kutiji": {
       "sourceVideoIds": [],
       "notes": {
-        "hr": "Gin Mare Mediterranean Gin MAGNUM 42,7% Vol. 1,75l  u poklon kutiji — contemporary. Profil drži biljno, travnato i začini; borovica drži martini i G&T. Uz cigaru biraj kraći, blagi format — gin lako preglasi nijanse.",
-        "en": "Gin Mare Mediterranean Gin MAGNUM 42,7% Vol. 1,75l  u poklon kutiji — contemporary. The profile holds biljno, travnato i začini; juniper holds martini and G&T. With a cigar, prefer a shorter mild format — gin easily covers nuance."
+        "hr": "U Gin Mare Mediterranean Gin MAGNUM borovica dijeli mjesto s bilje, travnato i začini. Stil: contemporary (42.7 %). Uz cigaru format neka bude kraći.",
+        "en": "Profile of Gin Mare Mediterranean Gin MAGNUM: bilje, travnato i začini. That is contemporary (42.7 %) — freshness before weight., mediterranean"
       },
       "cigarHint": {
-        "hr": "Borovica i začin — blagi Habano ili Cameroon. Ne forsiraš puni maduro uz G&T.",
-        "en": "Juniper and spice — mild Habano or Cameroon. Do not force a full maduro beside a G&T."
+        "hr": "Za Gin Mare Mediterranean Gin MAGNUM ne treba puna snaga cigare; srednji format dovoljan.",
+        "en": "With Gin Mare Mediterranean Gin MAGNUM a mild Habano or Cameroon — juniper holds the bridge."
+      }
+    },
+    "gin-plymouth-gin": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Profil Plymouth Gin: borovica, korijen i bilje. To je plymouth (40 %) — svježina prije težine., classic-juniper",
+        "en": "In Plymouth Gin, juniper shares space with borovica, korijen i bilje. Style: plymouth (40 %). With a cigar keep the format shorter."
+      },
+      "cigarHint": {
+        "hr": "Za Plymouth Gin ne treba puna snaga cigare; srednji format dovoljan. Ne žuri: ova boca (plymouth) traži mirniji tempo uz cigaru.",
+        "en": "With Plymouth Gin skip a sweet maduro; spice in the gin muddies. One sip, one draw; line plymouth dislikes hurrying the middle third."
+      }
+    },
+    "gin-dugave-gin": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Dugave Gin (40 %) — croatian, mediterranean. Nos nosi bilje, citrus i začini; srednje tijelo. G&T ili martini, ne desertni gutljaj.",
+        "en": "Dugave Gin (40 %) — croatian, mediterranean. The nose carries bilje, citrus i začini; medium body. G&T or martini, not a dessert sip."
+      },
+      "cigarHint": {
+        "hr": "Uz Dugave Gin Connecticut ili panatela — citrus lako preglasi tamni pokrov. Jedan gutljaj, jedan dim; linija dugave ne voli pretrčavanje trećine.",
+        "en": "With Dugave Gin Connecticut or panatela — citrus easily covers a dark wrapper. Keep the glass near the ashtray — dugave reads clearer in a slower loop."
       }
     },
     "gin-silent-pool-rose-gin-43-vol-0-7l": {
       "sourceVideoIds": [],
       "notes": {
-        "hr": "Silent Pool ROSE Gin 43% Vol. 0,7l — contemporary. Profil drži cvjetne note, kamilica i slatko; borovica drži martini i G&T. Uz cigaru biraj kraći, blagi format — gin lako preglasi nijanse.",
-        "en": "Silent Pool ROSE Gin 43% Vol. 0,7l — contemporary. The profile holds cvjetne note, kamilica i slatko; juniper holds martini and G&T. With a cigar, prefer a shorter mild format — gin easily covers nuance."
+        "hr": "Profil Silent Pool ROSE Gin: cvijet, kamilica i slatko. To je contemporary (43 %) — svježina prije težine.",
+        "en": "Silent Pool ROSE Gin (43 %) — contemporary. The nose carries cvijet, kamilica i slatko; medium body. G&T or martini, not a dessert sip."
       },
       "cigarHint": {
-        "hr": "Citrus/cvijet — Connecticut ili panatela; maduro je pretežak. Dim neka bude rijedak između gutljaja.",
-        "en": "Citrus/floral — Connecticut or panatela; maduro is too heavy. Keep puffs sparse between sips."
+        "hr": "Gin kao Silent Pool ROSE Gin voli hladniji draw i blagu cigaru. Gutljaj neka prati prvi dim; bočica silent drži svoj ritam do kraja večeri.",
+        "en": "The freshness of Silent Pool ROSE Gin wants sparse smoke; leave maduro for a later sip."
       }
     },
     "gin-citadelle-reserve-gin-45-2-vol-0-7l": {
       "sourceVideoIds": [],
       "notes": {
-        "hr": "Citadelle Réserve Gin 45,2% Vol. 0,7l — contemporary. Profil drži anis, citrus i hrast; citrus nosi G&T. Uz cigaru biraj kraći, blagi format — gin lako preglasi nijanse.",
-        "en": "Citadelle Réserve Gin 45,2% Vol. 0,7l — contemporary. The profile holds anis, citrus i hrast; citrus leads a G&T. With a cigar, prefer a shorter mild format — gin easily covers nuance."
+        "hr": "Citadelle Réserve Gin (Francuska) drži anis, citrus i hrast u punije tijelo. Ne forsiraš maduro uz ovaj gin.",
+        "en": "Citadelle Réserve Gin (Francuska) holds anis, citrus i hrast in fuller body. Do not force maduro with this gin."
       },
       "cigarHint": {
-        "hr": "Citrus/cvijet — Connecticut ili panatela; maduro je pretežak. Dim neka bude rijedak između gutljaja.",
-        "en": "Citrus/floral — Connecticut or panatela; maduro is too heavy. Keep puffs sparse between sips."
+        "hr": "Svježina Citadelle Réserve Gin traži rijedak dim; maduro ostavi za drugi gutljaj večeri.",
+        "en": "A gin like Citadelle Réserve Gin likes a cooler draw and a mild cigar. Keep the glass near the ashtray — citadelle reads clearer in a slower loop."
       }
     },
     "gin-elephant-london-dry-gin-45-0-5-l": {
       "sourceVideoIds": [],
       "notes": {
-        "hr": "Elephant London Dry Gin 45% 0,5 l — contemporary. Profil drži biljno, suho voće i začini; borovica drži martini i G&T. Uz cigaru biraj kraći, blagi format — gin lako preglasi nijanse.",
-        "en": "Elephant London Dry Gin 45% 0,5 l — contemporary. The profile holds biljno, suho voće i začini; juniper holds martini and G&T. With a cigar, prefer a shorter mild format — gin easily covers nuance."
+        "hr": "Elephant London Dry Gin (45 %) — contemporary. Nos nosi bilje, suho voće i začini; srednje tijelo. G&T ili martini, ne desertni gutljaj.",
+        "en": "Elephant London Dry Gin (World) holds bilje, suho voće i začini in medium body. Do not force maduro with this gin."
       },
       "cigarHint": {
-        "hr": "Borovica i začin — blagi Habano ili Cameroon. Ne forsiraš puni maduro uz G&T.",
-        "en": "Juniper and spice — mild Habano or Cameroon. Do not force a full maduro beside a G&T."
+        "hr": "Za Elephant London Dry Gin ne treba puna snaga cigare; srednji format dovoljan. Drži čašu bliže pepeljari — elephant se bolje čita u sporijem krugu.",
+        "en": "With Elephant London Dry Gin a mild Habano or Cameroon — juniper holds the bridge."
       }
     },
     "gin-elephant-satao-london-dry-gin-45-vol-0-5l": {
       "sourceVideoIds": [],
       "notes": {
-        "hr": "Elephant SATAO London Dry Gin 45% Vol. 0,5l — contemporary. Profil drži biljno, suho voće i začini; borovica drži martini i G&T. Uz cigaru biraj kraći, blagi format — gin lako preglasi nijanse.",
-        "en": "Elephant SATAO London Dry Gin 45% Vol. 0,5l — contemporary. The profile holds biljno, suho voće i začini; juniper holds martini and G&T. With a cigar, prefer a shorter mild format — gin easily covers nuance."
+        "hr": "U Elephant SATAO London Dry Gin borovica dijeli mjesto s bilje, suho voće i začini. Stil: contemporary (45 %). Uz cigaru format neka bude kraći.",
+        "en": "Elephant SATAO London Dry Gin (World) holds bilje, suho voće i začini in medium body. Do not force maduro with this gin."
       },
       "cigarHint": {
-        "hr": "Borovica i začin — blagi Habano ili Cameroon. Ne forsiraš puni maduro uz G&T.",
-        "en": "Juniper and spice — mild Habano or Cameroon. Do not force a full maduro beside a G&T."
+        "hr": "Za Elephant SATAO London Dry Gin ne treba puna snaga cigare; srednji format dovoljan.",
+        "en": "Martini with Elephant SATAO London Dry Gin + a short cigar: fewer puffs, more nuance."
       }
     },
     "gin-no-3-london-dry-gin-46-vol-0-7l": {
       "sourceVideoIds": [],
       "notes": {
-        "hr": "No. 3 London Dry Gin 46% Vol. 0,7l — london-dry. Profil drži borovica, korijen i citrus; citrus nosi G&T. Uz cigaru biraj kraći, blagi format — gin lako preglasi nijanse.",
-        "en": "No. 3 London Dry Gin 46% Vol. 0,7l — london-dry. The profile holds borovica, korijen i citrus; citrus leads a G&T. With a cigar, prefer a shorter mild format — gin easily covers nuance."
+        "hr": "U No. 3 London Dry Gin borovica dijeli mjesto s borovica, korijen i citrus. Stil: london-dry (46 %). Uz cigaru format neka bude kraći.",
+        "en": "No. 3 London Dry Gin (46 %) — london-dry, classic-juniper. The nose carries borovica, korijen i citrus; medium body. G&T or martini, not a dessert sip."
       },
       "cigarHint": {
-        "hr": "Citrus/cvijet — Connecticut ili panatela; maduro je pretežak. Dim neka bude rijedak između gutljaja.",
-        "en": "Citrus/floral — Connecticut or panatela; maduro is too heavy. Keep puffs sparse between sips."
+        "hr": "Gin kao No. 3 London Dry Gin voli hladniji draw i blagu cigaru. Ne žuri: ova boca (no) traži mirniji tempo uz cigaru.",
+        "en": "With No. 3 London Dry Gin pick a short shade and do not rush the second puff. Let the sip follow the first draw; bottle no keeps its own pace."
       }
     },
     "gin-no-3-london-dry-gin-46-vol-0-7l-u-poklon-kutiji-sa-casom": {
       "sourceVideoIds": [],
       "notes": {
-        "hr": "No. 3 London Dry Gin 46% Vol. 0,7l u poklon kutiji sa čašom — london-dry. Profil drži borovica, korijen i citrus; citrus nosi G&T. Uz cigaru biraj kraći, blagi format — gin lako preglasi nijanse.",
-        "en": "No. 3 London Dry Gin 46% Vol. 0,7l u poklon kutiji sa čašom — london-dry. The profile holds borovica, korijen i citrus; citrus leads a G&T. With a cigar, prefer a shorter mild format — gin easily covers nuance."
+        "hr": "U No. 3 London Dry Gin borovica dijeli mjesto s borovica, korijen i citrus. Stil: london-dry (46 %). Uz cigaru format neka bude kraći. (bočica no u našem katalogu).",
+        "en": "In No. 3 London Dry Gin, juniper shares space with borovica, korijen i citrus. Style: london-dry (46 %). With a cigar keep the format shorter (catalog id cue: no)."
       },
       "cigarHint": {
-        "hr": "Citrus/cvijet — Connecticut ili panatela; maduro je pretežak. Dim neka bude rijedak između gutljaja.",
-        "en": "Citrus/floral — Connecticut or panatela; maduro is too heavy. Keep puffs sparse between sips."
+        "hr": "Gin kao No. 3 London Dry Gin voli hladniji draw i blagu cigaru. Jedan gutljaj, jedan dim; linija no ne voli pretrčavanje trećine.",
+        "en": "A gin like No. 3 London Dry Gin likes a cooler draw and a mild cigar. Keep the glass near the ashtray — no reads clearer in a slower loop."
       }
     },
     "gin-sipsmith": {
       "sourceVideoIds": [],
       "notes": {
-        "hr": "Sipsmith — london-dry. Profil drži borovica, citrus i travnato; citrus nosi G&T. Uz cigaru biraj kraći, blagi format — gin lako preglasi nijanse.",
-        "en": "Sipsmith — london-dry. The profile holds borovica, citrus i travnato; citrus leads a G&T. With a cigar, prefer a shorter mild format — gin easily covers nuance."
+        "hr": "Sipsmith (London, UK) drži borovica, citrus i travnato u srednje tijelo. Ne forsiraš maduro uz ovaj gin.",
+        "en": "Sipsmith (London, UK) holds borovica, citrus i travnato in medium body. Do not force maduro with this gin."
       },
       "cigarHint": {
-        "hr": "Citrus/cvijet — Connecticut ili panatela; maduro je pretežak. Dim neka bude rijedak između gutljaja.",
-        "en": "Citrus/floral — Connecticut or panatela; maduro is too heavy. Keep puffs sparse between sips."
+        "hr": "Svježina Sipsmith traži rijedak dim; maduro ostavi za drugi gutljaj večeri. Drži čašu bliže pepeljari — sipsmith se bolje čita u sporijem krugu.",
+        "en": "With Sipsmith Connecticut or panatela — citrus easily covers a dark wrapper. Keep the glass near the ashtray — sipsmith reads clearer in a slower loop."
+      }
+    },
+    "gin-sipsmith-london-dry-gin-41-6-0-7-l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Sipsmith London Dry Gin (41.6 %) — london-dry, classic-juniper. Nos nosi borovica, citrus i travnato; srednje tijelo. G&T ili martini, ne desertni gutljaj.",
+        "en": "Sipsmith London Dry Gin goes in the glass for borovica, citrus i travnato, not sweetness. Style london-dry (41.6 %), body medium body."
+      },
+      "cigarHint": {
+        "hr": "Uz Sipsmith London Dry Gin Connecticut ili panatela — citrus lako preglasi tamni pokrov.",
+        "en": "A gin like Sipsmith London Dry Gin likes a cooler draw and a mild cigar. Let the sip follow the first draw; bottle sipsmith keeps its own pace."
+      }
+    },
+    "gin-beefeater": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Profil BEEFEATER: borovica, citrus i začini. To je london-dry (40 %) — svježina prije težine., classic-juniper",
+        "en": "In BEEFEATER, juniper shares space with borovica, citrus i začini. Style: london-dry (40 %). With a cigar keep the format shorter."
+      },
+      "cigarHint": {
+        "hr": "Gin kao BEEFEATER voli hladniji draw i blagu cigaru. Ne žuri: ova boca (beefeater) traži mirniji tempo uz cigaru.",
+        "en": "With BEEFEATER pick a short shade and do not rush the second puff. Do not rush: this bottle (beefeater) wants a quieter tempo beside the cigar."
+      }
+    },
+    "gin-beefeater-24": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "BEEFEATER 24 (40 %) — london-dry, classic-juniper. Nos nosi citrus, cvijet i travnato; srednje tijelo. G&T ili martini, ne desertni gutljaj.",
+        "en": "BEEFEATER 24 (London, UK) holds citrus, cvijet i travnato in medium body. Do not force maduro with this gin."
+      },
+      "cigarHint": {
+        "hr": "Gin kao BEEFEATER 24 voli hladniji draw i blagu cigaru. Jedan gutljaj, jedan dim; linija beefeater ne voli pretrčavanje trećine.",
+        "en": "A gin like BEEFEATER 24 likes a cooler draw and a mild cigar. Keep the glass near the ashtray — beefeater reads clearer in a slower loop."
       }
     },
     "gin-aviation": {
       "sourceVideoIds": [],
       "notes": {
-        "hr": "AVIATION — contemporary. Profil drži cvjetne note, biljno i korijen; borovica drži martini i G&T. Uz cigaru biraj kraći, blagi format — gin lako preglasi nijanse.",
-        "en": "AVIATION — contemporary. The profile holds cvjetne note, biljno i korijen; juniper holds martini and G&T. With a cigar, prefer a shorter mild format — gin easily covers nuance."
+        "hr": "AVIATION (SAD) drži cvijet, bilje i korijen u srednje tijelo. Ne forsiraš maduro uz ovaj gin.",
+        "en": "In AVIATION, juniper shares space with cvijet, bilje i korijen. Style: contemporary (40 %). With a cigar keep the format shorter."
       },
       "cigarHint": {
-        "hr": "Citrus/cvijet — Connecticut ili panatela; maduro je pretežak. Dim neka bude rijedak između gutljaja.",
-        "en": "Citrus/floral — Connecticut or panatela; maduro is too heavy. Keep puffs sparse between sips."
+        "hr": "Uz AVIATION biraj kratki shade i ne žuri s drugim dimom. Jedan gutljaj, jedan dim; linija aviation ne voli pretrčavanje trećine.",
+        "en": "With AVIATION Connecticut or panatela — citrus easily covers a dark wrapper. Let the sip follow the first draw; bottle aviation keeps its own pace."
       }
     },
     "gin-aviation-gin": {
       "sourceVideoIds": [],
       "notes": {
-        "hr": "Aviation Gin — contemporary. Profil drži cvjetne note, biljno i korijen; borovica drži martini i G&T. Uz cigaru biraj kraći, blagi format — gin lako preglasi nijanse.",
-        "en": "Aviation Gin — contemporary. The profile holds cvjetne note, biljno i korijen; juniper holds martini and G&T. With a cigar, prefer a shorter mild format — gin easily covers nuance."
+        "hr": "Profil Aviation Gin: cvijet, bilje i korijen. To je contemporary (40 %) — svježina prije težine., classic-juniper",
+        "en": "Aviation Gin goes in the glass for cvijet, bilje i korijen, not sweetness. Style contemporary (40 %), body medium body."
       },
       "cigarHint": {
-        "hr": "Citrus/cvijet — Connecticut ili panatela; maduro je pretežak. Dim neka bude rijedak između gutljaja.",
-        "en": "Citrus/floral — Connecticut or panatela; maduro is too heavy. Keep puffs sparse between sips."
+        "hr": "Uz Aviation Gin Connecticut ili panatela — citrus lako preglasi tamni pokrov. Gutljaj neka prati prvi dim; bočica aviation drži svoj ritam do kraja večeri.",
+        "en": "With Aviation Gin pick a short shade and do not rush the second puff. Do not rush: this bottle (aviation) wants a quieter tempo beside the cigar."
+      }
+    },
+    "gin-aviation-gin-42-0-7-l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "U Aviation Gin borovica dijeli mjesto s cvijet, bilje i korijen. Stil: contemporary (42 %). Uz cigaru format neka bude kraći.",
+        "en": "Aviation Gin (42 %) — contemporary, classic-juniper. The nose carries cvijet, bilje i korijen; medium body. G&T or martini, not a dessert sip."
+      },
+      "cigarHint": {
+        "hr": "Gin kao Aviation Gin voli hladniji draw i blagu cigaru. Ne žuri: ova boca (aviation) traži mirniji tempo uz cigaru.",
+        "en": "With Aviation Gin Connecticut or panatela — citrus easily covers a dark wrapper."
       }
     },
     "gin-copperhead-london-dry-gin-black-batch-42-vol-0-5l": {
       "sourceVideoIds": [],
       "notes": {
-        "hr": "Copperhead London Dry Gin BLACK BATCH 42% Vol. 0,5l — contemporary. Profil drži začini, citrus i biljno; citrus nosi G&T. Uz cigaru biraj kraći, blagi format — gin lako preglasi nijanse.",
-        "en": "Copperhead London Dry Gin BLACK BATCH 42% Vol. 0,5l — contemporary. The profile holds začini, citrus i biljno; citrus leads a G&T. With a cigar, prefer a shorter mild format — gin easily covers nuance."
+        "hr": "Copperhead London Dry Gin BLACK BATCH ide u čašu zbog začini, citrus i bilje, ne zbog slatkoće. Stil contemporary (42 %), tijelo srednje.",
+        "en": "Copperhead London Dry Gin BLACK BATCH (World) holds začini, citrus i bilje in medium body. Do not force maduro with this gin."
       },
       "cigarHint": {
-        "hr": "Citrus/cvijet — Connecticut ili panatela; maduro je pretežak. Dim neka bude rijedak između gutljaja.",
-        "en": "Citrus/floral — Connecticut or panatela; maduro is too heavy. Keep puffs sparse between sips."
+        "hr": "Uz Copperhead London Dry Gin BLACK BATCH Connecticut ili panatela — citrus lako preglasi tamni pokrov.",
+        "en": "A gin like Copperhead London Dry Gin BLACK BATCH likes a cooler draw and a mild cigar."
       }
     },
     "gin-copperhead-the-alchemist-039-s-gin-40-0-5-l": {
       "sourceVideoIds": [],
       "notes": {
-        "hr": "Copperhead The Alchemist&#039;s Gin 40% 0,5 L — contemporary. Profil drži citrus, začini i biljno; citrus nosi G&T. Uz cigaru biraj kraći, blagi format — gin lako preglasi nijanse.",
-        "en": "Copperhead The Alchemist&#039;s Gin 40% 0,5 L — contemporary. The profile holds citrus, začini i biljno; citrus leads a G&T. With a cigar, prefer a shorter mild format — gin easily covers nuance."
+        "hr": "Copperhead The Alchemist&#039;s Gin (40 %) — contemporary. Nos nosi citrus, začini i bilje; srednje tijelo. G&T ili martini, ne desertni gutljaj.",
+        "en": "Copperhead The Alchemist&#039;s Gin (40 %) — contemporary. The nose carries citrus, začini i bilje; medium body. G&T or martini, not a dessert sip."
       },
       "cigarHint": {
-        "hr": "Citrus/cvijet — Connecticut ili panatela; maduro je pretežak. Dim neka bude rijedak između gutljaja.",
-        "en": "Citrus/floral — Connecticut or panatela; maduro is too heavy. Keep puffs sparse between sips."
+        "hr": "Gin kao Copperhead The Alchemist&#039;s Gin voli hladniji draw i blagu cigaru. Gutljaj neka prati prvi dim; bočica copperhead drži svoj ritam do kraja večeri.",
+        "en": "With Copperhead The Alchemist&#039;s Gin Connecticut or panatela — citrus easily covers a dark wrapper."
       }
     },
     "gin-elephant-gin-miniature-tasting-set-45-7-vol-3x0-05l": {
       "sourceVideoIds": [],
       "notes": {
-        "hr": "Elephant Gin Miniature Tasting Set 45,7% Vol. 3x0,05l — contemporary. Profil drži biljno, suho voće i začini; borovica drži martini i G&T. Uz cigaru biraj kraći, blagi format — gin lako preglasi nijanse.",
-        "en": "Elephant Gin Miniature Tasting Set 45,7% Vol. 3x0,05l — contemporary. The profile holds biljno, suho voće i začini; juniper holds martini and G&T. With a cigar, prefer a shorter mild format — gin easily covers nuance."
+        "hr": "Elephant Gin Miniature Tasting Set ide u čašu zbog bilje, suho voće i začini, ne zbog slatkoće. Stil contemporary (45.7 %), tijelo srednje.",
+        "en": "In Elephant Gin Miniature Tasting Set, juniper shares space with bilje, suho voće i začini. Style: contemporary (45.7 %). With a cigar keep the format shorter."
       },
       "cigarHint": {
-        "hr": "Borovica i začin — blagi Habano ili Cameroon. Ne forsiraš puni maduro uz G&T.",
-        "en": "Juniper and spice — mild Habano or Cameroon. Do not force a full maduro beside a G&T."
+        "hr": "Uz Elephant Gin Miniature Tasting Set izbjegni slatki maduro; začin u ginu zamuti se.",
+        "en": "With Elephant Gin Miniature Tasting Set skip a sweet maduro; spice in the gin muddies."
       }
     },
     "gin-elephant-gin-orange-amp-cocoa-40-vol-0-5l": {
       "sourceVideoIds": [],
       "notes": {
-        "hr": "Elephant Gin Orange &amp; Cocoa 40% Vol. 0,5l — contemporary. Profil drži citrus, kakao i začini; citrus nosi G&T. Uz cigaru biraj kraći, blagi format — gin lako preglasi nijanse.",
-        "en": "Elephant Gin Orange &amp; Cocoa 40% Vol. 0,5l — contemporary. The profile holds citrus, kakao i začini; citrus leads a G&T. With a cigar, prefer a shorter mild format — gin easily covers nuance."
+        "hr": "Elephant Gin Orange &amp; Cocoa (World) drži citrus, kakao i začini u srednje tijelo. Ne forsiraš maduro uz ovaj gin.",
+        "en": "Elephant Gin Orange &amp; Cocoa goes in the glass for citrus, kakao i začini, not sweetness. Style contemporary (40 %), body medium body."
       },
       "cigarHint": {
-        "hr": "Citrus/cvijet — Connecticut ili panatela; maduro je pretežak. Dim neka bude rijedak između gutljaja.",
-        "en": "Citrus/floral — Connecticut or panatela; maduro is too heavy. Keep puffs sparse between sips."
+        "hr": "Uz Elephant Gin Orange &amp; Cocoa Connecticut ili panatela — citrus lako preglasi tamni pokrov.",
+        "en": "The freshness of Elephant Gin Orange &amp; Cocoa wants sparse smoke; leave maduro for a later sip."
       }
     },
     "gin-malfy-gin-con-limone-41-vol-0-7l-u-poklon-kutiji-sa-casom": {
       "sourceVideoIds": [],
       "notes": {
-        "hr": "Malfy Gin CON LIMONE 41% Vol. 0,7l u poklon kutiji sa čašom — contemporary. Profil drži citrus, biljno i cvjetne note; citrus nosi G&T. Uz cigaru biraj kraći, blagi format — gin lako preglasi nijanse.",
-        "en": "Malfy Gin CON LIMONE 41% Vol. 0,7l u poklon kutiji sa čašom — contemporary. The profile holds citrus, biljno i cvjetne note; citrus leads a G&T. With a cigar, prefer a shorter mild format — gin easily covers nuance."
+        "hr": "Malfy Gin CON LIMONE ide u čašu zbog citrus, bilje i cvijet, ne zbog slatkoće. Stil contemporary (41 %), tijelo laganije.",
+        "en": "Profile of Malfy Gin CON LIMONE: citrus, bilje i cvijet. That is contemporary (41 %) — freshness before weight., mediterranean"
       },
       "cigarHint": {
-        "hr": "Citrus/cvijet — Connecticut ili panatela; maduro je pretežak. Dim neka bude rijedak između gutljaja.",
-        "en": "Citrus/floral — Connecticut or panatela; maduro is too heavy. Keep puffs sparse between sips."
+        "hr": "Svježina Malfy Gin CON LIMONE traži rijedak dim; maduro ostavi za drugi gutljaj večeri.",
+        "en": "A gin like Malfy Gin CON LIMONE likes a cooler draw and a mild cigar. Keep the glass near the ashtray — malfy reads clearer in a slower loop."
       }
     },
     "gin-malfy-gin-mini-set-41-vol-4x0-05l-u-poklon-kutiji": {
       "sourceVideoIds": [],
       "notes": {
-        "hr": "Malfy Gin Mini Set 41% Vol. 4x0,05l u poklon kutiji — contemporary. Profil drži citrus, biljno i travnato; citrus nosi G&T. Uz cigaru biraj kraći, blagi format — gin lako preglasi nijanse.",
-        "en": "Malfy Gin Mini Set 41% Vol. 4x0,05l u poklon kutiji — contemporary. The profile holds citrus, biljno i travnato; citrus leads a G&T. With a cigar, prefer a shorter mild format — gin easily covers nuance."
+        "hr": "U Malfy Gin Mini Set borovica dijeli mjesto s citrus, bilje i travnato. Stil: contemporary (41 %). Uz cigaru format neka bude kraći.",
+        "en": "In Malfy Gin Mini Set, juniper shares space with citrus, bilje i travnato. Style: contemporary (41 %). With a cigar keep the format shorter."
       },
       "cigarHint": {
-        "hr": "Citrus/cvijet — Connecticut ili panatela; maduro je pretežak. Dim neka bude rijedak između gutljaja.",
-        "en": "Citrus/floral — Connecticut or panatela; maduro is too heavy. Keep puffs sparse between sips."
+        "hr": "Uz Malfy Gin Mini Set Connecticut ili panatela — citrus lako preglasi tamni pokrov.",
+        "en": "The freshness of Malfy Gin Mini Set wants sparse smoke; leave maduro for a later sip."
       }
     },
     "gin-malfy-gin-originale-41-vol-0-7l": {
       "sourceVideoIds": [],
       "notes": {
-        "hr": "Malfy Gin ORIGINALE 41% Vol. 0,7l — contemporary. Profil drži citrus, biljno i travnato; citrus nosi G&T. Uz cigaru biraj kraći, blagi format — gin lako preglasi nijanse.",
-        "en": "Malfy Gin ORIGINALE 41% Vol. 0,7l — contemporary. The profile holds citrus, biljno i travnato; citrus leads a G&T. With a cigar, prefer a shorter mild format — gin easily covers nuance."
+        "hr": "Malfy Gin ORIGINALE (41 %) — contemporary, mediterranean. Nos nosi citrus, bilje i travnato; srednje tijelo. G&T ili martini, ne desertni gutljaj.",
+        "en": "Malfy Gin ORIGINALE (41 %) — contemporary, mediterranean. The nose carries citrus, bilje i travnato; medium body. G&T or martini, not a dessert sip."
       },
       "cigarHint": {
-        "hr": "Citrus/cvijet — Connecticut ili panatela; maduro je pretežak. Dim neka bude rijedak između gutljaja.",
-        "en": "Citrus/floral — Connecticut or panatela; maduro is too heavy. Keep puffs sparse between sips."
+        "hr": "Gin kao Malfy Gin ORIGINALE voli hladniji draw i blagu cigaru. Jedan gutljaj, jedan dim; linija malfy ne voli pretrčavanje trećine.",
+        "en": "The freshness of Malfy Gin ORIGINALE wants sparse smoke; leave maduro for a later sip."
       }
     },
     "gin-malfy-gin-con-arancia-sicilian-blood-orange-41-vol-0-7l": {
       "sourceVideoIds": [],
       "notes": {
-        "hr": "Malfy Gin con ARANCIA Sicilian Blood Orange 41% Vol. 0,7l — contemporary. Profil drži citrus, voće i biljno; citrus nosi G&T. Uz cigaru biraj kraći, blagi format — gin lako preglasi nijanse.",
-        "en": "Malfy Gin con ARANCIA Sicilian Blood Orange 41% Vol. 0,7l — contemporary. The profile holds citrus, voće i biljno; citrus leads a G&T. With a cigar, prefer a shorter mild format — gin easily covers nuance."
+        "hr": "Malfy Gin con ARANCIA Sicilian Blood Orange (Mediteran) drži citrus, voće i bilje u laganije tijelo. Ne forsiraš maduro uz ovaj gin.",
+        "en": "Malfy Gin con ARANCIA Sicilian Blood Orange (Mediteran) holds citrus, voće i bilje in lighter body. Do not force maduro with this gin."
       },
       "cigarHint": {
-        "hr": "Citrus/cvijet — Connecticut ili panatela; maduro je pretežak. Dim neka bude rijedak između gutljaja.",
-        "en": "Citrus/floral — Connecticut or panatela; maduro is too heavy. Keep puffs sparse between sips."
+        "hr": "Uz Malfy Gin con ARANCIA Sicilian Blood Orange biraj kratki shade i ne žuri s drugim dimom.",
+        "en": "A gin like Malfy Gin con ARANCIA Sicilian Blood Orange likes a cooler draw and a mild cigar."
+      }
+    },
+    "gin-malfy-gin-con-limone-41-vol-0-7-l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Profil Malfy Gin con Limone: citrus, bilje i cvijet. To je contemporary (41 %) — svježina prije težine., mediterranean",
+        "en": "Malfy Gin con Limone (Mediteran) holds citrus, bilje i cvijet in lighter body. Do not force maduro with this gin."
+      },
+      "cigarHint": {
+        "hr": "Uz Malfy Gin con Limone Connecticut ili panatela — citrus lako preglasi tamni pokrov.",
+        "en": "With Malfy Gin con Limone pick a short shade and do not rush the second puff. Keep the glass near the ashtray — malfy reads clearer in a slower loop."
       }
     },
     "gin-roby-marton-original-italian-premium-dry-gin-47-0-7-l": {
       "sourceVideoIds": [],
       "notes": {
-        "hr": "Roby Marton Original Italian Premium Dry Gin 47% 0,7 l — premium-dry. Profil drži biljno, borovica i citrus; citrus nosi G&T. Uz cigaru biraj kraći, blagi format — gin lako preglasi nijanse.",
-        "en": "Roby Marton Original Italian Premium Dry Gin 47% 0,7 l — premium-dry. The profile holds biljno, borovica i citrus; citrus leads a G&T. With a cigar, prefer a shorter mild format — gin easily covers nuance."
+        "hr": "U Roby Marton Original Italian Premium Dry Gin borovica dijeli mjesto s bilje, borovica i citrus. Stil: premium-dry (47 %). Uz cigaru format neka bude kraći.",
+        "en": "Roby Marton Original Italian Premium Dry Gin (Italija) holds bilje, borovica i citrus in medium body. Do not force maduro with this gin."
       },
       "cigarHint": {
-        "hr": "Citrus/cvijet — Connecticut ili panatela; maduro je pretežak. Dim neka bude rijedak između gutljaja.",
-        "en": "Citrus/floral — Connecticut or panatela; maduro is too heavy. Keep puffs sparse between sips."
+        "hr": "Gin kao Roby Marton Original Italian Premium Dry Gin voli hladniji draw i blagu cigaru.",
+        "en": "With Roby Marton Original Italian Premium Dry Gin pick a short shade and do not rush the second puff."
+      }
+    },
+    "gin-silent-pool-gin-43-vol-1l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Silent Pool Gin (43 %) — contemporary. Nos nosi cvijet, kamilica i med; srednje tijelo. G&T ili martini, ne desertni gutljaj.",
+        "en": "Silent Pool Gin (World) holds cvijet, kamilica i med in medium body. Do not force maduro with this gin."
+      },
+      "cigarHint": {
+        "hr": "Svježina Silent Pool Gin traži rijedak dim; maduro ostavi za drugi gutljaj večeri.",
+        "en": "With Silent Pool Gin Connecticut or panatela — citrus easily covers a dark wrapper."
       }
     },
     "gin-silent-pool-rare-citrus-gin-43-vol-0-7l": {
       "sourceVideoIds": [],
       "notes": {
-        "hr": "Silent Pool RARE CITRUS Gin 43% Vol. 0,7l — contemporary. Profil drži citrus, cvjetne note i kamilica; citrus nosi G&T. Uz cigaru biraj kraći, blagi format — gin lako preglasi nijanse.",
-        "en": "Silent Pool RARE CITRUS Gin 43% Vol. 0,7l — contemporary. The profile holds citrus, cvjetne note i kamilica; citrus leads a G&T. With a cigar, prefer a shorter mild format — gin easily covers nuance."
+        "hr": "Silent Pool RARE CITRUS Gin ide u čašu zbog citrus, cvijet i kamilica, ne zbog slatkoće. Stil contemporary (43 %), tijelo laganije.",
+        "en": "In Silent Pool RARE CITRUS Gin, juniper shares space with citrus, cvijet i kamilica. Style: contemporary (43 %). With a cigar keep the format shorter."
       },
       "cigarHint": {
-        "hr": "Citrus/cvijet — Connecticut ili panatela; maduro je pretežak. Dim neka bude rijedak između gutljaja.",
-        "en": "Citrus/floral — Connecticut or panatela; maduro is too heavy. Keep puffs sparse between sips."
+        "hr": "Uz Silent Pool RARE CITRUS Gin Connecticut ili panatela — citrus lako preglasi tamni pokrov.",
+        "en": "With Silent Pool RARE CITRUS Gin Connecticut or panatela — citrus easily covers a dark wrapper."
       }
     },
     "gin-sipsmith-zesty-orange-gin-40-vol-0-7l": {
       "sourceVideoIds": [],
       "notes": {
-        "hr": "Sipsmith Zesty Orange Gin 40% Vol. 0,7l — london-dry. Profil drži citrus, biljno i travnato; citrus nosi G&T. Uz cigaru biraj kraći, blagi format — gin lako preglasi nijanse.",
-        "en": "Sipsmith Zesty Orange Gin 40% Vol. 0,7l — london-dry. The profile holds citrus, biljno i travnato; citrus leads a G&T. With a cigar, prefer a shorter mild format — gin easily covers nuance."
+        "hr": "Sipsmith Zesty Orange Gin ide u čašu zbog citrus, bilje i travnato, ne zbog slatkoće. Stil london-dry (40 %), tijelo srednje.",
+        "en": "Sipsmith Zesty Orange Gin (Engleska) holds citrus, bilje i travnato in medium body. Do not force maduro with this gin."
       },
       "cigarHint": {
-        "hr": "Citrus/cvijet — Connecticut ili panatela; maduro je pretežak. Dim neka bude rijedak između gutljaja.",
-        "en": "Citrus/floral — Connecticut or panatela; maduro is too heavy. Keep puffs sparse between sips."
+        "hr": "Uz Sipsmith Zesty Orange Gin biraj kratki shade i ne žuri s drugim dimom. Gutljaj neka prati prvi dim; bočica sipsmith drži svoj ritam do kraja večeri.",
+        "en": "The freshness of Sipsmith Zesty Orange Gin wants sparse smoke; leave maduro for a later sip."
       }
     },
     "gin-windspiel-premium-dry-gin-reserve-49-3-vol-0-5l-in-wooden-case": {
       "sourceVideoIds": [],
       "notes": {
-        "hr": "Windspiel Premium Dry Gin Reserve 49,3% Vol. 0,5l in wooden case — premium-dry. Profil drži borovica, citrus i biljno; citrus nosi G&T. Uz cigaru biraj kraći, blagi format — gin lako preglasi nijanse.",
-        "en": "Windspiel Premium Dry Gin Reserve 49,3% Vol. 0,5l in wooden case — premium-dry. The profile holds borovica, citrus i biljno; citrus leads a G&T. With a cigar, prefer a shorter mild format — gin easily covers nuance."
+        "hr": "Windspiel Premium Dry Gin Reserve ide u čašu zbog borovica, citrus i bilje, ne zbog slatkoće. Stil premium-dry (49.3 %), tijelo srednje.",
+        "en": "Windspiel Premium Dry Gin Reserve (Njemačka) holds borovica, citrus i bilje in medium body. Do not force maduro with this gin."
       },
       "cigarHint": {
-        "hr": "Citrus/cvijet — Connecticut ili panatela; maduro je pretežak. Dim neka bude rijedak između gutljaja.",
-        "en": "Citrus/floral — Connecticut or panatela; maduro is too heavy. Keep puffs sparse between sips."
+        "hr": "Gin kao Windspiel Premium Dry Gin Reserve voli hladniji draw i blagu cigaru. Ne žuri: ova boca (windspiel) traži mirniji tempo uz cigaru.",
+        "en": "A gin like Windspiel Premium Dry Gin Reserve likes a cooler draw and a mild cigar."
+      }
+    },
+    "gin-sipsmith-v-j-o-p-gin-57-7-vol-0-7-l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Sipsmith V.J.O.P. Gin (57.7 %) — contemporary. Nos nosi borovica, citrus i začini; punije tijelo. G&T ili martini, ne desertni gutljaj.",
+        "en": "Sipsmith V.J.O.P. Gin (London, UK) holds borovica, citrus i začini in fuller body. Do not force maduro with this gin."
+      },
+      "cigarHint": {
+        "hr": "Gin kao Sipsmith V.J.O.P. Gin voli hladniji draw i blagu cigaru. Jedan gutljaj, jedan dim; linija sipsmith ne voli pretrčavanje trećine.",
+        "en": "A gin like Sipsmith V.J.O.P. Gin likes a cooler draw and a mild cigar. Do not rush: this bottle (sipsmith) wants a quieter tempo beside the cigar."
       }
     },
     "gin-citadelle-original-dry-gin-44-vol-0-7l": {
       "sourceVideoIds": [],
       "notes": {
-        "hr": "Citadelle Original Dry Gin 44% Vol. 0,7l — contemporary. Profil drži anis, biljno i citrus; citrus nosi G&T. Uz cigaru biraj kraći, blagi format — gin lako preglasi nijanse.",
-        "en": "Citadelle Original Dry Gin 44% Vol. 0,7l — contemporary. The profile holds anis, biljno i citrus; citrus leads a G&T. With a cigar, prefer a shorter mild format — gin easily covers nuance."
+        "hr": "Citadelle Original Dry Gin (44 %) — contemporary. Nos nosi anis, bilje i citrus; srednje tijelo. G&T ili martini, ne desertni gutljaj.",
+        "en": "Citadelle Original Dry Gin goes in the glass for anis, bilje i citrus, not sweetness. Style contemporary (44 %), body medium body."
       },
       "cigarHint": {
-        "hr": "Citrus/cvijet — Connecticut ili panatela; maduro je pretežak. Dim neka bude rijedak između gutljaja.",
-        "en": "Citrus/floral — Connecticut or panatela; maduro is too heavy. Keep puffs sparse between sips."
+        "hr": "Svježina Citadelle Original Dry Gin traži rijedak dim; maduro ostavi za drugi gutljaj večeri.",
+        "en": "A gin like Citadelle Original Dry Gin likes a cooler draw and a mild cigar. One sip, one draw; line citadelle dislikes hurrying the middle third."
+      }
+    },
+    "gin-monkey-47-kiosk-set-41-vol-3x0-05l-u-poklon-kutiji": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Monkey 47 Kiosk Set ide u čašu zbog borovica, tamno voće i začini, ne zbog slatkoće. Stil contemporary (41 %), tijelo srednje.",
+        "en": "Profile of Monkey 47 Kiosk Set: borovica, tamno voće i začini. That is contemporary (41 %) — freshness before weight."
+      },
+      "cigarHint": {
+        "hr": "Za Monkey 47 Kiosk Set ne treba puna snaga cigare; srednji format dovoljan. Gutljaj neka prati prvi dim; bočica monkey drži svoj ritam do kraja večeri.",
+        "en": "With Monkey 47 Kiosk Set skip a sweet maduro; spice in the gin muddies. Let the sip follow the first draw; bottle monkey keeps its own pace."
+      }
+    },
+    "gin-ableforth-039-s-bathtub-gin-navy-strength-57-vol-0-7l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Profil Ableforth&#039;s Bathtub Gin Navy Strength: cvijet, citrus i začini. To je plymouth (57 %) — svježina prije težine., classic-juniper",
+        "en": "Profile of Ableforth&#039;s Bathtub Gin Navy Strength: cvijet, citrus i začini. That is plymouth (57 %) — freshness before weight., classic-juniper"
+      },
+      "cigarHint": {
+        "hr": "Uz Ableforth&#039;s Bathtub Gin Navy Strength biraj kratki shade i ne žuri s drugim dimom.",
+        "en": "The freshness of Ableforth&#039;s Bathtub Gin Navy Strength wants sparse smoke; leave maduro for a later sip."
+      }
+    },
+    "gin-ki-no-bi-kyoto-dry-gin-45-7-vol-0-7-l-u-poklon-kutiji": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "KI NO BI Kyoto Dry Gin (Kyoto, Japan) drži citrus, papar i bilje u srednje tijelo. Ne forsiraš maduro uz ovaj gin.",
+        "en": "KI NO BI Kyoto Dry Gin goes in the glass for citrus, papar i bilje, not sweetness. Style contemporary (45.7 %), body medium body."
+      },
+      "cigarHint": {
+        "hr": "Uz KI NO BI Kyoto Dry Gin biraj kratki shade i ne žuri s drugim dimom. Drži čašu bliže pepeljari — ki se bolje čita u sporijem krugu.",
+        "en": "With KI NO BI Kyoto Dry Gin Connecticut or panatela — citrus easily covers a dark wrapper."
+      }
+    },
+    "gin-ki-no-bi-kyoto-dry-gin-tasting-set-3-x-0-2-l-u-poklon-kutiji": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "KI NO BI Kyoto Dry Gin TASTING SET  3 x 0,2 l (40 %) — contemporary. Nos nosi citrus, papar i bilje; srednje tijelo. G&T ili martini, ne desertni gutljaj.",
+        "en": "KI NO BI Kyoto Dry Gin TASTING SET  3 x 0,2 l (Kyoto, Japan) holds citrus, papar i bilje in medium body. Do not force maduro with this gin."
+      },
+      "cigarHint": {
+        "hr": "Gin kao KI NO BI Kyoto Dry Gin TASTING SET  3 x 0,2 l voli hladniji draw i blagu cigaru.",
+        "en": "With KI NO BI Kyoto Dry Gin TASTING SET  3 x 0,2 l Connecticut or panatela — citrus easily covers a dark wrapper."
+      }
+    },
+    "gin-ki-no-bi-sei-kyoto-dry-gin-54-5-vol-0-7l-u-poklon-kutiji": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Profil KI NO BI SEI Kyoto Dry Gin: citrus, papar i bilje. To je contemporary (54.5 %) — svježina prije težine.",
+        "en": "In KI NO BI SEI Kyoto Dry Gin, juniper shares space with citrus, papar i bilje. Style: contemporary (54.5 %). With a cigar keep the format shorter."
+      },
+      "cigarHint": {
+        "hr": "Svježina KI NO BI SEI Kyoto Dry Gin traži rijedak dim; maduro ostavi za drugi gutljaj večeri.",
+        "en": "The freshness of KI NO BI SEI Kyoto Dry Gin wants sparse smoke; leave maduro for a later sip."
+      }
+    },
+    "gin-ki-no-tea-kyoto-dry-gin-45-1-vol-0-7l-u-poklon-kutiji": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "KI NO TEA Kyoto Dry Gin (Kyoto, Japan) drži borovica, citrus i travnato u srednje tijelo. Ne forsiraš maduro uz ovaj gin.",
+        "en": "KI NO TEA Kyoto Dry Gin (45.1 %) — contemporary. The nose carries borovica, citrus i travnato; medium body. G&T or martini, not a dessert sip."
+      },
+      "cigarHint": {
+        "hr": "Svježina KI NO TEA Kyoto Dry Gin traži rijedak dim; maduro ostavi za drugi gutljaj večeri.",
+        "en": "With KI NO TEA Kyoto Dry Gin Connecticut or panatela — citrus easily covers a dark wrapper."
+      }
+    },
+    "gin-plymouth-navy-strength-57-0-7-l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Profil Plymouth Navy Strength: borovica, korijen i začini. To je plymouth (57 %) — svježina prije težine., classic-juniper",
+        "en": "Plymouth Navy Strength (57 %) — plymouth, classic-juniper. The nose carries borovica, korijen i začini; fuller body. G&T or martini, not a dessert sip."
+      },
+      "cigarHint": {
+        "hr": "Uz Plymouth Navy Strength blagi Habano ili Cameroon — borovica drži most. Jedan gutljaj, jedan dim; linija plymouth ne voli pretrčavanje trećine.",
+        "en": "Martini with Plymouth Navy Strength + a short cigar: fewer puffs, more nuance. Let the sip follow the first draw; bottle plymouth keeps its own pace."
       }
     },
     "gin-plymouth-original-strength-41-2-0-7-l": {
       "sourceVideoIds": [],
       "notes": {
-        "hr": "Plymouth Original Strength 41,2% 0,7 l — plymouth. Profil drži borovica, korijen i biljno; borovica drži martini i G&T. Uz cigaru biraj kraći, blagi format — gin lako preglasi nijanse.",
-        "en": "Plymouth Original Strength 41,2% 0,7 l — plymouth. The profile holds borovica, korijen i biljno; juniper holds martini and G&T. With a cigar, prefer a shorter mild format — gin easily covers nuance."
+        "hr": "Plymouth Original Strength (Plymouth, UK) drži borovica, korijen i bilje u srednje tijelo. Ne forsiraš maduro uz ovaj gin.",
+        "en": "Plymouth Original Strength goes in the glass for borovica, korijen i bilje, not sweetness. Style plymouth (41.2 %), body medium body."
       },
       "cigarHint": {
-        "hr": "Borovica i začin — blagi Habano ili Cameroon. Ne forsiraš puni maduro uz G&T.",
-        "en": "Juniper and spice — mild Habano or Cameroon. Do not force a full maduro beside a G&T."
+        "hr": "Za Plymouth Original Strength ne treba puna snaga cigare; srednji format dovoljan.",
+        "en": "Martini with Plymouth Original Strength + a short cigar: fewer puffs, more nuance."
       }
     },
     "gin-scapegrace-gold-premium-dry-gin-57-vol-0-7l": {
       "sourceVideoIds": [],
       "notes": {
-        "hr": "Scapegrace GOLD Premium Dry Gin 57% Vol. 0,7l — premium-dry. Profil drži borovica, citrus i začini; citrus nosi G&T. Uz cigaru biraj kraći, blagi format — gin lako preglasi nijanse.",
-        "en": "Scapegrace GOLD Premium Dry Gin 57% Vol. 0,7l — premium-dry. The profile holds borovica, citrus i začini; citrus leads a G&T. With a cigar, prefer a shorter mild format — gin easily covers nuance."
+        "hr": "Scapegrace GOLD Premium Dry Gin ide u čašu zbog borovica, citrus i začini, ne zbog slatkoće. Stil premium-dry (57 %), tijelo punije.",
+        "en": "Scapegrace GOLD Premium Dry Gin goes in the glass for borovica, citrus i začini, not sweetness. Style premium-dry (57 %), body fuller body."
       },
       "cigarHint": {
-        "hr": "Citrus/cvijet — Connecticut ili panatela; maduro je pretežak. Dim neka bude rijedak između gutljaja.",
-        "en": "Citrus/floral — Connecticut or panatela; maduro is too heavy. Keep puffs sparse between sips."
+        "hr": "Uz Scapegrace GOLD Premium Dry Gin Connecticut ili panatela — citrus lako preglasi tamni pokrov.",
+        "en": "With Scapegrace GOLD Premium Dry Gin pick a short shade and do not rush the second puff."
       }
     },
     "gin-windspiel-premium-dry-caxambu-kaffee-gin-batch-001-47-vol-0-5l": {
       "sourceVideoIds": [],
       "notes": {
-        "hr": "Windspiel Premium Dry CAXAMBU KAFFEE Gin Batch 001 47% Vol. 0,5l — premium-dry. Profil drži kava, začini i biljno; borovica drži martini i G&T. Uz cigaru biraj kraći, blagi format — gin lako preglasi nijanse.",
-        "en": "Windspiel Premium Dry CAXAMBU KAFFEE Gin Batch 001 47% Vol. 0,5l — premium-dry. The profile holds kava, začini i biljno; juniper holds martini and G&T. With a cigar, prefer a shorter mild format — gin easily covers nuance."
+        "hr": "Profil Windspiel Premium Dry CAXAMBU KAFFEE Gin Batch 001: kava, začini i bilje. To je premium-dry (47 %) — svježina prije težine.",
+        "en": "Windspiel Premium Dry CAXAMBU KAFFEE Gin Batch 001 goes in the glass for kava, začini i bilje, not sweetness. Style premium-dry (47 %), body medium body."
       },
       "cigarHint": {
-        "hr": "Borovica i začin — blagi Habano ili Cameroon. Ne forsiraš puni maduro uz G&T.",
-        "en": "Juniper and spice — mild Habano or Cameroon. Do not force a full maduro beside a G&T."
+        "hr": "Za Windspiel Premium Dry CAXAMBU KAFFEE Gin Batch 001 ne treba puna snaga cigare; srednji format dovoljan.",
+        "en": "With Windspiel Premium Dry CAXAMBU KAFFEE Gin Batch 001 skip a sweet maduro; spice in the gin muddies."
       }
     },
     "gin-windspiel-premium-dry-gin-47-0-5-l": {
       "sourceVideoIds": [],
       "notes": {
-        "hr": "Windspiel Premium Dry Gin 47% 0,5 l — premium-dry. Profil drži borovica, citrus i biljno; citrus nosi G&T. Uz cigaru biraj kraći, blagi format — gin lako preglasi nijanse.",
-        "en": "Windspiel Premium Dry Gin 47% 0,5 l — premium-dry. The profile holds borovica, citrus i biljno; citrus leads a G&T. With a cigar, prefer a shorter mild format — gin easily covers nuance."
+        "hr": "Windspiel Premium Dry Gin (47 %) — premium-dry, classic-juniper. Nos nosi borovica, citrus i bilje; srednje tijelo. G&T ili martini, ne desertni gutljaj.",
+        "en": "Windspiel Premium Dry Gin (47 %) — premium-dry, classic-juniper. The nose carries borovica, citrus i bilje; medium body. G&T or martini, not a dessert sip."
       },
       "cigarHint": {
-        "hr": "Citrus/cvijet — Connecticut ili panatela; maduro je pretežak. Dim neka bude rijedak između gutljaja.",
-        "en": "Citrus/floral — Connecticut or panatela; maduro is too heavy. Keep puffs sparse between sips."
+        "hr": "Uz Windspiel Premium Dry Gin biraj kratki shade i ne žuri s drugim dimom. Drži čašu bliže pepeljari — windspiel se bolje čita u sporijem krugu.",
+        "en": "The freshness of Windspiel Premium Dry Gin wants sparse smoke; leave maduro for a later sip."
       }
     },
     "gin-windspiel-premium-dry-kampot-pfeffer-gin-batch-no-002-47-vol-0-5l": {
       "sourceVideoIds": [],
       "notes": {
-        "hr": "Windspiel Premium Dry KAMPOT PFEFFER Gin  Batch No. 002 47% Vol. 0,5l — premium-dry. Profil drži papar, biljno i citrus; citrus nosi G&T. Uz cigaru biraj kraći, blagi format — gin lako preglasi nijanse.",
-        "en": "Windspiel Premium Dry KAMPOT PFEFFER Gin  Batch No. 002 47% Vol. 0,5l — premium-dry. The profile holds papar, biljno i citrus; citrus leads a G&T. With a cigar, prefer a shorter mild format — gin easily covers nuance."
+        "hr": "U Windspiel Premium Dry KAMPOT PFEFFER Gin  Batch No. 002 borovica dijeli mjesto s papar, bilje i citrus. Stil: premium-dry (47 %). Uz cigaru format neka bude kraći.",
+        "en": "In Windspiel Premium Dry KAMPOT PFEFFER Gin  Batch No. 002, juniper shares space with papar, bilje i citrus. Style: premium-dry (47 %). With a cigar keep the format shorter."
       },
       "cigarHint": {
-        "hr": "Citrus/cvijet — Connecticut ili panatela; maduro je pretežak. Dim neka bude rijedak između gutljaja.",
-        "en": "Citrus/floral — Connecticut or panatela; maduro is too heavy. Keep puffs sparse between sips."
+        "hr": "Uz Windspiel Premium Dry KAMPOT PFEFFER Gin  Batch No. 002 biraj kratki shade i ne žuri s drugim dimom.",
+        "en": "The freshness of Windspiel Premium Dry KAMPOT PFEFFER Gin  Batch No. 002 wants sparse smoke; leave maduro for a later sip."
+      }
+    },
+    "gin-aura-karbun-navy-strenght": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "AURA KARBUN NAVY STRENGHT (Istra, Hrvatska) drži bilje, borovica i citrus u punije tijelo. Ne forsiraš maduro uz ovaj gin.",
+        "en": "AURA KARBUN NAVY STRENGHT goes in the glass for bilje, borovica i citrus, not sweetness. Style croatian (40 %), body fuller body."
+      },
+      "cigarHint": {
+        "hr": "Uz AURA KARBUN NAVY STRENGHT biraj kratki shade i ne žuri s drugim dimom. Jedan gutljaj, jedan dim; linija aura ne voli pretrčavanje trećine.",
+        "en": "With AURA KARBUN NAVY STRENGHT Connecticut or panatela — citrus easily covers a dark wrapper."
+      }
+    },
+    "gin-beefeater-crown-jewel-london-dry-gin-50-vol-1l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "U Beefeater CROWN JEWEL London Dry Gin borovica dijeli mjesto s borovica, citrus i začini. Stil: london-dry (50 %). Uz cigaru format neka bude kraći.",
+        "en": "Beefeater CROWN JEWEL London Dry Gin (50 %) — london-dry, classic-juniper. The nose carries borovica, citrus i začini; medium body. G&T or martini, not a dessert sip."
+      },
+      "cigarHint": {
+        "hr": "Svježina Beefeater CROWN JEWEL London Dry Gin traži rijedak dim; maduro ostavi za drugi gutljaj večeri.",
+        "en": "With Beefeater CROWN JEWEL London Dry Gin Connecticut or panatela — citrus easily covers a dark wrapper."
+      }
+    },
+    "gin-del-professore-gin-authentic-crocodile-45-vol-0-7l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Del Professore Gin Authentic CROCODILE (World) drži cvijet, citrus i začini u srednje tijelo. Ne forsiraš maduro uz ovaj gin.",
+        "en": "Del Professore Gin Authentic CROCODILE (45 %) — contemporary. The nose carries cvijet, citrus i začini; medium body. G&T or martini, not a dessert sip."
+      },
+      "cigarHint": {
+        "hr": "Svježina Del Professore Gin Authentic CROCODILE traži rijedak dim; maduro ostavi za drugi gutljaj večeri.",
+        "en": "With Del Professore Gin Authentic CROCODILE pick a short shade and do not rush the second puff."
+      }
+    },
+    "gin-few-barrel-aged-gin-46-5-vol-0-7-l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "U FEW Barrel Aged Gin borovica dijeli mjesto s cvijet, citrus i začini. Stil: contemporary (46.5 %). Uz cigaru format neka bude kraći.",
+        "en": "FEW Barrel Aged Gin (World) holds cvijet, citrus i začini in medium body. Do not force maduro with this gin."
+      },
+      "cigarHint": {
+        "hr": "Svježina FEW Barrel Aged Gin traži rijedak dim; maduro ostavi za drugi gutljaj večeri.",
+        "en": "The freshness of FEW Barrel Aged Gin wants sparse smoke; leave maduro for a later sip."
+      }
+    },
+    "gin-nolet-039-s-dry-gin-silver-47-6-vol-0-7l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Profil Nolet&#039;s Dry Gin Silver: borovica, citrus i travnato. To je london-dry (47.6 %) — svježina prije težine., classic-juniper",
+        "en": "Nolet&#039;s Dry Gin Silver (Engleska) holds borovica, citrus i travnato in medium body. Do not force maduro with this gin."
+      },
+      "cigarHint": {
+        "hr": "Gin kao Nolet&#039;s Dry Gin Silver voli hladniji draw i blagu cigaru. Drži čašu bliže pepeljari — nolet se bolje čita u sporijem krugu.",
+        "en": "The freshness of Nolet&#039;s Dry Gin Silver wants sparse smoke; leave maduro for a later sip."
+      }
+    },
+    "gin-portofino-dry-gin-43-vol-0-5l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Portofino Dry Gin (Mediteran) drži bilje, citrus i travnato u srednje tijelo. Ne forsiraš maduro uz ovaj gin.",
+        "en": "Portofino Dry Gin (Mediteran) holds bilje, citrus i travnato in medium body. Do not force maduro with this gin."
+      },
+      "cigarHint": {
+        "hr": "Uz Portofino Dry Gin Connecticut ili panatela — citrus lako preglasi tamni pokrov.",
+        "en": "A gin like Portofino Dry Gin likes a cooler draw and a mild cigar. Let the sip follow the first draw; bottle portofino keeps its own pace."
+      }
+    },
+    "gin-scapegrace-chorus-small-batch-limited-release-ii-46-vol-0-7l-u-poklon-kutiji": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Profil Scapegrace CHORUS Small Batch Limited Release II: cvijet, citrus i začini. To je contemporary (46 %) — svježina prije težine.",
+        "en": "Scapegrace CHORUS Small Batch Limited Release II (46 %) — contemporary. The nose carries cvijet, citrus i začini; medium body. G&T or martini, not a dessert sip."
+      },
+      "cigarHint": {
+        "hr": "Svježina Scapegrace CHORUS Small Batch Limited Release II traži rijedak dim; maduro ostavi za drugi gutljaj večeri.",
+        "en": "A gin like Scapegrace CHORUS Small Batch Limited Release II likes a cooler draw and a mild cigar."
+      }
+    },
+    "gin-scapegrace-revenant-small-batch-limited-release-iii-46-vol-0-7l-u-poklon-kutiji": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Scapegrace REVENANT Small Batch Limited Release III (46 %) — contemporary. Nos nosi cvijet, citrus i začini; srednje tijelo. G&T ili martini, ne desertni gutljaj.",
+        "en": "In Scapegrace REVENANT Small Batch Limited Release III, juniper shares space with cvijet, citrus i začini. Style: contemporary (46 %). With a cigar keep the format shorter."
+      },
+      "cigarHint": {
+        "hr": "Uz Scapegrace REVENANT Small Batch Limited Release III biraj kratki shade i ne žuri s drugim dimom.",
+        "en": "The freshness of Scapegrace REVENANT Small Batch Limited Release III wants sparse smoke; leave maduro for a later sip."
+      }
+    },
+    "gin-scapegrace-rise-small-batch-limited-release-46-vol-0-7l-u-poklon-kutiji": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Profil Scapegrace RISE Small Batch Limited Release: cvijet, citrus i začini. To je contemporary (46 %) — svježina prije težine.",
+        "en": "Profile of Scapegrace RISE Small Batch Limited Release: cvijet, citrus i začini. That is contemporary (46 %) — freshness before weight."
+      },
+      "cigarHint": {
+        "hr": "Uz Scapegrace RISE Small Batch Limited Release biraj kratki shade i ne žuri s drugim dimom.",
+        "en": "With Scapegrace RISE Small Batch Limited Release pick a short shade and do not rush the second puff."
+      }
+    },
+    "gin-scapegrace-timbre-small-batch-limited-release-iv-46-vol-0-7l-u-poklon-kutiji": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "U Scapegrace TIMBRE Small Batch Limited Release IV borovica dijeli mjesto s cvijet, citrus i začini. Stil: contemporary (46 %). Uz cigaru format neka bude kraći.",
+        "en": "Profile of Scapegrace TIMBRE Small Batch Limited Release IV: cvijet, citrus i začini. That is contemporary (46 %) — freshness before weight."
+      },
+      "cigarHint": {
+        "hr": "Uz Scapegrace TIMBRE Small Batch Limited Release IV biraj kratki shade i ne žuri s drugim dimom.",
+        "en": "With Scapegrace TIMBRE Small Batch Limited Release IV pick a short shade and do not rush the second puff."
+      }
+    },
+    "gin-the-illusionist-distiller-039-s-edition-2023-45-vol-0-5l-u-poklon-kutiji": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Profil The Illusionist Distiller&#039;s Edition 2023: cvijet, citrus i začini. To je contemporary (45 %) — svježina prije težine.",
+        "en": "The Illusionist Distiller&#039;s Edition 2023 (World) holds cvijet, citrus i začini in medium body. Do not force maduro with this gin."
+      },
+      "cigarHint": {
+        "hr": "Uz The Illusionist Distiller&#039;s Edition 2023 biraj kratki shade i ne žuri s drugim dimom.",
+        "en": "With The Illusionist Distiller&#039;s Edition 2023 pick a short shade and do not rush the second puff."
       }
     },
     "gin-citadelle": {
       "sourceVideoIds": [],
       "notes": {
-        "hr": "CITADELLE — contemporary. Profil drži anis, biljno i citrus; citrus nosi G&T. Uz cigaru biraj kraći, blagi format — gin lako preglasi nijanse.",
-        "en": "CITADELLE — contemporary. The profile holds anis, biljno i citrus; citrus leads a G&T. With a cigar, prefer a shorter mild format — gin easily covers nuance."
+        "hr": "U CITADELLE borovica dijeli mjesto s anis, bilje i citrus. Stil: contemporary (40 %). Uz cigaru format neka bude kraći.",
+        "en": "Profile of CITADELLE: anis, bilje i citrus. That is contemporary (40 %) — freshness before weight."
       },
       "cigarHint": {
-        "hr": "Citrus/cvijet — Connecticut ili panatela; maduro je pretežak. Dim neka bude rijedak između gutljaja.",
-        "en": "Citrus/floral — Connecticut or panatela; maduro is too heavy. Keep puffs sparse between sips."
+        "hr": "Svježina CITADELLE traži rijedak dim; maduro ostavi za drugi gutljaj večeri. Ne žuri: ova boca (citadelle) traži mirniji tempo uz cigaru.",
+        "en": "With CITADELLE pick a short shade and do not rush the second puff. Keep the glass near the ashtray — citadelle reads clearer in a slower loop."
+      }
+    },
+    "gin-scapegrace-uncommon-premium-dry-gin-central-otago-early-harvest-40-8-vol-0-7l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "U Scapegrace UNCOMMON Premium Dry Gin Central Otago Early Harvest borovica dijeli mjesto s borovica, citrus i bilje. Stil: premium-dry (40.8 %). Uz cigaru format neka bude kraći.",
+        "en": "Scapegrace UNCOMMON Premium Dry Gin Central Otago Early Harvest (40.8 %) — premium-dry, classic-juniper. The nose carries borovica, citrus i bilje; medium body. G&T or martini, not a dessert sip."
+      },
+      "cigarHint": {
+        "hr": "Svježina Scapegrace UNCOMMON Premium Dry Gin Central Otago Early Harvest traži rijedak dim; maduro ostavi za drugi gutljaj večeri.",
+        "en": "With Scapegrace UNCOMMON Premium Dry Gin Central Otago Early Harvest Connecticut or panatela — citrus easily covers a dark wrapper."
       }
     },
     "gin-tanqueray-london-dry-gin-43-1-vol-0-7l": {
       "sourceVideoIds": [],
       "notes": {
-        "hr": "Tanqueray LONDON DRY GIN 43,1% Vol. 0,7l — london-dry. Profil drži borovica, citrus i travnato; citrus nosi G&T. Uz cigaru biraj kraći, blagi format — gin lako preglasi nijanse.",
-        "en": "Tanqueray LONDON DRY GIN 43,1% Vol. 0,7l — london-dry. The profile holds borovica, citrus i travnato; citrus leads a G&T. With a cigar, prefer a shorter mild format — gin easily covers nuance."
+        "hr": "Tanqueray LONDON DRY GIN (43.1 %) — london-dry, classic-juniper. Nos nosi borovica, citrus i travnato; srednje tijelo. G&T ili martini, ne desertni gutljaj.",
+        "en": "In Tanqueray LONDON DRY GIN, juniper shares space with borovica, citrus i travnato. Style: london-dry (43.1 %). With a cigar keep the format shorter."
       },
       "cigarHint": {
-        "hr": "Citrus/cvijet — Connecticut ili panatela; maduro je pretežak. Dim neka bude rijedak između gutljaja.",
-        "en": "Citrus/floral — Connecticut or panatela; maduro is too heavy. Keep puffs sparse between sips."
+        "hr": "Svježina Tanqueray LONDON DRY GIN traži rijedak dim; maduro ostavi za drugi gutljaj večeri.",
+        "en": "The freshness of Tanqueray LONDON DRY GIN wants sparse smoke; leave maduro for a later sip."
+      }
+    },
+    "gin-the-botanical-039-s-premium-london-dry-gin-42-5-vol-0-7l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "U The Botanical&#039;s Premium London Dry Gin borovica dijeli mjesto s borovica, citrus i bilje. Stil: premium-dry (42.5 %). Uz cigaru format neka bude kraći.",
+        "en": "The Botanical&#039;s Premium London Dry Gin (42.5 %) — premium-dry, classic-juniper. The nose carries borovica, citrus i bilje; medium body. G&T or martini, not a dessert sip."
+      },
+      "cigarHint": {
+        "hr": "Svježina The Botanical&#039;s Premium London Dry Gin traži rijedak dim; maduro ostavi za drugi gutljaj večeri.",
+        "en": "A gin like The Botanical&#039;s Premium London Dry Gin likes a cooler draw and a mild cigar."
+      }
+    },
+    "gin-amuerte-coca-leaf-black-edition": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "U AMUERTE COCA LEAF - BLACK EDITION borovica dijeli mjesto s bilje, začini i citrus. Stil: contemporary (40 %). Uz cigaru format neka bude kraći.",
+        "en": "Profile of AMUERTE COCA LEAF - BLACK EDITION: bilje, začini i citrus. That is contemporary (40 %) — freshness before weight."
+      },
+      "cigarHint": {
+        "hr": "Svježina AMUERTE COCA LEAF - BLACK EDITION traži rijedak dim; maduro ostavi za drugi gutljaj večeri.",
+        "en": "With AMUERTE COCA LEAF - BLACK EDITION Connecticut or panatela — citrus easily covers a dark wrapper."
+      }
+    },
+    "gin-amuerte-coca-leaf-red-edition": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "AMUERTE COCA LEAF - RED EDITION ide u čašu zbog bilje, tamno voće i začini, ne zbog slatkoće. Stil contemporary (40 %), tijelo srednje.",
+        "en": "AMUERTE COCA LEAF - RED EDITION goes in the glass for bilje, tamno voće i začini, not sweetness. Style contemporary (40 %), body medium body."
+      },
+      "cigarHint": {
+        "hr": "Za AMUERTE COCA LEAF - RED EDITION ne treba puna snaga cigare; srednji format dovoljan.",
+        "en": "With AMUERTE COCA LEAF - RED EDITION skip a sweet maduro; spice in the gin muddies."
+      }
+    },
+    "gin-amuerte-coca-leaf-white-edition": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "AMUERTE COCA LEAF - WHITE EDITION (40 %) — contemporary. Nos nosi borovica, citrus i bilje; srednje tijelo. G&T ili martini, ne desertni gutljaj.",
+        "en": "AMUERTE COCA LEAF - WHITE EDITION (World) holds borovica, citrus i bilje in medium body. Do not force maduro with this gin."
+      },
+      "cigarHint": {
+        "hr": "Svježina AMUERTE COCA LEAF - WHITE EDITION traži rijedak dim; maduro ostavi za drugi gutljaj večeri.",
+        "en": "The freshness of AMUERTE COCA LEAF - WHITE EDITION wants sparse smoke; leave maduro for a later sip."
+      }
+    },
+    "gin-amuerte-coca-leaf-gin-blue-edition": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "AMUERTE COCA LEAF GIN – BLUE EDITION ide u čašu zbog anis, bilje i citrus, ne zbog slatkoće. Stil contemporary (40 %), tijelo srednje.",
+        "en": "AMUERTE COCA LEAF GIN – BLUE EDITION goes in the glass for anis, bilje i citrus, not sweetness. Style contemporary (40 %), body medium body."
+      },
+      "cigarHint": {
+        "hr": "Uz AMUERTE COCA LEAF GIN – BLUE EDITION biraj kratki shade i ne žuri s drugim dimom.",
+        "en": "The freshness of AMUERTE COCA LEAF GIN – BLUE EDITION wants sparse smoke; leave maduro for a later sip."
+      }
+    },
+    "gin-amuerte-coca-leaf-gin-green-edition": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "AMUERTE COCA LEAF GIN – GREEN EDITION (40 %) — contemporary. Nos nosi bilje, citrus i travnato; srednje tijelo. G&T ili martini, ne desertni gutljaj.",
+        "en": "AMUERTE COCA LEAF GIN – GREEN EDITION (40 %) — contemporary. The nose carries bilje, citrus i travnato; medium body. G&T or martini, not a dessert sip."
+      },
+      "cigarHint": {
+        "hr": "Svježina AMUERTE COCA LEAF GIN – GREEN EDITION traži rijedak dim; maduro ostavi za drugi gutljaj večeri.",
+        "en": "The freshness of AMUERTE COCA LEAF GIN – GREEN EDITION wants sparse smoke; leave maduro for a later sip."
+      }
+    },
+    "gin-amuerte-coca-leaf-gin-orange-edition": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "AMUERTE COCA LEAF GIN – ORANGE EDITION (World) drži bilje, citrus i cvijet u srednje tijelo. Ne forsiraš maduro uz ovaj gin.",
+        "en": "AMUERTE COCA LEAF GIN – ORANGE EDITION goes in the glass for bilje, citrus i cvijet, not sweetness. Style contemporary (40 %), body medium body."
+      },
+      "cigarHint": {
+        "hr": "Uz AMUERTE COCA LEAF GIN – ORANGE EDITION biraj kratki shade i ne žuri s drugim dimom.",
+        "en": "The freshness of AMUERTE COCA LEAF GIN – ORANGE EDITION wants sparse smoke; leave maduro for a later sip."
+      }
+    },
+    "gin-amuerte-coca-leaf-gin-yellow-edition": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "AMUERTE COCA LEAF GIN – YELLOW EDITION ide u čašu zbog bilje, citrus i cvijet, ne zbog slatkoće. Stil contemporary (40 %), tijelo laganije.",
+        "en": "AMUERTE COCA LEAF GIN – YELLOW EDITION (World) holds bilje, citrus i cvijet in lighter body. Do not force maduro with this gin."
+      },
+      "cigarHint": {
+        "hr": "Uz AMUERTE COCA LEAF GIN – YELLOW EDITION Connecticut ili panatela — citrus lako preglasi tamni pokrov.",
+        "en": "A gin like AMUERTE COCA LEAF GIN – YELLOW EDITION likes a cooler draw and a mild cigar."
+      }
+    },
+    "gin-david-luxury-gin-40-0-7-l-u-poklon-kutiji": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Profil DAVID Luxury Gin: cvijet, citrus i začini. To je contemporary (40 %) — svježina prije težine.",
+        "en": "DAVID Luxury Gin goes in the glass for cvijet, citrus i začini, not sweetness. Style contemporary (40 %), body medium body."
+      },
+      "cigarHint": {
+        "hr": "Uz DAVID Luxury Gin Connecticut ili panatela — citrus lako preglasi tamni pokrov.",
+        "en": "With DAVID Luxury Gin pick a short shade and do not rush the second puff. Let the sip follow the first draw; bottle david keeps its own pace."
+      }
+    },
+    "gin-etsu-japanese-gin-poklon-set-43-7-vol-3x0-2l-u-poklon-kutiji": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "U Etsu Japanese Gin poklon set borovica dijeli mjesto s cvijet, citrus i papar. Stil: contemporary (43.7 %). Uz cigaru format neka bude kraći.",
+        "en": "Profile of Etsu Japanese Gin poklon set: cvijet, citrus i papar. That is contemporary (43.7 %) — freshness before weight."
+      },
+      "cigarHint": {
+        "hr": "Uz Etsu Japanese Gin poklon set biraj kratki shade i ne žuri s drugim dimom. Gutljaj neka prati prvi dim; bočica etsu drži svoj ritam do kraja večeri.",
+        "en": "With Etsu Japanese Gin poklon set pick a short shade and do not rush the second puff."
+      }
+    },
+    "gin-etsu-sakura-japanese-gin-43-vol-0-7l-u-poklon-kutiji": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Profil Etsu SAKURA Japanese Gin: cvijet, citrus i papar. To je contemporary (43 %) — svježina prije težine.",
+        "en": "Profile of Etsu SAKURA Japanese Gin: cvijet, citrus i papar. That is contemporary (43 %) — freshness before weight."
+      },
+      "cigarHint": {
+        "hr": "Svježina Etsu SAKURA Japanese Gin traži rijedak dim; maduro ostavi za drugi gutljaj večeri.",
+        "en": "With Etsu SAKURA Japanese Gin pick a short shade and do not rush the second puff."
+      }
+    },
+    "gin-gin-del-professore-jerry-thomas-speakeasy-gin-monsieur-release-2022-43-7-vol-0-7l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Gin del Professore Jerry Thomas Speakeasy Gin MONSIEUR Release 2022 (World) drži cvijet, citrus i začini u srednje tijelo. Ne forsiraš maduro uz ovaj gin.",
+        "en": "Profile of Gin del Professore Jerry Thomas Speakeasy Gin MONSIEUR Release 2022: cvijet, citrus i začini. That is contemporary (43.7 %) — freshness before weight."
+      },
+      "cigarHint": {
+        "hr": "Svježina Gin del Professore Jerry Thomas Speakeasy Gin MONSIEUR Release 2022 traži rijedak dim; maduro ostavi za drugi gutljaj večeri.",
+        "en": "A gin like Gin del Professore Jerry Thomas Speakeasy Gin MONSIEUR Release 2022 likes a cooler draw and a mild cigar."
+      }
+    },
+    "gin-gin-del-professore-a-la-madame-release-2022-42-9-vol-0-7l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "U Gin del Professore À LA MADAME Release 2022 borovica dijeli mjesto s cvijet, citrus i začini. Stil: contemporary (42.9 %). Uz cigaru format neka bude kraći.",
+        "en": "Gin del Professore À LA MADAME Release 2022 (42.9 %) — contemporary. The nose carries cvijet, citrus i začini; medium body. G&T or martini, not a dessert sip."
+      },
+      "cigarHint": {
+        "hr": "Svježina Gin del Professore À LA MADAME Release 2022 traži rijedak dim; maduro ostavi za drugi gutljaj večeri.",
+        "en": "With Gin del Professore À LA MADAME Release 2022 Connecticut or panatela — citrus easily covers a dark wrapper."
+      }
+    },
+    "gin-masahiro-okinawa-gin-the-japanese-craft-gin-recipe-01-47-vol-0-7l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "U Masahiro OKINAWA Gin The Japanese Craft Gin Recipe 01 borovica dijeli mjesto s cvijet, citrus i papar. Stil: contemporary (47 %). Uz cigaru format neka bude kraći.",
+        "en": "Masahiro OKINAWA Gin The Japanese Craft Gin Recipe 01 (Japan) holds cvijet, citrus i papar in medium body. Do not force maduro with this gin."
+      },
+      "cigarHint": {
+        "hr": "Gin kao Masahiro OKINAWA Gin The Japanese Craft Gin Recipe 01 voli hladniji draw i blagu cigaru.",
+        "en": "With Masahiro OKINAWA Gin The Japanese Craft Gin Recipe 01 Connecticut or panatela — citrus easily covers a dark wrapper."
+      }
+    },
+    "gin-roku-japanese-craft-gin-43-0-7-l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "ROKU Japanese Craft Gin (Japan) drži cvijet, citrus i papar u srednje tijelo. Ne forsiraš maduro uz ovaj gin.",
+        "en": "ROKU Japanese Craft Gin goes in the glass for cvijet, citrus i papar, not sweetness. Style contemporary (43 %), body medium body."
+      },
+      "cigarHint": {
+        "hr": "Uz ROKU Japanese Craft Gin biraj kratki shade i ne žuri s drugim dimom. Gutljaj neka prati prvi dim; bočica roku drži svoj ritam do kraja večeri.",
+        "en": "The freshness of ROKU Japanese Craft Gin wants sparse smoke; leave maduro for a later sip."
+      }
+    },
+    "gin-ransom-old-tom-gin-44-0-75-l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Ransom Old Tom Gin (World) drži cvijet, citrus i začini u srednje tijelo. Ne forsiraš maduro uz ovaj gin.",
+        "en": "Ransom Old Tom Gin goes in the glass for cvijet, citrus i začini, not sweetness. Style contemporary (44 %), body medium body."
+      },
+      "cigarHint": {
+        "hr": "Gin kao Ransom Old Tom Gin voli hladniji draw i blagu cigaru. Drži čašu bliže pepeljari — ransom se bolje čita u sporijem krugu.",
+        "en": "The freshness of Ransom Old Tom Gin wants sparse smoke; leave maduro for a later sip."
       }
     },
     "gin-roku-gin-the-japanese-craft-gin-43-vol-0-7l-u-poklon-kutiji-sa-casom": {
       "sourceVideoIds": [],
       "notes": {
-        "hr": "Roku Gin The Japanese Craft Gin 43% Vol. 0,7l u poklon kutiji sa čašom — contemporary. Profil drži cvjetne note, citrus i papar; citrus nosi G&T. Uz cigaru biraj kraći, blagi format — gin lako preglasi nijanse.",
-        "en": "Roku Gin The Japanese Craft Gin 43% Vol. 0,7l u poklon kutiji sa čašom — contemporary. The profile holds cvjetne note, citrus i papar; citrus leads a G&T. With a cigar, prefer a shorter mild format — gin easily covers nuance."
+        "hr": "Roku Gin The Japanese Craft Gin (Japan) drži cvijet, citrus i papar u srednje tijelo. Ne forsiraš maduro uz ovaj gin.",
+        "en": "Roku Gin The Japanese Craft Gin (43 %) — contemporary. The nose carries cvijet, citrus i papar; medium body. G&T or martini, not a dessert sip."
       },
       "cigarHint": {
-        "hr": "Citrus/cvijet — Connecticut ili panatela; maduro je pretežak. Dim neka bude rijedak između gutljaja.",
-        "en": "Citrus/floral — Connecticut or panatela; maduro is too heavy. Keep puffs sparse between sips."
+        "hr": "Svježina Roku Gin The Japanese Craft Gin traži rijedak dim; maduro ostavi za drugi gutljaj večeri.",
+        "en": "With Roku Gin The Japanese Craft Gin Connecticut or panatela — citrus easily covers a dark wrapper."
+      }
+    },
+    "gin-akori-cherry-blossom": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "AKORI CHERRY BLOSSOM ide u čašu zbog borovica, citrus i cvijet, ne zbog slatkoće. Stil premium-dry (40 %), tijelo srednje.",
+        "en": "AKORI CHERRY BLOSSOM (Engleska) holds borovica, citrus i cvijet in medium body. Do not force maduro with this gin."
+      },
+      "cigarHint": {
+        "hr": "Uz AKORI CHERRY BLOSSOM biraj kratki shade i ne žuri s drugim dimom. Gutljaj neka prati prvi dim; bočica akori drži svoj ritam do kraja večeri.",
+        "en": "With AKORI CHERRY BLOSSOM Connecticut or panatela — citrus easily covers a dark wrapper."
       }
     },
     "gin-akori-premium": {
       "sourceVideoIds": [],
       "notes": {
-        "hr": "AKORI PREMIUM — premium-dry. Profil drži biljno, borovica i travnato; borovica drži martini i G&T. Uz cigaru biraj kraći, blagi format — gin lako preglasi nijanse.",
-        "en": "AKORI PREMIUM — premium-dry. The profile holds biljno, borovica i travnato; juniper holds martini and G&T. With a cigar, prefer a shorter mild format — gin easily covers nuance."
+        "hr": "AKORI PREMIUM (Engleska) drži bilje, borovica i travnato u srednje tijelo. Ne forsiraš maduro uz ovaj gin.",
+        "en": "AKORI PREMIUM (Engleska) holds bilje, borovica i travnato in medium body. Do not force maduro with this gin."
       },
       "cigarHint": {
-        "hr": "Borovica i začin — blagi Habano ili Cameroon. Ne forsiraš puni maduro uz G&T.",
-        "en": "Juniper and spice — mild Habano or Cameroon. Do not force a full maduro beside a G&T."
+        "hr": "Uz AKORI PREMIUM blagi Habano ili Cameroon — borovica drži most. Drži čašu bliže pepeljari — akori se bolje čita u sporijem krugu.",
+        "en": "With AKORI PREMIUM skip a sweet maduro; spice in the gin muddies. Do not rush: this bottle (akori) wants a quieter tempo beside the cigar."
+      }
+    },
+    "gin-akori-yuzu": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "AKORI YUZU (40 %) — premium-dry, classic-juniper. Nos nosi bilje, borovica i travnato; srednje tijelo. G&T ili martini, ne desertni gutljaj.",
+        "en": "AKORI YUZU goes in the glass for bilje, borovica i travnato, not sweetness. Style premium-dry (40 %), body medium body."
+      },
+      "cigarHint": {
+        "hr": "Za AKORI YUZU ne treba puna snaga cigare; srednji format dovoljan. Jedan gutljaj, jedan dim; linija akori ne voli pretrčavanje trećine.",
+        "en": "Martini with AKORI YUZU + a short cigar: fewer puffs, more nuance. Do not rush: this bottle (akori) wants a quieter tempo beside the cigar."
+      }
+    },
+    "gin-buss-n509-master-cut-belgian-gin-45-vol-0-7l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "U Buss N°509 MASTER CUT Belgian Gin borovica dijeli mjesto s cvijet, citrus i začini. Stil: contemporary (45 %). Uz cigaru format neka bude kraći.",
+        "en": "Profile of Buss N°509 MASTER CUT Belgian Gin: cvijet, citrus i začini. That is contemporary (45 %) — freshness before weight."
+      },
+      "cigarHint": {
+        "hr": "Uz Buss N°509 MASTER CUT Belgian Gin biraj kratki shade i ne žuri s drugim dimom.",
+        "en": "With Buss N°509 MASTER CUT Belgian Gin Connecticut or panatela — citrus easily covers a dark wrapper."
+      }
+    },
+    "gin-cotswolds-the-cloudy-christmas-dry-gin-46-vol-0-7l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Profil Cotswolds The Cloudy Christmas Dry Gin: borovica, citrus i travnato. To je london-dry (46 %) — svježina prije težine., classic-juniper",
+        "en": "Cotswolds The Cloudy Christmas Dry Gin (46 %) — london-dry, classic-juniper. The nose carries borovica, citrus i travnato; medium body. G&T or martini, not a dessert sip."
+      },
+      "cigarHint": {
+        "hr": "Svježina Cotswolds The Cloudy Christmas Dry Gin traži rijedak dim; maduro ostavi za drugi gutljaj večeri.",
+        "en": "A gin like Cotswolds The Cloudy Christmas Dry Gin likes a cooler draw and a mild cigar."
+      }
+    },
+    "gin-etsu-pacific-ocean-water-japanese-gin-45-vol-0-7l-u-poklon-kutiji": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Profil Etsu PACIFIC OCEAN WATER Japanese Gin: cvijet, citrus i papar. To je contemporary (45 %) — svježina prije težine.",
+        "en": "Profile of Etsu PACIFIC OCEAN WATER Japanese Gin: cvijet, citrus i papar. That is contemporary (45 %) — freshness before weight."
+      },
+      "cigarHint": {
+        "hr": "Gin kao Etsu PACIFIC OCEAN WATER Japanese Gin voli hladniji draw i blagu cigaru.",
+        "en": "With Etsu PACIFIC OCEAN WATER Japanese Gin pick a short shade and do not rush the second puff."
+      }
+    },
+    "gin-fords-gin-london-dry-gin-45-vol-1l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Fords Gin London Dry Gin ide u čašu zbog borovica, citrus i travnato, ne zbog slatkoće. Stil london-dry (45 %), tijelo srednje.",
+        "en": "Fords Gin London Dry Gin goes in the glass for borovica, citrus i travnato, not sweetness. Style london-dry (45 %), body medium body."
+      },
+      "cigarHint": {
+        "hr": "Uz Fords Gin London Dry Gin Connecticut ili panatela — citrus lako preglasi tamni pokrov.",
+        "en": "With Fords Gin London Dry Gin Connecticut or panatela — citrus easily covers a dark wrapper."
+      }
+    },
+    "gin-g-039-vine-nouaison-gin-de-france-45-vol-0-7l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "G&#039;Vine NOUAISON Gin de France ide u čašu zbog cvijet, citrus i začini, ne zbog slatkoće. Stil contemporary (45 %), tijelo srednje.",
+        "en": "G&#039;Vine NOUAISON Gin de France goes in the glass for cvijet, citrus i začini, not sweetness. Style contemporary (45 %), body medium body."
+      },
+      "cigarHint": {
+        "hr": "Gin kao G&#039;Vine NOUAISON Gin de France voli hladniji draw i blagu cigaru. Drži čašu bliže pepeljari — g se bolje čita u sporijem krugu.",
+        "en": "A gin like G&#039;Vine NOUAISON Gin de France likes a cooler draw and a mild cigar."
+      }
+    },
+    "gin-mackmyra-kreator-gin-47-3-vol-0-5l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Mackmyra Kreatör Gin (World) drži cvijet, citrus i začini u srednje tijelo. Ne forsiraš maduro uz ovaj gin.",
+        "en": "In Mackmyra Kreatör Gin, juniper shares space with cvijet, citrus i začini. Style: contemporary (47.3 %). With a cigar keep the format shorter."
+      },
+      "cigarHint": {
+        "hr": "Uz Mackmyra Kreatör Gin biraj kratki shade i ne žuri s drugim dimom. Gutljaj neka prati prvi dim; bočica mackmyra drži svoj ritam do kraja večeri.",
+        "en": "A gin like Mackmyra Kreatör Gin likes a cooler draw and a mild cigar. Do not rush: this bottle (mackmyra) wants a quieter tempo beside the cigar."
+      }
+    },
+    "gin-no-209-gin-5xd-46-vol-0-7-l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "U No. 209 Gin 5XD borovica dijeli mjesto s cvijet, citrus i začini. Stil: contemporary (46 %). Uz cigaru format neka bude kraći.",
+        "en": "In No. 209 Gin 5XD, juniper shares space with cvijet, citrus i začini. Style: contemporary (46 %). With a cigar keep the format shorter."
+      },
+      "cigarHint": {
+        "hr": "Uz No. 209 Gin 5XD Connecticut ili panatela — citrus lako preglasi tamni pokrov.",
+        "en": "With No. 209 Gin 5XD pick a short shade and do not rush the second puff. One sip, one draw; line no dislikes hurrying the middle third."
+      }
+    },
+    "gin-poli-marconi-46-gin-46-vol-0-7l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Poli Marconi 46 Gin (World) drži cvijet, citrus i začini u srednje tijelo. Ne forsiraš maduro uz ovaj gin.",
+        "en": "Poli Marconi 46 Gin (World) holds cvijet, citrus i začini in medium body. Do not force maduro with this gin."
+      },
+      "cigarHint": {
+        "hr": "Uz Poli Marconi 46 Gin Connecticut ili panatela — citrus lako preglasi tamni pokrov.",
+        "en": "With Poli Marconi 46 Gin pick a short shade and do not rush the second puff. Do not rush: this bottle (poli) wants a quieter tempo beside the cigar."
+      }
+    },
+    "gin-teerenpeli-pyy-gin-45-vol-0-5l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Teerenpeli Pyy Gin (World) drži cvijet, citrus i začini u srednje tijelo. Ne forsiraš maduro uz ovaj gin.",
+        "en": "Teerenpeli Pyy Gin (World) holds cvijet, citrus i začini in medium body. Do not force maduro with this gin."
+      },
+      "cigarHint": {
+        "hr": "Uz Teerenpeli Pyy Gin Connecticut ili panatela — citrus lako preglasi tamni pokrov.",
+        "en": "With Teerenpeli Pyy Gin Connecticut or panatela — citrus easily covers a dark wrapper."
+      }
+    },
+    "gin-the-illusionist-dry-gin-45-vol-0-5-l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "The Illusionist Dry Gin (Engleska) drži borovica, citrus i travnato u srednje tijelo. Ne forsiraš maduro uz ovaj gin.",
+        "en": "Profile of The Illusionist Dry Gin: borovica, citrus i travnato. That is london-dry (45 %) — freshness before weight., classic-juniper"
+      },
+      "cigarHint": {
+        "hr": "Gin kao The Illusionist Dry Gin voli hladniji draw i blagu cigaru. Gutljaj neka prati prvi dim; bočica the drži svoj ritam do kraja večeri.",
+        "en": "The freshness of The Illusionist Dry Gin wants sparse smoke; leave maduro for a later sip."
+      }
+    },
+    "gin-alkkemist": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "ALKKEMIST ide u čašu zbog cvijet, citrus i začini, ne zbog slatkoće. Stil contemporary (40 %), tijelo srednje.",
+        "en": "In ALKKEMIST, juniper shares space with cvijet, citrus i začini. Style: contemporary (40 %). With a cigar keep the format shorter."
+      },
+      "cigarHint": {
+        "hr": "Svježina ALKKEMIST traži rijedak dim; maduro ostavi za drugi gutljaj večeri. Gutljaj neka prati prvi dim; bočica alkkemist drži svoj ritam do kraja večeri.",
+        "en": "With ALKKEMIST pick a short shade and do not rush the second puff. Let the sip follow the first draw; bottle alkkemist keeps its own pace."
+      }
+    },
+    "gin-arete-puro-gin": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "U ARETE PURO GIN borovica dijeli mjesto s cvijet, citrus i začini. Stil: contemporary (40 %). Uz cigaru format neka bude kraći.",
+        "en": "ARETE PURO GIN (40 %) — contemporary. The nose carries cvijet, citrus i začini; medium body. G&T or martini, not a dessert sip."
+      },
+      "cigarHint": {
+        "hr": "Gin kao ARETE PURO GIN voli hladniji draw i blagu cigaru. Gutljaj neka prati prvi dim; bočica arete drži svoj ritam do kraja večeri.",
+        "en": "The freshness of ARETE PURO GIN wants sparse smoke; leave maduro for a later sip."
+      }
+    },
+    "gin-aura-karbun": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "AURA KARBUN ide u čašu zbog bilje, borovica i citrus, ne zbog slatkoće. Stil croatian (40 %), tijelo punije.",
+        "en": "Profile of AURA KARBUN: bilje, borovica i citrus. That is croatian (40 %) — freshness before weight."
+      },
+      "cigarHint": {
+        "hr": "Svježina AURA KARBUN traži rijedak dim; maduro ostavi za drugi gutljaj večeri. Gutljaj neka prati prvi dim; bočica aura drži svoj ritam do kraja večeri.",
+        "en": "With AURA KARBUN Connecticut or panatela — citrus easily covers a dark wrapper. One sip, one draw; line aura dislikes hurrying the middle third."
+      }
+    },
+    "gin-ableforth-039-s-bathtub-gin-43-3-vol-0-7l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Profil Ableforth&#039;s Bathtub Gin: cvijet, citrus i začini. To je contemporary (43.3 %) — svježina prije težine.",
+        "en": "In Ableforth&#039;s Bathtub Gin, juniper shares space with cvijet, citrus i začini. Style: contemporary (43.3 %). With a cigar keep the format shorter."
+      },
+      "cigarHint": {
+        "hr": "Uz Ableforth&#039;s Bathtub Gin Connecticut ili panatela — citrus lako preglasi tamni pokrov.",
+        "en": "The freshness of Ableforth&#039;s Bathtub Gin wants sparse smoke; leave maduro for a later sip."
+      }
+    },
+    "gin-amazonian-gin-company-cantinero-edition-41-vol-0-7l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Amazonian Gin Company Cantinero Edition (41 %) — contemporary. Nos nosi cvijet, citrus i začini; srednje tijelo. G&T ili martini, ne desertni gutljaj.",
+        "en": "Amazonian Gin Company Cantinero Edition (41 %) — contemporary. The nose carries cvijet, citrus i začini; medium body. G&T or martini, not a dessert sip."
+      },
+      "cigarHint": {
+        "hr": "Uz Amazonian Gin Company Cantinero Edition Connecticut ili panatela — citrus lako preglasi tamni pokrov.",
+        "en": "With Amazonian Gin Company Cantinero Edition Connecticut or panatela — citrus easily covers a dark wrapper."
+      }
+    },
+    "gin-brooklyn": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "BROOKLYN (40 %) — contemporary. Nos nosi cvijet, citrus i začini; srednje tijelo. G&T ili martini, ne desertni gutljaj.",
+        "en": "BROOKLYN (World) holds cvijet, citrus i začini in medium body. Do not force maduro with this gin."
+      },
+      "cigarHint": {
+        "hr": "Gin kao BROOKLYN voli hladniji draw i blagu cigaru. Ne žuri: ova boca (brooklyn) traži mirniji tempo uz cigaru.",
+        "en": "With BROOKLYN pick a short shade and do not rush the second puff. Keep the glass near the ashtray — brooklyn reads clearer in a slower loop."
+      }
+    },
+    "gin-big-kahuna-pineapple-gin-40-vol-0-7l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "U Big Kahuna PINEAPPLE Gin borovica dijeli mjesto s cvijet, citrus i začini. Stil: contemporary (40 %). Uz cigaru format neka bude kraći.",
+        "en": "Big Kahuna PINEAPPLE Gin (World) holds cvijet, citrus i začini in medium body. Do not force maduro with this gin."
+      },
+      "cigarHint": {
+        "hr": "Uz Big Kahuna PINEAPPLE Gin Connecticut ili panatela — citrus lako preglasi tamni pokrov.",
+        "en": "The freshness of Big Kahuna PINEAPPLE Gin wants sparse smoke; leave maduro for a later sip."
+      }
+    },
+    "gin-bloom-jasmine-amp-rose-gin-limited-edition-40-0-7-l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "U Bloom JASMINE &amp; ROSE Gin Limited Edition borovica dijeli mjesto s cvijet, citrus i začini. Stil: contemporary (40 %). Uz cigaru format neka bude kraći.",
+        "en": "Bloom JASMINE &amp; ROSE Gin Limited Edition (World) holds cvijet, citrus i začini in medium body. Do not force maduro with this gin."
+      },
+      "cigarHint": {
+        "hr": "Svježina Bloom JASMINE &amp; ROSE Gin Limited Edition traži rijedak dim; maduro ostavi za drugi gutljaj večeri.",
+        "en": "A gin like Bloom JASMINE &amp; ROSE Gin Limited Edition likes a cooler draw and a mild cigar."
+      }
+    },
+    "gin-blue-mauritius-gin-40-vol-0-7l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Blue Mauritius Gin (40 %) — contemporary. Nos nosi cvijet, citrus i začini; srednje tijelo. G&T ili martini, ne desertni gutljaj.",
+        "en": "Blue Mauritius Gin (40 %) — contemporary. The nose carries cvijet, citrus i začini; medium body. G&T or martini, not a dessert sip."
+      },
+      "cigarHint": {
+        "hr": "Gin kao Blue Mauritius Gin voli hladniji draw i blagu cigaru. Jedan gutljaj, jedan dim; linija blue ne voli pretrčavanje trećine.",
+        "en": "The freshness of Blue Mauritius Gin wants sparse smoke; leave maduro for a later sip."
+      }
+    },
+    "gin-brooklyn-small-batch-gin-40-0-7-l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Brooklyn Small Batch Gin ide u čašu zbog cvijet, citrus i začini, ne zbog slatkoće. Stil contemporary (40 %), tijelo srednje.",
+        "en": "Brooklyn Small Batch Gin goes in the glass for cvijet, citrus i začini, not sweetness. Style contemporary (40 %), body medium body."
+      },
+      "cigarHint": {
+        "hr": "Uz Brooklyn Small Batch Gin Connecticut ili panatela — citrus lako preglasi tamni pokrov.",
+        "en": "With Brooklyn Small Batch Gin Connecticut or panatela — citrus easily covers a dark wrapper."
+      }
+    },
+    "gin-dictador-treasure-colombian-aged-black-gin-43-0-7": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Dictador Treasure Colombian Aged Black Gin (World) drži cvijet, citrus i začini u srednje tijelo. Ne forsiraš maduro uz ovaj gin.",
+        "en": "Profile of Dictador Treasure Colombian Aged Black Gin: cvijet, citrus i začini. That is contemporary (43 %) — freshness before weight."
+      },
+      "cigarHint": {
+        "hr": "Gin kao Dictador Treasure Colombian Aged Black Gin voli hladniji draw i blagu cigaru.",
+        "en": "The freshness of Dictador Treasure Colombian Aged Black Gin wants sparse smoke; leave maduro for a later sip."
+      }
+    },
+    "gin-drumshanbo-gunpowder-ceramic-irish-gin-43-vol-0-7l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "U Drumshanbo Gunpowder CERAMIC Irish Gin borovica dijeli mjesto s cvijet, citrus i začini. Stil: contemporary (43 %). Uz cigaru format neka bude kraći.",
+        "en": "Drumshanbo Gunpowder CERAMIC Irish Gin (43 %) — contemporary. The nose carries cvijet, citrus i začini; medium body. G&T or martini, not a dessert sip."
+      },
+      "cigarHint": {
+        "hr": "Gin kao Drumshanbo Gunpowder CERAMIC Irish Gin voli hladniji draw i blagu cigaru.",
+        "en": "With Drumshanbo Gunpowder CERAMIC Irish Gin pick a short shade and do not rush the second puff."
+      }
+    },
+    "gin-drumshanbo-gunpowder-california-orange-citrus-irish-gin-43-vol-0-7l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Profil Drumshanbo Gunpowder California Orange Citrus Irish Gin: cvijet, citrus i začini. To je contemporary (43 %) — svježina prije težine.",
+        "en": "In Drumshanbo Gunpowder California Orange Citrus Irish Gin, juniper shares space with cvijet, citrus i začini. Style: contemporary (43 %). With a cigar keep the format shorter."
+      },
+      "cigarHint": {
+        "hr": "Svježina Drumshanbo Gunpowder California Orange Citrus Irish Gin traži rijedak dim; maduro ostavi za drugi gutljaj večeri.",
+        "en": "With Drumshanbo Gunpowder California Orange Citrus Irish Gin Connecticut or panatela — citrus easily covers a dark wrapper."
+      }
+    },
+    "gin-drumshanbo-gunpowder-irish-gin-43-vol-0-7l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Drumshanbo Gunpowder Irish Gin (43 %) — contemporary. Nos nosi cvijet, citrus i začini; srednje tijelo. G&T ili martini, ne desertni gutljaj.",
+        "en": "Drumshanbo Gunpowder Irish Gin goes in the glass for cvijet, citrus i začini, not sweetness. Style contemporary (43 %), body medium body."
+      },
+      "cigarHint": {
+        "hr": "Gin kao Drumshanbo Gunpowder Irish Gin voli hladniji draw i blagu cigaru. Drži čašu bliže pepeljari — drumshanbo se bolje čita u sporijem krugu.",
+        "en": "With Drumshanbo Gunpowder Irish Gin Connecticut or panatela — citrus easily covers a dark wrapper."
+      }
+    },
+    "gin-drumshanbo-gunpowder-irish-gin-with-italian-fig-amp-laurel-43-vol-0-7l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Profil Drumshanbo Gunpowder Irish Gin with Italian Fig &amp; Laurel: cvijet, citrus i začini. To je contemporary (43 %) — svježina prije težine.",
+        "en": "Drumshanbo Gunpowder Irish Gin with Italian Fig &amp; Laurel (43 %) — contemporary. The nose carries cvijet, citrus i začini; medium body. G&T or martini, not a dessert sip."
+      },
+      "cigarHint": {
+        "hr": "Svježina Drumshanbo Gunpowder Irish Gin with Italian Fig &amp; Laurel traži rijedak dim; maduro ostavi za drugi gutljaj večeri.",
+        "en": "With Drumshanbo Gunpowder Irish Gin with Italian Fig &amp; Laurel pick a short shade and do not rush the second puff."
+      }
+    },
+    "gin-drumshanbo-gunpowder-sardinian-citrus-irish-gin-43-vol-0-7l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Profil Drumshanbo Gunpowder Sardinian Citrus Irish Gin: cvijet, citrus i začini. To je contemporary (43 %) — svježina prije težine.",
+        "en": "Drumshanbo Gunpowder Sardinian Citrus Irish Gin goes in the glass for cvijet, citrus i začini, not sweetness. Style contemporary (43 %), body medium body."
+      },
+      "cigarHint": {
+        "hr": "Uz Drumshanbo Gunpowder Sardinian Citrus Irish Gin biraj kratki shade i ne žuri s drugim dimom.",
+        "en": "The freshness of Drumshanbo Gunpowder Sardinian Citrus Irish Gin wants sparse smoke; leave maduro for a later sip."
+      }
+    },
+    "gin-etsu-double-orange-gin-43-vol-0-7l-u-poklon-kutiji": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "U Etsu DOUBLE ORANGE Gin borovica dijeli mjesto s cvijet, citrus i papar. Stil: contemporary (43 %). Uz cigaru format neka bude kraći.",
+        "en": "Etsu DOUBLE ORANGE Gin (43 %) — contemporary. The nose carries cvijet, citrus i papar; medium body. G&T or martini, not a dessert sip."
+      },
+      "cigarHint": {
+        "hr": "Uz Etsu DOUBLE ORANGE Gin Connecticut ili panatela — citrus lako preglasi tamni pokrov.",
+        "en": "The freshness of Etsu DOUBLE ORANGE Gin wants sparse smoke; leave maduro for a later sip."
+      }
+    },
+    "gin-etsu-double-yuzu-gin-43-vol-0-7l-u-poklon-kutiji": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Etsu DOUBLE YUZU Gin (Japan) drži cvijet, citrus i papar u srednje tijelo. Ne forsiraš maduro uz ovaj gin.",
+        "en": "In Etsu DOUBLE YUZU Gin, juniper shares space with cvijet, citrus i papar. Style: contemporary (43 %). With a cigar keep the format shorter."
+      },
+      "cigarHint": {
+        "hr": "Gin kao Etsu DOUBLE YUZU Gin voli hladniji draw i blagu cigaru. Ne žuri: ova boca (etsu) traži mirniji tempo uz cigaru.",
+        "en": "A gin like Etsu DOUBLE YUZU Gin likes a cooler draw and a mild cigar. Let the sip follow the first draw; bottle etsu keeps its own pace."
+      }
+    },
+    "gin-etsu-japanese-handcrafted-gin-the-original-43-vol-0-7l-u-poklon-kutiji": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Etsu Japanese Handcrafted Gin The Original (43 %) — contemporary. Nos nosi cvijet, citrus i papar; srednje tijelo. G&T ili martini, ne desertni gutljaj.",
+        "en": "Profile of Etsu Japanese Handcrafted Gin The Original: cvijet, citrus i papar. That is contemporary (43 %) — freshness before weight."
+      },
+      "cigarHint": {
+        "hr": "Svježina Etsu Japanese Handcrafted Gin The Original traži rijedak dim; maduro ostavi za drugi gutljaj večeri.",
+        "en": "The freshness of Etsu Japanese Handcrafted Gin The Original wants sparse smoke; leave maduro for a later sip."
+      }
+    },
+    "gin-few-american-gin-40-vol-0-7-l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Profil Few American Gin: cvijet, citrus i začini. To je contemporary (40 %) — svježina prije težine.",
+        "en": "Few American Gin (40 %) — contemporary. The nose carries cvijet, citrus i začini; medium body. G&T or martini, not a dessert sip."
+      },
+      "cigarHint": {
+        "hr": "Svježina Few American Gin traži rijedak dim; maduro ostavi za drugi gutljaj večeri.",
+        "en": "With Few American Gin pick a short shade and do not rush the second puff. One sip, one draw; line few dislikes hurrying the middle third."
+      }
+    },
+    "gin-gin-del-professore-the-fighting-bear-london-dry-gin-release-2021-43-vol-0-7l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Gin del Professore THE FIGHTING BEAR London Dry Gin Release 2021 (43 %) — london-dry, classic-juniper. Nos nosi borovica, citrus i travnato; srednje tijelo. G&T ili martini, ne desertni gutljaj.",
+        "en": "In Gin del Professore THE FIGHTING BEAR London Dry Gin Release 2021, juniper shares space with borovica, citrus i travnato. Style: london-dry (43 %). With a cigar keep the format shorter."
+      },
+      "cigarHint": {
+        "hr": "Uz Gin del Professore THE FIGHTING BEAR London Dry Gin Release 2021 biraj kratki shade i ne žuri s drugim dimom.",
+        "en": "With Gin del Professore THE FIGHTING BEAR London Dry Gin Release 2021 pick a short shade and do not rush the second puff."
+      }
+    },
+    "gin-gray-whale-distilled-gin-43-vol-0-7l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Gray Whale Distilled Gin ide u čašu zbog cvijet, citrus i začini, ne zbog slatkoće. Stil contemporary (43 %), tijelo srednje.",
+        "en": "In Gray Whale Distilled Gin, juniper shares space with cvijet, citrus i začini. Style: contemporary (43 %). With a cigar keep the format shorter."
+      },
+      "cigarHint": {
+        "hr": "Uz Gray Whale Distilled Gin Connecticut ili panatela — citrus lako preglasi tamni pokrov.",
+        "en": "With Gray Whale Distilled Gin pick a short shade and do not rush the second puff."
+      }
+    },
+    "gin-harahorn-norwegian-small-batch-gin-46-vol-0-5l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Harahorn Norwegian Small Batch Gin (World) drži cvijet, citrus i začini u srednje tijelo. Ne forsiraš maduro uz ovaj gin.",
+        "en": "Harahorn Norwegian Small Batch Gin goes in the glass for cvijet, citrus i začini, not sweetness. Style contemporary (46 %), body medium body."
+      },
+      "cigarHint": {
+        "hr": "Uz Harahorn Norwegian Small Batch Gin biraj kratki shade i ne žuri s drugim dimom.",
+        "en": "With Harahorn Norwegian Small Batch Gin pick a short shade and do not rush the second puff."
+      }
+    },
+    "gin-jinzu-gin-41-3-vol-0-7l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Jinzu Gin (41.3 %) — contemporary. Nos nosi cvijet, citrus i začini; srednje tijelo. G&T ili martini, ne desertni gutljaj.",
+        "en": "Jinzu Gin (World) holds cvijet, citrus i začini in medium body. Do not force maduro with this gin."
+      },
+      "cigarHint": {
+        "hr": "Uz Jinzu Gin biraj kratki shade i ne žuri s drugim dimom. Ne žuri: ova boca (jinzu) traži mirniji tempo uz cigaru.",
+        "en": "With Jinzu Gin Connecticut or panatela — citrus easily covers a dark wrapper. Do not rush: this bottle (jinzu) wants a quieter tempo beside the cigar."
+      }
+    },
+    "gin-kavalan-gin-40-vol-0-7l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Profil Kavalan GIN: cvijet, citrus i začini. To je contemporary (40 %) — svježina prije težine.",
+        "en": "Kavalan GIN (40 %) — contemporary. The nose carries cvijet, citrus i začini; medium body. G&T or martini, not a dessert sip."
+      },
+      "cigarHint": {
+        "hr": "Uz Kavalan GIN biraj kratki shade i ne žuri s drugim dimom. Ne žuri: ova boca (kavalan) traži mirniji tempo uz cigaru.",
+        "en": "With Kavalan GIN Connecticut or panatela — citrus easily covers a dark wrapper. Let the sip follow the first draw; bottle kavalan keeps its own pace."
+      }
+    },
+    "gin-kyro-dark-gin-42-6-vol-0-5l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Kyrö DARK Gin ide u čašu zbog cvijet, citrus i začini, ne zbog slatkoće. Stil contemporary (42.6 %), tijelo srednje.",
+        "en": "Kyrö DARK Gin (World) holds cvijet, citrus i začini in medium body. Do not force maduro with this gin."
+      },
+      "cigarHint": {
+        "hr": "Svježina Kyrö DARK Gin traži rijedak dim; maduro ostavi za drugi gutljaj večeri.",
+        "en": "With Kyrö DARK Gin Connecticut or panatela — citrus easily covers a dark wrapper."
+      }
+    },
+    "gin-kyro-rye-gin-42-6-vol-0-5l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Kyrö RYE Gin (World) drži cvijet, citrus i začini u srednje tijelo. Ne forsiraš maduro uz ovaj gin.",
+        "en": "Kyrö RYE Gin (42.6 %) — contemporary. The nose carries cvijet, citrus i začini; medium body. G&T or martini, not a dessert sip."
+      },
+      "cigarHint": {
+        "hr": "Svježina Kyrö RYE Gin traži rijedak dim; maduro ostavi za drugi gutljaj večeri. Ne žuri: ova boca (kyro) traži mirniji tempo uz cigaru.",
+        "en": "The freshness of Kyrö RYE Gin wants sparse smoke; leave maduro for a later sip. Do not rush: this bottle (kyro) wants a quieter tempo beside the cigar."
+      }
+    },
+    "gin-le-tribute-gin-43-vol-0-7-l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "U Le Tribute Gin borovica dijeli mjesto s cvijet, citrus i začini. Stil: contemporary (43 %). Uz cigaru format neka bude kraći.",
+        "en": "In Le Tribute Gin, juniper shares space with cvijet, citrus i začini. Style: contemporary (43 %). With a cigar keep the format shorter."
+      },
+      "cigarHint": {
+        "hr": "Uz Le Tribute Gin biraj kratki shade i ne žuri s drugim dimom. Gutljaj neka prati prvi dim; bočica le drži svoj ritam do kraja večeri.",
+        "en": "With Le Tribute Gin pick a short shade and do not rush the second puff. Let the sip follow the first draw; bottle le keeps its own pace."
+      }
+    },
+    "gin-mombasa-club-colonel-039-s-reserve-gin-limited-edition-43-5-vol-0-7l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "U Mombasa Club Colonel&#039;s Reserve Gin Limited Edition borovica dijeli mjesto s cvijet, citrus i začini. Stil: contemporary (43.5 %). Uz cigaru format neka bude kraći.",
+        "en": "Profile of Mombasa Club Colonel&#039;s Reserve Gin Limited Edition: cvijet, citrus i začini. That is contemporary (43.5 %) — freshness before weight."
+      },
+      "cigarHint": {
+        "hr": "Svježina Mombasa Club Colonel&#039;s Reserve Gin Limited Edition traži rijedak dim; maduro ostavi za drugi gutljaj večeri.",
+        "en": "With Mombasa Club Colonel&#039;s Reserve Gin Limited Edition pick a short shade and do not rush the second puff."
+      }
+    },
+    "gin-nordes-atlantic-galician-gin-40-vol-0-7l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "U Nordes Atlantic Galician Gin borovica dijeli mjesto s bilje, citrus i travnato. Stil: contemporary (40 %). Uz cigaru format neka bude kraći.",
+        "en": "Nordes Atlantic Galician Gin (40 %) — contemporary, mediterranean. The nose carries bilje, citrus i travnato; medium body. G&T or martini, not a dessert sip."
+      },
+      "cigarHint": {
+        "hr": "Gin kao Nordes Atlantic Galician Gin voli hladniji draw i blagu cigaru. Drži čašu bliže pepeljari — nordes se bolje čita u sporijem krugu.",
+        "en": "A gin like Nordes Atlantic Galician Gin likes a cooler draw and a mild cigar. One sip, one draw; line nordes dislikes hurrying the middle third."
+      }
+    },
+    "gin-old-english-gin-44-0-7-l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Old English Gin (World) drži cvijet, citrus i začini u srednje tijelo. Ne forsiraš maduro uz ovaj gin.",
+        "en": "Profile of Old English Gin: cvijet, citrus i začini. That is contemporary (44 %) — freshness before weight."
+      },
+      "cigarHint": {
+        "hr": "Gin kao Old English Gin voli hladniji draw i blagu cigaru. Gutljaj neka prati prvi dim; bočica old drži svoj ritam do kraja večeri.",
+        "en": "The freshness of Old English Gin wants sparse smoke; leave maduro for a later sip."
+      }
+    },
+    "gin-opihr-london-dry-gin-arabian-edition-43-vol-0-7l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Opihr London Dry Gin ARABIAN EDITION (43 %) — london-dry, classic-juniper. Nos nosi borovica, citrus i travnato; srednje tijelo. G&T ili martini, ne desertni gutljaj.",
+        "en": "Opihr London Dry Gin ARABIAN EDITION (43 %) — london-dry, classic-juniper. The nose carries borovica, citrus i travnato; medium body. G&T or martini, not a dessert sip."
+      },
+      "cigarHint": {
+        "hr": "Gin kao Opihr London Dry Gin ARABIAN EDITION voli hladniji draw i blagu cigaru. Drži čašu bliže pepeljari — opihr se bolje čita u sporijem krugu.",
+        "en": "A gin like Opihr London Dry Gin ARABIAN EDITION likes a cooler draw and a mild cigar."
+      }
+    },
+    "gin-opihr-london-dry-gin-arabian-edition-43-vol-0-7l-in-giftbox-with-travel-mug": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Opihr London Dry Gin ARABIAN EDITION (Engleska) drži borovica, citrus i travnato u srednje tijelo. Ne forsiraš maduro uz ovaj gin.",
+        "en": "Profile of Opihr London Dry Gin ARABIAN EDITION: borovica, citrus i travnato. That is london-dry (43 %) — freshness before weight., classic-juniper"
+      },
+      "cigarHint": {
+        "hr": "Svježina Opihr London Dry Gin ARABIAN EDITION traži rijedak dim; maduro ostavi za drugi gutljaj večeri.",
+        "en": "A gin like Opihr London Dry Gin ARABIAN EDITION likes a cooler draw and a mild cigar."
+      }
+    },
+    "gin-opihr-oriental-spiced-london-dry-gin-42-5-vol-0-7l-in-giftbox-with-travel-mug": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Opihr ORIENTAL SPICED London Dry Gin ide u čašu zbog borovica, citrus i travnato, ne zbog slatkoće. Stil london-dry (42.5 %), tijelo srednje.",
+        "en": "Opihr ORIENTAL SPICED London Dry Gin (42.5 %) — london-dry, classic-juniper. The nose carries borovica, citrus i travnato; medium body. G&T or martini, not a dessert sip."
+      },
+      "cigarHint": {
+        "hr": "Svježina Opihr ORIENTAL SPICED London Dry Gin traži rijedak dim; maduro ostavi za drugi gutljaj večeri.",
+        "en": "With Opihr ORIENTAL SPICED London Dry Gin pick a short shade and do not rush the second puff."
+      }
+    },
+    "gin-pickering-039-s-christmas-gin-baubles-37-5-vol-6x0-05l-u-poklon-kutiji": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Pickering&#039;s Christmas Gin Baubles (37.5 %) — contemporary. Nos nosi cvijet, citrus i začini; srednje tijelo. G&T ili martini, ne desertni gutljaj.",
+        "en": "Pickering&#039;s Christmas Gin Baubles goes in the glass for cvijet, citrus i začini, not sweetness. Style contemporary (37.5 %), body medium body."
+      },
+      "cigarHint": {
+        "hr": "Uz Pickering&#039;s Christmas Gin Baubles Connecticut ili panatela — citrus lako preglasi tamni pokrov.",
+        "en": "With Pickering&#039;s Christmas Gin Baubles Connecticut or panatela — citrus easily covers a dark wrapper."
+      }
+    },
+    "gin-poli-marconi-42-gin-42-vol-0-7l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Poli Marconi 42 Gin (World) drži cvijet, citrus i začini u srednje tijelo. Ne forsiraš maduro uz ovaj gin.",
+        "en": "Poli Marconi 42 Gin goes in the glass for cvijet, citrus i začini, not sweetness. Style contemporary (42 %), body medium body."
+      },
+      "cigarHint": {
+        "hr": "Gin kao Poli Marconi 42 Gin voli hladniji draw i blagu cigaru. Ne žuri: ova boca (poli) traži mirniji tempo uz cigaru.",
+        "en": "With Poli Marconi 42 Gin Connecticut or panatela — citrus easily covers a dark wrapper."
+      }
+    },
+    "gin-rutte-dry-gin-43-0-7-l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Profil Rutte Dry Gin: borovica, citrus i travnato. To je london-dry (43 %) — svježina prije težine., classic-juniper",
+        "en": "Rutte Dry Gin (43 %) — london-dry, classic-juniper. The nose carries borovica, citrus i travnato; medium body. G&T or martini, not a dessert sip."
+      },
+      "cigarHint": {
+        "hr": "Svježina Rutte Dry Gin traži rijedak dim; maduro ostavi za drugi gutljaj večeri.",
+        "en": "With Rutte Dry Gin pick a short shade and do not rush the second puff. One sip, one draw; line rutte dislikes hurrying the middle third."
+      }
+    },
+    "gin-sacred-gin-40-0-7-l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Sacred Gin (40 %) — contemporary. Nos nosi cvijet, citrus i začini; srednje tijelo. G&T ili martini, ne desertni gutljaj.",
+        "en": "Sacred Gin (40 %) — contemporary. The nose carries cvijet, citrus i začini; medium body. G&T or martini, not a dessert sip."
+      },
+      "cigarHint": {
+        "hr": "Uz Sacred Gin biraj kratki shade i ne žuri s drugim dimom. Ne žuri: ova boca (sacred) traži mirniji tempo uz cigaru.",
+        "en": "With Sacred Gin pick a short shade and do not rush the second puff. Let the sip follow the first draw; bottle sacred keeps its own pace."
+      }
+    },
+    "gin-sikkim-fraise-premium-gin-40-0-7-l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Sikkim FRAISE Premium Gin ide u čašu zbog cvijet, citrus i začini, ne zbog slatkoće. Stil contemporary (40 %), tijelo srednje.",
+        "en": "Sikkim FRAISE Premium Gin (World) holds cvijet, citrus i začini in medium body. Do not force maduro with this gin."
+      },
+      "cigarHint": {
+        "hr": "Uz Sikkim FRAISE Premium Gin biraj kratki shade i ne žuri s drugim dimom. Ne žuri: ova boca (sikkim) traži mirniji tempo uz cigaru.",
+        "en": "A gin like Sikkim FRAISE Premium Gin likes a cooler draw and a mild cigar. Let the sip follow the first draw; bottle sikkim keeps its own pace."
+      }
+    },
+    "gin-tobermory-hebridean-isle-of-mull-gin-43-3-vol-0-7l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Tobermory Hebridean Isle of Mull Gin (43.3 %) — contemporary. Nos nosi cvijet, citrus i začini; srednje tijelo. G&T ili martini, ne desertni gutljaj.",
+        "en": "Tobermory Hebridean Isle of Mull Gin (43.3 %) — contemporary. The nose carries cvijet, citrus i začini; medium body. G&T or martini, not a dessert sip."
+      },
+      "cigarHint": {
+        "hr": "Uz Tobermory Hebridean Isle of Mull Gin biraj kratki shade i ne žuri s drugim dimom.",
+        "en": "The freshness of Tobermory Hebridean Isle of Mull Gin wants sparse smoke; leave maduro for a later sip."
+      }
+    },
+    "gin-ukiyo-tokyo-dry-gin-40-vol-0-7l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "UKIYO Tokyo Dry Gin (40 %) — london-dry, classic-juniper. Nos nosi borovica, citrus i travnato; srednje tijelo. G&T ili martini, ne desertni gutljaj.",
+        "en": "Profile of UKIYO Tokyo Dry Gin: borovica, citrus i travnato. That is london-dry (40 %) — freshness before weight., classic-juniper"
+      },
+      "cigarHint": {
+        "hr": "Uz UKIYO Tokyo Dry Gin Connecticut ili panatela — citrus lako preglasi tamni pokrov.",
+        "en": "With UKIYO Tokyo Dry Gin Connecticut or panatela — citrus easily covers a dark wrapper."
+      }
+    },
+    "gin-ukiyo-japanese-blossom-gin-40-vol-0-7l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Ukiyo Japanese Blossom Gin ide u čašu zbog cvijet, citrus i papar, ne zbog slatkoće. Stil contemporary (40 %), tijelo srednje.",
+        "en": "In Ukiyo Japanese Blossom Gin, juniper shares space with cvijet, citrus i papar. Style: contemporary (40 %). With a cigar keep the format shorter."
+      },
+      "cigarHint": {
+        "hr": "Uz Ukiyo Japanese Blossom Gin biraj kratki shade i ne žuri s drugim dimom. Drži čašu bliže pepeljari — ukiyo se bolje čita u sporijem krugu.",
+        "en": "With Ukiyo Japanese Blossom Gin pick a short shade and do not rush the second puff."
+      }
+    },
+    "gin-ukiyo-japanese-yuzu-gin-40-vol-0-7l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Profil Ukiyo Japanese Yuzu Gin: cvijet, citrus i papar. To je contemporary (40 %) — svježina prije težine.",
+        "en": "Profile of Ukiyo Japanese Yuzu Gin: cvijet, citrus i papar. That is contemporary (40 %) — freshness before weight."
+      },
+      "cigarHint": {
+        "hr": "Uz Ukiyo Japanese Yuzu Gin biraj kratki shade i ne žuri s drugim dimom. Drži čašu bliže pepeljari — ukiyo se bolje čita u sporijem krugu.",
+        "en": "The freshness of Ukiyo Japanese Yuzu Gin wants sparse smoke; leave maduro for a later sip."
+      }
+    },
+    "gin-broker-039-s-premium-london-dry-gin-40-0-7-l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Broker&#039;s Premium London Dry Gin ide u čašu zbog borovica, citrus i bilje, ne zbog slatkoće. Stil premium-dry (40 %), tijelo srednje.",
+        "en": "In Broker&#039;s Premium London Dry Gin, juniper shares space with borovica, citrus i bilje. Style: premium-dry (40 %). With a cigar keep the format shorter."
+      },
+      "cigarHint": {
+        "hr": "Svježina Broker&#039;s Premium London Dry Gin traži rijedak dim; maduro ostavi za drugi gutljaj večeri.",
+        "en": "With Broker&#039;s Premium London Dry Gin pick a short shade and do not rush the second puff."
+      }
+    },
+    "gin-amazzoni": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "U AMAZZONI borovica dijeli mjesto s cvijet, citrus i začini. Stil: contemporary (40 %). Uz cigaru format neka bude kraći.",
+        "en": "Profile of AMAZZONI: cvijet, citrus i začini. That is contemporary (40 %) — freshness before weight."
+      },
+      "cigarHint": {
+        "hr": "Uz AMAZZONI Connecticut ili panatela — citrus lako preglasi tamni pokrov. Jedan gutljaj, jedan dim; linija amazzoni ne voli pretrčavanje trećine.",
+        "en": "A gin like AMAZZONI likes a cooler draw and a mild cigar. Do not rush: this bottle (amazzoni) wants a quieter tempo beside the cigar."
+      }
+    },
+    "gin-amazzoni-maniuara": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "AMAZZONI MANIUARA ide u čašu zbog cvijet, citrus i začini, ne zbog slatkoće. Stil contemporary (40 %), tijelo srednje.",
+        "en": "AMAZZONI MANIUARA goes in the glass for cvijet, citrus i začini, not sweetness. Style contemporary (40 %), body medium body."
+      },
+      "cigarHint": {
+        "hr": "Gin kao AMAZZONI MANIUARA voli hladniji draw i blagu cigaru. Gutljaj neka prati prvi dim; bočica amazzoni drži svoj ritam do kraja večeri.",
+        "en": "A gin like AMAZZONI MANIUARA likes a cooler draw and a mild cigar. Keep the glass near the ashtray — amazzoni reads clearer in a slower loop."
+      }
+    },
+    "gin-bathtub": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Profil BATHTUB: cvijet, citrus i začini. To je contemporary (40 %) — svježina prije težine.",
+        "en": "BATHTUB goes in the glass for cvijet, citrus i začini, not sweetness. Style contemporary (40 %), body medium body."
+      },
+      "cigarHint": {
+        "hr": "Uz BATHTUB biraj kratki shade i ne žuri s drugim dimom. Ne žuri: ova boca (bathtub) traži mirniji tempo uz cigaru.",
+        "en": "A gin like BATHTUB likes a cooler draw and a mild cigar. Let the sip follow the first draw; bottle bathtub keeps its own pace."
+      }
+    },
+    "gin-bayab-african-grown-burnt-orange-small-batch-gin-43-vol-0-7l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "BAYAB African Grown BURNT ORANGE Small Batch Gin (43 %) — contemporary. Nos nosi cvijet, citrus i začini; srednje tijelo. G&T ili martini, ne desertni gutljaj.",
+        "en": "BAYAB African Grown BURNT ORANGE Small Batch Gin goes in the glass for cvijet, citrus i začini, not sweetness. Style contemporary (43 %), body medium body."
+      },
+      "cigarHint": {
+        "hr": "Uz BAYAB African Grown BURNT ORANGE Small Batch Gin Connecticut ili panatela — citrus lako preglasi tamni pokrov.",
+        "en": "The freshness of BAYAB African Grown BURNT ORANGE Small Batch Gin wants sparse smoke; leave maduro for a later sip."
+      }
+    },
+    "gin-blossom-gin-costa-blanca": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "BLOSSOM GIN COSTA BLANCA (40 %) — contemporary. Nos nosi bilje i cvijet; srednje tijelo. G&T ili martini, ne desertni gutljaj.",
+        "en": "BLOSSOM GIN COSTA BLANCA (World) holds bilje i cvijet in medium body. Do not force maduro with this gin."
+      },
+      "cigarHint": {
+        "hr": "Svježina BLOSSOM GIN COSTA BLANCA traži rijedak dim; maduro ostavi za drugi gutljaj večeri.",
+        "en": "A gin like BLOSSOM GIN COSTA BLANCA likes a cooler draw and a mild cigar. Let the sip follow the first draw; bottle blossom keeps its own pace."
+      }
+    },
+    "gin-bombay-sapphire-east": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "BOMBAY SAPPHIRE EAST ide u čašu zbog bilje, citrus i travnato, ne zbog slatkoće. Stil london-dry (40 %), tijelo srednje.",
+        "en": "BOMBAY SAPPHIRE EAST goes in the glass for bilje, citrus i travnato, not sweetness. Style london-dry (40 %), body medium body."
+      },
+      "cigarHint": {
+        "hr": "Gin kao BOMBAY SAPPHIRE EAST voli hladniji draw i blagu cigaru. Ne žuri: ova boca (bombay) traži mirniji tempo uz cigaru.",
+        "en": "With BOMBAY SAPPHIRE EAST pick a short shade and do not rush the second puff. Let the sip follow the first draw; bottle bombay keeps its own pace."
+      }
+    },
+    "gin-brockman-s": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "BROCKMAN'S (World) drži cvijet, citrus i začini u srednje tijelo. Ne forsiraš maduro uz ovaj gin.",
+        "en": "BROCKMAN'S (40 %) — contemporary. The nose carries cvijet, citrus i začini; medium body. G&T or martini, not a dessert sip."
+      },
+      "cigarHint": {
+        "hr": "Uz BROCKMAN'S Connecticut ili panatela — citrus lako preglasi tamni pokrov. Drži čašu bliže pepeljari — brockman se bolje čita u sporijem krugu.",
+        "en": "A gin like BROCKMAN'S likes a cooler draw and a mild cigar. Keep the glass near the ashtray — brockman reads clearer in a slower loop."
+      }
+    },
+    "gin-brockman-s-orange-kiss": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "BROCKMAN'S ORANGE KISS (World) drži bilje, borovica i citrus u srednje tijelo. Ne forsiraš maduro uz ovaj gin.",
+        "en": "Profile of BROCKMAN'S ORANGE KISS: bilje, borovica i citrus. That is contemporary (40 %) — freshness before weight."
+      },
+      "cigarHint": {
+        "hr": "Gin kao BROCKMAN'S ORANGE KISS voli hladniji draw i blagu cigaru. Jedan gutljaj, jedan dim; linija brockman ne voli pretrčavanje trećine.",
+        "en": "A gin like BROCKMAN'S ORANGE KISS likes a cooler draw and a mild cigar. Do not rush: this bottle (brockman) wants a quieter tempo beside the cigar."
+      }
+    },
+    "gin-brunswick-gin-aces-diamonds": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Profil BRUNSWICK GIN ACES DIAMONDS: cvijet, citrus i začini. To je contemporary (40 %) — svježina prije težine.",
+        "en": "Profile of BRUNSWICK GIN ACES DIAMONDS: cvijet, citrus i začini. That is contemporary (40 %) — freshness before weight."
+      },
+      "cigarHint": {
+        "hr": "Svježina BRUNSWICK GIN ACES DIAMONDS traži rijedak dim; maduro ostavi za drugi gutljaj večeri.",
+        "en": "With BRUNSWICK GIN ACES DIAMONDS Connecticut or panatela — citrus easily covers a dark wrapper."
+      }
+    },
+    "gin-brunswick-gin-aces-hearts": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "BRUNSWICK GIN ACES HEARTS (World) drži cvijet, citrus i začini u srednje tijelo. Ne forsiraš maduro uz ovaj gin.",
+        "en": "BRUNSWICK GIN ACES HEARTS (World) holds cvijet, citrus i začini in medium body. Do not force maduro with this gin."
+      },
+      "cigarHint": {
+        "hr": "Uz BRUNSWICK GIN ACES HEARTS Connecticut ili panatela — citrus lako preglasi tamni pokrov.",
+        "en": "A gin like BRUNSWICK GIN ACES HEARTS likes a cooler draw and a mild cigar. Do not rush: this bottle (brunswick) wants a quieter tempo beside the cigar."
+      }
+    },
+    "gin-brunswick-gin-aces-spades": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "BRUNSWICK GIN ACES SPADES (World) drži bilje, citrus i papar u srednje tijelo. Ne forsiraš maduro uz ovaj gin.",
+        "en": "BRUNSWICK GIN ACES SPADES (40 %) — contemporary. The nose carries bilje, citrus i papar; medium body. G&T or martini, not a dessert sip."
+      },
+      "cigarHint": {
+        "hr": "Uz BRUNSWICK GIN ACES SPADES biraj kratki shade i ne žuri s drugim dimom. Ne žuri: ova boca (brunswick) traži mirniji tempo uz cigaru.",
+        "en": "The freshness of BRUNSWICK GIN ACES SPADES wants sparse smoke; leave maduro for a later sip."
+      }
+    },
+    "gin-bloom-london-dry-gin-40-0-7-l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Bloom London Dry Gin ide u čašu zbog borovica, citrus i travnato, ne zbog slatkoće. Stil london-dry (40 %), tijelo srednje.",
+        "en": "Profile of Bloom London Dry Gin: borovica, citrus i travnato. That is london-dry (40 %) — freshness before weight., classic-juniper"
+      },
+      "cigarHint": {
+        "hr": "Uz Bloom London Dry Gin Connecticut ili panatela — citrus lako preglasi tamni pokrov.",
+        "en": "The freshness of Bloom London Dry Gin wants sparse smoke; leave maduro for a later sip."
+      }
+    },
+    "gin-bloom-london-dry-gin-40-vol-0-7l-u-poklon-kutiji-s-casom": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Bloom London Dry Gin (40 %) — london-dry, classic-juniper. Nos nosi borovica, citrus i travnato; srednje tijelo. G&T ili martini, ne desertni gutljaj.",
+        "en": "Profile of Bloom London Dry Gin: borovica, citrus i travnato. That is london-dry (40 %) — freshness before weight., classic-juniper"
+      },
+      "cigarHint": {
+        "hr": "Gin kao Bloom London Dry Gin voli hladniji draw i blagu cigaru. Drži čašu bliže pepeljari — bloom se bolje čita u sporijem krugu.",
+        "en": "A gin like Bloom London Dry Gin likes a cooler draw and a mild cigar. One sip, one draw; line bloom dislikes hurrying the middle third."
+      }
+    },
+    "gin-bobby-039-s-schiedam-dry-gin-42-vol-0-7-l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Bobby&#039;s Schiedam Dry Gin ide u čašu zbog borovica, citrus i travnato, ne zbog slatkoće. Stil london-dry (42 %), tijelo srednje.",
+        "en": "Profile of Bobby&#039;s Schiedam Dry Gin: borovica, citrus i travnato. That is london-dry (42 %) — freshness before weight., classic-juniper"
+      },
+      "cigarHint": {
+        "hr": "Uz Bobby&#039;s Schiedam Dry Gin biraj kratki shade i ne žuri s drugim dimom. Ne žuri: ova boca (bobby) traži mirniji tempo uz cigaru.",
+        "en": "The freshness of Bobby&#039;s Schiedam Dry Gin wants sparse smoke; leave maduro for a later sip."
+      }
+    },
+    "gin-bobby-039-s-schiedam-jenever-38-vol-0-7l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Bobby&#039;s Schiedam Jenever (38 %) — contemporary. Nos nosi cvijet, citrus i začini; srednje tijelo. G&T ili martini, ne desertni gutljaj.",
+        "en": "Bobby&#039;s Schiedam Jenever (World) holds cvijet, citrus i začini in medium body. Do not force maduro with this gin."
+      },
+      "cigarHint": {
+        "hr": "Uz Bobby&#039;s Schiedam Jenever biraj kratki shade i ne žuri s drugim dimom. Jedan gutljaj, jedan dim; linija bobby ne voli pretrčavanje trećine.",
+        "en": "With Bobby&#039;s Schiedam Jenever pick a short shade and do not rush the second puff."
+      }
+    },
+    "gin-bols-genever-amsterdam-gin-42-0-7-l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "U Bols Genever Amsterdam Gin borovica dijeli mjesto s cvijet, citrus i začini. Stil: contemporary (42 %). Uz cigaru format neka bude kraći.",
+        "en": "Bols Genever Amsterdam Gin (World) holds cvijet, citrus i začini in medium body. Do not force maduro with this gin."
+      },
+      "cigarHint": {
+        "hr": "Uz Bols Genever Amsterdam Gin biraj kratki shade i ne žuri s drugim dimom. Gutljaj neka prati prvi dim; bočica bols drži svoj ritam do kraja večeri.",
+        "en": "A gin like Bols Genever Amsterdam Gin likes a cooler draw and a mild cigar. One sip, one draw; line bols dislikes hurrying the middle third."
+      }
+    },
+    "gin-boudier-saffron-gin-40-vol-0-7-l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Boudier Saffron Gin ide u čašu zbog cvijet, citrus i začini, ne zbog slatkoće. Stil contemporary (40 %), tijelo srednje.",
+        "en": "In Boudier Saffron Gin, juniper shares space with cvijet, citrus i začini. Style: contemporary (40 %). With a cigar keep the format shorter."
+      },
+      "cigarHint": {
+        "hr": "Gin kao Boudier Saffron Gin voli hladniji draw i blagu cigaru. Jedan gutljaj, jedan dim; linija boudier ne voli pretrčavanje trećine.",
+        "en": "A gin like Boudier Saffron Gin likes a cooler draw and a mild cigar. Keep the glass near the ashtray — boudier reads clearer in a slower loop."
+      }
+    },
+    "gin-brockmans-intensly-smooth-orange-kiss-gin-40-vol-0-7l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Brockmans Intensly Smooth ORANGE KISS GIN ide u čašu zbog cvijet, citrus i začini, ne zbog slatkoće. Stil contemporary (40 %), tijelo srednje.",
+        "en": "Brockmans Intensly Smooth ORANGE KISS GIN (World) holds cvijet, citrus i začini in medium body. Do not force maduro with this gin."
+      },
+      "cigarHint": {
+        "hr": "Uz Brockmans Intensly Smooth ORANGE KISS GIN biraj kratki shade i ne žuri s drugim dimom.",
+        "en": "With Brockmans Intensly Smooth ORANGE KISS GIN Connecticut or panatela — citrus easily covers a dark wrapper."
+      }
+    },
+    "gin-brockmans-intensly-smooth-premium-gin-40-vol-0-7l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Brockmans Intensly Smooth PREMIUM GIN ide u čašu zbog cvijet, citrus i začini, ne zbog slatkoće. Stil contemporary (40 %), tijelo srednje.",
+        "en": "Brockmans Intensly Smooth PREMIUM GIN (40 %) — contemporary. The nose carries cvijet, citrus i začini; medium body. G&T or martini, not a dessert sip."
+      },
+      "cigarHint": {
+        "hr": "Uz Brockmans Intensly Smooth PREMIUM GIN biraj kratki shade i ne žuri s drugim dimom.",
+        "en": "The freshness of Brockmans Intensly Smooth PREMIUM GIN wants sparse smoke; leave maduro for a later sip."
+      }
+    },
+    "gin-brockmans-intensly-smooth-premium-gin-40-vol-0-7l-u-poklon-kutiji-s-casom": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Profil Brockmans Intensly Smooth PREMIUM GIN: cvijet, citrus i začini. To je contemporary (40 %) — svježina prije težine.",
+        "en": "Brockmans Intensly Smooth PREMIUM GIN (World) holds cvijet, citrus i začini in medium body. Do not force maduro with this gin."
+      },
+      "cigarHint": {
+        "hr": "Svježina Brockmans Intensly Smooth PREMIUM GIN traži rijedak dim; maduro ostavi za drugi gutljaj večeri.",
+        "en": "With Brockmans Intensly Smooth PREMIUM GIN Connecticut or panatela — citrus easily covers a dark wrapper."
+      }
+    },
+    "gin-bulldog-london-dry-gin-40-vol-0-7l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Bulldog London Dry Gin ide u čašu zbog borovica, citrus i travnato, ne zbog slatkoće. Stil london-dry (40 %), tijelo srednje.",
+        "en": "In Bulldog London Dry Gin, juniper shares space with borovica, citrus i travnato. Style: london-dry (40 %). With a cigar keep the format shorter."
+      },
+      "cigarHint": {
+        "hr": "Uz Bulldog London Dry Gin biraj kratki shade i ne žuri s drugim dimom. Jedan gutljaj, jedan dim; linija bulldog ne voli pretrčavanje trećine.",
+        "en": "A gin like Bulldog London Dry Gin likes a cooler draw and a mild cigar. Keep the glass near the ashtray — bulldog reads clearer in a slower loop."
+      }
+    },
+    "gin-cannabis-sativa-gin": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "CANNABIS SATIVA GIN ide u čašu zbog cvijet, citrus i začini, ne zbog slatkoće. Stil contemporary (40 %), tijelo srednje.",
+        "en": "Profile of CANNABIS SATIVA GIN: cvijet, citrus i začini. That is contemporary (40 %) — freshness before weight."
+      },
+      "cigarHint": {
+        "hr": "Gin kao CANNABIS SATIVA GIN voli hladniji draw i blagu cigaru. Gutljaj neka prati prvi dim; bočica cannabis drži svoj ritam do kraja večeri.",
+        "en": "With CANNABIS SATIVA GIN Connecticut or panatela — citrus easily covers a dark wrapper."
+      }
+    },
+    "gin-caorunn-gin-41-8-0-7-l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Profil Caorunn Gin: cvijet, citrus i začini. To je contemporary (41.8 %) — svježina prije težine.",
+        "en": "In Caorunn Gin, juniper shares space with cvijet, citrus i začini. Style: contemporary (41.8 %). With a cigar keep the format shorter."
+      },
+      "cigarHint": {
+        "hr": "Gin kao Caorunn Gin voli hladniji draw i blagu cigaru. Gutljaj neka prati prvi dim; bočica caorunn drži svoj ritam do kraja večeri.",
+        "en": "With Caorunn Gin Connecticut or panatela — citrus easily covers a dark wrapper. One sip, one draw; line caorunn dislikes hurrying the middle third."
+      }
+    },
+    "gin-chase-great-british-extra-dry-gin-gb-40-vol-0-7-l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Chase Great British Extra Dry Gin + GB (40 %) — london-dry, classic-juniper. Nos nosi borovica, citrus i travnato; srednje tijelo. G&T ili martini, ne desertni gutljaj.",
+        "en": "Chase Great British Extra Dry Gin + GB (40 %) — london-dry, classic-juniper. The nose carries borovica, citrus i travnato; medium body. G&T or martini, not a dessert sip."
+      },
+      "cigarHint": {
+        "hr": "Uz Chase Great British Extra Dry Gin + GB Connecticut ili panatela — citrus lako preglasi tamni pokrov.",
+        "en": "With Chase Great British Extra Dry Gin + GB pick a short shade and do not rush the second puff."
+      }
+    },
+    "gin-drumshanbo-gunpowder-californian-orange": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "DRUMSHANBO GUNPOWDER CALIFORNIAN ORANGE (40 %) — contemporary. Nos nosi anis, bilje i citrus; laganije tijelo. G&T ili martini, ne desertni gutljaj.",
+        "en": "DRUMSHANBO GUNPOWDER CALIFORNIAN ORANGE goes in the glass for anis, bilje i citrus, not sweetness. Style contemporary (40 %), body lighter body."
+      },
+      "cigarHint": {
+        "hr": "Uz DRUMSHANBO GUNPOWDER CALIFORNIAN ORANGE biraj kratki shade i ne žuri s drugim dimom.",
+        "en": "With DRUMSHANBO GUNPOWDER CALIFORNIAN ORANGE pick a short shade and do not rush the second puff."
+      }
+    },
+    "gin-drumshanbo-gunpowder-keramicka-boca": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "DRUMSHANBO GUNPOWDER KERAMIČKA BOCA (World) drži začini u laganije tijelo. Ne forsiraš maduro uz ovaj gin.",
+        "en": "Profile of DRUMSHANBO GUNPOWDER KERAMIČKA BOCA: začini. That is contemporary (40 %) — freshness before weight."
+      },
+      "cigarHint": {
+        "hr": "Martini uz DRUMSHANBO GUNPOWDER KERAMIČKA BOCA + kratka cigara: manje dimova, više nijanse.",
+        "en": "With DRUMSHANBO GUNPOWDER KERAMIČKA BOCA a mild Habano or Cameroon — juniper holds the bridge."
+      }
+    },
+    "gin-dictador-ortodoxy-colombian-aged-white-gin-43-vol-0-7": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Dictador Ortodoxy Colombian Aged White Gin (World) drži cvijet, citrus i začini u srednje tijelo. Ne forsiraš maduro uz ovaj gin.",
+        "en": "Dictador Ortodoxy Colombian Aged White Gin goes in the glass for cvijet, citrus i začini, not sweetness. Style contemporary (43 %), body medium body."
+      },
+      "cigarHint": {
+        "hr": "Uz Dictador Ortodoxy Colombian Aged White Gin biraj kratki shade i ne žuri s drugim dimom.",
+        "en": "With Dictador Ortodoxy Colombian Aged White Gin pick a short shade and do not rush the second puff."
+      }
+    },
+    "gin-g-039-vine-floraison-gin-de-france-40-vol-0-7l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "G&#039;Vine FLORAISON Gin de France (World) drži cvijet, citrus i začini u srednje tijelo. Ne forsiraš maduro uz ovaj gin.",
+        "en": "Profile of G&#039;Vine FLORAISON Gin de France: cvijet, citrus i začini. That is contemporary (40 %) — freshness before weight."
+      },
+      "cigarHint": {
+        "hr": "Uz G&#039;Vine FLORAISON Gin de France biraj kratki shade i ne žuri s drugim dimom.",
+        "en": "The freshness of G&#039;Vine FLORAISON Gin de France wants sparse smoke; leave maduro for a later sip."
+      }
+    },
+    "gin-gin-amp-p-gin-di-torino-42-vol-0-7-l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Profil GIN &amp; P Gin di Torino: cvijet, citrus i začini. To je contemporary (42 %) — svježina prije težine.",
+        "en": "GIN &amp; P Gin di Torino (World) holds cvijet, citrus i začini in medium body. Do not force maduro with this gin."
+      },
+      "cigarHint": {
+        "hr": "Gin kao GIN &amp; P Gin di Torino voli hladniji draw i blagu cigaru. Ne žuri: ova boca (gin) traži mirniji tempo uz cigaru.",
+        "en": "A gin like GIN &amp; P Gin di Torino likes a cooler draw and a mild cigar. One sip, one draw; line gin dislikes hurrying the middle third."
+      }
+    },
+    "gin-geranium-london-dry-gin-44-0-7-l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Geranium London Dry Gin (Engleska) drži borovica, citrus i travnato u srednje tijelo. Ne forsiraš maduro uz ovaj gin.",
+        "en": "Geranium London Dry Gin (Engleska) holds borovica, citrus i travnato in medium body. Do not force maduro with this gin."
+      },
+      "cigarHint": {
+        "hr": "Svježina Geranium London Dry Gin traži rijedak dim; maduro ostavi za drugi gutljaj večeri.",
+        "en": "The freshness of Geranium London Dry Gin wants sparse smoke; leave maduro for a later sip."
+      }
+    },
+    "gin-gin-balon-42-0-7-l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Gin Balon (World) drži cvijet, citrus i začini u srednje tijelo. Ne forsiraš maduro uz ovaj gin.",
+        "en": "Gin Balon goes in the glass for cvijet, citrus i začini, not sweetness. Style contemporary (42 %), body medium body."
+      },
+      "cigarHint": {
+        "hr": "Uz Gin Balon biraj kratki shade i ne žuri s drugim dimom. Ne žuri: ova boca (gin) traži mirniji tempo uz cigaru.",
+        "en": "A gin like Gin Balon likes a cooler draw and a mild cigar. Let the sip follow the first draw; bottle gin keeps its own pace."
+      }
+    },
+    "gin-herno-gin-40-5-vol-0-5-l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Hernö Gin (40.5 %) — contemporary. Nos nosi cvijet, citrus i začini; srednje tijelo. G&T ili martini, ne desertni gutljaj.",
+        "en": "Hernö Gin (40.5 %) — contemporary. The nose carries cvijet, citrus i začini; medium body. G&T or martini, not a dessert sip."
+      },
+      "cigarHint": {
+        "hr": "Uz Hernö Gin Connecticut ili panatela — citrus lako preglasi tamni pokrov. Ne žuri: ova boca (herno) traži mirniji tempo uz cigaru.",
+        "en": "With Hernö Gin Connecticut or panatela — citrus easily covers a dark wrapper. One sip, one draw; line herno dislikes hurrying the middle third."
+      }
+    },
+    "gin-le-gin-de-christian-drouin-42-vol-0-7l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Le Gin de Christian Drouin (42 %) — contemporary. Nos nosi cvijet, citrus i začini; srednje tijelo. G&T ili martini, ne desertni gutljaj.",
+        "en": "Le Gin de Christian Drouin (World) holds cvijet, citrus i začini in medium body. Do not force maduro with this gin."
+      },
+      "cigarHint": {
+        "hr": "Uz Le Gin de Christian Drouin biraj kratki shade i ne žuri s drugim dimom. Jedan gutljaj, jedan dim; linija le ne voli pretrčavanje trećine.",
+        "en": "With Le Gin de Christian Drouin pick a short shade and do not rush the second puff."
+      }
+    },
+    "gin-mombasa-club-lemon-edition-gin-37-5-vol-0-7l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Mombasa Club Lemon Edition Gin (World) drži cvijet, citrus i začini u srednje tijelo. Ne forsiraš maduro uz ovaj gin.",
+        "en": "Mombasa Club Lemon Edition Gin (37.5 %) — contemporary. The nose carries cvijet, citrus i začini; medium body. G&T or martini, not a dessert sip."
+      },
+      "cigarHint": {
+        "hr": "Uz Mombasa Club Lemon Edition Gin biraj kratki shade i ne žuri s drugim dimom. Ne žuri: ova boca (mombasa) traži mirniji tempo uz cigaru.",
+        "en": "A gin like Mombasa Club Lemon Edition Gin likes a cooler draw and a mild cigar. Keep the glass near the ashtray — mombasa reads clearer in a slower loop."
+      }
+    },
+    "gin-mombasa-club-london-dry-gin-41-5-0-7": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Mombasa Club London Dry Gin ide u čašu zbog borovica, citrus i travnato, ne zbog slatkoće. Stil london-dry (41.5 %), tijelo srednje.",
+        "en": "In Mombasa Club London Dry Gin, juniper shares space with borovica, citrus i travnato. Style: london-dry (41.5 %). With a cigar keep the format shorter."
+      },
+      "cigarHint": {
+        "hr": "Uz Mombasa Club London Dry Gin Connecticut ili panatela — citrus lako preglasi tamni pokrov.",
+        "en": "The freshness of Mombasa Club London Dry Gin wants sparse smoke; leave maduro for a later sip."
+      }
+    },
+    "gin-opihr-oriental-spiced-gin-42-5-0-7-l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "OPIHR Oriental Spiced Gin (42.5 %) — contemporary. Nos nosi cvijet, citrus i začini; srednje tijelo. G&T ili martini, ne desertni gutljaj.",
+        "en": "OPIHR Oriental Spiced Gin goes in the glass for cvijet, citrus i začini, not sweetness. Style contemporary (42.5 %), body medium body."
+      },
+      "cigarHint": {
+        "hr": "Uz OPIHR Oriental Spiced Gin Connecticut ili panatela — citrus lako preglasi tamni pokrov.",
+        "en": "The freshness of OPIHR Oriental Spiced Gin wants sparse smoke; leave maduro for a later sip."
+      }
+    },
+    "gin-opihr-oriental-spiced-gin-42-5-0-7-l-u-poklon-kutiji-s-globus-casom": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Profil OPIHR Oriental Spiced Gin: cvijet, citrus i začini. To je contemporary (42.5 %) — svježina prije težine.",
+        "en": "In OPIHR Oriental Spiced Gin, juniper shares space with cvijet, citrus i začini. Style: contemporary (42.5 %). With a cigar keep the format shorter."
+      },
+      "cigarHint": {
+        "hr": "Uz OPIHR Oriental Spiced Gin biraj kratki shade i ne žuri s drugim dimom. Drži čašu bliže pepeljari — opihr se bolje čita u sporijem krugu.",
+        "en": "With OPIHR Oriental Spiced Gin pick a short shade and do not rush the second puff."
+      }
+    },
+    "gin-opihr-london-dry-gin-european-edition-43-vol-0-7l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Profil Opihr London Dry Gin EUROPEAN EDITION: borovica, citrus i travnato. To je london-dry (43 %) — svježina prije težine., classic-juniper",
+        "en": "In Opihr London Dry Gin EUROPEAN EDITION, juniper shares space with borovica, citrus i travnato. Style: london-dry (43 %). With a cigar keep the format shorter."
+      },
+      "cigarHint": {
+        "hr": "Gin kao Opihr London Dry Gin EUROPEAN EDITION voli hladniji draw i blagu cigaru.",
+        "en": "With Opihr London Dry Gin EUROPEAN EDITION Connecticut or panatela — citrus easily covers a dark wrapper."
+      }
+    },
+    "gin-opihr-london-dry-gin-european-edition-43-vol-0-7l-in-giftbox-with-travel-mug": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Opihr London Dry Gin EUROPEAN EDITION (43 %) — london-dry, classic-juniper. Nos nosi borovica, citrus i travnato; srednje tijelo. G&T ili martini, ne desertni gutljaj.",
+        "en": "Opihr London Dry Gin EUROPEAN EDITION (43 %) — london-dry, classic-juniper. The nose carries borovica, citrus i travnato; medium body. G&T or martini, not a dessert sip."
+      },
+      "cigarHint": {
+        "hr": "Uz Opihr London Dry Gin EUROPEAN EDITION biraj kratki shade i ne žuri s drugim dimom.",
+        "en": "With Opihr London Dry Gin EUROPEAN EDITION pick a short shade and do not rush the second puff."
+      }
+    },
+    "gin-opihr-london-dry-gin-far-east-edition-43-vol-0-7l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "U Opihr London Dry Gin FAR EAST EDITION borovica dijeli mjesto s borovica, citrus i travnato. Stil: london-dry (43 %). Uz cigaru format neka bude kraći.",
+        "en": "Opihr London Dry Gin FAR EAST EDITION (Engleska) holds borovica, citrus i travnato in medium body. Do not force maduro with this gin."
+      },
+      "cigarHint": {
+        "hr": "Uz Opihr London Dry Gin FAR EAST EDITION biraj kratki shade i ne žuri s drugim dimom.",
+        "en": "A gin like Opihr London Dry Gin FAR EAST EDITION likes a cooler draw and a mild cigar."
+      }
+    },
+    "gin-opihr-london-dry-gin-far-east-edition-43-vol-0-7l-in-giftbox-with-travel-mug": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Opihr London Dry Gin FAR EAST EDITION ide u čašu zbog borovica, citrus i travnato, ne zbog slatkoće. Stil london-dry (43 %), tijelo srednje.",
+        "en": "Opihr London Dry Gin FAR EAST EDITION (43 %) — london-dry, classic-juniper. The nose carries borovica, citrus i travnato; medium body. G&T or martini, not a dessert sip."
+      },
+      "cigarHint": {
+        "hr": "Gin kao Opihr London Dry Gin FAR EAST EDITION voli hladniji draw i blagu cigaru.",
+        "en": "With Opihr London Dry Gin FAR EAST EDITION pick a short shade and do not rush the second puff."
+      }
+    },
+    "gin-peaky-blinder-spiced-dry-gin-40-vol-0-7l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "U Peaky Blinder Spiced Dry Gin borovica dijeli mjesto s borovica, citrus i travnato. Stil: london-dry (40 %). Uz cigaru format neka bude kraći.",
+        "en": "In Peaky Blinder Spiced Dry Gin, juniper shares space with borovica, citrus i travnato. Style: london-dry (40 %). With a cigar keep the format shorter."
+      },
+      "cigarHint": {
+        "hr": "Uz Peaky Blinder Spiced Dry Gin biraj kratki shade i ne žuri s drugim dimom. Jedan gutljaj, jedan dim; linija peaky ne voli pretrčavanje trećine.",
+        "en": "With Peaky Blinder Spiced Dry Gin pick a short shade and do not rush the second puff."
+      }
+    },
+    "gin-reisetbauer-blue-gin-vintage-43-0-7-l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Reisetbauer Blue Gin Vintage (World) drži cvijet, citrus i začini u srednje tijelo. Ne forsiraš maduro uz ovaj gin.",
+        "en": "Reisetbauer Blue Gin Vintage goes in the glass for cvijet, citrus i začini, not sweetness. Style contemporary (43 %), body medium body."
+      },
+      "cigarHint": {
+        "hr": "Gin kao Reisetbauer Blue Gin Vintage voli hladniji draw i blagu cigaru. Drži čašu bliže pepeljari — reisetbauer se bolje čita u sporijem krugu.",
+        "en": "A gin like Reisetbauer Blue Gin Vintage likes a cooler draw and a mild cigar. Keep the glass near the ashtray — reisetbauer reads clearer in a slower loop."
+      }
+    },
+    "gin-ungava-canada-gin-43-1-vol-0-7l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Ungava Canada Gin ide u čašu zbog cvijet, citrus i začini, ne zbog slatkoće. Stil contemporary (43.1 %), tijelo srednje.",
+        "en": "In Ungava Canada Gin, juniper shares space with cvijet, citrus i začini. Style: contemporary (43.1 %). With a cigar keep the format shorter."
+      },
+      "cigarHint": {
+        "hr": "Uz Ungava Canada Gin biraj kratki shade i ne žuri s drugim dimom. Drži čašu bliže pepeljari — ungava se bolje čita u sporijem krugu.",
+        "en": "A gin like Ungava Canada Gin likes a cooler draw and a mild cigar. Do not rush: this bottle (ungava) wants a quieter tempo beside the cigar."
+      }
+    },
+    "gin-x-gin-46-0-5-l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "X-GIN (World) drži cvijet, citrus i začini u srednje tijelo. Ne forsiraš maduro uz ovaj gin.",
+        "en": "X-GIN (World) holds cvijet, citrus i začini in medium body. Do not force maduro with this gin."
+      },
+      "cigarHint": {
+        "hr": "Svježina X-GIN traži rijedak dim; maduro ostavi za drugi gutljaj večeri. Gutljaj neka prati prvi dim; bočica x drži svoj ritam do kraja večeri.",
+        "en": "A gin like X-GIN likes a cooler draw and a mild cigar. Keep the glass near the ashtray — x reads clearer in a slower loop."
+      }
+    },
+    "gin-beefeater-blood-orange": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "BEEFEATER BLOOD ORANGE ide u čašu zbog borovica, citrus i začini, ne zbog slatkoće. Stil london-dry (40 %), tijelo srednje.",
+        "en": "In BEEFEATER BLOOD ORANGE, juniper shares space with borovica, citrus i začini. Style: london-dry (40 %). With a cigar keep the format shorter."
+      },
+      "cigarHint": {
+        "hr": "Uz BEEFEATER BLOOD ORANGE Connecticut ili panatela — citrus lako preglasi tamni pokrov.",
+        "en": "The freshness of BEEFEATER BLOOD ORANGE wants sparse smoke; leave maduro for a later sip."
+      }
+    },
+    "gin-bombay-original": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Profil BOMBAY ORIGINAL: borovica, citrus i travnato. To je london-dry (40 %) — svježina prije težine., classic-juniper",
+        "en": "In BOMBAY ORIGINAL, juniper shares space with borovica, citrus i travnato. Style: london-dry (40 %). With a cigar keep the format shorter."
+      },
+      "cigarHint": {
+        "hr": "Svježina BOMBAY ORIGINAL traži rijedak dim; maduro ostavi za drugi gutljaj večeri.",
+        "en": "A gin like BOMBAY ORIGINAL likes a cooler draw and a mild cigar. Keep the glass near the ashtray — bombay reads clearer in a slower loop."
+      }
+    },
+    "gin-bombay-sapphire": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "BOMBAY SAPPHIRE (40 %) — london-dry, classic-juniper. Nos nosi borovica, citrus i travnato; srednje tijelo. G&T ili martini, ne desertni gutljaj.",
+        "en": "BOMBAY SAPPHIRE (40 %) — london-dry, classic-juniper. The nose carries borovica, citrus i travnato; medium body. G&T or martini, not a dessert sip."
+      },
+      "cigarHint": {
+        "hr": "Gin kao BOMBAY SAPPHIRE voli hladniji draw i blagu cigaru. Jedan gutljaj, jedan dim; linija bombay ne voli pretrčavanje trećine.",
+        "en": "With BOMBAY SAPPHIRE Connecticut or panatela — citrus easily covers a dark wrapper."
+      }
+    },
+    "gin-bulldog": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Profil BULLDOG: cvijet, citrus i začini. To je contemporary (40 %) — svježina prije težine.",
+        "en": "BULLDOG goes in the glass for cvijet, citrus i začini, not sweetness. Style contemporary (40 %), body medium body."
+      },
+      "cigarHint": {
+        "hr": "Gin kao BULLDOG voli hladniji draw i blagu cigaru. Ne žuri: ova boca (bulldog) traži mirniji tempo uz cigaru.",
+        "en": "With BULLDOG pick a short shade and do not rush the second puff. Let the sip follow the first draw; bottle bulldog keeps its own pace."
+      }
+    },
+    "gin-bosford-rose-premium-gin-37-5-0-7-l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "U Bosford Rose Premium Gin borovica dijeli mjesto s cvijet, citrus i začini. Stil: contemporary (37.5 %). Uz cigaru format neka bude kraći.",
+        "en": "In Bosford Rose Premium Gin, juniper shares space with cvijet, citrus i začini. Style: contemporary (37.5 %). With a cigar keep the format shorter."
+      },
+      "cigarHint": {
+        "hr": "Gin kao Bosford Rose Premium Gin voli hladniji draw i blagu cigaru. Ne žuri: ova boca (bosford) traži mirniji tempo uz cigaru.",
+        "en": "A gin like Bosford Rose Premium Gin likes a cooler draw and a mild cigar. Keep the glass near the ashtray — bosford reads clearer in a slower loop."
+      }
+    },
+    "gin-portobello-road-gin-no-171-42-0-7-l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Portobello Road Gin No. 171 (World) drži cvijet, citrus i začini u srednje tijelo. Ne forsiraš maduro uz ovaj gin.",
+        "en": "Portobello Road Gin No. 171 goes in the glass for cvijet, citrus i začini, not sweetness. Style contemporary (42 %), body medium body."
+      },
+      "cigarHint": {
+        "hr": "Uz Portobello Road Gin No. 171 biraj kratki shade i ne žuri s drugim dimom. Jedan gutljaj, jedan dim; linija portobello ne voli pretrčavanje trećine.",
+        "en": "The freshness of Portobello Road Gin No. 171 wants sparse smoke; leave maduro for a later sip."
+      }
+    },
+    "gin-broker-s": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "U BROKER'S borovica dijeli mjesto s borovica, citrus i travnato. Stil: london-dry (40 %). Uz cigaru format neka bude kraći.",
+        "en": "BROKER'S (40 %) — london-dry, classic-juniper. The nose carries borovica, citrus i travnato; medium body. G&T or martini, not a dessert sip."
+      },
+      "cigarHint": {
+        "hr": "Uz BROKER'S biraj kratki shade i ne žuri s drugim dimom. Jedan gutljaj, jedan dim; linija broker ne voli pretrčavanje trećine.",
+        "en": "With BROKER'S Connecticut or panatela — citrus easily covers a dark wrapper. Keep the glass near the ashtray — broker reads clearer in a slower loop."
+      }
+    },
+    "gin-earl-brown": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "EARL BROWN (40 %) — contemporary. Nos nosi cvijet, citrus i začini; srednje tijelo. G&T ili martini, ne desertni gutljaj.",
+        "en": "EARL BROWN (40 %) — contemporary. The nose carries cvijet, citrus i začini; medium body. G&T or martini, not a dessert sip."
+      },
+      "cigarHint": {
+        "hr": "Uz EARL BROWN biraj kratki shade i ne žuri s drugim dimom. Drži čašu bliže pepeljari — earl se bolje čita u sporijem krugu.",
+        "en": "With EARL BROWN pick a short shade and do not rush the second puff. Keep the glass near the ashtray — earl reads clearer in a slower loop."
       }
     }
   }

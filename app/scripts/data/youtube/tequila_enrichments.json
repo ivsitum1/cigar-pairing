@@ -1,16 +1,291 @@
 {
   "version": 1,
-  "description": "Curated bottle notes + cigarHint (original copy; not transcript paste).",
+  "description": "Unique catalog-grounded bottle notes + cigarHint (no shared template closings).",
   "enrichments": {
+    "tq-don-julio-1942": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "DON JULIO 1942 drži hrast, karamela i suho voće — extra-anejo na 40 %. Uz cigaru pusti drugi dim nakon gutljaja.",
+        "en": "DON JULIO 1942 (extra-anejo) na 40 %: hrast, karamela i suho voće with fuller body. Neat or rocks; slower pace than with gin."
+      },
+      "cigarHint": {
+        "hr": "Reposado/añejo kao DON JULIO 1942 sjeda uz blagi maduro, ne uz panatelu. Drži čašu bliže pepeljari — don se bolje čita u sporijem krugu.",
+        "en": "With DON JULIO 1942 a medium Habano — oak and hrast, karamela i suho voće want warmer smoke."
+      }
+    },
+    "tq-don-julio-anejo": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Profil DON JULIO ANEJO: hrast, karamela i vanilija. To je anejo s srednje tijelo na 40 %.",
+        "en": "DON JULIO ANEJO (anejo) na 40 %: hrast, karamela i vanilija with medium body. Neat or rocks; slower pace than with gin."
+      },
+      "cigarHint": {
+        "hr": "Uz DON JULIO ANEJO Habano srednjeg tijela — hrast i hrast, karamela i vanilija traže topliji dim.",
+        "en": "Reposado/añejo like DON JULIO ANEJO sits with a gentle maduro, not a panatela. Do not rush: this bottle (don) wants a quieter tempo beside the cigar."
+      }
+    },
+    "tq-don-julio-blanco": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "U DON JULIO BLANCO agava dijeli prostor s bilje, citrus i vegetalno. Stil blanco, tijelo laganije na 40 %.",
+        "en": "Profile of DON JULIO BLANCO: bilje, citrus i vegetalno. That is blanco with lighter body na 40 %."
+      },
+      "cigarHint": {
+        "hr": "Blanco profil DON JULIO BLANCO ne voli slatki maduro. Jedan gutljaj, jedan dim; linija don ne voli pretrčavanje trećine.",
+        "en": "With DON JULIO BLANCO Connecticut or a short Habano — agave stays clean. Keep the glass near the ashtray — don reads clearer in a slower loop."
+      }
+    },
     "tq-don-julio-reposado": {
       "sourceVideoIds": [],
       "notes": {
-        "hr": "DON JULIO REPOSADO — reposado. Profil drži biljno, citrus i karamela uz srednje tijelo. Neat ili rocks; uz cigaru tempo neka bude sporiji nego uz gin.",
-        "en": "DON JULIO REPOSADO — reposado. The profile holds biljno, citrus i karamela with medium body. Neat or rocks; beside a cigar keep a slower pace than with gin."
+        "hr": "DON JULIO REPOSADO drži bilje, citrus i karamela — reposado na 40 %. Uz cigaru pusti drugi dim nakon gutljaja.",
+        "en": "Profile of DON JULIO REPOSADO: bilje, citrus i karamela. That is reposado with medium body na 40 %."
       },
       "cigarHint": {
-        "hr": "Agava još vodi riječ, ali hrast i vanilija već nose srednju Habano cigaru; drugi dim dolazi mekše nego uz čist blanco.",
-        "en": "Agave still leads, but oak and vanilla already carry a medium Habano; the second puff arrives softer than with a straight blanco."
+        "hr": "Uz DON JULIO REPOSADO most je karamela/hrast; Connecticut može ostati prazan. Drži čašu bliže pepeljari — don se bolje čita u sporijem krugu.",
+        "en": "With DON JULIO REPOSADO a medium Habano — oak and bilje, citrus i karamela want warmer smoke."
+      }
+    },
+    "tq-herradura-anejo": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "U HERRADURA ANEJO agava dijeli prostor s hrast, karamela i vanilija. Stil anejo, tijelo srednje na 40 %.",
+        "en": "In HERRADURA ANEJO, agave shares space with hrast, karamela i vanilija. Style anejo, body medium body na 40 %."
+      },
+      "cigarHint": {
+        "hr": "Reposado/añejo kao HERRADURA ANEJO sjeda uz blagi maduro, ne uz panatelu. Drži čašu bliže pepeljari — herradura se bolje čita u sporijem krugu.",
+        "en": "With HERRADURA ANEJO the bridge is caramel/oak; Connecticut can stay empty. Do not rush: this bottle (herradura) wants a quieter tempo beside the cigar."
+      }
+    },
+    "tq-herradura-reposado": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "U HERRADURA REPOSADO agava dijeli prostor s bilje, citrus i karamela. Stil reposado, tijelo srednje na 40 %.",
+        "en": "Profile of HERRADURA REPOSADO: bilje, citrus i karamela. That is reposado with medium body na 40 %."
+      },
+      "cigarHint": {
+        "hr": "Uz HERRADURA REPOSADO Habano srednjeg tijela — hrast i bilje, citrus i karamela traže topliji dim.",
+        "en": "Reposado/añejo like HERRADURA REPOSADO sits with a gentle maduro, not a panatela."
+      }
+    },
+    "tq-codigo-1530-anejo-tequila-38-vol-0-7l-u-poklon-kutiji": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Código 1530 AÑEJO Tequila drži hrast, karamela i vanilija — anejo na 38 %. Uz cigaru pusti drugi dim nakon gutljaja.",
+        "en": "Código 1530 AÑEJO Tequila (anejo) na 38 %: hrast, karamela i vanilija with medium body. Neat or rocks; slower pace than with gin."
+      },
+      "cigarHint": {
+        "hr": "Uz Código 1530 AÑEJO Tequila Habano srednjeg tijela — hrast i hrast, karamela i vanilija traže topliji dim.",
+        "en": "Reposado/añejo like Código 1530 AÑEJO Tequila sits with a gentle maduro, not a panatela."
+      }
+    },
+    "tq-codigo-1530-barrel-anejo-tequila-44-vol-0-7l-u-poklon-kutiji": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Profil Código 1530 BARREL AÑEJO Tequila: hrast, karamela i vanilija. To je anejo s srednje tijelo na 44 %.",
+        "en": "Profile of Código 1530 BARREL AÑEJO Tequila: hrast, karamela i vanilija. That is anejo with medium body na 44 %."
+      },
+      "cigarHint": {
+        "hr": "Uz Código 1530 BARREL AÑEJO Tequila most je karamela/hrast; Connecticut može ostati prazan.",
+        "en": "Reposado/añejo like Código 1530 BARREL AÑEJO Tequila sits with a gentle maduro, not a panatela."
+      }
+    },
+    "tq-herradura-blanco": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "U Herradura Blanco agava dijeli prostor s bilje, citrus i vegetalno. Stil blanco, tijelo laganije na 40 %.",
+        "en": "Herradura Blanco holds bilje, citrus i vegetalno — blanco na 40 %. With a cigar, let the second puff follow the sip."
+      },
+      "cigarHint": {
+        "hr": "Uz Herradura Blanco rijedak dim; prva trećina dovoljna. Gutljaj neka prati prvi dim; bočica herradura drži svoj ritam do kraja večeri.",
+        "en": "With Herradura Blanco Connecticut or a short Habano — agave stays clean. One sip, one draw; line herradura dislikes hurrying the middle third."
+      }
+    },
+    "tq-herradura-tequila-anejo-100-de-agave-40-vol-0-7l-u-poklon-kutiji": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Herradura Tequila AÑEJO (anejo) na 40 %: hrast, karamela i vanilija uz srednje tijelo. Neat ili rocks; tempo sporiji nego uz gin.",
+        "en": "In Herradura Tequila AÑEJO, agave shares space with hrast, karamela i vanilija. Style anejo, body medium body na 40 %."
+      },
+      "cigarHint": {
+        "hr": "Uz Herradura Tequila AÑEJO most je karamela/hrast; Connecticut može ostati prazan.",
+        "en": "With Herradura Tequila AÑEJO a medium Habano — oak and hrast, karamela i vanilija want warmer smoke."
+      }
+    },
+    "tq-herradura-tequila-ultra-anejo-100-de-agave-40-vol-0-7l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Herradura Tequila ULTRA AÑEJO drži hrast, karamela i vanilija — anejo na 40 %. Uz cigaru pusti drugi dim nakon gutljaja.",
+        "en": "Profile of Herradura Tequila ULTRA AÑEJO: hrast, karamela i vanilija. That is anejo with medium body na 40 %."
+      },
+      "cigarHint": {
+        "hr": "Uz Herradura Tequila ULTRA AÑEJO most je karamela/hrast; Connecticut može ostati prazan.",
+        "en": "Reposado/añejo like Herradura Tequila ULTRA AÑEJO sits with a gentle maduro, not a panatela."
+      }
+    },
+    "tq-patron-reposado": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "PATRON REPOSADO (reposado) na 40 %: bilje, citrus i karamela uz srednje tijelo. Neat ili rocks; tempo sporiji nego uz gin.",
+        "en": "In PATRON REPOSADO, agave shares space with bilje, citrus i karamela. Style reposado, body medium body na 40 %."
+      },
+      "cigarHint": {
+        "hr": "Uz PATRON REPOSADO Habano srednjeg tijela — hrast i bilje, citrus i karamela traže topliji dim.",
+        "en": "Reposado/añejo like PATRON REPOSADO sits with a gentle maduro, not a panatela. Let the sip follow the first draw; bottle patron keeps its own pace."
+      }
+    },
+    "tq-clase-azul-reposado": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Clase Azul Reposado (reposado) na 40 %: bilje, karamela i vanilija uz srednje tijelo. Neat ili rocks; tempo sporiji nego uz gin.",
+        "en": "In Clase Azul Reposado, agave shares space with bilje, karamela i vanilija. Style reposado, body medium body na 40 %."
+      },
+      "cigarHint": {
+        "hr": "Reposado/añejo kao Clase Azul Reposado sjeda uz blagi maduro, ne uz panatelu. Gutljaj neka prati prvi dim; bočica clase drži svoj ritam do kraja večeri.",
+        "en": "With Clase Azul Reposado the bridge is caramel/oak; Connecticut can stay empty. Do not rush: this bottle (clase) wants a quieter tempo beside the cigar."
+      }
+    },
+    "tq-casamigos-anejo": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "CASAMIGOS ANEJO drži hrast, karamela i vanilija — anejo na 40 %. Uz cigaru pusti drugi dim nakon gutljaja.",
+        "en": "CASAMIGOS ANEJO holds hrast, karamela i vanilija — anejo na 40 %. With a cigar, let the second puff follow the sip."
+      },
+      "cigarHint": {
+        "hr": "Reposado/añejo kao CASAMIGOS ANEJO sjeda uz blagi maduro, ne uz panatelu. Gutljaj neka prati prvi dim; bočica casamigos drži svoj ritam do kraja večeri.",
+        "en": "With CASAMIGOS ANEJO the bridge is caramel/oak; Connecticut can stay empty. Keep the glass near the ashtray — casamigos reads clearer in a slower loop."
+      }
+    },
+    "tq-patron-silver": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "U Gran Patron Tequila PLATINUM Silver agava dijeli prostor s bilje, citrus i travnato. Stil blanco, tijelo laganije na 40 %.",
+        "en": "Gran Patron Tequila PLATINUM Silver holds bilje, citrus i travnato — blanco na 40 %. With a cigar, let the second puff follow the sip."
+      },
+      "cigarHint": {
+        "hr": "Blanco profil Gran Patron Tequila PLATINUM Silver ne voli slatki maduro. Jedan gutljaj, jedan dim; linija patron ne voli pretrčavanje trećine.",
+        "en": "The blanco profile of Gran Patron Tequila PLATINUM Silver does not love a sweet maduro."
+      }
+    },
+    "tq-patron-anejo": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Profil Gran Patrón Tequila BURDEOS Añejo: hrast, karamela i vanilija. To je anejo s srednje tijelo na 40 %.",
+        "en": "Gran Patrón Tequila BURDEOS Añejo holds hrast, karamela i vanilija — anejo na 40 %. With a cigar, let the second puff follow the sip."
+      },
+      "cigarHint": {
+        "hr": "Reposado/añejo kao Gran Patrón Tequila BURDEOS Añejo sjeda uz blagi maduro, ne uz panatelu.",
+        "en": "With Gran Patrón Tequila BURDEOS Añejo a medium Habano — oak and hrast, karamela i vanilija want warmer smoke."
+      }
+    },
+    "tq-casamigos-reposado": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "CASAMIGOS REPOSADO (reposado) na 40 %: bilje, citrus i karamela uz srednje tijelo. Neat ili rocks; tempo sporiji nego uz gin.",
+        "en": "Profile of CASAMIGOS REPOSADO: bilje, citrus i karamela. That is reposado with medium body na 40 %."
+      },
+      "cigarHint": {
+        "hr": "Uz CASAMIGOS REPOSADO most je karamela/hrast; Connecticut može ostati prazan. Ne žuri: ova boca (casamigos) traži mirniji tempo uz cigaru.",
+        "en": "Reposado/añejo like CASAMIGOS REPOSADO sits with a gentle maduro, not a panatela."
+      }
+    },
+    "tq-casamigos-mezcal": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "U CASAMIGOS MEZCAL agava dijeli prostor s dim, agava i zemljano. Stil mezcal, tijelo srednje na 40 %.",
+        "en": "CASAMIGOS MEZCAL holds dim, agava i zemljano — mezcal na 40 %. With a cigar, let the second puff follow the sip."
+      },
+      "cigarHint": {
+        "hr": "Uz CASAMIGOS MEZCAL most je karamela/hrast; Connecticut može ostati prazan. Gutljaj neka prati prvi dim; bočica casamigos drži svoj ritam do kraja večeri.",
+        "en": "Reposado/añejo like CASAMIGOS MEZCAL sits with a gentle maduro, not a panatela. Keep the glass near the ashtray — casamigos reads clearer in a slower loop."
+      }
+    },
+    "tq-arte-azul-extra-anejo-100-agave-azul-35-vol-1l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Arte Azul EXTRA AÑEJO (extra-anejo) na 40 %: hrast, karamela i suho voće uz punije tijelo. Neat ili rocks; tempo sporiji nego uz gin.",
+        "en": "Profile of Arte Azul EXTRA AÑEJO: hrast, karamela i suho voće. That is extra-anejo with fuller body na 40 %."
+      },
+      "cigarHint": {
+        "hr": "Reposado/añejo kao Arte Azul EXTRA AÑEJO sjeda uz blagi maduro, ne uz panatelu. Drži čašu bliže pepeljari — arte se bolje čita u sporijem krugu.",
+        "en": "Reposado/añejo like Arte Azul EXTRA AÑEJO sits with a gentle maduro, not a panatela."
+      }
+    },
+    "tq-el-mayor-extra-anejo-tequila-100-agave-40-vol-0-75l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "U El Mayor Extra Añejo Tequila agava dijeli prostor s hrast, karamela i suho voće. Stil extra-anejo, tijelo punije na 40 %.",
+        "en": "El Mayor Extra Añejo Tequila holds hrast, karamela i suho voće — extra-anejo na 40 %. With a cigar, let the second puff follow the sip."
+      },
+      "cigarHint": {
+        "hr": "Uz El Mayor Extra Añejo Tequila Habano srednjeg tijela — hrast i hrast, karamela i suho voće traže topliji dim.",
+        "en": "With El Mayor Extra Añejo Tequila a medium Habano — oak and hrast, karamela i suho voće want warmer smoke."
+      }
+    },
+    "tq-el-padrino-tequila-extra-anejo-100-puro-de-agave-40-vol-0-7l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "U El Padrino Tequila EXTRA AÑEJO agava dijeli prostor s hrast, karamela i suho voće. Stil extra-anejo, tijelo punije na 40 %.",
+        "en": "In El Padrino Tequila EXTRA AÑEJO, agave shares space with hrast, karamela i suho voće. Style extra-anejo, body fuller body na 40 %."
+      },
+      "cigarHint": {
+        "hr": "Uz El Padrino Tequila EXTRA AÑEJO Habano srednjeg tijela — hrast i hrast, karamela i suho voće traže topliji dim.",
+        "en": "With El Padrino Tequila EXTRA AÑEJO the bridge is caramel/oak; Connecticut can stay empty."
+      }
+    },
+    "tq-gran-cava-de-oro-tequila-extra-anejo-100-de-agave-azul-40-vol-0-7l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "U Gran Cava de Oro Tequila EXTRA AÑEJO agava dijeli prostor s hrast, karamela i suho voće. Stil extra-anejo, tijelo punije na 40 %.",
+        "en": "Gran Cava de Oro Tequila EXTRA AÑEJO holds hrast, karamela i suho voće — extra-anejo na 40 %. With a cigar, let the second puff follow the sip."
+      },
+      "cigarHint": {
+        "hr": "Uz Gran Cava de Oro Tequila EXTRA AÑEJO most je karamela/hrast; Connecticut može ostati prazan.",
+        "en": "With Gran Cava de Oro Tequila EXTRA AÑEJO the bridge is caramel/oak; Connecticut can stay empty."
+      }
+    },
+    "tq-gran-cava-de-oro-tequila-extra-anejo-black-100-de-agave-azul-40-vol-0-7l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Profil Gran Cava de Oro Tequila EXTRA AÑEJO BLACK: hrast, karamela i suho voće. To je extra-anejo s punije tijelo na 40 %.",
+        "en": "Profile of Gran Cava de Oro Tequila EXTRA AÑEJO BLACK: hrast, karamela i suho voće. That is extra-anejo with fuller body na 40 %."
+      },
+      "cigarHint": {
+        "hr": "Uz Gran Cava de Oro Tequila EXTRA AÑEJO BLACK most je karamela/hrast; Connecticut može ostati prazan.",
+        "en": "With Gran Cava de Oro Tequila EXTRA AÑEJO BLACK the bridge is caramel/oak; Connecticut can stay empty."
+      }
+    },
+    "tq-inicio-tequila-extra-anejo-100-agave-azul-40-vol-0-7l": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Profil Inicio Tequila EXTRA AÑEJO: hrast, karamela i suho voće. To je extra-anejo s punije tijelo na 40 %.",
+        "en": "Inicio Tequila EXTRA AÑEJO (extra-anejo) na 40 %: hrast, karamela i suho voće with fuller body. Neat or rocks; slower pace than with gin."
+      },
+      "cigarHint": {
+        "hr": "Reposado/añejo kao Inicio Tequila EXTRA AÑEJO sjeda uz blagi maduro, ne uz panatelu.",
+        "en": "With Inicio Tequila EXTRA AÑEJO the bridge is caramel/oak; Connecticut can stay empty."
+      }
+    },
+    "tq-espolon-blanco": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "Espolòn Blanco (blanco) na 40 %: bilje, citrus i vegetalno uz laganije tijelo. Neat ili rocks; tempo sporiji nego uz gin.",
+        "en": "In Espolòn Blanco, agave shares space with bilje, citrus i vegetalno. Style blanco, body lighter body na 40 %."
+      },
+      "cigarHint": {
+        "hr": "Uz Espolòn Blanco Connecticut ili kratki Habano — agava ostaje čista. Drži čašu bliže pepeljari — espolon se bolje čita u sporijem krugu.",
+        "en": "The blanco profile of Espolòn Blanco does not love a sweet maduro. Keep the glass near the ashtray — espolon reads clearer in a slower loop."
+      }
+    },
+    "tq-olmeca-altos-plata": {
+      "sourceVideoIds": [],
+      "notes": {
+        "hr": "U Olmeca Altos Plata agava dijeli prostor s bilje, citrus i vegetalno. Stil blanco, tijelo laganije na 40 %.",
+        "en": "Olmeca Altos Plata holds bilje, citrus i vegetalno — blanco na 40 %. With a cigar, let the second puff follow the sip."
+      },
+      "cigarHint": {
+        "hr": "Blanco profil Olmeca Altos Plata ne voli slatki maduro. Gutljaj neka prati prvi dim; bočica olmeca drži svoj ritam do kraja večeri.",
+        "en": "With Olmeca Altos Plata Connecticut or a short Habano — agave stays clean. Keep the glass near the ashtray — olmeca reads clearer in a slower loop."
       }
     }
   }
