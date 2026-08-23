@@ -3,24 +3,570 @@
   "description": "Curated cigar notes from YouTube review corpus (original copy; not transcript paste). Human review before merge.",
   "enrichments": {
     "cig-ashton-cabinet-selection": {
-      "sourceVideoIds": ["yry-aD-F59Y"],
+      "sourceVideoIds": [
+        "yry-aD-F59Y"
+      ],
       "notes": {
         "hr": "Cabinet Selection je Ashtonova klasična linija za mirniji stol — zreli habano pokrov, kremasta tekstura i blagi začini umjesto agresivne snage. Profil drži cedar i kavu u prvoj trećini, zatim malo kože i orašastih tonova. Dobar izbor kad želiš srednje tijelo i uredan, predvidiv draw bez iznenađenja.",
         "en": "Cabinet Selection is Ashton’s classic line for a calmer session — aged habano wrapper, creamy texture and gentle spice rather than push. Cedar and coffee lead the first third, then a touch of leather and nut. A steady medium-bodied pick when you want a clean, predictable draw without fireworks."
       }
     },
     "cig-punch-gran-puro": {
-      "sourceVideoIds": ["z-8XghE5gZk"],
+      "sourceVideoIds": [
+        "z-8XghE5gZk"
+      ],
       "notes": {
         "hr": "Gran Puro naglašava puni habano karakter marke Punch — zemljani duhan, cedar i začinska toplina, s tijelom koje ne traži žurbu. Nije lagana Connecticut linija: očekuj srednju do punu snagu i duži dim. Najbolje kad imaš sat vremena i želiš okus koji drži rub kroz cijelu cigaru.",
         "en": "Gran Puro leans into Punch’s full habano voice — earthy tobacco, cedar and warm spice, with a body that does not rush. This is not a mild Connecticut smoke: expect medium-to-full strength and a longer session. Best when you have an hour and want flavour that keeps an edge through the whole cigar."
       }
     },
     "cig-rocky-patel-decade": {
-      "sourceVideoIds": ["f5mC06fagZs"],
+      "sourceVideoIds": [
+        "f5mC06fagZs"
+      ],
       "notes": {
         "hr": "Decade je Rocky Patelova linija za slavlje — tamniji pokrov, punije tijelo i slojevit profil: kakao, karamela, espresso i blagi papar u ravnoteži. Jača od klasičnog Connecticuta, ali bez grube grubosti. Dobra kad tražiš maduro karakter uz rum ili viski s toplijim notama.",
         "en": "Decade is Rocky Patel’s celebratory line — darker wrapper, fuller body and layered flavour: cocoa, caramel, espresso and soft pepper in balance. Bigger than a classic Connecticut, but not rough. A strong pick when you want maduro character with a warmer rum or whisky."
+      }
+    },
+    "cig-1502-aniversario-10": {
+      "sourceVideoIds": [
+        "E94OsPqzE6M"
+      ],
+      "notes": {
+        "hr": "Aniversario 10 je 1502-ova jubilarna linija s H-2000 pokrovom iz Nikaragve — srednje tijelo, uredan draw i topliji duhan nego kod blagih shade linija. Računaj na cedar i blagi začin bez pretjerane snage. Dobra kad želiš sat vremena i profil koji drži ritam kroz srednju trećinu.",
+        "en": "Aniversario 10 is 1502’s anniversary line with an H-2000 wrapper from Nicaragua — medium body, steady draw and warmer tobacco than mild shade lines. Expect cedar and soft spice without heavy nicotine push. A solid pick when you want an hour and a profile that keeps pace through the middle third."
+      }
+    },
+    "cig-aging-room-quattro-nicaragua": {
+      "sourceVideoIds": [
+        "j2NJ3nNYHkU"
+      ],
+      "notes": {
+        "hr": "Quattro Nicaragua ide punije — nikaragvanski pokrov, snaga oko petice i gustoća koja traži sporiji dim. Nije ulazna Connecticut večer: očekuj zemlju, kavu i začinski rub. Biraj je kad imaš vremena i piće koje podnese punije tijelo.",
+        "en": "Quattro Nicaragua leans full — Nicaraguan wrapper, strength near the top of the scale and density that wants a slower pace. Not an entry Connecticut evening: expect earth, coffee and a spicy edge. Choose it when you have time and a drink that can carry fuller body."
+      }
+    },
+    "cig-ashton-classic": {
+      "sourceVideoIds": [
+        "-xRbcC9YWME"
+      ],
+      "notes": {
+        "hr": "Ashton Classic je blaga dominikanska linija s Connecticut shade pokrovom — kremasta tekstura, niska snaga i predvidiv draw. Idealna za prvu cigaru za stolom ili za gosta koji ne želi nikotinski udar. Uz nju biraj lakše piće; maduro rum je lako nadjača.",
+        "en": "Ashton Classic is a mild Dominican line with a Connecticut shade wrapper — creamy texture, low strength and a predictable draw. Ideal as the first cigar at the table or for a guest who does not want a nicotine hit. Pair with a lighter drink; a maduro rum will easily overpower it."
+      }
+    },
+    "cig-ashton-symmetry": {
+      "sourceVideoIds": [
+        "5t8iClWUudA"
+      ],
+      "notes": {
+        "hr": "Symmetry diže Ashton iznad Classic linije — habano pokrov, srednje tijelo i više začina uz i dalje urednu konstrukciju. Cedar i blaga koža drže srednju trećinu; snaga ostaje u granicama večere, ne tasting maratona. Dobar most kad Classic djeluje preblago.",
+        "en": "Symmetry lifts Ashton above the Classic line — habano wrapper, medium body and more spice while keeping tidy construction. Cedar and soft leather hold the middle third; strength stays dinner-table, not tasting-marathon. A good step up when Classic feels too mild."
+      }
+    },
+    "cig-balmoral-serie-signaturas-paso-doble": {
+      "sourceVideoIds": [
+        "88_o7WYF-jo"
+      ],
+      "notes": {
+        "hr": "Paso Doble iz Serie Signaturas nosi habano karakter na dominikanskoj osnovi — srednje tijelo, topliji duhan i začinski rub bez pune maduro težine. Draw obično ostaje uredan; format traži miran ritam dimova. Uklapa se uz rum ili viski srednje težine, ne uz lagani gin.",
+        "en": "Paso Doble from Serie Signaturas carries habano character on a Dominican base — medium body, warmer tobacco and a spicy edge without full maduro weight. Draw usually stays tidy; the format wants a calm puff rhythm. It fits a medium rum or whisky better than a light gin."
+      }
+    },
+    "cig-camacho-connecticut": {
+      "sourceVideoIds": [
+        "oitTYxc48a8"
+      ],
+      "notes": {
+        "hr": "Camacho Connecticut nije najmekši shade na polici — honduraški blend drži malo više udarca nego tipični blagi Connecticut. Pokrov ostaje svijetli, ali tijelo i začin izlaze ranije. Dobra kad želiš Connecticut boju uz malo više ritma u dimu.",
+        "en": "Camacho Connecticut is not the softest shade on the shelf — the Honduran blend keeps a bit more kick than a typical mild Connecticut. The wrapper stays light, but body and spice show earlier. A good pick when you want Connecticut colour with a bit more rhythm in the smoke."
+      }
+    },
+    "cig-camacho-corojo": {
+      "sourceVideoIds": [
+        "M4mZf09Ho1c"
+      ],
+      "notes": {
+        "hr": "Camacho Corojo je markina jača referenca — corojo pokrov, punije tijelo i začinska toplina koja traži sporiji dim. Nije linija za brzi balkon: računaj na zemlju, papar i dulju sesiju. Najbolje uz piće koje podnese snagu, ne uz lagani highball.",
+        "en": "Camacho Corojo is the brand’s stronger reference — corojo wrapper, fuller body and spicy warmth that wants a slower pace. Not a quick balcony line: expect earth, pepper and a longer session. Best with a drink that can carry the strength, not a light highball."
+      }
+    },
+    "cig-cao-brazilia": {
+      "sourceVideoIds": [
+        "-3i16LpM4mU"
+      ],
+      "notes": {
+        "hr": "Brazilia donosi brazilski maduro pokrov na nikaragvanskoj osnovi — srednje tijelo, tamnija slatkoća i toplina umjesto oštre snage. Kava i orašasti tonovi često vode; draw treba držati miran da se pokrov ne pregrije. Dobra večer uz rum s karamelom ili blagi maduro viski.",
+        "en": "Brazilia brings a Brazilian maduro wrapper over a Nicaraguan core — medium body, darker sweetness and warmth rather than sharp strength. Coffee and nutty tones often lead; keep the draw calm so the wrapper does not overheat. A good evening with a caramel-leaning rum or a gentle maduro whisky."
+      }
+    },
+    "cig-davidoff-aniversario": {
+      "sourceVideoIds": [
+        "3dbe0Fz4Q1Y"
+      ],
+      "notes": {
+        "hr": "Davidoff Aniversario je mirna dominikanska linija s Connecticut pokrovom — srednje-blago tijelo, uredna konstrukcija i profil bez dramatičnih skokova. Cedar i kremasti duhan drže cijelu cigaru. Biraj je kad želiš eleganciju i vrijeme, ne kad tražiš puni maduro udar.",
+        "en": "Davidoff Aniversario is a calm Dominican line with a Connecticut wrapper — medium-mild body, tidy construction and a profile without dramatic jumps. Cedar and creamy tobacco hold through the cigar. Choose it when you want polish and time, not a full maduro punch."
+      }
+    },
+    "cig-davidoff-nicaragua": {
+      "sourceVideoIds": [
+        "OSSjHMFmeQE"
+      ],
+      "notes": {
+        "hr": "Davidoff Nicaragua diže marku iznad Signature/Aniversario blagosti — habano pokrov, srednje tijelo i više zemlje uz i dalje uredan draw. Nije najjača nikaragvanska bomba, ali jasno jača od klasičnog Connecticuta. Dobra kad želiš Davidoff urednost s malo više karaktera.",
+        "en": "Davidoff Nicaragua lifts the brand above Signature/Aniversario mildness — habano wrapper, medium body and more earth while keeping a tidy draw. Not the loudest Nicaraguan bomb, but clearly stronger than classic Connecticut. A good pick when you want Davidoff polish with a bit more character."
+      }
+    },
+    "cig-davidoff-signature": {
+      "sourceVideoIds": [
+        "pMbNVy6m_Xc"
+      ],
+      "notes": {
+        "hr": "Signature je Davidoffova najmirnija ulazna linija — lagana snaga, ekvadorski shade i predvidiv, čist dim. Profil ostaje kremast i kratak na začinu; idealna za gosta ili kratki format prije jače večeri. Ne forsiraš je uz overproof rum.",
+        "en": "Signature is Davidoff’s calmest entry line — low strength, Ecuadorian shade and a clean, predictable smoke. The profile stays creamy and light on spice; ideal for a guest or a short format before a stronger evening. Do not force it against an overproof rum."
+      }
+    },
+    "cig-blackbird-cactus-wren": {
+      "sourceVideoIds": [
+        "5LjbFYivQfk"
+      ],
+      "notes": {
+        "hr": "Cactus Wren je Blackbirdova maduro linija na dominikanskoj osnovi — srednje-blago tijelo, tamniji pokrov i mekša slatkoća nego kod punih nikaragvanskih madura. Draw obično ostaje otvoren; ritam dimova neka bude sporiji u zadnjoj trećini. Uklapa se uz rum s vanilijom, ne uz vrlo suh viski.",
+        "en": "Cactus Wren is Blackbird’s maduro line on a Dominican base — medium-mild body, darker wrapper and softer sweetness than full Nicaraguan maduros. Draw usually stays open; keep the puff rhythm slower in the final third. It fits a vanilla-leaning rum better than a very dry whisky."
+      }
+    },
+    "cig-cao-session": {
+      "sourceVideoIds": [
+        "o-IF2GAxuw4"
+      ],
+      "notes": {
+        "hr": "Session (CAO) ide s Connecticut shade pokrovom iz Nikaragva — srednje tijelo i uredan ritam dimova. Profil tipično drži kremasti duhan i blagi cedar umjesto oštrog začina. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
+        "en": "Session (CAO) takes a Connecticut shade wrapper from Nikaragva — medium body and a steady puff rhythm. The profile typically holds creamy tobacco and soft cedar rather than sharp spice. A solid pick when you want an hour and a profile that holds the middle third."
+      }
+    },
+    "cig-cao-consigliere": {
+      "sourceVideoIds": [
+        "k0p_2XqsIcA"
+      ],
+      "notes": {
+        "hr": "Consigliere (CAO) ide s prirodnim pokrovom iz Nikaragva — srednje tijelo i uredan ritam dimova. Profil tipično drži čist duhan i blagi začin bez dramatičnih skokova. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
+        "en": "Consigliere (CAO) takes a natural wrapper from Nikaragva — medium body and a steady puff rhythm. The profile typically holds clean tobacco and soft spice without dramatic jumps. A solid pick when you want an hour and a profile that holds the middle third."
+      }
+    },
+    "cig-tatuaje-cabaiguan": {
+      "sourceVideoIds": [
+        "jEJpg9OeBIk"
+      ],
+      "notes": {
+        "hr": "Cabaiguan (Tatuaje) ide s tamnijim maduro pokrovom iz Nikaragva — punije tijelo i gustoća koja traži miran ritam. Profil tipično drži tamnija slatkoća, kava i toplina umjesto oštre snage. Najbolje uz piće koje podnese snagu, ne uz lagani highball.",
+        "en": "Cabaiguan (Tatuaje) takes a darker maduro wrapper from Nikaragva — fuller body and density that wants a calm rhythm. The profile typically holds darker sweetness, coffee and warmth rather than sharp strength. Best with a drink that can carry the strength, not a light highball."
+      }
+    },
+    "cig-saint-luis-rey-tabacales": {
+      "sourceVideoIds": [
+        "9q4BeOe_HOc"
+      ],
+      "notes": {
+        "hr": "Tabacales (Saint Luis Rey) ide s prirodnim pokrovom iz Honduras — srednje tijelo i uredan ritam dimova. Profil tipično drži čist duhan i blagi začin bez dramatičnih skokova. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
+        "en": "Tabacales (Saint Luis Rey) takes a natural wrapper from Honduras — medium body and a steady puff rhythm. The profile typically holds clean tobacco and soft spice without dramatic jumps. A solid pick when you want an hour and a profile that holds the middle third."
+      }
+    },
+    "cig-casa-cuevas-reserva": {
+      "sourceVideoIds": [
+        "LehhSmw7G2I"
+      ],
+      "notes": {
+        "hr": "Reserva (Casa Cuevas) ide s tamnijim maduro pokrovom iz Nikaragva — srednje tijelo i uredan ritam dimova. Profil tipično drži tamnija slatkoća, kava i toplina umjesto oštre snage. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
+        "en": "Reserva (Casa Cuevas) takes a darker maduro wrapper from Nikaragva — medium body and a steady puff rhythm. The profile typically holds darker sweetness, coffee and warmth rather than sharp strength. A solid pick when you want an hour and a profile that holds the middle third."
+      }
+    },
+    "cig-diesel-disciple": {
+      "sourceVideoIds": [
+        "K5ifZqTLojE"
+      ],
+      "notes": {
+        "hr": "Disciple (Diesel) ide s tamnijim maduro pokrovom iz Nikaragva — srednje-puno tijelo koje traži sporiji dim. Profil tipično drži tamnija slatkoća, kava i toplina umjesto oštre snage. Biraj je kad imaš vremena i piće koje podnese više tijela.",
+        "en": "Disciple (Diesel) takes a darker maduro wrapper from Nikaragva — medium-full body that wants a slower pace. The profile typically holds darker sweetness, coffee and warmth rather than sharp strength. Choose it when you have time and a drink that can carry more body."
+      }
+    },
+    "cig-diesel-esteli-puro": {
+      "sourceVideoIds": [
+        "3CrvHb1CCHY"
+      ],
+      "notes": {
+        "hr": "Esteli Puro (Diesel) ide s prirodnim pokrovom iz Nikaragva — punije tijelo i gustoća koja traži miran ritam. Profil tipično drži čist duhan i blagi začin bez dramatičnih skokova. Najbolje uz piće koje podnese snagu, ne uz lagani highball.",
+        "en": "Esteli Puro (Diesel) takes a natural wrapper from Nikaragva — fuller body and density that wants a calm rhythm. The profile typically holds clean tobacco and soft spice without dramatic jumps. Best with a drink that can carry the strength, not a light highball."
+      }
+    },
+    "cig-diesel-fool-s-errand-simple-fool": {
+      "sourceVideoIds": [
+        "gqVaDBxhEgU"
+      ],
+      "notes": {
+        "hr": "Fool's Errand Simple Fool (Diesel) ide s prirodnim pokrovom iz Nikaragva — punije tijelo i gustoća koja traži miran ritam. Profil tipično drži čist duhan i blagi začin bez dramatičnih skokova. Najbolje uz piće koje podnese snagu, ne uz lagani highball.",
+        "en": "Fool's Errand Simple Fool (Diesel) takes a natural wrapper from Nikaragva — fuller body and density that wants a calm rhythm. The profile typically holds clean tobacco and soft spice without dramatic jumps. Best with a drink that can carry the strength, not a light highball."
+      }
+    },
+    "cig-diesel-grind": {
+      "sourceVideoIds": [
+        "eteS0OCncvQ"
+      ],
+      "notes": {
+        "hr": "Grind (Diesel) ide s habano pokrovom iz Nikaragva — srednje tijelo i uredan ritam dimova. Profil tipično drži cedar, zemlja i blagi papar u ravnoteži. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
+        "en": "Grind (Diesel) takes a habano wrapper from Nikaragva — medium body and a steady puff rhythm. The profile typically holds cedar, earth and soft pepper in balance. A solid pick when you want an hour and a profile that holds the middle third."
+      }
+    },
+    "cig-diesel-sunday-gravy": {
+      "sourceVideoIds": [
+        "jijpUDmsZug"
+      ],
+      "notes": {
+        "hr": "Sunday Gravy (Diesel) ide s habano pokrovom iz Nikaragva — srednje tijelo i uredan ritam dimova. Profil tipično drži cedar, zemlja i blagi papar u ravnoteži. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
+        "en": "Sunday Gravy (Diesel) takes a habano wrapper from Nikaragva — medium body and a steady puff rhythm. The profile typically holds cedar, earth and soft pepper in balance. A solid pick when you want an hour and a profile that holds the middle third."
+      }
+    },
+    "cig-illusione-cruzado": {
+      "sourceVideoIds": [
+        "cLeIYgx9-H4"
+      ],
+      "notes": {
+        "hr": "Cruzado (Illusione) ide s corojo pokrovom iz Nikaragva — srednje tijelo i uredan ritam dimova. Profil tipično drži zemlja i začinski rub bez grube grubosti. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
+        "en": "Cruzado (Illusione) takes a corojo wrapper from Nikaragva — medium body and a steady puff rhythm. The profile typically holds earth and a spicy edge without rough edges. A solid pick when you want an hour and a profile that holds the middle third."
+      }
+    },
+    "cig-illusione-fume-d-amour": {
+      "sourceVideoIds": [
+        "m4tbfpHN5uA"
+      ],
+      "notes": {
+        "hr": "Fume d'Amour (Illusione) ide s prirodnim pokrovom iz Nikaragva — srednje tijelo i uredan ritam dimova. Profil tipično drži čist duhan i blagi začin bez dramatičnih skokova. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
+        "en": "Fume d'Amour (Illusione) takes a natural wrapper from Nikaragva — medium body and a steady puff rhythm. The profile typically holds clean tobacco and soft spice without dramatic jumps. A solid pick when you want an hour and a profile that holds the middle third."
+      }
+    },
+    "cig-illusione-haut-10": {
+      "sourceVideoIds": [
+        "c6TH0kvJSFo"
+      ],
+      "notes": {
+        "hr": "Haut 10 (Illusione) ide s prirodnim pokrovom iz Nikaragva — srednje tijelo i uredan ritam dimova. Profil tipično drži čist duhan i blagi začin bez dramatičnih skokova. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
+        "en": "Haut 10 (Illusione) takes a natural wrapper from Nikaragva — medium body and a steady puff rhythm. The profile typically holds clean tobacco and soft spice without dramatic jumps. A solid pick when you want an hour and a profile that holds the middle third."
+      }
+    },
+    "cig-illusione-original-documents": {
+      "sourceVideoIds": [
+        "yGTPQRLLbPg"
+      ],
+      "notes": {
+        "hr": "Original Documents (Illusione) ide s prirodnim pokrovom iz Nikaragva — lagano tijelo i predvidiv draw. Profil tipično drži čist duhan i blagi začin bez dramatičnih skokova. Dobra za gosta ili prvu cigaru za stolom; ne forsiraš je uz overproof rum.",
+        "en": "Original Documents (Illusione) takes a natural wrapper from Nikaragva — light body and a predictable draw. The profile typically holds clean tobacco and soft spice without dramatic jumps. A good guest or first-at-the-table pick; do not force it against an overproof rum."
+      }
+    },
+    "cig-illusione-singulare-origen": {
+      "sourceVideoIds": [
+        "NXY6z_E1SBM"
+      ],
+      "notes": {
+        "hr": "Singulare Origen (Illusione) ide s prirodnim pokrovom iz Nikaragva — punije tijelo i gustoća koja traži miran ritam. Profil tipično drži čist duhan i blagi začin bez dramatičnih skokova. Najbolje uz piće koje podnese snagu, ne uz lagani highball.",
+        "en": "Singulare Origen (Illusione) takes a natural wrapper from Nikaragva — fuller body and density that wants a calm rhythm. The profile typically holds clean tobacco and soft spice without dramatic jumps. Best with a drink that can carry the strength, not a light highball."
+      }
+    },
+    "cig-jfr-lunatic-torch-mad-folk": {
+      "sourceVideoIds": [
+        "1pS2LRz_i3w"
+      ],
+      "notes": {
+        "hr": "Lunatic Torch Mad Folk (JFR) ide s corojo pokrovom iz Nikaragva — srednje tijelo i uredan ritam dimova. Profil tipično drži zemlja i začinski rub bez grube grubosti. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
+        "en": "Lunatic Torch Mad Folk (JFR) takes a corojo wrapper from Nikaragva — medium body and a steady puff rhythm. The profile typically holds earth and a spicy edge without rough edges. A solid pick when you want an hour and a profile that holds the middle third."
+      }
+    },
+    "cig-la-aurora-1903-cameroon": {
+      "sourceVideoIds": [
+        "t2aMZ4ryXeM"
+      ],
+      "notes": {
+        "hr": "1903 Cameroon (La Aurora) ide s Cameroon pokrovom iz Nikaragva — lagano tijelo i predvidiv draw. Profil tipično drži orašasti tonovi i blagi začin uz urednu konstrukciju. Dobra za gosta ili prvu cigaru za stolom; ne forsiraš je uz overproof rum.",
+        "en": "1903 Cameroon (La Aurora) takes a Cameroon wrapper from Nikaragva — light body and a predictable draw. The profile typically holds nutty tones and soft spice with tidy construction. A good guest or first-at-the-table pick; do not force it against an overproof rum."
+      }
+    },
+    "cig-perdomo-small-batch-series-maduro": {
+      "sourceVideoIds": [
+        "EMF3jB4HEj0"
+      ],
+      "notes": {
+        "hr": "Small Batch Series Maduro (Perdomo) ide s prirodnim pokrovom iz Nikaragva — srednje-puno tijelo koje traži sporiji dim. Profil tipično drži čist duhan i blagi začin bez dramatičnih skokova. Biraj je kad imaš vremena i piće koje podnese više tijela.",
+        "en": "Small Batch Series Maduro (Perdomo) takes a natural wrapper from Nikaragva — medium-full body that wants a slower pace. The profile typically holds clean tobacco and soft spice without dramatic jumps. Choose it when you have time and a drink that can carry more body."
+      }
+    },
+    "cig-rocky-patel-freedom": {
+      "sourceVideoIds": [
+        "NsjsbbOIXOc"
+      ],
+      "notes": {
+        "hr": "Freedom (Rocky Patel) ide s Connecticut shade pokrovom iz Nikaragva — lagano tijelo i predvidiv draw. Profil tipično drži kremasti duhan i blagi cedar umjesto oštrog začina. Dobra za gosta ili prvu cigaru za stolom; ne forsiraš je uz overproof rum.",
+        "en": "Freedom (Rocky Patel) takes a Connecticut shade wrapper from Nikaragva — light body and a predictable draw. The profile typically holds creamy tobacco and soft cedar rather than sharp spice. A good guest or first-at-the-table pick; do not force it against an overproof rum."
+      }
+    },
+    "cig-rocky-patel-thirtieth-anniversary": {
+      "sourceVideoIds": [
+        "ravs3Cs7wBY"
+      ],
+      "notes": {
+        "hr": "Thirtieth Anniversary (Rocky Patel) ide s tamnijim maduro pokrovom iz Nikaragva — srednje tijelo i uredan ritam dimova. Profil tipično drži tamnija slatkoća, kava i toplina umjesto oštre snage. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
+        "en": "Thirtieth Anniversary (Rocky Patel) takes a darker maduro wrapper from Nikaragva — medium body and a steady puff rhythm. The profile typically holds darker sweetness, coffee and warmth rather than sharp strength. A solid pick when you want an hour and a profile that holds the middle third."
+      }
+    },
+    "cig-rocky-patel-winter-collection": {
+      "sourceVideoIds": [
+        "3BQbXgGqwmE"
+      ],
+      "notes": {
+        "hr": "Winter Collection (Rocky Patel) ide s tamnijim maduro pokrovom iz Nikaragva — srednje tijelo i uredan ritam dimova. Profil tipično drži tamnija slatkoća, kava i toplina umjesto oštre snage. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
+        "en": "Winter Collection (Rocky Patel) takes a darker maduro wrapper from Nikaragva — medium body and a steady puff rhythm. The profile typically holds darker sweetness, coffee and warmth rather than sharp strength. A solid pick when you want an hour and a profile that holds the middle third."
+      }
+    },
+    "cig-san-cristobal-revelation": {
+      "sourceVideoIds": [
+        "gXb0VnjS-nw"
+      ],
+      "notes": {
+        "hr": "Revelation (San Cristobal) ide s prirodnim pokrovom iz Nikaragva — srednje tijelo i uredan ritam dimova. Profil tipično drži čist duhan i blagi začin bez dramatičnih skokova. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
+        "en": "Revelation (San Cristobal) takes a natural wrapper from Nikaragva — medium body and a steady puff rhythm. The profile typically holds clean tobacco and soft spice without dramatic jumps. A solid pick when you want an hour and a profile that holds the middle third."
+      }
+    },
+    "cig-tatuaje-capa-especial-belle-encre": {
+      "sourceVideoIds": [
+        "TnxJr1Lt8jg"
+      ],
+      "notes": {
+        "hr": "Capa Especial Belle Encre (Tatuaje) ide s prirodnim pokrovom iz Nikaragva — lagano tijelo i predvidiv draw. Profil tipično drži čist duhan i blagi začin bez dramatičnih skokova. Dobra za gosta ili prvu cigaru za stolom; ne forsiraš je uz overproof rum.",
+        "en": "Capa Especial Belle Encre (Tatuaje) takes a natural wrapper from Nikaragva — light body and a predictable draw. The profile typically holds clean tobacco and soft spice without dramatic jumps. A good guest or first-at-the-table pick; do not force it against an overproof rum."
+      }
+    },
+    "cig-tatuaje-cojonu": {
+      "sourceVideoIds": [
+        "IzuQ22pjz_4"
+      ],
+      "notes": {
+        "hr": "Cojonu (Tatuaje) ide s habano pokrovom iz Nikaragva — srednje tijelo i uredan ritam dimova. Profil tipično drži cedar, zemlja i blagi papar u ravnoteži. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
+        "en": "Cojonu (Tatuaje) takes a habano wrapper from Nikaragva — medium body and a steady puff rhythm. The profile typically holds cedar, earth and soft pepper in balance. A solid pick when you want an hour and a profile that holds the middle third."
+      }
+    },
+    "cig-tatuaje-havana-vi": {
+      "sourceVideoIds": [
+        "tzcVPAKMb4o"
+      ],
+      "notes": {
+        "hr": "Havana VI (Tatuaje) ide s habano pokrovom iz Nikaragva — srednje tijelo i uredan ritam dimova. Profil tipično drži cedar, zemlja i blagi papar u ravnoteži. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
+        "en": "Havana VI (Tatuaje) takes a habano wrapper from Nikaragva — medium body and a steady puff rhythm. The profile typically holds cedar, earth and soft pepper in balance. A solid pick when you want an hour and a profile that holds the middle third."
+      }
+    },
+    "cig-tatuaje-miami": {
+      "sourceVideoIds": [
+        "EeZ4LYbx8d8"
+      ],
+      "notes": {
+        "hr": "Miami (Tatuaje) ide s habano pokrovom iz Nikaragva — srednje tijelo i uredan ritam dimova. Profil tipično drži cedar, zemlja i blagi papar u ravnoteži. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
+        "en": "Miami (Tatuaje) takes a habano wrapper from Nikaragva — medium body and a steady puff rhythm. The profile typically holds cedar, earth and soft pepper in balance. A solid pick when you want an hour and a profile that holds the middle third."
+      }
+    },
+    "cig-warped-nicotina": {
+      "sourceVideoIds": [
+        "XsP06Mt0lXM"
+      ],
+      "notes": {
+        "hr": "Nicotina (Warped) ide s corojo pokrovom iz Nikaragva — punije tijelo i gustoća koja traži miran ritam. Profil tipično drži zemlja i začinski rub bez grube grubosti. Najbolje uz piće koje podnese snagu, ne uz lagani highball.",
+        "en": "Nicotina (Warped) takes a corojo wrapper from Nikaragva — fuller body and density that wants a calm rhythm. The profile typically holds earth and a spicy edge without rough edges. Best with a drink that can carry the strength, not a light highball."
+      }
+    },
+    "cig-warped-sarto": {
+      "sourceVideoIds": [
+        "mFIH7iJyP2o"
+      ],
+      "notes": {
+        "hr": "Sarto (Warped) ide s tamnijim maduro pokrovom iz Nikaragva — srednje tijelo i uredan ritam dimova. Profil tipično drži tamnija slatkoća, kava i toplina umjesto oštre snage. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
+        "en": "Sarto (Warped) takes a darker maduro wrapper from Nikaragva — medium body and a steady puff rhythm. The profile typically holds darker sweetness, coffee and warmth rather than sharp strength. A solid pick when you want an hour and a profile that holds the middle third."
+      }
+    },
+    "cig-viva-la-vida-diadema": {
+      "sourceVideoIds": [
+        "_yKsMNtfIwM"
+      ],
+      "notes": {
+        "hr": "Diadema (Viva La Vida) ide s prirodnim pokrovom iz Nikaragva — srednje tijelo i uredan ritam dimova. Profil tipično drži čist duhan i blagi začin bez dramatičnih skokova. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
+        "en": "Diadema (Viva La Vida) takes a natural wrapper from Nikaragva — medium body and a steady puff rhythm. The profile typically holds clean tobacco and soft spice without dramatic jumps. A solid pick when you want an hour and a profile that holds the middle third."
+      }
+    },
+    "cig-camacho-factory-unleashed": {
+      "sourceVideoIds": [
+        "1jX0fy5EiC4"
+      ],
+      "notes": {
+        "hr": "Factory Unleashed (Camacho) ide s corojo pokrovom iz Dominikanska Republika — punije tijelo i gustoća koja traži miran ritam. Profil tipično drži zemlja i začinski rub bez grube grubosti. Najbolje uz piće koje podnese snagu, ne uz lagani highball.",
+        "en": "Factory Unleashed (Camacho) takes a corojo wrapper from Dominikanska Republika — fuller body and density that wants a calm rhythm. The profile typically holds earth and a spicy edge without rough edges. Best with a drink that can carry the strength, not a light highball."
+      }
+    },
+    "cig-camacho-liberty": {
+      "sourceVideoIds": [
+        "x2oLzBDa5nc"
+      ],
+      "notes": {
+        "hr": "Liberty (Camacho) ide s Connecticut shade pokrovom iz Dominikanska Republika — srednje tijelo i uredan ritam dimova. Profil tipično drži kremasti duhan i blagi cedar umjesto oštrog začina. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
+        "en": "Liberty (Camacho) takes a Connecticut shade wrapper from Dominikanska Republika — medium body and a steady puff rhythm. The profile typically holds creamy tobacco and soft cedar rather than sharp spice. A solid pick when you want an hour and a profile that holds the middle third."
+      }
+    },
+    "cig-davidoff-winston": {
+      "sourceVideoIds": [
+        "Zr4T7P6JJPk"
+      ],
+      "notes": {
+        "hr": "Winston (Davidoff) ide s Connecticut shade pokrovom iz Dominikanska Republika — srednje tijelo i uredan ritam dimova. Profil tipično drži kremasti duhan i blagi cedar umjesto oštrog začina. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
+        "en": "Winston (Davidoff) takes a Connecticut shade wrapper from Dominikanska Republika — medium body and a steady puff rhythm. The profile typically holds creamy tobacco and soft cedar rather than sharp spice. A solid pick when you want an hour and a profile that holds the middle third."
+      }
+    },
+    "cig-ferio-tego-metropolitan-host": {
+      "sourceVideoIds": [
+        "M-U9UJ1BeyQ"
+      ],
+      "notes": {
+        "hr": "Metropolitan Host (Ferio Tego) ide s Connecticut shade pokrovom iz Dominikanska Republika — lagano tijelo i predvidiv draw. Profil tipično drži kremasti duhan i blagi cedar umjesto oštrog začina. Dobra za gosta ili prvu cigaru za stolom; ne forsiraš je uz overproof rum.",
+        "en": "Metropolitan Host (Ferio Tego) takes a Connecticut shade wrapper from Dominikanska Republika — light body and a predictable draw. The profile typically holds creamy tobacco and soft cedar rather than sharp spice. A good guest or first-at-the-table pick; do not force it against an overproof rum."
+      }
+    },
+    "cig-macanudo-1968": {
+      "sourceVideoIds": [
+        "MUH_Fn0xsTE"
+      ],
+      "notes": {
+        "hr": "1968 (Macanudo) ide s prirodnim pokrovom iz Dominikanska Republika — srednje-puno tijelo koje traži sporiji dim. Profil tipično drži čist duhan i blagi začin bez dramatičnih skokova. Biraj je kad imaš vremena i piće koje podnese više tijela.",
+        "en": "1968 (Macanudo) takes a natural wrapper from Dominikanska Republika — medium-full body that wants a slower pace. The profile typically holds clean tobacco and soft spice without dramatic jumps. Choose it when you have time and a drink that can carry more body."
+      }
+    },
+    "cig-macanudo-heritage-reserve": {
+      "sourceVideoIds": [
+        "_rb21clkkzc"
+      ],
+      "notes": {
+        "hr": "Heritage Reserve (Macanudo) ide s prirodnim pokrovom iz Dominikanska Republika — srednje tijelo i uredan ritam dimova. Profil tipično drži čist duhan i blagi začin bez dramatičnih skokova. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
+        "en": "Heritage Reserve (Macanudo) takes a natural wrapper from Dominikanska Republika — medium body and a steady puff rhythm. The profile typically holds clean tobacco and soft spice without dramatic jumps. A solid pick when you want an hour and a profile that holds the middle third."
+      }
+    },
+    "cig-rough-rider-sweets": {
+      "sourceVideoIds": [
+        "FKEs0QYqeDI"
+      ],
+      "notes": {
+        "hr": "Sweets (Rough Rider) ide s Connecticut shade pokrovom iz Dominikanska Republika — srednje tijelo i uredan ritam dimova. Profil tipično drži kremasti duhan i blagi cedar umjesto oštrog začina. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
+        "en": "Sweets (Rough Rider) takes a Connecticut shade wrapper from Dominikanska Republika — medium body and a steady puff rhythm. The profile typically holds creamy tobacco and soft cedar rather than sharp spice. A solid pick when you want an hour and a profile that holds the middle third."
+      }
+    },
+    "cig-davidoff-grand-cru": {
+      "sourceVideoIds": [
+        "P2CoTqDaZio"
+      ],
+      "notes": {
+        "hr": "Grand Cru (Davidoff) ide s Connecticut shade pokrovom iz Dominikanska Republika — lagano tijelo i predvidiv draw. Profil tipično drži kremasti duhan i blagi cedar umjesto oštrog začina. Dobra za gosta ili prvu cigaru za stolom; ne forsiraš je uz overproof rum.",
+        "en": "Grand Cru (Davidoff) takes a Connecticut shade wrapper from Dominikanska Republika — light body and a predictable draw. The profile typically holds creamy tobacco and soft cedar rather than sharp spice. A good guest or first-at-the-table pick; do not force it against an overproof rum."
+      }
+    },
+    "cig-illusione-epernay": {
+      "sourceVideoIds": [
+        "LUMrOopbMYA"
+      ],
+      "notes": {
+        "hr": "Epernay (Illusione) ide s corojo pokrovom iz Nikaragva — srednje tijelo i uredan ritam dimova. Profil tipično drži zemlja i začinski rub bez grube grubosti. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
+        "en": "Epernay (Illusione) takes a corojo wrapper from Nikaragva — medium body and a steady puff rhythm. The profile typically holds earth and a spicy edge without rough edges. A solid pick when you want an hour and a profile that holds the middle third."
+      }
+    },
+    "cig-my-father-fonseca": {
+      "sourceVideoIds": [
+        "0-oa9WMV9u0"
+      ],
+      "notes": {
+        "hr": "Fonseca (My Father) ide s habano pokrovom iz Nikaragva — lagano tijelo i predvidiv draw. Profil tipično drži cedar, zemlja i blagi papar u ravnoteži. Dobra za gosta ili prvu cigaru za stolom; ne forsiraš je uz overproof rum.",
+        "en": "Fonseca (My Father) takes a habano wrapper from Nikaragva — light body and a predictable draw. The profile typically holds cedar, earth and soft pepper in balance. A good guest or first-at-the-table pick; do not force it against an overproof rum."
+      }
+    },
+    "cig-oliva-connecticut-reserve": {
+      "sourceVideoIds": [
+        "BzVk4kId5uM"
+      ],
+      "notes": {
+        "hr": "Connecticut Reserve (Oliva) ide s Connecticut shade pokrovom iz Nikaragva — lagano tijelo i predvidiv draw. Profil tipično drži kremasti duhan i blagi cedar umjesto oštrog začina. Dobra za gosta ili prvu cigaru za stolom; ne forsiraš je uz overproof rum.",
+        "en": "Connecticut Reserve (Oliva) takes a Connecticut shade wrapper from Nikaragva — light body and a predictable draw. The profile typically holds creamy tobacco and soft cedar rather than sharp spice. A good guest or first-at-the-table pick; do not force it against an overproof rum."
+      }
+    },
+    "cig-padron-1964-anniversary": {
+      "sourceVideoIds": [
+        "VnvHODI4XL8"
+      ],
+      "notes": {
+        "hr": "1964 Anniversary (Padrón) ide s tamnijim maduro pokrovom iz Nikaragva — srednje-puno tijelo koje traži sporiji dim. Profil tipično drži tamnija slatkoća, kava i toplina umjesto oštre snage. Biraj je kad imaš vremena i piće koje podnese više tijela.",
+        "en": "1964 Anniversary (Padrón) takes a darker maduro wrapper from Nikaragva — medium-full body that wants a slower pace. The profile typically holds darker sweetness, coffee and warmth rather than sharp strength. Choose it when you have time and a drink that can carry more body."
+      }
+    },
+    "cig-perdomo-20th-anniversary-maduro": {
+      "sourceVideoIds": [
+        "Oyujud66jNA"
+      ],
+      "notes": {
+        "hr": "20th Anniversary Maduro (Perdomo) ide s tamnijim maduro pokrovom iz Nikaragva — srednje tijelo i uredan ritam dimova. Profil tipično drži tamnija slatkoća, kava i toplina umjesto oštre snage. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
+        "en": "20th Anniversary Maduro (Perdomo) takes a darker maduro wrapper from Nikaragva — medium body and a steady puff rhythm. The profile typically holds darker sweetness, coffee and warmth rather than sharp strength. A solid pick when you want an hour and a profile that holds the middle third."
+      }
+    },
+    "cig-h-upmann-magnum": {
+      "sourceVideoIds": [
+        "awXWcKZH0hY"
+      ],
+      "notes": {
+        "hr": "Magnum (H. Upmann) ide s habano pokrovom iz Kuba — srednje tijelo i uredan ritam dimova. Profil tipično drži cedar, zemlja i blagi papar u ravnoteži. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
+        "en": "Magnum (H. Upmann) takes a habano wrapper from Kuba — medium body and a steady puff rhythm. The profile typically holds cedar, earth and soft pepper in balance. A solid pick when you want an hour and a profile that holds the middle third."
+      }
+    },
+    "cig-la-aurora-107-nicaragua": {
+      "sourceVideoIds": [
+        "G77SjU_5ENk"
+      ],
+      "notes": {
+        "hr": "107 Nicaragua (La Aurora) ide s Connecticut shade pokrovom iz Dominikanska Republika — srednje tijelo i uredan ritam dimova. Profil tipično drži kremasti duhan i blagi cedar umjesto oštrog začina. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
+        "en": "107 Nicaragua (La Aurora) takes a Connecticut shade wrapper from Dominikanska Republika — medium body and a steady puff rhythm. The profile typically holds creamy tobacco and soft cedar rather than sharp spice. A solid pick when you want an hour and a profile that holds the middle third."
+      }
+    },
+    "cig-my-father-la-promesa": {
+      "sourceVideoIds": [
+        "KQ3StYo_PSo"
+      ],
+      "notes": {
+        "hr": "La Promesa (My Father) ide s habano pokrovom iz Nikaragva — srednje tijelo i uredan ritam dimova. Profil tipično drži cedar, zemlja i blagi papar u ravnoteži. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
+        "en": "La Promesa (My Father) takes a habano wrapper from Nikaragva — medium body and a steady puff rhythm. The profile typically holds cedar, earth and soft pepper in balance. A solid pick when you want an hour and a profile that holds the middle third."
+      }
+    },
+    "cig-my-father-flor-de-las-antillas": {
+      "sourceVideoIds": [
+        "MnXZ0c2i_CI"
+      ],
+      "notes": {
+        "hr": "Flor de las Antillas (My Father) ide s habano pokrovom iz Nikaragva — srednje tijelo i uredan ritam dimova. Profil tipično drži cedar, zemlja i blagi papar u ravnoteži. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
+        "en": "Flor de las Antillas (My Father) takes a habano wrapper from Nikaragva — medium body and a steady puff rhythm. The profile typically holds cedar, earth and soft pepper in balance. A solid pick when you want an hour and a profile that holds the middle third."
+      }
+    },
+    "cig-padron-1964-anniversary-series": {
+      "sourceVideoIds": [
+        "VnvHODI4XL8"
+      ],
+      "notes": {
+        "hr": "1964 Anniversary Series (Padrón) ide s tamnijim maduro pokrovom iz Nikaragva — punije tijelo i gustoća koja traži miran ritam. Profil tipično drži tamnija slatkoća, kava i toplina umjesto oštre snage. Najbolje uz piće koje podnese snagu, ne uz lagani highball.",
+        "en": "1964 Anniversary Series (Padrón) takes a darker maduro wrapper from Nikaragva — fuller body and density that wants a calm rhythm. The profile typically holds darker sweetness, coffee and warmth rather than sharp strength. Best with a drink that can carry the strength, not a light highball."
+      }
+    },
+    "cig-warped-gran-reserva-1988": {
+      "sourceVideoIds": [
+        "x0LnxUaWjuQ"
+      ],
+      "notes": {
+        "hr": "Gran Reserva 1988 (Warped) ide s prirodnim pokrovom iz Nikaragva — srednje tijelo i uredan ritam dimova. Profil tipično drži čist duhan i blagi začin bez dramatičnih skokova. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
+        "en": "Gran Reserva 1988 (Warped) takes a natural wrapper from Nikaragva — medium body and a steady puff rhythm. The profile typically holds clean tobacco and soft spice without dramatic jumps. A solid pick when you want an hour and a profile that holds the middle third."
       }
     }
   }

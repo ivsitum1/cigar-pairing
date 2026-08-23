@@ -1,7 +1,7 @@
 # YouTube corpus — complete scrape + knowledge integration
 
 **Date:** 2026-08-22  
-**Status:** in progress  
+**Status:** Phase 2 done; Phase 3 curation in progress (2026-08-23)
 **Spec:** `docs/superpowers/specs/2026-08-21-youtube-rum-corpus-design.md`
 
 ## Goal

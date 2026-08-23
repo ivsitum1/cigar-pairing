@@ -2,13 +2,14 @@
 title: Activity Log
 category: meta
 tags: [log, changelog]
-updated: 2026-08-22
+updated: 2026-08-23
 ---
 
 # Activity Log
 
 | Datum | Događaj |
 |-------|---------|
+| 2026-08-23 | YouTube corpus Phase 2 + Phase 3 start: classify/match/summarize; curated + applied 15 cigar / 4 rum enrichments; etiquette index 308 → grill-inbox bilješka. |
 | 2026-08-22 | Bonton EN draft Ch 15 + 20: nikotin bez srama, snaga/tijelo, golf vitola; tuđi prostor, vjetar, strani običaji; interlude fraze + glossary. |
 | 2026-08-22 | Paralelna nadopuna znanja: Club JSON (rječnik rum etiketa, 101 `d-rum-reading-label` / `t-foreign-table`, leksikon `distillery-first`, HR vodič `moj-plan-app`, bonton app nikotin + tuđi prostor); pairing UI — `pairingNarrative` u proširenoj kartici; `docs/bonton/README.md`; brain concepts pairing-mechanism, club-content-map, book-app-bonton-sync. |
 | 2026-08-19 | App: naknadna ocjena večeri u `journal` — u `CollectionPage` journal listi i u `JournalCalendar` (`JournalCard`) dodan dropdown “Ocjena večeri” kad `journal.rating` nedostaje; uveden je hint da se ne mijenja “Moja ocjena”. |
