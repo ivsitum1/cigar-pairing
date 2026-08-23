@@ -89,20 +89,27 @@ class YoutubeSpiritEnrichmentTests(unittest.TestCase):
 
 
 class CatalogBottleSentenceTests(unittest.TestCase):
-    """Every bottle in the offer must have a sayable HR sentence + cigarHint."""
+    """Every bottle in the offer must have a sayable, unique HR sentence + cigarHint."""
 
     def test_spirits_have_notes_and_hints(self):
         for path in (RUMS, WHISKIES, GINS, TEQUILAS):
             rows = json.loads(path.read_text(encoding="utf-8"))
+            notes = []
+            hints = []
             for r in rows:
-                notes = r.get("notes") or {}
-                hint = r.get("cigarHint") or {}
-                hr = (notes.get("hr") if isinstance(notes, dict) else "") or ""
-                hhr = (hint.get("hr") if isinstance(hint, dict) else "") or ""
+                n = r.get("notes") or {}
+                h = r.get("cigarHint") or {}
+                hr = (n.get("hr") if isinstance(n, dict) else "") or ""
+                hhr = (h.get("hr") if isinstance(h, dict) else "") or ""
                 self.assertGreaterEqual(len(hr), 40, r["id"])
                 self.assertGreaterEqual(len(hhr), 40, r["id"])
                 self.assertNotIn("Heuristika", hr, r["id"])
                 self.assertIsNone(re.search(r"\bcigar\b", hr, re.I), r["id"])
+                self.assertNotIn("profil drži", hr.lower(), r["id"])
+                notes.append(hr)
+                hints.append(hhr)
+            self.assertEqual(len(notes), len(set(notes)), f"duplicate notes in {path.name}")
+            self.assertEqual(len(hints), len(set(hints)), f"duplicate hints in {path.name}")
 
 
 class YoutubeCigarEnrichmentTests(unittest.TestCase):
