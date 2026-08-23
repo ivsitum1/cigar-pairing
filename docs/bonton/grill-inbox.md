@@ -113,7 +113,20 @@ Otvoreno samo za kasniji urednički dodatak (nije blokada tiska): primarni izvor
 
 **Vanjski linkovi (kanon: `clubSources.json` / kraj knjižnog drafta):** [CigarLounges](https://www.cigarlounges.co/blog/cigar-lounge-etiquette) · [VDG](https://vdg-cigars.com/cigar-lounge-etiquette-the-complete-rules-guide/) · [The Manual](https://www.themanual.com/culture/cigar-etiquette-101/) · Holt’s Clubhouse · JR Cigars · Gentleman’s Gazette · Beyond the Humidor.
 
-*Zadnje ažuriranje inboxa: 2026-07-18. Dodavati bullet po bullet — ne prepisivati kanonski rukopis.*
+*Zadnje ažuriranje inboxa: 2026-08-23. Dodavati bullet po bullet — ne prepisivati kanonski rukopis.*
+
+---
+
+## YouTube etiquette corpus (2026-08-23)
+
+**Indeks (bez raw captions u appu):** `app/scripts/output/youtube/etiquette_corpus_index.json` — 308 videa tag `etiquette` nakon Phase 2.
+
+**Prioritet za Writer (naslovi, ne transkript):**
+- Holt’s: *10 Cigar Etiquette Mistakes a Gentleman NEVER Makes* (`K0ah4-_aq78`); *Cigar 101 | DON'T be That Guy* (`1Dcle3nRAgM`)
+- William Hanson: kanal `williamhansonetiquette` (~95 etiquette klasifikacija) — stol / salon, ne tehnika dima
+- Filtrirati lažne tagove: Steve cocktail naslovi često padnu u `etiquette` — ne ulaze u bonton bez ručne provjere
+
+**Pravilo:** originalni HR/EN u `docs/bonton/` → `bonton.json`; nikad paste titlova kao kanon.
 
 ---
 

@@ -90,7 +90,12 @@ def main() -> int:
     parser.add_argument(
         "--cookies-from-browser",
         default=None,
-        help="Captions: yt-dlp --cookies-from-browser (e.g. chrome)",
+        help="Captions: yt-dlp --cookies-from-browser (e.g. chrome) — often broken on Chrome 127+",
+    )
+    parser.add_argument(
+        "--cookies",
+        default=None,
+        help="Captions: Netscape cookies.txt (export from browser extension)",
     )
     parser.add_argument("--prefer-stubs", action="store_true", help="Summarize: stubs only")
     args = parser.parse_args()
@@ -100,7 +105,21 @@ def main() -> int:
         caption_extra.extend(["--limit", str(args.limit)])
     if args.force:
         caption_extra.append("--force")
-    if args.cookies_from_browser:
+    if args.cookies:
+        cookies_path = Path(args.cookies)
+        if not cookies_path.is_file():
+            for candidate in (Path.cwd() / args.cookies, HERE / args.cookies, HERE.parent / args.cookies):
+                if candidate.is_file():
+                    cookies_path = candidate
+                    break
+        if not cookies_path.is_file():
+            raise SystemExit(f"cookies file not found: {args.cookies}")
+        try:
+            cookie_arg = cookies_path.resolve().relative_to(HERE.resolve()).as_posix()
+        except ValueError:
+            cookie_arg = cookies_path.resolve().as_posix()
+        caption_extra.extend(["--cookies", cookie_arg])
+    elif args.cookies_from_browser:
         caption_extra.extend(["--cookies-from-browser", args.cookies_from_browser])
 
     summarize_extra: list[str] = []

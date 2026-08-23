@@ -30,6 +30,7 @@ agent brain lite — writing-only
 - 2026-08-21: RumRatings cross-check — lokalni scrape (robots 30 s, sitemap `/rum/`); 102 spoja s `qualityScore`; Club facts Doorly's / Dos Maderas 5+3 / Admiral Rodney HMS Formidable; ne dirati ocjene po boci (solera vs agricole je razlika ljestvice)
 - 2026-08-21: Drink/cigar shop ingest — `match-drink-listings.py` create+ask; Ecuga Playwright; auto-create samo rum+gin; ask queue za whisky/tequila/ambiguous; `sync-hr-shops` unknown brand → ask
 - 2026-08-22: Club + pairing + bonton sync — app JSON nadopune (rum label literacy, Moj plan vodič, bonton nikotin/tuđi prostor), `pairingNarrative` u UI, `docs/bonton/README.md`, brain wiki tri concept datoteke
+- 2026-08-23: YouTube corpus — Phase 2 queues + Phase 3 curation batch (15 cigar notes, 4 rum notes/hints applied to catalog); etiquette index u grill-inbox; grana `feat/youtube-corpus-complete`
 
 - 2026-08-19: Late journal rating: “Ocjena večeri” (journal) može se unijeti naknadno u `CollectionPage` i `JournalCalendar`, bez miješanja s “Moja ocjena” na kartici cigare/pića
 - 2026-08-19: OCR pack (TypeScript warm/reset) i i18n ključevi riješeni; proširen `barcodeCatalog.json` EAN-ovima (Don Tomas Bundle Churchill/Robusto, Romeo y Julieta Churchill, Plasencia Alma Fuerte Robustus) uz `sync-cigar-barcodes.py --check` i fokalni OCR test prolaz.

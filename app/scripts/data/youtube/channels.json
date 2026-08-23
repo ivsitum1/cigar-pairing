@@ -116,6 +116,15 @@
       "priority": 2,
       "enabled": true,
       "topics": ["etiquette", "bonton"]
+    },
+    {
+      "id": "thefinalpour01",
+      "handle": "@TheFinalPour01",
+      "url": "https://www.youtube.com/@TheFinalPour01",
+      "langs": ["en"],
+      "priority": 2,
+      "enabled": true,
+      "topics": ["rum", "spirits"]
     }
   ]
 }
