@@ -1,0 +1,11 @@
+{
+  "name": "cigar-pairing",
+  "install": "cd app && npm ci\npip install Pillow",
+  "terminals": [
+    {
+      "name": "vite",
+      "command": "cd app && npm run dev",
+      "description": "Vite dev server — open http://localhost:5173/cigar-pairing/"
+    }
+  ]
+}
