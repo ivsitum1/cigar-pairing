@@ -2019,7 +2019,9 @@
     ],
     "priceUrl": "https://www.neptunecigar.com/cigars/a-flores-1975-gran-reserva-desflorado-grand-toro",
     "binderOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Olor",
+    "filler": "Corojo"
   },
   {
     "id": "cig-a-flores-gran-reserva-maduro",
@@ -3307,7 +3309,8 @@
     "wrapperOrigin": "Meksiko",
     "binderOrigin": "Dominikanska Republika",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Olor"
   },
   {
     "id": "cig-adv-conqueror",
@@ -5116,7 +5119,9 @@
       "https://www.neptunecigar.com/cigars/aganorsa-leaf-rare-leaf-reserve-titan-corojo"
     ],
     "wrapperOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Criollo",
+    "filler": "Corojo"
   },
   {
     "id": "cig-aganorsa-leaf-signature-selection",
@@ -5196,7 +5201,9 @@
       "https://www.neptunecigar.com/cigars/aganorsa-leaf-signature-selection-corona-gorda"
     ],
     "priceUrl": "https://www.neptunecigar.com/cigars/aganorsa-leaf-signature-selection-maduro-corona-gorda",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Corojo",
+    "filler": "Corojo"
   },
   {
     "id": "cig-aganorsa-leaf-signature-selection-corojo",
@@ -5370,7 +5377,9 @@
       "https://www.neptunecigar.com/cigars/aganorsa-leaf-signature-selection-maduro-belicoso"
     ],
     "priceUrl": "https://www.neptunecigar.com/cigars/aganorsa-leaf-signature-selection-maduro-robusto",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Corojo",
+    "filler": "Corojo"
   },
   {
     "id": "cig-aganorsa-leaf-supreme-leaf",
@@ -5709,7 +5718,8 @@
     ],
     "wrapperOrigin": "Nikaragva",
     "binderOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "filler": "Corojo"
   },
   {
     "id": "cig-aganorsa-leaf-validacion-maduro-gran",
@@ -6363,7 +6373,8 @@
     "wrapperOrigin": "Meksiko",
     "binderOrigin": "Dominikanska Republika",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Habano"
   },
   {
     "id": "cig-aging-room-quattro-nicaragua",
@@ -8750,7 +8761,9 @@
     "fillerOrigin": "Honduras",
     "isPuro": true,
     "priceUrl": "https://www.neptunecigar.com/cigars/aladino-85-aniversario-reserva-robusto-5--50",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Pinareno",
+    "filler": "Pinareno"
   },
   {
     "id": "cig-aladino-cameroon",
@@ -8845,7 +8858,9 @@
       "https://www.neptunecigar.com/cigars/aladino-cameroon-gordo"
     ],
     "priceUrl": "https://www.neptunecigar.com/cigars/aladino-cameroon-robusto",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Corojo",
+    "filler": "Corojo"
   },
   {
     "id": "cig-aladino-cameroon-reserva",
@@ -8977,7 +8992,9 @@
       "https://www.neptunecigar.com/cigars/aladino-candela-robusto",
       "https://www.neptunecigar.com/cigars/aladino-candela-toro"
     ],
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Corojo",
+    "filler": "Corojo"
   },
   {
     "id": "cig-aladino-churchill",
@@ -9037,7 +9054,9 @@
     "sourceUrls": [
       "https://www.neptunecigar.com/cigars/aladino-churchill"
     ],
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Corojo",
+    "filler": "Corojo"
   },
   {
     "id": "cig-aladino-classic",
@@ -9102,7 +9121,9 @@
       "https://www.neptunecigar.com/cigars/aladino-classic-corona",
       "https://www.neptunecigar.com/cigars/aladino-classic-robusto"
     ],
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Habano",
+    "filler": "Corojo"
   },
   {
     "id": "cig-aladino-connecticut",
@@ -9271,7 +9292,9 @@
       "https://www.neptunecigar.com/cigars/aladino-corojo-reserva-figurado-box-pressed"
     ],
     "priceUrl": "https://www.neptunecigar.com/cigars/aladino-corojo-reserva-le-robusto",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Corojo",
+    "filler": "Corojo"
   },
   {
     "id": "cig-aladino-corona",
@@ -9332,7 +9355,9 @@
     "sourceUrls": [
       "https://www.neptunecigar.com/cigars/aladino-corona"
     ],
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Corojo",
+    "filler": "Corojo"
   },
   {
     "id": "cig-aladino-elegante",
@@ -9395,7 +9420,9 @@
       "https://www.neptunecigar.com/cigars/aladino-classic-elegante",
       "https://www.neptunecigar.com/cigars/aladino-habano-elegante-vintage-selection"
     ],
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Corojo",
+    "filler": "Corojo"
   },
   {
     "id": "cig-aladino-fuma-noche",
@@ -9708,7 +9735,9 @@
     "sourceUrls": [
       "https://www.neptunecigar.com/cigars/aladino-gordo"
     ],
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Corojo",
+    "filler": "Corojo"
   },
   {
     "id": "cig-aladino-habano-rothschild-vintage-selection",
@@ -9768,7 +9797,9 @@
     "sourceUrls": [
       "https://www.neptunecigar.com/cigars/aladino-habano-rothschild-vintage-selection"
     ],
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Corojo",
+    "filler": "Corojo"
   },
   {
     "id": "cig-aladino-habano-vintage-selection",
@@ -9828,7 +9859,9 @@
     "sourceUrls": [
       "https://www.neptunecigar.com/cigars/aladino-habano-toro-vintage-selection"
     ],
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Corojo",
+    "filler": "Corojo"
   },
   {
     "id": "cig-aladino-limited-edition",
@@ -10033,7 +10066,9 @@
     "sourceUrls": [
       "https://www.neptunecigar.com/cigars/aladino-patton"
     ],
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Corojo",
+    "filler": "Corojo"
   },
   {
     "id": "cig-aladino-robusto",
@@ -10094,7 +10129,9 @@
     "sourceUrls": [
       "https://www.neptunecigar.com/cigars/aladino-robusto"
     ],
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Corojo",
+    "filler": "Corojo"
   },
   {
     "id": "cig-aladino-sumatra",
@@ -10213,7 +10250,9 @@
     "sourceUrls": [
       "https://www.neptunecigar.com/cigars/aladino-toro"
     ],
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Corojo",
+    "filler": "Corojo"
   },
   {
     "id": "cig-alec-bradley-30-years",
@@ -10511,7 +10550,8 @@
     ],
     "priceUrl": "https://www.neptunecigar.com/cigars/alec-bradley-american-sun-grown-churchill",
     "wrapperOrigin": "Nikaragva",
-    "fillerOrigin": "Nikaragva"
+    "fillerOrigin": "Nikaragva",
+    "binder": "Jalapa"
   },
   {
     "id": "cig-alec-bradley-black-market",
@@ -10871,7 +10911,8 @@
     "wrapperOrigin": "Honduras",
     "binderOrigin": "SAD",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Connecticut Broadleaf"
   },
   {
     "id": "cig-alec-bradley-chunk-shade-4xl",
@@ -10929,7 +10970,8 @@
     "wrapperOrigin": "Honduras",
     "binderOrigin": "SAD",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Connecticut Broadleaf"
   },
   {
     "id": "cig-alec-bradley-chunk-shade-xl",
@@ -10987,7 +11029,8 @@
     "wrapperOrigin": "Honduras",
     "binderOrigin": "SAD",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Connecticut Broadleaf"
   },
   {
     "id": "cig-alec-bradley-connecticut",
@@ -11398,7 +11441,8 @@
     "flavoured": false,
     "strengthFromShop": true,
     "wrapperOrigin": "Ekvador",
-    "fillerOrigin": "Dominikanska Republika"
+    "fillerOrigin": "Dominikanska Republika",
+    "binder": "Criollo"
   },
   {
     "id": "cig-alec-bradley-double-broadleaf",
@@ -11657,7 +11701,8 @@
     ],
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Indonezija",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "filler": "Condega"
   },
   {
     "id": "cig-alec-bradley-filthy-hooligan",
@@ -13610,7 +13655,9 @@
       "https://www.neptunecigar.com/cigars/alec-bradley-safe-keepings-corona"
     ],
     "priceUrl": "https://www.neptunecigar.com/cigars/alec-bradley-safe-keepings-gordo",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Habano",
+    "filler": "Condega"
   },
   {
     "id": "cig-alec-bradley-sanctum",
@@ -22849,6 +22896,271 @@
     "isPuro": true
   },
   {
+    "id": "cig-benchmade-maduro",
+    "brand": "Ashton",
+    "line": "Benchmade Maduro",
+    "vitola": "Robusto",
+    "format": "50 x 127mm",
+    "country": "Nikaragva",
+    "wrapper": "Varies",
+    "strength": 3,
+    "body": 4,
+    "flavorTags": [
+      "kakao",
+      "kava",
+      "karamela",
+      "slatko",
+      "zemljano"
+    ],
+    "profileEstimated": true,
+    "catalogSource": "market",
+    "smokeTimeMin": 49,
+    "priceEUR": null,
+    "priceApprox": false,
+    "availabilityHR": [],
+    "notes": {
+      "hr": "Nikaragva, Varies pokrov — srednje snage, punijeg tijela. Okusi: kakao, kava, karamela.",
+      "en": "Nicaragua, Varies wrapper — medium in strength, fuller-bodied. Notes: cocoa, coffee, caramel."
+    },
+    "markets": [
+      "USA",
+      "WW"
+    ],
+    "vitolas": [
+      {
+        "name": "Robusto",
+        "format": "50 x 127mm",
+        "smokeTimeMin": 49,
+        "priceEUR": null,
+        "url": null,
+        "ring": 50,
+        "lengthMM": 127
+      },
+      {
+        "name": "Toro",
+        "format": "50 x 152mm",
+        "smokeTimeMin": 58,
+        "priceEUR": null,
+        "url": null,
+        "ring": 50,
+        "lengthMM": 152
+      },
+      {
+        "name": "Churchill",
+        "format": "50 x 178mm",
+        "smokeTimeMin": 68,
+        "priceEUR": null,
+        "url": null,
+        "ring": 50,
+        "lengthMM": 178
+      },
+      {
+        "name": "Torpedo",
+        "format": "52 x 156mm",
+        "smokeTimeMin": 60,
+        "priceEUR": null,
+        "url": null,
+        "ring": 52,
+        "lengthMM": 156
+      },
+      {
+        "name": "Gordo",
+        "format": "60 x 152mm",
+        "smokeTimeMin": 58,
+        "priceEUR": null,
+        "url": null,
+        "ring": 60,
+        "lengthMM": 152
+      }
+    ],
+    "regionLinks": {
+      "USA": {
+        "shop": "Holt's",
+        "url": "https://www.holts.com/cigars/all-cigar-brands/benchmade.html",
+        "priceEUR": 3.68,
+        "priceApprox": true,
+        "fetchedAt": "2026-07-01"
+      }
+    },
+    "strengthFromShop": true
+  },
+  {
+    "id": "cig-benchmade-natural",
+    "brand": "Ashton",
+    "line": "Benchmade Natural",
+    "vitola": "Robusto",
+    "format": "50 x 127mm",
+    "country": "Nikaragva",
+    "wrapper": "Varies",
+    "strength": 3,
+    "body": 3,
+    "flavorTags": [
+      "cedar",
+      "zacini",
+      "koza",
+      "kava"
+    ],
+    "profileEstimated": true,
+    "catalogSource": "market",
+    "smokeTimeMin": 49,
+    "priceEUR": null,
+    "priceApprox": false,
+    "availabilityHR": [],
+    "notes": {
+      "hr": "Nikaragva, Varies pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
+      "en": "Nicaragua, Varies wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
+    },
+    "markets": [
+      "USA",
+      "WW"
+    ],
+    "vitolas": [
+      {
+        "name": "Robusto",
+        "format": "50 x 127mm",
+        "smokeTimeMin": 49,
+        "priceEUR": null,
+        "url": null,
+        "ring": 50,
+        "lengthMM": 127
+      },
+      {
+        "name": "Toro",
+        "format": "50 x 152mm",
+        "smokeTimeMin": 58,
+        "priceEUR": null,
+        "url": null,
+        "ring": 50,
+        "lengthMM": 152
+      },
+      {
+        "name": "Churchill",
+        "format": "50 x 178mm",
+        "smokeTimeMin": 68,
+        "priceEUR": null,
+        "url": null,
+        "ring": 50,
+        "lengthMM": 178
+      },
+      {
+        "name": "Torpedo",
+        "format": "52 x 156mm",
+        "smokeTimeMin": 60,
+        "priceEUR": null,
+        "url": null,
+        "ring": 52,
+        "lengthMM": 156
+      },
+      {
+        "name": "Gordo",
+        "format": "60 x 152mm",
+        "smokeTimeMin": 58,
+        "priceEUR": null,
+        "url": null,
+        "ring": 60,
+        "lengthMM": 152
+      }
+    ],
+    "regionLinks": {
+      "USA": {
+        "shop": "Holt's",
+        "url": "https://www.holts.com/cigars/all-cigar-brands/benchmade.html",
+        "priceEUR": 3.68,
+        "priceApprox": true,
+        "fetchedAt": "2026-07-01"
+      }
+    },
+    "strengthFromShop": true
+  },
+  {
+    "id": "cig-benchmade-sun-grown",
+    "brand": "Ashton",
+    "line": "Benchmade Sun Grown",
+    "vitola": "Robusto",
+    "format": "50 x 127mm",
+    "country": "Nikaragva",
+    "wrapper": "Varies",
+    "strength": 3,
+    "body": 3,
+    "flavorTags": [
+      "cedar",
+      "zacini",
+      "koza",
+      "kava"
+    ],
+    "profileEstimated": true,
+    "catalogSource": "market",
+    "smokeTimeMin": 49,
+    "priceEUR": null,
+    "priceApprox": false,
+    "availabilityHR": [],
+    "notes": {
+      "hr": "Nikaragva, Varies pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
+      "en": "Nicaragua, Varies wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
+    },
+    "markets": [
+      "USA",
+      "WW"
+    ],
+    "vitolas": [
+      {
+        "name": "Robusto",
+        "format": "50 x 127mm",
+        "smokeTimeMin": 49,
+        "priceEUR": null,
+        "url": null,
+        "ring": 50,
+        "lengthMM": 127
+      },
+      {
+        "name": "Toro",
+        "format": "50 x 152mm",
+        "smokeTimeMin": 58,
+        "priceEUR": null,
+        "url": null,
+        "ring": 50,
+        "lengthMM": 152
+      },
+      {
+        "name": "Churchill",
+        "format": "50 x 178mm",
+        "smokeTimeMin": 68,
+        "priceEUR": null,
+        "url": null,
+        "ring": 50,
+        "lengthMM": 178
+      },
+      {
+        "name": "Torpedo",
+        "format": "52 x 156mm",
+        "smokeTimeMin": 60,
+        "priceEUR": null,
+        "url": null,
+        "ring": 52,
+        "lengthMM": 156
+      },
+      {
+        "name": "Gordo",
+        "format": "60 x 152mm",
+        "smokeTimeMin": 58,
+        "priceEUR": null,
+        "url": null,
+        "ring": 60,
+        "lengthMM": 152
+      }
+    ],
+    "regionLinks": {
+      "USA": {
+        "shop": "Holt's",
+        "url": "https://www.holts.com/cigars/all-cigar-brands/benchmade.html",
+        "priceEUR": 3.68,
+        "priceApprox": true,
+        "fetchedAt": "2026-07-01"
+      }
+    },
+    "strengthFromShop": true
+  },
+  {
     "id": "cig-ashton-cabinet",
     "brand": "Ashton",
     "line": "Cabinet",
@@ -24308,7 +24620,9 @@
     "wrapperOrigin": "Meksiko",
     "binderOrigin": "Honduras",
     "fillerOrigin": "Honduras",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Corojo",
+    "filler": "Corojo"
   },
   {
     "id": "cig-asylum-13",
@@ -24367,20 +24681,13 @@
         "fetchedAt": "2026-07-01"
       },
       {
-        "name": "Gordo",
-        "format": "60 x 152mm",
-        "smokeTimeMin": 58,
-        "priceEUR": null,
-        "url": null,
-        "ring": 60,
-        "lengthMM": 152
-      },
-      {
         "name": "Gran Toro",
         "format": "60 x 152mm",
-        "smokeTimeMin": 90,
+        "smokeTimeMin": 58,
         "priceEUR": 11.9,
         "url": "https://humidor.hr/hr/proizvod/asylum-13-toro-gordo-6-x-60/",
+        "ring": 60,
+        "lengthMM": 152,
         "regionLinks": {
           "HR": {
             "shop": "The Humidor",
@@ -24388,10 +24695,7 @@
             "priceEUR": 11.9,
             "fetchedAt": "2026-07-01"
           }
-        },
-        "ring": 60,
-        "lengthMM": 152,
-        "fetchedAt": "2026-07-01"
+        }
       },
       {
         "name": "Hercule",
@@ -25359,7 +25663,9 @@
     ],
     "wrapperOrigin": "Honduras",
     "binderOrigin": "Honduras",
-    "fillerOrigin": "Honduras"
+    "fillerOrigin": "Honduras",
+    "binder": "Corojo",
+    "filler": "Corojo"
   },
   {
     "id": "cig-asylum-asylum",
@@ -25856,7 +26162,8 @@
     "priceUrl": "https://www.neptunecigar.com/cigars/asylum-insidious-robusto",
     "binderOrigin": "Honduras",
     "fillerOrigin": "Honduras",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "wrapperOrigin": "Ekvador"
   },
   {
     "id": "cig-asylum-insidious-short",
@@ -28335,7 +28642,9 @@
     "vitola": "2",
     "wrapperOrigin": "Ekvador",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Olor",
+    "filler": "Piloto Cubano"
   },
   {
     "id": "cig-avo-regional-south-edition",
@@ -28398,7 +28707,8 @@
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Ekvador",
     "fillerOrigin": "Honduras",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Connecticut"
   },
   {
     "id": "cig-avo-robusto",
@@ -28458,7 +28768,9 @@
     ],
     "wrapperOrigin": "Ekvador",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Olor",
+    "filler": "Piloto Cubano"
   },
   {
     "id": "cig-avo-seasons-fall",
@@ -29245,7 +29557,8 @@
     ],
     "priceUrl": "https://www.neptunecigar.com/cigars/avo-xo-legato-tubos",
     "binderOrigin": "Dominikanska Republika",
-    "fillerOrigin": "Dominikanska Republika"
+    "fillerOrigin": "Dominikanska Republika",
+    "wrapperOrigin": "Ekvador"
   },
   {
     "id": "cig-avo-xo-notturno",
@@ -30513,7 +30826,8 @@
     "wrapperOrigin": "SAD",
     "binderOrigin": "Ekvador",
     "fillerOrigin": "Brazil",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Sumatra"
   },
   {
     "id": "cig-balmoral-anejo-xo",
@@ -31266,7 +31580,9 @@
     "wrapperOrigin": "Nikaragva",
     "binderOrigin": "Nikaragva",
     "fillerOrigin": "Brazil",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Esteli",
+    "filler": "Mata Norte"
   },
   {
     "id": "cig-balmoral-serie-signaturas-dueto",
@@ -32606,271 +32922,6 @@
     "formatEstimated": true
   },
   {
-    "id": "cig-benchmade-maduro",
-    "brand": "Ashton",
-    "line": "Benchmade Maduro",
-    "vitola": "Robusto",
-    "format": "50 x 127mm",
-    "country": "Nikaragva",
-    "wrapper": "Varies",
-    "strength": 3,
-    "body": 4,
-    "flavorTags": [
-      "kakao",
-      "kava",
-      "karamela",
-      "slatko",
-      "zemljano"
-    ],
-    "profileEstimated": true,
-    "catalogSource": "market",
-    "smokeTimeMin": 49,
-    "priceEUR": null,
-    "priceApprox": false,
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Nikaragva, Varies pokrov — srednje snage, punijeg tijela. Okusi: kakao, kava, karamela.",
-      "en": "Nicaragua, Varies wrapper — medium in strength, fuller-bodied. Notes: cocoa, coffee, caramel."
-    },
-    "markets": [
-      "USA",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Robusto",
-        "format": "50 x 127mm",
-        "smokeTimeMin": 49,
-        "priceEUR": null,
-        "url": null,
-        "ring": 50,
-        "lengthMM": 127
-      },
-      {
-        "name": "Toro",
-        "format": "50 x 152mm",
-        "smokeTimeMin": 58,
-        "priceEUR": null,
-        "url": null,
-        "ring": 50,
-        "lengthMM": 152
-      },
-      {
-        "name": "Churchill",
-        "format": "50 x 178mm",
-        "smokeTimeMin": 68,
-        "priceEUR": null,
-        "url": null,
-        "ring": 50,
-        "lengthMM": 178
-      },
-      {
-        "name": "Torpedo",
-        "format": "52 x 156mm",
-        "smokeTimeMin": 60,
-        "priceEUR": null,
-        "url": null,
-        "ring": 52,
-        "lengthMM": 156
-      },
-      {
-        "name": "Gordo",
-        "format": "60 x 152mm",
-        "smokeTimeMin": 58,
-        "priceEUR": null,
-        "url": null,
-        "ring": 60,
-        "lengthMM": 152
-      }
-    ],
-    "regionLinks": {
-      "USA": {
-        "shop": "Holt's",
-        "url": "https://www.holts.com/cigars/all-cigar-brands/benchmade.html",
-        "priceEUR": 3.68,
-        "priceApprox": true,
-        "fetchedAt": "2026-07-01"
-      }
-    },
-    "strengthFromShop": true
-  },
-  {
-    "id": "cig-benchmade-natural",
-    "brand": "Ashton",
-    "line": "Benchmade Natural",
-    "vitola": "Robusto",
-    "format": "50 x 127mm",
-    "country": "Nikaragva",
-    "wrapper": "Varies",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
-    ],
-    "profileEstimated": true,
-    "catalogSource": "market",
-    "smokeTimeMin": 49,
-    "priceEUR": null,
-    "priceApprox": false,
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Nikaragva, Varies pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Nicaragua, Varies wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
-    },
-    "markets": [
-      "USA",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Robusto",
-        "format": "50 x 127mm",
-        "smokeTimeMin": 49,
-        "priceEUR": null,
-        "url": null,
-        "ring": 50,
-        "lengthMM": 127
-      },
-      {
-        "name": "Toro",
-        "format": "50 x 152mm",
-        "smokeTimeMin": 58,
-        "priceEUR": null,
-        "url": null,
-        "ring": 50,
-        "lengthMM": 152
-      },
-      {
-        "name": "Churchill",
-        "format": "50 x 178mm",
-        "smokeTimeMin": 68,
-        "priceEUR": null,
-        "url": null,
-        "ring": 50,
-        "lengthMM": 178
-      },
-      {
-        "name": "Torpedo",
-        "format": "52 x 156mm",
-        "smokeTimeMin": 60,
-        "priceEUR": null,
-        "url": null,
-        "ring": 52,
-        "lengthMM": 156
-      },
-      {
-        "name": "Gordo",
-        "format": "60 x 152mm",
-        "smokeTimeMin": 58,
-        "priceEUR": null,
-        "url": null,
-        "ring": 60,
-        "lengthMM": 152
-      }
-    ],
-    "regionLinks": {
-      "USA": {
-        "shop": "Holt's",
-        "url": "https://www.holts.com/cigars/all-cigar-brands/benchmade.html",
-        "priceEUR": 3.68,
-        "priceApprox": true,
-        "fetchedAt": "2026-07-01"
-      }
-    },
-    "strengthFromShop": true
-  },
-  {
-    "id": "cig-benchmade-sun-grown",
-    "brand": "Ashton",
-    "line": "Benchmade Sun Grown",
-    "vitola": "Robusto",
-    "format": "50 x 127mm",
-    "country": "Nikaragva",
-    "wrapper": "Varies",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
-    ],
-    "profileEstimated": true,
-    "catalogSource": "market",
-    "smokeTimeMin": 49,
-    "priceEUR": null,
-    "priceApprox": false,
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Nikaragva, Varies pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Nicaragua, Varies wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
-    },
-    "markets": [
-      "USA",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Robusto",
-        "format": "50 x 127mm",
-        "smokeTimeMin": 49,
-        "priceEUR": null,
-        "url": null,
-        "ring": 50,
-        "lengthMM": 127
-      },
-      {
-        "name": "Toro",
-        "format": "50 x 152mm",
-        "smokeTimeMin": 58,
-        "priceEUR": null,
-        "url": null,
-        "ring": 50,
-        "lengthMM": 152
-      },
-      {
-        "name": "Churchill",
-        "format": "50 x 178mm",
-        "smokeTimeMin": 68,
-        "priceEUR": null,
-        "url": null,
-        "ring": 50,
-        "lengthMM": 178
-      },
-      {
-        "name": "Torpedo",
-        "format": "52 x 156mm",
-        "smokeTimeMin": 60,
-        "priceEUR": null,
-        "url": null,
-        "ring": 52,
-        "lengthMM": 156
-      },
-      {
-        "name": "Gordo",
-        "format": "60 x 152mm",
-        "smokeTimeMin": 58,
-        "priceEUR": null,
-        "url": null,
-        "ring": 60,
-        "lengthMM": 152
-      }
-    ],
-    "regionLinks": {
-      "USA": {
-        "shop": "Holt's",
-        "url": "https://www.holts.com/cigars/all-cigar-brands/benchmade.html",
-        "priceEUR": 3.68,
-        "priceApprox": true,
-        "fetchedAt": "2026-07-01"
-      }
-    },
-    "strengthFromShop": true
-  },
-  {
     "id": "cig-bentley-green",
     "brand": "Bentley",
     "line": "Green",
@@ -33411,7 +33462,8 @@
     ],
     "priceUrl": "https://www.neptunecigar.com/cigars/black-label-trading-company-bishops-blend-corona-larga",
     "fillerOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Habano Ecuador"
   },
   {
     "id": "cig-black-label-trading-company-bishops-blend-novemdiales",
@@ -34811,7 +34863,8 @@
       "https://www.neptunecigar.com/cigars/black-label-trading-company-santa-muerte-short-robusto"
     ],
     "priceUrl": "https://www.neptunecigar.com/cigars/black-label-trading-company-santa-muerte-short-robusto",
-    "fillerOrigin": "Dominikanska Republika"
+    "fillerOrigin": "Dominikanska Republika",
+    "binder": "Habano Ecuador"
   },
   {
     "id": "cig-black-label-trading-company-santa-muerte-barrio-santo",
@@ -35235,7 +35288,8 @@
     "wrapperOrigin": "SAD",
     "binderOrigin": "Nikaragva",
     "fillerOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Habano"
   },
   {
     "id": "cig-black-works-studio-hyena",
@@ -35983,7 +36037,8 @@
     ],
     "binderOrigin": "Ekvador",
     "fillerOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Habano Ecuador"
   },
   {
     "id": "cig-blackbird-cactus-wren",
@@ -36047,7 +36102,9 @@
     ],
     "wrapperOrigin": "Meksiko",
     "binderOrigin": "Kuba",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Cuban Seed",
+    "filler": "Corojo"
   },
   {
     "id": "cig-blackbird-crow",
@@ -36140,7 +36197,8 @@
     "vitola": "Doble",
     "wrapperOrigin": "Meksiko",
     "binderOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "filler": "Corojo"
   },
   {
     "id": "cig-blackbird-crow-san-andres",
@@ -36509,7 +36567,8 @@
     ],
     "wrapperOrigin": "Brazil",
     "binderOrigin": "Meksiko",
-    "fillerOrigin": "Dominikanska Republika"
+    "fillerOrigin": "Dominikanska Republika",
+    "binder": "San Andres"
   },
   {
     "id": "cig-blackbird-jackdaw-connecticut",
@@ -36593,7 +36652,8 @@
     "wrapperOrigin": "SAD",
     "binderOrigin": "Indonezija",
     "priceUrl": "https://www.neptunecigar.com/cigars/blackbird-jackdaw-robusto",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "filler": "Corojo"
   },
   {
     "id": "cig-blackbird-jackdaw-gran",
@@ -36655,7 +36715,8 @@
     ],
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Indonezija",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "filler": "Corojo"
   },
   {
     "id": "cig-blackbird-meadowlark",
@@ -36908,7 +36969,8 @@
     "wrapperOrigin": "Indonezija",
     "binderOrigin": "Dominikanska Republika",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Habano"
   },
   {
     "id": "cig-blackbird-rook-sumatra",
@@ -36996,7 +37058,8 @@
     "priceUrl": "https://www.neptunecigar.com/cigars/blackbird-rook-robusto",
     "binderOrigin": "Dominikanska Republika",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Habano"
   },
   {
     "id": "cig-blackbird-superb",
@@ -37326,7 +37389,8 @@
     ],
     "wrapperOrigin": "Brazil",
     "binderOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "filler": "Corojo"
   },
   {
     "id": "cig-blanco-connecticut",
@@ -38324,7 +38388,9 @@
       }
     },
     "formatEstimated": true,
-    "wrapperOrigin": "Ekvador"
+    "wrapperOrigin": "Ekvador",
+    "binderOrigin": "Haiti",
+    "fillerOrigin": "Haiti"
   },
   {
     "id": "cig-bohekio-churchill",
@@ -38450,7 +38516,9 @@
       "https://www.neptunecigar.com/cigars/bohekio-colors-churchill"
     ],
     "wrapperOrigin": "Ekvador",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Broadleaf",
+    "filler": "Corojo"
   },
   {
     "id": "cig-bohekio-gordo",
@@ -40942,7 +41010,8 @@
     ],
     "wrapperOrigin": "SAD",
     "binderOrigin": "SAD",
-    "fillerOrigin": "Nikaragva"
+    "fillerOrigin": "Nikaragva",
+    "binder": "Connecticut Broadleaf"
   },
   {
     "id": "cig-brick-house-corona",
@@ -41095,7 +41164,8 @@
     "wrapperOrigin": "SAD",
     "binderOrigin": "SAD",
     "fillerOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Connecticut Broadleaf"
   },
   {
     "id": "cig-brick-house-is-on-fire-taa-exclusive",
@@ -43698,7 +43768,8 @@
     "flavoured": false,
     "formatEstimated": true,
     "wrapperOrigin": "Nikaragva",
-    "binderOrigin": "Nikaragva"
+    "binderOrigin": "Nikaragva",
+    "filler": "Ligero"
   },
   {
     "id": "cig-cain-habano",
@@ -44126,7 +44197,8 @@
     ],
     "priceUrl": "https://www.neptunecigar.com/cigars/caldwell-blind-man-s-bluff-connecticut-robusto",
     "binderOrigin": "Honduras",
-    "fillerOrigin": "Dominikanska Republika"
+    "fillerOrigin": "Dominikanska Republika",
+    "wrapperOrigin": "Ekvador"
   },
   {
     "id": "cig-caldwell-blind-man-s-bluff-maduro",
@@ -44293,7 +44365,8 @@
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Honduras",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Corojo"
   },
   {
     "id": "cig-caldwell-eastern-standard",
@@ -44450,7 +44523,8 @@
       "https://www.neptunecigar.com/cigars/caldwell-eastern-standard-euro-express"
     ],
     "binderOrigin": "Dominikanska Republika",
-    "fillerOrigin": "Dominikanska Republika"
+    "fillerOrigin": "Dominikanska Republika",
+    "wrapperOrigin": "Ekvador"
   },
   {
     "id": "cig-caldwell-eastern-standard-midnight-express",
@@ -45037,7 +45111,8 @@
       "https://www.neptunecigar.com/cigars/caldwell-the-king-is-dead-toro"
     ],
     "wrapperOrigin": "Dominikanska Republika",
-    "fillerOrigin": "Dominikanska Republika"
+    "fillerOrigin": "Dominikanska Republika",
+    "binder": "Corojo"
   },
   {
     "id": "cig-camacho-american-barrel-aged",
@@ -45112,7 +45187,9 @@
     "wrapperOrigin": "SAD",
     "priceUrl": "https://www.neptunecigar.com/cigars/camacho-american-barrel-aged-robusto",
     "binderOrigin": "SAD",
-    "fillerOrigin": "Honduras"
+    "fillerOrigin": "Honduras",
+    "binder": "Connecticut Broadleaf",
+    "filler": "Corojo"
   },
   {
     "id": "cig-camacho-bg-meyer",
@@ -45765,7 +45842,10 @@
       "https://www.neptunecigar.com/cigars/camacho-criollo-toro",
       "https://www.neptunecigar.com/cigars/camacho-criollo-gigante"
     ],
-    "priceUrl": "https://www.neptunecigar.com/cigars/camacho-criollo-toro"
+    "priceUrl": "https://www.neptunecigar.com/cigars/camacho-criollo-toro",
+    "binder": "Corojo",
+    "fillerOrigin": "Dominikanska Republika",
+    "filler": "Piloto Cubano"
   },
   {
     "id": "cig-camacho-diploma",
@@ -46063,7 +46143,8 @@
       "https://www.neptunecigar.com/cigars/camacho-ecuador-robusto"
     ],
     "priceUrl": "https://www.neptunecigar.com/cigars/camacho-ecuador-gordo",
-    "fillerOrigin": "Dominikanska Republika"
+    "fillerOrigin": "Dominikanska Republika",
+    "binder": "Mata Fina"
   },
   {
     "id": "cig-camacho-escuro",
@@ -46228,7 +46309,9 @@
     "wrapperOrigin": "SAD",
     "binderOrigin": "Honduras",
     "fillerOrigin": "Honduras",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Corojo",
+    "filler": "Corojo"
   },
   {
     "id": "cig-camacho-liberty",
@@ -46372,7 +46455,9 @@
     ],
     "wrapperOrigin": "Honduras",
     "binderOrigin": "Honduras",
-    "fillerOrigin": "Honduras"
+    "fillerOrigin": "Honduras",
+    "binder": "Corojo",
+    "filler": "Corojo"
   },
   {
     "id": "cig-camacho-liberty-2012-throwback",
@@ -46433,7 +46518,9 @@
     ],
     "binderOrigin": "Honduras",
     "fillerOrigin": "Honduras",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Corojo",
+    "filler": "Corojo"
   },
   {
     "id": "cig-camacho-liberty-2020-bxp",
@@ -46497,7 +46584,8 @@
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Honduras",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Corojo"
   },
   {
     "id": "cig-camacho-liberty-series",
@@ -47311,7 +47399,8 @@
     ],
     "binderOrigin": "Nikaragva",
     "fillerOrigin": "Honduras",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Habano"
   },
   {
     "id": "cig-cao-amazon-anaconda",
@@ -47904,7 +47993,8 @@
       "https://www.neptunecigar.com/cigars/cao-bones-maltese-cross-gigante",
       "https://www.neptunecigar.com/cigars/cao-bones-chicken-foot-robusto",
       "https://www.neptunecigar.com/cigars/cao-bones-blind-hughie-toro"
-    ]
+    ],
+    "filler": "Piloto Cubano"
   },
   {
     "id": "cig-cao-brazilia",
@@ -48490,7 +48580,8 @@
     "vitola": "Noche",
     "wrapperOrigin": "SAD",
     "binderOrigin": "Kamerun",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "filler": "Condega"
   },
   {
     "id": "cig-cao-fasa-sombra",
@@ -48647,7 +48738,9 @@
       "https://www.neptunecigar.com/cigars/cao-flathead-v450-sparkplug",
       "https://www.neptunecigar.com/cigars/cao-flathead-speed-shop-v770-big-block-7--70"
     ],
-    "fillerOrigin": "Nikaragva"
+    "fillerOrigin": "Nikaragva",
+    "binderOrigin": "Ekvador",
+    "binder": "Connecticut"
   },
   {
     "id": "cig-cao-fuma-em-corda",
@@ -48968,7 +49061,10 @@
       "https://www.neptunecigar.com/cigars/cao-surplus-maduro-gigante-6--60"
     ],
     "priceUrl": "https://www.neptunecigar.com/cigars/cao-surplus-maduro-gigante-6--60",
-    "fillerOrigin": "Dominikanska Republika"
+    "fillerOrigin": "Dominikanska Republika",
+    "binderOrigin": "Ekvador",
+    "binder": "Sumatra",
+    "filler": "Olor"
   },
   {
     "id": "cig-cao-medio-tiempo",
@@ -49562,7 +49658,9 @@
     "strengthFromShop": false,
     "wrapperOrigin": "Honduras",
     "binderOrigin": "Ekvador",
-    "fillerOrigin": "Dominikanska Republika"
+    "fillerOrigin": "Dominikanska Republika",
+    "binder": "Sumatra",
+    "filler": "Olor"
   },
   {
     "id": "cig-cao-surplus-sweet",
@@ -49642,7 +49740,9 @@
     "strengthFromShop": true,
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Ekvador",
-    "fillerOrigin": "Dominikanska Republika"
+    "fillerOrigin": "Dominikanska Republika",
+    "binder": "Sumatra",
+    "filler": "Olor"
   },
   {
     "id": "cig-cao-vision",
@@ -51088,7 +51188,9 @@
     ],
     "wrapperOrigin": "Meksiko",
     "binderOrigin": "Meksiko",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "San Andres",
+    "filler": "San Andres"
   },
   {
     "id": "cig-casa-1910-mexigars-hba",
@@ -51149,7 +51251,9 @@
     "sourceUrls": [
       "https://www.neptunecigar.com/cigars/casa-1910-mexigars-hba-toro-6--52"
     ],
-    "binderOrigin": "Meksiko"
+    "binderOrigin": "Meksiko",
+    "binder": "San Andres",
+    "filler": "San Andres"
   },
   {
     "id": "cig-casa-1910-sampetrina",
@@ -51979,7 +52083,8 @@
     ],
     "binderOrigin": "Ekvador",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Habano Ecuador"
   },
   {
     "id": "cig-casa-cuevas-reserva",
@@ -52058,7 +52163,8 @@
     "wrapperOrigin": "Meksiko",
     "binderOrigin": "Dominikanska Republika",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Piloto Cubano"
   },
   {
     "id": "cig-casa-cuevas-sangre-nueva",
@@ -52119,7 +52225,8 @@
       "https://www.neptunecigar.com/cigars/casa-cuevas-sangre-nueva-toro"
     ],
     "wrapperOrigin": "Kamerun",
-    "fillerOrigin": "Dominikanska Republika"
+    "fillerOrigin": "Dominikanska Republika",
+    "binder": "Corojo"
   },
   {
     "id": "cig-casa-culinaria-connecticut",
@@ -53076,7 +53183,8 @@
     "wrapperOrigin": "SAD",
     "binderOrigin": "SAD",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Connecticut Broadleaf"
   },
   {
     "id": "cig-casa-de-nicaragua",
@@ -57697,7 +57805,9 @@
     "priceUrl": "https://www.neptunecigar.com/cigars/cavalier-geneve-bii-viso-jalapa-robusto",
     "wrapperOrigin": "Nikaragva",
     "fillerOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Habano",
+    "filler": "Habano"
   },
   {
     "id": "cig-cavalier-geneve-black-ii",
@@ -58021,7 +58131,8 @@
     ],
     "wrapperOrigin": "Nikaragva",
     "binderOrigin": "Nikaragva",
-    "fillerOrigin": "Honduras"
+    "fillerOrigin": "Honduras",
+    "binder": "Habano"
   },
   {
     "id": "cig-cavalier-geneve-cavalier-geneve-black-series-ii",
@@ -58147,7 +58258,8 @@
     ],
     "wrapperOrigin": "Nikaragva",
     "fillerOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Habano"
   },
   {
     "id": "cig-cavalier-geneve-cavalier-geneve-the-green-jacket",
@@ -59700,7 +59812,8 @@
     ],
     "wrapperOrigin": "Ekvador",
     "fillerOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Habano"
   },
   {
     "id": "cig-chateau-real-shade-gran-templar",
@@ -59764,7 +59877,8 @@
     ],
     "wrapperOrigin": "Ekvador",
     "fillerOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Habano"
   },
   {
     "id": "cig-chateau-real-shade-lord-tennyson",
@@ -59828,7 +59942,8 @@
     ],
     "wrapperOrigin": "Ekvador",
     "fillerOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Habano"
   },
   {
     "id": "cig-chinchalero-classic",
@@ -60318,7 +60433,8 @@
     },
     "formatEstimated": true,
     "wrapperOrigin": "Brazil",
-    "binderOrigin": "Indonezija"
+    "binderOrigin": "Indonezija",
+    "filler": "Sumatra"
   },
   {
     "id": "cig-christo-sumatra",
@@ -60398,7 +60514,8 @@
     },
     "formatEstimated": true,
     "wrapperOrigin": "Indonezija",
-    "binderOrigin": "Indonezija"
+    "binderOrigin": "Indonezija",
+    "filler": "Sumatra"
   },
   {
     "id": "cig-christo-werkflei",
@@ -60461,7 +60578,8 @@
     },
     "formatEstimated": true,
     "wrapperOrigin": "Indonezija",
-    "binderOrigin": "Indonezija"
+    "binderOrigin": "Indonezija",
+    "filler": "Sumatra"
   },
   {
     "id": "cig-cibao-cibaitos-cigarillos",
@@ -63955,7 +64073,8 @@
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "SAD",
     "fillerOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Connecticut"
   },
   {
     "id": "cig-cornelius-amp-anthony-daddy-mac",
@@ -64785,7 +64904,8 @@
     "binderOrigin": "Ekvador",
     "fillerOrigin": "Nikaragva",
     "strengthFromShop": true,
-    "flavoured": false
+    "flavoured": false,
+    "binder": "Connecticut"
   },
   {
     "id": "cig-crowned-heads-blood-medicine-limited-edition-2025-b-positive",
@@ -64847,7 +64967,8 @@
     ],
     "wrapperOrigin": "Nikaragva",
     "binderOrigin": "Ekvador",
-    "fillerOrigin": "Nikaragva"
+    "fillerOrigin": "Nikaragva",
+    "binder": "Connecticut"
   },
   {
     "id": "cig-crowned-heads-blood-medicine-limited-edition-2026-b-positive",
@@ -64943,7 +65064,8 @@
     "strengthFromShop": false,
     "wrapperOrigin": "Nikaragva",
     "binderOrigin": "Ekvador",
-    "fillerOrigin": "Nikaragva"
+    "fillerOrigin": "Nikaragva",
+    "binder": "Connecticut"
   },
   {
     "id": "cig-crowned-heads-broadway",
@@ -65323,7 +65445,8 @@
     "vitola": "Baron",
     "wrapperOrigin": "Meksiko",
     "binderOrigin": "Ekvador",
-    "fillerOrigin": "Dominikanska Republika"
+    "fillerOrigin": "Dominikanska Republika",
+    "binder": "Connecticut"
   },
   {
     "id": "cig-crowned-heads-court-reserve-xviii",
@@ -65937,7 +66060,8 @@
     "wrapperOrigin": "Meksiko",
     "binderOrigin": "Ekvador",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Sumatra"
   },
   {
     "id": "cig-crowned-heads-juarez-bulldozer",
@@ -66001,7 +66125,8 @@
     ],
     "wrapperOrigin": "Meksiko",
     "binderOrigin": "Ekvador",
-    "fillerOrigin": "Dominikanska Republika"
+    "fillerOrigin": "Dominikanska Republika",
+    "binder": "Sumatra"
   },
   {
     "id": "cig-crowned-heads-juarez-jack-brown",
@@ -66065,7 +66190,8 @@
     "wrapperOrigin": "Meksiko",
     "binderOrigin": "Ekvador",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Sumatra"
   },
   {
     "id": "cig-crowned-heads-juarez-limited-edition-2025-bulldozer",
@@ -66192,7 +66318,8 @@
     ],
     "wrapperOrigin": "Meksiko",
     "binderOrigin": "Ekvador",
-    "fillerOrigin": "Dominikanska Republika"
+    "fillerOrigin": "Dominikanska Republika",
+    "binder": "Sumatra"
   },
   {
     "id": "cig-crowned-heads-juarez-willy-lee",
@@ -66256,7 +66383,8 @@
     "wrapperOrigin": "Meksiko",
     "binderOrigin": "Ekvador",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Sumatra"
   },
   {
     "id": "cig-crowned-heads-la-imperiosa",
@@ -66495,7 +66623,8 @@
     ],
     "vitola": "50",
     "wrapperOrigin": "Nikaragva",
-    "fillerOrigin": "Dominikanska Republika"
+    "fillerOrigin": "Dominikanska Republika",
+    "binder": "Jalapa"
   },
   {
     "id": "cig-crowned-heads-las-calaveras-2024-lc54",
@@ -67286,7 +67415,8 @@
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Ekvador",
     "fillerOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Sumatra"
   },
   {
     "id": "cig-crowned-heads-tennessee-waltz",
@@ -67414,7 +67544,8 @@
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Ekvador",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Sumatra"
   },
   {
     "id": "cig-crowned-heads-thunderkiss",
@@ -68787,7 +68918,9 @@
       "https://www.neptunecigar.com/cigars/cuba-aliados-natural-robusto",
       "https://www.neptunecigar.com/cigars/cuba-aliados-natural-toro"
     ],
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Corojo",
+    "filler": "Corojo"
   },
   {
     "id": "cig-cuba-aliados-original-blend",
@@ -69683,7 +69816,9 @@
     ],
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Olor",
+    "filler": "Criollo 98"
   },
   {
     "id": "cig-culture-dominican-reserve",
@@ -70049,7 +70184,8 @@
     "wrapperOrigin": "Nikaragva",
     "binderOrigin": "Nikaragva",
     "fillerOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Esteli"
   },
   {
     "id": "cig-cumpay-cumpay",
@@ -70156,7 +70292,8 @@
     "wrapperOrigin": "Nikaragva",
     "binderOrigin": "Nikaragva",
     "fillerOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Esteli"
   },
   {
     "id": "cig-cumpay-limited-edition",
@@ -70571,7 +70708,8 @@
     "wrapperOrigin": "Nikaragva",
     "binderOrigin": "Nikaragva",
     "fillerOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Esteli"
   },
   {
     "id": "cig-cumpay-volcan-maduro",
@@ -72878,7 +73016,9 @@
     ],
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Olor",
+    "filler": "Corojo"
   },
   {
     "id": "cig-davidoff-50-years-diademas-finas-europe",
@@ -72935,7 +73075,9 @@
     ],
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Olor",
+    "filler": "Corojo"
   },
   {
     "id": "cig-davidoff-9-assortment",
@@ -75264,7 +75406,8 @@
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Dominikanska Republika",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Olor"
   },
   {
     "id": "cig-davidoff-room-101-uncle-lee-by-ranfla",
@@ -75388,7 +75531,9 @@
     "priceUrl": "https://www.neptunecigar.com/cigars/davidoff-royal-release-robusto",
     "wrapperOrigin": "Dominikanska Republika",
     "binderOrigin": "Ekvador",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Habano Ecuador",
+    "filler": "Criollo Ligero"
   },
   {
     "id": "cig-davidoff-royal-release-salomones",
@@ -75758,7 +75903,8 @@
     "wrapperOrigin": "Dominikanska Republika",
     "binderOrigin": "Dominikanska Republika",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "filler": "Olor"
   },
   {
     "id": "cig-davidoff-tubos-selection-white",
@@ -76199,7 +76345,8 @@
     ],
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Meksiko",
-    "fillerOrigin": "Dominikanska Republika"
+    "fillerOrigin": "Dominikanska Republika",
+    "binder": "San Andres"
   },
   {
     "id": "cig-davidoff-yamasa",
@@ -77009,7 +77156,9 @@
     ],
     "wrapperOrigin": "Dominikanska Republika",
     "binderOrigin": "Ekvador",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Sumatra",
+    "filler": "Condega"
   },
   {
     "id": "cig-davidoff-year-of-the-pig-2019-gran",
@@ -77066,7 +77215,8 @@
     ],
     "binderOrigin": "Meksiko",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "San Andres"
   },
   {
     "id": "cig-davidoff-year-of-the-rabbit",
@@ -77193,7 +77343,8 @@
     ],
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "filler": "Condega"
   },
   {
     "id": "cig-davidoff-year-of-the-snake",
@@ -80260,7 +80411,9 @@
     "priceUrl": "https://www.neptunecigar.com/cigars/diesel-crucible-toro",
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Esteli",
+    "filler": "Habano Jalapa"
   },
   {
     "id": "cig-diesel-delirium",
@@ -80321,7 +80474,8 @@
     ],
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "SAD",
-    "fillerOrigin": "Nikaragva"
+    "fillerOrigin": "Nikaragva",
+    "binder": "Connecticut Broadleaf"
   },
   {
     "id": "cig-diesel-disciple",
@@ -80385,7 +80539,9 @@
     ],
     "wrapperOrigin": "Meksiko",
     "binderOrigin": "Ekvador",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Sumatra",
+    "filler": "Esteli"
   },
   {
     "id": "cig-diesel-esteli-puro",
@@ -80512,7 +80668,9 @@
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Nikaragva",
     "fillerOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Habano",
+    "filler": "Habano"
   },
   {
     "id": "cig-diesel-fool-s-errand-worthy-fool",
@@ -80575,7 +80733,9 @@
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Nikaragva",
     "fillerOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Habano",
+    "filler": "Habano"
   },
   {
     "id": "cig-diesel-grind",
@@ -80702,7 +80862,8 @@
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Indonezija",
     "fillerOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "filler": "Habano"
   },
   {
     "id": "cig-diesel-sunday-gravy",
@@ -80876,7 +81037,9 @@
     ],
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Esteli",
+    "filler": "Jalapa"
   },
   {
     "id": "cig-diesel-tempest-taa",
@@ -81067,7 +81230,9 @@
     ],
     "vitola": "Gordo",
     "wrapperOrigin": "Meksiko",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Habano",
+    "filler": "Jalapa"
   },
   {
     "id": "cig-diesel-vintage-series-natural",
@@ -81160,7 +81325,9 @@
       "https://www.neptunecigar.com/cigars/diesel-vintage-series-natural-robusto-gordo"
     ],
     "vitola": "Gordo",
-    "wrapperOrigin": "Ekvador"
+    "wrapperOrigin": "Ekvador",
+    "binder": "Habano",
+    "filler": "Habano Jalapa"
   },
   {
     "id": "cig-diesel-whiskey-row",
@@ -81231,7 +81398,9 @@
     ],
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Meksiko",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "San Andres",
+    "filler": "Condega"
   },
   {
     "id": "cig-dios-del-sol-el-principio",
@@ -83015,445 +83184,6 @@
     "binderOrigin": "Indonezija"
   },
   {
-    "id": "cig-dominus-mmxx-astkreuz",
-    "brand": "Padilla",
-    "line": "Dominus MMXX Astkreuz",
-    "vitola": "Corona",
-    "format": "42 x 142mm",
-    "country": "Kostarika",
-    "wrapper": "Ecuador",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava",
-      "cvjetno"
-    ],
-    "profileEstimated": true,
-    "catalogSource": "market",
-    "smokeTimeMin": 55,
-    "priceEUR": null,
-    "priceApprox": false,
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Kostarika, Ecuador pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Kostarika, Ecuador wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
-    },
-    "markets": [
-      "EU",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Corona",
-        "format": "42 x 142mm",
-        "smokeTimeMin": 55,
-        "priceEUR": null,
-        "url": null,
-        "regionLinks": {
-          "EU": {
-            "shop": "CigarWorld",
-            "url": "https://www.cigarworld.de/en/zigarren/costa-rica/dominus-mmxx-astkreuz-corona-90015540_41103",
-            "priceEUR": 8.5,
-            "fetchedAt": "2026-07-01"
-          }
-        },
-        "ring": 42,
-        "lengthMM": 142
-      }
-    ],
-    "regionLinks": {
-      "EU": {
-        "shop": "CigarWorld",
-        "url": "https://www.cigarworld.de/en/zigarren/costa-rica/dominus-mmxx-astkreuz-corona-90015540_41103",
-        "priceEUR": 8.5,
-        "fetchedAt": "2026-07-01"
-      }
-    },
-    "formatEstimated": true,
-    "wrapperOrigin": "Ekvador",
-    "binderOrigin": "Ekvador"
-  },
-  {
-    "id": "cig-dominus-mmxx-jerusalemkreuz",
-    "brand": "Padilla",
-    "line": "Dominus MMXX Jerusalemkreuz",
-    "vitola": "Half Corona",
-    "format": "42 x 105mm",
-    "country": "Kostarika",
-    "wrapper": "Ecuador",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava",
-      "cvjetno",
-      "drvo"
-    ],
-    "profileEstimated": true,
-    "catalogSource": "market",
-    "smokeTimeMin": 40,
-    "priceEUR": null,
-    "priceApprox": false,
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Kostarika, Ecuador pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Kostarika, Ecuador wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
-    },
-    "markets": [
-      "EU",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Half Corona",
-        "format": "42 x 105mm",
-        "smokeTimeMin": 40,
-        "priceEUR": null,
-        "url": null,
-        "regionLinks": {
-          "EU": {
-            "shop": "CigarWorld",
-            "url": "https://www.cigarworld.de/en/zigarren/costa-rica/dominus-mmxx-jerusalemkreuz-halfcorona-90015540_41110",
-            "priceEUR": 5.5,
-            "fetchedAt": "2026-07-01"
-          }
-        },
-        "ring": 42,
-        "lengthMM": 105
-      }
-    ],
-    "regionLinks": {
-      "EU": {
-        "shop": "CigarWorld",
-        "url": "https://www.cigarworld.de/en/zigarren/costa-rica/dominus-mmxx-jerusalemkreuz-halfcorona-90015540_41110",
-        "priceEUR": 5.5,
-        "fetchedAt": "2026-07-01"
-      }
-    },
-    "formatEstimated": true,
-    "wrapperOrigin": "Ekvador",
-    "binderOrigin": "Ekvador"
-  },
-  {
-    "id": "cig-dominus-mmxx-patoncerkreuz",
-    "brand": "Padilla",
-    "line": "Dominus MMXX Patoncerkreuz",
-    "vitola": "Robusto",
-    "format": "52 x 127mm",
-    "country": "Kostarika",
-    "wrapper": "Ecuador",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava",
-      "cvjetno",
-      "kremasto"
-    ],
-    "profileEstimated": true,
-    "catalogSource": "market",
-    "smokeTimeMin": 49,
-    "priceEUR": null,
-    "priceApprox": false,
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Kostarika, Ecuador pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Kostarika, Ecuador wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
-    },
-    "markets": [
-      "EU",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Robusto",
-        "format": "52 x 127mm",
-        "smokeTimeMin": 49,
-        "priceEUR": null,
-        "url": null,
-        "regionLinks": {
-          "EU": {
-            "shop": "CigarWorld",
-            "url": "https://www.cigarworld.de/en/zigarren/costa-rica/dominus-mmxx-patoncerkreuz-robusto-maduro-cms-90015540_41113",
-            "priceEUR": 9.5,
-            "fetchedAt": "2026-07-01"
-          }
-        },
-        "ring": 52,
-        "lengthMM": 127
-      }
-    ],
-    "regionLinks": {
-      "EU": {
-        "shop": "CigarWorld",
-        "url": "https://www.cigarworld.de/en/zigarren/costa-rica/dominus-mmxx-patoncerkreuz-robusto-maduro-cms-90015540_41113",
-        "priceEUR": 9.5,
-        "fetchedAt": "2026-07-01"
-      }
-    },
-    "formatEstimated": true,
-    "wrapperOrigin": "Ekvador",
-    "binderOrigin": "Ekvador"
-  },
-  {
-    "id": "cig-dominus-mmxx-santiagokreuz",
-    "brand": "Padilla",
-    "line": "Dominus MMXX Santiagokreuz",
-    "vitola": "Robusto",
-    "format": "52 x 127mm",
-    "country": "Kostarika",
-    "wrapper": "Ecuador",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava",
-      "cvjetno"
-    ],
-    "profileEstimated": true,
-    "catalogSource": "market",
-    "smokeTimeMin": 49,
-    "priceEUR": null,
-    "priceApprox": false,
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Kostarika, Ecuador pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Kostarika, Ecuador wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
-    },
-    "markets": [
-      "EU",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Robusto",
-        "format": "52 x 127mm",
-        "smokeTimeMin": 49,
-        "priceEUR": null,
-        "url": null,
-        "regionLinks": {
-          "EU": {
-            "shop": "CigarWorld",
-            "url": "https://www.cigarworld.de/en/zigarren/costa-rica/dominus-mmxx-santiagokreuz-robusto-90015540_41112",
-            "priceEUR": 9.5,
-            "fetchedAt": "2026-07-01"
-          }
-        },
-        "ring": 52,
-        "lengthMM": 127
-      }
-    ],
-    "regionLinks": {
-      "EU": {
-        "shop": "CigarWorld",
-        "url": "https://www.cigarworld.de/en/zigarren/costa-rica/dominus-mmxx-santiagokreuz-robusto-90015540_41112",
-        "priceEUR": 9.5,
-        "fetchedAt": "2026-07-01"
-      }
-    },
-    "formatEstimated": true,
-    "wrapperOrigin": "Ekvador",
-    "binderOrigin": "Ekvador"
-  },
-  {
-    "id": "cig-dominus-mmxx-tatzenkreuz",
-    "brand": "Padilla",
-    "line": "Dominus MMXX Tatzenkreuz",
-    "vitola": "Gordo",
-    "format": "52 x 159mm",
-    "country": "Kostarika",
-    "wrapper": "Ecuador",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava",
-      "cvjetno",
-      "kremasto"
-    ],
-    "profileEstimated": true,
-    "catalogSource": "market",
-    "smokeTimeMin": 61,
-    "priceEUR": null,
-    "priceApprox": false,
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Kostarika, Ecuador pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Kostarika, Ecuador wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
-    },
-    "markets": [
-      "EU",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Gordo",
-        "format": "52 x 159mm",
-        "smokeTimeMin": 61,
-        "priceEUR": null,
-        "url": null,
-        "regionLinks": {
-          "EU": {
-            "shop": "CigarWorld",
-            "url": "https://www.cigarworld.de/en/zigarren/costa-rica/dominus-mmxx-tatzenkreuz-gordito-90015540_41111",
-            "priceEUR": 6.9,
-            "fetchedAt": "2026-07-01"
-          }
-        },
-        "ring": 52,
-        "lengthMM": 159
-      }
-    ],
-    "regionLinks": {
-      "EU": {
-        "shop": "CigarWorld",
-        "url": "https://www.cigarworld.de/en/zigarren/costa-rica/dominus-mmxx-tatzenkreuz-gordito-90015540_41111",
-        "priceEUR": 6.9,
-        "fetchedAt": "2026-07-01"
-      }
-    },
-    "formatEstimated": true,
-    "wrapperOrigin": "Ekvador",
-    "binderOrigin": "Ekvador"
-  },
-  {
-    "id": "cig-dominus-mmxx-templerkreuz",
-    "brand": "Padilla",
-    "line": "Dominus MMXX Templerkreuz",
-    "vitola": "Figurado",
-    "format": "50 x 178mm",
-    "country": "Kostarika",
-    "wrapper": "Ecuador",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava",
-      "cvjetno",
-      "kremasto"
-    ],
-    "profileEstimated": true,
-    "catalogSource": "market",
-    "smokeTimeMin": 68,
-    "priceEUR": null,
-    "priceApprox": false,
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Kostarika, Ecuador pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Kostarika, Ecuador wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
-    },
-    "markets": [
-      "EU",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Figurado",
-        "format": "50 x 178mm",
-        "smokeTimeMin": 68,
-        "priceEUR": null,
-        "url": null,
-        "regionLinks": {
-          "EU": {
-            "shop": "CigarWorld",
-            "url": "https://www.cigarworld.de/en/zigarren/costa-rica/dominus-mmxx-templerkreuz-salomones-90015540_41106",
-            "priceEUR": 16.5,
-            "fetchedAt": "2026-07-01"
-          }
-        },
-        "ring": 50,
-        "lengthMM": 178
-      }
-    ],
-    "regionLinks": {
-      "EU": {
-        "shop": "CigarWorld",
-        "url": "https://www.cigarworld.de/en/zigarren/costa-rica/dominus-mmxx-templerkreuz-salomones-90015540_41106",
-        "priceEUR": 16.5,
-        "fetchedAt": "2026-07-01"
-      }
-    },
-    "formatEstimated": true,
-    "wrapperOrigin": "Ekvador",
-    "binderOrigin": "Ekvador"
-  },
-  {
-    "id": "cig-dominus-mmxx-wiederkreuz",
-    "brand": "Padilla",
-    "line": "Dominus MMXX Wiederkreuz",
-    "vitola": "Piramide",
-    "format": "50 x 158mm",
-    "country": "Kostarika",
-    "wrapper": "Ecuador",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava",
-      "cvjetno",
-      "drvo"
-    ],
-    "profileEstimated": true,
-    "catalogSource": "market",
-    "smokeTimeMin": 61,
-    "priceEUR": null,
-    "priceApprox": false,
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Kostarika, Ecuador pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Kostarika, Ecuador wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
-    },
-    "markets": [
-      "EU",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Piramide",
-        "format": "50 x 158mm",
-        "smokeTimeMin": 61,
-        "priceEUR": null,
-        "url": null,
-        "regionLinks": {
-          "EU": {
-            "shop": "CigarWorld",
-            "url": "https://www.cigarworld.de/en/zigarren/costa-rica/dominus-mmxx-wiederkreuz-montezuma-pyramide-mc2-90015540_41107",
-            "priceEUR": 10.5,
-            "fetchedAt": "2026-07-01"
-          }
-        },
-        "ring": 50,
-        "lengthMM": 158
-      }
-    ],
-    "regionLinks": {
-      "EU": {
-        "shop": "CigarWorld",
-        "url": "https://www.cigarworld.de/en/zigarren/costa-rica/dominus-mmxx-wiederkreuz-montezuma-pyramide-mc2-90015540_41107",
-        "priceEUR": 10.5,
-        "fetchedAt": "2026-07-01"
-      }
-    },
-    "formatEstimated": true,
-    "wrapperOrigin": "Ekvador",
-    "binderOrigin": "Ekvador"
-  },
-  {
     "id": "cig-don-diego-babies",
     "brand": "Don Diego",
     "line": "Babies",
@@ -84498,7 +84228,9 @@
     "priceUrl": "https://www.neptunecigar.com/cigars/don-julio-punta-espada-gigante",
     "binderOrigin": "Dominikanska Republika",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Corojo",
+    "filler": "Habano"
   },
   {
     "id": "cig-don-julio-sang-bleu",
@@ -85396,7 +85128,10 @@
     "flavoured": false,
     "formatEstimated": true,
     "priceUrl": "https://www.neptunecigar.com/cigars/don-lino-connecticut-robusto",
-    "binderOrigin": "Dominikanska Republika"
+    "binderOrigin": "Dominikanska Republika",
+    "wrapperOrigin": "Ekvador",
+    "binder": "Olor",
+    "filler": "Criollo 98"
   },
   {
     "id": "cig-don-lino-habanitos-cigarillos",
@@ -85604,7 +85339,8 @@
     "wrapperOrigin": "Meksiko",
     "binderOrigin": "Dominikanska Republika",
     "fillerOrigin": "Kamerun",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Olor"
   },
   {
     "id": "cig-don-lino-millennium",
@@ -90361,7 +90097,8 @@
     "wrapperOrigin": "SAD",
     "binderOrigin": "Ekvador",
     "fillerOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Connecticut"
   },
   {
     "id": "cig-drew-estate-deadwood-crazy-alice",
@@ -93383,7 +93120,8 @@
     "wrapperOrigin": "SAD",
     "binderOrigin": "Meksiko",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "San Andres"
   },
   {
     "id": "cig-dunbarton-t-t-mi-querida-fino-largo",
@@ -93762,7 +93500,8 @@
     "wrapperOrigin": "SAD",
     "binderOrigin": "Nikaragva",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "filler": "Ligero"
   },
   {
     "id": "cig-dunbarton-t-t-sobremesa",
@@ -93911,7 +93650,8 @@
     "strengthFromShop": true,
     "priceUrl": "https://www.neptunecigar.com/cigars/sobremesa-brulee-robusto",
     "binderOrigin": "Meksiko",
-    "fillerOrigin": "Nikaragva"
+    "fillerOrigin": "Nikaragva",
+    "wrapperOrigin": "Ekvador"
   },
   {
     "id": "cig-dunbarton-t-t-sobremesa-fino",
@@ -93984,7 +93724,9 @@
     "strengthFromShop": true,
     "_original_brand": "Sobremesa",
     "flavoured": false,
-    "formatEstimated": true
+    "formatEstimated": true,
+    "wrapperOrigin": "Ekvador",
+    "binderOrigin": "Meksiko"
   },
   {
     "id": "cig-dunbarton-t-t-sobremesa-largo",
@@ -97938,7 +97680,9 @@
     "wrapperOrigin": "Honduras",
     "binderOrigin": "Honduras",
     "fillerOrigin": "Honduras",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Corojo",
+    "filler": "Corojo"
   },
   {
     "id": "cig-eiroa-limitada",
@@ -98162,7 +97906,9 @@
     "wrapperOrigin": "Honduras",
     "binderOrigin": "Honduras",
     "fillerOrigin": "Honduras",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Corojo",
+    "filler": "Corojo"
   },
   {
     "id": "cig-eiroa-robusto",
@@ -98228,7 +97974,9 @@
     "wrapperOrigin": "Honduras",
     "binderOrigin": "Honduras",
     "fillerOrigin": "Honduras",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Corojo",
+    "filler": "Corojo"
   },
   {
     "id": "cig-eiroa-the-first-20-years-diadema",
@@ -98427,7 +98175,9 @@
     "wrapperOrigin": "Honduras",
     "binderOrigin": "Honduras",
     "fillerOrigin": "Honduras",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Corojo",
+    "filler": "Corojo"
   },
   {
     "id": "cig-el-baton-double",
@@ -98762,7 +98512,8 @@
     ],
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "SAD",
-    "fillerOrigin": "Dominikanska Republika"
+    "fillerOrigin": "Dominikanska Republika",
+    "binder": "Connecticut Broadleaf"
   },
   {
     "id": "cig-el-credito-extra",
@@ -100365,7 +100116,8 @@
       "https://www.neptunecigar.com/cigars/el-septimo-culinary-art-collection-france-bordeaux-6--60"
     ],
     "binderOrigin": "Ekvador",
-    "fillerOrigin": "Brazil"
+    "fillerOrigin": "Brazil",
+    "binder": "Habano Ecuador"
   },
   {
     "id": "cig-el-septimo-culinary-art-collection-italy-toscana",
@@ -100425,7 +100177,8 @@
     ],
     "binderOrigin": "Ekvador",
     "fillerOrigin": "Brazil",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Habano Ecuador"
   },
   {
     "id": "cig-el-septimo-culinary-art-collection-spain-rioja",
@@ -100485,7 +100238,8 @@
       "https://www.neptunecigar.com/cigars/el-septimo-culinary-art-collection-spain-rioja-5--54"
     ],
     "binderOrigin": "Ekvador",
-    "fillerOrigin": "Brazil"
+    "fillerOrigin": "Brazil",
+    "binder": "Habano Ecuador"
   },
   {
     "id": "cig-el-septimo-culinary-art-nigori",
@@ -100918,7 +100672,8 @@
     ],
     "binderOrigin": "Ekvador",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Habano Ecuador"
   },
   {
     "id": "cig-el-septimo-emperor-collection-vartan-the-dragon",
@@ -101035,7 +100790,8 @@
       "https://www.neptunecigar.com/cigars/el-septimo-emperor-collection-yao-connecticut--61-2--60"
     ],
     "binderOrigin": "Ekvador",
-    "fillerOrigin": "Dominikanska Republika"
+    "fillerOrigin": "Dominikanska Republika",
+    "binder": "Habano Ecuador"
   },
   {
     "id": "cig-el-septimo-emperor-collection-yao-maduro",
@@ -101098,7 +100854,8 @@
     ],
     "binderOrigin": "Ekvador",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Habano Ecuador"
   },
   {
     "id": "cig-el-septimo-emperor-sheba-maduro",
@@ -101361,7 +101118,8 @@
     "flavoured": false,
     "strengthFromShop": true,
     "binderOrigin": "Ekvador",
-    "fillerOrigin": "Dominikanska Republika"
+    "fillerOrigin": "Dominikanska Republika",
+    "binder": "Habano Ecuador"
   },
   {
     "id": "cig-el-septimo-sacred-arts-collection-michelangelo",
@@ -101425,7 +101183,8 @@
     ],
     "binderOrigin": "Ekvador",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Habano Ecuador"
   },
   {
     "id": "cig-el-septimo-sacred-arts-collection-salvador-dali",
@@ -101546,7 +101305,8 @@
     ],
     "binderOrigin": "Ekvador",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Habano Ecuador"
   },
   {
     "id": "cig-el-septimo-travel-time-d-r-congo",
@@ -101836,7 +101596,9 @@
     "priceUrl": "https://www.neptunecigar.com/cigars/el-titan-de-bronze-redemption-robusto",
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Esteli",
+    "filler": "Esteli"
   },
   {
     "id": "cig-el-viejo-continente-5-anos-edicion-pitagoras",
@@ -101897,7 +101659,9 @@
       "https://www.neptunecigar.com/cigars/el-viejo-continente-5-anos-edicion-pitagoras"
     ],
     "wrapperOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Jalapa",
+    "filler": "Esteli"
   },
   {
     "id": "cig-el-viejo-continente-5-anos-salomon",
@@ -101958,7 +101722,9 @@
       "https://www.neptunecigar.com/cigars/el-viejo-continente-5-anos-salomon"
     ],
     "wrapperOrigin": "Ekvador",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Jalapa",
+    "filler": "Esteli"
   },
   {
     "id": "cig-el-viejo-continente-burlesque",
@@ -102402,7 +102168,9 @@
     ],
     "wrapperOrigin": "Nikaragva",
     "binderOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Esteli",
+    "filler": "Esteli"
   },
   {
     "id": "cig-el-viejo-continente-edicion-aniversario",
@@ -102651,7 +102419,9 @@
     "wrapperOrigin": "Meksiko",
     "binderOrigin": "Ekvador",
     "fillerOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Habano Ecuador",
+    "filler": "Ligero"
   },
   {
     "id": "cig-el-viejo-continente-mare-nostrum",
@@ -102731,7 +102501,8 @@
     "vitola": "Culebras",
     "binderOrigin": "Nikaragva",
     "fillerOrigin": "Brazil",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Habano"
   },
   {
     "id": "cig-el-viejo-continente-mediumfiller",
@@ -102969,69 +102740,6 @@
       }
     },
     "formatEstimated": true
-  },
-  {
-    "id": "cig-el-vinyet-5-215-52",
-    "brand": "PDR",
-    "line": "El Vinyet",
-    "vitola": "Robusto",
-    "format": "52 x 127mm",
-    "country": "Dominikanska Republika",
-    "wrapper": "Ecuadorian Habano",
-    "strength": 4,
-    "body": 3,
-    "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
-    ],
-    "profileEstimated": true,
-    "catalogSource": "market",
-    "smokeTimeMin": 60,
-    "priceEUR": 9.9,
-    "priceApprox": false,
-    "availabilityHR": [
-      "The Humidor"
-    ],
-    "notes": {
-      "hr": "Dominikanska Republika, Ecuadorian Habano pokrov — jače snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Dominican Republic, Ecuadorian Habano wrapper — medium-full in strength, medium-bodied. Notes: cedar, spices, leather."
-    },
-    "markets": [
-      "HR",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Robusto",
-        "format": "52 x 127mm",
-        "smokeTimeMin": 60,
-        "priceEUR": 9.9,
-        "url": "https://humidor.hr/hr/proizvod/el-vinyet-robusto-5x52/",
-        "regionLinks": {
-          "HR": {
-            "shop": "The Humidor",
-            "url": "https://humidor.hr/hr/proizvod/el-vinyet-robusto-5x52/",
-            "priceEUR": 9.9,
-            "fetchedAt": "2026-07-01"
-          }
-        },
-        "ring": 52,
-        "lengthMM": 127,
-        "fetchedAt": "2026-07-01"
-      }
-    ],
-    "regionLinks": {
-      "HR": {
-        "shop": "The Humidor",
-        "url": "https://humidor.hr/hr/proizvod/el-vinyet-robusto-5x52/",
-        "priceEUR": 9.9,
-        "fetchedAt": "2026-07-01"
-      }
-    },
-    "strengthFromShop": true,
-    "priceUrl": "https://humidor.hr/hr/proizvod/el-vinyet-robusto-5x52/"
   },
   {
     "id": "cig-eladio-diaz-71st-aniversario",
@@ -104254,7 +103962,8 @@
     "priceUrl": "https://www.neptunecigar.com/cigars/esteban-carreras-cashmere-toro",
     "binderOrigin": "Nikaragva",
     "fillerOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "wrapperOrigin": "Ekvador"
   },
   {
     "id": "cig-esteban-carreras-chupa-cabra-hellcat",
@@ -105068,7 +104777,8 @@
     ],
     "vitola": "Boolit",
     "binderOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "filler": "Condega"
   },
   {
     "id": "cig-esteban-carreras-devil-s-hand-maduro",
@@ -105351,7 +105061,8 @@
     "wrapperOrigin": "SAD",
     "binderOrigin": "Ekvador",
     "fillerOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Habano Ecuador"
   },
   {
     "id": "cig-esteban-carreras-mr-brownstone-maduro-smack",
@@ -105416,7 +105127,8 @@
     "wrapperOrigin": "SAD",
     "binderOrigin": "Ekvador",
     "fillerOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Habano Ecuador"
   },
   {
     "id": "cig-esteban-carreras-mr-brownstone-sesenta",
@@ -105540,7 +105252,8 @@
     "wrapperOrigin": "Kamerun",
     "binderOrigin": "SAD",
     "fillerOrigin": "Honduras",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Connecticut Broadleaf"
   },
   {
     "id": "cig-excalibur-1066-maduro-dark-knight",
@@ -105602,7 +105315,8 @@
     "wrapperOrigin": "SAD",
     "binderOrigin": "SAD",
     "fillerOrigin": "Honduras",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Connecticut Broadleaf"
   },
   {
     "id": "cig-excalibur-3",
@@ -105666,7 +105380,8 @@
     "wrapperOrigin": "SAD",
     "binderOrigin": "SAD",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Connecticut Shade"
   },
   {
     "id": "cig-excalibur-black",
@@ -105730,7 +105445,9 @@
     ],
     "wrapperOrigin": "SAD",
     "binderOrigin": "Ekvador",
-    "fillerOrigin": "Honduras"
+    "fillerOrigin": "Honduras",
+    "binder": "Sumatra",
+    "filler": "Ligero"
   },
   {
     "id": "cig-excalibur-cigarillos",
@@ -105790,7 +105507,8 @@
     ],
     "wrapperOrigin": "SAD",
     "binderOrigin": "SAD",
-    "fillerOrigin": "Dominikanska Republika"
+    "fillerOrigin": "Dominikanska Republika",
+    "binder": "Connecticut Shade"
   },
   {
     "id": "cig-excalibur-excalibur",
@@ -105862,7 +105580,8 @@
     "priceUrl": "https://www.neptunecigar.com/cigars/excalibur-epicure",
     "wrapperOrigin": "SAD",
     "binderOrigin": "SAD",
-    "fillerOrigin": "Dominikanska Republika"
+    "fillerOrigin": "Dominikanska Republika",
+    "binder": "Connecticut Shade"
   },
   {
     "id": "cig-excalibur-illusione-no-1",
@@ -106003,7 +105722,8 @@
     "wrapperOrigin": "SAD",
     "binderOrigin": "SAD",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Connecticut Broadleaf"
   },
   {
     "id": "cig-excalibur-miniatures",
@@ -106061,7 +105781,8 @@
     "wrapperOrigin": "SAD",
     "binderOrigin": "SAD",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Connecticut Shade"
   },
   {
     "id": "cig-excalibur-no-660",
@@ -106124,7 +105845,8 @@
     "wrapperOrigin": "SAD",
     "binderOrigin": "SAD",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Connecticut Shade"
   },
   {
     "id": "cig-factory-overrun-dominikanische-republik-pdr-h",
@@ -107399,7 +107121,8 @@
     ],
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Ekvador",
-    "fillerOrigin": "Dominikanska Republika"
+    "fillerOrigin": "Dominikanska Republika",
+    "binder": "Sumatra"
   },
   {
     "id": "cig-ferio-tego-summa",
@@ -108011,7 +107734,8 @@
     "binderOrigin": "Nikaragva",
     "fillerOrigin": "Nikaragva",
     "strengthFromShop": true,
-    "flavoured": false
+    "flavoured": false,
+    "filler": "Jalapa"
   },
   {
     "id": "cig-fine-catch-marlin",
@@ -108724,240 +108448,6 @@
       }
     },
     "strengthFromShop": true
-  },
-  {
-    "id": "cig-flor-de-las-antillas-10th-anniversary",
-    "brand": "My Father",
-    "line": "Flor de las Antillas 10th Anniversary",
-    "vitola": "Toro",
-    "format": "52 x 165mm",
-    "country": "Nikaragva",
-    "wrapper": "Nicaraguan",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [
-      "papar",
-      "orasasti",
-      "zacini",
-      "drvo",
-      "duhan",
-      "dim"
-    ],
-    "profileEstimated": true,
-    "catalogSource": "market",
-    "smokeTimeMin": 63,
-    "priceEUR": null,
-    "priceApprox": false,
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Nikaragva, Nicaraguan pokrov — pune snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Nicaragua, Nicaraguan wrapper — full in strength, medium-bodied. Notes: cedar, spices, leather."
-    },
-    "markets": [
-      "USA",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Toro",
-        "format": "52 x 165mm",
-        "smokeTimeMin": 63,
-        "priceEUR": null,
-        "url": "https://www.neptunecigar.com/cigars/flor-de-las-antillas-10th-anniversary-le-2022-toro",
-        "ring": 52,
-        "lengthMM": 165
-      }
-    ],
-    "regionLinks": {
-      "USA": {
-        "shop": "Holt's",
-        "url": "https://www.holts.com/cigars/all-cigar-brands/flor-de-las-antillas-10th-anniversary.html",
-        "priceEUR": 36.8,
-        "priceApprox": true,
-        "fetchedAt": "2026-07-01"
-      }
-    },
-    "strengthFromShop": true,
-    "priceUrl": "https://www.neptunecigar.com/cigars/flor-de-las-antillas-10th-anniversary-le-2022-toro",
-    "wrapperOrigin": "Nikaragva",
-    "binderOrigin": "Nikaragva",
-    "fillerOrigin": "Nikaragva"
-  },
-  {
-    "id": "cig-flor-de-las-antillas-maduro",
-    "brand": "My Father",
-    "line": "Flor de las Antillas Maduro",
-    "vitola": "Corona",
-    "format": "46 x 143mm",
-    "country": "Nikaragva",
-    "wrapper": "Ecuador Habano",
-    "strength": 5,
-    "body": 5,
-    "flavorTags": [
-      "koza",
-      "duhan"
-    ],
-    "profileEstimated": true,
-    "catalogSource": "market",
-    "smokeTimeMin": 55,
-    "priceEUR": null,
-    "priceApprox": false,
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Nikaragva, Ecuador Habano pokrov — jače snage, punijeg tijela. Okusi: kakao, kava, karamela.",
-      "en": "Nicaragua, Ecuador Habano wrapper — medium-full in strength, fuller-bodied. Notes: cocoa, coffee, caramel."
-    },
-    "markets": [
-      "USA",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Corona",
-        "format": "46 x 143mm",
-        "smokeTimeMin": 55,
-        "priceEUR": null,
-        "url": "https://www.neptunecigar.com/cigars/flor-de-las-antillas-maduro-corona",
-        "ring": 46,
-        "lengthMM": 143
-      },
-      {
-        "name": "Short Robusto",
-        "format": "50 x 114mm",
-        "smokeTimeMin": 44,
-        "priceEUR": null,
-        "url": null,
-        "ring": 50,
-        "lengthMM": 114
-      },
-      {
-        "name": "Toro",
-        "format": "52 x 152mm",
-        "smokeTimeMin": 58,
-        "priceEUR": null,
-        "url": "https://www.neptunecigar.com/cigars/flor-de-las-antillas-maduro-toro",
-        "ring": 52,
-        "lengthMM": 152
-      },
-      {
-        "name": "Torpedo",
-        "format": "52 x 156mm",
-        "smokeTimeMin": 60,
-        "priceEUR": null,
-        "url": "https://www.neptunecigar.com/cigars/flor-de-las-antillas-maduro-torpedo",
-        "ring": 52,
-        "lengthMM": 156
-      },
-      {
-        "name": "Gran Toro",
-        "format": "56 x 165mm",
-        "smokeTimeMin": 63,
-        "priceEUR": null,
-        "url": null,
-        "ring": 56,
-        "lengthMM": 165
-      }
-    ],
-    "regionLinks": {
-      "USA": {
-        "shop": "Holt's",
-        "url": "https://www.holts.com/cigars/all-cigar-brands/flor-de-las-antillas-maduro.html",
-        "priceEUR": 8.28,
-        "priceApprox": true,
-        "fetchedAt": "2026-07-01"
-      }
-    },
-    "strengthFromShop": true,
-    "sourceUrls": [
-      "https://www.neptunecigar.com/cigars/flor-de-las-antillas-maduro-petit-robusto",
-      "https://www.neptunecigar.com/cigars/flor-de-las-antillas-maduro-toro-gordo"
-    ],
-    "priceUrl": "https://www.neptunecigar.com/cigars/flor-de-las-antillas-maduro-corona",
-    "wrapperOrigin": "Ekvador",
-    "binderOrigin": "Nikaragva",
-    "fillerOrigin": "Nikaragva"
-  },
-  {
-    "id": "cig-flor-de-las-antillas-san-andres-taa",
-    "brand": "My Father",
-    "line": "Flor de las Antillas San Andres TAA",
-    "vitola": "Robusto",
-    "format": "52 x 127mm",
-    "country": "Nikaragva",
-    "wrapper": "Maduro",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [
-      "kakao",
-      "papar",
-      "kremasto",
-      "cedar",
-      "zemljano",
-      "dim"
-    ],
-    "profileEstimated": true,
-    "formatEstimated": false,
-    "smokeTimeMin": 59,
-    "priceEUR": null,
-    "priceUrl": "https://www.neptunecigar.com/cigars/flor-de-las-antillas-san-andres-taa-2025-robusto-5--52",
-    "vitolas": [
-      {
-        "name": "Robusto",
-        "format": "52 x 127mm",
-        "smokeTimeMin": 59,
-        "priceEUR": null,
-        "url": "https://www.neptunecigar.com/cigars/flor-de-las-antillas-san-andres-taa-2025-robusto-5--52",
-        "shape": "Robusto",
-        "ring": 52,
-        "lengthMM": 127,
-        "regionLinks": {
-          "USA": {
-            "shop": "Neptune Cigar",
-            "url": "https://www.neptunecigar.com/cigars/flor-de-las-antillas-san-andres-taa-2025-robusto-5--52"
-          }
-        }
-      },
-      {
-        "name": "Toro",
-        "format": "54 x 152mm",
-        "smokeTimeMin": 72,
-        "priceEUR": null,
-        "url": "https://www.neptunecigar.com/cigars/flor-de-las-antillas-san-andres-taa-2025-toro-6--54",
-        "shape": "Toro",
-        "ring": 54,
-        "lengthMM": 152,
-        "regionLinks": {
-          "USA": {
-            "shop": "Neptune Cigar",
-            "url": "https://www.neptunecigar.com/cigars/flor-de-las-antillas-san-andres-taa-2025-toro-6--54"
-          }
-        }
-      }
-    ],
-    "markets": [
-      "USA",
-      "WW"
-    ],
-    "regionLinks": {
-      "USA": {
-        "shop": "Neptune Cigar",
-        "url": "https://www.neptunecigar.com/cigars/flor-de-las-antillas-san-andres-taa-2025-robusto-5--52"
-      }
-    },
-    "catalogSource": "market",
-    "availabilityHR": [],
-    "notes": {
-      "hr": "Nikaragva — linija iz trgovine Neptune Cigar.",
-      "en": "Nicaragua — line from Neptune Cigar."
-    },
-    "sourceUrls": [
-      "https://www.neptunecigar.com/cigars/flor-de-las-antillas-san-andres-taa-2025-robusto-5--52"
-    ],
-    "flavoured": false,
-    "strengthFromShop": false,
-    "wrapperOrigin": "Meksiko",
-    "binderOrigin": "Nikaragva",
-    "fillerOrigin": "Nikaragva"
   },
   {
     "id": "cig-flor-de-selva-aniversario",
@@ -111594,7 +111084,9 @@
     "strengthFromShop": true,
     "formatEstimated": false,
     "wrapperOrigin": "Meksiko",
-    "binderOrigin": "Nikaragva"
+    "binderOrigin": "Nikaragva",
+    "binder": "Corojo",
+    "filler": "Condega"
   },
   {
     "id": "cig-foundation-metapa",
@@ -111676,7 +111168,9 @@
     "vitola": "Claro",
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "SAD",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Connecticut Broadleaf",
+    "filler": "Esteli"
   },
   {
     "id": "cig-foundation-olmec",
@@ -112711,7 +112205,8 @@
       "https://www.neptunecigar.com/cigars/fratello-bianco-nero-riserva"
     ],
     "wrapperOrigin": "Meksiko",
-    "binderOrigin": "Indonezija"
+    "binderOrigin": "Indonezija",
+    "filler": "Condega"
   },
   {
     "id": "cig-fratello-bianco-the-boxer",
@@ -113970,7 +113465,8 @@
     "wrapperOrigin": "Nikaragva",
     "binderOrigin": "SAD",
     "fillerOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Connecticut Broadleaf"
   },
   {
     "id": "cig-fratello-verde",
@@ -116319,7 +115815,8 @@
     "wrapperOrigin": "Nikaragva",
     "binderOrigin": "Nikaragva",
     "fillerOrigin": "Kolumbija",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Habano"
   },
   {
     "id": "cig-gran-habano-blue-in-green",
@@ -116912,7 +116409,8 @@
     "wrapperOrigin": "Nikaragva",
     "binderOrigin": "Nikaragva",
     "fillerOrigin": "Kostarika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Habano"
   },
   {
     "id": "cig-gran-habano-corojo-no-5-maduro",
@@ -116989,7 +116487,8 @@
     "vitola": "Grandioso",
     "wrapperOrigin": "Nikaragva",
     "binderOrigin": "Kostarika",
-    "fillerOrigin": "Kostarika"
+    "fillerOrigin": "Kostarika",
+    "binder": "Habano"
   },
   {
     "id": "cig-gran-habano-corojo-no-7-gran",
@@ -117050,7 +116549,9 @@
     "wrapperOrigin": "Nikaragva",
     "binderOrigin": "Nikaragva",
     "fillerOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Corojo",
+    "filler": "Corojo"
   },
   {
     "id": "cig-gran-habano-criollo-3",
@@ -119025,7 +118526,8 @@
     ],
     "priceUrl": "https://www.neptunecigar.com/cigars/gurkha-cellar-reserve-15-years-solara",
     "binderOrigin": "Dominikanska Republika",
-    "fillerOrigin": "Dominikanska Republika"
+    "fillerOrigin": "Dominikanska Republika",
+    "binder": "Olor"
   },
   {
     "id": "cig-gurkha-cellar-reserve-15-years-limitada",
@@ -119549,7 +119051,8 @@
     "wrapperOrigin": "Brazil",
     "binderOrigin": "Dominikanska Republika",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Olor"
   },
   {
     "id": "cig-gurkha-cellar-reserve-platinum",
@@ -121177,7 +120680,9 @@
     ],
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Olor",
+    "filler": "Criollo Ligero"
   },
   {
     "id": "cig-gurkha-revenant-corojo",
@@ -122699,7 +122204,9 @@
     ],
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Corojo",
+    "filler": "Criollo 98"
   },
   {
     "id": "cig-gurkha-tres-decadas",
@@ -122918,7 +122425,8 @@
     "vitola": "Extra",
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Indonezija",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "filler": "Criollo 98"
   },
   {
     "id": "cig-gurkha-tyson-20-undisputed-maduro",
@@ -122996,7 +122504,8 @@
     "vitola": "Extra",
     "wrapperOrigin": "Meksiko",
     "binderOrigin": "Kamerun",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "filler": "Corojo"
   },
   {
     "id": "cig-gurkha-v-by-oscar-valladares-taa-2024-exclusive",
@@ -123264,7 +122773,8 @@
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Ekvador",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Sumatra"
   },
   {
     "id": "cig-gurkha-year-of-the-snake-2025-by-oliva",
@@ -125729,7 +125239,10 @@
     ],
     "priceUrl": "https://www.neptunecigar.com/cigars/henry-clay-stalk-cut-gran-corona",
     "wrapperOrigin": "SAD",
-    "fillerOrigin": "Dominikanska Republika"
+    "fillerOrigin": "Dominikanska Republika",
+    "binderOrigin": "Dominikanska Republika",
+    "binder": "Piloto Cubano",
+    "filler": "Olor"
   },
   {
     "id": "cig-henry-clay-war-hawk",
@@ -125867,7 +125380,10 @@
     },
     "formatEstimated": true,
     "binderOrigin": "SAD",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "wrapperOrigin": "Ekvador",
+    "binder": "Connecticut Broadleaf",
+    "filler": "Criollo 98"
   },
   {
     "id": "cig-hernandez-amp-ruiz",
@@ -126472,7 +125988,8 @@
     ],
     "wrapperOrigin": "Honduras",
     "binderOrigin": "Honduras",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "filler": "Habano Ometepe"
   },
   {
     "id": "cig-hiram-solomon-hiram-solomon-fellow-craft",
@@ -126534,7 +126051,8 @@
       "https://www.neptunecigar.com/cigars/hiram-solomon-fellow-craft-toro"
     ],
     "binderOrigin": "Indonezija",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "filler": "Habano Esteli"
   },
   {
     "id": "cig-hiram-solomon-hiram-solomon-shriner",
@@ -126599,7 +126117,8 @@
     ],
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Indonezija",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "filler": "Arapiraca"
   },
   {
     "id": "cig-hiram-solomon-hiram-solomon-veiled-prophet-grand-monarch",
@@ -126663,7 +126182,8 @@
     ],
     "wrapperOrigin": "Brazil",
     "binderOrigin": "Indonezija",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "filler": "Habano Esteli"
   },
   {
     "id": "cig-hiram-amp-solomon-master-mason",
@@ -126772,7 +126292,8 @@
     ],
     "priceUrl": "https://www.neptunecigar.com/cigars/hiram-solomon-master-mason-robusto",
     "binderOrigin": "Indonezija",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "filler": "Habano Jalapa"
   },
   {
     "id": "cig-hiram-amp-solomon-traveling-man",
@@ -126896,7 +126417,8 @@
       "https://www.neptunecigar.com/cigars/hiram-solomon-traveling-man-torpedo"
     ],
     "priceUrl": "https://www.neptunecigar.com/cigars/hiram-solomon-traveling-man-robusto",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "filler": "Arapiraca"
   },
   {
     "id": "cig-holt-s-classics",
@@ -130002,7 +129524,8 @@
     "wrapperOrigin": "Nikaragva",
     "binderOrigin": "Nikaragva",
     "fillerOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "filler": "Corojo"
   },
   {
     "id": "cig-illusione-epernay",
@@ -131070,7 +130593,8 @@
     ],
     "wrapperOrigin": "Nikaragva",
     "binderOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "filler": "Corojo"
   },
   {
     "id": "cig-illusione-singulare-origen",
@@ -136468,84 +135992,6 @@
     "isPuro": true
   },
   {
-    "id": "cig-k-fire-k-fire-by-karen-berger",
-    "brand": "Karen Berger",
-    "line": "K-Fire",
-    "vitola": "Toro",
-    "format": "52 x 152mm",
-    "country": "Nikaragva",
-    "wrapper": "Mexican San Andres Maduro",
-    "strength": 3,
-    "body": 4,
-    "flavorTags": [
-      "kakao",
-      "kava",
-      "karamela",
-      "slatko",
-      "zemljano"
-    ],
-    "profileEstimated": true,
-    "catalogSource": "market",
-    "smokeTimeMin": 75,
-    "priceEUR": 22.0,
-    "priceApprox": false,
-    "availabilityHR": [
-      "The Humidor"
-    ],
-    "notes": {
-      "hr": "K-Fire je punija linija Karen Berger: tamni meksički San Andrés maduro pokrov prati ekvadorski havanski vezni list i nikaragvansko punjenje. Začinjeno-slatka, s notama začina, zemlje i kave.",
-      "en": "K-Fire is Karen Berger's fuller line: a dark Mexican San Andrés maduro wrapper over an Ecuadorian Havana binder and Nicaraguan filler. Spicy-sweet, with spice, earth, and coffee."
-    },
-    "markets": [
-      "HR",
-      "USA",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Toro",
-        "format": "52 x 152mm",
-        "smokeTimeMin": 75,
-        "priceEUR": 22.0,
-        "url": "https://humidor.hr/hr/proizvod/k-fire-by-karen-berger-toro-6-x-52/",
-        "regionLinks": {
-          "HR": {
-            "shop": "The Humidor",
-            "url": "https://humidor.hr/hr/proizvod/k-fire-by-karen-berger-toro-6-x-52/",
-            "priceEUR": 22.0,
-            "fetchedAt": "2026-07-01"
-          },
-          "USA": {
-            "shop": "Neptune Cigar",
-            "url": "https://www.neptunecigar.com/cigars/k-fire-by-karen-berger-toro"
-          }
-        },
-        "ring": 52,
-        "lengthMM": 152,
-        "fetchedAt": "2026-07-01"
-      }
-    ],
-    "regionLinks": {
-      "HR": {
-        "shop": "The Humidor",
-        "url": "https://humidor.hr/hr/proizvod/k-fire-by-karen-berger-toro-6-x-52/",
-        "priceEUR": 22.0,
-        "fetchedAt": "2026-07-01"
-      },
-      "USA": {
-        "shop": "Neptune Cigar",
-        "url": "https://www.neptunecigar.com/cigars/k-fire-by-karen-berger-toro"
-      }
-    },
-    "strengthFromShop": true,
-    "priceUrl": "https://humidor.hr/hr/proizvod/k-fire-by-karen-berger-toro-6-x-52/",
-    "binder": "Ecuador Havana",
-    "filler": "Nikaragva",
-    "wrapperOrigin": "Meksiko",
-    "binderOrigin": "Ekvador",
-    "fillerOrigin": "Nikaragva"
-  },
-  {
     "id": "cig-kafie-1901-connecticut",
     "brand": "Kafie",
     "line": "1901 Connecticut",
@@ -136927,7 +136373,8 @@
     "priceUrl": "https://www.neptunecigar.com/cigars/kafie-1901-san-andres-robusto",
     "wrapperOrigin": "Meksiko",
     "binderOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "filler": "Condega"
   },
   {
     "id": "cig-kafie-1901-serie-l-natural",
@@ -137420,8 +136867,8 @@
       "Havana Cigar Shop"
     ],
     "notes": {
-      "hr": "Za 25 godina u industriji Karen Berger se udružila s AJ Fernandezom. Connecticut Habano Broadleaf pokrov, meksički San Andrés vezni list i nikaragvansko punjenje — srednje do pune snage, kremasto s pikantnošću, kavom i slatkoćom.",
-      "en": "For 25 years in the trade Karen Berger joined AJ Fernandez. Connecticut Habano Broadleaf wrapper, Mexican San Andrés binder and Nicaraguan filler — medium to full, creamy with spice, coffee, and sweetness."
+      "hr": "Izdanje K by Karen Berger valjano kod AJ Fernandeza — nikaragvansko punjenje i punija, začinjenija interpretacija linije.",
+      "en": "The K by Karen Berger release rolled at AJ Fernandez — Nicaraguan filler and a fuller, spicier reading of the line."
     },
     "markets": [
       "HR",
@@ -138061,96 +137508,6 @@
     "formatEstimated": true
   },
   {
-    "id": "cig-karen-berger-tailgate",
-    "brand": "Karen Berger",
-    "line": "Tailgate",
-    "vitola": "Toro",
-    "format": "52 x 152mm",
-    "country": "Nikaragva",
-    "wrapper": "Indonesia, Sumatra",
-    "strength": 3,
-    "body": 4,
-    "flavorTags": [
-      "kakao",
-      "zacini",
-      "drvo",
-      "karamela",
-      "papar"
-    ],
-    "profileEstimated": true,
-    "catalogSource": "market",
-    "smokeTimeMin": 75,
-    "priceEUR": 14.0,
-    "priceApprox": false,
-    "availabilityHR": [
-      "The Humidor"
-    ],
-    "notes": {
-      "hr": "Tailgate je srednjeg tijela, blend indonezijskih i nikaragvanskih duhana. Kremast dim sa svijetlim notama crnog papra, zobi, orašastih plodova i slatkoće.",
-      "en": "Tailgate is a medium-bodied blend of Indonesian and Nicaraguan tobaccos. Creamy smoke with bright notes of black pepper, oat, nuts, and sweetness."
-    },
-    "markets": [
-      "HR",
-      "EU",
-      "USA",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Toro",
-        "format": "52 x 152mm",
-        "smokeTimeMin": 75,
-        "priceEUR": 14.0,
-        "url": "https://humidor.hr/hr/proizvod/tailgate-by-karen-berger-toro-6-x-52/",
-        "regionLinks": {
-          "EU": {
-            "shop": "CigarWorld",
-            "url": "https://www.cigarworld.de/en/zigarren/nicaragua/karen-berger-tailgate-90017425_59650",
-            "priceEUR": 12.0,
-            "fetchedAt": "2026-07-01"
-          },
-          "HR": {
-            "shop": "The Humidor",
-            "url": "https://humidor.hr/hr/proizvod/tailgate-by-karen-berger-toro-6-x-52/",
-            "priceEUR": 14.0,
-            "fetchedAt": "2026-07-01"
-          },
-          "USA": {
-            "shop": "Neptune Cigar",
-            "url": "https://www.neptunecigar.com/cigars/tailgate-by-karen-berger-toro"
-          }
-        },
-        "ring": 52,
-        "lengthMM": 152,
-        "fetchedAt": "2026-07-01"
-      }
-    ],
-    "regionLinks": {
-      "EU": {
-        "shop": "CigarWorld",
-        "url": "https://www.cigarworld.de/en/zigarren/nicaragua/karen-berger-tailgate-90017425_59650",
-        "priceEUR": 12.0,
-        "fetchedAt": "2026-07-01"
-      },
-      "HR": {
-        "shop": "The Humidor",
-        "url": "https://humidor.hr/hr/proizvod/tailgate-by-karen-berger-toro-6-x-52/",
-        "priceEUR": 14.0,
-        "fetchedAt": "2026-07-01"
-      },
-      "USA": {
-        "shop": "Neptune Cigar",
-        "url": "https://www.neptunecigar.com/cigars/tailgate-by-karen-berger-toro"
-      }
-    },
-    "binder": "Nikaragva",
-    "filler": "Nikaragva",
-    "wrapperOrigin": "Indonezija",
-    "binderOrigin": "Nikaragva",
-    "fillerOrigin": "Nikaragva",
-    "priceUrl": "https://humidor.hr/hr/proizvod/tailgate-by-karen-berger-toro-6-x-52/"
-  },
-  {
     "id": "cig-karen-berger-cameroon",
     "brand": "Karen Berger",
     "line": "Cameroon",
@@ -138405,6 +137762,84 @@
     "strengthFromShop": true
   },
   {
+    "id": "cig-k-fire-k-fire-by-karen-berger",
+    "brand": "Karen Berger",
+    "line": "K-Fire",
+    "vitola": "Toro",
+    "format": "52 x 152mm",
+    "country": "Nikaragva",
+    "wrapper": "Mexican San Andres Maduro",
+    "strength": 3,
+    "body": 4,
+    "flavorTags": [
+      "kakao",
+      "kava",
+      "karamela",
+      "slatko",
+      "zemljano"
+    ],
+    "profileEstimated": true,
+    "catalogSource": "market",
+    "smokeTimeMin": 75,
+    "priceEUR": 22.0,
+    "priceApprox": false,
+    "availabilityHR": [
+      "The Humidor"
+    ],
+    "notes": {
+      "hr": "Karen Berger je marku pokrenula da nastavi ostavštinu svog supruga, poznatog kao Don Kiki; cigare se valjaju u Tabacalera Estelí u Nikaragvi. K-Fire je punija linija serije.",
+      "en": "Karen Berger started the brand to continue the legacy of her husband, known as Don Kiki; the cigars are rolled at Tabacalera Estelí in Nicaragua. K-Fire is the series' fuller line."
+    },
+    "markets": [
+      "HR",
+      "USA",
+      "WW"
+    ],
+    "vitolas": [
+      {
+        "name": "Toro",
+        "format": "52 x 152mm",
+        "smokeTimeMin": 75,
+        "priceEUR": 22.0,
+        "url": "https://humidor.hr/hr/proizvod/k-fire-by-karen-berger-toro-6-x-52/",
+        "regionLinks": {
+          "HR": {
+            "shop": "The Humidor",
+            "url": "https://humidor.hr/hr/proizvod/k-fire-by-karen-berger-toro-6-x-52/",
+            "priceEUR": 22.0,
+            "fetchedAt": "2026-07-01"
+          },
+          "USA": {
+            "shop": "Neptune Cigar",
+            "url": "https://www.neptunecigar.com/cigars/k-fire-by-karen-berger-toro"
+          }
+        },
+        "ring": 52,
+        "lengthMM": 152,
+        "fetchedAt": "2026-07-01"
+      }
+    ],
+    "regionLinks": {
+      "HR": {
+        "shop": "The Humidor",
+        "url": "https://humidor.hr/hr/proizvod/k-fire-by-karen-berger-toro-6-x-52/",
+        "priceEUR": 22.0,
+        "fetchedAt": "2026-07-01"
+      },
+      "USA": {
+        "shop": "Neptune Cigar",
+        "url": "https://www.neptunecigar.com/cigars/k-fire-by-karen-berger-toro"
+      }
+    },
+    "strengthFromShop": true,
+    "priceUrl": "https://humidor.hr/hr/proizvod/k-fire-by-karen-berger-toro-6-x-52/",
+    "binder": "Ecuador Havana",
+    "filler": "Nikaragva",
+    "wrapperOrigin": "Meksiko",
+    "binderOrigin": "Ekvador",
+    "fillerOrigin": "Nikaragva"
+  },
+  {
     "id": "cig-karen-berger-overtime",
     "brand": "Karen Berger",
     "line": "Overtime",
@@ -138466,6 +137901,96 @@
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Indonezija",
     "fillerOrigin": "Nikaragva"
+  },
+  {
+    "id": "cig-karen-berger-tailgate",
+    "brand": "Karen Berger",
+    "line": "Tailgate",
+    "vitola": "Toro",
+    "format": "52 x 152mm",
+    "country": "Nikaragva",
+    "wrapper": "Indonesia, Sumatra",
+    "strength": 3,
+    "body": 4,
+    "flavorTags": [
+      "kakao",
+      "zacini",
+      "drvo",
+      "karamela",
+      "papar"
+    ],
+    "profileEstimated": true,
+    "catalogSource": "market",
+    "smokeTimeMin": 75,
+    "priceEUR": 14.0,
+    "priceApprox": false,
+    "availabilityHR": [
+      "The Humidor"
+    ],
+    "notes": {
+      "hr": "Tailgate je srednjeg tijela, blend indonezijskih i nikaragvanskih duhana. Kremast dim sa svijetlim notama crnog papra, zobi, orašastih plodova i slatkoće.",
+      "en": "Tailgate is a medium-bodied blend of Indonesian and Nicaraguan tobaccos. Creamy smoke with bright notes of black pepper, oat, nuts, and sweetness."
+    },
+    "markets": [
+      "HR",
+      "EU",
+      "USA",
+      "WW"
+    ],
+    "vitolas": [
+      {
+        "name": "Toro",
+        "format": "52 x 152mm",
+        "smokeTimeMin": 75,
+        "priceEUR": 14.0,
+        "url": "https://humidor.hr/hr/proizvod/tailgate-by-karen-berger-toro-6-x-52/",
+        "regionLinks": {
+          "EU": {
+            "shop": "CigarWorld",
+            "url": "https://www.cigarworld.de/en/zigarren/nicaragua/karen-berger-tailgate-90017425_59650",
+            "priceEUR": 12.0,
+            "fetchedAt": "2026-07-01"
+          },
+          "HR": {
+            "shop": "The Humidor",
+            "url": "https://humidor.hr/hr/proizvod/tailgate-by-karen-berger-toro-6-x-52/",
+            "priceEUR": 14.0,
+            "fetchedAt": "2026-07-01"
+          },
+          "USA": {
+            "shop": "Neptune Cigar",
+            "url": "https://www.neptunecigar.com/cigars/tailgate-by-karen-berger-toro"
+          }
+        },
+        "ring": 52,
+        "lengthMM": 152,
+        "fetchedAt": "2026-07-01"
+      }
+    ],
+    "regionLinks": {
+      "EU": {
+        "shop": "CigarWorld",
+        "url": "https://www.cigarworld.de/en/zigarren/nicaragua/karen-berger-tailgate-90017425_59650",
+        "priceEUR": 12.0,
+        "fetchedAt": "2026-07-01"
+      },
+      "HR": {
+        "shop": "The Humidor",
+        "url": "https://humidor.hr/hr/proizvod/tailgate-by-karen-berger-toro-6-x-52/",
+        "priceEUR": 14.0,
+        "fetchedAt": "2026-07-01"
+      },
+      "USA": {
+        "shop": "Neptune Cigar",
+        "url": "https://www.neptunecigar.com/cigars/tailgate-by-karen-berger-toro"
+      }
+    },
+    "binder": "Nikaragva",
+    "filler": "Nikaragva",
+    "wrapperOrigin": "Indonezija",
+    "binderOrigin": "Nikaragva",
+    "fillerOrigin": "Nikaragva",
+    "priceUrl": "https://humidor.hr/hr/proizvod/tailgate-by-karen-berger-toro-6-x-52/"
   },
   {
     "id": "cig-king-s-court-king-s-court-abbot",
@@ -138953,7 +138478,8 @@
     "wrapperOrigin": "Meksiko",
     "binderOrigin": "Ekvador",
     "fillerOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "filler": "Habano"
   },
   {
     "id": "cig-kristoff-685-woodlawn",
@@ -139136,7 +138662,8 @@
       "https://www.neptunecigar.com/cigars/kristoff-cameroon-matador"
     ],
     "priceUrl": "https://www.neptunecigar.com/cigars/kristoff-cameroon-churchill",
-    "fillerOrigin": "Dominikanska Republika"
+    "fillerOrigin": "Dominikanska Republika",
+    "binder": "Habano"
   },
   {
     "id": "cig-kristoff-classic-blend",
@@ -139352,7 +138879,8 @@
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Nikaragva",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "filler": "Habano"
   },
   {
     "id": "cig-kristoff-corojo-limitada",
@@ -139429,7 +138957,9 @@
       "https://www.neptunecigar.com/cigars/kristoff-corojo-limitada-matador"
     ],
     "priceUrl": "https://www.neptunecigar.com/cigars/kristoff-corojo-limitada-churchill",
-    "fillerOrigin": "Dominikanska Republika"
+    "fillerOrigin": "Dominikanska Republika",
+    "binder": "Habano",
+    "filler": "Habano"
   },
   {
     "id": "cig-kristoff-criollo",
@@ -139489,7 +139019,9 @@
     ],
     "priceUrl": "https://www.neptunecigar.com/cigars/kristoff-criollo-robusto",
     "binderOrigin": "Dominikanska Republika",
-    "fillerOrigin": "Dominikanska Republika"
+    "fillerOrigin": "Dominikanska Republika",
+    "binder": "Olor",
+    "filler": "Olor"
   },
   {
     "id": "cig-kristoff-gc-signature-series",
@@ -139944,7 +139476,8 @@
     "priceUrl": "https://www.neptunecigar.com/cigars/kristoff-habano-churchill",
     "wrapperOrigin": "Brazil",
     "binderOrigin": "Brazil",
-    "fillerOrigin": "Dominikanska Republika"
+    "fillerOrigin": "Dominikanska Republika",
+    "filler": "Habano"
   },
   {
     "id": "cig-kristoff-it-s-a-girl",
@@ -140093,7 +139626,9 @@
     "priceUrl": "https://www.neptunecigar.com/cigars/kristoff-kristania-60",
     "wrapperOrigin": "Nikaragva",
     "binderOrigin": "Dominikanska Republika",
-    "fillerOrigin": "Dominikanska Republika"
+    "fillerOrigin": "Dominikanska Republika",
+    "binder": "Habano",
+    "filler": "Habano"
   },
   {
     "id": "cig-kristoff-kristania-maduro",
@@ -140178,7 +139713,9 @@
     "priceUrl": "https://www.neptunecigar.com/cigars/kristoff-kristania-maduro",
     "wrapperOrigin": "Brazil",
     "binderOrigin": "Dominikanska Republika",
-    "fillerOrigin": "Dominikanska Republika"
+    "fillerOrigin": "Dominikanska Republika",
+    "binder": "Habano",
+    "filler": "Habano"
   },
   {
     "id": "cig-kristoff-ligero-criollo",
@@ -140400,7 +139937,9 @@
     "priceUrl": "https://www.neptunecigar.com/cigars/kristoff-maduro-matador",
     "wrapperOrigin": "Brazil",
     "binderOrigin": "Dominikanska Republika",
-    "fillerOrigin": "Dominikanska Republika"
+    "fillerOrigin": "Dominikanska Republika",
+    "binder": "Olor",
+    "filler": "Olor"
   },
   {
     "id": "cig-kristoff-nicaragua",
@@ -141001,7 +140540,9 @@
     "priceUrl": "https://www.neptunecigar.com/cigars/kristoff-san-andres-660",
     "wrapperOrigin": "Meksiko",
     "binderOrigin": "Ekvador",
-    "fillerOrigin": "Nikaragva"
+    "fillerOrigin": "Nikaragva",
+    "binder": "Habano Ecuador",
+    "filler": "Habano"
   },
   {
     "id": "cig-kristoff-shade-grown",
@@ -141190,7 +140731,8 @@
     "sourceUrls": [
       "https://www.neptunecigar.com/cigars/kristoff-sumatra-matador"
     ],
-    "priceUrl": "https://www.neptunecigar.com/cigars/kristoff-sumatra-matador"
+    "priceUrl": "https://www.neptunecigar.com/cigars/kristoff-sumatra-matador",
+    "filler": "Cuban Seed"
   },
   {
     "id": "cig-kristoff-tres-compadres",
@@ -141887,7 +141429,8 @@
     ],
     "priceUrl": "https://www.neptunecigar.com/cigars/la-aroma-de-cuba-connecticut-corona",
     "binderOrigin": "Nikaragva",
-    "fillerOrigin": "Nikaragva"
+    "fillerOrigin": "Nikaragva",
+    "wrapperOrigin": "Ekvador"
   },
   {
     "id": "cig-la-aroma-de-cuba-edicion-especial-5",
@@ -143361,7 +142904,8 @@
     "strengthFromShop": true,
     "priceUrl": "https://www.neptunecigar.com/cigars/la-aroma-de-cuba-small-batch-toro-6--52",
     "wrapperOrigin": "Ekvador",
-    "binderOrigin": "Nikaragva"
+    "binderOrigin": "Nikaragva",
+    "filler": "Condega"
   },
   {
     "id": "cig-la-aurora-100-anos-edicion-especial",
@@ -144247,7 +143791,8 @@
     "formatEstimated": true,
     "strengthFromShop": true,
     "wrapperOrigin": "Ekvador",
-    "binderOrigin": "Brazil"
+    "binderOrigin": "Brazil",
+    "binder": "Mata Fina"
   },
   {
     "id": "cig-la-aurora-1903-cameroon",
@@ -145891,7 +145436,8 @@
     "strengthFromShop": true,
     "wrapperOrigin": "SAD",
     "binderOrigin": "Meksiko",
-    "fillerOrigin": "Dominikanska Republika"
+    "fillerOrigin": "Dominikanska Republika",
+    "binder": "San Andres"
   },
   {
     "id": "cig-la-aurora-family-creed-perseverancia-gran",
@@ -145956,7 +145502,8 @@
     "wrapperOrigin": "SAD",
     "binderOrigin": "Meksiko",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "San Andres"
   },
   {
     "id": "cig-la-aurora-family-reserve",
@@ -146131,7 +145678,8 @@
     "binderOrigin": "Ekvador",
     "fillerOrigin": "Kolumbija",
     "strengthFromShop": true,
-    "flavoured": false
+    "flavoured": false,
+    "binder": "Sumatra"
   },
   {
     "id": "cig-la-aurora-imperiales-classico",
@@ -147402,7 +146950,8 @@
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Brazil",
     "fillerOrigin": "Brazil",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "filler": "Mata Fina"
   },
   {
     "id": "cig-la-aurora-puro-vintage-2007-salomon",
@@ -147593,7 +147142,8 @@
     ],
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Brazil",
-    "fillerOrigin": "Brazil"
+    "fillerOrigin": "Brazil",
+    "binder": "Mata Fina"
   },
   {
     "id": "cig-la-barba-red",
@@ -147710,7 +147260,9 @@
     "priceUrl": "https://www.neptunecigar.com/cigars/la-barba-red-corona",
     "wrapperOrigin": "Dominikanska Republika",
     "binderOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Corojo",
+    "filler": "Corojo"
   },
   {
     "id": "cig-la-bavaria-die-bayerische-zigarre",
@@ -148929,7 +148481,8 @@
     ],
     "wrapperOrigin": "Nikaragva",
     "binderOrigin": "Ekvador",
-    "fillerOrigin": "Dominikanska Republika"
+    "fillerOrigin": "Dominikanska Republika",
+    "binder": "Habano Ecuador"
   },
   {
     "id": "cig-la-flor-dominicana-carbon-flower",
@@ -149579,7 +149132,10 @@
       "https://www.neptunecigar.com/cigars/la-flor-dominicana-la-noxpetite"
     ],
     "priceUrl": "https://www.neptunecigar.com/cigars/la-flor-dominicana-la-nox",
-    "binderOrigin": "Meksiko"
+    "binderOrigin": "Meksiko",
+    "binder": "San Andres",
+    "fillerOrigin": "Dominikanska Republika",
+    "filler": "Piloto Cubano"
   },
   {
     "id": "cig-la-flor-dominicana-la-volcada",
@@ -149639,7 +149195,8 @@
       "https://www.neptunecigar.com/cigars/la-flor-dominicana-la-volcada-petite"
     ],
     "priceUrl": "https://www.neptunecigar.com/cigars/la-flor-dominicana-la-volcada",
-    "fillerOrigin": "Dominikanska Republika"
+    "fillerOrigin": "Dominikanska Republika",
+    "binder": "Corojo"
   },
   {
     "id": "cig-la-flor-dominicana-ligero-cabinet-oscuro",
@@ -150388,7 +149945,9 @@
     "priceUrl": "https://www.neptunecigar.com/cigars/la-flor-dominicana-solis-toro-extra",
     "wrapperOrigin": "Ekvador",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binderOrigin": "Ekvador",
+    "binder": "Sumatra"
   },
   {
     "id": "cig-la-flor-dominicana-special-football-edition",
@@ -151259,7 +150818,8 @@
     "wrapperOrigin": "Meksiko",
     "binderOrigin": "Dominikanska Republika",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Corojo"
   },
   {
     "id": "cig-la-galera-85th-anniversary",
@@ -151490,7 +151050,9 @@
       "https://www.neptunecigar.com/cigars/la-galera-anemoi-notus"
     ],
     "wrapperOrigin": "SAD",
-    "binderOrigin": "Dominikanska Republika"
+    "binderOrigin": "Dominikanska Republika",
+    "binder": "Corojo",
+    "filler": "Criollo 98"
   },
   {
     "id": "cig-la-galera-cabeza-caracol",
@@ -152135,7 +151697,8 @@
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Dominikanska Republika",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Corojo"
   },
   {
     "id": "cig-la-galera-imperial-jade",
@@ -152266,7 +151829,9 @@
       "https://www.neptunecigar.com/cigars/la-galera-imperial-jade-toro",
       "https://www.neptunecigar.com/cigars/la-galera-imperial-jade-churchill"
     ],
-    "wrapperOrigin": "Kamerun"
+    "wrapperOrigin": "Kamerun",
+    "binder": "Criollo",
+    "filler": "Criollo 98"
   },
   {
     "id": "cig-la-galera-la-instructora",
@@ -152361,6 +151926,366 @@
       }
     },
     "formatEstimated": true
+  },
+  {
+    "id": "cig-la-instructora-delicado",
+    "brand": "La Galera",
+    "line": "La Instructora Delicado",
+    "vitola": "Robusto",
+    "format": "50 x 127mm",
+    "country": "Dominikanska Republika",
+    "wrapper": "USA Connecticut",
+    "strength": 2,
+    "body": 2,
+    "flavorTags": [
+      "kremasto",
+      "cedar",
+      "orasasti",
+      "med",
+      "trava-slatka"
+    ],
+    "profileEstimated": true,
+    "catalogSource": "market",
+    "smokeTimeMin": 60,
+    "priceEUR": 15.7,
+    "priceApprox": false,
+    "availabilityHR": [
+      "The Humidor"
+    ],
+    "notes": {
+      "hr": "La Instructora je butik marka tvornice Tabacalera Palma (Jochy Blanco), na tržištu od 2017. Delicado nosi američki Connecticut Shade pokrov — blago, kremasto i slatkasto.",
+      "en": "La Instructora is a boutique brand from Tabacalera Palma (Jochy Blanco), on the market since 2017. Delicado carries a US Connecticut Shade wrapper — mild, creamy and lightly sweet."
+    },
+    "markets": [
+      "HR",
+      "USA",
+      "WW"
+    ],
+    "vitolas": [
+      {
+        "name": "Robusto",
+        "format": "50 x 127mm",
+        "smokeTimeMin": 60,
+        "priceEUR": 15.7,
+        "url": "https://humidor.hr/hr/proizvod/la-instructora-delicado-robusto-5-x-50/",
+        "regionLinks": {
+          "HR": {
+            "shop": "The Humidor",
+            "url": "https://humidor.hr/hr/proizvod/la-instructora-delicado-robusto-5-x-50/",
+            "priceEUR": 15.7,
+            "fetchedAt": "2026-07-01"
+          },
+          "USA": {
+            "shop": "Neptune Cigar",
+            "url": "https://www.neptunecigar.com/cigars/la-instructora-delicado-robusto"
+          }
+        },
+        "ring": 50,
+        "lengthMM": 127,
+        "fetchedAt": "2026-07-01"
+      }
+    ],
+    "regionLinks": {
+      "HR": {
+        "shop": "The Humidor",
+        "url": "https://humidor.hr/hr/proizvod/la-instructora-delicado-robusto-5-x-50/",
+        "priceEUR": 15.7,
+        "fetchedAt": "2026-07-01"
+      },
+      "USA": {
+        "shop": "Neptune Cigar",
+        "url": "https://www.neptunecigar.com/cigars/la-instructora-delicado-corona"
+      }
+    },
+    "strengthFromShop": true,
+    "priceUrl": "https://humidor.hr/hr/proizvod/la-instructora-delicado-robusto-5-x-50/",
+    "sourceUrls": [
+      "https://www.neptunecigar.com/cigars/la-instructora-delicado-toro",
+      "https://www.neptunecigar.com/cigars/la-instructora-delicado-churchill",
+      "https://www.neptunecigar.com/cigars/la-instructora-delicado-presidente",
+      "https://www.neptunecigar.com/cigars/la-instructora-delicado-torpedo"
+    ]
+  },
+  {
+    "id": "cig-la-instructora-perfection",
+    "brand": "La Galera",
+    "line": "La Instructora Perfection",
+    "vitola": "Short Robusto",
+    "format": "52 x 114mm",
+    "country": "Dominikanska Republika",
+    "wrapper": "Ecuadorian Habano Rosado",
+    "strength": 3,
+    "body": 3,
+    "flavorTags": [
+      "cedar",
+      "zacini",
+      "koza",
+      "kava"
+    ],
+    "profileEstimated": true,
+    "catalogSource": "market",
+    "smokeTimeMin": 60,
+    "priceEUR": 11.7,
+    "priceApprox": false,
+    "availabilityHR": [
+      "The Humidor"
+    ],
+    "notes": {
+      "hr": "Perfection je punija La Instructora: ekvadorski Habano pokrov, dominikanski Criollo 98 vezivo i punjenje od Piloto i Criollo 98 — srednja snaga s jasnim začinom.",
+      "en": "Perfection is the fuller La Instructora: an Ecuadorian Habano wrapper, Dominican Criollo 98 binder and a Piloto and Criollo 98 filler — medium strength with clear spice."
+    },
+    "markets": [
+      "HR",
+      "USA",
+      "WW"
+    ],
+    "vitolas": [
+      {
+        "name": "Short Robusto",
+        "format": "52 x 114mm",
+        "smokeTimeMin": 60,
+        "priceEUR": 11.7,
+        "url": "https://humidor.hr/hr/proizvod/la-instructora-perfection-short-robusto-4-1-2-x-52/",
+        "regionLinks": {
+          "HR": {
+            "shop": "The Humidor",
+            "url": "https://humidor.hr/hr/proizvod/la-instructora-perfection-short-robusto-4-1-2-x-52/",
+            "priceEUR": 11.7,
+            "fetchedAt": "2026-07-01"
+          },
+          "USA": {
+            "shop": "Neptune Cigar",
+            "url": "https://www.neptunecigar.com/cigars/la-instructora-perfection-royal-corona"
+          }
+        },
+        "ring": 52,
+        "lengthMM": 114,
+        "fetchedAt": "2026-07-01"
+      }
+    ],
+    "regionLinks": {
+      "HR": {
+        "shop": "The Humidor",
+        "url": "https://humidor.hr/hr/proizvod/la-instructora-perfection-short-robusto-4-1-2-x-52/",
+        "priceEUR": 11.7,
+        "fetchedAt": "2026-07-01"
+      },
+      "USA": {
+        "shop": "Neptune Cigar",
+        "url": "https://www.neptunecigar.com/cigars/la-instructora-perfection-petite-salomon"
+      }
+    },
+    "strengthFromShop": true,
+    "priceUrl": "https://humidor.hr/hr/proizvod/la-instructora-perfection-short-robusto-4-1-2-x-52/",
+    "sourceUrls": [
+      "https://www.neptunecigar.com/cigars/la-instructora-perfection-royal-corona",
+      "https://www.neptunecigar.com/cigars/la-instructora-perfection-short-robusto",
+      "https://www.neptunecigar.com/cigars/la-instructora-perfection-invicto"
+    ]
+  },
+  {
+    "id": "cig-la-instructora-perfection-extra",
+    "brand": "La Galera",
+    "line": "La Instructora Perfection Extra",
+    "vitola": "Belicoso",
+    "format": "57 x 152mm",
+    "country": "Dominikanska Republika",
+    "wrapper": "Ecuadorian Habano Rosado",
+    "strength": 3,
+    "body": 3,
+    "flavorTags": [
+      "cedar",
+      "zacini",
+      "koza",
+      "kava"
+    ],
+    "profileEstimated": true,
+    "catalogSource": "market",
+    "smokeTimeMin": 90,
+    "priceEUR": 16.7,
+    "priceApprox": false,
+    "availabilityHR": [
+      "The Humidor"
+    ],
+    "notes": {
+      "hr": "Veći format Perfection linije — isti blend Tabacalera Palme u duljoj cigari, s više vremena da se začin smiri u slatkoću.",
+      "en": "The larger Perfection size — the same Tabacalera Palma blend in a longer cigar, with more time for the spice to settle into sweetness."
+    },
+    "markets": [
+      "HR",
+      "USA",
+      "WW"
+    ],
+    "vitolas": [
+      {
+        "name": "Belicoso",
+        "format": "57 x 152mm",
+        "smokeTimeMin": 90,
+        "priceEUR": 16.7,
+        "url": "https://humidor.hr/hr/proizvod/la-instructora-perfection-belicoso-extra-6-x-57/",
+        "regionLinks": {
+          "HR": {
+            "shop": "The Humidor",
+            "url": "https://humidor.hr/hr/proizvod/la-instructora-perfection-belicoso-extra-6-x-57/",
+            "priceEUR": 16.7,
+            "fetchedAt": "2026-07-01"
+          },
+          "USA": {
+            "shop": "Neptune Cigar",
+            "url": "https://www.neptunecigar.com/cigars/la-instructora-perfection-belicoso-extra"
+          }
+        },
+        "ring": 57,
+        "lengthMM": 152,
+        "fetchedAt": "2026-07-01"
+      }
+    ],
+    "regionLinks": {
+      "HR": {
+        "shop": "The Humidor",
+        "url": "https://humidor.hr/hr/proizvod/la-instructora-perfection-belicoso-extra-6-x-57/",
+        "priceEUR": 16.7,
+        "fetchedAt": "2026-07-01"
+      },
+      "USA": {
+        "shop": "Neptune Cigar",
+        "url": "https://www.neptunecigar.com/cigars/la-instructora-perfection-belicoso-extra"
+      }
+    },
+    "strengthFromShop": true,
+    "priceUrl": "https://humidor.hr/hr/proizvod/la-instructora-perfection-belicoso-extra-6-x-57/"
+  },
+  {
+    "id": "cig-la-instructora-pressed",
+    "brand": "La Galera",
+    "line": "La Instructora Pressed",
+    "format": "50 x 124mm",
+    "country": "Dominikanska Republika",
+    "wrapper": "Brazilian",
+    "strength": 3,
+    "body": 5,
+    "flavorTags": [
+      "kakao",
+      "papar",
+      "koza",
+      "zacini",
+      "duhan"
+    ],
+    "profileEstimated": true,
+    "formatEstimated": true,
+    "smokeTimeMin": 59,
+    "priceEUR": null,
+    "priceUrl": "https://www.neptunecigar.com/cigars/la-instructora-box-pressed-1",
+    "vitolas": [
+      {
+        "name": "1",
+        "format": "50 x 124mm",
+        "smokeTimeMin": 59,
+        "priceEUR": null,
+        "url": "https://www.neptunecigar.com/cigars/la-instructora-box-pressed-1",
+        "shape": "Robusto",
+        "ring": 50,
+        "lengthMM": 124,
+        "regionLinks": {
+          "USA": {
+            "shop": "Neptune Cigar",
+            "url": "https://www.neptunecigar.com/cigars/la-instructora-box-pressed-1"
+          }
+        }
+      },
+      {
+        "name": "2",
+        "format": "50 x 124mm",
+        "smokeTimeMin": 59,
+        "priceEUR": null,
+        "url": "https://www.neptunecigar.com/cigars/la-instructora-box-pressed-2",
+        "shape": "Robusto",
+        "ring": 50,
+        "lengthMM": 124,
+        "regionLinks": {
+          "USA": {
+            "shop": "Neptune Cigar",
+            "url": "https://www.neptunecigar.com/cigars/la-instructora-box-pressed-2"
+          }
+        }
+      },
+      {
+        "name": "3",
+        "format": "50 x 124mm",
+        "smokeTimeMin": 59,
+        "priceEUR": null,
+        "url": "https://www.neptunecigar.com/cigars/la-instructora-box-pressed-3",
+        "shape": "Robusto",
+        "ring": 50,
+        "lengthMM": 124,
+        "regionLinks": {
+          "USA": {
+            "shop": "Neptune Cigar",
+            "url": "https://www.neptunecigar.com/cigars/la-instructora-box-pressed-3"
+          }
+        }
+      },
+      {
+        "name": "4",
+        "format": "50 x 124mm",
+        "smokeTimeMin": 59,
+        "priceEUR": null,
+        "url": "https://www.neptunecigar.com/cigars/la-instructora-box-pressed-4",
+        "shape": "Robusto",
+        "ring": 50,
+        "lengthMM": 124,
+        "regionLinks": {
+          "USA": {
+            "shop": "Neptune Cigar",
+            "url": "https://www.neptunecigar.com/cigars/la-instructora-box-pressed-4"
+          }
+        }
+      },
+      {
+        "name": "5",
+        "format": "50 x 124mm",
+        "smokeTimeMin": 59,
+        "priceEUR": null,
+        "url": "https://www.neptunecigar.com/cigars/la-instructora-box-pressed-5",
+        "shape": "Robusto",
+        "ring": 50,
+        "lengthMM": 124,
+        "regionLinks": {
+          "USA": {
+            "shop": "Neptune Cigar",
+            "url": "https://www.neptunecigar.com/cigars/la-instructora-box-pressed-5"
+          }
+        }
+      }
+    ],
+    "markets": [
+      "HR",
+      "USA",
+      "WW"
+    ],
+    "regionLinks": {
+      "USA": {
+        "shop": "Neptune Cigar",
+        "url": "https://www.neptunecigar.com/cigars/la-instructora-box-pressed-1"
+      }
+    },
+    "catalogSource": "market",
+    "availabilityHR": [
+      "The Humidor"
+    ],
+    "notes": {
+      "hr": "Dominikanska Republika — linija iz trgovine Neptune Cigar.",
+      "en": "Dominican Republic — line from Neptune Cigar."
+    },
+    "sourceUrls": [
+      "https://www.neptunecigar.com/cigars/la-instructora-box-pressed-1"
+    ],
+    "vitola": "1",
+    "wrapperOrigin": "Brazil",
+    "binderOrigin": "Dominikanska Republika",
+    "strengthFromShop": true,
+    "binder": "Piloto Cubano",
+    "filler": "Criollo 98"
   },
   {
     "id": "cig-la-galera-limited-edition-2022-maduro-gavillero",
@@ -152649,7 +152574,9 @@
       "https://www.neptunecigar.com/cigars/la-galera-maduro-vitola-no-1"
     ],
     "wrapperOrigin": "Meksiko",
-    "fillerOrigin": "Dominikanska Republika"
+    "fillerOrigin": "Dominikanska Republika",
+    "binderOrigin": "Dominikanska Republika",
+    "binder": "Piloto Cubano"
   },
   {
     "id": "cig-la-galera-minis-cigarillos",
@@ -152711,7 +152638,9 @@
     ],
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Kuba",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Piloto Cubano",
+    "filler": "Criollo 98"
   },
   {
     "id": "cig-la-galera-robusto-sampler",
@@ -152953,7 +152882,8 @@
       "https://www.neptunecigar.com/cigars/la-galera-year-of-the-dragon-toro"
     ],
     "wrapperOrigin": "Ekvador",
-    "fillerOrigin": "Dominikanska Republika"
+    "fillerOrigin": "Dominikanska Republika",
+    "binder": "Criollo"
   },
   {
     "id": "cig-la-galera-year-of-the-horse",
@@ -153014,7 +152944,9 @@
       "https://www.neptunecigar.com/cigars/la-galera-year-of-the-horse-limited-edition-2026"
     ],
     "wrapperOrigin": "Brazil",
-    "binderOrigin": "Dominikanska Republika"
+    "binderOrigin": "Dominikanska Republika",
+    "binder": "Olor",
+    "filler": "Criollo 98"
   },
   {
     "id": "cig-la-gloria-cubana-8th-street",
@@ -153206,7 +153138,8 @@
     "strengthFromShop": true,
     "priceUrl": "https://www.neptunecigar.com/cigars/la-gloria-cubana-coleccion-reserva-robusto",
     "binderOrigin": "Nikaragva",
-    "fillerOrigin": "Nikaragva"
+    "fillerOrigin": "Nikaragva",
+    "wrapperOrigin": "Ekvador"
   },
   {
     "id": "cig-la-gloria-cubana-corojo-de-oro-limited-edition",
@@ -153271,7 +153204,9 @@
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Dominikanska Republika",
     "fillerOrigin": "Brazil",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Corojo",
+    "filler": "Mata Fina"
   },
   {
     "id": "cig-la-gloria-cubana-corona-gorda",
@@ -153396,7 +153331,8 @@
     "wrapperOrigin": "Dominikanska Republika",
     "binderOrigin": "SAD",
     "fillerOrigin": "Honduras",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Connecticut Broadleaf"
   },
   {
     "id": "cig-la-gloria-cubana-esteli",
@@ -153951,7 +153887,9 @@
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "SAD",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Connecticut Broadleaf",
+    "filler": "Piloto Cubano"
   },
   {
     "id": "cig-la-gloria-cubana-natural-charlemagne",
@@ -154159,7 +154097,8 @@
     "vitola": "48",
     "wrapperOrigin": "Nikaragva",
     "binderOrigin": "Nikaragva",
-    "fillerOrigin": "Nikaragva"
+    "fillerOrigin": "Nikaragva",
+    "filler": "Cuban Seed"
   },
   {
     "id": "cig-la-gloria-cubana-serie-r-natural-no-8",
@@ -154429,7 +154368,8 @@
     "wrapperOrigin": "Meksiko",
     "binderOrigin": "Nikaragva",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Esteli"
   },
   {
     "id": "cig-la-gloria-cubana-society-ii",
@@ -154494,7 +154434,8 @@
     ],
     "binderOrigin": "Ekvador",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Sumatra"
   },
   {
     "id": "cig-la-gloria-cubana-spanish-press",
@@ -154559,7 +154500,9 @@
     "wrapperOrigin": "Nikaragva",
     "binderOrigin": "Meksiko",
     "fillerOrigin": "Brazil",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "San Andres",
+    "filler": "Mata Fina"
   },
   {
     "id": "cig-la-gloria-cubana-spirit-of-the-lady",
@@ -154620,7 +154563,8 @@
       "https://www.neptunecigar.com/cigars/la-gloria-cubana-spirit-of-the-lady-churchill"
     ],
     "wrapperOrigin": "Honduras",
-    "binderOrigin": "Kamerun"
+    "binderOrigin": "Kamerun",
+    "filler": "Condega"
   },
   {
     "id": "cig-la-gloria-cubana-torpedo",
@@ -154748,364 +154692,6 @@
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Nikaragva",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
-  },
-  {
-    "id": "cig-la-instructora-delicado",
-    "brand": "La Galera",
-    "line": "La Instructora Delicado",
-    "vitola": "Robusto",
-    "format": "50 x 127mm",
-    "country": "Dominikanska Republika",
-    "wrapper": "USA Connecticut",
-    "strength": 2,
-    "body": 2,
-    "flavorTags": [
-      "kremasto",
-      "cedar",
-      "orasasti",
-      "med",
-      "trava-slatka"
-    ],
-    "profileEstimated": true,
-    "catalogSource": "market",
-    "smokeTimeMin": 60,
-    "priceEUR": 15.7,
-    "priceApprox": false,
-    "availabilityHR": [
-      "The Humidor"
-    ],
-    "notes": {
-      "hr": "La Instructora je butik marka tvornice Tabacalera Palma (Jochy Blanco), na tržištu od 2017. Delicado nosi američki Connecticut Shade pokrov — blago, kremasto i slatkasto.",
-      "en": "La Instructora is a boutique brand from Tabacalera Palma (Jochy Blanco), on the market since 2017. Delicado carries a US Connecticut Shade wrapper — mild, creamy and lightly sweet."
-    },
-    "markets": [
-      "HR",
-      "USA",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Robusto",
-        "format": "50 x 127mm",
-        "smokeTimeMin": 60,
-        "priceEUR": 15.7,
-        "url": "https://humidor.hr/hr/proizvod/la-instructora-delicado-robusto-5-x-50/",
-        "regionLinks": {
-          "HR": {
-            "shop": "The Humidor",
-            "url": "https://humidor.hr/hr/proizvod/la-instructora-delicado-robusto-5-x-50/",
-            "priceEUR": 15.7,
-            "fetchedAt": "2026-07-01"
-          },
-          "USA": {
-            "shop": "Neptune Cigar",
-            "url": "https://www.neptunecigar.com/cigars/la-instructora-delicado-robusto"
-          }
-        },
-        "ring": 50,
-        "lengthMM": 127,
-        "fetchedAt": "2026-07-01"
-      }
-    ],
-    "regionLinks": {
-      "HR": {
-        "shop": "The Humidor",
-        "url": "https://humidor.hr/hr/proizvod/la-instructora-delicado-robusto-5-x-50/",
-        "priceEUR": 15.7,
-        "fetchedAt": "2026-07-01"
-      },
-      "USA": {
-        "shop": "Neptune Cigar",
-        "url": "https://www.neptunecigar.com/cigars/la-instructora-delicado-corona"
-      }
-    },
-    "strengthFromShop": true,
-    "priceUrl": "https://humidor.hr/hr/proizvod/la-instructora-delicado-robusto-5-x-50/",
-    "sourceUrls": [
-      "https://www.neptunecigar.com/cigars/la-instructora-delicado-toro",
-      "https://www.neptunecigar.com/cigars/la-instructora-delicado-churchill",
-      "https://www.neptunecigar.com/cigars/la-instructora-delicado-presidente",
-      "https://www.neptunecigar.com/cigars/la-instructora-delicado-torpedo"
-    ]
-  },
-  {
-    "id": "cig-la-instructora-perfection",
-    "brand": "La Galera",
-    "line": "La Instructora Perfection",
-    "vitola": "Short Robusto",
-    "format": "52 x 114mm",
-    "country": "Dominikanska Republika",
-    "wrapper": "Ecuadorian Habano Rosado",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
-    ],
-    "profileEstimated": true,
-    "catalogSource": "market",
-    "smokeTimeMin": 60,
-    "priceEUR": 11.7,
-    "priceApprox": false,
-    "availabilityHR": [
-      "The Humidor"
-    ],
-    "notes": {
-      "hr": "Perfection je punija La Instructora: ekvadorski Habano pokrov, dominikanski Criollo 98 vezivo i punjenje od Piloto i Criollo 98 — srednja snaga s jasnim začinom.",
-      "en": "Perfection is the fuller La Instructora: an Ecuadorian Habano wrapper, Dominican Criollo 98 binder and a Piloto and Criollo 98 filler — medium strength with clear spice."
-    },
-    "markets": [
-      "HR",
-      "USA",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Short Robusto",
-        "format": "52 x 114mm",
-        "smokeTimeMin": 60,
-        "priceEUR": 11.7,
-        "url": "https://humidor.hr/hr/proizvod/la-instructora-perfection-short-robusto-4-1-2-x-52/",
-        "regionLinks": {
-          "HR": {
-            "shop": "The Humidor",
-            "url": "https://humidor.hr/hr/proizvod/la-instructora-perfection-short-robusto-4-1-2-x-52/",
-            "priceEUR": 11.7,
-            "fetchedAt": "2026-07-01"
-          },
-          "USA": {
-            "shop": "Neptune Cigar",
-            "url": "https://www.neptunecigar.com/cigars/la-instructora-perfection-royal-corona"
-          }
-        },
-        "ring": 52,
-        "lengthMM": 114,
-        "fetchedAt": "2026-07-01"
-      }
-    ],
-    "regionLinks": {
-      "HR": {
-        "shop": "The Humidor",
-        "url": "https://humidor.hr/hr/proizvod/la-instructora-perfection-short-robusto-4-1-2-x-52/",
-        "priceEUR": 11.7,
-        "fetchedAt": "2026-07-01"
-      },
-      "USA": {
-        "shop": "Neptune Cigar",
-        "url": "https://www.neptunecigar.com/cigars/la-instructora-perfection-petite-salomon"
-      }
-    },
-    "strengthFromShop": true,
-    "priceUrl": "https://humidor.hr/hr/proizvod/la-instructora-perfection-short-robusto-4-1-2-x-52/",
-    "sourceUrls": [
-      "https://www.neptunecigar.com/cigars/la-instructora-perfection-royal-corona",
-      "https://www.neptunecigar.com/cigars/la-instructora-perfection-short-robusto",
-      "https://www.neptunecigar.com/cigars/la-instructora-perfection-invicto"
-    ]
-  },
-  {
-    "id": "cig-la-instructora-perfection-extra",
-    "brand": "La Galera",
-    "line": "La Instructora Perfection Extra",
-    "vitola": "Belicoso",
-    "format": "57 x 152mm",
-    "country": "Dominikanska Republika",
-    "wrapper": "Ecuadorian Habano Rosado",
-    "strength": 3,
-    "body": 3,
-    "flavorTags": [
-      "cedar",
-      "zacini",
-      "koza",
-      "kava"
-    ],
-    "profileEstimated": true,
-    "catalogSource": "market",
-    "smokeTimeMin": 90,
-    "priceEUR": 16.7,
-    "priceApprox": false,
-    "availabilityHR": [
-      "The Humidor"
-    ],
-    "notes": {
-      "hr": "Veći format Perfection linije — isti blend Tabacalera Palme u duljoj cigari, s više vremena da se začin smiri u slatkoću.",
-      "en": "The larger Perfection size — the same Tabacalera Palma blend in a longer cigar, with more time for the spice to settle into sweetness."
-    },
-    "markets": [
-      "HR",
-      "USA",
-      "WW"
-    ],
-    "vitolas": [
-      {
-        "name": "Belicoso",
-        "format": "57 x 152mm",
-        "smokeTimeMin": 90,
-        "priceEUR": 16.7,
-        "url": "https://humidor.hr/hr/proizvod/la-instructora-perfection-belicoso-extra-6-x-57/",
-        "regionLinks": {
-          "HR": {
-            "shop": "The Humidor",
-            "url": "https://humidor.hr/hr/proizvod/la-instructora-perfection-belicoso-extra-6-x-57/",
-            "priceEUR": 16.7,
-            "fetchedAt": "2026-07-01"
-          },
-          "USA": {
-            "shop": "Neptune Cigar",
-            "url": "https://www.neptunecigar.com/cigars/la-instructora-perfection-belicoso-extra"
-          }
-        },
-        "ring": 57,
-        "lengthMM": 152,
-        "fetchedAt": "2026-07-01"
-      }
-    ],
-    "regionLinks": {
-      "HR": {
-        "shop": "The Humidor",
-        "url": "https://humidor.hr/hr/proizvod/la-instructora-perfection-belicoso-extra-6-x-57/",
-        "priceEUR": 16.7,
-        "fetchedAt": "2026-07-01"
-      },
-      "USA": {
-        "shop": "Neptune Cigar",
-        "url": "https://www.neptunecigar.com/cigars/la-instructora-perfection-belicoso-extra"
-      }
-    },
-    "strengthFromShop": true,
-    "priceUrl": "https://humidor.hr/hr/proizvod/la-instructora-perfection-belicoso-extra-6-x-57/"
-  },
-  {
-    "id": "cig-la-instructora-pressed",
-    "brand": "La Galera",
-    "line": "La Instructora Pressed",
-    "format": "50 x 124mm",
-    "country": "Dominikanska Republika",
-    "wrapper": "Brazilian",
-    "strength": 3,
-    "body": 5,
-    "flavorTags": [
-      "kakao",
-      "papar",
-      "koza",
-      "zacini",
-      "duhan"
-    ],
-    "profileEstimated": true,
-    "formatEstimated": true,
-    "smokeTimeMin": 59,
-    "priceEUR": null,
-    "priceUrl": "https://www.neptunecigar.com/cigars/la-instructora-box-pressed-1",
-    "vitolas": [
-      {
-        "name": "1",
-        "format": "50 x 124mm",
-        "smokeTimeMin": 59,
-        "priceEUR": null,
-        "url": "https://www.neptunecigar.com/cigars/la-instructora-box-pressed-1",
-        "shape": "Robusto",
-        "ring": 50,
-        "lengthMM": 124,
-        "regionLinks": {
-          "USA": {
-            "shop": "Neptune Cigar",
-            "url": "https://www.neptunecigar.com/cigars/la-instructora-box-pressed-1"
-          }
-        }
-      },
-      {
-        "name": "2",
-        "format": "50 x 124mm",
-        "smokeTimeMin": 59,
-        "priceEUR": null,
-        "url": "https://www.neptunecigar.com/cigars/la-instructora-box-pressed-2",
-        "shape": "Robusto",
-        "ring": 50,
-        "lengthMM": 124,
-        "regionLinks": {
-          "USA": {
-            "shop": "Neptune Cigar",
-            "url": "https://www.neptunecigar.com/cigars/la-instructora-box-pressed-2"
-          }
-        }
-      },
-      {
-        "name": "3",
-        "format": "50 x 124mm",
-        "smokeTimeMin": 59,
-        "priceEUR": null,
-        "url": "https://www.neptunecigar.com/cigars/la-instructora-box-pressed-3",
-        "shape": "Robusto",
-        "ring": 50,
-        "lengthMM": 124,
-        "regionLinks": {
-          "USA": {
-            "shop": "Neptune Cigar",
-            "url": "https://www.neptunecigar.com/cigars/la-instructora-box-pressed-3"
-          }
-        }
-      },
-      {
-        "name": "4",
-        "format": "50 x 124mm",
-        "smokeTimeMin": 59,
-        "priceEUR": null,
-        "url": "https://www.neptunecigar.com/cigars/la-instructora-box-pressed-4",
-        "shape": "Robusto",
-        "ring": 50,
-        "lengthMM": 124,
-        "regionLinks": {
-          "USA": {
-            "shop": "Neptune Cigar",
-            "url": "https://www.neptunecigar.com/cigars/la-instructora-box-pressed-4"
-          }
-        }
-      },
-      {
-        "name": "5",
-        "format": "50 x 124mm",
-        "smokeTimeMin": 59,
-        "priceEUR": null,
-        "url": "https://www.neptunecigar.com/cigars/la-instructora-box-pressed-5",
-        "shape": "Robusto",
-        "ring": 50,
-        "lengthMM": 124,
-        "regionLinks": {
-          "USA": {
-            "shop": "Neptune Cigar",
-            "url": "https://www.neptunecigar.com/cigars/la-instructora-box-pressed-5"
-          }
-        }
-      }
-    ],
-    "markets": [
-      "HR",
-      "USA",
-      "WW"
-    ],
-    "regionLinks": {
-      "USA": {
-        "shop": "Neptune Cigar",
-        "url": "https://www.neptunecigar.com/cigars/la-instructora-box-pressed-1"
-      }
-    },
-    "catalogSource": "market",
-    "availabilityHR": [
-      "The Humidor"
-    ],
-    "notes": {
-      "hr": "Dominikanska Republika — linija iz trgovine Neptune Cigar.",
-      "en": "Dominican Republic — line from Neptune Cigar."
-    },
-    "sourceUrls": [
-      "https://www.neptunecigar.com/cigars/la-instructora-box-pressed-1"
-    ],
-    "vitola": "1",
-    "wrapperOrigin": "Brazil",
-    "binderOrigin": "Dominikanska Republika",
     "strengthFromShop": true
   },
   {
@@ -155745,7 +155331,8 @@
     "wrapperOrigin": "Dominikanska Republika",
     "binderOrigin": "Meksiko",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "San Andres"
   },
   {
     "id": "cig-la-palina-family-series-miami-babe",
@@ -155808,7 +155395,8 @@
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Ekvador",
     "fillerOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Habano Ecuador"
   },
   {
     "id": "cig-la-palina-family-series-miami-pasha-coffin",
@@ -155873,7 +155461,8 @@
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Ekvador",
     "fillerOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Habano Ecuador"
   },
   {
     "id": "cig-la-palina-fuego-verde",
@@ -156807,7 +156396,9 @@
     "wrapperOrigin": "Honduras",
     "binderOrigin": "Meksiko",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "San Andres",
+    "filler": "Piloto Cubano"
   },
   {
     "id": "cig-la-perla-habana-black-pearl",
@@ -157378,7 +156969,8 @@
     "priceUrl": "https://www.neptunecigar.com/cigars/la-rosa-de-sandiego-connecticut-robusto",
     "binderOrigin": "Ekvador",
     "fillerOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "wrapperOrigin": "Ekvador"
   },
   {
     "id": "cig-la-rosa-de-sandiego-maduro",
@@ -159621,7 +159213,8 @@
         "fetchedAt": "2026-07-01"
       }
     },
-    "formatEstimated": true
+    "formatEstimated": true,
+    "filler": "Mata Fina"
   },
   {
     "id": "cig-le-cigar-non-plus-ultra",
@@ -163576,7 +163169,8 @@
     ],
     "priceUrl": "https://www.neptunecigar.com/cigars/luciano-the-dreamer-hermoso-no-4",
     "fillerOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Sumatra"
   },
   {
     "id": "cig-luciano-dreamer-de-luxe",
@@ -164626,7 +164220,8 @@
       "https://www.neptunecigar.com/cigars/luciano-underrated-chicos-4--40"
     ],
     "priceUrl": "https://www.neptunecigar.com/cigars/luciano-underrated-robusto",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "filler": "Havana Vuelta Arriba"
   },
   {
     "id": "cig-luciano-y-panda",
@@ -164830,7 +164425,9 @@
     "wrapperOrigin": "Honduras",
     "binderOrigin": "SAD",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Connecticut Broadleaf",
+    "filler": "Ligero"
   },
   {
     "id": "cig-macanudo-cafe",
@@ -165060,7 +164657,8 @@
       "https://www.neptunecigar.com/cigars/macanudo-cru-royale-gigante"
     ],
     "priceUrl": "https://www.neptunecigar.com/cigars/macanudo-cru-royale-robusto",
-    "fillerOrigin": "Brazil"
+    "fillerOrigin": "Brazil",
+    "binder": "La Vega Especial"
   },
   {
     "id": "cig-macanudo-ecuadorian-shade",
@@ -165142,7 +164740,8 @@
     "strengthFromShop": true,
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "SAD",
-    "fillerOrigin": "Dominikanska Republika"
+    "fillerOrigin": "Dominikanska Republika",
+    "binder": "Connecticut Broadleaf"
   },
   {
     "id": "cig-macanudo-emissary-espana",
@@ -165346,7 +164945,8 @@
     "strengthFromShop": true,
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "SAD",
-    "fillerOrigin": "Brazil"
+    "fillerOrigin": "Brazil",
+    "binder": "Connecticut Broadleaf"
   },
   {
     "id": "cig-macanudo-estate-reserve-flint-knoll-no-2",
@@ -165414,7 +165014,9 @@
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "SAD",
     "fillerOrigin": "Brazil",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Connecticut Broadleaf",
+    "filler": "Mata Fina"
   },
   {
     "id": "cig-macanudo-gold-label",
@@ -165494,7 +165096,10 @@
       "https://www.neptunecigar.com/cigars/macanudo-gold-label-hampton-court-tubo",
       "https://www.neptunecigar.com/cigars/macanudo-gold-label-lord-nelson"
     ],
-    "binderOrigin": "Meksiko"
+    "binderOrigin": "Meksiko",
+    "binder": "San Andres",
+    "fillerOrigin": "Dominikanska Republika",
+    "filler": "Piloto Cubano"
   },
   {
     "id": "cig-macanudo-hampton-court",
@@ -165567,7 +165172,8 @@
       "https://www.neptunecigar.com/cigars/macanudo-maduro-hampton-court"
     ],
     "binderOrigin": "Meksiko",
-    "fillerOrigin": "Meksiko"
+    "fillerOrigin": "Meksiko",
+    "binder": "San Andres"
   },
   {
     "id": "cig-macanudo-heritage-nuevo",
@@ -166185,7 +165791,8 @@
     "wrapperOrigin": "SAD",
     "binderOrigin": "Meksiko",
     "fillerOrigin": "Meksiko",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "San Andres"
   },
   {
     "id": "cig-macanudo-maduro-baron-de-rothschild",
@@ -166249,7 +165856,8 @@
     "wrapperOrigin": "SAD",
     "binderOrigin": "Meksiko",
     "fillerOrigin": "Meksiko",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "San Andres"
   },
   {
     "id": "cig-macanudo-maduro-hyde-park",
@@ -166312,7 +165920,8 @@
     "wrapperOrigin": "SAD",
     "binderOrigin": "Meksiko",
     "fillerOrigin": "Meksiko",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "San Andres"
   },
   {
     "id": "cig-macanudo-maduro-prince-phillip",
@@ -166370,7 +165979,8 @@
     "wrapperOrigin": "SAD",
     "binderOrigin": "Meksiko",
     "fillerOrigin": "Meksiko",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "San Andres"
   },
   {
     "id": "cig-macanudo-maduro-vintage-1997",
@@ -166559,7 +166169,8 @@
     "strengthFromShop": true,
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "SAD",
-    "fillerOrigin": "Dominikanska Republika"
+    "fillerOrigin": "Dominikanska Republika",
+    "binder": "Connecticut Broadleaf"
   },
   {
     "id": "cig-macanudo-vintage",
@@ -166623,7 +166234,8 @@
     "wrapperOrigin": "SAD",
     "binderOrigin": "SAD",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Habano"
   },
   {
     "id": "cig-maestranza-baron",
@@ -169435,7 +169047,8 @@
     "priceUrl": "https://www.neptunecigar.com/cigars/matilde-limited-exposure-no-2-lonsdale",
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "filler": "Corojo"
   },
   {
     "id": "cig-matilde-limited-exposure-no-3",
@@ -171631,7 +171244,8 @@
     "wrapperOrigin": "Meksiko",
     "binderOrigin": "Ekvador",
     "fillerOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Habano Ecuador"
   },
   {
     "id": "cig-micallef-blue",
@@ -171695,7 +171309,8 @@
     "wrapperOrigin": "Meksiko",
     "binderOrigin": "Ekvador",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Habano Ecuador"
   },
   {
     "id": "cig-micallef-color-blend-2",
@@ -171883,7 +171498,8 @@
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Nikaragva",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Habano"
   },
   {
     "id": "cig-micallef-experienca-la-crema",
@@ -171946,7 +171562,8 @@
     "wrapperOrigin": "Meksiko",
     "binderOrigin": "Ekvador",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Habano Ecuador"
   },
   {
     "id": "cig-micallef-gomez-sanchez-leyenda-no1",
@@ -172092,7 +171709,8 @@
     "flavoured": false,
     "strengthFromShop": false,
     "binderOrigin": "Meksiko",
-    "fillerOrigin": "Dominikanska Republika"
+    "fillerOrigin": "Dominikanska Republika",
+    "binder": "San Andres"
   },
   {
     "id": "cig-micallef-herencia",
@@ -172171,7 +171789,8 @@
     "wrapperOrigin": "Nikaragva",
     "binderOrigin": "Ekvador",
     "fillerOrigin": "Honduras",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Sumatra"
   },
   {
     "id": "cig-micallef-migdalia",
@@ -172393,7 +172012,8 @@
     "flavoured": false,
     "strengthFromShop": false,
     "wrapperOrigin": "Meksiko",
-    "fillerOrigin": "Dominikanska Republika"
+    "fillerOrigin": "Dominikanska Republika",
+    "binder": "Broadleaf"
   },
   {
     "id": "cig-micallef-reata",
@@ -172537,7 +172157,8 @@
     ],
     "wrapperOrigin": "Meksiko",
     "fillerOrigin": "Meksiko",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Broadleaf"
   },
   {
     "id": "cig-micallef-reserva-privada",
@@ -172746,7 +172367,8 @@
     "flavoured": false,
     "strengthFromShop": true,
     "wrapperOrigin": "Ekvador",
-    "fillerOrigin": "Dominikanska Republika"
+    "fillerOrigin": "Dominikanska Republika",
+    "binder": "Broadleaf"
   },
   {
     "id": "cig-montecristo-classic",
@@ -175676,6 +175298,240 @@
     "isPuro": false
   },
   {
+    "id": "cig-flor-de-las-antillas-10th-anniversary",
+    "brand": "My Father",
+    "line": "Flor de las Antillas 10th Anniversary",
+    "vitola": "Toro",
+    "format": "52 x 165mm",
+    "country": "Nikaragva",
+    "wrapper": "Nicaraguan",
+    "strength": 3,
+    "body": 3,
+    "flavorTags": [
+      "papar",
+      "orasasti",
+      "zacini",
+      "drvo",
+      "duhan",
+      "dim"
+    ],
+    "profileEstimated": true,
+    "catalogSource": "market",
+    "smokeTimeMin": 63,
+    "priceEUR": null,
+    "priceApprox": false,
+    "availabilityHR": [],
+    "notes": {
+      "hr": "Nikaragva, Nicaraguan pokrov — pune snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
+      "en": "Nicaragua, Nicaraguan wrapper — full in strength, medium-bodied. Notes: cedar, spices, leather."
+    },
+    "markets": [
+      "USA",
+      "WW"
+    ],
+    "vitolas": [
+      {
+        "name": "Toro",
+        "format": "52 x 165mm",
+        "smokeTimeMin": 63,
+        "priceEUR": null,
+        "url": "https://www.neptunecigar.com/cigars/flor-de-las-antillas-10th-anniversary-le-2022-toro",
+        "ring": 52,
+        "lengthMM": 165
+      }
+    ],
+    "regionLinks": {
+      "USA": {
+        "shop": "Holt's",
+        "url": "https://www.holts.com/cigars/all-cigar-brands/flor-de-las-antillas-10th-anniversary.html",
+        "priceEUR": 36.8,
+        "priceApprox": true,
+        "fetchedAt": "2026-07-01"
+      }
+    },
+    "strengthFromShop": true,
+    "priceUrl": "https://www.neptunecigar.com/cigars/flor-de-las-antillas-10th-anniversary-le-2022-toro",
+    "wrapperOrigin": "Nikaragva",
+    "binderOrigin": "Nikaragva",
+    "fillerOrigin": "Nikaragva"
+  },
+  {
+    "id": "cig-flor-de-las-antillas-maduro",
+    "brand": "My Father",
+    "line": "Flor de las Antillas Maduro",
+    "vitola": "Corona",
+    "format": "46 x 143mm",
+    "country": "Nikaragva",
+    "wrapper": "Ecuador Habano",
+    "strength": 5,
+    "body": 5,
+    "flavorTags": [
+      "koza",
+      "duhan"
+    ],
+    "profileEstimated": true,
+    "catalogSource": "market",
+    "smokeTimeMin": 55,
+    "priceEUR": null,
+    "priceApprox": false,
+    "availabilityHR": [],
+    "notes": {
+      "hr": "Nikaragva, Ecuador Habano pokrov — jače snage, punijeg tijela. Okusi: kakao, kava, karamela.",
+      "en": "Nicaragua, Ecuador Habano wrapper — medium-full in strength, fuller-bodied. Notes: cocoa, coffee, caramel."
+    },
+    "markets": [
+      "USA",
+      "WW"
+    ],
+    "vitolas": [
+      {
+        "name": "Corona",
+        "format": "46 x 143mm",
+        "smokeTimeMin": 55,
+        "priceEUR": null,
+        "url": "https://www.neptunecigar.com/cigars/flor-de-las-antillas-maduro-corona",
+        "ring": 46,
+        "lengthMM": 143
+      },
+      {
+        "name": "Short Robusto",
+        "format": "50 x 114mm",
+        "smokeTimeMin": 44,
+        "priceEUR": null,
+        "url": null,
+        "ring": 50,
+        "lengthMM": 114
+      },
+      {
+        "name": "Toro",
+        "format": "52 x 152mm",
+        "smokeTimeMin": 58,
+        "priceEUR": null,
+        "url": "https://www.neptunecigar.com/cigars/flor-de-las-antillas-maduro-toro",
+        "ring": 52,
+        "lengthMM": 152
+      },
+      {
+        "name": "Torpedo",
+        "format": "52 x 156mm",
+        "smokeTimeMin": 60,
+        "priceEUR": null,
+        "url": "https://www.neptunecigar.com/cigars/flor-de-las-antillas-maduro-torpedo",
+        "ring": 52,
+        "lengthMM": 156
+      },
+      {
+        "name": "Gran Toro",
+        "format": "56 x 165mm",
+        "smokeTimeMin": 63,
+        "priceEUR": null,
+        "url": null,
+        "ring": 56,
+        "lengthMM": 165
+      }
+    ],
+    "regionLinks": {
+      "USA": {
+        "shop": "Holt's",
+        "url": "https://www.holts.com/cigars/all-cigar-brands/flor-de-las-antillas-maduro.html",
+        "priceEUR": 8.28,
+        "priceApprox": true,
+        "fetchedAt": "2026-07-01"
+      }
+    },
+    "strengthFromShop": true,
+    "sourceUrls": [
+      "https://www.neptunecigar.com/cigars/flor-de-las-antillas-maduro-petit-robusto",
+      "https://www.neptunecigar.com/cigars/flor-de-las-antillas-maduro-toro-gordo"
+    ],
+    "priceUrl": "https://www.neptunecigar.com/cigars/flor-de-las-antillas-maduro-corona",
+    "wrapperOrigin": "Ekvador",
+    "binderOrigin": "Nikaragva",
+    "fillerOrigin": "Nikaragva"
+  },
+  {
+    "id": "cig-flor-de-las-antillas-san-andres-taa",
+    "brand": "My Father",
+    "line": "Flor de las Antillas San Andres TAA",
+    "vitola": "Robusto",
+    "format": "52 x 127mm",
+    "country": "Nikaragva",
+    "wrapper": "Maduro",
+    "strength": 3,
+    "body": 3,
+    "flavorTags": [
+      "kakao",
+      "papar",
+      "kremasto",
+      "cedar",
+      "zemljano",
+      "dim"
+    ],
+    "profileEstimated": true,
+    "formatEstimated": false,
+    "smokeTimeMin": 59,
+    "priceEUR": null,
+    "priceUrl": "https://www.neptunecigar.com/cigars/flor-de-las-antillas-san-andres-taa-2025-robusto-5--52",
+    "vitolas": [
+      {
+        "name": "Robusto",
+        "format": "52 x 127mm",
+        "smokeTimeMin": 59,
+        "priceEUR": null,
+        "url": "https://www.neptunecigar.com/cigars/flor-de-las-antillas-san-andres-taa-2025-robusto-5--52",
+        "shape": "Robusto",
+        "ring": 52,
+        "lengthMM": 127,
+        "regionLinks": {
+          "USA": {
+            "shop": "Neptune Cigar",
+            "url": "https://www.neptunecigar.com/cigars/flor-de-las-antillas-san-andres-taa-2025-robusto-5--52"
+          }
+        }
+      },
+      {
+        "name": "Toro",
+        "format": "54 x 152mm",
+        "smokeTimeMin": 72,
+        "priceEUR": null,
+        "url": "https://www.neptunecigar.com/cigars/flor-de-las-antillas-san-andres-taa-2025-toro-6--54",
+        "shape": "Toro",
+        "ring": 54,
+        "lengthMM": 152,
+        "regionLinks": {
+          "USA": {
+            "shop": "Neptune Cigar",
+            "url": "https://www.neptunecigar.com/cigars/flor-de-las-antillas-san-andres-taa-2025-toro-6--54"
+          }
+        }
+      }
+    ],
+    "markets": [
+      "USA",
+      "WW"
+    ],
+    "regionLinks": {
+      "USA": {
+        "shop": "Neptune Cigar",
+        "url": "https://www.neptunecigar.com/cigars/flor-de-las-antillas-san-andres-taa-2025-robusto-5--52"
+      }
+    },
+    "catalogSource": "market",
+    "availabilityHR": [],
+    "notes": {
+      "hr": "Nikaragva — linija iz trgovine Neptune Cigar.",
+      "en": "Nicaragua — line from Neptune Cigar."
+    },
+    "sourceUrls": [
+      "https://www.neptunecigar.com/cigars/flor-de-las-antillas-san-andres-taa-2025-robusto-5--52"
+    ],
+    "flavoured": false,
+    "strengthFromShop": false,
+    "wrapperOrigin": "Meksiko",
+    "binderOrigin": "Nikaragva",
+    "fillerOrigin": "Nikaragva"
+  },
+  {
     "id": "cig-my-father-fonseca",
     "brand": "My Father",
     "line": "Fonseca",
@@ -175965,7 +175821,7 @@
       "hr": "Tamni Habano Rosado Oscuro omot — bogato, papreno i kožnato, puno tijelo.",
       "en": "Dark Habano Rosado Oscuro wrapper — rich, peppery and leathery, full body."
     },
-    "priceUrl": null,
+    "priceUrl": "https://www.neptunecigar.com/cigars/la-antiguedad-robusto",
     "profileEstimated": true,
     "vitolas": [
       {
@@ -176323,7 +176179,8 @@
     "wrapperOrigin": "Ekvador",
     "priceUrl": "https://www.neptunecigar.com/cigars/my-father-la-gran-oferta-lancero",
     "binderOrigin": "Kuba",
-    "fillerOrigin": "Nikaragva"
+    "fillerOrigin": "Nikaragva",
+    "binder": "Cuban Seed"
   },
   {
     "id": "cig-my-father-la-lealtad",
@@ -177613,7 +177470,8 @@
     ],
     "priceUrl": "https://www.neptunecigar.com/cigars/nat-sherman-epoca-breva",
     "binderOrigin": "Dominikanska Republika",
-    "fillerOrigin": "Dominikanska Republika"
+    "fillerOrigin": "Dominikanska Republika",
+    "wrapperOrigin": "Ekvador"
   },
   {
     "id": "cig-nat-sherman-host",
@@ -178446,7 +178304,8 @@
     "flavoured": false,
     "formatEstimated": true,
     "binderOrigin": "Dominikanska Republika",
-    "fillerOrigin": "Dominikanska Republika"
+    "fillerOrigin": "Dominikanska Republika",
+    "wrapperOrigin": "Ekvador"
   },
   {
     "id": "cig-nat-sherman-timeless-supreme",
@@ -181932,7 +181791,7 @@
     "brand": "Oliva",
     "line": "Serie G",
     "vitola": "Special G",
-    "format": "49 x 95mm",
+    "format": "48 x 95mm",
     "country": "Nikaragva",
     "wrapper": "Cameroon",
     "strength": 2,
@@ -188640,6 +188499,445 @@
       }
     },
     "strengthFromShop": true
+  },
+  {
+    "id": "cig-dominus-mmxx-astkreuz",
+    "brand": "Padilla",
+    "line": "Dominus MMXX Astkreuz",
+    "vitola": "Corona",
+    "format": "42 x 142mm",
+    "country": "Kostarika",
+    "wrapper": "Ecuador",
+    "strength": 3,
+    "body": 3,
+    "flavorTags": [
+      "cedar",
+      "zacini",
+      "koza",
+      "kava",
+      "cvjetno"
+    ],
+    "profileEstimated": true,
+    "catalogSource": "market",
+    "smokeTimeMin": 55,
+    "priceEUR": null,
+    "priceApprox": false,
+    "availabilityHR": [],
+    "notes": {
+      "hr": "Kostarika, Ecuador pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
+      "en": "Kostarika, Ecuador wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
+    },
+    "markets": [
+      "EU",
+      "WW"
+    ],
+    "vitolas": [
+      {
+        "name": "Corona",
+        "format": "42 x 142mm",
+        "smokeTimeMin": 55,
+        "priceEUR": null,
+        "url": null,
+        "regionLinks": {
+          "EU": {
+            "shop": "CigarWorld",
+            "url": "https://www.cigarworld.de/en/zigarren/costa-rica/dominus-mmxx-astkreuz-corona-90015540_41103",
+            "priceEUR": 8.5,
+            "fetchedAt": "2026-07-01"
+          }
+        },
+        "ring": 42,
+        "lengthMM": 142
+      }
+    ],
+    "regionLinks": {
+      "EU": {
+        "shop": "CigarWorld",
+        "url": "https://www.cigarworld.de/en/zigarren/costa-rica/dominus-mmxx-astkreuz-corona-90015540_41103",
+        "priceEUR": 8.5,
+        "fetchedAt": "2026-07-01"
+      }
+    },
+    "formatEstimated": true,
+    "wrapperOrigin": "Ekvador",
+    "binderOrigin": "Ekvador"
+  },
+  {
+    "id": "cig-dominus-mmxx-jerusalemkreuz",
+    "brand": "Padilla",
+    "line": "Dominus MMXX Jerusalemkreuz",
+    "vitola": "Half Corona",
+    "format": "42 x 105mm",
+    "country": "Kostarika",
+    "wrapper": "Ecuador",
+    "strength": 3,
+    "body": 3,
+    "flavorTags": [
+      "cedar",
+      "zacini",
+      "koza",
+      "kava",
+      "cvjetno",
+      "drvo"
+    ],
+    "profileEstimated": true,
+    "catalogSource": "market",
+    "smokeTimeMin": 40,
+    "priceEUR": null,
+    "priceApprox": false,
+    "availabilityHR": [],
+    "notes": {
+      "hr": "Kostarika, Ecuador pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
+      "en": "Kostarika, Ecuador wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
+    },
+    "markets": [
+      "EU",
+      "WW"
+    ],
+    "vitolas": [
+      {
+        "name": "Half Corona",
+        "format": "42 x 105mm",
+        "smokeTimeMin": 40,
+        "priceEUR": null,
+        "url": null,
+        "regionLinks": {
+          "EU": {
+            "shop": "CigarWorld",
+            "url": "https://www.cigarworld.de/en/zigarren/costa-rica/dominus-mmxx-jerusalemkreuz-halfcorona-90015540_41110",
+            "priceEUR": 5.5,
+            "fetchedAt": "2026-07-01"
+          }
+        },
+        "ring": 42,
+        "lengthMM": 105
+      }
+    ],
+    "regionLinks": {
+      "EU": {
+        "shop": "CigarWorld",
+        "url": "https://www.cigarworld.de/en/zigarren/costa-rica/dominus-mmxx-jerusalemkreuz-halfcorona-90015540_41110",
+        "priceEUR": 5.5,
+        "fetchedAt": "2026-07-01"
+      }
+    },
+    "formatEstimated": true,
+    "wrapperOrigin": "Ekvador",
+    "binderOrigin": "Ekvador"
+  },
+  {
+    "id": "cig-dominus-mmxx-patoncerkreuz",
+    "brand": "Padilla",
+    "line": "Dominus MMXX Patoncerkreuz",
+    "vitola": "Robusto",
+    "format": "52 x 127mm",
+    "country": "Kostarika",
+    "wrapper": "Ecuador",
+    "strength": 3,
+    "body": 3,
+    "flavorTags": [
+      "cedar",
+      "zacini",
+      "koza",
+      "kava",
+      "cvjetno",
+      "kremasto"
+    ],
+    "profileEstimated": true,
+    "catalogSource": "market",
+    "smokeTimeMin": 49,
+    "priceEUR": null,
+    "priceApprox": false,
+    "availabilityHR": [],
+    "notes": {
+      "hr": "Kostarika, Ecuador pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
+      "en": "Kostarika, Ecuador wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
+    },
+    "markets": [
+      "EU",
+      "WW"
+    ],
+    "vitolas": [
+      {
+        "name": "Robusto",
+        "format": "52 x 127mm",
+        "smokeTimeMin": 49,
+        "priceEUR": null,
+        "url": null,
+        "regionLinks": {
+          "EU": {
+            "shop": "CigarWorld",
+            "url": "https://www.cigarworld.de/en/zigarren/costa-rica/dominus-mmxx-patoncerkreuz-robusto-maduro-cms-90015540_41113",
+            "priceEUR": 9.5,
+            "fetchedAt": "2026-07-01"
+          }
+        },
+        "ring": 52,
+        "lengthMM": 127
+      }
+    ],
+    "regionLinks": {
+      "EU": {
+        "shop": "CigarWorld",
+        "url": "https://www.cigarworld.de/en/zigarren/costa-rica/dominus-mmxx-patoncerkreuz-robusto-maduro-cms-90015540_41113",
+        "priceEUR": 9.5,
+        "fetchedAt": "2026-07-01"
+      }
+    },
+    "formatEstimated": true,
+    "wrapperOrigin": "Ekvador",
+    "binderOrigin": "Ekvador"
+  },
+  {
+    "id": "cig-dominus-mmxx-santiagokreuz",
+    "brand": "Padilla",
+    "line": "Dominus MMXX Santiagokreuz",
+    "vitola": "Robusto",
+    "format": "52 x 127mm",
+    "country": "Kostarika",
+    "wrapper": "Ecuador",
+    "strength": 3,
+    "body": 3,
+    "flavorTags": [
+      "cedar",
+      "zacini",
+      "koza",
+      "kava",
+      "cvjetno"
+    ],
+    "profileEstimated": true,
+    "catalogSource": "market",
+    "smokeTimeMin": 49,
+    "priceEUR": null,
+    "priceApprox": false,
+    "availabilityHR": [],
+    "notes": {
+      "hr": "Kostarika, Ecuador pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
+      "en": "Kostarika, Ecuador wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
+    },
+    "markets": [
+      "EU",
+      "WW"
+    ],
+    "vitolas": [
+      {
+        "name": "Robusto",
+        "format": "52 x 127mm",
+        "smokeTimeMin": 49,
+        "priceEUR": null,
+        "url": null,
+        "regionLinks": {
+          "EU": {
+            "shop": "CigarWorld",
+            "url": "https://www.cigarworld.de/en/zigarren/costa-rica/dominus-mmxx-santiagokreuz-robusto-90015540_41112",
+            "priceEUR": 9.5,
+            "fetchedAt": "2026-07-01"
+          }
+        },
+        "ring": 52,
+        "lengthMM": 127
+      }
+    ],
+    "regionLinks": {
+      "EU": {
+        "shop": "CigarWorld",
+        "url": "https://www.cigarworld.de/en/zigarren/costa-rica/dominus-mmxx-santiagokreuz-robusto-90015540_41112",
+        "priceEUR": 9.5,
+        "fetchedAt": "2026-07-01"
+      }
+    },
+    "formatEstimated": true,
+    "wrapperOrigin": "Ekvador",
+    "binderOrigin": "Ekvador"
+  },
+  {
+    "id": "cig-dominus-mmxx-tatzenkreuz",
+    "brand": "Padilla",
+    "line": "Dominus MMXX Tatzenkreuz",
+    "vitola": "Gordo",
+    "format": "52 x 159mm",
+    "country": "Kostarika",
+    "wrapper": "Ecuador",
+    "strength": 3,
+    "body": 3,
+    "flavorTags": [
+      "cedar",
+      "zacini",
+      "koza",
+      "kava",
+      "cvjetno",
+      "kremasto"
+    ],
+    "profileEstimated": true,
+    "catalogSource": "market",
+    "smokeTimeMin": 61,
+    "priceEUR": null,
+    "priceApprox": false,
+    "availabilityHR": [],
+    "notes": {
+      "hr": "Kostarika, Ecuador pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
+      "en": "Kostarika, Ecuador wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
+    },
+    "markets": [
+      "EU",
+      "WW"
+    ],
+    "vitolas": [
+      {
+        "name": "Gordo",
+        "format": "52 x 159mm",
+        "smokeTimeMin": 61,
+        "priceEUR": null,
+        "url": null,
+        "regionLinks": {
+          "EU": {
+            "shop": "CigarWorld",
+            "url": "https://www.cigarworld.de/en/zigarren/costa-rica/dominus-mmxx-tatzenkreuz-gordito-90015540_41111",
+            "priceEUR": 6.9,
+            "fetchedAt": "2026-07-01"
+          }
+        },
+        "ring": 52,
+        "lengthMM": 159
+      }
+    ],
+    "regionLinks": {
+      "EU": {
+        "shop": "CigarWorld",
+        "url": "https://www.cigarworld.de/en/zigarren/costa-rica/dominus-mmxx-tatzenkreuz-gordito-90015540_41111",
+        "priceEUR": 6.9,
+        "fetchedAt": "2026-07-01"
+      }
+    },
+    "formatEstimated": true,
+    "wrapperOrigin": "Ekvador",
+    "binderOrigin": "Ekvador"
+  },
+  {
+    "id": "cig-dominus-mmxx-templerkreuz",
+    "brand": "Padilla",
+    "line": "Dominus MMXX Templerkreuz",
+    "vitola": "Figurado",
+    "format": "50 x 178mm",
+    "country": "Kostarika",
+    "wrapper": "Ecuador",
+    "strength": 3,
+    "body": 3,
+    "flavorTags": [
+      "cedar",
+      "zacini",
+      "koza",
+      "kava",
+      "cvjetno",
+      "kremasto"
+    ],
+    "profileEstimated": true,
+    "catalogSource": "market",
+    "smokeTimeMin": 68,
+    "priceEUR": null,
+    "priceApprox": false,
+    "availabilityHR": [],
+    "notes": {
+      "hr": "Kostarika, Ecuador pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
+      "en": "Kostarika, Ecuador wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
+    },
+    "markets": [
+      "EU",
+      "WW"
+    ],
+    "vitolas": [
+      {
+        "name": "Figurado",
+        "format": "50 x 178mm",
+        "smokeTimeMin": 68,
+        "priceEUR": null,
+        "url": null,
+        "regionLinks": {
+          "EU": {
+            "shop": "CigarWorld",
+            "url": "https://www.cigarworld.de/en/zigarren/costa-rica/dominus-mmxx-templerkreuz-salomones-90015540_41106",
+            "priceEUR": 16.5,
+            "fetchedAt": "2026-07-01"
+          }
+        },
+        "ring": 50,
+        "lengthMM": 178
+      }
+    ],
+    "regionLinks": {
+      "EU": {
+        "shop": "CigarWorld",
+        "url": "https://www.cigarworld.de/en/zigarren/costa-rica/dominus-mmxx-templerkreuz-salomones-90015540_41106",
+        "priceEUR": 16.5,
+        "fetchedAt": "2026-07-01"
+      }
+    },
+    "formatEstimated": true,
+    "wrapperOrigin": "Ekvador",
+    "binderOrigin": "Ekvador"
+  },
+  {
+    "id": "cig-dominus-mmxx-wiederkreuz",
+    "brand": "Padilla",
+    "line": "Dominus MMXX Wiederkreuz",
+    "vitola": "Piramide",
+    "format": "50 x 158mm",
+    "country": "Kostarika",
+    "wrapper": "Ecuador",
+    "strength": 3,
+    "body": 3,
+    "flavorTags": [
+      "cedar",
+      "zacini",
+      "koza",
+      "kava",
+      "cvjetno",
+      "drvo"
+    ],
+    "profileEstimated": true,
+    "catalogSource": "market",
+    "smokeTimeMin": 61,
+    "priceEUR": null,
+    "priceApprox": false,
+    "availabilityHR": [],
+    "notes": {
+      "hr": "Kostarika, Ecuador pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
+      "en": "Kostarika, Ecuador wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
+    },
+    "markets": [
+      "EU",
+      "WW"
+    ],
+    "vitolas": [
+      {
+        "name": "Piramide",
+        "format": "50 x 158mm",
+        "smokeTimeMin": 61,
+        "priceEUR": null,
+        "url": null,
+        "regionLinks": {
+          "EU": {
+            "shop": "CigarWorld",
+            "url": "https://www.cigarworld.de/en/zigarren/costa-rica/dominus-mmxx-wiederkreuz-montezuma-pyramide-mc2-90015540_41107",
+            "priceEUR": 10.5,
+            "fetchedAt": "2026-07-01"
+          }
+        },
+        "ring": 50,
+        "lengthMM": 158
+      }
+    ],
+    "regionLinks": {
+      "EU": {
+        "shop": "CigarWorld",
+        "url": "https://www.cigarworld.de/en/zigarren/costa-rica/dominus-mmxx-wiederkreuz-montezuma-pyramide-mc2-90015540_41107",
+        "priceEUR": 10.5,
+        "fetchedAt": "2026-07-01"
+      }
+    },
+    "formatEstimated": true,
+    "wrapperOrigin": "Ekvador",
+    "binderOrigin": "Ekvador"
   },
   {
     "id": "cig-padilla-finest-hour-connecticut",
@@ -195435,7 +195733,8 @@
     "formatEstimated": true,
     "priceUrl": "https://www.neptunecigar.com/cigars/patoro--terre-blanche-lancero",
     "binderOrigin": "Dominikanska Republika",
-    "fillerOrigin": "Dominikanska Republika"
+    "fillerOrigin": "Dominikanska Republika",
+    "wrapperOrigin": "Ekvador"
   },
   {
     "id": "cig-patoro-toro",
@@ -196415,6 +196714,69 @@
     "priceUrl": "https://humidor.hr/hr/proizvod/pdr-el-criollito-a-flores-habano-half-corona-3-1-2-x-50/",
     "flavoured": false,
     "formatEstimated": false
+  },
+  {
+    "id": "cig-el-vinyet-5-215-52",
+    "brand": "PDR",
+    "line": "El Vinyet",
+    "vitola": "Robusto",
+    "format": "52 x 127mm",
+    "country": "Dominikanska Republika",
+    "wrapper": "Ecuadorian Habano",
+    "strength": 4,
+    "body": 3,
+    "flavorTags": [
+      "cedar",
+      "zacini",
+      "koza",
+      "kava"
+    ],
+    "profileEstimated": true,
+    "catalogSource": "market",
+    "smokeTimeMin": 60,
+    "priceEUR": 9.9,
+    "priceApprox": false,
+    "availabilityHR": [
+      "The Humidor"
+    ],
+    "notes": {
+      "hr": "Dominikanska Republika, Ecuadorian Habano pokrov — jače snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
+      "en": "Dominican Republic, Ecuadorian Habano wrapper — medium-full in strength, medium-bodied. Notes: cedar, spices, leather."
+    },
+    "markets": [
+      "HR",
+      "WW"
+    ],
+    "vitolas": [
+      {
+        "name": "Robusto",
+        "format": "52 x 127mm",
+        "smokeTimeMin": 60,
+        "priceEUR": 9.9,
+        "url": "https://humidor.hr/hr/proizvod/el-vinyet-robusto-5x52/",
+        "regionLinks": {
+          "HR": {
+            "shop": "The Humidor",
+            "url": "https://humidor.hr/hr/proizvod/el-vinyet-robusto-5x52/",
+            "priceEUR": 9.9,
+            "fetchedAt": "2026-07-01"
+          }
+        },
+        "ring": 52,
+        "lengthMM": 127,
+        "fetchedAt": "2026-07-01"
+      }
+    ],
+    "regionLinks": {
+      "HR": {
+        "shop": "The Humidor",
+        "url": "https://humidor.hr/hr/proizvod/el-vinyet-robusto-5x52/",
+        "priceEUR": 9.9,
+        "fetchedAt": "2026-07-01"
+      }
+    },
+    "strengthFromShop": true,
+    "priceUrl": "https://humidor.hr/hr/proizvod/el-vinyet-robusto-5x52/"
   },
   {
     "id": "cig-pdr-el-vinyet-classico",
@@ -198439,7 +198801,8 @@
       "https://www.neptunecigar.com/cigars/perdomo-craft-series-pilsner-churchill"
     ],
     "priceUrl": "https://www.neptunecigar.com/cigars/perdomo-craft-series-pilsner-robusto",
-    "fillerOrigin": "Nikaragva"
+    "fillerOrigin": "Nikaragva",
+    "binder": "Jalapa"
   },
   {
     "id": "cig-perdomo-craft-series-stout",
@@ -198629,7 +198992,8 @@
     "priceUrl": "https://www.neptunecigar.com/cigars/perdomo-double-aged-12-year-connecticut-robusto",
     "binderOrigin": "Nikaragva",
     "fillerOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "wrapperOrigin": "Ekvador"
   },
   {
     "id": "cig-perdomo-double-aged-vintage-connecticut",
@@ -199149,7 +199513,9 @@
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Kuba",
     "fillerOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Cuban Seed",
+    "filler": "Cuban Seed"
   },
   {
     "id": "cig-perdomo-estate-seleccion-vintage-maduro",
@@ -199274,7 +199640,9 @@
     "vitola": "Aristocrata",
     "wrapperOrigin": "Nikaragva",
     "binderOrigin": "Kuba",
-    "fillerOrigin": "Nikaragva"
+    "fillerOrigin": "Nikaragva",
+    "binder": "Cuban Seed",
+    "filler": "Cuban Seed"
   },
   {
     "id": "cig-perdomo-estate-seleccion-vintage-sun-grown",
@@ -199383,7 +199751,9 @@
     "wrapperOrigin": "Nikaragva",
     "binderOrigin": "Kuba",
     "fillerOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Cuban Seed",
+    "filler": "Cuban Seed"
   },
   {
     "id": "cig-perdomo-estate-seleccion-vintage-sun-grown-aristocrata-7",
@@ -199444,7 +199814,9 @@
     "wrapperOrigin": "Nikaragva",
     "binderOrigin": "Kuba",
     "fillerOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Cuban Seed",
+    "filler": "Cuban Seed"
   },
   {
     "id": "cig-perdomo-esteli",
@@ -200592,7 +200964,9 @@
     "wrapperOrigin": "Nikaragva",
     "binderOrigin": "Kuba",
     "fillerOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Cuban Seed",
+    "filler": "Cuban Seed"
   },
   {
     "id": "cig-perdomo-inmenso-seventy-sun-grown",
@@ -200657,7 +201031,9 @@
     "wrapperOrigin": "Nikaragva",
     "binderOrigin": "Kuba",
     "fillerOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Cuban Seed",
+    "filler": "Cuban Seed"
   },
   {
     "id": "cig-perdomo-legacy-connecticut",
@@ -200903,7 +201279,8 @@
     "strengthFromShop": true,
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Nikaragva",
-    "fillerOrigin": "Nikaragva"
+    "fillerOrigin": "Nikaragva",
+    "binder": "Habano"
   },
   {
     "id": "cig-perdomo-legacy-ecuadorian-connecticut-gran",
@@ -200967,7 +201344,8 @@
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Nikaragva",
     "fillerOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Habano"
   },
   {
     "id": "cig-perdomo-legacy-maduro",
@@ -201210,7 +201588,8 @@
     "strengthFromShop": true,
     "wrapperOrigin": "Nikaragva",
     "binderOrigin": "Nikaragva",
-    "fillerOrigin": "Nikaragva"
+    "fillerOrigin": "Nikaragva",
+    "binder": "Habano"
   },
   {
     "id": "cig-perdomo-legacy-nicaraguan-maduro-gran",
@@ -201272,7 +201651,8 @@
     "wrapperOrigin": "Nikaragva",
     "binderOrigin": "Nikaragva",
     "fillerOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Habano"
   },
   {
     "id": "cig-perdomo-legacy-nicaraguan-shade-grown",
@@ -205088,7 +205468,8 @@
     "wrapperOrigin": "Honduras",
     "binderOrigin": "Honduras",
     "fillerOrigin": "Honduras",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "filler": "Habano"
   },
   {
     "id": "cig-plasencia-year-of-the",
@@ -205549,7 +205930,8 @@
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Dominikanska Republika",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Piloto Cubano"
   },
   {
     "id": "cig-platinum-nova-legacy",
@@ -205613,7 +205995,8 @@
     ],
     "binderOrigin": "Nikaragva",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Esteli"
   },
   {
     "id": "cig-platinum-nova-batch",
@@ -206124,7 +206507,8 @@
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Nikaragva",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Esteli"
   },
   {
     "id": "cig-platinum-nova-series",
@@ -206235,7 +206619,8 @@
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Dominikanska Republika",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Olor"
   },
   {
     "id": "cig-platinum-nova-series-484",
@@ -206315,7 +206700,9 @@
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Kuba",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Piloto Cubano",
+    "filler": "Olor"
   },
   {
     "id": "cig-platinum-nova-series-5-boroughs",
@@ -206378,7 +206765,8 @@
     ],
     "wrapperOrigin": "Meksiko",
     "fillerOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Corojo"
   },
   {
     "id": "cig-platinum-nova-series-champion-football",
@@ -206505,7 +206893,8 @@
     ],
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Kuba",
-    "fillerOrigin": "Dominikanska Republika"
+    "fillerOrigin": "Dominikanska Republika",
+    "binder": "Piloto Cubano"
   },
   {
     "id": "cig-platinum-nova-series-leo",
@@ -206649,7 +207038,8 @@
       "https://www.neptunecigar.com/cigars/platinum-nova-series-trappist-1g"
     ],
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Broadleaf"
   },
   {
     "id": "cig-platinum-nova-toro",
@@ -206712,7 +207102,8 @@
     ],
     "wrapperOrigin": "Meksiko",
     "binderOrigin": "Dominikanska Republika",
-    "fillerOrigin": "Dominikanska Republika"
+    "fillerOrigin": "Dominikanska Republika",
+    "binder": "Piloto Cubano"
   },
   {
     "id": "cig-platinum-nova-torpedo",
@@ -210618,7 +211009,8 @@
     ],
     "wrapperOrigin": "SAD",
     "binderOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "filler": "San Vicente"
   },
   {
     "id": "cig-quesada-vega-magna",
@@ -211833,7 +212225,8 @@
     ],
     "priceUrl": "https://www.neptunecigar.com/cigars/quorum-maduro-corona",
     "wrapperOrigin": "Indonezija",
-    "binderOrigin": "SAD"
+    "binderOrigin": "SAD",
+    "binder": "Connecticut Broadleaf"
   },
   {
     "id": "cig-quorum-robusto",
@@ -219569,7 +219962,8 @@
       "https://www.neptunecigar.com/cigars/rocky-patel-year-of-the-snake-2025-toro"
     ],
     "wrapperOrigin": "Nikaragva",
-    "fillerOrigin": "Honduras"
+    "fillerOrigin": "Honduras",
+    "binder": "Broadleaf"
   },
   {
     "id": "cig-rodrigo-de-jerez-dom-rep",
@@ -220029,7 +220423,9 @@
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Nikaragva",
     "fillerOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Corojo",
+    "filler": "Corojo"
   },
   {
     "id": "cig-rojas-breakfast-tacos-connecticut",
@@ -220852,7 +221248,8 @@
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Meksiko",
     "fillerOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "San Andres"
   },
   {
     "id": "cig-rojas-street-tacos-al-pastor",
@@ -221047,7 +221444,8 @@
     ],
     "priceUrl": "https://www.neptunecigar.com/cigars/rojas-street-tacos-barbacoa-robusto",
     "binderOrigin": "Nikaragva",
-    "fillerOrigin": "Nikaragva"
+    "fillerOrigin": "Nikaragva",
+    "wrapperOrigin": "Ekvador"
   },
   {
     "id": "cig-rojas-street-tacos-carnitas",
@@ -221155,7 +221553,8 @@
     ],
     "priceUrl": "https://www.neptunecigar.com/cigars/rojas-street-tacos-carnitas-robusto-5--50",
     "binderOrigin": "Nikaragva",
-    "fillerOrigin": "Nikaragva"
+    "fillerOrigin": "Nikaragva",
+    "wrapperOrigin": "Ekvador"
   },
   {
     "id": "cig-roma-craft-tobac-cromagnon",
@@ -223248,7 +223647,8 @@
     ],
     "wrapperOrigin": "Meksiko",
     "binderOrigin": "Indonezija",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "filler": "Criollo 98"
   },
   {
     "id": "cig-room101-room-101-connecticut-404c",
@@ -224029,7 +224429,9 @@
     ],
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Kuba",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Piloto Cubano",
+    "filler": "Criollo 98"
   },
   {
     "id": "cig-rough-rider-sweets",
@@ -224112,7 +224514,9 @@
     "vitola": "Connecticut",
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Kuba",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Piloto Cubano",
+    "filler": "Criollo 98"
   },
   {
     "id": "cig-royal-symbols-symbols",
@@ -224228,7 +224632,8 @@
     ],
     "wrapperOrigin": "Brazil",
     "binderOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Habano"
   },
   {
     "id": "cig-saga-blend-no7",
@@ -225327,7 +225732,9 @@
       "https://www.neptunecigar.com/cigars/saint-luis-rey-eiroa-30th-anniversary-toro-6--54"
     ],
     "wrapperOrigin": "Kolumbija",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Corojo",
+    "filler": "Corojo"
   },
   {
     "id": "cig-saint-luis-rey-rothchilde",
@@ -226623,7 +227030,8 @@
     ],
     "priceUrl": "https://www.neptunecigar.com/cigars/san-cristobal-elegancia-pyramid",
     "binderOrigin": "Nikaragva",
-    "fillerOrigin": "Nikaragva"
+    "fillerOrigin": "Nikaragva",
+    "wrapperOrigin": "Ekvador"
   },
   {
     "id": "cig-san-cristobal-fabuloso",
@@ -230384,7 +230792,9 @@
     "priceUrl": "https://www.neptunecigar.com/cigars/southern-draw-cedrus-belicoso-fino",
     "wrapperOrigin": "Indonezija",
     "binderOrigin": "Nikaragva",
-    "fillerOrigin": "Dominikanska Republika"
+    "fillerOrigin": "Dominikanska Republika",
+    "binder": "Habano",
+    "filler": "Piloto Ligero"
   },
   {
     "id": "cig-southern-draw-decennium",
@@ -230508,7 +230918,8 @@
     ],
     "wrapperOrigin": "Meksiko",
     "binderOrigin": "Ekvador",
-    "fillerOrigin": "Honduras"
+    "fillerOrigin": "Honduras",
+    "binder": "Sumatra"
   },
   {
     "id": "cig-southern-draw-firethorn",
@@ -230708,7 +231119,8 @@
     "priceUrl": "https://www.neptunecigar.com/cigars/southern-draw-jacob-s-ladder-brimstone-perfecto",
     "wrapperOrigin": "SAD",
     "binderOrigin": "SAD",
-    "fillerOrigin": "Dominikanska Republika"
+    "fillerOrigin": "Dominikanska Republika",
+    "binder": "Connecticut Broadleaf"
   },
   {
     "id": "cig-southern-draw-jacobs-ladder",
@@ -230847,7 +231259,8 @@
     "strengthFromShop": true,
     "priceUrl": "https://www.neptunecigar.com/cigars/southern-draw-kudzu-toro",
     "wrapperOrigin": "Ekvador",
-    "fillerOrigin": "Nikaragva"
+    "fillerOrigin": "Nikaragva",
+    "binder": "Ometepe"
   },
   {
     "id": "cig-southern-draw-manzanita",
@@ -230909,7 +231322,9 @@
       "https://www.neptunecigar.com/cigars/southern-draw-manzanita-robusto",
       "https://www.neptunecigar.com/cigars/southern-draw-manzanita-gordo"
     ],
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Habano",
+    "filler": "Corojo"
   },
   {
     "id": "cig-southern-draw-morning-glory",
@@ -230976,7 +231391,9 @@
     "wrapperOrigin": "SAD",
     "binderOrigin": "Nikaragva",
     "fillerOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Habano",
+    "filler": "Corojo"
   },
   {
     "id": "cig-southern-draw-quickdraw-connecticut-gorda",
@@ -231182,7 +231599,8 @@
     "priceUrl": "https://www.neptunecigar.com/cigars/southern-draw-rose-of-sharon-toro",
     "wrapperOrigin": "SAD",
     "binderOrigin": "Nikaragva",
-    "fillerOrigin": "Dominikanska Republika"
+    "fillerOrigin": "Dominikanska Republika",
+    "filler": "Ligero"
   },
   {
     "id": "cig-southern-draw-rose-of-sharon-desert-rose-fino",
@@ -231298,7 +231716,8 @@
     "wrapperOrigin": "SAD",
     "binderOrigin": "Nikaragva",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "filler": "Ligero"
   },
   {
     "id": "cig-spartanos-connecticut",
@@ -233629,7 +234048,8 @@
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Honduras",
     "fillerOrigin": "Honduras",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Corojo"
   },
   {
     "id": "cig-tatascan-habano",
@@ -233693,7 +234113,9 @@
       "https://www.neptunecigar.com/cigars/tatascan-habano-gran-churchill",
       "https://www.neptunecigar.com/cigars/tatascan-habano-gordo"
     ],
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Corojo",
+    "filler": "Corojo"
   },
   {
     "id": "cig-tatascan-yellow-series",
@@ -233754,7 +234176,9 @@
       "https://www.neptunecigar.com/cigars/tatascan-yellow-series-toro",
       "https://www.neptunecigar.com/cigars/tatascan-yellow-series-gordo"
     ],
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Corojo",
+    "filler": "Corojo"
   },
   {
     "id": "cig-tatuaje-10th-anniversary",
@@ -237830,7 +238254,8 @@
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Meksiko",
     "fillerOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "San Andres"
   },
   {
     "id": "cig-tatuaje-negociant-monopole-no-3-short",
@@ -237894,7 +238319,8 @@
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Meksiko",
     "fillerOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "San Andres"
   },
   {
     "id": "cig-tatuaje-nuevitas",
@@ -246324,7 +246750,8 @@
       "https://www.neptunecigar.com/cigars/villa-zamorano-churchill-7--48"
     ],
     "wrapperOrigin": "Honduras",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "filler": "Ligero"
   },
   {
     "id": "cig-villa-zamorano-bouquet",
@@ -247506,7 +247933,8 @@
       "https://www.neptunecigar.com/cigars/villiger-1888-nicaragua-coronita"
     ],
     "binderOrigin": "Nikaragva",
-    "fillerOrigin": "Nikaragva"
+    "fillerOrigin": "Nikaragva",
+    "wrapperOrigin": "Ekvador"
   },
   {
     "id": "cig-villiger-1888-dominican-republic",
@@ -247826,7 +248254,8 @@
     "formatEstimated": true,
     "priceUrl": "https://www.neptunecigar.com/cigars/villiger-1888-nicaragua-churchill",
     "binderOrigin": "Nikaragva",
-    "fillerOrigin": "Nikaragva"
+    "fillerOrigin": "Nikaragva",
+    "wrapperOrigin": "Ekvador"
   },
   {
     "id": "cig-villiger-black-mini-sumatra",
@@ -249372,7 +249801,9 @@
       "cedar",
       "zacini",
       "citrus",
-      "slatko"
+      "slatko",
+      "drvo",
+      "kremasto"
     ],
     "profileEstimated": true,
     "catalogSource": "market",
@@ -249979,7 +250410,8 @@
     "vitola": "049",
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Meksiko",
-    "fillerOrigin": "Nikaragva"
+    "fillerOrigin": "Nikaragva",
+    "binder": "San Andres"
   },
   {
     "id": "cig-villiger-miami-2022-laguito-no-1",
@@ -251517,7 +251949,8 @@
       "https://www.neptunecigar.com/cigars/viva-la-vida-5th-anniversary-jester-belicoso"
     ],
     "binderOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "filler": "Criollo 98"
   },
   {
     "id": "cig-viva-la-vida-a-j-fernandez",
@@ -251867,7 +252300,9 @@
     "sourceUrls": [
       "https://www.neptunecigar.com/cigars/viva-la-vida-gran-toro"
     ],
-    "binderOrigin": "Nikaragva"
+    "binderOrigin": "Nikaragva",
+    "binder": "Corojo",
+    "filler": "Criollo 98"
   },
   {
     "id": "cig-viva-la-vida-original",
@@ -252033,7 +252468,9 @@
       "https://www.neptunecigar.com/cigars/viva-la-vida-robusto"
     ],
     "binderOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Corojo",
+    "filler": "Criollo 98"
   },
   {
     "id": "cig-viva-la-vida-toro",
@@ -252095,7 +252532,9 @@
       "https://www.neptunecigar.com/cigars/viva-la-vida-toro"
     ],
     "binderOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Corojo",
+    "filler": "Criollo 98"
   },
   {
     "id": "cig-warlock-short",
@@ -252289,7 +252728,8 @@
     ],
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "filler": "Corojo"
   },
   {
     "id": "cig-warped-companion",
@@ -252608,7 +253048,9 @@
     },
     "sourceUrls": [
       "https://www.neptunecigar.com/cigars/warped-eagles-descent-toro-especial"
-    ]
+    ],
+    "binder": "Corojo",
+    "filler": "Criollo 98"
   },
   {
     "id": "cig-warped-el-oso-10th-anniversary",
@@ -252875,7 +253317,8 @@
     ],
     "vitola": "109",
     "binderOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "filler": "Criollo 98"
   },
   {
     "id": "cig-warped-gran-reserva-1988",
@@ -253394,7 +253837,8 @@
     ],
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "filler": "Corojo"
   },
   {
     "id": "cig-warped-limited-edition-el-oso-blanco",
@@ -253522,7 +253966,8 @@
     "wrapperOrigin": "Nikaragva",
     "binderOrigin": "Nikaragva",
     "fillerOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "filler": "Corojo"
   },
   {
     "id": "cig-warped-maestro-del-tiempo-5205",
@@ -253716,7 +254161,8 @@
     ],
     "wrapperOrigin": "Nikaragva",
     "binderOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "filler": "Corojo"
   },
   {
     "id": "cig-warped-new-day",
@@ -253838,7 +254284,9 @@
       "https://www.neptunecigar.com/cigars/warped-nicotina-belicoso"
     ],
     "wrapperOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Criollo",
+    "filler": "Criollo 98"
   },
   {
     "id": "cig-warped-sarto",
@@ -253963,7 +254411,8 @@
     ],
     "wrapperOrigin": "Nikaragva",
     "binderOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "filler": "Criollo 98"
   },
   {
     "id": "cig-west-tampa-black",
@@ -256075,7 +256524,8 @@
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "SAD",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Connecticut"
   },
   {
     "id": "cig-zino-platinum-crown-series-chubby-especial",
@@ -256139,7 +256589,8 @@
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "SAD",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "binder": "Connecticut"
   },
   {
     "id": "cig-zino-platinum-exclusive-series-miami",
