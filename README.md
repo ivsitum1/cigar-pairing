@@ -243,8 +243,8 @@ Isti model kao rum: puni shop katalog u Excelu + kurirani **MASTER Ocjene** za a
 |----------|----------|-------------|
 | Raw scrape | `app/scripts/output/whisky_catalog_raw.json` | ~1098 |
 | Excel (lokalno, git-ignorirano) | `Whisky_Kolekcija_Checklist.xlsx` | 7 sheetova |
-| App JSON | `app/src/data/whiskies.json` | 278 (MASTER) |
-| Export | `Whisky_Index.xlsx` | 278 |
+| App JSON | `app/src/data/whiskies.json` | 274 (MASTER) |
+| Export | `Whisky_Index.xlsx` | 274 |
 
 **Sheetovi u Excelu:** Katalog allez+ecuga, Svi viskiji (rang), MASTER Ocjene,
 Po tipu (kupnja), Serviranje + Cigare, Kolekcija (plan), Vodič (sažetak).

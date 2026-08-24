@@ -11,6 +11,10 @@ Two things sit outside `app/` and are **not** part of the deployed site:
 
 Note that first OCR use fetches model assets from third-party CDNs (jsDelivr / HuggingFace / ModelScope) — the app is offline-first for its own data, but not for OCR models.
 
+### Cloud Agent environment (`.cursor/environment.json`)
+
+Repository-managed setup for Cursor Cloud Agents: `cd app && npm ci`, plus `pip install Pillow` for the product-image CI gate. A Vite dev terminal starts at `http://localhost:5173/cigar-pairing/`. Smoke path: Pairing → pick a cigar → view drink pairings → **Zabilježi večer** → confirm in Kolekcija diary.
+
 ### Commands (run inside `app/`)
 Standard commands are defined in `app/package.json` and mirrored by `.github/workflows/ci.yml`:
 - Typecheck (lint gate in CI): `npx tsc -b --noEmit`
@@ -73,7 +77,7 @@ A separate `backend` job runs `python -m unittest discover -s tests` in `backend
 ### Non-obvious notes
 - The dev server serves the app under the base path **`/cigar-pairing/`**, not `/`. Open `http://localhost:5173/cigar-pairing/` — the bare root path will not render the app. This base is set in `app/vite.config.ts` to match the GitHub Pages repo name.
 - Node 22 is expected (see CI). The package manager is **npm** (`app/package-lock.json`).
-- Deploy is automatic: push to `master` → GitHub Actions (`deploy.yml`) → GitHub Pages. Do not deploy manually.
+- Deploy is automatic after full CI passes on `master`: push/merge → `ci.yml` (Node + Python gates) → on success, `deploy.yml` (`workflow_run`) force-pushes `app/dist` to `gh-pages`. Manual `workflow_dispatch` on deploy is still available but skips the CI gate.
 - **Never remove a drink or cigar id without an alias.** Collections and diaries live in `localStorage` and key on those ids; a removed id silently orphans the user's marks. Add the successor to `src/data/drinkIdAliases.json` / `cigarIdAliases.json`. `drinkIdRegistry.json` + `src/data/drinkIds.test.ts` enforce this.
 - **A line name is brand → line → vitola; dimensions belong to the vitola.** Shop titles arrive lower-cased with the size glued on (`1502 XO Torpedo 6"1/2 * 52` → line `xo 61 2 52`). `apply-taxonomy.py`'s auto-pass undoes that: P0 re-cases the line, P1 lifts a trailing size into `vitolas[].format`, P2 moves a trailing shape word into the vitola *only* when the dimensions disprove the recorded one. P0 is slug-neutral by design — casing must never mint a new cigar id. `src/data/cigarNomenclature.test.ts` guards the corpus, `scripts/test_taxonomy_lib.py` the rules.
 - **`keepSeparate` in `scripts/data/taxonomy/*.json` outranks `line_merge_decisions.json`.** A merge decision that contradicts it aborts `normalize-vitolas.py` — resolve by editing one of the two, not by suppressing the check.
