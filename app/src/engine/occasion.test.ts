@@ -107,8 +107,9 @@ describe("occasion soft-only (par > vrijeme)", () => {
 
   it("ista baza: jutro favorizira laganije relativno prema večeri", () => {
     const cigar = byId(cigars, "cig-partagas-serie-d");
-    const light = rums.find((d) => d.pairable && d.body === 2)!;
-    const fuller = rums.find((d) => d.pairable && d.body === 4)!;
+    // Fiksni par — .find(body===2/4) lomi se kad se rums.json presloži (PR #208).
+    const light = byId(rums, "rum-clement-vsop-agricole");
+    const fuller = byId(rums, "rum-foursquare-sovereignty");
     const mL = scorePairing(cigar, light, undefined, undefined, "morning").score;
     const mF = scorePairing(cigar, fuller, undefined, undefined, "morning").score;
     const eL = scorePairing(cigar, light, undefined, undefined, "evening").score;
