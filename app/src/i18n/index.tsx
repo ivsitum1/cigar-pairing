@@ -670,6 +670,9 @@ const STRINGS = {
   "shop.filterDrinks": { hr: "Pića", en: "Drinks" },
   "shop.filterShop": { hr: "Trgovina", en: "Shop" },
   "shop.filterReset": { hr: "Poništi filtere", en: "Clear filters" },
+  "shop.filterShow": { hr: "Suzi popis", en: "Narrow list" },
+  "shop.filterHide": { hr: "Sakrij sužavanje", en: "Hide filters" },
+  "shop.filterItems": { hr: "stavke", en: "items" },
   "shop.filterNoHits": {
     hr: "Nijedna stavka ne odgovara odabranim filterima.",
     en: "No item matches the selected filters.",

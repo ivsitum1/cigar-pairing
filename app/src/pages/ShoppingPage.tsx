@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useMemo, useState } from "react";
 import type { Cigar, Drink, DrinkCategory } from "../types";
 import {
   ALL_DRINKS,
@@ -10,6 +10,7 @@ import {
 } from "../data";
 import { useI18n, STYLE_LABELS, type StringKey } from "../i18n";
 import { Chip, SectionTitle } from "../components/ui";
+import { WishlistBuyFilters } from "../components/WishlistBuyFilters";
 import { CigarRow, DrinkRow } from "../components/cards";
 import {
   CigarBrowseSheets,
@@ -27,14 +28,13 @@ import {
   parseCigarItemId,
 } from "../lib/cigarItemId";
 import { drinkNameLoc } from "../lib/drinkName";
-import { cigarShapes, type ShapeFamily } from "../lib/vitolaShape";
+import { cigarShapes } from "../lib/vitolaShape";
 import {
   EMPTY_BUY_FILTERS,
   type BuyFilterable,
   buyTotal,
   countryCounts,
   filterBuyEntries,
-  hasActiveBuyFilters,
   shapeCounts,
   sortBuyEntries,
   strengthCounts,
@@ -85,7 +85,7 @@ export function ShoppingPage({
 }: {
   onPair?: (target: { kind: "cigar"; item: Cigar } | { kind: "drink"; item: Drink }) => void;
 }) {
-  const { t, lx, cn } = useI18n();
+  const { t, lx } = useI18n();
   const market = useMarket();
   const collection = useCollection(); // re-render na promjene kolekcije/liste zelja
   const { stock: humidors } = useHumidors(); // zaliha odlucuje sto je „dopuna"
@@ -107,8 +107,6 @@ export function ShoppingPage({
   const [copied, setCopied] = useState(false);
   const [filters, setFilters] = useState<BuyFilters>(EMPTY_BUY_FILTERS);
   const [sort, setSort] = useState<BuySort>("name");
-  const shopFilterRef = useRef<HTMLDivElement>(null);
-  const shopFilterScrollSkip = useRef(true);
 
   const isOwned = (id: string) => getItemState(id).owned;
   // ☆ uz preporuku = vec je na tvojoj listi zelja (liste su neovisne)
@@ -203,30 +201,6 @@ export function ShoppingPage({
   );
   const wishlistTotal = buyTotal(wishVisible);
   const restockTotal = buyTotal(restockVisible);
-  const filtersActive = hasActiveBuyFilters(filters);
-
-  // nakon filtera lista ispod se skraćuje — chipovi ostanu u središtu viewporta
-  useEffect(() => {
-    if (shopFilterScrollSkip.current) {
-      shopFilterScrollSkip.current = false;
-      return;
-    }
-    const el = shopFilterRef.current;
-    if (!el) return;
-    const id = requestAnimationFrame(() => {
-      el.scrollIntoView({ behavior: "smooth", block: "center" });
-    });
-    return () => cancelAnimationFrame(id);
-  }, [filters]);
-
-  const toggleShop = (shop: string) =>
-    setFilters((f) => ({ ...f, shop: f.shop === shop ? null : shop }));
-  const toggleShape = (shape: ShapeFamily) =>
-    setFilters((f) => ({ ...f, shape: f.shape === shape ? null : shape }));
-  const toggleStrength = (strength: number) =>
-    setFilters((f) => ({ ...f, strength: f.strength === strength ? null : strength }));
-  const toggleCountry = (country: string) =>
-    setFilters((f) => ({ ...f, country: f.country === country ? null : country }));
 
   const shareWishlist = async () => {
     const shareItems = (list: BuyEntry[]) =>
@@ -331,137 +305,19 @@ export function ShoppingPage({
         </p>
       ) : (
         <>
-          {/* filteri iznad popisa — u trgovini se prvo suzi, pa gleda */}
-          <div ref={shopFilterRef} className="space-y-1.5">
-            {hasCigars && hasDrinks && (
-              <div className="flex flex-wrap gap-1.5">
-                <Chip
-                  active={filters.kind === "all"}
-                  onClick={() => setFilters((f) => ({ ...f, kind: "all" }))}
-                >
-                  {t("shop.filterAll")}
-                </Chip>
-                <Chip
-                  active={filters.kind === "cigar"}
-                  onClick={() =>
-                    setFilters((f) => ({
-                      ...f,
-                      kind: f.kind === "cigar" ? "all" : "cigar",
-                    }))
-                  }
-                >
-                  {t("cat.cigars")}
-                </Chip>
-                <Chip
-                  active={filters.kind === "drink"}
-                  onClick={() =>
-                    setFilters((f) => ({
-                      ...f,
-                      kind: f.kind === "drink" ? "all" : "drink",
-                      // format / jačina / zemlja su pitanja o cigarama
-                      shape: f.kind === "drink" ? f.shape : null,
-                      strength: f.kind === "drink" ? f.strength : null,
-                      country: f.kind === "drink" ? f.country : null,
-                    }))
-                  }
-                >
-                  {t("shop.filterDrinks")}
-                </Chip>
-              </div>
-            )}
-
-            {wishlistShops.length > 1 && (
-              <div className="flex flex-wrap gap-1.5">
-                <span className="self-center text-micro uppercase tracking-widest text-dim">
-                  {t("shop.filterShop")}
-                </span>
-                {wishlistShops.map((g) => (
-                  <Chip
-                    key={g.shop}
-                    active={filters.shop === g.shop}
-                    onClick={() => toggleShop(g.shop)}
-                  >
-                    {/* samo broj stavki — zbroj po trgovini stoji ispod popisa,
-                        u traci filtera je bio šum i lomio chipove u dva reda */}
-                    {g.shop}: {g.count}×
-                  </Chip>
-                ))}
-              </div>
-            )}
-
-            {filters.kind !== "drink" && shapes.length > 1 && (
-              <div className="flex flex-wrap gap-1.5">
-                <span className="self-center text-micro uppercase tracking-widest text-dim">
-                  {t("filter.shape")}
-                </span>
-                {shapes.map((g) => (
-                  <Chip
-                    key={g.value}
-                    active={filters.shape === g.value}
-                    onClick={() => toggleShape(g.value)}
-                  >
-                    {t(`shape.${g.value}` as StringKey)}: {g.count}×
-                  </Chip>
-                ))}
-              </div>
-            )}
-
-            {filters.kind !== "drink" && strengths.length > 1 && (
-              <div className="flex flex-wrap gap-1.5">
-                <span className="self-center text-micro uppercase tracking-widest text-dim">
-                  {t("filter.strength")}
-                </span>
-                {strengths.map((g) => (
-                  <Chip
-                    key={g.value}
-                    active={filters.strength === g.value}
-                    onClick={() => toggleStrength(g.value)}
-                  >
-                    {g.value}: {g.count}×
-                  </Chip>
-                ))}
-              </div>
-            )}
-
-            {filters.kind !== "drink" && countries.length > 1 && (
-              <div className="flex flex-wrap gap-1.5">
-                <span className="self-center text-micro uppercase tracking-widest text-dim">
-                  {t("filter.country")}
-                </span>
-                {countries.map((g) => (
-                  <Chip
-                    key={g.value}
-                    active={filters.country === g.value}
-                    onClick={() => toggleCountry(g.value)}
-                  >
-                    {cn(g.value)}: {g.count}×
-                  </Chip>
-                ))}
-              </div>
-            )}
-
-            <div className="flex flex-wrap gap-1.5">
-              <span className="self-center text-micro uppercase tracking-widest text-dim">
-                {t("shop.sort")}
-              </span>
-              {(
-                [
-                  ["name", t("shop.sortName")],
-                  ["priceAsc", t("shop.sortPriceAsc")],
-                  ["priceDesc", t("shop.sortPriceDesc")],
-                ] as [BuySort, string][]
-              ).map(([key, label]) => (
-                <Chip key={key} active={sort === key} onClick={() => setSort(key)}>
-                  {label}
-                </Chip>
-              ))}
-              {filtersActive && (
-                <Chip onClick={() => setFilters(EMPTY_BUY_FILTERS)}>
-                  ✕ {t("shop.filterReset")}
-                </Chip>
-              )}
-            </div>
-          </div>
+          <WishlistBuyFilters
+            filters={filters}
+            sort={sort}
+            onFiltersChange={setFilters}
+            onSortChange={setSort}
+            wishlistShops={wishlistShops}
+            shapes={shapes}
+            strengths={strengths}
+            countries={countries}
+            hasCigars={hasCigars}
+            hasDrinks={hasDrinks}
+            visibleCount={wishVisible.length}
+          />
 
           {visible.length === 0 && (
             <p className="mt-3 rounded-xl border border-dim/20 bg-cedar p-3 text-sm text-dim">
