@@ -96,14 +96,17 @@ def patch_block(block: str, after: dict) -> str:
         )
         if n_url != 1:
             raise SystemExit("priceUrl not replaced")
-    block, n_shop = re.subn(
-        r'"shopHR":\s*"[^"]*"',
-        f'"shopHR": {json.dumps(shop)}',
-        block,
-        count=1,
-    )
-    if n_shop != 1:
-        raise SystemExit("shopHR not replaced")
+    if '"shopHR": null' in block:
+        block = block.replace('"shopHR": null', f'"shopHR": {json.dumps(shop)}', 1)
+    else:
+        block, n_shop = re.subn(
+            r'"shopHR":\s*"[^"]*"',
+            f'"shopHR": {json.dumps(shop)}',
+            block,
+            count=1,
+        )
+        if n_shop != 1:
+            raise SystemExit("shopHR not replaced")
     m = re.search(
         r'(?ms)^(\s*)"priceEUR":\s*\{\s*"min":\s*[^,]+,\s*"max":\s*[^}]+\s*\}',
         block,
@@ -133,14 +136,19 @@ def write_updates(updates: list[dict]) -> None:
             text = text[:start] + patch_block(text[start:end], u["after"]) + text[end:]
         path.write_text(text, encoding="utf-8")
         print(f"  wrote {path.name} ({len(rows)} drinks)")
+
+
+def shop_url_plausible(shop: str | None, url: str | None) -> bool:
     hosts = {
         "tipsy": "tipsy.hr",
         "cugaklik": "cugaklik.hr",
         "miva": "miva.com.hr",
         "roto": "rotodinamic.hr",
         "humidor": "humidor.hr",
+        "allez": "allez.hr",
+        "ecuga": "ecuga.com",
     }
-    h = hosts.get(shop or "")
+    h = hosts.get((shop or "").lower())
     return bool(h and h in (url or "").lower())
 
 

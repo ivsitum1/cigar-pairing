@@ -169,3 +169,54 @@ Otvoreno samo za kasniji urednički dodatak (nije blokada tiska): primarni izvor
 
 - Dulje vinjete u EN/HR gentleman draft — **ne** u ovom prolazu (freeze 2026-07-30).
 - Quiz pitanja u `club.json`.
+
+---
+
+## YouTube drink / lounge dump 2026-08-25
+
+> Ručni linkovi (nisu u `app/scripts/data/youtube` korpusu). Bonton = samo precept / vinjeta; liste boca → Club / katalog, ne paste u rukopis.
+
+### [Tequila — The Final Pour](https://youtu.be/nOoveRwbKqQ) (`nOoveRwbKqQ`)
+
+**Za knjigu (već blizu EN Ch. „smooth” / additivi):**
+- Status boca ≠ tekućina (noćni klub, keramika, celebrity ime).
+- „Smooth” često = glicerin / vanilin / zaslađivač; legalno, bez obveze na etiketi (rupa nakon 2003.).
+- Ne moralizirati o aditivima — reći što se osjeća u čaši (kanon već ima).
+- Vinjeta-kandidat: gost naruči „najskuplju” tequilu da se vidi; domaćin toči skromniji *additive-free* blanco i pita za miris, ne cijenu.
+
+**Katalog / Club (ne bonton precept):** Tequila Matchmaker kao signal transparentnosti (fusnota, ne propovijed).  
+*Waste (autorov stav):* Don Julio 1942, Casamigos Blanco, Patrón Silver, Avión Reserva 44, Clase Azul Reposado, 818 Añejo.  
+*Worth (autorov stav):* Siete Leguas Blanco, Fortaleza Reposado, G4 Blanco, Tequila Ocho Plata (+ još 3 u videu).
+
+### [Cigars Daily LIVE 443](https://www.youtube.com/live/w2K_YUbQHzU) (`w2K_YUbQHzU`)
+
+**Malo za bonton** — AMA / banter / „roast” privatnog lounga.  
+**Club 101 (ne etiketa):** „seeping” / katran na capu — Steve Saka: ustajala voda u žilama lista; ne trpjeti, recut ili ostavi. Jedan cap → oprez s drugim rezom.  
+Ton salona: pitanja publike pokreću večer — blago potvrđuje da je lounge razgovor, ne predavanje.
+
+### [Rum — Rum Verdict](https://youtu.be/jruzBCvtoWg) (`jruzBCvtoWg`)
+
+**Za knjigu:** riječ *smooth* kao marketing (~„vrijedi 100 $ po boci”); iskrenost o slatkoći = kućno pravilo kanala — usklađeno s „smooth” vinjetom.  
+**Katalog (hidden gems, autorov popis):** Don Q Reserva 7 (~$30, suh, charcoal), Ron Abuelo 12, Cihuatán 12 (slađi — reći unaprijed), Dictador 12 (kava/kakao), Barrilito 3 Star (Oloroso, suh) + 5 dalje u videu. Bez Diplomatico / Zacapa / El Dorado na ovoj listi (namjerno).
+
+### [Bourbon — USA Whiskey Verdict](https://youtu.be/2eFtNgsUmw8) (`2eFtNgsUmw8`)
+
+**Za knjigu:** lov na okus, ne mitologiju (anti-Pappy/Blanton’s lista) — jača LE-flex / Instagram-boca vinjetu.  
+**Katalog (autorov countdown, dostupnost > lore):** Green River Full Proof, Frey Ranch (NV, farm-to-glass), Starlight / Huber (IN), Woodinville (WA), Cedar Ridge (IA) + 5 dalje.
+
+**Katalog check 2026-08-25** (`tequilas.json` / `rums.json` / `whiskies.json`):
+
+| Segment | Dodano 2026-08-25 (`profileEstimated`, bez HR `priceUrl`) | Već bilo |
+|---------|----------------------------------------------------------|----------|
+| Tequila „worth” | Siete Leguas Blanco, Fortaleza Reposado, G4 Blanco, Tequila Ocho Plata | — |
+| Tequila „waste” gap | Avión Reserva 44, 818 Añejo | Don Julio / Casamigos / Patrón / Clase Azul |
+| Rum gems | Don Q Reserva 7, Ron del Barrilito 3 Star | Abuelo 12, Cihuatán 12, Dictador 12 |
+| Bourbon gems | Green River Full Proof, Frey Ranch, Starlight, Woodinville, Cedar Ridge | Blanton’s, Buffalo Trace |
+
+Skripta: `app/scripts/add-youtube-gap-drinks-2026-08-25.py` (+ `derive-drink-brands.py`, Benriach override slug).
+
+**HR cijene 2026-08-25:** auto-match nije uhvatio nove ID-jeve (listing ima višak riječi / ABV kao „godinu”). Ručno spojeno: `tq-818-anejo` → allez.hr **139,98 €**. Ostalih 12 još nema pouzdanog HR SKU-a u `drink_shop_listings_raw.json` (Avión samo reposado/cristalino; Don Q bez Reserva 7; worth/bourbon/Barrilito — 0 pogodaka).
+
+**EN draft:** vinjeta *the tall bottle* + mini *The status pour* + proširenje o tequila aditivima uz rum (2026-08-25).
+
+*Zadnje ažuriranje ovog bloka: 2026-08-25.*

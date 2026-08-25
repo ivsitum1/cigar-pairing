@@ -826,7 +826,7 @@ A high alcohol percentage sometimes "holds" a fuller smoke better than a thin si
 
 ### Sweetness and caution
 
-Sweeter profiles sometimes like darker wrappers. Lighter wrappers sometimes like cleaner, drier lines. A declaration of additives in rums — where it exists — is worth more than marketing fog. A gentleman does not moralise about additives as if they were a sin; he speaks clearly when he knows, and stays quiet when he doesn't.
+Sweeter profiles sometimes like darker wrappers. Lighter wrappers sometimes like cleaner, drier lines. A declaration of additives in rums — where it exists — is worth more than marketing fog. The same fog hangs over tequila: colouring, glycerin and flavouring may be legal without a line on the label. A gentleman does not moralise about additives as if they were a sin; he speaks clearly when he knows, and stays quiet when he doesn't. He does not recite apps at the table. He notices when "smooth" arrives too cheaply for the price of the bottle — and he still does not turn the evening into a tribunal.
 
 ### Reading a rum label without theatre
 
@@ -867,6 +867,10 @@ A gentleman does not mock someone else's vocabulary.
 ### Vignette: "smooth"
 
 A guest says: "This rum is really smooth." Someone bristles to correct him. More kindly: "I get vanilla and oak — do you feel that, or does it read more as soft to you?" The conversation stays a conversation.
+
+### Vignette: the tall bottle
+
+A guest reaches for the tall gold tequila because the room knows the name. The host pours a quieter blanco from a plain label instead, and asks what they smell first — grass, pepper, citrus — not what it cost. Status stays on the shelf. The table gets agave. Nobody lectures about additives. The glass does the talking.
 
 ### More on pairing
 
@@ -1115,6 +1119,8 @@ Kindly: "Same name, different history — here's what I usually expect from this
 **Too much perfume.** Wrong: a public remark. Kindly: more air, a shorter format, tomorrow in private if you're close.
 
 **An uneven burn.** Wrong: a lecture. Kindly: "Turn it a little — or here's another." Carry on with the story.
+
+**The status pour.** A guest wants the bottle everyone photographs. Wrong: a sermon on glycerin and celebrity labels. Kindly: pour what you trust; ask what they smell; leave the price war for another night.
 
 ### A wise thought
 
@@ -2017,7 +2023,7 @@ If you remember only this sequence, the lounge won't hate you.
 8. Someone corrects a cut  ->  "shall I show you in private?"
 9. Someone offers a puff  ->  "thanks, I have my own".
 10. Someone squeezes the leaf  ->  "let's ask what's ready".
-11. Someone moralises about additives  ->  "say what you feel in the glass".
+11. Someone moralises about additives, or reaches for the status tequila  ->  "say what you feel in the glass"; pour a quieter blanco and ask for aroma, not price.
 12. Someone warms brandy over the flame  ->  offer a glass without the show.
 13. Someone dips the leaf  ->  "I'll keep mine separate".
 14. Someone is late and expects everyone to wait with a lit cigar  ->  agree in advance.
