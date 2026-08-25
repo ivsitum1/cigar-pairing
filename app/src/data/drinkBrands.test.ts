@@ -116,6 +116,7 @@ describe("marke pića", () => {
       "The Bush Rum",
       "Rum Exchange",
       "Rum Nation",
+      "818 Tequila", // registrirano ime lifestyle marke (Kendall Jenner)
       "Hrvatski lozovača / vinjak (craft)", // generički unos, nije marka
     ]);
     const bad = ALL_DRINK_BRANDS.filter(
