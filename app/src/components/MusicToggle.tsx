@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from "react";
+import { useI18n } from "../i18n";
 
 // Pozadinska glazba — playlist na jednom gumbu. Klik cikliše:
 //   isključeno → track 1 → track 2 → … → isključeno.
-// Izbor se pamti; ako je zadnji put svirala, pokušamo nastaviti na prvu
-// korisničku gestu (preglednici blokiraju autoplay bez interakcije).
+// Ikona = trenutno stanje: precrtana nota = mute; ♪1 / ♪2 = koja melodija svira.
 const BASE = import.meta.env.BASE_URL;
 const TRACKS: { src: string; title: string }[] = [
   { src: `${BASE}music/night-in-venice.mp3`, title: "Night in Venice" },
@@ -13,10 +13,10 @@ const STORAGE_KEY = "cnr.music";
 const VOLUME = 0.32;
 
 export function MusicToggle() {
+  const { lang } = useI18n();
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [idx, setIdx] = useState(-1); // -1 = isključeno
 
-  // jednom napravi <audio> element (izvan React stabla, da preživi rerender)
   if (audioRef.current === null && typeof Audio !== "undefined") {
     const el = new Audio();
     el.loop = true;
@@ -44,8 +44,6 @@ export function MusicToggle() {
     localStorage.setItem(STORAGE_KEY, "off");
   };
 
-  // ako je zadnji put svirala neka pjesma, pokušaj nastaviti — ako preglednik
-  // blokira autoplay, čekaj prvu gestu pa tek onda kreni
   useEffect(() => {
     const saved = localStorage.getItem(STORAGE_KEY);
     const i = saved != null && saved !== "off" ? Number(saved) : -1;
@@ -83,21 +81,36 @@ export function MusicToggle() {
   const on = idx >= 0;
   const hasNext = on && idx < TRACKS.length - 1;
   const title = on
-    ? `Glazba: ${TRACKS[idx].title} — klikni za ${hasNext ? "sljedeću podlogu" : "isključivanje"}`
-    : "Glazba isključena — klikni za uključivanje";
+    ? lang === "en"
+      ? `Music: ${TRACKS[idx].title} — click for ${hasNext ? "next track" : "mute"}`
+      : `Glazba: ${TRACKS[idx].title} — klikni za ${hasNext ? "sljedeću podlogu" : "isključivanje"}`
+    : lang === "en"
+      ? "Muted — click to play"
+      : "Glazba isključena — klikni za uključivanje";
 
   return (
     <button
       onClick={cycle}
       className="flex h-8 w-8 items-center justify-center rounded-full border border-zlato/40 text-zlato hover:bg-zlato/10"
-      aria-label={on ? "Promijeni ili isključi glazbu" : "Uključi glazbu"}
+      aria-label={
+        on
+          ? lang === "en"
+            ? `Playing track ${idx + 1}`
+            : `Svira melodija ${idx + 1}`
+          : lang === "en"
+            ? "Muted"
+            : "Glazba isključena"
+      }
       aria-pressed={on}
       title={title}
     >
-      {/* nota = uključi; prekrižena nota = isključeno/promjena */}
-      <span className="relative inline-flex text-base leading-none">
+      <span className="relative inline-flex items-baseline text-base leading-none">
         ♪
-        {on && (
+        {on ? (
+          <span className="ml-0.5 font-display text-[10px] font-semibold tabular-nums">
+            {idx + 1}
+          </span>
+        ) : (
           <span
             aria-hidden
             className="pointer-events-none absolute left-1/2 top-1/2 h-[1.5px] w-[130%] -translate-x-1/2 -translate-y-1/2 rotate-45 rounded-full bg-current"

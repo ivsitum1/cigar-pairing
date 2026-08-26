@@ -2,8 +2,8 @@
 // linkove i za detaljan popis trgovina (Katalog → Trgovine).
 //
 // HR trgovine imaju `productHost` pa app prepoznaje izravne linkove na proizvod
-// iz kataloga (humidor.hr / havana-cigar-shop.com). EU/USA: `regionLinks` ili
-// `productHost` kad postoji scrapani product URL; inače pretraga po nazivu.
+// iz kataloga (humidor.hr / havana-cigar-shop.com). EU/USA: samo scrapani
+// `regionLinks` / product URL — bez izmišljenog search gumba.
 import type { Region } from "../types";
 
 export interface Shop {
@@ -149,3 +149,19 @@ export const REGIONS: Region[] = ["HR", "EU", "USA"];
 
 export const shopsForRegion = (r: Region): Shop[] =>
   SHOPS.filter((s) => s.region === r);
+
+/**
+ * Listing / brand pages — not a single product SKU.
+ * Holt's /all-cigar-brands/*.html, Havana /product-brand/*, Famous /brand(s|group)/,
+ * Neptune /cigar/ (line index; products live under /cigars/).
+ */
+export function isLineListingUrl(url: string | null | undefined): boolean {
+  if (!url) return false;
+  return (
+    /holts\.com\/cigars\/all-cigar-brands\/[^/?#]+\.html/i.test(url) ||
+    /\/(?:en\/)?product-brand\//i.test(url) ||
+    /famous-smoke\.com\/brands?\//i.test(url) ||
+    /famous-smoke\.com\/brandgroup\//i.test(url) ||
+    /neptunecigar\.com\/cigar\//i.test(url)
+  );
+}

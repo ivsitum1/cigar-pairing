@@ -846,7 +846,9 @@ function CigarBuyLinks({ cigar }: { cigar: Cigar }) {
                             ? t("shops.direct")
                             : l.kind === "line"
                               ? t("shops.linePage")
-                              : t("shops.search")}
+                              : l.kind === "walkin"
+                                ? t("shops.walkIn")
+                                : t("shops.search")}
                         </span>
                       )}{" "}
                       ↗

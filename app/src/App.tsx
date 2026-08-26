@@ -66,9 +66,10 @@ export default function App() {
           <button
             onClick={() => setLang(lang === "hr" ? "en" : "hr")}
             className="rounded-full border border-zlato/40 px-3 py-1.5 font-display text-xs uppercase tracking-widest text-zlato hover:bg-zlato/10"
-            aria-label="Language"
+            aria-label={lang === "en" ? "English" : "Hrvatski"}
+            title={lang === "en" ? "English — click for Croatian" : "Hrvatski — klikni za English"}
           >
-            {lang === "hr" ? "EN" : "HR"}
+            {lang === "en" ? "EN" : "HR"}
           </button>
         </div>
       </header>

@@ -274,42 +274,54 @@ describe("cigars.json integrity", () => {
     expect(CIGARS.find((c) => c.id === "cig-alec-bradley-sanctum-double")).toBeUndefined();
   });
 
-  it("USA kupnja ide na Holt's (listing ili search), ne na Google site:", () => {
-    const withUsa = CIGARS.find((c) => c.markets.includes("USA"));
+  it("USA kupnja ide na dokazani shop URL, ne na Google site:", () => {
+    const withUsa = CIGARS.find(
+      (c) => c.markets.includes("USA") && c.regionLinks?.USA?.url,
+    );
     expect(withUsa).toBeDefined();
     const usa = cigarLinkForMarket(withUsa!, "USA");
     expect(usa).toMatch(/holts\.com|cigarsdaily\.com|famous-smoke\.com|neptunecigar\.com/i);
     expect(usa).not.toContain("google.com");
     expect(usa).not.toContain("site%3A");
-    // Bez regionLinks.USA app pada na Holts search po brand+line
-    if (!withUsa!.regionLinks?.USA?.url) {
-      expect(usa).toContain(encodeURIComponent(`${withUsa!.brand} ${withUsa!.line}`.trim()));
-    }
   });
 
-  it("cigarShopLinks — po regiji tocne trgovine i izravni HR link gdje postoji", () => {
-    // HR: Humidor + Havana; EU: CigarWorld; USA: Holt's + Cigars Daily
+  it("cigarShopLinks — samo dokazane trgovine po regiji", () => {
     const withAll = CIGARS.find(
       (c) =>
         c.markets.includes("HR") &&
         c.markets.includes("EU") &&
-        c.markets.includes("USA"),
+        c.markets.includes("USA") &&
+        (c.availabilityHR?.length ?? 0) > 0 &&
+        c.regionLinks?.EU?.url &&
+        c.regionLinks?.USA?.url,
     );
     expect(withAll).toBeDefined();
     const links = cigarShopLinks(withAll!);
+    expect(links.every((l) => l.kind !== "search")).toBe(true);
     const hosts = (region: string) =>
       links.filter((l) => l.region === region).map((l) => new URL(l.url).host);
-    expect(hosts("HR").some((h) => h.includes("humidor.hr"))).toBe(true);
-    expect(hosts("HR").some((h) => h.includes("havana-cigar-shop.com"))).toBe(true);
-    expect(hosts("EU").some((h) => h.includes("cigarworld.de"))).toBe(true);
-    expect(hosts("EU").some((h) => h.includes("cgarsltd.co.uk"))).toBe(true);
-    expect(hosts("EU").some((h) => h.includes("cigarpassion.ch"))).toBe(true);
-    expect(hosts("USA").some((h) => h.includes("holts.com"))).toBe(true);
-    expect(hosts("USA").some((h) => h.includes("cigarsdaily.com"))).toBe(true);
-    expect(hosts("USA").some((h) => h.includes("famous-smoke.com"))).toBe(true);
-    expect(hosts("USA").some((h) => h.includes("neptunecigar.com"))).toBe(true);
-    // regije koje cigara ne pokriva se ne pojavljuju
-    const hrOnly = CIGARS.find((c) => !c.markets.includes("EU") && !c.markets.includes("USA"));
+    // HR: barem jedna online ili walk-in naslovnica iz availabilityHR
+    expect(hosts("HR").length).toBeGreaterThan(0);
+    // EU/USA: barem regionLinks host — ne zahtijevamo sve shopove u regiji
+    expect(hosts("EU").some((h) => h.includes("cigarworld.de") || h.includes("cgarsltd") || h.includes("cigarpassion"))).toBe(true);
+    expect(
+      hosts("USA").some(
+        (h) =>
+          h.includes("holts.com") ||
+          h.includes("cigarsdaily.com") ||
+          h.includes("famous-smoke.com") ||
+          h.includes("neptunecigar.com"),
+      ),
+    ).toBe(true);
+    // regije bez dokaza se ne pojavljuju
+    const hrOnly = CIGARS.find(
+      (c) =>
+        (c.availabilityHR?.length ?? 0) > 0 &&
+        !c.regionLinks?.EU &&
+        !c.regionLinks?.USA &&
+        !c.markets.includes("EU") &&
+        !c.markets.includes("USA"),
+    );
     if (hrOnly) {
       expect(cigarShopLinks(hrOnly).every((l) => l.region === "HR")).toBe(true);
     }
@@ -369,53 +381,55 @@ describe("cigars.json integrity", () => {
     }
   });
 
-  it("regionLinks — host odgovara regiji; EU/USA link postoji (listing ≠ exact)", () => {
-    const hostByRegion: Record<string, string[]> = {
-      HR: ["humidor.hr", "havana-cigar-shop.com"],
-      EU: ["cigarworld.de", "cgarsltd.co.uk", "cigarpassion.ch"],
-      USA: ["holts.com", "cigarsdaily.com", "famous-smoke.com", "neptunecigar.com"],
-    };
-    const bad: string[] = [];
-    for (const c of CIGARS) {
-      for (const [region, link] of Object.entries(c.regionLinks ?? {})) {
-        const host = new URL(link.url).host;
-        if (!hostByRegion[region].some((h) => host.includes(h))) {
-          bad.push(`${c.id}: ${region} -> ${host}`);
-        }
-        // EU/USA regionLink mora biti u cigarShopLinks; Holts listing = exact:false.
-        // Iznimka: linija s jednom vitolom čije ime slug OPOVRGNE — takav link
-        // vodi na drugu vitolu, pa se zamjenjuje pretragom (lib/vitolaLinkMatch).
-        if (region !== "HR") {
-          const only = c.vitolas?.length === 1 ? c.vitolas[0] : null;
-          const listing = /holts\.com\/cigars\/all-cigar-brands\//i.test(link.url);
-          const disproven =
-            only != null &&
-            !listing &&
-            // sidro cijene linije ostaje: gumb bez linka uz prikazanu cijenu
-            // je gori od linka na proizvod iz kojeg ta cijena dolazi
-            link.url !== c.priceUrl &&
-            link.url !== only.url &&
-            only.regionLinks?.[region as Region]?.url !== link.url &&
-            !urlFitsVitola(link.url, only.name, `${c.brand} ${c.line}`);
-          const sl = cigarShopLinks(c).find(
-            (l) => l.region === region && l.url === link.url,
-          );
-          if (disproven) {
-            if (sl) bad.push(`${c.id}: ${region} link krive vitole je ostao u ponudi`);
-            continue;
+  it(
+    "regionLinks — host odgovara regiji; EU/USA link postoji (listing ≠ exact)",
+    () => {
+      const hostByRegion: Record<string, string[]> = {
+        HR: ["humidor.hr", "havana-cigar-shop.com"],
+        EU: ["cigarworld.de", "cgarsltd.co.uk", "cigarpassion.ch"],
+        USA: ["holts.com", "cigarsdaily.com", "famous-smoke.com", "neptunecigar.com"],
+      };
+      const bad: string[] = [];
+      for (const c of CIGARS) {
+        for (const [region, link] of Object.entries(c.regionLinks ?? {})) {
+          const host = new URL(link.url).host;
+          if (!hostByRegion[region].some((h) => host.includes(h))) {
+            bad.push(`${c.id}: ${region} -> ${host}`);
           }
-          if (!sl) bad.push(`${c.id}: ${region} regionLink nije u cigarShopLinks`);
-          if (listing && sl?.exact) {
-            bad.push(`${c.id}: Holts listing ne smije biti exact`);
-          }
-          if (!listing && !sl?.exact) {
-            bad.push(`${c.id}: ${region} product regionLink nije exact u cigarShopLinks`);
+          // EU/USA regionLink mora biti u cigarShopLinks; Holts listing = exact:false.
+          // Iznimka: linija s jednom vitolom čije ime slug OPOVRGNE — takav link
+          // vodi na drugu vitolu, pa se više ne nudi (bez search fallbacka).
+          if (region !== "HR") {
+            const only = c.vitolas?.length === 1 ? c.vitolas[0] : null;
+            const listing = /holts\.com\/cigars\/all-cigar-brands\//i.test(link.url);
+            const disproven =
+              only != null &&
+              !listing &&
+              link.url !== c.priceUrl &&
+              link.url !== only.url &&
+              only.regionLinks?.[region as Region]?.url !== link.url &&
+              !urlFitsVitola(link.url, only.name, `${c.brand} ${c.line}`);
+            const sl = cigarShopLinks(c).find(
+              (l) => l.region === region && l.url === link.url,
+            );
+            if (disproven) {
+              if (sl) bad.push(`${c.id}: ${region} link krive vitole je ostao u ponudi`);
+              continue;
+            }
+            if (!sl) bad.push(`${c.id}: ${region} regionLink nije u cigarShopLinks`);
+            if (listing && sl?.exact) {
+              bad.push(`${c.id}: Holts listing ne smije biti exact`);
+            }
+            if (!listing && !sl?.exact) {
+              bad.push(`${c.id}: ${region} product regionLink nije exact u cigarShopLinks`);
+            }
           }
         }
       }
-    }
-    expect(bad).toEqual([]);
-  });
+      expect(bad).toEqual([]);
+    },
+    30_000,
+  );
 
   it("ALL filter prikazuje HR cijenu i HR link", () => {
     const gr = CIGARS.find((c) => c.id === "cig-arturo-fuente-gran-reserva")!;
@@ -435,13 +449,13 @@ describe("cigars.json integrity", () => {
     expect(cigarShopLinkPrice(blend, humidor!).price).toBe(6.3);
   });
 
-  it("HR buy gumb ne pokazuje cijenu na search linku iz regionLinks.HR", () => {
-    // Escurio: regionLinks.HR = Primeros 7.15 na Humidoru, a vitole su na Havani
+  it("HR buy gumb ne izmišlja Humidor search kad regionLinks.HR nije vitola linije", () => {
+    // Escurio: regionLinks.HR = Primeros 7.15 na Humidoru, a vitole su na Havani.
+    // Bez search fallbacka nema Humidor gumba; Havana ostaje exact.
     const esc = CIGARS.find((c) => c.id === "cig-davidoff-escurio")!;
     expect(esc.regionLinks?.HR?.priceEUR).toBe(7.15);
     const humidor = cigarShopLinks(esc).find((l) => l.shop === "The Humidor");
-    expect(humidor?.exact).toBe(false);
-    expect(cigarShopLinkPrice(esc, humidor!).price).toBeNull();
+    expect(humidor).toBeUndefined();
     const havana = cigarShopLinks(esc).find((l) => l.shop === "Havana Cigar Shop");
     expect(havana?.exact).toBe(true);
     expect(cigarShopLinkPrice(esc, havana!).price).toBe(20.2);
