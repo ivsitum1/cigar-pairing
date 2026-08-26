@@ -61,7 +61,7 @@ describe("Tobacco Petica (Branimir centar)", () => {
     expect(byName.Gigante?.priceEUR).toBe(6.2);
   });
 
-  it("ducan bez kataloga ne dobiva link po proizvodu", () => {
+  it("ducan bez kataloga dobiva walk-in link na naslovnicu, ne search", () => {
     for (const id of [
       "cig-cao-bones",
       "cig-don-tomas-bundle",
@@ -69,8 +69,12 @@ describe("Tobacco Petica (Branimir centar)", () => {
       "cig-la-estrella-polar",
       "cig-oliva-serie-g",
     ]) {
-      const shops = cigarShopLinks(byId(id)).map((l) => l.shop);
-      expect(shops, id).not.toContain(TOBACCO_PETICA);
+      const links = cigarShopLinks(byId(id));
+      const petica = links.find((l) => l.shop === TOBACCO_PETICA);
+      expect(petica, id).toBeDefined();
+      expect(petica!.kind).toBe("walkin");
+      expect(petica!.url).toContain("branimir.hr");
+      expect(links.every((l) => l.kind !== "search"), id).toBe(true);
     }
   });
 });
@@ -114,12 +118,17 @@ describe("Aficionado (Zagreb)", () => {
     expect(shop?.search("cohiba")).toBe(shop?.home);
   });
 
-  it("ne dodaje link po proizvodu nijednoj HR cigari", () => {
-    const hr = cigars.filter((c) => c.markets.includes("HR")).slice(0, 40);
+  it("Aficionado walk-in gumb samo kad je ime u availabilityHR", () => {
+    const hr = cigars.filter((c) => c.markets.includes("HR")).slice(0, 80);
     expect(hr.length).toBeGreaterThan(0);
     for (const c of hr) {
-      const urls = cigarShopLinks(c).map((l) => l.url);
-      expect(urls.some((u) => u.includes("aficionado.hr")), c.id).toBe(false);
+      const link = cigarShopLinks(c).find((l) => l.shop === "Aficionado");
+      if ((c.availabilityHR ?? []).includes("Aficionado")) {
+        expect(link?.kind, c.id).toBe("walkin");
+        expect(link?.url).toBe("https://www.aficionado.hr/");
+      } else {
+        expect(link, c.id).toBeUndefined();
+      }
     }
   });
 });
@@ -136,12 +145,28 @@ describe("EU UK / Švicarska referentne trgovine", () => {
     expect(ch?.home).toContain("cigarpassion.ch");
   });
 
-  it("EU cigara dobiva search linkove na C.Gars i La Couronne", () => {
-    const eu = cigars.find((c) => c.markets.includes("EU"));
+  it("EU cigara dobiva samo dokazane shop gumbe (bez search fallbacka)", () => {
+    const eu = cigars.find((c) => c.markets.includes("EU") && c.regionLinks?.EU?.url);
     expect(eu).toBeDefined();
-    const shops = cigarShopLinks(eu!).filter((l) => l.region === "EU").map((l) => l.shop);
-    expect(shops).toContain("CigarWorld");
-    expect(shops).toContain("C.Gars Ltd");
-    expect(shops).toContain("La Couronne");
+    const links = cigarShopLinks(eu!).filter((l) => l.region === "EU");
+    expect(links.length).toBeGreaterThan(0);
+    expect(links.every((l) => l.kind === "product" || l.kind === "line")).toBe(true);
+    expect(links.some((l) => l.shop === "CigarWorld" || l.url.includes("cigarworld"))).toBe(
+      true,
+    );
+    // Bez product URL-a na C.Gars / La Couronne — nema gumbi za njih
+    const onlyCw = cigars.find(
+      (c) =>
+        c.regionLinks?.EU?.url?.includes("cigarworld.de") &&
+        !JSON.stringify(c).includes("cgarsltd") &&
+        !JSON.stringify(c).includes("cigarpassion"),
+    );
+    if (onlyCw) {
+      const shops = cigarShopLinks(onlyCw)
+        .filter((l) => l.region === "EU")
+        .map((l) => l.shop);
+      expect(shops).not.toContain("C.Gars Ltd");
+      expect(shops).not.toContain("La Couronne");
+    }
   });
 });

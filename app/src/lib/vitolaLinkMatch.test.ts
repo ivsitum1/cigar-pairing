@@ -83,13 +83,18 @@ describe("AJ Fernandez — vitola više ne nasljeđuje link druge vitole", () =>
     }
   });
 
-  it("CigarWorld gumb postaje pretraga koja nosi ime odabrane vitole", () => {
+  it("CigarWorld gumb ne nudi search kad link linije nije ta vitola", () => {
     const robusto = uniqueVitolas(bellasArtes).find((v) => v.name === "Maduro Robusto")!;
     const applied = applyVitola(bellasArtes, robusto);
-    const eu = cigarShopLinks(applied).find((l) => l.shop === "CigarWorld")!;
-    expect(eu.url).not.toBe(CW_GORDO);
-    expect(eu.exact).toBe(false);
-    expect(decodeURIComponent(eu.url)).toContain("Maduro Robusto");
+    const eu = cigarShopLinks(applied).find((l) => l.shop === "CigarWorld");
+    // Bez search fallbacka: ili nema gumba, ili product URL te vitole — nikad Gordo ni search
+    if (eu) {
+      expect(eu.url).not.toBe(CW_GORDO);
+      expect(eu.kind).not.toBe("search");
+      expect(eu.exact).toBe(true);
+    } else {
+      expect(eu).toBeUndefined();
+    }
   });
 
   it("Neptune bira proizvod baš te vitole iz sourceUrls linije", () => {

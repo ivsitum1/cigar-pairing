@@ -1,5 +1,14 @@
 import type { Cigar, Drink, DrinkCategory, Region, RegionFilter, Vitola } from "../types";
-import { shopsForRegion, REGIONS } from "./shops";
+import { shopsForRegion, REGIONS, isLineListingUrl } from "./shops";
+import { cigarAvailableInRegion, cigarCatalogProof } from "../lib/cigarAvailability";
+
+export { isLineListingUrl } from "./shops";
+export {
+  cigarAvailableInRegion,
+  cigarCatalogProof,
+  cigarShelfStatus,
+} from "../lib/cigarAvailability";
+export type { CatalogProof, ShelfStatus } from "../lib/cigarAvailability";
 import rums from "./rums.json";
 import whiskies from "./whiskies.json";
 import brandies from "./brandies.json";
@@ -514,15 +523,16 @@ export function drinkBrandFromSlug(slug: string): string | undefined {
   return DRINK_BRAND_BY_SLUG.get(slug);
 }
 
-// Je li cigara dostupna u odabranoj regiji. "ALL" = bez filtera (sve).
+// Je li cigara dostupna u odabranoj regiji — dokaz u trgovini, ne samo markets.
+// "ALL" = bez filtera (sve).
 export const cigarInRegion = (c: Cigar, f: RegionFilter): boolean =>
-  f === "ALL" || c.markets.includes(f);
+  cigarAvailableInRegion(c, f);
 
-// Broj cigara dostupnih po regiji — za detaljan popis trgovina.
+// Broj cigara s dokazom po regiji — za detaljan popis trgovina.
 export const cigarCountByRegion: Record<Region, number> = {
-  HR: CIGARS.filter((c) => c.markets.includes("HR")).length,
-  EU: CIGARS.filter((c) => c.markets.includes("EU")).length,
-  USA: CIGARS.filter((c) => c.markets.includes("USA")).length,
+  HR: CIGARS.filter((c) => cigarAvailableInRegion(c, "HR")).length,
+  EU: CIGARS.filter((c) => cigarAvailableInRegion(c, "EU")).length,
+  USA: CIGARS.filter((c) => cigarAvailableInRegion(c, "USA")).length,
 };
 
 // Izravan link na proizvod za dani host — samo URL koji odgovara prikazanoj
@@ -568,33 +578,14 @@ export interface CigarShopLink {
   region: Region;
   shop: string;
   url: string;
-  exact: boolean; // true = izravan link na proizvod; false = pretraga / listing linije
+  exact: boolean; // true = izravan link na proizvod; false = listing / walk-in home
   /**
    * Što se zapravo otvara: stranica proizvoda, stranica cijele LINIJE (Holt's
-   * i sl. — ista je za svaku vitolu, pa se tako i označava) ili pretraga.
+   * i sl.), naslovnica walk-in dućana, ili (rijetko) pretraga.
    */
-  kind: "product" | "line" | "search";
+  kind: "product" | "line" | "walkin" | "search";
 }
 
-/**
- * Listing / brand pages — not a single product SKU.
- * Holt's /all-cigar-brands/*.html, Havana /product-brand/*, Famous /brand(s|group)/,
- * Neptune /cigar/ (line index; products live under /cigars/).
- */
-export function isLineListingUrl(url: string | null | undefined): boolean {
-  if (!url) return false;
-  return (
-    /holts\.com\/cigars\/all-cigar-brands\/[^/?#]+\.html/i.test(url) ||
-    /\/(?:en\/)?product-brand\//i.test(url) ||
-    /famous-smoke\.com\/brands?\//i.test(url) ||
-    /famous-smoke\.com\/brandgroup\//i.test(url) ||
-    /neptunecigar\.com\/cigar\//i.test(url)
-  );
-}
-
-// Linkovi na trgovine za sve regije u kojima je cigara dostupna. HR koristi
-// izravan link na proizvod gdje postoji (humidor/havana), inače pretragu;
-// EU/USA: scrapani regionLinks kad postoje (listing = exact:false), inače search.
 /**
  * Upit za pretragu u trgovini. Kad je u prikazu jedna konkretna vitola, ime
  * vitole ulazi u upit — inače svaka vitola linije šalje isti upit i korisnik
@@ -628,39 +619,107 @@ function regionLinkForShownVitola(c: Cigar, region: Region) {
   return urlFitsVitola(rl.url, v.name, `${c.brand} ${c.line}`) ? rl : undefined;
 }
 
+/**
+ * Linkovi na trgovine gdje imamo dokaz da cigara postoji u katalogu.
+ * Ne izmišlja search gumbe za shopove bez product/line URL-a.
+ */
 export function cigarShopLinks(c: Cigar): CigarShopLink[] {
-  const q = encodeURIComponent(cigarSearchQuery(c));
   const out: CigarShopLink[] = [];
   for (const region of REGIONS) {
-    if (!c.markets.includes(region)) continue;
-    // scrapani izravan link na proizvod za EU/USA (HR ostaje na vlastitim
-    // product linkovima iz vitola/priceUrl kao izvoru istine)
-    const rl = region === "HR" ? undefined : regionLinkForShownVitola(c, region);
-    let usedShop: string | null = null;
-    if (rl?.url) {
-      const listing = isLineListingUrl(rl.url);
-      out.push({
-        region,
-        shop: rl.shop,
-        url: rl.url,
-        exact: !listing,
-        kind: listing ? "line" : "product",
-      });
-      usedShop = rl.shop;
+    if (cigarCatalogProof(c, region) === "none") continue;
+
+    const usedShops = new Set<string>();
+    const push = (link: CigarShopLink) => {
+      if (usedShops.has(link.shop)) return;
+      usedShops.add(link.shop);
+      out.push(link);
+    };
+
+    // EU/USA: scrapani regionLinks (product ili line listing)
+    if (region !== "HR") {
+      const rl = regionLinkForShownVitola(c, region);
+      if (rl?.url) {
+        const listing = isLineListingUrl(rl.url);
+        push({
+          region,
+          shop: rl.shop,
+          url: rl.url,
+          exact: !listing,
+          kind: listing ? "line" : "product",
+        });
+      }
     }
+
     for (const shop of shopsForRegion(region)) {
-      if (shop.name === usedShop) continue; // vec dodan kao izravan link
-      // fizicki ducan bez kataloga: nema smisla nuditi "pretragu" po proizvodu —
-      // dostupnost se deklarira preko `availabilityHR`
-      if (shop.walkIn) continue;
-      const exact = shop.productHost ? exactProductUrl(c, shop.productHost, region) : null;
-      const listing = exact != null && isLineListingUrl(exact);
-      out.push({
+      if (usedShops.has(shop.name)) continue;
+
+      if (region === "HR") {
+        const named = (c.availabilityHR ?? []).includes(shop.name);
+        if (shop.walkIn) {
+          if (named) {
+            push({
+              region,
+              shop: shop.name,
+              url: shop.home,
+              exact: false,
+              kind: "walkin",
+            });
+          }
+          continue;
+        }
+        const exact = shop.productHost
+          ? exactProductUrl(c, shop.productHost, region)
+          : null;
+        if (exact) {
+          const listing = isLineListingUrl(exact);
+          push({
+            region,
+            shop: shop.name,
+            url: exact,
+            exact: !listing,
+            kind: listing ? "line" : "product",
+          });
+        }
+        // Online u availabilityHR bez product URL-a: bez gumba (dokaz ostaje za filter;
+        // ime trgovine je već u DetailSheet retku availabilityHR). Ne izmišljamo search.
+        continue;
+      }
+
+      // EU/USA: samo product/line URL — nikad search fallback
+      const host = shop.productHost;
+      const exact = host ? exactProductUrl(c, host, region) : null;
+      // Holt's: regionLinks URL na holts.com (nema productHost)
+      if (!exact && /holt/i.test(shop.name)) {
+        const rl = regionLinkForShownVitola(c, region);
+        if (rl?.url && /holts\.com/i.test(rl.url) && rl.shop === shop.name) {
+          // already pushed above
+          continue;
+        }
+        // vitola regionLinks may still match
+        for (const v of c.vitolas ?? []) {
+          const vrl = v.regionLinks?.[region];
+          if (vrl?.url && /holts\.com/i.test(vrl.url)) {
+            const listing = isLineListingUrl(vrl.url);
+            push({
+              region,
+              shop: vrl.shop || shop.name,
+              url: vrl.url,
+              exact: !listing,
+              kind: listing ? "line" : "product",
+            });
+            break;
+          }
+        }
+        continue;
+      }
+      if (!exact) continue;
+      const listing = isLineListingUrl(exact);
+      push({
         region,
         shop: shop.name,
-        url: exact ?? shop.search(q),
-        exact: exact != null && !listing,
-        kind: exact == null ? "search" : listing ? "line" : "product",
+        url: exact,
+        exact: !listing,
+        kind: listing ? "line" : "product",
       });
     }
   }

@@ -13,6 +13,7 @@
 //     nego se bira namjerno siguran profil (SAFE_DEFAULT_ANSWERS).
 import type { Cigar, Drink, DrinkCategory, LocalizedText, Region, RegionFilter } from "../types";
 import { cigarLinePrice } from "./cigarPrice";
+import { cigarAvailableInRegion } from "./cigarAvailability";
 import { pairDrinksForCigar } from "../engine/pairing";
 import { pairingBlurb } from "../engine/pairingExplain";
 import { cigarShapes, type ShapeFamily } from "./vitolaShape";
@@ -309,7 +310,7 @@ export function cigarGiftEligible(c: Cigar, region: Region): boolean {
   const scored = c.qualityScore;
   if (scored != null && scored < MIN_GIFT_QUALITY) return false;
   if (region === "HR") return c.availabilityHR.length > 0;
-  return c.markets.includes(region);
+  return cigarAvailableInRegion(c, region);
 }
 
 export function drinkGiftEligible(d: Drink, region: Region): boolean {

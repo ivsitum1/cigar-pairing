@@ -75,7 +75,7 @@ export function cigarLinkStock(c: Cigar, url: string): StockFields | null {
 export function cigarLinkStockView(
   c: Cigar,
   url: string,
-  kind: "product" | "line" | "search",
+  kind: "product" | "line" | "walkin" | "search",
   now = Date.now(),
 ): StockView | null {
   if (kind !== "product") return null;
