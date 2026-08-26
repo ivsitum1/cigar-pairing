@@ -96,14 +96,16 @@ export function PairingPage() {
   // indeks "sljedeceg prijedloga" po kategoriji (cigara->pice) ili offset (pice->cigare)
   const [cycle, setCycle] = useState<Record<string, number>>({});
   const [showPrefs, setShowPrefs] = useState(false);
-  const [excludedCountries, setExcludedCountries] = useState<string[]>(
-    () => readJsonStringArray("prefs-excluded-countries"),
-  );
-  const [excludedBrands, setExcludedBrands] = useState<string[]>(
-    () => readJsonStringArray("prefs-excluded-brands"),
-  );
+  const [selectedCountries, setSelectedCountries] = useState<string[]>(() => {
+    localStorage.removeItem("prefs-excluded-countries");
+    return readJsonStringArray("prefs-selected-countries");
+  });
+  const [selectedBrands, setSelectedBrands] = useState<string[]>(() => {
+    localStorage.removeItem("prefs-excluded-brands");
+    return readJsonStringArray("prefs-selected-brands");
+  });
 
-  const toggleExcluded = (
+  const toggleSelected = (
     value: string,
     list: string[],
     set: (v: string[]) => void,
@@ -145,12 +147,13 @@ export function PairingPage() {
         CIGARS.filter(
           (c) =>
             cigarInRegion(c, market) &&
-            !excludedCountries.includes(c.country) &&
-            !excludedBrands.includes(c.brand),
+            (selectedCountries.length === 0 ||
+              selectedCountries.includes(c.country)) &&
+            (selectedBrands.length === 0 || selectedBrands.includes(c.brand)),
         ),
         taste,
       ),
-    [market, excludedCountries, excludedBrands, taste],
+    [market, selectedCountries, selectedBrands, taste],
   );
 
   // Multi-vitola lines (Cusano Robusto vs Figurado) need scoped OCR ids
@@ -479,16 +482,16 @@ export function PairingPage() {
         {mode !== "custom" && (
           <div className="mt-2">
             <Chip
-              active={showPrefs || excludedCountries.length > 0 || excludedBrands.length > 0}
+              active={showPrefs || selectedCountries.length > 0 || selectedBrands.length > 0}
               onClick={() => setShowPrefs(!showPrefs)}
             >
-              ⚙ {excludedCountries.length + excludedBrands.length || ""}
+              ⚙ {selectedCountries.length + selectedBrands.length || ""}
             </Chip>
           </div>
         )}
       </div>
 
-      {/* preferencije: zemlje/brendovi koje NE zelis u prijedlozima */}
+      {/* preferencije: zemlje/marke koje ZELIS vidjeti (prazno = sve) */}
       {mode !== "custom" && showPrefs && (
         <div className="mt-2 rounded-xl border border-dim/20 bg-cedar p-3">
           <div className="mb-1 font-display text-micro uppercase tracking-[0.2em] text-zlato">
@@ -499,12 +502,17 @@ export function PairingPage() {
             {allCountries.map((cty) => (
               <Chip
                 key={cty}
-                active={!excludedCountries.includes(cty)}
+                active={selectedCountries.includes(cty)}
                 onClick={() =>
-                  toggleExcluded(cty, excludedCountries, setExcludedCountries, "prefs-excluded-countries")
+                  toggleSelected(
+                    cty,
+                    selectedCountries,
+                    setSelectedCountries,
+                    "prefs-selected-countries",
+                  )
                 }
               >
-                {excludedCountries.includes(cty) ? "✕ " : ""}{cty}
+                {cty}
               </Chip>
             ))}
           </div>
@@ -513,12 +521,17 @@ export function PairingPage() {
             {allBrands.map((b) => (
               <Chip
                 key={b}
-                active={!excludedBrands.includes(b)}
+                active={selectedBrands.includes(b)}
                 onClick={() =>
-                  toggleExcluded(b, excludedBrands, setExcludedBrands, "prefs-excluded-brands")
+                  toggleSelected(
+                    b,
+                    selectedBrands,
+                    setSelectedBrands,
+                    "prefs-selected-brands",
+                  )
                 }
               >
-                {excludedBrands.includes(b) ? "✕ " : ""}{brandDisplayName(b, market)}
+                {brandDisplayName(b, market)}
               </Chip>
             ))}
           </div>

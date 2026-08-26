@@ -359,6 +359,18 @@ describe("brzi unos iz kolekcije", () => {
     ]);
   });
 
+  it("skidanje oznake Imam mice stavku s popisa bez zalihe", () => {
+    const items: Record<string, { owned: boolean }> = {
+      "cig-a": { owned: true },
+      "cig-b": { owned: true },
+    };
+    expect(quickAddIds(items, [], "h1", isCigar)).toEqual(["cig-a", "cig-b"]);
+
+    items["cig-a"] = { owned: false };
+
+    expect(quickAddIds(items, [], "h1", isCigar)).toEqual(["cig-b"]);
+  });
+
   it("„Dodaj sve” stavi po jedan komad svake", async () => {
     const h = await load();
     const box = h.addHumidor("Radni stol");

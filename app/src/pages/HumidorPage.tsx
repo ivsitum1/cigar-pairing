@@ -12,7 +12,13 @@ import { LastCigarPrompt } from "../components/LastCigarPrompt";
 import { VitolaPicker } from "../components/VitolaPicker";
 import { shouldOfferWishlist } from "../lib/lastCigar";
 import { drinkNameLoc } from "../lib/drinkName";
-import { removeJournalEntry, updateJournalEntry, useCollection, type JournalEntry } from "../store/collection";
+import {
+  removeJournalEntry,
+  updateItem,
+  updateJournalEntry,
+  useCollection,
+  type JournalEntry,
+} from "../store/collection";
 import {
   addHumidor,
   adjustStock,
@@ -392,41 +398,54 @@ function QuickAdd({ humidorId }: { humidorId: string }) {
           {open && (
             <div className="mt-2 space-y-1.5">
               {owned.map(({ id, cigar, needsVitola, sampler }) => (
-                <button
+                <div
                   key={id}
-                  type="button"
-                  onClick={() => {
-                    if (sampler > 0 && unpackSamplerIntoStock(humidorId, cigar) > 0) {
-                      return;
-                    }
-                    if (needsVitola) {
-                      setPick({ cigar, sourceId: id });
-                      return;
-                    }
-                    adjustStock(humidorId, id, 1);
-                    claimOwnedForStock(id);
-                  }}
-                  className="flex w-full items-center justify-between gap-3 rounded-lg border border-dim/15 bg-cedar px-3 py-2 text-left hover:border-zlato/40"
+                  className="flex items-stretch gap-1 rounded-lg border border-dim/15 bg-cedar hover:border-zlato/40"
                 >
-                  <span className="min-w-0">
-                    <span className="block truncate text-sm text-papir">
-                      {brandDisplayName(cigar.brand, market)} {cigar.line}
-                    </span>
-                    <span className="block truncate text-micro text-dim">
-                      {sampler > 0
-                        ? `${t("hum.samplerUnpack")} · ${sampler} ${t("hum.cigarsCount")}`
-                        : needsVitola
-                          ? t("hum.pickVitolaToAdd")
-                          : `${cigar.selectedVitola ?? cigar.vitola} · ${cn(cigar.country)}`}
-                    </span>
-                  </span>
-                  <span
-                    aria-hidden
-                    className="shrink-0 font-display text-lg leading-none text-zlato"
+                  <button
+                    type="button"
+                    onClick={() => {
+                      if (sampler > 0 && unpackSamplerIntoStock(humidorId, cigar) > 0) {
+                        return;
+                      }
+                      if (needsVitola) {
+                        setPick({ cigar, sourceId: id });
+                        return;
+                      }
+                      adjustStock(humidorId, id, 1);
+                      claimOwnedForStock(id);
+                    }}
+                    className="flex min-w-0 flex-1 items-center justify-between gap-3 px-3 py-2 text-left"
                   >
-                    +
-                  </span>
-                </button>
+                    <span className="min-w-0">
+                      <span className="block truncate text-sm text-papir">
+                        {brandDisplayName(cigar.brand, market)} {cigar.line}
+                      </span>
+                      <span className="block truncate text-micro text-dim">
+                        {sampler > 0
+                          ? `${t("hum.samplerUnpack")} · ${sampler} ${t("hum.cigarsCount")}`
+                          : needsVitola
+                            ? t("hum.pickVitolaToAdd")
+                            : `${cigar.selectedVitola ?? cigar.vitola} · ${cn(cigar.country)}`}
+                      </span>
+                    </span>
+                    <span
+                      aria-hidden
+                      className="shrink-0 font-display text-lg leading-none text-zlato"
+                    >
+                      +
+                    </span>
+                  </button>
+                  <button
+                    type="button"
+                    aria-label={t("hum.quickAddRemove")}
+                    title={t("hum.quickAddRemove")}
+                    onClick={() => updateItem(id, { owned: false })}
+                    className="shrink-0 border-l border-dim/15 px-3 text-dim hover:text-papir"
+                  >
+                    ✕
+                  </button>
+                </div>
               ))}
             </div>
           )}

@@ -260,7 +260,10 @@ const STRINGS = {
   "pair.market": { hr: "Gdje kupuješ cigare?", en: "Where do you buy cigars?" },
   "pair.availability": { hr: "Dostupne u", en: "Available in" },
   "pair.prefs": { hr: "Postavke (zemlje / marke)", en: "Preferences (countries / brands)" },
-  "pair.prefsHint": { hr: "Klikni da isključiš iz prijedloga", en: "Click to exclude from suggestions" },
+  "pair.prefsHint": {
+    hr: "Klikni da prikažeš samo označeno (prazno = sve)",
+    en: "Click to show only marked items (empty = all)",
+  },
   "shop.otherShops": { hr: "ostalo", en: "other" },
   "shop.filterAll": { hr: "Sve", en: "All" },
   "pair.occasion": { hr: "Prilika", en: "Occasion" },
@@ -644,9 +647,10 @@ const STRINGS = {
   "hum.entriesThisMonth": { hr: "zapisa u mjesecu", en: "entries this month" },
   "hum.quickAdd": { hr: "Brzi unos iz kolekcije", en: "Quick add from collection" },
   "hum.quickAddHint": {
-    hr: "Cigare koje si označio s „Imam”, a još nisu u ovom humidoru. Dodir dodaje jednu.",
-    en: "Cigars you marked as owned that are not in this humidor yet. Tap to add one.",
+    hr: "Cigare koje si označio s „Imam”, a još nisu u ovom humidoru. Dodir dodaje jednu; ✕ skida oznaku.",
+    en: "Cigars you marked as owned that are not in this humidor yet. Tap to add one; ✕ removes the mark.",
   },
+  "hum.quickAddRemove": { hr: "Makni oznaku Imam", en: "Remove owned mark" },
   "hum.quickAddEmpty": {
     hr: "Sve cigare iz kolekcije već su u ovom humidoru.",
     en: "Every cigar in your collection is already in this humidor.",
