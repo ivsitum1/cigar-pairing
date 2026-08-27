@@ -16,6 +16,7 @@ import { BackButton } from "./BackButton";
 import { FavoriteStar } from "./FavoriteStar";
 import { MarketFilter } from "./MarketFilter";
 import { useMarket } from "../store/market";
+import { vitolasForMarket } from "../lib/cigarVitola";
 
 type Sort = "strength" | "price" | "name";
 
@@ -35,7 +36,13 @@ export function BrandSheet({
   const displayBrand = brandDisplayName(brand, market);
   const node = useMemo(() => brandNode(brand), [brand]);
   const lines = useMemo(
-    () => linesByBrand(brand).filter((c) => cigarInRegion(c, market)),
+    () =>
+      linesByBrand(brand).filter((c) => {
+        if (!cigarInRegion(c, market)) return false;
+        // u konkretnom tržištu sakrij linije bez ijedne dostupne vitole
+        if (market !== "ALL" && vitolasForMarket(c, market).length === 0) return false;
+        return true;
+      }),
     [brand, market],
   );
 
@@ -51,8 +58,8 @@ export function BrandSheet({
   }, [lines, sort, market]);
 
   const vitolaInMarket = useMemo(
-    () => lines.reduce((n, c) => n + (c.vitolas?.length ?? 0), 0),
-    [lines],
+    () => lines.reduce((n, c) => n + vitolasForMarket(c, market).length, 0),
+    [lines, market],
   );
 
   const headerLines =
@@ -127,7 +134,7 @@ export function BrandSheet({
           <div className="space-y-1.5">
             {sorted.map((c) => {
               const mp = cigarPriceForMarket(c, market);
-              const nVit = c.vitolas?.length ?? 0;
+              const nVit = vitolasForMarket(c, market).length;
               return (
                 <button
                   key={c.id}

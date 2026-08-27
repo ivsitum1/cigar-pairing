@@ -5,8 +5,12 @@ import {
   resolveCigarSheetOpen,
   resolveDefaultVitola,
   uniqueVitolas,
+  vitolaInRegion,
+  vitolasForMarket,
 } from "./cigarVitola";
 import type { Cigar } from "../types";
+import { CIGARS } from "../data";
+import { firstVitolaOfShapeInRegion } from "./vitolaShape";
 
 const serieO: Cigar = {
   id: "cig-oliva-serie-o",
@@ -111,5 +115,38 @@ describe("cigarVitola", () => {
     expect(resolveCigarSheetOpen(applied).cigar.vitolas).toHaveLength(1);
     const single = { ...serieO, vitolas: [serieO.vitolas![0]] };
     expect(resolveCigarSheetOpen(single).mode).toBe("detail");
+  });
+});
+
+describe("vitolaInRegion — oblik ∩ tržište", () => {
+  it("Eiroa CBT Maduro Lancero nije u HR (samo EU/USA)", () => {
+    const c = CIGARS.find((x) => x.id === "cig-eiroa-cbt-maduro")!;
+    expect(c).toBeDefined();
+    expect(firstVitolaOfShapeInRegion(c, "lancero", "HR")).toBeUndefined();
+    const eu = firstVitolaOfShapeInRegion(c, "lancero", "EU");
+    expect(eu?.name).toBe("Lancero");
+    expect(vitolaInRegion(eu!, "HR")).toBe(false);
+    expect(vitolaInRegion(eu!, "EU")).toBe(true);
+    // ne smije biti krivi Neptune robusto URL na lancero vitoli
+    expect(eu?.url ?? "").not.toMatch(/robusto/i);
+  });
+
+  it("Davidoff Signature lancero (No.1) u HR — cijena vitole, ne Ambassadrice", () => {
+    const c = CIGARS.find((x) => x.id === "cig-davidoff-signature")!;
+    expect(c).toBeDefined();
+    const lancero = firstVitolaOfShapeInRegion(c, "lancero", "HR");
+    expect(lancero).toBeDefined();
+    expect(lancero!.priceEUR).toBe(40.5);
+    const applied = applyVitola(c, lancero!);
+    expect(applied.priceEUR).toBe(40.5);
+    expect(applied.vitola).toMatch(/No\.?1/i);
+  });
+
+  it("vitolasForMarket(HR) ne uključuje EU-only lancero na Eiroa CBT Maduro", () => {
+    const c = CIGARS.find((x) => x.id === "cig-eiroa-cbt-maduro")!;
+    const hr = vitolasForMarket(c, "HR");
+    expect(hr.some((v) => /lancero/i.test(v.name))).toBe(false);
+    expect(hr.length).toBeGreaterThan(0);
+    expect(vitolasForMarket(c, "EU").some((v) => /lancero/i.test(v.name))).toBe(true);
   });
 });

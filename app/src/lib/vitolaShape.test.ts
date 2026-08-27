@@ -3,6 +3,7 @@ import {
   classifyVitola,
   cigarShapes,
   firstVitolaOfShape,
+  firstVitolaOfShapeInRegion,
   SHAPE_FAMILIES,
   type ShapeFamily,
 } from "./vitolaShape";
@@ -131,5 +132,49 @@ describe("cigarShapes / firstVitolaOfShape", () => {
 
   it("SHAPE_FAMILIES sadrži svih 7 obitelji bez duplikata", () => {
     expect(new Set(SHAPE_FAMILIES).size).toBe(7);
+  });
+});
+
+describe("firstVitolaOfShapeInRegion / vitolaInRegion", () => {
+  const cigar = baseCigar({
+    markets: ["HR", "EU", "USA"],
+    vitolas: [
+      vitola({
+        name: "Lancero",
+        ring: 38,
+        lengthMM: 189,
+        regionLinks: {
+          EU: {
+            shop: "CigarWorld",
+            url: "https://www.cigarworld.de/en/zigarren/honduras/eiroa-cbt-maduro-lancero",
+            priceEUR: 12,
+          },
+          USA: {
+            shop: "Neptune Cigar",
+            url: "https://www.neptunecigar.com/cigars/eiroa-cbt-maduro-lancero",
+          },
+        },
+      }),
+      vitola({
+        name: "Robusto",
+        ring: 50,
+        lengthMM: 127,
+        priceEUR: 14.5,
+        url: "https://humidor.hr/en/proizvod/eiroa-cbt-robusto-5-x-50/",
+      }),
+    ],
+  });
+
+  it("HR + lancero → nema pogotka (lancero samo EU/USA)", () => {
+    expect(firstVitolaOfShapeInRegion(cigar, "lancero", "HR")).toBeUndefined();
+    expect(firstVitolaOfShapeInRegion(cigar, "robusto", "HR")?.name).toBe("Robusto");
+  });
+
+  it("EU + lancero → CigarWorld vitola", () => {
+    expect(firstVitolaOfShapeInRegion(cigar, "lancero", "EU")?.name).toBe("Lancero");
+  });
+
+  it("ALL + lancero → prva lancero bez obzira na shop", () => {
+    expect(firstVitolaOfShapeInRegion(cigar, "lancero", "ALL")?.name).toBe("Lancero");
   });
 });

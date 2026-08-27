@@ -8,7 +8,7 @@ import { TasteMeters } from "./TasteMeters";
 import { ProductThumb } from "./ProductThumb";
 import { productPhoto } from "../lib/productImage";
 import { BackButton } from "./BackButton";
-import { uniqueVitolas } from "../lib/cigarVitola";
+import { vitolasForMarket } from "../lib/cigarVitola";
 import { formatEur, vitolaPriceForMarket } from "../lib/cigarPrice";
 import { vitolaBlurb } from "../lib/vitolaInfo";
 import { cigarDescription } from "../lib/cigarNote";
@@ -40,7 +40,7 @@ export function LineSheet({
   const cigar = resolveCigarId(raw.id) ?? raw;
   const info = brandInfo(cigar.brand);
   const displayBrand = brandDisplayName(cigar.brand, market);
-  const vitolas = useMemo(() => uniqueVitolas(cigar), [cigar]);
+  const vitolas = useMemo(() => vitolasForMarket(cigar, market), [cigar, market]);
   const photo = productPhoto("cigar", cigar.id);
 
   return (
@@ -109,6 +109,11 @@ export function LineSheet({
           </span>
         </div>
 
+        {vitolas.length === 0 ? (
+          <p className="rounded-lg border border-dim/20 bg-cedar/50 px-3 py-3 text-sm leading-relaxed text-dim">
+            {t("brand.noneInMarket")}
+          </p>
+        ) : (
         <div className="space-y-1.5">
           {vitolas.map((v) => {
             const blurb = vitolaBlurb(v.name, lang);
@@ -170,6 +175,7 @@ export function LineSheet({
             );
           })}
         </div>
+        )}
 
         <button
           type="button"

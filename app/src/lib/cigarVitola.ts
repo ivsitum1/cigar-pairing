@@ -1,5 +1,6 @@
-import type { Cigar, Region, Vitola } from "../types";
+import type { Cigar, Region, RegionFilter, Vitola } from "../types";
 import { urlFitsVitola } from "./vitolaLinkMatch";
+import { shopsForRegion } from "../data/shops";
 
 const norm = (s: string) => s.trim().toLowerCase();
 
@@ -84,6 +85,32 @@ export function uniqueVitolas(cigar: Cigar): Vitola[] {
 
 export function needsVitolaPick(cigar: Cigar): boolean {
   return uniqueVitolas(cigar).length > 1;
+}
+
+/**
+ * Je li ova vitola dostupna u odabranoj regiji (ne linija kao cjelina).
+ * ALL = da; inače regionLinks[regija] ili product URL na hostu te regije.
+ */
+export function vitolaInRegion(v: Vitola, f: RegionFilter): boolean {
+  if (f === "ALL") return true;
+  const region = f as Region;
+  if (v.regionLinks?.[region]?.url) return true;
+  if (v.url) {
+    for (const shop of shopsForRegion(region)) {
+      if (shop.productHost && v.url.includes(shop.productHost)) return true;
+    }
+  }
+  return false;
+}
+
+/** Jedinstvene vitole linije ograničene na odabrano tržište. */
+export function vitolasForMarket(cigar: Cigar, market: RegionFilter): Vitola[] {
+  return uniqueVitolas(cigar).filter((v) => vitolaInRegion(v, market));
+}
+
+/** Treba li birati vitolu unutar odabranog tržišta (ne cijele linije). */
+export function needsVitolaPickInMarket(cigar: Cigar, market: RegionFilter): boolean {
+  return vitolasForMarket(cigar, market).length > 1;
 }
 
 /** Što otvoriti kad korisnik klikne cigaru: linija (izbor vitole) ili kartica vitole. */

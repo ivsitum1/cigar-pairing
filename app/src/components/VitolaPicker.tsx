@@ -1,7 +1,7 @@
 import type { Cigar, Vitola } from "../types";
 import { SheetShell } from "./SheetShell";
 import { useI18n } from "../i18n";
-import { uniqueVitolas } from "../lib/cigarVitola";
+import { vitolasForMarket } from "../lib/cigarVitola";
 import { formatEur, vitolaPriceForMarket } from "../lib/cigarPrice";
 import { vitolaBlurb } from "../lib/vitolaInfo";
 import { vitolaStockId } from "../lib/humidorVitola";
@@ -22,7 +22,7 @@ export function VitolaPicker({
   const { t, lang } = useI18n();
   const market = useMarket();
   useHumidors();
-  const vitolas = uniqueVitolas(cigar);
+  const vitolas = vitolasForMarket(cigar, market);
 
   return (
     <SheetShell
