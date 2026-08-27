@@ -1,9 +1,26 @@
-import type { Cigar, Region, Vitola } from "../types";
+import type { Cigar, Region, RegionFilter, Vitola } from "../types";
+import { shopsForRegion } from "../data/shops";
 import { urlFitsVitola } from "./vitolaLinkMatch";
 
 const norm = (s: string) => s.trim().toLowerCase();
 
 const ALL_REGIONS: Region[] = ["HR", "EU", "USA"];
+
+/**
+ * Je li ova vitola dostupna u odabranoj regiji (ne linija kao cjelina).
+ * ALL = da; inače regionLinks[regija] ili product URL na hostu te regije.
+ */
+export function vitolaInRegion(v: Vitola, f: RegionFilter): boolean {
+  if (f === "ALL") return true;
+  const region = f as Region;
+  if (v.regionLinks?.[region]?.url) return true;
+  if (v.url) {
+    for (const shop of shopsForRegion(region)) {
+      if (shop.productHost && v.url.includes(shop.productHost)) return true;
+    }
+  }
+  return false;
+}
 
 /**
  * EU/USA linkovi (i cijene) za odabranu vitolu.

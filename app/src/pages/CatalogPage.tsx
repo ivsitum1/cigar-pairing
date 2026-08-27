@@ -51,8 +51,7 @@ import {
 } from "../lib/sortToggle";
 import {
   SHAPE_FAMILIES,
-  cigarShapes,
-  firstVitolaOfShape,
+  firstVitolaOfShapeInRegion,
   type ShapeFamily,
 } from "../lib/vitolaShape";
 import {
@@ -465,11 +464,11 @@ export function CatalogPage({
       ?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
-  /** Flat-list open: shape filter → that vitola; else LineSheet. */
+  /** Flat-list open: shape filter → that vitola in market; else LineSheet. */
   const openFromFlatList = (raw: Cigar) => {
     const cigar = resolveCigarId(raw.id) ?? raw;
     if (shapeFilter) {
-      const match = firstVitolaOfShape(cigar, shapeFilter);
+      const match = firstVitolaOfShapeInRegion(cigar, shapeFilter, market);
       if (match) {
         openVitola(cigar, match);
         return;
@@ -588,23 +587,38 @@ export function CatalogPage({
 
   const cigars = useMemo(() => {
     if (tab !== "cigars" || browseBrands) return [];
-    const list = CIGARS.filter(
-      (c) =>
-        cigarInRegion(c, market) &&
-        matchesSearch(
+    const list = CIGARS.filter((c) => {
+      if (!cigarInRegion(c, market)) return false;
+      if (
+        !matchesSearch(
           `${brandSearchHaystack(c.brand)} ${brandDisplayName(c.brand, market)} ${c.line} ${c.vitola} ${c.wrapper} ${c.country} ${(c.vitolas ?? [])
             .map((v) => [v.name, v.shape, v.format].filter(Boolean).join(" "))
             .join(" ")}`,
           q,
-        ) &&
-        (strengthFilter == null || c.strength === strengthFilter) &&
-        (shapeFilter == null || cigarShapes(c).has(shapeFilter)) &&
-        (wrapperOriginFilter == null || c.wrapperOrigin === wrapperOriginFilter) &&
-        (binderOriginFilter == null || c.binderOrigin === binderOriginFilter) &&
-        (fillerOriginFilter == null || c.fillerOrigin === fillerOriginFilter) &&
-        (!puroOnly || c.isPuro === true) &&
-        (!favOnly || favorites.has(favoriteKey("cigar", c.brand))),
-    );
+        )
+      ) {
+        return false;
+      }
+      if (strengthFilter != null && c.strength !== strengthFilter) return false;
+      // oblik ∩ tržište: samo linije čiji matching oblik stvarno postoji u regiji
+      if (shapeFilter != null && !firstVitolaOfShapeInRegion(c, shapeFilter, market)) {
+        return false;
+      }
+      if (wrapperOriginFilter != null && c.wrapperOrigin !== wrapperOriginFilter) return false;
+      if (binderOriginFilter != null && c.binderOrigin !== binderOriginFilter) return false;
+      if (fillerOriginFilter != null && c.fillerOrigin !== fillerOriginFilter) return false;
+      if (puroOnly && c.isPuro !== true) return false;
+      if (favOnly && !favorites.has(favoriteKey("cigar", c.brand))) return false;
+      return true;
+    });
+    // Uz aktivni shape filter: na listi prikaži tu vitolu (cijena/ime), ne „od“ linije
+    const rows =
+      shapeFilter == null
+        ? list
+        : list.map((c) => {
+            const v = firstVitolaOfShapeInRegion(c, shapeFilter, market);
+            return v ? applyVitola(c, v) : c;
+          });
     // svaki komparator je pisan u SVOM zadanom smjeru (SORT_DEFAULT_DIR);
     // suprotan smjer nastaje obrtanjem u directedComparator
     const by: Partial<Record<SortKey, (a: Cigar, b: Cigar) => number>> = {
@@ -616,8 +630,8 @@ export function CatalogPage({
       strength: (a, b) => b.strength - a.strength,
     };
     const cmp = sort ? by[sort.key] : undefined;
-    if (!cmp || !sort) return [...list].sort(by.name!);
-    return [...list].sort(directedComparator(cmp, SORT_DEFAULT_DIR[sort.key], sort.dir));
+    if (!cmp || !sort) return [...rows].sort(by.name!);
+    return [...rows].sort(directedComparator(cmp, SORT_DEFAULT_DIR[sort.key], sort.dir));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [
     tab,

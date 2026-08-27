@@ -9,3 +9,5 @@ scripts/output/product-images/
 scripts/output/youtube/
 scripts/.cache/
 scripts/output/rumratings_cache/
+# OneDrive PC-name conflict copies (must not enter tsc include)
+*-Asus-TUF-A15-Situm*
