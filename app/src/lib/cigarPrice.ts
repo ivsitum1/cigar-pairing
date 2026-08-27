@@ -95,7 +95,15 @@ export interface LinePrice extends ResolvedPrice {
 }
 
 export function cigarLinePrice(c: Cigar, market: RegionFilter): LinePrice {
-  const resolved = uniqueVitolas(c)
+  // Odabrana vitola (applyVitola / shape filter): cijena SAMO te veličine —
+  // inače bi popis i dalje mogao pisati "od" najjeftinije u cijeloj liniji.
+  const selected = c.selectedVitola?.trim().toLowerCase();
+  const pool = selected
+    ? uniqueVitolas(c).filter((v) => v.name.trim().toLowerCase() === selected)
+    : uniqueVitolas(c);
+  const vitolas = pool.length > 0 ? pool : uniqueVitolas(c);
+
+  const resolved = vitolas
     .map((v) => vitolaPriceForMarket(v, market))
     .filter((r) => r.price != null);
 

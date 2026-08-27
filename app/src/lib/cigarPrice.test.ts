@@ -90,6 +90,21 @@ describe("cigarLinePrice", () => {
     expect(cigarLinePrice(c, "HR")).toMatchObject({ price: 7.5, from: false });
     expect(cigarLinePrice(c, "EU").price).toBeNull();
   });
+
+  it("selectedVitola: popis pokazuje cijenu te veličine, ne najjeftiniju u liniji", () => {
+    const c = cigar(
+      [
+        vitola({ name: "Robusto", priceEUR: 11, url: "https://humidor.hr/robusto" }),
+        vitola({ name: "Lancero", priceEUR: 40, url: "https://humidor.hr/lancero" }),
+      ],
+      { selectedVitola: "Lancero" },
+    );
+    expect(cigarLinePrice(c, "HR")).toMatchObject({
+      price: 40,
+      from: false,
+      url: "https://humidor.hr/lancero",
+    });
+  });
 });
 
 describe("formatEur", () => {
