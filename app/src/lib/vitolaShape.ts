@@ -2,8 +2,8 @@
 // Signali po prioritetu: shape polje (ako postoji) → naziv (regex obitelji) →
 // geometrija (ring/duljina) kao fallback. `shape` je prerijedak da bi bio jedini
 // izvor; ring/lengthMM su ~potpuni, a naziv je najbogatiji signal.
-import type { Cigar, Vitola } from "../types";
-import { uniqueVitolas } from "./cigarVitola";
+import type { Cigar, RegionFilter, Vitola } from "../types";
+import { uniqueVitolas, vitolaInRegion } from "./cigarVitola";
 import { GEOMETRY } from "../engine/vitolaGeometry";
 
 export type ShapeFamily =
@@ -99,4 +99,19 @@ export function cigarShapes(cigar: Cigar): Set<ShapeFamily> {
 /** Prva vitola linije koja pripada traženoj obitelji (za pred-odabir). */
 export function firstVitolaOfShape(cigar: Cigar, family: ShapeFamily): Vitola | undefined {
   return uniqueVitolas(cigar).find((v) => classifyVitola(v) === family);
+}
+
+/**
+ * Prva vitola traženog oblika koja je stvarno dostupna u regiji.
+ * Filter Kataloga (oblik ∩ tržište) mora koristiti ovo, ne samo `cigarShapes`
+ * + `cigarInRegion` — inače HR pokaže EU-only lancero jer linija ima HR robusto.
+ */
+export function firstVitolaOfShapeInRegion(
+  cigar: Cigar,
+  family: ShapeFamily,
+  region: RegionFilter,
+): Vitola | undefined {
+  return uniqueVitolas(cigar).find(
+    (v) => classifyVitola(v) === family && vitolaInRegion(v, region),
+  );
 }

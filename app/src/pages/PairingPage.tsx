@@ -25,7 +25,7 @@ import { buildShareCardModel, sharePairing } from "../lib/shareCard";
 import { ritualHint } from "../lib/cigarRitual";
 import { OcrScan } from "../components/OcrScan";
 import { VitolaPicker } from "../components/VitolaPicker";
-import { applyVitola, needsVitolaPick, uniqueVitolas } from "../lib/cigarVitola";
+import { applyVitola, needsVitolaPickInMarket, vitolasForMarket } from "../lib/cigarVitola";
 import { formatEur, vitolaPriceForMarket } from "../lib/cigarPrice";
 import { cigarItemId } from "../lib/cigarItemId";
 import { buildCigarOcrCandidates } from "../lib/ocrCigarCandidates";
@@ -330,11 +330,11 @@ export function PairingPage() {
 
   const pickCigar = (raw: Cigar) => {
     const cigar = resolveCigarId(raw.id) ?? raw;
-    if (needsVitolaPick(cigar)) {
+    if (needsVitolaPickInMarket(cigar, market)) {
       setPendingCigar(cigar);
       return;
     }
-    const vitolas = uniqueVitolas(cigar);
+    const vitolas = vitolasForMarket(cigar, market);
     setSelectedCigar(vitolas.length === 1 ? applyVitola(cigar, vitolas[0]) : cigar);
     navigate({ page: "pairing", pair: { kind: "cigar", id: cigar.id } });
   };
@@ -367,11 +367,11 @@ export function PairingPage() {
       setSelectedDrink(null);
       setQuery(`${brandDisplayName(intent.cigar.brand, market)} ${intent.cigar.line}`);
       const cigar = resolveCigarId(intent.cigar.id) ?? intent.cigar;
-      if (needsVitolaPick(cigar)) {
+      if (needsVitolaPickInMarket(cigar, market)) {
         setPendingCigar(cigar);
         setSelectedCigar(null);
       } else {
-        const vitolas = uniqueVitolas(cigar);
+        const vitolas = vitolasForMarket(cigar, market);
         setSelectedCigar(vitolas.length === 1 ? applyVitola(cigar, vitolas[0]) : cigar);
         setPendingCigar(null);
       }
@@ -411,11 +411,11 @@ export function PairingPage() {
       setQuery(`${brandDisplayName(cigar.brand, market)} ${cigar.line}`);
       // podijeljeni link na liniju s više formata pita za vitolu, isto kao
       // odabir kroz UI — inače bi dnevnik i zaliha išli na cijelu liniju
-      if (needsVitolaPick(cigar)) {
+      if (needsVitolaPickInMarket(cigar, market)) {
         setPendingCigar(cigar);
         setSelectedCigar(null);
       } else {
-        const vitolas = uniqueVitolas(cigar);
+        const vitolas = vitolasForMarket(cigar, market);
         setSelectedCigar(vitolas.length === 1 ? applyVitola(cigar, vitolas[0]) : cigar);
         setPendingCigar(null);
       }
