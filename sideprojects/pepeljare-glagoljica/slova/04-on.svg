@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 460" role="img">
+  <rect width="400" height="460" fill="#1a1612"/>
+  <text x="200" y="34" fill="#c4b8a4" font-family="Georgia, serif" font-size="18" text-anchor="middle">On</text>
+  <text x="200" y="54" fill="#8a8074" font-family="Georgia, serif" font-size="12" text-anchor="middle">uglata · o · razred A</text>
+  <g transform="translate(0,20)">
+  <circle cx="200" cy="200" r="118" fill="none" stroke="#c9a66b" stroke-width="16"/>
+  <circle cx="200" cy="200" r="100" fill="#2a241c"/>
+  <!-- two cigar rests as short inner chords -->
+  <rect x="120" y="118" width="160" height="16" rx="2" fill="#c9a66b" opacity="0.95"/>
+  <rect x="120" y="266" width="160" height="16" rx="2" fill="#c9a66b" opacity="0.95"/>
+  <ellipse cx="200" cy="126" rx="11" ry="6" fill="#1a1612"/>
+  <ellipse cx="200" cy="274" rx="11" ry="6" fill="#1a1612"/>
+
+  </g>
+  <rect x="28" y="390" width="22" height="14" rx="2" fill="#7d9b6a"/>
+  <text x="58" y="402" fill="#c4b8a4" font-family="Georgia, serif" font-size="12">Čista zdjelica — slabo 'slovo', jaka funkcija</text>
+  <text x="200" y="440" fill="#6e6558" font-family="Georgia, serif" font-size="11" text-anchor="middle">tlocrt pepeljare · ne paleografski faksimil</text>
+</svg>
