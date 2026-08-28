@@ -56,7 +56,7 @@ describe("generirane bilješke nisu opis", () => {
     expect(cigarDescription(generatedOnly, "hr")).toBeNull();
   });
 
-  it("posuđuje drugi jezik kad domaći nema opis", () => {
+  it("ne posuđuje drugi jezik kad domaći nema opis", () => {
     expect(
       cigarDescription(
         {
@@ -67,7 +67,7 @@ describe("generirane bilješke nisu opis", () => {
         },
         "hr",
       ),
-    ).toBe("Gatekeeper robusto; pepper-forward.");
+    ).toBeNull();
   });
 });
 
@@ -95,12 +95,12 @@ describe("kurirani opisi", () => {
     }
   });
 
-  it("većina HR dostupnih cigara ima opis", () => {
+  it("većina HR dostupnih cigara ima opis na HR", () => {
     const available = cigars.filter((c) => c.availabilityHR.length > 0);
+    // Samo notes.hr (bez EN posudbe). Omjer ~0.68 u korpusu; prag 0.65 drži
+    // prostor za tjedni reconcile bez kuriranih HR opisa.
     const described = available.filter((c) => cigarDescription(c, "hr") != null);
     expect(available.length).toBeGreaterThan(300);
-    // Prag 0.83: tjedni reconcile može dodati HR linije iz shop kataloga
-    // prije nego što dobiju kurirani opis (npr. A. Flores / Karen Berger).
-    expect(described.length / available.length).toBeGreaterThanOrEqual(0.83);
+    expect(described.length / available.length).toBeGreaterThanOrEqual(0.65);
   });
 });

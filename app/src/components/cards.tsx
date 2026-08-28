@@ -1,5 +1,11 @@
 import type { Cigar, Drink } from "../types";
-import { useI18n, STYLE_LABELS, ADDITIVE_LABELS, type StringKey } from "../i18n";
+import {
+  useI18n,
+  STYLE_LABELS,
+  ADDITIVE_LABELS,
+  leafMetaParts,
+  type StringKey,
+} from "../i18n";
 import { cigarPriceForMarket, formatPrice, brandDisplayName } from "../data";
 import { Meter } from "./ui";
 import { getItemState, useCollection } from "../store/collection";
@@ -81,7 +87,7 @@ export function CigarRow({
   cigar: Cigar;
   onClick?: () => void;
 }) {
-  const { t, cn, lang } = useI18n();
+  const { t, lang } = useI18n();
   const market = useMarket();
   const displayBrand = brandDisplayName(cigar.brand, market);
   // generirano prepricavanje atributa (zemlja/wrapper/snaga/okusi) vec je gore
@@ -92,6 +98,9 @@ export function CigarRow({
     vitolaN > 1
       ? `${vitolaN} ${t("common.vitolaCountSuffix")}`
       : (cigar.selectedVitola ?? cigar.vitola);
+  const meta = [sizeLabel, ...leafMetaParts(cigar.wrapper, cigar.country, lang)]
+    .filter(Boolean)
+    .join(" · ");
   return (
     <button
       onClick={onClick}
@@ -108,7 +117,7 @@ export function CigarRow({
         </span>
       </div>
       <div className="mt-1 text-xs text-dim">
-        {sizeLabel} · {cigar.wrapper} · {cn(cigar.country)}
+        {meta}
         {vitolaN <= 1 ? (
           <>
             {" · "}
@@ -138,8 +147,9 @@ export function DrinkRow({
   rank?: number;
   onClick?: () => void;
 }) {
-  const { t, lx } = useI18n();
+  const { t, lx, lxStrict } = useI18n();
   const style = STYLE_LABELS[drink.style];
+  const notes = lxStrict(drink.notes);
   return (
     <button
       onClick={onClick}
@@ -174,9 +184,9 @@ export function DrinkRow({
           accent="var(--color-lista)"
         />
       </div>
-      {lx(drink.notes) && (
+      {notes && (
         <div className="mt-1.5 line-clamp-2 text-xs leading-relaxed text-dim/90">
-          {lx(drink.notes)}
+          {notes}
         </div>
       )}
     </button>

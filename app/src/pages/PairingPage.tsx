@@ -11,7 +11,7 @@ import {
   rankByOccasion,
   type OccasionFilter,
 } from "../engine/occasion";
-import { useI18n, STYLE_LABELS, type StringKey } from "../i18n";
+import { useI18n, STYLE_LABELS, leafMetaParts, leafLabel, type StringKey } from "../i18n";
 import { Chip, Meter, ScoreBand, SearchInput, SectionTitle } from "../components/ui";
 import { getItemState, lineState, useCollection } from "../store/collection";
 import {
@@ -70,7 +70,7 @@ const SUGGEST_CATEGORIES: DrinkCategory[] = [
 ];
 
 export function PairingPage() {
-  const { t, lx, cn, lang, sv } = useI18n();
+  const { t, lx, lang, sv } = useI18n();
   const collection = useCollection();
   const [mode, setMode] = useState<Mode>("cigarToDrink");
   const [occasion, setOccasion] = useState<OccasionFilter>("any");
@@ -612,7 +612,7 @@ export function PairingPage() {
                 <PickRow
                   key={`${item.id}::${(item as Cigar).line}`}
                   title={`${brandDisplayName((item as Cigar).brand, market)} ${(item as Cigar).line}`}
-                  sub={`${(item as Cigar).vitolas.length > 1 ? `${(item as Cigar).vitolas.length} ${t("common.vitolaCountSuffix")} · ` : `${(item as Cigar).vitola} · `}${(item as Cigar).wrapper} · ${cn((item as Cigar).country)}`}
+                  sub={`${(item as Cigar).vitolas.length > 1 ? `${(item as Cigar).vitolas.length} ${t("common.vitolaCountSuffix")} · ` : `${(item as Cigar).vitola} · `}${leafMetaParts((item as Cigar).wrapper, (item as Cigar).country, lang).join(" · ")}`}
                   onPick={() => pickCigar((item as Cigar))}
                 />
               ) : (
@@ -664,7 +664,12 @@ export function PairingPage() {
                 </div>
                 {mode === "cigarToDrink" && (
                   <div className="mt-0.5 text-xs text-dim">
-                    {(selected as Cigar).vitola} · {(selected as Cigar).wrapper} · {cn((selected as Cigar).country)}
+                    {(selected as Cigar).vitola} ·{" "}
+                    {leafMetaParts(
+                      (selected as Cigar).wrapper,
+                      (selected as Cigar).country,
+                      lang,
+                    ).join(" · ")}
                   </div>
                 )}
                 {/* kratka oznaka, ne rečenica — puni tekst je u tooltipu;
@@ -824,7 +829,7 @@ export function PairingPage() {
                     cigar={r.item}
                     drink={selectedDrink}
                     title={`${brandDisplayName(r.item.brand, market)} ${r.item.line}`}
-                    sub={`${r.item.wrapper}${
+                    sub={`${leafLabel(r.item.wrapper, lang)}${
                       r.item.profileEstimated || r.item.flavorTags.length === 0
                         ? ` · ≈ ${t("common.estimatedShort")}`
                         : ""

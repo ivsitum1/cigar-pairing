@@ -10,7 +10,7 @@ import {
   cigarPriceForMarket,
   linesByBrand,
 } from "../data";
-import { useI18n } from "../i18n";
+import { useI18n, leafLabel } from "../i18n";
 import { Meter } from "./ui";
 import { BackButton } from "./BackButton";
 import { FavoriteStar } from "./FavoriteStar";
@@ -29,7 +29,7 @@ export function BrandSheet({
   onClose: () => void;
   onOpenLine: (c: Cigar) => void;
 }) {
-  const { t, lx, cn } = useI18n();
+  const { t, lxStrict, cn, lang } = useI18n();
   const market = useMarket();
   const [sort, setSort] = useState<Sort>("name");
   const info = brandInfo(brand);
@@ -94,15 +94,15 @@ export function BrandSheet({
           <FavoriteStar kind="cigar" brand={brand} size="lg" />
         </div>
         {info && (
-          <p className="mt-3 text-sm leading-relaxed text-papir/85">{lx(info.blurb)}</p>
+          <p className="mt-3 text-sm leading-relaxed text-papir/85">{lxStrict(info.blurb)}</p>
         )}
         {info?.signature && (
           <p className="mt-2 rounded-lg border border-zlato/25 bg-zlato/5 px-3 py-2 text-sm leading-relaxed text-zlato-2">
-            ◈ {lx(info.signature)}
+            ◈ {lxStrict(info.signature)}
           </p>
         )}
         {info?.story && (
-          <p className="mt-2 text-sm leading-relaxed text-papir/80">{lx(info.story)}</p>
+          <p className="mt-2 text-sm leading-relaxed text-papir/80">{lxStrict(info.story)}</p>
         )}
 
         <div className="band-rule my-4" />
@@ -145,7 +145,7 @@ export function BrandSheet({
                   <div className="min-w-0">
                     <div className="truncate font-display text-sm text-papir">{c.line}</div>
                     <div className="truncate text-xs text-dim">
-                      {c.wrapper} · {nVit} {t("common.vitolaCountSuffix")}
+                      {leafLabel(c.wrapper, lang)} · {nVit} {t("common.vitolaCountSuffix")}
                     </div>
                     <div className="mt-1 flex gap-3">
                       <Meter

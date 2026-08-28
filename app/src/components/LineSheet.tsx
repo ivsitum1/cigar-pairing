@@ -3,7 +3,7 @@ import { useMemo } from "react";
 import { SheetShell } from "./SheetShell";
 import type { Cigar, Vitola } from "../types";
 import { brandInfo, brandDisplayName, resolveCigarId } from "../data";
-import { useI18n } from "../i18n";
+import { useI18n, leafMetaParts } from "../i18n";
 import { TasteMeters } from "./TasteMeters";
 import { ProductThumb } from "./ProductThumb";
 import { applyVitola, vitolasForMarket } from "../lib/cigarVitola";
@@ -33,7 +33,7 @@ export function LineSheet({
   onOpenBrand?: (brand: string) => void;
   onOpenVitola: (cigar: Cigar, vitola: Vitola) => void;
 }) {
-  const { t, cn, lang } = useI18n();
+  const { t, lang } = useI18n();
   const market = useMarket();
   useHumidors();
   const description = cigarDescription(raw, lang);
@@ -82,7 +82,7 @@ export function LineSheet({
               {cigar.line}
             </div>
             <div className="mt-0.5 text-xs uppercase tracking-widest text-dim">
-              {cn(cigar.country)} · {cigar.wrapper}
+              {leafMetaParts(cigar.wrapper, cigar.country, lang).join(" · ")}
               {info?.founded ? ` · ${info.founded}` : ""}
             </div>
           </div>

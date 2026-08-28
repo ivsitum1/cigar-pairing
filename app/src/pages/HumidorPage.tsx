@@ -5,7 +5,7 @@
 import { useMemo, useState } from "react";
 import type { Cigar, Drink, Vitola } from "../types";
 import { ALL_DRINKS, brandDisplayName, cigarForItemId, drinkById } from "../data";
-import { useI18n, type StringKey } from "../i18n";
+import { useI18n, leafMetaParts, type StringKey } from "../i18n";
 import { Chip, SectionTitle } from "../components/ui";
 import { DrinkRow } from "../components/cards";
 import { LastCigarPrompt } from "../components/LastCigarPrompt";
@@ -504,7 +504,7 @@ function LineStockCard({
   onClear: (itemId: string) => void;
   onOpen?: (cigar: Cigar) => void;
 }) {
-  const { t, cn } = useI18n();
+  const { t, lang } = useI18n();
   const first = rows.find((r) => r.cigar)?.cigar;
 
   return (
@@ -514,7 +514,7 @@ function LineStockCard({
           <div className="truncate font-display text-base text-papir">{title}</div>
           {first && (
             <div className="mt-0.5 truncate text-xs text-dim">
-              {first.wrapper} · {cn(first.country)}
+              {leafMetaParts(first.wrapper, first.country, lang).join(" · ")}
             </div>
           )}
         </div>
