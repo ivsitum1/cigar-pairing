@@ -1,8 +1,8 @@
-import { Suspense, lazy, useState } from "react";
+import { Suspense, lazy, useEffect, useState } from "react";
 import { useI18n } from "./i18n";
 import { PairingPage } from "./pages/PairingPage";
 import { requestPairing } from "./store/pairingNav";
-import { navigate, useRoute, type Page } from "./store/route";
+import { navigate, routeToHash, useRoute, type Page } from "./store/route";
 import { SystemBanners } from "./components/SystemBanners";
 import { MusicToggle } from "./components/MusicToggle";
 import { Footer } from "./components/Footer";
@@ -10,6 +10,7 @@ import { BrandLockup } from "./components/BrandMark";
 import { ErrorBoundary } from "./components/ErrorBoundary";
 import { AgeGate } from "./components/AgeGate";
 import { shouldShowAgeGate } from "./lib/ageGate";
+import { scrollToTop } from "./lib/scrollToTop";
 import type { Cigar, Drink } from "./types";
 
 // pairing je pocetni ekran i ostaje u glavnom chunku; ostale stranice
@@ -40,10 +41,17 @@ const NAV: { id: Page; icon: string; key: "nav.pairing" | "nav.catalog" | "nav.c
 
 export default function App() {
   const { t, lang, setLang } = useI18n();
-  const { page, shopping } = useRoute();
+  const route = useRoute();
+  const { page, shopping } = route;
+  const routeHash = routeToHash(route);
   // Gate se rješava PRIJE ostatka aplikacije — sadržaj se ne smije nazrijeti
   // ispod overlaya ni pročitati iz DOM-a čitačem ekrana.
   const [ageOk, setAgeOk] = useState(() => !shouldShowAgeGate());
+
+  // hash ruta mijenja sadržaj na mjestu — bez reseta ostaješ na starom scrollY
+  useEffect(() => {
+    scrollToTop();
+  }, [routeHash]);
 
   if (!ageOk) return <AgeGate onConfirm={() => setAgeOk(true)} />;
 

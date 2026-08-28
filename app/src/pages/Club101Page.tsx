@@ -4,6 +4,7 @@ import { useI18n } from "../i18n";
 import { Chip, SectionTitle } from "../components/ui";
 import { BackButton } from "../components/BackButton";
 import { LessonBody } from "../components/LessonBody";
+import { scrollToTop } from "../lib/scrollToTop";
 import club101 from "../data/club101.json";
 
 interface ShopLink { label: LocalizedText; url: string }
@@ -36,6 +37,11 @@ export function Club101Page({ onBack }: { onBack: () => void }) {
   const [lessonId, setLessonId] = useState<string | null>(null);
   const cards = GUIDE_TRACKS[track];
   const lesson = lessonId ? cards.find((c) => c.id === lessonId) ?? null : null;
+
+  const openLesson = (id: string) => {
+    setLessonId(id);
+    scrollToTop();
+  };
 
   if (lesson) {
     return (
@@ -93,7 +99,7 @@ export function Club101Page({ onBack }: { onBack: () => void }) {
           <button
             key={card.id}
             type="button"
-            onClick={() => setLessonId(card.id)}
+            onClick={() => openLesson(card.id)}
             className="block w-full rounded-xl border border-dim/15 bg-cedar p-4 text-left transition-colors hover:border-zlato/40"
           >
             <div className="flex items-baseline gap-2.5">

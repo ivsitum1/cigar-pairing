@@ -12,6 +12,7 @@ const FOCUSABLE =
 export function SheetShell({
   onClose,
   label,
+  scrollKey,
   panelClassName = "max-h-[85vh] w-full max-w-lg overflow-y-auto rounded-t-2xl border border-zlato/25 bg-humidor p-5 pb-8 sm:rounded-2xl",
   children,
 }: {
@@ -19,10 +20,19 @@ export function SheetShell({
   onClose: () => void;
   /** Pristupacno ime dijaloga (citac ekrana ga izgovori pri otvaranju). */
   label: string;
+  /** Kad se sadržaj zamijeni bez demontaže — reset scrolla (default: label). */
+  scrollKey?: string;
   panelClassName?: string;
   children: ReactNode;
 }) {
   const panelRef = useRef<HTMLDivElement>(null);
+  const contentKey = scrollKey ?? label;
+
+  // isti panel ostaje montiran kad se sadržaj zamijeni (npr. druga cigara) —
+  // bez reseta korisnik ostane na dnu prethodne kartice
+  useEffect(() => {
+    if (panelRef.current) panelRef.current.scrollTop = 0;
+  }, [contentKey]);
 
   useEffect(() => {
     const previouslyFocused = document.activeElement as HTMLElement | null;

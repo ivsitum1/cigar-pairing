@@ -4,6 +4,7 @@ import { useI18n } from "../i18n";
 import { SectionTitle } from "../components/ui";
 import { BackButton } from "../components/BackButton";
 import { LessonBody } from "../components/LessonBody";
+import { scrollToTop } from "../lib/scrollToTop";
 import bonton from "../data/bonton.json";
 
 interface Chapter {
@@ -24,6 +25,11 @@ export function BontonPage({ onBack }: { onBack: () => void }) {
   const { t, lx, lang } = useI18n();
   const [chapterId, setChapterId] = useState<string | null>(null);
   const chapter = chapterId ? CHAPTERS.find((c) => c.id === chapterId) ?? null : null;
+
+  const openChapter = (id: string) => {
+    setChapterId(id);
+    scrollToTop();
+  };
 
   if (chapter) {
     return (
@@ -57,7 +63,7 @@ export function BontonPage({ onBack }: { onBack: () => void }) {
           <button
             key={ch.id}
             type="button"
-            onClick={() => setChapterId(ch.id)}
+            onClick={() => openChapter(ch.id)}
             className="block w-full rounded-xl border border-dim/15 bg-cedar p-4 text-left transition-colors hover:border-zlato/40"
           >
             <div className="flex items-baseline gap-2.5">

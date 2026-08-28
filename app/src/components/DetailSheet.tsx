@@ -120,6 +120,7 @@ export function DetailSheet({
     <SheetShell
       onClose={onClose}
       label={sheetLabel}
+      scrollKey={id}
       panelClassName="max-h-[85vh] w-full max-w-lg overflow-y-auto rounded-t-2xl border border-zlato/25 bg-humidor p-5 pb-8 sm:rounded-2xl"
     >
         <div className="mx-auto mb-4 h-1 w-10 rounded-full bg-dim/40 sm:hidden" />
