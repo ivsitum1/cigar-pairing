@@ -36,9 +36,11 @@ Zatim:
 | Rum etiketa (E150a, 5+3, distillery-first) | Ch 14 | Ch 14 | `dictionary.json` + Club `d-rum-reading-label` + `lexicon` `distillery-first` |
 | Nikotin bez srama; snaga vs tijelo | Ch 15 | Ch 15 | `bonton.json` → `b-host`; `lexicon` → `snaga-vs-tijelo` |
 | Tuđi stol; vjetar; strani običaji | Ch 20 | Ch 20 | `bonton.json` → `b-outdoors`; Club `t-foreign-table` |
-| Unutarnja ljestvica / LE | Expansion I | (po potrebi) | `lexicon` → `unutarnja-ljestvica`, `limited-edition` |
-| Lounge precepts | Ch 16 | Ch 16 | `bonton.json` → `b-lounge` |
+| Unutarnja ljestvica / LE | Expansion I | Expansion I (*Unutarnja ljestvica*) | `lexicon` → `unutarnja-ljestvica`, `limited-edition` |
+| Value vs status pour | Expansion III + Ch 14/17 | Expansion III + Ch 14/17 | `lexicon` → `unutarnja-ljestvica` |
+| Lounge precepts (+ dress) | Ch 16 (#11 Dress) | Ch 16 (#11 Odjeća) | `bonton.json` → `b-lounge` |
 | **Citati / epigraf (tisak)** | Back matter *Notes on quotations* | *Napomene o citatima* | nema app JSON — politika u rukopisu |
+| **Glossary / Words you'll meet** | Front *Words you'll meet* + back *Glossary of table words* | (HR sync later) | `dictionary.json` / `lexicon` (app terms) |
 | **Arhetipi večeri** | Expansion (solo…poklon/put) | Expansion (isto) | Club `t-evening-shape` |
 | Body / ABV / Maduro–slatkoća | bilješke | — | `app/src/engine/` (ne bonton eseji) |
 | **EN freeze** | `HOW-TO-BE-…-DRAFT.md` = source of truth | sync nakon EN pass | app sync iz kanona |
