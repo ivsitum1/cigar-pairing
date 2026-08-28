@@ -1,12 +1,13 @@
 # -*- coding: utf-8 -*-
-"""Scrape drink shop listings (Tipsy, CugaKlik, Miva, Roto, Humidor) -> raw JSON.
+"""Scrape drink shop listings (Allez, Tipsy, CugaKlik, Miva, Roto, Humidor) -> raw JSON.
 
 Cooltura: no public product catalogue (pub / Wolt only) — skipped with a note.
 Havana Cigar Shop webshop: cigars/accessories only — no bottle catalogue.
+Miva: spirits only (vina excluded — wines inflate gap noise).
 
   python scripts/scrape-drink-shop-listings.py
   python scripts/scrape-drink-shop-listings.py --shops tipsy,cugaklik,miva
-  python scripts/scrape-drink-shop-listings.py --shops humidor --merge
+  python scripts/scrape-drink-shop-listings.py --shops allez,humidor --merge
 """
 from __future__ import annotations
 
@@ -16,6 +17,7 @@ import re
 import time
 import urllib.error
 import urllib.request
+from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urljoin
 
@@ -29,6 +31,7 @@ UA = {
 }
 
 SHOP_META = {
+    "allez": {"label": "allez.hr", "host": "allez.hr"},
     "tipsy": {"label": "tipsy.hr", "host": "tipsy.hr"},
     "cugaklik": {"label": "cugaklik.hr", "host": "cugaklik.hr"},
     "miva": {"label": "Miva", "host": "miva.com.hr"},
@@ -65,7 +68,6 @@ CUGAKLIK_WC_CATEGORIES = [
 
 MIVA_CATEGORIES = [
     "https://www.miva.com.hr/zestoka-pica?num_per_page=96",
-    "https://www.miva.com.hr/vina?num_per_page=96",
 ]
 
 ROTO_CATEGORIES = [
@@ -461,12 +463,18 @@ def scrape_cugaklik() -> list[dict]:
     return out
 
 
+def scrape_allez() -> list[dict]:
+    from allez_listings import scrape_allez as _scrape
+
+    return _scrape()
+
+
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument(
         "--shops",
-        default="tipsy,cugaklik,miva,roto,humidor",
-        help="Comma list: tipsy,cugaklik,miva,roto,humidor,coolitura",
+        default="allez,tipsy,cugaklik,miva,roto,humidor",
+        help="Comma list: allez,tipsy,cugaklik,miva,roto,humidor,coolitura",
     )
     ap.add_argument(
         "--merge",
@@ -483,7 +491,9 @@ def main() -> None:
             notes.append("Cooltura: no public web catalogue (Wolt/pub only) — skipped")
             print(notes[-1])
             continue
-        if shop == "tipsy":
+        if shop == "allez":
+            all_items.extend(scrape_allez())
+        elif shop == "tipsy":
             all_items.extend(scrape_tipsy())
         elif shop == "cugaklik":
             all_items.extend(scrape_cugaklik())
@@ -501,10 +511,17 @@ def main() -> None:
         prev = json.loads(OUT.read_text(encoding="utf-8"))
         old_items = prev.get("items") if isinstance(prev, dict) else prev
         old_notes = prev.get("notes") if isinstance(prev, dict) else []
+        # Preserve shops not in this run (e.g. seeded ecuga rows).
         keep = [it for it in (old_items or []) if (it.get("shop") or "") not in wanted]
         all_items = keep + all_items
         notes = list(old_notes or []) + notes
-    payload = {"items": all_items, "notes": notes, "count": len(all_items)}
+    payload = {
+        "fetchedAt": datetime.now(timezone.utc).isoformat(),
+        "shops": wanted,
+        "items": all_items,
+        "notes": notes,
+        "count": len(all_items),
+    }
     OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"wrote {OUT} ({len(all_items)} items)")
 
