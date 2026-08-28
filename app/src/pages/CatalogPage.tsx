@@ -631,7 +631,6 @@ export function CatalogPage({
     const cmp = sort ? by[sort.key] : undefined;
     if (!cmp || !sort) return [...rows].sort(by.name!);
     return [...rows].sort(directedComparator(cmp, SORT_DEFAULT_DIR[sort.key], sort.dir));
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [
     tab,
     q,

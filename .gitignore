@@ -25,3 +25,10 @@ agent-brain-lite/.obsidian/workspace.json
 # (see docs/bonton/CROSSWALK.md). Keep only README on master.
 docs/bonton/notebooklm-grill/*
 !docs/bonton/notebooklm-grill/README.md
+
+# Scraped third-party article dumps (Holts Clubhouse, etc.) — local only
+01_work/output/
+
+# NotebookLM studio book assets (large PNG/PPTX/PDF) — regenerable locally
+docs/bonton/images/notebooklm-studio/*
+!docs/bonton/images/notebooklm-studio/README.md

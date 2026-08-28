@@ -7,6 +7,7 @@ import type { RegionFilter } from "../types";
 
 const KEY = "market";
 const listeners = new Set<() => void>();
+let storageFailed = false;
 
 export function parseMarket(v: string | null): RegionFilter {
   if (v === "HR" || v === "EU" || v === "USA" || v === "ALL") return v;
@@ -14,20 +15,42 @@ export function parseMarket(v: string | null): RegionFilter {
   return "HR";
 }
 
-let current: RegionFilter = parseMarket(localStorage.getItem(KEY));
+function readStored(): RegionFilter {
+  try {
+    return parseMarket(localStorage.getItem(KEY));
+  } catch {
+    // storage blokiran (Safari private, stroga pravila) — zadano HR
+    return "HR";
+  }
+}
+
+let current: RegionFilter = readStored();
 
 export function setMarket(m: RegionFilter) {
   current = m;
-  localStorage.setItem(KEY, m);
+  try {
+    localStorage.setItem(KEY, m);
+    storageFailed = false;
+  } catch {
+    // pun ili blokiran storage — in-memory odabir i dalje vrijedi
+    storageFailed = true;
+  }
   listeners.forEach((l) => l());
 }
 
+const subscribe = (cb: () => void) => {
+  listeners.add(cb);
+  return () => listeners.delete(cb);
+};
+
+export function getMarket(): RegionFilter {
+  return current;
+}
+
 export function useMarket(): RegionFilter {
-  return useSyncExternalStore(
-    (cb) => {
-      listeners.add(cb);
-      return () => listeners.delete(cb);
-    },
-    () => current,
-  );
+  return useSyncExternalStore(subscribe, () => current);
+}
+
+export function useMarketStorageHealth(): boolean {
+  return useSyncExternalStore(subscribe, () => storageFailed);
 }

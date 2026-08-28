@@ -33,6 +33,9 @@ jobs:
         working-directory: app
       - run: npm test
         working-directory: app
+        env:
+          # Exhaustive giftFinder matrix (~1920 combos); skipped in deploy.yml smoke.
+          CI_EXHAUSTIVE_GIFTS: "1"
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -101,16 +104,12 @@ jobs:
         working-directory: app
         run: python scripts/apply-taxonomy.py --check --skip-normalize
 
-      # NEBLOKIRAJUCI — pada i na cistom `master` HEAD-u: 910 linija bez
-      # taksonomije preko 127 marki, plus 15 marki bez datoteke, iz uvoza
-      # kataloga koji je master narastao s 2401 na 3701 zapisa. To je backlog
-      # kuriranja, ne regresija (bio je 1351; kurira se marku po marku).
-      # Bulk upis svih linija u `unresolved` je probano i ODBACENO — uzrokuje
-      # osciliranje apply-taxonomyja s periodom 2 (A -> B -> A), tj. lijeci
-      # simptom i lomi pipeline.
-      - name: Catalog backlog (informativno)
+      # Blokirajući — pada samo na NOVE rupa u taksonomiji (delta vs
+      # scripts/data/taxonomy_known_violations.txt). Backlog kuriranja živi u
+      # baselineu; osvježi ga namjerno s --update-baseline kad se namjerno
+      # proširi katalog bez taksonomije, ili kad se rupa zatvore.
+      - name: Taxonomy coverage (no new gaps)
         working-directory: app
-        continue-on-error: true
         run: python scripts/taxonomy-audit.py --fail-on-new --check-only
 
       - run: npm run build

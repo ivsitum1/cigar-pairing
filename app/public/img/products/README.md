@@ -1,20 +1,22 @@
 # Fotografije proizvoda
 
-Ovdje zavrsavaju obradjene slike cigara i boca:
+Ovdje završavaju obrađene slike cigara i boca:
 
     public/img/products/cigars/<id cigare>.webp
-    public/img/products/drinks/<id pica>.webp
+    public/img/products/drinks/<id pića>.webp
 
-Ne uredjuju se rucno. Nastaju u dva koraka, oba se pokrecu **lokalno** (prvi
-trazi mrezu prema duckanima):
+Ne uređuju se ručno. Nastaju u tri koraka, sva se pokreću **lokalno**
+(prvi dva traže mrežu prema dućanima):
 
-    python3 scripts/scrape-product-images.py --kind cigars
-    python3 scripts/normalize-product-images.py
+    python scripts/attach-product-images.py   # adrese → src/data/productImages.json
+    python scripts/fetch-product-images.py    # preuzimanje → scripts/output/product-images/
+    python scripts/normalize-product-images.py  # cutout → ovdje + productImagesLocal.json
 
-Prvi korak sprema originale u `scripts/output/product-images/raw/` (ne ide u
-git — to su tudje fotografije u punoj velicini). Drugi im makne podlogu, izrezi
-ih na proizvod, poravna svjetlinu i spremi WebP s prozirnoscu, a popis upise u
-`src/data/productImages.json`.
+`attach` puni popis dućanskih URL-ova (`productImages.json`). `fetch` sprema
+originale u `scripts/output/product-images/` (ne ide u git — tuđe fotografije
+u punoj veličini). `normalize` im makne podlogu, izreže proizvod, poravna
+svjetlinu i spremi WebP s prozirnošću, a popis upiše u
+`src/data/productImagesLocal.json`.
 
-Dok ove mape nema, aplikacija se crta bez slika i nista se ne lomi — kartica
-jednostavno nema pojas s fotografijom.
+Dok lokalnog manifesta nema (prazni `cigars`/`drinks`), aplikacija koristi
+dućanske URL-ove iz `productImages.json` — kartica i dalje ima sliku.

@@ -62,10 +62,50 @@ def _domena(url: str | None) -> str:
     return urllib.parse.urlparse(url).netloc.removeprefix("www.")
 
 
-def obradi_vrstu(vrsta: str, limit: int, sirina: int, provjera: bool) -> tuple[dict, list[dict]]:
-    lib = _lib()
+def _obradi_jednu(
+    put_str: str,
+    pid: str,
+    izvor_url: str | None,
+    sirina: int,
+    cilj_str: str,
+    provjera: bool,
+) -> tuple[str, dict | None, dict]:
+    """Worker: jedna slika. Vraća (pid, popis_entry|None, redak)."""
     from PIL import Image, UnidentifiedImageError  # noqa: PLC0415
 
+    lib = _lib()
+    put = Path(put_str)
+    cilj = Path(cilj_str)
+    try:
+        with Image.open(put) as img:
+            img.load()
+            obradjena, izvjestaj = lib.obradi(img, stranica=sirina)
+    except (UnidentifiedImageError, OSError) as e:
+        return pid, None, {"id": pid, "greska": f"{type(e).__name__}: {e}"}
+
+    bajtova = 0 if provjera else lib.spremi_webp(obradjena, cilj)
+    popis = {
+        "w": izvjestaj.sirina,
+        "h": izvjestaj.visina,
+        "t": izvjestaj.postupak,
+    }
+    redak = {
+        "id": pid,
+        "izvor": _domena(izvor_url),
+        "postupak": izvjestaj.postupak,
+        "podloga": izvjestaj.podloga,
+        "udio_ruba": izvjestaj.udio_ruba,
+        "udio_proizvoda": izvjestaj.udio_proizvoda,
+        "svjetlina": izvjestaj.svjetlina_faktor,
+        "px": f"{izvjestaj.sirina}x{izvjestaj.visina}",
+        "kb": round(bajtova / 1024, 1) if bajtova else None,
+    }
+    return pid, popis, redak
+
+
+def obradi_vrstu(
+    vrsta: str, limit: int, sirina: int, provjera: bool, jobs: int = 1
+) -> tuple[dict, list[dict]]:
     izvori = json.loads(RAW_INDEX.read_text(encoding="utf-8")) if RAW_INDEX.exists() else {}
     izvori_vrste = izvori.get(vrsta, {})
 
@@ -77,40 +117,73 @@ def obradi_vrstu(vrsta: str, limit: int, sirina: int, provjera: bool) -> tuple[d
     popis: dict[str, dict] = {}
     redci: list[dict] = []
     izlaz_vrste = IZLAZ_DIR / vrsta
+    izlaz_vrste.mkdir(parents=True, exist_ok=True)
 
-    for n, put in enumerate(datoteke, 1):
-        pid = put.stem
+    staro_popis: dict = {}
+    if MANIFEST.exists():
         try:
-            with Image.open(put) as img:
-                img.load()
-                obradjena, izvjestaj = lib.obradi(img, stranica=sirina)
-        except (UnidentifiedImageError, OSError) as e:
-            redci.append({"id": pid, "greska": f"{type(e).__name__}: {e}"})
-            continue
+            staro_popis = (json.loads(MANIFEST.read_text(encoding="utf-8")) or {}).get(
+                vrsta, {}
+            ) or {}
+        except json.JSONDecodeError:
+            staro_popis = {}
 
+    # Resume: već gotov WebP ne dira se.
+    posao: list[tuple[str, str, str | None, int, str, bool]] = []
+    for put in datoteke:
+        pid = put.stem
         cilj = izlaz_vrste / f"{pid}.webp"
-        bajtova = 0 if provjera else lib.spremi_webp(obradjena, cilj)
+        if cilj.exists() and not provjera:
+            if pid in staro_popis and isinstance(staro_popis[pid], dict):
+                popis[pid] = staro_popis[pid]
+            else:
+                try:
+                    from PIL import Image  # noqa: PLC0415
 
-        popis[pid] = {
-            "w": izvjestaj.sirina,
-            "h": izvjestaj.visina,
-            "t": izvjestaj.postupak,
-        }
-        redci.append(
-            {
-                "id": pid,
-                "izvor": _domena((izvori_vrste.get(pid) or {}).get("image")),
-                "postupak": izvjestaj.postupak,
-                "podloga": izvjestaj.podloga,
-                "udio_ruba": izvjestaj.udio_ruba,
-                "udio_proizvoda": izvjestaj.udio_proizvoda,
-                "svjetlina": izvjestaj.svjetlina_faktor,
-                "px": f"{izvjestaj.sirina}x{izvjestaj.visina}",
-                "kb": round(bajtova / 1024, 1) if bajtova else None,
-            }
-        )
-        if n % 50 == 0:
-            print(f"  {vrsta}: {n}/{len(datoteke)}")
+                    with Image.open(cilj) as gotova:
+                        gotova.load()
+                        popis[pid] = {
+                            "w": gotova.width,
+                            "h": gotova.height,
+                            "t": "framed",
+                        }
+                except OSError:
+                    pass
+                else:
+                    redci.append({"id": pid, "preskoceno": "vec postoji"})
+                    continue
+            redci.append({"id": pid, "preskoceno": "vec postoji"})
+            continue
+        izvor = (izvori_vrste.get(pid) or {}).get("image")
+        posao.append((str(put), pid, izvor, sirina, str(cilj), provjera))
+
+    if not posao:
+        return popis, redci
+
+    workers = max(1, jobs)
+    if workers == 1:
+        for i, args in enumerate(posao, 1):
+            pid, entry, redak = _obradi_jednu(*args)
+            if entry:
+                popis[pid] = entry
+            redci.append(redak)
+            if i % 50 == 0:
+                print(f"  {vrsta}: {i}/{len(posao)} (ukupno {len(popis)})")
+    else:
+        from concurrent.futures import ProcessPoolExecutor, as_completed  # noqa: PLC0415
+
+        print(f"  {vrsta}: {len(posao)} za obradu, jobs={workers}")
+        done = 0
+        with ProcessPoolExecutor(max_workers=workers) as pool:
+            futures = [pool.submit(_obradi_jednu, *a) for a in posao]
+            for fut in as_completed(futures):
+                pid, entry, redak = fut.result()
+                if entry:
+                    popis[pid] = entry
+                redci.append(redak)
+                done += 1
+                if done % 50 == 0:
+                    print(f"  {vrsta}: {done}/{len(posao)} (ukupno {len(popis)})")
 
     return popis, redci
 
@@ -120,6 +193,12 @@ def main() -> int:
     p.add_argument("--kind", choices=VRSTE, action="append", help="zadano: obje vrste")
     p.add_argument("--limit", type=int, default=0)
     p.add_argument("--width", type=int, default=800, help="najveca stranica izlazne slike")
+    p.add_argument(
+        "--jobs",
+        type=int,
+        default=1,
+        help="broj procesa za obradu (1 = sekvencijalno)",
+    )
     p.add_argument("--check", action="store_true", help="ne pisi nista (za CI)")
     args = p.parse_args()
 
@@ -143,7 +222,9 @@ def main() -> int:
         if not (RAW_DIR / vrsta).exists():
             manifest[vrsta] = {}
             continue
-        popis, redci = obradi_vrstu(vrsta, args.limit, args.width, args.check)
+        popis, redci = obradi_vrstu(
+            vrsta, args.limit, args.width, args.check, jobs=args.jobs
+        )
         manifest[vrsta] = popis
         svi_redci.extend({"vrsta": vrsta, **r} for r in redci)
         cutout = sum(1 for r in redci if r.get("postupak") == "cutout")

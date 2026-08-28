@@ -7,8 +7,10 @@ from fastapi import Depends, FastAPI, File, Form, Header, HTTPException, UploadF
 from fastapi.middleware.cors import CORSMiddleware
 
 from . import band_service, ocr_service
-from .config import API_TOKEN, CORS_ORIGINS, IMAGE_TTL_HINT, MAX_UPLOAD_BYTES
+from .config import API_TOKEN, CORS_ORIGINS, IMAGE_TTL_HINT, MAX_UPLOAD_BYTES, require_token_for_lan
 from .images import InvalidImage
+
+require_token_for_lan()
 
 app = FastAPI(title="cigar-pairing-ocr", version="0.1.0")
 

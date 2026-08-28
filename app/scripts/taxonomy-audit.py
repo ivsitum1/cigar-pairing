@@ -3,7 +3,8 @@
 
 Usage:
   python scripts/taxonomy-audit.py
-  python scripts/taxonomy-audit.py --fail-on-new   # CI: every brand/line covered
+  python scripts/taxonomy-audit.py --fail-on-new   # CI: fail only on NEW gaps vs baseline
+  python scripts/taxonomy-audit.py --update-baseline  # refresh known-violation allowlist
 """
 from __future__ import annotations
 
@@ -32,7 +33,9 @@ from taxonomy_lib import (
 )
 
 APP = Path(__file__).resolve().parent.parent
-
+KNOWN_VIOLATIONS_PATH = (
+    Path(__file__).resolve().parent / "data" / "taxonomy_known_violations.txt"
+)
 
 def suggest_split_b(line: str) -> dict | None:
     """Class B: strip trailing dimension group."""
@@ -106,7 +109,7 @@ def index_taxonomy_by_brand() -> dict[str, dict]:
 
 
 def fail_on_new_violations(cigars: list) -> list[str]:
-    """Brands/lines in corpus that lack taxonomy coverage (Phase 5)."""
+    """Brands/lines in corpus that lack taxonomy coverage (full backlog)."""
     by_brand: dict[str, set[str]] = collections.defaultdict(set)
     for c in cigars:
         brand = c.get("brand") or ""
@@ -142,6 +145,38 @@ def fail_on_new_violations(cigars: list) -> list[str]:
                 )
     return errors
 
+
+def load_known_violations(path: Path = KNOWN_VIOLATIONS_PATH) -> set[str]:
+    if not path.exists():
+        return set()
+    out: set[str] = set()
+    for line in path.read_text(encoding="utf-8").splitlines():
+        s = line.strip()
+        if s and not s.startswith("#"):
+            out.add(s)
+    return out
+
+
+def write_known_violations(violations: list[str], path: Path = KNOWN_VIOLATIONS_PATH) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    body = "\n".join(
+        [
+            "# Taxonomy coverage gaps known at baseline time.",
+            "# --fail-on-new fails only on messages not in this file.",
+            "# Refresh with: python scripts/taxonomy-audit.py --update-baseline",
+            "",
+            *sorted(violations),
+            "",
+        ]
+    )
+    path.write_text(body, encoding="utf-8")
+
+
+def new_violations_vs_baseline(
+    current: list[str], known: set[str] | None = None
+) -> list[str]:
+    baseline = known if known is not None else load_known_violations()
+    return [v for v in current if v not in baseline]
 
 def run_audit(*, write_worklist: bool = True) -> dict:
     cigars = load_json(CIGARS_PATH, [])
@@ -311,7 +346,12 @@ def main() -> None:
     ap.add_argument(
         "--fail-on-new",
         action="store_true",
-        help="Exit 1 if any brand/line in cigars.json lacks taxonomy coverage",
+        help="Exit 1 if coverage gaps appear that are not in taxonomy_known_violations.txt",
+    )
+    ap.add_argument(
+        "--update-baseline",
+        action="store_true",
+        help="Rewrite taxonomy_known_violations.txt from the current backlog",
     )
     ap.add_argument(
         "--no-worklist",
@@ -330,12 +370,50 @@ def main() -> None:
         print("cigars.json is not a list", file=sys.stderr)
         sys.exit(2)
 
+    if args.update_baseline:
+        all_v = fail_on_new_violations(cigars)
+        write_known_violations(all_v)
+        print(
+            json.dumps(
+                {
+                    "ok": True,
+                    "updated": str(KNOWN_VIOLATIONS_PATH.relative_to(APP)),
+                    "count": len(all_v),
+                },
+                indent=2,
+            )
+        )
+        return
+
     if args.fail_on_new or args.check_only:
-        violations = fail_on_new_violations(cigars)
-        if violations:
-            print(json.dumps({"ok": False, "violations": violations}, indent=2, ensure_ascii=False))
+        all_v = fail_on_new_violations(cigars)
+        novel = new_violations_vs_baseline(all_v)
+        known_n = len(load_known_violations())
+        if novel:
+            print(
+                json.dumps(
+                    {
+                        "ok": False,
+                        "new_violations": novel,
+                        "known_baseline": known_n,
+                        "current_total": len(all_v),
+                    },
+                    indent=2,
+                    ensure_ascii=False,
+                )
+            )
             sys.exit(1)
-        print(json.dumps({"ok": True, "violations": []}, indent=2))
+        print(
+            json.dumps(
+                {
+                    "ok": True,
+                    "new_violations": [],
+                    "known_baseline": known_n,
+                    "current_total": len(all_v),
+                },
+                indent=2,
+            )
+        )
         if args.check_only:
             return
 

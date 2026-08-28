@@ -625,7 +625,6 @@ export function JournalCalendar() {
   const days = useMemo(
     () => monthGrid(cursor.year, cursor.month, today),
     // today se mijenja svakim renderom, ali samo kao "je li ovo današnji dan"
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     [cursor.year, cursor.month],
   );
 

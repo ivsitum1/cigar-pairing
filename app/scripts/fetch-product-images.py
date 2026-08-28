@@ -220,13 +220,24 @@ def worklist(vrsta: str) -> list[tuple[str, list[str]]]:
 
 def dohvati(url: str, timeout: int = 20) -> tuple[bytes, str] | None:
     try:
-        zahtjev = urllib.request.Request(url, headers=HEADERS)
+        # prostori i ostali unsafe znakovi u putanji (npr. "media siglo")
+        dijelovi = urllib.parse.urlsplit(url)
+        safe = urllib.parse.urlunsplit(
+            (
+                dijelovi.scheme,
+                dijelovi.netloc,
+                urllib.parse.quote(dijelovi.path, safe="/%"),
+                dijelovi.query,
+                dijelovi.fragment,
+            )
+        )
+        zahtjev = urllib.request.Request(safe, headers=HEADERS)
         with urllib.request.urlopen(zahtjev, timeout=timeout) as odgovor:
             duljina = odgovor.headers.get("Content-Length")
             if duljina and int(duljina) > NAJVECA_SLIKA_MB * 1024 * 1024:
                 return None
             return odgovor.read(), (odgovor.headers.get_content_type() or "")
-    except (urllib.error.URLError, urllib.error.HTTPError, OSError, TimeoutError) as e:
+    except Exception as e:  # mreža / krivi URL — jedna stavka ne smije srušiti prolaz
         print(f"    preskacem ({type(e).__name__}): {url}")
         return None
 
@@ -276,7 +287,7 @@ def main() -> int:
             "bytes": len(slika[0]),
             "fetchedAt": date.today().isoformat(),
         }
-        print(f"    ✓ {datoteka.name} ({len(slika[0]) // 1024} kB)")
+        print(f"    ok {datoteka.name} ({len(slika[0]) // 1024} kB)")
         return True
 
     uspjeh = 0

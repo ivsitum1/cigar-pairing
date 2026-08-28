@@ -431,7 +431,6 @@ export function PairingPage() {
       setSelectedDrink(drink);
       setServe(undefined);
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [route]);
 
   useEffect(() => {

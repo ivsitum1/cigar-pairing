@@ -17,10 +17,22 @@ pip install -r requirements.txt
 
 ## Run
 
+Default bind is **loopback** (no token needed):
+
 ```bash
 cd backend
-uvicorn app.main:app --host 0.0.0.0 --port 8787
+uvicorn app.main:app --host 127.0.0.1 --port 8787
+# or: ./start-ocr.ps1 / start-ocr.bat
 ```
+
+For LAN / Android APK access, bind to all interfaces **and** set a token:
+
+```bash
+OCR_HOST=0.0.0.0 OCR_API_TOKEN=$(python -c "import secrets;print(secrets.token_urlsafe(32))") \
+  uvicorn app.main:app --host 0.0.0.0 --port 8787
+```
+
+Importing `app.main` (and the start scripts) refuse a non-loopback `OCR_HOST` when `OCR_API_TOKEN` is empty.
 
 ## Endpoints
 
@@ -42,8 +54,8 @@ Set app env: `VITE_OCR_API_URL=http://127.0.0.1:8787`
 | `BAND_REFS_DIR` | `backend/data/band_refs` | band reference storage |
 | `MAX_UPLOAD_BYTES` | `12582912` (12 MB) | per-request upload ceiling → `413` |
 | `MAX_IMAGE_PIXELS` | `50000000` | decompression-bomb guard → `400` |
-| `OCR_API_TOKEN` | *(empty)* | shared token; empty = **no auth** |
-| `OCR_HOST` / `OCR_PORT` | `0.0.0.0` / `8787` | bind address |
+| `OCR_API_TOKEN` | *(empty)* | shared token; empty = **no auth** (loopback only) |
+| `OCR_HOST` / `OCR_PORT` | `127.0.0.1` / `8787` | bind address (non-loopback requires token) |
 
 ## Authentication
 
@@ -51,11 +63,10 @@ Every endpoint **except `/health`** requires `Authorization: Bearer <token>`
 when `OCR_API_TOKEN` is set. Empty (the default) means no check — convenient
 for local development on `127.0.0.1`.
 
-**Set it whenever the service binds to `0.0.0.0`.** That is the default bind,
-chosen so an Android build on the same network can reach it — which also means
-everyone else on that network can. `/band/reference` writes to disk,
-`/band/references` enumerates what is stored, and `/ocr` runs the most
-expensive computation in the service.
+**Set it whenever the service binds to a non-loopback address** (`0.0.0.0`,
+LAN IP). Empty token is only for local development on `127.0.0.1`.
+`/band/reference` writes to disk, `/band/references` enumerates what is stored,
+and `/ocr` runs the most expensive computation in the service.
 
 ```bash
 OCR_API_TOKEN=$(python -c "import secrets;print(secrets.token_urlsafe(32))")

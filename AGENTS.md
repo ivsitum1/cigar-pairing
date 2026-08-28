@@ -36,11 +36,11 @@ python scripts/test_product_image_lib.py   # traži Pillow; CI ga instalira za t
 ```
 `ci.yml` runs several more `--check` writers in the same blocking step (`derive-drink-brands`, `derive-drink-display-names`, `normalize-profile-axes`, `merge-cigarworld-aroma`, `apply-taste-reports`) plus `test_neptune_strength.py` and `test_taste_reports.py` — treat `ci.yml` as the source of truth, not this list.
 
-**One gate is deliberately non-blocking** (`continue-on-error: true`) and fails on `master` today:
+**Taxonomy coverage gate (blocking):** fails only on *new* gaps vs the allowlist:
 ```
-python scripts/taxonomy-audit.py --fail-on-new --check-only   # 925 violations
+python scripts/taxonomy-audit.py --fail-on-new --check-only
 ```
-910 lines across 127 brands have no taxonomy entry, and 15 brands have no taxonomy file at all — a curation backlog from the import that grew the catalog from 2401 to 3701 records, worked down brand by brand. A red line here is expected; do **not** "fix" it by bulk-writing lines into `unresolved` (tried, rejected: it makes `apply-taxonomy` oscillate with period 2).
+Known backlog lives in `scripts/data/taxonomy_known_violations.txt` (~932 messages: lines without a taxonomy entry on `status: done` brands, plus brands with no taxonomy file). Curate brand by brand; refresh the allowlist deliberately with `--update-baseline` when you intentionally grow the catalog without taxonomy, or when you close gaps. Do **not** "fix" the backlog by bulk-writing lines into `unresolved` (tried, rejected: it makes `apply-taxonomy` oscillate with period 2). Live corpus size is ~3293 cigar records (not the older 3701 import peak figure).
 
 If `apply-taxonomy --check` reports `changed: true` with all `auto_pass_counts` at 0, the pending write is usually just record **order**: it sorts by a raw `.lower()` on brand+line, where accented letters sort after all of ASCII (`Clásica` belongs after `Classic Tempo`). Run the writer once (`python scripts/apply-taxonomy.py --skip-normalize`) and diff — if no record's content changed, it was only the sort.
 A separate `backend` job runs `python -m unittest discover -s tests` in `backend/`.

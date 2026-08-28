@@ -38,4 +38,31 @@ describe("market — zadano tržište", () => {
     expect(localStorage.getItem("market")).toBe("USA");
     expect(parseMarket(localStorage.getItem("market"))).toBe("USA");
   });
+
+  it("blokiran getItem ne ruši modul — zadano HR", async () => {
+    vi.stubGlobal("localStorage", {
+      getItem: () => {
+        throw new Error("blocked");
+      },
+      setItem: () => undefined,
+      removeItem: () => undefined,
+    });
+    const { getMarket } = await load();
+    expect(getMarket()).toBe("HR");
+  });
+
+  it("blokiran setItem ne baca — in-memory odabir ostaje", async () => {
+    vi.stubGlobal("localStorage", {
+      getItem: () => null,
+      setItem: () => {
+        throw new Error("quota");
+      },
+      removeItem: () => undefined,
+    });
+    const { setMarket, getMarket, useMarketStorageHealth } = await load();
+    expect(() => setMarket("USA")).not.toThrow();
+    expect(getMarket()).toBe("USA");
+    // hook getter reads the same storageFailed flag
+    expect(useMarketStorageHealth).toBeTypeOf("function");
+  });
 });

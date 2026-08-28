@@ -170,7 +170,6 @@ export function ShoppingPage({
 
     return [...cigars, ...drinks];
     // getItemState/totalStock citaju modul-cache; ovisnosti su store snapshoti
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [collection, humidors, market, otherShopsLabel, lx]);
 
   // pillovi uvijek iz pune liste (brojevi se ne mijenjaju dok filtriraš)
@@ -254,7 +253,6 @@ export function ShoppingPage({
         cat,
         missing: collectionGaps(cat, DRINKS[cat], isOwned),
       })).filter((g) => g.missing.length > 0),
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     [collection],
   );
   const totalBuckets = CATEGORIES.length * 5;
@@ -267,14 +265,12 @@ export function ShoppingPage({
         cat,
         picks: segmentPicks(DRINKS[cat], isOwned),
       })),
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     [collection],
   );
 
   // buffet petorka za odabranu kategoriju
   const buffet = useMemo(
     () => buffetFive(buffetCat, DRINKS[buffetCat], isOwned),
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     [buffetCat, collection],
   );
 
