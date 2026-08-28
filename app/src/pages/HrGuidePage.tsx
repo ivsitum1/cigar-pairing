@@ -4,6 +4,7 @@ import { useI18n } from "../i18n";
 import { SectionTitle } from "../components/ui";
 import { BackButton } from "../components/BackButton";
 import { LessonBody } from "../components/LessonBody";
+import { scrollToTop } from "../lib/scrollToTop";
 import hrGuide from "../data/hrGuide.json";
 
 interface GuideSection {
@@ -24,6 +25,11 @@ export function HrGuidePage({ onBack }: { onBack: () => void }) {
   const { t, lx, lang } = useI18n();
   const [sectionId, setSectionId] = useState<string | null>(null);
   const section = sectionId ? SECTIONS.find((item) => item.id === sectionId) ?? null : null;
+
+  const openSection = (id: string) => {
+    setSectionId(id);
+    scrollToTop();
+  };
 
   if (section) {
     return (
@@ -57,7 +63,7 @@ export function HrGuidePage({ onBack }: { onBack: () => void }) {
           <button
             key={item.id}
             type="button"
-            onClick={() => setSectionId(item.id)}
+            onClick={() => openSection(item.id)}
             className="block w-full rounded-xl border border-dim/15 bg-cedar p-4 text-left transition-colors hover:border-zlato/40"
           >
             <div className="flex items-baseline gap-2.5">

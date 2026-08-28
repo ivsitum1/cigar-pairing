@@ -3,6 +3,7 @@ import type { LocalizedText } from "../types";
 import { useI18n } from "../i18n";
 import { Chip, SectionTitle } from "../components/ui";
 import { BackButton } from "../components/BackButton";
+import { scrollToTop } from "../lib/scrollToTop";
 import dictionary from "../data/dictionary.json";
 
 type DictionaryCategory = "cigar" | "drink" | "pairing" | "table";
@@ -86,6 +87,11 @@ export function DictionaryPage({ onBack }: { onBack: () => void }) {
 
   const entry = entryId ? BY_ID.get(entryId) ?? null : null;
 
+  const openEntry = (id: string) => {
+    setEntryId(id);
+    scrollToTop();
+  };
+
   const catLabel = (c: DictionaryCategory | "all") => {
     switch (c) {
       case "all":
@@ -132,7 +138,7 @@ export function DictionaryPage({ onBack }: { onBack: () => void }) {
                         <button
                           type="button"
                           className="font-medium text-zlato-2 underline-offset-2 hover:underline"
-                          onClick={() => setEntryId(d.with)}
+                          onClick={() => openEntry(d.with)}
                         >
                           {lx(other.term)}
                         </button>
@@ -160,7 +166,7 @@ export function DictionaryPage({ onBack }: { onBack: () => void }) {
                     <button
                       key={id}
                       type="button"
-                      onClick={() => setEntryId(id)}
+                      onClick={() => openEntry(id)}
                       className="rounded-full border border-zlato/35 px-3 py-1 font-display text-micro uppercase tracking-widest text-zlato hover:bg-zlato/10"
                     >
                       {lx(other.term)}
@@ -251,7 +257,7 @@ export function DictionaryPage({ onBack }: { onBack: () => void }) {
                 )}
                 <button
                   type="button"
-                  onClick={() => setEntryId(item.id)}
+                  onClick={() => openEntry(item.id)}
                   className="block w-full rounded-xl border border-dim/15 bg-cedar p-4 text-left transition-colors hover:border-zlato/40"
                 >
                   <div className="flex items-baseline justify-between gap-2">

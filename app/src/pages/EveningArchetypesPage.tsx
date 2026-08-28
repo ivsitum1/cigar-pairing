@@ -4,6 +4,7 @@ import { useI18n } from "../i18n";
 import { SectionTitle } from "../components/ui";
 import { BackButton } from "../components/BackButton";
 import { LessonBody } from "../components/LessonBody";
+import { scrollToTop } from "../lib/scrollToTop";
 import eveningArchetypes from "../data/eveningArchetypes.json";
 
 interface EveningArchetype {
@@ -25,6 +26,11 @@ export function EveningArchetypesPage({ onBack }: { onBack: () => void }) {
   const { t, lx, lang } = useI18n();
   const [entryId, setEntryId] = useState<string | null>(null);
   const entry = entryId ? ENTRIES.find((item) => item.id === entryId) ?? null : null;
+
+  const openEntry = (id: string) => {
+    setEntryId(id);
+    scrollToTop();
+  };
 
   if (entry) {
     return (
@@ -72,7 +78,7 @@ export function EveningArchetypesPage({ onBack }: { onBack: () => void }) {
           <button
             key={item.id}
             type="button"
-            onClick={() => setEntryId(item.id)}
+            onClick={() => openEntry(item.id)}
             className="block w-full rounded-xl border border-dim/15 bg-cedar p-4 text-left transition-colors hover:border-zlato/40"
           >
             <div className="flex items-baseline gap-2.5">

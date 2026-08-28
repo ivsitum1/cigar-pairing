@@ -4,6 +4,7 @@ import { useI18n } from "../i18n";
 import { SectionTitle } from "../components/ui";
 import { BackButton } from "../components/BackButton";
 import { LessonBody } from "../components/LessonBody";
+import { scrollToTop } from "../lib/scrollToTop";
 import lexicon from "../data/lexicon.json";
 
 interface LexiconEntry {
@@ -23,6 +24,11 @@ export function LexiconPage({ onBack }: { onBack: () => void }) {
   const { t, lx } = useI18n();
   const [entryId, setEntryId] = useState<string | null>(null);
   const entry = entryId ? ENTRIES.find((item) => item.id === entryId) ?? null : null;
+
+  const openEntry = (id: string) => {
+    setEntryId(id);
+    scrollToTop();
+  };
 
   if (entry) {
     return (
@@ -56,7 +62,7 @@ export function LexiconPage({ onBack }: { onBack: () => void }) {
           <button
             key={item.id}
             type="button"
-            onClick={() => setEntryId(item.id)}
+            onClick={() => openEntry(item.id)}
             className="block w-full rounded-xl border border-dim/15 bg-cedar p-4 text-left transition-colors hover:border-zlato/40"
           >
             <div className="flex items-baseline gap-2.5">
