@@ -61,6 +61,13 @@ jobs:
         run: |
           python scripts/test_stock_parse.py
           python scripts/test_availability_catalog.py
+      - name: Drink shop gap scan / merge / ingest helpers
+        working-directory: app
+        run: |
+          python scripts/test_scan_drink_shop_gaps.py
+          python scripts/test_merge_drink_shops_additive.py
+          python scripts/test_ingest_staged_drink_shops.py
+          python scripts/test_enrich_shop_ingest_stubs.py
       - name: Taxonomy line helpers (dimenzije / velika slova u imenu linije)
         working-directory: app
         run: python scripts/test_taxonomy_lib.py
@@ -111,6 +118,11 @@ jobs:
       - name: Taxonomy coverage (no new gaps)
         working-directory: app
         run: python scripts/taxonomy-audit.py --fail-on-new --check-only
+
+      - name: Drink shop merge audit (informativno)
+        working-directory: app
+        continue-on-error: true
+        run: python scripts/audit_drink_shops_preship.py --check
 
       - run: npm run build
         working-directory: app

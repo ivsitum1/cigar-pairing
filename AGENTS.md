@@ -60,6 +60,13 @@ A separate `backend` job runs `python -m unittest discover -s tests` in `backend
 - UI: DetailSheet buy buttons show "Na zalihi" / "Nema na zalihi" when `stockFetchedAt` is present; older than 14 days shows a stale hint. Missing fields → no stock claim.
 - Distinct from **`hr-availability.yml`**: that workflow reconciles which cigars appear in HR at all (`availabilityHR` / `markets.HR`), not shelf stock on a known URL.
 
+
+### Drink shop crawl ? map (weekly, local)
+- **Not in the PWA runtime.** Crawl/map scripts live under `app/scripts/`; the app only sees changes after you commit `src/data/*.json`.
+- **Canonical raw:** `scripts/output/drink_shop_listings_raw.json` (Allez + Tipsy + CugaKlik + Miva spirits + Roto + Humidor; Miva wines excluded).
+- **Pipeline:** `scan-drink-shop-gaps.py` (tiers A/B/C/D) ? `merge-drink-shops-additive.py --apply --tiers a,b` ? review `catalog_ask_queue.json` (C) and `shop_ingest_staging.json` (D) ? optional `ingest-staged-drink-shops.py --apply` (stubs auto-enriched via `enrich-shop-ingest-stubs.py`: style/region/tags + notes; **corpus-first** when `corpus_knowledge_by_topic.json` + caption match a dedicated review, else heuristics) ? optional bulk `enrich-drinks-from-corpus.py --apply` ? `audit_drink_shops_preship.py --check`.
+- **Windows Task Scheduler:** `powershell -File scripts/schedule-shop-gaps-scan.ps1 -Install` (Monday 08:00). Applies A/B + enriches existing shopIngest stubs; D ingest stays `--dry-run` until you run `--apply`. Does not commit.
+- Reports: `shop_gaps_report.json`, ledger `shop_drinks_ledger.jsonl`, hold `shop_drinks_hold.json`.
 ### Fotografije proizvoda
 - **Dva popisa, i ne smiju se pomiješati.** `src/data/productImages.json` = adresa
   slike kod dućana (puni `attach-product-images.py`); `src/data/productImagesLocal.json`

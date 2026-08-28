@@ -152,6 +152,79 @@ def shop_url_plausible(shop: str | None, url: str | None) -> bool:
     return bool(h and h in (url or "").lower())
 
 
+def propose_update(
+    drink: dict,
+    listing: dict,
+    *,
+    score: float,
+) -> dict | None:
+    """Propose priceUrl/shopHR/priceEUR changes for an existing drink.
+
+    Returns an ``after`` dict if anything would change, else None.
+    Respects allez/ecuga lock, humidor gap-fill-only, and weak-URL rules.
+    """
+    url = listing.get("url") or ""
+    price = listing.get("price_eur")
+    shop = (listing.get("shop") or "").lower()
+    shop_label = listing.get("shopLabel") or listing.get("shop") or ""
+    if not url:
+        return None
+    if drink.get("lineup"):
+        return None
+
+    before_url = drink.get("priceUrl") or ""
+    new_url = before_url
+    changed = False
+
+    # Strong primary shops: never replace with another host.
+    if "allez.hr" in before_url or "ecuga.com" in before_url:
+        new_url = before_url
+    elif is_weak_price_url(before_url):
+        new_url = url
+        changed = True
+    elif shop in ("tipsy", "cugaklik", "miva", "roto") and score >= 0.9:
+        if url != before_url:
+            new_url = url
+            changed = True
+    elif shop == "humidor":
+        # fill gaps only — already handled by weak URL branch
+        pass
+    elif shop == "allez" and is_weak_price_url(before_url):
+        new_url = url
+        changed = True
+
+    # Price/shopHR only when the drink's priceUrl ends up equal to this listing.
+    pe = drink.get("priceEUR")
+    new_pe = pe if isinstance(pe, dict) else None
+    if price is not None and new_url == url:
+        if not isinstance(pe, dict) or pe.get("min") != price or pe.get("max") != price:
+            new_pe = {"min": price, "max": price}
+            changed = True
+
+    new_shop = drink.get("shopHR")
+    if shop_label and new_url == url and drink.get("shopHR") != shop_label:
+        new_shop = shop_label
+        changed = True
+
+    if not changed:
+        return None
+    if new_pe is None and price is not None and new_url == url:
+        new_pe = {"min": price, "max": price}
+    if new_pe is None:
+        # patch_block requires priceEUR — keep existing or invent from listing
+        if isinstance(pe, dict):
+            new_pe = pe
+        elif price is not None:
+            new_pe = {"min": price, "max": price}
+        else:
+            return None
+    return {
+        "priceUrl": new_url or url,
+        "shopHR": new_shop or shop_label or drink.get("shopHR"),
+        "priceEUR": new_pe,
+    }
+
+
 def norm(s: str) -> str:
     s = unicodedata.normalize("NFKD", s or "")
     s = "".join(c for c in s if not unicodedata.combining(c))
@@ -302,48 +375,34 @@ def main() -> None:
             "priceEUR": d.get("priceEUR"),
             "shopHR": d.get("shopHR"),
         }
-        changed = False
-        old_url = d.get("priceUrl") or ""
-        if is_weak_price_url(old_url):
-            d["priceUrl"] = url
-            changed = True
-        elif it.get("shop") in ("tipsy", "cugaklik", "miva", "roto") and best_sc >= 0.9:
-            if url != old_url:
-                d["priceUrl"] = url
-                changed = True
-        elif it.get("shop") == "humidor":
-            # cigar-shop listings fill gaps only
-            pass
-        elif "allez.hr" in old_url or "ecuga.com" in old_url:
-            pass
-
-        if price is not None and d.get("priceUrl") == url:
-            pe = d.get("priceEUR")
-            if not isinstance(pe, dict) or pe.get("min") != price or pe.get("max") != price:
-                d["priceEUR"] = {"min": price, "max": price}
-                d["priceApprox"] = False
-                changed = True
-        if shop_label and d.get("priceUrl") == url and d.get("shopHR") != shop_label:
-            d["shopHR"] = shop_label
-            changed = True
-
-        if changed:
-            used_drink_ids.add(d["id"])
-            updates.append(
-                {
-                    "id": d["id"],
-                    "file": fname,
-                    "score": round(best_sc, 3),
-                    "listing": name,
-                    "url": url,
-                    "before": before,
-                    "after": {
-                        "priceUrl": d.get("priceUrl"),
-                        "priceEUR": d.get("priceEUR"),
-                        "shopHR": d.get("shopHR"),
-                    },
-                }
-            )
+        after = propose_update(
+            d,
+            {
+                "url": url,
+                "price_eur": price,
+                "shop": it.get("shop"),
+                "shopLabel": shop_label,
+            },
+            score=best_sc,
+        )
+        if not after:
+            continue
+        d["priceUrl"] = after["priceUrl"]
+        d["priceEUR"] = after["priceEUR"]
+        d["shopHR"] = after["shopHR"]
+        d["priceApprox"] = False
+        used_drink_ids.add(d["id"])
+        updates.append(
+            {
+                "id": d["id"],
+                "file": fname,
+                "score": round(best_sc, 3),
+                "listing": name,
+                "url": url,
+                "before": before,
+                "after": after,
+            }
+        )
 
     REPORT.write_text(json.dumps({"updates": updates, "count": len(updates)}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"matched updates={len(updates)} report={REPORT}")
