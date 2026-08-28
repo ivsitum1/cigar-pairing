@@ -44,7 +44,7 @@ import { isSampler, samplerPieceCount } from "../lib/samplerStock";
 import { Chip, Meter } from "./ui";
 import { BackButton } from "./BackButton";
 import { ProductThumb } from "./ProductThumb";
-import { productPhoto } from "../lib/productImage";
+import { productPhoto, productPhotoForCigar } from "../lib/productImage";
 import { FavoriteStar } from "./FavoriteStar";
 import { LastCigarPrompt } from "./LastCigarPrompt";
 import { VitolaPicker } from "./VitolaPicker";
@@ -263,7 +263,7 @@ function CigarDetails({
   const description = cigarDescription(cigar, lang);
   const brand = brandInfo(cigar.brand);
   const displayBrand = brandDisplayName(cigar.brand, market);
-  const photo = productPhoto("cigar", cigar.id);
+  const photo = productPhotoForCigar(cigar);
   const vitolaCrumb =
     cigar.vitolas.length === 1 ? cigar.vitolas[0].name : cigar.vitola;
   // Bez odabranog tržišta ("Sve") cijena zna doći iz EU/USA kataloga — reci

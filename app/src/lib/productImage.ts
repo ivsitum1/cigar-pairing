@@ -2,6 +2,8 @@ import images from "../data/productImages.json";
 import local from "../data/productImagesLocal.json";
 import cigarAliasFile from "../data/cigarIdAliases.json";
 import drinkAliasFile from "../data/drinkIdAliases.json";
+import type { Cigar } from "../types";
+import { cigarItemId } from "./cigarItemId";
 
 /**
  * Fotografije proizvoda — dva sloja, jedan odgovor.
@@ -90,9 +92,8 @@ export function productImageUrl(kind: "cigar" | "drink", id: string): string | n
 /**
  * Slika za prikaz: obradjena ako je ima, inace dućanska.
  *
- * Slika cigare trazi se po id-u LINIJE, a ne po odabranoj vitoli — duckani
- * fotografiraju liniju (ista kutija, ista traka), pa bi trazenje po vitoli
- * ostavilo vecinu kartica bez slike bez ijednog dobitka u tocnosti.
+ * Ključevi u manifestu: `cig-x` (linija) ili `cig-x@vitola-slug` kad dućan
+ * ima zaseban product URL po veličini. Lookup ide alias → kanonski id.
  */
 export function productPhoto(kind: "cigar" | "drink", id: string | undefined): ProductPhoto | null {
   if (!id) return null;
@@ -113,6 +114,19 @@ export function productPhoto(kind: "cigar" | "drink", id: string | undefined): P
 
   const url = productImageUrl(kind, id);
   return url ? { src: url, treatment: "remote" } : null;
+}
+
+/**
+ * Slika cigare uz odabranu vitolu: prvo `cig-x@vitola`, pa linija `cig-x`.
+ * Linija s jednom vitolom koristi isti ključ kao prije.
+ */
+export function productPhotoForCigar(cigar: Cigar): ProductPhoto | null {
+  const scoped = cigarItemId(cigar);
+  if (scoped !== cigar.id) {
+    const hit = productPhoto("cigar", scoped);
+    if (hit) return hit;
+  }
+  return productPhoto("cigar", cigar.id);
 }
 
 /** Koliko je slika prošlo obradu — za izvještaj skripte i provjere. */
