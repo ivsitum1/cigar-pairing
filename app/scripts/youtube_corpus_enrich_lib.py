@@ -84,10 +84,98 @@ TAG_HR: dict[str, str] = {
     "zemljano": "zemlja",
     "sol": "slana nota",
     "overproof": "jači alkohol",
+    "slatko": "slatko",
+    "biljno": "biljno",
+    "vegetalno": "vegetalno",
 }
+
+# Every TAG_HR key must have an English gloss — never emit the raw HR slug in notes.en.
+TAG_EN: dict[str, str] = {
+    "dim": "smoke",
+    "iodin": "iodine",
+    "medicinski": "medicinal note",
+    "hrast": "oak",
+    "karamela": "caramel",
+    "vanilija": "vanilla",
+    "suho-voce": "dried fruit",
+    "tropsko-voce": "tropical fruit",
+    "voce": "fruit",
+    "tamno-voce": "dark fruit",
+    "citrus": "citrus",
+    "zacini": "spice",
+    "papar": "pepper",
+    "med": "honey",
+    "cvjetno": "floral notes",
+    "kremasto": "creamy texture",
+    "kakao": "cocoa",
+    "orasasti": "nutty tones",
+    "ester-funk": "estery funk",
+    "duhan": "tobacco",
+    "koza": "leather",
+    "borovica": "juniper",
+    "melasa": "molasses",
+    "kava": "coffee",
+    "agava": "agave",
+    "zemljano": "earth",
+    "sol": "salty note",
+    "overproof": "higher proof",
+    "slatko": "sweet",
+    "biljno": "herbal",
+    "vegetalno": "vegetal",
+}
+
+# Region/country labels stored in HR on drinks; localize for EN templates.
+REGION_EN: dict[str, str] = {
+    "Škotska": "Scotland",
+    "Irska": "Ireland",
+    "Meksiko": "Mexico",
+    "Jalisco": "Jalisco",
+    "SAD": "USA",
+    "Japan": "Japan",
+    "Indija": "India",
+    "Kanada": "Canada",
+    "Velika Britanija": "United Kingdom",
+    "Engleska": "England",
+    "Wales": "Wales",
+    "Francuska": "France",
+    "Španjolska": "Spain",
+    "Italija": "Italy",
+    "Njemačka": "Germany",
+    "Jamajka": "Jamaica",
+    "Barbados": "Barbados",
+    "Trinidad": "Trinidad",
+    "Kuba": "Cuba",
+    "Haiti": "Haiti",
+    "Martinique": "Martinique",
+    "Guadeloupe": "Guadeloupe",
+    "Réunion": "Réunion",
+    "Mauricijus": "Mauritius",
+    "Filipini": "Philippines",
+    "Nikaragva": "Nicaragua",
+    "Dominikanska Republika": "Dominican Republic",
+    "Dominikana": "Dominican Republic",
+    "Kostarika": "Costa Rica",
+    "Panama": "Panama",
+    "Gvatemala": "Guatemala",
+    "Venecuela": "Venezuela",
+    "Brazil": "Brazil",
+    "Peru": "Peru",
+    "Nepoznato": "Unknown",
+}
+
+# Same HR-leak regex as app/src/data/integrity.test.ts (cigar notes.en).
+EN_NOTES_HR_LEAK = re.compile(
+    r"\b("
+    r"Nikaragva|Meksiko|Kuba|Škotska|Njemačka|Španjolska|"
+    r"kakao|zacini|začini|koza|koža|drvo|papar|hrast|kava|cvjetno|travnato|"
+    r"orasasti|orašasti|zemljano|melasa|mlijeko|kremasto|vanilija|"
+    r"suho-voce|tamno-voce|biljno|Okusi|pokrov"
+    r")\b"
+)
 
 MIN_BLOB_CHARS = 120
 MIN_TAG_COUNT = 2
+MIN_NOTES_CHARS = 80
 
 _CIGAR_SIGNAL = re.compile(
     r"\b(cedar|earth|earthy|pepper|spice|draw|smoke|wrapper|cream|creamy|coffee|"
@@ -154,24 +242,12 @@ def tags_phrase(tags: list[str], n: int = 3) -> str:
 
 
 def tags_phrase_en(tags: list[str], n: int = 3) -> str:
-    en_map = {
-        "suho-voce": "dried fruit",
-        "tropsko-voce": "tropical fruit",
-        "tamno-voce": "dark fruit",
-        "voce": "fruit",
-        "zacini": "spice",
-        "orasasti": "nutty tones",
-        "ester-funk": "estery funk",
-        "cvjetno": "floral notes",
-        "kremasto": "creamy texture",
-        "medicinski": "medicinal note",
-        "zemljano": "earth",
-        "melasa": "molasses",
-        "agava": "agave",
-    }
     out: list[str] = []
     for t in tags:
-        s = en_map.get(t, t.replace("-", " "))
+        s = TAG_EN.get(t)
+        if s is None:
+            # Never emit an unmapped HR slug into notes.en
+            continue
         if s and s not in out:
             out.append(s)
         if len(out) >= n:
@@ -183,6 +259,18 @@ def tags_phrase_en(tags: list[str], n: int = 3) -> str:
     if len(out) == 2:
         return f"{out[0]} and {out[1]}"
     return f"{out[0]}, {out[1]} and {out[2]}"
+
+
+def region_en(region: str) -> str:
+    """Localize HR region/country tokens inside a region string for EN notes."""
+    if not region:
+        return region
+    # Prefer longest keys so "Speyside, Škotska" maps both parts.
+    out = region
+    for hr, en in sorted(REGION_EN.items(), key=lambda kv: -len(kv[0])):
+        if hr in out:
+            out = out.replace(hr, en)
+    return out
 
 
 def _body_phrases(body: int | None) -> tuple[str, str]:
@@ -204,17 +292,52 @@ def _abv_bit(drink: dict) -> str:
         return ""
 
 
-def hr_notes_ok(block: dict[str, str] | None) -> bool:
+def _field_len(block: dict[str, str] | None, key: str) -> int:
+    if not block:
+        return 0
+    return len((block.get(key) or "").strip())
+
+
+def hr_notes_ok(block: dict[str, str] | None, *, min_chars: int = MIN_NOTES_CHARS) -> bool:
+    """HR-in-HR checks plus minimum length on both locales (default ≥80)."""
     if not block:
         return False
     hr = (block.get("hr") or "").lower()
-    if len(block.get("hr") or "") < 40 or len(block.get("en") or "") < 40:
+    hr_raw = block.get("hr") or ""
+    en_raw = block.get("en") or ""
+    if len(hr_raw) < min_chars or len(en_raw) < min_chars:
         return False
     if re.search(r"\bcigar\b", hr) or re.search(r"\bwrapper\b", hr):
         return False
     if "heuristika" in hr:
         return False
     return True
+
+
+def en_notes_ok(block: dict[str, str] | None) -> bool:
+    """Reject English notes that leak HR country/tag words (integrity.test.ts regex)."""
+    if not block:
+        return False
+    en = block.get("en") or ""
+    if not en.strip():
+        return False
+    return EN_NOTES_HR_LEAK.search(en) is None
+
+
+def notes_block_ok(block: dict[str, str] | None, *, min_chars: int = MIN_NOTES_CHARS) -> bool:
+    return hr_notes_ok(block, min_chars=min_chars) and en_notes_ok(block)
+
+
+def _would_shorten(existing: dict[str, str] | None, incoming: dict[str, str] | None) -> bool:
+    """True if any locale that was ≥80 would become <80 under the patch."""
+    if not incoming:
+        return True
+    for key in ("hr", "en"):
+        old_len = _field_len(existing, key)
+        new_len = _field_len(incoming, key)
+        if old_len >= MIN_NOTES_CHARS and new_len < MIN_NOTES_CHARS:
+            return True
+    return False
 
 
 def _has_pairing_signal(blob: str) -> bool:
@@ -234,7 +357,7 @@ def _has_pairing_signal(blob: str) -> bool:
 
 
 def _hint_from_blob(category: str, drink: dict, blob: str, tags: list[str]) -> dict[str, str]:
-    """Pairing hint — paraphrase corpus signal or category default."""
+    """Pairing hint — paraphrase corpus signal or category default. Both locales ≥80."""
     name = drink.get("name") or drink.get("id") or "boca"
     tag_set = set(tags)
     body = drink.get("body")
@@ -246,72 +369,150 @@ def _hint_from_blob(category: str, drink: dict, blob: str, tags: list[str]) -> d
     if _has_pairing_signal(blob):
         if category == "rum" and (body_i >= 4 or "ester-funk" in tag_set):
             return {
-                "hr": f"Uz {name} recenzenti drže sporiji ritam — maduro ili puni Habano nose esterski rub.",
-                "en": f"With {name} reviewers keep a slow rhythm — maduro or a full Habano carry the estery edge.",
+                "hr": (
+                    f"Uz {name} recenzenti drže sporiji ritam — maduro ili puni Habano "
+                    f"nose esterski rub bez žurbe u dimu."
+                ),
+                "en": (
+                    f"With {name} reviewers keep a slow rhythm — maduro or a full Habano "
+                    f"carry the estery edge without rushing the puff."
+                ),
             }
         if category == "whisky" and tag_set & {"dim", "iodin", "medicinski"}:
             return {
-                "hr": f"Dim u profilu {name} traži maduro ili puni Habano; gutljaj neka bude manji.",
-                "en": f"Smoke in {name} wants maduro or a full Habano; keep sips smaller.",
+                "hr": (
+                    f"Dim u profilu {name} traži maduro ili puni Habano; gutljaj neka bude "
+                    f"manji i mirniji uz stol."
+                ),
+                "en": (
+                    f"Smoke in {name} wants maduro or a full Habano; keep sips smaller "
+                    f"and calmer at the table."
+                ),
             }
         return {
-            "hr": f"Recenzenti uz {name} drže sporiji dim i gutljaj — isti tempo i za stol.",
-            "en": f"Reviewers keep a slower puff and sip rhythm with {name} — match that at the table.",
+            "hr": (
+                f"Recenzenti uz {name} drže sporiji dim i gutljaj — isti tempo i za stol, "
+                f"bez žurbe u srednjoj trećini."
+            ),
+            "en": (
+                f"Reviewers keep a slower puff and sip rhythm with {name} — match that "
+                f"at the table without rushing the middle third."
+            ),
         }
 
     if category == "rum":
         if drink.get("additiveStatus") in {"flavored", "spiced"} or int(drink.get("sweetness") or 0) >= 4:
             return {
-                "hr": "Ako ide uz dim, biraj kraći Connecticut — šećer lako preglasi nijanse.",
-                "en": "If you pair it with smoke, pick a shorter Connecticut — sugar easily covers nuance.",
+                "hr": (
+                    "Ako ide uz dim, biraj kraći Connecticut ili blagi shade — šećer lako "
+                    "preglasi nijanse u srednjoj trećini."
+                ),
+                "en": (
+                    "If you pair it with smoke, pick a shorter Connecticut or mild shade — "
+                    "sugar easily covers nuance in the middle third."
+                ),
             }
         if body_i >= 4 or "ester-funk" in tag_set:
             return {
-                "hr": "Punije tijelo ili esterski rub — maduro ili puni Habano; dim i gutljaj u sporom ritmu.",
-                "en": "Fuller body or an estery edge — maduro or a full Habano; keep smoke and sip slow.",
+                "hr": (
+                    "Punije tijelo ili esterski rub — maduro ili puni Habano; dim i gutljaj "
+                    "u sporom ritmu do kraja."
+                ),
+                "en": (
+                    "Fuller body or an estery edge — maduro or a full Habano; keep smoke "
+                    "and sip slow through the finish."
+                ),
             }
         if body_i <= 2:
             return {
-                "hr": "Laganije tijelo — Connecticut ili Cameroon; prva trećina cigare često dovoljna.",
-                "en": "Lighter body — Connecticut or Cameroon; the cigar’s first third is often enough.",
+                "hr": (
+                    "Laganije tijelo — Connecticut ili Cameroon; prva trećina cigare često "
+                    "dovoljna uz ovaj rum."
+                ),
+                "en": (
+                    "Lighter body — Connecticut or Cameroon; the cigar’s first third is "
+                    "often enough beside this rum."
+                ),
             }
         return {
-            "hr": "Srednje tijelo — Habano robusto ili zreliji corojo kao most.",
-            "en": "Medium body — Habano robusto or a riper corojo as the bridge.",
+            "hr": (
+                "Srednje tijelo — Habano robusto ili zreliji corojo kao most; drži ritam "
+                "bez forsiranja snage."
+            ),
+            "en": (
+                "Medium body — Habano robusto or a riper corojo as the bridge; keep pace "
+                "without forcing strength."
+            ),
         }
 
     if category == "whisky":
         if tag_set & {"dim", "iodin", "medicinski"}:
             return {
-                "hr": "Dim u čaši traži maduro ili puni Habano — most je pepeo i zemlja.",
-                "en": "Smoke in the glass wants maduro or a full Habano — bridge on ash and earth.",
+                "hr": (
+                    "Dim u čaši traži maduro ili puni Habano — most je pepeo i zemlja, "
+                    "gutljaj manji nego inače."
+                ),
+                "en": (
+                    "Smoke in the glass wants maduro or a full Habano — bridge on ash and "
+                    "earth, with smaller sips than usual."
+                ),
             }
         return {
-            "hr": "Srednje ili laganije tijelo — Cameroon ili kraći Habano; prva trećina često dovoljna.",
-            "en": "Medium or lighter body — Cameroon or a shorter Habano; the first third is often enough.",
+            "hr": (
+                "Srednje ili laganije tijelo — Cameroon ili kraći Habano; prva trećina "
+                "cigare često dovoljna uz čašu."
+            ),
+            "en": (
+                "Medium or lighter body — Cameroon or a shorter Habano; the first third "
+                "is often enough beside the glass."
+            ),
         }
 
     if category == "gin":
         return {
-            "hr": "Borovica i citrus — Connecticut ili panatela; maduro je pretežak partner.",
-            "en": "Juniper and citrus — Connecticut or panatela; maduro is too heavy a partner.",
+            "hr": (
+                "Borovica i citrus — Connecticut ili panatela; maduro je pretežak partner "
+                "i lako preglasi botanike."
+            ),
+            "en": (
+                "Juniper and citrus — Connecticut or panatela; maduro is too heavy a "
+                "partner and easily covers the botanicals."
+            ),
         }
 
     if category == "tequila":
         style = str(drink.get("style") or "").lower()
         if "blanco" in style or "silver" in style:
             return {
-                "hr": "Blanco/agave — Connecticut ili kratki Habano; slatki maduro zamuti agavu.",
-                "en": "Blanco/agave — Connecticut or a short Habano; sweet maduro muddies the agave.",
+                "hr": (
+                    "Blanco/agave — Connecticut ili kratki Habano; slatki maduro zamuti "
+                    "agavu i gubi svježi rub."
+                ),
+                "en": (
+                    "Blanco/agave — Connecticut or a short Habano; sweet maduro muddies "
+                    "the agave and dulls the bright edge."
+                ),
             }
         return {
-            "hr": "Reposado/añejo — Habano srednjeg tijela ili blagi maduro; most je hrast.",
-            "en": "Reposado/añejo — medium Habano or a gentle maduro; bridge on oak.",
+            "hr": (
+                "Reposado/añejo — Habano srednjeg tijela ili blagi maduro; most je hrast "
+                "i miran ritam dimova."
+            ),
+            "en": (
+                "Reposado/añejo — medium Habano or a gentle maduro; bridge on oak with "
+                "a calm puff rhythm."
+            ),
         }
 
     return {
-        "hr": f"Uz {name} biraj cigaru srednjeg tijela — sporiji dim neka nosi most.",
-        "en": f"With {name} pick a medium-bodied cigar — a slower puff carries the bridge.",
+        "hr": (
+            f"Uz {name} biraj cigaru srednjeg tijela — sporiji dim neka nosi most "
+            f"bez forsiranja snage."
+        ),
+        "en": (
+            f"With {name} pick a medium-bodied cigar — a slower puff carries the bridge "
+            f"without forcing strength."
+        ),
     }
 
 
@@ -325,7 +526,9 @@ def draft_notes_from_material(
 ) -> dict[str, str]:
     """Original bottle sentences from extracted tasting signals (not transcript paste)."""
     name = drink.get("name") or drink.get("id")
-    region = drink.get("region") or drink.get("style") or ""
+    region_hr = drink.get("region") or drink.get("style") or ""
+    region_hr = str(region_hr)
+    region_en_s = region_en(region_hr)
     abv = _abv_bit(drink)
     tag_hr = tags_phrase(tags)
     tag_en = tags_phrase_en(tags)
@@ -336,31 +539,31 @@ def draft_notes_from_material(
 
     if category == "rum" and (additive in {"flavored", "spiced"} or sweet_i >= 4):
         hr = (
-            f"{name}{abv} — {region}: {tag_hr}, izraženija slatkoća. "
+            f"{name}{abv} — {region_hr}: {tag_hr}, izraženija slatkoća. "
             f"Koktel ili desertni gutljaj; neat uz cigaru rijetko je prvi izbor."
         )
         en = (
-            f"{name}{abv} — {region}: {tag_en}, higher sweetness. "
+            f"{name}{abv} — {region_en_s}: {tag_en}, higher sweetness. "
             f"Cocktail or dessert sip; neat with a cigar is rarely the first choice."
         )
     elif category == "whisky" and tags and tags[0] in {"dim", "iodin", "medicinski"}:
         peat_tags = tags_phrase([t for t in tags if t != "dim"] or tags)
         peat_en = tags_phrase_en([t for t in tags if t != "dim"] or tags)
         hr = (
-            f"{name}{abv} — {region}. Dimljeni profil: {peat_tags}; {body_hr}. "
+            f"{name}{abv} — {region_hr}. Dimljeni profil: {peat_tags}; {body_hr}. "
             f"Čisto ili s kap vode; uz cigaru sporiji ritam gutljaja."
         )
         en = (
-            f"{name}{abv} — {region}. Peated profile: {peat_en}; {body_en}. "
+            f"{name}{abv} — {region_en_s}. Peated profile: {peat_en}; {body_en}. "
             f"Neat or with a drop of water; keep sips slow beside a cigar."
         )
     else:
         hr = (
-            f"{name}{abv} — {region}: {tag_hr}, {body_hr}. "
+            f"{name}{abv} — {region_hr}: {tag_hr}, {body_hr}. "
             f"Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće."
         )
         en = (
-            f"{name}{abv} — {region}: {tag_en}, {body_en}. "
+            f"{name}{abv} — {region_en_s}: {tag_en}, {body_en}. "
             f"Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
         )
     return {"hr": hr.strip(), "en": en.strip()}
@@ -468,7 +671,7 @@ def find_corpus_match(drink: dict, category: str) -> dict[str, Any] | None:
             drink, category, tags=tags, body=body, sweet=sweet
         )
         hint = _hint_from_blob(category, drink, blob, tags)
-        if not hr_notes_ok(notes) or not hr_notes_ok(hint):
+        if not notes_block_ok(notes) or not notes_block_ok(hint):
             continue
         return {
             "notes": notes,
@@ -484,9 +687,20 @@ def find_corpus_match(drink: dict, category: str) -> dict[str, Any] | None:
 
 
 def apply_corpus_patch(drink: dict, match: dict[str, Any]) -> None:
-    """Merge corpus enrichment into drink dict (in place)."""
-    drink["notes"] = match["notes"]
-    drink["cigarHint"] = match["cigarHint"]
+    """Merge corpus enrichment into drink dict (in place). Skip unsafe overwrites."""
+    notes = match.get("notes")
+    hint = match.get("cigarHint")
+    if not notes_block_ok(notes) or not notes_block_ok(hint):
+        return
+    if _would_shorten(drink.get("notes") if isinstance(drink.get("notes"), dict) else None, notes):
+        return
+    if _would_shorten(
+        drink.get("cigarHint") if isinstance(drink.get("cigarHint"), dict) else None,
+        hint,
+    ):
+        return
+    drink["notes"] = notes
+    drink["cigarHint"] = hint
     drink["youtubeCorpusEnriched"] = True
     if match.get("sourceVideoIds"):
         drink["sourceVideoIds"] = match["sourceVideoIds"]
@@ -587,7 +801,7 @@ def find_corpus_match_cigar(cigar: dict) -> dict[str, Any] | None:
         if not _cigar_material_ok(title, blob, matched_key=key):
             continue
         notes = cur.draft_cigar_notes(cigar, brand, line)
-        if not hr_notes_ok(notes):
+        if not notes_block_ok(notes):
             continue
         return {
             "notes": notes,
@@ -599,7 +813,12 @@ def find_corpus_match_cigar(cigar: dict) -> dict[str, Any] | None:
 
 
 def apply_corpus_patch_cigar(cigar: dict, match: dict[str, Any]) -> None:
-    cigar["notes"] = match["notes"]
+    notes = match.get("notes")
+    if not notes_block_ok(notes):
+        return
+    if _would_shorten(cigar.get("notes") if isinstance(cigar.get("notes"), dict) else None, notes):
+        return
+    cigar["notes"] = notes
     cigar["youtubeCorpusEnriched"] = True
     if match.get("sourceVideoIds"):
         cigar["sourceVideoIds"] = match["sourceVideoIds"]
