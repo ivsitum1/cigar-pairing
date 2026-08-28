@@ -191,16 +191,37 @@ class LocaleAndLengthGates(unittest.TestCase):
         self.assertNotIn("Nikaragva", notes["en"])
         self.assertIn("Nikaragva", notes["hr"])
 
-    def test_tequila_blanco_hint_both_locales_at_least_80(self) -> None:
-        yce = _load("youtube_corpus_enrich_lib", "youtube_corpus_enrich_lib.py")
-        hint = yce._hint_from_blob(
-            "tequila",
-            {"name": "Don Julio Blanco", "style": "blanco"},
-            "",
-            [],
+    def test_draft_cigar_notes_en_maps_dominikanska_republika(self) -> None:
+        """integrity.test.ts misses Dominikanska; generator must still translate."""
+        stub = _load("youtube_curate_stub", "youtube-curate-stub-enrichments.py")
+        notes = stub.draft_cigar_notes(
+            {
+                "country": "Dominikanska Republika",
+                "strength": 3,
+                "wrapper": "habano",
+            },
+            "Arturo Fuente",
+            "Hemingway",
         )
-        self.assertGreaterEqual(len(hint["hr"]), 80, hint["hr"])
-        self.assertGreaterEqual(len(hint["en"]), 80, hint["en"])
+        self.assertIn("Dominican Republic", notes["en"])
+        self.assertNotIn("Dominikanska", notes["en"])
+        self.assertIn("Dominikanska Republika", notes["hr"])
+        # Catalog country field stays HR — only notes.en is translated.
+        self.assertEqual(stub.country_en("Kuba"), "Cuba")
+        self.assertEqual(stub.country_en("Dominikanska Republika"), "Dominican Republic")
+
+    def test_tequila_hints_blanco_reposado_anejo_at_least_80(self) -> None:
+        """73 was cigarHint.hr (blanco); same short template hit reposado/añejo EN (~65)."""
+        yce = _load("youtube_corpus_enrich_lib", "youtube_corpus_enrich_lib.py")
+        for style in ("blanco", "reposado", "anejo", "añejo"):
+            hint = yce._hint_from_blob(
+                "tequila",
+                {"name": f"Sample {style}", "style": style},
+                "",
+                [],
+            )
+            self.assertGreaterEqual(len(hint["hr"]), 80, f"{style} hr: {hint['hr']}")
+            self.assertGreaterEqual(len(hint["en"]), 80, f"{style} en: {hint['en']}")
 
     def test_tags_phrase_en_karamela_is_english(self) -> None:
         yce = _load("youtube_corpus_enrich_lib", "youtube_corpus_enrich_lib.py")
@@ -208,14 +229,25 @@ class LocaleAndLengthGates(unittest.TestCase):
         self.assertEqual(phrase, "caramel")
         self.assertNotEqual(phrase, "karamela")
 
-    def test_en_notes_ok_rejects_nikaragva(self) -> None:
+    def test_en_notes_ok_rejects_hr_countries_including_dominikanska(self) -> None:
         yce = _load("youtube_corpus_enrich_lib", "youtube_corpus_enrich_lib.py")
         self.assertFalse(yce.en_notes_ok({"hr": "x" * 80, "en": "from Nikaragva with cedar"}))
+        self.assertFalse(
+            yce.en_notes_ok({"hr": "x" * 80, "en": "from Dominikanska Republika with cedar"})
+        )
         self.assertTrue(
             yce.en_notes_ok(
                 {
                     "hr": "x" * 80,
                     "en": "from Nicaragua with cedar and a calm rhythm beside the glass.",
+                }
+            )
+        )
+        self.assertTrue(
+            yce.en_notes_ok(
+                {
+                    "hr": "x" * 80,
+                    "en": "from Dominican Republic with cedar and a calm rhythm beside the glass.",
                 }
             )
         )

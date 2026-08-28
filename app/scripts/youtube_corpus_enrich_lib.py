@@ -163,14 +163,17 @@ REGION_EN: dict[str, str] = {
     "Nepoznato": "Unknown",
 }
 
-# Same HR-leak regex as app/src/data/integrity.test.ts (cigar notes.en).
+# HR forms that must never appear in notes.en (integrity.test.ts list +
+# Dominikanska Republika — that suite does not catch the 25 DR leaks).
 EN_NOTES_HR_LEAK = re.compile(
-    r"\b("
-    r"Nikaragva|Meksiko|Kuba|Škotska|Njemačka|Španjolska|"
-    r"kakao|zacini|začini|koza|koža|drvo|papar|hrast|kava|cvjetno|travnato|"
-    r"orasasti|orašasti|zemljano|melasa|mlijeko|kremasto|vanilija|"
-    r"suho-voce|tamno-voce|biljno|Okusi|pokrov"
-    r")\b"
+    r"("
+    r"\bNikaragva\b|\bMeksiko\b|\bKuba\b|\bŠkotska\b|\bNjemačka\b|\bŠpanjolska\b|"
+    r"\bDominikanska Republika\b|\bDominikana\b|\bKostarika\b|"
+    r"\bkakao\b|\bzacini\b|\bzačini\b|\bkoza\b|\bkoža\b|\bdrvo\b|\bpapar\b|\bhrast\b|"
+    r"\bkava\b|\bcvjetno\b|\btravnato\b|\borasasti\b|\borašasti\b|\bzemljano\b|"
+    r"\bmelasa\b|\bmlijeko\b|\bkremasto\b|\bvanilija\b|"
+    r"\bsuho-voce\b|\btamno-voce\b|\bbiljno\b|\bOkusi\b|\bpokrov\b"
+    r")"
 )
 
 MIN_BLOB_CHARS = 120
