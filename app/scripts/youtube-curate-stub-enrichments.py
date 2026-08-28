@@ -71,6 +71,48 @@ def wrapper_family(w: str | None) -> str:
     return "natural"
 
 
+# Catalog countries are stored in HR; EN notes must never leak the HR form.
+COUNTRY_EN: dict[str, str] = {
+    "Nikaragva": "Nicaragua",
+    "Honduras": "Honduras",
+    "Brazil": "Brazil",
+    "Dominikanska Republika": "Dominican Republic",
+    "Dominikana": "Dominican Republic",
+    "Kuba": "Cuba",
+    "Kostarika": "Costa Rica",
+    "Meksiko": "Mexico",
+    "Njemačka": "Germany",
+    "Španjolska": "Spain",
+    "SAD": "USA",
+    "Italija": "Italy",
+    "Indonezija": "Indonesia",
+    "Ekvador": "Ecuador",
+    "Panama": "Panama",
+    "Kolumbija": "Colombia",
+    "Peru": "Peru",
+    "Jamajka": "Jamaica",
+    "Kamerun": "Cameroon",
+    "Filipini": "Philippines",
+    "Haiti": "Haiti",
+    "Nikaragva / Honduras": "Nicaragua / Honduras",
+    "Honduras / Nikaragva": "Honduras / Nicaragua",
+}
+
+
+def country_en(hr: str) -> str | None:
+    """Map HR country label to English. Unknown → None (omit origin in EN)."""
+    if not hr:
+        return None
+    if hr in COUNTRY_EN:
+        return COUNTRY_EN[hr]
+    if " / " in hr:
+        parts = [country_en(p.strip()) for p in hr.split("/")]
+        if all(parts):
+            return " / ".join(p for p in parts if p)
+        return None
+    return COUNTRY_EN.get(hr)
+
+
 def draft_cigar_notes(cigar: dict, brand: str, line: str) -> dict[str, str]:
     strength = cigar.get("strength")
     try:
@@ -81,6 +123,7 @@ def draft_cigar_notes(cigar: dict, brand: str, line: str) -> dict[str, str]:
     wrap = wrapper_family(str(cigar.get("wrapper") or ""))
     origin = cigar.get("origin") or cigar.get("country") or ""
     origin = str(origin) if origin else ""
+    origin_en = country_en(origin) if origin else None
 
     wrap_hr = {
         "connecticut": "Connecticut shade pokrovom",
@@ -143,7 +186,13 @@ def draft_cigar_notes(cigar: dict, brand: str, line: str) -> dict[str, str]:
     }[band]
 
     origin_bit_hr = f"iz {origin}" if origin else "s karipskom / srednjoameričkom osnovom"
-    origin_bit_en = f"from {origin}" if origin else "on a Caribbean / Central American base"
+    if origin_en:
+        origin_bit_en = f"from {origin_en}"
+    elif origin:
+        # Unknown HR country: omit rather than leak into notes.en
+        origin_bit_en = "on a Caribbean / Central American base"
+    else:
+        origin_bit_en = "on a Caribbean / Central American base"
 
     hr = (
         f"{line} ({brand}) ide s {wrap_hr} {origin_bit_hr} — {body_hr}. "

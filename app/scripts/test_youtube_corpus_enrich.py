@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import importlib.util
 import json
+import sys
 import tempfile
 import unittest
 from pathlib import Path
@@ -13,6 +14,9 @@ HERE = Path(__file__).resolve().parent
 
 
 def _load(name: str, file: str):
+    scripts = str(HERE)
+    if scripts not in sys.path:
+        sys.path.insert(0, scripts)
     spec = importlib.util.spec_from_file_location(name, HERE / file)
     mod = importlib.util.module_from_spec(spec)
     assert spec.loader is not None
@@ -148,13 +152,105 @@ class EnrichStubCorpusFallback(unittest.TestCase):
             "shopIngest": True,
             "notes": {"hr": "Automatski unos", "en": "Auto"},
         }
-        with mock.patch(
+        profile = {
+            "style": "aged",
+            "region": "Barbados",
+            "body": 3,
+            "sweetness": 2,
+            "flavorTags": ["hrast"],
+            "additiveStatus": "none",
+            "qualityScore": 3,
+            "serving": "neat",
+            "pairable": False,
+            "profileEstimated": True,
+        }
+        with mock.patch.dict(enr.PROFILE_FN, {"rum": lambda drink: profile}), mock.patch(
             "youtube_corpus_enrich_lib.try_corpus_enrich",
             return_value=None,
         ):
             d = dict(stub)
             enr.enrich_drink("rum", d, prefer_corpus=True)
         self.assertNotIn("Automatski unos", (d.get("notes") or {}).get("hr", ""))
+
+
+class LocaleAndLengthGates(unittest.TestCase):
+    """Locale + length gates so --apply cannot re-break integrity/curated tests."""
+
+    def test_draft_cigar_notes_en_uses_nicaragua_not_nikaragva(self) -> None:
+        stub = _load("youtube_curate_stub", "youtube-curate-stub-enrichments.py")
+        notes = stub.draft_cigar_notes(
+            {
+                "country": "Nikaragva",
+                "strength": 2,
+                "wrapper": "corojo",
+            },
+            "1502",
+            "Emerald",
+        )
+        self.assertIn("Nicaragua", notes["en"])
+        self.assertNotIn("Nikaragva", notes["en"])
+        self.assertIn("Nikaragva", notes["hr"])
+
+    def test_draft_cigar_notes_en_maps_dominikanska_republika(self) -> None:
+        """integrity.test.ts misses Dominikanska; generator must still translate."""
+        stub = _load("youtube_curate_stub", "youtube-curate-stub-enrichments.py")
+        notes = stub.draft_cigar_notes(
+            {
+                "country": "Dominikanska Republika",
+                "strength": 3,
+                "wrapper": "habano",
+            },
+            "Arturo Fuente",
+            "Hemingway",
+        )
+        self.assertIn("Dominican Republic", notes["en"])
+        self.assertNotIn("Dominikanska", notes["en"])
+        self.assertIn("Dominikanska Republika", notes["hr"])
+        # Catalog country field stays HR — only notes.en is translated.
+        self.assertEqual(stub.country_en("Kuba"), "Cuba")
+        self.assertEqual(stub.country_en("Dominikanska Republika"), "Dominican Republic")
+
+    def test_tequila_hints_blanco_reposado_anejo_at_least_80(self) -> None:
+        """73 was cigarHint.hr (blanco); same short template hit reposado/añejo EN (~65)."""
+        yce = _load("youtube_corpus_enrich_lib", "youtube_corpus_enrich_lib.py")
+        for style in ("blanco", "reposado", "anejo", "añejo"):
+            hint = yce._hint_from_blob(
+                "tequila",
+                {"name": f"Sample {style}", "style": style},
+                "",
+                [],
+            )
+            self.assertGreaterEqual(len(hint["hr"]), 80, f"{style} hr: {hint['hr']}")
+            self.assertGreaterEqual(len(hint["en"]), 80, f"{style} en: {hint['en']}")
+
+    def test_tags_phrase_en_karamela_is_english(self) -> None:
+        yce = _load("youtube_corpus_enrich_lib", "youtube_corpus_enrich_lib.py")
+        phrase = yce.tags_phrase_en(["karamela"])
+        self.assertEqual(phrase, "caramel")
+        self.assertNotEqual(phrase, "karamela")
+
+    def test_en_notes_ok_rejects_hr_countries_including_dominikanska(self) -> None:
+        yce = _load("youtube_corpus_enrich_lib", "youtube_corpus_enrich_lib.py")
+        self.assertFalse(yce.en_notes_ok({"hr": "x" * 80, "en": "from Nikaragva with cedar"}))
+        self.assertFalse(
+            yce.en_notes_ok({"hr": "x" * 80, "en": "from Dominikanska Republika with cedar"})
+        )
+        self.assertTrue(
+            yce.en_notes_ok(
+                {
+                    "hr": "x" * 80,
+                    "en": "from Nicaragua with cedar and a calm rhythm beside the glass.",
+                }
+            )
+        )
+        self.assertTrue(
+            yce.en_notes_ok(
+                {
+                    "hr": "x" * 80,
+                    "en": "from Dominican Republic with cedar and a calm rhythm beside the glass.",
+                }
+            )
+        )
 
 
 if __name__ == "__main__":
