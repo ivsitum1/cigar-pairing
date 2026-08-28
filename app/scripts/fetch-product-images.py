@@ -198,20 +198,26 @@ def poznate_slike(vrsta: str) -> dict[str, str]:
 
 
 def worklist(vrsta: str) -> list[tuple[str, list[str]]]:
-    """(id, stranice) po stavci — stranice se citaju samo ako slike nema u popisu."""
+    """(id, stranice) po stavci — stranice se citaju samo ako slike nema u popisu.
+
+    Za cigare uključuje i `cig-x@vitola` ključeve iz productImages.json.
+    """
     if vrsta == "cigars":
-        stavke = [
-            (c["id"], stranice_cigare(c))
-            for c in json.loads((DATA / "cigars.json").read_text(encoding="utf-8"))
-        ]
-    else:
-        stavke = []
-        for ime in DRINK_FILES:
-            put = DATA / ime
-            if not put.exists():
-                continue
-            for d in json.loads(put.read_text(encoding="utf-8")):
-                stavke.append((d["id"], stranice_pica(d)))
+        cigars = json.loads((DATA / "cigars.json").read_text(encoding="utf-8"))
+        stavke = [(c["id"], stranice_cigare(c)) for c in cigars]
+        seen = {i for i, _ in stavke}
+        for key in poznate_slike("cigars"):
+            if key not in seen:
+                stavke.append((key, []))
+                seen.add(key)
+        return stavke
+    stavke = []
+    for ime in DRINK_FILES:
+        put = DATA / ime
+        if not put.exists():
+            continue
+        for d in json.loads(put.read_text(encoding="utf-8")):
+            stavke.append((d["id"], stranice_pica(d)))
     return stavke
 
 

@@ -1,8 +1,22 @@
 import { describe, it, expect } from "vitest";
-import { productImageUrl, productPhoto } from "./productImage";
+import { productImageUrl, productPhoto, productPhotoForCigar } from "./productImage";
 import images from "../data/productImages.json";
 import local from "../data/productImagesLocal.json";
 import { CIGARS, ALL_DRINKS } from "../data";
+import { applyVitola } from "./cigarVitola";
+import { parseCigarItemId, cigarItemId } from "./cigarItemId";
+import cigarAliasFile from "../data/cigarIdAliases.json";
+
+const cigarLineIds = new Set(CIGARS.map((c) => c.id));
+const CIGAR_ALIAS_TARGETS = new Set(
+  Object.values((cigarAliasFile as { aliases?: Record<string, string> }).aliases ?? {}),
+);
+
+/** Ključ slike: linija, legacy alias target, ili `cig-x@vitola-slug`. */
+function isKnownCigarImageKey(id: string): boolean {
+  const { cigarId } = parseCigarItemId(id);
+  return cigarLineIds.has(cigarId) || CIGAR_ALIAS_TARGETS.has(cigarId);
+}
 
 describe("productImageUrl", () => {
   it("returns https shop photos for mapped cigars and drinks", () => {
@@ -40,10 +54,9 @@ describe("productImageUrl", () => {
   });
 
   it("only maps ids that exist in the app catalogs", () => {
-    const cigarSet = new Set(CIGARS.map((c) => c.id));
     const drinkSet = new Set(ALL_DRINKS.map((d) => d.id));
     for (const id of Object.keys(images.cigars)) {
-      expect(cigarSet.has(id), id).toBe(true);
+      expect(isKnownCigarImageKey(id), id).toBe(true);
       expect(images.cigars[id as keyof typeof images.cigars]).toMatch(/^https:\/\//);
     }
     for (const id of Object.keys(images.drinks)) {
@@ -97,13 +110,44 @@ describe("productPhoto — obrađena slika ispred dućanske", () => {
   });
 
   it("obrađeni popis ne smije spominjati id koji katalog ne zna", () => {
-    const cigarSet = new Set(CIGARS.map((c) => c.id));
     const drinkSet = new Set(ALL_DRINKS.map((d) => d.id));
     const maps = local as {
       cigars?: Record<string, unknown>;
       drinks?: Record<string, unknown>;
     };
-    for (const id of Object.keys(maps.cigars ?? {})) expect(cigarSet.has(id), id).toBe(true);
+    for (const id of Object.keys(maps.cigars ?? {})) expect(isKnownCigarImageKey(id), id).toBe(true);
     for (const id of Object.keys(maps.drinks ?? {})) expect(drinkSet.has(id), id).toBe(true);
+  });
+});
+
+describe("productPhotoForCigar — vitola prije linije", () => {
+  it("preferira scoped ključ kad postoji u manifestu", () => {
+    const scoped = Object.keys(images.cigars).find((k) => k.includes("@"));
+    expect(scoped, "nema vitola ključeva u manifestu").toBeDefined();
+    const { cigarId } = parseCigarItemId(scoped!);
+    const line = CIGARS.find((c) => c.id === cigarId);
+    expect(line).toBeTruthy();
+    const vitola = (line!.vitolas ?? []).find((v) => {
+      const applied = applyVitola(line!, v);
+      return cigarItemId(applied) === scoped;
+    });
+    expect(vitola).toBeTruthy();
+    const applied = applyVitola(line!, vitola!);
+    const photo = productPhotoForCigar(applied);
+    expect(photo?.src).toBe(productPhoto("cigar", scoped!)?.src);
+  });
+
+  it("pada na liniju kad scoped ključ nema sliku", () => {
+    const multi = CIGARS.find((c) => {
+      if ((c.vitolas?.length ?? 0) <= 1) return false;
+      const v = c.vitolas![0]!;
+      const scoped = cigarItemId(applyVitola(c, v));
+      if (scoped === c.id) return false;
+      if ((images.cigars as Record<string, string>)[scoped]) return false;
+      return Boolean(productPhoto("cigar", c.id));
+    });
+    expect(multi, "nema linije za fallback test").toBeTruthy();
+    const applied = applyVitola(multi!, multi!.vitolas![0]!);
+    expect(productPhotoForCigar(applied)?.src).toBe(productPhoto("cigar", multi!.id)?.src);
   });
 });

@@ -6,9 +6,9 @@ import { brandInfo, brandDisplayName, resolveCigarId } from "../data";
 import { useI18n } from "../i18n";
 import { TasteMeters } from "./TasteMeters";
 import { ProductThumb } from "./ProductThumb";
-import { productPhoto } from "../lib/productImage";
+import { applyVitola, vitolasForMarket } from "../lib/cigarVitola";
+import { productPhoto, productPhotoForCigar } from "../lib/productImage";
 import { BackButton } from "./BackButton";
-import { vitolasForMarket } from "../lib/cigarVitola";
 import { formatEur, vitolaPriceForMarket } from "../lib/cigarPrice";
 import { vitolaBlurb } from "../lib/vitolaInfo";
 import { cigarDescription } from "../lib/cigarNote";
@@ -41,7 +41,10 @@ export function LineSheet({
   const info = brandInfo(cigar.brand);
   const displayBrand = brandDisplayName(cigar.brand, market);
   const vitolas = useMemo(() => vitolasForMarket(cigar, market), [cigar, market]);
-  const photo = productPhoto("cigar", cigar.id);
+  const photo =
+    vitolas.length === 1
+      ? productPhotoForCigar(applyVitola(cigar, vitolas[0]!))
+      : productPhoto("cigar", cigar.id);
 
   return (
     <SheetShell

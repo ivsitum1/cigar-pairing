@@ -13,6 +13,7 @@ import argparse
 import json
 import re
 import time
+import unicodedata
 import urllib.error
 import urllib.request
 from pathlib import Path
@@ -247,6 +248,63 @@ def scrape_allez_images() -> dict[str, str]:
     return by_url
 
 
+def vitola_slug(label: str) -> str:
+    """Isti slug kao lib/cigarItemId.ts — ključ slike po vitoli."""
+    s = unicodedata.normalize("NFKD", label)
+    s = "".join(c for c in s if not unicodedata.combining(c))
+    s = s.lower().replace("'", "").replace("’", "").replace("`", "")
+    s = re.sub(r"[^a-z0-9]+", "-", s)
+    return s.strip("-")
+
+
+def vitola_item_id(cigar_id: str, vitola_name: str) -> str:
+    slug = vitola_slug(vitola_name)
+    return f"{cigar_id}@{slug}" if slug else cigar_id
+
+
+def vitola_urls(v: dict) -> list[str]:
+    urls: list[str] = []
+    if v.get("url"):
+        urls.append(str(v["url"]))
+    rl = v.get("regionLinks") or {}
+    if isinstance(rl, dict):
+        for rec in rl.values():
+            if isinstance(rec, dict) and rec.get("url"):
+                urls.append(str(rec["url"]))
+    return urls
+
+
+def lookup_url_image(url_map: dict[str, str], url: str) -> str | None:
+    for candidate in (url, shop_fetch_url(url)):
+        img = url_map.get(norm_url(candidate))
+        if img:
+            return img
+    return None
+
+
+def apply_vitola_url_images(cigars: list[dict], url_map: dict[str, str], dest: dict[str, str]) -> None:
+    """Zapis `cig-x@vitola-slug` kad product URL vitole nosi sliku."""
+    for c in cigars:
+        cid = c.get("id")
+        if not isinstance(cid, str):
+            continue
+        vitolas = [v for v in (c.get("vitolas") or []) if isinstance(v, dict)]
+        if len(vitolas) <= 1:
+            continue
+        for v in vitolas:
+            name = v.get("name")
+            if not isinstance(name, str) or not name.strip():
+                continue
+            key = vitola_item_id(cid, name)
+            if key in dest:
+                continue
+            for u in vitola_urls(v):
+                found = lookup_url_image(url_map, u)
+                if found:
+                    dest[key] = found
+                    break
+
+
 def cigar_urls(c: dict) -> list[str]:
     urls: list[str] = []
     if c.get("priceUrl"):
@@ -312,6 +370,18 @@ def cigar_images_from_unified(unified_path: Path, cigars: list[dict]) -> dict[st
         img = pick_offer_image(offers)
         if img:
             out[cid] = img
+        vitolas = [v for v in (c.get("vitolas") or []) if isinstance(v, dict)]
+        if len(vitolas) > 1:
+            for v in vitolas:
+                name = v.get("name")
+                if not isinstance(name, str) or not name.strip():
+                    continue
+                voffers: list[dict] = []
+                for u in vitola_urls(v):
+                    voffers.extend(by_url.get(norm_url(u), []))
+                vimg = pick_offer_image(voffers)
+                if vimg:
+                    out[vitola_item_id(cid, name)] = vimg
     return out
 
 
@@ -394,6 +464,144 @@ def scrape_wc_store(name: str, api: str) -> dict[str, str]:
             break
         time.sleep(0.15)
     return out
+
+
+def token_set(text: str) -> set[str]:
+    """Tokeni za fuzzy match brand/line/vitola ↔ naslov proizvoda u dućanu."""
+    s = unicodedata.normalize("NFKD", text or "")
+    s = "".join(c for c in s if not unicodedata.combining(c)).lower()
+    s = re.sub(r"[^a-z0-9]+", " ", s)
+    stop = {
+        "cigar",
+        "cigars",
+        "cigara",
+        "cigare",
+        "the",
+        "and",
+        "by",
+        "de",
+        "la",
+        "el",
+        "los",
+        "pack",
+        "box",
+        "single",
+        "tube",
+        "tubos",
+    }
+    return {t for t in s.split() if len(t) >= 2 and t not in stop}
+
+
+def scrape_wc_inventory(name: str, api: str) -> list[dict]:
+    """Pun inventar WooCommerce: ime + slika (za match bez product URL-a)."""
+    rows: list[dict] = []
+    print(f"  WooCommerce inventory {name} …", flush=True)
+    for page in range(1, 201):
+        url = f"{api}?per_page=100&page={page}"
+        try:
+            data = fetch_json(url)
+        except urllib.error.HTTPError as e:
+            if e.code in (400, 404):
+                break
+            print(f"    skip page {page}: HTTP {e.code}", flush=True)
+            break
+        if not isinstance(data, list) or not data:
+            break
+        for product in data:
+            if not isinstance(product, dict):
+                continue
+            pname = product.get("name")
+            images = product.get("images") if isinstance(product.get("images"), list) else []
+            src = None
+            if images and isinstance(images[0], dict):
+                src = images[0].get("src") or images[0].get("thumbnail")
+            if not isinstance(pname, str) or not is_http_image(src):
+                continue
+            rows.append(
+                {
+                    "name": pname,
+                    "tokens": token_set(pname),
+                    "image": as_https(str(src)),
+                    "shop": name,
+                }
+            )
+        print(f"    page {page}: inventory {len(rows)}", flush=True)
+        if len(data) < 100:
+            break
+        time.sleep(0.15)
+    return rows
+
+
+def best_inventory_match(
+    query_tokens: set[str],
+    inventory: list[dict],
+    *,
+    min_overlap: int = 2,
+) -> str | None:
+    """Vrati sliku kad naslov dućana pokriva dovoljno tokena upita."""
+    if len(query_tokens) < 2:
+        return None
+    best_img: str | None = None
+    best_score = 0.0
+    for row in inventory:
+        tokens: set[str] = row["tokens"]
+        hit = query_tokens & tokens
+        if len(hit) < min_overlap:
+            continue
+        # brand+line moraju biti u naslovu — overlap / query
+        score = len(hit) / len(query_tokens)
+        # preferiraj kad gotovo svi tokeni upita postoje
+        if score > best_score or (score == best_score and len(hit) > best_score):
+            # odbij ako naslov ima previše suvišnih riječi (sampler paketi)
+            extra = len(tokens - query_tokens)
+            if extra > max(4, len(query_tokens)):
+                continue
+            best_score = score
+            best_img = row["image"]
+    if best_score >= 0.55:
+        return best_img
+    return None
+
+
+def fill_missing_by_name_match(
+    cigars: list[dict],
+    inventory: list[dict],
+    dest: dict[str, str],
+) -> tuple[int, int]:
+    """
+    Treći način: bez product URL-a u katalogu, spoji po brand+line(+vitola)
+    s inventarom dućana (WooCommerce name → image).
+    """
+    line_hits = 0
+    vitola_hits = 0
+    for c in cigars:
+        cid = c.get("id")
+        brand = c.get("brand")
+        line = c.get("line")
+        if not isinstance(cid, str) or not isinstance(brand, str) or not isinstance(line, str):
+            continue
+        base_tokens = token_set(f"{brand} {line}")
+        if cid not in dest:
+            img = best_inventory_match(base_tokens, inventory)
+            if img:
+                dest[cid] = img
+                line_hits += 1
+        vitolas = [v for v in (c.get("vitolas") or []) if isinstance(v, dict)]
+        if len(vitolas) <= 1:
+            continue
+        for v in vitolas:
+            name = v.get("name")
+            if not isinstance(name, str) or not name.strip():
+                continue
+            key = vitola_item_id(cid, name)
+            if key in dest:
+                continue
+            q = base_tokens | token_set(name)
+            img = best_inventory_match(q, inventory, min_overlap=3)
+            if img:
+                dest[key] = img
+                vitola_hits += 1
+    return line_hits, vitola_hits
 
 
 def apply_url_images(items: list[dict], url_fn, url_map: dict[str, str], dest: dict[str, str]) -> None:
@@ -562,6 +770,11 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--skip-allez", action="store_true")
     p.add_argument("--skip-wc", action="store_true")
     p.add_argument("--skip-pages", action="store_true")
+    p.add_argument(
+        "--skip-search",
+        action="store_true",
+        help="Skip name-match fill against WooCommerce inventory",
+    )
     p.add_argument("--limit", type=int, default=0, help="Max product pages to fetch (0 = all)")
     return p.parse_args()
 
@@ -578,6 +791,7 @@ def main() -> None:
     drinks = load_drink_lists()
     cigar_map: dict[str, str] = {}
     drink_map: dict[str, str] = {}
+    url_map: dict[str, str] = {}
 
     existing = Path(args.out)
     if existing.exists():
@@ -593,7 +807,6 @@ def main() -> None:
     else:
         print(f"no unified catalog at {unified} — skipping", flush=True)
 
-    url_map: dict[str, str] = {}
     if not args.skip_wc:
         print("scraping WooCommerce stores …", flush=True)
         for name, api in WC_STORES:
@@ -603,6 +816,10 @@ def main() -> None:
                 print(f"  {name} failed: {e}", flush=True)
         apply_url_images(cigars, cigar_urls, url_map, cigar_map)
         print(f"after WooCommerce: cigars {len(cigar_map)}", flush=True)
+
+    apply_vitola_url_images(cigars, url_map, cigar_map)
+    vitola_after_wc = sum(1 for k in cigar_map if "@" in k)
+    print(f"vitola-scoped keys after WC/unified: {vitola_after_wc}", flush=True)
 
     if not args.skip_allez:
         print("scraping allez.hr listings for bottle photos …", flush=True)
@@ -617,11 +834,24 @@ def main() -> None:
         missing_urls: list[str] = []
         for c in cigars:
             cid = c.get("id")
-            if not isinstance(cid, str) or cid in cigar_map:
+            if not isinstance(cid, str):
                 continue
-            pref = preferred_url(cigar_urls(c))
-            if pref:
-                missing_urls.append(shop_fetch_url(pref))
+            if cid not in cigar_map:
+                pref = preferred_url(cigar_urls(c))
+                if pref:
+                    missing_urls.append(shop_fetch_url(pref))
+            vitolas = [v for v in (c.get("vitolas") or []) if isinstance(v, dict)]
+            if len(vitolas) > 1:
+                for v in vitolas:
+                    name = v.get("name")
+                    if not isinstance(name, str) or not name.strip():
+                        continue
+                    vid = vitola_item_id(cid, name)
+                    if vid in cigar_map:
+                        continue
+                    pref = preferred_url(vitola_urls(v))
+                    if pref:
+                        missing_urls.append(shop_fetch_url(pref))
         for d in drinks:
             did = d.get("id")
             if not isinstance(did, str) or did in drink_map:
@@ -633,18 +863,68 @@ def main() -> None:
             missing_urls = missing_urls[: args.limit]
         page_map = fetch_page_images(missing_urls, cache)
         save_cache(cache_path, cache)
+        url_map.update(page_map)
         apply_url_images(cigars, cigar_urls, page_map, cigar_map)
+        apply_vitola_url_images(cigars, url_map, cigar_map)
         apply_url_images(drinks, drink_urls, page_map, drink_map)
         print(f"after product pages: cigars {len(cigar_map)} drinks {len(drink_map)}", flush=True)
+
+    apply_vitola_url_images(cigars, url_map, cigar_map)
+    vitola_total = sum(1 for k in cigar_map if "@" in k)
+    print(f"vitola-scoped cigar images: {vitola_total}", flush=True)
+
+    if not args.skip_search:
+        print("name-match fill against WooCommerce inventory …", flush=True)
+        inventory: list[dict] = []
+        for name, api in WC_STORES:
+            try:
+                inventory.extend(scrape_wc_inventory(name, api))
+            except Exception as e:
+                print(f"  inventory {name} failed: {e}", flush=True)
+        before = len(cigar_map)
+        line_n, vitola_n = fill_missing_by_name_match(cigars, inventory, cigar_map)
+        print(
+            f"after name-match: +{len(cigar_map) - before} "
+            f"(lines {line_n}, vitolas {vitola_n}); inventory {len(inventory)}",
+            flush=True,
+        )
+
+    known_lines = {c["id"] for c in cigars if isinstance(c.get("id"), str)}
+
+    def keep_cigar_key(key: str) -> bool:
+        line_id = key.split("@", 1)[0]
+        return line_id in known_lines
+
+    known_drinks: set[str] = set()
+    for fname in (
+        "rums.json",
+        "whiskies.json",
+        "gins.json",
+        "tequilas.json",
+        "brandies.json",
+        "wines.json",
+        "digestifs.json",
+        "coffees.json",
+    ):
+        path = DATA / fname
+        if not path.exists():
+            continue
+        for row in json.loads(path.read_text(encoding="utf-8")):
+            if isinstance(row, dict) and isinstance(row.get("id"), str):
+                known_drinks.add(row["id"])
+
+    def keep_drink_key(key: str) -> bool:
+        return key in known_drinks
 
     payload = {
         "schemaVersion": 1,
         "note": (
             "Remote product photos from shop scrapes (not invented). "
-            "Keys are cigars.json / drink JSON ids. Used on the detail sheet."
+            "Keys: cigars.json line id, or cig-x@vitola-slug when the shop "
+            "has a per-vitola product page. Used on detail/line sheets."
         ),
-        "cigars": {k: cigar_map[k] for k in sorted(cigar_map)},
-        "drinks": {k: drink_map[k] for k in sorted(drink_map)},
+        "cigars": {k: cigar_map[k] for k in sorted(cigar_map) if keep_cigar_key(k)},
+        "drinks": {k: drink_map[k] for k in sorted(drink_map) if keep_drink_key(k)},
     }
     out = Path(args.out)
     out.parent.mkdir(parents=True, exist_ok=True)
