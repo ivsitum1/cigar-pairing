@@ -215,7 +215,7 @@ export const TAG_LABELS: Record<string, LocalizedText> = {
   agava: { hr: "agava", en: "agave" },
   biljno: { hr: "biljno", en: "herbal" },
   caj: { hr: "čaj", en: "tea" },
-  cedar: { hr: "cedar", en: "cedar" },
+  cedar: { hr: "cedrovina", en: "cedar" },
   citrus: { hr: "citrus", en: "citrus" },
   cvjetno: { hr: "cvjetno", en: "floral" },
   dim: { hr: "dim", en: "smoke" },

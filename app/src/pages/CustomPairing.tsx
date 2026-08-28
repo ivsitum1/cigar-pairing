@@ -6,7 +6,7 @@ import { scorePairing } from "../engine/pairing";
 import { curatedPairingOpinion } from "../engine/curatedOpinion";
 import { pairingBlurb } from "../engine/pairingExplain";
 import { drinkNameLoc, drinkNameHaystack } from "../lib/drinkName";
-import { useI18n, STYLE_LABELS, type StringKey } from "../i18n";
+import { useI18n, STYLE_LABELS, leafMetaParts, type StringKey } from "../i18n";
 import { Meter, ScoreBand, SearchInput } from "../components/ui";
 import { ServeChips } from "../components/ServeChips";
 import { useMarket } from "../store/market";
@@ -25,7 +25,7 @@ export function CustomPairing({
 }: {
   onOpenDetail: (d: Detail) => void;
 }) {
-  const { t, lx, cn } = useI18n();
+  const { t, lx, lang } = useI18n();
   const market = useMarket();
   const [cigar, setCigar] = useState<Cigar | null>(null);
   const [drink, setDrink] = useState<Drink | null>(null);
@@ -167,7 +167,7 @@ export function CustomPairing({
               ? marketCigars.map((c) => ({
                   id: c.id,
                   title: `${brandDisplayName(c.brand, market)} ${c.line}`,
-                  sub: `${c.wrapper} · ${cn(c.country)}`,
+                  sub: leafMetaParts(c.wrapper, c.country, lang).join(" · "),
                   hay: `${brandSearchHaystack(c.brand)} ${c.line} ${c.wrapper} ${c.country}`,
                   raw: c as Cigar | Drink,
                 }))

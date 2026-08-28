@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { SheetShell } from "./SheetShell";
 import type { Cigar, Drink, Region } from "../types";
-import { useI18n, STYLE_LABELS, ADDITIVE_LABELS, ADDITIVE_RULES, COFFEE_ROAST_LABELS, COFFEE_PROCESS_LABELS, COFFEE_SPECIES_LABELS } from "../i18n";
+import { useI18n, STYLE_LABELS, ADDITIVE_LABELS, ADDITIVE_RULES, COFFEE_ROAST_LABELS, COFFEE_PROCESS_LABELS, COFFEE_SPECIES_LABELS, leafMetaParts, leafOriginDisplay } from "../i18n";
 import { flavorLabel } from "../engine/rules";
 import {
   brandInfo,
@@ -254,7 +254,7 @@ function CigarDetails({
   onOpenLine?: (cigar: Cigar) => void;
   onOpenCigar?: (c: Cigar) => void;
 }) {
-  const { t, lx, cn, lang } = useI18n();
+  const { t, lxStrict, cn, lang } = useI18n();
   const market = useMarket();
   // tvoja ocjena, kad postoji, nadjačava katalogovu procjenu i ovdje i u pairingu
   const taste = useTasteProfiles();
@@ -315,7 +315,7 @@ function CigarDetails({
             ) : null}
           </div>
           <div className="mt-1 text-sm text-dim">
-            {cn(cigar.country)} · {cigar.wrapper}
+            {leafMetaParts(cigar.wrapper, cigar.country, lang).join(" · ")}
             {cigar.isPuro === true ? ` · ${t("leaf.puro")}` : null}
             {onOpenBrand && (
               <>
@@ -343,20 +343,20 @@ function CigarDetails({
         <div className="mt-1.5 space-y-0.5 text-xs text-dim/90">
           {cigar.wrapperOrigin ? (
             <div>
-              {t("leaf.wrapper")}: {cn(cigar.wrapperOrigin)}
-              {cigar.wrapper ? ` · ${cigar.wrapper}` : ""}
+              {t("leaf.wrapper")}:{" "}
+              {leafOriginDisplay(cigar.wrapperOrigin, cigar.wrapper, lang)}
             </div>
           ) : null}
           {cigar.binderOrigin ? (
             <div>
-              {t("leaf.binder")}: {cn(cigar.binderOrigin)}
-              {cigar.binder ? ` · ${cigar.binder}` : ""}
+              {t("leaf.binder")}:{" "}
+              {leafOriginDisplay(cigar.binderOrigin, cigar.binder, lang)}
             </div>
           ) : null}
           {cigar.fillerOrigin ? (
             <div>
-              {t("leaf.filler")}: {cn(cigar.fillerOrigin)}
-              {cigar.filler ? ` · ${cigar.filler}` : ""}
+              {t("leaf.filler")}:{" "}
+              {leafOriginDisplay(cigar.fillerOrigin, cigar.filler, lang)}
             </div>
           ) : null}
         </div>
@@ -485,16 +485,16 @@ function CigarDetails({
             {displayBrand} · {cn(brand.country)} · {brand.founded}
           </div>
           <p className="mt-1 text-xs leading-relaxed text-papir/80">
-            {lx(brand.blurb)}
+            {lxStrict(brand.blurb)}
           </p>
           {brand.signature && (
             <p className="mt-1.5 text-xs leading-relaxed text-zlato-2">
-              ◈ {lx(brand.signature)}
+              ◈ {lxStrict(brand.signature)}
             </p>
           )}
           {brand.story && (
             <p className="mt-1.5 text-xs leading-relaxed text-papir/70">
-              {lx(brand.story)}
+              {lxStrict(brand.story)}
             </p>
           )}
         </div>
@@ -510,7 +510,7 @@ function DrinkDetails({
   drink: Drink;
   onOpenBrand?: (brand: string) => void;
 }) {
-  const { t, lx, sv, rgn, lang } = useI18n();
+  const { t, lx, lxStrict, sv, rgn, lang } = useI18n();
   const style = STYLE_LABELS[drink.style];
   const availability = drinkAvailabilityHR(drink);
   const brand = drinkBrand(drink.id);
@@ -616,17 +616,17 @@ function DrinkDetails({
           {lx(ADDITIVE_RULES[drink.category])}
         </p>
       )}
-      {lx(drink.notes) && (
+      {lxStrict(drink.notes) && (
         <p className="mt-3 text-sm leading-relaxed text-papir/85">
-          {lx(drink.notes)}
+          {lxStrict(drink.notes)}
         </p>
       )}
-      {drink.cigarHint && lx(drink.cigarHint) && (
+      {drink.cigarHint && lxStrict(drink.cigarHint) && (
         <p className="mt-3 text-sm leading-relaxed text-papir/85">
           <span className="mb-1 block text-[10px] uppercase tracking-widest text-dim">
             {t("common.cigarHint")}
           </span>
-          {lx(drink.cigarHint)}
+          {lxStrict(drink.cigarHint)}
         </p>
       )}
       {drink.lineup && drink.lineup.length > 0 && (

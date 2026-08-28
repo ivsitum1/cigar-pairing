@@ -154,7 +154,7 @@ export function CatalogPage({
 }: {
   onPair?: (target: { kind: "cigar"; item: Cigar } | { kind: "drink"; item: Drink }) => void;
 }) {
-  const { t, lx, cn } = useI18n();
+  const { t, lx, lxStrict, cn } = useI18n();
   const route = useRoute();
   const [tab, setTab] = useState<Tab>("cigars");
   const [query, setQuery] = useState("");
@@ -1148,7 +1148,7 @@ export function CatalogPage({
                   </div>
                   {b.info && (
                     <div className="mt-1.5 line-clamp-2 text-xs leading-relaxed text-dim/90">
-                      {lx(b.info.blurb)}
+                      {lxStrict(b.info.blurb)}
                     </div>
                   )}
                 </button>

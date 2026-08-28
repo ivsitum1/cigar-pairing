@@ -60,8 +60,8 @@ export function isGeneratedNote(text: string, lang: Lang): boolean {
 }
 
 /**
- * Opis za prikaz, ili null kad pravog opisa nema. Ako jezik korisnika nema
- * ništa, a drugi ima uredničku rečenicu, radije se pokaže ona nego ništa.
+ * Opis za prikaz, ili null kad pravog opisa nema na aktivnom jeziku.
+ * Ne posuđuje drugi jezik — bolje prazno nego miješanje HR/EN na kartici.
  */
 export function cigarDescription(
   cigar: Pick<Cigar, "notes">,
@@ -69,8 +69,5 @@ export function cigarDescription(
 ): string | null {
   const notes: LocalizedText = cigar.notes;
   const primary = stripGeneratedNote(notes[lang] ?? "", lang);
-  if (primary) return primary;
-  const otherLang: Lang = lang === "hr" ? "en" : "hr";
-  const fallback = stripGeneratedNote(notes[otherLang] ?? "", otherLang);
-  return fallback || null;
+  return primary || null;
 }

@@ -1,7 +1,15 @@
 import { createContext, useContext, useState, type ReactNode } from "react";
 import { resolveLang } from "../lib/safeStorage";
 import type { Lang, LocalizedText } from "../types";
+import { leafLabel } from "./leafLabel";
 import { REGION_LABELS } from "./regions";
+
+export {
+  leafLabel,
+  leafMetaParts,
+  leafOriginDisplay,
+  countryLabel,
+} from "./leafLabel";
 
 const STRINGS = {
   // navigacija
@@ -933,6 +941,14 @@ export const STYLE_LABELS: Record<string, LocalizedText> = {
   "herbal-saffron-yellow": { hr: "Žuti biljni (šafran)", en: "Yellow herbal (saffron)" },
   pelinkovac: { hr: "Pelinkovac", en: "Pelinkovac" },
   "specialty-botanical": { hr: "Jedinstveni botanik", en: "Specialty botanical" },
+  // kava — kombinacije priprema × prženje (slug iz kataloga)
+  "espresso-dark": { hr: "Espresso (tamno)", en: "Espresso (dark)" },
+  "espresso-medium": { hr: "Espresso (srednje)", en: "Espresso (medium)" },
+  "filter-light": { hr: "Filter (svijetlo)", en: "Filter (light)" },
+  "filter-medium": { hr: "Filter (srednje)", en: "Filter (medium)" },
+  "filter-dark": { hr: "Filter (tamno)", en: "Filter (dark)" },
+  cold: { hr: "Hladno / cold brew", en: "Cold / cold brew" },
+  mezcal: { hr: "Mezcal", en: "Mezcal" },
 };
 
 // hrvatska imena zemalja u podacima -> engleski prikaz
@@ -1153,7 +1169,10 @@ interface I18nCtx {
   setLang: (l: Lang) => void;
   t: (key: StringKey) => string;
   lx: (text: LocalizedText | string | undefined | null) => string;
+  /** Samo aktivni jezik — bez pada na drugi (prose napomene). */
+  lxStrict: (text: LocalizedText | string | undefined | null) => string;
   cn: (country: string) => string; // ime zemlje u aktivnom jeziku
+  lf: (leaf: string | undefined | null) => string; // wrapper/binder/filler
   sv: (serving: string) => string; // nacin serviranja u aktivnom jeziku
   rgn: (region: string) => string; // regija pica u aktivnom jeziku
 }
@@ -1191,14 +1210,22 @@ export function I18nProvider({ children }: { children: ReactNode }) {
     if (typeof text === "string") return text;
     return text[lang] || text.hr || text.en;
   };
+  const lxStrict = (text: LocalizedText | string | undefined | null) => {
+    if (!text) return "";
+    if (typeof text === "string") return text;
+    return text[lang] ?? "";
+  };
   // imena zemalja i serviranja u podacima su hrvatska; na EN prevedi mapom
   const cn = (country: string) =>
     lang === "en" ? (COUNTRY_LABELS[country] ?? country) : country;
+  const lf = (leaf: string | undefined | null) => leafLabel(leaf, lang);
   const sv = (serving: string) => localizeServing(serving, lang);
   const rgn = (region: string) =>
     lang === "en" ? (REGION_LABELS[region] ?? region) : region;
   return (
-    <Ctx.Provider value={{ lang, setLang, t, lx, cn, sv, rgn }}>{children}</Ctx.Provider>
+    <Ctx.Provider value={{ lang, setLang, t, lx, lxStrict, cn, lf, sv, rgn }}>
+      {children}
+    </Ctx.Provider>
   );
 }
 
