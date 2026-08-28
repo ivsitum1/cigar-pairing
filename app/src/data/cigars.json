@@ -275,8 +275,8 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Emerald je najpitkiji izraz linije 1502 — nikaragvanski puro s box-pressom i zatvorenom nogom, kremasto-drvenast uz blage začine.",
-      "en": "Emerald is 1502's most approachable expression — a box-pressed Nicaraguan puro with a closed foot, creamy-woody with gentle spice."
+      "hr": "Emerald (1502) ide s corojo pokrovom iz Nikaragva — lagano tijelo i predvidiv draw. Profil tipično drži zemlja i začinski rub bez grube grubosti. Dobra za gosta ili prvu cigaru za stolom; ne forsiraš je uz overproof rum.",
+      "en": "Emerald (1502) takes a corojo wrapper from Nikaragva — light body and a predictable draw. The profile typically holds earth and a spicy edge without rough edges. A good guest or first-at-the-table pick; do not force it against an overproof rum."
     },
     "markets": [
       "HR",
@@ -393,7 +393,11 @@
       "https://www.neptunecigar.com/cigars/1502-emerald-corona"
     ],
     "fillerOrigin": "Meksiko",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "HjdIdJPKSz8"
+    ]
   },
   {
     "id": "cig-1502-nicaragua",
@@ -7004,8 +7008,8 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Nikaragva, Nicaragua pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Nicaragua, Nicaragua wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
+      "hr": "20th Anniversary (AJ Fernandez) ide s prirodnim pokrovom iz Nikaragva — punije tijelo i gustoća koja traži miran ritam. Profil tipično drži čist duhan i blagi začin bez dramatičnih skokova. Najbolje uz piće koje podnese snagu, ne uz lagani highball.",
+      "en": "20th Anniversary (AJ Fernandez) takes a natural wrapper from Nikaragva — fuller body and density that wants a calm rhythm. The profile typically holds clean tobacco and soft spice without dramatic jumps. Best with a drink that can carry the strength, not a light highball."
     },
     "markets": [
       "HR",
@@ -7050,7 +7054,11 @@
     "fillerOrigin": "Nikaragva",
     "isPuro": true,
     "priceUrl": "https://www.neptunecigar.com/cigars/aj-fernandez-20th-anniversary-toro",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "85U1Q25Nza8"
+    ]
   },
   {
     "id": "cig-aj-fernandez-20th-anniversary-maduro",
@@ -7137,8 +7145,8 @@
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Habano pokrov — jače snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Nicaragua, Habano wrapper — medium-full in strength, medium-bodied. Notes: cedar, spices, leather."
+      "hr": "Amar (AJ Fernandez) ide s habano pokrovom iz Nikaragva — srednje-puno tijelo koje traži sporiji dim. Profil tipično drži cedar, zemlja i blagi papar u ravnoteži. Biraj je kad imaš vremena i piće koje podnese više tijela.",
+      "en": "Amar (AJ Fernandez) takes a habano wrapper from Nikaragva — medium-full body that wants a slower pace. The profile typically holds cedar, earth and soft pepper in balance. Choose it when you have time and a drink that can carry more body."
     },
     "markets": [
       "USA",
@@ -7182,7 +7190,11 @@
         "fetchedAt": "2026-07-01"
       }
     },
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "2DuARaybK7c"
+    ]
   },
   {
     "id": "cig-aj-fernandez-bellas-artes",
@@ -7944,8 +7956,8 @@
       "Havana Cigar Shop"
     ],
     "notes": {
-      "hr": "New World je AJ-eva pristupačna obitelj linija s više pokrova: Connecticut, Cameroon, Oscuro, Dorado, Decenio i Puro Especial — bogat okus za razumnu cijenu.",
-      "en": "New World is AJ's value family across wrappers: Connecticut, Cameroon, Oscuro, Dorado, Decenio and Puro Especial — rich flavour at a fair price."
+      "hr": "New World (AJ Fernandez) ide s Connecticut shade pokrovom iz Nikaragva — srednje-puno tijelo koje traži sporiji dim. Profil tipično drži kremasti duhan i blagi cedar umjesto oštrog začina. Biraj je kad imaš vremena i piće koje podnese više tijela.",
+      "en": "New World (AJ Fernandez) takes a Connecticut shade wrapper from Nikaragva — medium-full body that wants a slower pace. The profile typically holds creamy tobacco and soft cedar rather than sharp spice. Choose it when you have time and a drink that can carry more body."
     },
     "markets": [
       "HR",
@@ -8120,6 +8132,10 @@
     "isPuro": true,
     "sourceUrls": [
       "https://www.neptunecigar.com/cigars/aj-fernandez-new-world-taa-redondo"
+    ],
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "9AQZ8iCG6FU"
     ]
   },
   {
@@ -11601,8 +11617,8 @@
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Honduras, Honduran pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Honduras, Honduran wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
+      "hr": "Family Blend (Alec Bradley) ide s prirodnim pokrovom iz Honduras — srednje tijelo i uredan ritam dimova. Profil tipično drži čist duhan i blagi začin bez dramatičnih skokova. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
+      "en": "Family Blend (Alec Bradley) takes a natural wrapper from Honduras — medium body and a steady puff rhythm. The profile typically holds clean tobacco and soft spice without dramatic jumps. A solid pick when you want an hour and a profile that holds the middle third."
     },
     "markets": [
       "USA",
@@ -11637,7 +11653,11 @@
     "priceUrl": "https://www.neptunecigar.com/cigars/alec-bradley-family-blend-the-lineage-robusto",
     "wrapperOrigin": "Honduras",
     "binderOrigin": "Nikaragva",
-    "fillerOrigin": "Honduras"
+    "fillerOrigin": "Honduras",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "WDXTRkIgt54"
+    ]
   },
   {
     "id": "cig-alec-bradley-filthy-ghooligan",
@@ -15499,8 +15519,8 @@
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Dominikanska Republika, Ecuador pokrov — lagane snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Dominican Republic, Ecuador wrapper — mild in strength, medium-bodied. Notes: cedar, spices, leather."
+      "hr": "Amante (Amante) ide s Connecticut shade pokrovom iz Dominikanska Republika — lagano tijelo i predvidiv draw. Profil tipično drži kremasti duhan i blagi cedar umjesto oštrog začina. Dobra za gosta ili prvu cigaru za stolom; ne forsiraš je uz overproof rum.",
+      "en": "Amante (Amante) takes a Connecticut shade wrapper from Dominikanska Republika — light body and a predictable draw. The profile typically holds creamy tobacco and soft cedar rather than sharp spice. A good guest or first-at-the-table pick; do not force it against an overproof rum."
     },
     "markets": [
       "USA",
@@ -15526,7 +15546,11 @@
         "fetchedAt": "2026-07-01"
       }
     },
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "oYAvBL4HRDU"
+    ]
   },
   {
     "id": "cig-ambos-mundos-2-sumatra",
@@ -20141,8 +20165,8 @@
       "Havana Cigar Shop"
     ],
     "notes": {
-      "hr": "Dominikanska Republika, Kamerun pokrov — jače snage, punijeg tijela. Okusi: začini, cedrovina, kakao.",
-      "en": "Cameroon wrapper (Dominican Republic); balanced, medium in strength. Notes of spice, cedar, cocoa. Limited perfecto; complex and refined."
+      "hr": "Don Carlos (Arturo Fuente) ide s Cameroon pokrovom iz Dominikanska Republika — srednje-puno tijelo koje traži sporiji dim. Profil tipično drži orašasti tonovi i blagi začin uz urednu konstrukciju. Biraj je kad imaš vremena i piće koje podnese više tijela.",
+      "en": "Don Carlos (Arturo Fuente) takes a Cameroon wrapper from Dominikanska Republika — medium-full body that wants a slower pace. The profile typically holds nutty tones and soft spice with tidy construction. Choose it when you have time and a drink that can carry more body."
     },
     "markets": [
       "HR",
@@ -20248,6 +20272,10 @@
       "https://www.neptunecigar.com/cigars/arturo-fuente-don-carlos-double-robusto",
       "https://www.neptunecigar.com/cigars/arturo-fuente-don-carlos-no-4",
       "https://www.neptunecigar.com/cigars/arturo-fuente-don-carlos-the-man-robusto"
+    ],
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "cJJlP1MxkEM"
     ]
   },
   {
@@ -20597,8 +20625,8 @@
       "Havana Cigar Shop"
     ],
     "notes": {
-      "hr": "Serija figurada sa zatvorenom nogom, nazvana po Hemingwayu i valjana od najiskusnijih Fuenteovih torcedora. Short Story je njezin najpoznatiji format — mala cigara s dugim, slatkim finišem.",
-      "en": "A closed-foot figurado series named for Hemingway and rolled by Fuente's most experienced torcedores. Short Story is its best-known size — a small cigar with a long, sweet finish."
+      "hr": "Hemingway (Arturo Fuente) ide s prirodnim pokrovom iz Dominikanska Republika — srednje tijelo i uredan ritam dimova. Profil tipično drži čist duhan i blagi začin bez dramatičnih skokova. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
+      "en": "Hemingway (Arturo Fuente) takes a natural wrapper from Dominikanska Republika — medium body and a steady puff rhythm. The profile typically holds clean tobacco and soft spice without dramatic jumps. A solid pick when you want an hour and a profile that holds the middle third."
     },
     "markets": [
       "HR",
@@ -20733,6 +20761,10 @@
       "https://www.neptunecigar.com/cigars/arturo-fuente-hemingway-classic-sungrown-oscuro",
       "https://www.neptunecigar.com/cigars/arturo-fuente-hemingway-between-the-lines",
       "https://www.neptunecigar.com/cigars/arturo-fuente-hemingway-best-seller"
+    ],
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "JTo36x3sJ8w"
     ]
   },
   {
@@ -22368,8 +22400,8 @@
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Dominikanska Republika, Connecticut Shade pokrov — srednje snage, laganog tijela. Okusi: kremasto, cedrovina, orašasti tonovi.",
-      "en": "Dominican Republic, Connecticut Shade wrapper — medium in strength, light-bodied. Notes: creamy, cedar, nutty."
+      "hr": "Seleccion d'Oro (Arturo Fuente) ide s Connecticut shade pokrovom iz Dominikanska Republika — srednje tijelo i uredan ritam dimova. Profil tipično drži kremasti duhan i blagi cedar umjesto oštrog začina. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
+      "en": "Seleccion d'Oro (Arturo Fuente) takes a Connecticut shade wrapper from Dominikanska Republika — medium body and a steady puff rhythm. The profile typically holds creamy tobacco and soft cedar rather than sharp spice. A solid pick when you want an hour and a profile that holds the middle third."
     },
     "markets": [
       "USA",
@@ -22410,7 +22442,11 @@
       "https://www.neptunecigar.com/cigars/arturo-fuente-seleccion-d-oro-corona-imperial"
     ],
     "binderOrigin": "Dominikanska Republika",
-    "fillerOrigin": "Dominikanska Republika"
+    "fillerOrigin": "Dominikanska Republika",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "tqzBewuklWU"
+    ]
   },
   {
     "id": "cig-arturo-fuente-special-selection-brevas-royales",
@@ -23312,8 +23348,8 @@
       "Havana Cigar Shop"
     ],
     "notes": {
-      "hr": "Ashton Classic je blaga dominikanska linija s Connecticut shade pokrovom — kremasta tekstura, niska snaga i predvidiv draw. Idealna za prvu cigaru za stolom ili za gosta koji ne želi nikotinski udar. Uz nju biraj lakše piće; maduro rum je lako nadjača.",
-      "en": "Ashton Classic is a mild Dominican line with a Connecticut shade wrapper — creamy texture, low strength and a predictable draw. Ideal as the first cigar at the table or for a guest who does not want a nicotine hit. Pair with a lighter drink; a maduro rum will easily overpower it."
+      "hr": "Classic (Ashton) ide s Connecticut shade pokrovom iz Dominikanska Republika — lagano tijelo i predvidiv draw. Profil tipično drži kremasti duhan i blagi cedar umjesto oštrog začina. Dobra za gosta ili prvu cigaru za stolom; ne forsiraš je uz overproof rum.",
+      "en": "Classic (Ashton) takes a Connecticut shade wrapper from Dominikanska Republika — light body and a predictable draw. The profile typically holds creamy tobacco and soft cedar rather than sharp spice. A good guest or first-at-the-table pick; do not force it against an overproof rum."
     },
     "markets": [
       "HR",
@@ -23380,6 +23416,10 @@
       "https://www.neptunecigar.com/cigars/ashton-classic-churchill",
       "https://www.neptunecigar.com/cigars/ashton-classic-panetela",
       "https://www.neptunecigar.com/cigars/ashton-classic-magnum"
+    ],
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "rClFmVpUn1M"
     ]
   },
   {
@@ -23450,8 +23490,8 @@
     "catalogSource": "market",
     "availabilityHR": [],
     "notes": {
-      "hr": "Dominikanska Republika — linija iz trgovine Neptune Cigar.",
-      "en": "Dominican Republic — line from Neptune Cigar."
+      "hr": "Connecticut (Ashton) ide s Connecticut shade pokrovom iz Dominikanska Republika — lagano tijelo i predvidiv draw. Profil tipično drži kremasti duhan i blagi cedar umjesto oštrog začina. Dobra za gosta ili prvu cigaru za stolom; ne forsiraš je uz overproof rum.",
+      "en": "Connecticut (Ashton) takes a Connecticut shade wrapper from Dominikanska Republika — light body and a predictable draw. The profile typically holds creamy tobacco and soft cedar rather than sharp spice. A good guest or first-at-the-table pick; do not force it against an overproof rum."
     },
     "sourceUrls": [
       "https://www.neptunecigar.com/cigars/ashton-connecticut-cigarillos"
@@ -23460,7 +23500,11 @@
     "wrapperOrigin": "SAD",
     "binderOrigin": "Kamerun",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "QRXv5S1VApo"
+    ]
   },
   {
     "id": "cig-ashton-connecticut-mini-cigarillos",
@@ -24342,8 +24386,8 @@
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Dominikanska Republika, Ecuadorian sun-grown pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Ecuadorian sun-grown wrapper (Dominican Republic); balanced, medium in strength. Notes of cedar, spice, leather. Virgin Sun Grown; full-bodied spice."
+      "hr": "VSG (Ashton) ide s Connecticut shade pokrovom iz Dominikanska Republika — punije tijelo i gustoća koja traži miran ritam. Profil tipično drži kremasti duhan i blagi cedar umjesto oštrog začina. Najbolje uz piće koje podnese snagu, ne uz lagani highball.",
+      "en": "VSG (Ashton) takes a Connecticut shade wrapper from Dominikanska Republika — fuller body and density that wants a calm rhythm. The profile typically holds creamy tobacco and soft cedar rather than sharp spice. Best with a drink that can carry the strength, not a light highball."
     },
     "markets": [
       "EU",
@@ -24425,7 +24469,11 @@
       "https://www.neptunecigar.com/cigars/ashton-vsg-belicoso-no-1",
       "https://www.neptunecigar.com/cigars/ashton-vsg-eclipse"
     ],
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "buyRQdojknE"
+    ]
   },
   {
     "id": "cig-ashton-vsg-virgin-sun-grown",
@@ -24649,8 +24697,8 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Asylum 13 je linija Christiana Eiroe i Toma Lazuke poznata po ekstremnim ringovima — nikaragvanski Habano pokrov i puna snaga, bez zaobilaženja.",
-      "en": "Asylum 13 is the Christian Eiroa and Tom Lazuka line known for extreme ring gauges — a Nicaraguan Habano wrapper and full strength, with nothing softened."
+      "hr": "13 (Asylum) ide s habano pokrovom iz Nikaragva — punije tijelo i gustoća koja traži miran ritam. Profil tipično drži cedar, zemlja i blagi papar u ravnoteži. Najbolje uz piće koje podnese snagu, ne uz lagani highball.",
+      "en": "13 (Asylum) takes a habano wrapper from Nikaragva — fuller body and density that wants a calm rhythm. The profile typically holds cedar, earth and soft pepper in balance. Best with a drink that can carry the strength, not a light highball."
     },
     "markets": [
       "HR",
@@ -24788,6 +24836,10 @@
       "https://www.neptunecigar.com/cigars/asylum-13-oblongata-maduro-70x7",
       "https://www.neptunecigar.com/cigars/asylum-13-arabian-nights-660-6--60",
       "https://humidor.hr/hr/proizvod/asylum-13-hercule-7-x-70/"
+    ],
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "Jz4wAkCuNJU"
     ]
   },
   {
@@ -25690,8 +25742,8 @@
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Habano pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Nicaragua, H-2000 wrapper — medium-full in strength, fuller-bodied. Notes: cedar, spices, leather."
+      "hr": "Asylum (Asylum) ide s habano pokrovom iz Nikaragva — srednje-puno tijelo koje traži sporiji dim. Profil tipično drži cedar, zemlja i blagi papar u ravnoteži. Biraj je kad imaš vremena i piće koje podnese više tijela.",
+      "en": "Asylum (Asylum) takes a habano wrapper from Nikaragva — medium-full body that wants a slower pace. The profile typically holds cedar, earth and soft pepper in balance. Choose it when you have time and a drink that can carry more body."
     },
     "markets": [
       "EU",
@@ -25777,7 +25829,11 @@
     },
     "strengthFromShop": true,
     "flavoured": false,
-    "formatEstimated": true
+    "formatEstimated": true,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "Jz4wAkCuNJU"
+    ]
   },
   {
     "id": "cig-asylum-cool-brew",
@@ -26377,8 +26433,8 @@
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, H-2000 pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Nicaragua, H-2000 wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
+      "hr": "Ogre (Asylum) ide s habano pokrovom iz Nikaragva — srednje tijelo i uredan ritam dimova. Profil tipično drži cedar, zemlja i blagi papar u ravnoteži. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
+      "en": "Ogre (Asylum) takes a habano wrapper from Nikaragva — medium body and a steady puff rhythm. The profile typically holds cedar, earth and soft pepper in balance. A solid pick when you want an hour and a profile that holds the middle third."
     },
     "markets": [
       "EU",
@@ -26428,7 +26484,11 @@
         "fetchedAt": "2026-07-01"
       }
     },
-    "formatEstimated": true
+    "formatEstimated": true,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "Jz4wAkCuNJU"
+    ]
   },
   {
     "id": "cig-asylum-pca-exclusive",
@@ -27002,8 +27062,8 @@
     "catalogSource": "market",
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva — linija iz trgovine Neptune Cigar.",
-      "en": "Nicaragua — line from Neptune Cigar."
+      "hr": "Sensorium (Asylum) ide s prirodnim pokrovom iz Nikaragva — srednje tijelo i uredan ritam dimova. Profil tipično drži čist duhan i blagi začin bez dramatičnih skokova. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
+      "en": "Sensorium (Asylum) takes a natural wrapper from Nikaragva — medium body and a steady puff rhythm. The profile typically holds clean tobacco and soft spice without dramatic jumps. A solid pick when you want an hour and a profile that holds the middle third."
     },
     "sourceUrls": [
       "https://www.neptunecigar.com/cigars/asylum-sensorium-1118"
@@ -27011,7 +27071,11 @@
     "vitola": "1118",
     "wrapperOrigin": "Honduras",
     "binderOrigin": "Honduras",
-    "fillerOrigin": "Honduras"
+    "fillerOrigin": "Honduras",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "B8gV3209mls"
+    ]
   },
   {
     "id": "cig-asylum-straight-jacket",
@@ -27820,8 +27884,8 @@
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Honduras, Ecuador pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Honduras, Ecuador wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
+      "hr": "Expresivo (Avo) ide s Connecticut shade pokrovom iz Honduras — punije tijelo i gustoća koja traži miran ritam. Profil tipično drži kremasti duhan i blagi cedar umjesto oštrog začina. Najbolje uz piće koje podnese snagu, ne uz lagani highball.",
+      "en": "Expresivo (Avo) takes a Connecticut shade wrapper from Honduras — fuller body and density that wants a calm rhythm. The profile typically holds creamy tobacco and soft cedar rather than sharp spice. Best with a drink that can carry the strength, not a light highball."
     },
     "markets": [
       "EU",
@@ -27898,7 +27962,11 @@
     "binderOrigin": "Honduras",
     "priceUrl": "https://www.neptunecigar.com/cigars/avo-expresivo-churchill-7--48",
     "fillerOrigin": "Honduras",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "6KTLG2l1PYk"
+    ]
   },
   {
     "id": "cig-avo-expressions",
@@ -37554,8 +37622,8 @@
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Corojo pokrov — jače snage, punijeg tijela. Okusi: papar, začini, koža.",
-      "en": "Nicaragua, Corojo wrapper — medium-full in strength, fuller-bodied. Notes: pepper, spices, leather."
+      "hr": "Nine (Blanco) ide s corojo pokrovom iz Nikaragva — punije tijelo i gustoća koja traži miran ritam. Profil tipično drži zemlja i začinski rub bez grube grubosti. Najbolje uz piće koje podnese snagu, ne uz lagani highball.",
+      "en": "Nine (Blanco) takes a corojo wrapper from Nikaragva — fuller body and density that wants a calm rhythm. The profile typically holds earth and a spicy edge without rough edges. Best with a drink that can carry the strength, not a light highball."
     },
     "markets": [
       "EU",
@@ -37588,7 +37656,11 @@
         "fetchedAt": "2026-07-01"
       }
     },
-    "formatEstimated": true
+    "formatEstimated": true,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "sucKIrzSjjo"
+    ]
   },
   {
     "id": "cig-blarney-stone-stone",
@@ -40965,8 +41037,8 @@
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Connecticut Shade pokrov — lagane snage, laganog tijela. Okusi: kremasto, cedrovina, orašasti tonovi.",
-      "en": "Nicaragua, Connecticut Shade wrapper — mild in strength, light-bodied. Notes: creamy, cedar, nutty."
+      "hr": "Connecticut (Brick House) ide s Connecticut shade pokrovom iz Nikaragva — lagano tijelo i predvidiv draw. Profil tipično drži kremasti duhan i blagi cedar umjesto oštrog začina. Dobra za gosta ili prvu cigaru za stolom; ne forsiraš je uz overproof rum.",
+      "en": "Connecticut (Brick House) takes a Connecticut shade wrapper from Nikaragva — light body and a predictable draw. The profile typically holds creamy tobacco and soft cedar rather than sharp spice. A good guest or first-at-the-table pick; do not force it against an overproof rum."
     },
     "markets": [
       "USA",
@@ -41011,7 +41083,11 @@
     "wrapperOrigin": "SAD",
     "binderOrigin": "SAD",
     "fillerOrigin": "Nikaragva",
-    "binder": "Connecticut Broadleaf"
+    "binder": "Connecticut Broadleaf",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "JHRaSBIAw6s"
+    ]
   },
   {
     "id": "cig-brick-house-corona",
@@ -41067,15 +41143,19 @@
     "catalogSource": "market",
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva — linija iz trgovine Neptune Cigar.",
-      "en": "Nicaragua — line from Neptune Cigar."
+      "hr": "Corona (Brick House) ide s habano pokrovom iz Nikaragva — srednje tijelo i uredan ritam dimova. Profil tipično drži cedar, zemlja i blagi papar u ravnoteži. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
+      "en": "Corona (Brick House) takes a habano wrapper from Nikaragva — medium body and a steady puff rhythm. The profile typically holds cedar, earth and soft pepper in balance. A solid pick when you want an hour and a profile that holds the middle third."
     },
     "sourceUrls": [
       "https://www.neptunecigar.com/cigars/brick-house-corona"
     ],
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Nikaragva",
-    "fillerOrigin": "Nikaragva"
+    "fillerOrigin": "Nikaragva",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "ZipcjhMGXeE"
+    ]
   },
   {
     "id": "cig-brick-house-double-connecticut",
@@ -41100,8 +41180,8 @@
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Connecticut pokrov — lagane snage, laganog tijela. Okusi: kremasto, cedrovina, orašasti tonovi.",
-      "en": "Nicaragua, Connecticut wrapper — mild in strength, light-bodied. Notes: creamy, cedar, nutty."
+      "hr": "Double Connecticut (Brick House) ide s Connecticut shade pokrovom iz Nikaragva — lagano tijelo i predvidiv draw. Profil tipično drži kremasti duhan i blagi cedar umjesto oštrog začina. Dobra za gosta ili prvu cigaru za stolom; ne forsiraš je uz overproof rum.",
+      "en": "Double Connecticut (Brick House) takes a Connecticut shade wrapper from Nikaragva — light body and a predictable draw. The profile typically holds creamy tobacco and soft cedar rather than sharp spice. A good guest or first-at-the-table pick; do not force it against an overproof rum."
     },
     "markets": [
       "EU",
@@ -41165,7 +41245,11 @@
     "binderOrigin": "SAD",
     "fillerOrigin": "Nikaragva",
     "strengthFromShop": true,
-    "binder": "Connecticut Broadleaf"
+    "binder": "Connecticut Broadleaf",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "N9H32hzkCOE"
+    ]
   },
   {
     "id": "cig-brick-house-is-on-fire-taa-exclusive",
@@ -41318,8 +41402,8 @@
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Ecuador Habano, Brazilian Maduro pokrov — srednje snage, punijeg tijela. Okusi: kakao, kava, karamela.",
-      "en": "Nicaragua, Ecuador Habano, Brazilian Maduro wrapper — medium in strength, fuller-bodied. Notes: cocoa, coffee, caramel."
+      "hr": "Maduro (Brick House) ide s tamnijim maduro pokrovom iz Nikaragva — srednje tijelo i uredan ritam dimova. Profil tipično drži tamnija slatkoća, kava i toplina umjesto oštre snage. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
+      "en": "Maduro (Brick House) takes a darker maduro wrapper from Nikaragva — medium body and a steady puff rhythm. The profile typically holds darker sweetness, coffee and warmth rather than sharp strength. A solid pick when you want an hour and a profile that holds the middle third."
     },
     "markets": [
       "EU",
@@ -41385,7 +41469,11 @@
     "priceUrl": "https://www.neptunecigar.com/cigars/brick-house-toro-maduro",
     "wrapperOrigin": "Brazil",
     "binderOrigin": "Nikaragva",
-    "fillerOrigin": "Nikaragva"
+    "fillerOrigin": "Nikaragva",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "C1UIDgLSFNk"
+    ]
   },
   {
     "id": "cig-brick-house-mighty-mighty",
@@ -45304,8 +45392,8 @@
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Honduras, Honduras pokrov — jače snage, punijeg tijela. Okusi: kakao, kava, karamela.",
-      "en": "Honduras, Honduras wrapper — medium-full in strength, fuller-bodied. Notes: cocoa, coffee, caramel."
+      "hr": "Broadleaf (Camacho) ide s prirodnim pokrovom iz Honduras — srednje-puno tijelo koje traži sporiji dim. Profil tipično drži čist duhan i blagi začin bez dramatičnih skokova. Biraj je kad imaš vremena i piće koje podnese više tijela.",
+      "en": "Broadleaf (Camacho) takes a natural wrapper from Honduras — medium-full body that wants a slower pace. The profile typically holds clean tobacco and soft spice without dramatic jumps. Choose it when you have time and a drink that can carry more body."
     },
     "markets": [
       "EU",
@@ -45386,7 +45474,11 @@
     "wrapperOrigin": "Honduras",
     "binderOrigin": "Honduras",
     "priceUrl": "https://www.neptunecigar.com/cigars/camacho-broadleaf-robusto",
-    "fillerOrigin": "Dominikanska Republika"
+    "fillerOrigin": "Dominikanska Republika",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "lBjZY8Fa5hc"
+    ]
   },
   {
     "id": "cig-camacho-check-six",
@@ -45481,8 +45573,8 @@
       "Havana Cigar Shop"
     ],
     "notes": {
-      "hr": "Camacho Connecticut nije najmekši shade na polici — honduraški blend drži malo više udarca nego tipični blagi Connecticut. Pokrov ostaje svijetli, ali tijelo i začin izlaze ranije. Dobra kad želiš Connecticut boju uz malo više ritma u dimu.",
-      "en": "Camacho Connecticut is not the softest shade on the shelf — the Honduran blend keeps a bit more kick than a typical mild Connecticut. The wrapper stays light, but body and spice show earlier. A good pick when you want Connecticut colour with a bit more rhythm in the smoke."
+      "hr": "Connecticut (Camacho) ide s Connecticut shade pokrovom iz Honduras — lagano tijelo i predvidiv draw. Profil tipično drži kremasti duhan i blagi cedar umjesto oštrog začina. Dobra za gosta ili prvu cigaru za stolom; ne forsiraš je uz overproof rum.",
+      "en": "Connecticut (Camacho) takes a Connecticut shade wrapper from Honduras — light body and a predictable draw. The profile typically holds creamy tobacco and soft cedar rather than sharp spice. A good guest or first-at-the-table pick; do not force it against an overproof rum."
     },
     "markets": [
       "HR",
@@ -45578,6 +45670,10 @@
       "https://www.neptunecigar.com/cigars/camacho-connecticut-robusto",
       "https://www.neptunecigar.com/cigars/camacho-connecticut-toro",
       "https://www.neptunecigar.com/cigars/camacho-connecticut-churchill"
+    ],
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "fGKYLm1wdVg"
     ]
   },
   {
@@ -48017,8 +48113,8 @@
     "priceApprox": true,
     "availabilityHR": [],
     "notes": {
-      "hr": "Brazilia donosi brazilski maduro pokrov na nikaragvanskoj osnovi — srednje tijelo, tamnija slatkoća i toplina umjesto oštre snage. Kava i orašasti tonovi često vode; draw treba držati miran da se pokrov ne pregrije. Dobra večer uz rum s karamelom ili blagi maduro viski.",
-      "en": "Brazilia brings a Brazilian maduro wrapper over a Nicaraguan core — medium body, darker sweetness and warmth rather than sharp strength. Coffee and nutty tones often lead; keep the draw calm so the wrapper does not overheat. A good evening with a caramel-leaning rum or a gentle maduro whisky."
+      "hr": "Brazilia (CAO) ide s tamnijim maduro pokrovom iz Nikaragva — srednje tijelo i uredan ritam dimova. Profil tipično drži tamnija slatkoća, kava i toplina umjesto oštre snage. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
+      "en": "Brazilia (CAO) takes a darker maduro wrapper from Nikaragva — medium body and a steady puff rhythm. The profile typically holds darker sweetness, coffee and warmth rather than sharp strength. A solid pick when you want an hour and a profile that holds the middle third."
     },
     "markets": [
       "USA",
@@ -48072,6 +48168,10 @@
       "https://www.neptunecigar.com/cigars/cao-brazilia-minis",
       "https://www.neptunecigar.com/cigars/cao-brazilia-samba",
       "https://www.neptunecigar.com/cigars/cao-brazilia-gol"
+    ],
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "m2I9JN7rtwo"
     ]
   },
   {
@@ -54486,8 +54586,8 @@
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Dominikanska Republika, Corojo pokrov — jače snage, punijeg tijela. Okusi: papar, začini, koža.",
-      "en": "Dominican Republic, Corojo wrapper — medium-full in strength, fuller-bodied. Notes: pepper, spices, leather."
+      "hr": "Liga F (Casa Magna) ide s corojo pokrovom iz Dominikanska Republika — srednje-puno tijelo koje traži sporiji dim. Profil tipično drži zemlja i začinski rub bez grube grubosti. Biraj je kad imaš vremena i piće koje podnese više tijela.",
+      "en": "Liga F (Casa Magna) takes a corojo wrapper from Dominikanska Republika — medium-full body that wants a slower pace. The profile typically holds earth and a spicy edge without rough edges. Choose it when you have time and a drink that can carry more body."
     },
     "markets": [
       "EU",
@@ -54555,7 +54655,11 @@
       "https://www.neptunecigar.com/cigars/casa-magna-liga-f-churchill"
     ],
     "priceUrl": "https://www.neptunecigar.com/cigars/casa-magna-liga-f-toro",
-    "fillerOrigin": "Dominikanska Republika"
+    "fillerOrigin": "Dominikanska Republika",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "RhF9XGb7s60"
+    ]
   },
   {
     "id": "cig-casa-magna-maduro-taa-exclusive-press",
@@ -73162,8 +73266,8 @@
       "Havana Cigar Shop"
     ],
     "notes": {
-      "hr": "Davidoff Aniversario je mirna dominikanska linija s Connecticut pokrovom — srednje-blago tijelo, uredna konstrukcija i profil bez dramatičnih skokova. Cedar i kremasti duhan drže cijelu cigaru. Biraj je kad želiš eleganciju i vrijeme, ne kad tražiš puni maduro udar.",
-      "en": "Davidoff Aniversario is a calm Dominican line with a Connecticut wrapper — medium-mild body, tidy construction and a profile without dramatic jumps. Cedar and creamy tobacco hold through the cigar. Choose it when you want polish and time, not a full maduro punch."
+      "hr": "Aniversario (Davidoff) ide s Connecticut shade pokrovom iz Dominikanska Republika — lagano tijelo i predvidiv draw. Profil tipično drži kremasti duhan i blagi cedar umjesto oštrog začina. Dobra za gosta ili prvu cigaru za stolom; ne forsiraš je uz overproof rum.",
+      "en": "Aniversario (Davidoff) takes a Connecticut shade wrapper from Dominikanska Republika — light body and a predictable draw. The profile typically holds creamy tobacco and soft cedar rather than sharp spice. A good guest or first-at-the-table pick; do not force it against an overproof rum."
     },
     "markets": [
       "HR",
@@ -73279,6 +73383,10 @@
       "https://www.neptunecigar.com/cigars/davidoff-aniversario-no-3-tubos",
       "https://www.neptunecigar.com/cigars/davidoff-aniversario-no-1-limited-edition-2023-double-corona",
       "https://www.neptunecigar.com/cigars/davidoff-aniversario-no3"
+    ],
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "fiRViE8ZHXA"
     ]
   },
   {
@@ -73649,8 +73757,8 @@
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Dominikanska Republika, Dominican pokrov — jače snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Dominican Republic, Dominican wrapper — medium-full in strength, medium-bodied. Notes: cedar, spices, leather."
+      "hr": "Dominicana (Davidoff) ide s prirodnim pokrovom iz Dominikanska Republika — srednje-puno tijelo koje traži sporiji dim. Profil tipično drži čist duhan i blagi začin bez dramatičnih skokova. Biraj je kad imaš vremena i piće koje podnese više tijela.",
+      "en": "Dominicana (Davidoff) takes a natural wrapper from Dominikanska Republika — medium-full body that wants a slower pace. The profile typically holds clean tobacco and soft spice without dramatic jumps. Choose it when you have time and a drink that can carry more body."
     },
     "markets": [
       "USA",
@@ -73703,7 +73811,11 @@
     "strengthFromShop": true,
     "wrapperOrigin": "Dominikanska Republika",
     "binderOrigin": "Ekvador",
-    "fillerOrigin": "Dominikanska Republika"
+    "fillerOrigin": "Dominikanska Republika",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "Ul-G27NBd9Q"
+    ]
   },
   {
     "id": "cig-davidoff-escurio",
@@ -74902,8 +75014,8 @@
       "Havana Cigar Shop"
     ],
     "notes": {
-      "hr": "Davidoff Nicaragua diže marku iznad Signature/Aniversario blagosti — habano pokrov, srednje tijelo i više zemlje uz i dalje uredan draw. Nije najjača nikaragvanska bomba, ali jasno jača od klasičnog Connecticuta. Dobra kad želiš Davidoff urednost s malo više karaktera.",
-      "en": "Davidoff Nicaragua lifts the brand above Signature/Aniversario mildness — habano wrapper, medium body and more earth while keeping a tidy draw. Not the loudest Nicaraguan bomb, but clearly stronger than classic Connecticut. A good pick when you want Davidoff polish with a bit more character."
+      "hr": "Nicaragua (Davidoff) ide s habano pokrovom iz Dominikanska Republika — srednje tijelo i uredan ritam dimova. Profil tipično drži cedar, zemlja i blagi papar u ravnoteži. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
+      "en": "Nicaragua (Davidoff) takes a habano wrapper from Dominikanska Republika — medium body and a steady puff rhythm. The profile typically holds cedar, earth and soft pepper in balance. A solid pick when you want an hour and a profile that holds the middle third."
     },
     "markets": [
       "HR",
@@ -75051,6 +75163,10 @@
       "https://www.neptunecigar.com/cigars/davidoff-nicaragua-short-corona",
       "https://www.neptunecigar.com/cigars/davidoff-nicaragua-box-pressed-toro",
       "https://www.neptunecigar.com/cigars/davidoff-nicaragua-10th-anniversary-le-toro"
+    ],
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "OSSjHMFmeQE"
     ]
   },
   {
@@ -75261,8 +75377,8 @@
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Dominikanska Republika, Dominican Republic pokrov — jače snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Dominican Republic, Dominican Republic wrapper — medium-full in strength, medium-bodied. Notes: cedar, spices, leather."
+      "hr": "Puro Dominicano (Davidoff) ide s prirodnim pokrovom iz Dominikanska Republika — srednje-puno tijelo koje traži sporiji dim. Profil tipično drži čist duhan i blagi začin bez dramatičnih skokova. Biraj je kad imaš vremena i piće koje podnese više tijela.",
+      "en": "Puro Dominicano (Davidoff) takes a natural wrapper from Dominikanska Republika — medium-full body that wants a slower pace. The profile typically holds clean tobacco and soft spice without dramatic jumps. Choose it when you have time and a drink that can carry more body."
     },
     "markets": [
       "EU",
@@ -75348,7 +75464,11 @@
       "https://www.neptunecigar.com/cigars/davidoff-puro-dominicano-corona-larga-57-8--44",
       "https://www.neptunecigar.com/cigars/davidoff-puro-dominicano-short-robusto-41-2--52"
     ],
-    "priceUrl": "https://www.neptunecigar.com/cigars/davidoff-puro-dominicano-perfecto-51-2--50"
+    "priceUrl": "https://www.neptunecigar.com/cigars/davidoff-puro-dominicano-perfecto-51-2--50",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "bUczwfVYBjM"
+    ]
   },
   {
     "id": "cig-davidoff-real-especiales-7-le-2019",
@@ -75487,8 +75607,8 @@
       "Havana Cigar Shop"
     ],
     "notes": {
-      "hr": "Dominikanska Republika, Dominican Republic pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Dominican Republic, Dominican Republic wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
+      "hr": "Royal Release (Davidoff) ide s prirodnim pokrovom iz Dominikanska Republika — srednje tijelo i uredan ritam dimova. Profil tipično drži čist duhan i blagi začin bez dramatičnih skokova. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
+      "en": "Royal Release (Davidoff) takes a natural wrapper from Dominikanska Republika — medium body and a steady puff rhythm. The profile typically holds clean tobacco and soft spice without dramatic jumps. A solid pick when you want an hour and a profile that holds the middle third."
     },
     "markets": [
       "HR",
@@ -75533,7 +75653,11 @@
     "binderOrigin": "Ekvador",
     "strengthFromShop": true,
     "binder": "Habano Ecuador",
-    "filler": "Criollo Ligero"
+    "filler": "Criollo Ligero",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "x1hMSB8cmwM"
+    ]
   },
   {
     "id": "cig-davidoff-royal-release-salomones",
@@ -76035,7 +76159,11 @@
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Meksiko",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "2DHpvrTwWbw"
+    ]
   },
   {
     "id": "cig-davidoff-winston-churchill",
@@ -76061,8 +76189,8 @@
       "Havana Cigar Shop"
     ],
     "notes": {
-      "hr": "Dominikanska Republika, Ecuadorian habano pokrov — srednje snage, punijeg tijela. Okusi: kava, tamno voće, začini.",
-      "en": "Ecuadorian habano wrapper (Dominican Republic); balanced, medium in strength. Notes of coffee, dark fruit, spice. Churchill tribute toro; refined complexity."
+      "hr": "Winston Churchill (Davidoff) ide s habano pokrovom iz Dominikanska Republika — srednje tijelo i uredan ritam dimova. Profil tipično drži cedar, zemlja i blagi papar u ravnoteži. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
+      "en": "Winston Churchill (Davidoff) takes a habano wrapper from Dominikanska Republika — medium body and a steady puff rhythm. The profile typically holds cedar, earth and soft pepper in balance. A solid pick when you want an hour and a profile that holds the middle third."
     },
     "markets": [
       "HR",
@@ -76173,6 +76301,10 @@
     "isPuro": false,
     "sourceUrls": [
       "https://www.neptunecigar.com/cigars/davidoff-winston-churchill-petit-corona"
+    ],
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "2DHpvrTwWbw"
     ]
   },
   {
@@ -77086,15 +77218,19 @@
     "catalogSource": "market",
     "availabilityHR": [],
     "notes": {
-      "hr": "Dominikanska Republika — linija iz trgovine Neptune Cigar.",
-      "en": "Dominican Republic — line from Neptune Cigar."
+      "hr": "Year of the Horse (Davidoff) ide s Connecticut shade pokrovom iz Dominikanska Republika — srednje tijelo i uredan ritam dimova. Profil tipično drži kremasti duhan i blagi cedar umjesto oštrog začina. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
+      "en": "Year of the Horse (Davidoff) takes a Connecticut shade wrapper from Dominikanska Republika — medium body and a steady puff rhythm. The profile typically holds creamy tobacco and soft cedar rather than sharp spice. A solid pick when you want an hour and a profile that holds the middle third."
     },
     "sourceUrls": [
       "https://www.neptunecigar.com/cigars/davidoff-year-of-the-horse-61-2--55"
     ],
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Ekvador",
-    "fillerOrigin": "Dominikanska Republika"
+    "fillerOrigin": "Dominikanska Republika",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "frabtAUc-6c"
+    ]
   },
   {
     "id": "cig-davidoff-year-of-the-ox",
@@ -79647,8 +79783,8 @@
     "catalogSource": "market",
     "availabilityHR": [],
     "notes": {
-      "hr": "Dominikanska Republika — linija iz trgovine Neptune Cigar.",
-      "en": "Dominican Republic — line from Neptune Cigar."
+      "hr": "Black Diamond (Diamond Crown) ide s Connecticut shade pokrovom iz Dominikanska Republika — punije tijelo i gustoća koja traži miran ritam. Profil tipično drži kremasti duhan i blagi cedar umjesto oštrog začina. Najbolje uz piće koje podnese snagu, ne uz lagani highball.",
+      "en": "Black Diamond (Diamond Crown) takes a Connecticut shade wrapper from Dominikanska Republika — fuller body and density that wants a calm rhythm. The profile typically holds creamy tobacco and soft cedar rather than sharp spice. Best with a drink that can carry the strength, not a light highball."
     },
     "sourceUrls": [
       "https://www.neptunecigar.com/cigars/diamond-crown-black-diamond-emerald"
@@ -79657,7 +79793,11 @@
     "wrapperOrigin": "SAD",
     "binderOrigin": "Dominikanska Republika",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "AEt3kbEvuNo"
+    ]
   },
   {
     "id": "cig-diamond-crown-julius-caeser",
@@ -79838,8 +79978,8 @@
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Dominikanska Republika, Sumatra pokrov — srednje snage, punijeg tijela. Okusi: kakao, začini, drvo.",
-      "en": "Dominican Republic, Sumatra wrapper — medium in strength, fuller-bodied. Notes: cocoa, spices, wood."
+      "hr": "Maximus (Diamond Crown) ide s prirodnim pokrovom iz Dominikanska Republika — srednje tijelo i uredan ritam dimova. Profil tipično drži čist duhan i blagi začin bez dramatičnih skokova. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
+      "en": "Maximus (Diamond Crown) takes a natural wrapper from Dominikanska Republika — medium body and a steady puff rhythm. The profile typically holds clean tobacco and soft spice without dramatic jumps. A solid pick when you want an hour and a profile that holds the middle third."
     },
     "markets": [
       "EU",
@@ -79903,7 +80043,11 @@
     ],
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Dominikanska Republika",
-    "fillerOrigin": "Dominikanska Republika"
+    "fillerOrigin": "Dominikanska Republika",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "id95A8TzTSc"
+    ]
   },
   {
     "id": "cig-diamond-crown-no",
@@ -79990,8 +80134,8 @@
     "catalogSource": "market",
     "availabilityHR": [],
     "notes": {
-      "hr": "Dominikanska Republika — linija iz trgovine Neptune Cigar.",
-      "en": "Dominican Republic — line from Neptune Cigar."
+      "hr": "No. (Diamond Crown) ide s Connecticut shade pokrovom iz Dominikanska Republika — lagano tijelo i predvidiv draw. Profil tipično drži kremasti duhan i blagi cedar umjesto oštrog začina. Dobra za gosta ili prvu cigaru za stolom; ne forsiraš je uz overproof rum.",
+      "en": "No. (Diamond Crown) takes a Connecticut shade wrapper from Dominikanska Republika — light body and a predictable draw. The profile typically holds creamy tobacco and soft cedar rather than sharp spice. A good guest or first-at-the-table pick; do not force it against an overproof rum."
     },
     "sourceUrls": [
       "https://www.neptunecigar.com/cigars/diamond-crown-robusto-no-1"
@@ -80000,7 +80144,11 @@
     "wrapperOrigin": "SAD",
     "binderOrigin": "Dominikanska Republika",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "qd-wG-WBhwk"
+    ]
   },
   {
     "id": "cig-dictador-j-nelson-1974",
@@ -92290,8 +92438,8 @@
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, San Andres pokrov — jače snage, punijeg tijela. Okusi: kakao, kava, karamela.",
-      "en": "Nicaragua, San Andres wrapper — medium-full in strength, fuller-bodied. Notes: cocoa, coffee, caramel."
+      "hr": "Undercrown (Drew Estate) ide s tamnijim maduro pokrovom iz Nikaragva — srednje-puno tijelo koje traži sporiji dim. Profil tipično drži tamnija slatkoća, kava i toplina umjesto oštre snage. Biraj je kad imaš vremena i piće koje podnese više tijela.",
+      "en": "Undercrown (Drew Estate) takes a darker maduro wrapper from Nikaragva — medium-full body that wants a slower pace. The profile typically holds darker sweetness, coffee and warmth rather than sharp strength. Choose it when you have time and a drink that can carry more body."
     },
     "markets": [
       "USA",
@@ -92346,7 +92494,11 @@
     },
     "strengthFromShop": true,
     "flavoured": false,
-    "formatEstimated": false
+    "formatEstimated": false,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "ZEEeMcfC4mU"
+    ]
   },
   {
     "id": "cig-drew-estate-undercrown-10",
@@ -92578,8 +92730,8 @@
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Ecuador Sumatra pokrov — jače snage, punijeg tijela. Okusi: kakao, začini, drvo.",
-      "en": "Nicaragua, Ecuador Sumatra wrapper — medium-full in strength, fuller-bodied. Notes: cocoa, spices, wood."
+      "hr": "Undercrown El Tigre Dominicano (Drew Estate) ide s Connecticut shade pokrovom iz Nikaragva — srednje-puno tijelo koje traži sporiji dim. Profil tipično drži kremasti duhan i blagi cedar umjesto oštrog začina. Biraj je kad imaš vremena i piće koje podnese više tijela.",
+      "en": "Undercrown El Tigre Dominicano (Drew Estate) takes a Connecticut shade wrapper from Nikaragva — medium-full body that wants a slower pace. The profile typically holds creamy tobacco and soft cedar rather than sharp spice. Choose it when you have time and a drink that can carry more body."
     },
     "markets": [
       "USA",
@@ -92623,7 +92775,11 @@
         "fetchedAt": "2026-07-01"
       }
     },
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "ZEEeMcfC4mU"
+    ]
   },
   {
     "id": "cig-drew-estate-undercrown-maduro",
@@ -99339,8 +99495,8 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Boutique linija u više formata (uklj. culebra kuriozitet) — tamna i bogata.",
-      "en": "Boutique line in many formats (incl. culebra curiosity) — dark and rich."
+      "hr": "El Pulpo (El Pulpo) ide s tamnijim maduro pokrovom iz Nikaragva — srednje-puno tijelo koje traži sporiji dim. Profil tipično drži tamnija slatkoća, kava i toplina umjesto oštre snage. Biraj je kad imaš vremena i piće koje podnese više tijela.",
+      "en": "El Pulpo (El Pulpo) takes a darker maduro wrapper from Nikaragva — medium-full body that wants a slower pace. The profile typically holds darker sweetness, coffee and warmth rather than sharp strength. Choose it when you have time and a drink that can carry more body."
     },
     "markets": [
       "HR",
@@ -99422,7 +99578,11 @@
     "wrapperOrigin": "Meksiko",
     "binderOrigin": "Nikaragva",
     "fillerOrigin": "Nikaragva",
-    "isPuro": false
+    "isPuro": false,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "ubptgvoueeE"
+    ]
   },
   {
     "id": "cig-el-pulpo-gordita",
@@ -111193,8 +111353,8 @@
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, San Andrés maduro pokrov — jače snage, punog tijela. Okusi: kakao, kava, karamela.",
-      "en": "Nicaragua, San Andres wrapper — medium-full in strength, fuller-bodied. Notes: cocoa, coffee, caramel."
+      "hr": "Olmec (Foundation) ide s tamnijim maduro pokrovom iz Nikaragva — punije tijelo i gustoća koja traži miran ritam. Profil tipično drži tamnija slatkoća, kava i toplina umjesto oštre snage. Najbolje uz piće koje podnese snagu, ne uz lagani highball.",
+      "en": "Olmec (Foundation) takes a darker maduro wrapper from Nikaragva — fuller body and density that wants a calm rhythm. The profile typically holds darker sweetness, coffee and warmth rather than sharp strength. Best with a drink that can carry the strength, not a light highball."
     },
     "markets": [
       "EU",
@@ -111284,7 +111444,11 @@
     "flavoured": false,
     "strengthFromShop": true,
     "formatEstimated": false,
-    "wrapperOrigin": "Meksiko"
+    "wrapperOrigin": "Meksiko",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "KVvmblM3ZVs"
+    ]
   },
   {
     "id": "cig-foundation-tabernacle",
@@ -111313,8 +111477,8 @@
     ],
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Connecticut Habano pokrov — srednje snage, laganog tijela. Okusi: kremasto, cedrovina, orašasti tonovi.",
-      "en": "Nicaragua, Connecticut Broadleaf wrapper — medium-full in strength, fuller-bodied. Notes: cocoa, coffee, caramel."
+      "hr": "Tabernacle (Foundation) ide s Connecticut shade pokrovom iz Nikaragva — punije tijelo i gustoća koja traži miran ritam. Profil tipično drži kremasti duhan i blagi cedar umjesto oštrog začina. Najbolje uz piće koje podnese snagu, ne uz lagani highball.",
+      "en": "Tabernacle (Foundation) takes a Connecticut shade wrapper from Nikaragva — fuller body and density that wants a calm rhythm. The profile typically holds creamy tobacco and soft cedar rather than sharp spice. Best with a drink that can carry the strength, not a light highball."
     },
     "vitolas": [
       {
@@ -111489,7 +111653,11 @@
     "strengthFromShop": true,
     "formatEstimated": true,
     "profileEstimated": false,
-    "fillerOrigin": "Honduras"
+    "fillerOrigin": "Honduras",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "bLjhrTI6vK0"
+    ]
   },
   {
     "id": "cig-foundation-the-upsetters",
@@ -115266,8 +115434,8 @@
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Dominikanska Republika, Ecuador pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Dominican Republic, Ecuador wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
+      "hr": "of Fire By Don Carlos (God of Fire) ide s Connecticut shade pokrovom iz Dominikanska Republika — srednje tijelo i uredan ritam dimova. Profil tipično drži kremasti duhan i blagi cedar umjesto oštrog začina. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
+      "en": "of Fire By Don Carlos (God of Fire) takes a Connecticut shade wrapper from Dominikanska Republika — medium body and a steady puff rhythm. The profile typically holds creamy tobacco and soft cedar rather than sharp spice. A solid pick when you want an hour and a profile that holds the middle third."
     },
     "markets": [
       "EU",
@@ -115317,7 +115485,11 @@
         "fetchedAt": "2026-07-01"
       }
     },
-    "formatEstimated": true
+    "formatEstimated": true,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "nq90_GqOJJE"
+    ]
   },
   {
     "id": "cig-god-of-fire-serie-b",
@@ -123359,8 +123531,8 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Half Corona — savršena 'kava cigara': 25 minuta uglađene kremaste kubanke, referentni mali format.",
-      "en": "The Half Corona — the perfect coffee cigar: 25 minutes of polished, creamy Cuban; the reference small format."
+      "hr": "Half Corona (H. Upmann) ide s habano pokrovom iz Kuba — lagano tijelo i predvidiv draw. Profil tipično drži cedar, zemlja i blagi papar u ravnoteži. Dobra za gosta ili prvu cigaru za stolom; ne forsiraš je uz overproof rum.",
+      "en": "Half Corona (H. Upmann) takes a habano wrapper from Kuba — light body and a predictable draw. The profile typically holds cedar, earth and soft pepper in balance. A good guest or first-at-the-table pick; do not force it against an overproof rum."
     },
     "markets": [
       "HR",
@@ -123394,7 +123566,11 @@
     "binderOrigin": "Kuba",
     "fillerOrigin": "Kuba",
     "wrapperOrigin": "Kuba",
-    "isPuro": true
+    "isPuro": true,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "OOPkEZxXoIo"
+    ]
   },
   {
     "id": "cig-h-upmann-magnum",
@@ -123421,7 +123597,7 @@
     ],
     "notes": {
       "hr": "Magnum (H. Upmann) ide s habano pokrovom iz Kuba — srednje tijelo i uredan ritam dimova. Profil tipično drži cedar, zemlja i blagi papar u ravnoteži. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
-      "en": "Magnum (H. Upmann) takes a habano wrapper from Cuba — medium body and a steady puff rhythm. The profile typically holds cedar, earth and soft pepper in balance. A solid pick when you want an hour and a profile that holds the middle third."
+      "en": "Magnum (H. Upmann) takes a habano wrapper from Kuba — medium body and a steady puff rhythm. The profile typically holds cedar, earth and soft pepper in balance. A solid pick when you want an hour and a profile that holds the middle third."
     },
     "markets": [
       "HR",
@@ -123471,7 +123647,11 @@
     "wrapperOrigin": "Kuba",
     "binderOrigin": "Kuba",
     "fillerOrigin": "Kuba",
-    "isPuro": true
+    "isPuro": true,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "Q9r2TJdMx1g"
+    ]
   },
   {
     "id": "cig-h-upmann-reserva",
@@ -141965,8 +142145,8 @@
     "priceApprox": true,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Ecuador Habano Rosado pokrov — jače snage, srednjeg tijela. Okusi: kava, melasa, kremasto.",
-      "en": "Nicaragua, Ecuador Habano Rosado wrapper — medium-full in strength, medium-bodied. Notes: coffee, molasses, cream, cedar."
+      "hr": "Habano Reserve (La Aroma de Cuba) ide s habano pokrovom iz Nikaragva — srednje-puno tijelo koje traži sporiji dim. Profil tipično drži cedar, zemlja i blagi papar u ravnoteži. Biraj je kad imaš vremena i piće koje podnese više tijela.",
+      "en": "Habano Reserve (La Aroma de Cuba) takes a habano wrapper from Nikaragva — medium-full body that wants a slower pace. The profile typically holds cedar, earth and soft pepper in balance. Choose it when you have time and a drink that can carry more body."
     },
     "markets": [
       "USA",
@@ -142000,7 +142180,11 @@
     "priceUrl": "https://www.neptunecigar.com/cigars/la-aroma-de-cuba-habano-reserve-monarch-6--52",
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Nikaragva",
-    "fillerOrigin": "Nikaragva"
+    "fillerOrigin": "Nikaragva",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "IU3sBFzOMAI"
+    ]
   },
   {
     "id": "cig-la-aroma-de-cuba-immensa",
@@ -142088,8 +142272,8 @@
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Connecticut Broadleaf pokrov — srednje snage, punijeg tijela. Okusi: kakao, kava, karamela.",
-      "en": "Nicaragua, Connecticut Broadleaf wrapper — medium in strength, fuller-bodied. Notes: cocoa, coffee, caramel."
+      "hr": "La Aroma de Cuba (La Aroma de Cuba) ide s Connecticut shade pokrovom iz Nikaragva — srednje tijelo i uredan ritam dimova. Profil tipično drži kremasti duhan i blagi cedar umjesto oštrog začina. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
+      "en": "La Aroma de Cuba (La Aroma de Cuba) takes a Connecticut shade wrapper from Nikaragva — medium body and a steady puff rhythm. The profile typically holds creamy tobacco and soft cedar rather than sharp spice. A solid pick when you want an hour and a profile that holds the middle third."
     },
     "markets": [
       "USA",
@@ -142160,7 +142344,11 @@
         "fetchedAt": "2026-07-01"
       }
     },
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "xAL9JtOsj1I"
+    ]
   },
   {
     "id": "cig-la-aroma-de-cuba-mi-amor",
@@ -142616,8 +142804,8 @@
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, San Andres pokrov — pune snage, punijeg tijela. Okusi: kakao, kava, karamela.",
-      "en": "Nicaragua, San Andres wrapper — full in strength, fuller-bodied. Notes: cocoa, coffee, caramel."
+      "hr": "Reserva (La Aroma de Cuba) ide s prirodnim pokrovom iz Nikaragva — punije tijelo i gustoća koja traži miran ritam. Profil tipično drži čist duhan i blagi začin bez dramatičnih skokova. Najbolje uz piće koje podnese snagu, ne uz lagani highball.",
+      "en": "Reserva (La Aroma de Cuba) takes a natural wrapper from Nikaragva — fuller body and density that wants a calm rhythm. The profile typically holds clean tobacco and soft spice without dramatic jumps. Best with a drink that can carry the strength, not a light highball."
     },
     "markets": [
       "EU",
@@ -142722,7 +142910,11 @@
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Nikaragva",
     "fillerOrigin": "Nikaragva",
-    "isPuro": false
+    "isPuro": false,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "yWdqdtyahNI"
+    ]
   },
   {
     "id": "cig-la-aroma-de-cuba-robusto",
@@ -153673,8 +153865,8 @@
     "catalogSource": "market",
     "availabilityHR": [],
     "notes": {
-      "hr": "Dominikanska Republika — linija iz trgovine Neptune Cigar.",
-      "en": "Dominican Republic — line from Neptune Cigar."
+      "hr": "Los Gloriosos (La Gloria Cubana) ide s habano pokrovom iz Dominikanska Republika — srednje-puno tijelo koje traži sporiji dim. Profil tipično drži cedar, zemlja i blagi papar u ravnoteži. Biraj je kad imaš vremena i piće koje podnese više tijela.",
+      "en": "Los Gloriosos (La Gloria Cubana) takes a habano wrapper from Dominikanska Republika — medium-full body that wants a slower pace. The profile typically holds cedar, earth and soft pepper in balance. Choose it when you have time and a drink that can carry more body."
     },
     "sourceUrls": [
       "https://www.neptunecigar.com/cigars/la-gloria-cubana-los-gloriosos-toro-6--50"
@@ -153682,7 +153874,11 @@
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Nikaragva",
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "OAKAf9BYtTY"
+    ]
   },
   {
     "id": "cig-la-gloria-cubana-los-gloriosos-grandioso",
@@ -164427,7 +164623,11 @@
     "fillerOrigin": "Dominikanska Republika",
     "strengthFromShop": true,
     "binder": "Connecticut Broadleaf",
-    "filler": "Ligero"
+    "filler": "Ligero",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "MAydB34Urpg"
+    ]
   },
   {
     "id": "cig-macanudo-cafe",
@@ -164455,8 +164655,8 @@
       "Havana Cigar Shop"
     ],
     "notes": {
-      "hr": "Dominikanska Republika, Connecticut shade pokrov — vrlo lagane snage, vrlo laganog tijela. Okusi: kremasto, cedrovina, orašasti tonovi.",
-      "en": "Connecticut shade wrapper (Dominican Republic); mild and smooth. Notes of cream, cedar, nuts. Hyde Park toro; approachable mild."
+      "hr": "Café (Macanudo) ide s Connecticut shade pokrovom iz Dominikanska Republika — lagano tijelo i predvidiv draw. Profil tipično drži kremasti duhan i blagi cedar umjesto oštrog začina. Dobra za gosta ili prvu cigaru za stolom; ne forsiraš je uz overproof rum.",
+      "en": "Café (Macanudo) takes a Connecticut shade wrapper from Dominikanska Republika — light body and a predictable draw. The profile typically holds creamy tobacco and soft cedar rather than sharp spice. A good guest or first-at-the-table pick; do not force it against an overproof rum."
     },
     "markets": [
       "HR",
@@ -164541,7 +164741,11 @@
       "https://www.neptunecigar.com/cigars/macanudo-cafe-portofino",
       "https://www.neptunecigar.com/cigars/macanudo-cafe-hyde-park"
     ],
-    "fillerOrigin": "Meksiko"
+    "fillerOrigin": "Meksiko",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "12i8qHyNsZ8"
+    ]
   },
   {
     "id": "cig-macanudo-criollo-98",
@@ -165781,8 +165985,8 @@
     "catalogSource": "market",
     "availabilityHR": [],
     "notes": {
-      "hr": "Dominikanska Republika — linija iz trgovine Neptune Cigar.",
-      "en": "Dominican Republic — line from Neptune Cigar."
+      "hr": "Maduro (Macanudo) ide s tamnijim maduro pokrovom iz Dominikanska Republika — lagano tijelo i predvidiv draw. Profil tipično drži tamnija slatkoća, kava i toplina umjesto oštre snage. Dobra za gosta ili prvu cigaru za stolom; ne forsiraš je uz overproof rum.",
+      "en": "Maduro (Macanudo) takes a darker maduro wrapper from Dominikanska Republika — light body and a predictable draw. The profile typically holds darker sweetness, coffee and warmth rather than sharp strength. A good guest or first-at-the-table pick; do not force it against an overproof rum."
     },
     "sourceUrls": [
       "https://www.neptunecigar.com/cigars/macanudo-maduro-ascots"
@@ -165792,7 +165996,11 @@
     "binderOrigin": "Meksiko",
     "fillerOrigin": "Meksiko",
     "strengthFromShop": true,
-    "binder": "San Andres"
+    "binder": "San Andres",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "L9JO9mdWrXM"
+    ]
   },
   {
     "id": "cig-macanudo-maduro-baron-de-rothschild",
@@ -172645,8 +172853,8 @@
       "Havana Cigar Shop"
     ],
     "notes": {
-      "hr": "Kuba, Cuban seed pokrov — srednje snage, punijeg tijela. Okusi: kakao, kremasto, cedrovina.",
-      "en": "Cuban seed wrapper wrapper (Cuba); balanced, medium in strength. Notes of cocoa, cream, cedar. Modern robusto; medium-full with chocolate and wood."
+      "hr": "Edmundo (Montecristo) ide s habano pokrovom iz Kuba — srednje tijelo i uredan ritam dimova. Profil tipično drži cedar, zemlja i blagi papar u ravnoteži. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
+      "en": "Edmundo (Montecristo) takes a habano wrapper from Kuba — medium body and a steady puff rhythm. The profile typically holds cedar, earth and soft pepper in balance. A solid pick when you want an hour and a profile that holds the middle third."
     },
     "markets": [
       "HR",
@@ -172728,7 +172936,11 @@
     "wrapperOrigin": "Kuba",
     "binderOrigin": "Kuba",
     "fillerOrigin": "Kuba",
-    "isPuro": true
+    "isPuro": true,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "Ma0UMpEMegs"
+    ]
   },
   {
     "id": "cig-montecristo-limited-edition",
@@ -172752,8 +172964,8 @@
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Limited Editions: linija marke Montecristo.",
-      "en": "Limited Editions: a Montecristo line."
+      "hr": "Limited Edition (Montecristo) ide s habano pokrovom iz Kuba — srednje tijelo i uredan ritam dimova. Profil tipično drži cedar, zemlja i blagi papar u ravnoteži. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
+      "en": "Limited Edition (Montecristo) takes a habano wrapper from Kuba — medium body and a steady puff rhythm. The profile typically holds cedar, earth and soft pepper in balance. A solid pick when you want an hour and a profile that holds the middle third."
     },
     "markets": [
       "WW"
@@ -172774,7 +172986,11 @@
     "wrapperOrigin": "Kuba",
     "binderOrigin": "Kuba",
     "fillerOrigin": "Kuba",
-    "isPuro": true
+    "isPuro": true,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "cVAvC7EETuc"
+    ]
   },
   {
     "id": "cig-montecristo-linea-clasica",
@@ -174883,8 +175099,8 @@
     ],
     "availabilityHR": [],
     "notes": {
-      "hr": "Ecuador Connecticut omot — kremasto, cedrasto i blago, jutarnja cigara.",
-      "en": "Ecuador Connecticut wrapper — creamy, cedary and mild, a morning cigar."
+      "hr": "Connecticut (My Father) ide s Connecticut shade pokrovom iz Nikaragva — lagano tijelo i predvidiv draw. Profil tipično drži kremasti duhan i blagi cedar umjesto oštrog začina. Dobra za gosta ili prvu cigaru za stolom; ne forsiraš je uz overproof rum.",
+      "en": "Connecticut (My Father) takes a Connecticut shade wrapper from Nikaragva — light body and a predictable draw. The profile typically holds creamy tobacco and soft cedar rather than sharp spice. A good guest or first-at-the-table pick; do not force it against an overproof rum."
     },
     "priceUrl": "https://www.neptunecigar.com/cigars/my-father-connecticut-robusto",
     "profileEstimated": false,
@@ -174940,7 +175156,11 @@
       "https://www.neptunecigar.com/cigars/my-father-connecticut-toro-gordo"
     ],
     "binderOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "WeXa0wCSu20"
+    ]
   },
   {
     "id": "cig-my-father-don-pepin-garcia-70th-birthday-humidor-deluxe",
@@ -179403,8 +179623,8 @@
       "Havana Cigar Shop"
     ],
     "notes": {
-      "hr": "Kratko i debelo — 'sweet spot' cigare od prve minute; kremasta Connecticut verzija. Nub je Olivina marka: koncept Sama Leccije, proizvodi se u Olivinoj tvornici u Estelíju.",
-      "en": "Short and fat — the cigar's sweet spot from minute one; the creamy Connecticut version. Nub is an Oliva brand: Sam Leccia's concept, made at Oliva's factory in Estelí."
+      "hr": "Connecticut (Nub) ide s Connecticut shade pokrovom iz Nikaragva — lagano tijelo i predvidiv draw. Profil tipično drži kremasti duhan i blagi cedar umjesto oštrog začina. Dobra za gosta ili prvu cigaru za stolom; ne forsiraš je uz overproof rum.",
+      "en": "Connecticut (Nub) takes a Connecticut shade wrapper from Nikaragva — light body and a predictable draw. The profile typically holds creamy tobacco and soft cedar rather than sharp spice. A good guest or first-at-the-table pick; do not force it against an overproof rum."
     },
     "markets": [
       "HR",
@@ -179479,6 +179699,10 @@
       "https://www.neptunecigar.com/cigars/nub-connecticut-460",
       "https://www.neptunecigar.com/cigars/nub-connecticut-358",
       "https://www.neptunecigar.com/cigars/nub-connecticut-354"
+    ],
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "2mUPz9pLQF0"
     ]
   },
   {
@@ -180421,7 +180645,7 @@
     ],
     "notes": {
       "hr": "Connecticut Reserve (Oliva) ide s Connecticut shade pokrovom iz Nikaragva — lagano tijelo i predvidiv draw. Profil tipično drži kremasti duhan i blagi cedar umjesto oštrog začina. Dobra za gosta ili prvu cigaru za stolom; ne forsiraš je uz overproof rum.",
-      "en": "Connecticut Reserve (Oliva) takes a Connecticut shade wrapper from Nicaragua — light body and a predictable draw. The profile typically holds creamy tobacco and soft cedar rather than sharp spice. A good guest or first-at-the-table pick; do not force it against an overproof rum."
+      "en": "Connecticut Reserve (Oliva) takes a Connecticut shade wrapper from Nikaragva — light body and a predictable draw. The profile typically holds creamy tobacco and soft cedar rather than sharp spice. A good guest or first-at-the-table pick; do not force it against an overproof rum."
     },
     "markets": [
       "HR",
@@ -180498,6 +180722,10 @@
       "https://www.neptunecigar.com/cigars/oliva-connecticut-reserve-lonsdale",
       "https://www.neptunecigar.com/cigars/oliva-connecticut-reserve-petit-corona",
       "https://www.neptunecigar.com/cigars/oliva-connecticut-reserve-double-toro"
+    ],
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "BzVk4kId5uM"
     ]
   },
   {
@@ -182051,8 +182279,8 @@
       "Havana Cigar Shop"
     ],
     "notes": {
-      "hr": "Nikaragva, San Andrés maduro pokrov — jače snage, punijeg tijela. Okusi: kakao, karamela, začini.",
-      "en": "San Andrés maduro wrapper (Nicaragua); fuller and expressive. Notes of cocoa, caramel, spice. Box-pressed figurado; dark chocolate and spice."
+      "hr": "Serie V (Oliva) ide s tamnijim maduro pokrovom iz Nikaragva — srednje-puno tijelo koje traži sporiji dim. Profil tipično drži tamnija slatkoća, kava i toplina umjesto oštre snage. Biraj je kad imaš vremena i piće koje podnese više tijela.",
+      "en": "Serie V (Oliva) takes a darker maduro wrapper from Nikaragva — medium-full body that wants a slower pace. The profile typically holds darker sweetness, coffee and warmth rather than sharp strength. Choose it when you have time and a drink that can carry more body."
     },
     "markets": [
       "HR",
@@ -182223,6 +182451,10 @@
       "https://cigarpassion.ch/en/boutique/cigares-nicaraguayens/oliva/oliva-serie-v/oliva-serie-v-nub-4x60/",
       "https://cigarpassion.ch/en/boutique/cigares-nicaraguayens/oliva/oliva-serie-v/special-v-figurado/",
       "https://cigarpassion.ch/en/boutique/cigares-nicaraguayens/oliva/oliva-serie-v/oliva-serie-v-lancero/"
+    ],
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "ncgrH9i6oUI"
     ]
   },
   {
@@ -191589,8 +191821,8 @@
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Connecticut pokrov — srednje snage, laganog tijela. Okusi: kremasto, cedrovina, orašasti tonovi.",
-      "en": "Connecticut-wrapped Padrón; milder cream and nuts."
+      "hr": "Damaso (Padrón) ide s Connecticut shade pokrovom iz Nikaragva — srednje tijelo i uredan ritam dimova. Profil tipično drži kremasti duhan i blagi cedar umjesto oštrog začina. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
+      "en": "Damaso (Padrón) takes a Connecticut shade wrapper from Nikaragva — medium body and a steady puff rhythm. The profile typically holds creamy tobacco and soft cedar rather than sharp spice. A solid pick when you want an hour and a profile that holds the middle third."
     },
     "markets": [
       "EU",
@@ -191666,7 +191898,11 @@
       "https://www.neptunecigar.com/cigars/padron-damaso-no-17",
       "https://www.neptunecigar.com/cigars/padron-damaso-no-12"
     ],
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "-6kPh7vZTcY"
+    ]
   },
   {
     "id": "cig-padron-family-reserve",
@@ -191687,8 +191923,8 @@
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Habano pokrov — jače snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Habano wrapper (Nicaragua); fuller and expressive. Notes of cedar, spice, leather. Limited Family Reserve; refined and complex."
+      "hr": "Family Reserve (Padrón) ide s habano pokrovom iz Nikaragva — punije tijelo i gustoća koja traži miran ritam. Profil tipično drži cedar, zemlja i blagi papar u ravnoteži. Najbolje uz piće koje podnese snagu, ne uz lagani highball.",
+      "en": "Family Reserve (Padrón) takes a habano wrapper from Nikaragva — fuller body and density that wants a calm rhythm. The profile typically holds cedar, earth and soft pepper in balance. Best with a drink that can carry the strength, not a light highball."
     },
     "markets": [
       "EU",
@@ -191780,7 +192016,11 @@
       "https://www.neptunecigar.com/cigars/padron-family-reserve-no-96-maduro"
     ],
     "wrapperOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "Smdek8K3m10"
+    ]
   },
   {
     "id": "cig-padron-maduro",
@@ -191806,8 +192046,8 @@
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Nicaraguan pokrov — srednje snage, punog tijela. Okusi: kakao, kava, zemljani tonovi.",
-      "en": "Nicaragua, Nicaraguan wrapper — medium in strength, full-bodied. Notes: cocoa, coffee, earthy."
+      "hr": "Maduro (Padrón) ide s prirodnim pokrovom iz Nikaragva — srednje-puno tijelo koje traži sporiji dim. Profil tipično drži čist duhan i blagi začin bez dramatičnih skokova. Biraj je kad imaš vremena i piće koje podnese više tijela.",
+      "en": "Maduro (Padrón) takes a natural wrapper from Nikaragva — medium-full body that wants a slower pace. The profile typically holds clean tobacco and soft spice without dramatic jumps. Choose it when you have time and a drink that can carry more body."
     },
     "markets": [
       "USA",
@@ -191870,7 +192110,11 @@
     "priceUrl": "https://www.neptunecigar.com/cigars/padron-series-4000-maduro",
     "wrapperOrigin": "Nikaragva",
     "binderOrigin": "Nikaragva",
-    "fillerOrigin": "Nikaragva"
+    "fillerOrigin": "Nikaragva",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "5Klz89tzFnA"
+    ]
   },
   {
     "id": "cig-padron-padron-1964-annivesary-hermoso-natural",
@@ -194575,11 +194819,15 @@
     "catalogSource": "market",
     "availabilityHR": [],
     "notes": {
-      "hr": "Kuba — linija iz trgovine C.Gars Ltd.",
-      "en": "Cuba — line from C.Gars Ltd."
+      "hr": "Maduro (Partagás) ide s prirodnim pokrovom iz Kuba — srednje-puno tijelo koje traži sporiji dim. Profil tipično drži čist duhan i blagi začin bez dramatičnih skokova. Biraj je kad imaš vremena i piće koje podnese više tijela.",
+      "en": "Maduro (Partagás) takes a natural wrapper from Kuba — medium-full body that wants a slower pace. The profile typically holds clean tobacco and soft spice without dramatic jumps. Choose it when you have time and a drink that can carry more body."
     },
     "sourceUrls": [
       "https://www.cgarsltd.co.uk/partagas-maduro-cigar-single-p-16984.html"
+    ],
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "EaI8MngkOaY"
     ]
   },
   {
@@ -200696,8 +200944,8 @@
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Nicaraguan pokrov — jače snage, punijeg tijela. Okusi: kakao, kava, karamela.",
-      "en": "Nicaragua, Nicaraguan wrapper — medium-full in strength, fuller-bodied. Notes: cocoa, coffee, caramel."
+      "hr": "Habano Maduro (Perdomo) ide s prirodnim pokrovom iz Nikaragva — srednje tijelo i uredan ritam dimova. Profil tipično drži čist duhan i blagi začin bez dramatičnih skokova. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
+      "en": "Habano Maduro (Perdomo) takes a natural wrapper from Nikaragva — medium body and a steady puff rhythm. The profile typically holds clean tobacco and soft spice without dramatic jumps. A solid pick when you want an hour and a profile that holds the middle third."
     },
     "markets": [
       "USA",
@@ -200758,7 +201006,11 @@
     ],
     "priceUrl": "https://www.neptunecigar.com/cigars/perdomo-habano-maduro-robusto",
     "binderOrigin": "Nikaragva",
-    "fillerOrigin": "Nikaragva"
+    "fillerOrigin": "Nikaragva",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "IVsqZtbjEwo"
+    ]
   },
   {
     "id": "cig-perdomo-habano-sun-grown",
@@ -201059,8 +201311,8 @@
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Aromatizirana. Nikaragva, Connecticut pokrov — srednje snage, laganog tijela. Okusi: kremasto, cedrovina, orašasti tonovi.",
-      "en": "Flavoured/infused. Nicaragua, Connecticut wrapper — medium in strength, light-bodied. Notes: creamy, cedar, nutty."
+      "hr": "Legacy Connecticut (Perdomo) ide s Connecticut shade pokrovom iz Nikaragva — srednje tijelo i uredan ritam dimova. Profil tipično drži kremasti duhan i blagi cedar umjesto oštrog začina. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
+      "en": "Legacy Connecticut (Perdomo) takes a Connecticut shade wrapper from Nikaragva — medium body and a steady puff rhythm. The profile typically holds creamy tobacco and soft cedar rather than sharp spice. A solid pick when you want an hour and a profile that holds the middle third."
     },
     "markets": [
       "EU",
@@ -201166,7 +201418,11 @@
     "binder": "Nicaragua",
     "filler": "H2000",
     "wrapperOrigin": "SAD",
-    "binderOrigin": "Nikaragva"
+    "binderOrigin": "Nikaragva",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "0jfmi22sHbk"
+    ]
   },
   {
     "id": "cig-perdomo-legacy-ecuadorian-connecticut",
@@ -201371,8 +201627,8 @@
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Aromatizirana. Nikaragva, Nicaragua pokrov — jače snage, punijeg tijela. Okusi: kakao, kava, karamela.",
-      "en": "Flavoured/infused. Nicaragua, Nicaragua wrapper — medium-full in strength, fuller-bodied. Notes: cocoa, coffee, caramel."
+      "hr": "Legacy Maduro (Perdomo) ide s prirodnim pokrovom iz Nikaragva — srednje-puno tijelo koje traži sporiji dim. Profil tipično drži čist duhan i blagi začin bez dramatičnih skokova. Biraj je kad imaš vremena i piće koje podnese više tijela.",
+      "en": "Legacy Maduro (Perdomo) takes a natural wrapper from Nikaragva — medium-full body that wants a slower pace. The profile typically holds clean tobacco and soft spice without dramatic jumps. Choose it when you have time and a drink that can carry more body."
     },
     "markets": [
       "EU",
@@ -201477,7 +201733,11 @@
     "flavoured": true,
     "binder": "Shade",
     "filler": "Condega, Esteli, H2000, Jalapa",
-    "wrapperOrigin": "Nikaragva"
+    "wrapperOrigin": "Nikaragva",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "Y2QARd46OPU"
+    ]
   },
   {
     "id": "cig-perdomo-legacy-nicaraguan-maduro",
@@ -201754,8 +202014,8 @@
     "catalogSource": "market",
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva — linija iz trgovine Neptune Cigar.",
-      "en": "Nicaragua — line from Neptune Cigar."
+      "hr": "Legacy Nicaraguan Shade Grown (Perdomo) ide s habano pokrovom iz Nikaragva — srednje-puno tijelo koje traži sporiji dim. Profil tipično drži cedar, zemlja i blagi papar u ravnoteži. Biraj je kad imaš vremena i piće koje podnese više tijela.",
+      "en": "Legacy Nicaraguan Shade Grown (Perdomo) takes a habano wrapper from Nikaragva — medium-full body that wants a slower pace. The profile typically holds cedar, earth and soft pepper in balance. Choose it when you have time and a drink that can carry more body."
     },
     "sourceUrls": [
       "https://www.neptunecigar.com/cigars/perdomo-legacy-nicaraguan-shade-grown-robusto-5--54"
@@ -201764,7 +202024,11 @@
     "strengthFromShop": true,
     "wrapperOrigin": "Nikaragva",
     "binderOrigin": "Nikaragva",
-    "fillerOrigin": "Nikaragva"
+    "fillerOrigin": "Nikaragva",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "8onn7nLzhO4"
+    ]
   },
   {
     "id": "cig-perdomo-legacy-nicaraguan-shade-grown-gran",
@@ -202891,8 +203155,8 @@
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Corojo pokrov — jače snage, punijeg tijela. Okusi: papar, začini, koža.",
-      "en": "Nicaragua, Corojo wrapper — medium-full in strength, fuller-bodied. Notes: pepper, spices, leather."
+      "hr": "Corojo (Perla del Mar) ide s corojo pokrovom iz Nikaragva — srednje tijelo i uredan ritam dimova. Profil tipično drži zemlja i začinski rub bez grube grubosti. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
+      "en": "Corojo (Perla del Mar) takes a corojo wrapper from Nikaragva — medium body and a steady puff rhythm. The profile typically holds earth and a spicy edge without rough edges. A solid pick when you want an hour and a profile that holds the middle third."
     },
     "markets": [
       "EU",
@@ -202992,7 +203256,11 @@
       "https://www.neptunecigar.com/cigars/perla-del-mar-corojo-corona-gorda"
     ],
     "priceUrl": "https://www.neptunecigar.com/cigars/perla-del-mar-corojo-corona-gorda",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "K1bPW3kp5HM"
+    ]
   },
   {
     "id": "cig-perla-del-mar-double",
@@ -205157,8 +205425,8 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Ehtefal ('slavlje' na arapskom) je Plasencijino izdanje za bliskoistočno tržište — svečan blend, ograničena dostupnost.",
-      "en": "Ehtefal — Arabic for celebration — is Plasencia's release for the Middle Eastern market: a celebratory blend in limited supply."
+      "hr": "Ehtefal (Plasencia) ide s habano pokrovom iz Nikaragva — srednje tijelo i uredan ritam dimova. Profil tipično drži cedar, zemlja i blagi papar u ravnoteži. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
+      "en": "Ehtefal (Plasencia) takes a habano wrapper from Nikaragva — medium body and a steady puff rhythm. The profile typically holds cedar, earth and soft pepper in balance. A solid pick when you want an hour and a profile that holds the middle third."
     },
     "markets": [
       "HR",
@@ -205201,7 +205469,11 @@
     "binder": "Nikaragva",
     "filler": "Honduras/Nikaragva",
     "wrapperOrigin": "Nikaragva",
-    "binderOrigin": "Nikaragva"
+    "binderOrigin": "Nikaragva",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "uQaoo17BUvM"
+    ]
   },
   {
     "id": "cig-plasencia-reserva-organica",
@@ -205289,8 +205561,8 @@
       "Havana Cigar Shop"
     ],
     "notes": {
-      "hr": "Nikaragva, Jalapa claro pokrov — vrlo lagane snage, laganog tijela. Okusi: kremasto, cedrovina, orašasti tonovi.",
-      "en": "Jalapa claro wrapper (Nicaragua); mild and smooth. Notes of cream, cedar, nuts. Claro-wrapped; mild-medium and smooth."
+      "hr": "Reserva Original (Plasencia) ide s prirodnim pokrovom iz Nikaragva — lagano tijelo i predvidiv draw. Profil tipično drži čist duhan i blagi začin bez dramatičnih skokova. Dobra za gosta ili prvu cigaru za stolom; ne forsiraš je uz overproof rum.",
+      "en": "Reserva Original (Plasencia) takes a natural wrapper from Nikaragva — light body and a predictable draw. The profile typically holds clean tobacco and soft spice without dramatic jumps. A good guest or first-at-the-table pick; do not force it against an overproof rum."
     },
     "markets": [
       "HR",
@@ -205403,6 +205675,10 @@
       "https://www.neptunecigar.com/cigars/plasencia-reserva-original-churchill",
       "https://www.neptunecigar.com/cigars/plasencia-reserva-original-nestico",
       "https://www.neptunecigar.com/cigars/plasencia-reserva-original-corona-corta-37-8--48"
+    ],
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "1TviqEHnpZ0"
     ]
   },
   {
@@ -205459,8 +205735,8 @@
     "catalogSource": "market",
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva — linija iz trgovine Neptune Cigar.",
-      "en": "Nicaragua — line from Neptune Cigar."
+      "hr": "Triunfal (Plasencia) ide s prirodnim pokrovom iz Nikaragva — srednje tijelo i uredan ritam dimova. Profil tipično drži čist duhan i blagi začin bez dramatičnih skokova. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
+      "en": "Triunfal (Plasencia) takes a natural wrapper from Nikaragva — medium body and a steady puff rhythm. The profile typically holds clean tobacco and soft spice without dramatic jumps. A solid pick when you want an hour and a profile that holds the middle third."
     },
     "sourceUrls": [
       "https://www.neptunecigar.com/cigars/plasencia-triunfal-61-4--54"
@@ -205469,7 +205745,11 @@
     "binderOrigin": "Honduras",
     "fillerOrigin": "Honduras",
     "strengthFromShop": true,
-    "filler": "Habano"
+    "filler": "Habano",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "9b5QTCM1MrI"
+    ]
   },
   {
     "id": "cig-plasencia-year-of-the",
@@ -209495,8 +209775,8 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Punch Punch je istoimeni klasik marke — zemljano-drvenast corona gorda s notom kave; stara škola habanosa.",
-      "en": "The eponymous Punch Punch — an earthy-woody corona gorda with a coffee note; old-school habano."
+      "hr": "Punch (Punch) ide s habano pokrovom iz Kuba — srednje tijelo i uredan ritam dimova. Profil tipično drži cedar, zemlja i blagi papar u ravnoteži. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
+      "en": "Punch (Punch) takes a habano wrapper from Kuba — medium body and a steady puff rhythm. The profile typically holds cedar, earth and soft pepper in balance. A solid pick when you want an hour and a profile that holds the middle third."
     },
     "markets": [
       "HR",
@@ -209553,7 +209833,11 @@
     "binderOrigin": "Kuba",
     "fillerOrigin": "Kuba",
     "wrapperOrigin": "Kuba",
-    "isPuro": true
+    "isPuro": true,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "D8jwyW6Zrks"
+    ]
   },
   {
     "id": "cig-punch-super-punch",
@@ -214668,8 +214952,8 @@
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Ecuador Habano pokrov — jače snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Nicaragua, Ecuador Habano wrapper — medium-full in strength, medium-bodied. Notes: cedar, spices, leather."
+      "hr": "15th Anniversary (Rocky Patel) ide s habano pokrovom iz Nikaragva — srednje-puno tijelo koje traži sporiji dim. Profil tipično drži cedar, zemlja i blagi papar u ravnoteži. Biraj je kad imaš vremena i piće koje podnese više tijela.",
+      "en": "15th Anniversary (Rocky Patel) takes a habano wrapper from Nikaragva — medium-full body that wants a slower pace. The profile typically holds cedar, earth and soft pepper in balance. Choose it when you have time and a drink that can carry more body."
     },
     "markets": [
       "USA",
@@ -214717,7 +215001,11 @@
     ],
     "priceUrl": "https://www.neptunecigar.com/cigars/rocky-patel-15th-anniversary-torpedo",
     "binderOrigin": "Nikaragva",
-    "fillerOrigin": "Nikaragva"
+    "fillerOrigin": "Nikaragva",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "Qn4_w1jkW0Q"
+    ]
   },
   {
     "id": "cig-rocky-patel-20th-anniversary-grande",
@@ -219555,8 +219843,8 @@
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Honduras, Connecticut broadleaf maduro pokrov — srednje snage, punijeg tijela. Okusi: kakao, kava, karamela.",
-      "en": "Connecticut broadleaf maduro wrapper (Honduras); balanced, medium in strength. Notes of cocoa, coffee, caramel. 1990 maduro; sweet and approachable."
+      "hr": "Vintage (Rocky Patel) ide s Connecticut shade pokrovom iz Honduras — srednje tijelo i uredan ritam dimova. Profil tipično drži kremasti duhan i blagi cedar umjesto oštrog začina. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
+      "en": "Vintage (Rocky Patel) takes a Connecticut shade wrapper from Honduras — medium body and a steady puff rhythm. The profile typically holds creamy tobacco and soft cedar rather than sharp spice. A solid pick when you want an hour and a profile that holds the middle third."
     },
     "markets": [
       "EU",
@@ -219629,7 +219917,11 @@
       "https://www.neptunecigar.com/cigars/rocky-patel-vintage-1990-robusto"
     ],
     "fillerOrigin": "Dominikanska Republika",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "RIeE66YWtto"
+    ]
   },
   {
     "id": "cig-rocky-patel-vintage-1990-1992",
@@ -230908,8 +231200,8 @@
     "catalogSource": "market",
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva — linija iz trgovine Neptune Cigar.",
-      "en": "Nicaragua — line from Neptune Cigar."
+      "hr": "Evening Primrose (Southern Draw) ide s tamnijim maduro pokrovom iz Nikaragva — srednje tijelo i uredan ritam dimova. Profil tipično drži tamnija slatkoća, kava i toplina umjesto oštre snage. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
+      "en": "Evening Primrose (Southern Draw) takes a darker maduro wrapper from Nikaragva — medium body and a steady puff rhythm. The profile typically holds darker sweetness, coffee and warmth rather than sharp strength. A solid pick when you want an hour and a profile that holds the middle third."
     },
     "sourceUrls": [
       "https://www.neptunecigar.com/cigars/southern-draw-evening-primrose-robusto",
@@ -230919,7 +231211,11 @@
     "wrapperOrigin": "Meksiko",
     "binderOrigin": "Ekvador",
     "fillerOrigin": "Honduras",
-    "binder": "Sumatra"
+    "binder": "Sumatra",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "L4tHn809Ca4"
+    ]
   },
   {
     "id": "cig-southern-draw-firethorn",
@@ -230942,8 +231238,8 @@
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Ecuador Habano pokrov — srednje snage, srednjeg tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Nicaragua, Ecuador Habano wrapper — medium in strength, medium-bodied. Notes: cedar, spices, leather."
+      "hr": "Firethorn (Southern Draw) ide s habano pokrovom iz Nikaragva — srednje tijelo i uredan ritam dimova. Profil tipično drži cedar, zemlja i blagi papar u ravnoteži. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
+      "en": "Firethorn (Southern Draw) takes a habano wrapper from Nikaragva — medium body and a steady puff rhythm. The profile typically holds cedar, earth and soft pepper in balance. A solid pick when you want an hour and a profile that holds the middle third."
     },
     "markets": [
       "USA",
@@ -230991,7 +231287,11 @@
     "priceUrl": "https://www.neptunecigar.com/cigars/southern-draw-firethorn-toro",
     "wrapperOrigin": "Ekvador",
     "binderOrigin": "Meksiko",
-    "fillerOrigin": "Nikaragva"
+    "fillerOrigin": "Nikaragva",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "dwWOSaaV_nY"
+    ]
   },
   {
     "id": "cig-southern-draw-jacob-s-ladder",
@@ -231175,8 +231475,8 @@
     "catalogSource": "market",
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva — linija iz trgovine Neptune Cigar.",
-      "en": "Nicaragua — line from Neptune Cigar."
+      "hr": "Jacobs Ladder (Southern Draw) ide s prirodnim pokrovom iz Nikaragva — srednje tijelo i uredan ritam dimova. Profil tipično drži čist duhan i blagi začin bez dramatičnih skokova. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
+      "en": "Jacobs Ladder (Southern Draw) takes a natural wrapper from Nikaragva — medium body and a steady puff rhythm. The profile typically holds clean tobacco and soft spice without dramatic jumps. A solid pick when you want an hour and a profile that holds the middle third."
     },
     "sourceUrls": [
       "https://www.neptunecigar.com/cigars/southern-draw-jacobs-ladder-robusto",
@@ -231186,7 +231486,11 @@
     "wrapperOrigin": "SAD",
     "binderOrigin": "Ekvador",
     "fillerOrigin": "Nikaragva",
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "ut-cH36aEjk"
+    ]
   },
   {
     "id": "cig-southern-draw-kudzu",
@@ -231211,8 +231515,8 @@
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva, Ecuador Habano Oscuro pokrov — jače snage, punog tijela. Okusi: kakao, kava, zemljani tonovi.",
-      "en": "Nicaragua, Ecuador Habano Oscuro wrapper — medium-full in strength, full-bodied. Notes: cocoa, coffee, earthy."
+      "hr": "Kudzu (Southern Draw) ide s tamnijim maduro pokrovom iz Nikaragva — srednje-puno tijelo koje traži sporiji dim. Profil tipično drži tamnija slatkoća, kava i toplina umjesto oštre snage. Biraj je kad imaš vremena i piće koje podnese više tijela.",
+      "en": "Kudzu (Southern Draw) takes a darker maduro wrapper from Nikaragva — medium-full body that wants a slower pace. The profile typically holds darker sweetness, coffee and warmth rather than sharp strength. Choose it when you have time and a drink that can carry more body."
     },
     "markets": [
       "USA",
@@ -231260,7 +231564,11 @@
     "priceUrl": "https://www.neptunecigar.com/cigars/southern-draw-kudzu-toro",
     "wrapperOrigin": "Ekvador",
     "fillerOrigin": "Nikaragva",
-    "binder": "Ometepe"
+    "binder": "Ometepe",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "JKR-zurkpEc"
+    ]
   },
   {
     "id": "cig-southern-draw-manzanita",
@@ -231380,8 +231688,8 @@
     "catalogSource": "market",
     "availabilityHR": [],
     "notes": {
-      "hr": "Nikaragva — linija iz trgovine Neptune Cigar.",
-      "en": "Nicaragua — line from Neptune Cigar."
+      "hr": "Morning Glory (Southern Draw) ide s Connecticut shade pokrovom iz Nikaragva — srednje tijelo i uredan ritam dimova. Profil tipično drži kremasti duhan i blagi cedar umjesto oštrog začina. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
+      "en": "Morning Glory (Southern Draw) takes a Connecticut shade wrapper from Nikaragva — medium body and a steady puff rhythm. The profile typically holds creamy tobacco and soft cedar rather than sharp spice. A solid pick when you want an hour and a profile that holds the middle third."
     },
     "sourceUrls": [
       "https://www.neptunecigar.com/cigars/southern-draw-morning-glory-toro",
@@ -231393,7 +231701,11 @@
     "fillerOrigin": "Nikaragva",
     "strengthFromShop": true,
     "binder": "Habano",
-    "filler": "Corojo"
+    "filler": "Corojo",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "iQxtY4KlLbQ"
+    ]
   },
   {
     "id": "cig-southern-draw-quickdraw-connecticut-gorda",
@@ -235476,7 +235788,7 @@
     "availabilityHR": [],
     "notes": {
       "hr": "Cojonu (Tatuaje) ide s habano pokrovom iz Nikaragva — srednje tijelo i uredan ritam dimova. Profil tipično drži cedar, zemlja i blagi papar u ravnoteži. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
-      "en": "Cojonu (Tatuaje) takes a habano wrapper from Nicaragua — medium body and a steady puff rhythm. The profile typically holds cedar, earth and soft pepper in balance. A solid pick when you want an hour and a profile that holds the middle third."
+      "en": "Cojonu (Tatuaje) takes a habano wrapper from Nikaragva — medium body and a steady puff rhythm. The profile typically holds cedar, earth and soft pepper in balance. A solid pick when you want an hour and a profile that holds the middle third."
     },
     "sourceUrls": [
       "https://www.neptunecigar.com/cigars/tatuaje-cojonu-2015",
@@ -235487,7 +235799,11 @@
     "binderOrigin": "Nikaragva",
     "fillerOrigin": "Nikaragva",
     "flavoured": false,
-    "strengthFromShop": true
+    "strengthFromShop": true,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "Pms2OwmCAG4"
+    ]
   },
   {
     "id": "cig-tatuaje-cojonu-2018-broadleaf",
@@ -247888,8 +248204,8 @@
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Dominikanska Republika, Ecuador Connecticut pokrov — lagane snage, vrlo laganog tijela. Okusi: kremasto, cedrovina, orašasti tonovi.",
-      "en": "San Andrés Maduro wrapper (Dominican Republic); mild-to-medium. Notes of cocoa, coffee, caramel. Premium line; chocolate and cedar."
+      "hr": "1888 (Villiger) ide s tamnijim maduro pokrovom iz Dominikanska Republika — lagano tijelo i predvidiv draw. Profil tipično drži tamnija slatkoća, kava i toplina umjesto oštre snage. Dobra za gosta ili prvu cigaru za stolom; ne forsiraš je uz overproof rum.",
+      "en": "1888 (Villiger) takes a darker maduro wrapper from Dominikanska Republika — light body and a predictable draw. The profile typically holds darker sweetness, coffee and warmth rather than sharp strength. A good guest or first-at-the-table pick; do not force it against an overproof rum."
     },
     "markets": [
       "EU",
@@ -247934,7 +248250,11 @@
     ],
     "binderOrigin": "Nikaragva",
     "fillerOrigin": "Nikaragva",
-    "wrapperOrigin": "Ekvador"
+    "wrapperOrigin": "Ekvador",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "t36Ix_82--s"
+    ]
   },
   {
     "id": "cig-villiger-1888-dominican-republic",
@@ -252125,8 +252445,8 @@
       "The Humidor"
     ],
     "notes": {
-      "hr": "Nikaragva — srednje snage, srednjeg tijela.",
-      "en": "(Nicaragua); balanced, medium in strength."
+      "hr": "Connecticut (Viva La Vida) ide s prirodnim pokrovom iz Nikaragva — srednje tijelo i uredan ritam dimova. Profil tipično drži čist duhan i blagi začin bez dramatičnih skokova. Dobra kad želiš sat vremena i profil koji drži srednju trećinu.",
+      "en": "Connecticut (Viva La Vida) takes a natural wrapper from Nikaragva — medium body and a steady puff rhythm. The profile typically holds clean tobacco and soft spice without dramatic jumps. A solid pick when you want an hour and a profile that holds the middle third."
     },
     "markets": [
       "HR",
@@ -252191,6 +252511,10 @@
     "profileEstimated": false,
     "sourceUrls": [
       "https://www.neptunecigar.com/cigars/viva-la-vida-connecticut-churchill-7--54"
+    ],
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "PKclCTq_nRM"
     ]
   },
   {
@@ -256218,8 +256542,8 @@
     "priceApprox": false,
     "availabilityHR": [],
     "notes": {
-      "hr": "Honduras, Jamastran pokrov — lagane snage, laganog tijela. Okusi: cedrovina, začini, koža.",
-      "en": "Honduras, Jamastran wrapper — mild in strength, light-bodied. Notes: cedar, spices, leather."
+      "hr": "Honduras (Zino) ide s prirodnim pokrovom iz Honduras — lagano tijelo i predvidiv draw. Profil tipično drži čist duhan i blagi začin bez dramatičnih skokova. Dobra za gosta ili prvu cigaru za stolom; ne forsiraš je uz overproof rum.",
+      "en": "Honduras (Zino) takes a natural wrapper from Honduras — light body and a predictable draw. The profile typically holds clean tobacco and soft spice without dramatic jumps. A good guest or first-at-the-table pick; do not force it against an overproof rum."
     },
     "markets": [
       "EU",
@@ -256318,7 +256642,11 @@
     "binderOrigin": "Ekvador",
     "priceUrl": "https://www.neptunecigar.com/cigars/zino-honduras-toro-6--50",
     "wrapperOrigin": "Honduras",
-    "fillerOrigin": "Honduras"
+    "fillerOrigin": "Honduras",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "89vzO3DbtMQ"
+    ]
   },
   {
     "id": "cig-zino-nicaragua",

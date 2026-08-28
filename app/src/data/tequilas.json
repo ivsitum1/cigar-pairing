@@ -389,11 +389,13 @@
     "country": "Meksiko",
     "abv": 40.0,
     "body": 3,
-    "sweetness": 3,
+    "sweetness": 4,
     "flavorTags": [
       "hrast",
       "karamela",
-      "vanilija"
+      "vanilija",
+      "slatko",
+      "kremasto"
     ],
     "qualityScore": 8.6,
     "priceEUR": {
@@ -410,14 +412,18 @@
       "best": "Cisto (snifter)"
     },
     "cigarHint": {
-      "hr": "Uz DON JULIO ANEJO Habano srednjeg tijela — hrast i hrast, karamela i vanilija traže topliji dim.",
-      "en": "Reposado/añejo like DON JULIO ANEJO sits with a gentle maduro, not a panatela. Do not rush: this bottle (don) wants a quieter tempo beside the cigar."
+      "hr": "Reposado/añejo — Habano srednjeg tijela ili blagi maduro; most je hrast.",
+      "en": "Reposado/añejo — medium Habano or a gentle maduro; bridge on oak."
     },
     "notes": {
-      "hr": "Profil DON JULIO ANEJO: hrast, karamela i vanilija. To je anejo s srednje tijelo na 40 %.",
-      "en": "DON JULIO ANEJO (anejo) na 40 %: hrast, karamela i vanilija with medium body. Neat or rocks; slower pace than with gin."
+      "hr": "DON JULIO ANEJO (40 %) — Jalisco, Meksiko: karamela, slatko i kremasta tekstura, srednje tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "DON JULIO ANEJO (40 %) — Jalisco, Meksiko: karamela, slatko and creamy texture, medium body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
-    "profileEstimated": false
+    "profileEstimated": false,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "Eg5rYZnYUx8"
+    ]
   },
   {
     "id": "tq-don-julio-blanco",
@@ -432,7 +438,10 @@
     "flavorTags": [
       "biljno",
       "citrus",
-      "vegetalno"
+      "vegetalno",
+      "karamela",
+      "slatko",
+      "kremasto"
     ],
     "qualityScore": 8.5,
     "priceEUR": {
@@ -449,14 +458,18 @@
       "best": "Cisto / lagano ohlađeno"
     },
     "cigarHint": {
-      "hr": "Blanco profil DON JULIO BLANCO ne voli slatki maduro. Jedan gutljaj, jedan dim; linija don ne voli pretrčavanje trećine.",
-      "en": "With DON JULIO BLANCO Connecticut or a short Habano — agave stays clean. Keep the glass near the ashtray — don reads clearer in a slower loop."
+      "hr": "Blanco/agave — Connecticut ili kratki Habano; slatki maduro zamuti agavu.",
+      "en": "Blanco/agave — Connecticut or a short Habano; sweet maduro muddies the agave."
     },
     "notes": {
-      "hr": "U DON JULIO BLANCO agava dijeli prostor s bilje, citrus i vegetalno. Stil blanco, tijelo laganije na 40 %.",
-      "en": "Profile of DON JULIO BLANCO: bilje, citrus i vegetalno. That is blanco with lighter body na 40 %."
+      "hr": "DON JULIO BLANCO (40 %) — Jalisco, Meksiko: karamela, slatko i kremasta tekstura, laganije tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "DON JULIO BLANCO (40 %) — Jalisco, Meksiko: karamela, slatko and creamy texture, lighter body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
-    "profileEstimated": false
+    "profileEstimated": false,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "Eg5rYZnYUx8"
+    ]
   },
   {
     "id": "tq-don-julio-reposado",
@@ -467,11 +480,13 @@
     "country": "Meksiko",
     "abv": 40.0,
     "body": 3,
-    "sweetness": 2,
+    "sweetness": 4,
     "flavorTags": [
       "biljno",
       "citrus",
-      "karamela"
+      "karamela",
+      "slatko",
+      "kremasto"
     ],
     "qualityScore": 8.4,
     "priceEUR": {
@@ -488,14 +503,18 @@
       "best": "Cisto ili velika kocka leda"
     },
     "cigarHint": {
-      "hr": "Uz DON JULIO REPOSADO most je karamela/hrast; Connecticut može ostati prazan. Drži čašu bliže pepeljari — don se bolje čita u sporijem krugu.",
-      "en": "With DON JULIO REPOSADO a medium Habano — oak and bilje, citrus i karamela want warmer smoke."
+      "hr": "Reposado/añejo — Habano srednjeg tijela ili blagi maduro; most je hrast.",
+      "en": "Reposado/añejo — medium Habano or a gentle maduro; bridge on oak."
     },
     "notes": {
-      "hr": "DON JULIO REPOSADO drži bilje, citrus i karamela — reposado na 40 %. Uz cigaru pusti drugi dim nakon gutljaja.",
-      "en": "Profile of DON JULIO REPOSADO: bilje, citrus i karamela. That is reposado with medium body na 40 %."
+      "hr": "DON JULIO REPOSADO (40 %) — Jalisco, Meksiko: karamela, slatko i kremasta tekstura, srednje tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "DON JULIO REPOSADO (40 %) — Jalisco, Meksiko: karamela, slatko and creamy texture, medium body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
-    "profileEstimated": false
+    "profileEstimated": false,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "Eg5rYZnYUx8"
+    ]
   },
   {
     "id": "tq-el-mayor-extra-anejo-tequila-100-agave-40-vol-0-75l",
@@ -661,7 +680,9 @@
     "flavorTags": [
       "biljno",
       "citrus",
-      "papar"
+      "papar",
+      "slatko",
+      "agava"
     ],
     "qualityScore": 8.6,
     "priceEUR": {
@@ -678,14 +699,18 @@
       "best": "Cisto / lagano ohlađeno"
     },
     "cigarHint": {
-      "hr": "Uz G4 Blanco Connecticut ili kratki Habano — mineralna agava ostaje čista. Drži čašu bliže pepeljari.",
-      "en": "With G4 Blanco Connecticut or a short Habano — mineral agave stays clean. Keep the glass near the ashtray."
+      "hr": "Blanco/agave — Connecticut ili kratki Habano; slatki maduro zamuti agavu.",
+      "en": "Blanco/agave — Connecticut or a short Habano; sweet maduro muddies the agave."
     },
     "notes": {
-      "hr": "G4 Blanco (blanco) na 40 %: bilje, citrus i papar. Highlands / Camarena; profil procijenjen dok nema HR cijene.",
-      "en": "G4 Blanco (blanco) at 40%: herbal, citrus, pepper. Highlands / Camarena; profile estimated until a HR price lands."
+      "hr": "G4 Blanco (40 %) — Los Altos, Jalisco, Meksiko: slatko i agave, laganije tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "G4 Blanco (40 %) — Los Altos, Jalisco, Meksiko: slatko and agave, lighter body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
-    "profileEstimated": true
+    "profileEstimated": true,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "oOgbqibaiiE"
+    ]
   },
   {
     "id": "tq-gran-cava-de-oro-tequila-extra-anejo-100-de-agave-azul-40-vol-0-7l",

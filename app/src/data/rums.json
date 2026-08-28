@@ -3506,7 +3506,9 @@
     "sweetness": 5,
     "flavorTags": [
       "vanilija",
-      "zacini"
+      "zacini",
+      "tropsko-voce",
+      "voce"
     ],
     "additiveStatus": "flavored",
     "additiveDetail": {
@@ -3531,15 +3533,19 @@
       "best": "Koktel / cola"
     },
     "cigarHint": {
-      "hr": "Uz Captain Morgan Spiced/White/Black ne forsiraš kompleksnu cigaru; format neka bude kratak.",
-      "en": "If Captain Morgan Spiced/White/Black meets smoke, a shorter Connecticut — sugar covers nuance."
+      "hr": "Ako ide uz dim, biraj kraći Connecticut — šećer lako preglasi nijanse.",
+      "en": "If you pair it with smoke, pick a shorter Connecticut — sugar easily covers nuance."
     },
     "priceUrl": null,
     "notes": {
-      "hr": "Profil Captain Morgan Spiced/White/Black: vanilija i začini na Spiced / aromatizirano. Za sparivanje bolje čisti aged rum.",
-      "en": "Profile of Captain Morgan Spiced/White/Black: vanilija i začini on Spiced / aromatizirano. For pairing, prefer a clean aged rum."
+      "hr": "Captain Morgan Spiced/White/Black — Spiced / aromatizirano: tropsko voće, začini i voće, izraženija slatkoća. Koktel ili desertni gutljaj; neat uz cigaru rijetko je prvi izbor.",
+      "en": "Captain Morgan Spiced/White/Black — Spiced / aromatizirano: tropical fruit, spice and fruit, higher sweetness. Cocktail or dessert sip; neat with a cigar is rarely the first choice."
     },
-    "profileEstimated": true
+    "profileEstimated": true,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "IDbBj7iaabk"
+    ]
   },
   {
     "id": "rum-cdi-caraibes",
@@ -5390,7 +5396,8 @@
       "suho-voce",
       "umami",
       "vanilija",
-      "voce"
+      "voce",
+      "zacini"
     ],
     "additiveStatus": "flavored",
     "additiveDetail": {
@@ -5415,15 +5422,19 @@
       "best": "Čisto / on the rocks"
     },
     "cigarHint": {
-      "hr": "Bolje prebaci večer na čisti rum nego gurat Don Papa 7 (Small Batch) uz maduro. Drži čašu bliže pepeljari — don se bolje čita u sporijem krugu.",
-      "en": "Better switch the evening to a clean rum than push Don Papa 7 (Small Batch) with maduro."
+      "hr": "Ako ide uz dim, biraj kraći Connecticut — šećer lako preglasi nijanse.",
+      "en": "If you pair it with smoke, pick a shorter Connecticut — sugar easily covers nuance."
     },
     "priceUrl": "https://humidor.hr/hr/proizvod/don-papa-7-yo-070-l/",
     "notes": {
-      "hr": "Don Papa 7 (Small Batch) (40 %) — Filipini (Negros): slatko, suho voće i umami, izraženija slatkoća. Više koktel/desert nego sipper uz cigaru.",
-      "en": "Profile of Don Papa 7 (Small Batch): slatko, suho voće i umami on Filipini (Negros) (40 %). For pairing, prefer a clean aged rum."
+      "hr": "Don Papa 7 (Small Batch) (40 %) — Filipini (Negros): začini i vegetalno, izraženija slatkoća. Koktel ili desertni gutljaj; neat uz cigaru rijetko je prvi izbor.",
+      "en": "Don Papa 7 (Small Batch) (40 %) — Filipini (Negros): spice and vegetalno, higher sweetness. Cocktail or dessert sip; neat with a cigar is rarely the first choice."
     },
-    "profileEstimated": true
+    "profileEstimated": true,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "eX_PX8Wi4G0"
+    ]
   },
   {
     "id": "rum-don-papa-baroko",
@@ -5439,7 +5450,8 @@
       "slatko",
       "suho-voce",
       "vanilija",
-      "voce"
+      "voce",
+      "zacini"
     ],
     "additiveStatus": "flavored",
     "additiveDetail": {
@@ -5464,15 +5476,19 @@
       "best": "Čisto / on the rocks"
     },
     "cigarHint": {
-      "hr": "Ako ide Don Papa Baroko uz dim, kraći Connecticut — šećer preglasi nijansu. Drži čašu bliže pepeljari — don se bolje čita u sporijem krugu.",
-      "en": "With Don Papa Baroko do not force a complex cigar; keep the format short. One sip, one draw; line don dislikes hurrying the middle third."
+      "hr": "Ako ide uz dim, biraj kraći Connecticut — šećer lako preglasi nijanse.",
+      "en": "If you pair it with smoke, pick a shorter Connecticut — sugar easily covers nuance."
     },
     "priceUrl": "https://allez.hr/shop/svi-proizvodi/don-papa-baroko-40-vol-07l",
     "notes": {
-      "hr": "Profil Don Papa Baroko: kakao, slatko i suho voće na Filipini (Negros) (40 %). Za sparivanje bolje čisti aged rum.",
-      "en": "Don Papa Baroko (40 %) — Filipini (Negros): kakao, slatko i suho voće, higher sweetness. More cocktail/dessert than a cigar sipper."
+      "hr": "Don Papa Baroko (40 %) — Filipini (Negros): začini i vegetalno, izraženija slatkoća. Koktel ili desertni gutljaj; neat uz cigaru rijetko je prvi izbor.",
+      "en": "Don Papa Baroko (40 %) — Filipini (Negros): spice and vegetalno, higher sweetness. Cocktail or dessert sip; neat with a cigar is rarely the first choice."
     },
-    "profileEstimated": true
+    "profileEstimated": true,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "eX_PX8Wi4G0"
+    ]
   },
   {
     "id": "rum-don-q-gran-anejo",
@@ -7211,7 +7227,9 @@
     "flavorTags": [
       "ester-funk",
       "tropsko-voce",
-      "vegetalno"
+      "vegetalno",
+      "melasa",
+      "sol"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -7236,15 +7254,19 @@
     "status": null,
     "pairable": true,
     "cigarHint": {
-      "hr": "Ester/tijelo Habitation Velier Forsyths 151 Proof White mosti s tamnijim pokrovom, ne sa shade.",
-      "en": "The fuller body of Habitation Velier Forsyths 151 Proof White does not sit with Connecticut; keep sips smaller."
+      "hr": "Punije tijelo ili esterski rub — maduro ili puni Habano; dim i gutljaj u sporom ritmu.",
+      "en": "Fuller body or an estery edge — maduro or a full Habano; keep smoke and sip slow."
     },
     "priceUrl": null,
     "notes": {
-      "hr": "Profil Habitation Velier Forsyths 151 Proof White: esterski funk, tropsko voće i vegetalno. To je punije tijelo iz Jamajka. Nezavisni bottler — tipično bez šećera; boja od bačve",
-      "en": "Jamajka via Habitation Velier Forsyths 151 Proof White: esterski funk, tropsko voće i vegetalno and fuller body. Let sip rhythm follow the smoke."
+      "hr": "Habitation Velier Forsyths 151 Proof White — Jamajka: melasa, esterski funk i slana nota, punije tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Habitation Velier Forsyths 151 Proof White — Jamajka: molasses, estery funk and sol, fuller body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
-    "profileEstimated": false
+    "profileEstimated": false,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "7LkB3K2nNMQ"
+    ]
   },
   {
     "id": "rum-habitation-velier-svm-plummer-14",
@@ -7397,7 +7419,8 @@
     "flavorTags": [
       "ester-funk",
       "melasa",
-      "overproof"
+      "overproof",
+      "vegetalno"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -7422,15 +7445,19 @@
     "status": null,
     "pairable": true,
     "cigarHint": {
-      "hr": "Uz Hampden Estate Rum Fire sporiji dim u srednjoj trećini cigare. Gutljaj neka prati prvi dim; bočica hampden drži svoj ritam do kraja večeri.",
-      "en": "With Hampden Estate Rum Fire maduro or a full Habano — esterski funk, melasa i jači alkohol wants weight."
+      "hr": "Punije tijelo ili esterski rub — maduro ili puni Habano; dim i gutljaj u sporom ritmu.",
+      "en": "Fuller body or an estery edge — maduro or a full Habano; keep smoke and sip slow."
     },
     "priceUrl": null,
     "notes": {
-      "hr": "Jamajka preko Hampden Estate Rum Fire: esterski funk, melasa i jači alkohol i punije tijelo. Ritam gutljaja neka prati dim. Jamajčanski estate/pure single — bez doziranog šećera; boja od bačve",
-      "en": "In Hampden Estate Rum Fire, esterski funk, melasa i jači alkohol leads. Spirit from Jamajka, body fuller body."
+      "hr": "Hampden Estate Rum Fire — Jamajka: melasa, vegetalno i esterski funk, punije tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Hampden Estate Rum Fire — Jamajka: molasses, vegetalno and estery funk, fuller body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
-    "profileEstimated": false
+    "profileEstimated": false,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "DJiQfsCsv0w"
+    ]
   },
   {
     "id": "rum-havana-club-15yo",
@@ -7518,15 +7545,19 @@
       "best": "Čisto / kap vode"
     },
     "cigarHint": {
-      "hr": "Uz Havana Club 7 Anos izbjegni spiced rum u istoj večeri. Ne žuri: ova boca (havana) traži mirniji tempo uz cigaru.",
-      "en": "Medium body in Havana Club 7 Anos sits with a riper corojo or Cameroon. Let the sip follow the first draw; bottle havana keeps its own pace."
+      "hr": "Srednje tijelo — Habano robusto ili zreliji corojo kao most.",
+      "en": "Medium body — Habano robusto or a riper corojo as the bridge."
     },
     "priceUrl": null,
     "notes": {
-      "hr": "Havana Club 7 Anos — Kuba: duhan, koza i suho voće, srednje tijelo. Čist/vrlo nizak Čisto ili kap vode.",
-      "en": "In Havana Club 7 Anos, duhan, koza i suho voće leads. Spirit from Kuba, body medium body."
+      "hr": "Havana Club 7 Anos — Kuba: voće i duhan, srednje tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Havana Club 7 Anos — Kuba: fruit and duhan, medium body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
-    "profileEstimated": true
+    "profileEstimated": true,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "ifdhItjw9F0"
+    ]
   },
   {
     "id": "rum-havana-club-especial",
@@ -7538,7 +7569,8 @@
     "sweetness": 1,
     "flavorTags": [
       "citrus",
-      "duhan"
+      "duhan",
+      "voce"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -7563,15 +7595,19 @@
       "best": "Koktel / highball"
     },
     "cigarHint": {
-      "hr": "Srednje tijelo Havana Club Especial sjeda uz zreliji corojo ili Cameroon. Drži čašu bliže pepeljari — havana se bolje čita u sporijem krugu.",
-      "en": "With Havana Club Especial a Habano robusto — citrus i duhan as the bridge. Let the sip follow the first draw; bottle havana keeps its own pace."
+      "hr": "Srednje tijelo — Habano robusto ili zreliji corojo kao most.",
+      "en": "Medium body — Habano robusto or a riper corojo as the bridge."
     },
     "priceUrl": null,
     "notes": {
-      "hr": "Profil Havana Club Especial: citrus i duhan. To je srednje tijelo iz Kuba. Čist (mlad)",
-      "en": "Havana Club Especial holds citrus i duhan without peated noise — Kuba, medium body."
+      "hr": "Havana Club Especial — Kuba: voće i duhan, srednje tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Havana Club Especial — Kuba: fruit and duhan, medium body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
-    "profileEstimated": true
+    "profileEstimated": true,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "ifdhItjw9F0"
+    ]
   },
   {
     "id": "rum-havana-club-original-3",
@@ -7584,7 +7620,8 @@
     "flavorTags": [
       "zacini",
       "duhan",
-      "citrus"
+      "citrus",
+      "voce"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -7609,14 +7646,18 @@
       "best": "Čisto / kap vode"
     },
     "cigarHint": {
-      "hr": "Laganiji Havana Club Original 3 voli kraći format; prva trećina dovoljna. Jedan gutljaj, jedan dim; linija havana ne voli pretrčavanje trećine.",
-      "en": "Do not cover Havana Club Original 3 with a full maduro. One sip, one draw; line havana dislikes hurrying the middle third."
+      "hr": "Laganije tijelo — Connecticut ili Cameroon; prva trećina cigare često dovoljna.",
+      "en": "Lighter body — Connecticut or Cameroon; the cigar’s first third is often enough."
     },
     "priceUrl": null,
     "notes": {
-      "hr": "Profil Havana Club Original 3: začini, duhan i citrus. To je laganije tijelo iz Kuba. Čist (mlad)",
-      "en": "Profile of Havana Club Original 3: začini, duhan i citrus. That is lighter body from Kuba."
-    }
+      "hr": "Havana Club Original 3 — Kuba: voće i duhan, laganije tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Havana Club Original 3 — Kuba: fruit and duhan, lighter body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
+    },
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "ifdhItjw9F0"
+    ]
   },
   {
     "id": "rum-havana-club-seleccion-maestros",
@@ -7629,7 +7670,8 @@
     "flavorTags": [
       "duhan",
       "hrast",
-      "zacini"
+      "zacini",
+      "voce"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -7654,15 +7696,19 @@
       "best": "Čisto / kap vode"
     },
     "cigarHint": {
-      "hr": "Uz Havana Club Seleccion Maestros izbjegni spiced rum u istoj večeri. Drži čašu bliže pepeljari — havana se bolje čita u sporijem krugu.",
-      "en": "First sip of Havana Club Seleccion Maestros + the cigar’s first third reveal the pairing."
+      "hr": "Srednje tijelo — Habano robusto ili zreliji corojo kao most.",
+      "en": "Medium body — Habano robusto or a riper corojo as the bridge."
     },
     "priceUrl": "https://humidor.hr/hr/proizvod/havana-club-seleccion-de-maestros-070-l/",
     "notes": {
-      "hr": "Havana Club Seleccion Maestros — Kuba: duhan, hrast i začini, srednje tijelo. Čist Čisto ili kap vode.",
-      "en": "In Havana Club Seleccion Maestros, duhan, hrast i začini leads. Spirit from Kuba, body medium body."
+      "hr": "Havana Club Seleccion Maestros — Kuba: voće i duhan, srednje tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Havana Club Seleccion Maestros — Kuba: fruit and duhan, medium body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
-    "profileEstimated": true
+    "profileEstimated": true,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "ifdhItjw9F0"
+    ]
   },
   {
     "id": "rum-havana-club-tributo",
@@ -7675,7 +7721,8 @@
     "flavorTags": [
       "zacini",
       "duhan",
-      "citrus"
+      "citrus",
+      "voce"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -7700,14 +7747,18 @@
       "best": "Čisto / kap vode"
     },
     "cigarHint": {
-      "hr": "Srednje tijelo Havana Club Tributo sjeda uz zreliji corojo ili Cameroon. Ne žuri: ova boca (havana) traži mirniji tempo uz cigaru.",
-      "en": "With Havana Club Tributo skip spiced rum the same evening. One sip, one draw; line havana dislikes hurrying the middle third."
+      "hr": "Srednje tijelo — Habano robusto ili zreliji corojo kao most.",
+      "en": "Medium body — Habano robusto or a riper corojo as the bridge."
     },
     "priceUrl": null,
     "notes": {
-      "hr": "Havana Club Tributo — Kuba: začini, duhan i citrus, srednje tijelo. Čist Čisto ili kap vode.",
-      "en": "Kuba via Havana Club Tributo: začini, duhan i citrus and medium body. Let sip rhythm follow the smoke."
-    }
+      "hr": "Havana Club Tributo — Kuba: voće i duhan, srednje tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Havana Club Tributo — Kuba: fruit and duhan, medium body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
+    },
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "ifdhItjw9F0"
+    ]
   },
   {
     "id": "rum-hse-black-sheriff",
@@ -9736,7 +9787,8 @@
     "flavorTags": [
       "citrus",
       "hrast",
-      "voce"
+      "voce",
+      "orasasti"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -9761,15 +9813,19 @@
     "status": null,
     "pairable": true,
     "cigarHint": {
-      "hr": "Ne preglasi Mount Gay Eclipse punim madurom. Drži čašu bliže pepeljari — mount se bolje čita u sporijem krugu.",
-      "en": "With Mount Gay Eclipse a mild Habano holds the bridge without smothering fruit. Let the sip follow the first draw; bottle mount keeps its own pace."
+      "hr": "Laganije tijelo — Connecticut ili Cameroon; prva trećina cigare često dovoljna.",
+      "en": "Lighter body — Connecticut or Cameroon; the cigar’s first third is often enough."
     },
     "priceUrl": null,
     "notes": {
-      "hr": "Profil Mount Gay Eclipse: citrus, hrast i voće. To je laganije tijelo iz Barbados. Šećer ≤5 g/L (hidrometar); tipično bez doziranog šećera",
-      "en": "Profile of Mount Gay Eclipse: citrus, hrast i voće. That is lighter body from Barbados."
+      "hr": "Mount Gay Eclipse — Barbados: citrus, orašasti tonovi i voće, laganije tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Mount Gay Eclipse — Barbados: citrus, nutty tones and fruit, lighter body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
-    "profileEstimated": false
+    "profileEstimated": false,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "9CK7z1CG5HM"
+    ]
   },
   {
     "id": "rum-mount-gay-xo",
@@ -12661,7 +12717,8 @@
     "flavorTags": [
       "travnato",
       "hrast",
-      "zacini"
+      "zacini",
+      "vegetalno"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -12686,16 +12743,20 @@
       "best": "Čisto"
     },
     "cigarHint": {
-      "hr": "Prvi gutljaj Saint James 12 (agricole) + prva trećina cigare otkrivaju sparivanje.",
-      "en": "First sip of Saint James 12 (agricole) + the cigar’s first third reveal the pairing."
+      "hr": "Srednje tijelo — Habano robusto ili zreliji corojo kao most.",
+      "en": "Medium body — Habano robusto or a riper corojo as the bridge."
     },
     "priceUrl": "https://allez.hr/shop/svi-proizvodi/saint-james-xo-rhum-vieux-agricole-43-vol-07l-u-poklon-kutiji",
     "notes": {
-      "hr": "Saint James 12 (agricole) — Agricole (Martinique): travnato, hrast i začini, srednje tijelo. Bez dodanog šećera i bez karamela (AOC Martinique) Čisto ili kap vode.",
-      "en": "In Saint James 12 (agricole), travnato, hrast i začini leads. Spirit from Agricole (Martinique), body medium body."
+      "hr": "Saint James 12 (agricole) — Agricole (Martinique): hrast, začini i travnato, srednje tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Saint James 12 (agricole) — Agricole (Martinique): hrast, spice and travnato, medium body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
     "inStock": true,
-    "stockFetchedAt": "2026-08-18"
+    "stockFetchedAt": "2026-08-18",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "gZPX7Z2g8MQ"
+    ]
   },
   {
     "id": "rum-saint-james-15",
@@ -12754,7 +12815,10 @@
     "flavorTags": [
       "citrus",
       "travnato",
-      "voce"
+      "voce",
+      "hrast",
+      "zacini",
+      "vegetalno"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -12779,15 +12843,19 @@
     "status": null,
     "pairable": true,
     "cigarHint": {
-      "hr": "Uz Saint James VSOP blagi Habano drži most bez gušenja voća. Ne žuri: ova boca (saint) traži mirniji tempo uz cigaru.",
-      "en": "Lighter Saint James VSOP likes a shorter format; the first third is enough. Keep the glass near the ashtray — saint reads clearer in a slower loop."
+      "hr": "Laganije tijelo — Connecticut ili Cameroon; prva trećina cigare često dovoljna.",
+      "en": "Lighter body — Connecticut or Cameroon; the cigar’s first third is often enough."
     },
     "priceUrl": null,
     "notes": {
-      "hr": "Profil Saint James VSOP: citrus, travnato i voće. To je laganije tijelo iz Agricole (Martinique). Bez dodanog šećera i bez karamela (AOC Martinique)",
-      "en": "Profile of Saint James VSOP: citrus, travnato i voće. That is lighter body from Agricole (Martinique)."
+      "hr": "Saint James VSOP — Agricole (Martinique): hrast, začini i travnato, laganije tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Saint James VSOP — Agricole (Martinique): hrast, spice and travnato, lighter body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
-    "profileEstimated": false
+    "profileEstimated": false,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "gZPX7Z2g8MQ"
+    ]
   },
   {
     "id": "rum-saint-james-xo-agricole",
@@ -12800,7 +12868,10 @@
     "flavorTags": [
       "hrast",
       "suho-voce",
-      "voce"
+      "voce",
+      "zacini",
+      "travnato",
+      "vegetalno"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -12825,17 +12896,21 @@
       "best": "Čisto"
     },
     "cigarHint": {
-      "hr": "Uz Saint James XO (agricole) izbjegni spiced rum u istoj večeri. Ne žuri: ova boca (saint) traži mirniji tempo uz cigaru.",
-      "en": "First sip of Saint James XO (agricole) + the cigar’s first third reveal the pairing."
+      "hr": "Srednje tijelo — Habano robusto ili zreliji corojo kao most.",
+      "en": "Medium body — Habano robusto or a riper corojo as the bridge."
     },
     "priceUrl": "https://allez.hr/shop/svi-proizvodi/saint-james-xo-rhum-vieux-agricole-43-vol-07l-u-poklon-kutiji",
     "notes": {
-      "hr": "U Saint James XO (agricole) vodi hrast, suho voće i voće. Destilat s Agricole (Martinique), tijelo srednje. Bez dodanog šećera i bez karamela (AOC Martinique)",
-      "en": "Saint James XO (agricole) holds hrast, suho voće i voće without peated noise — Agricole (Martinique), medium body."
+      "hr": "Saint James XO (agricole) — Agricole (Martinique): hrast, začini i travnato, srednje tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Saint James XO (agricole) — Agricole (Martinique): hrast, spice and travnato, medium body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
     "profileEstimated": false,
     "inStock": true,
-    "stockFetchedAt": "2026-08-18"
+    "stockFetchedAt": "2026-08-18",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "gZPX7Z2g8MQ"
+    ]
   },
   {
     "id": "rum-santa-teresa-1796",
@@ -13539,7 +13614,8 @@
     "flavorTags": [
       "duhan",
       "hrast",
-      "zacini"
+      "zacini",
+      "voce"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -13564,15 +13640,19 @@
       "best": "Čisto / kap vode"
     },
     "cigarHint": {
-      "hr": "Srednje tijelo Havana Club Union sjeda uz zreliji corojo ili Cameroon. Jedan gutljaj, jedan dim; linija union ne voli pretrčavanje trećine.",
-      "en": "First sip of Havana Club Union + the cigar’s first third reveal the pairing. One sip, one draw; line union dislikes hurrying the middle third."
+      "hr": "Srednje tijelo — Habano robusto ili zreliji corojo kao most.",
+      "en": "Medium body — Habano robusto or a riper corojo as the bridge."
     },
     "priceUrl": null,
     "notes": {
-      "hr": "Profil Havana Club Union: duhan, hrast i začini. To je srednje tijelo iz Kuba. Čist",
-      "en": "In Havana Club Union, duhan, hrast i začini leads. Spirit from Kuba, body medium body."
+      "hr": "Havana Club Union — Kuba: voće i duhan, srednje tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Havana Club Union — Kuba: fruit and duhan, medium body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
-    "profileEstimated": true
+    "profileEstimated": true,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "ifdhItjw9F0"
+    ]
   },
   {
     "id": "rum-velha",
@@ -14099,7 +14179,10 @@
     "flavorTags": [
       "ester-funk",
       "tropsko-voce",
-      "zacini"
+      "zacini",
+      "vanilija",
+      "hrast",
+      "med"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -14124,15 +14207,19 @@
       "best": "Kap vode (otvara estere)"
     },
     "cigarHint": {
-      "hr": "Ester/tijelo Worthy Park Single Estate Reserve mosti s tamnijim pokrovom, ne sa shade.",
-      "en": "Ester/body in Worthy Park Single Estate Reserve bridges to a darker wrapper, not shade."
+      "hr": "Punije tijelo ili esterski rub — maduro ili puni Habano; dim i gutljaj u sporom ritmu.",
+      "en": "Fuller body or an estery edge — maduro or a full Habano; keep smoke and sip slow."
     },
     "priceUrl": null,
     "notes": {
-      "hr": "U Worthy Park Single Estate Reserve vodi esterski funk, tropsko voće i začini. Destilat s Jamajka, tijelo punije. Jamajčanski estate/pure single — bez doziranog šećera; boja od bačve",
-      "en": "Worthy Park Single Estate Reserve holds esterski funk, tropsko voće i začini without peated noise — Jamajka, fuller body."
+      "hr": "Worthy Park Single Estate Reserve — Jamajka: vanilija, hrast i med, punije tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Worthy Park Single Estate Reserve — Jamajka: vanilija, hrast and med, fuller body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
-    "profileEstimated": false
+    "profileEstimated": false,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "CQOhcv94MZ0"
+    ]
   },
   {
     "id": "rum-wray-nephew-overproof-63",

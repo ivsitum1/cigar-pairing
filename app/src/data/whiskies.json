@@ -680,7 +680,8 @@
     "flavorTags": [
       "dim",
       "kava",
-      "papar"
+      "papar",
+      "sol"
     ],
     "qualityScore": 8,
     "priceEUR": {
@@ -694,12 +695,12 @@
       "best": "Cisto"
     },
     "cigarHint": {
-      "hr": "Ne forsiraš lagani shade uz Ardbeg 10: jod i dim preglase nijansu. Gutljaj neka prati prvi dim; bočica ardbeg drži svoj ritam do kraja večeri.",
-      "en": "The peated profile of Ardbeg 10 wants a slower puff and a smaller sip; Connecticut stays too mild."
+      "hr": "Dim u čaši traži maduro ili puni Habano — most je pepeo i zemlja.",
+      "en": "Smoke in the glass wants maduro or a full Habano — bridge on ash and earth."
     },
     "notes": {
-      "hr": "Kod Ardbeg 10 dim dolazi prvi — dim, kava i papar, punije tijelo na 46 %. Regija: Islay, Škotska. Serviranje: Cisto.",
-      "en": "Ardbeg 10 keeps a peated character (Islay, Škotska): dim, kava i papar. Body reads fuller body na 46 %. Serviranje: Cisto."
+      "hr": "Ardbeg 10 (46 %) — Islay, Škotska. Dimljeni profil: slana nota; punije tijelo. Čisto ili s kap vode; uz cigaru sporiji ritam gutljaja.",
+      "en": "Ardbeg 10 (46 %) — Islay, Škotska. Peated profile: sol; fuller body. Neat or with a drop of water; keep sips slow beside a cigar."
     },
     "status": null,
     "priceUrl": "https://humidor.hr/hr/proizvod/ardbeg-10-yo-070-l/",
@@ -709,7 +710,11 @@
       "en": "Natural colour, no sweetening (distillery declaration)"
     },
     "additiveSource": "Deklaracija destilerije",
-    "profileEstimated": false
+    "profileEstimated": false,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "9UVfirhYaQE"
+    ]
   },
   {
     "id": "wh-ardbeg-25-yo-islay-single-malt-scotch-whisky-46-vol-0-7l-u-poklon-kutiji",
@@ -1626,7 +1631,8 @@
     "flavorTags": [
       "dim",
       "med",
-      "voce"
+      "voce",
+      "vegetalno"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -1647,16 +1653,20 @@
       "best": "Cisto / highball"
     },
     "cigarHint": {
-      "hr": "Uz Black Bottle biraj maduro ili puni Habano — most je pepeo i zemlja, ne citrus.",
-      "en": "Do not force a light shade with Black Bottle: iodine and smoke cover nuance. Do not rush: this bottle (black) wants a quieter tempo beside the cigar."
+      "hr": "Dim u čaši traži maduro ili puni Habano — most je pepeo i zemlja.",
+      "en": "Smoke in the glass wants maduro or a full Habano — bridge on ash and earth."
     },
     "priceUrl": "https://ecuga.com/proizvod/black-bottle",
     "notes": {
-      "hr": "Black Bottle s Islaya/dimljenog kruga (Škotska) na 40 %: dim, med i voće u srednje tijelo. Dim ne traži žurbu. Serviranje: Cisto / highball.",
-      "en": "Black Bottle keeps a peated character (Škotska): dim, med i voće. Body reads medium body na 40 %. Serviranje: Cisto / highball."
+      "hr": "Black Bottle (40 %) — Škotska. Dimljeni profil: vegetalno; srednje tijelo. Čisto ili s kap vode; uz cigaru sporiji ritam gutljaja.",
+      "en": "Black Bottle (40 %) — Škotska. Peated profile: vegetalno; medium body. Neat or with a drop of water; keep sips slow beside a cigar."
     },
     "inStock": true,
-    "stockFetchedAt": "2026-08-18"
+    "stockFetchedAt": "2026-08-18",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "Jm5lSC1jMEE"
+    ]
   },
   {
     "id": "wh-blanton-039-s-gold-edition-the-original-single-barrel-bourbon-whiskey-51-5-vol-0-7l-u-poklon-kutiji",
@@ -2740,7 +2750,10 @@
     "flavorTags": [
       "kremasto",
       "med",
-      "voce"
+      "voce",
+      "hrast",
+      "citrus",
+      "zacini"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -2766,17 +2779,21 @@
       "best": "Cisto"
     },
     "cigarHint": {
-      "hr": "Uz Bushmills BLACK BUSH srednji Habano ili Cameroon — kremastost, med i voće traži čist most.",
-      "en": "The body of Bushmills BLACK BUSH sits with a robusto; skip the heaviest maduro if the bottle is drier."
+      "hr": "Srednje ili laganije tijelo — Cameroon ili kraći Habano; prva trećina često dovoljna.",
+      "en": "Medium or lighter body — Cameroon or a shorter Habano; the first third is often enough."
     },
     "priceUrl": "https://ecuga.com/proizvod/bushmills-black-bush",
     "notes": {
-      "hr": "Bushmills BLACK BUSH drži kremastost, med i voće bez peated buke — Sjeverna Irska na 40 %, srednje tijelo. Serviranje: Cisto.",
-      "en": "Bushmills BLACK BUSH holds kremastost, med i voće without peated noise — Sjeverna Irska na 40 %, medium body. Serviranje: Cisto."
+      "hr": "Bushmills BLACK BUSH (40 %) — Sjeverna Irska: hrast, citrus i začini, srednje tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Bushmills BLACK BUSH (40 %) — Sjeverna Irska: hrast, citrus and spice, medium body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
     "profileEstimated": false,
     "inStock": true,
-    "stockFetchedAt": "2026-08-18"
+    "stockFetchedAt": "2026-08-18",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "V-aAszJ_4Cw"
+    ]
   },
   {
     "id": "wh-canadian-club-1858",
@@ -3063,7 +3080,8 @@
     "flavorTags": [
       "karamela",
       "vanilija",
-      "med"
+      "med",
+      "hrast"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -3089,14 +3107,18 @@
       "best": "Čisto ili kocka leda"
     },
     "cigarHint": {
-      "hr": "Uz Cedar Ridge Straight Bourbon blagi Habano ili Connecticut — pristupačna karamela ne voli preteški maduro.",
-      "en": "With Cedar Ridge Straight Bourbon a mild Habano or Connecticut — approachable caramel dislikes a heavy maduro."
+      "hr": "Srednje ili laganije tijelo — Cameroon ili kraći Habano; prva trećina često dovoljna.",
+      "en": "Medium or lighter body — Cameroon or a shorter Habano; the first third is often enough."
     },
     "notes": {
-      "hr": "Cedar Ridge Straight Bourbon (Iowa, SAD) na ~40 %: karamela, vanilija i med. Gateway Midwestern stil; profil procijenjen.",
-      "en": "Cedar Ridge Straight Bourbon (Iowa, USA) at ~40%: caramel, vanilla, honey. Gateway Midwestern style; profile estimated."
+      "hr": "Cedar Ridge Straight Bourbon (40 %) — Iowa, SAD: vanilija i hrast, laganije tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Cedar Ridge Straight Bourbon (40 %) — Iowa, SAD: vanilija and hrast, lighter body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
-    "profileEstimated": true
+    "profileEstimated": true,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "LLBQsyrK9kc"
+    ]
   },
   {
     "id": "wh-chivas-regal-12",
@@ -3249,7 +3271,9 @@
     "sweetness": 3,
     "flavorTags": [
       "citrus",
-      "kakao"
+      "kakao",
+      "med",
+      "voce"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -3270,17 +3294,21 @@
       "best": "Cisto / highball"
     },
     "cigarHint": {
-      "hr": "Uz Chivas Regal 25 srednji Habano ili Cameroon — citrus i kakao traži čist most.",
-      "en": "With Chivas Regal 25 choose a format that lasts as long as the sip, not longer. Keep the glass near the ashtray — chivas reads clearer in a slower loop."
+      "hr": "Srednje ili laganije tijelo — Cameroon ili kraći Habano; prva trećina često dovoljna.",
+      "en": "Medium or lighter body — Cameroon or a shorter Habano; the first third is often enough."
     },
     "priceUrl": "https://ecuga.com/proizvod/chivas-regal-25",
     "notes": {
-      "hr": "Chivas Regal 25 drži citrus i kakao bez peated buke — Škotska na 40 %, srednje tijelo. Serviranje: Cisto / highball. To nije ulazna boca po ocjeni u našem katalogu.",
-      "en": "Chivas Regal 25 holds citrus i kakao without peated noise — Škotska na 40 %, medium body. Serviranje: Cisto / highball. To nije ulazna boca po ocjeni u našem katalogu."
+      "hr": "Chivas Regal 25 (40 %) — Škotska: med i voće, srednje tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Chivas Regal 25 (40 %) — Škotska: med and fruit, medium body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
     "profileEstimated": true,
     "inStock": true,
-    "stockFetchedAt": "2026-08-18"
+    "stockFetchedAt": "2026-08-18",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "h1JQvM6j0TE"
+    ]
   },
   {
     "id": "wh-chivas-regal-mizunara",
@@ -3428,7 +3456,9 @@
     "body": 3,
     "sweetness": 2,
     "flavorTags": [
-      "zacini"
+      "zacini",
+      "voce",
+      "tamno-voce"
     ],
     "additiveStatus": "moderate",
     "additiveDetail": {
@@ -3454,15 +3484,19 @@
       "best": "Cisto / mala kocka leda"
     },
     "cigarHint": {
-      "hr": "Uz Compass Box SPICE TREE Blended Malt prva trećina cigare + prvi gutljaj otkrivaju most.",
-      "en": "With Compass Box SPICE TREE Blended Malt a medium Habano or Cameroon — začini wants a clean bridge."
+      "hr": "Srednje ili laganije tijelo — Cameroon ili kraći Habano; prva trećina često dovoljna.",
+      "en": "Medium or lighter body — Cameroon or a shorter Habano; the first third is often enough."
     },
     "priceUrl": "https://allez.hr/shop/svi-proizvodi/compass-box-spice-tree-blended-malt-46-vol-07l-u-poklon-kutiji",
     "notes": {
-      "hr": "Profil Compass Box SPICE TREE Blended Malt: začini. To je srednje tijelo iz Škotska (blended malt) na 46 %. Serviranje: Cisto / mala kocka leda.",
-      "en": "Compass Box SPICE TREE Blended Malt (Škotska (blended malt)) na 46 %: začini with medium body. Serviranje: Cisto / mala kocka leda."
+      "hr": "Compass Box SPICE TREE Blended Malt (46 %) — Škotska (blended malt): voće i tamno voće, srednje tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Compass Box SPICE TREE Blended Malt (46 %) — Škotska (blended malt): fruit and dark fruit, medium body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
-    "profileEstimated": false
+    "profileEstimated": false,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "CZFi5KxEqSE"
+    ]
   },
   {
     "id": "wh-concertmaster",
@@ -3629,16 +3663,20 @@
       "best": "Cisto / highball"
     },
     "cigarHint": {
-      "hr": "Uz Crown Royal srednji Habano ili Cameroon — vanilija, karamela i voće traži čist most.",
-      "en": "With Crown Royal the cigar’s first third + first sip reveal the bridge. One sip, one draw; line crown dislikes hurrying the middle third."
+      "hr": "Srednje ili laganije tijelo — Cameroon ili kraći Habano; prva trećina često dovoljna.",
+      "en": "Medium or lighter body — Cameroon or a shorter Habano; the first third is often enough."
     },
     "priceUrl": "https://ecuga.com/proizvod/crown-royal",
     "notes": {
-      "hr": "Kanada preko Crown Royal: vanilija, karamela i voće i laganije tijelo na 40 %. Ne forsiraš overproof ritam. Serviranje: Cisto / highball.",
-      "en": "Kanada via Crown Royal: vanilija, karamela i voće and lighter body na 40 %. Do not force an overproof pace. Serviranje: Cisto / highball."
+      "hr": "Crown Royal (40 %) — Kanada: vanilija i voće, laganije tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Crown Royal (40 %) — Kanada: vanilija and fruit, lighter body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
     "inStock": true,
-    "stockFetchedAt": "2026-08-18"
+    "stockFetchedAt": "2026-08-18",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "CwGNyxmxmOY"
+    ]
   },
   {
     "id": "wh-dalmore-12",
@@ -3871,7 +3909,8 @@
     "sweetness": 3,
     "flavorTags": [
       "med",
-      "cvjetno"
+      "cvjetno",
+      "vanilija"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -3892,16 +3931,20 @@
       "best": "Cisto / highball"
     },
     "cigarHint": {
-      "hr": "Uz Dewar's White Label srednji Habano ili Cameroon — med i cvijet traži čist most.",
-      "en": "With Dewar's White Label choose a format that lasts as long as the sip, not longer."
+      "hr": "Srednje ili laganije tijelo — Cameroon ili kraći Habano; prva trećina često dovoljna.",
+      "en": "Medium or lighter body — Cameroon or a shorter Habano; the first third is often enough."
     },
     "priceUrl": "https://ecuga.com/proizvod/dewars-white-label",
     "notes": {
-      "hr": "Dewar's White Label drži med i cvijet bez peated buke — Škotska na 40 %, laganije tijelo. Serviranje: Cisto / highball.",
-      "en": "Dewar's White Label (Škotska) na 40 %: med i cvijet with lighter body. Serviranje: Cisto / highball."
+      "hr": "Dewar's White Label (40 %) — Škotska: vanilija i cvjetne note, laganije tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Dewar's White Label (40 %) — Škotska: vanilija and floral notes, lighter body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
     "inStock": true,
-    "stockFetchedAt": "2026-08-18"
+    "stockFetchedAt": "2026-08-18",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "mHwvwetGfWk"
+    ]
   },
   {
     "id": "wh-eagle-rare-10",
@@ -3912,10 +3955,12 @@
     "country": "SAD",
     "abv": 45,
     "body": 4,
-    "sweetness": 3,
+    "sweetness": 5,
     "flavorTags": [
       "hrast",
-      "koza"
+      "koza",
+      "med",
+      "slatko"
     ],
     "qualityScore": 8,
     "priceEUR": {
@@ -3929,12 +3974,12 @@
       "best": "Cisto"
     },
     "cigarHint": {
-      "hr": "Uz Eagle Rare 10 idi na Habano ili blagi maduro — vanilija i hrast traže topliji dim.",
-      "en": "The sweetness of Eagle Rare 10 bridges to a darker wrapper; let the sip follow the second puff."
+      "hr": "Srednje ili laganije tijelo — Cameroon ili kraći Habano; prva trećina često dovoljna.",
+      "en": "Medium or lighter body — Cameroon or a shorter Habano; the first third is often enough."
     },
     "notes": {
-      "hr": "Eagle Rare 10 je slatko-hrastov američki profil: hrast i koza, punije tijelo na 45 %. Serviranje: Cisto.",
-      "en": "In Eagle Rare 10 you hear hrast i koza before spice — Kentucky, SAD na 45 %, fuller body. Serviranje: Cisto."
+      "hr": "Eagle Rare 10 (45 %) — Kentucky, SAD: hrast, med i slatko, punije tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Eagle Rare 10 (45 %) — Kentucky, SAD: hrast, med and slatko, fuller body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
     "status": null,
     "priceUrl": null,
@@ -3944,7 +3989,11 @@
       "en": "No additives (US \"straight\" rules allow none)"
     },
     "additiveSource": "US regulativa (straight whiskey)",
-    "profileEstimated": true
+    "profileEstimated": true,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "7SEq3IX_78g"
+    ]
   },
   {
     "id": "wh-edradour-10",
@@ -4187,7 +4236,8 @@
     "flavorTags": [
       "hrast",
       "karamela",
-      "papar"
+      "papar",
+      "med"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -4213,15 +4263,19 @@
       "best": "Cisto ili velika kocka leda"
     },
     "cigarHint": {
-      "hr": "Uz Elijah Craig Small Batch izbjegni vrlo laganu panatelu — boca je teža od nje.",
-      "en": "The sweetness of Elijah Craig Small Batch bridges to a darker wrapper; let the sip follow the second puff."
+      "hr": "Srednje ili laganije tijelo — Cameroon ili kraći Habano; prva trećina često dovoljna.",
+      "en": "Medium or lighter body — Cameroon or a shorter Habano; the first third is often enough."
     },
     "priceUrl": "https://allez.hr/shop/svi-proizvodi/elijah-craig-small-batch-kentucky-straight-bourbon-whiskey-47-07-l",
     "notes": {
-      "hr": "Elijah Craig Small Batch je slatko-hrastov američki profil: hrast, karamela i papar, punije tijelo na 47 %. Serviranje: Cisto ili velika kocka leda.",
-      "en": "Bourbon/Tennessee line Elijah Craig Small Batch holds hrast, karamela i papar. Region Kentucky, SAD na 47 %; body fuller body. Serviranje: Cisto ili velika kocka leda."
+      "hr": "Elijah Craig Small Batch 47% (47 %) — Kentucky, SAD: hrast i med, punije tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Elijah Craig Small Batch 47% (47 %) — Kentucky, SAD: hrast and med, fuller body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
-    "profileEstimated": false
+    "profileEstimated": false,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "4aiXDMOzm_8"
+    ]
   },
   {
     "id": "wh-elijah-craig-straight-rye",
@@ -4236,7 +4290,8 @@
     "flavorTags": [
       "hrast",
       "karamela",
-      "papar"
+      "papar",
+      "med"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -4257,17 +4312,21 @@
       "best": "Cisto / Old Fashioned"
     },
     "cigarHint": {
-      "hr": "Uz Elijah Craig Straight Rye izbjegni vrlo laganu panatelu — boca je teža od nje.",
-      "en": "With Elijah Craig Straight Rye go Habano or a gentle maduro — vanilla and oak want warmer smoke."
+      "hr": "Srednje ili laganije tijelo — Cameroon ili kraći Habano; prva trećina često dovoljna.",
+      "en": "Medium or lighter body — Cameroon or a shorter Habano; the first third is often enough."
     },
     "priceUrl": "https://ecuga.com/proizvod/elijah-craig-straight-rye",
     "notes": {
-      "hr": "Bourbon/Tennessee linija Elijah Craig Straight Rye drži hrast, karamela i papar. Regija Kentucky, SAD na 47 %; tijelo punije. Serviranje: Cisto / Old Fashioned.",
-      "en": "Elijah Craig Straight Rye (Kentucky, SAD) na 47 %: American oak carries hrast, karamela i papar in fuller body. Serviranje: Cisto / Old Fashioned."
+      "hr": "Elijah Craig Straight Rye (47 %) — Kentucky, SAD: hrast i med, punije tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Elijah Craig Straight Rye (47 %) — Kentucky, SAD: hrast and med, fuller body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
     "profileEstimated": false,
     "inStock": true,
-    "stockFetchedAt": "2026-08-18"
+    "stockFetchedAt": "2026-08-18",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "4aiXDMOzm_8"
+    ]
   },
   {
     "id": "wh-evan-williams-black-label",
@@ -4281,7 +4340,8 @@
     "sweetness": 3,
     "flavorTags": [
       "hrast",
-      "karamela"
+      "karamela",
+      "sol"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -4302,17 +4362,21 @@
       "best": "Cisto / Old Fashioned"
     },
     "cigarHint": {
-      "hr": "Američki hrast u Evan Williams Black Label ne voli preblagi Connecticut; robusto drži ritam.",
-      "en": "With Evan Williams Black Label go Habano or a gentle maduro — vanilla and oak want warmer smoke."
+      "hr": "Srednje ili laganije tijelo — Cameroon ili kraći Habano; prva trećina često dovoljna.",
+      "en": "Medium or lighter body — Cameroon or a shorter Habano; the first third is often enough."
     },
     "priceUrl": "https://ecuga.com/proizvod/evan-williams-black-label-2",
     "notes": {
-      "hr": "Evan Williams Black Label (Kentucky, SAD) na 43 %: američki hrast nosi hrast i karamela u srednje tijelo. Serviranje: Cisto / Old Fashioned.",
-      "en": "Bourbon/Tennessee line Evan Williams Black Label holds hrast i karamela. Region Kentucky, SAD na 43 %; body medium body. Serviranje: Cisto / Old Fashioned."
+      "hr": "Evan Williams Black Label (43 %) — Kentucky, SAD: hrast i slana nota, srednje tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Evan Williams Black Label (43 %) — Kentucky, SAD: hrast and sol, medium body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
     "profileEstimated": true,
     "inStock": true,
-    "stockFetchedAt": "2026-08-18"
+    "stockFetchedAt": "2026-08-18",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "8TtuIMMJiDw"
+    ]
   },
   {
     "id": "wh-evan-williams-single-barrel",
@@ -4327,7 +4391,8 @@
     "flavorTags": [
       "karamela",
       "vanilija",
-      "hrast"
+      "hrast",
+      "sol"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -4348,16 +4413,20 @@
       "best": "Cisto / Old Fashioned"
     },
     "cigarHint": {
-      "hr": "Uz Evan Williams Single Barrel izbjegni vrlo laganu panatelu — boca je teža od nje.",
-      "en": "The sweetness of Evan Williams Single Barrel bridges to a darker wrapper; let the sip follow the second puff."
+      "hr": "Srednje ili laganije tijelo — Cameroon ili kraći Habano; prva trećina često dovoljna.",
+      "en": "Medium or lighter body — Cameroon or a shorter Habano; the first third is often enough."
     },
     "priceUrl": "https://ecuga.com/proizvod/evan-williams-single-barrel",
     "notes": {
-      "hr": "Bourbon/Tennessee linija Evan Williams Single Barrel drži karamela, vanilija i hrast. Regija Kentucky, SAD na 43.3 %; tijelo srednje. Serviranje: Cisto / Old Fashioned.",
-      "en": "Evan Williams Single Barrel is a sweet-oak American profile: karamela, vanilija i hrast, medium body na 43.3 %. Serviranje: Cisto / Old Fashioned."
+      "hr": "Evan Williams Single Barrel (43.3 %) — Kentucky, SAD: hrast i slana nota, srednje tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Evan Williams Single Barrel (43.3 %) — Kentucky, SAD: hrast and sol, medium body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
     "inStock": true,
-    "stockFetchedAt": "2026-08-18"
+    "stockFetchedAt": "2026-08-18",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "8TtuIMMJiDw"
+    ]
   },
   {
     "id": "wh-four-roses-bourbon",
@@ -4372,7 +4441,9 @@
     "flavorTags": [
       "karamela",
       "kremasto",
-      "voce"
+      "voce",
+      "med",
+      "cvjetno"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -4393,15 +4464,19 @@
       "best": "Cisto / Old Fashioned"
     },
     "cigarHint": {
-      "hr": "Uz Four Roses Bourbon izbjegni vrlo laganu panatelu — boca je teža od nje. Drži čašu bliže pepeljari — four se bolje čita u sporijem krugu.",
-      "en": "The sweetness of Four Roses Bourbon bridges to a darker wrapper; let the sip follow the second puff."
+      "hr": "Srednje ili laganije tijelo — Cameroon ili kraći Habano; prva trećina često dovoljna.",
+      "en": "Medium or lighter body — Cameroon or a shorter Habano; the first third is often enough."
     },
     "priceUrl": null,
     "notes": {
-      "hr": "Bourbon/Tennessee linija Four Roses Bourbon drži karamela, kremastost i voće. Regija Kentucky, SAD na 40 %; tijelo srednje. Serviranje: Cisto / Old Fashioned.",
-      "en": "In Four Roses Bourbon you hear karamela, kremastost i voće before spice — Kentucky, SAD na 40 %, medium body. Serviranje: Cisto / Old Fashioned."
+      "hr": "Four Roses Bourbon (40 %) — Kentucky, SAD: med i cvjetne note, srednje tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Four Roses Bourbon (40 %) — Kentucky, SAD: med and floral notes, medium body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
-    "profileEstimated": false
+    "profileEstimated": false,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "33veS_4jdUg"
+    ]
   },
   {
     "id": "wh-four-roses-single-barrel",
@@ -4416,7 +4491,9 @@
     "flavorTags": [
       "karamela",
       "vanilija",
-      "voce"
+      "voce",
+      "hrast",
+      "cvjetno"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -4437,15 +4514,19 @@
       "best": "Cisto / Old Fashioned"
     },
     "cigarHint": {
-      "hr": "Uz Four Roses Single Barrel izbjegni vrlo laganu panatelu — boca je teža od nje.",
-      "en": "With Four Roses Single Barrel go Habano or a gentle maduro — vanilla and oak want warmer smoke."
+      "hr": "Srednje ili laganije tijelo — Cameroon ili kraći Habano; prva trećina često dovoljna.",
+      "en": "Medium or lighter body — Cameroon or a shorter Habano; the first third is often enough."
     },
     "priceUrl": "https://allez.hr/shop/svi-proizvodi/four-roses-single-barrel-bourbon-50-vol-07-l",
     "notes": {
-      "hr": "Four Roses Single Barrel (Kentucky, SAD) na 50 %: američki hrast nosi karamela, vanilija i voće u srednje tijelo. Serviranje: Cisto / Old Fashioned.",
-      "en": "Four Roses Single Barrel (Kentucky, SAD) na 50 %: American oak carries karamela, vanilija i voće in medium body. Serviranje: Cisto / Old Fashioned."
+      "hr": "Four Roses Single Barrel (50 %) — Kentucky, SAD: hrast i cvjetne note, srednje tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Four Roses Single Barrel (50 %) — Kentucky, SAD: hrast and floral notes, medium body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
-    "profileEstimated": false
+    "profileEstimated": false,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "G-BmsQw3E3I"
+    ]
   },
   {
     "id": "wh-four-roses-small-batch",
@@ -4460,7 +4541,9 @@
     "flavorTags": [
       "karamela",
       "kremasto",
-      "voce"
+      "voce",
+      "cvjetno",
+      "sol"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -4486,17 +4569,21 @@
       "best": "Cisto ili velika kocka leda"
     },
     "cigarHint": {
-      "hr": "Slatkoća Four Roses Small Batch mosti s tamnijim pokrovom; gutljaj neka prati drugi dim.",
-      "en": "With Four Roses Small Batch skip a very light panatela — the bottle is heavier than that format."
+      "hr": "Srednje ili laganije tijelo — Cameroon ili kraći Habano; prva trećina često dovoljna.",
+      "en": "Medium or lighter body — Cameroon or a shorter Habano; the first third is often enough."
     },
     "priceUrl": "https://ecuga.com/proizvod/four-roses-small-batch",
     "notes": {
-      "hr": "Four Roses Small Batch (Kentucky, SAD): američki hrast nosi karamela, kremastost i voće u srednje tijelo. Serviranje: Cisto ili velika kocka leda.",
-      "en": "Four Roses Small Batch (Kentucky, SAD): American oak carries karamela, kremastost i voće in medium body. Serviranje: Cisto ili velika kocka leda."
+      "hr": "Four Roses Small Batch — Kentucky, SAD: cvjetne note i slana nota, srednje tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Four Roses Small Batch — Kentucky, SAD: floral notes and sol, medium body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
     "profileEstimated": false,
     "inStock": true,
-    "stockFetchedAt": "2026-08-18"
+    "stockFetchedAt": "2026-08-18",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "vEoWQ21eIwU"
+    ]
   },
   {
     "id": "wh-frey-ranch-straight-bourbon",
@@ -4555,13 +4642,14 @@
     "country": "Škotska",
     "abv": 54.2,
     "body": 4,
-    "sweetness": 2,
+    "sweetness": 5,
     "flavorTags": [
       "dim",
       "karamela",
       "mineralno",
       "tamno-voce",
-      "overproof"
+      "overproof",
+      "vanilija"
     ],
     "qualityScore": 8,
     "priceEUR": {
@@ -4575,12 +4663,12 @@
       "best": "Kap vode"
     },
     "cigarHint": {
-      "hr": "Uz Glen Scotia Victoriana biraj maduro ili puni Habano — most je pepeo i zemlja, ne citrus.",
-      "en": "With Glen Scotia Victoriana pick maduro or a full Habano — bridge on ash and earth, not citrus."
+      "hr": "Srednje ili laganije tijelo — Cameroon ili kraći Habano; prva trećina često dovoljna.",
+      "en": "Medium or lighter body — Cameroon or a shorter Habano; the first third is often enough."
     },
     "notes": {
-      "hr": "Campbeltown, Škotska u čaši preko Glen Scotia Victoriana: dim, karamela i mineralno i punije tijelo na 54.2 %. Kap vode često otkrije jod ili pepeo. Serviranje: Kap vode.",
-      "en": "Glen Scotia Victoriana keeps a peated character (Campbeltown, Škotska): dim, karamela i mineralno. Body reads fuller body na 54.2 %. Serviranje: Kap vode."
+      "hr": "Glen Scotia Victoriana (54.2 %) — Campbeltown, Škotska: vanilija, vegetalno i voće, punije tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Glen Scotia Victoriana (54.2 %) — Campbeltown, Škotska: vanilija, vegetalno and fruit, fuller body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
     "status": null,
     "priceUrl": null,
@@ -4589,7 +4677,11 @@
       "hr": "E150a boja / chill-filtracija nije deklarirana (EU ne zahtijeva)",
       "en": "E150a colouring / chill filtration undeclared (the EU does not require it)"
     },
-    "additiveSource": "EU pravila: whisky smije samo E150a"
+    "additiveSource": "EU pravila: whisky smije samo E150a",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "cqpfWM67khM"
+    ]
   },
   {
     "id": "wh-glenallachie-12",
@@ -5271,7 +5363,9 @@
     "flavorTags": [
       "karamela",
       "hrast",
-      "zacini"
+      "zacini",
+      "vegetalno",
+      "sol"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -5297,14 +5391,18 @@
       "best": "Kap vode (full proof)"
     },
     "cigarHint": {
-      "hr": "Američki hrast u Green River Full Proof ne voli preblagi Connecticut; robusto ili maduro drži ritam.",
-      "en": "With Green River Full Proof go Habano or a gentle maduro — caramel and oak want warmer smoke."
+      "hr": "Srednje ili laganije tijelo — Cameroon ili kraći Habano; prva trećina često dovoljna.",
+      "en": "Medium or lighter body — Cameroon or a shorter Habano; the first third is often enough."
     },
     "notes": {
-      "hr": "Green River Full Proof (Kentucky, SAD) na ~58.5 %: karamela, hrast i začin u punije tijelo. Owensboro; profil procijenjen.",
-      "en": "Green River Full Proof (Kentucky, USA) at ~58.5%: caramel, oak, spice in fuller body. Owensboro; profile estimated."
+      "hr": "Green River Full Proof (58.5 %) — Kentucky, SAD: vegetalno i slana nota, punije tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Green River Full Proof (58.5 %) — Kentucky, SAD: vegetalno and sol, fuller body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
-    "profileEstimated": true
+    "profileEstimated": true,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "2oZHJaHW6y4"
+    ]
   },
   {
     "id": "wh-green-spot",
@@ -5314,12 +5412,15 @@
     "region": "Irska",
     "country": "Irska",
     "abv": 40,
-    "body": 3,
-    "sweetness": 3,
+    "body": 2,
+    "sweetness": 4,
     "flavorTags": [
       "kremasto",
       "voce",
-      "zacini"
+      "zacini",
+      "vanilija",
+      "hrast",
+      "med"
     ],
     "qualityScore": 7.5,
     "priceEUR": {
@@ -5333,12 +5434,12 @@
       "best": "Cisto"
     },
     "cigarHint": {
-      "hr": "Tijelo Green Spot sjeda uz robusto; izbjegni najteži maduro ako je boca suša. Gutljaj neka prati prvi dim; bočica green drži svoj ritam do kraja večeri.",
-      "en": "With Green Spot the cigar’s first third + first sip reveal the bridge. Keep the glass near the ashtray — green reads clearer in a slower loop."
+      "hr": "Srednje ili laganije tijelo — Cameroon ili kraći Habano; prva trećina često dovoljna.",
+      "en": "Medium or lighter body — Cameroon or a shorter Habano; the first third is often enough."
     },
     "notes": {
-      "hr": "Profil Green Spot: kremastost, voće i začini. To je srednje tijelo iz Irska na 40 %. Serviranje: Cisto.",
-      "en": "In Green Spot, kremastost, voće i začini leads. Region Irska, body medium body na 40 %. Serviranje: Cisto."
+      "hr": "Green Spot (40 %) — Irska: vanilija, hrast i med, laganije tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Green Spot (40 %) — Irska: vanilija, hrast and med, lighter body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
     "status": null,
     "priceUrl": "https://humidor.hr/hr/proizvod/green-spot-070-l/",
@@ -5348,7 +5449,11 @@
       "en": "E150a colouring / chill filtration undeclared (the EU does not require it)"
     },
     "additiveSource": "EU pravila: whisky smije samo E150a",
-    "profileEstimated": false
+    "profileEstimated": false,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "so0h-9Vr3-Y"
+    ]
   },
   {
     "id": "wh-hakushu-12",
@@ -5497,7 +5602,9 @@
     "sweetness": 2,
     "flavorTags": [
       "dim",
-      "med"
+      "med",
+      "suho-voce",
+      "sol"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -5523,15 +5630,19 @@
       "best": "Cisto"
     },
     "cigarHint": {
-      "hr": "Ne forsiraš lagani shade uz Highland Park 12 YO VIKING HONOUR: jod i dim preglase nijansu.",
-      "en": "With Highland Park 12 YO VIKING HONOUR pick maduro or a full Habano — bridge on ash and earth, not citrus."
+      "hr": "Srednje ili laganije tijelo — Cameroon ili kraći Habano; prva trećina često dovoljna.",
+      "en": "Medium or lighter body — Cameroon or a shorter Habano; the first third is often enough."
     },
     "priceUrl": "https://allez.hr/shop/svi-proizvodi/highland-park-12-years-old-viking-honour-single-malt-scotch-whisky-40-vol-07l-u-poklon-kutiji",
     "notes": {
-      "hr": "Kod Highland Park 12 YO VIKING HONOUR dim dolazi prvi — dim i med, srednje tijelo na 40 %. Regija: Orkney, Škotska. Serviranje: Cisto.",
-      "en": "With Highland Park 12 YO VIKING HONOUR, smoke leads — dim i med, medium body na 40 %. Region: Orkney, Škotska. Serviranje: Cisto."
+      "hr": "Highland Park 12 YO VIKING HONOUR (40 %) — Orkney, Škotska: suho voće i slana nota, srednje tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Highland Park 12 YO VIKING HONOUR (40 %) — Orkney, Škotska: dried fruit and sol, medium body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
-    "profileEstimated": true
+    "profileEstimated": true,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "XNF9l7rOYp8"
+    ]
   },
   {
     "id": "wh-highland-park-15-yo-viking-heart-44-vol-0-7lu-poklon-kutiji",
@@ -5542,10 +5653,12 @@
     "country": "Škotska",
     "abv": 44.0,
     "body": 3,
-    "sweetness": 2,
+    "sweetness": 4,
     "flavorTags": [
       "dim",
-      "med"
+      "med",
+      "vanilija",
+      "slatko"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -5571,15 +5684,19 @@
       "best": "Cisto"
     },
     "cigarHint": {
-      "hr": "Peated boca kao Highland Park 15 YO VIKING HEART sjeda uz tamniji pokrov; prva trećina cigare neka bude mirna.",
-      "en": "With Highland Park 15 YO VIKING HEART pick maduro or a full Habano — bridge on ash and earth, not citrus."
+      "hr": "Srednje ili laganije tijelo — Cameroon ili kraći Habano; prva trećina često dovoljna.",
+      "en": "Medium or lighter body — Cameroon or a shorter Habano; the first third is often enough."
     },
     "priceUrl": "https://allez.hr/shop/svi-proizvodi/highland-park-15-years-old-viking-heart-single-malt-scotch-whisky",
     "notes": {
-      "hr": "Highland Park 15 YO VIKING HEART drži peated karakter (Orkney, Škotska): dim i med. Tijelo je srednje na 44 %. Serviranje: Cisto.",
-      "en": "Highland Park 15 YO VIKING HEART, oznaka 15 godina from the peated circle (Orkney, Škotska) na 44 %: dim i med in medium body. Smoke does not want haste. Serviranje: Cisto."
+      "hr": "Highland Park 15 YO VIKING HEART (44 %) — Orkney, Škotska: vanilija i slatko, srednje tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Highland Park 15 YO VIKING HEART (44 %) — Orkney, Škotska: vanilija and slatko, medium body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
-    "profileEstimated": true
+    "profileEstimated": true,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "wJ5TVO1ri28"
+    ]
   },
   {
     "id": "wh-highland-park-17-yo-ice-edition-single-malt-scotch-whisky-53-9-vol-0-7l-u-poklon-kutiji",
@@ -5686,7 +5803,8 @@
     "flavorTags": [
       "dim",
       "hrast",
-      "med"
+      "med",
+      "cvjetno"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -5709,15 +5827,19 @@
       "best": "Cisto"
     },
     "cigarHint": {
-      "hr": "Dimljeni profil od Highland Park 18 YO traži sporiji dim i kraći gutljaj; Connecticut ostaje preblag.",
-      "en": "Do not force a light shade with Highland Park 18 YO: iodine and smoke cover nuance."
+      "hr": "Dim u čaši traži maduro ili puni Habano — most je pepeo i zemlja.",
+      "en": "Smoke in the glass wants maduro or a full Habano — bridge on ash and earth."
     },
     "priceUrl": "https://allez.hr/shop/svi-proizvodi/highland-park-18-years-old-gb-43-vol-07-l",
     "notes": {
-      "hr": "Orkney, Škotska u čaši preko Highland Park 18 YO, oznaka 18 godina: dim, hrast i med i punije tijelo na 43 %. Kap vode često otkrije jod ili pepeo. Serviranje: Cisto.",
-      "en": "Highland Park 18 YO keeps a peated character (Orkney, Škotska): dim, hrast i med. Body reads fuller body na 43 %. Serviranje: Cisto."
+      "hr": "Highland Park 18 YO (43 %) — Orkney, Škotska. Dimljeni profil: cvjetne note; punije tijelo. Čisto ili s kap vode; uz cigaru sporiji ritam gutljaja.",
+      "en": "Highland Park 18 YO (43 %) — Orkney, Škotska. Peated profile: floral notes; fuller body. Neat or with a drop of water; keep sips slow beside a cigar."
     },
-    "profileEstimated": false
+    "profileEstimated": false,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "lX9GrAB0JdI"
+    ]
   },
   {
     "id": "wh-highland-park-18-yo-sky-of-orkney-single-malt-scotch-whisky-46-vol-0-7l-u-poklon-kutiji",
@@ -5732,7 +5854,8 @@
     "flavorTags": [
       "dim",
       "hrast",
-      "med"
+      "med",
+      "cvjetno"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -5755,15 +5878,19 @@
       "best": "Cisto"
     },
     "cigarHint": {
-      "hr": "Ne forsiraš lagani shade uz Highland Park 18 YO SKY OF ORKNEY: jod i dim preglase nijansu.",
-      "en": "The peated profile of Highland Park 18 YO SKY OF ORKNEY wants a slower puff and a smaller sip; Connecticut stays too mild."
+      "hr": "Dim u čaši traži maduro ili puni Habano — most je pepeo i zemlja.",
+      "en": "Smoke in the glass wants maduro or a full Habano — bridge on ash and earth."
     },
     "priceUrl": "https://allez.hr/shop/svi-proizvodi/highland-park-18-years-old-sky-of-orkney-single-malt-scotch-whisky-46-vol-07l-u-poklon-kutiji",
     "notes": {
-      "hr": "Highland Park 18 YO SKY OF ORKNEY, oznaka 18 godina s Islaya/dimljenog kruga (Orkney, Škotska) na 46 %: dim, hrast i med u punije tijelo. Dim ne traži žurbu. Serviranje: Cisto. U katalogu stoji među jačim ocjenama.",
-      "en": "Highland Park 18 YO SKY OF ORKNEY keeps a peated character (Orkney, Škotska): dim, hrast i med. Body reads fuller body na 46 %. Serviranje: Cisto. U katalogu stoji među jačim ocjenama."
+      "hr": "Highland Park 18 YO SKY OF ORKNEY (46 %) — Orkney, Škotska. Dimljeni profil: cvjetne note; punije tijelo. Čisto ili s kap vode; uz cigaru sporiji ritam gutljaja.",
+      "en": "Highland Park 18 YO SKY OF ORKNEY (46 %) — Orkney, Škotska. Peated profile: floral notes; fuller body. Neat or with a drop of water; keep sips slow beside a cigar."
     },
-    "profileEstimated": false
+    "profileEstimated": false,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "lX9GrAB0JdI"
+    ]
   },
   {
     "id": "wh-highland-park-18-yo-viking-pride-single-malt-scotch-whisky-46-vol-0-7l-u-poklon-kutiji",
@@ -5778,7 +5905,8 @@
     "flavorTags": [
       "dim",
       "hrast",
-      "med"
+      "med",
+      "cvjetno"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -5804,15 +5932,19 @@
       "best": "Cisto"
     },
     "cigarHint": {
-      "hr": "Peated boca kao Highland Park 18 YO VIKING PRIDE sjeda uz tamniji pokrov; prva trećina cigare neka bude mirna.",
-      "en": "With Highland Park 18 YO VIKING PRIDE pick maduro or a full Habano — bridge on ash and earth, not citrus."
+      "hr": "Dim u čaši traži maduro ili puni Habano — most je pepeo i zemlja.",
+      "en": "Smoke in the glass wants maduro or a full Habano — bridge on ash and earth."
     },
     "priceUrl": "https://allez.hr/shop/svi-proizvodi/highland-park-18-years-old-viking-pride-single-malt-scotch-whisky-46-vol-07l-in-giftbox",
     "notes": {
-      "hr": "Highland Park 18 YO VIKING PRIDE drži peated karakter (Orkney, Škotska): dim, hrast i med. Tijelo je punije na 46 %. Serviranje: Cisto. Brojke kvalitete je guraju iznad prosjeka police.",
-      "en": "With Highland Park 18 YO VIKING PRIDE, smoke leads — dim, hrast i med, fuller body na 46 %. Region: Orkney, Škotska. Serviranje: Cisto. Brojke kvalitete je guraju iznad prosjeka police."
+      "hr": "Highland Park 18 YO VIKING PRIDE (46 %) — Orkney, Škotska. Dimljeni profil: cvjetne note; punije tijelo. Čisto ili s kap vode; uz cigaru sporiji ritam gutljaja.",
+      "en": "Highland Park 18 YO VIKING PRIDE (46 %) — Orkney, Škotska. Peated profile: floral notes; fuller body. Neat or with a drop of water; keep sips slow beside a cigar."
     },
-    "profileEstimated": false
+    "profileEstimated": false,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "lX9GrAB0JdI"
+    ]
   },
   {
     "id": "wh-highland-park-21-yo-release-2020-46-vol-0-7l-u-poklon-kutiji",
@@ -6159,7 +6291,9 @@
     "flavorTags": [
       "karamela",
       "vanilija",
-      "zacini"
+      "zacini",
+      "suho-voce",
+      "sol"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -6185,17 +6319,21 @@
       "best": "Cisto ili velika kocka leda"
     },
     "cigarHint": {
-      "hr": "Uz Jack Daniel's izbjegni vrlo laganu panatelu — boca je teža od nje. Drži čašu bliže pepeljari — jack se bolje čita u sporijem krugu.",
-      "en": "The sweetness of Jack Daniel's bridges to a darker wrapper; let the sip follow the second puff."
+      "hr": "Srednje ili laganije tijelo — Cameroon ili kraći Habano; prva trećina često dovoljna.",
+      "en": "Medium or lighter body — Cameroon or a shorter Habano; the first third is often enough."
     },
     "priceUrl": "https://ecuga.com/proizvod/jack-daniels-no-7",
     "notes": {
-      "hr": "Jack Daniel's je slatko-hrastov američki profil: karamela, vanilija i začini, punije tijelo. Serviranje: Cisto ili velika kocka leda.",
-      "en": "Jack Daniel's is a sweet-oak American profile: karamela, vanilija i začini, fuller body. Serviranje: Cisto ili velika kocka leda."
+      "hr": "Jack Daniel's — Tennessee, SAD: suho voće i slana nota, punije tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Jack Daniel's — Tennessee, SAD: dried fruit and sol, fuller body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
     "profileEstimated": false,
     "inStock": false,
-    "stockFetchedAt": "2026-08-18"
+    "stockFetchedAt": "2026-08-18",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "NO04b7-3wc0"
+    ]
   },
   {
     "id": "wh-jack-daniel-s-american-single-malt",
@@ -6886,17 +7024,21 @@
       "best": "Cisto"
     },
     "cigarHint": {
-      "hr": "Uz Jameson Black Barrel srednji Habano ili Cameroon — hrast, karamela i vanilija traži čist most.",
-      "en": "With Jameson Black Barrel the cigar’s first third + first sip reveal the bridge."
+      "hr": "Srednje ili laganije tijelo — Cameroon ili kraći Habano; prva trećina često dovoljna.",
+      "en": "Medium or lighter body — Cameroon or a shorter Habano; the first third is often enough."
     },
     "priceUrl": "https://ecuga.com/proizvod/jameson-black-barrel",
     "notes": {
-      "hr": "Irska preko Jameson Black Barrel: hrast, karamela i vanilija i srednje tijelo. Ne forsiraš overproof ritam. Serviranje: Cisto.",
-      "en": "Profile of Jameson Black Barrel: hrast, karamela i vanilija. That is medium body from Irska. Serviranje: Cisto."
+      "hr": "Jameson Black Barrel — Irska: vanilija i hrast, srednje tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Jameson Black Barrel — Irska: vanilija and hrast, medium body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
     "profileEstimated": false,
     "inStock": true,
-    "stockFetchedAt": "2026-08-18"
+    "stockFetchedAt": "2026-08-18",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "2VzKkt4Dag4"
+    ]
   },
   {
     "id": "wh-jameson-caskmates-stout",
@@ -6957,7 +7099,9 @@
     "flavorTags": [
       "kremasto",
       "voce",
-      "zacini"
+      "zacini",
+      "vanilija",
+      "hrast"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -6978,17 +7122,21 @@
       "best": "Cisto / highball"
     },
     "cigarHint": {
-      "hr": "Tijelo Jameson Crested sjeda uz robusto; izbjegni najteži maduro ako je boca suša.",
-      "en": "With Jameson Crested a medium Habano or Cameroon — kremastost, voće i začini wants a clean bridge."
+      "hr": "Srednje ili laganije tijelo — Cameroon ili kraći Habano; prva trećina često dovoljna.",
+      "en": "Medium or lighter body — Cameroon or a shorter Habano; the first third is often enough."
     },
     "priceUrl": "https://ecuga.com/proizvod/jameson-crested",
     "notes": {
-      "hr": "Profil Jameson Crested: kremastost, voće i začini. To je srednje tijelo iz Irska na 40 %. Serviranje: Cisto / highball.",
-      "en": "Jameson Crested holds kremastost, voće i začini without peated noise — Irska na 40 %, medium body. Serviranje: Cisto / highball."
+      "hr": "Jameson Crested (40 %) — Irska: vanilija i hrast, srednje tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Jameson Crested (40 %) — Irska: vanilija and hrast, medium body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
     "profileEstimated": false,
     "inStock": true,
-    "stockFetchedAt": "2026-08-18"
+    "stockFetchedAt": "2026-08-18",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "ujKw4fYlqos"
+    ]
   },
   {
     "id": "wh-jameson-original",
@@ -7073,17 +7221,21 @@
       "best": "Cisto"
     },
     "cigarHint": {
-      "hr": "Uz Johnnie Walker Black Label biraj maduro ili puni Habano — most je pepeo i zemlja, ne citrus.",
-      "en": "With Johnnie Walker Black Label pick maduro or a full Habano — bridge on ash and earth, not citrus."
+      "hr": "Dim u čaši traži maduro ili puni Habano — most je pepeo i zemlja.",
+      "en": "Smoke in the glass wants maduro or a full Habano — bridge on ash and earth."
     },
     "priceUrl": "https://ecuga.com/proizvod/johnnie-walker-black-label",
     "notes": {
-      "hr": "Škotska (blend) u čaši preko Johnnie Walker Black Label: dim, karamela i suho voće i srednje tijelo. Kap vode često otkrije jod ili pepeo. Serviranje: Cisto.",
-      "en": "Škotska (blend) in the glass via Johnnie Walker Black Label: dim, karamela i suho voće and medium body. A drop of water often opens iodine or ash. Serviranje: Cisto."
+      "hr": "Johnnie Walker Black Label — Škotska (blend): suho voće i dim, srednje tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Johnnie Walker Black Label — Škotska (blend): dried fruit and dim, medium body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
     "profileEstimated": false,
     "inStock": false,
-    "stockFetchedAt": "2026-08-18"
+    "stockFetchedAt": "2026-08-18",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "EawDBAWWpIs"
+    ]
   },
   {
     "id": "wh-johnnie-walker-black-label-12-yo-sherry-finish-40-vol-0-7l-u-poklon-kutiji",
@@ -7094,11 +7246,14 @@
     "country": "Škotska",
     "abv": 40.0,
     "body": 3,
-    "sweetness": 2,
+    "sweetness": 4,
     "flavorTags": [
       "dim",
       "karamela",
-      "suho-voce"
+      "suho-voce",
+      "vanilija",
+      "zacini",
+      "med"
     ],
     "additiveStatus": "moderate",
     "additiveDetail": {
@@ -7124,15 +7279,19 @@
       "best": "Kap vode (cask strength)"
     },
     "cigarHint": {
-      "hr": "Dimljeni profil od Johnnie Walker BLACK LABEL 12 YO SHERRY FINISH traži sporiji dim i kraći gutljaj; Connecticut ostaje preblag.",
-      "en": "The peated profile of Johnnie Walker BLACK LABEL 12 YO SHERRY FINISH wants a slower puff and a smaller sip; Connecticut stays too mild."
+      "hr": "Srednje ili laganije tijelo — Cameroon ili kraći Habano; prva trećina često dovoljna.",
+      "en": "Medium or lighter body — Cameroon or a shorter Habano; the first third is often enough."
     },
     "priceUrl": "https://allez.hr/shop/svi-proizvodi/johnnie-walker-black-label-12-yo-sherry-finish-40-vol-07l-u-poklon-kutiji",
     "notes": {
-      "hr": "Johnnie Walker BLACK LABEL 12 YO SHERRY FINISH drži peated karakter (Škotska (blend)): dim, karamela i suho voće. Tijelo je srednje na 40 %, sherry finish. Serviranje: Kap vode (cask strength).",
-      "en": "Škotska (blend) in the glass via Johnnie Walker BLACK LABEL 12 YO SHERRY FINISH, oznaka 12 godina: dim, karamela i suho voće and medium body na 40 %. A drop of water often opens iodine or ash. Serviranje: Kap vode (cask strength)."
+      "hr": "Johnnie Walker BLACK LABEL 12 YO SHERRY FINISH (40 %) — Škotska (blend): vanilija, suho voće i začini, srednje tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Johnnie Walker BLACK LABEL 12 YO SHERRY FINISH (40 %) — Škotska (blend): vanilija, dried fruit and spice, medium body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
-    "profileEstimated": false
+    "profileEstimated": false,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "xtMgyyWDsDM"
+    ]
   },
   {
     "id": "wh-johnnie-walker-black-label-sherry-finish",
@@ -7173,17 +7332,21 @@
       "best": "Cisto"
     },
     "cigarHint": {
-      "hr": "Dimljeni profil od Johnnie Walker Black Label Sherry Finish traži sporiji dim i kraći gutljaj; Connecticut ostaje preblag.",
-      "en": "A peated bottle like Johnnie Walker Black Label Sherry Finish sits with a darker wrapper; keep the cigar’s first third calm."
+      "hr": "Dim u čaši traži maduro ili puni Habano — most je pepeo i zemlja.",
+      "en": "Smoke in the glass wants maduro or a full Habano — bridge on ash and earth."
     },
     "priceUrl": "https://ecuga.com/proizvod/johnnie-walker-black-label-sherry-finish",
     "notes": {
-      "hr": "Johnnie Walker Black Label Sherry Finish s Islaya/dimljenog kruga (Škotska (blend)): dim, karamela i suho voće u srednje tijelo, sherry finish. Dim ne traži žurbu. Serviranje: Cisto.",
-      "en": "Škotska (blend) in the glass via Johnnie Walker Black Label Sherry Finish: dim, karamela i suho voće and medium body. A drop of water often opens iodine or ash. Serviranje: Cisto."
+      "hr": "Johnnie Walker Black Label Sherry Finish — Škotska (blend): suho voće i dim, srednje tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Johnnie Walker Black Label Sherry Finish — Škotska (blend): dried fruit and dim, medium body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
     "profileEstimated": false,
     "inStock": false,
-    "stockFetchedAt": "2026-08-18"
+    "stockFetchedAt": "2026-08-18",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "EawDBAWWpIs"
+    ]
   },
   {
     "id": "wh-johnnie-walker-black-label-triple-cask",
@@ -7198,7 +7361,8 @@
     "flavorTags": [
       "hrast",
       "karamela",
-      "suho-voce"
+      "suho-voce",
+      "dim"
     ],
     "additiveStatus": "moderate",
     "additiveDetail": {
@@ -7224,17 +7388,21 @@
       "best": "Cisto"
     },
     "cigarHint": {
-      "hr": "Uz Johnnie Walker Black Label Triple Cask prva trećina cigare + prvi gutljaj otkrivaju most.",
-      "en": "The body of Johnnie Walker Black Label Triple Cask sits with a robusto; skip the heaviest maduro if the bottle is drier."
+      "hr": "Dim u čaši traži maduro ili puni Habano — most je pepeo i zemlja.",
+      "en": "Smoke in the glass wants maduro or a full Habano — bridge on ash and earth."
     },
     "priceUrl": "https://ecuga.com/proizvod/johnnie-walker-black-label-triple-cask",
     "notes": {
-      "hr": "Johnnie Walker Black Label Triple Cask drži hrast, karamela i suho voće bez peated buke — Škotska (blend), srednje tijelo. Serviranje: Cisto.",
-      "en": "Johnnie Walker Black Label Triple Cask (Škotska (blend)): hrast, karamela i suho voće with medium body. Serviranje: Cisto."
+      "hr": "Johnnie Walker Black Label Triple Cask — Škotska (blend): suho voće i dim, srednje tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Johnnie Walker Black Label Triple Cask — Škotska (blend): dried fruit and dim, medium body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
     "profileEstimated": false,
     "inStock": true,
-    "stockFetchedAt": "2026-08-18"
+    "stockFetchedAt": "2026-08-18",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "EawDBAWWpIs"
+    ]
   },
   {
     "id": "wh-johnnie-walker-black-ruby",
@@ -7249,7 +7417,8 @@
     "flavorTags": [
       "karamela",
       "suho-voce",
-      "tamno-voce"
+      "tamno-voce",
+      "dim"
     ],
     "additiveStatus": "moderate",
     "additiveDetail": {
@@ -7275,17 +7444,21 @@
       "best": "Cisto"
     },
     "cigarHint": {
-      "hr": "Uz Johnnie Walker Black Ruby prva trećina cigare + prvi gutljaj otkrivaju most. Drži čašu bliže pepeljari — johnnie se bolje čita u sporijem krugu.",
-      "en": "The body of Johnnie Walker Black Ruby sits with a robusto; skip the heaviest maduro if the bottle is drier."
+      "hr": "Dim u čaši traži maduro ili puni Habano — most je pepeo i zemlja.",
+      "en": "Smoke in the glass wants maduro or a full Habano — bridge on ash and earth."
     },
     "priceUrl": "https://ecuga.com/proizvod/johnnie-walker-black-ruby",
     "notes": {
-      "hr": "Johnnie Walker Black Ruby drži karamela, suho voće i tamno voće bez peated buke — Škotska (blend), srednje tijelo. Serviranje: Cisto.",
-      "en": "In Johnnie Walker Black Ruby, karamela, suho voće i tamno voće leads. Region Škotska (blend), body medium body. Serviranje: Cisto."
+      "hr": "Johnnie Walker Black Ruby — Škotska (blend): suho voće i dim, srednje tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Johnnie Walker Black Ruby — Škotska (blend): dried fruit and dim, medium body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
     "profileEstimated": false,
     "inStock": true,
-    "stockFetchedAt": "2026-08-18"
+    "stockFetchedAt": "2026-08-18",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "EawDBAWWpIs"
+    ]
   },
   {
     "id": "wh-johnnie-walker-blue-label-200th-anniversary-keep-walking-limited-edition-2020-40-vol-0-7l-u-poklon-kutiji",
@@ -7400,7 +7573,8 @@
     "flavorTags": [
       "cvjetno",
       "suho-voce",
-      "vanilija"
+      "vanilija",
+      "dim"
     ],
     "additiveStatus": "moderate",
     "additiveDetail": {
@@ -7426,15 +7600,19 @@
       "best": "Cisto / mala kocka leda"
     },
     "cigarHint": {
-      "hr": "Uz Johnnie Walker Blue Label City Edition Berlin prva trećina cigare + prvi gutljaj otkrivaju most.",
-      "en": "Do not pair Johnnie Walker Blue Label City Edition Berlin with spiced rum the same evening — the profile muddies."
+      "hr": "Dim u čaši traži maduro ili puni Habano — most je pepeo i zemlja.",
+      "en": "Smoke in the glass wants maduro or a full Habano — bridge on ash and earth."
     },
     "priceUrl": "https://allez.hr/shop/svi-proizvodi/johnnie-walker-blue-label-city-edition-berlin-blended-scotch-whisky-40-vol-07l-u-poklon-kutiji",
     "notes": {
-      "hr": "Profil Johnnie Walker Blue Label City Edition Berlin: cvijet, suho voće i vanilija. To je punije tijelo iz Škotska (blend) na 40 %. Serviranje: Cisto / mala kocka leda.",
-      "en": "Johnnie Walker Blue Label City Edition Berlin (Škotska (blend)) na 40 %: cvijet, suho voće i vanilija with fuller body. Serviranje: Cisto / mala kocka leda."
+      "hr": "Johnnie Walker Blue Label City Edition Berlin (40 %) — Škotska (blend): suho voće i dim, punije tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Johnnie Walker Blue Label City Edition Berlin (40 %) — Škotska (blend): dried fruit and dim, fuller body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
-    "profileEstimated": false
+    "profileEstimated": false,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "EawDBAWWpIs"
+    ]
   },
   {
     "id": "wh-johnnie-walker-blue-label-city-edition-london-blended-scotch-whisky-40-vol-0-7l-u-poklon-kutiji",
@@ -7449,7 +7627,8 @@
     "flavorTags": [
       "cvjetno",
       "suho-voce",
-      "vanilija"
+      "vanilija",
+      "dim"
     ],
     "additiveStatus": "moderate",
     "additiveDetail": {
@@ -7475,15 +7654,19 @@
       "best": "Cisto / mala kocka leda"
     },
     "cigarHint": {
-      "hr": "Uz Johnnie Walker Blue Label City Edition London biraj format koji traje koliko i gutljaj, ne duže.",
-      "en": "Do not pair Johnnie Walker Blue Label City Edition London with spiced rum the same evening — the profile muddies."
+      "hr": "Dim u čaši traži maduro ili puni Habano — most je pepeo i zemlja.",
+      "en": "Smoke in the glass wants maduro or a full Habano — bridge on ash and earth."
     },
     "priceUrl": "https://allez.hr/shop/svi-proizvodi/johnnie-walker-blue-label-city-edition-london-blended-scotch-whisky-40-vol-07l-u-poklon-kutiji",
     "notes": {
-      "hr": "U Johnnie Walker Blue Label City Edition London vodi cvijet, suho voće i vanilija. Regija Škotska (blend), tijelo punije na 40 %. Serviranje: Cisto / mala kocka leda.",
-      "en": "Škotska (blend) via Johnnie Walker Blue Label City Edition London: cvijet, suho voće i vanilija and fuller body na 40 %. Do not force an overproof pace. Serviranje: Cisto / mala kocka leda."
+      "hr": "Johnnie Walker Blue Label City Edition London (40 %) — Škotska (blend): suho voće i dim, punije tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Johnnie Walker Blue Label City Edition London (40 %) — Škotska (blend): dried fruit and dim, fuller body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
-    "profileEstimated": false
+    "profileEstimated": false,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "EawDBAWWpIs"
+    ]
   },
   {
     "id": "wh-johnnie-walker-blue-label-city-edition-mars-blended-scotch-whisky-40-vol-0-7l-u-poklon-kutiji",
@@ -7498,7 +7681,8 @@
     "flavorTags": [
       "cvjetno",
       "suho-voce",
-      "vanilija"
+      "vanilija",
+      "dim"
     ],
     "additiveStatus": "moderate",
     "additiveDetail": {
@@ -7524,15 +7708,19 @@
       "best": "Cisto / mala kocka leda"
     },
     "cigarHint": {
-      "hr": "Uz Johnnie Walker Blue Label City Edition Mars srednji Habano ili Cameroon — cvijet, suho voće i vanilija traži čist most.",
-      "en": "With Johnnie Walker Blue Label City Edition Mars choose a format that lasts as long as the sip, not longer."
+      "hr": "Dim u čaši traži maduro ili puni Habano — most je pepeo i zemlja.",
+      "en": "Smoke in the glass wants maduro or a full Habano — bridge on ash and earth."
     },
     "priceUrl": "https://allez.hr/shop/svi-proizvodi/johnnie-walker-blue-label-city-edition-mars-blended-scotch-whisky-40-vol-07l-u-poklon-kutiji",
     "notes": {
-      "hr": "Johnnie Walker Blue Label City Edition Mars drži cvijet, suho voće i vanilija bez peated buke — Škotska (blend) na 40 %, punije tijelo. Serviranje: Cisto / mala kocka leda.",
-      "en": "Profile of Johnnie Walker Blue Label City Edition Mars: cvijet, suho voće i vanilija. That is fuller body from Škotska (blend) na 40 %. Serviranje: Cisto / mala kocka leda."
+      "hr": "Johnnie Walker Blue Label City Edition Mars (40 %) — Škotska (blend): suho voće i dim, punije tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Johnnie Walker Blue Label City Edition Mars (40 %) — Škotska (blend): dried fruit and dim, fuller body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
-    "profileEstimated": false
+    "profileEstimated": false,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "EawDBAWWpIs"
+    ]
   },
   {
     "id": "wh-johnnie-walker-blue-label-elusive-umami",
@@ -7573,17 +7761,21 @@
       "best": "Cisto"
     },
     "cigarHint": {
-      "hr": "Peated boca kao Johnnie Walker Blue Label Elusive Umami sjeda uz tamniji pokrov; prva trećina cigare neka bude mirna.",
-      "en": "Do not force a light shade with Johnnie Walker Blue Label Elusive Umami: iodine and smoke cover nuance."
+      "hr": "Dim u čaši traži maduro ili puni Habano — most je pepeo i zemlja.",
+      "en": "Smoke in the glass wants maduro or a full Habano — bridge on ash and earth."
     },
     "priceUrl": "https://ecuga.com/proizvod/johnnie-walker-blue-label-elusive-umami",
     "notes": {
-      "hr": "Johnnie Walker Blue Label Elusive Umami s Islaya/dimljenog kruga (Škotska (blend)): dim, suho voće i umami u srednje tijelo. Dim ne traži žurbu. Serviranje: Cisto.",
-      "en": "With Johnnie Walker Blue Label Elusive Umami, smoke leads — dim, suho voće i umami, medium body. Region: Škotska (blend). Serviranje: Cisto."
+      "hr": "Johnnie Walker Blue Label Elusive Umami — Škotska (blend): suho voće i dim, srednje tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Johnnie Walker Blue Label Elusive Umami — Škotska (blend): dried fruit and dim, medium body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
     "profileEstimated": false,
     "inStock": true,
-    "stockFetchedAt": "2026-08-18"
+    "stockFetchedAt": "2026-08-18",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "EawDBAWWpIs"
+    ]
   },
   {
     "id": "wh-johnnie-walker-blue-label-elusive-umami-blended-scotch-whisky-limited-release-43-vol-0-7l",
@@ -7624,15 +7816,19 @@
       "best": "Cisto"
     },
     "cigarHint": {
-      "hr": "Peated boca kao Johnnie Walker Blue Label ELUSIVE UMAMI Limited Release sjeda uz tamniji pokrov; prva trećina cigare neka bude mirna.",
-      "en": "A peated bottle like Johnnie Walker Blue Label ELUSIVE UMAMI Limited Release sits with a darker wrapper; keep the cigar’s first third calm."
+      "hr": "Dim u čaši traži maduro ili puni Habano — most je pepeo i zemlja.",
+      "en": "Smoke in the glass wants maduro or a full Habano — bridge on ash and earth."
     },
     "priceUrl": "https://allez.hr/shop/svi-proizvodi/johnnie-walker-blue-label-elusive-umami-blended-scotch-whisky-limited-release-43-vol-07l",
     "notes": {
-      "hr": "Škotska (blend) u čaši preko Johnnie Walker Blue Label ELUSIVE UMAMI Limited Release: dim, suho voće i umami i srednje tijelo na 43 %. Kap vode često otkrije jod ili pepeo. Serviranje: Cisto.",
-      "en": "With Johnnie Walker Blue Label ELUSIVE UMAMI Limited Release, smoke leads — dim, suho voće i umami, medium body na 43 %. Region: Škotska (blend). Serviranje: Cisto."
+      "hr": "Johnnie Walker Blue Label ELUSIVE UMAMI Limited Release (43 %) — Škotska (blend): suho voće i dim, srednje tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Johnnie Walker Blue Label ELUSIVE UMAMI Limited Release (43 %) — Škotska (blend): dried fruit and dim, medium body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
-    "profileEstimated": false
+    "profileEstimated": false,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "EawDBAWWpIs"
+    ]
   },
   {
     "id": "wh-johnnie-walker-blue-label-ghost-amp-rare-glenury-royal-43-8-vol-0-7l-u-poklon-kutiji",
@@ -7673,15 +7869,19 @@
       "best": "Cisto"
     },
     "cigarHint": {
-      "hr": "Peated boca kao Johnnie Walker Blue Label Ghost & Rare GLENURY ROYAL sjeda uz tamniji pokrov; prva trećina cigare neka bude mirna.",
-      "en": "A peated bottle like Johnnie Walker Blue Label Ghost & Rare GLENURY ROYAL sits with a darker wrapper; keep the cigar’s first third calm."
+      "hr": "Dim u čaši traži maduro ili puni Habano — most je pepeo i zemlja.",
+      "en": "Smoke in the glass wants maduro or a full Habano — bridge on ash and earth."
     },
     "priceUrl": "https://allez.hr/shop/svi-proizvodi/johnnie-walker-blue-label-ghost-rare-glenury-royal-438-vol-07l-u-poklon-kutiji",
     "notes": {
-      "hr": "Johnnie Walker Blue Label Ghost & Rare GLENURY ROYAL drži peated karakter (Škotska (blend)): dim, med i suho voće. Tijelo je punije na 43.8 %. Serviranje: Cisto.",
-      "en": "With Johnnie Walker Blue Label Ghost & Rare GLENURY ROYAL, smoke leads — dim, med i suho voće, fuller body na 43.8 %. Region: Škotska (blend). Serviranje: Cisto."
+      "hr": "Johnnie Walker Blue Label Ghost & Rare GLENURY ROYAL (43.8 %) — Škotska (blend): suho voće i dim, punije tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Johnnie Walker Blue Label Ghost & Rare GLENURY ROYAL (43.8 %) — Škotska (blend): dried fruit and dim, fuller body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
-    "profileEstimated": false
+    "profileEstimated": false,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "EawDBAWWpIs"
+    ]
   },
   {
     "id": "wh-johnnie-walker-blue-label-ghost-amp-rare-special-blend-port-dundas-2022-43-8-vol-0-7l-u-poklon-kutiji",
@@ -7771,17 +7971,21 @@
       "best": "Cisto"
     },
     "cigarHint": {
-      "hr": "Uz Johnnie Walker Blue Label Ghost And Rare biraj maduro ili puni Habano — most je pepeo i zemlja, ne citrus.",
-      "en": "With Johnnie Walker Blue Label Ghost And Rare pick maduro or a full Habano — bridge on ash and earth, not citrus."
+      "hr": "Dim u čaši traži maduro ili puni Habano — most je pepeo i zemlja.",
+      "en": "Smoke in the glass wants maduro or a full Habano — bridge on ash and earth."
     },
     "priceUrl": "https://ecuga.com/proizvod/johnnie-walker-blue-label-ghost-and-rare",
     "notes": {
-      "hr": "Johnnie Walker Blue Label Ghost And Rare s Islaya/dimljenog kruga (Škotska (blend)): dim, med i suho voće u punije tijelo. Dim ne traži žurbu. Serviranje: Cisto.",
-      "en": "Škotska (blend) in the glass via Johnnie Walker Blue Label Ghost And Rare: dim, med i suho voće and fuller body. A drop of water often opens iodine or ash. Serviranje: Cisto."
+      "hr": "Johnnie Walker Blue Label Ghost And Rare — Škotska (blend): suho voće i dim, punije tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Johnnie Walker Blue Label Ghost And Rare — Škotska (blend): dried fruit and dim, fuller body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
     "profileEstimated": false,
     "inStock": true,
-    "stockFetchedAt": "2026-08-18"
+    "stockFetchedAt": "2026-08-18",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "EawDBAWWpIs"
+    ]
   },
   {
     "id": "wh-johnnie-walker-blue-label-icons-2-0-limited-edition-design-40-vol-0-7l-u-poklon-kutiji",
@@ -7796,7 +8000,8 @@
     "flavorTags": [
       "cvjetno",
       "suho-voce",
-      "vanilija"
+      "vanilija",
+      "dim"
     ],
     "additiveStatus": "moderate",
     "additiveDetail": {
@@ -7822,15 +8027,19 @@
       "best": "Cisto"
     },
     "cigarHint": {
-      "hr": "Uz Johnnie Walker Blue Label ICONS 2.0 Limited Edition Design prva trećina cigare + prvi gutljaj otkrivaju most.",
-      "en": "With Johnnie Walker Blue Label ICONS 2.0 Limited Edition Design the cigar’s first third + first sip reveal the bridge."
+      "hr": "Dim u čaši traži maduro ili puni Habano — most je pepeo i zemlja.",
+      "en": "Smoke in the glass wants maduro or a full Habano — bridge on ash and earth."
     },
     "priceUrl": "https://allez.hr/shop/svi-proizvodi/johnnie-walker-blue-label-icons-20-limited-edition-design-40-vol-07l-u-poklon-kutiji",
     "notes": {
-      "hr": "U Johnnie Walker Blue Label ICONS 2.0 Limited Edition Design vodi cvijet, suho voće i vanilija. Regija Škotska (blend), tijelo punije na 40 %. Serviranje: Cisto.",
-      "en": "Johnnie Walker Blue Label ICONS 2.0 Limited Edition Design (Škotska (blend)) na 40 %: cvijet, suho voće i vanilija with fuller body. Serviranje: Cisto."
+      "hr": "Johnnie Walker Blue Label ICONS 2.0 Limited Edition Design (40 %) — Škotska (blend): suho voće i dim, punije tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Johnnie Walker Blue Label ICONS 2.0 Limited Edition Design (40 %) — Škotska (blend): dried fruit and dim, fuller body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
-    "profileEstimated": false
+    "profileEstimated": false,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "EawDBAWWpIs"
+    ]
   },
   {
     "id": "wh-johnnie-walker-blue-label-james-jean-year-of-the-wood-dragon-2024-40-vol-0-7l-u-poklon-kutiji",
@@ -7920,15 +8129,19 @@
       "best": "Cisto / kap vode (otvara dim)"
     },
     "cigarHint": {
-      "hr": "Ne forsiraš lagani shade uz Johnnie Walker Blue Label The Casks Edition Special Release: jod i dim preglase nijansu.",
-      "en": "The peated profile of Johnnie Walker Blue Label The Casks Edition Special Release wants a slower puff and a smaller sip; Connecticut stays too mild."
+      "hr": "Dim u čaši traži maduro ili puni Habano — most je pepeo i zemlja.",
+      "en": "Smoke in the glass wants maduro or a full Habano — bridge on ash and earth."
     },
     "priceUrl": "https://allez.hr/shop/svi-proizvodi/johnnie-walker-blue-label-the-casks-edition-special-release-558-vol-1l-u-poklon-kutiji",
     "notes": {
-      "hr": "Johnnie Walker Blue Label The Casks Edition Special Release s Islaya/dimljenog kruga (Škotska (blend)) na 55.8 %: dim, hrast i suho voće u punije tijelo. Dim ne traži žurbu. Serviranje: Cisto / kap vode (otvara dim).",
-      "en": "Škotska (blend) in the glass via Johnnie Walker Blue Label The Casks Edition Special Release: dim, hrast i suho voće and fuller body na 55.8 %. A drop of water often opens iodine or ash. Serviranje: Cisto / kap vode (otvara dim)."
+      "hr": "Johnnie Walker Blue Label The Casks Edition Special Release (55.8 %) — Škotska (blend): suho voće i dim, punije tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Johnnie Walker Blue Label The Casks Edition Special Release (55.8 %) — Škotska (blend): dried fruit and dim, fuller body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
-    "profileEstimated": false
+    "profileEstimated": false,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "EawDBAWWpIs"
+    ]
   },
   {
     "id": "wh-johnnie-walker-blue-label-year-of-the-rabbit-2022-40-vol-0-7l-u-poklon-kutiji",
@@ -8041,7 +8254,8 @@
     "flavorTags": [
       "dim",
       "papar",
-      "zacini"
+      "zacini",
+      "suho-voce"
     ],
     "additiveStatus": "moderate",
     "additiveDetail": {
@@ -8067,15 +8281,19 @@
       "best": "Cisto"
     },
     "cigarHint": {
-      "hr": "Peated boca kao Johnnie Walker DOUBLE BLACK sjeda uz tamniji pokrov; prva trećina cigare neka bude mirna.",
-      "en": "A peated bottle like Johnnie Walker DOUBLE BLACK sits with a darker wrapper; keep the cigar’s first third calm."
+      "hr": "Dim u čaši traži maduro ili puni Habano — most je pepeo i zemlja.",
+      "en": "Smoke in the glass wants maduro or a full Habano — bridge on ash and earth."
     },
     "priceUrl": "https://allez.hr/shop/svi-proizvodi/johnnie-walker-double-black-blended-scotch-whisky-40-vol-07l-u-poklon-kutiji",
     "notes": {
-      "hr": "Kod Johnnie Walker DOUBLE BLACK dim dolazi prvi — dim, papar i začini, punije tijelo na 40 %. Regija: Škotska (blend). Serviranje: Cisto.",
-      "en": "Johnnie Walker DOUBLE BLACK from the peated circle (Škotska (blend)) na 40 %: dim, papar i začini in fuller body. Smoke does not want haste. Serviranje: Cisto."
+      "hr": "Johnnie Walker DOUBLE BLACK (40 %) — Škotska (blend): suho voće i dim, punije tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Johnnie Walker DOUBLE BLACK (40 %) — Škotska (blend): dried fruit and dim, fuller body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
-    "profileEstimated": false
+    "profileEstimated": false,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "EawDBAWWpIs"
+    ]
   },
   {
     "id": "wh-johnnie-walker-double-black-label",
@@ -8090,7 +8308,8 @@
     "flavorTags": [
       "dim",
       "papar",
-      "zacini"
+      "zacini",
+      "suho-voce"
     ],
     "additiveStatus": "moderate",
     "additiveDetail": {
@@ -8116,17 +8335,21 @@
       "best": "Cisto"
     },
     "cigarHint": {
-      "hr": "Dimljeni profil od Johnnie Walker Double Black Label traži sporiji dim i kraći gutljaj; Connecticut ostaje preblag.",
-      "en": "With Johnnie Walker Double Black Label pick maduro or a full Habano — bridge on ash and earth, not citrus."
+      "hr": "Dim u čaši traži maduro ili puni Habano — most je pepeo i zemlja.",
+      "en": "Smoke in the glass wants maduro or a full Habano — bridge on ash and earth."
     },
     "priceUrl": "https://ecuga.com/proizvod/johnnie-walker-double-black-label",
     "notes": {
-      "hr": "Johnnie Walker Double Black Label drži peated karakter (Škotska (blend)): dim, papar i začini. Tijelo je punije. Serviranje: Cisto.",
-      "en": "Johnnie Walker Double Black Label keeps a peated character (Škotska (blend)): dim, papar i začini. Body reads fuller body. Serviranje: Cisto."
+      "hr": "Johnnie Walker Double Black Label — Škotska (blend): suho voće i dim, punije tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Johnnie Walker Double Black Label — Škotska (blend): dried fruit and dim, fuller body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
     "profileEstimated": false,
     "inStock": true,
-    "stockFetchedAt": "2026-08-18"
+    "stockFetchedAt": "2026-08-18",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "EawDBAWWpIs"
+    ]
   },
   {
     "id": "wh-johnnie-walker-gold-label-reserve-40-vol-0-7l-u-poklon-kutiji",
@@ -8141,7 +8364,9 @@
     "flavorTags": [
       "cvjetno",
       "karamela",
-      "med"
+      "med",
+      "suho-voce",
+      "dim"
     ],
     "additiveStatus": "moderate",
     "additiveDetail": {
@@ -8167,17 +8392,21 @@
       "best": "Cisto"
     },
     "cigarHint": {
-      "hr": "Uz Johnnie Walker GOLD LABEL Reserve biraj format koji traje koliko i gutljaj, ne duže.",
-      "en": "The body of Johnnie Walker GOLD LABEL Reserve sits with a robusto; skip the heaviest maduro if the bottle is drier."
+      "hr": "Dim u čaši traži maduro ili puni Habano — most je pepeo i zemlja.",
+      "en": "Smoke in the glass wants maduro or a full Habano — bridge on ash and earth."
     },
     "priceUrl": "https://ecuga.com/proizvod/johnnie-walker-gold-label-reserve",
     "notes": {
-      "hr": "U Johnnie Walker GOLD LABEL Reserve vodi cvijet, karamela i med. Regija Škotska (blend), tijelo srednje na 40 %. Serviranje: Cisto.",
-      "en": "Johnnie Walker GOLD LABEL Reserve (Škotska (blend)) na 40 %: cvijet, karamela i med with medium body. Serviranje: Cisto."
+      "hr": "Johnnie Walker GOLD LABEL Reserve (40 %) — Škotska (blend): suho voće i dim, srednje tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Johnnie Walker GOLD LABEL Reserve (40 %) — Škotska (blend): dried fruit and dim, medium body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
     "profileEstimated": false,
     "inStock": true,
-    "stockFetchedAt": "2026-08-18"
+    "stockFetchedAt": "2026-08-18",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "EawDBAWWpIs"
+    ]
   },
   {
     "id": "wh-johnnie-walker-green-label",
@@ -8192,7 +8421,8 @@
     "flavorTags": [
       "dim",
       "hrast",
-      "med"
+      "med",
+      "suho-voce"
     ],
     "additiveStatus": "moderate",
     "additiveDetail": {
@@ -8218,17 +8448,21 @@
       "best": "Cisto"
     },
     "cigarHint": {
-      "hr": "Uz Johnnie Walker Green Label biraj maduro ili puni Habano — most je pepeo i zemlja, ne citrus.",
-      "en": "The peated profile of Johnnie Walker Green Label wants a slower puff and a smaller sip; Connecticut stays too mild."
+      "hr": "Dim u čaši traži maduro ili puni Habano — most je pepeo i zemlja.",
+      "en": "Smoke in the glass wants maduro or a full Habano — bridge on ash and earth."
     },
     "priceUrl": "https://ecuga.com/proizvod/johnnie-walker-green-label",
     "notes": {
-      "hr": "Kod Johnnie Walker Green Label dim dolazi prvi — dim, hrast i med, punije tijelo. Regija: Škotska (blended malt). Serviranje: Cisto.",
-      "en": "With Johnnie Walker Green Label, smoke leads — dim, hrast i med, fuller body. Region: Škotska (blended malt). Serviranje: Cisto."
+      "hr": "Johnnie Walker Green Label — Škotska (blended malt): suho voće i dim, punije tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Johnnie Walker Green Label — Škotska (blended malt): dried fruit and dim, fuller body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
     "profileEstimated": false,
     "inStock": true,
-    "stockFetchedAt": "2026-08-18"
+    "stockFetchedAt": "2026-08-18",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "EawDBAWWpIs"
+    ]
   },
   {
     "id": "wh-johnnie-walker-green-label-15-yo-43-vol-0-7l-u-poklon-kutiji",
@@ -8292,7 +8526,8 @@
     "flavorTags": [
       "dim",
       "hrast",
-      "med"
+      "med",
+      "suho-voce"
     ],
     "additiveStatus": "moderate",
     "additiveDetail": {
@@ -8318,17 +8553,21 @@
       "best": "Cisto"
     },
     "cigarHint": {
-      "hr": "Ne forsiraš lagani shade uz Johnnie Walker Island Green: jod i dim preglase nijansu.",
-      "en": "With Johnnie Walker Island Green pick maduro or a full Habano — bridge on ash and earth, not citrus."
+      "hr": "Dim u čaši traži maduro ili puni Habano — most je pepeo i zemlja.",
+      "en": "Smoke in the glass wants maduro or a full Habano — bridge on ash and earth."
     },
     "priceUrl": "https://ecuga.com/proizvod/johnnie-walker-island-green",
     "notes": {
-      "hr": "Kod Johnnie Walker Island Green dim dolazi prvi — dim, hrast i med, punije tijelo. Regija: Škotska (blended malt). Serviranje: Cisto.",
-      "en": "With Johnnie Walker Island Green, smoke leads — dim, hrast i med, fuller body. Region: Škotska (blended malt). Serviranje: Cisto."
+      "hr": "Johnnie Walker Island Green — Škotska (blended malt): suho voće i dim, punije tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Johnnie Walker Island Green — Škotska (blended malt): dried fruit and dim, fuller body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
     "profileEstimated": false,
     "inStock": true,
-    "stockFetchedAt": "2026-08-18"
+    "stockFetchedAt": "2026-08-18",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "EawDBAWWpIs"
+    ]
   },
   {
     "id": "wh-johnnie-walker-red-label",
@@ -8343,7 +8582,9 @@
     "flavorTags": [
       "karamela",
       "travnato",
-      "vanilija"
+      "vanilija",
+      "suho-voce",
+      "dim"
     ],
     "additiveStatus": "moderate",
     "additiveDetail": {
@@ -8369,17 +8610,21 @@
       "best": "Cisto"
     },
     "cigarHint": {
-      "hr": "Tijelo Johnnie Walker Red Label sjeda uz robusto; izbjegni najteži maduro ako je boca suša.",
-      "en": "With Johnnie Walker Red Label the cigar’s first third + first sip reveal the bridge."
+      "hr": "Dim u čaši traži maduro ili puni Habano — most je pepeo i zemlja.",
+      "en": "Smoke in the glass wants maduro or a full Habano — bridge on ash and earth."
     },
     "priceUrl": "https://ecuga.com/proizvod/johnnie-walker-red-label",
     "notes": {
-      "hr": "Johnnie Walker Red Label drži karamela, travnato i vanilija bez peated buke — Škotska (blend), srednje tijelo. Serviranje: Cisto.",
-      "en": "Johnnie Walker Red Label holds karamela, travnato i vanilija without peated noise — Škotska (blend), medium body. Serviranje: Cisto."
+      "hr": "Johnnie Walker Red Label — Škotska (blend): suho voće i dim, srednje tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Johnnie Walker Red Label — Škotska (blend): dried fruit and dim, medium body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
     "profileEstimated": false,
     "inStock": false,
-    "stockFetchedAt": "2026-08-18"
+    "stockFetchedAt": "2026-08-18",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "EawDBAWWpIs"
+    ]
   },
   {
     "id": "wh-johnnie-walker-red-label-pocket",
@@ -8394,7 +8639,9 @@
     "flavorTags": [
       "karamela",
       "travnato",
-      "vanilija"
+      "vanilija",
+      "suho-voce",
+      "dim"
     ],
     "additiveStatus": "moderate",
     "additiveDetail": {
@@ -8420,17 +8667,21 @@
       "best": "Cisto"
     },
     "cigarHint": {
-      "hr": "Uz Johnnie Walker Red Label Pocket prva trećina cigare + prvi gutljaj otkrivaju most.",
-      "en": "Do not pair Johnnie Walker Red Label Pocket with spiced rum the same evening — the profile muddies."
+      "hr": "Dim u čaši traži maduro ili puni Habano — most je pepeo i zemlja.",
+      "en": "Smoke in the glass wants maduro or a full Habano — bridge on ash and earth."
     },
     "priceUrl": "https://ecuga.com/proizvod/johnnie-walker-red-label-pocket",
     "notes": {
-      "hr": "U Johnnie Walker Red Label Pocket vodi karamela, travnato i vanilija. Regija Škotska (blend), tijelo srednje. Serviranje: Cisto.",
-      "en": "Johnnie Walker Red Label Pocket (Škotska (blend)): karamela, travnato i vanilija with medium body. Serviranje: Cisto."
+      "hr": "Johnnie Walker Red Label Pocket — Škotska (blend): suho voće i dim, srednje tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Johnnie Walker Red Label Pocket — Škotska (blend): dried fruit and dim, medium body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
     "profileEstimated": false,
     "inStock": true,
-    "stockFetchedAt": "2026-08-18"
+    "stockFetchedAt": "2026-08-18",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "EawDBAWWpIs"
+    ]
   },
   {
     "id": "wh-jura-10",
@@ -8623,7 +8874,9 @@
       "suho-voce",
       "kakao",
       "karamela",
-      "overproof"
+      "overproof",
+      "kava",
+      "sol"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -8649,14 +8902,18 @@
       "best": "Cisto"
     },
     "cigarHint": {
-      "hr": "Uz Kavalan SOLIST FINO SHERRY CASK srednji Habano ili Cameroon — suho voće, kakao i karamela traži čist most.",
-      "en": "With Kavalan SOLIST FINO SHERRY CASK a medium Habano or Cameroon — suho voće, kakao i karamela wants a clean bridge."
+      "hr": "Srednje ili laganije tijelo — Cameroon ili kraći Habano; prva trećina često dovoljna.",
+      "en": "Medium or lighter body — Cameroon or a shorter Habano; the first third is often enough."
     },
     "priceUrl": "https://allez.hr/shop/svi-proizvodi/kavalan-solist-fino-sherry-cask-single-malt-whisky-578-vol-07-l-u-drvenoj-poklon-kutiji",
     "notes": {
-      "hr": "Profil Kavalan SOLIST FINO SHERRY CASK: suho voće, kakao i karamela. To je punije tijelo iz Tajvan na 57.8 %, sherry finish. Serviranje: Cisto. Brojke kvalitete je guraju iznad prosjeka police.",
-      "en": "In Kavalan SOLIST FINO SHERRY CASK, suho voće, kakao i karamela leads. Region Tajvan, body fuller body na 57.8 %, sherry finish. Serviranje: Cisto. Brojke kvalitete je guraju iznad prosjeka police."
-    }
+      "hr": "Kavalan SOLIST FINO SHERRY CASK (57.8 %) — Tajvan: kava i slana nota, punije tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Kavalan SOLIST FINO SHERRY CASK (57.8 %) — Tajvan: kava and sol, fuller body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
+    },
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "bDmAj-Ny5FU"
+    ]
   },
   {
     "id": "wh-kavalan-solist-oloroso-sherry-cask-single-malt-whisky-54-8-vol-0-7l-u-poklon-kutiji",
@@ -8671,7 +8928,9 @@
     "flavorTags": [
       "suho-voce",
       "kakao",
-      "karamela"
+      "karamela",
+      "kava",
+      "sol"
     ],
     "additiveStatus": "clean",
     "additiveDetail": {
@@ -8697,14 +8956,18 @@
       "best": "Cisto"
     },
     "cigarHint": {
-      "hr": "Uz Kavalan SOLIST OLOROSO SHERRY CASK biraj format koji traje koliko i gutljaj, ne duže.",
-      "en": "With Kavalan SOLIST OLOROSO SHERRY CASK a medium Habano or Cameroon — suho voće, kakao i karamela wants a clean bridge."
+      "hr": "Srednje ili laganije tijelo — Cameroon ili kraći Habano; prva trećina često dovoljna.",
+      "en": "Medium or lighter body — Cameroon or a shorter Habano; the first third is often enough."
     },
     "priceUrl": "https://allez.hr/shop/svi-proizvodi/kavalan-solist-oloroso-sherry-cask-548-vol-07l-u-poklon-kutiji",
     "notes": {
-      "hr": "Kavalan SOLIST OLOROSO SHERRY CASK (Tajvan) na 54.8 %: suho voće, kakao i karamela uz punije tijelo, sherry finish. Serviranje: Cisto. U katalogu stoji među jačim ocjenama.",
-      "en": "Kavalan SOLIST OLOROSO SHERRY CASK (Tajvan) na 54.8 %: suho voće, kakao i karamela with fuller body, sherry finish. Serviranje: Cisto. U katalogu stoji među jačim ocjenama."
-    }
+      "hr": "Kavalan SOLIST OLOROSO SHERRY CASK (54.8 %) — Tajvan: kava i slana nota, punije tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Kavalan SOLIST OLOROSO SHERRY CASK (54.8 %) — Tajvan: kava and sol, fuller body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
+    },
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "bDmAj-Ny5FU"
+    ]
   },
   {
     "id": "wh-kilchoman-machir-bay-islay-single-malt-46-0-7-l-u-poklon-kutiji",
@@ -8808,11 +9071,13 @@
     "country": "SAD",
     "abv": 50,
     "body": 4,
-    "sweetness": 2,
+    "sweetness": 4,
     "flavorTags": [
       "hrast",
       "karamela",
-      "papar"
+      "papar",
+      "travnato",
+      "slatko"
     ],
     "qualityScore": 7.5,
     "priceEUR": {
@@ -8826,12 +9091,12 @@
       "best": "Cisto"
     },
     "cigarHint": {
-      "hr": "Uz Knob Creek 9 Small Batch idi na Habano ili blagi maduro — vanilija i hrast traže topliji dim.",
-      "en": "With Knob Creek 9 Small Batch skip a very light panatela — the bottle is heavier than that format."
+      "hr": "Srednje ili laganije tijelo — Cameroon ili kraći Habano; prva trećina često dovoljna.",
+      "en": "Medium or lighter body — Cameroon or a shorter Habano; the first third is often enough."
     },
     "notes": {
-      "hr": "Bourbon/Tennessee linija Knob Creek 9 Small Batch drži hrast, karamela i papar. Regija Kentucky, SAD na 50 %; tijelo punije. Serviranje: Cisto.",
-      "en": "Knob Creek 9 Small Batch (Kentucky, SAD) na 50 %: American oak carries hrast, karamela i papar in fuller body. Serviranje: Cisto."
+      "hr": "Knob Creek 9 Small Batch (50 %) — Kentucky, SAD: travnato i slatko, punije tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Knob Creek 9 Small Batch (50 %) — Kentucky, SAD: travnato and slatko, fuller body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
     "status": null,
     "priceUrl": null,
@@ -8841,7 +9106,11 @@
       "en": "No additives (US \"straight\" rules allow none)"
     },
     "additiveSource": "US regulativa (straight whiskey)",
-    "profileEstimated": false
+    "profileEstimated": false,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "dR9lk52VG3I"
+    ]
   },
   {
     "id": "wh-lagavulin-12-yo-islay-single-malt-special-release-2022-57-3-vol-0-7l-u-poklon-kutiji",
@@ -9038,7 +9307,8 @@
     "flavorTags": [
       "dim",
       "iodin",
-      "medicinski"
+      "medicinski",
+      "hrast"
     ],
     "qualityScore": 8,
     "priceEUR": {
@@ -9052,12 +9322,12 @@
       "best": "Cisto / kap vode"
     },
     "cigarHint": {
-      "hr": "Dimljeni profil od Laphroaig 10 traži sporiji dim i kraći gutljaj; Connecticut ostaje preblag.",
-      "en": "A peated bottle like Laphroaig 10 sits with a darker wrapper; keep the cigar’s first third calm."
+      "hr": "Dim u čaši traži maduro ili puni Habano — most je pepeo i zemlja.",
+      "en": "Smoke in the glass wants maduro or a full Habano — bridge on ash and earth."
     },
     "notes": {
-      "hr": "Kod Laphroaig 10 dim dolazi prvi — dim, jod i medicinska nota, punije tijelo na 40 %. Regija: Islay, Škotska. Serviranje: Cisto / kap vode.",
-      "en": "Laphroaig 10 from the peated circle (Islay, Škotska) na 40 %: dim, jod i medicinska nota in fuller body. Smoke does not want haste. Serviranje: Cisto / kap vode."
+      "hr": "Laphroaig 10 (40 %) — Islay, Škotska: hrast i dim, punije tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Laphroaig 10 (40 %) — Islay, Škotska: hrast and dim, fuller body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
     "status": null,
     "priceUrl": "https://humidor.hr/hr/proizvod/laphroaig-10-yo-070-l/",
@@ -9067,7 +9337,11 @@
       "en": "E150a colouring / chill filtration undeclared (the EU does not require it)"
     },
     "additiveSource": "EU pravila: whisky smije samo E150a",
-    "profileEstimated": false
+    "profileEstimated": false,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "HWzIH1PRvnY"
+    ]
   },
   {
     "id": "wh-laphroaig-25-yo-islay-single-malt-scotch-whisky-2019-51-4-vol-0-7l-u-drvenoj-poklon-kutiji",
@@ -9264,7 +9538,10 @@
     "flavorTags": [
       "dim",
       "iodin",
-      "zacini"
+      "zacini",
+      "hrast",
+      "sol",
+      "medicinski"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -9290,15 +9567,19 @@
       "best": "Cisto / kap vode (otvara dim)"
     },
     "cigarHint": {
-      "hr": "Peated boca kao Laphroaig Quarter Cask sjeda uz tamniji pokrov; prva trećina cigare neka bude mirna.",
-      "en": "Do not force a light shade with Laphroaig Quarter Cask: iodine and smoke cover nuance."
+      "hr": "Dim u čaši traži maduro ili puni Habano — most je pepeo i zemlja.",
+      "en": "Smoke in the glass wants maduro or a full Habano — bridge on ash and earth."
     },
     "priceUrl": "https://allez.hr/shop/svi-proizvodi/laphroaig-quarter-cask-48-vol-07l-in-giftbox",
     "notes": {
-      "hr": "Kod Laphroaig Quarter Cask dim dolazi prvi — dim, jod i začini, punije tijelo na 48 %. Regija: Islay, Škotska. Serviranje: Cisto / kap vode (otvara dim).",
-      "en": "Islay, Škotska in the glass via Laphroaig Quarter Cask: dim, jod i začini and fuller body na 48 %. A drop of water often opens iodine or ash. Serviranje: Cisto / kap vode (otvara dim)."
+      "hr": "Laphroaig Quarter Cask (48 %) — Islay, Škotska: hrast, dim i slana nota, punije tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Laphroaig Quarter Cask (48 %) — Islay, Škotska: hrast, dim and sol, fuller body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
-    "profileEstimated": false
+    "profileEstimated": false,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "vOrVxFYYCAE"
+    ]
   },
   {
     "id": "wh-makers-mark",
@@ -9313,7 +9594,9 @@
     "flavorTags": [
       "karamela",
       "kremasto",
-      "vanilija"
+      "vanilija",
+      "hrast",
+      "sol"
     ],
     "qualityScore": 7,
     "priceEUR": {
@@ -9327,12 +9610,12 @@
       "best": "Cisto / on the rocks"
     },
     "cigarHint": {
-      "hr": "Uz Maker's Mark izbjegni vrlo laganu panatelu — boca je teža od nje. Ne žuri: ova boca (makers) traži mirniji tempo uz cigaru.",
-      "en": "American oak in Maker's Mark does not love a too-mild Connecticut; a robusto keeps pace."
+      "hr": "Srednje ili laganije tijelo — Cameroon ili kraći Habano; prva trećina često dovoljna.",
+      "en": "Medium or lighter body — Cameroon or a shorter Habano; the first third is often enough."
     },
     "notes": {
-      "hr": "U Maker's Mark čuješ karamela, kremastost i vanilija prije začina — Kentucky, SAD na 45 %, srednje tijelo. Serviranje: Cisto / on the rocks.",
-      "en": "Bourbon/Tennessee line Maker's Mark holds karamela, kremastost i vanilija. Region Kentucky, SAD na 45 %; body medium body. Serviranje: Cisto / on the rocks."
+      "hr": "Maker's Mark (45 %) — Kentucky, SAD: hrast i slana nota, srednje tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Maker's Mark (45 %) — Kentucky, SAD: hrast and sol, medium body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
     "status": null,
     "priceUrl": null,
@@ -9342,7 +9625,11 @@
       "en": "No additives (US \"straight\" rules allow none)"
     },
     "additiveSource": "US regulativa (straight whiskey)",
-    "profileEstimated": false
+    "profileEstimated": false,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "3oKPAEql3ik"
+    ]
   },
   {
     "id": "wh-michter-039-s-us-no-1-kentucky-single-barrel-straight-rye-whiskey-42-4-vol-0-7l-u-poklon-kutiji",
@@ -9553,7 +9840,9 @@
     "flavorTags": [
       "med",
       "vanilija",
-      "voce"
+      "voce",
+      "orasasti",
+      "ester-funk"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -9574,14 +9863,18 @@
       "best": "Cisto / highball"
     },
     "cigarHint": {
-      "hr": "Uz Monkey Shoulder prva trećina cigare + prvi gutljaj otkrivaju most. Gutljaj neka prati prvi dim; bočica monkey drži svoj ritam do kraja večeri.",
-      "en": "With Monkey Shoulder a medium Habano or Cameroon — med, vanilija i voće wants a clean bridge."
+      "hr": "Srednje ili laganije tijelo — Cameroon ili kraći Habano; prva trećina često dovoljna.",
+      "en": "Medium or lighter body — Cameroon or a shorter Habano; the first third is often enough."
     },
     "priceUrl": "https://allez.hr/shop/svi-proizvodi/monkey-shoulder-the-original-blended-malt-batch-27-40-vol-07l",
     "notes": {
-      "hr": "U Monkey Shoulder vodi med, vanilija i voće. Regija Škotska, tijelo laganije na 40 %. Serviranje: Cisto / highball.",
-      "en": "Škotska via Monkey Shoulder: med, vanilija i voće and lighter body na 40 %. Do not force an overproof pace. Serviranje: Cisto / highball."
-    }
+      "hr": "Monkey Shoulder (40 %) — Škotska: orašasti tonovi i esterski funk, laganije tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Monkey Shoulder (40 %) — Škotska: nutty tones and estery funk, lighter body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
+    },
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "xFrOVMon1iI"
+    ]
   },
   {
     "id": "wh-mortlach-12",
@@ -9639,7 +9932,9 @@
     "sweetness": 2,
     "flavorTags": [
       "kremasto",
-      "slatko"
+      "slatko",
+      "vanilija",
+      "voce"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -9665,17 +9960,21 @@
       "best": "Cisto / mala kocka leda"
     },
     "cigarHint": {
-      "hr": "Uz Nikka Coffey Grain kratki Habano u prvoj trećini često dovoljan. Drži čašu bliže pepeljari — nikka se bolje čita u sporijem krugu.",
-      "en": "With Nikka Coffey Grain a short Habano in the first third is often enough. Let the sip follow the first draw; bottle nikka keeps its own pace."
+      "hr": "Srednje ili laganije tijelo — Cameroon ili kraći Habano; prva trećina često dovoljna.",
+      "en": "Medium or lighter body — Cameroon or a shorter Habano; the first third is often enough."
     },
     "priceUrl": "https://ecuga.com/proizvod/nikka-coffey-grain",
     "notes": {
-      "hr": "Nikka Coffey Grain ne viče dimom — kremastost i slatko, Japan, srednje tijelo. Serviranje: Cisto / mala kocka leda.",
-      "en": "In Nikka Coffey Grain precision leads strength: kremastost i slatko and medium body. Serviranje: Cisto / mala kocka leda."
+      "hr": "Nikka Coffey Grain — Japan: vanilija i voće, srednje tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Nikka Coffey Grain — Japan: vanilija and fruit, medium body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
     "profileEstimated": true,
     "inStock": true,
-    "stockFetchedAt": "2026-08-18"
+    "stockFetchedAt": "2026-08-18",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "-DuqRqFidco"
+    ]
   },
   {
     "id": "wh-nikka-coffey-malt",
@@ -9690,7 +9989,8 @@
     "flavorTags": [
       "citrus",
       "med",
-      "voce"
+      "voce",
+      "vanilija"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -9711,15 +10011,19 @@
       "best": "Cisto / kap vode"
     },
     "cigarHint": {
-      "hr": "Ne stavljaj najslađi maduro uz Nikka Coffey Malt; most je cedar, ne karamela. Jedan gutljaj, jedan dim; linija nikka ne voli pretrčavanje trećine.",
-      "en": "The Japanese tidiness of Nikka Coffey Malt wants a calm draw and a medium format."
+      "hr": "Srednje ili laganije tijelo — Cameroon ili kraći Habano; prva trećina često dovoljna.",
+      "en": "Medium or lighter body — Cameroon or a shorter Habano; the first third is often enough."
     },
     "priceUrl": "https://allez.hr/shop/svi-proizvodi/nikka-coffey-malt-whisky-45-vol-07l-gb",
     "notes": {
-      "hr": "Japanski profil Nikka Coffey Malt drži citrus, med i voće. Tijelo srednje na 45 %. Serviranje: Cisto / kap vode.",
-      "en": "Japanese profile Nikka Coffey Malt holds citrus, med i voće. Body medium body na 45 %. Serviranje: Cisto / kap vode."
+      "hr": "Nikka Coffey Malt (45 %) — Japan: vanilija i voće, srednje tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Nikka Coffey Malt (45 %) — Japan: vanilija and fruit, medium body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
-    "profileEstimated": false
+    "profileEstimated": false,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "-DuqRqFidco"
+    ]
   },
   {
     "id": "wh-nikka-days",
@@ -10098,7 +10402,9 @@
       "karamela",
       "kakao",
       "zacini",
-      "hrast"
+      "hrast",
+      "ester-funk",
+      "sol"
     ],
     "qualityScore": 8,
     "priceEUR": {
@@ -10112,12 +10418,12 @@
       "best": "Cisto / kap vode"
     },
     "cigarHint": {
-      "hr": "Uz Old Forester 1920 Prohibition Style idi na Habano ili blagi maduro — vanilija i hrast traže topliji dim.",
-      "en": "American oak in Old Forester 1920 Prohibition Style does not love a too-mild Connecticut; a robusto keeps pace."
+      "hr": "Srednje ili laganije tijelo — Cameroon ili kraći Habano; prva trećina često dovoljna.",
+      "en": "Medium or lighter body — Cameroon or a shorter Habano; the first third is often enough."
     },
     "notes": {
-      "hr": "Bourbon/Tennessee linija Old Forester 1920 Prohibition Style drži karamela, kakao i začini. Regija Kentucky, SAD na 57.5 %; tijelo punije. Serviranje: Cisto / kap vode.",
-      "en": "Old Forester 1920 Prohibition Style is a sweet-oak American profile: karamela, kakao i začini, fuller body na 57.5 %. Serviranje: Cisto / kap vode."
+      "hr": "Old Forester 1920 Prohibition Style (57.5 %) — Kentucky, SAD: esterski funk i slana nota, punije tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Old Forester 1920 Prohibition Style (57.5 %) — Kentucky, SAD: estery funk and sol, fuller body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
     "status": null,
     "priceUrl": null,
@@ -10126,7 +10432,11 @@
       "hr": "Bez aditiva (US „straight” pravila ne dopuštaju dodatke)",
       "en": "No additives (US \"straight\" rules allow none)"
     },
-    "additiveSource": "US regulativa (straight whiskey)"
+    "additiveSource": "US regulativa (straight whiskey)",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "6MIknGQjYYM"
+    ]
   },
   {
     "id": "wh-paddy",
@@ -10273,7 +10583,9 @@
       "dim",
       "karamela",
       "mineralno",
-      "citrus"
+      "citrus",
+      "vanilija",
+      "voce"
     ],
     "qualityScore": 8.5,
     "priceEUR": {
@@ -10287,12 +10599,12 @@
       "best": "Cisto / kap vode"
     },
     "cigarHint": {
-      "hr": "Ne forsiraš lagani shade uz Port Charlotte 10 (Bruichladdich): jod i dim preglase nijansu.",
-      "en": "Do not force a light shade with Port Charlotte 10 (Bruichladdich): iodine and smoke cover nuance."
+      "hr": "Dim u čaši traži maduro ili puni Habano — most je pepeo i zemlja.",
+      "en": "Smoke in the glass wants maduro or a full Habano — bridge on ash and earth."
     },
     "notes": {
-      "hr": "Islay, Škotska u čaši preko Port Charlotte 10 (Bruichladdich): dim, karamela i mineralno i punije tijelo na 50 %. Kap vode često otkrije jod ili pepeo. Serviranje: Cisto / kap vode. U katalogu stoji među jačim ocjenama.",
-      "en": "Port Charlotte 10 (Bruichladdich) keeps a peated character (Islay, Škotska): dim, karamela i mineralno. Body reads fuller body na 50 %, port finish. Serviranje: Cisto / kap vode. U katalogu stoji među jačim ocjenama."
+      "hr": "Port Charlotte 10 (Bruichladdich) (50 %) — Islay, Škotska: vanilija, dim i voće, punije tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Port Charlotte 10 (Bruichladdich) (50 %) — Islay, Škotska: vanilija, dim and fruit, fuller body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
     "status": null,
     "priceUrl": null,
@@ -10301,7 +10613,11 @@
       "hr": "Prirodna boja, bez doslađivanja (deklaracija destilerije)",
       "en": "Natural colour, no sweetening (distillery declaration)"
     },
-    "additiveSource": "Deklaracija destilerije"
+    "additiveSource": "Deklaracija destilerije",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "NYasS1Uy9S4"
+    ]
   },
   {
     "id": "wh-powers-12-yo-john-039-s-lane-single-pot-still-irish-whiskey-46-vol-0-7l-u-poklon-kutiji",
@@ -10590,11 +10906,13 @@
     "country": "Škotska",
     "abv": 40,
     "body": 3,
-    "sweetness": 3,
+    "sweetness": 4,
     "flavorTags": [
       "suho-voce",
       "med",
-      "hrast"
+      "hrast",
+      "voce",
+      "slatko"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -10615,16 +10933,20 @@
       "best": "Cisto / highball"
     },
     "cigarHint": {
-      "hr": "Uz Royal Salute 21 (Chivas) biraj format koji traje koliko i gutljaj, ne duže. Ne žuri: ova boca (royal) traži mirniji tempo uz cigaru.",
-      "en": "With Royal Salute 21 (Chivas) a medium Habano or Cameroon — suho voće, med i hrast wants a clean bridge."
+      "hr": "Srednje ili laganije tijelo — Cameroon ili kraći Habano; prva trećina često dovoljna.",
+      "en": "Medium or lighter body — Cameroon or a shorter Habano; the first third is often enough."
     },
     "priceUrl": "https://ecuga.com/proizvod/chivas-regal-royal-salute-21",
     "notes": {
-      "hr": "Profil Royal Salute 21 (Chivas): suho voće, med i hrast. To je srednje tijelo iz Škotska na 40 %. Serviranje: Cisto / highball.",
-      "en": "Škotska via Royal Salute 21 (Chivas): suho voće, med i hrast and medium body na 40 %. Do not force an overproof pace. Serviranje: Cisto / highball."
+      "hr": "Royal Salute 21 (Chivas) (40 %) — Škotska: voće i slatko, srednje tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Royal Salute 21 (Chivas) (40 %) — Škotska: fruit and slatko, medium body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
     "inStock": true,
-    "stockFetchedAt": "2026-08-18"
+    "stockFetchedAt": "2026-08-18",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "tN4ClOCPSy4"
+    ]
   },
   {
     "id": "wh-sazerac-rye",
@@ -11236,7 +11558,8 @@
       "dim",
       "papar",
       "umami",
-      "zacini"
+      "zacini",
+      "voce"
     ],
     "qualityScore": 8,
     "priceEUR": {
@@ -11250,12 +11573,12 @@
       "best": "Cisto / kap vode"
     },
     "cigarHint": {
-      "hr": "Peated boca kao Talisker 10 sjeda uz tamniji pokrov; prva trećina cigare neka bude mirna.",
-      "en": "A peated bottle like Talisker 10 sits with a darker wrapper; keep the cigar’s first third calm."
+      "hr": "Dim u čaši traži maduro ili puni Habano — most je pepeo i zemlja.",
+      "en": "Smoke in the glass wants maduro or a full Habano — bridge on ash and earth."
     },
     "notes": {
-      "hr": "Talisker 10 s Islaya/dimljenog kruga (Skye, Škotska) na 45.8 %: dim, papar i umami u punije tijelo. Dim ne traži žurbu. Serviranje: Cisto / kap vode.",
-      "en": "Talisker 10 keeps a peated character (Skye, Škotska): dim, papar i umami. Body reads fuller body na 45.8 %. Serviranje: Cisto / kap vode."
+      "hr": "Talisker 10 (45.8 %) — Skye, Škotska. Dimljeni profil: voće; punije tijelo. Čisto ili s kap vode; uz cigaru sporiji ritam gutljaja.",
+      "en": "Talisker 10 (45.8 %) — Skye, Škotska. Peated profile: fruit; fuller body. Neat or with a drop of water; keep sips slow beside a cigar."
     },
     "status": null,
     "priceUrl": "https://humidor.hr/hr/proizvod/talisker-10-yo-070-l/",
@@ -11265,7 +11588,11 @@
       "en": "E150a colouring / chill filtration undeclared (the EU does not require it)"
     },
     "additiveSource": "EU pravila: whisky smije samo E150a",
-    "profileEstimated": true
+    "profileEstimated": true,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "XyK3cRjYvE4"
+    ]
   },
   {
     "id": "wh-tamdhu-12",
@@ -11325,7 +11652,9 @@
       "suho-voce",
       "kakao",
       "zacini",
-      "overproof"
+      "overproof",
+      "vanilija",
+      "karamela"
     ],
     "qualityScore": 8.5,
     "priceEUR": {
@@ -11339,12 +11668,12 @@
       "best": "Kap vode"
     },
     "cigarHint": {
-      "hr": "Uz Tamdhu Batch Strength biraj format koji traje koliko i gutljaj, ne duže. Ne žuri: ova boca (tamdhu) traži mirniji tempo uz cigaru.",
-      "en": "The body of Tamdhu Batch Strength sits with a robusto; skip the heaviest maduro if the bottle is drier."
+      "hr": "Srednje ili laganije tijelo — Cameroon ili kraći Habano; prva trećina često dovoljna.",
+      "en": "Medium or lighter body — Cameroon or a shorter Habano; the first third is often enough."
     },
     "notes": {
-      "hr": "Profil Tamdhu Batch Strength: suho voće, kakao i začini. To je punije tijelo iz Speyside, Škotska na 57 %. Serviranje: Kap vode. To nije ulazna boca po ocjeni u našem katalogu.",
-      "en": "Tamdhu Batch Strength holds suho voće, kakao i začini without peated noise — Speyside, Škotska na 57 %, fuller body. Serviranje: Kap vode. To nije ulazna boca po ocjeni u našem katalogu."
+      "hr": "Tamdhu Batch Strength (57 %) — Speyside, Škotska: vanilija i karamela, punije tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Tamdhu Batch Strength (57 %) — Speyside, Škotska: vanilija and karamela, fuller body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
     "status": null,
     "priceUrl": null,
@@ -11353,7 +11682,11 @@
       "hr": "Prirodna boja, bez doslađivanja (deklaracija destilerije)",
       "en": "Natural colour, no sweetening (distillery declaration)"
     },
-    "additiveSource": "Deklaracija destilerije"
+    "additiveSource": "Deklaracija destilerije",
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "PNwuPRjNWY4"
+    ]
   },
   {
     "id": "wh-teeling-ipa-beer-cask-small-batch-edition-irish-whiskey-46-vol-0-7l-u-poklon-kutiji",
@@ -11606,7 +11939,9 @@
     "sweetness": 3,
     "flavorTags": [
       "med",
-      "voce"
+      "voce",
+      "hrast",
+      "dim"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -11627,14 +11962,18 @@
       "best": "Cisto / highball"
     },
     "cigarHint": {
-      "hr": "Uz The Famous Grouse srednji Habano ili Cameroon — med i voće traži čist most. Gutljaj neka prati prvi dim; bočica the drži svoj ritam do kraja večeri.",
-      "en": "The body of The Famous Grouse sits with a robusto; skip the heaviest maduro if the bottle is drier."
+      "hr": "Dim u čaši traži maduro ili puni Habano — most je pepeo i zemlja.",
+      "en": "Smoke in the glass wants maduro or a full Habano — bridge on ash and earth."
     },
     "priceUrl": null,
     "notes": {
-      "hr": "U The Famous Grouse vodi med i voće. Regija Škotska, tijelo laganije na 40 %. Serviranje: Cisto / highball.",
-      "en": "Škotska via The Famous Grouse: med i voće and lighter body na 40 %. Do not force an overproof pace. Serviranje: Cisto / highball."
-    }
+      "hr": "The Famous Grouse (40 %) — Škotska: hrast i dim, laganije tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "The Famous Grouse (40 %) — Škotska: hrast and dim, lighter body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
+    },
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "WT0xOMW93dY"
+    ]
   },
   {
     "id": "wh-the-glenlivet-12",
@@ -12266,7 +12605,10 @@
     "flavorTags": [
       "citrus",
       "travnato",
-      "mineralno"
+      "mineralno",
+      "dim",
+      "med",
+      "kremasto"
     ],
     "additiveStatus": "unknown",
     "additiveDetail": {
@@ -12287,14 +12629,18 @@
       "best": "Cisto / kap vode"
     },
     "cigarHint": {
-      "hr": "Uz Tobermory 10 srednji Habano ili Cameroon — citrus, travnato i mineralno traži čist most.",
-      "en": "With Tobermory 10 the cigar’s first third + first sip reveal the bridge. Keep the glass near the ashtray — tobermory reads clearer in a slower loop."
+      "hr": "Dim u čaši traži maduro ili puni Habano — most je pepeo i zemlja.",
+      "en": "Smoke in the glass wants maduro or a full Habano — bridge on ash and earth."
     },
     "priceUrl": "https://allez.hr/shop/svi-proizvodi/tobermory-10-years-old-gb-463-vol-07-l",
     "notes": {
-      "hr": "Tobermory 10 (Škotska) na 46.3 %: citrus, travnato i mineralno uz srednje tijelo. Serviranje: Cisto / kap vode.",
-      "en": "Tobermory 10 holds citrus, travnato i mineralno without peated noise — Škotska na 46.3 %, medium body. Serviranje: Cisto / kap vode."
-    }
+      "hr": "Tobermory 10 (46.3 %) — Škotska. Dimljeni profil: med i kremasta tekstura; srednje tijelo. Čisto ili s kap vode; uz cigaru sporiji ritam gutljaja.",
+      "en": "Tobermory 10 (46.3 %) — Škotska. Peated profile: med and creamy texture; medium body. Neat or with a drop of water; keep sips slow beside a cigar."
+    },
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "e7AU5sF0aso"
+    ]
   },
   {
     "id": "wh-togouchi-premium",
@@ -12613,7 +12959,10 @@
     "flavorTags": [
       "hrast",
       "karamela",
-      "papar"
+      "papar",
+      "zacini",
+      "voce",
+      "sol"
     ],
     "qualityScore": 7.5,
     "priceEUR": {
@@ -12627,12 +12976,12 @@
       "best": "Cisto / kap vode"
     },
     "cigarHint": {
-      "hr": "Uz Wild Turkey 101 idi na Habano ili blagi maduro — vanilija i hrast traže topliji dim.",
-      "en": "The sweetness of Wild Turkey 101 bridges to a darker wrapper; let the sip follow the second puff."
+      "hr": "Srednje ili laganije tijelo — Cameroon ili kraći Habano; prva trećina često dovoljna.",
+      "en": "Medium or lighter body — Cameroon or a shorter Habano; the first third is often enough."
     },
     "notes": {
-      "hr": "U Wild Turkey 101 čuješ hrast, karamela i papar prije začina — Kentucky, SAD na 50.5 %, punije tijelo. Serviranje: Cisto / kap vode.",
-      "en": "Wild Turkey 101 is a sweet-oak American profile: hrast, karamela i papar, fuller body na 50.5 %. Serviranje: Cisto / kap vode."
+      "hr": "Wild Turkey 101 (50.5 %) — Kentucky, SAD: začini, voće i slana nota, punije tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Wild Turkey 101 (50.5 %) — Kentucky, SAD: spice, fruit and sol, fuller body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
     "status": null,
     "priceUrl": null,
@@ -12642,7 +12991,11 @@
       "en": "No additives (US \"straight\" rules allow none)"
     },
     "additiveSource": "US regulativa (straight whiskey)",
-    "profileEstimated": false
+    "profileEstimated": false,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "rC8cCoJRXLM"
+    ]
   },
   {
     "id": "wh-wild-turkey-rare-breed",
@@ -12657,7 +13010,10 @@
     "flavorTags": [
       "karamela",
       "med",
-      "vanilija"
+      "vanilija",
+      "zacini",
+      "voce",
+      "sol"
     ],
     "qualityScore": 8.5,
     "priceEUR": {
@@ -12671,12 +13027,12 @@
       "best": "Kap vode"
     },
     "cigarHint": {
-      "hr": "Slatkoća Wild Turkey Rare Breed mosti s tamnijim pokrovom; gutljaj neka prati drugi dim.",
-      "en": "The sweetness of Wild Turkey Rare Breed bridges to a darker wrapper; let the sip follow the second puff."
+      "hr": "Srednje ili laganije tijelo — Cameroon ili kraći Habano; prva trećina često dovoljna.",
+      "en": "Medium or lighter body — Cameroon or a shorter Habano; the first third is often enough."
     },
     "notes": {
-      "hr": "Wild Turkey Rare Breed je slatko-hrastov američki profil: karamela, med i vanilija, punije tijelo na 58.4 %. Serviranje: Kap vode. Brojke kvalitete je guraju iznad prosjeka police.",
-      "en": "Wild Turkey Rare Breed (Kentucky, SAD) na 58.4 %: American oak carries karamela, med i vanilija in fuller body. Serviranje: Kap vode. Brojke kvalitete je guraju iznad prosjeka police."
+      "hr": "Wild Turkey Rare Breed (58.4 %) — Kentucky, SAD: začini, voće i slana nota, punije tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Wild Turkey Rare Breed (58.4 %) — Kentucky, SAD: spice, fruit and sol, fuller body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
     "status": null,
     "priceUrl": null,
@@ -12686,7 +13042,11 @@
       "en": "No additives (US \"straight\" rules allow none)"
     },
     "additiveSource": "US regulativa (straight whiskey)",
-    "profileEstimated": false
+    "profileEstimated": false,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "rC8cCoJRXLM"
+    ]
   },
   {
     "id": "wh-woodford-reserve",
@@ -12701,7 +13061,8 @@
     "flavorTags": [
       "hrast",
       "karamela",
-      "vanilija"
+      "vanilija",
+      "voce"
     ],
     "qualityScore": 7,
     "priceEUR": {
@@ -12715,12 +13076,12 @@
       "best": "Cisto / Old Fashioned"
     },
     "cigarHint": {
-      "hr": "Uz Woodford Reserve izbjegni vrlo laganu panatelu — boca je teža od nje. Jedan gutljaj, jedan dim; linija woodford ne voli pretrčavanje trećine.",
-      "en": "The sweetness of Woodford Reserve bridges to a darker wrapper; let the sip follow the second puff."
+      "hr": "Srednje ili laganije tijelo — Cameroon ili kraći Habano; prva trećina često dovoljna.",
+      "en": "Medium or lighter body — Cameroon or a shorter Habano; the first third is often enough."
     },
     "notes": {
-      "hr": "Bourbon/Tennessee linija Woodford Reserve drži hrast, karamela i vanilija. Regija Kentucky, SAD na 43.2 %; tijelo punije. Serviranje: Cisto / Old Fashioned.",
-      "en": "Woodford Reserve is a sweet-oak American profile: hrast, karamela i vanilija, fuller body na 43.2 %. Serviranje: Cisto / Old Fashioned."
+      "hr": "Woodford Reserve (43.2 %) — Kentucky, SAD: hrast i voće, punije tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Woodford Reserve (43.2 %) — Kentucky, SAD: hrast and fruit, fuller body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
     "status": null,
     "priceUrl": null,
@@ -12730,7 +13091,11 @@
       "en": "No additives (US \"straight\" rules allow none)"
     },
     "additiveSource": "US regulativa (straight whiskey)",
-    "profileEstimated": false
+    "profileEstimated": false,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "BaXlfFX_s8M"
+    ]
   },
   {
     "id": "wh-woodinville-straight-bourbon",
@@ -12935,12 +13300,14 @@
     "region": "Japan",
     "country": "Japan",
     "abv": 43,
-    "body": 3,
+    "body": 2,
     "sweetness": 3,
     "flavorTags": [
       "cvjetno",
       "med",
-      "suho-voce"
+      "suho-voce",
+      "hrast",
+      "voce"
     ],
     "qualityScore": 8,
     "priceEUR": {
@@ -12954,12 +13321,12 @@
       "best": "Cisto"
     },
     "cigarHint": {
-      "hr": "Japanska urednost Yamazaki 12 traži miran draw i srednji format. Ne žuri: ova boca (yamazaki) traži mirniji tempo uz cigaru.",
-      "en": "Do not put the sweetest maduro with Yamazaki 12; bridge on cedar, not caramel. One sip, one draw; line yamazaki dislikes hurrying the middle third."
+      "hr": "Srednje ili laganije tijelo — Cameroon ili kraći Habano; prva trećina često dovoljna.",
+      "en": "Medium or lighter body — Cameroon or a shorter Habano; the first third is often enough."
     },
     "notes": {
-      "hr": "U Yamazaki 12 preciznost ide ispred snage: cvijet, med i suho voće i srednje tijelo. Serviranje: Cisto.",
-      "en": "Yamazaki 12 does not shout peat — cvijet, med i suho voće, Japan na 43 %, medium body. Serviranje: Cisto."
+      "hr": "Yamazaki 12 (43 %) — Japan: hrast i voće, laganije tijelo. Čisto ili s kap vode; drži ritam uz cigaru bez pretjerane slatkoće.",
+      "en": "Yamazaki 12 (43 %) — Japan: hrast and fruit, lighter body. Neat or with a drop of water; keeps pace with a cigar without heavy sweetness."
     },
     "status": null,
     "priceUrl": null,
@@ -12969,6 +13336,10 @@
       "en": "E150a colouring / chill filtration undeclared (the EU does not require it)"
     },
     "additiveSource": "EU pravila: whisky smije samo E150a",
-    "profileEstimated": false
+    "profileEstimated": false,
+    "youtubeCorpusEnriched": true,
+    "sourceVideoIds": [
+      "flY2u-T3rTc"
+    ]
   }
 ]
