@@ -4,7 +4,7 @@
 
 Working English manuscript, current main draft.
 
-> **Current draft note:** this English file is now the main working manuscript. Parts I-IV are the core; Appendix A/B keep only unique vignettes, checklists, soundbites, and cards for loose typesetting (~100 small-format pages). Chapter craft: miniature beat + precepts; no lecture, no brand catalogue, no overwrite. Proposal and market notes stay outside the book body: `docs/bonton/research/notebooklm-grill/5017a44b-PROPOSAL-NOTES.md`.
+> **Current draft note:** this English file is the main working manuscript (source of truth). Parts I–IV are the core; Appendix A/B keep unique vignettes, checklists, soundbites, and cards for loose typesetting (~100 small-format pages). Chapter craft: miniature beat + short rules; cigar jargon stays in the text — see *Words you'll meet* and the back **Glossary of table words**. No lecture, no brand catalogue, no overwrite. Proposal and market notes stay outside the book body: `docs/bonton/research/notebooklm-grill/5017a44b-PROPOSAL-NOTES.md`.
 
 ---
 
@@ -36,16 +36,35 @@ Read it like a conversation at the table: you can stop, go back, skip the chapte
 
 Where it says *gentleman*, it means the figure of courtesy, not a test of sex. The reader we write for is one person at a time: a guest or a host who wants the evening to sit well. A good companion, a good guest, a good host — the same measure.
 
+Cigar words stay in the text on purpose: *draw*, *vitola*, *wrapper*, *canoeing*, *foot*, *cap*. They are the language of the table. A short list of words you'll meet sits just below; the full **Glossary of table words** is at the back. Look a word up once, then keep reading.
+
 Where it speaks of technique, it is enough that you don't come off as a snob and don't ruin someone else's evening. The detailed textbook on humidors and strength scales belongs elsewhere. Here the subject is relationships.
 
 If you remember only three things, it will be enough: ask before the flame, leave room, finish cleaner than you found it.
 
 ---
 
+## Words you'll meet
+
+*(Full glossary at the back. These are enough to start.)*
+
+**Vitola** — shape and size of the cigar; at the table it can also mean how long the smoke will last.  
+**Draw** — how easily the smoke comes through; a good draw makes the evening easier.  
+**Foot / Cap** — foot is the end you light; cap is the leaf at the mouth end (where you cut).  
+**Wrapper** — the outer leaf; first impression of colour and taste.  
+**Canoeing** — uneven burn down one side; fix quietly.  
+**Humidor** — the box or cabinet that keeps cigars at the right humidity.  
+**Pairing** — matching drink with smoke so they meet, not fight.  
+**Smooth** — soft compliment for a drink; sometimes it hides sweetness or additives — ask what they taste.  
+**Inner scorecard** — judging the night by what you liked in leaf and glass, not by the loudest price.  
+**LE** — limited edition; a story of tobacco, not a rank above another guest.
+
+---
+
 ## Contents
 
 ### Front matter
-- Dedication · Epigraph · How to read this book
+- Dedication · Epigraph · How to read this book · Words you'll meet
 
 ### I. Spirit and Space
 1. What a gentleman at the table is  
@@ -826,7 +845,7 @@ A high alcohol percentage sometimes "holds" a fuller smoke better than a thin si
 
 ### Sweetness and caution
 
-Sweeter profiles sometimes like darker wrappers. Lighter wrappers sometimes like cleaner, drier lines. A declaration of additives in rums — where it exists — is worth more than marketing fog. The same fog hangs over tequila: colouring, glycerin and flavouring may be legal without a line on the label. A gentleman does not moralise about additives as if they were a sin; he speaks clearly when he knows, and stays quiet when he doesn't. He does not recite apps at the table. He notices when "smooth" arrives too cheaply for the price of the bottle — and he still does not turn the evening into a tribunal.
+Sweeter drinks sometimes like darker cigars. Lighter cigars sometimes like cleaner, drier bottles. When a rum label says what was added, that matters more than the advert. The same is true for tequila: colour, glycerin and flavouring can be legal with nothing on the label. Do not preach about additives as if they were a sin. Speak clearly when you know. Stay quiet when you don't. Do not recite apps at the table. If "smooth" sounds too good for the price, notice it — and still do not turn the evening into a courtroom.
 
 ### Reading a rum label without theatre
 
@@ -870,7 +889,7 @@ A guest says: "This rum is really smooth." Someone bristles to correct him. More
 
 ### Vignette: the tall bottle
 
-A guest reaches for the tall gold tequila because the room knows the name. The host pours a quieter blanco from a plain label instead, and asks what they smell first — grass, pepper, citrus — not what it cost. Status stays on the shelf. The table gets agave. Nobody lectures about additives. The glass does the talking.
+A guest reaches for the tall gold tequila because everyone knows the name. The host pours a quieter blanco instead, and asks what they smell first — grass, pepper, citrus — not what it cost. The fancy bottle stays on the shelf. The table gets the drink. Nobody lectures about additives. The glass does the talking.
 
 ### More on pairing
 
@@ -976,7 +995,7 @@ A gentleman does not photograph someone else's weakness. Never.
 
 A cigar lounge is not your living room. A private terrace is not a lounge with a price list. Tell them apart.
 
-### Ten precepts of the lounge
+### Eleven short rules of the lounge
 
 1. **Entering.** Greet the room briefly. Ask whether a seat is free — an ashtray or glass may be holding a place while someone stepped out. Don't sit down as if you'd bought the air.
 
@@ -997,6 +1016,8 @@ A cigar lounge is not your living room. A private terrace is not a lounge with a
 9. **Perfume.** In measure. Other people's palates are tasting too. Conversation: don't turn every story into your bigger one; listen to the room's pace first.
 
 10. **Cigars only.** A cigarette or a vape in a cigar lounge often breaks the spirit of the place — even when the rule isn't spelled out in capital letters. Ask. Respect. Read the house rules at the door.
+
+11. **Clothes.** The host does not lecture a guest on what to wear. The room still sets the mood. An outfit that shouts at the room bothers people more than a sports jacket does. Another lounge's dress rules are not the law on a friend's terrace.
 
 ### What not to import blindly
 
@@ -1120,7 +1141,7 @@ Kindly: "Same name, different history — here's what I usually expect from this
 
 **An uneven burn.** Wrong: a lecture. Kindly: "Turn it a little — or here's another." Carry on with the story.
 
-**The status pour.** A guest wants the bottle everyone photographs. Wrong: a sermon on glycerin and celebrity labels. Kindly: pour what you trust; ask what they smell; leave the price war for another night.
+**The status pour.** A guest wants the bottle everyone photographs. Wrong: a lecture on glycerin and famous labels. Kindly: pour what you like; ask what they smell; leave the price talk for another night.
 
 ### A wise thought
 
@@ -1438,11 +1459,11 @@ It is there, too, in small vanities. You do not photograph your own ash as if it
 
 The outer scorecard is the heavy box, the limited band, the loudest price. The inner scorecard is whether the leaf and the glass actually pleased you — and whether the people would sit with you again.
 
-A gentleman offers what he truly likes, not what sounds expensive when named aloud. "This humbler bottle works for me tonight" is courtesy, not apology.
+Offer what you truly like, not what sounds expensive when named aloud. "This quieter bottle works for me tonight" is courtesy, not apology.
 
-A limited edition cigar is a story of tobacco and time, not a rank above a guest who brought a regular line. Praise the blend if you must praise; don't rank people by the band.
+A limited edition (LE) cigar is a story of tobacco and time, not a rank above a guest who brought a regular line. Praise the blend if you must praise; don't rank people by the band.
 
-The dividend of a good bottle or a good box is paid when it is opened and shared — not when it is photographed and returned to the shelf. A special bottle saved for a special day that never arrives has already missed its evening.
+A good bottle or a good box pays off when you open it and share it — not when you photograph it and put it back on the shelf. A special bottle saved for a special day that never comes has already missed its evening.
 
 ### Situations: spirit in practice
 
@@ -1730,6 +1751,8 @@ And he does not sit at the edge of someone else's conversation only to enter wit
 **The photograph (longer).** The table looks lovely. The phone goes up. One face isn't ready. Ask. Or photograph the hands, the ash, the glasses — without faces. Social media is not more important than trust.
 
 **A loud pour (longer).** In a whiskey circle, silence is part of the ritual. A loud pour breaks it. It is no crime. It is clumsiness. Model a quiet pour. Most people copy the rhythm, not the speech.
+
+**Fancy bottle vs good glass (longer).** A guest reaches for the bottle everyone photographs — tall, gold, famous name, the one that "proves" the evening. The host does not lecture about glycerin. He pours what he likes. He asks what they smell first. Price talk waits for another night. The fancy bottle stays on the shelf. The table gets the drink. Good is what the glass and the company still want tomorrow.
 
 **Nicotine discomfort (longer).** The symptoms are not a subject for betting. Water. Sit down. Air. Maybe something sweet. Maybe the end of the smoke. Tomorrow there's no "remember when you…".
 
@@ -2239,17 +2262,19 @@ This book wants to be in the second category.
 
 ## An extended glossary — more terms
 
-**Plug** — the end of the cigar; don't stub it out like a cigarette.
-**Cap** — the leaf cap at the mouth; the cut speaks about it.
-**Foot** — the end you light.
-**Tunneling** — a tunnel in the burn; a quiet fix.
-**Hot burn** — too high a temperature; slow down.
-**Retrohale** — a technique; not a demonstration for every audience.
-**Humidor** — storage; someone else's is theirs.
-**Travel humidor** — a travel measure, not an excuse for mess.
-**Ashtray** — the ashtray; a civilisational minimum.
-**Cut fee** — in some lounges a charge for the cut/service; here, look to the local house, don't import the dogma.
-**Golf stick** — colloquially a milder/approachable one for relaxing; offer it without belittling.
+*(Prefer the back **Glossary of table words** for print. This list keeps a few leaf-and-flame extras for the loose appendix.)*
+
+**Plug** — the end of the cigar; don't stub it out like a cigarette.  
+**Cap** — the leaf cap at the mouth; the cut speaks about it.  
+**Foot** — the end you light.  
+**Tunneling** — a tunnel in the burn; a quiet fix.  
+**Hot burn** — too high a temperature; slow down.  
+**Retrohale** — a technique; not a demonstration for every audience.  
+**Humidor** — storage; someone else's is theirs.  
+**Travel humidor** — a travel measure, not an excuse for mess.  
+**Ashtray** — a civilisational minimum.  
+**Cut fee** — in some lounges a charge for the cut/service; look to the local house.  
+**Golf stick** — colloquially a milder/approachable one for relaxing; offer it without belittling.  
 **Campfire table** — a metaphor for egalitarian seating; status stays outside.
 
 ---
@@ -2594,7 +2619,15 @@ The same roster can appear in shorter form in the app, but this book version kee
 
 **Draw**: the resistance when drawing the smoke; a “good draw” makes the evening easier.
 
+**Foot**: the end you light.
+
+**Cap**: the leaf cap at the mouth end; that is where you cut.
+
+**Plug**: the chewed or sealed end of some cigars; don't stub it out like a cigarette.
+
 **Canoeing**: uneven burn; fix quietly, without a show.
+
+**Tunneling**: a tunnel through the burn; fix quietly.
 
 **Wrapper**: the outer leaf; it shapes the first impression.
 
@@ -2612,9 +2645,17 @@ The same roster can appear in shorter form in the app, but this book version kee
 
 **Ash as a shield**: stable ash protects the burn; black, hot ash means slow down.
 
-**RH**: how humid it is in storage.
+**Hot burn**: the cigar running too hot; slow the draw.
 
-**Pairing**: matching drink with smoke—smooth, not competitive.
+**Retrohale**: sending a little smoke out through the nose to taste it; a tool, not a duty for every guest.
+
+**RH**: relative humidity — how humid it is in storage.
+
+**Humidor**: the box or cabinet that keeps cigars at the right RH.
+
+**Travel humidor**: a small case for the road; not an excuse for mess.
+
+**Pairing**: matching drink with smoke — a bridge, not a contest.
 
 **BYOB**: bring your own bottle, and share it.
 
@@ -2622,7 +2663,17 @@ The same roster can appear in shorter form in the app, but this book version kee
 
 **Band**: the paper ring; remove it by local custom.
 
-**Nic-sick**: nicotine discomfort; slow down and take water/air.
+**Cut fee**: in some lounges, a charge for cutting or service; follow the local house, don't import foreign dogma.
+
+**Golf stick**: colloquial for a milder, often shorter cigar — pace and strength, not a formal grade.
+
+**Nic-sick**: nicotine discomfort; slow down and take water or air.
+
+**Strength vs body**: strength is nicotine hit; body is smoke density and flavour fullness — they need not match.
+
+**Smooth**: a soft compliment for a drink; in sharper company it may say little — or signal sweetness and additives. Ask what they taste; don't police the word.
+
+**Additives**: sugar, colour, glycerin or flavouring added to some spirits; legal does not always mean listed on the label. Manners speak clearly when you know — and do not turn the table into a courtroom.
 
 **E150a**: caramel colour permitted in rum and Scotch; dark bottle ≠ old spirit.
 
@@ -2634,9 +2685,17 @@ The same roster can appear in shorter form in the app, but this book version kee
 
 **Bridge**: the shared note that lets smoke and sip recognise each other — not a contest won by the louder flavour.
 
-**Golf stick**: colloquial for a milder, often shorter cigar — pace and strength, not a formal grade.
+**Peat**: the smoky note in some whiskies; warn a small room before you pour heavy peat.
 
-**Strength vs body**: strength is nicotine hit; body is smoke density and flavour fullness — they need not match.
+**Blanco (tequila)**: unaged or lightly rested tequila; often clearer and pepperier than aged bottles in tall gold glass.
+
+**Inner scorecard**: judging the evening by leaf and glass you liked — and by whether people would sit with you again — not by the loudest price.
+
+**Limited edition (LE)**: a limited run of a cigar; a story of tobacco and time, not a rank above a guest with a regular line.
+
+**Status pour / fancy bottle**: pouring the bottle everyone photographs instead of the one you trust; kindly pour what you like and ask what they smell, not what it cost.
+
+**Campfire table**: a metaphor for sitting as equals; status stays outside.
 
 ---
 

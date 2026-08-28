@@ -5,6 +5,10 @@ tags: [session, cache]
 updated: 2026-08-22
 ---
 
+> **2026-08-28:** EN gentleman draft: *Words you'll meet* + expanded back glossary (cigar jargon kept); Ch 14–16 enrichment (clothes rule, fancy bottle / status pour, additives); short rules wording. EN = source of truth.
+
+> **2026-08-28:** Bonton knjiga enrichment sync: Expansion value vs status pour; Ch 16 clothes #11; HR Ch 14–17 + Expansion I; lexicon `unutarnja-ljestvica`; grill-inbox/CROSSWALK closed.
+
 > **2026-08-22:** Bonton EN rukopis — Ch 15 (nikotin, snaga/tijelo, golf vitola) + Ch 20 (vjetar, tuđi prostor, strani običaji); interlude + workbook + glossary.
 
 > **2026-08-22:** Paralelna nadopuna znanja — Club (rječnik rum etiketa, 101 `d-rum-reading-label`, leksikon `distillery-first`, HR vodič `moj-plan-app`, bonton app nikotin/tuđi prostor); pairing UI prikazuje `pairingNarrative` u proširenoj kartici; `docs/bonton/README.md` + brain concepts (pairing-mechanism, club-content-map, book-app-bonton-sync).

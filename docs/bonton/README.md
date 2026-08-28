@@ -26,10 +26,11 @@ Tri sloja: **rukopis knjige**, **app (PWA)** i **brain-lite wiki**. Ne miješaj 
 |--------------------|---------|
 | Ch 5 — words at the table | `lexicon.json` → `rijeci-za-stol` |
 | Ch 13 — tasting host order | `bonton.json` → `b-table` |
-| Ch 14 — rum label literacy | `dictionary.json` + Club 101 `d-rum-reading-label` + `lexicon` `distillery-first` |
+| Ch 14 — rum label literacy + tequila additives / tall bottle | `dictionary.json` + Club 101 `d-rum-reading-label` + `lexicon` `distillery-first` |
 | Ch 15 — nicotine / strength vs body | `bonton.json` → `b-host` (+ `lexicon` `snaga-vs-tijelo`) |
+| Ch 16 — lounge (+ dress) | `bonton.json` → `b-lounge` |
 | Ch 20 — when the table is not yours | `bonton.json` → `b-outdoors` + Club 101 `t-foreign-table` |
-| Expansion — inner scorecard / LE | `lexicon.json` → `unutarnja-ljestvica`, `limited-edition` |
+| Expansion — inner scorecard / LE / value vs status | `lexicon.json` → `unutarnja-ljestvica`, `limited-edition` |
 
 Detaljna mapa: [`CROSSWALK.md`](./CROSSWALK.md).
 

@@ -220,3 +220,56 @@ Skripta: `app/scripts/add-youtube-gap-drinks-2026-08-25.py` (+ `derive-drink-bra
 **EN draft:** vinjeta *the tall bottle* + mini *The status pour* + proširenje o tequila aditivima uz rum (2026-08-25).
 
 *Zadnje ažuriranje ovog bloka: 2026-08-25.*
+
+---
+
+## YouTube corpus destilacija (2026-08-27)
+
+> Automatski sažetak iz `youtube-distill-corpus.py` — **ne** paste transkripta. Pun popis tema + linkovi: `01_work/output/youtube/2026-08-28-app-book-proposals.md`, wiki [[knowledge/concepts/youtube-corpus-map]], agent vodič [[knowledge/concepts/youtube-corpus-shelf-guide]].
+
+### P0 — bonton / lounge (1581 etiquette videa)
+
+- [x] **Dress code u loungeu** — shipped u `bonton.json` → `b-lounge` (ton prostora, ne poučavanje gosta)
+- [x] **Retrohale / nos** — već u Ch 13 / `b-host`; dictionary `retrohale`
+- [x] **William Hanson + Gentleman's Gazette** — precepti u `b-lounge`; kanali u `clubSources.json`
+
+### P0 — cigar how-to (3527 videa)
+
+- [x] **Humidor / storage** — Club 101 `c-humidor` (+ cap tar); dictionary termini
+- [x] **Cut & light** — `bonton.json` → `b-table` bullets; Club 101 `c-cut`, `c-light`
+
+### P0 — rum / value (1756 videa)
+
+- [x] **Smooth / additive** — dictionary `smooth-marketing`, `tequila-additives`; Club 101 `d-additives`
+- [x] **Value vs status pour** — Expansion Part III (*Value vs status pour / Vrijednost naspram statusnog točenja*); Ch 14 *tall bottle* / *visoka boca*; Ch 17 mini *status pour* / *statusno točenje*; lexicon `unutarnja-ljestvica`
+
+### Vinjeta-kandidati (metadata, 2026-08-28)
+
+| Tema | Primjer (channel / video) | App / knjiga |
+|------|---------------------------|--------------|
+| lounge_etiquette | williamhansonetiquette / etiquette how-to | b-lounge, grill-inbox |
+| cut_light | cigaraficionado / Editors' Cut | b-table, club101 |
+| humidor_storage | cigarsdaily / Humidor Care | c-humidor |
+| additive_smooth | rumverdict / smooth rums | dictionary, d-additives |
+| pairing | stevethebarmanuk / rum cocktail bridge | lexicon rijeci-za-stol |
+
+Query: `python app/scripts/youtube-query-corpus.py --domain etiquette --theme lounge_etiquette --limit 5`
+
+### Book sync 2026-08-28 (Ch 14–16 + Expansion)
+
+- [x] **EN Ch 14** — tequila additives + *tall bottle*; HR sync: *Slatkoća i oprez* + *Visoka boca*
+- [x] **EN/HR Ch 15** — parity OK (nikotin, ladder/exit, bez mema)
+- [x] **EN/HR Ch 16** — clothes rule #11; usklađeno s `b-lounge`
+- [x] **Expansion Part I** — HR *Unutarnja ljestvica*; EN simplified (keep LE / band / blend)
+- [x] **Expansion Part III** — *Fancy bottle vs good glass* EN + HR twin
+- [x] **Ch 17** — status pour / *Skupa boca* mini
+- [x] **EN glossary** — *Words you'll meet* (front) + expanded back *Glossary of table words* (cigar jargon kept; look up once)
+
+**Editorial note:** English manuscript = source of truth. Cigar jargon stays in chapters; young-adult readability = clear sentences, not stripping leaf language.
+
+### Operativa
+
+- [x] Phase 1A captions + post-corpus (2026-08-28): **17 274** destiliranih videa
+- Refresh: `powershell -File app/scripts/youtube-run-post-corpus.ps1`
+
+*Zadnje ažuriranje ovog bloka: 2026-08-28.*

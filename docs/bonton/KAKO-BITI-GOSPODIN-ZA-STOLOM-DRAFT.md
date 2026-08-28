@@ -339,7 +339,7 @@ Mit voli heroje s cigarama u ustima. Stol voli ljude koji gase pepeo na vrijeme 
 
 Hemingwayjevski i churchillovski tropeovi lijepi su za poster. Za večer su manje korisni od pepeljare i vode. Gospodin smije voljeti mit — i smije ga ostaviti na polici dok gosti sjede.
 
-### Precepti
+### Kratka pravila
 
 Gospodin zna kratku povijest da bi bio skromniji, ne da bi bio glasniji.
 
@@ -395,7 +395,7 @@ Gospodin ne kaže „Maduro je za prave”. Kaže: „Ova je tamnija i sporija �
 
 Dobar draw olakšava večer. Loš draw nije moralni pad. To je tehnički trenutak. Gospodin to rješava tiho — ili pita domaćina — bez javne dijagnoze tuđe cigare.
 
-### Precepti
+### Kratka pravila
 
 Gospodin zna anatomiju dovoljno da objasni, ne da impresionira.
 
@@ -463,7 +463,7 @@ Ako te pitaju što radiš ti, reci svoju praksu. Ne kao zakon.
 
 *Slika: prsten bez dogme (Studio nacrt).*
 
-### Precepti
+### Kratka pravila
 
 Gospodin ne liže kapu prije zajedničkog rezača.
 
@@ -513,7 +513,7 @@ Ako moraš odgovoriti na poruku, reci: „Trideset sekundi” i izađi — ili o
 
 Najbolje večeri drži osjećaj da nigdje ne moraš biti. Ako moraš, reci to na početku. Ljudi će prilagoditi format i tempo. Lažna beskrajnost zamorna je kao lažna bliskost.
 
-### Precepti
+### Kratka pravila
 
 Gospodin usporava kad pepeo pocrni.
 
@@ -557,7 +557,7 @@ Ako nudiš iz svog humidora, nudi izbor — ne „uzmi što nađeš dok ja prič
 
 Ovo nije priručnik o postotcima vlage. Brojke žive u 101. Ovdje živi odnos: tuđi list nije tvoj teren za istraživanje bez dozvole.
 
-### Precepti
+### Kratka pravila
 
 Gospodin pita prije ladice.
 
@@ -615,7 +615,7 @@ Samo na upit. Kratko. Bez publike. Bez „pravi znalac”.
 
 Ako te ne pitaju, puši svoje i budi ugodan. To je najteži maherski trik.
 
-### Precepti
+### Kratka pravila
 
 Gospodin čuva trikove za trenutak kad su traženi.
 
@@ -683,7 +683,7 @@ Ako ti je netko poklonio dobru kutiju, mudro je kasnije uzvratiti sličnom pažn
 
 Za gosta koji tek ulazi u svijet lista, blaža i kraća često drži stol bolje od „prave” teške. Gospodin to nudi bez omalovažavanja. „Za opuštanje” bolje zvuči od „za početnike” — iako je smisao isti: ne bacati nekoga u duboki kraj da bi ti izgledao hrabro.
 
-### Precepti
+### Kratka pravila
 
 Gospodin nudi vrijeme, ne samo list.
 
@@ -769,7 +769,7 @@ Vrati nepce vodom sobne temperature između gutljaja i dimova. Više vode nego a
 
 Ne aeriraj cask strength u ustima kao vino. Ponudi vodu; neka gost izabere kap.
 
-### Precepti
+### Kratka pravila
 
 Gospodin postavlja vodu prije mudrosti.
 
@@ -821,7 +821,7 @@ Visoki postotak alkohola ponekad „drži” puniji dim bolje od tankog gutljaja
 
 ### Slatkoća i oprez
 
-Slađi profili ponekad vole tamnije omote. Svjetliji omoti ponekad vole čistije, suše linije. Deklaracija dodataka u rumovima — gdje postoji — vrijedi više od marketinške magle. Gospodin ne moralizira o dodacima kao o grijehu; govori jasno kad zna, i šuti kad ne zna.
+Slađi pića ponekad vole tamnije cigare. Svjetlije cigare ponekad vole suše, čistije boce. Kad rum na etiketi kaže što je dodano, to vrijedi više od reklame. Isto vrijedi za tequilu: boja, glicerin i arome smiju biti u boci i bez retka na etiketi. Ne propovijedaj o dodacima kao o grijehu. Reci jasno kad znaš; šuti kad ne znaš. Ne citiraj aplikacije za stolom. Ako „glatko” zvuči predobro za cijenu, zapamti to — i ne pretvaraj večer u sud.
 
 ### Čitanje etikete ruma bez kazališta
 
@@ -847,7 +847,7 @@ Jako tresetno piće u maloj sobi treba najavu ili izlaz na terasu. Dim plus tres
 
 Kava uz dim može biti sjajan most — i dvostruki udar ako je sve teško. Gospodin ne forsira espresso uz najjači list kao dokaz izdržljivosti.
 
-### Precepti
+### Kratka pravila
 
 Gospodin traži most.
 
@@ -862,6 +862,10 @@ Gospodin ne ismijava tuđi vokabular.
 ### Vinjeta: „glatko”
 
 Gost kaže: „Ovaj rum je baš glatko.” Netko se naježi da ispravi. Ljubaznije: „Meni se čini vanilija i hrast — osjećaš li to ili ti više ide kao mekano?” Razgovor ostaje razgovor.
+
+### Vinjeta: visoka boca
+
+Gost poseže za visokom zlatnom tequilom jer svi znaju ime. Domaćin umjesto toga toči jednostavniji blanco i pita: „Što mirišiš prvo — trava, papar, limun?” Ne pita što je koštalo. Skupa boca ostaje na polici. Za stolom je okus. Nitko ne drži predavanje o dodacima. Čaša govori.
 
 ### Još o uparivanju
 
@@ -933,7 +937,7 @@ Domaćin koji spašava večer tiho veći je gospodar stola od onoga koji drži p
 
 Što se dogodilo za stolom ostaje za stolom. Ne prepričavaj tuđu nelagodu kao anegdotu, meme ili fotografiju. To nije duhovitost. To je izdaja u obliku humora.
 
-### Precepti
+### Kratka pravila
 
 Dobar domaćin nudi ljestvicu i izlaz.
 
@@ -967,7 +971,7 @@ Gospodin ne fotografira tuđu slabost. Nikad.
 
 Cigar lounge nije tvoja dnevna soba. Privatna terasa nije salon s cjenikom. Razlikuj.
 
-### Deset precepta salona
+### Jedanaest kratkih pravila salona
 
 1. **Ulazak.** Pozdravi sobu kratko. Pitaj je li mjesto slobodno — pepeljara ili čaša mogu čuvati stol dok je netko vani. Ne sjedaj kao da si kupio zrak.
 
@@ -989,6 +993,8 @@ Cigar lounge nije tvoja dnevna soba. Privatna terasa nije salon s cjenikom. Razl
 
 10. **Samo cigara.** Cigareta i vape u cigar loungeu često krše duh mjesta — čak i kad pravilo nije ispisano velikim slovima. Pitaj. Poštuj. Čitaj kućna pravila na ulazu.
 
+11. **Odjeća.** Domaćin ne poučava gosta što da obuče. Prostor ipak daje ton. Odijelo koje viče na sobu smeta više nego sportska jakna. Pravila odijevanja iz tuđeg salona nisu zakon na prijateljevoj terasi.
+
 ### Što ne uvoziti slijepo
 
 U nekim zemljama postoje kruta pravila napojnica, odijevanja i onih koji samo troše tuđe. U hrvatskom kontekstu: lokalni klub, lokalna trgovina, lokalna terasa. Gledaj što domaćin očekuje. Nemoj glumiti tuđi bonton da bi izgledao svjetski.
@@ -997,7 +1003,7 @@ U nekim zemljama postoje kruta pravila napojnica, odijevanja i onih koji samo tr
 
 Neki saloni stroži su od crkve. Neki su opušteni kao terasa. Gospodin čita sobu. Ne nameće Davidoffovu krutost na prijateljsku večer — niti prijateljski kaos u mjesto koje živi od tišine.
 
-### Precepti
+### Kratka pravila
 
 Gospodin u salonu plaća poštovanjem prostora.
 
@@ -1109,6 +1115,8 @@ Ljubazno: „Isto ime, druga povijest — evo što obično očekujem od ove kuti
 
 **Neujednačeno gorenje.** Krivo: predavanje. Ljubazno: „Okreni malo — ili evo druge.” Nastavi priču.
 
+**Skupa boca.** Gost traži bocu koju svi fotografiraju. Krivo: predavanje o glicerinu i poznatim imenima. Ljubazno: toči ono što stvarno voliš; pitaj što miriše; o cijeni pričaj drugi put.
+
 ### Mudra misao
 
 *Vinjeta nije za sramotiti junaka. Vinjeta je za spasiti sljedeću večer.*
@@ -1161,7 +1169,7 @@ Balkoni, prozori, hodnici hotela: pravila kuće vrijede više od tvoje navike.
 
 Gdje je dopušteno pušenje, i dalje vrijedi mjera. Gdje nije — gotovo je. Gospodin ne pregovara sa znakom.
 
-### Precepti
+### Kratka pravila
 
 Gospodin vani čita vjetar prije ega.
 
@@ -1225,7 +1233,7 @@ Zapiši što je sjelo: vitola, piće, most, ljudi, vrijeme. Kolekcija u bilježn
 
 Ne razotkrivaj tuđe slabosti za stolom kao anegdotu vani. To nije humor. To je izdaja stola.
 
-### Precepti
+### Kratka pravila
 
 Gospodin poklanja s kontekstom.
 
@@ -1323,7 +1331,7 @@ Dim se penje. Terasa iznad tuđeg balkona i dalje je tuđi zrak. Leđa vjetru, k
 
 Na obali vjetar s mora i s kopna prepisuju isti stol. Prilagodi mjesto ili format; ne krivi vitolu zbog lošeg sjedala.
 
-### Precepti
+### Kratka pravila
 
 Gospodin na tuđem stolu pita više.
 
@@ -1422,6 +1430,16 @@ Skromnost je kad priznaš: „Ovo ne znam.” Ta rečenica često otvara bolji r
 Skromnost je kad pustiš drugoga da bude stručniji od tebe bez da se natječeš.
 
 Skromnost je kad ne fotografiraš svoj pepeo kao da je umjetnički performans — osim ako svi pristaju na humor.
+
+### Unutarnja ljestvica — cijena nije večer
+
+Vanjska ljestvica: teška kutija, rijedak prsten, glasna cijena. Unutarnja ljestvica: jesu li cigara i čaša stvarno ugodili — i bi li ljudi opet sjeli s tobom.
+
+Nudi ono što stvarno voliš, ne ono što zvuči skupo. „Ova jednostavnija boca mi večeras radi” nije isprika. To je uljudnost.
+
+Ograničeno izdanje (LE) priča je o duhanu i vremenu. Nije rang iznad gosta s običnom cigarom. Ako hvališ, hvali mješavinu — ne ljude po prstenu.
+
+Dobra boca i dobra kutija isplate se kad ih otvoriš i podijeliš, ne kad ih fotkaš i vratiš na policu. Boca koja čeka „poseban dan” koji ne dolazi već je propustila svoju večer.
 
 ### Situacije: duh u praksi
 
@@ -1700,6 +1718,8 @@ Gospodin ne odgovara na svaku priču svojom dužom.
 **Fotografija (duže).** Stol izgleda lijepo. Telefon se diže. Jedno lice nije spremno. Pitaj. Ili fotografiraj ruke, pepeo, čaše — bez lica. Društvene mreže nisu važnije od povjerenja.
 
 **Bučan naljev (duže).** U whiskey krugu tišina je dio rituala. Glasan naljev razbija ga. Nije zločin. Jest nespretnost. Modeliraj tih naljev. Većina ljudi kopira ritam, ne govor.
+
+**Skupa boca umjesto dobre čaše (duže).** Gost poseže za bocom koju svi fotkaju — visoka, zlatna, poznato ime, ona koja „dokazuje” večer. Domaćin ne drži predavanje o glicerinu. Toči ono što stvarno voli. Pita što mirišu prvo. O cijeni priča drugi put. Skupa boca ostaje na polici. Stol dobiva piće. Dobro je ono što čaša i društvo još žele sutra.
 
 **Nelagoda od nikotina (duže).** Simptomi nisu predmet kladionice. Voda. Sjedni. Zrak. Možda slatko. Možda kraj dima. Sutra nema priče „sjećaš se kad si…”
 

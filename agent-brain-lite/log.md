@@ -9,6 +9,7 @@ updated: 2026-08-23
 
 | Datum | Događaj |
 |-------|---------|
+| 2026-08-28 | EN book enrichment: Words you'll meet + glossary; Ch 14–16 clothes/status pour; HR sync; lexicon + grill-inbox |
 | 2026-08-23 | YouTube corpus Phase 2 + Phase 3 start: classify/match/summarize; curated + applied 15 cigar / 4 rum enrichments; etiquette index 308 → grill-inbox bilješka. |
 | 2026-08-22 | Bonton EN draft Ch 15 + 20: nikotin bez srama, snaga/tijelo, golf vitola; tuđi prostor, vjetar, strani običaji; interlude fraze + glossary. |
 | 2026-08-22 | Paralelna nadopuna znanja: Club JSON (rječnik rum etiketa, 101 `d-rum-reading-label` / `t-foreign-table`, leksikon `distillery-first`, HR vodič `moj-plan-app`, bonton app nikotin + tuđi prostor); pairing UI — `pairingNarrative` u proširenoj kartici; `docs/bonton/README.md`; brain concepts pairing-mechanism, club-content-map, book-app-bonton-sync. |
