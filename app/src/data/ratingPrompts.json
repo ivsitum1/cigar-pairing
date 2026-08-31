@@ -1,0 +1,288 @@
+{
+  "_comment": "Šprance + prijedlozi za početnike. Chip pitanja otvara banku; prijedlog puni liniju. Usklađeno s Club 101 t-notebook i leksikonom (most, trećine, tijelo, obitelji nota).",
+  "ratingScale": [
+    {
+      "min": 1,
+      "max": 3,
+      "label": {
+        "hr": "1–3 ne radi",
+        "en": "1–3 does not work"
+      }
+    },
+    {
+      "min": 4,
+      "max": 5,
+      "label": {
+        "hr": "4–5 prolazno",
+        "en": "4–5 forgettable"
+      }
+    },
+    {
+      "min": 6,
+      "max": 7,
+      "label": {
+        "hr": "6–7 solidno, rado opet",
+        "en": "6–7 solid, gladly again"
+      }
+    },
+    {
+      "min": 8,
+      "max": 9,
+      "label": {
+        "hr": "8–9 shortlist",
+        "en": "8–9 shortlist"
+      }
+    },
+    {
+      "min": 10,
+      "max": 10,
+      "label": {
+        "hr": "10 referentna večer",
+        "en": "10 reference evening"
+      }
+    }
+  ],
+  "contexts": {
+    "pairing": {
+      "questions": [
+        {
+          "id": "bridge",
+          "label": { "hr": "Most", "en": "Bridge" },
+          "hint": {
+            "hr": "Dvije do tri riječi koje spajaju čašu i dim. Dovoljna je i jedna.",
+            "en": "Two or three words that join glass and smoke. One is enough."
+          },
+          "starter": { "hr": "Most: ", "en": "Bridge: " },
+          "suggestions": [
+            { "hr": "kakao", "en": "cocoa" },
+            { "hr": "orah", "en": "nut" },
+            { "hr": "karamela", "en": "caramel" },
+            { "hr": "cedar", "en": "cedar" },
+            { "hr": "kava", "en": "coffee" },
+            { "hr": "citrus", "en": "citrus" },
+            { "hr": "papar", "en": "pepper" },
+            { "hr": "vanilija", "en": "vanilla" },
+            { "hr": "med", "en": "honey" },
+            { "hr": "suho voće", "en": "dried fruit" },
+            { "hr": "koža / zemlja", "en": "leather / earth" },
+            { "hr": "još ne znam", "en": "not sure yet" }
+          ]
+        },
+        {
+          "id": "thirds",
+          "label": { "hr": "Trećina", "en": "Third" },
+          "hint": {
+            "hr": "Gdje je spoj radio — prva, druga ili zadnja trećina.",
+            "en": "Where the match worked — first, middle or final third."
+          },
+          "starter": { "hr": "Trećina: ", "en": "Third: " },
+          "suggestions": [
+            { "hr": "prva", "en": "first" },
+            { "hr": "druga", "en": "middle" },
+            { "hr": "zadnja", "en": "final" },
+            { "hr": "cijela večer", "en": "whole evening" },
+            { "hr": "samo uvod", "en": "opening only" },
+            { "hr": "puklo na kraju", "en": "fell apart late" }
+          ]
+        },
+        {
+          "id": "bodies",
+          "label": { "hr": "Tijela", "en": "Bodies" },
+          "hint": {
+            "hr": "Je li dojam u ustima jednako glasan, ili jedno nadjačava?",
+            "en": "Was the mouthfeel evenly loud, or did one side win?"
+          },
+          "starter": { "hr": "Tijela: ", "en": "Bodies: " },
+          "suggestions": [
+            { "hr": "usklađeno", "en": "matched" },
+            { "hr": "cigara jača", "en": "cigar louder" },
+            { "hr": "piće jače", "en": "drink louder" },
+            { "hr": "dobar kontrast", "en": "good contrast" },
+            { "hr": "preglasno", "en": "too loud" }
+          ]
+        },
+        {
+          "id": "again",
+          "label": { "hr": "Bi li opet", "en": "Again?" },
+          "hint": {
+            "hr": "Da, ne, ili uz jednu promjenu — ne moraš znati zašto odmah.",
+            "en": "Yes, no, or with one change — you need not know why yet."
+          },
+          "starter": { "hr": "Bi li opet: ", "en": "Again: " },
+          "suggestions": [
+            { "hr": "da", "en": "yes" },
+            { "hr": "ne", "en": "no" },
+            { "hr": "uz drugo piće", "en": "with another drink" },
+            { "hr": "uz kraću cigaru", "en": "with a shorter cigar" },
+            { "hr": "uz vodu između", "en": "with water between" },
+            { "hr": "sporije", "en": "slower pace" }
+          ]
+        }
+      ],
+      "skeleton": {
+        "hr": "Most: \nTrećina: \nTijela: \nBi li opet: ",
+        "en": "Bridge: \nThird: \nBodies: \nAgain: "
+      }
+    },
+    "cigar": {
+      "questions": [
+        {
+          "id": "draw",
+          "label": { "hr": "Draw", "en": "Draw" },
+          "hint": {
+            "hr": "Otpor zraka — kako lako dim prolazi.",
+            "en": "Airflow — how easily the smoke comes through."
+          },
+          "starter": { "hr": "Draw: ", "en": "Draw: " },
+          "suggestions": [
+            { "hr": "prelak", "en": "too open" },
+            { "hr": "uravnotežen", "en": "balanced" },
+            { "hr": "tvrd", "en": "tight" },
+            { "hr": "popravio se", "en": "eased up" },
+            { "hr": "hladni draw OK", "en": "cold draw OK" }
+          ]
+        },
+        {
+          "id": "notes",
+          "label": { "hr": "Nota", "en": "Notes" },
+          "hint": {
+            "hr": "Prvo obitelj, pa tek konkretna riječ ako ti dođe.",
+            "en": "Start with a family, then a concrete word if it comes."
+          },
+          "starter": { "hr": "Nota: ", "en": "Notes: " },
+          "suggestions": [
+            { "hr": "slatko", "en": "sweet" },
+            { "hr": "tamno", "en": "dark" },
+            { "hr": "drveno", "en": "woody" },
+            { "hr": "začin", "en": "spice" },
+            { "hr": "svježe", "en": "fresh" },
+            { "hr": "kakao", "en": "cocoa" },
+            { "hr": "orah", "en": "nut" },
+            { "hr": "papar", "en": "pepper" },
+            { "hr": "cedar", "en": "cedar" },
+            { "hr": "zemlja", "en": "earth" },
+            { "hr": "još ne znam", "en": "not sure yet" }
+          ]
+        },
+        {
+          "id": "thirds",
+          "label": { "hr": "Trećine", "en": "Thirds" },
+          "hint": {
+            "hr": "Što se mijenjalo od uvoda do kraja — ili je bilo ravno.",
+            "en": "What changed from start to finish — or stayed steady."
+          },
+          "starter": { "hr": "Trećine: ", "en": "Thirds: " },
+          "suggestions": [
+            { "hr": "ravno cijelo vrijeme", "en": "steady throughout" },
+            { "hr": "otvorilo se u sredini", "en": "opened in the middle" },
+            { "hr": "začin na kraju", "en": "spice at the end" },
+            { "hr": "gorčina na kraju", "en": "bitterness late" },
+            { "hr": "vruće u zadnjoj", "en": "hot in the final third" },
+            { "hr": "najbolje prva", "en": "best in the first" }
+          ]
+        },
+        {
+          "id": "again",
+          "label": { "hr": "Bi li opet", "en": "Again?" },
+          "hint": {
+            "hr": "Da, ne, ili uz jednu promjenu.",
+            "en": "Yes, no, or with one change."
+          },
+          "starter": { "hr": "Bi li opet: ", "en": "Again: " },
+          "suggestions": [
+            { "hr": "da", "en": "yes" },
+            { "hr": "ne", "en": "no" },
+            { "hr": "uz drugo piće", "en": "with another drink" },
+            { "hr": "uz drugu vitolu", "en": "with another vitola" },
+            { "hr": "solo, bez pića", "en": "solo, no drink" },
+            { "hr": "kraća sesija", "en": "shorter session" }
+          ]
+        }
+      ],
+      "skeleton": {
+        "hr": "Draw: \nNota: \nTrećine: \nBi li opet: ",
+        "en": "Draw: \nNotes: \nThirds: \nAgain: "
+      }
+    },
+    "drink": {
+      "questions": [
+        {
+          "id": "body",
+          "label": { "hr": "Tijelo", "en": "Body" },
+          "hint": {
+            "hr": "Težina u ustima i duljina završetka.",
+            "en": "Weight on the palate and length of finish."
+          },
+          "starter": { "hr": "Tijelo / završetak: ", "en": "Body / finish: " },
+          "suggestions": [
+            { "hr": "lagano, kratko", "en": "light, short" },
+            { "hr": "srednje", "en": "medium" },
+            { "hr": "puno, dugo", "en": "full, long" },
+            { "hr": "kremasto", "en": "creamy" },
+            { "hr": "oštro / alkoholno", "en": "sharp / hot" },
+            { "hr": "suho", "en": "dry" }
+          ]
+        },
+        {
+          "id": "notes",
+          "label": { "hr": "Nota", "en": "Notes" },
+          "hint": {
+            "hr": "Prvo obitelj, pa tek konkretna riječ ako ti dođe.",
+            "en": "Start with a family, then a concrete word if it comes."
+          },
+          "starter": { "hr": "Nota: ", "en": "Notes: " },
+          "suggestions": [
+            { "hr": "slatko", "en": "sweet" },
+            { "hr": "tamno", "en": "dark" },
+            { "hr": "drveno", "en": "woody" },
+            { "hr": "začin", "en": "spice" },
+            { "hr": "svježe", "en": "fresh" },
+            { "hr": "voće", "en": "fruit" },
+            { "hr": "orah", "en": "nut" },
+            { "hr": "vanilija", "en": "vanilla" },
+            { "hr": "treset / dim", "en": "peat / smoke" },
+            { "hr": "još ne znam", "en": "not sure yet" }
+          ]
+        },
+        {
+          "id": "serve",
+          "label": { "hr": "Posluživanje", "en": "Serve" },
+          "hint": {
+            "hr": "Kako je bilo u čaši — to mijenja dojam više nego etiketa.",
+            "en": "How it was served — that changes more than the label."
+          },
+          "starter": { "hr": "Posluživanje: ", "en": "Serve: " },
+          "suggestions": [
+            { "hr": "neat", "en": "neat" },
+            { "hr": "kap vode", "en": "drop of water" },
+            { "hr": "led", "en": "ice" },
+            { "hr": "highball", "en": "highball" },
+            { "hr": "sobna temperatura", "en": "room temp" },
+            { "hr": "hladnije", "en": "chilled" }
+          ]
+        },
+        {
+          "id": "again",
+          "label": { "hr": "Bi li opet", "en": "Again?" },
+          "hint": {
+            "hr": "Solo, uz cigaru, ili uz jednu promjenu.",
+            "en": "Solo, with a cigar, or with one change."
+          },
+          "starter": { "hr": "Bi li opet: ", "en": "Again: " },
+          "suggestions": [
+            { "hr": "solo", "en": "solo" },
+            { "hr": "uz laganu cigaru", "en": "with a mild cigar" },
+            { "hr": "uz srednju cigaru", "en": "with a medium cigar" },
+            { "hr": "uz puniju cigaru", "en": "with a fuller cigar" },
+            { "hr": "uz više vode", "en": "with more water" },
+            { "hr": "ne bih", "en": "not again" }
+          ]
+        }
+      ],
+      "skeleton": {
+        "hr": "Tijelo / završetak: \nNota: \nPosluživanje: \nBi li opet: ",
+        "en": "Body / finish: \nNotes: \nServe: \nAgain: "
+      }
+    }
+  }
+}

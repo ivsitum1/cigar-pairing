@@ -68,6 +68,9 @@ describe("club 101 vodici", () => {
     expect(club101.tracks.tips.find((c) => c.id === "t-notebook")?.body.hr).toContain(
       "Predložak bilješke",
     );
+    expect(club101.tracks.tips.find((c) => c.id === "t-notebook")?.body.hr).toContain(
+      "Šprance",
+    );
 
     const wine = club101.tracks.drinks.find((c) => c.id === "d-wine-table");
     expect(wine?.body.hr.toLowerCase()).toMatch(/tanin/);
