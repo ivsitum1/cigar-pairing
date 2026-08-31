@@ -11,6 +11,7 @@ import { applyVitola, uniqueVitolas } from "../lib/cigarVitola";
 import { shouldOfferWishlist } from "../lib/lastCigar";
 import { LastCigarPrompt } from "./LastCigarPrompt";
 import { TastePrompt } from "./TastePrompt";
+import { NotePrompts } from "./NotePrompts";
 import { getTasteProfile } from "../store/tasteProfile";
 
 const SOLO = "__solo__";
@@ -339,11 +340,18 @@ export function EveningSessionSheet({
             </select>
           </label>
 
+          <NotePrompts
+            context="pairing"
+            value={note}
+            onChange={setNote}
+            showRatingScale
+          />
+
           <textarea
             value={note}
             onChange={(e) => setNote(e.target.value)}
             placeholder={t("coll.notePlaceholder")}
-            rows={2}
+            rows={4}
             className={selectCls}
           />
 

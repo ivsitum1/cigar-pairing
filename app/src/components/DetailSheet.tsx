@@ -57,6 +57,7 @@ import { useMarket } from "../store/market";
 import { useTasteProfiles } from "../store/tasteProfile";
 import { withTaste } from "../lib/tasteProfile";
 import { TasteMeters } from "./TasteMeters";
+import { NotePrompts } from "./NotePrompts";
 import {
   addHumidor,
   adjustStock,
@@ -201,13 +202,32 @@ export function DetailSheet({
             </select>
           </div>
         </div>
+        {active && (
+          <div className="mt-3">
+            <NotePrompts
+              context={active.kind === "cigar" ? "cigar" : "drink"}
+              value={note}
+              onChange={(next) => {
+                setNote(next);
+                updateItem(id, { note: next });
+              }}
+              showRatingScale
+            />
+          </div>
+        )}
         <textarea
           value={note}
           onChange={(e) => setNote(e.target.value)}
           onBlur={saveNote}
-          placeholder={t("coll.notePlaceholder")}
-          rows={2}
-          className="mt-3 w-full rounded-lg border border-dim/25 bg-cedar px-3 py-2 text-sm text-papir placeholder:text-dim/60 focus:border-zlato/60 focus:outline-none"
+          placeholder={
+            active?.kind === "drink"
+              ? t("coll.notePlaceholderDrink")
+              : active?.kind === "cigar"
+                ? t("coll.notePlaceholderCigar")
+                : t("coll.notePlaceholder")
+          }
+          rows={4}
+          className="mt-2 w-full rounded-lg border border-dim/25 bg-cedar px-3 py-2 text-sm text-papir placeholder:text-dim/60 focus:border-zlato/60 focus:outline-none"
         />
 
         {active.kind === "cigar" && (

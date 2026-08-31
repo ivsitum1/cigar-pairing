@@ -24,6 +24,7 @@ const DATA_FILES = [
   "giftQuestions.json",
   "hrGuide.json",
   "lexicon.json",
+  "ratingPrompts.json",
   "rums.json",
   "shopping.json",
   "tequilas.json",

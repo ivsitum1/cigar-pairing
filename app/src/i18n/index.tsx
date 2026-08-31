@@ -523,7 +523,26 @@ const STRINGS = {
     en: "Only applies to this logged evening. It does not change your cigar’s My rating.",
   },
   "coll.note": { hr: "Bilješka", en: "Note" },
-  "coll.notePlaceholder": { hr: "Dojmovi, uz što je pasalo…", en: "Impressions, what it paired with…" },
+  "coll.notePlaceholder": {
+    hr: "Most · trećina · tijela · bi li opet…",
+    en: "Bridge · third · bodies · again…",
+  },
+  "coll.notePlaceholderCigar": {
+    hr: "Draw · nota · trećine · bi li opet…",
+    en: "Draw · notes · thirds · again…",
+  },
+  "coll.notePlaceholderDrink": {
+    hr: "Tijelo · nota · posluživanje · bi li opet…",
+    en: "Body · notes · serve · again…",
+  },
+  "notePrompts.title": { hr: "Šprance", en: "Prompts" },
+  "notePrompts.hint": {
+    hr: "Odaberi pitanje, pa tipni prijedlog — ne treba biti kreativan. „Još ne znam” je valjan odgovor.",
+    en: "Pick a question, then tap a suggestion — you need not be creative. “Not sure yet” counts.",
+  },
+  "notePrompts.suggestions": { hr: "Prijedlozi", en: "Suggestions" },
+  "notePrompts.insertSkeleton": { hr: "Umetni predložak", en: "Insert template" },
+  "notePrompts.ratingScale": { hr: "Ljestvica ocjene", en: "Rating scale" },
   "coll.export": { hr: "Izvoz podataka", en: "Export data" },
   "coll.import": { hr: "Uvoz podataka", en: "Import data" },
   "coll.journal": { hr: "Dnevnik sparivanja", en: "Pairing journal" },
