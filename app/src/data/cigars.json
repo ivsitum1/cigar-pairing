@@ -18635,7 +18635,8 @@
     ],
     "markets": [
       "USA",
-      "WW"
+      "WW",
+      "HR"
     ],
     "regionLinks": {
       "USA": {
@@ -18644,7 +18645,9 @@
       }
     },
     "catalogSource": "market",
-    "availabilityHR": [],
+    "availabilityHR": [
+      "Havana Cigar Shop"
+    ],
     "notes": {
       "hr": "Dominikanska Republika — linija iz trgovine Neptune Cigar.",
       "en": "Dominican Republic — line from Neptune Cigar."
@@ -152926,7 +152929,8 @@
     ],
     "markets": [
       "USA",
-      "WW"
+      "WW",
+      "HR"
     ],
     "regionLinks": {
       "USA": {
@@ -152935,7 +152939,9 @@
       }
     },
     "catalogSource": "market",
-    "availabilityHR": [],
+    "availabilityHR": [
+      "The Humidor"
+    ],
     "notes": {
       "hr": "Dominikanska Republika — linija iz trgovine Neptune Cigar.",
       "en": "Dominican Republic — line from Neptune Cigar."
