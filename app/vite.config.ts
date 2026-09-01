@@ -172,7 +172,10 @@ export default defineConfig({
     },
   },
   test: {
+    // Zadano ostaje `node`: ~900 testova nad podacima i logikom ne treba DOM i
+    // s njim bi bili osjetno sporiji. Testovi komponenti traze jsdom pojedinacno,
+    // docblockom `@vitest-environment jsdom` na vrhu datoteke.
     environment: "node",
-    include: ["src/**/*.test.ts"],
+    include: ["src/**/*.test.ts", "src/**/*.test.tsx"],
   },
 });
