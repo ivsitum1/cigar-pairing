@@ -30,6 +30,7 @@ Pokreni iz app/:
     python3 scripts/fetch-product-images.py --kind cigars --limit 50
     python3 scripts/fetch-product-images.py --kind drinks
     python3 scripts/fetch-product-images.py --force        # ponovno sve
+    python3 scripts/fetch-product-images.py --scoped only  # samo sloj po vitoli
 """
 from __future__ import annotations
 
@@ -48,6 +49,8 @@ HERE = Path(__file__).resolve().parent
 DATA = HERE.parent / "src" / "data"
 OUT = HERE / "output"
 RAW_DIR = OUT / "product-images" / "raw"
+# `cigarItemId` spaja liniju i vitolu ovim znakom: cig-x@robusto
+VITOLA_SEP = "@"
 INDEX = OUT / "product_images_raw.json"
 
 MANIFEST = DATA / "productImages.json"
@@ -253,6 +256,15 @@ def main() -> int:
     p.add_argument("--kind", choices=("cigars", "drinks"), default="cigars")
     p.add_argument("--limit", type=int, default=0, help="0 = bez ogranicenja")
     p.add_argument("--force", action="store_true", help="ponovno preuzmi i vec spremljeno")
+    p.add_argument(
+        "--scoped",
+        choices=("only", "skip"),
+        default=None,
+        help=(
+            "vitola-scoped kljucevi (cig-x@vitola): 'only' obradjuje samo njih, "
+            "'skip' samo linije. Bez zastavice ide sve."
+        ),
+    )
     p.add_argument("--pause", type=float, default=PAUZA_S)
     args = p.parse_args()
 
@@ -265,12 +277,21 @@ def main() -> int:
     posao = [
         (i, u) for i, u in stavke if (u or i in izravne) and (args.force or i not in vec)
     ]
+    # Sloj po vitoli je zaostao za linijama: `--limit` bez filtra potrosio bi
+    # budzet na linije koje su vec preuzete na drugom stroju, pa ga treba moci
+    # ciljati izravno.
+    if args.scoped == "only":
+        posao = [(i, u) for i, u in posao if VITOLA_SEP in i]
+    elif args.scoped == "skip":
+        posao = [(i, u) for i, u in posao if VITOLA_SEP not in i]
     if args.limit:
         posao = posao[: args.limit]
 
+    scoped_ukupno = sum(1 for i in izravne if VITOLA_SEP in i)
     print(
-        f"{args.kind}: {len(stavke)} u katalogu, {len(izravne)} s poznatom adresom, "
-        f"{len(posao)} za preuzeti"
+        f"{args.kind}: {len(stavke)} u katalogu, {len(izravne)} s poznatom adresom "
+        f"({scoped_ukupno} po vitoli), {len(posao)} za preuzeti"
+        + (f" [--scoped {args.scoped}]" if args.scoped else "")
     )
     odredisce = RAW_DIR / args.kind
     odredisce.mkdir(parents=True, exist_ok=True)
