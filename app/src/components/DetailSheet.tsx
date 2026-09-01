@@ -353,6 +353,8 @@ function CigarDetails({
           <ProductThumb
             src={photo.src}
             treatment={photo.treatment}
+            width={photo.width}
+            height={photo.height}
             alt={`${displayBrand} ${cigar.line}`}
           />
         )}
@@ -556,6 +558,8 @@ function DrinkDetails({
             <ProductThumb
               src={photo.src}
               treatment={photo.treatment}
+              width={photo.width}
+              height={photo.height}
               alt={lx(drinkNameLoc(drink))}
             />
           )}

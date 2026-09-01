@@ -90,6 +90,8 @@ export function LineSheet({
             <ProductThumb
               src={photo.src}
               treatment={photo.treatment}
+              width={photo.width}
+              height={photo.height}
               alt={`${displayBrand} ${cigar.line}`}
             />
           )}
