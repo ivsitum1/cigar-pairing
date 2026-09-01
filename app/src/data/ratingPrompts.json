@@ -73,13 +73,13 @@
           "id": "thirds",
           "label": { "hr": "Trećina", "en": "Third" },
           "hint": {
-            "hr": "Gdje je spoj radio — prva, druga ili zadnja trećina.",
+            "hr": "Gdje je spoj radio — prva, srednja ili zadnja trećina.",
             "en": "Where the match worked — first, middle or final third."
           },
           "starter": { "hr": "Trećina: ", "en": "Third: " },
           "suggestions": [
             { "hr": "prva", "en": "first" },
-            { "hr": "druga", "en": "middle" },
+            { "hr": "srednja", "en": "middle" },
             { "hr": "zadnja", "en": "final" },
             { "hr": "cijela večer", "en": "whole evening" },
             { "hr": "samo uvod", "en": "opening only" },

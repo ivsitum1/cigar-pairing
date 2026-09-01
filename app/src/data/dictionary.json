@@ -3312,19 +3312,20 @@
     {
       "id": "flavor-family",
       "term": {
-        "hr": "Obitelj okusa",
+        "hr": "Obitelj nota",
         "en": "Flavor family"
       },
       "def": {
-        "hr": "Skup srodnih nota koje se obično spominju zajedno — orašasto, biljno, dimno, slatko.",
-        "en": "A cluster of related notes usually named together — nutty, herbal, smoky, sweet."
+        "hr": "Skup srodnih nota koje se imenuju zajedno; aplikacija ih drži pet — slatko, tamno, drveno, začin, svježe.",
+        "en": "A cluster of related notes named together; the app keeps five — sweet, dark, woody, spice, fresh."
       },
       "body": {
-        "hr": "Obitelj je praktičniji od popisa deset pojedinačnih nota. „Dimno-biljno” govori više od tri odvojene riječi koje nitko ne pamti. Pri sparivanju prvo tražite obitelj, pa tek onda finu razliku unutar nje.",
-        "en": "A family is more practical than a list of ten isolated notes. \"Smoky-herbal\" says more than three separate words nobody will remember. When pairing, look for the family first, then the fine difference within it."
+        "hr": "Obitelj je praktičnija od popisa deset pojedinačnih nota. „Tamno” govori više od tri odvojene riječi koje nitko ne pamti, a unutar nje stoje kakao, kava i melasa. Pri sparivanju prvo tražite obitelj, pa tek onda finu razliku unutar nje.\n\nIste obitelji nude i Šprance za bilješku, pa se ista riječ upisuje u dnevnik.",
+        "en": "A family is more practical than a list of ten isolated notes. \"Dark\" says more than three separate words nobody will remember, and cocoa, coffee and molasses all live inside it. When pairing, look for the family first, then the fine difference within it.\n\nThe note Prompts offer the same five families, so the same word reaches your journal."
       },
       "aliases": [
         "flavor cluster",
+        "obitelj okusa",
         "okusna obitelj"
       ],
       "seeAlso": [
@@ -5012,12 +5013,12 @@
         "en": "Thirds pairing"
       },
       "def": {
-        "hr": "Različito piće ili naglasak kroz prvu, srednju i završnu trećinu cigare.",
+        "hr": "Različito piće ili naglasak kroz prvu, srednju i zadnju trećinu cigare.",
         "en": "Different drinks or accents through the first, middle, and final third of the cigar."
       },
       "body": {
-        "hr": "Cigara se mijenja dok je pušite; stol može pratiti tu promjenu. Prva trećina često traži svježiji gutljaj, srednja puninu, završna mir ili kontrast. Nije obavezno — ali pokazuje da slušate dim, ne samo katalog.",
-        "en": "A cigar changes as you smoke it; the table can follow that shift. The first third often wants a fresher sip, the middle wants weight, the finish wants calm or contrast. It is not mandatory — but it shows you are listening to the smoke, not only the catalog."
+        "hr": "Cigara se mijenja dok je pušite; stol može pratiti tu promjenu. Prva trećina često traži svježiji gutljaj, srednja puninu, zadnja mir ili kontrast. Nije obavezno — ali pokazuje da slušate dim, ne samo katalog.",
+        "en": "A cigar changes as you smoke it; the table can follow that shift. The first third often wants a fresher sip, the middle wants weight, the final third wants calm or contrast. It is not mandatory — but it shows you are listening to the smoke, not only the catalog."
       },
       "aliases": [
         "thirds",
@@ -5466,15 +5467,16 @@
         "en": "Thirds of a cigar"
       },
       "def": {
-        "hr": "Podjela dima na prvu, srednju i završnu trećinu.",
-        "en": "Dividing the smoke into first, second, and final thirds."
+        "hr": "Podjela dima na prvu, srednju i zadnju trećinu.",
+        "en": "Dividing the smoke into first, middle, and final thirds."
       },
       "body": {
-        "hr": "Prva trećina obično donosi najsvježije note i ponekad jači nikotin; srednja gradi profil; završna trećina najdublje i najtoplije gori — pazite na temperaturu.\n\nOva podjela pomaže u degustacijskim bilješkama, iako granice nisu matematičke.",
-        "en": "The first third usually brings the freshest notes and sometimes sharper nicotine; the second builds the profile; the final third burns deepest and hottest — watch temperature.\n\nThis division aids tasting notes, though boundaries are not mathematical."
+        "hr": "Prva trećina obično donosi najsvježije note i ponekad jači nikotin; srednja gradi profil; zadnja trećina najdublje i najtoplije gori — pazite na temperaturu.\n\nOva podjela pomaže u degustacijskim bilješkama, iako granice nisu matematičke.",
+        "en": "The first third usually brings the freshest notes and sometimes sharper nicotine; the middle builds the profile; the final third burns deepest and hottest — watch temperature.\n\nThis division aids tasting notes, though boundaries are not mathematical."
       },
       "aliases": [
         "first third",
+        "middle third",
         "second third",
         "final third"
       ],

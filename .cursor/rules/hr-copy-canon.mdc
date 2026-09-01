@@ -45,6 +45,36 @@ Genitive *pepela*, compounds *pepeljara*, *pepelni* OK.
 - Optional glossary gloss: *povlačenje (draw)* for the resistance concept only — never for a countable puff.
 - **Forbidden:** *vlak* as a calque of *draw* (in Croatian *vlak* means train).
 
+## Trećine cigare
+
+| Position | HR | EN |
+|----------|----|----|
+| 1. | **prva trećina** | first third |
+| 2. | **srednja trećina** | middle third |
+| 3. | **zadnja trećina** | final third |
+
+**Forbidden for the middle:** *druga trećina* (and EN *second third* in running text — it survives only as a search alias in the dictionary).  
+**Forbidden for the last:** *završna trećina*. Keep *završetak / finish* for the **drink's** finish; a cigar's last third is *zadnja*.  
+*drugu trećinu* never means „another third" — write **još jednu trećinu** for that sense.
+
+## Obitelji nota
+
+Five families, and only these five: **slatko, tamno, drveno, začin, svježe** (EN *sweet, dark, woody, spice, fresh*).
+
+Home is `lexicon.json` → `obitelji-nota`; `dictionary.json` → `flavor-family` defines the term, and `ratingPrompts.json` offers the same five as the first chips on the *Nota* line. HR headword is **obitelj nota** (*obitelj okusa* stays as a search alias only). Concrete words (kakao, cedar, papar…) sit *inside* a family — never alongside them as a sixth family.
+
+## Note prompt lines (Šprance)
+
+`ratingPrompts.json` is the source of truth; `i18n` placeholders and Club 101 `t-notebook` follow it, never the other way round.
+
+| Context | HR | EN |
+|---------|----|----|
+| Sparivanje | most · trećina · tijela · bi li opet | bridge · third · bodies · again |
+| Cigara | draw · nota · trećine · bi li opet | draw · notes · thirds · again |
+| Piće | tijelo / završetak · nota · posluživanje · bi li opet | body / finish · notes · serve · again |
+
+Rating band copy comes from `ratingPrompts.json` → `ratingScale`; do not paraphrase it in prose. `src/lib/ratingPrompts.test.ts` and `src/data/copyCanon.test.ts` enforce all of the above.
+
 ## Infinitive stacks
 
 Do not write etiquette or instructions as bare infinitive chains (*gasiti ili ostaviti*, *pitati prije paljenja*, *ne gurati…*). Prefer finite, spoken Croatian: *gasite ili ostavite*, *pitajte prije nego što zapalite*, *ne gurajte*.

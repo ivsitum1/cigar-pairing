@@ -202,29 +202,25 @@ export function DetailSheet({
             </select>
           </div>
         </div>
-        {active && (
-          <div className="mt-3">
-            <NotePrompts
-              context={active.kind === "cigar" ? "cigar" : "drink"}
-              value={note}
-              onChange={(next) => {
-                setNote(next);
-                updateItem(id, { note: next });
-              }}
-              showRatingScale
-            />
-          </div>
-        )}
+        <div className="mt-3">
+          <NotePrompts
+            context={active.kind}
+            value={note}
+            onChange={(next) => {
+              setNote(next);
+              updateItem(id, { note: next });
+            }}
+            showRatingScale
+          />
+        </div>
         <textarea
           value={note}
           onChange={(e) => setNote(e.target.value)}
           onBlur={saveNote}
           placeholder={
-            active?.kind === "drink"
+            active.kind === "drink"
               ? t("coll.notePlaceholderDrink")
-              : active?.kind === "cigar"
-                ? t("coll.notePlaceholderCigar")
-                : t("coll.notePlaceholder")
+              : t("coll.notePlaceholderCigar")
           }
           rows={4}
           className="mt-2 w-full rounded-lg border border-dim/25 bg-cedar px-3 py-2 text-sm text-papir placeholder:text-dim/60 focus:border-zlato/60 focus:outline-none"
