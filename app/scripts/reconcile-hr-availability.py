@@ -20,6 +20,7 @@ import argparse
 import importlib.util
 import json
 import re
+import shutil
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -29,6 +30,7 @@ DATA = APP / "src" / "data"
 OUT = ROOT / "output"
 SNAPSHOT = OUT / "hr_catalog_snapshot.json"
 REPORT = OUT / "hr_reconcile_report.json"
+CIGARS_BACKUP = OUT / "hr_cigars_pre_reconcile.json"
 CIGARS = DATA / "cigars.json"
 
 HR_HOSTS = ("humidor.hr", "havana-cigar-shop.com")
@@ -71,6 +73,11 @@ def _load_sync():
 # praznjenjem police. Trgovina koja padne ili promijeni API vratila bi kratku
 # listu, a reconcile bi tada pomeo HR s pola kataloga — tiho i nepovratno.
 MIN_FETCH_RATIO = 0.7
+
+# Ako bi reconcile maknuo više od ovog udjela postojećih HR tržišta odjednom,
+# vjerojatnije je da je matcher ili snapshot kriv — vratimo cigars.json iz
+# sigurnosne kopije i ne pišemo promjenu.
+MAX_REMOVAL_RATIO = 0.15
 
 
 def fetch_snapshot(sync) -> dict:
@@ -307,6 +314,40 @@ def integrity_count(cigars: list[dict]) -> int:
     return len(bad)
 
 
+def hr_market_count(cigars: list[dict]) -> int:
+    return sum(1 for c in cigars if "HR" in (c.get("markets") or []))
+
+
+def backup_cigars() -> None:
+    OUT.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(CIGARS, CIGARS_BACKUP)
+
+
+def rollback_cigars() -> bool:
+    if not CIGARS_BACKUP.exists():
+        return False
+    shutil.copy2(CIGARS_BACKUP, CIGARS)
+    return True
+
+
+def validate_reconcile(
+    cigars: list[dict],
+    removed: list[dict],
+    hr_before: int,
+) -> None:
+    bad = integrity_count(cigars)
+    if bad:
+        raise SystemExit(
+            f"Integritet: {bad} cigara ima markets.HR bez availabilityHR ili "
+            f"regionLinks.HR — cigars.json NIJE prepisan."
+        )
+    if hr_before and len(removed) > hr_before * MAX_REMOVAL_RATIO:
+        raise SystemExit(
+            f"Reconcile bi maknuo {len(removed)} HR tržišta od {hr_before} "
+            f"(>{MAX_REMOVAL_RATIO:.0%}) — sumnjivo mnogo; cigars.json NIJE prepisan."
+        )
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--fetch", action="store_true", help="Ponovno dohvati HR kataloge")
@@ -326,6 +367,8 @@ def main() -> None:
     )
 
     cigars = json.loads(CIGARS.read_text(encoding="utf-8"))
+    hr_before = hr_market_count(cigars)
+    backup_cigars()
     present, present_vitola = build_present(sync, snap, cigars)
     print(
         f"Prisutni (brand,line)={len(present)} (brand,vitola)={len(present_vitola)}",
@@ -333,6 +376,13 @@ def main() -> None:
     )
 
     removed, added = reconcile(cigars, present, sync, present_vitola)
+    try:
+        validate_reconcile(cigars, removed, hr_before)
+    except SystemExit:
+        if rollback_cigars():
+            print(f"Povrat: {CIGARS} vraćen iz {CIGARS_BACKUP}", flush=True)
+        raise
+
     # indent=2 + zavrsni novi red = format ostatka repozitorija; indent=1 bi
     # reformatirao cijelu datoteku i utopio stvarnu promjenu u 2400 redaka suma
     CIGARS.write_text(
@@ -346,7 +396,8 @@ def main() -> None:
         "removed_count": len(removed),
         "added_count": len(added),
         "hr_without_source": integrity_count(cigars),
-        "hr_markets_remaining": sum(1 for c in cigars if "HR" in (c.get("markets") or [])),
+        "hr_markets_remaining": hr_market_count(cigars),
+        "hr_markets_before": hr_before,
         "removed": removed,
         "added": added,
     }
@@ -359,6 +410,7 @@ def main() -> None:
         f"HR markets preostalo: {report['hr_markets_remaining']}",
         flush=True,
     )
+    print(f"Sigurnosna kopija: {CIGARS_BACKUP}", flush=True)
     print(f"Report: {REPORT}", flush=True)
 
 
