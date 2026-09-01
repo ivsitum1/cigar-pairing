@@ -129,7 +129,3 @@ export function productPhotoForCigar(cigar: Cigar): ProductPhoto | null {
   return productPhoto("cigar", cigar.id);
 }
 
-/** Koliko je slika prošlo obradu — za izvještaj skripte i provjere. */
-export function processedCount(): number {
-  return Object.keys(LOCAL.cigars ?? {}).length + Object.keys(LOCAL.drinks ?? {}).length;
-}

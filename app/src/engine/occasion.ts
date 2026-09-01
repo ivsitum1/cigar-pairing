@@ -45,14 +45,6 @@ export function occasionKeep(
   return () => true;
 }
 
-/** @deprecated soft-only — svi prolaze */
-export const OCCASION_KEEP: Record<OccasionFilter, (d: Drink) => boolean> = {
-  any: () => true,
-  morning: () => true,
-  afternoon: () => true,
-  evening: () => true,
-};
-
 type Clock = Record<Occasion, number>;
 
 const clock = (morning: number, afternoon: number, evening: number): Clock => ({

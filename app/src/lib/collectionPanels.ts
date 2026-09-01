@@ -23,12 +23,3 @@ export function ownedWithoutStockIds(
     .map(([id]) => id);
 }
 
-/** Boce s Imam — id koji nije cigara (nema pogodaka u cigarForItemId). */
-export function ownedDrinkIds(
-  items: Record<string, ItemState>,
-  isCigarItem: (id: string) => boolean,
-): string[] {
-  return Object.entries(items)
-    .filter(([id, s]) => s.owned && !isCigarItem(id))
-    .map(([id]) => id);
-}

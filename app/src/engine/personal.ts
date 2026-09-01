@@ -16,8 +16,6 @@ export interface PersonalPrefs {
   entries: number;
 }
 
-export const EMPTY_PREFS: PersonalPrefs = { drinkStyle: {}, cigarBrand: {}, entries: 0 };
-
 // ocjena 1-10 -> odstupanje od neutralnog 6, ograniceno na [-1, 1]
 const deviation = (rating: number) => Math.max(-1, Math.min(1, (rating - 6) / 4));
 

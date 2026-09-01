@@ -98,6 +98,14 @@ jobs:
         run: |
           pip install --quiet Pillow
           python scripts/test_product_image_lib.py
+          python scripts/test_scoped_product_images.py
+
+      # Slike se smiju samo dodavati. Gate pada kad broj zapisa sa slikom ili
+      # broj obrađenih padne ispod baselinea — namjerno uklanjanje traži
+      # `--update-baseline` u istom commitu.
+      - name: Pokrivenost fotografijama ne smije pasti
+        working-directory: app
+        run: python scripts/report-image-gaps.py --check
 
       # apply-taxonomy --check je od sada BLOKIRAJUCI. Ranije je stajao ovdje uz
       # biljesku „ne konvergira ni na netaknutom masteru" — to vise ne stoji.

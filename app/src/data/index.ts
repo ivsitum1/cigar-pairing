@@ -587,21 +587,6 @@ export interface CigarShopLink {
 }
 
 /**
- * Upit za pretragu u trgovini. Kad je u prikazu jedna konkretna vitola, ime
- * vitole ulazi u upit — inače svaka vitola linije šalje isti upit i korisnik
- * završi na istoj stranici bez obzira što je odabrao.
- */
-export function cigarSearchQuery(c: Cigar): string {
-  const vitolas = uniqueVitolas(c);
-  const vitola = vitolas.length === 1 ? vitolas[0].name : null;
-  const line = `${c.brand} ${c.line}`.trim();
-  if (!vitola) return line;
-  // ime vitole zna već biti u imenu linije ("Serie V Melanio Robusto")
-  const has = line.toLowerCase().includes(vitola.toLowerCase());
-  return has ? line : `${line} ${vitola}`.trim();
-}
-
-/**
  * Linijski EU/USA link kad je u prikazu jedna vitola: prihvati ga samo ako je
  * to link TE vitole (vitolin vlastiti scrape) ili slug odgovara njenom imenu.
  * Inače je to stranica druge vitole iste linije — vidi lib/vitolaLinkMatch.
