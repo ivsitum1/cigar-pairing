@@ -14,7 +14,7 @@
       "max": 5,
       "label": {
         "hr": "4–5 prolazno",
-        "en": "4–5 forgettable"
+        "en": "4–5 passable"
       }
     },
     {
@@ -60,6 +60,7 @@
             { "hr": "cedar", "en": "cedar" },
             { "hr": "kava", "en": "coffee" },
             { "hr": "citrus", "en": "citrus" },
+            { "hr": "sol", "en": "salt" },
             { "hr": "papar", "en": "pepper" },
             { "hr": "vanilija", "en": "vanilla" },
             { "hr": "med", "en": "honey" },
@@ -237,9 +238,10 @@
             { "hr": "drveno", "en": "woody" },
             { "hr": "začin", "en": "spice" },
             { "hr": "svježe", "en": "fresh" },
-            { "hr": "voće", "en": "fruit" },
+            { "hr": "citrus", "en": "citrus" },
             { "hr": "orah", "en": "nut" },
             { "hr": "vanilija", "en": "vanilla" },
+            { "hr": "suho voće", "en": "dried fruit" },
             { "hr": "treset / dim", "en": "peat / smoke" },
             { "hr": "još ne znam", "en": "not sure yet" }
           ]

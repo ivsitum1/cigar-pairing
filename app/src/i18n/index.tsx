@@ -11,7 +11,7 @@ export {
   countryLabel,
 } from "./leafLabel";
 
-const STRINGS = {
+export const STRINGS = {
   // navigacija
   "nav.pairing": { hr: "Sparivanje", en: "Pairing" },
   "nav.catalog": { hr: "Katalozi", en: "Catalogs" },
@@ -532,8 +532,8 @@ const STRINGS = {
     en: "Draw · notes · thirds · again…",
   },
   "coll.notePlaceholderDrink": {
-    hr: "Tijelo · nota · posluživanje · bi li opet…",
-    en: "Body · notes · serve · again…",
+    hr: "Tijelo / završetak · nota · posluživanje · bi li opet…",
+    en: "Body / finish · notes · serve · again…",
   },
   "notePrompts.title": { hr: "Šprance", en: "Prompts" },
   "notePrompts.hint": {
