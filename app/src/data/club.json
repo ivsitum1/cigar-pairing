@@ -715,7 +715,7 @@
       "en": "Retrohale is a technique where you gently exhale some smoke through the nose instead of the mouth. The nose catches aromas the tongue misses (spice, floral, sweetness), so the cigar suddenly shows more layers. Do it with a small amount, without rushing."
     },
     {
-      "hr": "Hladni draw (cold draw) je lagano povlačenje zraka kroz još nezapaljenu cigaru. Provjerava otpor (je li draw pretvrd ili prelagan) i daje predokus nota, npr. sijena, kakaa ili slatkoće, prije nego što je zapališ.",
+      "hr": "Hladni draw (cold draw) znači lagano povući zrak kroz još nezapaljenu cigaru. Provjerava otpor (je li draw pretvrd ili prelagan) i daje predokus nota, npr. sijena, kakaa ili slatkoće, prije nego što je zapališ.",
       "en": "The cold draw is pulling air through a cigar that is not yet lit. It checks the resistance (whether the draw is too tight or too loose) and previews notes such as hay, cocoa or sweetness before you light up."
     },
     {
@@ -807,7 +807,7 @@
       "en": "Canoeing is an uneven burn where one side of the cigar burns faster, so the ember takes on a canoe shape. It is often caused by wind or an uneven light. Fix it by rotating the cigar and touching up the slower side."
     },
     {
-      "hr": "Tunneling je suprotan problem: sredina cigare gori brže od omota, pa nastaje „tunel”, a pokrov zaostaje. Najčešće je od slabog paljenja ili prerijetkog povlačenja. Ravnomjernije paljenje i redovito povlačenje (otprilike svakih 30–60 sekundi) to sprječavaju.",
+      "hr": "Tunneling je suprotan problem: sredina cigare gori brže od omota, pa nastaje „tunel”, a pokrov zaostaje. Najčešće je od slabog paljenja ili prerijetkih dimova. Ravnomjernije paljenje i redovit dim (otprilike svakih 30–60 sekundi) to sprječavaju.",
       "en": "Tunneling is the opposite problem: the core burns ahead of the wrapper, forming a 'tunnel' while the wrapper lags. It usually comes from a weak light or drawing too seldom. An even light and steady draws (roughly every 30–60 seconds) prevent it."
     },
     {
@@ -4220,7 +4220,7 @@
       ],
       "correct": 0,
       "why": {
-        "hr": "Povlačenje zraka kroz nezapaljenu cigaru pokazuje otpor i note poput sijena ili kakaa.",
+        "hr": "Zrak povučen kroz nezapaljenu cigaru pokazuje otpor i note poput sijena ili kakaa.",
         "en": "Pulling air through an unlit cigar shows the resistance and notes such as hay or cocoa."
       }
     },
@@ -4974,7 +4974,7 @@
       ],
       "correct": 2,
       "why": {
-        "hr": "Nastaje „tunel” jer pokrov zaostaje; sprječava ga ravnomjerno paljenje i redovito povlačenje.",
+        "hr": "Nastaje „tunel” jer pokrov zaostaje; sprječava ga ravnomjerno paljenje i redovit dim.",
         "en": "A 'tunnel' forms as the wrapper lags; an even light and steady draws prevent it."
       }
     },

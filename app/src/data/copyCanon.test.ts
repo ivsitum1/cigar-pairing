@@ -40,6 +40,37 @@ function curatedProse(): [string, string][] {
   return out;
 }
 
+/**
+ * Samo hrvatska proza. Pravila o padežima, posuđenicama i srbizmima vrijede za
+ * HR; nad engleskim nizovima („a cigar with…”) davala bi lažne prijave.
+ * `lexicon` nosi tijelo kao goli string, ostali kao `{hr, en}`.
+ */
+function croatianProse(): [string, string][] {
+  const out: [string, string][] = [];
+  const SKIP = new Set(["en", "aliases", "id", "category", "url", "seeAlso", "with"]);
+  const walk = (label: string, node: unknown) => {
+    if (Array.isArray(node)) {
+      node.forEach((child, i) => walk(`${label}[${i}]`, child));
+      return;
+    }
+    if (!node || typeof node !== "object") return;
+    for (const [key, value] of Object.entries(node)) {
+      if (SKIP.has(key)) continue;
+      if (typeof value === "string") {
+        if (key === "hr" || key === "body") out.push([`${label}.${key}`, value]);
+        continue;
+      }
+      walk(`${label}.${key}`, value);
+    }
+  };
+  walk("club", club);
+  walk("club101", club101);
+  walk("lexicon", lexicon);
+  walk("dictionary", dictionary);
+  walk("ratingPrompts", ratingPrompts);
+  return out;
+}
+
 describe("HR copy canon — trećine", () => {
   // Riječi su često razdvojene („Prva, druga i zadnja trećina”, „usklađivanje u
   // drugoj”), pa se traži supojava unutar iste rečenice, a ne susjedstvo.
@@ -135,5 +166,67 @@ describe("HR copy canon — obitelji nota", () => {
         context,
       ).toEqual(families);
     }
+  });
+});
+
+describe("HR copy canon — cigara, draw, standardni jezik", () => {
+  /** Rječnička natuknica smije glosirati; tekuća proza ne. */
+  const GLOSS = /\bDraw \(povlačenje\)/;
+
+  it("cigara se ne zove „cigareta” osim u izričitoj usporedbi", () => {
+    const bad = croatianProse().filter(([, text]) => {
+      const m = /\bcigaret\w*/i.exec(text);
+      if (!m) return false;
+      // dopušteno: govori se o pravoj cigareti (usporedba, citat, vape/stol)
+      const ctx = text.slice(Math.max(0, m.index - 60), m.index + 60);
+      return !/nije cigareta|poput cigaret|kao kod cigaret|original o cigaret|vape/i.test(ctx);
+    });
+    expect(bad.map(([label]) => label)).toEqual([]);
+  });
+
+  it("definicija u rječniku počinje nominativom, ne akuzativom", () => {
+    const bad = dictionary.entries
+      .filter((e) => /^(Cigaru|Cigaretu|Bocu|Čašu|Kutiju)\b/.test(e.def.hr))
+      .map((e) => e.id);
+    expect(bad).toEqual([]);
+  });
+
+  it("otpor zraka nosi posuđenicu „draw”, a jedan dim je „dim”", () => {
+    const bad = croatianProse().filter(
+      ([, text]) => /povlačenj\w*/i.test(text) && !GLOSS.test(text),
+    );
+    expect(bad.map(([label]) => label)).toEqual([]);
+  });
+
+  it("natuknice za draw nose kanonske oblike", () => {
+    const term = (id: string) =>
+      dictionary.entries.find((e) => e.id === id)!.term.hr;
+    expect(term("cold-draw")).toBe("Hladni draw");
+    expect(term("loose-draw")).toBe("Prelak draw");
+    expect(term("hard-draw")).toBe("Tvrd draw");
+    expect(term("draw")).toBe("Draw (povlačenje)");
+    // stari izrazi ostaju pretraživi
+    for (const [id, alias] of [
+      ["cold-draw", "hladno povlačenje"],
+      ["loose-draw", "labavo povlačenje"],
+      ["hard-draw", "usko povlačenje"],
+      ["draw", "povlačenje"],
+    ] as const) {
+      expect(dictionary.entries.find((e) => e.id === id)!.aliases, id).toContain(alias);
+    }
+  });
+
+  it("nema srbizama ni ekavice u kuriranoj prozi", () => {
+    const bad = croatianProse().filter(([, text]) =>
+      /\brazblaž\w*|\bpresek\w*|\bdebelij\w*|\btakođe\b|\buopšte\b/i.test(text),
+    );
+    expect(bad.map(([label]) => label)).toEqual([]);
+  });
+
+  it("HR rečenica ne nosi golu englesku riječ „cigar”", () => {
+    const bad = croatianProse().filter(([, text]) =>
+      /\bcigars?\b(?!\s*(lounge|sommelier))/i.test(text),
+    );
+    expect(bad.map(([label]) => label)).toEqual([]);
   });
 });

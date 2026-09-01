@@ -41,8 +41,8 @@ Genitive *pepela*, compounds *pepeljara*, *pepelni* OK.
 - Not: *dimka*, *povlačenje*, *potez*, *usis*, *vlak* for that sense.
 - Atmosphere/substance also *dim*.
 
-- Airflow / resistance through the cigar: keep the loan **draw** (*prelak draw*, *tvrd draw*, *hladni draw*).
-- Optional glossary gloss: *povlačenje (draw)* for the resistance concept only — never for a countable puff.
+- Airflow / resistance through the cigar: keep the loan **draw** (*prelak draw*, *tvrd draw*, *hladni draw*). Those three are also the dictionary headwords (`cold-draw`, `loose-draw`, `hard-draw`); the general entry (`draw`) is **Draw (povlačenje)**.
+- The gloss *povlačenje* survives **only** inside that one headword and as a search alias. Anywhere else in HR prose it is either the loan *draw* (resistance) or *dim* (a puff).
 - **Forbidden:** *vlak* as a calque of *draw* (in Croatian *vlak* means train).
 
 ## Trećine cigare
@@ -88,6 +88,12 @@ Do not write etiquette or instructions as bare infinitive chains (*gasiti ili os
 | **Bonton** | Etiquette, host/guest, ashtray manners, phone, gifts… |
 
 Do not duplicate bonton precepts or lexicon essays inside the dictionary. If it was already a bonton/lexicon topic, leave it there.
+
+## Standard Croatian
+
+Croatian, not Serbian, and ijekavica: **razrijeđen / razrjeđenje / razrjeđivanje** (not *razblažen*), **presjek** (not *presek*), **deblja** (not *debelija*).
+
+Dictionary headwords are nominative (*Kutijasti presjek*, not *Kutijastog preseka*), and a `def.hr` opens in the nominative because it names the thing — *Cigara s ravnim stranama…*, never *Cigaru…*, even though the English reads "A cigar with…".
 
 ## Pairing label in HR UI
 
