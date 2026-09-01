@@ -91,7 +91,7 @@ Slike su najbrže rastuća klasa resursa i imaju tri pravila koja se ne smiju iz
 - **Manifesti imaju vlastiti chunk `data-images`.** `productImages.json` + `productImagesLocal.json` su ~1,16 MB i rastu linearno s brojem slika; bez imena su padali u entry i činili ~87 % njegove sirove veličine.
 - **Pokrivenost može samo rasti.** `python scripts/report-image-gaps.py --check` je blokirajući CI gate protiv `scripts/data/image_coverage_baseline.json`. Namjerno uklanjanje slike traži `--update-baseline` u istom commitu.
 
-Stanje i plan širenja: `python scripts/report-image-gaps.py` (dodaj `--json` za popis rupa u `output/image_gaps.json`).
+Runbook za lokalno pokretanje: **`docs/SIRENJE-SLIKA.md`**. Stanje i plan širenja: `python scripts/report-image-gaps.py` (dodaj `--json` za popis rupa u `output/image_gaps.json`).
 
 - **Sloj po vitoli** (`cig-x@vitola`, 3547 adresa) nema nijednu obrađenu sliku, pa odabir vitole vraća neobrađenu dućansku fotografiju umjesto izrezane. Lanac to podržava: `python scripts/fetch-product-images.py --scoped only` pa `python scripts/normalize-product-images.py`. `scripts/test_scoped_product_images.py` čuva da znak `@` preživi ime datoteke, `Path.stem` i ključ manifesta.
 - **Pića su na 31 %** (758 bez slike; rums 270, gins 174, wines 122). Samo 12 ima `priceUrl` za izravno preuzimanje — 734 nose samo ime dućana (`shopHR`: allez.hr 397, Vivat 61, ecuga.com 48), pa im prvo treba `scrape-drink-product-pages.py` da se nađe stranica proizvoda.
