@@ -9,6 +9,8 @@ Two things sit outside `app/` and are **not** part of the deployed site:
 - `backend/` — an **optional local FastAPI service** (`uvicorn app.main:app`, port 8787) for stronger receipt OCR (PaddleOCR) and cigar-band image matching. The PWA only calls it when `VITE_OCR_API_URL` is set; unset (the GitHub Pages default) the app uses the embedded `@paddleocr/paddleocr-js` and `tesseract.js` instead. Never required to lint, test, build, or run the app.
 - `app/scripts/` — an **optional local data-regeneration pipeline** (scrape → Excel → JSON). Requires local Excel files that are git-ignored. The `--check` variants of these scripts *are* CI gates (see below) and are read-only.
 
+Four more top-level directories are **working material, not product**: `docs/` (research notes and crosswalks), `01_work/` (article dumps; its `output/` is git-ignored), `marketing/` (copy drafts) and `sideprojects/`. `agent-brain-lite/` holds agent working files (its `.agent/memory/` is git-ignored). None of them is imported by `app/`, built, deployed, or covered by a CI gate — changing them cannot break the site.
+
 Note that first OCR use fetches model assets from third-party CDNs (jsDelivr / HuggingFace / ModelScope) — the app is offline-first for its own data, but not for OCR models.
 
 ### Cloud Agent environment (`.cursor/environment.json`)

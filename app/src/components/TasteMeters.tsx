@@ -40,8 +40,3 @@ export function TasteMeters({ cigar }: { cigar: Cigar }) {
   );
 }
 
-/** Nosi li ova cigara tvoju ocjenu? Za oznake izvora ispod opisa. */
-export function useHasTaste(cigar: Cigar): boolean {
-  const taste = useTasteProfiles();
-  return withTaste(cigar, taste).profileFromUser === true;
-}

@@ -35,10 +35,6 @@ export function useTaster(): string {
   );
 }
 
-export function getTaster(): string {
-  return cache;
-}
-
 export function setTaster(name: string) {
   cache = normalizeTasterName(name);
   try {

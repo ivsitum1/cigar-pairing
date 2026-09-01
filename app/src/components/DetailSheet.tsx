@@ -217,6 +217,7 @@ export function DetailSheet({
           value={note}
           onChange={(e) => setNote(e.target.value)}
           onBlur={saveNote}
+          aria-label={t("coll.note")}
           placeholder={
             active.kind === "drink"
               ? t("coll.notePlaceholderDrink")

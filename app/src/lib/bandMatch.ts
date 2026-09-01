@@ -9,6 +9,12 @@ export interface BandMatch {
   refId: string;
 }
 
+/**
+ * Puni referentnu bazu prstena (`POST /band/reference`, vidi backend/README.md).
+ * Aplikacija je namjerno ne zove: baza se puni izvan nje, a `matchBandImage`
+ * je onda samo cita. Nije zaostatak — brisanje bi ostavilo dokumentirani
+ * endpoint bez klijenta.
+ */
 export async function uploadBandReference(
   cigarId: string,
   file: File,

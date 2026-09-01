@@ -350,6 +350,7 @@ export function EveningSessionSheet({
           <textarea
             value={note}
             onChange={(e) => setNote(e.target.value)}
+            aria-label={t("coll.note")}
             placeholder={t("coll.notePlaceholder")}
             rows={4}
             className={selectCls}
