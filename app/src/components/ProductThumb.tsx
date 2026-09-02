@@ -20,10 +20,15 @@ export function ProductThumb({
   src,
   alt,
   treatment = "remote",
+  width,
+  height,
 }: {
   src: string;
   alt: string;
   treatment?: ImageTreatment;
+  /** Izvorne dimenzije obrađene slike; kod dućanskih se ne znaju. */
+  width?: number;
+  height?: number;
 }) {
   const [failed, setFailed] = useState(false);
   if (failed) return null;
@@ -32,6 +37,8 @@ export function ProductThumb({
     <img
       src={src}
       alt={alt}
+      width={width}
+      height={height}
       className={
         izrezana
           ? "h-28 w-[4.5rem] shrink-0 object-contain drop-shadow-[0_4px_10px_rgba(0,0,0,0.5)]"

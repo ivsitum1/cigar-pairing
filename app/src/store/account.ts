@@ -62,10 +62,6 @@ export function useAccount(): Account | null {
   );
 }
 
-export function getAccount(): Account | null {
-  return cache;
-}
-
 export function setAccount(account: Account | null) {
   cache = account ? normalizeAccount(account) : null;
   try {

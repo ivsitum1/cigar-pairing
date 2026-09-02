@@ -9,13 +9,28 @@ import { useEffect } from "react";
 import { useRegisterSW } from "virtual:pwa-register/react";
 import { useI18n } from "../i18n";
 import { useStorageHealth } from "../store/collection";
+import { useFavoritesStorageHealth } from "../store/favorites";
+import { useHumidorStorageHealth } from "../store/humidor";
+import { useMarketStorageHealth } from "../store/market";
 
 /** Redovita provjera nove verzije: pola sata, plus svaki povratak u aplikaciju. */
 const CHECK_EVERY_MS = 30 * 60 * 1000;
 
 export function SystemBanners() {
   const { t } = useI18n();
-  const storageFailed = useStorageHealth();
+  // Svaki store pise u svoj kljuc i svaki moze pasti zasebno: kvota se puni
+  // zajednicki, pa je humidor cesto prvi koji odbije zapis dok je kolekcija
+  // jos prosla. Traka je pratila samo kolekciju, pa je upozorenje "izvezi
+  // sigurnosnu kopiju" izostajalo bas kad su podaci o zalihama u opasnosti.
+  //
+  // Sve cetiri kuke se zovu bezuvjetno i tek se rezultati spajaju: `a() || b()`
+  // preskace b() cim je a() istinit, a to je uvjetni poziv kuke.
+  const collectionFailed = useStorageHealth();
+  const humidorFailed = useHumidorStorageHealth();
+  const favoritesFailed = useFavoritesStorageHealth();
+  const marketFailed = useMarketStorageHealth();
+  const storageFailed =
+    collectionFailed || humidorFailed || favoritesFailed || marketFailed;
   const {
     needRefresh: [needRefresh],
     updateServiceWorker,

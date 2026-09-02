@@ -161,15 +161,6 @@ function allTokens(s: string): string[] {
     .filter((t) => t.length > 0);
 }
 
-function rawTokens(s: string): string[] {
-  return allTokens(s).filter((t) => /^\d+$/.test(t) || t.length >= 2);
-}
-
-/** Tokeni imena / slug-a (uklj. brojeve godina). */
-export function drinkLinkTokens(s: string): Set<string> {
-  return new Set(rawTokens(s).filter((t) => !STOP.has(t)));
-}
-
 /**
  * Brojevi bez volumena/jakosti: "40-vol" i "40-07l" se preskacu, kao i
  * brojevi s vodecom nulom ("07", "075" — to su litre, ne godine).

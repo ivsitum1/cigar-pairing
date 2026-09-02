@@ -9,6 +9,8 @@ Two things sit outside `app/` and are **not** part of the deployed site:
 - `backend/` — an **optional local FastAPI service** (`uvicorn app.main:app`, port 8787) for stronger receipt OCR (PaddleOCR) and cigar-band image matching. The PWA only calls it when `VITE_OCR_API_URL` is set; unset (the GitHub Pages default) the app uses the embedded `@paddleocr/paddleocr-js` and `tesseract.js` instead. Never required to lint, test, build, or run the app.
 - `app/scripts/` — an **optional local data-regeneration pipeline** (scrape → Excel → JSON). Requires local Excel files that are git-ignored. The `--check` variants of these scripts *are* CI gates (see below) and are read-only.
 
+Four more top-level directories are **working material, not product**: `docs/` (research notes and crosswalks), `01_work/` (article dumps; its `output/` is git-ignored), `marketing/` (copy drafts) and `sideprojects/`. `agent-brain-lite/` holds agent working files (its `.agent/memory/` is git-ignored). None of them is imported by `app/`, built, deployed, or covered by a CI gate — changing them cannot break the site.
+
 Note that first OCR use fetches model assets from third-party CDNs (jsDelivr / HuggingFace / ModelScope) — the app is offline-first for its own data, but not for OCR models.
 
 ### Cloud Agent environment (`.cursor/environment.json`)
@@ -80,6 +82,19 @@ A separate `backend` job runs `python -m unittest discover -s tests` in `backend
 - Podloga se **miče u prozirno**, ne prebojava. Fotografija bez jednolične podloge se
   ne reže nego dobiva `framed`. `ProductThumb` crta plohu iza slike samo kad ona
   **nije** `cutout`.
+
+### Rast broja fotografija
+
+Slike su najbrže rastuća klasa resursa i imaju tri pravila koja se ne smiju izgubiti:
+
+- **Ne precachiraj ih.** `webp` namjerno nije u `globPatterns` — precache bi na instalaciji povukao ~91 MB. Idu kroz `runtimeCaching` (`CacheFirst`, cache `product-images`, 800 zapisa, 60 dana). Hotlinkane dućanske slike su izvan pravila: neprozirni odgovor se ne da provjeriti, a troši kvotu.
+- **Manifesti imaju vlastiti chunk `data-images`.** `productImages.json` + `productImagesLocal.json` su ~1,16 MB i rastu linearno s brojem slika; bez imena su padali u entry i činili ~87 % njegove sirove veličine.
+- **Pokrivenost može samo rasti.** `python scripts/report-image-gaps.py --check` je blokirajući CI gate protiv `scripts/data/image_coverage_baseline.json`. Namjerno uklanjanje slike traži `--update-baseline` u istom commitu.
+
+Runbook za lokalno pokretanje: **`docs/SIRENJE-SLIKA.md`**. Stanje i plan širenja: `python scripts/report-image-gaps.py` (dodaj `--json` za popis rupa u `output/image_gaps.json`).
+
+- **Sloj po vitoli** (`cig-x@vitola`, 3547 adresa) nema nijednu obrađenu sliku, pa odabir vitole vraća neobrađenu dućansku fotografiju umjesto izrezane. Lanac to podržava: `python scripts/fetch-product-images.py --scoped only` pa `python scripts/normalize-product-images.py`. `scripts/test_scoped_product_images.py` čuva da znak `@` preživi ime datoteke, `Path.stem` i ključ manifesta.
+- **Pića su na 31 %** (758 bez slike; rums 270, gins 174, wines 122). Samo 12 ima `priceUrl` za izravno preuzimanje — 734 nose samo ime dućana (`shopHR`: allez.hr 397, Vivat 61, ecuga.com 48), pa im prvo treba `scrape-drink-product-pages.py` da se nađe stranica proizvoda.
 
 ### Non-obvious notes
 - The dev server serves the app under the base path **`/cigar-pairing/`**, not `/`. Open `http://localhost:5173/cigar-pairing/` — the bare root path will not render the app. This base is set in `app/vite.config.ts` to match the GitHub Pages repo name.

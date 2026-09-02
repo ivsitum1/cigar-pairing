@@ -69,6 +69,9 @@ export default defineConfig({
         // zatvore sve kartice — inace autoUpdate ceka isto sto i prompt
         clientsClaim: true,
         skipWaiting: true,
+        // `webp` NAMJERNO nije ovdje: precache bi na instalaciji povukao
+        // ~3600 fotografija proizvoda (91 MB). One idu kroz runtimeCaching
+        // nize — sto korisnik prolista, to mu i ostane offline.
         globPatterns: ["**/*.{js,css,html,svg,png,json,woff2}"],
         // PaddleOCR / ORT worker chunks are 10–27 MB — load on demand, not SW precache
         globIgnores: [
@@ -80,6 +83,28 @@ export default defineConfig({
         // data-cigars (~3 MB) still fits; OCR assets ignored above
         maximumFileSizeToCacheInBytes: 8 * 1024 * 1024,
         runtimeCaching: [
+          {
+            // Fotografije proizvoda. Bez ovoga su bile jedina klasa resursa
+            // bez ijednog pravila: aplikacija je offline-first za svoje
+            // podatke, a nijedna kartica offline nije imala sliku.
+            //
+            // Samo vlastito podrijetlo — dućanske (hotlinkane) slike vracaju
+            // neprozirni odgovor koji se ne da provjeriti, a trosi kvotu.
+            // CacheFirst: obradjena slika je nepromjenjiva, ime nosi id.
+            urlPattern: ({ url, sameOrigin }) =>
+              sameOrigin && url.pathname.includes("/img/products/"),
+            handler: "CacheFirst",
+            options: {
+              cacheName: "product-images",
+              expiration: {
+                // ~800 × 21 kB medijan ≈ 17 MB; sto se prolista, to ostaje
+                maxEntries: 800,
+                maxAgeSeconds: 60 * 60 * 24 * 60,
+                purgeOnQuotaError: true,
+              },
+              cacheableResponse: { statuses: [0, 200] },
+            },
+          },
           {
             // PaddleOCR / ORT wasm + model assets (first OCR use)
             urlPattern: ({ url }) =>
@@ -134,6 +159,13 @@ export default defineConfig({
             ) {
               return undefined;
             }
+            // Manifesti fotografija (~1,16 MB) padali su u entry chunk i
+            // cinili ~87 % njegove sirove velicine — rastu linearno s brojem
+            // slika. Vlastito ime ih vadi iz entryja i daje im vlastiti hash,
+            // pa promjena kataloga ne obara njihov cache i obrnuto.
+            if (id.includes("productImagesLocal.json") || id.includes("productImages.json")) {
+              return "data-images";
+            }
             if (id.includes("cigars.json")) return "data-cigars";
             if (id.includes("whiskies.json")) return "data-whiskies";
             if (id.includes("rums.json")) return "data-rums";
@@ -172,7 +204,10 @@ export default defineConfig({
     },
   },
   test: {
+    // Zadano ostaje `node`: ~900 testova nad podacima i logikom ne treba DOM i
+    // s njim bi bili osjetno sporiji. Testovi komponenti traze jsdom pojedinacno,
+    // docblockom `@vitest-environment jsdom` na vrhu datoteke.
     environment: "node",
-    include: ["src/**/*.test.ts"],
+    include: ["src/**/*.test.ts", "src/**/*.test.tsx"],
   },
 });

@@ -41,9 +41,39 @@ Genitive *pepela*, compounds *pepeljara*, *pepelni* OK.
 - Not: *dimka*, *povlačenje*, *potez*, *usis*, *vlak* for that sense.
 - Atmosphere/substance also *dim*.
 
-- Airflow / resistance through the cigar: keep the loan **draw** (*prelak draw*, *tvrd draw*, *hladni draw*).
-- Optional glossary gloss: *povlačenje (draw)* for the resistance concept only — never for a countable puff.
+- Airflow / resistance through the cigar: keep the loan **draw** (*prelak draw*, *tvrd draw*, *hladni draw*). Those three are also the dictionary headwords (`cold-draw`, `loose-draw`, `hard-draw`); the general entry (`draw`) is **Draw (povlačenje)**.
+- The gloss *povlačenje* survives **only** inside that one headword and as a search alias. Anywhere else in HR prose it is either the loan *draw* (resistance) or *dim* (a puff).
 - **Forbidden:** *vlak* as a calque of *draw* (in Croatian *vlak* means train).
+
+## Trećine cigare
+
+| Position | HR | EN |
+|----------|----|----|
+| 1. | **prva trećina** | first third |
+| 2. | **srednja trećina** | middle third |
+| 3. | **zadnja trećina** | final third |
+
+**Forbidden for the middle:** *druga trećina* (and EN *second third* in running text — it survives only as a search alias in the dictionary).  
+**Forbidden for the last:** *završna trećina*. Keep *završetak / finish* for the **drink's** finish; a cigar's last third is *zadnja*.  
+*drugu trećinu* never means „another third" — write **još jednu trećinu** for that sense.
+
+## Obitelji nota
+
+Five families, and only these five: **slatko, tamno, drveno, začin, svježe** (EN *sweet, dark, woody, spice, fresh*).
+
+Home is `lexicon.json` → `obitelji-nota`; `dictionary.json` → `flavor-family` defines the term, and `ratingPrompts.json` offers the same five as the first chips on the *Nota* line. HR headword is **obitelj nota** (*obitelj okusa* stays as a search alias only). Concrete words (kakao, cedar, papar…) sit *inside* a family — never alongside them as a sixth family.
+
+## Note prompt lines (Šprance)
+
+`ratingPrompts.json` is the source of truth; `i18n` placeholders and Club 101 `t-notebook` follow it, never the other way round.
+
+| Context | HR | EN |
+|---------|----|----|
+| Sparivanje | most · trećina · tijela · bi li opet | bridge · third · bodies · again |
+| Cigara | draw · nota · trećine · bi li opet | draw · notes · thirds · again |
+| Piće | tijelo / završetak · nota · posluživanje · bi li opet | body / finish · notes · serve · again |
+
+Rating band copy comes from `ratingPrompts.json` → `ratingScale`; do not paraphrase it in prose. `src/lib/ratingPrompts.test.ts` and `src/data/copyCanon.test.ts` enforce all of the above.
 
 ## Infinitive stacks
 
@@ -58,6 +88,12 @@ Do not write etiquette or instructions as bare infinitive chains (*gasiti ili os
 | **Bonton** | Etiquette, host/guest, ashtray manners, phone, gifts… |
 
 Do not duplicate bonton precepts or lexicon essays inside the dictionary. If it was already a bonton/lexicon topic, leave it there.
+
+## Standard Croatian
+
+Croatian, not Serbian, and ijekavica: **razrijeđen / razrjeđenje / razrjeđivanje** (not *razblažen*), **presjek** (not *presek*), **deblja** (not *debelija*).
+
+Dictionary headwords are nominative (*Kutijasti presjek*, not *Kutijastog preseka*), and a `def.hr` opens in the nominative because it names the thing — *Cigara s ravnim stranama…*, never *Cigaru…*, even though the English reads "A cigar with…".
 
 ## Pairing label in HR UI
 

@@ -252,8 +252,3 @@ export const DRINK_SHOPS: DrinkShop[] = [
   },
 ];
 
-export const drinkShopById = (id: string): DrinkShop | undefined =>
-  DRINK_SHOPS.find((s) => s.id === id);
-
-export const drinkShopsForCategory = (c: DrinkCategory): DrinkShop[] =>
-  DRINK_SHOPS.filter((s) => s.categories.includes(c));
