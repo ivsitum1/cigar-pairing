@@ -317,7 +317,21 @@ def main() -> int:
         print(f"    ok {datoteka.name} ({len(slika[0]) // 1024} kB)")
         return True
 
+    def oznaci_neuspjeh(pid: str, razlog: str) -> None:
+        """Zapamti neuspjeh da se isti URL ne vrti u svakoj seriji.
+
+        Bez ovoga `--scoped only --limit 400` prvo potrosi budzet na iste
+        mrtve adrese (npr. cigarsdaily.com 404), pa serija gotovo ne napreduje.
+        `--force` ih i dalje pokušava ponovno.
+        """
+        vec[pid] = {
+            "error": razlog,
+            "fetchedAt": date.today().isoformat(),
+        }
+        print(f"    — nema upotrebljive slike ({razlog})")
+
     uspjeh = 0
+    neuspjeh = 0
     for n, (pid, stranice) in enumerate(posao, 1):
         print(f"[{n}/{len(posao)}] {pid}")
 
@@ -325,6 +339,16 @@ def main() -> int:
         izravna = izravne.get(pid)
         if izravna and spremi(pid, izravna, izravna):
             uspjeh += 1
+            if n % 25 == 0:
+                INDEX.write_text(
+                    json.dumps(indeks, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+                )
+            continue
+        if izravna:
+            # Poznata adresa, ali dohvat nije uspio — ne otvaraj stranicu
+            # (isti URL bi opet pao).
+            oznaci_neuspjeh(pid, "izravni URL nedostupan")
+            neuspjeh += 1
             if n % 25 == 0:
                 INDEX.write_text(
                     json.dumps(indeks, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
@@ -345,7 +369,8 @@ def main() -> int:
                 uspjeh += 1
                 break
         else:
-            print("    — nema upotrebljive slike")
+            oznaci_neuspjeh(pid, "nema upotrebljive slike")
+            neuspjeh += 1
 
         if n % 25 == 0:
             INDEX.write_text(
@@ -353,7 +378,10 @@ def main() -> int:
             )
 
     INDEX.write_text(json.dumps(indeks, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"\ngotovo: {uspjeh} novih slika, ukupno {len(vec)} za {args.kind}")
+    print(
+        f"\ngotovo: {uspjeh} novih slika, {neuspjeh} neuspjeha, "
+        f"ukupno {len(vec)} za {args.kind}"
+    )
     print(f"indeks: {INDEX.relative_to(HERE.parent)}")
     return 0
 
