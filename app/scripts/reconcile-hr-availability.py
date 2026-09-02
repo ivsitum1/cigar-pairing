@@ -154,7 +154,9 @@ def build_present(
             line = sync.line_name_from_product(brand, name)
             by_line.setdefault((bn, sync.norm(line)), set()).add(shop)
             vit = sync.vitola_from_product(name, brand)
-            if vit:
+            # Samo kad shop naslov nema imenovane linije (Cain Daytona Corona → 646).
+            # Inače bi OpusX Robusto lažno pogodio brojčanu liniju 858.
+            if vit and sync._numeric_looking_rest(line, brand):
                 by_vitola.setdefault((bn, sync.norm(vit)), set()).add(shop)
     return by_line, by_vitola
 

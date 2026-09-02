@@ -84,6 +84,47 @@ removed, added = run([c], {})
 check("bez poklapanja ostaje bez HR", (c["availabilityHR"], "HR" in c["markets"]), ([], False))
 check("i nije prijavljena kao dodana", added, [])
 
+print("\npresent_vitola samo za shopove bez imenovane linije")
+try:
+    import requests  # noqa: F401
+    import bs4  # noqa: F401
+except ImportError:
+    _req = types.ModuleType("requests")
+    _req.Session = type("Session", (), {})  # type: ignore[attr-defined]
+    sys.modules["requests"] = _req
+    _bs4 = types.ModuleType("bs4")
+    _bs4.BeautifulSoup = object  # type: ignore[attr-defined]
+    sys.modules["bs4"] = _bs4
+spec_sync_vit = importlib.util.spec_from_file_location(
+    "sync_hr_shops_vit", ROOT / "sync-hr-shops.py"
+)
+sync_vit = importlib.util.module_from_spec(spec_sync_vit)
+assert spec_sync_vit.loader is not None
+spec_sync_vit.loader.exec_module(sync_vit)
+cigars_stub = json.loads(
+    (ROOT.parent / "src" / "data" / "cigars.json").read_text(encoding="utf-8")
+)
+_, by_vitola_opus = M.build_present(
+    sync_vit,
+    {"havana": [{"name": "A. Fuente Fuente Fuente OpusX Robusto"}], "humidor": []},
+    cigars_stub,
+)
+check(
+    "opusx robusto nije u present_vitola",
+    ("arturo fuente", "robusto") in by_vitola_opus,
+    False,
+)
+_, by_vitola_cusano = M.build_present(
+    sync_vit,
+    {"havana": [{"name": "Bundle Selection by Cusano Robusto"}], "humidor": []},
+    cigars_stub,
+)
+check(
+    "cusano robusto jest u present_vitola (shop bez imenovane linije)",
+    ("cusano", "robusto") in by_vitola_cusano,
+    True,
+)
+
 print("\nmarket discovery + brand/vitola fallback")
 # catalogSource=market ranije je preskakao discovery — mora dobiti HR.
 c = cig(
