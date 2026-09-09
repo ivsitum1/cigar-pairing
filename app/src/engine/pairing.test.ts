@@ -52,10 +52,10 @@ describe("pairing engine — poznati parovi iz Excela", () => {
   });
 
   it("dosladjeni rum + puna maduro cigara dobiva kontrast bonus (slatkoca presijece gorcinu)", () => {
-    // Zacapa XO is now measured at ~22 g/L (sweetness 3); use Centenario 23 (sweetness 4)
-    const zacapa23 = byId(rums, "rum-zacapa-centenario-23");
+    // Zacapa linija je pala na sweetness 3 (lab); Diplomático RE ostaje ≥4
+    const sweetRum = byId(rums, "rum-diplomatico-reserva-exclusiva");
     const padronMaduro = byId(cigars, "cig-padron-1964-anniversary"); // Maduro wrapper, body 4
-    const { reasons } = scorePairing(padronMaduro, zacapa23);
+    const { reasons } = scorePairing(padronMaduro, sweetRum);
     expect(reasons.some((r) => r.rule === "contrast-sweet-maduro")).toBe(true);
   });
 

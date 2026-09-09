@@ -5,6 +5,7 @@ import { describe, it, expect } from "vitest";
 import { ALL_DRINKS, CIGARS, cigarById } from "../data";
 import { pairCigarsForDrink, scorePairing } from "./pairing";
 import { curatedPairingOpinion } from "./curatedOpinion";
+import { expandForPairing } from "../lib/cigarVitola";
 import type { Cigar, Drink } from "../types";
 
 const meanScoreFor = (cigar: Cigar, drinks: Drink[]) => {
@@ -30,7 +31,8 @@ describe("sanity logike matchanja", () => {
 
   it("dimljeni whisky dobiva pune cigare, ne blage", () => {
     const laph = ALL_DRINKS.find((d) => d.id === "wh-laphroaig-10")!;
-    const top = pairCigarsForDrink(laph, CIGARS).slice(0, 10);
+    const expanded = CIGARS.flatMap(expandForPairing);
+    const top = pairCigarsForDrink(laph, expanded).slice(0, 10);
     for (const r of top) {
       expect(r.item.body, `${r.item.id} u top 10 za Laphroaig`).toBeGreaterThanOrEqual(4);
     }
