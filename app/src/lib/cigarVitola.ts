@@ -173,6 +173,14 @@ export function expandForPairing(cigar: Cigar): Cigar[] {
   return vitolas.map((v) => applyVitola(cigar, v));
 }
 
+/** Kao `expandForPairing`, ali samo vitole dostupne u odabranom tržištu. */
+export function expandForPairingInMarket(cigar: Cigar, market: RegionFilter): Cigar[] {
+  const vitolas = vitolasForMarket(cigar, market);
+  if (vitolas.length === 0) return [];
+  if (vitolas.length === 1) return [applyVitola(cigar, vitolas[0])];
+  return vitolas.map((v) => applyVitola(cigar, v));
+}
+
 /** Primijeni odabranu vitolu na prikaz / pairing (cijena, format, link). */
 export function applyVitola(cigar: Cigar, vitola: Vitola): Cigar {
   const inheritedPriceUrl = cigar.priceUrl ?? null;

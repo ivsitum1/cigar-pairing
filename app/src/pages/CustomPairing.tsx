@@ -64,12 +64,12 @@ export function CustomPairing({
   const pickCigar = (raw: Cigar) => {
     const resolved = resolveCigarId(raw.id) ?? raw;
     if (needsVitolaPickInMarket(resolved, market)) {
-      setPendingCigar(resolved);
+      setPendingCigar(raw);
       setCigar(null);
       return;
     }
     const vitolas = vitolasForMarket(resolved, market);
-    setCigar(vitolas.length === 1 ? applyVitola(resolved, vitolas[0]) : resolved);
+    setCigar(vitolas.length === 1 ? applyVitola(raw, vitolas[0]) : raw);
     setPendingCigar(null);
     setPicking(drink ? null : "drink");
   };

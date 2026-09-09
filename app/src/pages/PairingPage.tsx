@@ -25,7 +25,7 @@ import { buildShareCardModel, sharePairing } from "../lib/shareCard";
 import { ritualHint } from "../lib/cigarRitual";
 import { OcrScan } from "../components/OcrScan";
 import { VitolaPicker } from "../components/VitolaPicker";
-import { applyVitola, expandForPairing, needsVitolaPickInMarket, vitolasForMarket } from "../lib/cigarVitola";
+import { applyVitola, expandForPairingInMarket, needsVitolaPickInMarket, vitolasForMarket } from "../lib/cigarVitola";
 import { formatEur, vitolaPriceForMarket } from "../lib/cigarPrice";
 import { cigarItemId } from "../lib/cigarItemId";
 import { buildCigarOcrCandidates } from "../lib/ocrCigarCandidates";
@@ -257,7 +257,7 @@ export function PairingPage() {
     let cigars = marketCigars;
     // "samo moje": linija se broji ako je posjedovana u bilo kojoj vitoli
     if (onlyMine) cigars = cigars.filter((c) => lineState(c.id).owned);
-    const expanded = cigars.flatMap(expandForPairing);
+    const expanded = cigars.flatMap((c) => expandForPairingInMarket(c, market));
     return pairCigarsForDrink(
       selectedDrink,
       expanded,
@@ -265,7 +265,7 @@ export function PairingPage() {
       serve,
       occasion === "any" ? undefined : occasion,
     );
-  }, [mode, selectedDrink, onlyMine, marketCigars, prefs, serve, occasion]);
+  }, [mode, selectedDrink, onlyMine, market, marketCigars, prefs, serve, occasion]);
 
   // tocno 3 cigare RAZLICITIH brendova u soft-bandu (max−5);
   // cycle 0 = vrh ljestvice; gumb pomiče prozor unutar pojasa

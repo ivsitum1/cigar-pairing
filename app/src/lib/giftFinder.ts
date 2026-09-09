@@ -532,6 +532,11 @@ function pairingPicks(
   const out: GiftPick[] = [];
   const usedDrinks = new Set<string>();
 
+  const pairingSku = (c: Cigar): Cigar => {
+    const defV = resolveDefaultVitola(c);
+    return defV ? applyVitola(c, defV) : c;
+  };
+
   let currentBudget = answers.budget;
   let fellBack = false;
   while (out.length < limit) {
@@ -542,14 +547,15 @@ function pairingPicks(
     const cigarsInBand = cigarCandidates
       .filter((c) => {
         if (exclude.has(`c:${c.id}`)) return false;
-        const p = cigarPrice(c, region);
+        const p = cigarPrice(pairingSku(c), region);
         return p != null && p <= ceiling;
       })
       .slice(0, PAIR_CIGAR_SCAN);
 
     for (const cigar of cigarsInBand) {
       if (out.length >= limit) break;
-      const cp = cigarPrice(cigar, region)!;
+      const scoredCigar = pairingSku(cigar);
+      const cp = cigarPrice(scoredCigar, region)!;
       const drinksFit = drinkCandidates
         .filter((d) => {
           if (usedDrinks.has(d.id)) return false;
@@ -568,9 +574,6 @@ function pairingPicks(
         .slice(0, PAIR_DRINK_SCAN);
       if (drinksFit.length === 0) continue;
 
-      // Poklon je SKU: jedna zadana vitola, ne expand svih formata.
-      const defV = resolveDefaultVitola(cigar);
-      const scoredCigar = defV ? applyVitola(cigar, defV) : cigar;
       const top = pairDrinksForCigar(scoredCigar, drinksFit).find(
         (r) => r.score >= MIN_PAIRING_SCORE && !exclude.has(`pair:${cigar.id}:${r.item.id}`),
       );
