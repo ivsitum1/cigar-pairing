@@ -11,6 +11,26 @@ import {
   normalizeTags,
   pairingStyleKey,
 } from "./rules";
+
+/** Stilovi kojima |Δ body|≤1 uz wrapper afinitet daje puni body-match (ne VSOP/XO). */
+const LIGHT_BODY_AFFINITY_STYLES = new Set([
+  "agricole",
+  "filter-light",
+  "cognac-vs",
+  "irish-blend",
+  "milk",
+  // vinjak: affinity bodovi OK, ali soft body ne — inače craft vinjak (body 3)
+  // pregazi Connecticut × cognac VS zbog bogatijih tagova.
+  "speyside-fruity",
+  "japanese",
+  "contemporary",
+  "london-dry",
+  "premium-dry",
+  "plymouth",
+  "sparkling",
+  "white-fresh",
+  "white-rich",
+]);
 import { personalBrandReason, personalStyleReason, type PersonalPrefs } from "./personal";
 import { applyServe } from "./serve";
 import { applyGeometry } from "./vitolaGeometry";
@@ -89,30 +109,37 @@ export function scorePairing(
   // Wrapper afinitet (isti test kao pravilo 4) — kad stilovi „prirodno pasu”,
   // jedan korak razlike u tijelu nije mismatch. Inače blagi Connecticut (body 2)
   // × cognac VS (body 3) padne na ~39 iako afinitet kaže da idu zajedno (~70).
+  // Soft-body samo za lagane stilove (VS, agricole…): VSOP/XO i dalje dobiju
+  // affinity bodove, ali ne besplatni body-match — inače bogato tagirani VSOP
+  // pregazi klasični Connecticut × VS.
   const styleKey = pairingStyleKey(effDrink);
-  const wrapperSoftensBody = WRAPPER_AFFINITY.some(
-    (wa) =>
-      wa.wrapper.test(effCigar.wrapper) &&
-      (wa.styles.includes(styleKey) || drinkTags.some((t) => wa.tags.includes(t))),
+  const styleAffinity = WRAPPER_AFFINITY.some(
+    (wa) => wa.wrapper.test(effCigar.wrapper) && wa.styles.includes(styleKey),
   );
+  const wrapperSoftensBody =
+    styleAffinity && LIGHT_BODY_AFFINITY_STYLES.has(styleKey);
 
   // 1) Body match — zlatno pravilo (effCigar: geometrija, effDrink: serve).
   // Match unutar <0.5 koraka: male delte (geometrija ±0.1–0.2, serve) ne smiju
   // skinuti puni bonus — inače dotjerivanja preokrenu dominantno pravilo.
   // Light band: oba ≤2.5 i |Δ|≤1 također dobiju puni match — inače agricole
   // (body 2) + blagi Connecticut (body 1) padne na ~50 i izgleda kao da „nema para”.
-  // Affinity band: |Δ|≤1 uz wrapper afinitet (npr. Connecticut × cognac-vs).
+  // Affinity band: |Δ|≤1 uz lagani affinity stil (npr. Connecticut × cognac-vs).
   const bodyLabelIdx = Math.round(effCigar.body);
   const bodyDiff = Math.abs(effCigar.body - effDrink.body);
   const bothLight = effCigar.body <= 2.5 && effDrink.body <= 2.5;
-  if (
-    bodyDiff < 0.5 ||
-    (bodyDiff <= 1.05 && (bothLight || wrapperSoftensBody))
-  ) {
-    score += WEIGHTS.bodyBonus;
+  const exactBody = bodyDiff < 0.5;
+  const softBody = !exactBody && bodyDiff <= 1.05 && (bothLight || wrapperSoftensBody);
+  if (exactBody || softBody) {
+    // Soft affinity (npr. Connecticut body 2 × cognac-vs body 3) malo ispod
+    // točnog matcha — inače Courvoisier izjednači Hennessy. bothLight (Δ≤1,
+    // oba lagana) ostaje puni bonus.
+    const bodyPts =
+      exactBody || bothLight ? WEIGHTS.bodyBonus : WEIGHTS.bodyBonus - 3;
+    score += bodyPts;
     reasons.push({
       rule: "body-match",
-      score: WEIGHTS.bodyBonus,
+      score: bodyPts,
       text: {
         hr: `Tijela se poklapaju (${BODY_LABEL_HR[bodyLabelIdx]}) — nijedno ne nadjačava drugo.`,
         en: `Bodies match (${BODY_LABEL_EN[bodyLabelIdx]}) — neither overpowers the other.`,

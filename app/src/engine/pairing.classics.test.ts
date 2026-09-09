@@ -20,6 +20,22 @@ describe("pairing classic floors — smisleni parovi ostaju visoko", () => {
     expect(scorePairing(macanudo, clement).score).toBeGreaterThanOrEqual(80);
   });
 
+  it("Cusano Bundle: Hennessy VS pobjeđuje VSOP/XO i body-3 VS", () => {
+    const line = cigarById("cig-cusano-bundle-selection")!;
+    const robusto = uniqueVitolas(line).find((v) => /robusto/i.test(v.name))!;
+    const cigar = applyVitola(line, robusto);
+    const hennessy = scorePairing(cigar, drinkById("br-hennessy-vs")!).score;
+    const courvoisier = scorePairing(cigar, drinkById("br-courvoisier-vs")!).score;
+    const remy = scorePairing(cigar, drinkById("br-remy-martin-vsop")!).score;
+    const camusXo = scorePairing(
+      cigar,
+      drinkById("br-camus-xo-intensely-aromatic-cognac-40-vol-0-7l-u-poklon-kutiji")!,
+    ).score;
+    expect(hennessy).toBeGreaterThan(courvoisier);
+    expect(hennessy).toBeGreaterThan(remy);
+    expect(hennessy).toBeGreaterThan(camusXo);
+  });
+
   it("puna maduro × tamni rum / espresso ostaje preferirana", () => {
     const padron = cigarById("cig-padron-1964-anniversary")!;
     const zacapa = drinkById("rum-zacapa-centenario-23")!;
