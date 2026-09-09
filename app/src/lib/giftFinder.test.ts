@@ -170,11 +170,12 @@ describe("giftFinder", () => {
     if (picks.length === 2) expect(picks[0].id).not.toBe(picks[1].id);
   });
 
-  // Jedan prolaz kroz svih 1920 kombinacija odgovora (4×6×5×4×4) — sve što mora
-  // vrijediti za svaki mogući upitnik. Samo u CI s CI_EXHAUSTIVE_GIFTS=1: deploy
-  // ponavlja npm test i ovaj prolaz (oko minute + heartbeat yields) povremeno
-  // padne na "Timeout calling onTaskUpdate".
-  it.skipIf(process.env.CI_EXHAUSTIVE_GIFTS !== "1")(
+  // Jedan prolaz kroz svih 1600 kombinacija odgovora — sve što mora vrijediti
+  // za svaki mogući upitnik provjerava se ovdje, da se katalog ne pretražuje
+  // dvaput (prolaz traje oko minute). Prolaz je async i svakih stotinjak
+  // kombinacija pušta event loop: inače vitest worker ne stigne javiti napredak
+  // i cijeli run padne na "Timeout calling onTaskUpdate".
+  it(
     "svaka kombinacija odgovora daje prijedlog u budžetu i iznad praga slaganja",
     async () => {
       const empty: string[] = [];
@@ -209,7 +210,8 @@ describe("giftFinder", () => {
   );
 
   it("radije cigara i boca zasebno nego slaba kombinacija", () => {
-    // Do 20 € u HR poolu ne postoji nijedan par whisky + cigara iznad praga.
+    // Do 20 € u HR: ako postoji par whisky + cigara iznad praga, to je OK
+    // (zadana vitola može podići score); inače se raspada na zasebne stavke.
     const picks = findGifts(
       {
         recipient: "regular",
@@ -222,8 +224,15 @@ describe("giftFinder", () => {
       "HR",
     );
     expect(picks.length).toBeGreaterThan(0);
-    expect(picks.every((p) => p.kind !== "pairing")).toBe(true);
-    expect(picks.every((p) => p.droppedPairing)).toBe(true);
+    const pairs = picks.filter((p) => p.kind === "pairing");
+    if (pairs.length === 0) {
+      expect(picks.every((p) => p.droppedPairing)).toBe(true);
+    } else {
+      for (const p of pairs) {
+        expect(p.matchScore!).toBeGreaterThanOrEqual(MIN_PAIRING_SCORE);
+        expect(p.matchScore).toBe(scorePairing(p.cigar!, p.drink!).score);
+      }
+    }
   }, 20_000);
 
   // ——— 0 pogodaka → susjedna kategorija ———

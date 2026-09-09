@@ -1,14 +1,30 @@
-// Custom pairing prostor: ručno izaberi JEDNU cigaru i JEDNO piće -> % slaganja.
+// Custom pairing prostor: ručno izaberi JEDNU cigaru (vitolu) i JEDNO piće -> % slaganja.
 import { useMemo, useState } from "react";
-import type { Cigar, Drink, ServeStyle } from "../types";
-import { ALL_DRINKS, CIGARS, brandDisplayName, brandSearchHaystack, cigarInRegion, formatPrice } from "../data";
+import type { Cigar, Drink, ServeStyle, Vitola } from "../types";
+import {
+  ALL_DRINKS,
+  CIGARS,
+  brandDisplayName,
+  brandSearchHaystack,
+  cigarInRegion,
+  formatPrice,
+  resolveCigarId,
+} from "../data";
 import { scorePairing } from "../engine/pairing";
 import { curatedPairingOpinion } from "../engine/curatedOpinion";
 import { pairingBlurb } from "../engine/pairingExplain";
+import type { PersonalPrefs } from "../engine/personal";
+import type { Occasion } from "../engine/occasion";
 import { drinkNameLoc, drinkNameHaystack } from "../lib/drinkName";
+import {
+  applyVitola,
+  needsVitolaPickInMarket,
+  vitolasForMarket,
+} from "../lib/cigarVitola";
 import { useI18n, STYLE_LABELS, leafMetaParts, type StringKey } from "../i18n";
 import { Meter, ScoreBand, SearchInput } from "../components/ui";
 import { ServeChips } from "../components/ServeChips";
+import { VitolaPicker } from "../components/VitolaPicker";
 import { useMarket } from "../store/market";
 import { useTasteProfiles } from "../store/tasteProfile";
 import { withTasteAll } from "../lib/tasteProfile";
@@ -21,13 +37,18 @@ type Detail =
   | { kind: "drink"; item: Drink };
 
 export function CustomPairing({
+  prefs,
+  occasion,
   onOpenDetail,
 }: {
+  prefs?: PersonalPrefs;
+  occasion?: Occasion;
   onOpenDetail: (d: Detail) => void;
 }) {
   const { t, lx, lang } = useI18n();
   const market = useMarket();
   const [cigar, setCigar] = useState<Cigar | null>(null);
+  const [pendingCigar, setPendingCigar] = useState<Cigar | null>(null);
   const [drink, setDrink] = useState<Drink | null>(null);
   const [serve, setServe] = useState<ServeStyle | undefined>(undefined);
   const [picking, setPicking] = useState<"cigar" | "drink" | null>("cigar");
@@ -40,7 +61,29 @@ export function CustomPairing({
   );
   const drinks = useMemo(() => ALL_DRINKS.filter((d) => d.pairable), []);
 
-  const result = cigar && drink ? scorePairing(cigar, drink, undefined, serve) : null;
+  const pickCigar = (raw: Cigar) => {
+    const resolved = resolveCigarId(raw.id) ?? raw;
+    if (needsVitolaPickInMarket(resolved, market)) {
+      setPendingCigar(resolved);
+      setCigar(null);
+      return;
+    }
+    const vitolas = vitolasForMarket(resolved, market);
+    setCigar(vitolas.length === 1 ? applyVitola(resolved, vitolas[0]) : resolved);
+    setPendingCigar(null);
+    setPicking(drink ? null : "drink");
+  };
+
+  const confirmVitola = (vitola: Vitola) => {
+    if (!pendingCigar) return;
+    setCigar(applyVitola(pendingCigar, vitola));
+    setPendingCigar(null);
+    setPicking(drink ? null : "drink");
+  };
+
+  // Bez odabrane vitole (multi-format linija) nema scorea — isti identitet kao Pairing.
+  const result =
+    cigar && drink ? scorePairing(cigar, drink, prefs, serve, occasion) : null;
   const pairingOpinion = result
     ? curatedPairingOpinion(cigar!, drink!, result.reasons, result.score)
     : null;
@@ -60,6 +103,12 @@ export function CustomPairing({
             ? "pair.verdict2"
             : "pair.verdict1";
 
+  const cigarSlotLabel = cigar
+    ? `${brandDisplayName(cigar.brand, market)} ${cigar.line}${
+        cigar.selectedVitola ? ` · ${cigar.selectedVitola}` : ""
+      }`
+    : null;
+
   return (
     <div className="pb-4">
       <div className="mt-4 mb-1 font-display text-sm uppercase tracking-[0.15em] text-zlato">
@@ -71,7 +120,7 @@ export function CustomPairing({
       <div className="grid grid-cols-2 gap-2">
         <Slot
           label={t("common.cigar")}
-          filled={cigar ? `${brandDisplayName(cigar.brand, market)} ${cigar.line}` : null}
+          filled={cigarSlotLabel}
           onClick={() => setPicking(picking === "cigar" ? null : "cigar")}
           active={picking === "cigar"}
         />
@@ -104,7 +153,10 @@ export function CustomPairing({
               onClick={() => onOpenDetail({ kind: "cigar", item: cigar! })}
               className="flex min-w-0 flex-col rounded-lg border border-dim/20 bg-humidor/40 p-2 text-left"
             >
-              <div className="font-display text-papir">{cigar!.brand} {cigar!.line}</div>
+              <div className="font-display text-papir">
+                {cigar!.brand} {cigar!.line}
+                {cigar!.selectedVitola ? ` · ${cigar!.selectedVitola}` : ""}
+              </div>
               <div className="mt-auto flex flex-col gap-1 pt-1.5">
                 <Meter block value={cigar!.strength} label={t("common.strength")} accent="var(--color-oxblood)" />
                 <Meter block value={cigar!.body} label={t("common.body")} />
@@ -158,8 +210,16 @@ export function CustomPairing({
         </div>
       )}
 
+      {pendingCigar && (
+        <VitolaPicker
+          cigar={pendingCigar}
+          onPick={confirmVitola}
+          onBack={() => setPendingCigar(null)}
+        />
+      )}
+
       {/* birač (ispod, kad je slot aktivan) */}
-      {picking && (
+      {picking && !pendingCigar && (
         <MiniPicker
           key={picking}
           items={
@@ -181,8 +241,7 @@ export function CustomPairing({
           }
           onPick={(raw) => {
             if (picking === "cigar") {
-              setCigar(raw as Cigar);
-              setPicking(drink ? null : "drink");
+              pickCigar(raw as Cigar);
             } else {
               setDrink(raw as Drink);
               setServe(undefined);

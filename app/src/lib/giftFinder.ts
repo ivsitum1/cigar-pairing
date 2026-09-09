@@ -17,6 +17,7 @@ import { cigarAvailableInRegion } from "./cigarAvailability";
 import { pairDrinksForCigar } from "../engine/pairing";
 import { pairingBlurb } from "../engine/pairingExplain";
 import { cigarShapes, type ShapeFamily } from "./vitolaShape";
+import { applyVitola, resolveDefaultVitola } from "./cigarVitola";
 import {
   BUCKETS,
   drinkByQuality,
@@ -567,7 +568,10 @@ function pairingPicks(
         .slice(0, PAIR_DRINK_SCAN);
       if (drinksFit.length === 0) continue;
 
-      const top = pairDrinksForCigar(cigar, drinksFit).find(
+      // Poklon je SKU: jedna zadana vitola, ne expand svih formata.
+      const defV = resolveDefaultVitola(cigar);
+      const scoredCigar = defV ? applyVitola(cigar, defV) : cigar;
+      const top = pairDrinksForCigar(scoredCigar, drinksFit).find(
         (r) => r.score >= MIN_PAIRING_SCORE && !exclude.has(`pair:${cigar.id}:${r.item.id}`),
       );
       if (!top) continue;
@@ -578,11 +582,11 @@ function pairingPicks(
       out.push({
         id: `pair:${cigar.id}:${top.item.id}`,
         kind: "pairing",
-        cigar,
+        cigar: scoredCigar,
         drink: top.item,
         price: cp + dp,
         shop: cigarShopName(cigar, region) ?? top.item.shopHR ?? null,
-        why: pairingBlurb(cigar, top.item, top.reasons, top.score),
+        why: pairingBlurb(scoredCigar, top.item, top.reasons, top.score),
         matchScore: top.score,
         fellBackBudget: fellBack,
         ...(noGapLeft ? { noGapLeft: true } : null),
