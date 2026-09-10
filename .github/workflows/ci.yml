@@ -36,7 +36,7 @@ jobs:
         env:
           # Exhaustive giftFinder matrix (~1920 combos); skipped in deploy.yml smoke.
           CI_EXHAUSTIVE_GIFTS: "1"
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
 
@@ -139,7 +139,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
       # paddleocr/torch su neobavezni i teški — servis ima stub put bez njih,
