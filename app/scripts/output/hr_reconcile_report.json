@@ -1,29 +1,12 @@
 {
-  "generated_at": "2026-09-01T06:10:17.569707+00:00",
-  "snapshot_at": "2026-09-01T06:10:17.238872+00:00",
-  "present_keys": 608,
+  "generated_at": "2026-09-07T09:27:06.520420+00:00",
+  "snapshot_at": "2026-09-07T09:27:05.975003+00:00",
+  "present_keys": 607,
   "removed_count": 0,
-  "added_count": 2,
+  "added_count": 0,
   "hr_without_source": 0,
-  "hr_markets_remaining": 408,
-  "hr_markets_before": 406,
+  "hr_markets_remaining": 407,
+  "hr_markets_before": 407,
   "removed": [],
-  "added": [
-    {
-      "id": "cig-arturo-fuente-858",
-      "brand": "Arturo Fuente",
-      "line": "858",
-      "shops": [
-        "Havana Cigar Shop"
-      ]
-    },
-    {
-      "id": "cig-la-galera-year-of-the-horse",
-      "brand": "La Galera",
-      "line": "Year of the Horse",
-      "shops": [
-        "The Humidor"
-      ]
-    }
-  ]
+  "added": []
 }
