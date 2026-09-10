@@ -69,7 +69,7 @@ jobs:
           PY
 
       - name: Open a PR when something changed
-        uses: peter-evans/create-pull-request@v6
+        uses: peter-evans/create-pull-request@v8
         with:
           branch: chore/hr-availability-refresh
           base: master
