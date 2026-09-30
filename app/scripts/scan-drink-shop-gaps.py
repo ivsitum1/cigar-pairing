@@ -11,6 +11,7 @@ Does not mutate drink JSON (merge/ingest are separate scripts).
   python scripts/scan-drink-shop-gaps.py
   python scripts/scan-drink-shop-gaps.py --shops allez --category rum
   python scripts/scan-drink-shop-gaps.py --skip-fetch
+  python scripts/scan-drink-shop-gaps.py --shops ecuga      # needs playwright
   powershell -File scripts/schedule-shop-gaps-scan.ps1 -Install
 """
 from __future__ import annotations
@@ -54,7 +55,7 @@ SKIP_NAME_RE = re.compile(
     re.I,
 )
 
-ALL_SHOPS = ("allez", "tipsy", "cugaklik", "miva", "roto", "humidor")
+ALL_SHOPS = ("allez", "ecuga", "tipsy", "cugaklik", "miva", "roto", "humidor")
 
 SHOP_LABEL = {
     "allez": "allez.hr",
@@ -63,6 +64,7 @@ SHOP_LABEL = {
     "miva": "miva.com.hr",
     "roto": "webshop.rotodinamic.hr",
     "humidor": "humidor.hr",
+    "ecuga": "ecuga.com",
 }
 
 ECS_WORDS = re.compile(
@@ -202,32 +204,59 @@ def should_skip_listing(listing: dict) -> str | None:
     return None
 
 
-def scrape_shops(wanted: list[str], category: str | None) -> list[dict]:
-    items: list[dict] = []
-    if "allez" in wanted:
+def _scrape_one(shop: str, category: str | None) -> list[dict]:
+    if shop == "allez":
         allez = _load_module("allez_listings", HERE / "allez_listings.py")
         cats = allez.ALLEZ_SPIRIT_LISTS
         if category:
             cats = [(u, l) for u, l in cats if l == category]
             if not cats:
                 raise SystemExit(f"unknown allez category: {category}")
-        items.extend(allez.scrape_allez(cats))
-    sdl_shops = [s for s in wanted if s != "allez"]
-    if sdl_shops:
-        sdl = _load_module("sdl", HERE / "scrape-drink-shop-listings.py")
-        for shop in sdl_shops:
-            if shop == "tipsy":
-                items.extend(sdl.scrape_tipsy())
-            elif shop == "cugaklik":
-                items.extend(sdl.scrape_cugaklik())
-            elif shop == "miva":
-                items.extend(sdl.scrape_miva())
-            elif shop == "roto":
-                items.extend(sdl.scrape_roto())
-            elif shop == "humidor":
-                items.extend(sdl.scrape_humidor())
-            else:
-                raise SystemExit(f"unknown shop: {shop}")
+        return allez.scrape_allez(cats)
+    if shop == "ecuga":
+        ecuga = _load_module("ecuga_listings", HERE / "ecuga_listings.py")
+        return ecuga.scrape_ecuga()
+    sdl = sys.modules.get("sdl") or _load_module("sdl", HERE / "scrape-drink-shop-listings.py")
+    fn = {
+        "tipsy": sdl.scrape_tipsy,
+        "cugaklik": sdl.scrape_cugaklik,
+        "miva": sdl.scrape_miva,
+        "roto": sdl.scrape_roto,
+        "humidor": sdl.scrape_humidor,
+    }.get(shop)
+    if fn is None:
+        raise SystemExit(f"unknown shop: {shop}")
+    return fn()
+
+
+def scrape_shops(
+    wanted: list[str],
+    category: str | None,
+    failed: dict[str, str] | None = None,
+) -> list[dict]:
+    """Scrape each shop; a shop that errors or returns nothing lands in `failed`.
+
+    One broken storefront (layout change, timeout, bot wall) must not cost the
+    other shops their monthly scan, so errors are recorded, not raised.
+    """
+    items: list[dict] = []
+    for shop in wanted:
+        try:
+            got = _scrape_one(shop, category)
+        except SystemExit:
+            raise
+        except Exception as exc:  # noqa: BLE001 — report and continue
+            msg = f"{type(exc).__name__}: {exc}"[:300]
+            print(f"  !! {shop} failed: {msg}", flush=True)
+            if failed is not None:
+                failed[shop] = msg
+            continue
+        if not got:
+            print(f"  !! {shop} returned 0 listings", flush=True)
+            if failed is not None:
+                failed[shop] = "0 listings"
+            continue
+        items.extend(got)
     return items
 
 
@@ -433,7 +462,12 @@ def write_staging(rows: list[dict], stamp: str) -> int:
     return len(staged)
 
 
-def load_raw_listings(skip_fetch: bool, wanted: list[str], category: str | None) -> list[dict]:
+def load_raw_listings(
+    skip_fetch: bool,
+    wanted: list[str],
+    category: str | None,
+    failed: dict[str, str] | None = None,
+) -> list[dict]:
     if skip_fetch:
         path = RAW_JSON if RAW_JSON.exists() else LEGACY_RAW_JSON
         if not path.exists():
@@ -443,12 +477,15 @@ def load_raw_listings(skip_fetch: bool, wanted: list[str], category: str | None)
         print(f"loaded {len(listings)} listings from {path.name}", flush=True)
         return listings
 
-    listings = scrape_shops(wanted, category)
-    # merge-preserve: keep shops not scraped this run (e.g. ecuga)
+    failed = failed if failed is not None else {}
+    listings = scrape_shops(wanted, category, failed)
+    # merge-preserve: keep shops not scraped this run, and the previous rows of
+    # shops that failed this run (a failed crawl is not proof the bottles left)
+    refreshed = {s for s in wanted if s not in failed}
     if RAW_JSON.exists():
         prev = json.loads(RAW_JSON.read_text(encoding="utf-8"))
         old_items = prev.get("items") if isinstance(prev, dict) else prev
-        keep = [it for it in (old_items or []) if (it.get("shop") or "") not in wanted]
+        keep = [it for it in (old_items or []) if (it.get("shop") or "") not in refreshed]
         listings = keep + listings
         notes = list((prev.get("notes") if isinstance(prev, dict) else None) or [])
     else:
@@ -492,7 +529,8 @@ def main() -> None:
     if SNAPSHOT_JSON.exists():
         prev_snapshot = json.loads(SNAPSHOT_JSON.read_text(encoding="utf-8"))
 
-    listings = load_raw_listings(args.skip_fetch, wanted, args.category or None)
+    failed_shops: dict[str, str] = {}
+    listings = load_raw_listings(args.skip_fetch, wanted, args.category or None, failed_shops)
     known_urls, by_url, indexed = load_catalog()
     new_urls = diff_new_urls(listings, prev_snapshot)
 
@@ -556,6 +594,10 @@ def main() -> None:
         "generatedAt": stamp,
         "shops": wanted,
         "category": args.category or None,
+        "failedShops": failed_shops,
+        # without a previous URL snapshot every listing looks "new" — the
+        # Markdown report then hides the 🆕 marks instead of flagging everything
+        "hadPreviousSnapshot": bool(prev_snapshot and prev_snapshot.get("urls")),
         "listingsScraped": len(listings),
         "skippedListings": skipped,
         "byTier": by_tier,
@@ -598,6 +640,8 @@ def main() -> None:
         flush=True,
     )
     print(f"ask-queue new~{ask_added} | staging D written={staged_n}", flush=True)
+    for shop, why in sorted(failed_shops.items()):
+        print(f"  FAILED {shop}: {why}", flush=True)
     for shop, n in sorted(by_shop.items()):
         extra = f" ({by_shop_new.get(shop, 0)} new)" if by_shop_new.get(shop) else ""
         print(f"  gaps {shop}: {n}{extra}", flush=True)

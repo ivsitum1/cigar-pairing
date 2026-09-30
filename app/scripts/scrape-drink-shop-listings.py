@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Scrape drink shop listings (Allez, Tipsy, CugaKlik, Miva, Roto, Humidor) -> raw JSON.
+"""Scrape drink shop listings (Allez, eCuga, Tipsy, CugaKlik, Miva, Roto, Humidor) -> raw JSON.
 
 Cooltura: no public product catalogue (pub / Wolt only) — skipped with a note.
 Havana Cigar Shop webshop: cigars/accessories only — no bottle catalogue.
@@ -8,6 +8,7 @@ Miva: spirits only (vina excluded — wines inflate gap noise).
   python scripts/scrape-drink-shop-listings.py
   python scripts/scrape-drink-shop-listings.py --shops tipsy,cugaklik,miva
   python scripts/scrape-drink-shop-listings.py --shops allez,humidor --merge
+  python scripts/scrape-drink-shop-listings.py --shops ecuga --merge   # needs playwright
 """
 from __future__ import annotations
 
@@ -37,6 +38,7 @@ SHOP_META = {
     "miva": {"label": "Miva", "host": "miva.com.hr"},
     "roto": {"label": "webshop.rotodinamic.hr", "host": "webshop.rotodinamic.hr"},
     "humidor": {"label": "humidor.hr", "host": "humidor.hr"},
+    "ecuga": {"label": "ecuga.com", "host": "ecuga.com"},
     "coolitura": {"label": "Cooltura", "host": None},  # no catalog
 }
 
@@ -469,12 +471,18 @@ def scrape_allez() -> list[dict]:
     return _scrape()
 
 
+def scrape_ecuga() -> list[dict]:
+    from ecuga_listings import scrape_ecuga as _scrape
+
+    return _scrape()
+
+
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument(
         "--shops",
-        default="allez,tipsy,cugaklik,miva,roto,humidor",
-        help="Comma list: allez,tipsy,cugaklik,miva,roto,humidor,coolitura",
+        default="allez,ecuga,tipsy,cugaklik,miva,roto,humidor",
+        help="Comma list: allez,ecuga,tipsy,cugaklik,miva,roto,humidor,coolitura",
     )
     ap.add_argument(
         "--merge",
@@ -503,6 +511,8 @@ def main() -> None:
             all_items.extend(scrape_roto())
         elif shop == "humidor":
             all_items.extend(scrape_humidor())
+        elif shop == "ecuga":
+            all_items.extend(scrape_ecuga())
         else:
             raise SystemExit(f"unknown shop: {shop}")
 
