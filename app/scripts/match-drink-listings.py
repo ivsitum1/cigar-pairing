@@ -206,6 +206,9 @@ def propose_update(
     """
     url = listing.get("url") or ""
     price = listing.get("price_eur")
+    # Shop listings occasionally emit 0 / negative; never overwrite catalog prices with those.
+    if isinstance(price, (int, float)) and price <= 0:
+        price = None
     shop = (listing.get("shop") or "").lower()
     shop_label = listing.get("shopLabel") or listing.get("shop") or ""
     if not url:

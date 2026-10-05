@@ -151,6 +151,25 @@ class ObjectSlice(unittest.TestCase):
         self.assertEqual(row["priceEUR"], {"min": 99.0, "max": 99.0})
         self.assertEqual(row["priceUrl"], after["priceUrl"])
 
+    def test_propose_update_ignores_zero_price(self) -> None:
+        drink = {
+            "id": "br-x",
+            "priceUrl": "https://allez.hr/shop/product/x",
+            "priceEUR": {"min": 170.0, "max": 170.0},
+            "shopHR": "allez.hr",
+        }
+        after = mdl.propose_update(
+            drink,
+            {
+                "url": "https://allez.hr/shop/product/x",
+                "price_eur": 0.0,
+                "shop": "allez",
+                "shopLabel": "allez.hr",
+            },
+            score=1.0,
+        )
+        self.assertIsNone(after)
+
 
 if __name__ == "__main__":
     unittest.main()
