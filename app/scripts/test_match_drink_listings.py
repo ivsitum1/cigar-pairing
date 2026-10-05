@@ -127,6 +127,30 @@ class ObjectSlice(unittest.TestCase):
         self.assertIsNone(rows["rum-30"]["shopHR"])
         self.assertIs(rows["rum-30"]["priceApprox"], True)
 
+    def test_patch_replaces_null_price_eur(self) -> None:
+        import json as _json
+
+        text = (
+            "[\n"
+            "  {\n"
+            '    "id": "wh-null-price",\n'
+            '    "priceUrl": "https://allez.hr/shop/product/x",\n'
+            '    "priceEUR": null,\n'
+            '    "shopHR": "allez.hr"\n'
+            "  }\n"
+            "]\n"
+        )
+        start, end = mdl.object_slice(text, "wh-null-price")
+        after = {
+            "priceUrl": "https://allez.hr/shop/product/x",
+            "shopHR": "allez.hr",
+            "priceEUR": {"min": 99.0, "max": 99.0},
+        }
+        out = text[:start] + mdl.patch_block(text[start:end], after) + text[end:]
+        row = _json.loads(out)[0]
+        self.assertEqual(row["priceEUR"], {"min": 99.0, "max": 99.0})
+        self.assertEqual(row["priceUrl"], after["priceUrl"])
+
 
 if __name__ == "__main__":
     unittest.main()
