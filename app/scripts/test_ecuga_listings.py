@@ -45,6 +45,16 @@ class EcugaParsing(unittest.TestCase):
         self.assertEqual(it["price_eur"], 42.5)
         self.assertIn("new", seen)
 
+    def test_pending_seen_defers_commit(self) -> None:
+        global_seen: set[str] = set()
+        pending: set[str] = set()
+        items = el.items_from_products(_products(["a"]), "rum", global_seen, pending)
+        self.assertEqual(len(items), 1)
+        self.assertEqual(pending, {"a"})
+        self.assertEqual(global_seen, set())
+        global_seen.update(pending)
+        self.assertEqual(global_seen, {"a"})
+
     def test_missing_price_is_none(self) -> None:
         prods = {"edges": [{"node": {"slug": "x", "name": "X", "pricing": None}}]}
         self.assertIsNone(el.items_from_products(prods, "rum", set())[0]["price_eur"])

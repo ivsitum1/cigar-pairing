@@ -106,6 +106,31 @@ def normalize_url(url: str | None) -> str:
     return f"{parsed.scheme.lower()}://{host}{path}".lower()
 
 
+def shop_from_url(url: str) -> str | None:
+    host = urlparse(url).netloc.lower().removeprefix("www.")
+    if not host:
+        return None
+    for shop_id, label in SHOP_LABEL.items():
+        if host == label:
+            return shop_id
+    return None
+
+
+def snapshot_urls(
+    listings: list[dict],
+    previous: dict | None,
+    failed_shops: dict[str, str],
+) -> list[str]:
+    urls = {normalize_url(it.get("url")) for it in listings if it.get("url")}
+    if previous and failed_shops:
+        for u in previous.get("urls") or []:
+            nu = normalize_url(u) if isinstance(u, str) else ""
+            shop = shop_from_url(nu)
+            if nu and shop in failed_shops:
+                urls.add(nu)
+    return sorted(urls)
+
+
 def suggested_category(listing: dict) -> str | None:
     cat = (listing.get("category") or "").lower()
     blob = f"{cat} {(listing.get('url') or '')} {(listing.get('name') or '')}".lower()
@@ -621,9 +646,7 @@ def main() -> None:
         json.dumps(
             {
                 "generatedAt": stamp,
-                "urls": sorted(
-                    {normalize_url(it.get("url")) for it in listings if it.get("url")}
-                ),
+                "urls": snapshot_urls(listings, prev_snapshot, failed_shops),
             },
             ensure_ascii=False,
             indent=2,

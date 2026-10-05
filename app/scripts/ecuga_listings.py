@@ -70,16 +70,28 @@ def products_from_body(body: object) -> dict | None:
     return None
 
 
-def items_from_products(products: dict, category: str, seen: set[str]) -> list[dict]:
-    """Map Saleor product edges to raw listing rows; skips slugs in `seen`."""
+def items_from_products(
+    products: dict,
+    category: str,
+    seen: set[str],
+    pending: set[str] | None = None,
+) -> list[dict]:
+    """Map Saleor product edges to raw listing rows; skips slugs in `seen`.
+
+    When `pending` is set, new slugs are recorded there until the caller commits
+    them into `seen` (so a failed category path does not hide products).
+    """
     out: list[dict] = []
     for edge in products.get("edges") or []:
         node = (edge or {}).get("node") or {}
         slug = (node.get("slug") or "").strip()
         name = (node.get("name") or "").strip()
-        if not slug or not name or slug in seen:
+        if not slug or not name or slug in seen or (pending is not None and slug in pending):
             continue
-        seen.add(slug)
+        if pending is not None:
+            pending.add(slug)
+        else:
+            seen.add(slug)
         start = ((node.get("pricing") or {}).get("priceRange") or {}).get("start") or {}
         amount = (start.get("gross") or {}).get("amount")
         try:
@@ -135,6 +147,7 @@ def _accept_cookies(page) -> None:
 
 
 def _scrape_path(page, url: str, category: str, seen: set[str]) -> list[dict]:
+    path_seen: set[str] = set()
     captured: list[tuple[dict, str | None, str]] = []
 
     def on_response(response) -> None:
@@ -165,12 +178,12 @@ def _scrape_path(page, url: str, category: str, seen: set[str]) -> list[dict]:
         for _ in range(MAX_SCROLLS):
             before = len(seen)
             for products, _post, _u in captured:
-                items.extend(items_from_products(products, category, seen))
+                items.extend(items_from_products(products, category, seen, path_seen))
             captured_n = len(captured)
             page.mouse.wheel(0, 4000)
             page.wait_for_timeout(900)
             for products, _post, _u in captured[captured_n:]:
-                items.extend(items_from_products(products, category, seen))
+                items.extend(items_from_products(products, category, seen, path_seen))
             stale = stale + 1 if len(seen) == before else 0
             if stale >= 3:
                 break
@@ -190,8 +203,9 @@ def _scrape_path(page, url: str, category: str, seen: set[str]) -> list[dict]:
                 nxt = products_from_body(resp.json())
                 if nxt is None:
                     break
-                items.extend(items_from_products(nxt, category, seen))
+                items.extend(items_from_products(nxt, category, seen, path_seen))
                 products, post = nxt, body
+        seen.update(path_seen)
         return items
     finally:
         page.remove_listener("response", on_response)
