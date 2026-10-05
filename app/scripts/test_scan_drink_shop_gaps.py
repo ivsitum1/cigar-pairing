@@ -41,6 +41,24 @@ class GapHelpers(unittest.TestCase):
         prev = {"urls": ["https://allez.hr/a"]}
         self.assertEqual(sg.diff_new_urls(cur, prev), {"https://allez.hr/b"})
 
+    def test_snapshot_urls_keeps_failed_shop_from_previous(self) -> None:
+        prev = {
+            "urls": [
+                "https://ecuga.com/proizvod/old",
+                "https://allez.hr/shop/x",
+            ]
+        }
+        listings = [{"url": "https://allez.hr/shop/y"}]
+        urls = sg.snapshot_urls(listings, prev, {"ecuga": "timeout"})
+        self.assertEqual(
+            urls,
+            ["https://allez.hr/shop/y", "https://ecuga.com/proizvod/old"],
+        )
+
+    def test_shop_from_url(self) -> None:
+        self.assertEqual(sg.shop_from_url("https://www.ecuga.com/proizvod/x"), "ecuga")
+        self.assertIsNone(sg.shop_from_url("https://unknown.example/x"))
+
     def test_suggested_category_rum(self) -> None:
         self.assertEqual(
             sg.suggested_category(

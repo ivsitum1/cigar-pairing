@@ -1,0 +1,122 @@
+name: Drink shop scan
+
+# Trgovine stalno dodaju boce, a katalog pića je statičan: boca koja se pojavi
+# na allez/ecuga/tipsy/... nakon zadnjeg ručnog scrapea inače nikad ne dođe u
+# aplikaciju. Jednom mjesečno prođi sve trgovine, osvježi linkove i cijene
+# boca koje već imamo (tier A/B, aditivno) i otvori PR s popisom boca kojih
+# nemamo (tier D) u app/scripts/output/shop_new_bottles.md.
+#
+# Nove boce se NE dodaju automatski: stub bez profila okusa bi ušao u
+# pairing. Ingest ostaje lokalan (ingest-staged-drink-shops.py --apply).
+
+on:
+  schedule:
+    # 1. u mjesecu, 05:23 UTC — izvan špice, namjerno ne u puni sat
+    - cron: "23 5 1 * *"
+  workflow_dispatch:
+    inputs:
+      shops:
+        description: "Trgovine (zarezom); prazno = sve"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: drink-shop-scan
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install scrape deps
+        # playwright: ecuga.com je Saleor/Next.js — proizvodi dolaze GraphQL-om
+        run: |
+          pip install requests beautifulsoup4 lxml playwright
+          python -m playwright install --with-deps chromium
+
+      - name: Scan all shops
+        working-directory: app
+        env:
+          SHOPS: ${{ inputs.shops }}
+        run: |
+          # trgovina koja padne ide u failedShops, ostale se svejedno skeniraju
+          if [ -n "$SHOPS" ]; then
+            python scripts/scan-drink-shop-gaps.py --shops "$SHOPS"
+          else
+            python scripts/scan-drink-shop-gaps.py
+          fi
+
+      - name: Refresh links and prices of bottles we already carry (tier A/B)
+        working-directory: app
+        # aditivno: nikad ne briše id i nikad ne mijenja allez/ecuga link drugim
+        run: python scripts/merge-drink-shops-additive.py --apply --tiers a,b
+
+      - name: Stage new bottles (dry run) and audit
+        working-directory: app
+        run: |
+          python scripts/ingest-staged-drink-shops.py --dry-run
+          python scripts/audit_drink_shops_preship.py --check || true
+
+      - name: Write new-bottles report
+        working-directory: app
+        run: |
+          python scripts/report-new-shop-bottles.py
+          cat scripts/output/shop_new_bottles.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload full scan output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: drink-shop-scan
+          path: |
+            app/scripts/output/shop_gaps_report.json
+            app/scripts/output/shop_ingest_staging.json
+            app/scripts/output/catalog_ask_queue.json
+            app/scripts/output/drink_shop_listings_raw.json
+            app/scripts/output/shop_new_bottles.md
+          if-no-files-found: ignore
+          retention-days: 90
+
+      - name: Open a PR with the new bottles
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: chore/drink-shop-scan
+          base: master
+          delete-branch: true
+          commit-message: "chore(data): monthly drink shop scan"
+          title: "Mjesečni pregled trgovina pića — nove boce"
+          body-path: app/scripts/output/shop_new_bottles.md
+          add-paths: |
+            app/src/data/rums.json
+            app/src/data/whiskies.json
+            app/src/data/brandies.json
+            app/src/data/gins.json
+            app/src/data/tequilas.json
+            app/src/data/wines.json
+            app/src/data/digestifs.json
+            app/scripts/output/shop_new_bottles.md
+            app/scripts/output/shop_gaps_snapshot.json
+
+      - name: Fail if a shop could not be scanned
+        # PR je već otvoren; crveni run znači "scraper treba popravak"
+        working-directory: app
+        run: |
+          python - <<'PY'
+          import json, pathlib, sys
+          r = json.loads(pathlib.Path("scripts/output/shop_gaps_report.json").read_text("utf-8"))
+          failed = r.get("failedShops") or {}
+          for shop, why in sorted(failed.items()):
+              print(f"::error title=Shop scan failed::{shop}: {why}")
+          sys.exit(1 if failed else 0)
+          PY

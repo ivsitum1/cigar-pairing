@@ -67,17 +67,41 @@ def is_weak_price_url(url: str | None) -> bool:
 
 
 def object_slice(text: str, drink_id: str) -> tuple[int, int]:
+    """Return [start, end) of the JSON object holding `"id": "<drink_id>"`.
+
+    The end is found by brace matching (string-aware), not by looking for the
+    next object's indent: a guess at the indent that misses makes the slice run
+    to the end of the file, and patch_block then edits a *later* drink's null
+    priceUrl / shopHR.
+    """
     needle = f'"id": "{drink_id}"'
     at = text.find(needle)
     if at < 0:
         raise SystemExit(f"id not found: {drink_id}")
     start = text.rfind("{", 0, at)
-    nxt = text.find("\n {", at)
-    if nxt < 0:
-        nxt = text.find("\n]", at)
-    if start < 0 or nxt < 0:
+    if start < 0:
         raise SystemExit(f"cannot slice object: {drink_id}")
-    return start, nxt
+    depth = 0
+    in_str = False
+    esc = False
+    for i in range(start, len(text)):
+        c = text[i]
+        if in_str:
+            if esc:
+                esc = False
+            elif c == "\\":
+                esc = True
+            elif c == '"':
+                in_str = False
+        elif c == '"':
+            in_str = True
+        elif c == "{":
+            depth += 1
+        elif c == "}":
+            depth -= 1
+            if depth == 0:
+                return start, i + 1
+    raise SystemExit(f"cannot slice object: {drink_id}")
 
 
 def patch_block(block: str, after: dict) -> str:

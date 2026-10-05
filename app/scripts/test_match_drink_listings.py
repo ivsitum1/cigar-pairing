@@ -83,5 +83,50 @@ class AgeAndExtras(unittest.TestCase):
         )
 
 
+class ObjectSlice(unittest.TestCase):
+    """patch_block must only ever touch the drink it was asked to patch."""
+
+    TEXT = (
+        "[\n"
+        "  {\n"
+        '    "id": "rum-23",\n'
+        '    "notes": {"hr": "a } in \\"text\\" {"},\n'
+        '    "priceUrl": "https://humidor.hr/hr/proizvod/m23/",\n'
+        '    "priceEUR": {\n      "min": 50.0,\n      "max": 50.0\n    },\n'
+        '    "shopHR": "humidor.hr"\n'
+        "  },\n"
+        "  {\n"
+        '    "id": "rum-30",\n'
+        '    "priceUrl": null,\n'
+        '    "priceEUR": {\n      "min": 28.0,\n      "max": 35.0\n    },\n'
+        '    "priceApprox": true,\n'
+        '    "shopHR": null\n'
+        "  }\n"
+        "]\n"
+    )
+
+    def test_slice_stops_at_own_object(self) -> None:
+        start, end = mdl.object_slice(self.TEXT, "rum-23")
+        block = self.TEXT[start:end]
+        self.assertTrue(block.startswith("{") and block.endswith("}"))
+        self.assertNotIn("rum-30", block)
+
+    def test_patch_leaves_next_drink_alone(self) -> None:
+        import json as _json
+
+        start, end = mdl.object_slice(self.TEXT, "rum-23")
+        after = {
+            "priceUrl": "https://humidor.hr/hr/proizvod/m23/",
+            "shopHR": "humidor.hr",
+            "priceEUR": {"min": 48.0, "max": 48.0},
+        }
+        text = self.TEXT[:start] + mdl.patch_block(self.TEXT[start:end], after) + self.TEXT[end:]
+        rows = {d["id"]: d for d in _json.loads(text)}
+        self.assertEqual(rows["rum-23"]["priceEUR"], {"min": 48.0, "max": 48.0})
+        self.assertIsNone(rows["rum-30"]["priceUrl"])
+        self.assertIsNone(rows["rum-30"]["shopHR"])
+        self.assertIs(rows["rum-30"]["priceApprox"], True)
+
+
 if __name__ == "__main__":
     unittest.main()

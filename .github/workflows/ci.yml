@@ -68,6 +68,9 @@ jobs:
           python scripts/test_merge_drink_shops_additive.py
           python scripts/test_ingest_staged_drink_shops.py
           python scripts/test_enrich_shop_ingest_stubs.py
+          python scripts/test_match_drink_listings.py
+          python scripts/test_ecuga_listings.py
+          python scripts/test_report_new_shop_bottles.py
       - name: Taxonomy line helpers (dimenzije / velika slova u imenu linije)
         working-directory: app
         run: python scripts/test_taxonomy_lib.py
