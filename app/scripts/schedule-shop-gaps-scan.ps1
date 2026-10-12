@@ -1,5 +1,8 @@
 # Weekly crawl + map of HR drink shops (Tier A/B apply, C ask-queue, D staging dry-run).
-# Does not commit and does not run in GitHub Actions.
+# Does not commit. The same pipeline also runs monthly in GitHub Actions
+# (.github/workflows/drink-shop-scan.yml) and opens a PR with new bottles.
+# eCuga needs Playwright (pip install playwright; playwright install chromium);
+# without it only ecuga is reported as failed.
 #
 #   powershell -File scripts/schedule-shop-gaps-scan.ps1 -Install
 #   powershell -File scripts/schedule-shop-gaps-scan.ps1 -RunNow

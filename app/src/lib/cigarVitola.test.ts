@@ -1,6 +1,7 @@
 import { describe, it, expect } from "vitest";
 import {
   applyVitola,
+  expandForPairing,
   needsVitolaPick,
   resolveCigarSheetOpen,
   resolveDefaultVitola,
@@ -148,5 +149,19 @@ describe("vitolaInRegion — oblik ∩ tržište", () => {
     expect(hr.some((v) => /lancero/i.test(v.name))).toBe(false);
     expect(hr.length).toBeGreaterThan(0);
     expect(vitolasForMarket(c, "EU").some((v) => /lancero/i.test(v.name))).toBe(true);
+  });
+
+  it("expandForPairing: jedna stavka po vitoli, nikad gol multi-bundle", () => {
+    const multi = CIGARS.find((c) => uniqueVitolas(c).length > 1)!;
+    const expanded = expandForPairing(multi);
+    expect(expanded).toHaveLength(uniqueVitolas(multi).length);
+    for (const c of expanded) {
+      expect(c.vitolas).toHaveLength(1);
+      expect(c.selectedVitola).toBeTruthy();
+    }
+    const one = { ...multi, vitolas: [uniqueVitolas(multi)[0]] };
+    const single = expandForPairing(one);
+    expect(single).toHaveLength(1);
+    expect(single[0].vitolas).toHaveLength(1);
   });
 });

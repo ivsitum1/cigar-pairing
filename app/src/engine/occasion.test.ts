@@ -42,6 +42,7 @@ function topPerCategory(
     cigar,
     ALL_DRINKS.filter((d) => d.pairable),
     undefined,
+    undefined,
     occasion,
   );
   const out: Record<string, string | undefined> = {};
@@ -88,6 +89,7 @@ describe("occasion soft-only (par > vrijeme)", () => {
       macanudo,
       [light, full],
       undefined,
+      undefined,
       "evening",
     );
     expect(ranked[0].item.id).toBe(light.id);
@@ -99,6 +101,7 @@ describe("occasion soft-only (par > vrijeme)", () => {
     const ranked = pairDrinksForCigar(
       cigar,
       rums.filter((d) => d.pairable),
+      undefined,
       undefined,
       "evening",
     ).filter((r) => r.item.category === "rum");
@@ -208,6 +211,7 @@ describe("rankByOccasion — razdvajanje bez žrtvovanja para", () => {
         const ranked = pairDrinksForCigar(
           cigar,
           ALL_DRINKS.filter((d) => d.pairable),
+          undefined,
           undefined,
           occ,
         );
