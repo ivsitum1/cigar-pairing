@@ -300,7 +300,7 @@ export const STRINGS = {
   },
   "footer.prices": {
     hr: "Cijene i dostupnost su okvirne i podložne promjeni — provjeri u trgovini.",
-    en: "Prices and availability are indicative and subject to change — verify with the shop.",
+    en: "Prices and availability are a guide and may change — verify with the shop.",
   },
   "footer.data": {
     hr: "Dio profila (okusi, tijelo, snaga, duljina) je procjena, a ne rezultat degustacije. Aplikacija nije povezana s trgovinama ni markama; nazivi i marke pripadaju svojim vlasnicima.",
@@ -405,7 +405,10 @@ export const STRINGS = {
     hr: "Za ovu bocu nemamo potvrđenu stranicu proizvoda, pa poveznice vode na pretragu odnosno katalog trgovine — a zadnji gumb traži bocu na webu.",
     en: "We have no confirmed product page for this bottle, so the links lead to the shop's search or catalogue — and the last button searches the web.",
   },
-  "shops.indicative": { hr: "orijentir — provjeri zalihu", en: "indicative — check stock" },
+  "shops.indicative": {
+    hr: "orijentir — provjeri zalihu",
+    en: "guide price/shelf — verify stock",
+  },
   "shops.webSearch": { hr: "pretraga na webu", en: "web search" },
   "shops.notOnShelves": {
     hr: "Nema na poznatim policama",
@@ -413,7 +416,10 @@ export const STRINGS = {
   },
   // dostupnost boce po regiji — koliko app zna, ne koliko pretpostavlja
   "avail.confirmed": { hr: "potvrđena stranica boce", en: "confirmed product page" },
-  "avail.listed": { hr: "orijentir — provjeri zalihu", en: "indicative — check stock" },
+  "avail.listed": {
+    hr: "orijentir — provjeri zalihu",
+    en: "guide only — verify stock",
+  },
   "avail.euViaHr": {
     hr: "potvrđeno u HR, a Hrvatska je u EU",
     en: "confirmed in Croatia, which is in the EU",
@@ -710,7 +716,7 @@ export const STRINGS = {
   "shop.tierMark": { hr: "Označi kao nabavljeno", en: "Mark as acquired" },
   "shop.tierUnmark": { hr: "Makni oznaku nabavljeno", en: "Clear acquired mark" },
   "shop.shops": { hr: "Trgovine", en: "Shops" },
-  "shop.legalNote": { hr: "Internetska prodaja duhana u Hrvatskoj nije dopuštena — cijene cigara informativne su, a kupnja je moguća samo u trgovini.", en: "Online tobacco sales are not permitted in Croatia — cigar prices are indicative only, and purchases can be made solely in store." },
+  "shop.legalNote": { hr: "Internetska prodaja duhana u Hrvatskoj nije dopuštena — cijene cigara informativne su, a kupnja je moguća samo u trgovini.", en: "Online tobacco sales are not permitted in Croatia — cigar prices are a guide only, and purchases can be made solely in store." },
   // gift chooser
   "gift.nav": { hr: "Poklon", en: "Gift" },
   "gift.title": { hr: "Poklon u nekoliko pitanja", en: "A gift in a few questions" },
@@ -1079,6 +1085,38 @@ export function localizeServing(serving: string, lang: Lang): string {
   if (/\s+ILI\s+/.test(serving)) return translated.join(" OR ");
   if (/\s+ili\s+/i.test(serving)) return translated.join(" or ");
   return translated.join(" / ");
+}
+
+/** Uredničke napomene o polici (`shopHR`) — HR u podacima, EN u UI. */
+const SHOP_HR_LABELS: Record<string, string> = {
+  svugdje: "widely available",
+  "svugdje / specialty": "widely available / specialty",
+  "svugdje / doma": "widely available / at home",
+  "Siroka dostupnost": "widely available",
+  "Široka dostupnost": "widely available",
+  "Siroka dostupnost / allez.hr": "widely available / allez.hr",
+  razno: "various",
+  import: "import",
+  lokalno: "local",
+  doma: "at home",
+  "doma / bar": "at home / bar",
+  Vinoteke: "wine shops",
+  "Vinoteke / Miva": "wine shops / Miva",
+  "Vivat fina vina / vinoteke": "Vivat fine wines / wine shops",
+  "Konzum / vinoteke": "Konzum / wine shops",
+  specijalist: "specialist",
+  "specijalist/rijetko": "specialist / scarce",
+  specialty: "specialty",
+  "specialty / havana shop": "specialty / Havana shop",
+  "specialty (skupo)": "specialty (pricey)",
+  "lokalni proizvođači": "local producers",
+};
+
+export function localizeShopHR(shop: string, lang: Lang): string {
+  if (lang !== "en") return shop;
+  const exact = SHOP_HR_LABELS[shop];
+  if (exact) return exact;
+  return shop.replace(/\(\s*rijetko\s*\)/gi, "(scarce)");
 }
 
 export const ADDITIVE_LABELS: Record<string, LocalizedText> = {

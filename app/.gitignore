@@ -4,8 +4,9 @@ dev-dist
 *.local
 .DS_Store
 tsconfig.tsbuildinfo
-scripts/output/cigar_unified_catalog.json
-scripts/output/product-images/
-scripts/output/youtube/
+# local dumps / OCR / Cap — tracked reports under output/ stay tracked
+scripts/output/
 scripts/.cache/
-scripts/output/rumratings_cache/
+eng.traineddata
+spa.traineddata
+android/

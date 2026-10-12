@@ -25,7 +25,7 @@ import { buildShareCardModel, sharePairing } from "../lib/shareCard";
 import { ritualHint } from "../lib/cigarRitual";
 import { OcrScan } from "../components/OcrScan";
 import { VitolaPicker } from "../components/VitolaPicker";
-import { applyVitola, needsVitolaPickInMarket, vitolasForMarket } from "../lib/cigarVitola";
+import { applyVitola, expandForPairing, needsVitolaPickInMarket, vitolasForMarket } from "../lib/cigarVitola";
 import { formatEur, vitolaPriceForMarket } from "../lib/cigarPrice";
 import { cigarItemId } from "../lib/cigarItemId";
 import { buildCigarOcrCandidates } from "../lib/ocrCigarCandidates";
@@ -215,6 +215,7 @@ export function PairingPage() {
       selectedCigar,
       drinks,
       prefs,
+      undefined,
       occasion === "any" ? undefined : occasion,
     );
     // Unutar kategorije: među izjednačenima presuđuje doba dana. Pojas se
@@ -250,14 +251,21 @@ export function PairingPage() {
     };
   }, [rankedDrinksByCategory, selectedCigar, cycle]);
 
-  // pice -> rangirane cigare. Bez `cycle`.
+  // pice -> rangirane cigare (po vitoli, ne po golom bundleu). Bez `cycle`.
   const rankedCigars = useMemo(() => {
     if (mode !== "drinkToCigar" || !selectedDrink) return null;
     let cigars = marketCigars;
     // "samo moje": linija se broji ako je posjedovana u bilo kojoj vitoli
     if (onlyMine) cigars = cigars.filter((c) => lineState(c.id).owned);
-    return pairCigarsForDrink(selectedDrink, cigars, prefs, serve);
-  }, [mode, selectedDrink, onlyMine, marketCigars, prefs, serve]);
+    const expanded = cigars.flatMap(expandForPairing);
+    return pairCigarsForDrink(
+      selectedDrink,
+      expanded,
+      prefs,
+      serve,
+      occasion === "any" ? undefined : occasion,
+    );
+  }, [mode, selectedDrink, onlyMine, marketCigars, prefs, serve, occasion]);
 
   // tocno 3 cigare RAZLICITIH brendova u soft-bandu (max−5);
   // cycle 0 = vrh ljestvice; gumb pomiče prozor unutar pojasa
@@ -466,12 +474,27 @@ export function PairingPage() {
       </div>
 
       {mode === "custom" && (
-        <CustomPairing
-          onOpenDetail={(d) => {
-            if (d.kind === "cigar") openCigar(d.item);
-            else openDrink(d.item);
-          }}
-        />
+        <>
+          <div className="no-scrollbar mt-3 flex gap-2 overflow-x-auto">
+            {(["morning", "afternoon", "evening"] as const).map((o) => (
+              <Chip
+                key={o}
+                active={occasion === o}
+                onClick={() => setOccasion(occasion === o ? "any" : o)}
+              >
+                {t(`occ.${o}` as StringKey)}
+              </Chip>
+            ))}
+          </div>
+          <CustomPairing
+            prefs={prefs}
+            occasion={occasion === "any" ? undefined : occasion}
+            onOpenDetail={(d) => {
+              if (d.kind === "cigar") openCigar(d.item);
+              else openDrink(d.item);
+            }}
+          />
+        </>
       )}
 
       {/* tržište: puna širina ispod načina, uvijek vidljivo (i kad je boca odabrana).
@@ -720,16 +743,15 @@ export function PairingPage() {
             <Chip active={onlyMine} onClick={() => setOnlyMine(!onlyMine)}>
               {t("pair.onlyMine")}
             </Chip>
-            {mode === "cigarToDrink" &&
-              (["morning", "afternoon", "evening"] as const).map((o) => (
-                <Chip
-                  key={o}
-                  active={occasion === o}
-                  onClick={() => setOccasion(occasion === o ? "any" : o)}
-                >
-                  {t(`occ.${o}` as StringKey)}
-                </Chip>
-              ))}
+            {(["morning", "afternoon", "evening"] as const).map((o) => (
+              <Chip
+                key={o}
+                active={occasion === o}
+                onClick={() => setOccasion(occasion === o ? "any" : o)}
+              >
+                {t(`occ.${o}` as StringKey)}
+              </Chip>
+            ))}
           </div>
 
           {mode === "drinkToCigar" && selectedDrink && (
@@ -824,11 +846,13 @@ export function PairingPage() {
                     : t("price.check");
                 return (
                   <ResultCard
-                    key={r.item.id}
+                    key={cigarItemId(r.item)}
                     result={r}
                     cigar={r.item}
                     drink={selectedDrink}
-                    title={`${brandDisplayName(r.item.brand, market)} ${r.item.line}`}
+                    title={`${brandDisplayName(r.item.brand, market)} ${r.item.line}${
+                      r.item.selectedVitola ? ` · ${r.item.selectedVitola}` : ""
+                    }`}
                     sub={`${leafLabel(r.item.wrapper, lang)}${
                       r.item.profileEstimated || r.item.flavorTags.length === 0
                         ? ` · ≈ ${t("common.estimatedShort")}`

@@ -11,6 +11,26 @@ import {
   normalizeTags,
   pairingStyleKey,
 } from "./rules";
+
+/** Stilovi kojima |Δ body|≤1 uz wrapper afinitet daje puni body-match (ne VSOP/XO). */
+const LIGHT_BODY_AFFINITY_STYLES = new Set([
+  "agricole",
+  "filter-light",
+  "cognac-vs",
+  "irish-blend",
+  "milk",
+  // vinjak: affinity bodovi OK, ali soft body ne — inače craft vinjak (body 3)
+  // pregazi Connecticut × cognac VS zbog bogatijih tagova.
+  "speyside-fruity",
+  "japanese",
+  "contemporary",
+  "london-dry",
+  "premium-dry",
+  "plymouth",
+  "sparkling",
+  "white-fresh",
+  "white-rich",
+]);
 import { personalBrandReason, personalStyleReason, type PersonalPrefs } from "./personal";
 import { applyServe } from "./serve";
 import { applyGeometry } from "./vitolaGeometry";
@@ -86,19 +106,40 @@ export function scorePairing(
   const cigarTags = normalizeTags(effCigar.flavorTags);
   const drinkTags = normalizeTags(effDrink.flavorTags);
 
+  // Wrapper afinitet (isti test kao pravilo 4) — kad stilovi „prirodno pasu”,
+  // jedan korak razlike u tijelu nije mismatch. Inače blagi Connecticut (body 2)
+  // × cognac VS (body 3) padne na ~39 iako afinitet kaže da idu zajedno (~70).
+  // Soft-body samo za lagane stilove (VS, agricole…): VSOP/XO i dalje dobiju
+  // affinity bodove, ali ne besplatni body-match — inače bogato tagirani VSOP
+  // pregazi klasični Connecticut × VS.
+  const styleKey = pairingStyleKey(effDrink);
+  const styleAffinity = WRAPPER_AFFINITY.some(
+    (wa) => wa.wrapper.test(effCigar.wrapper) && wa.styles.includes(styleKey),
+  );
+  const wrapperSoftensBody =
+    styleAffinity && LIGHT_BODY_AFFINITY_STYLES.has(styleKey);
+
   // 1) Body match — zlatno pravilo (effCigar: geometrija, effDrink: serve).
   // Match unutar <0.5 koraka: male delte (geometrija ±0.1–0.2, serve) ne smiju
   // skinuti puni bonus — inače dotjerivanja preokrenu dominantno pravilo.
   // Light band: oba ≤2.5 i |Δ|≤1 također dobiju puni match — inače agricole
   // (body 2) + blagi Connecticut (body 1) padne na ~50 i izgleda kao da „nema para”.
+  // Affinity band: |Δ|≤1 uz lagani affinity stil (npr. Connecticut × cognac-vs).
   const bodyLabelIdx = Math.round(effCigar.body);
   const bodyDiff = Math.abs(effCigar.body - effDrink.body);
   const bothLight = effCigar.body <= 2.5 && effDrink.body <= 2.5;
-  if (bodyDiff < 0.5 || (bothLight && bodyDiff <= 1.05)) {
-    score += WEIGHTS.bodyBonus;
+  const exactBody = bodyDiff < 0.5;
+  const softBody = !exactBody && bodyDiff <= 1.05 && (bothLight || wrapperSoftensBody);
+  if (exactBody || softBody) {
+    // Soft affinity (npr. Connecticut body 2 × cognac-vs body 3) malo ispod
+    // točnog matcha — inače Courvoisier izjednači Hennessy. bothLight (Δ≤1,
+    // oba lagana) ostaje puni bonus.
+    const bodyPts =
+      exactBody || bothLight ? WEIGHTS.bodyBonus : WEIGHTS.bodyBonus - 3;
+    score += bodyPts;
     reasons.push({
       rule: "body-match",
-      score: WEIGHTS.bodyBonus,
+      score: bodyPts,
       text: {
         hr: `Tijela se poklapaju (${BODY_LABEL_HR[bodyLabelIdx]}) — nijedno ne nadjačava drugo.`,
         en: `Bodies match (${BODY_LABEL_EN[bodyLabelIdx]}) — neither overpowers the other.`,
@@ -224,7 +265,7 @@ export function scorePairing(
   // 4) Wrapper afinitet — tanka vitola pojačava wrapper-forward bonus (geometrija)
   for (const wa of WRAPPER_AFFINITY) {
     if (!wa.wrapper.test(effCigar.wrapper)) continue;
-    const styleHit = wa.styles.includes(pairingStyleKey(effDrink));
+    const styleHit = wa.styles.includes(styleKey);
     const tagHit = drinkTags.some((t) => wa.tags.includes(t));
     if (styleHit || tagHit) {
       const pts = WEIGHTS.wrapperMatch + wrapperForwardBonus;
@@ -333,13 +374,14 @@ export function pairDrinksForCigar(
   cigar: Cigar,
   drinks: Drink[],
   prefs?: PersonalPrefs,
+  serve?: ServeStyle,
   occasion?: Occasion,
 ): PairingResult<Drink>[] {
   return drinks
     .filter((d) => d.pairable)
     .map((item) => ({
       item,
-      ...scorePairing(cigar, item, prefs, undefined, occasion),
+      ...scorePairing(cigar, item, prefs, serve, occasion),
     }))
     // rawScore pada; kod izjednacenih rezultata (npr. gomila spiced rumova na
     // istom bodu) presuduje kvaliteta pa ime — deterministicki, ne redoslijed
@@ -359,13 +401,19 @@ export function pairCigarsForDrink(
   cigars: Cigar[],
   prefs?: PersonalPrefs,
   serve?: ServeStyle,
+  occasion?: Occasion,
 ): PairingResult<Cigar>[] {
   return cigars
-    .map((item) => ({ item, ...scorePairing(item, drink, prefs, serve) }))
-    // kod izjednacenih rezultata deterministicki po imenu (brand + linija)
+    .map((item) => ({
+      item,
+      ...scorePairing(item, drink, prefs, serve, occasion),
+    }))
+    // kod izjednacenih rezultata deterministicki po imenu (brand + linija + vitola)
     .sort(
       (a, b) =>
         b.rawScore - a.rawScore ||
-        `${a.item.brand} ${a.item.line}`.localeCompare(`${b.item.brand} ${b.item.line}`),
+        `${a.item.brand} ${a.item.line} ${a.item.vitola ?? ""}`.localeCompare(
+          `${b.item.brand} ${b.item.line} ${b.item.vitola ?? ""}`,
+        ),
     );
 }

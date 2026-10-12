@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-08-10T07:48:05.094435+00:00",
+  "fetched_at": "2026-10-05T11:37:05.006104+00:00",
   "havana": [
     {
       "source": "havana",
@@ -1701,12 +1701,6 @@
     },
     {
       "source": "havana",
-      "name": "Davidoff Robusto Tubos Selection",
-      "price": 74.1,
-      "url": "https://havana-cigar-shop.com/proizvod/davidoff-robusto-tubos-selection-black-3/"
-    },
-    {
-      "source": "havana",
       "name": "Davidoff Nicaragua Toro",
       "price": 27.0,
       "url": "https://havana-cigar-shop.com/proizvod/davidoff-nicaragua-toro-4/"
@@ -2494,71 +2488,89 @@
     {
       "source": "havana",
       "name": "Ambasciator Italico Torpedo /3 pak.",
-      "price": 84.0,
+      "price": 70.5,
       "url": "https://havana-cigar-shop.com/proizvod/ambasciator-italico-torpedo-3-pak/"
     },
     {
       "source": "havana",
       "name": "Ambasciator Italico Tradizionale/5 pak.",
-      "price": 12.25,
+      "price": 10.9,
       "url": "https://havana-cigar-shop.com/proizvod/ambasciator-italico-tradizionale-5-pak/"
     },
     {
       "source": "havana",
       "name": "Ambasciator Italico Superiore /2 pak.",
-      "price": 10.0,
+      "price": 8.8,
       "url": "https://havana-cigar-shop.com/proizvod/ambasciator-italico-superiore-2-pak/"
     },
     {
       "source": "havana",
       "name": "Ambasciator Italico Rosso Arabico /5 pak.",
-      "price": 9.1,
+      "price": 8.3,
       "url": "https://havana-cigar-shop.com/proizvod/ambasciator-italico-rosso-arabico-5-pak/"
     },
     {
       "source": "havana",
       "name": "Ambasciator Italico Rosato Del Grappa /5 pak.",
-      "price": 9.1,
+      "price": 7.4,
       "url": "https://havana-cigar-shop.com/proizvod/ambasciator-italico-rosato-del-grappa-5-pak/"
     },
     {
       "source": "havana",
       "name": "Ambasciator Italico Nero/5 pak.",
-      "price": 9.1,
+      "price": 8.3,
       "url": "https://havana-cigar-shop.com/proizvod/ambasciator-italico-nero-5-pak/"
     },
     {
       "source": "havana",
       "name": "Ambasciator Italico Maturo/5 pak.",
-      "price": 16.75,
+      "price": 13.8,
       "url": "https://havana-cigar-shop.com/proizvod/ambasciator-italico-maturo-5-pak/"
     },
     {
       "source": "havana",
       "name": "Ambasciator Italico Il Buttero /5 pak.",
-      "price": 9.1,
+      "price": 8.3,
       "url": "https://havana-cigar-shop.com/proizvod/ambasciator-italico-il-buttero-5-pak/"
     },
     {
       "source": "havana",
       "name": "Ambasciator Italico Giallo Soave /5 pak.",
-      "price": 9.1,
+      "price": 7.4,
       "url": "https://havana-cigar-shop.com/proizvod/ambasciator-italico-giallo-soave-5-pak/"
     },
     {
       "source": "havana",
       "name": "Ambasciator Italico Bianco Stellato/5 pak.",
-      "price": 9.25,
+      "price": 8.3,
       "url": "https://havana-cigar-shop.com/proizvod/ambasciator-italico-bianco-stellato-5-pak/"
     },
     {
       "source": "havana",
       "name": "Ambasciator Italico Ammezzato Classico 5 /5 pak.",
-      "price": 9.5,
+      "price": 7.4,
       "url": "https://havana-cigar-shop.com/proizvod/ambasciator-italico-ammezzato-classico-5-5-pak/"
     }
   ],
   "humidor": [
+    {
+      "source": "humidor",
+      "name": "La Galera Year Of The Horse Toro 6 x 56",
+      "price": 58.0,
+      "url": "https://humidor.hr/hr/proizvod/la-galera-year-of-the-horse-toro-6-x-56/"
+    },
+    {
+      "source": "humidor",
+      "name": "Rough Rider Connecticut Robusto 5 x 50",
+      "price": 9.5,
+      "url": "https://humidor.hr/hr/proizvod/rough-rider-connecticut-robusto-5-x-50/"
+    },
+    {
+      "source": "humidor",
+      "name": "Rough Rider Maduro Robusto",
+      "price": 9.5,
+      "url": "https://humidor.hr/hr/proizvod/rough-rider-maduro-robusto/"
+    },
     {
       "source": "humidor",
       "name": "New World Decenio Robusto 5 ½ x 54",
@@ -2939,6 +2951,12 @@
     },
     {
       "source": "humidor",
+      "name": "CLE Corojo Toro 6 x 54",
+      "price": 13.7,
+      "url": "https://humidor.hr/hr/proizvod/cle-corojo-toro-6-x-54/"
+    },
+    {
+      "source": "humidor",
       "name": "Omar Ortez Maduro Belicoso 6 ⅛ x 52",
       "price": 9.9,
       "url": "https://humidor.hr/hr/proizvod/omar-ortez-maduro-belicoso-6-%e2%85%9b-x-52/"
@@ -3197,6 +3215,12 @@
     },
     {
       "source": "humidor",
+      "name": "La Galera Tins Maduro Half Corona 3 ½ x 46",
+      "price": 6.4,
+      "url": "https://humidor.hr/hr/proizvod/la-galera-tins-maduro-half-corona-3-%c2%bd-x-46/"
+    },
+    {
+      "source": "humidor",
       "name": "La Galera Maduro No.1 Short Robusto 3 ¼ x 50",
       "price": 7.5,
       "url": "https://humidor.hr/hr/proizvod/la-galera-maduro-vitola-no-1-3%c2%bc-x-50/"
@@ -3215,6 +3239,12 @@
     },
     {
       "source": "humidor",
+      "name": "La Galera Tins 1936 Half Corona 3 ⅝ x 46",
+      "price": 6.4,
+      "url": "https://humidor.hr/hr/proizvod/la-galera-tins-1936-half-corona-3-%e2%85%9d-x-46/"
+    },
+    {
+      "source": "humidor",
       "name": "La Galera 1936 Box Pressed Robusto 5 x 50",
       "price": 12.5,
       "url": "https://humidor.hr/hr/proizvod/la-galera-1936-box-pressed-robusto-chaveta-5-x-50/"
@@ -3224,6 +3254,12 @@
       "name": "La Galera 1936 Box Pressed Torpedo 6 ⅛ x 52",
       "price": 13.9,
       "url": "https://humidor.hr/hr/proizvod/la-galera-1936-box-pressed-torpedo-cortador-6-1-8-x-52/"
+    },
+    {
+      "source": "humidor",
+      "name": "La Galera Tins Imperial Jade Half Corona 3 ½ x 46",
+      "price": 6.4,
+      "url": "https://humidor.hr/hr/proizvod/la-galera-tins-imperial-jade-half-corona-3-%c2%bd-x-46/"
     },
     {
       "source": "humidor",
@@ -4025,7 +4061,7 @@
     },
     {
       "source": "humidor",
-      "name": "1502 XO Conquistador 6 x 50",
+      "name": "1502 XO Conquistador 6 x 56",
       "price": 45.0,
       "url": "https://humidor.hr/hr/proizvod/1502-xo-conquistador-6-x-50/"
     },
