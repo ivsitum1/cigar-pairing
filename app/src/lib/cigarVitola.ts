@@ -162,6 +162,17 @@ export function resolveDefaultVitola(cigar: Cigar): Vitola | undefined {
   return vitolas[0];
 }
 
+/**
+ * Jedna cigara po vitoli za pairing. Linija s više formata ne smije ući u
+ * engine kao gol bundle — geometrija bi pala na `format` linije (često Robusto).
+ */
+export function expandForPairing(cigar: Cigar): Cigar[] {
+  const vitolas = uniqueVitolas(cigar);
+  if (vitolas.length === 0) return [cigar];
+  if (vitolas.length === 1) return [applyVitola(cigar, vitolas[0])];
+  return vitolas.map((v) => applyVitola(cigar, v));
+}
+
 /** Primijeni odabranu vitolu na prikaz / pairing (cijena, format, link). */
 export function applyVitola(cigar: Cigar, vitola: Vitola): Cigar {
   const inheritedPriceUrl = cigar.priceUrl ?? null;

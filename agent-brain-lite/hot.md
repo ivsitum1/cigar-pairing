@@ -2,8 +2,10 @@
 title: Session Hot Cache
 category: meta
 tags: [session, cache]
-updated: 2026-08-22
+updated: 2026-09-09
 ---
+
+> **2026-09-09:** DetailSheet EN: `svugdje` → *widely available*; „indicative” → *guide…verify stock*. Cognac VS serving = Čisto (ne velika kocka). Soft body-match samo lagani stilovi (cognac-vs…), ne VSOP/XO/vinjak; affinity soft −3 vs točan body — Cusano Bundle → Hennessy VS opet vrh brandyja.
 
 > **2026-08-28:** EN gentleman draft: *Words you'll meet* + expanded back glossary (cigar jargon kept); Ch 14–16 enrichment (clothes rule, fancy bottle / status pour, additives); short rules wording. EN = source of truth.
 
