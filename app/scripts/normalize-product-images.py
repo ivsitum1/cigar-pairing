@@ -236,12 +236,20 @@ def main() -> int:
         print("--check: nista nije zapisano")
         return 0
 
-    # Vrste koje se ovaj put nisu obradjivale zadrzavaju ono sto vec imaju.
+    # Spoji s postojećim manifestom — --kind cigars ne smije izgubiti line-level zapise.
     if MANIFEST.exists():
         staro = json.loads(MANIFEST.read_text(encoding="utf-8"))
         for vrsta in VRSTE:
-            if vrsta not in manifest and vrsta in staro:
-                manifest[vrsta] = staro[vrsta]
+            stara_mapa = staro.get(vrsta)
+            if not isinstance(stara_mapa, dict):
+                continue
+            nova_mapa = manifest.get(vrsta)
+            if not isinstance(nova_mapa, dict):
+                manifest[vrsta] = stara_mapa
+            else:
+                spojeno = dict(stara_mapa)
+                spojeno.update(nova_mapa)
+                manifest[vrsta] = spojeno
     for vrsta in VRSTE:
         manifest.setdefault(vrsta, {})
 

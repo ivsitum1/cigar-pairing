@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: 22
           cache: npm
@@ -36,7 +36,7 @@ jobs:
         env:
           # Exhaustive giftFinder matrix (~1920 combos); skipped in deploy.yml smoke.
           CI_EXHAUSTIVE_GIFTS: "1"
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
 
@@ -68,6 +68,9 @@ jobs:
           python scripts/test_merge_drink_shops_additive.py
           python scripts/test_ingest_staged_drink_shops.py
           python scripts/test_enrich_shop_ingest_stubs.py
+          python scripts/test_match_drink_listings.py
+          python scripts/test_ecuga_listings.py
+          python scripts/test_report_new_shop_bottles.py
       - name: Taxonomy line helpers (dimenzije / velika slova u imenu linije)
         working-directory: app
         run: python scripts/test_taxonomy_lib.py
@@ -139,7 +142,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
       # paddleocr/torch su neobavezni i teški — servis ima stub put bez njih,

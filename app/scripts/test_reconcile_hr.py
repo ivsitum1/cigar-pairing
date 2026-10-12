@@ -11,6 +11,7 @@ from __future__ import annotations
 import importlib.util
 import json
 import sys
+import tempfile
 import types
 from pathlib import Path
 
@@ -82,6 +83,47 @@ c = cig(id="cig-nema", brand="Nema", line="Ovoga")
 removed, added = run([c], {})
 check("bez poklapanja ostaje bez HR", (c["availabilityHR"], "HR" in c["markets"]), ([], False))
 check("i nije prijavljena kao dodana", added, [])
+
+print("\npresent_vitola samo za shopove bez imenovane linije")
+try:
+    import requests  # noqa: F401
+    import bs4  # noqa: F401
+except ImportError:
+    _req = types.ModuleType("requests")
+    _req.Session = type("Session", (), {})  # type: ignore[attr-defined]
+    sys.modules["requests"] = _req
+    _bs4 = types.ModuleType("bs4")
+    _bs4.BeautifulSoup = object  # type: ignore[attr-defined]
+    sys.modules["bs4"] = _bs4
+spec_sync_vit = importlib.util.spec_from_file_location(
+    "sync_hr_shops_vit", ROOT / "sync-hr-shops.py"
+)
+sync_vit = importlib.util.module_from_spec(spec_sync_vit)
+assert spec_sync_vit.loader is not None
+spec_sync_vit.loader.exec_module(sync_vit)
+cigars_stub = json.loads(
+    (ROOT.parent / "src" / "data" / "cigars.json").read_text(encoding="utf-8")
+)
+_, by_vitola_opus = M.build_present(
+    sync_vit,
+    {"havana": [{"name": "A. Fuente Fuente Fuente OpusX Robusto"}], "humidor": []},
+    cigars_stub,
+)
+check(
+    "opusx robusto nije u present_vitola",
+    ("arturo fuente", "robusto") in by_vitola_opus,
+    False,
+)
+_, by_vitola_cusano = M.build_present(
+    sync_vit,
+    {"havana": [{"name": "Bundle Selection by Cusano Robusto"}], "humidor": []},
+    cigars_stub,
+)
+check(
+    "cusano robusto jest u present_vitola (shop bez imenovane linije)",
+    ("cusano", "robusto") in by_vitola_cusano,
+    True,
+)
 
 print("\nmarket discovery + brand/vitola fallback")
 # catalogSource=market ranije je preskakao discovery — mora dobiti HR.
@@ -160,6 +202,45 @@ check("online otpada, walk-in ostaje", c["availabilityHR"], ["Tobacco Petica (Br
 
 print("\nzastita od neuspjelog dohvata")
 check("prag je definiran", 0 < M.MIN_FETCH_RATIO < 1, True)
+check("prag uklanjanja je definiran", 0 < M.MAX_REMOVAL_RATIO < 1, True)
+
+print("\nsnapshot + povrat cigars.json")
+with tempfile.TemporaryDirectory() as tmp:
+    cigars_path = Path(tmp) / "cigars.json"
+    backup_path = Path(tmp) / "hr_cigars_pre_reconcile.json"
+    cigars_path.write_text(
+        json.dumps([cig(id="cig-a", markets=["HR", "EU"], availabilityHR=["Havana Cigar Shop"])]),
+        encoding="utf-8",
+    )
+    prev_cigars, prev_backup, prev_out = M.CIGARS, M.CIGARS_BACKUP, M.OUT
+    M.CIGARS, M.CIGARS_BACKUP, M.OUT = cigars_path, backup_path, Path(tmp)
+    try:
+        M.backup_cigars()
+        check("sigurnosna kopija postoji", backup_path.exists(), True)
+        bad = [cig(id="cig-b", markets=["HR"], availabilityHR=[])]
+        try:
+            M.validate_reconcile(bad, removed=[], hr_before=1)
+        except SystemExit:
+            pass
+        else:
+            FAILURES.append("validate_reconcile nije odbio HR bez izvora")
+        restored = M.rollback_cigars()
+        check("povrat uspješan", restored, True)
+        check(
+            "cigars.json vraćen",
+            json.loads(cigars_path.read_text("utf-8"))[0]["id"],
+            "cig-a",
+        )
+    finally:
+        M.CIGARS, M.CIGARS_BACKUP, M.OUT = prev_cigars, prev_backup, prev_out
+
+print("\nzastita od masovnog uklanjanja")
+try:
+    M.validate_reconcile([], removed=[{}] * 100, hr_before=100)
+except SystemExit as e:
+    check("masovno uklanjanje prekida posao", "sumnjivo" in str(e).lower() or "maknuo" in str(e), True)
+else:
+    FAILURES.append("validate_reconcile nije odbio masovno uklanjanje")
 
 
 class ShortFetch:
@@ -173,9 +254,6 @@ class ShortFetch:
     def fetch_humidor_catalog():
         return [{"name": f"h{i}"} for i in range(300)]
 
-
-import json
-import tempfile
 
 with tempfile.TemporaryDirectory() as tmp:
     snap = Path(tmp) / "snap.json"

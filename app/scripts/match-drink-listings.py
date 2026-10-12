@@ -67,17 +67,41 @@ def is_weak_price_url(url: str | None) -> bool:
 
 
 def object_slice(text: str, drink_id: str) -> tuple[int, int]:
+    """Return [start, end) of the JSON object holding `"id": "<drink_id>"`.
+
+    The end is found by brace matching (string-aware), not by looking for the
+    next object's indent: a guess at the indent that misses makes the slice run
+    to the end of the file, and patch_block then edits a *later* drink's null
+    priceUrl / shopHR.
+    """
     needle = f'"id": "{drink_id}"'
     at = text.find(needle)
     if at < 0:
         raise SystemExit(f"id not found: {drink_id}")
     start = text.rfind("{", 0, at)
-    nxt = text.find("\n {", at)
-    if nxt < 0:
-        nxt = text.find("\n]", at)
-    if start < 0 or nxt < 0:
+    if start < 0:
         raise SystemExit(f"cannot slice object: {drink_id}")
-    return start, nxt
+    depth = 0
+    in_str = False
+    esc = False
+    for i in range(start, len(text)):
+        c = text[i]
+        if in_str:
+            if esc:
+                esc = False
+            elif c == "\\":
+                esc = True
+            elif c == '"':
+                in_str = False
+        elif c == '"':
+            in_str = True
+        elif c == "{":
+            depth += 1
+        elif c == "}":
+            depth -= 1
+            if depth == 0:
+                return start, i + 1
+    raise SystemExit(f"cannot slice object: {drink_id}")
 
 
 def patch_block(block: str, after: dict) -> str:
@@ -107,19 +131,36 @@ def patch_block(block: str, after: dict) -> str:
         )
         if n_shop != 1:
             raise SystemExit("shopHR not replaced")
-    m = re.search(
-        r'(?ms)^(\s*)"priceEUR":\s*\{\s*"min":\s*[^,]+,\s*"max":\s*[^}]+\s*\}',
-        block,
-    )
-    if not m:
-        raise SystemExit("priceEUR not found")
-    indent = m.group(1)
+    # Indent from a sibling field (priceUrl/shopHR) so null/missing priceEUR
+    # still get a correctly indented object block.
+    indent_m = re.search(r'(?m)^(\s*)"(?:priceUrl|shopHR|priceEUR)":', block)
+    indent = indent_m.group(1) if indent_m else "    "
     inner = indent + "  "
     pe_block = (
         f'{indent}"priceEUR": {{\n{inner}"min": {pe["min"]},\n'
         f'{inner}"max": {pe["max"]}\n{indent}}}'
     )
-    block = block[: m.start()] + pe_block + block[m.end() :]
+    m = re.search(
+        r'(?ms)^(\s*)"priceEUR":\s*\{\s*"min":\s*[^,]+,\s*"max":\s*[^}]+\s*\}',
+        block,
+    )
+    if m:
+        block = block[: m.start()] + pe_block + block[m.end() :]
+    elif re.search(r'(?m)^\s*"priceEUR":\s*null\b', block):
+        block = re.sub(r'(?m)^\s*"priceEUR":\s*null\b', pe_block, block, count=1)
+    else:
+        # Insert before shopHR when present, else before the closing brace.
+        shop_m = re.search(r'(?m)^(\s*)"shopHR":', block)
+        if shop_m:
+            block = block[: shop_m.start()] + pe_block + ",\n" + block[shop_m.start() :]
+        else:
+            close = block.rfind("}")
+            if close < 0:
+                raise SystemExit("priceEUR not found")
+            prefix = block[:close].rstrip()
+            if not prefix.endswith(","):
+                prefix += ","
+            block = prefix + "\n" + pe_block + "\n" + block[close:]
     block = re.sub(r'"priceApprox":\s*true', '"priceApprox": false', block, count=1)
     return block
 
@@ -165,6 +206,9 @@ def propose_update(
     """
     url = listing.get("url") or ""
     price = listing.get("price_eur")
+    # Shop listings occasionally emit 0 / negative; never overwrite catalog prices with those.
+    if isinstance(price, (int, float)) and price <= 0:
+        price = None
     shop = (listing.get("shop") or "").lower()
     shop_label = listing.get("shopLabel") or listing.get("shop") or ""
     if not url:

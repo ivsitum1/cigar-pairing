@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { SheetShell } from "./SheetShell";
 import type { Cigar, Drink, Region } from "../types";
-import { useI18n, STYLE_LABELS, ADDITIVE_LABELS, ADDITIVE_RULES, COFFEE_ROAST_LABELS, COFFEE_PROCESS_LABELS, COFFEE_SPECIES_LABELS, leafMetaParts, leafOriginDisplay } from "../i18n";
+import { useI18n, STYLE_LABELS, ADDITIVE_LABELS, ADDITIVE_RULES, COFFEE_ROAST_LABELS, COFFEE_PROCESS_LABELS, COFFEE_SPECIES_LABELS, leafMetaParts, leafOriginDisplay, localizeShopHR } from "../i18n";
 import { flavorLabel } from "../engine/rules";
 import {
   brandInfo,
@@ -615,8 +615,8 @@ function DrinkDetails({
             k={t("common.shop")}
             v={
               availability.verified
-                ? availability.text
-                : `${availability.text} · ${t("shops.indicative")}`
+                ? localizeShopHR(availability.text, lang)
+                : `${localizeShopHR(availability.text, lang)} · ${t("shops.indicative")}`
             }
           />
         )}
