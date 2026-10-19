@@ -9,8 +9,9 @@ from __future__ import annotations
 
 import argparse
 import json
-import sys
 from pathlib import Path
+
+from script_io import configure_stdio
 
 ROOT = Path(__file__).resolve().parent.parent
 CIGARS_JSON = ROOT / "src" / "data" / "cigars.json"
@@ -99,8 +100,7 @@ def finalize_cigar(cigar: dict) -> dict:
 
 
 def main() -> None:
-    if sys.platform == "win32":
-        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    configure_stdio()
 
     parser = argparse.ArgumentParser()
     parser.add_argument("--report", action="store_true", help="Samo ispiši probleme, ne piši JSON")

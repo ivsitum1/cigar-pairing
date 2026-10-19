@@ -1,0 +1,2897 @@
+{
+  "catalog_total": 1949,
+  "matched_drinks": 266,
+  "applied": 87,
+  "skipped_has_product": 179,
+  "skipped_packaging": 0,
+  "ambiguous": 20,
+  "candidate_new": 1165,
+  "applied_rows": [
+    {
+      "id": "rum-ah-riise-xo-ambre-dor-reserve",
+      "name": "A.H. Riise XO Reserve Ambre d'Or",
+      "score": 1.0,
+      "drinx_name": "Rum A.H. Riise XO Ambre d'Or Reserve + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-ah-riise-xo-ambre-dor-reserve-gb-07-l-102",
+      "drinx_price": 50.9,
+      "old_priceUrl": null,
+      "old_shopHR": "allez.hr",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-ah-riise-npu-ambre-dor",
+      "name": "A.H. Riise Non Plus Ultra Ambre d'Or",
+      "score": 1.0,
+      "drinx_name": "Rum Non Plus Ultra Ambre d'Or A.H. Riise + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-non-plus-ultra-ambre-dor-ah-riise-gb-07-l-888",
+      "drinx_price": 104.9,
+      "old_priceUrl": null,
+      "old_shopHR": "allez.hr",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-ah-riise-xo-175-years",
+      "name": "A.H. Riise XO Reserve 175 Years Anniversary",
+      "score": 1.0,
+      "drinx_name": "Rum XO 175 Years Anniversary A.H. Riise + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-xo-175-years-anniversary-ah-riise-gb-07-l-894",
+      "drinx_price": 64.9,
+      "old_priceUrl": null,
+      "old_shopHR": "allez.hr",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-brugal-1888",
+      "name": "Brugal 1888",
+      "score": 1.0,
+      "drinx_name": "Rum Brugal 1888 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-brugal-1888-07-l-1830",
+      "drinx_price": 52.49,
+      "old_priceUrl": "https://tipsy.hr/zestice/rum-zestice/brugal-1888-07l/",
+      "old_shopHR": "tipsy.hr",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-ron-dos-maderas-5-3-5-5",
+      "name": "Ron Dos Maderas (5+3/5+5)",
+      "score": 1.0,
+      "drinx_name": "Rum Dos Maderas 5 + 5 Y.O. Gb 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-dos-maderas-5-5-yo-gb-07-l-1869",
+      "drinx_price": 44.9,
+      "old_priceUrl": "https://webshop.rotodinamic.hr/dos-maderas-5-5-yo-rum",
+      "old_shopHR": "webshop.rotodinamic.hr",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-sailor-jerry",
+      "name": "Sailor Jerry",
+      "score": 1.0,
+      "drinx_name": "Rum Sailor Jerry 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-sailor-jerry-07-l-2545",
+      "drinx_price": 26.4,
+      "old_priceUrl": null,
+      "old_shopHR": "Vrutak",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-ah-riise-naval-cadet",
+      "name": "A.H. Riise Royal Danish Navy Naval Cadet",
+      "score": 1.0,
+      "drinx_name": "Rum Royal Danish Navy Naval Cadet A.H.Riise + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-royal-danish-navy-naval-cadet-ahriise-gb-07-l-3437",
+      "drinx_price": 54.5,
+      "old_priceUrl": null,
+      "old_shopHR": "allez.hr",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-matusalem-23",
+      "name": "Ron Matusalem 23 Solera Gran Reserva",
+      "score": 1.0,
+      "drinx_name": "Rum Matusalem Gran Reserva Solera 23 + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-matusalem-gran-reserva-solera-23-gb-07-l-2020",
+      "drinx_price": 66.5,
+      "old_priceUrl": null,
+      "old_shopHR": "allez.hr",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-blue-mauritius-gold",
+      "name": "Blue Mauritius Gold",
+      "score": 1.0,
+      "drinx_name": "Rum Blue Mauritius Gold 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-blue-mauritius-gold-07-l-864",
+      "drinx_price": 56.76,
+      "old_priceUrl": null,
+      "old_shopHR": "allez.hr",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-ah-riise-npu-very-rare",
+      "name": "A.H. Riise Non Plus Ultra Very Rare",
+      "score": 1.0,
+      "drinx_name": "Rum Non Plus Ultra Very Rare A.H. Riise + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-non-plus-ultra-very-rare-ah-riise-gb-07-l-6536",
+      "drinx_price": 99.9,
+      "old_priceUrl": null,
+      "old_shopHR": "allez.hr",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-appleton-estate-8-reserve",
+      "name": "Appleton Estate Reserve 8",
+      "score": 1.0,
+      "drinx_name": "Rum Appleton Estate 8 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-appleton-estate-8-07-l-6651",
+      "drinx_price": 38.9,
+      "old_priceUrl": null,
+      "old_shopHR": "allez.hr",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-havana-club-tributo",
+      "name": "Havana Club Tributo",
+      "score": 1.0,
+      "drinx_name": "Rum Havana Club Tributo 2020 + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-havana-club-tributo-2020-gb-07-l-6676",
+      "drinx_price": 398.8,
+      "old_priceUrl": null,
+      "old_shopHR": "Vrutak",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-ah-riise-xo-port-cask",
+      "name": "A.H. Riise XO Reserve Port Cask",
+      "score": 1.0,
+      "drinx_name": "Rum A.H. Riise XO Reserve Port Cask + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-ah-riise-xo-reserve-port-cask-gb-07-l-6990",
+      "drinx_price": 59.9,
+      "old_priceUrl": null,
+      "old_shopHR": "allez.hr",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-santa-teresa-1796",
+      "name": "Santa Teresa 1796",
+      "score": 1.0,
+      "drinx_name": "Rum Santa Teresa 1796 + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-santa-teresa-1796-gb-07-l-8243",
+      "drinx_price": 58.99,
+      "old_priceUrl": null,
+      "old_shopHR": "razno",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-remedy-spiced",
+      "name": "Remedy Spiced",
+      "score": 1.0,
+      "drinx_name": "Rum Remedy Spiced 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-remedy-spiced-07-l-8598",
+      "drinx_price": 24.9,
+      "old_priceUrl": null,
+      "old_shopHR": "Vrutak",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-ron-millonario-xo",
+      "name": "Ron Millonario XO Reserva Especial",
+      "score": 1.0,
+      "drinx_name": "Rum XO Reserva Especial Ron Millonario + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-xo-reserva-especial-ron-millonario-gb-07-l-8639",
+      "drinx_price": 114.99,
+      "old_priceUrl": null,
+      "old_shopHR": "allez.hr",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-ah-riise-signature-master-blender",
+      "name": "A.H. Riise Signature Master Blender",
+      "score": 1.0,
+      "drinx_name": "Rum A.H. Riise SIGNATURE Master Blender + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-ah-riise-signature-master-blender-gb-07-l-8945",
+      "drinx_price": 234.9,
+      "old_priceUrl": null,
+      "old_shopHR": "allez.hr",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-ah-riise-black-barrel-navy-spiced",
+      "name": "A.H. Riise Black Barrel Navy Spiced",
+      "score": 1.0,
+      "drinx_name": "Rum Black Barrel Navy Spiced A.H. Riise 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-black-barrel-navy-spiced-ah-riise-07-l-12377",
+      "drinx_price": 33.9,
+      "old_priceUrl": null,
+      "old_shopHR": "allez.hr",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-ah-riise-xo-founders-reserve",
+      "name": "A.H. Riise XO Founders Reserve",
+      "score": 1.0,
+      "drinx_name": "Rum XO Founders A.H. Riise + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-xo-founders-ah-riise-gb-07-l-342",
+      "drinx_price": 62.4,
+      "old_priceUrl": null,
+      "old_shopHR": "allez.hr",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-mount-gay-black-barrel",
+      "name": "Mount Gay Black Barrel",
+      "score": 1.0,
+      "drinx_name": "Rum Mount Gay Black Barrel 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-mount-gay-black-barrel-07-l-5084",
+      "drinx_price": 40.46,
+      "old_priceUrl": null,
+      "old_shopHR": "allez.hr",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-don-q-gran-anejo",
+      "name": "Don Q Gran Anejo",
+      "score": 1.0,
+      "drinx_name": "Rum Gran Anejo Don Q + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-gran-anejo-don-q-gb-07-l-5284",
+      "drinx_price": 76.74,
+      "old_priceUrl": "https://tipsy.hr/zestice/don-q-anejo/",
+      "old_shopHR": "tipsy.hr",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-kirk-sweeney-gran-reserva-superior",
+      "name": "Kirk and Sweeney Gran Reserva Superior",
+      "score": 1.0,
+      "drinx_name": "Rum GRAN RESERVA SUPERIOR Kirk and Sweeney 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-gran-reserva-superior-kirk-and-sweeney-07-l-5446",
+      "drinx_price": 61.38,
+      "old_priceUrl": null,
+      "old_shopHR": "allez.hr",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-zacapa-xo",
+      "name": "Zacapa Centenario XO",
+      "score": 1.0,
+      "drinx_name": "Rum Zacapa Centenario XO + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-zacapa-centenario-xo-gb-07-l-7520",
+      "drinx_price": 119.9,
+      "old_priceUrl": null,
+      "old_shopHR": "allez.hr",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-ron-centenario-5",
+      "name": "Ron Centenario 5",
+      "score": 1.0,
+      "drinx_name": "Rum Centenario 1985 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-centenario-1985-07-l-7729",
+      "drinx_price": 81.86,
+      "old_priceUrl": null,
+      "old_shopHR": "Vrutak",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-union",
+      "name": "Havana Club Union",
+      "score": 1.0,
+      "drinx_name": "Rum Havana Club Union 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-havana-club-union-07-l-7958",
+      "drinx_price": 368.75,
+      "old_priceUrl": null,
+      "old_shopHR": "Vrutak",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-ah-riise-xo-superior-cask",
+      "name": "A.H. Riise XO Reserve Superior Cask",
+      "score": 1.0,
+      "drinx_name": "Rum Superior Cask Reserve XO A.H. Riise + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-superior-cask-reserve-xo-ah-riise-gb-07-l-8151",
+      "drinx_price": 51.44,
+      "old_priceUrl": null,
+      "old_shopHR": "allez.hr",
+      "action": "apply_primary"
+    },
+    {
+      "id": "gin-bathtub",
+      "name": "BATHTUB",
+      "score": 1.0,
+      "drinx_name": "Gin Bathtub 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-bathtub-07-l-146",
+      "drinx_price": 32.9,
+      "old_priceUrl": null,
+      "old_shopHR": "ecuga.com",
+      "action": "apply_primary"
+    },
+    {
+      "id": "gin-beefeater",
+      "name": "BEEFEATER",
+      "score": 1.0,
+      "drinx_name": "Gin Beefeater 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-beefeater-07-l-5530",
+      "drinx_price": 17.99,
+      "old_priceUrl": null,
+      "old_shopHR": "ecuga.com",
+      "action": "apply_primary"
+    },
+    {
+      "id": "gin-alkkemist",
+      "name": "ALKKEMIST",
+      "score": 1.0,
+      "drinx_name": "Gin Alkkemist 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-alkkemist-07-l-4476",
+      "drinx_price": 39.99,
+      "old_priceUrl": null,
+      "old_shopHR": "ecuga.com",
+      "action": "apply_primary"
+    },
+    {
+      "id": "gin-plymouth-gin",
+      "name": "Plymouth Gin",
+      "score": 1.0,
+      "drinx_name": "Gin Plymouth 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-plymouth-07-l-5441",
+      "drinx_price": 34.5,
+      "old_priceUrl": null,
+      "old_shopHR": "allez.hr",
+      "action": "apply_primary"
+    },
+    {
+      "id": "gin-citadelle",
+      "name": "CITADELLE",
+      "score": 1.0,
+      "drinx_name": "Gin Citadelle 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-citadelle-07-l-7411",
+      "drinx_price": 34.9,
+      "old_priceUrl": null,
+      "old_shopHR": "ecuga.com",
+      "action": "apply_primary"
+    },
+    {
+      "id": "br-baron-de-sigognac-10-ans",
+      "name": "Baron de Sigognac 10 Ans",
+      "score": 0.88,
+      "drinx_name": "Armagnac X.O. 10 Ans D Age Baron de Sigognac 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-armagnac-1374/armagnac-xo-10-ans-d-age-baron-de-sigognac-07-l-9022",
+      "drinx_price": 40.71,
+      "old_priceUrl": null,
+      "old_shopHR": "allez.hr",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-ah-riise-xo-kong-haakon",
+      "name": "A.H. Riise XO Royal Reserve Kong Haakon",
+      "score": 0.8,
+      "drinx_name": "Rum A.H. Riise X.O. Royal Reserve Kong Haakon + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-ah-riise-xo-royal-reserve-kong-haakon-gb-07-l-1513",
+      "drinx_price": 59.9,
+      "old_priceUrl": null,
+      "old_shopHR": "allez.hr",
+      "action": "apply_primary"
+    },
+    {
+      "id": "gin-four-pillars-rare-dry-gin-41-8-vol-0-7l",
+      "name": "Four Pillars Rare",
+      "score": 0.76,
+      "drinx_name": "Gin Rare Dry Four Pillars 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-rare-dry-four-pillars-07-l-5342",
+      "drinx_price": 33.5,
+      "old_priceUrl": null,
+      "old_shopHR": "allez.hr",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-captain-morgan-spiced-white-black",
+      "name": "Captain Morgan Spiced/White/Black",
+      "score": 0.75,
+      "drinx_name": "Rum Captain Morgan Spiced Black 1 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-captain-morgan-spiced-black-1-l-8540",
+      "drinx_price": 23.04,
+      "old_priceUrl": null,
+      "old_shopHR": "razno",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-ah-riise-royal-danish-navy",
+      "name": "A.H. Riise Royal Danish Navy",
+      "score": 0.75,
+      "drinx_name": "Rum Danish Navy A.H. Riise + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-danish-navy-ah-riise-gb-07-l-3325",
+      "drinx_price": 51.2,
+      "old_priceUrl": null,
+      "old_shopHR": "allez.hr",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-cihuatan-12-solera",
+      "name": "Cihuatan 12 Solera",
+      "score": 0.75,
+      "drinx_name": "Rum Cihuatan 12 Solera Reserva Especial + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-cihuatan-12-solera-reserva-especial-gb-07-l-10107",
+      "drinx_price": 34.7,
+      "old_priceUrl": null,
+      "old_shopHR": "Vivat",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-the-real-mccoy-12-foursquare",
+      "name": "The Real McCoy 12 (Foursquare)",
+      "score": 0.75,
+      "drinx_name": "Rum The Real McCOY 12 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-the-real-mccoy-12-07-l-12386",
+      "drinx_price": 64.5,
+      "old_priceUrl": null,
+      "old_shopHR": "import",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-ron-matusalem-15",
+      "name": "Ron Matusalem 15 Solera Gran Reserva",
+      "score": 0.75,
+      "drinx_name": "Rum Matusalem Gran Reserva 15 + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-matusalem-gran-reserva-15-gb-07-l-1545",
+      "drinx_price": 37.4,
+      "old_priceUrl": null,
+      "old_shopHR": "allez.hr",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-bacardi-anejo-cuatro-4yo",
+      "name": "Bacardi Anejo Cuatro 4yo",
+      "score": 0.75,
+      "drinx_name": "Rum Bacardi Anejo Cuatro 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-bacardi-anejo-cuatro-07-l-3597",
+      "drinx_price": 30.64,
+      "old_priceUrl": null,
+      "old_shopHR": "Lidl",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-botran-12",
+      "name": "Botran Añejo 12 Solera",
+      "score": 0.75,
+      "drinx_name": "Rum Ron Solera 12 Botran + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-ron-solera-12-botran-gb-07-l-4014",
+      "drinx_price": 22.45,
+      "old_priceUrl": null,
+      "old_shopHR": "allez.hr",
+      "action": "apply_primary"
+    },
+    {
+      "id": "tq-clase-azul-reposado",
+      "name": "Clase Azul Reposado",
+      "score": 0.75,
+      "drinx_name": "Tekila Clase Azul Reposado + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-tekila-1392/tekila-clase-azul-reposado-gb-07-l-7560",
+      "drinx_price": 249.99,
+      "old_priceUrl": "https://www.miva.com.hr/asortiman/proizvod-2528-clase-azul-tequila-reposado",
+      "old_shopHR": "Miva",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-zacapa-la-doma",
+      "name": "Zacapa Centenario 23 La Doma Heavenly Cask",
+      "score": 0.714,
+      "drinx_name": "Rum Zacapa Centenario 23 Year Old LA ARMONIA Heavenly Cask Collection + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-zacapa-centenario-23-year-old-la-armonia-heavenly-cask-collection-gb-07-l-5900",
+      "drinx_price": 104.9,
+      "old_priceUrl": null,
+      "old_shopHR": "allez.hr",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-ah-riise-frogman",
+      "name": "A.H. Riise Royal Danish Navy Frogman",
+      "score": 0.714,
+      "drinx_name": "Rum Royal Danish Navy Frogman Conventus Ranae A.H. Riise + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-royal-danish-navy-frogman-conventus-ranae-ah-riise-gb-07-l-4448",
+      "drinx_price": 64.16,
+      "old_priceUrl": null,
+      "old_shopHR": "allez.hr",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-coruba-12-cigar-jamajka",
+      "name": "Coruba 12 'Cigar' (Jamajka)",
+      "score": 0.7,
+      "drinx_name": "Rum 12 Years Cigar Reserve Coruba 0,70 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-12-years-cigar-reserve-coruba-070-l-12343",
+      "drinx_price": 55.0,
+      "old_priceUrl": null,
+      "old_shopHR": "ecuga.com",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-lazy-dodo-mauricijus",
+      "name": "Lazy Dodo (Mauricijus)",
+      "score": 0.667,
+      "drinx_name": "Rum Lazy Dodo Single Estate + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-lazy-dodo-single-estate-gb-07-l-640",
+      "drinx_price": 47.9,
+      "old_priceUrl": null,
+      "old_shopHR": "ecuga.com",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-dictador-20-yo",
+      "name": "Dictador 20 YO",
+      "score": 0.667,
+      "drinx_name": "Rum Episodio 20 Years Old 2001 Dictador + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-episodio-20-years-old-2001-dictador-gb-07-l-8450",
+      "drinx_price": 133.09,
+      "old_priceUrl": "https://www.miva.com.hr/asortiman/proizvod-1631-dictador-20-years-old",
+      "old_shopHR": "Miva",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-barcelo-gran-anejo",
+      "name": "Barcelo Gran Anejo",
+      "score": 0.667,
+      "drinx_name": "Rum Ron Barcelo Anejo 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-ron-barcelo-anejo-07-l-3681",
+      "drinx_price": 19.9,
+      "old_priceUrl": null,
+      "old_shopHR": "Roto",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-dictador-12-yo",
+      "name": "Dictador 12 YO",
+      "score": 0.667,
+      "drinx_name": "Rum Dictador 12 Y Solera 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-dictador-12-y-solera-07-l-5011",
+      "drinx_price": 38.9,
+      "old_priceUrl": "https://www.miva.com.hr/asortiman/proizvod-1623-dictador-12-years-old",
+      "old_shopHR": "Miva",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-legendario-elixir",
+      "name": "Legendario Elixir (Kuba)",
+      "score": 0.667,
+      "drinx_name": "Rum Legendario Elixir 7 Y.O. 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-legendario-elixir-7-yo-07-l-5079",
+      "drinx_price": 23.99,
+      "old_priceUrl": null,
+      "old_shopHR": "ecuga.com",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-planteray-barbados-5",
+      "name": "Plantation Barbados 5 YO",
+      "score": 0.667,
+      "drinx_name": "Rum Plantation Barbados 2013 Vintage + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-plantation-barbados-2013-vintage-gb-07-l-5851",
+      "drinx_price": 76.56,
+      "old_priceUrl": null,
+      "old_shopHR": "razno",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-stroh-80-austrija",
+      "name": "Stroh 80 (Austrija)",
+      "score": 0.667,
+      "drinx_name": "Rum Stroh 80 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-stroh-80-07-l-9936",
+      "drinx_price": 22.9,
+      "old_priceUrl": null,
+      "old_shopHR": "Vrutak",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-admiral-rodney-hms-monarch",
+      "name": "Admiral Rodney HMS Monarch",
+      "score": 0.667,
+      "drinx_name": "Rum HMS MONARCH Saint Lucia Admiral Rodney + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-hms-monarch-saint-lucia-admiral-rodney-gb-07-l-10270",
+      "drinx_price": 58.9,
+      "old_priceUrl": null,
+      "old_shopHR": "allez.hr",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-zacapa-30-aniversario",
+      "name": "Zacapa Centenario 30 Aniversario",
+      "score": 0.667,
+      "drinx_name": "Rum Zacapa Centenario 30 Aniversario Edicion Especial + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-zacapa-centenario-30-aniversario-edicion-especial-gb-07-l-1065",
+      "drinx_price": 1.38,
+      "old_priceUrl": null,
+      "old_shopHR": "allez.hr",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-banks-5",
+      "name": "Banks 5 (blend)",
+      "score": 0.667,
+      "drinx_name": "Rum Banks 5 Island Blend 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-banks-5-island-blend-07-l-9755",
+      "drinx_price": 37.9,
+      "old_priceUrl": null,
+      "old_shopHR": "allez.hr",
+      "action": "apply_primary"
+    },
+    {
+      "id": "wh-jack-daniels-single-barrel",
+      "name": "Jack Daniel's Single Barrel Select",
+      "score": 0.667,
+      "drinx_name": "Američki viski Jack Daniel's Single Barrel Select 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-viski-1364/americki-viski-jack-daniels-single-barrel-select-07-l-9220",
+      "drinx_price": 53.99,
+      "old_priceUrl": "https://tipsy.hr/zestice/whiskey-zestice/jack-daniels-select-single-barrel-07l/",
+      "old_shopHR": "tipsy.hr",
+      "action": "apply_primary"
+    },
+    {
+      "id": "br-martell-xo",
+      "name": "Martell XO",
+      "score": 0.667,
+      "drinx_name": "Konjak Martell XO GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-martell-xo-gb-07-l-9874",
+      "drinx_price": 240.0,
+      "old_priceUrl": "https://tipsy.hr/zestice/cognac-zestice/martell-xo/",
+      "old_shopHR": "tipsy.hr",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-bacardi-carta-blanca-oro-negra",
+      "name": "Bacardi Carta Blanca/Oro/Negra",
+      "score": 0.6,
+      "drinx_name": "Rum Bacardi Carta Negra 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-bacardi-carta-negra-07-l-2651",
+      "drinx_price": 19.9,
+      "old_priceUrl": null,
+      "old_shopHR": "razno",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-el-dorado-15-demerara",
+      "name": "El Dorado 15 (Demerara)",
+      "score": 0.6,
+      "drinx_name": "Rum El Dorado 15 godina + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-el-dorado-15-godina-gb-07-l-6789",
+      "drinx_price": 58.9,
+      "old_priceUrl": null,
+      "old_shopHR": "allez.hr",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-havana-club-especial",
+      "name": "Havana Club Especial",
+      "score": 0.6,
+      "drinx_name": "Rum Havana Club Anejo Especial Plus 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-havana-club-anejo-especial-plus-07-l-2087",
+      "drinx_price": 21.11,
+      "old_priceUrl": "https://webshop.rotodinamic.hr/havana-club-especial-rum",
+      "old_shopHR": "webshop.rotodinamic.hr",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-hse-black-sheriff",
+      "name": "HSE Black Sheriff",
+      "score": 0.6,
+      "drinx_name": "Rum HSE Vieux Agricole Black Sheriff 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-hse-vieux-agricole-black-sheriff-07-l-5163",
+      "drinx_price": 43.0,
+      "old_priceUrl": null,
+      "old_shopHR": "allez.hr",
+      "action": "apply_primary"
+    },
+    {
+      "id": "wh-glen-scotia-victoriana",
+      "name": "Glen Scotia Victoriana",
+      "score": 0.6,
+      "drinx_name": "Škotski viski Glen Scotia VICTORIANA Single Malt 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-glen-scotia-victoriana-single-malt-07-l-2704",
+      "drinx_price": 91.6,
+      "old_priceUrl": null,
+      "old_shopHR": "allez.hr",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-appleton-estate-12",
+      "name": "Appleton Estate 12 YO Rare Casks",
+      "score": 0.58,
+      "drinx_name": "Rum Appleton Estate 12 yo 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-appleton-estate-12-yo-07-l-170",
+      "drinx_price": 48.8,
+      "old_priceUrl": null,
+      "old_shopHR": "allez.hr",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-kirk-sweeney-xo-no5-bio",
+      "name": "Kirk and Sweeney XO Edición Limitada No. 5 BIO",
+      "score": 0.571,
+      "drinx_name": "Rum Reserva Kirk and Sweeney XO Limited edition No.4 + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-reserva-kirk-and-sweeney-xo-limited-edition-no4-gb-07-l-5748",
+      "drinx_price": 309.9,
+      "old_priceUrl": null,
+      "old_shopHR": "allez.hr",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-zacapa-el-alma",
+      "name": "Zacapa Centenario El Alma 23",
+      "score": 0.556,
+      "drinx_name": "Rum Zacapa Centenario 23 EL ALMA Sistema Solera Heavenly Cask Collection + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-zacapa-centenario-23-el-alma-sistema-solera-heavenly-cask-collection-gb-07-l-8896",
+      "drinx_price": 112.6,
+      "old_priceUrl": null,
+      "old_shopHR": "allez.hr",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-ron-abuelo-xv",
+      "name": "Ron Abuelo XV Finish Collection",
+      "score": 0.5,
+      "drinx_name": "Rum Abuelo Anejo XV NAPOLEON Cask Finish + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-abuelo-anejo-xv-napoleon-cask-finish-gb-07-l-1600",
+      "drinx_price": 79.8,
+      "old_priceUrl": null,
+      "old_shopHR": "ecuga.com",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-30",
+      "name": "Ron Centenario 30",
+      "score": 0.5,
+      "drinx_name": "Rum 30 Sistema Solera Ron Centenario + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-30-sistema-solera-ron-centenario-gb-07-l-4100",
+      "drinx_price": 149.9,
+      "old_priceUrl": null,
+      "old_shopHR": "Vrutak",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-rhum-j-m-xo-agricole",
+      "name": "Rhum J.M XO (agricole)",
+      "score": 0.5,
+      "drinx_name": "Rum XO Vieux Agricole La Mauny + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-xo-vieux-agricole-la-mauny-gb-07-l-5720",
+      "drinx_price": 91.09,
+      "old_priceUrl": null,
+      "old_shopHR": "allez.hr",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-pyrat-xo-anguilla-blend",
+      "name": "Pyrat XO (Anguilla/blend)",
+      "score": 0.5,
+      "drinx_name": "Rum Pyrat XO Reserve 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-pyrat-xo-reserve-07-l-7114",
+      "drinx_price": 37.99,
+      "old_priceUrl": null,
+      "old_shopHR": "ecuga.com",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-chairmans-forgotten-casks",
+      "name": "Chairman's Reserve The Forgotten Casks",
+      "score": 0.5,
+      "drinx_name": "Rum Chairman's Reserve The Forgotten Cask + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-chairmans-reserve-the-forgotten-cask-gb-07-l-7969",
+      "drinx_price": 48.9,
+      "old_priceUrl": null,
+      "old_shopHR": "allez.hr",
+      "action": "apply_primary"
+    },
+    {
+      "id": "wh-talisker-10",
+      "name": "Talisker 10",
+      "score": 0.5,
+      "drinx_name": "Škotski viski Talisker 10 + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-talisker-10-gb-07-l-234",
+      "drinx_price": 39.99,
+      "old_priceUrl": "https://tipsy.hr/zestice/whiskey-zestice/talisker-10-y-o-070l/",
+      "old_shopHR": "tipsy.hr",
+      "action": "apply_primary"
+    },
+    {
+      "id": "wh-laphroaig-lore",
+      "name": "Laphroaig Lore",
+      "score": 0.5,
+      "drinx_name": "Škotski viski LAPHROAIG Lore Single Malt + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-laphroaig-lore-single-malt-gb-07-l-2419",
+      "drinx_price": 116.8,
+      "old_priceUrl": null,
+      "old_shopHR": "allez.hr",
+      "action": "apply_primary"
+    },
+    {
+      "id": "wh-glenfiddich-18",
+      "name": "Glenfiddich 18",
+      "score": 0.5,
+      "drinx_name": "Škotski viski Glenfiddich 18 yo + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-glenfiddich-18-yo-gb-07-l-7162",
+      "drinx_price": 94.99,
+      "old_priceUrl": "https://tipsy.hr/zestice/whiskey-zestice/glenfiddich-18-y-o/",
+      "old_shopHR": "tipsy.hr",
+      "action": "apply_primary"
+    },
+    {
+      "id": "wh-knob-creek-9",
+      "name": "Knob Creek 9 Small Batch",
+      "score": 0.5,
+      "drinx_name": "Američki viski Knob Creek Straight RYE Whiskey Small Batch 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-viski-1364/americki-viski-knob-creek-straight-rye-whiskey-small-batch-07-l-9800",
+      "drinx_price": 52.2,
+      "old_priceUrl": null,
+      "old_shopHR": "allez.hr",
+      "action": "apply_primary"
+    },
+    {
+      "id": "wh-octomore",
+      "name": "Octomore (Bruichladdich)",
+      "score": 0.5,
+      "drinx_name": "Škotski viski Bruichladdich Octomore 1.1 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-bruichladdich-octomore-11-07-l-656",
+      "drinx_price": 1.12,
+      "old_priceUrl": null,
+      "old_shopHR": "allez.hr (rijetko)",
+      "action": "apply_primary"
+    },
+    {
+      "id": "wh-laphroaig-10",
+      "name": "Laphroaig 10",
+      "score": 0.5,
+      "drinx_name": "Škotski viski LAPHROAIG 10 Single malt + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-laphroaig-10-single-malt-gb-07-l-1653",
+      "drinx_price": 44.99,
+      "old_priceUrl": "https://tipsy.hr/zestice/whiskey-zestice/laphroaig-single-malt-10-y-o/",
+      "old_shopHR": "tipsy.hr",
+      "action": "apply_primary"
+    },
+    {
+      "id": "wh-paul-john-brilliance-a",
+      "name": "Paul John Brilliance",
+      "score": 0.5,
+      "drinx_name": "Indijski viski Paul John Peated BRILLIANCE Single Malt + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-viski-1364/indijski-viski-paul-john-peated-brilliance-single-malt-gb-07-l-4427",
+      "drinx_price": 50.71,
+      "old_priceUrl": null,
+      "old_shopHR": "allez.hr",
+      "action": "apply_primary"
+    },
+    {
+      "id": "wh-ardbeg-traigh-bhan-19-yo-islay-single-malt-scotch-whisky-batch-no-4-46-2-vol-0-7l-u-poklon-kutiji",
+      "name": "Ardbeg TRAIGH BHAN 19 YO Batch No. 4",
+      "score": 0.5,
+      "drinx_name": "Škotski viski Ardbeg Traigh Bhan 19 Year Old Edition 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-ardbeg-traigh-bhan-19-year-old-edition-07-l-4696",
+      "drinx_price": 331.96,
+      "old_priceUrl": null,
+      "old_shopHR": "allez.hr",
+      "action": "apply_primary"
+    },
+    {
+      "id": "wh-oban-14",
+      "name": "Oban 14",
+      "score": 0.5,
+      "drinx_name": "Škotski viski Oban 14 + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-oban-14-gb-07-l-5656",
+      "drinx_price": 92.11,
+      "old_priceUrl": "https://tipsy.hr/zestice/oban-14-y-o-whiskey/",
+      "old_shopHR": "tipsy.hr",
+      "action": "apply_primary"
+    },
+    {
+      "id": "wh-springbank-10",
+      "name": "Springbank 10",
+      "score": 0.5,
+      "drinx_name": "Škotski viski Springbank 10 Years old Single Malt 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-springbank-10-years-old-single-malt-07-l-6193",
+      "drinx_price": 106.66,
+      "old_priceUrl": null,
+      "old_shopHR": "allez.hr (rijetko)",
+      "action": "apply_primary"
+    },
+    {
+      "id": "wh-deanston-12",
+      "name": "Deanston 12",
+      "score": 0.5,
+      "drinx_name": "Škotski viski Deanston 12 years old 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-deanston-12-years-old-07-l-8923",
+      "drinx_price": 50.0,
+      "old_priceUrl": null,
+      "old_shopHR": "allez.hr",
+      "action": "apply_primary"
+    },
+    {
+      "id": "wh-nikka-yoichi-single-malt",
+      "name": "Nikka Yoichi Single Malt",
+      "score": 0.5,
+      "drinx_name": "Japanski viski Nikka Yoichi single malt + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-viski-1364/japanski-viski-nikka-yoichi-single-malt-gb-07-l-9040",
+      "drinx_price": 77.56,
+      "old_priceUrl": "https://tipsy.hr/zestice/whiskey-zestice/nikka-yoichi-single-malt-070l/",
+      "old_shopHR": "tipsy.hr",
+      "action": "apply_primary"
+    },
+    {
+      "id": "br-frapin-vsop-grande-champagne",
+      "name": "Frapin VSOP Grande Champagne",
+      "score": 0.5,
+      "drinx_name": "Konjak Frapin Grande Champagne Plume 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-frapin-grande-champagne-plume-07-l-2242",
+      "drinx_price": 2.62,
+      "old_priceUrl": null,
+      "old_shopHR": "allez.hr",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-flor-de-cana-cognac-cask-1997",
+      "name": "Flor de Caña Cognac Cask Finish 1997",
+      "score": 0.45,
+      "drinx_name": "Rum Flor de Cana Volcanic Bourbon Cask GB 1 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-flor-de-cana-volcanic-bourbon-cask-gb-1-l-1350",
+      "drinx_price": 71.51,
+      "old_priceUrl": null,
+      "old_shopHR": "allez.hr",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-karukera-gold-premium",
+      "name": "Karukera Gold Premium",
+      "score": 0.45,
+      "drinx_name": "Rum 1919 Premium Gold Angostura 0,70 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-1919-premium-gold-angostura-070-l-12352",
+      "drinx_price": 42.2,
+      "old_priceUrl": null,
+      "old_shopHR": "allez.hr",
+      "action": "apply_primary"
+    },
+    {
+      "id": "rum-planteray-original-dark",
+      "name": "Planteray Original Dark",
+      "score": 0.45,
+      "drinx_name": "Rum Myer´s Original Dark 1 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-myer-s-original-dark-1-l-8015",
+      "drinx_price": 25.05,
+      "old_priceUrl": null,
+      "old_shopHR": "Lidl",
+      "action": "apply_primary"
+    },
+    {
+      "id": "br-remy-martin-vsop",
+      "name": "Rémy Martin VSOP",
+      "score": 0.45,
+      "drinx_name": "Konjak Remy Martin End Of The Year Edition VSOP 1 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-remy-martin-end-of-the-year-edition-vsop-1-l-7155",
+      "drinx_price": 76.38,
+      "old_priceUrl": "https://tipsy.hr/zestice/cognac-zestice/remy-martin-v-s-o-p/",
+      "old_shopHR": "tipsy.hr",
+      "action": "apply_primary"
+    }
+  ],
+  "skipped_has_product_rows": [
+    {
+      "id": "rum-zacapa-centenario-23",
+      "name": "Zacapa Centenario 23",
+      "score": 1.0,
+      "drinx_name": "Rum Zacapa Centenario 23 Year Old + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-zacapa-centenario-23-year-old-gb-07-l-6359",
+      "drinx_price": 49.9,
+      "old_priceUrl": "https://allez.hr/shop/svi-proizvodi/ron-zacapa-centenario-23-anos-black-label",
+      "old_shopHR": "allez.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "rum-don-papa-baroko",
+      "name": "Don Papa Baroko",
+      "score": 1.0,
+      "drinx_name": "Rum Don Papa Baroko + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-don-papa-baroko-gb-07-l-5759",
+      "drinx_price": 44.99,
+      "old_priceUrl": "https://allez.hr/shop/svi-proizvodi/don-papa-baroko-40-vol-07l",
+      "old_shopHR": "allez.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "rum-havana-club-seleccion-maestros",
+      "name": "Havana Club Seleccion Maestros",
+      "score": 1.0,
+      "drinx_name": "Rum Havana Club Seleccion De Maestros 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-havana-club-seleccion-de-maestros-07-l-2022",
+      "drinx_price": 59.99,
+      "old_priceUrl": "https://humidor.hr/hr/proizvod/havana-club-seleccion-de-maestros-070-l/",
+      "old_shopHR": "humidor.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "rum-bacardi-spiced",
+      "name": "Bacardi Spiced",
+      "score": 1.0,
+      "drinx_name": "Rum Bacardi Spiced 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-bacardi-spiced-07-l-2030",
+      "drinx_price": 20.39,
+      "old_priceUrl": "https://ecuga.com/proizvod/bacardi-spiced",
+      "old_shopHR": "ecuga.com",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "rum-bumbu-cream-liker",
+      "name": "Bumbu Cream liker",
+      "score": 1.0,
+      "drinx_name": "Rum Cream Bumbu 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-cream-bumbu-07-l-5616",
+      "drinx_price": 30.9,
+      "old_priceUrl": "https://allez.hr/shop/svi-proizvodi/bumbu-cream-15-vol-07l",
+      "old_shopHR": "allez.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "rum-kirk-sweeney-gran-reserva",
+      "name": "Kirk and Sweeney Gran Reserva",
+      "score": 1.0,
+      "drinx_name": "Rum GRAN RESERVA Kirk and Sweeney 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-gran-reserva-kirk-and-sweeney-07-l-6015",
+      "drinx_price": 54.8,
+      "old_priceUrl": "https://allez.hr/shop/svi-proizvodi/kirk-and-sweeney-xo-dominican-rum-edicion-limitada-no-1-655-vol-07l-u-poklon-kutiji",
+      "old_shopHR": "allez.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "rum-bumbu-original",
+      "name": "Bumbu Original",
+      "score": 1.0,
+      "drinx_name": "Rum Original Bumbu 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-original-bumbu-07-l-6374",
+      "drinx_price": 36.9,
+      "old_priceUrl": "https://allez.hr/shop/svi-proizvodi/bumbu-the-original-40-vol-07l",
+      "old_shopHR": "allez.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "rum-diplomatico-reserva-exclusiva",
+      "name": "Diplomatico Reserva Exclusiva",
+      "score": 1.0,
+      "drinx_name": "Rum Diplomatico Reserva Exclusiva + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-diplomatico-reserva-exclusiva-gb-07-l-6846",
+      "drinx_price": 33.9,
+      "old_priceUrl": "https://allez.hr/shop/svi-proizvodi/diplomatico-reserva-exclusiva-ron-antiguo-40-vol-07l-u-poklon-kutiji",
+      "old_shopHR": "allez.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "rum-the-kraken-black-spiced",
+      "name": "The Kraken Black Spiced",
+      "score": 1.0,
+      "drinx_name": "Rum Black Spiced Kraken 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-black-spiced-kraken-07-l-5276",
+      "drinx_price": 28.12,
+      "old_priceUrl": "https://allez.hr/shop/svi-proizvodi/the-kraken-black-spiced-ceramic-limited-edition-40-vol-07l",
+      "old_shopHR": "allez.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "rum-barcelo-imperial-onyx",
+      "name": "Barcelo Imperial Onyx",
+      "score": 1.0,
+      "drinx_name": "Rum Ron Barcelo Imperial Onyx + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-ron-barcelo-imperial-onyx-gb-07-l-8726",
+      "drinx_price": 37.99,
+      "old_priceUrl": "https://ecuga.com/proizvod/barcelo-imperial-onyx",
+      "old_shopHR": "ecuga.com",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "rum-matusalem-10-clasico",
+      "name": "Ron Matusalem 10 Solera Clásico",
+      "score": 1.0,
+      "drinx_name": "Rum Matusalem Clasico Solera 10 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-matusalem-clasico-solera-10-07-l-764",
+      "drinx_price": 33.3,
+      "old_priceUrl": "https://allez.hr/shop/svi-proizvodi/ron-matusalem-clasico-10-anos-40-vol-07-l",
+      "old_shopHR": "allez.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "rum-don-papa-7",
+      "name": "Don Papa 7 (Small Batch)",
+      "score": 1.0,
+      "drinx_name": "Rum Small Batch 7 YO Don Papa 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-small-batch-7-yo-don-papa-07-l-6220",
+      "drinx_price": 81.86,
+      "old_priceUrl": "https://humidor.hr/hr/proizvod/don-papa-7-yo-070-l/",
+      "old_shopHR": "humidor.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "rum-flor-de-cana-25",
+      "name": "Flor de Caña 25 YO",
+      "score": 1.0,
+      "drinx_name": "Rum Flor de Cana 25 y GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-flor-de-cana-25-y-gb-07-l-1946",
+      "drinx_price": 153.59,
+      "old_priceUrl": "https://humidor.hr/hr/proizvod/flor-de-cana-25yo-070-l/",
+      "old_shopHR": "humidor.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "rum-ah-riise-family-reserve-1838",
+      "name": "A.H. Riise Family Reserve Solera 1838",
+      "score": 1.0,
+      "drinx_name": "Rum Family Reserve Solera 1838 A.H. Riise 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-family-reserve-solera-1838-ah-riise-07-l-5369",
+      "drinx_price": 76.84,
+      "old_priceUrl": "https://allez.hr/shop/svi-proizvodi/ah-riise-1888-copenhagen-xo-superior-spirit-drink-40-vol-07l-u-poklon-kutiji",
+      "old_shopHR": "allez.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "rum-eminente-reserva-7",
+      "name": "Eminente Reserva 7",
+      "score": 1.0,
+      "drinx_name": "Rum Eminente Reserva 7 YO 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-eminente-reserva-7-yo-07-l-9802",
+      "drinx_price": 58.39,
+      "old_priceUrl": "https://www.cugaklik.hr/proizvod/eminente-reserva-7-y-o-0-70l/",
+      "old_shopHR": "cugaklik.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "gin-beefeater-blood-orange",
+      "name": "BEEFEATER BLOOD ORANGE",
+      "score": 1.0,
+      "drinx_name": "Gin Beefeater Blood Orange 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-beefeater-blood-orange-07-l-4132",
+      "drinx_price": 21.49,
+      "old_priceUrl": "https://ecuga.com/proizvod/beefeater-blood-orange",
+      "old_shopHR": "ecuga.com",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "gin-bombay-sapphire",
+      "name": "BOMBAY SAPPHIRE",
+      "score": 1.0,
+      "drinx_name": "Gin Bombay Sapphire 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-bombay-sapphire-07-l-9710",
+      "drinx_price": 26.99,
+      "old_priceUrl": "https://ecuga.com/proizvod/bombay-sapphire",
+      "old_shopHR": "ecuga.com",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "gin-beefeater-24",
+      "name": "BEEFEATER 24",
+      "score": 1.0,
+      "drinx_name": "Gin Beefeater 24 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-beefeater-24-07-l-1129",
+      "drinx_price": 35.75,
+      "old_priceUrl": "https://allez.hr/shop/svi-proizvodi/beefeater-24-dry-gin-45-07-l",
+      "old_shopHR": "allez.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "gin-nikka-coffey-gin-47-vol-0-7l",
+      "name": "Nikka Coffey Gin",
+      "score": 1.0,
+      "drinx_name": "Gin Nikka Coffey + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-nikka-coffey-gb-07-l-4314",
+      "drinx_price": 62.38,
+      "old_priceUrl": "https://allez.hr/shop/svi-proizvodi/nikka-coffey-gin-gb-47-vol-07-l",
+      "old_shopHR": "allez.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "gin-aura-karbun",
+      "name": "AURA KARBUN",
+      "score": 0.95,
+      "drinx_name": "Gin Karbun Aura 0,75 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-karbun-aura-075-l-9323",
+      "drinx_price": 37.99,
+      "old_priceUrl": "https://ecuga.com/proizvod/aura-karbun",
+      "old_shopHR": "ecuga.com",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "rum-a-h-riise-xo-thin-blue-line",
+      "name": "A.H. Riise XO Thin Blue Line",
+      "score": 0.8,
+      "drinx_name": "Rum A.H. Riise X.O. Thin Blue Line + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-ah-riise-xo-thin-blue-line-gb-07-l-12376",
+      "drinx_price": 56.6,
+      "old_priceUrl": "https://allez.hr/shop/svi-proizvodi/ah-riise-xo-reserve-rum-the-thin-blue-line-denmark-40-vol-07l-gb",
+      "old_shopHR": "allez.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "rum-saint-james-xo-agricole",
+      "name": "Saint James XO (agricole)",
+      "score": 0.8,
+      "drinx_name": "Rum XO Vieux Agricole Saint James + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-xo-vieux-agricole-saint-james-gb-07-l-6782",
+      "drinx_price": 44.98,
+      "old_priceUrl": "https://allez.hr/shop/svi-proizvodi/saint-james-xo-rhum-vieux-agricole-43-vol-07l-u-poklon-kutiji",
+      "old_shopHR": "allez.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "wh-suntory-hibiki-blossom-harmony-japanese-whisky-2022-43-vol-0-7l-u-poklon-kutiji",
+      "name": "Suntory Hibiki Blossom Harmony 2022",
+      "score": 0.8,
+      "drinx_name": "Japanski Whisky Hibiki Blossom Harmony 2022 Suntory + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-viski-1364/japanski-whisky-hibiki-blossom-harmony-2022-suntory-gb-07-l-5584",
+      "drinx_price": 644.98,
+      "old_priceUrl": "https://allez.hr/shop/svi-proizvodi/suntory-hibiki-blossom-harmony-whisky-2022-43-vol-07l-u-poklon-kutiji",
+      "old_shopHR": "allez.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "gin-scapegrace-gold-premium-dry-gin-57-vol-0-7l",
+      "name": "Scapegrace GOLD Premium Dry Gin 57% Vol. 0,7l",
+      "score": 0.8,
+      "drinx_name": "Gin Scapegrace Gold Premium Dry 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-scapegrace-gold-premium-dry-07-l-3200",
+      "drinx_price": 66.5,
+      "old_priceUrl": "https://allez.hr/shop/svi-proizvodi/scapegrace-gold-premium-dry-gin-57-vol-07l",
+      "old_shopHR": "allez.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "br-frapin-chateau-de-fontpinot-xo",
+      "name": "Frapin Château de Fontpinot XO",
+      "score": 0.8,
+      "drinx_name": "Konjak Frapin Chateau Fontpinot XO 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-frapin-chateau-fontpinot-xo-07-l-6827",
+      "drinx_price": 114.65,
+      "old_priceUrl": "https://humidor.hr/hr/proizvod/frapin-fontpinot-xo-070-l/",
+      "old_shopHR": "humidor.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "rum-flor-de-cana-18",
+      "name": "Flor de Caña Centenario 18 YO",
+      "score": 0.75,
+      "drinx_name": "Rum Flor de Cana 18 y + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-flor-de-cana-18-y-gb-07-l-3158",
+      "drinx_price": 49.99,
+      "old_priceUrl": "https://allez.hr/shop/svi-proizvodi/flor-de-cana-centenario-18-years-old",
+      "old_shopHR": "allez.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "rum-eminente-gran-reserva-10",
+      "name": "Eminente Gran Reserva 10",
+      "score": 0.75,
+      "drinx_name": "Rum Eminente Ron De Cuba Gran Reserva 10 YO 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-eminente-ron-de-cuba-gran-reserva-10-yo-07-l-2617",
+      "drinx_price": 82.8,
+      "old_priceUrl": "https://www.cugaklik.hr/proizvod/eminente-gran-reserva-10-y-o/",
+      "old_shopHR": "cugaklik.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "rum-barcelo-imperial-maple-cask",
+      "name": "Barcelo Imperial Maple Cask",
+      "score": 0.75,
+      "drinx_name": "Rum Ron Barcelo Maple Cask + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-ron-barcelo-maple-cask-gb-07-l-5540",
+      "drinx_price": 42.99,
+      "old_priceUrl": "https://ecuga.com/proizvod/barcelo-imperial-maple-cask",
+      "old_shopHR": "ecuga.com",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "rum-el-dorado-21",
+      "name": "El Dorado 21",
+      "score": 0.75,
+      "drinx_name": "Rum El Dorado 21 godina + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-el-dorado-21-godina-gb-07-l-6590",
+      "drinx_price": 99.98,
+      "old_priceUrl": "https://humidor.hr/hr/proizvod/el-dorado-21-yo-070-l/",
+      "old_shopHR": "humidor.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "rum-ron-millonario-15",
+      "name": "Ron Millonario 15 Reserva Especial",
+      "score": 0.75,
+      "drinx_name": "Rum Ron Millonario 15 Solera Reserva Especial 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-ron-millonario-15-solera-reserva-especial-07-l-8484",
+      "drinx_price": 54.8,
+      "old_priceUrl": "https://allez.hr/shop/svi-proizvodi/ron-millonario-solera-reserva-especial-15-anos-40-vol-07-l",
+      "old_shopHR": "allez.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "rum-botran-18-solera",
+      "name": "Botran Añejo 18 Solera 1893",
+      "score": 0.75,
+      "drinx_name": "Rum Ron Botran 18 Year Old Solera 1893 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-ron-botran-18-year-old-solera-1893-07-l-7680",
+      "drinx_price": 39.05,
+      "old_priceUrl": "https://allez.hr/shop/svi-proizvodi/botran-anejo-18-sistema-solera-1893-40-vol-07-l",
+      "old_shopHR": "allez.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "rum-el-dorado-12-demerara",
+      "name": "El Dorado 12 (Demerara)",
+      "score": 0.75,
+      "drinx_name": "Rum 12 Years Old El Dorado + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-12-years-old-el-dorado-gb-07-l-7041",
+      "drinx_price": 34.74,
+      "old_priceUrl": "https://allez.hr/shop/svi-proizvodi/el-dorado-12-years-old-gb-40-07-l",
+      "old_shopHR": "allez.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "rum-flor-de-cana-12",
+      "name": "Flor de Caña Centenario 12 YO",
+      "score": 0.75,
+      "drinx_name": "Rum Flor de Cana 12 Y + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-flor-de-cana-12-y-gb-07-l-8894",
+      "drinx_price": 39.8,
+      "old_priceUrl": "https://allez.hr/shop/svi-proizvodi/flor-de-cana-centenario-12-years-old-rum-40-vol-07l-in",
+      "old_shopHR": "allez.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "wh-aberlour-18-double-sherry-cask-finish",
+      "name": "Aberlour 18 Double Sherry Cask Finish",
+      "score": 0.75,
+      "drinx_name": "Škotski viski Aberlour 18 Double Sherry Cask Finish + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-aberlour-18-double-sherry-cask-finish-gb-07-l-6262",
+      "drinx_price": 139.9,
+      "old_priceUrl": "https://ecuga.com/proizvod/aberlour-18-double-sherry-cask-finish",
+      "old_shopHR": "ecuga.com",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "gin-malfy-gin-con-limone-41-vol-0-7-l",
+      "name": "Malfy Gin con Limone 41% Vol. 0,7 l",
+      "score": 0.75,
+      "drinx_name": "Gin Malfy con Limone 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-malfy-con-limone-07-l-710",
+      "drinx_price": 28.69,
+      "old_priceUrl": "https://allez.hr/shop/svi-proizvodi/malfy-gin-con-limone-41-vol-07-l",
+      "old_shopHR": "allez.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "gin-bloom-london-dry-gin-40-0-7-l",
+      "name": "Bloom London Dry Gin 40% 0,7 l",
+      "score": 0.75,
+      "drinx_name": "Gin Bloom London Dry 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-bloom-london-dry-07-l-747",
+      "drinx_price": 28.9,
+      "old_priceUrl": "https://allez.hr/shop/svi-proizvodi/bloom-london-dry-gin-40-07-l",
+      "old_shopHR": "allez.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "gin-amuerte-coca-leaf-gin-green-edition",
+      "name": "AMUERTE COCA LEAF GIN – GREEN EDITION",
+      "score": 0.75,
+      "drinx_name": "Gin Amuerte Coca Green 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-amuerte-coca-green-07-l-1457",
+      "drinx_price": 67.9,
+      "old_priceUrl": "https://ecuga.com/proizvod/amuerte-coca-leaf-gin-green-edition",
+      "old_shopHR": "ecuga.com",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "gin-nordes-atlantic-galician-gin-40-vol-0-7l",
+      "name": "Nordes Atlantic Galician Gin 40% Vol. 0,7l",
+      "score": 0.75,
+      "drinx_name": "Gin Nordes Atlantic Galician 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-nordes-atlantic-galician-07-l-7108",
+      "drinx_price": 35.76,
+      "old_priceUrl": "https://allez.hr/shop/svi-proizvodi/nordes-atlantic-galician-gin-40-vol-07-l",
+      "old_shopHR": "allez.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "gin-amuerte-coca-leaf-black-edition",
+      "name": "AMUERTE COCA LEAF - BLACK EDITION",
+      "score": 0.75,
+      "drinx_name": "Gin Amuerte Coca Black 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-amuerte-coca-black-07-l-3835",
+      "drinx_price": 64.9,
+      "old_priceUrl": "https://allez.hr/shop/svi-proizvodi/amuerte-coca-leaf-gin-black-edition-43-07-l",
+      "old_shopHR": "allez.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "gin-roku-japanese-craft-gin-43-0-7-l",
+      "name": "ROKU Japanese Craft Gin 43% 0,7 l",
+      "score": 0.75,
+      "drinx_name": "Gin Roku The Japanese Craft Gin 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-roku-the-japanese-craft-gin-07-l-4106",
+      "drinx_price": 29.99,
+      "old_priceUrl": "https://allez.hr/shop/svi-proizvodi/roku-japanese-craft-gin-43-07-l",
+      "old_shopHR": "allez.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "gin-amuerte-coca-leaf-gin-orange-edition",
+      "name": "AMUERTE COCA LEAF GIN – ORANGE EDITION",
+      "score": 0.75,
+      "drinx_name": "Gin Amuerte Coca Orange 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-amuerte-coca-orange-07-l-4716",
+      "drinx_price": 64.6,
+      "old_priceUrl": "https://ecuga.com/proizvod/amuerte-coca-leaf-gin-orange-edition",
+      "old_shopHR": "ecuga.com",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "gin-bulldog-london-dry-gin-40-vol-0-7l",
+      "name": "Bulldog London Dry Gin 40% Vol. 0,7l",
+      "score": 0.75,
+      "drinx_name": "Gin Bulldog London Dry 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-bulldog-london-dry-07-l-9283",
+      "drinx_price": 27.5,
+      "old_priceUrl": "https://allez.hr/shop/svi-proizvodi/bulldog-gin-40-vol-07-l",
+      "old_shopHR": "allez.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "gin-amuerte-coca-leaf-white-edition",
+      "name": "AMUERTE COCA LEAF - WHITE EDITION",
+      "score": 0.75,
+      "drinx_name": "Gin Amuerte Coca White 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-amuerte-coca-white-07-l-11853",
+      "drinx_price": 59.9,
+      "old_priceUrl": "https://allez.hr/shop/svi-proizvodi/amuerte-coca-leaf-gin-white-edition-43-vol-07l",
+      "old_shopHR": "allez.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "gin-ukiyo-japanese-blossom-gin-40-vol-0-7l",
+      "name": "Ukiyo Japanese Blossom Gin 40% Vol. 0,7l",
+      "score": 0.75,
+      "drinx_name": "Gin Japanese Blossom Ukiyo 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-japanese-blossom-ukiyo-07-l-11964",
+      "drinx_price": 43.9,
+      "old_priceUrl": "https://allez.hr/shop/svi-proizvodi/ukiyo-japanese-blossom-gin-40-vol-07l",
+      "old_shopHR": "allez.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "gin-ukiyo-japanese-yuzu-gin-40-vol-0-7l",
+      "name": "Ukiyo Japanese Yuzu Gin 40% Vol. 0,7l",
+      "score": 0.75,
+      "drinx_name": "Gin Japanese Yuzu Ukiyo 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-japanese-yuzu-ukiyo-07-l-12263",
+      "drinx_price": 39.99,
+      "old_priceUrl": "https://allez.hr/shop/svi-proizvodi/ukiyo-japanese-yuzu-gin-40-vol-07l",
+      "old_shopHR": "allez.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "gin-brooklyn-small-batch-gin-40-0-7-l",
+      "name": "Brooklyn Small Batch Gin 40%  0,7 L",
+      "score": 0.75,
+      "drinx_name": "Gin Brooklyn Small Batch 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-brooklyn-small-batch-07-l-917",
+      "drinx_price": 46.78,
+      "old_priceUrl": "https://allez.hr/shop/svi-proizvodi/brooklyn-gin-small-batch-40-07-l",
+      "old_shopHR": "allez.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "gin-amuerte-coca-leaf-red-edition",
+      "name": "AMUERTE COCA LEAF - RED EDITION",
+      "score": 0.75,
+      "drinx_name": "Gin Amuerte Coca Red 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-amuerte-coca-red-07-l-2754",
+      "drinx_price": 83.36,
+      "old_priceUrl": "https://ecuga.com/proizvod/amuerte-coca-leaf-red-edition",
+      "old_shopHR": "ecuga.com",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "gin-sipsmith-london-dry-gin-41-6-0-7-l",
+      "name": "Sipsmith London Dry Gin 41,6% 0,7 l",
+      "score": 0.75,
+      "drinx_name": "Gin Sipsmith London Dry 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-sipsmith-london-dry-07-l-3051",
+      "drinx_price": 31.63,
+      "old_priceUrl": "https://allez.hr/shop/svi-proizvodi/sipsmith-london-dry-gin-416-07-l",
+      "old_shopHR": "allez.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "gin-etsu-double-orange-gin-43-vol-0-7l-u-poklon-kutiji",
+      "name": "Etsu DOUBLE ORANGE Gin 43% Vol. 0,7l u poklon kutiji",
+      "score": 0.75,
+      "drinx_name": "Gin Double Orange Limited Etsu + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-double-orange-limited-etsu-gb-07-l-4166",
+      "drinx_price": 40.88,
+      "old_priceUrl": "https://allez.hr/shop/svi-proizvodi/etsu-gin-double-orange-limited-edition-43-vol-07l-u-poklon-kutiji",
+      "old_shopHR": "allez.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "gin-etsu-double-yuzu-gin-43-vol-0-7l-u-poklon-kutiji",
+      "name": "Etsu DOUBLE YUZU Gin 43% Vol. 0,7l u poklon kutiji",
+      "score": 0.75,
+      "drinx_name": "Gin Double Yuzu Etsu + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-double-yuzu-etsu-gb-07-l-5916",
+      "drinx_price": 51.13,
+      "old_priceUrl": "https://allez.hr/shop/svi-proizvodi/etsu-gin-double-yuzu-limited-edition-43-vol-07l-u-poklon-kutiji",
+      "old_shopHR": "allez.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "gin-few-barrel-aged-gin-46-5-vol-0-7-l",
+      "name": "FEW Barrel Aged Gin 46,5% Vol. 0,7 l",
+      "score": 0.75,
+      "drinx_name": "Gin Few Barrel Aged 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-few-barrel-aged-07-l-6068",
+      "drinx_price": 63.58,
+      "old_priceUrl": "https://allez.hr/shop/svi-proizvodi/few-barrel-aged-gin-465-vol-07-l",
+      "old_shopHR": "allez.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "gin-mombasa-club-lemon-edition-gin-37-5-vol-0-7l",
+      "name": "Mombasa Club Lemon Edition Gin 37,5% Vol. 0,7l",
+      "score": 0.75,
+      "drinx_name": "Gin Club Mombasa Lemon Edition 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-club-mombasa-lemon-edition-07-l-6131",
+      "drinx_price": 28.86,
+      "old_priceUrl": "https://allez.hr/shop/svi-proizvodi/mombasa-club-lemon-edition-gin-375-vol-07l",
+      "old_shopHR": "allez.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "gin-bobby-039-s-schiedam-dry-gin-42-vol-0-7-l",
+      "name": "Bobby&#039;s Schiedam Dry Gin 42% Vol. 0,7 l",
+      "score": 0.75,
+      "drinx_name": "Gin Bobby's Schiedam Dry 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-bobbys-schiedam-dry-07-l-7679",
+      "drinx_price": 40.73,
+      "old_priceUrl": "https://allez.hr/shop/svi-proizvodi/bobbys-schiedam-dry-gin-42-vol-07-l",
+      "old_shopHR": "allez.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "tq-don-julio-reposado",
+      "name": "DON JULIO REPOSADO",
+      "score": 0.75,
+      "drinx_name": "Tekila Don Julio Reposado + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-tekila-1392/tekila-don-julio-reposado-gb-07-l-643",
+      "drinx_price": 64.99,
+      "old_priceUrl": "https://allez.hr/shop/svi-proizvodi/don-julio-tequila-reposado-100-agave-38-vol-07l-u-poklon-kutiji",
+      "old_shopHR": "allez.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "tq-don-julio-blanco",
+      "name": "DON JULIO BLANCO",
+      "score": 0.75,
+      "drinx_name": "Tekila Don Julio Blanco + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-tekila-1392/tekila-don-julio-blanco-gb-07-l-2251",
+      "drinx_price": 59.9,
+      "old_priceUrl": "https://allez.hr/shop/svi-proizvodi/don-julio-tequila-blanco-100-agave-38-vol-07l-u-poklon-kutiji",
+      "old_shopHR": "allez.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "tq-don-julio-anejo",
+      "name": "DON JULIO ANEJO",
+      "score": 0.75,
+      "drinx_name": "Tekila Don Julio Anejo 0,7l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-tekila-1392/tekila-don-julio-anejo-07l-5669",
+      "drinx_price": 66.9,
+      "old_priceUrl": "https://allez.hr/shop/svi-proizvodi/don-julio-70-tequila-crystal-claro-anejo-70th-anniversary-limited-edition-35-vol-07l-u-poklon-kutiji",
+      "old_shopHR": "allez.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "br-martell-cordon-bleu",
+      "name": "Martell Cordon Bleu",
+      "score": 0.75,
+      "drinx_name": "Konjak Martell Cordon Bleu + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-martell-cordon-bleu-gb-07-l-1734",
+      "drinx_price": 189.9,
+      "old_priceUrl": "https://allez.hr/shop/svi-proizvodi/martell-cognac-cordon-bleu",
+      "old_shopHR": "allez.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "br-martell-chanteloup-xxo",
+      "name": "Martell Chanteloup Xxo",
+      "score": 0.75,
+      "drinx_name": "Konjak Martell Chanteloup XXO + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-martell-chanteloup-xxo-gb-07-l-7601",
+      "drinx_price": 489.9,
+      "old_priceUrl": "https://ecuga.com/proizvod/martell-chanteloup-xxo",
+      "old_shopHR": "ecuga.com",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "br-remy-martin-xo",
+      "name": "Rémy Martin XO",
+      "score": 0.75,
+      "drinx_name": "Konjak Remy Martin XO + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-remy-martin-xo-gb-07-l-8153",
+      "drinx_price": 179.9,
+      "old_priceUrl": "https://allez.hr/shop/svi-proizvodi/remy-martin-xo-extra-old-cognac-fine-champagne-40-vol-07l-u-poklon-kutiji",
+      "old_shopHR": "allez.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "br-camus-vsop-borderies",
+      "name": "Camus VSOP Borderies",
+      "score": 0.75,
+      "drinx_name": "Konjak Camus VSOP Borderies Single Estate 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-camus-vsop-borderies-single-estate-07-l-5042",
+      "drinx_price": 57.44,
+      "old_priceUrl": "https://allez.hr/shop/svi-proizvodi/camus-vsop-borderies-single-estate-cognac-40-vol-07l-u-poklon-kutiji",
+      "old_shopHR": "allez.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "br-janneau-xo-grand-armagnac-40-vol-0-7l-gb",
+      "name": "Janneau XO Grand Armagnac 40% Vol. 0,7l + GB",
+      "score": 0.75,
+      "drinx_name": "Armagnac Grand XO Janneau + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-armagnac-1374/armagnac-grand-xo-janneau-gb-07-l-8567",
+      "drinx_price": 69.6,
+      "old_priceUrl": "https://allez.hr/shop/svi-proizvodi/janneau-xo-grand-armagnac-40-vol-07l-gb",
+      "old_shopHR": "allez.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "rum-opthimus-21-magna-cum-laude",
+      "name": "Opthimus 21 Magna Cum Laude",
+      "score": 0.714,
+      "drinx_name": "Rum Opthimus 21 Sistema Solera Magna Cum Laude + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-opthimus-21-sistema-solera-magna-cum-laude-gb-07-l-6286",
+      "drinx_price": 67.8,
+      "old_priceUrl": "https://allez.hr/shop/svi-proizvodi/opthimus-21-anos-magna-cum-laude-38-vol-07l-u-poklon-kutiji",
+      "old_shopHR": "allez.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "wh-johnnie-walker-green-label-15-yo-43-vol-0-7l-u-poklon-kutiji",
+      "name": "Johnnie Walker Green Label 15 YO",
+      "score": 0.714,
+      "drinx_name": "Škotski viski Johnnie Walker Green Label 15 Years Old + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-johnnie-walker-green-label-15-years-old-gb-07-l-12272",
+      "drinx_price": 59.8,
+      "old_priceUrl": "https://allez.hr/shop/svi-proizvodi/johnnie-walker-green-label-15-years-old-43-vol-07l-u-poklon-kutiji",
+      "old_shopHR": "allez.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "wh-kavalan-solist-oloroso-sherry-cask-single-malt-whisky-54-8-vol-0-7l-u-poklon-kutiji",
+      "name": "Kavalan SOLIST OLOROSO SHERRY CASK",
+      "score": 0.714,
+      "drinx_name": "Tajvanski viski Solist Oloroso Sherry cask Kavalan + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-viski-1364/tajvanski-viski-solist-oloroso-sherry-cask-kavalan-gb-07-l-1116",
+      "drinx_price": 143.44,
+      "old_priceUrl": "https://allez.hr/shop/svi-proizvodi/kavalan-solist-oloroso-sherry-cask-548-vol-07l-u-poklon-kutiji",
+      "old_shopHR": "allez.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "wh-kavalan-solist-fino-sherry-cask-single-malt-whisky-57-8-vol-0-7-l-u-drvenoj-poklon-kutiji",
+      "name": "Kavalan SOLIST FINO SHERRY CASK",
+      "score": 0.714,
+      "drinx_name": "Tajvanski viski Solist FINO Sherry cask Kavalan + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-viski-1364/tajvanski-viski-solist-fino-sherry-cask-kavalan-gb-07-l-2029",
+      "drinx_price": 307.27,
+      "old_priceUrl": "https://allez.hr/shop/svi-proizvodi/kavalan-solist-fino-sherry-cask-single-malt-whisky-578-vol-07-l-u-drvenoj-poklon-kutiji",
+      "old_shopHR": "allez.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "wh-highland-park-12-yo-viking-honour-single-malt-scotch-whisky-40-vol-0-7l-u-poklon-kutiji",
+      "name": "Highland Park 12 YO VIKING HONOUR",
+      "score": 0.714,
+      "drinx_name": "Škotski viski Highland Park 12 Viking Honour + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-highland-park-12-viking-honour-gb-07-l-2282",
+      "drinx_price": 51.13,
+      "old_priceUrl": "https://allez.hr/shop/svi-proizvodi/highland-park-12-years-old-viking-honour-single-malt-scotch-whisky-40-vol-07l-u-poklon-kutiji",
+      "old_shopHR": "allez.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "wh-highland-park-18-yo-viking-pride-single-malt-scotch-whisky-46-vol-0-7l-u-poklon-kutiji",
+      "name": "Highland Park 18 YO VIKING PRIDE",
+      "score": 0.714,
+      "drinx_name": "Škotski viski Highland Park 18 VIKING PRIDE + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-highland-park-18-viking-pride-gb-07-l-6203",
+      "drinx_price": 144.9,
+      "old_priceUrl": "https://allez.hr/shop/svi-proizvodi/highland-park-18-years-old-viking-pride-single-malt-scotch-whisky-46-vol-07l-in-giftbox",
+      "old_shopHR": "allez.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "wh-highland-park-10-yo-viking-scars-single-malt-scotch-whisky-40-vol-0-7l-u-poklon-kutiji",
+      "name": "Highland Park 10 YO VIKING SCARS",
+      "score": 0.714,
+      "drinx_name": "Škotski viski Highland Park 10 VIKING SCARS + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-highland-park-10-viking-scars-gb-07-l-8183",
+      "drinx_price": 51.13,
+      "old_priceUrl": "https://allez.hr/shop/svi-proizvodi/highland-park-10-years-old-viking-scars-single-malt-scotch-whisky-40-vol-07l-u-poklon-kutiji",
+      "old_shopHR": "allez.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "gin-the-botanist-islay-dry-gin-46-vol-0-7l",
+      "name": "The Botanist Islay",
+      "score": 0.712,
+      "drinx_name": "Gin Botanist Islay Dry 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-botanist-islay-dry-07-l-2525",
+      "drinx_price": 41.39,
+      "old_priceUrl": "https://allez.hr/shop/svi-proizvodi/the-botanist-07-l",
+      "old_shopHR": "allez.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "wh-johnnie-walker-black-label-triple-cask",
+      "name": "Johnnie Walker Black Label Triple Cask",
+      "score": 0.7,
+      "drinx_name": "Škotski viski Johnnie Walker Black Label Triple Cask Edition + GB 1 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-johnnie-walker-black-label-triple-cask-edition-gb-1-l-6143",
+      "drinx_price": 45.0,
+      "old_priceUrl": "https://ecuga.com/proizvod/johnnie-walker-black-label-triple-cask",
+      "old_shopHR": "ecuga.com",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "wh-suntory-hibiki-21-yo-blended-japanese-whisky-43-vol-0-7l-u-poklon-kutiji",
+      "name": "Suntory Hibiki 21 YO Blended",
+      "score": 0.68,
+      "drinx_name": "Japanski Whisky Hibiki 21 YO Suntory + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-viski-1364/japanski-whisky-hibiki-21-yo-suntory-gb-07-l-2795",
+      "drinx_price": 1.25,
+      "old_priceUrl": "https://allez.hr/shop/svi-proizvodi/suntory-hibiki-21-yo-blended-japanese-whisky-43-vol-07l",
+      "old_shopHR": "allez.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "rum-ron-abuelo-anejo",
+      "name": "Ron Abuelo Añejo",
+      "score": 0.667,
+      "drinx_name": "Rum Anejo 7y Abuelo 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-anejo-7y-abuelo-07-l-955",
+      "drinx_price": 23.99,
+      "old_priceUrl": "https://ecuga.com/proizvod/abuelo-anejo",
+      "old_shopHR": "ecuga.com",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "rum-appleton-estate-21",
+      "name": "Appleton Estate 21 YO Rare Limited Edition",
+      "score": 0.667,
+      "drinx_name": "Rum Appleton Estate 21 + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-appleton-estate-21-gb-07-l-5348",
+      "drinx_price": 174.9,
+      "old_priceUrl": "https://allez.hr/shop/svi-proizvodi/appleton-estate-21-yo-rare-limited-edition-43-07-l-u-poklon-kutiji",
+      "old_shopHR": "allez.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "rum-bumbu-xo",
+      "name": "Bumbu XO",
+      "score": 0.667,
+      "drinx_name": "Rum XO Handcrafted Bumbu + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-xo-handcrafted-bumbu-gb-07-l-5515",
+      "drinx_price": 47.99,
+      "old_priceUrl": "https://ecuga.com/proizvod/bumbu-xo",
+      "old_shopHR": "ecuga.com",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "rum-a-h-riise-xo",
+      "name": "A.H. Riise XO",
+      "score": 0.667,
+      "drinx_name": "Rum Copenhagen 1888 XO A.H. Riise + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-copenhagen-1888-xo-ah-riise-gb-07-l-6517",
+      "drinx_price": 49.9,
+      "old_priceUrl": "https://allez.hr/shop/svi-proizvodi/ah-riise-1888-copenhagen-xo-superior-spirit-drink-40-vol-07l-u-poklon-kutiji",
+      "old_shopHR": "allez.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "wh-four-roses-small-batch",
+      "name": "Four Roses Small Batch",
+      "score": 0.667,
+      "drinx_name": "Američki viski Four Roses Small batch 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-viski-1364/americki-viski-four-roses-small-batch-07-l-224",
+      "drinx_price": 32.99,
+      "old_priceUrl": "https://ecuga.com/proizvod/four-roses-small-batch",
+      "old_shopHR": "ecuga.com",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "wh-the-macallan-12-yo-double-cask-40-vol-0-7l-u-poklon-kutiji",
+      "name": "The Macallan 12 YO DOUBLE CASK",
+      "score": 0.667,
+      "drinx_name": "Škotski viski 12 Years Old DOUBLE CASK Macallan + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-12-years-old-double-cask-macallan-gb-07-l-599",
+      "drinx_price": 133.1,
+      "old_priceUrl": "https://allez.hr/shop/svi-proizvodi/the-macallan-12-yo-double-cask-highland-single-malt-scotch-whisky-40-vol-07l-u-poklon-kutiji",
+      "old_shopHR": "allez.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "wh-johnnie-walker-red-label",
+      "name": "Johnnie Walker Red Label",
+      "score": 0.667,
+      "drinx_name": "Škotski viski Johnnie Walker Red Label Whisky GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-johnnie-walker-red-label-whisky-gb-07-l-2869",
+      "drinx_price": 20.39,
+      "old_priceUrl": "https://ecuga.com/proizvod/johnnie-walker-red-label",
+      "old_shopHR": "ecuga.com",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "wh-suntory-hibiki-japanese-harmony-43-vol-0-7l-u-poklon-kutiji",
+      "name": "Suntory Hibiki Japanese Harmony",
+      "score": 0.667,
+      "drinx_name": "Japanski viski Suntory Hibiki Japanese Harmony + GB 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-viski-1364/japanski-viski-suntory-hibiki-japanese-harmony-gb-07-l-1576",
+      "drinx_price": 119.9,
+      "old_priceUrl": "https://allez.hr/shop/svi-proizvodi/suntory-hibiki-japanese-harmony-43-vol-07l-u-poklon-kutiji",
+      "old_shopHR": "allez.hr",
+      "action": "skip_has_product"
+    },
+    {
+      "id": "wh-johnnie-walker-black-ruby",
+      "name": "Johnnie Walker Black Ruby",
+      "score": 0.667,
+      "drinx_name": "Škotski viski Johnnie Walker Black Ruby 0,7 l",
+      "drinx_url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-johnnie-walker-black-ruby-07-l-1963",
+      "drinx_price": 39.99,
+      "old_priceUrl": "https://ecuga.com/proizvod/johnnie-walker-black-ruby",
+      "old_shopHR": "ecuga.com",
+      "action": "skip_has_product"
+    }
+  ],
+  "ambiguous_rows": [
+    {
+      "drinx": {
+        "name": "Rum La Hechicera No.2 + GB 0,7 l",
+        "price_eur": 64.99,
+        "shop": "drinx.hr",
+        "url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-la-hechicera-no2-gb-07-l-3171",
+        "source": "drinx",
+        "category": "rum"
+      },
+      "candidates": [
+        {
+          "id": "rum-la-hechicera-se-no-1",
+          "name": "La Hechicera SE No.1",
+          "score": 0.667
+        },
+        {
+          "id": "rum-no-2",
+          "name": "La Hechicera SE No.2",
+          "score": 0.667
+        }
+      ]
+    },
+    {
+      "drinx": {
+        "name": "Rum Flor de Cana 19 Y + GB 0,7 l",
+        "price_eur": 98.7,
+        "shop": "drinx.hr",
+        "url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-flor-de-cana-19-y-gb-07-l-3803",
+        "source": "drinx",
+        "category": "rum"
+      },
+      "candidates": [
+        {
+          "id": "rum-flor-de-cana-14",
+          "name": "Flor de Caña 14 YO",
+          "score": 0.5
+        },
+        {
+          "id": "rum-flor-de-cana-25",
+          "name": "Flor de Caña 25 YO",
+          "score": 0.5
+        },
+        {
+          "id": "rum-flor-de-cana-7-blanco-reserva",
+          "name": "Flor de Caña 7 YO Blanco Reserva",
+          "score": 0.5
+        },
+        {
+          "id": "rum-flor-de-cana-7-gran-reserva",
+          "name": "Flor de Caña 7 YO Gran Reserva",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "drinx": {
+        "name": "Rum Havana Club 3 YO 1 l",
+        "price_eur": 20.99,
+        "shop": "drinx.hr",
+        "url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-havana-club-3-yo-1-l-4542",
+        "source": "drinx",
+        "category": "rum"
+      },
+      "candidates": [
+        {
+          "id": "rum-havana-club-7-anos",
+          "name": "Havana Club 7 Anos",
+          "score": 0.667
+        },
+        {
+          "id": "rum-havana-club-especial",
+          "name": "Havana Club Especial",
+          "score": 0.667
+        },
+        {
+          "id": "rum-havana-club-original-3",
+          "name": "Havana Club Original 3",
+          "score": 0.667
+        },
+        {
+          "id": "rum-havana-club-tributo",
+          "name": "Havana Club Tributo",
+          "score": 0.667
+        }
+      ]
+    },
+    {
+      "drinx": {
+        "name": "Rum Ron Barcelo Imperial Dominicano + GB 0,7 l",
+        "price_eur": 30.99,
+        "shop": "drinx.hr",
+        "url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-ron-barcelo-imperial-dominicano-gb-07-l-5143",
+        "source": "drinx",
+        "category": "rum"
+      },
+      "candidates": [
+        {
+          "id": "rum-barcelo-imperial-onyx",
+          "name": "Barcelo Imperial Onyx",
+          "score": 0.5
+        },
+        {
+          "id": "rum-barcelo-imperial-standard",
+          "name": "Barcelo Imperial (standard)",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "drinx": {
+        "name": "Rum Havana Club 3YO 0,05 l",
+        "price_eur": 2.5,
+        "shop": "drinx.hr",
+        "url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-havana-club-3yo-005-l-6869",
+        "source": "drinx",
+        "category": "rum"
+      },
+      "candidates": [
+        {
+          "id": "rum-havana-club-7-anos",
+          "name": "Havana Club 7 Anos",
+          "score": 0.5
+        },
+        {
+          "id": "rum-havana-club-especial",
+          "name": "Havana Club Especial",
+          "score": 0.5
+        },
+        {
+          "id": "rum-havana-club-original-3",
+          "name": "Havana Club Original 3",
+          "score": 0.5
+        },
+        {
+          "id": "rum-havana-club-tributo",
+          "name": "Havana Club Tributo",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "drinx": {
+        "name": "Rum Havana Club 7 YO 0,7 l",
+        "price_eur": 28.99,
+        "shop": "drinx.hr",
+        "url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-havana-club-7-yo-07-l-8734",
+        "source": "drinx",
+        "category": "rum"
+      },
+      "candidates": [
+        {
+          "id": "rum-havana-club-7-anos",
+          "name": "Havana Club 7 Anos",
+          "score": 0.667
+        },
+        {
+          "id": "rum-havana-club-especial",
+          "name": "Havana Club Especial",
+          "score": 0.667
+        },
+        {
+          "id": "rum-havana-club-original-3",
+          "name": "Havana Club Original 3",
+          "score": 0.667
+        },
+        {
+          "id": "rum-havana-club-tributo",
+          "name": "Havana Club Tributo",
+          "score": 0.667
+        }
+      ]
+    },
+    {
+      "drinx": {
+        "name": "Rum Havana Club Cola 0,33 l",
+        "price_eur": 3.4,
+        "shop": "drinx.hr",
+        "url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-havana-club-cola-033-l-9718",
+        "source": "drinx",
+        "category": "rum"
+      },
+      "candidates": [
+        {
+          "id": "rum-havana-club-15yo",
+          "name": "Havana Club 15yo",
+          "score": 0.5
+        },
+        {
+          "id": "rum-havana-club-7-anos",
+          "name": "Havana Club 7 Anos",
+          "score": 0.5
+        },
+        {
+          "id": "rum-havana-club-especial",
+          "name": "Havana Club Especial",
+          "score": 0.5
+        },
+        {
+          "id": "rum-havana-club-original-3",
+          "name": "Havana Club Original 3",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "drinx": {
+        "name": "Rum Ron Solera 1893 Anejo Botran + GB 0,7 l",
+        "price_eur": 43.55,
+        "shop": "drinx.hr",
+        "url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-ron-solera-1893-anejo-botran-gb-07-l-2524",
+        "source": "drinx",
+        "category": "rum"
+      },
+      "candidates": [
+        {
+          "id": "rum-botran-12",
+          "name": "Botran Añejo 12 Solera",
+          "score": 0.75
+        },
+        {
+          "id": "rum-botran-18-solera",
+          "name": "Botran Añejo 18 Solera 1893",
+          "score": 0.75
+        },
+        {
+          "id": "rum-botran-1893-decanter",
+          "name": "Botran Solera 1893 Decanter",
+          "score": 0.5
+        },
+        {
+          "id": "rum-botran-oro",
+          "name": "Botran Añejo Oro",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "drinx": {
+        "name": "Rum RESERVA Kirk and Sweeney 0,7 l",
+        "price_eur": 41.7,
+        "shop": "drinx.hr",
+        "url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-reserva-kirk-and-sweeney-07-l-4237",
+        "source": "drinx",
+        "category": "rum"
+      },
+      "candidates": [
+        {
+          "id": "rum-kirk-sweeney-18",
+          "name": "Kirk and Sweeney 18 Reserva",
+          "score": 0.667
+        },
+        {
+          "id": "rum-kirk-sweeney-23",
+          "name": "Kirk and Sweeney 23 Reserva",
+          "score": 0.667
+        },
+        {
+          "id": "rum-kirk-sweeney-gran-reserva",
+          "name": "Kirk and Sweeney Gran Reserva",
+          "score": 0.667
+        },
+        {
+          "id": "rum-kirk-sweeney-gran-reserva-superior",
+          "name": "Kirk and Sweeney Gran Reserva Superior",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "drinx": {
+        "name": "Rum Havana Club 3 YO 0,7 l",
+        "price_eur": 20.39,
+        "shop": "drinx.hr",
+        "url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-havana-club-3-yo-07-l-6837",
+        "source": "drinx",
+        "category": "rum"
+      },
+      "candidates": [
+        {
+          "id": "rum-havana-club-7-anos",
+          "name": "Havana Club 7 Anos",
+          "score": 0.667
+        },
+        {
+          "id": "rum-havana-club-especial",
+          "name": "Havana Club Especial",
+          "score": 0.667
+        },
+        {
+          "id": "rum-havana-club-original-3",
+          "name": "Havana Club Original 3",
+          "score": 0.667
+        },
+        {
+          "id": "rum-havana-club-tributo",
+          "name": "Havana Club Tributo",
+          "score": 0.667
+        }
+      ]
+    },
+    {
+      "drinx": {
+        "name": "Rum Gran Reserva Anejo XO 0,7 l",
+        "price_eur": 40.0,
+        "shop": "drinx.hr",
+        "url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-gran-reserva-anejo-xo-07-l-11975",
+        "source": "drinx",
+        "category": "rum"
+      },
+      "candidates": [
+        {
+          "id": "rum-barcelo-gran-anejo",
+          "name": "Barcelo Gran Anejo",
+          "score": 0.5
+        },
+        {
+          "id": "rum-don-q-gran-anejo",
+          "name": "Don Q Gran Anejo",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "drinx": {
+        "name": "Škotski viski Johnnie Walker Blue Label YEAR OF THE Horse 2025 + GB 0,7 l",
+        "price_eur": 349.8,
+        "shop": "drinx.hr",
+        "url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-johnnie-walker-blue-label-year-of-the-horse-2025-gb-07-l-10349",
+        "source": "drinx",
+        "category": "whisky"
+      },
+      "candidates": [
+        {
+          "id": "wh-johnnie-walker-blue-label-year-of-the-rabbit-2022-40-vol-0-7l-u-poklon-kutiji",
+          "name": "Johnnie Walker Blue Label YEAR OF THE RABBIT 2022",
+          "score": 0.556
+        },
+        {
+          "id": "wh-johnnie-walker-blue-label-year-of-the-snake-2025-40-vol-0-7l-u-poklon-kutiji",
+          "name": "Johnnie Walker Blue Label YEAR OF THE SNAKE 2025",
+          "score": 0.556
+        },
+        {
+          "id": "wh-johnnie-walker-blue-label-blended-scotch-whisky-40-vol-0-7l-u-poklon-kutiji",
+          "name": "Johnnie Walker Blue Label",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "drinx": {
+        "name": "Američki viski Jack Daniel's Honey 0,7 l",
+        "price_eur": 26.99,
+        "shop": "drinx.hr",
+        "url": "https://drinx.hr/shop/zestoka-pica-viski-1364/americki-viski-jack-daniels-honey-07-l-2741",
+        "source": "drinx",
+        "category": "whisky"
+      },
+      "candidates": [
+        {
+          "id": "wh-jack-daniel-039-s-honey-liqueur-35-vol-0-7l",
+          "name": "Jack Daniel's Honey Liqueur",
+          "score": 0.6
+        },
+        {
+          "id": "wh-jack-daniel-s-honey",
+          "name": "Jack Daniel's Honey",
+          "score": 0.6
+        }
+      ]
+    },
+    {
+      "drinx": {
+        "name": "Gin Aviation 0,7 l",
+        "price_eur": 33.71,
+        "shop": "drinx.hr",
+        "url": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-aviation-07-l-5347",
+        "source": "drinx",
+        "category": "gin"
+      },
+      "candidates": [
+        {
+          "id": "gin-aviation",
+          "name": "AVIATION",
+          "score": 1.0
+        },
+        {
+          "id": "gin-aviation-gin",
+          "name": "Aviation Gin",
+          "score": 1.0
+        }
+      ]
+    },
+    {
+      "drinx": {
+        "name": "Gin Drumshanbo Gunpowder 0,7 l",
+        "price_eur": 35.76,
+        "shop": "drinx.hr",
+        "url": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-drumshanbo-gunpowder-07-l-7112",
+        "source": "drinx",
+        "category": "gin"
+      },
+      "candidates": [
+        {
+          "id": "gin-drumshanbo-gunpowder-irish-gin-43-vol-0-7l",
+          "name": "Drumshanbo Gunpowder Irish Gin 43% Vol. 0,7l",
+          "score": 0.5
+        },
+        {
+          "id": "gin-drumshanbo-gunpowder-californian-orange",
+          "name": "DRUMSHANBO GUNPOWDER CALIFORNIAN ORANGE",
+          "score": 0.5
+        },
+        {
+          "id": "gin-drumshanbo-gunpowder-keramicka-boca",
+          "name": "DRUMSHANBO GUNPOWDER KERAMIČKA BOCA",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "drinx": {
+        "name": "Gin Orange Kiss Brockmans 0,7 l",
+        "price_eur": 39.8,
+        "shop": "drinx.hr",
+        "url": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-orange-kiss-brockmans-07-l-12217",
+        "source": "drinx",
+        "category": "gin"
+      },
+      "candidates": [
+        {
+          "id": "gin-brockman-s-orange-kiss",
+          "name": "BROCKMAN'S ORANGE KISS",
+          "score": 0.5
+        },
+        {
+          "id": "gin-brockmans-intensly-smooth-orange-kiss-gin-40-vol-0-7l",
+          "name": "Brockmans Intensly Smooth ORANGE KISS GIN 40% Vol. 0,7l",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "drinx": {
+        "name": "Gin Opihr Oriental Spiced London Dry 1 l",
+        "price_eur": 35.76,
+        "shop": "drinx.hr",
+        "url": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-opihr-oriental-spiced-london-dry-1-l-6041",
+        "source": "drinx",
+        "category": "gin"
+      },
+      "candidates": [
+        {
+          "id": "gin-opihr-oriental-spiced-london-dry-gin-42-5-vol-0-7l-in-giftbox-with-travel-mug",
+          "name": "Opihr ORIENTAL SPICED London Dry Gin 42,5% Vol. 0,7l in Giftbox with Travel Mug",
+          "score": 0.5
+        },
+        {
+          "id": "gin-opihr-oriental-spiced-gin-42-5-0-7-l",
+          "name": "OPIHR Oriental Spiced Gin 42,5% 0,7 l",
+          "score": 0.5
+        },
+        {
+          "id": "gin-opihr-london-dry-gin-arabian-edition-43-vol-0-7l",
+          "name": "Opihr London Dry Gin ARABIAN EDITION 43% Vol. 0,7l",
+          "score": 0.429
+        },
+        {
+          "id": "gin-opihr-london-dry-gin-european-edition-43-vol-0-7l",
+          "name": "Opihr London Dry Gin EUROPEAN EDITION 43% Vol. 0,7l",
+          "score": 0.429
+        }
+      ]
+    },
+    {
+      "drinx": {
+        "name": "Gin Opihr London Dry 0,7 l",
+        "price_eur": 29.61,
+        "shop": "drinx.hr",
+        "url": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-opihr-london-dry-07-l-6985",
+        "source": "drinx",
+        "category": "gin"
+      },
+      "candidates": [
+        {
+          "id": "gin-opihr-london-dry-gin-arabian-edition-43-vol-0-7l",
+          "name": "Opihr London Dry Gin ARABIAN EDITION 43% Vol. 0,7l",
+          "score": 0.6
+        },
+        {
+          "id": "gin-opihr-london-dry-gin-european-edition-43-vol-0-7l",
+          "name": "Opihr London Dry Gin EUROPEAN EDITION 43% Vol. 0,7l",
+          "score": 0.6
+        },
+        {
+          "id": "gin-opihr-london-dry-gin-far-east-edition-43-vol-0-7l",
+          "name": "Opihr London Dry Gin FAR EAST EDITION 43% Vol. 0,7l",
+          "score": 0.5
+        }
+      ]
+    },
+    {
+      "drinx": {
+        "name": "Gin Opihr Oriental Spiced London Dry 0,7 l",
+        "price_eur": 35.76,
+        "shop": "drinx.hr",
+        "url": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-opihr-oriental-spiced-london-dry-07-l-9082",
+        "source": "drinx",
+        "category": "gin"
+      },
+      "candidates": [
+        {
+          "id": "gin-opihr-oriental-spiced-london-dry-gin-42-5-vol-0-7l-in-giftbox-with-travel-mug",
+          "name": "Opihr ORIENTAL SPICED London Dry Gin 42,5% Vol. 0,7l in Giftbox with Travel Mug",
+          "score": 0.5
+        },
+        {
+          "id": "gin-opihr-oriental-spiced-gin-42-5-0-7-l",
+          "name": "OPIHR Oriental Spiced Gin 42,5% 0,7 l",
+          "score": 0.5
+        },
+        {
+          "id": "gin-opihr-london-dry-gin-arabian-edition-43-vol-0-7l",
+          "name": "Opihr London Dry Gin ARABIAN EDITION 43% Vol. 0,7l",
+          "score": 0.429
+        },
+        {
+          "id": "gin-opihr-london-dry-gin-european-edition-43-vol-0-7l",
+          "name": "Opihr London Dry Gin EUROPEAN EDITION 43% Vol. 0,7l",
+          "score": 0.429
+        }
+      ]
+    },
+    {
+      "drinx": {
+        "name": "Konjak Remy Martin V.S.O.P. 0,7 l",
+        "price_eur": 66.5,
+        "shop": "drinx.hr",
+        "url": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-remy-martin-vsop-07-l-4510",
+        "source": "drinx",
+        "category": "cognac"
+      },
+      "candidates": [
+        {
+          "id": "br-remy-martin-xo",
+          "name": "Rémy Martin XO",
+          "score": 0.5
+        },
+        {
+          "id": "br-remy-martin-vsop",
+          "name": "Rémy Martin VSOP",
+          "score": 0.5
+        }
+      ]
+    }
+  ],
+  "candidate_new_rows": [
+    {
+      "name": "Rum Dictador 2 MASTERS Leclerc Briant 1980 + GB 0,7 l",
+      "price_eur": 998.5,
+      "url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-dictador-2-masters-leclerc-briant-1980-gb-07-l-12375",
+      "category": "rum"
+    },
+    {
+      "name": "Rum Dictador 2 MASTERS 1976 45 Years Old Ximénez-Spínola 1st Release + GB 0,7 l",
+      "price_eur": 989.9,
+      "url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-dictador-2-masters-1976-45-years-old-ximenez-spinola-1st-release-gb-07-l-8707",
+      "category": "rum"
+    },
+    {
+      "name": "Rum Dictador 2 MASTERS 1971/1974/1978/1980 Niepoort Port Pipe Finish 2021 + GB 0,7 l",
+      "price_eur": 983.46,
+      "url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-dictador-2-masters-1971197419781980-niepoort-port-pipe-finish-2021-gb-07-l-9216",
+      "category": "rum"
+    },
+    {
+      "name": "Škotski viski Cadenhead's Bruichladdich 25 Year Old 1968 0,7 l",
+      "price_eur": 973.36,
+      "url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-cadenheads-bruichladdich-25-year-old-1968-07-l-4266",
+      "category": "whisky"
+    },
+    {
+      "name": "Škotski viski Highland Park 24YO 1989 Carn Mor + GB 0,7 l",
+      "price_eur": 935.5,
+      "url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-highland-park-24yo-1989-carn-mor-gb-07-l-5217",
+      "category": "whisky"
+    },
+    {
+      "name": "Tekila Clase Azul Anejo + GB 0,7 l",
+      "price_eur": 929.9,
+      "url": "https://drinx.hr/shop/zestoka-pica-tekila-1392/tekila-clase-azul-anejo-gb-07-l-9569",
+      "category": "tequila"
+    },
+    {
+      "name": "Konjak D'Aincourt Extra + WB 0,7 l",
+      "price_eur": 872.33,
+      "url": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-daincourt-extra-wb-07-l-9222",
+      "category": "cognac"
+    },
+    {
+      "name": "Konjak Meukow ESPRIT de Famille + GB 0,7 l",
+      "price_eur": 870.9,
+      "url": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-meukow-esprit-de-famille-gb-07-l-8697",
+      "category": "cognac"
+    },
+    {
+      "name": "Škotski viski Specialty Drinks Laphroaig 20 Year Old 1996 0,7 l",
+      "price_eur": 870.9,
+      "url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-specialty-drinks-laphroaig-20-year-old-1996-07-l-5619",
+      "category": "whisky"
+    },
+    {
+      "name": "Američki viski Blanton's Single Barrel Dumped 2019 64,50% + GB 0,7 l",
+      "price_eur": 856.14,
+      "url": "https://drinx.hr/shop/zestoka-pica-viski-1364/americki-viski-blantons-single-barrel-dumped-2019-6450-gb-07-l-5496",
+      "category": "whisky"
+    },
+    {
+      "name": "Američki viski Blanton's Single Barrel La Maison du Whisky 2019 46,5% + GB 0,7 l",
+      "price_eur": 852.86,
+      "url": "https://drinx.hr/shop/zestoka-pica-viski-1364/americki-viski-blantons-single-barrel-la-maison-du-whisky-2019-465-gb-07-l-9818",
+      "category": "whisky"
+    },
+    {
+      "name": "Rum Carupano Anejo 25y Legendario Single Barrel + GB 0,7 l",
+      "price_eur": 849.9,
+      "url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-carupano-anejo-25y-legendario-single-barrel-gb-07-l-2801",
+      "category": "rum"
+    },
+    {
+      "name": "Američki viski Eagle Rare 10y Silver Tube Limited Old Kentucky Straight Bourbon + GB 0,7 l",
+      "price_eur": 816.1,
+      "url": "https://drinx.hr/shop/zestoka-pica-viski-1364/americki-viski-eagle-rare-10y-silver-tube-limited-old-kentucky-straight-bourbon-gb-07-l-7930",
+      "category": "whisky"
+    },
+    {
+      "name": "Škotski viski The Dalmore 20 Years 2024 Edition + GB 0,7 l",
+      "price_eur": 784.3,
+      "url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-the-dalmore-20-years-2024-edition-gb-07-l-12298",
+      "category": "whisky"
+    },
+    {
+      "name": "Irski viski Redbreast 27Y Ruby Port Cask + GB 0,7 l",
+      "price_eur": 764.04,
+      "url": "https://drinx.hr/shop/zestoka-pica-viski-1364/irski-viski-redbreast-27y-ruby-port-cask-gb-07-l-3530",
+      "category": "whisky"
+    },
+    {
+      "name": "Škotski viski The Balvenie Tun 1509 Batch #1 + GB 0,7 l",
+      "price_eur": 755.13,
+      "url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-the-balvenie-tun-1509-batch-1-gb-07-l-2940",
+      "category": "whisky"
+    },
+    {
+      "name": "Škotski viski Glenfiddich 26 YO GRANDE COURONNE + GB 0,7 l",
+      "price_eur": 726.44,
+      "url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-glenfiddich-26-yo-grande-couronne-gb-07-l-6647",
+      "category": "whisky"
+    },
+    {
+      "name": "Škotski viski Bowmore Single Malt The Devil's Cask + GB 0,7 l",
+      "price_eur": 650.0,
+      "url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-bowmore-single-malt-the-devils-cask-gb-07-l-3054",
+      "category": "whisky"
+    },
+    {
+      "name": "Škotski viski Macallan Maker's edition Single Malt + GB 0,7 l",
+      "price_eur": 650.0,
+      "url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-macallan-makers-edition-single-malt-gb-07-l-2990",
+      "category": "whisky"
+    },
+    {
+      "name": "Konjak D'Aincourt Extra 0,7 l",
+      "price_eur": 634.75,
+      "url": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-daincourt-extra-07-l-1666",
+      "category": "cognac"
+    },
+    {
+      "name": "Škotski viski Macallan CONCEPT N° 2 Limited Edition 2019 + GB 0,7 l",
+      "price_eur": 600.0,
+      "url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-macallan-concept-n-2-limited-edition-2019-gb-07-l-12003",
+      "category": "whisky"
+    },
+    {
+      "name": "Škotski viski Signatory Vintage 1982 Single Grain + GB 0,7 l",
+      "price_eur": 600.0,
+      "url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-signatory-vintage-1982-single-grain-gb-07-l-9455",
+      "category": "whisky"
+    },
+    {
+      "name": "Škotski viski The Glenrothes 25 YO + GB 0,7 l",
+      "price_eur": 599.9,
+      "url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-the-glenrothes-25-yo-gb-07-l-3633",
+      "category": "whisky"
+    },
+    {
+      "name": "Škotski viski Longmorn 23 YO 0,7 l",
+      "price_eur": 583.91,
+      "url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-longmorn-23-yo-07-l-4807",
+      "category": "whisky"
+    },
+    {
+      "name": "Škotski viski Macallan 18y DOUBLE CASK 2025 + GB 0,7 l",
+      "price_eur": 569.9,
+      "url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-macallan-18y-double-cask-2025-gb-07-l-7604",
+      "category": "whisky"
+    },
+    {
+      "name": "Škotski viski Bruichladdich Black Art 24y Edition + GB 0,7 l",
+      "price_eur": 563.42,
+      "url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-bruichladdich-black-art-24y-edition-gb-07-l-5795",
+      "category": "whisky"
+    },
+    {
+      "name": "Rum JERARQUiA 38 Years Old 1982 Dictador + GB 0,7 l",
+      "price_eur": 562.4,
+      "url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-jerarquia-38-years-old-1982-dictador-gb-07-l-4634",
+      "category": "rum"
+    },
+    {
+      "name": "Škotski viski Johnnie Walker & Sons King George V Blended + GB 0,7 l",
+      "price_eur": 560.0,
+      "url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-johnnie-walker-sons-king-george-v-blended-gb-07-l-246",
+      "category": "whisky"
+    },
+    {
+      "name": "Konjak Martell Cohiba Grande Champagne + GB 0,7 l",
+      "price_eur": 553.17,
+      "url": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-martell-cohiba-grande-champagne-gb-07-l-3370",
+      "category": "cognac"
+    },
+    {
+      "name": "Škotski viski Bruichladdich Black Art 1992 + GB 0,7 l",
+      "price_eur": 549.9,
+      "url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-bruichladdich-black-art-1992-gb-07-l-12029",
+      "category": "whisky"
+    },
+    {
+      "name": "Škotski viski ENIGMA Highland Single Malt Macallan + GB 0,7 l",
+      "price_eur": 549.9,
+      "url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-enigma-highland-single-malt-macallan-gb-07-l-9999",
+      "category": "whisky"
+    },
+    {
+      "name": "Škotski viski Macallan Rare Cask Black + GB 0,7 l",
+      "price_eur": 549.9,
+      "url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-macallan-rare-cask-black-gb-07-l-7740",
+      "category": "whisky"
+    },
+    {
+      "name": "Škotski viski Longmorn 23y Double cask + GB 0,7 l",
+      "price_eur": 545.02,
+      "url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-longmorn-23y-double-cask-gb-07-l-1558",
+      "category": "whisky"
+    },
+    {
+      "name": "Rum BEST OF 1975 ALTISIMO Dictador + GB 0,7 l",
+      "price_eur": 523.99,
+      "url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-best-of-1975-altisimo-dictador-gb-07-l-5640",
+      "category": "rum"
+    },
+    {
+      "name": "Rum JERARQUiA 37 Years Old 1983 + GB Dictador 0,7 l",
+      "price_eur": 501.95,
+      "url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-jerarquia-37-years-old-1983-gb-dictador-07-l-7170",
+      "category": "rum"
+    },
+    {
+      "name": "Škotski viski Bunnahabhain 25yo Single Malt + GB 0,7 l",
+      "price_eur": 501.95,
+      "url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-bunnahabhain-25yo-single-malt-gb-07-l-6229",
+      "category": "whisky"
+    },
+    {
+      "name": "Škotski viski Macallan EDITION N° 4 Highland Single Malt + GB 0,7 l",
+      "price_eur": 500.0,
+      "url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-macallan-edition-n-4-highland-single-malt-gb-07-l-1566",
+      "category": "whisky"
+    },
+    {
+      "name": "Škotski viski Old Pulteney 25y Single malt + GB 0,7 l",
+      "price_eur": 498.9,
+      "url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-old-pulteney-25y-single-malt-gb-07-l-12051",
+      "category": "whisky"
+    },
+    {
+      "name": "Škotski viski Talisker 25 Single Malt + GB 0,7 l",
+      "price_eur": 498.15,
+      "url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-talisker-25-single-malt-gb-07-l-9003",
+      "category": "whisky"
+    },
+    {
+      "name": "Škotski viski Royal Salute 25 godina Small Batch + GB 0,7 l",
+      "price_eur": 497.8,
+      "url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-royal-salute-25-godina-small-batch-gb-07-l-2769",
+      "category": "whisky"
+    },
+    {
+      "name": "Konjak Prince Polignac X.O. Extra Grande 0,7 l",
+      "price_eur": 495.48,
+      "url": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-prince-polignac-xo-extra-grande-07-l-5118",
+      "category": "cognac"
+    },
+    {
+      "name": "Rum Malecon 1976 Seleccion Esplendida staklena posuda + GB 0,7 l",
+      "price_eur": 482.59,
+      "url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-malecon-1976-seleccion-esplendida-staklena-posuda-gb-07-l-1961",
+      "category": "rum"
+    },
+    {
+      "name": "Škotski viski Macallan Rare cask release 2022 + GB 0,7 l",
+      "price_eur": 471.21,
+      "url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-macallan-rare-cask-release-2022-gb-07-l-2103",
+      "category": "whisky"
+    },
+    {
+      "name": "Armagnac Vieil Armagnac Delord Vintage 1965 + GB 0,7 l",
+      "price_eur": 471.11,
+      "url": "https://drinx.hr/shop/zestoka-pica-armagnac-1374/armagnac-vieil-armagnac-delord-vintage-1965-gb-07-l-9658",
+      "category": "armagnac"
+    },
+    {
+      "name": "Tekila Clase Azul Gold + GB 0,7 l",
+      "price_eur": 467.5,
+      "url": "https://drinx.hr/shop/zestoka-pica-tekila-1392/tekila-clase-azul-gold-gb-07-l-3897",
+      "category": "tequila"
+    },
+    {
+      "name": "Rum Don Pancho ORIGENES 30Y + GB 0,7 l",
+      "price_eur": 460.45,
+      "url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-don-pancho-origenes-30y-gb-07-l-6316",
+      "category": "rum"
+    },
+    {
+      "name": "Konjak Extra Abk6 + Box 0,7 l",
+      "price_eur": 457.94,
+      "url": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-extra-abk6-box-07-l-6958",
+      "category": "cognac"
+    },
+    {
+      "name": "Rum Facundo Paraiso XA + GB 0,7 l",
+      "price_eur": 450.71,
+      "url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-facundo-paraiso-xa-gb-07-l-5291",
+      "category": "rum"
+    },
+    {
+      "name": "Konjak Leyrat Glory Extra + GB 0,7 l",
+      "price_eur": 450.31,
+      "url": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-leyrat-glory-extra-gb-07-l-6763",
+      "category": "cognac"
+    },
+    {
+      "name": "Škotski viski Bruichladdich Black Art Edition 10.1 + GB 0,7 l",
+      "price_eur": 450.0,
+      "url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-bruichladdich-black-art-edition-101-gb-07-l-12016",
+      "category": "whisky"
+    },
+    {
+      "name": "Škotski viski Macallan CONCEPT N° 3 David Carson 2020 + GB 0,7 l",
+      "price_eur": 450.0,
+      "url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-macallan-concept-n-3-david-carson-2020-gb-07-l-12036",
+      "category": "whisky"
+    },
+    {
+      "name": "Škotski viski Ballantine's Finest 30y + GB 0,7 l",
+      "price_eur": 425.71,
+      "url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-ballantines-finest-30y-gb-07-l-7652",
+      "category": "whisky"
+    },
+    {
+      "name": "Škotski viski The Dalmore 2003 Vintage Highland Single Malt + GB 0,7 l",
+      "price_eur": 418.24,
+      "url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-the-dalmore-2003-vintage-highland-single-malt-gb-07-l-3622",
+      "category": "whisky"
+    },
+    {
+      "name": "Tekila Origen Codigo 1530 + GB 0,7 l",
+      "price_eur": 409.84,
+      "url": "https://drinx.hr/shop/zestoka-pica-tekila-1392/tekila-origen-codigo-1530-gb-07-l-5322",
+      "category": "tequila"
+    },
+    {
+      "name": "Rum JERARQUiA 35 Years Old 1985 PARDO Dictador + GB 0,7 l",
+      "price_eur": 408.81,
+      "url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-jerarquia-35-years-old-1985-pardo-dictador-gb-07-l-8439",
+      "category": "rum"
+    },
+    {
+      "name": "Konjak Camus EXTRA Elegance + GB 0,7 l",
+      "price_eur": 408.71,
+      "url": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-camus-extra-elegance-gb-07-l-3921",
+      "category": "cognac"
+    },
+    {
+      "name": "Škotski viski Man O'Words 2014 Rare Vintage Ex-Bourbon Single Malt + GB 0,7 l",
+      "price_eur": 393.56,
+      "url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-man-owords-2014-rare-vintage-ex-bourbon-single-malt-gb-07-l-532",
+      "category": "whisky"
+    },
+    {
+      "name": "Škotski viski Man O'Sword 2014 Rare Vintage Ex-Bourbon Single Malt + GB 0,7 l",
+      "price_eur": 393.49,
+      "url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-man-osword-2014-rare-vintage-ex-bourbon-single-malt-gb-07-l-2001",
+      "category": "whisky"
+    },
+    {
+      "name": "Škotski viski Chapter 7 Monologue 28YO Tobermory 1994 0,7 l",
+      "price_eur": 392.76,
+      "url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-chapter-7-monologue-28yo-tobermory-1994-07-l-1912",
+      "category": "whisky"
+    },
+    {
+      "name": "Škotski viski Tobermory 24Y Single Malt 0,7 l",
+      "price_eur": 388.09,
+      "url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-tobermory-24y-single-malt-07-l-3176",
+      "category": "whisky"
+    },
+    {
+      "name": "Škotski viski Glenfiddich 23 GRAND CRU Single Malt + GB 0,7 l",
+      "price_eur": 374.99,
+      "url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-glenfiddich-23-grand-cru-single-malt-gb-07-l-5349",
+      "category": "whisky"
+    },
+    {
+      "name": "Konjak Hennessy X.O. Cognac Jean Michel Othaniel + GB 0,7 l",
+      "price_eur": 369.9,
+      "url": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-hennessy-xo-cognac-jean-michel-othaniel-gb-07-l-7936",
+      "category": "cognac"
+    },
+    {
+      "name": "Škotski viski Arran Single Malt 25 YO + GB 0,7 l",
+      "price_eur": 368.75,
+      "url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-arran-single-malt-25-yo-gb-07-l-348",
+      "category": "whisky"
+    },
+    {
+      "name": "Tajvanski viski SOLIST Manzanilla Cask Kavalan + GB 0,7 l",
+      "price_eur": 367.82,
+      "url": "https://drinx.hr/shop/zestoka-pica-viski-1364/tajvanski-viski-solist-manzanilla-cask-kavalan-gb-07-l-6575",
+      "category": "whisky"
+    },
+    {
+      "name": "Indijski viski Amrut FUSION XI Single Malt + GB 0,7 l",
+      "price_eur": 366.9,
+      "url": "https://drinx.hr/shop/zestoka-pica-viski-1364/indijski-viski-amrut-fusion-xi-single-malt-gb-07-l-3848",
+      "category": "whisky"
+    },
+    {
+      "name": "Škotski viski Lagavulin 11 Years Old Single Malt + GB 0,7 l",
+      "price_eur": 357.59,
+      "url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-lagavulin-11-years-old-single-malt-gb-07-l-3656",
+      "category": "whisky"
+    },
+    {
+      "name": "Škotski viski Bunnahabhain 17y Single Malt MOINE TRIPLE CASK Limited Release Feis Ile 2023 + GB 0,7 l",
+      "price_eur": 356.86,
+      "url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-bunnahabhain-17y-single-malt-moine-triple-cask-limited-release-feis-ile-2023-gb-07-l-1561",
+      "category": "whisky"
+    },
+    {
+      "name": "Rum Malecon 1982 Seleccion Esplendida + GB 0,7 l",
+      "price_eur": 350.0,
+      "url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-malecon-1982-seleccion-esplendida-gb-07-l-6392",
+      "category": "rum"
+    },
+    {
+      "name": "Škotski viski Macallan Rare cask release 2023 + GB 0,7 l",
+      "price_eur": 349.9,
+      "url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-macallan-rare-cask-release-2023-gb-07-l-5526",
+      "category": "whisky"
+    },
+    {
+      "name": "Škotski viski Balvenie 21 0,7 l",
+      "price_eur": 348.99,
+      "url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-balvenie-21-07-l-5279",
+      "category": "whisky"
+    },
+    {
+      "name": "Armagnac Vieil Armagnac Delord Vintage 1966 + GB 0,7 l",
+      "price_eur": 344.9,
+      "url": "https://drinx.hr/shop/zestoka-pica-armagnac-1374/armagnac-vieil-armagnac-delord-vintage-1966-gb-07-l-7582",
+      "category": "armagnac"
+    },
+    {
+      "name": "Rum JERARQUiA 35 Years Old 1985 Dictador + GB 0,7 l",
+      "price_eur": 343.65,
+      "url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-jerarquia-35-years-old-1985-dictador-gb-07-l-9560",
+      "category": "rum"
+    },
+    {
+      "name": "Irski viski Midleton Very Rare Barry Crockett + GB 0,7 l",
+      "price_eur": 342.73,
+      "url": "https://drinx.hr/shop/zestoka-pica-viski-1364/irski-viski-midleton-very-rare-barry-crockett-gb-07-l-9365",
+      "category": "whisky"
+    },
+    {
+      "name": "Tekila Eight Reserve Anejo by Kendall Jenner 818 + GB 0,7 l",
+      "price_eur": 339.9,
+      "url": "https://drinx.hr/shop/zestoka-pica-tekila-1392/tekila-eight-reserve-anejo-by-kendall-jenner-818-gb-07-l-8695",
+      "category": "tequila"
+    },
+    {
+      "name": "Škotski viski King Alexander III Higland Single Malt The Dalmore + GB 0,7 l",
+      "price_eur": 339.9,
+      "url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-king-alexander-iii-higland-single-malt-the-dalmore-gb-07-l-1914",
+      "category": "whisky"
+    },
+    {
+      "name": "Škotski viski Octomore EDITION: 15.3 Super Heavily Peated + GB 0,7 l",
+      "price_eur": 332.89,
+      "url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-octomore-edition-153-super-heavily-peated-gb-07-l-2157",
+      "category": "whisky"
+    },
+    {
+      "name": "Konjak Courvoisier X.O. ROYAL Le Cognac de Napoleon + GB 0,7 l",
+      "price_eur": 329.8,
+      "url": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-courvoisier-xo-royal-le-cognac-de-napoleon-gb-07-l-2134",
+      "category": "cognac"
+    },
+    {
+      "name": "Japanski Whisky The Shinobu SHOGUN Blended Mizunara Wood Oak Cask Finish + GB 0,7 l",
+      "price_eur": 327.87,
+      "url": "https://drinx.hr/shop/zestoka-pica-viski-1364/japanski-whisky-the-shinobu-shogun-blended-mizunara-wood-oak-cask-finish-gb-07-l-12720",
+      "category": "whisky"
+    },
+    {
+      "name": "Škotski viski Gordon & MacPhail SPEYMALT Macallan Single Malt 2006 + GB 0,7 l",
+      "price_eur": 322.64,
+      "url": "https://drinx.hr/shop/zestoka-pica-viski-1364/skotski-viski-gordon-macphail-speymalt-macallan-single-malt-2006-gb-07-l-6544",
+      "category": "whisky"
+    },
+    {
+      "name": "Rum Black Coral A.H.Riise + GB 0,7 l",
+      "price_eur": 317.6,
+      "url": "https://drinx.hr/shop/zestoka-pica-rum-1371/rum-black-coral-ahriise-gb-07-l-1205",
+      "category": "rum"
+    }
+  ],
+  "counts_by_category": {
+    "armagnac": 20,
+    "cognac": 106,
+    "gin": 268,
+    "rum": 486,
+    "tequila": 93,
+    "whisky": 976
+  }
+}

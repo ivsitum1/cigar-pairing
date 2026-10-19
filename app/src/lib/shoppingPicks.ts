@@ -24,7 +24,7 @@ export const BUCKETS: Partial<Record<DrinkCategory, StyleBucket[]>> = {
     { id: "peat", label: { hr: "Treset / otoci", en: "Peat / islands" }, styles: ["islay-peated", "island", "campbeltown"] },
     { id: "america", label: { hr: "Bourbon / rye", en: "Bourbon / rye" }, styles: ["bourbon", "tennessee", "rye"] },
     { id: "irish", label: { hr: "Irska", en: "Ireland" }, styles: ["irish-pot-still", "irish-blend", "irish-single-malt"] },
-    { id: "world", label: { hr: "Japan / svijet", en: "Japan / world" }, styles: ["japanese", "world", "liqueur"] },
+    { id: "world", label: { hr: "Japan / svijet", en: "Japan / world" }, styles: ["japanese", "world", "canadian", "liqueur"] },
   ],
   brandy: [
     { id: "cognac", label: { hr: "Cognac", en: "Cognac" }, styles: ["cognac-vs", "cognac-vsop", "cognac-xo"] },

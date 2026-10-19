@@ -112,6 +112,26 @@ export const DRINK_SHOPS: DrinkShop[] = [
     },
   },
   {
+    id: "drinx",
+    name: "drinx.hr",
+    scope: "HR",
+    home: "https://www.drinx.hr/",
+    productHost: "drinx.hr",
+    categories: SPIRITS,
+    browse: {
+      rum: "https://www.drinx.hr/shop/category/zestoka-pica-rum-1371",
+      whisky: "https://www.drinx.hr/shop/category/zestoka-pica-viski-1364",
+      gin: "https://www.drinx.hr/shop/category/zestoka-pica-gin-1384",
+      brandy: "https://www.drinx.hr/shop/category/zestoka-pica-cognac-1379",
+      tequila: "https://www.drinx.hr/shop/category/zestoka-pica-tekila-1392",
+      digestif: "https://www.drinx.hr/shop/category/zestoka-pica-armagnac-1374",
+    },
+    note: {
+      hr: "Široka kuća vina i žestica; fizička trgovina u Buzinu; izravan link kad je boca u katalogu",
+      en: "Broad wine-and-spirits house; walk-in shop in Buzin; direct link when the bottle is in the catalogue",
+    },
+  },
+  {
     id: "tipsy",
     name: "Tipsy",
     scope: "HR",

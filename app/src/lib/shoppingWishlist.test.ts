@@ -5,6 +5,7 @@ const base = {
   owned: false,
   tried: false,
   wishlist: true,
+  favorite: false,
   rating: null as number | null,
   note: "",
 };

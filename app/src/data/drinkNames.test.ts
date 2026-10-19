@@ -27,10 +27,23 @@ describe("imena pića nose marku", () => {
     "broker's",
     "brockman's",
     "bulldog",
+    // Drinx / craft single-token labels
+    "canaoak",
+    "rumbullion",
+    "natterjack",
+    "enso",
+    "engine",
+    "hendricks",
+    "jinzu",
+    "magellan",
+    "mare",
+    "brockmans",
+    "ryoma",
   ]);
 
   // Prave marke koje pocinju brojem — nisu fragmenti.
-  const NUMERIC_BRANDS = /^No\. 3 London Dry Gin|^No\. 209 Gin|^818 Tequila/;
+  const NUMERIC_BRANDS =
+    /^No\. 3 London Dry Gin|^No\. 209 Gin|^818 Tequila|^1689 Authentic/;
 
   it("nijedno ime ne počinje golim brojem ili 'No.'", () => {
     const bad = ALL_DRINKS.filter((d) => /^(No\.?\s*\d|\d)/.test(d.name.trim()))

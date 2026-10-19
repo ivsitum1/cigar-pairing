@@ -73,6 +73,10 @@ indeksima rangiranim po kvaliteti za sipping uz cigaru.
   - `scripts/excel-to-brandy-json.py` — regenerira brandies.json iz brandy Excela
   - `scripts/scrape-gin-catalog.py` / `build-gin-excel.py` / `excel-to-gin-json.py` — gin pipeline
   - `scripts/scrape-tequila-catalog.py` / `build-tequila-excel.py` / `excel-to-tequila-json.py` — tequila pipeline
+  - `scripts/scrape-drinx-catalog.py` — scrape drinx.hr (rum/whisky/gin/tequila/cognac/armagnac) → `output/drinx_catalog_raw.json`
+  - `scripts/match-drinx-drinks.py` — spoji Drinx SKU s postojećim pićima (`--apply` piše `priceUrl`/`priceEUR`/`shopHR` kad AlleZ/Ecuga nemaju product URL)
+  - `scripts/ingest-drinx-gaps.py` — doda pairing-relevantne nove boce (€28–220, 0.7 L) + `drinkIdRegistry.json`
+  - `scripts/script_io.py` — UTF-8 stdout/stderr za Windows konzole (`configure_stdio`)
   - `scripts/calibrate-master.py` — agent kalibracija MASTER sheetova (gin/tequila/brandy)
   - `scripts/enrich-cigars.py` — vitole/cijene/linkovi iz humidor.hr scrape podataka
   - `scripts/profile-cigars.py` — obogaćuje cigare bez profila (prazan flavorTags →

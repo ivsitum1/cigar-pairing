@@ -663,11 +663,11 @@
     "additiveSource": "Excel MASTER",
     "qualityScore": 8.3,
     "priceEUR": {
-      "min": 229.99,
-      "max": 229.99
+      "min": 240.0,
+      "max": 240.0
     },
     "priceApprox": false,
-    "shopHR": "tipsy.hr",
+    "shopHR": "drinx.hr",
     "status": "META",
     "pairable": true,
     "serving": {
@@ -678,8 +678,11 @@
       "cola": 0,
       "best": "Cisto (snifter)"
     },
-    "cigarHint": null,
-    "priceUrl": "https://tipsy.hr/zestice/cognac-zestice/martell-xo/",
+    "cigarHint": {
+      "hr": "Uz Martell XO: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil cognac-xo ide uz Habano ili blagi maduro.",
+      "en": "With Martell XO: brandy wants a slower smoke and medium body; cognac-xo suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-martell-xo-gb-07-l-9874",
     "notes": {
       "hr": "Suhi, borderies-bogat XO — orašasta elegancija uz srednju cigaru.",
       "en": "Dry, Borderies-rich XO — nutty elegance with a medium cigar."
@@ -1403,11 +1406,11 @@
     "additiveSource": "Excel MASTER",
     "qualityScore": 8,
     "priceEUR": {
-      "min": 55,
-      "max": 55
+      "min": 2.62,
+      "max": 2.62
     },
     "priceApprox": false,
-    "shopHR": "allez.hr",
+    "shopHR": "drinx.hr",
     "status": "META",
     "pairable": true,
     "serving": {
@@ -1418,8 +1421,11 @@
       "cola": 0,
       "best": "Cisto ili velika kocka leda"
     },
-    "cigarHint": null,
-    "priceUrl": null,
+    "cigarHint": {
+      "hr": "Uz Frapin VSOP Grande Champagne: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil cognac-vsop ide uz Habano ili blagi maduro.",
+      "en": "With Frapin VSOP Grande Champagne: brandy wants a slower smoke and medium body; cognac-vsop suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-frapin-grande-champagne-plume-07-l-2242",
     "notes": {
       "hr": "Obiteljska kuća, 100% Grande Champagne — rafiniran value.",
       "en": "Family house, 100% Grande Champagne — refined value."
@@ -1951,11 +1957,11 @@
     "additiveSource": "Excel MASTER",
     "qualityScore": 7.8,
     "priceEUR": {
-      "min": 54.99,
-      "max": 54.99
+      "min": 76.38,
+      "max": 76.38
     },
     "priceApprox": false,
-    "shopHR": "tipsy.hr",
+    "shopHR": "drinx.hr",
     "status": "META",
     "pairable": true,
     "serving": {
@@ -1966,8 +1972,11 @@
       "cola": 0,
       "best": "Cisto ili velika kocka leda"
     },
-    "cigarHint": null,
-    "priceUrl": "https://tipsy.hr/zestice/cognac-zestice/remy-martin-v-s-o-p/",
+    "cigarHint": {
+      "hr": "Uz Rémy Martin VSOP: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil cognac-vsop ide uz Habano ili blagi maduro.",
+      "en": "With Rémy Martin VSOP: brandy wants a slower smoke and medium body; cognac-vsop suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-remy-martin-end-of-the-year-edition-vsop-1-l-7155",
     "notes": {
       "hr": "Fine Champagne elegancija — voćniji i mekši stil.",
       "en": "Fine Champagne elegance — a fruitier, softer style."
@@ -2181,11 +2190,11 @@
     "additiveSource": "Excel MASTER",
     "qualityScore": 7.5,
     "priceEUR": {
-      "min": 40,
-      "max": 40
+      "min": 40.71,
+      "max": 40.71
     },
     "priceApprox": false,
-    "shopHR": "allez.hr",
+    "shopHR": "drinx.hr",
     "status": "META",
     "pairable": true,
     "serving": {
@@ -2196,8 +2205,11 @@
       "cola": 0,
       "best": "Cisto (snifter)"
     },
-    "cigarHint": null,
-    "priceUrl": null,
+    "cigarHint": {
+      "hr": "Uz Baron de Sigognac 10 Ans: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil armagnac ide uz Habano ili blagi maduro.",
+      "en": "With Baron de Sigognac 10 Ans: brandy wants a slower smoke and medium body; armagnac suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-armagnac-1374/armagnac-xo-10-ans-d-age-baron-de-sigognac-07-l-9022",
     "notes": {
       "hr": "Pošten 10-godišnji armagnac — suho voće i koža za male novce.",
       "en": "Honest 10-year armagnac — dried fruit and leather for little money."
@@ -4118,6 +4130,2826 @@
     "notes": {
       "hr": "Regionalni klasik uz espresso — nostalgija više nego finoća.",
       "en": "The regional espresso companion — more nostalgia than finesse."
+    }
+  },
+  {
+    "id": "br-bas-armagnac-xo-domaine-tariquet",
+    "category": "brandy",
+    "name": "Bas-Armagnac XO Domaine Tariquet",
+    "style": "armagnac",
+    "region": "Armagnac, Francuska",
+    "country": "Francuska",
+    "body": 4,
+    "sweetness": 2,
+    "flavorTags": [
+      "suho-voce",
+      "hrast",
+      "zacini"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 75.24,
+      "max": 75.24
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Bas-Armagnac XO Domaine Tariquet: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil armagnac ide uz Habano ili blagi maduro.",
+      "en": "With Bas-Armagnac XO Domaine Tariquet: brandy wants a slower smoke and medium body; armagnac suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-armagnac-1374/armagnac-bas-armagnac-xo-domaine-tariquet-07-l-7585",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Bas-Armagnac XO Domaine Tariquet.",
+      "en": "Heuristic profile (Drinx catalogue) — Bas-Armagnac XO Domaine Tariquet."
+    }
+  },
+  {
+    "id": "br-carafe-25-ans-de-age",
+    "category": "brandy",
+    "name": "Carafe 25 Ans De Age",
+    "style": "armagnac",
+    "region": "Armagnac, Francuska",
+    "country": "Francuska",
+    "body": 4,
+    "sweetness": 2,
+    "flavorTags": [
+      "suho-voce",
+      "hrast",
+      "zacini"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 7.5,
+    "priceEUR": {
+      "min": 189.06,
+      "max": 189.06
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Carafe 25 Ans De Age: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil armagnac ide uz Habano ili blagi maduro.",
+      "en": "With Carafe 25 Ans De Age: brandy wants a slower smoke and medium body; armagnac suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-armagnac-1374/armagnac-carafe-25-ans-de-age-07-l-9062",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Carafe 25 Ans De Age.",
+      "en": "Heuristic profile (Drinx catalogue) — Carafe 25 Ans De Age."
+    }
+  },
+  {
+    "id": "br-cles-des-ducs-xo",
+    "category": "brandy",
+    "name": "Cles Des Ducs XO",
+    "style": "armagnac",
+    "region": "Armagnac, Francuska",
+    "country": "Francuska",
+    "body": 4,
+    "sweetness": 2,
+    "flavorTags": [
+      "suho-voce",
+      "hrast",
+      "zacini"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 5.5,
+    "priceEUR": {
+      "min": 38.0,
+      "max": 38.0
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Cles Des Ducs XO: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil armagnac ide uz Habano ili blagi maduro.",
+      "en": "With Cles Des Ducs XO: brandy wants a slower smoke and medium body; armagnac suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-armagnac-1374/armagnac-cles-des-ducs-xo-wb-07-l-7999",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Cles Des Ducs XO.",
+      "en": "Heuristic profile (Drinx catalogue) — Cles Des Ducs XO."
+    }
+  },
+  {
+    "id": "br-grand-xo-platinum-baron-de-sigognac",
+    "category": "brandy",
+    "name": "Grand Xo Platinum Baron de Sigognac",
+    "style": "armagnac",
+    "region": "Armagnac, Francuska",
+    "country": "Francuska",
+    "body": 4,
+    "sweetness": 2,
+    "flavorTags": [
+      "suho-voce",
+      "hrast",
+      "zacini"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 7.0,
+    "priceEUR": {
+      "min": 138.21,
+      "max": 138.21
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Grand Xo Platinum Baron de Sigognac: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil armagnac ide uz Habano ili blagi maduro.",
+      "en": "With Grand Xo Platinum Baron de Sigognac: brandy wants a slower smoke and medium body; armagnac suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-armagnac-1374/armagnac-grand-xo-platinum-baron-de-sigognac-07-l-1587",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Grand Xo Platinum Baron de Sigognac.",
+      "en": "Heuristic profile (Drinx catalogue) — Grand Xo Platinum Baron de Sigognac."
+    }
+  },
+  {
+    "id": "br-reserve-dartigalongue",
+    "category": "brandy",
+    "name": "Reserve Dartigalongue",
+    "style": "armagnac",
+    "region": "Armagnac, Francuska",
+    "country": "Francuska",
+    "body": 4,
+    "sweetness": 2,
+    "flavorTags": [
+      "suho-voce",
+      "hrast",
+      "zacini"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 6.0,
+    "priceEUR": {
+      "min": 51.99,
+      "max": 51.99
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Reserve Dartigalongue: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil armagnac ide uz Habano ili blagi maduro.",
+      "en": "With Reserve Dartigalongue: brandy wants a slower smoke and medium body; armagnac suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-armagnac-1374/armagnac-reserve-dartigalongue-07-l-12235",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Reserve Dartigalongue.",
+      "en": "Heuristic profile (Drinx catalogue) — Reserve Dartigalongue."
+    }
+  },
+  {
+    "id": "br-v-s-o-p-dartigalongue",
+    "category": "brandy",
+    "name": "V.S.O.P. Dartigalongue",
+    "style": "armagnac",
+    "region": "Armagnac, Francuska",
+    "country": "Francuska",
+    "body": 4,
+    "sweetness": 2,
+    "flavorTags": [
+      "suho-voce",
+      "hrast",
+      "zacini"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 59.8,
+      "max": 59.8
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz V.S.O.P. Dartigalongue: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil armagnac ide uz Habano ili blagi maduro.",
+      "en": "With V.S.O.P. Dartigalongue: brandy wants a slower smoke and medium body; armagnac suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-armagnac-1374/armagnac-vsop-dartigalongue-07-l-12219",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — V.S.O.P. Dartigalongue.",
+      "en": "Heuristic profile (Drinx catalogue) — V.S.O.P. Dartigalongue."
+    }
+  },
+  {
+    "id": "br-vieil-armagnac-delord-vintage-1976",
+    "category": "brandy",
+    "name": "Vieil Armagnac Delord Vintage 1976",
+    "style": "armagnac",
+    "region": "Armagnac, Francuska",
+    "country": "Francuska",
+    "body": 4,
+    "sweetness": 2,
+    "flavorTags": [
+      "suho-voce",
+      "hrast",
+      "zacini"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 7.5,
+    "priceEUR": {
+      "min": 186.9,
+      "max": 186.9
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Vieil Armagnac Delord Vintage 1976: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil armagnac ide uz Habano ili blagi maduro.",
+      "en": "With Vieil Armagnac Delord Vintage 1976: brandy wants a slower smoke and medium body; armagnac suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-armagnac-1374/armagnac-vieil-armagnac-delord-vintage-1976-gb-07-l-7693",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Vieil Armagnac Delord Vintage 1976.",
+      "en": "Heuristic profile (Drinx catalogue) — Vieil Armagnac Delord Vintage 1976."
+    }
+  },
+  {
+    "id": "br-vieil-armagnac-delord-vintage-1985",
+    "category": "brandy",
+    "name": "Vieil Armagnac Delord Vintage 1985",
+    "style": "armagnac",
+    "region": "Armagnac, Francuska",
+    "country": "Francuska",
+    "body": 4,
+    "sweetness": 2,
+    "flavorTags": [
+      "suho-voce",
+      "hrast",
+      "zacini"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 7.0,
+    "priceEUR": {
+      "min": 140.88,
+      "max": 140.88
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Vieil Armagnac Delord Vintage 1985: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil armagnac ide uz Habano ili blagi maduro.",
+      "en": "With Vieil Armagnac Delord Vintage 1985: brandy wants a slower smoke and medium body; armagnac suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-armagnac-1374/armagnac-vieil-armagnac-delord-vintage-1985-gb-07-l-558",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Vieil Armagnac Delord Vintage 1985.",
+      "en": "Heuristic profile (Drinx catalogue) — Vieil Armagnac Delord Vintage 1985."
+    }
+  },
+  {
+    "id": "br-vieil-armagnac-delord-vintage-1986",
+    "category": "brandy",
+    "name": "Vieil Armagnac Delord Vintage 1986",
+    "style": "armagnac",
+    "region": "Armagnac, Francuska",
+    "country": "Francuska",
+    "body": 4,
+    "sweetness": 2,
+    "flavorTags": [
+      "suho-voce",
+      "hrast",
+      "zacini"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 7.0,
+    "priceEUR": {
+      "min": 139.9,
+      "max": 139.9
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Vieil Armagnac Delord Vintage 1986: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil armagnac ide uz Habano ili blagi maduro.",
+      "en": "With Vieil Armagnac Delord Vintage 1986: brandy wants a slower smoke and medium body; armagnac suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-armagnac-1374/armagnac-vieil-armagnac-delord-vintage-1986-gb-07-l-8369",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Vieil Armagnac Delord Vintage 1986.",
+      "en": "Heuristic profile (Drinx catalogue) — Vieil Armagnac Delord Vintage 1986."
+    }
+  },
+  {
+    "id": "br-vieil-armagnac-delord-vintage-1995",
+    "category": "brandy",
+    "name": "Vieil Armagnac Delord Vintage 1995",
+    "style": "armagnac",
+    "region": "Armagnac, Francuska",
+    "country": "Francuska",
+    "body": 4,
+    "sweetness": 2,
+    "flavorTags": [
+      "suho-voce",
+      "hrast",
+      "zacini"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 7.0,
+    "priceEUR": {
+      "min": 123.88,
+      "max": 123.88
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Vieil Armagnac Delord Vintage 1995: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil armagnac ide uz Habano ili blagi maduro.",
+      "en": "With Vieil Armagnac Delord Vintage 1995: brandy wants a slower smoke and medium body; armagnac suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-armagnac-1374/armagnac-vieil-armagnac-delord-vintage-1995-gb-07-l-7554",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Vieil Armagnac Delord Vintage 1995.",
+      "en": "Heuristic profile (Drinx catalogue) — Vieil Armagnac Delord Vintage 1995."
+    }
+  },
+  {
+    "id": "br-vieil-armagnac-delord-vintage-1996",
+    "category": "brandy",
+    "name": "Vieil Armagnac Delord Vintage 1996",
+    "style": "armagnac",
+    "region": "Armagnac, Francuska",
+    "country": "Francuska",
+    "body": 4,
+    "sweetness": 2,
+    "flavorTags": [
+      "suho-voce",
+      "hrast",
+      "zacini"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 7.0,
+    "priceEUR": {
+      "min": 119.9,
+      "max": 119.9
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Vieil Armagnac Delord Vintage 1996: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil armagnac ide uz Habano ili blagi maduro.",
+      "en": "With Vieil Armagnac Delord Vintage 1996: brandy wants a slower smoke and medium body; armagnac suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-armagnac-1374/armagnac-vieil-armagnac-delord-vintage-1996-gb-07-l-4007",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Vieil Armagnac Delord Vintage 1996.",
+      "en": "Heuristic profile (Drinx catalogue) — Vieil Armagnac Delord Vintage 1996."
+    }
+  },
+  {
+    "id": "br-xo-signature-dartigalongue",
+    "category": "brandy",
+    "name": "XO Signature Dartigalongue",
+    "style": "armagnac",
+    "region": "Armagnac, Francuska",
+    "country": "Francuska",
+    "body": 4,
+    "sweetness": 2,
+    "flavorTags": [
+      "suho-voce",
+      "hrast",
+      "zacini"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 75.9,
+      "max": 75.9
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz XO Signature Dartigalongue: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil armagnac ide uz Habano ili blagi maduro.",
+      "en": "With XO Signature Dartigalongue: brandy wants a slower smoke and medium body; armagnac suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-armagnac-1374/armagnac-xo-signature-dartigalongue-07-l-12231",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — XO Signature Dartigalongue.",
+      "en": "Heuristic profile (Drinx catalogue) — XO Signature Dartigalongue."
+    }
+  },
+  {
+    "id": "br-xo-platinum-baron-de-sigognac",
+    "category": "brandy",
+    "name": "Xo Platinum Baron de Sigognac",
+    "style": "armagnac",
+    "region": "Armagnac, Francuska",
+    "country": "Francuska",
+    "body": 4,
+    "sweetness": 2,
+    "flavorTags": [
+      "suho-voce",
+      "hrast",
+      "zacini"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 87.44,
+      "max": 87.44
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Xo Platinum Baron de Sigognac: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil armagnac ide uz Habano ili blagi maduro.",
+      "en": "With Xo Platinum Baron de Sigognac: brandy wants a slower smoke and medium body; armagnac suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-armagnac-1374/armagnac-xo-platinum-baron-de-sigognac-07-l-2637",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Xo Platinum Baron de Sigognac.",
+      "en": "Heuristic profile (Drinx catalogue) — Xo Platinum Baron de Sigognac."
+    }
+  },
+  {
+    "id": "br-abk6-xo-renaissance-box",
+    "category": "brandy",
+    "name": "Abk6 XO Renaissance + Box",
+    "style": "cognac-xo",
+    "region": "Cognac, Francuska",
+    "country": "Francuska",
+    "body": 4,
+    "sweetness": 3,
+    "flavorTags": [
+      "suho-voce",
+      "vanilija",
+      "hrast"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 7.5,
+    "priceEUR": {
+      "min": 180.32,
+      "max": 180.32
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Abk6 XO Renaissance + Box: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil cognac-xo ide uz Habano ili blagi maduro.",
+      "en": "With Abk6 XO Renaissance + Box: brandy wants a slower smoke and medium body; cognac-xo suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-abk6-xo-renaissance-box-07-l-4974",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Abk6 XO Renaissance + Box.",
+      "en": "Heuristic profile (Drinx catalogue) — Abk6 XO Renaissance + Box."
+    }
+  },
+  {
+    "id": "br-bisquit-dubouche-vsop",
+    "category": "brandy",
+    "name": "Bisquit & Dubouche VSOP",
+    "style": "cognac-vsop",
+    "region": "Cognac, Francuska",
+    "country": "Francuska",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "suho-voce",
+      "vanilija",
+      "hrast"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 69.5,
+      "max": 69.5
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Bisquit & Dubouche VSOP: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil cognac-vsop ide uz Habano ili blagi maduro.",
+      "en": "With Bisquit & Dubouche VSOP: brandy wants a slower smoke and medium body; cognac-vsop suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-bisquit-dubouche-vsop-07-l-2104",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Bisquit & Dubouche VSOP.",
+      "en": "Heuristic profile (Drinx catalogue) — Bisquit & Dubouche VSOP."
+    }
+  },
+  {
+    "id": "br-bowen-xo",
+    "category": "brandy",
+    "name": "Bowen XO",
+    "style": "cognac-xo",
+    "region": "Cognac, Francuska",
+    "country": "Francuska",
+    "body": 4,
+    "sweetness": 3,
+    "flavorTags": [
+      "suho-voce",
+      "vanilija",
+      "hrast"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 7.5,
+    "priceEUR": {
+      "min": 152.56,
+      "max": 152.56
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Bowen XO: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil cognac-xo ide uz Habano ili blagi maduro.",
+      "en": "With Bowen XO: brandy wants a slower smoke and medium body; cognac-xo suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-bowen-xo-gb-07-l-4235",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Bowen XO. Profil je orijentir za sparivanje, ne lab mjerenje.",
+      "en": "Heuristic profile (Drinx catalogue) — Bowen XO."
+    }
+  },
+  {
+    "id": "br-bowen-xo-gold-n-black",
+    "category": "brandy",
+    "name": "Bowen XO Gold'n Black",
+    "style": "cognac-xo",
+    "region": "Cognac, Francuska",
+    "country": "Francuska",
+    "body": 4,
+    "sweetness": 3,
+    "flavorTags": [
+      "suho-voce",
+      "vanilija",
+      "hrast"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 7.5,
+    "priceEUR": {
+      "min": 159.01,
+      "max": 159.01
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Bowen XO Gold'n Black: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil cognac-xo ide uz Habano ili blagi maduro.",
+      "en": "With Bowen XO Gold'n Black: brandy wants a slower smoke and medium body; cognac-xo suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-bowen-xo-goldn-black-gb-07-l-4084",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Bowen XO Gold'n Black.",
+      "en": "Heuristic profile (Drinx catalogue) — Bowen XO Gold'n Black."
+    }
+  },
+  {
+    "id": "br-chabasse-exception-xo",
+    "category": "brandy",
+    "name": "Chabasse EXCEPTION XO",
+    "style": "cognac-xo",
+    "region": "Cognac, Francuska",
+    "country": "Francuska",
+    "body": 4,
+    "sweetness": 3,
+    "flavorTags": [
+      "suho-voce",
+      "vanilija",
+      "hrast"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 7.5,
+    "priceEUR": {
+      "min": 153.57,
+      "max": 153.57
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Chabasse EXCEPTION XO: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil cognac-xo ide uz Habano ili blagi maduro.",
+      "en": "With Chabasse EXCEPTION XO: brandy wants a slower smoke and medium body; cognac-xo suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-chabasse-exception-xo-gb-07-l-7221",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Chabasse EXCEPTION XO.",
+      "en": "Heuristic profile (Drinx catalogue) — Chabasse EXCEPTION XO."
+    }
+  },
+  {
+    "id": "br-chabasse-xo",
+    "category": "brandy",
+    "name": "Chabasse XO",
+    "style": "cognac-xo",
+    "region": "Cognac, Francuska",
+    "country": "Francuska",
+    "body": 4,
+    "sweetness": 3,
+    "flavorTags": [
+      "suho-voce",
+      "vanilija",
+      "hrast"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 7.0,
+    "priceEUR": {
+      "min": 133.18,
+      "max": 133.18
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Chabasse XO: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil cognac-xo ide uz Habano ili blagi maduro.",
+      "en": "With Chabasse XO: brandy wants a slower smoke and medium body; cognac-xo suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-chabasse-xo-gb-07-l-7107",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Chabasse XO.",
+      "en": "Heuristic profile (Drinx catalogue) — Chabasse XO."
+    }
+  },
+  {
+    "id": "br-chateau-de-montifaud-xo",
+    "category": "brandy",
+    "name": "Chateau de Montifaud XO",
+    "style": "cognac-xo",
+    "region": "Cognac, Francuska",
+    "country": "Francuska",
+    "body": 4,
+    "sweetness": 3,
+    "flavorTags": [
+      "suho-voce",
+      "vanilija",
+      "hrast"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 85.18,
+      "max": 85.18
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Chateau de Montifaud XO: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil cognac-xo ide uz Habano ili blagi maduro.",
+      "en": "With Chateau de Montifaud XO: brandy wants a slower smoke and medium body; cognac-xo suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-chateau-de-montifaud-xo-07-l-9701",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Chateau de Montifaud XO.",
+      "en": "Heuristic profile (Drinx catalogue) — Chateau de Montifaud XO."
+    }
+  },
+  {
+    "id": "br-claude-chatelier-xo-extra-old",
+    "category": "brandy",
+    "name": "Claude Chatelier XO Extra Old",
+    "style": "cognac-xo",
+    "region": "Cognac, Francuska",
+    "country": "Francuska",
+    "body": 4,
+    "sweetness": 3,
+    "flavorTags": [
+      "suho-voce",
+      "vanilija",
+      "hrast"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 83.54,
+      "max": 83.54
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Claude Chatelier XO Extra Old: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil cognac-xo ide uz Habano ili blagi maduro.",
+      "en": "With Claude Chatelier XO Extra Old: brandy wants a slower smoke and medium body; cognac-xo suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-claude-chatelier-xo-extra-old-07-l-3488",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Claude Chatelier XO Extra Old.",
+      "en": "Heuristic profile (Drinx catalogue) — Claude Chatelier XO Extra Old."
+    }
+  },
+  {
+    "id": "br-courvoisier-v-s",
+    "category": "brandy",
+    "name": "Courvoisier V.S",
+    "style": "cognac-vs",
+    "region": "Cognac, Francuska",
+    "country": "Francuska",
+    "body": 2,
+    "sweetness": 2,
+    "flavorTags": [
+      "suho-voce",
+      "vanilija",
+      "hrast"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 5.5,
+    "priceEUR": {
+      "min": 38.84,
+      "max": 38.84
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Courvoisier V.S: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil cognac-vs ide uz Habano ili blagi maduro.",
+      "en": "With Courvoisier V.S: brandy wants a slower smoke and medium body; cognac-vs suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-courvoisier-vs-07-l-2930",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Courvoisier V.S.",
+      "en": "Heuristic profile (Drinx catalogue) — Courvoisier V.S."
+    }
+  },
+  {
+    "id": "br-courvoisier-v-s-o-p",
+    "category": "brandy",
+    "name": "Courvoisier V.S.O.P.",
+    "style": "cognac-vs",
+    "region": "Cognac, Francuska",
+    "country": "Francuska",
+    "body": 2,
+    "sweetness": 2,
+    "flavorTags": [
+      "suho-voce",
+      "vanilija",
+      "hrast"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 5.5,
+    "priceEUR": {
+      "min": 35.76,
+      "max": 35.76
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Courvoisier V.S.O.P.: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil cognac-vs ide uz Habano ili blagi maduro.",
+      "en": "With Courvoisier V.S.O.P.: brandy wants a slower smoke and medium body; cognac-vs suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-courvoisier-vsop-07-l-2435",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Courvoisier V.S.O.P..",
+      "en": "Heuristic profile (Drinx catalogue) — Courvoisier V.S.O.P.."
+    }
+  },
+  {
+    "id": "br-courvoisier-x-o",
+    "category": "brandy",
+    "name": "Courvoisier X.O.",
+    "style": "cognac-vs",
+    "region": "Cognac, Francuska",
+    "country": "Francuska",
+    "body": 2,
+    "sweetness": 2,
+    "flavorTags": [
+      "suho-voce",
+      "vanilija",
+      "hrast"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 7.5,
+    "priceEUR": {
+      "min": 179.2,
+      "max": 179.2
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Courvoisier X.O.: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil cognac-vs ide uz Habano ili blagi maduro.",
+      "en": "With Courvoisier X.O.: brandy wants a slower smoke and medium body; cognac-vs suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-courvoisier-xo-gb-07-l-5112",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Courvoisier X.O..",
+      "en": "Heuristic profile (Drinx catalogue) — Courvoisier X.O.."
+    }
+  },
+  {
+    "id": "br-davidoff-vsop",
+    "category": "brandy",
+    "name": "Davidoff VSOP",
+    "style": "cognac-vsop",
+    "region": "Cognac, Francuska",
+    "country": "Francuska",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "suho-voce",
+      "vanilija",
+      "hrast"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 64.35,
+      "max": 64.35
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Davidoff VSOP: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil cognac-vsop ide uz Habano ili blagi maduro.",
+      "en": "With Davidoff VSOP: brandy wants a slower smoke and medium body; cognac-vsop suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-davidoff-vsop-gb-07-l-9153",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Davidoff VSOP.",
+      "en": "Heuristic profile (Drinx catalogue) — Davidoff VSOP."
+    }
+  },
+  {
+    "id": "br-davidoff-xo",
+    "category": "brandy",
+    "name": "Davidoff XO",
+    "style": "cognac-xo",
+    "region": "Cognac, Francuska",
+    "country": "Francuska",
+    "body": 4,
+    "sweetness": 3,
+    "flavorTags": [
+      "suho-voce",
+      "vanilija",
+      "hrast"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 7.5,
+    "priceEUR": {
+      "min": 194.5,
+      "max": 194.5
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Davidoff XO: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil cognac-xo ide uz Habano ili blagi maduro.",
+      "en": "With Davidoff XO: brandy wants a slower smoke and medium body; cognac-xo suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-davidoff-xo-gb-07-l-5790",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Davidoff XO.",
+      "en": "Heuristic profile (Drinx catalogue) — Davidoff XO."
+    }
+  },
+  {
+    "id": "br-delpech-fougerat-vs",
+    "category": "brandy",
+    "name": "Delpech Fougerat VS",
+    "style": "cognac-vs",
+    "region": "Cognac, Francuska",
+    "country": "Francuska",
+    "body": 2,
+    "sweetness": 2,
+    "flavorTags": [
+      "suho-voce",
+      "vanilija",
+      "hrast"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 5.5,
+    "priceEUR": {
+      "min": 30.13,
+      "max": 30.13
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Delpech Fougerat VS: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil cognac-vs ide uz Habano ili blagi maduro.",
+      "en": "With Delpech Fougerat VS: brandy wants a slower smoke and medium body; cognac-vs suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-delpech-fougerat-vs-07-l-8492",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Delpech Fougerat VS.",
+      "en": "Heuristic profile (Drinx catalogue) — Delpech Fougerat VS."
+    }
+  },
+  {
+    "id": "br-delpech-fougerat-vsop",
+    "category": "brandy",
+    "name": "Delpech Fougerat VSOP",
+    "style": "cognac-vsop",
+    "region": "Cognac, Francuska",
+    "country": "Francuska",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "suho-voce",
+      "vanilija",
+      "hrast"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 5.5,
+    "priceEUR": {
+      "min": 32.85,
+      "max": 32.85
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Delpech Fougerat VSOP: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil cognac-vsop ide uz Habano ili blagi maduro.",
+      "en": "With Delpech Fougerat VSOP: brandy wants a slower smoke and medium body; cognac-vsop suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-delpech-fougerat-vsop-07-l-4859",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Delpech Fougerat VSOP.",
+      "en": "Heuristic profile (Drinx catalogue) — Delpech Fougerat VSOP."
+    }
+  },
+  {
+    "id": "br-frapin-grande-champagne-cigar-blend",
+    "category": "brandy",
+    "name": "Frapin Grande Champagne Cigar Blend",
+    "style": "cognac-vs",
+    "region": "Cognac, Francuska",
+    "country": "Francuska",
+    "body": 2,
+    "sweetness": 2,
+    "flavorTags": [
+      "suho-voce",
+      "vanilija",
+      "hrast"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 7.0,
+    "priceEUR": {
+      "min": 101.13,
+      "max": 101.13
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Frapin Grande Champagne Cigar Blend: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil cognac-vs ide uz Habano ili blagi maduro.",
+      "en": "With Frapin Grande Champagne Cigar Blend: brandy wants a slower smoke and medium body; cognac-vs suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-frapin-grande-champagne-cigar-blend-07-l-6154",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Frapin Grande Champagne Cigar Blend.",
+      "en": "Heuristic profile (Drinx catalogue) — Frapin Grande Champagne Cigar Blend."
+    }
+  },
+  {
+    "id": "br-fussigny-extra",
+    "category": "brandy",
+    "name": "Fussigny Extra",
+    "style": "cognac-xo",
+    "region": "Cognac, Francuska",
+    "country": "Francuska",
+    "body": 4,
+    "sweetness": 3,
+    "flavorTags": [
+      "suho-voce",
+      "vanilija",
+      "hrast"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 7.5,
+    "priceEUR": {
+      "min": 194.57,
+      "max": 194.57
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Fussigny Extra: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil cognac-xo ide uz Habano ili blagi maduro.",
+      "en": "With Fussigny Extra: brandy wants a slower smoke and medium body; cognac-xo suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-fussigny-extra-07-l-7212",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Fussigny Extra.",
+      "en": "Heuristic profile (Drinx catalogue) — Fussigny Extra."
+    }
+  },
+  {
+    "id": "br-fussigny-selection",
+    "category": "brandy",
+    "name": "Fussigny Selection",
+    "style": "cognac-vs",
+    "region": "Cognac, Francuska",
+    "country": "Francuska",
+    "body": 2,
+    "sweetness": 2,
+    "flavorTags": [
+      "suho-voce",
+      "vanilija",
+      "hrast"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 6.0,
+    "priceEUR": {
+      "min": 52.15,
+      "max": 52.15
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Fussigny Selection: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil cognac-vs ide uz Habano ili blagi maduro.",
+      "en": "With Fussigny Selection: brandy wants a slower smoke and medium body; cognac-vs suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-fussigny-selection-gb-07-l-2402",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Fussigny Selection.",
+      "en": "Heuristic profile (Drinx catalogue) — Fussigny Selection."
+    }
+  },
+  {
+    "id": "br-fussigny-superieur",
+    "category": "brandy",
+    "name": "Fussigny Superieur",
+    "style": "cognac-vs",
+    "region": "Cognac, Francuska",
+    "country": "Francuska",
+    "body": 2,
+    "sweetness": 2,
+    "flavorTags": [
+      "suho-voce",
+      "vanilija",
+      "hrast"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 74.39,
+      "max": 74.39
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Fussigny Superieur: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil cognac-vs ide uz Habano ili blagi maduro.",
+      "en": "With Fussigny Superieur: brandy wants a slower smoke and medium body; cognac-vs suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-fussigny-superieur-gb-07-l-2182",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Fussigny Superieur.",
+      "en": "Heuristic profile (Drinx catalogue) — Fussigny Superieur."
+    }
+  },
+  {
+    "id": "br-fussigny-xo",
+    "category": "brandy",
+    "name": "Fussigny XO",
+    "style": "cognac-xo",
+    "region": "Cognac, Francuska",
+    "country": "Francuska",
+    "body": 4,
+    "sweetness": 3,
+    "flavorTags": [
+      "suho-voce",
+      "vanilija",
+      "hrast"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 7.0,
+    "priceEUR": {
+      "min": 138.63,
+      "max": 138.63
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Fussigny XO: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil cognac-xo ide uz Habano ili blagi maduro.",
+      "en": "With Fussigny XO: brandy wants a slower smoke and medium body; cognac-xo suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-fussigny-xo-gb-07-l-4734",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Fussigny XO.",
+      "en": "Heuristic profile (Drinx catalogue) — Fussigny XO."
+    }
+  },
+  {
+    "id": "br-gautier-vs",
+    "category": "brandy",
+    "name": "Gautier VS",
+    "style": "cognac-vs",
+    "region": "Cognac, Francuska",
+    "country": "Francuska",
+    "body": 2,
+    "sweetness": 2,
+    "flavorTags": [
+      "suho-voce",
+      "vanilija",
+      "hrast"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 6.0,
+    "priceEUR": {
+      "min": 40.88,
+      "max": 40.88
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Gautier VS: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil cognac-vs ide uz Habano ili blagi maduro.",
+      "en": "With Gautier VS: brandy wants a slower smoke and medium body; cognac-vs suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-gautier-vs-gb-07-l-7352",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Gautier VS.",
+      "en": "Heuristic profile (Drinx catalogue) — Gautier VS."
+    }
+  },
+  {
+    "id": "br-gautier-vsop",
+    "category": "brandy",
+    "name": "Gautier VSOP",
+    "style": "cognac-vsop",
+    "region": "Cognac, Francuska",
+    "country": "Francuska",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "suho-voce",
+      "vanilija",
+      "hrast"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 6.0,
+    "priceEUR": {
+      "min": 43.5,
+      "max": 43.5
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Gautier VSOP: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil cognac-vsop ide uz Habano ili blagi maduro.",
+      "en": "With Gautier VSOP: brandy wants a slower smoke and medium body; cognac-vsop suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-gautier-vsop-gb-07-l-4287",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Gautier VSOP.",
+      "en": "Heuristic profile (Drinx catalogue) — Gautier VSOP."
+    }
+  },
+  {
+    "id": "br-hardy-vs",
+    "category": "brandy",
+    "name": "Hardy VS",
+    "style": "cognac-vs",
+    "region": "Cognac, Francuska",
+    "country": "Francuska",
+    "body": 2,
+    "sweetness": 2,
+    "flavorTags": [
+      "suho-voce",
+      "vanilija",
+      "hrast"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 57.15,
+      "max": 57.15
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Hardy VS: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil cognac-vs ide uz Habano ili blagi maduro.",
+      "en": "With Hardy VS: brandy wants a slower smoke and medium body; cognac-vs suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-hardy-vs-07-l-6184",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Hardy VS. Profil je orijentir za sparivanje, ne lab mjerenje.",
+      "en": "Heuristic profile (Drinx catalogue) — Hardy VS."
+    }
+  },
+  {
+    "id": "br-hardy-xo",
+    "category": "brandy",
+    "name": "Hardy XO",
+    "style": "cognac-xo",
+    "region": "Cognac, Francuska",
+    "country": "Francuska",
+    "body": 4,
+    "sweetness": 3,
+    "flavorTags": [
+      "suho-voce",
+      "vanilija",
+      "hrast"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 57.15,
+      "max": 57.15
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Hardy XO: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil cognac-xo ide uz Habano ili blagi maduro.",
+      "en": "With Hardy XO: brandy wants a slower smoke and medium body; cognac-xo suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-hardy-xo-07-l-5647",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Hardy XO. Profil je orijentir za sparivanje, ne lab mjerenje.",
+      "en": "Heuristic profile (Drinx catalogue) — Hardy XO."
+    }
+  },
+  {
+    "id": "br-hardy-xo-rare",
+    "category": "brandy",
+    "name": "Hardy XO RARE",
+    "style": "cognac-xo",
+    "region": "Cognac, Francuska",
+    "country": "Francuska",
+    "body": 4,
+    "sweetness": 3,
+    "flavorTags": [
+      "suho-voce",
+      "vanilija",
+      "hrast"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 7.0,
+    "priceEUR": {
+      "min": 112.6,
+      "max": 112.6
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Hardy XO RARE: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil cognac-xo ide uz Habano ili blagi maduro.",
+      "en": "With Hardy XO RARE: brandy wants a slower smoke and medium body; cognac-xo suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-hardy-xo-rare-gb-07-l-8542",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Hardy XO RARE.",
+      "en": "Heuristic profile (Drinx catalogue) — Hardy XO RARE."
+    }
+  },
+  {
+    "id": "br-hennessy-v-s-o-p",
+    "category": "brandy",
+    "name": "Hennessy V.S.O.P",
+    "style": "cognac-vs",
+    "region": "Cognac, Francuska",
+    "country": "Francuska",
+    "body": 2,
+    "sweetness": 2,
+    "flavorTags": [
+      "suho-voce",
+      "vanilija",
+      "hrast"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 65.2,
+      "max": 65.2
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Hennessy V.S.O.P: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil cognac-vs ide uz Habano ili blagi maduro.",
+      "en": "With Hennessy V.S.O.P: brandy wants a slower smoke and medium body; cognac-vs suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-hennessy-vsop-07-l-6999",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Hennessy V.S.O.P.",
+      "en": "Heuristic profile (Drinx catalogue) — Hennessy V.S.O.P."
+    }
+  },
+  {
+    "id": "br-hennessy-vs-gold-bottle-2025",
+    "category": "brandy",
+    "name": "Hennessy VS Gold bottle 2025",
+    "style": "cognac-vs",
+    "region": "Cognac, Francuska",
+    "country": "Francuska",
+    "body": 2,
+    "sweetness": 2,
+    "flavorTags": [
+      "suho-voce",
+      "vanilija",
+      "hrast"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 6.0,
+    "priceEUR": {
+      "min": 45.59,
+      "max": 45.59
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Hennessy VS Gold bottle 2025: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil cognac-vs ide uz Habano ili blagi maduro.",
+      "en": "With Hennessy VS Gold bottle 2025: brandy wants a slower smoke and medium body; cognac-vs suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-hennessy-vs-gold-bottle-2025-07-l-8405",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Hennessy VS Gold bottle 2025.",
+      "en": "Heuristic profile (Drinx catalogue) — Hennessy VS Gold bottle 2025."
+    }
+  },
+  {
+    "id": "br-hennessy-vs-lebron-james",
+    "category": "brandy",
+    "name": "Hennessy VS Lebron James",
+    "style": "cognac-vs",
+    "region": "Cognac, Francuska",
+    "country": "Francuska",
+    "body": 2,
+    "sweetness": 2,
+    "flavorTags": [
+      "suho-voce",
+      "vanilija",
+      "hrast"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 6.0,
+    "priceEUR": {
+      "min": 48.05,
+      "max": 48.05
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Hennessy VS Lebron James: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil cognac-vs ide uz Habano ili blagi maduro.",
+      "en": "With Hennessy VS Lebron James: brandy wants a slower smoke and medium body; cognac-vs suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-hennessy-vs-lebron-james-gb-07-l-2789",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Hennessy VS Lebron James.",
+      "en": "Heuristic profile (Drinx catalogue) — Hennessy VS Lebron James."
+    }
+  },
+  {
+    "id": "br-leyrat-v-s-o-p-reserve",
+    "category": "brandy",
+    "name": "Leyrat V.S.O.P. Reserve",
+    "style": "cognac-vs",
+    "region": "Cognac, Francuska",
+    "country": "Francuska",
+    "body": 2,
+    "sweetness": 2,
+    "flavorTags": [
+      "suho-voce",
+      "vanilija",
+      "hrast"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 59.94,
+      "max": 59.94
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Leyrat V.S.O.P. Reserve: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil cognac-vs ide uz Habano ili blagi maduro.",
+      "en": "With Leyrat V.S.O.P. Reserve: brandy wants a slower smoke and medium body; cognac-vs suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-leyrat-vsop-reserve-07-l-6445",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Leyrat V.S.O.P. Reserve.",
+      "en": "Heuristic profile (Drinx catalogue) — Leyrat V.S.O.P. Reserve."
+    }
+  },
+  {
+    "id": "br-leyrat-xo-elite",
+    "category": "brandy",
+    "name": "Leyrat Xo Elite",
+    "style": "cognac-xo",
+    "region": "Cognac, Francuska",
+    "country": "Francuska",
+    "body": 4,
+    "sweetness": 3,
+    "flavorTags": [
+      "suho-voce",
+      "vanilija",
+      "hrast"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 7.5,
+    "priceEUR": {
+      "min": 169.97,
+      "max": 169.97
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Leyrat Xo Elite: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil cognac-xo ide uz Habano ili blagi maduro.",
+      "en": "With Leyrat Xo Elite: brandy wants a slower smoke and medium body; cognac-xo suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-leyrat-xo-elite-gb-07-l-4721",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Leyrat Xo Elite.",
+      "en": "Heuristic profile (Drinx catalogue) — Leyrat Xo Elite."
+    }
+  },
+  {
+    "id": "br-leyrat-xo-hors-d-age",
+    "category": "brandy",
+    "name": "Leyrat Xo Hors D'Age",
+    "style": "cognac-xo",
+    "region": "Cognac, Francuska",
+    "country": "Francuska",
+    "body": 4,
+    "sweetness": 3,
+    "flavorTags": [
+      "suho-voce",
+      "vanilija",
+      "hrast"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 7.0,
+    "priceEUR": {
+      "min": 104.36,
+      "max": 104.36
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Leyrat Xo Hors D'Age: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil cognac-xo ide uz Habano ili blagi maduro.",
+      "en": "With Leyrat Xo Hors D'Age: brandy wants a slower smoke and medium body; cognac-xo suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-leyrat-xo-hors-dage-07-l-6150",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Leyrat Xo Hors D'Age.",
+      "en": "Heuristic profile (Drinx catalogue) — Leyrat Xo Hors D'Age."
+    }
+  },
+  {
+    "id": "br-martell-vs",
+    "category": "brandy",
+    "name": "Martell VS",
+    "style": "cognac-vs",
+    "region": "Cognac, Francuska",
+    "country": "Francuska",
+    "body": 2,
+    "sweetness": 2,
+    "flavorTags": [
+      "suho-voce",
+      "vanilija",
+      "hrast"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 5.5,
+    "priceEUR": {
+      "min": 31.99,
+      "max": 31.99
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Martell VS: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil cognac-vs ide uz Habano ili blagi maduro.",
+      "en": "With Martell VS: brandy wants a slower smoke and medium body; cognac-vs suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-martell-vs-07-l-810",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Martell VS.",
+      "en": "Heuristic profile (Drinx catalogue) — Martell VS."
+    }
+  },
+  {
+    "id": "br-martell-vsop-red-barrel",
+    "category": "brandy",
+    "name": "Martell VSOP Red Barrel",
+    "style": "cognac-vsop",
+    "region": "Cognac, Francuska",
+    "country": "Francuska",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "suho-voce",
+      "vanilija",
+      "hrast"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 6.0,
+    "priceEUR": {
+      "min": 51.83,
+      "max": 51.83
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Martell VSOP Red Barrel: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil cognac-vsop ide uz Habano ili blagi maduro.",
+      "en": "With Martell VSOP Red Barrel: brandy wants a slower smoke and medium body; cognac-vsop suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-martell-vsop-red-barrel-07-l-1296",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Martell VSOP Red Barrel.",
+      "en": "Heuristic profile (Drinx catalogue) — Martell VSOP Red Barrel."
+    }
+  },
+  {
+    "id": "br-merlet-vs",
+    "category": "brandy",
+    "name": "Merlet VS",
+    "style": "cognac-vs",
+    "region": "Cognac, Francuska",
+    "country": "Francuska",
+    "body": 2,
+    "sweetness": 2,
+    "flavorTags": [
+      "suho-voce",
+      "vanilija",
+      "hrast"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 6.0,
+    "priceEUR": {
+      "min": 45.7,
+      "max": 45.7
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Merlet VS: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil cognac-vs ide uz Habano ili blagi maduro.",
+      "en": "With Merlet VS: brandy wants a slower smoke and medium body; cognac-vs suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-merlet-vs-07-l-3919",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Merlet VS. Profil je orijentir za sparivanje, ne lab mjerenje.",
+      "en": "Heuristic profile (Drinx catalogue) — Merlet VS."
+    }
+  },
+  {
+    "id": "br-meukow-arima",
+    "category": "brandy",
+    "name": "Meukow Arima",
+    "style": "cognac-vs",
+    "region": "Cognac, Francuska",
+    "country": "Francuska",
+    "body": 2,
+    "sweetness": 2,
+    "flavorTags": [
+      "suho-voce",
+      "vanilija",
+      "hrast"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 56.3,
+      "max": 56.3
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Meukow Arima: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil cognac-vs ide uz Habano ili blagi maduro.",
+      "en": "With Meukow Arima: brandy wants a slower smoke and medium body; cognac-vs suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-meukow-arima-07-l-10094",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Meukow Arima.",
+      "en": "Heuristic profile (Drinx catalogue) — Meukow Arima."
+    }
+  },
+  {
+    "id": "br-meukow-black-panther",
+    "category": "brandy",
+    "name": "Meukow Black Panther",
+    "style": "cognac-vs",
+    "region": "Cognac, Francuska",
+    "country": "Francuska",
+    "body": 2,
+    "sweetness": 2,
+    "flavorTags": [
+      "suho-voce",
+      "vanilija",
+      "hrast"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 6.0,
+    "priceEUR": {
+      "min": 40.9,
+      "max": 40.9
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Meukow Black Panther: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil cognac-vs ide uz Habano ili blagi maduro.",
+      "en": "With Meukow Black Panther: brandy wants a slower smoke and medium body; cognac-vs suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-meukow-black-panther-07-l-10103",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Meukow Black Panther.",
+      "en": "Heuristic profile (Drinx catalogue) — Meukow Black Panther."
+    }
+  },
+  {
+    "id": "br-meukow-icone",
+    "category": "brandy",
+    "name": "Meukow ICONE",
+    "style": "cognac-vs",
+    "region": "Cognac, Francuska",
+    "country": "Francuska",
+    "body": 2,
+    "sweetness": 2,
+    "flavorTags": [
+      "suho-voce",
+      "vanilija",
+      "hrast"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 66.6,
+      "max": 66.6
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Meukow ICONE: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil cognac-vs ide uz Habano ili blagi maduro.",
+      "en": "With Meukow ICONE: brandy wants a slower smoke and medium body; cognac-vs suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-meukow-icone-gb-07-l-5879",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Meukow ICONE.",
+      "en": "Heuristic profile (Drinx catalogue) — Meukow ICONE."
+    }
+  },
+  {
+    "id": "br-meukow-icone-gold",
+    "category": "brandy",
+    "name": "Meukow ICONE GOLD",
+    "style": "cognac-vs",
+    "region": "Cognac, Francuska",
+    "country": "Francuska",
+    "body": 2,
+    "sweetness": 2,
+    "flavorTags": [
+      "suho-voce",
+      "vanilija",
+      "hrast"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 71.8,
+      "max": 71.8
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Meukow ICONE GOLD: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil cognac-vs ide uz Habano ili blagi maduro.",
+      "en": "With Meukow ICONE GOLD: brandy wants a slower smoke and medium body; cognac-vs suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-meukow-icone-gold-gb-07-l-10182",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Meukow ICONE GOLD.",
+      "en": "Heuristic profile (Drinx catalogue) — Meukow ICONE GOLD."
+    }
+  },
+  {
+    "id": "br-meukow-vs",
+    "category": "brandy",
+    "name": "Meukow VS",
+    "style": "cognac-vs",
+    "region": "Cognac, Francuska",
+    "country": "Francuska",
+    "body": 2,
+    "sweetness": 2,
+    "flavorTags": [
+      "suho-voce",
+      "vanilija",
+      "hrast"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 5.5,
+    "priceEUR": {
+      "min": 39.9,
+      "max": 39.9
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Meukow VS: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil cognac-vs ide uz Habano ili blagi maduro.",
+      "en": "With Meukow VS: brandy wants a slower smoke and medium body; cognac-vs suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-meukow-vs-gb-07-l-2946",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Meukow VS. Profil je orijentir za sparivanje, ne lab mjerenje.",
+      "en": "Heuristic profile (Drinx catalogue) — Meukow VS."
+    }
+  },
+  {
+    "id": "br-meukow-vsop",
+    "category": "brandy",
+    "name": "Meukow VSOP",
+    "style": "cognac-vsop",
+    "region": "Cognac, Francuska",
+    "country": "Francuska",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "suho-voce",
+      "vanilija",
+      "hrast"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 6.0,
+    "priceEUR": {
+      "min": 54.9,
+      "max": 54.9
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Meukow VSOP: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil cognac-vsop ide uz Habano ili blagi maduro.",
+      "en": "With Meukow VSOP: brandy wants a slower smoke and medium body; cognac-vsop suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-meukow-vsop-gb-07-l-3668",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Meukow VSOP.",
+      "en": "Heuristic profile (Drinx catalogue) — Meukow VSOP."
+    }
+  },
+  {
+    "id": "br-meukow-vsop-red",
+    "category": "brandy",
+    "name": "Meukow VSOP Red",
+    "style": "cognac-vsop",
+    "region": "Cognac, Francuska",
+    "country": "Francuska",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "suho-voce",
+      "vanilija",
+      "hrast"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 61.5,
+      "max": 61.5
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Meukow VSOP Red: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil cognac-vsop ide uz Habano ili blagi maduro.",
+      "en": "With Meukow VSOP Red: brandy wants a slower smoke and medium body; cognac-vsop suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-meukow-vsop-red-gb-07-l-10202",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Meukow VSOP Red.",
+      "en": "Heuristic profile (Drinx catalogue) — Meukow VSOP Red."
+    }
+  },
+  {
+    "id": "br-meukow-xo",
+    "category": "brandy",
+    "name": "Meukow XO",
+    "style": "cognac-xo",
+    "region": "Cognac, Francuska",
+    "country": "Francuska",
+    "body": 4,
+    "sweetness": 3,
+    "flavorTags": [
+      "suho-voce",
+      "vanilija",
+      "hrast"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 7.0,
+    "priceEUR": {
+      "min": 133.2,
+      "max": 133.2
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Meukow XO: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil cognac-xo ide uz Habano ili blagi maduro.",
+      "en": "With Meukow XO: brandy wants a slower smoke and medium body; cognac-xo suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-meukow-xo-gb-07-l-5333",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Meukow XO. Profil je orijentir za sparivanje, ne lab mjerenje.",
+      "en": "Heuristic profile (Drinx catalogue) — Meukow XO."
+    }
+  },
+  {
+    "id": "br-meukow-xo-grand-champagne",
+    "category": "brandy",
+    "name": "Meukow XO Grand Champagne",
+    "style": "cognac-xo",
+    "region": "Cognac, Francuska",
+    "country": "Francuska",
+    "body": 4,
+    "sweetness": 3,
+    "flavorTags": [
+      "suho-voce",
+      "vanilija",
+      "hrast"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 7.5,
+    "priceEUR": {
+      "min": 158.9,
+      "max": 158.9
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Meukow XO Grand Champagne: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil cognac-xo ide uz Habano ili blagi maduro.",
+      "en": "With Meukow XO Grand Champagne: brandy wants a slower smoke and medium body; cognac-xo suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-meukow-xo-grand-champagne-gb-07-l-2830",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Meukow XO Grand Champagne.",
+      "en": "Heuristic profile (Drinx catalogue) — Meukow XO Grand Champagne."
+    }
+  },
+  {
+    "id": "br-planat-overproof",
+    "category": "brandy",
+    "name": "Planat Overproof",
+    "style": "cognac-vs",
+    "region": "Cognac, Francuska",
+    "country": "Francuska",
+    "body": 2,
+    "sweetness": 2,
+    "flavorTags": [
+      "suho-voce",
+      "vanilija",
+      "hrast"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 7.0,
+    "priceEUR": {
+      "min": 97.15,
+      "max": 97.15
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Planat Overproof: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil cognac-vs ide uz Habano ili blagi maduro.",
+      "en": "With Planat Overproof: brandy wants a slower smoke and medium body; cognac-vs suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-planat-overproof-07-l-2275",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Planat Overproof.",
+      "en": "Heuristic profile (Drinx catalogue) — Planat Overproof."
+    }
+  },
+  {
+    "id": "br-remy-martin-1738-accord-royal",
+    "category": "brandy",
+    "name": "Remy Martin 1738 ACCORD ROYAL",
+    "style": "cognac-vs",
+    "region": "Cognac, Francuska",
+    "country": "Francuska",
+    "body": 2,
+    "sweetness": 2,
+    "flavorTags": [
+      "suho-voce",
+      "vanilija",
+      "hrast"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 68.9,
+      "max": 68.9
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Remy Martin 1738 ACCORD ROYAL: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil cognac-vs ide uz Habano ili blagi maduro.",
+      "en": "With Remy Martin 1738 ACCORD ROYAL: brandy wants a slower smoke and medium body; cognac-vs suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-remy-martin-1738-accord-royal-gb-07-l-2656",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Remy Martin 1738 ACCORD ROYAL.",
+      "en": "Heuristic profile (Drinx catalogue) — Remy Martin 1738 ACCORD ROYAL."
+    }
+  },
+  {
+    "id": "br-remy-martin-v-s-o-p",
+    "category": "brandy",
+    "name": "Remy Martin V.S.O.P.",
+    "style": "cognac-vs",
+    "region": "Cognac, Francuska",
+    "country": "Francuska",
+    "body": 2,
+    "sweetness": 2,
+    "flavorTags": [
+      "suho-voce",
+      "vanilija",
+      "hrast"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 66.5,
+      "max": 66.5
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Remy Martin V.S.O.P.: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil cognac-vs ide uz Habano ili blagi maduro.",
+      "en": "With Remy Martin V.S.O.P.: brandy wants a slower smoke and medium body; cognac-vs suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-remy-martin-vsop-07-l-4510",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Remy Martin V.S.O.P..",
+      "en": "Heuristic profile (Drinx catalogue) — Remy Martin V.S.O.P.."
+    }
+  },
+  {
+    "id": "br-reviseur-xo",
+    "category": "brandy",
+    "name": "Reviseur Xo",
+    "style": "cognac-xo",
+    "region": "Cognac, Francuska",
+    "country": "Francuska",
+    "body": 4,
+    "sweetness": 3,
+    "flavorTags": [
+      "suho-voce",
+      "vanilija",
+      "hrast"
+    ],
+    "additiveStatus": "clean",
+    "additiveDetail": {
+      "hr": "Heuristika — nije lab mjerenje",
+      "en": "Heuristic — not a lab measurement"
+    },
+    "additiveSource": "Drinx ingest heuristika",
+    "qualityScore": 7.5,
+    "priceEUR": {
+      "min": 179.81,
+      "max": 179.81
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "status": null,
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "water": 2,
+      "rocks": 1,
+      "highball": 0,
+      "cola": 0,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Reviseur Xo: konjak/armagnac traži sporije dimljenje i srednje tijelo; stil cognac-xo ide uz Habano ili blagi maduro.",
+      "en": "With Reviseur Xo: brandy wants a slower smoke and medium body; cognac-xo suits Habano or a mild maduro."
+    },
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-reviseur-xo-gb-07-l-1694",
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Reviseur Xo.",
+      "en": "Heuristic profile (Drinx catalogue) — Reviseur Xo."
     }
   }
 ]

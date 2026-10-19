@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { dedupeCollectionCigarIds } from "./cigarItemId";
 import {
+  favoriteItemIds,
   ownedWithoutStockIds,
   shortlistItemIds,
 } from "./collectionPanels";
@@ -10,6 +11,7 @@ const blank = (patch: Partial<ItemState> = {}): ItemState => ({
   owned: false,
   tried: false,
   wishlist: false,
+  favorite: false,
   rating: null,
   note: "",
   ...patch,
@@ -44,6 +46,16 @@ describe("collectionPanels filters", () => {
       e: blank({ note: "ok" }),
     };
     expect(shortlistItemIds(items).sort()).toEqual(["a", "d", "e"]);
+  });
+
+  it("favoriteItemIds uzima samo favorite, ukljucujuci owned", () => {
+    const items: Record<string, ItemState> = {
+      a: blank({ favorite: true }),
+      b: blank({ favorite: true, owned: true }),
+      c: blank({ wishlist: true }),
+      d: blank({ tried: true }),
+    };
+    expect(favoriteItemIds(items).sort()).toEqual(["a", "b"]);
   });
 
   it("ownedWithoutStock gleda zalihu po kljucu", () => {

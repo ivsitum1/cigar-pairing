@@ -5,11 +5,11 @@ import { parseLessonBody } from "../lib/parseLessonBody";
 const REQUIRED_SECTION_IDS = [
   "zakon-praksa-duhan",
   "karta-pice",
+  "trgovine-pice",
   "karta-duhan-referentno",
   "cijena-link-app",
   "prvi-kit",
   "sezona-zaliha",
-  "moj-plan-app",
   "poklon",
 ] as const;
 

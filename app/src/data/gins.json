@@ -141,11 +141,11 @@
     "qualityScore": 8.6,
     "abv": 40.0,
     "priceEUR": {
-      "min": 49.8,
-      "max": 49.8
+      "min": 33.5,
+      "max": 33.5
     },
-    "shopHR": "allez.hr",
-    "priceUrl": null,
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-rare-dry-four-pillars-07-l-5342",
     "pairable": true,
     "serving": {
       "neat": 3,
@@ -677,11 +677,11 @@
     "qualityScore": 8.0,
     "abv": 40.0,
     "priceEUR": {
-      "min": 28.0,
-      "max": 28.0
+      "min": 34.5,
+      "max": 34.5
     },
-    "shopHR": "allez.hr",
-    "priceUrl": null,
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-plymouth-07-l-5441",
     "pairable": true,
     "serving": {
       "neat": 2,
@@ -1087,11 +1087,11 @@
     "qualityScore": 7.7,
     "abv": 40.0,
     "priceEUR": {
-      "min": 18.0,
-      "max": 18.0
+      "min": 17.99,
+      "max": 17.99
     },
-    "shopHR": "ecuga.com",
-    "priceUrl": null,
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-beefeater-07-l-5530",
     "pairable": true,
     "serving": {
       "neat": 2,
@@ -2870,11 +2870,11 @@
     "qualityScore": 7.1,
     "abv": 40.0,
     "priceEUR": {
-      "min": 26.0,
-      "max": 26.0
+      "min": 34.9,
+      "max": 34.9
     },
-    "shopHR": "ecuga.com",
-    "priceUrl": null,
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-citadelle-07-l-7411",
     "pairable": true,
     "serving": {
       "neat": 3,
@@ -4192,11 +4192,11 @@
     "qualityScore": 6.7,
     "abv": 40.0,
     "priceEUR": {
-      "min": 43.0,
-      "max": 43.0
+      "min": 39.99,
+      "max": 39.99
     },
-    "shopHR": "ecuga.com",
-    "priceUrl": null,
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-alkkemist-07-l-4476",
     "pairable": true,
     "serving": {
       "neat": 3,
@@ -5998,11 +5998,11 @@
     "qualityScore": 6.5,
     "abv": 40.0,
     "priceEUR": {
-      "min": 32.0,
-      "max": 32.0
+      "min": 32.9,
+      "max": 32.9
     },
-    "shopHR": "ecuga.com",
-    "priceUrl": null,
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-bathtub-07-l-146",
     "pairable": true,
     "serving": {
       "neat": 3,
@@ -7984,6 +7984,3730 @@
     "notes": {
       "hr": "EARL BROWN (40 %) — contemporary. Nos nosi cvijet, citrus i začini; srednje tijelo. G&T ili martini, ne desertni gutljaj.",
       "en": "EARL BROWN (40 %) — contemporary. The nose carries cvijet, citrus i začini; medium body. G&T or martini, not a dessert sip."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-n-berry-gin-berryshka",
+    "name": "'N Berry Gin Berryshka",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 37.9,
+      "max": 37.9
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-n-berry-gin-berryshka-07-l-7502",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz 'N Berry Gin Berryshka: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With 'N Berry Gin Berryshka: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — 'N Berry Gin Berryshka.",
+      "en": "Heuristic profile (Drinx catalogue) — 'N Berry Gin Berryshka."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-1689-authentic-dutch-dry",
+    "name": "Authentic Dutch Dry 1689",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 31.24,
+      "max": 31.24
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-1689-authentic-dutch-dry-07-l-8946",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Authentic Dutch Dry 1689: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Authentic Dutch Dry 1689: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — 1689 Authentic Dutch Dry.",
+      "en": "Heuristic profile (Drinx catalogue) — 1689 Authentic Dutch Dry."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-adamus-dry-gin-organic",
+    "name": "Adamus Dry Gin Organic",
+    "style": "london-dry",
+    "region": "Engleska",
+    "botanicalProfile": "classic-juniper",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "borovica",
+      "citrus",
+      "travnato"
+    ],
+    "qualityScore": 7.0,
+    "priceEUR": {
+      "min": 58.9,
+      "max": 58.9
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-adamus-dry-gin-organic-07-l-6959",
+    "pairable": true,
+    "serving": {
+      "neat": 2,
+      "tonic": 3,
+      "martini": 3,
+      "highball": 2,
+      "best": "Martini ili G&T"
+    },
+    "cigarHint": {
+      "hr": "Uz Adamus Dry Gin Organic: srednja cigara s citrusnim ili biljnim pokrovom; stil london-dry traži čist draw i ne prejaku snagu.",
+      "en": "With Adamus Dry Gin Organic: a medium cigar with citrus or herbal wrapper; london-dry wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Adamus Dry Gin Organic.",
+      "en": "Heuristic profile (Drinx catalogue) — Adamus Dry Gin Organic."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-agramero-house-of-spirits",
+    "name": "Agramero House of Spirits",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 38.0,
+      "max": 38.0
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-agramero-house-of-spirits-07-l-12469",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Agramero House of Spirits: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Agramero House of Spirits: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Agramero House of Spirits.",
+      "en": "Heuristic profile (Drinx catalogue) — Agramero House of Spirits."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-aviation-2",
+    "name": "Aviation",
+    "style": "contemporary",
+    "region": "SAD",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "biljno",
+      "korijen"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 33.71,
+      "max": 33.71
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-aviation-07-l-5347",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Aviation: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Aviation: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Aviation. Profil je orijentir za sparivanje, ne lab mjerenje.",
+      "en": "Heuristic profile (Drinx catalogue) — Aviation."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-bio-black-mountain",
+    "name": "Bio Black Mountain",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 35.2,
+      "max": 35.2
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-bio-black-mountain-07-l-9600",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Bio Black Mountain: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Bio Black Mountain: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Bio Black Mountain.",
+      "en": "Heuristic profile (Drinx catalogue) — Bio Black Mountain."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-black-gansloser",
+    "name": "Black Gansloser",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 6.7,
+    "priceEUR": {
+      "min": 40.0,
+      "max": 40.0
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-black-gansloser-07-l-1451",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Black Gansloser: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Black Gansloser: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Black Gansloser.",
+      "en": "Heuristic profile (Drinx catalogue) — Black Gansloser."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-blood-monkey-original",
+    "name": "Blood Monkey Original",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 6.7,
+    "priceEUR": {
+      "min": 48.9,
+      "max": 48.9
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-blood-monkey-original-07-l-9692",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Blood Monkey Original: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Blood Monkey Original: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Blood Monkey Original.",
+      "en": "Heuristic profile (Drinx catalogue) — Blood Monkey Original."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-blood-monkey-spice-storm",
+    "name": "Blood Monkey Spice Storm",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 6.7,
+    "priceEUR": {
+      "min": 48.9,
+      "max": 48.9
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-blood-monkey-spice-storm-07-l-9927",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Blood Monkey Spice Storm: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Blood Monkey Spice Storm: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Blood Monkey Spice Storm.",
+      "en": "Heuristic profile (Drinx catalogue) — Blood Monkey Spice Storm."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-blood-monkey-tropical-storm",
+    "name": "Blood Monkey Tropical Storm",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 6.7,
+    "priceEUR": {
+      "min": 48.9,
+      "max": 48.9
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-blood-monkey-tropical-storm-07-l-1061",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Blood Monkey Tropical Storm: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Blood Monkey Tropical Storm: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Blood Monkey Tropical Storm.",
+      "en": "Heuristic profile (Drinx catalogue) — Blood Monkey Tropical Storm."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-bombay-premier-cru-murcian-lemon",
+    "name": "Bombay Premier Cru Murcian Lemon",
+    "style": "london-dry",
+    "region": "Engleska",
+    "botanicalProfile": "classic-juniper",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "borovica",
+      "citrus",
+      "travnato"
+    ],
+    "qualityScore": 6.7,
+    "priceEUR": {
+      "min": 54.9,
+      "max": 54.9
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-bombay-premier-cru-murcian-lemon-07-l-6927",
+    "pairable": true,
+    "serving": {
+      "neat": 2,
+      "tonic": 3,
+      "martini": 3,
+      "highball": 2,
+      "best": "Martini ili G&T"
+    },
+    "cigarHint": {
+      "hr": "Uz Bombay Premier Cru Murcian Lemon: srednja cigara s citrusnim ili biljnim pokrovom; stil london-dry traži čist draw i ne prejaku snagu.",
+      "en": "With Bombay Premier Cru Murcian Lemon: a medium cigar with citrus or herbal wrapper; london-dry wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Bombay Premier Cru Murcian Lemon.",
+      "en": "Heuristic profile (Drinx catalogue) — Bombay Premier Cru Murcian Lemon."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-bordiga-premium-smoke",
+    "name": "Bordiga Premium smoke",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 7.0,
+    "priceEUR": {
+      "min": 58.31,
+      "max": 58.31
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-bordiga-premium-smoke-07-l-1917",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Bordiga Premium smoke: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Bordiga Premium smoke: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Bordiga Premium smoke.",
+      "en": "Heuristic profile (Drinx catalogue) — Bordiga Premium smoke."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-bordiga-smoke-small-batch-ciais",
+    "name": "Bordiga Smoke Small Batch Ciais",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 7.0,
+    "priceEUR": {
+      "min": 58.31,
+      "max": 58.31
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-bordiga-smoke-small-batch-ciais-07-l-4191",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Bordiga Smoke Small Batch Ciais: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Bordiga Smoke Small Batch Ciais: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Bordiga Smoke Small Batch Ciais.",
+      "en": "Heuristic profile (Drinx catalogue) — Bordiga Smoke Small Batch Ciais."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-boxer-fresh-juniper",
+    "name": "Boxer Fresh Juniper",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 7.0,
+    "priceEUR": {
+      "min": 76.41,
+      "max": 76.41
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-boxer-fresh-juniper-07-l-593",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Boxer Fresh Juniper: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Boxer Fresh Juniper: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Boxer Fresh Juniper.",
+      "en": "Heuristic profile (Drinx catalogue) — Boxer Fresh Juniper."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-brockmans",
+    "name": "Brockmans",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 38.99,
+      "max": 38.99
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-brockmans-07-l-10165",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Brockmans: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Brockmans: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Brockmans. Profil je orijentir za sparivanje, ne lab mjerenje.",
+      "en": "Heuristic profile (Drinx catalogue) — Brockmans."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-cambridge-three-seasons",
+    "name": "Cambridge Three Seasons",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 7.0,
+    "priceEUR": {
+      "min": 100.13,
+      "max": 100.13
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-cambridge-three-seasons-07-l-1121",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Cambridge Three Seasons: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Cambridge Three Seasons: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Cambridge Three Seasons.",
+      "en": "Heuristic profile (Drinx catalogue) — Cambridge Three Seasons."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-cambridge-truffle",
+    "name": "Cambridge Truffle",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 7.0,
+    "priceEUR": {
+      "min": 122.9,
+      "max": 122.9
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-cambridge-truffle-07-l-6738",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Cambridge Truffle: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Cambridge Truffle: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Cambridge Truffle.",
+      "en": "Heuristic profile (Drinx catalogue) — Cambridge Truffle."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-cross-keys-black-currant-premium-craft",
+    "name": "Cross Keys Black Currant Premium Craft",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 29.0,
+      "max": 29.0
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-cross-keys-black-currant-premium-craft-07-l-327",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Cross Keys Black Currant Premium Craft: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Cross Keys Black Currant Premium Craft: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Cross Keys Black Currant Premium Craft.",
+      "en": "Heuristic profile (Drinx catalogue) — Cross Keys Black Currant Premium Craft."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-cubical-kiss",
+    "name": "Cubical Kiss",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 34.52,
+      "max": 34.52
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-cubical-kiss-07-l-8864",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Cubical Kiss: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Cubical Kiss: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Cubical Kiss.",
+      "en": "Heuristic profile (Drinx catalogue) — Cubical Kiss."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-cubical-mango",
+    "name": "Cubical Mango",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 3.5,
+    "priceEUR": {
+      "min": 41.39,
+      "max": 41.39
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-cubical-mango-07-l-5623",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Cubical Mango: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Cubical Mango: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Cubical Mango.",
+      "en": "Heuristic profile (Drinx catalogue) — Cubical Mango."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-cubical-premium",
+    "name": "Cubical Premium",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 33.3,
+      "max": 33.3
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-cubical-premium-07-l-9370",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Cubical Premium: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Cubical Premium: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Cubical Premium.",
+      "en": "Heuristic profile (Drinx catalogue) — Cubical Premium."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-cubical-ultra-premium",
+    "name": "Cubical Ultra Premium",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 6.7,
+    "priceEUR": {
+      "min": 48.86,
+      "max": 48.86
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-cubical-ultra-premium-07-l-2777",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Cubical Ultra Premium: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Cubical Ultra Premium: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Cubical Ultra Premium.",
+      "en": "Heuristic profile (Drinx catalogue) — Cubical Ultra Premium."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-dingle-original",
+    "name": "Dingle Original",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 38.9,
+      "max": 38.9
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-dingle-original-07-l-5688",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Dingle Original: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Dingle Original: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Dingle Original.",
+      "en": "Heuristic profile (Drinx catalogue) — Dingle Original."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-dockyard-chatham-dry",
+    "name": "Dockyard Chatham Dry",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 33.81,
+      "max": 33.81
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-dockyard-chatham-dry-07-l-5492",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Dockyard Chatham Dry: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Dockyard Chatham Dry: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Dockyard Chatham Dry.",
+      "en": "Heuristic profile (Drinx catalogue) — Dockyard Chatham Dry."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-drumshanbo-gunpowder",
+    "name": "Drumshanbo Gunpowder",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 35.76,
+      "max": 35.76
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-drumshanbo-gunpowder-07-l-7112",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Drumshanbo Gunpowder: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Drumshanbo Gunpowder: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Drumshanbo Gunpowder.",
+      "en": "Heuristic profile (Drinx catalogue) — Drumshanbo Gunpowder."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-dry-gin-dedicated-to-frida-ginarte",
+    "name": "Dry Gin Dedicated to Frida Ginarte",
+    "style": "london-dry",
+    "region": "Engleska",
+    "botanicalProfile": "classic-juniper",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "borovica",
+      "citrus",
+      "travnato"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 38.94,
+      "max": 38.94
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-dry-gin-dedicated-to-frida-ginarte-07-l-6989",
+    "pairable": true,
+    "serving": {
+      "neat": 2,
+      "tonic": 3,
+      "martini": 3,
+      "highball": 2,
+      "best": "Martini ili G&T"
+    },
+    "cigarHint": {
+      "hr": "Uz Dry Gin Dedicated to Frida Ginarte: srednja cigara s citrusnim ili biljnim pokrovom; stil london-dry traži čist draw i ne prejaku snagu.",
+      "en": "With Dry Gin Dedicated to Frida Ginarte: a medium cigar with citrus or herbal wrapper; london-dry wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Dry Gin Dedicated to Frida Ginarte.",
+      "en": "Heuristic profile (Drinx catalogue) — Dry Gin Dedicated to Frida Ginarte."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-edelweisser-dalmatian-dry",
+    "name": "Edelweisser Dalmatian dry",
+    "style": "croatian",
+    "region": "Hrvatska",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "biljno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 6.7,
+    "priceEUR": {
+      "min": 30.64,
+      "max": 30.64
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-edelweisser-dalmatian-dry-gb-07-l-8770",
+    "pairable": true,
+    "serving": {
+      "neat": 2,
+      "tonic": 3,
+      "martini": 2,
+      "highball": 2,
+      "best": "G&T s mediteranskim tonikom"
+    },
+    "cigarHint": {
+      "hr": "Uz Edelweisser Dalmatian dry: srednja cigara s citrusnim ili biljnim pokrovom; stil croatian traži čist draw i ne prejaku snagu.",
+      "en": "With Edelweisser Dalmatian dry: a medium cigar with citrus or herbal wrapper; croatian wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Edelweisser Dalmatian dry.",
+      "en": "Heuristic profile (Drinx catalogue) — Edelweisser Dalmatian dry."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-engine",
+    "name": "Engine",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 35.99,
+      "max": 35.99
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-engine-07-l-5297",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Engine: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Engine: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Engine. Profil je orijentir za sparivanje, ne lab mjerenje.",
+      "en": "Heuristic profile (Drinx catalogue) — Engine."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-garden-shed",
+    "name": "Garden Shed",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 35.76,
+      "max": 35.76
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-garden-shed-07-l-2130",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Garden Shed: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Garden Shed: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Garden Shed.",
+      "en": "Heuristic profile (Drinx catalogue) — Garden Shed."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-generous-azur",
+    "name": "Generous Azur",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 39.99,
+      "max": 39.99
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-generous-azur-07-l-3139",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Generous Azur: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Generous Azur: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Generous Azur.",
+      "en": "Heuristic profile (Drinx catalogue) — Generous Azur."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-generous-black",
+    "name": "Generous Black",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 34.9,
+      "max": 34.9
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-generous-black-07-l-8846",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Generous Black: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Generous Black: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Generous Black.",
+      "en": "Heuristic profile (Drinx catalogue) — Generous Black."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-generous-green-organic",
+    "name": "Generous Green Organic",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 36.28,
+      "max": 36.28
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-generous-green-organic-07-l-545",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Generous Green Organic: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Generous Green Organic: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Generous Green Organic.",
+      "en": "Heuristic profile (Drinx catalogue) — Generous Green Organic."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-generous-purple-grape-berry",
+    "name": "Generous Purple Grape Berry",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 37.9,
+      "max": 37.9
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-generous-purple-grape-berry-07-l-2560",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Generous Purple Grape Berry: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Generous Purple Grape Berry: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Generous Purple Grape Berry.",
+      "en": "Heuristic profile (Drinx catalogue) — Generous Purple Grape Berry."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-ginibee-unique",
+    "name": "GiniBee Unique",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 34.33,
+      "max": 34.33
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-ginibee-unique-07-l-6491",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz GiniBee Unique: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With GiniBee Unique: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — GiniBee Unique.",
+      "en": "Heuristic profile (Drinx catalogue) — GiniBee Unique."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-gold-47-heaven-hell",
+    "name": "Gold 47 Heaven & Hell",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 6.7,
+    "priceEUR": {
+      "min": 48.15,
+      "max": 48.15
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-gold-47-heaven-hell-07-l-6173",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Gold 47 Heaven & Hell: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Gold 47 Heaven & Hell: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Gold 47 Heaven & Hell.",
+      "en": "Heuristic profile (Drinx catalogue) — Gold 47 Heaven & Hell."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-gold-999-9-finest-blend",
+    "name": "Gold 999.9 Finest Blend",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 29.0,
+      "max": 29.0
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-gold-9999-finest-blend-07-l-8158",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Gold 999.9 Finest Blend: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Gold 999.9 Finest Blend: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Gold 999.9 Finest Blend.",
+      "en": "Heuristic profile (Drinx catalogue) — Gold 999.9 Finest Blend."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-green-mist-black-thistle",
+    "name": "Green Mist Black Thistle",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 6.7,
+    "priceEUR": {
+      "min": 51.13,
+      "max": 51.13
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-green-mist-black-thistle-07-l-1767",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Green Mist Black Thistle: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Green Mist Black Thistle: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Green Mist Black Thistle.",
+      "en": "Heuristic profile (Drinx catalogue) — Green Mist Black Thistle."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-gvine-floraison",
+    "name": "Gvine Floraison",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 6.7,
+    "priceEUR": {
+      "min": 47.02,
+      "max": 47.02
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-gvine-floraison-07-l-3274",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Gvine Floraison: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Gvine Floraison: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Gvine Floraison.",
+      "en": "Heuristic profile (Drinx catalogue) — Gvine Floraison."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-handcrafted-etsu",
+    "name": "Handcrafted Etsu",
+    "style": "contemporary",
+    "region": "Japan",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "papar"
+    ],
+    "qualityScore": 6.7,
+    "priceEUR": {
+      "min": 40.88,
+      "max": 40.88
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-handcrafted-etsu-gb-07-l-1623",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Handcrafted Etsu: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Handcrafted Etsu: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Handcrafted Etsu.",
+      "en": "Heuristic profile (Drinx catalogue) — Handcrafted Etsu."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-heather-mist-black-thistle",
+    "name": "Heather Mist Black Thistle",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 6.7,
+    "priceEUR": {
+      "min": 51.13,
+      "max": 51.13
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-heather-mist-black-thistle-07-l-5394",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Heather Mist Black Thistle: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Heather Mist Black Thistle: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Heather Mist Black Thistle.",
+      "en": "Heuristic profile (Drinx catalogue) — Heather Mist Black Thistle."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-hendricks",
+    "name": "Hendricks",
+    "style": "contemporary",
+    "region": "Škotska",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 3,
+    "flavorTags": [
+      "cvjetno",
+      "kamilica",
+      "biljno"
+    ],
+    "qualityScore": 7.4,
+    "priceEUR": {
+      "min": 38.5,
+      "max": 38.5
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-hendricks-07-l-2703",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Hendricks: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Hendricks: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Hendricks. Profil je orijentir za sparivanje, ne lab mjerenje.",
+      "en": "Heuristic profile (Drinx catalogue) — Hendricks."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-hendricks-another",
+    "name": "Hendricks Another",
+    "style": "contemporary",
+    "region": "Škotska",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 3,
+    "flavorTags": [
+      "cvjetno",
+      "kamilica",
+      "biljno"
+    ],
+    "qualityScore": 7.4,
+    "priceEUR": {
+      "min": 36.99,
+      "max": 36.99
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-hendricks-another-07-l-10159",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Hendricks Another: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Hendricks Another: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Hendricks Another.",
+      "en": "Heuristic profile (Drinx catalogue) — Hendricks Another."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-hendricks-grand-cabaret",
+    "name": "Hendricks Grand Cabaret",
+    "style": "contemporary",
+    "region": "Škotska",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 3,
+    "flavorTags": [
+      "cvjetno",
+      "kamilica",
+      "biljno"
+    ],
+    "qualityScore": 7.4,
+    "priceEUR": {
+      "min": 39.9,
+      "max": 39.9
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-hendricks-grand-cabaret-07-l-683",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Hendricks Grand Cabaret: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Hendricks Grand Cabaret: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Hendricks Grand Cabaret.",
+      "en": "Heuristic profile (Drinx catalogue) — Hendricks Grand Cabaret."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-hendricks-lunar",
+    "name": "Hendricks Lunar",
+    "style": "contemporary",
+    "region": "Škotska",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 3,
+    "flavorTags": [
+      "cvjetno",
+      "kamilica",
+      "biljno"
+    ],
+    "qualityScore": 7.6,
+    "priceEUR": {
+      "min": 40.88,
+      "max": 40.88
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-hendricks-lunar-07-l-3714",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Hendricks Lunar: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Hendricks Lunar: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Hendricks Lunar.",
+      "en": "Heuristic profile (Drinx catalogue) — Hendricks Lunar."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-hendricks-midsummer",
+    "name": "Hendricks Midsummer",
+    "style": "contemporary",
+    "region": "Škotska",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 3,
+    "flavorTags": [
+      "cvjetno",
+      "kamilica",
+      "biljno"
+    ],
+    "qualityScore": 7.4,
+    "priceEUR": {
+      "min": 39.86,
+      "max": 39.86
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-hendricks-midsummer-07-l-429",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Hendricks Midsummer: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Hendricks Midsummer: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Hendricks Midsummer.",
+      "en": "Heuristic profile (Drinx catalogue) — Hendricks Midsummer."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-hendricks-neptunia",
+    "name": "Hendricks Neptunia",
+    "style": "contemporary",
+    "region": "Škotska",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 3,
+    "flavorTags": [
+      "cvjetno",
+      "kamilica",
+      "biljno"
+    ],
+    "qualityScore": 7.4,
+    "priceEUR": {
+      "min": 34.99,
+      "max": 34.99
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-hendricks-neptunia-07-l-3391",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Hendricks Neptunia: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Hendricks Neptunia: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Hendricks Neptunia.",
+      "en": "Heuristic profile (Drinx catalogue) — Hendricks Neptunia."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-hendricks-orbium",
+    "name": "Hendricks Orbium",
+    "style": "contemporary",
+    "region": "Škotska",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 3,
+    "flavorTags": [
+      "cvjetno",
+      "kamilica",
+      "biljno"
+    ],
+    "qualityScore": 7.6,
+    "priceEUR": {
+      "min": 43.77,
+      "max": 43.77
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-hendricks-orbium-07-l-5576",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Hendricks Orbium: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Hendricks Orbium: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Hendricks Orbium.",
+      "en": "Heuristic profile (Drinx catalogue) — Hendricks Orbium."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-jinzu",
+    "name": "Jinzu",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 6.7,
+    "priceEUR": {
+      "min": 51.02,
+      "max": 51.02
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-jinzu-07-l-8536",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Jinzu: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Jinzu: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Jinzu. Profil je orijentir za sparivanje, ne lab mjerenje.",
+      "en": "Heuristic profile (Drinx catalogue) — Jinzu."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-kimerud-havaldsen-aquavit",
+    "name": "Kimerud Havaldsen Aquavit",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 35.55,
+      "max": 35.55
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-kimerud-havaldsen-aquavit-07-l-5791",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Kimerud Havaldsen Aquavit: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Kimerud Havaldsen Aquavit: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Kimerud Havaldsen Aquavit.",
+      "en": "Heuristic profile (Drinx catalogue) — Kimerud Havaldsen Aquavit."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-kimerud-hillside-aged",
+    "name": "Kimerud Hillside Aged",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 35.55,
+      "max": 35.55
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-kimerud-hillside-aged-07-l-8795",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Kimerud Hillside Aged: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Kimerud Hillside Aged: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Kimerud Hillside Aged.",
+      "en": "Heuristic profile (Drinx catalogue) — Kimerud Hillside Aged."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-kimerud-small-batches",
+    "name": "Kimerud Small Batches",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 31.25,
+      "max": 31.25
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-kimerud-small-batches-07-l-1626",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Kimerud Small Batches: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Kimerud Small Batches: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Kimerud Small Batches.",
+      "en": "Heuristic profile (Drinx catalogue) — Kimerud Small Batches."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-kimerud-wild-grade",
+    "name": "Kimerud Wild Grade",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 32.48,
+      "max": 32.48
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-kimerud-wild-grade-07-l-8757",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Kimerud Wild Grade: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Kimerud Wild Grade: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Kimerud Wild Grade.",
+      "en": "Heuristic profile (Drinx catalogue) — Kimerud Wild Grade."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-kocbek-47-heaven-hell",
+    "name": "Kocbek 47 Heaven & Hell",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 6.7,
+    "priceEUR": {
+      "min": 40.88,
+      "max": 40.88
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-kocbek-47-heaven-hell-07-l-857",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Kocbek 47 Heaven & Hell: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Kocbek 47 Heaven & Hell: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Kocbek 47 Heaven & Hell.",
+      "en": "Heuristic profile (Drinx catalogue) — Kocbek 47 Heaven & Hell."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-langley-s-london-dry",
+    "name": "Langley's London Dry",
+    "style": "london-dry",
+    "region": "Engleska",
+    "botanicalProfile": "classic-juniper",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "borovica",
+      "citrus",
+      "travnato"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 30.64,
+      "max": 30.64
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-langleys-london-dry-07-l-5069",
+    "pairable": true,
+    "serving": {
+      "neat": 2,
+      "tonic": 3,
+      "martini": 3,
+      "highball": 2,
+      "best": "Martini ili G&T"
+    },
+    "cigarHint": {
+      "hr": "Uz Langley's London Dry: srednja cigara s citrusnim ili biljnim pokrovom; stil london-dry traži čist draw i ne prejaku snagu.",
+      "en": "With Langley's London Dry: a medium cigar with citrus or herbal wrapper; london-dry wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Langley's London Dry.",
+      "en": "Heuristic profile (Drinx catalogue) — Langley's London Dry."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-lind-lime",
+    "name": "Lind & Lime",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 6.7,
+    "priceEUR": {
+      "min": 44.63,
+      "max": 44.63
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-lind-lime-07-l-521",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Lind & Lime: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Lind & Lime: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Lind & Lime.",
+      "en": "Heuristic profile (Drinx catalogue) — Lind & Lime."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-london-dry-gin-berryshka",
+    "name": "London Dry Gin Berryshka",
+    "style": "london-dry",
+    "region": "Engleska",
+    "botanicalProfile": "classic-juniper",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "borovica",
+      "citrus",
+      "travnato"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 37.9,
+      "max": 37.9
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-london-dry-gin-berryshka-07-l-6618",
+    "pairable": true,
+    "serving": {
+      "neat": 2,
+      "tonic": 3,
+      "martini": 3,
+      "highball": 2,
+      "best": "Martini ili G&T"
+    },
+    "cigarHint": {
+      "hr": "Uz London Dry Gin Berryshka: srednja cigara s citrusnim ili biljnim pokrovom; stil london-dry traži čist draw i ne prejaku snagu.",
+      "en": "With London Dry Gin Berryshka: a medium cigar with citrus or herbal wrapper; london-dry wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — London Dry Gin Berryshka.",
+      "en": "Heuristic profile (Drinx catalogue) — London Dry Gin Berryshka."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-luxury-london-dry-gift-set-heaven-hell",
+    "name": "Luxury London dry gift set Heaven & Hell",
+    "style": "london-dry",
+    "region": "Engleska",
+    "botanicalProfile": "classic-juniper",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "borovica",
+      "citrus",
+      "travnato"
+    ],
+    "qualityScore": 7.0,
+    "priceEUR": {
+      "min": 121.92,
+      "max": 121.92
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-luxury-london-dry-gift-set-heaven-hell-gb-07-l-9442",
+    "pairable": true,
+    "serving": {
+      "neat": 2,
+      "tonic": 3,
+      "martini": 3,
+      "highball": 2,
+      "best": "Martini ili G&T"
+    },
+    "cigarHint": {
+      "hr": "Uz Luxury London dry gift set Heaven & Hell: srednja cigara s citrusnim ili biljnim pokrovom; stil london-dry traži čist draw i ne prejaku snagu.",
+      "en": "With Luxury London dry gift set Heaven & Hell: a medium cigar with citrus or herbal wrapper; london-dry wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Luxury London dry gift set Heaven & Hell.",
+      "en": "Heuristic profile (Drinx catalogue) — Luxury London dry gift set Heaven & Hell."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-lust-47-heaven-hell",
+    "name": "Lušt 47 Heaven & Hell",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 6.7,
+    "priceEUR": {
+      "min": 40.88,
+      "max": 40.88
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-lust-47-heaven-hell-07-l-7308",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Lušt 47 Heaven & Hell: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Lušt 47 Heaven & Hell: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Lušt 47 Heaven & Hell.",
+      "en": "Heuristic profile (Drinx catalogue) — Lušt 47 Heaven & Hell."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-magellan",
+    "name": "Magellan",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 31.0,
+      "max": 31.0
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-magellan-07-l-4535",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Magellan: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Magellan: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Magellan. Profil je orijentir za sparivanje, ne lab mjerenje.",
+      "en": "Heuristic profile (Drinx catalogue) — Magellan."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-malfy-rosa",
+    "name": "Malfy Rosa",
+    "style": "contemporary",
+    "region": "Mediteran",
+    "botanicalProfile": "mediterranean",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "citrus",
+      "biljno",
+      "travnato"
+    ],
+    "qualityScore": 7.6,
+    "priceEUR": {
+      "min": 28.69,
+      "max": 28.69
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-malfy-rosa-07-l-793",
+    "pairable": true,
+    "serving": {
+      "neat": 2,
+      "tonic": 3,
+      "martini": 2,
+      "highball": 2,
+      "best": "G&T s mediteranskim tonikom"
+    },
+    "cigarHint": {
+      "hr": "Uz Malfy Rosa: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Malfy Rosa: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Malfy Rosa.",
+      "en": "Heuristic profile (Drinx catalogue) — Malfy Rosa."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-malfy-con-arancia",
+    "name": "Malfy con Arancia",
+    "style": "contemporary",
+    "region": "Mediteran",
+    "botanicalProfile": "mediterranean",
+    "body": 2,
+    "sweetness": 2,
+    "flavorTags": [
+      "citrus",
+      "voce",
+      "biljno"
+    ],
+    "qualityScore": 7.6,
+    "priceEUR": {
+      "min": 28.69,
+      "max": 28.69
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-malfy-con-arancia-07-l-230",
+    "pairable": true,
+    "serving": {
+      "neat": 2,
+      "tonic": 3,
+      "martini": 2,
+      "highball": 2,
+      "best": "G&T s mediteranskim tonikom"
+    },
+    "cigarHint": {
+      "hr": "Uz Malfy con Arancia: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Malfy con Arancia: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Malfy con Arancia.",
+      "en": "Heuristic profile (Drinx catalogue) — Malfy con Arancia."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-marasca-infused-edelweisser",
+    "name": "Marasca Infused Edelweisser",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 30.64,
+      "max": 30.64
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-marasca-infused-edelweisser-gb-07-l-4327",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Marasca Infused Edelweisser: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Marasca Infused Edelweisser: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Marasca Infused Edelweisser.",
+      "en": "Heuristic profile (Drinx catalogue) — Marasca Infused Edelweisser."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-mare",
+    "name": "Mare",
+    "style": "contemporary",
+    "region": "Mediteran",
+    "botanicalProfile": "mediterranean",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "biljno",
+      "travnato",
+      "zacini"
+    ],
+    "qualityScore": 7.8,
+    "priceEUR": {
+      "min": 42.99,
+      "max": 42.99
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-mare-07-l-7809",
+    "pairable": true,
+    "serving": {
+      "neat": 2,
+      "tonic": 3,
+      "martini": 2,
+      "highball": 2,
+      "best": "G&T s mediteranskim tonikom"
+    },
+    "cigarHint": {
+      "hr": "Uz Mare: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Mare: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Mare. Profil je orijentir za sparivanje, ne lab mjerenje.",
+      "en": "Heuristic profile (Drinx catalogue) — Mare."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-mare-v-lanterni",
+    "name": "Mare v Lanterni",
+    "style": "contemporary",
+    "region": "Mediteran",
+    "botanicalProfile": "mediterranean",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "biljno",
+      "travnato",
+      "zacini"
+    ],
+    "qualityScore": 7.8,
+    "priceEUR": {
+      "min": 54.9,
+      "max": 54.9
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-mare-v-lanterni-gb-07-l-1331",
+    "pairable": true,
+    "serving": {
+      "neat": 2,
+      "tonic": 3,
+      "martini": 2,
+      "highball": 2,
+      "best": "G&T s mediteranskim tonikom"
+    },
+    "cigarHint": {
+      "hr": "Uz Mare v Lanterni: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Mare v Lanterni: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Mare v Lanterni.",
+      "en": "Heuristic profile (Drinx catalogue) — Mare v Lanterni."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-martin-miller-s",
+    "name": "Martin Miller's",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 35.8,
+      "max": 35.8
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-martin-millers-07-l-9381",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Martin Miller's: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Martin Miller's: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Martin Miller's.",
+      "en": "Heuristic profile (Drinx catalogue) — Martin Miller's."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-matsui-the-hakuto",
+    "name": "Matsui The Hakuto",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 7.0,
+    "priceEUR": {
+      "min": 60.25,
+      "max": 60.25
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-matsui-the-hakuto-gb-07-l-8715",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Matsui The Hakuto: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Matsui The Hakuto: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Matsui The Hakuto.",
+      "en": "Heuristic profile (Drinx catalogue) — Matsui The Hakuto."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-mcqueen-and-the-violet-fog",
+    "name": "Mcqueen and the Violet Fog",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 6.7,
+    "priceEUR": {
+      "min": 40.88,
+      "max": 40.88
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-mcqueen-and-the-violet-fog-07-l-8973",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Mcqueen and the Violet Fog: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Mcqueen and the Violet Fog: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Mcqueen and the Violet Fog.",
+      "en": "Heuristic profile (Drinx catalogue) — Mcqueen and the Violet Fog."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-old-english",
+    "name": "Old English",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 34.8,
+      "max": 34.8
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-old-english-07-l-11960",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Old English: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Old English: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Old English.",
+      "en": "Heuristic profile (Drinx catalogue) — Old English."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-old-pilot-s-london-dry",
+    "name": "Old Pilot's London Dry",
+    "style": "croatian",
+    "region": "Hrvatska",
+    "botanicalProfile": "mediterranean",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "biljno",
+      "cvjetno",
+      "travnato"
+    ],
+    "qualityScore": 7.1,
+    "priceEUR": {
+      "min": 49.99,
+      "max": 49.99
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-old-pilots-london-dry-07-l-6714",
+    "pairable": true,
+    "serving": {
+      "neat": 2,
+      "tonic": 3,
+      "martini": 2,
+      "highball": 2,
+      "best": "G&T s mediteranskim tonikom"
+    },
+    "cigarHint": {
+      "hr": "Uz Old Pilot's London Dry: srednja cigara s citrusnim ili biljnim pokrovom; stil croatian traži čist draw i ne prejaku snagu.",
+      "en": "With Old Pilot's London Dry: a medium cigar with citrus or herbal wrapper; croatian wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Old Pilot's London Dry.",
+      "en": "Heuristic profile (Drinx catalogue) — Old Pilot's London Dry."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-old-pilots-barrel-aged",
+    "name": "Old Pilot’s Barrel Aged",
+    "style": "croatian",
+    "region": "Hrvatska",
+    "botanicalProfile": "mediterranean",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "biljno",
+      "cvjetno",
+      "travnato"
+    ],
+    "qualityScore": 7.4,
+    "priceEUR": {
+      "min": 60.9,
+      "max": 60.9
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-old-pilots-barrel-aged-07-l-8965",
+    "pairable": true,
+    "serving": {
+      "neat": 2,
+      "tonic": 3,
+      "martini": 2,
+      "highball": 2,
+      "best": "G&T s mediteranskim tonikom"
+    },
+    "cigarHint": {
+      "hr": "Uz Old Pilot’s Barrel Aged: srednja cigara s citrusnim ili biljnim pokrovom; stil croatian traži čist draw i ne prejaku snagu.",
+      "en": "With Old Pilot’s Barrel Aged: a medium cigar with citrus or herbal wrapper; croatian wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Old Pilot’s Barrel Aged.",
+      "en": "Heuristic profile (Drinx catalogue) — Old Pilot’s Barrel Aged."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-old-raj",
+    "name": "Old Raj",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 29.61,
+      "max": 29.61
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-old-raj-gb-07-l-3471",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Old Raj: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Old Raj: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Old Raj. Profil je orijentir za sparivanje, ne lab mjerenje.",
+      "en": "Heuristic profile (Drinx catalogue) — Old Raj."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-one-key",
+    "name": "One Key",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 38.9,
+      "max": 38.9
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-one-key-07-l-5532",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz One Key: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With One Key: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — One Key. Profil je orijentir za sparivanje, ne lab mjerenje.",
+      "en": "Heuristic profile (Drinx catalogue) — One Key."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-opihr-london-dry",
+    "name": "Opihr London Dry",
+    "style": "london-dry",
+    "region": "Engleska",
+    "botanicalProfile": "classic-juniper",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "borovica",
+      "citrus",
+      "travnato"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 29.61,
+      "max": 29.61
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-opihr-london-dry-07-l-6985",
+    "pairable": true,
+    "serving": {
+      "neat": 2,
+      "tonic": 3,
+      "martini": 3,
+      "highball": 2,
+      "best": "Martini ili G&T"
+    },
+    "cigarHint": {
+      "hr": "Uz Opihr London Dry: srednja cigara s citrusnim ili biljnim pokrovom; stil london-dry traži čist draw i ne prejaku snagu.",
+      "en": "With Opihr London Dry: a medium cigar with citrus or herbal wrapper; london-dry wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Opihr London Dry.",
+      "en": "Heuristic profile (Drinx catalogue) — Opihr London Dry."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-opihr-oriental-spiced-london-dry",
+    "name": "Opihr Oriental Spiced London Dry",
+    "style": "london-dry",
+    "region": "Engleska",
+    "botanicalProfile": "classic-juniper",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "borovica",
+      "citrus",
+      "travnato"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 35.76,
+      "max": 35.76
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-opihr-oriental-spiced-london-dry-07-l-9082",
+    "pairable": true,
+    "serving": {
+      "neat": 2,
+      "tonic": 3,
+      "martini": 3,
+      "highball": 2,
+      "best": "Martini ili G&T"
+    },
+    "cigarHint": {
+      "hr": "Uz Opihr Oriental Spiced London Dry: srednja cigara s citrusnim ili biljnim pokrovom; stil london-dry traži čist draw i ne prejaku snagu.",
+      "en": "With Opihr Oriental Spiced London Dry: a medium cigar with citrus or herbal wrapper; london-dry wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Opihr Oriental Spiced London Dry.",
+      "en": "Heuristic profile (Drinx catalogue) — Opihr Oriental Spiced London Dry."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-orange-kiss-brockmans",
+    "name": "Orange Kiss Brockmans",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 39.8,
+      "max": 39.8
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-orange-kiss-brockmans-07-l-12217",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Orange Kiss Brockmans: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Orange Kiss Brockmans: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Orange Kiss Brockmans.",
+      "en": "Heuristic profile (Drinx catalogue) — Orange Kiss Brockmans."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-pacific-limited-etsu",
+    "name": "Pacific Limited Etsu",
+    "style": "contemporary",
+    "region": "Japan",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "papar"
+    ],
+    "qualityScore": 6.7,
+    "priceEUR": {
+      "min": 48.05,
+      "max": 48.05
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-pacific-limited-etsu-gb-07-l-3771",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Pacific Limited Etsu: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Pacific Limited Etsu: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Pacific Limited Etsu.",
+      "en": "Heuristic profile (Drinx catalogue) — Pacific Limited Etsu."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-peaky-blinder",
+    "name": "Peaky Blinder",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 30.64,
+      "max": 30.64
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-peaky-blinder-07-l-3075",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Peaky Blinder: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Peaky Blinder: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Peaky Blinder.",
+      "en": "Heuristic profile (Drinx catalogue) — Peaky Blinder."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-pearl-mist-black-thistle",
+    "name": "Pearl Mist Black Thistle",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 6.7,
+    "priceEUR": {
+      "min": 51.13,
+      "max": 51.13
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-pearl-mist-black-thistle-07-l-1337",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Pearl Mist Black Thistle: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Pearl Mist Black Thistle: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Pearl Mist Black Thistle.",
+      "en": "Heuristic profile (Drinx catalogue) — Pearl Mist Black Thistle."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-pomegranate-dry-gin-ginarte",
+    "name": "Pomegranate Dry Gin Ginarte",
+    "style": "london-dry",
+    "region": "Engleska",
+    "botanicalProfile": "classic-juniper",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "borovica",
+      "citrus",
+      "travnato"
+    ],
+    "qualityScore": 6.7,
+    "priceEUR": {
+      "min": 43.04,
+      "max": 43.04
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-pomegranate-dry-gin-ginarte-gb-07-l-6687",
+    "pairable": true,
+    "serving": {
+      "neat": 2,
+      "tonic": 3,
+      "martini": 3,
+      "highball": 2,
+      "best": "Martini ili G&T"
+    },
+    "cigarHint": {
+      "hr": "Uz Pomegranate Dry Gin Ginarte: srednja cigara s citrusnim ili biljnim pokrovom; stil london-dry traži čist draw i ne prejaku snagu.",
+      "en": "With Pomegranate Dry Gin Ginarte: a medium cigar with citrus or herbal wrapper; london-dry wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Pomegranate Dry Gin Ginarte.",
+      "en": "Heuristic profile (Drinx catalogue) — Pomegranate Dry Gin Ginarte."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-porcelain-shanghai-mandarin-dry",
+    "name": "Porcelain Shanghai Mandarin Dry",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 7.0,
+    "priceEUR": {
+      "min": 65.6,
+      "max": 65.6
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-porcelain-shanghai-mandarin-dry-gb-07-l-12262",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Porcelain Shanghai Mandarin Dry: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Porcelain Shanghai Mandarin Dry: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Porcelain Shanghai Mandarin Dry.",
+      "en": "Heuristic profile (Drinx catalogue) — Porcelain Shanghai Mandarin Dry."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-premium-magdic",
+    "name": "Premium Magdić",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 36.45,
+      "max": 36.45
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-premium-magdic-07-l-12702",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Premium Magdić: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Premium Magdić: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Premium Magdić.",
+      "en": "Heuristic profile (Drinx catalogue) — Premium Magdić."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-purfl-gin-navy-strenght-berryshka",
+    "name": "Purfl Gin Navy Strenght Berryshka",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 6.7,
+    "priceEUR": {
+      "min": 43.9,
+      "max": 43.9
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-purfl-gin-navy-strenght-berryshka-07-l-3760",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Purfl Gin Navy Strenght Berryshka: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Purfl Gin Navy Strenght Berryshka: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Purfl Gin Navy Strenght Berryshka.",
+      "en": "Heuristic profile (Drinx catalogue) — Purfl Gin Navy Strenght Berryshka."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-red-mist-black-thistle",
+    "name": "Red Mist Black Thistle",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 6.7,
+    "priceEUR": {
+      "min": 45.6,
+      "max": 45.6
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-red-mist-black-thistle-07-l-2512",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Red Mist Black Thistle: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Red Mist Black Thistle: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Red Mist Black Thistle.",
+      "en": "Heuristic profile (Drinx catalogue) — Red Mist Black Thistle."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-rose-47-heaven-hell",
+    "name": "Rose 47 Heaven & Hell",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 6.7,
+    "priceEUR": {
+      "min": 40.88,
+      "max": 40.88
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-rose-47-heaven-hell-07-l-6234",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Rose 47 Heaven & Hell: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Rose 47 Heaven & Hell: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Rose 47 Heaven & Hell.",
+      "en": "Heuristic profile (Drinx catalogue) — Rose 47 Heaven & Hell."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-sakurao-original",
+    "name": "Sakurao Original",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 6.7,
+    "priceEUR": {
+      "min": 41.8,
+      "max": 41.8
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-sakurao-original-gb-07-l-8044",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Sakurao Original: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Sakurao Original: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Sakurao Original.",
+      "en": "Heuristic profile (Drinx catalogue) — Sakurao Original."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-sipsmith-sloe",
+    "name": "Sipsmith SLOE",
+    "style": "london-dry",
+    "region": "London, UK",
+    "botanicalProfile": "classic-juniper",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "borovica",
+      "citrus",
+      "travnato"
+    ],
+    "qualityScore": 3.5,
+    "priceEUR": {
+      "min": 47.24,
+      "max": 47.24
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-sipsmith-sloe-07-l-1429",
+    "pairable": true,
+    "serving": {
+      "neat": 2,
+      "tonic": 3,
+      "martini": 3,
+      "highball": 2,
+      "best": "Martini ili G&T"
+    },
+    "cigarHint": {
+      "hr": "Uz Sipsmith SLOE: srednja cigara s citrusnim ili biljnim pokrovom; stil london-dry traži čist draw i ne prejaku snagu.",
+      "en": "With Sipsmith SLOE: a medium cigar with citrus or herbal wrapper; london-dry wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Sipsmith SLOE.",
+      "en": "Heuristic profile (Drinx catalogue) — Sipsmith SLOE."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-sir-edmond-big-giftbox",
+    "name": "Sir Edmond Big Giftbox",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 7.0,
+    "priceEUR": {
+      "min": 99.98,
+      "max": 99.98
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-sir-edmond-big-giftbox-07-l-11912",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Sir Edmond Big Giftbox: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Sir Edmond Big Giftbox: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Sir Edmond Big Giftbox.",
+      "en": "Heuristic profile (Drinx catalogue) — Sir Edmond Big Giftbox."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-small-batch-mermaid",
+    "name": "Small Batch Mermaid",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 6.7,
+    "priceEUR": {
+      "min": 44.9,
+      "max": 44.9
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-small-batch-mermaid-07-l-6059",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Small Batch Mermaid: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Small Batch Mermaid: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Small Batch Mermaid.",
+      "en": "Heuristic profile (Drinx catalogue) — Small Batch Mermaid."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-small-batch-pink-mermaid",
+    "name": "Small Batch Pink Mermaid",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 3.5,
+    "priceEUR": {
+      "min": 44.9,
+      "max": 44.9
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-small-batch-pink-mermaid-07-l-6995",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Small Batch Pink Mermaid: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Small Batch Pink Mermaid: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Small Batch Pink Mermaid.",
+      "en": "Heuristic profile (Drinx catalogue) — Small Batch Pink Mermaid."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-star-of-bombay",
+    "name": "Star Of Bombay",
+    "style": "london-dry",
+    "region": "Engleska",
+    "botanicalProfile": "classic-juniper",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "borovica",
+      "citrus",
+      "travnato"
+    ],
+    "qualityScore": 6.7,
+    "priceEUR": {
+      "min": 44.56,
+      "max": 44.56
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-star-of-bombay-07-l-7505",
+    "pairable": true,
+    "serving": {
+      "neat": 2,
+      "tonic": 3,
+      "martini": 3,
+      "highball": 2,
+      "best": "Martini ili G&T"
+    },
+    "cigarHint": {
+      "hr": "Uz Star Of Bombay: srednja cigara s citrusnim ili biljnim pokrovom; stil london-dry traži čist draw i ne prejaku snagu.",
+      "en": "With Star Of Bombay: a medium cigar with citrus or herbal wrapper; london-dry wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Star Of Bombay.",
+      "en": "Heuristic profile (Drinx catalogue) — Star Of Bombay."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-tanqueray-rangpur-lime",
+    "name": "Tanqueray Rangpur Lime",
+    "style": "london-dry",
+    "region": "Engleska",
+    "botanicalProfile": "classic-juniper",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "borovica",
+      "citrus",
+      "travnato"
+    ],
+    "qualityScore": 7.4,
+    "priceEUR": {
+      "min": 30.64,
+      "max": 30.64
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-tanqueray-rangpur-lime-07-l-6674",
+    "pairable": true,
+    "serving": {
+      "neat": 2,
+      "tonic": 3,
+      "martini": 3,
+      "highball": 2,
+      "best": "Martini ili G&T"
+    },
+    "cigarHint": {
+      "hr": "Uz Tanqueray Rangpur Lime: srednja cigara s citrusnim ili biljnim pokrovom; stil london-dry traži čist draw i ne prejaku snagu.",
+      "en": "With Tanqueray Rangpur Lime: a medium cigar with citrus or herbal wrapper; london-dry wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Tanqueray Rangpur Lime.",
+      "en": "Heuristic profile (Drinx catalogue) — Tanqueray Rangpur Lime."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-the-king-of-soho-london-dry",
+    "name": "The King of Soho London Dry",
+    "style": "london-dry",
+    "region": "Engleska",
+    "botanicalProfile": "classic-juniper",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "borovica",
+      "citrus",
+      "travnato"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 33.6,
+      "max": 33.6
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-the-king-of-soho-london-dry-07-l-12260",
+    "pairable": true,
+    "serving": {
+      "neat": 2,
+      "tonic": 3,
+      "martini": 3,
+      "highball": 2,
+      "best": "Martini ili G&T"
+    },
+    "cigarHint": {
+      "hr": "Uz The King of Soho London Dry: srednja cigara s citrusnim ili biljnim pokrovom; stil london-dry traži čist draw i ne prejaku snagu.",
+      "en": "With The King of Soho London Dry: a medium cigar with citrus or herbal wrapper; london-dry wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — The King of Soho London Dry.",
+      "en": "Heuristic profile (Drinx catalogue) — The King of Soho London Dry."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-the-london-no1-sherry-cask",
+    "name": "The London No1 Sherry cask",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 6.7,
+    "priceEUR": {
+      "min": 45.0,
+      "max": 45.0
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-the-london-no1-sherry-cask-07-l-6215",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz The London No1 Sherry cask: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With The London No1 Sherry cask: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — The London No1 Sherry cask.",
+      "en": "Heuristic profile (Drinx catalogue) — The London No1 Sherry cask."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-tokiiro-niigata-craft-gin",
+    "name": "Tokiiro Niigata Craft Gin",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 6.7,
+    "priceEUR": {
+      "min": 41.5,
+      "max": 41.5
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-tokiiro-niigata-craft-gin-07-l-515",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Tokiiro Niigata Craft Gin: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Tokiiro Niigata Craft Gin: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Tokiiro Niigata Craft Gin.",
+      "en": "Heuristic profile (Drinx catalogue) — Tokiiro Niigata Craft Gin."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-twin-tigers",
+    "name": "Twin Tigers",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 34.74,
+      "max": 34.74
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-twin-tigers-07-l-3866",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Twin Tigers: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Twin Tigers: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Twin Tigers.",
+      "en": "Heuristic profile (Drinx catalogue) — Twin Tigers."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-vanilla-sir-edmond",
+    "name": "Vanilla Sir Edmond",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 39.99,
+      "max": 39.99
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-vanilla-sir-edmond-07-l-5316",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz Vanilla Sir Edmond: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With Vanilla Sir Edmond: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — Vanilla Sir Edmond.",
+      "en": "Heuristic profile (Drinx catalogue) — Vanilla Sir Edmond."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-liker-de-borgen-17yo-malt-spirit",
+    "name": "De Borgen 17yo Malt Spirit",
+    "style": "contemporary",
+    "region": "World",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "cvjetno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 3.5,
+    "priceEUR": {
+      "min": 80.0,
+      "max": 80.0
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-liker-de-borgen-17yo-malt-spirit-07-l-8197",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "tonic": 2,
+      "martini": 3,
+      "highball": 2,
+      "best": "Cisti ili martini"
+    },
+    "cigarHint": {
+      "hr": "Uz liker De Borgen 17yo Malt Spirit: srednja cigara s citrusnim ili biljnim pokrovom; stil contemporary traži čist draw i ne prejaku snagu.",
+      "en": "With liker De Borgen 17yo Malt Spirit: a medium cigar with citrus or herbal wrapper; contemporary wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — liker De Borgen 17yo Malt Spirit.",
+      "en": "Heuristic profile (Drinx catalogue) — liker De Borgen 17yo Malt Spirit."
+    },
+    "category": "gin"
+  },
+  {
+    "id": "gin-s-bijelim-tartufom-aura",
+    "name": "s bijelim tartufom Aura",
+    "style": "croatian",
+    "region": "Hrvatska",
+    "botanicalProfile": "botanical",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "biljno",
+      "citrus",
+      "zacini"
+    ],
+    "qualityScore": 7.2,
+    "priceEUR": {
+      "min": 102.46,
+      "max": 102.46
+    },
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-gin-1384/gin-s-bijelim-tartufom-aura-07-l-1964",
+    "pairable": true,
+    "serving": {
+      "neat": 2,
+      "tonic": 3,
+      "martini": 2,
+      "highball": 2,
+      "best": "G&T s mediteranskim tonikom"
+    },
+    "cigarHint": {
+      "hr": "Uz s bijelim tartufom Aura: srednja cigara s citrusnim ili biljnim pokrovom; stil croatian traži čist draw i ne prejaku snagu.",
+      "en": "With s bijelim tartufom Aura: a medium cigar with citrus or herbal wrapper; croatian wants a clean draw and moderate strength."
+    },
+    "notes": {
+      "hr": "Heuristika (Drinx katalog) — s bijelim tartufom Aura.",
+      "en": "Heuristic profile (Drinx catalogue) — s bijelim tartufom Aura."
     },
     "category": "gin"
   }
