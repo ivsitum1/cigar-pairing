@@ -13,6 +13,13 @@ export function shortlistItemIds(
     .map(([id]) => id);
 }
 
+/** Go-to omiljeno — Collection panel; neovisno o wishlist/Kupovini. */
+export function favoriteItemIds(items: Record<string, ItemState>): string[] {
+  return Object.entries(items)
+    .filter(([, s]) => s.favorite)
+    .map(([id]) => id);
+}
+
 /** Imam, ali još 0 komada u svim humidorima (kandidat za QuickAdd / tab Kolekcija). */
 export function ownedWithoutStockIds(
   items: Record<string, ItemState>,

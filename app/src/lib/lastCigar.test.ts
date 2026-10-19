@@ -15,6 +15,7 @@ const state = (over: Partial<{ wishlist: boolean }> = {}) => ({
   owned: false,
   tried: false,
   wishlist: false,
+  favorite: false,
   rating: null,
   note: "",
   ...over,

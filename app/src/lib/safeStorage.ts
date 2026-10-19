@@ -33,6 +33,7 @@ function normalizeItem(value: unknown): ItemState | null {
     owned: typeof v.owned === "boolean" ? v.owned : false,
     tried: typeof v.tried === "boolean" ? v.tried : false,
     wishlist: typeof v.wishlist === "boolean" ? v.wishlist : false,
+    favorite: typeof v.favorite === "boolean" ? v.favorite : false,
     rating: normalizeRating(v.rating),
     note: typeof v.note === "string" ? v.note.trim() : "",
   };

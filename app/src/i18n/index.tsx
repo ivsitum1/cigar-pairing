@@ -113,8 +113,8 @@ export const STRINGS = {
   "club.dictionaryDoNotConfuse": { hr: "Ne miješati s", en: "Do not confuse with" },
   "club.hrGuide": { hr: "HR vodič kupnje", en: "Croatia buying guide" },
   "club.hrGuideTeaser": {
-    hr: "Praktičan vodič za kupnju u Hrvatskoj: duhan, pića, cijene, poveznice, prva oprema, zaliha i pokloni.",
-    en: "A practical buying guide for Croatia: tobacco, drinks, prices, links, first kit, stock and gifts.",
+    hr: "Praktičan vodič za kupnju u Hrvatskoj: duhan, pića, trgovine (AlleZ, Ecuga, Drinx), cijene, poveznice, prva oprema, zaliha i pokloni.",
+    en: "A practical buying guide for Croatia: tobacco, drinks, shops (AlleZ, Ecuga, Drinx), prices, links, first kit, stock and gifts.",
   },
   "club.hrGuideOpen": { hr: "Otvori vodič", en: "Open the guide" },
   "club.hrGuideSubtitle": { hr: "Lokalna pravila kupnje", en: "Local buying rules" },
@@ -499,12 +499,16 @@ export const STRINGS = {
   "search.kindLine": { hr: "linija", en: "line" },
   "search.kindVitola": { hr: "vitola", en: "vitola" },
   "catalog.showMore": { hr: "Prikaži još", en: "Show more" },
+  "catalog.jumpTo": { hr: "Skoči na", en: "Jump to" },
   // kolekcija
   "coll.owned": { hr: "Imam", en: "Owned" },
   "coll.tried": { hr: "Probano", en: "Tried" },
   "coll.wishlist": { hr: "Lista želja", en: "Wishlist" },
   "coll.wishlistTitle": { hr: "Lista želja (za kupnju)", en: "Wishlist (to buy)" },
   "coll.onWishlist": { hr: "Na listi želja", en: "On wishlist" },
+  "coll.favorite": { hr: "Omiljeno", en: "Favorite" },
+  "coll.favoritesTitle": { hr: "Omiljeno (go-to)", en: "Favorites (go-to)" },
+  "coll.onFavorite": { hr: "Omiljeno", en: "Favorite" },
   "coll.myRating": { hr: "Moja ocjena", en: "My rating" },
   "coll.eveningRating": { hr: "Ocjena večeri", en: "Evening rating" },
   "coll.eveningRatingHint": {
@@ -970,6 +974,19 @@ export const COUNTRY_LABELS: Record<string, string> = {
   SAD: "USA",
   // zemlje koje na EN izgledaju isto (Japan, Wales) nisu ovdje — cn() ih vrati kakve jesu
   Kanada: "Canada",
+  Bolivija: "Bolivia",
+  Etiopija: "Ethiopia",
+  Jamajka: "Jamaica",
+  Japan: "Japan",
+  Jemen: "Yemen",
+  Kenija: "Kenya",
+  Mađarska: "Hungary",
+  Mozambik: "Mozambique",
+  Vijetnam: "Vietnam",
+  Češka: "Czechia",
+  Skotska: "Scotland",
+  "Nikaragva / SAD": "Nicaragua / USA",
+  "Dominikanska Republika / Honduras": "Dominican Republic / Honduras",
 };
 
 // ceste "najbolji nacin" serviranja iz podataka -> engleski prikaz

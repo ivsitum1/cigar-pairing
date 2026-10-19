@@ -51,6 +51,18 @@ describe("isDrinkProductUrl", () => {
       ),
     ).toBe(true);
   });
+
+  it("prihvaca drinx product path, odbija category listing", () => {
+    expect(
+      isDrinkProductUrl(
+        "https://www.drinx.hr/shop/rum-1/doorly-s-xo-barbados-rum-0-7-l-12345",
+      ),
+    ).toBe(true);
+    expect(
+      isDrinkProductUrl("https://www.drinx.hr/shop/category/rum-1"),
+    ).toBe(false);
+    expect(isDrinkProductUrl("https://www.drinx.hr/shop/rum-1")).toBe(false);
+  });
 });
 
 describe("urlMatchesDrinkName", () => {

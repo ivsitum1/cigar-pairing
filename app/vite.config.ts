@@ -209,5 +209,7 @@ export default defineConfig({
     // docblockom `@vitest-environment jsdom` na vrhu datoteke.
     environment: "node",
     include: ["src/**/*.test.ts", "src/**/*.test.tsx"],
+    // Drinx ingest povećava katalog; dinamički import store modula zna prijeći 5s.
+    testTimeout: 15_000,
   },
 });

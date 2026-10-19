@@ -70,6 +70,13 @@ function OwnedDot({ id }: { id: string }) {
       />
     );
   }
+  if (s.favorite) {
+    return (
+      <span className="ml-1 text-xs text-zlato-2" title={t("coll.onFavorite")}>
+        ♥
+      </span>
+    );
+  }
   if (s.wishlist) {
     return (
       <span className="ml-1 text-xs text-zlato-2" title={t("coll.onWishlist")}>

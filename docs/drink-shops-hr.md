@@ -63,6 +63,7 @@ ne pretpostavlja ništa — scrape američkih polica ne postoji.
 |----------|------|-----------|------------|----------|
 | allez.hr | <https://allez.hr/> | izravan (kad je boca u katalogu) / katalog | žestica | najširi online izbor u HR |
 | ecuga.com | <https://ecuga.com/> | izravan (kad je boca u katalogu) / katalog | žestica | specijalist za viski i rum |
+| drinx.hr | <https://www.drinx.hr/> | izravan (kad je boca u katalogu) / katalog | žestica | široka kuća + walk-in Buzin; scrape → `match-drinx-drinks.py` |
 | Tipsy | <https://tipsy.hr/> | pretraga po nazivu | žestica, vino | Zagreb — dostava |
 | Cugaklik | <https://www.cugaklik.hr/> | pretraga po nazivu | žestica, vino | dostava po RH |
 | Roto | <https://webshop.rotodinamic.hr/> | katalog | žestica | veleprodajni webshop |

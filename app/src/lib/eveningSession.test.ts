@@ -32,6 +32,7 @@ describe("logEveningSession", () => {
       owned: false,
       tried: false,
       wishlist: false,
+      favorite: false,
       rating: null,
       note: "",
     });
@@ -100,6 +101,7 @@ describe("logEveningSession", () => {
       owned: false,
       tried: id === "cig-1",
       wishlist: false,
+      favorite: false,
       rating: null,
       note: "",
     }));
@@ -188,6 +190,7 @@ describe("logEveningSession", () => {
       owned: true,
       tried: true,
       wishlist: false,
+      favorite: false,
       rating: null,
       note: "",
     });
@@ -208,6 +211,7 @@ describe("logEveningSession", () => {
       owned: true,
       tried: true,
       wishlist: false,
+      favorite: false,
       rating: null,
       note: "",
     });
