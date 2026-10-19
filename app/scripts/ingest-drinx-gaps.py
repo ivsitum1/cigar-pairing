@@ -294,12 +294,12 @@ def build_entry(item: dict, used_ids: set[str]) -> dict | None:
 
     notes = {
         "hr": (
-            f"Heuristika (Drinx katalog) — {display}. "
-            "Profil je orijentir za sparivanje, ne lab mjerenje."
+            f"Orijentir iz Drinx kataloga — {display}. "
+            "Profil je za sparivanje, ne lab mjerenje."
         ),
         "en": (
-            f"Heuristic profile (Drinx catalogue) — {display}. "
-            "Orientation for pairing, not a lab reading."
+            f"Drinx catalogue orientation — {display}. "
+            "Pairing profile, not a lab reading."
         ),
     }
 

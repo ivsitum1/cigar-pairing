@@ -1509,11 +1509,14 @@
       "cola": 0,
       "best": "Cisto ili velika kocka leda"
     },
-    "cigarHint": null,
+    "cigarHint": {
+      "hr": "Uz Hennessy X.X.O Cognac Hors D&#039;Âge 40% Vol. 1l u poklon kutiji: uskladi cigaru sa stilom cognac-xo; srednje tijelo osim kad stil traži jači ili blažiji pokrov.",
+      "en": "With Hennessy X.X.O Cognac Hors D&#039;Âge 40% Vol. 1l u poklon kutiji: match the cigar to cognac-xo; prefer medium body unless the style wants a stronger or milder wrapper."
+    },
     "priceUrl": "https://allez.hr/shop/svi-proizvodi/hennessy-xxo-cognac-hors-dage-40-vol-1l-u-poklon-kutiji",
     "notes": {
-      "hr": "Heuristika — cognac-xo, cognac, xo",
-      "en": ""
+      "hr": "Orijentir iz Drinx kataloga — Hennessy X.X.O Cognac Hors D&#039;Âge 40% Vol. 1l u poklon kutiji. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Hennessy X.X.O Cognac Hors D&#039;Âge 40% Vol. 1l u poklon kutiji. Pairing profile, not a lab reading."
     },
     "profileEstimated": false
   },
@@ -2880,11 +2883,14 @@
       "cola": 0,
       "best": "Cisto (snifter)"
     },
-    "cigarHint": null,
+    "cigarHint": {
+      "hr": "Uz Davidoff XO Prestige Extra Old Cognac 40% Vol. 0,7l u poklon kutiji: uskladi cigaru sa stilom cognac-xo; srednje tijelo osim kad stil traži jači ili blažiji pokrov.",
+      "en": "With Davidoff XO Prestige Extra Old Cognac 40% Vol. 0,7l u poklon kutiji: match the cigar to cognac-xo; prefer medium body unless the style wants a stronger or milder wrapper."
+    },
     "priceUrl": "https://allez.hr/shop/svi-proizvodi/davidoff-xo-premium-cognac-40-07-l-in-giftbox",
     "notes": {
-      "hr": "Heuristika — cognac-xo, cognac, xo",
-      "en": ""
+      "hr": "Orijentir iz Drinx kataloga — Davidoff XO Prestige Extra Old Cognac 40% Vol. 0,7l u poklon kutiji. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Davidoff XO Prestige Extra Old Cognac 40% Vol. 0,7l u poklon kutiji. Pairing profile, not a lab reading."
     },
     "profileEstimated": false
   },
@@ -3114,11 +3120,14 @@
       "cola": 0,
       "best": "Cisto (snifter)"
     },
-    "cigarHint": null,
+    "cigarHint": {
+      "hr": "Uz Asbach Selection Extra Old 21 Jears 40% Vol. 0,7l u poklon kutiji: uskladi cigaru sa stilom brandy-german; srednje tijelo osim kad stil traži jači ili blažiji pokrov.",
+      "en": "With Asbach Selection Extra Old 21 Jears 40% Vol. 0,7l u poklon kutiji: match the cigar to brandy-german; prefer medium body unless the style wants a stronger or milder wrapper."
+    },
     "priceUrl": "https://allez.hr/shop/svi-proizvodi/asbach-selection-extra-old-21-jears-40-vol-07l-gb",
     "notes": {
-      "hr": "Heuristika — brandy-german, brandy-other, xo",
-      "en": ""
+      "hr": "Orijentir iz Drinx kataloga — Asbach Selection Extra Old 21 Jears 40% Vol. 0,7l u poklon kutiji. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Asbach Selection Extra Old 21 Jears 40% Vol. 0,7l u poklon kutiji. Pairing profile, not a lab reading."
     }
   },
   {
@@ -4175,8 +4184,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-armagnac-1374/armagnac-bas-armagnac-xo-domaine-tariquet-07-l-7585",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — Bas-Armagnac XO Domaine Tariquet.",
-      "en": "Heuristic profile (Drinx catalogue) — Bas-Armagnac XO Domaine Tariquet."
+      "hr": "Orijentir iz Drinx kataloga — Bas-Armagnac XO Domaine Tariquet. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Bas-Armagnac XO Domaine Tariquet. Pairing profile, not a lab reading."
     }
   },
   {
@@ -4222,8 +4231,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-armagnac-1374/armagnac-carafe-25-ans-de-age-07-l-9062",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — Carafe 25 Ans De Age.",
-      "en": "Heuristic profile (Drinx catalogue) — Carafe 25 Ans De Age."
+      "hr": "Orijentir iz Drinx kataloga — Carafe 25 Ans De Age. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Carafe 25 Ans De Age. Pairing profile, not a lab reading."
     }
   },
   {
@@ -4269,8 +4278,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-armagnac-1374/armagnac-cles-des-ducs-xo-wb-07-l-7999",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — Cles Des Ducs XO.",
-      "en": "Heuristic profile (Drinx catalogue) — Cles Des Ducs XO."
+      "hr": "Orijentir iz Drinx kataloga — Cles Des Ducs XO. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Cles Des Ducs XO. Pairing profile, not a lab reading."
     }
   },
   {
@@ -4316,8 +4325,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-armagnac-1374/armagnac-grand-xo-platinum-baron-de-sigognac-07-l-1587",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — Grand Xo Platinum Baron de Sigognac.",
-      "en": "Heuristic profile (Drinx catalogue) — Grand Xo Platinum Baron de Sigognac."
+      "hr": "Orijentir iz Drinx kataloga — Grand Xo Platinum Baron de Sigognac. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Grand Xo Platinum Baron de Sigognac. Pairing profile, not a lab reading."
     }
   },
   {
@@ -4363,8 +4372,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-armagnac-1374/armagnac-reserve-dartigalongue-07-l-12235",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — Reserve Dartigalongue.",
-      "en": "Heuristic profile (Drinx catalogue) — Reserve Dartigalongue."
+      "hr": "Orijentir iz Drinx kataloga — Reserve Dartigalongue. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Reserve Dartigalongue. Pairing profile, not a lab reading."
     }
   },
   {
@@ -4410,8 +4419,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-armagnac-1374/armagnac-vsop-dartigalongue-07-l-12219",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — V.S.O.P. Dartigalongue.",
-      "en": "Heuristic profile (Drinx catalogue) — V.S.O.P. Dartigalongue."
+      "hr": "Orijentir iz Drinx kataloga — V.S.O.P. Dartigalongue. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — V.S.O.P. Dartigalongue. Pairing profile, not a lab reading."
     }
   },
   {
@@ -4457,8 +4466,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-armagnac-1374/armagnac-vieil-armagnac-delord-vintage-1976-gb-07-l-7693",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — Vieil Armagnac Delord Vintage 1976.",
-      "en": "Heuristic profile (Drinx catalogue) — Vieil Armagnac Delord Vintage 1976."
+      "hr": "Orijentir iz Drinx kataloga — Vieil Armagnac Delord Vintage 1976. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Vieil Armagnac Delord Vintage 1976. Pairing profile, not a lab reading."
     }
   },
   {
@@ -4504,8 +4513,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-armagnac-1374/armagnac-vieil-armagnac-delord-vintage-1985-gb-07-l-558",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — Vieil Armagnac Delord Vintage 1985.",
-      "en": "Heuristic profile (Drinx catalogue) — Vieil Armagnac Delord Vintage 1985."
+      "hr": "Orijentir iz Drinx kataloga — Vieil Armagnac Delord Vintage 1985. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Vieil Armagnac Delord Vintage 1985. Pairing profile, not a lab reading."
     }
   },
   {
@@ -4551,8 +4560,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-armagnac-1374/armagnac-vieil-armagnac-delord-vintage-1986-gb-07-l-8369",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — Vieil Armagnac Delord Vintage 1986.",
-      "en": "Heuristic profile (Drinx catalogue) — Vieil Armagnac Delord Vintage 1986."
+      "hr": "Orijentir iz Drinx kataloga — Vieil Armagnac Delord Vintage 1986. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Vieil Armagnac Delord Vintage 1986. Pairing profile, not a lab reading."
     }
   },
   {
@@ -4598,8 +4607,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-armagnac-1374/armagnac-vieil-armagnac-delord-vintage-1995-gb-07-l-7554",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — Vieil Armagnac Delord Vintage 1995.",
-      "en": "Heuristic profile (Drinx catalogue) — Vieil Armagnac Delord Vintage 1995."
+      "hr": "Orijentir iz Drinx kataloga — Vieil Armagnac Delord Vintage 1995. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Vieil Armagnac Delord Vintage 1995. Pairing profile, not a lab reading."
     }
   },
   {
@@ -4645,8 +4654,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-armagnac-1374/armagnac-vieil-armagnac-delord-vintage-1996-gb-07-l-4007",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — Vieil Armagnac Delord Vintage 1996.",
-      "en": "Heuristic profile (Drinx catalogue) — Vieil Armagnac Delord Vintage 1996."
+      "hr": "Orijentir iz Drinx kataloga — Vieil Armagnac Delord Vintage 1996. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Vieil Armagnac Delord Vintage 1996. Pairing profile, not a lab reading."
     }
   },
   {
@@ -4692,8 +4701,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-armagnac-1374/armagnac-xo-signature-dartigalongue-07-l-12231",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — XO Signature Dartigalongue.",
-      "en": "Heuristic profile (Drinx catalogue) — XO Signature Dartigalongue."
+      "hr": "Orijentir iz Drinx kataloga — XO Signature Dartigalongue. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — XO Signature Dartigalongue. Pairing profile, not a lab reading."
     }
   },
   {
@@ -4739,8 +4748,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-armagnac-1374/armagnac-xo-platinum-baron-de-sigognac-07-l-2637",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — Xo Platinum Baron de Sigognac.",
-      "en": "Heuristic profile (Drinx catalogue) — Xo Platinum Baron de Sigognac."
+      "hr": "Orijentir iz Drinx kataloga — Xo Platinum Baron de Sigognac. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Xo Platinum Baron de Sigognac. Pairing profile, not a lab reading."
     }
   },
   {
@@ -4786,8 +4795,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-abk6-xo-renaissance-box-07-l-4974",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — Abk6 XO Renaissance + Box.",
-      "en": "Heuristic profile (Drinx catalogue) — Abk6 XO Renaissance + Box."
+      "hr": "Orijentir iz Drinx kataloga — Abk6 XO Renaissance + Box. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Abk6 XO Renaissance + Box. Pairing profile, not a lab reading."
     }
   },
   {
@@ -4833,8 +4842,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-bisquit-dubouche-vsop-07-l-2104",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — Bisquit & Dubouche VSOP.",
-      "en": "Heuristic profile (Drinx catalogue) — Bisquit & Dubouche VSOP."
+      "hr": "Orijentir iz Drinx kataloga — Bisquit & Dubouche VSOP. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Bisquit & Dubouche VSOP. Pairing profile, not a lab reading."
     }
   },
   {
@@ -4880,8 +4889,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-bowen-xo-gb-07-l-4235",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — Bowen XO. Profil je orijentir za sparivanje, ne lab mjerenje.",
-      "en": "Heuristic profile (Drinx catalogue) — Bowen XO."
+      "hr": "Orijentir iz Drinx kataloga — Bowen XO. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Bowen XO. Pairing profile, not a lab reading."
     }
   },
   {
@@ -4927,8 +4936,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-bowen-xo-goldn-black-gb-07-l-4084",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — Bowen XO Gold'n Black.",
-      "en": "Heuristic profile (Drinx catalogue) — Bowen XO Gold'n Black."
+      "hr": "Orijentir iz Drinx kataloga — Bowen XO Gold'n Black. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Bowen XO Gold'n Black. Pairing profile, not a lab reading."
     }
   },
   {
@@ -4974,8 +4983,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-chabasse-exception-xo-gb-07-l-7221",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — Chabasse EXCEPTION XO.",
-      "en": "Heuristic profile (Drinx catalogue) — Chabasse EXCEPTION XO."
+      "hr": "Orijentir iz Drinx kataloga — Chabasse EXCEPTION XO. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Chabasse EXCEPTION XO. Pairing profile, not a lab reading."
     }
   },
   {
@@ -5021,8 +5030,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-chabasse-xo-gb-07-l-7107",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — Chabasse XO.",
-      "en": "Heuristic profile (Drinx catalogue) — Chabasse XO."
+      "hr": "Orijentir iz Drinx kataloga — Chabasse XO. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Chabasse XO. Pairing profile, not a lab reading."
     }
   },
   {
@@ -5068,8 +5077,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-chateau-de-montifaud-xo-07-l-9701",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — Chateau de Montifaud XO.",
-      "en": "Heuristic profile (Drinx catalogue) — Chateau de Montifaud XO."
+      "hr": "Orijentir iz Drinx kataloga — Chateau de Montifaud XO. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Chateau de Montifaud XO. Pairing profile, not a lab reading."
     }
   },
   {
@@ -5115,8 +5124,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-claude-chatelier-xo-extra-old-07-l-3488",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — Claude Chatelier XO Extra Old.",
-      "en": "Heuristic profile (Drinx catalogue) — Claude Chatelier XO Extra Old."
+      "hr": "Orijentir iz Drinx kataloga — Claude Chatelier XO Extra Old. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Claude Chatelier XO Extra Old. Pairing profile, not a lab reading."
     }
   },
   {
@@ -5162,8 +5171,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-courvoisier-vs-07-l-2930",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — Courvoisier V.S.",
-      "en": "Heuristic profile (Drinx catalogue) — Courvoisier V.S."
+      "hr": "Orijentir iz Drinx kataloga — Courvoisier V.S. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Courvoisier V.S. Pairing profile, not a lab reading."
     }
   },
   {
@@ -5209,8 +5218,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-courvoisier-vsop-07-l-2435",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — Courvoisier V.S.O.P..",
-      "en": "Heuristic profile (Drinx catalogue) — Courvoisier V.S.O.P.."
+      "hr": "Orijentir iz Drinx kataloga — Courvoisier V.S.O.P.. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Courvoisier V.S.O.P.. Pairing profile, not a lab reading."
     }
   },
   {
@@ -5256,8 +5265,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-courvoisier-xo-gb-07-l-5112",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — Courvoisier X.O..",
-      "en": "Heuristic profile (Drinx catalogue) — Courvoisier X.O.."
+      "hr": "Orijentir iz Drinx kataloga — Courvoisier X.O.. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Courvoisier X.O.. Pairing profile, not a lab reading."
     }
   },
   {
@@ -5303,8 +5312,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-davidoff-vsop-gb-07-l-9153",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — Davidoff VSOP.",
-      "en": "Heuristic profile (Drinx catalogue) — Davidoff VSOP."
+      "hr": "Orijentir iz Drinx kataloga — Davidoff VSOP. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Davidoff VSOP. Pairing profile, not a lab reading."
     }
   },
   {
@@ -5350,8 +5359,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-davidoff-xo-gb-07-l-5790",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — Davidoff XO.",
-      "en": "Heuristic profile (Drinx catalogue) — Davidoff XO."
+      "hr": "Orijentir iz Drinx kataloga — Davidoff XO. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Davidoff XO. Pairing profile, not a lab reading."
     }
   },
   {
@@ -5397,8 +5406,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-delpech-fougerat-vs-07-l-8492",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — Delpech Fougerat VS.",
-      "en": "Heuristic profile (Drinx catalogue) — Delpech Fougerat VS."
+      "hr": "Orijentir iz Drinx kataloga — Delpech Fougerat VS. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Delpech Fougerat VS. Pairing profile, not a lab reading."
     }
   },
   {
@@ -5444,8 +5453,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-delpech-fougerat-vsop-07-l-4859",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — Delpech Fougerat VSOP.",
-      "en": "Heuristic profile (Drinx catalogue) — Delpech Fougerat VSOP."
+      "hr": "Orijentir iz Drinx kataloga — Delpech Fougerat VSOP. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Delpech Fougerat VSOP. Pairing profile, not a lab reading."
     }
   },
   {
@@ -5491,8 +5500,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-frapin-grande-champagne-cigar-blend-07-l-6154",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — Frapin Grande Champagne Cigar Blend.",
-      "en": "Heuristic profile (Drinx catalogue) — Frapin Grande Champagne Cigar Blend."
+      "hr": "Orijentir iz Drinx kataloga — Frapin Grande Champagne Cigar Blend. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Frapin Grande Champagne Cigar Blend. Pairing profile, not a lab reading."
     }
   },
   {
@@ -5538,8 +5547,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-fussigny-extra-07-l-7212",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — Fussigny Extra.",
-      "en": "Heuristic profile (Drinx catalogue) — Fussigny Extra."
+      "hr": "Orijentir iz Drinx kataloga — Fussigny Extra. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Fussigny Extra. Pairing profile, not a lab reading."
     }
   },
   {
@@ -5585,8 +5594,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-fussigny-selection-gb-07-l-2402",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — Fussigny Selection.",
-      "en": "Heuristic profile (Drinx catalogue) — Fussigny Selection."
+      "hr": "Orijentir iz Drinx kataloga — Fussigny Selection. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Fussigny Selection. Pairing profile, not a lab reading."
     }
   },
   {
@@ -5632,8 +5641,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-fussigny-superieur-gb-07-l-2182",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — Fussigny Superieur.",
-      "en": "Heuristic profile (Drinx catalogue) — Fussigny Superieur."
+      "hr": "Orijentir iz Drinx kataloga — Fussigny Superieur. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Fussigny Superieur. Pairing profile, not a lab reading."
     }
   },
   {
@@ -5679,8 +5688,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-fussigny-xo-gb-07-l-4734",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — Fussigny XO.",
-      "en": "Heuristic profile (Drinx catalogue) — Fussigny XO."
+      "hr": "Orijentir iz Drinx kataloga — Fussigny XO. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Fussigny XO. Pairing profile, not a lab reading."
     }
   },
   {
@@ -5726,8 +5735,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-gautier-vs-gb-07-l-7352",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — Gautier VS.",
-      "en": "Heuristic profile (Drinx catalogue) — Gautier VS."
+      "hr": "Orijentir iz Drinx kataloga — Gautier VS. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Gautier VS. Pairing profile, not a lab reading."
     }
   },
   {
@@ -5773,8 +5782,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-gautier-vsop-gb-07-l-4287",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — Gautier VSOP.",
-      "en": "Heuristic profile (Drinx catalogue) — Gautier VSOP."
+      "hr": "Orijentir iz Drinx kataloga — Gautier VSOP. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Gautier VSOP. Pairing profile, not a lab reading."
     }
   },
   {
@@ -5820,8 +5829,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-hardy-vs-07-l-6184",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — Hardy VS. Profil je orijentir za sparivanje, ne lab mjerenje.",
-      "en": "Heuristic profile (Drinx catalogue) — Hardy VS."
+      "hr": "Orijentir iz Drinx kataloga — Hardy VS. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Hardy VS. Pairing profile, not a lab reading."
     }
   },
   {
@@ -5867,8 +5876,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-hardy-xo-07-l-5647",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — Hardy XO. Profil je orijentir za sparivanje, ne lab mjerenje.",
-      "en": "Heuristic profile (Drinx catalogue) — Hardy XO."
+      "hr": "Orijentir iz Drinx kataloga — Hardy XO. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Hardy XO. Pairing profile, not a lab reading."
     }
   },
   {
@@ -5914,8 +5923,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-hardy-xo-rare-gb-07-l-8542",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — Hardy XO RARE.",
-      "en": "Heuristic profile (Drinx catalogue) — Hardy XO RARE."
+      "hr": "Orijentir iz Drinx kataloga — Hardy XO RARE. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Hardy XO RARE. Pairing profile, not a lab reading."
     }
   },
   {
@@ -5961,8 +5970,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-hennessy-vsop-07-l-6999",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — Hennessy V.S.O.P.",
-      "en": "Heuristic profile (Drinx catalogue) — Hennessy V.S.O.P."
+      "hr": "Orijentir iz Drinx kataloga — Hennessy V.S.O.P. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Hennessy V.S.O.P. Pairing profile, not a lab reading."
     }
   },
   {
@@ -6008,8 +6017,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-hennessy-vs-gold-bottle-2025-07-l-8405",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — Hennessy VS Gold bottle 2025.",
-      "en": "Heuristic profile (Drinx catalogue) — Hennessy VS Gold bottle 2025."
+      "hr": "Orijentir iz Drinx kataloga — Hennessy VS Gold bottle 2025. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Hennessy VS Gold bottle 2025. Pairing profile, not a lab reading."
     }
   },
   {
@@ -6055,8 +6064,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-hennessy-vs-lebron-james-gb-07-l-2789",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — Hennessy VS Lebron James.",
-      "en": "Heuristic profile (Drinx catalogue) — Hennessy VS Lebron James."
+      "hr": "Orijentir iz Drinx kataloga — Hennessy VS Lebron James. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Hennessy VS Lebron James. Pairing profile, not a lab reading."
     }
   },
   {
@@ -6102,8 +6111,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-leyrat-vsop-reserve-07-l-6445",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — Leyrat V.S.O.P. Reserve.",
-      "en": "Heuristic profile (Drinx catalogue) — Leyrat V.S.O.P. Reserve."
+      "hr": "Orijentir iz Drinx kataloga — Leyrat V.S.O.P. Reserve. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Leyrat V.S.O.P. Reserve. Pairing profile, not a lab reading."
     }
   },
   {
@@ -6149,8 +6158,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-leyrat-xo-elite-gb-07-l-4721",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — Leyrat Xo Elite.",
-      "en": "Heuristic profile (Drinx catalogue) — Leyrat Xo Elite."
+      "hr": "Orijentir iz Drinx kataloga — Leyrat Xo Elite. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Leyrat Xo Elite. Pairing profile, not a lab reading."
     }
   },
   {
@@ -6196,8 +6205,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-leyrat-xo-hors-dage-07-l-6150",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — Leyrat Xo Hors D'Age.",
-      "en": "Heuristic profile (Drinx catalogue) — Leyrat Xo Hors D'Age."
+      "hr": "Orijentir iz Drinx kataloga — Leyrat Xo Hors D'Age. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Leyrat Xo Hors D'Age. Pairing profile, not a lab reading."
     }
   },
   {
@@ -6243,8 +6252,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-martell-vs-07-l-810",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — Martell VS.",
-      "en": "Heuristic profile (Drinx catalogue) — Martell VS."
+      "hr": "Orijentir iz Drinx kataloga — Martell VS. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Martell VS. Pairing profile, not a lab reading."
     }
   },
   {
@@ -6290,8 +6299,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-martell-vsop-red-barrel-07-l-1296",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — Martell VSOP Red Barrel.",
-      "en": "Heuristic profile (Drinx catalogue) — Martell VSOP Red Barrel."
+      "hr": "Orijentir iz Drinx kataloga — Martell VSOP Red Barrel. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Martell VSOP Red Barrel. Pairing profile, not a lab reading."
     }
   },
   {
@@ -6337,8 +6346,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-merlet-vs-07-l-3919",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — Merlet VS. Profil je orijentir za sparivanje, ne lab mjerenje.",
-      "en": "Heuristic profile (Drinx catalogue) — Merlet VS."
+      "hr": "Orijentir iz Drinx kataloga — Merlet VS. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Merlet VS. Pairing profile, not a lab reading."
     }
   },
   {
@@ -6384,8 +6393,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-meukow-arima-07-l-10094",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — Meukow Arima.",
-      "en": "Heuristic profile (Drinx catalogue) — Meukow Arima."
+      "hr": "Orijentir iz Drinx kataloga — Meukow Arima. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Meukow Arima. Pairing profile, not a lab reading."
     }
   },
   {
@@ -6431,8 +6440,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-meukow-black-panther-07-l-10103",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — Meukow Black Panther.",
-      "en": "Heuristic profile (Drinx catalogue) — Meukow Black Panther."
+      "hr": "Orijentir iz Drinx kataloga — Meukow Black Panther. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Meukow Black Panther. Pairing profile, not a lab reading."
     }
   },
   {
@@ -6478,8 +6487,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-meukow-icone-gb-07-l-5879",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — Meukow ICONE.",
-      "en": "Heuristic profile (Drinx catalogue) — Meukow ICONE."
+      "hr": "Orijentir iz Drinx kataloga — Meukow ICONE. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Meukow ICONE. Pairing profile, not a lab reading."
     }
   },
   {
@@ -6525,8 +6534,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-meukow-icone-gold-gb-07-l-10182",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — Meukow ICONE GOLD.",
-      "en": "Heuristic profile (Drinx catalogue) — Meukow ICONE GOLD."
+      "hr": "Orijentir iz Drinx kataloga — Meukow ICONE GOLD. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Meukow ICONE GOLD. Pairing profile, not a lab reading."
     }
   },
   {
@@ -6572,8 +6581,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-meukow-vs-gb-07-l-2946",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — Meukow VS. Profil je orijentir za sparivanje, ne lab mjerenje.",
-      "en": "Heuristic profile (Drinx catalogue) — Meukow VS."
+      "hr": "Orijentir iz Drinx kataloga — Meukow VS. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Meukow VS. Pairing profile, not a lab reading."
     }
   },
   {
@@ -6619,8 +6628,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-meukow-vsop-gb-07-l-3668",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — Meukow VSOP.",
-      "en": "Heuristic profile (Drinx catalogue) — Meukow VSOP."
+      "hr": "Orijentir iz Drinx kataloga — Meukow VSOP. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Meukow VSOP. Pairing profile, not a lab reading."
     }
   },
   {
@@ -6666,8 +6675,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-meukow-vsop-red-gb-07-l-10202",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — Meukow VSOP Red.",
-      "en": "Heuristic profile (Drinx catalogue) — Meukow VSOP Red."
+      "hr": "Orijentir iz Drinx kataloga — Meukow VSOP Red. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Meukow VSOP Red. Pairing profile, not a lab reading."
     }
   },
   {
@@ -6713,8 +6722,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-meukow-xo-gb-07-l-5333",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — Meukow XO. Profil je orijentir za sparivanje, ne lab mjerenje.",
-      "en": "Heuristic profile (Drinx catalogue) — Meukow XO."
+      "hr": "Orijentir iz Drinx kataloga — Meukow XO. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Meukow XO. Pairing profile, not a lab reading."
     }
   },
   {
@@ -6760,8 +6769,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-meukow-xo-grand-champagne-gb-07-l-2830",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — Meukow XO Grand Champagne.",
-      "en": "Heuristic profile (Drinx catalogue) — Meukow XO Grand Champagne."
+      "hr": "Orijentir iz Drinx kataloga — Meukow XO Grand Champagne. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Meukow XO Grand Champagne. Pairing profile, not a lab reading."
     }
   },
   {
@@ -6807,8 +6816,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-planat-overproof-07-l-2275",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — Planat Overproof.",
-      "en": "Heuristic profile (Drinx catalogue) — Planat Overproof."
+      "hr": "Orijentir iz Drinx kataloga — Planat Overproof. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Planat Overproof. Pairing profile, not a lab reading."
     }
   },
   {
@@ -6854,8 +6863,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-remy-martin-1738-accord-royal-gb-07-l-2656",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — Remy Martin 1738 ACCORD ROYAL.",
-      "en": "Heuristic profile (Drinx catalogue) — Remy Martin 1738 ACCORD ROYAL."
+      "hr": "Orijentir iz Drinx kataloga — Remy Martin 1738 ACCORD ROYAL. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Remy Martin 1738 ACCORD ROYAL. Pairing profile, not a lab reading."
     }
   },
   {
@@ -6901,8 +6910,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-remy-martin-vsop-07-l-4510",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — Remy Martin V.S.O.P..",
-      "en": "Heuristic profile (Drinx catalogue) — Remy Martin V.S.O.P.."
+      "hr": "Orijentir iz Drinx kataloga — Remy Martin V.S.O.P.. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Remy Martin V.S.O.P.. Pairing profile, not a lab reading."
     }
   },
   {
@@ -6948,8 +6957,8 @@
     },
     "priceUrl": "https://drinx.hr/shop/zestoka-pica-cognac-1379/konjak-reviseur-xo-gb-07-l-1694",
     "notes": {
-      "hr": "Heuristika (Drinx katalog) — Reviseur Xo.",
-      "en": "Heuristic profile (Drinx catalogue) — Reviseur Xo."
+      "hr": "Orijentir iz Drinx kataloga — Reviseur Xo. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Reviseur Xo. Pairing profile, not a lab reading."
     }
   }
 ]

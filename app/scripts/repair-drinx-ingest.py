@@ -33,8 +33,10 @@ LEADING_AGE = re.compile(
 def is_drinx_heuristic(d: dict) -> bool:
     notes = d.get("notes") or {}
     hr = notes.get("hr") if isinstance(notes, dict) else ""
-    return "Heuristika (Drinx" in (hr or "") or (
-        d.get("shopHR") == "drinx.hr" and d.get("cigarHint") is None
+    return (
+        "Drinx katalog" in (hr or "")
+        or "Drinx catalogue" in ((notes.get("en") if isinstance(notes, dict) else "") or "")
+        or (d.get("shopHR") == "drinx.hr" and d.get("cigarHint") is None)
     )
 
 
@@ -93,10 +95,10 @@ def ensure_notes(d: dict, name: str) -> None:
         notes = {}
     hr = notes.get("hr") or ""
     en = notes.get("en") or ""
-    if len(hr) < 40:
-        hr = f"Heuristika (Drinx katalog) — {name}. Profil je orijentir za sparivanje, ne lab mjerenje."
-    if len(en) < 40:
-        en = f"Heuristic profile (Drinx catalogue) — {name}. Orientation for pairing, not a lab reading."
+    if len(hr) < 40 or "Heuristika" in hr:
+        hr = f"Orijentir iz Drinx kataloga — {name}. Profil je za sparivanje, ne lab mjerenje."
+    if len(en) < 40 or "Heuristic" in en:
+        en = f"Drinx catalogue orientation — {name}. Pairing profile, not a lab reading."
     d["notes"] = {"hr": hr, "en": en}
 
 
