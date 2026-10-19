@@ -46,6 +46,36 @@ CAT_TO_JSON = {
     "armagnac": "brandy",
 }
 
+# Expression-grade words: overlap on these alone must not pair different houses.
+GENERIC_BOTTLE = frozenset(
+    {
+        "xo",
+        "original",
+        "dark",
+        "gold",
+        "premium",
+        "cask",
+        "anejo",
+        "silver",
+        "blanco",
+        "reposado",
+        "plata",
+        "cristalino",
+        "rare",
+        "superior",
+        "classic",
+        "black",
+        "white",
+        "spiced",
+        "dry",
+        "oak",
+        "oaks",
+        "no",
+        "num",
+        "yo",
+    }
+)
+
 STOP = {
     "rum",
     "rhum",
@@ -118,12 +148,33 @@ def tokens(name: str) -> set[str]:
     s = NON_ALNUM.sub(" ", s)
     out = set()
     for t in s.split():
-        if t in STOP or len(t) < 2:
+        if t in STOP:
             continue
-        if t.isdigit() and len(t) > 2:
+        if t.isdigit():
+            if len(t) <= 2:
+                out.add(t)
+            continue
+        if len(t) < 2:
             continue
         out.add(t)
     return out
+
+
+def short_numbers(name: str) -> set[str]:
+    return set(re.findall(r"\b(\d{1,2})\b", fold(name)))
+
+
+def plausible_drinx_price(price: float | None, drink: dict) -> bool:
+    if price is None:
+        return False
+    if price < 12:
+        return False
+    old = drink.get("priceEUR")
+    if isinstance(old, dict):
+        prev = old.get("min") or old.get("max")
+        if isinstance(prev, (int, float)) and prev > 0 and price < prev * 0.25:
+            return False
+    return True
 
 
 def age_of(name: str) -> str | None:
@@ -214,15 +265,21 @@ def best_matches(
         dtoks = tokens(d["name"])
         # also use id slug tokens
         id_toks = tokens(d["id"].replace("-", " "))
+        anchor = (itoks & id_toks) - GENERIC_BOTTLE
+        if not anchor:
+            continue
+        inums = short_numbers(item["name"])
+        dnums = short_numbers(d["name"])
+        if inums and dnums and inums.isdisjoint(dnums):
+            continue
         score = max(jaccard(itoks, dtoks), jaccard(itoks, dtoks | id_toks) * 0.95)
         dage = age_of(d["name"])
         if iage and dage and iage != dage:
             score *= 0.35
         elif iage and dage and iage == dage:
             score += 0.08
-        # require brand-ish overlap of at least 2 content tokens for high score
-        overlap = itoks & dtoks
-        if len(overlap) < 2 and score < 0.55:
+        overlap = (itoks & dtoks) - GENERIC_BOTTLE
+        if len(overlap) < 1 and score < 0.62:
             continue
         if score >= 0.42:
             scored.append((score, d, dcat))
@@ -285,7 +342,7 @@ def main() -> int:
             continue
         top = scored[0]
         # ambiguity: two drinks within 0.05
-        if len(scored) > 1 and scored[0][0] - scored[1][0] < 0.05 and scored[1][0] >= 0.5:
+        if len(scored) > 1 and scored[0][0] - scored[1][0] < 0.08 and scored[1][0] >= 0.5:
             ambiguous.append(
                 {
                     "drinx": item,
@@ -347,7 +404,7 @@ def main() -> int:
                 continue
             d["priceUrl"] = item["url"]
             d["shopHR"] = "drinx.hr"
-            if item.get("price_eur") is not None:
+            if plausible_drinx_price(item.get("price_eur"), drink):
                 d["priceEUR"] = {
                     "min": item["price_eur"],
                     "max": item["price_eur"],
