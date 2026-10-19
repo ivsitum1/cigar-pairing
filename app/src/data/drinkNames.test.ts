@@ -43,7 +43,7 @@ describe("imena pića nose marku", () => {
 
   // Prave marke koje pocinju brojem — nisu fragmenti.
   const NUMERIC_BRANDS =
-    /^No\. 3 London Dry Gin|^No\. 209 Gin|^818 Tequila|^1689 Authentic/;
+    /^No\. 3 London Dry Gin|^No\. 209 Gin|^818 Tequila|^1800 Reserva|^1689 Authentic/;
 
   it("nijedno ime ne počinje golim brojem ili 'No.'", () => {
     const bad = ALL_DRINKS.filter((d) => /^(No\.?\s*\d|\d)/.test(d.name.trim()))

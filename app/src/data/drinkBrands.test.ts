@@ -117,6 +117,7 @@ describe("marke pića", () => {
       "Rum Exchange",
       "Rum Nation",
       "818 Tequila", // registrirano ime lifestyle marke (Kendall Jenner)
+      "1800 Tequila", // registrirani brand (José Cuervo)
       "Hrvatski lozovača / vinjak (craft)", // generički unos, nije marka
     ]);
     const bad = ALL_DRINK_BRANDS.filter(
