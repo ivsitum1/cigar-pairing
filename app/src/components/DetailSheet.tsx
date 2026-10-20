@@ -179,6 +179,12 @@ export function DetailSheet({
           >
             ☆ {t("coll.wishlist")}
           </Chip>
+          <Chip
+            active={state.favorite}
+            onClick={() => updateItem(id, { favorite: !state.favorite })}
+          >
+            ♥ {t("coll.favorite")}
+          </Chip>
           <div className="ml-auto flex items-center gap-2">
             <span className="text-xs text-dim">{t("coll.myRating")}</span>
             <select

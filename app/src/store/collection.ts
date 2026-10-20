@@ -7,6 +7,7 @@ export interface ItemState {
   owned: boolean;
   tried: boolean;
   wishlist: boolean; // lista zelja — zelim kupiti
+  favorite: boolean; // go-to omiljeno — ne ulazi u Kupovinu
   rating: number | null; // 1-10
   note: string;
 }
@@ -33,6 +34,7 @@ function mergeItemState(a: ItemState, b: ItemState): ItemState {
     owned: a.owned || b.owned,
     tried: a.tried || b.tried,
     wishlist: a.wishlist || b.wishlist,
+    favorite: a.favorite || b.favorite,
     rating:
       a.rating != null && b.rating != null
         ? Math.max(a.rating, b.rating)
@@ -122,13 +124,14 @@ export function useCollection(): CollectionData {
   );
 }
 
-// stariji zapisi u localStorage nemaju wishlist polje — defaulti po polju
+// stariji zapisi u localStorage nemaju wishlist/favorite — defaulti po polju
 export const getItemState = (id: string): ItemState => {
   const s = cache.items[id] as Partial<ItemState> | undefined;
   return {
     owned: s?.owned ?? false,
     tried: s?.tried ?? false,
     wishlist: s?.wishlist ?? false,
+    favorite: s?.favorite ?? false,
     rating: s?.rating ?? null,
     note: s?.note ?? "",
   };
@@ -146,6 +149,7 @@ export function lineState(cigarId: string): ItemState {
     owned: false,
     tried: false,
     wishlist: false,
+    favorite: false,
     rating: null,
     note: "",
   };
@@ -154,6 +158,7 @@ export function lineState(cigarId: string): ItemState {
     out.owned ||= s.owned ?? false;
     out.tried ||= s.tried ?? false;
     out.wishlist ||= s.wishlist ?? false;
+    out.favorite ||= s.favorite ?? false;
     if (s.rating != null && (out.rating == null || s.rating > out.rating)) {
       out.rating = s.rating;
     }
@@ -166,7 +171,14 @@ export function updateItem(id: string, patch: Partial<ItemState>) {
   const current = getItemState(id);
   const next = { ...current, ...patch, note: (patch.note ?? current.note).trim() };
   const items = { ...cache.items };
-  if (!next.owned && !next.tried && !next.wishlist && next.rating == null && !next.note) {
+  if (
+    !next.owned &&
+    !next.tried &&
+    !next.wishlist &&
+    !next.favorite &&
+    next.rating == null &&
+    !next.note
+  ) {
     delete items[id]; // ne cuvamo prazna stanja
   } else {
     items[id] = next;
@@ -176,8 +188,8 @@ export function updateItem(id: string, patch: Partial<ItemState>) {
 
 /**
  * Makni stavku s popisa Kolekcije — briše cijelo stanje odjednom
- * (Imam / Probao / Želim / ocjena / bilješka). Gašenje kvačica jednu po jednu
- * radi isto, ali popis mora imati i izlaz u jednom kliku.
+ * (Imam / Probao / Želim / Omiljeno / ocjena / bilješka). Gašenje kvačica jednu
+ * po jednu radi isto, ali popis mora imati i izlaz u jednom kliku.
  */
 export function clearItem(id: string) {
   if (!(id in cache.items)) return;
@@ -196,6 +208,7 @@ export function markOwnedBatch(ids: string[]) {
       owned: items[id]?.owned ?? false,
       tried: items[id]?.tried ?? false,
       wishlist: items[id]?.wishlist ?? false,
+      favorite: items[id]?.favorite ?? false,
       rating: items[id]?.rating ?? null,
       note: items[id]?.note ?? "",
     };
