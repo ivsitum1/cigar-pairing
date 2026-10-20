@@ -22,6 +22,7 @@ import {
 } from "../lib/cigarItemId";
 import { buildCigarOcrCandidates } from "../lib/ocrCigarCandidates";
 import {
+  favoriteItemIds,
   ownedWithoutStockIds,
   shortlistItemIds,
 } from "../lib/collectionPanels";
@@ -259,6 +260,13 @@ export function CollectionPage({
   const historyDrinkIds = shortlistItemIds(data.items).filter(
     (id) => cigarForItemId(id) == null && drinkById(id) != null,
   );
+  const favIds = favoriteItemIds(data.items);
+  const favoriteCigarIds = dedupeCollectionCigarIds(
+    favIds.filter((id) => cigarForItemId(id) != null),
+  );
+  const favoriteDrinkIds = favIds.filter(
+    (id) => cigarForItemId(id) == null && drinkById(id) != null,
+  );
 
   /**
    * Profil pušača: zbroj svega probanog, a ne popis. Ulaze sve cigare koje su
@@ -305,6 +313,8 @@ export function CollectionPage({
   const ownedNoStockCigars = cigarsFor(ownedNoStockIds);
   const historyCigars = cigarsFor(historyIds);
   const historyDrinks = ALL_DRINKS.filter((d) => historyDrinkIds.includes(d.id));
+  const favoriteCigars = cigarsFor(favoriteCigarIds);
+  const favoriteDrinks = ALL_DRINKS.filter((d) => favoriteDrinkIds.includes(d.id));
   const ownedCigarsForLog = cigarsFor(
     dedupeCollectionCigarIds(allOwnedCigarIds),
   );
@@ -503,6 +513,24 @@ export function CollectionPage({
                 {/* kartica baš tog ključa: što je ovdje označeno mora se i
                     odavde moći odznačiti */}
                 <CigarRow cigar={cigar} onClick={() => openCigarCard(cigar)} />
+              </CollectionEntry>
+            ))}
+          </div>
+        </>
+      )}
+
+      {(favoriteCigars.length > 0 || favoriteDrinks.length > 0) && (
+        <>
+          <SectionTitle>{t("coll.favoritesTitle")}</SectionTitle>
+          <div className="space-y-2">
+            {favoriteCigars.map(({ id, cigar }) => (
+              <CollectionEntry key={id} itemId={id}>
+                <CigarRow cigar={cigar} onClick={() => openCigarCard(cigar)} />
+              </CollectionEntry>
+            ))}
+            {favoriteDrinks.map((d) => (
+              <CollectionEntry key={d.id} itemId={d.id}>
+                <DrinkRow drink={d} onClick={() => openDrink(d)} />
               </CollectionEntry>
             ))}
           </div>

@@ -117,6 +117,7 @@ describe("normalizeCollectionPayload", () => {
           owned: true,
           tried: false,
           wishlist: false,
+          favorite: false,
           rating: 8,
           note: "ok",
         },
@@ -136,7 +137,16 @@ describe("normalizeCollectionPayload", () => {
 
   it("odbija rating izvan 1-10", () => {
     const out = normalizeCollectionPayload({
-      items: { a: { owned: true, tried: false, wishlist: false, rating: 99, note: "" } },
+      items: {
+        a: {
+          owned: true,
+          tried: false,
+          wishlist: false,
+          favorite: false,
+          rating: 99,
+          note: "",
+        },
+      },
       journal: [],
     });
     expect(out?.items.a.rating).toBeNull();

@@ -117,6 +117,7 @@ describe("marke pića", () => {
       "Rum Exchange",
       "Rum Nation",
       "818 Tequila", // registrirano ime lifestyle marke (Kendall Jenner)
+      "1800 Tequila", // registrirani brand (José Cuervo)
       "Hrvatski lozovača / vinjak (craft)", // generički unos, nije marka
     ]);
     const bad = ALL_DRINK_BRANDS.filter(
@@ -143,6 +144,12 @@ describe("marke pića", () => {
       "Kavalan", // whisky + gin
       "Poli", // grappa + gin
       "Tobermory", // whisky + gin
+      "Copeland", // rum + whisky (Drinx)
+      "Dingle", // gin + whisky
+      "FEW", // gin + bourbon
+      "Kyrö", // gin + rye whisky
+      "Mackmyra", // gin + whisky
+      "Scapegrace", // gin + whisky
     ]);
     const suspects = ALL_DRINK_BRANDS.filter((b) => {
       if (b.split(/\s+/).length !== 1 || MULTI_CATEGORY_HOUSES.has(b)) return false;

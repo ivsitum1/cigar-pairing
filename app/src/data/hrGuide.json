@@ -31,10 +31,21 @@
    }
   },
   {
+   "id": "trgovine-pice",
+   "title": {
+    "hr": "III. Trgovine za piće: AlleZ, Ecuga, Drinx",
+    "en": "III. Drink shops: AlleZ, Ecuga, Drinx"
+   },
+   "body": {
+    "hr": "Za boce aplikacija prati tri hrvatske mrežne trgovine. Nijedna nije savršena za svaku večer; birajte prema stilu, cijeni i tome trebate li dostavu ili police.\n\nŠto pokazuje scrape (trenutni katalog)\n• Drinx — široka kuća vina i žestica (u snimci: ~486 ruma, ~976 whiskya, ~268 gina, ~93 tequile, ~106 konjaka, ~20 armagnaca). Ima fizičku trgovinu u Buzinu (Supernova) i besplatnu dostavu iznad 69 €. Snaga je širina i walk-in; slabost za sparivanje je što dio asortimana ide u poklon pakete i masovne linije, a Odoo sučelje zna biti sporije od specijaliziranih shopova.\n• AlleZ — i dalje najčešći pouzdani product URL u katalogu aplikacije za rum i whisky; dobra dubina craft i estate boca. Manje je „supermarket vina”, više specijalizirana žestica.\n• Ecuga — koristan drugi izvor, posebno kad AlleZ nema bocu; GraphQL katalog, ali manji pokrivenost u nekim segmentima.\n\nKako birati u praksi\n• Prvo stil i etiketa u aplikaciji, zatim gumb „Gdje kupiti” ako postoji verified poveznica (AlleZ, Ecuga ili Drinx).\n• Ako trebate vidjeti bocu uživo ili poklon paket — Drinx Buzin ima smisla.\n• Ako tražite užu craft liniju ruma ili whiskya — počnite od AlleZ, pa Ecuga, pa Drinx kao treću provjeru cijene.\n• Cijena u aplikaciji ostaje orijentir; zalihu i dostavu potvrđujete na stranici trgovine.",
+    "en": "For bottles the app tracks three Croatian online shops. None is perfect for every evening; choose by style, price and whether you need delivery or a shelf visit.\n\nWhat the scrape shows (current catalogue)\n• Drinx — a broad wine-and-spirits house (snapshot: ~486 rums, ~976 whiskies, ~268 gins, ~93 tequilas, ~106 cognacs, ~20 armagnacs). It has a walk-in shop in Buzin (Supernova) and free delivery above €69. Strength is breadth and the physical store; for pairing, weakness is that part of the range skews to gift packs and mass lines, and the Odoo storefront can feel slower than specialist shops.\n• AlleZ — still the most common trusted product URL in the app catalogue for rum and whisky; good depth in craft and estate bottles. Less of a wine supermarket, more spirits-focused.\n• Ecuga — a useful second source when AlleZ lacks a bottle; GraphQL catalogue, but thinner coverage in some segments.\n\nHow to choose in practice\n• Start with style and label in the app, then use Buy when a verified product link exists (AlleZ, Ecuga or Drinx).\n• If you want to see the bottle in person or need a gift pack, Drinx Buzin makes sense.\n• If you want a tighter craft rum or whisky line, start with AlleZ, then Ecuga, then Drinx as a third price check.\n• App prices stay guidance; confirm stock and delivery on the retailer page."
+   }
+  },
+  {
    "id": "karta-duhan-referentno",
    "title": {
-    "hr": "III. Karta duhana je samo orijentir",
-    "en": "III. The tobacco map is reference only"
+    "hr": "IV. Karta duhana je samo orijentir",
+    "en": "IV. The tobacco map is reference only"
    },
    "body": {
     "hr": "Karta duhana u aplikaciji služi za orijentaciju: zemlja, marka, linija, snaga i format. Ona nije obećanje da taj komad danas leži u ladici trgovine.\n\nKako se čita orijentir\n• Zemlja nije presuda — Kuba, Nikaragva, Dominikanska Republika i Honduras imaju prepoznatljiv obiteljski stil, ali svaka linija zna od njega odstupiti.\n• Vitola mijenja iskustvo — robusto i toro iste linije nisu samo različite duljine; s formatom se mijenjaju ritam, temperatura i udio pokrova.\n• Snaga i tijelo nisu isto — jača cigara ne mora biti punija, a puno tijelo ne mora donijeti nikotinski udarac.\n• Cijena po komadu — pomaže budžetu, dok kutija traži dodatnu provjeru stanja i datuma dolaska.\n\nPrije odlaska u trgovinu\n• Dvije zamjene — unaprijed odabrana alternativa po snazi i tijelu čuva od paničnog uzimanja najskuplje cigare koja je toga dana na polici.\n• Pitanja za trgovca — što je stiglo svježe, što je dobro odležalo i što on ne bi preporučio za tvoj termin pušenja.\n• Kupnja za goste — više blagih i srednjih formata prolazi bolje od jedne jake demonstracije.",
@@ -44,8 +55,8 @@
   {
    "id": "cijena-link-app",
    "title": {
-    "hr": "IV. Kako se čitaju cijena i poveznica",
-    "en": "IV. How to read price and links in the app"
+    "hr": "V. Kako se čitaju cijena i poveznica",
+    "en": "V. How to read price and links in the app"
    },
    "body": {
     "hr": "Aplikacija nije blagajna. Poveznica pomaže pri provjeri, ali ne jamči dostupnost. Glavno pravilo glasi: gumb „Gdje kupiti” pojavljuje se samo kad postoji pouzdana poveznica na stranicu proizvoda; kad je nema, na njegovu mjestu stoji „Traži online”.\n\nŠto znače gumbi\n• „Gdje kupiti” — iza tog gumba stoji pouzdana poveznica na stranicu proizvoda, a ne na kategoriju ili pretragu trgovine. Na toj stranici provjeravaš cijenu, zalihu i dostavu.\n• „Traži online” — aplikacija nema dovoljno pouzdanu poveznicu, pa naziv, tržište i trgovinu tražiš sam, bez pretpostavke da je prvi rezultat najbolji.\n• Pića i duhan — kod pića aplikacija vodi izravnije jer je kupnja boce preko interneta normalan kanal; kod duhana ostaje na informaciji, a kupnja se seli u trgovinu.\n• Cijena u aplikaciji — orijentir za odabrano tržište, a ne obveza trgovca.\n\nDobra provjera\n• Usporedba podataka — naziv, volumen ili vitola, starost ili edicija i fotografija etikete moraju se poklopiti prije plaćanja.\n• Sumnjivo niska cijena — najčešće je riječ o minijaturi, staroj stranici, rasprodanoj robi ili krivoj ediciji.\n• Duhan — način kupnje i preuzimanja potvrđuje trgovina, jer aplikacija ne zamjenjuje zakonski kanal.",
@@ -55,8 +66,8 @@
   {
    "id": "prvi-kit",
    "title": {
-    "hr": "V. Prva oprema",
-    "en": "V. First kit"
+    "hr": "VI. Prva oprema",
+    "en": "VI. First kit"
    },
    "body": {
     "hr": "Prva oprema ne mora biti skupa; njezin je posao ukloniti stres. Bolje prolazi nekoliko stvari koje koristiš svaki tjedan nego velika kutija pribora koja stoji kao ukras.\n\nOsnovni komplet\n• Rezač — dvostruka giljotina srednje cijene radi bolje od egzotičnog alata s kojim ne znaš rukovati.\n• Upaljač — jet plamen za vani, mekši plamen kad se pali u zavjetrini; uz njega idu plin i rezerva.\n• Pepeljara — stabilna, s utorom i dovoljno velika za cigaru; šalica i tanjur nisu dugoročno rješenje.\n• Voda i čaše — neutralna voda, jedna dobra čaša za žesticu i jedna za vino ili fortificirano vino.\n\nŠto na početku može pričekati\n• Veliki humidor — bez navike mjerenja vlage bolju uslugu daju mala kutija ili vrećica s kontrolom vlage, dok se tempo kupnje ne slegne.\n• Skupi noževi, stalci i putni kovčezi — imaju smisla tek kad znaš koje formate zaista pušiš.\n• Pet boca istog stila — prvi bar bolje podnosi kontrast: jedan rum, jedan whisky ili brandy, jedno fortificirano vino i jedno bezalkoholno piće.",
@@ -66,23 +77,12 @@
   {
    "id": "sezona-zaliha",
    "title": {
-    "hr": "VI. Sezona i zaliha",
-    "en": "VI. Season and stock"
+    "hr": "VII. Sezona i zaliha",
+    "en": "VII. Season and stock"
    },
    "body": {
     "hr": "Dobra kupnja ovisi o sezoni. Ljeto traži drugu logistiku od zime, a blagdani prazne police brže nego što aplikacija stigne osvježiti bilješku.\n\nPlaniranje kroz godinu\n• Ljetna vrućina — boce podnose dostavu lakše od cigara, a duhan ne bi smio ostati u autu, na suncu ili cijeli dan u torbi.\n• Zima i blagdani — tada stižu darovni setovi, ali popularne boce nestaju s polica prije nego što blagdani počnu.\n• Godišnji odmor — ranija kupnja daje izbor, dok zadnji dan obično donosi kompromis.\n• Terasa — formati od 30 do 60 minuta i pića koja podnose malo nižu temperaturu ondje rade najbolje.\n\nZaliha kod kuće\n• Manja, ali smislena — nekoliko blagih, nekoliko srednjih, jedna jača cigara i dvije boce koje pokrivaju različite večeri.\n• Rotacija — stariji komadi idu naprijed jer je kolekcija za pušenje, a ne za brojanje.\n• Popust bez stabilne vlage — nije ušteda; kutija koja strada pojede cijelu razliku u cijeni.",
     "en": "Good buying depends on season. Summer needs different logistics from winter, and holidays empty shelves faster than the app can refresh a note.\n\nSeason planning\n• In summer, watch the heat. Bottles survive delivery more easily than cigars; do not leave tobacco in a car, sun or bag all day.\n• In winter, expect gift sets, but also fast disappearance of popular bottles before holidays.\n• Before vacation, buy early. The last day usually means compromise, not the best choice.\n• For terraces, choose 30 to 60 minute formats and drinks that work slightly cooler.\n\nHome stock\n• Keep less, but make it coherent: a few mild cigars, a few medium cigars, one stronger cigar and two bottles that cover different tables.\n• Rotate older pieces forward. A collection is for use, not only counting.\n• If you do not have stable humidity, do not buy a box only because it is discounted. The discount disappears if the product suffers."
-   }
-  },
-  {
-   "id": "moj-plan-app",
-   "title": {
-    "hr": "VII. Moj plan i petorka za bife",
-    "en": "VII. My plan and the buffet five"
-   },
-   "body": {
-    "hr": "Kupovina u aplikaciji nije jedan popis — četiri odjeljka rade različit posao. Praznine u kolekciji pokazuju što ti nedostaje po kategoriji; preporuke po segmentima su orijentir po budžetu; petorka za bife je kratka lista za trgovinu; Moj plan je tvoja osobna checklista.\n\nKako se razlikuju\n• Praznine — automatski iz tvoje kolekcije: što nemaš u rumu, whiskyju, vinu ili priboru.\n• Segmenti — prijedlozi po cjenovnom razredu; ne znači da moraš kupiti sve odjednom.\n• Petorka za bife — brza petorka za prvi ulazak u dućan; nije isto što tvoj dugoročni plan.\n• Moj plan — kvačice koje sam označavaš; spremaju se u pregledniku i ulaze u sigurnosnu kopiju kolekcije.\n\nPraksa\n• Označi u Moj plan ono što stvarno kupuješ — lista ostaje tvoja, ne generička.\n• Prije plaćanja provjeri Gdje kupiti / Traži online na kartici proizvoda.\n• Jedna dobra večera s onim što već imaš vrijedi više od punjenja pet odjeljaka odjednom.\n\nPoveznica s vodičem\n• Prvi kit i sezona zalihe — što kupiti i kada; Moj plan — što si odlučio sljedeće.",
-    "en": "Shopping in the app is not one list — four sections do different jobs. Collection gaps show what you lack by category; segment picks are budget guidance; the buffet five is a short shop run; My plan is your personal checklist.\n\nHow they differ\n• Gaps — automatic from your collection: what you do not yet have in rum, whisky, wine or gear.\n• Segments — suggestions by price tier; you do not need to buy every tier at once.\n• Buffet five — a quick five for your first shop visit; not the same as your long-term plan.\n• My plan — checkboxes you mark yourself; stored in the browser and included in collection backup.\n\nPractice\n• Mark in My plan what you will actually buy — the list stays yours, not generic.\n• Before paying, check Buy / Search online on the product card.\n• One good evening with what you already own beats filling five sections at once.\n\nLink to this guide\n• First kit and season/stock — what to buy and when; My plan — what you decided next."
    }
   },
   {

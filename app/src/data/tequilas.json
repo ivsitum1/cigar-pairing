@@ -250,12 +250,12 @@
     ],
     "qualityScore": 8.0,
     "priceEUR": {
-      "min": 245.0,
-      "max": 245.0
+      "min": 249.99,
+      "max": 249.99
     },
     "priceApprox": false,
-    "shopHR": "Miva",
-    "priceUrl": "https://www.miva.com.hr/asortiman/proizvod-2528-clase-azul-tequila-reposado",
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-tekila-1392/tekila-clase-azul-reposado-gb-07-l-7560",
     "pairable": true,
     "serving": {
       "neat": 3,
@@ -1249,5 +1249,1633 @@
       "en": "Tequila Ocho Plata (blanco) at 40%: agave, citrus, herbal. Single-estate / vintage label; profile estimated until a HR price lands."
     },
     "profileEstimated": true
+  },
+  {
+    "id": "tq-liker-od-tekile-coffee-cazcabel",
+    "category": "tequila",
+    "name": "od tekile Coffee Cazcabel",
+    "style": "blanco",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "body": 2,
+    "sweetness": 1,
+    "flavorTags": [
+      "agava",
+      "citrus",
+      "papar"
+    ],
+    "qualityScore": 5.5,
+    "priceEUR": {
+      "min": 30.0,
+      "max": 30.0
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-tekila-1392/liker-od-tekile-coffee-cazcabel-07-l-11915",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Liker od tekile Coffee Cazcabel: agava ide uz blagi do srednji pokrov; stil blanco ne voli pretjerano slatke ili jako dimne cigare.",
+      "en": "With Liker od tekile Coffee Cazcabel: agave suits a mild-to-medium wrapper; blanco dislikes overly sweet or heavily smoked cigars."
+    },
+    "notes": {
+      "hr": "Orijentir iz Drinx kataloga — od tekile Coffee Cazcabel. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — od tekile Coffee Cazcabel. Pairing profile, not a lab reading."
+    }
+  },
+  {
+    "id": "tq-anejo-cazcabel",
+    "category": "tequila",
+    "name": "Anejo Cazcabel",
+    "style": "anejo",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "body": 4,
+    "sweetness": 3,
+    "flavorTags": [
+      "hrast",
+      "vanilija",
+      "agava"
+    ],
+    "qualityScore": 6.0,
+    "priceEUR": {
+      "min": 46.8,
+      "max": 46.8
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-tekila-1392/tekila-anejo-cazcabel-07-l-11909",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Anejo Cazcabel: agava ide uz blagi do srednji pokrov; stil anejo ne voli pretjerano slatke ili jako dimne cigare.",
+      "en": "With Anejo Cazcabel: agave suits a mild-to-medium wrapper; anejo dislikes overly sweet or heavily smoked cigars."
+    },
+    "notes": {
+      "hr": "Orijentir iz Drinx kataloga — Anejo Cazcabel. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Anejo Cazcabel. Pairing profile, not a lab reading."
+    }
+  },
+  {
+    "id": "tq-anejo-cenote",
+    "category": "tequila",
+    "name": "Anejo Cenote",
+    "style": "anejo",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "body": 4,
+    "sweetness": 3,
+    "flavorTags": [
+      "hrast",
+      "vanilija",
+      "agava"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 55.34,
+      "max": 55.34
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-tekila-1392/tekila-anejo-cenote-07-l-8836",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Anejo Cenote: agava ide uz blagi do srednji pokrov; stil anejo ne voli pretjerano slatke ili jako dimne cigare.",
+      "en": "With Anejo Cenote: agave suits a mild-to-medium wrapper; anejo dislikes overly sweet or heavily smoked cigars."
+    },
+    "notes": {
+      "hr": "Orijentir iz Drinx kataloga — Anejo Cenote. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Anejo Cenote. Pairing profile, not a lab reading."
+    }
+  },
+  {
+    "id": "tq-anejo-cristalino-cenote",
+    "category": "tequila",
+    "name": "Anejo Cristalino Cenote",
+    "style": "anejo",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "body": 4,
+    "sweetness": 3,
+    "flavorTags": [
+      "hrast",
+      "vanilija",
+      "agava"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 68.9,
+      "max": 68.9
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-tekila-1392/tekila-anejo-cristalino-cenote-07-l-8731",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Anejo Cristalino Cenote: agava ide uz blagi do srednji pokrov; stil anejo ne voli pretjerano slatke ili jako dimne cigare.",
+      "en": "With Anejo Cristalino Cenote: agave suits a mild-to-medium wrapper; anejo dislikes overly sweet or heavily smoked cigars."
+    },
+    "notes": {
+      "hr": "Orijentir iz Drinx kataloga — Anejo Cristalino Cenote. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Anejo Cristalino Cenote. Pairing profile, not a lab reading."
+    }
+  },
+  {
+    "id": "tq-avion-blanco",
+    "category": "tequila",
+    "name": "Avion Blanco",
+    "style": "blanco",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "body": 2,
+    "sweetness": 1,
+    "flavorTags": [
+      "agava",
+      "citrus",
+      "papar"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 67.62,
+      "max": 67.62
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-tekila-1392/tekila-avion-blanco-07-l-1789",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Avion Blanco: agava ide uz blagi do srednji pokrov; stil blanco ne voli pretjerano slatke ili jako dimne cigare.",
+      "en": "With Avion Blanco: agave suits a mild-to-medium wrapper; blanco dislikes overly sweet or heavily smoked cigars."
+    },
+    "notes": {
+      "hr": "Orijentir iz Drinx kataloga — Avion Blanco. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Avion Blanco. Pairing profile, not a lab reading."
+    }
+  },
+  {
+    "id": "tq-blanco-codigo-1530",
+    "category": "tequila",
+    "name": "Blanco Codigo 1530",
+    "style": "blanco",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "body": 2,
+    "sweetness": 1,
+    "flavorTags": [
+      "agava",
+      "citrus",
+      "papar"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 69.99,
+      "max": 69.99
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-tekila-1392/tekila-blanco-codigo-1530-07-l-7703",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Blanco Codigo 1530: agava ide uz blagi do srednji pokrov; stil blanco ne voli pretjerano slatke ili jako dimne cigare.",
+      "en": "With Blanco Codigo 1530: agave suits a mild-to-medium wrapper; blanco dislikes overly sweet or heavily smoked cigars."
+    },
+    "notes": {
+      "hr": "Orijentir iz Drinx kataloga — Blanco Codigo 1530. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Blanco Codigo 1530. Pairing profile, not a lab reading."
+    }
+  },
+  {
+    "id": "tq-blanco-still-strength-codigo-1530",
+    "category": "tequila",
+    "name": "Blanco Still Strength Codigo 1530",
+    "style": "blanco",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "body": 2,
+    "sweetness": 1,
+    "flavorTags": [
+      "agava",
+      "citrus",
+      "papar"
+    ],
+    "qualityScore": 7.0,
+    "priceEUR": {
+      "min": 101.34,
+      "max": 101.34
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-tekila-1392/tekila-blanco-still-strength-codigo-1530-07-l-6788",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Blanco Still Strength Codigo 1530: agava ide uz blagi do srednji pokrov; stil blanco ne voli pretjerano slatke ili jako dimne cigare.",
+      "en": "With Blanco Still Strength Codigo 1530: agave suits a mild-to-medium wrapper; blanco dislikes overly sweet or heavily smoked cigars."
+    },
+    "notes": {
+      "hr": "Orijentir iz Drinx kataloga — Blanco Still Strength Codigo 1530. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Blanco Still Strength Codigo 1530. Pairing profile, not a lab reading."
+    }
+  },
+  {
+    "id": "tq-blanco-super-premium-padre-azul",
+    "category": "tequila",
+    "name": "Blanco Super Premium Padre Azul",
+    "style": "blanco",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "body": 2,
+    "sweetness": 1,
+    "flavorTags": [
+      "agava",
+      "citrus",
+      "papar"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 69.9,
+      "max": 69.9
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-tekila-1392/tekila-blanco-super-premium-padre-azul-07-l-746",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Blanco Super Premium Padre Azul: agava ide uz blagi do srednji pokrov; stil blanco ne voli pretjerano slatke ili jako dimne cigare.",
+      "en": "With Blanco Super Premium Padre Azul: agave suits a mild-to-medium wrapper; blanco dislikes overly sweet or heavily smoked cigars."
+    },
+    "notes": {
+      "hr": "Orijentir iz Drinx kataloga — Blanco Super Premium Padre Azul. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Blanco Super Premium Padre Azul. Pairing profile, not a lab reading."
+    }
+  },
+  {
+    "id": "tq-casamigos-blanco",
+    "category": "tequila",
+    "name": "Casamigos Blanco",
+    "style": "blanco",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "body": 2,
+    "sweetness": 1,
+    "flavorTags": [
+      "agava",
+      "citrus",
+      "papar"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 64.8,
+      "max": 64.8
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-tekila-1392/tekila-casamigos-blanco-07-l-7791",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Casamigos Blanco: agava ide uz blagi do srednji pokrov; stil blanco ne voli pretjerano slatke ili jako dimne cigare.",
+      "en": "With Casamigos Blanco: agave suits a mild-to-medium wrapper; blanco dislikes overly sweet or heavily smoked cigars."
+    },
+    "notes": {
+      "hr": "Orijentir iz Drinx kataloga — Casamigos Blanco. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Casamigos Blanco. Pairing profile, not a lab reading."
+    }
+  },
+  {
+    "id": "tq-cazadores-blanco",
+    "category": "tequila",
+    "name": "Cazadores Blanco",
+    "style": "blanco",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "body": 2,
+    "sweetness": 1,
+    "flavorTags": [
+      "agava",
+      "citrus",
+      "papar"
+    ],
+    "qualityScore": 5.5,
+    "priceEUR": {
+      "min": 33.6,
+      "max": 33.6
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-tekila-1392/tekila-cazadores-blanco-07-l-6353",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Cazadores Blanco: agava ide uz blagi do srednji pokrov; stil blanco ne voli pretjerano slatke ili jako dimne cigare.",
+      "en": "With Cazadores Blanco: agave suits a mild-to-medium wrapper; blanco dislikes overly sweet or heavily smoked cigars."
+    },
+    "notes": {
+      "hr": "Orijentir iz Drinx kataloga — Cazadores Blanco. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Cazadores Blanco. Pairing profile, not a lab reading."
+    }
+  },
+  {
+    "id": "tq-clase-azul-plata",
+    "category": "tequila",
+    "name": "Clase Azul Plata",
+    "style": "blanco",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "body": 2,
+    "sweetness": 1,
+    "flavorTags": [
+      "agava",
+      "citrus",
+      "papar"
+    ],
+    "qualityScore": 7.0,
+    "priceEUR": {
+      "min": 134.99,
+      "max": 134.99
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-tekila-1392/tekila-clase-azul-plata-gb-07-l-3502",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Clase Azul Plata: agava ide uz blagi do srednji pokrov; stil blanco ne voli pretjerano slatke ili jako dimne cigare.",
+      "en": "With Clase Azul Plata: agave suits a mild-to-medium wrapper; blanco dislikes overly sweet or heavily smoked cigars."
+    },
+    "notes": {
+      "hr": "Orijentir iz Drinx kataloga — Clase Azul Plata. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Clase Azul Plata. Pairing profile, not a lab reading."
+    }
+  },
+  {
+    "id": "tq-coconut-cazcabel",
+    "category": "tequila",
+    "name": "Coconut Cazcabel",
+    "style": "blanco",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "body": 2,
+    "sweetness": 1,
+    "flavorTags": [
+      "agava",
+      "citrus",
+      "papar"
+    ],
+    "qualityScore": 5.5,
+    "priceEUR": {
+      "min": 29.98,
+      "max": 29.98
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-tekila-1392/tekila-coconut-cazcabel-07-l-11919",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Coconut Cazcabel: agava ide uz blagi do srednji pokrov; stil blanco ne voli pretjerano slatke ili jako dimne cigare.",
+      "en": "With Coconut Cazcabel: agave suits a mild-to-medium wrapper; blanco dislikes overly sweet or heavily smoked cigars."
+    },
+    "notes": {
+      "hr": "Orijentir iz Drinx kataloga — Coconut Cazcabel. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Coconut Cazcabel. Pairing profile, not a lab reading."
+    }
+  },
+  {
+    "id": "tq-corralejo-blanco-100-agave",
+    "category": "tequila",
+    "name": "Corralejo Blanco 100% Agave",
+    "style": "blanco",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "body": 2,
+    "sweetness": 1,
+    "flavorTags": [
+      "agava",
+      "citrus",
+      "papar"
+    ],
+    "qualityScore": 6.0,
+    "priceEUR": {
+      "min": 44.8,
+      "max": 44.8
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-tekila-1392/tekila-corralejo-blanco-100-agave-07-l-4296",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Corralejo Blanco 100% Agave: agava ide uz blagi do srednji pokrov; stil blanco ne voli pretjerano slatke ili jako dimne cigare.",
+      "en": "With Corralejo Blanco 100% Agave: agave suits a mild-to-medium wrapper; blanco dislikes overly sweet or heavily smoked cigars."
+    },
+    "notes": {
+      "hr": "Orijentir iz Drinx kataloga — Corralejo Blanco 100% Agave. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Corralejo Blanco 100% Agave. Pairing profile, not a lab reading."
+    }
+  },
+  {
+    "id": "tq-eight-anejo-by-kendall-jenner-818",
+    "category": "tequila",
+    "name": "Eight Anejo by Kendall Jenner 818",
+    "style": "anejo",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "body": 4,
+    "sweetness": 3,
+    "flavorTags": [
+      "hrast",
+      "vanilija",
+      "agava"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 78.9,
+      "max": 78.9
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-tekila-1392/tekila-eight-anejo-by-kendall-jenner-818-07-l-2285",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Eight Anejo by Kendall Jenner 818: agava ide uz blagi do srednji pokrov; stil anejo ne voli pretjerano slatke ili jako dimne cigare.",
+      "en": "With Eight Anejo by Kendall Jenner 818: agave suits a mild-to-medium wrapper; anejo dislikes overly sweet or heavily smoked cigars."
+    },
+    "notes": {
+      "hr": "Orijentir iz Drinx kataloga — Eight Anejo by Kendall Jenner 818. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Eight Anejo by Kendall Jenner 818. Pairing profile, not a lab reading."
+    }
+  },
+  {
+    "id": "tq-eight-blanco-by-kendall-jenner-818",
+    "category": "tequila",
+    "name": "Eight Blanco by Kendall Jenner 818",
+    "style": "blanco",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "body": 2,
+    "sweetness": 1,
+    "flavorTags": [
+      "agava",
+      "citrus",
+      "papar"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 55.9,
+      "max": 55.9
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-tekila-1392/tekila-eight-blanco-by-kendall-jenner-818-07-l-3682",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Eight Blanco by Kendall Jenner 818: agava ide uz blagi do srednji pokrov; stil blanco ne voli pretjerano slatke ili jako dimne cigare.",
+      "en": "With Eight Blanco by Kendall Jenner 818: agave suits a mild-to-medium wrapper; blanco dislikes overly sweet or heavily smoked cigars."
+    },
+    "notes": {
+      "hr": "Orijentir iz Drinx kataloga — Eight Blanco by Kendall Jenner 818. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Eight Blanco by Kendall Jenner 818. Pairing profile, not a lab reading."
+    }
+  },
+  {
+    "id": "tq-herradura-plata",
+    "category": "tequila",
+    "name": "Herradura Plata",
+    "style": "blanco",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "body": 2,
+    "sweetness": 1,
+    "flavorTags": [
+      "agava",
+      "citrus",
+      "papar"
+    ],
+    "qualityScore": 5.5,
+    "priceEUR": {
+      "min": 36.9,
+      "max": 36.9
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-tekila-1392/tekila-herradura-plata-07-l-9587",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Herradura Plata: agava ide uz blagi do srednji pokrov; stil blanco ne voli pretjerano slatke ili jako dimne cigare.",
+      "en": "With Herradura Plata: agave suits a mild-to-medium wrapper; blanco dislikes overly sweet or heavily smoked cigars."
+    },
+    "notes": {
+      "hr": "Orijentir iz Drinx kataloga — Herradura Plata. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Herradura Plata. Pairing profile, not a lab reading."
+    }
+  },
+  {
+    "id": "tq-hornitos-sauza-reposado",
+    "category": "tequila",
+    "name": "Hornitos Sauza Reposado",
+    "style": "reposado",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "agava",
+      "vanilija",
+      "citrus"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 86.99,
+      "max": 86.99
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-tekila-1392/tekila-hornitos-sauza-reposado-07-l-7656",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Hornitos Sauza Reposado: agava ide uz blagi do srednji pokrov; stil reposado ne voli pretjerano slatke ili jako dimne cigare.",
+      "en": "With Hornitos Sauza Reposado: agave suits a mild-to-medium wrapper; reposado dislikes overly sweet or heavily smoked cigars."
+    },
+    "notes": {
+      "hr": "Orijentir iz Drinx kataloga — Hornitos Sauza Reposado. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Hornitos Sauza Reposado. Pairing profile, not a lab reading."
+    }
+  },
+  {
+    "id": "tq-ignite-anejo",
+    "category": "tequila",
+    "name": "Ignite Anejo",
+    "style": "anejo",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "body": 4,
+    "sweetness": 3,
+    "flavorTags": [
+      "hrast",
+      "vanilija",
+      "agava"
+    ],
+    "qualityScore": 6.0,
+    "priceEUR": {
+      "min": 54.9,
+      "max": 54.9
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-tekila-1392/tekila-ignite-anejo-07-l-1327",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Ignite Anejo: agava ide uz blagi do srednji pokrov; stil anejo ne voli pretjerano slatke ili jako dimne cigare.",
+      "en": "With Ignite Anejo: agave suits a mild-to-medium wrapper; anejo dislikes overly sweet or heavily smoked cigars."
+    },
+    "notes": {
+      "hr": "Orijentir iz Drinx kataloga — Ignite Anejo. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Ignite Anejo. Pairing profile, not a lab reading."
+    }
+  },
+  {
+    "id": "tq-ignite-blanco",
+    "category": "tequila",
+    "name": "Ignite Blanco",
+    "style": "blanco",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "body": 2,
+    "sweetness": 1,
+    "flavorTags": [
+      "agava",
+      "citrus",
+      "papar"
+    ],
+    "qualityScore": 6.0,
+    "priceEUR": {
+      "min": 48.9,
+      "max": 48.9
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-tekila-1392/tekila-ignite-blanco-07-l-2595",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Ignite Blanco: agava ide uz blagi do srednji pokrov; stil blanco ne voli pretjerano slatke ili jako dimne cigare.",
+      "en": "With Ignite Blanco: agave suits a mild-to-medium wrapper; blanco dislikes overly sweet or heavily smoked cigars."
+    },
+    "notes": {
+      "hr": "Orijentir iz Drinx kataloga — Ignite Blanco. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Ignite Blanco. Pairing profile, not a lab reading."
+    }
+  },
+  {
+    "id": "tq-ignite-reposado",
+    "category": "tequila",
+    "name": "Ignite Reposado",
+    "style": "reposado",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "agava",
+      "vanilija",
+      "citrus"
+    ],
+    "qualityScore": 6.0,
+    "priceEUR": {
+      "min": 49.9,
+      "max": 49.9
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-tekila-1392/tekila-ignite-reposado-07-l-1421",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Ignite Reposado: agava ide uz blagi do srednji pokrov; stil reposado ne voli pretjerano slatke ili jako dimne cigare.",
+      "en": "With Ignite Reposado: agave suits a mild-to-medium wrapper; reposado dislikes overly sweet or heavily smoked cigars."
+    },
+    "notes": {
+      "hr": "Orijentir iz Drinx kataloga — Ignite Reposado. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Ignite Reposado. Pairing profile, not a lab reading."
+    }
+  },
+  {
+    "id": "tq-inicio-blanco",
+    "category": "tequila",
+    "name": "Inicio Blanco",
+    "style": "blanco",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "body": 2,
+    "sweetness": 1,
+    "flavorTags": [
+      "agava",
+      "citrus",
+      "papar"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 75.0,
+      "max": 75.0
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-tekila-1392/tekila-inicio-blanco-07-l-3364",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Inicio Blanco: agava ide uz blagi do srednji pokrov; stil blanco ne voli pretjerano slatke ili jako dimne cigare.",
+      "en": "With Inicio Blanco: agave suits a mild-to-medium wrapper; blanco dislikes overly sweet or heavily smoked cigars."
+    },
+    "notes": {
+      "hr": "Orijentir iz Drinx kataloga — Inicio Blanco. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Inicio Blanco. Pairing profile, not a lab reading."
+    }
+  },
+  {
+    "id": "tq-kah-blanco",
+    "category": "tequila",
+    "name": "Kah Blanco",
+    "style": "blanco",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "body": 2,
+    "sweetness": 1,
+    "flavorTags": [
+      "agava",
+      "citrus",
+      "papar"
+    ],
+    "qualityScore": 6.0,
+    "priceEUR": {
+      "min": 50.71,
+      "max": 50.71
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-tekila-1392/tekila-kah-blanco-07-l-1873",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Kah Blanco: agava ide uz blagi do srednji pokrov; stil blanco ne voli pretjerano slatke ili jako dimne cigare.",
+      "en": "With Kah Blanco: agave suits a mild-to-medium wrapper; blanco dislikes overly sweet or heavily smoked cigars."
+    },
+    "notes": {
+      "hr": "Orijentir iz Drinx kataloga — Kah Blanco. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Kah Blanco. Pairing profile, not a lab reading."
+    }
+  },
+  {
+    "id": "tq-milenio-extra-anejo-1800-tequila",
+    "category": "tequila",
+    "name": "Milenio Extra Anejo 1800 Tequila",
+    "style": "extra-anejo",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "body": 5,
+    "sweetness": 3,
+    "flavorTags": [
+      "hrast",
+      "kakao",
+      "vanilija"
+    ],
+    "qualityScore": 7.5,
+    "priceEUR": {
+      "min": 169.9,
+      "max": 169.9
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-tekila-1392/tekila-milenio-extra-anejo-1800-tequila-gb-07-l-2626",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Milenio Extra Anejo 1800 Tequila: agava ide uz blagi do srednji pokrov; stil extra-anejo ne voli pretjerano slatke ili jako dimne cigare.",
+      "en": "With Milenio Extra Anejo 1800 Tequila: agave suits a mild-to-medium wrapper; extra-anejo dislikes overly sweet or heavily smoked cigars."
+    },
+    "notes": {
+      "hr": "Orijentir iz Drinx kataloga — Milenio Extra Anejo 1800 Tequila. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Milenio Extra Anejo 1800 Tequila. Pairing profile, not a lab reading."
+    }
+  },
+  {
+    "id": "tq-mundo-blanco",
+    "category": "tequila",
+    "name": "Mundo Blanco",
+    "style": "blanco",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "body": 2,
+    "sweetness": 1,
+    "flavorTags": [
+      "agava",
+      "citrus",
+      "papar"
+    ],
+    "qualityScore": 5.5,
+    "priceEUR": {
+      "min": 30.6,
+      "max": 30.6
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-tekila-1392/tekila-mundo-blanco-07-l-10290",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Mundo Blanco: agava ide uz blagi do srednji pokrov; stil blanco ne voli pretjerano slatke ili jako dimne cigare.",
+      "en": "With Mundo Blanco: agave suits a mild-to-medium wrapper; blanco dislikes overly sweet or heavily smoked cigars."
+    },
+    "notes": {
+      "hr": "Orijentir iz Drinx kataloga — Mundo Blanco. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Mundo Blanco. Pairing profile, not a lab reading."
+    }
+  },
+  {
+    "id": "tq-patron-anejo-2",
+    "category": "tequila",
+    "name": "Patron Anejo",
+    "style": "anejo",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "body": 4,
+    "sweetness": 3,
+    "flavorTags": [
+      "hrast",
+      "vanilija",
+      "agava"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 74.9,
+      "max": 74.9
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-tekila-1392/tekila-patron-anejo-07-l-1838",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Patron Anejo: agava ide uz blagi do srednji pokrov; stil anejo ne voli pretjerano slatke ili jako dimne cigare.",
+      "en": "With Patron Anejo: agave suits a mild-to-medium wrapper; anejo dislikes overly sweet or heavily smoked cigars."
+    },
+    "notes": {
+      "hr": "Orijentir iz Drinx kataloga — Patron Anejo. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Patron Anejo. Pairing profile, not a lab reading."
+    }
+  },
+  {
+    "id": "tq-patron-citronge",
+    "category": "tequila",
+    "name": "Patron Citronge",
+    "style": "blanco",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "body": 2,
+    "sweetness": 1,
+    "flavorTags": [
+      "agava",
+      "citrus",
+      "papar"
+    ],
+    "qualityScore": 5.5,
+    "priceEUR": {
+      "min": 33.61,
+      "max": 33.61
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-tekila-1392/tekila-patron-citronge-07-l-1574",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Patron Citronge: agava ide uz blagi do srednji pokrov; stil blanco ne voli pretjerano slatke ili jako dimne cigare.",
+      "en": "With Patron Citronge: agave suits a mild-to-medium wrapper; blanco dislikes overly sweet or heavily smoked cigars."
+    },
+    "notes": {
+      "hr": "Orijentir iz Drinx kataloga — Patron Citronge. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Patron Citronge. Pairing profile, not a lab reading."
+    }
+  },
+  {
+    "id": "tq-patron-el-cielo-prestige-silver",
+    "category": "tequila",
+    "name": "Patron El Cielo Prestige Silver",
+    "style": "blanco",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "body": 2,
+    "sweetness": 1,
+    "flavorTags": [
+      "agava",
+      "citrus",
+      "papar"
+    ],
+    "qualityScore": 7.5,
+    "priceEUR": {
+      "min": 160.0,
+      "max": 160.0
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-tekila-1392/tekila-patron-el-cielo-prestige-silver-gb-07-l-11864",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Patron El Cielo Prestige Silver: agava ide uz blagi do srednji pokrov; stil blanco ne voli pretjerano slatke ili jako dimne cigare.",
+      "en": "With Patron El Cielo Prestige Silver: agave suits a mild-to-medium wrapper; blanco dislikes overly sweet or heavily smoked cigars."
+    },
+    "notes": {
+      "hr": "Orijentir iz Drinx kataloga — Patron El Cielo Prestige Silver. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Patron El Cielo Prestige Silver. Pairing profile, not a lab reading."
+    }
+  },
+  {
+    "id": "tq-patron-silver-2",
+    "category": "tequila",
+    "name": "Patron Silver",
+    "style": "blanco",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "body": 2,
+    "sweetness": 1,
+    "flavorTags": [
+      "agava",
+      "citrus",
+      "papar"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 56.25,
+      "max": 56.25
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-tekila-1392/tekila-patron-silver-gb-07-l-8882",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Patron Silver: agava ide uz blagi do srednji pokrov; stil blanco ne voli pretjerano slatke ili jako dimne cigare.",
+      "en": "With Patron Silver: agave suits a mild-to-medium wrapper; blanco dislikes overly sweet or heavily smoked cigars."
+    },
+    "notes": {
+      "hr": "Orijentir iz Drinx kataloga — Patron Silver. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Patron Silver. Pairing profile, not a lab reading."
+    }
+  },
+  {
+    "id": "tq-patron-xo-cafe",
+    "category": "tequila",
+    "name": "Patron XO Cafe",
+    "style": "blanco",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "body": 2,
+    "sweetness": 1,
+    "flavorTags": [
+      "agava",
+      "citrus",
+      "papar"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 58.9,
+      "max": 58.9
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-tekila-1392/tekila-patron-xo-cafe-07-l-1593",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Patron XO Cafe: agava ide uz blagi do srednji pokrov; stil blanco ne voli pretjerano slatke ili jako dimne cigare.",
+      "en": "With Patron XO Cafe: agave suits a mild-to-medium wrapper; blanco dislikes overly sweet or heavily smoked cigars."
+    },
+    "notes": {
+      "hr": "Orijentir iz Drinx kataloga — Patron XO Cafe. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Patron XO Cafe. Pairing profile, not a lab reading."
+    }
+  },
+  {
+    "id": "tq-reposado-1800-tequila",
+    "category": "tequila",
+    "name": "Reposado 1800 Tequila",
+    "style": "reposado",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "agava",
+      "vanilija",
+      "citrus"
+    ],
+    "qualityScore": 5.5,
+    "priceEUR": {
+      "min": 39.99,
+      "max": 39.99
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-tekila-1392/tekila-reposado-1800-tequila-07-l-3454",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Reposado 1800 Tequila: agava ide uz blagi do srednji pokrov; stil reposado ne voli pretjerano slatke ili jako dimne cigare.",
+      "en": "With Reposado 1800 Tequila: agave suits a mild-to-medium wrapper; reposado dislikes overly sweet or heavily smoked cigars."
+    },
+    "notes": {
+      "hr": "Orijentir iz Drinx kataloga — Reposado 1800 Tequila. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Reposado 1800 Tequila. Pairing profile, not a lab reading."
+    }
+  },
+  {
+    "id": "tq-reposado-bambarria",
+    "category": "tequila",
+    "name": "Reposado Bambarria",
+    "style": "reposado",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "agava",
+      "vanilija",
+      "citrus"
+    ],
+    "qualityScore": 6.0,
+    "priceEUR": {
+      "min": 45.0,
+      "max": 45.0
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-tekila-1392/tekila-reposado-bambarria-07-l-6223",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Reposado Bambarria: agava ide uz blagi do srednji pokrov; stil reposado ne voli pretjerano slatke ili jako dimne cigare.",
+      "en": "With Reposado Bambarria: agave suits a mild-to-medium wrapper; reposado dislikes overly sweet or heavily smoked cigars."
+    },
+    "notes": {
+      "hr": "Orijentir iz Drinx kataloga — Reposado Bambarria. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Reposado Bambarria. Pairing profile, not a lab reading."
+    }
+  },
+  {
+    "id": "tq-reposado-codigo-1530",
+    "category": "tequila",
+    "name": "Reposado Codigo 1530",
+    "style": "reposado",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "agava",
+      "vanilija",
+      "citrus"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 89.9,
+      "max": 89.9
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-tekila-1392/tekila-reposado-codigo-1530-07-l-8703",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Reposado Codigo 1530: agava ide uz blagi do srednji pokrov; stil reposado ne voli pretjerano slatke ili jako dimne cigare.",
+      "en": "With Reposado Codigo 1530: agave suits a mild-to-medium wrapper; reposado dislikes overly sweet or heavily smoked cigars."
+    },
+    "notes": {
+      "hr": "Orijentir iz Drinx kataloga — Reposado Codigo 1530. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Reposado Codigo 1530. Pairing profile, not a lab reading."
+    }
+  },
+  {
+    "id": "tq-reposado-sangre-de-vida",
+    "category": "tequila",
+    "name": "Reposado Sangre de Vida",
+    "style": "reposado",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "agava",
+      "vanilija",
+      "citrus"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 60.0,
+      "max": 60.0
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-tekila-1392/tekila-reposado-sangre-de-vida-07-l-8077",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Reposado Sangre de Vida: agava ide uz blagi do srednji pokrov; stil reposado ne voli pretjerano slatke ili jako dimne cigare.",
+      "en": "With Reposado Sangre de Vida: agave suits a mild-to-medium wrapper; reposado dislikes overly sweet or heavily smoked cigars."
+    },
+    "notes": {
+      "hr": "Orijentir iz Drinx kataloga — Reposado Sangre de Vida. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Reposado Sangre de Vida. Pairing profile, not a lab reading."
+    }
+  },
+  {
+    "id": "tq-reserva-anejo-1800-tequila",
+    "category": "tequila",
+    "name": "1800 Reserva Añejo",
+    "style": "anejo",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "body": 4,
+    "sweetness": 3,
+    "flavorTags": [
+      "hrast",
+      "vanilija",
+      "agava"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 59.9,
+      "max": 59.9
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-tekila-1392/tekila-reserva-anejo-1800-tequila-07-l-4113",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Reserva ANEJO 1800 Tequila: agava ide uz blagi do srednji pokrov; stil anejo ne voli pretjerano slatke ili jako dimne cigare.",
+      "en": "With Reserva ANEJO 1800 Tequila: agave suits a mild-to-medium wrapper; anejo dislikes overly sweet or heavily smoked cigars."
+    },
+    "notes": {
+      "hr": "Orijentir iz Drinx kataloga — 1800 Reserva Añejo. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — 1800 Reserva Añejo. Pairing profile, not a lab reading."
+    }
+  },
+  {
+    "id": "tq-reserva-silver-1800-tequila",
+    "category": "tequila",
+    "name": "1800 Reserva Silver",
+    "style": "blanco",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "body": 2,
+    "sweetness": 1,
+    "flavorTags": [
+      "agava",
+      "citrus",
+      "papar"
+    ],
+    "qualityScore": 5.5,
+    "priceEUR": {
+      "min": 34.99,
+      "max": 34.99
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-tekila-1392/tekila-reserva-silver-1800-tequila-07-l-6070",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Reserva SILVER 1800 Tequila: agava ide uz blagi do srednji pokrov; stil blanco ne voli pretjerano slatke ili jako dimne cigare.",
+      "en": "With Reserva SILVER 1800 Tequila: agave suits a mild-to-medium wrapper; blanco dislikes overly sweet or heavily smoked cigars."
+    },
+    "notes": {
+      "hr": "Orijentir iz Drinx kataloga — 1800 Reserva Silver. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — 1800 Reserva Silver. Pairing profile, not a lab reading."
+    }
+  },
+  {
+    "id": "tq-rooster-rojo-blanco",
+    "category": "tequila",
+    "name": "Rooster Rojo Blanco",
+    "style": "blanco",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "body": 2,
+    "sweetness": 1,
+    "flavorTags": [
+      "agava",
+      "citrus",
+      "papar"
+    ],
+    "qualityScore": 5.5,
+    "priceEUR": {
+      "min": 36.72,
+      "max": 36.72
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-tekila-1392/tekila-rooster-rojo-blanco-07-l-3971",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Rooster Rojo Blanco: agava ide uz blagi do srednji pokrov; stil blanco ne voli pretjerano slatke ili jako dimne cigare.",
+      "en": "With Rooster Rojo Blanco: agave suits a mild-to-medium wrapper; blanco dislikes overly sweet or heavily smoked cigars."
+    },
+    "notes": {
+      "hr": "Orijentir iz Drinx kataloga — Rooster Rojo Blanco. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Rooster Rojo Blanco. Pairing profile, not a lab reading."
+    }
+  },
+  {
+    "id": "tq-rosa-codigo-1530",
+    "category": "tequila",
+    "name": "Rosa Codigo 1530",
+    "style": "blanco",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "body": 2,
+    "sweetness": 1,
+    "flavorTags": [
+      "agava",
+      "citrus",
+      "papar"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 79.99,
+      "max": 79.99
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-tekila-1392/tekila-rosa-codigo-1530-07-l-8124",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Rosa Codigo 1530: agava ide uz blagi do srednji pokrov; stil blanco ne voli pretjerano slatke ili jako dimne cigare.",
+      "en": "With Rosa Codigo 1530: agave suits a mild-to-medium wrapper; blanco dislikes overly sweet or heavily smoked cigars."
+    },
+    "notes": {
+      "hr": "Orijentir iz Drinx kataloga — Rosa Codigo 1530. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Rosa Codigo 1530. Pairing profile, not a lab reading."
+    }
+  },
+  {
+    "id": "tq-rosa-reposado-codigo-1530",
+    "category": "tequila",
+    "name": "Rosa reposado Codigo 1530",
+    "style": "reposado",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "body": 3,
+    "sweetness": 2,
+    "flavorTags": [
+      "agava",
+      "vanilija",
+      "citrus"
+    ],
+    "qualityScore": 7.0,
+    "priceEUR": {
+      "min": 92.11,
+      "max": 92.11
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-tekila-1392/tekila-rosa-reposado-codigo-1530-07-l-6636",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Rosa reposado Codigo 1530: agava ide uz blagi do srednji pokrov; stil reposado ne voli pretjerano slatke ili jako dimne cigare.",
+      "en": "With Rosa reposado Codigo 1530: agave suits a mild-to-medium wrapper; reposado dislikes overly sweet or heavily smoked cigars."
+    },
+    "notes": {
+      "hr": "Orijentir iz Drinx kataloga — Rosa reposado Codigo 1530. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Rosa reposado Codigo 1530. Pairing profile, not a lab reading."
+    }
+  },
+  {
+    "id": "tq-sierra-cafe",
+    "category": "tequila",
+    "name": "Sierra Cafe",
+    "style": "blanco",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "body": 2,
+    "sweetness": 1,
+    "flavorTags": [
+      "agava",
+      "citrus",
+      "papar"
+    ],
+    "qualityScore": 5.5,
+    "priceEUR": {
+      "min": 35.76,
+      "max": 35.76
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-tekila-1392/tekila-sierra-cafe-07-l-8725",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Sierra Cafe: agava ide uz blagi do srednji pokrov; stil blanco ne voli pretjerano slatke ili jako dimne cigare.",
+      "en": "With Sierra Cafe: agave suits a mild-to-medium wrapper; blanco dislikes overly sweet or heavily smoked cigars."
+    },
+    "notes": {
+      "hr": "Orijentir iz Drinx kataloga — Sierra Cafe. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Sierra Cafe. Pairing profile, not a lab reading."
+    }
+  },
+  {
+    "id": "tq-sierra-extra-anejo",
+    "category": "tequila",
+    "name": "Sierra Extra Anejo",
+    "style": "extra-anejo",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "body": 5,
+    "sweetness": 3,
+    "flavorTags": [
+      "hrast",
+      "kakao",
+      "vanilija"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 79.81,
+      "max": 79.81
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-tekila-1392/tekila-sierra-extra-anejo-07-l-6766",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Sierra Extra Anejo: agava ide uz blagi do srednji pokrov; stil extra-anejo ne voli pretjerano slatke ili jako dimne cigare.",
+      "en": "With Sierra Extra Anejo: agave suits a mild-to-medium wrapper; extra-anejo dislikes overly sweet or heavily smoked cigars."
+    },
+    "notes": {
+      "hr": "Orijentir iz Drinx kataloga — Sierra Extra Anejo. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Sierra Extra Anejo. Pairing profile, not a lab reading."
+    }
+  },
+  {
+    "id": "tq-sierra-fumado",
+    "category": "tequila",
+    "name": "Sierra Fumado",
+    "style": "blanco",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "body": 2,
+    "sweetness": 1,
+    "flavorTags": [
+      "agava",
+      "citrus",
+      "papar"
+    ],
+    "qualityScore": 6.5,
+    "priceEUR": {
+      "min": 58.91,
+      "max": 58.91
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-tekila-1392/tekila-sierra-fumado-07-l-8337",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Sierra Fumado: agava ide uz blagi do srednji pokrov; stil blanco ne voli pretjerano slatke ili jako dimne cigare.",
+      "en": "With Sierra Fumado: agave suits a mild-to-medium wrapper; blanco dislikes overly sweet or heavily smoked cigars."
+    },
+    "notes": {
+      "hr": "Orijentir iz Drinx kataloga — Sierra Fumado. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Sierra Fumado. Pairing profile, not a lab reading."
+    }
+  },
+  {
+    "id": "tq-volcan-blanco-de-mi-tierra",
+    "category": "tequila",
+    "name": "Volcan Blanco De Mi Tierra",
+    "style": "blanco",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "body": 2,
+    "sweetness": 1,
+    "flavorTags": [
+      "agava",
+      "citrus",
+      "papar"
+    ],
+    "qualityScore": 6.0,
+    "priceEUR": {
+      "min": 45.8,
+      "max": 45.8
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-tekila-1392/tekila-volcan-blanco-de-mi-tierra-07-l-10311",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Volcan Blanco De Mi Tierra: agava ide uz blagi do srednji pokrov; stil blanco ne voli pretjerano slatke ili jako dimne cigare.",
+      "en": "With Volcan Blanco De Mi Tierra: agave suits a mild-to-medium wrapper; blanco dislikes overly sweet or heavily smoked cigars."
+    },
+    "notes": {
+      "hr": "Orijentir iz Drinx kataloga — Volcan Blanco De Mi Tierra. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Volcan Blanco De Mi Tierra. Pairing profile, not a lab reading."
+    }
+  },
+  {
+    "id": "tq-aha-toro-blanco-artesenal",
+    "category": "tequila",
+    "name": "Aha Toro Blanco Artesenal",
+    "style": "blanco",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "body": 2,
+    "sweetness": 1,
+    "flavorTags": [
+      "agava",
+      "citrus",
+      "papar"
+    ],
+    "qualityScore": 6.0,
+    "priceEUR": {
+      "min": 42.0,
+      "max": 42.0
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-tekila-1392/tequila-aha-toro-blanco-artesenal-07-l-12107",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Aha Toro Blanco Artesenal: agava ide uz blagi do srednji pokrov; stil blanco ne voli pretjerano slatke ili jako dimne cigare.",
+      "en": "With Aha Toro Blanco Artesenal: agave suits a mild-to-medium wrapper; blanco dislikes overly sweet or heavily smoked cigars."
+    },
+    "notes": {
+      "hr": "Orijentir iz Drinx kataloga — Aha Toro Blanco Artesenal. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Aha Toro Blanco Artesenal. Pairing profile, not a lab reading."
+    }
+  },
+  {
+    "id": "tq-jose-cuervo-reserva-de-la-familia-extra-anejo",
+    "category": "tequila",
+    "name": "Jose Cuervo Reserva De La Familia Extra Anejo",
+    "style": "extra-anejo",
+    "region": "Jalisco, Meksiko",
+    "country": "Meksiko",
+    "body": 5,
+    "sweetness": 3,
+    "flavorTags": [
+      "hrast",
+      "kakao",
+      "vanilija"
+    ],
+    "qualityScore": 7.5,
+    "priceEUR": {
+      "min": 180.0,
+      "max": 180.0
+    },
+    "priceApprox": false,
+    "shopHR": "drinx.hr",
+    "priceUrl": "https://drinx.hr/shop/zestoka-pica-tekila-1392/tequila-jose-cuervo-reserva-de-la-familia-extra-anejo-07-l-12065",
+    "pairable": true,
+    "serving": {
+      "neat": 3,
+      "rocks": 2,
+      "best": "Čisto (snifter)"
+    },
+    "cigarHint": {
+      "hr": "Uz Jose Cuervo Reserva De La Familia Extra Anejo: agava ide uz blagi do srednji pokrov; stil extra-anejo ne voli pretjerano slatke ili jako dimne cigare.",
+      "en": "With Jose Cuervo Reserva De La Familia Extra Anejo: agave suits a mild-to-medium wrapper; extra-anejo dislikes overly sweet or heavily smoked cigars."
+    },
+    "notes": {
+      "hr": "Orijentir iz Drinx kataloga — Jose Cuervo Reserva De La Familia Extra Anejo. Profil je za sparivanje, ne lab mjerenje.",
+      "en": "Drinx catalogue orientation — Jose Cuervo Reserva De La Familia Extra Anejo. Pairing profile, not a lab reading."
+    }
   }
 ]

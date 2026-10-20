@@ -242,6 +242,14 @@ export function isDrinkProductUrl(url: string): boolean {
   if (/\/katalog\//.test(path) || path.endsWith("/katalog")) {
     return segs[0] === "katalog" && segs.length >= 4;
   }
+  // drinx.hr (Odoo): /shop/<category-slug>/<product-slug-id>
+  // category listing: /shop/category/<slug>[/page/N]
+  if (u.hostname.replace(/^www\./, "") === "drinx.hr") {
+    if (segs[0] !== "shop") return false;
+    if (segs[1] === "category") return false;
+    if (segs.length < 3) return false;
+    return segs[segs.length - 1]!.length >= 4;
+  }
   if (/\/vrsta\//.test(path)) return false;
   if (/\/search/.test(path) || /\/shop\/(?:rum|whiskey|whisky|gin|tequila|cognac)\/?$/.test(path)) {
     return false;
