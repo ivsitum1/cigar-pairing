@@ -115,3 +115,13 @@ Runbook za lokalno pokretanje: **`docs/SIRENJE-SLIKA.md`**. Stanje i plan širen
 - **Geographic filter uses catalog proof, not only `markets`.** `markets` is the pipeline declaration; UI filter / `cigarInRegion` / gift eligibility require proof: HR → `availabilityHR` or humidor/havana product URL; EU/USA → `regionLinks` or regional product/line URL. `cigarShopLinks` never invents search buttons for shops without that proof. `inStock` / `stockFetchedAt` are shelf pings only — out of stock stays in the regional filter.
 - The OCR bundle (~10.9 MB) must stay a **lazy** chunk. Do not give it a `manualChunks` name: that dissolves the dynamic-import boundary and puts it in the entry's `modulepreload`. It is named via `output.chunkFileNames` instead, so `globIgnores` still matches.
 - Since state is `localStorage`-only, a "hello world" smoke test is fully client-side: open the app → Pairing → pick a cigar → view scored drink pairings → "Zabilježi večer" to log an evening → confirm it appears under Kolekcija (Collection) diary.
+
+### Agent-rules harness
+
+Local embed (junction/clone, gitignored): `agent-rules/` → GitHub SoT [`ivsitum1/agent-rules`](https://github.com/ivsitum1/agent-rules). Install:
+
+```powershell
+python "$env:USERPROFILE\Documents\agent rules\40_operations\scripts\install_agent_rules.py" --root "$PWD"
+```
+
+Tracked markers: `.agent/project_scope.json`, `.agent/consumer_runtime.json`, `.agent/brain_lock.json`. This `AGENTS.md` remains the product/Cloud source of truth for app CI; do not replace it with the brain voice-domain template (`--voice-domain`).
