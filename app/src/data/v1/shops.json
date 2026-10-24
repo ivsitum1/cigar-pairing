@@ -1,0 +1,233 @@
+[
+  {
+    "adapter": "cgars",
+    "city": null,
+    "home": "https://www.cgarsltd.co.uk/",
+    "id": "cgars-uk",
+    "name": "C.Gars Ltd",
+    "productHost": "cgarsltd.co.uk",
+    "region": "EU",
+    "source": "scraper",
+    "type": "online"
+  },
+  {
+    "adapter": "cigarworld",
+    "city": null,
+    "home": "https://www.cigarworld.de/en",
+    "id": "cigarworld",
+    "name": "CigarWorld",
+    "productHost": "cigarworld.de",
+    "region": "EU",
+    "source": "scraper",
+    "type": "online"
+  },
+  {
+    "adapter": "la-couronne",
+    "city": null,
+    "home": "https://cigarpassion.ch/en/",
+    "id": "la-couronne-ch",
+    "name": "La Couronne",
+    "productHost": "cigarpassion.ch",
+    "region": "EU",
+    "source": "scraper",
+    "type": "online"
+  },
+  {
+    "adapter": "whisky-exchange",
+    "city": "London",
+    "home": "https://www.thewhiskyexchange.com/",
+    "id": "whisky-exchange",
+    "name": "The Whisky Exchange",
+    "productHost": "thewhiskyexchange.com",
+    "region": "EU",
+    "source": "scraper",
+    "type": "online"
+  },
+  {
+    "adapter": "aficionado",
+    "city": "Zagreb",
+    "home": "https://www.aficionado.hr/",
+    "id": "aficionado-zg",
+    "name": "Aficionado",
+    "productHost": null,
+    "region": "HR",
+    "source": "manual",
+    "type": "walkIn"
+  },
+  {
+    "adapter": "allez",
+    "city": null,
+    "home": "https://allez.hr/",
+    "id": "allez",
+    "name": "allez.hr",
+    "productHost": "allez.hr",
+    "region": "HR",
+    "source": "scraper",
+    "type": "online"
+  },
+  {
+    "adapter": "cugaklik",
+    "city": null,
+    "home": "https://www.cugaklik.hr/",
+    "id": "cugaklik",
+    "name": "Cugaklik",
+    "productHost": "cugaklik.hr",
+    "region": "HR",
+    "source": "scraper",
+    "type": "online"
+  },
+  {
+    "adapter": "drinx",
+    "city": null,
+    "home": "https://www.drinx.hr/",
+    "id": "drinx",
+    "name": "drinx.hr",
+    "productHost": "drinx.hr",
+    "region": "HR",
+    "source": "scraper",
+    "type": "online"
+  },
+  {
+    "adapter": "ecuga",
+    "city": null,
+    "home": "https://ecuga.com/",
+    "id": "ecuga",
+    "name": "ecuga.com",
+    "productHost": "ecuga.com",
+    "region": "HR",
+    "source": "scraper",
+    "type": "online"
+  },
+  {
+    "adapter": "havana",
+    "city": null,
+    "home": "https://havana-cigar-shop.com/",
+    "id": "havana-hr",
+    "name": "Havana Cigar Shop",
+    "productHost": "havana-cigar-shop.com",
+    "region": "HR",
+    "source": "scraper",
+    "type": "online"
+  },
+  {
+    "adapter": "humidor",
+    "city": "Zagreb",
+    "home": "https://humidor.hr/hr/",
+    "id": "humidor",
+    "name": "The Humidor",
+    "productHost": "humidor.hr",
+    "region": "HR",
+    "source": "scraper",
+    "type": "online"
+  },
+  {
+    "adapter": "roto",
+    "city": null,
+    "home": "https://webshop.rotodinamic.hr/",
+    "id": "roto",
+    "name": "Roto",
+    "productHost": "webshop.rotodinamic.hr",
+    "region": "HR",
+    "source": "scraper",
+    "type": "online"
+  },
+  {
+    "adapter": "tipsy",
+    "city": null,
+    "home": "https://tipsy.hr/",
+    "id": "tipsy",
+    "name": "Tipsy",
+    "productHost": "tipsy.hr",
+    "region": "HR",
+    "source": "scraper",
+    "type": "online"
+  },
+  {
+    "adapter": "tobacco-petica",
+    "city": "Zagreb",
+    "home": "https://www.branimir.hr/minglanje/trgovine/tobacco-petica",
+    "id": "tobacco-petica-branimir",
+    "name": "Tobacco Petica (Branimir)",
+    "productHost": null,
+    "region": "HR",
+    "source": "manual",
+    "type": "walkIn"
+  },
+  {
+    "adapter": "vivat",
+    "city": null,
+    "home": "https://www.vivat-finavina.hr/",
+    "id": "vivat",
+    "name": "Vivat fina vina",
+    "productHost": "vivat-finavina.hr",
+    "region": "HR",
+    "source": "scraper",
+    "type": "online"
+  },
+  {
+    "adapter": "vrutak",
+    "city": "Zagreb",
+    "home": "https://www.vrutak.hr/",
+    "id": "vrutak",
+    "name": "Vrutak",
+    "productHost": null,
+    "region": "HR",
+    "source": "scraper",
+    "type": "both"
+  },
+  {
+    "adapter": "cigarsdaily",
+    "city": null,
+    "home": "https://cigarsdaily.com/",
+    "id": "cigarsdaily",
+    "name": "Cigars Daily",
+    "productHost": "cigarsdaily.com",
+    "region": "USA",
+    "source": "scraper",
+    "type": "online"
+  },
+  {
+    "adapter": "famous-smoke",
+    "city": null,
+    "home": "https://www.famous-smoke.com/",
+    "id": "famous-smoke",
+    "name": "Famous Smoke",
+    "productHost": "famous-smoke.com",
+    "region": "USA",
+    "source": "scraper",
+    "type": "online"
+  },
+  {
+    "adapter": "holts",
+    "city": "Philadelphia",
+    "home": "https://www.holts.com/",
+    "id": "holts",
+    "name": "Holt's",
+    "productHost": null,
+    "region": "USA",
+    "source": "scraper",
+    "type": "online"
+  },
+  {
+    "adapter": "neptune",
+    "city": null,
+    "home": "https://www.neptunecigar.com/",
+    "id": "neptune",
+    "name": "Neptune Cigar",
+    "productHost": "neptunecigar.com",
+    "region": "USA",
+    "source": "scraper",
+    "type": "online"
+  },
+  {
+    "adapter": "total-wine",
+    "city": null,
+    "home": "https://www.totalwine.com/",
+    "id": "total-wine",
+    "name": "Total Wine & More",
+    "productHost": "totalwine.com",
+    "region": "USA",
+    "source": "scraper",
+    "type": "online"
+  }
+]
