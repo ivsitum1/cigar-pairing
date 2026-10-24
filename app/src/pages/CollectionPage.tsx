@@ -37,6 +37,7 @@ import {
   clearItem,
   exportData,
   importData,
+  lastEveningRating,
   removeJournalEntry,
   updateJournalEntry,
   useCollection,
@@ -255,9 +256,9 @@ export function CollectionPage({
     ),
   );
   const historyIds = dedupeCollectionCigarIds(
-    shortlistItemIds(data.items).filter((id) => cigarForItemId(id) != null),
+    shortlistItemIds(data.items, data.journal).filter((id) => cigarForItemId(id) != null),
   );
-  const historyDrinkIds = shortlistItemIds(data.items).filter(
+  const historyDrinkIds = shortlistItemIds(data.items, data.journal).filter(
     (id) => cigarForItemId(id) == null && drinkById(id) != null,
   );
   const favIds = favoriteItemIds(data.items);
@@ -277,13 +278,15 @@ export function CollectionPage({
    */
   const profile = useMemo(() => {
     const tried: TriedCigar[] = [];
-    for (const [id, state] of Object.entries(data.items)) {
-      if (!state.tried && state.rating == null) continue;
+    const seen = new Set<string>();
+    const pushTried = (id: string, stateRating: number | null) => {
+      if (seen.has(id)) return;
       const raw = cigarForItemId(id);
-      if (!raw) continue;
+      if (!raw) return;
+      seen.add(id);
       const cigar = withTaste(raw, taste);
-      // linija s više formata ne zna koji je pušen — oblik tada ne ulazi u zbroj
       const shapes = cigarShapes(cigar);
+      const evening = lastEveningRating(id, data.journal);
       tried.push({
         itemId: id,
         strength: cigar.strength,
@@ -292,11 +295,23 @@ export function CollectionPage({
         wrapper: cigar.wrapper,
         flavorTags: cigar.flavorTags,
         shape: shapes.size === 1 ? [...shapes][0] : null,
-        rating: state.rating,
+        rating: evening ?? stateRating,
       });
+    };
+    for (const [id, state] of Object.entries(data.items)) {
+      const evening = lastEveningRating(id, data.journal);
+      if (!state.tried && evening == null && state.rating == null) continue;
+      pushTried(id, state.rating);
+    }
+    // večer s ocjenom bez stavke u items (nakon migracije praznog rating-only zapisa)
+    for (const j of data.journal) {
+      if (j.rating == null) continue;
+      pushTried(j.cigarId, null);
     }
     const triedDrinks = Object.entries(data.items).filter(
-      ([id, s]) => (s.tried || s.rating != null) && drinkById(id) != null,
+      ([id, s]) =>
+        (s.tried || s.rating != null || lastEveningRating(id, data.journal) != null) &&
+        drinkById(id) != null,
     ).length;
     return smokerProfile(tried, triedDrinks, data.journal);
   }, [data, taste]);

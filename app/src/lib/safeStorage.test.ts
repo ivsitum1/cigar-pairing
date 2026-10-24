@@ -111,6 +111,7 @@ describe("normalizeCollectionPayload", () => {
         "trash",
       ],
     });
+    // politika A: items[].rating za cigaru se skida (već postoji journal ocjena)
     expect(out).toEqual({
       items: {
         "cig-1": {
@@ -118,7 +119,7 @@ describe("normalizeCollectionPayload", () => {
           tried: false,
           wishlist: false,
           favorite: false,
-          rating: 8,
+          rating: null,
           note: "ok",
         },
       },
@@ -132,6 +133,30 @@ describe("normalizeCollectionPayload", () => {
           note: "fine",
         },
       ],
+    });
+  });
+
+  it("migrira usamljeni items.rating cigare u solo journal", () => {
+    const out = normalizeCollectionPayload({
+      items: {
+        "cig-solo": {
+          owned: false,
+          tried: false,
+          wishlist: false,
+          favorite: false,
+          rating: 9,
+          note: "",
+        },
+      },
+      journal: [],
+    });
+    expect(out).not.toBeNull();
+    expect(out!.items["cig-solo"]).toBeUndefined();
+    expect(out!.journal).toHaveLength(1);
+    expect(out!.journal[0]).toMatchObject({
+      cigarId: "cig-solo",
+      drinkId: null,
+      rating: 9,
     });
   });
 

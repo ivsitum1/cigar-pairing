@@ -39,6 +39,7 @@ const cigar = (over: Partial<Cigar> = {}): Cigar =>
     wrapper: "Habano",
     strength: 3,
     body: 3,
+    flavorIntensity: 3,
     flavorTags: [],
     smokeTimeMin: 45,
     priceEUR: 10,

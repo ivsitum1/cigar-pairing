@@ -1,8 +1,8 @@
 // Tvoja ocjena nadjacava katalog — i za prikaz i za pairing.
 //
-// Katalogova snaga i tijelo su procjena; tvoja je mjerenje. Zato se, kad
-// ocjena postoji, ona upisuje u cigaru prije nego sto je pairing uopce vidi,
-// i kartica prestaje pisati "procijenjen profil".
+// Katalogova snaga, tijelo i intenzitet note su procjena (osim shop mjerenja);
+// tvoja je mjerenje. Zato se, kad ocjena postoji, ona upisuje u cigaru prije
+// nego sto je pairing uopce vidi, i kartica prestaje pisati "procijenjen profil".
 import type { Cigar } from "../types";
 import { getTasteProfile, type TasteProfiles } from "../store/tasteProfile";
 
@@ -11,13 +11,25 @@ export function withTaste(cigar: Cigar, profiles?: TasteProfiles): Cigar {
   const lineId = cigar.id;
   const p = profiles ? profiles[lineId] : getTasteProfile(lineId);
   if (!p) return cigar;
-  if (p.strength === cigar.strength && p.body === cigar.body && !cigar.profileEstimated) {
-    return cigar;
-  }
+
+  const nextStrength = p.strength;
+  const nextBody = p.body;
+  const catalogFlavor = cigar.flavorIntensity ?? cigar.body;
+  const nextFlavor =
+    typeof p.flavorIntensity === "number" ? p.flavorIntensity : catalogFlavor;
+
+  const same =
+    nextStrength === cigar.strength &&
+    nextBody === cigar.body &&
+    nextFlavor === catalogFlavor &&
+    !cigar.profileEstimated;
+  if (same) return cigar;
+
   return {
     ...cigar,
-    strength: p.strength,
-    body: p.body,
+    strength: nextStrength,
+    body: nextBody,
+    flavorIntensity: nextFlavor,
     profileEstimated: false,
     profileFromUser: true,
   };

@@ -51,6 +51,7 @@ jobs:
           python scripts/derive-drink-display-names.py --check
           python scripts/normalize-profile-axes.py --check
           python scripts/merge-cigarworld-aroma.py --check
+          python scripts/derive-flavor-intensity.py --check
           python scripts/apply-taste-reports.py --check
           python scripts/merge-leaf-details.py --check
       - name: HR availability reconcile logic
@@ -77,6 +78,9 @@ jobs:
       - name: Snaga i tijelo iz opisa (redoslijed uzoraka, dvije osi)
         working-directory: app
         run: python scripts/test_neptune_strength.py
+      - name: Intenzitet note (CigarWorld mapa + pokrivenost kataloga)
+        working-directory: app
+        run: python scripts/test_derive_flavor_intensity.py
       - name: Dojmovi iz prijave (izvlačenje bloka, prosjek više ocjenjivača)
         working-directory: app
         run: python scripts/test_taste_reports.py

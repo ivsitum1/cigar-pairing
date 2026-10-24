@@ -138,10 +138,37 @@ export const getItemState = (id: string): ItemState => {
 };
 
 /**
+ * Zadnja ocjena večeri (1–10) za stavku — cigaru (linija ili vitola) ili piće.
+ * Politika A: ovo je jedini prikaz „moje ocjene” na kartici; items[].rating je
+ * legacy (pića / prije migracije).
+ */
+export function lastEveningRating(
+  itemId: string,
+  journal: JournalEntry[] = cache.journal,
+): number | null {
+  const line = itemId.split("@")[0];
+  let best: { date: string; rating: number } | null = null;
+  for (const j of journal) {
+    if (j.rating == null) continue;
+    const cigarHit =
+      j.cigarId === itemId ||
+      j.cigarId === line ||
+      j.cigarId.startsWith(`${line}@`) ||
+      (itemId.includes("@") && j.cigarId.split("@")[0] === line);
+    const drinkHit = j.drinkId === itemId;
+    if (!cigarHit && !drinkHit) continue;
+    if (!best || j.date > best.date) {
+      best = { date: j.date, rating: j.rating };
+    }
+  }
+  return best?.rating ?? null;
+}
+
+/**
  * Zbirno stanje cijele LINIJE cigare. Stanje se čuva po vitoli
  * (`cig-x@churchill`), pa filteri na razini linije ("samo moje", Kupovina)
  * moraju gledati sve njezine vitole: posjedujem liniju ako posjedujem bilo koji
- * njezin format. Ocjena je najviša zabilježena.
+ * njezin format. Ocjena na liniji = zadnja večer te linije (bilo koja vitola).
  */
 export function lineState(cigarId: string): ItemState {
   const prefix = `${cigarId}@`;
@@ -150,7 +177,7 @@ export function lineState(cigarId: string): ItemState {
     tried: false,
     wishlist: false,
     favorite: false,
-    rating: null,
+    rating: lastEveningRating(cigarId),
     note: "",
   };
   for (const [key, s] of Object.entries(cache.items)) {

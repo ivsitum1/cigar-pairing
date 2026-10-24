@@ -1,4 +1,4 @@
-// Snaga i tijelo — s tvojom ocjenom kad postoji, i s gumbom da je daš.
+// Snaga, tijelo i intenzitet note — s tvojom ocjenom kad postoji, i s gumbom da je daš.
 //
 // Isti blok stoji na kartici linije i na kartici vitole, pa živi na jednom
 // mjestu: dvije kartice koje se razilaze u tome čiju vrijednost pokazuju bile
@@ -23,6 +23,10 @@ export function TasteMeters({ cigar }: { cigar: Cigar }) {
       <div className="mt-3 flex flex-wrap items-end gap-x-5 gap-y-2">
         <Meter value={shown.strength} label={t("common.strength")} accent="var(--color-oxblood)" />
         <Meter value={shown.body} label={t("common.body")} />
+        <Meter
+          value={shown.flavorIntensity ?? shown.body}
+          label={t("common.flavorIntensity")}
+        />
         <button
           type="button"
           onClick={() => setRating(true)}
@@ -39,4 +43,3 @@ export function TasteMeters({ cigar }: { cigar: Cigar }) {
     </>
   );
 }
-

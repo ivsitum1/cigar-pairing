@@ -1,10 +1,10 @@
-// „Kako ti je sjela?” — snaga i tijelo iz prve ruke.
+// „Kako ti je sjela?” — snaga, tijelo i intenzitet note iz prve ruke.
 //
-// Katalog te dvije osi vecinom procjenjuje, a za oko 2200 linija nema izvor
-// osim heuristike pokrova. Nijedan vanjski izvor to ne moze zatvoriti
-// (provjereno: CigarWorldova ocjena zajednice predviđa gotovo uvijek „3”).
-// Zato se pita onoga tko je cigaru upravo popusio — jednom po liniji, odmah
-// nakon zapisa vecere, dok je dojam svjez.
+// Katalog te tri osi vecinom procjenjuje. Za snagu/tijelo vanjski izvor ne
+// zatvara rupu (CigarWorld predvida gotovo uvijek „3”). Za intenzitet note
+// CigarWorldov aroma strength jest mjerenje na dijelu kataloga; ostatak je
+// izvod. Zato se pita onoga tko je cigaru upravo popusio — jednom po liniji,
+// odmah nakon zapisa vecere, dok je dojam svjez.
 import { useState } from "react";
 import { SheetShell } from "./SheetShell";
 import { BackButton } from "./BackButton";
@@ -67,14 +67,17 @@ export function TastePrompt({
     existing?.strength ?? cigar?.strength ?? null,
   );
   const [body, setBody] = useState<number | null>(existing?.body ?? cigar?.body ?? null);
+  const [flavorIntensity, setFlavorIntensity] = useState<number | null>(
+    existing?.flavorIntensity ?? cigar?.flavorIntensity ?? null,
+  );
 
   const name = cigar
     ? `${brandDisplayName(cigar.brand, market)} ${cigar.line}`
     : itemId;
 
   const save = () => {
-    if (strength == null || body == null) return;
-    setTasteProfile(itemId, strength, body);
+    if (strength == null || body == null || flavorIntensity == null) return;
+    setTasteProfile(itemId, strength, body, flavorIntensity);
     onDone();
   };
 
@@ -104,6 +107,12 @@ export function TastePrompt({
           value={body}
           onChange={setBody}
         />
+        <AxisPicker
+          label={t("common.flavorIntensity")}
+          hint={t("taste.flavorIntensityHint")}
+          value={flavorIntensity}
+          onChange={setFlavorIntensity}
+        />
       </div>
 
       <div className="mt-5 grid grid-cols-2 gap-2">
@@ -117,7 +126,7 @@ export function TastePrompt({
         <button
           type="button"
           onClick={save}
-          disabled={strength == null || body == null}
+          disabled={strength == null || body == null || flavorIntensity == null}
           className="rounded-lg border border-zlato bg-zlato/15 py-2.5 font-display text-xs uppercase tracking-widest text-zlato-2 disabled:opacity-40"
         >
           {t("taste.save")}

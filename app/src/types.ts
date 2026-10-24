@@ -174,11 +174,19 @@ export interface Cigar {
   isPuro?: boolean | null;
   strength: number; // 1-5 (nikotin)
   body: number; // 1-5 (punoca dima)
+  /**
+   * 1–5 — koliko je okus glasan (intenzitet note / flavor intensity).
+   * Odvojeno od nikotina (snaga) i gustoće dima (tijelo). Punjenje:
+   * `scripts/derive-flavor-intensity.py` (CigarWorld aroma strength, inače izvod).
+   */
+  /** Prisutan na svim linijama u cigars.json; opcionalan na testnim stubovima. */
+  flavorIntensity?: number;
   flavorTags: string[];
   profileEstimated?: boolean; // profil izveden heuristikom (profile-cigars.py), ne degustacijom
   /**
-   * Runtime oznaka (NIJE u JSON-u): snaga i tijelo dolaze iz korisnikove ocjene
-   * nakon pušenja (`store/tasteProfile`), a ne iz kataloga. Postavlja `withTaste`.
+   * Runtime oznaka (NIJE u JSON-u): snaga / tijelo / intenzitet note dolaze iz
+   * korisnikove ocjene nakon pušenja (`store/tasteProfile`), a ne iz kataloga.
+   * Postavlja `withTaste`.
    */
   profileFromUser?: boolean;
   smokeTimeMin: number;
@@ -205,6 +213,8 @@ export interface Cigar {
   catalogSource?: "market";
   formatEstimated?: boolean; // duljina procijenjena iz vitole (shop bez dimenzije)
   strengthFromShop?: boolean; // snaga iz stvarnog shop-ocjenjivanja, ne heuristike
+  /** true = intenzitet note iz CigarWorldova `aroma strength` / radara, ne izvoda. */
+  flavorIntensityFromShop?: boolean;
   /**
    * Broj ljudi koji su cigaru stvarno popušili i ocijenili (scripts/apply-taste-reports.py).
    * Nadjačava svaku procjenu — i shop i heuristiku.
