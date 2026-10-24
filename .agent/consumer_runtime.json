@@ -1,0 +1,6 @@
+{
+  "schema": 1,
+  "runtime_root": ".agent",
+  "brain_embed": "agent-rules",
+  "knowledge_records": "memory/records"
+}
