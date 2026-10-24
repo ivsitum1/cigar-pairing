@@ -12,7 +12,7 @@ export function shortlistItemIds(
     rated.add(j.cigarId);
     if (j.drinkId) rated.add(j.drinkId);
   }
-  return Object.entries(items)
+  const fromItems = Object.entries(items)
     .filter(
       ([id, s]) =>
         !s.owned &&
@@ -20,6 +20,13 @@ export function shortlistItemIds(
         (s.tried || s.rating != null || !!s.note || rated.has(id)),
     )
     .map(([id]) => id);
+  const out = new Set(fromItems);
+  // ocjena u dnevniku nakon migracije rating-only stavke (item obrisan)
+  for (const id of rated) {
+    if (items[id]) continue;
+    out.add(id);
+  }
+  return [...out];
 }
 
 /** Go-to omiljeno — Collection panel; neovisno o wishlist/Kupovini. */

@@ -277,13 +277,23 @@ export function CollectionPage({
    * računati iz katalogove procjene kad za tu liniju postoji tvoja ocjena.
    */
   const profile = useMemo(() => {
+    const candidateIds: string[] = [];
+    const stateRatingById = new Map<string, number | null>();
+    for (const [id, state] of Object.entries(data.items)) {
+      const evening = lastEveningRating(id, data.journal);
+      if (!state.tried && evening == null && state.rating == null) continue;
+      candidateIds.push(id);
+      stateRatingById.set(id, state.rating);
+    }
+    // večer s ocjenom bez stavke u items (nakon migracije praznog rating-only zapisa)
+    for (const j of data.journal) {
+      if (j.rating == null) continue;
+      candidateIds.push(j.cigarId);
+    }
     const tried: TriedCigar[] = [];
-    const seen = new Set<string>();
-    const pushTried = (id: string, stateRating: number | null) => {
-      if (seen.has(id)) return;
+    for (const id of dedupeCollectionCigarIds([...new Set(candidateIds)])) {
       const raw = cigarForItemId(id);
-      if (!raw) return;
-      seen.add(id);
+      if (!raw) continue;
       const cigar = withTaste(raw, taste);
       const shapes = cigarShapes(cigar);
       const evening = lastEveningRating(id, data.journal);
@@ -295,18 +305,8 @@ export function CollectionPage({
         wrapper: cigar.wrapper,
         flavorTags: cigar.flavorTags,
         shape: shapes.size === 1 ? [...shapes][0] : null,
-        rating: evening ?? stateRating,
+        rating: evening ?? stateRatingById.get(id) ?? null,
       });
-    };
-    for (const [id, state] of Object.entries(data.items)) {
-      const evening = lastEveningRating(id, data.journal);
-      if (!state.tried && evening == null && state.rating == null) continue;
-      pushTried(id, state.rating);
-    }
-    // večer s ocjenom bez stavke u items (nakon migracije praznog rating-only zapisa)
-    for (const j of data.journal) {
-      if (j.rating == null) continue;
-      pushTried(j.cigarId, null);
     }
     const triedDrinks = Object.entries(data.items).filter(
       ([id, s]) =>
