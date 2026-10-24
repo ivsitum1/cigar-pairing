@@ -21,6 +21,18 @@ __pycache__/
 agent-brain-lite/.agent/memory/
 agent-brain-lite/.obsidian/workspace.json
 
+# agent-rules embed (local junction/clone to ivsitum1/agent-rules; not product)
+agent-rules/
+
+# agent-rules project_init SR layout (not part of the PWA; local only)
+01_input/
+02_analysis/
+03_output/
+05_version_control/
+30_system/
+knowledge_system/
+/index.md
+
 # local git worktrees (full checkouts; must not pollute status)
 .worktrees/
 

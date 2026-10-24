@@ -1,0 +1,10 @@
+# agent-rules hook runtime state (local only)
+memory/*.jsonl
+memory/*.json
+memory/*.db
+memory/*.db-*
+**/*.lock
+artifacts/
+output_gate/
+distillation/raw/
+distillation/session_buffer.json
