@@ -96,5 +96,46 @@ export function normalizeCollectionPayload(parsed: unknown): CollectionData | nu
     if (j) journal.push(j);
   }
 
+  // Politika A: ocjena 1–10 živi u dnevniku večeri, ne na stavci.
+  // Stari items[].rating za cigare → solo journal zapis; pića ostaju na stavci
+  // dok se ne zabilježi večer (journal zahtijeva cigarId).
+  return migrateItemRatingsToJournal({ items, journal });
+}
+
+/**
+ * Jednokratna migracija: cigara s items[].rating bez dnevničkog zapisa dobiva
+ * solo večer (datum epoch da prava večer ostane „zadnja”).
+ */
+export function migrateItemRatingsToJournal(data: CollectionData): CollectionData {
+  const journal = data.journal.slice();
+  const items: Record<string, ItemState> = { ...data.items };
+  let n = 0;
+  for (const [id, state] of Object.entries(data.items)) {
+    if (state.rating == null) continue;
+    if (!id.startsWith("cig-")) continue;
+    const hasJournal = journal.some((j) => j.cigarId === id && j.rating != null);
+    if (!hasJournal) {
+      journal.push({
+        id: `j-migrated-${id}-${n++}`,
+        date: "1970-01-01T00:00:00.000Z",
+        cigarId: id,
+        drinkId: null,
+        rating: state.rating,
+        note: "",
+      });
+    }
+    const next = { ...state, rating: null };
+    if (
+      !next.owned &&
+      !next.tried &&
+      !next.wishlist &&
+      !next.favorite &&
+      !next.note
+    ) {
+      delete items[id];
+    } else {
+      items[id] = next;
+    }
+  }
   return { items, journal };
 }

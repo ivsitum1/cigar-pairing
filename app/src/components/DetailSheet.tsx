@@ -50,6 +50,7 @@ import { LastCigarPrompt } from "./LastCigarPrompt";
 import { VitolaPicker } from "./VitolaPicker";
 import {
   getItemState,
+  lastEveningRating,
   updateItem,
   useCollection,
 } from "../store/collection";
@@ -186,26 +187,20 @@ export function DetailSheet({
             ♥ {t("coll.favorite")}
           </Chip>
           <div className="ml-auto flex items-center gap-2">
-            <span className="text-xs text-dim">{t("coll.myRating")}</span>
-            <select
-              // opcije su "10.0","9.5"... — broj 10 mora postati "10.0" da se prikaže
-              value={state.rating != null ? state.rating.toFixed(1) : ""}
-              onChange={(e) =>
-                updateItem(id, {
-                  rating: e.target.value ? Number(e.target.value) : null,
-                })
-              }
-              className="rounded-md border border-dim/30 bg-cedar px-2 py-1 text-sm text-papir"
-            >
-              <option value="">—</option>
-              {Array.from({ length: 19 }, (_, i) => (10 - i * 0.5).toFixed(1)).map(
-                (v) => (
-                  <option key={v} value={v}>
-                    {v}
-                  </option>
-                ),
-              )}
-            </select>
+            <span className="text-xs text-dim">{t("coll.lastEvening")}</span>
+            {(() => {
+              const evening =
+                lastEveningRating(id) ??
+                // piće: stari items[].rating dok nema večeri s tim pićem
+                (active.kind === "drink" ? state.rating : null);
+              return evening != null ? (
+                <span className="rounded-md border border-zlato/35 bg-zlato/10 px-2 py-1 text-sm text-zlato-2">
+                  {Number.isInteger(evening) ? evening : evening.toFixed(1)}/10
+                </span>
+              ) : (
+                <span className="text-micro text-dim">{t("coll.lastEveningNone")}</span>
+              );
+            })()}
           </div>
         </div>
         <div className="mt-3">

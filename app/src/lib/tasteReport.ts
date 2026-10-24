@@ -19,6 +19,8 @@ export interface TasteReportEntry {
   label: string;
   strength: number;
   body: number;
+  /** Intenzitet note 1–5; stari izvještaji ga nemaju. */
+  flavorIntensity?: number;
   at: string;
 }
 
@@ -48,13 +50,17 @@ export function buildTasteReport(
   const reports: TasteReportEntry[] = Object.entries(profiles)
     .map(([cigarId, p]) => {
       const c = cigarById(cigarId);
-      return {
+      const entry: TasteReportEntry = {
         cigarId,
         label: c ? `${c.brand} ${c.line}` : cigarId,
         strength: p.strength,
         body: p.body,
         at: p.at,
       };
+      if (typeof p.flavorIntensity === "number") {
+        entry.flavorIntensity = p.flavorIntensity;
+      }
+      return entry;
     })
     .sort((a, b) => a.label.localeCompare(b.label));
   const signed = byId.trim();
@@ -70,14 +76,21 @@ export function buildTasteReport(
 
 /** Tijelo prijave: tablica za čitanje + blok koji skripta uvozi. */
 export function reportMarkdown(report: TasteReport): string {
+  const withFlavor = report.reports.some((r) => r.flavorIntensity != null);
   const rows = report.reports
-    .map((r) => `| ${r.label} | ${r.strength} | ${r.body} |`)
+    .map((r) =>
+      withFlavor
+        ? `| ${r.label} | ${r.strength} | ${r.body} | ${r.flavorIntensity ?? "—"} |`
+        : `| ${r.label} | ${r.strength} | ${r.body} |`,
+    )
     .join("\n");
   return [
     `Dojmovi nakon pušenja — **${report.by || "bez potpisa"}**, ${report.reports.length} cigara.`,
     "",
-    "| Cigara | Snaga | Tijelo |",
-    "| --- | --- | --- |",
+    withFlavor
+      ? "| Cigara | Snaga | Tijelo | Intenzitet |"
+      : "| Cigara | Snaga | Tijelo |",
+    withFlavor ? "| --- | --- | --- | --- |" : "| --- | --- | --- |",
     rows,
     "",
     "<details><summary>Podaci za uvoz</summary>",

@@ -5,7 +5,7 @@ import {
   ownedWithoutStockIds,
   shortlistItemIds,
 } from "./collectionPanels";
-import type { ItemState } from "../store/collection";
+import type { ItemState, JournalEntry } from "../store/collection";
 
 const blank = (patch: Partial<ItemState> = {}): ItemState => ({
   owned: false,
@@ -46,6 +46,21 @@ describe("collectionPanels filters", () => {
       e: blank({ note: "ok" }),
     };
     expect(shortlistItemIds(items).sort()).toEqual(["a", "d", "e"]);
+  });
+
+  it("shortlist ukljucuje ocjenu samo iz dnevnika kad item ne postoji", () => {
+    const items: Record<string, ItemState> = {};
+    const journal: JournalEntry[] = [
+      {
+        id: "j1",
+        date: "2026-01-01T00:00:00.000Z",
+        cigarId: "cig-rated-only",
+        drinkId: null,
+        rating: 8,
+        note: "",
+      },
+    ];
+    expect(shortlistItemIds(items, journal)).toEqual(["cig-rated-only"]);
   });
 
   it("favoriteItemIds uzima samo favorite, ukljucujuci owned", () => {

@@ -198,8 +198,8 @@ export const STRINGS = {
   "wish.lastSkip": { hr: "Ne treba", en: "No thanks" },
   "taste.title": { hr: "Kako ti je sjela?", en: "How did it smoke?" },
   "taste.body": {
-    hr: "Katalog snagu i tijelo uglavnom procjenjuje. Tvoja ocjena je jedina iz prve ruke — nadjačava procjenu i mijenja preporuke za ovu liniju.",
-    en: "The catalog mostly estimates strength and body. Your rating is the only first-hand one — it overrides the estimate and changes suggestions for this line.",
+    hr: "Katalog snagu, tijelo i intenzitet note uglavnom procjenjuje. Tvoja ocjena je jedina iz prve ruke — nadjačava procjenu i mijenja preporuke za ovu liniju.",
+    en: "The catalog mostly estimates strength, body and flavour intensity. Your rating is the only first-hand one — it overrides the estimate and changes suggestions for this line.",
   },
   "taste.strengthHint": {
     hr: "Koliko te nikotin dotukao — od blage do udarne.",
@@ -209,21 +209,28 @@ export const STRINGS = {
     hr: "Koliko je dim bio gust i težak u ustima.",
     en: "How dense and heavy the smoke felt in the mouth.",
   },
+  "taste.flavorIntensityHint": {
+    hr: "Koliko je okus bio glasan — ne nikotin i ne gustoća dima.",
+    en: "How loud the flavour was — not nicotine, not smoke density.",
+  },
   "taste.save": { hr: "Spremi ocjenu", en: "Save rating" },
   "taste.skip": { hr: "Preskoči", en: "Skip" },
   "taste.mine": { hr: "tvoja ocjena", en: "your rating" },
-  "taste.edit": { hr: "Ocijeni snagu i tijelo", en: "Rate strength and body" },
+  "taste.edit": {
+    hr: "Ocijeni snagu, tijelo i intenzitet",
+    en: "Rate strength, body and intensity",
+  },
   "report.title": { hr: "Pošalji dojmove", en: "Send your impressions" },
   "report.hint": {
-    hr: "Tvoje ocjene snage i tijela mogu ući u katalog, pa ih vidi svatko tko koristi app. Prijava se otvara na GitHubu već popunjena — samo je pošalješ.",
-    en: "Your strength and body ratings can go into the catalog, so everyone using the app sees them. The report opens on GitHub pre-filled — you just submit it.",
+    hr: "Tvoje ocjene snage, tijela i intenziteta note mogu ući u katalog, pa ih vidi svatko tko koristi app. Prijava se otvara na GitHubu već popunjena — samo je pošalješ.",
+    en: "Your strength, body and flavour-intensity ratings can go into the catalog, so everyone using the app sees them. The report opens on GitHub pre-filled — you just submit it.",
   },
   "report.who": { hr: "Tko ocjenjuje", en: "Who is rating" },
   "report.whoPlaceholder": { hr: "tvoje ime ili nadimak", en: "your name or nickname" },
   "report.count": { hr: "Ocijenjenih cigara", en: "Cigars rated" },
   "report.empty": {
-    hr: "Još nema nijedne ocjene. Otvori bilo koju cigaru i kraj snage i tijela pritisni „Ocijeni snagu i tijelo” — ili zabilježi večer pa odgovori na isto pitanje.",
-    en: "No ratings yet. Open any cigar and press “Rate strength and body” next to the meters — or log an evening and answer the same question.",
+    hr: "Još nema nijedne ocjene. Otvori bilo koju cigaru i kraj metara pritisni „Ocijeni snagu, tijelo i intenzitet” — ili zabilježi večer pa odgovori na isto pitanje.",
+    en: "No ratings yet. Open any cigar and press “Rate strength, body and intensity” next to the meters — or log an evening and answer the same question.",
   },
   "report.github": { hr: "Otvori prijavu na GitHubu", en: "Open the report on GitHub" },
   "report.copy": { hr: "Kopiraj tekst", en: "Copy the text" },
@@ -428,6 +435,7 @@ export const STRINGS = {
   // opće
   "common.body": { hr: "Tijelo", en: "Body" },
   "common.strength": { hr: "Snaga", en: "Strength" },
+  "common.flavorIntensity": { hr: "Intenzitet note", en: "Flavour intensity" },
   "common.sweetness": { hr: "Slatkoća", en: "Sweetness" },
   "common.cigar": { hr: "Cigara", en: "Cigar" },
   "common.drink": { hr: "Piće", en: "Drink" },
@@ -510,6 +518,11 @@ export const STRINGS = {
   "coll.favoritesTitle": { hr: "Omiljeno (go-to)", en: "Favorites (go-to)" },
   "coll.onFavorite": { hr: "Omiljeno", en: "Favorite" },
   "coll.myRating": { hr: "Moja ocjena", en: "My rating" },
+  "coll.lastEvening": { hr: "Zadnja večer", en: "Last evening" },
+  "coll.lastEveningNone": {
+    hr: "Ocjena ide uz zapis večeri",
+    en: "Rating belongs with an evening log",
+  },
   "coll.eveningRating": { hr: "Ocjena večeri", en: "Evening rating" },
   "coll.eveningRatingHint": {
     hr: "Vrijedi samo za ovu zabilježenu večer. Ne mijenja Moju ocjenu cigare.",

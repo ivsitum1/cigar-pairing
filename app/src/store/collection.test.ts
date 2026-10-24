@@ -53,8 +53,12 @@ describe("importData", () => {
     );
     expect(ok).toBe(true);
     const parsed = JSON.parse(exportData());
-    expect(parsed.items["cig-1"].rating).toBe(9);
+    // politika A: items[].rating → solo journal; stavka zadrži bilješku
+    expect(parsed.items["cig-1"].rating).toBeNull();
     expect(parsed.items["cig-1"].note).toBe("top");
+    expect(parsed.journal.some((j: { cigarId: string; rating: number }) => j.cigarId === "cig-1" && j.rating === 9)).toBe(
+      true,
+    );
   });
 });
 

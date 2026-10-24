@@ -120,6 +120,8 @@ describe("integritet podataka", () => {
       expect(c.body, `${c.id} body`).toBeLessThanOrEqual(5);
       expect(c.strength, `${c.id} strength`).toBeGreaterThanOrEqual(1);
       expect(c.strength, `${c.id} strength`).toBeLessThanOrEqual(5);
+      expect(c.flavorIntensity, `${c.id} flavorIntensity`).toBeGreaterThanOrEqual(1);
+      expect(c.flavorIntensity, `${c.id} flavorIntensity`).toBeLessThanOrEqual(5);
     }
   });
 

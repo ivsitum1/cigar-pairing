@@ -1,13 +1,15 @@
-// Tvoja ocjena snage i tijela — jedini izvor koji je stvarno pušio cigaru.
+// Tvoja ocjena snage, tijela i intenziteta note — jedini izvor koji je stvarno
+// pušio cigaru.
 //
-// Katalog snagu i tijelo vecinom procjenjuje: iz opisa trgovine, iz karaktera
-// pokrova, ili — za oko 2200 linija — ni iz cega osim heuristike. Provjereno je
-// i moze li ih zamijeniti CigarWorldova ocjena zajednice; ne moze (vidi
-// scripts/audit-cigarworld-axes.py: predvida gotovo uvijek "3"). Ostaje jedan
-// izvor koji ne procjenjuje nego zna — onaj tko je cigaru popusio.
+// Katalog te tri osi većinom procjenjuje: iz opisa trgovine, iz karaktera
+// pokrova, ili — za oko 2200 linija — ni iz čega osim heuristike. Provjereno je
+// i može li ih zamijeniti CigarWorldova ocjena zajednice za snagu/tijelo; ne
+// može (vidi scripts/audit-cigarworld-axes.py). Za intenzitet note CigarWorldov
+// `aroma strength` jest mjerenje (~565 linija); ostatak je izvod po zapisu.
+// Ostaje jedan izvor koji ne procjenjuje nego zna — onaj tko je cigaru popušio.
 //
-// Zapis je po LINIJI, ne po vitoli: katalog snagu i tijelo drzi na liniji, a
-// razliku medu formatima pairing i dalje racuna sam (engine/vitolaGeometry).
+// Zapis je po LINIJI, ne po vitoli: katalog osi drži na liniji, a razliku među
+// formatima pairing i dalje računa sam (engine/vitolaGeometry).
 import { useSyncExternalStore } from "react";
 import { resolveCigarIdAlias } from "../data";
 
@@ -16,6 +18,11 @@ export interface TasteProfile {
   strength: number;
   /** 1–5, koliko je dim bio gust */
   body: number;
+  /**
+   * 1–5, koliko je okus bio glasan. Stari localStorage (samo snaga+tijelo) nema
+   * polje — tada se katalogov intenzitet ne dira.
+   */
+  flavorIntensity?: number;
   /** ISO datum zadnje izmjene */
   at: string;
 }
@@ -26,7 +33,7 @@ const KEY = "cigar-pairing-taste-v1";
 
 const clamp = (n: number) => Math.max(1, Math.min(5, Math.round(n)));
 
-/** Ne vjeruj localStorageu na rijec — tudi ili stari zapis ne smije srusiti app. */
+/** Ne vjeruj localStorageu na riječ — tuđi ili stari zapis ne smije srušiti app. */
 export function normalizeTasteProfiles(raw: unknown): TasteProfiles {
   if (!raw || typeof raw !== "object") return {};
   const out: TasteProfiles = {};
@@ -35,11 +42,15 @@ export function normalizeTasteProfiles(raw: unknown): TasteProfiles {
     const v = value as Partial<TasteProfile>;
     if (typeof v.strength !== "number" || typeof v.body !== "number") continue;
     if (!Number.isFinite(v.strength) || !Number.isFinite(v.body)) continue;
-    out[resolveCigarIdAlias(id)] = {
+    const entry: TasteProfile = {
       strength: clamp(v.strength),
       body: clamp(v.body),
       at: typeof v.at === "string" ? v.at : new Date().toISOString(),
     };
+    if (typeof v.flavorIntensity === "number" && Number.isFinite(v.flavorIntensity)) {
+      entry.flavorIntensity = clamp(v.flavorIntensity);
+    }
+    out[resolveCigarIdAlias(id)] = entry;
   }
   return out;
 }
@@ -81,17 +92,30 @@ export function useTasteProfiles(): TasteProfiles {
   );
 }
 
-/** Ocjena za liniju te cigare, ili null. Prima i kljuc s vitolom. */
+/** Ocjena za liniju te cigare, ili null. Prima i ključ s vitolom. */
 export function getTasteProfile(cigarId: string): TasteProfile | null {
   const lineId = resolveCigarIdAlias(cigarId.split("@")[0]);
   return cache[lineId] ?? null;
 }
 
-export function setTasteProfile(cigarId: string, strength: number, body: number) {
+export function setTasteProfile(
+  cigarId: string,
+  strength: number,
+  body: number,
+  flavorIntensity?: number,
+) {
   const lineId = resolveCigarIdAlias(cigarId.split("@")[0]);
+  const entry: TasteProfile = {
+    strength: clamp(strength),
+    body: clamp(body),
+    at: new Date().toISOString(),
+  };
+  if (flavorIntensity != null && Number.isFinite(flavorIntensity)) {
+    entry.flavorIntensity = clamp(flavorIntensity);
+  }
   write({
     ...cache,
-    [lineId]: { strength: clamp(strength), body: clamp(body), at: new Date().toISOString() },
+    [lineId]: entry,
   });
 }
 

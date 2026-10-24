@@ -1,10 +1,9 @@
-// Snaga i tijelo su dvije osi, ne jedan broj prepisan dvaput.
+// Snaga, tijelo i intenzitet note su tri osi, ne jedan broj prepisan dvaput.
 //
 // Dok se iz Neptuneova opisa citao jedan broj, `merge-neptune-profiles.py` ga je
-// upisivao u oba polja (`cigar["body"] = strength_raw`). Katalog je time tvrdio
-// da cigara koja je jaka mora biti i puna, a to nije tocno: Connecticut zna biti
-// pun a blag, corojo jak a suh. Pairing tijelo i snagu vaze odvojeno, pa je ta
-// kopija gasila jednu cijelu dimenziju.
+// upisivao u snagu i tijelo. Katalog je time tvrdio da cigara koja je jaka mora
+// biti i puna, a to nije tocno. Intenzitet note (CigarWorld aroma strength) je
+// treci dial — koliko je okus glasan — i ne smije se svesti na tijelo.
 //
 // Ovi testovi ne propisuju pojedinacne vrijednosti — cuvaju da osi ostanu
 // razdvojene i da nijedna ne ode u nemoguc raspon.
@@ -43,5 +42,35 @@ describe("snaga i tijelo kao dvije osi", () => {
     const stronger = cigars.filter((c) => c.strength > c.body).length;
     expect(fuller).toBeGreaterThan(50);
     expect(stronger).toBeGreaterThan(50);
+  });
+});
+
+describe("intenzitet note kao treca os", () => {
+  it("svaka linija ima flavorIntensity 1–5", () => {
+    for (const c of cigars) {
+      expect(c.flavorIntensity, c.id).toBeTypeOf("number");
+      expect(Number.isInteger(c.flavorIntensity), c.id).toBe(true);
+      expect(c.flavorIntensity!, c.id).toBeGreaterThanOrEqual(1);
+      expect(c.flavorIntensity!, c.id).toBeLessThanOrEqual(5);
+    }
+  });
+
+  it("nije kopija tijela — znatan dio kataloga se razlikuje", () => {
+    const split = cigars.filter((c) => c.flavorIntensity !== c.body).length;
+    expect(split / cigars.length).toBeGreaterThan(0.2);
+  });
+
+  it("nije saturiran na jednoj vrijednosti", () => {
+    const counts = [1, 2, 3, 4, 5].map(
+      (v) => cigars.filter((c) => c.flavorIntensity === v).length,
+    );
+    const maxShare = Math.max(...counts) / cigars.length;
+    expect(maxShare).toBeLessThan(0.55);
+    expect(counts.filter((n) => n > 0).length).toBeGreaterThanOrEqual(4);
+  });
+
+  it("dio kataloga nosi shop mjerenje (CigarWorld aroma strength)", () => {
+    const shop = cigars.filter((c) => c.flavorIntensityFromShop).length;
+    expect(shop).toBeGreaterThan(400);
   });
 });

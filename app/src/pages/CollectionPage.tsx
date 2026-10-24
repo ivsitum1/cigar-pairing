@@ -37,6 +37,7 @@ import {
   clearItem,
   exportData,
   importData,
+  lastEveningRating,
   removeJournalEntry,
   updateJournalEntry,
   useCollection,
@@ -255,9 +256,9 @@ export function CollectionPage({
     ),
   );
   const historyIds = dedupeCollectionCigarIds(
-    shortlistItemIds(data.items).filter((id) => cigarForItemId(id) != null),
+    shortlistItemIds(data.items, data.journal).filter((id) => cigarForItemId(id) != null),
   );
-  const historyDrinkIds = shortlistItemIds(data.items).filter(
+  const historyDrinkIds = shortlistItemIds(data.items, data.journal).filter(
     (id) => cigarForItemId(id) == null && drinkById(id) != null,
   );
   const favIds = favoriteItemIds(data.items);
@@ -276,14 +277,26 @@ export function CollectionPage({
    * računati iz katalogove procjene kad za tu liniju postoji tvoja ocjena.
    */
   const profile = useMemo(() => {
-    const tried: TriedCigar[] = [];
+    const candidateIds: string[] = [];
+    const stateRatingById = new Map<string, number | null>();
     for (const [id, state] of Object.entries(data.items)) {
-      if (!state.tried && state.rating == null) continue;
+      const evening = lastEveningRating(id, data.journal);
+      if (!state.tried && evening == null && state.rating == null) continue;
+      candidateIds.push(id);
+      stateRatingById.set(id, state.rating);
+    }
+    // večer s ocjenom bez stavke u items (nakon migracije praznog rating-only zapisa)
+    for (const j of data.journal) {
+      if (j.rating == null) continue;
+      candidateIds.push(j.cigarId);
+    }
+    const tried: TriedCigar[] = [];
+    for (const id of dedupeCollectionCigarIds([...new Set(candidateIds)])) {
       const raw = cigarForItemId(id);
       if (!raw) continue;
       const cigar = withTaste(raw, taste);
-      // linija s više formata ne zna koji je pušen — oblik tada ne ulazi u zbroj
       const shapes = cigarShapes(cigar);
+      const evening = lastEveningRating(id, data.journal);
       tried.push({
         itemId: id,
         strength: cigar.strength,
@@ -292,11 +305,13 @@ export function CollectionPage({
         wrapper: cigar.wrapper,
         flavorTags: cigar.flavorTags,
         shape: shapes.size === 1 ? [...shapes][0] : null,
-        rating: state.rating,
+        rating: evening ?? stateRatingById.get(id) ?? null,
       });
     }
     const triedDrinks = Object.entries(data.items).filter(
-      ([id, s]) => (s.tried || s.rating != null) && drinkById(id) != null,
+      ([id, s]) =>
+        (s.tried || s.rating != null || lastEveningRating(id, data.journal) != null) &&
+        drinkById(id) != null,
     ).length;
     return smokerProfile(tried, triedDrinks, data.journal);
   }, [data, taste]);
