@@ -155,6 +155,9 @@ jobs:
           pip install -r backend/requirements.txt
       - name: pip check (declared dependency graph)
         run: pip check
+      - name: Verify pinned paddle stack imports (CI)
+        run: |
+          python -c "import paddle, paddleocr, scipy; print('paddle', paddle.__version__); print('paddleocr', paddleocr.__version__); print('scipy', scipy.__version__)"
       - name: Backend tests (HTTP + full Paddle OCR integration)
         working-directory: backend
         env:

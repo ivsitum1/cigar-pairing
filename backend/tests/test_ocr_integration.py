@@ -6,6 +6,7 @@ CI installs backend/requirements.txt and must not skip.
 from __future__ import annotations
 
 import io
+import os
 import sys
 import unittest
 from pathlib import Path
@@ -18,6 +19,9 @@ sys.path.insert(0, str(ROOT))
 from app import ocr_service  # noqa: E402
 
 
+_CI = os.environ.get("CI") == "true" or os.environ.get("GITHUB_ACTIONS") == "true"
+
+
 def _paddle_stack_installed() -> bool:
     try:
         import paddle  # noqa: F401
@@ -27,6 +31,13 @@ def _paddle_stack_installed() -> bool:
         return True
     except ImportError:
         return False
+
+
+def _skip_integration_class() -> bool:
+    """Local dev may omit the heavy stack; CI must never skip silently."""
+    if _CI:
+        return False
+    return not _paddle_stack_installed()
 
 
 def _synthetic_label_image(text: str = "CIGAR 42") -> bytes:
@@ -43,10 +54,15 @@ def _synthetic_label_image(text: str = "CIGAR 42") -> bytes:
     return buf.getvalue()
 
 
-@unittest.skipUnless(_paddle_stack_installed(), "paddleocr stack not installed")
+@unittest.skipIf(_skip_integration_class(), "paddleocr stack not installed (local only)")
 class PaddleOcrIntegrationTest(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
+        if _CI and not _paddle_stack_installed():
+            raise AssertionError(
+                "CI installed backend/requirements.txt but paddle/paddleocr/scipy "
+                "did not import — fix the stack, do not skip OCR proof."
+            )
         ocr_service._engine = None  # type: ignore[attr-defined]
         ocr_service._engine_tried = False  # type: ignore[attr-defined]
 
