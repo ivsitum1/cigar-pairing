@@ -4,12 +4,18 @@ fastapi>=0.115.0
 uvicorn[standard]>=0.52.4
 python-multipart>=0.0.32
 pillow>=12.3.0
-numpy>=1.24,<2
+# paddlex (paddleocr 3.7) caps numpy <2.4 — use latest 2.3.x band, not 2.5+
+numpy>=2.3.0,<2.4
 imagehash>=4.3.1
-scipy>=1.11,<1.14
-# Windows-stable OCR stack (PaddleOCR 3.x hits oneDNN PIR bugs on Win):
-paddlepaddle==2.6.2
-paddleocr==2.7.3
+scipy>=1.15.0,<2
+# OCR stack (major migration 2026-11-10, PR #219/#222 class):
+#   paddlepaddle 3.x + paddleocr 3.x + numpy 2.x (scipy>=1.14).
+# Legacy 2.6.2/2.7.3 was kept for Windows oneDNN PIR issues; migration is
+# authorized but Windows is NOT validated in CI (ubuntu-only). Runtime still
+# sets FLAGS_use_mkldnn=0 / FLAGS_onednn=0 in ocr_service.py as a best-effort
+# mitigation when running on Windows — treat Linux CI green as Linux-only proof.
+paddlepaddle==3.3.1
+paddleocr==3.7.0
 # Tests (HTTP razina; CI ih instalira zasebno):
 httpx>=0.27
 
