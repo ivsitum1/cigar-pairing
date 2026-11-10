@@ -36,7 +36,7 @@ jobs:
         env:
           # Exhaustive giftFinder matrix (~1920 combos); skipped in deploy.yml smoke.
           CI_EXHAUSTIVE_GIFTS: "1"
-      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
         with:
           python-version: "3.12"
 
@@ -146,14 +146,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
-      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
         with:
           python-version: "3.12"
-      # paddleocr/torch su neobavezni i teški — servis ima stub put bez njih,
-      # pa testovi pokrivaju logiku (path traversal, granica uploada, 400 vs
-      # 500) bez njih. fastapi + multipart trebaju za HTTP razinu.
-      - name: Install backend deps (bez teškog OCR stacka)
-        run: pip install pillow "numpy<2" imagehash fastapi python-multipart httpx
-      - name: Backend smoke tests
+      - name: Install backend stack from requirements.txt
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r backend/requirements.txt
+      - name: pip check (declared dependency graph)
+        run: pip check
+      - name: Backend tests (HTTP + full Paddle OCR integration)
         working-directory: backend
+        env:
+          # First OCR use downloads public model weights (PaddleOCR PP-OCRv4).
+          FLAGS_use_mkldnn: "0"
+          FLAGS_onednn: "0"
         run: python -m unittest discover -s tests -v
