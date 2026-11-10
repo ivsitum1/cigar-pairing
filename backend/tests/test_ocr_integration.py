@@ -79,6 +79,7 @@ class PaddleOcrIntegrationTest(unittest.TestCase):
         import paddle
 
         self.assertTrue(getattr(paddle, "__version__", ""))
+        self.assertGreaterEqual(tuple(int(x) for x in numpy.__version__.split(".")[:2]), (2, 0))
 
     def test_paddle_inference_not_stub(self) -> None:
         ocr_service._engine = None  # type: ignore[attr-defined]
@@ -91,9 +92,34 @@ class PaddleOcrIntegrationTest(unittest.TestCase):
             "paddleocr",
             "expected live PaddleOCR, got stub — is the full requirements stack installed?",
         )
-        # Model may miss tiny synthetic labels; empty text is OK if engine ran.
         self.assertIsInstance(result.text, str)
         self.assertIsInstance(result.lines, list)
+        # PaddleOCR 3 should still read a high-contrast synthetic label.
+        joined = result.text.upper().replace(" ", "")
+        self.assertIn(
+            "CIGAR",
+            joined,
+            f"expected readable text from inference, got {result.text!r}",
+        )
+
+    def test_http_ocr_route_uses_paddle_engine(self) -> None:
+        from fastapi.testclient import TestClient
+
+        from app.main import app
+
+        ocr_service._engine = None  # type: ignore[attr-defined]
+        ocr_service._engine_tried = False  # type: ignore[attr-defined]
+
+        client = TestClient(app)
+        data = _synthetic_label_image("ROUTE 99")
+        r = client.post(
+            "/ocr",
+            files={"file": ("label.png", data, "image/png")},
+        )
+        self.assertEqual(r.status_code, 200, r.text)
+        body = r.json()
+        self.assertEqual(body["engine"], "paddleocr")
+        self.assertIn("ROUTE", body.get("text", "").upper().replace(" ", ""))
 
 
 if __name__ == "__main__":

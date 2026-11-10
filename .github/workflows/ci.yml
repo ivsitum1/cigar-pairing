@@ -161,7 +161,8 @@ jobs:
       - name: Backend tests (HTTP + full Paddle OCR integration)
         working-directory: backend
         env:
-          # First OCR use downloads public model weights (PaddleOCR PP-OCRv4).
+          # First OCR use downloads public model weights (PaddleOCR 3 / PaddleX).
           FLAGS_use_mkldnn: "0"
           FLAGS_onednn: "0"
+          PADDLE_PDX_DISABLE_MODEL_SOURCE_CHECK: "True"
         run: python -m unittest discover -s tests -v
