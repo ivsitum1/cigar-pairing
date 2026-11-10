@@ -1,3 +1,5 @@
+# paddlepaddle imports setuptools at runtime; GHA 3.12 images omit it by default.
+setuptools>=69.0
 fastapi>=0.115.0
 uvicorn[standard]>=0.52.4
 python-multipart>=0.0.32
