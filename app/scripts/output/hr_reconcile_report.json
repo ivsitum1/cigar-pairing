@@ -1,12 +1,93 @@
 {
-  "generated_at": "2026-10-12T12:09:23.088173+00:00",
-  "snapshot_at": "2026-10-12T12:09:22.553165+00:00",
-  "present_keys": 607,
+  "generated_at": "2026-11-09T13:00:20.421554+00:00",
+  "snapshot_at": "2026-11-09T13:00:20.007608+00:00",
+  "present_keys": 585,
   "removed_count": 0,
-  "added_count": 0,
+  "added_count": 10,
   "hr_without_source": 0,
-  "hr_markets_remaining": 407,
+  "hr_markets_remaining": 417,
   "hr_markets_before": 407,
   "removed": [],
-  "added": []
+  "added": [
+    {
+      "id": "cig-aj-fernandez-amar",
+      "brand": "AJ Fernandez",
+      "line": "Amar",
+      "shops": [
+        "The Humidor"
+      ]
+    },
+    {
+      "id": "cig-ashton-esg",
+      "brand": "Ashton",
+      "line": "ESG",
+      "shops": [
+        "The Humidor"
+      ]
+    },
+    {
+      "id": "cig-ashton-symmetry",
+      "brand": "Ashton",
+      "line": "Symmetry",
+      "shops": [
+        "The Humidor"
+      ]
+    },
+    {
+      "id": "cig-ashton-vsg",
+      "brand": "Ashton",
+      "line": "VSG",
+      "shops": [
+        "The Humidor"
+      ]
+    },
+    {
+      "id": "cig-cao-pilon",
+      "brand": "CAO",
+      "line": "Pilon",
+      "shops": [
+        "The Humidor"
+      ]
+    },
+    {
+      "id": "cig-diamond-crown-julius-caeser",
+      "brand": "Diamond Crown",
+      "line": "Julius Caeser",
+      "shops": [
+        "The Humidor"
+      ]
+    },
+    {
+      "id": "cig-paradiso-revelation-legend",
+      "brand": "Paradiso",
+      "line": "Revelation Legend",
+      "shops": [
+        "The Humidor"
+      ]
+    },
+    {
+      "id": "cig-perdomo-habano-bourbon",
+      "brand": "Perdomo",
+      "line": "Habano Bourbon",
+      "shops": [
+        "The Humidor"
+      ]
+    },
+    {
+      "id": "cig-rocky-patel-vintage",
+      "brand": "Rocky Patel",
+      "line": "Vintage",
+      "shops": [
+        "The Humidor"
+      ]
+    },
+    {
+      "id": "cig-rocky-patel-white-label",
+      "brand": "Rocky Patel",
+      "line": "White Label",
+      "shops": [
+        "The Humidor"
+      ]
+    }
+  ]
 }
