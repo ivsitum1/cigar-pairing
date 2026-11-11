@@ -1,18 +1,24 @@
 # Nove boce u trgovinama
 
-Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`, `miva`, `roto`, `humidor`
+Scan: `2026-11-01T12:10:29Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`, `miva`, `roto`, `humidor`
 
-- listinga: **3593** (preskočeno 49 — minijature, setovi)
-- **2695** boca kojih nemamo (tier D)
-- **8** mogućih novih izdanja postojećih (tier C, slabo poklapanje)
-- tier A/B (već imamo; link/cijena se osvježava): 325 / 459
+- listinga: **3585** (preskočeno 49 — minijature, setovi)
+- **2562** boca kojih nemamo (tier D)
+- **22** mogućih novih izdanja postojećih (tier C, slabo poklapanje)
+- tier A/B (već imamo; link/cijena se osvježava): 560 / 347
 
 ## Boce kojih nemamo
 
-### Rum (436)
+### Rum (420, od toga 6 novo od prošlog scana)
 
 | Boca | Trgovina · cijena |
 |---|---|
+| 🆕 APPLETON ESTATE 21 | [ecuga.com](https://ecuga.com/proizvod/appleton-estate-21) 179,00 € |
+| 🆕 APPLETON ESTATE SIGNATURE BLEND | [ecuga.com](https://ecuga.com/proizvod/appleton-estate-signature-blend) 25,00 € |
+| 🆕 BARCELO IMPERIAL MIZUNARA CASK | [ecuga.com](https://ecuga.com/proizvod/barcelo-imperial-mizunara-cask) 55,00 € |
+| 🆕 Havana Club Máximo Extra Añejo Rum 40% vol. 0.5 l u drvenoj poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/havana-club-maximo-extra-anejo-rum-40-vol-05-l-u-drvenoj-poklon-kutiji) 800,00 € |
+| 🆕 Petovia domaći rum1 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/petovia-domaci-rum) 8,86 € |
+| 🆕 St.Simons rum1.0 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/st-simons-rum) 14,05 € |
 | A. H. RIISE NON PLUS ULTRA LA GALANTE | [ecuga.com](https://ecuga.com/proizvod/a-h-riise-non-plus-ultra-la-galante) 99,00 € |
 | A.H. Riise Black Barrel NAVY SPICED Spirit Drink 40% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/ah-riise-black-barrel-navy-spiced-spirit-drink-40-vol-07l) 40,50 € |
 | A.H. Riise Non Plus Ultra 0,7l | [tipsy.hr](https://tipsy.hr/zestice/a-h-riise-non-plus-ultra/) 99,99 € |
@@ -54,11 +60,7 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Appleton Estate 15 YO BLACK RIVER CASKS Jamaica Rum 43% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/appleton-estate-15-yo-black-river-casks-jamaica-rum-43-vol-07l-u-poklon-kutiji) 83,50 € |
 | APPLETON ESTATE 8 YEARS RESERVE BLEND | [ecuga.com](https://ecuga.com/proizvod/appleton-estate-8-years-reserve-blend) 41,00 € |
 | Appleton Estate Reserve 8 Jamaica Rum 43% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/appleton-estate-reserve-8-jamaica-rum-43-vol-1l) 41,80 € |
-| Autentico Nativo 15 YO 0,2l | [tipsy.hr](https://tipsy.hr/zestice/rum-zestice/autentico-nativo-15-yo-02l/) 3,73 € · [tipsy.hr](https://tipsy.hr/zestice/autentico-nativo-15-y-o-070l/) 42,99 € |
-| Autentico Nativo 20 YO 0,70l | [tipsy.hr](https://tipsy.hr/zestice/autentico-nativo-20-y-o-070l/) 52,99 € |
 | Autentico Nativo Overproof 0,70l | [tipsy.hr](https://tipsy.hr/zestice/8798/) 42,99 € |
-| Autentico Nativo Salvaje 0,7l | [tipsy.hr](https://tipsy.hr/zestice/rum-zestice/autentico-nativo-salvaje/) 35,99 € |
-| Autentico Nativo XO 0,7l | [tipsy.hr](https://tipsy.hr/zestice/autentico-nativo-xo/) 99,99 € |
 | BACARDI 8 RESERVA OCHO | [ecuga.com](https://ecuga.com/proizvod/bacardi-8-reserva-ocho) 31,00 € |
 | BACARDI ANEJO 4 | [ecuga.com](https://ecuga.com/proizvod/bacardi-anejo-4) 23,00 € |
 | BACARDI CARTA BLANCA | [ecuga.com](https://ecuga.com/proizvod/bacardi-carta-blanca) 16,00 € |
@@ -74,25 +76,23 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Barbancourt 4 YO 0,7l | [tipsy.hr](https://tipsy.hr/zestice/rum-zestice/barbancourt-4-years/) 19,74 € |
 | Barbancourt 8 YO 0,7l | [tipsy.hr](https://tipsy.hr/zestice/rum-zestice/barbancourt-8-years/) 31,99 € |
 | Barcelo Blanco rum0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/barcelo-blanco-rum) 16,55 € |
-| Barcelo Dorado rum0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/barcelo-dorado-rum) 13,08 € |
+| Barcelo Dorado rum0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/barcelo-dorado-rum) 11,99 € |
 | Barcelo Gran Anejo Dark rum0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/barcelo-gran-anejo-dark-rum) 23,05 € |
 | Barcelo Gran Anejo rum0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/barcelo-gran-anejo-rum-1) 20,05 € |
 | BARCELO IMPERIAL | [ecuga.com](https://ecuga.com/proizvod/barcelo-imperial) 29,00 € |
-| BARCELO IMPERIAL + ČAŠE | [ecuga.com](https://ecuga.com/proizvod/barcelo-imperial-case-gb) 33,00 € |
+| BARCELO IMPERIAL + ČAŠE | [ecuga.com](https://ecuga.com/proizvod/barcelo-imperial-case-gb) 35,00 € |
 | BARCELO IMPERIAL 40 ANIVERSARIO | [ecuga.com](https://ecuga.com/proizvod/barcelo-imperial-40-aniversario) 155,00 € |
 | Barcelo Imperial Maple Cask rum0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/barcelo-imperial-maple-cask-rum) 40,05 € |
 | Barcelo Imperial Misunara Cask rum0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/barcelo-imperial-misunara-cask-rum) 55,05 € |
-| BARCELO IMPERIAL ONYX + ČAŠE | [ecuga.com](https://ecuga.com/proizvod/barcelo-imperial-onyx-2-case) 41,00 € |
+| BARCELO IMPERIAL ONYX + ČAŠE | [ecuga.com](https://ecuga.com/proizvod/barcelo-imperial-onyx-2-case) 42,00 € |
 | Barcelo Imperial Onyx rum0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/barcelo-imperial-onyx-rum) 37,05 € |
-| BARCELO IMPERIAL PORTO CASK | [ecuga.com](https://ecuga.com/proizvod/barcelo-imperial-porto-cask) 40,00 € |
+| BARCELO IMPERIAL PORTO CASK | [ecuga.com](https://ecuga.com/proizvod/barcelo-imperial-porto-cask) 43,00 € |
 | Barcelo Imperial Porto Cask Finish 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/barcelo-imperial-porto-cask-finish-070-l/) 40,00 € |
 | Barcelo Imperial Porto Cask rum0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/barcelo-imperial-porto-cask-rum) 40,05 € |
-| Barcelo Imperial Premium Blend rum0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/barcelo-imperial-premium-blend-rum) 150,05 € |
 | Barcelo Imperial rum + 2 čaše, gift box0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/barcelo-imperial-rum-2-case-gift-box) 33,05 € |
 | Barcelo Imperial rum0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/barcelo-imperial-rum) 24,29 € |
 | Barcelo Onyx rum + 2 čaše, gift box0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/barcelo-onyx-rum-2-case-gift-box) 40,05 € |
 | Barcelo Organic rum0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/barcelo-organic-rum) 24,05 € |
-| Bellamy&#039;s 12 YO Reserve Rum 42% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/bellamys-12-years-old-reserve-rum-42-vol-07l-u-poklon-kutiji) 55,25 € |
 | Bellamy&#039;s Reserve JAMAICA Pot Still Rum 43% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/bellamys-reserve-jamaica-pot-still-rum-43-vol-07l) 51,64 € |
 | Bellamy&#039;s Reserve Rum Guyana Diamond 2012 50% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/bellamys-reserve-rum-guyana-diamond-2012-50-vol-07l) 82,25 € |
 | Bellamy&#039;s Reserve Rum Guyana Enmore 1991 54,3% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/bellamys-reserve-rum-guyana-enmore-1991-543-vol-07l-u-poklon-kutiji) 574,00 € |
@@ -134,14 +134,10 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | BRUGAL LEYENDA SELECCION HOMENAYE | [ecuga.com](https://ecuga.com/proizvod/brugal-leyenda-seleccion-homenaye) 89,00 € |
 | Brugal Rum Anejo 0,7l | [tipsy.hr](https://tipsy.hr/zestice/rum-zestice/brugal-rum-anejo-07l/) 20,00 € |
 | Bumbu Original rum0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/bumbu-original-rum) 41,05 € |
-| BUMBU THE ORIGINAL TUBE LIMITED EDITION | [ecuga.com](https://ecuga.com/proizvod/bumbu-the-original-tube-limited-edition) 40,00 € |
+| BUMBU THE ORIGINAL TUBE LIMITED EDITION | [ecuga.com](https://ecuga.com/proizvod/bumbu-the-original-tube-limited-edition) 37,00 € |
 | Bumbu XO Handcrafted Rum 40% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/bumbu-xo-handcrafted-rum-40-vol-07l-u-poklon-kutiji) 49,89 € |
 | Bumbu XO Handcrafted Rum 40% Vol. 0,7l u poklon kutiji s 2 čaše | [allez.hr](https://allez.hr/shop/svi-proizvodi/bumbu-xo-handcrafted-rum-40-vol-07l-u-poklon-kutiji-s-2-case) 67,50 € |
 | Bumbu XO rum0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/bumbu-xo) 46,49 € |
-| BUMBU XO TUBE LIMITED EDITION | [ecuga.com](https://ecuga.com/proizvod/bumbu-xo-tube-limited-edition) 40,00 € |
-| CABO BAY DARK RUM | [ecuga.com](https://ecuga.com/proizvod/cabo-bay-dark-rum) 8,00 € |
-| CABO BAY WHITE RUM | [ecuga.com](https://ecuga.com/proizvod/cabo-bay-white-rum) 8,00 € |
-| CACHACA JACINTO | [ecuga.com](https://ecuga.com/proizvod/cachaca-jacinto) 13,00 € |
 | Cachaca Pirassununga 51 | [tipsy.hr](https://tipsy.hr/zestice/rum-zestice/cachaca-pirassununga-51/) 14,99 € |
 | Captain Morgan Dark Rum 1l | [tipsy.hr](https://tipsy.hr/zestice/rum-zestice/captain-morgan-dark-rum-1l/) 14,54 € |
 | Captain Morgan Jamaica Black rum0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/captain-morgan-jamaica-black-rum) 19,55 € |
@@ -150,11 +146,10 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Captain Morgan White 0,70l | [tipsy.hr](https://tipsy.hr/zestice/rum-zestice/captain-morgan-white/) 18,31 € |
 | Captain Morgan White rum0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/captain-morgan-white-rum) 17,49 € |
 | Centenario 18 Reserva De La Familia 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/centenario-18-reserva-de-la-familia-070-l/) 51,00 € |
-| Chairman&#039;s Reserve 1931 Finest St. Lucia Rum 46% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/chairmans-reserve-1931-finest-st-lucia-rum-46-vol-07l-u-poklon-kutiji) 86,20 € |
 | Chairman&#039;s Reserve Rum LEGACY EDITION 43% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/chairmans-reserve-rum-legacy-edition-43-vol-07l-u-poklon-kutiji) 46,50 € |
 | Chairman&#039;s Reserve SPICED Original 40% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/chairmans-reserve-spiced-original-40-vol-07l) 27,81 € |
 | Chairman&#039;s Reserve THE FORGOTTEN CASKS Finest St. Lucia Rum 40% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/chairmans-reserve-the-forgotten-casks-finest-st-lucia-rum-40-vol-07l-u-poklon-kutiji) 49,39 € |
-| Clairin Casimir Rum 49,5% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/clairin-casimir-rum-495-vol-07l-u-poklon-kutiji) 56,00 € |
+| Clairin Ansyen Casimir 22 Months Old Single Cask #CA21UI-122 Ex-Rum 2023 53.6% vol. 0.7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/clairin-casimir-rum-495-vol-07l-u-poklon-kutiji) 82,00 € |
 | Clairin Sajous Rhum pur Jus de Canne 56,5% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/clairin-sajous-rhum-pur-jus-de-canne-565-vol-07l-in-giftbox) 73,00 € |
 | Clement Creole Shrubb Liqueur D&#039;Orange 40% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/clement-creole-shrubb-liqueur-dorange-40-vol-07l) 30,26 € |
 | Clement MAHINA COCO Liqueur 18% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/clement-mahina-coco-liqueur-18-vol-07l) 27,74 € |
@@ -182,8 +177,6 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Derrumbes Mezcal ZACATECAS Joven 100% Agave LOTE 6 46,5% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/derrumbes-mezcal-zacatecas-joven-100-agave-lote-6-465-vol-07l) 73,99 € |
 | Dictador 12 YO ICON RESERVE Colombian Rum 40% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/dictador-12-years-old-icon-reserve-colombian-rum-40-vol-07l-u-poklon-kutiji) 48,40 € |
 | Dictador 12 YO ICON RESERVE Colombian Rum 40% Vol. 0,7l u poklon kutiji s 2 čaše | [allez.hr](https://allez.hr/shop/svi-proizvodi/dictador-12-years-old-icon-reserve-colombian-rum-40-vol-07l-u-poklon-kutiji-s-2-case) 56,43 € |
-| Dictador 16 YO EPISODIO SHERRY CASK Rum 2005 44% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/dictador-episodio-i-16-yo-sherry-cask-rum-2005-44-vol-07l-u-poklon-kutiji) 126,00 € |
-| Dictador 16 YO RIMA SHERRY Cask Vintage 2006 44% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/dictador-rima-1-16-yo-sherry-cask-vintage-2006-44-vol-07l-u-poklon-kutiji) 116,00 € |
 | Dictador 18 YO PÁRRAFO PARDO Vintage 2004 41% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/dictador-parrafo-i-18-yo-pardo-vintage-2004-41-vol-07l-u-poklon-kutiji) 130,80 € |
 | Dictador 2 MASTERS 1971/1974/1978/1980 Niepoort Port Pipe Finish 2021 48% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/dictador-2-masters-1971197419781980-niepoort-port-pipe-finish-2021-48-vol-07l-u-poklon-kutiji) 290,00 € |
 | Dictador 2 MASTERS 1974 44 YO Colombian Rum Glenfarclas Finish 2nd Release 43,4% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/dictador-2-masters-1974-44-yo-colombian-rum-glenfarclas-finish-2nd-release-434-vol-07l-u-poklon-kutiji) 899,00 € |
@@ -199,9 +192,7 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Dictador 22 YO RIMA PORT CASK Vintage 2000 43% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/dictador-rima-1-22-yo-port-cask-vintage-2000-43-vol-07l-u-poklon-kutiji) 132,00 € |
 | Dictador 23 YO EPISODIO SHERRY CASK Rum 1998 45% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/dictador-episodio-i-23-yo-sherry-cask-rum-1998-45-vol-07l-u-poklon-kutiji) 264,80 € |
 | Dictador 24 YO CAPITULO  Sherry Cask Colombian Aged Rum 1996 44% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/dictador-capitulo-i-24-yo-sherry-cask-colombian-aged-rum-1996-44-vol-07l-u-poklon-kutiji) 221,80 € |
-| Dictador 24 YO PÁRRAFO PARDO Vintage 1998 43% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/dictador-parrafo-i-24-yo-pardo-vintage-1998-43-vol-07l-u-poklon-kutiji) 157,80 € |
 | Dictador 25 YO Columbian Rum 40% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/dictador-25-years-old-columbian-rum-40-vol-07l) 269,00 € |
-| Dictador Aurum (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-1633-dictador-aurum) 104,00 € |
 | Dictador BEST OF 1972 APASIONADO 45 YO  Colombian Rum 41% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/dictador-best-of-1972-apasionado-colombian-rum-45yo-41-vol-07l) 593,00 € |
 | Dictador BEST OF 1975 ALTISIMO Colombian Rum Limited Release 45% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/dictador-best-of-1975-altisimo-colombian-rum-limited-release-45-vol-07l) 560,18 € |
 | Dictador BEST OF 1980 ALTISIMO Colombian Rum Limited Release 41% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/dictador-best-of-1980-altisimo-colombian-rum-limited-release-41-vol-07l) 281,20 € |
@@ -218,7 +209,6 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Diplomatico Distillery Collection N° 2 BARBET Rum 47% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/diplomatico-distillery-collection-n-2-barbet-rum-47-vol-07l-u-poklon-kutiji) 86,20 € |
 | Diplomatico Planas 0,7l | [tipsy.hr](https://tipsy.hr/zestice/rum-zestice/diplomatico-planas-07l/) 25,20 € |
 | Diplomatico PLANAS Ron Blanco Extra Añejo 47% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/diplomatico-planas-ron-blanco-extra-anejo-47-vol-07l) 35,70 € |
-| Diplomatico Seleccion de Familia 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/diplomatico-seleccion-de-familia-070-l/) 58,00 € |
 | Diplomatico SELECCIÓN DE FAMILIA Rum 43% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/diplomatico-seleccion-de-familia-rum-43-vol-07l-u-poklon-kutiji) 80,43 € |
 | Don Papa 7 YO Single Island Rum 40% Vol. 0,7l u poklon pakiranju s igraćim kartama | [allez.hr](https://allez.hr/shop/svi-proizvodi/don-papa-7-years-old-single-island-rum-40-vol-07l-in-giftbox-with-cards) 102,73 € |
 | Don Papa GAYUMA Rum 40% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/don-papa-gayuma-rum-40-vol-07l-in-giftbox) 268,75 € |
@@ -247,7 +237,6 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | El Dorado PORT MOURANT Demerara Rum RARE COLLECTION Limited Release 1999 61,4% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/el-dorado-port-mourant-demerara-rum-rare-collection-limited-release-1999-614-vol-07l) 273,00 € |
 | El Dorado SKELDON Demerara Rum RARE COLLECTION Limited Release 2000 58,3% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/el-dorado-skeldon-demerara-rum-rare-collection-limited-release-2000-583-vol-07l-in) 349,99 € |
 | El Dorado VERSAILLES Demerara Rum RARE COLLECTION Limited Release 2002 63% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/el-dorado-versailles-demerara-rum-rare-collection-limited-release-2002-63-vol-07l-in) 349,99 € |
-| El Pasador De Oro XO 0,7l | [tipsy.hr](https://tipsy.hr/zestice/rum-zestice/el-pasador-de-oro-xo/) 56,99 € |
 | Facundo EXIMO X Años Rum 40% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/facundo-eximo-x-anos-rum-40-vol-07l-u-poklon-kutiji) 84,11 € |
 | Facundo EXQUISITO Rum 40% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/facundo-exquisito-rum-40-vol-07l-u-poklon-kutiji) 176,18 € |
 | Facundo NEO Silver Rum 40% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/facundo-neo-silver-rum-40-vol-07l-u-poklon-kutiji) 65,49 € |
@@ -290,9 +279,6 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Hampden Estate RUM FIRE White Overproof Rum 63% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/hampden-estate-rum-fire-white-overproof-rum-63-vol-07l) 39,39 € |
 | Havana Club Anejo 7 YO 0,70l | [tipsy.hr](https://tipsy.hr/zestice/havana-club-anejo-7-yo/) 28,99 € |
 | Havana Club Anejo Especial 1,0l | [tipsy.hr](https://tipsy.hr/zestice/rum-zestice/havana-club-anejo-especial/) 23,99 € |
-| Havana Club Dark 7 YO rum0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/havana-club-dark-7-yo-rum) 28,95 € |
-| Havana Club Don Navarro rum gift box0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/havana-club-don-navarro-rum-gift-box) 185,49 € |
-| Havana Club Union rum0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/havana-club-union-rum) 350,05 € |
 | HSE Rhum Extra Vieux KILCHOMAN CASK FINISH 2014 44% Vol. 0,5l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/hse-rhum-extra-vieux-kilchoman-cask-finish-2014-44-vol-05l-u-poklon-kutiji) 99,53 € |
 | HSE Rhum Vieux Agricole BLACK SHERIFF American Barrel 40% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/hse-rhum-vieux-agricole-black-sheriff-american-barrel-40-vol-07l) 45,80 € |
 | HSE Rhum Vieux Agricole VO 42% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/hse-rhum-vieux-agricole-vo-42-vol-07l) 64,50 € |
@@ -338,8 +324,6 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Opthimus 25 Años Solera Metodo Solera OportO Ron Artesanal 43% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/opthimus-25-anos-solera-metodo-solera-oporto-ron-artesanal-43-vol-07l-u-poklon-kutiji) 89,38 € |
 | Opthimus XO Summa Cum Laude 38% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/opthimus-xo-summa-cum-laude-38-vol-07l-u-poklon-kutiji) 149,18 € |
 | Pampero Aniversario Reserva Exclusiva 0,7l | [tipsy.hr](https://tipsy.hr/zestice/rum-zestice/pampero-aniversario-reserva-exclusiva/) 33,99 € |
-| PATRON ANEJO | [ecuga.com](https://ecuga.com/proizvod/patron-anejo) 59,00 € |
-| PATRON SILVER | [ecuga.com](https://ecuga.com/proizvod/patron-silver) 49,00 € |
 | Patron Tequila Silver 40% Vol. 0,7 l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/patron-tequila-silver-1l-40-vol-u-poklon-kutiji) 62,20 € |
 | Plantation Pineapple 40% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/plantation-pineapple) 29,99 € |
 | PYRAT XO RESERVE 0,70 L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/pyrat-xo-reserve-070-l/) 55,50 € |
@@ -450,22 +434,30 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Zafra Añejo 21 Años Ron Master Reserve 40% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/zafra-anejo-21-anos-ron-master-reserve-40-vol-07l-u-poklon-kutiji) 101,80 € |
 | Zafra Añejo 30 Años Master Series Limited Edition 2015 40% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/zafra-anejo-30-anos-master-series-limited-edition-2015-40-vol-07l-u-poklon-kutiji) 296,80 € |
 
-### Whisky (1191)
+### Whisky (1101, od toga 12 novo od prošlog scana)
 
 | Boca | Trgovina · cijena |
 |---|---|
+| 🆕 ABERFELDY 25 | [ecuga.com](https://ecuga.com/proizvod/aberfeldy-25) 449,00 € |
+| 🆕 AMRUT KADHAMBAM | [ecuga.com](https://ecuga.com/proizvod/amrut-kadhambam) 119,00 € |
+| 🆕 CHIVAS REGAL 16 CHARLES LECLERC | [ecuga.com](https://ecuga.com/proizvod/chivas-regal-16-charles-leclerc) 69,00 € |
+| 🆕 CHIVAS REGAL 21 ROYAL SALUTE HARRIS REED | [ecuga.com](https://ecuga.com/proizvod/chivas-regal-21-royal-salute-harris-reed) 259,00 € |
+| 🆕 CHIVAS REGAL 25 ROYAL SALUTE SMALL BATCH | [ecuga.com](https://ecuga.com/proizvod/chivas-regal-25-small-batch) 399,00 € |
+| 🆕 CHIVAS REGAL 26 ROYAL SALUTE COLHEITA | [ecuga.com](https://ecuga.com/proizvod/chivas-regal-26-royal-salute-colheita) 469,00 € |
+| 🆕 Four Roses Single Barrel whisky0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/four-roses-single-barrel-whisky) 37,55 € |
+| 🆕 Four Roses Small Batch whisky0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/four-roses-small-batch-whisky) 32,25 € |
+| 🆕 Glenlivet Founders Reserve whisky0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/glenlivet-founders-reserve-whisky) 36,95 € |
+| 🆕 Jameson Black Barrel whiskey0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/jameson-black-barrel-whiskey-1) 40,99 € |
+| 🆕 Jameson whiskey0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/jameson-whiskey-1) 21,99 € |
+| 🆕 Jameson whiskey1.0 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/jameson-whiskey-2) 26,99 € |
 | ABERFELDY 12 THE GOLDEN DRAM | [ecuga.com](https://ecuga.com/proizvod/aberfeldy-12-the-golden-dram) 49,00 € |
 | ABERFELDY 15 NAPA VALLEY CASK | [ecuga.com](https://ecuga.com/proizvod/aberfeldy-15-napa-valley-cask) 79,00 € |
-| Aberfeldy 18 YO Red Wine Casks BOLGHERI 43% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/aberfeldy-18-yo-red-wine-casks-bolgheri-43-vol-07l-u-poklon-kutiji) 157,80 € |
-| Aberfeldy 18 YO Red Wine Casks CÔTE RÔTIE 43% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/aberfeldy-18-yo-red-wine-casks-cote-rotie-43-vol-07l-u-poklon-kutiji) 195,48 € |
 | Aberfeldy 20 YO EXCEPTIONAL CASK Series Sherry Finished 54% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/aberfeldy-21-yo-highland-single-malt-madeira-cask-finish-40-vol-07l-gb) 307,80 € |
 | ABERLOUR 10 FOREST RESERVE | [ecuga.com](https://ecuga.com/proizvod/aberlour-10-forest-reserve) 35,00 € |
 | Aberlour 10 YO FOREST RESERVE Speyside Single Malt Scotch Whisky 48% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/aberlour-10-yo-forest-reserve-speyside-single-malt-scotch-whisky-48-vol-07l-u-poklon-kutiji) 48,38 € |
 | ABERLOUR 12 NON CHILL - FILTERED | [ecuga.com](https://ecuga.com/proizvod/aberlour-12-non-chill-filtered) 55,00 € |
 | Aberlour 12 YO Speyside Single Malt Scotch Whisky 48% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/aberlour-12-yo-speyside-single-malt-scotch-whisky-48-vol-07l-u-poklon-kutiji) 59,28 € |
-| Aberlour 12 YO whisky0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/aberlour-12-yo-whisky) 42,05 € |
 | ABERLOUR 12YO TUBA 0,70 L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/aberlour-12yo-tuba-070-l/) 46,90 € |
-| Aberlour 16 YO whisky0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/aberlour-16-yo-whisky) 108,05 € |
 | Aberlour 18 YO whisky0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/aberlour-18-yo-whisky) 138,05 € |
 | Aberlour A Bunadh 12 whisky0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/aberlour-a-bunadh-12-whisky) 74,35 € |
 | Aberlour Abunadh Alba whisky0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/aberlour-abunadh-alba-whisky-1) 74,35 € |
@@ -512,9 +504,7 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Angel’s Envy Bourbon – Port Wine Finish 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/angels-envy-bourbon-port-wine-finish-070-l/) 89,00 € |
 | ARDBEG 10 + 2 ČAŠE | [ecuga.com](https://ecuga.com/proizvod/ardbeg-10-2-case) 59,00 € |
 | Ardbeg 25 YO Islay Single Malt Scotch Whisky 46% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/ardbeg-twenty-something-23-yo-islay-single-malt-scotch-whisky-463-vol-07l-u-poklon-kutiji) 787,00 € |
-| Ardbeg 5 YO WEE BEASTIE Islay Single Malt Scotch Whisky 47,4% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/ardbeg-5-years-old-wee-beastie-islay-single-malt-scotch-whisky-474-vol-07l) 52,00 € |
 | Ardbeg 5YO Wee Beastie 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/ardbeg-5yo-wee-beastie-070-l/) 52,00 € |
-| ARDBEG An Oa 0,70 L | [ecuga.com](https://ecuga.com/proizvod/ardbeg-an-oa) 60,00 € · [humidor.hr](https://humidor.hr/hr/proizvod/ardbeg-an-oa-070-l/) 60,00 € · [cugaklik.hr](https://www.cugaklik.hr/proizvod/ardbeg-an-oa-07-l/) 66,50 € |
 | Ardbeg AN OA Islay Single Malt Scotch Whisky 46,6% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/ardbeg-an-oa-bbq-smoker-islay-single-malt-scotch-whisky-466-vol-07l-gb) 73,00 € |
 | Ardbeg ANAMORPHIC The Ultimate Islay Single Malt Scotch Whisky 48,2% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/ardbeg-anamorphic-islay-single-malt-scotch-whisky) 246,90 € |
 | Ardbeg ARDCORE The Ultimate Committee 46% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/ardbeg-ardcore-the-ultimate-committee-release-2022-46-vol-07l) 257,50 € |
@@ -534,11 +524,8 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Ardmore 12 YO Port Wood Finish 46% 0,7 l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/ardmore-12-yo-port-wood-finish-46-07-l-gb) 60,95 € |
 | Ardmore LEGACY Highland Single Malt 40% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/ardmore-legacy-40-07-l-poklon-kutija) 38,31 € |
 | Ardmore TRADITIONAL PEATED Highland Single Malt 40% Vol. 1l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/ardmore-traditional-peated-40-1-l-gb) 43,13 € |
-| ARRAN BARREL RESERVE | [ecuga.com](https://ecuga.com/proizvod/arran-barrel-reserve) 40,00 € |
 | ARRAN MACHRIE MOOR 10 PEATED LOCHRANZA MALT | [ecuga.com](https://ecuga.com/proizvod/arran-machrie-moor-10-peated-lochranza-malt) 73,00 € |
 | Arran Malt 12 YO MASTER of DISTILLING II James MacTaggart 51,8% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-arran-malt-12-years-old-master-of-distilling-ii-james-mactaggart-518-vol-07l-in-giftbox) 77,24 € |
-| Arran Malt 14 YO 46% Vol. 0,7 l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/arran-malt-14-yo-46-vol-07-l-u-poklon-kutiji) 53,92 € |
-| Arran Malt 18 YO Single Malt Scotch Whisky 46% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-arran-malt-18-yo-single-malt-scotch-whisky-46-vol-07l-u-poklon-kutiji) 116,07 € |
 | Arran Malt 21 YO Single Malt Scotch Whisky 46% Vol. 0,7l u pokon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-arran-malt-21-years-old-single-malt-scotch-whisky-46-vol-07l-in-giftbox) 195,63 € |
 | Arran Malt CASK FINISHES Single Malt Scotch Whisky THE AMARONE CASK FINISH 50% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-arran-malt-cask-finishes-single-malt-scotch-whisky-the-amarone-cask-finish-old-design-50-vol-07l-in-giftbox) 52,96 € |
 | Arran Malt JAMES MACTAGGART 10 YEARS MAKING A MARK Anniversary 54,2% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-arran-malt-james-mactaggart-10-years-making-a-mark-anniversary-542-vol-07l-in-giftbox) 127,75 € |
@@ -547,12 +534,8 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Arran Malt ROBERT BURNS Single Malt Scotch Whisky 43% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-arran-malt-robert-burns-single-malt-scotch-whisky-43-vol-07l-in-giftbox) 39,58 € |
 | Arran Malt SILVER SEAL 20 YO Single Malt Scotch Whisky Liwithed Edition 1996 51,2% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-arran-malt-silver-seal-20-years-old-single-malt-scotch-whisky-liwithed-edition-1996-512-vol-07l-in-giftbox) 169,55 € |
 | Arran Malt SILVER SEAL PRIVATE CASK 16 YO Single Malt Scotch Whisky 57,1% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-arran-malt-silver-seal-private-cask-16-years-old-single-malt-scotch-whisky-571-vol-07l-in-giftbox) 131,13 € |
-| ARRAN QUARTER CASK | [ecuga.com](https://ecuga.com/proizvod/arran-quarter-cask) 61,00 € |
 | Arran Quarter Cask THE BOTHY Batch No. 5 56,2% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/arran-quarter-cask-the-bothy-batch-no-5-562-vol-07l-u-poklon-kutiji) 70,65 € |
 | ARRAN ROBERT BURNS | [ecuga.com](https://ecuga.com/proizvod/arran-robert-burns) 37,00 € |
-| Arran Single Malt AMARONE CASK FINISH 50% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/arran-single-malt-amarone-cask-finish-50-vol-07l-u-poklon-kutiji) 62,65 € |
-| Arran Single Malt PORT CASK FINISH 50% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/arran-single-malt-port-cask-finish-50-vol-07l-in-giftbox) 71,18 € |
-| Arran Single Malt SAUTERNES CASK FINISH 50% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/arran-single-malt-sauternes-cask-finish-50-vol-07l-in-giftbox) 71,18 € |
 | Arran Single Malt SHERRY CASK The Bodega 55,8% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/arran-single-malt-sherry-cask-the-bodega-558-vol-07l-u-poklon-kutiji) 86,28 € |
 | Auchentosan American Oak 0,7l | [tipsy.hr](https://tipsy.hr/zestice/whiskey-zestice/auchentosan-american-oak-07l/) 45,99 € |
 | Auchentoshan 18 YO Single Malt Limited Release 43% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/auchentoshan-18-yo-single-malt-limited-release-43-vol-07l-u-poklon-kutiji) 92,77 € |
@@ -576,8 +559,8 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Ballantines Finest 1,0l | [tipsy.hr](https://tipsy.hr/zestice/whiskey-zestice/ballantines-finest/) 20,49 € |
 | Ballantines whisky gift box + 2 čaše0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/ballantines-whisky-gift-box-2-case) 17,45 € |
 | Ballantines whisky0.05 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/ballantines-whisky-2) 1,83 € |
-| Ballantines whisky0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/ballantines-whisky) 14,25 € |
-| Ballantines whisky1.0 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/ballantines-whisky-1) 18,35 € |
+| Ballantines whisky0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/ballantines-whisky) 15,99 € |
+| Ballantines whisky1.0 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/ballantines-whisky-1) 18,79 € |
 | Ballantine’s 12 Y.O. 0,7l | [tipsy.hr](https://tipsy.hr/zestice/whiskey-zestice/ballantines-12-y-o-07l/) 26,24 € |
 | BALLANTINE’S 17YO 0,70 L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/ballantines-17yo-070-l/) 88,50 € |
 | BALLANTINE’S 21 YO 0,70 L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/ballantines-21yo-070-l/) 159,50 € |
@@ -585,12 +568,6 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | BALLANTINE’S FINEST GOLA BOCA 0,70 L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/ballantines-finest-gola-boca-070-l/) 19,90 € |
 | BALLECHIN 10 | [ecuga.com](https://ecuga.com/proizvod/ballechin-10) 59,00 € |
 | BALVENIE 12 AMERICAN OAK | [ecuga.com](https://ecuga.com/proizvod/balvenie-12-american-oak) 75,00 € |
-| BALVENIE 12 DOUBLE WOOD | [ecuga.com](https://ecuga.com/proizvod/balvenie-12-double-wood) 68,00 € |
-| BALVENIE 12 GOLDEN CASK | [ecuga.com](https://ecuga.com/proizvod/balvenie-12-golden-cask) 79,00 € |
-| BALVENIE 12 Y DOUBLEWOOD + 1 ČAŠA | [ecuga.com](https://ecuga.com/proizvod/balvenie-12-y-doublewood-1-casa) 70,00 € |
-| BALVENIE 12 Y DOUBLEWOOD + 2 ČAŠE | [ecuga.com](https://ecuga.com/proizvod/balvenie-12-y-doublewood-070-l-2-case) 72,00 € |
-| BALVENIE 12 YO 0,70 L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/balvenie-12-yo-070-l/) 89,50 € |
-| BALVENIE 14 CARRIBEAN CASK | [ecuga.com](https://ecuga.com/proizvod/balvenie-14-carribean-cask) 94,00 € |
 | BALVENIE 14 YO 0,70 L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/balvenie-14-yo-070-l/) 105,50 € |
 | Balvenie 14YO The Week of Peat 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/balvenie-14-years-the-week-of-peat-070-l/) 139,00 € |
 | BALVENIE 16 YO 0,70 L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/balvenie-16-yo-070-l/) 209,50 € |
@@ -601,7 +578,6 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | BASIL HAYDEN'S | [ecuga.com](https://ecuga.com/proizvod/basil-haydens) 74,00 € |
 | Ben Nevis 10YO 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/ben-nevis-10yo-070-l/) 110,50 € |
 | Benriach 10 Years Triple Distilled 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/benriach-10-years-triple-distilled-070-l/) 79,00 € |
-| Benriach 10 YO Triple Distilled Double Cask Matured 43% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-benriach-10-yo-curiositas-peated-malt-46-vol-07l-u-poklon-kutiji) 52,15 € |
 | Benriach 12YO Three Cask 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/benriach-12yo-three-cask-070-l/) 59,50 € |
 | Benriach 16YO Three Cask Matured 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/benriach-16-yo-three-cask-matured-07-l/) 99,00 € |
 | BenRiach Birnie Moss Peated Malt 48% Vol. 0,7l u poklon kutii | [allez.hr](https://allez.hr/shop/svi-proizvodi/benriach-birnie-moss-peated-malt-48-vol-07l) 48,70 € |
@@ -624,15 +600,13 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Blantons Original Single Barrel Bourbon whiskey0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/blantons-original-single-barrel-bourbon-whiskey) 214,99 € |
 | Blanton’s Single Barrel Bourbon 0,7l | [tipsy.hr](https://tipsy.hr/zestice/blantons-single-barrel-bourbon/) 169,99 € |
 | Blanton’s The Original Sab Bourbon Whisky 0,7l | [tipsy.hr](https://tipsy.hr/zestice/whiskey-zestice/blantons-the-original-sab-bourbon-whisky-07l/) 186,25 € |
-| BOANN SINGLE POT STILL MADEIRA CASK | [ecuga.com](https://ecuga.com/proizvod/boann-single-pot-still-madeira-cask) 75,00 € |
+| BOANN SINGLE POT STILL MADEIRA CASK | [ecuga.com](https://ecuga.com/proizvod/boann-single-pot-still-madeira-cask) 60,00 € |
 | Bols Butterscotch (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-2121-bols-butterscotch) 13,34 € |
 | Bowmore 10 Y.O. 1l | [tipsy.hr](https://tipsy.hr/zestice/whiskey-zestice/bowmore-10-y-o-1l/) 58,36 € |
 | Bowmore 10 YO ASTON MARTIN Dark &amp; Intense 40% Vol. 1l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/bowmore-10-years-old-limited-edition-inspired-by-the-devils-casks-series-46-vol-1l-gb) 131,46 € |
 | Bowmore 10 YO DARK &amp; INTENSE Islay Single Malt Whisky 40% Vol. 1l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/bowmore-10-years-old-dark-intense-islay-single-malt-whisky-40-vol-1l-in-giftbox) 55,50 € |
 | Bowmore 10YO Dark & Intense 1 L | [humidor.hr](https://humidor.hr/hr/proizvod/bowmore-10-yo-dark-intense-100-l/) 45,00 € |
-| BOWMORE 12 YO 0,70 L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/bowmore-12-yo-070-l/) 66,50 € |
 | Bowmore 12 YO Islay Single Malt Scotch Whisky 40% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/bowmore-12-years-old-islay-single-malt-scotch-whisky-40-vol-07l-in-giftbox) 53,25 € |
-| Bowmore 12YO 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/bowmore-12-yo-070-l/) 42,00 € |
 | Bowmore 15 YO GOLDEN &amp; ELEGANT Islay Single Malt Scotch Whisky 43% Vol. 1l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/bowmore-15-years-old-golden-elegant-islay-single-malt-scotch-whisky-43-vol-1l-in-giftbox) 59,71 € |
 | Bowmore 15 YO Islay Single Malt Scotch Whisky 43% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/bowmore-15-years-old-islay-single-malt-scotch-whisky-43-vol-07l) 97,55 € |
 | Bowmore 26 YO THE VINTNER&#039;S TRILOGY French Oak Barrique 48,7% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/bowmore-26-years-old-the-vintners-trilogy-french-oak-barrique-487-vol-07l-in-giftbox) 581,00 € |
@@ -646,7 +620,6 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Bruichladdich BERE BARLEY 10 YO Islay Single Malt Scotch Whisky 2011 50% Vol. 0,7l u limenoj poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/bruichladdich-bere-barley-10-yo-islay-single-malt-scotch-whisky-2011-50-vol-07l-in-tinbox) 113,74 € |
 | Bruichladdich BLACK ART 24 YO Unpeated Edition 05.1 1992 48,4% Vol. 0,7l in Tinbox | [allez.hr](https://allez.hr/shop/svi-proizvodi/bruichladdich-black-art-24-years-old-unpeated-edition-051-1992-484-vol-07l-in-tinbox) 369,77 € |
 | Bruichladdich BLACK ART 29 Years Old Unpeated Edition 10.1 1992 45,1% Vol. 0,7l in Tinbox | [allez.hr](https://allez.hr/shop/svi-proizvodi/bruichladdich-black-art-25-years-old-unpeated-edition-071-1994-484-vol-07l-in-tinbox) 914,06 € |
-| Bruichladdich Classic Laddie 0,70l | [tipsy.hr](https://tipsy.hr/zestice/whiskey-zestice/bruichladdich-classic-laddie-070l/) 58,99 € |
 | Bruichladdich Islay Barley 2013 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/bruichladdich-islay-barley-2013-070-l/) 99,00 € |
 | Bruichladdich ISLAY BARLEY Coull, Cruach, Dunlossit, Island and Mulindry 2010 50% Vol. 0,7l in Tinbox | [allez.hr](https://allez.hr/shop/svi-proizvodi/bruichladdich-islay-barley-coull-cruach-dunlossit-island-and-mulindry-2010-50-vol-07l-in-tinbox) 65,17 € |
 | Bruichladdich Octomore 14.1 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/bruichladdich-octomore-14-1-070-l/) 239,00 € |
@@ -660,7 +633,6 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Bruichladdich Octomore EDITION: 15.2 Super Heavily Peated Islay Single Malt 57,9% Vol. 0,7l u limenoj poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/bruichladdich-octomore-edition-152-super-heavily-peated) 196,50 € |
 | Bruichladdich Octomore EDITION: 15.3 Super Heavily Peated Islay Single Malt 61,3% Vol. 0,7l u limenoj poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/bruichladdich-octomore-edition-153-super-heavily-peated) 322,50 € |
 | Bruichladdich Port Charlotte Islay Barley 2014 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/bruichladdich-port-charlotte-islay-barley-2014-070-l/) 85,00 € |
-| Bruichladdich The Classic Laddie 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/bruichladdich-the-classic-laddie-070-l/) 59,00 € |
 | Bruichladdich THE CLASSIC LADDIE Scottish Barley Unpeated Islay Single Malt 50% Vol. 0,7l in Giftbox with 2 glasses | [allez.hr](https://allez.hr/shop/svi-proizvodi/bruichladdich-the-classic-laddie-scottish-barley-unpeated-islay-single-malt-50-vol-07l-in-giftbox-with-2-glasses) 67,56 € |
 | Bruichladdich THE CLASSIC LADDIE Scottish Barley Unpeated Islay Single Malt 50% Vol. 0,7l in Tinbox | [allez.hr](https://allez.hr/shop/svi-proizvodi/bruichladdich-the-classic-laddie-scottish-barley-unpeated-islay-single-malt-50-vol-07l-in-tinbox) 65,14 € |
 | Bruichladdich THE LADDIE EIGHT 8 YO Unpeated Islay Single Malt 50% Vol. 0,7l in Tinbox | [allez.hr](https://allez.hr/shop/svi-proizvodi/bruichladdich-the-laddie-eight-8-years-old-unpeated-islay-single-malt-50-vol-07l-in-tinbox) 54,58 € |
@@ -672,9 +644,7 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | BULLEIT BOURBON | [ecuga.com](https://ecuga.com/proizvod/bulleit-bourbon) 28,00 € · [humidor.hr](https://humidor.hr/hr/proizvod/bulleit-bourbon-070-l/) 35,50 € |
 | Bulleit Bourbon whiskey0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/bulleit-bourbon-whiskey) 46,29 € |
 | Bulleit Frontier Burbon 0,70l | [tipsy.hr](https://tipsy.hr/zestice/bulleit-frontier-burbon/) 27,99 € |
-| BULLEIT RYE 0,70 L | [ecuga.com](https://ecuga.com/proizvod/bulleit-rye) 40,00 € · [cugaklik.hr](https://www.cugaklik.hr/proizvod/bulleit-rye-070-l/) 56,50 € |
 | Bulleit Rye whiskey0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/bulleit-rye-whiskey) 59,99 € |
-| Bunnahabhain 10 YO Staoisha Horseman No. 4 Single Malt Scotch Whisky 2013 62,7% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/bunnahabhain-10-yo-staoisha-horseman-no-4-single-malt-scotch-whisky-2013-627-vol-07l-u-poklon-kutiji) 156,00 € |
 | Bunnahabhain 12 YO Islay Single Malt Scotch Whisky 46,3% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/bunnahabhain-12-years-old-islay-single-malt-scotch-whisky-463-vol-07l-u-poklon-kutiji) 72,00 € |
 | Bunnahabhain 14 YO RUBY PORT CASK Matured Limited Release Fèis Ìle 2024 58,7% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/bunnahabhain-14-yo-ruby-port-cask-matured-limited-release-feis-ile-2024-587-vol-07l-u-poklon-kutiji) 156,50 € |
 | BUNNAHABHAIN 46 YO RARE RESERVE Signatory Vintage Cask Strength 1971 42,8% Vol. 0,7l u drvenoj poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/bunnahabhain-46-yo-rare-reserve-signatory-vintage-cask-strength-1971-428-vol-07l-u-drvenoj-poklon-kutiji) 521,00 € |
@@ -689,14 +659,11 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | BUSHMILLS 0,70 L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/bushmills-070-l/) 32,50 € |
 | BUSHMILLS 10 | [ecuga.com](https://ecuga.com/proizvod/bushmills-10) 33,00 € |
 | BUSHMILLS 10 YO 0,70 L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/bushmills-10-yo-070-l/) 43,50 € |
-| Bushmills 10 YO SHERRY CASK Finish Single Malt Irish Whiskey 46% Vol. 1l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/bushmills-10-years-old-sherry-cask-finish-single-malt-irish-whiskey) 50,90 € |
-| Bushmills 10 YO Single Malt Irish Whiskey 40% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/bushmills-10-years-old-single-malt-irish-whiskey) 41,90 € |
 | Bushmills 10YO Sherry Cask  1 L | [humidor.hr](https://humidor.hr/hr/proizvod/bushmills-10-yo-sherry-cask-1-l/) 59,50 € |
 | BUSHMILLS 12 | [ecuga.com](https://ecuga.com/proizvod/bushmills-12) 39,00 € |
 | BUSHMILLS 14 | [ecuga.com](https://ecuga.com/proizvod/bushmills-14) 55,00 € |
 | Bushmills 14 YO MALAGA CASK Finish Single Malt Irish Whiskey 40% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/bushmills-14-years-old-malaga-cask-finish-single-malt-whiskey) 66,20 € |
 | BUSHMILLS 15 | [ecuga.com](https://ecuga.com/proizvod/bushmills-15) 84,00 € |
-| BUSHMILLS 16 | [ecuga.com](https://ecuga.com/proizvod/bushmills-16) 99,00 € |
 | Bushmills 16 YO TRIPLE DISTILLED Single Malt Whiskey 40% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/bushmills-16-yo-triple-distilled-single-malt-whiskey-40-vol-07l-u-poklon-kutiji) 99,98 € |
 | Bushmills 16YO Three Wood  0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/bushmills-16-yo-three-wood-070-l/) 109,00 € |
 | BUSHMILLS 21 | [ecuga.com](https://ecuga.com/proizvod/bushmills-21) 239,00 € |
@@ -741,8 +708,6 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | CHIVAS REGAL 12YO + 2 ČAŠE 0,70 L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/chivas-regal-12yo-2-case-070-l/) 41,50 € |
 | CHIVAS REGAL 12YO KARTON 0,70 L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/chivas-regal-12yo-karton-070-l/) 39,50 € |
 | CHIVAS REGAL 12YO SA LJULJAČKOM 4,50 L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/chivas-regal-12yo-450-l/) 239,50 € |
-| Chivas Regal 15 YO XV whisky gift box0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/chivas-regal-15-yo-xv-whisky-gift-box) 51,55 € |
-| CHIVAS REGAL 15YO 0,70 L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/chivas-regal-15yo-070-l/) 58,50 € |
 | CHIVAS REGAL 15YO KARTON 0,70 L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/chivas-regal-15yo-karton-070-l/) 59,50 € |
 | CHIVAS REGAL 21 ROYAL SALUTE MIAMI POLO EDITION | [ecuga.com](https://ecuga.com/proizvod/chivas-regal-21-royal-salute-miami-polo-edition) 175,00 € |
 | CHIVAS REGAL 21 ROYAL SALUTE PEATED BLEND | [ecuga.com](https://ecuga.com/proizvod/chivas-regal-21-royal-salute-peated-blend) 204,00 € |
@@ -754,7 +719,6 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Chivas Regal The Icon whisky0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/chivas-regal-the-icon-whisky) 9,99 € |
 | CHIVAS REGAL ULTIS KUTIJA 0,70 L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/chivas-regal-ultis-kutija-070-l/) 259,50 € |
 | Chivas Regal Ultis XX 20YO 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/chivas-regal-ultis-xx-20-yo-070-l/) 239,00 € |
-| Chivas Regal XV 15 YO whisky0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/chivas-regal-xv-15-yo-whisky) 53,65 € |
 | Chivas XV 15 YO Gold Bottle 0,70l | [tipsy.hr](https://tipsy.hr/zestice/whiskey-zestice/chivas-15-yo-gold-bottle/) 52,99 € |
 | Clonakilty GALLEY HEAD Single Malt Irish Whiskey 40% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/clonakilty-galley-head-single-malt-irish-whiskey-40-vol-07l) 47,50 € |
 | Clonakilty SINGLE BATCH Double Oak Finish Irish Whiskey 43,6% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/clonakilty-single-batch-double-oak-finish-irish-whiskey-436-vol-07l-u-poklon-kutiji) 61,10 € |
@@ -780,14 +744,10 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | CONNEMARA DISTILLERS EDITION | [ecuga.com](https://ecuga.com/proizvod/connemara-distillers-edition) 47,00 € |
 | Connemara DISTILLERS EDITION Peated Single Malt Irish Whiskey 43% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/connemara-distillers-edition-peated-single-malt-irish-whiskey) 50,14 € |
 | Connemara ORIGINAL Peated Single Malt Irish Whiskey 40% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/connemara-original-peated-single-malt-irish-whiskey) 36,30 € |
-| COSA NOSTRA (TOMMY GUN) | [ecuga.com](https://ecuga.com/proizvod/cosa-nostra-tommy-gun) 80,00 € |
-| CRAGGANMORE 12 YO 0,70 L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/cragganmore-12-yo-070-l/) 70,50 € |
-| Cragganmore 12YO 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/cragganmore-12yo-070-l/) 44,50 € |
 | Craigellachie 19YO 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/craigellachie-19yo-070-l/) 268,00 € |
 | Craigellachie 19YO Exceptional Cask 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/craigellachie-19yo-exceptional-cask-070-l/) 268,00 € |
 | CROWN ROYAL BLACK | [ecuga.com](https://ecuga.com/proizvod/crown-royal-black) 69,00 € |
 | CUTTY SARK | [ecuga.com](https://ecuga.com/proizvod/cutty-sark) 15,00 € |
-| Dalmore 15 YO Highland Single Malt Scotch Whisky 40% Vol. 0,7 l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/dalmore-15-yo-highland-single-malt-scotch-whisky-40-vol-07-l-u-poklon-kutiji) 158,00 € |
 | Dalmore THE TRIO Highland Single Malt Scotch Whisky 40% Vol. 1l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/dalmore-the-trio-highland-single-malt-scotch-whisky-40-vol-1l-u-poklon-kutiji) 99,99 € |
 | Dalwhinnie 30 YO Single Malt Special Release 2020 51,9% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/dalwhinnie-30-yo-single-malt-special-release-2020-519-vol-07l-u-poklon-kutiji) 796,00 € |
 | Dalwhinnie The Distillers Edition Double Matured 43% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/dalwhinnie-the-distillers-edition-double-matured-43-vol-07l-u-poklon-kutiji) 79,90 € |
@@ -834,9 +794,8 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | FOUR ROSES 1,00 L | [ecuga.com](https://ecuga.com/proizvod/four-roses) 27,00 € · [cugaklik.hr](https://www.cugaklik.hr/proizvod/four-roses-100-l/) 34,50 € |
 | Four Roses Bourbon 40% Vol. 0,7 l | [allez.hr](https://allez.hr/shop/svi-proizvodi/four-roses-bourbon-40-vol-07-l) 18,58 € |
 | FOUR ROSES SINGLE BARREL 100 PROOF | [ecuga.com](https://ecuga.com/proizvod/four-roses-single-barrel-100-proof) 37,00 € |
-| Four Roses whiskey1.0 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/four-roses-whiskey) 27,55 € |
+| Four Roses whiskey1.0 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/four-roses-whiskey) 26,99 € |
 | Fuji Single Blended whiskey0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/fuji-single-blended-whiskey) 80,05 € |
-| FUJI SINGLE GRAIN | [ecuga.com](https://ecuga.com/proizvod/fuji-single-grain) 51,00 € |
 | Fuji Single Grain whiskey0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/fuji-single-grain-whiskey) 85,05 € |
 | Fujimi The 7 Virtues Blended Japanese Whisky 40% Vol. 0,7l in Giftbox | [allez.hr](https://allez.hr/shop/svi-proizvodi/fujimi-the-7-virtues-blended-japanese-whisky-40-vol-07l-in-giftbox) 51,63 € |
 | FUYU BLENDED JAPANESE WHISKY  0,7L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/fuyu-blended-japanese-whisky-07l/) 45,50 € |
@@ -845,7 +804,6 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Fuyu Japanese Blended Whisky MIZUNARA FINISH 45% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/fuyu-japanese-blended-whisky-mizunara-finish-45-vol-07l) 61,04 € |
 | FUYU SMALL BATCH | [ecuga.com](https://ecuga.com/proizvod/fuyu-small-batch) 34,00 € |
 | G3 Fee Brothers Whisky Barrel Aged 0,15l | [tipsy.hr](https://tipsy.hr/zestice/whiskey-zestice/g3-fee-brothers-whisky-barrel-aged-015l/) 21,18 € |
-| GENTLEMAN JACK 0,70 L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/gentleman-jack-070-l/) 42,50 € · [cugaklik.hr](https://www.cugaklik.hr/proizvod/gentleman-jack-10-l/) 49,60 € |
 | Glen Garioch 17 YO THE RENAISSANCE 3rd Chapter 50,8% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/glen-garioch-17-years-old-the-renaissance-3rd-chapter-508-vol-07l) 162,45 € |
 | Glen Garioch 18 YO THE RENAISSANCE 4th Chapter 50,2% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/glen-garioch-18-years-old-the-renaissance-4th-chapter-502-vol-07l-u-poklon-kutiji) 178,78 € |
 | Glen Garioch Highland Single Malt VINTAGE 1997 56,7% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/glen-garioch-highland-single-malt-vintage-1997-567-vol-07l-u-poklon-kutiji) 132,59 € |
@@ -866,8 +824,6 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Glendronach 10YO Forgue 1 L | [humidor.hr](https://humidor.hr/hr/proizvod/the-glendronach-10-yo-forgue-100-l/) 68,50 € |
 | Glendronach 15YO 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/glendronach-15yo-070-l/) 127,00 € |
 | Glendronach Traditionally Peated 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/glendronach-traditionally-peated-070-l/) 66,00 € |
-| Glenfarclas 10 YO Highland Single Malt Scotch Whisky 40% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/glenfarclas-10-yo-highland-single-malt-scotch-whisky-40-vol-07l-u-poklon-kutiji) 42,33 € |
-| Glenfarclas 12 YO Highland Single Malt Scotch Whisky 43% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/glenfarclas-12-yo-highland-single-malt-scotch-whisky-43-vol-07l-u-poklon-kutiji) 51,14 € · [allez.hr](https://allez.hr/shop/svi-proizvodi/glenfarclas-12-yo-highland-single-malt-scotch-whisky-43-vol-1l-u-poklon-kutiji) 67,40 € |
 | Glenfarclas 12YO 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/glenfarclas-12-yo-070-l/) 59,50 € |
 | Glenfarclas 15 YO Highland Single Malt Scotch Whisky 46% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/glenfarclas-15-years-old-highland-single-malt-scotch-whisky-46-vol-07l-in-giftbox) 69,00 € |
 | Glenfarclas 17 YO  Highland Single Malt Scotch Whisky 43% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/glenfarclas-17-yo-highland-single-malt-scotch-whisky-43-vol-07l-u-poklon-kutiji) 76,65 € |
@@ -916,15 +872,10 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Glenfiddich PROJECT XX Single Malt Scotch Whisky 47% Vol. 0,7l in Giftbox with 2 glasses and black Salt | [allez.hr](https://allez.hr/shop/svi-proizvodi/glenfiddich-project-xx-single-malt-scotch-whisky-47-vol-07l-in-giftbox-with-2-glasses-and-black-salt) 85,47 € |
 | Glenfiddich PROJECT XX Single Malt Scotch Whisky 47% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/glenfiddich-project-xx-single-malt-scotch-whisky-47-vol-07l-u-poklon-kutiji) 75,60 € |
 | GLENFIDDICH XX 0,70 L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/glenfiddich-xx-070-l/) 82,00 € |
-| Glenglassaugh 10 YO RARE CASK RELEASE 2009 Sherry Puncheon Batch 4 57,9% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/glenglassaugh-10-yo-rare-cask-release-2009-sherry-puncheon-batch-4-579-vol-07l-u-poklon-kutiji) 134,75 € |
 | Glenglassaugh 12YO 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/glenglassaugh-12-yo-070-l/) 75,00 € |
 | Glenglassaugh 44 YO RARE CASK RELEASE Highland Single Malt 1972 42,4% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/glenglassaugh-44-years-old-rare-cask-release-highland-single-malt-1972-424-vol-07l-in) 199,00 € |
-| Glenglassaugh 9 YO RARE CASK RELEASE 2012 PX Puncheon Batch 4 58,3% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/glenglassaugh-9-yo-rare-cask-release-2012-px-puncheon-batch-4-583-vol-07l-u-poklon-kutiji) 132,35 € |
 | Glengoyne 10 YO Highland Single Malt Scotch Whisky 40% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/glengoyne-10-years-old-40-vol-07-l) 54,25 € |
-| Glengoyne 10YO 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/glengoyne-10yo-070-l/) 44,00 € |
 | Glengoyne 12 YO Highland Single Malt Scotch Whisky 43% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/glengoyne-12-years-old-43-07-l) 59,90 € |
-| GLENKINCHIE 12 YO 0,70 L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/glenkinchie-12-yo-070-l/) 77,50 € |
-| Glenkinchie 12YO 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/glenkinchie-12yo-070-l/) 46,50 € |
 | Glenlivet 18YO Batch Reserva 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/glenlivet-18-yo-batch-reserva-070-l/) 89,00 € |
 | Glenlivet Founder’s Reserve American Oak 0,7l | [tipsy.hr](https://tipsy.hr/zestice/whiskey-zestice/glenlivet-founders-reserve-american-oak-07l/) 43,75 € |
 | Glenmorangie 12 YO Palo Cortado Barrel Select Release 46% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/glenmorangie-12-yo-palo-cortado-barrel-select-release-46-vol-07l) 99,80 € |
@@ -943,19 +894,15 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | GLENMORANGIE Lasanta 0,70 L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/skotski-malt-whisky/) 59,50 € |
 | Glenmorangie Lasanta whisky0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/glenmorangie-lasanta-whisky) 52,65 € |
 | Glenmorangie Nectar D'Or whisky0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/glenmorangie-nectar-d-or-whisky) 87,99 € |
-| GLENMORANGIE Nectar d’Or 0,70 L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/glenmorangie-nectar-dor-070-l/) 80,00 € |
-| Glenmorangie Original 0,7l | [tipsy.hr](https://tipsy.hr/zestice/glenmorangie-original/) 38,99 € |
 | GLENMORANGIE PIONEER GIFT BOX 0,7 L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/glenmorangie-pioneer-gift-box-07-l/) 55,00 € |
 | GLENMORANGIE Quinta Ruban 0,70 L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/glenmorangie-quinta-ruban-070-l/) 57,50 € |
 | Glenmorangie Quinta Ruban whisky0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/glenmorangie-quinta-ruban-whisky) 59,35 € |
 | Glenmorangie SIGNET Highland Single Malt 46% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/glenmorangie-signet-highland-single-malt-46-vol-07l-u-poklon-kutiji) 532,00 € |
 | GLENMORANGIE SIGNET SINGLE MALT 0,7 L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/glenmorangie-signet-singe-malt-07-l/) 248,50 € |
-| GLENMORANGIE The Original 0,70 L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/glenmorangie-the-original-070-l/) 44,50 € |
 | Gordon & MacPhail Linkwood 25YO 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/gordon-macphail-linkwood-25yo-070-l/) 298,00 € |
 | Gordon & MacPhail Mortlach 25YO 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/gordon-macphail-mortlach-25yo-070-l/) 315,00 € |
 | Gordon & MacPhail Speymalt Macallan 2003 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/gordon-macphail-speymalt-macallan-2003-070-l/) 485,00 € |
 | GRANTS 0,70 L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/grants-070-l/) 22,50 € |
-| Grants whisky0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/grants-whisky) 16,35 € |
 | Green Spot CHATEAU MONTELENA Single Pot Still Irish Whiskey 46% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/green-spot-chateau-montelena-single-pot-still-irish-whiskey-46-vol-07l-in-giftbox) 71,00 € |
 | Green Spot CHÂTEAU LÉOVILLE BARTON Single Pot Still Irish Whiskey 46% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/green-spot-chateau-leoville-barton-single-pot-still-irish-whiskey-46-vol-07l-u-poklon-kutiji) 73,20 € |
 | Green Spot Single Pot Still Irish Whiskey 40% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/green-spot-single-pot-still-irish-whiskey-40-vol-07l-in-giftbox) 58,90 € |
@@ -963,8 +910,6 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | HATOZAKI 12 PURE MALT SMALL BATCH | [ecuga.com](https://ecuga.com/proizvod/hatozaki-12-pure-malt-small-batch) 99,00 € |
 | Hatozaki Japanese Blended Whisky 40% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/hatozaki-japanese-blended-whisky-40-vol-07l1) 37,31 € |
 | HEAVEN'S DOOR DOUBLE BARREL | [ecuga.com](https://ecuga.com/proizvod/heavens-door-double-barrel) 59,00 € |
-| HEAVEN'S DOOR STRAIGHT BOURBON | [ecuga.com](https://ecuga.com/proizvod/heavens-door-straight-bourbon) 64,00 € |
-| HEAVEN'S DOOR STRAIGHT RYE | [ecuga.com](https://ecuga.com/proizvod/heavens-door-straight-rye) 65,00 € |
 | HIBIKI HARMONY | [ecuga.com](https://ecuga.com/proizvod/hibiki-harmony) 119,00 € |
 | HIBIKI HARMONY MASTER'S SELECT | [ecuga.com](https://ecuga.com/proizvod/hibiki-harmony-masters-select) 134,00 € |
 | HIBIKI HARMONY WHISKY 0,70 L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/hibiki-harmony-whisky-070-l/) 179,55 € |
@@ -978,7 +923,6 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Highland Park 17 YO THE DARK 52,9% Vol. 0,7l u drvenoj poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/highland-park-17-yo-the-dark-529-vol-07l-u-drvenoj-poklon-kutiji) 371,49 € |
 | Highland Park DRAGON LEGEND Single Malt Scotch Whisky 43,1% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/highland-park-dragon-legend-single-malt-scotch-whisky) 64,80 € |
 | Highland Park EINAR Single Malt Scotch Whisky 40% Vol. 1l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/highland-park-einar-single-malt-scotch-whisky-40-vol-1l-in-giftbox) 56,54 € |
-| Highland Park FULL VOLUME 1999/2017 Single Malt Scotch Whisky 47,2% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/highland-park-full-volume-19992017-single-malt-scotch-whisky-472-vol-07l-in-giftbox) 116,80 € |
 | Highland Park HARALD Single Malt Scotch Whisky 40% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/highland-park-harald-single-malt-scotch-whisky-40-vol-07l-in-giftbox) 81,10 € |
 | Highland Park SPIRIT OF THE BEAR Single Malt Scotch Whisky 40% Vol. 1l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/highland-park-spirit-of-the-bear-single-malt-scotch-whisky-40-vol-1l-in-giftbox) 50,57 € |
 | Highland Park THORFINN Single Malt Scotch Whisky 45,1% Vol. 0,7l u drvenoj poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/highland-park-thorfinn-single-malt-scotch-whisky) 708,00 € |
@@ -1020,11 +964,9 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | JAMESON BLACK BARREL KARTON 0,70 L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/jameson-black-barrel-karton-070-l/) 48,50 € |
 | Jameson BLACK BARREL Triple Distilled Irish Whiskey 40% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/jameson-black-barrel-triple-distilled-irish-whiskey-40-vol-07l) 42,35 € |
 | Jameson BLACK BARREL Triple Distilled Irish Whiskey 40% Vol. 0,7l u poklon kutiji s 2 čaše | [allez.hr](https://allez.hr/shop/svi-proizvodi/jameson-the-black-barrel-triple-distilled-irish-whiskey) 57,80 € |
-| JAMESON CASKMATES IPA 0,70 L | [tipsy.hr](https://tipsy.hr/zestice/whiskey-zestice/jameson-caskmates-ipa-07l/) 22,50 € · [ecuga.com](https://ecuga.com/proizvod/jameson-caskmates-ipa) 28,00 € · [cugaklik.hr](https://www.cugaklik.hr/proizvod/jameson-caskmates-ipa-070-l/) 36,50 € |
 | Jameson CASKMATES Triple Distilled Irish Whiskey IPA EDITION 40% Vol. 1l | [allez.hr](https://allez.hr/shop/svi-proizvodi/jameson-caskmates-ipa-edition) 39,90 € |
 | Jameson CASKMATES Triple Distilled Irish Whiskey STOUT EDITION 40% Vol. 1l | [allez.hr](https://allez.hr/shop/svi-proizvodi/jameson-caskmates-triple-distilled-irish-whiskey-stout-edition) 40,50 € |
 | JAMESON DISTILLERS SAFE 0,70 L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/jameson-distillers-safe-070-l/) 62,50 € |
-| JAMESON SINGLE POT STILL | [ecuga.com](https://ecuga.com/proizvod/jameson-single-pot-still) 55,00 € |
 | Jameson Single Pot Still Irish Whiskey Five Oak Cask Release 46% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/jameson-single-pot-still-irish-whiskey-five) 77,00 € |
 | Jameson Triple Distilled &amp; Triple Cask Irish Whiskey 40% Vol. 1l | [allez.hr](https://allez.hr/shop/svi-proizvodi/jameson-triple-distilled-triple-cask-irish-whiskey-40-vol-1l) 40,50 € |
 | Jameson Triple Distilled Irish Whiskey 40% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/jameson-triple-distilled-irish-whiskey-40-vol-07l) 29,50 € |
@@ -1041,6 +983,7 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | John Walker &amp; Sons KING George V Blended Scotch Whisky 43% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/john-walker-sons-king-george-v-blended-scotch-whisky-43-vol-07l-upoklon-kutiji) 635,00 € |
 | JOHNNIE WALKER 18 THE ULTIMATE | [ecuga.com](https://ecuga.com/proizvod/johnnie-walker-18-the-ultimate) 96,00 € |
 | JOHNNIE WALKER 18 YO 0,70 L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/johnnie-walker-18-yo-070-l/) 147,50 € |
+| Johnnie Walker 18 YO Blended Scotch Whisky 40% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/johnnie-walker-the-pursuit-of-the-ultimate-18-years-old-blend-40-vol-07l-u-poklon-kutiji) 106,40 € |
 | Johnnie Walker 18YO Ultimate 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/johnnie-walker-18-yo-ultimate-070-l/) 99,00 € |
 | JOHNNIE WALKER BLACK LABEL CARTON BOX 0,70 L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/johnnie-walker-black-label-carton-box-070-l/) 45,50 € · [cugaklik.hr](https://www.cugaklik.hr/proizvod/johnnie-walker-black-label-carton-box-100-l/) 52,40 € |
 | JOHNNIE WALKER BLACK LABEL NAKED BOTTLE 0,70 L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/johnnie-walker-black-label-naked-bottle-070-l/) 41,50 € |
@@ -1049,10 +992,6 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Johnnie Walker Explorer&#039;s Club Collection The Gold Route 40% Vol. 1l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/johnnie-walker-explorers-club-collection-the-gold-route-40-vol-1l-u-poklon-kutiji) 105,80 € |
 | Johnnie Walker GOLD LABEL Reserve 40% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/johnnie-walker-gold-label-reserve-40-vol-07l-u-poklon-kutiji) 61,99 € |
 | JOHNNIE WALKER GOLD RESERVE 0,70 L | [tipsy.hr](https://tipsy.hr/zestice/whiskey-zestice/johnnie-walker-gold-reserve-07l/) 52,50 € · [cugaklik.hr](https://www.cugaklik.hr/proizvod/johnnie-walker-gold-reserve-070-l/) 84,50 € |
-| Johnnie Walker Johnnie Blonde 0,7l | [tipsy.hr](https://tipsy.hr/zestice/whiskey-zestice/johnnie-walker-johnnie-blonde-07l/) 13,58 € |
-| JOHNNIE WALKER KING GEORGE V | [ecuga.com](https://ecuga.com/proizvod/johnnie-walker-king-george-v) 548,00 € |
-| Johnnie Walker Red Rye 0,70 l | [tipsy.hr](https://tipsy.hr/zestice/johnnie-walker-red-rye-070-l/) 26,99 € |
-| Johnnie Walker The Pursuit of the ULTIMATE 18 YO Blend 40% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/johnnie-walker-the-pursuit-of-the-ultimate-18-years-old-blend-40-vol-07l-u-poklon-kutiji) 99,90 € |
 | Jura 10 YO ORIGIN TATTOO Special Edition 40% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/jura-10-years-old-origin-tattoo-special-edition-40-vol-07l) 39,68 € |
 | Jura 12 YO Single Malt Scotch Whisky 40% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/jura-12-yo-single-malt-scotch-whisky-40-vol-07l-u-poklon-kutiji) 58,00 € |
 | Jura 13 YO TWO ONE TWO Single Malt Scotch Whisky 47,5% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/jura-13-yo-two-one-two-single-malt-scotch-whisky-475-vol-07l-u-poklon-kutiji) 139,00 € |
@@ -1138,8 +1077,6 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Kura The Whisky Pure Malt 40% Vol. 0,7l in Giftbox | [allez.hr](https://allez.hr/shop/svi-proizvodi/kura-the-whisky-pure-malt-40-vol-07l-in-giftbox) 91,18 € |
 | KURAYOSHI PURE MALT 0,7L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/kurayoshi-pure-malt-07l/) 99,90 € |
 | KURAYOSHI SHERRY CASK PURE MALT 0,7L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/kurayoshi-sherry-cask-pure-malt-07l/) 89,90 € |
-| Lagavulin 10 YO Single Malt Whisky 43% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/lagavulin-10-yo-single-malt-whisky-43-vol-07l-u-poklon-kutiji) 94,90 € |
-| Lagavulin 10YO 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/lagavulin-10yo-070-l/) 89,00 € |
 | Lagavulin 12 YO Special Release 0,70l | [tipsy.hr](https://tipsy.hr/zestice/whiskey-zestice/lagavulin-12-y-o-special-release-070l/) 199,99 € |
 | Lagavulin 12 YO THE INK OF LEGENDS Special Release 2023 56,4% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/lagavulin-12-years-old-the-ink-of-legends-special-release) 239,00 € |
 | Lagavulin 8 YO 0,7l | [tipsy.hr](https://tipsy.hr/zestice/lagavulin-8-y-o/) 74,99 € |
@@ -1148,8 +1085,6 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Lagavulin 9 YO GAME OF THRONES House Lannister 46% 0,7 l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/lagavulin-9-yo-game-of-thrones-house-lannister-46-07-l-gb) 139,90 € |
 | Lagavulin The Distillers Edition Double Matured Islay Single Malt Whisky 2023 43% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/lagavulin-the-distillers-edition) 152,80 € |
 | Laphroaig 10 YO 40% Vol. 0,7l u poklon kutiji s 2 čaše | [allez.hr](https://allez.hr/shop/svi-proizvodi/laphroaig-10-yo-40-vol-07l-u-poklon-kutiji-s-2-case) 66,23 € |
-| Laphroaig 10 YO Original Cask Strength Batch 13 57,9% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/laphroaig-10-yo-original-cask-strength) 166,60 € |
-| Laphroaig 10 YO Original Cask Strength Batch 15 56,5% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/laphroaig-10-yo-original-cask-strength1) 127,48 € |
 | Laphroaig 10 YO Sherry Oak Finish 48% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/laphroaig-10-years-old-sherry-oak-finish) 127,20 € |
 | Laphroaig 25 YO Islay Single Malt Scotch Whisky 2019 51,4% Vol. 0,7l u drvenoj poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/laphroaig-25-years-old-islay-single-malt-scotch-whisky-2018-52-vol-07l-in-wooden-case) 609,00 € |
 | Laphroaig FOUR OAK 40% Vol. 1l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/laphroaig-four-oak-40-vol-1l) 55,15 € |
@@ -1163,13 +1098,10 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Liberties Copper Alley Single Malt 0,70l | [tipsy.hr](https://tipsy.hr/zestice/whiskey-zestice/liberties-copper-alley-single-malt-070l/) 59,99 € |
 | LIBERTIES OAK DEVIL 0,70 L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/liberties-oak-devil-070-l/) 41,50 € |
 | Loch Lomond 12YO 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/loch-lomond-12-yo-070l/) 43,00 € |
-| Loch Lomond 12YO Inchmurrin 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/loch-lomond-12yo-inchmurrin-070-l/) 44,00 € |
 | Loch Lomond 18YO 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/loch-lomond-18-yo-070-l/) 99,00 € |
 | Loch Lomond 25YO 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/loch-lomond-25yo-070-l/) 428,00 € |
-| Loch Lomond Original Single Malt 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/loch-lomond-original-single-malt-070-l/) 25,00 € |
 | Loch Lomond Signature Blended 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/loch-lomond-signature-blended-070-l/) 15,00 € |
 | Macallan 12YO 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/macallan-12-yo-070-l/) 89,00 € |
-| Macallan 12YO Triple Cask  0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/macallan-12-yo-triple-cask-070-l/) 125,00 € |
 | Macallan 15YO 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/macallan-15-yo-070-l/) 169,90 € |
 | Macallan 18YO 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/macallan-18-yo-070-l/) 369,00 € |
 | Macallan 25YO 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/macallan-25yo-070-l/) 2650,00 € |
@@ -1197,14 +1129,12 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Mars Maltage Malt Whisky 0,7l | [tipsy.hr](https://tipsy.hr/zestice/mars-maltage-malt-whisky/) 65,99 € |
 | Mars The Y.A. Blended Malt Japanese Whisky 52% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/mars-the-ya-blended-malt-japanese-whisky-52-vol-07l-u-poklon-kutiji) 172,00 € |
 | Mars TSUNUKI Single Cask Malt Whisky SHERRY CASK for Claude 2017 58% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/mars-tsunuki-single-cask-malt-sherry-cask-for-claude-whisky-2017-58-vol-07l-u-poklon-kutiji) 342,00 € |
-| Mars Tsunuki Single Malt 0,7l | [tipsy.hr](https://tipsy.hr/zestice/whiskey-zestice/mars-tsunuki-single-malt-07l/) 121,54 € |
 | Mars TSUNUKI Single Malt Japanese Whisky Edition 2022 50% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/mars-tsunuki-single-malt-japanese-whisky-edition-2022-50-vol-07l-u-poklon-kutiji) 162,25 € |
 | Mars TSUNUKI Single Malt Japanese Whisky PEATED 2016-2017 50% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/mars-tsunuki-single-malt-japanese-whisky-peated-2016-2017-50-vol-07l-u-poklon-kutiji) 164,00 € |
 | MASAHIRO 12 PURE MALT OLOROSO SHERRY | [ecuga.com](https://ecuga.com/proizvod/masahiro-12-pure-malt-oloroso-sherry) 99,00 € |
 | Masahiro 12 YO Pure Malt Whisky Oloroso Sherry Cask 43% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/masahiro-12-yo-pure-malt-whisky-oloroso-sherry-cask-43-vol-07l-u-poklon-kutiji) 98,50 € |
 | MASAHIRO PURE MALT | [ecuga.com](https://ecuga.com/proizvod/masahiro-pure-malt) 45,00 € |
 | Masahiro Pure Malt Whisky 43% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/masahiro-pure-malt-whisky-43-vol-07l-u-poklon-kutiji) 50,70 € |
-| MATSUI MIZUNARA CASK SINGLE MALT 0,7L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/matsui-mizunara-cask-single-malt-07l/) 119,90 € |
 | Matsui THE KURAYOSHI 12 YO Pure Malt Japanese Whisky 43% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/matsui-the-kurayoshi-12-years-old-pure-malt-japanese-whisky) 148,00 € |
 | Matsui THE KURAYOSHI 18 YO Pure Malt Japanese Whisky 50% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/matsui-whisky-the-kurayoshi-18-years-old-pure-malt-whisky-50-vol-07l-in-giftbox) 255,00 € |
 | Matsui THE KURAYOSHI 8 YO Pure Malt Whisky 43% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/matsui-the-kurayoshi-8-years-old-pure-malt-japanese-whisky) 107,60 € |
@@ -1216,10 +1146,6 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Matsui THE MATSUI THE PEATED CASK Single Malt Japanese Whisky 48% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/matsui-the-matsui-single-malt-japanses-whisky-the-peated-cask) 128,70 € |
 | Matsui THE TOTTORI  BOURBON BARREL Blended Japanese Whisky 43% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/matsui-the-tottori-blended-japanese-whisky-bourbon-barrel) 61,58 € |
 | Matsui THE TOTTORI Blended Japanese Whisky 43% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/matsui-whisky-the-tottori-blended-japanese-whisky-43-vol-07l-in-giftbox) 54,00 € |
-| McConnell’s 5 YO 0,7l | [tipsy.hr](https://tipsy.hr/zestice/whiskey-zestice/mcconnells-5-yo-07l/) 38,99 € |
-| McConnell’s Cognac Cask Finish 0,7l | [tipsy.hr](https://tipsy.hr/zestice/whiskey-zestice/mcconnells-cognac-cask-finish-07l/) 47,99 € |
-| McConnell’s Sherry Cask 0,7l | [tipsy.hr](https://tipsy.hr/zestice/whiskey-zestice/mcconnells-sherry-cask-07l/) 46,99 € |
-| McConnell’s Single Malt Single Cask 0,7l | [tipsy.hr](https://tipsy.hr/zestice/whiskey-zestice/mcconnells-single-malt-single-cask-07l/) 212,99 € |
 | Michter&#039;s US No.1 Small Batch Kentucky Straight Bourbon Whiskey 45,7% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/michters-us-no1-small-batch-kentucky-straight-bourbon-whiskey-457-vol-07l-u-poklon-kutiji) 69,99 € |
 | Midleton BARRY CROCKETT Legacy Irish Whiskey 46% Vol. 0,7l in Wooden case | [allez.hr](https://allez.hr/shop/svi-proizvodi/midleton-barry-crockett-legacy-irish-whiskey-46-vol-07l-in-wooden-case) 0,00 € |
 | MIDLETON VERY RARE | [ecuga.com](https://ecuga.com/proizvod/midleton-very-rare) 219,00 € |
@@ -1246,9 +1172,8 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Nikka Miyagikyo Peated Single Malt Whisky 2021 48% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/nikka-miyagikyo-peated-single-malt-whisky-2021-48-vol-07l-u-poklon-kutiji) 333,90 € |
 | Nikka Miyagikyo Single Malt Whisky 45% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/nikka-miyagikyo-single-malt-whisky-45-vol-07l-in-giftbox) 86,00 € |
 | Nikka Miyagikyo Single Malt Whisky Limited Edition 2019 48% Vol. 0,7l u drvenoj poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/nikka-miyagikyo-single-malt-whisky-limited-edition-2019-48-vol-07l-u-drvenoj-poklon-kutiji) 645,17 € |
-| NIKKA RARE OLD SUPER | [ecuga.com](https://ecuga.com/proizvod/nikka-rare-old-super) 46,00 € |
 | Nikka Super Nikka Whisky Rare Old 43% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/nikka-super-nikka-whisky-rare-old-43-vol-07l-in-giftbox) 54,00 € |
-| NIKKA TAILORED | [ecuga.com](https://ecuga.com/proizvod/nikka-tailored) 109,00 € · [tipsy.hr](https://tipsy.hr/zestice/nikka-tailored/) 119,99 € |
+| Nikka Tailored 0,7l | [tipsy.hr](https://tipsy.hr/zestice/nikka-tailored/) 119,99 € |
 | Nikka Taketsuru Non Aged 0,70l | [tipsy.hr](https://tipsy.hr/zestice/whiskey-zestice/nikka-taketsuru-non-aged-070l/) 59,99 € |
 | Nikka THE NIKKA Tailored Premium Blended Whisky 43% Vol. 0,7l  u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/nikka-the-nikka-premium-blended-whisky-43-vol-07l-u-poklon-kutiji) 109,90 € |
 | Nikka Whisky From the Barrel 80th Anniversary Edition 51,4% 3 l + postolje s pipetom | [allez.hr](https://allez.hr/shop/svi-proizvodi/nikka-whisky-from-the-barrel-80th-anniversary-edition-514-3-l-postolje-sa-pipetom) 373,95 € |
@@ -1272,17 +1197,14 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Penderyn Portwood 0,7l | [tipsy.hr](https://tipsy.hr/zestice/whiskey-zestice/penderyn-portwood-07l/) 49,24 € |
 | PENDERYN Sherrywood Single Malt 0,70l | [tipsy.hr](https://tipsy.hr/zestice/whiskey-zestice/penderyn-sherrywood-single-malt/) 49,99 € |
 | Pittyvaich 30 YO Single Malt Special Release 2020 50,8% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/pittyvaich-30-years-old-single-malt-special-release-2020-508-vol-07l-u-poklon-kutiji) 605,50 € |
-| Port Charlotte 10 YO Heavily Peated Islay Single Malt 50% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/port-charlotte-10-years-old-heavily-peated-islay-single-malt-50-vol-07l-in-tinbox) 78,80 € |
 | Port Charlotte ISLAY BARLEY Heavily Peated Islay Single Malt 2013 50% Vol. 0,7l u limenoj poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/port-charlotte-islay-barley-heavily-peated-islay-single-malt-2013-50-vol-07l-in-tinbox) 100,90 € |
 | Port Charlotte PMC:01 Heavily Peated Islay Single Malt 2013 54,5% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/port-charlotte-heavily-peated-islay-single-malt) 141,68 € |
 | Port Charlotte SC:01 Heavily Peated Islay Single Malt 2012 55,2% Vol. 0,7l u limenoj poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/port-charlotte-islay-barley-heavily-peated-islay-single-malt-2012-552-vol-07l-in-tinbox) 133,80 € |
 | Port Ellen 32 Years Old 15th Release 53,9% Vol. 0,7l in Giftbox | [allez.hr](https://allez.hr/shop/svi-proizvodi/port-ellen-32-years-old-15th-release-539-vol-07l-in-giftbox) 609,93 € |
 | Port Ellen 40 Years Old 1979/2020 9 Rogue Casks 50,9% Vol. 0,7l in Giftbox | [allez.hr](https://allez.hr/shop/svi-proizvodi/port-ellen-40-years-old-19792020-9-rogue-casks-509-vol-07l-in-giftbox) 20,44 € |
 | Powers THREE SWALLOW Single Pot Still Irish Whiskey 40% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/powers-three-swallow-single-pot-still-irish-whiskey-40-vol-07l) 66,00 € |
-| PROPER NO. TWELVE | [ecuga.com](https://ecuga.com/proizvod/proper-no-twelve) 26,00 € · [tipsy.hr](https://tipsy.hr/zestice/proper-no-twelve/) 29,99 € |
 | Red Spot 15 YO Single Pot Still Irish Whiskey 46% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/red-spot-15-yo-single-pot-still-irish-whiskey-46-vol-07l-u-poklon-kutiji) 163,20 € |
 | Redbreast 12 YO BIRD FEEDER Limited RED Edition 40% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/redbreast-12-yo-limited-edition-bird-feeder-2022-40-vol-07l) 98,20 € |
-| Redbreast 12 YO BIRD FEEDER Limited WHITE Edition 40% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/redbreast-12-yo-bird-feeder-limited-white-edition-40-vol-07l) 89,00 € |
 | Redbreast 12 YO Single Pot Still Irish Whiskey 40% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/redbreast-12-years-old-single-pot-still-irish-whiskey-40-vol-07l-in-giftbox) 72,50 € |
 | Redbreast 15 YO Single Pot Still Irish Whiskey 46% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/redbreast-15-yo-single-pot-still-irish-whiskey-46-vol-07l-u-poklon-kutiji) 119,90 € |
 | REDBREAST 18 | [ecuga.com](https://ecuga.com/proizvod/redbreast-18) 239,00 € |
@@ -1357,7 +1279,6 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Talisker Dark Storm 45,8% Vol. 1l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/talisker-dark-storm-458-vol-1l-in-giftbox) 79,00 € |
 | Talisker GAME OF THRONES Select Reserve House Greyjoy Single Malt Collection 45,8% Vol. 0,7l in Giftbox | [allez.hr](https://allez.hr/shop/svi-proizvodi/talisker-select-reserve-game-of-thrones-house-greyjoy-single-malt-collection-458-vol-07l-in-giftbox) 205,90 € |
 | Talisker Neist Point 45,8% Vol. 0,7l in Giftbox | [allez.hr](https://allez.hr/shop/svi-proizvodi/talisker-neist-point-458-vol-07l-in-giftbox) 117,19 € |
-| Talisker Port Ruighe 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/talisker-port-ruighe-070-l/) 58,50 € |
 | Talisker PORT RUIGHE Single Malt Scotch Whisky 45,8% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/talisker-port-ruighe-single-malt-scotch-whisky-458-vol-07l-in-tinbox) 55,40 € |
 | Talisker Skye 0,70l | [tipsy.hr](https://tipsy.hr/zestice/whiskey-zestice/talisker-skye-070l/) 38,49 € |
 | Talisker SKYE Campfire Escape Pack 45,8% Vol. 0,7l u poklon kutiji sa šalicom | [allez.hr](https://allez.hr/shop/svi-proizvodi/talisker-skye-458-vol-07l-in-giftbox-with-2-glasses) 51,40 € |
@@ -1371,10 +1292,7 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Talisker x Parley Wilder Seas Single Malt Scotch Whisky Limited Edition 48,6% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/talisker-x-parley-wilder-seas-single-malt-scotch-whisky-limited-edition-486-vol-07l) 93,45 € |
 | Tamdhu 15YO Sherry Cask 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/tamdhu-15-yo-sherry-cask-070-l/) 129,00 € |
 | Tamdhu 18YO 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/tamdhu-18yo-070-l/) 264,00 € |
-| TEELING BLACKPITTS PEATED | [ecuga.com](https://ecuga.com/proizvod/teeling-blackpitts-peated) 56,00 € |
 | Teeling BLACKPITTS PEATED Single Malt Irish Whiskey 46% Vol. 0,7l u limenoj poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/teeling-whiskey-blackpitts-peated-single-malt-irish-whiskey) 54,25 € |
-| TEELING SINGLE GRAIN | [ecuga.com](https://ecuga.com/proizvod/teeling-single-grain) 42,00 € |
-| TEELING SINGLE MALT | [ecuga.com](https://ecuga.com/proizvod/teeling-single-malt) 50,00 € |
 | Teeling Whiskey 12 YO REVIVAL Vol. V Irish Whiskey 46% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/teeling-whiskey-12-years-old-revival-vol-v-irish-whiskey-46-vol-07l-in-giftbox) 179,97 € |
 | Teeling Whiskey 15 YO EXPLORERS SERIES Irish Whiskey Japanese Edition 46% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/teeling-whiskey-15-years-old-explorers-series) 139,80 € |
 | Teeling Whiskey 32 YO VINTAGE RESERVE COLLECTION 46% Vol. 0,7l u drvenoj poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/teeling-whiskey-32-years-old-vintage-reserve-collection-single-malt-irish-whiskey-46-vol-07l-in-wooden-case) 499,00 € |
@@ -1394,7 +1312,6 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | The Balvenie 12 YO Single Barrel First Fill 47,8% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-balvenie-12-yo-single-barrel-first-fill-478-vol-07l-u-poklon-kutiji) 79,50 € |
 | The Balvenie 12 YO The Sweet Toast of AMERICAN OAK 43% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-balvenie-12-years-old-the-sweet-toast-of-american-oak-43-vol-07l) 100,74 € |
 | The Balvenie 14 YO The WEEK OF PEAT 48,3% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-balvenie-14-years-old-the-week-of-peat-483-vol-07l-u-poklon-kutiji) 122,24 € |
-| The Balvenie 15 YO Madeira Cask Finish 43% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-balvenie-15-yo-madeira-cask-finish-43-vol-07l-u-poklon-kutiji) 199,00 € |
 | The Balvenie 15 YO Single Barrel Sherry Cask 47,8% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-balvenie-15-yo-single-barrel-sherry-cask-478-vol-07l-gb) 268,00 € |
 | The Balvenie 16 YO French Oak 47,6% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-balvenie-16-yo) 361,01 € |
 | The Balvenie 21 YO Madeira Cask 40% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-balvenie-21-yo-madeira-cask-40-vol-07l-gb) 0,00 € |
@@ -1410,7 +1327,6 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | The Balvenie THE CREATION OF A CLASSIC 43% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-balvenie-the-creation-of-a-classic-43-vol-07l-u-poklon-kutiji) 102,00 € |
 | The Balvenie TUN 1509 Single Malt Scotch Whisky Batch No. 6 50,4% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-balvenie-tun-1509-single-malt-scotch-whisky-batch-no-4-517-vol-07l-in-giftbox) 449,00 € |
 | The Balvenie TUN 1509 Single Malt Scotch Whisky Batch No. 8 52,2% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-balvenie-tun-1509-single-malt-scotch-whisky-batch-no-5-526-vol-07l-in-giftbox) 639,00 € |
-| The Dalmore 12 YO Highland Single Malt Scotch Whisky 40% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/dalmore-12-yo-highland-single-malt-scotch-whisky-40-vol-07l-u-poklon-kutiji) 99,99 € |
 | The Dalmore 21 YO Highland Single Malt 42% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-dalmore-21-yo) 113,00 € |
 | The Dalmore 35 YO Highland Single Malt Scotch Whisky 40% Vol. 0,7l u drvenoj poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-dalmore-35-yo) 766,00 € |
 | The Dalmore Cigar Malt 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/the-dalmore-cigar-malt-070-l/) 149,00 € |
@@ -1423,7 +1339,6 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | THE DEAD RABBIT 5 YO WHISKEY  0,70 L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/the-dead-rabbit-5-yo-whiskey-070-l/) 40,50 € |
 | THE DUBLINER IRISH WHISKEY 0,70 L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/the-dubliner-irish-whiskey-070-l/) 31,50 € |
 | THE FAMOUS GROUSE 12 YO 0,70L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/the-famous-grouse-12-yo-070l/) 38,50 € |
-| The GlenAllachie 10 YO CASK STRENGTH Batch 58,2% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-glenallachie-10-years-old-cask-strength-batch-582-vol-07l-in-giftbox) 146,48 € |
 | The GlenAllachie 10 YO CHINQUAPIN VIRGIN OAK FINISH 48% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-glenallachie-10-yo-chinquapin-virgin-oak-finish-48-vol-07l-u-poklon-kutiji) 123,18 € |
 | The GlenAllachie 10 YO FRENCH VIRGIN OAK FINISH 48% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-glenallachie-10-yo-french-virgin-oak-finish-48-vol-07l-u-poklon-kutiji) 112,00 € |
 | The GlenAllachie 11 YO GRATTAMACCO WINE CASK FINISH 48% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-glenallachie-11-years-old-moscatel-wood-finish-single-malt-scotch-whisky-48-vol-07l-in-giftbox) 162,40 € |
@@ -1434,7 +1349,6 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | The GlenAllachie 13 YO OLOROSO WOOD FINISH 48% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-glenallachie-13-yo-oloroso-wood-finish-48-vol-07l-u-poklon-kutiji) 147,33 € |
 | The GlenAllachie 14 YO Marsala Barrique 2008 57,2% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-glenallachie-14-yo-marsala-barrique-2008-572-vol-07l-u-poklon-kutiji) 237,00 € |
 | The GlenAllachie 15 YO SCOTTISH VIRGIN OAK 48% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-glenallachie-15-yo-scottish-virgin-oak) 323,90 € |
-| The GlenAllachie 15 YO Speyside Single Malt Scotch Whisky 46% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-glenallachie-15-years-old-speyside-single-malt-scotch-whisky-46-vol-07l-in-giftbox) 99,00 € |
 | The GlenAllachie 16 YO 50th Anniversary PAST EDITION 57,1% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-glenallachie-16-yo-50th-anniversary-past-edition-571-vol-07l-u-poklon-kutiji) 212,00 € |
 | The GlenAllachie 16 YO 50th Anniversary PRESENT EDITION 2022 48% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-glenallachie-16-yo-50th-anniversary-present-edition-2022-48-vol-07l-u-poklon-kutiji) 212,00 € |
 | The GlenAllachie 30 YO Batch Number TWO 50,8% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-glenallachie-30-yo-batch-number-two-508-vol-07l-u-poklon-kutiji) 829,00 € |
@@ -1480,7 +1394,6 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | The Glenrothes Vintage 1976 40,8% Vol. 0,7l in Giftbox | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-glenrothes-vintage-1976-408-vol-07l-in-giftbox) 327,10 € |
 | THE GLENROTHES WHISKY 0,70 L 43% | [cugaklik.hr](https://www.cugaklik.hr/proizvod/the-glenrothes-whisky-070-l/) 53,50 € |
 | The Harvest Irish Whiskey 0,7l | [tipsy.hr](https://tipsy.hr/zestice/whiskey-zestice/the-harvest-irish-whiskey-07l/) 30,80 € |
-| The Irishman 12 YO Malt Whiskey 0,7l | [tipsy.hr](https://tipsy.hr/zestice/whiskey-zestice/the-irishman-12-yo-malt-whiskey-07l/) 54,96 € |
 | The Irishman 12 YO Single Malt Irish Whiskey 43% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-irishman-12-years-old-single-malt-irish-whiskey-43-vol-07l-in-giftbox) 88,80 € |
 | The Irishman CASK STRENGTH Irish Whiskey Exclusive Release 2023 55,3% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-irishman-cask-strength-irish-whiskey) 128,80 € |
 | The Irishman FOUNDER&#039;S RESERVE Caribbean Cask Finish 46% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-irishman-founders-reserve-caribbean-cask-finish-46-vol-07l-in-giftbox) 68,50 € |
@@ -1492,12 +1405,10 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | The Koshi-No Shinobu Pure Malt Whisky Mizunara Oak 43% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-koshi-no-shinobu-pure-malt-whisky-mizunara-oak-43-vol-07l) 63,71 € |
 | The Macallan 12 YO FINE OAK Highland Single Malt Scotch Whisky 40% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-macallan-12-yo-fine-oak-highland-single-malt-scotch-whisky-40-vol-07l-u-poklon-kutiji) 286,55 € |
 | The Macallan 12 YO TRIPLE CASK MATURED Highland Single Malt Scotch Whisky 40% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-macallan-12-yo-triple-cask-matured-highland-single-malt-scotch-whisky-40-vol-07l-u-poklon-kutiji) 149,00 € |
-| THE MACALLAN 12YO TRIPLE CASK 0,70 L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/the-macallan-12yo-triple-cask-070-l/) 99,50 € |
 | The Macallan 15 YO FINE OAK Highland Single Malt Scotch Whisky 43% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-macallan-15-yo-fine-oak-highland-single-malt-scotch-whisky-43-vol-07l-gb) 181,70 € |
 | The Macallan 15 YO TRIPLE CASK MATURED Highland Single Malt Scotch Whisky 43% Vol. 0,7l + GB | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-macallan-15-yo-triple-cask-matured-highland-single-malt-scotch-whisky-43-vol-07l-gb) 155,62 € |
 | THE MACALLAN 15YO TRIPLE CASK 0,70 L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/the-macallan-15yo-triple-cask-070-l/) 169,50 € |
 | The Macallan A NIGHT ON EARTH IN SCOTLAND 2021 Highland Single Malt 40% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-macallan-a-night-on-earth-highland-single-malt-43-vol-07l-u-poklon-kutiji) 249,50 € |
-| The Macallan A NIGHT ON EARTH THE JOURNEY 2023 43% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-macallan-a-night-on-earth-the-journey-2023-43-vol-07l-u-poklon-kutiji) 218,00 € |
 | The Macallan AERA Highland Single Malt 40% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-macallan-aera-highland-single-malt) 439,90 € |
 | The Macallan AMBER MEADOW The Harmony Collection 44,2% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-macallan-amber-meadow-the-harmony-collection-442-vol-07l-u-poklon-kutiji) 238,50 € |
 | The Macallan ART IS THE FLOWER Highland Single Malt Whisky 50,4% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-macallan-art-is-the-flower-highland-single-malt-whisky-504-vol-07l-u-poklon-kutiji) 337,00 € |
@@ -1522,24 +1433,16 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | The Macallan Tales of the Macallan Vol. 2 44,8% Vol. 0,7l u kožnoj poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-macallan-tales-of-the-macallan-vol-2-448-vol-07l-u-koznoj-poklon-kutiji) 999,90 € |
 | The Macallan TERRA Highland Single Malt Scotch Whisky 43,8% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-macallan-terra-highland-single-malt-scotch-whisky) 331,80 € |
 | The Macallan The Harmony Collection VIBRANT OAK 44,2% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-macallan-the-harmony-collection-vibrant-oak-442-vol-07l-u-poklon-kutiji) 298,00 € |
-| THE MATSUI THE PEATED SINGLE MALT 0,7L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/the-matsui-peated-single-malt-07l/) 119,90 € |
-| The Nikka 12YO 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/the-nikka-12-yo-070-l/) 109,00 € |
 | The Quiet Man 10 YO BARMAN&#039;S CODE MARSALA FINISHED Single Malt Irish Whiskey 43% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-quiet-man-10-yo-barmans-code-marsala-finished-single-malt-irish-whiskey-43-vol-07l) 68,25 € |
 | The Quiet Man 12 YO AN CULCHISTE Single Malt Irish Whiskey 46% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-quiet-man-an-culchiste-12-year-old-single-malt-irish-whiskey) 71,05 € |
 | The Quiet Man 12 YO AN FEAR CIUIN Oloroso Sherry Casks Single Malt Irish Whiskey 46% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-quiet-man-an-fear-ciuin-12-year-old-sherry-finished-46-vol-07l-in-giftbox) 83,90 € |
 | The Quiet Man 8 YO AN FEAR CIUIN Single Malt Irish Whiskey 40% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-quiet-man-an-fear-ciuin-8-year-old-single-malt-irish-whiskey-40-vol-07l-in-giftbox) 49,50 € |
 | The Quiet Man AN FEAR CIUIN Traditional Blended Irish Whiskey 40% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-quiet-man-an-fear-ciuin-traditional-irish-whiskey-40-vol-07l) 33,80 € |
 | The Sexton Single Malt Irish Whiskey 40% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-sexton-single-malt-irish-whiskey-40-vol-07l) 41,54 € |
-| The Shinobu Pure Malt 10 Years Old Whisky MIZUNARA Japanese Oak Finish 43% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-shinobu-pure-malt-10-years-old-whisky-mizunara-japanese-oak-finish-43-vol-07l) 120,78 € |
-| The Shinobu Pure Malt 15 Years Old Whisky MIZUNARA Japanese Oak Finish 43% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-shinobu-pure-malt-15-years-old-whisky-mizunara-japanese-oak-finish-43-vol-07l) 155,62 € |
 | The Singleton Dufftown 15 YO FRUITY DECADENCE 40% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/singleton-of-dufftown-15-years-old-gb-40-07-l) 65,00 € |
 | The Temple Bar 12 YO Single Malt Irish Whiskey 40% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-temple-bar-12-years-old-single-malt-irish-whiskey-40-vol-07l-in-giftbox) 100,07 € |
 | The Temple Bar 14 YO Single Malt Irish Whiskey Malbec Cask 43% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-temple-bar-14-years-old-single-malt-irish-whiskey-malbec-cask-43-vol-07l-in-giftbox) 141,88 € |
 | The Temple Bar Signature Blend Traditional Irish Whiskey 40% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-temple-bar-signature-blend-traditional-irish-whiskey-40-vol-07l-in-giftbox) 47,12 € |
-| The Tyrconnell 10 YO MADEIRA CASK 46% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-tyrconnell-10-years-old-madeira-cask-46-vol-07l-in-giftbox) 78,00 € |
-| The Tyrconnell 10 YO PORT CASK 46% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-tyrconnell-10-years-old-port-cask-46-vol-07l-in-giftbox) 64,50 € |
-| The Tyrconnell 10 YO SHERRY CASK 46% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-tyrconnell-10-years-old-sherry-cask-46-vol-07l-in-giftbox) 74,00 € |
-| The Tyrconnell 15 YO MADEIRA CASK 46% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-tyrconnell-15-years-old-madeira-cask-46-vol-07l-in-giftbox) 88,00 € |
 | The Tyrconnell 16 YO Single Malt Irish Whiskey 46% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-tyrconnell-16-years-old-single-malt-irish-whiskey-46-vol-07l-in-giftbox) 96,40 € |
 | The Tyrconnell Single Malt Irish Whiskey 43% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-tyrconnell-single-malt-irish-whiskey-43-vol-07l) 32,90 € |
 | The Ultimate INCHGOWER 11 Years Old Single Malt Whisky 2007 46% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-ultimate-inchgower-11-years-old-single-malt-whisky-2007-46-vol-07l) 49,01 € |
@@ -1552,10 +1455,8 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | The Wild Geese UNTAMED Classic Blend Irish Whiskey 40% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-wild-geese-single-malt-untamed-43-vol-07l-in-giftbox) 41,00 € |
 | Tobermory 12 YO Single Malt Scotch Whisky 46,3% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/tobermory-12-years-old-single-malt-scotch-whisky-463-vol-07l-in-giftbox) 60,80 € |
 | Tobermory 20 YO Single Malt Scotch Whisky SHERRY FINISH 46,3% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/tobermory-20-years-old-single-malt-scotch-whisky-sherry-finish) 217,90 € |
-| Tobermory 21 YO OLOROSO CASK Finish 46,3% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/tobermory-21-years-old-single-malt-scotch-whisky) 288,40 € |
 | Tobermory 23 YO OLOROSO CASK Finish 46,3% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/tobermory-23-yo-oloroso-cask-finish-463-vol-07l-u-poklon-kutiji) 494,55 € |
 | Togouchi 12 YO Japanese Blended Whisky 40% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/togouchi-12-years-old-japanese-blended-whisky-40-vol-07l-in-giftbox) 132,59 € |
-| Togouchi 15 YO Japanese Blended Whisky 43,8% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/togouchi-15-years-old-japanese-blended-whisky-438-vol-07l-in-giftbox) 146,00 € |
 | Togouchi 15YO 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/togouchi-15-years-070-l/) 149,00 € |
 | Togouchi 9 YO 0,70l | [tipsy.hr](https://tipsy.hr/zestice/togouchi-9-yo-070-l/) 89,99 € |
 | Togouchi 9 YO Japanese Blended Whisky 40% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/togouchi-9-years-old-japanese-blended-whisky-40-vol-07l-u-poklon-kutiji) 84,40 € |
@@ -1563,7 +1464,6 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | TOGOUCHI JAPANESE BLENDED WHISKY 0,70 L + 2 čaše | [cugaklik.hr](https://www.cugaklik.hr/proizvod/togouchi-japanese-blended-whisky-070-l-2-case/) 56,50 € |
 | TOGOUCHI JAPANESE BLENDED WHISKY 9 YO 0,70 L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/togouchi-japanese-blended-whisky-9-yo-070-l/) 94,20 € |
 | Togouchi Japanese Blended Whisky Beer Cask Finish 40% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/togouchi-japanese-blended-whisky-beer-cask-finish-40-vol-07l-u-poklon-kutiji) 65,45 € |
-| Togouchi Kiwami 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/togouchi-kiwami-070-l/) 49,00 € |
 | Togouchi KIWAMI Japanese Blended Whisky 40% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/togouchi-kiwami-japanese-blended-whisky-40-vol-07l-in-giftbox) 52,50 € |
 | Togouchi PURE MALT Japanese Whisky 40% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/togouchi-pure-malt-japanese-whisky-40-vol-07l-u-poklon-kutiji) 65,00 € |
 | Togouchi Sake Cask Finish Japanese Blended Whisky 40% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/togouchi-sake-cask-finish-japanese-blended-whisky-40-vol-07l-u-poklon-kutiji) 64,00 € |
@@ -1580,8 +1480,6 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Tomintoul 12 YO OLOROSO SHERRY CASKS Finish Limited Edition 2010 40% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/tomintoul-12-years-old-oloroso-sherry-cask) 63,48 € |
 | Tomintoul 14 YO WHITE PORT CASK Finish Limited Edition 2008 46% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/tomintoul-14-yo-single-malt-scotch-whisky-46-vol-07l-u-poklon-kutiji) 124,36 € |
 | Tomintoul 15 Years Old Portwood Finish 46% Vol. 0,7l in Giftbox | [allez.hr](https://allez.hr/shop/svi-proizvodi/tomintoul-15-years-old-portwood-finish-46-vol-07l-in-giftbox) 91,18 € |
-| Tomintoul 16 Years Old Single Malt Scotch Whisky 40% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/tomintoul-16-years-old-single-malt-scotch-whisky-40-vol-07l-u-poklon-kutiji) 64,11 € |
-| Tomintoul 16 Years Old Single Malt Scotch Whisky 40% Vol. 1l in Giftbox | [allez.hr](https://allez.hr/shop/svi-proizvodi/tomintoul-16-years-old-single-malt-scotch-whisky-40-vol-1l-in-giftbox) 66,10 € |
 | Tomintoul 18 Years Old Single Malt Scotch Whisky THE GENTLE DRAM 40% Vol. 0,7l in Giftbox with 2 glasses | [allez.hr](https://allez.hr/shop/svi-proizvodi/tomintoul-18-years-old-single-malt-scotch-whisky-the-gentle-dram-40-vol-07l-in-giftbox-with-2-glasses) 113,81 € |
 | Tomintoul 25 Years Old Single Malt Scotch Whisky 43% Vol. 0,7l in Giftbox | [allez.hr](https://allez.hr/shop/svi-proizvodi/tomintoul-25-years-old-single-malt-scotch-whisky-43-vol-07l-in-giftbox) 326,23 € |
 | Tomintoul 40 Years Old Single Malt Scotch Whisky 43,1% Vol. 0,7l in Giftbox | [allez.hr](https://allez.hr/shop/svi-proizvodi/tomintoul-40-years-old-single-malt-scotch-whisky-431-vol-07l-in-giftbox) 111,62 € |
@@ -1593,9 +1491,7 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Tullamore D.E.W. 18 YO Single Malt Irish Whiskey 41,3% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/tullamore-dew-18-years-old-single-malt-irish-whiskey-413-vol-07l-in-giftbox) 109,90 € |
 | Tullamore D.E.W. Irish Whiskey Crock Edition 40% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/tullamore-dew-irish-whiskey-crock-edition-40-vol-07l-u-poklon-kutiji) 46,44 € |
 | Tullamore D.E.W. ROUGE 13 YO Single Malt Irish Whiskey 40% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/tullamore-dew-rouge-13-yo) 69,50 € |
-| TULLAMORE DEW 0,70 L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/tullamore-dew-070-l/) 30,00 € · [cugaklik.hr](https://www.cugaklik.hr/proizvod/tullamore-dew-450-l-2/) 169,50 € |
 | TULLAMORE DEW 0,70 L CROCK POKLON KUTIJA | [cugaklik.hr](https://www.cugaklik.hr/proizvod/tullamore-dew-070-l-crock-poklon-kutija/) 74,30 € |
-| TULLAMORE DEW 0,70L XO RUM CASK FINISH | [cugaklik.hr](https://www.cugaklik.hr/proizvod/tullamore-dew-070l-xo-rum-cask-finish/) 59,00 € |
 | TULLAMORE DEW 12 YO 0,70 L KUTIJA | [cugaklik.hr](https://www.cugaklik.hr/proizvod/tullamore-dew-12-yo-070-l-kutija/) 42,50 € |
 | TULLAMORE DEW 4,50 L SA LJULJAČKOM | [cugaklik.hr](https://www.cugaklik.hr/proizvod/tullamore-dew-450-l/) 179,50 € |
 | Tullamore Dew Original Irish 0,70l | [tipsy.hr](https://tipsy.hr/zestice/whiskey-zestice/tullamore-dew-original-irish-070l/) 22,99 € |
@@ -1619,13 +1515,11 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Willett Kentucky Straight Bourbon Whiskey 47% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/willett-kentucky-straight-bourbon-whiskey-47-vol-07l) 82,80 € |
 | Willett Straight Rye Whiskey Rare Release Family Estate 55,6% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/willett-straight-rye-whiskey-rare-release-family-estate-556-vol-07l) 101,30 € |
 | Woodford Reserve BACCARAT Edition 45,2% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/woodford-reserve-baccarat-edition-452-vol-07l-u-poklon-kutiji) 468,58 € |
-| Woodford Reserve Double Oaked 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/woodford-reserve-double-oaked-070-l/) 57,50 € |
 | Woodford Reserve DOUBLE OAKED 43,2% Vol. 0,7 l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/woodford-reserve-double-oaked-432-vol-07-l-u-poklon-kutiji) 64,24 € |
 | Woodford Reserve HOLIDAY EDITION DISTILLER&#039;S SELECT Kentucky Straight Bourbon Whiskey 43,2% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/woodford-reserve-holiday-edition-distillers-select-kentucky-straight-bourbon-whiskey-432-vol-07l) 58,27 € |
 | Woodford Reserve Kentucky Bourbon 43,2% 0,7 l | [allez.hr](https://allez.hr/shop/svi-proizvodi/woodford-reserve-kentucky-bourbon-432-07-l) 39,68 € |
 | Woodford Reserve Kentucky Straight Bourbon Whiskey DERBY Edition 2020 45,2% Vol. 1l | [allez.hr](https://allez.hr/shop/svi-proizvodi/woodford-reserve-kentucky-straight-bourbon-whiskey-derby-edition-2020-452-vol-1l) 94,76 € |
 | Woodford Reserve Master&#039;s Collection Select AMERICAN OAK Kentucky Straight Bourbon Whiskey 45,2% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/woodford-reserve-masters-collection-select-american-oak-kentucky-straight-bourbon-whiskey-452-vol-07l-u-poklon-kutiji) 155,62 € |
-| WOODFORD RESERVE RYE 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/woodford-reserve-rye-070-l/) 49,00 € · [cugaklik.hr](https://www.cugaklik.hr/proizvod/woodford-reserve-rye-070-l/) 60,50 € |
 | Woodford Reserve RYE DISTILLER&#039;S SELECT Kentucky Straight Whiskey 45,2% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/woodford-reserve-rye-distillers-select-kentucky-straight-whiskey-452-vol-07l) 54,55 € |
 | Woodford Reserve WHEAT DISTILLER&#039;S SELECT Kentucky Straight Whiskey 45,2% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/woodford-reserve-wheat-distillers-select-kentucky-straight-whiskey-452-vol-07l) 51,10 € |
 | Writer&#039;s Tears CASK STRENGTH Vintage Release 2022 Irish Whiskey 54,6% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/writers-tears-cask-strength-irish-whiskey-limited-edition-2018-53-vol-07l-u-poklon-kutiji) 151,20 € |
@@ -1646,10 +1540,11 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | YOICHI SINGLE MALT 0,70 L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/yoichi-single-malt-070-l/) 119,50 € |
 | YURA 10 Y.O. WHISKY 0,70 L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/yura-10-y-o-whisky-070-l/) 45,50 € |
 
-### Brandy / cognac (121)
+### Brandy / cognac (119, od toga 1 novo od prošlog scana)
 
 | Boca | Trgovina · cijena |
 |---|---|
+| 🆕 Liker Cherry Brandy Maraska0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/liker-cherry-brandy-maraska) 12,49 € |
 | Ableforth's Cherry Brandy (0,50L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-1189-ableforth039s-cherry-brandy) 37,49 € |
 | Asbach 15 Jears 40% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/asbach-15-jears-40-vol-07l) 56,30 € |
 | Asbach 8 Years  40% Vol. 0,7l  u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/asbach-8-years-40-vol-07l-u-poklon-kutiji) 43,50 € |
@@ -1681,7 +1576,6 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | CARLOS I PEDRO XIMENEZ | [ecuga.com](https://ecuga.com/proizvod/carlos-i-pedro-ximenez) 39,00 € |
 | Clés des Ducs Armagnac V.S. 40% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/cles-des-ducs-armagnac-vs-40-vol-07l) 26,54 € |
 | Clés des Ducs Vieil Armagnac V.S.O.P. 40% Vol. 0,7l + GB | [allez.hr](https://allez.hr/shop/svi-proizvodi/cles-des-ducs-vieil-armagnac-vsop-40-vol-07l-gb) 35,30 € |
-| CLÉS DES DUCS VS | [ecuga.com](https://ecuga.com/proizvod/cles-des-ducs-vs) 27,00 € |
 | CLÉS DES DUCS VSOP | [ecuga.com](https://ecuga.com/proizvod/cles-des-ducs-vsop) 34,00 € |
 | Cognac Leyrat ASSEMBLAGE N° 1 Single Estate Cognac 42% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/cognac-leyrat-assemblage-n-1-single-estate-cognac-42-vol-07l-u-poklon-kutiji) 52,96 € |
 | Cognac Leyrat EXTRA Glory Single Estate Cognac 45% Vol. 0,7l u drvenoj poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/cognac-leyrat-extra-glory-single-estate-cognac-45-vol-07l-u-drvenoj-poklon-kutiji) 547,61 € |
@@ -1711,10 +1605,8 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Frapin Plume 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/frapin-plume-070-l/) 2830,00 € |
 | Gastro Brioni brandy0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/gastro-brioni-brandy) 54,35 € |
 | GAUTIER EXTRA 1755 | [ecuga.com](https://ecuga.com/proizvod/gautier-extra-1755) 149,00 € |
-| GAUTIER VSOP | [ecuga.com](https://ecuga.com/proizvod/gautier-vsop) 44,00 € |
 | Giffard Creme Cherry Brandy Liker 0,7l | [tipsy.hr](https://tipsy.hr/zestice/likeri/giffard-creme-cherry-brandy-liker-07l/) 11,13 € |
 | Grand Marnier Révélation Grande Cuvée 40% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/grand-marnier-revelation-grande-cuvee-40-vol-07l-u-poklon-kutiji) 820,00 € |
-| Grappa La Delicata Roner0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/grappa-la-delicata-roner) 21,85 € |
 | Hennessy JAMES HENNESSY Cognac 40% Vol. 1l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/hennessy-james-hennessy-cognac-40-vol-1l-u-poklon-kutiji) 215,60 € |
 | Hennessy Paradis cognac gift box0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/hennessy-paradis-cognac-gift-box) 9,99 € |
 | HENNESSY V.S NBA 0,70 L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/hennessy-v-s-nba-2022-edition-070-l/) 49,00 € |
@@ -1722,8 +1614,8 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Hennessy V.S.O.P Cognac Luminous (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-1789-hennessy-vsop-cognac-luminous) 73,50 € |
 | HENNESSY V.S.O.P NBA 2022 Edition 0,70 L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/hennessy-v-s-o-p-nba-2022-edition-070-l/) 65,80 € |
 | HENNESSY V.S.O.P NBA 2024 EDITION 0,70L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/hennessy-v-s-o-p-nba-2024-070l/) 86,50 € |
-| Hennessy V.S.O.P Privilège Cognac (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-1068-hennessy-vsop-privilge-cognac) 65,20 € |
-| Hennessy Very Special Cognac (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-508-hennessy-very-special-cognac) 36,50 € |
+| Hennessy V.S.O.P Privilège Cognac (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-1068-hennessy-vsop-privilge-cognac) 58,68 € |
+| Hennessy Very Special Cognac (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-508-hennessy-very-special-cognac) 32,85 € |
 | Hennessy Very Special Cognac Flask (0,20L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-694-hennessy-very-special-cognac-flask) 10,50 € |
 | Hennessy Very Special Cognac Luminous (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-869-hennessy-very-special-cognac-luminous) 43,80 € |
 | Hennessy Very Special Cognac Naked  (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-2160-hennessy-very-special-cognac-naked) 35,50 € |
@@ -1743,13 +1635,13 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | JANNEAU VSOP ARMAGNAC | [ecuga.com](https://ecuga.com/proizvod/janneau-vsop-armagnac) 34,00 € |
 | Kyrö SAUNA STORIES Apricot Brandy Cask Finish No. 2 51% vol. 0.7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/kyro-sauna-stories-apricot-brandy-cask-finish-no-2-51-vol-07l-u-poklon-kutiji) 129,90 € |
 | LEPANTO 12 | [ecuga.com](https://ecuga.com/proizvod/lepanto-12) 35,00 € |
-| LEPANTO O.V. | [ecuga.com](https://ecuga.com/proizvod/lepanto-ov) 53,00 € |
+| LEPANTO O.V. | [ecuga.com](https://ecuga.com/proizvod/lepanto-ov) 37,00 € |
 | Mandarine Napoleon Grande 0,70l | [tipsy.hr](https://tipsy.hr/zestice/cognac-zestice/mandarine-napoleon-grande-070l/) 33,25 € |
 | Martell Chanteloup XXO Cognac0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/martell-chanteloup-xxo-cognac) 480,05 € |
 | Martell Cohiba Cognac gift box0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/martell-cohiba-cognac-gift-box) 849,99 € |
 | Martell Cordon Bleu cognac0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/martell-cordon-bleu-cognac) 200,00 € |
 | Martell V.S.O.P. Aged in Red Barrels 40% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/martell-vsop-medailion-40-07-l) 63,50 € |
-| Martell VS cognac + 2 čaše0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/martell-vs-cognac-2-case) 35,75 € |
+| Martell VS cognac + 2 čaše0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/martell-vs-cognac-2-case#related) 35,75 € |
 | Martell VS cognac0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/martell-vs-cognac) 31,45 € |
 | Martell XO cognac gift box0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/martell-xo-cognac-gift-box) 240,05 € |
 | Martell XO Extra Old Cognac 40% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/martell-xo-extra-old-cognac-40-07-l-gb) 235,00 € |
@@ -1772,17 +1664,23 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Rémy Martin 1738 ACCORD ROYAL Cognac Fine Champagne 40% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/remy-martin-1738-accord-royal-cognac-fine-champagne-40-vol-07l-u-poklon-kutiji) 72,50 € |
 | Tariquet Armagnac VSOP 40% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/tariquet-armagnac-vsop-40-vol-07l-gb) 36,50 € |
 
-### Gin (234)
+### Gin (222, od toga 6 novo od prošlog scana)
 
 | Boca | Trgovina · cijena |
 |---|---|
+| 🆕 Empire gin1.0 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/empire-gin) 12,55 € |
+| 🆕 ENGINE GIN | [ecuga.com](https://ecuga.com/proizvod/engine-gin) 36,00 € · [tipsy.hr](https://tipsy.hr/zestice/gin-zestice/engine-gin-07l/) 38,36 € |
+| 🆕 FIFTY POUNDS | [ecuga.com](https://ecuga.com/proizvod/fifty-pounds) 29,00 € |
+| 🆕 GIN LANE 1751 CLEMENTINE | [ecuga.com](https://ecuga.com/proizvod/gin-lane-1751-clementine) 20,00 € |
+| 🆕 Rebel gin0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/rebel-gin) 16,55 € |
+| 🆕 Three Sixty Original vodka + čaša, gift box0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/three-sixty-original-vodka-casa-gift-box) 15,83 € |
 | 1244 Islands Gin (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-2092-1244-islands-gin) 46,50 € |
 | 5 Corners gin0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/5-corners-gin) 19,05 € |
 | Ableforth&#039;s Bathtub Sloe Gin 33,8% Vol. 0,5l | [allez.hr](https://allez.hr/shop/svi-proizvodi/bathtub-sloe-gin-338-vol-05-l) 42,20 € |
 | Ableforth's Bathtub gin  (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-1116-ableforth039s-bathtub-gin) 31,50 € |
 | Ableforth's Bathtub Gin Old Tom  (0,50L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-1117-ableforth039s-bathtub-gin-old-tom) 28,50 € |
 | ALKKEMIST | [ecuga.com](https://ecuga.com/proizvod/alkkemist) 43,00 € |
-| Alkkemist gin0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/alkkemist-gin) 36,29 € |
+| Alkkemist gin0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/alkkemist-gin) 35,54 € |
 | AMAZZONI | [ecuga.com](https://ecuga.com/proizvod/amazzoni) 38,00 € |
 | Amuerte COCA GIN  Green Edition 43% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/amuerte-coca-gin-green-edition-43-vol-07l) 72,30 € |
 | Amuerte COCA GIN  Red Edition 43% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/amuerte-coca-gin-red-edition-43-vol-07l) 75,25 € |
@@ -1837,7 +1735,6 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Brecon Chocolate Orange Gin 0,7l | [tipsy.hr](https://tipsy.hr/zestice/gin-zestice/brecon-chocolate-orange-gin-07l/) 22,43 € |
 | Brockmans Agave Cut Gin  (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-2837-brockmans-agave-cut-gin) 44,00 € |
 | Brockmans Intensely Smooth Gin (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-2836-brockmans-intensely-smooth-gin) 31,50 € |
-| Brockmans Orange Kiss Gin  (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-2838-brockmans-orange-kiss-gin) 31,50 € |
 | Broker&#039;s Premium PINK Gin 40% 0,7 l | [allez.hr](https://allez.hr/shop/svi-proizvodi/brokers-premium-pink-gin-40-07-l) 23,62 € |
 | BROKER'S PINK | [ecuga.com](https://ecuga.com/proizvod/brokers-pink) 17,00 € |
 | Brokers Gin 1,0l | [tipsy.hr](https://tipsy.hr/zestice/brokers-gin-10l/) 22,99 € |
@@ -1868,11 +1765,9 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | EDEN MILL PASSION GIN | [ecuga.com](https://ecuga.com/proizvod/eden-mill-passion-gin) 29,00 € |
 | Edinburgh Rhubarb and Ginger Liqueur Gin 20% 0,5 l | [allez.hr](https://allez.hr/shop/svi-proizvodi/edinburgh-rhubarb-and-ginger-liqueur-gin-20-05-l) 33,18 € |
 | Elephant Sloe Gin 35% 0,5 l | [allez.hr](https://allez.hr/shop/svi-proizvodi/elephant-sloe-gin-35-05-l) 49,65 € |
-| Engine Gin 0,7l | [tipsy.hr](https://tipsy.hr/zestice/gin-zestice/engine-gin-07l/) 38,36 € |
 | ETSU GIN 0,7L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/etsu-gin-07l/) 38,30 € |
 | ETSU GIN DOUBLE ORANGE 0,7L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/etsu-gin-double-orange-07l/) 37,90 € |
 | ETSU GIN PACIFIC OCEAN WATER 0,7L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/etsu-gin-pacific-ocean-water-07l/) 39,30 € |
-| Etsu Handcrafted Gin 0,7l | [tipsy.hr](https://tipsy.hr/zestice/gin-zestice/etsu-handcrafted-gin-07l/) 30,30 € |
 | Finsbury London Dry gin0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/finsbury-london-dry-gin-1) 9,79 € |
 | Finsbury London Dry gin1.0 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/finsbury-london-dry-gin) 12,99 € |
 | Four Monkeys Gin1 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/four-monkeys-gin) 11,49 € |
@@ -1901,18 +1796,14 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Gin Tanqueray 1 L | [humidor.hr](https://humidor.hr/hr/proizvod/gin-tanqueray-1-l/) 18,70 € |
 | Gin Tonka 0,5l | [tipsy.hr](https://tipsy.hr/zestice/gin-zestice/gin-tonka/) 39,08 € |
 | Glass of Gordon’s Tipsy Special | [tipsy.hr](https://tipsy.hr/svasta/case/glass-gordons-tipsy-special/) 40,99 € |
-| Glenmorangie The Original  (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-509-glenmorangie-the-original) 37,20 € |
 | Glenmorangie The Original + 2 čaše (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-2592-glenmorangie-the-original--2-case) 38,80 € |
 | Gold 999,9 0,7l | [tipsy.hr](https://tipsy.hr/zestice/gold-999/) 36,99 € |
 | Gordons Gin 1,0l | [tipsy.hr](https://tipsy.hr/zestice/gordons-gin/) 20,99 € |
-| Gordons gin0.05 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/gordons-gin-3) 2,99 € |
 | Gordons gin0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/gordons-gin-1) 22,99 € |
 | Gordons gin1.0 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/gordons-gin-2) 24,99 € |
-| Gordons Mediterranean Orange gin0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/gordons-mediterranean-orange-gin) 26,69 € |
 | Gordons Pink Gin 0,70l | [tipsy.hr](https://tipsy.hr/zestice/gin-zestice/gordons-pink-gin/) 20,49 € |
-| Gordons Pink gin0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/gordons-pink-gin) 22,49 € |
 | Gordon’s Gin 0,7l | [tipsy.hr](https://tipsy.hr/zestice/gin-zestice/gordons-gin-07l/) 14,99 € |
-| Great House Gin1.0 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/great-house-gin) 8,39 € |
+| Great House Gin1.0 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/great-house-gin) 8,99 € |
 | Greenalls Gin 0,70l | [tipsy.hr](https://tipsy.hr/zestice/gin-zestice/greenalls-gin-070l/) 22,49 € |
 | Greenalls Wild Berry Pink Gin 0,7l | [tipsy.hr](https://tipsy.hr/zestice/greenalls-wild-berry-pink-gin-070l/) 19,99 € |
 | Greenall’s Blueberry Gin 0,7l | [tipsy.hr](https://tipsy.hr/zestice/gin-zestice/greenalls-blueberry-gin-07l/) 18,74 € |
@@ -1920,13 +1811,6 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | GUNPOWDER SARDINIAN CITRUS GIN 0,7L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/gunpowder-sardinian-citrus-gin-07l/) 36,90 € |
 | Hendricks gin 0,70 l | [tipsy.hr](https://tipsy.hr/zestice/gin-zestice/hendricks-gin/) 35,99 € |
 | Hendricks gin 0,70l + Cucumber Curler | [tipsy.hr](https://tipsy.hr/zestice/gin-zestice/hendricks-cucumber-curler/) 32,99 € |
-| Hendricks gin Orbium 0,70l | [tipsy.hr](https://tipsy.hr/zestice/gin-zestice/hendricks-gin-orbium/) 33,74 € |
-| Hendricks gin0.05 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/hendricks-gin-1) 4,25 € |
-| Hendricks gin0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/hendricks-gin) 38,55 € |
-| Hendricks gin1.75 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/hendricks-gin-2) 112,65 € |
-| Hendricks Lunar gin0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/hendricks-lunar-gin) 34,65 € |
-| Hendricks Neptunia gin0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/hendricks-neptunia-gin) 37,49 € |
-| Hendricks Orbium gin0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/hendricks-orbium-gin) 48,75 € |
 | Hennessy & Ginger paket | [Miva](https://www.miva.com.hr/asortiman/proizvod-1359-hennessy--ginger-paket) 39,02 € |
 | HOUSE OF ELRICK GIN 0,7L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/house-of-elrick-gin-07l/) 33,90 € |
 | Hvar 22 Gin Black 0,70l | [tipsy.hr](https://tipsy.hr/zestice/gin-zestice/hvar-22-gin-black-070l/) 56,66 € |
@@ -1942,8 +1826,6 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Madre Badessa Capone Gin 0,7l | [tipsy.hr](https://tipsy.hr/zestice/gin-zestice/madre-badessa-capone-gin/) 25,99 € |
 | Malfy Gin ROSA Sicilian Pink Grapefruit 41% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/malfy-gin-rosa-sicilian-pink-grapefruit-41-vol-07l) 35,20 € |
 | Malfy Gin ROSA Sicilian Pink Grapefruit 41% Vol. 0,7l u poklon kutiji sa čašom | [allez.hr](https://allez.hr/shop/svi-proizvodi/malfy-gin-rosa-sicilian-pink-grapefruit-41-vol-07l-u-poklon-kutiji-sa-casom) 47,80 € |
-| Malfy Rosa Gin 0,7l | [tipsy.hr](https://tipsy.hr/zestice/malfy-rosa-gin-070l/) 28,99 € |
-| Martin Miller's Gin (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-541-martin-miller039s-gin) 35,80 € |
 | Masahiro Okinawa Gin Craft Recipe 01 0,7l | [tipsy.hr](https://tipsy.hr/zestice/gin-zestice/masahiro-okinawa-gin-craft-recipe-01-07l/) 34,75 € |
 | Mixer Ginger Syrup 1l | [tipsy.hr](https://tipsy.hr/zestice/likeri/mixer-ginger-syrup-1l/) 13,99 € |
 | Mombasa Club Strawberry Edition Gin 37,5% 0,7 l | [allez.hr](https://allez.hr/shop/svi-proizvodi/mombasa-club-strawberry-edition-gin-375-07-l) 37,30 € |
@@ -1972,7 +1854,7 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Sax Ginger gin0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/sax-ginger-gin) 13,59 € |
 | Sax Original gin + čaša (Gift Box)0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/sax-original-gin-casa-gift-box) 14,79 € |
 | Sax Original gin0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/sax-original-gin) 11,75 € |
-| Sax Original gin1.0 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/sax-original-gin-1) 13,49 € |
+| Sax Original gin1.0 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/sax-original-gin-1) 13,29 € |
 | Sax Pink gin0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/sax-pink-gin) 10,89 € |
 | Scapegrace BLACK Premium Dry Gin 41,6% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/scapegrace-black-premium-dry-gin-416-vol-07l) 45,23 € |
 | Scapegrace Blood Orange Gin  (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-2149-scapegrace-blood-orange-gin) 39,50 € |
@@ -1986,7 +1868,6 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Silent Pool Gin 0,7l | [tipsy.hr](https://tipsy.hr/zestice/silent-pool-gin/) 47,99 € |
 | Silent Wolf Gin | [tipsy.hr](https://tipsy.hr/zestice/gin-zestice/silent-wolf-gin/) 25,99 € |
 | Sipsmith Sloe Gin 29% Vol. 0,5l | [allez.hr](https://allez.hr/shop/svi-proizvodi/sipsmith-sloe-gin-2014-le-29-vol-05-l) 49,50 € |
-| Sir Edmond Big Giftbox | [tipsy.hr](https://tipsy.hr/zestice/sir-edmond-big-giftbox/) 109,00 € |
 | Sir Edmond Giftbox | [tipsy.hr](https://tipsy.hr/zestice/sir-edmond-giftbox/) 75,99 € |
 | Sixpence Pud Christmas Pudding Gin Liqueur 20% Vol. 0,5l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/sixpence-pud-christmas-pudding-gin-liqueur-20-vol-05l-u-poklon-kutiji) 35,70 € |
 | Snowglobe Orange &amp; Gingerbread Gin Liqueur Light-Up 20% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/snowglobe-orange-gingerbread-gin-liqueur-light-up-20-vol-07l-u-poklon-kutiji) 28,90 € |
@@ -2002,7 +1883,6 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | The Wave gin (0,70L) | [tipsy.hr](https://tipsy.hr/rasprodaja/the-wave-gin-07l/) 15,20 € · [Miva](https://www.miva.com.hr/asortiman/proizvod-1439-the-wave-gin) 19,31 € |
 | Thomas Dakin 0,70l | [tipsy.hr](https://tipsy.hr/zestice/gin-zestice/thomas-dakin/) 32,05 € |
 | Tokinoka Black 50% 0,5l | [tipsy.hr](https://tipsy.hr/zestice/gin-zestice/tokinoka-black-50-05l/) 55,25 € |
-| Vedrenne Liker Ginger 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/vedrenne-liker-ginger-070-l/) 16,80 € |
 | Vigor Original vodka0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/vigor-original-vodka) 9,15 € |
 | Vigor Original vodka1.0 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/vigor-original-vodka-1) 11,55 € |
 | Vislander 24 Carob Gold Gin 0,50l | [tipsy.hr](https://tipsy.hr/zestice/vislander-24-carob-gold-gin/) 15,99 € |
@@ -2011,13 +1891,21 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Đanić Natura Gin 0,70l | [tipsy.hr](https://tipsy.hr/zestice/gin-zestice/danic-natura-gin-070l/) 19,18 € |
 | Đanić Natura Gin Pink 0,7l | [tipsy.hr](https://tipsy.hr/zestice/gin-zestice/danic-natura-gin-pink-07l/) 19,18 € |
 
-### Tequila / mezcal (208)
+### Tequila / mezcal (205, od toga 10 novo od prošlog scana)
 
 | Boca | Trgovina · cijena |
 |---|---|
-| 1800 ANEJO | [ecuga.com](https://ecuga.com/proizvod/1800-anejo) 38,00 € |
+| 🆕 1800 CRISTALINO ANEJO | [ecuga.com](https://ecuga.com/proizvod/1800-cristalino-anejo) 59,00 € |
+| 🆕 818 ANEJO by KENDALL JENNER | [ecuga.com](https://ecuga.com/proizvod/818-anejo-by-kendall-jenner) 75,00 € |
+| 🆕 818 BLANCO by KENDALL JENNER | [ecuga.com](https://ecuga.com/proizvod/818-blanco-by-kendall-jenner) 50,00 € |
+| 🆕 818 REPOSADO by KENDALL JENNER | [ecuga.com](https://ecuga.com/proizvod/818-reposado-by-kendall-jenner) 64,00 € |
+| 🆕 CLASE AZUL GUERRERO | [ecuga.com](https://ecuga.com/proizvod/clase-azul-guerrero) 477,00 € |
+| 🆕 DEL MAGUEY MEZCAL VIDA | [ecuga.com](https://ecuga.com/proizvod/del-maguey-mezcal-vida) 49,00 € |
+| 🆕 DON JULIO 1942 ROSADO | [ecuga.com](https://ecuga.com/proizvod/don-julio-1942-rosado) 129,00 € |
+| 🆕 IGNITE ANEJO by DAN BILZERIAN | [ecuga.com](https://ecuga.com/proizvod/ignite-anejo-by-dan-bilzerian) 44,00 € |
+| 🆕 IGNITE REPOSADO by DAN BILZERIAN | [ecuga.com](https://ecuga.com/proizvod/ignite-reposado-by-dan-bilzerian) 36,00 € |
+| 🆕 ILEGAL MEZCAL ANEJO | [ecuga.com](https://ecuga.com/proizvod/ilegal-mezcal-anejo) 99,00 € |
 | 1800 BLANCO | [ecuga.com](https://ecuga.com/proizvod/1800-blanco) 30,00 € |
-| 1800 REPOSADO | [ecuga.com](https://ecuga.com/proizvod/1800-reposado) 35,00 € |
 | 818 Tequila Blanco 100% Agave Azul by Kendall Jenner 40% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/818-tequila-blanco-100-agave-azul-by-kendall-jenner-40-vol-075l) 64,80 € |
 | 818 Tequila Eight Reserve Añejo 100% Agave Azul by Kendall Jenner 40% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/818-tequila-eight-reserve-anejo-100-agave-azul-by-kendall-jenner-40-vol-07l) 319,90 € |
 | ADICCIŌN Mezcal Artesanal Joven 40% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/adiccion-mezcal-artesanal-joven-40-vol-07l-u-poklon-kutiji) 203,60 € |
@@ -2057,7 +1945,6 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Casa Noble Tequila AÑEJO 100% de Agave Azul 40% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/casa-noble-tequila-anejo-100-de-agave-azul-40-vol-07l-u-poklon-kutiji) 88,63 € |
 | Casa Noble Tequila CRYSTAL BLANCO 100% de Agave Azul 40% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/casa-noble-tequila-crystal-blanco-100-de-agave-azul-40-vol-07l-in-giftbox) 66,50 € |
 | Casa Noble Tequila REPOSADO 100% de Agave Azul 40% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/casa-noble-tequila-reposado-100-de-agave-azul-40-vol-07l-u-poklon-kutiji) 85,60 € |
-| CASAMIGOS BLANCO | [ecuga.com](https://ecuga.com/proizvod/casamigos-blanco) 59,00 € |
 | Casamigos Mezcal Joven 100% Agave Espadín 40% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/casamigos-mezcal-joven-100-agave-espadin-40-vol-07l) 90,65 € |
 | Casamigos Tequila Añejo 100% Agave Azul 40% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/casamigos-tequila-anejo-100-agave-azul-40-vol-1l) 92,65 € |
 | Casamigos Tequila Blanco 100% Agave Azul 40% Vol. 0,7 l | [allez.hr](https://allez.hr/shop/svi-proizvodi/casamigos-tequila-blanco-100-agave-azul-40-vol-07-l) 75,60 € |
@@ -2078,14 +1965,12 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Clase Azul Mezcal Guerrero (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-2536-clase-azul-mezcal-guerrero) 477,50 € |
 | Clase Azul Mezcal GUERRERO 42% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/clase-azul-mezcal-guerrero-42-vol-07l-u-poklon-kutiji) 699,00 € |
 | Clase Azul Mezcal SAN LUIS POTOSI 43% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/clase-azul-mezcal-san-luis-potosi-43-vol-07l-u-poklon-kutiji) 667,00 € |
-| Clase Azul Plata 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/clase-azul-plata-070-l/) 135,00 € |
 | Clase Azul Plata tequila0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/clase-azul-plata-tequila) 199,99 € |
 | Clase Azul Reposado tequila0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/clase-azul-reposado-tequila) 369,99 € |
 | Clase Azul Tequila Añejo (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-2532-clase-azul-tequila-aejo) 930,00 € |
 | Clase Azul Tequila AÑEJO 40% Vol. 0,7l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/clase-azul-tequila-anejo-40-vol-07l-u-poklon-kutiji) 65,00 € |
 | Clase Azul Tequila Blanco Ahumado (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-2595-clase-azul-tequila-blanco-ahumado) 318,80 € |
 | Clase Azul Tequila Gold (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-2531-clase-azul-tequila-gold) 467,50 € |
-| Clase Azul Tequila Plata  (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-2527-clase-azul-tequila-plata) 135,00 € |
 | Clase Azul Tequila PLATA 40%  0,7 l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/clase-azul-tequila-plata-40-07-l-u-poklon-kutiji) 192,50 € |
 | Clase Azul Tequila REPOSADO 40%  0,7 l u poklon kutiji | [allez.hr](https://allez.hr/shop/svi-proizvodi/clase-azul-tequila-reposado-40-07-l-u-poklon-kutiji) 312,00 € |
 | Clase Azul Tequila Ultra  (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-2533-clase-azul-tequila-ultra) 1,50 € |
@@ -2094,7 +1979,7 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Codigo 1530 Blanco tequila0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/codigo-1530-blanco-tequila) 71,99 € |
 | Codigo 1530 Reposado tequila0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/codigo-1530-reposado-tequila) 92,75 € |
 | Codigo 1530 Rosa tequila0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/codigo-1530-rosa-tequila) 81,69 € |
-| Coffee Liker Buen Amigo Tequila0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/coffee-liker-buen-amigo-tequila) 16,99 € |
+| Coffee Liker Buen Amigo Tequila0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/coffee-liker-buen-amigo-tequila) 13,08 € |
 | Corralejo Tequila 99,000 HORAS AÑEJO 100% de Agave 38% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/corralejo-tequila-99000-horas-anejo-100-de-agave-38-vol-07l) 72,70 € |
 | Corralejo Tequila REPOSADO 100% de Agave 38% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/corralejo-tequila-reposado-100-de-agave-38-vol-07l) 41,99 € |
 | Curado Tequila BLANCO Blue Agave 40% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/curado-tequila-blanco-blue-agave-40-vol-07l) 61,46 € |
@@ -2172,7 +2057,6 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Kah Tequila Blanco 40% 0,7 l | [allez.hr](https://allez.hr/shop/svi-proizvodi/kah-tequila-blanco-40-07-l) 49,99 € |
 | Kah Tequila Reposado 40% Vol. 0,7 l | [allez.hr](https://allez.hr/shop/svi-proizvodi/kah-tequila-reposado-40-vol-07-l) 54,99 € |
 | LA 7 VIDAS TEQUILA BLANCO | [ecuga.com](https://ecuga.com/proizvod/la-7-vidas-tequila-blanco) 79,00 € |
-| LA 7 VIDAS TEQUILA REPOSADO | [ecuga.com](https://ecuga.com/proizvod/la-7-vidas-tequila-reposado) 85,00 € |
 | La Cofradia ED. CATRINA Tequila Añejo 100% de Agave 38% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/la-cofradia-ed-catrina-tequila-anejo-100-de-agave-38-vol-07l) 82,76 € |
 | La Cofradia ED. CATRINA Tequila Blanco 100% de Agave 38% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/la-cofradia-ed-catrina-tequila-blanco-100-de-agave-38-vol-07l) 67,68 € |
 | La Cofradia ED. CATRINA Tequila Reposado 100% de Agave 38% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/la-cofradia-ed-catrina-tequila-reposado-100-de-agave-38-vol-07l) 73,20 € |
@@ -2193,13 +2077,8 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Marca Negra Mezcal Espadín 100% Agave 49,2% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/marca-negra-mezcal-espadin-100-agave-492-vol-07l) 57,73 € |
 | Marca Negra Mezcal SANMARTÍN 100% Agave 49,1% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/marca-negra-mezcal-sanmartin-100-agave-491-vol-07l) 107,77 € |
 | Mezcal Artesanal Local DOP 42% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/mezcal-artesanal-local-dop-42-vol-07l) 77,00 € |
-| Mezcal Don Ramon 100% Agave Espadin0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/mezcal-don-ramon-100-agave-espadin) 38,87 € |
 | Nocheluna Sotol 43% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/nocheluna-sotol-43-vol-07l) 84,00 € |
-| NUCANO MEZCAL ESPADIN JOVEN | [ecuga.com](https://ecuga.com/proizvod/nucano-mezcal-espadin-joven) 39,00 € |
-| PADRE AZUL ANEJO | [ecuga.com](https://ecuga.com/proizvod/padre-azul-anejo) 119,00 € |
-| PADRE AZUL BLANCO | [ecuga.com](https://ecuga.com/proizvod/padre-azul-blanco) 95,00 € |
 | Padre Azul PADRECITO Premium Organic Tequila Blanco 100% Agave 40% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/padre-azul-padrecito-premium-organic-tequila-blanco-100-agave-40-vol-07l) 61,50 € |
-| PADRE AZUL REPOSADO | [ecuga.com](https://ecuga.com/proizvod/padre-azul-reposado) 98,00 € |
 | Padre Azul Super Premium Tequila Añejo 100% Agave 40% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/padre-azul-super-premium-tequila-anejo-100-agave-40-vol-07l) 122,83 € |
 | Padre Azul Super Premium Tequila Blanco 100% Agave 40% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/padre-azul-super-premium-tequila-blanco-100-agave-40-vol-07l) 87,50 € |
 | Padre Azul Super Premium Tequila Reposado 100% Agave 40% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/padre-azul-super-premium-tequila-reposado-100-agave-40-vol-07l) 103,25 € |
@@ -2213,8 +2092,6 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | San Cosme Oaxaca Mexico Mezcal blanco 100% Agave 40% Vol. 0,7 l | [allez.hr](https://allez.hr/shop/svi-proizvodi/san-cosme-oaxaca-mexico-mezcal-blanco-100-agave-40-vol-07-l) 56,90 € |
 | San Jose Gold tequila0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/san-jose-gold-tequila) 15,25 € |
 | San Jose Silver tequila0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/san-jose-silver-tequila) 14,25 € |
-| SIERRA BLANCO | [ecuga.com](https://ecuga.com/proizvod/sierra-blanco) 21,00 € |
-| SIERRA REPOSADO | [ecuga.com](https://ecuga.com/proizvod/sierra-reposado) 21,00 € |
 | Sotol Hacienda de Chihuahua Anejo 38% Vol. 0,7 l | [allez.hr](https://allez.hr/shop/svi-proizvodi/sotol-hacienda-de-chihuahua-anejo-38-vol-07-l) 39,82 € |
 | Sotol Hacienda de Chihuahua Reposado 38% Vol. 0,7 l | [allez.hr](https://allez.hr/shop/svi-proizvodi/sotol-hacienda-de-chihuahua-reposado-38-vol-07-l) 41,48 € |
 | Volcan De Mi Tierra Tequila AÑEJO CRISTALINO 40% Vol. 0,7l | [allez.hr](https://allez.hr/shop/svi-proizvodi/volcan-de-mi-tierra-tequila-anejo-cristalino-40-vol-07l) 87,13 € |
@@ -2224,10 +2101,11 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Volcan X.A & Riedel tequila set  (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-2760-volcan-xa--riedel-tequila-set) 275,20 € |
 | Xiaman Artesanal 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/xiaman-artesanal-070-l/) 157,00 € |
 
-### Digestivi (9)
+### Digestivi (10, od toga 1 novo od prošlog scana)
 
 | Boca | Trgovina · cijena |
 |---|---|
+| 🆕 Rossi Amaro Istriano liker0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/rossi-amaro-istriano-liker) 17,99 € |
 | Amaro 18 liker1.0 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/amaro-18-liker) 15,49 € |
 | Amaro Montenegro Italiano 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/amaro-montenegro-italiano-07-l/) 18,50 € |
 | Amaro Montenegro liker0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/amaro-montenegro-liker) 17,55 € |
@@ -2238,17 +2116,29 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Rossi Amaro Istriano  (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-2283-rossi-amaro-istriano) 19,59 € · [tipsy.hr](https://tipsy.hr/zestice/likeri/rossi-amaro-istriano-07l/) 19,89 € |
 | Vecchio Amaro Del Capo 0,7l | [tipsy.hr](https://tipsy.hr/zestice/vecchio-amaro-del-capo/) 20,99 € |
 
-### Likeri (215)
+### Likeri (202, od toga 13 novo od prošlog scana)
 
 | Boca | Trgovina · cijena |
 |---|---|
+| 🆕 Liker Madre Badessa Maraska Inamorana Amarena0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/liker-madre-badessa-maraska-inamorana-amarena) 23,05 € |
+| 🆕 Liker Madre Badessa Maraska Manna Orahovac0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/liker-madre-badessa-maraska-mania-orahovac) 23,05 € |
+| 🆕 Liker Madre Badessa Maraska Padre  Pelinkovac0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/liker-madre-badessa-maraska-padre-pelinkovac) 22,99 € |
+| 🆕 Liker Madre Badessa Maraska Teta Mare Borovnica0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/liker-madre-badessa-maraska-teta-mare-borovnica) 23,05 € |
+| 🆕 Liker Pelinkovac Antique vap + Praline i čaša0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/liker-pelinkovac-antique-vap-praline-i-casa) 26,05 € |
+| 🆕 Liker Pelinkovac Zeleni Maraska1 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/liker-pelinkovac-zeleni-maraska) 15,69 € |
+| 🆕 Liker Teranino Rossi u poklon kutiji0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/liker-teranino-rossi-u-poklon-kutiji) 17,99 € |
+| 🆕 Liker Zelena Jabuka Šoškić Selection0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/liker-zelena-jabuka-soskic-selection) 17,99 € |
+| 🆕 Mozart Chocolate Pure Black liker0.5 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/mozart-chocolate-pure-black-liker) 16,39 € |
+| 🆕 Mozart Gold Chocolate Cream liker0.5 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/mozart-gold-chocolate-cream-liker) 16,39 € |
+| 🆕 Mozart Strawberry Chocolate Cream liker0.5 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/mozart-strawberry-chocolate-cream-liker) 16,39 € |
+| 🆕 Mozart White Chocolate Vanilla Cream liker0.5 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/mozart-white-chocolate-vanilla-cream-liker) 16,39 € |
+| 🆕 Rossi Teranino liker0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/rossi-teranino-liker) 17,99 € |
 | Amaretto Disaronno 0,70l | [tipsy.hr](https://tipsy.hr/zestice/likeri/amaretto-disaronno/) 24,99 € |
 | Angostura Aromatic Bitter 0.2l | [tipsy.hr](https://tipsy.hr/zestice/likeri/angostura-aromatic/) 21,99 € |
 | Angostura Cocoa Bitter 0.1l | [tipsy.hr](https://tipsy.hr/zestice/likeri/angostura-cocoa/) 16,29 € |
 | Aperol liker0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/aperol-liker) 19,19 € |
 | Aperol liker1.0 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/aperol-liker-2) 16,99 € |
 | Aperol Spritz 1,0l | [tipsy.hr](https://tipsy.hr/zestice/aperol-spritz/) 19,49 € |
-| Apuška Rakija Jabuka 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/apuska-rakija-jabuka-070-l/) 34,50 € |
 | Aura Grapa Moscato 0,7l | [tipsy.hr](https://tipsy.hr/zestice/likeri/aura-grapa-moscato-07l/) 15,55 € |
 | Aura Kadulja liker0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/aura-kadulja-liker) 26,05 € |
 | Aura Limoncello & Orancello liker, drvena poklon kutija2x0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/aura-limoncello-orancello-liker-drvena-poklon-kutija) 62,55 € |
@@ -2266,7 +2156,7 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Badel Borovnica liker1.0 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/badel-borovnica-liker) 12,25 € |
 | Badel Coffee 0,7l | [tipsy.hr](https://tipsy.hr/zestice/likeri/badel-coffee-07l/) 21,50 € |
 | Badel Lavov liker1.0 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/badel-lavov-liker) 13,55 € |
-| Badel Medica liker1.0 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/badel-medica-liker) 14,55 € |
+| Badel Medica liker1.0 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/badel-medica-liker) 12,99 € |
 | Badel Mentol liker1.0 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/badel-mentol-liker) 11,35 € |
 | Badel Orahovac liker1.0 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/badel-orahovac-liker) 15,25 € |
 | Badel Pelinkovac 0,7l | [tipsy.hr](https://tipsy.hr/zestice/pelinkovac-07/) 11,99 € · [tipsy.hr](https://tipsy.hr/zestice/pelinkovac/) 15,29 € |
@@ -2337,13 +2227,7 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Giffard Zelena Dinja liker za koktele0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/giffard-zelena-dinja-liker-za-koktele) 17,55 € |
 | Gift box Liker Pelinkovac Epulon0.5 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/gift-box-liker-pelinkovac-epulon) 23,55 € |
 | Gift box Liker Teranino Rossi0.5 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/gift-box-liker-teranino-rossi) 23,55 € |
-| Grand Marnier liker0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/grand-marnier-liker) 46,49 € |
 | Heering Cherry 0,7l | [tipsy.hr](https://tipsy.hr/zestice/heering-cherry/) 25,99 € |
-| Holer Sambo Roner liker0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/holer-sambo-roner-liker) 18,65 € |
-| Incanto 69 trava liker1.0 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/incanto-69-trava-liker) 17,65 € |
-| Incanto borovnica liker1.0 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/incanto-borovnica-liker) 17,05 € |
-| Incanto jabuka i cimet liker1 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/incanto-jabuka-i-cimet-liker) 17,05 € |
-| Incanto kupina liker1.0 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/incanto-kupina-liker) 17,65 € |
 | INCANTO LIKER 69 TRAVA - BILJNI 1,00 L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/incanto-liker-69-trava-biljni-100-l/) 25,50 € |
 | INCANTO LIKER BOROVNICA 1,00 L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/incanto-liker-borovnica-100-l/) 25,50 € |
 | INCANTO LIKER JABUKA & CIMET 1,00 L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/incanto-liker-jabuka-cimet-100-l/) 25,50 € |
@@ -2351,9 +2235,6 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | INCANTO LIKER MED 1,00 L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/incanto-liker-med-100-l/) 25,50 € |
 | INCANTO LIKER OD ORAHA 1,00 L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/incanto-liker-od-oraha-100-l/) 25,50 € |
 | INCANTO LIKER VIŠNJA 1,00 L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/incanto-liker-visnja-100-l/) 25,50 € |
-| Incanto medica liker1.0 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/incanto-medica-liker) 18,35 € |
-| Incanto suha smokva liker1.0 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/incanto-suha-smokva-liker) 17,05 € |
-| Incanto teranino liker1.0 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/incanto-teranino-liker) 18,45 € |
 | Jagermeister 0,70l | [tipsy.hr](https://tipsy.hr/zestice/likeri/jagermeister/) 14,59 € · [tipsy.hr](https://tipsy.hr/zestice/likeri/jagermeister-1l/) 19,99 € |
 | KAHLUA COFFEE LIQUEUR 1,00 L | [cugaklik.hr](https://www.cugaklik.hr/proizvod/kahlua-100-l/) 29,50 € |
 | Kahlua Liker 1l | [tipsy.hr](https://tipsy.hr/zestice/likeri/kahlua-liker-1l/) 25,00 € |
@@ -2361,13 +2242,12 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Korlat Aronija Med liker0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/korlat-aronija-med-liker-1) 24,05 € |
 | Korlat Biska 0,7l | [tipsy.hr](https://tipsy.hr/zestice/likeri/korlat-biska-07l/) 24,99 € |
 | Korlat Biska liker0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/korlat-biska-liker) 24,05 € |
-| Korlat Medica bez propolisa liker0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/korlat-medica-bez-propolisa-liker) 20,59 € |
 | Korlat Orahovac liker0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/korlat-orahovac-liker) 24,05 € |
 | Korlat Smokva Rogač liker0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/korlat-smokva-rogac-liker) 24,05 € |
 | Korlat Teranino 0,7l | [tipsy.hr](https://tipsy.hr/zestice/korlat-teranino/) 23,99 € |
 | Korlat Teranino Liker + 2 čaše0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/korlat-teranino-liker-2-case) 26,99 € |
-| Korlat Teranino Liker0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/korlat-teranino-liker-2) 20,29 € |
-| Korlat Višnja Liker0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/korlat-visnja-liker) 20,59 € |
+| Korlat Teranino Liker0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/korlat-teranino-liker-2) 24,05 € |
+| Korlat Višnja Liker0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/korlat-visnja-liker) 24,05 € |
 | Korlat Šipak i Divlja ruža liker0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/korlat-sipak-i-divlja-ruza-liker) 24,05 € |
 | Kwai Feh Lychee Liqueur 0,7l | [tipsy.hr](https://tipsy.hr/zestice/kwai-feh-lychee-liqueur-070l/) 19,99 € |
 | Liker Bajadera vap s Bajadera Pralinom0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/liker-bajadera-vap-s-bajadera-pralinom) 25,05 € |
@@ -2375,7 +2255,7 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Liker Coffee Cream Badel0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/liker-coffee-cream-badel) 19,99 € |
 | Liker Limoncello Pallini0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/liker-limoncello-pallini) 17,99 € |
 | Liker Pelinkovac Summer Badel0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/liker-pelinkovac-summer-badel) 13,69 € |
-| Liker Teranino Badel0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/liker-teranino-badel) 14,49 € |
+| Liker Teranino Badel0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/liker-teranino-badel) 12,99 € |
 | Lillet Rouge 0,75l | [tipsy.hr](https://tipsy.hr/zestice/likeri/lillet-rouge-075l/) 14,88 € |
 | Luxardo Maraschino 0,7l | [tipsy.hr](https://tipsy.hr/zestice/likeri/luxardo-maraschino-07l/) 13,75 € |
 | Madre Badessa Manna Orahovac 0,7l | [tipsy.hr](https://tipsy.hr/zestice/likeri/madre-badessa-manna-orahovac/) 22,99 € |
@@ -2407,7 +2287,6 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Pelinova Pelinkovac 0,7l | [tipsy.hr](https://tipsy.hr/zestice/likeri/pelinova-pelinkovac-07l/) 14,99 € |
 | Ramazzotti Limoncello 0,7l | [tipsy.hr](https://tipsy.hr/zestice/likeri/ramazzotti-limoncello-07l/) 11,80 € |
 | Ramazzotti Sambuca 0,7l | [tipsy.hr](https://tipsy.hr/zestice/likeri/ramazzotti-sambuca-07l/) 15,45 € |
-| Rossi Medenica liker0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/rossi-medenica-liker) 19,99 € |
 | Rossi Pelinkovac Epulon 0,7l | [tipsy.hr](https://tipsy.hr/zestice/likeri/rossi-pelinkovac-epulon-07l/) 19,49 € |
 | Rossi Teranino 0,7l | [tipsy.hr](https://tipsy.hr/zestice/likeri/rossi-teranino-07l/) 19,49 € |
 | San Montano Biska 0,7l | [tipsy.hr](https://tipsy.hr/zestice/rakije/san-montano-biska-07l/) 15,31 € |
@@ -2424,21 +2303,7 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Tren liker od aronije 0,5l | [tipsy.hr](https://tipsy.hr/zestice/likeri/tren-liker-od-aronije-05l/) 18,06 € |
 | Underberg liker 3/13x0.02 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/underberg-liker-3-1) 4,69 € |
 | Vedrenne Brown Cocoa 0,7l | [tipsy.hr](https://tipsy.hr/zestice/likeri/vedrenne-brown-cocoa-07l/) 10,04 € |
-| Vedrenne Liker Elderflower 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/vedrenne-liker-elderflower-070-l/) 16,80 € |
-| Vedrenne Liker Lychee 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/vedrenne-liker-lychee-070-l/) 16,80 € |
-| Vedrenne Liker Maraschino 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/vedrenne-liker-maraschino-070-l/) 16,80 € |
-| Vedrenne Liker Peach 0,70 L | [humidor.hr](https://humidor.hr/hr/proizvod/vedrenne-liker-peach-070-l/) 16,80 € |
 | Vedrenne Liker Supercassis 1l | [tipsy.hr](https://tipsy.hr/zestice/likeri/vedrenne-liker-supercassis-1l/) 15,09 € |
-| Vedrenne Syrup Almond 1,00 L | [humidor.hr](https://humidor.hr/hr/proizvod/vedrenne-syrup-almond-100-l/) 14,90 € |
-| Vedrenne Syrup Blackberry 1,00 L | [humidor.hr](https://humidor.hr/hr/proizvod/vedrenne-syrup-blackberry-100-l/) 14,90 € |
-| Vedrenne Syrup Cherry 1,00 L | [humidor.hr](https://humidor.hr/hr/proizvod/vedrenne-syrup-cherry-100-l/) 14,90 € |
-| Vedrenne Syrup Chocolate 1,00 L | [humidor.hr](https://humidor.hr/hr/proizvod/vedrenne-syrup-chocolate-100-l/) 14,90 € |
-| Vedrenne Syrup Coconut 1,00 L | [humidor.hr](https://humidor.hr/hr/proizvod/vedrenne-syrup-coconut-100-l/) 14,90 € |
-| Vedrenne Syrup Cucumber 1,00 L | [humidor.hr](https://humidor.hr/hr/proizvod/vedrenne-syrup-cucumber-100-l/) 14,90 € |
-| Vedrenne Syrup Elderflower 1,00 L | [humidor.hr](https://humidor.hr/hr/proizvod/vedrenne-syrup-elderflower-100-l/) 14,90 € |
-| Vedrenne Syrup Hazelnut 1,00 L | [humidor.hr](https://humidor.hr/hr/proizvod/vedrenne-syrup-hazelnut-100-l/) 14,90 € |
-| Vedrenne Syrup Lavender 1,00 L | [humidor.hr](https://humidor.hr/hr/proizvod/vedrenne-syrup-lavender-100-l/) 14,90 € |
-| Vedrenne Syrup Salted Caramel 1,00 L | [humidor.hr](https://humidor.hr/hr/proizvod/vedrenne-syrup-salted-caramel-100-l/) 14,90 € |
 | Višnjak Omiški 0,75l | [tipsy.hr](https://tipsy.hr/zestice/visnjak-omiski/) 16,99 € |
 | Đanić Bazga 1,0l | [tipsy.hr](https://tipsy.hr/zestice/likeri/danic-bazga/) 17,99 € |
 | Đanić Jabukovača 1l | [tipsy.hr](https://tipsy.hr/zestice/rakije/danic-jabukovaca-1l/) 13,70 € |
@@ -2477,10 +2342,35 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Šampanjac Ruinart Brut 0,75 L | [humidor.hr](https://humidor.hr/hr/proizvod/sampanjac-ruinart-brut-075-l/) 75,00 € |
 | Šampanjac Ruinart Rose 0,75 L | [humidor.hr](https://humidor.hr/hr/proizvod/sampanjac-ruinart-rose-075-l/) 103,50 € |
 
-### Nerazvrstano (267)
+### Nerazvrstano (269, od toga 25 novo od prošlog scana)
 
 | Boca | Trgovina · cijena |
 |---|---|
+| 🆕 Borovnichka Maraska1.0 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/borovnichka-maraska) 10,99 € |
+| 🆕 Cosmo Skinny RTD Maraska0.25 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/cosmo-skinny-rtd-maraska) 2,19 € |
+| 🆕 Cosmopolitan vodka0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/cosmopolitan-vodka) 8,99 € |
+| 🆕 Cosmopolitan vodka1.0 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/cosmopolitan-vodka-1) 9,69 € |
+| 🆕 De Kuyper Grenadine sirup za koktele0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/de-kuyper-grenadine-sirup-za-koktele) 12,05 € |
+| 🆕 Kruškovac Maraska1.0 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/kruskovac-maraska) 9,65 € |
+| 🆕 Maraschino Maraska1.0 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/maraschino-maraska) 16,45 € |
+| 🆕 Maraska Heritage Pelinkovac0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/maraska-heritage-pelinkovac) 16,99 € |
+| 🆕 Medica Maraska1.0 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/medica-maraska) 12,89 € |
+| 🆕 Orahovac Maraska1.0 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/orahovac-maraska) 12,19 € |
+| 🆕 Pelin & Tonik Sleek Maraska0.33 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/pelin-tonik-sleek-maraska) 2,05 € |
+| 🆕 Pelinkovac Maraska1.0 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/pelinkovac-maraska) 14,05 € |
+| 🆕 Rakija Madre Badessa Maraska Triska Viljamovka0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/rakija-madre-badessa-maraska-triska-viljamovka) 26,49 € |
+| 🆕 Rakija Madre Badessa Maraska Šizika Šljivovica0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/rakija-madre-badessa-maraska-sizika-sljivovica) 26,05 € |
+| 🆕 Rakija Viljamovka Maraska1 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/rakija-viljamovka-maraska) 15,49 € |
+| 🆕 Room Domaći Maraska1.0 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/room-domaci-maraska) 10,49 € |
+| 🆕 Svarog vodka0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/svarog-vodka) 21,35 € |
+| 🆕 Three Sixty Black vodka1.0 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/three-sixty-black-vodka-1) 17,37 € |
+| 🆕 Travarica Maraska1.0 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/travarica-maraska) 10,65 € |
+| 🆕 Višnjevača Maraska1.0 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/visnjevaca-maraska) 11,85 € |
+| 🆕 Vodka Belvedere Organic0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/vodka-belvedere-organic) 44,99 € |
+| 🆕 Vodka Neft0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/vodka-neft) 49,99 € |
+| 🆕 Šljivovica Šimić rakija0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/sljivovica-simic) 19,99 € |
+| 🆕 Šoškić Franz Pelinkovac0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/soskic-franz-pelinkovac) 13,99 € |
+| 🆕 Šoškić Rakija Marelica0.75 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/soskic-rakija-marelica) 24,99 € |
 | 3 Kilos Ultra Premium Gold vodka1 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/3-kilos-ultra-premium-gold-vodka) 60,05 € |
 | A. Le Coq Blue Lagoon koktel0.33 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/a-le-coq-blue-lagoon-koktel) 1,59 € |
 | A. Le Coq Cosmopolitan koktel0.33 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/a-le-coq-cosmopolitan-koktel) 1,59 € |
@@ -2493,9 +2383,7 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Absolut Blue vodka0.05 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/absolut-blue-vodka-3) 1,95 € |
 | Absolut Blue vodka0.5 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/absolut-blue-vodka) 13,25 € |
 | Absolut Blue vodka0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/absolut-blue-vodka-1) 15,75 € |
-| Absolut Blue vodka1.0 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/absolut-blue-vodka-2) 22,39 € |
 | Absolut Blue vodka1.75 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/absolut-blue-vodka-4) 40,05 € |
-| Absolut Blue vodka4.5 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/absolut-blue-vodka-5) 108,09 € |
 | Absolut Elyx vodka0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/absolut-elyx-vodka-1) 54,19 € |
 | Absolut Elyx vodka4.5 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/absolut-elyx-vodka) 299,99 € |
 | Amundsen Expedition vodka0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/amundsen-expedition-vodka) 12,59 € |
@@ -2505,11 +2393,9 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Aperol Spritz & Astoria paket1.0l+2x0.75 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/aperol-spritz-astoria-paket) 27,28 € |
 | Ardbeg 10 YO + 2 čaše (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-2594-ardbeg-10-yo--2-case) 61,50 € |
 | Ardbeg 10YO + 2 čaše0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/ardbeg-10yo-2-case) 75,99 € |
-| Ardbeg An Oa (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-828-ardbeg-an-oa) 62,00 € |
 | Ardbeg Dolce  (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-2731-ardbeg-dolce) 102,80 € |
 | Ardbeg Flask Set | [Miva](https://www.miva.com.hr/asortiman/proizvod-2840-ardbeg-flask-set) 106,30 € |
 | Ardbeg Flask Set Vol.2 | [Miva](https://www.miva.com.hr/asortiman/proizvod-2841-ardbeg-flask-set-vol2) 187,00 € |
-| Ardbeg Spectacular Limited Edition (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-2329-ardbeg-spectacular-limited-edition) 125,20 € |
 | Ardbeg Wee Beastie (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-1539-ardbeg-wee-beastie) 49,50 € |
 | Au Vodka Bubblegum0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/au-vodka-bubblegum) 44,99 € |
 | Au Vodka Green Watermelon0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/au-vodka-green-watermelon) 44,99 € |
@@ -2532,7 +2418,7 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Badel Antique Pelinkovac0.05 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/badel-antique-pelinkovac) 1,69 € |
 | Badel Antique Pelinkovac0.1 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/badel-antique-pelinkovac-2) 2,79 € |
 | Badel Antique Pelinkovac0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/badel-antique-pelinkovac-1) 16,55 € |
-| Badel Antique Pelinkovac1.0 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/badel-antique-pelinkovac-4) 19,99 € |
+| Badel Antique Pelinkovac1.0 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/badel-antique-pelinkovac-4) 22,55 € |
 | Badel Pelin Spritz Lemon RTD0.25 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/badel-pelin-spritz-lemon-rtd) 2,05 € |
 | Badel Pelin Spritz Orange RTD0.25 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/badel-pelin-spritz-orange-rtd) 2,05 € |
 | Badel Pelinkovac Antique  (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-1311-badel-pelinkovac-antique) 18,82 € |
@@ -2621,21 +2507,16 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Dalmatino Limun vodka0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/dalmatino-limun-vodka) 7,75 € |
 | Dartigalongue Heritage (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-2659-dartigalongue-heritage) 104,00 € |
 | Dartigalongue Prestige (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-2660-dartigalongue-prestige) 140,20 € |
-| Dartigalongue Reserve (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-2658-dartigalongue-reserve) 52,00 € |
-| Dartigalongue XO Signature  (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-2656-dartigalongue-xo-signature) 75,20 € |
 | Dartigalongue XO Signature Yogi (0,50L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-2657-dartigalongue-xo-signature-yogi) 91,50 € |
 | De Kuyper Elderflower sirup za koktele0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/de-kuyper-elderflower-sirup-za-koktele) 15,05 € |
-| Degenija Travarica Velebit rakija0.5 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/degenija-travarica-velebit-rakija) 9,69 € |
 | Degenija Travarica Velebit rakija1.0 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/degenija-travarica-velebit-rakija-1) 10,85 € |
 | Del Professore Bitter  (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-1457-del-professore-bitter) 25,81 € |
-| Dictador 10 Years Old (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-2537-dictador-10-years-old) 32,80 € |
 | Dictador 20 YO poklon set s čašama (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-1809-dictador-20-yo-poklon-set-s-casama) 81,50 € |
 | Dictador Platinum (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-1632-dictador-platinum) 104,00 € |
 | Domaći B Zvečevo0.10 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/domaci-b-zvecevo-1) 0,99 € |
 | Domaći B Zvečevo1.0 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/domaci-b-zvecevo) 11,05 € |
 | Domaći Badel1.0 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/domaci-badel-2) 12,05 € |
 | Dunja Šimić rakija0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/dunja-simic-rakija) 22,99 € |
-| Eminente Ámbar Claro 3 Y.O. (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-2412-eminente-mbar-claro-3-yo) 34,50 € |
 | Enjingi rakija komovica  (0,375L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-1137-enjingi-rakija-komovica) 32,60 € |
 | Epulon pelinkovac u poklon kutiji0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/epulon-pelinkovac-u-poklon-kutiji) 20,05 € |
 | Filipec Bermet (0,75L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-278-filipec-bermet) 27,23 € |
@@ -2661,29 +2542,19 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Gift pack: Jack Daniel's + čaša0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/gift-pack-jack-daniel-s-casa) 27,49 € |
 | Glenmorangie 18 Years Old (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-704-glenmorangie-18-years-old) 131,50 € |
 | Glenmorangie 25 Years Old The Altus (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-2681-glenmorangie-25-years-old-the-altus) 625,20 € |
-| Glenmorangie A Tale Of Spices (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-2680-glenmorangie-a-tale-of-spices) 87,80 € |
 | Glenmorangie A Tale of the Forest (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-2017-glenmorangie-a-tale-of-the-forest) 100,80 € |
-| Glenmorangie Harrison Ford Limited Edition (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-2735-glenmorangie-harrison-ford-limited-edition) 87,80 € |
 | Glenmorangie Signet Single Malt (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-701-glenmorangie-signet-single-malt) 248,80 € |
 | Glenmorangie Taster Set | [Miva](https://www.miva.com.hr/asortiman/proizvod-2593-glenmorangie-taster-set) 25,80 € |
 | Glenmorangie The Lasanta (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-526-glenmorangie-the-lasanta) 55,20 € |
-| Glenmorangie The Nectar D'Or (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-528-glenmorangie-the-nectar-d039or) 80,20 € |
 | Glenmorangie The Quinta Ruban (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-527-glenmorangie-the-quinta-ruban) 52,20 € |
 | Gorbatschow vodka1.0 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/gorbatschow-vodka) 15,35 € |
-| Gordons Sicilian Lemon0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/gordons-sicilian-lemon) 22,49 € |
-| Grey Goose vodka0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/grey-goose-vodka) 48,05 € |
-| Grey Goose vodka3 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/grey-goose-vodka-3) 320,05 € |
-| Grey Goose vodka4.5 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/grey-goose-vodka-2) 500,00 € |
 | Gustinčić rakija Petra barrique  (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-2273-gustincic-rakija-petra-barrique) 59,80 € |
-| Havana Club Maximo Extra Anejo0.5 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/havana-club-maximo-extra-anejo) 9,99 € |
 | Hennessy Paradis (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-518-hennessy-paradis) 1,50 € |
 | Hennessy Richard (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-519-hennessy-richard) 7,80 € |
 | Hennessy Very Special + 2 čaše Gift Box (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-2682-hennessy-very-special--2-case-gift-box) 39,50 € |
 | Hennessy Vsop NBA0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/hennessy-vsop-nba) 94,99 € |
 | Hennessy X.O Ice Gift Box (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-1180-hennessy-xo-ice-gift-box) 200,10 € |
 | Hennessy X.O on the Rocks Set (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-2141-hennessy-xo-on-the-rocks-set) 225,20 € |
-| Incanto dunja rakija1.0 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/incanto-dunja-rakija) 26,35 € |
-| Incanto šljivovica rakija1.0 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/incanto-sljivovica-rakija) 23,65 € |
 | Jedna Jedina Cabernino  (0,50L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-1305-jedna-jedina-cabernino) 26,00 € |
 | Jedna Jedina Dunja  (0,50L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-1304-jedna-jedina-dunja) 31,00 € |
 | Jedna Jedina Jabuka Barrique (0,50L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-1298-jedna-jedina-jabuka-barrique) 26,00 € |
@@ -2692,13 +2563,13 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Jedna Jedina Viljamovka  (0,50L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-1301-jedna-jedina-viljamovka) 26,00 € |
 | Jedna Jedina Višnja (0,50L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-1303-jedna-jedina-visnja) 26,00 € |
 | Jedna Jedina Šljiva Barrique  (0,50L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-1299-jedna-jedina-sljiva-barrique) 26,00 € |
-| Komovica Badel1.0 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/komovica-badel) 14,55 € |
+| Komovica Badel1.0 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/komovica-badel) 12,99 € |
 | Konjak Remy Martin VSOP0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/konjak-remy-martin-vsop) 58,85 € |
 | Korlat Dunja Barrique rakija0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/korlat-dunja-barrique-rakija) 24,05 € |
 | Korlat Loza Barrique rakija0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/korlat-loza-barrique-rakija-1) 24,05 € |
 | Korlat Marelica rakija0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/korlat-marelica-rakija) 24,05 € |
 | Korlat Travarica Barrique Smilje rakija0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/korlat-travarica-barrique-smilje-rakija-1) 24,05 € |
-| Korlat Viljamovka rakija0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/korlat-viljamovka-rakija) 20,29 € |
+| Korlat Viljamovka rakija0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/korlat-viljamovka-rakija) 24,05 € |
 | Korlat Šljivovica Barrique rakija0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/korlat-sljivovica-barrique-rakija) 24,05 € |
 | Kozlović Lacrime (0,50L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-513-kozlovic-lacrime) 23,20 € |
 | Kruškovac Badel1.0 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/kruskovac-badel) 10,35 € |
@@ -2722,13 +2593,10 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Rossi Epulon (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-2285-rossi-epulon) 19,59 € |
 | Rossi Teranino  (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-2286-rossi-teranino) 20,73 € |
 | Rossi Travarica  (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-2287-rossi-travarica) 21,49 € |
-| Rossi Travarica rakija0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/rossi-travarica-rakija) 19,99 € |
 | Scapegrace & Fever-Tree paket (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-1367-scapegrace--fever-tree-paket) 38,36 € |
 | Stara Šljivovica Premium Selection Badel0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/stara-sljivovica-premium-selection-badel) 21,85 € |
 | Svarog vodka1.0 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/svarog-vodka-1) 26,75 € |
-| Three Sixty Black vodka0.7 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/three-sixty-black-vodka) 14,21 € |
-| Three Sixty Limun vodka RTD0.33 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/three-sixty-limun-vodka-rtd) 2,23 € |
-| Travarica Badel1.0 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/travarica-badel) 11,55 € |
+| Travarica Badel1.0 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/travarica-badel) 12,49 € |
 | Trojka vodka1.0 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/trojka-vodka) 10,05 € |
 | Vaccari Sambuca (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-1702-vaccari-sambuca) 17,98 € |
 | Vaccari Sambuca Nero (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-1703-vaccari-sambuca-nero) 17,98 € |
@@ -2737,9 +2605,8 @@ Scan: `2026-10-05T11:52:16Z` · trgovine: `allez`, `ecuga`, `tipsy`, `cugaklik`,
 | Vislander Kruškovača (0,50L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-1600-vislander-kruskovaca) 10,85 € |
 | Vislander Loza barrique  (0,50L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-1599-vislander-loza-barrique) 14,13 € |
 | Vislander Travarica  (0,50L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-1598-vislander-travarica) 10,19 € |
-| Višnjevac Badel1.0 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/visnjevac-badel-1) 14,35 € |
+| Višnjevac Badel1.0 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/visnjevac-badel-1) 12,49 € |
 | Vodka Svarog3.0 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/vodka-svarog) 84,35 € |
-| Volcan De Mi Tierra Blanco (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-1651-volcan-de-mi-tierra-blanco) 45,80 € |
 | Volcan De Mi Tierra Cristalino  (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-1736-volcan-de-mi-tierra-cristalino) 69,80 € |
 | Volcan Tahona Blanco  (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-2325-volcan-tahona-blanco) 175,20 € |
 | Volcan X.A (0,70L) | [Miva](https://www.miva.com.hr/asortiman/proizvod-2058-volcan-xa) 275,20 € |
@@ -2755,14 +2622,28 @@ Odgovor ide u `catalog_ask_queue.json` (ista boca → tier A/B; nova → ingest)
 
 | Boca u trgovini | Najbliže u katalogu | Skor | Trgovina · cijena |
 |---|---|---|---|
+| Dictador 16 YO EPISODIO SHERRY CASK Rum 2005 44% Vol. 0,7l u poklon kutiji | EPISODIO I 16 Years Old SHERRY CASK 2005 Dictador | 0.857 | [allez.hr](https://allez.hr/shop/svi-proizvodi/dictador-episodio-i-16-yo-sherry-cask-rum-2005-44-vol-07l-u-poklon-kutiji) 126,00 € |
+| Dictador 24 YO PÁRRAFO PARDO Vintage 1998 43% Vol. 0,7l u poklon kutiji | PARRAFO I 24 Years Old PARDO Vintage 1998 Dictador | 0.857 | [allez.hr](https://allez.hr/shop/svi-proizvodi/dictador-parrafo-i-24-yo-pardo-vintage-1998-43-vol-07l-u-poklon-kutiji) 157,80 € |
+| Arran Malt 14 YO 46% Vol. 0,7 l u poklon kutiji | Arran Single Malt 14y | 0.667 | [allez.hr](https://allez.hr/shop/svi-proizvodi/arran-malt-14-yo-46-vol-07-l-u-poklon-kutiji) 53,92 € |
+| Arran Malt 18 YO Single Malt Scotch Whisky 46% Vol. 0,7l u poklon kutiji | Arran Single Malt 18Y | 0.667 | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-arran-malt-18-yo-single-malt-scotch-whisky-46-vol-07l-u-poklon-kutiji) 116,07 € |
+| Benriach 10 YO Triple Distilled Double Cask Matured 43% Vol. 0,7l u poklon kutiji | BenRiach 10Y Triple Distilled Double Matured | 0.857 | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-benriach-10-yo-curiositas-peated-malt-46-vol-07l-u-poklon-kutiji) 52,15 € |
+| Bushmills 10 YO SHERRY CASK Finish Single Malt Irish Whiskey 46% Vol. 1l u poklon kutiji | Bushmills Single Malt Irish Whiskey 10y | 0.75 | [allez.hr](https://allez.hr/shop/svi-proizvodi/bushmills-10-years-old-sherry-cask-finish-single-malt-irish-whiskey) 50,90 € |
+| Bushmills 10 YO Single Malt Irish Whiskey 40% Vol. 0,7l u poklon kutiji | Bushmills Single Malt Irish Whiskey 10y | 0.75 | [allez.hr](https://allez.hr/shop/svi-proizvodi/bushmills-10-years-old-single-malt-irish-whiskey) 41,90 € |
+| Glenmorangie Original 0,7l | Glenmorangie X Single Malt | 0.5 | [tipsy.hr](https://tipsy.hr/zestice/glenmorangie-original/) 38,99 € |
+| GLENMORANGIE The Original 0,70 L | Glenmorangie X Single Malt | 0.5 | [cugaklik.hr](https://www.cugaklik.hr/proizvod/glenmorangie-the-original-070-l/) 44,50 € |
+| Laphroaig 10 YO Original Cask Strength Batch 15 56,5% Vol. 0,7l u poklon kutiji | LAPHROAIG 10 Original Cask Strength Batch 13 | 0.833 | [allez.hr](https://allez.hr/shop/svi-proizvodi/laphroaig-10-yo-original-cask-strength1) 127,48 € |
+| Redbreast 12 YO BIRD FEEDER Limited WHITE Edition 40% Vol. 0,7l | Redbreast 12y Limited White Edition Bird Feeder 2022 | 0.833 | [allez.hr](https://allez.hr/shop/svi-proizvodi/redbreast-12-yo-bird-feeder-limited-white-edition-40-vol-07l) 89,00 € |
 | The Balvenie 14 YO Caribbean Cask 43% Vol. 0,7l u poklon kutiji | Balvenie 14 Y Caribbean Cask | 0.8 | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-balvenie-14-yo-caribbean-cask-43-vol-07l-u-poklon-kutiji) 117,60 € |
+| The GlenAllachie 15 YO Speyside Single Malt Scotch Whisky 46% Vol. 0,7l u poklon kutiji | The GlenAllachie 15y Speyside Single Malt | 0.75 | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-glenallachie-15-years-old-speyside-single-malt-scotch-whisky-46-vol-07l-in-giftbox) 99,00 € |
+| The Tyrconnell 10 YO MADEIRA CASK 46% Vol. 0,7l u poklon kutiji | The Tyrconnell 10 Year Old Sherry Cask Finish | 0.6 | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-tyrconnell-10-years-old-madeira-cask-46-vol-07l-in-giftbox) 78,00 € |
+| The Tyrconnell 10 YO PORT CASK 46% Vol. 0,7l u poklon kutiji | The Tyrconnell 10 Year Old Sherry Cask Finish | 0.6 | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-tyrconnell-10-years-old-port-cask-46-vol-07l-in-giftbox) 64,50 € |
+| The Tyrconnell 10 YO SHERRY CASK 46% Vol. 0,7l u poklon kutiji | The Tyrconnell 10 Year Old Sherry Cask Finish | 0.8 | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-tyrconnell-10-years-old-sherry-cask-46-vol-07l-in-giftbox) 74,00 € |
+| The Tyrconnell 15 YO MADEIRA CASK 46% Vol. 0,7l u poklon kutiji | The Tyrconnell 15 Year Old Madeira Cask Finish | 0.8 | [allez.hr](https://allez.hr/shop/svi-proizvodi/the-tyrconnell-15-years-old-madeira-cask-46-vol-07l-in-giftbox) 88,00 € |
+| Tobermory 21 YO OLOROSO CASK Finish 46,3% Vol. 0,7l u poklon kutiji | Tobermory 21Y Single Malt | 0.667 | [allez.hr](https://allez.hr/shop/svi-proizvodi/tobermory-21-years-old-single-malt-scotch-whisky) 288,40 € |
 | CARLOS I SHERRY CASK | Carlos I Solera Gran Reserva | 0.5 | [ecuga.com](https://ecuga.com/proizvod/carlos-i-sherry-cask) 27,00 € |
-| GAUTIER VS | Gautier XO | 0.5 | [ecuga.com](https://ecuga.com/proizvod/gautier-vs) 38,00 € |
-| Hennessy V.S. Cognac0.05 | Hennessy XO | 0.5 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/hennessy-v-s-cognac) 4,99 € |
-| Hennessy X.O Cognac (0,70L) | Hennessy XO | 0.5 | [Miva](https://www.miva.com.hr/asortiman/proizvod-514-hennessy-xo-cognac) 230,20 € |
-| MARTELL VS | Martell XO | 0.5 | [ecuga.com](https://ecuga.com/proizvod/martell-vs) 31,00 € · [tipsy.hr](https://tipsy.hr/zestice/cognac-zestice/martell-vs/) 37,99 € |
-| Martell VS cognac0.03 | Martell XO | 0.5 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/martell-vs-cognac-1) 2,95 € |
-| Havana Club Seleccion de Maestros0.7 | Havana Club 7 Anos | 0.667 | [webshop.rotodinamic.hr](https://webshop.rotodinamic.hr/havana-club-seleccion-de-maestros) 59,75 € |
+| CLÉS DES DUCS VS | Cles Des Ducs XO | 0.75 | [ecuga.com](https://ecuga.com/proizvod/cles-des-ducs-vs) 27,00 € |
+| Hennessy X.O Cognac (0,70L) | Hennessy V.S.O.P | 0.667 | [Miva](https://www.miva.com.hr/asortiman/proizvod-514-hennessy-xo-cognac) 207,18 € |
+| Glenmorangie The Original  (0,70L) | Glenmorangie X Single Malt | 0.5 | [Miva](https://www.miva.com.hr/asortiman/proizvod-509-glenmorangie-the-original) 37,20 € |
 
 ## Kako dodati
 
