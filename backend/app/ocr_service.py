@@ -43,19 +43,21 @@ def _load_paddle() -> Any | None:
     try:
         from paddleocr import PaddleOCR  # type: ignore
 
-        # 2.x API (Windows-stable); fall back to 3.x kwargs if needed
+        # Prefer PaddleOCR 3.x (PaddleX) kwargs; fall back to 2.x API if installed.
         try:
-            _engine = PaddleOCR(
-                use_angle_cls=True,
-                lang="en",
-                show_log=False,
-            )
-        except TypeError:
             _engine = PaddleOCR(
                 lang="en",
                 use_doc_orientation_classify=False,
                 use_doc_unwarping=False,
                 use_textline_orientation=True,
+                # oneDNN PIR path breaks inference on CPU (Win + Linux); matches AGENTS note.
+                enable_mkldnn=False,
+            )
+        except TypeError:
+            _engine = PaddleOCR(
+                use_angle_cls=True,
+                lang="en",
+                show_log=False,
             )
         log.info("PaddleOCR loaded (lang=en)")
     except Exception as e:  # noqa: BLE001 — optional dependency
@@ -172,13 +174,13 @@ def recognize_image_bytes(data: bytes) -> OcrResult:
 
     arr = np.array(image)
     try:
-        if hasattr(engine, "ocr"):
+        if hasattr(engine, "predict"):
+            raw = engine.predict(arr)
+        elif hasattr(engine, "ocr"):
             try:
                 raw = engine.ocr(arr, cls=True)
             except TypeError:
                 raw = engine.ocr(arr)
-        elif hasattr(engine, "predict"):
-            raw = engine.predict(arr)
         else:
             return _stub_ocr(image)
         return _parse_paddle_payload(raw)

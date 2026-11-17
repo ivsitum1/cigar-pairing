@@ -1,4 +1,8 @@
-"""Smoke tests for OCR API helpers (no Paddle required)."""
+"""Service smoke tests (phash band path, OCR shape).
+
+OCR may return engine ``stub`` when Paddle is not installed — see
+``test_ocr_integration`` for real inference after ``requirements.txt``.
+"""
 from __future__ import annotations
 
 import io
